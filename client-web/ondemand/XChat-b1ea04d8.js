@@ -16,8 +16,8 @@
                     c,
                     w,
                     v,
-                    $,
                     p,
+                    $,
                     d,
                     x,
                     k,
@@ -59,25 +59,25 @@
                     it = n.$_$.bf,
                     et = n.$_$.m2,
                     rt = n.$_$.p6,
-                    st = n.$_$.rj,
+                    st = n.$_$.qj,
                     ut = n.$_$.ud,
                     ht = n.$_$.g,
-                    _t = n.$_$.lk,
+                    _t = n.$_$.kk,
                     ot = n.$_$.u,
                     at = n.$_$.g7,
                     lt = n.$_$.je,
-                    ft = n.$_$.kj,
+                    ft = n.$_$.jj,
                     ct = n.$_$.a9,
                     wt = n.$_$.ua,
                     vt = i.$_$.a,
-                    $t = n.$_$.we,
-                    pt = n.$_$.b9,
+                    pt = n.$_$.we,
+                    $t = n.$_$.b9,
                     dt = n.$_$.z8,
                     xt = n.$_$.ae,
                     kt = n.$_$.td,
                     yt = n.$_$.kd,
                     gt = n.$_$.wb,
-                    bt = n.$_$.tk,
+                    bt = n.$_$.sk,
                     mt = n.$_$.z6,
                     zt = n.$_$.sd,
                     qt = n.$_$.e8,
@@ -85,24 +85,24 @@
                     jt = n.$_$.ea,
                     St = n.$_$.kf,
                     Ct = n.$_$.c1,
-                    At = n.$_$.fl,
+                    At = n.$_$.el,
                     Nt = n.$_$.j7,
                     Ot = e.$_$.f,
                     Bt = n.$_$.x2,
-                    Tt = n.$_$.gj,
+                    Tt = n.$_$.fj,
                     It = n.$_$.od,
                     Rt = n.$_$.t,
                     Jt = n.$_$.ob,
                     Lt = n.$_$.ib,
                     Dt = n.$_$.rb,
                     Ut = n.$_$.xc,
-                    Mt = n.$_$.bj,
+                    Mt = n.$_$.aj,
                     Ft = n.$_$.bc,
                     Pt = n.$_$.d1,
                     Ht = n.$_$.da,
-                    Gt = n.$_$.el,
+                    Gt = n.$_$.dl,
                     Vt = n.$_$.vd,
-                    Yt = n.$_$.fk,
+                    Yt = n.$_$.ek,
                     Wt = n.$_$.ze,
                     Qt = n.$_$.q1,
                     Xt = n.$_$.dg,
@@ -112,25 +112,25 @@
                     nn = n.$_$.ca,
                     en = e.$_$.i,
                     rn = e.$_$.k,
-                    sn = n.$_$.sk,
+                    sn = n.$_$.rk,
                     un = n.$_$.xf,
                     hn = n.$_$.rd,
-                    _n = n.$_$.ej,
+                    _n = n.$_$.dj,
                     on = n.$_$.mg,
                     an = n.$_$.kg,
                     ln = n.$_$.se,
                     fn = n.$_$.v3,
-                    cn = n.$_$.gi,
+                    cn = n.$_$.fi,
                     wn = n.$_$.ed,
                     vn = n.$_$.w3,
-                    $n = n.$_$.fd,
-                    pn = n.$_$.v8,
+                    pn = n.$_$.fd,
+                    $n = n.$_$.v8,
                     dn = n.$_$.u8,
                     xn = n.$_$.md,
                     kn = n.$_$.ye,
                     yn = n.$_$.r9,
-                    gn = n.$_$.qk,
-                    bn = n.$_$.pk,
+                    gn = n.$_$.pk,
+                    bn = n.$_$.ok,
                     mn = n.$_$.h2,
                     zn = e.$_$.b,
                     qn = n.$_$.ve,
@@ -138,10 +138,10 @@
                     jn = n.$_$.t3,
                     Sn = e.$_$.c,
                     Cn = n.$_$.s1,
-                    An = n.$_$.zh,
-                    Nn = n.$_$.nj,
-                    On = n.$_$.fi,
-                    Bn = n.$_$.ci,
+                    An = n.$_$.yh,
+                    Nn = n.$_$.mj,
+                    On = n.$_$.ei,
+                    Bn = n.$_$.bi,
                     Tn = n.$_$.ue,
                     In = n.$_$.d,
                     Rn = n.$_$.h7,
@@ -150,9 +150,9 @@
                     Dn = n.$_$.y9,
                     Un = n.$_$.z9,
                     Mn = n.$_$.wc,
-                    Fn = n.$_$.vk,
+                    Fn = n.$_$.uk,
                     Pn = n.$_$.bd,
-                    Hn = n.$_$.qj,
+                    Hn = n.$_$.pj,
                     Gn = n.$_$.a3,
                     Vn = e.$_$.h,
                     Yn = e.$_$.a,
@@ -209,13 +209,13 @@
                 function ci() {}
                 function wi() {}
                 function vi() {}
-                function $i() {}
                 function pi() {}
+                function $i() {}
                 function di() {}
                 function xi() {}
                 function ki() {}
                 function yi() {
-                    p || ((p = !0), (r = new ci()), (s = new wi()), (u = new vi()), (h = new $i()), (_ = new pi()), (o = new di()), (a = new xi()), (l = new ki()), (f = hi(ni())), (c = hi(ei())), (w = hi(ii())), (v = hi(ri())), ($ = hi(si())), new _i(ni()), new _i(ei()), new _i(ii()), new _i(ri()), new _i(si()));
+                    $ || (($ = !0), (r = new ci()), (s = new wi()), (u = new vi()), (h = new pi()), (_ = new $i()), (o = new di()), (a = new xi()), (l = new ki()), (f = hi(ni())), (c = hi(ei())), (w = hi(ii())), (v = hi(ri())), (p = hi(si())), new _i(ni()), new _i(ei()), new _i(ii()), new _i(ri()), new _i(si()));
                 }
                 function gi(t) {
                     (this.jy_1 = t), (this.ky_1 = null), (this.ly_1 = ze().vy_1), (this.my_1 = null), (this.ny_1 = null), (this.oy_1 = null), (this.py_1 = null), (this.qy_1 = null), (this.ry_1 = null), (this.sy_1 = null), (this.ty_1 = null), (this.uy_1 = null);
@@ -226,7 +226,7 @@
                 function mi(t, n) {
                     return (function (t, n, i) {
                         return zi.call(i, t, n, null, null, null, null), i;
-                    })(t, n, $t(tt(zi)));
+                    })(t, n, pt(tt(zi)));
                 }
                 function zi(t, n, i, e, r, s) {
                     (this.a10_1 = t), (this.b10_1 = n), (this.c10_1 = i), (this.d10_1 = e), (this.e10_1 = r), (this.f10_1 = s), (this.g10_1 = ze().vy_1), (this.h10_1 = !1);
@@ -312,7 +312,7 @@
                 function Hi(t) {
                     return (function (t, n) {
                         return Gi.call(n, t.q11_1, t.r11_1), (n.y11_1 = t.s11_1), (n.z11_1 = t.t11_1), (n.a12_1 = t.u11_1), (n.b12_1 = t.v11_1), n;
-                    })(t, $t(tt(Gi)));
+                    })(t, pt(tt(Gi)));
                 }
                 function Gi(t, n) {
                     (this.w11_1 = t), (this.x11_1 = n), (this.y11_1 = null), (this.z11_1 = ct()), (this.a12_1 = ct()), (this.b12_1 = ct());
@@ -370,8 +370,8 @@
                                     v = c.r();
                                 if (v instanceof ne) w = n.o12_1.p2(v.p12_1) ? n.o12_1.r2(v.p12_1) : null;
                                 else w = ie(v, n);
-                                var $ = w;
-                                f.k($);
+                                var p = w;
+                                f.k(p);
                             }
                             i = f;
                         } else i = t;
@@ -420,10 +420,10 @@
                 function ve(t, n, i, e, r) {
                     ce(), (this.j14_1 = n), (this.k14_1 = i), (this.l14_1 = e), (this.m14_1 = r), (this.n14_1 = t);
                 }
-                function $e(t, n) {
+                function pe(t, n) {
                     (this.s14_1 = t), (this.t14_1 = n);
                 }
-                function pe(t, n) {
+                function $e(t, n) {
                     (this.u14_1 = t), (this.v14_1 = n);
                 }
                 function de(t, n, i, e, r) {
@@ -735,12 +735,12 @@
                             default:
                                 t.jw();
                         }
-                    return t.ix(), new pe(n, i);
+                    return t.ix(), new $e(n, i);
                 }
                 function vr(t, n, i) {
                     return xr(t), yr(t, n), (t.x12_1[(t.u12_1 - 1) | 0] = 0), t.s12_1.kv(i), t;
                 }
-                function $r(t, n, i, e) {
+                function pr(t, n, i, e) {
                     var r = kr(t);
                     if (r !== i && r !== n) {
                         throw et(it("Nesting problem."));
@@ -754,7 +754,7 @@
                         h = (t.u12_1 - 1) | 0;
                     return (u[h] = (u[h] + 1) | 0), r === i && dr(t), t.s12_1.kv(e), t;
                 }
-                function pr(t) {
+                function $r(t) {
                     null != t.y12_1 &&
                         (!(function (t) {
                             var n = kr(t);
@@ -796,7 +796,7 @@
                             t.s12_1.kv(
                                 (function (t) {
                                     var n = t.t12_1;
-                                    return null == n || 0 === $n(n) ? ":" : ": ";
+                                    return null == n || 0 === pn(n) ? ":" : ": ";
                                 })(t),
                             ),
                                 gr(t, 5);
@@ -812,7 +812,7 @@
                     return t.v12_1[(t.u12_1 - 1) | 0];
                 }
                 function yr(t, n) {
-                    t.u12_1 === t.v12_1.length && ((t.v12_1 = pn(t.v12_1, Z(t.v12_1.length, 2))), (t.w12_1 = dn(t.w12_1, Z(t.w12_1.length, 2))), (t.x12_1 = pn(t.x12_1, Z(t.x12_1.length, 2))));
+                    t.u12_1 === t.v12_1.length && ((t.v12_1 = $n(t.v12_1, Z(t.v12_1.length, 2))), (t.w12_1 = dn(t.w12_1, Z(t.w12_1.length, 2))), (t.x12_1 = $n(t.x12_1, Z(t.x12_1.length, 2))));
                     var i = t.v12_1,
                         e = t.u12_1;
                     (t.u12_1 = (e + 1) | 0), (i[e] = n);
@@ -942,8 +942,8 @@
                             } while (u < s);
                         if (t.f18_1.su(qn(s).g3(new ft(1, 0))) && Er(t, ln(t.g18_1.kt(Wt(s))))) return 0;
                         t.g18_1.gs(Wt(s));
-                        var $ = e;
-                        return (t.h18_1 = $), $;
+                        var p = e;
+                        return (t.h18_1 = p), p;
                     })(t);
                     return 0 !== c
                         ? c
@@ -1048,7 +1048,7 @@
                     }
                 }
                 function Ar(t, n) {
-                    t.m18_1 === t.l18_1.length && ((t.l18_1 = pn(t.l18_1, Z(t.l18_1.length, 2))), (t.n18_1 = dn(t.n18_1, Z(t.n18_1.length, 2))), (t.o18_1 = pn(t.o18_1, Z(t.o18_1.length, 2))), (t.p18_1 = pn(t.p18_1, Z(t.p18_1.length, 2))));
+                    t.m18_1 === t.l18_1.length && ((t.l18_1 = $n(t.l18_1, Z(t.l18_1.length, 2))), (t.n18_1 = dn(t.n18_1, Z(t.n18_1.length, 2))), (t.o18_1 = $n(t.o18_1, Z(t.o18_1.length, 2))), (t.p18_1 = $n(t.p18_1, Z(t.p18_1.length, 2))));
                     var i = t.l18_1,
                         e = t.m18_1;
                     (t.m18_1 = (e + 1) | 0), (i[e] = n);
@@ -1281,7 +1281,7 @@
                     }
                 }
                 function es(t) {
-                    t.yw_1 === t.uw_1.length && ((t.uw_1 = dn(t.uw_1, Z(t.uw_1.length, 2))), (t.vw_1 = dn(t.vw_1, Z(t.vw_1.length, 2))), (t.xw_1 = pn(t.xw_1, Z(t.xw_1.length, 2))), (t.ww_1 = dn(t.ww_1, Z(t.ww_1.length, 2)))), (t.yw_1 = (t.yw_1 + 1) | 0);
+                    t.yw_1 === t.uw_1.length && ((t.uw_1 = dn(t.uw_1, Z(t.uw_1.length, 2))), (t.vw_1 = dn(t.vw_1, Z(t.vw_1.length, 2))), (t.xw_1 = $n(t.xw_1, Z(t.xw_1.length, 2))), (t.ww_1 = dn(t.ww_1, Z(t.ww_1.length, 2)))), (t.yw_1 = (t.yw_1 + 1) | 0);
                 }
                 function rs(t, n, i) {
                     var e = t.xw_1[(t.yw_1 - 1) | 0];
@@ -1338,9 +1338,9 @@
                             throw et(it(c));
                         }
                         lt(t, Nt) || st(), lt(i, Nt) || st();
-                        for (var w = Jn(t.s2(), i.s2()), v = Rt(Et(w, 10)), $ = w.p(); $.q(); ) {
-                            var p = $.r(),
-                                d = At(p, ls(t.r2(p), n, i.r2(p)));
+                        for (var w = Jn(t.s2(), i.s2()), v = Rt(Et(w, 10)), p = w.p(); p.q(); ) {
+                            var $ = p.r(),
+                                d = At($, ls(t.r2($), n, i.r2($)));
                             v.k(d);
                         }
                         e = Dt(v);
@@ -1380,11 +1380,11 @@
                 function vs() {
                     (this.t17_1 = 1), (this.u17_1 = 2), (this.v17_1 = 3), (this.w17_1 = 4), (this.x17_1 = 5), (this.y17_1 = 6), (this.z17_1 = 7), (this.a18_1 = 8);
                 }
-                function $s(t) {
-                    return ps(), Mn("Apollo: unhandled exception"), Fn(t), rt;
+                function ps(t) {
+                    return $s(), Mn("Apollo: unhandled exception"), Fn(t), rt;
                 }
-                function ps() {
-                    Q || ((Q = !0), (Y = $s), ps(), (W = Y));
+                function $s() {
+                    Q || ((Q = !0), (Y = ps), $s(), (W = Y));
                 }
                 function ds() {
                     xs.call(this, "The optional doesn't have a value"), Pn(this, ds);
@@ -1440,8 +1440,8 @@
                     ut(ci, ht, ht, ht, [ti]),
                     ut(wi, ht, ht, ht, [ti]),
                     ut(vi, ht, ht, ht, [ti]),
-                    ut($i, ht, ht, ht, [ti]),
                     ut(pi, ht, ht, ht, [ti]),
+                    ut($i, ht, ht, ht, [ti]),
                     ut(di, ht, ht, ht, [ti]),
                     ut(xi, ht, ht, ht, [ti]),
                     ut(ki, ht, ht, ht, [ti]),
@@ -1487,8 +1487,8 @@
                     nt(Ee, "ExecutionContext"),
                     nt(be, "Element", ht, ht, [Ee]),
                     ut(ve, "CustomScalarAdapters", ht, ht, [be]),
-                    ut($e, "DeferredFragmentIdentifier"),
-                    ut(pe, "Location"),
+                    ut(pe, "DeferredFragmentIdentifier"),
+                    ut($e, "Location"),
                     ut(de, "Error"),
                     ut(xe, "Variables"),
                     Vt(me),
@@ -1642,22 +1642,22 @@
                     (tt(vi).hw = function (t, n, i) {
                         return this.wx(t, n, null != i && "number" == typeof i ? i : st());
                     }),
-                    (tt($i).gw = function (t, n) {
+                    (tt(pi).gw = function (t, n) {
                         return t.vx();
                     }),
-                    (tt($i).yx = function (t, n, i) {
+                    (tt(pi).yx = function (t, n, i) {
                         t.xx(i);
                     }),
-                    (tt($i).hw = function (t, n, i) {
+                    (tt(pi).hw = function (t, n, i) {
                         return this.yx(t, n, null != i && "number" == typeof i ? i : st());
                     }),
-                    (tt(pi).gw = function (t, n) {
+                    (tt($i).gw = function (t, n) {
                         return t.jh();
                     }),
-                    (tt(pi).zx = function (t, n, i) {
+                    (tt($i).zx = function (t, n, i) {
                         t.ay(i);
                     }),
-                    (tt(pi).hw = function (t, n, i) {
+                    (tt($i).hw = function (t, n, i) {
                         return this.zx(t, n, i instanceof ft ? i : st());
                     }),
                     (tt(di).gw = function (t, n) {
@@ -1773,7 +1773,7 @@
                             i = this.c10_1,
                             e = this.g10_1,
                             r = this.e10_1,
-                            s = null == r ? pt() : r;
+                            s = null == r ? $t() : r;
                         return new qi(n, t, i, this.d10_1, this.f10_1, s, e, this.h10_1);
                     }),
                     (tt(qi).v10 = function () {
@@ -1873,7 +1873,7 @@
                             _.j12_1 instanceof Be && u.k(_);
                         }
                         var o = u;
-                        if (o.h()) return pt();
+                        if (o.h()) return $t();
                         for (var a = St(jt(Et(o, 10)), 16), l = Ct(a), f = o.p(); f.q(); ) {
                             var c = f.r(),
                                 w = At(c.i12_1.f12_1, c.j12_1.m12());
@@ -2001,20 +2001,20 @@
                     (tt(ve).yz = function () {
                         return new we().i14(this).g14(this.j14_1).h14(this.k14_1);
                     }),
-                    (tt($e).toString = function () {
+                    (tt(pe).toString = function () {
                         return "DeferredFragmentIdentifier(path=" + it(this.s14_1) + ", label=" + this.t14_1 + ")";
                     }),
-                    (tt($e).hashCode = function () {
+                    (tt(pe).hashCode = function () {
                         var t = kt(this.s14_1);
                         return (t = (Z(t, 31) + (null == this.t14_1 ? 0 : zt(this.t14_1))) | 0);
                     }),
-                    (tt($e).equals = function (t) {
+                    (tt(pe).equals = function (t) {
                         if (this === t) return !0;
-                        if (!(t instanceof $e)) return !1;
-                        var n = t instanceof $e ? t : st();
+                        if (!(t instanceof pe)) return !1;
+                        var n = t instanceof pe ? t : st();
                         return !!yt(this.s14_1, n.s14_1) && this.t14_1 == n.t14_1;
                     }),
-                    (tt(pe).toString = function () {
+                    (tt($e).toString = function () {
                         return "Location(line = " + this.u14_1 + ", column = " + this.v14_1 + ")";
                     }),
                     (tt(de).toString = function () {
@@ -2298,16 +2298,16 @@
                         return yn(V.b18(this.u12_1, this.v12_1, this.w12_1, this.x12_1), ".");
                     }),
                     (tt(zr).lx = function () {
-                        return pr(this), vr(this, 1, "[");
+                        return $r(this), vr(this, 1, "[");
                     }),
                     (tt(zr).mx = function () {
-                        return $r(this, 1, 2, "]");
+                        return pr(this, 1, 2, "]");
                     }),
                     (tt(zr).hx = function () {
-                        return pr(this), vr(this, 3, "{");
+                        return $r(this), vr(this, 3, "{");
                     }),
                     (tt(zr).ix = function () {
-                        return $r(this, 3, 5, "}");
+                        return pr(this, 3, 5, "}");
                     }),
                     (tt(zr).s15 = function (t) {
                         if (0 === this.u12_1) {
@@ -2319,7 +2319,7 @@
                         return (this.y12_1 = t), (this.w12_1[(this.u12_1 - 1) | 0] = t), this;
                     }),
                     (tt(zr).sx = function (t) {
-                        pr(this), xr(this), mr().r17(this.s12_1, t);
+                        $r(this), xr(this), mr().r17(this.s12_1, t);
                         var n = this.x12_1,
                             i = (this.u12_1 - 1) | 0;
                         return (n[i] = (n[i] + 1) | 0), this;
@@ -2347,7 +2347,7 @@
                         return this.mw(), this;
                     }),
                     (tt(zr).c18 = function (t) {
-                        pr(this), xr(this), this.s12_1.kv(t);
+                        $r(this), xr(this), this.s12_1.kv(t);
                         var n = this.x12_1,
                             i = (this.u12_1 - 1) | 0;
                         return (n[i] = (n[i] + 1) | 0), this;
@@ -3189,7 +3189,7 @@
                     (t.$_$.e1 = ne),
                     (t.$_$.f1 = we),
                     (t.$_$.g1 = Pi),
-                    (t.$_$.h1 = $e),
+                    (t.$_$.h1 = pe),
                     (t.$_$.i1 = ee),
                     (t.$_$.j1 = Kn),
                     (t.$_$.k1 = Xn),
@@ -3200,7 +3200,7 @@
                     (t.$_$.p1 = Ce),
                     (t.$_$.q1 = Ae),
                     (t.$_$.r1 = function () {
-                        return yi(), $;
+                        return yi(), p;
                     }),
                     (t.$_$.s1 = function () {
                         return yi(), v;
@@ -3242,7 +3242,7 @@
                                 } else
                                     t instanceof Ji
                                         ? (n = (function (t, n, i) {
-                                              return null == t || t.w(new $e(n, i));
+                                              return null == t || t.w(new pe(n, i));
                                           })(u, _t(h), t.d11_1))
                                         : t instanceof Bi
                                           ? (n = qt(t.y10_1, _))
@@ -3345,7 +3345,7 @@
                     (t.$_$.a3 = zs),
                     (t.$_$.b3 = Cs),
                     (t.$_$.c3 = function () {
-                        return ps(), W;
+                        return $s(), W;
                     }),
                     (t.$_$.d3 = rr),
                     (t.$_$.e3 = sr),
@@ -3354,13 +3354,13 @@
                     (t.$_$.h3 = function t(n, i) {
                         var e = (function (t, n, i) {
                             return xs.call(i, "Multiple exceptions happened", n), Ns.call(i), null != t && Yt(i, t), null != n && Yt(i, n), i;
-                        })(n, i, $t(tt(Ns)));
+                        })(n, i, pt(tt(Ns)));
                         return Pn(e, t), e;
                     }),
                     (t.$_$.i3 = function t(n, i) {
                         var e = (function (t, n, i) {
                             return Es.call(i, t, n, !1), i;
-                        })(n, i, $t(tt(Es)));
+                        })(n, i, pt(tt(Es)));
                         return Pn(e, t), e;
                     }),
                     (t.$_$.j3 = q),
@@ -3375,4 +3375,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-b1ea04d8.d00a115a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-b1ea04d8.6c34baba.js.map

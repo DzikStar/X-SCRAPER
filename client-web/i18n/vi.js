@@ -224,7 +224,6 @@
                 t("f65e7e91", function (n) {
                     return "Giảm " + n.percentage + "% cho " + n.tier + " " + n.plan;
                 }),
-                t("cbc38428", "Tiếp tục sử dụng mà không có quảng cáo nhờ gói Premium+ "),
                 t("a84a736e", "Nhận tín dụng quảng cáo miễn phí"),
                 t("a0713d76", "Nâng cấp lên Tổ chức đã xác nhận để nhận tín dụng quảng cáo miễn phí và bộ công cụ phát triển doanh nghiệp."),
                 t("a07e13fc", "Trở thành người sáng tạo nội dung Premium"),
@@ -900,9 +899,9 @@
                 t("e8e39f95", "Learn more"),
                 t("e126dd3f", "Learn more"),
                 t("i821844f", "Learn more"),
-                t("b0abbb17", "Learn more");
-            t("e7e0d88b", "Learn more"),
-                t("i560665f", "Learn more"),
+                t("b0abbb17", "Learn more"),
+                t("e7e0d88b", "Learn more");
+            t("i560665f", "Learn more"),
                 t("f6e774d9", "Learn more"),
                 t("h486f755", "Learn more"),
                 t("bab41dab", "Learn more"),
@@ -1916,9 +1915,9 @@
                 t("da8ac57c", "Chỉnh sửa chú thích"),
                 t("a8fdd09c", "Xuất bản Bài viết"),
                 t("d8047cc8", "Đăng"),
-                t("ff7ddca2", "Sau khi xuất bản, Bài viết của bạn sẽ xuất hiện dưới dạng bài đăng. Ngoài ra, bạn có thể tìm thấy Bài viết này trong tab Bài viết trên hồ sơ của mình.");
-            t("ef34d7be", "Sau khi đã xuất bản Bài viết, bạn sẽ không thể chỉnh sửa phần kiểm soát đối tượng người xem và câu trả lời."),
-                t("e52d4998", "Chọn đối tượng người xem"),
+                t("ff7ddca2", "Sau khi xuất bản, Bài viết của bạn sẽ xuất hiện dưới dạng bài đăng. Ngoài ra, bạn có thể tìm thấy Bài viết này trong tab Bài viết trên hồ sơ của mình."),
+                t("ef34d7be", "Sau khi đã xuất bản Bài viết, bạn sẽ không thể chỉnh sửa phần kiểm soát đối tượng người xem và câu trả lời.");
+            t("e52d4998", "Chọn đối tượng người xem"),
                 t("d7985b24", "Chọn đối tượng có thể trả lời Bài viết này"),
                 t("b5660338", "Xem trước dòng thời gian"),
                 t("hff1b97a", "Chỉ Người đã đăng ký có thể trả lời."),
@@ -2972,9 +2971,9 @@
                 t("jb0a4c36", "Blog"),
                 t("ce6d095a", "Nghề nghiệp"),
                 t("e0adec82", "Tài nguyên thương hiệu"),
-                t("df1b7550", "Tiếp thị");
-            t("he258678", "X dành cho doanh nghiệp"),
-                t("c6f58084", "Nhà phát triển"),
+                t("df1b7550", "Tiếp thị"),
+                t("he258678", "X dành cho doanh nghiệp");
+            t("c6f58084", "Nhà phát triển"),
                 t("d83f18d2", "Danh mục"),
                 t("hc5aa17c", "Tải ứng dụng X"),
                 t("j0693948", "Tải ứng dụng Grok"),
@@ -3574,7 +3573,7 @@
                 t("hbe4f99e", "Xin chào! Tôi háo hức muốn chia sẻ một số nội dung bí mật hàng đầu và hiểu rõ hơn về bạn :)"),
                 t("fb278c82", "Xem trước này là gì?"),
                 t("j6cab6ec", "Đây là những gì mọi người nhìn thấy trước khi họ đăng ký theo dõi bạn. Hãy thêm bớt và chỉnh sửa mô tả của bạn cho đến khi bạn thấy ổn."),
-                t("f2b1e83e", "Grok & Third-Party Collaborators"),
+                t("f2b1e83e", "Grok và Người cộng tác bên thứ ba"),
                 t("e110a46c", "Xóa nhật ký cuộc trò chuyện"),
                 t("ebc4fda0", "Bạn sắp xóa nhật ký cuộc trò chuyện với grok. Bạn sẽ không truy cập được các cuộc trò chuyện này nữa."),
                 t("c90fe716", "Bạn có muốn xóa các cuộc trò chuyện của mình không?"),
@@ -3884,13 +3883,13 @@
                 t("caa8d928", "Bật/tắt khử tiếng ồn"),
                 t("b5d88f0c", "Chỉ dành cho nhân viên"),
                 t("c855ab8e", "Chỉ dành cho Người đăng ký"),
-                t("ddeb0a3c", "Đây là cộng đồng. Thích những người này? Hãy ghé xem.");
-            t("e111f531", function (n) {
-                return n.count + " đã nghe";
+                t("ddeb0a3c", "Đây là cộng đồng. Thích những người này? Hãy ghé xem."),
+                t("e111f531", function (n) {
+                    return n.count + " đã nghe";
+                });
+            t("cbef820f", function (n) {
+                return n.screenName + " đã đăng lại buổi phát trực tuyến!";
             }),
-                t("cbef820f", function (n) {
-                    return n.screenName + " đã đăng lại buổi phát trực tuyến!";
-                }),
                 t("e3275464", "Gửi"),
                 t("cededf2a", "Chủ phòng"),
                 t("i2caef48", "Đ.chủ phòng"),
@@ -4924,9 +4923,9 @@
                 t("d9f9dec0", "Xem phòng"),
                 t("h0c1f37a", "Xem số liệu phân tích phòng"),
                 t("e41fffbc", "Tổng thời gian xem video của bạn."),
-                t("if2909ba", "Thời gian xem");
-            t("i0e5bf4c", "Video của bạn"),
-                t("ed99baea", "Quyền truy cập sớm vào bản beta"),
+                t("if2909ba", "Thời gian xem"),
+                t("i0e5bf4c", "Video của bạn");
+            t("ed99baea", "Quyền truy cập sớm vào bản beta"),
                 t("gf898b70", "Tìm kiếm nâng cao"),
                 t("d2a43a7a", 'chứa cả "ai" và "công ty khởi nghiệp"'),
                 t("a8584698", "công ty khởi nghiệp ai"),
@@ -5509,7 +5508,7 @@
                 t("j6aa6172", "Xóa xếp hạng?"),
                 t("i4112750", "Không thể hoàn tác điều này."),
                 t("i6f6191a", "Cảm ơn bạn!"),
-                t("h5575012", "Agree and submit"),
+                t("h5575012", "Đồng ý và gửi"),
                 t("f9171e52", "Bài đăng này nhận được một vài lượt thích từ những người thường bất đồng quan điểm, nhưng hiện tại ý kiến đóng góp vẫn còn hạn chế."),
                 t("j0f9919a", "Đánh giá của bạn sẽ không ảnh hưởng tiêu cực đến bài đăng, nhưng có thể giúp ghi nhận tích cực các bài đăng được nhiều người thích."),
                 t("b3af830c", "Nội dung bạn nhập:"),
@@ -5529,7 +5528,7 @@
                 t("g0402b3b", "được yêu thích từ nhiều góc nhìn khác nhau"),
                 t("ged62c2b", "làm nổi bật"),
                 t("b5d5f7f1", "Định hướng"),
-                t("a42fef87", "Learn more"),
+                t("a42fef87", "Tìm hiểu thêm"),
                 t("bd7eb888", "Xem tất cả ghi chép trên bài đăng này"),
                 t("i97b83f6", "Đã xảy ra lỗi khi gửi kháng nghị của bạn, vui lòng thử lại."),
                 t("a038ab9a", "Dịch ghi chép"),
@@ -5880,9 +5879,9 @@
                 t("e41c9b4f", function (n) {
                     return "Saved to " + n.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Xóa thư mục");
-            t("f4ea967a", "Thư mục đã bị xóa"),
-                t("b670aa62", "Tên thư mục"),
+                t("h18f86a4", "Xóa thư mục"),
+                t("f4ea967a", "Thư mục đã bị xóa");
+            t("b670aa62", "Tên thư mục"),
                 t("aece5462", "Tên thư mục đã được cập nhật thành công"),
                 t("e3299b94", "Đã xảy ra lỗi. Hãy thử cập nhật lại thư mục đó sau ít phút nữa."),
                 t("c09ea714", "Đã xảy ra lỗi. Hãy thử cập nhật lại thư mục đó sau ít phút nữa."),
@@ -6884,9 +6883,9 @@
                 t("b925c18c", "Loại lương"),
                 t("j3d242ce", "Khoảng không hợp lệ"),
                 t("f4d07bd2", "Bao gồm các chi tiết không bắt buộc để giúp ứng viên dễ dàng khám phá vai trò của bạn hơn khi tìm kiếm."),
-                t("b8cbb51a", "Tóm tắt công việc");
-            t("bda6881e", "Công việc này đã được nhập từ Hệ thống theo dõi ứng viên (ATS) của bạn. Xin lưu ý rằng chỉ có thể sửa đổi các trường cụ thể."),
-                t("b075c68a", "Chỉnh sửa việc làm"),
+                t("b8cbb51a", "Tóm tắt công việc"),
+                t("bda6881e", "Công việc này đã được nhập từ Hệ thống theo dõi ứng viên (ATS) của bạn. Xin lưu ý rằng chỉ có thể sửa đổi các trường cụ thể.");
+            t("b075c68a", "Chỉnh sửa việc làm"),
                 t("d4b6a6e0", "Tiêu điểm hồ sơ"),
                 t("j2dd3686", "Quảng bá việc làm nổi bật bên trên bài đăng của tôi."),
                 t("af1cfd46", "Tích hợp với ATS"),
@@ -7228,14 +7227,20 @@
                 t("hd80bd3e", "Quảng bá một bài đăng"),
                 t("fe2b0008", "Tìm hiểu cách sử dụng X"),
                 t("h257d4aa", "Chọn một bài đăng để quảng bá"),
-                t("fe946974", "Thời gian dùng thử X (không có quảng cáo) của bạn"),
+                t("h9b28dae", "You’re saving time with an ad-free feed"),
                 t("f6c50ec0", "Thời gian dùng thử không quảng cáo của bạn đã kết thúc"),
-                t("b1319404", "Số quảng cáo đã tránh"),
-                t("baa4acae", "Bạn sẽ thấy nhiều nội dung được cá nhân hóa hơn."),
-                t("c00e8600", "Ước tính thời gian tiết kiệm được"),
+                t("e1d1fbca", "You’ve avoided"),
+                t("a82d7abd", function (n) {
+                    return n.numberOfAds + " ads";
+                }),
+                t("ff074c76", "You’re seeing more of the posts you want."),
+                t("cbc38428", "Tiếp tục sử dụng mà không có quảng cáo nhờ gói Premium+ "),
+                t("b9028f60", "Back to my ad-free trial"),
+                t("e081d6a0", "No thanks, I’d like to see ads again"),
+                t("fee73dca", "Saving an estimated"),
                 t("ic073e4e", "Thời gian của bạn rất quý giá."),
                 t("eb866e88", "Ước tính thời gian tiết kiệm được trong 1 năm"),
-                t("aa77b70c", "Dựa trên hoạt động sử dụng của bạn."),
+                t("ce72f092", "Based on your usage so far."),
                 t("c534c6b4", "Chúng tôi đang tính toán số liệu..."),
                 t("i57332f0", "Tiếp tục cuộn và kiểm tra lại sau để xem bạn đã tránh được bao nhiêu quảng cáo và tiết kiệm được bao nhiêu thời gian"),
                 t("cc10f019", function (n) {
@@ -7250,12 +7255,16 @@
                 t("b93d00e5", function (n) {
                     return n.days + " ngày";
                 }),
+                t("g2c63852", "100% free. No credit card required."),
                 t("be88be23", function (n) {
                     return n.durationInDays + " ngày dùng thử không quảng cáo của bạn đã được kích hoạt";
                 }),
-                t("a4413462", "Trong suốt thời gian dùng thử, bạn có thể xem số liệu thống kê về số quảng cáo bạn không xem và thời gian bạn đã tiết kiệm được."),
-                t("ae3f3b0e", "Hãy tận hưởng nhé!"),
-                t("cdac8dc4", "Xem bảng tin mới của bạn"),
+                t("b63766a6", "Scroll without ads"),
+                t("h028f7e0", "Spend more time on the content you love"),
+                t("dd68eef6", "Experience the Premium+ luxury life"),
+                t("g8a2f217", function (n) {
+                    return "Enjoy ad-free for " + n.durationInDays + " days";
+                }),
                 t("dec99336", "Không có quảng cáo"),
                 t("i95803fa", "Rất tiếc, hiện tại, bạn chưa đủ điều kiện tham gia."),
                 t("d28a1d72", "Trở thành người đầu tiên nắm bắt chủ đề phổ biến bằng Radar"),
@@ -7855,14 +7864,7 @@
                 t("a76d58ba", "Số liệu phân tích quảng cáo"),
                 t("eccd0e1a", "Số liệu phân tích về tổ chức"),
                 t("deea1708", "Bạn muốn xem số liệu phân tích trên tất cả tài khoản X của mình?"),
-                t("eb603ffc", "Hãy nâng cấp để liên kết mạng lưới của bạn và xem số liệu phân tích tổng hợp."),
-                t("gf67aae4", "Nâng cấp lên gói Toàn quyền truy cập"),
-                t("h75e3618", "Bao gồm tổ chức"),
-                t("h24a8862", "Giới thiệu về hộp đánh dấu này"),
-                t("c29e3a88", "Chọn bên liên kết"),
-                t("j8318d57", function (n) {
-                    return n.number + " bên liên kết";
-                });
+                t("eb603ffc", "Hãy nâng cấp để liên kết mạng lưới của bạn và xem số liệu phân tích tổng hợp.");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7901,7 +7903,14 @@
                     a(n, h)
                 );
             }
-            t("bf809ec0", "Chọn bên liên kết"),
+            t("gf67aae4", "Nâng cấp lên gói Toàn quyền truy cập"),
+                t("h75e3618", "Bao gồm tổ chức"),
+                t("h24a8862", "Giới thiệu về hộp đánh dấu này"),
+                t("c29e3a88", "Chọn bên liên kết"),
+                t("j8318d57", function (n) {
+                    return n.number + " bên liên kết";
+                }),
+                t("bf809ec0", "Chọn bên liên kết"),
                 t("b719e224", "Không có kết quả"),
                 t("c9938100", "Kết quả tìm kiếm"),
                 t("d1a35ec6", "Thêm tài khoản"),
@@ -8893,10 +8902,10 @@
                 t("j0c6772a", "Truy cập website"),
                 t("f73003aa", "Video sẽ phát sau quảng cáo"),
                 t("b3112b8a", "Bỏ qua"),
-                t("h6333ad0", "Bỏ qua quảng cáo"),
-                t("c59da417", function (n) {
-                    return "Bỏ qua quảng cáo trong " + n.seconds;
-                }),
+                t("h6333ad0", "Bỏ qua quảng cáo");
+            t("c59da417", function (n) {
+                return "Bỏ qua quảng cáo trong " + n.seconds;
+            }),
                 t("c3c147cf", function (n) {
                     return "Bỏ qua " + n.seconds;
                 }),
@@ -8904,8 +8913,8 @@
                 t("ha3efce4", "Tự động"),
                 t("hd8d044d", function (n) {
                     return "Tự động (" + n.quality + ")";
-                });
-            t("a7bf9962", "Tải xuống video"),
+                }),
+                t("a7bf9962", "Tải xuống video"),
                 t("ccc97152", "Tốc độ phát lại"),
                 t("h531ade0", "Chất lượng video"),
                 t("e8b5757c", "0.25x"),
@@ -11519,7 +11528,7 @@
                         {
                             key: "ffd3d1a1",
                             get: function () {
-                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                                return ["Đánh giá được ẩn danh và công khai với cộng đồng để đảm bảo tính minh bạch. "];
                             },
                         },
                         {
@@ -13339,4 +13348,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.b3039a1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.0f978eca.js.map

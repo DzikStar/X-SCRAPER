@@ -224,7 +224,6 @@
                 n("f65e7e91", function (e) {
                     return e.tier + " " + e.plan + " " + e.percentage + "% 折扣";
                 }),
-                n("cbc38428", "透過 Premium+ 暢享無廣告體驗"),
                 n("a84a736e", "獲得免費廣告抵用金"),
                 n("a0713d76", "升級至已認證組織，即可獲得免費廣告抵用金和一套業務成長工具。"),
                 n("a07e13fc", "成為 Premium 創作者"),
@@ -900,9 +899,9 @@
                 n("e8e39f95", "了解更多"),
                 n("e126dd3f", "了解更多"),
                 n("i821844f", "了解更多"),
-                n("b0abbb17", "了解更多");
-            n("e7e0d88b", "了解更多"),
-                n("i560665f", "了解更多"),
+                n("b0abbb17", "了解更多"),
+                n("e7e0d88b", "了解更多");
+            n("i560665f", "了解更多"),
                 n("f6e774d9", "了解更多"),
                 n("h486f755", "了解更多"),
                 n("bab41dab", "了解更多"),
@@ -1916,9 +1915,9 @@
                 n("da8ac57c", "編輯說明文字"),
                 n("a8fdd09c", "發佈文章"),
                 n("d8047cc8", "發佈"),
-                n("ff7ddca2", "發佈後，你的文章將顯示為貼文。此外，你可以在個人資料的「文章」標籤下找到它。");
-            n("ef34d7be", "文章發佈後，就無法編輯受眾和回覆控制項。"),
-                n("e52d4998", "選擇你的受眾"),
+                n("ff7ddca2", "發佈後，你的文章將顯示為貼文。此外，你可以在個人資料的「文章」標籤下找到它。"),
+                n("ef34d7be", "文章發佈後，就無法編輯受眾和回覆控制項。");
+            n("e52d4998", "選擇你的受眾"),
                 n("d7985b24", "選擇誰可以回覆此文章"),
                 n("b5660338", "時間軸預覽"),
                 n("hff1b97a", "只有訂閱者可以回覆。"),
@@ -2972,9 +2971,9 @@
                 n("jb0a4c36", "部落格"),
                 n("ce6d095a", "人才招募"),
                 n("e0adec82", "品牌資源"),
-                n("df1b7550", "行銷");
-            n("he258678", "X 商業版"),
-                n("c6f58084", "開發人員"),
+                n("df1b7550", "行銷"),
+                n("he258678", "X 商業版");
+            n("c6f58084", "開發人員"),
                 n("d83f18d2", "目錄"),
                 n("hc5aa17c", "取得 X 應用程式"),
                 n("j0693948", "取得 Grok 應用程式"),
@@ -3574,7 +3573,7 @@
                 n("hbe4f99e", "哈囉！等不及想與你分享一些絕密內容，讓我們進一步了解彼此 :)"),
                 n("fb278c82", "這個預覽畫面是什麼？"),
                 n("j6cab6ec", "這是人們在訂閱你之前所看到的畫面。請調整並編輯你的描述，直到你滿意為止。"),
-                n("f2b1e83e", "Grok & Third-Party Collaborators"),
+                n("f2b1e83e", "Grok 和第三方協作者"),
                 n("e110a46c", "刪除對話記錄"),
                 n("ebc4fda0", "你即將刪除 Grok 對話記錄。你將無法再存取這些對話。"),
                 n("c90fe716", "你想要刪除對話嗎？"),
@@ -3884,13 +3883,13 @@
                 n("caa8d928", "切換噪音抑制"),
                 n("b5d88f0c", "僅限員工"),
                 n("c855ab8e", "訂閱者專屬"),
-                n("ddeb0a3c", "這裡就是社群。喜歡這群人嗎？瞧一瞧。");
-            n("e111f531", function (e) {
-                return e.count + " 人已收聽";
+                n("ddeb0a3c", "這裡就是社群。喜歡這群人嗎？瞧一瞧。"),
+                n("e111f531", function (e) {
+                    return e.count + " 人已收聽";
+                });
+            n("cbef820f", function (e) {
+                return e.screenName + " 已轉發此直播！";
             }),
-                n("cbef820f", function (e) {
-                    return e.screenName + " 已轉發此直播！";
-                }),
                 n("e3275464", "發送"),
                 n("cededf2a", "主持人"),
                 n("i2caef48", "共同主持人"),
@@ -4924,9 +4923,9 @@
                 n("d9f9dec0", "查看音訊空間"),
                 n("h0c1f37a", "查看音訊空間分析"),
                 n("e41fffbc", "你影片的總觀看時間。"),
-                n("if2909ba", "觀看時間");
-            n("i0e5bf4c", "你的影片"),
-                n("ed99baea", "搶先體驗 Beta 版"),
+                n("if2909ba", "觀看時間"),
+                n("i0e5bf4c", "你的影片");
+            n("ed99baea", "搶先體驗 Beta 版"),
                 n("gf898b70", "進階搜尋"),
                 n("d2a43a7a", '同時包含 "ai" 和 "啟動"'),
                 n("a8584698", "ai 啟動"),
@@ -5509,7 +5508,7 @@
                 n("j6aa6172", "要刪除評價嗎？"),
                 n("i4112750", "此動作無法復原。"),
                 n("i6f6191a", "謝謝你！"),
-                n("h5575012", "Agree and submit"),
+                n("h5575012", "同意並提交"),
                 n("f9171e52", "此貼文獲得了一些通常持反對意見者的喜歡，但目前發表的意見數量有限。"),
                 n("j0f9919a", "你的評價不會對貼文造成負面影響，而是能協助積極地辨識廣受喜歡的貼文。"),
                 n("b3af830c", "你的意見："),
@@ -5529,7 +5528,7 @@
                 n("g0402b3b", "受到持有不同觀點者喜歡"),
                 n("ged62c2b", "聚焦"),
                 n("b5d5f7f1", "指引方向"),
-                n("a42fef87", "Learn more"),
+                n("a42fef87", "了解更多"),
                 n("bd7eb888", "查看此貼文的所有備註"),
                 n("i97b83f6", "提交你的申訴時發生錯誤，請再試一次。"),
                 n("a038ab9a", "翻譯備註"),
@@ -5880,9 +5879,9 @@
                 n("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                n("h18f86a4", "刪除資料夾");
-            n("f4ea967a", "資料夾已刪除"),
-                n("b670aa62", "資料夾名稱"),
+                n("h18f86a4", "刪除資料夾"),
+                n("f4ea967a", "資料夾已刪除");
+            n("b670aa62", "資料夾名稱"),
                 n("aece5462", "資料夾名稱已更新成功"),
                 n("e3299b94", "發生錯誤。請稍後再嘗試更新該資料夾。"),
                 n("c09ea714", "發生錯誤。請稍後再嘗試刪除該資料夾。"),
@@ -6884,9 +6883,9 @@
                 n("b925c18c", "薪資類型"),
                 n("j3d242ce", "無效範圍"),
                 n("f4d07bd2", "包括選擇性的詳細資料，以便應徵者更輕鬆地透過搜尋找到你的職位。"),
-                n("b8cbb51a", "工作摘要");
-            n("bda6881e", "此工作已從你的應徵者追蹤系統 (ATS) 匯入。請注意，只能修改特定欄位。"),
-                n("b075c68a", "編輯工作"),
+                n("b8cbb51a", "工作摘要"),
+                n("bda6881e", "此工作已從你的應徵者追蹤系統 (ATS) 匯入。請注意，只能修改特定欄位。");
+            n("b075c68a", "編輯工作"),
                 n("d4b6a6e0", "用戶檔案焦點"),
                 n("j2dd3686", "在我的貼文上方重點展示精選工作。"),
                 n("af1cfd46", "ATS 整合"),
@@ -7228,14 +7227,20 @@
                 n("hd80bd3e", "推廣貼文"),
                 n("fe2b0008", "了解如何使用 X"),
                 n("h257d4aa", "選取要推廣的貼文"),
-                n("fe946974", "你的 X 無廣告試用"),
+                n("h9b28dae", "You’re saving time with an ad-free feed"),
                 n("f6c50ec0", "你的無廣告試用已結束"),
-                n("b1319404", "避免的廣告數"),
-                n("baa4acae", "你會看到更個人化的內容。"),
-                n("c00e8600", "預估的節省時間"),
+                n("e1d1fbca", "You’ve avoided"),
+                n("a82d7abd", function (e) {
+                    return e.numberOfAds + " ads";
+                }),
+                n("ff074c76", "You’re seeing more of the posts you want."),
+                n("cbc38428", "透過 Premium+ 暢享無廣告體驗"),
+                n("b9028f60", "Back to my ad-free trial"),
+                n("e081d6a0", "No thanks, I’d like to see ads again"),
+                n("fee73dca", "Saving an estimated"),
                 n("ic073e4e", "你的時間相當寶貴。"),
                 n("eb866e88", "預估一年的節省時間"),
-                n("aa77b70c", "根據你的使用情況。"),
+                n("ce72f092", "Based on your usage so far."),
                 n("c534c6b4", "我們正在進行數據統計…"),
                 n("i57332f0", "請繼續瀏覽並稍後回來查看，看看你避免了多少廣告及節省了多少時間"),
                 n("cc10f019", function (e) {
@@ -7250,12 +7255,16 @@
                 n("b93d00e5", function (e) {
                     return e.days + " 天";
                 }),
+                n("g2c63852", "100% free. No credit card required."),
                 n("be88be23", function (e) {
                     return "你的 " + e.durationInDays + " 天無廣告試用已啟動";
                 }),
-                n("a4413462", "在整個試用期間，你可以查看統計資料，了解你避免了多少廣告及節省了多少時間。"),
-                n("ae3f3b0e", "盡情享用！"),
-                n("cdac8dc4", "查看你的新摘要"),
+                n("b63766a6", "Scroll without ads"),
+                n("h028f7e0", "Spend more time on the content you love"),
+                n("dd68eef6", "Experience the Premium+ luxury life"),
+                n("g8a2f217", function (e) {
+                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                }),
                 n("dec99336", "無廣告"),
                 n("i95803fa", "很遺憾，你目前不符合資格。"),
                 n("d28a1d72", "透過 Radar，成為第一個掌握趨勢的人"),
@@ -7855,14 +7864,7 @@
                 n("a76d58ba", "廣告分析"),
                 n("eccd0e1a", "組織分析"),
                 n("deea1708", "想要查看你的所有 X 帳戶的分析嗎？"),
-                n("eb603ffc", "升級以建立附屬網路並查看彙總分析。"),
-                n("gf67aae4", "升級至完整權益"),
-                n("h75e3618", "包含組織"),
-                n("h24a8862", "關於此核取方塊"),
-                n("c29e3a88", "選取附屬帳戶"),
-                n("j8318d57", function (e) {
-                    return e.number + " 個附屬帳戶";
-                });
+                n("eb603ffc", "升級以建立附屬網路並查看彙總分析。");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7901,7 +7903,14 @@
                     r(e, c)
                 );
             }
-            n("bf809ec0", "選取附屬帳戶"),
+            n("gf67aae4", "升級至完整權益"),
+                n("h75e3618", "包含組織"),
+                n("h24a8862", "關於此核取方塊"),
+                n("c29e3a88", "選取附屬帳戶"),
+                n("j8318d57", function (e) {
+                    return e.number + " 個附屬帳戶";
+                }),
+                n("bf809ec0", "選取附屬帳戶"),
                 n("b719e224", "沒有結果"),
                 n("c9938100", "搜尋結果"),
                 n("d1a35ec6", "加入帳戶"),
@@ -8893,10 +8902,10 @@
                 n("j0c6772a", "造訪網站"),
                 n("f73003aa", "影片將在廣告之後播放"),
                 n("b3112b8a", "略過"),
-                n("h6333ad0", "略過廣告"),
-                n("c59da417", function (e) {
-                    return e.seconds + "後略過廣告";
-                }),
+                n("h6333ad0", "略過廣告");
+            n("c59da417", function (e) {
+                return e.seconds + "後略過廣告";
+            }),
                 n("c3c147cf", function (e) {
                     return e.seconds + "後略過";
                 }),
@@ -8904,8 +8913,8 @@
                 n("ha3efce4", "自動"),
                 n("hd8d044d", function (e) {
                     return "自動 (" + e.quality + ")";
-                });
-            n("a7bf9962", "下載影片"),
+                }),
+                n("a7bf9962", "下載影片"),
                 n("ccc97152", "播放速度"),
                 n("h531ade0", "影片畫質"),
                 n("e8b5757c", "0.25 倍"),
@@ -11529,7 +11538,7 @@
                         {
                             key: "ffd3d1a1",
                             get: function () {
-                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                                return ["評價會匿名處理，並公開地向公眾顯示以提高透明度。"];
                             },
                         },
                         {
@@ -13349,4 +13358,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.b659c2ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.5dcf6b4a.js.map

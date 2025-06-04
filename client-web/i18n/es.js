@@ -224,7 +224,6 @@
                 o("f65e7e91", function (e) {
                     return e.percentage + " % de descuento en " + e.tier + " " + e.plan;
                 }),
-                o("cbc38428", "Continúa sin anuncios con Premium+"),
                 o("a84a736e", "Obtener crédito de anuncios gratuito"),
                 o("a0713d76", "Actualiza a Organizaciones verificadas y obtén crédito de anuncios gratuito y un conjunto de herramientas de crecimiento empresarial."),
                 o("a07e13fc", "Convertirse en un creador Premium"),
@@ -900,9 +899,9 @@
                 o("e8e39f95", "Más información"),
                 o("e126dd3f", "Más información"),
                 o("i821844f", "Más información"),
-                o("b0abbb17", "Más información");
-            o("e7e0d88b", "Más información"),
-                o("i560665f", "Más información"),
+                o("b0abbb17", "Más información"),
+                o("e7e0d88b", "Más información");
+            o("i560665f", "Más información"),
                 o("f6e774d9", "Más información"),
                 o("h486f755", "Más información"),
                 o("bab41dab", "Más información"),
@@ -1916,9 +1915,9 @@
                 o("da8ac57c", "Editar descripción"),
                 o("a8fdd09c", "Publicar Artículo"),
                 o("d8047cc8", "Publicar"),
-                o("ff7ddca2", "Tu Artículo aparecerá como un post una vez que lo publiques. También lo encontrarás en la pestaña Artículos de tu perfil.");
-            o("ef34d7be", "Los controles de Audiencia y respuesta no son editables una vez que se publica un Artículo."),
-                o("e52d4998", "Elige tu audiencia"),
+                o("ff7ddca2", "Tu Artículo aparecerá como un post una vez que lo publiques. También lo encontrarás en la pestaña Artículos de tu perfil."),
+                o("ef34d7be", "Los controles de Audiencia y respuesta no son editables una vez que se publica un Artículo.");
+            o("e52d4998", "Elige tu audiencia"),
                 o("d7985b24", "Elige quién puede responder a este artículo"),
                 o("b5660338", "Vista previa de la cronología"),
                 o("hff1b97a", "Solo pueden responder los suscriptores."),
@@ -2972,9 +2971,9 @@
                 o("jb0a4c36", "Blog"),
                 o("ce6d095a", "Empleos"),
                 o("e0adec82", "Recursos para marcas"),
-                o("df1b7550", "Marketing");
-            o("he258678", "X para empresas"),
-                o("c6f58084", "Desarrolladores"),
+                o("df1b7550", "Marketing"),
+                o("he258678", "X para empresas");
+            o("c6f58084", "Desarrolladores"),
                 o("d83f18d2", "Guía"),
                 o("hc5aa17c", "Obtén la app de X"),
                 o("j0693948", "Obtén la app de Grok"),
@@ -3884,13 +3883,13 @@
                 o("caa8d928", "Activar/desactivar supresión de ruido"),
                 o("b5d88f0c", "Solo para empleados"),
                 o("c855ab8e", "Solo Suscriptores"),
-                o("ddeb0a3c", "Esta es la Comunidad. ¿Te gusta la gente? Dale un vistazo.");
-            o("e111f531", function (e) {
-                return e.count + " conectado" + r(e.count, "", "s");
+                o("ddeb0a3c", "Esta es la Comunidad. ¿Te gusta la gente? Dale un vistazo."),
+                o("e111f531", function (e) {
+                    return e.count + " conectado" + r(e.count, "", "s");
+                });
+            o("cbef820f", function (e) {
+                return "¡" + e.screenName + " reposteó la transmisión!";
             }),
-                o("cbef820f", function (e) {
-                    return "¡" + e.screenName + " reposteó la transmisión!";
-                }),
                 o("e3275464", "Enviar"),
                 o("cededf2a", "Anfitrión"),
                 o("i2caef48", "Coanfitriones"),
@@ -4924,9 +4923,9 @@
                 o("d9f9dec0", "Ver Espacio"),
                 o("h0c1f37a", "Ver estadísticas de Espacios"),
                 o("e41fffbc", "El tiempo total de reproducción de tus videos."),
-                o("if2909ba", "Tiempo de reproducción");
-            o("i0e5bf4c", "Tus videos"),
-                o("ed99baea", "Acceso anticipado a la versión beta"),
+                o("if2909ba", "Tiempo de reproducción"),
+                o("i0e5bf4c", "Tus videos");
+            o("ed99baea", "Acceso anticipado a la versión beta"),
                 o("gf898b70", "Búsqueda avanzada"),
                 o("d2a43a7a", 'contiene "ai" y "startup"'),
                 o("a8584698", "ai startup"),
@@ -5880,9 +5879,9 @@
                 o("e41c9b4f", function (e) {
                     return "Guardado en " + e.bookmarkFolderName;
                 }),
-                o("h18f86a4", "Eliminar carpeta");
-            o("f4ea967a", "Se eliminó la carpeta"),
-                o("b670aa62", "Nombre de carpeta"),
+                o("h18f86a4", "Eliminar carpeta"),
+                o("f4ea967a", "Se eliminó la carpeta");
+            o("b670aa62", "Nombre de carpeta"),
                 o("aece5462", "El nombre de la carpeta se actualizó correctamente"),
                 o("e3299b94", "Algo salió mal. Intenta actualizar esa carpeta de nuevo dentro de un minuto."),
                 o("c09ea714", "Algo salió mal. Intenta eliminar esa carpeta de nuevo dentro de un minuto."),
@@ -6884,9 +6883,9 @@
                 o("b925c18c", "Tipo de salario"),
                 o("j3d242ce", "Rango no válido"),
                 o("f4d07bd2", "Incluye detalles opcionales para que sea más fácil para los candidatos descubrir los roles con la búsqueda."),
-                o("b8cbb51a", "Resumen del empleo");
-            o("bda6881e", "Este empleo se importó desde tu sistema de gestión del proceso de selección (ATS, por sus siglas en inglés). Solo se pueden modificar campos específicos."),
-                o("b075c68a", "Editar empleo"),
+                o("b8cbb51a", "Resumen del empleo"),
+                o("bda6881e", "Este empleo se importó desde tu sistema de gestión del proceso de selección (ATS, por sus siglas en inglés). Solo se pueden modificar campos específicos.");
+            o("b075c68a", "Editar empleo"),
                 o("d4b6a6e0", "Spotlight de perfil"),
                 o("j2dd3686", "Empleos destacados sobre mis posts."),
                 o("af1cfd46", "Integración con ATS"),
@@ -7228,14 +7227,20 @@
                 o("hd80bd3e", "Promocionar un post"),
                 o("fe2b0008", "Aprende cómo usar X"),
                 o("h257d4aa", "Seleccionar un post para promocionar"),
-                o("fe946974", "Tu prueba de X sin anuncios"),
+                o("h9b28dae", "You’re saving time with an ad-free feed"),
                 o("f6c50ec0", "Finalizó tu prueba sin anuncios"),
-                o("b1319404", "Anuncios evitados"),
-                o("baa4acae", "Estás viendo contenido más personalizado."),
-                o("c00e8600", "Tiempo ahorrado estimado"),
+                o("e1d1fbca", "You’ve avoided"),
+                o("a82d7abd", function (e) {
+                    return e.numberOfAds + " ads";
+                }),
+                o("ff074c76", "You’re seeing more of the posts you want."),
+                o("cbc38428", "Continúa sin anuncios con Premium+"),
+                o("b9028f60", "Back to my ad-free trial"),
+                o("e081d6a0", "No thanks, I’d like to see ads again"),
+                o("fee73dca", "Saving an estimated"),
                 o("ic073e4e", "Tu tiempo es valioso."),
                 o("eb866e88", "Ahorro de tiempo estimado en 1 año"),
-                o("aa77b70c", "En función de tu uso."),
+                o("ce72f092", "Based on your usage so far."),
                 o("c534c6b4", "Estamos haciendo números..."),
                 o("i57332f0", "Sigue desplazándote y vuelve a consultar más tarde para ver cuántos anuncios evitaste y cuánto tiempo ahorraste."),
                 o("cc10f019", function (e) {
@@ -7250,12 +7255,16 @@
                 o("b93d00e5", function (e) {
                     return e.days + " día" + r(e.days, "", "s");
                 }),
+                o("g2c63852", "100% free. No credit card required."),
                 o("be88be23", function (e) {
                     return "Tu prueba de " + e.durationInDays + " día(s) sin anuncios está activada";
                 }),
-                o("a4413462", "A lo largo de las pruebas, puedes ver estadísticas sobre cuántos anuncios no viste y cuánto tiempo ahorraste."),
-                o("ae3f3b0e", "¡A disfrutar!"),
-                o("cdac8dc4", "Consulta tu nuevo feed"),
+                o("b63766a6", "Scroll without ads"),
+                o("h028f7e0", "Spend more time on the content you love"),
+                o("dd68eef6", "Experience the Premium+ luxury life"),
+                o("g8a2f217", function (e) {
+                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                }),
                 o("dec99336", "Sin anuncios"),
                 o("i95803fa", "Lamentablemente, no eres elegible en este momento."),
                 o("d28a1d72", "Sé de los primeros en detectar tendencias con Radar"),
@@ -7855,14 +7864,7 @@
                 o("a76d58ba", "Estadísticas de anuncios"),
                 o("eccd0e1a", "Estadísticas de la organización"),
                 o("deea1708", "¿Quieres ver las estadísticas de todas tus cuentas de X?"),
-                o("eb603ffc", "Actualiza para afiliar a tu red y ver las estadísticas totales."),
-                o("gf67aae4", "Actualizar al nivel de acceso total"),
-                o("h75e3618", "Incluir organización"),
-                o("h24a8862", "Acerca de esta casilla de verificación"),
-                o("c29e3a88", "Seleccionar afiliados"),
-                o("j8318d57", function (e) {
-                    return e.number + " afiliado" + r(e.number, "", "s");
-                });
+                o("eb603ffc", "Actualiza para afiliar a tu red y ver las estadísticas totales.");
             function s(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var o = a[n];
@@ -7901,7 +7903,14 @@
                     i(e, a)
                 );
             }
-            o("bf809ec0", "Seleccionar afiliados"),
+            o("gf67aae4", "Actualizar al nivel de acceso total"),
+                o("h75e3618", "Incluir organización"),
+                o("h24a8862", "Acerca de esta casilla de verificación"),
+                o("c29e3a88", "Seleccionar afiliados"),
+                o("j8318d57", function (e) {
+                    return e.number + " afiliado" + r(e.number, "", "s");
+                }),
+                o("bf809ec0", "Seleccionar afiliados"),
                 o("b719e224", "No hay resultados."),
                 o("c9938100", "Resultados de búsqueda"),
                 o("d1a35ec6", "Añadir cuentas"),
@@ -8893,10 +8902,10 @@
                 o("j0c6772a", "Visitar sitio web"),
                 o("f73003aa", "El video se reproducirá después del anuncio"),
                 o("b3112b8a", "Omitir"),
-                o("h6333ad0", "Omitir anuncio"),
-                o("c59da417", function (e) {
-                    return "Omitir anuncio dentro de " + e.seconds;
-                }),
+                o("h6333ad0", "Omitir anuncio");
+            o("c59da417", function (e) {
+                return "Omitir anuncio dentro de " + e.seconds;
+            }),
                 o("c3c147cf", function (e) {
                     return "Omitir " + e.seconds;
                 }),
@@ -8904,8 +8913,8 @@
                 o("ha3efce4", "Automático"),
                 o("hd8d044d", function (e) {
                     return "Automático (" + e.quality + ")";
-                });
-            o("a7bf9962", "Descargar video"),
+                }),
+                o("a7bf9962", "Descargar video"),
                 o("ccc97152", "Velocidad de reproducción"),
                 o("h531ade0", "Calidad del video"),
                 o("e8b5757c", "0.25x"),
@@ -13352,4 +13361,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.a9e2050a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.35b7f74a.js.map

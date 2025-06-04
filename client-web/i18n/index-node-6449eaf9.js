@@ -225,7 +225,6 @@
                 a("f65e7e91", function (e) {
                     return e.percentage + "% off " + e.tier + " " + e.plan;
                 }),
-                a("cbc38428", "Stay ad-free with Premium+"),
                 a("a84a736e", "Get Free Ad Credit"),
                 a("a0713d76", "Upgrade to Verified Organizations to get free ad credit & a suite of business growth tools."),
                 a("a07e13fc", "Become a Premium Creator"),
@@ -901,9 +900,9 @@
                 a("e8e39f95", "Learn more"),
                 a("e126dd3f", "Learn more"),
                 a("i821844f", "Learn more"),
-                a("b0abbb17", "Learn more");
-            a("e7e0d88b", "Learn more"),
-                a("i560665f", "Learn more"),
+                a("b0abbb17", "Learn more"),
+                a("e7e0d88b", "Learn more");
+            a("i560665f", "Learn more"),
                 a("f6e774d9", "Learn more"),
                 a("h486f755", "Learn more"),
                 a("bab41dab", "Learn more"),
@@ -1917,9 +1916,9 @@
                 a("da8ac57c", "Edit Caption"),
                 a("a8fdd09c", "Publish Article"),
                 a("d8047cc8", "Publish"),
-                a("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile.");
-            a("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
-                a("e52d4998", "Choose your audience"),
+                a("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                a("ef34d7be", "Audience and reply controls are not editable after an article has been published.");
+            a("e52d4998", "Choose your audience"),
                 a("d7985b24", "Choose who can reply to this Article"),
                 a("b5660338", "Timeline preview"),
                 a("hff1b97a", "Only Subscribed can reply."),
@@ -2973,9 +2972,9 @@
                 a("jb0a4c36", "Blog"),
                 a("ce6d095a", "Careers"),
                 a("e0adec82", "Brand Resources"),
-                a("df1b7550", "Marketing");
-            a("he258678", "X for Business"),
-                a("c6f58084", "Developers"),
+                a("df1b7550", "Marketing"),
+                a("he258678", "X for Business");
+            a("c6f58084", "Developers"),
                 a("d83f18d2", "Directory"),
                 a("hc5aa17c", "Get the X app"),
                 a("j0693948", "Get the Grok app"),
@@ -3885,13 +3884,13 @@
                 a("caa8d928", "Toggle noise suppression"),
                 a("b5d88f0c", "Employees only"),
                 a("c855ab8e", "Subscribers only"),
-                a("ddeb0a3c", "Here’s the Community. Like the people? Take a look.");
-            a("e111f531", function (e) {
-                return e.count + " tuned in";
+                a("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
+                a("e111f531", function (e) {
+                    return e.count + " tuned in";
+                });
+            a("cbef820f", function (e) {
+                return e.screenName + " reposted the stream!";
             }),
-                a("cbef820f", function (e) {
-                    return e.screenName + " reposted the stream!";
-                }),
                 a("e3275464", "Send"),
                 a("cededf2a", "Host"),
                 a("i2caef48", "Co-hosts"),
@@ -4925,9 +4924,9 @@
                 a("d9f9dec0", "View Space"),
                 a("h0c1f37a", "View Space Analytics"),
                 a("e41fffbc", "The total watch time of your videos."),
-                a("if2909ba", "Watch Time");
-            a("i0e5bf4c", "Your videos"),
-                a("ed99baea", "Early Beta Access"),
+                a("if2909ba", "Watch Time"),
+                a("i0e5bf4c", "Your videos");
+            a("ed99baea", "Early Beta Access"),
                 a("gf898b70", "Advanced Search"),
                 a("d2a43a7a", 'contains both "ai" and "startup"'),
                 a("a8584698", "ai startup"),
@@ -5881,9 +5880,9 @@
                 a("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                a("h18f86a4", "Delete Folder");
-            a("f4ea967a", "Folder has been deleted"),
-                a("b670aa62", "Folder Name"),
+                a("h18f86a4", "Delete Folder"),
+                a("f4ea967a", "Folder has been deleted");
+            a("b670aa62", "Folder Name"),
                 a("aece5462", "Folder name has been updated successfully"),
                 a("e3299b94", "Something went wrong. Try updating that folder again in a minute."),
                 a("c09ea714", "Something went wrong. Try deleting that folder again in a minute."),
@@ -6885,9 +6884,9 @@
                 a("b925c18c", "Salary Type"),
                 a("j3d242ce", "Invalid range"),
                 a("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
-                a("b8cbb51a", "Job Summary");
-            a("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
-                a("b075c68a", "Edit job"),
+                a("b8cbb51a", "Job Summary"),
+                a("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.");
+            a("b075c68a", "Edit job"),
                 a("d4b6a6e0", "Profile Spotlight"),
                 a("j2dd3686", "Highlight featured jobs above my posts."),
                 a("af1cfd46", "ATS integration"),
@@ -7229,14 +7228,20 @@
                 a("hd80bd3e", "Promote a post"),
                 a("fe2b0008", "Learn how to use X"),
                 a("h257d4aa", "Select a post to promote"),
-                a("fe946974", "Your trial of X without ads"),
+                a("h9b28dae", "You’re saving time with an ad-free feed"),
                 a("f6c50ec0", "Your ad-free trial has ended"),
-                a("b1319404", "Ads avoided"),
-                a("baa4acae", "You’re seeing more personalized content."),
-                a("c00e8600", "Estimated time saved"),
+                a("e1d1fbca", "You’ve avoided"),
+                a("a82d7abd", function (e) {
+                    return e.numberOfAds + " ads";
+                }),
+                a("ff074c76", "You’re seeing more of the posts you want."),
+                a("cbc38428", "Stay ad-free with Premium+"),
+                a("b9028f60", "Back to my ad-free trial"),
+                a("e081d6a0", "No thanks, I’d like to see ads again"),
+                a("fee73dca", "Saving an estimated"),
                 a("ic073e4e", "Your time is valuable."),
                 a("eb866e88", "Estimated 1-year time savings"),
-                a("aa77b70c", "Based on your usage."),
+                a("ce72f092", "Based on your usage so far."),
                 a("c534c6b4", "We’re crunching the numbers..."),
                 a("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
                 a("cc10f019", function (e) {
@@ -7251,12 +7256,16 @@
                 a("b93d00e5", function (e) {
                     return e.days + " day" + n(e.days, "", "s");
                 }),
+                a("g2c63852", "100% free. No credit card required."),
                 a("be88be23", function (e) {
                     return "Your " + e.durationInDays + "-day ad-free trial is activated";
                 }),
-                a("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                a("ae3f3b0e", "Enjoy!"),
-                a("cdac8dc4", "See your new feed"),
+                a("b63766a6", "Scroll without ads"),
+                a("h028f7e0", "Spend more time on the content you love"),
+                a("dd68eef6", "Experience the Premium+ luxury life"),
+                a("g8a2f217", function (e) {
+                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                }),
                 a("dec99336", "Ad-free"),
                 a("i95803fa", "Unfortunately, you are not eligible at this time."),
                 a("d28a1d72", "Be the very first to spot trends with Radar"),
@@ -7856,14 +7865,7 @@
                 a("a76d58ba", "Ads Analytics"),
                 a("eccd0e1a", "Organization Analytics"),
                 a("deea1708", "Want to view analytics across all your X accounts?"),
-                a("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
-                a("gf67aae4", "Upgrade to Full Access"),
-                a("h75e3618", "Include organization"),
-                a("h24a8862", "About this checkbox"),
-                a("c29e3a88", "Select affiliates"),
-                a("j8318d57", function (e) {
-                    return e.number + " affiliate" + n(e.number, "", "s");
-                });
+                a("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics.");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7902,7 +7904,14 @@
                     r(e, t)
                 );
             }
-            a("bf809ec0", "Select Affiliates"),
+            a("gf67aae4", "Upgrade to Full Access"),
+                a("h75e3618", "Include organization"),
+                a("h24a8862", "About this checkbox"),
+                a("c29e3a88", "Select affiliates"),
+                a("j8318d57", function (e) {
+                    return e.number + " affiliate" + n(e.number, "", "s");
+                }),
+                a("bf809ec0", "Select Affiliates"),
                 a("b719e224", "No results"),
                 a("c9938100", "Search results"),
                 a("d1a35ec6", "Add accounts"),
@@ -8894,10 +8903,10 @@
                 a("j0c6772a", "Visit website"),
                 a("f73003aa", "Video will play after ad"),
                 a("b3112b8a", "Skip"),
-                a("h6333ad0", "Skip Ad"),
-                a("c59da417", function (e) {
-                    return "Skip Ad in " + e.seconds;
-                }),
+                a("h6333ad0", "Skip Ad");
+            a("c59da417", function (e) {
+                return "Skip Ad in " + e.seconds;
+            }),
                 a("c3c147cf", function (e) {
                     return "Skip " + e.seconds;
                 }),
@@ -8905,8 +8914,8 @@
                 a("ha3efce4", "Auto"),
                 a("hd8d044d", function (e) {
                     return "Auto (" + e.quality + ")";
-                });
-            a("a7bf9962", "Download video"),
+                }),
+                a("a7bf9962", "Download video"),
                 a("ccc97152", "Playback speed"),
                 a("h531ade0", "Video quality"),
                 a("e8b5757c", "0.25x"),
@@ -13341,4 +13350,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/index-node-6449eaf9.b1c0954a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/index-node-6449eaf9.5a1fbb2a.js.map

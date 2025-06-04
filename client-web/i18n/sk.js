@@ -234,7 +234,6 @@
                 n("f65e7e91", function (e) {
                     return e.percentage + " % zľava " + e.tier + " " + e.plan;
                 }),
-                n("cbc38428", "Zbavte sa reklám s predplatným Premium+"),
                 n("a84a736e", "Získajte bezplatný reklamný kredit"),
                 n("a0713d76", "Prejdite na predplatné Overené organizácie a získajte tak bezplatný reklamný kredit a súpravu nástrojov, ktoré pomôžu vášmu biznisu rásť."),
                 n("a07e13fc", "Stať sa Premium tvorcom"),
@@ -910,9 +909,9 @@
                 n("e8e39f95", "Viac informácií"),
                 n("e126dd3f", "Viac informácií"),
                 n("i821844f", "Viac informácií"),
-                n("b0abbb17", "Viac informácií");
-            n("e7e0d88b", "Viac informácií"),
-                n("i560665f", "Viac informácií"),
+                n("b0abbb17", "Viac informácií"),
+                n("e7e0d88b", "Viac informácií");
+            n("i560665f", "Viac informácií"),
                 n("f6e774d9", "Viac informácií"),
                 n("h486f755", "Viac informácií"),
                 n("bab41dab", "Viac informácií"),
@@ -1926,9 +1925,9 @@
                 n("da8ac57c", "Upraviť opis"),
                 n("a8fdd09c", "Zverejnenie článku"),
                 n("d8047cc8", "Publikovať"),
-                n("ff7ddca2", "Zverejnený článok sa bude zobrazovať ako príspevok a nájdete ho aj vo svojom profile na karte Články.");
-            n("ef34d7be", "Nastavenia publika a odpovedí sa po zverejnení článku nedajú upravovať."),
-                n("e52d4998", "Vyberte svoje publikum"),
+                n("ff7ddca2", "Zverejnený článok sa bude zobrazovať ako príspevok a nájdete ho aj vo svojom profile na karte Články."),
+                n("ef34d7be", "Nastavenia publika a odpovedí sa po zverejnení článku nedajú upravovať.");
+            n("e52d4998", "Vyberte svoje publikum"),
                 n("d7985b24", "Vyberte, kto môže na tento článok odpovedať"),
                 n("b5660338", "Ukážka časovej osi"),
                 n("hff1b97a", "Odpovedať môžu len predplatitelia."),
@@ -2982,9 +2981,9 @@
                 n("jb0a4c36", "Blog"),
                 n("ce6d095a", "Kariéry"),
                 n("e0adec82", "Zdroje pre značku"),
-                n("df1b7550", "Marketing");
-            n("he258678", "X pre firmy"),
-                n("c6f58084", "Vývojári"),
+                n("df1b7550", "Marketing"),
+                n("he258678", "X pre firmy");
+            n("c6f58084", "Vývojári"),
                 n("d83f18d2", "Adresár"),
                 n("hc5aa17c", "Získajte aplikáciu X"),
                 n("j0693948", "Získajte aplikáciu Grok"),
@@ -3894,13 +3893,13 @@
                 n("caa8d928", "Prepnúť potláčanie ruchu"),
                 n("b5d88f0c", "Iba pre zamestnancov"),
                 n("c855ab8e", "Len pre predplatiteľov"),
-                n("ddeb0a3c", "Páčia sa vám ľudia z tejto Komunity? Pozrite si ju.");
-            n("e111f531", function (e) {
-                return e.count + " naladen" + t(e.count, "í", "ých", "ý/-á", "ých");
+                n("ddeb0a3c", "Páčia sa vám ľudia z tejto Komunity? Pozrite si ju."),
+                n("e111f531", function (e) {
+                    return e.count + " naladen" + t(e.count, "í", "ých", "ý/-á", "ých");
+                });
+            n("cbef820f", function (e) {
+                return "Používateľ " + e.screenName + " opätovne uverejnil stream.";
             }),
-                n("cbef820f", function (e) {
-                    return "Používateľ " + e.screenName + " opätovne uverejnil stream.";
-                }),
                 n("e3275464", "Odoslať"),
                 n("cededf2a", "Hostiteľ"),
                 n("i2caef48", "Spoluhostitelia"),
@@ -4934,9 +4933,9 @@
                 n("d9f9dec0", "Zobraziť priestor"),
                 n("h0c1f37a", "Zobraziť analýzu priestoru"),
                 n("e41fffbc", "Celkový čas pozerania vašich videí."),
-                n("if2909ba", "Čas pozerania");
-            n("i0e5bf4c", "Vaše videá"),
-                n("ed99baea", "Prednostný prístup k beta verzii"),
+                n("if2909ba", "Čas pozerania"),
+                n("i0e5bf4c", "Vaše videá");
+            n("ed99baea", "Prednostný prístup k beta verzii"),
                 n("gf898b70", "Rozšírené vyhľadávanie"),
                 n("d2a43a7a", "obsahuje „ai“ aj „startup“"),
                 n("a8584698", "ai startup"),
@@ -5890,9 +5889,9 @@
                 n("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                n("h18f86a4", "Odstrániť priečinok");
-            n("f4ea967a", "Priečinok bol odstránený"),
-                n("b670aa62", "Názov priečinka"),
+                n("h18f86a4", "Odstrániť priečinok"),
+                n("f4ea967a", "Priečinok bol odstránený");
+            n("b670aa62", "Názov priečinka"),
                 n("aece5462", "Názov priečinka bol úspešne aktualizovaný"),
                 n("e3299b94", "Vyskytla sa chyba. Skúste priečinok aktualizovať znova o minútu."),
                 n("c09ea714", "Vyskytla sa chyba. Skúste priečinok odstrániť znova o minútu."),
@@ -6894,9 +6893,9 @@
                 n("b925c18c", "Typ mzdy"),
                 n("j3d242ce", "Neplatný rozsah"),
                 n("f4d07bd2", "Uveďte nepovinné údaje, ktoré uchádzačom uľahčia nájdenie vašich pracovných pozícií."),
-                n("b8cbb51a", "Zhrnutie pracovnej pozície");
-            n("bda6881e", "Toto pracovné miesto bolo importované zo systému sledovania uchádzačov (ATS). Vezmite prosím na vedomie, že je možné upravovať iba určité polia."),
-                n("b075c68a", "Upraviť pracovnú pozíciu"),
+                n("b8cbb51a", "Zhrnutie pracovnej pozície"),
+                n("bda6881e", "Toto pracovné miesto bolo importované zo systému sledovania uchádzačov (ATS). Vezmite prosím na vedomie, že je možné upravovať iba určité polia.");
+            n("b075c68a", "Upraviť pracovnú pozíciu"),
                 n("d4b6a6e0", "Zvýraznenie v profile"),
                 n("j2dd3686", "Zvýrazniť zobrazované pracovné ponuky nad mojimi príspevkami"),
                 n("af1cfd46", "Integrácia systému sledovania uchádzačov (ATS)"),
@@ -7238,14 +7237,20 @@
                 n("hd80bd3e", "Sponzorovať príspevok"),
                 n("fe2b0008", "Ako používať X"),
                 n("h257d4aa", "Vyberte príspevok, ktorý sa má sponzorovať"),
-                n("fe946974", "Vaše skúšobné obdobie používania služby X bez reklám"),
+                n("h9b28dae", "You’re saving time with an ad-free feed"),
                 n("f6c50ec0", "Vaše skúšobné obdobie bez reklám sa skončilo"),
-                n("b1319404", "Počet reklám, ktorým ste sa vyhli"),
-                n("baa4acae", "Vidíte viac prispôsobeného obsahu."),
-                n("c00e8600", "Odhadovaná úspora času"),
+                n("e1d1fbca", "You’ve avoided"),
+                n("a82d7abd", function (e) {
+                    return e.numberOfAds + " ads";
+                }),
+                n("ff074c76", "You’re seeing more of the posts you want."),
+                n("cbc38428", "Zbavte sa reklám s predplatným Premium+"),
+                n("b9028f60", "Back to my ad-free trial"),
+                n("e081d6a0", "No thanks, I’d like to see ads again"),
+                n("fee73dca", "Saving an estimated"),
                 n("ic073e4e", "Váš čas je cenný."),
                 n("eb866e88", "Odhadovaná ročná úspora času"),
-                n("aa77b70c", "Na základe vášho používania."),
+                n("ce72f092", "Based on your usage so far."),
                 n("c534c6b4", "Vykonávame výpočty…"),
                 n("i57332f0", "Pozerajte si obsah a vráťte sa sem neskôr, aby ste zistili, koľkým reklamám ste sa vyhli a koľko času ste ušetrili."),
                 n("cc10f019", function (e) {
@@ -7260,12 +7265,16 @@
                 n("b93d00e5", function (e) {
                     return e.days + " d" + t(e.days, "ni", "ňa", "eň", "ní");
                 }),
+                n("g2c63852", "100% free. No credit card required."),
                 n("be88be23", function (e) {
                     return "Vaše " + e.durationInDays + "-dňové skúšobné obdobie bez reklám je aktivované";
                 }),
-                n("a4413462", "Počas skúšobného obdobia si môžete pozrieť štatistiky o tom, koľkým reklamám ste sa vyhli a koľko času ste ušetrili."),
-                n("ae3f3b0e", "Prajeme príjemný zážitok!"),
-                n("cdac8dc4", "Zobraziť môj nový kanál"),
+                n("b63766a6", "Scroll without ads"),
+                n("h028f7e0", "Spend more time on the content you love"),
+                n("dd68eef6", "Experience the Premium+ luxury life"),
+                n("g8a2f217", function (e) {
+                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                }),
                 n("dec99336", "Bez reklám"),
                 n("i95803fa", "Ľutujeme, ale v súčasnosti nespĺňate podmienky."),
                 n("d28a1d72", "Buďte medzi prvými a hľadajte trendy so službou Radar"),
@@ -7865,14 +7874,7 @@
                 n("a76d58ba", "Štatistika reklám"),
                 n("eccd0e1a", "Štatistika organizácie"),
                 n("deea1708", "Chcete si pozrieť štatistiky všetkých svojich účtov X?"),
-                n("eb603ffc", "Prejdite na vyššiu tarifu predplatného, aby ste mohli pridružiť účty a pozrieť si súhrnné štatistiky."),
-                n("gf67aae4", "Prejdite na tarifu s plným prístupom"),
-                n("h75e3618", "Zahrnúť organizáciu"),
-                n("h24a8862", "Informácie o tomto začiarkavacom políčku"),
-                n("c29e3a88", "Vyberte pridružené účty"),
-                n("j8318d57", function (e) {
-                    return e.number + " pridružen" + t(e.number, "é účty", "é účty", "ý účet", "é účty");
-                });
+                n("eb603ffc", "Prejdite na vyššiu tarifu predplatného, aby ste mohli pridružiť účty a pozrieť si súhrnné štatistiky.");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var n = a[o];
@@ -7911,7 +7913,14 @@
                     r(e, a)
                 );
             }
-            n("bf809ec0", "Vyberte pridružené účty"),
+            n("gf67aae4", "Prejdite na tarifu s plným prístupom"),
+                n("h75e3618", "Zahrnúť organizáciu"),
+                n("h24a8862", "Informácie o tomto začiarkavacom políčku"),
+                n("c29e3a88", "Vyberte pridružené účty"),
+                n("j8318d57", function (e) {
+                    return e.number + " pridružen" + t(e.number, "é účty", "é účty", "ý účet", "é účty");
+                }),
+                n("bf809ec0", "Vyberte pridružené účty"),
                 n("b719e224", "Žiadne výsledky"),
                 n("c9938100", "Výsledky vyhľadávania"),
                 n("d1a35ec6", "Pridať účty"),
@@ -8903,10 +8912,10 @@
                 n("j0c6772a", "Navštíviť webstránku"),
                 n("f73003aa", "Video sa spustí po reklame"),
                 n("b3112b8a", "Preskočiť"),
-                n("h6333ad0", "Vynechať reklamu"),
-                n("c59da417", function (e) {
-                    return "Preskočiť reklamu o " + e.seconds;
-                }),
+                n("h6333ad0", "Vynechať reklamu");
+            n("c59da417", function (e) {
+                return "Preskočiť reklamu o " + e.seconds;
+            }),
                 n("c3c147cf", function (e) {
                     return "Preskočiť " + e.seconds;
                 }),
@@ -8914,8 +8923,8 @@
                 n("ha3efce4", "Automatická"),
                 n("hd8d044d", function (e) {
                     return "Automatická (" + e.quality + ")";
-                });
-            n("a7bf9962", "Stiahnuť video"),
+                }),
+                n("a7bf9962", "Stiahnuť video"),
                 n("ccc97152", "Rýchlosť prehrávania"),
                 n("h531ade0", "Kvalita videa"),
                 n("e8b5757c", "0,25x"),
@@ -13356,4 +13365,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.b9c4721a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.1997be4a.js.map

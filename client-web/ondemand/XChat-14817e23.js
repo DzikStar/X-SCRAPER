@@ -18,11 +18,11 @@
                 h = n(950849),
                 p = n(595117),
                 v = n(134877),
-                f = n(263033),
+                f = n(455091),
                 g = n(82458),
                 j = n(702024),
-                C = n(556160),
-                w = n(517922),
+                w = n(556160),
+                C = n(517922),
                 b = n(83083),
                 y = n(289752);
             function k({ media: e }) {
@@ -42,7 +42,7 @@
                 let n = null;
                 if (e === i.com.x.models.dm.ChatComposerAttachment.Loading) n = (0, s.jsx)("div", { className: "flex items-center justify-center bg-gray-100 rounded-2xl px-4 py-3", children: (0, s.jsx)(j.P, {}) });
                 else if (e instanceof i.com.x.models.dm.ChatComposerAttachment.Media) n = (0, s.jsx)(k, { media: e });
-                else if (e instanceof i.com.x.models.dm.ChatComposerAttachment.Post) n = e.post ? (0, s.jsx)(C.K, { post: e.post, url: e.url, className: "rounded-2xl" }) : (0, s.jsx)(w.C, {});
+                else if (e instanceof i.com.x.models.dm.ChatComposerAttachment.Post) n = e.post ? (0, s.jsx)(w.K, { post: e.post, url: e.url, className: "rounded-2xl" }) : (0, s.jsx)(C.C, {});
                 else {
                     if (e instanceof i.com.x.models.dm.ChatComposerAttachment.UrlCard) return null;
                     e instanceof i.com.x.models.dm.ChatComposerAttachment.File && (n = (0, s.jsx)(b.Q, { className: "rounded-2xl mb-2", filename: e.file.originalFilename, fileSize: e.file.fileSize }));
@@ -58,15 +58,15 @@
                 const { t } = (0, f.$G)(),
                     n = (0, x._)(e.composer.state),
                     j = (0, m.useRef)(null),
-                    C = (0, m.useRef)(null);
+                    w = (0, m.useRef)(null);
                 (0, u.e)(e.composer.toasts);
-                const w = (0, m.useCallback)(() => {
+                const C = (0, m.useCallback)(() => {
                         j.current?.focus();
                     }, []),
                     b = e.composer.triggerComposerFocusEvents;
-                (0, h.E)(b, w),
+                (0, h.E)(b, C),
                     (0, m.useEffect)(() => {
-                        w();
+                        C();
                     }, [e]);
                 const y = () => {
                         n.rightButton === E.SendActive && e.composer.onEvent(new i.com.x.dms.composer.composer.ChatComposerEvent.RightButtonClicked(n.rightButton));
@@ -94,7 +94,7 @@
                                     children: [
                                         (0, s.jsx)("input", {
                                             type: "file",
-                                            ref: C,
+                                            ref: w,
                                             onChange: async (e) => {
                                                 const t = e.target.files?.[0];
                                                 t && (await k(t));
@@ -107,7 +107,7 @@
                                             disabled: !n.canAddAttachment,
                                             icon: (0, s.jsx)(r.Z, {}),
                                             onClick: () => {
-                                                C.current?.click();
+                                                w.current?.click();
                                             },
                                             className: "bg-gray-100",
                                         }),
@@ -199,7 +199,7 @@
                 i = n(159603),
                 o = n(202784),
                 a = n(505332),
-                r = n(263033),
+                r = n(455091),
                 l = n(89195),
                 c = n(702024),
                 d = n(256958),
@@ -215,8 +215,8 @@
             };
             var g = n(155369),
                 j = n(379342),
-                C = n(671889),
-                w = n(533476);
+                w = n(671889),
+                C = n(533476);
             const b = i.com.x.dms.groupinvite,
                 y = i.com.x.dms.convinfo,
                 k = ({ id: e }) => {
@@ -271,7 +271,7 @@
                                 }
                             );
                         }, [x, e, u]),
-                        (0, s.jsxs)(C.g, {
+                        (0, s.jsxs)(w.g, {
                             className: "flex flex-col w-full items-center self-center min-h-dvh md:h-dvh",
                             children: [
                                 (0, s.jsx)(a.Q, {
@@ -288,7 +288,7 @@
                 },
                 N = ({ component: e }) => {
                     const { t } = (0, r.$G)(),
-                        n = (0, w._)(e.state),
+                        n = (0, C._)(e.state),
                         i = (0, o.useCallback)(() => {
                             n.inviteUrl && (navigator.clipboard.writeText(n.inviteUrl), e.onEvent(b.GroupInviteSettingsEvent.LinkCopied), (0, d.Am)(t("Link copied!")));
                         }, [e, n.inviteUrl, t]);
@@ -322,7 +322,7 @@
                 },
                 I = ({ component: e }) => {
                     const { t } = (0, r.$G)(),
-                        n = (0, w._)(e.state),
+                        n = (0, C._)(e.state),
                         i = (0, o.useCallback)(
                             (t, n) => {
                                 e.onEvent(new y.ConversationInfoEvent.ParticipantMenuButtonClicked(t, n));
@@ -364,22 +364,22 @@
             var s = n(552322),
                 i = n(202784),
                 o = n(159603),
-                a = n(796309),
-                r = n(607334),
-                l = n(129558),
-                c = n(666200),
-                d = n(515790),
-                m = n(89195),
-                x = n(25457),
-                u = n(702024),
-                h = n(941204),
-                p = n(863380),
-                v = n(436059),
-                f = n(703612),
-                g = n(898100),
+                a = n(607334),
+                r = n(129558),
+                l = n(666200),
+                c = n(515790),
+                d = n(89195),
+                m = n(25457),
+                x = n(702024),
+                u = n(941204),
+                h = n(863380),
+                p = n(436059),
+                v = n(703612),
+                f = n(898100),
+                g = n(796309),
                 j = n(155369),
-                C = n(379342),
-                w = n(263033),
+                w = n(379342),
+                C = n(455091),
                 b = n(846742),
                 y = n(996016),
                 k = n(32161),
@@ -421,11 +421,11 @@
                     : null;
             }
             const U = o.com.x.dms.convinfo,
-                O = ({ className: e }) => (0, s.jsxs)("div", { className: (0, a.cn)("flex flex-col items-center justify-center h-full gap-4", e), children: [(0, s.jsx)(u.P, {}), (0, s.jsx)(h.x, { children: "Sync is in progress …" })] });
+                O = ({ className: e }) => (0, s.jsxs)("div", { className: (0, g.cn)("flex flex-col items-center justify-center h-full gap-4", e), children: [(0, s.jsx)(x.P, {}), (0, s.jsx)(u.x, { children: "Sync is in progress …" })] });
             function F({ id: e }) {
                 const [t, n] = (0, i.useState)(null),
                     a = (0, j.n)(),
-                    r = (0, C.s)(),
+                    r = (0, w.s)(),
                     [l, c] = (0, i.useState)(!1);
                 return (
                     (0, i.useEffect)(() => {
@@ -469,8 +469,8 @@
                 );
             }
             function V({ component: e, setShowAddGroupParticipants: t, showAddGroupParticipants: n }) {
-                const { t: a } = (0, w.$G)(),
-                    u = (0, E._)(e.state);
+                const { t: x } = (0, C.$G)(),
+                    g = (0, E._)(e.state);
                 (0, R.e)(e.toasts);
                 const j = (0, i.useCallback)(
                         (t) => {
@@ -478,26 +478,26 @@
                         },
                         [e],
                     ),
-                    C = (0, i.useCallback)(
+                    w = (0, i.useCallback)(
                         (t, n) => {
                             e.onEvent(new U.ConversationInfoEvent.ParticipantMenuButtonClicked(t, n));
                         },
                         [e],
                     );
-                if (u.contents === U.ConversationInfoContents.Loading) return (0, s.jsx)(I.g, { className: "flex flex-col w-full items-center self-center min-h-dvh md:h-dvh relative overflow-y-auto", children: (0, s.jsx)(O, {}) });
-                if (!(u.contents instanceof U.ConversationInfoContents.Loaded)) return null;
-                const P = u.contents.convId,
+                if (g.contents === U.ConversationInfoContents.Loading) return (0, s.jsx)(I.g, { className: "flex flex-col w-full items-center self-center min-h-dvh md:h-dvh relative overflow-y-auto", children: (0, s.jsx)(O, {}) });
+                if (!(g.contents instanceof U.ConversationInfoContents.Loaded)) return null;
+                const P = g.contents.convId,
                     z = P instanceof o.com.x.models.dm.XConversationId.Group,
-                    B = u.contents.metadata.title instanceof o.com.x.dms.model.DmTitleState.OneToOne,
-                    T = u.contents.peopleSection,
-                    D = u.contents.memberRequestSize,
+                    B = g.contents.metadata.title instanceof o.com.x.dms.model.DmTitleState.OneToOne,
+                    T = g.contents.peopleSection,
+                    D = g.contents.memberRequestSize,
                     L = (t) => {
                         e.onEvent(t);
                     },
-                    F = u.contents.metadata.areNotificationsDisabled,
-                    V = F ? r.Z : l.Z,
-                    $ = a(B ? (F ? "Unmute Conversation" : "Mute Conversation") : F ? "Unmute Group" : "Mute Group"),
-                    q = u.contents.metadata.attributes?.defaultTtl?.inWholeMilliseconds;
+                    F = g.contents.metadata.areNotificationsDisabled,
+                    V = F ? a.Z : r.Z,
+                    $ = x(B ? (F ? "Unmute conversation" : "Mute conversation") : F ? "Unmute group" : "Mute group"),
+                    q = g.contents.metadata.attributes?.defaultTtl?.inWholeMilliseconds;
                 return (0, s.jsxs)(I.g, {
                     className: "flex flex-col w-full items-center self-center min-h-dvh md:h-dvh relative overflow-y-auto",
                     children: [
@@ -506,14 +506,14 @@
                         (0, s.jsxs)("div", {
                             className: "w-full sticky left-0 top-0 py-4 px-2",
                             children: [
-                                (0, s.jsx)(p.r, { className: "-z-[1]", to: "top" }),
+                                (0, s.jsx)(h.r, { className: "-z-[1]", to: "top" }),
                                 (0, s.jsxs)("div", {
                                     className: "flex flex-row justify-between w-full relative",
                                     children: [
                                         (0, s.jsx)("div", {
                                             className: "w-20 shrink-0",
-                                            children: (0, s.jsx)(v.z, {
-                                                icon: (0, s.jsx)(c.Z, {}),
+                                            children: (0, s.jsx)(p.z, {
+                                                icon: (0, s.jsx)(l.Z, {}),
                                                 onClick: (t) => {
                                                     t.stopPropagation(), e.onEvent(U.ConversationInfoEvent.BackButtonClicked);
                                                 },
@@ -528,27 +528,27 @@
                                                     className: "w-16 h-16",
                                                     children: (0, s.jsx)(k.x, {
                                                         avatarSize: "fill",
-                                                        titleState: u.contents.metadata.title,
+                                                        titleState: g.contents.metadata.title,
                                                         onCustomAvatarNeedsResolving: (t) => {
                                                             (0, M.G)() || e.onEvent(new o.com.x.dms.convinfo.ConversationInfoEvent.ResolveCustomAvatar(t));
                                                         },
                                                         isInlineFacepile: !0,
                                                     }),
                                                 }),
-                                                (0, s.jsxs)("div", { className: "flex flex-col items-center", children: [(0, s.jsx)(f.R, { name: u.contents.metadata.title.title, badges: B ? (0, A.r)(u.contents.metadata.title.otherUser) : void 0 }), B && u.contents.metadata.title.otherUser && (0, s.jsx)(g.Q, { screenName: u.contents.metadata.title.otherUser.screenName })] }),
+                                                (0, s.jsxs)("div", { className: "flex flex-col items-center", children: [(0, s.jsx)(v.R, { name: g.contents.metadata.title.title, badges: B ? (0, A.r)(g.contents.metadata.title.otherUser) : void 0 }), B && g.contents.metadata.title.otherUser && (0, s.jsx)(f.Q, { screenName: g.contents.metadata.title.otherUser.screenName })] }),
                                             ],
                                         }),
                                         (0, s.jsx)("div", {
                                             className: "w-20 shrink-0",
                                             children:
-                                                u.contents.showEditGroupAction &&
+                                                g.contents.showEditGroupAction &&
                                                 z &&
-                                                (0, s.jsx)(v.z, {
+                                                (0, s.jsx)(p.z, {
                                                     variant: "brandText",
                                                     onClick: () => {
                                                         e.onEvent(new o.com.x.dms.convinfo.ConversationInfoEvent.EditGroupClicked(P));
                                                     },
-                                                    children: (0, s.jsx)(h.x, { weight: "medium", color: "inherit", numberOfLines: 1, children: a("Edit") }),
+                                                    children: (0, s.jsx)(u.x, { weight: "medium", color: "inherit", numberOfLines: 1, children: x("Edit") }),
                                                 }),
                                         }),
                                     ],
@@ -567,19 +567,19 @@
                                             onClick: () => {
                                                 e.onEvent(F ? U.ConversationInfoEvent.OnUnMuteClicked : U.ConversationInfoEvent.OnMuteClicked);
                                             },
-                                            children: [(0, s.jsx)(V, { className: "w-6 h-6" }), (0, s.jsx)(h.x, { size: "subtext2", weight: "medium", color: "gray700", children: $ })],
+                                            children: [(0, s.jsx)(V, { className: "w-6 h-6" }), (0, s.jsx)(u.x, { size: "subtext2", weight: "medium", color: "gray700", children: $ })],
                                         }),
                                     }),
                                     (0, s.jsxs)("div", {
                                         className: "w-full",
                                         children: [
-                                            (0, s.jsx)(h.x, { weight: "bold", className: "px-4 pb-2", children: a(z ? "Group settings" : "Chat settings") }),
+                                            (0, s.jsx)(u.x, { weight: "bold", className: "px-4 pb-2", children: x(z ? "Group settings" : "Chat settings") }),
                                             (0, s.jsxs)(G.I, {
                                                 children: [
-                                                    !u.contents.metadata.isReadOnly &&
+                                                    !g.contents.metadata.isReadOnly &&
                                                         (0, s.jsx)(G.R, {
-                                                            icon: (0, s.jsx)(d.Z, { className: "h-5 w-5" }),
-                                                            title: a("Disappearing Messages"),
+                                                            icon: (0, s.jsx)(c.Z, { className: "h-5 w-5" }),
+                                                            title: x("Disappearing Messages"),
                                                             showChevron: !0,
                                                             value: q ? (0, S.L)(q) : "Off",
                                                             onClick: () => {
@@ -588,15 +588,15 @@
                                                         }),
                                                     T?.canAddPeople &&
                                                         (0, s.jsx)(G.R, {
-                                                            icon: (0, s.jsx)(m.Z, { className: "h-5 w-5" }),
+                                                            icon: (0, s.jsx)(d.Z, { className: "h-5 w-5" }),
                                                             onClick: () => {
                                                                 e.onEvent(U.ConversationInfoEvent.GroupInviteClicked);
                                                             },
-                                                            title: a("Group Invite Link"),
-                                                            value: D ? (0, s.jsx)("div", { className: "flex items-center justify-center w-6 h-6 rounded-full bg-blue-500", children: (0, s.jsx)(h.x, { size: "subtext2", color: "white", weight: "medium", children: D }) }) : u.contents.metadata.attributes?.inviteUrl ? a("On") : a("Off"),
+                                                            title: x("Group Invite Link"),
+                                                            value: D ? (0, s.jsx)("div", { className: "flex items-center justify-center w-6 h-6 rounded-full bg-blue-500", children: (0, s.jsx)(u.x, { size: "subtext2", color: "white", weight: "medium", children: D }) }) : g.contents.metadata.attributes?.inviteUrl ? x("On") : x("Off"),
                                                             showChevron: !0,
                                                         }),
-                                                    u.contents.bottomButtons.asJsReadonlyArrayView().map((e) => (0, s.jsx)(Z, { button: e, onEvent: L, buttonStyleSheet: "h-5 w-5" }, e.name)),
+                                                    g.contents.bottomButtons.asJsReadonlyArrayView().map((e) => (0, s.jsx)(Z, { button: e, onEvent: L, buttonStyleSheet: "h-5 w-5" }, e.name)),
                                                 ],
                                             }),
                                         ],
@@ -610,35 +610,35 @@
                                                       (0, s.jsxs)("div", {
                                                           className: "flex flex-row items-center justify-between px-4 pb-2",
                                                           children: [
-                                                              (0, s.jsx)(h.x, { weight: "bold", children: a("Members") }),
+                                                              (0, s.jsx)(u.x, { weight: "bold", children: x("Members") }),
                                                               T.showMoreUsersLink &&
                                                                   (0, s.jsx)("button", {
                                                                       type: "button",
                                                                       onClick: () => {
                                                                           e.onEvent(U.ConversationInfoEvent.TotalNumMembersClicked);
                                                                       },
-                                                                      children: (0, s.jsx)(h.x, { color: "primary", children: a("See all ({number})", { number: T.showMoreUsersLink + T.participants.asJsReadonlyArrayView().length }) }),
+                                                                      children: (0, s.jsx)(u.x, { color: "primary", children: x("See all ({number})", { number: T.showMoreUsersLink + T.participants.asJsReadonlyArrayView().length }) }),
                                                                   }),
                                                           ],
                                                       }),
                                                       (0, s.jsxs)(G.I, {
                                                           children: [
-                                                              u.contents.peopleSection.canAddPeople &&
+                                                              g.contents.peopleSection.canAddPeople &&
                                                                   (0, s.jsx)(G.R, {
-                                                                      icon: (0, s.jsx)(x.Z, {}),
+                                                                      icon: (0, s.jsx)(m.Z, {}),
                                                                       onClick: () => {
                                                                           e.onEvent(U.ConversationInfoEvent.AddPeopleClicked);
                                                                       },
-                                                                      title: a("Add members"),
+                                                                      title: x("Add members"),
                                                                   }),
-                                                              (0, s.jsx)(y.b, { handleParticipantClicked: j, handleParticipantMenuButtonClicked: C, participants: T.participants.asJsReadonlyArrayView(), menuItemsMap: T.menuItems.asJsReadonlyMapView() }),
+                                                              (0, s.jsx)(y.b, { handleParticipantClicked: j, handleParticipantMenuButtonClicked: w, participants: T.participants.asJsReadonlyArrayView(), menuItemsMap: T.menuItems.asJsReadonlyMapView() }),
                                                           ],
                                                       }),
                                                   ],
                                               }),
                                           })
                                         : null,
-                                    u.isLoading && (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(p.r, { to: "bottom", strength: 1 }), (0, s.jsx)(O, { className: "z-10" })] }),
+                                    g.isLoading && (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(h.r, { to: "bottom", strength: 1 }), (0, s.jsx)(O, { className: "z-10" })] }),
                                 ],
                             }),
                         }),
@@ -668,7 +668,7 @@
             }
         },
         238750: (e, t, n) => {
-            n.d(t, { p: () => M });
+            n.d(t, { p: () => A });
             var s = n(552322),
                 i = n(159603),
                 o = n(921879),
@@ -686,47 +686,49 @@
                 f = n(336984),
                 g = n(741321),
                 j = n(9001),
-                C = n(129558),
-                w = n(607334),
+                w = n(129558),
+                C = n(607334),
                 b = n(145731),
-                y = n(673518);
-            const k = i.com.x.dms.convlist.ConversationListEvent;
-            function N({ previewWithMetadata: e, actionsDialog: t, onEvent: n, children: i }) {
-                const o = t?.actions
-                    .asJsReadonlyArrayView()
-                    .map((t) =>
-                        ((e, t, n) => {
-                            const i = () => n(new k.ConversationActionClicked(e.preview.conversationId, t));
-                            switch (t.name) {
-                                case "MarkRead":
-                                    return { text: "Mark as read", icon: (0, s.jsx)(g.Z, {}), onClick: i };
-                                case "MarkUnread":
-                                    return { text: "Mark as unread", icon: (0, s.jsx)(j.Z, {}), onClick: i };
-                                case "MuteConversation":
-                                    return { text: "Mute", icon: (0, s.jsx)(C.Z, {}), onClick: i };
-                                case "UnmuteConversation":
-                                    return { text: "Unmute", icon: (0, s.jsx)(w.Z, {}), onClick: i };
-                                case "RemoveChat":
-                                    return { text: "Delete", icon: (0, s.jsx)(b.Z, {}), destructive: !0, onClick: i };
-                                case "DismissDeletion":
-                                case "RequestRemove":
-                                    return null;
-                            }
-                            return null;
-                        })(e, t, n),
-                    )
-                    .filter((e) => !!e);
+                y = n(673518),
+                k = n(455091);
+            const N = i.com.x.dms.convlist.ConversationListEvent;
+            function I({ previewWithMetadata: e, actionsDialog: t, onEvent: n, children: i }) {
+                const { t: o } = (0, k.$G)(),
+                    a = t?.actions
+                        .asJsReadonlyArrayView()
+                        .map((t) =>
+                            ((e, t, n, i) => {
+                                const o = () => i(new N.ConversationActionClicked(t.preview.conversationId, n));
+                                switch (n.name) {
+                                    case "MarkRead":
+                                        return { text: e("Mark as read"), icon: (0, s.jsx)(g.Z, {}), onClick: o };
+                                    case "MarkUnread":
+                                        return { text: e("Mark as unread"), icon: (0, s.jsx)(j.Z, {}), onClick: o };
+                                    case "MuteConversation":
+                                        return { text: e("Mute conversation"), icon: (0, s.jsx)(w.Z, {}), onClick: o };
+                                    case "UnmuteConversation":
+                                        return { text: e("Unmute conversation"), icon: (0, s.jsx)(C.Z, {}), onClick: o };
+                                    case "RemoveChat":
+                                        return { text: e("Delete conversation"), icon: (0, s.jsx)(b.Z, {}), destructive: !0, onClick: o };
+                                    case "DismissDeletion":
+                                    case "RequestRemove":
+                                        return null;
+                                }
+                                return null;
+                            })(o, e, t, n),
+                        )
+                        .filter((e) => !!e);
                 return (0, s.jsx)(y.I, {
                     onOpenChange: (t) => {
-                        const s = t ? new k.RowLongClicked(e) : k.DismissConversationActionsDialog;
+                        const s = t ? new N.RowLongClicked(e) : N.DismissConversationActionsDialog;
                         n(s);
                     },
                     trigger: i,
-                    items: o || [],
+                    items: a || [],
                     onClick: (e) => e.stopPropagation(),
                 });
             }
-            const I = ({ previewWithMetadata: e }) => {
+            const E = ({ previewWithMetadata: e }) => {
                     if (!e.preview) return null;
                     const t = e.preview.latestMessagePreview,
                         n = e.metadata.usersByIdAllTime.asJsReadonlyMapView(),
@@ -768,23 +770,23 @@
                     }
                     return r;
                 },
-                E = i.com.x.dms.ReadByOthersIndicator,
-                R = ({ onEvent: e, previewWithMetadata: t, actionsDialog: n, isSelected: o, withSeparator: a = !1, isSearch: r }) => {
+                R = i.com.x.dms.ReadByOthersIndicator,
+                M = ({ onEvent: e, previewWithMetadata: t, actionsDialog: n, isSelected: o, withSeparator: a = !1, isSearch: r }) => {
                     const g = t.preview?.timestampValue,
                         j = t.metadata.title instanceof i.com.x.dms.model.DmTitleState.OneToOne,
-                        C = (0, s.jsx)("div", {
+                        w = (0, s.jsx)("div", {
                             className: "px-1",
                             children: (0, s.jsxs)("div", {
                                 className: `select-none flex flex-row  px-1 gap-2 rounded-lg hover:bg-gray-100 ${o && "bg-gray-0"} transition-colors duration-100 cursor-pointer`,
                                 children: [
                                     t.isUnreadByMe && !r ? (0, s.jsx)("div", { className: "flex items-center", children: (0, s.jsx)(l.Z, { width: "14", height: "14", className: "text-blue-500" }) }) : (0, s.jsx)("div", { className: "w-[14px] flex-shrink-0" }),
-                                    (0, s.jsxs)("div", { style: { transitionTimingFunction: "cubic-bezier(0, 0.5, 0.6, 1)" }, className: "flex items-center grow gap-3 rounded-lg  transition-colors duration-100", children: [(0, s.jsx)(p.x, { avatarSize: "xxLarge", titleState: t.metadata.title, onCustomAvatarNeedsResolving: (n) => e(new i.com.x.dms.convlist.ConversationListEvent.CustomAvatarNeedsResolving(t.conversationId, n)), isInlineFacepile: !0 }), (0, s.jsxs)("div", { className: "flex-1 flex-row flex self-stretch py-2 pb-3 border-b " + (a ? "border-gray-50" : "border-transparent"), children: [(0, s.jsxs)("div", { className: "flex-1 gap-5", children: [(0, s.jsx)(u.R, { name: t.metadata.title.title, badges: j ? (0, f.r)(t.metadata.title.otherUser) : void 0, screenName: j ? t.metadata.title.otherUser?.screenName : void 0 }), (0, s.jsx)(h.x, { color: "gray700", weight: t.isUnreadByMe ? "bold" : "normal", numberOfLines: 2, className: "break-all min-h-[2.5rem]", children: (0, s.jsx)(I, { previewWithMetadata: t }) })] }), (0, s.jsxs)("div", { className: "flex flex-col items-end", children: [(0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [(0, s.jsx)(h.x, { size: "subtext1", color: "gray700", children: g && (0, s.jsx)(v.Q, { timestamp: g }) }), (0, s.jsx)(c.Z, { width: "20", height: "20", className: "text-gray-300 -mr-1" })] }), (0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [t.isMuted && (0, s.jsx)(d.Z, { width: "14", height: "14", className: "text-gray-300" }), t.showReadByOthersIndicator === E.Read && (0, s.jsx)(m.Z, { width: "14", height: "14", className: "text-gray-300" }), t.showReadByOthersIndicator === E.Unread && (0, s.jsx)(x.Z, { width: "14", height: "14", className: "text-gray-300" })] })] })] })] }),
+                                    (0, s.jsxs)("div", { style: { transitionTimingFunction: "cubic-bezier(0, 0.5, 0.6, 1)" }, className: "flex items-center grow gap-3 rounded-lg  transition-colors duration-100", children: [(0, s.jsx)(p.x, { avatarSize: "xxLarge", titleState: t.metadata.title, onCustomAvatarNeedsResolving: (n) => e(new i.com.x.dms.convlist.ConversationListEvent.CustomAvatarNeedsResolving(t.conversationId, n)), isInlineFacepile: !0 }), (0, s.jsxs)("div", { className: "flex-1 flex-row flex self-stretch py-2 pb-3 border-b " + (a ? "border-gray-50" : "border-transparent"), children: [(0, s.jsxs)("div", { className: "flex-1 gap-5", children: [(0, s.jsx)(u.R, { name: t.metadata.title.title, badges: j ? (0, f.r)(t.metadata.title.otherUser) : void 0, screenName: j ? t.metadata.title.otherUser?.screenName : void 0 }), (0, s.jsx)(h.x, { color: "gray700", weight: t.isUnreadByMe ? "bold" : "normal", numberOfLines: 2, className: "break-all min-h-[2.5rem]", children: (0, s.jsx)(E, { previewWithMetadata: t }) })] }), (0, s.jsxs)("div", { className: "flex flex-col items-end", children: [(0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [(0, s.jsx)(h.x, { size: "subtext1", color: "gray700", children: g && (0, s.jsx)(v.Q, { timestamp: g }) }), (0, s.jsx)(c.Z, { width: "20", height: "20", className: "text-gray-300 -mr-1" })] }), (0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [t.isMuted && (0, s.jsx)(d.Z, { width: "14", height: "14", className: "text-gray-300" }), t.showReadByOthersIndicator === R.Read && (0, s.jsx)(m.Z, { width: "14", height: "14", className: "text-gray-300" }), t.showReadByOthersIndicator === R.Unread && (0, s.jsx)(x.Z, { width: "14", height: "14", className: "text-gray-300" })] })] })] })] }),
                                 ],
                             }),
                         });
-                    return r ? C : (0, s.jsx)(N, { previewWithMetadata: t, actionsDialog: n, onEvent: e, children: C });
+                    return r ? w : (0, s.jsx)(I, { previewWithMetadata: t, actionsDialog: n, onEvent: e, children: w });
                 },
-                M = ({ onEvent: e, isSearch: t, conversations: n, actionsDialog: l }) => {
+                A = ({ onEvent: e, isSearch: t, conversations: n, actionsDialog: l }) => {
                     const c = (0, r.a)(),
                         d = (0, a.useRef)(null),
                         m = (0, a.useRef)({ start: 0, end: 0 }),
@@ -811,7 +813,7 @@
                                             const t = new i.com.x.dms.convlist.ConversationListEvent.RowClicked(o.conversationId, o.preview?.lastReadSequenceNumber);
                                             e(t);
                                         },
-                                        children: (0, s.jsx)(R, { previewWithMetadata: o, actionsDialog: x(o.preview?.conversationId.id || ""), onEvent: e, isSelected: r, withSeparator: !l && !r, isSearch: t }),
+                                        children: (0, s.jsx)(M, { previewWithMetadata: o, actionsDialog: x(o.preview?.conversationId.id || ""), onEvent: e, isSelected: r, withSeparator: !l && !r, isSearch: t }),
                                     },
                                     o.conversationId.id + a,
                                 );
@@ -858,7 +860,7 @@
             var s = n(552322),
                 i = n(159603),
                 o = n(202784),
-                a = n(263033),
+                a = n(455091),
                 r = n(702024),
                 l = n(505332),
                 c = n(630086),
@@ -976,7 +978,7 @@
                 i = n(159603),
                 o = n(202784),
                 a = n(505332),
-                r = n(263033),
+                r = n(455091),
                 l = n(515790),
                 c = n(699416),
                 d = n(702024),
@@ -1054,4 +1056,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-14817e23.7a99776a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-14817e23.ad51f8fa.js.map

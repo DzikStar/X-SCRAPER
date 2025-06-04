@@ -6,7 +6,7 @@
             a.d(t, { Q: () => Z });
             var s = a(552322),
                 n = a(159603),
-                r = a(263033),
+                r = a(455091),
                 o = a(941204),
                 i = a(702024),
                 l = a(863380),
@@ -196,8 +196,8 @@
                         if (i.length >= 2) return (0, s.jsx)(o, { size: l, firstUrl: i[0]?.profileImageUrl, resolution: a, secondUrl: i[1]?.profileImageUrl });
                         if (1 === i.length) return (0, s.jsx)(r.s, { url: i[0]?.profileImageUrl, size: e, resolution: a });
                     }
-                    const c = i.slice(0, 3).map((e) => e?.profileImageUrl ?? "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png");
-                    return (0, s.jsx)(n.o, { urls: c, size: e, resolution: a, stackOrder: "overlap" });
+                    let c = i.map((e) => e?.profileImageUrl ?? "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png");
+                    return i.length <= 3 ? (0, s.jsx)(n.o, { urls: c, size: e, resolution: a, stackOrder: "descending" }) : ((c = c.slice(0, 3)), (0, s.jsx)(n.o, { urls: c, size: e, resolution: a, stackOrder: "overlap" }));
                 };
         },
         32161: (e, t, a) => {
@@ -227,7 +227,7 @@
             a.d(t, { $: () => g });
             var s = a(552322),
                 n = a(159603),
-                r = a(263033),
+                r = a(455091),
                 o = a(941204),
                 i = a(887390),
                 l = a(436059),
@@ -344,4 +344,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-b4a0aebf.98c6a1ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-b4a0aebf.9231389a.js.map

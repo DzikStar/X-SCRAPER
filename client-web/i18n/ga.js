@@ -240,7 +240,6 @@
                 n("f65e7e91", function (e) {
                     return e.percentage + "% off " + e.tier + " " + e.plan;
                 }),
-                n("cbc38428", "Stay ad-free with Premium+"),
                 n("a84a736e", "Get Free Ad Credit"),
                 n("a0713d76", "Upgrade to Verified Organizations to get free ad credit & a suite of business growth tools."),
                 n("a07e13fc", "Become a Premium Creator"),
@@ -916,9 +915,9 @@
                 n("e8e39f95", "Tuilleadh eolais"),
                 n("e126dd3f", "Tuilleadh eolais"),
                 n("i821844f", "Tuilleadh eolais"),
-                n("b0abbb17", "Tuilleadh eolais");
-            n("e7e0d88b", "Tuilleadh eolais"),
-                n("i560665f", "Tuilleadh eolais"),
+                n("b0abbb17", "Tuilleadh eolais"),
+                n("e7e0d88b", "Tuilleadh eolais");
+            n("i560665f", "Tuilleadh eolais"),
                 n("f6e774d9", "Tuilleadh eolais"),
                 n("h486f755", "Tuilleadh eolais"),
                 n("bab41dab", "Tuilleadh eolais"),
@@ -1932,9 +1931,9 @@
                 n("da8ac57c", "Edit Caption"),
                 n("a8fdd09c", "Publish Article"),
                 n("d8047cc8", "Foilsigh"),
-                n("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile.");
-            n("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
-                n("e52d4998", "Choose your audience"),
+                n("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                n("ef34d7be", "Audience and reply controls are not editable after an article has been published.");
+            n("e52d4998", "Choose your audience"),
                 n("d7985b24", "Choose who can reply to this Article"),
                 n("b5660338", "Timeline preview"),
                 n("hff1b97a", "Only Subscribed can reply."),
@@ -2988,9 +2987,9 @@
                 n("jb0a4c36", "Blog"),
                 n("ce6d095a", "Gairmeacha"),
                 n("e0adec82", "Acmhainní Branda"),
-                n("df1b7550", "Marketing");
-            n("he258678", "X for Business"),
-                n("c6f58084", "Developers"),
+                n("df1b7550", "Marketing"),
+                n("he258678", "X for Business");
+            n("c6f58084", "Developers"),
                 n("d83f18d2", "Directory"),
                 n("hc5aa17c", "Get the X app"),
                 n("j0693948", "Get the Grok app"),
@@ -3900,13 +3899,13 @@
                 n("caa8d928", "Toggle noise suppression"),
                 n("b5d88f0c", "Employees only"),
                 n("c855ab8e", "Subscribers only"),
-                n("ddeb0a3c", "Here’s the Community. Like the people? Take a look.");
-            n("e111f531", function (e) {
-                return e.count + " tiúnáilte isteach";
+                n("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
+                n("e111f531", function (e) {
+                    return e.count + " tiúnáilte isteach";
+                });
+            n("cbef820f", function (e) {
+                return e.screenName + " reposted the stream!";
             }),
-                n("cbef820f", function (e) {
-                    return e.screenName + " reposted the stream!";
-                }),
                 n("e3275464", "Seol"),
                 n("cededf2a", "Óstach"),
                 n("i2caef48", "Co-hosts"),
@@ -4940,9 +4939,9 @@
                 n("d9f9dec0", "View Space"),
                 n("h0c1f37a", "View Space Analytics"),
                 n("e41fffbc", "The total watch time of your videos."),
-                n("if2909ba", "Watch Time");
-            n("i0e5bf4c", "Your videos"),
-                n("ed99baea", "Early Beta Access"),
+                n("if2909ba", "Watch Time"),
+                n("i0e5bf4c", "Your videos");
+            n("ed99baea", "Early Beta Access"),
                 n("gf898b70", "Advanced Search"),
                 n("d2a43a7a", 'contains both "ai" and "startup"'),
                 n("a8584698", "ai startup"),
@@ -5896,9 +5895,9 @@
                 n("e41c9b4f", function (e) {
                     return "Sábháilte go " + e.bookmarkFolderName;
                 }),
-                n("h18f86a4", "Scrios an Fillteán");
-            n("f4ea967a", "Scriosadh an fillteán"),
-                n("b670aa62", "Ainm an Fhillteáin"),
+                n("h18f86a4", "Scrios an Fillteán"),
+                n("f4ea967a", "Scriosadh an fillteán");
+            n("b670aa62", "Ainm an Fhillteáin"),
                 n("aece5462", "D'éirigh linn ainm an fhillteáin a nuashonrú"),
                 n("e3299b94", "Tharla earráid. Bain triail as an bhfillteán a nuashonrú arís i gceann nóiméid."),
                 n("c09ea714", "Tharla earráid. Bain triail as an bhfillteán a scriosadh arís i gceann nóiméid."),
@@ -6900,9 +6899,9 @@
                 n("b925c18c", "Salary Type"),
                 n("j3d242ce", "Invalid range"),
                 n("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
-                n("b8cbb51a", "Job Summary");
-            n("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
-                n("b075c68a", "Edit job"),
+                n("b8cbb51a", "Job Summary"),
+                n("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.");
+            n("b075c68a", "Edit job"),
                 n("d4b6a6e0", "Profile Spotlight"),
                 n("j2dd3686", "Highlight featured jobs above my posts."),
                 n("af1cfd46", "ATS integration"),
@@ -7244,14 +7243,20 @@
                 n("hd80bd3e", "Promote a post"),
                 n("fe2b0008", "Learn how to use X"),
                 n("h257d4aa", "Select a post to promote"),
-                n("fe946974", "Your trial of X without ads"),
+                n("h9b28dae", "You’re saving time with an ad-free feed"),
                 n("f6c50ec0", "Your ad-free trial has ended"),
-                n("b1319404", "Ads avoided"),
-                n("baa4acae", "You’re seeing more personalized content."),
-                n("c00e8600", "Estimated time saved"),
+                n("e1d1fbca", "You’ve avoided"),
+                n("a82d7abd", function (e) {
+                    return e.numberOfAds + " ads";
+                }),
+                n("ff074c76", "You’re seeing more of the posts you want."),
+                n("cbc38428", "Stay ad-free with Premium+"),
+                n("b9028f60", "Back to my ad-free trial"),
+                n("e081d6a0", "No thanks, I’d like to see ads again"),
+                n("fee73dca", "Saving an estimated"),
                 n("ic073e4e", "Your time is valuable."),
                 n("eb866e88", "Estimated 1-year time savings"),
-                n("aa77b70c", "Based on your usage."),
+                n("ce72f092", "Based on your usage so far."),
                 n("c534c6b4", "We’re crunching the numbers..."),
                 n("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
                 n("cc10f019", function (e) {
@@ -7266,12 +7271,16 @@
                 n("b93d00e5", function (e) {
                     return e.days + " day" + o(e.days, "", "s");
                 }),
+                n("g2c63852", "100% free. No credit card required."),
                 n("be88be23", function (e) {
                     return "Your " + e.durationInDays + "-day ad-free trial is activated";
                 }),
-                n("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                n("ae3f3b0e", "Enjoy!"),
-                n("cdac8dc4", "See your new feed"),
+                n("b63766a6", "Scroll without ads"),
+                n("h028f7e0", "Spend more time on the content you love"),
+                n("dd68eef6", "Experience the Premium+ luxury life"),
+                n("g8a2f217", function (e) {
+                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                }),
                 n("dec99336", "Ad-free"),
                 n("i95803fa", "Unfortunately, you are not eligible at this time."),
                 n("d28a1d72", "Be the very first to spot trends with Radar"),
@@ -7871,14 +7880,7 @@
                 n("a76d58ba", "Ads Analytics"),
                 n("eccd0e1a", "Organization Analytics"),
                 n("deea1708", "Want to view analytics across all your X accounts?"),
-                n("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
-                n("gf67aae4", "Upgrade to Full Access"),
-                n("h75e3618", "Include organization"),
-                n("h24a8862", "About this checkbox"),
-                n("c29e3a88", "Select affiliates"),
-                n("j8318d57", function (e) {
-                    return e.number + " affiliate" + o(e.number, "", "s");
-                });
+                n("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics.");
             function r(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var n = a[t];
@@ -7917,7 +7919,14 @@
                     c(e, a)
                 );
             }
-            n("bf809ec0", "Select Affiliates"),
+            n("gf67aae4", "Upgrade to Full Access"),
+                n("h75e3618", "Include organization"),
+                n("h24a8862", "About this checkbox"),
+                n("c29e3a88", "Select affiliates"),
+                n("j8318d57", function (e) {
+                    return e.number + " affiliate" + o(e.number, "", "s");
+                }),
+                n("bf809ec0", "Select Affiliates"),
                 n("b719e224", "Gan toradh"),
                 n("c9938100", "Torthaí Cuardaigh"),
                 n("d1a35ec6", "Add accounts"),
@@ -8909,10 +8918,10 @@
                 n("j0c6772a", "Tabhair cuairt ar an suíomh gréasáin"),
                 n("f73003aa", "Seinnfear an físeán i ndiaidh an fhógra"),
                 n("b3112b8a", "Scipeáil"),
-                n("h6333ad0", "Scipeáil Fógra"),
-                n("c59da417", function (e) {
-                    return "Léim thar Fhógra i " + e.seconds;
-                }),
+                n("h6333ad0", "Scipeáil Fógra");
+            n("c59da417", function (e) {
+                return "Léim thar Fhógra i " + e.seconds;
+            }),
                 n("c3c147cf", function (e) {
                     return "Léim thar " + e.seconds;
                 }),
@@ -8920,8 +8929,8 @@
                 n("ha3efce4", "Auto"),
                 n("hd8d044d", function (e) {
                     return "Auto (" + e.quality + ")";
-                });
-            n("a7bf9962", "Download video"),
+                }),
+                n("a7bf9962", "Download video"),
                 n("ccc97152", "Playback speed"),
                 n("h531ade0", "Video quality"),
                 n("e8b5757c", "0.25x"),
@@ -13357,4 +13366,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.0d968d3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.4f09665a.js.map

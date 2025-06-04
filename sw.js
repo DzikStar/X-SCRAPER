@@ -3,7 +3,7 @@ self.ASSETS = [
     "https://abs.twimg.com/responsive-web/client-web/loader.FwdForSdk-594367b3.8584ff9a.js",
     "https://abs.twimg.com/responsive-web/client-web/loader.Confetti-5ccade72.b221850a.js",
     "https://abs.twimg.com/responsive-web/client-web/loaders.video.PlayerHls1.5-996b2f5e.3ee752da.js",
-    "https://abs.twimg.com/responsive-web/client-web/feature-switch-manifest.2475f2ca.js",
+    "https://abs.twimg.com/responsive-web/client-web/feature-switch-manifest.2492e81a.js",
     "https://abs.twimg.com/responsive-web/client-web/bundle.Grok-57c2c4a2.8f1b770a.js",
     "https://abs.twimg.com/responsive-web/client-web/noise-suppressor.worklet.666eba9a.js",
     "https://abs.twimg.com/responsive-web/client-web/vendor-7940b00b.e74f2a9a.js",
@@ -161,6 +161,7 @@ self.ASSETS = [
     "https://abs.twimg.com/responsive-web/client-web/bundle.AccountAnalytics-b07c47e4.5b8610ba.js",
     "https://abs.twimg.com/responsive-web/client-web/bundle.AccountAnalytics-e0d0963f.be982e8a.js",
     "https://abs.twimg.com/responsive-web/client-web/bundle.LiveEvent-99ebe121.2a1f4eca.js",
+    "https://abs.twimg.com/responsive-web/client-web/bundle.QuickFreeTrial.e779f6ca.js",
     "https://abs.twimg.com/responsive-web/client-web/shared~bundle.TV~bundle.Account-ddbcca7b.f942057a.js",
     "https://abs.twimg.com/responsive-web/client-web/loader.EventSummaryHandler.3946978a.js",
     "https://abs.twimg.com/responsive-web/client-web/bundle.TweetActivity.43313aba.js",
@@ -176,7 +177,6 @@ self.ASSETS = [
     "https://abs.twimg.com/responsive-web/client-web/bundle.Payments-d60a37be.184a10ba.js",
     "https://abs.twimg.com/responsive-web/client-web/vendor-aaaf2b0c.5cd9a35a.js",
     "https://abs.twimg.com/responsive-web/client-web/icons.13.3e79fc5a.js",
-    "https://abs.twimg.com/responsive-web/client-web/bundle.QuickFreeTrial.2adb805a.js",
     "https://abs.twimg.com/responsive-web/client-web/vendor-49d0a293.b1a6b16a.js",
     "https://abs.twimg.com/responsive-web/client-web/bundle.SettingsProfessionalProfile-12b7bef9.2c9b096a.js",
     "https://abs.twimg.com/responsive-web/client-web/bundle.Ocf-3c1f9d32.f44cd0ea.js",
@@ -244,7 +244,7 @@ self.ASSETS = [
     "https://abs.twimg.com/responsive-web/client-web/bundle.AccountAnalytics-bda42643.91a915ca.js",
     "https://abs.twimg.com/responsive-web/client-web/bundle.Communities-23e54054.7949c61a.js",
     "https://abs.twimg.com/responsive-web/client-web/loader.immersiveTweetHandler.b721d64a.js",
-    "https://abs.twimg.com/responsive-web/client-web/bundle.AccountAnalytics-29ca9031.962482fa.js",
+    "https://abs.twimg.com/responsive-web/client-web/bundle.AccountAnalytics-29ca9031.3d84674a.js",
     "https://abs.twimg.com/responsive-web/client-web/bundle.Ocf-14131f0c.8a3594fa.js",
     "https://abs.twimg.com/responsive-web/client-web/bundle.AccountAnalytics-8eba0336.860b83fa.js",
     "https://abs.twimg.com/responsive-web/client-web/bundle.Live-bc6ccf4c.db5509aa.js",
@@ -517,7 +517,7 @@ self.ASSETS = [
     "https://abs.twimg.com/responsive-web/client-web/loader.ExploreSidebar.c480280a.js",
     "https://abs.twimg.com/responsive-web/client-web/loaders.video.VideoPlayerHashtagHighlightUI.dafe5f2a.js",
     "https://abs.twimg.com/responsive-web/client-web/vendor-49ceb22a.3cfa6d4a.js",
-    "https://abs.twimg.com/responsive-web/client-web/node_modules_x-clients_features_messages_en_json.e0577f1a.js",
+    "https://abs.twimg.com/responsive-web/client-web/node_modules_x-clients_features_messages_en_json.016b2a6a.js",
     "https://abs.twimg.com/responsive-web/client-web/bundle.BadgeViolationsNotification.820fda9a.js",
     "https://abs.twimg.com/responsive-web/client-web/loader.AppModules-536eaa00.692a17da.js",
     "https://abs.twimg.com/responsive-web/client-web/loader.newsPreviewHandler.ba9f68ca.js",
@@ -640,6 +640,6 @@ self.ASSETS = [
     "https://abs.twimg.com/responsive-web/client-web/node_modules_x-clients_features_messages_eu_json.2fb2b08a.js",
     "https://abs.twimg.com/responsive-web/client-web/loaders.video.PlayerHls1.5-dcf6fa52.55b4b94a.js",
 ];
-self.__META_DATA__ = { env: "prod", isCanary: false, sha: "b72c5eb76ef8b1f8b6d95d9bf0679cbbf74921e9", isTwoffice: false };
+self.__META_DATA__ = { env: "prod", isCanary: false, sha: "d97d0fd3b324ccc6880e22a02d6b967308dd1f3f", isTwoffice: false };
 self.__INITIAL_STATE__ = {};
 importScripts("https://abs.twimg.com/responsive-web/client-serviceworker/serviceworker.ca82569a.js");

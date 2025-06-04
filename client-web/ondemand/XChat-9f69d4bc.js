@@ -219,7 +219,7 @@
         },
         509597: (u, e, a) => {
             a.d(e, { s: () => t });
-            var d = a(263033);
+            var d = a(455091);
             const t = (u) => {
                 const { t: e, i18n: a } = (0, d.$G)(),
                     t = 1024 * u * 1024,
@@ -483,4 +483,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-9f69d4bc.9efa27ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-9f69d4bc.6bcc2e8a.js.map

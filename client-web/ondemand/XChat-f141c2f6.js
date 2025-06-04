@@ -2,33 +2,33 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["ondemand.XChat-f141c2f6"],
     {
-        272795: (e, a, n) => {
-            n.d(a, { c: () => o });
-            var t = n(552322),
-                r = n(159603),
-                s = n(941204),
-                l = n(466285),
-                i = n(759746);
-            const o = ({ onClick: e, isSelected: a, suggestion: n }) => (n instanceof r.com.x.dms.NewDmSuggestion.User ? (0, t.jsx)(l.a, { onClick: e, isSelected: a, user: n.user }) : n instanceof r.com.x.dms.NewDmSuggestion.ExistingGroup ? (0, t.jsxs)("div", { className: "flex flex-row w-full gap-2 p-2 items-center hover:bg-gray-50 cursor-pointer rounded-lg", onClick: e, children: [(0, t.jsx)(i.M, { avatarSize: "large", users: n.otherUsers.asJsReadonlyArrayView(), isInlineFacepile: !0 }), (0, t.jsxs)("div", { className: "flex-1 flex-col", children: [(0, t.jsx)(s.x, { children: n.title }), (0, t.jsxs)(s.x, { size: "subtext2", color: "gray700", children: [n.numParticipants, " people"] })] })] }, n.id) : (0, t.jsx)(t.Fragment, {}));
+        272795: (e, t, a) => {
+            a.d(t, { c: () => o });
+            var n = a(552322),
+                r = a(159603),
+                s = a(941204),
+                l = a(466285),
+                i = a(759746);
+            const o = ({ onClick: e, isSelected: t, suggestion: a }) => (a instanceof r.com.x.dms.NewDmSuggestion.User ? (0, n.jsx)(l.a, { onClick: e, isSelected: t, user: a.user }) : a instanceof r.com.x.dms.NewDmSuggestion.ExistingGroup ? (0, n.jsxs)("div", { className: "flex flex-row w-full gap-2 p-2 items-center hover:bg-gray-50 cursor-pointer rounded-lg", onClick: e, children: [(0, n.jsx)(i.M, { avatarSize: "large", users: a.otherUsers.asJsReadonlyArrayView(), isInlineFacepile: !0 }), (0, n.jsxs)("div", { className: "flex-1 flex-col", children: [(0, n.jsx)(s.x, { children: a.title }), (0, n.jsxs)(s.x, { size: "subtext2", color: "gray700", children: [a.numParticipants, " people"] })] })] }, a.id) : (0, n.jsx)(n.Fragment, {}));
         },
-        466285: (e, a, n) => {
-            n.d(a, { a: () => u });
-            var t = n(552322),
-                r = n(159603),
-                s = n(256958),
-                l = n(703612),
-                i = n(242782),
-                o = n(350311),
-                c = n(336984);
-            const u = ({ onClick: e, isSelected: a, isAlreadyParticipant: n, user: u }) => {
-                const d = n || !!u.cannotMessageReason;
-                return (0, t.jsxs)(
+        466285: (e, t, a) => {
+            a.d(t, { a: () => u });
+            var n = a(552322),
+                r = a(159603),
+                s = a(256958),
+                l = a(703612),
+                i = a(242782),
+                o = a(350311),
+                c = a(336984);
+            const u = ({ onClick: e, isSelected: t, isAlreadyParticipant: a, user: u }) => {
+                const d = a || !!u.cannotMessageReason;
+                return (0, n.jsxs)(
                     "div",
                     {
                         className: "flex flex-row w-full gap-3 p-2 items-center rounded-lg " + (d ? "opacity-20" : "hover:bg-gray-50 cursor-pointer"),
                         onClick: () => {
                             e();
-                            const a = ((e) => {
+                            const t = ((e) => {
                                 switch (e) {
                                     case r.com.x.models.dm.CannotMessageReason.NO_PUBLIC_KEY:
                                         return "This account must set up their PIN before you're able to message them.";
@@ -37,107 +37,107 @@
                                 }
                                 return null;
                             })(u.cannotMessageReason);
-                            a && (0, s.Am)(a);
+                            t && (0, s.Am)(t);
                         },
                         "aria-disabled": d,
-                        children: [(0, t.jsx)(o.s, { url: u.profileImageUrl, size: "xLarge" }), (0, t.jsx)("div", { className: "flex-1", children: (0, t.jsx)(l.R, { name: u.displayName, screenName: u.screenName, badges: (0, c.r)(u), isStacked: !0 }) }), a && (0, t.jsx)("div", { className: "justify-self-end", children: (0, t.jsx)(i.Z, { className: "text-blue-500" }) })],
+                        children: [(0, n.jsx)(o.s, { url: u.profileImageUrl, size: "xLarge" }), (0, n.jsx)("div", { className: "flex-1", children: (0, n.jsx)(l.R, { name: u.displayName, screenName: u.screenName, badges: (0, c.r)(u), isStacked: !0 }) }), t && (0, n.jsx)("div", { className: "justify-self-end", children: (0, n.jsx)(i.Z, { className: "text-blue-500" }) })],
                     },
                     u.screenName,
                 );
             };
         },
-        620134: (e, a, n) => {
-            n.d(a, { w: () => i });
-            var t = n(552322),
-                r = n(350311),
-                s = n(703612),
-                l = n(887491);
-            const i = ({ name: e, avatarUrl: a, onRemove: n }) => (0, t.jsxs)("div", { className: "flex items-center rounded-full px-2 py-1 gap-1.5 bg-gray-50 hover:bg-mix-text border border-gray-200 max-w-fit cursor-pointer", onClick: n, children: [(0, t.jsx)(r.s, { url: a, size: "small" }), (0, t.jsx)(s.R, { name: e, size: "subtext1" }), (0, t.jsx)(l.Z, { className: "size-4" })] });
+        620134: (e, t, a) => {
+            a.d(t, { w: () => i });
+            var n = a(552322),
+                r = a(350311),
+                s = a(703612),
+                l = a(887491);
+            const i = ({ name: e, avatarUrl: t, onRemove: a }) => (0, n.jsxs)("div", { className: "flex items-center rounded-full px-2 py-1 gap-1.5 bg-gray-50 hover:bg-mix-text border border-gray-200 max-w-fit cursor-pointer", onClick: a, children: [(0, n.jsx)(r.s, { url: t, size: "small" }), (0, n.jsx)(s.R, { name: e, size: "subtext1" }), (0, n.jsx)(l.Z, { className: "size-4" })] });
         },
-        517922: (e, a, n) => {
-            n.d(a, { C: () => s });
-            var t = n(552322),
-                r = n(702024);
+        517922: (e, t, a) => {
+            a.d(t, { C: () => s });
+            var n = a(552322),
+                r = a(702024);
             function s() {
-                return (0, t.jsx)("div", { className: "flex items-center gap-2 p-4 bg-gray-100", children: (0, t.jsx)(r.P, { size: "small" }) });
+                return (0, n.jsx)("div", { className: "flex items-center gap-2 p-4 bg-gray-100", children: (0, n.jsx)(r.P, { size: "small" }) });
             }
         },
-        556160: (e, a, n) => {
-            n.d(a, { K: () => u });
-            var t = n(552322),
-                r = n(130844),
-                s = n(26429),
-                l = n(703612),
-                i = n(559274),
-                o = n(862399),
-                c = n(796309);
-            function u({ post: e, url: a, className: n }) {
+        556160: (e, t, a) => {
+            a.d(t, { K: () => u });
+            var n = a(552322),
+                r = a(130844),
+                s = a(26429),
+                l = a(703612),
+                i = a(559274),
+                o = a(862399),
+                c = a(796309);
+            function u({ post: e, url: t, className: a }) {
                 const u = e.post;
-                return (0, t.jsxs)(r.r, { href: a, target: "_blank", className: (0, c.cn)("flex flex-col gap-2 h-full w-full border border-gray-200 py-2 px-4 cursor-pointer hover:bg-gray-50/50 transition-colors duration-100", n), children: [(0, t.jsxs)("div", { className: "flex gap-2 items-center", children: [(0, t.jsx)(s.q, { screenName: u.author.screenName, size: "small", url: u.author.profileImageUrl, withLink: !1, shape: u.author.profileImageShape, className: "size-5 shrink-0" }), (0, t.jsxs)("div", { className: "flex items-center gap-1 w-full", children: [(0, t.jsx)(l.R, { badges: u.author.badges, name: u.author.name, size: "subtext1", withLink: !1, screenNameColor: "gray800", screenName: u.author.screenName, isStacked: !1 }), (0, t.jsx)("div", { className: "shrink-0 size-0.5 bg-text/40 rounded-full" }), (0, t.jsx)("div", { className: "shrink-0", children: (0, t.jsx)(i.E, { timestamp: u.createdAt, size: "subtext1", color: "gray800" }) })] })] }), (0, t.jsx)(o.W, { text: u.text, displayTextRange: u.displayTextRange, entities: u.entities })] });
+                return (0, n.jsxs)(r.r, { href: t, target: "_blank", className: (0, c.cn)("flex flex-col gap-2 h-full w-full border border-gray-200 py-2 px-4 cursor-pointer hover:bg-gray-50/50 transition-colors duration-100", a), children: [(0, n.jsxs)("div", { className: "flex gap-2 items-center", children: [(0, n.jsx)(s.q, { screenName: u.author.screenName, size: "small", url: u.author.profileImageUrl, withLink: !1, shape: u.author.profileImageShape, className: "size-5 shrink-0" }), (0, n.jsxs)("div", { className: "flex items-center gap-1 w-full", children: [(0, n.jsx)(l.R, { badges: u.author.badges, name: u.author.name, size: "subtext1", withLink: !1, screenNameColor: "gray800", screenName: u.author.screenName, isStacked: !1 }), (0, n.jsx)("div", { className: "shrink-0 size-0.5 bg-text/40 rounded-full" }), (0, n.jsx)("div", { className: "shrink-0", children: (0, n.jsx)(i.E, { timestamp: u.createdAt, size: "subtext1", color: "gray800" }) })] })] }), (0, n.jsx)(o.W, { text: u.text, displayTextRange: u.displayTextRange, entities: u.entities })] });
             }
         },
-        537335: (e, a, n) => {
-            n.d(a, { Q: () => l });
-            var t = n(552322),
-                r = n(202784),
-                s = n(167285);
-            const l = ({ timestamp: e, updateIntervalMs: a = 3e4 }) => {
-                const [n, l] = (0, r.useState)(Date.now() / 1e3 - e.epochSeconds),
+        537335: (e, t, a) => {
+            a.d(t, { Q: () => l });
+            var n = a(552322),
+                r = a(202784),
+                s = a(167285);
+            const l = ({ timestamp: e, updateIntervalMs: t = 3e4 }) => {
+                const [a, l] = (0, r.useState)(Date.now() / 1e3 - e.epochSeconds),
                     i = (0, r.useCallback)(() => {
                         l(Date.now() / 1e3 - e.epochSeconds);
                     }, [e]);
                 return (
                     (0, r.useEffect)(() => {
                         i();
-                        const e = setInterval(i, a);
+                        const e = setInterval(i, t);
                         return () => clearInterval(e);
-                    }, [a, i]),
-                    (0, t.jsx)(t.Fragment, { children: (0, s.S)({ diffSeconds: n, epochSeconds: e.epochSeconds, style: "narrow" }) })
+                    }, [t, i]),
+                    (0, n.jsx)(n.Fragment, { children: (0, s.S)({ diffSeconds: a, epochSeconds: e.epochSeconds, style: "narrow" }) })
                 );
             };
         },
-        910299: (e, a, n) => {
-            n.d(a, { r: () => i });
-            var t = n(552322),
-                r = n(159603),
-                s = n(941204),
-                l = n(32161);
-            const i = ({ conversations: e, onEvent: a }) =>
-                (0, t.jsx)("div", {
+        910299: (e, t, a) => {
+            a.d(t, { r: () => i });
+            var n = a(552322),
+                r = a(159603),
+                s = a(941204),
+                l = a(32161);
+            const i = ({ conversations: e, onEvent: t }) =>
+                (0, n.jsx)("div", {
                     className: "flex overflow-x-auto scrollbar-hide",
                     children: e.map((e) =>
-                        (0, t.jsxs)(
+                        (0, n.jsxs)(
                             "div",
                             {
                                 className: "flex flex-col items-center cursor-pointer hover:bg-gray-100 rounded-lg py-2 px-3",
                                 onClick: () => {
-                                    a(new r.com.x.dms.convlist.ConversationListEvent.RowClicked(e.conversationId, e.preview?.lastReadSequenceNumber));
+                                    t(new r.com.x.dms.convlist.ConversationListEvent.RowClicked(e.conversationId, e.preview?.lastReadSequenceNumber));
                                 },
-                                children: [(0, t.jsx)("div", { className: "size-14", children: (0, t.jsx)(l.x, { avatarSize: "fill", titleState: e.metadata.title, isInlineFacepile: !0, onCustomAvatarNeedsResolving: () => {} }) }), (0, t.jsx)(s.x, { size: "subtext3", className: "mt-2 text-center text-ellipsis max-w-14", numberOfLines: 2, children: e.metadata.title.title })],
+                                children: [(0, n.jsx)("div", { className: "size-14", children: (0, n.jsx)(l.x, { avatarSize: "fill", titleState: e.metadata.title, isInlineFacepile: !0, onCustomAvatarNeedsResolving: () => {} }) }), (0, n.jsx)(s.x, { size: "subtext3", className: "mt-2 text-center text-ellipsis max-w-14", numberOfLines: 2, children: e.metadata.title.title })],
                             },
                             e.conversationId.id,
                         ),
                     ),
                 });
         },
-        18671: (e, a, n) => {
-            n.d(a, { Z: () => x });
-            var t = n(552322),
-                r = n(849436),
-                s = n(458872),
-                l = n(436059),
-                i = n(844098),
-                o = n(130629),
-                c = n(941204),
-                u = n(202784),
-                d = n(264531),
-                m = n(718278),
-                g = n(664147),
-                p = n(173399);
+        18671: (e, t, a) => {
+            a.d(t, { Z: () => x });
+            var n = a(552322),
+                r = a(849436),
+                s = a(458872),
+                l = a(436059),
+                i = a(844098),
+                o = a(130629),
+                c = a(941204),
+                u = a(202784),
+                d = a(264531),
+                m = a(718278),
+                g = a(664147),
+                f = a(173399);
             const h = () =>
-                    (0, t.jsx)(l.z, {
+                    (0, n.jsx)(l.z, {
                         onClick: () => {
-                            (0, p.O)()
+                            (0, f.O)()
                                 .then(() => {
                                     location.reload();
                                 })
@@ -145,25 +145,25 @@
                         },
                         children: "Reset",
                     }),
-                y = () => (0, t.jsx)(l.z, { onClick: () => window.dispatchEvent(new Event("xchat_database_backup_event")), children: "Backup" });
-            function f() {
-                return (0, t.jsxs)("div", { className: "flex flex-col gap-1 w-full", children: [(0, t.jsx)(c.x, { children: "Please close all other tabs with XChat before hitting Reset" }), (0, t.jsxs)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: [(0, t.jsx)(h, {}), (0, t.jsx)(m.o, {})] }), (0, t.jsx)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: (0, t.jsx)(g.i, {}) }), (0, t.jsx)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: (0, t.jsx)(y, {}) })] });
+                p = () => (0, n.jsx)(l.z, { onClick: () => window.dispatchEvent(new Event("xchat_database_backup_event")), children: "Backup" });
+            function y() {
+                return (0, n.jsxs)("div", { className: "flex flex-col gap-1 w-full", children: [(0, n.jsx)(c.x, { children: "Please close all other tabs with XChat before hitting Reset" }), (0, n.jsxs)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: [(0, n.jsx)(h, {}), (0, n.jsx)(m.o, {})] }), (0, n.jsx)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: (0, n.jsx)(g.i, {}) }), (0, n.jsx)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: (0, n.jsx)(p, {}) })] });
             }
             const x = () => {
-                const [e, a] = (0, u.useState)(!1),
-                    { showDebugOptions: n } = (0, d.XE)();
-                return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(l.z, { icon: (0, t.jsx)(r.Z, { className: "h-5 w-5" }), variant: "primaryText", onClick: () => a(!0) }), e && (0, t.jsx)(i.s, { isOpen: !0, onOpenChange: a, isDismissable: !0, children: (0, t.jsxs)("div", { className: "flex flex-1 flex-col w-[40rem] h-[40rem] transition-colors", children: [(0, t.jsx)(o.x, { title: "Settings", leftContent: (0, t.jsx)(l.z, { variant: "primaryText", icon: (0, t.jsx)(s.Z, {}), onClick: () => a(!1) }) }), (0, t.jsx)("div", { className: "flex flex-col items-start gap-3 p-4 border-t overflow-y-auto", children: n && (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(c.x, { size: "headline2", weight: "bold", children: "Debug Options" }), (0, t.jsx)(f, {})] }) })] }) })] });
+                const [e, t] = (0, u.useState)(!1),
+                    { showDebugOptions: a } = (0, d.XE)();
+                return (0, n.jsxs)(n.Fragment, { children: [(0, n.jsx)(l.z, { icon: (0, n.jsx)(r.Z, { className: "h-5 w-5" }), variant: "primaryText", onClick: () => t(!0) }), e && (0, n.jsx)(i.s, { isOpen: !0, onOpenChange: t, isDismissable: !0, children: (0, n.jsxs)("div", { className: "flex flex-1 flex-col w-[40rem] h-[40rem] transition-colors", children: [(0, n.jsx)(o.x, { title: "Settings", leftContent: (0, n.jsx)(l.z, { variant: "primaryText", icon: (0, n.jsx)(s.Z, {}), onClick: () => t(!1) }) }), (0, n.jsx)("div", { className: "flex flex-col items-start gap-3 p-4 border-t overflow-y-auto", children: a && (0, n.jsxs)(n.Fragment, { children: [(0, n.jsx)(c.x, { size: "headline2", weight: "bold", children: "Debug Options" }), (0, n.jsx)(y, {})] }) })] }) })] });
             };
         },
-        676337: (e, a, n) => {
-            n.d(a, { H: () => r });
-            var t = n(202784);
+        676337: (e, t, a) => {
+            a.d(t, { H: () => r });
+            var n = a(202784);
             function r() {
-                const [e, a] = (0, t.useState)("visible" === document.visibilityState);
+                const [e, t] = (0, n.useState)("visible" === document.visibilityState);
                 return (
-                    (0, t.useEffect)(() => {
+                    (0, n.useEffect)(() => {
                         const e = () => {
-                            a("visible" === document.visibilityState);
+                            t("visible" === document.visibilityState);
                         };
                         return (
                             document.addEventListener("visibilitychange", e),
@@ -176,184 +176,265 @@
                 );
             }
         },
-        176453: (e, a, n) => {
-            n.d(a, { N: () => l });
-            var t = n(552322),
-                r = n(125550),
-                s = n(139802);
-            const l = ({ groupId: e, token: a, settings: n }) => (e && a ? (0, t.jsx)(s.A, { settings: n, children: (0, t.jsx)(r.M, { groupId: e, token: a }) }) : null);
+        176453: (e, t, a) => {
+            a.d(t, { N: () => l });
+            var n = a(552322),
+                r = a(125550),
+                s = a(139802);
+            const l = ({ groupId: e, token: t, settings: a }) => (e && t ? (0, n.jsx)(s.A, { settings: a, children: (0, n.jsx)(r.M, { groupId: e, token: t }) }) : null);
         },
-        671889: (e, a, n) => {
-            n.d(a, { g: () => s });
-            var t = n(552322),
-                r = n(264531);
-            function s({ children: e, ...a }) {
-                const n = (0, r.XE)().bottomBarHeight;
-                return (0, t.jsx)("div", { ...a, style: { paddingBottom: n }, children: e });
+        671889: (e, t, a) => {
+            a.d(t, { g: () => s });
+            var n = a(552322),
+                r = a(264531);
+            function s({ children: e, ...t }) {
+                const a = (0, r.XE)().bottomBarHeight;
+                return (0, n.jsx)("div", { ...t, style: { paddingBottom: a }, children: e });
             }
         },
-        700931: (e, a, n) => {
-            n.d(a, { H: () => l });
-            var t = n(552322),
-                r = n(139802),
-                s = n(92184);
-            const l = ({ settings: e }) => (0, t.jsx)(r.A, { settings: e, children: (0, t.jsx)(s.p, {}) });
+        700931: (e, t, a) => {
+            a.d(t, { H: () => l });
+            var n = a(552322),
+                r = a(139802),
+                s = a(92184);
+            const l = ({ settings: e }) => (0, n.jsx)(r.A, { settings: e, children: (0, n.jsx)(s.p, {}) });
         },
-        139802: (e, a, n) => {
-            n.d(a, { A: () => y });
-            var t = n(552322),
-                r = n(446368),
-                s = n(263033),
-                l = n(668781),
-                i = n(202784),
-                o = n(107267),
-                c = n(134877),
-                u = n(968025),
-                d = n(727071),
-                m = n(768246),
-                g = n(264531),
-                p = n(155369),
-                h = n(173399);
-            const y = ({ children: e, settings: a }) => {
-                const n = (0, o.useLocation)(),
-                    y = (0, o.useHistory)(),
-                    [f, x] = (0, i.useState)(new URLSearchParams(n.search)),
+        139802: (e, t, a) => {
+            a.d(t, { A: () => p });
+            var n = a(552322),
+                r = a(446368),
+                s = a(455091),
+                l = a(668781),
+                i = a(202784),
+                o = a(107267),
+                c = a(134877),
+                u = a(968025),
+                d = a(727071),
+                m = a(768246),
+                g = a(264531),
+                f = a(155369),
+                h = a(173399);
+            const p = ({ children: e, settings: t }) => {
+                const a = (0, o.useLocation)(),
+                    p = (0, o.useHistory)(),
+                    [y, x] = (0, i.useState)(new URLSearchParams(a.search)),
                     v = (0, o.useParams)(),
-                    { t: w } = (0, s.$G)();
+                    { t: b } = (0, s.$G)();
                 (0, i.useEffect)(() => {
-                    x(new URLSearchParams(n.search));
-                }, [n.search]);
-                const b = (0, i.useMemo)(() => ({ push: (e, a) => y.push(e, a) }), [y]);
+                    x(new URLSearchParams(a.search));
+                }, [a.search]);
+                const w = (0, i.useMemo)(() => ({ push: (e, t) => p.push(e, t) }), [p]);
                 return (
                     (0, i.useEffect)(() => {
                         (0, h.z)();
                     }, []),
-                    (0, t.jsx)(c.S, { message: w("Something went wrong while loading Chat. Please try again later."), children: (0, t.jsx)(u.p, { router: b, children: (0, t.jsx)(r.ng, { children: (0, t.jsx)(d.d, { useParams: () => v, children: (0, t.jsx)(m.x, { searchParams: f, children: (0, t.jsx)(g.mp, { settings: a, children: (0, t.jsxs)(p.U, { children: [e, (0, t.jsx)(l.x, {})] }) }) }) }) }) }) })
+                    (0, n.jsx)(c.S, { message: b("Something went wrong while loading Chat. Please try again later."), children: (0, n.jsx)(u.p, { router: w, children: (0, n.jsx)(r.ng, { children: (0, n.jsx)(d.d, { useParams: () => v, children: (0, n.jsx)(m.x, { searchParams: y, children: (0, n.jsx)(g.mp, { settings: t, children: (0, n.jsxs)(f.U, { children: [e, (0, n.jsx)(l.x, {})] }) }) }) }) }) }) })
                 );
             };
         },
-        472008: (e, a, n) => {
-            n.d(a, { x: () => T });
-            var t = n(552322),
-                r = n(139802),
-                s = n(159603),
-                l = n(202784),
-                i = n(155369),
-                o = n(702024),
-                c = n(941204),
-                u = n(533476),
-                d = n(263033),
-                m = n(788452),
-                g = n(469745),
-                p = n(671889);
-            const h = s.com.x.dms.pin.PinEntryTitle,
-                y = s.com.x.dms.pin.PinEntrySubtitle,
-                f = s.com.x.dms.pin.PinEntryError;
-            function x({ component: e }) {
-                const { t: a } = (0, d.$G)();
-                const n = (0, g.a)("(max-width: 768px)"),
+        850697: (e, t, a) => {
+            a.d(t, { x: () => C });
+            var n = a(552322),
+                r = a(139802),
+                s = a(159603),
+                l = a(202784),
+                i = a(155369),
+                o = a(702024),
+                c = a(941204),
+                u = a(533476),
+                d = a(455091),
+                m = a(788452),
+                g = a(469745),
+                f = a(671889),
+                h = a(796309);
+            function p({ value: e, onChange: t, digitVisible: a = !1, className: r, length: s = 4, autoFocus: i = !1 }) {
+                const o = (0, l.useRef)([]),
+                    u = (0, l.useRef)(!1);
+                (0, l.useEffect)(() => {
+                    o.current = o.current.slice(0, s);
+                }, [s]),
+                    (0, l.useEffect)(() => {
+                        if (!u.current && i && o.current.length > 0) {
+                            u.current = !0;
+                            let t = 0;
+                            for (let a = 0; a < s; a++)
+                                if (!e[a]) {
+                                    t = a;
+                                    break;
+                                }
+                            o.current[t]?.focus();
+                        }
+                    }, [s, i, e]);
+                const d = (0, l.useCallback)(
+                        (a, n) => {
+                            if ("Backspace" === a.key)
+                                if ((a.preventDefault(), e[n])) {
+                                    const a = e.slice(0, n) + e.slice(n + 1);
+                                    t(a);
+                                } else if (n > 0) {
+                                    const a = e.slice(0, n - 1) + e.slice(n);
+                                    t(a), o.current[n - 1]?.focus();
+                                }
+                        },
+                        [e, t],
+                    ),
+                    m = (0, l.useCallback)(
+                        (a, n) => {
+                            const r = a.target.value;
+                            if (r.length > 1) {
+                                const e = r.slice(0, s).split(""),
+                                    a = e.join("").padEnd(s, "");
+                                t(a), o.current[Math.min(e.length, s - 1)]?.focus();
+                            } else if (/^\d*$/.test(r)) {
+                                const a = e.slice(0, n) + r + e.slice(n + 1);
+                                t(a), r && n < s - 1 && o.current[n + 1]?.focus();
+                            }
+                        },
+                        [e, t, s],
+                    );
+                return (0, n.jsx)("div", {
+                    className: (0, h.cn)("flex gap-3", r),
+                    children: Array.from({ length: s }).map((t, r) =>
+                        (0, n.jsxs)(
+                            "div",
+                            {
+                                className: "relative w-10 h-12",
+                                children: [
+                                    (0, n.jsx)("input", {
+                                        ref: (e) => {
+                                            o.current[r] = e;
+                                        },
+                                        type: "text",
+                                        inputMode: "numeric",
+                                        pattern: "[0-9]*",
+                                        maxLength: 1,
+                                        value: "",
+                                        onChange: (e) => m(e, r),
+                                        onKeyDown: (e) => d(e, r),
+                                        className: (0, h.cn)("absolute inset-0 w-full h-full text-transparent caret-primary bg-transparent border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors z-10 text-center", e[r] && "text-left pl-7"),
+                                        placeholder: " ",
+                                    }),
+                                    (0, n.jsx)("div", { className: "absolute inset-0 flex items-center justify-center z-0", children: a ? (0, n.jsx)(c.x, { size: "title4", weight: "bold", children: e[r] || "" }) : (0, n.jsx)("div", { className: "flex items-center justify-center w-full", children: e[r] ? (0, n.jsx)("div", { className: "h-3 w-3 rounded-full bg-text" }) : null }) }),
+                                ],
+                            },
+                            `pin-digit-${r}`,
+                        ),
+                    ),
+                });
+            }
+            const y = s.com.x.dms.pin.PinEntryTitle,
+                x = s.com.x.dms.pin.PinEntrySubtitle,
+                v = s.com.x.dms.pin.PinEntryError;
+            function b({ component: e }) {
+                const { t } = (0, d.$G)();
+                const a = (0, g.a)("(max-width: 768px)"),
                     r = (0, u._)(e.state),
                     i = (0, l.useRef)(null);
                 (0, l.useEffect)(() => {
                     i.current && i.current.focus();
                 }, []);
                 return r.isProcessing
-                    ? (0, t.jsx)(p.g, { className: "flex w-full min-h-dvh md:h-dvh items-center", children: (0, t.jsx)(o.P, {}) })
-                    : (0, t.jsxs)(p.g, {
-                          className: `flex flex-col min-h-dvh md:h-dvh w-full ${n ? "items-start" : "items-center"} flex-grow gap-4 py-12 px-12`,
-                          onClick: () => {
-                              i.current && i.current.focus();
-                          },
+                    ? (0, n.jsx)(f.g, { className: "flex w-full min-h-dvh md:h-dvh items-center", children: (0, n.jsx)(o.P, {}) })
+                    : (0, n.jsxs)(f.g, {
+                          className: `flex flex-col min-h-dvh md:h-dvh w-full ${a ? "items-start" : "items-center"} flex-grow gap-4 py-12 px-12`,
                           children: [
-                              (0, t.jsx)(m.Z, { width: 76, height: 76, className: "rotate-[-8.29deg]" }),
-                              (0, t.jsx)(c.x, {
+                              (0, n.jsx)(m.Z, { width: 76, height: 76, className: "rotate-[-8.29deg]" }),
+                              (0, n.jsx)(c.x, {
                                   size: "title2",
                                   weight: "bold",
                                   children: (function (e) {
                                       switch (e) {
-                                          case h.Create:
-                                              return a("Create a 4-digit passcode");
-                                          case h.CreateConfirm:
-                                              return a("Confirm your passcode");
-                                          case h.Recover:
-                                          case h.Verify:
-                                              return a("Enter your passcode");
-                                          case h.Forgot:
-                                              return a("Create a new passcode");
-                                          case h.ForgotConfirm:
-                                              return a("Confirm your new passcode");
+                                          case y.Create:
+                                              return t("Create a 4-digit passcode");
+                                          case y.CreateConfirm:
+                                              return t("Confirm your passcode");
+                                          case y.Recover:
+                                          case y.Verify:
+                                              return t("Enter your passcode");
+                                          case y.Forgot:
+                                              return t("Create a new passcode");
+                                          case y.ForgotConfirm:
+                                              return t("Confirm your new passcode");
                                       }
                                       return "Create a 4-digit passcode";
                                   })(r.title),
                               }),
                               r.subtitle
-                                  ? (0, t.jsx)(c.x, {
+                                  ? (0, n.jsx)(c.x, {
                                         size: "body",
                                         color: "gray700",
                                         children: (function (e) {
                                             switch (e) {
-                                                case y.Create:
-                                                    return a("A personal key that secures your messages.");
-                                                case y.Recover:
-                                                    return a("Your PIN is required to recover your encryption keys so we can decrypt your previous messages.");
-                                                case y.Verify:
-                                                    return a("To ensure you remember your PIN, we'll request it periodically. These prompts will become less frequent over time.");
-                                                case y.Forgot:
-                                                    return a("Make sure to remember it, as we will occasionally need you to verify.");
+                                                case x.Create:
+                                                    return t("A personal key that secures your messages.");
+                                                case x.Recover:
+                                                    return t("Your PIN is required to recover your encryption keys so we can decrypt your previous messages.");
+                                                case x.Verify:
+                                                    return t("To ensure you remember your PIN, we'll request it periodically. These prompts will become less frequent over time.");
+                                                case x.Forgot:
+                                                    return t("Make sure to remember it, as we will occasionally need you to verify.");
                                             }
                                             return "";
                                         })(r.subtitle),
                                     })
                                   : null,
-                              (0, t.jsxs)("div", {
-                                  className: "flex flex-col gap-3 " + (n ? "items-start" : "items-center"),
+                              (0, n.jsxs)("div", {
+                                  className: "flex flex-col gap-3 " + (a ? "items-start" : "items-center"),
                                   children: [
-                                      (0, t.jsx)("div", { className: "flex justify-center gap-4 mt-6 bg-background", children: [0, 1, 2, 3].map((e) => (0, t.jsx)("div", { className: "h-4 w-4 rounded-full " + (e < r.currentPinText.length ? "bg-text" : "bg-gray-600") }, e)) }),
-                                      (0, t.jsx)("input", {
-                                          ref: i,
-                                          type: "number",
-                                          inputMode: "numeric",
-                                          pattern: "[0-9]*",
-                                          maxLength: 4,
-                                          value: r.currentPinText,
-                                          onChange: (a) => {
-                                              e.handleEvent(new s.com.x.dms.pin.DmPinEntryEvent.OnPinValueChanged(a.target.value));
+                                      (0, n.jsx)(
+                                          p,
+                                          {
+                                              value: r.currentPinText,
+                                              onChange: (t) => {
+                                                  e.handleEvent(new s.com.x.dms.pin.DmPinEntryEvent.OnPinValueChanged(t));
+                                              },
+                                              length: 4,
+                                              autoFocus: !0,
+                                              digitVisible: (function (e) {
+                                                  switch (e) {
+                                                      case y.Create:
+                                                      case y.CreateConfirm:
+                                                          return !0;
+                                                      default:
+                                                          return !1;
+                                                  }
+                                              })(r.title),
                                           },
-                                          className: "opacity-0 absolute",
-                                      }),
+                                          r.title.toString(),
+                                      ),
                                       r.error
-                                          ? (0, t.jsx)(c.x, {
+                                          ? (0, n.jsx)(c.x, {
                                                 size: "subtext1",
                                                 weight: "medium",
                                                 color: "red500",
                                                 children: (function (e) {
-                                                    if (e instanceof f.InvalidPin) {
-                                                        const n = e.remainingGuesses;
-                                                        return n ? a("The PIN you entered was incorrect. After {remainingGuesses} more incorrect attempts, your messages will be locked.", { remainingGuesses: n }) : a("The PIN you entered was incorrect");
+                                                    if (e instanceof v.InvalidPin) {
+                                                        const a = e.remainingGuesses;
+                                                        return a ? t("The PIN you entered was incorrect. After {remainingGuesses} more incorrect attempts, your messages will be locked.", { remainingGuesses: a }) : t("The PIN you entered was incorrect");
                                                     }
                                                     switch (e) {
-                                                        case f.PinMismatch:
-                                                            return a("The PIN codes did not match. Please start over.");
-                                                        case f.NotRegistered:
-                                                            return a("Could not find your registration. Please try again later.");
-                                                        case f.InvalidAuth:
-                                                            return a("Invalid authentication. Please try again.");
-                                                        case f.UpgradeRequired:
-                                                            return a("Your app is too old to use this feature. Please update.");
-                                                        case f.Assertion:
-                                                            return a("Something was configured incorrectly. We are looking into it.");
-                                                        case f.Transient:
-                                                            return a("Something went wrong. Please check your network connection and try again.");
-                                                        case f.RateLimitExceeded:
-                                                            return a("Rate limit exceeded. Please try again later.");
-                                                        case f.PublicKeysFetchFailed:
-                                                            return a("Unable to communicate with server. Please check your network connection and try again.");
-                                                        case f.KeyReconstructionFailed:
-                                                            return a("Unable to recover your keys. We are looking into it.");
-                                                        case f.NoJuiceboxTokens:
-                                                            return a("No authentication token available. We are looking into it.");
+                                                        case v.PinMismatch:
+                                                            return t("The PIN codes did not match. Please start over.");
+                                                        case v.NotRegistered:
+                                                            return t("Could not find your registration. Please try again later.");
+                                                        case v.InvalidAuth:
+                                                            return t("Invalid authentication. Please try again.");
+                                                        case v.UpgradeRequired:
+                                                            return t("Your app is too old to use this feature. Please update.");
+                                                        case v.Assertion:
+                                                            return t("Something was configured incorrectly. We are looking into it.");
+                                                        case v.Transient:
+                                                            return t("Something went wrong. Please check your network connection and try again.");
+                                                        case v.RateLimitExceeded:
+                                                            return t("Rate limit exceeded. Please try again later.");
+                                                        case v.PublicKeysFetchFailed:
+                                                            return t("Unable to communicate with server. Please check your network connection and try again.");
+                                                        case v.KeyReconstructionFailed:
+                                                            return t("Unable to recover your keys. We are looking into it.");
+                                                        case v.NoJuiceboxTokens:
+                                                            return t("No authentication token available. We are looking into it.");
                                                         default:
-                                                            return a("An unknown error occurred.");
+                                                            return t("An unknown error occurred.");
                                                     }
                                                 })(r.error),
                                             })
@@ -363,33 +444,33 @@
                           ],
                       });
             }
-            var v = n(379342),
-                w = n(264531),
-                b = n(18671),
-                k = n(867400),
-                _ = n(231037);
-            const j = s.com.x.dms.pin.PinEntryMode;
-            function S({ mode: e }) {
-                const [a, n] = (0, l.useState)(null),
+            var w = a(379342),
+                k = a(264531),
+                _ = a(18671),
+                j = a(867400),
+                S = a(231037);
+            const F = s.com.x.dms.pin.PinEntryMode;
+            function N({ mode: e }) {
+                const [t, a] = (0, l.useState)(null),
                     r = (0, i.n)(),
-                    o = (0, v.s)(),
-                    { showDebugOptions: u } = (0, w.XE)(),
-                    d = (0, k.a)(),
-                    m = (0, _.l)();
+                    o = (0, w.s)(),
+                    { showDebugOptions: u } = (0, k.XE)(),
+                    d = (0, j.a)(),
+                    m = (0, S.l)();
                 return (
                     (0, l.useEffect)(() => {
-                        const a = new s.com.x.export.CancellationSignal(),
-                            t = r.dmPinEntryComponent(
-                                (function (e, a, n) {
+                        const t = new s.com.x.export.CancellationSignal(),
+                            n = r.dmPinEntryComponent(
+                                (function (e, t, a) {
                                     switch (e) {
                                         case "recovery":
-                                            return j.Recovery;
+                                            return F.Recovery;
                                         case "new":
-                                            return j.NewKeypair;
+                                            return F.NewKeypair;
                                         case "forgot":
-                                            return j.ForgotPin;
+                                            return F.ForgotPin;
                                         case "verify":
-                                            return new j.Verify(!!a, !!n);
+                                            return new F.Verify(!!t, !!a);
                                     }
                                 })(e, d, m),
                                 new s.com.x.dms.pin.DmPinEntryCallbacks(
@@ -400,47 +481,47 @@
                                         o.toInbox();
                                     },
                                 ),
-                                a,
+                                t,
                             );
                         return (
-                            n(t),
+                            a(n),
                             () => {
-                                a.cancel();
+                                t.cancel();
                             }
                         );
                     }, [r, e, o, d, m]),
-                    (0, t.jsxs)(t.Fragment, { children: [u && (0, t.jsx)("div", { className: "absolute top-4 right-4", children: (0, t.jsx)(b.Z, {}) }), null != a ? (0, t.jsx)(x, { component: a }) : (0, t.jsx)(c.x, { children: "Loading" })] })
+                    (0, n.jsxs)(n.Fragment, { children: [u && (0, n.jsx)("div", { className: "absolute top-4 right-4", children: (0, n.jsx)(_.Z, {}) }), null != t ? (0, n.jsx)(b, { component: t }) : (0, n.jsx)(c.x, { children: "Loading" })] })
                 );
             }
-            const F = ["recovery", "new", "forgot", "verify"],
-                T = ({ mode: e, settings: a }) => (F.includes(e) ? (0, t.jsx)(r.A, { settings: a, children: (0, t.jsx)(S, { mode: e }) }) : null);
+            const T = ["recovery", "new", "forgot", "verify"],
+                C = ({ mode: e, settings: t }) => (T.includes(e) ? (0, n.jsx)(r.A, { settings: t, children: (0, n.jsx)(N, { mode: e }) }) : null);
         },
-        664147: (e, a, n) => {
-            n.d(a, { e: () => i, i: () => o });
-            var t = n(552322),
-                r = n(941204),
-                s = n(849335),
-                l = n(202784);
+        664147: (e, t, a) => {
+            a.d(t, { e: () => i, i: () => o });
+            var n = a(552322),
+                r = a(941204),
+                s = a(849335),
+                l = a(202784);
             const i = "top_cursor",
                 o = () => {
-                    const [e, a] = (0, l.useState)("true" === localStorage.getItem(i) || !1);
-                    return (0, t.jsxs)("div", {
+                    const [e, t] = (0, l.useState)("true" === localStorage.getItem(i) || !1);
+                    return (0, n.jsxs)("div", {
                         className: "flex flex-row items-center gap-1 border border-solid rounded-lg p-2",
                         children: [
-                            (0, t.jsx)(r.x, { weight: "bold", color: "gray700", children: "Top cursor" }),
-                            (0, t.jsx)(s.r, {
+                            (0, n.jsx)(r.x, { weight: "bold", color: "gray700", children: "Top cursor" }),
+                            (0, n.jsx)(s.r, {
                                 checked: e,
                                 onCheckedChange: (e) => {
-                                    a(e), localStorage.setItem(i, e ? "true" : "false");
+                                    t(e), localStorage.setItem(i, e ? "true" : "false");
                                 },
                             }),
                         ],
                     });
                 };
         },
-        686524: (e, a, n) => {
-            n.r(a), n.d(a, { default: () => h });
-            const t = {
+        686524: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => h });
+            const n = {
                 fragment: {
                     argumentDefinitions: (r = [{ defaultValue: null, kind: "LocalArgument", name: "id" }]),
                     kind: "Fragment",
@@ -571,7 +652,7 @@
                                                                                     storageKey: null,
                                                                                 }),
                                                                                 (g = { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null }),
-                                                                                (p = {
+                                                                                (f = {
                                                                                     alias: null,
                                                                                     args: null,
                                                                                     concreteType: "HighlightedUserLabelResponse",
@@ -625,32 +706,32 @@
                     abstractKey: null,
                 },
                 kind: "Request",
-                operation: { argumentDefinitions: r, kind: "Operation", name: "fetchPostQuery", selections: [{ alias: null, args: s, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_result_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [l, { kind: "InlineFragment", selections: [o, c, u, { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [l, { kind: "InlineFragment", selections: [u, d, m, g, p, c], type: "User", abstractKey: null }], storageKey: null }, c], storageKey: null }], storageKey: null }], type: "Tweet", abstractKey: null }], storageKey: null }, c], storageKey: null }] },
+                operation: { argumentDefinitions: r, kind: "Operation", name: "fetchPostQuery", selections: [{ alias: null, args: s, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_result_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [l, { kind: "InlineFragment", selections: [o, c, u, { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [l, { kind: "InlineFragment", selections: [u, d, m, g, f, c], type: "User", abstractKey: null }], storageKey: null }, c], storageKey: null }], storageKey: null }], type: "Tweet", abstractKey: null }], storageKey: null }, c], storageKey: null }] },
                 params: { id: "BrdmgaNbXWZa4D4KLY-hCA", metadata: {}, name: "fetchPostQuery", operationKind: "query", text: null },
             };
-            var r, s, l, i, o, c, u, d, m, g, p;
-            t.hash = "6b931e47d1ab528a8de40a76cc4aef9e";
-            const h = t;
+            var r, s, l, i, o, c, u, d, m, g, f;
+            n.hash = "6b931e47d1ab528a8de40a76cc4aef9e";
+            const h = n;
         },
-        84504: (e, a, n) => {
-            n.d(a, { n5: () => r });
-            var t = n(625067);
+        84504: (e, t, a) => {
+            a.d(t, { n5: () => r });
+            var n = a(625067);
             function r() {
-                const e = (0, t.Qc)(document.cookie);
+                const e = (0, n.Qc)(document.cookie);
                 return e.twid?.slice(2) || "0";
             }
         },
-        842898: (e, a, n) => {
-            n.d(a, { S: () => r });
-            var t = n(889906);
-            async function r(e, a) {
-                return (0, t.fetchQuery)(a, s, { id: e }, { fetchPolicy: "store-or-network" })
+        842898: (e, t, a) => {
+            a.d(t, { S: () => r });
+            var n = a(889906);
+            async function r(e, t) {
+                return (0, n.fetchQuery)(t, s, { id: e }, { fetchPolicy: "store-or-network" })
                     .toPromise()
-                    .then((a) => {
-                        const n = a?.tweet_result_by_rest_id?.result;
-                        if (!n || "Tweet" !== n.__typename) return null;
-                        let t, r;
-                        switch (("Badge" === n.core?.user_results?.result?.affiliates_highlighted_label?.label?.user_label_display_type && "BusinessLabel" === n.core?.user_results?.result?.affiliates_highlighted_label?.label?.user_label_type && n.core?.user_results?.result?.affiliates_highlighted_label?.label?.badge && (t = { label: n.core?.user_results?.result?.affiliates_highlighted_label?.label?.description, url: n.core?.user_results?.result?.affiliates_highlighted_label?.label?.badge?.url }), n.core?.user_results?.result?.legacy?.verified_type)) {
+                    .then((t) => {
+                        const a = t?.tweet_result_by_rest_id?.result;
+                        if (!a || "Tweet" !== a.__typename) return null;
+                        let n, r;
+                        switch (("Badge" === a.core?.user_results?.result?.affiliates_highlighted_label?.label?.user_label_display_type && "BusinessLabel" === a.core?.user_results?.result?.affiliates_highlighted_label?.label?.user_label_type && a.core?.user_results?.result?.affiliates_highlighted_label?.label?.badge && (n = { label: a.core?.user_results?.result?.affiliates_highlighted_label?.label?.description, url: a.core?.user_results?.result?.affiliates_highlighted_label?.label?.badge?.url }), a.core?.user_results?.result?.legacy?.verified_type)) {
                             case "Business":
                                 r = "business";
                                 break;
@@ -661,23 +742,23 @@
                                 r = "user";
                                 break;
                             default:
-                                r = n.core?.user_results?.result?.is_blue_verified ? "user" : void 0;
+                                r = a.core?.user_results?.result?.is_blue_verified ? "user" : void 0;
                         }
-                        return { id: e, text: n.legacy?.full_text, author: { id: n.core?.user_results?.result?.rest_id, name: n.core?.user_results?.result?.legacy?.name, screenName: n.core?.user_results?.result?.legacy?.screen_name, avatar: n.core?.user_results?.result?.legacy?.profile_image_url_https, badges: { affiliation: t, verifiedType: r }, profileImageUrl: n.core?.user_results?.result?.legacy?.profile_image_url_https, profileImageShape: n.core?.user_results?.result?.profile_image_shape?.toLowerCase() }, displayTextRange: n.legacy?.display_text_range, entities: n.legacy?.entities, createdAt: n.legacy?.created_at };
+                        return { id: e, text: a.legacy?.full_text, author: { id: a.core?.user_results?.result?.rest_id, name: a.core?.user_results?.result?.legacy?.name, screenName: a.core?.user_results?.result?.legacy?.screen_name, avatar: a.core?.user_results?.result?.legacy?.profile_image_url_https, badges: { affiliation: n, verifiedType: r }, profileImageUrl: a.core?.user_results?.result?.legacy?.profile_image_url_https, profileImageShape: a.core?.user_results?.result?.profile_image_shape?.toLowerCase() }, displayTextRange: a.legacy?.display_text_range, entities: a.legacy?.entities, createdAt: a.legacy?.created_at };
                     });
             }
-            const s = n(686524);
+            const s = a(686524);
         },
-        336984: (e, a, n) => {
-            n.d(a, { r: () => s });
-            var t = n(159603);
+        336984: (e, t, a) => {
+            a.d(t, { r: () => s });
+            var n = a(159603);
             const r = (e) => {
                     switch (e) {
-                        case t.com.x.models.VerifiedType.User:
+                        case n.com.x.models.VerifiedType.User:
                             return "user";
-                        case t.com.x.models.VerifiedType.Business:
+                        case n.com.x.models.VerifiedType.Business:
                             return "business";
-                        case t.com.x.models.VerifiedType.Government:
+                        case n.com.x.models.VerifiedType.Government:
                             return "government";
                         default:
                             return;
@@ -688,17 +769,17 @@
                     return { affiliation: e.userLabel?.shouldDisplayBadge() && e.userLabel.description && e.userLabel.badgeImageUrl ? { label: e.userLabel.description, url: e.userLabel.badgeImageUrl } : void 0, isProtected: e.isProtected, isSubscriber: e.friendship.isSuperFollowingMe, verifiedType: r(e.verifiedType) };
                 };
         },
-        173399: (e, a, n) => {
-            n.d(a, { O: () => i, z: () => o });
-            var t = n(84504);
+        173399: (e, t, a) => {
+            a.d(t, { O: () => i, z: () => o });
+            var n = a(84504);
             async function r(e) {
-                return new Promise((a, n) => {
-                    const t = setTimeout(() => {
-                            n(new Error("Database deletion timeout"));
+                return new Promise((t, a) => {
+                    const n = setTimeout(() => {
+                            a(new Error("Database deletion timeout"));
                         }, 5e3),
                         r = new BroadcastChannel(`${e}_chat`);
                     (r.onmessage = ({ data: e }) => {
-                        "before_logout_done" === e?.action && (clearTimeout(t), r.close(), a());
+                        "before_logout_done" === e?.action && (clearTimeout(n), r.close(), t());
                     }),
                         r.postMessage({ action: "before_logout" }),
                         window.dispatchEvent(new Event("xchat_before_unload_event")),
@@ -707,11 +788,11 @@
                                 await s(e),
                                     await (async function (e) {
                                         try {
-                                            const a = await navigator.storage.getDirectory(),
-                                                n = await a.getDirectoryHandle("backups", { create: !0 }),
-                                                t = `chat_${e}.db`;
+                                            const t = await navigator.storage.getDirectory(),
+                                                a = await t.getDirectoryHandle("backups", { create: !0 }),
+                                                n = `chat_${e}.db`;
                                             try {
-                                                return await n.getFileHandle(t), await n.removeEntry(t), !0;
+                                                return await a.getFileHandle(n), await a.removeEntry(n), !0;
                                             } catch (e) {
                                                 return !1;
                                             }
@@ -719,45 +800,45 @@
                                             return !1;
                                         }
                                     })(e),
-                                    clearTimeout(t),
-                                    a();
+                                    clearTimeout(n),
+                                    t();
                             } catch (e) {
-                                clearTimeout(t), n(e instanceof Error ? e : new Error("Deletion failed"));
+                                clearTimeout(n), a(e instanceof Error ? e : new Error("Deletion failed"));
                             }
                         }, 300);
                 });
             }
             async function s(e) {
                 try {
-                    const a = await navigator.storage.getDirectory();
-                    for await (const n of a.values())
-                        if ("directory" === n.kind && n.name.startsWith(`.${e}_chat_`))
+                    const t = await navigator.storage.getDirectory();
+                    for await (const a of t.values())
+                        if ("directory" === a.kind && a.name.startsWith(`.${e}_chat_`))
                             try {
-                                await a.removeEntry(n.name, { recursive: !0 });
+                                await t.removeEntry(a.name, { recursive: !0 });
                             } catch (e) {}
                 } catch (e) {}
             }
             const l = async () => {
                 try {
                     const e = await navigator.storage.getDirectory(),
-                        a = await e.getDirectoryHandle("dm-dev-logs", { create: !0 }),
-                        n = Date.now() - 1728e5;
-                    for await (const [e] of a.entries())
+                        t = await e.getDirectoryHandle("dm-dev-logs", { create: !0 }),
+                        a = Date.now() - 1728e5;
+                    for await (const [e] of t.entries())
                         try {
-                            const t = e.match(/.*-(\d{4}-\d{2}-\d{2})\.txt$/);
-                            if (!t) continue;
-                            const r = t[1];
+                            const n = e.match(/.*-(\d{4}-\d{2}-\d{2})\.txt$/);
+                            if (!n) continue;
+                            const r = n[1];
                             if (!r) continue;
-                            new Date(r).getTime() < n && (await a.removeEntry(e));
+                            new Date(r).getTime() < a && (await t.removeEntry(e));
                         } catch (e) {}
                 } catch (e) {}
             };
             async function i() {
-                const e = (0, t.n5)();
+                const e = (0, n.n5)();
                 await (async function (e) {
                     try {
-                        const a = await navigator.storage.getDirectory();
-                        await a.removeEntry(`dm-files-${e}`, { recursive: !0 });
+                        const t = await navigator.storage.getDirectory();
+                        await t.removeEntry(`dm-files-${e}`, { recursive: !0 });
                     } catch (e) {
                         e instanceof DOMException && e.name;
                     }
@@ -765,155 +846,155 @@
                     await r(e);
             }
             async function o() {
-                const e = (0, t.n5)();
+                const e = (0, n.n5)();
                 await s(e), await l();
             }
         },
-        167285: (e, a, n) => {
-            n.d(a, { H: () => u, S: () => c });
-            const t = 3600,
+        167285: (e, t, a) => {
+            a.d(t, { H: () => u, S: () => c });
+            const n = 3600,
                 r = 86400,
                 s = 604800,
                 l = 2592e3,
                 i = { minute: { narrow: "m", long: "minute" }, hour: { narrow: "h", long: "hour" }, day: { narrow: "d", long: "day" }, week: { narrow: "w", long: "week" }, month: { narrow: "mo", long: "month" } },
-                o = (e, a, n) => {
-                    switch (n) {
+                o = (e, t, a) => {
+                    switch (a) {
                         case "narrow":
-                            return i[a][n];
+                            return i[t][a];
                         case "long": {
-                            const t = 1 !== e;
-                            return ` ${i[a][n]}${t ? "s" : ""}`;
+                            const n = 1 !== e;
+                            return ` ${i[t][a]}${n ? "s" : ""}`;
                         }
                     }
                 },
-                c = ({ diffSeconds: e, epochSeconds: a, style: n }) => {
+                c = ({ diffSeconds: e, epochSeconds: t, style: a }) => {
                     if (e < 60) return "Now";
-                    if (e < t) {
-                        const a = Math.floor(e / 60);
-                        return `${a}${o(a, "minute", n)}`;
+                    if (e < n) {
+                        const t = Math.floor(e / 60);
+                        return `${t}${o(t, "minute", a)}`;
                     }
                     if (e < r) {
-                        const a = Math.floor(e / t);
-                        return `${a}${o(a, "hour", n)}`;
+                        const t = Math.floor(e / n);
+                        return `${t}${o(t, "hour", a)}`;
                     }
                     if (e < s) {
-                        const a = Math.floor(e / r);
-                        return `${a}${o(a, "day", n)}`;
+                        const t = Math.floor(e / r);
+                        return `${t}${o(t, "day", a)}`;
                     }
                     if (e < l) {
-                        const a = Math.floor(e / s);
-                        return `${a}${o(a, "week", n)}`;
+                        const t = Math.floor(e / s);
+                        return `${t}${o(t, "week", a)}`;
                     }
-                    if (!a || e < 31536e3) {
-                        const a = Math.floor(e / l);
-                        return `${a}${o(a, "month", n)}`;
+                    if (!t || e < 31536e3) {
+                        const t = Math.floor(e / l);
+                        return `${t}${o(t, "month", a)}`;
                     }
-                    return new Date(1e3 * a).toLocaleDateString("en-US");
+                    return new Date(1e3 * t).toLocaleDateString("en-US");
                 },
                 u = (e) => new Date(1e3 * e).toLocaleString("en-US", { timeStyle: "short" });
         },
-        369962: (e, a, n) => {
-            n.d(a, { L: () => t });
-            const t = (e) => {
-                const a = Math.floor(e / 1e3),
+        369962: (e, t, a) => {
+            a.d(t, { L: () => n });
+            const n = (e) => {
+                const t = Math.floor(e / 1e3),
+                    a = Math.floor(t / 60),
                     n = Math.floor(a / 60),
-                    t = Math.floor(n / 60),
-                    r = Math.floor(t / 24),
+                    r = Math.floor(n / 24),
                     s = Math.floor(r / 7),
-                    l = (e, a) => `${e} ${a}${1 !== e ? "s" : ""}`;
-                return s > 0 ? l(s, "week") : r > 0 ? l(r, "day") : t > 0 ? l(t, "hour") : n > 0 ? l(n, "minute") : l(a, "second");
+                    l = (e, t) => `${e} ${t}${1 !== e ? "s" : ""}`;
+                return s > 0 ? l(s, "week") : r > 0 ? l(r, "day") : n > 0 ? l(n, "hour") : a > 0 ? l(a, "minute") : l(t, "second");
             };
         },
-        595117: (e, a, n) => {
-            n.d(a, { $: () => s });
-            const t = "temp-files";
+        595117: (e, t, a) => {
+            a.d(t, { $: () => s });
+            const n = "temp-files";
             async function r(e) {
-                const a = await navigator.storage.getDirectory(),
-                    n = await a.getDirectoryHandle(t, { create: !0 }),
+                const t = await navigator.storage.getDirectory(),
+                    a = await t.getDirectoryHandle(n, { create: !0 }),
                     r = (function (e) {
                         return `${Date.now()}-${e}`.replace(/\s/g, "_");
                     })(e.name),
-                    s = await n.getFileHandle(r, { create: !0 }),
+                    s = await a.getFileHandle(r, { create: !0 }),
                     l = await s.createWritable();
-                return await l.write(e), await l.close(), `${t}/${r}`;
+                return await l.write(e), await l.close(), `${n}/${r}`;
             }
-            async function s(e, a, n) {
+            async function s(e, t, a) {
                 try {
-                    a();
-                    n(await r(e));
+                    t();
+                    a(await r(e));
                 } catch (e) {}
             }
         },
-        950849: (e, a, n) => {
-            n.d(a, { E: () => r });
-            var t = n(202784);
-            const r = (e, a) => {
-                (0, t.useEffect)(() => {
-                    const n = e.subscribe(a);
+        950849: (e, t, a) => {
+            a.d(t, { E: () => r });
+            var n = a(202784);
+            const r = (e, t) => {
+                (0, n.useEffect)(() => {
+                    const a = e.subscribe(t);
                     return () => {
-                        n.cancel();
+                        a.cancel();
                     };
-                }, [e, a]);
+                }, [e, t]);
             };
         },
-        748055: (e, a, n) => {
-            n.d(a, { F: () => s });
-            var t = n(202784),
-                r = n(595117);
-            function s({ onFileDrop: e, onFileAttached: a, isEnabled: n }) {
-                const [s, l] = (0, t.useState)(!1);
+        748055: (e, t, a) => {
+            a.d(t, { F: () => s });
+            var n = a(202784),
+                r = a(595117);
+            function s({ onFileDrop: e, onFileAttached: t, isEnabled: a }) {
+                const [s, l] = (0, n.useState)(!1);
                 return {
                     isDragging: s,
-                    handleDragOver: (0, t.useCallback)(
+                    handleDragOver: (0, n.useCallback)(
                         (e) => {
-                            e.preventDefault(), e.stopPropagation(), n && l(!0);
+                            e.preventDefault(), e.stopPropagation(), a && l(!0);
                         },
-                        [n],
+                        [a],
                     ),
-                    handleDragLeave: (0, t.useCallback)((e) => {
+                    handleDragLeave: (0, n.useCallback)((e) => {
                         e.preventDefault(), e.stopPropagation(), l(!1);
                     }, []),
-                    handleDrop: (0, t.useCallback)(
-                        async (t) => {
-                            if ((t.preventDefault(), t.stopPropagation(), l(!1), !n)) return;
-                            const s = t.dataTransfer.files[0];
-                            s && (await (0, r.$)(s, e, a));
+                    handleDrop: (0, n.useCallback)(
+                        async (n) => {
+                            if ((n.preventDefault(), n.stopPropagation(), l(!1), !a)) return;
+                            const s = n.dataTransfer.files[0];
+                            s && (await (0, r.$)(s, e, t));
                         },
-                        [n, e, a],
+                        [a, e, t],
                     ),
                 };
             }
         },
-        533476: (e, a, n) => {
-            n.d(a, { _: () => r });
-            var t = n(202784);
+        533476: (e, t, a) => {
+            a.d(t, { _: () => r });
+            var n = a(202784);
             function r(e) {
-                const [a, n] = (0, t.useState)(e.state);
+                const [t, a] = (0, n.useState)(e.state);
                 return (
-                    (0, t.useEffect)(() => {
-                        const a = e.subscribe(n);
+                    (0, n.useEffect)(() => {
+                        const t = e.subscribe(a);
                         return () => {
-                            a.cancel();
+                            t.cancel();
                         };
                     }, [e]),
-                    a
+                    t
                 );
             }
         },
-        658358: (e, a, n) => {
-            n.d(a, { e: () => d });
-            var t = n(159603),
-                r = n(256958),
-                s = n(202784);
-            const l = t.com.x.dms.composer.composer.ComposerToastType,
-                i = t.com.x.dms.convinfo.ConversationInfoToast,
-                o = t.com.x.dms.ParticipantMenuItem,
-                c = t.com.x.dms.newdm.NewDmToast,
-                u = t.com.x.dms.addparticipants.AddGroupParticipantsToastType;
+        658358: (e, t, a) => {
+            a.d(t, { e: () => d });
+            var n = a(159603),
+                r = a(256958),
+                s = a(202784);
+            const l = n.com.x.dms.composer.composer.ComposerToastType,
+                i = n.com.x.dms.convinfo.ConversationInfoToast,
+                o = n.com.x.dms.ParticipantMenuItem,
+                c = n.com.x.dms.newdm.NewDmToast,
+                u = n.com.x.dms.addparticipants.AddGroupParticipantsToastType;
             function d(e) {
                 (0, s.useEffect)(() => {
-                    const a = e.subscribe((e) => {
-                        const a = (function (e) {
+                    const t = e.subscribe((e) => {
+                        const t = (function (e) {
                             switch (e) {
                                 case l.ATTACHMENT_FAILED:
                                     return "Unable to load attachment";
@@ -932,7 +1013,7 @@
                                 case c.CreateOneOnOneFailed:
                                     return "Unable to start conversation.";
                             }
-                            if (e instanceof t.com.x.dms.convinfo.ConversationInfoToast.ParticipantMenuItemFailed)
+                            if (e instanceof n.com.x.dms.convinfo.ConversationInfoToast.ParticipantMenuItemFailed)
                                 switch (e.item) {
                                     case o.AddAsAdmin:
                                         return "Unable to add user as Admin";
@@ -952,20 +1033,20 @@
                                 }
                             return null;
                         })(e);
-                        a && (0, r.Am)(a);
+                        t && (0, r.Am)(t);
                     });
                     return () => {
-                        a.cancel();
+                        t.cancel();
                     };
                 }, [e]);
             }
         },
-        858108: (e, a, n) => {
-            function t() {
+        858108: (e, t, a) => {
+            function n() {
                 return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
             }
-            n.d(a, { G: () => t });
+            a.d(t, { G: () => n });
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f141c2f6.8e114faa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f141c2f6.430a9aaa.js.map

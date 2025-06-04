@@ -225,7 +225,6 @@
                 a("f65e7e91", function (e) {
                     return "[[290850]] " + e.percentage + "% off " + e.tier + " " + e.plan;
                 }),
-                a("cbc38428", "[[295606]] Stay ad-free with Premium+"),
                 a("a84a736e", "[[292315]] Get Free Ad Credit"),
                 a("a0713d76", "[[292316]] Upgrade to Verified Organizations to get free ad credit & a suite of business growth tools."),
                 a("a07e13fc", "[[289978]] Become a Premium Creator"),
@@ -901,9 +900,9 @@
                 a("e8e39f95", "Learn more"),
                 a("e126dd3f", "Learn more"),
                 a("i821844f", "Learn more"),
-                a("b0abbb17", "Learn more");
-            a("e7e0d88b", "Learn more"),
-                a("i560665f", "Learn more"),
+                a("b0abbb17", "Learn more"),
+                a("e7e0d88b", "Learn more");
+            a("i560665f", "Learn more"),
                 a("f6e774d9", "Learn more"),
                 a("h486f755", "Learn more"),
                 a("bab41dab", "Learn more"),
@@ -1917,9 +1916,9 @@
                 a("da8ac57c", "[[284900]] Edit Caption"),
                 a("a8fdd09c", "[[284919]] Publish Article"),
                 a("d8047cc8", "[[221087]] Publish"),
-                a("ff7ddca2", "[[284961]] Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile.");
-            a("ef34d7be", "[[284897]] Audience and reply controls are not editable after an article has been published."),
-                a("e52d4998", "[[284896]] Choose your audience"),
+                a("ff7ddca2", "[[284961]] Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                a("ef34d7be", "[[284897]] Audience and reply controls are not editable after an article has been published.");
+            a("e52d4998", "[[284896]] Choose your audience"),
                 a("d7985b24", "[[288078]] Choose who can reply to this Article"),
                 a("b5660338", "[[286495]] Timeline preview"),
                 a("hff1b97a", "[[284914]] Only Subscribed can reply."),
@@ -2973,9 +2972,9 @@
                 a("jb0a4c36", "[[180896]] Blog"),
                 a("ce6d095a", "[[225663]] Careers"),
                 a("e0adec82", "[[225676]] Brand Resources"),
-                a("df1b7550", "[[180908]] Marketing");
-            a("he258678", "[[280696]] X for Business"),
-                a("c6f58084", "[[180900]] Developers"),
+                a("df1b7550", "[[180908]] Marketing"),
+                a("he258678", "[[280696]] X for Business");
+            a("c6f58084", "[[180900]] Developers"),
                 a("d83f18d2", "[[180901]] Directory"),
                 a("hc5aa17c", "[[294380]] Get the X app"),
                 a("j0693948", "[[294379]] Get the Grok app"),
@@ -3885,13 +3884,13 @@
                 a("caa8d928", "[[292248]] Toggle noise suppression"),
                 a("b5d88f0c", "[[283830]] Employees only"),
                 a("c855ab8e", "[[273092]] Subscribers only"),
-                a("ddeb0a3c", "[[271043]] Here’s the Community. Like the people? Take a look.");
-            a("e111f531", function (e) {
-                return "[[265990]] " + e.count + " tuned in";
+                a("ddeb0a3c", "[[271043]] Here’s the Community. Like the people? Take a look."),
+                a("e111f531", function (e) {
+                    return "[[265990]] " + e.count + " tuned in";
+                });
+            a("cbef820f", function (e) {
+                return "[[293244]] " + e.screenName + " reposted the stream!";
             }),
-                a("cbef820f", function (e) {
-                    return "[[293244]] " + e.screenName + " reposted the stream!";
-                }),
                 a("e3275464", "[[150231]] Send"),
                 a("cededf2a", "[[231304]] Host"),
                 a("i2caef48", "[[238359]] Co-hosts"),
@@ -4925,9 +4924,9 @@
                 a("d9f9dec0", "[[294167]] View Space"),
                 a("h0c1f37a", "[[294166]] View Space Analytics"),
                 a("e41fffbc", "[[291999]] The total watch time of your videos."),
-                a("if2909ba", "[[292000]] Watch Time");
-            a("i0e5bf4c", "[[293195]] Your videos"),
-                a("ed99baea", "[[289716]] Early Beta Access"),
+                a("if2909ba", "[[292000]] Watch Time"),
+                a("i0e5bf4c", "[[293195]] Your videos");
+            a("ed99baea", "[[289716]] Early Beta Access"),
                 a("gf898b70", "[[289702]] Advanced Search"),
                 a("d2a43a7a", '[[289747]] contains both "ai" and "startup"'),
                 a("a8584698", "[[289739]] ai startup"),
@@ -5881,9 +5880,9 @@
                 a("e41c9b4f", function (e) {
                     return "[[242357]] Saved to " + e.bookmarkFolderName;
                 }),
-                a("h18f86a4", "[[242318]] Delete Folder");
-            a("f4ea967a", "[[242841]] Folder has been deleted"),
-                a("b670aa62", "[[242315]] Folder Name"),
+                a("h18f86a4", "[[242318]] Delete Folder"),
+                a("f4ea967a", "[[242841]] Folder has been deleted");
+            a("b670aa62", "[[242315]] Folder Name"),
                 a("aece5462", "[[242839]] Folder name has been updated successfully"),
                 a("e3299b94", "[[242842]] Something went wrong. Try updating that folder again in a minute."),
                 a("c09ea714", "[[242843]] Something went wrong. Try deleting that folder again in a minute."),
@@ -6885,9 +6884,9 @@
                 a("b925c18c", "[[283691]] Salary Type"),
                 a("j3d242ce", "[[276541]] Invalid range"),
                 a("f4d07bd2", "[[282456]] Include optional details to make it easier for candidates to discover your roles with search."),
-                a("b8cbb51a", "[[282457]] Job Summary");
-            a("bda6881e", "[[282745]] This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
-                a("b075c68a", "[[276392]] Edit job"),
+                a("b8cbb51a", "[[282457]] Job Summary"),
+                a("bda6881e", "[[282745]] This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.");
+            a("b075c68a", "[[276392]] Edit job"),
                 a("d4b6a6e0", "[[249571]] Profile Spotlight"),
                 a("j2dd3686", "[[285949]] Highlight featured jobs above my posts."),
                 a("af1cfd46", "[[285940]] ATS integration"),
@@ -7229,14 +7228,20 @@
                 a("hd80bd3e", "[[282216]] Promote a post"),
                 a("fe2b0008", "[[282210]] Learn how to use X"),
                 a("h257d4aa", "[[282221]] Select a post to promote"),
-                a("fe946974", "[[295801]] Your trial of X without ads"),
+                a("h9b28dae", "You’re saving time with an ad-free feed"),
                 a("f6c50ec0", "[[295800]] Your ad-free trial has ended"),
-                a("b1319404", "[[295788]] Ads avoided"),
-                a("baa4acae", "[[295799]] You’re seeing more personalized content."),
-                a("c00e8600", "[[295790]] Estimated time saved"),
+                a("e1d1fbca", "You’ve avoided"),
+                a("a82d7abd", function (e) {
+                    return e.numberOfAds + " ads";
+                }),
+                a("ff074c76", "You’re seeing more of the posts you want."),
+                a("cbc38428", "[[295606]] Stay ad-free with Premium+"),
+                a("b9028f60", "Back to my ad-free trial"),
+                a("e081d6a0", "No thanks, I’d like to see ads again"),
+                a("fee73dca", "Saving an estimated"),
                 a("ic073e4e", "[[295798]] Your time is valuable."),
                 a("eb866e88", "[[295791]] Estimated 1-year time savings"),
-                a("aa77b70c", "[[295789]] Based on your usage."),
+                a("ce72f092", "Based on your usage so far."),
                 a("c534c6b4", "[[295797]] We’re crunching the numbers..."),
                 a("i57332f0", "[[295793]] Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
                 a("cc10f019", function (e) {
@@ -7251,12 +7256,16 @@
                 a("b93d00e5", function (e) {
                     return "[[295679]] " + e.days + " day" + n(e.days, "", "s");
                 }),
+                a("g2c63852", "100% free. No credit card required."),
                 a("be88be23", function (e) {
                     return "[[295680]] Your " + e.durationInDays + "-day ad-free trial is activated";
                 }),
-                a("a4413462", "[[295795]] Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                a("ae3f3b0e", "[[295792]] Enjoy!"),
-                a("cdac8dc4", "[[295794]] See your new feed"),
+                a("b63766a6", "Scroll without ads"),
+                a("h028f7e0", "Spend more time on the content you love"),
+                a("dd68eef6", "Experience the Premium+ luxury life"),
+                a("g8a2f217", function (e) {
+                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                }),
                 a("dec99336", "[[295787]] Ad-free"),
                 a("i95803fa", "[[295796]] Unfortunately, you are not eligible at this time."),
                 a("d28a1d72", "[[290255]] Be the very first to spot trends with Radar"),
@@ -7856,14 +7865,7 @@
                 a("a76d58ba", "[[288167]] Ads Analytics"),
                 a("eccd0e1a", "[[288001]] Organization Analytics"),
                 a("deea1708", "[[288004]] Want to view analytics across all your X accounts?"),
-                a("eb603ffc", "[[288007]] Upgrade to affiliate your network and view aggregated analytics."),
-                a("gf67aae4", "[[288005]] Upgrade to Full Access"),
-                a("h75e3618", "[[288038]] Include organization"),
-                a("h24a8862", "[[288039]] About this checkbox"),
-                a("c29e3a88", "[[288072]] Select affiliates"),
-                a("j8318d57", function (e) {
-                    return "[[288077]] " + e.number + " affiliate" + n(e.number, "", "s");
-                });
+                a("eb603ffc", "[[288007]] Upgrade to affiliate your network and view aggregated analytics.");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7902,7 +7904,14 @@
                     r(e, t)
                 );
             }
-            a("bf809ec0", "[[288071]] Select Affiliates"),
+            a("gf67aae4", "[[288005]] Upgrade to Full Access"),
+                a("h75e3618", "[[288038]] Include organization"),
+                a("h24a8862", "[[288039]] About this checkbox"),
+                a("c29e3a88", "[[288072]] Select affiliates"),
+                a("j8318d57", function (e) {
+                    return "[[288077]] " + e.number + " affiliate" + n(e.number, "", "s");
+                }),
+                a("bf809ec0", "[[288071]] Select Affiliates"),
                 a("b719e224", "[[196494]] No results"),
                 a("c9938100", "[[220491]] Search results"),
                 a("d1a35ec6", "[[274371]] Add accounts"),
@@ -8894,10 +8903,10 @@
                 a("j0c6772a", "[[223886]] Visit website"),
                 a("f73003aa", "[[225566]] Video will play after ad"),
                 a("b3112b8a", "[[153003]] Skip"),
-                a("h6333ad0", "[[209963]] Skip Ad"),
-                a("c59da417", function (e) {
-                    return "[[217358]] Skip Ad in " + e.seconds;
-                }),
+                a("h6333ad0", "[[209963]] Skip Ad");
+            a("c59da417", function (e) {
+                return "[[217358]] Skip Ad in " + e.seconds;
+            }),
                 a("c3c147cf", function (e) {
                     return "[[217359]] Skip " + e.seconds;
                 }),
@@ -8905,8 +8914,8 @@
                 a("ha3efce4", "[[286136]] Auto"),
                 a("hd8d044d", function (e) {
                     return "[[286308]] Auto (" + e.quality + ")";
-                });
-            a("a7bf9962", "[[276485]] Download video"),
+                }),
+                a("a7bf9962", "[[276485]] Download video"),
                 a("ccc97152", "[[238866]] Playback speed"),
                 a("h531ade0", "[[286295]] Video quality"),
                 a("e8b5757c", "[[246420]] 0.25x"),
@@ -13341,4 +13350,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.6da8e1ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.2ca2000a.js.map

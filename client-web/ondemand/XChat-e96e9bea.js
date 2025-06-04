@@ -172,7 +172,7 @@
             "use strict";
             s.r(t), s.d(t, { default: () => w });
             var l = s(202784),
-                r = s(472008),
+                r = s(850697),
                 i = s(325686),
                 h = s(107267),
                 c = s(67369),
@@ -259,4 +259,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.c829f52a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.5c83dc8a.js.map

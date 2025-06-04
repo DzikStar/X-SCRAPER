@@ -42,7 +42,7 @@
                 d = t(941204),
                 m = t(475694),
                 u = t(369962),
-                x = t(263033);
+                x = t(455091);
             const h = i.com.x.dms.model.InformationalItemContents;
             function g({ avatarUrl: e }) {
                 return e ? (0, n.jsx)(c.q, { url: e, size: "small" }) : null;
@@ -513,7 +513,7 @@
                                       children: [
                                           (0, n.jsx)(a.T, {
                                               api: x,
-                                              className: "!h-full scrollbar-thin-custom",
+                                              className: "!h-full scrollbar-thin-custom pl-3",
                                               items: d,
                                               onScroll: (e, s) => {
                                                   x.current && (0 !== e && "backward" === s && d.length - 3 > x.current.findEndIndex() && (g.current = !0), f()), h(e, s);
@@ -589,7 +589,7 @@
             var n = t(552322),
                 a = t(475694),
                 r = t(350311),
-                i = t(263033);
+                i = t(455091);
             const o = ({ typingIndicatorItem: e }) => {
                 const { t: s } = (0, i.$G)(),
                     t = e.users.asJsReadonlyArrayView(),
@@ -812,4 +812,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-eca6a814.1ecdbf8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-eca6a814.2a87a3ba.js.map

@@ -224,7 +224,6 @@
                 i("f65e7e91", function (a) {
                     return "Diskaun " + a.percentage + "% " + a.tier + " " + a.plan;
                 }),
-                i("cbc38428", "Kekal bersama pengalaman bebas iklan dengan Premium+"),
                 i("a84a736e", "Dapatkan Kredit Iklan Percuma"),
                 i("a0713d76", "Naik taraf kepada Organisasi Disahkan untuk mendapatkan kredit iklan percuma & kumpulan alat perkembangan perniagaan."),
                 i("a07e13fc", "Jadi Pencipta Premium"),
@@ -900,9 +899,9 @@
                 i("e8e39f95", "Ketahui lebih lanjut"),
                 i("e126dd3f", "Ketahui lebih lanjut"),
                 i("i821844f", "Ketahui lebih lanjut"),
-                i("b0abbb17", "Ketahui lebih lanjut");
-            i("e7e0d88b", "Ketahui lebih lanjut"),
-                i("i560665f", "Ketahui lebih lanjut"),
+                i("b0abbb17", "Ketahui lebih lanjut"),
+                i("e7e0d88b", "Ketahui lebih lanjut");
+            i("i560665f", "Ketahui lebih lanjut"),
                 i("f6e774d9", "Ketahui lebih lanjut"),
                 i("h486f755", "Ketahui lebih lanjut"),
                 i("bab41dab", "Ketahui lebih lanjut"),
@@ -1916,9 +1915,9 @@
                 i("da8ac57c", "Edit Kapsyen"),
                 i("a8fdd09c", "Terbitkan Artikel"),
                 i("d8047cc8", "Terbitkan"),
-                i("ff7ddca2", "Artikel anda akan muncul sebagai siaran sebaik sahaja diterbitkan. Anda juga boleh menemukan Artikel itu di bawah tab Artikel pada profil anda.");
-            i("ef34d7be", "Kawalan khalayak dan balasan tidak dapat diedit selepas sesebuah artikel diterbitkan."),
-                i("e52d4998", "Pilih khalayak anda"),
+                i("ff7ddca2", "Artikel anda akan muncul sebagai siaran sebaik sahaja diterbitkan. Anda juga boleh menemukan Artikel itu di bawah tab Artikel pada profil anda."),
+                i("ef34d7be", "Kawalan khalayak dan balasan tidak dapat diedit selepas sesebuah artikel diterbitkan.");
+            i("e52d4998", "Pilih khalayak anda"),
                 i("d7985b24", "Pilih orang yang boleh membalas kepada Artikel ini"),
                 i("b5660338", "Pratonton Garis masa"),
                 i("hff1b97a", "Hanya yang Melanggan boleh membalas."),
@@ -2972,9 +2971,9 @@
                 i("jb0a4c36", "Blog"),
                 i("ce6d095a", "Karier"),
                 i("e0adec82", "Sumber Jenama"),
-                i("df1b7550", "Pemasaran");
-            i("he258678", "X untuk Perniagaan"),
-                i("c6f58084", "Pembangun"),
+                i("df1b7550", "Pemasaran"),
+                i("he258678", "X untuk Perniagaan");
+            i("c6f58084", "Pembangun"),
                 i("d83f18d2", "Direktori"),
                 i("hc5aa17c", "Dapatkan aplikasi X"),
                 i("j0693948", "Dapatkan aplikasi Grok"),
@@ -3574,7 +3573,7 @@
                 i("hbe4f99e", "Hei di sana! Saya tidak sabar untuk berkongsi beberapa kandungan rahsia dan mengenali anda dengan lebih baik :)"),
                 i("fb278c82", "Apakah pratonton ini?"),
                 i("j6cab6ec", "Ini perkara yang orang lihat sebelum mereka mendaftar Langganan anda. Ubah suai dan edit perihalan anda sehingga menjadi seperti yang anda mahu."),
-                i("f2b1e83e", "Grok & Third-Party Collaborators"),
+                i("f2b1e83e", "Grok & Rakan Kerjasama Pihak Ketiga"),
                 i("e110a46c", "Padam sejarah perbualan"),
                 i("ebc4fda0", "Anda akan memadamkan sejarah perbualan Grok anda. Anda tidak akan dapat mengakses perbualan ini lagi."),
                 i("c90fe716", "Adakah anda ingin memadamkan perbualan anda?"),
@@ -3884,13 +3883,13 @@
                 i("caa8d928", "Togol penindasan hingar"),
                 i("b5d88f0c", "Pekerja sahaja"),
                 i("c855ab8e", "Pelanggan sahaja"),
-                i("ddeb0a3c", "Inilah Komuniti itu. Suka orang dalam Komuniti ini? Sila lihat.");
-            i("e111f531", function (a) {
-                return a.count + " turut serta";
+                i("ddeb0a3c", "Inilah Komuniti itu. Suka orang dalam Komuniti ini? Sila lihat."),
+                i("e111f531", function (a) {
+                    return a.count + " turut serta";
+                });
+            i("cbef820f", function (a) {
+                return a.screenName + " menyiarkan semula strim!";
             }),
-                i("cbef820f", function (a) {
-                    return a.screenName + " menyiarkan semula strim!";
-                }),
                 i("e3275464", "Hantar"),
                 i("cededf2a", "Hos"),
                 i("i2caef48", "Hos lain"),
@@ -4924,9 +4923,9 @@
                 i("d9f9dec0", "Lihat Space"),
                 i("h0c1f37a", "Lihat Analitis Space"),
                 i("e41fffbc", "Jumlah masa tontonan video anda."),
-                i("if2909ba", "Masa Tontonan");
-            i("i0e5bf4c", "Video anda"),
-                i("ed99baea", "Akses Beta Awal"),
+                i("if2909ba", "Masa Tontonan"),
+                i("i0e5bf4c", "Video anda");
+            i("ed99baea", "Akses Beta Awal"),
                 i("gf898b70", "Carian Lanjutan"),
                 i("d2a43a7a", 'mengandungi "ai" dan juga "pemula"'),
                 i("a8584698", "pemula ai"),
@@ -5509,7 +5508,7 @@
                 i("j6aa6172", "Padamkan penilaian?"),
                 i("i4112750", "Ini tidak boleh dibuat asal."),
                 i("i6f6191a", "Terima kasih!"),
-                i("h5575012", "Agree and submit"),
+                i("h5575012", "Setuju dan serahkan"),
                 i("f9171e52", "Siaran ini mendapat beberapa suka daripada orang yang biasanya tidak bersetuju, tetapi input setakat ini adalah terhad."),
                 i("j0f9919a", "Penilaian anda tidak akan memberi kesan secara negatif terhadap sesuatu siaran tetapi dapat membantu secara positif dalam mengenal pasti siaran yang disukai dengan meluas."),
                 i("b3af830c", "Input anda:"),
@@ -5529,7 +5528,7 @@
                 i("g0402b3b", "disukai oleh orang yang mempunyai perspektif yang berbeza"),
                 i("ged62c2b", "menampilkan"),
                 i("b5d5f7f1", "Membentuk arah"),
-                i("a42fef87", "Learn more"),
+                i("a42fef87", "Ketahui lebih lanjut"),
                 i("bd7eb888", "Lihat semua nota pada siaran ini"),
                 i("i97b83f6", "Terdapat ralat semasa menyerahkan rayuan anda. Sila cuba sekali lagi."),
                 i("a038ab9a", "Terjemahkan nota"),
@@ -5880,9 +5879,9 @@
                 i("e41c9b4f", function (a) {
                     return "Saved to " + a.bookmarkFolderName;
                 }),
-                i("h18f86a4", "Padamkan Folder");
-            i("f4ea967a", "Folder telah dipadamkan"),
-                i("b670aa62", "Nama Folder"),
+                i("h18f86a4", "Padamkan Folder"),
+                i("f4ea967a", "Folder telah dipadamkan");
+            i("b670aa62", "Nama Folder"),
                 i("aece5462", "Nama folder telah berjaya dikemas kini"),
                 i("e3299b94", "Ada sesuatu yang tidak kena. Cuba kemas kini folder itu semula sebentar lagi."),
                 i("c09ea714", "Ada sesuatu yang tidak kena. Cuba padamkan folder itu semula sebentar lagi."),
@@ -6884,9 +6883,9 @@
                 i("b925c18c", "Jenis Gaji"),
                 i("j3d242ce", "Julat tidak sah"),
                 i("f4d07bd2", "Sertakan butiran pilihan untuk memudahkan calon menemukan peranan anda dengan carian."),
-                i("b8cbb51a", "Ringkasan Pekerjaan");
-            i("bda6881e", "Pekerjaan ini telah diimport daripada Sistem Penjejakan Pemohon (ATS) anda. Harap maklum bahawa hanya medan yang tertentu boleh diubah suai."),
-                i("b075c68a", "Edit pekerjaan"),
+                i("b8cbb51a", "Ringkasan Pekerjaan"),
+                i("bda6881e", "Pekerjaan ini telah diimport daripada Sistem Penjejakan Pemohon (ATS) anda. Harap maklum bahawa hanya medan yang tertentu boleh diubah suai.");
+            i("b075c68a", "Edit pekerjaan"),
                 i("d4b6a6e0", "Sorotan Profil"),
                 i("j2dd3686", "Serlahkan pekerjaan yang ditampilkan di atas siaran saya."),
                 i("af1cfd46", "Penyepaduan ATS"),
@@ -7228,14 +7227,20 @@
                 i("hd80bd3e", "Promosikan siaran"),
                 i("fe2b0008", "Ketahui cara untuk menggunakan X"),
                 i("h257d4aa", "Pilih siaran untuk dipromosikan"),
-                i("fe946974", "Percubaan X tanpa iklan anda"),
+                i("h9b28dae", "You’re saving time with an ad-free feed"),
                 i("f6c50ec0", "Percubaan bebas iklan anda telah tamat"),
-                i("b1319404", "Iklan yang dielakkan"),
-                i("baa4acae", "Anda sedang melihat lebih banyak kandungan yang diperibadikan."),
-                i("c00e8600", "Anggaran masa yang dijimatkan"),
+                i("e1d1fbca", "You’ve avoided"),
+                i("a82d7abd", function (a) {
+                    return a.numberOfAds + " ads";
+                }),
+                i("ff074c76", "You’re seeing more of the posts you want."),
+                i("cbc38428", "Kekal bersama pengalaman bebas iklan dengan Premium+"),
+                i("b9028f60", "Back to my ad-free trial"),
+                i("e081d6a0", "No thanks, I’d like to see ads again"),
+                i("fee73dca", "Saving an estimated"),
                 i("ic073e4e", "Masa anda berharga."),
                 i("eb866e88", "Anggaran penjimatan masa dalam tempoh 1 tahun"),
-                i("aa77b70c", "Berdasarkan penggunaan anda."),
+                i("ce72f092", "Based on your usage so far."),
                 i("c534c6b4", "Kami sedang membuat pengiraan..."),
                 i("i57332f0", "Teruskan menatal dan semak kembali kemudian untuk melihat jumlah iklan yang telah anda elakkan dan jumlah masa yang telah anda jimatkan"),
                 i("cc10f019", function (a) {
@@ -7250,12 +7255,16 @@
                 i("b93d00e5", function (a) {
                     return a.days + " hari";
                 }),
+                i("g2c63852", "100% free. No credit card required."),
                 i("be88be23", function (a) {
                     return "Percubaan bebas iklan " + a.durationInDays + " hari anda telah diaktifkan";
                 }),
-                i("a4413462", "Sepanjang tempoh percubaan, anda boleh melihat statistik tentang jumlah iklan yang tidak dilihat dan jumlah masa yang telah anda jimatkan."),
-                i("ae3f3b0e", "Nikmatilah!"),
-                i("cdac8dc4", "Lihat suapan baharu anda"),
+                i("b63766a6", "Scroll without ads"),
+                i("h028f7e0", "Spend more time on the content you love"),
+                i("dd68eef6", "Experience the Premium+ luxury life"),
+                i("g8a2f217", function (a) {
+                    return "Enjoy ad-free for " + a.durationInDays + " days";
+                }),
                 i("dec99336", "Bebas iklan"),
                 i("i95803fa", "Malangnya, anda tidak layak pada masa ini."),
                 i("d28a1d72", "Jadi orang yang pertama mengesan trend dengan Radar"),
@@ -7855,14 +7864,7 @@
                 i("a76d58ba", "Analitis Iklan"),
                 i("eccd0e1a", "Analitis Organisasi"),
                 i("deea1708", "Ingin melihat analitis pada semua akaun X anda?"),
-                i("eb603ffc", "Naik taraf untuk menggabungkan rangkaian anda dan melihat analitis yang diagregatkan."),
-                i("gf67aae4", "Naik taraf kepada Akses Penuh"),
-                i("h75e3618", "Sertakan organisasi"),
-                i("h24a8862", "Perihal kotak pilihan ini"),
-                i("c29e3a88", "Pilih ahli gabungan"),
-                i("j8318d57", function (a) {
-                    return a.number + " ahli gabungan";
-                });
+                i("eb603ffc", "Naik taraf untuk menggabungkan rangkaian anda dan melihat analitis yang diagregatkan.");
             function u(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7901,7 +7903,14 @@
                     d(a, n)
                 );
             }
-            i("bf809ec0", "Pilih Ahli Gabungan"),
+            i("gf67aae4", "Naik taraf kepada Akses Penuh"),
+                i("h75e3618", "Sertakan organisasi"),
+                i("h24a8862", "Perihal kotak pilihan ini"),
+                i("c29e3a88", "Pilih ahli gabungan"),
+                i("j8318d57", function (a) {
+                    return a.number + " ahli gabungan";
+                }),
+                i("bf809ec0", "Pilih Ahli Gabungan"),
                 i("b719e224", "Tiada hasil"),
                 i("c9938100", "Hasil carian"),
                 i("d1a35ec6", "Tambahkan akaun"),
@@ -8893,10 +8902,10 @@
                 i("j0c6772a", "Lawati laman web"),
                 i("f73003aa", "Video akan dimainkan selepas iklan"),
                 i("b3112b8a", "Langkau"),
-                i("h6333ad0", "Langkau Iklan"),
-                i("c59da417", function (a) {
-                    return "Langkau Iklan dalam masa " + a.seconds;
-                }),
+                i("h6333ad0", "Langkau Iklan");
+            i("c59da417", function (a) {
+                return "Langkau Iklan dalam masa " + a.seconds;
+            }),
                 i("c3c147cf", function (a) {
                     return "Langkau " + a.seconds;
                 }),
@@ -8904,8 +8913,8 @@
                 i("ha3efce4", "Automatik"),
                 i("hd8d044d", function (a) {
                     return "Automatik (" + a.quality + ")";
-                });
-            i("a7bf9962", "Muat turun video"),
+                }),
+                i("a7bf9962", "Muat turun video"),
                 i("ccc97152", "Kelajuan main semula"),
                 i("h531ade0", "Kualiti video"),
                 i("e8b5757c", "0.25x"),
@@ -11519,7 +11528,7 @@
                         {
                             key: "ffd3d1a1",
                             get: function () {
-                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                                return ["Penilaian adalah bersifat awanama dan disediakan secara terbuka kepada khalayak umum bagi tujuan ketelusan. "];
                             },
                         },
                         {
@@ -13339,4 +13348,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.0ebacb3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.f114e23a.js.map

@@ -225,7 +225,6 @@
                 a("f65e7e91", function (e) {
                     return e.percentage + "% korting " + e.tier + " " + e.plan;
                 }),
-                a("cbc38428", "Blijf reclamevrij met Premium+"),
                 a("a84a736e", "Krijg gratis advertentietegoed"),
                 a("a0713d76", "Upgrade naar Geverifieerde Organisaties voor gratis advertentietegoed en een verzameling tools voor bedrijfsgroei."),
                 a("a07e13fc", "Premium-maker worden"),
@@ -901,9 +900,9 @@
                 a("e8e39f95", "Meer informatie"),
                 a("e126dd3f", "Meer informatie"),
                 a("i821844f", "Meer informatie"),
-                a("b0abbb17", "Meer informatie");
-            a("e7e0d88b", "Meer informatie"),
-                a("i560665f", "Meer informatie"),
+                a("b0abbb17", "Meer informatie"),
+                a("e7e0d88b", "Meer informatie");
+            a("i560665f", "Meer informatie"),
                 a("f6e774d9", "Meer informatie"),
                 a("h486f755", "Meer informatie"),
                 a("bab41dab", "Meer informatie"),
@@ -1917,9 +1916,9 @@
                 a("da8ac57c", "Bijschrift bewerken"),
                 a("a8fdd09c", "Artikel publiceren"),
                 a("d8047cc8", "Publiceren"),
-                a("ff7ddca2", "Je Artikel verschijnt als post zodra je het publiceert. Je kan het ook terugvinden in het tabblad Artikelen in je profiel.");
-            a("ef34d7be", "Je kan publiek- en antwoordinstellingen niet meer bewerken nadat een Artikel is gepubliceerd."),
-                a("e52d4998", "Kies je publiek"),
+                a("ff7ddca2", "Je Artikel verschijnt als post zodra je het publiceert. Je kan het ook terugvinden in het tabblad Artikelen in je profiel."),
+                a("ef34d7be", "Je kan publiek- en antwoordinstellingen niet meer bewerken nadat een Artikel is gepubliceerd.");
+            a("e52d4998", "Kies je publiek"),
                 a("d7985b24", "Kies wie op dit Artikel mag antwoorden"),
                 a("b5660338", "Voorvertoning tijdlijn"),
                 a("hff1b97a", "Alleen abonnees kunnen antwoorden."),
@@ -2973,9 +2972,9 @@
                 a("jb0a4c36", "Blog"),
                 a("ce6d095a", "Banen"),
                 a("e0adec82", "Merkhulpmiddelen"),
-                a("df1b7550", "Marketing");
-            a("he258678", "X voor bedrijven"),
-                a("c6f58084", "Ontwikkelaars"),
+                a("df1b7550", "Marketing"),
+                a("he258678", "X voor bedrijven");
+            a("c6f58084", "Ontwikkelaars"),
                 a("d83f18d2", "Overzicht"),
                 a("hc5aa17c", "Download de app van X"),
                 a("j0693948", "Download de Grok-app"),
@@ -3575,7 +3574,7 @@
                 a("hbe4f99e", "Hallo daar! Ik kan niet wachten om supergeheime content te delen en je nog beter te leren kennen :)"),
                 a("fb278c82", "Waar gaat deze voorvertoning over?"),
                 a("j6cab6ec", "Dit is wat mensen zien voordat ze zich op jou abonneren. Tweak en bewerk je beschrijvingen tot je ze precies goed hebt."),
-                a("f2b1e83e", "Grok & Third-Party Collaborators"),
+                a("f2b1e83e", "Grok en samenwerkende derde partijen"),
                 a("e110a46c", "Gespreksgeschiedenis verwijderen"),
                 a("ebc4fda0", "Je staat op het punt om je Grok-gespreksgeschiedenis te verwijderen. Je zal geen toegang meer hebben tot deze gesprekken."),
                 a("c90fe716", "Wil je je gesprekken verwijderen?"),
@@ -3885,13 +3884,13 @@
                 a("caa8d928", "Ruisonderdrukking aan-/uitzetten"),
                 a("b5d88f0c", "Alleen voor werknemers"),
                 a("c855ab8e", "Alleen Abonnees"),
-                a("ddeb0a3c", "Dit is de Community. Vind je de mensen leuk? Neem een kijkje.");
-            a("e111f531", function (e) {
-                return e.count + " beluisterd";
+                a("ddeb0a3c", "Dit is de Community. Vind je de mensen leuk? Neem een kijkje."),
+                a("e111f531", function (e) {
+                    return e.count + " beluisterd";
+                });
+            a("cbef820f", function (e) {
+                return e.screenName + " heeft de stream opnieuw geplaatst!";
             }),
-                a("cbef820f", function (e) {
-                    return e.screenName + " heeft de stream opnieuw geplaatst!";
-                }),
                 a("e3275464", "Verzenden"),
                 a("cededf2a", "Host"),
                 a("i2caef48", "Co-hosts"),
@@ -4925,9 +4924,9 @@
                 a("d9f9dec0", "Space weergeven"),
                 a("h0c1f37a", "Space-analyses bekijken"),
                 a("e41fffbc", "De totale kijktijd van je video's."),
-                a("if2909ba", "Kijktijd");
-            a("i0e5bf4c", "Jouw video's"),
-                a("ed99baea", "Vroege bèta-toegang"),
+                a("if2909ba", "Kijktijd"),
+                a("i0e5bf4c", "Jouw video's");
+            a("ed99baea", "Vroege bèta-toegang"),
                 a("gf898b70", "Geavanceerd zoeken"),
                 a("d2a43a7a", "bevat zowel 'ai' als 'start-up'"),
                 a("a8584698", "ai start-up"),
@@ -5510,7 +5509,7 @@
                 a("j6aa6172", "Beoordeling verwijderen?"),
                 a("i4112750", "Dit kan niet ongedaan worden gemaakt."),
                 a("i6f6191a", "Bedankt!"),
-                a("h5575012", "Agree and submit"),
+                a("h5575012", "Akkoord en indienen"),
                 a("f9171e52", "Deze post heeft wat vind-ik-leuks gekregen van mensen die het normaal niet met elkaar eens zijn, maar de input tot nu toe is beperkt."),
                 a("j0f9919a", "Je beoordeling heeft geen negatieve invloed op een post, maar kan helpen om posts die op een brede schaal leuk worden gevonden positief te herkennen."),
                 a("b3af830c", "Jouw input:"),
@@ -5530,7 +5529,7 @@
                 a("g0402b3b", "vind-ik-leuks krijgen van mensen met verschillende perspectieven"),
                 a("ged62c2b", "onder de aandacht te brengen"),
                 a("b5d5f7f1", "Geeft de richting aan"),
-                a("a42fef87", "Learn more"),
+                a("a42fef87", "Meer informatie"),
                 a("bd7eb888", "Bekijk alle Notes op deze post"),
                 a("i97b83f6", "Er is een fout opgetreden bij het versturen van je bezwaar. Probeer het opnieuw."),
                 a("a038ab9a", "Opmerking vertalen"),
@@ -5881,9 +5880,9 @@
                 a("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                a("h18f86a4", "Map verwijderen");
-            a("f4ea967a", "Map is verwijderd"),
-                a("b670aa62", "Naam map"),
+                a("h18f86a4", "Map verwijderen"),
+                a("f4ea967a", "Map is verwijderd");
+            a("b670aa62", "Naam map"),
                 a("aece5462", "Mapnaam is bijgewerkt"),
                 a("e3299b94", "Er ging iets mis. Probeer deze map over een paar minuten opnieuw bij te werken."),
                 a("c09ea714", "Er ging iets mis. Probeer deze map over een paar minuten opnieuw te verwijderen."),
@@ -6885,9 +6884,9 @@
                 a("b925c18c", "Soort salaris"),
                 a("j3d242ce", "Ongeldig bereik"),
                 a("f4d07bd2", "Voeg optionele details toe om het makkelijker te maken voor kandidaten om je vacatures te ontdekken met zoekopdrachten."),
-                a("b8cbb51a", "Samenvatting vacature");
-            a("bda6881e", "Deze functie is geïmporteerd uit je Applicant Tracking System (ATS). Houd er rekening mee dat alleen specifieke velden kunnen worden gewijzigd."),
-                a("b075c68a", "Vacature bewerken"),
+                a("b8cbb51a", "Samenvatting vacature"),
+                a("bda6881e", "Deze functie is geïmporteerd uit je Applicant Tracking System (ATS). Houd er rekening mee dat alleen specifieke velden kunnen worden gewijzigd.");
+            a("b075c68a", "Vacature bewerken"),
                 a("d4b6a6e0", "Profielspotlight"),
                 a("j2dd3686", "Licht vacatures uit boven mijn posts."),
                 a("af1cfd46", "ATS-integratie"),
@@ -7229,14 +7228,20 @@
                 a("hd80bd3e", "Een post uitlichten"),
                 a("fe2b0008", "Ontdek hoe je X gebruikt"),
                 a("h257d4aa", "Een post selecteren om uit te lichten"),
-                a("fe946974", "Je proefversie van X zonder advertenties"),
+                a("h9b28dae", "You’re saving time with an ad-free feed"),
                 a("f6c50ec0", "Je reclamevrije proefperiode is afgelopen"),
-                a("b1319404", "Vermeden advertenties"),
-                a("baa4acae", "Je krijgt meer gepersonaliseerde content te zien."),
-                a("c00e8600", "Geschatte tijdsbesparing"),
+                a("e1d1fbca", "You’ve avoided"),
+                a("a82d7abd", function (e) {
+                    return e.numberOfAds + " ads";
+                }),
+                a("ff074c76", "You’re seeing more of the posts you want."),
+                a("cbc38428", "Blijf reclamevrij met Premium+"),
+                a("b9028f60", "Back to my ad-free trial"),
+                a("e081d6a0", "No thanks, I’d like to see ads again"),
+                a("fee73dca", "Saving an estimated"),
                 a("ic073e4e", "Jouw tijd is kostbaar."),
                 a("eb866e88", "Geschatte tijdsbesparing per jaar"),
-                a("aa77b70c", "Gebaseerd op jouw gebruik."),
+                a("ce72f092", "Based on your usage so far."),
                 a("c534c6b4", "We berekenen de cijfers ..."),
                 a("i57332f0", "Blijf scrollen en kom later terug om te zien hoeveel advertenties je hebt vermeden en hoeveel tijd je hebt bespaard"),
                 a("cc10f019", function (e) {
@@ -7251,12 +7256,16 @@
                 a("b93d00e5", function (e) {
                     return e.days + " dag" + r(e.days, "", "en");
                 }),
+                a("g2c63852", "100% free. No credit card required."),
                 a("be88be23", function (e) {
                     return "Je advertentievrije proefperiode van " + e.durationInDays + " dagen is geactiveerd";
                 }),
-                a("a4413462", "Tijdens de hele proefperiode kan je statistieken bekijken over hoeveel advertenties je niet hebt gezien en hoeveel tijd je hebt bespaard."),
-                a("ae3f3b0e", "Geniet ervan!"),
-                a("cdac8dc4", "Je nieuwe feed bekijken"),
+                a("b63766a6", "Scroll without ads"),
+                a("h028f7e0", "Spend more time on the content you love"),
+                a("dd68eef6", "Experience the Premium+ luxury life"),
+                a("g8a2f217", function (e) {
+                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                }),
                 a("dec99336", "Reclamevrij"),
                 a("i95803fa", "Helaas kom je op dit moment hiervoor niet in aanmerking."),
                 a("d28a1d72", "Signaleer trends als eerste met Radar"),
@@ -7856,14 +7865,7 @@
                 a("a76d58ba", "Advertentie-analyses"),
                 a("eccd0e1a", "Organisatie-analyses"),
                 a("deea1708", "Wil je analyses bekijken van al je accounts van X?"),
-                a("eb603ffc", "Upgrade om je netwerk aan je te liëren en verzamelde statistieken te bekijken."),
-                a("gf67aae4", "Upgrade naar volledige toegang"),
-                a("h75e3618", "Organisatie opnemen"),
-                a("h24a8862", "Over dit selectievakje"),
-                a("c29e3a88", "Gelieerde accounts selecteren"),
-                a("j8318d57", function (e) {
-                    return e.number + " gelieerd" + r(e.number, " account", "e accounts");
-                });
+                a("eb603ffc", "Upgrade om je netwerk aan je te liëren en verzamelde statistieken te bekijken.");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7902,7 +7904,14 @@
                     o(e, n)
                 );
             }
-            a("bf809ec0", "Gelieerde accounts selecteren"),
+            a("gf67aae4", "Upgrade naar volledige toegang"),
+                a("h75e3618", "Organisatie opnemen"),
+                a("h24a8862", "Over dit selectievakje"),
+                a("c29e3a88", "Gelieerde accounts selecteren"),
+                a("j8318d57", function (e) {
+                    return e.number + " gelieerd" + r(e.number, " account", "e accounts");
+                }),
+                a("bf809ec0", "Gelieerde accounts selecteren"),
                 a("b719e224", "Geen resultaten"),
                 a("c9938100", "Zoekresultaten"),
                 a("d1a35ec6", "Accounts toevoegen"),
@@ -8894,10 +8903,10 @@
                 a("j0c6772a", "Website bekijken"),
                 a("f73003aa", "Video wordt afgespeeld na de advertentie"),
                 a("b3112b8a", "Overslaan"),
-                a("h6333ad0", "Advertentie overslaan"),
-                a("c59da417", function (e) {
-                    return "Advertentie overslaan over " + e.seconds;
-                }),
+                a("h6333ad0", "Advertentie overslaan");
+            a("c59da417", function (e) {
+                return "Advertentie overslaan over " + e.seconds;
+            }),
                 a("c3c147cf", function (e) {
                     return "Overslaan " + e.seconds;
                 }),
@@ -8905,8 +8914,8 @@
                 a("ha3efce4", "Automatisch"),
                 a("hd8d044d", function (e) {
                     return "Automatisch (" + e.quality + ")";
-                });
-            a("a7bf9962", "Video downloaden"),
+                }),
+                a("a7bf9962", "Video downloaden"),
                 a("ccc97152", "Afspeelsnelheid"),
                 a("h531ade0", "Videokwaliteit"),
                 a("e8b5757c", "0,25 x"),
@@ -11533,7 +11542,7 @@
                         {
                             key: "ffd3d1a1",
                             get: function () {
-                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                                return ["Beoordelingen worden geanonimiseerd en om redenen van transparantie openbaar gemaakt. "];
                             },
                         },
                         {
@@ -13354,4 +13363,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.1a15bd8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.68a9020a.js.map

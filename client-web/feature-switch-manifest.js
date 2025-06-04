@@ -1,5 +1,5 @@
 var manifest = {
-    feature_set_token: "b4f0274d5aa73ec1b897d7cba45f21aa4d11e97e",
+    feature_set_token: "6975938915635057dbd2ed899687b4342cceba75",
     config: {
         "2fa_temporary_password_enabled": { value: !1 },
         Arkose_rweb_hosted_page: { value: !0 },
@@ -949,6 +949,7 @@ var manifest = {
         subscriptions_premium_tiers_default_product: { value: "BlueVerified" },
         subscriptions_premium_tiers_encrypted_dms_gating_update_enabled: { value: !0 },
         subscriptions_premium_tiers_order_variant: { value: "variant_a" },
+        subscriptions_quick_free_trials_low_threshold_screen_enabled: { value: !1 },
         subscriptions_quick_free_trials_ui_enabled: { value: !1 },
         subscriptions_report_ad_upsell_enabled: { value: !0 },
         subscriptions_sign_up_enabled: { value: !1 },
@@ -2853,6 +2854,7 @@ var manifest = {
         subscriptions_premium_tiers_deeplink_with_tier_and_plan_enabled: { name: "subscriptions_premium_tiers_deeplink_with_tier_and_plan_enabled", type: "string" },
         subscriptions_premium_tiers_order_variant: { name: "subscriptions_premium_tiers_order_variant", type: "string", defaultValue: "variant_a" },
         subscriptions_quick_free_trials_ui_enabled: { name: "subscriptions_quick_free_trials_ui_enabled", type: "boolean", defaultValue: !1 },
+        subscriptions_quick_free_trials_low_threshold_screen_enabled: { name: "subscriptions_quick_free_trials_low_threshold_screen_enabled", type: "boolean", defaultValue: !1 },
         subscriptions_upsells_right_sidebar_variant: { name: "subscriptions_upsells_right_sidebar_variant", type: "string", defaultValue: "" },
         subscriptions_upsells_premium_home_nav: { name: "subscriptions_upsells_premium_home_nav", type: "string", defaultValue: "premium_upsell_upgrade" },
         subscriptions_upsells_get_verified_profile: { name: "subscriptions_upsells_get_verified_profile", type: "boolean", defaultValue: !0 },

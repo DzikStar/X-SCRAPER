@@ -228,7 +228,6 @@
                 n("f65e7e91", function (e) {
                     return e.tier + " " + e.plan + " " + e.percentage + "% 할인";
                 }),
-                n("cbc38428", "Premium+로 계속해서 광고 없애기"),
                 n("a84a736e", "무료 광고 크레딧 받기"),
                 n("a0713d76", "인증된 조직으로 업그레이드하여 무료 광고 크레딧과 다양한 비즈니스 성장 도구를 받으세요."),
                 n("a07e13fc", "Premium 크리에이터 되기"),
@@ -904,9 +903,9 @@
                 n("e8e39f95", "Learn more"),
                 n("e126dd3f", "Learn more"),
                 n("i821844f", "Learn more"),
-                n("b0abbb17", "Learn more");
-            n("e7e0d88b", "Learn more"),
-                n("i560665f", "Learn more"),
+                n("b0abbb17", "Learn more"),
+                n("e7e0d88b", "Learn more");
+            n("i560665f", "Learn more"),
                 n("f6e774d9", "Learn more"),
                 n("h486f755", "Learn more"),
                 n("bab41dab", "Learn more"),
@@ -1920,9 +1919,9 @@
                 n("da8ac57c", "캡션 수정"),
                 n("a8fdd09c", "아티클 게시하기"),
                 n("d8047cc8", "게시"),
-                n("ff7ddca2", "아티클을 게시하면 게시물로 표시됩니다. 내 프로필의 아티클 탭에서도 찾을 수 있습니다.");
-            n("ef34d7be", "아티클이 게시된 후에는 오디언스 및 답글 컨트롤을 수정할 수 없습니다."),
-                n("e52d4998", "오디언스를 선택하세요"),
+                n("ff7ddca2", "아티클을 게시하면 게시물로 표시됩니다. 내 프로필의 아티클 탭에서도 찾을 수 있습니다."),
+                n("ef34d7be", "아티클이 게시된 후에는 오디언스 및 답글 컨트롤을 수정할 수 없습니다.");
+            n("e52d4998", "오디언스를 선택하세요"),
                 n("d7985b24", "이 아티클에 답글을 쓸 수 있는 사용자 선택하기"),
                 n("b5660338", "타임라인 미리보기"),
                 n("hff1b97a", "구독자만 답글을 쓸 수 있습니다."),
@@ -2976,9 +2975,9 @@
                 n("jb0a4c36", "블로그"),
                 n("ce6d095a", "채용"),
                 n("e0adec82", "브랜드 리소스"),
-                n("df1b7550", "마케팅");
-            n("he258678", "비즈니스용 X"),
-                n("c6f58084", "개발자"),
+                n("df1b7550", "마케팅"),
+                n("he258678", "비즈니스용 X");
+            n("c6f58084", "개발자"),
                 n("d83f18d2", "디렉터리"),
                 n("hc5aa17c", "X 앱 다운로드"),
                 n("j0693948", "Grok 앱 다운로드"),
@@ -3578,7 +3577,7 @@
                 n("hbe4f99e", "안녕하세요! 어서 빨리 여러분을 만나 뵙고 그동안 아무에게도 하지 않았던 얘기들을 나누고 싶어요 :)"),
                 n("fb278c82", "무엇에 대한 미리보기인가요?"),
                 n("j6cab6ec", "다른 사람이 나를 구독하기 전에 보게 되는 페이지입니다. 자기 소개글이 마음에 들 때까지 다듬고 수정할 수 있습니다."),
-                n("f2b1e83e", "Grok & Third-Party Collaborators"),
+                n("f2b1e83e", "Grok 및 서드 파티 협력업체"),
                 n("e110a46c", "대화 내역 삭제하기"),
                 n("ebc4fda0", "Grok 대화 내역을 삭제하려 합니다. 이 대화에 다시 액세스할 수 없게 됩니다."),
                 n("c90fe716", "대화를 삭제하시겠어요?"),
@@ -3888,13 +3887,13 @@
                 n("caa8d928", "노이즈 제거 토글"),
                 n("b5d88f0c", "직원 전용"),
                 n("c855ab8e", "구독자 전용"),
-                n("ddeb0a3c", "커뮤니티를 소개합니다. 마음에 드는 사람이 있나요? 한번 둘러보세요.");
-            n("e111f531", function (e) {
-                return e.count + " 청취";
+                n("ddeb0a3c", "커뮤니티를 소개합니다. 마음에 드는 사람이 있나요? 한번 둘러보세요."),
+                n("e111f531", function (e) {
+                    return e.count + " 청취";
+                });
+            n("cbef820f", function (e) {
+                return e.screenName + " 님이 이 스트리밍을 재게시했습니다";
             }),
-                n("cbef820f", function (e) {
-                    return e.screenName + " 님이 이 스트리밍을 재게시했습니다";
-                }),
                 n("e3275464", "보내기"),
                 n("cededf2a", "진행자"),
                 n("i2caef48", "공동 진행자"),
@@ -4928,9 +4927,9 @@
                 n("d9f9dec0", "스페이스 보기"),
                 n("h0c1f37a", "스페이스 애널리틱스 보기"),
                 n("e41fffbc", "내 동영상의 총 시청 시간입니다."),
-                n("if2909ba", "시청 시간");
-            n("i0e5bf4c", "내 동영상"),
-                n("ed99baea", "사전 베타 체험"),
+                n("if2909ba", "시청 시간"),
+                n("i0e5bf4c", "내 동영상");
+            n("ed99baea", "사전 베타 체험"),
                 n("gf898b70", "고급 검색"),
                 n("d2a43a7a", '"AI" 및 "스타트업" 모두 포함'),
                 n("a8584698", "AI 스타트업"),
@@ -5513,7 +5512,7 @@
                 n("j6aa6172", "평가를 삭제할까요?"),
                 n("i4112750", "이 작업은 취소할 수 없습니다."),
                 n("i6f6191a", "감사합니다"),
-                n("h5575012", "Agree and submit"),
+                n("h5575012", "동의 및 제출"),
                 n("f9171e52", "이 게시물은 평소에는 동의하지 않는 사람들도 일부 마음에 들어하지만, 수집된 피드백이 아직 제한적입니다."),
                 n("j0f9919a", "내 평가는 게시물에 부정적인 영향을 미치지 않지만, 많은 사람이 좋아하는 게시물이 긍정적으로 인식되는 데 도움이 될 수 있습니다."),
                 n("b3af830c", "내 의견:"),
@@ -5533,7 +5532,7 @@
                 n("g0402b3b", "다양한 관점을 가진 사람들이 좋아하는 게시물"),
                 n("ged62c2b", "주목"),
                 n("b5d5f7f1", "방향을 결정"),
-                n("a42fef87", "Learn more"),
+                n("a42fef87", "자세히 알아보기"),
                 n("bd7eb888", "이 게시물의 모든 노트 보기"),
                 n("i97b83f6", "이의 제기를 제출하는 동안 오류가 발생했습니다. 나중에 다시 시도해 주세요."),
                 n("a038ab9a", "노트 번역하기"),
@@ -5884,9 +5883,9 @@
                 n("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                n("h18f86a4", "폴더 삭제하기");
-            n("f4ea967a", "폴더가 삭제되었습니다"),
-                n("b670aa62", "폴더 이름"),
+                n("h18f86a4", "폴더 삭제하기"),
+                n("f4ea967a", "폴더가 삭제되었습니다");
+            n("b670aa62", "폴더 이름"),
                 n("aece5462", "폴더 이름이 업데이트되었습니다"),
                 n("e3299b94", "문제가 발생했습니다. 잠시 후 폴더를 다시 업데이트하세요."),
                 n("c09ea714", "문제가 발생했습니다. 잠시 후 폴더를 다시 삭제해 보세요."),
@@ -6888,9 +6887,9 @@
                 n("b925c18c", "급여 유형"),
                 n("j3d242ce", "범위가 잘못되었습니다"),
                 n("f4d07bd2", "지원자가 검색을 통해 채용 정보를 더 쉽게 찾을 수 있도록 세부 정보를 작성해 주세요(선택)."),
-                n("b8cbb51a", "직무 요약");
-            n("bda6881e", "이 채용공고는 지원자 추적 시스템(ATS)에서 가져온 것입니다. 특정 필드만 수정할 수 있다는 점에 유의하시기 바랍니다."),
-                n("b075c68a", "채용 공고 수정"),
+                n("b8cbb51a", "직무 요약"),
+                n("bda6881e", "이 채용공고는 지원자 추적 시스템(ATS)에서 가져온 것입니다. 특정 필드만 수정할 수 있다는 점에 유의하시기 바랍니다.");
+            n("b075c68a", "채용 공고 수정"),
                 n("d4b6a6e0", "프로필 스포트라이트"),
                 n("j2dd3686", "추천 공고는 눈에 잘 띄도록 게시물 위에 게재됩니다. "),
                 n("af1cfd46", "ATS 통합"),
@@ -7232,14 +7231,20 @@
                 n("hd80bd3e", "게시물 프로모션하기"),
                 n("fe2b0008", "X 사용 방법 알아보기"),
                 n("h257d4aa", "프로모션할 게시물을 선택하세요"),
-                n("fe946974", "광고 없는 X 무료 체험"),
+                n("h9b28dae", "You’re saving time with an ad-free feed"),
                 n("f6c50ec0", "광고 안 보기 무료 체험 기간 종료"),
-                n("b1319404", "표시되지 않은 광고 수"),
-                n("baa4acae", "맞춤화된 콘텐츠가 표시되고 있습니다."),
-                n("c00e8600", "절약한 시간 추정치"),
+                n("e1d1fbca", "You’ve avoided"),
+                n("a82d7abd", function (e) {
+                    return e.numberOfAds + " ads";
+                }),
+                n("ff074c76", "You’re seeing more of the posts you want."),
+                n("cbc38428", "Premium+로 계속해서 광고 없애기"),
+                n("b9028f60", "Back to my ad-free trial"),
+                n("e081d6a0", "No thanks, I’d like to see ads again"),
+                n("fee73dca", "Saving an estimated"),
                 n("ic073e4e", "여러분의 시간은 중요합니다."),
                 n("eb866e88", "1년간 절약한 시간 추정치"),
-                n("aa77b70c", "사용량을 기준으로 계산."),
+                n("ce72f092", "Based on your usage so far."),
                 n("c534c6b4", "계산 중입니다..."),
                 n("i57332f0", "계속해서 스크롤하세요. 나중에 다시 확인하면 표시되지 않은 광고 수와 절약한 시간을 확인하실 수 있습니다."),
                 n("cc10f019", function (e) {
@@ -7254,12 +7259,16 @@
                 n("b93d00e5", function (e) {
                     return e.days + " 일";
                 }),
+                n("g2c63852", "100% free. No credit card required."),
                 n("be88be23", function (e) {
                     return e.durationInDays + "일 광고 안 보기 체험 기간이 시작되었습니다";
                 }),
-                n("a4413462", "무료 체험 기간 동안 내게 표시되지 않은 광고의 수와 절약한 시간에 대한 통계 정보를 확인할 수 있습니다."),
-                n("ae3f3b0e", "마음껏 즐기세요"),
-                n("cdac8dc4", "새 피드 보기"),
+                n("b63766a6", "Scroll without ads"),
+                n("h028f7e0", "Spend more time on the content you love"),
+                n("dd68eef6", "Experience the Premium+ luxury life"),
+                n("g8a2f217", function (e) {
+                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                }),
                 n("dec99336", "광고 없음"),
                 n("i95803fa", "죄송합니다. 지금은 요건을 충족하지 않습니다."),
                 n("d28a1d72", "Radar로 트렌드를 가장 먼저 파악하세요."),
@@ -7859,14 +7868,7 @@
                 n("a76d58ba", "광고 애널리틱스"),
                 n("eccd0e1a", "조직 애널리틱스"),
                 n("deea1708", "모든 X 계정에 대한 애널리틱스를 보고 싶으신가요?"),
-                n("eb603ffc", "네트워크 제휴로 업그레이드하고 집계된 애널리틱스를 확인하세요."),
-                n("gf67aae4", "전체 액세스로 업그레이드"),
-                n("h75e3618", "조직 포함"),
-                n("h24a8862", "이 체크박스에 관해"),
-                n("c29e3a88", "제휴 계정 선택"),
-                n("j8318d57", function (e) {
-                    return e.number + " 제휴 계정";
-                });
+                n("eb603ffc", "네트워크 제휴로 업그레이드하고 집계된 애널리틱스를 확인하세요.");
             function r(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7905,7 +7907,14 @@
                     d(e, c)
                 );
             }
-            n("bf809ec0", "제휴 계정 선택"),
+            n("gf67aae4", "전체 액세스로 업그레이드"),
+                n("h75e3618", "조직 포함"),
+                n("h24a8862", "이 체크박스에 관해"),
+                n("c29e3a88", "제휴 계정 선택"),
+                n("j8318d57", function (e) {
+                    return e.number + " 제휴 계정";
+                }),
+                n("bf809ec0", "제휴 계정 선택"),
                 n("b719e224", "결과가 없습니다"),
                 n("c9938100", "검색 결과"),
                 n("d1a35ec6", "계정 추가하기"),
@@ -8897,10 +8906,10 @@
                 n("j0c6772a", "웹사이트 방문하기"),
                 n("f73003aa", "광고 후 동영상이 재생됩니다"),
                 n("b3112b8a", "건너뛰기"),
-                n("h6333ad0", "광고 건너뛰기"),
-                n("c59da417", function (e) {
-                    return e.seconds + "초 후 광고 건너뛰기";
-                }),
+                n("h6333ad0", "광고 건너뛰기");
+            n("c59da417", function (e) {
+                return e.seconds + "초 후 광고 건너뛰기";
+            }),
                 n("c3c147cf", function (e) {
                     return e.seconds + "초 후 건너뛰기";
                 }),
@@ -8908,8 +8917,8 @@
                 n("ha3efce4", "자동"),
                 n("hd8d044d", function (e) {
                     return "자동(" + e.quality + ")";
-                });
-            n("a7bf9962", "동영상 다운로드하기"),
+                }),
+                n("a7bf9962", "동영상 다운로드하기"),
                 n("ccc97152", "재생 속도"),
                 n("h531ade0", "동영상 화질"),
                 n("e8b5757c", "0.25배속"),
@@ -11539,7 +11548,7 @@
                         {
                             key: "ffd3d1a1",
                             get: function () {
-                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                                return ["평가는 투명성을 위해 익명으로 처리된 상태로 대중에게 공개됩니다. "];
                             },
                         },
                         {
@@ -13359,4 +13368,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.e4ed7b4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.4556db9a.js.map

@@ -114,7 +114,7 @@
                 w = t(238750),
                 p = t(984713),
                 g = t(533476),
-                f = t(263033),
+                f = t(455091),
                 j = t(788452);
             function b() {
                 const { t: e } = (0, f.$G)();
@@ -270,4 +270,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-97c99e35.46f93d7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-97c99e35.d30123aa.js.map

@@ -228,7 +228,6 @@
                 t("f65e7e91", function (e) {
                     return e.percentage + "% off " + e.tier + " " + e.plan;
                 }),
-                t("cbc38428", "Stay ad-free with Premium+"),
                 t("a84a736e", "Get Free Ad Credit"),
                 t("a0713d76", "Upgrade to Verified Organizations to get free ad credit & a suite of business growth tools."),
                 t("a07e13fc", "Become a Premium Creator"),
@@ -904,9 +903,9 @@
                 t("e8e39f95", "Mụtakwuo"),
                 t("e126dd3f", "Mụtakwuo"),
                 t("i821844f", "Mụtakwuo"),
-                t("b0abbb17", "Mụtakwuo");
-            t("e7e0d88b", "Mụtakwuo"),
-                t("i560665f", "Mụtakwuo"),
+                t("b0abbb17", "Mụtakwuo"),
+                t("e7e0d88b", "Mụtakwuo");
+            t("i560665f", "Mụtakwuo"),
                 t("f6e774d9", "Mụtakwuo"),
                 t("h486f755", "Mụtakwuo"),
                 t("bab41dab", "Mụtakwuo"),
@@ -1920,9 +1919,9 @@
                 t("da8ac57c", "Edit Caption"),
                 t("a8fdd09c", "Publish Article"),
                 t("d8047cc8", "Bipụta"),
-                t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile.");
-            t("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
-                t("e52d4998", "Choose your audience"),
+                t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                t("ef34d7be", "Audience and reply controls are not editable after an article has been published.");
+            t("e52d4998", "Choose your audience"),
                 t("d7985b24", "Choose who can reply to this Article"),
                 t("b5660338", "Timeline preview"),
                 t("hff1b97a", "Only Subscribed can reply."),
@@ -2976,9 +2975,9 @@
                 t("jb0a4c36", "Blọọgụ"),
                 t("ce6d095a", "Ọrụ"),
                 t("e0adec82", "Akụrụngwa Ụdị ihe"),
-                t("df1b7550", "Ahịa");
-            t("he258678", "X for Business"),
-                t("c6f58084", "Ndị nrụpụta"),
+                t("df1b7550", "Ahịa"),
+                t("he258678", "X for Business");
+            t("c6f58084", "Ndị nrụpụta"),
                 t("d83f18d2", "Ndekọ"),
                 t("hc5aa17c", "Get the X app"),
                 t("j0693948", "Get the Grok app"),
@@ -3888,13 +3887,13 @@
                 t("caa8d928", "Toggle noise suppression"),
                 t("b5d88f0c", "Employees only"),
                 t("c855ab8e", "Naanị ndị debanyere aha"),
-                t("ddeb0a3c", "Nke a bụ Ogbe ahụ. Ndị a ọ masịrị gị? Lenye anya.");
-            t("e111f531", function (e) {
-                return e.count + " gbanyere";
+                t("ddeb0a3c", "Nke a bụ Ogbe ahụ. Ndị a ọ masịrị gị? Lenye anya."),
+                t("e111f531", function (e) {
+                    return e.count + " gbanyere";
+                });
+            t("cbef820f", function (e) {
+                return e.screenName + " reposted the stream!";
             }),
-                t("cbef820f", function (e) {
-                    return e.screenName + " reposted the stream!";
-                }),
                 t("e3275464", "Zipụ"),
                 t("cededf2a", "Onye nnabata"),
                 t("i2caef48", "Osote onye nnabata"),
@@ -4928,9 +4927,9 @@
                 t("d9f9dec0", "View Space"),
                 t("h0c1f37a", "View Space Analytics"),
                 t("e41fffbc", "The total watch time of your videos."),
-                t("if2909ba", "Watch Time");
-            t("i0e5bf4c", "Your videos"),
-                t("ed99baea", "Early Beta Access"),
+                t("if2909ba", "Watch Time"),
+                t("i0e5bf4c", "Your videos");
+            t("ed99baea", "Early Beta Access"),
                 t("gf898b70", "Advanced Search"),
                 t("d2a43a7a", 'contains both "ai" and "startup"'),
                 t("a8584698", "ai startup"),
@@ -5884,9 +5883,9 @@
                 t("e41c9b4f", function (e) {
                     return "Echekwara na " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Hichapụ Foldà");
-            t("f4ea967a", "Ehichapụla foldà"),
-                t("b670aa62", "Aha Foldà"),
+                t("h18f86a4", "Hichapụ Foldà"),
+                t("f4ea967a", "Ehichapụla foldà");
+            t("b670aa62", "Aha Foldà"),
                 t("aece5462", "Emelitela aha foldà nke ọma"),
                 t("e3299b94", "Ọ nwere ihe na-agaghị nke ọma. Gbalịa imelite folda ahụ ọzọ n'otu nkeji."),
                 t("c09ea714", "Ọ nwere ihe na-agaghị nke ọma. Gbalịa ihichapụ folda ahụ ọzọ n'otu nkeji."),
@@ -6888,9 +6887,9 @@
                 t("b925c18c", "Salary Type"),
                 t("j3d242ce", "Invalid range"),
                 t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
-                t("b8cbb51a", "Job Summary");
-            t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
-                t("b075c68a", "Edit job"),
+                t("b8cbb51a", "Job Summary"),
+                t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.");
+            t("b075c68a", "Edit job"),
                 t("d4b6a6e0", "Ihuọha Profaịlụ"),
                 t("j2dd3686", "Highlight featured jobs above my posts."),
                 t("af1cfd46", "ATS integration"),
@@ -7232,14 +7231,20 @@
                 t("hd80bd3e", "Promote a post"),
                 t("fe2b0008", "Learn how to use X"),
                 t("h257d4aa", "Select a post to promote"),
-                t("fe946974", "Your trial of X without ads"),
+                t("h9b28dae", "You’re saving time with an ad-free feed"),
                 t("f6c50ec0", "Your ad-free trial has ended"),
-                t("b1319404", "Ads avoided"),
-                t("baa4acae", "You’re seeing more personalized content."),
-                t("c00e8600", "Estimated time saved"),
+                t("e1d1fbca", "You’ve avoided"),
+                t("a82d7abd", function (e) {
+                    return e.numberOfAds + " ads";
+                }),
+                t("ff074c76", "You’re seeing more of the posts you want."),
+                t("cbc38428", "Stay ad-free with Premium+"),
+                t("b9028f60", "Back to my ad-free trial"),
+                t("e081d6a0", "No thanks, I’d like to see ads again"),
+                t("fee73dca", "Saving an estimated"),
                 t("ic073e4e", "Your time is valuable."),
                 t("eb866e88", "Estimated 1-year time savings"),
-                t("aa77b70c", "Based on your usage."),
+                t("ce72f092", "Based on your usage so far."),
                 t("c534c6b4", "We’re crunching the numbers..."),
                 t("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
                 t("cc10f019", function (e) {
@@ -7254,12 +7259,16 @@
                 t("b93d00e5", function (e) {
                     return e.days + " day" + i(e.days, "", "s");
                 }),
+                t("g2c63852", "100% free. No credit card required."),
                 t("be88be23", function (e) {
                     return "Your " + e.durationInDays + "-day ad-free trial is activated";
                 }),
-                t("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                t("ae3f3b0e", "Enjoy!"),
-                t("cdac8dc4", "See your new feed"),
+                t("b63766a6", "Scroll without ads"),
+                t("h028f7e0", "Spend more time on the content you love"),
+                t("dd68eef6", "Experience the Premium+ luxury life"),
+                t("g8a2f217", function (e) {
+                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                }),
                 t("dec99336", "Ad-free"),
                 t("i95803fa", "Unfortunately, you are not eligible at this time."),
                 t("d28a1d72", "Be the very first to spot trends with Radar"),
@@ -7859,14 +7868,7 @@
                 t("a76d58ba", "Ads Analytics"),
                 t("eccd0e1a", "Organization Analytics"),
                 t("deea1708", "Want to view analytics across all your X accounts?"),
-                t("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
-                t("gf67aae4", "Upgrade to Full Access"),
-                t("h75e3618", "Include organization"),
-                t("h24a8862", "About this checkbox"),
-                t("c29e3a88", "Select affiliates"),
-                t("j8318d57", function (e) {
-                    return e.number + " affiliate" + i(e.number, "", "s");
-                });
+                t("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics.");
             function r(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7905,7 +7907,14 @@
                     c(e, a)
                 );
             }
-            t("bf809ec0", "Select Affiliates"),
+            t("gf67aae4", "Upgrade to Full Access"),
+                t("h75e3618", "Include organization"),
+                t("h24a8862", "About this checkbox"),
+                t("c29e3a88", "Select affiliates"),
+                t("j8318d57", function (e) {
+                    return e.number + " affiliate" + i(e.number, "", "s");
+                }),
+                t("bf809ec0", "Select Affiliates"),
                 t("b719e224", "Enweghị nsonaazụ"),
                 t("c9938100", "Chọọ nsonaazụ"),
                 t("d1a35ec6", "Gbakwunye akaụntụ gasi"),
@@ -8897,10 +8906,10 @@
                 t("j0c6772a", "Visit website"),
                 t("f73003aa", "Video will play after ad"),
                 t("b3112b8a", "Gaba"),
-                t("h6333ad0", "Skip Ad"),
-                t("c59da417", function (e) {
-                    return "Skip Ad in " + e.seconds;
-                }),
+                t("h6333ad0", "Skip Ad");
+            t("c59da417", function (e) {
+                return "Skip Ad in " + e.seconds;
+            }),
                 t("c3c147cf", function (e) {
                     return "Skip " + e.seconds;
                 }),
@@ -8908,8 +8917,8 @@
                 t("ha3efce4", "Auto"),
                 t("hd8d044d", function (e) {
                     return "Auto (" + e.quality + ")";
-                });
-            t("a7bf9962", "Download video"),
+                }),
+                t("a7bf9962", "Download video"),
                 t("ccc97152", "Playback speed"),
                 t("h531ade0", "Video quality"),
                 t("e8b5757c", "0.25x"),
@@ -13356,4 +13365,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.fe2123ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.c319552a.js.map

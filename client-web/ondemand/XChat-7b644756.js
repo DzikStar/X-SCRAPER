@@ -20,7 +20,7 @@
                     c = s.$_$.p6,
                     g = s.$_$.ze,
                     $ = s.$_$.m2,
-                    k = s.$_$.kj,
+                    k = s.$_$.jj,
                     b = s.$_$.g,
                     d = s.$_$.tb,
                     x = s.$_$.jb,
@@ -30,7 +30,7 @@
                     S = s.$_$.r6,
                     p = s.$_$.p7,
                     j = s.$_$.we,
-                    z = s.$_$.lk,
+                    z = s.$_$.kk,
                     I = s.$_$.u7,
                     C = s.$_$.f2,
                     M = s.$_$.ed,
@@ -46,17 +46,17 @@
                     P = s.$_$.m8,
                     V = s.$_$.bg,
                     D = s.$_$.i8,
-                    G = s.$_$.rj,
+                    G = s.$_$.qj,
                     H = s.$_$.gh,
-                    J = s.$_$.aj,
+                    J = s.$_$.zi,
                     K = s.$_$.ve,
                     N = s.$_$.t1,
                     Q = s.$_$.md,
                     T = s.$_$.be,
-                    W = s.$_$.jj,
+                    W = s.$_$.ij,
                     Y = s.$_$.q2,
                     Z = s.$_$.bd,
-                    tt = s.$_$.gj,
+                    tt = s.$_$.fj,
                     st = s.$_$.a2,
                     rt = s.$_$.ae;
                 function it() {}
@@ -2266,4 +2266,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-7b644756.fe70e62a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-7b644756.308cae9a.js.map

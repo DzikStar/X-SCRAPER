@@ -4,7 +4,7 @@
         429780: (l, n, u) => {
             !(function (l, n, u, _, r, e, $, a) {
                 "use strict";
-                var i = n.$_$.tk,
+                var i = n.$_$.sk,
                     f = u.$_$.l,
                     v = n.$_$.je,
                     t = n.$_$.bf,
@@ -13,90 +13,90 @@
                     w = n.$_$.ea,
                     c = n.$_$.kf,
                     x = n.$_$.c1,
-                    q = n.$_$.fl,
+                    q = n.$_$.el,
                     p = n.$_$.b9,
-                    k = _.$_$.e4,
-                    d = _.$_$.d4,
+                    k = _.$_$.g4,
+                    d = _.$_$.f4,
                     b = u.$_$.o5,
                     m = n.$_$.kd,
-                    g = _.$_$.c4,
-                    h = u.$_$.n5,
-                    y = _.$_$.b4,
+                    h = _.$_$.e4,
+                    g = u.$_$.n5,
+                    y = _.$_$.d4,
                     j = u.$_$.m5,
                     z = n.$_$.t,
-                    S = _.$_$.i4,
-                    U = _.$_$.u3,
+                    S = _.$_$.k4,
+                    U = _.$_$.w3,
                     C = u.$_$.n,
                     G = u.$_$.b6,
                     E = u.$_$.a6,
                     M = u.$_$.y5,
                     L = u.$_$.z5,
-                    N = _.$_$.t5,
+                    N = _.$_$.v5,
                     T = u.$_$.x5,
-                    A = _.$_$.s5,
+                    A = _.$_$.u5,
                     B = u.$_$.w5,
-                    D = _.$_$.r5,
+                    D = _.$_$.t5,
                     J = u.$_$.v5,
-                    R = _.$_$.q5,
+                    R = _.$_$.s5,
                     X = u.$_$.u5,
-                    F = _.$_$.p5,
+                    F = _.$_$.r5,
                     H = u.$_$.t5,
-                    I = _.$_$.o5,
+                    I = _.$_$.q5,
                     K = u.$_$.s5,
                     O = u.$_$.m,
-                    P = _.$_$.m5,
+                    P = _.$_$.o5,
                     Q = u.$_$.r5,
-                    V = _.$_$.l5,
+                    V = _.$_$.n5,
                     W = u.$_$.q5,
                     Y = u.$_$.j,
-                    Z = _.$_$.n5,
+                    Z = _.$_$.p5,
                     ll = u.$_$.g5,
-                    nl = _.$_$.g5,
-                    ul = _.$_$.f5,
-                    _l = _.$_$.i5,
-                    rl = _.$_$.h5,
-                    el = _.$_$.e5,
-                    $l = n.$_$.ei,
-                    al = n.$_$.kj,
-                    il = _.$_$.f4,
+                    nl = _.$_$.i5,
+                    ul = _.$_$.h5,
+                    _l = _.$_$.k5,
+                    rl = _.$_$.j5,
+                    el = _.$_$.g5,
+                    $l = n.$_$.di,
+                    al = n.$_$.jj,
+                    il = _.$_$.h4,
                     fl = n.$_$.g9,
                     vl = n.$_$.z9,
-                    tl = _.$_$.p3,
+                    tl = _.$_$.r3,
                     sl = n.$_$.a9,
                     ol = n.$_$.u,
-                    wl = _.$_$.s3,
-                    cl = _.$_$.o3,
-                    xl = _.$_$.n3,
-                    ql = _.$_$.l3,
+                    wl = _.$_$.u3,
+                    cl = _.$_$.q3,
+                    xl = _.$_$.p3,
+                    ql = _.$_$.n3,
                     pl = r.$_$.g,
-                    kl = _.$_$.r3,
+                    kl = _.$_$.t3,
                     dl = e.$_$.t,
                     bl = n.$_$.fd,
-                    ml = n.$_$.rj,
-                    gl = n.$_$.fe,
-                    hl = n.$_$.ri,
-                    yl = _.$_$.z3,
-                    jl = _.$_$.a4,
+                    ml = n.$_$.qj,
+                    hl = n.$_$.fe,
+                    gl = n.$_$.qi,
+                    yl = _.$_$.b4,
+                    jl = _.$_$.c4,
                     zl = u.$_$.k,
                     Sl = u.$_$.h5,
                     Ul = u.$_$.i5,
-                    Cl = _.$_$.j5,
-                    Gl = _.$_$.k5,
+                    Cl = _.$_$.l5,
+                    Gl = _.$_$.m5,
                     El = u.$_$.j5,
                     Ml = u.$_$.f,
                     Ll = u.$_$.n3,
                     Nl = u.$_$.m3,
                     Tl = u.$_$.k3,
                     Al = u.$_$.l3,
-                    Bl = _.$_$.x5,
-                    Dl = _.$_$.y5,
+                    Bl = _.$_$.z5,
+                    Dl = _.$_$.a6,
                     Jl = u.$_$.o3,
-                    Rl = _.$_$.v5,
+                    Rl = _.$_$.x5,
                     Xl = u.$_$.j3,
-                    Fl = _.$_$.u5,
+                    Fl = _.$_$.w5,
                     Hl = u.$_$.i3,
-                    Il = _.$_$.w5,
-                    Kl = _.$_$.z5,
+                    Il = _.$_$.y5,
+                    Kl = _.$_$.b6,
                     Ol = $.$_$.c,
                     Pl = _.$_$.g,
                     Ql = _.$_$.f,
@@ -126,8 +126,8 @@
                     dn = u.$_$.g4,
                     bn = u.$_$.e4,
                     mn = u.$_$.f4,
-                    gn = u.$_$.u3,
-                    hn = u.$_$.w3,
+                    hn = u.$_$.u3,
+                    gn = u.$_$.w3,
                     yn = u.$_$.x3,
                     jn = u.$_$.a4,
                     zn = u.$_$.c4,
@@ -156,12 +156,12 @@
                     Vn = _.$_$.x,
                     Wn = _.$_$.o,
                     Yn = _.$_$.n,
-                    Zn = _.$_$.b6,
-                    lu = _.$_$.h4,
-                    nu = _.$_$.g4,
+                    Zn = _.$_$.d6,
+                    lu = _.$_$.j4,
+                    nu = _.$_$.i4,
                     uu = n.$_$.g,
                     _u = _.$_$.p,
-                    ru = _.$_$.a6,
+                    ru = _.$_$.c6,
                     eu = _.$_$.q,
                     $u = u.$_$.d3,
                     au = a.$_$.h,
@@ -180,33 +180,33 @@
                     du = n.$_$.f9,
                     bu = n.$_$.j9,
                     mu = _.$_$.v,
-                    gu = _.$_$.r,
-                    hu = u.$_$.g3,
+                    hu = _.$_$.r,
+                    gu = u.$_$.g3,
                     yu = u.$_$.f3,
                     ju = _.$_$.y,
                     zu = u.$_$.b3,
                     Su = u.$_$.g6,
                     Uu = _.$_$.z,
                     Cu = u.$_$.w2,
-                    Gu = _.$_$.m4,
-                    Eu = _.$_$.l4,
-                    Mu = _.$_$.n4,
-                    Lu = _.$_$.o4,
-                    Nu = _.$_$.k4,
-                    Tu = _.$_$.j4,
-                    Au = _.$_$.q4,
-                    Bu = _.$_$.p4,
+                    Gu = _.$_$.o4,
+                    Eu = _.$_$.n4,
+                    Mu = _.$_$.p4,
+                    Lu = _.$_$.q4,
+                    Nu = _.$_$.m4,
+                    Tu = _.$_$.l4,
+                    Au = _.$_$.s4,
+                    Bu = _.$_$.r4,
                     Du = _.$_$.k,
                     Ju = u.$_$.v2,
                     Ru = u.$_$.c3,
                     Xu = _.$_$.l,
-                    Fu = _.$_$.y2,
+                    Fu = _.$_$.a3,
                     Hu = _.$_$.s,
                     Iu = n.$_$.ze,
-                    Ku = _.$_$.x3,
-                    Ou = _.$_$.g3,
-                    Pu = _.$_$.m6,
-                    Qu = _.$_$.y3,
+                    Ku = _.$_$.z3,
+                    Ou = _.$_$.i3,
+                    Pu = _.$_$.o6,
+                    Qu = _.$_$.a4,
                     Vu = n.$_$.j7,
                     Wu = _.$_$.j,
                     Yu = n.$_$.ed,
@@ -215,7 +215,7 @@
                     var n,
                         u = l.m7q_1;
                     if (m(u, j)) n = new y(l.l7q_1);
-                    else if (m(u, h)) n = new g(l.l7q_1);
+                    else if (m(u, g)) n = new h(l.l7q_1);
                     else if (m(u, b)) {
                         var _ = l.n7q_1;
                         if (null == _) {
@@ -287,8 +287,8 @@
                         d = l.l7w_1,
                         b = null == d ? null : d.g7u_1,
                         m = null != b && b,
-                        g = l.h7x_1,
-                        h = null != g && g,
+                        h = l.h7x_1,
+                        g = null != h && h,
                         y = l.i7x_1,
                         j = null != y && y,
                         z = l.o7w_1,
@@ -301,7 +301,7 @@
                         N = l.f7x_1,
                         T = null != N && N,
                         A = l.d7x_1;
-                    return new U(_, $, f, s, o, x, k, m, h, j, S, E, L, T, null != A && A);
+                    return new U(_, $, f, s, o, x, k, m, g, j, S, E, L, T, null != A && A);
                 }
                 function u_(l) {
                     var n;
@@ -405,7 +405,7 @@
                                                           e,
                                                           $,
                                                           a = u;
-                                                      if (m(a, gn) || m(a, hn) || m(a, yn) || m(a, jn) || m(a, zn)) $ = !0;
+                                                      if (m(a, hn) || m(a, gn) || m(a, yn) || m(a, jn) || m(a, zn)) $ = !0;
                                                       else {
                                                           var f;
                                                           if (m(a, bn) || m(a, mn)) f = !0;
@@ -453,9 +453,9 @@
                                                               c = d;
                                                               var b,
                                                                   m = c,
-                                                                  g = l.y8x_1,
-                                                                  h = null == g ? null : g.r2(m.x8s_1),
-                                                                  y = h instanceof On ? h : null,
+                                                                  h = l.y8x_1,
+                                                                  g = null == h ? null : h.r2(m.x8s_1),
+                                                                  y = g instanceof On ? g : null,
                                                                   j = null == y ? null : y.i8w_1,
                                                                   z = null == j ? null : j.a8w_1,
                                                                   S = null == z ? null : z.x8v_1;
@@ -492,7 +492,7 @@
                                                               }
                                                               var w,
                                                                   c = n;
-                                                              w = null == c ? null : new gu(c);
+                                                              w = null == c ? null : new hu(c);
                                                               return w;
                                                           })(l);
                                                           r = null == o ? null : new rn(n, o);
@@ -554,8 +554,8 @@
                                                                   k = null == p ? null : p.s8v_1,
                                                                   d = null == k ? null : k.k8t_1,
                                                                   b = null == d ? sl() : d,
-                                                                  g = a.v8s_1.n8u_1,
-                                                                  h = a.w8s_1.n8u_1,
+                                                                  h = a.v8s_1.n8u_1,
+                                                                  g = a.w8s_1.n8u_1,
                                                                   y = ol(),
                                                                   j = b.p();
                                                               for (; j.q(); ) {
@@ -576,7 +576,7 @@
                                                                   var L = z;
                                                                   null == L || y.k(L);
                                                               }
-                                                              return new Uu(g, h, y, c);
+                                                              return new Uu(h, g, y, c);
                                                           })(l);
                                                           r = null == x ? null : new rn(n, x);
                                                       } else if (m(a, Dn)) {
@@ -618,9 +618,9 @@
                                                       x = d;
                                                       var b = x,
                                                           m = new Qn(b.p8x(), b.q8x().q8w_1, b.q8x().r8w_1),
-                                                          g = a.f8t_1.a8t_1.n8u_1,
-                                                          h = a.f8t_1.b8t_1.n8u_1;
-                                                      return new Vn(g, h, m, q);
+                                                          h = a.f8t_1.a8t_1.n8u_1,
+                                                          g = a.f8t_1.b8t_1.n8u_1;
+                                                      return new Vn(h, g, m, q);
                                                   })(l);
                                                   u = null == r ? null : new rn(n, r);
                                               } else u = _;
@@ -685,7 +685,7 @@
                                                                           k = null;
                                                                       }
                                                                       var m,
-                                                                          h = k;
+                                                                          g = k;
                                                                       l: {
                                                                           for (var j = nu().p(); j.q(); ) {
                                                                               var z = j.r();
@@ -705,12 +705,12 @@
                                                                               U = new y(p.a8u_1.t8t_1);
                                                                               break;
                                                                           case "ExternalUrl":
-                                                                              U = new g(p.a8u_1.t8t_1);
+                                                                              U = new h(p.a8u_1.t8t_1);
                                                                               break;
                                                                           default:
                                                                               U = null;
                                                                       }
-                                                                      w = new S(h, C, G, E, U, null, null);
+                                                                      w = new S(g, C, G, E, U, null, null);
                                                                   }
                                                                   f = new _u(c, new jl(x, l.e8r_1.d8u_1, l.e8r_1.k8u_1, l.e8r_1.g8u_1, q, w, !0 === l.e8r_1.j8u_1, uu, uu, uu, uu, uu, sl()), o.q8q_1, o.r8q_1);
                                                               }
@@ -769,11 +769,11 @@
                                                                   var m;
                                                                   if (null == k) m = null;
                                                                   else {
-                                                                      var g = new iu(l.n8r_1.n8u_1, l.n8r_1.o8u_1),
-                                                                          h = l.l8r_1,
+                                                                      var h = new iu(l.n8r_1.n8u_1, l.n8r_1.o8u_1),
+                                                                          g = l.l8r_1,
                                                                           y = new fu(k.o8y_1, k.k8y_1, k.l8y_1, k.m8y_1, k.n8y_1),
                                                                           j = new Qn(b.p8x(), b.q8x().q8w_1, b.q8x().r8w_1);
-                                                                      m = new vu(g, x, y, j, h);
+                                                                      m = new vu(h, x, y, j, g);
                                                                   }
                                                                   q = m;
                                                               }
@@ -811,7 +811,7 @@
                                                                             p = l.y8r_1,
                                                                             k = l.a8s_1,
                                                                             d = l.b8s_1;
-                                                                        (i = null == d ? null : t(hl(gl(d) ? d : ml()))), (u = new Hu(q, p, k, i, a));
+                                                                        (i = null == d ? null : t(gl(hl(d) ? d : ml()))), (u = new Hu(q, p, k, i, a));
                                                                     }
                                                                     return u;
                                                                 })(r, l.y8x_1);
@@ -849,9 +849,9 @@
                                                                       }
                                                                       s = q;
                                                                   }
-                                                                  var g = s,
-                                                                      h = null == g ? sl() : g;
-                                                                  e = new su(o, w, c, h, t);
+                                                                  var h = s,
+                                                                      g = null == h ? sl() : h;
+                                                                  e = new su(o, w, c, g, t);
                                                               }
                                                               u = e;
                                                           }
@@ -908,20 +908,20 @@
                     if (null == d) return null;
                     var b,
                         m = d,
-                        g = l.x8x_1,
-                        h = null == g ? null : g.r2(m);
-                    if (null == h) b = null;
+                        h = l.x8x_1,
+                        g = null == h ? null : h.r2(m);
+                    if (null == g) b = null;
                     else {
                         var y;
-                        if (h instanceof yu) {
-                            var j = new Qn(h.m8x_1, h.n8x_1.q8w_1, h.n8x_1.r8w_1),
+                        if (g instanceof yu) {
+                            var j = new Qn(g.m8x_1, g.n8x_1.q8w_1, g.n8x_1.r8w_1),
                                 z = a.v8s_1.n8u_1,
                                 S = a.w8s_1.n8u_1;
                             y = new mu(c, S, z, j);
-                        } else if (h instanceof xu) {
-                            var U = t_(h.i8x_1, h);
+                        } else if (g instanceof xu) {
+                            var U = t_(g.i8x_1, g);
                             y = null == U ? null : new ku(new pu(U), c, a.v8s_1.n8u_1, a.w8s_1.n8u_1);
-                        } else h instanceof hu ? (y = null) : i();
+                        } else g instanceof gu ? (y = null) : i();
                         b = y;
                     }
                     return b;
@@ -942,7 +942,7 @@
                         if (t instanceof xu) {
                             var o = t_(t.i8x_1, t);
                             s = null == o ? null : new pu(o);
-                        } else t instanceof yu ? (s = new Qn(t.m8x_1, t.n8x_1.q8w_1, t.n8x_1.r8w_1)) : t instanceof hu ? (s = null) : i();
+                        } else t instanceof yu ? (s = new Qn(t.m8x_1, t.n8x_1.q8w_1, t.n8x_1.r8w_1)) : t instanceof gu ? (s = null) : i();
                         $ = s;
                     }
                     if (null == $) return null;
@@ -964,9 +964,9 @@
                         w = d;
                     }
                     if (null == w) return null;
-                    var g = w,
-                        h = l.w8x_1,
-                        y = null == h ? null : h.r2("app_store_details_1"),
+                    var h = w,
+                        g = l.w8x_1,
+                        y = null == g ? null : g.r2("app_store_details_1"),
                         j = y instanceof Ju ? y : null,
                         z = null == j ? null : j.d8v_1;
                     if (null == z) return null;
@@ -1020,12 +1020,12 @@
                                               d = f.j8q_1,
                                               b = null == d ? null : d.a8q_1,
                                               m = f.i8q_1,
-                                              g = null == m ? null : m.n8u_1;
-                                          i = new Wu(s, c, x, k, b, g, q);
+                                              h = null == m ? null : m.n8u_1;
+                                          i = new Wu(s, c, x, k, b, h, q);
                                       }
                                       return i;
                                   })(N, L, l.x8x_1);
-                    return null == T ? null : new Xu(c, T, g);
+                    return null == T ? null : new Xu(c, T, h);
                 }
                 function v_(l) {
                     var n;
@@ -1114,9 +1114,9 @@
                                 for (var k = ol(), d = p.p(); d.q(); ) {
                                     var b,
                                         m = d.r().m7n_1.j7o_1,
-                                        g = null == m ? null : m.l7o_1,
-                                        h = null == g ? null : g.m7o_1,
-                                        y = null == h ? null : h.o7o_1;
+                                        h = null == m ? null : m.l7o_1,
+                                        g = null == h ? null : h.m7o_1,
+                                        y = null == g ? null : g.o7o_1;
                                     if (null == y) b = null;
                                     else {
                                         var j,
@@ -1210,11 +1210,11 @@
                                           return new S(_, e, a, l.i80_1, v, x, null == p ? null : e_(p));
                                       })(k),
                             b = l.z7w_1,
-                            g = !0 === (null == b ? null : b.t7v_1),
-                            h = n_(l),
+                            h = !0 === (null == b ? null : b.t7v_1),
+                            g = n_(l),
                             y = l.s7w_1,
                             j = null == y ? null : y.b7v_1,
-                            U = null == j ? null : t(hl(gl(j) ? j : ml()));
+                            U = null == j ? null : t(gl(hl(j) ? j : ml()));
                         s = null == U || 0 === bl(U) ? null : U;
                         var C,
                             G = s,
@@ -1255,12 +1255,12 @@
                                             b = k.r().d7s_1,
                                             m = b.z7t_1;
                                         if (null != m) {
-                                            var g = m,
-                                                h = b.a7u_1;
-                                            if (null != h) {
-                                                var y = h,
+                                            var h = m,
+                                                g = b.a7u_1;
+                                            if (null != g) {
+                                                var y = g,
                                                     j = b.b7u_1;
-                                                d = null != j ? new wl(g, y, j, fl(b.c7u_1).k1(), vl(b.c7u_1).k1()) : null;
+                                                d = null != j ? new wl(h, y, j, fl(b.c7u_1).k1(), vl(b.c7u_1).k1()) : null;
                                             } else d = null;
                                         } else d = null;
                                         var S = d;
@@ -1324,9 +1324,9 @@
                                     }
                                     ll = rl;
                                 }
-                                var gl = ll,
-                                    hl = null == gl ? sl() : gl;
-                                return new kl(pl(x), pl(G), pl(O), pl(ul), pl(hl));
+                                var hl = ll,
+                                    gl = null == hl ? sl() : hl;
+                                return new kl(pl(x), pl(G), pl(O), pl(ul), pl(gl));
                             })(null == B ? null : B.e7w_1),
                             J = (function (l) {
                                 var n;
@@ -1362,10 +1362,10 @@
                             O = Q;
                         }
                         var Z = O;
-                        return new jl(_, e, $, w, x, d, g, h, G, N, D, J, null == Z ? sl() : Z);
+                        return new jl(_, e, $, w, x, d, h, g, G, N, D, J, null == Z ? sl() : Z);
                     });
             })(l.exports, u(519039), u(534449), u(90391), u(272122), u(761256), u(350269), u(420796));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-7671dfaf.d1e4dd7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-7671dfaf.917a99fa.js.map
