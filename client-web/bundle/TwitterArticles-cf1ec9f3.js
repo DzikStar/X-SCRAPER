@@ -3,7 +3,7 @@
     ["bundle.TwitterArticles-cf1ec9f3"],
     {
         384316: (e, a, r) => {
-            r.d(a, { V: () => y, Z: () => g });
+            r.d(a, { V: () => f, Z: () => g });
             var o = r(202784),
                 t = r(457311),
                 d = r(108362),
@@ -17,16 +17,16 @@
                 m = r(519896);
             const D = l().dd2c9034,
                 p = l().cada17f8,
-                y = () => o.createElement(t.Z, { header: D, message: p }),
+                f = () => o.createElement(t.Z, { header: D, message: p }),
                 g = ({ bookmarkFolderId: e, history: a, title: r, urtModule: t }) => {
                     const n = o.createElement(i.Z, { history: a }),
                         l = (0, u.Z)(),
                         D = o.useMemo(() => (0, h.G)({ withRemoveFromBookmarks: !0, bookmarkFolderId: e }), [e]);
-                    return o.createElement(s.Z, { component: d.Z, fab: n }, o.createElement(c.Z, { entryConfiguration: D, module: t, prerollDisplayLocation: m.Nw.OTHER, renderEmptyState: () => (l.scribeAction("empty"), y()), title: r }));
+                    return o.createElement(s.Z, { component: d.Z, fab: n }, o.createElement(c.Z, { entryConfiguration: D, module: t, prerollDisplayLocation: m.Nw.OTHER, renderEmptyState: () => (l.scribeAction("empty"), f()), title: r }));
                 };
         },
         564895: (e, a, r) => {
-            r.d(a, { ZP: () => M });
+            r.d(a, { ZP: () => y });
             var o = r(202784),
                 t = r(325686),
                 d = r(731708),
@@ -40,7 +40,7 @@
                 m = r(38562);
             const D = (0, u.Z)().propsFromActions(() => ({ createLocalApiErrorHandler: (0, h.zr)("FOUND_MEDIA_AUTOPLAY_TOGGLE"), updateSettings: m.VP })),
                 p = i().j7fc4f9c;
-            class y extends o.Component {
+            class f extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handleSwitchChanged = (e) => {
@@ -56,7 +56,7 @@
                 }
             }
             const g = l.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "space-between", margin: e.spaces.space12 } })),
-                M = D(y);
+                y = D(f);
         },
         278066: (e, a, r) => {
             r.d(a, { ZP: () => A });
@@ -74,29 +74,29 @@
                 m = r(450681),
                 D = r(668214),
                 p = r(317861);
-            const { Categories: y } = p,
-                g = (e, a) => y.selectItems(e),
-                M = (e) => y.selectInitialFetchStatus(e),
-                f = (0, D.Z)()
-                    .propsFromState(() => ({ categories: (0, u.P1)(g, (e) => (e ? (0, m.Z)(e.map((e) => (e.display_name ? e : void 0))) : void 0)), initialFetchStatus: M }))
-                    .propsFromActions(() => ({ fetchInitialIfNeeded: y.fetchInitialIfNeeded, fetchNextIfNeeded: y.fetchNextIfNeeded })),
-                w = o.memo((e) => {
+            const { Categories: f } = p,
+                g = (e, a) => f.selectItems(e),
+                y = (e) => f.selectInitialFetchStatus(e),
+                M = (0, D.Z)()
+                    .propsFromState(() => ({ categories: (0, u.P1)(g, (e) => (e ? (0, m.Z)(e.map((e) => (e.display_name ? e : void 0))) : void 0)), initialFetchStatus: y }))
+                    .propsFromActions(() => ({ fetchInitialIfNeeded: f.fetchInitialIfNeeded, fetchNextIfNeeded: f.fetchNextIfNeeded })),
+                b = o.memo((e) => {
                     const { category: a, gifSearchKey: r, history: s, index: c, onClick: u, withLeftMargin: m } = e,
                         {
                             display_name: D,
                             original_image: { still_image_url: p },
                         } = a,
-                        y = o.useCallback(() => {
+                        f = o.useCallback(() => {
                             if (u) u(a);
                             else {
                                 const e = s?.location.state?.dmConversationId;
                                 s?.push({ pathname: `${i.GifSearchPaths.category}/${a.id}`, state: { category: a, gifSearchKey: r, dmConversationId: e } });
                             }
                         }, [s, a, r, u]);
-                    return o.createElement(d.Z, { onPress: y, style: [b.category, m && b.leftMargin] }, o.createElement(n.Z, { source: p, style: [b.categoryImage, { backgroundColor: (0, h.d)(c) }] }), o.createElement(t.Z, { style: b.categoryNameContainer }, o.createElement(l.ZP, { color: "white", size: "headline1", weight: "bold" }, D)));
+                    return o.createElement(d.Z, { onPress: f, style: [w.category, m && w.leftMargin] }, o.createElement(n.Z, { source: p, style: [w.categoryImage, { backgroundColor: (0, h.d)(c) }] }), o.createElement(t.Z, { style: w.categoryNameContainer }, o.createElement(l.ZP, { color: "white", size: "headline1", weight: "bold" }, D)));
                 }),
-                b = s.default.create((e) => ({ row: { flexDirection: "row", marginTop: e.spaces.space4 }, firstRow: { marginTop: 0 }, category: { height: "10rem", flexGrow: 1 }, leftMargin: { marginStart: e.spaces.space4 }, categoryImage: { flexGrow: 1 }, categoryNameContainer: { position: "absolute", bottom: 0, width: "100%", padding: e.spaces.space8, backgroundImage: "linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0))" } })),
-                A = f((e) => {
+                w = s.default.create((e) => ({ row: { flexDirection: "row", marginTop: e.spaces.space4 }, firstRow: { marginTop: 0 }, category: { height: "10rem", flexGrow: 1 }, leftMargin: { marginStart: e.spaces.space4 }, categoryImage: { flexGrow: 1 }, categoryNameContainer: { position: "absolute", bottom: 0, width: "100%", padding: e.spaces.space8, backgroundImage: "linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0))" } })),
+                A = M((e) => {
                     const { categories: a, fetchInitialIfNeeded: r, gifSearchKey: d, history: n, initialFetchStatus: l, onClickCategory: s } = e,
                         i = o.useCallback(() => {
                             r();
@@ -104,7 +104,7 @@
                         h = o.useCallback(() => {
                             const e = [];
                             if (a) for (let r = 0; r < a.length; r += 2) e.push([a[r], a[r + 1]]);
-                            return o.createElement(t.Z, null, o.Children.toArray(e.map(([e, a], r) => o.createElement(t.Z, { style: [b.row, 0 === r && b.firstRow] }, o.createElement(w, { category: e, gifSearchKey: d, history: n, index: 2 * r, onClick: s, withLeftMargin: !1 }), a ? o.createElement(w, { category: a, gifSearchKey: d, history: n, index: 2 * r + 1, onClick: s, withLeftMargin: !0 }) : null))));
+                            return o.createElement(t.Z, null, o.Children.toArray(e.map(([e, a], r) => o.createElement(t.Z, { style: [w.row, 0 === r && w.firstRow] }, o.createElement(b, { category: e, gifSearchKey: d, history: n, index: 2 * r, onClick: s, withLeftMargin: !1 }), a ? o.createElement(b, { category: a, gifSearchKey: d, history: n, index: 2 * r + 1, onClick: s, withLeftMargin: !0 }) : null))));
                         }, [a, d, n, s]);
                     return (
                         o.useEffect(() => {
@@ -179,55 +179,55 @@
                 m = r(290402),
                 D = r(965245),
                 p = r(443781),
-                y = r(511985),
+                f = r(511985),
                 g = r(716233),
-                M = r(663194);
+                y = r(663194);
             r(136728);
-            const f = (e, a) => {
+            const M = (e, a) => {
                 const r = e.reduce((e, a) => {
                     const { original_image: r } = a;
                     return e + r.width / r.height;
                 }, 0);
                 return Math.ceil(a / r);
             };
-            function w(e, a, r) {
-                return e.reduce((e, o, t) => (e[e.length - 1].push({ ...o, index: t }), e[e.length - 1].length > 0 && f(e[e.length - 1], r) < a && e.push([]), e), [[]]).filter((e) => e.length > 0);
+            function b(e, a, r) {
+                return e.reduce((e, o, t) => (e[e.length - 1].push({ ...o, index: t }), e[e.length - 1].length > 0 && M(e[e.length - 1], r) < a && e.push([]), e), [[]]).filter((e) => e.length > 0);
             }
-            var b = r(459679),
+            var w = r(459679),
                 A = r(668214),
                 _ = r(704279),
                 S = r(798538),
-                I = r(497294),
-                k = r(632960);
+                k = r(497294),
+                I = r(632960);
             const E = [],
-                P = (e, { module: a, query: r }) => a.selectInitialFetchStatus(e, r),
-                C = (e, { module: a, query: r }) => a.selectItems(e, r),
+                C = (e, { module: a, query: r }) => a.selectInitialFetchStatus(e, r),
+                P = (e, { module: a, query: r }) => a.selectItems(e, r),
                 v = (e, { module: a, query: r }) => a.selectNextFetchStatus(e, r),
                 Z = (e) => {
                     const { tweetComposer: a } = e,
                         r = a?.activeParentKey,
-                        o = k.E_(e, r),
+                        o = I.E_(e, r),
                         t = a[r],
                         d = t.composerData[o]?.mediaIds;
                     return Array.isArray(d) ? d : E;
                 },
                 x = (0, A.Z)()
-                    .propsFromState(() => ({ initialFetchStatus: P, items: C, nextFetchStatus: v, oldMediaIds: Z }))
-                    .adjustStateProps(({ initialFetchStatus: e, items: a, nextFetchStatus: r, oldMediaIds: o }) => ({ initialFetchStatus: e, items: Array.isArray(a) ? (0, b.Z)(a, (e) => (e.url ? { ...e, thumbnail_images: [...e.thumbnail_images].sort((e, a) => a.height * a.width - e.height * e.width) } : void 0)) : void 0, nextFetchStatus: r, oldMediaIds: o }))
+                    .propsFromState(() => ({ initialFetchStatus: C, items: P, nextFetchStatus: v, oldMediaIds: Z }))
+                    .adjustStateProps(({ initialFetchStatus: e, items: a, nextFetchStatus: r, oldMediaIds: o }) => ({ initialFetchStatus: e, items: Array.isArray(a) ? (0, w.Z)(a, (e) => (e.url ? { ...e, thumbnail_images: [...e.thumbnail_images].sort((e, a) => a.height * a.width - e.height * e.width) } : void 0)) : void 0, nextFetchStatus: r, oldMediaIds: o }))
                     .propsFromActions(({ history: e, module: a }) => {
                         return {
-                            addExternalMediaUpload: I.Q6,
+                            addExternalMediaUpload: k.Q6,
                             addMediaToDM:
                                 ((r = e?.location?.state),
                                 (e, a) => {
                                     const o = r && r.dmConversationId;
                                     return (0, S.rA)(o, e, a);
                                 }),
-                            setMediaMetadata: I._B,
+                            setMediaMetadata: k._B,
                             fetchInitialIfNeeded: a.fetchInitialIfNeeded,
                             fetchNextIfNeeded: a.fetchNextIfNeeded,
                             scribeAction: _.n,
-                            updateSingleComposerV2: k.zi,
+                            updateSingleComposerV2: I.zi,
                         };
                         var r;
                     });
@@ -266,7 +266,7 @@
                             return r > 0 ? o.createElement(D.Z, { assumedItemHeight: 150, cacheKey: `gifSearchCategory/${a}`, footer: this._getRenderFooter(), identityFunction: H, items: t, noItemsRenderer: this._renderEmptyItem, onNearEnd: this._handleFetchNext, renderer: this._getRowRenderer() }) : null;
                         }),
                         (this._getMemoizedRowRenderer = (0, h.Z)((e, a, r) => (t) => {
-                            const n = f(t, a),
+                            const n = M(t, a),
                                 l = a - 2 * t.length - 1;
                             let s = 0;
                             return o.createElement(
@@ -279,7 +279,7 @@
                                         c = n / i.height,
                                         h = d === t.length - 1 ? l - s : Math.round(i.width * c),
                                         { still_image_url: u, url: m } = i;
-                                    return (s += h), o.createElement(L, { altText: a.alt_text || U, animatedMediaUrl: m, backgroundColor: (0, M.d)(a.index), height: n, key: a.index, onClick: r(a), shouldAutoPlayGif: e, stillMediaUrl: u, width: h });
+                                    return (s += h), o.createElement(L, { altText: a.alt_text || U, animatedMediaUrl: m, backgroundColor: (0, y.d)(a.index), height: n, key: a.index, onClick: r(a), shouldAutoPlayGif: e, stillMediaUrl: u, width: h });
                                 }),
                             );
                         })),
@@ -295,18 +295,18 @@
                                     found_media_origin: h,
                                     provider: m,
                                     original_image: { url: D },
-                                    preview_image: { height: p, url: M, width: f },
-                                    thumbnail_images: [w],
-                                    url: b,
+                                    preview_image: { height: p, url: y, width: M },
+                                    thumbnail_images: [b],
+                                    url: w,
                                 } = e,
-                                A = a({ mediaCategory: t === y.AD.Composition || t === y.AD.NoteComposition ? g.xz.TweetGif : g.xz.DMGif, mediaType: "image/gif", previewMediaType: "video/mp4", previewUrl: M, sourceUrl: D, stillMediaUrl: w.still_image_url, width: f, height: p }),
+                                A = a({ mediaCategory: t === f.AD.Composition || t === f.AD.NoteComposition ? g.xz.TweetGif : g.xz.DMGif, mediaType: "image/gif", previewMediaType: "video/mp4", previewUrl: y, sourceUrl: D, stillMediaUrl: b.still_image_url, width: M, height: p }),
                                 _ = A.map((e) => e.id),
-                                S = { found_media_origin: h, provider: m, url: b };
-                            if ((c && s(_[0], { defaultAltText: c, gifMetadata: S }), t === y.AD.Composition)) {
+                                S = { found_media_origin: h, provider: m, url: w };
+                            if ((c && s(_[0], { defaultAltText: c, gifMetadata: S }), t === f.AD.Composition)) {
                                 const { oldMediaIds: e } = this.props,
                                     a = [...(0, u.Z)(e.concat(_))];
                                 i({ updates: { mediaIds: this.context.featureSwitches.isTrue("rweb_mixed_media_uploads_enabled") ? a : _, gifMetadata: S } });
-                            } else t === y.AD.DMComposition ? r(_, S) : t === y.AD.NoteComposition && n?.(A);
+                            } else t === f.AD.DMComposition ? r(_, S) : t === f.AD.NoteComposition && n?.(A);
                             l({ page: t, section: "gif_search", element: "category", action: o ? "search" : "select" }), d?.go(-2);
                         }),
                         (this._renderEmptyItem = () => o.createElement(n.Z, { header: z, message: B })),
@@ -326,7 +326,7 @@
                         (this._handleResize = () => {
                             this._rootNode && this._rootNode instanceof Element && this.setState({ width: this._rootNode.clientWidth });
                         }),
-                        (this._brickLayout = (0, h.Z)(w)),
+                        (this._brickLayout = (0, h.Z)(b)),
                         (this._setRootNode = (e) => {
                             this._rootNode = t.findDOMNode(e);
                         }),
@@ -366,57 +366,55 @@
                 m = r(666536),
                 D = r(443781),
                 p = r(511985),
-                y = r(293115),
+                f = r(293115),
                 g = r(615027),
-                M = r(189244),
-                f = r(717988),
-                w = r(466441),
-                b = r(668214),
+                y = r(189244),
+                M = r(717988),
+                b = r(466441),
+                w = r(668214),
                 A = r(38562),
                 _ = r(659773);
             const S = (e, a) => (0, A.l4)(e).shouldAutoPlayGif,
-                I = (0, b.Z)().propsFromState(() => ({ shouldAutoPlayGif: S, isDataSaverEnabled: A.IX, effectiveAutoplayOption: _.AP }));
-            var k = r(74938),
+                k = (0, w.Z)().propsFromState(() => ({ shouldAutoPlayGif: S, isDataSaverEnabled: A.IX, effectiveAutoplayOption: _.AP }));
+            var I = r(74938),
                 E = r(663194);
-            const P = c().a50ba822,
-                C = c().a9ae1e78,
-                v = (0, f.p)(
+            const C = c().a50ba822,
+                P = c().a9ae1e78,
+                v = (0, M.p)(
                     () =>
                         Promise.all([
-                            r.e("icons.23"),
-                            r.e("icons.0"),
-                            r.e("icons.2"),
-                            r.e("icons.16"),
-                            r.e("icons.19"),
-                            r.e("icons.10"),
+                            r.e("icons.8"),
+                            r.e("icons.15"),
+                            r.e("icons.7"),
+                            r.e("icons.3"),
+                            r.e("icons.24"),
                             r.e("modules.common-e907d115"),
                             r.e("modules.common-e019dbda"),
+                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
+                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
+                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
+                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
+                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
+                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
+                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
+                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-0157ee89"),
+                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
+                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c977f3f0"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bde9e8ed"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78eb13f6"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-83ae13c2"),
+                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-fd0b2cf1"),
+                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c7e58553"),
+                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f7f56781"),
+                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             r.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
@@ -431,43 +429,41 @@
                         ]).then(r.bind(r, 558969)),
                     { shouldMigrateToX: !1 },
                 ),
-                Z = (0, f.p)(
+                Z = (0, M.p)(
                     () =>
                         Promise.all([
-                            r.e("icons.23"),
-                            r.e("icons.0"),
-                            r.e("icons.2"),
-                            r.e("icons.16"),
-                            r.e("icons.19"),
-                            r.e("icons.10"),
+                            r.e("icons.8"),
+                            r.e("icons.15"),
+                            r.e("icons.7"),
+                            r.e("icons.3"),
+                            r.e("icons.24"),
                             r.e("modules.common-e907d115"),
                             r.e("modules.common-e019dbda"),
+                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
+                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
+                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
+                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
+                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
+                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
+                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
+                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-0157ee89"),
+                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
+                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c977f3f0"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bde9e8ed"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78eb13f6"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-83ae13c2"),
+                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-fd0b2cf1"),
+                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c7e58553"),
+                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f7f56781"),
+                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             r.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
@@ -529,7 +525,7 @@
                         t = this._gifSearchKey;
                     if (!t) return o.createElement(g.Z, { to: "/" });
                     const n = { gifSearchKey: t, history: e, location: a, searchBox: this._renderSearchBox(), shouldAutoPlayGif: r };
-                    return o.createElement(y.nO, { namespace: this._getScribeNamespace(t) }, o.createElement(d.Switch, null, o.createElement(d.Route, { exact: !0, path: x.search }, o.createElement(v, n)), o.createElement(d.Route, { exact: !0, path: `${x.category}/${M.kM}` }, o.createElement(Z, n)), o.createElement(d.Route, { component: w.default })));
+                    return o.createElement(f.nO, { namespace: this._getScribeNamespace(t) }, o.createElement(d.Switch, null, o.createElement(d.Route, { exact: !0, path: x.search }, o.createElement(v, n)), o.createElement(d.Route, { exact: !0, path: `${x.category}/${y.kM}` }, o.createElement(Z, n)), o.createElement(d.Route, { component: b.default })));
                 }
                 _getShouldAutoPlayGif() {
                     const { effectiveAutoplayOption: e, isDataSaverEnabled: a, shouldAutoPlayGif: r } = this.props;
@@ -551,12 +547,12 @@
                 _renderSearchBox() {
                     const { searchDisabled: e } = this.state,
                         a = this._getQueryOrCategory();
-                    return o.createElement(t.Z, { style: N.searchContainer }, o.createElement(n.Z, { Icon: h.default, autoFocus: !0, defaultValue: a, key: a, onChange: this._handleChange, onClear: this._handleClear, onSubmitEditing: this._handleSearch, placeholder: P, ref: this._setTextInputRef, style: N.searchInput, testID: k.Z.gifSearchSearchInput, withClearButton: !0 }), this._shouldRenderResultsOnChange ? null : o.createElement(l.ZP, { disabled: e, onPress: this._handleSubmit, size: "small", style: N.searchButton, type: "brandFilled" }, C));
+                    return o.createElement(t.Z, { style: N.searchContainer }, o.createElement(n.Z, { Icon: h.default, autoFocus: !0, defaultValue: a, key: a, onChange: this._handleChange, onClear: this._handleClear, onSubmitEditing: this._handleSearch, placeholder: C, ref: this._setTextInputRef, style: N.searchInput, testID: I.Z.gifSearchSearchInput, withClearButton: !0 }), this._shouldRenderResultsOnChange ? null : o.createElement(l.ZP, { disabled: e, onPress: this._handleSubmit, size: "small", style: N.searchButton, type: "brandFilled" }, P));
                 }
             }
             R.contextType = D.rC;
             const N = s.default.create((e) => ({ searchContainer: { alignItems: "center", flex: 1, flexDirection: "row", marginVertical: e.spaces.space8 }, searchInput: { height: "100%" }, searchButton: { marginStart: e.spaces.space12 } })),
-                T = I(R);
+                T = k(R);
         },
         74938: (e, a, r) => {
             r.d(a, { Z: () => o });
@@ -577,7 +573,7 @@
                 };
         },
         842485: (e, a, r) => {
-            r.r(a), r.d(a, { Entry: () => k, KeyboardShortcutsScreen: () => S, ShortcutContent: () => I, default: () => P });
+            r.r(a), r.d(a, { Entry: () => I, KeyboardShortcutsScreen: () => S, ShortcutContent: () => k, default: () => C });
             var o = r(202784),
                 t = r(325686),
                 d = r(386802),
@@ -591,14 +587,14 @@
                 m = r(163390),
                 D = r(24949),
                 p = r(668214),
-                y = r(919022);
+                f = r(919022);
             const g = (0, p.Z)()
-                    .propsFromState(() => ({ viewerUserScreenName: (0, D.P1)(y.ZP.selectViewerUser, (e) => (e ? e.screen_name : void 0)) }))
+                    .propsFromState(() => ({ viewerUserScreenName: (0, D.P1)(f.ZP.selectViewerUser, (e) => (e ? e.screen_name : void 0)) }))
                     .withAnalytics({ page: "keyboard_shortcuts" }),
-                M = c().ef1649e2,
-                f = c().h54e6138,
-                w = c().aefd89c8,
-                b = c().cafdefb2,
+                y = c().ef1649e2,
+                M = c().h54e6138,
+                b = c().aefd89c8,
+                w = c().cafdefb2,
                 A = c().add55c98,
                 _ = c().dda42cf2,
                 S = ({ history: e, location: a, viewerUserScreenName: r }) => {
@@ -610,16 +606,16 @@
                         c = (0, m.PN)(),
                         D = l(s),
                         p = l(i),
-                        y = l(c),
+                        f = l(c),
                         g = [
-                            { headerText: w, shortcuts: D },
-                            { headerText: b, shortcuts: p },
-                            { headerText: A, shortcuts: y },
+                            { headerText: b, shortcuts: D },
+                            { headerText: w, shortcuts: p },
+                            { headerText: A, shortcuts: f },
                             { headerText: _, shortcuts: [] },
                         ];
-                    return o.createElement(h.Z, { documentTitle: M, history: e, isLarge: !0, title: f }, o.createElement(I, { isModal: n, shortcuts: g }));
+                    return o.createElement(h.Z, { documentTitle: y, history: e, isLarge: !0, title: M }, o.createElement(k, { isModal: n, shortcuts: g }));
                 },
-                I = ({ isModal: e, shortcuts: a }) =>
+                k = ({ isModal: e, shortcuts: a }) =>
                     o.createElement(
                         t.Z,
                         { style: [E.root, e && E.row] },
@@ -635,12 +631,12 @@
                                       o.createElement(
                                           t.Z,
                                           { role: "table", style: !s && i && e && E.divider },
-                                          r.map((e, a) => o.createElement(k, { description: e.description, key: a, keys: e.keys })),
+                                          r.map((e, a) => o.createElement(I, { description: e.description, key: a, keys: e.keys })),
                                       ),
                                   );
                         }),
                     ),
-                k = ({ description: e, keys: a }) => {
+                I = ({ description: e, keys: a }) => {
                     const r = Array.isArray(a) ? a : [a];
                     return o.createElement(
                         t.Z,
@@ -654,10 +650,10 @@
                     );
                 },
                 E = s.default.create((e) => ({ root: { padding: e.spaces.space12, paddingBottom: e.spaces.space20 }, row: { flexDirection: "row" }, keyRow: { flexDirection: "row", alignItems: "center" }, section: { flexShrink: 1 }, sectionBottomMargin: { marginBottom: e.spaces.space12 }, divider: { borderStyle: "solid", borderEndWidth: e.borderWidths.small, borderColor: e.colors.gray50, paddingEnd: e.spaces.space12, marginEnd: e.spaces.space12 }, entry: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: e.spaces.space12, marginVertical: e.spaces.space2 }, key: { backgroundColor: e.colors.gray0, borderColor: e.colors.gray50, borderRadius: e.borderRadii.small, borderStyle: "solid", borderWidth: e.borderWidths.small, boxShadow: `inset 0 -1px 0 ${e.colors.gray200}`, fontFamily: "monospace, monospace", minWidth: "1.7em", paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space1 }, plus: { marginHorizontal: e.spaces.space2 }, moduleHeader: { paddingStart: e.spaces.space12 } })),
-                P = g(S);
+                C = g(S);
         },
         466441: (e, a, r) => {
-            r.r(a), r.d(a, { NotFoundScreen: () => f, default: () => b });
+            r.r(a), r.d(a, { NotFoundScreen: () => M, default: () => w });
             r(571372);
             var o = r(202784),
                 t = r(386802),
@@ -672,10 +668,10 @@
                 m = r(652904),
                 D = r(952793),
                 p = r(163889),
-                y = r(725516);
+                f = r(725516);
             const g = s().ba929da8,
-                M = s().d203e242;
-            function f(e) {
+                y = s().d203e242;
+            function M(e) {
                 const { splat: a } = e.match.params,
                     { isModal: r } = o.useContext(t.Z),
                     n = (0, D.hC)("responsive_web_report_page_not_found");
@@ -683,14 +679,14 @@
                     (0, i.q)(() => {
                         n && a && (0, p.ZP)(new Error(`Page not found: ${a}`));
                     }),
-                    o.createElement(m.Z, null, o.createElement(c.Z.Configure, { backLocation: "/", documentTitle: g, title: M }), o.createElement(d.Z, { style: r && w.modal }, o.createElement(u.Z, null)), o.createElement(h.Z, { title: g, withMeta: !1 }))
+                    o.createElement(m.Z, null, o.createElement(c.Z.Configure, { backLocation: "/", documentTitle: g, title: y }), o.createElement(d.Z, { style: r && b.modal }, o.createElement(u.Z, null)), o.createElement(h.Z, { title: g, withMeta: !1 }))
                 );
             }
-            const w = n.default.create((e) => ({ modal: { backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.xLarge } })),
-                b = (0, y.Z)(f, { page: "not_found" });
+            const b = n.default.create((e) => ({ modal: { backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.xLarge } })),
+                w = (0, f.Z)(M, { page: "not_found" });
         },
         537817: (e, a, r) => {
-            r.r(a), r.d(a, { TwitterArticleComposerEmptyState: () => f, default: () => b });
+            r.r(a), r.d(a, { TwitterArticleComposerEmptyState: () => M, default: () => w });
             r(136728);
             var o = r(202784),
                 t = r(107267),
@@ -707,29 +703,29 @@
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, h.zr)("CREATE_ARTICLE_ENTITY_BUTTON"), createDraftArticle: m.ZP.create }))
                     .withAnalytics({ page: "article_composer", section: "empty_state" }),
                 p = s().d36447e0,
-                y = s().ca0ed982,
+                f = s().ca0ed982,
                 g = s().ee9e42aa,
-                M = s().e9a50596,
-                f = ({ analytics: e, createDraftArticle: a, createLocalApiErrorHandler: r }) => {
+                y = s().e9a50596,
+                M = ({ analytics: e, createDraftArticle: a, createLocalApiErrorHandler: r }) => {
                     const n = (0, t.useHistory)();
                     return o.createElement(d.Z, {
                         buttonLink: c.TC,
                         buttonText: g,
                         header: p,
-                        message: y,
+                        message: f,
                         onButtonPress: () => {
                             e.scribe({ element: "create_button", action: "click" }),
                                 a("", i.kd)
                                     .then((e) => {
                                         e?.result && "string" == typeof e.result && e.entities?.articleEntities[e.result] && n.push((0, c.lU)(e.entities.articleEntities[e.result].rest_id));
                                     })
-                                    .catch(r({ showToast: !0, defaultToast: { text: M } }));
+                                    .catch(r({ showToast: !0, defaultToast: { text: y } }));
                         },
-                        style: w.root,
+                        style: b.root,
                     });
                 },
-                w = n.default.create((e) => ({ root: { alignItems: "top", flex: 1, justifyContent: "center", backgroundColor: e.colors.cellBackground } })),
-                b = D(f);
+                b = n.default.create((e) => ({ root: { alignItems: "top", flex: 1, justifyContent: "center", backgroundColor: e.colors.cellBackground } })),
+                w = D(M);
         },
         302534: (e, a, r) => {
             r.r(a), r.d(a, { default: () => Z });
@@ -747,41 +743,41 @@
                 m = r(253493),
                 D = r(507651),
                 p = r(583909),
-                y = r(293115),
+                f = r(293115),
                 g = r(794057),
-                M = r(689985),
-                f = r(71620),
-                w = r(668214),
-                b = r(143322),
+                y = r(689985),
+                M = r(71620),
+                b = r(668214),
+                w = r(143322),
                 A = r(390387);
             const _ = { page: "longform_composer", section: "notes_list" },
-                S = (0, w.Z)()
+                S = (0, b.Z)()
                     .propsFromState(() => ({ viewerUserId: A._h }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, f.zr)("COMPOSE_TWITTER_ARTICLE_BUTTON"), createArticleEntity: b.ZP.create }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, M.zr)("COMPOSE_TWITTER_ARTICLE_BUTTON"), createArticleEntity: w.ZP.create }))
                     .withAnalytics(_);
-            function I(e) {
+            function k(e) {
                 const {
                         location: { pathname: a },
                         viewerUserId: r,
                     } = e,
-                    [d, n] = o.useState(P.DRAFTS);
+                    [d, n] = o.useState(C.DRAFTS);
                 if (!r) return null;
                 const l = (e) => () => d === e,
-                    s = (0, c.Z)(P).map((e) => ({ key: e, label: C[e].label, isActive: l(e), to: { pathname: a }, onClick: () => n(e) }));
+                    s = (0, c.Z)(C).map((e) => ({ key: e, label: P[e].label, isActive: l(e), to: { pathname: a }, onClick: () => n(e) }));
                 return o.createElement(
                     o.Fragment,
                     null,
                     o.createElement(D.Z, { links: s }),
                     o.createElement(
                         t.Z,
-                        { style: k.container },
+                        { style: I.container },
                         o.createElement(p.Z, {
-                            emptyStateHeader: C[d].header,
+                            emptyStateHeader: P[d].header,
                             lifecycle: (() => {
                                 switch (d) {
-                                    case P.PUBLISHED:
+                                    case C.PUBLISHED:
                                         return h.f.Published;
-                                    case P.DRAFTS:
+                                    case C.DRAFTS:
                                     default:
                                         return h.f.Draft;
                                 }
@@ -792,10 +788,10 @@
                     ),
                 );
             }
-            const k = n.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground, flexGrow: 1 } }));
+            const I = n.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground, flexGrow: 1 } }));
             const E = s().a5a30af0,
-                P = Object.freeze({ DRAFTS: "Drafts", PUBLISHED: "Published" }),
-                C = { [P.DRAFTS]: { label: s().d4ebc798, header: s().f965e890 }, [P.PUBLISHED]: { label: s().bb40bf66, header: s().c2756718 } },
+                C = Object.freeze({ DRAFTS: "Drafts", PUBLISHED: "Published" }),
+                P = { [C.DRAFTS]: { label: s().d4ebc798, header: s().f965e890 }, [C.PUBLISHED]: { label: s().bb40bf66, header: s().c2756718 } },
                 v = o.createElement(i.default, null),
                 Z = S(function (e) {
                     const { viewerUserId: a } = e;
@@ -807,7 +803,7 @@
                                     e
                                         .createArticleEntity("", g.kd)
                                         .then((a) => {
-                                            a?.result && "string" == typeof a.result && a.entities?.articleEntities[a.result] && e.history.push((0, M.lU)(a.entities.articleEntities[a.result].rest_id));
+                                            a?.result && "string" == typeof a.result && a.entities?.articleEntities[a.result] && e.history.push((0, y.lU)(a.entities.articleEntities[a.result].rest_id));
                                         })
                                         .catch(e.createLocalApiErrorHandler({ showToast: !0 }));
                             };
@@ -822,9 +818,9 @@
                             );
                         })(e),
                         n = o.useMemo(() => o.createElement(d.ZP, { "aria-label": "create", icon: v, onPress: r, type: "primaryText" }), [r]);
-                    return !a || t ? null : o.createElement(y.nO, { namespace: _ }, o.createElement(m.Z, { rightControl: n, screenType: "root", title: E }, o.createElement(I, e)));
+                    return !a || t ? null : o.createElement(f.nO, { namespace: _ }, o.createElement(m.Z, { rightControl: n, screenType: "root", title: E }, o.createElement(k, e)));
                 });
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-cf1ec9f3.0f9382fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-cf1ec9f3.6498832a.js.map

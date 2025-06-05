@@ -3955,6 +3955,7 @@
                 a("j6cdf012", "[[281359]] Co-hosts can’t invite or remove other co-hosts"),
                 a("c727d116", "[[281423]] Co-hosts can’t end the Space"),
                 a("g69084b8", "[[281356]] Accept co-host invite"),
+                a("ddd5cfe2", "[[295698]] Dock"),
                 a("ee230734", "[[224779]] Show more options"),
                 a("ic8c615e", "[[187770]] Choose and send a quick reply option"),
                 a("a04077c4", "[[192901]] Please choose 1 photo, video or GIF."),
@@ -4924,9 +4925,9 @@
                 a("d9f9dec0", "[[294167]] View Space"),
                 a("h0c1f37a", "[[294166]] View Space Analytics"),
                 a("e41fffbc", "[[291999]] The total watch time of your videos."),
-                a("if2909ba", "[[292000]] Watch Time"),
-                a("i0e5bf4c", "[[293195]] Your videos");
-            a("ed99baea", "[[289716]] Early Beta Access"),
+                a("if2909ba", "[[292000]] Watch Time");
+            a("i0e5bf4c", "[[293195]] Your videos"),
+                a("ed99baea", "[[289716]] Early Beta Access"),
                 a("gf898b70", "[[289702]] Advanced Search"),
                 a("d2a43a7a", '[[289747]] contains both "ai" and "startup"'),
                 a("a8584698", "[[289739]] ai startup"),
@@ -5880,9 +5881,9 @@
                 a("e41c9b4f", function (e) {
                     return "[[242357]] Saved to " + e.bookmarkFolderName;
                 }),
-                a("h18f86a4", "[[242318]] Delete Folder"),
-                a("f4ea967a", "[[242841]] Folder has been deleted");
-            a("b670aa62", "[[242315]] Folder Name"),
+                a("h18f86a4", "[[242318]] Delete Folder");
+            a("f4ea967a", "[[242841]] Folder has been deleted"),
+                a("b670aa62", "[[242315]] Folder Name"),
                 a("aece5462", "[[242839]] Folder name has been updated successfully"),
                 a("e3299b94", "[[242842]] Something went wrong. Try updating that folder again in a minute."),
                 a("c09ea714", "[[242843]] Something went wrong. Try deleting that folder again in a minute."),
@@ -6476,6 +6477,7 @@
                 a("babfa32c", "[[209832]] Quickly customize your view"),
                 a("a2a2f98e", "[[210019]] See what’s new"),
                 a("b4a361c0", "[[209831]] You can personalize your color and the size of your text, as well as control your dark mode selection, right now. These settings are only visible to you."),
+                a("g4743c56", "[[295699]] Start following"),
                 a("c797b44e", "[[283624]] The latest stories on X - as told by posts."),
                 a("a19ce060", "[[179974]] Explore is unavailable."),
                 a("f7d1a8e0", "[[263501]] Android App"),
@@ -6883,10 +6885,10 @@
                 a("ede7d0a2", "[[276389]] Currency"),
                 a("b925c18c", "[[283691]] Salary Type"),
                 a("j3d242ce", "[[276541]] Invalid range"),
-                a("f4d07bd2", "[[282456]] Include optional details to make it easier for candidates to discover your roles with search."),
-                a("b8cbb51a", "[[282457]] Job Summary"),
-                a("bda6881e", "[[282745]] This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.");
-            a("b075c68a", "[[276392]] Edit job"),
+                a("f4d07bd2", "[[282456]] Include optional details to make it easier for candidates to discover your roles with search.");
+            a("b8cbb51a", "[[282457]] Job Summary"),
+                a("bda6881e", "[[282745]] This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                a("b075c68a", "[[276392]] Edit job"),
                 a("d4b6a6e0", "[[249571]] Profile Spotlight"),
                 a("j2dd3686", "[[285949]] Highlight featured jobs above my posts."),
                 a("af1cfd46", "[[285940]] ATS integration"),
@@ -7863,9 +7865,7 @@
                     return "[[288006]] Welcome back, " + e.displayName;
                 }),
                 a("a76d58ba", "[[288167]] Ads Analytics"),
-                a("eccd0e1a", "[[288001]] Organization Analytics"),
-                a("deea1708", "[[288004]] Want to view analytics across all your X accounts?"),
-                a("eb603ffc", "[[288007]] Upgrade to affiliate your network and view aggregated analytics.");
+                a("eccd0e1a", "[[288001]] Organization Analytics");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7904,7 +7904,9 @@
                     r(e, t)
                 );
             }
-            a("gf67aae4", "[[288005]] Upgrade to Full Access"),
+            a("deea1708", "[[288004]] Want to view analytics across all your X accounts?"),
+                a("eb603ffc", "[[288007]] Upgrade to affiliate your network and view aggregated analytics."),
+                a("gf67aae4", "[[288005]] Upgrade to Full Access"),
                 a("h75e3618", "[[288038]] Include organization"),
                 a("h24a8862", "[[288039]] About this checkbox"),
                 a("c29e3a88", "[[288072]] Select affiliates"),
@@ -8901,12 +8903,12 @@
                 a("j0f12222", "[[223888]] See more"),
                 a("f569f7c8", "[[223884]] Go to website"),
                 a("j0c6772a", "[[223886]] Visit website"),
-                a("f73003aa", "[[225566]] Video will play after ad"),
-                a("b3112b8a", "[[153003]] Skip"),
-                a("h6333ad0", "[[209963]] Skip Ad");
-            a("c59da417", function (e) {
-                return "[[217358]] Skip Ad in " + e.seconds;
-            }),
+                a("f73003aa", "[[225566]] Video will play after ad");
+            a("b3112b8a", "[[153003]] Skip"),
+                a("h6333ad0", "[[209963]] Skip Ad"),
+                a("c59da417", function (e) {
+                    return "[[217358]] Skip Ad in " + e.seconds;
+                }),
                 a("c3c147cf", function (e) {
                     return "[[217359]] Skip " + e.seconds;
                 }),
@@ -13350,4 +13352,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.2ca2000a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.c5a4b88a.js.map

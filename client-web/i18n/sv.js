@@ -3955,6 +3955,7 @@
                 t("j6cdf012", "Medvärdar kan inte bjuda in eller ta bort andra medvärdar"),
                 t("c727d116", "Medvärdar kan inte stänga området"),
                 t("g69084b8", "Acceptera inbjudan att bli medvärd"),
+                t("ddd5cfe2", "Docka"),
                 t("ee230734", "Visa fler alternativ"),
                 t("ic8c615e", "Välj och skicka ett snabbsvar"),
                 t("a04077c4", "Välj ett foto, en video eller en GIF."),
@@ -4924,9 +4925,9 @@
                 t("d9f9dec0", "Visa området"),
                 t("h0c1f37a", "Visa områdesstatistik"),
                 t("e41fffbc", "Den totala tiden som folk har sett på dina videor."),
-                t("if2909ba", "Tittad tid"),
-                t("i0e5bf4c", "Dina videor");
-            t("ed99baea", "Tidig betaåtkomst"),
+                t("if2909ba", "Tittad tid");
+            t("i0e5bf4c", "Dina videor"),
+                t("ed99baea", "Tidig betaåtkomst"),
                 t("gf898b70", "Avancerad sökning"),
                 t("d2a43a7a", "innehåller både ”ai” och ”nystartat”"),
                 t("a8584698", "nystartat ai-bolag"),
@@ -5880,9 +5881,9 @@
                 t("e41c9b4f", function (e) {
                     return "Sparat på " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Radera mappen"),
-                t("f4ea967a", "Mappen har raderats");
-            t("b670aa62", "Mappnamn"),
+                t("h18f86a4", "Radera mappen");
+            t("f4ea967a", "Mappen har raderats"),
+                t("b670aa62", "Mappnamn"),
                 t("aece5462", "Mappnamnet har ändrats"),
                 t("e3299b94", "Något gick fel. Försök uppdatera mappen igen om en stund."),
                 t("c09ea714", "Något gick fel. Försök radera mappen igen om en stund."),
@@ -6476,6 +6477,7 @@
                 t("babfa32c", "Anpassa vyn snabbt"),
                 t("a2a2f98e", "Se allt nytt"),
                 t("b4a361c0", "Du kan ändra färgen och storleken på texten och till och med ändra valet av mörkt läge nu. Bara du kan se dessa inställningar."),
+                t("g4743c56", "Börja följa"),
                 t("c797b44e", "De senaste berättelserna på X – berättade genom inlägg."),
                 t("a19ce060", "Utforska är inte tillgängligt."),
                 t("f7d1a8e0", "Android-app"),
@@ -6883,10 +6885,10 @@
                 t("ede7d0a2", "Valuta"),
                 t("b925c18c", "Lönetyp"),
                 t("j3d242ce", "Ogiltigt intervall"),
-                t("f4d07bd2", "Ta med valfria detaljer för att göra det enklare för sökande att upptäcka dina roller genom att söka."),
-                t("b8cbb51a", "Jobböversikt"),
-                t("bda6881e", "Detta jobb har importerats från ditt jobbansökningssystem. Observera att enbart specifika fält går att ändra.");
-            t("b075c68a", "Redigera jobbet"),
+                t("f4d07bd2", "Ta med valfria detaljer för att göra det enklare för sökande att upptäcka dina roller genom att söka.");
+            t("b8cbb51a", "Jobböversikt"),
+                t("bda6881e", "Detta jobb har importerats från ditt jobbansökningssystem. Observera att enbart specifika fält går att ändra."),
+                t("b075c68a", "Redigera jobbet"),
                 t("d4b6a6e0", "Profilspotlight"),
                 t("j2dd3686", "Visa upp vissa jobb ovanför mina inlägg"),
                 t("af1cfd46", "ATS-integration"),
@@ -7863,9 +7865,7 @@
                     return "Välkommen tillbaka, " + e.displayName;
                 }),
                 t("a76d58ba", "Annonsanalys"),
-                t("eccd0e1a", "Organisationsanalys"),
-                t("deea1708", "Vill du se analys för alla din konton på X?"),
-                t("eb603ffc", "Uppgradera om du vill knyta an ditt nätverk och se samlade analysvärden.");
+                t("eccd0e1a", "Organisationsanalys");
             function i(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7904,7 +7904,9 @@
                     d(e, a)
                 );
             }
-            t("gf67aae4", "Uppgradera för att få full tillgång"),
+            t("deea1708", "Vill du se analys för alla din konton på X?"),
+                t("eb603ffc", "Uppgradera om du vill knyta an ditt nätverk och se samlade analysvärden."),
+                t("gf67aae4", "Uppgradera för att få full tillgång"),
                 t("h75e3618", "Inkludera organisationen"),
                 t("h24a8862", "Om den här kryssrutan"),
                 t("c29e3a88", "Välj anknutna konton"),
@@ -8901,12 +8903,12 @@
                 t("j0f12222", "Se mer"),
                 t("f569f7c8", "Besök webbplatsen"),
                 t("j0c6772a", "Besök webbplatsen"),
-                t("f73003aa", "Videon spelas efter annonsen"),
-                t("b3112b8a", "Hoppa över"),
-                t("h6333ad0", "Hoppa över annonsen");
-            t("c59da417", function (e) {
-                return "Hoppa över annonsen om " + e.seconds;
-            }),
+                t("f73003aa", "Videon spelas efter annonsen");
+            t("b3112b8a", "Hoppa över"),
+                t("h6333ad0", "Hoppa över annonsen"),
+                t("c59da417", function (e) {
+                    return "Hoppa över annonsen om " + e.seconds;
+                }),
                 t("c3c147cf", function (e) {
                     return "Hoppa över " + e.seconds;
                 }),
@@ -13350,4 +13352,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.0a79faba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.30415d6a.js.map

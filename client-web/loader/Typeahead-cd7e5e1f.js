@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.Typeahead-cd7e5e1f", "shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-83ae13c2"],
+    ["loader.Typeahead-cd7e5e1f"],
     {
         537052: (e, t, r) => {
             r.d(t, { Hf: () => s, OA: () => a, mL: () => o });
@@ -142,11 +142,11 @@
                 U = r(38562),
                 T = r(601576),
                 x = r(111531),
-                D = r(537052);
-            const F = l().g40ff2b4,
-                M = "mediaUpload",
-                O = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload2.json",
-                R = `rweb/${M}`,
+                F = r(537052);
+            const O = l().g40ff2b4,
+                D = "mediaUpload",
+                M = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload2.json",
+                R = `rweb/${D}`,
                 z = [],
                 B = "upload";
             class L extends Error {
@@ -166,7 +166,7 @@
                     }
                 }
                 return (
-                    r?.useLongVideoEndpoint && (s.uploadUrl = O),
+                    r?.useLongVideoEndpoint && (s.uploadUrl = M),
                     {
                         upload(t) {
                             (a = new _.Z(e, s)), (o = t), a.upload(o);
@@ -183,10 +183,10 @@
                     }
                 );
             }
-            const N = (e) => e[M],
+            const N = (e) => e[D],
                 Z = (e, t) => {
                     const r = Array.isArray(t) ? t : [t];
-                    return e[M].filter((e) => r.some((t) => t === e.id));
+                    return e[D].filter((e) => r.some((t) => t === e.id));
                 },
                 H = (e, t) => {
                     const r = Z(e, t);
@@ -352,7 +352,7 @@
                                             s.push(t), t?.reporter?.reportOperationComplete(w.BX.Processing, w.Uk.Success), t?.reporter?.toggleOperationPaused(w.BX.Full, !0), n(e.slice(1));
                                         },
                                         (t) => {
-                                            const o = (0, E.ZP)(t, F);
+                                            const o = (0, E.ZP)(t, O);
                                             o && r((0, T.fz)(o));
                                             const { code: s, message: d, name: l, type: c } = t;
                                             i.reporter?.setMetadata({ reason: { name: l, message: d, code: s } });
@@ -439,7 +439,7 @@
                                                                   u?.setMetadata({ mediaId: t }), u?.reportOperationComplete([w.BX.Full, w.BX.UploadSubmitUntilSruFinish], w.Uk.Success), e(a({ id: c, uploadId: t, uploadProgress: 1, uploading: !1 }));
                                                               },
                                                               f = (e, t, r) => {
-                                                                  u?.setMetadata({ mediaId: r }), "uploading" === t ? (a({ id: c, uploadProgress: D.OA("uploading", e) }), 100 === e && u?.reportOperationComplete(w.BX.SruUpload, w.Uk.Success)) : "processing" === t && a({ id: c, uploadProgress: D.OA("processing", e) });
+                                                                  u?.setMetadata({ mediaId: r }), "uploading" === t ? (a({ id: c, uploadProgress: F.OA("uploading", e) }), 100 === e && u?.reportOperationComplete(w.BX.SruUpload, w.Uk.Success)) : "processing" === t && a({ id: c, uploadProgress: F.OA("processing", e) });
                                                               },
                                                               S = () => {
                                                                   u?.toggleOperationPaused(w.BX.Full, !0);
@@ -534,7 +534,7 @@
                         });
             };
             C.Z.register({
-                [M]: function (e = z, t) {
+                [D]: function (e = z, t) {
                     if (!t) return e;
                     switch (t.type) {
                         case k:
@@ -748,4 +748,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Typeahead-cd7e5e1f.b6e235da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Typeahead-cd7e5e1f.0d27cb8a.js.map

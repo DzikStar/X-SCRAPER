@@ -1462,6 +1462,46 @@
             const u = s.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 o = t;
         },
+        524496: (e, l, a) => {
+            a.d(l, { Z: () => b });
+            a(136728);
+            var n = a(202784),
+                i = a(301503),
+                r = a(325686),
+                s = a(595088),
+                t = a(516951),
+                u = a(731708),
+                o = a(779802),
+                d = a(537392),
+                c = a(989272),
+                g = a(925873),
+                m = a(202253),
+                y = a(786475),
+                k = a(392237),
+                p = a(135904);
+            const F = { [o.P7.atomic]: { element: "section" }, [o.P7.header1]: { element: "h1", wrapper: n.createElement(u.ZP, null) }, [o.P7.header2]: { element: "h2", wrapper: n.createElement(u.ZP, null) } },
+                K = (0, s.Z)(F).reduce((e, [l, a]) => e.set(l, a), i.DefaultDraftBlockRenderMap);
+            let _ = !1;
+            const b = n.memo(function (e) {
+                    const { componentByType: l, contentState: a, onScribeEvent: s, paragraphFontSizeOverride: u } = e;
+                    n.useEffect(() => {
+                        _ || (c.fH(p.c, p.n), (_ = !0));
+                    }, []);
+                    const k = [(0, m.ez)(s, u), m.aF, m.RU];
+                    e.disable_entityLinkDecorator || k.push((0, m.NA)(s, u));
+                    const F = g.Z.initEditorState(a, { decorators: k });
+                    let b = t.Z;
+                    return (
+                        l &&
+                            (b = (e) => {
+                                const a = e.getType();
+                                return l[a] || null;
+                            }),
+                        n.createElement(d.ZP, null, ({ containerWidth: e }) => n.createElement(r.Z, { style: f.fontFamily }, n.createElement(i.Editor, { blockRenderMap: K, blockRendererFn: b, blockStyleFn: (0, o.su)(y.Z.isNarrowScreenWidth(e)), editorState: F, onChange: t.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
+                    );
+                }),
+                f = k.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
+        },
         183806: (e, l, a) => {
             a.d(l, { Z: () => n });
             const n = a(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
@@ -1513,4 +1553,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.JobSearch-6107ac1a.cccf411a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.JobSearch-6107ac1a.cb87248a.js.map

@@ -190,9 +190,9 @@
             const V = a.memo(j);
             var $ = n(800697),
                 B = n(482924);
-            const G = $.Z,
-                Q = ({ challengeId: e }) => {
-                    const { data: t } = (0, B.A)(G, { challengeId: e }, { fetchPolicy: "network-only" }),
+            const Q = $.Z,
+                G = ({ challengeId: e }) => {
+                    const { data: t } = (0, B.A)(Q, { challengeId: e }, { fetchPolicy: "network-only" }),
                         n = t?.viewer_v2?.xp_start_two_factor_auth_challenge;
                     if (!n) return {};
                     const { error: a, login_request: r } = n;
@@ -200,11 +200,11 @@
                 },
                 X = "Please try again later or contact support team.",
                 Y = "The request expired, try again.",
-                J = "The 2FA method on your account has an issue. Go to the app Settings, verify it, and try again.",
-                K = "Too many attempts, try again later.",
-                ee = { DuplicatedRenameTwoFactorMethodDisplayName: J, ExpiredLoginVerification: Y, FailureSmsCarrierDisabled: "We were not able to send an SMS to this carrier.", IneligibleFor2faAfterModification: J, InvalidRenameTwoFactorMethodDisplayName: J, LoginVerificationUserReactivationRequired: J, NoSecretForUser: J, NoTwoFactorAuthMethod: J, NotAllowed: J, NotValidForTokenExchange: J, NotYetApprovedLoginVerification: J, OfflineCodeSync: J, OverLoginVerificationAttemptLimit: K, OverLoginVerificationConvertLimit: K, OverResendLimit: K, SmsOverPerUserLimit: K, TwoFactorAuthMethodExpired: Y, FailureSendingLoginVerificationRequest: X, OverLoginVerificationStartLimit: K, SmsVerPerUserLimit: K, TwoFactorAuthMethodDoesNotExist: J },
+                K = "The 2FA method on your account has an issue. Go to the app Settings, verify it, and try again.",
+                J = "Too many attempts, try again later.",
+                ee = { DuplicatedRenameTwoFactorMethodDisplayName: K, ExpiredLoginVerification: Y, FailureSmsCarrierDisabled: "We were not able to send an SMS to this carrier.", IneligibleFor2faAfterModification: K, InvalidRenameTwoFactorMethodDisplayName: K, LoginVerificationUserReactivationRequired: K, NoSecretForUser: K, NoTwoFactorAuthMethod: K, NotAllowed: K, NotValidForTokenExchange: K, NotYetApprovedLoginVerification: K, OfflineCodeSync: K, OverLoginVerificationAttemptLimit: J, OverLoginVerificationConvertLimit: J, OverResendLimit: J, SmsOverPerUserLimit: J, TwoFactorAuthMethodExpired: Y, FailureSendingLoginVerificationRequest: X, OverLoginVerificationStartLimit: J, SmsVerPerUserLimit: J, TwoFactorAuthMethodDoesNotExist: K },
                 te = ({ challengeId: e, isNonModalScreen: t, onSuccess: n }) => {
-                    const { challenge: r, error: c, loginRequestId: i, twoFactor: d } = Q({ challengeId: e }),
+                    const { challenge: r, error: c, loginRequestId: i, twoFactor: d } = G({ challengeId: e }),
                         u = (0, o.useHistory)(),
                         h = (0, l.p)(),
                         f = u.location?.state,
@@ -330,7 +330,7 @@
                 h = n(655352),
                 _ = n(163889),
                 p = n(514639),
-                g = n(351990),
+                g = n(412450),
                 f = n(441484),
                 y = n(99387),
                 b = n(743080),
@@ -659,6 +659,25 @@
                 u = () => d({ decision: c.n.UnrecognizedPaymentDecisionAccept }),
                 m = () => d({ decision: c.n.UnrecognizedPaymentDecisionReject });
         },
+        856228: (e, t, n) => {
+            n.d(t, { Z: () => i });
+            var a = n(942512),
+                r = (n(585488), n(353391)),
+                s = n.n(r),
+                o = n(482924);
+            const c = a.Z,
+                i = () => {
+                    const { data: e, refetch: t } = (0, o.A)(c, {}, { fetchKey: "money-customer-tasks" }),
+                        n = ((e) => (e.get_payments_customer_tasks ? e.get_payments_customer_tasks : null))(e),
+                        a = e?.get_payments_customer_tasks?.__id ?? "useCustomerTasksCarouselQuery_customer_tasks";
+                    return (
+                        s()([a], () => {
+                            t();
+                        }),
+                        { data: n, refetch: t }
+                    );
+                };
+        },
         467734: (e, t, n) => {
             n.d(t, { Z: () => s });
             var a = n(125363),
@@ -769,7 +788,7 @@
         137882: (e, t, n) => {
             n.d(t, { b: () => r, v: () => s });
             n(543673), n(240753), n(128399);
-            var a = n(351990);
+            var a = n(412450);
             const r = ({ txId: e }) => {
                     const { supportUrl: t } = (0, a.Z)(),
                         n = new URL(t);
@@ -1036,4 +1055,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.184a10ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.f603680a.js.map

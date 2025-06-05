@@ -3955,6 +3955,7 @@
                 a("j6cdf012", "Co-hosts kunnen geen andere co-hosts uitnodigen of verwijderen"),
                 a("c727d116", "Co-hosts kunnen de Space niet beëindigen"),
                 a("g69084b8", "Uitnodiging als co-host accepteren"),
+                a("ddd5cfe2", "Dock"),
                 a("ee230734", "Meer opties weergeven"),
                 a("ic8c615e", "Optie snel antwoord kiezen en verzenden"),
                 a("a04077c4", "Kies 1 foto, video of GIF."),
@@ -4924,9 +4925,9 @@
                 a("d9f9dec0", "Space weergeven"),
                 a("h0c1f37a", "Space-analyses bekijken"),
                 a("e41fffbc", "De totale kijktijd van je video's."),
-                a("if2909ba", "Kijktijd"),
-                a("i0e5bf4c", "Jouw video's");
-            a("ed99baea", "Vroege bèta-toegang"),
+                a("if2909ba", "Kijktijd");
+            a("i0e5bf4c", "Jouw video's"),
+                a("ed99baea", "Vroege bèta-toegang"),
                 a("gf898b70", "Geavanceerd zoeken"),
                 a("d2a43a7a", "bevat zowel 'ai' als 'start-up'"),
                 a("a8584698", "ai start-up"),
@@ -5880,9 +5881,9 @@
                 a("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                a("h18f86a4", "Map verwijderen"),
-                a("f4ea967a", "Map is verwijderd");
-            a("b670aa62", "Naam map"),
+                a("h18f86a4", "Map verwijderen");
+            a("f4ea967a", "Map is verwijderd"),
+                a("b670aa62", "Naam map"),
                 a("aece5462", "Mapnaam is bijgewerkt"),
                 a("e3299b94", "Er ging iets mis. Probeer deze map over een paar minuten opnieuw bij te werken."),
                 a("c09ea714", "Er ging iets mis. Probeer deze map over een paar minuten opnieuw te verwijderen."),
@@ -6476,6 +6477,7 @@
                 a("babfa32c", "Snel je weergave aanpassen"),
                 a("a2a2f98e", "Bekijken wat er nieuw is"),
                 a("b4a361c0", "Je kan nu meteen je kleur en tekstgrootte personaliseren, en de donkere modus in- of uitschakelen. Deze instellingen zijn alleen voor jou zichtbaar."),
+                a("g4743c56", "Gaan volgen"),
                 a("c797b44e", "De nieuwste verhalen op X, verteld door posts."),
                 a("a19ce060", "Ontdekken is niet beschikbaar."),
                 a("f7d1a8e0", "Android-app"),
@@ -6883,10 +6885,10 @@
                 a("ede7d0a2", "Valuta"),
                 a("b925c18c", "Soort salaris"),
                 a("j3d242ce", "Ongeldig bereik"),
-                a("f4d07bd2", "Voeg optionele details toe om het makkelijker te maken voor kandidaten om je vacatures te ontdekken met zoekopdrachten."),
-                a("b8cbb51a", "Samenvatting vacature"),
-                a("bda6881e", "Deze functie is geïmporteerd uit je Applicant Tracking System (ATS). Houd er rekening mee dat alleen specifieke velden kunnen worden gewijzigd.");
-            a("b075c68a", "Vacature bewerken"),
+                a("f4d07bd2", "Voeg optionele details toe om het makkelijker te maken voor kandidaten om je vacatures te ontdekken met zoekopdrachten.");
+            a("b8cbb51a", "Samenvatting vacature"),
+                a("bda6881e", "Deze functie is geïmporteerd uit je Applicant Tracking System (ATS). Houd er rekening mee dat alleen specifieke velden kunnen worden gewijzigd."),
+                a("b075c68a", "Vacature bewerken"),
                 a("d4b6a6e0", "Profielspotlight"),
                 a("j2dd3686", "Licht vacatures uit boven mijn posts."),
                 a("af1cfd46", "ATS-integratie"),
@@ -7863,9 +7865,7 @@
                     return "Welkom terug, " + e.displayName;
                 }),
                 a("a76d58ba", "Advertentie-analyses"),
-                a("eccd0e1a", "Organisatie-analyses"),
-                a("deea1708", "Wil je analyses bekijken van al je accounts van X?"),
-                a("eb603ffc", "Upgrade om je netwerk aan je te liëren en verzamelde statistieken te bekijken.");
+                a("eccd0e1a", "Organisatie-analyses");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7904,7 +7904,9 @@
                     o(e, n)
                 );
             }
-            a("gf67aae4", "Upgrade naar volledige toegang"),
+            a("deea1708", "Wil je analyses bekijken van al je accounts van X?"),
+                a("eb603ffc", "Upgrade om je netwerk aan je te liëren en verzamelde statistieken te bekijken."),
+                a("gf67aae4", "Upgrade naar volledige toegang"),
                 a("h75e3618", "Organisatie opnemen"),
                 a("h24a8862", "Over dit selectievakje"),
                 a("c29e3a88", "Gelieerde accounts selecteren"),
@@ -8901,12 +8903,12 @@
                 a("j0f12222", "Meer bekijken"),
                 a("f569f7c8", "Naar website gaan"),
                 a("j0c6772a", "Website bekijken"),
-                a("f73003aa", "Video wordt afgespeeld na de advertentie"),
-                a("b3112b8a", "Overslaan"),
-                a("h6333ad0", "Advertentie overslaan");
-            a("c59da417", function (e) {
-                return "Advertentie overslaan over " + e.seconds;
-            }),
+                a("f73003aa", "Video wordt afgespeeld na de advertentie");
+            a("b3112b8a", "Overslaan"),
+                a("h6333ad0", "Advertentie overslaan"),
+                a("c59da417", function (e) {
+                    return "Advertentie overslaan over " + e.seconds;
+                }),
                 a("c3c147cf", function (e) {
                     return "Overslaan " + e.seconds;
                 }),
@@ -13363,4 +13365,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.68a9020a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.267b80da.js.map

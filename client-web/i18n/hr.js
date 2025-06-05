@@ -3962,6 +3962,7 @@
                 o("j6cdf012", "Suvoditelji ne mogu slati pozivnice ni uklanjati druge suvoditelje"),
                 o("c727d116", "Suvoditelji ne mogu zatvoriti Prostor"),
                 o("g69084b8", "Prihvati pozivnicu za suvoditelja"),
+                o("ddd5cfe2", "Okno"),
                 o("ee230734", "Prikaži još mogućnosti"),
                 o("ic8c615e", "Mogućnost odabira i slanja brzog odgovora"),
                 o("a04077c4", "Odaberite jednu fotografiju, videozapis ili GIF."),
@@ -4931,9 +4932,9 @@
                 o("d9f9dec0", "Prikaži Prostor"),
                 o("h0c1f37a", "Prikaži analitičke podatke o Prostoru"),
                 o("e41fffbc", "Ukupno vrijeme gledanja vaših videozapisa."),
-                o("if2909ba", "Vrijeme gledanja"),
-                o("i0e5bf4c", "Vaši videozapisi");
-            o("ed99baea", "Rani pristup beta verziji"),
+                o("if2909ba", "Vrijeme gledanja");
+            o("i0e5bf4c", "Vaši videozapisi"),
+                o("ed99baea", "Rani pristup beta verziji"),
                 o("gf898b70", "Napredno pretraživanje"),
                 o("d2a43a7a", "sadrži i „ai” i „pokretanje”"),
                 o("a8584698", "AI pokretanje"),
@@ -5887,9 +5888,9 @@
                 o("e41c9b4f", function (a) {
                     return "Saved to " + a.bookmarkFolderName;
                 }),
-                o("h18f86a4", "Izbriši mapu"),
-                o("f4ea967a", "Mapa je izbrisana");
-            o("b670aa62", "Naziv mape"),
+                o("h18f86a4", "Izbriši mapu");
+            o("f4ea967a", "Mapa je izbrisana"),
+                o("b670aa62", "Naziv mape"),
                 o("aece5462", "Naziv mape uspješno je ažuriran"),
                 o("e3299b94", "Došlo je do pogreške. Ponovno pokušajte tu mapu ažurirati za koju minutu."),
                 o("c09ea714", "Došlo je do pogreške. Ponovno pokušajte tu mapu izbrisati za koju minutu."),
@@ -6483,6 +6484,7 @@
                 o("babfa32c", "Brzo prilagodite prikaz"),
                 o("a2a2f98e", "Saznajte novosti"),
                 o("b4a361c0", "Možete personalizirati boju i veličinu teksta, kao i odmah upravljati tamnim načinom. Te su postavke vidljive samo vama."),
+                o("g4743c56", "Počni pratiti"),
                 o("c797b44e", "Najnovije priče na platformi X ispričane pomoću objava."),
                 o("a19ce060", "Istraživanje nije dostupno."),
                 o("f7d1a8e0", "Aplikacija za Android"),
@@ -6890,10 +6892,10 @@
                 o("ede7d0a2", "Valuta"),
                 o("b925c18c", "Vrsta plaće"),
                 o("j3d242ce", "Raspon nije valjan"),
-                o("f4d07bd2", "Uključite neobavezne podatke kako biste kandidatima olakšali otkrivanje vaših radnih mjesta putem pretraživanja."),
-                o("b8cbb51a", "Sažetak posla"),
-                o("bda6881e", "Taj je posao uvezen iz vašeg sustava za praćenje kandidata (ATS). Imajte na umu da se samo određena polja mogu izmijeniti.");
-            o("b075c68a", "Uredi posao"),
+                o("f4d07bd2", "Uključite neobavezne podatke kako biste kandidatima olakšali otkrivanje vaših radnih mjesta putem pretraživanja.");
+            o("b8cbb51a", "Sažetak posla"),
+                o("bda6881e", "Taj je posao uvezen iz vašeg sustava za praćenje kandidata (ATS). Imajte na umu da se samo određena polja mogu izmijeniti."),
+                o("b075c68a", "Uredi posao"),
                 o("d4b6a6e0", "Pojedinosti o profilu"),
                 o("j2dd3686", "Istakni izdvojene poslove iznad mojih objava."),
                 o("af1cfd46", "Integracija ATS-a"),
@@ -7870,9 +7872,7 @@
                     return "Dobro došli natrag, " + a.displayName;
                 }),
                 o("a76d58ba", "Analitika oglasa"),
-                o("eccd0e1a", "Analitika organizacije"),
-                o("deea1708", "Želite li pregledati analitiku za sve vaše račune za X?"),
-                o("eb603ffc", "Nadogradite da biste povezali račun svoje mreže i pregledali skupnu analitiku.");
+                o("eccd0e1a", "Analitika organizacije");
             function t(a, e) {
                 for (var i = 0; i < e.length; i++) {
                     var o = e[i];
@@ -7911,7 +7911,9 @@
                     r(a, e)
                 );
             }
-            o("gf67aae4", "Nadogradi na puni pristup"),
+            o("deea1708", "Želite li pregledati analitiku za sve vaše račune za X?"),
+                o("eb603ffc", "Nadogradite da biste povezali račun svoje mreže i pregledali skupnu analitiku."),
+                o("gf67aae4", "Nadogradi na puni pristup"),
                 o("h75e3618", "Uključi organizaciju"),
                 o("h24a8862", "Više o ovom potvrdnom okviru"),
                 o("c29e3a88", "Odaberite povezane račune"),
@@ -8908,12 +8910,12 @@
                 o("j0f12222", "Pogledajte više"),
                 o("f569f7c8", "Idi na web-mjesto"),
                 o("j0c6772a", "Posjetite web-mjesto"),
-                o("f73003aa", "Videozapis će se reproducirati nakon oglasa"),
-                o("b3112b8a", "Preskoči"),
-                o("h6333ad0", "Preskoči oglas");
-            o("c59da417", function (a) {
-                return "Preskoči oglas za " + a.seconds;
-            }),
+                o("f73003aa", "Videozapis će se reproducirati nakon oglasa");
+            o("b3112b8a", "Preskoči"),
+                o("h6333ad0", "Preskoči oglas"),
+                o("c59da417", function (a) {
+                    return "Preskoči oglas za " + a.seconds;
+                }),
                 o("c3c147cf", function (a) {
                     return "Preskoči " + a.seconds;
                 }),
@@ -13371,4 +13373,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.e5a4db1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.c7f51cfa.js.map

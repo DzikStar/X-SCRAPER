@@ -3959,6 +3959,7 @@
                 a("j6cdf012", "Co-hosts can’t invite or remove other co-hosts"),
                 a("c727d116", "Co-hosts can’t end the Space"),
                 a("g69084b8", "Accept co-host invitation"),
+                a("ddd5cfe2", "Dock"),
                 a("ee230734", "Show more options"),
                 a("ic8c615e", "Choose and send a quick reply option"),
                 a("a04077c4", "Please choose 1 photo, video or GIF."),
@@ -4928,9 +4929,9 @@
                 a("d9f9dec0", "View Space"),
                 a("h0c1f37a", "View Space Analytics"),
                 a("e41fffbc", "The total watch time of your videos."),
-                a("if2909ba", "Watch Time"),
-                a("i0e5bf4c", "Your videos");
-            a("ed99baea", "Early Beta Access"),
+                a("if2909ba", "Watch Time");
+            a("i0e5bf4c", "Your videos"),
+                a("ed99baea", "Early Beta Access"),
                 a("gf898b70", "Advanced Search"),
                 a("d2a43a7a", 'contains both "ai" and "startup"'),
                 a("a8584698", "ai startup"),
@@ -5884,9 +5885,9 @@
                 a("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                a("h18f86a4", "Delete Folder"),
-                a("f4ea967a", "Folder has been deleted");
-            a("b670aa62", "Folder Name"),
+                a("h18f86a4", "Delete Folder");
+            a("f4ea967a", "Folder has been deleted"),
+                a("b670aa62", "Folder Name"),
                 a("aece5462", "Folder name has been updated successfully"),
                 a("e3299b94", "Something went wrong. Try updating that folder again in a minute."),
                 a("c09ea714", "Something went wrong. Try deleting that folder again in a minute."),
@@ -6480,6 +6481,7 @@
                 a("babfa32c", "Quickly customize your view"),
                 a("a2a2f98e", "See what’s new"),
                 a("b4a361c0", "You can personalize your color and the size of your text, as well as control your dark mode selection, right now. These settings are only visible to you."),
+                a("g4743c56", "Start following"),
                 a("c797b44e", "The latest stories on X – as told by posts."),
                 a("a19ce060", "Explore is unavailable."),
                 a("f7d1a8e0", "Android App"),
@@ -6887,10 +6889,10 @@
                 a("ede7d0a2", "Currency"),
                 a("b925c18c", "Salary Type"),
                 a("j3d242ce", "Invalid range"),
-                a("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
-                a("b8cbb51a", "Job summary"),
-                a("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.");
-            a("b075c68a", "Edit job"),
+                a("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search.");
+            a("b8cbb51a", "Job summary"),
+                a("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                a("b075c68a", "Edit job"),
                 a("d4b6a6e0", "Profile Spotlight"),
                 a("j2dd3686", "Highlight featured jobs above my posts."),
                 a("af1cfd46", "ATS integration"),
@@ -7867,9 +7869,7 @@
                     return "Welcome back, " + e.displayName;
                 }),
                 a("a76d58ba", "Ads Analytics"),
-                a("eccd0e1a", "Organisation Analytics"),
-                a("deea1708", "Want to view analytics across all your X accounts?"),
-                a("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics.");
+                a("eccd0e1a", "Organisation Analytics");
             function r(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7908,7 +7908,9 @@
                     s(e, t)
                 );
             }
-            a("gf67aae4", "Upgrade to Full Access"),
+            a("deea1708", "Want to view analytics across all your X accounts?"),
+                a("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
+                a("gf67aae4", "Upgrade to Full Access"),
                 a("h75e3618", "Include organisation"),
                 a("h24a8862", "About this checkbox"),
                 a("c29e3a88", "Select affiliates"),
@@ -8905,12 +8907,12 @@
                 a("j0f12222", "See more"),
                 a("f569f7c8", "Go to website"),
                 a("j0c6772a", "Visit website"),
-                a("f73003aa", "Video will play after ad"),
-                a("b3112b8a", "Skip"),
-                a("h6333ad0", "Skip Ad");
-            a("c59da417", function (e) {
-                return "Skip Ad in " + e.seconds;
-            }),
+                a("f73003aa", "Video will play after ad");
+            a("b3112b8a", "Skip"),
+                a("h6333ad0", "Skip Ad"),
+                a("c59da417", function (e) {
+                    return "Skip Ad in " + e.seconds;
+                }),
                 a("c3c147cf", function (e) {
                     return "Skip " + e.seconds;
                 }),
@@ -13367,4 +13369,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-GB.9455984a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-GB.e38be38a.js.map

@@ -3958,6 +3958,7 @@
                 a("j6cdf012", "Co-hosts can’t invite or remove other co-hosts"),
                 a("c727d116", "Co-hosts can’t end the Space"),
                 a("g69084b8", "Accept co-host invite"),
+                a("ddd5cfe2", "Dock"),
                 a("ee230734", "Fi àṣàyàn síi hàn"),
                 a("ic8c615e", "Yàn kí o sì fi ẹ̀yàn èsì kíá ṣọwọ́"),
                 a("a04077c4", "Jọ̀wọ́ yan àwòrán, fídíò àbí GIF kan."),
@@ -4927,9 +4928,9 @@
                 a("d9f9dec0", "View Space"),
                 a("h0c1f37a", "View Space Analytics"),
                 a("e41fffbc", "The total watch time of your videos."),
-                a("if2909ba", "Watch Time"),
-                a("i0e5bf4c", "Your videos");
-            a("ed99baea", "Early Beta Access"),
+                a("if2909ba", "Watch Time");
+            a("i0e5bf4c", "Your videos"),
+                a("ed99baea", "Early Beta Access"),
                 a("gf898b70", "Advanced Search"),
                 a("d2a43a7a", 'contains both "ai" and "startup"'),
                 a("a8584698", "ai startup"),
@@ -5883,9 +5884,9 @@
                 a("e41c9b4f", function (e) {
                     return "Fipamọ̀ sí " + e.bookmarkFolderName;
                 }),
-                a("h18f86a4", "Pa Fódà rẹ́"),
-                a("f4ea967a", "A ti pa fódà rẹ́");
-            a("b670aa62", "Orúkọ Fódà"),
+                a("h18f86a4", "Pa Fódà rẹ́");
+            a("f4ea967a", "A ti pa fódà rẹ́"),
+                a("b670aa62", "Orúkọ Fódà"),
                 a("aece5462", "Orúkọ fódà rẹ ti wà ní ìmú kójú òṣùwọ̀n láyọ̀"),
                 a("e3299b94", "Ǹkankan ò lọ dáadáa. Gbìyanjú láti se ìmú kójú òṣùwọ̀n fódà yẹn lẹ́ẹ̀kansi láarín ìṣẹ́jú kan."),
                 a("c09ea714", "Ǹkankan ò lọ dáadáa. Gbìyanjú láti pa fódà yẹn rẹ́ lẹ́ẹ̀kansi láarín ìṣẹ́jú kan."),
@@ -6479,6 +6480,7 @@
                 a("babfa32c", "Tètè ṣe àkànṣe wíwò rẹ"),
                 a("a2a2f98e", "Rí ǹkan tó jẹ́ titun"),
                 a("b4a361c0", "O lè ṣe ṣe ìsọdi tara ẹni àwò àti ìwọ̀n nnkan tí a kọ sílẹ̀ rẹ, àti ṣàkóso yíyàn móòdù dúdú rẹ. Ìwọ nìkan lón rí àwọn ètò wọ̀nyí."),
+                a("g4743c56", "Start following"),
                 a("c797b44e", "The latest stories on X - as told by posts."),
                 a("a19ce060", "Kò sí ìwádìí nílẹ̀."),
                 a("f7d1a8e0", "Áàpù Áńdírọ́ìdì"),
@@ -6886,10 +6888,10 @@
                 a("ede7d0a2", "Currency"),
                 a("b925c18c", "Salary Type"),
                 a("j3d242ce", "Invalid range"),
-                a("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
-                a("b8cbb51a", "Job Summary"),
-                a("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.");
-            a("b075c68a", "Edit job"),
+                a("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search.");
+            a("b8cbb51a", "Job Summary"),
+                a("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                a("b075c68a", "Edit job"),
                 a("d4b6a6e0", "Ojútáyé Prófaìlì"),
                 a("j2dd3686", "Highlight featured jobs above my posts."),
                 a("af1cfd46", "ATS integration"),
@@ -7866,9 +7868,7 @@
                     return "Welcome back, " + e.displayName;
                 }),
                 a("a76d58ba", "Ads Analytics"),
-                a("eccd0e1a", "Organization Analytics"),
-                a("deea1708", "Want to view analytics across all your X accounts?"),
-                a("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics.");
+                a("eccd0e1a", "Organization Analytics");
             function r(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7907,7 +7907,9 @@
                     s(e, n)
                 );
             }
-            a("gf67aae4", "Upgrade to Full Access"),
+            a("deea1708", "Want to view analytics across all your X accounts?"),
+                a("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
+                a("gf67aae4", "Upgrade to Full Access"),
                 a("h75e3618", "Include organization"),
                 a("h24a8862", "About this checkbox"),
                 a("c29e3a88", "Select affiliates"),
@@ -8904,12 +8906,12 @@
                 a("j0f12222", "Wò sì i"),
                 a("f569f7c8", "Go to website"),
                 a("j0c6772a", "Visit website"),
-                a("f73003aa", "Video will play after ad"),
-                a("b3112b8a", "Fò ó"),
-                a("h6333ad0", "Skip Ad");
-            a("c59da417", function (e) {
-                return "Skip Ad in " + e.seconds;
-            }),
+                a("f73003aa", "Video will play after ad");
+            a("b3112b8a", "Fò ó"),
+                a("h6333ad0", "Skip Ad"),
+                a("c59da417", function (e) {
+                    return "Skip Ad in " + e.seconds;
+                }),
                 a("c3c147cf", function (e) {
                     return "Skip " + e.seconds;
                 }),
@@ -13352,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.39646a4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.7303509a.js.map

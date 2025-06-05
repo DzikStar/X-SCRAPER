@@ -3955,6 +3955,7 @@
                 s("j6cdf012", "[Cöø-höøsts cåän’t ïínvïítéê öør réêmöøvéê öøthéêr cöø-höøsts]"),
                 s("c727d116", "[Cöø-höøsts cåän’t éênd théê Spåäcéê]"),
                 s("g69084b8", "[Accéêpt cöø-höøst ïínvïítéê]"),
+                s("ddd5cfe2", "[Döøck]"),
                 s("ee230734", "[Shöøw möøréê öøptïíöøns]"),
                 s("ic8c615e", "[Chöøöøséê åänd séênd åä qüïíck réêply öøptïíöøn]"),
                 s("a04077c4", "[Pléêåäséê chöøöøséê 1 phöøtöø, vïídéêöø öør GIF.]"),
@@ -4924,9 +4925,9 @@
                 s("d9f9dec0", "[Vïíéêw Spåäcéê]"),
                 s("h0c1f37a", "[Vïíéêw Spåäcéê Anåälytïícs]"),
                 s("e41fffbc", "[Théê töøtåäl wåätch tïíméê öøf yöøür vïídéêöøs.]"),
-                s("if2909ba", "[Wåätch Tïíméê]"),
-                s("i0e5bf4c", "[Yöøür vïídéêöøs]");
-            s("ed99baea", "[Eåärly Béêtåä Accéêss]"),
+                s("if2909ba", "[Wåätch Tïíméê]");
+            s("i0e5bf4c", "[Yöøür vïídéêöøs]"),
+                s("ed99baea", "[Eåärly Béêtåä Accéêss]"),
                 s("gf898b70", "[Advåäncéêd Séêåärch]"),
                 s("d2a43a7a", '[cöøntåäïíns böøth "åäïí" åänd "ståärtüp"]'),
                 s("a8584698", "[åäïí ståärtüp]"),
@@ -5880,9 +5881,9 @@
                 s("e41c9b4f", function (t) {
                     return "[Såävéêd töø " + t.bookmarkFolderName + "]";
                 }),
-                s("h18f86a4", "[Déêléêtéê Föøldéêr]"),
-                s("f4ea967a", "[Föøldéêr håäs béêéên déêléêtéêd]");
-            s("b670aa62", "[Föøldéêr Nåäméê]"),
+                s("h18f86a4", "[Déêléêtéê Föøldéêr]");
+            s("f4ea967a", "[Föøldéêr håäs béêéên déêléêtéêd]"),
+                s("b670aa62", "[Föøldéêr Nåäméê]"),
                 s("aece5462", "[Föøldéêr nåäméê håäs béêéên üpdåätéêd süccéêssfülly]"),
                 s("e3299b94", "[Söøméêthïíng wéênt wröøng. Try üpdåätïíng thåät föøldéêr åägåäïín ïín åä mïínütéê.]"),
                 s("c09ea714", "[Söøméêthïíng wéênt wröøng. Try déêléêtïíng thåät föøldéêr åägåäïín ïín åä mïínütéê.]"),
@@ -6476,6 +6477,7 @@
                 s("babfa32c", "[Qüïíckly cüstöømïízéê yöøür vïíéêw]"),
                 s("a2a2f98e", "[Séêéê whåät’s néêw]"),
                 s("b4a361c0", "[Yöøü cåän péêrsöønåälïízéê yöøür cöølöør åänd théê sïízéê öøf yöøür téêxt, åäs wéêll åäs cöøntröøl yöøür dåärk möødéê séêléêctïíöøn, rïíght nöøw. Théêséê séêttïíngs åäréê öønly vïísïíbléê töø yöøü.]"),
+                s("g4743c56", "[Ståärt föøllöøwïíng]"),
                 s("c797b44e", "[Théê låätéêst stöørïíéês öøn X - åäs töøld by pöøsts.]"),
                 s("a19ce060", "[Explöøréê ïís ünåävåäïílåäbléê.]"),
                 s("f7d1a8e0", "[Andröøïíd App]"),
@@ -6883,10 +6885,10 @@
                 s("ede7d0a2", "[Cürréêncy]"),
                 s("b925c18c", "[Såälåäry Typéê]"),
                 s("j3d242ce", "[Invåälïíd råängéê]"),
-                s("f4d07bd2", "[Inclüdéê öøptïíöønåäl déêtåäïíls töø måäkéê ïít éêåäsïíéêr föør cåändïídåätéês töø dïíscöøvéêr yöøür röøléês wïíth séêåärch.]"),
-                s("b8cbb51a", "[Jöøb Sümmåäry]"),
-                s("bda6881e", "[Thïís jöøb håäs béêéên ïímpöørtéêd fröøm yöøür Applïícåänt Tråäckïíng Systéêm (ATS). Pléêåäséê nöøtéê thåät öønly spéêcïífïíc fïíéêlds cåän béê möødïífïíéêd.]");
-            s("b075c68a", "[Edïít jöøb]"),
+                s("f4d07bd2", "[Inclüdéê öøptïíöønåäl déêtåäïíls töø måäkéê ïít éêåäsïíéêr föør cåändïídåätéês töø dïíscöøvéêr yöøür röøléês wïíth séêåärch.]");
+            s("b8cbb51a", "[Jöøb Sümmåäry]"),
+                s("bda6881e", "[Thïís jöøb håäs béêéên ïímpöørtéêd fröøm yöøür Applïícåänt Tråäckïíng Systéêm (ATS). Pléêåäséê nöøtéê thåät öønly spéêcïífïíc fïíéêlds cåän béê möødïífïíéêd.]"),
+                s("b075c68a", "[Edïít jöøb]"),
                 s("d4b6a6e0", "[Pröøfïíléê Spöøtlïíght]"),
                 s("j2dd3686", "[Hïíghlïíght féêåätüréêd jöøbs åäböøvéê my pöøsts.]"),
                 s("af1cfd46", "[ATS ïíntéêgråätïíöøn]"),
@@ -7863,9 +7865,7 @@
                     return "[Wéêlcöøméê båäck, " + t.displayName + "]";
                 }),
                 s("a76d58ba", "[Ads Anåälytïícs]"),
-                s("eccd0e1a", "[Orgåänïízåätïíöøn Anåälytïícs]"),
-                s("deea1708", "[Wåänt töø vïíéêw åänåälytïícs åäcröøss åäll yöøür X åäccöøünts?]"),
-                s("eb603ffc", "[Upgråädéê töø åäffïílïíåätéê yöøür néêtwöørk åänd vïíéêw åäggréêgåätéêd åänåälytïícs.]");
+                s("eccd0e1a", "[Orgåänïízåätïíöøn Anåälytïícs]");
             function d(t, n) {
                 for (var r = 0; r < n.length; r++) {
                     var s = n[r];
@@ -7904,7 +7904,9 @@
                     e(t, n)
                 );
             }
-            s("gf67aae4", "[Upgråädéê töø Füll Accéêss]"),
+            s("deea1708", "[Wåänt töø vïíéêw åänåälytïícs åäcröøss åäll yöøür X åäccöøünts?]"),
+                s("eb603ffc", "[Upgråädéê töø åäffïílïíåätéê yöøür néêtwöørk åänd vïíéêw åäggréêgåätéêd åänåälytïícs.]"),
+                s("gf67aae4", "[Upgråädéê töø Füll Accéêss]"),
                 s("h75e3618", "[Inclüdéê öørgåänïízåätïíöøn]"),
                 s("h24a8862", "[Aböøüt thïís chéêckböøx]"),
                 s("c29e3a88", "[Séêléêct åäffïílïíåätéês]"),
@@ -8901,12 +8903,12 @@
                 s("j0f12222", "[Séêéê möøréê]"),
                 s("f569f7c8", "[Göø töø wéêbsïítéê]"),
                 s("j0c6772a", "[Vïísïít wéêbsïítéê]"),
-                s("f73003aa", "[Vïídéêöø wïíll plåäy åäftéêr åäd]"),
-                s("b3112b8a", "[Skïíp]"),
-                s("h6333ad0", "[Skïíp Ad]");
-            s("c59da417", function (t) {
-                return "[Skïíp Ad ïín " + t.seconds + "]";
-            }),
+                s("f73003aa", "[Vïídéêöø wïíll plåäy åäftéêr åäd]");
+            s("b3112b8a", "[Skïíp]"),
+                s("h6333ad0", "[Skïíp Ad]"),
+                s("c59da417", function (t) {
+                    return "[Skïíp Ad ïín " + t.seconds + "]";
+                }),
                 s("c3c147cf", function (t) {
                     return "[Skïíp " + t.seconds + "]";
                 }),
@@ -13350,4 +13352,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.4eb6a60a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.16225c0a.js.map

@@ -162,71 +162,6 @@
             s.hash = "1e5b539a44950f857573fb1f5dd08e2b";
             const r = s;
         },
-        991744: (e, l, a) => {
-            a.d(l, { Z: () => r });
-            var n,
-                i,
-                s = {
-                    fragment: {
-                        argumentDefinitions: [],
-                        kind: "Fragment",
-                        metadata: null,
-                        name: "CustomerTasksCarouselQuery",
-                        selections: (i = [
-                            {
-                                alias: null,
-                                args: [
-                                    { kind: "Literal", name: "count", value: 10 },
-                                    { kind: "Literal", name: "s", value: "8cce" },
-                                ],
-                                concreteType: "XPaymentsCustomerTasksSlice",
-                                kind: "LinkedField",
-                                name: "get_payments_customer_tasks",
-                                plural: !1,
-                                selections: [
-                                    {
-                                        alias: null,
-                                        args: null,
-                                        concreteType: "XPaymentsCustomerTask",
-                                        kind: "LinkedField",
-                                        name: "items",
-                                        plural: !0,
-                                        selections: [
-                                            { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null },
-                                            { alias: null, args: null, kind: "ScalarField", name: "title", storageKey: null },
-                                            { alias: null, args: null, kind: "ScalarField", name: "subtitle", storageKey: null },
-                                            { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "icon", plural: !1, selections: [(n = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "icon_type", storageKey: null }], type: "XPaymentsCustomerTaskPredefinedIcon", abstractKey: null }, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], type: "XPaymentsCustomerTaskRemoteImageIcon", abstractKey: null }], storageKey: null },
-                                            { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "destination", plural: !1, selections: [n], storageKey: null },
-                                        ],
-                                        storageKey: null,
-                                    },
-                                    {
-                                        alias: null,
-                                        args: null,
-                                        concreteType: "SliceInfo",
-                                        kind: "LinkedField",
-                                        name: "slice_info",
-                                        plural: !1,
-                                        selections: [
-                                            { alias: null, args: null, kind: "ScalarField", name: "next_cursor", storageKey: null },
-                                            { alias: null, args: null, kind: "ScalarField", name: "previous_cursor", storageKey: null },
-                                        ],
-                                        storageKey: null,
-                                    },
-                                ],
-                                storageKey: 'get_payments_customer_tasks(count:10,s:"8cce")',
-                            },
-                        ]),
-                        type: "Query",
-                        abstractKey: null,
-                    },
-                    kind: "Request",
-                    operation: { argumentDefinitions: [], kind: "Operation", name: "CustomerTasksCarouselQuery", selections: i },
-                    params: { id: "AqIlghbXAQbZewoYkhA0_g", metadata: {}, name: "CustomerTasksCarouselQuery", operationKind: "query", text: null },
-                };
-            s.hash = "8cfc0ef9bc36e9684604e6727c2e49cc";
-            const r = s;
-        },
         882956: (e, l, a) => {
             a.d(l, { Z: () => i });
             var n = {
@@ -813,4 +748,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.a240d46a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.695ac8ca.js.map

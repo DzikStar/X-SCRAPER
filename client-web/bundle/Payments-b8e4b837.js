@@ -299,7 +299,7 @@
                         t
                     );
                 },
-                T = "Add a debit card",
+                T = "Add your debit card",
                 S = { page: "money", section: "bank-card" },
                 B = (e) => {
                     const t = (0, r.Dv)(m.lZ),
@@ -312,7 +312,7 @@
                         P = (0, h.JY)("payments_crb_iframe_delay_msecs", 0),
                         I = n.useMemo(() => (a?.challenge_id ? { pathname: y.vw, state: { challengeId: a?.challenge_id, challengeInitiator: y.kW.addBankCard, redirectPath: y.UA, redirectState: { redirectPath: _ } } } : null), [_, a?.challenge_id]),
                         v = n.useMemo(() => ({ pathname: y.ac, state: Z ?? {} }), [Z]),
-                        B = n.createElement(c.Z, { style: C.footer }, n.createElement(o.ZP, { align: "center", color: "text", link: v }, "Use a bank account")),
+                        B = n.createElement(c.Z, { style: C.footer }, n.createElement(o.ZP, { align: "center", color: "text", link: v }, "Use your bank account")),
                         x = n.useCallback(() => {
                             P
                                 ? setTimeout(() => {
@@ -828,7 +828,7 @@
                 Pe = a(776588),
                 Ie = a(883229),
                 ve = a(943914),
-                we = a(351990),
+                we = a(412450),
                 Te = a(529438);
             const Se = a(456221).Z,
                 Be = () => {
@@ -952,4 +952,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-b8e4b837.f456692a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-b8e4b837.8c9c9d2a.js.map

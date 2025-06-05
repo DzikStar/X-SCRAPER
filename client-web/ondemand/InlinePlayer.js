@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.InlinePlayer", "loader.AudioDock", "loader.AudioContextVoiceMedia", "loader.AudioContextSpaceClip", "loader.AudioOnlyVideoPlayer", "icons/IconFeedback-js"],
+    ["ondemand.InlinePlayer", "loader.AudioDock", "loader.AudioContextVoiceMedia", "loader.AudioContextSpaceClip", "loader.AudioOnlyVideoPlayer"],
     {
         541837: (e, t, i) => {
             i.d(t, { Z: () => o });
@@ -257,8 +257,8 @@
                 m = i(908478),
                 f = i(323265),
                 g = i(791632),
-                b = i(443781),
-                P = i(931162),
+                P = i(443781),
+                b = i(931162),
                 v = i(993547),
                 I = i(329491),
                 E = i(954300),
@@ -297,7 +297,7 @@
                                     noAuthHttpClient: y,
                                     playerId: m,
                                     publisherId: f,
-                                    source: { contentId: g, eventId: b, videoId: v, vmapUrl: I },
+                                    source: { contentId: g, eventId: P, videoId: v, vmapUrl: I },
                                     timecode: E,
                                     twitterAuthedHttpClient: A,
                                     uiStack: C,
@@ -308,7 +308,7 @@
                                 } = this.props,
                                 R = this.context.featureSwitches.isTrue("rweb_video_pip_enabled"),
                                 L = this.context.featureSwitches.isTrue("rweb_live_broadcast_rewind_enabled");
-                            return a.createElement(P.R.Consumer, null, ({ prerollDisplayLocation: P }) => a.createElement(u.Z, (0, r.Z)({ adProvider: this._tweetAdProvider(P), additionalBadges: t, analytics: i, "aria-label": o, aspectRatio: n, basePlayerClass: w, configType: "static", contentId: g, cta: this._getPlayerCTA(), disableHls: this._disableHls, durationMs: l, enablePiP: R, enableVideoPlayerCaptionRendering: !0, eventId: b, featureProvider: this.context.featureSwitches, generateDrmTokenCallback: this.props.generateDrmTokenCallback, geolocationPrompt: c, httpClient: y, includeBroadcastEventAssociation: d, intentToPlayTime: p, language: h, liveBroadcastRewindEnabled: L, mediaAvailability: _, objectFitVideo: s && s.objectFitVideo, onApiReady: this._handleApiReady, playbackSessionId: v.id, playerId: m, precache: this._shouldAutoplay, publisherId: f, requestedTimecode: E, twitterAuthedHttpClient: A, videoEl: T, videoId: v, viewCount: S, viewCountGraphData: k, vmapUrl: I }, e), C));
+                            return a.createElement(b.R.Consumer, null, ({ prerollDisplayLocation: b }) => a.createElement(u.Z, (0, r.Z)({ adProvider: this._tweetAdProvider(b), additionalBadges: t, analytics: i, "aria-label": o, aspectRatio: n, basePlayerClass: w, configType: "static", contentId: g, cta: this._getPlayerCTA(), disableHls: this._disableHls, durationMs: l, enablePiP: R, enableVideoPlayerCaptionRendering: !0, eventId: P, featureProvider: this.context.featureSwitches, generateDrmTokenCallback: this.props.generateDrmTokenCallback, geolocationPrompt: c, httpClient: y, includeBroadcastEventAssociation: d, intentToPlayTime: p, language: h, liveBroadcastRewindEnabled: L, mediaAvailability: _, objectFitVideo: s && s.objectFitVideo, onApiReady: this._handleApiReady, playbackSessionId: v.id, playerId: m, precache: this._shouldAutoplay, publisherId: f, requestedTimecode: E, twitterAuthedHttpClient: A, videoEl: T, videoId: v, viewCount: S, viewCountGraphData: k, vmapUrl: I }, e), C));
                         }),
                         (this._setPlayerApi = (e) => {
                             const { customOverlay: t, onMuteChange: i, onSetPlayerApi: r } = this.props;
@@ -467,19 +467,19 @@
                     this._emitter && this._placementRef && t && (this._placementRef.sample(this._handlePlacementChange), (this._hasInitialPlacementMeasurement = !0));
                 }
             }
-            (O.contextType = b.rC), (O.defaultProps = { autoplay: A.Z.Off, playbackCoordination: k.Tc, playbackPriority: l.W.NORMAL, showControls: !0, dataSaverMode: !1, geolocationPrompt: !0, heightsReady: !0, noAuthHttpClient: N, includeBroadcastEventAssociation: !1 });
+            (O.contextType = P.rC), (O.defaultProps = { autoplay: A.Z.Off, playbackCoordination: k.Tc, playbackPriority: l.W.NORMAL, showControls: !0, dataSaverMode: !1, geolocationPrompt: !0, heightsReady: !0, noAuthHttpClient: N, includeBroadcastEventAssociation: !1 });
             const D = _.default.create({ aspectRatio: { zIndex: void 0 }, aspectRatioDocked: { zIndex: void 0, maxHeight: "70vh" } }),
                 M = (0, v.Z)(O);
             var x = i(555492),
                 F = i(513588),
                 U = i(942893),
-                Z = i(625555),
-                V = i(71620),
+                V = i(625555),
+                Z = i(71620),
                 G = i(668214),
                 q = i(558369),
                 H = i(109223),
-                z = i(694180),
-                B = i(390387),
+                B = i(694180),
+                z = i(390387),
                 Y = i(659773),
                 W = i(836255),
                 j = i(533128);
@@ -498,18 +498,18 @@
                     return !!i && (0, j.$y)(r, i, j.d.Autoplay);
                 },
                 K = (0, G.Z)()
-                    .propsFromState(() => ({ dataSaverMode: Y.IX, language: B.VT, sourceTweet: W.Z.createHydratedTweetSelector(Q), disableAutoplay: J, videoContentId: X }))
+                    .propsFromState(() => ({ dataSaverMode: Y.IX, language: z.VT, sourceTweet: W.Z.createHydratedTweetSelector(Q), disableAutoplay: J, videoContentId: X }))
                     .adjustStateProps(({ dataSaverMode: e, disableAutoplay: t, language: i, sourceTweet: r, videoContentId: a }) => ({ dataSaverMode: e, disableAutoplay: t, language: i, mediaAvailability: (r && (0, E.DY)(r, a)) || void 0, publisherId: r ? (0, E.Pz)(r) : void 0 }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, V.zr)("INLINE_PLAYER_CONTAINER"), getTwitterAuthedHttpClient: $, logPromotedVideoEvent: z.iY, tweetAdProvider: H.Q3 }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, Z.zr)("INLINE_PLAYER_CONTAINER"), getTwitterAuthedHttpClient: $, logPromotedVideoEvent: B.iY, tweetAdProvider: H.Q3 }))
                     .withAnalytics(),
                 ee = (0, o.cn)((e) =>
-                    e(Z.F6)
+                    e(V.F6)
                         .login()
                         .catch(() => {}),
                 ),
                 te = (0, F.J)();
             function ie(e) {
-                const t = a.useContext(b.rC),
+                const t = a.useContext(P.rC),
                     i = a.useRef(),
                     o = "broadcast" === e.source.videoId.type && !!t.viewerUserId && t.featureSwitches.isTrue("rweb_video_logged_in_analytics_enabled");
                 (0, n.Dv)(o ? ee : te);
@@ -523,7 +523,7 @@
                             { analytics: o } = e;
                         a?.action && o.scribe({ ...a, data: { ...r, _category_: i } });
                     },
-                    P = a.useMemo(() => h(), [h]),
+                    b = a.useMemo(() => h(), [h]),
                     v = ((i) => {
                         const r = { log: g },
                             { analytics: a } = e,
@@ -547,7 +547,7 @@
                                 : void 0,
                             h = { scribeContext: { ...s }, baseScribeItem: u, enableShortFormCompleteLogging: t.featureSwitches.isTrue("responsive_web_video_pcomplete_enabled"), ...(o && { periscopeAuthToken: p.E.authToken(), userType: p.E.userType() }) };
                         return new d.Z(r, n, i, h);
-                    })(P),
+                    })(b),
                     I = (t) => {
                         if (((i.current = t), e.setPlayer)) {
                             const t = i &&
@@ -568,7 +568,7 @@
                             e.setPlayer(t);
                         }
                     };
-                return a.createElement(x.Z.Consumer, null, ({ heightsReady: e }) => a.createElement(s.Z.Consumer, null, ({ playbackPriority: t }) => a.createElement(M, (0, r.Z)({}, m, { analytics: v, heightsReady: e, playbackPriority: t === l.W.INELIGIBLE ? t : _, setPlayer: I, tweetAdProvider: y, twitterAuthedHttpClient: P }))));
+                return a.createElement(x.Z.Consumer, null, ({ heightsReady: e }) => a.createElement(s.Z.Consumer, null, ({ playbackPriority: t }) => a.createElement(M, (0, r.Z)({}, m, { analytics: v, heightsReady: e, playbackPriority: t === l.W.INELIGIBLE ? t : _, setPlayer: I, tweetAdProvider: y, twitterAuthedHttpClient: b }))));
             }
             const re = K(ie);
         },
@@ -642,8 +642,8 @@
                 m = i(917799);
             const f = "FETCH_PREROLLS",
                 g = (0, m.dg)(l.A7, f),
-                b = 10;
-            function P(e) {
+                P = 10;
+            function b(e) {
                 const t = {},
                     i = {};
                 return (
@@ -666,7 +666,7 @@
                 const n = [o];
                 return (
                     e.forEach((e) => {
-                        o.length === b && ((o = []), n.push(o)), o.push(e);
+                        o.length === P && ((o = []), n.push(o)), o.push(e);
                     }),
                     Promise.all(
                         n.map((e) =>
@@ -682,7 +682,7 @@
                     ).then((e) => {
                         let t = {};
                         e.forEach((e) => {
-                            e && e.prerolls && (t = { ...t, ...P(e) });
+                            e && e.prerolls && (t = { ...t, ...b(e) });
                         });
                         const r = { type: C, payload: { ...{ dynamicIVCollection: t }, prerollDisplayLocation: a } };
                         i(r);
@@ -906,19 +906,6 @@
             const l = n.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 c = s;
         },
-        790093: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => l });
-            var r = i(202784),
-                a = i(890601),
-                o = i(783427),
-                n = i(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
         98440: (e, t, i) => {
             i.r(t), i.d(t, { default: () => l });
             var r = i(202784),
@@ -979,10 +966,10 @@
                         u = 7 === e,
                         h = 5 === e || p;
                     return function (_, y, m, f) {
-                        for (var g, b, P = n(_), v = o(P), I = r(y, m), E = s(v), A = 0, C = f || l, T = t ? C(_, E) : i || u ? C(_, 0) : void 0; E > A; A++)
-                            if ((h || A in v) && ((b = I((g = v[A]), A, P)), e))
-                                if (t) T[A] = b;
-                                else if (b)
+                        for (var g, P, b = n(_), v = o(b), I = r(y, m), E = s(v), A = 0, C = f || l, T = t ? C(_, E) : i || u ? C(_, 0) : void 0; E > A; A++)
+                            if ((h || A in v) && ((P = I((g = v[A]), A, b)), e))
+                                if (t) T[A] = P;
+                                else if (P)
                                     switch (e) {
                                         case 3:
                                             return !0;
@@ -1196,7 +1183,7 @@
                     );
                 })
                     ? function (e, t) {
-                          for (var i = d(e), a = arguments.length, n = 1, u = l.f, h = c.f; a > n; ) for (var y, m = p(arguments[n++]), f = u ? _(s(m), u(m)) : s(m), g = f.length, b = 0; g > b; ) (y = f[b++]), (r && !o(h, m, y)) || (i[y] = m[y]);
+                          for (var i = d(e), a = arguments.length, n = 1, u = l.f, h = c.f; a > n; ) for (var y, m = p(arguments[n++]), f = u ? _(s(m), u(m)) : s(m), g = f.length, P = 0; g > P; ) (y = f[P++]), (r && !o(h, m, y)) || (i[y] = m[y]);
                           return i;
                       }
                     : u;
@@ -1289,9 +1276,9 @@
                             u = c(this),
                             _ = l(u),
                             g = s(e, _),
-                            b = s(void 0 === t ? _ : t, _);
-                        if (a(u) && ((i = u.constructor), ((o(i) && (i === m || a(i.prototype))) || (n(i) && null === (i = i[y]))) && (i = void 0), i === m || void 0 === i)) return h(u, g, b);
-                        for (r = new (void 0 === i ? m : i)(f(b - g, 0)), p = 0; g < b; g++, p++) g in u && d(r, p, u[g]);
+                            P = s(void 0 === t ? _ : t, _);
+                        if (a(u) && ((i = u.constructor), ((o(i) && (i === m || a(i.prototype))) || (n(i) && null === (i = i[y]))) && (i = void 0), i === m || void 0 === i)) return h(u, g, P);
+                        for (r = new (void 0 === i ? m : i)(f(P - g, 0)), p = 0; g < P; g++, p++) g in u && d(r, p, u[g]);
                         return (r.length = p), r;
                     },
                 },
@@ -1314,8 +1301,8 @@
                 m = i(778151).f,
                 f = i(997933).f,
                 g = i(931787).f,
-                b = i(890143),
-                P = i(1017).trim,
+                P = i(890143),
+                b = i(1017).trim,
                 v = "Number",
                 I = n[v],
                 E = s[v],
@@ -1335,7 +1322,7 @@
                         c = _(e, "number");
                     if (h(c)) throw new C("Cannot convert a Symbol value to a number");
                     if ("string" == typeof c && c.length > 2)
-                        if (((c = P(c)), 43 === (t = w(c, 0)) || 45 === t)) {
+                        if (((c = b(c)), 43 === (t = w(c, 0)) || 45 === t)) {
                             if (88 === (i = w(c, 2)) || 120 === i) return NaN;
                         } else if (48 === t) {
                             switch (w(c, 1)) {
@@ -1369,7 +1356,7 @@
                                   );
                     return u(A, (t = this)) &&
                         y(function () {
-                            b(t);
+                            P(t);
                         })
                         ? p(Object(i), this, R)
                         : i;
@@ -1406,4 +1393,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer.16e9abfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer.8910cd3a.js.map

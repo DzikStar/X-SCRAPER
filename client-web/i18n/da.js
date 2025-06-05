@@ -3955,6 +3955,7 @@
                 t("j6cdf012", "Medværter kan ikke invitere eller fjerne andre medværter"),
                 t("c727d116", "Medværter kan ikke afslutte Rummet"),
                 t("g69084b8", "Acceptér medværtsinvitation"),
+                t("ddd5cfe2", "Fastgør"),
                 t("ee230734", "Vis flere indstillinger"),
                 t("ic8c615e", "Vælg og send et hurtigt svar"),
                 t("a04077c4", "Vælg et billede, en video eller en GIF."),
@@ -4924,9 +4925,9 @@
                 t("d9f9dec0", "Se Rum"),
                 t("h0c1f37a", "Se rumanalysen"),
                 t("e41fffbc", "Den samlede visningstid for dine videoer."),
-                t("if2909ba", "Visningstid"),
-                t("i0e5bf4c", "Dine videoer");
-            t("ed99baea", "Tidlig beta-adgang"),
+                t("if2909ba", "Visningstid");
+            t("i0e5bf4c", "Dine videoer"),
+                t("ed99baea", "Tidlig beta-adgang"),
                 t("gf898b70", "Avanceret søgning"),
                 t("d2a43a7a", 'indeholder både "ai" og "startup"'),
                 t("a8584698", "ai startup"),
@@ -5880,9 +5881,9 @@
                 t("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Slet mappe"),
-                t("f4ea967a", "Mappen er blevet slettet");
-            t("b670aa62", "Mappenavn"),
+                t("h18f86a4", "Slet mappe");
+            t("f4ea967a", "Mappen er blevet slettet"),
+                t("b670aa62", "Mappenavn"),
                 t("aece5462", "Mappenavnet er blevet opdateret"),
                 t("e3299b94", "Noget gik galt. Prøv at opdatere mappen igen om et øjeblik."),
                 t("c09ea714", "Noget gik galt. Prøv at slette mappen igen om et øjeblik."),
@@ -6476,6 +6477,7 @@
                 t("babfa32c", "Tilpas hurtigt din visning"),
                 t("a2a2f98e", "Se alle nyhederne"),
                 t("b4a361c0", "Du kan ændre farven og skriftstørrelsen på din tekst og endda slå mørk tilstand til med det samme. Det er kun dig, der kan se disse indstillinger."),
+                t("g4743c56", "Begynd at følge"),
                 t("c797b44e", "De seneste historier på X – som fortalt i posts."),
                 t("a19ce060", "Udforsk er ikke tilgængelig."),
                 t("f7d1a8e0", "Android-app"),
@@ -6883,10 +6885,10 @@
                 t("ede7d0a2", "Valuta"),
                 t("b925c18c", "Løntype"),
                 t("j3d242ce", "Ugyldigt interval"),
-                t("f4d07bd2", "Inkluder valgfrie oplysninger for at gøre det lettere for ansøgere at finde dine stillinger med søgning."),
-                t("b8cbb51a", "Stillingsoversigt"),
-                t("bda6881e", "Denne stilling er blevet importeret fra dit ansøgersporingssystem (ATS). Bemærk, at kun specifikke felter kan ændres.");
-            t("b075c68a", "Rediger stilling"),
+                t("f4d07bd2", "Inkluder valgfrie oplysninger for at gøre det lettere for ansøgere at finde dine stillinger med søgning.");
+            t("b8cbb51a", "Stillingsoversigt"),
+                t("bda6881e", "Denne stilling er blevet importeret fra dit ansøgersporingssystem (ATS). Bemærk, at kun specifikke felter kan ændres."),
+                t("b075c68a", "Rediger stilling"),
                 t("d4b6a6e0", "Profil-spotlight"),
                 t("j2dd3686", "Giv mere fokus til fremhævede stillinger end til mine poster."),
                 t("af1cfd46", "ATS-integration"),
@@ -7863,9 +7865,7 @@
                     return "Velkommen tilbage " + e.displayName;
                 }),
                 t("a76d58ba", "Annoncestatistik"),
-                t("eccd0e1a", "Statistik for organisation"),
-                t("deea1708", "Vil du se statistik på tværs af alle dine X-konti?"),
-                t("eb603ffc", "Opgrader for at tilknytte dit netværk og se samlet statistik.");
+                t("eccd0e1a", "Statistik for organisation");
             function d(e, r) {
                 for (var n = 0; n < r.length; n++) {
                     var t = r[n];
@@ -7904,7 +7904,9 @@
                     a(e, r)
                 );
             }
-            t("gf67aae4", "Opgrader til fuld adgang"),
+            t("deea1708", "Vil du se statistik på tværs af alle dine X-konti?"),
+                t("eb603ffc", "Opgrader for at tilknytte dit netværk og se samlet statistik."),
+                t("gf67aae4", "Opgrader til fuld adgang"),
                 t("h75e3618", "Inkluder organisation"),
                 t("h24a8862", "Om dette afkrydsningsfelt"),
                 t("c29e3a88", "Vælg tilknytninger"),
@@ -8901,12 +8903,12 @@
                 t("j0f12222", "Se mere"),
                 t("f569f7c8", "Gå til webstedet"),
                 t("j0c6772a", "Besøg webstedet"),
-                t("f73003aa", "Videoen afspilles efter annoncen"),
-                t("b3112b8a", "Spring over"),
-                t("h6333ad0", "Spring annonce over");
-            t("c59da417", function (e) {
-                return "Spring annoncen over om " + e.seconds;
-            }),
+                t("f73003aa", "Videoen afspilles efter annoncen");
+            t("b3112b8a", "Spring over"),
+                t("h6333ad0", "Spring annonce over"),
+                t("c59da417", function (e) {
+                    return "Spring annoncen over om " + e.seconds;
+                }),
                 t("c3c147cf", function (e) {
                     return "Spring over " + e.seconds;
                 }),
@@ -13352,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.71057daa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.59aeb72a.js.map

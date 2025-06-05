@@ -3970,6 +3970,7 @@
                 n("j6cdf012", "Co-hosts can’t invite or remove other co-hosts"),
                 n("c727d116", "Co-hosts can’t end the Space"),
                 n("g69084b8", "Accept co-host invite"),
+                n("ddd5cfe2", "Dock"),
                 n("ee230734", "Taispeáin tuilleadh roghanna"),
                 n("ic8c615e", "Roghnaigh rogha mhearfhreagartha agus seol í"),
                 n("a04077c4", "Roghnaigh grianghraf, físeán nó GIF amháin."),
@@ -4939,9 +4940,9 @@
                 n("d9f9dec0", "View Space"),
                 n("h0c1f37a", "View Space Analytics"),
                 n("e41fffbc", "The total watch time of your videos."),
-                n("if2909ba", "Watch Time"),
-                n("i0e5bf4c", "Your videos");
-            n("ed99baea", "Early Beta Access"),
+                n("if2909ba", "Watch Time");
+            n("i0e5bf4c", "Your videos"),
+                n("ed99baea", "Early Beta Access"),
                 n("gf898b70", "Advanced Search"),
                 n("d2a43a7a", 'contains both "ai" and "startup"'),
                 n("a8584698", "ai startup"),
@@ -5895,9 +5896,9 @@
                 n("e41c9b4f", function (e) {
                     return "Sábháilte go " + e.bookmarkFolderName;
                 }),
-                n("h18f86a4", "Scrios an Fillteán"),
-                n("f4ea967a", "Scriosadh an fillteán");
-            n("b670aa62", "Ainm an Fhillteáin"),
+                n("h18f86a4", "Scrios an Fillteán");
+            n("f4ea967a", "Scriosadh an fillteán"),
+                n("b670aa62", "Ainm an Fhillteáin"),
                 n("aece5462", "D'éirigh linn ainm an fhillteáin a nuashonrú"),
                 n("e3299b94", "Tharla earráid. Bain triail as an bhfillteán a nuashonrú arís i gceann nóiméid."),
                 n("c09ea714", "Tharla earráid. Bain triail as an bhfillteán a scriosadh arís i gceann nóiméid."),
@@ -6491,6 +6492,7 @@
                 n("babfa32c", "Oiriúnaigh d'amharc go tapa"),
                 n("a2a2f98e", "Féach ar céard atá nua"),
                 n("b4a361c0", "Is féidir leat do dhath agus méid do chló a chur in oiriúint duit féin, chomh maith le dúmhód a roghnú, anois díreach. Tusa amháin atá in ann na socruithe sin a fheiceáil."),
+                n("g4743c56", "Start following"),
                 n("c797b44e", "The latest stories on X - as told by posts."),
                 n("a19ce060", "Ní féidir féachaint thart."),
                 n("f7d1a8e0", "aip anaróideach "),
@@ -6898,10 +6900,10 @@
                 n("ede7d0a2", "Currency"),
                 n("b925c18c", "Salary Type"),
                 n("j3d242ce", "Invalid range"),
-                n("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
-                n("b8cbb51a", "Job Summary"),
-                n("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.");
-            n("b075c68a", "Edit job"),
+                n("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search.");
+            n("b8cbb51a", "Job Summary"),
+                n("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                n("b075c68a", "Edit job"),
                 n("d4b6a6e0", "Profile Spotlight"),
                 n("j2dd3686", "Highlight featured jobs above my posts."),
                 n("af1cfd46", "ATS integration"),
@@ -7878,9 +7880,7 @@
                     return "Welcome back, " + e.displayName;
                 }),
                 n("a76d58ba", "Ads Analytics"),
-                n("eccd0e1a", "Organization Analytics"),
-                n("deea1708", "Want to view analytics across all your X accounts?"),
-                n("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics.");
+                n("eccd0e1a", "Organization Analytics");
             function r(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var n = a[t];
@@ -7919,7 +7919,9 @@
                     c(e, a)
                 );
             }
-            n("gf67aae4", "Upgrade to Full Access"),
+            n("deea1708", "Want to view analytics across all your X accounts?"),
+                n("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
+                n("gf67aae4", "Upgrade to Full Access"),
                 n("h75e3618", "Include organization"),
                 n("h24a8862", "About this checkbox"),
                 n("c29e3a88", "Select affiliates"),
@@ -8916,12 +8918,12 @@
                 n("j0f12222", "Féach ar a thuilleadh"),
                 n("f569f7c8", "Téigh chuig an suíomh gréasáin"),
                 n("j0c6772a", "Tabhair cuairt ar an suíomh gréasáin"),
-                n("f73003aa", "Seinnfear an físeán i ndiaidh an fhógra"),
-                n("b3112b8a", "Scipeáil"),
-                n("h6333ad0", "Scipeáil Fógra");
-            n("c59da417", function (e) {
-                return "Léim thar Fhógra i " + e.seconds;
-            }),
+                n("f73003aa", "Seinnfear an físeán i ndiaidh an fhógra");
+            n("b3112b8a", "Scipeáil"),
+                n("h6333ad0", "Scipeáil Fógra"),
+                n("c59da417", function (e) {
+                    return "Léim thar Fhógra i " + e.seconds;
+                }),
                 n("c3c147cf", function (e) {
                     return "Léim thar " + e.seconds;
                 }),
@@ -13366,4 +13368,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.4f09665a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.22de116a.js.map

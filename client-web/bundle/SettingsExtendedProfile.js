@@ -4,18 +4,18 @@
     {
         681488: (e, t, n) => {
             n.d(t, { Z: () => c });
-            var l,
-                a,
+            var a,
                 r,
+                o,
                 s,
-                i,
-                o = {
+                l,
+                i = {
                     fragment: {
-                        argumentDefinitions: [(l = { defaultValue: null, kind: "LocalArgument", name: "richtextValue" }), (a = { defaultValue: null, kind: "LocalArgument", name: "sectionId" }), (r = { defaultValue: null, kind: "LocalArgument", name: "sectionType" }), (s = { defaultValue: null, kind: "LocalArgument", name: "userId" })],
+                        argumentDefinitions: [(a = { defaultValue: null, kind: "LocalArgument", name: "richtextValue" }), (r = { defaultValue: null, kind: "LocalArgument", name: "sectionId" }), (o = { defaultValue: null, kind: "LocalArgument", name: "sectionType" }), (s = { defaultValue: null, kind: "LocalArgument", name: "userId" })],
                         kind: "Fragment",
                         metadata: null,
                         name: "useCreateRichtextBlockMutation",
-                        selections: (i = [
+                        selections: (l = [
                             {
                                 alias: null,
                                 args: [
@@ -38,19 +38,19 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: [l, s, a, r], kind: "Operation", name: "useCreateRichtextBlockMutation", selections: i },
+                    operation: { argumentDefinitions: [a, s, r, o], kind: "Operation", name: "useCreateRichtextBlockMutation", selections: l },
                     params: { id: "lDE6HUnPgNvp1_8bcCM3-w", metadata: {}, name: "useCreateRichtextBlockMutation", operationKind: "mutation", text: null },
                 };
-            o.hash = "5369f2707d565366752d07f461b21f70";
-            const c = o;
+            i.hash = "5369f2707d565366752d07f461b21f70";
+            const c = i;
         },
         163956: (e, t, n) => {
             n.d(t, { Z: () => s });
-            var l,
-                a,
-                r = {
+            var a,
+                r,
+                o = {
                     fragment: {
-                        argumentDefinitions: (l = [
+                        argumentDefinitions: (a = [
                             { defaultValue: null, kind: "LocalArgument", name: "blockId" },
                             { defaultValue: null, kind: "LocalArgument", name: "richtextValue" },
                             { defaultValue: null, kind: "LocalArgument", name: "userId" },
@@ -58,7 +58,7 @@
                         kind: "Fragment",
                         metadata: null,
                         name: "useUpdateRichtextBlockMutation",
-                        selections: (a = [
+                        selections: (r = [
                             {
                                 alias: null,
                                 args: [
@@ -79,50 +79,50 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: l, kind: "Operation", name: "useUpdateRichtextBlockMutation", selections: a },
+                    operation: { argumentDefinitions: a, kind: "Operation", name: "useUpdateRichtextBlockMutation", selections: r },
                     params: { id: "oDmWQK_udVhiqH89Lbd5LA", metadata: {}, name: "useUpdateRichtextBlockMutation", operationKind: "mutation", text: null },
                 };
-            r.hash = "96b616d665932ca695bc2d75fe26a33c";
-            const s = r;
+            o.hash = "96b616d665932ca695bc2d75fe26a33c";
+            const s = o;
         },
         313433: (e, t, n) => {
-            n.d(t, { Z: () => o });
-            var l = n(202784),
-                a = n(925873),
-                r = n(392237),
+            n.d(t, { Z: () => i });
+            var a = n(202784),
+                r = n(925873),
+                o = n(392237),
                 s = n(913670);
-            const i = r.default.create((e) => ({ iconGray: { color: e.colors.gray700 } })),
-                o = ({ editorState: e, onChange: t }) => {
-                    const n = l.useCallback(
+            const l = o.default.create((e) => ({ iconGray: { color: e.colors.gray700 } })),
+                i = ({ editorState: e, onChange: t }) => {
+                    const n = a.useCallback(
                         (n) => {
-                            const l = a.Z.insertTextAtCursor(e, n.text);
-                            t(l);
+                            const a = r.Z.insertTextAtCursor(e, n.text);
+                            t(a);
                         },
                         [e, t],
                     );
-                    return l.createElement(s.Z, { iconStyle: i.iconGray, key: "emoji-picker", onEmojiSelect: n, size: "small", testID: "btn-emoji", type: "primaryText" });
+                    return a.createElement(s.Z, { iconStyle: l.iconGray, key: "emoji-picker", onEmojiSelect: n, size: "small", testID: "btn-emoji", type: "primaryText" });
                 };
         },
         536790: (e, t, n) => {
             n.d(t, { Z: () => d });
             n(571372), n(136728);
-            var l = n(202784),
-                a = n(301503),
-                r = n(597496),
+            var a = n(202784),
+                r = n(301503),
+                o = n(597496),
                 s = n(339110),
-                i = n(456910),
-                o = n(230295),
+                l = n(456910),
+                i = n(230295),
                 c = n(267446);
-            class u extends l.Component {
+            class u extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { queryContext: void 0, canShowTypeahead: !1 }),
-                        (this._genericWrapperRef = l.createRef()),
+                        (this._genericWrapperRef = a.createRef()),
                         (this.render = () => {
-                            const { children: e, composeCommunityId: t, contextText: n, isInline: a, isInlineReply: i, onTypeaheadStateChange: o, source: c } = this.props,
+                            const { children: e, composeCommunityId: t, contextText: n, isInline: r, isInlineReply: l, onTypeaheadStateChange: i, source: c } = this.props,
                                 { canShowTypeahead: u, queryContext: d } = this.state,
                                 m = u && d ? { word: d.word, resultType: d.resultType } : void 0;
-                            return l.createElement(r.H1, { composeCommunityId: t, contextText: n, isInline: a, isInlineReply: i, isRichText: !0, onDismiss: this._handleDismiss, onSelectItem: this._handleSelectItem, onTypeaheadStateChange: o, query: m, ref: this._genericWrapperRef, source: c || s._4.Compose }, e(this._handleInputChange));
+                            return a.createElement(o.H1, { composeCommunityId: t, contextText: n, isInline: r, isInlineReply: l, isRichText: !0, onDismiss: this._handleDismiss, onSelectItem: this._handleSelectItem, onTypeaheadStateChange: i, query: m, ref: this._genericWrapperRef, source: c || s._4.Compose }, e(this._handleInputChange));
                         }),
                         (this._getCaret = (e) => e.getSelection().getStartOffset()),
                         (this._getPlaintextFromCurrentBlock = (e) => {
@@ -133,24 +133,24 @@
                             const { onTextUpdated: t } = this.props,
                                 { queryContext: n } = this.state;
                             if (n) {
-                                const l = (0, c.k)(e, n.resultType);
-                                t(this._replaceToken(l, n));
+                                const a = (0, c.k)(e, n.resultType);
+                                t(this._replaceToken(a, n));
                             }
                             this._setQueryContext(void 0);
                         }),
                         (this._handleInputChange = (e) => {
-                            if (!(0, o.T)(e)) throw new Error("RichTextTypeaheadComposeWrapper cannot handle plain text input changes");
+                            if (!(0, i.T)(e)) throw new Error("RichTextTypeaheadComposeWrapper cannot handle plain text input changes");
                             {
                                 const { queryContext: t } = this.state,
                                     n = t && t.word,
-                                    l = this._getPlaintextFromCurrentBlock(e),
-                                    { end: a, start: r, word: s } = i.si(this._getCaret(e), l),
-                                    o = i.bR(s || "", "compose");
-                                if (o?.q === n) return;
-                                if ((this._genericWrapperRef.current && this._genericWrapperRef.current.resetSelectedItem(), -1 === r)) this._setQueryContext(void 0);
-                                else if (o) {
-                                    const { q: t, result_type: n } = o;
-                                    this._setQueryContext({ word: t, resultType: n, editorState: e, startIndex: r, endIndex: a });
+                                    a = this._getPlaintextFromCurrentBlock(e),
+                                    { end: r, start: o, word: s } = l.si(this._getCaret(e), a),
+                                    i = l.bR(s || "", "compose");
+                                if (i?.q === n) return;
+                                if ((this._genericWrapperRef.current && this._genericWrapperRef.current.resetSelectedItem(), -1 === o)) this._setQueryContext(void 0);
+                                else if (i) {
+                                    const { q: t, result_type: n } = i;
+                                    this._setQueryContext({ word: t, resultType: n, editorState: e, startIndex: o, endIndex: r });
                                 } else this._setQueryContext(void 0);
                             }
                         }),
@@ -158,267 +158,83 @@
                         (this._handleDismiss = () => this.setState({ canShowTypeahead: !1 }));
                 }
                 _replaceToken(e, t) {
-                    const { editorState: n, endIndex: l, startIndex: r } = t,
-                        s = n.getSelection().merge({ anchorKey: n.getSelection().getFocusKey(), anchorOffset: r, focusOffset: l }),
-                        i = a.Modifier.replaceText(n.getCurrentContent(), s, e),
-                        o = a.EditorState.push(n, i, "insert-characters"),
-                        c = r + e.length,
-                        u = o.getSelection().merge({ anchorOffset: c, focusOffset: c });
-                    return a.EditorState.forceSelection(o, u);
+                    const { editorState: n, endIndex: a, startIndex: o } = t,
+                        s = n.getSelection().merge({ anchorKey: n.getSelection().getFocusKey(), anchorOffset: o, focusOffset: a }),
+                        l = r.Modifier.replaceText(n.getCurrentContent(), s, e),
+                        i = r.EditorState.push(n, l, "insert-characters"),
+                        c = o + e.length,
+                        u = i.getSelection().merge({ anchorOffset: c, focusOffset: c });
+                    return r.EditorState.forceSelection(i, u);
                 }
             }
             const d = u;
         },
-        238225: (e, t, n) => {
-            n.d(t, { kI: () => f, vF: () => g, m1: () => k });
-            var l,
-                a,
-                r,
-                s,
-                i = {
-                    fragment: {
-                        argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "screenName" }]),
-                        kind: "Fragment",
-                        metadata: null,
-                        name: "useFetchProfileBlocks_profileExistsQuery",
-                        selections: [
-                            {
-                                alias: null,
-                                args: (a = [
-                                    { kind: "Literal", name: "s", value: "f3d8" },
-                                    { kind: "Variable", name: "screen_name", variableName: "screenName" },
-                                ]),
-                                concreteType: "UserResults",
-                                kind: "LinkedField",
-                                name: "user_result_by_screen_name",
-                                plural: !1,
-                                selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "has_profile_blocks", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }],
-                                storageKey: null,
-                            },
-                        ],
-                        type: "Query",
-                        abstractKey: null,
-                    },
-                    kind: "Request",
-                    operation: {
-                        argumentDefinitions: l,
-                        kind: "Operation",
-                        name: "useFetchProfileBlocks_profileExistsQuery",
-                        selections: [
-                            {
-                                alias: null,
-                                args: a,
-                                concreteType: "UserResults",
-                                kind: "LinkedField",
-                                name: "user_result_by_screen_name",
-                                plural: !1,
-                                selections: [
-                                    {
-                                        alias: null,
-                                        args: null,
-                                        concreteType: null,
-                                        kind: "LinkedField",
-                                        name: "result",
-                                        plural: !1,
-                                        selections: [
-                                            { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
-                                            { kind: "InlineFragment", selections: [r, (s = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null },
-                                        ],
-                                        storageKey: null,
-                                    },
-                                    s,
-                                ],
-                                storageKey: null,
-                            },
-                        ],
-                    },
-                    params: { id: "Z2BA99jFw6TxaJM5v7Irmg", metadata: {}, name: "useFetchProfileBlocks_profileExistsQuery", operationKind: "query", text: null },
-                };
-            i.hash = "159e51b19a254333fecf6035bc3245b7";
-            var o = (function () {
-                var e = [{ defaultValue: null, kind: "LocalArgument", name: "screenName" }],
-                    t = [
-                        { kind: "Literal", name: "s", value: "f3d8" },
-                        { kind: "Variable", name: "screen_name", variableName: "screenName" },
-                    ],
-                    n = { alias: null, args: null, kind: "ScalarField", name: "has_profile_blocks", storageKey: null },
-                    l = { alias: null, args: null, kind: "ScalarField", name: "block_id", storageKey: null },
-                    a = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
-                    r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null };
-                return {
-                    fragment: {
-                        argumentDefinitions: e,
-                        kind: "Fragment",
-                        metadata: null,
-                        name: "useFetchProfileBlocks_profileQuery",
-                        selections: [
-                            {
-                                alias: null,
-                                args: t,
-                                concreteType: "UserResults",
-                                kind: "LinkedField",
-                                name: "user_result_by_screen_name",
-                                plural: !1,
-                                selections: [
-                                    {
-                                        alias: null,
-                                        args: null,
-                                        concreteType: null,
-                                        kind: "LinkedField",
-                                        name: "result",
-                                        plural: !1,
-                                        selections: [
-                                            {
-                                                kind: "InlineFragment",
-                                                selections: [
-                                                    n,
-                                                    {
-                                                        alias: null,
-                                                        args: null,
-                                                        concreteType: "ProfileBlocksSlice",
-                                                        kind: "LinkedField",
-                                                        name: "profile_blocks",
-                                                        plural: !1,
-                                                        selections: [
-                                                            { args: null, kind: "FragmentSpread", name: "useFetchProfileBlocks_profileBlocksSlice" },
-                                                            { alias: null, args: null, concreteType: "ProfileBlock", kind: "LinkedField", name: "items", plural: !0, selections: [l], storageKey: null },
-                                                        ],
-                                                        storageKey: null,
-                                                    },
-                                                ],
-                                                type: "User",
-                                                abstractKey: null,
-                                            },
-                                        ],
-                                        storageKey: null,
-                                    },
-                                ],
-                                storageKey: null,
-                            },
-                        ],
-                        type: "Query",
-                        abstractKey: null,
-                    },
-                    kind: "Request",
-                    operation: { argumentDefinitions: e, kind: "Operation", name: "useFetchProfileBlocks_profileQuery", selections: [{ alias: null, args: t, concreteType: "UserResults", kind: "LinkedField", name: "user_result_by_screen_name", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [a, { kind: "InlineFragment", selections: [n, { alias: null, args: null, concreteType: "ProfileBlocksSlice", kind: "LinkedField", name: "profile_blocks", plural: !1, selections: [{ alias: null, args: null, concreteType: "ProfileBlock", kind: "LinkedField", name: "items", plural: !0, selections: [l, { alias: null, args: null, kind: "ScalarField", name: "block_type", storageKey: null }, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "data", plural: !1, selections: [a, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "value", storageKey: null }], type: "RichtextProfileBlockData", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: null }, r], type: "User", abstractKey: null }], storageKey: null }, r], storageKey: null }] },
-                    params: { id: "Azv1m7WiLnbn36nNCk7l0Q", metadata: {}, name: "useFetchProfileBlocks_profileQuery", operationKind: "query", text: null },
-                };
-            })();
-            o.hash = "16584b716a8d455d79eefb53731f55ee";
-            const c = o;
-            var u = (function () {
-                var e = [{ kind: "Literal", name: "s", value: "f3d8" }],
-                    t = { alias: null, args: null, kind: "ScalarField", name: "has_xprofile_consent", storageKey: null },
-                    n = { alias: null, args: null, kind: "ScalarField", name: "block_id", storageKey: null },
-                    l = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] },
-                    a = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
-                    r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null };
-                return {
-                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useFetchProfileBlocks_settingsQuery", selections: [{ alias: null, args: e, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [t, { alias: null, args: null, concreteType: "ProfileBlocksSlice", kind: "LinkedField", name: "profile_blocks", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "useFetchProfileBlocks_profileBlocksSlice" }, { alias: null, args: null, concreteType: "ProfileBlock", kind: "LinkedField", name: "items", plural: !0, selections: [n], storageKey: null }, l], storageKey: null }, l], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: 'viewer_v2(s:"f3d8")' }], type: "Query", abstractKey: null },
-                    kind: "Request",
-                    operation: { argumentDefinitions: [], kind: "Operation", name: "useFetchProfileBlocks_settingsQuery", selections: [{ alias: null, args: e, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [a, { kind: "InlineFragment", selections: [t, { alias: null, args: null, concreteType: "ProfileBlocksSlice", kind: "LinkedField", name: "profile_blocks", plural: !1, selections: [{ alias: null, args: null, concreteType: "ProfileBlock", kind: "LinkedField", name: "items", plural: !0, selections: [n, { alias: null, args: null, kind: "ScalarField", name: "block_type", storageKey: null }, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "data", plural: !1, selections: [a, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "value", storageKey: null }], type: "RichtextProfileBlockData", abstractKey: null }], storageKey: null }], storageKey: null }, l], storageKey: null }, l, r], type: "User", abstractKey: null }], storageKey: null }, r], storageKey: null }], storageKey: 'viewer_v2(s:"f3d8")' }] },
-                    params: { id: "vRz7Yom7hObecKwzBRUBiQ", metadata: {}, name: "useFetchProfileBlocks_settingsQuery", operationKind: "query", text: null },
-                };
-            })();
-            u.hash = "cb1d5a0879773e36614622dd4379b34e";
-            const d = u;
-            var m = {
-                argumentDefinitions: [],
-                kind: "Fragment",
-                metadata: null,
-                name: "useFetchProfileBlocks_profileBlocksSlice",
-                selections: [
-                    {
-                        alias: null,
-                        args: null,
-                        concreteType: "ProfileBlock",
-                        kind: "LinkedField",
-                        name: "items",
-                        plural: !0,
-                        selections: [
-                            { alias: null, args: null, kind: "ScalarField", name: "block_id", storageKey: null },
-                            { alias: null, args: null, kind: "ScalarField", name: "block_type", storageKey: null },
-                            { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "data", plural: !1, selections: [{ kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "value", storageKey: null }], type: "RichtextProfileBlockData", abstractKey: null }], storageKey: null },
-                        ],
-                        storageKey: null,
-                    },
-                ],
-                type: "ProfileBlocksSlice",
-                abstractKey: null,
-                hash: "cfa3efa58699d441f9f70469bb096ba6",
-            };
-            const p = m;
-            n(585488);
-            const k = p,
-                g = d,
-                f = c;
-        },
         794057: (e, t, n) => {
-            n.d(t, { C0: () => s, DC: () => l, _e: () => r, iN: () => c, kd: () => i, pc: () => a });
-            const l = Object.freeze({ MEDIA: "MEDIA", TWEET: "TWEET", MARKDOWN: "MARKDOWN", DIVIDER: "DIVIDER", LATEX: "LATEX" }),
-                a = Object.freeze({ IMMUTABLE: "IMMUTABLE", MUTABLE: "MUTABLE" }),
-                r = Object.freeze({ GIF: "DraftTweetGif", IMAGE: "DraftTweetImage", VIDEO: "DraftTweetVideo" }),
+            n.d(t, { C0: () => s, DC: () => a, _e: () => o, iN: () => c, kd: () => l, pc: () => r });
+            const a = Object.freeze({ MEDIA: "MEDIA", TWEET: "TWEET", MARKDOWN: "MARKDOWN", DIVIDER: "DIVIDER", LATEX: "LATEX" }),
+                r = Object.freeze({ IMMUTABLE: "IMMUTABLE", MUTABLE: "MUTABLE" }),
+                o = Object.freeze({ GIF: "DraftTweetGif", IMAGE: "DraftTweetImage", VIDEO: "DraftTweetVideo" }),
                 s = Object.freeze({ TWITTER_ARTICLES_TAB: "TWITTER_ARTICLES_TAB", TWITTER_ARTICLE_VIEW: "TWITTER_ARTICLE_VIEW", LONGFORM_COMPOSER: "LONGFORM_COMPOSER" }),
-                i = { content_state: { blocks: [], entity_map: [] } },
-                o = Object.freeze({ DRAFT: "Draft", PUBLISHED: "Published" }),
-                c = Object.freeze({ DRAFT: o.DRAFT, PUBLISHED: o.PUBLISHED });
+                l = { content_state: { blocks: [], entity_map: [] } },
+                i = Object.freeze({ DRAFT: "Draft", PUBLISHED: "Published" }),
+                c = Object.freeze({ DRAFT: i.DRAFT, PUBLISHED: i.PUBLISHED });
         },
         482924: (e, t, n) => {
             n.d(t, { A: () => p });
-            var l = n(202784),
-                a = n(437429),
-                r = n.n(a),
+            var a = n(202784),
+                r = n(437429),
+                o = n.n(r),
                 s = n(57074),
-                i = n.n(s),
-                o = n(10622),
-                c = n.n(o),
+                l = n.n(s),
+                i = n(10622),
+                c = n.n(i),
                 u = n(71620),
                 d = n(312771),
                 m = n(535338);
             function p(e, t, n) {
-                const a = i()(t),
-                    s = i()(n),
-                    o = r()(),
+                const r = l()(t),
+                    s = l()(n),
+                    i = o()(),
                     p = (0, u.po)(),
-                    [k, g] = l.useState(null),
-                    [f, y] = l.useState(!1),
-                    b = l.useCallback(() => {
-                        f ||
-                            (y(!0),
-                            c()(o, e, a, { networkCacheConfig: s?.networkCacheConfig, fetchPolicy: "network-only" }).subscribe({
+                    [f, h] = a.useState(null),
+                    [b, k] = a.useState(!1),
+                    _ = a.useCallback(() => {
+                        b ||
+                            (k(!0),
+                            c()(i, e, r, { networkCacheConfig: s?.networkCacheConfig, fetchPolicy: "network-only" }).subscribe({
                                 complete: () => {
-                                    y(!1);
+                                    k(!1);
                                 },
                                 error: (e) => {
-                                    p(e), y(!1), g(e);
+                                    p(e), k(!1), h(e);
                                 },
                             }));
-                    }, [o, p, e, f, a, s]),
-                    h = (0, m.p)(e, t, n);
-                return l.useMemo(() => (k ? { data: h, refetch: b, refetchStatus: d.ZP.FAILED, refetchError: k } : { data: h, refetch: b, refetchStatus: f ? d.ZP.LOADING : d.ZP.NONE, refetchError: void 0 }), [h, k, f, b]);
+                    }, [i, p, e, b, r, s]),
+                    g = (0, m.p)(e, t, n);
+                return a.useMemo(() => (f ? { data: g, refetch: _, refetchStatus: d.ZP.FAILED, refetchError: f } : { data: g, refetch: _, refetchStatus: b ? d.ZP.LOADING : d.ZP.NONE, refetchError: void 0 }), [g, f, b, _]);
             }
         },
         242470: (e, t, n) => {
-            n.d(t, { Z: () => E });
-            var l = n(202784),
-                a = n(301503),
-                r = n(614983),
-                s = n.n(r),
-                i = n(154003),
-                o = n(111677),
-                c = n.n(o),
+            n.d(t, { Z: () => x });
+            var a = n(202784),
+                r = n(301503),
+                o = n(614983),
+                s = n.n(o),
+                l = n(154003),
+                i = n(111677),
+                c = n.n(i),
                 u = n(952793),
                 d = n(72130),
                 m = n(520385),
                 p = n(725405),
-                k = n(681488),
-                g = (n(585488), n(351743)),
-                f = n.n(g);
-            const y = k.Z,
-                b = () => {
-                    const [e, t] = f()(y);
+                f = n(681488),
+                h = (n(585488), n(351743)),
+                b = n.n(h);
+            const k = f.Z,
+                _ = () => {
+                    const [e, t] = b()(k);
                     return [
-                        l.useCallback(
+                        a.useCallback(
                             (t) => {
                                 e(t);
                             },
@@ -427,11 +243,11 @@
                         t,
                     ];
                 };
-            const h = n(163956).Z,
-                _ = () => {
-                    const [e, t] = f()(h);
+            const g = n(163956).Z,
+                C = () => {
+                    const [e, t] = b()(g);
                     return [
-                        l.useCallback(
+                        a.useCallback(
                             (t) => {
                                 e(t);
                             },
@@ -440,43 +256,43 @@
                         t,
                     ];
                 },
-                C = c().a9cc8f96,
-                x = c().i2209530,
-                E = ({ blockId: e, characterCount: t, disabled: n, editorState: r, onSave: o, queryId: c, sectionId: k, sectionType: g, setDirty: f, setError: y, setSaving: h, userId: E }) => {
-                    const v = (0, u.hC)("xprofile_work_history_enabled"),
-                        S = (0, p.Z)(),
-                        [T] = b(),
-                        [I] = _(),
-                        F = l.useCallback(() => {
-                            h(!1);
+                E = c().a9cc8f96,
+                y = c().i2209530,
+                x = ({ blockId: e, characterCount: t, disabled: n, editorState: o, onSave: i, queryId: c, sectionId: f, sectionType: h, setDirty: b, setError: k, setSaving: g, userId: x }) => {
+                    const I = (0, u.hC)("xprofile_work_history_enabled"),
+                        v = (0, p.Z)(),
+                        [S] = _(),
+                        [T] = C(),
+                        Z = a.useCallback(() => {
+                            g(!1);
                             const t = e ? "update_block_btn" : "save_block_btn";
-                            S.scribe({ ...(0, d.MA)(t, "error", { version: v ? 2 : 1 }) });
-                        }, [S, e, v, h]),
-                        K = l.useCallback(() => {
-                            f(!1), h(!1);
+                            v.scribe({ ...(0, d.MA)(t, "error", { version: I ? 2 : 1 }) });
+                        }, [v, e, I, g]),
+                        w = a.useCallback(() => {
+                            b(!1), g(!1);
                             const t = e ? "update_block_btn" : "save_block_btn";
-                            S.scribe({ ...(0, d.MA)(t, "success", { version: v ? 2 : 1 }) }), o();
-                        }, [S, e, v, o, f, h]),
-                        L = l.useCallback(() => {
+                            v.scribe({ ...(0, d.MA)(t, "success", { version: I ? 2 : 1 }) }), i();
+                        }, [v, e, I, i, b, g]),
+                        R = a.useCallback(() => {
                             const n = ((e) => {
                                 if (!e) return;
                                 const t = e.getCurrentContent(),
-                                    n = (0, a.convertToRaw)(t);
+                                    n = (0, r.convertToRaw)(t);
                                 return JSON.stringify(n);
-                            })(r);
+                            })(o);
                             if (!n) return;
-                            if (t > m.j3) return void y(C);
-                            h(!0);
-                            const l = e ? "update_block_btn" : "save_block_btn";
-                            S.scribe({ ...(0, d.MA)(l, "click", {}) }),
-                                e && E
-                                    ? I({
-                                          variables: { richtextValue: n, blockId: e, userId: E },
-                                          onCompleted: K,
-                                          onError: F,
+                            if (t > m.j3) return void k(E);
+                            g(!0);
+                            const a = e ? "update_block_btn" : "save_block_btn";
+                            v.scribe({ ...(0, d.MA)(a, "click", {}) }),
+                                e && x
+                                    ? T({
+                                          variables: { richtextValue: n, blockId: e, userId: x },
+                                          onCompleted: w,
+                                          onError: Z,
                                           updater: (e, t) => {
                                               if ((s()(c, "queryId must exist"), t?.update_richtext_profile_block?.success))
-                                                  if (v) {
+                                                  if (I) {
                                                       const t = e.get(`client:${c}:content`);
                                                       t && t.setValue(n, "value");
                                                   } else {
@@ -485,11 +301,11 @@
                                                   }
                                           },
                                       })
-                                    : E &&
-                                      T(
+                                    : x &&
+                                      S(
                                           {
-                                              variables: { richtextValue: n, userId: E, sectionId: k, sectionType: g },
-                                              onCompleted: K,
+                                              variables: { richtextValue: n, userId: x, sectionId: f, sectionType: h },
+                                              onCompleted: w,
                                               updater: (e, t) => {
                                                   if ((s()(c, "queryId must exist"), t?.create_richtext_profile_block?.block_id)) {
                                                       const t = e.get(c);
@@ -499,24 +315,24 @@
                                           },
                                           c,
                                       );
-                        }, [r, t, h, e, S, y, I, E, K, F, c, v, T, k, g]);
-                    return l.createElement(i.ZP, { disabled: n, onClick: L, size: "large", type: "brandFilled" }, x);
+                        }, [o, t, g, e, v, k, T, x, w, Z, c, I, S, f, h]);
+                    return a.createElement(l.ZP, { disabled: n, onClick: R, size: "large", type: "brandFilled" }, y);
                 };
         },
         371879: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => y });
-            var l = n(202784),
-                a = n(301503),
-                r = n(925873),
+            n.r(t), n.d(t, { default: () => k });
+            var a = n(202784),
+                r = n(301503),
+                o = n(925873),
                 s = n(989272),
-                i = n(977952),
-                o = n(297256),
+                l = n(977952),
+                i = n(297256),
                 c = n(392237),
                 u = n(187669),
                 d = n(949626),
                 m = n(980407),
                 p = n(478414);
-            const k = (e) => {
+            const f = (e) => {
                     const t = ((e) => {
                             try {
                                 return e ? JSON.parse(e) : void 0;
@@ -524,92 +340,92 @@
                                 return;
                             }
                         })(e),
-                        n = r.Z.initEditorState(t);
-                    return r.Z.convertEmojiToEntities(n);
+                        n = o.Z.initEditorState(t);
+                    return o.Z.convertEmojiToEntities(n);
                 },
-                g = () => null,
-                f = c.default.create((e) => ({ container: { paddingHorizontal: e.spaces.space16 } })),
-                y = ({ history: e }) => {
-                    const [t, n] = l.useState(k(window?.__iOSDraftAdapterInitialContents__));
+                h = () => null,
+                b = c.default.create((e) => ({ container: { paddingHorizontal: e.spaces.space16 } })),
+                k = ({ history: e }) => {
+                    const [t, n] = a.useState(f(window?.__iOSDraftAdapterInitialContents__));
                     (0, u.q)(() => {
                         (0, s.fH)((0, p.yW)(p.kg, p.gv), p.kg);
                     }),
-                        l.useEffect(() => {
+                        a.useEffect(() => {
                             const e = window.webkit?.messageHandlers?.draftEditorReady;
                             e && e.postMessage(!0);
                         }, []);
-                    const c = l.useMemo(() => ({ editorState: t, element: i.Z, stripPastedStyles: !0 }), [t]),
-                        y = l.useCallback((e) => {
-                            const t = r.Z.convertEmojiToEntities(e);
+                    const c = a.useMemo(() => ({ editorState: t, element: l.Z, stripPastedStyles: !0 }), [t]),
+                        k = a.useCallback((e) => {
+                            const t = o.Z.convertEmojiToEntities(e);
                             n(t);
                         }, []),
-                        b = l.useCallback(
+                        _ = a.useCallback(
                             () =>
                                 ((e) => {
                                     if (!e) return;
                                     const t = e.getCurrentContent(),
-                                        n = (0, a.convertToRaw)(t);
+                                        n = (0, r.convertToRaw)(t);
                                     return JSON.stringify(n);
                                 })(t),
                             [t],
                         ),
-                        h = l.useCallback((e) => {
-                            n(k(e));
+                        g = a.useCallback((e) => {
+                            n(f(e));
                         }, []);
-                    l.useEffect(
+                    a.useEffect(
                         () => (
-                            (window.__iOSDraftAdapter__ = { __getContents__: b, __setContents__: h }),
+                            (window.__iOSDraftAdapter__ = { __getContents__: _, __setContents__: g }),
                             () => {
                                 delete window.__iOSDraftAdapter__;
                             }
                         ),
-                        [b, h],
+                        [_, g],
                     );
-                    const _ = l.useMemo(() => l.createElement(d.Z, { className: p.kg }, l.createElement(o.b, { autoFocus: !0, inputStyle: f.container, isInputFullWidth: !0, onChange: y, richTextInputContext: c, textSizesOverride: (0, p.bb)(p.gv), withAppBar: !1 })), [y, c]);
-                    return l.createElement(m.Z, { children: _, hideBackButton: !0, history: e, renderHeader: g });
+                    const C = a.useMemo(() => a.createElement(d.Z, { className: p.kg }, a.createElement(i.b, { autoFocus: !0, inputStyle: b.container, isInputFullWidth: !0, onChange: k, richTextInputContext: c, textSizesOverride: (0, p.bb)(p.gv), withAppBar: !1 })), [k, c]);
+                    return a.createElement(m.Z, { children: C, hideBackButton: !0, history: e, renderHeader: h });
                 };
         },
         600193: (e, t, n) => {
-            n.d(t, { Z: () => r });
-            var l = n(668214),
-                a = n(919022);
-            const r = (0, l.Z)()
-                .propsFromState(() => ({ viewerUser: a.ZP.selectViewerUser }))
+            n.d(t, { Z: () => o });
+            var a = n(668214),
+                r = n(919022);
+            const o = (0, a.Z)()
+                .propsFromState(() => ({ viewerUser: r.ZP.selectViewerUser }))
                 .withAnalytics({ page: "settings", section: "extendedprofile" });
         },
         992915: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => Re });
-            var l,
-                a,
-                r = n(807896),
+            n.r(t), n.d(t, { default: () => Be });
+            var a,
+                r,
+                o = n(807896),
                 s = (n(136728), n(202784)),
-                i = n(325686),
-                o = n(277660),
-                c = n.n(o),
+                l = n(325686),
+                i = n(277660),
+                c = n.n(i),
                 u = n(811176),
                 d = n(247056),
                 m = n(392237),
                 p = n(111677),
-                k = n.n(p),
-                g = n(607127),
-                f = n(149170),
-                y = n(718e3),
-                b = n(785813),
-                h = n(825495),
-                _ = n(252021),
-                C = n(736063),
-                x = n(782642),
-                E = n(520385),
-                v = n(238225),
-                S = n(482924),
-                T = n(600193),
-                I = {
+                f = n.n(p),
+                h = n(607127),
+                b = n(149170),
+                k = n(718e3),
+                _ = n(785813),
+                g = n(825495),
+                C = n(252021),
+                E = n(736063),
+                y = n(782642),
+                x = n(520385),
+                I = n(238225),
+                v = n(482924),
+                S = n(600193),
+                T = {
                     fragment: {
-                        argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "consented" }]),
+                        argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "consented" }]),
                         kind: "Fragment",
                         metadata: null,
                         name: "ConsentScreen_xprofileMutation",
-                        selections: (a = [
+                        selections: (r = [
                             {
                                 alias: null,
                                 args: [
@@ -628,241 +444,241 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: l, kind: "Operation", name: "ConsentScreen_xprofileMutation", selections: a },
+                    operation: { argumentDefinitions: a, kind: "Operation", name: "ConsentScreen_xprofileMutation", selections: r },
                     params: { id: "4RvEtxr03YPi6jxZZ_PkoQ", metadata: {}, name: "ConsentScreen_xprofileMutation", operationKind: "mutation", text: null },
                 };
-            I.hash = "aa72fdb65006a205db978375998ebfe6";
-            const F = I;
-            var K = n(614983),
-                L = n.n(K),
-                w = (n(585488), n(351743)),
-                B = n.n(w),
-                R = n(731708),
-                Z = n(593866),
-                P = n(154003),
-                D = n(40610),
-                A = n(715417);
-            const M = F,
-                O = k().h367e724,
-                V = k().ea5928d4,
-                N = k().h7ef9dc8,
-                U = k().c04ba4b4,
-                q = k().d7666008,
-                z = k().cb24ee16,
-                H = k().c3d89aca,
-                Q = k().a1c93d74,
-                j = m.default.create((e) => ({ consentRoot: { maxWidth: `calc(6 * ${e.spaces.space80})`, paddingHorizontal: e.spaces.space20, marginVertical: e.spaces.space32, marginHorizontal: "auto", alignSelf: "center", width: "100%", gap: e.spaces.space20 }, icon: { height: e.spaces.space20, width: e.spaces.space20, color: e.colors.text, marginEnd: e.spaces.space16 } })),
-                W = s.createElement(A.default, { style: j.icon }),
-                G = ({ queryId: e }) => {
+            T.hash = "aa72fdb65006a205db978375998ebfe6";
+            const Z = T;
+            var w = n(614983),
+                R = n.n(w),
+                D = (n(585488), n(351743)),
+                L = n.n(D),
+                B = n(731708),
+                M = n(593866),
+                A = n(154003),
+                O = n(40610),
+                P = n(715417);
+            const V = Z,
+                F = f().h367e724,
+                N = f().ea5928d4,
+                q = f().h7ef9dc8,
+                H = f().c04ba4b4,
+                z = f().d7666008,
+                j = f().cb24ee16,
+                K = f().c3d89aca,
+                U = f().a1c93d74,
+                W = m.default.create((e) => ({ consentRoot: { maxWidth: `calc(6 * ${e.spaces.space80})`, paddingHorizontal: e.spaces.space20, marginVertical: e.spaces.space32, marginHorizontal: "auto", alignSelf: "center", width: "100%", gap: e.spaces.space20 }, icon: { height: e.spaces.space20, width: e.spaces.space20, color: e.colors.text, marginEnd: e.spaces.space16 } })),
+                G = s.createElement(P.default, { style: W.icon }),
+                Q = ({ queryId: e }) => {
                     const [t, n] = s.useState(""),
-                        l = s.useMemo(
+                        a = s.useMemo(
                             () => [
-                                { label: U, decoration: W },
-                                { label: q, decoration: W },
-                                { label: z, decoration: W },
+                                { label: H, decoration: G },
+                                { label: z, decoration: G },
+                                { label: j, decoration: G },
                             ],
                             [],
                         ),
-                        [a, r] = B()(M),
-                        o = s.useCallback(() => {
+                        [r, o] = L()(V),
+                        i = s.useCallback(() => {
                             n(""),
-                                a({
+                                r({
                                     variables: { consented: !0 },
                                     onCompleted: (e) => {
-                                        e?.update_xprofile_consent?.success || n(Q);
+                                        e?.update_xprofile_consent?.success || n(U);
                                     },
                                     onError: (e) => {
-                                        n(Q);
+                                        n(U);
                                     },
                                     updater: (t, n) => {
-                                        L()(e, "userId must be specified");
-                                        const l = t.get(e);
-                                        l && n?.update_xprofile_consent?.success && l.setValue(!0, "has_xprofile_consent");
+                                        R()(e, "userId must be specified");
+                                        const a = t.get(e);
+                                        a && n?.update_xprofile_consent?.success && a.setValue(!0, "has_xprofile_consent");
                                     },
                                 });
-                        }, [a, e]);
-                    return s.createElement(i.Z, { style: j.consentRoot }, s.createElement(R.ZP, { size: "title3", weight: "bold" }, O), s.createElement(R.ZP, { size: "body" }, V), s.createElement(R.ZP, { weight: "bold" }, N), s.createElement(Z.Z, { items: l }), s.createElement(P.ZP, { disabled: r, onClick: o, size: "large", type: "brandFilled" }, H), t ? s.createElement(D.Z.Danger, { text: t, withIcon: !0 }) : null);
+                        }, [r, e]);
+                    return s.createElement(l.Z, { style: W.consentRoot }, s.createElement(B.ZP, { size: "title3", weight: "bold" }, F), s.createElement(B.ZP, { size: "body" }, N), s.createElement(B.ZP, { weight: "bold" }, q), s.createElement(M.Z, { items: a }), s.createElement(A.ZP, { disabled: o, onClick: i, size: "large", type: "brandFilled" }, K), t ? s.createElement(O.Z.Danger, { text: t, withIcon: !0 }) : null);
                 },
-                X = s.memo(G);
+                X = s.memo(Q);
             var $ = n(301503),
                 J = n(107267),
                 Y = n(925873),
                 ee = n(989272),
                 te = n(891198),
                 ne = n(977952),
-                le = n(167630),
-                ae = n(67369),
-                re = n(297256),
+                ae = n(167630),
+                re = n(67369),
+                oe = n(297256),
                 se = n(751475),
-                ie = n(908478),
-                oe = n(516951),
+                le = n(908478),
+                ie = n(516951),
                 ce = n(187669),
                 ue = n(949626),
-                de = n(128586),
+                de = n(512547),
                 me = n(313433),
                 pe = n(874111),
-                ke = n(536790),
-                ge = n(952793),
-                fe = n(655352),
-                ye = n(478414),
-                be = n(72130),
-                he = n(339110),
-                _e = n(725516),
-                Ce = n(242470);
-            const xe = k().b956c04a,
-                Ee = k().ifb23caa,
-                ve = k().c2333081,
-                Se = m.default.create((e) => ({ root: { paddingHorizontal: e.spaces.space16 }, flexRow: { flexDirection: "row", gap: e.spaces.space8, alignItems: "center" }, stickyButton: { position: "sticky", start: 0, end: 0, padding: e.spaces.space16 }, desktopButton: { bottom: 0 }, mobileButton: { bottom: e.componentDimensions.appBarHeight }, v2Button: { padding: e.spaces.space16, justifyContent: "space-between", bottom: 0 }, error: { padding: e.spaces.space16 }, textCountLabel: { flexDirection: "row", alignSelf: "center" } })),
-                Te = (0, _e.Z)(({ analytics: e, blockId: t, blocksQueryId: n, closeConfirm: l, initialState: a = "", onSave: r, refetch: o, showConfirmDelete: c, userId: u }) => {
-                    const d = (0, ge.hC)("xprofile_emojis_enabled"),
+                fe = n(536790),
+                he = n(952793),
+                be = n(655352),
+                ke = n(478414),
+                _e = n(72130),
+                ge = n(339110),
+                Ce = n(725516),
+                Ee = n(242470);
+            const ye = f().b956c04a,
+                xe = f().ifb23caa,
+                Ie = f().c2333081,
+                ve = m.default.create((e) => ({ root: { paddingHorizontal: e.spaces.space16 }, flexRow: { flexDirection: "row", gap: e.spaces.space8, alignItems: "center" }, stickyButton: { position: "sticky", start: 0, end: 0, padding: e.spaces.space16 }, desktopButton: { bottom: 0 }, mobileButton: { bottom: e.componentDimensions.appBarHeight }, v2Button: { padding: e.spaces.space16, justifyContent: "space-between", bottom: 0 }, error: { padding: e.spaces.space16 }, textCountLabel: { flexDirection: "row", alignSelf: "center" } })),
+                Se = (0, Ce.Z)(({ analytics: e, blockId: t, blocksQueryId: n, closeConfirm: a, initialState: r = "", onSave: o, refetch: i, showConfirmDelete: c, userId: u }) => {
+                    const d = (0, he.hC)("xprofile_emojis_enabled"),
                         m = (0, J.useHistory)(),
-                        [p, k] = s.useState(""),
-                        [g, f] = s.useState(
+                        [p, f] = s.useState(""),
+                        [h, b] = s.useState(
                             ((e) => {
                                 const t = Y.Z.getContentStateFromRaw(e),
                                     n = Y.Z.initEditorState(t);
                                 return Y.Z.convertEmojiToEntities(n);
-                            })(a),
+                            })(r),
                         ),
-                        [y, b] = s.useState(!1),
-                        [h, _] = s.useState(!1),
-                        C = s.useCallback((e, t) => h && !y, [h, y]),
-                        x = s.useCallback(() => {
-                            _(!1), b(!1);
+                        [k, _] = s.useState(!1),
+                        [g, C] = s.useState(!1),
+                        E = s.useCallback((e, t) => g && !k, [g, k]),
+                        y = s.useCallback(() => {
+                            C(!1), _(!1);
                         }, []);
                     (0, ce.q)(() => {
-                        (0, ee.fH)((0, ye.yW)(ye.Hx, ye.K), ye.Hx);
+                        (0, ee.fH)((0, ke.yW)(ke.Hx, ke.K), ke.Hx);
                     });
-                    const v = s.useCallback(() => {
-                            l(), _(!1), b(!1), e.scribe({ ...(0, be.MA)("delete_block_btn", "success") }), f(Y.Z.initEditorState("")), o();
-                        }, [e, l, o]),
-                        S = (0, pe.c6)(g);
-                    let T = S;
-                    S > 1 && (T = te.ZP.getFormattedCount(S));
-                    const I = s.useMemo(() => g?.getCurrentContent()?.hasText(), [g]),
-                        F = s.useCallback(
+                    const I = s.useCallback(() => {
+                            a(), C(!1), _(!1), e.scribe({ ...(0, _e.MA)("delete_block_btn", "success") }), b(Y.Z.initEditorState("")), i();
+                        }, [e, a, i]),
+                        v = (0, pe.c6)(h);
+                    let S = v;
+                    v > 1 && (S = te.ZP.getFormattedCount(v));
+                    const T = s.useMemo(() => h?.getCurrentContent()?.hasText(), [h]),
+                        Z = s.useCallback(
                             (e) => {
                                 const t = Y.Z.convertMentionsToEntities(Y.Z.convertEmojiToEntities(e));
-                                h || (0, ie.Z)((0, $.convertToRaw)(t.getCurrentContent()), (0, $.convertToRaw)(g.getCurrentContent())) || _(!0), f(t);
+                                g || (0, le.Z)((0, $.convertToRaw)(t.getCurrentContent()), (0, $.convertToRaw)(h.getCurrentContent())) || C(!0), b(t);
                             },
-                            [g, h],
+                            [h, g],
                         ),
-                        K = s.useMemo(() => ({ editorState: g, element: ne.Z, stripPastedStyles: !0 }), [g]),
+                        w = s.useMemo(() => ({ editorState: h, element: ne.Z, stripPastedStyles: !0 }), [h]),
+                        R = s.useMemo(() => {
+                            if (k) return s.createElement(l.Z, { style: ve.flexRow }, s.createElement(ae.Z, { size: "small" }), s.createElement(B.ZP, { size: "subtext1" }, "Saving"));
+                            const e = !!x.j3 && v > x.j3;
+                            return s.createElement(l.Z, null, s.createElement(B.ZP, { color: e ? "red500" : "gray900", numberOfLines: 1, size: "subtext1", style: ve.textCountLabel }, Ie({ count: S })));
+                        }, [v, S, k]),
+                        D = (0, re.Zz)(),
                         L = s.useMemo(() => {
-                            if (y) return s.createElement(i.Z, { style: Se.flexRow }, s.createElement(le.Z, { size: "small" }), s.createElement(R.ZP, { size: "subtext1" }, "Saving"));
-                            const e = !!E.j3 && S > E.j3;
-                            return s.createElement(i.Z, null, s.createElement(R.ZP, { color: e ? "red500" : "gray900", numberOfLines: 1, size: "subtext1", style: Se.textCountLabel }, ve({ count: T })));
-                        }, [S, T, y]),
-                        w = (0, ae.Zz)(),
-                        B = s.useMemo(() => {
-                            const e = [Se.stickyButton];
-                            return w && !(0, fe.ZP)() ? e.push(Se.mobileButton) : e.push(Se.desktopButton), e;
-                        }, [w]),
-                        Z = s.useCallback(() => (d ? s.createElement(me.Z, { editorState: g, onChange: F }) : null), [g, d, F]),
-                        P = s.useCallback(
+                            const e = [ve.stickyButton];
+                            return D && !(0, be.ZP)() ? e.push(ve.mobileButton) : e.push(ve.desktopButton), e;
+                        }, [D]),
+                        M = s.useCallback(() => (d ? s.createElement(me.Z, { editorState: h, onChange: Z }) : null), [h, d, Z]),
+                        A = s.useCallback(
                             () => (e) =>
-                                s.createElement(re.b, {
-                                    emojiPickerButton: Z,
-                                    inputStyle: Se.root,
+                                s.createElement(oe.b, {
+                                    emojiPickerButton: M,
+                                    inputStyle: ve.root,
                                     maxNumberOfLines: 100,
                                     numberOfLines: 30,
                                     onChange: (t) => {
-                                        e(t), F(t);
+                                        e(t), Z(t);
                                     },
-                                    richTextInputContext: K,
+                                    richTextInputContext: w,
                                     testID: "xprofile-composer",
-                                    textSizesOverride: (0, ye.bb)(ye.K),
-                                    toolbarRightControl: L,
+                                    textSizesOverride: (0, ke.bb)(ke.K),
+                                    toolbarRightControl: R,
                                 }),
-                            [F, Z, K, L],
+                            [Z, M, w, R],
                         );
-                    return s.createElement(i.Z, null, p ? s.createElement(i.Z, { style: Se.error }, s.createElement(D.Z.Danger, { text: p, withIcon: !0 })) : null, s.createElement(se.Z, { fallbackBackPath: "/", history: m, onNavigation: x, shouldBlockNavigation: C, shouldBlockUnload: h }, s.createElement(ue.Z, { className: ye.Hx }, s.createElement(ke.Z, { contextText: (0, pe.iT)(g), isInline: !0, onTextUpdated: F, onTypeaheadStateChange: oe.Z, source: he._4.LongformComposer }, P()))), s.createElement(i.Z, { style: B }, s.createElement(Ce.Z, { blockId: t, characterCount: S, disabled: y || !h || !I || S > E.j3, editorState: g, onSave: r, queryId: n, setDirty: _, setError: k, setSaving: b, userId: u })), c && t ? s.createElement(de.Z, { blockId: t, headline: xe, onClose: l, onCompleted: v, queryId: n, subtext: Ee, userId: u }) : null);
+                    return s.createElement(l.Z, null, p ? s.createElement(l.Z, { style: ve.error }, s.createElement(O.Z.Danger, { text: p, withIcon: !0 })) : null, s.createElement(se.Z, { fallbackBackPath: "/", history: m, onNavigation: y, shouldBlockNavigation: E, shouldBlockUnload: g }, s.createElement(ue.Z, { className: ke.Hx }, s.createElement(fe.Z, { contextText: (0, pe.iT)(h), isInline: !0, onTextUpdated: Z, onTypeaheadStateChange: ie.Z, source: ge._4.LongformComposer }, A()))), s.createElement(l.Z, { style: L }, s.createElement(Ee.Z, { blockId: t, characterCount: v, disabled: k || !g || !T || v > x.j3, editorState: h, onSave: o, queryId: n, setDirty: C, setError: f, setSaving: _, userId: u })), c && t ? s.createElement(de.Z, { blockId: t, headline: ye, onClose: a, onCompleted: I, queryId: n, subtext: xe, userId: u }) : null);
                 }),
-                Ie = k().a765e936,
-                Fe = k().d4d68e44,
-                Ke = ({ hasConsented: e, history: t, profileBlocksRef: n, queryId: l, refetch: a, viewerUser: r }) => {
-                    const o = (0, x.p)(),
+                Te = f().a765e936,
+                Ze = f().d4d68e44,
+                we = ({ hasConsented: e, history: t, profileBlocksRef: n, queryId: a, refetch: r, viewerUser: o }) => {
+                    const i = (0, y.p)(),
                         [m, p] = s.useState(!1),
-                        k = c()(v.m1, n),
-                        C = k?.items?.find((e) => e?.block_type === E.Mp.RICHTEXT),
-                        S = C?.data?.value,
-                        T = C?.block_id,
-                        I = s.useCallback(() => {
+                        f = c()(I.m1, n),
+                        E = f?.items?.find((e) => e?.block_type === x.Mp.RICHTEXT),
+                        v = E?.data?.value,
+                        S = E?.block_id,
+                        T = s.useCallback(() => {
                             p(!1);
                         }, []),
-                        F = s.useCallback(
+                        Z = s.useCallback(
                             (e) => [
                                 {
-                                    text: Ie,
-                                    Icon: g.default,
-                                    disabled: !T,
+                                    text: Te,
+                                    Icon: h.default,
+                                    disabled: !S,
                                     onClick: () => {
                                         p(!0), e();
                                     },
                                 },
                             ],
-                            [T],
+                            [S],
                         ),
-                        K = s.useCallback((e) => s.createElement(u.Z, { cancelButtonLabel: "Cancel", items: F(e), onCloseRequested: e }), [F]);
-                    return r
-                        ? s.createElement(_.Z, {
-                              backLocation: `/${r.screen_name}`,
+                        w = s.useCallback((e) => s.createElement(u.Z, { cancelButtonLabel: "Cancel", items: Z(e), onCloseRequested: e }), [Z]);
+                    return o
+                        ? s.createElement(C.Z, {
+                              backLocation: `/${o.screen_name}`,
                               history: t,
                               primaryContent: (() => {
-                                  if (!r || !k) return null;
-                                  if (!e) return s.createElement(i.Z, { style: Le.root }, s.createElement(X, { queryId: l }));
+                                  if (!o || !f) return null;
+                                  if (!e) return s.createElement(l.Z, { style: Re.root }, s.createElement(X, { queryId: a }));
                                   return s.createElement(
-                                      i.Z,
-                                      { style: Le.root },
-                                      s.createElement(Te, {
-                                          blockId: T,
-                                          blocksQueryId: l,
-                                          closeConfirm: I,
-                                          initialState: S,
+                                      l.Z,
+                                      { style: Re.root },
+                                      s.createElement(Se, {
+                                          blockId: S,
+                                          blocksQueryId: a,
+                                          closeConfirm: T,
+                                          initialState: v,
                                           onSave: () => {
-                                              o({ text: Fe }), t.push(`/${r.screen_name}/bio`);
+                                              i({ text: Ze }), t.push(`/${o.screen_name}/bio`);
                                           },
-                                          refetch: a,
+                                          refetch: r,
                                           showConfirmDelete: m,
-                                          userId: r.id_str,
+                                          userId: o.id_str,
                                       }),
                                   );
                               })(),
-                              rightControl: e ? s.createElement(i.Z, null, s.createElement(d.Z, { Icon: f.default, renderActionMenu: K })) : null,
-                              sidebarContent: s.createElement(y.Z, null),
-                              subtitle: `@${r.screen_name}`,
-                              title: (0, b.Z)(r),
-                              titleIconCell: (0, h.Z)(r),
+                              rightControl: e ? s.createElement(l.Z, null, s.createElement(d.Z, { Icon: b.default, renderActionMenu: w })) : null,
+                              sidebarContent: s.createElement(k.Z, null),
+                              subtitle: `@${o.screen_name}`,
+                              title: (0, _.Z)(o),
+                              titleIconCell: (0, g.Z)(o),
                           })
                         : null;
                 },
-                Le = m.default.create((e) => ({ root: { paddingVertical: e.spaces.space20, height: "100%" }, flexRow: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space16 }, flexCol: { display: "flex", flexDirection: "column" }, flexOne: { flex: 1 }, avatar: { width: 90, height: 90 } })),
-                we = (e) => {
-                    const { data: t, refetch: n } = (0, S.A)(v.vF, {}),
-                        l = t?.viewer_v2?.user_results?.result?.profile_blocks,
-                        a = Boolean(t?.viewer_v2?.user_results?.result?.has_xprofile_consent);
-                    if (!e.viewerUser || !l) return null;
-                    const i = a ? l.__id : t?.viewer_v2?.user_results?.result?.__id;
-                    return s.createElement(Ke, (0, r.Z)({ hasConsented: a, profileBlocksRef: l, queryId: i, refetch: n }, e));
+                Re = m.default.create((e) => ({ root: { paddingVertical: e.spaces.space20, height: "100%" }, flexRow: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space16 }, flexCol: { display: "flex", flexDirection: "column" }, flexOne: { flex: 1 }, avatar: { width: 90, height: 90 } })),
+                De = (e) => {
+                    const { data: t, refetch: n } = (0, v.A)(I.vF, {}),
+                        a = t?.viewer_v2?.user_results?.result?.profile_blocks,
+                        r = Boolean(t?.viewer_v2?.user_results?.result?.has_xprofile_consent);
+                    if (!e.viewerUser || !a) return null;
+                    const l = r ? a.__id : t?.viewer_v2?.user_results?.result?.__id;
+                    return s.createElement(we, (0, o.Z)({ hasConsented: r, profileBlocksRef: a, queryId: l, refetch: n }, e));
                 },
-                Be = { context: "EXTENDED_PROFILE_SETTINGS" },
-                Re = (0, T.Z)((e) => s.createElement(C.H, { errorConfig: Be }, s.createElement(we, e)));
+                Le = { context: "EXTENDED_PROFILE_SETTINGS" },
+                Be = (0, S.Z)((e) => s.createElement(E.H, { errorConfig: Le }, s.createElement(De, e)));
         },
         751475: (e, t, n) => {
             n.d(t, { Z: () => d });
             n(136728);
-            var l = n(202784),
-                a = n(111677),
-                r = n.n(a),
+            var a = n(202784),
+                r = n(111677),
+                o = n.n(r),
                 s = n(190286);
-            const i = r().b15c0a18,
-                o = r().aebf81c8,
-                c = r().aa744c1e,
-                u = r().fe04d89a,
+            const l = o().b15c0a18,
+                i = o().aebf81c8,
+                c = o().aa744c1e,
+                u = o().fe04d89a,
                 d = (e) => {
-                    const { children: t, fallbackBackPath: n, history: a, onNavigation: r, shouldBlockNavigation: d, shouldBlockUnload: m } = e,
-                        [p, k] = l.useState(void 0);
-                    l.useEffect(() => {
+                    const { children: t, fallbackBackPath: n, history: r, onNavigation: o, shouldBlockNavigation: d, shouldBlockUnload: m } = e,
+                        [p, f] = a.useState(void 0);
+                    a.useEffect(() => {
                         const e = (e) => {
                             m && (e.preventDefault(), (e.returnValue = ""));
                         };
@@ -873,34 +689,34 @@
                             }
                         );
                     }, [m]);
-                    const g = l.useCallback((e, t) => !(!p && d(e, t)) || (k({ nextLocation: e, action: t }), !1), [p, d]);
-                    l.useEffect(() => {
-                        const e = a.block(g);
+                    const h = a.useCallback((e, t) => !(!p && d(e, t)) || (f({ nextLocation: e, action: t }), !1), [p, d]);
+                    a.useEffect(() => {
+                        const e = r.block(h);
                         return () => e();
-                    }, [g, a]);
-                    const f = l.useCallback(() => {
-                            k(void 0);
-                        }, [k]),
-                        y = l.useCallback(() => {
-                            r?.(),
-                                k((e) => {
+                    }, [h, r]);
+                    const b = a.useCallback(() => {
+                            f(void 0);
+                        }, [f]),
+                        k = a.useCallback(() => {
+                            o?.(),
+                                f((e) => {
                                     if (null == e) return;
-                                    const { action: t, nextLocation: l } = e;
+                                    const { action: t, nextLocation: a } = e;
                                     switch (t) {
                                         case "PUSH":
-                                            a.push(l);
+                                            r.push(a);
                                             break;
                                         case "REPLACE":
-                                            a.replace(l);
+                                            r.replace(a);
                                             break;
                                         case "POP":
-                                            a.goBackThroughModals({ fallbackPath: n });
+                                            r.goBackThroughModals({ fallbackPath: n });
                                     }
                                 });
-                        }, [n, a, r]);
-                    return l.createElement(l.Fragment, null, t, p ? l.createElement(s.Z, { cancelButtonLabel: c, confirmButtonLabel: u, confirmButtonType: "destructiveFilled", headline: i, onCancel: f, onConfirm: y, text: o }) : null);
+                        }, [n, r, o]);
+                    return a.createElement(a.Fragment, null, t, p ? a.createElement(s.Z, { cancelButtonLabel: c, confirmButtonLabel: u, confirmButtonType: "destructiveFilled", headline: l, onCancel: b, onConfirm: k, text: i }) : null);
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsExtendedProfile.440ebaaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsExtendedProfile.821aabea.js.map

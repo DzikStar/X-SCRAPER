@@ -3573,7 +3573,7 @@
                 o("hbe4f99e", "¡Hola! Me muero por compartir contenidos exclusivos contigo y conocerte un poco mejor :)"),
                 o("fb278c82", "¿Qué hay en esta vista previa?"),
                 o("j6cab6ec", "Esto es lo que ven las personas antes de suscribirse a ti. Modifica y edita tus descripciones hasta que te convenzan."),
-                o("f2b1e83e", "Grok & Third-Party Collaborators"),
+                o("f2b1e83e", "Grok y colaboradores externos"),
                 o("e110a46c", "Eliminar historial de conversaciones"),
                 o("ebc4fda0", "Estás a punto de eliminar tu historial de conversaciones con Grok. No podrás volver a acceder a estas conversaciones."),
                 o("c90fe716", "¿Quieres eliminar tus conversaciones?"),
@@ -3954,6 +3954,7 @@
                 o("j6cdf012", "Los coanfitriones no pueden invitar o eliminar a otros coanfitriones"),
                 o("c727d116", "Los coanfitriones no pueden finalizar el Espacio"),
                 o("g69084b8", "Aceptar invitación para ser coanfitrión"),
+                o("ddd5cfe2", "Acoplar"),
                 o("ee230734", "Mostrar más opciones"),
                 o("ic8c615e", "Elegir y enviar una opción de respuesta rápida"),
                 o("a04077c4", "Elige 1 foto, video o GIF."),
@@ -4923,9 +4924,9 @@
                 o("d9f9dec0", "Ver Espacio"),
                 o("h0c1f37a", "Ver estadísticas de Espacios"),
                 o("e41fffbc", "El tiempo total de reproducción de tus videos."),
-                o("if2909ba", "Tiempo de reproducción"),
-                o("i0e5bf4c", "Tus videos");
-            o("ed99baea", "Acceso anticipado a la versión beta"),
+                o("if2909ba", "Tiempo de reproducción");
+            o("i0e5bf4c", "Tus videos"),
+                o("ed99baea", "Acceso anticipado a la versión beta"),
                 o("gf898b70", "Búsqueda avanzada"),
                 o("d2a43a7a", 'contiene "ai" y "startup"'),
                 o("a8584698", "ai startup"),
@@ -5508,7 +5509,7 @@
                 o("j6aa6172", "¿Quieres eliminar la calificación?"),
                 o("i4112750", "Esto no se puede deshacer."),
                 o("i6f6191a", "¡Gracias!"),
-                o("h5575012", "Agree and submit"),
+                o("h5575012", "Aceptar y enviar"),
                 o("f9171e52", "Este post recibió Me gusta de personas que normalmente no están de acuerdo, pero hasta ahora la información es limitada."),
                 o("j0f9919a", "Tu calificación no tendrá un impacto negativo en el post, pero puede ayudar a reconocer positivamente los posts que son bien recibidos por mucha gente."),
                 o("b3af830c", "Tu aporte:"),
@@ -5528,7 +5529,7 @@
                 o("g0402b3b", "bien recibidos por personas con diferentes puntos de vista"),
                 o("ged62c2b", "destacar"),
                 o("b5d5f7f1", "Marca la dirección"),
-                o("a42fef87", "Learn more"),
+                o("a42fef87", "Más información"),
                 o("bd7eb888", "Consulta todas las notas en este post"),
                 o("i97b83f6", "Hubo un error al enviar tu respuesta. Inténtalo de nuevo."),
                 o("a038ab9a", "Traducir nota"),
@@ -5879,9 +5880,9 @@
                 o("e41c9b4f", function (e) {
                     return "Guardado en " + e.bookmarkFolderName;
                 }),
-                o("h18f86a4", "Eliminar carpeta"),
-                o("f4ea967a", "Se eliminó la carpeta");
-            o("b670aa62", "Nombre de carpeta"),
+                o("h18f86a4", "Eliminar carpeta");
+            o("f4ea967a", "Se eliminó la carpeta"),
+                o("b670aa62", "Nombre de carpeta"),
                 o("aece5462", "El nombre de la carpeta se actualizó correctamente"),
                 o("e3299b94", "Algo salió mal. Intenta actualizar esa carpeta de nuevo dentro de un minuto."),
                 o("c09ea714", "Algo salió mal. Intenta eliminar esa carpeta de nuevo dentro de un minuto."),
@@ -6475,6 +6476,7 @@
                 o("babfa32c", "Personaliza tu visualización rápidamente"),
                 o("a2a2f98e", "Consulta las novedades"),
                 o("b4a361c0", "Puedes personalizar el color y el tamaño del texto, así como controlar la selección del modo Oscuro en este mismo momento. Solo tú puedes ver esta configuración."),
+                o("g4743c56", "Empezar a seguir"),
                 o("c797b44e", "Las últimas historias en X, contadas en posts."),
                 o("a19ce060", "La función Explorar no está disponible."),
                 o("f7d1a8e0", "App de Android"),
@@ -6882,10 +6884,10 @@
                 o("ede7d0a2", "Divisa"),
                 o("b925c18c", "Tipo de salario"),
                 o("j3d242ce", "Rango no válido"),
-                o("f4d07bd2", "Incluye detalles opcionales para que sea más fácil para los candidatos descubrir los roles con la búsqueda."),
-                o("b8cbb51a", "Resumen del empleo"),
-                o("bda6881e", "Este empleo se importó desde tu sistema de gestión del proceso de selección (ATS, por sus siglas en inglés). Solo se pueden modificar campos específicos.");
-            o("b075c68a", "Editar empleo"),
+                o("f4d07bd2", "Incluye detalles opcionales para que sea más fácil para los candidatos descubrir los roles con la búsqueda.");
+            o("b8cbb51a", "Resumen del empleo"),
+                o("bda6881e", "Este empleo se importó desde tu sistema de gestión del proceso de selección (ATS, por sus siglas en inglés). Solo se pueden modificar campos específicos."),
+                o("b075c68a", "Editar empleo"),
                 o("d4b6a6e0", "Spotlight de perfil"),
                 o("j2dd3686", "Empleos destacados sobre mis posts."),
                 o("af1cfd46", "Integración con ATS"),
@@ -7862,9 +7864,7 @@
                     return e.displayName + ", te damos la bienvenida otra vez";
                 }),
                 o("a76d58ba", "Estadísticas de anuncios"),
-                o("eccd0e1a", "Estadísticas de la organización"),
-                o("deea1708", "¿Quieres ver las estadísticas de todas tus cuentas de X?"),
-                o("eb603ffc", "Actualiza para afiliar a tu red y ver las estadísticas totales.");
+                o("eccd0e1a", "Estadísticas de la organización");
             function s(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var o = a[n];
@@ -7903,7 +7903,9 @@
                     i(e, a)
                 );
             }
-            o("gf67aae4", "Actualizar al nivel de acceso total"),
+            o("deea1708", "¿Quieres ver las estadísticas de todas tus cuentas de X?"),
+                o("eb603ffc", "Actualiza para afiliar a tu red y ver las estadísticas totales."),
+                o("gf67aae4", "Actualizar al nivel de acceso total"),
                 o("h75e3618", "Incluir organización"),
                 o("h24a8862", "Acerca de esta casilla de verificación"),
                 o("c29e3a88", "Seleccionar afiliados"),
@@ -8900,12 +8902,12 @@
                 o("j0f12222", "Ver más"),
                 o("f569f7c8", "Ir al sitio web"),
                 o("j0c6772a", "Visitar sitio web"),
-                o("f73003aa", "El video se reproducirá después del anuncio"),
-                o("b3112b8a", "Omitir"),
-                o("h6333ad0", "Omitir anuncio");
-            o("c59da417", function (e) {
-                return "Omitir anuncio dentro de " + e.seconds;
-            }),
+                o("f73003aa", "El video se reproducirá después del anuncio");
+            o("b3112b8a", "Omitir"),
+                o("h6333ad0", "Omitir anuncio"),
+                o("c59da417", function (e) {
+                    return "Omitir anuncio dentro de " + e.seconds;
+                }),
                 o("c3c147cf", function (e) {
                     return "Omitir " + e.seconds;
                 }),
@@ -11541,7 +11543,7 @@
                         {
                             key: "ffd3d1a1",
                             get: function () {
-                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                                return ["Las calificaciones son anónimas y están a disposición del público general por motivos de transparencia. "];
                             },
                         },
                         {
@@ -13361,4 +13363,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.35b7f74a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.61fb018a.js.map

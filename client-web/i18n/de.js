@@ -3574,7 +3574,7 @@
                 t("hbe4f99e", "Hallo! Ich kann es kaum erwarten, meinen Top-Secret-Content mit euch zu teilen und euch noch besser kennenzulernen :)"),
                 t("fb278c82", "Wofür ist diese Vorschau?"),
                 t("j6cab6ec", "Das sehen die Nutzer*innen, bevor sie dich abonnieren. Passe deine Beschreibungen an, bis alles perfekt ist."),
-                t("f2b1e83e", "Grok & Third-Party Collaborators"),
+                t("f2b1e83e", "Grok und unabhängige Kooperationspartner"),
                 t("e110a46c", "Konversationsprotokoll löschen"),
                 t("ebc4fda0", "Du löschst jetzt dein Grok-Konversationsprotokoll. Du kannst dann nicht mehr auf diese Konversationen zugreifen."),
                 t("c90fe716", "Möchtest du deine Konversationen löschen?"),
@@ -3955,6 +3955,7 @@
                 t("j6cdf012", "Co-Hosts können keine anderen Co-Hosts einladen oder entfernen"),
                 t("c727d116", "Co-Hosts können den Space nicht beenden"),
                 t("g69084b8", "Einladung als Co-Host annehmen"),
+                t("ddd5cfe2", "Andocken"),
                 t("ee230734", "Weitere Optionen anzeigen"),
                 t("ic8c615e", "Auswählen und Option zum schnellen Antworten senden"),
                 t("a04077c4", "Bitte wähle 1&nbsp;Foto, Video oder GIF."),
@@ -4924,9 +4925,9 @@
                 t("d9f9dec0", "Space anzeigen"),
                 t("h0c1f37a", "Space-Statistiken anzeigen"),
                 t("e41fffbc", "Wie lange deine Videos insgesamt angezeigt wurden."),
-                t("if2909ba", "Abspielzeit"),
-                t("i0e5bf4c", "Deine Videos");
-            t("ed99baea", "Vorzeitiger Beta-Zugriff"),
+                t("if2909ba", "Abspielzeit");
+            t("i0e5bf4c", "Deine Videos"),
+                t("ed99baea", "Vorzeitiger Beta-Zugriff"),
                 t("gf898b70", "Erweiterte Suche"),
                 t("d2a43a7a", "enthält sowohl „ai“ als auch „startup“"),
                 t("a8584698", "ai startup"),
@@ -5509,7 +5510,7 @@
                 t("j6aa6172", "Bewertung löschen?"),
                 t("i4112750", "Dies kann nicht rückgängig gemacht werden."),
                 t("i6f6191a", "Vielen Dank!"),
-                t("h5575012", "Agree and submit"),
+                t("h5575012", "Zustimmen und absenden"),
                 t("f9171e52", "Dieser Post hat „Gefällt mir“-Markierungen von Leuten erhalten, die normalerweise anderer Meinung sind, aber bisher liegen nur wenig Daten vor."),
                 t("j0f9919a", "Deine Bewertung hat keine negativen Auswirkungen auf einen Post, kann aber positiv helfen, Posts zu erkennen, die weithin Gefallen finden."),
                 t("b3af830c", "Dein Beitrag:"),
@@ -5529,7 +5530,7 @@
                 t("g0402b3b", "die von Leuten mit verschiedenen Sichtweisen mit „Gefällt mir“ markiert wurden"),
                 t("ged62c2b", "hervorzuheben"),
                 t("b5d5f7f1", "Beeinflusst die Entwicklung"),
-                t("a42fef87", "Learn more"),
+                t("a42fef87", "Mehr erfahren"),
                 t("bd7eb888", "Alle Anmerkungen zu diesem Post ansehen"),
                 t("i97b83f6", "Beim Übermitteln deines Einspruchs ist ein Fehler aufgetreten. Bitte versuche es erneut."),
                 t("a038ab9a", "Text übersetzen"),
@@ -5880,9 +5881,9 @@
                 t("e41c9b4f", function (e) {
                     return "Gespeichert in " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Ordner löschen"),
-                t("f4ea967a", "Ordner wurde gelöscht");
-            t("b670aa62", "Ordnername"),
+                t("h18f86a4", "Ordner löschen");
+            t("f4ea967a", "Ordner wurde gelöscht"),
+                t("b670aa62", "Ordnername"),
                 t("aece5462", "Ordnername wurde erfolgreich aktualisiert"),
                 t("e3299b94", "Etwas ist schiefgelaufen. Warte etwas und versuche dann erneut, diesen Ordner zu aktualisieren."),
                 t("c09ea714", "Etwas ist schiefgelaufen. Warte etwas und versuche dann erneut, diesen Ordner zu löschen."),
@@ -6476,6 +6477,7 @@
                 t("babfa32c", "Ansicht schnell anpassen"),
                 t("a2a2f98e", "Was gibt's Neues?"),
                 t("b4a361c0", "Du kannst jetzt die Farbe und die Textgröße ändern und die Auswahl des Dunkelmodus steuern. Diese Einstellungen sind nur für dich sichtbar."),
+                t("g4743c56", "Ab jetzt folgen"),
                 t("c797b44e", "Die neuesten Geschichten auf X – erzählt in Posts."),
                 t("a19ce060", "„Entdecken“ ist nicht verfügbar."),
                 t("f7d1a8e0", "Android-App"),
@@ -6883,10 +6885,10 @@
                 t("ede7d0a2", "Währung"),
                 t("b925c18c", "Gehaltstyp"),
                 t("j3d242ce", "Ungültiger Bereich"),
-                t("f4d07bd2", "Nimm optionale Details auf, damit Kandidat*innen ihre Rollen mit der Suche leichter entdecken können."),
-                t("b8cbb51a", "Jobzusammenfassung"),
-                t("bda6881e", "Dieser Job wurde aus deinem Applicant Tracking System (ATS) importiert. Beachte bitte, dass nur bestimmte Felder geändert werden können.");
-            t("b075c68a", "Job bearbeiten"),
+                t("f4d07bd2", "Nimm optionale Details auf, damit Kandidat*innen ihre Rollen mit der Suche leichter entdecken können.");
+            t("b8cbb51a", "Jobzusammenfassung"),
+                t("bda6881e", "Dieser Job wurde aus deinem Applicant Tracking System (ATS) importiert. Beachte bitte, dass nur bestimmte Felder geändert werden können."),
+                t("b075c68a", "Job bearbeiten"),
                 t("d4b6a6e0", "Profil-Spotlight"),
                 t("j2dd3686", "Bestimmte Jobs über meinen Posts anzeigen."),
                 t("af1cfd46", "ATS-Integration"),
@@ -7863,9 +7865,7 @@
                     return "Willkommen zurück, " + e.displayName;
                 }),
                 t("a76d58ba", "Statistiken zur Werbung"),
-                t("eccd0e1a", "Statistiken für die Organisation"),
-                t("deea1708", "Möchtest du Statistiken für alle deine X Accounts anzeigen?"),
-                t("eb603ffc", "Mit einem Upgrade kannst du dein Netzwerk als verbundene Accounts einrichten und aggregierte Statistiken anzeigen.");
+                t("eccd0e1a", "Statistiken für die Organisation");
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7904,7 +7904,9 @@
                     d(e, n)
                 );
             }
-            t("gf67aae4", "Upgrade auf Vollzugriff"),
+            t("deea1708", "Möchtest du Statistiken für alle deine X Accounts anzeigen?"),
+                t("eb603ffc", "Mit einem Upgrade kannst du dein Netzwerk als verbundene Accounts einrichten und aggregierte Statistiken anzeigen."),
+                t("gf67aae4", "Upgrade auf Vollzugriff"),
                 t("h75e3618", "Organisation einschließen"),
                 t("h24a8862", "Über dieses Kontrollkästchen"),
                 t("c29e3a88", "Verbundene Accounts auswählen"),
@@ -8901,12 +8903,12 @@
                 t("j0f12222", "Mehr anzeigen"),
                 t("f569f7c8", "Zu Website wechseln"),
                 t("j0c6772a", "Website besuchen"),
-                t("f73003aa", "Video wird nach der Anzeige abgespielt"),
-                t("b3112b8a", "Überspringen"),
-                t("h6333ad0", "Anzeige überspringen");
-            t("c59da417", function (e) {
-                return "Anzeige überspringen in " + e.seconds;
-            }),
+                t("f73003aa", "Video wird nach der Anzeige abgespielt");
+            t("b3112b8a", "Überspringen"),
+                t("h6333ad0", "Anzeige überspringen"),
+                t("c59da417", function (e) {
+                    return "Anzeige überspringen in " + e.seconds;
+                }),
                 t("c3c147cf", function (e) {
                     return "Überspringen: " + e.seconds;
                 }),
@@ -11542,7 +11544,7 @@
                         {
                             key: "ffd3d1a1",
                             get: function () {
-                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                                return ["Anfragen werden aus Gründen der Transparenz in anonymisierter Form öffentlich verfügbar gemacht. "];
                             },
                         },
                         {
@@ -13363,4 +13365,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.5cd087da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.9ada682a.js.map

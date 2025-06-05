@@ -115,6 +115,10 @@
             a.d(n, { x: () => l });
             const l = Object.freeze({ AtmWithdrawal: "AtmWithdrawal", Deposit: "Deposit", DisputeCredit: "DisputeCredit", Payment: "Payment", Refund: "Refund", Reverse: "Reverse", Transfer: "Transfer", Unspecified: "Unspecified", Withdraw: "Withdraw" });
         },
+        848739: (e, n, a) => {
+            a.d(n, { l: () => l });
+            const l = Object.freeze({ Delayed: "Delayed", RealTime: "RealTime" });
+        },
         539660: (e, n, a) => {
             a.d(n, { P: () => l });
             const l = Object.freeze({ Cancelled: "Cancelled", InReview: "InReview", RejectedByAutoReview: "RejectedByAutoReview", RejectedByManualReview: "RejectedByManualReview", RejectedByUnsupportedRegion: "RejectedByUnsupportedRegion", RejectedCardPaymentsDisabled: "RejectedCardPaymentsDisabled", RejectedLimitsExceeded: "RejectedLimitsExceeded", RejectedNotSufficientFunds: "RejectedNotSufficientFunds", Returned: "Returned", ReversedByAgent: "ReversedByAgent", UnrecognizedActivityConfirmed: "UnrecognizedActivityConfirmed", UnrecognizedActivityRejected: "UnrecognizedActivityRejected", Unspecified: "Unspecified" });
@@ -210,8 +214,8 @@
                 F,
                 _,
                 S,
-                f,
-                K = {
+                K,
+                f = {
                     fragment: {
                         argumentDefinitions: (l = [
                             { defaultValue: null, kind: "LocalArgument", name: "count" },
@@ -371,7 +375,7 @@
                                                             },
                                                             {
                                                                 kind: "InlineFragment",
-                                                                selections: (f = [
+                                                                selections: (K = [
                                                                     (S = {
                                                                         alias: null,
                                                                         args: null,
@@ -422,7 +426,7 @@
                                                                 type: "XPaymentsBankingDepositDetails",
                                                                 abstractKey: null,
                                                             },
-                                                            { kind: "InlineFragment", selections: f, type: "XPaymentsBankingWithdrawalDetails", abstractKey: null },
+                                                            { kind: "InlineFragment", selections: K, type: "XPaymentsBankingWithdrawalDetails", abstractKey: null },
                                                             { kind: "InlineFragment", selections: [S, y], type: "XPaymentsPaymentDetails", abstractKey: null },
                                                             { kind: "InlineFragment", selections: [S, y, { alias: null, args: null, kind: "ScalarField", name: "reference_transaction_id", storageKey: null }], type: "XPaymentsRefundDetails", abstractKey: null },
                                                         ],
@@ -448,8 +452,8 @@
                     },
                     params: { id: "8T8IBOeMMcb_qeRMIk2ZnQ", metadata: { sliceInfoPath: ["get_payments_customer_actions", "slice_info"] }, name: "useActionableItemsQuery", operationKind: "query", text: null },
                 };
-            K.hash = "a6a8f048d1caef1c671f17a2b72cb546";
-            const h = K;
+            f.hash = "a6a8f048d1caef1c671f17a2b72cb546";
+            const h = f;
         },
         914507: (e, n, a) => {
             a.d(n, { Z: () => d });
@@ -942,6 +946,72 @@
             r.hash = "3be193089e4332b2eadaa2e062bb229f";
             const d = r;
         },
+        942512: (e, n, a) => {
+            a.d(n, { Z: () => s });
+            var l,
+                i,
+                t = {
+                    fragment: {
+                        argumentDefinitions: [],
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "useCustomerTasksCarouselQuery",
+                        selections: (i = [
+                            {
+                                alias: null,
+                                args: [
+                                    { kind: "Literal", name: "count", value: 10 },
+                                    { kind: "Literal", name: "s", value: "8cce" },
+                                ],
+                                concreteType: "XPaymentsCustomerTasksSlice",
+                                kind: "LinkedField",
+                                name: "get_payments_customer_tasks",
+                                plural: !1,
+                                selections: [
+                                    {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: "XPaymentsCustomerTask",
+                                        kind: "LinkedField",
+                                        name: "items",
+                                        plural: !0,
+                                        selections: [
+                                            { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "title", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "subtitle", storageKey: null },
+                                            { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "icon", plural: !1, selections: [(l = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "icon_type", storageKey: null }], type: "XPaymentsCustomerTaskPredefinedIcon", abstractKey: null }, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], type: "XPaymentsCustomerTaskRemoteImageIcon", abstractKey: null }], storageKey: null },
+                                            { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "destination", plural: !1, selections: [l], storageKey: null },
+                                        ],
+                                        storageKey: null,
+                                    },
+                                    {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: "SliceInfo",
+                                        kind: "LinkedField",
+                                        name: "slice_info",
+                                        plural: !1,
+                                        selections: [
+                                            { alias: null, args: null, kind: "ScalarField", name: "next_cursor", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "previous_cursor", storageKey: null },
+                                        ],
+                                        storageKey: null,
+                                    },
+                                    { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] },
+                                ],
+                                storageKey: 'get_payments_customer_tasks(count:10,s:"8cce")',
+                            },
+                        ]),
+                        type: "Query",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: [], kind: "Operation", name: "useCustomerTasksCarouselQuery", selections: i },
+                    params: { id: "hB7ydhevuY_dTSd7lrENrA", metadata: {}, name: "useCustomerTasksCarouselQuery", operationKind: "query", text: null },
+                };
+            t.hash = "5e5de1a1abb3d36a84577df68d8033dd";
+            const s = t;
+        },
         195816: (e, n, a) => {
             a.d(n, { Z: () => s });
             var l,
@@ -979,4 +1049,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-17a1c92a.f2fbbb7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-17a1c92a.d0aab77a.js.map

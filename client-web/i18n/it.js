@@ -3959,6 +3959,7 @@
                 o("j6cdf012", "I cohost non possono invitare o rimuovere altri cohost"),
                 o("c727d116", "I cohost non possono terminare lo spazio"),
                 o("g69084b8", "Accetta invito da cohost"),
+                o("ddd5cfe2", "Dock"),
                 o("ee230734", "Mostra altre opzioni"),
                 o("ic8c615e", "Opzione per scegliere e inviare una risposta rapida"),
                 o("a04077c4", "Scegli una foto, un video o una GIF."),
@@ -4928,9 +4929,9 @@
                 o("d9f9dec0", "Visualizza spazio"),
                 o("h0c1f37a", "Visualizza statistiche spazio"),
                 o("e41fffbc", "Il tempo complessivo di visione dei tuoi video."),
-                o("if2909ba", "Tempo di visione"),
-                o("i0e5bf4c", "I tuoi video");
-            o("ed99baea", "Accesso beta in anteprima"),
+                o("if2909ba", "Tempo di visione");
+            o("i0e5bf4c", "I tuoi video"),
+                o("ed99baea", "Accesso beta in anteprima"),
                 o("gf898b70", "Ricerca avanzata"),
                 o("d2a43a7a", 'include sia "startup" sia "ia"'),
                 o("a8584698", "startup ia"),
@@ -5884,9 +5885,9 @@
                 o("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                o("h18f86a4", "Elimina cartella"),
-                o("f4ea967a", "La cartella è stata eliminata");
-            o("b670aa62", "Nome cartella"),
+                o("h18f86a4", "Elimina cartella");
+            o("f4ea967a", "La cartella è stata eliminata"),
+                o("b670aa62", "Nome cartella"),
                 o("aece5462", "Il nome della cartella è stato aggiornato correttamente"),
                 o("e3299b94", "Qualcosa è andato storto. Prova ad aggiornare nuovamente la cartella tra un minuto."),
                 o("c09ea714", "Qualcosa è andato storto. Prova a eliminare nuovamente la cartella tra un minuto."),
@@ -6480,6 +6481,7 @@
                 o("babfa32c", "Personalizza rapidamente l'aspetto"),
                 o("a2a2f98e", "Scopri le novità"),
                 o("b4a361c0", "Adesso puoi personalizzare i colori e la dimensione del testo nonché gestire la modalità scura. Solo tu vedi queste impostazioni."),
+                o("g4743c56", "Inizia a seguire"),
                 o("c797b44e", "Le ultime storie su X, raccontate dai post."),
                 o("a19ce060", "La scheda Esplora non è disponibile."),
                 o("f7d1a8e0", "App Android"),
@@ -6887,10 +6889,10 @@
                 o("ede7d0a2", "Valuta"),
                 o("b925c18c", "Tipo di retribuzione"),
                 o("j3d242ce", "Range non valido"),
-                o("f4d07bd2", "Includi i dettagli facoltativi affinché i candidati possano trovare le offerte più facilmente con una ricerca."),
-                o("b8cbb51a", "Riepilogo offerta"),
-                o("bda6881e", "Questa offerta di lavoro è stata importata dal tuo sistema di monitoraggio dei candidati (ATS). Ricorda che solo determinati campi possono essere modificati.");
-            o("b075c68a", "Modifica offerta"),
+                o("f4d07bd2", "Includi i dettagli facoltativi affinché i candidati possano trovare le offerte più facilmente con una ricerca.");
+            o("b8cbb51a", "Riepilogo offerta"),
+                o("bda6881e", "Questa offerta di lavoro è stata importata dal tuo sistema di monitoraggio dei candidati (ATS). Ricorda che solo determinati campi possono essere modificati."),
+                o("b075c68a", "Modifica offerta"),
                 o("d4b6a6e0", "Profile Spotlight"),
                 o("j2dd3686", "Metti in primo piano le offerte in evidenza sopra i miei post."),
                 o("af1cfd46", "Integrazione ATS"),
@@ -7867,9 +7869,7 @@
                     return "È bello rivederti, " + e.displayName;
                 }),
                 o("a76d58ba", "Statistiche annunci"),
-                o("eccd0e1a", "Statistiche dell'organizzazione"),
-                o("deea1708", "Vuoi vedere le statistiche per tutti i tuoi account X?"),
-                o("eb603ffc", "Esegui l'upgrade per affiliare la tua rete e visualizzare le statistiche aggregate.");
+                o("eccd0e1a", "Statistiche dell'organizzazione");
             function r(e, i) {
                 for (var a = 0; a < i.length; a++) {
                     var o = i[a];
@@ -7908,7 +7908,9 @@
                     c(e, i)
                 );
             }
-            o("gf67aae4", "Esegui l'upgrade a Full access"),
+            o("deea1708", "Vuoi vedere le statistiche per tutti i tuoi account X?"),
+                o("eb603ffc", "Esegui l'upgrade per affiliare la tua rete e visualizzare le statistiche aggregate."),
+                o("gf67aae4", "Esegui l'upgrade a Full access"),
                 o("h75e3618", "Includi organizzazione"),
                 o("h24a8862", "Info su questa casella"),
                 o("c29e3a88", "Seleziona affiliati"),
@@ -8905,12 +8907,12 @@
                 o("j0f12222", "Approfondisci"),
                 o("f569f7c8", "Passa al sito Web"),
                 o("j0c6772a", "Visita il sito Web"),
-                o("f73003aa", "Il video sarà riprodotto dopo l'annuncio"),
-                o("b3112b8a", "Salta"),
-                o("h6333ad0", "Salta annuncio");
-            o("c59da417", function (e) {
-                return "Salta annuncio tra " + e.seconds;
-            }),
+                o("f73003aa", "Il video sarà riprodotto dopo l'annuncio");
+            o("b3112b8a", "Salta"),
+                o("h6333ad0", "Salta annuncio"),
+                o("c59da417", function (e) {
+                    return "Salta annuncio tra " + e.seconds;
+                }),
                 o("c3c147cf", function (e) {
                     return "Salta " + e.seconds;
                 }),
@@ -13354,4 +13356,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.68c06c2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.9bff583a.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-6107ac1a", "icons/IconChevronDown-js"],
+    ["shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-6107ac1a"],
     {
         829028: (e, a, n) => {
             n.d(a, { Z: () => l });
@@ -621,15 +621,15 @@
                     return r.createElement(r.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: a, TabBar: n, appBarStyle: l, backLocation: t, documentTitle: i, headerless: o, history: d, leftControl: c, middleControl: g, onBackClick: f, rightControl: b, screenType: h, searchBoxOptions: F, secondaryBar: k, showSubtitleOnRoot: w, showSubtitleOnWideDetail: S, subtitle: _, title: v, titleIconCell: C, titleIconCellSize: Z, withDetailOpen: D, withSearchBox: K, withTweetButton: E, withWideContainer: P } = this.props,
+                    const { SideNavButton: a, TabBar: n, appBarStyle: l, backLocation: t, documentTitle: i, headerless: o, history: d, leftControl: c, middleControl: g, onBackClick: f, rightControl: b, screenType: h, searchBoxOptions: F, secondaryBar: k, showSubtitleOnRoot: w, showSubtitleOnWideDetail: S, subtitle: _, title: v, titleIconCell: C, titleIconCellSize: D, withDetailOpen: Z, withSearchBox: K, withTweetButton: E, withWideContainer: P } = this.props,
                         O = "root" === h,
                         B = "secondaryRoot" === h,
                         T = "primaryDetail" === h,
                         x = (T && S) || (O && w),
                         I = O || (T && e),
                         L = O ? u.ey : T ? u.vX : void 0,
-                        R = r.createElement(s.Z, { style: y.appBarContainer }, r.createElement(m.ZP, { backLocation: t, fixed: !1, hideBackButton: I, history: d, leftControl: c, middleControl: g, onBackClick: f, rightControl: b, secondaryBar: k, style: l, subtitle: x ? _ : void 0, title: v, titleDomId: L, titleIconCell: C, titleIconCellSize: Z, withWideContainer: P })),
-                        M = O || (B && D) ? null : r.createElement(p.Z.Configure, { SideNavButton: a, TabBar: n, backLocation: t, documentTitle: i, headerless: o, middleControl: g, onBackClick: f, rightControl: b, searchBoxOptions: F, subtitle: _, title: v, withSearchBox: K, withTweetButton: E });
+                        R = r.createElement(s.Z, { style: y.appBarContainer }, r.createElement(m.ZP, { backLocation: t, fixed: !1, hideBackButton: I, history: d, leftControl: c, middleControl: g, onBackClick: f, rightControl: b, secondaryBar: k, style: l, subtitle: x ? _ : void 0, title: v, titleDomId: L, titleIconCell: C, titleIconCellSize: D, withWideContainer: P })),
+                        M = O || (B && Z) ? null : r.createElement(p.Z.Configure, { SideNavButton: a, TabBar: n, backLocation: t, documentTitle: i, headerless: o, middleControl: g, onBackClick: f, rightControl: b, searchBoxOptions: F, subtitle: _, title: v, withSearchBox: K, withTweetButton: E });
                     return r.createElement(r.Fragment, null, M, R);
                 }
             }
@@ -698,7 +698,7 @@
                 d = t.default.create((e) => ({ browserContent: { paddingBottom: e.spaces.space48 } }));
         },
         105633: (e, a, n) => {
-            n.d(a, { Z: () => Z });
+            n.d(a, { Z: () => D });
             var r,
                 l,
                 t = {
@@ -796,7 +796,7 @@
                 _ = F().c1521804,
                 v = o,
                 C = s;
-            function Z() {
+            function D() {
                 const e = (0, k.v9)(w.x0);
                 c()(e, "UserID must be defined");
                 const a = p()(v, { userId: e }),
@@ -846,10 +846,10 @@
                 _ = n(351743),
                 v = n.n(_);
             const C = k,
-                Z = h,
-                D = (e) => {
+                D = h,
+                Z = (e) => {
                     const a = o()(C, e),
-                        [n, r] = v()(Z);
+                        [n, r] = v()(D);
                     return [
                         s.useCallback(
                             () =>
@@ -882,7 +882,7 @@
                     const { addToast: a, disabled: n, label: l, onCancel: t, onConfirm: i, viewer: c, ...m } = e,
                         p = o()(x, c),
                         [g, f] = s.useState(!1),
-                        [b, y] = D(p),
+                        [b, y] = Z(p),
                         h = s.useCallback(() => {
                             f(!0);
                         }, []),
@@ -1056,19 +1056,6 @@
             const b = c.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
                 y = f;
         },
-        487552: (e, a, n) => {
-            n.r(a), n.d(a, { default: () => o });
-            var r = n(202784),
-                l = n(890601),
-                t = n(783427),
-                s = n(347101);
-            const i = (e = {}) => {
-                const { direction: a } = (0, t.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: a });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const o = i;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-6107ac1a.23e1b97a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-6107ac1a.fdc4c6da.js.map

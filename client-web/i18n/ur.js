@@ -3959,6 +3959,7 @@
                 o("j6cdf012", "Co-hosts can’t invite or remove other co-hosts"),
                 o("c727d116", "Co-hosts can’t end the Space"),
                 o("g69084b8", "Accept co-host invite"),
+                o("ddd5cfe2", "Dock"),
                 o("ee230734", "مزید اختیارات کو دکھائیں"),
                 o("ic8c615e", "فوری جواب کا اختیار منتخب کریں اور بھیجیں"),
                 o("a04077c4", "براہ کرم 1 تصویر، ویڈیو یا GIF منتخب کریں۔"),
@@ -4928,9 +4929,9 @@
                 o("d9f9dec0", "View Space"),
                 o("h0c1f37a", "View Space Analytics"),
                 o("e41fffbc", "The total watch time of your videos."),
-                o("if2909ba", "Watch Time"),
-                o("i0e5bf4c", "Your videos");
-            o("ed99baea", "Early Beta Access"),
+                o("if2909ba", "Watch Time");
+            o("i0e5bf4c", "Your videos"),
+                o("ed99baea", "Early Beta Access"),
                 o("gf898b70", "Advanced Search"),
                 o("d2a43a7a", 'contains both "ai" and "startup"'),
                 o("a8584698", "ai startup"),
@@ -5884,9 +5885,9 @@
                 o("e41c9b4f", function (e) {
                     return e.bookmarkFolderName + " میں محفوظ کر دیا گیا";
                 }),
-                o("h18f86a4", "فولڈر حذف کریں"),
-                o("f4ea967a", "فولڈر حذف کر دیا گیا ہے");
-            o("b670aa62", "فولڈر کا نام"),
+                o("h18f86a4", "فولڈر حذف کریں");
+            o("f4ea967a", "فولڈر حذف کر دیا گیا ہے"),
+                o("b670aa62", "فولڈر کا نام"),
                 o("aece5462", "فولڈر کا نام کامیابی کے ساتھ اپ ڈیٹ ہو گیا ہے"),
                 o("e3299b94", "کچھ نقص واقع ہوا ہے۔ ایک منٹ بعد اس فولڈر کو دوبارہ اپ ڈیٹ کرنے کی کوشش کریں۔"),
                 o("c09ea714", "کچھ نقص واقع ہوا ہے۔ ایک منٹ بعد اس فولڈر کو دوبارہ حذف کرنے کی کوشش کریں۔"),
@@ -6480,6 +6481,7 @@
                 o("babfa32c", "اپنے منظر کو جلدی سے حسب ضرورت بنائیں"),
                 o("a2a2f98e", "دیکھیں کہ نیا کیا ہے"),
                 o("b4a361c0", "آپ اس ہی وقت اپنے رنگ اور اپنے متن کے سائز کو ذاتی نوعیت کا بنانے کے ساتھ ساتھ اپنے ڈارک موڈ کے انتخاب کو بھی کنٹرول کر سکتے ہیں۔ یہ ترتیبات صرف آپ کو دکھائی دیں گی۔"),
+                o("g4743c56", "Start following"),
                 o("c797b44e", "The latest stories on X - as told by posts."),
                 o("a19ce060", "دریافت کرنا دستیاب نہیں ہے۔"),
                 o("f7d1a8e0", "اینڈروئیڈ ایپ"),
@@ -6887,10 +6889,10 @@
                 o("ede7d0a2", "Currency"),
                 o("b925c18c", "Salary Type"),
                 o("j3d242ce", "Invalid range"),
-                o("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
-                o("b8cbb51a", "Job Summary"),
-                o("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.");
-            o("b075c68a", "Edit job"),
+                o("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search.");
+            o("b8cbb51a", "Job Summary"),
+                o("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                o("b075c68a", "Edit job"),
                 o("d4b6a6e0", "پروفائل اسپاٹ لائٹ"),
                 o("j2dd3686", "Highlight featured jobs above my posts."),
                 o("af1cfd46", "ATS integration"),
@@ -7867,9 +7869,7 @@
                     return "Welcome back, " + e.displayName;
                 }),
                 o("a76d58ba", "Ads Analytics"),
-                o("eccd0e1a", "Organization Analytics"),
-                o("deea1708", "Want to view analytics across all your X accounts?"),
-                o("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics.");
+                o("eccd0e1a", "Organization Analytics");
             function i(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var o = t[a];
@@ -7908,7 +7908,9 @@
                     c(e, t)
                 );
             }
-            o("gf67aae4", "Upgrade to Full Access"),
+            o("deea1708", "Want to view analytics across all your X accounts?"),
+                o("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
+                o("gf67aae4", "Upgrade to Full Access"),
                 o("h75e3618", "Include organization"),
                 o("h24a8862", "About this checkbox"),
                 o("c29e3a88", "Select affiliates"),
@@ -8905,12 +8907,12 @@
                 o("j0f12222", "مزید دیکھیں"),
                 o("f569f7c8", "ویب سائٹ پر جائیں"),
                 o("j0c6772a", "ویب سائٹ ملاحظہ کریں"),
-                o("f73003aa", "اشتہار کے بعد ویڈیو چلے گی"),
-                o("b3112b8a", "چھوڑ دیں"),
-                o("h6333ad0", "اشتہار چھوڑیں");
-            o("c59da417", function (e) {
-                return e.seconds + " میں اشتہار نظر انداز کریں";
-            }),
+                o("f73003aa", "اشتہار کے بعد ویڈیو چلے گی");
+            o("b3112b8a", "چھوڑ دیں"),
+                o("h6333ad0", "اشتہار چھوڑیں"),
+                o("c59da417", function (e) {
+                    return e.seconds + " میں اشتہار نظر انداز کریں";
+                }),
                 o("c3c147cf", function (e) {
                     return e.seconds + " کو نظر انداز کریں";
                 }),
@@ -13358,4 +13360,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.ceada60a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.87e0fcba.js.map

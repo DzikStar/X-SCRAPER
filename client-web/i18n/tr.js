@@ -3954,6 +3954,7 @@
                 n("j6cdf012", "Yardımcılar, diğer yardımcıları davet edemez veya çıkaramaz."),
                 n("c727d116", "Yardımcılar Sohbet Odasını sonlandıramaz"),
                 n("g69084b8", "Yardımcı davetini kabul et"),
+                n("ddd5cfe2", "Dock"),
                 n("ee230734", "Daha fazla seçenek göster"),
                 n("ic8c615e", "Bir hızlı yanıt seçeneği belirle ve gönder"),
                 n("a04077c4", "Lütfen 1 fotoğraf, video veya GIF seç."),
@@ -4923,9 +4924,9 @@
                 n("d9f9dec0", "Sohbet Odasını Görüntüle"),
                 n("h0c1f37a", "Sohbet Odası İstatistiklerini Görüntüle"),
                 n("e41fffbc", "Videolarının toplam izlenme süresi."),
-                n("if2909ba", "İzlenme Süresi"),
-                n("i0e5bf4c", "Videoların");
-            n("ed99baea", "Erken Beta Erişimi"),
+                n("if2909ba", "İzlenme Süresi");
+            n("i0e5bf4c", "Videoların"),
+                n("ed99baea", "Erken Beta Erişimi"),
                 n("gf898b70", "Gelişmiş Arama"),
                 n("d2a43a7a", 'hem "ai" hem de "girişimi" ifadesini içerir'),
                 n("a8584698", "ai girişimi"),
@@ -5879,9 +5880,9 @@
                 n("e41c9b4f", function (e) {
                     return e.bookmarkFolderName + " içeriğine kaydedildi";
                 }),
-                n("h18f86a4", "Klasörü sil"),
-                n("f4ea967a", "Klasör silindi");
-            n("b670aa62", "Klasör Adı"),
+                n("h18f86a4", "Klasörü sil");
+            n("f4ea967a", "Klasör silindi"),
+                n("b670aa62", "Klasör Adı"),
                 n("aece5462", "Klasör adı başarıyla güncellendi"),
                 n("e3299b94", "Bir sorun oluştu. Birkaç dakika içinde bu klasörü güncellemeyi tekrar dene."),
                 n("c09ea714", "Bir sorun oluştu. Birkaç dakika içinde bu klasörü silmeyi tekrar dene."),
@@ -6475,6 +6476,7 @@
                 n("babfa32c", "Görünümünü çabucak özelleştir"),
                 n("a2a2f98e", "Yeniliklere göz at"),
                 n("b4a361c0", "Metninin rengini ve boyutunu hemen kişiselleştirebilir ve karanlık mod seçimini kontrol edebilirsin. Bu ayarları yalnızca sen görebilirsin."),
+                n("g4743c56", "Takibe başla"),
                 n("c797b44e", "X'teki en son haberler, gönderilerle sunuluyor."),
                 n("a19ce060", "Keşfet kullanım dışı."),
                 n("f7d1a8e0", "Android Uygulaması"),
@@ -6882,10 +6884,10 @@
                 n("ede7d0a2", "Para birimi"),
                 n("b925c18c", "Maaş Türü"),
                 n("j3d242ce", "Geçersiz aralık"),
-                n("f4d07bd2", "Adayların rollerini aramayla daha kolay bulmasını sağlamak için isteğe bağlı ayrıntılar ekle."),
-                n("b8cbb51a", "İş Özeti"),
-                n("bda6881e", "Bu ilan, senin Başvuru Takip Sisteminden (ATS) içe aktarıldı. Yalnızca belirli alanların değiştirilebileceğini lütfen unutma.");
-            n("b075c68a", "İlanı düzenle"),
+                n("f4d07bd2", "Adayların rollerini aramayla daha kolay bulmasını sağlamak için isteğe bağlı ayrıntılar ekle.");
+            n("b8cbb51a", "İş Özeti"),
+                n("bda6881e", "Bu ilan, senin Başvuru Takip Sisteminden (ATS) içe aktarıldı. Yalnızca belirli alanların değiştirilebileceğini lütfen unutma."),
+                n("b075c68a", "İlanı düzenle"),
                 n("d4b6a6e0", "Profil Spotlight'ı"),
                 n("j2dd3686", "Öne çıkan iş ilanlarını gönderilerimin üzerinde vurgula."),
                 n("af1cfd46", "ATS entegrasyonu"),
@@ -7862,9 +7864,7 @@
                     return "Tekrar hoş geldin, " + e.displayName;
                 }),
                 n("a76d58ba", "Reklam İstatistikleri"),
-                n("eccd0e1a", "Kuruluş İstatistikleri"),
-                n("deea1708", "Tüm X hesaplarında istatistikleri görüntülemek ister misin?"),
-                n("eb603ffc", "Ağını ilişkilendirmek ve toplu istatistikleri görüntülemek için hesabını yükselt.");
+                n("eccd0e1a", "Kuruluş İstatistikleri");
             function l(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var n = a[i];
@@ -7903,7 +7903,9 @@
                     t(e, a)
                 );
             }
-            n("gf67aae4", "Tam Erişime Yükselt"),
+            n("deea1708", "Tüm X hesaplarında istatistikleri görüntülemek ister misin?"),
+                n("eb603ffc", "Ağını ilişkilendirmek ve toplu istatistikleri görüntülemek için hesabını yükselt."),
+                n("gf67aae4", "Tam Erişime Yükselt"),
                 n("h75e3618", "Kuruluşu dahil et"),
                 n("h24a8862", "Bu onay kutusu hakkında"),
                 n("c29e3a88", "İlişkili hesapları seç"),
@@ -8900,12 +8902,12 @@
                 n("j0f12222", "Daha fazlasını gör"),
                 n("f569f7c8", "İnternet sitesine git"),
                 n("j0c6772a", "İnternet sitesini ziyaret et"),
-                n("f73003aa", "Video reklamdan sonra oynatılacak"),
-                n("b3112b8a", "Atla"),
-                n("h6333ad0", "Reklamı Atla");
-            n("c59da417", function (e) {
-                return "Reklamı Atla: " + e.seconds;
-            }),
+                n("f73003aa", "Video reklamdan sonra oynatılacak");
+            n("b3112b8a", "Atla"),
+                n("h6333ad0", "Reklamı Atla"),
+                n("c59da417", function (e) {
+                    return "Reklamı Atla: " + e.seconds;
+                }),
                 n("c3c147cf", function (e) {
                     return "Geç " + e.seconds;
                 }),
@@ -13358,4 +13360,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.29a8179a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.48a986aa.js.map

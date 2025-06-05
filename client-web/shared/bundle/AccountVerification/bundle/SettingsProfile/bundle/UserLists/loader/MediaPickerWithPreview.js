@@ -3,7 +3,7 @@
     ["shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview"],
     {
         373554: (e, t, i) => {
-            i.d(t, { Z: () => v, h: () => f });
+            i.d(t, { Z: () => g, h: () => f });
             var a = i(807896),
                 r = i(202784),
                 s = i(449161),
@@ -18,13 +18,13 @@
                 m = r.createElement(d.default, null),
                 f = ({ acceptGifs: e, acceptImages: t = !0, acceptVideo: i }) => (t ? c.v5 : []).concat(e ? [c.Re] : []).concat(i ? u.jn : []);
             const b = o.default.create((e) => ({ root: { margin: `-${e.spaces.space12}` } })),
-                v = function ({ "aria-label": e = p, acceptGifs: t = !0, acceptImages: i = !0, acceptVideo: o = !0, customMimeTypes: n = [], icon: l = m, size: d = "medium", style: c, withIcon: u = !0, ...v }) {
-                    const g = f({ acceptGifs: t, acceptImages: i, acceptVideo: o }).concat(n).join(",");
-                    return r.createElement(s.Z, (0, a.Z)({}, v, { accept: g, "aria-label": e, icon: u ? l : void 0, size: d, style: [b.root, c], testID: h }));
+                g = function ({ "aria-label": e = p, acceptGifs: t = !0, acceptImages: i = !0, acceptVideo: o = !0, customMimeTypes: n = [], icon: l = m, size: d = "medium", style: c, withIcon: u = !0, ...g }) {
+                    const v = f({ acceptGifs: t, acceptImages: i, acceptVideo: o }).concat(n).join(",");
+                    return r.createElement(s.Z, (0, a.Z)({}, g, { accept: v, "aria-label": e, icon: u ? l : void 0, size: d, style: [b.root, c], testID: h }));
                 };
         },
         751170: (e, t, i) => {
-            i.d(t, { A: () => m, Z: () => g });
+            i.d(t, { A: () => m, Z: () => v });
             var a = i(202784),
                 r = i(325686),
                 s = i(167630),
@@ -69,15 +69,15 @@
                         { imagePreviewUrl: d } = this.state || {},
                         c = i.mediaFile && i.mediaFile.isGif && !t && !d,
                         u = i.needsProcessing || c,
-                        h = [v.root, b[e], u && v.loadingBorder],
+                        h = [g.root, b[e], u && g.loadingBorder],
                         m = this._getImageSrc();
-                    return a.createElement(r.Z, { onClick: n, style: h }, u || !m ? a.createElement(s.Z, { "aria-label": p, style: v.activityIndicator }) : a.createElement(o.Z, { resizeMode: l, source: m, style: v.image }));
+                    return a.createElement(r.Z, { onClick: n, style: h }, u || !m ? a.createElement(s.Z, { "aria-label": p, style: g.activityIndicator }) : a.createElement(o.Z, { resizeMode: l, source: m, style: g.image }));
                 }
             }
             f.defaultProps = { borderRadius: m.NONE, enableGif: !0, resizeMode: "cover" };
             const b = n.default.create((e) => ({ [m.INFINITE]: { borderRadius: e.borderRadii.infinite }, [m.MEDIUM]: { borderRadius: e.borderRadii.small }, [m.NONE]: { borderRadius: e.borderRadii.none } })),
-                v = n.default.create((e) => ({ root: { borderRadius: e.borderRadii.xLarge, borderStyle: "solid", borderWidth: e.borderWidths.none, borderColor: "transparent", maxWidth: "100%", height: "100%", overflow: "hidden" }, image: { display: "block", height: "100%", width: "100%" }, loadingBorder: { borderColor: e.colors.gray300 }, activityIndicator: { height: "100%" } })),
-                g = f;
+                g = n.default.create((e) => ({ root: { borderRadius: e.borderRadii.xLarge, borderStyle: "solid", borderWidth: e.borderWidths.none, borderColor: "transparent", maxWidth: "100%", height: "100%", overflow: "hidden" }, image: { display: "block", height: "100%", width: "100%" }, loadingBorder: { borderColor: e.colors.gray300 }, activityIndicator: { height: "100%" } })),
+                v = f;
         },
         304059: (e, t, i) => {
             i.d(t, { Z: () => U });
@@ -95,15 +95,15 @@
                 m = i(597237),
                 f = i(254944),
                 b = i(837020),
-                v = i(276259),
-                g = i(443781),
+                g = i(276259),
+                v = i(443781),
                 y = i(10656),
-                _ = i(716233),
-                P = i(946208),
+                P = i(716233),
+                _ = i(946208),
                 E = i(540387),
-                w = i(950822),
-                I = i(303186),
-                D = i(954300);
+                D = i(950822),
+                w = i(303186),
+                I = i(954300);
             class C extends a.Component {
                 constructor(...e) {
                     super(...e),
@@ -114,8 +114,8 @@
                 }
                 render() {
                     const { children: e, dataSaverMode: t, getVideoRef: i, style: r, variants: s, ...o } = this.props,
-                        n = (0, I.IM)((0, D.rD)(s), t);
-                    return (0, w.Z)("video", { ...o, children: [n.map((e) => a.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: r });
+                        n = (0, w.IM)((0, I.rD)(s), t);
+                    return (0, D.Z)("video", { ...o, children: [n.map((e) => a.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: r });
                 }
             }
             C.defaultProps = { dataSaverMode: !1, variants: [] };
@@ -125,7 +125,7 @@
                 V = i(195560);
             const R = (0, S.Z)({
                     loader: () =>
-                        Promise.all([i.e("icons.0"), i.e("icons.16"), i.e("icons.10"), i.e("icons.13"), i.e("icons.22"), i.e("modules.common-e907d115"), i.e("modules.common-e019dbda"), i.e("icons.26"), i.e("modules.audio-6107ac1a"), i.e("modules.audio-b953418a"), i.e("modules.audio-7c51e6a7"), i.e("modules.audio-04db59e9"), i.e("modules.audio-76583d6c"), i.e("modules.audio-b7a8a5fb"), i.e("modules.audio-51f6e793"), i.e("modules.audio-e019dbda"), i.e("modules.audio-262c94d4"), i.e("modules.audio-c6fe4ea4"), i.e("icons.4"), i.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-85aa903d"), i.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-c8e3a520"), i.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-658f42e4"), i.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-1f16c288"), i.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), i.e("loader.MediaPreviewVideoPlayer")])
+                        Promise.all([i.e("icons.2"), i.e("icons.9"), i.e("icons.14"), i.e("modules.common-e907d115"), i.e("modules.common-e019dbda"), i.e("icons.5"), i.e("modules.audio-6107ac1a"), i.e("modules.audio-b953418a"), i.e("modules.audio-7c51e6a7"), i.e("modules.audio-04db59e9"), i.e("modules.audio-76583d6c"), i.e("modules.audio-b7a8a5fb"), i.e("modules.audio-51f6e793"), i.e("modules.audio-e019dbda"), i.e("modules.audio-262c94d4"), i.e("modules.audio-c6fe4ea4"), i.e("icons.17"), i.e("icons.27"), i.e("icons.19"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), i.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), i.e("loader.MediaPreviewVideoPlayer")])
                             .then(i.bind(i, 298607))
                             .then((e) => ({ default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ })),
                     renderPlaceholder: (e, t) => a.createElement(V.Z, { hasError: e, onRetry: t }),
@@ -133,10 +133,10 @@
                 F = h().gd80afba,
                 G = h().j322caee,
                 x = h().abd845fe,
-                L = h().df1b0708,
+                k = h().df1b0708,
                 B = h().cd959e5c,
                 z = h().e68b09b4,
-                k = h().add55c98,
+                L = h().add55c98,
                 O = h().f350cf46;
             class T extends a.Component {
                 constructor(...e) {
@@ -183,14 +183,14 @@
                         });
                 }
                 render() {
-                    const { "aria-label": e, enableGif: t, mediaItem: i, onEdit: d, onEditSensitiveWarning: c, onRemove: u, role: h, style: g, withAltTextLabel: _, withCloseButton: P, withDragAndDropIndicator: E, withEditButton: w, withEditIcon: I, withEditSensitiveWarningButton: D } = this.props,
+                    const { "aria-label": e, enableGif: t, mediaItem: i, onEdit: d, onEditSensitiveWarning: c, onRemove: u, role: h, style: v, withAltTextLabel: P, withCloseButton: _, withDragAndDropIndicator: E, withEditButton: D, withEditIcon: w, withEditSensitiveWarningButton: I } = this.props,
                         { mediaContainerSizeStyle: C, playGif: Z } = this.state,
-                        S = i.externalMediaDetails && i.externalMediaDetails.mediaType === v.Re,
+                        S = i.externalMediaDetails && i.externalMediaDetails.mediaType === g.Re,
                         V = S || (t && i.mediaFile && i.mediaFile.isGif),
                         R = !!i.mediaFile?.isVideo;
                     return a.createElement(s.ZP, null, ({ windowWidth: t }) => {
-                        const i = void 0 !== I ? I : !y.Z.isTwoColumnLayout(t);
-                        return a.createElement(r.Z, { "aria-label": e || k, onLayout: this._handleMediaPreviewLayout, role: h, style: [g, A.cursor, S && A.gifPlayButton, C] }, this._renderPreview(), S && !Z && a.createElement(o.Z, { "aria-label": L, onPress: this._handleGifClick, size: "small" }), V ? a.createElement(M.ZP, { type: M.AM }) : null, _ && !R ? a.createElement(n.Z, { align: "left", altLabel: e }) : null, a.createElement(r.Z, { style: A.editMedia }, E ? a.createElement(l.ZP, { "aria-label": O, hoverLabel: { label: O }, icon: a.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, w && D ? a.createElement(l.ZP, { "aria-label": G, icon: a.createElement(m.default, { style: A.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, w ? a.createElement(l.ZP, { "aria-label": F, icon: i ? a.createElement(f.default, null) : void 0, onPress: d, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : x) : null), P ? a.createElement(l.ZP, { "aria-label": B, hoverLabel: { label: z }, icon: a.createElement(b.default, null), onPress: u, size: "small", style: A.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        const i = void 0 !== w ? w : !y.Z.isTwoColumnLayout(t);
+                        return a.createElement(r.Z, { "aria-label": e || L, onLayout: this._handleMediaPreviewLayout, role: h, style: [v, A.cursor, S && A.gifPlayButton, C] }, this._renderPreview(), S && !Z && a.createElement(o.Z, { "aria-label": k, onPress: this._handleGifClick, size: "small" }), V ? a.createElement(M.ZP, { type: M.AM }) : null, P && !R ? a.createElement(n.Z, { align: "left", altLabel: e }) : null, a.createElement(r.Z, { style: A.editMedia }, E ? a.createElement(l.ZP, { "aria-label": O, hoverLabel: { label: O }, icon: a.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, D && I ? a.createElement(l.ZP, { "aria-label": G, icon: a.createElement(m.default, { style: A.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, D ? a.createElement(l.ZP, { "aria-label": F, icon: i ? a.createElement(f.default, null) : void 0, onPress: d, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : x) : null), _ ? a.createElement(l.ZP, { "aria-label": B, hoverLabel: { label: z }, icon: a.createElement(b.default, null), onPress: u, size: "small", style: A.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -216,18 +216,18 @@
                         o = s.mediaMetadata?.subtitles;
                     if (this.context.featureSwitches.isTrue("responsive_web_composer_configurable_video_player_enabled") && r instanceof E.ZP) {
                         let o = [];
-                        (0, _.TO)(r.fileHandle) && (o = [{ src: t, type: e }]);
+                        (0, P.TO)(r.fileHandle) && (o = [{ src: t, type: e }]);
                         const n = s.mediaMetadata?.subtitles,
                             l = s?.trimData;
                         return a.createElement(R, { mediaFile: r, mediaId: String(i), mediaItem: s, subtitles: n, trimData: l, variants: o });
                     }
                     {
-                        const i = (0, _.TO)(r.fileHandle) ? [{ content_type: e, url: t }] : [];
-                        return a.createElement(C, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: r instanceof E.ZP ? r.thumbnail : "", style: A.video, variants: i }, o?.upload?.mediaFile instanceof P.ZP ? a.createElement("track", { default: !0, kind: "subtitles", label: o.displayName, src: o.upload.mediaFile.vtt, srcLang: o.lang }) : null);
+                        const i = (0, P.TO)(r.fileHandle) ? [{ content_type: e, url: t }] : [];
+                        return a.createElement(C, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: r instanceof E.ZP ? r.thumbnail : "", style: A.video, variants: i }, o?.upload?.mediaFile instanceof _.ZP ? a.createElement("track", { default: !0, kind: "subtitles", label: o.displayName, src: o.upload.mediaFile.vtt, srcLang: o.lang }) : null);
                     }
                 }
             }
-            (T.contextType = g.rC), (T.defaultProps = { enableGif: !0, withCloseButton: !0, withAltTextLabel: !1, withEditButton: !1, withEditSensitiveWarningButton: !1 });
+            (T.contextType = v.rC), (T.defaultProps = { enableGif: !0, withCloseButton: !0, withAltTextLabel: !1, withEditButton: !1, withEditSensitiveWarningButton: !1 });
             const A = d.default.create((e) => ({ buttonLeft: { position: "absolute", start: e.spaces.space4, top: e.spaces.space4 }, buttonRight: { position: "absolute", end: e.spaces.space4, top: e.spaces.space4 }, cursor: { cursor: "pointer" }, editSensitiveWarningIcon: { color: e.colors.primary }, editMedia: { display: "flex", start: e.spaces.space4, top: e.spaces.space4, gap: e.spaces.space4, flexDirection: "row", position: "absolute" }, editImage: { bottom: e.spaces.space4 }, editVideo: { top: e.spaces.space4 }, gifPlayButton: { alignItems: "center", justifyContent: "center" }, video: { height: "100%", width: "100%" } })),
                 U = T;
         },
@@ -339,4 +339,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview.a685fcda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview.a9c1b75a.js.map

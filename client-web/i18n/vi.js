@@ -3954,6 +3954,7 @@
                 t("j6cdf012", "Đ.chủ phòng không thể mời hoặc xóa đ.chủ phòng khác"),
                 t("c727d116", "Đ.chủ phòng không thể kết thúc Phòng"),
                 t("g69084b8", "Chấp nhận lời mời đ.chủ phòng"),
+                t("ddd5cfe2", "Gắn"),
                 t("ee230734", "Hiển thị thêm các tùy chọn"),
                 t("ic8c615e", "Chọn và gửi một tùy chọn trả lời nhanh"),
                 t("a04077c4", "Vui lòng chọn 1 ảnh, video hoặc ảnh GIF."),
@@ -4923,9 +4924,9 @@
                 t("d9f9dec0", "Xem phòng"),
                 t("h0c1f37a", "Xem số liệu phân tích phòng"),
                 t("e41fffbc", "Tổng thời gian xem video của bạn."),
-                t("if2909ba", "Thời gian xem"),
-                t("i0e5bf4c", "Video của bạn");
-            t("ed99baea", "Quyền truy cập sớm vào bản beta"),
+                t("if2909ba", "Thời gian xem");
+            t("i0e5bf4c", "Video của bạn"),
+                t("ed99baea", "Quyền truy cập sớm vào bản beta"),
                 t("gf898b70", "Tìm kiếm nâng cao"),
                 t("d2a43a7a", 'chứa cả "ai" và "công ty khởi nghiệp"'),
                 t("a8584698", "công ty khởi nghiệp ai"),
@@ -5879,9 +5880,9 @@
                 t("e41c9b4f", function (n) {
                     return "Saved to " + n.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Xóa thư mục"),
-                t("f4ea967a", "Thư mục đã bị xóa");
-            t("b670aa62", "Tên thư mục"),
+                t("h18f86a4", "Xóa thư mục");
+            t("f4ea967a", "Thư mục đã bị xóa"),
+                t("b670aa62", "Tên thư mục"),
                 t("aece5462", "Tên thư mục đã được cập nhật thành công"),
                 t("e3299b94", "Đã xảy ra lỗi. Hãy thử cập nhật lại thư mục đó sau ít phút nữa."),
                 t("c09ea714", "Đã xảy ra lỗi. Hãy thử cập nhật lại thư mục đó sau ít phút nữa."),
@@ -6475,6 +6476,7 @@
                 t("babfa32c", "Tùy chỉnh nhanh chế độ xem của bạn"),
                 t("a2a2f98e", "Xem có gì mới"),
                 t("b4a361c0", "Bạn có thể cá nhân hóa màu sắc và kích thước văn bản cũng như điều khiển tùy chọn chế độ tối của mình ngay bây giờ. Những cài đặt này chỉ hiển thị với bạn."),
+                t("g4743c56", "Bắt đầu theo dõi"),
                 t("c797b44e", "Những câu chuyện mới nhất trên X - được kể bằng các bài đăng."),
                 t("a19ce060", "Khám phá không khả dụng."),
                 t("f7d1a8e0", "Ứng dụng Android"),
@@ -6882,10 +6884,10 @@
                 t("ede7d0a2", "Tiền tệ"),
                 t("b925c18c", "Loại lương"),
                 t("j3d242ce", "Khoảng không hợp lệ"),
-                t("f4d07bd2", "Bao gồm các chi tiết không bắt buộc để giúp ứng viên dễ dàng khám phá vai trò của bạn hơn khi tìm kiếm."),
-                t("b8cbb51a", "Tóm tắt công việc"),
-                t("bda6881e", "Công việc này đã được nhập từ Hệ thống theo dõi ứng viên (ATS) của bạn. Xin lưu ý rằng chỉ có thể sửa đổi các trường cụ thể.");
-            t("b075c68a", "Chỉnh sửa việc làm"),
+                t("f4d07bd2", "Bao gồm các chi tiết không bắt buộc để giúp ứng viên dễ dàng khám phá vai trò của bạn hơn khi tìm kiếm.");
+            t("b8cbb51a", "Tóm tắt công việc"),
+                t("bda6881e", "Công việc này đã được nhập từ Hệ thống theo dõi ứng viên (ATS) của bạn. Xin lưu ý rằng chỉ có thể sửa đổi các trường cụ thể."),
+                t("b075c68a", "Chỉnh sửa việc làm"),
                 t("d4b6a6e0", "Tiêu điểm hồ sơ"),
                 t("j2dd3686", "Quảng bá việc làm nổi bật bên trên bài đăng của tôi."),
                 t("af1cfd46", "Tích hợp với ATS"),
@@ -7862,9 +7864,7 @@
                     return "Chào mừng quay trở lại, " + n.displayName;
                 }),
                 t("a76d58ba", "Số liệu phân tích quảng cáo"),
-                t("eccd0e1a", "Số liệu phân tích về tổ chức"),
-                t("deea1708", "Bạn muốn xem số liệu phân tích trên tất cả tài khoản X của mình?"),
-                t("eb603ffc", "Hãy nâng cấp để liên kết mạng lưới của bạn và xem số liệu phân tích tổng hợp.");
+                t("eccd0e1a", "Số liệu phân tích về tổ chức");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7903,7 +7903,9 @@
                     a(n, h)
                 );
             }
-            t("gf67aae4", "Nâng cấp lên gói Toàn quyền truy cập"),
+            t("deea1708", "Bạn muốn xem số liệu phân tích trên tất cả tài khoản X của mình?"),
+                t("eb603ffc", "Hãy nâng cấp để liên kết mạng lưới của bạn và xem số liệu phân tích tổng hợp."),
+                t("gf67aae4", "Nâng cấp lên gói Toàn quyền truy cập"),
                 t("h75e3618", "Bao gồm tổ chức"),
                 t("h24a8862", "Giới thiệu về hộp đánh dấu này"),
                 t("c29e3a88", "Chọn bên liên kết"),
@@ -8900,12 +8902,12 @@
                 t("j0f12222", "Xem thêm"),
                 t("f569f7c8", "Đi đến trang web"),
                 t("j0c6772a", "Truy cập website"),
-                t("f73003aa", "Video sẽ phát sau quảng cáo"),
-                t("b3112b8a", "Bỏ qua"),
-                t("h6333ad0", "Bỏ qua quảng cáo");
-            t("c59da417", function (n) {
-                return "Bỏ qua quảng cáo trong " + n.seconds;
-            }),
+                t("f73003aa", "Video sẽ phát sau quảng cáo");
+            t("b3112b8a", "Bỏ qua"),
+                t("h6333ad0", "Bỏ qua quảng cáo"),
+                t("c59da417", function (n) {
+                    return "Bỏ qua quảng cáo trong " + n.seconds;
+                }),
                 t("c3c147cf", function (n) {
                     return "Bỏ qua " + n.seconds;
                 }),
@@ -13348,4 +13350,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.0f978eca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.f3d13eba.js.map

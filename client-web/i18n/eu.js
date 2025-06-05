@@ -3958,6 +3958,7 @@
                 o("j6cdf012", "Co-hosts can’t invite or remove other co-hosts"),
                 o("c727d116", "Co-hosts can’t end the Space"),
                 o("g69084b8", "Accept co-host invite"),
+                o("ddd5cfe2", "Dock"),
                 o("ee230734", "Ikusi aukera gehiago"),
                 o("ic8c615e", "Aukeratu eta bidali azkar erantzuteko aukera"),
                 o("a04077c4", "Aukeratu argazki, bideo edo GIF bat."),
@@ -4927,9 +4928,9 @@
                 o("d9f9dec0", "View Space"),
                 o("h0c1f37a", "View Space Analytics"),
                 o("e41fffbc", "The total watch time of your videos."),
-                o("if2909ba", "Watch Time"),
-                o("i0e5bf4c", "Your videos");
-            o("ed99baea", "Early Beta Access"),
+                o("if2909ba", "Watch Time");
+            o("i0e5bf4c", "Your videos"),
+                o("ed99baea", "Early Beta Access"),
                 o("gf898b70", "Advanced Search"),
                 o("d2a43a7a", 'contains both "ai" and "startup"'),
                 o("a8584698", "ai startup"),
@@ -5883,9 +5884,9 @@
                 o("e41c9b4f", function (e) {
                     return "Hemen gordeta: " + e.bookmarkFolderName;
                 }),
-                o("h18f86a4", "Ezabatu karpeta"),
-                o("f4ea967a", "Karpeta ezabatu da");
-            o("b670aa62", "Karpetaren izena"),
+                o("h18f86a4", "Ezabatu karpeta");
+            o("f4ea967a", "Karpeta ezabatu da"),
+                o("b670aa62", "Karpetaren izena"),
                 o("aece5462", "Karpeta izena behar bezala eguneratu da"),
                 o("e3299b94", "Arazoren bat izan da. Saiatu berriro karpeta hori eguneratzen minutu bat barru."),
                 o("c09ea714", "Arazoren bat izan da. Saiatu berriro karpeta hori ezabatzen minutu bat barru."),
@@ -6479,6 +6480,7 @@
                 o("babfa32c", "Pertsonalizatu azkar zure ikuspegia"),
                 o("a2a2f98e", "Ikusi berritasunak"),
                 o("b4a361c0", "Testuaren kolorea eta tamaina pertsonaliza ditzakezu, baita modu iluna aktibatu ere. Ezarpen hauek zuk bakarrik ikus ditzakezu."),
+                o("g4743c56", "Start following"),
                 o("c797b44e", "The latest stories on X - as told by posts."),
                 o("a19ce060", "Ezin da arakatu."),
                 o("f7d1a8e0", "Android aplikazioa"),
@@ -6886,10 +6888,10 @@
                 o("ede7d0a2", "Currency"),
                 o("b925c18c", "Salary Type"),
                 o("j3d242ce", "Invalid range"),
-                o("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
-                o("b8cbb51a", "Job Summary"),
-                o("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.");
-            o("b075c68a", "Edit job"),
+                o("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search.");
+            o("b8cbb51a", "Job Summary"),
+                o("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                o("b075c68a", "Edit job"),
                 o("d4b6a6e0", "Profilaren fokua"),
                 o("j2dd3686", "Highlight featured jobs above my posts."),
                 o("af1cfd46", "ATS integration"),
@@ -7866,9 +7868,7 @@
                     return "Welcome back, " + e.displayName;
                 }),
                 o("a76d58ba", "Ads Analytics"),
-                o("eccd0e1a", "Organization Analytics"),
-                o("deea1708", "Want to view analytics across all your X accounts?"),
-                o("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics.");
+                o("eccd0e1a", "Organization Analytics");
             function n(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var o = a[t];
@@ -7907,7 +7907,9 @@
                     u(e, a)
                 );
             }
-            o("gf67aae4", "Upgrade to Full Access"),
+            o("deea1708", "Want to view analytics across all your X accounts?"),
+                o("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
+                o("gf67aae4", "Upgrade to Full Access"),
                 o("h75e3618", "Include organization"),
                 o("h24a8862", "About this checkbox"),
                 o("c29e3a88", "Select affiliates"),
@@ -8904,12 +8906,12 @@
                 o("j0f12222", "Ikusi gehiago"),
                 o("f569f7c8", "Joan webgunera"),
                 o("j0c6772a", "Bisitatu webgunea"),
-                o("f73003aa", "Bideoa iragarkiaren ondoren erreproduzituko da"),
-                o("b3112b8a", "Pasatu"),
-                o("h6333ad0", "Saltatu iragarkia");
-            o("c59da417", function (e) {
-                return "Saltatu iragarkia " + e.seconds + " segundo barru";
-            }),
+                o("f73003aa", "Bideoa iragarkiaren ondoren erreproduzituko da");
+            o("b3112b8a", "Pasatu"),
+                o("h6333ad0", "Saltatu iragarkia"),
+                o("c59da417", function (e) {
+                    return "Saltatu iragarkia " + e.seconds + " segundo barru";
+                }),
                 o("c3c147cf", function (e) {
                     return "Saltatu " + e.seconds;
                 }),
@@ -13356,4 +13358,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.c6f4ba7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.b92ca1aa.js.map

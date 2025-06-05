@@ -493,7 +493,7 @@
                 w = a(804027),
                 C = a(725516),
                 v = a(920030),
-                _ = a(723587);
+                _ = a(970187);
             const Z = u.default.create((e) => ({ followButton: { alignSelf: "flex-start", marginStart: e.spaces.space12 } })),
                 E = ({ isCheckboxFollowButton: e, isFollowed: t, screenName: a, updateFollowedItems: n, userId: r }) => {
                     const s = (e) => () => n(r, e);
@@ -643,4 +643,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-3c1f9d32.f44cd0ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-3c1f9d32.2c6197ba.js.map

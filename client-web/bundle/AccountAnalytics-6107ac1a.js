@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.AccountAnalytics-6107ac1a", "icons/IconChevronDown-js"],
+    ["bundle.AccountAnalytics-6107ac1a"],
     {
         98538: (e, t, r) => {
             r.d(t, { Z: () => g });
@@ -9,8 +9,8 @@
                 l = r(731708),
                 a = r(891198),
                 s = r(280278),
-                i = r(392237);
-            const c = "subtext1",
+                c = r(392237);
+            const i = "subtext1",
                 u = n.createContext({ onMedia: !1 });
             class d extends n.Component {
                 constructor(...e) {
@@ -34,9 +34,9 @@
                         .filter(Boolean)
                         .map((e, t, r) => n.createElement(o.Z, { key: t, style: t < r.length - 1 && h.groupItemNonLast }, e)),
                 )),
-                (d.Label = ({ children: e, style: t }) => n.createElement(u.Consumer, null, ({ onMedia: r }) => n.createElement(l.ZP, { children: e, color: r ? "white" : "gray700", size: c, style: t }))),
-                (d.Value = ({ animated: e, children: t, count: r, style: o, weight: a = "bold" }) => n.createElement(u.Consumer, null, ({ onMedia: i }) => (e ? n.createElement(s.ZP, { children: t, count: r, size: c, style: o, weight: a }) : n.createElement(l.ZP, { children: t, color: i ? "white" : "text", size: c, style: o, weight: a }))));
-            const h = i.default.create((e) => ({ row: { flexDirection: "row", flexWrap: "wrap", flex: 1 }, groupItemNonLast: { marginEnd: e.spaces.space20 } })),
+                (d.Label = ({ children: e, style: t }) => n.createElement(u.Consumer, null, ({ onMedia: r }) => n.createElement(l.ZP, { children: e, color: r ? "white" : "gray700", size: i, style: t }))),
+                (d.Value = ({ animated: e, children: t, count: r, style: o, weight: a = "bold" }) => n.createElement(u.Consumer, null, ({ onMedia: c }) => (e ? n.createElement(s.ZP, { children: t, count: r, size: i, style: o, weight: a }) : n.createElement(l.ZP, { children: t, color: c ? "white" : "text", size: i, style: o, weight: a }))));
+            const h = c.default.create((e) => ({ row: { flexDirection: "row", flexWrap: "wrap", flex: 1 }, groupItemNonLast: { marginEnd: e.spaces.space20 } })),
                 g = d;
         },
         819483: (e, t, r) => {
@@ -46,14 +46,14 @@
                 l = r(123588),
                 a = r(212145),
                 s = r(382880),
-                i = r(516951),
-                c = r(731708),
+                c = r(516951),
+                i = r(731708),
                 u = r(392237);
             const d = (e) => {
                     const { columns: t, onNearEnd: r, onRowClick: u, rows: d, setSortOptions: g, sortOptions: f } = e,
                         m = n.useRef(null),
                         v = n.useMemo(() => t.reduce((e, t) => e + t.width, 0), [t]),
-                        b = n.useMemo(() => (0, s.Z)(r || i.Z), [r]);
+                        b = n.useMemo(() => (0, s.Z)(r || c.Z), [r]);
                     n.useEffect(() => {
                         if (d.length) {
                             const e = new IntersectionObserver(
@@ -95,7 +95,7 @@
                                                     })(e.field, e.sortable),
                                                 style: { width: `${Math.floor((100 * e.width) / v)}%`, ...h.tableHeading },
                                             },
-                                            n.createElement(c.ZP, { weight: "bold" }, e.label),
+                                            n.createElement(i.ZP, { weight: "bold" }, e.label),
                                             e.field === f?.sortField && ("ASCENDING" === f?.sortOrder ? n.createElement(l.default, null) : n.createElement(a.default, null)),
                                         ),
                                     ),
@@ -108,7 +108,7 @@
                                     n.createElement(
                                         "tr",
                                         { key: r, onClick: () => u(e), ref: r === d.length - 5 ? m : null, style: { ...h.row, ...(u && { cursor: "pointer" }) } },
-                                        t.map((t, o) => n.createElement("td", { key: `${r}-${o}`, style: h.cell }, n.createElement(c.ZP, null, e[t.field]))),
+                                        t.map((t, o) => n.createElement("td", { key: `${r}-${o}`, style: h.cell }, n.createElement(i.ZP, null, e[t.field]))),
                                     ),
                                 ),
                             ),
@@ -121,21 +121,8 @@
             r.d(t, { Z: () => n });
             const n = r(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        487552: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => i });
-            var n = r(202784),
-                o = r(890601),
-                l = r(783427),
-                a = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const i = s;
-        },
         155353: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => i });
+            r.r(t), r.d(t, { default: () => c });
             var n = r(202784),
                 o = r(890601),
                 l = r(783427),
@@ -145,7 +132,7 @@
                 return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
-            const i = s;
+            const c = s;
         },
         544044: (e, t, r) => {
             r.d(t, { T: () => s });
@@ -231,8 +218,8 @@
                     l = t?.weekStartsOn ?? t?.locale?.options?.weekStartsOn ?? r.weekStartsOn ?? r.locale?.options?.weekStartsOn ?? 0,
                     a = (0, n.Q)(e),
                     s = a.getDay(),
-                    i = 6 + (s < l ? -7 : 0) - (s - l);
-                return a.setDate(a.getDate() + i), a.setHours(23, 59, 59, 999), a;
+                    c = 6 + (s < l ? -7 : 0) - (s - l);
+                return a.setDate(a.getDate() + c), a.setHours(23, 59, 59, 999), a;
             }
         },
         889957: (e, t, r) => {
@@ -257,19 +244,19 @@
             function a(e, t, r) {
                 const a = (0, o.z)(e, r),
                     s = (0, o.z)(t, r),
-                    i = +a - (0, l.D)(a),
-                    c = +s - (0, l.D)(s);
-                return Math.round((i - c) / n.jE);
+                    c = +a - (0, l.D)(a),
+                    i = +s - (0, l.D)(s);
+                return Math.round((c - i) / n.jE);
             }
             var s = r(150729);
-            function i(e) {
+            function c(e) {
                 const t = (0, s.Q)(e),
                     r = t.getMonth();
                 return t.setFullYear(t.getFullYear(), r + 1, 0), t.setHours(0, 0, 0, 0), t;
             }
-            var c = r(200210);
+            var i = r(200210);
             function u(e, t) {
-                return a(i(e), (0, c.N)(e), t) + 1;
+                return a(c(e), (0, i.N)(e), t) + 1;
             }
         },
         251461: (e, t, r) => {
@@ -378,10 +365,10 @@
                 const r = (0, o.Q)(e),
                     a = r.getFullYear(),
                     s = r.getDate(),
-                    i = (0, n.L)(e, 0);
-                i.setFullYear(a, t, 15), i.setHours(0, 0, 0, 0);
-                const c = l(i);
-                return r.setMonth(t, Math.min(s, c)), r;
+                    c = (0, n.L)(e, 0);
+                c.setFullYear(a, t, 15), c.setHours(0, 0, 0, 0);
+                const i = l(c);
+                return r.setMonth(t, Math.min(s, i)), r;
             }
         },
         876346: (e, t, r) => {
@@ -410,13 +397,13 @@
             }
             var a = r(595873);
             function s(e, t) {
-                const { years: r = 0, months: o = 0, weeks: s = 0, days: i = 0, hours: c = 0, minutes: u = 0, seconds: d = 0 } = t,
+                const { years: r = 0, months: o = 0, weeks: s = 0, days: c = 0, hours: i = 0, minutes: u = 0, seconds: d = 0 } = t,
                     h = l(e, o + 12 * r),
-                    g = (0, n.k)(h, i + 7 * s),
-                    f = 1e3 * (d + 60 * (u + 60 * c));
+                    g = (0, n.k)(h, c + 7 * s),
+                    f = 1e3 * (d + 60 * (u + 60 * i));
                 return (0, a.L)(e, g.getTime() - f);
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-6107ac1a.a91716fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-6107ac1a.0d41d8da.js.map

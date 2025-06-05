@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.TwitterArticles-bc6ccf4c", "icons/IconMediaCollapse-js", "icons/IconSearchMinusStroke-js"],
+    ["bundle.TwitterArticles-bc6ccf4c", "icons/IconFolderArrowLeft-js", "icons/IconSearchPlusStroke-js"],
     {
         661810: (e, t, s) => {
             s.d(t, { Z: () => r });
@@ -94,7 +94,7 @@
                 h = n;
         },
         548485: (e, t, s) => {
-            s.d(t, { Z: () => B });
+            s.d(t, { Z: () => H });
             var o = s(202784),
                 i = s(928316),
                 a = s(325686),
@@ -115,7 +115,7 @@
             const b = v.default.create((e) => ({ mask: { backgroundColor: "transparent", borderWidth: e.spaces.space4, borderColor: e.colors.primary, boxShadow: `0 0 0 9999px ${e.colors.activeFaintGray}` }, circle: { borderRadius: e.borderRadii.infinite } })),
                 C = ({ circle: e, height: t, width: s }) => o.createElement(a.Z, { pointerEvents: "none", style: [b.mask, { width: s, height: t }, e && b.circle] });
             var S = s(807896),
-                w = s(151624),
+                w = s(452661),
                 E = s(933895);
             class P extends o.Component {
                 constructor(e) {
@@ -176,8 +176,8 @@
                 }
             }
             const Z = P,
-                M = n().d85bc1b8,
-                x = n().f596ace8,
+                x = n().d85bc1b8,
+                M = n().f596ace8,
                 R = n().df031fca,
                 D = n().b40332c6,
                 k = n().e547b368,
@@ -201,7 +201,7 @@
                                 { aspectRatio: s } = this.state,
                                 i = e.width / e.height,
                                 r = this._shouldShowZoomControl();
-                            return t || r ? o.createElement(a.Z, { style: z.controlsContainer }, t ? o.createElement(a.Z, { style: z.ratioContainer }, o.createElement(m.ZP, { "aria-label": x, borderColor: "transparent", color: s === i ? "primary" : "gray700", hoverLabel: { label: k }, icon: o.createElement(l.default, null), onPress: this._setAspectRatio(i), size: "medium" }), o.createElement(m.ZP, { "aria-label": R, borderColor: "transparent", color: s === 16 / 9 ? "primary" : "gray700", hoverLabel: { label: T }, icon: o.createElement(h.default, null), onPress: this._setAspectRatio(16 / 9), size: "medium" }), o.createElement(m.ZP, { "aria-label": D, borderColor: "transparent", color: 1 === s ? "primary" : "gray700", hoverLabel: { label: I }, icon: o.createElement(c.default, null), onPress: this._setAspectRatio(1), size: "medium" })) : null, r ? o.createElement(a.Z, { style: z.zoomContainer }, o.createElement(f.Z, { "aria-label": M, max: this._maxScale, maxIcon: o.createElement(d.default, { style: z.icon }), min: 0, minIcon: o.createElement(p.default, { style: z.icon }), onChange: this._handleScaleChange, step: "any", value: this.state.imageScale })) : null) : null;
+                            return t || r ? o.createElement(a.Z, { style: z.controlsContainer }, t ? o.createElement(a.Z, { style: z.ratioContainer }, o.createElement(m.ZP, { "aria-label": M, borderColor: "transparent", color: s === i ? "primary" : "gray700", hoverLabel: { label: k }, icon: o.createElement(l.default, null), onPress: this._setAspectRatio(i), size: "medium" }), o.createElement(m.ZP, { "aria-label": R, borderColor: "transparent", color: s === 16 / 9 ? "primary" : "gray700", hoverLabel: { label: T }, icon: o.createElement(h.default, null), onPress: this._setAspectRatio(16 / 9), size: "medium" }), o.createElement(m.ZP, { "aria-label": D, borderColor: "transparent", color: 1 === s ? "primary" : "gray700", hoverLabel: { label: I }, icon: o.createElement(c.default, null), onPress: this._setAspectRatio(1), size: "medium" })) : null, r ? o.createElement(a.Z, { style: z.zoomContainer }, o.createElement(f.Z, { "aria-label": x, max: this._maxScale, maxIcon: o.createElement(d.default, { style: z.icon }), min: 0, minIcon: o.createElement(p.default, { style: z.icon }), onChange: this._handleScaleChange, step: "any", value: this.state.imageScale })) : null) : null;
                         }),
                         (this._handleScaleChange = (e) => {
                             this.setState({ imageScale: e });
@@ -305,7 +305,7 @@
             }
             W.defaultProps = { circle: !1, withZoomControl: !0 };
             const z = v.default.create((e) => ({ container: { flexGrow: 1, flexShrink: 1 }, controlsContainer: { backgroundColor: e.colors.navigationBackground, minHeight: e.spaces.space20, flexDirection: "row", paddingVertical: e.spaces.space4, alignSelf: "stretch", justifyContent: "center", alignItems: "center" }, ratioContainer: { flexBasis: 0, flexGrow: 1, flexShrink: 0, flexDirection: "row", justifyContent: "space-around" }, zoomContainer: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center", height: e.spaces.space40, paddingHorizontal: e.spaces.space20, maxWidth: 400 }, root: { flexGrow: 1, flexShrink: 1, overflow: "hidden", justifyContent: "center", alignItems: "center", cursor: "move" }, image: { position: "absolute" }, icon: { color: e.colors.gray700 } })),
-                B = W;
+                H = W;
         },
         449479: (e, t, s) => {
             s.d(t, { Z: () => v });
@@ -380,22 +380,7 @@
             v.defaultProps = { disabled: !1 };
             const y = p.default.create((e) => ({ header: { alignItems: "flex-start" }, label: { paddingTop: e.spaces.space12, paddingBottom: e.spaces.space4 }, disabled: { opacity: 0.5 } }));
         },
-        647174: (e, t, s) => {
-            s.r(t), s.d(t, { default: () => h });
-            var o = s(202784),
-                i = s(890601),
-                a = s(783427),
-                r = s(717683),
-                n = s(347101);
-            const l = (e = {}) => {
-                const t = o.useContext(r.Z),
-                    { direction: s } = (0, a.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style, t && n.Z.iconRTL], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M21.457 3.96L16.414 9H21v2h-8V3h2v4.59l5.043-5.05 1.414 1.42zM3 13h8v8H9v-4.59l-5.043 5.05-1.414-1.42L7.586 15H3v-2z" })) }, { writingDirection: s });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const h = l;
-        },
-        614991: (e, t, s) => {
+        745088: (e, t, s) => {
             s.r(t), s.d(t, { default: () => l });
             var o = s(202784),
                 i = s(890601),
@@ -403,11 +388,24 @@
                 r = s(347101);
             const n = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M11 4c-3.87 0-7 3.13-7 7s3.13 7 7 7c1.93 0 3.68-.78 4.95-2.05C17.21 14.68 18 12.93 18 11c0-3.87-3.14-7-7-7zm-9 7c0-4.97 4.03-9 9-9s9 4.03 9 9c0 2.12-.74 4.08-1.97 5.62l3.68 3.67-1.42 1.42-3.67-3.68C15.08 19.26 13.12 20 11 20c-4.97 0-9-4.03-9-9zm12.5 1h-7v-2h7v2z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M11 18v2H4.502c-1.378 0-2.5-1.121-2.5-2.5V3h8.535l2 3h9.465v7h-2V8h-8.535l-2-3H4.002v12.5c0 .275.224.5.5.5H11zm8.502 0h-2.073l2-2-1.414-1.414L13.601 19l4.414 4.414L19.429 22l-2-2H23v-2h-3.498z" })) }, { writingDirection: t });
+            };
+            n.metadata = { width: 24, height: 24 };
+            const l = n;
+        },
+        158910: (e, t, s) => {
+            s.r(t), s.d(t, { default: () => l });
+            var o = s(202784),
+                i = s(890601),
+                a = s(783427),
+                r = s(347101);
+            const n = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M11 4c-3.87 0-7 3.13-7 7s3.13 7 7 7c1.93 0 3.68-.78 4.95-2.05C17.21 14.68 18 12.93 18 11c0-3.87-3.14-7-7-7zm-9 7c0-4.97 4.03-9 9-9s9 4.03 9 9c0 2.12-.74 4.08-1.97 5.62l3.68 3.67-1.42 1.42-3.67-3.68C15.08 19.26 13.12 20 11 20c-4.97 0-9-4.03-9-9zm8-1V7.5h2V10h2.5v2H12v2.5h-2V12H7.5v-2H10z" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const l = n;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-bc6ccf4c.863e721a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-bc6ccf4c.d3c5df8a.js.map

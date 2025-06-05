@@ -2,396 +2,901 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"],
     {
-        417144: (t, e, s) => {
-            function i(t, e = 1) {
-                let s = e;
-                const i = new Map();
-                let a = 0,
-                    o = 0,
-                    r = 0,
-                    n = null;
-                function d() {
-                    i.clear(), (a = 0), (o = 0), (r = 0);
-                }
-                return {
-                    uploadStart: function (t, e) {
-                        i.set(t, { time: Date.now(), bytes: e }), o || (o = Date.now());
-                    },
-                    uploadFinish: function (h, l) {
-                        const u = i.get(h);
-                        u &&
-                            ((a += l - u.bytes),
-                            i.delete(h),
-                            ++r === s &&
-                                (function () {
-                                    if (!o) return;
-                                    const i = Date.now() - o;
-                                    if (i <= 0) return;
-                                    if (1 !== e) return;
-                                    const r = a / i;
-                                    if (r < 5e3 && 1 === s) return;
-                                    !n || n.byterate < r ? ((s += 1), t(), (n = { byterate: r, poolSize: s })) : ((s -= 2), (s = Math.max(s, 1)), (n = null));
-                                    d();
-                                })());
-                    },
-                    reset: d,
-                    getPoolSize: () => s,
-                    start: function () {
-                        for (let e = 0; e < s; ++e) t();
-                    },
-                };
-            }
-            s.d(e, { Z: () => l, d: () => f });
-            s(543673), s(240753), s(128399);
-            function a(t) {
-                const e = new URLSearchParams();
-                for (const s of Object.keys(t)) {
-                    const i = t[s];
-                    i && e.set(s, i);
-                }
-                return `&${String(e)}`;
-            }
-            function o(t, e = n, s = r) {
-                const i = Math.max(t, e);
-                return Math.min(i, s);
-            }
-            const r = 5242880,
-                n = 65536,
-                d = 2e3,
-                h = 1e4;
-            class l {
-                constructor(t, e = I) {
-                    var s;
-                    (this.timeoutIdMap = {}), (this.mediaId = ""), (this.mediaKey = ""), (this.fileHandle = t), (this.inflightSegments = new Map()), (this.totalBytes = t ? t.size : 0), (this.mediaType = t ? t.type : void 0), (this.initStartTime = new Date()), (this.sruHeaders = e.sruHeaders || {}), (this.uploadUrl = e.uploadUrl || c), (this.retainMediaForever = !!e.retainMediaForever), (this.sruParameterOverrides = e.sruParameterOverrides), (this.minSegmentBytes = this.sruParameterOverrides?.minSegmentBytes || ((s = this.totalBytes), o(Math.ceil(s / h)))), this._clearState();
-                }
-                upload(t) {
-                    ((this.hasAttemptedFinalize && (this.uploadOptions.trimRanges !== t.trimRanges || this.uploadOptions.extraFinalizeParams !== t.extraFinalizeParams)) || this.uploadOptions.extraInitParams !== t.extraInitParams) && this._clearState(),
-                        (this.uploadOptions = t),
-                        this.state !== E.SUCCEEDED && this.state !== E.PENDING && ((this.state = E.PENDING), this.hasAttemptedFinalize ? this._postFinalize() : this.mediaId ? this._startNextAppendSegment() : this._postInit()),
-                        (this._bitrateMonitor = t.withMultiRequests
-                            ? i(() => {
-                                  this._startNextAppendSegment();
-                              }, t.withMultiRequestsDefaultPoolSize)
-                            : void 0),
-                        this._notifyResult(),
-                        this._notifyProgress(this._uploadProgress());
-                }
-                cancel() {
-                    "function" == typeof this.uploadOptions.error && this.uploadOptions.error({ code: f.CANCELED }), this._clearState();
-                }
-                pollStatusOfExistingMediaId(t, e) {
-                    (this.mediaId = t), (this.uploadOptions = e || I), (this.state = E.PENDING), this._getStatus();
-                }
-                _clearState() {
-                    for (const t of Object.keys(this.timeoutIdMap)) clearTimeout(this.timeoutIdMap[t]), delete this.timeoutIdMap[t];
-                    (this.state = E.RESET),
-                        (this.mediaId = ""),
-                        (this.mediaKey = ""),
-                        (this.uploadOptions = I),
-                        (this.nextSegmentBytes =
-                            this.sruParameterOverrides?.minSegmentBytes ||
-                            (function () {
-                                const t = window.navigator.connection;
-                                if (t) {
-                                    const e = t.type || t.effectiveType;
-                                    if (t.downlink) return o(((1e3 * t.downlink) / 8 / 2) * d);
-                                    if ("wifi" === e) return o(5 * n);
-                                }
-                                return o(2 * n);
-                            })()),
-                        (this.segmentIndex = 0),
-                        (this.totalUploadDuration = 0),
-                        (this.uploadedBytes = 0),
-                        (this.hasAttemptedFinalize = !1),
-                        this.inflightSegments.forEach(({ request: t }) => t.abort()),
-                        (this.inflightSegments = new Map()),
-                        this._bitrateMonitor?.reset();
-                }
-                uploadExternalMedia(t, e, s, i = I) {
-                    (this.uploadOptions = i), (this.state = E.PENDING), (this.progressMode = "uploading");
-                    let o = a({ source_url: t, media_type: e, media_category: s });
-                    (o += this.uploadOptions.extraInitParams || ""), (o += this.uploadOptions.extraFinalizeParams || "");
-                    this._sendXhr(
-                        "POST",
-                        "INIT",
-                        o,
-                        (t) => {
-                            (this.mediaId = t.media_id_string), this._getStatus();
-                        },
-                        (...t) => this._uploadError(...t),
-                        p,
-                    );
-                }
-                _postInit() {
-                    if (this.totalBytes) {
-                        this.progressMode = "uploading";
-                        const t = { total_bytes: String(this.totalBytes), media_type: this.mediaType || "" };
-                        this.uploadOptions.enable_1080p_variant && (t.enable_1080p_variant = String(!0));
-                        const { mediaItem: e } = this.uploadOptions;
-                        if (e?.mediaFile?.duration) {
-                            const s = 1e3 * e.mediaFile.duration;
-                            t.video_duration_ms = String(s);
-                        }
-                        let s = a(t);
-                        this.uploadOptions.extraInitParams && (s += this.uploadOptions.extraInitParams),
-                            this._sendXhr(
-                                "POST",
-                                "INIT",
-                                s,
-                                (...t) => this._initSuccess(...t),
-                                (...t) => this._uploadError(...t),
-                                p,
-                            );
-                    } else this._uploadError({ code: f.ZERO_FILE_LENGTH });
-                }
-                _initSuccess(t) {
-                    this.state === E.PENDING && ((this.mediaId = t.media_id_string), (this.mediaKey = t.media_key), this._setSessionTimeout(t.expires_after_secs), this._bitrateMonitor ? this._bitrateMonitor.start() : this._startNextAppendSegment());
-                }
-                _setSessionTimeout(t) {
-                    if ((this.timeoutIdMap.session && (clearTimeout(this.timeoutIdMap.session), delete this.timeoutIdMap.session), t)) {
-                        const e = Math.min(u, 1e3 * t);
-                        this.timeoutIdMap.session = setTimeout(() => {
-                            this._uploadError({ code: f.TIMEOUT }), this._stats("NONE", "timeout"), this._clearState();
-                        }, e);
-                    }
-                }
-                _startNextAppendSegment() {
-                    if (this.hasAttemptedFinalize || this.inflightSegments.size >= (this._bitrateMonitor?.getPoolSize() ?? _)) return;
-                    if (this.uploadedBytes === this.totalBytes) return this._postFinalize();
-                    if (!this.fileHandle) return;
-                    let t = 0;
-                    this.inflightSegments.forEach(({ bytes: e }) => (t += e));
-                    const e = t + this.uploadedBytes,
-                        s = Math.min(this.nextSegmentBytes, this.totalBytes - e);
-                    if (s <= 0) return;
-                    const i = new FormData();
-                    if (this.fileHandle) {
-                        const t = this.fileHandle.slice(e, e + s);
-                        i.append("media", t);
-                    }
-                    const o = this.segmentIndex;
-                    this.segmentIndex += 1;
-                    const r = a({ media_id: this.mediaId, segment_index: String(o) }),
-                        n = this._sendXhr(
-                            "POST",
-                            "APPEND",
-                            r,
-                            () => {
-                                if (this.state === E.PENDING) {
-                                    const t = this.inflightSegments.get(o);
-                                    t && (this.inflightSegments.delete(o), (this.uploadedBytes += t.bytes)), this._notifyProgress(this._uploadProgress(), this.mediaId), 0 === this.inflightSegments.size && this._startNextAppendSegment();
-                                }
+        551394: (e, l, n) => {
+            n.d(l, { Z: () => o });
+            var a,
+                r,
+                t,
+                i,
+                s = {
+                    fragment: {
+                        argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "userId" }]),
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "ConferenceChatMessageItemQuery",
+                        selections: [
+                            {
+                                alias: "user",
+                                args: (r = [
+                                    { kind: "Variable", name: "rest_id", variableName: "userId" },
+                                    { kind: "Literal", name: "s", value: "f3d8" },
+                                ]),
+                                concreteType: "UserResults",
+                                kind: "LinkedField",
+                                name: "user_result_by_rest_id",
+                                plural: !1,
+                                selections: [
+                                    {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: null,
+                                        kind: "LinkedField",
+                                        name: "result",
+                                        plural: !1,
+                                        selections: [
+                                            {
+                                                kind: "InlineFragment",
+                                                selections: [
+                                                    { args: null, kind: "FragmentSpread", name: "UserAvatar_user" },
+                                                    { args: null, kind: "FragmentSpread", name: "UserName_user" },
+                                                ],
+                                                type: "User",
+                                                abstractKey: null,
+                                            },
+                                        ],
+                                        storageKey: null,
+                                    },
+                                ],
+                                storageKey: null,
                             },
-                            (...t) => this._uploadError(...t),
-                            5,
-                            i,
-                            () => this._startNextAppendSegment(),
-                            s,
-                        );
-                    this.inflightSegments.set(o, { bytes: s, request: n });
-                }
-                _postFinalize() {
-                    if (this.uploadOptions.pauseBeforeFinalize) (this.state = E.PAUSED), this.uploadOptions.pause && this.uploadOptions.pause();
-                    else {
-                        this.hasAttemptedFinalize = !0;
-                        const t = { media_id: this.mediaId };
-                        this.uploadOptions.trimRanges && (t.trim_ranges = this.uploadOptions.trimRanges), this.mediaType && /^video\//.test(this.mediaType) && (t.allow_async = String(!0)), this.retainMediaForever && (t.ttl = "infinite");
-                        let e = a(t);
-                        (e += this.uploadOptions.extraFinalizeParams || ""),
-                            this._sendXhr(
-                                "POST",
-                                "FINALIZE",
-                                e,
-                                (...t) => this._finalizeOrStatusSuccess(...t),
-                                (...t) => this._uploadError(...t),
-                                p,
-                            );
-                    }
-                }
-                _finalizeOrStatusSuccess(t) {
-                    this._setSessionTimeout(t.expires_after_secs);
-                    const e = t.processing_info;
-                    if (!e) return void this._finalizeSuccess(t);
-                    let s = 0;
-                    switch (e.state) {
-                        case "pending":
-                            this.progressMode = "waiting";
-                            break;
-                        case "in_progress":
-                            (this.progressMode = "processing"), "number" == typeof e.progress_percent && (s = e.progress_percent), s >= 100 && (s = 99);
-                            break;
-                        case "succeeded":
-                            return void this._finalizeSuccess(t);
-                        case "failed": {
-                            const t = e.error;
-                            let s;
-                            return (s = t?.code ? y[String(t.code)] : f.INTERNAL_ERROR), void this._uploadError({ ...t, code: s });
-                        }
-                        default:
-                            return void this._uploadError();
-                    }
-                    this._notifyProgress(s, this.mediaId, this.mediaKey);
-                    const i = e.check_after_secs || 10;
-                    setTimeout((...t) => this._getStatus(...t), 1e3 * i);
-                }
-                _getStatus() {
-                    if (this.state === E.PENDING) {
-                        const t = a({ media_id: this.mediaId });
-                        this._sendXhr(
-                            "GET",
-                            "STATUS",
-                            t,
-                            (...t) => this._finalizeOrStatusSuccess(...t),
-                            (...t) => this._uploadError(...t),
-                            p,
-                        );
-                    }
-                }
-                _finalizeSuccess(t) {
-                    this.state === E.PENDING && ((this.state = E.SUCCEEDED), this._notifyResult());
-                }
-                _uploadError(t) {
-                    if (this.state !== E.PENDING) return;
-                    const e = t.error?.match(/{ "message": "maxFileSizeExceeded", "maxFileSizeBytes": \d+ }/);
-                    if (e) {
-                        const t = JSON.parse(e[0]);
-                        this.error = { code: f.FILE_TOO_LARGE, message: t.message, maxSizeBytes: t.maxFileSizeBytes };
-                    } else t && t.code ? (this.error = t) : (this.error = { code: f.INTERNAL_ERROR, message: t?.error });
-                    (this.state = E.FAILED), this._notifyResult();
-                }
-                _uploadProgress() {
-                    if (this.totalBytes) {
-                        return 100 * (this.uploadedBytes / this.totalBytes);
-                    }
-                    return 0;
-                }
-                _notifyProgress(t, e, s) {
-                    this.state !== E.FAILED && this.uploadOptions.progress && this.uploadOptions.progress(t, this.progressMode, e, s);
-                }
-                _notifyResult() {
-                    this.state === E.SUCCEEDED && this.uploadOptions.success && this.uploadOptions.success(this.mediaId, this.mediaKey), this.state === E.FAILED && this.uploadOptions.error && this.uploadOptions.error(this.error);
-                }
-                _stats(t, e, s = {}) {
-                    const i = s.requestStartTime || this.initStartTime,
-                        a = new Date().getTime() - i.getTime();
-                    if (((this.totalUploadDuration += a), this.uploadOptions.stats)) {
-                        const i = { mediaType: this.mediaType || "", command: t, status: e, duration: a, totalByteSize: this.totalBytes, totalDuration: this.totalUploadDuration };
-                        s.segmentBytes && (i.appendByteSize = s.segmentBytes), this.uploadOptions.stats(i);
-                    }
-                }
-                _sendXhr(t, e, s, i, a, r, n, h, l = 0) {
-                    const u = `${this.uploadUrl}?command=${e}${s}`;
-                    let p = !1;
-                    const c = new Date(),
-                        _ = (o) => {
-                            if (r) {
-                                const o = [u, r].join("-");
-                                this.timeoutIdMap[o] = setTimeout(() => {
-                                    this._sendXhr(t, e, s, i, a, r - 1, n, h, l);
-                                }, S);
-                            } else y(o);
+                        ],
+                        type: "Query",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: {
+                        argumentDefinitions: a,
+                        kind: "Operation",
+                        name: "ConferenceChatMessageItemQuery",
+                        selections: [
+                            {
+                                alias: "user",
+                                args: r,
+                                concreteType: "UserResults",
+                                kind: "LinkedField",
+                                name: "user_result_by_rest_id",
+                                plural: !1,
+                                selections: [
+                                    {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: null,
+                                        kind: "LinkedField",
+                                        name: "result",
+                                        plural: !1,
+                                        selections: [
+                                            { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
+                                            {
+                                                kind: "InlineFragment",
+                                                selections: [
+                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
+                                                    {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: "UserCore",
+                                                        kind: "LinkedField",
+                                                        name: "core",
+                                                        plural: !1,
+                                                        selections: [
+                                                            { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
+                                                            { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
+                                                        ],
+                                                        storageKey: null,
+                                                    },
+                                                    {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: "UserVerification",
+                                                        kind: "LinkedField",
+                                                        name: "verification",
+                                                        plural: !1,
+                                                        selections: [
+                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                        ],
+                                                        storageKey: null,
+                                                    },
+                                                    { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
+                                                    { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                                                    { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
+                                                    {
+                                                        alias: "affiliates_highlighted_label",
+                                                        args: null,
+                                                        concreteType: "HighlightedUserLabelResponse",
+                                                        kind: "LinkedField",
+                                                        name: "identity_profile_labels_highlighted_label",
+                                                        plural: !1,
+                                                        selections: [
+                                                            {
+                                                                alias: null,
+                                                                args: null,
+                                                                concreteType: "HighlightedUserLabel",
+                                                                kind: "LinkedField",
+                                                                name: "label",
+                                                                plural: !1,
+                                                                selections: [
+                                                                    { alias: null, args: null, concreteType: "TimelineUrl", kind: "LinkedField", name: "url", plural: !1, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null }), { alias: "urlType", args: null, kind: "ScalarField", name: "url_type", storageKey: null }], storageKey: null },
+                                                                    { alias: null, args: null, concreteType: "BadgeInfo", kind: "LinkedField", name: "badge", plural: !1, selections: [t], storageKey: null },
+                                                                    { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
+                                                                    { alias: "userLabelType", args: null, kind: "ScalarField", name: "user_label_type", storageKey: null },
+                                                                    { alias: "userLabelDisplayType", args: null, kind: "ScalarField", name: "user_label_display_type", storageKey: null },
+                                                                ],
+                                                                storageKey: null,
+                                                            },
+                                                        ],
+                                                        storageKey: null,
+                                                    },
+                                                    (i = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
+                                                ],
+                                                type: "User",
+                                                abstractKey: null,
+                                            },
+                                        ],
+                                        storageKey: null,
+                                    },
+                                    i,
+                                ],
+                                storageKey: null,
+                            },
+                        ],
+                    },
+                    params: { id: "xxmSFYAIxIYK89GiO5k5rQ", metadata: {}, name: "ConferenceChatMessageItemQuery", operationKind: "query", text: null },
+                };
+            s.hash = "b53a5f7f42bcef093dfec2d264f5d1c4";
+            const o = s;
+        },
+        164282: (e, l, n) => {
+            n.d(l, { Z: () => r });
+            var a = {
+                argumentDefinitions: [],
+                kind: "Fragment",
+                metadata: null,
+                name: "UserAvatar_user",
+                selections: [
+                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }, action: "THROW" }], storageKey: null },
+                    { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" }], storageKey: null },
+                    { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null }], storageKey: null },
+                    { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
+                ],
+                type: "User",
+                abstractKey: null,
+                hash: "1613f86e9357e2d280d685aea0003641",
+            };
+            const r = a;
+        },
+        929446: (e, l, n) => {
+            n.d(l, { Z: () => r });
+            var a = {
+                argumentDefinitions: [],
+                kind: "Fragment",
+                metadata: null,
+                name: "UserCell_user",
+                selections: [
+                    { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                    { kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null }, action: "THROW" },
+                    {
+                        alias: null,
+                        args: null,
+                        concreteType: "UserCore",
+                        kind: "LinkedField",
+                        name: "core",
+                        plural: !1,
+                        selections: [
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" },
+                        ],
+                        storageKey: null,
+                    },
+                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }], storageKey: null },
+                    { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
+                    {
+                        alias: null,
+                        args: null,
+                        concreteType: "HighlightedUserLabelResponse",
+                        kind: "LinkedField",
+                        name: "identity_profile_labels_highlighted_label",
+                        plural: !1,
+                        selections: [
+                            {
+                                alias: null,
+                                args: null,
+                                concreteType: "HighlightedUserLabel",
+                                kind: "LinkedField",
+                                name: "label",
+                                plural: !1,
+                                selections: [
+                                    { alias: null, args: null, concreteType: "TimelineUrl", kind: "LinkedField", name: "url", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "TimelineUrl" }], storageKey: null },
+                                    { alias: null, args: null, concreteType: "BadgeInfo", kind: "LinkedField", name: "badge", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null }], storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
+                                    { alias: "userLabelType", args: null, kind: "ScalarField", name: "user_label_type", storageKey: null },
+                                    { alias: "userLabelDisplayType", args: null, kind: "ScalarField", name: "user_label_display_type", storageKey: null },
+                                ],
+                                storageKey: null,
+                            },
+                        ],
+                        storageKey: null,
+                    },
+                    { alias: null, args: null, concreteType: "UserRelationshipPerspectives", kind: "LinkedField", name: "relationship_perspectives", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
+                    {
+                        alias: null,
+                        args: null,
+                        concreteType: "UserVerification",
+                        kind: "LinkedField",
+                        name: "verification",
+                        plural: !1,
+                        selections: [
+                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                        ],
+                        storageKey: null,
+                    },
+                ],
+                type: "User",
+                abstractKey: null,
+                hash: "2ed5f16889d23a8b1d55df8a2f7bb966",
+            };
+            const r = a;
+        },
+        547666: (e, l, n) => {
+            n.d(l, { Z: () => t });
+            var a,
+                r = {
+                    argumentDefinitions: [],
+                    kind: "Fragment",
+                    metadata: null,
+                    name: "UserName_user",
+                    selections: [
+                        { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                        {
+                            alias: null,
+                            args: null,
+                            concreteType: "UserCore",
+                            kind: "LinkedField",
+                            name: "core",
+                            plural: !1,
+                            selections: [
+                                { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }, action: "THROW" },
+                                { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" },
+                            ],
+                            storageKey: null,
                         },
-                        y = (t) => {
-                            this._stats(e, t || "unknown-error", { requestStartTime: c, segmentBytes: l }), "function" == typeof a && a(O(E) || { code: f.INVALID_RES_STATUS, mediaId: this.mediaId });
+                        { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
+                        {
+                            alias: "affiliates_highlighted_label",
+                            args: null,
+                            concreteType: "HighlightedUserLabelResponse",
+                            kind: "LinkedField",
+                            name: "identity_profile_labels_highlighted_label",
+                            plural: !1,
+                            selections: [
+                                {
+                                    alias: null,
+                                    args: null,
+                                    concreteType: "HighlightedUserLabel",
+                                    kind: "LinkedField",
+                                    name: "label",
+                                    plural: !1,
+                                    selections: [
+                                        { alias: null, args: null, concreteType: "TimelineUrl", kind: "LinkedField", name: "url", plural: !1, selections: [(a = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null }), { alias: "urlType", args: null, kind: "ScalarField", name: "url_type", storageKey: null }], storageKey: null },
+                                        { alias: null, args: null, concreteType: "BadgeInfo", kind: "LinkedField", name: "badge", plural: !1, selections: [a], storageKey: null },
+                                        { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
+                                        { alias: "userLabelType", args: null, kind: "ScalarField", name: "user_label_type", storageKey: null },
+                                        { alias: "userLabelDisplayType", args: null, kind: "ScalarField", name: "user_label_display_type", storageKey: null },
+                                    ],
+                                    storageKey: null,
+                                },
+                            ],
+                            storageKey: null,
                         },
-                        E = new XMLHttpRequest();
-                    E.open(t, u, !0),
-                        (E.withCredentials = !0),
-                        (E.timeout = this.sruParameterOverrides?.clientsideSruUploadTimeoutMs || m),
-                        (E.onload = () => {
-                            if (E.status >= 200 && E.status < 400) {
-                                const t = O(E);
-                                204 === E.status || t ? (this._stats(e, "success", { requestStartTime: c, segmentBytes: l }), i(t || {}), !p && h && h()) : _("parsererror");
-                            } else E.status && 503 !== E.status ? y("invalid-response") : _("503");
-                        }),
-                        (E.onerror = () => _("error")),
-                        (E.ontimeout = () => {
-                            (this.nextSegmentBytes = this.minSegmentBytes), _("timeout");
-                        });
-                    let I = !1;
-                    E.upload.onprogress = (t) => {
-                        I ? t.loaded === t.total && this._bitrateMonitor?.uploadFinish(u, t.total) : ((I = !0), this._bitrateMonitor?.uploadStart(u, t.loaded));
-                        const e = t.loaded,
-                            s = ((this.uploadedBytes + e) / this.totalBytes) * 100;
-                        if ((this._notifyProgress(s, this.mediaId), e / t.total > g && !p && ((p = !0), n))) {
-                            const t = Math.max(1, new Date().getTime() - c.getTime()),
-                                s = this.minSegmentBytes,
-                                i = this.sruParameterOverrides?.maxSegmentBytes;
-                            (this.nextSegmentBytes = (function (t) {
-                                const e = t.idealUploadTimeMs || d,
-                                    s = t.sentBytes / t.uploadTimeMs;
-                                return o(Math.round(e * s), t.minSegmentBytes, t.maxSegmentBytes);
-                            })({ minSegmentBytes: s, sentBytes: e, uploadTimeMs: t, maxSegmentBytes: i, idealUploadTimeMs: this.sruParameterOverrides?.idealUploadTimeMs })),
-                                "function" == typeof h && h();
-                        }
-                    };
-                    for (const t in this.sruHeaders) E.setRequestHeader(t, this.sruHeaders[t]);
-                    return n ? E.send(n) : E.send(), E;
-                }
-            }
-            const u = 2147483647,
-                p = 1,
-                m = 45e3,
-                c = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload.json",
-                _ = 2,
-                g = 0.95,
-                S = 1e3,
-                f = Object.freeze({ FILE_TOO_LARGE: 2, INTERNAL_ERROR: 131, INVALID_MEDIA: 1, RATE_LIMIT: 88, TIMEOUT: 67, UNSUPPORTED_MEDIA: 3, ZERO_FILE_LENGTH: 4, CANCELED: 999, INVALID_RES_STATUS: -1 }),
-                y = Object.freeze({ 0: f.INTERNAL_ERROR, 1: f.INVALID_MEDIA, 2: f.FILE_TOO_LARGE, 3: f.UNSUPPORTED_MEDIA, 4: f.TIMEOUT }),
-                E = Object.freeze({ RESET: 0, PENDING: 1, PAUSED: 2, SUCCEEDED: 3, FAILED: 4 }),
-                I = {};
-            function O(t) {
-                try {
-                    return JSON.parse(t.responseText);
-                } catch (t) {
-                    return null;
-                }
+                        {
+                            alias: null,
+                            args: null,
+                            concreteType: "UserVerification",
+                            kind: "LinkedField",
+                            name: "verification",
+                            plural: !1,
+                            selections: [
+                                { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                            ],
+                            storageKey: null,
+                        },
+                    ],
+                    type: "User",
+                    abstractKey: null,
+                };
+            r.hash = "2eb1236e44f24e4adfd7cfb28527321c";
+            const t = r;
+        },
+        266568: (e, l, n) => {
+            n.d(l, { Z: () => o });
+            var a,
+                r,
+                t,
+                i,
+                s = {
+                    fragment: {
+                        argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "userId" }]),
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "useUserCellDataQuery",
+                        selections: [
+                            {
+                                alias: "user",
+                                args: (r = [
+                                    { kind: "Variable", name: "rest_id", variableName: "userId" },
+                                    { kind: "Literal", name: "s", value: "f3d8" },
+                                ]),
+                                concreteType: "UserResults",
+                                kind: "LinkedField",
+                                name: "user_result_by_rest_id",
+                                plural: !1,
+                                selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [{ args: null, kind: "FragmentSpread", name: "UserCell_user" }], type: "User", abstractKey: null }], storageKey: null }],
+                                storageKey: null,
+                            },
+                        ],
+                        type: "Query",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: {
+                        argumentDefinitions: a,
+                        kind: "Operation",
+                        name: "useUserCellDataQuery",
+                        selections: [
+                            {
+                                alias: "user",
+                                args: r,
+                                concreteType: "UserResults",
+                                kind: "LinkedField",
+                                name: "user_result_by_rest_id",
+                                plural: !1,
+                                selections: [
+                                    {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: null,
+                                        kind: "LinkedField",
+                                        name: "result",
+                                        plural: !1,
+                                        selections: [
+                                            { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
+                                            {
+                                                kind: "InlineFragment",
+                                                selections: [
+                                                    { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
+                                                    {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: "UserCore",
+                                                        kind: "LinkedField",
+                                                        name: "core",
+                                                        plural: !1,
+                                                        selections: [
+                                                            { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
+                                                            { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
+                                                        ],
+                                                        storageKey: null,
+                                                    },
+                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }], storageKey: null },
+                                                    { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
+                                                    { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
+                                                    {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: "HighlightedUserLabelResponse",
+                                                        kind: "LinkedField",
+                                                        name: "identity_profile_labels_highlighted_label",
+                                                        plural: !1,
+                                                        selections: [
+                                                            {
+                                                                alias: null,
+                                                                args: null,
+                                                                concreteType: "HighlightedUserLabel",
+                                                                kind: "LinkedField",
+                                                                name: "label",
+                                                                plural: !1,
+                                                                selections: [
+                                                                    {
+                                                                        alias: null,
+                                                                        args: null,
+                                                                        concreteType: "TimelineUrl",
+                                                                        kind: "LinkedField",
+                                                                        name: "url",
+                                                                        plural: !1,
+                                                                        selections: [
+                                                                            (t = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null }),
+                                                                            { alias: "urlType", args: null, kind: "ScalarField", name: "url_type", storageKey: null },
+                                                                            {
+                                                                                alias: "urtEndpointOptions",
+                                                                                args: null,
+                                                                                concreteType: "TimelineUrtEndpointOptions",
+                                                                                kind: "LinkedField",
+                                                                                name: "urt_endpoint_options",
+                                                                                plural: !1,
+                                                                                selections: [
+                                                                                    { alias: "cacheId", args: null, kind: "ScalarField", name: "cache_id", storageKey: null },
+                                                                                    { alias: null, args: null, kind: "ScalarField", name: "subtitle", storageKey: null },
+                                                                                    { alias: null, args: null, kind: "ScalarField", name: "title", storageKey: null },
+                                                                                    {
+                                                                                        alias: "requestParams",
+                                                                                        args: null,
+                                                                                        concreteType: "RequestParamsEntry",
+                                                                                        kind: "LinkedField",
+                                                                                        name: "request_params",
+                                                                                        plural: !0,
+                                                                                        selections: [
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "key", storageKey: null },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "value", storageKey: null },
+                                                                                        ],
+                                                                                        storageKey: null,
+                                                                                    },
+                                                                                    { alias: null, args: null, concreteType: "Timeline", kind: "LinkedField", name: "timeline", plural: !1, selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], storageKey: null },
+                                                                                ],
+                                                                                storageKey: null,
+                                                                            },
+                                                                        ],
+                                                                        storageKey: null,
+                                                                    },
+                                                                    { alias: null, args: null, concreteType: "BadgeInfo", kind: "LinkedField", name: "badge", plural: !1, selections: [t], storageKey: null },
+                                                                    { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
+                                                                    { alias: "userLabelType", args: null, kind: "ScalarField", name: "user_label_type", storageKey: null },
+                                                                    { alias: "userLabelDisplayType", args: null, kind: "ScalarField", name: "user_label_display_type", storageKey: null },
+                                                                ],
+                                                                storageKey: null,
+                                                            },
+                                                        ],
+                                                        storageKey: null,
+                                                    },
+                                                    { alias: null, args: null, concreteType: "UserRelationshipPerspectives", kind: "LinkedField", name: "relationship_perspectives", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
+                                                    {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: "UserVerification",
+                                                        kind: "LinkedField",
+                                                        name: "verification",
+                                                        plural: !1,
+                                                        selections: [
+                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                        ],
+                                                        storageKey: null,
+                                                    },
+                                                    i,
+                                                ],
+                                                type: "User",
+                                                abstractKey: null,
+                                            },
+                                        ],
+                                        storageKey: null,
+                                    },
+                                    i,
+                                ],
+                                storageKey: null,
+                            },
+                        ],
+                    },
+                    params: { id: "E-QuW7aWt06njansMRe0ww", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "useUserCellDataQuery", operationKind: "query", text: null },
+                };
+            s.hash = "c0b0e360f052f6c6c200824ff1f8e0de";
+            const o = s;
+        },
+        316118: (e, l, n) => {
+            n.d(l, { Z: () => r });
+            n(136728);
+            var a = n(925885);
+            function r(e) {
+                const l = [],
+                    n = (0, a.Z)(e);
+                for (let e = 0; e < n.length; e++) l.push(n[e].hashtag);
+                return l;
             }
         },
-        316118: (t, e, s) => {
-            s.d(e, { Z: () => a });
-            s(136728);
-            var i = s(925885);
-            function a(t) {
-                const e = [],
-                    s = (0, i.Z)(t);
-                for (let t = 0; t < s.length; t++) e.push(s[t].hashtag);
-                return e;
-            }
-        },
-        872722: (t, e, s) => {
-            var i = s(23103),
-                a = s(609736),
-                o = s(513064),
-                r = s(639646),
-                n = s(443231),
-                d = s(910905),
-                h = s(643329),
-                l = Array,
-                u = Math.max,
+        872722: (e, l, n) => {
+            var a = n(23103),
+                r = n(609736),
+                t = n(513064),
+                i = n(639646),
+                s = n(443231),
+                o = n(910905),
+                u = n(643329),
+                d = Array,
+                c = Math.max,
                 p = Math.min;
-            i(
+            a(
                 { target: "Array", proto: !0 },
                 {
-                    toSpliced: function (t, e) {
-                        var s,
-                            i,
+                    toSpliced: function (e, l) {
+                        var n,
                             a,
-                            m,
-                            c = d(this),
-                            _ = r(c),
-                            g = n(t, _),
-                            S = arguments.length,
+                            r,
+                            g,
+                            m = o(this),
+                            y = i(m),
+                            h = s(e, y),
+                            k = arguments.length,
                             f = 0;
-                        for (0 === S ? (s = i = 0) : 1 === S ? ((s = 0), (i = _ - g)) : ((s = S - 2), (i = p(u(h(e), 0), _ - g))), a = o(_ + s - i), m = l(a); f < g; f++) m[f] = c[f];
-                        for (; f < g + s; f++) m[f] = arguments[f - g + 2];
-                        for (; f < a; f++) m[f] = c[f + i - s];
-                        return m;
+                        for (0 === k ? (n = a = 0) : 1 === k ? ((n = 0), (a = y - h)) : ((n = k - 2), (a = p(c(u(l), 0), y - h))), r = t(y + n - a), g = d(r); f < h; f++) g[f] = m[f];
+                        for (; f < h + n; f++) g[f] = arguments[f - h + 2];
+                        for (; f < r; f++) g[f] = m[f + a - n];
+                        return g;
                     },
                 },
             ),
-                a("toSpliced");
+                r("toSpliced");
+        },
+        452661: (e, l, n) => {
+            n.d(l, { Z: () => y });
+            var a = n(18198),
+                r = {
+                    centroidDimension: function (e, l, n, a) {
+                        var t = e.touchBank,
+                            i = 0,
+                            s = 0,
+                            o = 1 === e.numberActiveTouches ? e.touchBank[e.indexOfSingleActiveTouch] : null;
+                        if (null !== o) o.touchActive && o.currentTimeStamp > l && ((i += a && n ? o.currentPageX : a && !n ? o.currentPageY : !a && n ? o.previousPageX : o.previousPageY), (s = 1));
+                        else
+                            for (var u = 0; u < t.length; u++) {
+                                var d = t[u];
+                                if (null != d && d.touchActive && d.currentTimeStamp >= l) {
+                                    (i += a && n ? d.currentPageX : a && !n ? d.currentPageY : !a && n ? d.previousPageX : d.previousPageY), s++;
+                                }
+                            }
+                        return s > 0 ? i / s : r.noCentroid;
+                    },
+                    currentCentroidXOfTouchesChangedAfter: function (e, l) {
+                        return r.centroidDimension(e, l, !0, !0);
+                    },
+                    currentCentroidYOfTouchesChangedAfter: function (e, l) {
+                        return r.centroidDimension(e, l, !1, !0);
+                    },
+                    previousCentroidXOfTouchesChangedAfter: function (e, l) {
+                        return r.centroidDimension(e, l, !0, !1);
+                    },
+                    previousCentroidYOfTouchesChangedAfter: function (e, l) {
+                        return r.centroidDimension(e, l, !1, !1);
+                    },
+                    currentCentroidX: function (e) {
+                        return r.centroidDimension(e, 0, !0, !0);
+                    },
+                    currentCentroidY: function (e) {
+                        return r.centroidDimension(e, 0, !1, !0);
+                    },
+                    noCentroid: -1,
+                };
+            const t = r;
+            var i = t.currentCentroidXOfTouchesChangedAfter,
+                s = t.currentCentroidYOfTouchesChangedAfter,
+                o = t.previousCentroidXOfTouchesChangedAfter,
+                u = t.previousCentroidYOfTouchesChangedAfter,
+                d = t.currentCentroidX,
+                c = t.currentCentroidY,
+                p = {
+                    _initializeGestureState(e) {
+                        (e.moveX = 0), (e.moveY = 0), (e.x0 = 0), (e.y0 = 0), (e.dx = 0), (e.dy = 0), (e.vx = 0), (e.vy = 0), (e.numberActiveTouches = 0), (e._accountsForMovesUpTo = 0);
+                    },
+                    _updateGestureStateOnMove(e, l) {
+                        (e.numberActiveTouches = l.numberActiveTouches), (e.moveX = i(l, e._accountsForMovesUpTo)), (e.moveY = s(l, e._accountsForMovesUpTo));
+                        var n = e._accountsForMovesUpTo,
+                            a = o(l, n),
+                            r = i(l, n),
+                            t = u(l, n),
+                            d = s(l, n),
+                            c = e.dx + (r - a),
+                            p = e.dy + (d - t),
+                            g = l.mostRecentTimeStamp - e._accountsForMovesUpTo;
+                        (e.vx = (c - e.dx) / g), (e.vy = (p - e.dy) / g), (e.dx = c), (e.dy = p), (e._accountsForMovesUpTo = l.mostRecentTimeStamp);
+                    },
+                    create(e) {
+                        var l = { handle: null, shouldCancelClick: !1, timeout: null },
+                            n = { stateID: Math.random(), moveX: 0, moveY: 0, x0: 0, y0: 0, dx: 0, dy: 0, vx: 0, vy: 0, numberActiveTouches: 0, _accountsForMovesUpTo: 0 };
+                        return {
+                            panHandlers: {
+                                onStartShouldSetResponder: (l) => null != e.onStartShouldSetPanResponder && e.onStartShouldSetPanResponder(l, n),
+                                onMoveShouldSetResponder: (l) => null != e.onMoveShouldSetPanResponder && e.onMoveShouldSetPanResponder(l, n),
+                                onStartShouldSetResponderCapture: (l) => (1 === l.nativeEvent.touches.length && p._initializeGestureState(n), (n.numberActiveTouches = l.touchHistory.numberActiveTouches), null != e.onStartShouldSetPanResponderCapture && e.onStartShouldSetPanResponderCapture(l, n)),
+                                onMoveShouldSetResponderCapture(l) {
+                                    var a = l.touchHistory;
+                                    return n._accountsForMovesUpTo !== a.mostRecentTimeStamp && (p._updateGestureStateOnMove(n, a), !!e.onMoveShouldSetPanResponderCapture && e.onMoveShouldSetPanResponderCapture(l, n));
+                                },
+                                onResponderGrant: (r) => (
+                                    l.handle || (l.handle = a.Z.createInteractionHandle()),
+                                    l.timeout &&
+                                        (function (e) {
+                                            clearTimeout(e.timeout);
+                                        })(l),
+                                    (l.shouldCancelClick = !0),
+                                    (n.x0 = d(r.touchHistory)),
+                                    (n.y0 = c(r.touchHistory)),
+                                    (n.dx = 0),
+                                    (n.dy = 0),
+                                    e.onPanResponderGrant && e.onPanResponderGrant(r, n),
+                                    null == e.onShouldBlockNativeResponder || e.onShouldBlockNativeResponder(r, n)
+                                ),
+                                onResponderReject(a) {
+                                    g(l, e.onPanResponderReject, a, n);
+                                },
+                                onResponderRelease(a) {
+                                    g(l, e.onPanResponderRelease, a, n), m(l), p._initializeGestureState(n);
+                                },
+                                onResponderStart(l) {
+                                    var a = l.touchHistory;
+                                    (n.numberActiveTouches = a.numberActiveTouches), e.onPanResponderStart && e.onPanResponderStart(l, n);
+                                },
+                                onResponderMove(l) {
+                                    var a = l.touchHistory;
+                                    n._accountsForMovesUpTo !== a.mostRecentTimeStamp && (p._updateGestureStateOnMove(n, a), e.onPanResponderMove && e.onPanResponderMove(l, n));
+                                },
+                                onResponderEnd(a) {
+                                    var r = a.touchHistory;
+                                    (n.numberActiveTouches = r.numberActiveTouches), g(l, e.onPanResponderEnd, a, n);
+                                },
+                                onResponderTerminate(a) {
+                                    g(l, e.onPanResponderTerminate, a, n), m(l), p._initializeGestureState(n);
+                                },
+                                onResponderTerminationRequest: (l) => null == e.onPanResponderTerminationRequest || e.onPanResponderTerminationRequest(l, n),
+                                onClickCapture: (e) => {
+                                    !0 === l.shouldCancelClick && (e.stopPropagation(), e.preventDefault());
+                                },
+                            },
+                            getInteractionHandle: () => l.handle,
+                        };
+                    },
+                };
+            function g(e, l, n, r) {
+                e.handle && (a.Z.clearInteractionHandle(e.handle), (e.handle = null)), l && l(n, r);
+            }
+            function m(e) {
+                e.timeout = setTimeout(() => {
+                    e.shouldCancelClick = !1;
+                }, 250);
+            }
+            const y = p;
+        },
+        372612: (e, l, n) => {
+            n.d(l, { Z: () => F });
+            var a = n(133028),
+                r = n(807896),
+                t = n(231461),
+                i = n(202784),
+                s = n(890601),
+                o = /^[+-]?\d*(?:\.\d+)?(?:[Ee][+-]?\d+)?(%|\w*)/;
+            const u = (e, l) => {
+                var n;
+                return "string" == typeof e ? "" + parseFloat(e) * l + e.match(o)[1] : ((n = e), !isNaN(parseFloat(n)) && isFinite(n) ? e * l : void 0);
+            };
+            var d = n(297689),
+                c = n(325686),
+                p = ["aria-label", "accessibilityLabel", "activeThumbColor", "activeTrackColor", "disabled", "onValueChange", "style", "thumbColor", "trackColor", "value"],
+                g = {},
+                m = "0px 1px 3px rgba(0,0,0,0.5)",
+                y = m + ", 0 0 0 10px rgba(0,0,0,0.1)",
+                h = "#D5D5D5",
+                k = "#BDBDBD",
+                f = i.forwardRef((e, l) => {
+                    var n = e["aria-label"],
+                        a = e.accessibilityLabel,
+                        o = e.activeThumbColor,
+                        f = e.activeTrackColor,
+                        F = e.disabled,
+                        _ = void 0 !== F && F,
+                        b = e.onValueChange,
+                        S = e.style,
+                        T = void 0 === S ? g : S,
+                        K = e.thumbColor,
+                        C = e.trackColor,
+                        P = e.value,
+                        R = void 0 !== P && P,
+                        L = (0, t.Z)(e, p),
+                        U = i.useRef(null);
+                    function A(e) {
+                        var l = "focus" === e.nativeEvent.type ? y : m;
+                        null != U.current && (U.current.style.boxShadow = l);
+                    }
+                    var D = d.Z.flatten(T),
+                        w = D.height,
+                        O = D.width,
+                        M = w || "20px",
+                        I = u(M, 2),
+                        x = O > I ? O : I,
+                        H = u(M, 0.5),
+                        N = !0 === R ? (null != C && "object" == typeof C ? C.true : null != f ? f : "#A3D3CF") : null != C && "object" == typeof C ? C.false : null != C ? C : "#939393",
+                        Z = R ? (null != o ? o : "#009688") : null != K ? K : "#FAFAFA",
+                        E = M,
+                        q = E,
+                        j = [v.root, T, _ && v.cursorDefault, { height: M, width: x }],
+                        Y = !0 === R ? (("string" == typeof f && null != f) || ("object" == typeof C && null != C && C.true) ? N : h) : ("string" == typeof C && null != C) || ("object" == typeof C && null != C && C.false) ? N : h,
+                        V = !0 === R ? (null == o ? k : Z) : null == K ? k : Z,
+                        X = [v.track, { backgroundColor: _ ? Y : N, borderRadius: H }],
+                        B = [v.thumb, R && v.thumbActive, { backgroundColor: _ ? V : Z, height: E, marginStart: R ? u(q, -1) : 0, width: q }],
+                        G = (0, s.Z)("input", {
+                            "aria-label": n || a,
+                            checked: R,
+                            disabled: _,
+                            onBlur: A,
+                            onChange: function (e) {
+                                null != b && b(e.nativeEvent.target.checked);
+                            },
+                            onFocus: A,
+                            ref: l,
+                            style: [v.nativeControl, v.cursorInherit],
+                            type: "checkbox",
+                            role: "switch",
+                        });
+                    return i.createElement(c.Z, (0, r.Z)({}, L, { style: j }), i.createElement(c.Z, { style: X }), i.createElement(c.Z, { ref: U, style: B }), G);
+                });
+            f.displayName = "Switch";
+            var v = d.Z.create({ root: { cursor: "pointer", userSelect: "none" }, cursorDefault: { cursor: "default" }, cursorInherit: { cursor: "inherit" }, track: (0, a.Z)((0, a.Z)({ forcedColorAdjust: "none" }, d.Z.absoluteFillObject), {}, { height: "70%", margin: "auto", transitionDuration: "0.1s", width: "100%" }), thumb: { forcedColorAdjust: "none", alignSelf: "flex-start", borderRadius: "100%", boxShadow: m, start: "0%", transform: "translateZ(0)", transitionDuration: "0.1s" }, thumbActive: { insetInlineStart: "100%" }, nativeControl: (0, a.Z)((0, a.Z)({}, d.Z.absoluteFillObject), {}, { height: "100%", margin: 0, appearance: "none", padding: 0, width: "100%" }) });
+            const F = f;
+        },
+        702239: (e, l, n) => {
+            n.d(l, { Nq: () => d, oD: () => p, t0: () => c });
+            var a,
+                r = n(202784),
+                t = n(928316),
+                i =
+                    ((a = function (e, l) {
+                        return (
+                            (a =
+                                Object.setPrototypeOf ||
+                                ({ __proto__: [] } instanceof Array &&
+                                    function (e, l) {
+                                        e.__proto__ = l;
+                                    }) ||
+                                function (e, l) {
+                                    for (var n in l) Object.prototype.hasOwnProperty.call(l, n) && (e[n] = l[n]);
+                                }),
+                            a(e, l)
+                        );
+                    }),
+                    function (e, l) {
+                        if ("function" != typeof l && null !== l) throw new TypeError("Class extends value " + String(l) + " is not a constructor or null");
+                        function n() {
+                            this.constructor = e;
+                        }
+                        a(e, l), (e.prototype = null === l ? Object.create(l) : ((n.prototype = l.prototype), new n()));
+                    }),
+                s = "html",
+                o = "svg",
+                u = function (e, l) {
+                    var n,
+                        a,
+                        r,
+                        t = {};
+                    if (e === s) r = document.createElement("div");
+                    else {
+                        if (e !== o) throw new Error('Invalid element type "'.concat(e, '" for createPortalNode: must be "html" or "svg".'));
+                        r = document.createElementNS("http://www.w3.org/2000/svg", "g");
+                    }
+                    if (l && "object" == typeof l)
+                        for (var i = 0, u = Object.entries(l.attributes); i < u.length; i++) {
+                            var d = u[i],
+                                c = d[0],
+                                p = d[1];
+                            r.setAttribute(c, p);
+                        }
+                    var g = {
+                        element: r,
+                        elementType: e,
+                        setPortalProps: function (e) {
+                            t = e;
+                        },
+                        getInitialPortalProps: function () {
+                            return t;
+                        },
+                        mount: function (l, r) {
+                            if (r !== a) {
+                                if (
+                                    (g.unmount(),
+                                    l !== n &&
+                                        !(function (e, l) {
+                                            var n,
+                                                a,
+                                                r,
+                                                t = null !== (n = e.ownerDocument) && void 0 !== n ? n : document,
+                                                i = null !== (r = null !== (a = t.defaultView) && void 0 !== a ? a : t.parentWindow) && void 0 !== r ? r : window;
+                                            if (l === s) return e instanceof i.HTMLElement;
+                                            if (l === o) return e instanceof i.SVGElement;
+                                            throw new Error('Unrecognized element type "'.concat(l, '" for validateElementType.'));
+                                        })(l, e))
+                                )
+                                    throw new Error('Invalid element type for portal: "'.concat(e, '" portalNodes must be used with ').concat(e, " elements, but OutPortal is within <").concat(l.tagName, ">."));
+                                l.replaceChild(g.element, r), (n = l), (a = r);
+                            }
+                        },
+                        unmount: function (e) {
+                            (e && e !== a) || (n && a && (n.replaceChild(a, g.element), (n = void 0), (a = void 0)));
+                        },
+                    };
+                    return g;
+                },
+                d = (function (e) {
+                    function l(l) {
+                        var n = e.call(this, l) || this;
+                        return (
+                            (n.addPropsChannel = function () {
+                                Object.assign(n.props.node, {
+                                    setPortalProps: function (e) {
+                                        n.setState({ nodeProps: e });
+                                    },
+                                });
+                            }),
+                            (n.state = { nodeProps: n.props.node.getInitialPortalProps() }),
+                            n
+                        );
+                    }
+                    return (
+                        i(l, e),
+                        (l.prototype.componentDidMount = function () {
+                            this.addPropsChannel();
+                        }),
+                        (l.prototype.componentDidUpdate = function () {
+                            this.addPropsChannel();
+                        }),
+                        (l.prototype.render = function () {
+                            var e = this,
+                                l = this.props,
+                                n = l.children,
+                                a = l.node;
+                            return t.createPortal(
+                                r.Children.map(n, function (l) {
+                                    return r.isValidElement(l) ? r.cloneElement(l, e.state.nodeProps) : l;
+                                }),
+                                a.element,
+                            );
+                        }),
+                        l
+                    );
+                })(r.PureComponent),
+                c = (function (e) {
+                    function l(l) {
+                        var n = e.call(this, l) || this;
+                        return (n.placeholderNode = r.createRef()), n.passPropsThroughPortal(), n;
+                    }
+                    return (
+                        i(l, e),
+                        (l.prototype.passPropsThroughPortal = function () {
+                            var e = Object.assign({}, this.props, { node: void 0 });
+                            this.props.node.setPortalProps(e);
+                        }),
+                        (l.prototype.componentDidMount = function () {
+                            var e = this.props.node;
+                            this.currentPortalNode = e;
+                            var l = this.placeholderNode.current,
+                                n = l.parentNode;
+                            e.mount(n, l), this.passPropsThroughPortal();
+                        }),
+                        (l.prototype.componentDidUpdate = function () {
+                            var e = this.props.node;
+                            this.currentPortalNode && e !== this.currentPortalNode && (this.currentPortalNode.unmount(this.placeholderNode.current), this.currentPortalNode.setPortalProps({}), (this.currentPortalNode = e));
+                            var l = this.placeholderNode.current,
+                                n = l.parentNode;
+                            e.mount(n, l), this.passPropsThroughPortal();
+                        }),
+                        (l.prototype.componentWillUnmount = function () {
+                            var e = this.props.node;
+                            e.unmount(this.placeholderNode.current), e.setPortalProps({});
+                        }),
+                        (l.prototype.render = function () {
+                            return r.createElement("div", { ref: this.placeholderNode });
+                        }),
+                        l
+                    );
+                })(r.PureComponent),
+                p = u.bind(null, s);
+            u.bind(null, o);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481.6f273fca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481.a273387a.js.map

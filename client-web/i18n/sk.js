@@ -3964,6 +3964,7 @@
                 n("j6cdf012", "Spoluhostitelia nemôžu pozvať ani odobrať spoluhostiteľov"),
                 n("c727d116", "Spoluhostitelia nemôžu ukončiť priestor"),
                 n("g69084b8", "Prijať spoluhostiteľskú pozvánku"),
+                n("ddd5cfe2", "Pripnúť"),
                 n("ee230734", "Zobraziť viac možností"),
                 n("ic8c615e", "Vyberte a odošlite možnosť rýchlej odpovede"),
                 n("a04077c4", "Vyberte 1 fotku, video alebo súbor GIF."),
@@ -4933,9 +4934,9 @@
                 n("d9f9dec0", "Zobraziť priestor"),
                 n("h0c1f37a", "Zobraziť analýzu priestoru"),
                 n("e41fffbc", "Celkový čas pozerania vašich videí."),
-                n("if2909ba", "Čas pozerania"),
-                n("i0e5bf4c", "Vaše videá");
-            n("ed99baea", "Prednostný prístup k beta verzii"),
+                n("if2909ba", "Čas pozerania");
+            n("i0e5bf4c", "Vaše videá"),
+                n("ed99baea", "Prednostný prístup k beta verzii"),
                 n("gf898b70", "Rozšírené vyhľadávanie"),
                 n("d2a43a7a", "obsahuje „ai“ aj „startup“"),
                 n("a8584698", "ai startup"),
@@ -5889,9 +5890,9 @@
                 n("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                n("h18f86a4", "Odstrániť priečinok"),
-                n("f4ea967a", "Priečinok bol odstránený");
-            n("b670aa62", "Názov priečinka"),
+                n("h18f86a4", "Odstrániť priečinok");
+            n("f4ea967a", "Priečinok bol odstránený"),
+                n("b670aa62", "Názov priečinka"),
                 n("aece5462", "Názov priečinka bol úspešne aktualizovaný"),
                 n("e3299b94", "Vyskytla sa chyba. Skúste priečinok aktualizovať znova o minútu."),
                 n("c09ea714", "Vyskytla sa chyba. Skúste priečinok odstrániť znova o minútu."),
@@ -6485,6 +6486,7 @@
                 n("babfa32c", "Rýchlo si prispôsobte zobrazenie"),
                 n("a2a2f98e", "Zistite, čo je nové"),
                 n("b4a361c0", "Ak si chcete prispôsobiť farbu a veľkosť textu alebo skontrolovať výber tmavého režimu, môžete tak urobiť teraz. Tieto nastavenia sa zobrazujú iba vám."),
+                n("g4743c56", "Začať sledovať"),
                 n("c797b44e", "Najnovšie príbehy na X vyrozprávané formou príspevkov."),
                 n("a19ce060", "Možnosť Preskúmať nie je k dispozícii"),
                 n("f7d1a8e0", "Apka pre Android"),
@@ -6892,10 +6894,10 @@
                 n("ede7d0a2", "Mena"),
                 n("b925c18c", "Typ mzdy"),
                 n("j3d242ce", "Neplatný rozsah"),
-                n("f4d07bd2", "Uveďte nepovinné údaje, ktoré uchádzačom uľahčia nájdenie vašich pracovných pozícií."),
-                n("b8cbb51a", "Zhrnutie pracovnej pozície"),
-                n("bda6881e", "Toto pracovné miesto bolo importované zo systému sledovania uchádzačov (ATS). Vezmite prosím na vedomie, že je možné upravovať iba určité polia.");
-            n("b075c68a", "Upraviť pracovnú pozíciu"),
+                n("f4d07bd2", "Uveďte nepovinné údaje, ktoré uchádzačom uľahčia nájdenie vašich pracovných pozícií.");
+            n("b8cbb51a", "Zhrnutie pracovnej pozície"),
+                n("bda6881e", "Toto pracovné miesto bolo importované zo systému sledovania uchádzačov (ATS). Vezmite prosím na vedomie, že je možné upravovať iba určité polia."),
+                n("b075c68a", "Upraviť pracovnú pozíciu"),
                 n("d4b6a6e0", "Zvýraznenie v profile"),
                 n("j2dd3686", "Zvýrazniť zobrazované pracovné ponuky nad mojimi príspevkami"),
                 n("af1cfd46", "Integrácia systému sledovania uchádzačov (ATS)"),
@@ -7872,9 +7874,7 @@
                     return "Vitajte späť, " + e.displayName;
                 }),
                 n("a76d58ba", "Štatistika reklám"),
-                n("eccd0e1a", "Štatistika organizácie"),
-                n("deea1708", "Chcete si pozrieť štatistiky všetkých svojich účtov X?"),
-                n("eb603ffc", "Prejdite na vyššiu tarifu predplatného, aby ste mohli pridružiť účty a pozrieť si súhrnné štatistiky.");
+                n("eccd0e1a", "Štatistika organizácie");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var n = a[o];
@@ -7913,7 +7913,9 @@
                     r(e, a)
                 );
             }
-            n("gf67aae4", "Prejdite na tarifu s plným prístupom"),
+            n("deea1708", "Chcete si pozrieť štatistiky všetkých svojich účtov X?"),
+                n("eb603ffc", "Prejdite na vyššiu tarifu predplatného, aby ste mohli pridružiť účty a pozrieť si súhrnné štatistiky."),
+                n("gf67aae4", "Prejdite na tarifu s plným prístupom"),
                 n("h75e3618", "Zahrnúť organizáciu"),
                 n("h24a8862", "Informácie o tomto začiarkavacom políčku"),
                 n("c29e3a88", "Vyberte pridružené účty"),
@@ -8910,12 +8912,12 @@
                 n("j0f12222", "Zobraziť viac"),
                 n("f569f7c8", "Prejsť na webstránku"),
                 n("j0c6772a", "Navštíviť webstránku"),
-                n("f73003aa", "Video sa spustí po reklame"),
-                n("b3112b8a", "Preskočiť"),
-                n("h6333ad0", "Vynechať reklamu");
-            n("c59da417", function (e) {
-                return "Preskočiť reklamu o " + e.seconds;
-            }),
+                n("f73003aa", "Video sa spustí po reklame");
+            n("b3112b8a", "Preskočiť"),
+                n("h6333ad0", "Vynechať reklamu"),
+                n("c59da417", function (e) {
+                    return "Preskočiť reklamu o " + e.seconds;
+                }),
                 n("c3c147cf", function (e) {
                     return "Preskočiť " + e.seconds;
                 }),
@@ -13365,4 +13367,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.1997be4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.6108c13a.js.map

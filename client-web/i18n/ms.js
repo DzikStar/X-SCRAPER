@@ -3954,6 +3954,7 @@
                 i("j6cdf012", "Hos lain tidak boleh menjemput atau mengalih keluar hos lain"),
                 i("c727d116", "Hos lain tidak boleh menamatkan Space"),
                 i("g69084b8", "Terima jemputan hos lain"),
+                i("ddd5cfe2", "Dok"),
                 i("ee230734", "Tunjuk pilihan lagi"),
                 i("ic8c615e", "Pilih dan hantar pilihan balas secara pantas"),
                 i("a04077c4", "Sila pilih 1 foto, video atau GIF."),
@@ -4923,9 +4924,9 @@
                 i("d9f9dec0", "Lihat Space"),
                 i("h0c1f37a", "Lihat Analitis Space"),
                 i("e41fffbc", "Jumlah masa tontonan video anda."),
-                i("if2909ba", "Masa Tontonan"),
-                i("i0e5bf4c", "Video anda");
-            i("ed99baea", "Akses Beta Awal"),
+                i("if2909ba", "Masa Tontonan");
+            i("i0e5bf4c", "Video anda"),
+                i("ed99baea", "Akses Beta Awal"),
                 i("gf898b70", "Carian Lanjutan"),
                 i("d2a43a7a", 'mengandungi "ai" dan juga "pemula"'),
                 i("a8584698", "pemula ai"),
@@ -5879,9 +5880,9 @@
                 i("e41c9b4f", function (a) {
                     return "Saved to " + a.bookmarkFolderName;
                 }),
-                i("h18f86a4", "Padamkan Folder"),
-                i("f4ea967a", "Folder telah dipadamkan");
-            i("b670aa62", "Nama Folder"),
+                i("h18f86a4", "Padamkan Folder");
+            i("f4ea967a", "Folder telah dipadamkan"),
+                i("b670aa62", "Nama Folder"),
                 i("aece5462", "Nama folder telah berjaya dikemas kini"),
                 i("e3299b94", "Ada sesuatu yang tidak kena. Cuba kemas kini folder itu semula sebentar lagi."),
                 i("c09ea714", "Ada sesuatu yang tidak kena. Cuba padamkan folder itu semula sebentar lagi."),
@@ -6475,6 +6476,7 @@
                 i("babfa32c", "Sesuaikan paparan anda dengan cepat"),
                 i("a2a2f98e", "Lihat ciri baharu"),
                 i("b4a361c0", "Anda boleh memperibadikan warna anda dan juga saiz teks anda, serta mengawal pilihan mod gelap anda sekarang. Hanya anda boleh melihat tetapan ini."),
+                i("g4743c56", "Mula mengikuti"),
                 i("c797b44e", "Cerita terkini di X - seperti yang diceritakan oleh siaran."),
                 i("a19ce060", "Teroka tidak tersedia."),
                 i("f7d1a8e0", "Aplikasi Android"),
@@ -6882,10 +6884,10 @@
                 i("ede7d0a2", "Mata wang"),
                 i("b925c18c", "Jenis Gaji"),
                 i("j3d242ce", "Julat tidak sah"),
-                i("f4d07bd2", "Sertakan butiran pilihan untuk memudahkan calon menemukan peranan anda dengan carian."),
-                i("b8cbb51a", "Ringkasan Pekerjaan"),
-                i("bda6881e", "Pekerjaan ini telah diimport daripada Sistem Penjejakan Pemohon (ATS) anda. Harap maklum bahawa hanya medan yang tertentu boleh diubah suai.");
-            i("b075c68a", "Edit pekerjaan"),
+                i("f4d07bd2", "Sertakan butiran pilihan untuk memudahkan calon menemukan peranan anda dengan carian.");
+            i("b8cbb51a", "Ringkasan Pekerjaan"),
+                i("bda6881e", "Pekerjaan ini telah diimport daripada Sistem Penjejakan Pemohon (ATS) anda. Harap maklum bahawa hanya medan yang tertentu boleh diubah suai."),
+                i("b075c68a", "Edit pekerjaan"),
                 i("d4b6a6e0", "Sorotan Profil"),
                 i("j2dd3686", "Serlahkan pekerjaan yang ditampilkan di atas siaran saya."),
                 i("af1cfd46", "Penyepaduan ATS"),
@@ -7862,9 +7864,7 @@
                     return "Selamat kembali, " + a.displayName;
                 }),
                 i("a76d58ba", "Analitis Iklan"),
-                i("eccd0e1a", "Analitis Organisasi"),
-                i("deea1708", "Ingin melihat analitis pada semua akaun X anda?"),
-                i("eb603ffc", "Naik taraf untuk menggabungkan rangkaian anda dan melihat analitis yang diagregatkan.");
+                i("eccd0e1a", "Analitis Organisasi");
             function u(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7903,7 +7903,9 @@
                     d(a, n)
                 );
             }
-            i("gf67aae4", "Naik taraf kepada Akses Penuh"),
+            i("deea1708", "Ingin melihat analitis pada semua akaun X anda?"),
+                i("eb603ffc", "Naik taraf untuk menggabungkan rangkaian anda dan melihat analitis yang diagregatkan."),
+                i("gf67aae4", "Naik taraf kepada Akses Penuh"),
                 i("h75e3618", "Sertakan organisasi"),
                 i("h24a8862", "Perihal kotak pilihan ini"),
                 i("c29e3a88", "Pilih ahli gabungan"),
@@ -8900,12 +8902,12 @@
                 i("j0f12222", "Lihat lagi"),
                 i("f569f7c8", "Pergi ke laman web"),
                 i("j0c6772a", "Lawati laman web"),
-                i("f73003aa", "Video akan dimainkan selepas iklan"),
-                i("b3112b8a", "Langkau"),
-                i("h6333ad0", "Langkau Iklan");
-            i("c59da417", function (a) {
-                return "Langkau Iklan dalam masa " + a.seconds;
-            }),
+                i("f73003aa", "Video akan dimainkan selepas iklan");
+            i("b3112b8a", "Langkau"),
+                i("h6333ad0", "Langkau Iklan"),
+                i("c59da417", function (a) {
+                    return "Langkau Iklan dalam masa " + a.seconds;
+                }),
                 i("c3c147cf", function (a) {
                     return "Langkau " + a.seconds;
                 }),
@@ -13348,4 +13350,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.f114e23a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.9c27d34a.js.map

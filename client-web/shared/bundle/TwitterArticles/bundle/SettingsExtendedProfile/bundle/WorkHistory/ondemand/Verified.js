@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.TwitterArticles~bundle.SettingsExtendedProfile~bundle.WorkHistory~ondemand.Verified", "icons/IconChevronDown-js", "icons/IconGifPillStroke-js"],
+    ["shared~bundle.TwitterArticles~bundle.SettingsExtendedProfile~bundle.WorkHistory~ondemand.Verified", "icons/IconCode-js", "icons/IconGifPillStroke-js", "icons/IconLatex-js"],
     {
         385264: (e, t, n) => {
             n.d(t, { Q: () => o });
@@ -87,7 +87,7 @@
                 m = p;
         },
         874111: (e, t, n) => {
-            n.d(t, { Ff: () => I, KU: () => T, O7: () => Z, QX: () => L, Sc: () => v, Ve: () => _, Vn: () => R, WE: () => M, WF: () => b, c6: () => x, ci: () => S, eE: () => k, iT: () => C, ii: () => F, jB: () => P, k: () => V, mA: () => w, r_: () => B, wq: () => D });
+            n.d(t, { Ff: () => I, KU: () => T, O7: () => Z, QX: () => L, Sc: () => v, Ve: () => _, Vn: () => D, WE: () => M, WF: () => b, c6: () => x, ci: () => S, eE: () => k, iT: () => C, ii: () => F, jB: () => P, k: () => V, mA: () => w, r_: () => B, wq: () => R });
             n(136728);
             var o = n(301503),
                 r = n(111677),
@@ -227,13 +227,13 @@
                         r = o.EditorState.set(e, { currentContent: t });
                     return g(r, n, " ");
                 },
-                D = (e, t) => {
+                R = (e, t) => {
                     const n = e.getCurrentContent().createEntity(u.DC.LATEX, u.pc.IMMUTABLE),
                         r = n.getLastCreatedEntityKey(),
                         i = o.EditorState.set(e, { currentContent: n });
                     return g(i, r, t);
                 },
-                R = (e, t, n) => {
+                D = (e, t, n) => {
                     const r = e.getCurrentContent(),
                         i = r.getBlockForKey(t),
                         s = i.getText().length,
@@ -246,19 +246,19 @@
                 },
                 O = i().add55c98,
                 A = i().i0db46e6,
-                K = i().fa4e68ca,
-                z = i().c80940f4,
+                z = i().fa4e68ca,
+                K = i().c80940f4,
                 W = i().i89195ea,
-                U = i().cfeb3f86,
-                H = i().ad9e175c,
+                H = i().cfeb3f86,
+                U = i().ad9e175c,
                 V = [
                     { id: p.Q.Media, text: O, Icon: s.default },
                     { id: p.Q.GIFs, text: A, Icon: a.default },
-                    { id: p.Q.Posts, text: K, Icon: l.default },
-                    { id: p.Q.Markdown, text: z, Icon: c.default },
+                    { id: p.Q.Posts, text: z, Icon: l.default },
+                    { id: p.Q.Markdown, text: K, Icon: c.default },
                     { id: p.Q.Divider, text: W, Icon: d.default },
-                    { id: p.Q.Code, text: U, Icon: c.default },
-                    { id: p.Q.LaTeX, text: H, Icon: h.default },
+                    { id: p.Q.Code, text: H, Icon: c.default },
+                    { id: p.Q.LaTeX, text: U, Icon: h.default },
                 ];
         },
         652904: (e, t, n) => {
@@ -376,20 +376,20 @@
                 M = n(855125),
                 P = n(202253),
                 Z = n(392237),
-                D = n(779802);
-            const R = Z.default.create((e) => ({ separator: { borderEndWidth: e.borderWidths.small, borderColor: e.colors.gray200, marginVertical: e.spaces.space8 } })),
-                O = ({ style: e }) => r.createElement(s.Z, { style: [R.separator, e] }),
+                R = n(779802);
+            const D = Z.default.create((e) => ({ separator: { borderEndWidth: e.borderWidths.small, borderColor: e.colors.gray200, marginVertical: e.spaces.space8 } })),
+                O = ({ style: e }) => r.createElement(s.Z, { style: [D.separator, e] }),
                 A = l().a6a3d496,
-                K = l().acce6978,
-                z = l().f5e8f526,
+                z = l().acce6978,
+                K = l().f5e8f526,
                 W = l().h517e8d8,
-                U = l().a30ae58e,
-                H = l().da38c958,
+                H = l().a30ae58e,
+                U = l().da38c958,
                 V = l().fee0a8bc,
                 G = l().d5d57678,
                 N = l().ec822028,
                 j = l().ebc5d2cc,
-                Q = { [D.P7.bulleted]: ["-", "*", "+"], [D.P7.numbered]: ["1.", "1)", "1]"], [D.P7.blockquote]: [">", ">>"], [D.P7.header1]: ["#"], [D.P7.header2]: ["##"] };
+                Q = { [R.P7.bulleted]: ["-", "*", "+"], [R.P7.numbered]: ["1.", "1)", "1]"], [R.P7.blockquote]: [">", ">>"], [R.P7.header1]: ["#"], [R.P7.header2]: ["##"] };
             class $ extends r.Component {
                 constructor(e) {
                     super(e),
@@ -408,7 +408,7 @@
                                 n = i.KeyBindingUtil.hasCommandModifier(e),
                                 o = e.shiftKey && n,
                                 r = e.key.toLowerCase();
-                            return "k" === r && n ? D.Qm.toLowerCase() : "x" === r && o ? D.fR.strikethrough.toLowerCase() : "7" === r && o ? D.P7.numbered : "8" === r && o ? D.P7.bulleted : "9" === r && o ? D.P7.blockquote : "." === r && o ? D.u4 : "," === r && o ? D.db : t?.(e);
+                            return "k" === r && n ? R.Qm.toLowerCase() : "x" === r && o ? R.fR.strikethrough.toLowerCase() : "7" === r && o ? R.P7.numbered : "8" === r && o ? R.P7.bulleted : "9" === r && o ? R.P7.blockquote : "." === r && o ? R.u4 : "," === r && o ? R.db : t?.(e);
                         }),
                         (this._isEditorFocused = () => {
                             const {
@@ -422,7 +422,7 @@
                                 } = this.props,
                                 t = e?.getCurrentContent(),
                                 n = t?.getBlockMap().first().getType(),
-                                o = n === D.P7.bulleted || n === D.P7.numbered || n === D.P7.blockquote;
+                                o = n === R.P7.bulleted || n === R.P7.numbered || n === R.P7.blockquote;
                             return !this._isEditorFocused() && !o;
                         }),
                         (this._getBackspaceAndDeleteCommandHandlers = () => {
@@ -436,7 +436,7 @@
                                         return o ? () => e(o) : void 0;
                                     },
                                     o = (e, t) => (t ? Object.fromEntries(e.map((e) => [e, t])) : {});
-                                return { ...o(D.wX, n(i.RichUtils.onBackspace)), ...o(D.Ak, n(i.RichUtils.onDelete)) };
+                                return { ...o(R.wX, n(i.RichUtils.onBackspace)), ...o(R.Ak, n(i.RichUtils.onDelete)) };
                             }
                             return {};
                         }),
@@ -489,7 +489,7 @@
                                     textSizesOverride: t,
                                 } = this.props,
                                 n = e ? i.RichUtils.getCurrentBlockType(e) : void 0;
-                            return (t || D.iH).find((e) => e.blockType === n) || D.Tr;
+                            return (t || R.iH).find((e) => e.blockType === n) || R.Tr;
                         }),
                         (this._toggleTextStyle = (e) => {
                             const {
@@ -507,7 +507,7 @@
                         }),
                         (this._handleIncreaseTextSize = () => {
                             const { textSizesOverride: e } = this.props,
-                                t = e || D.iH,
+                                t = e || R.iH,
                                 n = this._getSelectedTextSize(),
                                 o = t.indexOf(n);
                             if (0 !== o) {
@@ -517,7 +517,7 @@
                         }),
                         (this._handleDecreaseTextSize = () => {
                             const { textSizesOverride: e } = this.props,
-                                t = e || D.iH,
+                                t = e || R.iH,
                                 n = this._getSelectedTextSize(),
                                 o = t.indexOf(n);
                             if (o !== t.length - 1) {
@@ -546,7 +546,7 @@
                                         c = this._getEditorStateWithTextSelection(a, s.getStartOffset(), l.getEndOffset()),
                                         d = c
                                             .getCurrentContent()
-                                            .createEntity(D.Qm, "MUTABLE", { url: this._getUrlWithProtocol(n) })
+                                            .createEntity(R.Qm, "MUTABLE", { url: this._getUrlWithProtocol(n) })
                                             .getLastCreatedEntityKey();
                                     r(i.EditorState.forceSelection(i.RichUtils.toggleLink(c, c.getSelection(), d), l));
                                 }
@@ -582,8 +582,8 @@
                                     r = o.getCurrentContent(),
                                     s = t.getStartKey(),
                                     a = s === t.getEndKey() ? r.getBlockForKey(s) : void 0;
-                                if (a?.getType() === D.P7.blockquote && 0 === a?.getLength()) {
-                                    return n(i.RichUtils.toggleBlockType(o, D.P7.blockquote)), "handled";
+                                if (a?.getType() === R.P7.blockquote && 0 === a?.getLength()) {
+                                    return n(i.RichUtils.toggleBlockType(o, R.P7.blockquote)), "handled";
                                 }
                             }
                             return t?.(e) || "not-handled";
@@ -602,7 +602,7 @@
                             return i.EditorState.push(e, r, "change-block-data");
                         }),
                         (this._removeInvalidStylesFromContentBlock = (e) => {
-                            const t = [...(0, u.Z)(D.fR), ...(0, u.Z)(D.P7)],
+                            const t = [...(0, u.Z)(R.fR), ...(0, u.Z)(R.P7)],
                                 n = e.getCharacterList().map((e) =>
                                     e
                                         .getStyle()
@@ -627,7 +627,7 @@
                                     const { Icon: n, buttonTestId: i, key: s, renderActionMenu: c, ...d } = e,
                                         h = this._isEditorFocused() && a?.contains(s),
                                         u = this._isEditorFocused() && s === l,
-                                        p = s === D.Qm && this.isPopoverShown,
+                                        p = s === R.Qm && this.isPopoverShown,
                                         g = h || u || p,
                                         m = r.createElement(n, { style: g ? void 0 : q.iconGray });
                                     return r.createElement(r.Fragment, { key: s }, r.createElement(y.ZP, (0, o.Z)({ icon: m, key: s, preventFocusShift: this._isEditorFocused(), size: "small", testID: i, type: g ? "brandText" : "primaryText" }, d)), c && c());
@@ -636,7 +636,7 @@
                         }),
                         (this._renderTextSizeMenu = () => {
                             const { textSizesOverride: e } = this.props,
-                                t = e || D.iH,
+                                t = e || R.iH,
                                 n = this._getSelectedTextSize(),
                                 o = t.map((e) => ({ isSelected: n === e, onClick: () => this._handleChangeTextSize(e), selectable: !0, text: e.component }));
                             return r.createElement(m.Z, { items: o, onCloseRequested: this._handleHideTextSizeMenu, preventFocusShift: this._isEditorFocused(), shouldCloseOnClick: !0 });
@@ -659,7 +659,7 @@
                                             },
                                             type: "primaryFilled",
                                         },
-                                        z,
+                                        K,
                                     ),
                                     r.createElement(
                                         y.ZP,
@@ -681,7 +681,7 @@
                             if (e) {
                                 const { editorStateWithLinkSelected: t, entityUrl: n } = this._getEditorStateWithLinkSelected(e),
                                     o = this._getSelectedText(t);
-                                return r.createElement(T, { buttonLabelOverride: n ? V : G, fields: { source: { label: H, initialValue: n || "", getErrorText: this._getSourceInputErrorText }, ...(void 0 !== o ? { text: { label: U, initialValue: o } } : {}) }, onClose: this._handleToggleLinkSheet, onSave: this._handleAddLink(t, void 0 !== o), sheetTitle: n ? K : A });
+                                return r.createElement(T, { buttonLabelOverride: n ? V : G, fields: { source: { label: U, initialValue: n || "", getErrorText: this._getSourceInputErrorText }, ...(void 0 !== o ? { text: { label: H, initialValue: o } } : {}) }, onClose: this._handleToggleLinkSheet, onSave: this._handleAddLink(t, void 0 !== o), sheetTitle: n ? z : A });
                             }
                         }),
                         (this._handleInTextShortcut = (e) => (t, n, o) => {
@@ -723,16 +723,16 @@
                 render() {
                     const { additionalToolbarButtonConfigs: e, emojiPickerButton: t, errorText: n, inputStyle: a, isInputFullWidth: l, keyCommandHandlers: c, limitedRichText: d, middleControl: h, onChange: u, paragraphFontSizeOverride: p, placeholder: g, richTextInputContext: m, showError: b, textSizesOverride: x, toolbarRightControl: k, toolbarStyle: _, withAppBar: E, ...T } = this.props,
                         { showLinkSheet: F, showTextSizeMenu: L } = this.state,
-                        M = (0, D.b$)(this._toggleTextStyle(i.RichUtils.toggleInlineStyle)),
-                        P = (0, D.QF)(this._toggleTextStyle(i.RichUtils.toggleBlockType)),
-                        R = (0, D.lD)(this._toggleTextStyle(i.RichUtils.toggleBlockType)),
-                        A = (0, D.KJ)(this._handleToggleLinkSheet),
-                        K = this._getSelectedTextSize(),
-                        z = { ...m, blockStyleFn: (0, D.su)(!1, m.blockStyleFn), stripPastedStyles: !1 },
-                        W = Object.fromEntries([...M, ...(d ? [] : A), ...R, ...(d ? [] : P)].map((e) => [e.key.toLowerCase(), e.onPress])),
-                        U = { [D.u4]: this._handleIncreaseTextSize, [D.db]: this._handleDecreaseTextSize },
-                        H = { ...W, ...(d ? {} : U), ...this._getBackspaceAndDeleteCommandHandlers() },
-                        V = c ? { ...H, ...c } : H,
+                        M = (0, R.b$)(this._toggleTextStyle(i.RichUtils.toggleInlineStyle)),
+                        P = (0, R.QF)(this._toggleTextStyle(i.RichUtils.toggleBlockType)),
+                        D = (0, R.lD)(this._toggleTextStyle(i.RichUtils.toggleBlockType)),
+                        A = (0, R.KJ)(this._handleToggleLinkSheet),
+                        z = this._getSelectedTextSize(),
+                        K = { ...m, blockStyleFn: (0, R.su)(!1, m.blockStyleFn), stripPastedStyles: !1 },
+                        W = Object.fromEntries([...M, ...(d ? [] : A), ...D, ...(d ? [] : P)].map((e) => [e.key.toLowerCase(), e.onPress])),
+                        H = { [R.u4]: this._handleIncreaseTextSize, [R.db]: this._handleDecreaseTextSize },
+                        U = { ...W, ...(d ? {} : H), ...this._getBackspaceAndDeleteCommandHandlers() },
+                        V = c ? { ...U, ...c } : U,
                         G = this._handleOnChange,
                         N = C.Z.hexToCss(Z.default.theme.colors.navigationBackground, 0),
                         j = C.Z.hexToCss(Z.default.theme.colors.navigationBackground, 1),
@@ -759,10 +759,10 @@
                                               r.Fragment,
                                               null,
                                               r.createElement(O, { style: q.separatorMargin }),
-                                              r.createElement(w.Z, { interactiveStyles: null, onClick: this._handleShowTextSizeMenu, preventFocusShift: this._isEditorFocused(), style: q.textSizeSelection }, (e) => r.createElement(r.Fragment, null, r.createElement(f.ZP, { color: "gray700", numberOfLines: 1, size: "subtext1" }, K.label), r.createElement(y.ZP, { icon: X, interactivityState: e, size: "small", type: "primaryText" }), L ? this._renderTextSizeMenu() : null)),
+                                              r.createElement(w.Z, { interactiveStyles: null, onClick: this._handleShowTextSizeMenu, preventFocusShift: this._isEditorFocused(), style: q.textSizeSelection }, (e) => r.createElement(r.Fragment, null, r.createElement(f.ZP, { color: "gray700", numberOfLines: 1, size: "subtext1" }, z.label), r.createElement(y.ZP, { icon: X, interactivityState: e, size: "small", type: "primaryText" }), L ? this._renderTextSizeMenu() : null)),
                                           ),
                                     d ? null : this._renderToolbarButtonGroup(P),
-                                    this._renderToolbarButtonGroup(R),
+                                    this._renderToolbarButtonGroup(D),
                                     d ? null : this._renderToolbarButtonGroup(A),
                                     t ? t() : null,
                                     e ? this._renderToolbarButtonGroup(e) : null,
@@ -771,7 +771,7 @@
                             ),
                             r.createElement(I.Z, { angle: 270, angleUnit: "deg", colors: [N, j, j], locations: [0, 0.75, 1], style: q.toolbar_styling_buttons_fadeout_left }),
                         ),
-                        r.createElement(S.Z, { isFullWidth: l, withWideContainer: !0 }, h, r.createElement(B.Z, (0, o.Z)({ handleBeforeInput: this._handleBeforeInput, handleReturn: this._handleReturn, inputStyle: [q.input, a], keyBindingFn: this._keyBindingFn, keyCommandHandlers: V, onChange: G, placeholder: this._shouldShowPlaceholder() ? g : void 0, ref: this._setFieldTextInputRef, richTextInputContext: z }, T))),
+                        r.createElement(S.Z, { isFullWidth: l, withWideContainer: !0 }, h, r.createElement(B.Z, (0, o.Z)({ handleBeforeInput: this._handleBeforeInput, handleReturn: this._handleReturn, inputStyle: [q.input, a], keyBindingFn: this._keyBindingFn, keyCommandHandlers: V, onChange: G, placeholder: this._shouldShowPlaceholder() ? g : void 0, ref: this._setFieldTextInputRef, richTextInputContext: K }, T))),
                     );
                 }
                 focus() {
@@ -1102,7 +1102,7 @@
             n.d(t, { Z: () => o });
             const o = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        487552: (e, t, n) => {
+        498720: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
             var o = n(202784),
                 r = n(890601),
@@ -1110,7 +1110,7 @@
                 s = n(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M15.24 4.31l-4.55 15.93-1.93-.55 4.55-15.93 1.93.55zm-8.33 3.6L3.33 12l3.58 4.09-1.5 1.32L.67 12l4.74-5.41 1.5 1.32zm11.68-1.32L23.33 12l-4.74 5.41-1.5-1.32L20.67 12l-3.58-4.09 1.5-1.32z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const l = a;
@@ -1128,6 +1128,19 @@
             a.metadata = { width: 24, height: 24 };
             const l = a;
         },
+        38716: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => l });
+            var o = n(202784),
+                r = n(890601),
+                i = n(783427),
+                s = n(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { clipRule: "evenodd", d: "M4.466 5.228C3.444 3.914 4.38 2 6.045 2H17c1.105 0 2 .895 2 2v2c0 .552-.448 1-1 1s-1-.448-1-1V4H6.045l5.267 6.772c.562.722.562 1.734 0 2.456L6.045 20H17v-2c0-.552.448-1 1-1s1 .448 1 1v2c0 1.105-.895 2-2 2H6.045c-1.665 0-2.6-1.914-1.579-3.228L9.733 12 4.466 5.228z", fillRule: "evenodd" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const l = a;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.SettingsExtendedProfile~bundle.WorkHistory~ondemand.Verified.9d1640ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.SettingsExtendedProfile~bundle.WorkHistory~ondemand.Verified.057b29ca.js.map

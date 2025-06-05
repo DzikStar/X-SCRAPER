@@ -1,685 +1,489 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.UserHandler", "icons/IconFeedback-js"],
+    ["loader.UserHandler"],
     {
-        333241: (e, o, t) => {
-            t.d(o, { Z: () => C });
-            t(136728);
-            var n = t(202784),
-                l = t(638236),
-                r = t(811176),
-                a = t(111677),
-                i = t.n(a),
-                s = t(415506),
-                d = t(516951),
-                c = t(443781),
-                u = t(376293),
-                h = t(847607),
-                m = t(417714),
-                p = t(988823);
+        333241: (e, t, o) => {
+            o.d(t, { Z: () => D });
+            o(136728);
+            var r = o(202784),
+                n = o(638236),
+                a = o(811176),
+                i = o(111677),
+                l = o.n(i),
+                s = o(415506),
+                c = o(516951),
+                d = o(443781),
+                u = o(376293),
+                m = o(847607),
+                h = o(417714),
+                p = o(988823);
             const f = "block",
-                b = "mute",
-                w = "removeFollower",
-                y = "report",
-                D = "share",
-                g = i().j7bb1a43,
-                _ = i().hef5960c,
-                C = (0, p.M)((e) => {
-                    const { featureSwitches: o } = (0, c.QZ)(),
-                        { onBlock: t, onClose: a, onMute: i, onRemoveFollower: p, onReportUser: C, onShare: S, onUnblock: v, onUnmute: F, user: M } = e,
-                        P = [],
-                        I = (o, t) => {
-                            const { confirm: n, onClose: l } = e;
-                            if (o) {
-                                const { label: e, ...r } = o;
-                                n({ confirmButtonLabel: e, ...r })
-                                    .then(t, d.Z)
-                                    .finally(l);
-                            } else t();
+                y = "mute",
+                b = "removeFollower",
+                v = "report",
+                w = "share",
+                g = l().j7bb1a43,
+                C = l().hef5960c,
+                D = (0, p.M)((e) => {
+                    const { featureSwitches: t } = (0, d.QZ)(),
+                        { onBlock: o, onClose: i, onMute: l, onRemoveFollower: p, onReportUser: D, onShare: S, onUnblock: E, onUnmute: P, user: _ } = e,
+                        k = [],
+                        I = (t, o) => {
+                            const { confirm: r, onClose: n } = e;
+                            if (t) {
+                                const { label: e, ...a } = t;
+                                r({ confirmButtonLabel: e, ...a })
+                                    .then(o, c.Z)
+                                    .finally(n);
+                            } else o();
                         };
                     !!window.navigator.share &&
-                        !M.protected &&
-                        !M.blocking &&
-                        !M.blocked_by &&
-                        P.push({
-                            Icon: l.Z,
+                        !_.protected &&
+                        !_.blocking &&
+                        !_.blocked_by &&
+                        k.push({
+                            Icon: n.Z,
                             onClick: () => {
-                                a(), S();
+                                i(), S();
                             },
-                            testID: D,
-                            text: _,
+                            testID: w,
+                            text: C,
                         });
-                    !M.blocking &&
-                        P.push({
-                            ...(0, h.N1)(
-                                M,
+                    !_.blocking &&
+                        k.push({
+                            ...(0, m.N1)(
+                                _,
                                 () => {
-                                    a(), i();
+                                    i(), l();
                                 },
                                 () => {
-                                    a(), F();
+                                    i(), P();
                                 },
                             ),
-                            testID: b,
+                            testID: y,
                         });
-                    M.followed_by &&
-                        P.push({
-                            ...(0, m.l)({
+                    _.followed_by &&
+                        k.push({
+                            ...(0, h.l)({
                                 removeFollowerAction: (e) => {
                                     I(e, p);
                                 },
-                                user: M,
+                                user: _,
                             }),
-                            testID: w,
+                            testID: b,
                         }),
-                        P.push((0, u.op)({ blockAction: (e) => I(e, t), isSoftBlockEnabled: o.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: f, unblockAction: (e) => I(e, v), user: M })),
-                        P.push({
+                        k.push((0, u.op)({ blockAction: (e) => I(e, o), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: f, unblockAction: (e) => I(e, E), user: _ })),
+                        k.push({
                             Icon: s.default,
                             onClick: () => {
-                                a(), C();
+                                i(), D();
                             },
-                            testID: y,
-                            text: g({ screenName: M.screen_name }),
+                            testID: v,
+                            text: g({ screenName: _.screen_name }),
                         });
-                    const k = P.map(({ Icon: e, onClick: o, testID: t, text: n }) => ({ text: n, onClick: o, Icon: e, testID: t }));
-                    return n.createElement(r.Z, { items: k, onCloseRequested: a });
+                    const x = k.map(({ Icon: e, onClick: t, testID: o, text: r }) => ({ text: r, onClick: t, Icon: e, testID: o }));
+                    return r.createElement(a.Z, { items: x, onCloseRequested: i });
                 });
         },
-        864479: (e, o, t) => {
-            t.d(o, { Z: () => a });
-            var n = t(807896),
-                l = t(202784),
-                r = t(771099);
-            const a = (e) => (o) => l.createElement(r.$6, null, (t) => l.createElement(e, (0, n.Z)({}, o, { isInSidebar: t })));
+        864479: (e, t, o) => {
+            o.d(t, { Z: () => i });
+            var r = o(807896),
+                n = o(202784),
+                a = o(771099);
+            const i = (e) => (t) => n.createElement(a.$6, null, (o) => n.createElement(e, (0, r.Z)({}, t, { isInSidebar: o })));
         },
-        293988: (e, o, t) => {
-            t.d(o, { Z: () => S });
-            var n = t(202784),
-                l = t(154003),
-                r = t(111677),
-                a = t.n(r),
-                i = t(74514),
-                s = t(405303),
-                d = t(684511),
-                c = t(860174),
-                u = t(71620),
-                h = t(668214),
-                m = t(257166),
-                p = t(919022);
-            const f = (e, o) => !(!o.allowPromptForPush || !m.selectShouldPromptBrowserPush(e)),
-                b = (0, h.Z)()
+        293988: (e, t, o) => {
+            o.d(t, { Z: () => S });
+            var r = o(202784),
+                n = o(154003),
+                a = o(111677),
+                i = o.n(a),
+                l = o(74514),
+                s = o(405303),
+                c = o(684511),
+                d = o(860174),
+                u = o(71620),
+                m = o(668214),
+                h = o(257166),
+                p = o(919022);
+            const f = (e, t) => !(!t.allowPromptForPush || !h.selectShouldPromptBrowserPush(e)),
+                y = (0, m.Z)()
                     .propsFromState(() => ({ shouldPromptPush: f }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, u.zr)("DEVICE_FOLLOW_BUTTON_CONTAINER"), updateDeviceFollowing: p.ZP.updateDeviceFollowing }))
                     .withAnalytics({ element: "mobile_notifications" }),
-                w = a().bdba3e1a,
-                y = a().c4da7d28,
-                D = a().j87c21f4,
-                g = a().iebc30ca,
-                _ = a().dc740eb2;
-            class C extends n.PureComponent {
+                b = i().bdba3e1a,
+                v = i().c4da7d28,
+                w = i().j87c21f4,
+                g = i().iebc30ca,
+                C = i().dc740eb2;
+            class D extends r.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderButton = () => {
-                            const { isFollowing: e, style: o } = this.props;
-                            return e ? n.createElement(l.ZP, { "aria-label": y, hoverLabel: { label: g }, icon: n.createElement(i.default, null), onPress: this._handleUnfollow, style: o, type: "primaryOutlined" }) : n.createElement(l.ZP, { "aria-label": w, hoverLabel: { label: D }, icon: n.createElement(s.default, null), onPress: this._handleFollow, style: o, type: "primaryOutlined" });
+                            const { isFollowing: e, style: t } = this.props;
+                            return e ? r.createElement(n.ZP, { "aria-label": v, hoverLabel: { label: g }, icon: r.createElement(l.default, null), onPress: this._handleUnfollow, style: t, type: "primaryOutlined" }) : r.createElement(n.ZP, { "aria-label": b, hoverLabel: { label: w }, icon: r.createElement(s.default, null), onPress: this._handleFollow, style: t, type: "primaryOutlined" });
                         }),
                         (this._handleFollow = () => {
-                            const { isDeviceFollowWithoutUserFollow: e, shouldPromptPush: o } = this.props;
-                            o && this.setState({ showingPushPrompt: !0 }),
-                                this._updateDeviceFollowing(!0).then((o) => {
+                            const { isDeviceFollowWithoutUserFollow: e, shouldPromptPush: t } = this.props;
+                            t && this.setState({ showingPushPrompt: !0 }),
+                                this._updateDeviceFollowing(!0).then((t) => {
                                     e && this._scribeAction("device_follow_without_follow"), this._scribeAction("on");
                                 });
                         }),
                         (this._handleUnfollow = () => {
                             const { isDeviceFollowWithoutUserFollow: e } = this.props;
-                            this._updateDeviceFollowing(!1).then((o) => {
+                            this._updateDeviceFollowing(!1).then((t) => {
                                 e && this._scribeAction("device_unfollow_without_follow"), this._scribeAction("off");
                             });
                         }),
                         (this.state = { showingPushPrompt: !1 });
                 }
                 render() {
-                    return n.createElement("div", null, this.state.showingPushPrompt ? n.createElement(d.Z, { fullScreen: !0, message: _ }) : null, this._renderButton());
+                    return r.createElement("div", null, this.state.showingPushPrompt ? r.createElement(c.Z, { fullScreen: !0, message: C }) : null, this._renderButton());
                 }
                 _updateDeviceFollowing(e) {
-                    const { createLocalApiErrorHandler: o, updateDeviceFollowing: t, userId: n } = this.props;
-                    return t(n, { device: e }).catch(o(c.Z));
+                    const { createLocalApiErrorHandler: t, updateDeviceFollowing: o, userId: r } = this.props;
+                    return o(r, { device: e }).catch(t(d.Z));
                 }
                 _scribeAction(e) {
-                    const { analytics: o } = this.props;
-                    o.scribeAction(e);
+                    const { analytics: t } = this.props;
+                    t.scribeAction(e);
                 }
             }
-            const S = b(C);
+            const S = y(D);
         },
-        23134: (e, o, t) => {
-            t.d(o, { C: () => U });
-            t(136728);
-            var n = t(202784),
-                l = t(190286),
-                r = t(723587),
-                a = t(111677),
-                i = t.n(a),
-                s = t(615656),
-                d = t(666670),
-                c = t(757953),
-                u = t(879596),
-                h = t(323683),
-                m = t(479506),
-                p = t(942893),
-                f = t(500002),
-                b = t(233391),
-                w = t(288955),
-                y = t(71620),
-                D = t(668214),
-                g = t(390387),
-                _ = t(601576),
-                C = t(919022);
-            const S = (e, o) => o.user || C.ZP.select(e, o.userId),
-                v = (0, D.Z)()
-                    .propsFromState(() => ({ isLoggedIn: g.Qb, user: S }))
-                    .propsFromActions(() => ({ addToast: _.fz, cancelPendingFollow: C.ZP.cancelPendingFollow, createLocalApiErrorHandler: (0, y.zr)("FOLLOW_USER_BUTTON"), fetchOneUserIfNeeded: C.ZP.fetchOneIfNeeded, follow: C.ZP.follow, unblock: C.ZP.unblock, unfollow: C.ZP.unfollow }))
-                    .withAnalytics(),
-                F = (e) => `${e}-follow`,
-                M = (e) => `${e}-unfollow`,
-                P = (e) => `${e}-block`,
-                I = (e) => `${e}-unblock`,
-                k = (e) => `${e}-cancel`,
-                E = (e) => `${e}-subscribe`,
-                T = (e) => `${e}-manageSubscription`,
-                Z = i().hbe4feb5,
-                L = i().df4c86b0,
-                x = i().bba40ffa,
-                A = i().f558829e,
-                B = i().a6941096,
-                N = i().j24c37b2,
-                H = i().if8cd2a4,
-                O = i().b5972260;
-            class R extends n.Component {
-                constructor(e) {
-                    super(e),
-                        (this._fetchUserIfNeeded = () => {
-                            const { createLocalApiErrorHandler: e, fetchOneUserIfNeeded: o, isRelay: t, userId: n } = this.props;
-                            n && !t && o(n).catch(e(d.F));
-                        }),
-                        (this._handleClose = () => {
-                            this.setState({ showDialog: !1, dialogText: void 0, dialogHeadline: void 0 });
-                        }),
-                        (this._handleCancelPendingFollow = () => {
-                            const { cancelPendingFollow: e, createLocalApiErrorHandler: o, user: t } = this.props;
-                            t && e(t.id_str).catch(o({ defaultToast: { text: O }, showToast: !0 }));
-                        }),
-                        (this._handleLoggedInFollow = () => {
-                            const { addToast: e, createLocalApiErrorHandler: o, follow: t, isFollowNudge: n, onFollowClick: l, promotedContent: r, user: a } = this.props;
-                            a && t(a.id_str, { promotedContent: r, isFollowNudge: n }).then(() => (a.protected && e({ text: Z({ screenName: a.screen_name }) }), l && l(), this._scribe({ action: "follow" })), o({ ...this._followApiErrorHandlingConfiguration, showToast: !0 }));
-                        }),
-                        (this._handleLoggedOutFollow = () => {
-                            this._scribe({ action: "follow_attempt" });
-                        }),
-                        (this._handleUnblock = () => {
-                            const { createLocalApiErrorHandler: e, promotedContent: o, unblock: t, user: n } = this.props;
-                            n && (t(n.id_str, { promotedContent: o }).catch(e(u.D)), this._scribe({ action: "unblock" }));
-                        }),
-                        (this._handleUnfollow = () => {
-                            const { createLocalApiErrorHandler: e, promotedContent: o, unfollow: t, user: n } = this.props;
-                            if (n) return t(n.id_str, { promotedContent: o }).catch(e(h.X)), this._scribe({ action: "unfollow" });
-                        }),
-                        (this._handleSuperFollow = () => {
-                            const { history: e, referringPage: o, user: t } = this.props;
-                            if (t) return this._scribe({ element: "super_follow_subscribe_button", action: "click" }), e.push(`/${t.screen_name}/creator-subscriptions/subscribe`, { referring_page: o ?? "profile_intent" });
-                        }),
-                        (this._handleUnSuperFollow = () => {
-                            const { history: e, user: o } = this.props;
-                            if (o) return this._scribe({ element: "super_follow_unsubscribe_button", action: "click" }), e.push(`/${o.screen_name}/creator-subscriptions/manage`);
-                        }),
-                        (this.state = { showDialog: !1 });
-                }
-                componentDidMount() {
-                    this.props.isLoggedIn && this._fetchUserIfNeeded(),
-                        (this._followApiErrorHandlingConfiguration = {
-                            ...c.H,
-                            [s.ZP.UserMustBeAlcoholAgeScreened]: {
-                                customAction: () => {
-                                    this.setState({ showDialog: !0, dialogText: H, dialogHeadline: x });
-                                },
-                            },
-                            [s.ZP.CannotFollowFromCountry]: {
-                                customAction: () => {
-                                    this.setState({ showDialog: !0, dialogText: B, dialogHeadline: x });
-                                },
-                            },
-                            [s.ZP.BirthdateRequired]: {
-                                customAction: () => {
-                                    this.setState({ showDialog: !0, dialogText: A, dialogHeadline: L });
-                                },
-                            },
-                        });
-                }
-                render() {
-                    const { buttonType: e, isLoggedIn: o, isSuperFollowSubscriptionEnabled: t, isTransparent: a, relationshipMode: i, showRelationshipChangeConfirmation: s, size: d, style: c, user: u, userId: h } = this.props,
-                        { dialogHeadline: m, dialogText: p, showDialog: f } = this.state,
-                        y = u?.screen_name,
-                        D = y ? `/${y}` : "",
-                        g = { follow: F(h), unfollow: M(h), cancel: k(h), block: P(h), unblock: I(h), subscribe: E(h), manageSubscription: T(h) },
-                        _ = !(!u?.follow_request_sent || !u.protected || u.following);
-                    return (
-                        !!u &&
-                        n.createElement(
-                            n.Fragment,
-                            null,
-                            f ? n.createElement(l.Z, { confirmButtonLabel: N, headline: m, onCancel: this._handleClose, onConfirm: this._handleClose, text: p, withCancelButton: !1 }) : null,
-                            n.createElement(w.Z, { displayMode: b.BH.follow, postLoginPath: D, userFullName: u.name, userId: h }, (l) => n.createElement(r.Z, { buttonType: e, isBlocking: u.blocking, isFollowRequestSent: _, isFollowed: !!u.followed_by, isFollowing: !!u.following, isSuperFollowEligible: !!t && u.super_follow_eligible, isSuperFollowing: u.super_following, isTransparent: a, name: y, onCancelPendingFollow: l(this._handleCancelPendingFollow), onFollow: l(this._handleLoggedInFollow, this._handleLoggedOutFollow), onSuperFollow: l(this._handleSuperFollow), onUnSuperFollow: l(this._handleUnSuperFollow), onUnblock: l(this._handleUnblock), onUnfollow: l(this._handleUnfollow), relationshipMode: i, showRelationshipChangeConfirmation: o && s, size: d, style: c, testIDs: g, type: "user" })),
-                        )
-                    );
-                }
-                _scribe(e) {
-                    const { action: o, element: t } = e,
-                        { analytics: n, location: l, promotedContent: r, user: a } = this.props,
-                        { items: i } = n.contextualScribeData,
-                        s = i?.find((e) => e.item_type === m.Z.ItemType.USER && e.id === a?.id_str),
-                        d = [];
-                    a ? d.push({ ...s, ...p.Z.getUserItem(a, r) }) : s && d.push(s);
-                    const c = l.query && l.query.screen_name ? { items: d, context: "profile_intent" } : { items: d };
-                    return n.scribe({ element: t, action: o, data: c });
-                }
-            }
-            const U = (0, f.ZP)(v(R));
-        },
-        168222: (e, o, t) => {
-            t.r(o), t.d(o, { default: () => v });
-            var n = t(459643),
-                l = t(942893),
-                r = t(409438),
-                a = t(240089),
-                i = t(351322),
-                s = t(202784),
-                d = t(392237),
-                c = t(187669),
-                u = t(952793),
-                h = t(663550),
-                m = t(23679);
+        168222: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => E });
+            var r = o(459643),
+                n = o(942893),
+                a = o(409438),
+                i = o(240089),
+                l = o(351322),
+                s = o(202784),
+                c = o(392237),
+                d = o(187669),
+                u = o(952793),
+                m = o(663550),
+                h = o(23679);
             const p = (e) => (e ? { disclosure_type: e.disclosureType, impression_id: e.impressionId } : void 0);
-            var f = t(668214),
-                b = t(204744),
-                w = t(919022);
-            const y = (e, o) => {
-                    const { id: t } = ((e, o) => o.entry.content)(0, o);
-                    return t ? w.ZP.select(e, t) : void 0;
+            var f = o(668214),
+                y = o(204744),
+                b = o(919022);
+            const v = (e, t) => {
+                    const { id: o } = ((e, t) => t.entry.content)(0, t);
+                    return o ? b.ZP.select(e, o) : void 0;
                 },
-                D = (0, f.Z)()
-                    .propsFromState(() => ({ user: y }))
-                    .propsFromActions(({ module: e }) => ({ saveAsRecentSearch: b.DI, applyReactionInstructions: e.applyReactionInstructions }))
+                w = (0, f.Z)()
+                    .propsFromState(() => ({ user: v }))
+                    .propsFromActions(({ module: e }) => ({ saveAsRecentSearch: y.DI, applyReactionInstructions: e.applyReactionInstructions }))
                     .withAnalytics(),
                 g = (e) => {
-                    const { analytics: o, applyReactionInstructions: t, cellClickable: n, decoration: i, entry: d, isCarouselItem: f, onClick: b, saveAsRecentSearch: w, shouldScribeImpression: y, shouldScribeProfileClick: D, shouldStoreTypeaheadItem: g, user: C, withFollowsYou: S, withLink: v } = e,
+                    const { analytics: t, applyReactionInstructions: o, cellClickable: r, decoration: l, entry: c, isCarouselItem: f, onClick: y, saveAsRecentSearch: b, shouldScribeImpression: v, shouldScribeProfileClick: w, shouldStoreTypeaheadItem: g, user: D, withFollowsYou: S, withLink: E } = e,
                         {
-                            content: { id: F, promotedMetadata: M, socialContext: P },
-                        } = d,
-                        I = p(M),
-                        k = (P && P.generalContext) || void 0,
-                        E = e.displayMode,
-                        T = (0, u.hC)("super_follow_android_web_subscription_enabled") && E === r.Z.SubscribableUser ? a.dk : a.ET,
-                        Z = i || T,
-                        L = d.itemMetadata && d.itemMetadata.clientEventInfo && d.itemMetadata.clientEventInfo.details && d.itemMetadata.clientEventInfo.details.timelinesDetails && d.itemMetadata.clientEventInfo.details.timelinesDetails.injectionType;
-                    (0, c.q)(() => {
-                        if ("WhoToFollow" === L) {
-                            const e = C ? [l.Z.getUserItem(C)] : [];
-                            C?.following ? o.scribe({ element: "followed_user", action: "impression", data: { items: e } }) : C?.muting ? o.scribe({ element: "muted_user", action: "impression", data: { items: e } }) : C?.blocking && o.scribe({ element: "blocked_user", action: "impression", data: { items: e } });
+                            content: { id: P, promotedMetadata: _, socialContext: k },
+                        } = c,
+                        I = p(_),
+                        x = (k && k.generalContext) || void 0,
+                        T = e.displayMode,
+                        M = (0, u.hC)("super_follow_android_web_subscription_enabled") && T === a.Z.SubscribableUser ? i.dk : i.ET,
+                        R = l || M,
+                        Z = c.itemMetadata && c.itemMetadata.clientEventInfo && c.itemMetadata.clientEventInfo.details && c.itemMetadata.clientEventInfo.details.timelinesDetails && c.itemMetadata.clientEventInfo.details.timelinesDetails.injectionType;
+                    (0, d.q)(() => {
+                        if ("WhoToFollow" === Z) {
+                            const e = D ? [n.Z.getUserItem(D)] : [];
+                            D?.following ? t.scribe({ element: "followed_user", action: "impression", data: { items: e } }) : D?.muting ? t.scribe({ element: "muted_user", action: "impression", data: { items: e } }) : D?.blocking && t.scribe({ element: "blocked_user", action: "impression", data: { items: e } });
                         }
                     });
-                    const x = s.useCallback(() => {
-                        t({ entry: d, triggerName: m.K.ON_FOLLOW });
-                    }, [t, d]);
-                    return s.createElement(a.Z9, { cellClickable: n, decoration: Z, displayMode: E, isConcise: f, onClick: b, onFollowClick: x, promotedContent: I, promotedItemType: h.bj.USER, referringPage: E, saveAsRecentSearch: w, shouldScribeImpression: y, shouldScribeProfileClick: D, shouldStoreTypeaheadItem: g, socialContext: k, style: f && _.isCarouselItem, userId: F, withFollowsYou: S, withLink: v });
+                    const A = s.useCallback(() => {
+                        o({ entry: c, triggerName: h.K.ON_FOLLOW });
+                    }, [o, c]);
+                    return s.createElement(i.Z9, { cellClickable: r, decoration: R, displayMode: T, isConcise: f, onClick: y, onFollowClick: A, promotedContent: I, promotedItemType: m.bj.USER, referringPage: T, saveAsRecentSearch: b, shouldScribeImpression: v, shouldScribeProfileClick: w, shouldStoreTypeaheadItem: g, socialContext: x, style: f && C.isCarouselItem, userId: P, withFollowsYou: S, withLink: E });
                 },
-                _ = d.default.create((e) => ({ isCarouselItem: { width: 312 } })),
-                C = D(s.memo(g)),
-                S = [a.ET, a.C_],
-                v = ({ cellClickable: e = !0, decoration: o, displayMode: t = r.Z.UserCompact, isCarouselItem: a, onClick: s, shouldScribeProfileClick: d = !0, shouldScribeImpression: c = !1, shouldStoreTypeaheadItem: u, withLink: h = !0 }) =>
-                    i
+                C = c.default.create((e) => ({ isCarouselItem: { width: 312 } })),
+                D = w(s.memo(g)),
+                S = [i.ET, i.C_],
+                E = ({ cellClickable: e = !0, decoration: t, displayMode: o = a.Z.UserCompact, isCarouselItem: i, onClick: s, shouldScribeProfileClick: c = !0, shouldScribeImpression: d = !1, shouldStoreTypeaheadItem: u, withLink: m = !0 }) =>
+                    l
                         .iH({
-                            component: C,
+                            component: D,
                             defaultScribeNamespace: { element: "user" },
                             getScribeDataItem(e) {
                                 const {
-                                        content: { id: o, promotedMetadata: t },
-                                        cursor: n,
-                                        itemMetadata: r,
-                                        position: a,
+                                        content: { id: t, promotedMetadata: o },
+                                        cursor: r,
+                                        itemMetadata: a,
+                                        position: i,
                                     } = e,
-                                    i = r.clientEventInfo,
-                                    s = p(t);
-                                return l.Z.getUserItem({ id_str: o, promoted_content: s }, void 0, a, n, i);
+                                    l = a.clientEventInfo,
+                                    s = p(o);
+                                return n.Z.getUserItem({ id_str: t, promoted_content: s }, void 0, i, r, l);
                             },
-                            isFocusable: (0, n.Z)(!0),
+                            isFocusable: (0, r.Z)(!0),
                         })
-                        .getHandler(() => ({ cellClickable: e, decoration: o, displayMode: t, isCarouselItem: a, onClick: s, shouldScribeProfileClick: d, shouldScribeImpression: c, shouldStoreTypeaheadItem: u, withLink: h, withFollowsYou: !o || S.includes(o) }));
+                        .getHandler(() => ({ cellClickable: e, decoration: t, displayMode: o, isCarouselItem: i, onClick: s, shouldScribeProfileClick: c, shouldScribeImpression: d, shouldStoreTypeaheadItem: u, withLink: m, withFollowsYou: !t || S.includes(t) }));
         },
-        288955: (e, o, t) => {
-            t.d(o, { Z: () => s });
-            var n = t(807896),
-                l = t(202784),
-                r = t(443781),
-                a = t(369241);
-            class i extends l.Component {
-                constructor(...e) {
-                    super(...e),
-                        (this.state = { showLoginPrompt: !1 }),
-                        (this._getHandler =
-                            (e, o) =>
-                            (t, ...n) => {
-                                this.props.disabled || this.context.loggedInUserId ? e && e(t, ...n) : (t && t.preventDefault && t.preventDefault(), o && o(), this.setState({ showLoginPrompt: !0 }));
-                            }),
-                        (this._handleClose = () => {
-                            this.setState({ showLoginPrompt: !1 });
-                        });
-                }
-                render() {
-                    const { children: e, disabled: o, ...t } = this.props;
-                    return l.createElement(l.Fragment, null, e(this._getHandler), this.state.showLoginPrompt && l.createElement(a.ZP, (0, n.Z)({ onClose: this._handleClose }, t)));
-                }
-            }
-            (i.defaultProps = { disabled: !1 }), (i.contextType = r.rC);
-            const s = i;
-        },
-        684511: (e, o, t) => {
-            t.d(o, { Z: () => n });
-            t(202784);
-            const n = (0, t(523561).Z)({
+        684511: (e, t, o) => {
+            o.d(t, { Z: () => r });
+            o(202784);
+            const r = (0, o(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        t.e("modules.common-e907d115"),
-                        t.e("modules.common-e019dbda"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-0157ee89"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c977f3f0"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bde9e8ed"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78eb13f6"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-83ae13c2"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
-                        t.e("loader.PushNotificationsPrompt"),
-                    ]).then(t.bind(t, 529629)),
+                        o.e("modules.common-e907d115"),
+                        o.e("modules.common-e019dbda"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-fd0b2cf1"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c7e58553"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f7f56781"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                        o.e("loader.PushNotificationsPrompt"),
+                    ]).then(o.bind(o, 529629)),
             });
         },
-        545334: (e, o, t) => {
-            t.d(o, { d: () => l });
-            var n = t(111677);
-            const l = t.n(n)().gf5e9ea6;
+        545334: (e, t, o) => {
+            o.d(t, { d: () => n });
+            var r = o(111677);
+            const n = o.n(r)().gf5e9ea6;
         },
-        916585: (e, o, t) => {
-            t.d(o, { k: () => a });
-            var n = t(111677),
-                l = t.n(n),
-                r = t(437358);
-            const a = (e, o) => {
-                const { id_str: t, screen_name: n } = e,
-                    a = (0, l().d78131b9)({ screenName: n });
-                return { Icon: r.default, text: a, link: { pathname: "/i/lists/add_member", state: { userId: t } }, onClick: o };
+        916585: (e, t, o) => {
+            o.d(t, { k: () => i });
+            var r = o(111677),
+                n = o.n(r),
+                a = o(437358);
+            const i = (e, t) => {
+                const { id_str: o, screen_name: r } = e,
+                    i = (0, n().d78131b9)({ screenName: r });
+                return { Icon: a.default, text: i, link: { pathname: "/i/lists/add_member", state: { userId: o } }, onClick: t };
             };
         },
-        847607: (e, o, t) => {
-            t.d(o, { Aq: () => u, FK: () => y, GS: () => i, N1: () => m, PY: () => h, X6: () => D, cm: () => s });
-            t(202784);
-            var n = t(111677),
-                l = t.n(n),
-                r = t(391366),
-                a = t(40904);
-            const i = l().hb568af4,
-                s = l().bb1cbeb6,
-                d = (l().h2f62206, l().e67b2d65),
-                c = l().f05597b3,
-                u = (e) => d({ screenName: e }),
-                h = (e) => c({ screenName: e }),
-                m = (e, o, t) => {
-                    const { muting: n, screen_name: l } = e;
-                    return { text: n ? h(l) : u(l), onClick: n ? t : o, Icon: n ? r.default : a.default };
+        847607: (e, t, o) => {
+            o.d(t, { Aq: () => u, FK: () => v, GS: () => l, N1: () => h, PY: () => m, X6: () => w, cm: () => s });
+            o(202784);
+            var r = o(111677),
+                n = o.n(r),
+                a = o(391366),
+                i = o(40904);
+            const l = n().hb568af4,
+                s = n().bb1cbeb6,
+                c = (n().h2f62206, n().e67b2d65),
+                d = n().f05597b3,
+                u = (e) => c({ screenName: e }),
+                m = (e) => d({ screenName: e }),
+                h = (e, t, o) => {
+                    const { muting: r, screen_name: n } = e;
+                    return { text: r ? m(n) : u(n), onClick: r ? o : t, Icon: r ? a.default : i.default };
                 },
-                p = l().h59f52ee,
-                f = l().eea0cbee,
-                b = l().i29533b3,
-                w = l().h129c3c3,
-                y = (e) => (e ? ((e) => b({ screenName: e }))(e) : p),
-                D = (e) => (e ? ((e) => w({ screenName: e }))(e) : f);
+                p = n().h59f52ee,
+                f = n().eea0cbee,
+                y = n().i29533b3,
+                b = n().h129c3c3,
+                v = (e) => (e ? ((e) => y({ screenName: e }))(e) : p),
+                w = (e) => (e ? ((e) => b({ screenName: e }))(e) : f);
         },
-        417714: (e, o, t) => {
-            t.d(o, { l: () => c });
-            t(202784);
-            var n = t(111677),
-                l = t.n(n),
-                r = t(224823);
-            const a = l().b3036480,
-                i = l().b3036480,
-                s = l().e68b09b4,
-                d = l().h27b7407,
-                c = ({ removeFollowerAction: e, user: o }) => {
-                    const t = u(o);
-                    return { Icon: r.default, text: a, onClick: () => e(t) };
+        417714: (e, t, o) => {
+            o.d(t, { l: () => d });
+            o(202784);
+            var r = o(111677),
+                n = o.n(r),
+                a = o(224823);
+            const i = n().b3036480,
+                l = n().b3036480,
+                s = n().e68b09b4,
+                c = n().h27b7407,
+                d = ({ removeFollowerAction: e, user: t }) => {
+                    const o = u(t);
+                    return { Icon: a.default, text: i, onClick: () => e(o) };
                 },
-                u = (e) => ({ confirmButtonType: "destructiveFilled", headline: i, label: s, text: d({ screenName: e.screen_name }) });
+                u = (e) => ({ confirmButtonType: "destructiveFilled", headline: l, label: s, text: c({ screenName: e.screen_name }) });
         },
-        666670: (e, o, t) => {
-            t.d(o, { F: () => a });
-            var n = t(516951),
-                l = t(615656),
-                r = t(51525);
-            const a = { [l.ZP.AddressBookLookupNotFound]: { customAction: r.vv }, [l.ZP.GenericUserNotFound]: { customAction: n.Z }, [l.ZP.OtherUserSuspended]: { customAction: n.Z }, showToast: !0 };
+        48886: (e, t, o) => {
+            o.d(t, { q: () => n });
+            var r = o(111677);
+            const n = { defaultToast: { text: o.n(r)().a30b63da }, showToast: !0 };
         },
-        757953: (e, o, t) => {
-            t.d(o, { H: () => p });
-            var n = t(111677),
-                l = t.n(n),
-                r = t(516951),
-                a = t(615656),
-                i = t(51525);
-            const s = l().j4292c24,
-                d = l().a0ba5842,
-                c = l().i859a9d4,
-                u = l().a5202b82,
-                h = l().f8cbf714,
-                m = l().f2e66452,
-                p = { defaultToast: { text: u }, [a.ZP.CurrentUserSuspended]: { toast: { text: m, action: { label: c, link: "https://support.twitter.com/articles/15790" } } }, [a.ZP.DuplicateFollowRequest]: { customAction: r.Z }, [a.ZP.FollowBlockedUserError]: { toast: { text: s } }, [a.ZP.FollowError]: { customAction: i.w1 }, [a.ZP.FollowRateLimitExceeded]: { toast: { action: { label: c, link: "https://support.twitter.com/articles/66885" }, text: d } }, [a.ZP.TargetUserNotFound]: { toast: { text: h } } };
+        860174: (e, t, o) => {
+            o.d(t, { Z: () => a });
+            var r = o(615656),
+                n = o(51525);
+            const a = { [r.ZP.FollowError]: { customAction: n.w1 } };
         },
-        48886: (e, o, t) => {
-            t.d(o, { q: () => l });
-            var n = t(111677);
-            const l = { defaultToast: { text: t.n(n)().a30b63da }, showToast: !0 };
+        23679: (e, t, o) => {
+            o.d(t, { K: () => r });
+            const r = Object.freeze({ ON_LINGER: "onLinger", ON_IS_RELEVANT: "onIsRelevant", ON_SHOW_MORE: "onShowMore", ON_LIKE: "onLike", ON_FOLLOW: "onFollow" });
         },
-        323683: (e, o, t) => {
-            t.d(o, { X: () => l });
-            var n = t(111677);
-            const l = { defaultToast: { text: t.n(n)().e1a0aaca }, showToast: !0 };
-        },
-        860174: (e, o, t) => {
-            t.d(o, { Z: () => r });
-            var n = t(615656),
-                l = t(51525);
-            const r = { [n.ZP.FollowError]: { customAction: l.w1 } };
-        },
-        23679: (e, o, t) => {
-            t.d(o, { K: () => n });
-            const n = Object.freeze({ ON_LINGER: "onLinger", ON_IS_RELEVANT: "onIsRelevant", ON_SHOW_MORE: "onShowMore", ON_LIKE: "onLike", ON_FOLLOW: "onFollow" });
-        },
-        988823: (e, o, t) => {
-            t.d(o, { M: () => a });
-            var n = t(807896),
-                l = t(202784),
-                r = t(190286);
-            const a = (e) => (o) => {
-                const [t, a] = l.useState(null),
-                    i = (e) =>
-                        new Promise((o, t) => {
-                            a({ resolve: o, reject: t, confirmationSheetProps: e });
+        988823: (e, t, o) => {
+            o.d(t, { M: () => i });
+            var r = o(807896),
+                n = o(202784),
+                a = o(190286);
+            const i = (e) => (t) => {
+                const [o, i] = n.useState(null),
+                    l = (e) =>
+                        new Promise((t, o) => {
+                            i({ resolve: t, reject: o, confirmationSheetProps: e });
                         });
-                if (t) {
-                    const { confirmationSheetProps: e, reject: o, resolve: i } = t;
-                    return l.createElement(
-                        r.Z,
-                        (0, n.Z)({}, e, {
+                if (o) {
+                    const { confirmationSheetProps: e, reject: t, resolve: l } = o;
+                    return n.createElement(
+                        a.Z,
+                        (0, r.Z)({}, e, {
                             onCancel: () => {
-                                o(), a(null);
+                                t(), i(null);
                             },
                             onConfirm: () => {
-                                i(), a(null);
+                                l(), i(null);
                             },
                         }),
                     );
                 }
-                return l.createElement(e, (0, n.Z)({}, o, { confirm: i }));
+                return n.createElement(e, (0, r.Z)({}, t, { confirm: l }));
             };
         },
-        694180: (e, o, t) => {
-            t.d(o, { cM: () => b, dS: () => f, iY: () => w });
-            var n = t(370751),
-                l = t(399896),
-                r = t(663550),
-                a = t(499627),
-                i = t(917799);
+        694180: (e, t, o) => {
+            o.d(t, { cM: () => y, dS: () => f, iY: () => b });
+            var r = o(370751),
+                n = o(399896),
+                a = o(663550),
+                i = o(499627),
+                l = o(917799);
             const s = {},
-                d = Object.freeze({ REQUEST: "rweb/promotedContent/LOG_REQUEST", SUCCESS: "rweb/promotedContent/LOG_SUCCESS", FAILURE: "rweb/promotedContent/LOG_FAILURE" }),
-                c = "rweb/promotedContent/LOG_UNIQUE_EVENT",
-                u = (0, n.Z)([r.dx.IMPRESSION, r.dx.DWELL]),
-                h = (0, n.Z)([r.AJ.TREND_VIEW, r.AJ.SPOTLIGHT_IMPRESSION]),
-                m = (e) => ({ payload: { eventKey: e }, type: c });
-            const p = (e, o) => !!e.promotedContent[o],
+                c = Object.freeze({ REQUEST: "rweb/promotedContent/LOG_REQUEST", SUCCESS: "rweb/promotedContent/LOG_SUCCESS", FAILURE: "rweb/promotedContent/LOG_FAILURE" }),
+                d = "rweb/promotedContent/LOG_UNIQUE_EVENT",
+                u = (0, r.Z)([a.dx.IMPRESSION, a.dx.DWELL]),
+                m = (0, r.Z)([a.AJ.TREND_VIEW, a.AJ.SPOTLIGHT_IMPRESSION]),
+                h = (e) => ({ payload: { eventKey: e }, type: d });
+            const p = (e, t) => !!e.promotedContent[t],
                 f =
                     (e) =>
-                    (o, t, { api: n }) => {
-                        const { event: r, impression_id: a, promoted_trend_id: s } = e,
-                            c = `trend-${s}-${r}`;
-                        if (h.has(r) && p(t(), c)) return Promise.resolve();
-                        const u = { promoted_trend_id: s, event: r, impression_id: a };
-                        return (0, i._O)(o, { params: u, request: n.withEndpoint(l.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: u }, (e, o) => {
-                            if (!o && h.has(r)) return [m(c)];
+                    (t, o, { api: r }) => {
+                        const { event: a, impression_id: i, promoted_trend_id: s } = e,
+                            d = `trend-${s}-${a}`;
+                        if (m.has(a) && p(o(), d)) return Promise.resolve();
+                        const u = { promoted_trend_id: s, event: a, impression_id: i };
+                        return (0, l._O)(t, { params: u, request: r.withEndpoint(n.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: u }, (e, t) => {
+                            if (!t && m.has(a)) return [h(d)];
+                        });
+                    },
+                y =
+                    ({ disclosureType: e, itemId: t, itemType: o, params: r }) =>
+                    (a, i, { api: s }) => {
+                        const { event: d, impression_id: m } = r,
+                            f = `${o}-${t ?? "undefined"}-${m ?? "undefined"}-${d ?? "undefined"}`;
+                        if (u.has(d) && p(i(), f)) return Promise.resolve();
+                        const y = e && "earned" === e.toLowerCase() ? "1" : null,
+                            b = { ...r, earned: y, epoch_ms: Date.now() };
+                        return (0, l._O)(a, { params: b, request: s.withEndpoint(n.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: b }, (e, t) => {
+                            if (!t && u.has(d)) return [h(f)];
                         });
                     },
                 b =
-                    ({ disclosureType: e, itemId: o, itemType: t, params: n }) =>
-                    (r, a, { api: s }) => {
-                        const { event: c, impression_id: h } = n,
-                            f = `${t}-${o ?? "undefined"}-${h ?? "undefined"}-${c ?? "undefined"}`;
-                        if (u.has(c) && p(a(), f)) return Promise.resolve();
-                        const b = e && "earned" === e.toLowerCase() ? "1" : null,
-                            w = { ...n, earned: b, epoch_ms: Date.now() };
-                        return (0, i._O)(r, { params: w, request: s.withEndpoint(l.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: w }, (e, o) => {
-                            if (!o && u.has(c)) return [m(f)];
-                        });
-                    },
-                w =
                     (e) =>
-                    (o, t, { api: n }) =>
-                        (0, i._O)(o, { params: e, request: n.withEndpoint(l.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: e });
-            a.Z.register({
-                promotedContent: function (e = s, o) {
-                    if (!o) return e;
-                    if (o.type === c) {
-                        if (!o.payload) return e;
-                        const { eventKey: t } = o.payload;
-                        return { ...e, [t]: !0 };
+                    (t, o, { api: r }) =>
+                        (0, l._O)(t, { params: e, request: r.withEndpoint(n.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: e });
+            i.Z.register({
+                promotedContent: function (e = s, t) {
+                    if (!t) return e;
+                    if (t.type === d) {
+                        if (!t.payload) return e;
+                        const { eventKey: o } = t.payload;
+                        return { ...e, [o]: !0 };
                     }
                     return e;
                 },
             });
         },
-        204744: (e, o, t) => {
-            t.d(o, { DI: () => g, H$: () => h, OB: () => _, Ww: () => c, YB: () => u, hj: () => b, qF: () => y });
-            t(901951);
-            var n = t(499627),
-                l = t(390387);
-            const r = "recentSearches",
-                a = "rweb.recentSearches",
-                i =
+        204744: (e, t, o) => {
+            o.d(t, { DI: () => g, H$: () => m, OB: () => C, Ww: () => d, YB: () => u, hj: () => y, qF: () => v });
+            o(901951);
+            var r = o(499627),
+                n = o(390387);
+            const a = "recentSearches",
+                i = "rweb.recentSearches",
+                l =
                     (e) =>
-                    (o, t, { userPersistence: n }) =>
-                        n.set(a, { recentSearches: e }).catch(() => {
+                    (t, o, { userPersistence: r }) =>
+                        r.set(i, { recentSearches: e }).catch(() => {
                             Promise.resolve();
                         }),
-                s = (e, o) => {
-                    let t = [];
+                s = (e, t) => {
+                    let o = [];
                     if (e.user) {
-                        const n = e.user;
-                        t = o.filter((e) => e.event || e.keyword || e.list || e.topic || (e.user && e.user.id !== n.id));
+                        const r = e.user;
+                        o = t.filter((e) => e.event || e.keyword || e.list || e.topic || (e.user && e.user.id !== r.id));
                     } else if (e.event) {
-                        const n = e.event;
-                        t = o.filter((e) => e.keyword || e.list || e.topic || e.user || (e.event && e.event.id !== n.id));
+                        const r = e.event;
+                        o = t.filter((e) => e.keyword || e.list || e.topic || e.user || (e.event && e.event.id !== r.id));
                     } else if (e && e.keyword) {
-                        const n = e.keyword;
-                        t = o.filter((e) => e.event || e.list || e.topic || e.user || (e.keyword && e.keyword.query !== n.query));
+                        const r = e.keyword;
+                        o = t.filter((e) => e.event || e.list || e.topic || e.user || (e.keyword && e.keyword.query !== r.query));
                     } else if (e.list) {
-                        const n = e.list;
-                        t = o.filter((e) => e.event || e.keyword || e.topic || e.user || (e.list && e.list.id !== n.id));
+                        const r = e.list;
+                        o = t.filter((e) => e.event || e.keyword || e.topic || e.user || (e.list && e.list.id !== r.id));
                     } else if (e.topic) {
-                        const n = e.topic;
-                        t = o.filter((e) => e.event || e.keyword || e.list || e.user || (e.topic && e.topic.id !== n.id));
+                        const r = e.topic;
+                        o = t.filter((e) => e.event || e.keyword || e.list || e.user || (e.topic && e.topic.id !== r.id));
                     }
-                    return t;
+                    return o;
                 },
-                d = { fetched: !1, recentSearches: [] };
-            const c = (e) => e[r].recentSearches,
-                u = (e) => c(e)[0] || null,
-                h = (e) => e[r].fetched,
-                m = "rweb/recentSearches/INIT_FROM_CACHE",
-                p = (e) => ({ type: m, payload: e }),
+                c = { fetched: !1, recentSearches: [] };
+            const d = (e) => e[a].recentSearches,
+                u = (e) => d(e)[0] || null,
+                m = (e) => e[a].fetched,
+                h = "rweb/recentSearches/INIT_FROM_CACHE",
+                p = (e) => ({ type: h, payload: e }),
                 f = "rweb/recentSearches/REMOVE_QUERY",
-                b =
-                    (e) =>
-                    (o, t, { userPersistence: n }) => {
-                        o({ payload: e, type: f });
-                        const r = t(),
-                            a = c(r);
-                        return (0, l.Qb)(r) ? o(i(a)) : Promise.resolve();
-                    },
-                w = "rweb/recentSearches/CLEAR_ALL",
                 y =
-                    () =>
-                    (e, o, { userPersistence: t }) => {
-                        e({ type: w });
-                        const n = o(),
-                            r = c(n);
-                        return (0, l.Qb)(n) ? e(i(r)) : Promise.resolve();
+                    (e) =>
+                    (t, o, { userPersistence: r }) => {
+                        t({ payload: e, type: f });
+                        const a = o(),
+                            i = d(a);
+                        return (0, n.Qb)(a) ? t(l(i)) : Promise.resolve();
                     },
-                D = "rweb/recentSearches/ADD_QUERY",
+                b = "rweb/recentSearches/CLEAR_ALL",
+                v =
+                    () =>
+                    (e, t, { userPersistence: o }) => {
+                        e({ type: b });
+                        const r = t(),
+                            a = d(r);
+                        return (0, n.Qb)(r) ? e(l(a)) : Promise.resolve();
+                    },
+                w = "rweb/recentSearches/ADD_QUERY",
                 g =
                     (e) =>
-                    (o, t, { userPersistence: n }) => {
-                        o({ payload: e, type: D });
-                        const r = t(),
-                            a = c(r);
-                        return (0, l.Qb)(r) ? o(i(a)) : Promise.resolve();
+                    (t, o, { userPersistence: r }) => {
+                        t({ payload: e, type: w });
+                        const a = o(),
+                            i = d(a);
+                        return (0, n.Qb)(a) ? t(l(i)) : Promise.resolve();
                     },
-                _ =
+                C =
                     () =>
-                    (e, o, { userPersistence: t }) => {
-                        const n = o();
-                        return h(n)
+                    (e, t, { userPersistence: o }) => {
+                        const r = t();
+                        return m(r)
                             ? Promise.resolve()
-                            : e((e, o, { userPersistence: t }) => {
-                                  const n = o();
-                                  return (0, l.Qb)(n)
-                                      ? t
-                                            .get(a)
-                                            .then((o) => {
-                                                e(p(o));
+                            : e((e, t, { userPersistence: o }) => {
+                                  const r = t();
+                                  return (0, n.Qb)(r)
+                                      ? o
+                                            .get(i)
+                                            .then((t) => {
+                                                e(p(t));
                                             })
                                             .catch(() => {
                                                 e(p());
@@ -687,393 +491,723 @@
                                       : (e(p()), Promise.resolve());
                               });
                     };
-            n.Z.register({
-                [r]: function (e = d, o) {
-                    if (!o) return e;
-                    switch (o.type) {
-                        case D: {
-                            const t = o.payload,
-                                n = t ? s(t, e.recentSearches) : [];
-                            return n.length > 49 && n.splice(49, 1), t && n.unshift(t), { ...e, recentSearches: n };
+            r.Z.register({
+                [a]: function (e = c, t) {
+                    if (!t) return e;
+                    switch (t.type) {
+                        case w: {
+                            const o = t.payload,
+                                r = o ? s(o, e.recentSearches) : [];
+                            return r.length > 49 && r.splice(49, 1), o && r.unshift(o), { ...e, recentSearches: r };
                         }
                         case f: {
-                            const t = o.payload,
-                                n = t ? s(t, e.recentSearches) : [];
-                            return { ...e, recentSearches: n };
+                            const o = t.payload,
+                                r = o ? s(o, e.recentSearches) : [];
+                            return { ...e, recentSearches: r };
                         }
-                        case w:
+                        case b:
                             return { fetched: !0, recentSearches: [] };
-                        case m:
-                            return { ...e, ...o.payload, fetched: !0 };
+                        case h:
+                            return { ...e, ...t.payload, fetched: !0 };
                         default:
                             return e;
                     }
                 },
             });
         },
-        629196: (e, o, t) => {
-            t.d(o, { r: () => d });
-            t(136728);
-            var n = t(161821),
-                l = t(390387),
-                r = t(836255),
-                a = t(255117),
-                i = t(166506),
-                s = t(919022);
-            const d =
-                (e, o) =>
-                (t, d, { api: c, featureSwitches: u }) =>
-                    t(s.ZP.mute(e, o)).then(() => {
-                        const o = d(),
-                            s = (0, n.Z)(r.Z.selectAll(o)).reduce((t, n) => {
-                                if (null != n)
-                                    if (n.user === e) t[n.id_str] = !0;
-                                    else if (n.retweeted_status) {
-                                        const l = r.Z.select(o, n.retweeted_status);
-                                        l?.user === e && (t[n.id_str] = !0);
+        629196: (e, t, o) => {
+            o.d(t, { r: () => c });
+            o(136728);
+            var r = o(161821),
+                n = o(390387),
+                a = o(836255),
+                i = o(255117),
+                l = o(166506),
+                s = o(919022);
+            const c =
+                (e, t) =>
+                (o, c, { api: d, featureSwitches: u }) =>
+                    o(s.ZP.mute(e, t)).then(() => {
+                        const t = c(),
+                            s = (0, r.Z)(a.Z.selectAll(t)).reduce((o, r) => {
+                                if (null != r)
+                                    if (r.user === e) o[r.id_str] = !0;
+                                    else if (r.retweeted_status) {
+                                        const n = a.Z.select(t, r.retweeted_status);
+                                        n?.user === e && (o[r.id_str] = !0);
                                     }
-                                return t;
+                                return o;
                             }, {}),
-                            c = (0, l._h)(d()),
-                            u = c ? [(0, a.ZP)({ useLatest: !1, userId: c }).removeTweets(s), (0, a.ZP)({ useLatest: !0, userId: c }).removeTweets(s)] : [],
-                            h = (0, i.k9)();
-                        if (h.selectInitialFetchStatus(o) && !h.selectCanRefresh(o)) {
-                            const t = (0, i.f8)(e, o, h);
-                            t && u.push(t);
+                            d = (0, n._h)(c()),
+                            u = d ? [(0, i.ZP)({ useLatest: !1, userId: d }).removeTweets(s), (0, i.ZP)({ useLatest: !0, userId: d }).removeTweets(s)] : [],
+                            m = (0, l.k9)();
+                        if (m.selectInitialFetchStatus(t) && !m.selectCanRefresh(t)) {
+                            const o = (0, l.f8)(e, t, m);
+                            o && u.push(o);
                         }
-                        return t(u);
+                        return o(u);
                     });
         },
-        166506: (e, o, t) => {
-            t.d(o, { du: () => c, f8: () => u, k9: () => d });
-            var n = t(503768),
-                l = t(750085),
-                r = t(962741),
-                a = t(466015),
-                i = t(919022),
-                s = t(218951);
-            const d = () => (0, s.Z)({ timelineId: "mutedAccountsGraphQL", network: { getEndpoint: (e) => e.withEndpoint(n.ZP).fetchMutedAccounts, getEndpointParams: ({ count: e, cursor: o }) => ({ count: e, cursor: "string" == typeof o ? o : void 0 }) }, context: "FETCH_MUTED_ACCOUNTS", perfKey: "mutedAccountsGraphql", formatResponse: l.Z }),
-                c = (e) => (o, t) => {
-                    const n = t();
-                    o(
+        166506: (e, t, o) => {
+            o.d(t, { du: () => d, f8: () => u, k9: () => c });
+            var r = o(503768),
+                n = o(750085),
+                a = o(962741),
+                i = o(466015),
+                l = o(919022),
+                s = o(218951);
+            const c = () => (0, s.Z)({ timelineId: "mutedAccountsGraphQL", network: { getEndpoint: (e) => e.withEndpoint(r.ZP).fetchMutedAccounts, getEndpointParams: ({ count: e, cursor: t }) => ({ count: e, cursor: "string" == typeof t ? t : void 0 }) }, context: "FETCH_MUTED_ACCOUNTS", perfKey: "mutedAccountsGraphql", formatResponse: n.Z }),
+                d = (e) => (t, o) => {
+                    const r = o();
+                    t(
                         e
-                            .selectEntries(n)
+                            .selectEntries(r)
                             .filter((e) => {
-                                const o = e.type === r.ZP.User ? e.content.id : "",
-                                    t = i.ZP.select(n, o);
-                                return t && !t.muting;
+                                const t = e.type === a.ZP.User ? e.content.id : "",
+                                    o = l.ZP.select(r, t);
+                                return o && !o.muting;
                             })
-                            .map((o) => e.removeEntry(o.entryId)),
+                            .map((t) => e.removeEntry(t.entryId)),
                     );
                 },
-                u = (e, o, t) => {
-                    if (!t.selectEntries(o).find((o) => o.type === r.ZP.User && o.content.id === e)) {
-                        const o = (0, a.OD)(e),
-                            n = (0, a.$0)({ entryId: o, id: e, sortIndex: Date.now().toString() });
-                        return t.injectEntry(n);
+                u = (e, t, o) => {
+                    if (!o.selectEntries(t).find((t) => t.type === a.ZP.User && t.content.id === e)) {
+                        const t = (0, i.OD)(e),
+                            r = (0, i.$0)({ entryId: t, id: e, sortIndex: Date.now().toString() });
+                        return o.injectEntry(r);
                     }
                 };
         },
-        723587: (e, o, t) => {
-            t.d(o, { Z: () => he });
-            var n = t(202784),
-                l = t(614983),
-                r = t.n(l),
-                a = t(111677),
-                i = t.n(a),
-                s = t(516951),
-                d = t(616894),
-                c = t(235902),
-                u = t(305098);
-            const h = i().i8cfb6e6,
-                m = i().ea100d6a,
-                p = i().fe40537f,
-                f = i().ab7c3460,
-                b = i().i58d8718,
-                w = n.createElement(d.default, null),
-                y = ({ disabled: e, displayMode: o, onUnblock: t, showRelationshipChangeConfirmation: l, size: r, style: a, testID: i, userScreenName: s }) => n.createElement(u.Z, { buttonDefaultLabel: h, buttonHoverLabel: m, buttonType: "destructiveFilled", confirmationSheetConfirmLabel: m, confirmationSheetHeadline: p({ screenName: s }), confirmationSheetText: c.ZP.useProps().isSoftBlockEnabled() ? b : f, disabled: e, displayMode: o, icon: w, onClick: t, showRelationshipChangeConfirmation: l, size: r, style: a, testID: i });
-            var D = t(466999),
-                g = t(76388),
-                _ = t(911373),
-                C = t(733357),
-                S = t(352924),
-                v = t(392237);
-            const F = i().ee05e96b,
-                M = i().f238ba1d,
-                P = i().aeb6f0a0,
-                I = i().a77a27c0,
-                k = i().b4397192,
-                E = (e) => ({ customButtonColor: "white", customButtonBorderColor: e ? "transparent" : "plum500", customButtonBackgroundColor: "plum500", customButtonHoverColor: "white", customButtonHoverBorderColor: "plum500" }),
-                T = (e) => ({ customButtonColor: "plum500", customButtonBorderColor: e ? "transparent" : "plum500", customButtonBackgroundColor: "transparent", customButtonHoverColor: "white", customButtonHoverBorderColor: "gray700", customButtonHoverBackgroundColor: "gray700" }),
-                Z = v.default.create((e) => ({ hidden: { display: "none" } })),
-                L = ({ "aria-describedby": e, buttonType: o, disabled: t, displayMode: l, id: r, isSuperFollowEligible: a, isSuperFollowing: i, isTransparent: s, name: d, onSuperFollow: c, onUnSuperFollow: h, size: m, style: p, testID: f }) => {
-                    const b = n.useCallback(() => {
-                            i ? h() : a && c();
-                        }, [a, i, c, h]),
-                        w = void 0 !== d ? `@${String(d)}` : "",
-                        y = i ? I : P,
-                        g = w.length > 0 && void 0 !== y ? M({ followType: y, screenName: w }) : "",
-                        _ = i ? k : P,
-                        v = i ? T(s) : o ? void 0 : E(s),
-                        L = n.useMemo(() => (void 0 !== e ? e : (0, S.F)()), [e]),
-                        x = n.useCallback(() => {
-                            const e = i ? I : a ? F({ followType: P, screenName: d }) : null;
-                            return e && !(0, C.Z)(e) ? n.createElement(D.Z, { id: L, style: Z.hidden }, e) : null;
-                        }, [i, a, L, d]);
-                    return n.createElement(n.Fragment, null, n.createElement(u.Z, { "aria-describedby": L, "aria-label": g, buttonDefaultLabel: y, buttonHoverLabel: _, buttonType: o, customButtonConfig: v, disabled: t, displayMode: l, id: r, onClick: b, size: m, style: p, testID: f }), void 0 === e ? x() : null);
-                },
-                x = Object.freeze({ user: "user", topic: "topic", list: "list", community: "community", spaces: "spaces" }),
-                A = i().cda66545,
-                B = i().ee05e96b,
-                N = i().a8d77a25,
-                H = i().d0f4f3d9,
-                O = i().f238ba1d,
-                R = i().j6161cab,
-                U = i().i4bb9ef7,
-                z = i().ge753264,
-                W = i().b837c0e8,
-                $ = n.createElement(g.default, null),
-                j = n.createElement(_.default, null),
-                q = i().ddac1f1d,
-                G = i().j8e33c40;
-            class Q extends n.Component {
-                constructor(e, o) {
-                    super(e, o),
-                        (this._getDescribedById = () => {
-                            const { "aria-describedby": e } = this.props;
-                            return void 0 !== e ? e : (0, S.F)();
-                        }),
-                        (this._renderDescribedBy = (e, o) => {
-                            const t = this._getDescribedByText();
-                            return (0, C.Z)(t) ? null : n.createElement(D.Z, { id: e, style: { display: "none" } }, t);
-                        }),
-                        (this._getDescribedByText = () => {
-                            const { buttonText: e, isFollowing: o, isSuperFollowEligible: t, isSuperFollowing: n, name: l, type: r } = this.props;
-                            let a = "";
-                            const i = void 0 === l ? "" : l;
-                            switch (r) {
-                                case x.user:
-                                case x.topic:
-                                case x.list:
-                                    n && e.unSuperFollow ? (a = e.unSuperFollow) : o ? (a = t ? B({ followType: e.superFollow, screenName: i }) : A({ followType: e.unfollow, screenName: i })) : o || (a = A({ followType: e.follow, screenName: i }));
-                                    break;
-                                case x.community:
-                                    a = o ? N({ screenName: i }) : A({ followType: e.follow, screenName: i });
-                                    break;
-                                case x.spaces:
-                                    o ? (a = A({ followType: e.unfollow, screenName: i })) : o || (a = A({ followType: e.follow, screenName: i }));
-                                    break;
-                                default:
-                                    a = "";
-                            }
-                            return a;
-                        }),
-                        (this._getText = () => {
-                            const { buttonText: e, name: o, type: t } = this.props,
-                                n = void 0 !== o ? o : "",
-                                l = U({ title: o }),
-                                r = { [x.user]: { ariaFollowName: void 0 !== o ? `@${String(o)}` : "", confirmationHeadline: R({ screenName: o }), confirmationSheetText: z }, [x.topic]: { ariaFollowName: n, confirmationHeadline: l, confirmationSheetText: W }, [x.list]: { ariaFollowName: n, confirmationHeadline: l, confirmationSheetText: void 0 }, [x.community]: { ariaFollowName: n, confirmationHeadline: q({ communityName: o }), confirmationSheetText: G }, [x.spaces]: { ariaFollowName: void 0 !== o ? `@${String(o)}` : "", confirmationHeadline: R({ screenName: o }), confirmationSheetText: z } };
-                            return { ariaFollowName: r[t].ariaFollowName, followLabel: e.follow, followBackLabel: e.followBack, followingLabel: e.following, unfollowLabel: e.unfollow, superFollowLabel: e.superFollow, superFollowingLabel: e.superFollowing, unSuperFollowLabel: e.unSuperFollow, confirmationHeadline: e.confirmationHeadline || r[t].confirmationHeadline, confirmationSheetText: e.confirmationSheetText || r[t].confirmationSheetText };
-                        }),
-                        (this._handlePress = () => {
-                            const { isFollowing: e, isSuperFollowEligible: o, isSuperFollowing: t, onFollow: n, onSuperFollow: l, onUnSuperFollow: r, onUnfollow: a } = this.props;
-                            t ? r() : e ? (o ? l() : a()) : (n(), this.setState({ hasJustFollowed: !0 }));
-                        }),
-                        (this._handleHoverOut = () => {
-                            this.state.hasJustFollowed && this.setState({ hasJustFollowed: !1 });
-                        }),
-                        (this.state = { hasJustFollowed: !1 });
-                }
-                render() {
-                    const { "aria-describedby": e, buttonIcons: o, disabled: t, displayMode: l, id: r, isFollowed: a, isFollowing: i, isSuperFollowEligible: s, isSuperFollowing: d, isTransparent: c, showRelationshipChangeConfirmation: h, size: m, style: p, testID: f, type: b, withConfirmationSheetText: w } = this.props,
-                        { ariaFollowName: y, confirmationHeadline: D, confirmationSheetText: g, followBackLabel: _, followLabel: C, followingLabel: S, superFollowLabel: v, superFollowingLabel: F, unSuperFollowLabel: M, unfollowLabel: P } = this._getText(),
-                        { hasJustFollowed: I } = this.state,
-                        k = (o && o.followIcon) || j,
-                        Z = (o && o.followingIcon) || $,
-                        L = "only-text" !== l ? (i ? Z : k) : void 0;
-                    let A = i ? S : C;
-                    a && !i && _ && (A = _);
-                    let B = H;
-                    (d || (i && s)) && (d && F ? ((B = O), (A = F)) : s && v && ((B = O), (A = v)));
-                    const N = y.length > 0 && void 0 !== A ? B({ followType: A, screenName: y }) : "",
-                        R = "primaryFilled";
-                    let U, z, W, q;
-                    const G = c ? "brandText" : R,
-                        Q = c ? "destructiveText" : "destructiveOutlined",
-                        V = !d && (!i || !s) && i,
-                        Y = i ? "onMediaWhiteFilled" : "onMediaOutlined",
-                        J = i ? "onMediaOutlined" : "onMediaWhiteFilled";
-                    b === x.community ? (U = i ? P : C) : b === x.spaces ? ((U = i ? P : C), (z = Y), (W = J)) : d && M ? ((q = T(c)), (U = M)) : i ? ((U = I ? S : P), (z = I ? G : Q), (W = c ? "brandText" : "primaryOutlined"), s && v && ((q = E(c)), (U = v), (W = void 0), (z = void 0))) : ((U = a && _ ? _ : C), (z = c ? "brandText" : R), (W = c ? "brandText" : R));
-                    const K = this._getDescribedById();
-                    return n.createElement(n.Fragment, null, n.createElement(u.Z, { "aria-describedby": K, "aria-label": N, buttonDefaultLabel: A, buttonHoverLabel: U, buttonHoverType: z, buttonType: W, confirmationSheetConfirmLabel: P, confirmationSheetHeadline: D, confirmationSheetText: w ? g : void 0, customButtonConfig: q, disabled: t, displayMode: l, icon: L, id: r, onClick: this._handlePress, onHoverOut: this._handleHoverOut, showRelationshipChangeConfirmation: V && h, size: m, style: p, testID: f }), void 0 === e ? this._renderDescribedBy(K) : null);
-                }
-            }
-            const V = Q;
-            var Y = t(311687);
-            const J = i().f305840e,
-                K = i().e23b20a0,
-                X = i().fe04d89a,
-                ee = i().i036327c,
-                oe = i().j95e3097,
-                te = n.createElement(Y.default, null),
-                ne = ({ disabled: e, displayMode: o, onCancelPendingFollow: t, showRelationshipChangeConfirmation: l, size: r, style: a, testID: i, userScreenName: s }) => n.createElement(u.Z, { buttonDefaultLabel: J, buttonHoverLabel: K, buttonType: "primaryOutlined", confirmationSheetCancelLabel: K, confirmationSheetConfirmLabel: X, confirmationSheetHeadline: ee, confirmationSheetText: oe({ screenName: s }), disabled: e, displayMode: o, icon: te, onClick: t, showRelationshipChangeConfirmation: l, size: r, style: a, testID: i }),
-                le = Object.freeze({ follow: "follow", subscribe: "subscribe" }),
-                re = i().ec72e2f8,
-                ae = i().a5f7ce12,
-                ie = i().c3befdbe,
-                se = i().d3029dbc,
-                de = i().aeb6f0a0,
-                ce = i().a77a27c0,
-                ue = i().b4397192;
-            class he extends n.Component {
-                constructor(e) {
-                    super(e), this._validateProps();
-                }
-                componentDidUpdate() {
-                    this._validateProps();
-                }
-                render() {
-                    const { "aria-describedby": e, buttonIcons: o, buttonText: t, buttonType: l, disabled: r, displayMode: a, id: i, isBlocking: s, isFollowRequestSent: d, isFollowed: c, isFollowing: u, isSuperFollowEligible: h, isSuperFollowing: m, isTransparent: p, name: f, onCancelPendingFollow: b, onFollow: w, onSuperFollow: D, onUnSuperFollow: g, onUnblock: _, onUnfollow: C, relationshipMode: S, showRelationshipChangeConfirmation: v, size: F, style: M, testIDs: P, type: I, withConfirmationSheetText: k } = this.props,
-                        E = s,
-                        T = d,
-                        Z = S === le.subscribe && (h || m);
-                    return E ? n.createElement(y, { disabled: r, displayMode: a, onUnblock: _, showRelationshipChangeConfirmation: v, size: F, style: M, testID: P?.unblock, userScreenName: f }) : T ? n.createElement(ne, { disabled: r, displayMode: a, onCancelPendingFollow: b, showRelationshipChangeConfirmation: v, size: F, style: M, testID: P?.cancel, userScreenName: f }) : Z ? n.createElement(L, { "aria-describedby": e, buttonType: l, disabled: r, displayMode: a, id: i, isSuperFollowEligible: h, isSuperFollowing: m, isTransparent: p, name: f, onSuperFollow: D, onUnSuperFollow: g, size: F, style: M, testID: m ? P?.manageSubscription : P?.subscribe }) : n.createElement(V, { "aria-describedby": e, buttonIcons: o, buttonText: t, disabled: r, displayMode: a, id: i, isFollowed: c, isFollowing: u, isSuperFollowEligible: h, isSuperFollowing: m, isTransparent: p, name: f, onFollow: w, onSuperFollow: D, onUnSuperFollow: g, onUnfollow: C, showRelationshipChangeConfirmation: v, size: F, style: M, testID: u ? P?.unfollow : P?.follow, type: I, withConfirmationSheetText: k });
-                }
-                _validateProps() {
-                    const { name: e, showRelationshipChangeConfirmation: o } = this.props,
-                        t = o && "string" == typeof e,
-                        n = !o;
-                    r()(t || n, "When showRelationshipChangeConfirmation is true, name must be defined.");
-                }
-            }
-            he.defaultProps = { buttonText: { follow: re, followBack: ae, following: ie, unfollow: se, superFollow: de, superFollowing: ce, unSuperFollow: ue }, displayMode: "only-text", relationshipMode: "follow", isBlocking: !1, isFollowRequestSent: !1, isTransparent: !1, onCancelPendingFollow: s.Z, onSuperFollow: s.Z, onUnblock: s.Z, onUnSuperFollow: s.Z, showRelationshipChangeConfirmation: !0, withConfirmationSheetText: !0 };
-        },
-        305098: (e, o, t) => {
-            t.d(o, { Z: () => c });
-            var n = t(807896),
-                l = t(202784),
-                r = t(325686),
-                a = t(154003),
-                i = t(190286),
-                s = t(466792);
-            Object.freeze({ iconText: "icon-text", onlyIcon: "only-icon", onlyText: "only-text" });
-            class d extends l.Component {
-                constructor(e) {
-                    super(e),
-                        (this._minWidth = 0),
-                        (this._isMounted = !0),
-                        (this._handleLabelMeasure = (e = !1) => {
-                            setTimeout(() => {
-                                const o = this._containerRef?.getBoundingClientRect().width,
-                                    t = this._containerRef?.offsetWidth;
-                                let n = 0;
-                                o && t && (n = t ? o : t), (this._minWidth = Math.ceil(Math.max(this._minWidth, n))), e && this._isMounted && this.forceUpdate();
-                            }, 0);
-                        }),
-                        (this._getCustomButtonProps = (e) => {
-                            const { customButtonConfig: o } = this.props;
-                            if (!o) return;
-                            const { customButtonBackgroundColor: t, customButtonBorderColor: n, customButtonColor: l, customButtonHoverBackgroundColor: r, customButtonHoverBorderColor: a, customButtonHoverColor: i } = o,
-                                s = { color: l, backgroundColor: t, borderColor: n };
-                            return e && ((s.color = i || l), (s.backgroundColor = r || t), (s.borderColor = a || n)), s;
-                        }),
-                        (this._handleButtonPress = (e) => {
-                            e.preventDefault(), this.props.showRelationshipChangeConfirmation ? this.setState({ showConfirmation: !0 }) : ((this._minWidth = 0), this.forceUpdate(), this.props.onClick());
-                        }),
-                        (this._handleConfirm = (e) => {
-                            (this._minWidth = 0), this.setState({ showConfirmation: !1 }), this.props.onClick(), this._buttonRef?.focus();
-                        }),
-                        (this._handleCancel = () => {
-                            this.setState({ showConfirmation: !1 }), this._buttonRef?.focus();
-                        }),
-                        (this._handleHoverIn = () => {
-                            this._handleLabelMeasure(!0);
-                        }),
-                        (this._setButtonRef = (e) => {
-                            this._buttonRef = e;
-                        }),
-                        (this._setContainerRef = (e) => {
-                            (this._containerRef = e), this._handleLabelMeasure();
-                        }),
-                        (this.state = { showConfirmation: !1 });
-                }
-                componentWillUnmount() {
-                    this._isMounted = !1;
-                }
-                componentDidUpdate(e) {
-                    e.buttonDefaultLabel !== this.props.buttonDefaultLabel && this._handleLabelMeasure();
-                }
-                render() {
-                    const { "aria-describedby": e, "aria-label": o, buttonDefaultLabel: t, buttonHoverLabel: d, buttonHoverType: c, buttonType: u, confirmationSheetCancelLabel: h, confirmationSheetConfirmLabel: m, confirmationSheetHeadline: p, confirmationSheetPrimaryButtonType: f, confirmationSheetText: b, disabled: w, displayMode: y, icon: D, id: g, onHoverOut: _, size: C, style: S, testID: v } = this.props,
-                        F = [S, { minWidth: this._minWidth }];
-                    return l.createElement(
-                        r.Z,
-                        { ref: this._setContainerRef, style: F },
-                        l.createElement(s.Z, { onHoverIn: this._handleHoverIn, onHoverOut: _ }, ({ isHovered: r }) => {
-                            const i = r ? d : t,
-                                s = r && c ? c : u,
-                                h = this._getCustomButtonProps(r);
-                            return l.createElement(a.ZP, (0, n.Z)({ "aria-describedby": e, "aria-label": "only-icon" === y ? i : o, disabled: w, icon: "only-text" !== y ? D : void 0, id: g, onPress: this._handleButtonPress, ref: this._setButtonRef, size: C, testID: v, type: s }, h), "only-icon" === y ? void 0 : i);
-                        }),
-                        this.state.showConfirmation ? l.createElement(i.Z, { cancelButtonLabel: h, confirmButtonLabel: m, confirmButtonType: f, headline: p, onCancel: this._handleCancel, onConfirm: this._handleConfirm, text: b }) : null,
+        642153: (e, t, o) => {
+            o.d(t, { Z: () => l });
+            var r = o(202784),
+                n = o(325686),
+                a = o(392237),
+                i = o(823161);
+            const l = (e) => {
+                    const { borderColor: t = "cellBackground", borderWidth: o = "small", style: l, userAvatarSize: c = "medium", userAvatarUrls: d, withIncreasedSpacing: u } = e,
+                        m = d.length,
+                        h = "transparent" === t;
+                    return r.createElement(
+                        n.Z,
+                        { style: [s.root, l, { height: i.default.getSizeStyle(c)?.height }] },
+                        d.map((e, n) => r.createElement(i.default, { backgroundColor: t, borderColor: t, borderWidth: h ? "none" : o, key: n, size: c, style: [0 !== n && { marginStart: -1 * a.default.theme.spacesPx[u ? "space4" : "space12"] }, { zIndex: m - n }], uri: e })),
                     );
+                },
+                s = a.default.create((e) => ({ root: { flexDirection: "row", flexShrink: 0, overflow: "hidden", flexWrap: "wrap", justifyContent: "center" } }));
+        },
+        215337: (e, t, o) => {
+            o.d(t, { Z: () => i });
+            var r = o(202784),
+                n = o(325686);
+            class a extends r.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this.getColors = () => {
+                            const { colors: e, locations: t } = this.props;
+                            return e
+                                .map((e, o) => {
+                                    const r = t[o];
+                                    let n = "";
+                                    return r && (n = ` ${100 * r}%`), e + n;
+                                })
+                                .join(",");
+                        });
+                }
+                render() {
+                    const { angle: e, angleUnit: t, children: o, style: a } = this.props;
+                    return r.createElement(n.Z, { style: [a, { backgroundImage: `linear-gradient(${e}${t},${this.getColors()})` }] }, o);
                 }
             }
-            d.defaultProps = { showRelationshipChangeConfirmation: !1 };
-            const c = d;
+            a.defaultProps = { angle: 180, angleUnit: "deg", locations: [] };
+            const i = a;
         },
-        790093: (e, o, t) => {
-            t.r(o), t.d(o, { default: () => s });
-            var n = t(202784),
-                l = t(890601),
-                r = t(783427),
-                a = t(347101);
-            const i = (e = {}) => {
-                const { direction: o } = (0, r.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: o });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const s = i;
+        378729: (e, t, o) => {
+            o.d(t, { Z: () => y });
+            var r = o(202784),
+                n = o(325686),
+                a = o(111677),
+                i = o.n(a),
+                l = o(283379),
+                s = o(731708),
+                c = o(392237);
+            const d = i().f1a1b791,
+                u = i().if2bf8b4,
+                m = i().f3624b5c,
+                h = i().b4b3b113,
+                p = i().be222050,
+                f = i().hcbbe447;
+            class y extends r.Component {
+                render() {
+                    const { color: e, id: t, style: o } = this.props;
+                    return r.createElement(n.Z, { style: [b.root, o] }, r.createElement(l.default, { style: [b.icon, e && b[e]] }), r.createElement(s.ZP, { color: e, id: t, size: "subtext2" }, this._getPromotedLabel()));
+                }
+                _getPromotedLabel() {
+                    const { contentAuthorId: e, label: t, promotedContent: o } = this.props,
+                        { adMetadataContainer: r, advertiser: n, advertiser_name: a, disclosure_type: i } = o,
+                        l = e && n && e === n.id_str,
+                        s = "string" == typeof i && "political" === i.toLowerCase(),
+                        c = "string" == typeof i && "issue" === i.toLowerCase(),
+                        y = !(!r || "POLITICAL" !== r.disclaimerType) || s,
+                        b = !(!r || "ISSUE" !== r.disclaimerType) || c,
+                        { removePromotedAttributionForPreroll: v } = r || {};
+                    let w;
+                    return (w = t || (!a || l || v ? (y ? m : b ? p : u) : y ? h({ fullName: a }) : b ? f({ fullName: a }) : d({ fullName: a }))), w;
+                }
+            }
+            y.defaultProps = { color: "gray700" };
+            const b = c.default.create((e) => ({ root: { alignItems: "center", flexDirection: "row" }, icon: { color: e.colors.gray700, height: "1em", marginEnd: e.spaces.space4, flexShrink: 0 }, gray700: { color: e.colors.gray700 }, white: { color: e.colors.white } }));
         },
-        98440: (e, o, t) => {
-            t.r(o), t.d(o, { default: () => s });
-            var n = t(202784),
-                l = t(890601),
-                r = t(783427),
-                a = t(347101);
-            const i = (e = {}) => {
-                const { direction: o } = (0, r.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: o });
+        173739: (e, t, o) => {
+            o.d(t, { Z: () => i });
+            var r = o(202784),
+                n = o(31501),
+                a = o(879891);
+            const i = ({ accessibilityLabelValueText: e, "aria-label": t, onChange: o, onDarkBackground: i, thumbLabel: l, value: s, ...c }) => {
+                const { direction: d } = (0, a.Z)(),
+                    u = { ...c, endThumbAccessibilityLabel: t, endThumbAccessibilityLabelValueText: e, endThumbLabel: l, onDarkBackground: i, value: [c.min, s], onChange: (e) => o(e[1]), isSingleSlider: !0, languageWritingDirection: d };
+                return r.createElement(n.Z, u);
             };
-            i.metadata = { width: 24, height: 24 };
-            const s = i;
         },
-        226597: (e, o, t) => {
-            t.r(o), t.d(o, { default: () => s });
-            var n = t(202784),
-                l = t(890601),
-                r = t(783427),
-                a = t(347101);
-            const i = (e = {}) => {
-                const { direction: o } = (0, r.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: o });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const s = i;
+        537439: (e, t, o) => {
+            o.d(t, { Z: () => N });
+            var r = o(202784),
+                n = o(111677),
+                a = o.n(n),
+                i = o(492140),
+                l = o(720600),
+                s = o(761744),
+                c = o(25001),
+                d = o(453333),
+                u = o(136483),
+                m = o(98440),
+                h = o(790093),
+                p = o(452693),
+                f = o(544367),
+                y = o(264171),
+                b = o(159340),
+                v = o(404971),
+                w = o(262009),
+                g = o(76388),
+                C = o(488746),
+                D = o(246492),
+                S = o(520913),
+                E = o(731708),
+                P = o(642153),
+                _ = o(879891),
+                k = o(392237),
+                I = o(54606);
+            const x = a().ae408b76,
+                T = a().j355f008,
+                M = a().habf9678,
+                R = a().db0798ed,
+                Z = a().dc716ec9,
+                A = ({ text: e }) => {
+                    const { direction: t } = (0, _.Z)();
+                    return r.createElement(E.ZP, { dir: t, withHashflags: !0 }, e);
+                },
+                F = (e, t) =>
+                    t
+                        ? x
+                        : ((e) => {
+                              const t = r.createElement(A, { text: e });
+                              return r.createElement(a().I18NFormatMessage, { $i18n: "fcd931ed" }, t);
+                          })(e),
+                L = k.default.create((e) => ({ small: { height: e.lineHeights.subtext3, width: e.lineHeights.subtext3 }, medium: { height: e.spaces.space48, width: e.spaces.space48 }, large: { height: e.lineHeights.subtext2, width: e.lineHeights.subtext2 }, xLarge: { height: e.lineHeights.subtext1, width: e.lineHeights.subtext1 }, xxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 }, xxxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 } })),
+                O = k.default.create((e) => ({ circle: { color: e.colors.primary, width: "0.5em" }, colorDeepGray: { color: e.colors.gray700 }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorRed: { color: e.colors.magenta500 }, grayscaleImage: { borderRadius: e.borderRadii.infinite, filter: "grayscale(100%)" }, brandColor: { color: e.colors.brandColor } })),
+                N = ({ contextType: e, iconColor: t, iconSize: o, link: n, retweetData: a, text: E, topicData: _, userAvatarUrls: x }) => {
+                    const { isSelfRetweet: N, name: B, screenName: U } = a || {},
+                        H = ((e, t, o, n = []) => {
+                            const a = L[t],
+                                E = [o ? { color: k.default.theme.colors[o] } : O.colorDeepGray, a],
+                                _ = r.createElement(i.default, { style: E }),
+                                x = r.createElement(l.default, { style: E }),
+                                T = r.createElement(s.default, { style: E }),
+                                M = r.createElement(c.default, { style: E }),
+                                R = r.createElement(d.default, { style: E }),
+                                Z = r.createElement(u.default, { style: O.circle }),
+                                A = r.createElement(m.default, { style: E }),
+                                F = r.createElement(h.default, { style: E }),
+                                N = r.createElement(p.default, { style: E }),
+                                B = r.createElement(f.default, { style: E }),
+                                U = r.createElement(y.default, { style: E }),
+                                H = r.createElement(b.default, { style: E }),
+                                Q = r.createElement(v.default, { style: E }),
+                                W = r.createElement(w.default, { style: E }),
+                                G = r.createElement(g.default, { style: E }),
+                                z = r.createElement(C.default, { style: E }),
+                                V = r.createElement(D.default, { style: E }),
+                                j = r.createElement(P.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: n }),
+                                Y = r.createElement(S.default, { style: E });
+                            switch (e) {
+                                case I.Q.Pin:
+                                case I.Q.ReplyPin:
+                                    return _;
+                                case I.Q.Retweet:
+                                    return x;
+                                case I.Q.Like:
+                                    return T;
+                                case I.Q.Follow:
+                                    return M;
+                                case I.Q.Moment:
+                                    return R;
+                                case I.Q.NewTweets:
+                                    return Z;
+                                case I.Q.Reply:
+                                case I.Q.Conversation:
+                                    return A;
+                                case I.Q.Feedback:
+                                    return F;
+                                case I.Q.Topic:
+                                    return N;
+                                case I.Q.List:
+                                    return B;
+                                case I.Q.Location:
+                                    return U;
+                                case I.Q.Community:
+                                    return H;
+                                case I.Q.Spaces:
+                                    return Q;
+                                case I.Q.Sparkle:
+                                    return W;
+                                case I.Q.SocialProof:
+                                case I.Q.FollowFollowed:
+                                    return V;
+                                case I.Q.FollowMutual:
+                                    return z;
+                                case I.Q.FollowFollowing:
+                                    return G;
+                                case I.Q.Facepile:
+                                    return j;
+                                case I.Q.Bird:
+                                    return Y;
+                                case I.Q.TextOnly:
+                                default:
+                                    return null;
+                            }
+                        })(e, o, t, x);
+                    switch (e) {
+                        case I.Q.Retweet:
+                            return { Icon: H, text: E || F(B, N), link: U ? `https://twitter.com/${U}` : void 0 };
+                        case I.Q.Pin:
+                            return { Icon: H, text: E || T };
+                        case I.Q.ReplyPin:
+                            return { Icon: H, text: M };
+                        case I.Q.Topic:
+                            return { Icon: H, "aria-label": "Recommendation" === _?.functionalityType || "RecWithEducation" === _?.functionalityType ? Z({ topicName: E }) : R({ topicName: E }), text: E ? r.createElement(A, { text: E }) : null, link: n };
+                        default:
+                            return { Icon: H, text: E ? r.createElement(A, { text: E }) : null, link: n };
+                    }
+                };
         },
-        155353: (e, o, t) => {
-            t.r(o), t.d(o, { default: () => s });
-            var n = t(202784),
-                l = t(890601),
-                r = t(783427),
-                a = t(347101);
-            const i = (e = {}) => {
-                const { direction: o } = (0, r.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: o });
+        126962: (e, t, o) => {
+            o.d(t, { Z: () => f });
+            o(136728);
+            var r = o(202784),
+                n = o(325686),
+                a = o(731708),
+                i = o(872405),
+                l = o(235902),
+                s = o(392237),
+                c = o(139052),
+                d = o(488684),
+                u = o(537439),
+                m = o(54606);
+            class h extends r.PureComponent {
+                render() {
+                    const { avatarSize: e, bottomControl: t, iconStyle: o, id: s, onLayout: c, rightControl: d, style: m, testID: h, textColor: f, textSize: y, topControl: b, weight: v, withBottomBorder: w, withLeftPadding: g, withTextCentered: C, ...D } = this.props,
+                        { Icon: S, "aria-label": E, link: P, text: _ } = (0, u.Z)(D),
+                        k = r.createElement(a.ZP, { "aria-label": E, color: f, id: s, numberOfLines: 2, size: y, testID: h, weight: v, withoutTwemojiAndHashflags: !0 }, _),
+                        { cellStyle: I, viewStyle: x } = this._getStyles();
+                    return _ ? r.createElement(l.ZP.UseProps, null, (a) => r.createElement(r.Fragment, null, b || null, r.createElement(n.Z, { onLayout: c, style: [m, x, a.socialContextRefreshEnabled() && !g && p.socialContextRefresh] }, r.createElement(i.Z, { avatarCell: S || (g ? null : void 0), avatarCellStyle: [o, p.socialContextIconColumn, !g && p.unsetIconWidth, a.socialContextRefreshEnabled() && !g && p.socialContextRefreshIcon], avatarSize: e, cellStyle: I }, r.createElement(n.Z, { style: p.cellWrapper }, r.createElement(n.Z, { style: [p.socialContextTextColumn, a.socialContextRefreshEnabled() && !g && p.socialContextRefreshTextColumn] }, P ? this._renderLink(P, k) : k), d || null)), t || null))) : null;
+                }
+                _renderLink(e, t) {
+                    const { contextType: o, id: n, onClick: i, retweetData: l, textColor: s, topicData: u } = this.props,
+                        { screenName: h } = l || {},
+                        p = r.createElement(a.ZP, { color: s, id: n, link: e, onClick: i, withoutTwemojiAndHashflags: !0 }, t);
+                    return o === m.Q.Topic && u ? r.createElement(c.Z, { topicId: u.topicId }, p) : o === m.Q.Retweet && h ? r.createElement(d.Z, { screenName: h }, p) : p;
+                }
+                _getStyles() {
+                    const { bottomControl: e, contextType: t, withBottomBorder: o, withTextCentered: r } = this.props,
+                        n = t === m.Q.TextOnly,
+                        a = o ? [p.bottomBorderMargin, !!e && p.bottomBorder] : [],
+                        i = o && !e ? [p.bottomBorder] : [];
+                    return n && i.push(p.topicContext), r && i.push(p.socialContextTextCentered), { viewStyle: a, cellStyle: i };
+                }
+            }
+            h.defaultProps = { iconSize: "small", textColor: "gray700", textSize: "subtext2", withBottomBorder: !1, withLeftPadding: !0, withTextCentered: !1 };
+            const p = s.default.create((e) => ({ socialContextIconColumn: { alignItems: "flex-end", justifyContent: "center" }, bottomBorderMargin: { marginBottom: e.componentDimensions.gutterVertical }, cellWrapper: { flexDirection: "row" }, bottomBorder: { paddingBottom: e.spaces.space4, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor }, topicContext: { paddingBottom: `calc(${e.spaces.space4} + ${e.spaces.space2})` }, socialContextTextColumn: { alignItems: "flex-start", flexShrink: 1, justifyContent: "center" }, unsetIconWidth: { flexBasis: "unset" }, socialContextRefreshIcon: { marginEnd: e.spaces.space8 }, socialContextRefresh: { marginBottom: e.spaces.space8 }, socialContextRefreshTextColumn: { minHeight: e.spaces.space32 }, socialContextTextCentered: { justifyContent: "center" } })),
+                f = h;
+        },
+        54606: (e, t, o) => {
+            o.d(t, { Q: () => r });
+            o(202784);
+            const r = Object.freeze({ FacepileGroup: "FacepileGroup", Bird: "Bird", Community: "Community", Conversation: "Conversation", Facepile: "Facepile", Feedback: "Feedback", Follow: "Follow", FollowFollowed: "FollowFollowed", FollowFollowing: "FollowFollowing", FollowMutual: "FollowMutual", Like: "Like", List: "List", Location: "Location", Megaphone: "Megaphone", Moment: "Moment", NewTweets: "NewTweets", NewUser: "NewUser", Pin: "Pin", Reply: "Reply", RelatedTweets: "RelatedTweets", ReplyPin: "ReplyPin", Retweet: "Retweet", SmartBlockExpiration: "SmartBlockExpiration", SocialProof: "SocialProof", Spaces: "Spaces", Sparkle: "Sparkle", TextOnly: "TextOnly", Topic: "Topic", Trending: "Trending" });
+        },
+        181054: (e, t, o) => {
+            o.d(t, { Z: () => p });
+            var r = o(807896),
+                n = o(202784),
+                a = o(325686),
+                i = o(215337),
+                l = o(392237),
+                s = o(977220);
+            const c = (e) => `${e}%`,
+                d = l.default.create((e) => ({ container: { height: "100%", overflow: "hidden" }, animate: { height: "100%", width: c(500), transform: [{ translateX: "0%" }], animationDuration: "10000ms", animationIterationCount: "infinite", animationDirection: "alternate", animationTimingFunction: "linear", animationKeyframes: { "0%": { transform: [{ translateX: "0%" }] }, "100%": { transform: [{ translateX: c(-80) }] } } } }));
+            function u() {
+                const e = (0, s.ai)();
+                return n.createElement("defs", null, n.createElement("linearGradient", { gradientUnits: "userSpaceOnUse", id: m, x1: "-9.62%", x2: "109.62%", y1: "82.19%", y2: "17.81%" }, n.createElement("stop", { stopColor: e.primary }), n.createElement("stop", { offset: "1.05", stopColor: e.secondary })));
+            }
+            const m = "space-gradient";
+            u.fill = `url(#${m})`;
+            const h = {
+                    Default: function ({ children: e, style: t, type: o = "audiospace" }) {
+                        return n.createElement(
+                            i.Z,
+                            (0, r.Z)(
+                                {},
+                                (function (e) {
+                                    const t = (0, s.ai)(e);
+                                    return { ...(0, s.Cs)(), colors: [t.primary, t.secondary], locations: [-0.1505, 1.0496] };
+                                })(o),
+                                { style: t },
+                            ),
+                            e,
+                        );
+                    },
+                    Animated: function (e) {
+                        return n.createElement(
+                            a.Z,
+                            { style: [d.container, e.style] },
+                            n.createElement(
+                                i.Z,
+                                (0, r.Z)(
+                                    {},
+                                    (function () {
+                                        const e = (0, s.ai)();
+                                        return { ...(0, s.Cs)(), colors: [e.primary, e.secondary, e.primary, e.secondary, e.primary], locations: [0.16, 0.24, 0.54, 0.62, 0.88] };
+                                    })(),
+                                    { style: d.animate },
+                                ),
+                                e.children,
+                            ),
+                        );
+                    },
+                    SVGLinearGradient: u,
+                    getColors: s.ai,
+                    getDarkModeColors: s.K,
+                },
+                p = Object.freeze(h);
+        },
+        977220: (e, t, o) => {
+            o.d(t, { Cs: () => d, K: () => l, ai: () => s });
+            var r = o(465233),
+                n = o(483054),
+                a = o(295559),
+                i = o(392237);
+            function l(e = "audiospace") {
+                return i.default.theme.highContrastEnabled ? m(u.HighContrast[e]) : m(u.Default[e]);
+            }
+            function s(e = "audiospace") {
+                return i.default.theme.highContrastEnabled ? u.HighContrast[e] : u.Default[e];
+            }
+            const c = { angle: 61.63, angleUnit: "deg" };
+            function d() {
+                return (0, r.Z)(c);
+            }
+            const u = { Default: { audiospace: { primary: "#2D42FF", secondary: "#9C63FA" }, livevideo: { primary: "#F91880", secondary: "#F91880" } }, HighContrast: { audiospace: { primary: "#2C3CEF", secondary: "#8439FF" }, livevideo: { primary: "#890A46", secondary: "#890A46" } } };
+            function m(e) {
+                return { primary: h(e.primary), secondary: h(e.secondary) };
+            }
+            function h(e) {
+                const t = a.xO(e),
+                    o = n.$n({ color: t, coefficient: 0.5 });
+                return a.vq(a.rb(o)).slice(0, -2);
+            }
+        },
+        433460: (e, t, o) => {
+            o.d(t, { Z: () => p });
+            var r = o(807896),
+                n = o(202784),
+                a = o(325686),
+                i = o(111677),
+                l = o.n(i),
+                s = o(404971),
+                c = o(868634),
+                d = o(336373),
+                u = o(181054),
+                m = o(392237),
+                h = o(823161);
+            const p = function (e) {
+                const t = d.Z.useAnalytics(),
+                    [o, a] = n.useState(),
+                    i = !!(o && o > 70),
+                    { "aria-label": l, presenceRingType: s, spaceId: c, ...m } = e,
+                    p =
+                        l ||
+                        (function (e, t) {
+                            switch (e) {
+                                case "audiospace":
+                                    return v.activeAudioSpace({ screenName: t });
+                                case "livevideo":
+                                    return v.activeLiveVideo({ screenName: t });
+                                default:
+                                    return;
+                            }
+                        })(s, e.screenName);
+                n.useEffect(() => {
+                    switch (s) {
+                        case "audiospace":
+                            t.scribe({ action: "impression", element: "audiospace_ring" });
+                            break;
+                        case "livevideo":
+                            t.scribe({ action: "impression", element: "livevideo_ring" });
+                    }
+                }, [t, s]);
+                const y = n.useCallback((e) => n.createElement(u.Z.Default, (0, r.Z)({}, e, { type: s })), [s]);
+                return n.createElement(
+                    h.default,
+                    (0, r.Z)({}, m, {
+                        BorderComponent: y,
+                        "aria-label": p,
+                        avatarRef: function (e) {
+                            if (e) {
+                                const t = e.getBoundingClientRect();
+                                t.width !== o && a(t.width);
+                            }
+                        },
+                        borderWidth: i ? "large" : "medium",
+                        decoration: n.createElement(f, { isWide: i, type: s }),
+                        gapWidth: i ? "space4" : "space2",
+                        onClick: function () {
+                            switch (s) {
+                                case "audiospace":
+                                    t.scribe({ action: "click", element: "audiospace_ring" });
+                                    break;
+                                case "livevideo":
+                                    t.scribe({ action: "click", element: "livevideo_ring" });
+                            }
+                        },
+                        withLink: !0,
+                    }),
+                );
             };
-            i.metadata = { width: 24, height: 24 };
-            const s = i;
+            function f(e) {
+                switch (e.type) {
+                    case "audiospace":
+                    case "livevideo":
+                        return n.createElement(y, e);
+                    default:
+                        return null;
+                }
+            }
+            function y(e) {
+                return "livevideo" === e.type ? n.createElement(c.ZP, { fontSize: e.isWide ? "subtext2" : "subtext3", style: [b.liveVideoLabelContainer, b.borderNarrow, e.isWide ? b.liveVideoLabel : b.liveVideoLabelNarrow], type: "live" }) : n.createElement(a.Z, { style: [b.root, e.isWide ? b.rootWide : b.rootNarrow] }, n.createElement(u.Z.Default, { style: [b.spaceGradient, e.isWide ? b.borderWide : b.borderNarrow] }, n.createElement(s.default, { style: b.spaceIcon })));
+            }
+            const b = m.default.create((e) => {
+                    const t = e.spacesPx.space16 + e.spacesPx.space2,
+                        o = "100%",
+                        r = e.spacesPx.space4,
+                        n = e.spacesPx.space2;
+                    return { root: { borderRadius: e.borderRadii.infinite, bottom: 0, end: 0, height: "30%", minHeight: t, minWidth: t, pointerEvents: "none", position: "absolute", width: "30%" }, liveVideoLabelContainer: { maxWidth: "120%" }, liveVideoLabel: { borderColor: e.colors.cellBackground, bottom: 0, start: "50%", position: "absolute", transform: [{ translateX: "-50%" }, { translateY: "25%" }] }, liveVideoLabelNarrow: { borderColor: e.colors.cellBackground, bottom: 0, start: "50%", position: "absolute", transform: [{ translateX: "-50%" }, { translateY: "30%" }], paddingHorizontal: e.spaces.space2, paddingVertical: 0 }, rootWide: { end: -1 * r, bottom: -1 * r }, rootNarrow: { end: -1 * n, bottom: -1 * n }, borderWide: { borderWidth: r }, borderNarrow: { borderWidth: n }, spaceGradient: { justifyContent: "center", width: o, height: o, borderRadius: e.borderRadii.infinite, borderColor: e.colors.cellBackground }, spaceIcon: { padding: e.spaces.space2, color: e.colors.white } };
+                }),
+                v = { withoutUsernameFallback: l().b3688156, activeAudioSpace: l().c0eb8825, activeLiveVideo: l().d068dc6d };
+        },
+        238406: (e, t, o) => {
+            o.d(t, { Z: () => s });
+            var r = o(202784),
+                n = o(731708),
+                a = o(354149),
+                i = o(310452),
+                l = o(720283);
+            const s = ({ animateIn: e, description: t, entities: o, isConcise: s, style: c, testID: d, userId: u, withheldDescription: m, withheldEntities: h }) => {
+                const { description: p, entities: f } = (0, l.H)({ description: t, entities: o, withheldDescription: m, withheldEntities: h }),
+                    y = i.ZP.descriptionTextParts(p, f);
+                return y.length
+                    ? r.createElement(
+                          n.ZP,
+                          { dir: "auto", numberOfLines: s ? 2 : void 0, style: c, testID: d },
+                          y.map((t, o) => r.createElement(a.ZP, { animateIn: e, key: `user_${u}_textpart_${o}`, linkify: !0, part: t })),
+                      )
+                    : null;
+            };
+        },
+        720283: (e, t, o) => {
+            o.d(t, { H: () => r });
+            const r = ({ description: e, entities: t, withheldDescription: o, withheldEntities: r }) => (o ? { description: o, entities: r } : { description: e, entities: t });
+        },
+        27137: (e, t, o) => {
+            o.d(t, { Z: () => n });
+            var r = o(157396);
+            const n = (0, o(587878).Z)({ palette: r.CV.light, key: "light-blue-normal", highContrastEnabled: !1, chirpFontEnabled: !1, scale: "normal" });
+        },
+        98440: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => s });
+            var r = o(202784),
+                n = o(890601),
+                a = o(783427),
+                i = o(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
+        226597: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => s });
+            var r = o(202784),
+                n = o(890601),
+                a = o(783427),
+                i = o(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
+        155353: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => s });
+            var r = o(202784),
+                n = o(890601),
+                a = o(783427),
+                i = o(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
+        452661: (e, t, o) => {
+            o.d(t, { Z: () => f });
+            var r = o(18198),
+                n = {
+                    centroidDimension: function (e, t, o, r) {
+                        var a = e.touchBank,
+                            i = 0,
+                            l = 0,
+                            s = 1 === e.numberActiveTouches ? e.touchBank[e.indexOfSingleActiveTouch] : null;
+                        if (null !== s) s.touchActive && s.currentTimeStamp > t && ((i += r && o ? s.currentPageX : r && !o ? s.currentPageY : !r && o ? s.previousPageX : s.previousPageY), (l = 1));
+                        else
+                            for (var c = 0; c < a.length; c++) {
+                                var d = a[c];
+                                if (null != d && d.touchActive && d.currentTimeStamp >= t) {
+                                    (i += r && o ? d.currentPageX : r && !o ? d.currentPageY : !r && o ? d.previousPageX : d.previousPageY), l++;
+                                }
+                            }
+                        return l > 0 ? i / l : n.noCentroid;
+                    },
+                    currentCentroidXOfTouchesChangedAfter: function (e, t) {
+                        return n.centroidDimension(e, t, !0, !0);
+                    },
+                    currentCentroidYOfTouchesChangedAfter: function (e, t) {
+                        return n.centroidDimension(e, t, !1, !0);
+                    },
+                    previousCentroidXOfTouchesChangedAfter: function (e, t) {
+                        return n.centroidDimension(e, t, !0, !1);
+                    },
+                    previousCentroidYOfTouchesChangedAfter: function (e, t) {
+                        return n.centroidDimension(e, t, !1, !1);
+                    },
+                    currentCentroidX: function (e) {
+                        return n.centroidDimension(e, 0, !0, !0);
+                    },
+                    currentCentroidY: function (e) {
+                        return n.centroidDimension(e, 0, !1, !0);
+                    },
+                    noCentroid: -1,
+                };
+            const a = n;
+            var i = a.currentCentroidXOfTouchesChangedAfter,
+                l = a.currentCentroidYOfTouchesChangedAfter,
+                s = a.previousCentroidXOfTouchesChangedAfter,
+                c = a.previousCentroidYOfTouchesChangedAfter,
+                d = a.currentCentroidX,
+                u = a.currentCentroidY,
+                m = {
+                    _initializeGestureState(e) {
+                        (e.moveX = 0), (e.moveY = 0), (e.x0 = 0), (e.y0 = 0), (e.dx = 0), (e.dy = 0), (e.vx = 0), (e.vy = 0), (e.numberActiveTouches = 0), (e._accountsForMovesUpTo = 0);
+                    },
+                    _updateGestureStateOnMove(e, t) {
+                        (e.numberActiveTouches = t.numberActiveTouches), (e.moveX = i(t, e._accountsForMovesUpTo)), (e.moveY = l(t, e._accountsForMovesUpTo));
+                        var o = e._accountsForMovesUpTo,
+                            r = s(t, o),
+                            n = i(t, o),
+                            a = c(t, o),
+                            d = l(t, o),
+                            u = e.dx + (n - r),
+                            m = e.dy + (d - a),
+                            h = t.mostRecentTimeStamp - e._accountsForMovesUpTo;
+                        (e.vx = (u - e.dx) / h), (e.vy = (m - e.dy) / h), (e.dx = u), (e.dy = m), (e._accountsForMovesUpTo = t.mostRecentTimeStamp);
+                    },
+                    create(e) {
+                        var t = { handle: null, shouldCancelClick: !1, timeout: null },
+                            o = { stateID: Math.random(), moveX: 0, moveY: 0, x0: 0, y0: 0, dx: 0, dy: 0, vx: 0, vy: 0, numberActiveTouches: 0, _accountsForMovesUpTo: 0 };
+                        return {
+                            panHandlers: {
+                                onStartShouldSetResponder: (t) => null != e.onStartShouldSetPanResponder && e.onStartShouldSetPanResponder(t, o),
+                                onMoveShouldSetResponder: (t) => null != e.onMoveShouldSetPanResponder && e.onMoveShouldSetPanResponder(t, o),
+                                onStartShouldSetResponderCapture: (t) => (1 === t.nativeEvent.touches.length && m._initializeGestureState(o), (o.numberActiveTouches = t.touchHistory.numberActiveTouches), null != e.onStartShouldSetPanResponderCapture && e.onStartShouldSetPanResponderCapture(t, o)),
+                                onMoveShouldSetResponderCapture(t) {
+                                    var r = t.touchHistory;
+                                    return o._accountsForMovesUpTo !== r.mostRecentTimeStamp && (m._updateGestureStateOnMove(o, r), !!e.onMoveShouldSetPanResponderCapture && e.onMoveShouldSetPanResponderCapture(t, o));
+                                },
+                                onResponderGrant: (n) => (
+                                    t.handle || (t.handle = r.Z.createInteractionHandle()),
+                                    t.timeout &&
+                                        (function (e) {
+                                            clearTimeout(e.timeout);
+                                        })(t),
+                                    (t.shouldCancelClick = !0),
+                                    (o.x0 = d(n.touchHistory)),
+                                    (o.y0 = u(n.touchHistory)),
+                                    (o.dx = 0),
+                                    (o.dy = 0),
+                                    e.onPanResponderGrant && e.onPanResponderGrant(n, o),
+                                    null == e.onShouldBlockNativeResponder || e.onShouldBlockNativeResponder(n, o)
+                                ),
+                                onResponderReject(r) {
+                                    h(t, e.onPanResponderReject, r, o);
+                                },
+                                onResponderRelease(r) {
+                                    h(t, e.onPanResponderRelease, r, o), p(t), m._initializeGestureState(o);
+                                },
+                                onResponderStart(t) {
+                                    var r = t.touchHistory;
+                                    (o.numberActiveTouches = r.numberActiveTouches), e.onPanResponderStart && e.onPanResponderStart(t, o);
+                                },
+                                onResponderMove(t) {
+                                    var r = t.touchHistory;
+                                    o._accountsForMovesUpTo !== r.mostRecentTimeStamp && (m._updateGestureStateOnMove(o, r), e.onPanResponderMove && e.onPanResponderMove(t, o));
+                                },
+                                onResponderEnd(r) {
+                                    var n = r.touchHistory;
+                                    (o.numberActiveTouches = n.numberActiveTouches), h(t, e.onPanResponderEnd, r, o);
+                                },
+                                onResponderTerminate(r) {
+                                    h(t, e.onPanResponderTerminate, r, o), p(t), m._initializeGestureState(o);
+                                },
+                                onResponderTerminationRequest: (t) => null == e.onPanResponderTerminationRequest || e.onPanResponderTerminationRequest(t, o),
+                                onClickCapture: (e) => {
+                                    !0 === t.shouldCancelClick && (e.stopPropagation(), e.preventDefault());
+                                },
+                            },
+                            getInteractionHandle: () => t.handle,
+                        };
+                    },
+                };
+            function h(e, t, o, n) {
+                e.handle && (r.Z.clearInteractionHandle(e.handle), (e.handle = null)), t && t(o, n);
+            }
+            function p(e) {
+                e.timeout = setTimeout(() => {
+                    e.shouldCancelClick = !1;
+                }, 250);
+            }
+            const f = m;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.UserHandler.b31efcca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.UserHandler.30b3120a.js.map

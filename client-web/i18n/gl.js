@@ -3959,6 +3959,7 @@
                 t("j6cdf012", "Co-hosts can’t invite or remove other co-hosts"),
                 t("c727d116", "Co-hosts can’t end the Space"),
                 t("g69084b8", "Accept co-host invite"),
+                t("ddd5cfe2", "Dock"),
                 t("ee230734", "Amosar máis opcións"),
                 t("ic8c615e", "Escoller e enviar unha opción de resposta rápida"),
                 t("a04077c4", "Escolle 1 foto, vídeo ou GIF."),
@@ -4928,9 +4929,9 @@
                 t("d9f9dec0", "View Space"),
                 t("h0c1f37a", "View Space Analytics"),
                 t("e41fffbc", "The total watch time of your videos."),
-                t("if2909ba", "Watch Time"),
-                t("i0e5bf4c", "Your videos");
-            t("ed99baea", "Early Beta Access"),
+                t("if2909ba", "Watch Time");
+            t("i0e5bf4c", "Your videos"),
+                t("ed99baea", "Early Beta Access"),
                 t("gf898b70", "Advanced Search"),
                 t("d2a43a7a", 'contains both "ai" and "startup"'),
                 t("a8584698", "ai startup"),
@@ -5884,9 +5885,9 @@
                 t("e41c9b4f", function (e) {
                     return "Gardouse en " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Eliminar cartafol"),
-                t("f4ea967a", "Eliminouse o cartafol");
-            t("b670aa62", "Nome do cartafol"),
+                t("h18f86a4", "Eliminar cartafol");
+            t("f4ea967a", "Eliminouse o cartafol"),
+                t("b670aa62", "Nome do cartafol"),
                 t("aece5462", "O nome do cartafol actualizouse correctamente"),
                 t("e3299b94", "Houbo algún problema. Tenta actualizar o cartafol de novo dentro dun minuto."),
                 t("c09ea714", "Houbo algún problema. Tenta eliminar o cartafol de novo dentro dun minuto."),
@@ -6480,6 +6481,7 @@
                 t("babfa32c", "Personalizar rapidamente a visualización"),
                 t("a2a2f98e", "Ver as novidades"),
                 t("b4a361c0", "Podes personalizar a cor e o tamaño do texto, así como controlar a selección do modo escuro. Só ti podes ver esta configuración."),
+                t("g4743c56", "Start following"),
                 t("c797b44e", "The latest stories on X - as told by posts."),
                 t("a19ce060", "A exploración non está dispoñible."),
                 t("f7d1a8e0", "Aplicación para Android"),
@@ -6887,10 +6889,10 @@
                 t("ede7d0a2", "Currency"),
                 t("b925c18c", "Salary Type"),
                 t("j3d242ce", "Invalid range"),
-                t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
-                t("b8cbb51a", "Job Summary"),
-                t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.");
-            t("b075c68a", "Edit job"),
+                t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search.");
+            t("b8cbb51a", "Job Summary"),
+                t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                t("b075c68a", "Edit job"),
                 t("d4b6a6e0", "Detalles principais do perfil"),
                 t("j2dd3686", "Highlight featured jobs above my posts."),
                 t("af1cfd46", "ATS integration"),
@@ -7867,9 +7869,7 @@
                     return "Welcome back, " + e.displayName;
                 }),
                 t("a76d58ba", "Ads Analytics"),
-                t("eccd0e1a", "Organization Analytics"),
-                t("deea1708", "Want to view analytics across all your X accounts?"),
-                t("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics.");
+                t("eccd0e1a", "Organization Analytics");
             function r(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var t = a[o];
@@ -7908,7 +7908,9 @@
                     s(e, a)
                 );
             }
-            t("gf67aae4", "Upgrade to Full Access"),
+            t("deea1708", "Want to view analytics across all your X accounts?"),
+                t("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
+                t("gf67aae4", "Upgrade to Full Access"),
                 t("h75e3618", "Include organization"),
                 t("h24a8862", "About this checkbox"),
                 t("c29e3a88", "Select affiliates"),
@@ -8905,12 +8907,12 @@
                 t("j0f12222", "Ver máis"),
                 t("f569f7c8", "Ir ao sitio web"),
                 t("j0c6772a", "Visitar sitio web"),
-                t("f73003aa", "O vídeo reproducirase despois do anuncio"),
-                t("b3112b8a", "Omitir"),
-                t("h6333ad0", "Omitir anuncio");
-            t("c59da417", function (e) {
-                return "Omitir anuncio dentro de " + e.seconds;
-            }),
+                t("f73003aa", "O vídeo reproducirase despois do anuncio");
+            t("b3112b8a", "Omitir"),
+                t("h6333ad0", "Omitir anuncio"),
+                t("c59da417", function (e) {
+                    return "Omitir anuncio dentro de " + e.seconds;
+                }),
                 t("c3c147cf", function (e) {
                     return "Omitir " + e.seconds;
                 }),
@@ -13354,4 +13356,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.f5a258ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.ccef443a.js.map

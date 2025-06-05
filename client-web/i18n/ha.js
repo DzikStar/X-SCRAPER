@@ -3958,6 +3958,7 @@
                 t("j6cdf012", "Co-hosts can’t invite or remove other co-hosts"),
                 t("c727d116", "Co-hosts can’t end the Space"),
                 t("g69084b8", "Accept co-host invite"),
+                t("ddd5cfe2", "Dock"),
                 t("ee230734", "Nuna ƙarin zaɓuɓɓuka"),
                 t("ic8c615e", "Zaɓi da kuma aika zaɓin amsa da sauri"),
                 t("a04077c4", "Zaɓi hoto 1, bidiyo ko GIF."),
@@ -4927,9 +4928,9 @@
                 t("d9f9dec0", "View Space"),
                 t("h0c1f37a", "View Space Analytics"),
                 t("e41fffbc", "The total watch time of your videos."),
-                t("if2909ba", "Watch Time"),
-                t("i0e5bf4c", "Your videos");
-            t("ed99baea", "Early Beta Access"),
+                t("if2909ba", "Watch Time");
+            t("i0e5bf4c", "Your videos"),
+                t("ed99baea", "Early Beta Access"),
                 t("gf898b70", "Advanced Search"),
                 t("d2a43a7a", 'contains both "ai" and "startup"'),
                 t("a8584698", "ai startup"),
@@ -5883,9 +5884,9 @@
                 t("e41c9b4f", function (a) {
                     return "Ana dana a " + a.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Share Folda"),
-                t("f4ea967a", "An share folda");
-            t("b670aa62", "Sunan Folda"),
+                t("h18f86a4", "Share Folda");
+            t("f4ea967a", "An share folda"),
+                t("b670aa62", "Sunan Folda"),
                 t("aece5462", "An yi nasarar sabunta sunan folda"),
                 t("e3299b94", "Wata matsala ta faru. Sake gwada sabunta wannan folda a cikin minti ɗaya."),
                 t("c09ea714", "Wata matsala ta faru. Sake gwada share wannan folda a cikin minti ɗaya."),
@@ -6479,6 +6480,7 @@
                 t("babfa32c", "Keɓance kallonka cikin gaggawa"),
                 t("a2a2f98e", "Ga sabon abu"),
                 t("b4a361c0", "Kana iya keɓance launi da girman rubutunka, da sarrafa zaɓin yanayin duhunka, a yanzu. Waɗannan saitunan suna bayyane a gare ka kawai."),
+                t("g4743c56", "Start following"),
                 t("c797b44e", "The latest stories on X - as told by posts."),
                 t("a19ce060", "Bincike ba ya samuwa."),
                 t("f7d1a8e0", "Manhajar Android"),
@@ -6886,10 +6888,10 @@
                 t("ede7d0a2", "Currency"),
                 t("b925c18c", "Salary Type"),
                 t("j3d242ce", "Invalid range"),
-                t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
-                t("b8cbb51a", "Job Summary"),
-                t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.");
-            t("b075c68a", "Edit job"),
+                t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search.");
+            t("b8cbb51a", "Job Summary"),
+                t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                t("b075c68a", "Edit job"),
                 t("d4b6a6e0", "Hasken Furofayil"),
                 t("j2dd3686", "Highlight featured jobs above my posts."),
                 t("af1cfd46", "ATS integration"),
@@ -7866,9 +7868,7 @@
                     return "Welcome back, " + a.displayName;
                 }),
                 t("a76d58ba", "Ads Analytics"),
-                t("eccd0e1a", "Organization Analytics"),
-                t("deea1708", "Want to view analytics across all your X accounts?"),
-                t("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics.");
+                t("eccd0e1a", "Organization Analytics");
             function r(a, e) {
                 for (var n = 0; n < e.length; n++) {
                     var t = e[n];
@@ -7907,7 +7907,9 @@
                     u(a, e)
                 );
             }
-            t("gf67aae4", "Upgrade to Full Access"),
+            t("deea1708", "Want to view analytics across all your X accounts?"),
+                t("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
+                t("gf67aae4", "Upgrade to Full Access"),
                 t("h75e3618", "Include organization"),
                 t("h24a8862", "About this checkbox"),
                 t("c29e3a88", "Select affiliates"),
@@ -8904,12 +8906,12 @@
                 t("j0f12222", "Ga ƙari"),
                 t("f569f7c8", "Go to website"),
                 t("j0c6772a", "Visit website"),
-                t("f73003aa", "Video will play after ad"),
-                t("b3112b8a", "Tsallake"),
-                t("h6333ad0", "Skip Ad");
-            t("c59da417", function (a) {
-                return "Skip Ad in " + a.seconds;
-            }),
+                t("f73003aa", "Video will play after ad");
+            t("b3112b8a", "Tsallake"),
+                t("h6333ad0", "Skip Ad"),
+                t("c59da417", function (a) {
+                    return "Skip Ad in " + a.seconds;
+                }),
                 t("c3c147cf", function (a) {
                     return "Skip " + a.seconds;
                 }),
@@ -13352,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.fcb1de3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.8d93347a.js.map

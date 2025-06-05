@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.DirectMessages-6107ac1a", "icons/IconUnlock-js"],
+    ["bundle.DirectMessages-6107ac1a"],
     {
         371706: (e, t, n) => {
             n.d(t, { Z: () => u });
@@ -279,19 +279,6 @@
             n.d(t, { Z: () => o });
             const o = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        416955: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => l });
-            var o = n(202784),
-                i = n(890601),
-                a = n(783427),
-                s = n(347101);
-            const r = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M9 7.75a3 3 0 015.179-2.062l1.452-1.376A5 5 0 007 7.75V8h-.499a2.5 2.5 0 00-2.5 2.5v9a2.5 2.5 0 002.5 2.5h11a2.5 2.5 0 002.5-2.5v-9a2.5 2.5 0 00-2.5-2.5H9zM10.002 14a2 2 0 113 1.732V18h-2v-2.268a2 2 0 01-1-1.732z" })) }, { writingDirection: t });
-            };
-            r.metadata = { width: 24, height: 24 };
-            const l = r;
-        },
         548102: (e) => {
             var t = /[|\\{}()[\]^$+*?.]/g;
             e.exports = function (e) {
@@ -301,4 +288,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-6107ac1a.69f30a4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-6107ac1a.20706faa.js.map

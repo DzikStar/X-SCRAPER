@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.PremiumGifting", "icons/IconChevronDown-js"],
+    ["bundle.PremiumGifting"],
     {
         310456: (e, a, t) => {
             t.d(a, { p: () => r });
@@ -488,8 +488,8 @@
                 E = t(736063),
                 x = t(952793),
                 L = t(782642),
-                w = t(97882),
-                K = t(782826),
+                K = t(97882),
+                w = t(782826),
                 D = t(337394),
                 I = (function () {
                     var e = [{ defaultValue: null, kind: "LocalArgument", name: "stripeId" }],
@@ -566,11 +566,11 @@
                 O = t(412876),
                 U = t(553660),
                 W = t(615027),
-                z = t(688715),
-                H = t(847579);
-            const G = (0, z.ju)("https://legal.x.com/purchaser-terms"),
-                $ = (0, z.ju)("https://help.x.com/using-x/x-premium/gifting"),
-                Q = () => m.createElement(H.Z, { withoutBorder: !0 }, m.createElement(S().I18NFormatMessage, { $i18n: "h7f3e309" }, m.createElement(v.ZP, { link: G }, S().f3fddc98), m.createElement(v.ZP, { link: $ }, S().cff9c889)));
+                H = t(688715),
+                z = t(847579);
+            const G = (0, H.ju)("https://legal.x.com/purchaser-terms"),
+                $ = (0, H.ju)("https://help.x.com/using-x/x-premium/gifting"),
+                Q = () => m.createElement(z.Z, { withoutBorder: !0 }, m.createElement(S().I18NFormatMessage, { $i18n: "h7f3e309" }, m.createElement(v.ZP, { link: G }, S().f3fddc98), m.createElement(v.ZP, { link: $ }, S().cff9c889)));
             t(571372);
             var j = (function () {
                 var e = { defaultValue: null, kind: "LocalArgument", name: "cancel_url" },
@@ -644,7 +644,7 @@
                         [l, s] = m.useState("BlueVerifiedPlus"),
                         [o, c] = m.useState(!1),
                         d = f()(ce, { screenName: a }, { fetchPolicy: "network-only" }),
-                        { origin: u } = K.ZP.get(),
+                        { origin: u } = w.ZP.get(),
                         p = (0, L.p)(),
                         [h, P] = ee({ successUrl: `${u}/${a}/gift-premium/success`, cancelUrl: `${u}/${a}/gift-premium` }),
                         F = i[l],
@@ -652,8 +652,8 @@
                         I = m.useMemo(() => E?.prices?.find((e) => "OneTime" === e.price_type), [E?.prices]),
                         R = (0, x.hC)("subscriptions_marketing_page_include_tax_enabled"),
                         A = (0, x.hC)("subscriptions_gifting_premium_intro_copy_enabled"),
-                        z = I ? (0, w.x)({ amount: (0, V.aU)(I, R), currencyCode: I.currency_code.toUpperCase(), removeTrailingZeros: !0 }) : null,
-                        H = m.useCallback(() => {
+                        H = I ? (0, K.x)({ amount: (0, V.aU)(I, R), currencyCode: I.currency_code.toUpperCase(), removeTrailingZeros: !0 }) : null,
+                        z = m.useCallback(() => {
                             r.scribe({ component: "dismiss_button", action: "click" }), n.goBack();
                         }, [r, n]),
                         G = d?.user?.result,
@@ -664,7 +664,7 @@
                                 (r.scribe({ component: "purchase_button", action: "click" }),
                                 c(!0),
                                 h({ receiverId: $, productId: F })
-                                    .then((e) => K.ZP.navigateTo(e))
+                                    .then((e) => w.ZP.navigateTo(e))
                                     .catch((e) => {
                                         const a = e?.errors?.[0]?.code,
                                             t = a === T.ZP.GenericAccessDenied ? oe : se;
@@ -675,12 +675,12 @@
                         Y = m.useMemo(() => {
                             const e = o || P,
                                 a = !l || e;
-                            return m.createElement(g.Z, { style: [me.footer, q] }, m.createElement(y.ZP, { disabled: a, onPress: j, type: "primaryFilled" }, e ? m.createElement(k.Z, null) : ne({ price: z })), m.createElement(Q, null));
-                        }, [z, j, P, o, q, l]),
+                            return m.createElement(g.Z, { style: [me.footer, q] }, m.createElement(y.ZP, { disabled: a, onPress: j, type: "primaryFilled" }, e ? m.createElement(k.Z, null) : ne({ price: H })), m.createElement(Q, null));
+                        }, [H, j, P, o, q, l]),
                         X = m.useCallback((e) => s(C.p[e]), [s]),
                         J = d?.blue_marketing_page_config?.products?.map(({ product_category: e, title: a }) => (e && a && "PremiumBasic" !== e ? { label: a, value: e } : null)).filter(Boolean),
                         le = D.St[l];
-                    return J && a && G && z && G?.premium_gifting_eligible ? m.createElement(Z.Z, { backButtonType: "close", bottomBar: Y, history: n, onBackClick: H }, m.createElement(g.Z, { style: [me.root, q] }, m.createElement(g.Z, { style: me.content }, m.createElement(v.ZP, { align: "center", size: "title2", weight: "heavy" }, A ? re({ percentage: 40 }) : te), "User" === G.__typename ? m.createElement(g.Z, { style: me.alignCenter }, m.createElement(O.Z, { size: "custom", style: me.userAvatar, user: G, withLink: !1 }), m.createElement(U.Z, { style: me.alignCenter, user: G, withLink: !1, withStackedLayout: !0 })) : null, m.createElement(B.ZP, { label: ie, onChange: X, options: J, testID: "tier", value: l }), m.createElement(v.ZP, null, m.createElement(S().I18NFormatMessage, { $i18n: "ccd45e5f", tier: le, screenName: a, price: z }))))) : m.createElement(W.Z, { to: "/home" });
+                    return J && a && G && H && G?.premium_gifting_eligible ? m.createElement(Z.Z, { backButtonType: "close", bottomBar: Y, history: n, onBackClick: z }, m.createElement(g.Z, { style: [me.root, q] }, m.createElement(g.Z, { style: me.content }, m.createElement(v.ZP, { align: "center", size: "title2", weight: "heavy" }, A ? re({ percentage: 40 }) : te), "User" === G.__typename ? m.createElement(g.Z, { style: me.alignCenter }, m.createElement(O.Z, { size: "custom", style: me.userAvatar, user: G, withLink: !1 }), m.createElement(U.Z, { style: me.alignCenter, user: G, withLink: !1, withStackedLayout: !0 })) : null, m.createElement(B.ZP, { label: ie, onChange: X, options: J, testID: "tier", value: l }), m.createElement(v.ZP, null, m.createElement(S().I18NFormatMessage, { $i18n: "ccd45e5f", tier: le, screenName: a, price: H }))))) : m.createElement(W.Z, { to: "/home" });
                 },
                 ue = { context: "PremiumGifting" },
                 pe = (e) => m.createElement(A.nO, { namespace: le }, m.createElement(E.H, { errorConfig: ue }, m.createElement(de, e))),
@@ -814,19 +814,6 @@
             t.d(a, { Z: () => r });
             const r = t(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        487552: (e, a, t) => {
-            t.r(a), t.d(a, { default: () => o });
-            var r = t(202784),
-                n = t(890601),
-                i = t(783427),
-                l = t(347101);
-            const s = (e = {}) => {
-                const { direction: a } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: a });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumGifting.0a27acca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumGifting.a1c7957a.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.MediaPreviewVideoPlayer", "icons/IconMediaCollapse-js"],
+    ["loader.MediaPreviewVideoPlayer", "icons/IconClosedcaptioning-js"],
     {
         298607: (e, t, r) => {
             r.r(t), r.d(t, { __DANGEROUS_IMPORT_VIDEOPLAYER__: () => q });
@@ -30,8 +30,8 @@
                 T = r(70889),
                 R = r(445014),
                 x = r(986460),
-                Z = r(424713),
-                k = r(2138),
+                k = r(424713),
+                Z = r(2138),
                 A = r(173739);
             const M = i().f06f2e53;
             class B extends n.PureComponent {
@@ -43,7 +43,7 @@
                             const r = t?.(e) ?? this._defaultGetScrubToFraction(e);
                             "number" == typeof r && this._throttledPlayerSeek(r);
                         }),
-                        (this._throttledPlayerSeek = (0, k.Z)(
+                        (this._throttledPlayerSeek = (0, Z.Z)(
                             (e) => {
                                 this.props.playerApi.scrubToFraction(e);
                             },
@@ -62,15 +62,15 @@
                 render() {
                     const { "aria-label": e, currentTime: t, duration: r, isSeeking: o } = this.props,
                         a = this.state.isScrubbing || o ? this.state.scrubTo : t;
-                    return "number" == typeof a && "number" == typeof r && r > 0 ? n.createElement(A.Z, { accessibilityLabelValueText: M({ currentTime: (0, Z.mr)(a), durationTime: (0, Z.mr)(r) }), "aria-label": e, color: "white", keepLTR: !0, keyboardStep: 5, max: r, min: 0, onActive: this._handleActive, onChange: this._handleChange, step: "any", value: a, withHidingThumb: !0 }) : null;
+                    return "number" == typeof a && "number" == typeof r && r > 0 ? n.createElement(A.Z, { accessibilityLabelValueText: M({ currentTime: (0, k.mr)(a), durationTime: (0, k.mr)(r) }), "aria-label": e, color: "white", keepLTR: !0, keyboardStep: 5, max: r, min: 0, onActive: this._handleActive, onChange: this._handleChange, step: "any", value: a, withHidingThumb: !0 }) : null;
                 }
             }
             const F = B,
                 O = i().j25d7cca,
                 L = i().a858b25c,
-                H = i().hea01798,
-                z = "PreviewControlBar-",
-                D = { CAPTIONS: `${z}Captions`, FULLSCREEN: `${z}Fullscreen` },
+                z = i().hea01798,
+                D = "PreviewControlBar-",
+                H = { CAPTIONS: `${D}Captions`, FULLSCREEN: `${D}Fullscreen` },
                 I = (e) => e === E.c.narrow || e === E.c.veryNarrow;
             class U extends n.PureComponent {
                 constructor(e) {
@@ -82,7 +82,7 @@
                             const { controls: r, isPlaying: o } = t,
                                 { pause: a, play: i, replay: s } = e,
                                 { currentBreakpoint: l } = this.state,
-                                c = (0, Z.Ci)(t),
+                                c = (0, k.Ci)(t),
                                 u = I(l) ? "xSmall" : "medium";
                             return !c || c.isLive ? null : o || (r && "PLAY_REQUESTED" === r.playState) ? n.createElement(w.Z, { "aria-label": x.gF, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(p.default, null), onPress: a, size: u }) : r.isReplayButtonShown ? n.createElement(w.Z, { "aria-label": x.Js, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(m.default, null), onPress: s, size: u }) : n.createElement(w.Z, { "aria-label": x.M2, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(S.default, null), onPress: i, size: u });
                         }),
@@ -101,13 +101,13 @@
                             e.fullScreen(this.props.containerRef);
                         }),
                         (this._exitFullScreen = (e) => () => e.exitFullScreen()),
-                        (this._getScrubToFraction = (0, f.Z)((e) => (t) => (0, Z.aZ)(e, t))),
+                        (this._getScrubToFraction = (0, f.Z)((e) => (t) => (0, k.aZ)(e, t))),
                         (this._renderScrubber = (e) =>
                             this.props.showScrubber && this.state.showScrubber
                                 ? n.createElement(
                                       h.Z,
                                       { style: R.ZP.scrubber },
-                                      n.createElement(o.o, { periodic: !0 }, ({ playerState: t }) => n.createElement(F, { "aria-label": H, currentTime: (0, Z.SY)(t), duration: (0, Z.zm)(t), getScrubToFraction: this._getScrubToFraction(t), isScrubbing: t.isScrubbing, isSeeking: t.isSeeking, playerApi: e })),
+                                      n.createElement(o.o, { periodic: !0 }, ({ playerState: t }) => n.createElement(F, { "aria-label": z, currentTime: (0, k.SY)(t), duration: (0, k.zm)(t), getScrubToFraction: this._getScrubToFraction(t), isScrubbing: t.isScrubbing, isSeeking: t.isSeeking, playerApi: e })),
                                   )
                                 : null),
                         (this._renderVolume = (e, t) => {
@@ -119,7 +119,7 @@
                             return n.createElement(_.Z, { accessibilityLabelIcon: d, accessibilityLabelSlider: x.Nj, containerHeight: l, isMuted: r, onHideSlider: this._showScrubberHandler(!0), onMuteToggle: u, onShowSlider: this._showScrubberHandler(!1), onSliderChange: this._setVolumePercent(i), size: I(c) ? "xSmall" : "medium", volumePercent: 100 * o });
                         }),
                         (this._renderCaptionsButton = (e, t) => {
-                            const r = (0, Z.Ci)(t);
+                            const r = (0, k.Ci)(t);
                             if (r && r.hasCaptions) {
                                 const { currentBreakpoint: r } = this.state,
                                     { areCaptionsShown: o } = t,
@@ -138,17 +138,17 @@
                         (this._getTimestampValues = (e) => {
                             const { controls: t, isSeeking: r } = e,
                                 { playbackTimeRange: n, scrubToFraction: o } = t,
-                                a = (0, Z.MU)((0, Z.Ci)(e)),
-                                i = (0, Z.zm)(e);
+                                a = (0, k.MU)((0, k.Ci)(e)),
+                                i = (0, k.zm)(e);
                             if (!a || !i) return null;
                             if (r && void 0 !== o && a) {
                                 return { duration: i, currentTime: o * a - (n?.startTimeS ?? 0) };
                             }
-                            return { duration: i, currentTime: (0, Z.SY)(e) };
+                            return { duration: i, currentTime: (0, k.SY)(e) };
                         }),
                         (this._formatTimePlayed = ({ currentTime: e, duration: t, isCompact: r }) => {
                             const n = t - e;
-                            return r ? `${(0, Z.mr)(Math.round(n))}` : `${(0, Z.mr)(Math.round(e))} / ${(0, Z.mr)(Math.round(t))}`;
+                            return r ? `${(0, k.mr)(Math.round(n))}` : `${(0, k.mr)(Math.round(e))} / ${(0, k.mr)(Math.round(t))}`;
                         }),
                         (this._showScrubberHandler = (e) => () => this.setState({ showScrubber: e })),
                         (this._setVolumePercent = (e) => (t) => {
@@ -175,7 +175,7 @@
                 }
                 render() {
                     const { hideControls: e, playerApi: t, playerState: r } = this.props;
-                    return t && r ? n.createElement(c.Z.ObserverContext.Consumer, null, (o) => n.createElement(h.Z, { onLayout: this._handleLayout, pointerEvents: "auto", ref: this._parentRef, style: R.i3 }, n.createElement(P.Z, { actionButton: this._renderActionButton(t, r), displayDismissableControls: !e, rightContent: n.createElement(n.Fragment, null, this._renderTimePlayed(), n.createElement(o, { focus: !0, interactionKey: D.CAPTIONS, interactionTimeoutMs: 0, mouseover: !0 }, this._renderCaptionsButton(t, r)), this._renderVolume(t, r), n.createElement(o, { focus: !0, interactionKey: D.FULLSCREEN, interactionTimeoutMs: 0, mouseover: !0 }, this._renderFullScreenButton(t, r))), scrubber: this._renderScrubber(t) }))) : null;
+                    return t && r ? n.createElement(c.Z.ObserverContext.Consumer, null, (o) => n.createElement(h.Z, { onLayout: this._handleLayout, pointerEvents: "auto", ref: this._parentRef, style: R.i3 }, n.createElement(P.Z, { actionButton: this._renderActionButton(t, r), displayDismissableControls: !e, rightContent: n.createElement(n.Fragment, null, this._renderTimePlayed(), n.createElement(o, { focus: !0, interactionKey: H.CAPTIONS, interactionTimeoutMs: 0, mouseover: !0 }, this._renderCaptionsButton(t, r)), this._renderVolume(t, r), n.createElement(o, { focus: !0, interactionKey: H.FULLSCREEN, interactionTimeoutMs: 0, mouseover: !0 }, this._renderFullScreenButton(t, r))), scrubber: this._renderScrubber(t) }))) : null;
                 }
             }
             U.defaultProps = { showScrubber: !0 };
@@ -188,14 +188,14 @@
                         },
                         style: C.default.absoluteFill,
                     }),
-                V = { MEDIA_NOT_SUPPORTED: i().f0e1fb48 },
-                j = (e, t) => (t ? V[s.Z.MEDIA_NOT_SUPPORTED] : e ? V[e] : d.I);
+                j = { MEDIA_NOT_SUPPORTED: i().f0e1fb48 },
+                V = (e, t) => (t ? j[s.Z.MEDIA_NOT_SUPPORTED] : e ? j[e] : d.I);
             const Y = function (e) {
                 const { containerRef: t, hideControls: r, isBrowserSupported: o, playerApi: a, playerState: i, showScrubber: s } = e;
                 if (!a || !i || !t) return null;
                 const d = !1 === o,
                     h = Boolean(i.error) || d;
-                return n.createElement(n.Fragment, null, n.createElement(N, { playerApi: a, playerState: i }), n.createElement(c.Z, null, n.createElement(W, { containerRef: t, hideControls: r, playerApi: a, playerState: i, showScrubber: s })), n.createElement(l.Z, { show: h }, h && n.createElement(u.Z, { displayBackgroundImage: !0, errorMessage: j(i.error, d), imageSrc: i.posterImage })));
+                return n.createElement(n.Fragment, null, n.createElement(N, { playerApi: a, playerState: i }), n.createElement(c.Z, null, n.createElement(W, { containerRef: t, hideControls: r, playerApi: a, playerState: i, showScrubber: s })), n.createElement(l.Z, { show: h }, h && n.createElement(u.Z, { displayBackgroundImage: !0, errorMessage: V(i.error, d), imageSrc: i.posterImage })));
             };
             var X = r(640290),
                 $ = r(614425),
@@ -691,52 +691,82 @@
             var n = r(157396);
             const o = (0, r(587878).Z)({ palette: n.CV.light, key: "light-blue-normal", highContrastEnabled: !1, chirpFontEnabled: !1, scale: "normal" });
         },
-        647174: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => c });
+        38502: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
             var n = r(202784),
                 o = r(890601),
                 a = r(783427),
-                i = r(717683),
-                s = r(347101);
-            const l = (e = {}) => {
-                const t = n.useContext(i.Z),
-                    { direction: r } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, t && s.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M21.457 3.96L16.414 9H21v2h-8V3h2v4.59l5.043-5.05 1.414 1.42zM3 13h8v8H9v-4.59l-5.043 5.05-1.414-1.42L7.586 15H3v-2z" })) }, { writingDirection: r });
+                i = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M3 5.5C3 4.12 4.119 3 5.5 3h13C19.881 3 21 4.12 21 5.5v13c0 1.38-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.88 3 18.5v-13zm2.746 6.52c0 1.85 1.421 3.2 3.187 3.2v-.01h.003c1.369 0 2.154-.59 2.737-1.39l-1.22-.87c-.303.44-.812.73-1.39.73-.93 0-1.685-.75-1.685-1.68s.754-1.68 1.684-1.68c.559 0 1.051.27 1.357.69l1.207-.93c-.545-.76-1.36-1.29-2.62-1.29-1.872 0-3.26 1.41-3.26 3.21v.02zm6.584 0c0 1.85 1.421 3.2 3.185 3.2 1.368 0 2.154-.6 2.738-1.4l-1.22-.87c-.304.44-.813.74-1.39.74-.93 0-1.684-.76-1.684-1.69s.755-1.68 1.685-1.68c.559 0 1.051.27 1.356.69l1.21-.93c-.547-.76-1.36-1.29-2.622-1.29-1.872 0-3.258 1.41-3.258 3.21v.02z" })) }, { writingDirection: t });
             };
-            l.metadata = { width: 24, height: 24 };
-            const c = l;
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
         },
         614425: (e, t, r) => {
             r.d(t, { Y7: () => n });
             const n = r(795897).default;
         },
-        151624: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            const n = r(454479).Z;
-        },
-        454479: (e, t, r) => {
-            r.d(t, { Z: () => m });
+        452661: (e, t, r) => {
+            r.d(t, { Z: () => S });
             var n = r(18198),
-                o = r(661841),
-                a = o.Z.currentCentroidXOfTouchesChangedAfter,
-                i = o.Z.currentCentroidYOfTouchesChangedAfter,
-                s = o.Z.previousCentroidXOfTouchesChangedAfter,
-                l = o.Z.previousCentroidYOfTouchesChangedAfter,
-                c = o.Z.currentCentroidX,
-                u = o.Z.currentCentroidY,
-                d = {
+                o = {
+                    centroidDimension: function (e, t, r, n) {
+                        var a = e.touchBank,
+                            i = 0,
+                            s = 0,
+                            l = 1 === e.numberActiveTouches ? e.touchBank[e.indexOfSingleActiveTouch] : null;
+                        if (null !== l) l.touchActive && l.currentTimeStamp > t && ((i += n && r ? l.currentPageX : n && !r ? l.currentPageY : !n && r ? l.previousPageX : l.previousPageY), (s = 1));
+                        else
+                            for (var c = 0; c < a.length; c++) {
+                                var u = a[c];
+                                if (null != u && u.touchActive && u.currentTimeStamp >= t) {
+                                    (i += n && r ? u.currentPageX : n && !r ? u.currentPageY : !n && r ? u.previousPageX : u.previousPageY), s++;
+                                }
+                            }
+                        return s > 0 ? i / s : o.noCentroid;
+                    },
+                    currentCentroidXOfTouchesChangedAfter: function (e, t) {
+                        return o.centroidDimension(e, t, !0, !0);
+                    },
+                    currentCentroidYOfTouchesChangedAfter: function (e, t) {
+                        return o.centroidDimension(e, t, !1, !0);
+                    },
+                    previousCentroidXOfTouchesChangedAfter: function (e, t) {
+                        return o.centroidDimension(e, t, !0, !1);
+                    },
+                    previousCentroidYOfTouchesChangedAfter: function (e, t) {
+                        return o.centroidDimension(e, t, !1, !1);
+                    },
+                    currentCentroidX: function (e) {
+                        return o.centroidDimension(e, 0, !0, !0);
+                    },
+                    currentCentroidY: function (e) {
+                        return o.centroidDimension(e, 0, !1, !0);
+                    },
+                    noCentroid: -1,
+                };
+            const a = o;
+            var i = a.currentCentroidXOfTouchesChangedAfter,
+                s = a.currentCentroidYOfTouchesChangedAfter,
+                l = a.previousCentroidXOfTouchesChangedAfter,
+                c = a.previousCentroidYOfTouchesChangedAfter,
+                u = a.currentCentroidX,
+                d = a.currentCentroidY,
+                h = {
                     _initializeGestureState(e) {
                         (e.moveX = 0), (e.moveY = 0), (e.x0 = 0), (e.y0 = 0), (e.dx = 0), (e.dy = 0), (e.vx = 0), (e.vy = 0), (e.numberActiveTouches = 0), (e._accountsForMovesUpTo = 0);
                     },
                     _updateGestureStateOnMove(e, t) {
-                        (e.numberActiveTouches = t.numberActiveTouches), (e.moveX = a(t, e._accountsForMovesUpTo)), (e.moveY = i(t, e._accountsForMovesUpTo));
+                        (e.numberActiveTouches = t.numberActiveTouches), (e.moveX = i(t, e._accountsForMovesUpTo)), (e.moveY = s(t, e._accountsForMovesUpTo));
                         var r = e._accountsForMovesUpTo,
-                            n = s(t, r),
-                            o = a(t, r),
-                            c = l(t, r),
-                            u = i(t, r),
+                            n = l(t, r),
+                            o = i(t, r),
+                            a = c(t, r),
+                            u = s(t, r),
                             d = e.dx + (o - n),
-                            h = e.dy + (u - c),
+                            h = e.dy + (u - a),
                             p = t.mostRecentTimeStamp - e._accountsForMovesUpTo;
                         (e.vx = (d - e.dx) / p), (e.vy = (h - e.dy) / p), (e.dx = d), (e.dy = h), (e._accountsForMovesUpTo = t.mostRecentTimeStamp);
                     },
@@ -747,10 +777,10 @@
                             panHandlers: {
                                 onStartShouldSetResponder: (t) => null != e.onStartShouldSetPanResponder && e.onStartShouldSetPanResponder(t, r),
                                 onMoveShouldSetResponder: (t) => null != e.onMoveShouldSetPanResponder && e.onMoveShouldSetPanResponder(t, r),
-                                onStartShouldSetResponderCapture: (t) => (1 === t.nativeEvent.touches.length && d._initializeGestureState(r), (r.numberActiveTouches = t.touchHistory.numberActiveTouches), null != e.onStartShouldSetPanResponderCapture && e.onStartShouldSetPanResponderCapture(t, r)),
+                                onStartShouldSetResponderCapture: (t) => (1 === t.nativeEvent.touches.length && h._initializeGestureState(r), (r.numberActiveTouches = t.touchHistory.numberActiveTouches), null != e.onStartShouldSetPanResponderCapture && e.onStartShouldSetPanResponderCapture(t, r)),
                                 onMoveShouldSetResponderCapture(t) {
                                     var n = t.touchHistory;
-                                    return r._accountsForMovesUpTo !== n.mostRecentTimeStamp && (d._updateGestureStateOnMove(r, n), !!e.onMoveShouldSetPanResponderCapture && e.onMoveShouldSetPanResponderCapture(t, r));
+                                    return r._accountsForMovesUpTo !== n.mostRecentTimeStamp && (h._updateGestureStateOnMove(r, n), !!e.onMoveShouldSetPanResponderCapture && e.onMoveShouldSetPanResponderCapture(t, r));
                                 },
                                 onResponderGrant: (o) => (
                                     t.handle || (t.handle = n.Z.createInteractionHandle()),
@@ -759,18 +789,18 @@
                                             clearTimeout(e.timeout);
                                         })(t),
                                     (t.shouldCancelClick = !0),
-                                    (r.x0 = c(o.touchHistory)),
-                                    (r.y0 = u(o.touchHistory)),
+                                    (r.x0 = u(o.touchHistory)),
+                                    (r.y0 = d(o.touchHistory)),
                                     (r.dx = 0),
                                     (r.dy = 0),
                                     e.onPanResponderGrant && e.onPanResponderGrant(o, r),
                                     null == e.onShouldBlockNativeResponder || e.onShouldBlockNativeResponder(o, r)
                                 ),
                                 onResponderReject(n) {
-                                    h(t, e.onPanResponderReject, n, r);
+                                    p(t, e.onPanResponderReject, n, r);
                                 },
                                 onResponderRelease(n) {
-                                    h(t, e.onPanResponderRelease, n, r), p(t), d._initializeGestureState(r);
+                                    p(t, e.onPanResponderRelease, n, r), m(t), h._initializeGestureState(r);
                                 },
                                 onResponderStart(t) {
                                     var n = t.touchHistory;
@@ -778,14 +808,14 @@
                                 },
                                 onResponderMove(t) {
                                     var n = t.touchHistory;
-                                    r._accountsForMovesUpTo !== n.mostRecentTimeStamp && (d._updateGestureStateOnMove(r, n), e.onPanResponderMove && e.onPanResponderMove(t, r));
+                                    r._accountsForMovesUpTo !== n.mostRecentTimeStamp && (h._updateGestureStateOnMove(r, n), e.onPanResponderMove && e.onPanResponderMove(t, r));
                                 },
                                 onResponderEnd(n) {
                                     var o = n.touchHistory;
-                                    (r.numberActiveTouches = o.numberActiveTouches), h(t, e.onPanResponderEnd, n, r);
+                                    (r.numberActiveTouches = o.numberActiveTouches), p(t, e.onPanResponderEnd, n, r);
                                 },
                                 onResponderTerminate(n) {
-                                    h(t, e.onPanResponderTerminate, n, r), p(t), d._initializeGestureState(r);
+                                    p(t, e.onPanResponderTerminate, n, r), m(t), h._initializeGestureState(r);
                                 },
                                 onResponderTerminationRequest: (t) => null == e.onPanResponderTerminationRequest || e.onPanResponderTerminationRequest(t, r),
                                 onClickCapture: (e) => {
@@ -796,56 +826,16 @@
                         };
                     },
                 };
-            function h(e, t, r, o) {
+            function p(e, t, r, o) {
                 e.handle && (n.Z.clearInteractionHandle(e.handle), (e.handle = null)), t && t(r, o);
             }
-            function p(e) {
+            function m(e) {
                 e.timeout = setTimeout(() => {
                     e.shouldCancelClick = !1;
                 }, 250);
             }
-            const m = d;
-        },
-        661841: (e, t, r) => {
-            r.d(t, { Z: () => o });
-            var n = {
-                centroidDimension: function (e, t, r, o) {
-                    var a = e.touchBank,
-                        i = 0,
-                        s = 0,
-                        l = 1 === e.numberActiveTouches ? e.touchBank[e.indexOfSingleActiveTouch] : null;
-                    if (null !== l) l.touchActive && l.currentTimeStamp > t && ((i += o && r ? l.currentPageX : o && !r ? l.currentPageY : !o && r ? l.previousPageX : l.previousPageY), (s = 1));
-                    else
-                        for (var c = 0; c < a.length; c++) {
-                            var u = a[c];
-                            if (null != u && u.touchActive && u.currentTimeStamp >= t) {
-                                (i += o && r ? u.currentPageX : o && !r ? u.currentPageY : !o && r ? u.previousPageX : u.previousPageY), s++;
-                            }
-                        }
-                    return s > 0 ? i / s : n.noCentroid;
-                },
-                currentCentroidXOfTouchesChangedAfter: function (e, t) {
-                    return n.centroidDimension(e, t, !0, !0);
-                },
-                currentCentroidYOfTouchesChangedAfter: function (e, t) {
-                    return n.centroidDimension(e, t, !1, !0);
-                },
-                previousCentroidXOfTouchesChangedAfter: function (e, t) {
-                    return n.centroidDimension(e, t, !0, !1);
-                },
-                previousCentroidYOfTouchesChangedAfter: function (e, t) {
-                    return n.centroidDimension(e, t, !1, !1);
-                },
-                currentCentroidX: function (e) {
-                    return n.centroidDimension(e, 0, !0, !0);
-                },
-                currentCentroidY: function (e) {
-                    return n.centroidDimension(e, 0, !1, !0);
-                },
-                noCentroid: -1,
-            };
-            const o = n;
+            const S = h;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.MediaPreviewVideoPlayer.fd4dfa2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.MediaPreviewVideoPlayer.fab86ada.js.map

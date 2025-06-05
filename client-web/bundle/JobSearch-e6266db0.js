@@ -2,407 +2,376 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.JobSearch-e6266db0"],
     {
-        246851: (e, a, n) => {
-            n.d(a, { Z: () => r });
-            var o = n(202784);
-            function r(e) {
-                const a = o.useRef();
+        246851: (e, a, o) => {
+            o.d(a, { Z: () => d });
+            var r = o(202784);
+            function d(e) {
+                const a = r.useRef();
                 return (
-                    o.useEffect(() => {
+                    r.useEffect(() => {
                         a.current = e;
                     }),
                     a.current
                 );
             }
         },
-        524084: (e, a, n) => {
-            n.d(a, { Z: () => d });
-            var o = n(202784),
-                r = n(523561),
-                t = n(195560);
-            const d = (0, r.Z)({ loader: () => n.e("loader.AbsolutePower").then(n.bind(n, 590136)), renderPlaceholder: (e, a) => o.createElement(t.Z, { hasError: e, onRetry: a }) });
+        524084: (e, a, o) => {
+            o.d(a, { Z: () => l });
+            var r = o(202784),
+                d = o(523561),
+                n = o(195560);
+            const l = (0, d.Z)({ loader: () => o.e("loader.AbsolutePower").then(o.bind(o, 590136)), renderPlaceholder: (e, a) => r.createElement(n.Z, { hasError: e, onRetry: a }) });
         },
-        402058: (e, a, n) => {
-            n.d(a, { Z: () => o });
-            n(202784);
-            const o = (0, n(523561).Z)({
+        402058: (e, a, o) => {
+            o.d(a, { Z: () => r });
+            o(202784);
+            const r = (0, o(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.23"),
-                        n.e("icons.0"),
-                        n.e("icons.2"),
-                        n.e("icons.16"),
-                        n.e("icons.19"),
-                        n.e("icons.10"),
-                        n.e("icons.13"),
-                        n.e("icons.24"),
-                        n.e("icons.7"),
-                        n.e("icons.22"),
-                        n.e("icons.27"),
-                        n.e("icons.17"),
-                        n.e("modules.common-e907d115"),
-                        n.e("modules.common-e019dbda"),
-                        n.e("icons.21"),
-                        n.e("icons.18"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-0157ee89"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c977f3f0"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bde9e8ed"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78eb13f6"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-83ae13c2"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
-                        n.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
-                        n.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSp"),
-                        n.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
-                        n.e("shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"),
-                        n.e("loader.WideLayout"),
-                    ]).then(n.bind(n, 527969)),
+                        o.e("icons.8"),
+                        o.e("icons.15"),
+                        o.e("icons.7"),
+                        o.e("icons.3"),
+                        o.e("icons.24"),
+                        o.e("icons.12"),
+                        o.e("icons.22"),
+                        o.e("icons.2"),
+                        o.e("icons.18"),
+                        o.e("icons.9"),
+                        o.e("icons.6"),
+                        o.e("icons.14"),
+                        o.e("modules.common-e907d115"),
+                        o.e("modules.common-e019dbda"),
+                        o.e("icons.5"),
+                        o.e("icons.16"),
+                        o.e("icons.19"),
+                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
+                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
+                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
+                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
+                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
+                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
+                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
+                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-fd0b2cf1"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c7e58553"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f7f56781"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                        o.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                        o.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
+                        o.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
+                        o.e("shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"),
+                        o.e("loader.WideLayout"),
+                    ]).then(o.bind(o, 527969)),
             });
         },
-        478414: (e, a, n) => {
-            n.d(a, { Hx: () => i, K: () => t, bb: () => l, gv: () => d, kg: () => s, yW: () => c });
-            var o = n(779802),
-                r = n(392237);
-            const t = { h1FontSize: "headline1", h2FontSize: "headline2", paragraphFontSize: "subtext1" },
-                d = { h1FontSize: "title4", h2FontSize: "headline1", paragraphFontSize: "headline2" },
-                l = ({ h1FontSize: e, h2FontSize: a, paragraphFontSize: n }) => [
-                    { blockType: o.P7.header1, label: o.et, component: (0, o.LI)({ size: e, children: o.et, extendedWidth: !0 }) },
-                    { blockType: o.P7.header2, label: o.PW, component: (0, o.LI)({ size: a, weight: "bold", children: o.PW }) },
-                    { blockType: o.P7.paragraph, label: o.$u, component: (0, o.LI)({ size: n, children: o.$u }) },
-                ],
-                i = "extended-profile",
-                s = "extended-profile-mobile-webview",
-                c = (e, { h1FontSize: a, h2FontSize: n, paragraphFontSize: o }) =>
-                    `\n    .${e} .longform-header-one {\n        font-family: ${r.default.theme.fontFamilies.chirpExtended};\n        font-size: ${r.default.theme.fontSizes[a]};\n        line-height: ${r.default.theme.spaces.space28};\n        margin-bottom: 0;\n        margin-top: 0;\n    }\n\n    .${e} .longform-header-one-narrow {\n        font-family: ${r.default.theme.fontFamilies.chirpExtended};\n        font-size: ${r.default.theme.fontSizes[a]};\n        line-height: ${r.default.theme.spaces.space28};\n        margin-bottom: 0;\n        margin-top: 0;\n    }\n\n    .${e} .longform-header-two {\n        font-size: ${r.default.theme.fontSizes[n]};\n        font-weight: ${r.default.theme.fontWeights.bold};\n        line-height: ${r.default.theme.spaces.space24};\n        margin-bottom: 0;\n        margin-top: 0;\n    }\n\n    .${e} .longform-header-two-narrow {\n        font-size: calc(${r.default.theme.fontSizes[n]} + 1px);\n        font-weight: ${r.default.theme.fontWeights.bold};\n        line-height: ${r.default.theme.spaces.space24};\n        margin-bottom: 0;\n        margin-top: 0;\n    }\n\n    .${e} .longform-unstyled, \n    .${e} .longform-blockquote {\n        font-size: ${r.default.theme.fontSizes[o]};\n        line-height: ${r.default.theme.lineHeights.headline1};\n        margin-bottom: 0;\n        margin-top: 0;\n    }\n\n    .${e} .longform-unstyled-narrow, \n    .${e} .longform-blockquote-narrow {\n        font-size: ${r.default.theme.fontSizes[o]};\n        line-height: ${r.default.theme.lineHeights.headline1};\n        margin-bottom: 0;\n        margin-top: 0;\n    }\n\n    .${e} .longform-unordered-list-item, \n    .${e} .longform-ordered-list-item {\n        display: block;\n        font-size: ${r.default.theme.fontSizes[o]};\n        line-height: ${r.default.theme.lineHeights.headline1};\n        margin-bottom: ${r.default.theme.spaces.space2};\n        margin-left: calc(${r.default.theme.spaces.space20} + ${r.default.theme.spaces.space2});\n        margin-top: 0;\n    }\n\n    .${e} .longform-unordered-list-item-narrow, \n    .${e} .longform-ordered-list-item-narrow {\n        display: block;\n        font-size: ${r.default.theme.fontSizes[o]};\n        line-height: ${r.default.theme.lineHeights.headline1};\n        margin-bottom: ${r.default.theme.spaces.space2};\n        margin-left: ${r.default.theme.spaces.space36};\n        margin-top: 0;\n    }\n\n    .${e} .longform-blockquote, \n    .${e} .longform-blockquote-narrow {\n        margin-bottom: 0;\n        margin-left: 0;\n        margin-top: calc(-${r.default.theme.spaces.space2});\n        padding-left: calc(${r.default.theme.spaces.space20} + 2px);\n        position: relative;\n    }\n\n    .${e} .longform-blockquote:before, \n    .${e} .longform-blockquote-narrow:before {\n        background: ${r.default.theme.colors.gray900};\n        border-radius: ${r.default.theme.borderRadii.infinite};\n        bottom: 0;\n        content: "";\n        left: 0;\n        position: absolute;\n        top: 0;\n        width: 3px;\n    }\n\n    .${e} .longform-header-one .public-DraftStyleDefault-block,\n    .${e} .longform-header-two .public-DraftStyleDefault-block,\n    .${e} .longform-unstyled .public-DraftStyleDefault-block,\n    .${e} .longform-unordered-list-item .public-DraftStyleDefault-block,\n    .${e} .longform-ordered-list-item .public-DraftStyleDefault-block,\n    .${e} .longform-header-one-narrow .public-DraftStyleDefault-block,\n    .${e} .longform-header-two-narrow .public-DraftStyleDefault-block,\n    .${e} .longform-unstyled-narrow .public-DraftStyleDefault-block,\n    .${e} .longform-unordered-list-item-narrow .public-DraftStyleDefault-block,\n    .${e} .longform-ordered-list-item-narrow .public-DraftStyleDefault-block {\n        padding-bottom: 0;\n        padding-top: 0;\n    }\n\n    .${e} .public-DraftStyleDefault-ul, \n    .${e} .public-DraftStyleDefault-ol {\n        counter-reset: item;\n        margin-bottom: 0;\n        margin-top: 0;\n        padding-left: 0;\n    }\n\n    .${e} .longform-unordered-list-item:before, \n    .${e} .longform-ordered-list-item:before,\n    .${e} .longform-unordered-list-item-narrow:before, \n    .${e} .longform-ordered-list-item-narrow:before {\n        position: absolute;\n        margin-left: calc(-1 * (${r.default.theme.spaces.space20} + ${r.default.theme.spaces.space2}));\n    }\n\n    .${e} .longform-unordered-list-item:before {\n        content: counter(item, disc);\n        font-size: ${r.default.theme.fontSizes[o]}\n    }\n\n    .${e} .longform-unordered-list-item-narrow:before {\n        content: counter(item, disc);\n        font-size: ${r.default.theme.fontSizes[o]}\n    }\n\n    .${e} .longform-ordered-list-item:before, \n    .${e} .longform-ordered-list-item-narrow:before {\n        content: counter(item) ". ";\n        counter-increment: item;\n    }\n\n    .${e} .longform-ordered-list-item::marker, \n    .${e} .longform-ordered-list-item-narrow::marker {\n        font-variant-numeric: normal;\n    }\n`;
+        226298: (e, a, o) => {
+            o.d(a, { z: () => r });
+            const r = (e) => `/i/jobs/${e}`;
         },
-        226298: (e, a, n) => {
-            n.d(a, { z: () => o });
-            const o = (e) => `/i/jobs/${e}`;
+        985124: (e, a, o) => {
+            o.d(a, { $J: () => t, WA: () => j, ZC: () => g, cj: () => H, eo: () => r.eo, hb: () => z, kW: () => s, pg: () => P, rP: () => l, u4: () => J, xk: () => B });
+            var r = o(89217),
+                d = o(111677),
+                n = o.n(d);
+            const l = Object.freeze({ DISABLED: 0, ENABLED: 10, SYNC_IN_PROGRESS: 20, SYNC_FAILED: 30 }),
+                t = Object.freeze({ freshteam: "Freshteam", greenhouse: "Greenhouse", lever: "Lever", recruitee: "Recruitee", "sage-hr": "Sage HR", "sap-successfactors": "SAP SuccessFactors", teamtailor: "Teamtailor", workable: "Workable", workday: "Workday" }),
+                s = Object.entries(r.eo).map(([e, a]) => ({ label: String(a), value: e })),
+                c = n().d2b8da2c,
+                i = n().cd958040,
+                u = n().c5760ca2,
+                h = n().d31b4a2a,
+                D = n().df1b7550,
+                m = n().f38959a6,
+                b = n().bc78a26c,
+                f = n().ec28738e,
+                M = n().icb06308,
+                p = n().d0b978ec,
+                k = n().af19cdc2,
+                w = n().e4a51fca,
+                v = n().e8ca78ae,
+                y = n().c365dcc6,
+                g = Object.freeze({ software_engineering: c, data_analytics: i, product: u, design: h, marketing: D, sales_am: m, operations: b, people_hr: f, finance_accounting: M, legal_compliance: p, science_engineering: k, medical: w, construction_trades: v, other: y }),
+                P = Object.entries(g).map(([e, a]) => ({ label: String(a), value: e })),
+                E = n().e25d75e4,
+                A = n().e89b3f04,
+                I = n().h55825dc,
+                S = n().cc537386,
+                Z = n().jfc3cece,
+                C = n().e1b683aa,
+                _ = n().c4627fda,
+                x = n().db75b47c,
+                j = Object.freeze({ intern: E, entry_level: A, junior: I, mid_level: S, senior: Z, lead: C, manager: _, executive: x }),
+                B = Object.entries(j).map(([e, a]) => ({ label: String(a), value: e })),
+                L = n().i312f0ce,
+                R = n().b4aff05e,
+                N = n().c08b9138,
+                O = n().ia5d6422,
+                $ = n().h97c7f42,
+                F = n().ibed2d04,
+                H = Object.freeze({ onsite: { label: L, description: O, value: "onsite" }, remote: { label: N, description: F, value: "remote" }, hybrid: { label: R, description: $, value: "hybrid" } }),
+                J = Object.keys(H).map((e) => ({ label: H[e].label, value: e, description: H[e].description })),
+                z = Object.keys(r.Qw).map((e) => ({ ...r.Qw[e], value: String(r.Qw[e].value) }));
         },
-        985124: (e, a, n) => {
-            n.d(a, { $J: () => l, WA: () => Z, ZC: () => S, cj: () => N, eo: () => o.eo, hb: () => H, kW: () => i, pg: () => $, rP: () => d, u4: () => O, xk: () => x });
-            var o = n(89217),
-                r = n(111677),
-                t = n.n(r);
-            const d = Object.freeze({ DISABLED: 0, ENABLED: 10, SYNC_IN_PROGRESS: 20, SYNC_FAILED: 30 }),
-                l = Object.freeze({ freshteam: "Freshteam", greenhouse: "Greenhouse", lever: "Lever", recruitee: "Recruitee", "sage-hr": "Sage HR", "sap-successfactors": "SAP SuccessFactors", teamtailor: "Teamtailor", workable: "Workable", workday: "Workday" }),
-                i = Object.entries(o.eo).map(([e, a]) => ({ label: String(a), value: e })),
-                s = t().d2b8da2c,
-                c = t().cd958040,
-                u = t().c5760ca2,
-                h = t().d31b4a2a,
-                m = t().df1b7550,
-                b = t().f38959a6,
-                f = t().bc78a26c,
-                D = t().ec28738e,
-                p = t().icb06308,
-                g = t().d0b978ec,
-                w = t().af19cdc2,
-                M = t().e4a51fca,
-                y = t().e8ca78ae,
-                k = t().c365dcc6,
-                S = Object.freeze({ software_engineering: s, data_analytics: c, product: u, design: h, marketing: m, sales_am: b, operations: f, people_hr: D, finance_accounting: p, legal_compliance: g, science_engineering: w, medical: M, construction_trades: y, other: k }),
-                $ = Object.entries(S).map(([e, a]) => ({ label: String(a), value: e })),
-                v = t().e25d75e4,
-                P = t().e89b3f04,
-                A = t().h55825dc,
-                E = t().cc537386,
-                I = t().jfc3cece,
-                C = t().e1b683aa,
-                z = t().c4627fda,
-                B = t().db75b47c,
-                Z = Object.freeze({ intern: v, entry_level: P, junior: A, mid_level: E, senior: I, lead: C, manager: z, executive: B }),
-                x = Object.entries(Z).map(([e, a]) => ({ label: String(a), value: e })),
-                R = t().i312f0ce,
-                _ = t().b4aff05e,
-                T = t().c08b9138,
-                j = t().ia5d6422,
-                F = t().h97c7f42,
-                L = t().ibed2d04,
-                N = Object.freeze({ onsite: { label: R, description: j, value: "onsite" }, remote: { label: T, description: L, value: "remote" }, hybrid: { label: _, description: F, value: "hybrid" } }),
-                O = Object.keys(N).map((e) => ({ label: N[e].label, value: e, description: N[e].description })),
-                H = Object.keys(o.Qw).map((e) => ({ ...o.Qw[e], value: String(o.Qw[e].value) }));
-        },
-        943052: (e, a, n) => {
-            n.d(a, { Z: () => t });
-            n(543673), n(240753), n(128399), n(136728);
-            var o = n(202784),
-                r = n(107267);
-            const t = () => {
-                const e = (0, r.useLocation)(),
-                    a = (0, r.useHistory)(),
-                    [n, t] = o.useState(new URLSearchParams(e.search));
-                o.useEffect(() => {
-                    t(new URLSearchParams(e.search));
+        943052: (e, a, o) => {
+            o.d(a, { Z: () => n });
+            o(543673), o(240753), o(128399), o(136728);
+            var r = o(202784),
+                d = o(107267);
+            const n = () => {
+                const e = (0, d.useLocation)(),
+                    a = (0, d.useHistory)(),
+                    [o, n] = r.useState(new URLSearchParams(e.search));
+                r.useEffect(() => {
+                    n(new URLSearchParams(e.search));
                 }, [e.search]);
-                const d = o.useCallback(
-                        (o, r) => {
-                            const t = new URLSearchParams(n);
-                            t.set(o, r), a.push(`${e.pathname}?${t.toString()}`);
+                const l = r.useCallback(
+                        (r, d) => {
+                            const n = new URLSearchParams(o);
+                            n.set(r, d), a.push(`${e.pathname}?${n.toString()}`);
                         },
-                        [a, e.pathname, n],
+                        [a, e.pathname, o],
                     ),
-                    l = o.useCallback(
-                        (o) => {
-                            const r = new URLSearchParams(n);
-                            for (const e in o) o[e] ? r.set(e, o[e]) : r.delete(e);
-                            a.push(`${e.pathname}?${r.toString()}`);
+                    t = r.useCallback(
+                        (r) => {
+                            const d = new URLSearchParams(o);
+                            for (const e in r) r[e] ? d.set(e, r[e]) : d.delete(e);
+                            a.push(`${e.pathname}?${d.toString()}`);
                         },
-                        [a, e.pathname, n],
+                        [a, e.pathname, o],
                     );
-                return [o.useMemo(() => new URLSearchParams(e.search), [e.search]), d, l];
+                return [r.useMemo(() => new URLSearchParams(e.search), [e.search]), l, t];
             };
         },
-        482924: (e, a, n) => {
-            n.d(a, { A: () => m });
-            var o = n(202784),
-                r = n(437429),
-                t = n.n(r),
-                d = n(57074),
-                l = n.n(d),
-                i = n(10622),
-                s = n.n(i),
-                c = n(71620),
-                u = n(312771),
-                h = n(535338);
-            function m(e, a, n) {
-                const r = l()(a),
-                    d = l()(n),
-                    i = t()(),
-                    m = (0, c.po)(),
-                    [b, f] = o.useState(null),
-                    [D, p] = o.useState(!1),
-                    g = o.useCallback(() => {
-                        D ||
-                            (p(!0),
-                            s()(i, e, r, { networkCacheConfig: d?.networkCacheConfig, fetchPolicy: "network-only" }).subscribe({
+        482924: (e, a, o) => {
+            o.d(a, { A: () => D });
+            var r = o(202784),
+                d = o(437429),
+                n = o.n(d),
+                l = o(57074),
+                t = o.n(l),
+                s = o(10622),
+                c = o.n(s),
+                i = o(71620),
+                u = o(312771),
+                h = o(535338);
+            function D(e, a, o) {
+                const d = t()(a),
+                    l = t()(o),
+                    s = n()(),
+                    D = (0, i.po)(),
+                    [m, b] = r.useState(null),
+                    [f, M] = r.useState(!1),
+                    p = r.useCallback(() => {
+                        f ||
+                            (M(!0),
+                            c()(s, e, d, { networkCacheConfig: l?.networkCacheConfig, fetchPolicy: "network-only" }).subscribe({
                                 complete: () => {
-                                    p(!1);
+                                    M(!1);
                                 },
                                 error: (e) => {
-                                    m(e), p(!1), f(e);
+                                    D(e), M(!1), b(e);
                                 },
                             }));
-                    }, [i, m, e, D, r, d]),
-                    w = (0, h.p)(e, a, n);
-                return o.useMemo(() => (b ? { data: w, refetch: g, refetchStatus: u.ZP.FAILED, refetchError: b } : { data: w, refetch: g, refetchStatus: D ? u.ZP.LOADING : u.ZP.NONE, refetchError: void 0 }), [w, b, D, g]);
+                    }, [s, D, e, f, d, l]),
+                    k = (0, h.p)(e, a, o);
+                return r.useMemo(() => (m ? { data: k, refetch: p, refetchStatus: u.ZP.FAILED, refetchError: m } : { data: k, refetch: p, refetchStatus: f ? u.ZP.LOADING : u.ZP.NONE, refetchError: void 0 }), [k, m, f, p]);
             }
         },
-        127218: (e, a, n) => {
-            n.d(a, { C: () => p });
-            var o = n(202784),
-                r = n(614983),
-                t = n.n(r),
-                d = n(437429),
-                l = n.n(d),
-                i = n(57074),
-                s = n.n(i),
-                c = n(10622),
-                u = n.n(c),
-                h = n(585488),
-                m = n(71620),
-                b = n(163889),
-                f = n(312771),
-                D = n(535338);
-            function p(e, a, n) {
-                const [r, d] = o.useState(!1),
-                    [i, c] = o.useState(null),
-                    p = l()(),
-                    g = s()(a),
-                    w = (0, m.po)(),
-                    M = (0, D.p)(e, g, n);
-                return o.useMemo(() => {
+        127218: (e, a, o) => {
+            o.d(a, { C: () => M });
+            var r = o(202784),
+                d = o(614983),
+                n = o.n(d),
+                l = o(437429),
+                t = o.n(l),
+                s = o(57074),
+                c = o.n(s),
+                i = o(10622),
+                u = o.n(i),
+                h = o(585488),
+                D = o(71620),
+                m = o(163889),
+                b = o(312771),
+                f = o(535338);
+            function M(e, a, o) {
+                const [d, l] = r.useState(!1),
+                    [s, i] = r.useState(null),
+                    M = t()(),
+                    p = c()(a),
+                    k = (0, D.po)(),
+                    w = (0, f.p)(e, p, o);
+                return r.useMemo(() => {
                     const a = (0, h.getRequest)(e).params?.metadata?.sliceInfoPath;
-                    t()(!!a, "The provided query does not have an associated sliceInfoPath. Make sure you are using the `@slice` directive with your query.");
-                    const { next_cursor: n, previous_cursor: o } =
+                    n()(!!a, "The provided query does not have an associated sliceInfoPath. Make sure you are using the `@slice` directive with your query.");
+                    const { next_cursor: o, previous_cursor: r } =
                             (function (e, a) {
                                 try {
-                                    t()("slice_info" === a[a.length - 1], "Invalid sliceInfoPath!");
-                                    let n = e;
-                                    for (const e of a) t()(!!n, "The provided path is invalid."), t()("string" == typeof e, "Unexpected value for path!"), (n = n?.[e]);
-                                    return n;
+                                    n()("slice_info" === a[a.length - 1], "Invalid sliceInfoPath!");
+                                    let o = e;
+                                    for (const e of a) n()(!!o, "The provided path is invalid."), n()("string" == typeof e, "Unexpected value for path!"), (o = o?.[e]);
+                                    return o;
                                 } catch (e) {
-                                    return void (0, b.ZP)(e.message);
+                                    return void (0, m.ZP)(e.message);
                                 }
-                            })(M, a) || {},
-                        l = (a) => {
-                            r ||
-                                (d(!0),
-                                u()(p, e, { ...g, cursor: a }).subscribe({
+                            })(w, a) || {},
+                        t = (a) => {
+                            d ||
+                                (l(!0),
+                                u()(M, e, { ...p, cursor: a }).subscribe({
                                     complete: () => {
-                                        d(!1);
+                                        l(!1);
                                     },
                                     error: (e) => {
-                                        d(!1), c(e), w(e);
+                                        l(!1), i(e), k(e);
                                     },
                                 }));
                         },
-                        s = () => {
-                            n && l(n);
-                        },
-                        m = () => {
-                            o && l(o);
+                        c = () => {
+                            o && t(o);
                         },
                         D = () => {
-                            l(void 0);
+                            r && t(r);
+                        },
+                        f = () => {
+                            t(void 0);
                         };
-                    return i ? { subsequentFetchStatus: f.ZP.FAILED, error: i, fetchNext: s, fetchPrevious: m, refetch: D, data: M, hasNext: Boolean(n), hasPrevious: Boolean(o) } : { subsequentFetchStatus: r ? f.ZP.LOADING : f.ZP.NONE, error: void 0, fetchNext: s, fetchPrevious: m, refetch: D, data: M, hasNext: Boolean(n), hasPrevious: Boolean(o) };
-                }, [e, M, r, i, p, g, w]);
+                    return s ? { subsequentFetchStatus: b.ZP.FAILED, error: s, fetchNext: c, fetchPrevious: D, refetch: f, data: w, hasNext: Boolean(o), hasPrevious: Boolean(r) } : { subsequentFetchStatus: d ? b.ZP.LOADING : b.ZP.NONE, error: void 0, fetchNext: c, fetchPrevious: D, refetch: f, data: w, hasNext: Boolean(o), hasPrevious: Boolean(r) };
+                }, [e, w, d, s, M, p, k]);
             }
         },
-        263870: (e, a, n) => {
-            n.r(a), n.d(a, { default: () => q });
-            var o = n(202784),
-                r = n(247411),
-                t = n(736063),
-                d = n(325686),
-                l = n(107267),
-                i = n(708852),
-                s = n(530732),
-                c = n(731708),
-                u = n(392237),
-                h = n(894966),
-                m = n(318178),
-                b = n(903233),
-                f = n(652904),
-                D = n(293115),
-                p = n(254221),
-                g = n(771741),
-                w = (n(585488), n(457311)),
-                M = n(154003),
-                y = n(97301),
-                k = n(58399),
-                S = n(292546),
-                $ = n(482924),
-                v = n(62941),
-                P = n(965245),
-                A = n(609927),
-                E = n(715601),
-                I = n(768572),
-                C = n(46858);
-            const z = { isGlobal: !0, isSticky: !1 },
-                B = (e) => e.rest_id,
-                Z = u.default.create((e) => ({ viewport: { overflow: "auto", height: "100%", flex: 1 }, mobileContainer: { position: "relative", height: "calc(100vh - 112px)", overflow: "auto" } })),
-                x = ({ items: e }) => {
-                    const a = (0, i.Ji)(),
-                        n = o.useCallback((a) => o.createElement(C.Z, { item: a.result, itemId: a.rest_id, itemIndex: e.findIndex((e) => e.rest_id === a.rest_id), pathPrefix: "/jobs/saved" }), [e]),
-                        r = o.useCallback(() => o.createElement(P.Z, { cacheKey: "jobSearchList", footer: null, identityFunction: B, items: e, renderer: n, withoutHeadroom: !0 }), [e, n]);
-                    return e ? (e.length && a ? o.createElement(A.Z.Provider, { value: z }, o.createElement(I.y3.Provider, { value: void 0 }, o.createElement(E.Z, { style: Z.viewport }, r()))) : e.length && !a ? o.createElement(d.Z, { style: Z.mobileContainer }, r()) : null) : null;
+        263870: (e, a, o) => {
+            o.r(a), o.d(a, { default: () => U });
+            var r = o(202784),
+                d = o(247411),
+                n = o(736063),
+                l = o(325686),
+                t = o(107267),
+                s = o(708852),
+                c = o(530732),
+                i = o(731708),
+                u = o(392237),
+                h = o(894966),
+                D = o(318178),
+                m = o(903233),
+                b = o(652904),
+                f = o(293115),
+                M = o(254221),
+                p = o(771741),
+                k = (o(585488), o(457311)),
+                w = o(154003),
+                v = o(97301),
+                y = o(58399),
+                g = o(292546),
+                P = o(482924),
+                E = o(62941),
+                A = o(965245),
+                I = o(609927),
+                S = o(715601),
+                Z = o(768572),
+                C = o(46858);
+            const _ = { isGlobal: !0, isSticky: !1 },
+                x = (e) => e.rest_id,
+                j = u.default.create((e) => ({ viewport: { overflow: "auto", height: "100%", flex: 1 }, mobileContainer: { position: "relative", height: "calc(100vh - 112px)", overflow: "auto" } })),
+                B = ({ items: e }) => {
+                    const a = (0, s.Ji)(),
+                        o = r.useCallback((a) => r.createElement(C.Z, { item: a.result, itemId: a.rest_id, itemIndex: e.findIndex((e) => e.rest_id === a.rest_id), pathPrefix: "/jobs/saved" }), [e]),
+                        d = r.useCallback(() => r.createElement(A.Z, { cacheKey: "jobSearchList", footer: null, identityFunction: x, items: e, renderer: o, withoutHeadroom: !0 }), [e, o]);
+                    return e ? (e.length && a ? r.createElement(I.Z.Provider, { value: _ }, r.createElement(Z.y3.Provider, { value: void 0 }, r.createElement(S.Z, { style: j.viewport }, d()))) : e.length && !a ? r.createElement(l.Z, { style: j.mobileContainer }, d()) : null) : null;
                 },
-                R = g.Z,
-                _ = 10,
-                T = () => {
-                    const e = (0, l.useHistory)(),
-                        [a, n] = (0, S.Z)(),
-                        [r, t] = o.useState(!1),
-                        s = (0, i.Ji)(),
+                L = p.Z,
+                R = 10,
+                N = () => {
+                    const e = (0, t.useHistory)(),
+                        [a, o] = (0, g.Z)(),
+                        [d, n] = r.useState(!1),
+                        c = (0, s.Ji)(),
                         u = a.get("page") ? parseInt(a?.get("page"), 10) : 1,
-                        { data: h, refetchStatus: m } = (0, $.A)(R, { limit: _, offset: ((b = u), (b - 1) * _) });
-                    var b;
-                    o.useEffect(() => {
-                        "none" === m && t(!1);
-                    }, [m]);
-                    const f = h?.viewer_v2?.user_results?.result,
-                        D = f?.saved_jobs ?? {},
-                        p = D.total || 0,
-                        g = Math.ceil(p / _),
-                        P = D.items_results ?? [],
-                        A = P.length > 0 ? P[0].rest_id : null,
-                        E = !f || r;
-                    o.useEffect(() => {
-                        A && "/jobs/saved" === location.pathname && s && !E && e.replace(`/jobs/saved/${A}?page=${u}`);
-                    }, [A, s, E, u, e]);
-                    const I = o.useCallback(() => {
-                            u < g && n("page", (u + 1).toString());
-                        }, [u, n, g]),
-                        C = o.useCallback(() => {
-                            u > 1 && n("page", (u - 1).toString());
-                        }, [u, n]);
-                    return E
-                        ? o.createElement(v.Z, null)
-                        : p <= 0
-                          ? o.createElement(w.Z, { header: "No saved jobs" })
-                          : o.createElement(
-                                o.Fragment,
+                        { data: h, refetchStatus: D } = (0, P.A)(L, { limit: R, offset: ((m = u), (m - 1) * R) });
+                    var m;
+                    r.useEffect(() => {
+                        "none" === D && n(!1);
+                    }, [D]);
+                    const b = h?.viewer_v2?.user_results?.result,
+                        f = b?.saved_jobs ?? {},
+                        M = f.total || 0,
+                        p = Math.ceil(M / R),
+                        A = f.items_results ?? [],
+                        I = A.length > 0 ? A[0].rest_id : null,
+                        S = !b || d;
+                    r.useEffect(() => {
+                        I && "/jobs/saved" === location.pathname && c && !S && e.replace(`/jobs/saved/${I}?page=${u}`);
+                    }, [I, c, S, u, e]);
+                    const Z = r.useCallback(() => {
+                            u < p && o("page", (u + 1).toString());
+                        }, [u, o, p]),
+                        C = r.useCallback(() => {
+                            u > 1 && o("page", (u - 1).toString());
+                        }, [u, o]);
+                    return S
+                        ? r.createElement(E.Z, null)
+                        : M <= 0
+                          ? r.createElement(k.Z, { header: "No saved jobs" })
+                          : r.createElement(
+                                r.Fragment,
                                 null,
-                                o.createElement(x, { items: P }),
-                                o.createElement(
-                                    d.Z,
-                                    { style: { ...j.actionBar, ...(s ? {} : j.mobileActionBar) } },
-                                    o.createElement(
-                                        d.Z,
-                                        { style: j.actionBarInner },
-                                        o.createElement(M.ZP, { disabled: 1 === u, icon: o.createElement(y.default, null), onClick: C, type: "brandText" }),
-                                        o.createElement(
-                                            c.ZP,
+                                r.createElement(B, { items: A }),
+                                r.createElement(
+                                    l.Z,
+                                    { style: { ...O.actionBar, ...(c ? {} : O.mobileActionBar) } },
+                                    r.createElement(
+                                        l.Z,
+                                        { style: O.actionBarInner },
+                                        r.createElement(w.ZP, { disabled: 1 === u, icon: r.createElement(v.default, null), onClick: C, type: "brandText" }),
+                                        r.createElement(
+                                            i.ZP,
                                             { color: "gray900", size: "subtext1" },
                                             ((e, a) => {
                                                 if (a > 0) {
-                                                    let n = e * _;
-                                                    return n > a && (n = a), `Viewing ${e * _ - 9} - ${n} of ${a}`;
+                                                    let o = e * R;
+                                                    return o > a && (o = a), `Viewing ${e * R - 9} - ${o} of ${a}`;
                                                 }
                                                 return "";
-                                            })(u, p),
+                                            })(u, M),
                                         ),
-                                        o.createElement(M.ZP, { disabled: u === g, icon: o.createElement(k.default, null), onClick: I, type: "brandText" }),
+                                        r.createElement(w.ZP, { disabled: u === p, icon: r.createElement(y.default, null), onClick: Z, type: "brandText" }),
                                     ),
                                 ),
                             );
                 },
-                j = u.default.create((e) => ({ actionBar: { width: "100%", backgroundColor: e.colors.gray200 }, mobileActionBar: { width: "100%", backgroundColor: e.colors.gray200 }, actionBarInner: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: e.spaces.space4 } })),
-                F = { context: "JobBookmarksList" },
-                L = () => o.createElement(t.H, { errorConfig: F }, o.createElement(T, null)),
-                N = { page: "saved_jobs", section: "all" },
-                O = () => {
-                    const e = (0, l.useLocation)(),
-                        a = (0, l.useHistory)(),
-                        n = !(0, i.Ji)(),
-                        r = /\/jobs\/saved\/\d+/.test(e.pathname),
-                        t = o.useCallback(() => {
+                O = u.default.create((e) => ({ actionBar: { width: "100%", backgroundColor: e.colors.gray200 }, mobileActionBar: { width: "100%", backgroundColor: e.colors.gray200 }, actionBarInner: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: e.spaces.space4 } })),
+                $ = { context: "JobBookmarksList" },
+                F = () => r.createElement(n.H, { errorConfig: $ }, r.createElement(N, null)),
+                H = { page: "saved_jobs", section: "all" },
+                J = () => {
+                    const e = (0, t.useLocation)(),
+                        a = (0, t.useHistory)(),
+                        o = !(0, s.Ji)(),
+                        d = /\/jobs\/saved\/\d+/.test(e.pathname),
+                        n = r.useCallback(() => {
                             a.goBack();
                         }, [a]);
-                    return o.createElement(D.nO, { namespace: N }, o.createElement(f.Z, { locationKey: N.page }, o.createElement(b.Z, { isRightRootActive: r, leftContent: o.createElement(d.Z, { style: { display: "flex", overflow: "auto", width: "30%" } }, o.createElement(L, null)), mobileRootStyles: { height: "calc(100vh - 68px)" }, rightContent: o.createElement(d.Z, null, n && o.createElement(s.Z, { onClick: t, style: H.mobileDetailBackButton }, o.createElement(h.default, null), o.createElement(c.ZP, { size: "body", weight: "bold" }, "Back to saved jobs")), o.createElement(p.Z, { actions: [m.h5] })), rootStyles: { height: "calc(100vh - 116px)" } })));
+                    return r.createElement(f.nO, { namespace: H }, r.createElement(b.Z, { locationKey: H.page }, r.createElement(m.Z, { isRightRootActive: d, leftContent: r.createElement(l.Z, { style: { display: "flex", overflow: "auto", width: "30%" } }, r.createElement(F, null)), mobileRootStyles: { height: "calc(100vh - 68px)" }, rightContent: r.createElement(l.Z, null, o && r.createElement(c.Z, { onClick: n, style: z.mobileDetailBackButton }, r.createElement(h.default, null), r.createElement(i.ZP, { size: "body", weight: "bold" }, "Back to saved jobs")), r.createElement(M.Z, { actions: [D.h5] })), rootStyles: { height: "calc(100vh - 116px)" } })));
                 },
-                H = u.default.create((e) => ({ mobileDetailBackButton: { flexDirection: "row", alignItems: "center", gap: e.spaces.space16, padding: e.spaces.space16 }, mobileDetailActionsItemBreak: { flexBasis: "100%" } })),
-                W = { context: "JobRecommendations" },
-                q = () => o.createElement(t.H, { errorConfig: W }, o.createElement(r.Z, null, o.createElement(O, null)));
+                z = u.default.create((e) => ({ mobileDetailBackButton: { flexDirection: "row", alignItems: "center", gap: e.spaces.space16, padding: e.spaces.space16 }, mobileDetailActionsItemBreak: { flexBasis: "100%" } })),
+                T = { context: "JobRecommendations" },
+                U = () => r.createElement(n.H, { errorConfig: T }, r.createElement(d.Z, null, r.createElement(J, null)));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.JobSearch-e6266db0.10fc40ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.JobSearch-e6266db0.b1c0871a.js.map

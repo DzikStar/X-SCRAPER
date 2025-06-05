@@ -1078,7 +1078,7 @@
                 n("d7a9796e", "Chargement des appareils"),
                 n("b5635e86", "Inscrire cet appareil"),
                 n("bb4a95dc", "Inscrire votre appareil ?"),
-                n("a9538040", "Inscrire cet appareil vous permettra de commencer de nouvelles conversations cryptées avec d'autres utilisateurs inscrits."),
+                n("a9538040", "Inscrire cet appareil vous permettra de commencer de nouvelles conversations chiffrées avec d'autres utilisateurs inscrits."),
                 n("hd173c7a", "Inscrire"),
                 n("hf4312a4", "L'appareil a été inscrit."),
                 n("h7797d18", "Inscrit"),
@@ -3959,6 +3959,7 @@
                 n("j6cdf012", "Les cohôtes ne peuvent pas inviter ni supprimer d'autres cohôtes."),
                 n("c727d116", "Les cohôtes ne peuvent pas mettre fin à l'Espace."),
                 n("g69084b8", "Accepter l’invitation à coanimer"),
+                n("ddd5cfe2", "Ancrer"),
                 n("ee230734", "Afficher plus d'options"),
                 n("ic8c615e", "Choisissez et envoyez une option de réponse rapide"),
                 n("a04077c4", "Veuillez choisir 1 photo, 1 vidéo ou 1 GIF."),
@@ -4928,9 +4929,9 @@
                 n("d9f9dec0", "Voir l'Espace"),
                 n("h0c1f37a", "Voir les statistiques de l'Espace"),
                 n("e41fffbc", "Le temps de visionnage total de vos vidéos."),
-                n("if2909ba", "Temps de visionnage"),
-                n("i0e5bf4c", "Vos vidéos");
-            n("ed99baea", "Accès anticipé à la version bêta"),
+                n("if2909ba", "Temps de visionnage");
+            n("i0e5bf4c", "Vos vidéos"),
+                n("ed99baea", "Accès anticipé à la version bêta"),
                 n("gf898b70", "Recherche avancée"),
                 n("d2a43a7a", 'contient à la fois "ia" et "startup"'),
                 n("a8584698", "startup ia"),
@@ -5884,9 +5885,9 @@
                 n("e41c9b4f", function (e) {
                     return "Enregistré dans le dossier " + e.bookmarkFolderName;
                 }),
-                n("h18f86a4", "Supprimer le dossier"),
-                n("f4ea967a", "Le dossier a été supprimé.");
-            n("b670aa62", "Nom du dossier"),
+                n("h18f86a4", "Supprimer le dossier");
+            n("f4ea967a", "Le dossier a été supprimé."),
+                n("b670aa62", "Nom du dossier"),
                 n("aece5462", "Le nom du dossier a bien été mis à jour."),
                 n("e3299b94", "Une erreur s'est produite. Réessayez de mettre ce dossier à jour dans un moment."),
                 n("c09ea714", "Une erreur s'est produite. Réessayez de supprimer ce dossier dans un moment."),
@@ -6400,7 +6401,7 @@
                 n("ee8c0c8a", "Les messages de personnes ou de groupes que vous ne suivez pas apparaîtront ici. Vous pourrez les accepter ou les supprimer."),
                 n("ff599112", "Créer un groupe"),
                 n("c602600a", "Ajouter des personnes"),
-                n("fa2033f6", "Crypté"),
+                n("fa2033f6", "Chiffré"),
                 n("aa59bb6a", "Envoyer le post séparément"),
                 n("a2ccb2e8", "Message Privé envoyé."),
                 n("f906f464", "Post partagé avec le groupe."),
@@ -6480,6 +6481,7 @@
                 n("babfa32c", "Personnalisez rapidement votre affichage."),
                 n("a2a2f98e", "Découvrir les nouveautés"),
                 n("b4a361c0", "Vous pouvez dès maintenant personnaliser votre couleur et la taille de votre texte, et contrôler la sélection du mode sombre. Ces paramètres ne sont visibles que par vous."),
+                n("g4743c56", "Commencer à suivre"),
                 n("c797b44e", "Les toutes dernières histoires sur X, racontées avec des posts."),
                 n("a19ce060", "La fonctionnalité Explorer n'est pas disponible."),
                 n("f7d1a8e0", "Application Android"),
@@ -6887,10 +6889,10 @@
                 n("ede7d0a2", "Devise"),
                 n("b925c18c", "Type de salaire "),
                 n("j3d242ce", "Plage non valide"),
-                n("f4d07bd2", "Indiquez des détails facultatifs qui permettront aux candidats de découvrir plus facilement vos offres en effectuant une recherche."),
-                n("b8cbb51a", "Résumé du poste"),
-                n("bda6881e", "Cette offre d'emploi a été importée depuis votre système de suivi des candidats (Applicant Tracking System, ou ATS). Veuillez noter que seuls des champs spécifiques peuvent être modifiés.");
-            n("b075c68a", "Modifier l'offre d'emploi"),
+                n("f4d07bd2", "Indiquez des détails facultatifs qui permettront aux candidats de découvrir plus facilement vos offres en effectuant une recherche.");
+            n("b8cbb51a", "Résumé du poste"),
+                n("bda6881e", "Cette offre d'emploi a été importée depuis votre système de suivi des candidats (Applicant Tracking System, ou ATS). Veuillez noter que seuls des champs spécifiques peuvent être modifiés."),
+                n("b075c68a", "Modifier l'offre d'emploi"),
                 n("d4b6a6e0", "Spotlight sur le profil"),
                 n("j2dd3686", "Les offres mises en avant apparaissent au‑dessus de mes posts."),
                 n("af1cfd46", "Intégration ATS"),
@@ -7867,9 +7869,7 @@
                     return "Heureux de vous retrouver, " + e.displayName;
                 }),
                 n("a76d58ba", "Statistiques des publicités"),
-                n("eccd0e1a", "Statistiques de l'organisation "),
-                n("deea1708", "Vous voulez afficher les statistiques pour tous vos comptes X ?"),
-                n("eb603ffc", "Mettez à niveau pour affilier votre réseau et afficher des statistiques agrégées.");
+                n("eccd0e1a", "Statistiques de l'organisation ");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7908,7 +7908,9 @@
                     i(e, t)
                 );
             }
-            n("gf67aae4", "Passez à l'Accès complet"),
+            n("deea1708", "Vous voulez afficher les statistiques pour tous vos comptes X ?"),
+                n("eb603ffc", "Mettez à niveau pour affilier votre réseau et afficher des statistiques agrégées."),
+                n("gf67aae4", "Passez à l'Accès complet"),
                 n("h75e3618", "Inclure l'organisation"),
                 n("h24a8862", "À propos de cette case à cocher"),
                 n("c29e3a88", "Sélectionner des affiliés"),
@@ -8905,12 +8907,12 @@
                 n("j0f12222", "Voir plus"),
                 n("f569f7c8", "Accéder au site Web"),
                 n("j0c6772a", "Visiter le site Web"),
-                n("f73003aa", "La vidéo sera lue après la publicité."),
-                n("b3112b8a", "Passer"),
-                n("h6333ad0", "Ignorer la publicité");
-            n("c59da417", function (e) {
-                return "Ignorer la publicité dans " + e.seconds;
-            }),
+                n("f73003aa", "La vidéo sera lue après la publicité.");
+            n("b3112b8a", "Passer"),
+                n("h6333ad0", "Ignorer la publicité"),
+                n("c59da417", function (e) {
+                    return "Ignorer la publicité dans " + e.seconds;
+                }),
                 n("c3c147cf", function (e) {
                     return "Ignorer " + e.seconds;
                 }),
@@ -13353,4 +13355,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.77449d5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.915bfe8a.js.map

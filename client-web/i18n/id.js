@@ -3954,6 +3954,7 @@
                 i("j6cdf012", "Co-host tidak dapat mengundang atau mengeluarkan co-host lainnya"),
                 i("c727d116", "Co-host tidak dapat mengakhiri Space"),
                 i("g69084b8", "Terima undangan co-host"),
+                i("ddd5cfe2", "Dok"),
                 i("ee230734", "Tampilkan opsi lainnya"),
                 i("ic8c615e", "Pilihan Pilih dan kirim balas cepat"),
                 i("a04077c4", "Silakan pilih 1 foto, video, atau GIF."),
@@ -4923,9 +4924,9 @@
                 i("d9f9dec0", "Lihat Space"),
                 i("h0c1f37a", "Lihat Analitik Space"),
                 i("e41fffbc", "Total waktu tonton video Anda."),
-                i("if2909ba", "Waktu Tonton"),
-                i("i0e5bf4c", "Video Anda");
-            i("ed99baea", "Akses Beta Lebih Awal"),
+                i("if2909ba", "Waktu Tonton");
+            i("i0e5bf4c", "Video Anda"),
+                i("ed99baea", "Akses Beta Lebih Awal"),
                 i("gf898b70", "Pencarian Lanjutan"),
                 i("d2a43a7a", 'berisi "ai" dan "startup"'),
                 i("a8584698", "startup ai"),
@@ -5879,9 +5880,9 @@
                 i("e41c9b4f", function (a) {
                     return "Disimpan ke " + a.bookmarkFolderName;
                 }),
-                i("h18f86a4", "Hapus Folder?"),
-                i("f4ea967a", "Folder sudah dihapus");
-            i("b670aa62", "Nama Folder"),
+                i("h18f86a4", "Hapus Folder?");
+            i("f4ea967a", "Folder sudah dihapus"),
+                i("b670aa62", "Nama Folder"),
                 i("aece5462", "Nama folder berhasil diperbarui"),
                 i("e3299b94", "Ada kesalahan teknis. Coba perbarui lagi folder tersebut dalam satu menit."),
                 i("c09ea714", "Ada kesalahan teknis. Coba hapus lagi folder tersebut dalam satu menit."),
@@ -6475,6 +6476,7 @@
                 i("babfa32c", "Sesuaikan tampilan dengan cepat"),
                 i("a2a2f98e", "Lihat apa yang baru"),
                 i("b4a361c0", "Anda dapat mengubah warna dan ukuran teks sesuai keinginan, serta mengontrol pilihan mode gelap, sekarang juga. Hanya Anda yang dapat melihat pengaturan ini."),
+                i("g4743c56", "Mulai mengikuti"),
                 i("c797b44e", "Kisah terbaru di X - diceritakan lewat postingan."),
                 i("a19ce060", "Jelajah tidak tersedia."),
                 i("f7d1a8e0", "Aplikasi Android"),
@@ -6882,10 +6884,10 @@
                 i("ede7d0a2", "Mata uang"),
                 i("b925c18c", "Jenis Gaji"),
                 i("j3d242ce", "Rentang tidak valid"),
-                i("f4d07bd2", "Cantumkan detail opsional untuk memudahkan kandidat menemukan posisi Anda melalui pencarian."),
-                i("b8cbb51a", "Ringkasan Pekerjaan"),
-                i("bda6881e", "Lowongan ini telah diimpor dari Sistem Pelacakan Pelamar (ATS) Anda. Harap diketahui bahwa hanya bidang tertentu yang dapat diubah.");
-            i("b075c68a", "Edit lowongan kerja"),
+                i("f4d07bd2", "Cantumkan detail opsional untuk memudahkan kandidat menemukan posisi Anda melalui pencarian.");
+            i("b8cbb51a", "Ringkasan Pekerjaan"),
+                i("bda6881e", "Lowongan ini telah diimpor dari Sistem Pelacakan Pelamar (ATS) Anda. Harap diketahui bahwa hanya bidang tertentu yang dapat diubah."),
+                i("b075c68a", "Edit lowongan kerja"),
                 i("d4b6a6e0", "Spotlight Profil"),
                 i("j2dd3686", "Sorot lowongan unggulan di atas postingan Anda."),
                 i("af1cfd46", "Integrasi ATS"),
@@ -7862,9 +7864,7 @@
                     return "Selamat datang, " + a.displayName;
                 }),
                 i("a76d58ba", "Analitik Iklan"),
-                i("eccd0e1a", "Analitik Organisasi"),
-                i("deea1708", "Ingin melihat analitik di semua akun X Anda?"),
-                i("eb603ffc", "Tingkatkan untuk mengafiliasikan jaringan Anda dan melihat analitik gabungan.");
+                i("eccd0e1a", "Analitik Organisasi");
             function r(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7903,7 +7903,9 @@
                     d(a, n)
                 );
             }
-            i("gf67aae4", "Tingkatkan ke Akses Penuh"),
+            i("deea1708", "Ingin melihat analitik di semua akun X Anda?"),
+                i("eb603ffc", "Tingkatkan untuk mengafiliasikan jaringan Anda dan melihat analitik gabungan."),
+                i("gf67aae4", "Tingkatkan ke Akses Penuh"),
                 i("h75e3618", "Sertakan organisasi"),
                 i("h24a8862", "Tentang kotak centang ini"),
                 i("c29e3a88", "Pilih Afiliasi"),
@@ -8900,12 +8902,12 @@
                 i("j0f12222", "Lihat selengkapnya"),
                 i("f569f7c8", "Kunjungi situs web"),
                 i("j0c6772a", "Kunjungi situs web"),
-                i("f73003aa", "Video akan diputar setelah iklan"),
-                i("b3112b8a", "Lewati"),
-                i("h6333ad0", "Lewati Iklan");
-            i("c59da417", function (a) {
-                return "Lewati Iklan dalam " + a.seconds;
-            }),
+                i("f73003aa", "Video akan diputar setelah iklan");
+            i("b3112b8a", "Lewati"),
+                i("h6333ad0", "Lewati Iklan"),
+                i("c59da417", function (a) {
+                    return "Lewati Iklan dalam " + a.seconds;
+                }),
                 i("c3c147cf", function (a) {
                     return "Lewati " + a.seconds;
                 }),
@@ -13348,4 +13350,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.a51083aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.b621d75a.js.map

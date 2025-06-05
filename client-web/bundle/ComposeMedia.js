@@ -3,7 +3,7 @@
     ["bundle.ComposeMedia"],
     {
         751170: (e, t, i) => {
-            i.d(t, { A: () => h, Z: () => v });
+            i.d(t, { A: () => h, Z: () => y });
             var a = i(202784),
                 s = i(325686),
                 n = i(167630),
@@ -56,10 +56,10 @@
             b.defaultProps = { borderRadius: h.NONE, enableGif: !0, resizeMode: "cover" };
             const f = r.default.create((e) => ({ [h.INFINITE]: { borderRadius: e.borderRadii.infinite }, [h.MEDIUM]: { borderRadius: e.borderRadii.small }, [h.NONE]: { borderRadius: e.borderRadii.none } })),
                 g = r.default.create((e) => ({ root: { borderRadius: e.borderRadii.xLarge, borderStyle: "solid", borderWidth: e.borderWidths.none, borderColor: "transparent", maxWidth: "100%", height: "100%", overflow: "hidden" }, image: { display: "block", height: "100%", width: "100%" }, loadingBorder: { borderColor: e.colors.gray300 }, activityIndicator: { height: "100%" } })),
-                v = b;
+                y = b;
         },
         304059: (e, t, i) => {
-            i.d(t, { Z: () => O });
+            i.d(t, { Z: () => L });
             var a = i(202784),
                 s = i(325686),
                 n = i(537392),
@@ -75,8 +75,8 @@
                 b = i(254944),
                 f = i(837020),
                 g = i(276259),
-                v = i(443781),
-                y = i(10656),
+                y = i(443781),
+                v = i(10656),
                 _ = i(716233),
                 P = i(946208),
                 E = i(540387),
@@ -102,19 +102,19 @@
                 S = i(751170),
                 F = i(523561),
                 x = i(195560);
-            const R = (0, F.Z)({
+            const D = (0, F.Z)({
                     loader: () =>
-                        Promise.all([i.e("icons.0"), i.e("icons.16"), i.e("icons.10"), i.e("icons.13"), i.e("icons.22"), i.e("modules.common-e907d115"), i.e("modules.common-e019dbda"), i.e("icons.26"), i.e("modules.audio-6107ac1a"), i.e("modules.audio-b953418a"), i.e("modules.audio-7c51e6a7"), i.e("modules.audio-04db59e9"), i.e("modules.audio-76583d6c"), i.e("modules.audio-b7a8a5fb"), i.e("modules.audio-51f6e793"), i.e("modules.audio-e019dbda"), i.e("modules.audio-262c94d4"), i.e("modules.audio-c6fe4ea4"), i.e("icons.4"), i.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-85aa903d"), i.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-c8e3a520"), i.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-658f42e4"), i.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-1f16c288"), i.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), i.e("loader.MediaPreviewVideoPlayer")])
+                        Promise.all([i.e("icons.2"), i.e("icons.9"), i.e("icons.14"), i.e("modules.common-e907d115"), i.e("modules.common-e019dbda"), i.e("icons.5"), i.e("modules.audio-6107ac1a"), i.e("modules.audio-b953418a"), i.e("modules.audio-7c51e6a7"), i.e("modules.audio-04db59e9"), i.e("modules.audio-76583d6c"), i.e("modules.audio-b7a8a5fb"), i.e("modules.audio-51f6e793"), i.e("modules.audio-e019dbda"), i.e("modules.audio-262c94d4"), i.e("modules.audio-c6fe4ea4"), i.e("icons.17"), i.e("icons.27"), i.e("icons.19"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), i.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), i.e("loader.MediaPreviewVideoPlayer")])
                             .then(i.bind(i, 298607))
                             .then((e) => ({ default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ })),
                     renderPlaceholder: (e, t) => a.createElement(x.Z, { hasError: e, onRetry: t }),
                 }),
-                T = m().gd80afba,
-                V = m().j322caee,
-                D = m().abd845fe,
-                G = m().df1b0708,
-                B = m().cd959e5c,
-                k = m().e68b09b4,
+                R = m().gd80afba,
+                T = m().j322caee,
+                k = m().abd845fe,
+                V = m().df1b0708,
+                G = m().cd959e5c,
+                B = m().e68b09b4,
                 z = m().add55c98,
                 A = m().f350cf46;
             class U extends a.Component {
@@ -162,14 +162,14 @@
                         });
                 }
                 render() {
-                    const { "aria-label": e, enableGif: t, mediaItem: i, onEdit: d, onEditSensitiveWarning: c, onRemove: u, role: m, style: v, withAltTextLabel: _, withCloseButton: P, withDragAndDropIndicator: E, withEditButton: M, withEditIcon: w, withEditSensitiveWarningButton: I } = this.props,
+                    const { "aria-label": e, enableGif: t, mediaItem: i, onEdit: d, onEditSensitiveWarning: c, onRemove: u, role: m, style: y, withAltTextLabel: _, withCloseButton: P, withDragAndDropIndicator: E, withEditButton: M, withEditIcon: w, withEditSensitiveWarningButton: I } = this.props,
                         { mediaContainerSizeStyle: C, playGif: S } = this.state,
                         F = i.externalMediaDetails && i.externalMediaDetails.mediaType === g.Re,
                         x = F || (t && i.mediaFile && i.mediaFile.isGif),
-                        R = !!i.mediaFile?.isVideo;
+                        D = !!i.mediaFile?.isVideo;
                     return a.createElement(n.ZP, null, ({ windowWidth: t }) => {
-                        const i = void 0 !== w ? w : !y.Z.isTwoColumnLayout(t);
-                        return a.createElement(s.Z, { "aria-label": e || z, onLayout: this._handleMediaPreviewLayout, role: m, style: [v, L.cursor, F && L.gifPlayButton, C] }, this._renderPreview(), F && !S && a.createElement(o.Z, { "aria-label": G, onPress: this._handleGifClick, size: "small" }), x ? a.createElement(Z.ZP, { type: Z.AM }) : null, _ && !R ? a.createElement(r.Z, { align: "left", altLabel: e }) : null, a.createElement(s.Z, { style: L.editMedia }, E ? a.createElement(l.ZP, { "aria-label": A, hoverLabel: { label: A }, icon: a.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, M && I ? a.createElement(l.ZP, { "aria-label": V, icon: a.createElement(h.default, { style: L.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, M ? a.createElement(l.ZP, { "aria-label": T, icon: i ? a.createElement(b.default, null) : void 0, onPress: d, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : D) : null), P ? a.createElement(l.ZP, { "aria-label": B, hoverLabel: { label: k }, icon: a.createElement(f.default, null), onPress: u, size: "small", style: L.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        const i = void 0 !== w ? w : !v.Z.isTwoColumnLayout(t);
+                        return a.createElement(s.Z, { "aria-label": e || z, onLayout: this._handleMediaPreviewLayout, role: m, style: [y, O.cursor, F && O.gifPlayButton, C] }, this._renderPreview(), F && !S && a.createElement(o.Z, { "aria-label": V, onPress: this._handleGifClick, size: "small" }), x ? a.createElement(Z.ZP, { type: Z.AM }) : null, _ && !D ? a.createElement(r.Z, { align: "left", altLabel: e }) : null, a.createElement(s.Z, { style: O.editMedia }, E ? a.createElement(l.ZP, { "aria-label": A, hoverLabel: { label: A }, icon: a.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, M && I ? a.createElement(l.ZP, { "aria-label": T, icon: a.createElement(h.default, { style: O.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, M ? a.createElement(l.ZP, { "aria-label": R, icon: i ? a.createElement(b.default, null) : void 0, onPress: d, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : k) : null), P ? a.createElement(l.ZP, { "aria-label": G, hoverLabel: { label: B }, icon: a.createElement(f.default, null), onPress: u, size: "small", style: O.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -184,7 +184,7 @@
                 _renderGifPreview(e, t) {
                     const { playGif: i } = this.state,
                         n = { uri: i ? e : t };
-                    return a.createElement(s.Z, { onClick: this._handleGifClick, style: d.default.absoluteFill }, a.createElement(c.Z, { resizeMode: "cover", source: n, style: L.video }));
+                    return a.createElement(s.Z, { onClick: this._handleGifClick, style: d.default.absoluteFill }, a.createElement(c.Z, { resizeMode: "cover", source: n, style: O.video }));
                 }
                 _renderImagePreview() {
                     const { borderRadius: e, enableGif: t, imageResizeMode: i, mediaItem: s, onClick: n } = this.props;
@@ -198,17 +198,17 @@
                         (0, _.TO)(s.fileHandle) && (o = [{ src: t, type: e }]);
                         const r = n.mediaMetadata?.subtitles,
                             l = n?.trimData;
-                        return a.createElement(R, { mediaFile: s, mediaId: String(i), mediaItem: n, subtitles: r, trimData: l, variants: o });
+                        return a.createElement(D, { mediaFile: s, mediaId: String(i), mediaItem: n, subtitles: r, trimData: l, variants: o });
                     }
                     {
                         const i = (0, _.TO)(s.fileHandle) ? [{ content_type: e, url: t }] : [];
-                        return a.createElement(C, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: s instanceof E.ZP ? s.thumbnail : "", style: L.video, variants: i }, o?.upload?.mediaFile instanceof P.ZP ? a.createElement("track", { default: !0, kind: "subtitles", label: o.displayName, src: o.upload.mediaFile.vtt, srcLang: o.lang }) : null);
+                        return a.createElement(C, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: s instanceof E.ZP ? s.thumbnail : "", style: O.video, variants: i }, o?.upload?.mediaFile instanceof P.ZP ? a.createElement("track", { default: !0, kind: "subtitles", label: o.displayName, src: o.upload.mediaFile.vtt, srcLang: o.lang }) : null);
                     }
                 }
             }
-            (U.contextType = v.rC), (U.defaultProps = { enableGif: !0, withCloseButton: !0, withAltTextLabel: !1, withEditButton: !1, withEditSensitiveWarningButton: !1 });
-            const L = d.default.create((e) => ({ buttonLeft: { position: "absolute", start: e.spaces.space4, top: e.spaces.space4 }, buttonRight: { position: "absolute", end: e.spaces.space4, top: e.spaces.space4 }, cursor: { cursor: "pointer" }, editSensitiveWarningIcon: { color: e.colors.primary }, editMedia: { display: "flex", start: e.spaces.space4, top: e.spaces.space4, gap: e.spaces.space4, flexDirection: "row", position: "absolute" }, editImage: { bottom: e.spaces.space4 }, editVideo: { top: e.spaces.space4 }, gifPlayButton: { alignItems: "center", justifyContent: "center" }, video: { height: "100%", width: "100%" } })),
-                O = U;
+            (U.contextType = y.rC), (U.defaultProps = { enableGif: !0, withCloseButton: !0, withAltTextLabel: !1, withEditButton: !1, withEditSensitiveWarningButton: !1 });
+            const O = d.default.create((e) => ({ buttonLeft: { position: "absolute", start: e.spaces.space4, top: e.spaces.space4 }, buttonRight: { position: "absolute", end: e.spaces.space4, top: e.spaces.space4 }, cursor: { cursor: "pointer" }, editSensitiveWarningIcon: { color: e.colors.primary }, editMedia: { display: "flex", start: e.spaces.space4, top: e.spaces.space4, gap: e.spaces.space4, flexDirection: "row", position: "absolute" }, editImage: { bottom: e.spaces.space4 }, editVideo: { top: e.spaces.space4 }, gifPlayButton: { alignItems: "center", justifyContent: "center" }, video: { height: "100%", width: "100%" } })),
+                L = U;
         },
         959587: (e, t, i) => {
             i.d(t, { AM: () => l, ZP: () => m, pX: () => d });
@@ -335,15 +335,15 @@
                 b = i(339110),
                 f = i(161821),
                 g = i(668214),
-                v = i(632960),
-                y = i(104140);
+                y = i(632960),
+                v = i(104140);
             const _ = (e) => {
-                    const t = v.E_(e);
-                    return v.tS(e)[t].mediaTags;
+                    const t = y.E_(e);
+                    return y.tS(e)[t].mediaTags;
                 },
                 P = (e) => {
                     const t = ((e) => {
-                        const t = (0, y.sM)(e),
+                        const t = (0, v.sM)(e),
                             i = (t && (0, f.Z)(t)) || [];
                         return (0, b.It)(i);
                     })(e)
@@ -355,7 +355,7 @@
                 },
                 E = (0, g.Z)()
                     .propsFromState(() => ({ existingTags: _, injections: P }))
-                    .propsFromActions(() => ({ updateSingleComposer: v.zi }))
+                    .propsFromActions(() => ({ updateSingleComposer: y.zi }))
                     .withAnalytics({ page: "media_tag", component: "media_tagger" }),
                 M = d().b772cd66,
                 w = d().c20dc654,
@@ -364,8 +364,8 @@
             function Z(e) {
                 const { history: t, injections: i, existingTags: r = [], updateSingleComposer: l } = e,
                     [d, f] = a.useState(r),
-                    [g, v] = a.useState(""),
-                    y = (e) => {
+                    [g, y] = a.useState(""),
+                    v = (e) => {
                         f(d.filter(({ id: t }) => t !== e.id));
                     },
                     _ = () => {
@@ -394,11 +394,11 @@
                         },
                         injections: g ? void 0 : i,
                         onQueryChange: (e) => {
-                            v(e);
+                            y(e);
                         },
-                        onRemove: y,
+                        onRemove: v,
                         onSelect: (e) => {
-                            e.type === b.El.User && (d.find(({ id: t }) => t === e.id) ? y(e) : d.length < 10 && f([...d, e]));
+                            e.type === b.El.User && (d.find(({ id: t }) => t === e.id) ? v(e) : d.length < 10 && f([...d, e]));
                         },
                         renderCallout: () => (d.length >= 10 ? a.createElement(s.Z, { style: S.inlineCallout }, a.createElement(n.Z, { Icon: c.default, headline: w, type: "warning" })) : null),
                         selectedUsers: d,
@@ -450,4 +450,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ComposeMedia.676d53aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ComposeMedia.9234534a.js.map

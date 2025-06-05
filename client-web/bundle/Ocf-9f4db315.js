@@ -59,32 +59,14 @@
                     const y = () => {
                             h.scribe({ component: b, action: "click", element: "card" });
                         },
-                        { backgroundcolor: v, buttonSize: w, cardWidth: C, marginbottom: E, textcolor: P } = p ?? {},
+                        { backgroundcolor: v, buttonSize: w, cardWidth: C, marginbottom: P, textcolor: E } = p ?? {},
                         Z = v ? s.default.theme.colors[v] : s.default.theme.colors.gray0,
-                        M = P ? s.default.theme.colors[P] : s.default.theme.colors.gray900,
-                        I = E ? s.default.theme.spaces[E] : s.default.theme.spaces.space16,
+                        I = E ? s.default.theme.colors[E] : s.default.theme.colors.gray900,
+                        M = P ? s.default.theme.spaces[P] : s.default.theme.spaces.space16,
                         S = { [g.MarchMadness]: { header: f.header, description: f.description, legalDisclaimer: f.legalDisclaimer, buttonText: f.buttonText, image: f.image } }[i];
-                    return u ? a.createElement(o.Z, { interactiveStyles: null, link: t, onPress: y, style: _.bannerContainer }, a.createElement(r.Z, { resizeMode: "contain", source: { uri: "light" === s.default.theme.paletteName ? S.image.lightMode : S.image.darkMode }, style: { height: 85 } })) : a.createElement(n.Z, { style: [_.card, { backgroundColor: Z }, { maxWidth: C }, { marginBottom: I }], testID: "popupCard" }, a.createElement(n.Z, { style: e ? _.horizontalContent : _.verticalContent }, a.createElement(n.Z, { style: e ? _.textContainer : null }, a.createElement(l.ZP, { size: "headline2", style: [_.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, S.header), a.createElement(l.ZP, { size: "subtext1", style: [_.popupDescription, { color: M }] }, S.description, " ", e ? null : S.legalDisclaimer)), a.createElement(n.Z, { style: _.buttonContainer }, a.createElement(d.ZP, { backgroundColor: "light" === s.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: y, size: "medium", style: [_.popupButton, { width: w }] }, S.buttonText), e && a.createElement(l.ZP, { size: "subtext3", style: [_.legalDisclaimer, { color: M }] }, S.legalDisclaimer))));
+                    return u ? a.createElement(o.Z, { interactiveStyles: null, link: t, onPress: y, style: _.bannerContainer }, a.createElement(r.Z, { resizeMode: "contain", source: { uri: "light" === s.default.theme.paletteName ? S.image.lightMode : S.image.darkMode }, style: { height: 85 } })) : a.createElement(n.Z, { style: [_.card, { backgroundColor: Z }, { maxWidth: C }, { marginBottom: M }], testID: "popupCard" }, a.createElement(n.Z, { style: e ? _.horizontalContent : _.verticalContent }, a.createElement(n.Z, { style: e ? _.textContainer : null }, a.createElement(l.ZP, { size: "headline2", style: [_.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, S.header), a.createElement(l.ZP, { size: "subtext1", style: [_.popupDescription, { color: I }] }, S.description, " ", e ? null : S.legalDisclaimer)), a.createElement(n.Z, { style: _.buttonContainer }, a.createElement(d.ZP, { backgroundColor: "light" === s.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: y, size: "medium", style: [_.popupButton, { width: w }] }, S.buttonText), e && a.createElement(l.ZP, { size: "subtext3", style: [_.legalDisclaimer, { color: I }] }, S.legalDisclaimer))));
                 },
                 _ = s.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
-        },
-        290402: (e, t, i) => {
-            i.d(t, { Z: () => m });
-            var a = i(807896),
-                n = i(202784),
-                s = i(182056),
-                o = i(879113),
-                r = i(392237),
-                l = i(111677),
-                d = i.n(l),
-                c = i(968478);
-            const p = d().aa6e3300,
-                u = ({ retryMessage: e, ...t }, i) => {
-                    const r = s.Z.isOnline();
-                    return n.createElement(o.Z, (0, a.Z)({}, t, { icon: r ? void 0 : n.createElement(c.default, { style: h.icon }), retryMessage: r ? e : p }));
-                },
-                h = r.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
-                m = n.forwardRef(u);
         },
         850496: (e, t, i) => {
             i.d(t, { Z: () => w });
@@ -110,29 +92,29 @@
                 render() {
                     const { borderRadius: e, description: t, innerStyle: i, maskStyle: r, mediaItem: l, onAddMediaFiles: d, onCrop: c, onRemove: p, rootStyle: u, withDragDrop: h } = this.props,
                         m = l && !l.uploader,
-                        f = a.createElement(a.Fragment, null, this._renderPreview(), m ? null : a.createElement(a.Fragment, null, a.createElement(n.Z, { style: [E.mask, r, C[e]] }), a.createElement(n.Z, { style: [E.overlaidContent, i] }, a.createElement(n.Z, { style: E.buttonsContainer }, this._renderMediaEdit(), c ? this._renderMediaCrop() : null, p ? this._renderMediaRemove() : null), t ? a.createElement(s.ZP, { align: "center", color: "gray700", size: "subtext1", style: E.description }, t) : null)));
-                    return a.createElement(n.Z, { style: [E.container, u, C[e]] }, h && d ? a.createElement(o.ZP, { onFilesAdded: d, style: [E.dragDropContainer, C[e]] }, f) : f);
+                        f = a.createElement(a.Fragment, null, this._renderPreview(), m ? null : a.createElement(a.Fragment, null, a.createElement(n.Z, { style: [P.mask, r, C[e]] }), a.createElement(n.Z, { style: [P.overlaidContent, i] }, a.createElement(n.Z, { style: P.buttonsContainer }, this._renderMediaEdit(), c ? this._renderMediaCrop() : null, p ? this._renderMediaRemove() : null), t ? a.createElement(s.ZP, { align: "center", color: "gray700", size: "subtext1", style: P.description }, t) : null)));
+                    return a.createElement(n.Z, { style: [P.container, u, C[e]] }, h && d ? a.createElement(o.ZP, { onFilesAdded: d, style: [P.dragDropContainer, C[e]] }, f) : f);
                 }
                 _renderMediaRemove() {
                     const { onRemove: e } = this.props;
-                    return a.createElement(r.ZP, { "aria-label": _, hoverLabel: { label: _ }, icon: a.createElement(h.default, null), onPress: e, size: "large", style: E.buttonLeftPadding, type: "onMediaDominantColorFilled" });
+                    return a.createElement(r.ZP, { "aria-label": _, hoverLabel: { label: _ }, icon: a.createElement(h.default, null), onPress: e, size: "large", style: P.buttonLeftPadding, type: "onMediaDominantColorFilled" });
                 }
                 _renderMediaCrop() {
                     const { onCrop: e } = this.props;
-                    return a.createElement(r.ZP, { "aria-label": y, icon: a.createElement(m.default, null), onPress: e, size: "large", style: E.buttonLeftPadding, type: "onMediaDominantColorFilled" });
+                    return a.createElement(r.ZP, { "aria-label": y, icon: a.createElement(m.default, null), onPress: e, size: "large", style: P.buttonLeftPadding, type: "onMediaDominantColorFilled" });
                 }
                 _renderMediaEdit() {
                     const { acceptGifs: e, acceptVideo: t, "aria-label": i, icon: n, multiple: s, onAddMediaFiles: o, onEdit: l } = this.props;
-                    return o ? a.createElement(f.Z, { acceptGifs: e, acceptVideo: t, "aria-label": i, icon: n, multiple: s, onChange: o, size: "large", style: E.mediaPicker, type: "onMediaDominantColorFilled" }) : a.createElement(r.ZP, { "aria-label": i, icon: n, onPress: l, size: "large", type: "onMediaDominantColorFilled" });
+                    return o ? a.createElement(f.Z, { acceptGifs: e, acceptVideo: t, "aria-label": i, icon: n, multiple: s, onChange: o, size: "large", style: P.mediaPicker, type: "onMediaDominantColorFilled" }) : a.createElement(r.ZP, { "aria-label": i, icon: n, onPress: l, size: "large", type: "onMediaDominantColorFilled" });
                 }
                 _renderPreview() {
                     const { aspectRatio: e, borderRadius: t, currentContent: i, mediaItem: n } = this.props;
-                    return n ? a.createElement(l.Z, { ratio: e }, a.createElement(g.Z, { borderRadius: t, enableGif: !1, mediaItem: n, style: E.mediaPreview, withCloseButton: !1 })) : i;
+                    return n ? a.createElement(l.Z, { ratio: e }, a.createElement(g.Z, { borderRadius: t, enableGif: !1, mediaItem: n, style: P.mediaPreview, withCloseButton: !1 })) : i;
                 }
             }
             w.defaultProps = { acceptGifs: !1, acceptVideo: !1, aspectRatio: 1, borderRadius: b.A.NONE, icon: v };
             const C = d.default.create((e) => ({ infinite: { borderRadius: e.borderRadii.infinite }, medium: { borderRadius: e.borderRadii.small }, none: { borderRadius: e.borderRadii.none } })),
-                E = d.default.create((e) => ({ mediaPreview: { height: "100%" }, overlaidContent: { alignItems: "center", height: "100%", justifyContent: "center", opacity: 0.75, position: "absolute", top: 0, width: "100%" }, buttonsContainer: { alignItems: "center", flexDirection: "row", justifyContent: "center" }, buttonLeftPadding: { marginStart: e.spaces.space20 }, mask: { backgroundColor: e.colors.translucentBlack30, height: "100%", position: "absolute", top: 0, width: "100%" }, container: { justifyContent: "center", overflow: "hidden" }, dragDropContainer: { borderWidth: e.borderWidths.medium, borderColor: e.colors.transparent, borderStyle: "solid" }, mediaPicker: { margin: 0 }, description: { marginTop: e.spaces.space16 } }));
+                P = d.default.create((e) => ({ mediaPreview: { height: "100%" }, overlaidContent: { alignItems: "center", height: "100%", justifyContent: "center", opacity: 0.75, position: "absolute", top: 0, width: "100%" }, buttonsContainer: { alignItems: "center", flexDirection: "row", justifyContent: "center" }, buttonLeftPadding: { marginStart: e.spaces.space20 }, mask: { backgroundColor: e.colors.translucentBlack30, height: "100%", position: "absolute", top: 0, width: "100%" }, container: { justifyContent: "center", overflow: "hidden" }, dragDropContainer: { borderWidth: e.borderWidths.medium, borderColor: e.colors.transparent, borderStyle: "solid" }, mediaPicker: { margin: 0 }, description: { marginTop: e.spaces.space16 } }));
         },
         873637: (e, t, i) => {
             i.d(t, { Z: () => g });
@@ -305,10 +287,10 @@
                 v = i(716233),
                 w = i(946208),
                 C = i(540387),
-                E = i(950822),
-                P = i(303186),
+                P = i(950822),
+                E = i(303186),
                 Z = i(954300);
-            class M extends a.Component {
+            class I extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this._setVideoRef = (e) => {
@@ -318,21 +300,21 @@
                 }
                 render() {
                     const { children: e, dataSaverMode: t, getVideoRef: i, style: n, variants: s, ...o } = this.props,
-                        r = (0, P.IM)((0, Z.rD)(s), t);
-                    return (0, E.Z)("video", { ...o, children: [r.map((e) => a.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: n });
+                        r = (0, E.IM)((0, Z.rD)(s), t);
+                    return (0, P.Z)("video", { ...o, children: [r.map((e) => a.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: n });
                 }
             }
-            M.defaultProps = { dataSaverMode: !1, variants: [] };
-            var I = i(959587),
+            I.defaultProps = { dataSaverMode: !1, variants: [] };
+            var M = i(959587),
                 S = i(751170),
-                R = i(523561),
-                k = i(195560);
-            const D = (0, R.Z)({
+                k = i(523561),
+                R = i(195560);
+            const D = (0, k.Z)({
                     loader: () =>
-                        Promise.all([i.e("icons.0"), i.e("icons.16"), i.e("icons.10"), i.e("icons.13"), i.e("icons.22"), i.e("modules.common-e907d115"), i.e("modules.common-e019dbda"), i.e("icons.26"), i.e("modules.audio-6107ac1a"), i.e("modules.audio-b953418a"), i.e("modules.audio-7c51e6a7"), i.e("modules.audio-04db59e9"), i.e("modules.audio-76583d6c"), i.e("modules.audio-b7a8a5fb"), i.e("modules.audio-51f6e793"), i.e("modules.audio-e019dbda"), i.e("modules.audio-262c94d4"), i.e("modules.audio-c6fe4ea4"), i.e("icons.4"), i.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-85aa903d"), i.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-c8e3a520"), i.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-658f42e4"), i.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-1f16c288"), i.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), i.e("loader.MediaPreviewVideoPlayer")])
+                        Promise.all([i.e("icons.2"), i.e("icons.9"), i.e("icons.14"), i.e("modules.common-e907d115"), i.e("modules.common-e019dbda"), i.e("icons.5"), i.e("modules.audio-6107ac1a"), i.e("modules.audio-b953418a"), i.e("modules.audio-7c51e6a7"), i.e("modules.audio-04db59e9"), i.e("modules.audio-76583d6c"), i.e("modules.audio-b7a8a5fb"), i.e("modules.audio-51f6e793"), i.e("modules.audio-e019dbda"), i.e("modules.audio-262c94d4"), i.e("modules.audio-c6fe4ea4"), i.e("icons.17"), i.e("icons.27"), i.e("icons.19"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), i.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), i.e("loader.MediaPreviewVideoPlayer")])
                             .then(i.bind(i, 298607))
                             .then((e) => ({ default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ })),
-                    renderPlaceholder: (e, t) => a.createElement(k.Z, { hasError: e, onRetry: t }),
+                    renderPlaceholder: (e, t) => a.createElement(R.Z, { hasError: e, onRetry: t }),
                 }),
                 A = u().gd80afba,
                 V = u().j322caee,
@@ -342,7 +324,7 @@
                 B = u().e68b09b4,
                 z = u().add55c98,
                 G = u().f350cf46;
-            class L extends a.Component {
+            class O extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { isVideoPaused: !0, playGif: !1 }),
@@ -387,14 +369,14 @@
                         });
                 }
                 render() {
-                    const { "aria-label": e, enableGif: t, mediaItem: i, onEdit: d, onEditSensitiveWarning: c, onRemove: p, role: u, style: _, withAltTextLabel: v, withCloseButton: w, withDragAndDropIndicator: C, withEditButton: E, withEditIcon: P, withEditSensitiveWarningButton: Z } = this.props,
-                        { mediaContainerSizeStyle: M, playGif: S } = this.state,
-                        R = i.externalMediaDetails && i.externalMediaDetails.mediaType === b.Re,
-                        k = R || (t && i.mediaFile && i.mediaFile.isGif),
+                    const { "aria-label": e, enableGif: t, mediaItem: i, onEdit: d, onEditSensitiveWarning: c, onRemove: p, role: u, style: _, withAltTextLabel: v, withCloseButton: w, withDragAndDropIndicator: C, withEditButton: P, withEditIcon: E, withEditSensitiveWarningButton: Z } = this.props,
+                        { mediaContainerSizeStyle: I, playGif: S } = this.state,
+                        k = i.externalMediaDetails && i.externalMediaDetails.mediaType === b.Re,
+                        R = k || (t && i.mediaFile && i.mediaFile.isGif),
                         D = !!i.mediaFile?.isVideo;
                     return a.createElement(s.ZP, null, ({ windowWidth: t }) => {
-                        const i = void 0 !== P ? P : !y.Z.isTwoColumnLayout(t);
-                        return a.createElement(n.Z, { "aria-label": e || z, onLayout: this._handleMediaPreviewLayout, role: u, style: [_, O.cursor, R && O.gifPlayButton, M] }, this._renderPreview(), R && !S && a.createElement(o.Z, { "aria-label": x, onPress: this._handleGifClick, size: "small" }), k ? a.createElement(I.ZP, { type: I.AM }) : null, v && !D ? a.createElement(r.Z, { align: "left", altLabel: e }) : null, a.createElement(n.Z, { style: O.editMedia }, C ? a.createElement(l.ZP, { "aria-label": G, hoverLabel: { label: G }, icon: a.createElement(h.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, E && Z ? a.createElement(l.ZP, { "aria-label": V, icon: a.createElement(m.default, { style: O.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, E ? a.createElement(l.ZP, { "aria-label": A, icon: i ? a.createElement(f.default, null) : void 0, onPress: d, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : F) : null), w ? a.createElement(l.ZP, { "aria-label": T, hoverLabel: { label: B }, icon: a.createElement(g.default, null), onPress: p, size: "small", style: O.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        const i = void 0 !== E ? E : !y.Z.isTwoColumnLayout(t);
+                        return a.createElement(n.Z, { "aria-label": e || z, onLayout: this._handleMediaPreviewLayout, role: u, style: [_, L.cursor, k && L.gifPlayButton, I] }, this._renderPreview(), k && !S && a.createElement(o.Z, { "aria-label": x, onPress: this._handleGifClick, size: "small" }), R ? a.createElement(M.ZP, { type: M.AM }) : null, v && !D ? a.createElement(r.Z, { align: "left", altLabel: e }) : null, a.createElement(n.Z, { style: L.editMedia }, C ? a.createElement(l.ZP, { "aria-label": G, hoverLabel: { label: G }, icon: a.createElement(h.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, P && Z ? a.createElement(l.ZP, { "aria-label": V, icon: a.createElement(m.default, { style: L.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, P ? a.createElement(l.ZP, { "aria-label": A, icon: i ? a.createElement(f.default, null) : void 0, onPress: d, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : F) : null), w ? a.createElement(l.ZP, { "aria-label": T, hoverLabel: { label: B }, icon: a.createElement(g.default, null), onPress: p, size: "small", style: L.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -409,7 +391,7 @@
                 _renderGifPreview(e, t) {
                     const { playGif: i } = this.state,
                         s = { uri: i ? e : t };
-                    return a.createElement(n.Z, { onClick: this._handleGifClick, style: d.default.absoluteFill }, a.createElement(c.Z, { resizeMode: "cover", source: s, style: O.video }));
+                    return a.createElement(n.Z, { onClick: this._handleGifClick, style: d.default.absoluteFill }, a.createElement(c.Z, { resizeMode: "cover", source: s, style: L.video }));
                 }
                 _renderImagePreview() {
                     const { borderRadius: e, enableGif: t, imageResizeMode: i, mediaItem: n, onClick: s } = this.props;
@@ -427,13 +409,13 @@
                     }
                     {
                         const i = (0, v.TO)(n.fileHandle) ? [{ content_type: e, url: t }] : [];
-                        return a.createElement(M, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: n instanceof C.ZP ? n.thumbnail : "", style: O.video, variants: i }, o?.upload?.mediaFile instanceof w.ZP ? a.createElement("track", { default: !0, kind: "subtitles", label: o.displayName, src: o.upload.mediaFile.vtt, srcLang: o.lang }) : null);
+                        return a.createElement(I, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: n instanceof C.ZP ? n.thumbnail : "", style: L.video, variants: i }, o?.upload?.mediaFile instanceof w.ZP ? a.createElement("track", { default: !0, kind: "subtitles", label: o.displayName, src: o.upload.mediaFile.vtt, srcLang: o.lang }) : null);
                     }
                 }
             }
-            (L.contextType = _.rC), (L.defaultProps = { enableGif: !0, withCloseButton: !0, withAltTextLabel: !1, withEditButton: !1, withEditSensitiveWarningButton: !1 });
-            const O = d.default.create((e) => ({ buttonLeft: { position: "absolute", start: e.spaces.space4, top: e.spaces.space4 }, buttonRight: { position: "absolute", end: e.spaces.space4, top: e.spaces.space4 }, cursor: { cursor: "pointer" }, editSensitiveWarningIcon: { color: e.colors.primary }, editMedia: { display: "flex", start: e.spaces.space4, top: e.spaces.space4, gap: e.spaces.space4, flexDirection: "row", position: "absolute" }, editImage: { bottom: e.spaces.space4 }, editVideo: { top: e.spaces.space4 }, gifPlayButton: { alignItems: "center", justifyContent: "center" }, video: { height: "100%", width: "100%" } })),
-                N = L;
+            (O.contextType = _.rC), (O.defaultProps = { enableGif: !0, withCloseButton: !0, withAltTextLabel: !1, withEditButton: !1, withEditSensitiveWarningButton: !1 });
+            const L = d.default.create((e) => ({ buttonLeft: { position: "absolute", start: e.spaces.space4, top: e.spaces.space4 }, buttonRight: { position: "absolute", end: e.spaces.space4, top: e.spaces.space4 }, cursor: { cursor: "pointer" }, editSensitiveWarningIcon: { color: e.colors.primary }, editMedia: { display: "flex", start: e.spaces.space4, top: e.spaces.space4, gap: e.spaces.space4, flexDirection: "row", position: "absolute" }, editImage: { bottom: e.spaces.space4 }, editVideo: { top: e.spaces.space4 }, gifPlayButton: { alignItems: "center", justifyContent: "center" }, video: { height: "100%", width: "100%" } })),
+                N = O;
         },
         983389: (e, t, i) => {
             i.d(t, { Z: () => s });
@@ -524,7 +506,7 @@
                 u = a.memo(c);
         },
         330815: (e, t, i) => {
-            i.d(t, { Z: () => P });
+            i.d(t, { Z: () => E });
             var a = i(202784),
                 n = i(392237),
                 s = i(154003),
@@ -590,8 +572,8 @@
             const v = n.default.create((e) => ({ root: { flexShrink: 1, height: 650 } })),
                 w = f(y);
             var C = i(757700);
-            const E = n.default.create((e) => ({ modal: { width: 600, maxWidth: "90vw" } })),
-                P = (e) => a.createElement(C.ZP, { clickMaskToClose: !1, modalSize: "fitChildren", style: E.modal }, a.createElement(w, e));
+            const P = n.default.create((e) => ({ modal: { width: 600, maxWidth: "90vw" } })),
+                E = (e) => a.createElement(C.ZP, { clickMaskToClose: !1, modalSize: "fitChildren", style: P.modal }, a.createElement(w, e));
         },
         199127: (e, t, i) => {
             i.r(t), i.d(t, { MediaPickerWithPreview: () => d, default: () => c });
@@ -627,7 +609,7 @@
             const c = l(d);
         },
         3196: (e, t, i) => {
-            i.d(t, { Z: () => P });
+            i.d(t, { Z: () => E });
             i(136728);
             var a = i(202784),
                 n = i(99107),
@@ -649,7 +631,7 @@
                 v = l().dcc304d6,
                 w = l().g61ed8a4,
                 C = { clientId: b.fp, scope: "name email", usePopup: !0 };
-            class E extends a.PureComponent {
+            class P extends a.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this.state = { isScriptLoaded: !1 }),
@@ -710,8 +692,8 @@
                     return this._is3rdPartyIntegrationDisabled ? null : a.createElement(o.ZP, { backgroundColor: "white", borderColor: "gray200", children: n, color: "alwaysBaseGray1100", disabled: !i, fontWeight: "normal", icon: a.createElement(d.default, null), onPress: this._handleOnPress, size: e, style: t, testID: g.Z.apple });
                 }
             }
-            (E.contextType = m.rC), (E.defaultProps = { buttonSize: "xLarge", buttonState: "signup" });
-            const P = (0, h.ZP)((0, f.Z)(E));
+            (P.contextType = m.rC), (P.defaultProps = { buttonSize: "xLarge", buttonState: "signup" });
+            const E = (0, h.ZP)((0, f.Z)(P));
         },
         659492: (e, t, i) => {
             i.r(t), i.d(t, { default: () => p });
@@ -877,4 +859,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-9f4db315.3e41d85a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-9f4db315.b342564a.js.map

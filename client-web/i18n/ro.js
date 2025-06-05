@@ -3966,6 +3966,7 @@
                 t("j6cdf012", "Co-gazdele nu pot invita sau elimina alte co-gazde"),
                 t("c727d116", "Co-gazdele nu pot închide spațiul"),
                 t("g69084b8", "Acceptă invitația de co-gazdă"),
+                t("ddd5cfe2", "Andocare"),
                 t("ee230734", "Afișează mai multe opțiuni"),
                 t("ic8c615e", "Alege și trimite o opțiune de răspuns rapidă"),
                 t("a04077c4", "Alege o fotografie, un videoclip sau un GIF."),
@@ -4935,9 +4936,9 @@
                 t("d9f9dec0", "Vezi Spațiu"),
                 t("h0c1f37a", "Vezi Analiză Spațiu"),
                 t("e41fffbc", "Durata totală de vizionare a videoclipurilor."),
-                t("if2909ba", "Durată vizionare"),
-                t("i0e5bf4c", "Videoclipurile tale");
-            t("ed99baea", "Acces timpuriu la versiunea beta"),
+                t("if2909ba", "Durată vizionare");
+            t("i0e5bf4c", "Videoclipurile tale"),
+                t("ed99baea", "Acces timpuriu la versiunea beta"),
                 t("gf898b70", "Căutare avansată"),
                 t("d2a43a7a", "conține atât „ai”, cât și „start-up”"),
                 t("a8584698", "start-up ai"),
@@ -5891,9 +5892,9 @@
                 t("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Șterge folder"),
-                t("f4ea967a", "Folderul a fost șters");
-            t("b670aa62", "Nume folder"),
+                t("h18f86a4", "Șterge folder");
+            t("f4ea967a", "Folderul a fost șters"),
+                t("b670aa62", "Nume folder"),
                 t("aece5462", "Denumirea folderului a fost actualizată cu succes"),
                 t("e3299b94", "Ceva nu a mers bine. Încearcă din nou să actualizezi acel folder într-un minut."),
                 t("c09ea714", "Ceva nu a mers bine. Încearcă din nou să ștergi folderul într-un minut."),
@@ -6487,6 +6488,7 @@
                 t("babfa32c", "Personalizează-ți rapid vizualizarea"),
                 t("a2a2f98e", "Vezi noutățile"),
                 t("b4a361c0", "Poți să personalizezi chiar acum culoarea și dimensiunea textului și să controlezi selecția modului Întunecat. Doar tu poți vedea aceste setări."),
+                t("g4743c56", "Începe să urmărești"),
                 t("c797b44e", "Cele mai recente povești pe X, spuse prin postări."),
                 t("a19ce060", "Explorarea nu este disponibilă."),
                 t("f7d1a8e0", "Aplicație Android"),
@@ -6894,10 +6896,10 @@
                 t("ede7d0a2", "Monedă"),
                 t("b925c18c", "Tip de salarizare"),
                 t("j3d242ce", "Interval nevalid"),
-                t("f4d07bd2", "Include detalii opționale pentru a-i ajuta pe candidați să descopere posturile cu opțiunea de căutare."),
-                t("b8cbb51a", "Rezumatul locului de muncă"),
-                t("bda6881e", "Acest loc de muncă a fost importat din Sistemul de urmărire a candidaturilor (ATS). Ai în vedere că doar anumite câmpuri pot fi modificate.");
-            t("b075c68a", "Editare loc de muncă"),
+                t("f4d07bd2", "Include detalii opționale pentru a-i ajuta pe candidați să descopere posturile cu opțiunea de căutare.");
+            t("b8cbb51a", "Rezumatul locului de muncă"),
+                t("bda6881e", "Acest loc de muncă a fost importat din Sistemul de urmărire a candidaturilor (ATS). Ai în vedere că doar anumite câmpuri pot fi modificate."),
+                t("b075c68a", "Editare loc de muncă"),
                 t("d4b6a6e0", "Profil în prim plan"),
                 t("j2dd3686", "Evidențiază locurile de muncă recomandate deasupra postărilor mele."),
                 t("af1cfd46", "Integrare ATS"),
@@ -7874,9 +7876,7 @@
                     return "Bine ai revenit, " + e.displayName;
                 }),
                 t("a76d58ba", "Analiză reclame"),
-                t("eccd0e1a", "Analiză organizații"),
-                t("deea1708", "Vrei să vezi analiza pentru toate conturile tale X?"),
-                t("eb603ffc", "Fă upgrade pentru a adăuga afiliați la rețeaua ta și pentru a vedea analiza agregată.");
+                t("eccd0e1a", "Analiză organizații");
             function c(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7915,7 +7915,9 @@
                     u(e, a)
                 );
             }
-            t("gf67aae4", "Fă upgrade pentru acces complet"),
+            t("deea1708", "Vrei să vezi analiza pentru toate conturile tale X?"),
+                t("eb603ffc", "Fă upgrade pentru a adăuga afiliați la rețeaua ta și pentru a vedea analiza agregată."),
+                t("gf67aae4", "Fă upgrade pentru acces complet"),
                 t("h75e3618", "Include organizația"),
                 t("h24a8862", "Despre această casetă de selectare"),
                 t("c29e3a88", "Selectează afiliați"),
@@ -8912,12 +8914,12 @@
                 t("j0f12222", "Vezi mai multe"),
                 t("f569f7c8", "Accesează site-ul"),
                 t("j0c6772a", "Vizitează site-ul"),
-                t("f73003aa", "Videoclipul se va reda după reclamă"),
-                t("b3112b8a", "Omite"),
-                t("h6333ad0", "Omite reclama");
-            t("c59da417", function (e) {
-                return "Omite reclama în " + e.seconds;
-            }),
+                t("f73003aa", "Videoclipul se va reda după reclamă");
+            t("b3112b8a", "Omite"),
+                t("h6333ad0", "Omite reclama"),
+                t("c59da417", function (e) {
+                    return "Omite reclama în " + e.seconds;
+                }),
                 t("c3c147cf", function (e) {
                     return "Omite " + e.seconds;
                 }),
@@ -13363,4 +13365,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.9e61d85a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.4e21259a.js.map

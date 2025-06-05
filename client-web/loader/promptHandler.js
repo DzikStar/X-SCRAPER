@@ -61,7 +61,7 @@
                 k = o.iH({ component: S }).getHandler();
         },
         565410: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => Z });
+            n.r(t), n.d(t, { default: () => P });
             var o = n(459643),
                 r = n(942893),
                 a = n(351322),
@@ -88,15 +88,15 @@
                 E = ({ applyReactionInstructions: e, createLocalApiErrorHandler: t, entry: n, processCallback: o, updateEntry: r }) => {
                     const a = n.content.relevancePrompt && n.content.relevancePrompt,
                         { confirmation: p, displayType: y = h.Compact, isRelevantCallback: C, isRelevantText: b, notRelevantCallback: f, notRelevantText: v, showConfirmation: x, subtitle: E, title: k } = a || {},
-                        Z = (0, g.z)(),
-                        P = R(y, !0),
-                        w = R(y, !1),
+                        P = (0, g.z)(),
+                        w = R(y, !0),
+                        Z = R(y, !1),
                         I = y === h.ThumbsUpAndDown,
                         A = y === h.Compact,
                         D = y === h.Large,
                         _ = c.b();
                     (0, u.q)(() => {
-                        Z.scribe({ element: "relevance_prompt", action: "impression" });
+                        P.scribe({ element: "relevance_prompt", action: "impression" });
                     });
                     const H = i.useCallback(
                             (e) => {
@@ -105,15 +105,15 @@
                             [t, n.entryId, o, a, r],
                         ),
                         M = i.useCallback(() => {
-                            Z.scribe({ element: "is_relevant", action: "click" }), H(C), e({ entry: n, triggerName: m.K.ON_IS_RELEVANT });
-                        }, [Z, e, n, C, H]),
+                            P.scribe({ element: "is_relevant", action: "click" }), H(C), e({ entry: n, triggerName: m.K.ON_IS_RELEVANT });
+                        }, [P, e, n, C, H]),
                         L = i.useCallback(() => {
-                            Z.scribe({ element: "not_relevant", action: "click" }), H(f);
-                        }, [Z, f, H]),
+                            P.scribe({ element: "not_relevant", action: "click" }), H(f);
+                        }, [P, f, H]),
                         O = k.length > 65 ? "title4" : "title3",
                         G = ({ isRelevant: e }) => {
                             const t = e ? b : v,
-                                n = e ? P : w,
+                                n = e ? w : Z,
                                 o = e ? M : L;
                             return i.createElement(l.ZP, { "aria-label": t, icon: n ? T(n) : void 0, onPress: o, size: n || D ? "large" : "xSmall", style: n ? S.icon : !D && S.button, type: "primaryOutlined" }, n ? null : t);
                         },
@@ -125,7 +125,7 @@
                 },
                 S = p.default.create((e) => ({ button: { margin: "1ex" }, buttonContainer: { display: "grid", gridTemplateColumns: "repeat(2,1fr)" }, buttonContainerLarge: { display: "flex", flexDirection: "column", flexGrow: 1, rowGap: e.spacesPx.space16 }, secondHalf: { width: "50%", display: "grid", justifyContent: "end" }, firstHalf: { width: "50%", flexDirection: "column", justifyContent: "center" }, firstHalfLarge: { display: "flex", flexDirection: "column", rowGap: e.spacesPx.space8 }, root: { flexDirection: "row", justifyContent: "space-between" }, promptContainer: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, promptContainerLarge: { paddingHorizontal: e.spacesPx.space32, paddingVertical: e.spacesPx.space32 }, compact: { padding: e.spaces.space12, borderColor: e.colors.buttonOutlinedBorder, borderRadius: e.spaces.space4, borderStyle: "solid", borderWidth: e.borderWidths.small }, thumbsUpDown: { display: "flex", borderRadius: e.spaces.space8, padding: e.spaces.space12, backgroundColor: e.colors.orange0, alignItems: "center", minHeight: e.spaces.space64 }, large: { display: "flex", flexDirection: "column", rowGap: e.spacesPx.space20 }, icon: { marginStart: e.spaces.space12 } })),
                 k = f(i.memo(E)),
-                Z = a.iH({ component: k, getScribeDataItem: (e) => r.Z.forRelevancePrompt(e.itemMetadata.clientEventInfo), isFocusable: (0, o.Z)(!0), shouldDisplayBorder: (0, o.Z)(!0) }).getHandler();
+                P = a.iH({ component: k, getScribeDataItem: (e) => r.Z.forRelevancePrompt(e.itemMetadata.clientEventInfo), isFocusable: (0, o.Z)(!0), shouldDisplayBorder: (0, o.Z)(!0) }).getHandler();
         },
         927389: (e, t, n) => {
             n.d(t, { Z: () => d });
@@ -212,33 +212,65 @@
             var o = n(157396);
             const r = (0, n(587878).Z)({ palette: o.CV.light, key: "light-blue-normal", highContrastEnabled: !1, chirpFontEnabled: !1, scale: "normal" });
         },
-        151624: (e, t, n) => {
-            n.d(t, { Z: () => o });
-            const o = n(454479).Z;
-        },
-        454479: (e, t, n) => {
-            n.d(t, { Z: () => h });
+        452661: (e, t, n) => {
+            n.d(t, { Z: () => g });
             var o = n(18198),
-                r = n(661841),
-                a = r.Z.currentCentroidXOfTouchesChangedAfter,
-                i = r.Z.currentCentroidYOfTouchesChangedAfter,
-                s = r.Z.previousCentroidXOfTouchesChangedAfter,
-                c = r.Z.previousCentroidYOfTouchesChangedAfter,
-                l = r.Z.currentCentroidX,
-                d = r.Z.currentCentroidY,
-                p = {
+                r = {
+                    centroidDimension: function (e, t, n, o) {
+                        var a = e.touchBank,
+                            i = 0,
+                            s = 0,
+                            c = 1 === e.numberActiveTouches ? e.touchBank[e.indexOfSingleActiveTouch] : null;
+                        if (null !== c) c.touchActive && c.currentTimeStamp > t && ((i += o && n ? c.currentPageX : o && !n ? c.currentPageY : !o && n ? c.previousPageX : c.previousPageY), (s = 1));
+                        else
+                            for (var l = 0; l < a.length; l++) {
+                                var d = a[l];
+                                if (null != d && d.touchActive && d.currentTimeStamp >= t) {
+                                    (i += o && n ? d.currentPageX : o && !n ? d.currentPageY : !o && n ? d.previousPageX : d.previousPageY), s++;
+                                }
+                            }
+                        return s > 0 ? i / s : r.noCentroid;
+                    },
+                    currentCentroidXOfTouchesChangedAfter: function (e, t) {
+                        return r.centroidDimension(e, t, !0, !0);
+                    },
+                    currentCentroidYOfTouchesChangedAfter: function (e, t) {
+                        return r.centroidDimension(e, t, !1, !0);
+                    },
+                    previousCentroidXOfTouchesChangedAfter: function (e, t) {
+                        return r.centroidDimension(e, t, !0, !1);
+                    },
+                    previousCentroidYOfTouchesChangedAfter: function (e, t) {
+                        return r.centroidDimension(e, t, !1, !1);
+                    },
+                    currentCentroidX: function (e) {
+                        return r.centroidDimension(e, 0, !0, !0);
+                    },
+                    currentCentroidY: function (e) {
+                        return r.centroidDimension(e, 0, !1, !0);
+                    },
+                    noCentroid: -1,
+                };
+            const a = r;
+            var i = a.currentCentroidXOfTouchesChangedAfter,
+                s = a.currentCentroidYOfTouchesChangedAfter,
+                c = a.previousCentroidXOfTouchesChangedAfter,
+                l = a.previousCentroidYOfTouchesChangedAfter,
+                d = a.currentCentroidX,
+                p = a.currentCentroidY,
+                u = {
                     _initializeGestureState(e) {
                         (e.moveX = 0), (e.moveY = 0), (e.x0 = 0), (e.y0 = 0), (e.dx = 0), (e.dy = 0), (e.vx = 0), (e.vy = 0), (e.numberActiveTouches = 0), (e._accountsForMovesUpTo = 0);
                     },
                     _updateGestureStateOnMove(e, t) {
-                        (e.numberActiveTouches = t.numberActiveTouches), (e.moveX = a(t, e._accountsForMovesUpTo)), (e.moveY = i(t, e._accountsForMovesUpTo));
+                        (e.numberActiveTouches = t.numberActiveTouches), (e.moveX = i(t, e._accountsForMovesUpTo)), (e.moveY = s(t, e._accountsForMovesUpTo));
                         var n = e._accountsForMovesUpTo,
-                            o = s(t, n),
-                            r = a(t, n),
-                            l = c(t, n),
-                            d = i(t, n),
+                            o = c(t, n),
+                            r = i(t, n),
+                            a = l(t, n),
+                            d = s(t, n),
                             p = e.dx + (r - o),
-                            u = e.dy + (d - l),
+                            u = e.dy + (d - a),
                             m = t.mostRecentTimeStamp - e._accountsForMovesUpTo;
                         (e.vx = (p - e.dx) / m), (e.vy = (u - e.dy) / m), (e.dx = p), (e.dy = u), (e._accountsForMovesUpTo = t.mostRecentTimeStamp);
                     },
@@ -249,10 +281,10 @@
                             panHandlers: {
                                 onStartShouldSetResponder: (t) => null != e.onStartShouldSetPanResponder && e.onStartShouldSetPanResponder(t, n),
                                 onMoveShouldSetResponder: (t) => null != e.onMoveShouldSetPanResponder && e.onMoveShouldSetPanResponder(t, n),
-                                onStartShouldSetResponderCapture: (t) => (1 === t.nativeEvent.touches.length && p._initializeGestureState(n), (n.numberActiveTouches = t.touchHistory.numberActiveTouches), null != e.onStartShouldSetPanResponderCapture && e.onStartShouldSetPanResponderCapture(t, n)),
+                                onStartShouldSetResponderCapture: (t) => (1 === t.nativeEvent.touches.length && u._initializeGestureState(n), (n.numberActiveTouches = t.touchHistory.numberActiveTouches), null != e.onStartShouldSetPanResponderCapture && e.onStartShouldSetPanResponderCapture(t, n)),
                                 onMoveShouldSetResponderCapture(t) {
                                     var o = t.touchHistory;
-                                    return n._accountsForMovesUpTo !== o.mostRecentTimeStamp && (p._updateGestureStateOnMove(n, o), !!e.onMoveShouldSetPanResponderCapture && e.onMoveShouldSetPanResponderCapture(t, n));
+                                    return n._accountsForMovesUpTo !== o.mostRecentTimeStamp && (u._updateGestureStateOnMove(n, o), !!e.onMoveShouldSetPanResponderCapture && e.onMoveShouldSetPanResponderCapture(t, n));
                                 },
                                 onResponderGrant: (r) => (
                                     t.handle || (t.handle = o.Z.createInteractionHandle()),
@@ -261,18 +293,18 @@
                                             clearTimeout(e.timeout);
                                         })(t),
                                     (t.shouldCancelClick = !0),
-                                    (n.x0 = l(r.touchHistory)),
-                                    (n.y0 = d(r.touchHistory)),
+                                    (n.x0 = d(r.touchHistory)),
+                                    (n.y0 = p(r.touchHistory)),
                                     (n.dx = 0),
                                     (n.dy = 0),
                                     e.onPanResponderGrant && e.onPanResponderGrant(r, n),
                                     null == e.onShouldBlockNativeResponder || e.onShouldBlockNativeResponder(r, n)
                                 ),
                                 onResponderReject(o) {
-                                    u(t, e.onPanResponderReject, o, n);
+                                    m(t, e.onPanResponderReject, o, n);
                                 },
                                 onResponderRelease(o) {
-                                    u(t, e.onPanResponderRelease, o, n), m(t), p._initializeGestureState(n);
+                                    m(t, e.onPanResponderRelease, o, n), h(t), u._initializeGestureState(n);
                                 },
                                 onResponderStart(t) {
                                     var o = t.touchHistory;
@@ -280,14 +312,14 @@
                                 },
                                 onResponderMove(t) {
                                     var o = t.touchHistory;
-                                    n._accountsForMovesUpTo !== o.mostRecentTimeStamp && (p._updateGestureStateOnMove(n, o), e.onPanResponderMove && e.onPanResponderMove(t, n));
+                                    n._accountsForMovesUpTo !== o.mostRecentTimeStamp && (u._updateGestureStateOnMove(n, o), e.onPanResponderMove && e.onPanResponderMove(t, n));
                                 },
                                 onResponderEnd(o) {
                                     var r = o.touchHistory;
-                                    (n.numberActiveTouches = r.numberActiveTouches), u(t, e.onPanResponderEnd, o, n);
+                                    (n.numberActiveTouches = r.numberActiveTouches), m(t, e.onPanResponderEnd, o, n);
                                 },
                                 onResponderTerminate(o) {
-                                    u(t, e.onPanResponderTerminate, o, n), m(t), p._initializeGestureState(n);
+                                    m(t, e.onPanResponderTerminate, o, n), h(t), u._initializeGestureState(n);
                                 },
                                 onResponderTerminationRequest: (t) => null == e.onPanResponderTerminationRequest || e.onPanResponderTerminationRequest(t, n),
                                 onClickCapture: (e) => {
@@ -298,56 +330,16 @@
                         };
                     },
                 };
-            function u(e, t, n, r) {
+            function m(e, t, n, r) {
                 e.handle && (o.Z.clearInteractionHandle(e.handle), (e.handle = null)), t && t(n, r);
             }
-            function m(e) {
+            function h(e) {
                 e.timeout = setTimeout(() => {
                     e.shouldCancelClick = !1;
                 }, 250);
             }
-            const h = p;
-        },
-        661841: (e, t, n) => {
-            n.d(t, { Z: () => r });
-            var o = {
-                centroidDimension: function (e, t, n, r) {
-                    var a = e.touchBank,
-                        i = 0,
-                        s = 0,
-                        c = 1 === e.numberActiveTouches ? e.touchBank[e.indexOfSingleActiveTouch] : null;
-                    if (null !== c) c.touchActive && c.currentTimeStamp > t && ((i += r && n ? c.currentPageX : r && !n ? c.currentPageY : !r && n ? c.previousPageX : c.previousPageY), (s = 1));
-                    else
-                        for (var l = 0; l < a.length; l++) {
-                            var d = a[l];
-                            if (null != d && d.touchActive && d.currentTimeStamp >= t) {
-                                (i += r && n ? d.currentPageX : r && !n ? d.currentPageY : !r && n ? d.previousPageX : d.previousPageY), s++;
-                            }
-                        }
-                    return s > 0 ? i / s : o.noCentroid;
-                },
-                currentCentroidXOfTouchesChangedAfter: function (e, t) {
-                    return o.centroidDimension(e, t, !0, !0);
-                },
-                currentCentroidYOfTouchesChangedAfter: function (e, t) {
-                    return o.centroidDimension(e, t, !1, !0);
-                },
-                previousCentroidXOfTouchesChangedAfter: function (e, t) {
-                    return o.centroidDimension(e, t, !0, !1);
-                },
-                previousCentroidYOfTouchesChangedAfter: function (e, t) {
-                    return o.centroidDimension(e, t, !1, !1);
-                },
-                currentCentroidX: function (e) {
-                    return o.centroidDimension(e, 0, !0, !0);
-                },
-                currentCentroidY: function (e) {
-                    return o.centroidDimension(e, 0, !1, !0);
-                },
-                noCentroid: -1,
-            };
-            const r = o;
+            const g = u;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.promptHandler.bbfb120a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.promptHandler.b187a5fa.js.map

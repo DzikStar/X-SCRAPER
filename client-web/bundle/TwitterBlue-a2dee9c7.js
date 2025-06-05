@@ -145,6 +145,17 @@
                 p = r.n(d);
             const m = ({ apiClient: e, featureSwitches: t }) => ({ fetchSubscriptionProductDetails: (t) => e.graphQL(o(), t).then((e) => e.web_subscription_product_details), fetchSubscriptionProductCheckoutUrl: (t) => e.graphQL(u(), t).then((e) => e.subscriptioncheckoutsession_create_for_blue?.session_url), fetchNotABotCheckoutUrl: (t) => e.graphQL(l(), t).then((e) => e.subscriptioncheckoutsession_create_for_not_a_bot?.session_url), fetchProductSubscriptions: (t) => e.graphQL(n(), t).then((e) => e.viewer_v2?.list_product_subscriptions), switchTier: (t) => e.graphQL(p(), t).then((e) => e) });
         },
+        225258: (e, t, r) => {
+            "use strict";
+            r.d(t, { Z: () => n });
+            const a = window?.location?.host ? `https://${window?.location?.host}` : "https://www.x.com",
+                n = ({ apiClient: e, featureSwitches: t }) => ({
+                    postConversion(t, r, n, i = {}) {
+                        const l = { conversions: [{ basePixel: t, eventPixel: r, twclid: n }] };
+                        return e.postUnversioned("/i/capi", l, { ...i, "content-type": "application/json" }, a).then((e) => e.data);
+                    },
+                });
+        },
         290402: (e, t, r) => {
             "use strict";
             r.d(t, { Z: () => g });
@@ -435,24 +446,18 @@
                     return a;
                 };
         },
-        116868: (e, t, r) => {
+        488645: (e, t, r) => {
             "use strict";
-            r.d(t, { q: () => l });
-            const a = window?.location?.host ? `https://${window?.location?.host}` : "https://www.x.com",
-                n = ({ apiClient: e, featureSwitches: t }) => ({
-                    postConversion(t, r, n, i = {}) {
-                        const l = { conversions: [{ basePixel: t, eventPixel: r, twclid: n }] };
-                        return e.postUnversioned("/i/capi", l, { ...i, "content-type": "application/json" }, a).then((e) => e.data);
-                    },
-                });
-            var i = r(917799);
-            const l =
-                    (e, t, r, a, l) =>
+            r.d(t, { q: () => i });
+            var a = r(225258),
+                n = r(917799);
+            const i =
+                    (e, t, r, i, s) =>
                     async (u, c, { api: o, userPersistence: d }) => {
-                        const p = await s(d, r, a, l);
-                        return p ? (0, i.Vg)(u, { params: { basePixel: e, eventPixel: t, twclid: p }, request: ({ basePixel: e, eventPixel: t, twclid: r } = {}, a) => o.withEndpoint(n).postConversion(e, t, r, a) })("POST_CONVERSION") : Promise.resolve(null);
+                        const p = await l(d, r, i, s);
+                        return p ? (0, n.Vg)(u, { params: { basePixel: e, eventPixel: t, twclid: p }, request: ({ basePixel: e, eventPixel: t, twclid: r } = {}, n) => o.withEndpoint(a.Z).postConversion(e, t, r, n) })("POST_CONVERSION") : Promise.resolve(null);
                     },
-                s = async (e, t, r, a) => {
+                l = async (e, t, r, a) => {
                     let n = t;
                     if (a && n) await e.set(r, { twclid: n });
                     else {
@@ -686,4 +691,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-a2dee9c7.64864c0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-a2dee9c7.272d0f3a.js.map

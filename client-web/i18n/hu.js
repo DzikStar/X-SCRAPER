@@ -3954,6 +3954,7 @@
                 s("j6cdf012", "A társhosztok nem hívhatnak meg és nem törölhetnek társhosztokat"),
                 s("c727d116", "A társhosztok nem zárhatják be a Teret"),
                 s("g69084b8", "Társhoszti meghívás elfogadása"),
+                s("ddd5cfe2", "Dokk"),
                 s("ee230734", "További lehetőségek megtekintése"),
                 s("ic8c615e", "Gyors válasz kiválasztása és küldése lehetőség"),
                 s("a04077c4", "Kérjük, válassz 1 GIF-et, videót vagy fényképet!"),
@@ -4923,9 +4924,9 @@
                 s("d9f9dec0", "Tér megtekintése"),
                 s("h0c1f37a", "A Tér adatainak megtekintése"),
                 s("e41fffbc", "A videóid teljes megtekintési ideje."),
-                s("if2909ba", "Megtekintési idő"),
-                s("i0e5bf4c", "Saját videók");
-            s("ed99baea", "Korai bétahozzáférés"),
+                s("if2909ba", "Megtekintési idő");
+            s("i0e5bf4c", "Saját videók"),
+                s("ed99baea", "Korai bétahozzáférés"),
                 s("gf898b70", "Összetett keresés"),
                 s("d2a43a7a", "mind az „ai”, mind a „startup” szót tartalmazza"),
                 s("a8584698", "ai startup"),
@@ -5879,9 +5880,9 @@
                 s("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                s("h18f86a4", "Mappa törlése"),
-                s("f4ea967a", "A mappa törlésre került");
-            s("b670aa62", "Mappanév"),
+                s("h18f86a4", "Mappa törlése");
+            s("f4ea967a", "A mappa törlésre került"),
+                s("b670aa62", "Mappanév"),
                 s("aece5462", "A mappanév frissítése sikeresen megtörtént"),
                 s("e3299b94", "Valami hiba történt. Pár perc múlva próbáld meg újra frissíteni a mappát."),
                 s("c09ea714", "Valami hiba történt. Pár perc múlva próbáld meg újra törölni a mappát."),
@@ -6475,6 +6476,7 @@
                 s("babfa32c", "Nézet gyors testreszabása"),
                 s("a2a2f98e", "Tekintsd meg az újdonságokat!"),
                 s("b4a361c0", "Személyre szabhatod a színeket és a szöveg méretét, és akár a sötét módot is bekapcsolhatod itt és most. Ezeket a beállításokat csak te láthatod."),
+                s("g4743c56", "Követés megkezdése"),
                 s("c797b44e", "A legfrissebb történetek az X-en – bejegyzésekben."),
                 s("a19ce060", "A felfedezés nem érhető el."),
                 s("f7d1a8e0", "Android alkalmazás"),
@@ -6882,10 +6884,10 @@
                 s("ede7d0a2", "Pénznem"),
                 s("b925c18c", "Fizetés típusa"),
                 s("j3d242ce", "Érvénytelen sáv"),
-                s("f4d07bd2", "Adj meg opcionális adatokat, hogy a jelöltek könnyebben megtalálhassák az álláslehetőségeket a kereső segítségével."),
-                s("b8cbb51a", "Munka leírása"),
-                s("bda6881e", "Ezt az álláshirdetést a pályázók nyomonkövetési rendszeréből importáltuk. Ne feledd, hogy csak bizonyos mezők módosíthatók.");
-            s("b075c68a", "Álláshirdetés szerkesztése"),
+                s("f4d07bd2", "Adj meg opcionális adatokat, hogy a jelöltek könnyebben megtalálhassák az álláslehetőségeket a kereső segítségével.");
+            s("b8cbb51a", "Munka leírása"),
+                s("bda6881e", "Ezt az álláshirdetést a pályázók nyomonkövetési rendszeréből importáltuk. Ne feledd, hogy csak bizonyos mezők módosíthatók."),
+                s("b075c68a", "Álláshirdetés szerkesztése"),
                 s("d4b6a6e0", "Kiemelt tartalmak"),
                 s("j2dd3686", "Fontos álláshirdetések kiemelése a bejegyzéseim felett."),
                 s("af1cfd46", "ATS integráció"),
@@ -7862,9 +7864,7 @@
                     return "Üdvözlünk újra, " + e.displayName + "!";
                 }),
                 s("a76d58ba", "Hirdetési elemzések"),
-                s("eccd0e1a", "Szervezeti elemzések"),
-                s("deea1708", "Meg szeretnéd tekinteni az összes X-fiókod elemzését?"),
-                s("eb603ffc", "Válts magasabb csomagra, hogy partneri hálózatot építhess és megtekinthesd az összevont elemzéseket.");
+                s("eccd0e1a", "Szervezeti elemzések");
             function n(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var s = t[a];
@@ -7903,7 +7903,9 @@
                     z(e, t)
                 );
             }
-            s("gf67aae4", "Fizess elő teljes körű hozzáférésre"),
+            s("deea1708", "Meg szeretnéd tekinteni az összes X-fiókod elemzését?"),
+                s("eb603ffc", "Válts magasabb csomagra, hogy partneri hálózatot építhess és megtekinthesd az összevont elemzéseket."),
+                s("gf67aae4", "Fizess elő teljes körű hozzáférésre"),
                 s("h75e3618", "Szervezet belfogalása"),
                 s("h24a8862", "A jelölőnégyzet ismertetése"),
                 s("c29e3a88", "Partnerek kiválasztása"),
@@ -8900,12 +8902,12 @@
                 s("j0f12222", "Továbbiak megtekintése"),
                 s("f569f7c8", "Ugrás a weboldalra"),
                 s("j0c6772a", "Weboldal megtekintése"),
-                s("f73003aa", "A videó lejátszása a hirdetés után indul"),
-                s("b3112b8a", "Kihagyás"),
-                s("h6333ad0", "Hirdetés átugrása");
-            s("c59da417", function (e) {
-                return "Hirdetés kihagyása: " + e.seconds;
-            }),
+                s("f73003aa", "A videó lejátszása a hirdetés után indul");
+            s("b3112b8a", "Kihagyás"),
+                s("h6333ad0", "Hirdetés átugrása"),
+                s("c59da417", function (e) {
+                    return "Hirdetés kihagyása: " + e.seconds;
+                }),
                 s("c3c147cf", function (e) {
                     return "Kihagyás " + e.seconds;
                 }),
@@ -13358,4 +13360,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.476549ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.9266d0ba.js.map

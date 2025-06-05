@@ -37,10 +37,10 @@
                 B = n.n(I),
                 M = n(726426),
                 R = n.n(M);
-            const z = D.Z,
-                L = () => {
+            const L = D.Z,
+                z = () => {
                     const e = r.useMemo(() => R()(), []),
-                        [t, n] = B()(z);
+                        [t, n] = B()(L);
                     return [
                         r.useCallback(
                             ({ amount: n, description: a, userId: r }) =>
@@ -99,19 +99,19 @@
                         B = (0, A.MO)({ permissions: D }),
                         M = "User" === b?.__typename,
                         R = l.location?.state,
-                        z = l.location.pathname,
+                        L = l.location.pathname,
                         [O, H] = r.useState(e ?? ""),
                         [F, X] = r.useState(!0),
                         [V, q] = r.useState(""),
                         [Y, $] = r.useState(null),
                         [W, j] = U(),
-                        [Q, K] = L(),
+                        [Q, K] = z(),
                         G = r.useMemo(() => ({ ...R, userId: n, step: c.cX.reviewPane, amount: O }), [O, R, n]),
                         J = (0, f.p)(),
                         ee = r.useCallback(() => {
                             $(null);
                         }, []),
-                        te = r.useMemo(() => ({ closePath: m.gp, redirectPath: z, redirectState: { userId: n, userScreenName: b?.core?.screen_name, amount: O, step: c.cX.reviewPane, transferDirection: t } }), [z, n, O, t, b]),
+                        te = r.useMemo(() => ({ closePath: m.gp, redirectPath: L, redirectState: { userId: n, userScreenName: b?.core?.screen_name, amount: O, step: c.cX.reviewPane, transferDirection: t } }), [L, n, O, t, b]),
                         ne = r.useCallback((e) => {
                             q(e.target.value);
                         }, []),
@@ -120,7 +120,7 @@
                                 const t = T[e],
                                     r = (0, A.DO)({ roles: I, permissions: D, actionPermission: t }),
                                     o = { ...G, transferDirection: e };
-                                if ((a.scribe({ page: "money", section: "p2p-transfer", component: e, action: "click" }), r)) l.push(r, { redirectPath: z, redirectState: o, closePath: m.gp });
+                                if ((a.scribe({ page: "money", section: "p2p-transfer", component: e, action: "click" }), r)) l.push(r, { redirectPath: L, redirectState: o, closePath: m.gp });
                                 else {
                                     ee();
                                     const t = (0, A.Dc)(O),
@@ -139,7 +139,7 @@
                                         });
                                 }
                             },
-                            [I, D, G, a, l, z, ee, O, Q, W, V, n, J, te],
+                            [I, D, G, a, l, L, ee, O, Q, W, V, n, J, te],
                         ),
                         re = j || K || !O || !F,
                         oe = !S?.available_amount_local_micro || !O || (0, A.UV)({ balanceAmountMicro: S.available_amount_local_micro, amount: O }),
@@ -435,10 +435,10 @@
                         t,
                     ];
                 },
-                M = "Add Bank Account",
-                R = "Add Debit Card",
-                z = { pathname: s.ac, state: { redirectPath: s.iE.bankAccounts } },
-                L = { pathname: s.UA, state: { redirectPath: s.iE.bankAccounts } },
+                M = "Link a bank account",
+                R = "Link a card",
+                L = { pathname: s.ac, state: { redirectPath: s.iE.bankAccounts } },
+                z = { pathname: s.UA, state: { redirectPath: s.iE.bankAccounts } },
                 O = (e) => {
                     const { paymentMethods: t, refetchStatus: n } = (0, A.Z)(),
                         { permissions: o } = (0, Z.Z)({ fetchKey: "Payments" }),
@@ -492,7 +492,7 @@
                                         n = t?.id;
                                     return t && n ? a.createElement(C.Z, { account: t, handleExpand: I(t), key: n, onClick: e?.core?.details?.status === g.D.LoginRequired && T ? D(n) : void 0 }) : null;
                                 }),
-                                n ? a.createElement(w.Z, { disabled: !T, label: "XPaymentsBankAccountPaymentMethod" === r ? M : R, link: T ? ("XPaymentsBankAccountPaymentMethod" === r ? z : L) : void 0, name: "XPaymentsBankAccountPaymentMethod" === r ? M : R, variant: "row" }) : null,
+                                n ? a.createElement(w.Z, { disabled: !T, label: "XPaymentsBankAccountPaymentMethod" === r ? M : R, link: T ? ("XPaymentsBankAccountPaymentMethod" === r ? L : z) : void 0, name: "XPaymentsBankAccountPaymentMethod" === r ? M : R, variant: "row" }) : null,
                             ),
                         q = a.createElement(d.Z, { style: H.accountSection }, (F.length > 0 || T) && V({ accounts: F, type: "XPaymentsBankAccountPaymentMethod", sectionTitle: "Bank Accounts", showAddButton: !!T }), (X.length > 0 || T) && V({ accounts: X, type: "XPaymentsCreditCardPaymentMethod", sectionTitle: "Debit Cards", showAddButton: !!T }));
                     return a.createElement(a.Fragment, null, n === P.iF.LOADING ? a.createElement(y.Z, null) : a.createElement(d.Z, { style: H.screenContainer }, a.createElement(p.ZP, { size: "headline1", weight: "heavy" }, "Linked accounts"), q), m ? a.createElement(v.Z, { account: m, onDone: U, onRemove: x && m.id ? O(m.id) : void 0 }) : null, i ? a.createElement(h.Z, { confirmButtonDisabled: k, confirmButtonLabel: "Remove", confirmButtonType: "destructiveFilled", headline: "Remove linked account?", onCancel: () => c(null), onConfirm: N, text: "Your account will be removed from X" }) : null);
@@ -781,7 +781,7 @@
                 A = a.memo(v);
         },
         446985: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => z });
+            n.r(t), n.d(t, { default: () => L });
             n(136728);
             var a = n(202784),
                 r = n(325686),
@@ -818,7 +818,7 @@
                         n = (0, o.useParams)().transactionId,
                         p = (0, S.jh)(),
                         { get_transaction_by_id: B } = (0, A.Z)(n || ""),
-                        { __id: M, amount_local_micro: R, authorization_method: z, availability_date: L, base_amount_micro: O, challenge_id: U, created_at: H, currency: N, description: F, details: X, id: V, product_code: q, reason_code: Y, total_fees_micro: $, transaction_status: W, transaction_type: j } = B ?? {},
+                        { __id: M, amount_local_micro: R, authorization_method: L, availability_date: z, base_amount_micro: O, challenge_id: U, created_at: H, currency: N, description: F, details: X, id: V, product_code: q, reason_code: Y, total_fees_micro: $, transaction_status: W, transaction_type: j } = B ?? {},
                         Q = X?.receiver_results?.result,
                         K = X?.sender_results?.result,
                         G = X?.merchant_details?.merchant_results?.result,
@@ -826,7 +826,7 @@
                         ee = X?.merchant_details,
                         te = X?.reference_transaction_id,
                         ne = (0, w.Z)({ senderId: K?.rest_id }),
-                        ae = (0, x.p6)(L),
+                        ae = (0, x.p6)(z),
                         re = (0, S.JU)(),
                         oe = (0, x.y4)({ feeAmount: $, totalAmount: R, baseAmount: O }),
                         le = q === m.x.Interest,
@@ -851,7 +851,7 @@
                         ve = (0, x.EQ)({ productCode: q, transactionType: j }),
                         we = (0, x.zK)({ transactionType: j, productCode: q, merchantDetails: ee, amountType: be.amountType }),
                         Ae = we && we.location && (0, x.T7)(we.location),
-                        Se = (0, x.cI)({ method: z }),
+                        Se = (0, x.cI)({ method: L }),
                         xe = ve || ye,
                         Te = (0, x.pQ)({ productCode: q, transactionType: j, account: he }),
                         De = a.useMemo(() => (n ? a.createElement(f.Z, { reportedHandle: Ee, transactionId: n }) : null), [n, Ee]),
@@ -895,7 +895,7 @@
                 },
                 M = { context: "TRANSACTION_DETAIL" },
                 R = (e) => a.createElement(p.H, { errorConfig: M }, a.createElement(B, e)),
-                z = a.memo(R);
+                L = a.memo(R);
         },
         586298: (e, t, n) => {
             n.r(t), n.d(t, { default: () => c });
@@ -934,4 +934,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-41dc26ea.678b14aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-41dc26ea.c3ce2ada.js.map

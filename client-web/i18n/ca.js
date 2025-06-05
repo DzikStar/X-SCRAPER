@@ -3574,7 +3574,7 @@
                 t("hbe4f99e", "Hola! Estic impacient per compartir contingut confidencial i anar-nos coneixent millor :)"),
                 t("fb278c82", "Què és aquesta previsualització?"),
                 t("j6cab6ec", "Això és el que els altres usuaris veuran abans de subscriure's al teu contingut. Ajusta i edita les descripcions fins a tenir-les a punt."),
-                t("f2b1e83e", "Grok & Third-Party Collaborators"),
+                t("f2b1e83e", "Grok i col·laboradors de tercers"),
                 t("e110a46c", "Esborra l'historial de converses"),
                 t("ebc4fda0", "Estàs a punt de suprimir el teu historial de converses de Grok. No podràs tornar a accedir a aquestes converses."),
                 t("c90fe716", "Vols suprimir les converses?"),
@@ -3955,6 +3955,7 @@
                 t("j6cdf012", "Els coamfitrions no poden convidar ni eliminar altres coamfitrions"),
                 t("c727d116", "Els coamfitrions no poden finalitzar l'Espai"),
                 t("g69084b8", "Accepta la invitació per ser coamfitrió"),
+                t("ddd5cfe2", "Acobla"),
                 t("ee230734", "Mostra més opcions"),
                 t("ic8c615e", "Tria i envia una opció de resposta ràpida"),
                 t("a04077c4", "Tria una foto, un vídeo o un GIF."),
@@ -4924,9 +4925,9 @@
                 t("d9f9dec0", "Mostra l'espai"),
                 t("h0c1f37a", "Mostra les analítiques dels espais"),
                 t("e41fffbc", "Temps total de visualització dels vídeos."),
-                t("if2909ba", "Temps de visualització"),
-                t("i0e5bf4c", "Els teus vídeos");
-            t("ed99baea", "Accès beta anticipat"),
+                t("if2909ba", "Temps de visualització");
+            t("i0e5bf4c", "Els teus vídeos"),
+                t("ed99baea", "Accès beta anticipat"),
                 t("gf898b70", "Cerca avançada"),
                 t("d2a43a7a", 'conté "ia" i "empresa emergent"'),
                 t("a8584698", "empresa emergent d'ia"),
@@ -5509,7 +5510,7 @@
                 t("j6aa6172", "Vols suprimir la valoració?"),
                 t("i4112750", "Aquesta acció no es pot desfer."),
                 t("i6f6191a", "Gràcies!"),
-                t("h5575012", "Agree and submit"),
+                t("h5575012", "Accepta i envia"),
                 t("f9171e52", "Aquesta publicació agrada a persones que normalment no hi estan d'acord, però la informació que tenim fins ara és limitada."),
                 t("j0f9919a", "La teva valoració no afectarà negativament cap publicació, però pot contribuir al reconeixement positiu de publicacions que agraden a molta gent."),
                 t("b3af830c", "Els teus comentaris:"),
@@ -5529,7 +5530,7 @@
                 t("g0402b3b", "que agraden a persones amb diferents punts de vista"),
                 t("ged62c2b", "visibilitat"),
                 t("b5d5f7f1", "Defineix la direcció"),
-                t("a42fef87", "Learn more"),
+                t("a42fef87", "Més informació"),
                 t("bd7eb888", "Mostra totes les notes d'aquesta publicació"),
                 t("i97b83f6", "Hi ha hagut un error en enviar l'apel·lació. Torna-ho a provar."),
                 t("a038ab9a", "Tradueix l'anotació"),
@@ -5880,9 +5881,9 @@
                 t("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Suprimeix la carpeta"),
-                t("f4ea967a", "S'ha suprimit la carpeta");
-            t("b670aa62", "Nom de la carpeta"),
+                t("h18f86a4", "Suprimeix la carpeta");
+            t("f4ea967a", "S'ha suprimit la carpeta"),
+                t("b670aa62", "Nom de la carpeta"),
                 t("aece5462", "El nom de la carpeta s'ha actualitzat correctament"),
                 t("e3299b94", "Alguna cosa ha anat malament. Torna a provar d'actualitzar la carpeta d'aquí a un minut."),
                 t("c09ea714", "Alguna cosa ha anat malament. Torna a provar de suprimir la carpeta d'aquí a un minut."),
@@ -6476,6 +6477,7 @@
                 t("babfa32c", "Personalitza ràpidament la visualització"),
                 t("a2a2f98e", "Mira què passa"),
                 t("b4a361c0", "Pots personalitzar el color i la mida del text, i activar o desactivar el mode fosc, ara mateix. Només tu pots veure aquesta configuració."),
+                t("g4743c56", "Comença a seguir"),
                 t("c797b44e", "Les històries més recents a X explicades en publicacions."),
                 t("a19ce060", "L'exploració no està disponible."),
                 t("f7d1a8e0", "Aplicació per a Android"),
@@ -6883,10 +6885,10 @@
                 t("ede7d0a2", "Moneda"),
                 t("b925c18c", "Tipus de salari"),
                 t("j3d242ce", "Interval no vàlid"),
-                t("f4d07bd2", "Inclou detalls opcionals perquè els candidats puguin trobar fàcilment les funcions amb la cerca."),
-                t("b8cbb51a", "Resum de la feina"),
-                t("bda6881e", "Aquesta feina s'ha importat del teu sistema de seguiment d'aspirants (ATS). Tingues en compte que només es poden modificar camps concrets.");
-            t("b075c68a", "Edita la feina"),
+                t("f4d07bd2", "Inclou detalls opcionals perquè els candidats puguin trobar fàcilment les funcions amb la cerca.");
+            t("b8cbb51a", "Resum de la feina"),
+                t("bda6881e", "Aquesta feina s'ha importat del teu sistema de seguiment d'aspirants (ATS). Tingues en compte que només es poden modificar camps concrets."),
+                t("b075c68a", "Edita la feina"),
                 t("d4b6a6e0", "Spotlight de perfil"),
                 t("j2dd3686", "Mostra les feines destacades a sobre de les meves publicacions."),
                 t("af1cfd46", "Integració amb ATS"),
@@ -7863,9 +7865,7 @@
                     return "Et donem la benvinguda, " + e.displayName;
                 }),
                 t("a76d58ba", "Analítiques d'anuncis"),
-                t("eccd0e1a", "Analítiques de l'organització"),
-                t("deea1708", "Vols veure les analítiques de tots els teus comptes de X?"),
-                t("eb603ffc", "Actualitza per afiliar la teva xarxa i consultar les analítiques agregades.");
+                t("eccd0e1a", "Analítiques de l'organització");
             function s(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7904,7 +7904,9 @@
                     n(e, a)
                 );
             }
-            t("gf67aae4", "Actualitza a l'accés total"),
+            t("deea1708", "Vols veure les analítiques de tots els teus comptes de X?"),
+                t("eb603ffc", "Actualitza per afiliar la teva xarxa i consultar les analítiques agregades."),
+                t("gf67aae4", "Actualitza a l'accés total"),
                 t("h75e3618", "Inclou l'organització"),
                 t("h24a8862", "Informació sobre aquesta casella"),
                 t("c29e3a88", "Selecciona afiliats"),
@@ -8901,12 +8903,12 @@
                 t("j0f12222", "Mostra'n més"),
                 t("f569f7c8", "Ves al lloc web"),
                 t("j0c6772a", "Visita el lloc web"),
-                t("f73003aa", "El vídeo es reproduirà després de l'anunci"),
-                t("b3112b8a", "Omet"),
-                t("h6333ad0", "Omet l'anunci");
-            t("c59da417", function (e) {
-                return "Omet l'anunci d'aquí a: " + e.seconds;
-            }),
+                t("f73003aa", "El vídeo es reproduirà després de l'anunci");
+            t("b3112b8a", "Omet"),
+                t("h6333ad0", "Omet l'anunci"),
+                t("c59da417", function (e) {
+                    return "Omet l'anunci d'aquí a: " + e.seconds;
+                }),
                 t("c3c147cf", function (e) {
                     return "Omet " + e.seconds;
                 }),
@@ -11529,7 +11531,7 @@
                         {
                             key: "ffd3d1a1",
                             get: function () {
-                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                                return ["Les valoracions són anònimes i estan disponibles públicament en nom de la transparència. "];
                             },
                         },
                         {
@@ -13350,4 +13352,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.9086ce5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.66a02d8a.js.map

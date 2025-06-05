@@ -3955,6 +3955,7 @@
                 e("j6cdf012", "Co-hostit eivät voi kutsua tai poistaa toisia co-hosteja"),
                 e("c727d116", "Co-hostit eivät voi päättää Huonetta"),
                 e("g69084b8", "Hyväksy co-host-kutsu"),
+                e("ddd5cfe2", "Pienennä"),
                 e("ee230734", "Näytä lisää vaihtoehtoja"),
                 e("ic8c615e", "Valitse ja lähetä pikavastausvaihtoehto"),
                 e("a04077c4", "Valitse 1 kuva, video tai GIF."),
@@ -4924,9 +4925,9 @@
                 e("d9f9dec0", "Näytä huone"),
                 e("h0c1f37a", "Näytä huoneen tilastot"),
                 e("e41fffbc", "Videoittesi katseluaika yhteensä."),
-                e("if2909ba", "Katseluaika"),
-                e("i0e5bf4c", "Videosi");
-            e("ed99baea", "Beta-ennakkokäyttö"),
+                e("if2909ba", "Katseluaika");
+            e("i0e5bf4c", "Videosi"),
+                e("ed99baea", "Beta-ennakkokäyttö"),
                 e("gf898b70", "Tarkennettu haku"),
                 e("d2a43a7a", 'sisältää sekä termit "ai" että "startup"'),
                 e("a8584698", "ai startup"),
@@ -5880,9 +5881,9 @@
                 e("e41c9b4f", function (a) {
                     return "Tallennettu kokoelmaan " + a.bookmarkFolderName;
                 }),
-                e("h18f86a4", "Poista kansio"),
-                e("f4ea967a", "Kansio on poistettu");
-            e("b670aa62", "Kansion nimi"),
+                e("h18f86a4", "Poista kansio");
+            e("f4ea967a", "Kansio on poistettu"),
+                e("b670aa62", "Kansion nimi"),
                 e("aece5462", "Kansion nimen päivitys onnistui"),
                 e("e3299b94", "Jokin meni pieleen. Yritä kansion päivittämistä hetken kuluttua uudelleen."),
                 e("c09ea714", "Jokin meni pieleen. Yritä kansion poistamista hetken kuluttua uudelleen."),
@@ -6476,6 +6477,7 @@
                 e("babfa32c", "Mukauta näkymääsi vaivattomasti"),
                 e("a2a2f98e", "Katso, mikä on uutta"),
                 e("b4a361c0", "Voit muuttaa tekstin väriä ja kokoa sekä ottaa käyttöön pimeätilan vaikka heti. Nämä asetukset näkyvät vain sinulle."),
+                e("g4743c56", "Ala seurata"),
                 e("c797b44e", "Tuoreet tapahtumat X:n julkaisuissa."),
                 e("a19ce060", "Selaa-toiminto ei ole käytettävissä."),
                 e("f7d1a8e0", "Android-sovellus"),
@@ -6883,10 +6885,10 @@
                 e("ede7d0a2", "Valuutta"),
                 e("b925c18c", "Palkkatyyppi"),
                 e("j3d242ce", "Virheellinen väli"),
-                e("f4d07bd2", "Lisää halutessasi yksityiskohtia, jotta hakijat löytävät helpommin avoimet paikkasi hakutoiminnolla."),
-                e("b8cbb51a", "Tehtävän yhteenveto"),
-                e("bda6881e", "Tämä työpaikka on tuotu hakijaseurantajärjestelmästäsi (Applicant Tracking System, ATS). Huomaathan, että vain osaa kentistä voi muokata.");
-            e("b075c68a", "Muokkaa työpaikkaa"),
+                e("f4d07bd2", "Lisää halutessasi yksityiskohtia, jotta hakijat löytävät helpommin avoimet paikkasi hakutoiminnolla.");
+            e("b8cbb51a", "Tehtävän yhteenveto"),
+                e("bda6881e", "Tämä työpaikka on tuotu hakijaseurantajärjestelmästäsi (Applicant Tracking System, ATS). Huomaathan, että vain osaa kentistä voi muokata."),
+                e("b075c68a", "Muokkaa työpaikkaa"),
                 e("d4b6a6e0", "Profiilivalokeila"),
                 e("j2dd3686", "Esittele työpaikkoja julkaisujeni yläpuolella."),
                 e("af1cfd46", "ATS-integraatio"),
@@ -7863,9 +7865,7 @@
                     return "Tervetuloa takaisin, " + a.displayName;
                 }),
                 e("a76d58ba", "Mainostilastot"),
-                e("eccd0e1a", "Organisaation analytiikka"),
-                e("deea1708", "Haluatko tarkastella tilastoja kaikista X-tileistäsi?"),
-                e("eb603ffc", "Päivittämällä saat oman verkostosi affilioitua ja näet kootut tilastot.");
+                e("eccd0e1a", "Organisaation analytiikka");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7904,7 +7904,9 @@
                     u(a, t)
                 );
             }
-            e("gf67aae4", "Päivitä tilaus täysiin käyttöoikeuksiin"),
+            e("deea1708", "Haluatko tarkastella tilastoja kaikista X-tileistäsi?"),
+                e("eb603ffc", "Päivittämällä saat oman verkostosi affilioitua ja näet kootut tilastot."),
+                e("gf67aae4", "Päivitä tilaus täysiin käyttöoikeuksiin"),
                 e("h75e3618", "Sisällytä organisaatio"),
                 e("h24a8862", "Tästä valintaruudusta"),
                 e("c29e3a88", "Valitse affiliaatit"),
@@ -8901,12 +8903,12 @@
                 e("j0f12222", "Näe lisää"),
                 e("f569f7c8", "Siirry sivustolle"),
                 e("j0c6772a", "Käy sivustolla"),
-                e("f73003aa", "Video näytetään mainoksen jälkeen"),
-                e("b3112b8a", "Ohita"),
-                e("h6333ad0", "Ohita mainos");
-            e("c59da417", function (a) {
-                return "Ohita mainos " + a.seconds + " kuluttua";
-            }),
+                e("f73003aa", "Video näytetään mainoksen jälkeen");
+            e("b3112b8a", "Ohita"),
+                e("h6333ad0", "Ohita mainos"),
+                e("c59da417", function (a) {
+                    return "Ohita mainos " + a.seconds + " kuluttua";
+                }),
                 e("c3c147cf", function (a) {
                     return "Ohita " + a.seconds;
                 }),
@@ -13363,4 +13365,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.9382f08a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.7f9e948a.js.map

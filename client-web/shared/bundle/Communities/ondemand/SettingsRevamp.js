@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.Communities~ondemand.SettingsRevamp", "icons/IconFeedback-js"],
+    ["shared~bundle.Communities~ondemand.SettingsRevamp", "icons/IconUndo-js"],
     {
         947135: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -187,19 +187,6 @@
                     return o.createElement(i.Z, { style: d.container }, o.createElement(s.Z, (0, r.Z)({}, u, { interactiveStyles: h, style: d.root }), o.createElement(a.ZP, { align: e, color: t }, n)));
                 };
         },
-        790093: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var r = n(202784),
-                o = n(890601),
-                i = n(783427),
-                a = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
         98440: (e, t, n) => {
             n.r(t), n.d(t, { default: () => s });
             var r = n(202784),
@@ -212,6 +199,21 @@
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
+        },
+        775042: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => c });
+            var r = n(202784),
+                o = n(890601),
+                i = n(783427),
+                a = n(717683),
+                l = n(347101);
+            const s = (e = {}) => {
+                const t = r.useContext(a.Z),
+                    { direction: n } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style, t && l.Z.iconRTL], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.29 2.29l1.42 1.42L5.41 6H15c3.87 0 7 3.13 7 7s-3.13 7-7 7H8v-2h7c2.76 0 5-2.24 5-5s-2.24-5-5-5H5.41l2.3 2.29-1.42 1.42L1.59 7l4.7-4.71z" })) }, { writingDirection: n });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const c = s;
         },
         716042: (e, t, n) => {
             n.d(t, { JN: () => Q, W8: () => ne, JV: () => z });
@@ -391,14 +393,14 @@
             function A(e) {
                 return e.touches && e.touches.length ? { x: e.touches[0].pageX, y: e.touches[0].pageY } : e.changedTouches && e.changedTouches.length ? { x: e.changedTouches[0].pageX, y: e.changedTouches[0].pageY } : { x: e.pageX, y: e.pageY };
             }
-            function M(e, t) {
+            function L(e, t) {
                 var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : { left: 0, top: 0 };
                 if (e) {
                     var r = { left: n.left + e.offsetLeft, top: n.top + e.offsetTop };
-                    return e.parentNode === t ? r : M(e.parentNode, t, r);
+                    return e.parentNode === t ? r : L(e.parentNode, t, r);
                 }
             }
-            function L(e) {
+            function M(e) {
                 var t = e.lockOffset,
                     n = e.width,
                     r = e.height,
@@ -424,8 +426,8 @@
                         : W(e.parentNode)
                     : null;
             }
-            var j = 27,
-                H = 32,
+            var H = 27,
+                j = 32,
                 _ = 37,
                 B = 38,
                 K = 39,
@@ -526,7 +528,7 @@
                 );
             })();
             var X = { axis: b().oneOf(["x", "y", "xy"]), contentWindow: b().any, disableAutoscroll: b().bool, distance: b().number, getContainer: b().func, getHelperDimensions: b().func, helperClass: b().string, helperContainer: b().oneOfType([b().func, "undefined" == typeof HTMLElement ? b().any : b().instanceOf(HTMLElement)]), hideSortableGhost: b().bool, keyboardSortingTransitionDuration: b().number, lockAxis: b().string, lockOffset: b().oneOfType([b().number, b().string, b().arrayOf(b().oneOfType([b().number, b().string]))]), lockToContainerEdges: b().bool, onSortEnd: b().func, onSortMove: b().func, onSortOver: b().func, onSortStart: b().func, pressDelay: b().number, pressThreshold: b().number, keyCodes: b().shape({ lift: b().arrayOf(b().number), drop: b().arrayOf(b().number), cancel: b().arrayOf(b().number), up: b().arrayOf(b().number), down: b().arrayOf(b().number) }), shouldCancelStart: b().func, transitionDuration: b().number, updateBeforeSortStart: b().func, useDragHandle: b().bool, useWindowAsScrollContainer: b().bool },
-                q = { lift: [H], drop: [H], cancel: [j], up: [B, _], down: [G, K] },
+                q = { lift: [j], drop: [j], cancel: [H], up: [B, _], down: [G, K] },
                 Y = {
                     axis: "y",
                     disableAutoscroll: !1,
@@ -650,7 +652,7 @@
                                                                     (t.index = x),
                                                                     (t.newIndex = x),
                                                                     (t.axis = { x: i.indexOf("x") >= 0, y: i.indexOf("y") >= 0 }),
-                                                                    (t.offsetEdge = M(f, t.container)),
+                                                                    (t.offsetEdge = L(f, t.container)),
                                                                     (t.initialOffset = A(g ? l({}, e, { pageX: t.boundingClientRect.left, pageY: t.boundingClientRect.top }) : e)),
                                                                     (t.initialScroll = { left: t.scrollContainer.scrollLeft, top: t.scrollContainer.scrollTop }),
                                                                     (t.initialWindowScroll = { left: window.pageXOffset, top: window.pageYOffset }),
@@ -914,7 +916,7 @@
                                                         var a = i(o, 2),
                                                             l = a[0],
                                                             s = a[1];
-                                                        return [L({ height: t, lockOffset: l, width: n }), L({ height: t, lockOffset: s, width: n })];
+                                                        return [M({ height: t, lockOffset: l, width: n }), M({ height: t, lockOffset: s, width: n })];
                                                     })({ height: this.height, lockOffset: r, width: this.width }),
                                                     p = i(f, 2),
                                                     g = p[0],
@@ -951,10 +953,10 @@
                                                     x = c && p < this.index && p >= d,
                                                     b = { x: 0, y: 0 },
                                                     w = a[u].edgeOffset;
-                                                w || ((w = M(f, this.container)), (a[u].edgeOffset = w), c && (a[u].boundingClientRect = N(f, o)));
+                                                w || ((w = L(f, this.container)), (a[u].edgeOffset = w), c && (a[u].boundingClientRect = N(f, o)));
                                                 var Z = u < a.length - 1 && a[u + 1],
                                                     C = u > 0 && a[u - 1];
-                                                Z && !Z.edgeOffset && ((Z.edgeOffset = M(Z.node, this.container)), c && (Z.boundingClientRect = N(Z.node, o))), p !== this.index ? (t && T(f, t), this.axis.x ? (this.axis.y ? (x || (p < this.index && ((l + i.left - y.width <= w.left && s + i.top <= w.top + y.height) || s + i.top + y.height <= w.top)) ? ((b.x = this.width + this.marginOffset.x), w.left + b.x > this.containerBoundingRect.width - y.width && Z && ((b.x = Z.edgeOffset.left - w.left), (b.y = Z.edgeOffset.top - w.top)), null === this.newIndex && (this.newIndex = p)) : (v || (p > this.index && ((l + i.left + y.width >= w.left && s + i.top + y.height >= w.top) || s + i.top + y.height >= w.top + m))) && ((b.x = -(this.width + this.marginOffset.x)), w.left + b.x < this.containerBoundingRect.left + y.width && C && ((b.x = C.edgeOffset.left - w.left), (b.y = C.edgeOffset.top - w.top)), (this.newIndex = p))) : v || (p > this.index && l + i.left + y.width >= w.left) ? ((b.x = -(this.width + this.marginOffset.x)), (this.newIndex = p)) : (x || (p < this.index && l + i.left <= w.left + y.width)) && ((b.x = this.width + this.marginOffset.x), null == this.newIndex && (this.newIndex = p))) : this.axis.y && (v || (p > this.index && s + i.top + y.height >= w.top) ? ((b.y = -(this.height + this.marginOffset.y)), (this.newIndex = p)) : (x || (p < this.index && s + i.top <= w.top + y.height)) && ((b.y = this.height + this.marginOffset.y), null == this.newIndex && (this.newIndex = p))), O(f, b), (a[u].translate = b)) : n && ((this.sortableGhost = f), k(f, { opacity: 0, visibility: "hidden" }));
+                                                Z && !Z.edgeOffset && ((Z.edgeOffset = L(Z.node, this.container)), c && (Z.boundingClientRect = N(Z.node, o))), p !== this.index ? (t && T(f, t), this.axis.x ? (this.axis.y ? (x || (p < this.index && ((l + i.left - y.width <= w.left && s + i.top <= w.top + y.height) || s + i.top + y.height <= w.top)) ? ((b.x = this.width + this.marginOffset.x), w.left + b.x > this.containerBoundingRect.width - y.width && Z && ((b.x = Z.edgeOffset.left - w.left), (b.y = Z.edgeOffset.top - w.top)), null === this.newIndex && (this.newIndex = p)) : (v || (p > this.index && ((l + i.left + y.width >= w.left && s + i.top + y.height >= w.top) || s + i.top + y.height >= w.top + m))) && ((b.x = -(this.width + this.marginOffset.x)), w.left + b.x < this.containerBoundingRect.left + y.width && C && ((b.x = C.edgeOffset.left - w.left), (b.y = C.edgeOffset.top - w.top)), (this.newIndex = p))) : v || (p > this.index && l + i.left + y.width >= w.left) ? ((b.x = -(this.width + this.marginOffset.x)), (this.newIndex = p)) : (x || (p < this.index && l + i.left <= w.left + y.width)) && ((b.x = this.width + this.marginOffset.x), null == this.newIndex && (this.newIndex = p))) : this.axis.y && (v || (p > this.index && s + i.top + y.height >= w.top) ? ((b.y = -(this.height + this.marginOffset.y)), (this.newIndex = p)) : (x || (p < this.index && s + i.top <= w.top + y.height)) && ((b.y = this.height + this.marginOffset.y), null == this.newIndex && (this.newIndex = p))), O(f, b), (a[u].translate = b)) : n && ((this.sortableGhost = f), k(f, { opacity: 0, visibility: "hidden" }));
                                             }
                                             null == this.newIndex && (this.newIndex = this.index), c && (this.newIndex = d);
                                             var S = c ? this.prevIndex : d;
@@ -1160,4 +1162,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Communities~ondemand.SettingsRevamp.1d42670a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Communities~ondemand.SettingsRevamp.3341a8ca.js.map

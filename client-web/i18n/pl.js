@@ -3964,6 +3964,7 @@
                 i("j6cdf012", "Współhości nie mogą zapraszać ani usuwać innych współhostów"),
                 i("c727d116", "Współhości nie mogą kończyć działania Pokoju"),
                 i("g69084b8", "Zaakceptuj zaproszenie do wspólnego prowadzenia Pokoju"),
+                i("ddd5cfe2", "Zadokuj"),
                 i("ee230734", "Pokaż więcej opcji"),
                 i("ic8c615e", "Wybierz i wyślij szybką odpowiedź"),
                 i("a04077c4", "Wybierz 1 zdjęcie, film lub plik GIF"),
@@ -4933,9 +4934,9 @@
                 i("d9f9dec0", "Wyświetl pokój"),
                 i("h0c1f37a", "Wyświetl analizy pokoju"),
                 i("e41fffbc", "Łączny czas oglądania Twoich filmów."),
-                i("if2909ba", "Czas oglądania"),
-                i("i0e5bf4c", "Twoje filmy");
-            i("ed99baea", "Wczesny dostęp do wersji Beta"),
+                i("if2909ba", "Czas oglądania");
+            i("i0e5bf4c", "Twoje filmy"),
+                i("ed99baea", "Wczesny dostęp do wersji Beta"),
                 i("gf898b70", "Wyszukiwanie zaawansowane"),
                 i("d2a43a7a", 'zawiera oba wyrazy „startup" i „ai”'),
                 i("a8584698", "startup ai"),
@@ -5889,9 +5890,9 @@
                 i("e41c9b4f", function (e) {
                     return "Zapisano w folderze " + e.bookmarkFolderName;
                 }),
-                i("h18f86a4", "Usuń folder"),
-                i("f4ea967a", "Usunięto folder");
-            i("b670aa62", "Nazwa folderu"),
+                i("h18f86a4", "Usuń folder");
+            i("f4ea967a", "Usunięto folder"),
+                i("b670aa62", "Nazwa folderu"),
                 i("aece5462", "Nazwa folderu została pomyślnie zaktualizowana"),
                 i("e3299b94", "Wystąpił błąd. Poczekaj chwilę i spróbuj ponownie zaktualizować folder."),
                 i("c09ea714", "Wystąpił błąd. Poczekaj chwilę i spróbuj ponownie usunąć folder."),
@@ -6485,6 +6486,7 @@
                 i("babfa32c", "Szybko dostosuj swój widok"),
                 i("a2a2f98e", "Zobacz nowości"),
                 i("b4a361c0", "Możesz dostosować kolor i rozmiar tekstu oraz włączyć tryb ciemny. Te ustawienia są widoczne tylko dla Ciebie."),
+                i("g4743c56", "Zacznij obserwować"),
                 i("c797b44e", "Najnowsze historie w serwisie X — opowiedziane we wpisach."),
                 i("a19ce060", "Funkcja Odkryj jest niedostępna."),
                 i("f7d1a8e0", "Aplikacja na Androida"),
@@ -6892,10 +6894,10 @@
                 i("ede7d0a2", "Waluta"),
                 i("b925c18c", "Rodzaj wynagrodzenia"),
                 i("j3d242ce", "Nieprawidłowy zakres"),
-                i("f4d07bd2", "Dołącz opcjonalne szczegóły, aby ułatwić osobom kandydującym znajdowanie interesujących ich stanowisk za pomocą funkcji wyszukiwania."),
-                i("b8cbb51a", "Podsumowanie oferty pracy"),
-                i("bda6881e", "Ta oferta pracy została zaimportowana z Twojego systemu śledzenia osób aplikujących (ATS). Pamiętaj, że można modyfikować tylko określone pola.");
-            i("b075c68a", "Edytuj ofertę pracy"),
+                i("f4d07bd2", "Dołącz opcjonalne szczegóły, aby ułatwić osobom kandydującym znajdowanie interesujących ich stanowisk za pomocą funkcji wyszukiwania.");
+            i("b8cbb51a", "Podsumowanie oferty pracy"),
+                i("bda6881e", "Ta oferta pracy została zaimportowana z Twojego systemu śledzenia osób aplikujących (ATS). Pamiętaj, że można modyfikować tylko określone pola."),
+                i("b075c68a", "Edytuj ofertę pracy"),
                 i("d4b6a6e0", "Wyróżnione treści na profilu"),
                 i("j2dd3686", "Wyróżniaj promowane oferty pracy nad moimi wpisami."),
                 i("af1cfd46", "Integracja z systemem ATS"),
@@ -7872,9 +7874,7 @@
                     return "Witaj ponownie, " + e.displayName;
                 }),
                 i("a76d58ba", "Analizy reklam"),
-                i("eccd0e1a", "Analizy organizacji"),
-                i("deea1708", "Chcesz wyświetlić analizy wszystkich swoich kont w serwisie X?"),
-                i("eb603ffc", "Podnieś poziom, aby powiązać swoją sieć i przeglądać zagregowane analizy.");
+                i("eccd0e1a", "Analizy organizacji");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7913,7 +7913,9 @@
                     c(e, a)
                 );
             }
-            i("gf67aae4", "Podnieś poziom do poziomu Pełny dostęp"),
+            i("deea1708", "Chcesz wyświetlić analizy wszystkich swoich kont w serwisie X?"),
+                i("eb603ffc", "Podnieś poziom, aby powiązać swoją sieć i przeglądać zagregowane analizy."),
+                i("gf67aae4", "Podnieś poziom do poziomu Pełny dostęp"),
                 i("h75e3618", "Uwzględnij organizację"),
                 i("h24a8862", "Informacje o tym polu wyboru"),
                 i("c29e3a88", "Wybierz konta powiązane"),
@@ -8910,12 +8912,12 @@
                 i("j0f12222", "Zobacz więcej"),
                 i("f569f7c8", "Przejdź do strony"),
                 i("j0c6772a", "Odwiedź stronę"),
-                i("f73003aa", "Film rozpocznie się po reklamie"),
-                i("b3112b8a", "Pomiń"),
-                i("h6333ad0", "Pomiń reklamę");
-            i("c59da417", function (e) {
-                return "Pomiń reklamę za " + e.seconds;
-            }),
+                i("f73003aa", "Film rozpocznie się po reklamie");
+            i("b3112b8a", "Pomiń"),
+                i("h6333ad0", "Pomiń reklamę"),
+                i("c59da417", function (e) {
+                    return "Pomiń reklamę za " + e.seconds;
+                }),
                 i("c3c147cf", function (e) {
                     return "Pomiń " + e.seconds;
                 }),
@@ -13363,4 +13365,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.3ec635ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.977f52ba.js.map

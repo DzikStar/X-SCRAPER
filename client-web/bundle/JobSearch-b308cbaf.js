@@ -2,6 +2,43 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.JobSearch-b308cbaf"],
     {
+        229333: (e, t, o) => {
+            o.d(t, { Z: () => m });
+            var a = o(202784),
+                r = o(466999),
+                n = o(325686),
+                l = o(392237),
+                i = o(111677);
+            const s = o.n(i)().e5b0063d;
+            let c = 0;
+            class d extends a.Component {
+                constructor() {
+                    super(), (this._listDomId = `accessible-list-${c}`), (c += 1);
+                }
+                render() {
+                    const { children: e, title: t } = this.props,
+                        o = s({ title: t });
+                    return a.createElement(n.Z, { "aria-labelledby": this._listDomId, role: "region" }, a.createElement(r.Z, { "aria-level": 1, id: this._listDomId, role: "heading", style: l.default.visuallyHidden }, t), a.createElement(n.Z, { "aria-label": o }, e));
+                }
+            }
+            const m = d;
+        },
+        414939: (e, t, o) => {
+            o.d(t, { Z: () => s });
+            var a = o(202784),
+                r = o(325686),
+                n = o(392237);
+            class l extends a.Component {
+                shouldComponentUpdate() {
+                    return !1;
+                }
+                render() {
+                    return a.createElement(r.Z, { style: i.root });
+                }
+            }
+            const i = n.default.create((e) => ({ root: { height: 10 * e.lineHeightsPx.body } })),
+                s = l;
+        },
         903233: (e, t, o) => {
             o.d(t, { Z: () => s });
             var a = o(202784),
@@ -16,7 +53,7 @@
                 };
         },
         247411: (e, t, o) => {
-            o.d(t, { Z: () => M });
+            o.d(t, { Z: () => H });
             var a = o(202784),
                 r = o(325686),
                 n = o(392237),
@@ -36,28 +73,28 @@
                 y = o(111677),
                 E = o.n(y),
                 Z = o(698891),
-                w = o(956272),
-                C = o(487606),
+                C = o(956272),
+                w = o(487606),
                 x = o(106186),
                 v = o(720930),
-                S = o(763881),
-                _ = o(134760),
+                _ = o(763881),
+                S = o(134760),
                 k = o(906433),
                 I = o(439332);
             const R = E().d13d697c,
-                P = [
-                    { pathname: "/jobs", label: E().b72c924c, icon: w.default, featureSwitch: "recruiting_global_jobs_search_enabled", isActive: (e) => /(\/)?jobs(\/\d+)?(\/)?$/.test(e) },
-                    { pathname: "/jobs/recommended", label: E().f4da95a0, icon: C.default, featureSwitch: "recruiting_job_recommendations_enabled", isActive: (e) => /(\/)?jobs\/recommended(\/\d+)?(\/)?$/.test(e) },
+                D = [
+                    { pathname: "/jobs", label: E().b72c924c, icon: C.default, featureSwitch: "recruiting_global_jobs_search_enabled", isActive: (e) => /(\/)?jobs(\/\d+)?(\/)?$/.test(e) },
+                    { pathname: "/jobs/recommended", label: E().f4da95a0, icon: w.default, featureSwitch: "recruiting_job_recommendations_enabled", isActive: (e) => /(\/)?jobs\/recommended(\/\d+)?(\/)?$/.test(e) },
                     { pathname: "/jobs/saved", label: E().eedd808c, icon: x.default, featureSwitch: "recruiting_job_recommendations_enabled", isActive: (e) => /(\/)?jobs\/saved(\/\d+)?(\/)?$/.test(e) },
                     { pathname: "/i/hiring", label: E().e0ba641a, icon: v.default, isActive: (e) => /(\/)?i\/hiring(\/\d+)?(\/)?$/.test(e), shouldHide: (e) => e.isVerifiedOrg(), decoration: a.createElement(h.ZP, { background: "blue500" }, a.createElement(g.ZP, { size: "subtext2" }, R)) },
                 ],
-                D = () => {
+                P = () => {
                     const { featureSwitches: e, userClaims: t } = (0, i.QZ)(),
                         o = (0, u.useLocation)().pathname;
                     return a.createElement(
                         r.Z,
                         { style: W.links },
-                        P.map((n) => ((!n.featureSwitch || e.isTrue(n.featureSwitch)) && !n.shouldHide?.(t) ? a.createElement(a.Fragment, { key: n.pathname }, a.createElement(r.Z, null, n.isActive(o) ? a.createElement(r.Z, { style: W.currentLink }, a.createElement(g.ZP, { weight: "bold" }, n.label)) : a.createElement(b.ZP, { backgroundColor: "transparent", borderColor: "transparent", color: "buttonBlack", link: n.pathname }, n.label, n.decoration && a.createElement(r.Z, { style: W.decoration }, n.decoration)))) : null)),
+                        D.map((n) => ((!n.featureSwitch || e.isTrue(n.featureSwitch)) && !n.shouldHide?.(t) ? a.createElement(a.Fragment, { key: n.pathname }, a.createElement(r.Z, null, n.isActive(o) ? a.createElement(r.Z, { style: W.currentLink }, a.createElement(g.ZP, { weight: "bold" }, n.label)) : a.createElement(b.ZP, { backgroundColor: "transparent", borderColor: "transparent", color: "buttonBlack", link: n.pathname }, n.label, n.decoration && a.createElement(r.Z, { style: W.decoration }, n.decoration)))) : null)),
                     );
                 },
                 T = () => {
@@ -67,7 +104,7 @@
                         a.Fragment,
                         null,
                         o ? a.createElement(r.Z, { style: W.mobileSearchContainer }, a.createElement(j, { styleType: "selection" })) : null,
-                        P.map((o) => ((!o.featureSwitch || e.isTrue(o.featureSwitch)) && !o.shouldHide?.(t) ? a.createElement(k.Z, { decoration: o.decoration, icon: o.icon, key: o.pathname, label: o.label, link: o.pathname }) : null)),
+                        D.map((o) => ((!o.featureSwitch || e.isTrue(o.featureSwitch)) && !o.shouldHide?.(t) ? a.createElement(k.Z, { decoration: o.decoration, icon: o.icon, key: o.pathname, label: o.label, link: o.pathname }) : null)),
                         e.isTrue("recruiting_job_recommendations_enabled") && a.createElement(k.Z, { icon: Z.default, label: E().bb081ea2, link: "/jobs/get-recommendations" }),
                     );
                 },
@@ -75,7 +112,7 @@
                     const t = (0, u.useHistory)(),
                         [o, r] = a.useState("");
                     return a.createElement(f.Z, {
-                        Icon: w.default,
+                        Icon: C.default,
                         autoComplete: "off",
                         leftAligned: !0,
                         onChange: (e) => r(e.target.value),
@@ -97,11 +134,11 @@
                         { featureSwitches: o } = (0, i.QZ)(),
                         n = o.isTrue("recruiting_global_jobs_search_enabled"),
                         l = o.isTrue("recruiting_job_recommendations_enabled");
-                    return a.createElement(r.Z, { style: W.root }, a.createElement(m, null, a.createElement(r.Z, { style: W.container }, t ? null : a.createElement(_.Z, { disableMenuToggleWhenOpen: !0, renderCustomMenuItems: T }), a.createElement(r.Z, { style: W.header }, a.createElement(I.Z, null), t && a.createElement(D, null)), a.createElement(r.Z, { style: W.links }, t && n && a.createElement(r.Z, { style: W.searchContainer }, a.createElement(j, { styleType: "pill" })), e && t ? a.createElement(a.Fragment, null, l && a.createElement(b.ZP, { icon: a.createElement(Z.default, null), link: "/jobs/get-recommendations", testID: "recommendation-settings-btn", type: "primaryText" }), a.createElement(S.Z, { isExpanded: !1 })) : a.createElement(r.Z, null)))));
+                    return a.createElement(r.Z, { style: W.root }, a.createElement(m, null, a.createElement(r.Z, { style: W.container }, t ? null : a.createElement(S.Z, { disableMenuToggleWhenOpen: !0, renderCustomMenuItems: T }), a.createElement(r.Z, { style: W.header }, a.createElement(I.Z, null), t && a.createElement(P, null)), a.createElement(r.Z, { style: W.links }, t && n && a.createElement(r.Z, { style: W.searchContainer }, a.createElement(j, { styleType: "pill" })), e && t ? a.createElement(a.Fragment, null, l && a.createElement(b.ZP, { icon: a.createElement(Z.default, null), link: "/jobs/get-recommendations", testID: "recommendation-settings-btn", type: "primaryText" }), a.createElement(_.Z, { isExpanded: !1 })) : a.createElement(r.Z, null)))));
                 },
                 L = () => null,
                 A = n.default.create((e) => ({ root: { height: "100vh", width: "100%", flex: 1 }, webViewSpacer: { paddingBottom: "24px" } })),
-                M = ({ children: e }) => {
+                H = ({ children: e }) => {
                     (0, s.ph)(), (0, s.G1)();
                     const { loggedInUserId: t } = a.useContext(i.rC),
                         o = !l.ZP.isWebView();
@@ -128,6 +165,18 @@
                 n = o(402058);
             const l = (e) => a.createElement(r.Z, { hideOnError: !0 }, a.createElement(n.Z, e));
         },
+        965245: (e, t, o) => {
+            o.d(t, { Z: () => s });
+            var a = o(807896),
+                r = o(202784),
+                n = o(229333),
+                l = o(414939),
+                i = o(334346);
+            const s = ({ accessibilityTitle: e, footer: t = r.createElement(l.Z, null), ...o }) => {
+                const s = r.createElement(i.C, (0, a.Z)({}, o, { footer: t }));
+                return e ? r.createElement(n.Z, { title: e }, s) : s;
+            };
+        },
         998693: (e, t, o) => {
             o.d(t, { Z: () => x });
             var a = o(36879),
@@ -148,15 +197,15 @@
                 y = o(339110),
                 E = o(524110);
             const Z = p().jaaa8984,
-                w = a.Z,
-                C = m.default.create((e) => ({ inputStyle: { paddingHorizontal: 0, paddingVertical: 0 }, wrapper: { flex: 1 } })),
+                C = a.Z,
+                w = m.default.create((e) => ({ inputStyle: { paddingHorizontal: 0, paddingVertical: 0 }, wrapper: { flex: 1 } })),
                 x = ({ onChange: e, onEnter: t, onSelect: o, value: a }) => {
                     const { isModal: n } = r.useContext(c.Z),
                         i = r.useRef(null),
                         m = s()(),
                         [u, p] = r.useState(!1),
                         [x, v] = r.useState([]),
-                        [S, _] = r.useState(!1),
+                        [_, S] = r.useState(!1),
                         k = (0, g.t)(),
                         I = r.useMemo(
                             () =>
@@ -164,12 +213,12 @@
                                     k() &&
                                         (e.length >= 2
                                             ? (p(!0),
-                                              _(!0),
+                                              S(!0),
                                               ((e) => {
-                                                  l()(m, w, { query: e })
+                                                  l()(m, C, { query: e })
                                                       .toPromise()
                                                       .then((e) => {
-                                                          v(e?.location_type_ahead || []), _(!1);
+                                                          v(e?.location_type_ahead || []), S(!1);
                                                       });
                                               })(e))
                                             : p(!1));
@@ -182,27 +231,27 @@
                             },
                             [I, e],
                         ),
-                        P = r.useCallback(
+                        D = r.useCallback(
                             (e, t) => {
                                 i?.current?.focus(), o({ id: e.id, name: e.name }), p(!1);
                             },
                             [o],
                         ),
-                        D = r.useCallback(
+                        P = r.useCallback(
                             (e) => {
                                 const t = x?.map((e) => ({ id: e.location_id, name: e.display_name, type: "job_location", data: {} }));
-                                return r.createElement(r.Fragment, null, u ? r.createElement(E.Z, { isLoading: S, items: t, onItemClick: P, ref: e.ref, source: y._4.JobLocation, style: e.style }) : null);
+                                return r.createElement(r.Fragment, null, u ? r.createElement(E.Z, { isLoading: _, items: t, onItemClick: D, ref: e.ref, source: y._4.JobLocation, style: e.style }) : null);
                             },
-                            [P, x, S, u],
+                            [D, x, _, u],
                         ),
                         T = r.useCallback(
                             (e) => {
                                 const { onFocus: o } = e;
-                                return r.createElement(d.Z, { Icon: b.default, autoComplete: "off", label: Z, name: "location-selector-input", onChange: R, onFocus: o, onKeyPress: t, ref: i, style: C.inputStyle, testID: "location-selector-input", value: a });
+                                return r.createElement(d.Z, { Icon: b.default, autoComplete: "off", label: Z, name: "location-selector-input", onChange: R, onFocus: o, onKeyPress: t, ref: i, style: w.inputStyle, testID: "location-selector-input", value: a });
                             },
                             [R, t, a],
                         );
-                    return r.createElement(f.default, { isInModal: n, renderCustomDropdown: D, renderCustomInput: T, rounded: !0, source: y._4.JobLocation, testID: "location-selector", userLimit: 20 });
+                    return r.createElement(f.default, { isInModal: n, renderCustomDropdown: P, renderCustomInput: T, rounded: !0, source: y._4.JobLocation, testID: "location-selector", userLimit: 20 });
                 };
         },
         46705: (e, t, o) => {
@@ -321,4 +370,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.JobSearch-b308cbaf.d476473a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.JobSearch-b308cbaf.cf15238a.js.map

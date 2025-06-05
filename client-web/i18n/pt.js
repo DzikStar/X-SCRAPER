@@ -3955,6 +3955,7 @@
                 s("j6cdf012", "Não é possível convidar nem remover co-hosts"),
                 s("c727d116", "Os co-hosts não podem encerrar o Espaço"),
                 s("g69084b8", "Aceitar convite para co-host"),
+                s("ddd5cfe2", "Ancorar"),
                 s("ee230734", "Mostrar mais opções"),
                 s("ic8c615e", "Escolha e envie uma opção de resposta rápida"),
                 s("a04077c4", "Escolha 1 foto, vídeo ou GIF."),
@@ -4924,9 +4925,9 @@
                 s("d9f9dec0", "Ver espaço"),
                 s("h0c1f37a", "Ver estatísticas do espaço"),
                 s("e41fffbc", "O tempo total de exibição dos seus vídeos."),
-                s("if2909ba", "Tempo de exibição"),
-                s("i0e5bf4c", "Seus vídeos");
-            s("ed99baea", "Acesso Beta Antecipado"),
+                s("if2909ba", "Tempo de exibição");
+            s("i0e5bf4c", "Seus vídeos"),
+                s("ed99baea", "Acesso Beta Antecipado"),
                 s("gf898b70", "Busca Avançada"),
                 s("d2a43a7a", 'contém tanto "ai" quanto "startup"'),
                 s("a8584698", "ai startup"),
@@ -5880,9 +5881,9 @@
                 s("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                s("h18f86a4", "Excluir pasta"),
-                s("f4ea967a", "A pasta foi excluída");
-            s("b670aa62", "Nome da pasta"),
+                s("h18f86a4", "Excluir pasta");
+            s("f4ea967a", "A pasta foi excluída"),
+                s("b670aa62", "Nome da pasta"),
                 s("aece5462", "O nome da pasta foi atualizado"),
                 s("e3299b94", "Algo deu errado. Tente atualizar essa pasta novamente daqui a um minuto."),
                 s("c09ea714", "Algo deu errado. Tente excluir essa pasta novamente daqui a um minuto."),
@@ -6476,6 +6477,7 @@
                 s("babfa32c", "Personalizar rapidamente sua exibição"),
                 s("a2a2f98e", "Veja as novidades"),
                 s("b4a361c0", "Você pode personalizar a cor e o tamanho do texto, além de controlar a seleção do modo escuro agora mesmo. Essas configurações só estão visíveis para você."),
+                s("g4743c56", "Começar a seguir"),
                 s("c797b44e", "As histórias mais recentes no X – contadas em posts."),
                 s("a19ce060", "A função Explorar está indisponível."),
                 s("f7d1a8e0", "Aplicativo para Android"),
@@ -6883,10 +6885,10 @@
                 s("ede7d0a2", "Moeda"),
                 s("b925c18c", "Tipo de salário"),
                 s("j3d242ce", "Faixa inválida"),
-                s("f4d07bd2", "Inclua detalhes opcionais para facilitar que os candidatos visualizem suas vagas mediante busca."),
-                s("b8cbb51a", "Resumo da vaga"),
-                s("bda6881e", "Esta vaga foi importada de seu Sistema de Rastreamento de Candidatos (ATS). Observe que somente campos específicos podem ser modificados.");
-            s("b075c68a", "Editar vaga"),
+                s("f4d07bd2", "Inclua detalhes opcionais para facilitar que os candidatos visualizem suas vagas mediante busca.");
+            s("b8cbb51a", "Resumo da vaga"),
+                s("bda6881e", "Esta vaga foi importada de seu Sistema de Rastreamento de Candidatos (ATS). Observe que somente campos específicos podem ser modificados."),
+                s("b075c68a", "Editar vaga"),
                 s("d4b6a6e0", "Destaque do Perfil"),
                 s("j2dd3686", "Mostrar as vagas em destaque acima dos meus posts."),
                 s("af1cfd46", "Integração com ATS"),
@@ -7863,9 +7865,7 @@
                     return "Bem-vindo novamente, " + e.displayName;
                 }),
                 s("a76d58ba", "Estatísticas de anúncios"),
-                s("eccd0e1a", "Estatísticas da organização"),
-                s("deea1708", "Quer ver estatísticas de todas as suas contas do X?"),
-                s("eb603ffc", "Faça upgrade para afiliar sua rede e exibir estatísticas agregadas.");
+                s("eccd0e1a", "Estatísticas da organização");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var s = a[o];
@@ -7904,7 +7904,9 @@
                     n(e, a)
                 );
             }
-            s("gf67aae4", "Fazer upgrade para acesso total"),
+            s("deea1708", "Quer ver estatísticas de todas as suas contas do X?"),
+                s("eb603ffc", "Faça upgrade para afiliar sua rede e exibir estatísticas agregadas."),
+                s("gf67aae4", "Fazer upgrade para acesso total"),
                 s("h75e3618", "Incluir organização"),
                 s("h24a8862", "Sobre esta caixa de seleção"),
                 s("c29e3a88", "Selecionar afiliadas"),
@@ -8901,12 +8903,12 @@
                 s("j0f12222", "Ver mais"),
                 s("f569f7c8", "Vá para o website"),
                 s("j0c6772a", "Visite o website"),
-                s("f73003aa", "O vídeo será reproduzido após o anúncio"),
-                s("b3112b8a", "Ignorar"),
-                s("h6333ad0", "Pular anúncio");
-            s("c59da417", function (e) {
-                return "Pular anúncio em " + e.seconds;
-            }),
+                s("f73003aa", "O vídeo será reproduzido após o anúncio");
+            s("b3112b8a", "Ignorar"),
+                s("h6333ad0", "Pular anúncio"),
+                s("c59da417", function (e) {
+                    return "Pular anúncio em " + e.seconds;
+                }),
                 s("c3c147cf", function (e) {
                     return "Pular " + e.seconds;
                 }),
@@ -13350,4 +13352,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.e943b6ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.d82b5cca.js.map

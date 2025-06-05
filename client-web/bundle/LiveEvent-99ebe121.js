@@ -276,7 +276,7 @@
                 f = i(514029),
                 E = i(252021),
                 I = i(443781),
-                w = i(5530),
+                w = i(134642),
                 D = i(56851),
                 S = i(652904),
                 y = i(51525),
@@ -703,4 +703,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-99ebe121.2a1f4eca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-99ebe121.9230109a.js.map

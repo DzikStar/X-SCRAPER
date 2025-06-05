@@ -207,7 +207,7 @@
             }
         },
         519125: (e, t, o) => {
-            o.d(t, { Mu: () => S, ZP: () => E });
+            o.d(t, { Mu: () => E, ZP: () => S });
             var n = o(662678),
                 r = o(769471),
                 a = o(337637),
@@ -222,22 +222,22 @@
                 m = o(37533),
                 w = o(777809),
                 b = o(652815),
-                y = o(560520),
-                f = o(367991),
-                I = o(705638),
-                M = o(801184),
-                T = o(335632);
-            const g = "FocalTweetInlineTombstone",
-                D = "More Replies";
+                f = o(560520),
+                D = o(367991),
+                y = o(705638),
+                T = o(801184),
+                g = o(335632);
+            const I = "FocalTweetInlineTombstone",
+                M = "More Replies";
             let v;
-            const P = Object.freeze({ Default: "ui_defaultLabel", TransparentCursor: "ui_transparentCursor" }),
-                C = { ...(0, T.G)({}), [d.ZP.Tweet]: (0, I.Z)({ hideConversationControlsEducationText: !0, withMuteConversation: !0 }) },
-                E = ({ changeDropdownState: e, hideReplyContextMode: t, isCurrentUserRootAuthor: o, isReaderMode: n, isTransparentCursorsEnabled: a, replyDropdownSelection: s, rootTweetAuthorId: i, tweetTextSize: c, withFocalTweetMedia: I, withRuxInjections: T }) =>
-                    (0, r.Z)({}, C, {
+            const C = Object.freeze({ Default: "ui_defaultLabel", TransparentCursor: "ui_transparentCursor" }),
+                P = { ...(0, g.G)({}), [d.ZP.Tweet]: (0, y.Z)({ hideConversationControlsEducationText: !0, withMuteConversation: !0 }) },
+                S = ({ changeDropdownState: e, hideReplyContextMode: t, isCurrentUserRootAuthor: o, isReaderMode: n, isTransparentCursorsEnabled: a, replyDropdownSelection: s, rootTweetAuthorId: i, tweetTextSize: c, withFocalTweetMedia: y, withRuxInjections: g }) =>
+                    (0, r.Z)({}, P, {
                         [d.ZP.SelfThreadTweetComposer]: b.Z,
                         [d.ZP.Tweet]: {
                             handlers: {
-                                [h.Z.Tweet]: (0, M.Cw)({
+                                [h.Z.Tweet]: (0, T.Cw)({
                                     hideConversationControlsEducationText: !0,
                                     hideExclusivityInfoEducationTextInReplies: !0,
                                     hideTrustedFriendsEducationTextInReplies: !0,
@@ -259,7 +259,7 @@
                                     hideReplyContextMode: t,
                                     withMuteConversation: !0,
                                 }),
-                                [h.Z.FocalTweet]: (0, M.g6)({
+                                [h.Z.FocalTweet]: (0, T.g6)({
                                     createAdditionalProps: (t, { applyFeedbackAction: n }) => {
                                         const {
                                                 content: { conversation_annotation: r, hasModeratedReplies: a },
@@ -276,7 +276,7 @@
                                             socialContext: p,
                                             topicFollowPrompt: m,
                                             withHideReply: o,
-                                            withInlineMedia: I,
+                                            withInlineMedia: y,
                                             ...(o
                                                 ? {
                                                       onTweetDismiss: () => {
@@ -292,16 +292,16 @@
                                     divider: (e) => ({ top: !1, bottom: !1 }),
                                     hideReplyContextMode: t,
                                 }),
-                                [h.Z.SelfThread]: (0, M.Cw)({ hideReplyContextMode: t }),
-                                [h.Z.ReaderMode]: (0, M.Cw)({ hideConversationControlsEducationText: !0, hideExclusivityInfoEducationTextInReplies: !0, hideHighlightedUserLabel: !0, hideTrustedFriendsEducationTextInReplies: !0, isReaderMode: !0, shouldSelfThreadIncludeAvatar: !1, showWithheldBannerOnMyTweets: !1, tweetTextSize: c, withActionsDisabled: !1, withMuteConversation: !1, withRemoveFromBookmarks: !1, withSelfThread: !1, withUserPresence: !1 }),
+                                [h.Z.SelfThread]: (0, T.Cw)({ hideReplyContextMode: t }),
+                                [h.Z.ReaderMode]: (0, T.Cw)({ hideConversationControlsEducationText: !0, hideExclusivityInfoEducationTextInReplies: !0, hideHighlightedUserLabel: !0, hideTrustedFriendsEducationTextInReplies: !0, isReaderMode: !0, shouldSelfThreadIncludeAvatar: !1, showWithheldBannerOnMyTweets: !1, tweetTextSize: c, withActionsDisabled: !1, withMuteConversation: !1, withRemoveFromBookmarks: !1, withSelfThread: !1, withUserPresence: !1 }),
                             },
                         },
-                        [d.ZP.Tombstone]: { handlers: { [g]: (0, f._n)({ isFocalTweet: !0, isReaderMode: n, withHideReply: o }), [u.Z.Inline]: (0, f._n)({ isReaderMode: n, tweetDismissFeedbackKey: o ? l.qt : void 0, withHideReply: o }) } },
-                        [d.ZP.Label]: p.ov({ selectDisplayType: (e) => ((e, t) => (t && e.content.text === D ? P.TransparentCursor : P.Default))(e, a), handlers: { [P.TransparentCursor]: w.L, [P.Default]: w.k } }),
-                        [d.ZP.TimelineCursor]: (0, m.Z)({ withRuxInjections: T }),
-                        [d.ZP.ThreadHeader]: y.Z,
+                        [d.ZP.Tombstone]: { handlers: { [I]: (0, D._n)({ isFocalTweet: !0, isReaderMode: n, withHideReply: o }), [u.Z.Inline]: (0, D._n)({ isReaderMode: n, tweetDismissFeedbackKey: o ? l.qt : void 0, withHideReply: o }) } },
+                        [d.ZP.Label]: p.ov({ selectDisplayType: (e) => ((e, t) => (t && e.content.text === M ? C.TransparentCursor : C.Default))(e, a), handlers: { [C.TransparentCursor]: w.L, [C.Default]: w.k } }),
+                        [d.ZP.TimelineCursor]: (0, m.Z)({ withRuxInjections: g }),
+                        [d.ZP.ThreadHeader]: f.Z,
                     }),
-                S = ({ contextTweetId: e, contextualClientEventInfo: t, focalTweetId: o, promotedContent: r, showOnlyRelevantReplies: l, socialContext: c, topicFollowPrompt: h }) => {
+                E = ({ contextTweetId: e, contextualClientEventInfo: t, focalTweetId: o, promotedContent: r, showOnlyRelevantReplies: l, socialContext: c, topicFollowPrompt: h }) => {
                     const p = (e) => (e.type === d.ZP.Tweet && e.content.id === o) || (e.type === d.ZP.Tombstone && !!e.content && !!e.content.tweet && e.content.tweet.id === o);
                     return (o) => {
                         const m = (0, a.Z)(o, p);
@@ -310,20 +310,20 @@
                             const o = (0, n.Z)(e, (e) => "0" !== e.sortIndex);
                             return o[0].splice(t + 1, 0, ...o[1]), o[0];
                         })(o, m);
-                        let y;
+                        let f;
                         return (0, s.Z)(b, (o, n) => {
                             const a = o.type === d.ZP.TimelineCursor && (o.content.cursorType === i.CursorType.ShowMoreThreads || o.content.cursorType === i.CursorType.ShowMoreThreadsPrompt),
-                                s = o.type === d.ZP.Label && o.content.text === D;
-                            if (l && (a || s)) return void 0 === y && o.content.cursorType === i.CursorType.ShowMoreThreadsPrompt ? (v = n) : void 0 === y && (y = n), !1;
-                            if (l && void 0 !== y && n >= y) return !1;
-                            if (l && void 0 === y && n >= v) return !1;
+                                s = o.type === d.ZP.Label && o.content.text === M;
+                            if (l && (a || s)) return void 0 === f && o.content.cursorType === i.CursorType.ShowMoreThreadsPrompt ? (v = n) : void 0 === f && (f = n), !1;
+                            if (l && void 0 !== f && n >= f) return !1;
+                            if (l && void 0 === f && n >= v) return !1;
                             const p = n > m;
                             if ((o.type !== d.ZP.Tweet && o.type !== d.ZP.Tombstone) || p) return o.type !== d.ZP.SelfThreadTweetComposer && o;
                             {
                                 const a = !w;
                                 if (((w = !0), n < m)) {
                                     if (o.type === d.ZP.Tweet) return R(o, a);
-                                    if (o.type === d.ZP.Tombstone) return A(o, a);
+                                    if (o.type === d.ZP.Tombstone) return k(o, a);
                                 } else {
                                     if (o.type === d.ZP.Tombstone) {
                                         const t = { isStart: a, isEnd: !0 };
@@ -336,13 +336,13 @@
                     };
                 },
                 _ = ({ contextTweetId: e, contextualClientEventInfo: t, conversationPosition: o, originalEntry: n, promotedContent: r, socialContext: a, topicFollowPrompt: s }) => c.Wf({ ...n, conversationPosition: o, referringContext: { contextTweetId: e, contextualClientEventInfo: t, socialContext: a, promotedContent: r, topicFollowPrompt: s } }, { displayType: h.Z.FocalTweet }),
-                Z = ({ contextTweetId: e, conversationPosition: t, entry: o, socialContext: n, topicFollowPrompt: r }) => c.Wf({ ...o, conversationPosition: t, referringContext: { contextTweetId: e, socialContext: n } }, { displayType: g }),
+                Z = ({ contextTweetId: e, conversationPosition: t, entry: o, socialContext: n, topicFollowPrompt: r }) => c.Wf({ ...o, conversationPosition: t, referringContext: { contextTweetId: e, socialContext: n } }, { displayType: I }),
                 x = ({ conversationPosition: e, entry: t }) => ({ ...t, conversationPosition: e }),
                 R = (e, t) => ({ ...e, conversationPosition: { isStart: t, isEnd: !1, position: "ancestor", showReplyContext: !1 } }),
-                A = (e, t) => ({ ...e, conversationPosition: { isStart: t, isEnd: !1, position: "ancestor" } });
+                k = (e, t) => ({ ...e, conversationPosition: { isStart: t, isEnd: !1, position: "ancestor" } });
         },
         927192: (e, t, o) => {
-            o.d(t, { Z: () => E });
+            o.d(t, { Z: () => S });
             var n = o(202784),
                 r = o(111677),
                 a = o.n(r),
@@ -357,16 +357,16 @@
                 m = o(443781),
                 w = o(56851),
                 b = o(810641),
-                y = o(438965),
-                f = o(668214);
-            const I = (e, t) => {
+                f = o(438965),
+                D = o(668214);
+            const y = (e, t) => {
                     const o = t.module.selectTimeline(e);
                     return !!o && o.terminatedStatus.atTop;
                 },
-                M = (e, t) => t.location.state && t.location.state.contextualClientEventInfo,
-                T = (0, f.Z)().propsFromState(() => ({ isTimelineTerminatedAtTop: I, contextualClientEventInfo: M }));
-            var g = o(519125);
-            const D = a().d35d74e4,
+                T = (e, t) => t.location.state && t.location.state.contextualClientEventInfo,
+                g = (0, D.Z)().propsFromState(() => ({ isTimelineTerminatedAtTop: y, contextualClientEventInfo: T }));
+            var I = o(519125);
+            const M = a().d35d74e4,
                 v = (e) => {
                     switch (e) {
                         case h.Z.NOT_FOUND:
@@ -377,22 +377,22 @@
                             return (0, c.ZP)(`Unhandled timeline unavailable reason: ${e}`), null;
                     }
                 },
-                P = () => n.createElement(w.Z, null);
-            class C extends n.Component {
+                C = () => n.createElement(w.Z, null);
+            class P extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._isInitialFocusEntry = (e, t) => {
                             const { focalTweetId: o, location: n } = this.props;
                             return !!!n.state?.focusComposer && e && e.content && !!e.content.id && e.content.id === o;
                         }),
-                        (this._getMemoizedPreprocessor = (0, s.Z)((e, t, o, n, r, a, s) => (0, g.Mu)({ focalTweetId: r, contextTweetId: t, contextualClientEventInfo: o, socialContext: e, topicFollowPrompt: a, promotedContent: n, showOnlyRelevantReplies: s }))),
+                        (this._getMemoizedPreprocessor = (0, s.Z)((e, t, o, n, r, a, s) => (0, I.Mu)({ focalTweetId: r, contextTweetId: t, contextualClientEventInfo: o, socialContext: e, topicFollowPrompt: a, promotedContent: n, showOnlyRelevantReplies: s }))),
                         (this._getPreprocessor = () => {
                             const { contextTweetId: e, contextualClientEventInfo: t, focalTweetId: o, promotedContent: n, socialContext: r, topicFollowPrompt: a } = this.props;
                             return this._getMemoizedPreprocessor(r, e, t, n, o, a, !1);
                         }),
                         (this._getMemoizedEntryConfig = (0, s.Z)((e, t, o, n, r, a) => {
                             const s = e && n && e === n;
-                            return (0, g.ZP)({ changeDropdownState: this.props.changeDropdownState, isCurrentUserRootAuthor: !!s, hideReplyContextMode: t, replyDropdownSelection: o, rootTweetAuthorId: n, withFocalTweetMedia: r, withRuxInjections: a });
+                            return (0, I.ZP)({ changeDropdownState: this.props.changeDropdownState, isCurrentUserRootAuthor: !!s, hideReplyContextMode: t, replyDropdownSelection: o, rootTweetAuthorId: n, withFocalTweetMedia: r, withRuxInjections: a });
                         })),
                         (this._getEntryConfig = () => {
                             const e = this.props,
@@ -400,14 +400,14 @@
                                 o = this.context.viewerUserId,
                                 n = e.withFocalTweetMedia,
                                 r = e.replyDropdownSelection,
-                                a = this.context.featureSwitches.isTrue("rweb_tweets_reply_context_hidden") ? y.j.CONVERSATION : void 0,
+                                a = this.context.featureSwitches.isTrue("rweb_tweets_reply_context_hidden") ? f.j.CONVERSATION : void 0,
                                 s = e.withRuxInjections;
                             return this._getMemoizedEntryConfig(o, a, r, t, n, s);
                         });
                 }
                 render() {
                     const { apiErrorHandlerMap: e, fetchOptions: t, module: o, onEntriesRendered: r } = this.props;
-                    return n.createElement(b.Z, { anchoring: l.Z, apiErrorHandlerMap: e, entryConfiguration: this._getEntryConfig(), fetchOptions: t, isInitialFocusEntry: this._isInitialFocusEntry, module: o, nearStartProximityRatio: 2, olderAtTop: !0, onEntriesRendered: r, preprocessEntryList: this._getPreprocessor(), prerollDisplayLocation: p.Nw.OTHER, previewEntries: this._previewEntries(), refreshControl: null, renderEmptyState: P, renderUnavailable: v, title: D });
+                    return n.createElement(b.Z, { anchoring: l.Z, apiErrorHandlerMap: e, entryConfiguration: this._getEntryConfig(), fetchOptions: t, isInitialFocusEntry: this._isInitialFocusEntry, module: o, nearStartProximityRatio: 2, olderAtTop: !0, onEntriesRendered: r, preprocessEntryList: this._getPreprocessor(), prerollDisplayLocation: p.Nw.OTHER, previewEntries: this._previewEntries(), refreshControl: null, renderEmptyState: C, renderUnavailable: v, title: M });
                 }
                 _previewEntries() {
                     const { focalTweet: e } = this.props,
@@ -415,8 +415,8 @@
                     return e ? [u.Se({ id: t, sortIndex: d.Z })] : void 0;
                 }
             }
-            (C.defaultProps = { withFocalTweetMedia: !0 }), (C.contextType = m.rC);
-            const E = T(C);
+            (P.defaultProps = { withFocalTweetMedia: !0 }), (P.contextType = m.rC);
+            const S = g(P);
         },
         438965: (e, t, o) => {
             o.d(t, { FE: () => a, Hx: () => d, Oj: () => r, P3: () => l, QO: () => i, j: () => s });
@@ -469,7 +469,7 @@
             }
         },
         897695: (e, t, o) => {
-            o.r(t), o.d(t, { ImmersiveMediaViewerScreen: () => ge, default: () => ve });
+            o.r(t), o.d(t, { ImmersiveMediaViewerScreen: () => Ie, default: () => ve });
             o(136728), o(543673), o(240753), o(128399);
             var n = o(202784),
                 r = o(878052),
@@ -485,24 +485,24 @@
                 m = o(807896),
                 w = o(335636),
                 b = o(912021),
-                y = o(2138),
-                f = o(166852),
-                I = o(516951),
-                M = o(143778),
-                T = o(163889),
-                g = o(163390),
-                D = o(768572),
+                f = o(2138),
+                D = o(166852),
+                y = o(516951),
+                T = o(143778),
+                g = o(163889),
+                I = o(163390),
+                M = o(768572),
                 v = o(933794),
-                P = o(579051),
-                C = o(719536),
-                E = o(476984),
-                S = o.n(E),
+                C = o(579051),
+                P = o(719536),
+                S = o(476984),
+                E = o.n(S),
                 _ = o(214997),
                 Z = o(837880),
                 x = o(908478),
                 R = o(323265),
-                A = o(993547),
-                k = o(725516),
+                k = o(993547),
+                A = o(725516),
                 F = o(609927);
             class N extends n.Component {
                 constructor(...e) {
@@ -568,7 +568,7 @@
                                 n = this._calculateNearestSnapStopPosition(t, o);
                             this._updateScrollEnd(n);
                         }),
-                        (this._updateScrollEnd = (0, y.Z)((e) => {
+                        (this._updateScrollEnd = (0, f.Z)((e) => {
                             const { analytics: t, onPositionUpdate: o, onScrollEnd: n, viewport: r } = this.props,
                                 a = this._getCurrentItemIndex(),
                                 s = e;
@@ -619,7 +619,7 @@
                     );
                 }
                 shouldComponentUpdate(e, t) {
-                    return !S()(this.props, e) || !(0, x.Z)(this.state, t);
+                    return !E()(this.props, e) || !(0, x.Z)(this.state, t);
                 }
                 componentDidMount() {
                     const e = new URLSearchParams(window.location.search).get("currentTweet");
@@ -635,17 +635,17 @@
                 }
             }
             const U = i.default.create(() => ({ scrollView: { overflowY: "auto", scrollSnapType: "y mandatory", height: "100%" }, scrollSnapItem: { width: "100%", scrollSnapAlign: "start", scrollSnapStop: "always" }, scrollSnapItemInner: { height: window.innerHeight, width: "100%" } })),
-                L = (0, A.Z)((0, k.Z)(B)),
-                O = { triggerCause: C.Z.MOVEMENT };
+                O = (0, k.Z)((0, A.Z)(B)),
+                L = { triggerCause: P.Z.MOVEMENT };
             class V extends n.PureComponent {
                 constructor(e, t) {
                     super(e, t),
                         (this._renderer = n.createRef()),
-                        (this._keyboardShortcutHandlers = { [g.uq.refresh]: this._handleKeyboardRefresh, [g.uq.nextItem]: this._handleKeyboardFocusNext, [g.uq.previousItem]: this._handleKeyboardFocusPrevious }),
-                        (this._getList = (0, b.Z)((e, t, o, n) => e.filter((e) => !this.props.blockedOrMutedEntryIds.has(o(e))).map((e, r) => (0, P.f)(o(e), e, t, !1, n && n(e))))),
+                        (this._keyboardShortcutHandlers = { [I.uq.refresh]: this._handleKeyboardRefresh, [I.uq.nextItem]: this._handleKeyboardFocusNext, [I.uq.previousItem]: this._handleKeyboardFocusPrevious }),
+                        (this._getList = (0, b.Z)((e, t, o, n) => e.filter((e) => !this.props.blockedOrMutedEntryIds.has(o(e))).map((e, r) => (0, C.f)(o(e), e, t, !1, n && n(e))))),
                         (this._render = () => {
                             const { withKeyboardShortcuts: e } = this.props;
-                            return n.createElement(v.Z, { enabled: e, handlers: this._keyboardShortcutHandlers }, n.createElement(L, { list: this.state.list, onPositionUpdate: this._handlePositionUpdate, onScrollEnd: this._handleScrollEnd, ref: this._renderer }));
+                            return n.createElement(v.Z, { enabled: e, handlers: this._keyboardShortcutHandlers }, n.createElement(O, { list: this.state.list, onPositionUpdate: this._handlePositionUpdate, onScrollEnd: this._handleScrollEnd, ref: this._renderer }));
                         }),
                         (this._handleScrollEnd = () => {
                             this.props.onScrollEnd && this.props.onScrollEnd();
@@ -653,9 +653,9 @@
                         (this._handlePositionUpdate = (e, t) => {
                             const { onItemsRendered: o } = this.props,
                                 n = this.state.list;
-                            0 === e && this.props.onAtStart(O), e === n.length - 1 && this.props.onAtEnd(O), 1 === e && this.props.onNearStart(O), e === n.length - 2 && this.props.onNearEnd(O), n[e] ? o && o({ positions: [{ id: n[e].id, rectangle: t }], viewport: t }) : (0, T.ZP)(`VerticalSnapScroller could not update position to ${e}, itemList was ${n.length} elements.`, { level: "warning" });
+                            0 === e && this.props.onAtStart(L), e === n.length - 1 && this.props.onAtEnd(L), 1 === e && this.props.onNearStart(L), e === n.length - 2 && this.props.onNearEnd(L), n[e] ? o && o({ positions: [{ id: n[e].id, rectangle: t }], viewport: t }) : (0, g.ZP)(`VerticalSnapScroller could not update position to ${e}, itemList was ${n.length} elements.`, { level: "warning" });
                         }),
-                        (this._handleKeyboardRefresh = (0, y.Z)(() => {
+                        (this._handleKeyboardRefresh = (0, f.Z)(() => {
                             this.props.onKeyboardRefresh && this.props.onKeyboardRefresh();
                         }, 1e3)),
                         (this._handleKeyboardFocusNext = () => {
@@ -680,7 +680,7 @@
                     const { cacheKey: t, onPositionRestored: o } = this.props;
                     if ((t !== e.cacheKey && o(), e.items !== this.props.items)) {
                         const { identityFunction: e, renderer: t, sortIndexFunction: o } = this.props,
-                            n = (0, f.Z)([...this.state._items, ...this.props.items], (t) => e(t));
+                            n = (0, D.Z)([...this.state._items, ...this.props.items], (t) => e(t));
                         this.setState({ _items: n, list: this._getList(n, t, e, o) });
                     }
                 }
@@ -691,7 +691,7 @@
                     this._renderer.current && this._renderer.current.scrollToNewest(e);
                 }
             }
-            (V.contextType = D.y3), (V.defaultProps = { onPositionRestored: I.Z, onAtEnd: I.Z, onAtStart: I.Z, onNearEnd: I.Z, onNearStart: I.Z, onScrollEnd: I.Z, noItemsRenderer: M.Z, withKeyboardShortcuts: !1 });
+            (V.contextType = M.y3), (V.defaultProps = { onPositionRestored: y.Z, onAtEnd: y.Z, onAtStart: y.Z, onNearEnd: y.Z, onNearStart: y.Z, onScrollEnd: y.Z, noItemsRenderer: T.Z, withKeyboardShortcuts: !1 });
             const $ = n.forwardRef((e, t) =>
                 n.createElement(
                     a.Z,
@@ -705,11 +705,11 @@
                 W = o(383186),
                 q = o(503229),
                 G = o(466015),
-                J = o(740025),
-                Y = o(750085),
+                Y = o(740025),
+                J = o(750085),
                 Q = o(218951);
-            const X = (e, t) => (0, Q.Z)({ timelineId: `immersiveMedia-${e}`, network: { getEndpoint: (e) => e.withEndpoint(J.ZP).fetchImmersiveMedia, getEndpointParams: () => ({ pinned_tweet_id: e, page_name: t }) }, context: "FETCH_IMMERSIVE_MEDIA", perfKey: "immersiveMedia", formatResponse: Y.Z }),
-                ee = (e) => (0, Q.Z)({ timelineId: `immersiveProfile-${e}`, network: { getEndpoint: (e) => e.withEndpoint(J.ZP).fetchImmersiveProfile, getEndpointParams: () => ({ pinned_tweet_id: e }) }, context: "FETCH_IMMERSIVE_PROFILE", perfKey: "immersiveProfile", formatResponse: Y.Z });
+            const X = (e, t) => (0, Q.Z)({ timelineId: `immersiveMedia-${e}`, network: { getEndpoint: (e) => e.withEndpoint(Y.ZP).fetchImmersiveMedia, getEndpointParams: () => ({ pinned_tweet_id: e, page_name: t }) }, context: "FETCH_IMMERSIVE_MEDIA", perfKey: "immersiveMedia", formatResponse: J.Z }),
+                ee = (e) => (0, Q.Z)({ timelineId: `immersiveProfile-${e}`, network: { getEndpoint: (e) => e.withEndpoint(Y.ZP).fetchImmersiveProfile, getEndpointParams: () => ({ pinned_tweet_id: e }) }, context: "FETCH_IMMERSIVE_PROFILE", perfKey: "immersiveProfile", formatResponse: J.Z });
             var te = o(67534),
                 oe = o(668214),
                 ne = o(836255);
@@ -740,35 +740,35 @@
             var me = o(263863),
                 we = o(351322),
                 be = o(509738);
-            var ye = o(335632),
-                fe = o(962741);
-            const Ie = l().h59700fa,
-                Me = {
-                    ...(0, ye.G)({}),
-                    [fe.ZP.Tweet]: we.ov({
+            var fe = o(335632),
+                De = o(962741);
+            const ye = l().h59700fa,
+                Te = {
+                    ...(0, fe.G)({}),
+                    [De.ZP.Tweet]: we.ov({
                         selectDisplayType: (e) => e.content.displayType,
                         handlers: {
                             [me.Z.Tweet]:
-                                ((Te = {}),
+                                ((ge = {}),
                                 {
                                     loader: () =>
                                         Promise.all([
-                                            o.e("icons.23"),
-                                            o.e("icons.0"),
-                                            o.e("icons.2"),
-                                            o.e("icons.16"),
-                                            o.e("icons.19"),
-                                            o.e("icons.10"),
-                                            o.e("icons.13"),
-                                            o.e("icons.24"),
+                                            o.e("icons.8"),
+                                            o.e("icons.15"),
                                             o.e("icons.7"),
+                                            o.e("icons.3"),
+                                            o.e("icons.24"),
+                                            o.e("icons.12"),
                                             o.e("icons.22"),
-                                            o.e("icons.27"),
-                                            o.e("icons.17"),
+                                            o.e("icons.2"),
+                                            o.e("icons.18"),
+                                            o.e("icons.9"),
+                                            o.e("icons.1"),
+                                            o.e("icons.6"),
+                                            o.e("icons.14"),
                                             o.e("modules.common-e907d115"),
                                             o.e("modules.common-e019dbda"),
-                                            o.e("icons.11"),
-                                            o.e("icons.26"),
+                                            o.e("icons.5"),
                                             o.e("modules.audio-6107ac1a"),
                                             o.e("modules.audio-b953418a"),
                                             o.e("modules.audio-7c51e6a7"),
@@ -779,42 +779,40 @@
                                             o.e("modules.audio-e019dbda"),
                                             o.e("modules.audio-262c94d4"),
                                             o.e("modules.audio-c6fe4ea4"),
-                                            o.e("icons.8"),
-                                            o.e("icons.4"),
-                                            o.e("icons.14"),
-                                            o.e("icons.28"),
                                             o.e("icons.21"),
-                                            o.e("icons.3"),
-                                            o.e("icons.1"),
+                                            o.e("icons.16"),
+                                            o.e("icons.28"),
+                                            o.e("icons.17"),
+                                            o.e("icons.27"),
+                                            o.e("icons.19"),
+                                            o.e("icons.0"),
+                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
+                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
+                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
+                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
+                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
+                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
+                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
+                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
-                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
-                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
-                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
-                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
-                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
-                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
-                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
-                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-0157ee89"),
+                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
+                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
-                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c977f3f0"),
-                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bde9e8ed"),
-                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78eb13f6"),
-                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-83ae13c2"),
+                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-fd0b2cf1"),
+                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c7e58553"),
+                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f7f56781"),
+                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
-                                            o.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSp"),
                                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
                                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
@@ -823,6 +821,7 @@
                                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
                                             o.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
+                                            o.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                                             o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                                             o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
                                             o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
@@ -838,67 +837,67 @@
                                             o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"),
                                             o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"),
                                             o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
-                                            o.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-85aa903d"),
-                                            o.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-c8e3a520"),
-                                            o.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-658f42e4"),
-                                            o.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-1f16c288"),
+                                            o.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"),
+                                            o.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"),
+                                            o.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"),
+                                            o.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"),
+                                            o.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-5563f741"),
+                                            o.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
+                                            o.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-9d7f6429"),
                                             o.e("shared~bundle.Birdwatch~bundle.News~bundle.Grok~ondemand.News~loader.inlineTombstoneHandler~loader.tweetHandl"),
-                                            o.e("shared~ondemand.InlinePlayer~bundle.LiveEvent~loader.AudioOnlyVideoPlayer~loader.JetfuelFrame~loader-4648150b"),
-                                            o.e("shared~ondemand.InlinePlayer~bundle.LiveEvent~loader.AudioOnlyVideoPlayer~loader.JetfuelFrame~loader-6ff35035"),
-                                            o.e("shared~ondemand.InlinePlayer~bundle.LiveEvent~loader.AudioOnlyVideoPlayer~loader.JetfuelFrame~loader-147738cd"),
                                             o.e("loader.immersiveTweetHandler"),
                                         ]).then(o.bind(o, 311554)),
-                                    loaderOptions: Te,
+                                    loaderOptions: ge,
                                     loaderKey: "immersiveTweetLoader",
                                     strategy: be.Z.OnDemand,
                                 }),
                         },
                     }),
                 };
-            var Te;
-            const ge = (e) => {
-                    const { analytics: t, forwardPivotInfo: o, history: d, location: l, mode: m, pinnedTweet: b, pinnedTweetId: y, pinnedTweetUser: f } = e,
-                        I = (0, z.hC)("immersive_viewer_enable_profile_viewer"),
-                        [M] = n.useState(!1),
-                        [T, g] = n.useState(null),
-                        [D, v] = n.useState(!1),
-                        [P, C] = n.useState(!1),
-                        [E, S] = n.useState(!1),
+            var ge;
+            const Ie = (e) => {
+                    const { analytics: t, forwardPivotInfo: o, history: d, location: l, mode: m, pinnedTweet: b, pinnedTweetId: f, pinnedTweetUser: D } = e,
+                        y = (0, z.hC)("immersive_viewer_enable_profile_viewer"),
+                        [T] = n.useState(!1),
+                        [g, I] = n.useState(null),
+                        [M, v] = n.useState(!1),
+                        [C, P] = n.useState(!1),
+                        [S, E] = n.useState(!1),
                         [_, Z] = n.useState(!0),
                         [x, R] = n.useState(new Set()),
-                        { width: A } = r.Z.get("screen");
+                        { width: k } = r.Z.get("screen");
                     (0, u.q)(() => {
-                        if ((t.scribe({ action: "impression" }), !(A >= i.default.theme.breakpoints.large)))
+                        if ((t.scribe({ action: "impression" }), !(k >= i.default.theme.breakpoints.large)))
                             return (
-                                v(A >= i.default.theme.breakpoints.large),
-                                d.replace(`${(0, W.PK)(`/${f}/status/${y}`)}?${new URLSearchParams(l.search).toString()}`),
+                                v(k >= i.default.theme.breakpoints.large),
+                                d.replace(`${(0, W.PK)(`/${D}/status/${f}`)}?${new URLSearchParams(l.search).toString()}`),
                                 function () {
                                     t.scribe({ action: "navigate" });
                                 }
                             );
-                        d.push(`/${f}/status/${y}`);
+                        d.push(`/${D}/status/${f}`);
                     });
-                    const k = n.useCallback(
+                    const A = n.useCallback(
                             (e) => {
                                 if (b) {
                                     const t = new URLSearchParams(l.search),
                                         o = Array.from(t.keys()).length ? `&${t.toString()}` : "";
-                                    d.replace(`${b.permalink}/mediaViewer?currentTweet=${e.id_str}&currentTweetUser=${e.user.screen_name}${o}`), g(e);
+                                    d.replace(`${b.permalink}/mediaViewer?currentTweet=${e.id_str}&currentTweetUser=${e.user.screen_name}${o}`), I(e);
                                 }
                             },
                             [d, b, l.search],
                         ),
                         F = n.useCallback(
                             (e) => {
-                                C(e);
+                                P(e);
                             },
-                            [C],
+                            [P],
                         ),
                         N = n.useCallback(
                             (e) => {
-                                S(e);
+                                E(e);
                             },
-                            [S],
+                            [E],
                         ),
                         H = n.useCallback(
                             (e) => {
@@ -906,7 +905,7 @@
                             },
                             [Z],
                         ),
-                        B = n.useMemo(() => (I && "profile" === m ? ee(y) : X(y, f)), [m, y, f, I]),
+                        B = n.useMemo(() => (y && "profile" === m ? ee(f) : X(f, D)), [m, f, D, y]),
                         U = n.useMemo(() => {
                             if (!b) return null;
                             const e = ((e) => {
@@ -925,22 +924,22 @@
                             { headerless: !0 },
                             n.createElement(
                                 a.Z,
-                                { style: De.container, testID: "modalContainer" },
+                                { style: Me.container, testID: "modalContainer" },
                                 n.createElement(
                                     a.Z,
-                                    { style: [De.neighbor, D && De.desktopNeighbor] },
+                                    { style: [Me.neighbor, M && Me.desktopNeighbor] },
                                     n.createElement(
                                         a.Z,
-                                        { style: D && De.desktopTimelineContainer },
+                                        { style: M && Me.desktopTimelineContainer },
                                         n.createElement(
                                             w.H.Provider,
                                             {
                                                 testID: "contextProvider",
                                                 value: {
                                                     forwardPivotInfo: o,
-                                                    onTweetUpdate: k,
+                                                    onTweetUpdate: A,
                                                     hasClosedCaptioning: _,
-                                                    isMuted: P,
+                                                    isMuted: C,
                                                     setHasClosedCaptioning: H,
                                                     onMuteToggle: F,
                                                     setBlockedOrMutedEntry: (e, t) => {
@@ -949,20 +948,20 @@
                                                     },
                                                     blockedOrMutedEntryIds: x,
                                                     setTweetContentHidden: N,
-                                                    isTweetContentHidden: E,
+                                                    isTweetContentHidden: S,
                                                 },
                                             },
-                                            y && n.createElement(K.Z, { entryConfiguration: Me, module: B, previewEntries: b ? [G.Se({ id: y, sortIndex: "stable_sort_index" })] : void 0, scroller: $, title: Ie }),
+                                            f && n.createElement(K.Z, { entryConfiguration: Te, module: B, previewEntries: b ? [G.Se({ id: f, sortIndex: "stable_sort_index" })] : void 0, scroller: $, title: ye }),
                                         ),
                                     ),
-                                    n.createElement(a.Z, { style: D && De.desktopMediaDrawer, testID: D ? "immersive-viewer-desktop-conversation-drawer" : void 0 }, T && ((e, t) => !!e || t)(D, M) ? n.createElement(te.Z, { location: l, rootTweet: T, screenName: f, tweet: T, tweetId: T.id_str }) : null),
+                                    n.createElement(a.Z, { style: M && Me.desktopMediaDrawer, testID: M ? "immersive-viewer-desktop-conversation-drawer" : void 0 }, g && ((e, t) => !!e || t)(M, T) ? n.createElement(te.Z, { location: l, rootTweet: g, screenName: D, tweet: g, tweetId: g.id_str }) : null),
                                 ),
                             ),
                         ),
                     );
                 },
-                De = i.default.create((e) => ({ container: { flexDirection: "row", overflowX: "hidden", overflowY: "hidden", height: "100%", width: "100%", position: "relative" }, neighbor: { flexGrow: 1, flexShrink: 1 }, desktopNeighbor: { display: "flex", flexDirection: "row" }, desktopTimelineContainer: { flex: 2 }, desktopMediaDrawer: { flex: 1 } })),
-                ve = pe((0, q.Z)(ge));
+                Me = i.default.create((e) => ({ container: { flexDirection: "row", overflowX: "hidden", overflowY: "hidden", height: "100%", width: "100%", position: "relative" }, neighbor: { flexGrow: 1, flexShrink: 1 }, desktopNeighbor: { display: "flex", flexDirection: "row" }, desktopTimelineContainer: { flex: 2 }, desktopMediaDrawer: { flex: 1 } })),
+                ve = pe((0, q.Z)(Ie));
         },
         67534: (e, t, o) => {
             o.d(t, { Z: () => w });
@@ -978,12 +977,12 @@
                 h = o(735313),
                 p = o(904096);
             const m = r.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, overflow: "auto", width: p.p, borderStartWidth: e.borderWidths.small, borderColor: e.colors.borderColor, borderStyle: "solid" } })),
-                w = function ({ contextTweetId: e, location: t, promotedContent: o, rootTweet: r, screenName: p, socialContext: w, tweet: b, tweetId: y }) {
-                    const [f, I] = n.useState(s.r.relevance),
-                        M = (0, c.I0)(),
-                        T = (0, d.n7)("CONVERSATION_DRAWER"),
-                        g = n.useMemo(() => (0, l.i)(p), [p]),
-                        D = (e, t) => {
+                w = function ({ contextTweetId: e, location: t, promotedContent: o, rootTweet: r, screenName: p, socialContext: w, tweet: b, tweetId: f }) {
+                    const [D, y] = n.useState(s.r.relevance),
+                        T = (0, c.I0)(),
+                        g = (0, d.n7)("CONVERSATION_DRAWER"),
+                        I = n.useMemo(() => (0, l.i)(p), [p]),
+                        M = (e, t) => {
                             let o = "Relevance";
                             return t === s.r.recency ? (o = "Recency") : t === s.r.likes && (o = "Likes"), (0, u.ZP)({ focalTweetId: e, rankingMode: o });
                         };
@@ -991,19 +990,19 @@
                         a.Z,
                         { "aria-expanded": !0, style: m.root },
                         n.createElement(i.Z, {
-                            apiErrorHandlerMap: g,
+                            apiErrorHandlerMap: I,
                             changeDropdownState: (e) => {
-                                I(e), M((0, h.Z)(D(y, e))).catch(T({}));
+                                y(e), T((0, h.Z)(M(f, e))).catch(g({}));
                             },
                             contextTweetId: e,
                             focalTweet: b,
-                            focalTweetId: y,
+                            focalTweetId: f,
                             location: t,
-                            module: D(y, f),
+                            module: M(f, D),
                             promotedContent: o,
-                            replyDropdownSelection: f,
+                            replyDropdownSelection: D,
                             rootTweet: r,
-                            selectedTweet: { selectedTweetId: y },
+                            selectedTweet: { selectedTweetId: f },
                             socialContext: w,
                             withFocalTweetMedia: !1,
                         }),
@@ -1018,4 +1017,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ImmersiveMediaViewer.ea7c5aaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ImmersiveMediaViewer.e8669e3a.js.map
