@@ -3,9 +3,9 @@
     ["ondemand.SettingsRevamp-32bb1570"],
     {
         633525: (e, t, n) => {
-            n.r(t), n.d(t, { GrokSettingsScreen: () => F, default: () => O });
-            var a = n(181196),
-                r = n(202784),
+            n.r(t), n.d(t, { GrokSettingsScreen: () => H, default: () => z });
+            var r = n(181196),
+                a = n(202784),
                 i = n(325686),
                 c = (n(585488), n(712696)),
                 l = n.n(c),
@@ -17,52 +17,52 @@
                 f = n(443781),
                 g = n(652904),
                 p = n(883229),
-                b = n(943914),
+                _ = n(943914),
                 E = n(310116),
-                _ = n(867621),
+                b = n(867621),
                 y = n(987317),
                 Z = n(466441),
                 h = n(264922),
-                S = n(71620),
+                v = n(71620),
                 C = n(668214),
-                v = n(122743),
+                S = n(122743),
                 w = n(691213);
             const L = (0, C.Z)()
                     .propsFromState(() => ({ userClaimsFetchStatus: w.uD }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, S.zr)("APPLICATIONS"), clearConversations: v.H }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, v.zr)("APPLICATIONS"), clearConversations: S.H }))
                     .withAnalytics({ page: "settings", section: "subscriptions" }),
                 I = u().i9028824,
-                k = u().f2b1e83e,
-                A = u().e110a46c,
-                T = u().ebc4fda0,
-                R = u().c90fe716,
+                R = u().f2b1e83e,
+                k = u().e110a46c,
+                A = u().ebc4fda0,
+                T = u().c90fe716,
                 x = u().d96cf7ce,
-                N = a.Z,
+                N = r.Z,
                 P = { type: "Retry" },
-                V = { context: "GrokSettings" };
-            function D({ clearConversations: e, createLocalApiErrorHandler: t }) {
+                D = { context: "GrokSettings" };
+            function V({ clearConversations: e, createLocalApiErrorHandler: t }) {
                 const { user_preferences: n } = l()(N, {}),
-                    a = (0, s.useLocation)(),
+                    r = (0, s.useLocation)(),
                     c = (0, s.useRouteMatch)(),
                     o = (0, s.useHistory)(),
-                    { featureSwitches: u } = r.useContext(f.rC),
+                    { featureSwitches: u } = a.useContext(f.rC),
                     m = u.isTrue("responsive_web_grok_delete_conversations_enabled");
-                if (!n) return r.createElement(Z.default, { history: o, location: a, match: c });
-                return r.createElement(
+                if (!n) return a.createElement(Z.default, { history: o, location: r, match: c });
+                return a.createElement(
                     g.Z,
                     null,
-                    r.createElement(
+                    a.createElement(
                         h.Z,
-                        { location: a, screenType: "secondaryDetail", title: k },
-                        r.createElement(i.Z, { testID: "xaiDataSharingSettings" }, r.createElement(E.Z, { userPreferences: n }), r.createElement(y.Z, { userPreferences: n }), r.createElement(_.Z, { userPreferences: n })),
+                        { location: r, screenType: "secondaryDetail", title: R },
+                        a.createElement(i.Z, { testID: "xaiDataSharingSettings" }, a.createElement(E.Z, { userPreferences: n }), a.createElement(y.Z, { userPreferences: n }), a.createElement(b.Z, { userPreferences: n })),
                         m &&
-                            r.createElement(d.Z, {
+                            a.createElement(d.Z, {
                                 align: "left",
                                 confirmationSheetConfirmButtonLabel: x,
                                 confirmationSheetConfirmButtonType: "primary",
-                                confirmationSheetHeadline: R,
-                                confirmationSheetText: T,
-                                label: A,
+                                confirmationSheetHeadline: T,
+                                confirmationSheetText: A,
+                                label: k,
                                 onConfirmationSheetConfirm: () => {
                                     e().catch(() => t({ showToast: !0 }));
                                 },
@@ -70,28 +70,28 @@
                     ),
                 );
             }
-            const H = (e, t) => r.createElement(D, { clearConversations: e, createLocalApiErrorHandler: t });
-            function F({ clearConversations: e, createLocalApiErrorHandler: t, userClaimsFetchStatus: n }) {
-                return r.createElement(p.N, { errorConfig: V, fallback: P }, r.createElement(b.B, { fallback: null }, r.createElement(m.Z, { "aria-label": I, fetchStatus: n, render: () => H(e, t) })));
+            const F = (e, t) => a.createElement(V, { clearConversations: e, createLocalApiErrorHandler: t });
+            function H({ clearConversations: e, createLocalApiErrorHandler: t, userClaimsFetchStatus: n }) {
+                return a.createElement(p.N, { errorConfig: D, fallback: P }, a.createElement(_.B, { fallback: null }, a.createElement(m.Z, { "aria-label": I, fetchStatus: n, render: () => F(e, t) })));
             }
-            const O = L(F);
+            const z = L(H);
         },
         915566: (e, t, n) => {
             n.d(t, { Jb: () => c, Jf: () => d, LT: () => u, MQ: () => i, NC: () => o, hJ: () => l, zV: () => s });
-            var a = n(688715),
-                r = n(130919);
+            var r = n(688715),
+                a = n(130919);
             const i = Object.freeze({ premiumSubscription: "premiumSubscription", premiumSettings: "premiumSettings", securitySettings: "securitySettings", creator: "creator" }),
                 c = { [i.premiumSubscription]: "/i/flow/premium_signup_nux_flow", [i.premiumSettings]: "/settings/premium", [i.securitySettings]: "/settings/security", [i.creator]: "/settings/monetization" },
-                l = `/settings/account/id_verification?status=${r.t.PendingResult}`,
-                s = `/settings/monetization?status=${r.t.PendingResult}`,
+                l = `/settings/account/id_verification?status=${a.t.PendingResult}`,
+                s = `/settings/monetization?status=${a.t.PendingResult}`,
                 o = "/settings/account/id_verification",
-                u = (0, a.ju)("https://help.x.com/rules-and-policies/verification-policy"),
-                d = (0, a.ju)("https://help.x.com/using-x/x-premium");
+                u = (0, r.ju)("https://help.x.com/rules-and-policies/verification-policy"),
+                d = (0, r.ju)("https://help.x.com/using-x/x-premium");
         },
         940289: (e, t, n) => {
-            n.r(t), n.d(t, { IDVerificationQueryRenderer: () => G, IDVerificationQueryRequest: () => M, default: () => $, isPendingStatus: () => q });
-            var a = n(993770),
-                r = n(629928),
+            n.r(t), n.d(t, { IDVerificationQueryRenderer: () => J, IDVerificationQueryRequest: () => O, default: () => $, isPendingStatus: () => M });
+            var r = n(993770),
+                a = n(629928),
                 i = n(202784),
                 c = n(360917),
                 l = n.n(c),
@@ -103,58 +103,58 @@
                 f = n(107267),
                 g = n(750410),
                 p = n(943401),
-                b = n(954110),
+                _ = n(954110),
                 E = n(167630),
-                _ = n(392237),
+                b = n(392237),
                 y = n(731708),
                 Z = n(111677),
                 h = n.n(Z),
-                S = n(750442),
+                v = n(750442),
                 C = n(130919),
-                v = n(727828),
+                S = n(727828),
                 w = n(534763),
                 L = n(443781),
                 I = n(652904),
-                k = n(301410),
-                A = n(725516),
-                T = n(312771),
-                R = n(615027),
+                R = n(301410),
+                k = n(725516),
+                A = n(312771),
+                T = n(615027),
                 x = n(466441),
                 N = n(264922),
                 P = n(915566);
-            const V = h().afe4a358,
-                D = h().g268fbb8,
-                H = h().f66d24be,
-                F = h().c8255462,
-                O = h().c6e731ee,
-                z = h().be582166,
-                U = { [C.t.PendingResult]: h().b496bc94, [C.t.RequestLocked]: h().d8f5cce4, [C.t.IdentityNonVerifiable]: h().i8427a1e, [C.t.CanVerifyIdentity]: z },
-                j = i.createElement(w.b, { label: H, link: P.LT }),
-                q = (e) => {
+            const D = h().afe4a358,
+                V = h().g268fbb8,
+                F = h().f66d24be,
+                H = h().c8255462,
+                z = h().c6e731ee,
+                j = h().be582166,
+                q = { [C.t.PendingResult]: h().b496bc94, [C.t.RequestLocked]: h().d8f5cce4, [C.t.IdentityNonVerifiable]: h().i8427a1e, [C.t.CanVerifyIdentity]: j },
+                B = i.createElement(w.b, { label: F, link: P.LT }),
+                M = (e) => {
                     const t = e.query?.status;
                     return !(!t || Array.isArray(t)) && t === C.t.PendingResult;
                 },
-                M = r.Z,
-                B = a.Z,
-                G = (0, k.z)(M, { errorConfig: { context: "ID_VERIFICATION_CONTEXT" } }),
-                Q = _.default.create((e) => ({ layoutDimensions: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, iconTheme: { color: e.colors.text }, idLabel: { alignItems: "center", flexDirection: "row", gap: e.spaces.space8 } })),
-                J = i.createElement(u.Z, { style: Q.idLabel }, i.createElement(S.default, { style: Q.iconTheme }), i.createElement(y.ZP, { color: "gray700" }, D)),
+                O = a.Z,
+                G = r.Z,
+                J = (0, R.z)(O, { errorConfig: { context: "ID_VERIFICATION_CONTEXT" } }),
+                Q = b.default.create((e) => ({ layoutDimensions: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, iconTheme: { color: e.colors.text }, idLabel: { alignItems: "center", flexDirection: "row", gap: e.spaces.space8 } })),
+                U = i.createElement(u.Z, { style: Q.idLabel }, i.createElement(v.default, { style: Q.iconTheme }), i.createElement(y.ZP, { color: "gray700" }, V)),
                 $ = i.memo(
-                    (0, A.Z)(
+                    (0, k.Z)(
                         ({ analytics: e, ...t }) => {
                             const { featureSwitches: n } = i.useContext(L.rC),
-                                a = n.isTrue("identity_verification_hide_verified_label_settings_enabled"),
-                                r = (0, f.useLocation)(),
-                                [c] = m()(B),
+                                r = n.isTrue("identity_verification_hide_verified_label_settings_enabled"),
+                                a = (0, f.useLocation)(),
+                                [c] = m()(G),
                                 s = i.useCallback(
-                                    (e, t) => (n, a) => {
+                                    (e, t) => (n, r) => {
                                         e &&
                                             t &&
                                             c({
-                                                variables: { is_identity_verified_label_hidden: a, user_id: e },
+                                                variables: { is_identity_verified_label_hidden: r, user_id: e },
                                                 updater: (e, n) => {
-                                                    const r = e.get(t);
-                                                    o()(r, "userRecord must be specified"), r.setValue(a, "is_identity_verified_label_hidden");
+                                                    const a = e.get(t);
+                                                    o()(a, "userRecord must be specified"), a.setValue(r, "is_identity_verified_label_hidden");
                                                 },
                                             });
                                     },
@@ -162,46 +162,46 @@
                                 ),
                                 d = i.useCallback(
                                     ({ data: n, fetchStatus: c, retry: l }) => {
-                                        if (c === T.ZP.FAILED) return i.createElement(g.Z, { onRequestRetry: l });
-                                        if (c === T.ZP.LOADED && n) {
+                                        if (c === A.ZP.FAILED) return i.createElement(g.Z, { onRequestRetry: l });
+                                        if (c === A.ZP.LOADED && n) {
                                             const c = n.viewer.user_results.result,
                                                 o = c.rest_id,
                                                 d = c.verification_info;
                                             if (!d) return i.createElement(g.Z, { onRequestRetry: l });
                                             const m = !!d.is_identity_verified_label_hidden,
                                                 E = d.identity_verification_status,
-                                                _ = E === C.t.CanVerifyIdentity && q(r) ? C.t.PendingResult : E,
-                                                y = _ === C.t.UnavailableMissingBlueSubscription;
-                                            switch ((e.scribe({ page: "identity_verification_settings", section: _, action: "impression" }), _)) {
+                                                b = E === C.t.CanVerifyIdentity && M(a) ? C.t.PendingResult : E,
+                                                y = b === C.t.UnavailableMissingBlueSubscription;
+                                            switch ((e.scribe({ page: "identity_verification_settings", section: b, action: "impression" }), b)) {
                                                 case C.t.RequestLocked:
                                                 case C.t.PendingResult:
                                                 case C.t.IdentityNonVerifiable:
-                                                    return i.createElement(i.Fragment, null, i.createElement(p.Z, { description: U[_] }), j);
+                                                    return i.createElement(i.Fragment, null, i.createElement(p.Z, { description: q[b] }), B);
                                                 case C.t.IdentityVerified:
                                                 case C.t.UnavailableMissingBlueSubscription:
-                                                    return i.createElement(u.Z, null, i.createElement(p.Z, { description: z }), i.createElement(u.Z, { style: Q.layoutDimensions }, y ? i.createElement(v.Z, { variant: "IdVerification", withColoredIcon: !0 }) : J), a ? i.createElement(u.Z, null, i.createElement(b.Z, { checked: m, disabled: y, helpText: O, label: F, name: "is_identity_verified_label_hidden", onChange: s(o, d.__id) })) : null, j);
+                                                    return i.createElement(u.Z, null, i.createElement(p.Z, { description: j }), i.createElement(u.Z, { style: Q.layoutDimensions }, y ? i.createElement(S.Z, { variant: "IdVerification", withColoredIcon: !0 }) : U), r ? i.createElement(u.Z, null, i.createElement(_.Z, { checked: m, disabled: y, helpText: z, label: H, name: "is_identity_verified_label_hidden", onChange: s(o, d.__id) })) : null, B);
                                                 case C.t.CanVerifyIdentity:
-                                                    return i.createElement(u.Z, null, i.createElement(p.Z, { description: U[_] }), i.createElement(f.Switch, null, i.createElement(f.Route, null, i.createElement(R.Z, { to: "/settings/account/id_verification/start" }))));
+                                                    return i.createElement(u.Z, null, i.createElement(p.Z, { description: q[b] }), i.createElement(f.Switch, null, i.createElement(f.Route, null, i.createElement(T.Z, { to: "/settings/account/id_verification/start" }))));
                                                 default:
                                                     return i.createElement(x.default, t);
                                             }
                                         }
                                         return i.createElement(E.Z, null);
                                     },
-                                    [e, a, r, s, t],
+                                    [e, r, a, s, t],
                                 );
-                            return i.createElement(I.Z, null, i.createElement(N.Z, { location: r, title: V }, i.createElement(G, { render: d, variables: l() })));
+                            return i.createElement(I.Z, null, i.createElement(N.Z, { location: a, title: D }, i.createElement(J, { render: d, variables: l() })));
                         },
                         { page: "id_verification", section: "settings" },
                     ),
                 );
         },
-        68820: (e, t, n) => {
-            n.r(t), n.d(t, { Languages: () => V, default: () => D });
-            var a = n(202784),
-                r = n(779610),
-                i = n(844685),
-                c = n(943401),
+        708341: (e, t, n) => {
+            n.r(t), n.d(t, { Languages: () => q, default: () => B });
+            var r = n(202784),
+                a = n(844685),
+                i = n(943401),
+                c = n(779610),
                 l = n(420412),
                 s = n(111677),
                 o = n.n(s),
@@ -211,109 +211,61 @@
                 f = n(264922),
                 g = n(71620),
                 p = n(668214),
-                b = n(661461),
+                _ = n(661461),
                 E = n(576025),
-                _ = n(390387);
+                b = n(390387);
             const y = (e) => {
-                    const t = (0, _.VT)(e);
-                    return t && (0, b.ug)(e, t);
+                    const t = (0, b.VT)(e);
+                    return t && (0, _.ug)(e, t);
                 },
                 Z = (0, p.Z)()
-                    .propsFromState(() => ({ languageName: y, languageCode: _.VT }))
-                    .propsFromActions(() => ({ fetchCountryNamesIfNeeded: E.Po, fetchAvailableLanguagesIfNeeded: b.yt, createLocalApiErrorHandler: (0, g.zr)("LANGUAGES_SCREEN") })),
-                h = o().d495680e,
-                S = o().jc3fa0e2,
-                C = o().a4b69cbc,
-                v = o().c856bd00,
-                w = o().a4b69cbc,
-                L = o().cab61d58,
-                I = o().dd93fafa,
-                k = o().bca1de4a,
-                A = o().c3aa76c4,
-                T = o().g099069c,
-                R = o().c3aa76c4,
-                x = o().cf9ce876,
-                N = o().d4372cf4,
-                P = { page: "settings", section: "languages" };
-            function V(e) {
-                const { featureSwitches: t } = a.useContext(u.rC),
-                    { createLocalApiErrorHandler: n, fetchAvailableLanguagesIfNeeded: s, fetchCountryNamesIfNeeded: o, languageCode: g, languageName: p, location: b } = e,
+                    .propsFromState(() => ({ languageName: y, languageCode: b.VT }))
+                    .propsFromActions(() => ({ fetchCountryNamesIfNeeded: E.Po, fetchAvailableLanguagesIfNeeded: _.yt, createLocalApiErrorHandler: (0, g.zr)("LANGUAGES_SCREEN") }));
+            var h = n(631759),
+                v = (n(585488), n(691533)),
+                C = n(535338);
+            const S = o().cf9ce876,
+                w = h.Z;
+            function L({ userLanguage: e }) {
+                const t = (0, C.p)(w, {}),
+                    n = t.viewer_v2?.user_results?.result?.display_language?.language_name,
+                    a = t.viewer_v2?.user_results?.result?.preferred_content_languages?.map((e) => e.language_name) ?? [],
+                    i = [n, ...a.filter((e) => e !== n)].filter(Boolean),
+                    l = r.useMemo(() => new Intl.ListFormat(e, { style: "long", type: "conjunction" }), [e]).format(i);
+                return r.createElement(c.Z, { description: l, label: S, link: "/i/flow/uls_content_and_app_language_selector" });
+            }
+            function I() {
+                return r.createElement(c.Z, { description: "", label: S, link: "/i/flow/uls_content_and_app_language_selector" });
+            }
+            function R(e) {
+                return r.createElement(v.Z, { renderErrorPlaceholder: (e) => e && r.createElement(I, null) }, r.createElement(L, e));
+            }
+            const k = o().d495680e,
+                A = o().jc3fa0e2,
+                T = o().a4b69cbc,
+                x = o().c856bd00,
+                N = o().a4b69cbc,
+                P = o().cab61d58,
+                D = o().dd93fafa,
+                V = o().bca1de4a,
+                F = o().c3aa76c4,
+                H = o().g099069c,
+                z = o().c3aa76c4,
+                j = { page: "settings", section: "languages" };
+            function q(e) {
+                const { featureSwitches: t } = r.useContext(u.rC),
+                    { createLocalApiErrorHandler: n, fetchAvailableLanguagesIfNeeded: s, fetchCountryNamesIfNeeded: o, languageCode: g, languageName: p, location: _ } = e,
                     E = t.isTrue("onboarding_project_uls_enabled"),
-                    _ = a.useMemo(() => (E ? a.createElement(r.Z, { description: N, label: x, link: "/i/flow/uls_content_and_app_language_selector" }) : a.createElement(a.Fragment, null, a.createElement(i.Z, { text: C }), a.createElement(c.Z, { description: v }), a.createElement(r.Z, { description: p, label: w, link: "/settings/language" }), a.createElement(l.Z, null), a.createElement(i.Z, { text: L }), a.createElement(c.Z, { description: I }), a.createElement(r.Z, { label: k, link: "/i/flow/language_selector" }), a.createElement(l.Z, null), a.createElement(i.Z, { text: A }), a.createElement(c.Z, { description: T }), a.createElement(r.Z, { label: R, link: "/settings/your_twitter_data/language" }))), [E, p]);
+                    b = r.useMemo(() => (E ? r.createElement(R, { userLanguage: g }) : r.createElement(r.Fragment, null, r.createElement(a.Z, { text: T }), r.createElement(i.Z, { description: x }), r.createElement(c.Z, { description: p, label: N, link: "/settings/language" }), r.createElement(l.Z, null), r.createElement(a.Z, { text: P }), r.createElement(i.Z, { description: D }), r.createElement(c.Z, { label: V, link: "/i/flow/language_selector" }), r.createElement(l.Z, null), r.createElement(a.Z, { text: F }), r.createElement(i.Z, { description: H }), r.createElement(c.Z, { label: z, link: "/settings/your_twitter_data/language" }))), [E, p, g]);
                 return (
-                    a.useEffect(() => {
+                    r.useEffect(() => {
                         g && o(g).catch(n()), s().catch(n());
                     }, [g, o, s, n]),
-                    a.createElement(m.nO, { namespace: P }, a.createElement(d.Z, null, a.createElement(f.Z, { location: b, screenType: "secondaryDetail", title: h }, a.createElement(c.Z, { description: S }), _)))
+                    r.createElement(m.nO, { namespace: j }, r.createElement(d.Z, null, r.createElement(f.Z, { location: _, screenType: "secondaryDetail", title: k }, r.createElement(i.Z, { description: A }), b)))
                 );
             }
-            const D = Z(V);
-        },
-        110202: (e, t, n) => {
-            n.r(t), n.d(t, { LocationInformation: () => k, default: () => A });
-            var a = n(202784),
-                r = n(943401),
-                i = n(954110),
-                c = n(779610),
-                l = n(111677),
-                s = n.n(l),
-                o = n(443781),
-                u = n(652904),
-                d = n(944681),
-                m = n(293115),
-                f = n(725405),
-                g = n(264922),
-                p = n(71620),
-                b = n(668214),
-                E = n(205253),
-                _ = n(919022);
-            const y = (0, b.Z)()
-                    .propsFromState(() => ({ settings: E.kQ, viewerUser: _.ZP.selectViewerUser }))
-                    .adjustStateProps(({ settings: e, ...t }) => ({ ...t, allowLocationHistoryUseEnabled: e.allowLocationHistoryUse }))
-                    .propsFromActions(() => ({ updateSettings: E.VP, createLocalApiErrorHandler: (0, p.zr)("LOCATION_INFORMATION_SCREEN") })),
-                Z = s().jabb9c9a,
-                h = s().dd533318,
-                S = s().dc20d918,
-                C = s().af7d89e6,
-                v = s().d9138166,
-                w = s().fcb6a5b8,
-                L = s().j018f2a2,
-                I = { page: "settings", section: "location_information" };
-            function k({ allowLocationHistoryUseEnabled: e, createLocalApiErrorHandler: t, location: n, updateSettings: l, viewerUser: s }) {
-                const p = (0, f.Z)(),
-                    { featureSwitches: b } = a.useContext(o.rC),
-                    E = !!s?.birthdate && (0, d.k)(s.birthdate.year, s.birthdate.month, s.birthdate.day),
-                    _ = !s || (b.isTrue("settings_for_you_recommendation_enabled") && E);
-                return a.createElement(
-                    m.nO,
-                    { namespace: I },
-                    a.createElement(
-                        u.Z,
-                        null,
-                        a.createElement(
-                            g.Z,
-                            { location: n, screenType: "secondaryDetail", title: Z },
-                            a.createElement(r.Z, { description: h }),
-                            _
-                                ? null
-                                : a.createElement(i.Z, {
-                                      checked: e,
-                                      helpText: C,
-                                      label: S,
-                                      name: "allowLocationHistoryUse",
-                                      onChange: function (e, n) {
-                                          p.scribe({ ...I, element: e, action: n ? "enable" : "disable" }), l({ [e]: n }).catch(t());
-                                      },
-                                  }),
-                            a.createElement(c.Z, { label: v, link: "/settings/your_twitter_data/locations" }),
-                            a.createElement(c.Z, { label: w, link: "/settings/location" }),
-                            a.createElement(c.Z, { label: L, link: "/settings/explore" }),
-                        ),
-                    ),
-                );
-            }
-            const A = y(k);
+            const B = Z(q);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-32bb1570.9f0928da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-32bb1570.2dd257aa.js.map

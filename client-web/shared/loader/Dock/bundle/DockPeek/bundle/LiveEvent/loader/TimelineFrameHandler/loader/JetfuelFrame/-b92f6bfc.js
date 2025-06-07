@@ -4,7 +4,7 @@
     {
         907490: (r, a, e) => {
             e.d(a, { r: () => j });
-            var o = e(798324);
+            var o = e(752659);
             const t = {
                     black: { "": "rgba(0, 0, 0, var(--jbgo))" },
                     white: { "": "rgba(255, 255, 255, var(--jbgo))" },
@@ -52,7 +52,7 @@
                     for (let r = 0; r < 105; r += 5) n(`opacity-${r}`, (a) => (a.opacity = "" + r / 100)), n(`bg-opacity-${r}`, (a) => (a["--jbgo"] = "" + r / 100)), n(`border-opacity-${r}`, (a) => (a["--jbo"] = "" + r / 100));
                     for (const r of [
                         ["-none", 0],
-                        ["-xs", 1],
+                        ["-xs", 0.5],
                         ["-sm", 1],
                         ["", 2],
                         ["-md", 2],
@@ -146,7 +146,7 @@
                                         n(t, (r) => (r["background-color"] = `${e[o]}`));
                                         break;
                                     case "border":
-                                        n(t, (r) => (r["border-color"] = `${e[o]}`));
+                                        n(t, (r) => (r["border-color"] = `${e[o]?.replace("--jbgo", "--jbo")}`));
                                 }
                             }
                         }
@@ -227,33 +227,39 @@
                                 }
                             }
                         }
-                    return (
-                        n("break-normal", (r) => {
-                            (r["overflow-wrap"] = "normal"), (r["word-break"] = "normal");
-                        }),
+                    n("break-normal", (r) => {
+                        (r["overflow-wrap"] = "normal"), (r["word-break"] = "normal");
+                    }),
                         n("break-words", (r) => (r["overflow-wrap"] = "break-word")),
                         n("break-all", (r) => (r["word-break"] = "break-all")),
                         n("break-keep", (r) => (r["word-break"] = "keep-all")),
-                        r
-                    );
+                        n("transition-all", (r) => (r["transition-property"] = "all")),
+                        n("transition-colors", (r) => (r["transition-property"] = "background-color, color")),
+                        n("transition-opacity", (r) => (r["transition-property"] = "opacity")),
+                        n("transition-shadow", (r) => (r["transition-property"] = "box-shadow")),
+                        n("transition-transform", (r) => (r["transition-property"] = "transform"));
+                    for (const r of [75, 100, 150, 200, 300, 500, 700, 1e3]) n(`duration-${r}`, (a) => (a["transition-duration"] = `${r}ms`));
+                    n("ease-linear", (r) => (r["transition-timing-function"] = "linear")), n("ease-in", (r) => (r["transition-timing-function"] = "ease-in")), n("ease-out", (r) => (r["transition-timing-function"] = "ease-out")), n("ease-in-out", (r) => (r["transition-timing-function"] = "ease-in-out"));
+                    for (let r = 0; r <= 150; r += 5) n(`scale-${r}`, (a) => (a.transform = `scale(${r / 100})`)), n(`scale-x-${r}`, (a) => (a.transform = `scaleX(${r / 100})`)), n(`scale-y-${r}`, (a) => (a.transform = `scaleY(${r / 100})`));
+                    return n("outline-none", (r) => (r["outline-style"] = "none")), r;
                 })(),
                 b = { 11: "dark", 12: "light", 13: "dim" },
                 n = { 1: "hover", 2: "focus", 3: "active", 4: ":selected" },
                 i = { 33: "dark:hover", 34: "light:hover" },
-                l = { 28: "@media only screen and (max-width: 600px)", 29: "@media only screen and (min-width: 600px)", 30: "@media only screen and (min-width: 768px)", 31: "@media only screen and (min-width: 992px)", 32: "@media only screen and (min-width: 1200px)" },
-                s = (r) =>
+                s = { 28: "@media only screen and (max-width: 600px)", 29: "@media only screen and (min-width: 600px)", 30: "@media only screen and (min-width: 768px)", 31: "@media only screen and (min-width: 992px)", 32: "@media only screen and (min-width: 1200px)" },
+                l = (r) =>
                     Object.entries(r)
                         .map(([r, a]) => `${r}:${a}`)
                         .join(";"),
                 d = ([r, a]) => {
                     const e = {};
-                    if ((g.get(a)?.(e), r in b)) return `[data-theme="${b[r]}"] .jetfuel-style-root .j${a.toString(36)}${r}{${s(e)}}`;
-                    if (r in n) return `.jetfuel-style-root .j${a.toString(36)}${r}:${n[r]}{${s(e)}}`;
+                    if ((g.get(a)?.(e), r in b)) return `[data-theme="${b[r]}"] .jetfuel-style-root .j${a.toString(36)}${r}{${l(e)}}`;
+                    if (r in n) return `.jetfuel-style-root .j${a.toString(36)}${r}:${n[r]}{${l(e)}}`;
                     if (r in i) {
                         const [o, t] = i[r]?.split(":") ?? [];
-                        return o && t ? `[data-theme="${o}"] .jetfuel-style-root .j${a.toString(36)}${r}:${t}{${s(e)}}` : "";
+                        return o && t ? `[data-theme="${o}"] .jetfuel-style-root .j${a.toString(36)}${r}:${t}{${l(e)}}` : "";
                     }
-                    return r in l ? `${l[r]} { .jetfuel-style-root .j${a.toString(36)}${r}{${s(e)}}}` : `.jetfuel-style-root .j${a.toString(36)}${r}{${s(e)}}`;
+                    return r in s ? `${s[r]} { .jetfuel-style-root .j${a.toString(36)}${r}{${l(e)}}}` : `.jetfuel-style-root .j${a.toString(36)}${r}{${l(e)}}`;
                 },
                 c = new Set(),
                 v = new Set();
@@ -279,22 +285,22 @@
             new Set(), new Set();
         },
         705156: (r, a, e) => {
-            e.d(a, { O: () => Y });
+            e.d(a, { O: () => Q });
             var o = e(552322),
                 t = e(960546),
                 g = e(655419),
                 b = e(736938),
                 n = e(110972),
                 i = e(897531),
-                l = e(746066),
-                s = e(173590),
+                s = e(746066),
+                l = e(173590),
                 d = e(261925),
                 c = e(22588),
                 v = e(166490),
                 j = e(161276),
                 m = e(399762),
-                f = e(631389),
-                u = e(723395),
+                u = e(631389),
+                f = e(723395),
                 p = e(140682),
                 _ = e(315111),
                 h = e(971668),
@@ -325,9 +331,9 @@
                 N = e(472036),
                 H = e(400441),
                 J = e(696281),
-                U = e(798324);
+                U = e(752659);
             const W = {
-                    ActionResponder: l.Z,
+                    ActionResponder: s.Z,
                     AdaptiveView: ar,
                     Button: g.Z,
                     ContextMenu: ar,
@@ -342,7 +348,7 @@
                         return (0, o.jsx)(K, { ...r, desc: "not for render - sth went wrong" });
                     },
                     FocusImage: rr,
-                    Form: s.Z,
+                    Form: l.Z,
                     "Form.AsYouType": rr,
                     "Form.Group": ar,
                     "Form.Group.Reset": ar,
@@ -363,8 +369,8 @@
                     Input: v.Z,
                     "Input.Checkbox": j.Z,
                     "Input.Code": m.Z,
-                    "Input.Multiline": f.Z,
-                    "Input.Option": u.Z,
+                    "Input.Multiline": u.Z,
+                    "Input.Option": f.Z,
                     "Input.Phone": p.Z,
                     "Input.Reset": ar,
                     "Input.Select": _.Z,
@@ -412,11 +418,11 @@
                     "x.com.Video": or,
                     "x.com.WebView": rr,
                 },
-                Q = new Map(Object.entries(W).map(([r, a]) => [(0, U.$3)(r), a])),
-                X = new Map(Object.entries(W).map(([r]) => [(0, U.$3)(r), r])),
-                Y = (r) => (r ? (Q.get(r.type) ?? rr) : rr);
+                X = new Map(Object.entries(W).map(([r, a]) => [(0, U.$3)(r), a])),
+                Y = new Map(Object.entries(W).map(([r]) => [(0, U.$3)(r), r])),
+                Q = (r) => (r ? (X.get(r.type) ?? rr) : rr);
             function K({ el: r, desc: a = "not found - fix it" }) {
-                return (0, o.jsxs)("h3", { children: ["[", X.get(r?.type ?? 0) ?? r?.type ?? "unknown", "]:", a] });
+                return (0, o.jsxs)("h3", { children: ["[", Y.get(r?.type ?? 0) ?? r?.type ?? "unknown", "]:", a] });
             }
             function rr(r) {
                 return (0, o.jsx)(K, { ...r });
@@ -439,24 +445,24 @@
                 b = (r, a) => ({ action: r, ...a });
         },
         424012: (r, a, e) => {
-            var o, t, g, b, n, i, l, s, d, c;
+            var o, t, g, b, n, i, s, l, d, c;
             function v(r) {
-                const [a, e, g, d, c, v, j, m, f, u, p, _, h, w, $, x, k] = r,
+                const [a, e, g, d, c, v, j, m, u, f, p, _, h, w, $, x, k] = r,
                     y = g,
-                    Z = f,
+                    Z = u,
                     S = a({ type: j, props: d(j, y), children: c(y), id: v(Z), extend: v(y) }),
                     I = w({ [n.atom]: _(n.atom, a({ id: Z })), [n.atom_with_root]: _(n.atom_with_root, a({ id: Z, root: y })), [n.bag_key]: _(n.bag_key, a({ id: Z, key: j, root: y })), [n.str_key]: _(n.str_key, a({ id: Z, key: h, root: y })), [n.url_param]: _(n.url_param, a({ id: Z, key: h, root: y })) }),
                     C = a({ ref: I, prop_ref: y, is_default: p }),
                     F = w({ [b.null]: _(b.null, I), [b.set]: _(b.set, $(I, y)), [b.inc]: _(b.inc, $(I, j)), [b.str_append]: _(b.str_append, $(I, h)), [b.list_insert]: _(b.list_insert, x(I, y, v(j))), [b.list_remove]: _(b.list_remove, $(I, y)), [b.toggle]: _(b.toggle, $(I, v($(y, y)))), [b.merge_bag]: _(b.merge_bag, $(I, y)), [b.merge_str_dict]: _(b.merge_str_dict, $(I, y)) }),
                     T = w({ [i.page]: _(i.page, a({ url: y, preview: v(y), replace: p })), [i.page_reset_to]: _(i.page_reset_to, a({ url: y, preview: v(y), replace: p })), [i.page_post]: _(i.page_post, a({ url: y, body: v(y), preview: v(y), replace: p })), [i.dismiss]: k([i.dismiss]), [i.link]: _(i.link, a({ url: y })), [i.back]: k([i.back]), [i.back_root]: k([i.back_root]), [i.scroll_top]: k([i.scroll_top]), [i.scroll_bottom]: k([i.scroll_bottom]), [i.scroll_id]: _(i.scroll_id, a({ id: y })) }),
                     R = w((r) => ({ [t.change]: _(t.change, F), [t.confirm]: _(t.confirm, a({ ref: y, action: r, cancel: v(r) })), [t.multi]: _(t.multi, c(r)), [t.post_request]: _(t.post_request, a({ url: y, body: y, complete: v(r), error: v(r), optimistic: v(r) })), [t.haptic]: _(t.haptic, a({ action: r, intensity: j })), [t.present]: _(t.present, a({ ref: y, type: e })), [t.navigate]: _(t.navigate, T), [t.refresh]: _(t.refresh, a({ type: e, id: v(Z) })), [t.cache_clear]: _(t.cache_clear, h), [t.prefetch]: _(t.prefetch, a({ urls: c(h), priority: e })), [t.scribe]: _(t.scribe, y), [t.system]: _(t.system, a({ type: e, ref: y })), [t.delayed]: _(t.delayed, a({ action: r, delaySeconds: j })), [t.auth]: _(t.auth, a({ data: h, secret: h, knownDeviceToken: h })) })),
-                    P = w((r) => ({ [l.null]: _(l.null, a({ ref: I })), [l.not_null]: _(l.not_null, a({ ref: I })), [l.is]: _(l.is, a({ ref: I, value: y })), [l.is_not]: _(l.is_not, a({ ref: I, value: y })), [l.in]: _(l.in, a({ ref: I, value: c(y) })), [l.not_in]: _(l.not_in, a({ ref: I, value: c(y) })), [l.gt]: _(l.gt, a({ ref: I, value: y })), [l.gte]: _(l.gte, a({ ref: I, value: y })), [l.lt]: _(l.lt, a({ ref: I, value: y })), [l.lte]: _(l.lte, a({ ref: I, value: y })), [l.starts_with]: _(l.starts_with, a({ ref: I, value: h })), [l.ends_with]: _(l.ends_with, a({ ref: I, value: h })), [l.includes]: _(l.includes, a({ ref: I, value: h })), [l.and]: _(l.and, $(r, r)), [l.or]: _(l.or, $(r, r)), [l.not]: _(l.not, r) })),
+                    P = w((r) => ({ [s.null]: _(s.null, a({ ref: I })), [s.not_null]: _(s.not_null, a({ ref: I })), [s.is]: _(s.is, a({ ref: I, value: y })), [s.is_not]: _(s.is_not, a({ ref: I, value: y })), [s.in]: _(s.in, a({ ref: I, value: c(y) })), [s.not_in]: _(s.not_in, a({ ref: I, value: c(y) })), [s.gt]: _(s.gt, a({ ref: I, value: y })), [s.gte]: _(s.gte, a({ ref: I, value: y })), [s.lt]: _(s.lt, a({ ref: I, value: y })), [s.lte]: _(s.lte, a({ ref: I, value: y })), [s.starts_with]: _(s.starts_with, a({ ref: I, value: h })), [s.ends_with]: _(s.ends_with, a({ ref: I, value: h })), [s.includes]: _(s.includes, a({ ref: I, value: h })), [s.and]: _(s.and, $(r, r)), [s.or]: _(s.or, $(r, r)), [s.not]: _(s.not, r) })),
                     M = c(c(m)),
                     O = c(x(e, h, v(h))),
-                    V = w({ [o.str]: _(o.str, h), [o.int]: _(o.int, m), [o.mods]: _(o.mods, M), [o.conditional_mods]: _(o.conditional_mods, c($(M, P))), [o.id]: _(o.id, Z), [o.f64]: _(o.f64, u), [o.bool]: _(o.bool, p), [o.element]: _(o.element, y), [o.elements]: _(o.elements, c(y)), [o.enum]: _(o.enum, g), [o.url]: _(o.url, h), [o.rich_text]: _(o.rich_text, O), [o.date]: _(o.date, f), [o.scribe]: _(o.scribe, y), [o.bag]: _(o.bag, d(j, y)), [o.str_dict]: _(o.str_dict, d(h, h)), [o.atom]: _(o.atom, C), [o.action]: _(o.action, R), [o.list]: _(o.list, c(y)), [o.predicate]: _(o.predicate, P), [o.feed]: _(o.feed, c(y)), [o.str_list]: _(o.str_list, c(h)), [o.int_list]: _(o.int_list, c(m)), [o.f64_list]: _(o.f64_list, c(u)), [o.bool_list]: _(o.bool_list, c(p)), [o.__notfound]: _(o.__notfound, k(void 0)) }),
+                    V = w({ [o.str]: _(o.str, h), [o.int]: _(o.int, m), [o.mods]: _(o.mods, M), [o.conditional_mods]: _(o.conditional_mods, c($(M, P))), [o.id]: _(o.id, Z), [o.f64]: _(o.f64, f), [o.bool]: _(o.bool, p), [o.element]: _(o.element, y), [o.elements]: _(o.elements, c(y)), [o.enum]: _(o.enum, g), [o.url]: _(o.url, h), [o.rich_text]: _(o.rich_text, O), [o.date]: _(o.date, u), [o.scribe]: _(o.scribe, y), [o.bag]: _(o.bag, d(j, y)), [o.str_dict]: _(o.str_dict, d(h, h)), [o.atom]: _(o.atom, C), [o.action]: _(o.action, R), [o.list]: _(o.list, c(y)), [o.predicate]: _(o.predicate, P), [o.feed]: _(o.feed, c(y)), [o.str_list]: _(o.str_list, c(h)), [o.int_list]: _(o.int_list, c(m)), [o.f64_list]: _(o.f64_list, c(f)), [o.bool_list]: _(o.bool_list, c(p)), [o.__notfound]: _(o.__notfound, k(void 0)) }),
                     E = a({ els: c(S), props: c(V), ts: m }),
                     D = a({ ref: y, t: v(m) });
-                return w({ [s.dom_data]: _(s.dom_data, E), [s.dom_ready]: _(s.dom_ready, D), [s.action]: _(s.action, R) });
+                return w({ [l.dom_data]: _(l.dom_data, E), [l.dom_ready]: _(l.dom_ready, D), [l.action]: _(l.action, R) });
             }
             function j() {
                 const r = (r) => r.uint(),
@@ -541,7 +547,7 @@
                     uint: t,
                 };
             }
-            e.d(a, { J: () => i, RB: () => l, ZI: () => s, _I: () => o, ai: () => d, aw: () => b, fx: () => n, je: () => t, r1: () => m, xv: () => j }),
+            e.d(a, { J: () => i, RB: () => s, ZI: () => l, _I: () => o, ai: () => d, aw: () => b, fx: () => n, je: () => t, r1: () => m, xv: () => j }),
                 (function (r) {
                     (r[(r.str = 0)] = "str"), (r[(r.int = 1)] = "int"), (r[(r.mods = 3)] = "mods"), (r[(r.id = 4)] = "id"), (r[(r.f64 = 5)] = "f64"), (r[(r.bool = 6)] = "bool"), (r[(r.element = 7)] = "element"), (r[(r.elements = 8)] = "elements"), (r[(r.enum = 10)] = "enum"), (r[(r.url = 11)] = "url"), (r[(r.rich_text = 12)] = "rich_text"), (r[(r.date = 14)] = "date"), (r[(r.scribe = 15)] = "scribe"), (r[(r.bag = 16)] = "bag"), (r[(r.str_dict = 17)] = "str_dict"), (r[(r.atom = 18)] = "atom"), (r[(r.action = 19)] = "action"), (r[(r.list = 21)] = "list"), (r[(r.predicate = 22)] = "predicate"), (r[(r.feed = 24)] = "feed"), (r[(r.conditional_mods = 25)] = "conditional_mods"), (r[(r.str_list = 26)] = "str_list"), (r[(r.int_list = 27)] = "int_list"), (r[(r.f64_list = 28)] = "f64_list"), (r[(r.bool_list = 29)] = "bool_list"), (r[(r.__notfound = 13)] = "__notfound");
                 })(o || (o = {})),
@@ -562,10 +568,10 @@
                 })(i || (i = {})),
                 (function (r) {
                     (r[(r.null = 0)] = "null"), (r[(r.is = 1)] = "is"), (r[(r.is_not = 2)] = "is_not"), (r[(r.in = 3)] = "in"), (r[(r.not_in = 4)] = "not_in"), (r[(r.gt = 5)] = "gt"), (r[(r.gte = 6)] = "gte"), (r[(r.lt = 7)] = "lt"), (r[(r.lte = 8)] = "lte"), (r[(r.starts_with = 9)] = "starts_with"), (r[(r.ends_with = 10)] = "ends_with"), (r[(r.includes = 11)] = "includes"), (r[(r.and = 12)] = "and"), (r[(r.or = 13)] = "or"), (r[(r.not = 14)] = "not"), (r[(r.not_null = 15)] = "not_null");
-                })(l || (l = {})),
+                })(s || (s = {})),
                 (function (r) {
                     (r[(r.dom_data = 0)] = "dom_data"), (r[(r.dom_ready = 1)] = "dom_ready"), (r[(r.action = 2)] = "action");
-                })(s || (s = {})),
+                })(l || (l = {})),
                 (function (r) {
                     (r[(r.sheet = 0)] = "sheet"), (r[(r.menu = 1)] = "menu"), (r[(r.toast = 2)] = "toast"), (r[(r.full_screen = 3)] = "full_screen"), (r[(r.popover = 4)] = "popover"), (r[(r.modal = 5)] = "modal"), (r[(r.drawer_right = 6)] = "drawer_right"), (r[(r.drawer_left = 7)] = "drawer_left"), (r[(r.docked_bottom = 8)] = "docked_bottom"), (r[(r.docked_top = 9)] = "docked_top"), (r[(r.share_pane = 10)] = "share_pane");
                 })(d || (d = {})),
@@ -629,4 +635,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-b92f6bfc.e6dd1f6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-b92f6bfc.cffcf2ba.js.map

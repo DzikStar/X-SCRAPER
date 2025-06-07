@@ -363,22 +363,22 @@
                 return a.createElement("g", null, a.createElement("foreignObject", { height: i, width: i, x: t - 8, y: n - 8 }, a.createElement(l.Z, { style: [H.dotContainer, { width: i, height: i }] }, a.createElement(l.Z, { style: [H.dot, { backgroundColor: e, width: 8, height: 8 }] }), a.createElement(l.Z, { style: H.pulseContainer }, a.createElement(l.Z, { style: [H.pulse, { backgroundColor: c.Z.hexToCss(e, 0.5) }] })))));
             }
             const H = o.default.create((e) => ({ dotContainer: { position: "relative", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", height: "100%" }, dot: { borderRadius: e.borderRadii.infinite }, pulseContainer: { position: "absolute", top: 0, start: 0, end: 0, bottom: 0, borderRadius: e.borderRadii.infinite, display: "flex", alignItems: "center", justifyContent: "center", width: "100%", height: "100%" }, pulse: { borderRadius: e.borderRadii.infinite, animationDuration: "1s", animationTimingFunction: "linear", animationIterationCount: "infinite", animationFillMode: "forwards", animationDelay: "0s", width: "100%", height: "100%", animationKeyframes: [{ "0%": { transform: "scale(0)", opacity: 1 } }, { "95%": { transform: "scale(1)", opacity: 1 } }, { "100%": { transform: "scale(1)", opacity: 0 } }] } })),
-                A = "news-sentiment-recharts";
-            function q({ chartData: e, isBlurred: t, question: n, typeMetadata: i }) {
+                q = "news-sentiment-recharts";
+            function A({ chartData: e, isBlurred: t, question: n, typeMetadata: i }) {
                 const r = (0, p.Z)(),
                     { sentimentScores: d } = k({ chartData: e, typeMetadata: i }),
                     [u, m] = a.useState({}),
                     y = `line-chart-${Object.keys(u).join("-")}`,
                     g = t ? 100 : 200;
                 (0, P.q)(() => {
-                    if (document.getElementById(A)) return;
+                    if (document.getElementById(q)) return;
                     const e = document.createElement("style");
-                    e.setAttribute("id", A), (e.textContent = `\n      .${A} .recharts-responsive-container {\n        width: 102% !important;\n      }\n\n      .${A} .recharts-surface {\n        overflow: visible;\n      }\n    `);
+                    e.setAttribute("id", q), (e.textContent = `\n      .${q} .recharts-responsive-container {\n        width: 102% !important;\n      }\n\n      .${q} .recharts-surface {\n        overflow: visible;\n      }\n    `);
                     const t = document.head;
                     return (
                         t && t.appendChild(e),
                         () => {
-                            const e = document.getElementById(A);
+                            const e = document.getElementById(q);
                             e && e.remove();
                         }
                     );
@@ -408,7 +408,7 @@
                         { style: M.lineChart },
                         a.createElement(
                             z.Z,
-                            { className: A },
+                            { className: q },
                             a.createElement(
                                 E.h,
                                 { height: g },
@@ -456,30 +456,10 @@
                         const t = `https://x.com/i/news/article/${e}`;
                         m.ZP.isTwitterApp() ? (window.location.href = `https://x.com/compose/tweet?text=${t}`) : b.push({ pathname: "/compose/post", query: { text: t } }), f.scribe({ element: "share_news_article_sentiment", action: "click", data: { event_info: e } });
                     }, [f, e, b]);
-                return w.length ? (d ? a.createElement(x, { articleId: e, chartData: w, containerStyle: t, hoveredStyle: n, onClick: o, question: c.question, size: u, style: h, typeMetadata: _ }) : a.createElement(l.Z, { style: [J.container, h] }, a.createElement(l.Z, { style: J.headerContainer }, a.createElement(l.Z, { style: J.questionContainer }, a.createElement(l.Z, { style: J.titleContainer }, a.createElement(s.ZP, { style: J.title, weight: "bold" }, j), a.createElement(r.ZP, { onClick: C, size: "small", type: "primaryFilled" }, V)), a.createElement(s.ZP, { style: J.question }, c.question))), a.createElement(l.Z, { style: J.visibilityContainer }, a.createElement(q, { chartData: w, isBlurred: !k, question: c.question, typeMetadata: _ }), !k && a.createElement(l.Z, { style: J.loggedOutContainer }, a.createElement(r.ZP, { backgroundColor: "gray50", borderColor: "transparent", link: "/login" }, "Login to view"))))) : null;
+                return w.length ? (d ? a.createElement(x, { articleId: e, chartData: w, containerStyle: t, hoveredStyle: n, onClick: o, question: c.question, size: u, style: h, typeMetadata: _ }) : a.createElement(l.Z, { style: [J.container, h] }, a.createElement(l.Z, { style: J.headerContainer }, a.createElement(l.Z, { style: J.questionContainer }, a.createElement(l.Z, { style: J.titleContainer }, a.createElement(s.ZP, { style: J.title, weight: "bold" }, j), a.createElement(r.ZP, { onClick: C, size: "small", type: "primaryFilled" }, V)), a.createElement(s.ZP, { style: J.question }, c.question))), a.createElement(l.Z, { style: J.visibilityContainer }, a.createElement(A, { chartData: w, isBlurred: !k, question: c.question, typeMetadata: _ }), !k && a.createElement(l.Z, { style: J.loggedOutContainer }, a.createElement(r.ZP, { backgroundColor: "gray50", borderColor: "transparent", link: "/login" }, "Login to view"))))) : null;
             }
             const J = o.default.create((e) => ({ container: { width: "100%", padding: e.spaces.space16, backgroundColor: e.colors.gray0, transition: "background-color 0.2s ease", borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray200 }, hoveredContainer: { backgroundColor: e.colors.gray400, cursor: "pointer" }, headerContainer: { display: "flex", flexDirection: "row", width: "100%", gap: e.spaces.space16 }, questionContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8, width: "100%" }, titleContainer: { display: "flex", flexDirection: "row", flex: 1, justifyContent: "space-between", alignItems: "center" }, title: {}, question: {}, visibilityContainer: { position: "relative" }, loggedOutContainer: { position: "absolute", start: 0, top: 0, width: "100%", height: "100%", backgroundColor: c.Z.hexToCss(e.colors.gray0, 0.5), display: "flex", justifyContent: "center", alignItems: "center" } }));
         },
-        840489: (e, t, n) => {
-            function a(e) {
-                var t,
-                    n,
-                    l = "";
-                if ("string" == typeof e || "number" == typeof e) l += e;
-                else if ("object" == typeof e)
-                    if (Array.isArray(e)) {
-                        var i = e.length;
-                        for (t = 0; t < i; t++) e[t] && (n = a(e[t])) && (l && (l += " "), (l += n));
-                    } else for (n in e) e[n] && (l && (l += " "), (l += n));
-                return l;
-            }
-            function l() {
-                for (var e, t, n = 0, l = "", i = arguments.length; n < i; n++) (e = arguments[n]) && (t = a(e)) && (l && (l += " "), (l += t));
-                return l;
-            }
-            n.d(t, { W: () => l, Z: () => i });
-            const i = l;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.NewsSentimentSidebar.3bfee47a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.NewsSentimentSidebar.3903b60a.js.map

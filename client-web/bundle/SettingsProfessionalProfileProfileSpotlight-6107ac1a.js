@@ -2,14 +2,14 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.SettingsProfessionalProfileProfileSpotlight-6107ac1a"],
     {
-        184329: (l, e, a) => {
-            a.d(e, { Z: () => b });
-            var n,
+        184329: (l, e, n) => {
+            n.d(e, { Z: () => b });
+            var a,
                 i,
                 s,
                 r,
-                u,
                 t,
+                u,
                 o,
                 d,
                 c,
@@ -23,7 +23,7 @@
                 _,
                 S = {
                     fragment: {
-                        argumentDefinitions: (n = [{ defaultValue: null, kind: "LocalArgument", name: "userId" }]),
+                        argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "userId" }]),
                         kind: "Fragment",
                         metadata: null,
                         name: "ProfileSpotlights_EditableProfileSpotlightsQuery",
@@ -48,7 +48,7 @@
                                         plural: !1,
                                         selections: [
                                             { args: null, kind: "FragmentSpread", name: "SpotlightConfigRowV2_user" },
-                                            { kind: "InlineFragment", selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { alias: null, args: null, concreteType: "UserBusinessEditableModules", kind: "LinkedField", name: "editable_profilemodules", plural: !1, selections: [(t = { alias: null, args: null, concreteType: "ModuleForDisplay", kind: "LinkedField", name: "modules_for_display", plural: !0, selections: (u = [(r = { alias: null, args: null, kind: "ScalarField", name: "module_id", storageKey: null })]), storageKey: null }), { alias: null, args: null, concreteType: "UserBusinessConfigurableModuleV1", kind: "LinkedField", name: "configurable_modules_v1", plural: !0, selections: [(o = { alias: null, args: null, kind: "ScalarField", name: "module_type", storageKey: null }), { alias: null, args: null, concreteType: "UserBusinessEditableModuleV1", kind: "LinkedField", name: "module_data", plural: !1, selections: u, storageKey: null }, { args: null, kind: "FragmentSpread", name: "SpotlightConfigRowV1_configurableModule" }, { args: null, kind: "FragmentSpread", name: "SpotlightConfigRowV2_configurableModule" }], storageKey: null }], storageKey: null }], type: "User", abstractKey: null },
+                                            { kind: "InlineFragment", selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { alias: null, args: null, concreteType: "UserBusinessEditableModules", kind: "LinkedField", name: "editable_profilemodules", plural: !1, selections: [(u = { alias: null, args: null, concreteType: "ModuleForDisplay", kind: "LinkedField", name: "modules_for_display", plural: !0, selections: (t = [(r = { alias: null, args: null, kind: "ScalarField", name: "module_id", storageKey: null })]), storageKey: null }), { alias: null, args: null, concreteType: "UserBusinessConfigurableModuleV1", kind: "LinkedField", name: "configurable_modules_v1", plural: !0, selections: [(o = { alias: null, args: null, kind: "ScalarField", name: "module_type", storageKey: null }), { alias: null, args: null, concreteType: "UserBusinessEditableModuleV1", kind: "LinkedField", name: "module_data", plural: !1, selections: t, storageKey: null }, { args: null, kind: "FragmentSpread", name: "SpotlightConfigRowV1_configurableModule" }, { args: null, kind: "FragmentSpread", name: "SpotlightConfigRowV2_configurableModule" }], storageKey: null }], storageKey: null }], type: "User", abstractKey: null },
                                         ],
                                         storageKey: null,
                                     },
@@ -61,7 +61,7 @@
                     },
                     kind: "Request",
                     operation: {
-                        argumentDefinitions: n,
+                        argumentDefinitions: a,
                         kind: "Operation",
                         name: "ProfileSpotlights_EditableProfileSpotlightsQuery",
                         selections: [
@@ -115,7 +115,7 @@
                                                         name: "editable_profilemodules",
                                                         plural: !1,
                                                         selections: [
-                                                            t,
+                                                            u,
                                                             {
                                                                 alias: null,
                                                                 args: null,
@@ -520,9 +520,9 @@
             S.hash = "3cad100e92f949908a6299b2d5ae6046";
             const b = S;
         },
-        83005: (l, e, a) => {
-            a.d(e, { Z: () => i });
-            var n = {
+        83005: (l, e, n) => {
+            n.d(e, { Z: () => i });
+            var a = {
                 argumentDefinitions: [],
                 kind: "Fragment",
                 metadata: null,
@@ -537,11 +537,11 @@
                 abstractKey: null,
                 hash: "834b9812167a8e580a8b9bffcaf38c6e",
             };
-            const i = n;
+            const i = a;
         },
-        285485: (l, e, a) => {
-            a.d(e, { Z: () => i });
-            var n = {
+        285485: (l, e, n) => {
+            n.d(e, { Z: () => i });
+            var a = {
                 argumentDefinitions: [],
                 kind: "Fragment",
                 metadata: null,
@@ -568,21 +568,21 @@
                 abstractKey: null,
                 hash: "ddbe3f95ac7a3a07ed8aac1c883f7856",
             };
-            const i = n;
+            const i = a;
         },
-        273086: (l, e, a) => {
-            a.d(e, { Z: () => i });
-            var n = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "SpotlightConfigRowV2_user", selections: [{ args: null, kind: "FragmentSpread", name: "ProfileSpotlight_user" }], type: "User", abstractKey: null, hash: "fd5f67b6d5d2a899683b04468f165acc" };
-            const i = n;
+        273086: (l, e, n) => {
+            n.d(e, { Z: () => i });
+            var a = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "SpotlightConfigRowV2_user", selections: [{ args: null, kind: "FragmentSpread", name: "ProfileSpotlight_user" }], type: "User", abstractKey: null, hash: "fd5f67b6d5d2a899683b04468f165acc" };
+            const i = a;
         },
-        265433: (l, e, a) => {
-            a.d(e, { Z: () => _ });
-            var n,
+        265433: (l, e, n) => {
+            n.d(e, { Z: () => _ });
+            var a,
                 i,
                 s,
                 r,
-                u,
                 t,
+                u,
                 o,
                 d,
                 c,
@@ -594,7 +594,7 @@
                 F,
                 K = {
                     fragment: {
-                        argumentDefinitions: [(n = { defaultValue: null, kind: "LocalArgument", name: "enabled_for_display" }), (i = { defaultValue: null, kind: "LocalArgument", name: "module_id" })],
+                        argumentDefinitions: [(a = { defaultValue: null, kind: "LocalArgument", name: "enabled_for_display" }), (i = { defaultValue: null, kind: "LocalArgument", name: "module_id" })],
                         kind: "Fragment",
                         metadata: null,
                         name: "UpdateProfileSpotlightVisibilityMutation",
@@ -644,7 +644,7 @@
                     },
                     kind: "Request",
                     operation: {
-                        argumentDefinitions: [i, n],
+                        argumentDefinitions: [i, a],
                         kind: "Operation",
                         name: "UpdateProfileSpotlightVisibilityMutation",
                         selections: [
@@ -672,7 +672,7 @@
                                                 name: "result",
                                                 plural: !1,
                                                 selections: [
-                                                    (u = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                                    (t = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
                                                     {
                                                         kind: "InlineFragment",
                                                         selections: [
@@ -694,7 +694,7 @@
                                                                 ],
                                                                 storageKey: null,
                                                             },
-                                                            (t = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
+                                                            (u = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
                                                             { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [(o = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "is_verified_organization", storageKey: null },
                                                             {
@@ -721,7 +721,7 @@
                                                                                 name: "profile_module",
                                                                                 plural: !1,
                                                                                 selections: [
-                                                                                    u,
+                                                                                    t,
                                                                                     { kind: "TypeDiscriminator", abstractKey: "__isProfileModule" },
                                                                                     {
                                                                                         kind: "InlineFragment",
@@ -842,7 +842,7 @@
                                                                                                         name: "items",
                                                                                                         plural: !0,
                                                                                                         selections: [
-                                                                                                            u,
+                                                                                                            t,
                                                                                                             {
                                                                                                                 kind: "InlineFragment",
                                                                                                                 selections: [
@@ -862,7 +862,7 @@
                                                                                                                                 name: "product_details",
                                                                                                                                 plural: !1,
                                                                                                                                 selections: [
-                                                                                                                                    { alias: null, args: null, concreteType: "ApiMedia", kind: "LinkedField", name: "cover_media", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "media_info", plural: !1, selections: [u, { kind: "InlineFragment", selections: [(g = { alias: null, args: null, kind: "ScalarField", name: "original_img_url", storageKey: null })], type: "ApiImage", abstractKey: null }], storageKey: null }, (y = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], storageKey: null },
+                                                                                                                                    { alias: null, args: null, concreteType: "ApiMedia", kind: "LinkedField", name: "cover_media", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "media_info", plural: !1, selections: [t, { kind: "InlineFragment", selections: [(g = { alias: null, args: null, kind: "ScalarField", name: "original_img_url", storageKey: null })], type: "ApiImage", abstractKey: null }], storageKey: null }, (y = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], storageKey: null },
                                                                                                                                     { alias: null, args: null, concreteType: "ApiShortenedUrl", kind: "LinkedField", name: "external_url", plural: !1, selections: (m = [d]), storageKey: null },
                                                                                                                                     { alias: null, args: null, concreteType: "ApiShortenedUrl", kind: "LinkedField", name: "mobile_url", plural: !1, selections: m, storageKey: null },
                                                                                                                                     (p = {
@@ -943,11 +943,11 @@
                                                                                                                 name: "result",
                                                                                                                 plural: !1,
                                                                                                                 selections: [
-                                                                                                                    u,
+                                                                                                                    t,
                                                                                                                     {
                                                                                                                         kind: "InlineFragment",
                                                                                                                         selections: [
-                                                                                                                            { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "members_facepile_results", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [u, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null }, y], type: "User", abstractKey: null }], storageKey: null }, y], storageKey: null },
+                                                                                                                            { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "members_facepile_results", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null }, y], type: "User", abstractKey: null }], storageKey: null }, y], storageKey: null },
                                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "member_count", storageKey: null },
                                                                                                                             {
                                                                                                                                 alias: null,
@@ -965,7 +965,7 @@
                                                                                                                                         name: "media_info",
                                                                                                                                         plural: !1,
                                                                                                                                         selections: [
-                                                                                                                                            u,
+                                                                                                                                            t,
                                                                                                                                             {
                                                                                                                                                 kind: "InlineFragment",
                                                                                                                                                 selections: [
@@ -1038,7 +1038,7 @@
                                                                                                                             { alias: null, args: null, concreteType: "ApiMedia", kind: "LinkedField", name: "custom_banner_media", plural: !1, selections: F, storageKey: null },
                                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
                                                                                                                             o,
-                                                                                                                            t,
+                                                                                                                            u,
                                                                                                                             y,
                                                                                                                         ],
                                                                                                                         type: "Community",
@@ -1062,7 +1062,7 @@
                                                                                         kind: "InlineFragment",
                                                                                         selections: [
                                                                                             { alias: null, args: null, concreteType: "JobsModuleConfig", kind: "LinkedField", name: "config", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "show_more_jobs", storageKey: null }], storageKey: null },
-                                                                                            { alias: null, args: null, concreteType: "JobsModuleData", kind: "LinkedField", name: "data", plural: !1, selections: [{ alias: null, args: null, concreteType: "ApiJobResults", kind: "LinkedField", name: "featured_jobs_results", plural: !0, selections: [t, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [u, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "JobCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "formatted_salary", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "location", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "redirect_url", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_currency_code", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_interval", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_max", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_min", storageKey: null }, k], storageKey: null }, y], type: "ApiJob", abstractKey: null }], storageKey: null }, y], storageKey: null }], storageKey: null },
+                                                                                            { alias: null, args: null, concreteType: "JobsModuleData", kind: "LinkedField", name: "data", plural: !1, selections: [{ alias: null, args: null, concreteType: "ApiJobResults", kind: "LinkedField", name: "featured_jobs_results", plural: !0, selections: [u, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "JobCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "formatted_salary", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "location", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "redirect_url", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_currency_code", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_interval", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_max", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_min", storageKey: null }, k], storageKey: null }, y], type: "ApiJob", abstractKey: null }], storageKey: null }, y], storageKey: null }], storageKey: null },
                                                                                         ],
                                                                                         type: "JobsModule",
                                                                                         abstractKey: null,
@@ -1099,17 +1099,60 @@
             K.hash = "cedd98de922edbfcd091c67171c43f7a";
             const _ = K;
         },
-        98538: (l, e, a) => {
-            a.d(e, { Z: () => y });
-            var n = a(202784),
-                i = a(325686),
-                s = a(731708),
-                r = a(891198),
-                u = a(280278),
-                t = a(392237);
+        625661: (l, e, n) => {
+            n.d(e, { ZP: () => g });
+            var a = n(202784),
+                i = n(614983),
+                s = n.n(i),
+                r = n(325686),
+                t = n(370006),
+                u = n(786998),
+                o = n(929028),
+                d = n(386802);
+            function c(l, e, n) {
+                return l || (!e && n ? "fixed" : void 0);
+            }
+            class g extends a.Component {
+                constructor(...l) {
+                    super(...l),
+                        (this._handleBackClick = () => {
+                            const { history: l, onBackClick: e } = this.props;
+                            s()(e || l, "Either onBackClick must be specified, or history should be supplied"), e ? e(this.goBack) : this.goBack();
+                        }),
+                        (this.goBack = () => {
+                            const { backLocation: l, history: e } = this.props;
+                            e && e.goBack({ backLocation: l });
+                        });
+                }
+                _renderContent() {
+                    const { backButtonType: l, centerTitle: e, centeredLogo: n, fixed: i, hideBackButton: s, isFullWidth: r, isLarge: o, leftControl: d, middleControl: g, position: y, rightControl: m, secondaryBar: p, style: k, subtitle: F, title: K, titleDomId: _, titleIconCell: S, titleIconCellSize: b, withBackground: L, withWideContainer: f } = this.props,
+                        { isModal: T } = this.context,
+                        h = s ? d : a.createElement(t.Z, { backButtonType: l, onClick: this._handleBackClick }),
+                        C = (function (l, e, n) {
+                            return l && !(e && n);
+                        })(!!L, T, !!p);
+                    return a.createElement(a.Fragment, null, a.createElement(u.Z, { centerTitle: e, centeredLogo: n, isFullWidth: r, isLarge: o, leftControl: h, middleControl: g, position: c(y, T, i), rightControl: m, style: k, subtitle: F, title: K, titleDomId: _, titleIconCell: S, titleIconCellSize: b, withBackground: C, withWideContainer: f }), p || null);
+                }
+                render() {
+                    const { secondaryBar: l } = this.props,
+                        { isModal: e } = this.context,
+                        n = o.Z.getBackgroundStyles();
+                    return e ? a.createElement(r.Z, { style: !!l && n }, this._renderContent()) : this._renderContent();
+                }
+            }
+            (g.contextType = d.Z), (g.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
+        },
+        98538: (l, e, n) => {
+            n.d(e, { Z: () => y });
+            var a = n(202784),
+                i = n(325686),
+                s = n(731708),
+                r = n(891198),
+                t = n(280278),
+                u = n(392237);
             const o = "subtext1",
-                d = n.createContext({ onMedia: !1 });
-            class c extends n.Component {
+                d = a.createContext({ onMedia: !1 });
+            class c extends a.Component {
                 constructor(...l) {
                     super(...l),
                         (this._getHoverLabel = () => {
@@ -1119,23 +1162,23 @@
                         });
                 }
                 render() {
-                    const { children: l, link: e, onMedia: a, onPress: i } = this.props;
-                    return n.createElement(s.ZP, { color: a ? "white" : "text", hoverLabel: this._getHoverLabel(), link: e, onClick: i }, n.createElement(d.Provider, { value: { onMedia: a } }, l));
+                    const { children: l, link: e, onMedia: n, onPress: i } = this.props;
+                    return a.createElement(s.ZP, { color: n ? "white" : "text", hoverLabel: this._getHoverLabel(), link: e, onClick: i }, a.createElement(d.Provider, { value: { onMedia: n } }, l));
                 }
             }
             (c.Group = (l) =>
-                n.createElement(
+                a.createElement(
                     i.Z,
                     { style: [g.row, l.style] },
-                    n.Children.toArray(l.children)
+                    a.Children.toArray(l.children)
                         .filter(Boolean)
-                        .map((l, e, a) => n.createElement(i.Z, { key: e, style: e < a.length - 1 && g.groupItemNonLast }, l)),
+                        .map((l, e, n) => a.createElement(i.Z, { key: e, style: e < n.length - 1 && g.groupItemNonLast }, l)),
                 )),
-                (c.Label = ({ children: l, style: e }) => n.createElement(d.Consumer, null, ({ onMedia: a }) => n.createElement(s.ZP, { children: l, color: a ? "white" : "gray700", size: o, style: e }))),
-                (c.Value = ({ animated: l, children: e, count: a, style: i, weight: r = "bold" }) => n.createElement(d.Consumer, null, ({ onMedia: t }) => (l ? n.createElement(u.ZP, { children: e, count: a, size: o, style: i, weight: r }) : n.createElement(s.ZP, { children: e, color: t ? "white" : "text", size: o, style: i, weight: r }))));
-            const g = t.default.create((l) => ({ row: { flexDirection: "row", flexWrap: "wrap", flex: 1 }, groupItemNonLast: { marginEnd: l.spaces.space20 } })),
+                (c.Label = ({ children: l, style: e }) => a.createElement(d.Consumer, null, ({ onMedia: n }) => a.createElement(s.ZP, { children: l, color: n ? "white" : "gray700", size: o, style: e }))),
+                (c.Value = ({ animated: l, children: e, count: n, style: i, weight: r = "bold" }) => a.createElement(d.Consumer, null, ({ onMedia: u }) => (l ? a.createElement(t.ZP, { children: e, count: n, size: o, style: i, weight: r }) : a.createElement(s.ZP, { children: e, color: u ? "white" : "text", size: o, style: i, weight: r }))));
+            const g = u.default.create((l) => ({ row: { flexDirection: "row", flexWrap: "wrap", flex: 1 }, groupItemNonLast: { marginEnd: l.spaces.space20 } })),
                 y = c;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileProfileSpotlight-6107ac1a.8c2aaa3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileProfileSpotlight-6107ac1a.d62b681a.js.map

@@ -1173,7 +1173,6 @@
                 n("c3aa76c4", "Biliyor olabileceğin diller"),
                 n("g099069c", "Takip ettiğin hesaplar ve etkileşim kurduğun gönderiler gibi, etkinliğine göre X'in çıkarımda bulunduğu dilleri yönet."),
                 n("cf9ce876", "Uygulama ve gönderi dilleri"),
-                n("d4372cf4", "English (US), 中文(简体), Español"),
                 n("f8e46b90", "Bunlar, giriş yapmak için X hesabınla ilişkilendirdiğin sosyal medya hesaplarıdır. Erişimi buradan devre dışı bırakabilirsin."),
                 n("d84ed6b2", "Bağlantıyı kes"),
                 n("i51130d4", "Google"),
@@ -1916,9 +1915,9 @@
                 n("a8fdd09c", "Makaleyi Yayınla"),
                 n("d8047cc8", "Yayınla"),
                 n("ff7ddca2", "Makalen yayınlandıktan sonra gönderi olarak görünecek. Ayrıca, profilindeki Makaleler sekmesinde de bulunabilecek."),
-                n("ef34d7be", "Bir makale yayınlandıktan sonra hedef kitle ve yanıt denetimleri düzenlenemez.");
-            n("e52d4998", "Hedef kitleni seç"),
-                n("d7985b24", "Bu makaleye kimlerin yanıt verebileceğini seç"),
+                n("ef34d7be", "Bir makale yayınlandıktan sonra hedef kitle ve yanıt denetimleri düzenlenemez."),
+                n("e52d4998", "Hedef kitleni seç");
+            n("d7985b24", "Bu makaleye kimlerin yanıt verebileceğini seç"),
                 n("b5660338", "Zaman Akışı önizlemesi"),
                 n("hff1b97a", "Yalnızca Aboneler yanıtlayabilir."),
                 n("a330771e", "Bağlantıyı panona kopyala"),
@@ -2972,9 +2971,9 @@
                 n("ce6d095a", "Kariyer"),
                 n("e0adec82", "Marka Kaynakları"),
                 n("df1b7550", "Pazarlama"),
-                n("he258678", "İşletmeler İçin X");
-            n("c6f58084", "Geliştiriciler"),
-                n("d83f18d2", "Dizin"),
+                n("he258678", "İşletmeler İçin X"),
+                n("c6f58084", "Geliştiriciler");
+            n("d83f18d2", "Dizin"),
                 n("hc5aa17c", "X uygulamasını indir"),
                 n("j0693948", "Grok uygulamasını indir"),
                 n("fce9ecce", "Önerilen Videolar"),
@@ -3573,7 +3572,7 @@
                 n("hbe4f99e", "Selam! Seninle gizli içerikler paylaşmak ve seni daha yakından tanımak için sabırsızlanıyorum :)"),
                 n("fb278c82", "Bu önizleme nedir?"),
                 n("j6cab6ec", "İnsanlara sana Abone Olmadan önce bu içerik gösterilir. Açıklamalarını içine sinene kadar değiştirebilir ve düzenleyebilirsin."),
-                n("f2b1e83e", "Grok & Third-Party Collaborators"),
+                n("f2b1e83e", "Grok ve Üçüncü Taraf İş Birlikleri"),
                 n("e110a46c", "Sohbet geçmişini sil"),
                 n("ebc4fda0", "Grok sohbet geçmişini silmek üzeresin. Bu sohbetlere daha sonra erişemeyeceksin."),
                 n("c90fe716", "Sohbetlerini silmek istiyor musun?"),
@@ -3886,11 +3885,11 @@
                 n("ddeb0a3c", "İşte Topluluk. Üyeleri sevdin mi? Haydi bir göz at."),
                 n("e111f531", function (e) {
                     return e.count + " katıldı";
+                }),
+                n("cbef820f", function (e) {
+                    return e.screenName + " yayını yeniden gönderdi.";
                 });
-            n("cbef820f", function (e) {
-                return e.screenName + " yayını yeniden gönderdi.";
-            }),
-                n("e3275464", "Gönder"),
+            n("e3275464", "Gönder"),
                 n("cededf2a", "Yönetici"),
                 n("i2caef48", "Yardımcılar"),
                 n("j245c654", "Konuşmacılar"),
@@ -4924,9 +4923,9 @@
                 n("d9f9dec0", "Sohbet Odasını Görüntüle"),
                 n("h0c1f37a", "Sohbet Odası İstatistiklerini Görüntüle"),
                 n("e41fffbc", "Videolarının toplam izlenme süresi."),
-                n("if2909ba", "İzlenme Süresi");
-            n("i0e5bf4c", "Videoların"),
-                n("ed99baea", "Erken Beta Erişimi"),
+                n("if2909ba", "İzlenme Süresi"),
+                n("i0e5bf4c", "Videoların");
+            n("ed99baea", "Erken Beta Erişimi"),
                 n("gf898b70", "Gelişmiş Arama"),
                 n("d2a43a7a", 'hem "ai" hem de "girişimi" ifadesini içerir'),
                 n("a8584698", "ai girişimi"),
@@ -5509,7 +5508,7 @@
                 n("j6aa6172", "Değerlendirme silinsin mi?"),
                 n("i4112750", "Bu işlem geri alınamaz."),
                 n("i6f6191a", "Teşekkür ederiz!"),
-                n("h5575012", "Agree and submit"),
+                n("h5575012", "Kabul et ve gönder"),
                 n("f9171e52", "Bu gönderi, normal koşullarda aynı fikirde olmayan bazı kişilerden beğeni aldı ancak şu ana kadar giriş sayısı sınırlı."),
                 n("j0f9919a", "Değerlendirmen gönderiyi olumsuz etkilemeyecek ancak geniş kitlelerce beğenilen gönderileri olumlu şekilde belirlemeye yardımcı olabilir."),
                 n("b3af830c", "Girişin:"),
@@ -5529,7 +5528,7 @@
                 n("g0402b3b", "Farklı bakış açılarına sahip kişiler tarafından beğenilen"),
                 n("ged62c2b", "tespit edilmesine"),
                 n("b5d5f7f1", "gidişatını şekillendirir"),
-                n("a42fef87", "Learn more"),
+                n("a42fef87", "Daha fazla bilgi al"),
                 n("bd7eb888", "Bu gönderideki tüm notları gör"),
                 n("i97b83f6", "İtirazın gönderilirken bir sorun oluştu. Lütfen tekrar dene."),
                 n("a038ab9a", "Notu çevir"),
@@ -5880,9 +5879,9 @@
                 n("e41c9b4f", function (e) {
                     return e.bookmarkFolderName + " içeriğine kaydedildi";
                 }),
-                n("h18f86a4", "Klasörü sil");
-            n("f4ea967a", "Klasör silindi"),
-                n("b670aa62", "Klasör Adı"),
+                n("h18f86a4", "Klasörü sil"),
+                n("f4ea967a", "Klasör silindi");
+            n("b670aa62", "Klasör Adı"),
                 n("aece5462", "Klasör adı başarıyla güncellendi"),
                 n("e3299b94", "Bir sorun oluştu. Birkaç dakika içinde bu klasörü güncellemeyi tekrar dene."),
                 n("c09ea714", "Bir sorun oluştu. Birkaç dakika içinde bu klasörü silmeyi tekrar dene."),
@@ -6884,9 +6883,9 @@
                 n("ede7d0a2", "Para birimi"),
                 n("b925c18c", "Maaş Türü"),
                 n("j3d242ce", "Geçersiz aralık"),
-                n("f4d07bd2", "Adayların rollerini aramayla daha kolay bulmasını sağlamak için isteğe bağlı ayrıntılar ekle.");
-            n("b8cbb51a", "İş Özeti"),
-                n("bda6881e", "Bu ilan, senin Başvuru Takip Sisteminden (ATS) içe aktarıldı. Yalnızca belirli alanların değiştirilebileceğini lütfen unutma."),
+                n("f4d07bd2", "Adayların rollerini aramayla daha kolay bulmasını sağlamak için isteğe bağlı ayrıntılar ekle."),
+                n("b8cbb51a", "İş Özeti");
+            n("bda6881e", "Bu ilan, senin Başvuru Takip Sisteminden (ATS) içe aktarıldı. Yalnızca belirli alanların değiştirilebileceğini lütfen unutma."),
                 n("b075c68a", "İlanı düzenle"),
                 n("d4b6a6e0", "Profil Spotlight'ı"),
                 n("j2dd3686", "Öne çıkan iş ilanlarını gönderilerimin üzerinde vurgula."),
@@ -7229,6 +7228,8 @@
                 n("hd80bd3e", "Bir gönderi tanıt"),
                 n("fe2b0008", "X'i nasıl kullanacağını öğren"),
                 n("h257d4aa", "Tanıtmak için bir gönderi seç"),
+                n("e9334fe6", "Data updates every few minutes"),
+                n("a6d7b1d0", "Based on X Internal Data"),
                 n("h9b28dae", "You’re saving time with an ad-free feed"),
                 n("f6c50ec0", "Reklamsız deneme süren sona erdi"),
                 n("e1d1fbca", "You’ve avoided"),
@@ -7863,8 +7864,7 @@
                 n("i5f14be7", function (e) {
                     return "Tekrar hoş geldin, " + e.displayName;
                 }),
-                n("a76d58ba", "Reklam İstatistikleri"),
-                n("eccd0e1a", "Kuruluş İstatistikleri");
+                n("a76d58ba", "Reklam İstatistikleri");
             function l(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var n = a[i];
@@ -7903,7 +7903,8 @@
                     t(e, a)
                 );
             }
-            n("deea1708", "Tüm X hesaplarında istatistikleri görüntülemek ister misin?"),
+            n("eccd0e1a", "Kuruluş İstatistikleri"),
+                n("deea1708", "Tüm X hesaplarında istatistikleri görüntülemek ister misin?"),
                 n("eb603ffc", "Ağını ilişkilendirmek ve toplu istatistikleri görüntülemek için hesabını yükselt."),
                 n("gf67aae4", "Tam Erişime Yükselt"),
                 n("h75e3618", "Kuruluşu dahil et"),
@@ -8901,9 +8902,9 @@
                 n("a6ada13e", "Alışverişe başla"),
                 n("j0f12222", "Daha fazlasını gör"),
                 n("f569f7c8", "İnternet sitesine git"),
-                n("j0c6772a", "İnternet sitesini ziyaret et"),
-                n("f73003aa", "Video reklamdan sonra oynatılacak");
-            n("b3112b8a", "Atla"),
+                n("j0c6772a", "İnternet sitesini ziyaret et");
+            n("f73003aa", "Video reklamdan sonra oynatılacak"),
+                n("b3112b8a", "Atla"),
                 n("h6333ad0", "Reklamı Atla"),
                 n("c59da417", function (e) {
                     return "Reklamı Atla: " + e.seconds;
@@ -11540,7 +11541,7 @@
                         {
                             key: "ffd3d1a1",
                             get: function () {
-                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                                return ["Değerlendirmeler anonimleştirilir ve şeffaflık amacıyla herkese açık hâle getirilir. "];
                             },
                         },
                         {
@@ -13360,4 +13361,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.48a986aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.79ffceda.js.map

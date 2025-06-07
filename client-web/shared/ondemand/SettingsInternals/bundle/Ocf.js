@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~ondemand.SettingsInternals~bundle.Ocf"],
+    ["shared~ondemand.SettingsInternals~bundle.Ocf", "icons/IconEye-js"],
     {
         119146: (e, t, r) => {
             "use strict";
@@ -52,50 +52,6 @@
                 }
             }
             const u = d;
-        },
-        625661: (e, t, r) => {
-            "use strict";
-            r.d(t, { ZP: () => p });
-            var o = r(202784),
-                n = r(614983),
-                s = r.n(n),
-                i = r(325686),
-                a = r(370006),
-                l = r(786998),
-                c = r(929028),
-                d = r(386802);
-            function u(e, t, r) {
-                return e || (!t && r ? "fixed" : void 0);
-            }
-            class p extends o.Component {
-                constructor(...e) {
-                    super(...e),
-                        (this._handleBackClick = () => {
-                            const { history: e, onBackClick: t } = this.props;
-                            s()(t || e, "Either onBackClick must be specified, or history should be supplied"), t ? t(this.goBack) : this.goBack();
-                        }),
-                        (this.goBack = () => {
-                            const { backLocation: e, history: t } = this.props;
-                            t && t.goBack({ backLocation: e });
-                        });
-                }
-                _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: r, fixed: n, hideBackButton: s, isFullWidth: i, isLarge: c, leftControl: d, middleControl: p, position: h, rightControl: f, secondaryBar: g, style: m, subtitle: y, title: b, titleDomId: v, titleIconCell: k, titleIconCellSize: C, withBackground: E, withWideContainer: w } = this.props,
-                        { isModal: x } = this.context,
-                        S = s ? d : o.createElement(a.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        Z = (function (e, t, r) {
-                            return e && !(t && r);
-                        })(!!E, x, !!g);
-                    return o.createElement(o.Fragment, null, o.createElement(l.Z, { centerTitle: t, centeredLogo: r, isFullWidth: i, isLarge: c, leftControl: S, middleControl: p, position: u(h, x, n), rightControl: f, style: m, subtitle: y, title: b, titleDomId: v, titleIconCell: k, titleIconCellSize: C, withBackground: Z, withWideContainer: w }), g || null);
-                }
-                render() {
-                    const { secondaryBar: e } = this.props,
-                        { isModal: t } = this.context,
-                        r = c.Z.getBackgroundStyles();
-                    return t ? o.createElement(i.Z, { style: !!e && r }, this._renderContent()) : this._renderContent();
-                }
-            }
-            (p.contextType = d.Z), (p.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
         414939: (e, t, r) => {
             "use strict";
@@ -150,9 +106,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: r, backLocation: s, centerTitle: i, hideBackButton: a, history: l, isFullWidth: u, isLarge: p, middleControl: h, onBackClick: g, rightControl: m, secondaryBar: y, subtitle: b, title: v } = this.props,
-                                { isModal: k } = this.context;
-                            return o.createElement(n.Z, { style: k ? [f.childViewAppBarRoot, f.appBarZindex] : f.appBarZindex }, o.createElement(d.ZP, { backButtonType: r || (k ? "close" : "back"), backLocation: s, centerTitle: i, fixed: !k, hideBackButton: a, history: l, isFullWidth: u, isLarge: p, middleControl: h, onBackClick: g, ref: e, rightControl: m, secondaryBar: y, style: [k && f.appBarModal, t], subtitle: b, title: v, titleDomId: c.Q_ }));
+                            const { appBarRef: e, appBarStyle: t, backButtonType: r, backLocation: s, centerTitle: i, hideBackButton: a, history: l, isFullWidth: u, isLarge: p, middleControl: h, onBackClick: g, rightControl: m, secondaryBar: b, subtitle: y, title: v } = this.props,
+                                { isModal: E } = this.context;
+                            return o.createElement(n.Z, { style: E ? [f.childViewAppBarRoot, f.appBarZindex] : f.appBarZindex }, o.createElement(d.ZP, { backButtonType: r || (E ? "close" : "back"), backLocation: s, centerTitle: i, fixed: !E, hideBackButton: a, history: l, isFullWidth: u, isLarge: p, middleControl: h, onBackClick: g, ref: e, rightControl: m, secondaryBar: b, style: [E && f.appBarModal, t], subtitle: y, title: v, titleDomId: c.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -162,9 +118,9 @@
                 }
                 render() {
                     const { "aria-hidden": e, bottomBar: t, children: r, containerStyle: i, documentTitle: a, isFullWidth: c, isLarge: d, renderHeader: h, title: g, withoutBottomBarMobile: m } = this.props,
-                        { isModal: y } = this.context,
-                        b = h ? h(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return o.createElement(l.Z, null, o.createElement(u.Z.Configure, { documentTitle: a, headerless: !0, title: g }), o.createElement(n.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [f.root, y && f.rootModal] }, !y && b, o.createElement(s.Z, { isFullWidth: c, isLarge: d, style: [f.container, y && f.containerModal, i] }, y ? o.createElement(p.Z, { style: f.viewport }, b, r) : r), t ? o.createElement(n.Z, { style: [f.bottomBarModal, !y && !m && f.bottomBarMobile] }, o.createElement(s.Z, { isFullWidth: c, isLarge: d }, t)) : null));
+                        { isModal: b } = this.context,
+                        y = h ? h(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
+                    return o.createElement(l.Z, null, o.createElement(u.Z.Configure, { documentTitle: a, headerless: !0, title: g }), o.createElement(n.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [f.root, b && f.rootModal] }, !b && y, o.createElement(s.Z, { isFullWidth: c, isLarge: d, style: [f.container, b && f.containerModal, i] }, b ? o.createElement(p.Z, { style: f.viewport }, y, r) : r), t ? o.createElement(n.Z, { style: [f.bottomBarModal, !b && !m && f.bottomBarMobile] }, o.createElement(s.Z, { isFullWidth: c, isLarge: d }, t)) : null));
                 }
             }
             (h.defaultProps = { isFullWidth: !1, isLarge: !1 }), (h.contextType = i.Z);
@@ -213,50 +169,9 @@
             }
             const m = l.default.create((e) => ({ root: { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12 }, retryText: { marginBottom: e.spaces.space28 } }));
         },
-        652904: (e, t, r) => {
-            "use strict";
-            r.d(t, { Z: () => d });
-            var o = r(202784),
-                n = r(500002),
-                s = r(668214),
-                i = r(997174),
-                a = r(118823);
-            const l = (0, s.Z)()
-                .propsFromActions(() => ({ updateLocation: a.YF, updateTweetDetailNav: i.NH }))
-                .withAnalytics();
-            class c extends o.Component {
-                componentDidMount() {
-                    this._performPageUpdates(this.props);
-                }
-                componentDidUpdate(e) {
-                    const {
-                            history: { location: t },
-                            location: { pathname: r, search: o },
-                            locationKey: n,
-                        } = this.props,
-                        {
-                            location: { pathname: s, search: i },
-                            locationKey: a,
-                        } = e;
-                    let l = !1;
-                    t.pathname !== r ? (this._isInBackground = !0) : this._isInBackground && t.pathname === r && ((this._isInBackground = !1), (l = !0));
-                    const c = n || a;
-                    ((c && n !== a) || (!c && r !== s) || o !== i || l) && this._performPageUpdates(this.props);
-                }
-                render() {
-                    return this.props.children;
-                }
-                _performPageUpdates(e) {
-                    const { analytics: t, updateLocation: r, updateTweetDetailNav: o } = e;
-                    t.scribePageImpression(), r(t.contextualScribeNamespace, t.contextualScribeData), o(t.contextualScribeNamespace);
-                }
-            }
-            c.defaultProps = { children: null };
-            const d = (0, n.ZP)(l(c));
-        },
         376293: (e, t, r) => {
             "use strict";
-            r.d(t, { $f: () => x, KV: () => y, LI: () => I, SC: () => w, Vt: () => k, ed: () => B, op: () => S });
+            r.d(t, { $f: () => S, KV: () => b, LI: () => A, SC: () => w, Vt: () => E, ed: () => I, op: () => x });
             var o = r(202784),
                 n = r(190286),
                 s = r(111677),
@@ -271,18 +186,18 @@
                 f = i().a6450e84,
                 g = i().g353ad73,
                 m = i().ad00a739,
-                y = i().a9fd20be,
-                b = i().j546fb79,
+                b = i().a9fd20be,
+                y = i().j546fb79,
                 v = i().c9623eeb,
-                k = i().e133be4e,
-                C = i().he43bca4,
-                E = i().f5f01af6,
+                E = i().e133be4e,
+                k = i().he43bca4,
+                C = i().f5f01af6,
                 w = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                x = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: f, text: t ? m({ screenName: e }) : g({ screenName: e }) }),
-                S = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: r, source: o, testID: n, unblockAction: s, unblockSubtext: i, user: a }) => {
+                S = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: f, text: t ? m({ screenName: e }) : g({ screenName: e }) }),
+                x = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: r, source: o, testID: n, unblockAction: s, unblockSubtext: i, user: a }) => {
                     let l,
                         u = c.Z;
-                    const p = I(a, r);
+                    const p = A(a, r);
                     switch (o) {
                         case w.PROFILE:
                         case w.LIST_DETAIL:
@@ -304,8 +219,8 @@
                 Z = (e) => (e ? l.default : a.default),
                 _ = ({ blockSubtext: e, unblockSubtext: t, user: r }) => (!r.blocking && e ? e(r.screen_name) : r.blocking ? t : void 0),
                 T = (e) => (e.blocking ? v({ screenName: e.screen_name }) : h({ screenName: e.screen_name })),
-                I = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: b({ screenName: e }), label: k, text: t ? E : C }))(e.screen_name, t) : x(e.screen_name, t)),
-                B = ({ confirmation: e, handleConfirm: t, onClose: r }) => {
+                A = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: y({ screenName: e }), label: E, text: t ? C : k }))(e.screen_name, t) : S(e.screen_name, t)),
+                I = ({ confirmation: e, handleConfirm: t, onClose: r }) => {
                     const { confirmButtonType: s, headline: i, label: a, text: l } = e;
                     return o.createElement(n.Z, { cancelButtonLabel: u, confirmButtonLabel: a, confirmButtonType: s, headline: i, onCancel: r, onConfirm: t, text: l });
                 };
@@ -445,7 +360,7 @@
         },
         466441: (e, t, r) => {
             "use strict";
-            r.r(t), r.d(t, { NotFoundScreen: () => v, default: () => C });
+            r.r(t), r.d(t, { NotFoundScreen: () => v, default: () => k });
             r(571372);
             var o = r(202784),
                 n = r(386802),
@@ -461,8 +376,8 @@
                 f = r(952793),
                 g = r(163889),
                 m = r(725516);
-            const y = l().ba929da8,
-                b = l().d203e242;
+            const b = l().ba929da8,
+                y = l().d203e242;
             function v(e) {
                 const { splat: t } = e.match.params,
                     { isModal: r } = o.useContext(n.Z),
@@ -471,11 +386,11 @@
                     (0, c.q)(() => {
                         i && t && (0, g.ZP)(new Error(`Page not found: ${t}`));
                     }),
-                    o.createElement(h.Z, null, o.createElement(d.Z.Configure, { backLocation: "/", documentTitle: y, title: b }), o.createElement(s.Z, { style: r && k.modal }, o.createElement(p.Z, null)), o.createElement(u.Z, { title: y, withMeta: !1 }))
+                    o.createElement(h.Z, null, o.createElement(d.Z.Configure, { backLocation: "/", documentTitle: b, title: y }), o.createElement(s.Z, { style: r && E.modal }, o.createElement(p.Z, null)), o.createElement(u.Z, { title: b, withMeta: !1 }))
                 );
             }
-            const k = i.default.create((e) => ({ modal: { backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.xLarge } })),
-                C = (0, m.Z)(v, { page: "not_found" });
+            const E = i.default.create((e) => ({ modal: { backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.xLarge } })),
+                k = (0, m.Z)(v, { page: "not_found" });
         },
         242454: (e, t, r) => {
             "use strict";
@@ -528,31 +443,52 @@
             }
             h.defaultProps = { renderFailure: i.Z, retryable: !0 };
         },
-        779610: (e, t, r) => {
-            "use strict";
-            r.d(t, { Z: () => d });
-            var o = r(202784),
-                n = r(325686),
-                s = r(191796),
-                i = r(58399),
-                a = r(731708),
-                l = r(952428),
-                c = r(392237);
-            const d = (e) => {
-                    const { decoration: t, description: r, disabled: d = !1, isActive: p = !1, label: h, link: f, onPress: g, paddingHorizontal: m, renderRightContent: y, role: b = "tab", styleOverride: v, testID: k = "pivot", thumbnail: C, thumbnailSize: E, withoutArrow: w = !1 } = e,
-                        x = [u.thumbnailContainer, "medium" === E && u.thumbnailContainerMedium],
-                        S = "string" == typeof h ? o.createElement(a.ZP, null, h) : h,
-                        Z = "object" == typeof f && f.external && !f.openInSameFrame,
-                        _ = r ? ("string" == typeof r ? o.createElement(a.ZP, { color: "gray700", size: "subtext2", testID: `${k}-description` }, r) : r) : null,
-                        T = o.useMemo(() => ("space0" === m ? { paddingHorizontal: 0 } : { paddingHorizontal: m ? c.default.theme.spaces[m] : c.default.theme.componentDimensions.gutterHorizontal }), [m]);
-                    return o.createElement(l.Z, { "aria-selected": "tab" === b ? p : null, disabled: d, link: d ? void 0 : f, onPress: g, role: b, style: [u.root, T, d && u.disabled, v], testID: k, withInteractiveStyling: !!f || !!g }, o.createElement(n.Z, { style: u.contentContainer }, C ? o.createElement(n.Z, { style: x }, C) : null, o.createElement(n.Z, { style: u.content }, S, _), y ? y() : null, (!f && !g) || d || w ? null : Z ? o.createElement(s.default, { style: u.icon }) : o.createElement(i.default, { style: u.icon })), t);
-                },
-                u = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
-        },
         183806: (e, t, r) => {
             "use strict";
             r.d(t, { Z: () => o });
             const o = r(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
+        },
+        988227: (e, t, r) => {
+            "use strict";
+            r.r(t), r.d(t, { default: () => l });
+            var o = r(202784),
+                n = r(890601),
+                s = r(783427),
+                i = r(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, s.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const l = a;
+        },
+        314948: (e, t, r) => {
+            "use strict";
+            r.r(t), r.d(t, { default: () => l });
+            var o = r(202784),
+                n = r(890601),
+                s = r(783427),
+                i = r(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, s.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 3.75c-4.55 0-8.25 3.69-8.25 8.25 0 1.92.66 3.68 1.75 5.08l2.8-2.79 1.41 1.42-2.79 2.79c1.4 1.1 3.16 1.75 5.08 1.75 4.56 0 8.25-3.69 8.25-8.25 0-1.92-.65-3.68-1.75-5.08l-2.79 2.79-1.41-1.42 2.79-2.79C15.68 4.4 13.92 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const l = a;
+        },
+        452693: (e, t, r) => {
+            "use strict";
+            r.r(t), r.d(t, { default: () => l });
+            var o = r(202784),
+                n = r(890601),
+                s = r(783427),
+                i = r(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, s.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const l = a;
         },
         662678: (e, t, r) => {
             "use strict";
@@ -808,4 +744,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsInternals~bundle.Ocf.ae8e0bba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsInternals~bundle.Ocf.5275480a.js.map

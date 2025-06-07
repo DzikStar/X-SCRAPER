@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~loader.SideNav~loader.SideNavRedesign-6107ac1a", "loader.directMessagesData-6107ac1a"],
+    ["shared~loader.SideNav~loader.SideNavRedesign-6107ac1a", "icons/IconPlus-js", "loader.directMessagesData-6107ac1a"],
     {
         326439: (e, t, i) => {
             i.d(t, { Z: () => d });
@@ -515,19 +515,19 @@
                 S = i(488746),
                 T = i(246492),
                 b = i(520913),
-                F = i(731708),
-                v = i(642153),
+                v = i(731708),
+                F = i(642153),
                 I = i(879891),
-                k = i(392237),
-                x = i(54606);
+                x = i(392237),
+                k = i(54606);
             const O = r().ae408b76,
                 L = r().j355f008,
-                C = r().habf9678,
-                P = r().db0798ed,
+                P = r().habf9678,
+                C = r().db0798ed,
                 R = r().dc716ec9,
                 D = ({ text: e }) => {
                     const { direction: t } = (0, I.Z)();
-                    return n.createElement(F.ZP, { dir: t, withHashflags: !0 }, e);
+                    return n.createElement(v.ZP, { dir: t, withHashflags: !0 }, e);
                 },
                 A = (e, t) =>
                     t
@@ -536,90 +536,90 @@
                               const t = n.createElement(D, { text: e });
                               return n.createElement(r().I18NFormatMessage, { $i18n: "fcd931ed" }, t);
                           })(e),
-                M = k.default.create((e) => ({ small: { height: e.lineHeights.subtext3, width: e.lineHeights.subtext3 }, medium: { height: e.spaces.space48, width: e.spaces.space48 }, large: { height: e.lineHeights.subtext2, width: e.lineHeights.subtext2 }, xLarge: { height: e.lineHeights.subtext1, width: e.lineHeights.subtext1 }, xxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 }, xxxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 } })),
-                N = k.default.create((e) => ({ circle: { color: e.colors.primary, width: "0.5em" }, colorDeepGray: { color: e.colors.gray700 }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorRed: { color: e.colors.magenta500 }, grayscaleImage: { borderRadius: e.borderRadii.infinite, filter: "grayscale(100%)" }, brandColor: { color: e.colors.brandColor } })),
-                B = ({ contextType: e, iconColor: t, iconSize: i, link: a, retweetData: r, text: F, topicData: I, userAvatarUrls: O }) => {
+                M = x.default.create((e) => ({ small: { height: e.lineHeights.subtext3, width: e.lineHeights.subtext3 }, medium: { height: e.spaces.space48, width: e.spaces.space48 }, large: { height: e.lineHeights.subtext2, width: e.lineHeights.subtext2 }, xLarge: { height: e.lineHeights.subtext1, width: e.lineHeights.subtext1 }, xxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 }, xxxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 } })),
+                N = x.default.create((e) => ({ circle: { color: e.colors.primary, width: "0.5em" }, colorDeepGray: { color: e.colors.gray700 }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorRed: { color: e.colors.magenta500 }, grayscaleImage: { borderRadius: e.borderRadii.infinite, filter: "grayscale(100%)" }, brandColor: { color: e.colors.brandColor } })),
+                B = ({ contextType: e, iconColor: t, iconSize: i, link: a, retweetData: r, text: v, topicData: I, userAvatarUrls: O }) => {
                     const { isSelfRetweet: B, name: Z, screenName: K } = r || {},
                         U = ((e, t, i, a = []) => {
                             const r = M[t],
-                                F = [i ? { color: k.default.theme.colors[i] } : N.colorDeepGray, r],
-                                I = n.createElement(s.default, { style: F }),
-                                O = n.createElement(l.default, { style: F }),
-                                L = n.createElement(o.default, { style: F }),
-                                C = n.createElement(d.default, { style: F }),
-                                P = n.createElement(c.default, { style: F }),
+                                v = [i ? { color: x.default.theme.colors[i] } : N.colorDeepGray, r],
+                                I = n.createElement(s.default, { style: v }),
+                                O = n.createElement(l.default, { style: v }),
+                                L = n.createElement(o.default, { style: v }),
+                                P = n.createElement(d.default, { style: v }),
+                                C = n.createElement(c.default, { style: v }),
                                 R = n.createElement(u.default, { style: N.circle }),
-                                D = n.createElement(h.default, { style: F }),
-                                A = n.createElement(m.default, { style: F }),
-                                B = n.createElement(p.default, { style: F }),
-                                Z = n.createElement(g.default, { style: F }),
-                                K = n.createElement(y.default, { style: F }),
-                                U = n.createElement(f.default, { style: F }),
-                                z = n.createElement(w.default, { style: F }),
-                                H = n.createElement(_.default, { style: F }),
-                                G = n.createElement(E.default, { style: F }),
-                                Q = n.createElement(S.default, { style: F }),
-                                j = n.createElement(T.default, { style: F }),
-                                W = n.createElement(v.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: a }),
-                                V = n.createElement(b.default, { style: F });
+                                D = n.createElement(h.default, { style: v }),
+                                A = n.createElement(m.default, { style: v }),
+                                B = n.createElement(p.default, { style: v }),
+                                Z = n.createElement(g.default, { style: v }),
+                                K = n.createElement(y.default, { style: v }),
+                                U = n.createElement(f.default, { style: v }),
+                                z = n.createElement(w.default, { style: v }),
+                                H = n.createElement(_.default, { style: v }),
+                                G = n.createElement(E.default, { style: v }),
+                                Q = n.createElement(S.default, { style: v }),
+                                j = n.createElement(T.default, { style: v }),
+                                W = n.createElement(F.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: a }),
+                                V = n.createElement(b.default, { style: v });
                             switch (e) {
-                                case x.Q.Pin:
-                                case x.Q.ReplyPin:
+                                case k.Q.Pin:
+                                case k.Q.ReplyPin:
                                     return I;
-                                case x.Q.Retweet:
+                                case k.Q.Retweet:
                                     return O;
-                                case x.Q.Like:
+                                case k.Q.Like:
                                     return L;
-                                case x.Q.Follow:
-                                    return C;
-                                case x.Q.Moment:
+                                case k.Q.Follow:
                                     return P;
-                                case x.Q.NewTweets:
+                                case k.Q.Moment:
+                                    return C;
+                                case k.Q.NewTweets:
                                     return R;
-                                case x.Q.Reply:
-                                case x.Q.Conversation:
+                                case k.Q.Reply:
+                                case k.Q.Conversation:
                                     return D;
-                                case x.Q.Feedback:
+                                case k.Q.Feedback:
                                     return A;
-                                case x.Q.Topic:
+                                case k.Q.Topic:
                                     return B;
-                                case x.Q.List:
+                                case k.Q.List:
                                     return Z;
-                                case x.Q.Location:
+                                case k.Q.Location:
                                     return K;
-                                case x.Q.Community:
+                                case k.Q.Community:
                                     return U;
-                                case x.Q.Spaces:
+                                case k.Q.Spaces:
                                     return z;
-                                case x.Q.Sparkle:
+                                case k.Q.Sparkle:
                                     return H;
-                                case x.Q.SocialProof:
-                                case x.Q.FollowFollowed:
+                                case k.Q.SocialProof:
+                                case k.Q.FollowFollowed:
                                     return j;
-                                case x.Q.FollowMutual:
+                                case k.Q.FollowMutual:
                                     return Q;
-                                case x.Q.FollowFollowing:
+                                case k.Q.FollowFollowing:
                                     return G;
-                                case x.Q.Facepile:
+                                case k.Q.Facepile:
                                     return W;
-                                case x.Q.Bird:
+                                case k.Q.Bird:
                                     return V;
-                                case x.Q.TextOnly:
+                                case k.Q.TextOnly:
                                 default:
                                     return null;
                             }
                         })(e, i, t, O);
                     switch (e) {
-                        case x.Q.Retweet:
-                            return { Icon: U, text: F || A(Z, B), link: K ? `https://twitter.com/${K}` : void 0 };
-                        case x.Q.Pin:
-                            return { Icon: U, text: F || L };
-                        case x.Q.ReplyPin:
-                            return { Icon: U, text: C };
-                        case x.Q.Topic:
-                            return { Icon: U, "aria-label": "Recommendation" === I?.functionalityType || "RecWithEducation" === I?.functionalityType ? R({ topicName: F }) : P({ topicName: F }), text: F ? n.createElement(D, { text: F }) : null, link: a };
+                        case k.Q.Retweet:
+                            return { Icon: U, text: v || A(Z, B), link: K ? `https://twitter.com/${K}` : void 0 };
+                        case k.Q.Pin:
+                            return { Icon: U, text: v || L };
+                        case k.Q.ReplyPin:
+                            return { Icon: U, text: P };
+                        case k.Q.Topic:
+                            return { Icon: U, "aria-label": "Recommendation" === I?.functionalityType || "RecWithEducation" === I?.functionalityType ? R({ topicName: v }) : C({ topicName: v }), text: v ? n.createElement(D, { text: v }) : null, link: a };
                         default:
-                            return { Icon: U, text: F ? n.createElement(D, { text: F }) : null, link: a };
+                            return { Icon: U, text: v ? n.createElement(D, { text: v }) : null, link: a };
                     }
                 };
         },
@@ -639,10 +639,10 @@
             class m extends n.PureComponent {
                 render() {
                     const { avatarSize: e, bottomControl: t, iconStyle: i, id: o, onLayout: d, rightControl: c, style: h, testID: m, textColor: g, textSize: y, topControl: f, weight: w, withBottomBorder: _, withLeftPadding: E, withTextCentered: S, ...T } = this.props,
-                        { Icon: b, "aria-label": F, link: v, text: I } = (0, u.Z)(T),
-                        k = n.createElement(r.ZP, { "aria-label": F, color: g, id: o, numberOfLines: 2, size: y, testID: m, weight: w, withoutTwemojiAndHashflags: !0 }, I),
-                        { cellStyle: x, viewStyle: O } = this._getStyles();
-                    return I ? n.createElement(l.ZP.UseProps, null, (r) => n.createElement(n.Fragment, null, f || null, n.createElement(a.Z, { onLayout: d, style: [h, O, r.socialContextRefreshEnabled() && !E && p.socialContextRefresh] }, n.createElement(s.Z, { avatarCell: b || (E ? null : void 0), avatarCellStyle: [i, p.socialContextIconColumn, !E && p.unsetIconWidth, r.socialContextRefreshEnabled() && !E && p.socialContextRefreshIcon], avatarSize: e, cellStyle: x }, n.createElement(a.Z, { style: p.cellWrapper }, n.createElement(a.Z, { style: [p.socialContextTextColumn, r.socialContextRefreshEnabled() && !E && p.socialContextRefreshTextColumn] }, v ? this._renderLink(v, k) : k), c || null)), t || null))) : null;
+                        { Icon: b, "aria-label": v, link: F, text: I } = (0, u.Z)(T),
+                        x = n.createElement(r.ZP, { "aria-label": v, color: g, id: o, numberOfLines: 2, size: y, testID: m, weight: w, withoutTwemojiAndHashflags: !0 }, I),
+                        { cellStyle: k, viewStyle: O } = this._getStyles();
+                    return I ? n.createElement(l.ZP.UseProps, null, (r) => n.createElement(n.Fragment, null, f || null, n.createElement(a.Z, { onLayout: d, style: [h, O, r.socialContextRefreshEnabled() && !E && p.socialContextRefresh] }, n.createElement(s.Z, { avatarCell: b || (E ? null : void 0), avatarCellStyle: [i, p.socialContextIconColumn, !E && p.unsetIconWidth, r.socialContextRefreshEnabled() && !E && p.socialContextRefreshIcon], avatarSize: e, cellStyle: k }, n.createElement(a.Z, { style: p.cellWrapper }, n.createElement(a.Z, { style: [p.socialContextTextColumn, r.socialContextRefreshEnabled() && !E && p.socialContextRefreshTextColumn] }, F ? this._renderLink(F, x) : x), c || null)), t || null))) : null;
                 }
                 _renderLink(e, t) {
                     const { contextType: i, id: a, onClick: s, retweetData: l, textColor: o, topicData: u } = this.props,
@@ -858,6 +858,19 @@
         720283: (e, t, i) => {
             i.d(t, { H: () => n });
             const n = ({ description: e, entities: t, withheldDescription: i, withheldEntities: n }) => (i ? { description: i, entities: n } : { description: e, entities: t });
+        },
+        379327: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var n = i(202784),
+                a = i(890601),
+                r = i(783427),
+                s = i(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M11 11V4h2v7h7v2h-7v7h-2v-7H4v-2h7z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const o = l;
         },
         19697: (e, t, i) => {
             i.d(t, { q8: () => d, $i: () => r });
@@ -1657,4 +1670,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-6107ac1a.f777b91a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-6107ac1a.378878aa.js.map

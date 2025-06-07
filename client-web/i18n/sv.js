@@ -1174,7 +1174,6 @@
                 t("c3aa76c4", "Språk du kanske kan"),
                 t("g099069c", "Hantera de språk X har dragit slutsats om utifrån din aktivitet, t.ex. de konton du följer och de inlägg du gör något med."),
                 t("cf9ce876", "App- och inläggsspråk"),
-                t("d4372cf4", "English (US), 中文(简体), Español"),
                 t("f8e46b90", "Dessa är de sociala konton som du har anslutit till ditt X-konto för inloggning. Du kan inaktivera åtkomsten här."),
                 t("d84ed6b2", "Koppla ner"),
                 t("i51130d4", "Google"),
@@ -1917,9 +1916,9 @@
                 t("a8fdd09c", "Publicera artikeln"),
                 t("d8047cc8", "Publicera"),
                 t("ff7ddca2", "Din artikel visas som ett inlägg när du har publicerat den. Du hittar den även på fliken Artiklar i din profil."),
-                t("ef34d7be", "Målgrupps- och svarskontroller går inte att redigera efter att en artikel har publicerats.");
-            t("e52d4998", "Välj målgrupp"),
-                t("d7985b24", "Välj vilka som får svara på den här artikeln"),
+                t("ef34d7be", "Målgrupps- och svarskontroller går inte att redigera efter att en artikel har publicerats."),
+                t("e52d4998", "Välj målgrupp");
+            t("d7985b24", "Välj vilka som får svara på den här artikeln"),
                 t("b5660338", "Förhandsgranska tidslinjen"),
                 t("hff1b97a", "Endast prenumeranter får svara."),
                 t("a330771e", "Kopiera länken till Urklipp"),
@@ -2973,9 +2972,9 @@
                 t("ce6d095a", "Arbetstillfällen"),
                 t("e0adec82", "Varumärkesresurser"),
                 t("df1b7550", "Marknadsföring"),
-                t("he258678", "X för företag");
-            t("c6f58084", "Utvecklare"),
-                t("d83f18d2", "Katalog"),
+                t("he258678", "X för företag"),
+                t("c6f58084", "Utvecklare");
+            t("d83f18d2", "Katalog"),
                 t("hc5aa17c", "Skaffa X-appen"),
                 t("j0693948", "Skaffa Grok-appen"),
                 t("fce9ecce", "Föreslagna videor"),
@@ -3887,11 +3886,11 @@
                 t("ddeb0a3c", "Här är gruppen. Gillar du människorna? Ta en titt."),
                 t("e111f531", function (e) {
                     return e.count + " lyssnar";
+                }),
+                t("cbef820f", function (e) {
+                    return e.screenName + " återpublicerade strömmen!";
                 });
-            t("cbef820f", function (e) {
-                return e.screenName + " återpublicerade strömmen!";
-            }),
-                t("e3275464", "Skicka"),
+            t("e3275464", "Skicka"),
                 t("cededf2a", "Värd"),
                 t("i2caef48", "Medvärdar"),
                 t("j245c654", "Talare"),
@@ -4925,9 +4924,9 @@
                 t("d9f9dec0", "Visa området"),
                 t("h0c1f37a", "Visa områdesstatistik"),
                 t("e41fffbc", "Den totala tiden som folk har sett på dina videor."),
-                t("if2909ba", "Tittad tid");
-            t("i0e5bf4c", "Dina videor"),
-                t("ed99baea", "Tidig betaåtkomst"),
+                t("if2909ba", "Tittad tid"),
+                t("i0e5bf4c", "Dina videor");
+            t("ed99baea", "Tidig betaåtkomst"),
                 t("gf898b70", "Avancerad sökning"),
                 t("d2a43a7a", "innehåller både ”ai” och ”nystartat”"),
                 t("a8584698", "nystartat ai-bolag"),
@@ -5881,9 +5880,9 @@
                 t("e41c9b4f", function (e) {
                     return "Sparat på " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Radera mappen");
-            t("f4ea967a", "Mappen har raderats"),
-                t("b670aa62", "Mappnamn"),
+                t("h18f86a4", "Radera mappen"),
+                t("f4ea967a", "Mappen har raderats");
+            t("b670aa62", "Mappnamn"),
                 t("aece5462", "Mappnamnet har ändrats"),
                 t("e3299b94", "Något gick fel. Försök uppdatera mappen igen om en stund."),
                 t("c09ea714", "Något gick fel. Försök radera mappen igen om en stund."),
@@ -6885,9 +6884,9 @@
                 t("ede7d0a2", "Valuta"),
                 t("b925c18c", "Lönetyp"),
                 t("j3d242ce", "Ogiltigt intervall"),
-                t("f4d07bd2", "Ta med valfria detaljer för att göra det enklare för sökande att upptäcka dina roller genom att söka.");
-            t("b8cbb51a", "Jobböversikt"),
-                t("bda6881e", "Detta jobb har importerats från ditt jobbansökningssystem. Observera att enbart specifika fält går att ändra."),
+                t("f4d07bd2", "Ta med valfria detaljer för att göra det enklare för sökande att upptäcka dina roller genom att söka."),
+                t("b8cbb51a", "Jobböversikt");
+            t("bda6881e", "Detta jobb har importerats från ditt jobbansökningssystem. Observera att enbart specifika fält går att ändra."),
                 t("b075c68a", "Redigera jobbet"),
                 t("d4b6a6e0", "Profilspotlight"),
                 t("j2dd3686", "Visa upp vissa jobb ovanför mina inlägg"),
@@ -7230,6 +7229,8 @@
                 t("hd80bd3e", "Marknadsför ett inlägg"),
                 t("fe2b0008", "Lär dig använda X"),
                 t("h257d4aa", "Välj ett inlägg att marknadsföra"),
+                t("e9334fe6", "Data updates every few minutes"),
+                t("a6d7b1d0", "Based on X Internal Data"),
                 t("h9b28dae", "You’re saving time with an ad-free feed"),
                 t("f6c50ec0", "Din annonsfria testperiod är över"),
                 t("e1d1fbca", "You’ve avoided"),
@@ -7864,8 +7865,7 @@
                 t("i5f14be7", function (e) {
                     return "Välkommen tillbaka, " + e.displayName;
                 }),
-                t("a76d58ba", "Annonsanalys"),
-                t("eccd0e1a", "Organisationsanalys");
+                t("a76d58ba", "Annonsanalys");
             function i(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7904,7 +7904,8 @@
                     d(e, a)
                 );
             }
-            t("deea1708", "Vill du se analys för alla din konton på X?"),
+            t("eccd0e1a", "Organisationsanalys"),
+                t("deea1708", "Vill du se analys för alla din konton på X?"),
                 t("eb603ffc", "Uppgradera om du vill knyta an ditt nätverk och se samlade analysvärden."),
                 t("gf67aae4", "Uppgradera för att få full tillgång"),
                 t("h75e3618", "Inkludera organisationen"),
@@ -8902,9 +8903,9 @@
                 t("a6ada13e", "Handla nu"),
                 t("j0f12222", "Se mer"),
                 t("f569f7c8", "Besök webbplatsen"),
-                t("j0c6772a", "Besök webbplatsen"),
-                t("f73003aa", "Videon spelas efter annonsen");
-            t("b3112b8a", "Hoppa över"),
+                t("j0c6772a", "Besök webbplatsen");
+            t("f73003aa", "Videon spelas efter annonsen"),
+                t("b3112b8a", "Hoppa över"),
                 t("h6333ad0", "Hoppa över annonsen"),
                 t("c59da417", function (e) {
                     return "Hoppa över annonsen om " + e.seconds;
@@ -13352,4 +13353,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.30415d6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.9eb43c6a.js.map

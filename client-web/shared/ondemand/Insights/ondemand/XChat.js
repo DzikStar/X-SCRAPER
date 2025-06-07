@@ -2,65 +2,6 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~ondemand.Insights~ondemand.XChat"],
     {
-        887390: (e, t, n) => {
-            n.d(t, { _: () => l });
-            var r = n(552322),
-                a = n(110929),
-                o = n(202784),
-                i = n(82458);
-            const s = (0, a.j)("flex items-center gap-2 overflow-hidden placeholder:text-gray-800", { variants: { borderRadius: { "2xLarge": "rounded-2xl", "3xLarge": "rounded-3xl", full: "rounded-full", large: "rounded-lg", medium: "rounded-md", none: "rounded-none", small: "rounded-sm", xLarge: "rounded-xl", true: "rounded" }, variant: { default: "has-[:invalid]:border-red-500 focus-within:border-primary border border-solid border-gray-200 p-2" } }, defaultVariants: { variant: "default" } }),
-                l = (0, o.forwardRef)(function ({ borderRadius: e, variant: t, leftContent: n, rightContent: o, className: l, inputClassName: u, ...d }, c) {
-                    return (0, r.jsxs)("div", { className: s({ borderRadius: e ?? (d.multiline ? "3xLarge" : "full"), className: (0, a.cx)(n ? "ps-3" : "ps-4", o ? "pe-3" : "pe-4", l), variant: t }), children: [n, (0, r.jsx)(i.o, { className: u, ...d, ref: c }), o] });
-                });
-        },
-        461222: (e, t, n) => {
-            n.d(t, { A: () => i, S: () => s });
-            var r = n(552322),
-                a = n(202784),
-                o = n(941204);
-            function i({ color: e = "gray700", ...t }) {
-                return (0, r.jsx)(o.x, { ...t, "aria-hidden": !0, className: "shrink-0 px-1", color: e, children: "·" });
-            }
-            function s({ children: e, ...t }) {
-                const n = [];
-                return (
-                    a.Children.forEach(e, (e) => {
-                        const a = n.length;
-                        e && (a > 0 && n.push((0, r.jsx)(i, { ...t }, `middot-${a}`)), n.push(e));
-                    }),
-                    n.length ? (0, r.jsx)("div", { className: "shrink-1 flex items-center", children: n }) : null
-                );
-            }
-        },
-        82458: (e, t, n) => {
-            n.d(t, { o: () => l });
-            var r = n(552322),
-                a = n(840489),
-                o = n(202784);
-            const i = (0, o.forwardRef)(function ({ className: e, ...t }, n) {
-                    return (0, r.jsx)("input", { ...t, className: (0, a.Z)("border-box font-chirp text-text m-0 w-full bg-transparent font-normal outline-none disabled:opacity-50", e), ref: n });
-                }),
-                s = (0, o.forwardRef)(function ({ className: e, ...t }, n) {
-                    const i = (function (e) {
-                        const t = (0, o.useRef)(null);
-                        return (
-                            (0, o.useEffect)(() => {
-                                e && ("function" == typeof e ? e(t.current) : (e.current = t.current));
-                            }, [e]),
-                            t
-                        );
-                    })(n);
-                    return (
-                        (0, o.useEffect)(() => {
-                            i.current && void 0 !== t.value && ((i.current.style.height = "auto"), (i.current.style.height = `${i.current.scrollHeight}px`));
-                        }, [t.value, i]),
-                        (0, r.jsx)("textarea", { ...t, className: (0, a.Z)("border-box font-chirp text-text m-0 w-full resize-none bg-transparent font-normal outline-none disabled:opacity-50", e), ref: i, rows: 1 })
-                    );
-                }),
-                l = (0, o.forwardRef)(function ({ multiline: e, ...t }, n) {
-                    return e ? (0, r.jsx)(s, { ...t, ref: n }) : (0, r.jsx)(i, { ...t, ref: n });
-                });
-        },
         129558: (e, t, n) => {
             n.d(t, { Z: () => a });
             var r = n(552322);
@@ -90,6 +31,65 @@
             n.d(t, { Z: () => a });
             var r = n(552322);
             const a = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M16 6V4.5C16 3.12 14.88 2 13.5 2h-3C9.11 2 8 3.12 8 4.5V6H3v2h1.06l.81 11.21C4.98 20.78 6.28 22 7.86 22h8.27c1.58 0 2.88-1.22 3-2.79L19.93 8H21V6h-5zm-6-1.5c0-.28.22-.5.5-.5h3c.27 0 .5.22.5.5V6h-4V4.5zm7.13 14.57c-.04.52-.47.93-1 .93H7.86c-.53 0-.96-.41-1-.93L6.07 8h11.85l-.79 11.07zM9 17v-6h2v6H9zm4 0v-6h2v6h-2z" }) });
+        },
+        687521: (e, t, n) => {
+            n.d(t, { _: () => l });
+            var r = n(552322),
+                a = n(110929),
+                o = n(202784),
+                i = n(962639);
+            const s = (0, a.j)("flex items-center gap-2 overflow-hidden placeholder:text-gray-800", { variants: { borderRadius: { "2xLarge": "rounded-2xl", "3xLarge": "rounded-3xl", full: "rounded-full", large: "rounded-lg", medium: "rounded-md", none: "rounded-none", small: "rounded-sm", xLarge: "rounded-xl", true: "rounded" }, variant: { default: "has-[:invalid]:border-red-500 focus-within:border-primary border border-solid border-gray-200 p-2" } }, defaultVariants: { variant: "default" } }),
+                l = (0, o.forwardRef)(function ({ borderRadius: e, variant: t, leftContent: n, rightContent: o, className: l, inputClassName: u, ...d }, c) {
+                    return (0, r.jsxs)("div", { className: s({ borderRadius: e ?? (d.multiline ? "3xLarge" : "full"), className: (0, a.cx)(n ? "ps-3" : "ps-4", o ? "pe-3" : "pe-4", l), variant: t }), children: [n, (0, r.jsx)(i.o, { className: u, ...d, ref: c }), o] });
+                });
+        },
+        42630: (e, t, n) => {
+            n.d(t, { A: () => i, S: () => s });
+            var r = n(552322),
+                a = n(202784),
+                o = n(332161);
+            function i({ color: e = "gray700", ...t }) {
+                return (0, r.jsx)(o.x, { ...t, "aria-hidden": !0, className: "shrink-0 px-1", color: e, children: "·" });
+            }
+            function s({ children: e, ...t }) {
+                const n = [];
+                return (
+                    a.Children.forEach(e, (e) => {
+                        const a = n.length;
+                        e && (a > 0 && n.push((0, r.jsx)(i, { ...t }, `middot-${a}`)), n.push(e));
+                    }),
+                    n.length ? (0, r.jsx)("div", { className: "shrink-1 flex items-center", children: n }) : null
+                );
+            }
+        },
+        962639: (e, t, n) => {
+            n.d(t, { o: () => l });
+            var r = n(552322),
+                a = n(840489),
+                o = n(202784);
+            const i = (0, o.forwardRef)(function ({ className: e, ...t }, n) {
+                    return (0, r.jsx)("input", { ...t, className: (0, a.Z)("border-box font-chirp text-text m-0 w-full bg-transparent font-normal outline-none disabled:opacity-50", e), ref: n });
+                }),
+                s = (0, o.forwardRef)(function ({ className: e, ...t }, n) {
+                    const i = (function (e) {
+                        const t = (0, o.useRef)(null);
+                        return (
+                            (0, o.useEffect)(() => {
+                                e && ("function" == typeof e ? e(t.current) : (e.current = t.current));
+                            }, [e]),
+                            t
+                        );
+                    })(n);
+                    return (
+                        (0, o.useEffect)(() => {
+                            i.current && void 0 !== t.value && ((i.current.style.height = "auto"), (i.current.style.height = `${i.current.scrollHeight}px`));
+                        }, [t.value, i]),
+                        (0, r.jsx)("textarea", { ...t, className: (0, a.Z)("border-box font-chirp text-text m-0 w-full resize-none bg-transparent font-normal outline-none disabled:opacity-50", e), ref: i, rows: 1 })
+                    );
+                }),
+                l = (0, o.forwardRef)(function ({ multiline: e, ...t }, n) {
+                    return e ? (0, r.jsx)(s, { ...t, ref: n }) : (0, r.jsx)(i, { ...t, ref: n });
+                });
         },
         194787: (e, t, n) => {
             n.d(t, { dy: () => I });
@@ -962,4 +962,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.Insights~ondemand.XChat.f191d64a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.Insights~ondemand.XChat.4c8e4cba.js.map

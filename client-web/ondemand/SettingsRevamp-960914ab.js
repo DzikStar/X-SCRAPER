@@ -2,52 +2,6 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["ondemand.SettingsRevamp-960914ab"],
     {
-        520512: (e, a, n) => {
-            n.d(a, { Z: () => r });
-            var l,
-                i,
-                t = { fragment: { argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "allowGamblingAds" }]), kind: "Fragment", metadata: null, name: "AdsCategoriesMutation", selections: (i = [{ alias: null, args: [{ kind: "Variable", name: "allow_gambling_ads", variableName: "allowGamblingAds" }], kind: "ScalarField", name: "user_preferences_put", storageKey: null }]), type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: l, kind: "Operation", name: "AdsCategoriesMutation", selections: i }, params: { id: "eRWyTnzFgPgv9D4W8ujf6A", metadata: {}, name: "AdsCategoriesMutation", operationKind: "mutation", text: null } };
-            t.hash = "58347e2cd632b3c8fb00f7f08a6b5c7d";
-            const r = t;
-        },
-        795738: (e, a, n) => {
-            n.d(a, { Z: () => t });
-            var l,
-                i = {
-                    fragment: {
-                        argumentDefinitions: [],
-                        kind: "Fragment",
-                        metadata: null,
-                        name: "AdsCategoriesQuery",
-                        selections: [
-                            {
-                                kind: "RequiredField",
-                                field: (l = {
-                                    alias: null,
-                                    args: null,
-                                    concreteType: "UserPreferences",
-                                    kind: "LinkedField",
-                                    name: "user_preferences",
-                                    plural: !1,
-                                    selections: [
-                                        { alias: null, args: null, kind: "ScalarField", name: "allow_gambling_ads", storageKey: null },
-                                        { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] },
-                                    ],
-                                    storageKey: null,
-                                }),
-                                action: "THROW",
-                            },
-                        ],
-                        type: "Query",
-                        abstractKey: null,
-                    },
-                    kind: "Request",
-                    operation: { argumentDefinitions: [], kind: "Operation", name: "AdsCategoriesQuery", selections: [l] },
-                    params: { id: "FO_KX1o77E3vYL14rATn9Q", metadata: {}, name: "AdsCategoriesQuery", operationKind: "query", text: null },
-                };
-            i.hash = "5cedb9567de269f8e1609fd181602c63";
-            const t = i;
-        },
         767758: (e, a, n) => {
             n.d(a, { Z: () => r });
             var l,
@@ -650,6 +604,64 @@
             n.d(a, { Z: () => i });
             var l = { argumentDefinitions: [{ defaultValue: null, kind: "LocalArgument", name: "awardsEnabled" }], kind: "Fragment", metadata: null, name: "SuperFollowsSettingsInternalLinkPivot_user", selections: [{ args: [{ kind: "Variable", name: "awardsEnabled", variableName: "awardsEnabled" }], kind: "FragmentSpread", name: "PayoutThresholdProgress_user" }], type: "User", abstractKey: null, hash: "703fdd6a0065aec8ec26a16a33fa6bfe" };
             const i = l;
+        },
+        631759: (e, a, n) => {
+            n.d(a, { Z: () => d });
+            var l,
+                i,
+                t,
+                r,
+                s,
+                u = {
+                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "UnifiedLanguagePivotMenuLanguagesQuery", selections: [{ alias: null, args: (l = [{ kind: "Literal", name: "s", value: "4721" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(t = { alias: null, args: null, concreteType: "Locale", kind: "LinkedField", name: "display_language", plural: !1, selections: (i = [{ alias: null, args: null, kind: "ScalarField", name: "language_name", storageKey: null }]), storageKey: null }), (r = { alias: null, args: null, concreteType: "Locale", kind: "LinkedField", name: "preferred_content_languages", plural: !0, selections: i, storageKey: null })], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' }], type: "Query", abstractKey: null },
+                    kind: "Request",
+                    operation: {
+                        argumentDefinitions: [],
+                        kind: "Operation",
+                        name: "UnifiedLanguagePivotMenuLanguagesQuery",
+                        selections: [
+                            {
+                                alias: null,
+                                args: l,
+                                concreteType: "Viewer",
+                                kind: "LinkedField",
+                                name: "viewer_v2",
+                                plural: !1,
+                                selections: [
+                                    {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: "UserResults",
+                                        kind: "LinkedField",
+                                        name: "user_results",
+                                        plural: !1,
+                                        selections: [
+                                            {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: null,
+                                                kind: "LinkedField",
+                                                name: "result",
+                                                plural: !1,
+                                                selections: [
+                                                    { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
+                                                    { kind: "InlineFragment", selections: [t, r, (s = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null },
+                                                ],
+                                                storageKey: null,
+                                            },
+                                            s,
+                                        ],
+                                        storageKey: null,
+                                    },
+                                ],
+                                storageKey: 'viewer_v2(s:"4721")',
+                            },
+                        ],
+                    },
+                    params: { id: "8o3965laaTQBsqfrfY8Drw", metadata: {}, name: "UnifiedLanguagePivotMenuLanguagesQuery", operationKind: "query", text: null },
+                };
+            u.hash = "8aeca3ff99e0ac8757fa4979366cd2f5";
+            const d = u;
         },
         591668: (e, a, n) => {
             n.d(a, { Z: () => r });
@@ -1295,4 +1307,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-960914ab.1ad09efa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-960914ab.911a73fa.js.map

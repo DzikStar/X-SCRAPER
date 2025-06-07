@@ -1,597 +1,705 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.Verified-d2eb5610", "shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem", "bundle.Communities-8d4c5ae2"],
+    ["ondemand.Verified-d2eb5610"],
     {
-        735079: (e, n, r) => {
-            var t = r(609859);
+        279043: (e, l, s) => {
+            s.d(l, { v: () => h });
+            var n = s(552322),
+                a = s(994542),
+                i = s(313270),
+                r = s(430962),
+                t = s(520003);
+            const c = () => {
+                    const { business: e } = (0, r.M1)();
+                    return (0, n.jsxs)("div", { className: "flex w-full max-w-5xl flex-col gap-6 pb-8 md:grid md:grid-cols-12", children: [(0, n.jsx)(t.ZQ, { title: e.hiring.benefits.jobListings.title, description: e.hiring.benefits.jobListings.description, className: "col-span-6 justify-between", children: (0, n.jsx)(o, { children: (0, n.jsx)("div", { children: (0, n.jsx)("img", { src: "https://abs.twimg.com/responsive-web/client-web/Hiring-Landing-Listing.e89f66aa.png", alt: "Job Listings", className: "object-cove w-full origin-top -translate-y-[90px]" }) }) }) }), (0, n.jsx)(t.ZQ, { title: e.hiring.benefits.careerPages.title, description: e.hiring.benefits.careerPages.description, className: "col-span-6 justify-between", children: (0, n.jsx)(o, { children: (0, n.jsx)("div", { children: (0, n.jsx)("img", { src: "https://abs.twimg.com/responsive-web/client-web/Hiring-Landing-Career-Page.93a8a04a.png", alt: "Career Landing Page", className: "w-full origin-top -translate-y-[50px] scale-[0.8] object-cover lg:-translate-y-[125px]" }) }) }) }), (0, n.jsx)(t.ZQ, { title: e.hiring.benefits.promotion.title, description: e.hiring.benefits.promotion.description, className: "col-span-6 justify-between", children: (0, n.jsx)(o, { children: (0, n.jsx)("div", { children: (0, n.jsx)("img", { src: "https://abs.twimg.com/responsive-web/client-web/Hiring-Landing-Promotion.dd36976a.png", alt: "Job Promotion", className: "w-full origin-top -translate-y-[50px] scale-[0.8] object-cover lg:-translate-y-[125px]" }) }) }) }), (0, n.jsx)(t.ZQ, { title: e.hiring.benefits.connect.title, description: e.hiring.benefits.connect.description, comingSoon: !0, className: "col-span-6 justify-between", children: (0, n.jsx)(o, { children: (0, n.jsx)("div", { children: (0, n.jsx)("img", { src: "https://abs.twimg.com/responsive-web/client-web/Hiring-Landing-Keywords.04854b2a.png", alt: "People search", className: "w-full object-cover", loading: "lazy" }) }) }) })] });
+                },
+                o = ({ children: e }) => (0, n.jsx)("div", { className: "h-[270px] w-full px-8", children: (0, n.jsx)("div", { className: "relative flex h-full w-full justify-center", style: { WebkitMaskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.3))", maskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.3))" }, children: e }) });
+            var d = s(993165);
+            const u = ({ subscribeUrl: e }) => {
+                const { business: l } = (0, r.M1)();
+                return (0, n.jsx)(t.$0, { className: "flex flex-col items-center text-center focus:outline-none", children: (0, n.jsx)("a", { href: e, className: "w-full items-center md:px-36", children: (0, n.jsx)(d.z, { variant: "insightsBright", className: "w-full py-5", children: l.hiring.footer.getStarted }) }) });
+            };
+            var g = s(332161);
+            const m = () => {
+                    const { business: e } = (0, r.M1)();
+                    return (0, n.jsx)(t.$0, { className: "gap-12", children: (0, n.jsxs)("div", { className: "items-space flex w-full flex-col justify-around gap-12 pb-8 md:flex-row lg:gap-8", children: [(0, n.jsx)(p, { title: e.hiring.stats.users.title, description: e.hiring.stats.users.description }), (0, n.jsx)(p, { title: e.hiring.stats.companies.title, description: e.hiring.stats.companies.description }), (0, n.jsx)(p, { title: e.hiring.stats.applications.title, description: e.hiring.stats.applications.description })] }) });
+                },
+                p = ({ description: e, title: l }) => (0, n.jsxs)("div", { className: "flex flex-col items-center md:items-start", children: [(0, n.jsx)(g.x, { size: "title1", weight: "bold", className: "mt-4 text-balance", children: l }), (0, n.jsx)(g.x, { size: "headline1", weight: "bold", color: "gray700", className: "mt-1 text-left", children: e })] });
+            var x = s(322506),
+                b = s(428897);
+            const f = ({ subscribeUrl: e, withCTA: l }) => {
+                    const { business: s } = (0, r.M1)();
+                    return (0, n.jsxs)(t.$0, { className: "flex flex-col items-center gap-6 pb-6 text-center", children: [(0, n.jsxs)("p", { className: "text-headline1 flex items-center gap-2 font-bold", children: [(0, n.jsx)(b.Z, { className: "h-[18px] w-[18px]" }), s.landing.organizations] }), (0, n.jsx)("h1", { className: "text-title1 text-balance font-bold md:text-[64px] md:leading-[70px]", children: (0, n.jsx)("span", { className: "from-text to-text/30 bg-gradient-to-r from-90% bg-clip-text text-transparent", children: s.hiring.hero.title }) }), (0, n.jsx)("p", { className: "text-headline1 max-w-[740px] text-pretty opacity-60", children: s.hiring.hero.description }), l && (0, n.jsx)(x.r, { href: e, className: "mt-auto", children: (0, n.jsx)(d.z, { variant: "insightsBright", className: "w-60 py-5", children: s.hiring.hero.cta }) })] });
+                },
+                h = ({ SubscribeButton: e, basicPrices: l, fullAccessPrices: s, interval: r = "Year", onIntervalChange: t, sectionConfig: o, subscribeUrl: d, includeHandleMarketing: g = !1 }) => {
+                    const p = { benefits: { order: 4, visible: !0 }, footer: { order: 5, visible: !0 }, pricing: { order: 2, visible: !0 }, stats: { order: 3, visible: !0 }, title: { order: 1, visible: !0, withCTA: !1 }, offerBanner: { order: 2, visible: !1 }, ...o },
+                        x = Object.entries(p)
+                            .filter(([e, l]) => l.visible)
+                            .sort(([e, l], [s, n]) => l.order - n.order)
+                            .map(([e]) => e);
+                    return (0, n.jsx)("div", {
+                        className: "text-text flex w-full flex-col items-center gap-10 pb-40 pt-10 max-md:px-4",
+                        children: x.map((o) => {
+                            const { withCTA: x } = p[o],
+                                b = l?.Year?.promotionInfo?.endsAtMsec || s?.Year?.promotionInfo?.endsAtMsec;
+                            return (() => {
+                                switch (o) {
+                                    case "title":
+                                        return (0, n.jsx)(f, { withCTA: x, subscribeUrl: d }, o);
+                                    case "benefits":
+                                        return (0, n.jsx)(c, {}, o);
+                                    case "stats":
+                                        return (0, n.jsx)(m, {}, o);
+                                    case "footer":
+                                        return (0, n.jsx)(u, { subscribeUrl: d }, o);
+                                    case "offerBanner":
+                                        return (0, n.jsx)(a.Z, { targetDate: b }, o);
+                                    case "pricing":
+                                        return (0, n.jsx)(i.n, { basicPrices: l, fullAccessPrices: s, interval: r, showTitle: !1, onIntervalChange: t, SubscribeButton: e, includeHandleMarketing: g }, o);
+                                    default:
+                                        return null;
+                                }
+                            })();
+                        }),
+                    });
+                };
+        },
+        156888: (e, l, s) => {
+            s.r(l), s.d(l, { default: () => t });
+            const n = {
+                fragment: {
+                    argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "screenName" }]),
+                    kind: "Fragment",
+                    metadata: null,
+                    name: "VOCardsQuery",
+                    selections: [
+                        {
+                            alias: null,
+                            args: (i = [
+                                { kind: "Literal", name: "safety_level", value: "UserProfileHeader" },
+                                { kind: "Variable", name: "screen_name", variableName: "screenName" },
+                            ]),
+                            concreteType: "UserResults",
+                            kind: "LinkedField",
+                            name: "user_result_by_screen_name",
+                            plural: !1,
+                            selections: [
+                                {
+                                    alias: null,
+                                    args: null,
+                                    concreteType: null,
+                                    kind: "LinkedField",
+                                    name: "result",
+                                    plural: !1,
+                                    selections: [
+                                        {
+                                            kind: "InlineFragment",
+                                            selections: [
+                                                { args: null, kind: "FragmentSpread", name: "avatar_user" },
+                                                { args: null, kind: "FragmentSpread", name: "username_user" },
+                                            ],
+                                            type: "User",
+                                            abstractKey: null,
+                                        },
+                                    ],
+                                    storageKey: null,
+                                },
+                            ],
+                            storageKey: null,
+                        },
+                    ],
+                    type: "Query",
+                    abstractKey: null,
+                },
+                kind: "Request",
+                operation: {
+                    argumentDefinitions: a,
+                    kind: "Operation",
+                    name: "VOCardsQuery",
+                    selections: [
+                        {
+                            alias: null,
+                            args: i,
+                            concreteType: "UserResults",
+                            kind: "LinkedField",
+                            name: "user_result_by_screen_name",
+                            plural: !1,
+                            selections: [
+                                {
+                                    alias: null,
+                                    args: null,
+                                    concreteType: null,
+                                    kind: "LinkedField",
+                                    name: "result",
+                                    plural: !1,
+                                    selections: [
+                                        { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
+                                        {
+                                            kind: "InlineFragment",
+                                            selections: [
+                                                { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
+                                                {
+                                                    alias: null,
+                                                    args: null,
+                                                    concreteType: "UserCore",
+                                                    kind: "LinkedField",
+                                                    name: "core",
+                                                    plural: !1,
+                                                    selections: [
+                                                        { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
+                                                        { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
+                                                    ],
+                                                    storageKey: null,
+                                                },
+                                                { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
+                                                {
+                                                    alias: null,
+                                                    args: null,
+                                                    concreteType: "HighlightedUserLabelResponse",
+                                                    kind: "LinkedField",
+                                                    name: "affiliates_highlighted_label",
+                                                    plural: !1,
+                                                    selections: [
+                                                        {
+                                                            alias: null,
+                                                            args: null,
+                                                            concreteType: "HighlightedUserLabel",
+                                                            kind: "LinkedField",
+                                                            name: "label",
+                                                            plural: !1,
+                                                            selections: [
+                                                                { alias: null, args: null, concreteType: "BadgeInfo", kind: "LinkedField", name: "badge", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null }], storageKey: null },
+                                                                { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
+                                                                { alias: null, args: null, kind: "ScalarField", name: "user_label_display_type", storageKey: null },
+                                                                { alias: null, args: null, kind: "ScalarField", name: "user_label_type", storageKey: null },
+                                                            ],
+                                                            storageKey: null,
+                                                        },
+                                                    ],
+                                                    storageKey: null,
+                                                },
+                                                { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
+                                                { alias: null, args: null, kind: "ScalarField", name: "super_following", storageKey: null },
+                                                {
+                                                    alias: null,
+                                                    args: null,
+                                                    concreteType: "UserVerification",
+                                                    kind: "LinkedField",
+                                                    name: "verification",
+                                                    plural: !1,
+                                                    selections: [
+                                                        { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                                                        { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                    ],
+                                                    storageKey: null,
+                                                },
+                                                (r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
+                                            ],
+                                            type: "User",
+                                            abstractKey: null,
+                                        },
+                                    ],
+                                    storageKey: null,
+                                },
+                                r,
+                            ],
+                            storageKey: null,
+                        },
+                    ],
+                },
+                params: { id: "nsVPuj1x3k3I7Bi9LHBScA", metadata: {}, name: "VOCardsQuery", operationKind: "query", text: null },
+            };
+            var a, i, r;
+            n.hash = "54318311254590f476633b574e37081d";
+            const t = n;
+        },
+        73367: (e, l, s) => {
+            s.r(l), s.d(l, { default: () => t });
+            const n = {
+                fragment: {
+                    argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "screen_names" }]),
+                    kind: "Fragment",
+                    metadata: null,
+                    name: "WallOfLoveCardQuery",
+                    selections: [
+                        {
+                            kind: "RequiredField",
+                            field: {
+                                alias: null,
+                                args: (i = [
+                                    { kind: "Literal", name: "safety_level", value: "ForDevelopmentOnly" },
+                                    { kind: "Variable", name: "screen_names", variableName: "screen_names" },
+                                ]),
+                                concreteType: "UserResults",
+                                kind: "LinkedField",
+                                name: "user_results_by_screen_names",
+                                plural: !0,
+                                selections: [
+                                    {
+                                        kind: "RequiredField",
+                                        field: {
+                                            alias: null,
+                                            args: null,
+                                            concreteType: null,
+                                            kind: "LinkedField",
+                                            name: "result",
+                                            plural: !1,
+                                            selections: [
+                                                { args: null, kind: "FragmentSpread", name: "avatar_user" },
+                                                { args: null, kind: "FragmentSpread", name: "username_user" },
+                                            ],
+                                            storageKey: null,
+                                        },
+                                        action: "THROW",
+                                    },
+                                ],
+                                storageKey: null,
+                            },
+                            action: "THROW",
+                        },
+                    ],
+                    type: "Query",
+                    abstractKey: null,
+                },
+                kind: "Request",
+                operation: {
+                    argumentDefinitions: a,
+                    kind: "Operation",
+                    name: "WallOfLoveCardQuery",
+                    selections: [
+                        {
+                            alias: null,
+                            args: i,
+                            concreteType: "UserResults",
+                            kind: "LinkedField",
+                            name: "user_results_by_screen_names",
+                            plural: !0,
+                            selections: [
+                                {
+                                    alias: null,
+                                    args: null,
+                                    concreteType: null,
+                                    kind: "LinkedField",
+                                    name: "result",
+                                    plural: !1,
+                                    selections: [
+                                        { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
+                                        {
+                                            kind: "InlineFragment",
+                                            selections: [
+                                                { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
+                                                {
+                                                    alias: null,
+                                                    args: null,
+                                                    concreteType: "UserCore",
+                                                    kind: "LinkedField",
+                                                    name: "core",
+                                                    plural: !1,
+                                                    selections: [
+                                                        { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
+                                                        { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
+                                                    ],
+                                                    storageKey: null,
+                                                },
+                                                { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
+                                                {
+                                                    alias: null,
+                                                    args: null,
+                                                    concreteType: "HighlightedUserLabelResponse",
+                                                    kind: "LinkedField",
+                                                    name: "affiliates_highlighted_label",
+                                                    plural: !1,
+                                                    selections: [
+                                                        {
+                                                            alias: null,
+                                                            args: null,
+                                                            concreteType: "HighlightedUserLabel",
+                                                            kind: "LinkedField",
+                                                            name: "label",
+                                                            plural: !1,
+                                                            selections: [
+                                                                { alias: null, args: null, concreteType: "BadgeInfo", kind: "LinkedField", name: "badge", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null }], storageKey: null },
+                                                                { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
+                                                                { alias: null, args: null, kind: "ScalarField", name: "user_label_display_type", storageKey: null },
+                                                                { alias: null, args: null, kind: "ScalarField", name: "user_label_type", storageKey: null },
+                                                            ],
+                                                            storageKey: null,
+                                                        },
+                                                    ],
+                                                    storageKey: null,
+                                                },
+                                                { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
+                                                { alias: null, args: null, kind: "ScalarField", name: "super_following", storageKey: null },
+                                                {
+                                                    alias: null,
+                                                    args: null,
+                                                    concreteType: "UserVerification",
+                                                    kind: "LinkedField",
+                                                    name: "verification",
+                                                    plural: !1,
+                                                    selections: [
+                                                        { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                                                        { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                    ],
+                                                    storageKey: null,
+                                                },
+                                                (r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
+                                            ],
+                                            type: "User",
+                                            abstractKey: null,
+                                        },
+                                    ],
+                                    storageKey: null,
+                                },
+                                r,
+                            ],
+                            storageKey: null,
+                        },
+                    ],
+                },
+                params: { id: "GJ7-0PSozgOrXIEMGRKi3g", metadata: {}, name: "WallOfLoveCardQuery", operationKind: "query", text: null },
+            };
+            var a, i, r;
+            n.hash = "26217b84d3e85be8b5bd57a2eb182760";
+            const t = n;
+        },
+        392772: (e, l, s) => {
+            s.d(l, { v: () => C });
+            var n = s(552322),
+                a = s(520003),
+                i = s(994542),
+                r = s(313270),
+                t = s(332161),
+                c = s(995348),
+                o = s(177697),
+                d = s(428897),
+                u = s(430962);
+            const g = ({ showTitle: e }) => {
+                    const { business: l } = (0, u.M1)();
+                    return (0, n.jsx)(a.$0, { title: e ? l.landing.andMore.title : void 0, className: "gap-12", children: (0, n.jsxs)("div", { className: "flex flex-col items-center gap-12 pb-8 text-center lg:flex-row lg:gap-8", children: [(0, n.jsx)(m, { title: l.landing.andMore.analytics.title, description: l.landing.andMore.analytics.description, Icon: c.Z }), (0, n.jsx)(m, { title: l.landing.andMore.premiumSupport.title, description: l.landing.andMore.premiumSupport.description, Icon: o.Z }), (0, n.jsx)(m, { title: l.landing.andMore.premiumPlus.title, description: l.landing.andMore.premiumPlus.description, Icon: d.Z })] }) });
+                },
+                m = ({ Icon: e, description: l, title: s }) => (0, n.jsxs)("div", { className: "flex w-full max-w-xs flex-col items-center", children: [(0, n.jsx)("div", { className: "rounded-full bg-text text-background flex h-8 w-8 items-center justify-center p-1.5", children: (0, n.jsx)(e, { className: "h-full w-full" }) }), (0, n.jsx)(t.x, { size: "headline1", weight: "bold", className: "mt-4 text-balance", children: s }), (0, n.jsx)(t.x, { size: "headline2", className: "mt-2 opacity-60", children: l })] });
+            var p = s(322506),
+                x = s(889906),
+                b = s(971046),
+                f = s(323048);
+            const h = () => (0, n.jsx)("div", { className: "flex h-52 w-full justify-center px-4", children: (0, n.jsxs)("div", { className: "relative flex w-full max-w-lg", children: [(0, n.jsx)("div", { className: "absolute left-0 top-4 h-full rounded-xl opacity-80", children: (0, n.jsx)(y, { screenName: "coinbase" }) }), (0, n.jsx)("div", { className: "absolute right-0 top-28 opacity-60", children: (0, n.jsx)(y, { screenName: "tesla" }) }), (0, n.jsx)("div", { className: "absolute left-1/2 top-16 h-16 w-max -translate-x-1/2 transform", children: (0, n.jsx)(y, { screenName: "tobi" }) })] }) }),
+                v = s(156888);
+            function y({ screenName: e }) {
+                const l = (0, x.useLazyLoadQuery)(v, { screenName: e });
+                return l.user_result_by_screen_name?.result ? (0, n.jsxs)("div", { className: "flex items-center gap-2 rounded-xl border p-4", style: { backgroundColor: "#161818", borderColor: "#2d2f2f" }, children: [(0, n.jsx)(b.q, { resolution: "400x400", size: "large", user: l.user_result_by_screen_name.result }), (0, n.jsx)(f.R, { color: "white", size: "headline2", user: l.user_result_by_screen_name.result })] }) : null;
+            }
+            const j = () => {
+                    const { business: e } = (0, u.M1)();
+                    return (0, n.jsxs)("div", {
+                        className: "flex w-full max-w-5xl flex-col gap-6 pb-8 md:grid md:grid-cols-12",
+                        children: [
+                            (0, n.jsx)(a.ZQ, { title: e.landing.goldBadgeAndAffiliations.title, description: e.landing.goldBadgeAndAffiliations.description, className: "col-span-5", children: (0, n.jsx)("div", { className: "flex h-52 w-full justify-center px-4", children: (0, n.jsx)(h, {}) }) }),
+                            (0, n.jsx)(a.ZQ, { title: e.landing.insights.title, description: e.landing.insights.description, className: "col-span-7", children: (0, n.jsxs)("div", { className: "relative w-full pb-16 pl-12", style: { WebkitMaskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0))", maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0))" }, children: [(0, n.jsx)("img", { src: "https://abs.twimg.com/responsive-web/client-web/VO-Landing-Insights-1.d5954f7a.png", alt: "Insights", className: "w-[215px] object-contain opacity-60", loading: "lazy" }), (0, n.jsx)("div", { className: "absolute left-40 right-0 top-14 h-[150px] overflow-hidden", children: (0, n.jsx)("img", { src: "https://abs.twimg.com/responsive-web/client-web/VO-Landing-Insights-2.2f2ccbaa.png", alt: "Insights", className: "absolute left-0 h-full w-auto max-w-none", loading: "lazy" }) })] }) }),
+                            (0, n.jsx)(a.ZQ, { title: e.landing.advertisingCapabilities.title, description: e.landing.advertisingCapabilities.description, className: "col-span-7", children: (0, n.jsxs)("div", { className: "relative flex h-full w-full items-center justify-between  px-16 pb-8 flex-col", children: [(0, n.jsx)("img", { src: "https://abs.twimg.com/responsive-web/client-web/VO-Landing-Advertising.8ece7b2a.png", alt: "Advertising capabilities", className: "w-full object-contain", loading: "lazy" }), (0, n.jsxs)(t.x, { size: "subtext3", color: "gray700", children: [e.landing.advertisingCapabilities.disclaimer, " ", (0, n.jsx)(p.r, { href: "https://help.x.com/en/using-x/verified-organizations/ads-terms", className: "text-blue-300", children: e.landing.pricing.learnMore })] })] }) }),
+                            (0, n.jsx)(a.ZQ, { title: e.landing.people.title, description: e.landing.people.description, comingSoon: !0, className: "col-span-5", children: (0, n.jsx)("div", { className: "h-[250px] w-full px-16", children: (0, n.jsx)("div", { className: "relative h-full w-full", style: { WebkitMaskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0))", maskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0))" }, children: (0, n.jsx)("div", { className: "absolute left-0 right-0", children: (0, n.jsx)("img", { src: "https://abs.twimg.com/responsive-web/client-web/VO-Landing-People-Search.b7b136da.png", alt: "People search", className: "w-full object-cover", loading: "lazy" }) }) }) }) }),
+                            (0, n.jsx)(a.ZQ, { title: e.landing.jobs.title, description: e.landing.jobs.description, className: "col-span-6", children: (0, n.jsx)("div", { className: "h-full w-full px-24", children: (0, n.jsx)("div", { className: "relative h-full min-h-40 w-full", style: { WebkitMaskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0))", maskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0))" }, children: (0, n.jsx)("div", { className: "absolute left-0 right-0", children: (0, n.jsx)("img", { src: "https://abs.twimg.com/responsive-web/client-web/VO-Landing-Jobs.85c5f03a.png", alt: "People search", className: "w-full object-cover", loading: "lazy" }) }) }) }) }),
+                            (0, n.jsx)(a.ZQ, { title: e.landing.jobPromotion.title, description: e.landing.jobPromotion.description, className: "col-span-6", children: (0, n.jsx)("div", { className: "h-[250px] w-full px-20", children: (0, n.jsx)("div", { className: "relative h-full w-full", style: { WebkitMaskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0))", maskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0))" }, children: (0, n.jsx)("div", { className: "absolute left-0 right-0", children: (0, n.jsx)("img", { src: "https://abs.twimg.com/responsive-web/client-web/VO-Landing-Job-Promotion.8f36409a.png", alt: "People search", className: "w-full object-cover", loading: "lazy" }) }) }) }) }),
+                        ],
+                    });
+                },
+                w = ({ ctaUrl: e }) => {
+                    const { business: l } = (0, u.M1)();
+                    return (0, n.jsx)(a.$0, { children: (0, n.jsxs)(a.Zb, { className: "flex w-full flex-col items-center justify-center gap-8 px-10 py-10 max-md:text-center md:flex-row md:px-20 md:py-[60px]", children: [(0, n.jsxs)(t.x, { size: "title3", weight: "medium", className: "md:text-title1 w-full md:leading-[56px]", children: [l.landing.footer.title1, " ", (0, n.jsx)("br", {}), l.landing.footer.title2] }), (0, n.jsxs)("div", { className: "flex w-full flex-col items-center justify-center gap-6", children: [(0, n.jsx)(a.ad, { ctaUrl: e }), (0, n.jsx)(p.r, { href: "https://verified.x.com/en/verfied-organizations-interest-form", className: "text-text font-medium", children: l.landing.footer.cta })] })] }) });
+                },
+                k = () => (0, n.jsxs)(a.$0, { className: "relative aspect-[16/9] w-full shrink-0 items-center", children: [(0, n.jsx)("img", { alt: "", src: "https://abs.twimg.com/responsive-web/client-web/VO-Landing-Hero-v2.918f06fa.png", className: "h-fulls w-full object-contain" }), (0, n.jsx)("div", { className: "to-background absolute bottom-0 left-0 h-full w-full bg-gradient-to-b from-transparent from-80%" })] }),
+                N = [
+                    { name: "SpaceX", url: "https://abs.twimg.com/responsive-web/client-web/VO-Landing-Logo-SpaceX.73d54a1a.png" },
+                    { name: "Coinbase", url: "https://abs.twimg.com/responsive-web/client-web/VO-Landing-Logo-Coinbase.8994752a.png" },
+                    { name: "Vercel", url: "https://abs.twimg.com/responsive-web/client-web/VO-Landing-Logo-Vercel.c174922a.png" },
+                    { name: "Shopify", url: "https://abs.twimg.com/responsive-web/client-web/VO-Landing-Logo-Shopify.80684bfa.png" },
+                ],
+                _ = () => (0, n.jsx)(a.$0, { className: "w-full overflow-hidden pb-16", children: (0, n.jsxs)("div", { className: "relative flex w-full rtl:flex-row-reverse", children: [[0, 1].map((e) => (0, n.jsx)("div", { className: "animate-marquee flex opacity-75", style: { animationDuration: "20s", animationIterationCount: "infinite", animationTimingFunction: "linear" }, children: N.map((e) => (0, n.jsx)("div", { className: "mx-4 w-20 flex-shrink-0 md:mx-8 md:w-40", children: (0, n.jsx)("img", { src: e.url, alt: `${e.name} logo`, className: "h-9 w-full object-contain brightness-0 dark:invert" }) }, e.name)) }, `marquee-${e}`)), (0, n.jsxs)("div", { className: "pointer-events-none absolute h-full w-full", children: [(0, n.jsx)("div", { className: "from-background absolute start-0 top-0 h-full w-1/12 bg-gradient-to-r rtl:bg-gradient-to-l to-transparent" }), (0, n.jsx)("div", { className: "from-background absolute end-0 top-0 h-full w-1/12 bg-gradient-to-l rtl:bg-gradient-to-r to-transparent" })] })] }) }),
+                L = () => {
+                    const { business: e } = (0, u.M1)();
+                    return (0, n.jsxs)(a.$0, { className: "flex flex-col items-center gap-6 pb-8 text-center", children: [(0, n.jsxs)("p", { className: "text-headline1 flex items-center gap-2 font-bold", children: [(0, n.jsx)(d.Z, { className: "h-[18px] w-[18px]" }), e.landing.organizations] }), (0, n.jsx)("h1", { className: "text-title1 text-balance font-bold md:text-[64px] md:leading-[70px]", children: (0, n.jsx)("span", { className: "from-text to-text/30 bg-gradient-to-r from-90% bg-clip-text text-transparent", children: e.landing.hero.title }) }), (0, n.jsx)("p", { className: "text-headline1 max-w-[740px] text-pretty opacity-60", children: e.landing.hero.description })] });
+                };
+            var S = s(134877);
+            const F = s(73367),
+                K = ({ businessScreenName: e, text: l, userScreenName: s, userTitle: i }) => {
+                    const r = (0, x.useLazyLoadQuery)(F, { screen_names: [e, s] }),
+                        c = r.user_results_by_screen_names[0]?.result,
+                        o = r.user_results_by_screen_names[1]?.result;
+                    if (!c || !o) throw new Error("Required user data is missing");
+                    return (0, n.jsxs)(a.Zb, { className: "flex w-full flex-col gap-10 p-8", children: [(0, n.jsxs)("div", { className: "flex flex-col gap-5", children: [(0, n.jsxs)("div", { className: "flex flex-row gap-2", children: [(0, n.jsx)("div", { className: "size-7", children: (0, n.jsx)(b.q, { resolution: "400x400", size: "fill", user: c }) }), (0, n.jsx)(f.R, { size: "headline1", user: c })] }), (0, n.jsx)(t.x, { size: "headline1", className: "opacity-70", children: l })] }), (0, n.jsxs)("div", { className: "flex flex-row gap-4", children: [(0, n.jsx)("div", { className: "size-12", children: (0, n.jsx)(b.q, { resolution: "400x400", size: "fill", user: o }) }), (0, n.jsxs)("div", { className: "flex flex-col gap-1", children: [(0, n.jsx)(f.R, { size: "body", user: o }), (0, n.jsx)(t.x, { size: "body", className: "opacity-70", weight: "bold", children: i })] })] })] });
+                },
+                T = () => {
+                    const { business: e } = (0, u.M1)();
+                    return (0, n.jsx)(a.$0, { title: "Wall of love", className: "gap-12", children: (0, n.jsxs)("div", { className: "flex w-full flex-col items-center justify-between gap-4 md:flex-row md:items-stretch", children: [(0, n.jsx)(S.S, { fallback: null, children: (0, n.jsx)(K, { businessScreenName: "coinbase", text: e.landing.wallOfLove.coinbase.text, userScreenName: "brian_armstrong", userTitle: e.landing.wallOfLove.coinbase.userTitle }) }), (0, n.jsx)(S.S, { fallback: null, children: (0, n.jsx)(K, { businessScreenName: "vercel", text: e.landing.wallOfLove.vercel.text, userScreenName: "rauchg", userTitle: e.landing.wallOfLove.vercel.userTitle }) })] }) });
+                },
+                C = ({ SubscribeButton: e, basicPrices: l, enterpriseUrl: s, fullAccessPrices: t, interval: c = "Year", onIntervalChange: o, sectionConfig: d, includeHandleMarketing: u = !1 }) => {
+                    const m = (Array.isArray(d) ? d : Object.entries({ andMore: { order: 6, showTitle: !0, visible: !0 }, benefits: { order: 5, visible: !0 }, footer: { order: 9, visible: !0 }, hero: { order: 8, visible: !0 }, pricing: { order: 3, showTitle: !1, visible: !0 }, socialProof: { order: 4, visible: !0 }, subscribeButtonCTA: { order: 2, visible: !1 }, title: { order: 1, visible: !0 }, wallOfLove: { order: 7, showTitle: !0, visible: !1 }, offerBanner: { order: 3, visible: !1 }, voCards: { order: 10, visible: !1 }, ...d }).map(([e, l]) => ({ ...l, key: e }))).filter((e) => e.visible).sort((e, l) => e.order - l.order);
+                    return (0, n.jsx)("div", {
+                        className: "text-text flex w-full flex-col items-center gap-10 pb-40 pt-10 max-md:px-4",
+                        children: m.map((d, m) => {
+                            const { ctaUrl: p, showTitle: x, key: b } = d,
+                                f = l?.Year?.promotionInfo?.endsAtMsec || t?.Year?.promotionInfo?.endsAtMsec;
+                            return (() => {
+                                switch (b) {
+                                    case "title":
+                                        return (0, n.jsx)(L, {}, `${b}-${m}`);
+                                    case "hero":
+                                        return (0, n.jsx)(k, {}, `${b}-${m}`);
+                                    case "socialProof":
+                                        return (0, n.jsx)(_, {}, `${b}-${m}`);
+                                    case "subscribeButtonCTA":
+                                        return (0, n.jsx)(a.ad, { ctaUrl: p }, `${b}-${m}`);
+                                    case "benefits":
+                                        return (0, n.jsx)(j, {}, `${b}-${m}`);
+                                    case "andMore":
+                                        return (0, n.jsx)(g, { showTitle: x }, `${b}-${m}`);
+                                    case "offerBanner":
+                                        return (0, n.jsx)(i.Z, { targetDate: f }, `${b}-${m}`);
+                                    case "voCards":
+                                        return (0, n.jsx)(h, {}, `${b}-${m}`);
+                                    case "pricing":
+                                        return (0, n.jsx)(r.n, { basicPrices: l, fullAccessPrices: t, interval: c, onIntervalChange: o, SubscribeButton: e, showTitle: x, enterpriseUrl: s, includeHandleMarketing: u }, `${b}-${m}`);
+                                    case "wallOfLove":
+                                        return (0, n.jsx)(T, {}, `${b}-${m}`);
+                                    case "footer":
+                                        return (0, n.jsx)(w, { ctaUrl: p }, `${b}-${m}`);
+                                    default:
+                                        return null;
+                                }
+                            })();
+                        }),
+                    });
+                };
+        },
+        735079: (e, l, s) => {
+            var n = s(609859);
             e.exports = function (e) {
-                return t[e].prototype;
+                return n[e].prototype;
             };
         },
-        278945: (e, n, r) => {
-            var t = r(23103),
-                u = r(265968),
-                o = r(277111),
-                c = r(910905),
-                a = r(341253),
-                i = r(735079),
-                l = r(609736),
-                s = Array,
-                d = u(i("Array").sort);
-            t(
+        278945: (e, l, s) => {
+            var n = s(23103),
+                a = s(265968),
+                i = s(277111),
+                r = s(910905),
+                t = s(341253),
+                c = s(735079),
+                o = s(609736),
+                d = Array,
+                u = a(c("Array").sort);
+            n(
                 { target: "Array", proto: !0 },
                 {
                     toSorted: function (e) {
-                        void 0 !== e && o(e);
-                        var n = c(this),
-                            r = a(s, n);
-                        return d(r, e);
+                        void 0 !== e && i(e);
+                        var l = r(this),
+                            s = t(d, l);
+                        return u(s, e);
                     },
                 },
             ),
-                l("toSorted");
+                o("toSorted");
         },
-        606161: (e, n, r) => {
-            var t = (0, r(902091).default)(r(463928)),
-                u = r(647677),
-                o = r(703383),
-                c = o.__internal.fetchQueryDeduped,
-                a = o.Observable,
-                i = o.PreloadableQueryRegistry,
-                l = o.ReplaySubject,
-                s = o.createOperationDescriptor,
-                d = o.getRequest,
-                f = o.getRequestIdentifier,
-                v = 100001;
-            e.exports = {
-                loadQuery: function (e, n, r, o, p) {
-                    var y;
-                    v++;
-                    var h,
-                        m,
-                        b,
-                        k,
-                        _,
-                        w,
-                        C = null !== (y = null == o ? void 0 : o.fetchPolicy) && void 0 !== y ? y : "store-or-network",
-                        g = (0, t.default)((0, t.default)({}, null == o ? void 0 : o.networkCacheConfig), {}, { force: !0 }),
-                        P = !1,
-                        Q = function (n, r) {
-                            return (P = !0), e.executeWithSource({ operation: n, source: r });
-                        },
-                        R = new l(),
-                        N = a.create(function (e) {
-                            return R.subscribe(e);
-                        }),
-                        x = null,
-                        S = !1,
-                        E = function (n) {
-                            S = !0;
-                            var t = new l(),
-                                u = "raw-network-request-" + f(n, r),
-                                o = c(e, u, function () {
-                                    return e.getNetwork().execute(n, r, g);
-                                }).subscribe({
-                                    error: function (e) {
-                                        (x = e), t.error(e);
-                                    },
-                                    next: function (e) {
-                                        t.next(e);
-                                    },
-                                    complete: function () {
-                                        t.complete();
-                                    },
-                                }).unsubscribe;
-                            return (
-                                (m = o),
-                                a.create(function (e) {
-                                    var n = t.subscribe(e);
-                                    return function () {
-                                        n.unsubscribe(), m();
-                                    };
-                                })
-                            );
-                        },
-                        q = function (n, r) {
-                            S = !0;
-                            var t = c(e, n.request.identifier, r).subscribe({
-                                error: function (e) {
-                                    R.error(e);
-                                },
-                                next: function (e) {
-                                    R.next(e);
-                                },
-                                complete: function () {
-                                    R.complete();
-                                },
-                            });
-                            b = t.unsubscribe;
-                        },
-                        D = function (n) {
-                            var t = s(n, r, g);
-                            ((h = e.retain(t)), "store-only" !== C) &&
-                                ("store-or-network" !== C || "available" !== e.check(t).status) &&
-                                q(t, function () {
-                                    var e = E(n.params);
-                                    return Q(t, e);
-                                });
-                        };
-                    if ("PreloadableConcreteRequest" === n.kind) {
-                        null === (w = (k = n.params).id) && u(!1);
-                        var T = i.get(w);
-                        if (null != T) D(T);
-                        else {
-                            var A = "store-only" === C ? null : E(k),
-                                I = i.onLoad(w, function (n) {
-                                    _();
-                                    var t = s(n, r, g);
-                                    (h = e.retain(t)),
-                                        null != A &&
-                                            q(t, function () {
-                                                return Q(t, A);
-                                            });
-                                });
-                            _ = I.dispose;
-                        }
-                    } else {
-                        var M = d(n);
-                        (w = null != (k = M.params).cacheID ? k.cacheID : k.id), D(M);
-                    }
-                    var O = !1,
-                        j = !1,
-                        W = !1,
-                        F = function () {
-                            j || (h && h.dispose(), (j = !0));
-                        },
-                        L = function () {
-                            W || (P ? b && b() : m && m(), _ && _(), (W = !0));
-                        };
-                    return {
-                        kind: "PreloadedQuery",
-                        environment: e,
-                        environmentProviderOptions: p,
-                        dispose: function () {
-                            O || (F(), L(), (O = !0));
-                        },
-                        releaseQuery: F,
-                        cancelNetworkRequest: L,
-                        fetchKey: v,
-                        id: w,
-                        get isDisposed() {
-                            return O || j;
-                        },
-                        get networkError() {
-                            return x;
-                        },
-                        name: k.name,
-                        networkCacheConfig: g,
-                        fetchPolicy: C,
-                        source: S ? N : void 0,
-                        variables: r,
-                    };
-                },
-            };
-        },
-        928123: (e, n, r) => {
-            var t = r(138239),
-                u = r(303566),
-                o = r(437429),
-                c = r(647677),
-                a = (r(202784).useDebugValue, r(703383).__internal),
-                i = a.fetchQueryDeduped,
-                l = a.fetchQuery;
-            r(826590);
-            e.exports = function (e, n, r) {
-                var a,
-                    s = o(),
-                    d = n.fetchKey,
-                    f = n.fetchPolicy,
-                    v = n.source,
-                    p = n.variables,
-                    y = n.networkCacheConfig,
-                    h = u(e, p, y);
-                if ("PreloadedQuery_DEPRECATED" === n.kind)
-                    h.request.node.params.name !== n.name && c(!1),
-                        (a = {
-                            componentDisplayName: "usePreloadedQuery()",
-                            fetchKey: d,
-                            fetchObservable: i(s, h.request.identifier, function () {
-                                return s === n.environment && null != v ? s.executeWithSource({ operation: h, source: v }) : s.execute({ operation: h });
-                            }),
-                            fetchPolicy: f,
-                            query: h,
-                            renderPolicy: null == r ? void 0 : r.UNSTABLE_renderPolicy,
-                        });
-                else {
-                    var m = l(s, h);
-                    a = { componentDisplayName: "usePreloadedQuery()", fetchObservable: null != v && s === n.environment ? v.ifEmpty(m) : (n.environment, m), fetchKey: d, fetchPolicy: f, query: h, renderPolicy: null == r ? void 0 : r.UNSTABLE_renderPolicy };
-                }
-                return t(a);
-            };
-        },
-        72845: (e, n, r) => {
-            var t = (0, r(902091).default)(r(22395)),
-                u = r(606161).loadQuery,
-                o = r(995402),
-                c = r(667368),
-                a = r(437429),
-                i = r(202784),
-                l = i.useCallback,
-                s = i.useEffect,
-                d = i.useRef,
-                f = i.useState,
-                v = r(703383),
-                p = v.RelayFeatureFlags,
-                y = v.getRequest,
-                h = { kind: "NullQueryReference" };
-            function m(e) {
-                return "PreloadableConcreteRequest" === e.kind ? void 0 !== e.params.metadata.live : void 0 !== y(e).params.metadata.live;
-            }
-            e.exports = function (e, n) {
-                return p.ENABLE_ACTIVITY_COMPATIBILITY
-                    ? c(e, n)
-                    : (function (e, n) {
-                          var r = null != n ? n : h,
-                              c = a(),
-                              i = o(),
-                              v = d(new Set([r])),
-                              p = f(function () {
-                                  return r;
-                              }),
-                              y = p[0],
-                              b = p[1],
-                              k = f(function () {
-                                  return r;
-                              }),
-                              _ = k[0],
-                              w = k[1];
-                          r !== _ && (v.current.add(r), w(r), b(r));
-                          var C = l(
-                                  function () {
-                                      i.current && (v.current.add(h), b(h));
-                                  },
-                                  [i],
-                              ),
-                              g = l(
-                                  function (n, r) {
-                                      var t = null != r && r.hasOwnProperty("__environment") ? { fetchPolicy: r.fetchPolicy, networkCacheConfig: r.networkCacheConfig, __nameForWarning: r.__nameForWarning } : r;
-                                      if (i.current) {
-                                          var o,
-                                              a = u(null !== (o = null == r ? void 0 : r.__environment) && void 0 !== o ? o : c, e, n, t);
-                                          v.current.add(a), b(a);
-                                      }
-                                  },
-                                  [c, e, b, i],
-                              ),
-                              P = d(!1);
-                          return (
-                              s(function () {
-                                  return function () {
-                                      P.current = !0;
-                                  };
-                              }, []),
-                              s(
-                                  function () {
-                                      if (!0 === P.current) return (P.current = !1), void ("NullQueryReference" !== y.kind && g(y.variables, { fetchPolicy: y.fetchPolicy, networkCacheConfig: y.networkCacheConfig }));
-                                      var n = v.current;
-                                      if (i.current) {
-                                          var r,
-                                              u = (0, t.default)(n);
-                                          try {
-                                              for (u.s(); !(r = u.n()).done; ) {
-                                                  var o = r.value;
-                                                  if (o === y) break;
-                                                  n.delete(o), "NullQueryReference" !== o.kind && (m(e) ? o.dispose && o.dispose() : o.releaseQuery && o.releaseQuery());
-                                              }
-                                          } catch (e) {
-                                              u.e(e);
-                                          } finally {
-                                              u.f();
-                                          }
-                                      }
-                                  },
-                                  [y, i, g, e],
-                              ),
-                              s(
-                                  function () {
-                                      return function () {
-                                          var n,
-                                              r = (0, t.default)(v.current);
-                                          try {
-                                              for (r.s(); !(n = r.n()).done; ) {
-                                                  var u = n.value;
-                                                  "NullQueryReference" !== u.kind && (m(e) ? u.dispose && u.dispose() : u.releaseQuery && u.releaseQuery());
-                                              }
-                                          } catch (e) {
-                                              r.e(e);
-                                          } finally {
-                                              r.f();
-                                          }
-                                      };
-                                  },
-                                  [e],
-                              ),
-                              ["NullQueryReference" === y.kind ? null : y, g, C]
-                          );
-                      })(e, n);
-            };
-        },
-        667368: (e, n, r) => {
-            var t = (0, r(902091).default)(r(22395)),
-                u = r(606161).loadQuery,
-                o = r(995402),
-                c = r(437429),
-                a = r(202784),
-                i = a.useCallback,
-                l = a.useEffect,
-                s = a.useInsertionEffect,
-                d = a.useRef,
-                f = a.useState,
-                v = r(703383).getRequest,
-                p = { kind: "NullQueryReference" };
-            function y(e) {
-                return "PreloadableConcreteRequest" === e.kind ? void 0 !== e.params.metadata.live : void 0 !== v(e).params.metadata.live;
-            }
-            e.exports = function (e, n) {
-                var r = null != n ? n : p,
-                    a = c(),
-                    v = o(),
-                    h = d(null);
-                null == h.current && (h.current = new Set([r]));
-                var m,
-                    b = f(function () {
-                        return r;
-                    }),
-                    k = b[0],
-                    _ = b[1],
-                    w = f(function () {
-                        return r;
-                    }),
-                    C = w[0],
-                    g = w[1];
-                r !== C && (null === (m = h.current) || void 0 === m || m.add(r), g(r), _(r));
-                var P = i(
-                        function () {
-                            var e;
-                            v.current && (null === (e = h.current) || void 0 === e || e.add(p), _(p));
-                        },
-                        [v],
-                    ),
-                    Q = i(
-                        function (n, r) {
-                            var t, o;
-                            if (v.current) {
-                                var c = null != r && r.hasOwnProperty("__environment") ? { fetchPolicy: r.fetchPolicy, networkCacheConfig: r.networkCacheConfig, __nameForWarning: r.__nameForWarning } : r,
-                                    i = u(null !== (t = null == r ? void 0 : r.__environment) && void 0 !== t ? t : a, e, n, c);
-                                null === (o = h.current) || void 0 === o || o.add(i), _(i);
-                            }
-                        },
-                        [a, e, _, v],
-                    ),
-                    R = i(function (e, n) {
-                        var r,
-                            u,
-                            o = null !== (r = h.current) && void 0 !== r ? r : new Set(),
-                            c = (0, t.default)(o);
-                        try {
-                            for (c.s(); !(u = c.n()).done; ) {
-                                var a = u.value;
-                                a !== n && "NullQueryReference" !== a.kind && (y(e) ? a.dispose && a.dispose() : a.releaseQuery && a.releaseQuery());
-                            }
-                        } catch (e) {
-                            c.e(e);
-                        } finally {
-                            c.f();
-                        }
-                    }, []),
-                    N = d(null);
-                return (
-                    l(
-                        function () {
-                            return (
-                                R(e, k),
-                                null != N.current && (clearTimeout(N.current), (N.current = null)),
-                                function () {
-                                    N.current = setTimeout(function () {
-                                        R(e, null);
-                                    }, 3e5);
-                                }
-                            );
-                        },
-                        [e, k],
-                    ),
-                    s(
-                        function () {
-                            return function () {
-                                N.current && clearTimeout(N.current), (N.current = null), R(e, null);
-                            };
-                        },
-                        [e],
-                    ),
-                    ["NullQueryReference" === k.kind ? null : k, Q, P]
-                );
-            };
-        },
-        199237: (e, n, r) => {
-            r.d(n, { fC: () => C, bU: () => g });
-            var t = r(202784),
-                u = r(717998),
-                o = r(262656),
-                c = r(552322);
-            function a(...e) {
-                const n = e[0];
-                if (1 === e.length) return n;
-                const r = () => {
-                    const r = e.map((e) => ({ useScope: e(), scopeName: e.scopeName }));
+        199237: (e, l, s) => {
+            s.d(l, { fC: () => w, bU: () => k });
+            var n = s(202784),
+                a = s(717998),
+                i = s(262656),
+                r = s(552322);
+            function t(...e) {
+                const l = e[0];
+                if (1 === e.length) return l;
+                const s = () => {
+                    const s = e.map((e) => ({ useScope: e(), scopeName: e.scopeName }));
                     return function (e) {
-                        const u = r.reduce((n, { useScope: r, scopeName: t }) => ({ ...n, ...r(e)[`__scope${t}`] }), {});
-                        return t.useMemo(() => ({ [`__scope${n.scopeName}`]: u }), [u]);
+                        const a = s.reduce((l, { useScope: s, scopeName: n }) => ({ ...l, ...s(e)[`__scope${n}`] }), {});
+                        return n.useMemo(() => ({ [`__scope${l.scopeName}`]: a }), [a]);
                     };
                 };
-                return (r.scopeName = n.scopeName), r;
+                return (s.scopeName = l.scopeName), s;
             }
-            var i = r(387695),
-                l = r(890022),
-                s = r(335019),
-                d = r(172714),
-                f = "Switch",
-                [v, p] = (function (e, n = []) {
-                    let r = [];
-                    const u = () => {
-                        const n = r.map((e) => t.createContext(e));
-                        return function (r) {
-                            const u = r?.[e] || n;
-                            return t.useMemo(() => ({ [`__scope${e}`]: { ...r, [e]: u } }), [r, u]);
+            var c = s(387695),
+                o = s(890022),
+                d = s(335019),
+                u = s(172714),
+                g = "Switch",
+                [m, p] = (function (e, l = []) {
+                    let s = [];
+                    const a = () => {
+                        const l = s.map((e) => n.createContext(e));
+                        return function (s) {
+                            const a = s?.[e] || l;
+                            return n.useMemo(() => ({ [`__scope${e}`]: { ...s, [e]: a } }), [s, a]);
                         };
                     };
                     return (
-                        (u.scopeName = e),
+                        (a.scopeName = e),
                         [
-                            function (n, u) {
-                                const o = t.createContext(u),
-                                    a = r.length;
-                                function i(n) {
-                                    const { scope: r, children: u, ...i } = n,
-                                        l = r?.[e][a] || o,
-                                        s = t.useMemo(() => i, Object.values(i));
-                                    return (0, c.jsx)(l.Provider, { value: s, children: u });
+                            function (l, a) {
+                                const i = n.createContext(a),
+                                    t = s.length;
+                                function c(l) {
+                                    const { scope: s, children: a, ...c } = l,
+                                        o = s?.[e][t] || i,
+                                        d = n.useMemo(() => c, Object.values(c));
+                                    return (0, r.jsx)(o.Provider, { value: d, children: a });
                                 }
                                 return (
-                                    (r = [...r, u]),
-                                    (i.displayName = n + "Provider"),
+                                    (s = [...s, a]),
+                                    (c.displayName = l + "Provider"),
                                     [
-                                        i,
-                                        function (r, c) {
-                                            const i = c?.[e][a] || o,
-                                                l = t.useContext(i);
-                                            if (l) return l;
-                                            if (void 0 !== u) return u;
-                                            throw new Error(`\`${r}\` must be used within \`${n}\``);
+                                        c,
+                                        function (s, r) {
+                                            const c = r?.[e][t] || i,
+                                                o = n.useContext(c);
+                                            if (o) return o;
+                                            if (void 0 !== a) return a;
+                                            throw new Error(`\`${s}\` must be used within \`${l}\``);
                                         },
                                     ]
                                 );
                             },
-                            a(u, ...n),
+                            t(a, ...l),
                         ]
                     );
-                })(f),
-                [y, h] = v(f),
-                m = t.forwardRef((e, n) => {
-                    const { __scopeSwitch: r, name: a, checked: l, defaultChecked: s, required: f, disabled: v, value: p = "on", onCheckedChange: h, ...m } = e,
-                        [b, k] = t.useState(null),
-                        C = (0, o.e)(n, (e) => k(e)),
-                        g = t.useRef(!1),
-                        P = !b || Boolean(b.closest("form")),
-                        [Q = !1, R] = (0, i.T)({ prop: l, defaultProp: s, onChange: h });
-                    return (0, c.jsxs)(y, {
-                        scope: r,
-                        checked: Q,
-                        disabled: v,
+                })(g),
+                [x, b] = m(g),
+                f = n.forwardRef((e, l) => {
+                    const { __scopeSwitch: s, name: t, checked: o, defaultChecked: d, required: g, disabled: m, value: p = "on", onCheckedChange: b, ...f } = e,
+                        [h, v] = n.useState(null),
+                        w = (0, i.e)(l, (e) => v(e)),
+                        k = n.useRef(!1),
+                        N = !h || Boolean(h.closest("form")),
+                        [_ = !1, L] = (0, c.T)({ prop: o, defaultProp: d, onChange: b });
+                    return (0, r.jsxs)(x, {
+                        scope: s,
+                        checked: _,
+                        disabled: m,
                         children: [
-                            (0, c.jsx)(d.WV.button, {
+                            (0, r.jsx)(u.WV.button, {
                                 type: "button",
                                 role: "switch",
-                                "aria-checked": Q,
-                                "aria-required": f,
-                                "data-state": w(Q),
-                                "data-disabled": v ? "" : void 0,
-                                disabled: v,
+                                "aria-checked": _,
+                                "aria-required": g,
+                                "data-state": j(_),
+                                "data-disabled": m ? "" : void 0,
+                                disabled: m,
                                 value: p,
-                                ...m,
-                                ref: C,
-                                onClick: (0, u.M)(e.onClick, (e) => {
-                                    R((e) => !e), P && ((g.current = e.isPropagationStopped()), g.current || e.stopPropagation());
+                                ...f,
+                                ref: w,
+                                onClick: (0, a.M)(e.onClick, (e) => {
+                                    L((e) => !e), N && ((k.current = e.isPropagationStopped()), k.current || e.stopPropagation());
                                 }),
                             }),
-                            P && (0, c.jsx)(_, { control: b, bubbles: !g.current, name: a, value: p, checked: Q, required: f, disabled: v, style: { transform: "translateX(-100%)" } }),
+                            N && (0, r.jsx)(y, { control: h, bubbles: !k.current, name: t, value: p, checked: _, required: g, disabled: m, style: { transform: "translateX(-100%)" } }),
                         ],
                     });
                 });
-            m.displayName = f;
-            var b = "SwitchThumb",
-                k = t.forwardRef((e, n) => {
-                    const { __scopeSwitch: r, ...t } = e,
-                        u = h(b, r);
-                    return (0, c.jsx)(d.WV.span, { "data-state": w(u.checked), "data-disabled": u.disabled ? "" : void 0, ...t, ref: n });
+            f.displayName = g;
+            var h = "SwitchThumb",
+                v = n.forwardRef((e, l) => {
+                    const { __scopeSwitch: s, ...n } = e,
+                        a = b(h, s);
+                    return (0, r.jsx)(u.WV.span, { "data-state": j(a.checked), "data-disabled": a.disabled ? "" : void 0, ...n, ref: l });
                 });
-            k.displayName = b;
-            var _ = (e) => {
-                const { control: n, checked: r, bubbles: u = !0, ...o } = e,
-                    a = t.useRef(null),
-                    i = (0, l.D)(r),
-                    d = (0, s.t)(n);
+            v.displayName = h;
+            var y = (e) => {
+                const { control: l, checked: s, bubbles: a = !0, ...i } = e,
+                    t = n.useRef(null),
+                    c = (0, o.D)(s),
+                    u = (0, d.t)(l);
                 return (
-                    t.useEffect(() => {
-                        const e = a.current,
-                            n = window.HTMLInputElement.prototype,
-                            t = Object.getOwnPropertyDescriptor(n, "checked").set;
-                        if (i !== r && t) {
-                            const n = new Event("click", { bubbles: u });
-                            t.call(e, r), e.dispatchEvent(n);
+                    n.useEffect(() => {
+                        const e = t.current,
+                            l = window.HTMLInputElement.prototype,
+                            n = Object.getOwnPropertyDescriptor(l, "checked").set;
+                        if (c !== s && n) {
+                            const l = new Event("click", { bubbles: a });
+                            n.call(e, s), e.dispatchEvent(l);
                         }
-                    }, [i, r, u]),
-                    (0, c.jsx)("input", { type: "checkbox", "aria-hidden": !0, defaultChecked: r, ...o, tabIndex: -1, ref: a, style: { ...e.style, ...d, position: "absolute", pointerEvents: "none", opacity: 0, margin: 0 } })
+                    }, [c, s, a]),
+                    (0, r.jsx)("input", { type: "checkbox", "aria-hidden": !0, defaultChecked: s, ...i, tabIndex: -1, ref: t, style: { ...e.style, ...u, position: "absolute", pointerEvents: "none", opacity: 0, margin: 0 } })
                 );
             };
-            function w(e) {
+            function j(e) {
                 return e ? "checked" : "unchecked";
             }
-            var C = m,
-                g = k;
+            var w = f,
+                k = v;
         },
-        890022: (e, n, r) => {
-            r.d(n, { D: () => u });
-            var t = r(202784);
-            function u(e) {
-                const n = t.useRef({ value: e, previous: e });
-                return t.useMemo(() => (n.current.value !== e && ((n.current.previous = n.current.value), (n.current.value = e)), n.current.previous), [e]);
+        890022: (e, l, s) => {
+            s.d(l, { D: () => a });
+            var n = s(202784);
+            function a(e) {
+                const l = n.useRef({ value: e, previous: e });
+                return n.useMemo(() => (l.current.value !== e && ((l.current.previous = l.current.value), (l.current.value = e)), l.current.previous), [e]);
             }
         },
-        787321: (e, n, r) => {
-            function t(e) {
-                return (n) => {
-                    const r = (e ? Math[e] : Math.trunc)(n);
-                    return 0 === r ? 0 : r;
+        840489: (e, l, s) => {
+            function n(e) {
+                var l,
+                    s,
+                    a = "";
+                if ("string" == typeof e || "number" == typeof e) a += e;
+                else if ("object" == typeof e)
+                    if (Array.isArray(e)) {
+                        var i = e.length;
+                        for (l = 0; l < i; l++) e[l] && (s = n(e[l])) && (a && (a += " "), (a += s));
+                    } else for (s in e) e[s] && (a && (a += " "), (a += s));
+                return a;
+            }
+            function a() {
+                for (var e, l, s = 0, a = "", i = arguments.length; s < i; s++) (e = arguments[s]) && (l = n(e)) && (a && (a += " "), (a += l));
+                return a;
+            }
+            s.d(l, { W: () => a, Z: () => i });
+            const i = a;
+        },
+        787321: (e, l, s) => {
+            function n(e) {
+                return (l) => {
+                    const s = (e ? Math[e] : Math.trunc)(l);
+                    return 0 === s ? 0 : s;
                 };
             }
-            r.d(n, { u: () => t });
+            s.d(l, { u: () => n });
         },
-        699629: (e, n, r) => {
-            r.d(n, { A: () => c });
-            var t = r(787321),
-                u = r(31418),
-                o = r(641645);
-            function c(e, n, r) {
-                const c = (0, o._)(e, n) / u.vh;
-                return (0, t.u)(r?.roundingMethod)(c);
+        699629: (e, l, s) => {
+            s.d(l, { A: () => r });
+            var n = s(787321),
+                a = s(31418),
+                i = s(641645);
+            function r(e, l, s) {
+                const r = (0, i._)(e, l) / a.vh;
+                return (0, n.u)(s?.roundingMethod)(r);
             }
         },
-        641645: (e, n, r) => {
-            r.d(n, { _: () => u });
-            var t = r(150729);
-            function u(e, n) {
-                return +(0, t.Q)(e) - +(0, t.Q)(n);
+        641645: (e, l, s) => {
+            s.d(l, { _: () => a });
+            var n = s(150729);
+            function a(e, l) {
+                return +(0, n.Q)(e) - +(0, n.Q)(l);
             }
         },
-        534002: (e, n, r) => {
-            r.d(n, { X: () => c });
-            var t = r(787321),
-                u = r(31418),
-                o = r(641645);
-            function c(e, n, r) {
-                const c = (0, o._)(e, n) / u.yJ;
-                return (0, t.u)(r?.roundingMethod)(c);
+        534002: (e, l, s) => {
+            s.d(l, { X: () => r });
+            var n = s(787321),
+                a = s(31418),
+                i = s(641645);
+            function r(e, l, s) {
+                const r = (0, i._)(e, l) / a.yJ;
+                return (0, n.u)(s?.roundingMethod)(r);
             }
         },
-        624656: (e, n, r) => {
-            r.d(n, { c: () => o });
-            var t = r(787321),
-                u = r(641645);
-            function o(e, n, r) {
-                const o = (0, u._)(e, n) / 1e3;
-                return (0, t.u)(r?.roundingMethod)(o);
+        624656: (e, l, s) => {
+            s.d(l, { c: () => i });
+            var n = s(787321),
+                a = s(641645);
+            function i(e, l, s) {
+                const i = (0, a._)(e, l) / 1e3;
+                return (0, n.u)(s?.roundingMethod)(i);
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-d2eb5610.ca02970a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-d2eb5610.8bca210a.js.map

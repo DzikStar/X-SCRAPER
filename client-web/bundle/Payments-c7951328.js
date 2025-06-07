@@ -90,38 +90,40 @@
                 c = n.memo(o);
         },
         516813: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => u });
+            a.r(t), a.d(t, { default: () => p });
             var n = a(202784),
                 r = a(107267),
                 o = a(736063),
                 c = a(514639),
-                l = a(725516),
-                s = a(160144);
-            const i = (e) => {
+                l = a(445664),
+                s = a(725516),
+                i = a(160144);
+            const d = (e) => {
                     const t = (0, r.useHistory)(),
-                        a = (0, l.z)(),
+                        a = (0, s.z)(),
                         o = (0, r.useParams)(),
-                        i = c.Kc[o.tier ?? c.Kc.tier2],
-                        d = t.location?.state,
-                        m = d?.redirectPath,
-                        u = d?.closePath,
-                        p = d?.redirectState,
-                        y = d?.requestedField,
-                        h = d?.challengeId,
-                        g = d?.challengeInitiator,
-                        { linkType: f } = c.AU[i];
+                        { isActive: d } = (0, l.Z)({ fetchKey: "Payments" }),
+                        m = c.Kc[o.tier ?? c.Kc.tier2],
+                        u = t.location?.state,
+                        p = u?.redirectPath,
+                        y = u?.closePath ?? (d ? c.gp : "/"),
+                        h = u?.redirectState,
+                        g = u?.requestedField,
+                        f = u?.challengeId,
+                        b = u?.challengeInitiator,
+                        { linkType: E } = c.AU[m];
                     return (
                         n.useEffect(() => {
-                            a && i && a.scribe({ page: "money", section: "verify-identity", component: i, action: "impression" });
-                        }, [a, i]),
-                        n.createElement(s.Z, { additionalParams: y ? [{ key: "requestedField", value: y }] : void 0, challengeId: h, challengeInitiator: g, closePath: u, linkType: f, redirectPath: m, redirectState: p })
+                            a && m && a.scribe({ page: "money", section: "verify-identity", component: m, action: "impression" });
+                        }, [a, m]),
+                        n.createElement(i.Z, { additionalParams: g ? [{ key: "requestedField", value: g }] : void 0, challengeId: f, challengeInitiator: b, closePath: y, linkType: E, redirectPath: p, redirectState: h })
                     );
                 },
-                d = { context: "VerifyIdentity" };
-            function m(e) {
-                return n.createElement(o.H, { errorConfig: d }, n.createElement(i, e));
+                m = { context: "VerifyIdentity" };
+            function u(e) {
+                return n.createElement(o.H, { errorConfig: m }, n.createElement(d, e));
             }
-            const u = n.memo(m);
+            const p = n.memo(u);
         },
         891053: (e, t, a) => {
             a.r(t), a.d(t, { default: () => v });
@@ -184,14 +186,14 @@
                                             e.scribe({ page: "money", section: "verify-payment-method", element: "VerifyPaymentMethod", action: "error" }), t({ text: "Something went wrong. Please try again later." });
                                         });
                         }, [t, e, b, a, f, g]),
-                        k = n.useCallback(() => {
+                        Z = n.useCallback(() => {
                             a.push(g ?? p.gp);
                         }, [a, g]),
-                        Z = n.createElement(l.Z, { style: o.footer }, n.createElement(s.ZP, { color: "gray700", size: "subtext2" }, 'By clicking "Continue", you agree to the', " ", n.createElement(s.ZP, { color: "text", link: y.uc, size: "subtext2" }, "Terms & Conditions")), n.createElement(i.ZP, { disabled: E, onPress: C, size: "large", type: "primaryFilled" }, E ? n.createElement(d.Z, null) : "Continue"));
-                    return n.createElement(m.Z, { backButtonType: "close", bottomBar: Z, history: a, onBackClick: k, withoutBottomBarMobile: !0 }, n.createElement(l.Z, { style: o.container }, n.createElement(s.ZP, { size: "title2", style: h.ZP.title, weight: "heavy" }, "Verify your bank account"), n.createElement(s.ZP, null, "You need to login to verify your bank account before you can proceed.")));
+                        k = n.createElement(l.Z, { style: o.footer }, n.createElement(s.ZP, { color: "gray700", size: "subtext2" }, 'By clicking "Continue", you agree to the', " ", n.createElement(s.ZP, { color: "text", link: y.uc, size: "subtext2" }, "Terms & Conditions")), n.createElement(i.ZP, { disabled: E, onPress: C, size: "large", type: "primaryFilled" }, E ? n.createElement(d.Z, null) : "Continue"));
+                    return n.createElement(m.Z, { backButtonType: "close", bottomBar: k, history: a, onBackClick: Z, withoutBottomBarMobile: !0 }, n.createElement(l.Z, { style: o.container }, n.createElement(s.ZP, { size: "title2", style: h.ZP.title, weight: "heavy" }, "Verify your bank account"), n.createElement(s.ZP, null, "You need to login to verify your bank account before you can proceed.")));
                 },
-                k = n.memo(C),
-                Z = (e) => {
+                Z = n.memo(C),
+                k = (e) => {
                     const t = (0, r.useHistory)(),
                         a = (0, c.z)(),
                         o = t.location?.state?.step;
@@ -199,17 +201,17 @@
                         n.useEffect(() => {
                             a && a.scribe({ page: "money", section: "verify-payment-method", component: o, action: "impression" });
                         }, [a, o]),
-                        n.createElement(k, null)
+                        n.createElement(Z, null)
                     );
                 },
                 w = { context: "VerifyPaymentMethod" };
             function P(e) {
-                return n.createElement(o.H, { errorConfig: w }, n.createElement(Z, e));
+                return n.createElement(o.H, { errorConfig: w }, n.createElement(k, e));
             }
             const v = n.memo(P);
         },
         152837: (e, t, a) => {
-            a.r(t), a.d(t, { VerifyYourIdentityScreen: () => k, default: () => I, styles: () => v });
+            a.r(t), a.d(t, { VerifyYourIdentityScreen: () => Z, default: () => I, styles: () => v });
             var n = a(202784),
                 r = a(325686),
                 o = a(530525),
@@ -229,11 +231,11 @@
                 E = a(743080),
                 x = a(727384);
             const C = { page: "money", section: "setup-direct-deposit" },
-                k = (e) => {
+                Z = (e) => {
                     const t = (0, E.jh)();
                     return n.createElement(h.Z, null, n.createElement(r.Z, { style: t.container }, n.createElement(r.Z, { style: v.headerContainer }, n.createElement(r.Z, { style: v.iconContainer }, n.createElement(o.Z, { "aria-label": "Verify your identity icon", aspectMode: c.Z.SQUARE, image: p })), n.createElement(r.Z, { style: v.titleContainer }, n.createElement(l.ZP, { color: "text", size: "title1", weight: "bold" }, "Verify your identity"), n.createElement(l.ZP, { color: "gray700", size: "body", weight: "normal" }, "Unlock the full benefits of X Money by confirming who you are."))), n.createElement(r.Z, { style: v.benefitsContainer }, n.createElement(r.Z, { style: v.benefitRow }, n.createElement(d.default, { style: v.benefitIcon }), n.createElement(r.Z, { style: v.benefitContent }, n.createElement(l.ZP, { size: "body", style: v.shrink, weight: "medium" }, "Military grade encryption"), n.createElement(l.ZP, { color: "gray700", size: "body", style: v.shrink, weight: "normal" }, "Your personal information is safe and secure with X"))), n.createElement(r.Z, { style: v.benefitRow }, n.createElement(m.default, { style: v.benefitIcon }), n.createElement(r.Z, { style: v.benefitContent }, n.createElement(l.ZP, { size: "body", style: v.shrink, weight: "medium" }, "Unlock your account"), n.createElement(l.ZP, { color: "gray700", size: "body", style: v.shrink, weight: "normal" }, "Deposit your paycheck and pay bills"))), n.createElement(r.Z, { style: v.benefitRow }, n.createElement(u.default, { style: v.benefitIcon }), n.createElement(r.Z, { style: v.benefitContent }, n.createElement(l.ZP, { size: "body", style: v.shrink, weight: "medium" }, "Unlock your account"), n.createElement(l.ZP, { color: "gray700", size: "body", style: v.shrink, weight: "normal" }, "Unlock higher daily and weekly limits"))))));
                 },
-                Z = { context: "VERIFY_YOUR_IDENTITY" },
+                k = { context: "VERIFY_YOUR_IDENTITY" },
                 w = () => {
                     const e = (0, E.jh)(),
                         { roles: t } = (0, f.Z)({ fetchKey: "Payments" });
@@ -242,7 +244,7 @@
                 P = (e) => {
                     const { history: t } = e,
                         a = n.useCallback(() => t.goBack(), [t]);
-                    return n.createElement(g.H, { errorConfig: Z }, n.createElement(y.Z, { backButtonType: "close", bottomBar: n.createElement(w, null), history: t, onBackClick: a, withoutBottomBarMobile: !0 }, n.createElement(b.nO, { namespace: C }, n.createElement(g.H, { errorConfig: Z }, n.createElement(k, e)))));
+                    return n.createElement(g.H, { errorConfig: k }, n.createElement(y.Z, { backButtonType: "close", bottomBar: n.createElement(w, null), history: t, onBackClick: a, withoutBottomBarMobile: !0 }, n.createElement(b.nO, { namespace: C }, n.createElement(g.H, { errorConfig: k }, n.createElement(Z, e)))));
                 },
                 v = i.default.create((e) => ({ headerContainer: { gap: e.spaces.space24, marginTop: e.spaces.space24 }, iconContainer: { height: e.spaces.space64, width: e.spaces.space64 }, titleContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, benefitsContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space24, marginTop: e.spaces.space40, marginBottom: e.spaces.space24 }, benefitRow: { display: "flex", flexDirection: "row", gap: e.spaces.space16, alignItems: "center" }, benefitIcon: { height: e.spaces.space32, width: e.spaces.space32, fill: e.colors.white }, benefitContent: { display: "flex", flex: 1, flexWrap: "wrap" }, shrink: { flexShrink: 1 } })),
                 I = n.memo(P);
@@ -268,25 +270,25 @@
                 E = a(743080),
                 x = a(477922),
                 C = a(770585);
-            const k = "Remove linked account",
-                Z = ({ account: e, calculatedFee: t, handleExpand: a, handleRemove: p, isDisabled: Z, isSelected: P, onClick: v, withChevron: I, withInteractiveStyling: T }) => {
+            const Z = "Remove linked account",
+                k = ({ account: e, calculatedFee: t, handleExpand: a, handleRemove: p, isDisabled: k, isSelected: P, onClick: v, withChevron: I, withInteractiveStyling: T }) => {
                     const _ = e.id,
                         M = e.config,
-                        { Icon: R, fees: S, settleTimeMessage: z } = M ?? {},
-                        D = !Z && (T ?? !(!v && !a)),
+                        { Icon: S, fees: z, settleTimeMessage: R } = M ?? {},
+                        D = !k && (T ?? !(!v && !a)),
                         L = r.useCallback(() => {
-                            a ? a() : _ && !Z && v?.(_);
-                        }, [_, v, a, Z]),
+                            a ? a() : _ && !k && v?.(_);
+                        }, [_, v, a, k]),
                         B = r.useCallback(
                             (e) => {
                                 e && e.stopPropagation(), p?.();
                             },
                             [p],
                         );
-                    return r.createElement(c.Z, { onClick: D ? L : void 0, withInteractiveStyling: D && !a }, r.createElement(o.Z, { style: E.mR.container }, e.type === b.dX.x ? r.createElement(l.default, (0, n.Z)({ size: "xxxLarge" }, e.avatar)) : r.createElement(x.qn, { size: "xxxLarge", type: e.type, uri: e.avatar?.uri }), r.createElement(o.Z, { style: E.mR.middle }, r.createElement(s.Z, null, r.createElement(i.ZP, null, e.accountType ?? e.brandName), e.type !== b.dX.x ? r.createElement(i.ZP, null, e.accountName.name) : null), e.type === b.dX.x ? r.createElement(d.Z, e.accountName) : M ? r.createElement(o.Z, { style: E.mR.row }, r.createElement(i.ZP, { color: "gray700" }, R ? r.createElement(R, { style: E.mR.icon }) : null, z), S ? r.createElement(C.Z, { calculatedFee: t, fees: S }) : null) : e.type === b.dX.card ? r.createElement(i.ZP, { color: "gray700" }, "Debit Card") : e.type === b.dX.bank ? r.createElement(i.ZP, { color: "gray700" }, "Bank Account") : null), e.label ? r.createElement(m.ZP, { style: w.decoration, type: "warning" }, e.label) : null, P ? r.createElement(y.default, { style: [w.decoration, w.selected] }) : null, a ? r.createElement(h.default, { style: w.decoration }) : p ? r.createElement(u.ZP, { "aria-label": k, hoverLabel: { label: k }, icon: r.createElement(g.default, null), onClick: B, size: "small", style: w.decoration, testID: "btn-remove", type: "destructiveText" }) : null, I ? r.createElement(f.default, { style: w.decoration }) : null));
+                    return r.createElement(c.Z, { onClick: D ? L : void 0, withInteractiveStyling: D && !a }, r.createElement(o.Z, { style: E.mR.container }, e.type === b.dX.x ? r.createElement(l.default, (0, n.Z)({ size: "xxxLarge" }, e.avatar)) : r.createElement(x.qn, { size: "xxxLarge", type: e.type, uri: e.avatar?.uri }), r.createElement(o.Z, { style: E.mR.middle }, r.createElement(s.Z, null, r.createElement(i.ZP, null, e.accountType ?? e.brandName), e.type !== b.dX.x ? r.createElement(i.ZP, null, e.accountName.name) : null), e.type === b.dX.x ? r.createElement(d.Z, e.accountName) : M ? r.createElement(o.Z, { style: E.mR.row }, r.createElement(i.ZP, { color: "gray700" }, S ? r.createElement(S, { style: E.mR.icon }) : null, R), z ? r.createElement(C.Z, { calculatedFee: t, fees: z }) : null) : e.type === b.dX.card ? r.createElement(i.ZP, { color: "gray700" }, "Debit Card") : e.type === b.dX.bank ? r.createElement(i.ZP, { color: "gray700" }, "Bank Account") : null), e.label ? r.createElement(m.ZP, { style: w.decoration, type: "warning" }, e.label) : null, P ? r.createElement(y.default, { style: [w.decoration, w.selected] }) : null, a ? r.createElement(h.default, { style: w.decoration }) : p ? r.createElement(u.ZP, { "aria-label": Z, hoverLabel: { label: Z }, icon: r.createElement(g.default, null), onClick: B, size: "small", style: w.decoration, testID: "btn-remove", type: "destructiveText" }) : null, I ? r.createElement(f.default, { style: w.decoration }) : null));
                 },
                 w = p.default.create((e) => ({ account: { flexDirection: "row", gap: e.spaces.space16, display: "flex" }, row: { gap: e.spaces.space4, flexDirection: "row" }, accountName: { flexDirection: "column", gap: e.spaces.space4, justifyContent: "center", flex: 1 }, decoration: { alignSelf: "center", marginStart: "auto", marginEnd: e.spaces.space4, flexShrink: 0 }, selected: { color: e.colors.green500 } })),
-                P = r.memo(Z);
+                P = r.memo(k);
         },
         600568: (e, t, a) => {
             a.d(t, { Z: () => m });
@@ -365,8 +367,9 @@
                 o = a(953035),
                 c = a(743080);
             const l = (e) => {
-                    const t = (0, c.jh)();
-                    return r.createElement(o.Z, (0, n.Z)({}, e, { containerStyle: t.pivotTile, iconColor: "text", interactiveStyles: c.LR, isCompact: !0, textStyle: c.ZP.actionText, withInteractiveStyling: !0 }));
+                    const t = (0, c.jh)(),
+                        a = (0, c.sw)();
+                    return r.createElement(o.Z, (0, n.Z)({}, e, { containerStyle: t.pivotTile, iconColor: "text", interactiveStyles: a, isCompact: !0, textStyle: c.ZP.actionText, withInteractiveStyling: !0 }));
                 },
                 s = r.memo(l);
         },
@@ -408,10 +411,10 @@
                 y = a(442880),
                 h = a(19804),
                 g = a(770585);
-            const f = ({ MethodIcon: e, creditMethod: t, debitMethod: a, disabled: l = !1, label: f, link: E, methodConfigs: x, name: C, transferDirection: k, variant: Z }) => {
-                    const w = k && x ? (0, u.NG)({ transferDirection: k, methodConfigs: x, debitMethod: a, creditMethod: t }) : void 0,
+            const f = ({ MethodIcon: e, creditMethod: t, debitMethod: a, disabled: l = !1, label: f, link: E, methodConfigs: x, name: C, transferDirection: Z, variant: k }) => {
+                    const w = Z && x ? (0, u.NG)({ transferDirection: Z, methodConfigs: x, debitMethod: a, creditMethod: t }) : void 0,
                         { Icon: P, fees: v, processingTime: I, settleTimeMessage: T } = w ?? {};
-                    return "tile" === Z ? n.createElement(h.Z, { Icon: e, decoration: n.createElement(y.Z, { processingTime: I }), link: E, subtitle: k === d.Rz.debit && v ? n.createElement(g.C, { fees: v }) : null, title: f }) : "row" === Z ? n.createElement(o.Z, { disabled: l, link: E, style: b.addPaymentMethodButtonContainer, withInteractiveStyling: !1 }, n.createElement(r.Z, { style: b.addPaymentMethodIconTextContainer }, n.createElement(p.zU, { Icon: s.default, size: "xxxLarge" }), n.createElement(c.ZP, { size: "subtext1", weight: "medium" }, f)), n.createElement(i.default, { style: b.addPaymentMethodButtonChevron })) : n.createElement(o.Z, { "aria-label": f, key: C, link: E, withInteractiveStyling: !0 }, n.createElement(r.Z, { style: m.mR.container }, n.createElement(p.zU, { Icon: s.default, size: "xxxLarge" }), n.createElement(r.Z, { style: m.mR.middle }, n.createElement(c.ZP, null, f), w ? n.createElement(r.Z, { style: m.mR.row }, n.createElement(c.ZP, { color: "gray700" }, P ? n.createElement(P, { style: m.mR.icon }) : null, T), v ? n.createElement(g.Z, { fees: v }) : null) : null)));
+                    return "tile" === k ? n.createElement(h.Z, { Icon: e, decoration: n.createElement(y.Z, { processingTime: I }), link: E, subtitle: Z === d.Rz.debit && v ? n.createElement(g.C, { fees: v }) : null, title: f }) : "row" === k ? n.createElement(o.Z, { disabled: l, link: E, style: b.addPaymentMethodButtonContainer, withInteractiveStyling: !1 }, n.createElement(r.Z, { style: b.addPaymentMethodIconTextContainer }, n.createElement(p.zU, { Icon: s.default, size: "xxxLarge" }), n.createElement(c.ZP, { size: "subtext1", weight: "medium" }, f)), n.createElement(i.default, { style: b.addPaymentMethodButtonChevron })) : n.createElement(o.Z, { "aria-label": f, key: C, link: E, withInteractiveStyling: !0 }, n.createElement(r.Z, { style: m.mR.container }, n.createElement(p.zU, { Icon: s.default, size: "xxxLarge" }), n.createElement(r.Z, { style: m.mR.middle }, n.createElement(c.ZP, null, f), w ? n.createElement(r.Z, { style: m.mR.row }, n.createElement(c.ZP, { color: "gray700" }, P ? n.createElement(P, { style: m.mR.icon }) : null, T), v ? n.createElement(g.Z, { fees: v }) : null) : null)));
                 },
                 b = l.default.create((e) => ({ addPaymentMethodButtonContainer: { flex: 1, flexDirection: "row", justifyContent: "space-between", alignItems: "center", borderRadius: e.spaces.space16 }, addPaymentMethodIconTextContainer: { flex: 1, flexDirection: "row", alignItems: "center", gap: e.spaces.space16 }, addPaymentMethodButtonChevron: { width: e.spaces.space24, height: e.spaces.space24, fill: e.colors.gray700 } })),
                 E = n.memo(f);
@@ -469,17 +472,17 @@
             function p({ amount: e, balance: t, isValid: a, max: l = "9999999", min: s = "0", setAmount: p, setIsValid: y, validateBalance: g, ...f }) {
                 const [b, E] = n.useState(!1),
                     { available_amount_local_micro: x, currency: C } = t ?? {},
-                    k = parseFloat(x),
-                    Z = (x && (0, i.p2)({ amount: k, currency: C }), (0, i.dN)({ amount: k })),
+                    Z = parseFloat(x),
+                    k = (x && (0, i.p2)({ amount: Z, currency: C }), (0, i.dN)({ amount: Z })),
                     w = n.useCallback(
                         (e) => {
                             const t = u(e),
                                 a = parseFloat(t),
                                 n = parseFloat(s),
                                 r = parseFloat(l);
-                            return /^\d*(\.\d{1,2})?$/.test(t) && a > 0 && a >= n && a <= r && (!g || a <= Z);
+                            return /^\d*(\.\d{1,2})?$/.test(t) && a > 0 && a >= n && a <= r && (!g || a <= k);
                         },
-                        [Z, l, s, g],
+                        [k, l, s, g],
                     ),
                     P = n.useCallback(
                         (e) => {
@@ -526,11 +529,11 @@
                                           l = parseFloat(t),
                                           s = parseFloat(a);
                                       return c <= 0 ? "Amount must be greater than $0" : c < l ? `Amount must be at least $${d(t)}` : c > s ? `Amount cannot exceed $${d(a)}` : n && c > r ? "Your balance is insufficient for this transfer." : null;
-                                  })(e, s, l, g, Z)
+                                  })(e, s, l, g, k)
                                 : null,
-                        [a, e, s, l, g, Z],
+                        [a, e, s, l, g, k],
                     )(),
-                    R = ((e) => {
+                    S = ((e) => {
                         if (!e || "" === e) return "";
                         const t = u(e);
                         return "" === t ? "" : `${m()}${d(t)}`;
@@ -558,7 +561,7 @@
                             style: [h.amountInput, b && h.amountInputFocused],
                             testID: "amount-input",
                             type: "text",
-                            value: R,
+                            value: S,
                         }),
                     ),
                     n.createElement(r.Z, { style: h.errorContainer }, M && n.createElement(c.ZP, { style: h.errorText }, M)),
@@ -568,7 +571,7 @@
                 h = l.default.create((e) => ({ currency: { marginEnd: e.spaces.space4 }, amountInput: { padding: e.spaces.space24, width: "100%", height: "120px", textAlign: "center", fontSize: "64px", fontWeight: e.fontWeights.bold, color: e.colors.text, backgroundColor: "transparent", border: "none", letterSpacing: "-0.05px" }, amountInputContainer: { borderWidth: e.spaces.space1, borderColor: e.colors.gray200, borderRadius: e.spaces.space12 }, amountInputContainerError: { borderColor: e.colors.red500 }, placeholder: { color: e.colors.gray400 }, errorContainer: { justifyContent: "flex-start" }, errorText: { color: e.colors.red500, fontSize: e.fontSizes.subtext3 }, amountInputFocused: { outlineColor: e.colors.gray200, borderRadius: e.spaces.space12 } }));
         },
         477922: (e, t, a) => {
-            a.d(t, { G7: () => Z, KR: () => w, qn: () => v, zU: () => E });
+            a.d(t, { G7: () => k, KR: () => w, qn: () => v, zU: () => E });
             var n = a(807896),
                 r = a(202784),
                 o = a(45843),
@@ -588,18 +591,18 @@
                 E = ({ Icon: e, size: t, uri: a }) => (a ? r.createElement(o.Z, { source: { uri: a }, style: [I.rounded, I.logo, f[t]] }) : r.createElement(c.Z, { style: [f[t], I.rounded, I.iconContainer] }, r.createElement(e, { style: [I.logo, b[t]] }))),
                 x = (e) => r.createElement(E, (0, n.Z)({}, e, { Icon: s.default })),
                 C = { [h.wC.bankDeposit]: i.default, [h.wC.bankWithdraw]: d.default, [h.wC.card]: s.default, [h.wC.atm]: m.default },
-                k = { [h.Ms.atm]: m.default, [h.Ms.deposit]: i.default, [h.Ms.withdraw]: d.default, [h.Ms.interest]: u.default, [h.Ms.cashback]: p.default },
-                Z = (e) => {
+                Z = { [h.Ms.atm]: m.default, [h.Ms.deposit]: i.default, [h.Ms.withdraw]: d.default, [h.Ms.interest]: u.default, [h.Ms.cashback]: p.default },
+                k = (e) => {
                     const { type: t, ...a } = e;
                     return r.createElement(E, (0, n.Z)({}, a, { Icon: C[t] }));
                 },
-                w = ({ type: e, ...t }) => r.createElement(E, (0, n.Z)({}, t, { Icon: k[e] })),
+                w = ({ type: e, ...t }) => r.createElement(E, (0, n.Z)({}, t, { Icon: Z[e] })),
                 P = (e) => r.createElement(E, (0, n.Z)({}, e, { Icon: y.default })),
                 v = ({ type: e, ...t }) => (e === h.dX.bank ? r.createElement(P, t) : e === h.dX.card ? r.createElement(x, t) : null),
                 I = l.default.create((e) => ({ logo: { color: e.colors.text, flexShrink: 0 }, rounded: { borderRadius: e.borderRadii.infinite }, iconContainer: { borderColor: e.colors.gray200, borderStyle: "solid", borderWidth: e.spaces.space1, justifyContent: "center", alignItems: "center" } }));
         },
         819404: (e, t, a) => {
-            a.d(t, { Z: () => S });
+            a.d(t, { Z: () => z });
             var n = a(415706),
                 r = a(202784),
                 o = a(325686),
@@ -619,8 +622,8 @@
                 E = a(656805),
                 x = a(287688),
                 C = a(994600),
-                k = a(988600),
-                Z = a(530159),
+                Z = a(988600),
+                k = a(530159),
                 w = a(514639);
             function P({ __typename: e }) {
                 switch (e) {
@@ -662,9 +665,9 @@
                                     case "BillPay":
                                         return E;
                                     case "AccountLinking":
-                                        return k;
-                                    case "XCard":
                                         return Z;
+                                    case "XCard":
+                                        return k;
                                     default:
                                         return null;
                                 }
@@ -703,19 +706,19 @@
                     return 0 !== y.length || a
                         ? r.createElement(
                               o.Z,
-                              { style: [R.carouselContainer, a && R.carouselDismissing] },
+                              { style: [S.carouselContainer, a && S.carouselDismissing] },
                               r.createElement(s.ZP, null, "Things you should know"),
                               r.createElement(
                                   o.Z,
-                                  { style: R.carouselOuterWrapper },
+                                  { style: S.carouselOuterWrapper },
                                   r.createElement(
                                       o.Z,
-                                      { style: R.carouselInnerWrapper },
+                                      { style: S.carouselInnerWrapper },
                                       r.createElement(
                                           i.Z,
                                           {
                                               "aria-label": "Customer tasks carousel",
-                                              childrenStyle: R.carouselChildrenStyle,
+                                              childrenStyle: S.carouselChildrenStyle,
                                               onVisibleRangeChange: ({ index: e, intersectionRatio: a }) => {
                                                   return (n = e), void (1 === a && t(n));
                                                   var n;
@@ -732,9 +735,9 @@
                           )
                         : null;
                 },
-                R = m.default.create((e) => ({ carouselChildrenStyle: { marginEnd: e.spaces.space8 }, carouselContainer: { gap: e.spaces.space16, transition: "opacity 350ms ease, margin 350ms ease, gap 350ms ease, height 350ms ease" }, carouselDismissing: { opacity: 0, height: 0 }, carouselOuterWrapper: { width: "100%" }, carouselInnerWrapper: { position: "relative", width: "100%", maxHeight: "fit-content" } })),
-                S = r.memo(M);
+                S = m.default.create((e) => ({ carouselChildrenStyle: { marginEnd: e.spaces.space8 }, carouselContainer: { gap: e.spaces.space16, transition: "opacity 350ms ease, margin 350ms ease, gap 350ms ease, height 350ms ease" }, carouselDismissing: { opacity: 0, height: 0 }, carouselOuterWrapper: { width: "100%" }, carouselInnerWrapper: { position: "relative", width: "100%", maxHeight: "fit-content" } })),
+                z = r.memo(M);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.8a96c28a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.3923ccaa.js.map

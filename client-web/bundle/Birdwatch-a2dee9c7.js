@@ -59,7 +59,7 @@
             e.exports = { queryId: "0EW8KDGMK0g3EfCF0iAhsg", operationName: "BirdwatchFetchCanTweetBeMediaNote", operationType: "query", metadata: { featureSwitches: ["responsive_web_birdwatch_media_notes_enabled"], fieldToggles: [] } };
         },
         774474: (e) => {
-            e.exports = { queryId: "6NV-QFY8wFPf79e_1UZL4A", operationName: "BirdwatchFetchGlobalTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "E_6wcJ_UoZy7b3EhX9wRAA", operationName: "BirdwatchFetchGlobalTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         848289: (e) => {
             e.exports = { queryId: "bPaR2ckUsrb7OCszG8QdaA", operationName: "BirdwatchFetchNoteTranslation", operationType: "query", metadata: { featureSwitches: ["responsive_web_birdwatch_translation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
@@ -192,11 +192,11 @@
                 N = i(624378),
                 A = i.n(N),
                 Z = i(280507),
-                F = i.n(Z),
-                Q = i(131736),
-                P = i.n(Q),
-                M = i(380654),
-                R = i.n(M),
+                Q = i.n(Z),
+                F = i(131736),
+                P = i.n(F),
+                R = i(380654),
+                M = i.n(R),
                 z = i(259967),
                 j = i.n(z),
                 U = i(180186),
@@ -207,10 +207,10 @@
                 W = i.n(H),
                 K = i(150304),
                 V = i.n(K),
-                $ = i(770026),
-                J = i.n($),
-                X = i(756458),
-                Y = i.n(X),
+                J = i(770026),
+                X = i.n(J),
+                $ = i(756458),
+                Y = i.n($),
                 ee = i(774474),
                 te = i.n(ee),
                 ie = i(99459),
@@ -254,9 +254,9 @@
                         return e.graphQL(E(), s).then((e) => ("BirdwatchError" === e.birdwatchnote_rate_v3?.type ? { error: "BirdwatchError", error_code: e.birdwatchnote_rate_v3?.error_code } : { ...e.birdwatchnote_rate_v3 }));
                     },
                     deleteBirdwatchBatSignal: (t) => e.graphQL(A(), { tweet_id: t.tweet_id }),
-                    deleteNote: (t) => e.graphQL(F(), { note_id: t.note_id }),
+                    deleteNote: (t) => e.graphQL(Q(), { note_id: t.note_id }),
                     deleteRating: (t) => e.graphQL(P(), { note_id: t.note_id }),
-                    editNotificationSettings: (t) => e.graphQL(R(), { settings: t.settings }),
+                    editNotificationSettings: (t) => e.graphQL(M(), { settings: t.settings }),
                     editUserSettings: (t) => e.graphQL(j(), { show_in_app_navigation: t.show_in_app_navigation }),
                     fetchOneNote: (i) =>
                         e.graphQL(se(), { note_id: i.note_id, ...(0, o.S)(t) }).then((e) => {
@@ -279,7 +279,7 @@
                         });
                     },
                     fetchBirdwatchProfile: (t) =>
-                        e.graphQL(J(), { alias: t.alias }).then((e) => {
+                        e.graphQL(X(), { alias: t.alias }).then((e) => {
                             const t = { ...e.birdwatch_profile_by_alias };
                             return t && (0, a.Fv)(t, b);
                         }),
@@ -709,4 +709,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-a2dee9c7.d878b49a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-a2dee9c7.a4965cea.js.map

@@ -38,17 +38,17 @@
             const h = i.default.create((e) => ({ root: { marginHorizontal: "auto", width: "100%" }, rootMedium: { position: "absolute", bottom: 0, start: 0, end: 0 }, rootLarge: { maxWidth: 1e3 }, fabStaysAboveSafeArea: { top: `calc(${i.default.iPhoneOffsetBottom} - ${d.ZM.getAppBarHeight()} - ${e.spaces.space20})` }, fab: { bottom: e.spaces.space20, alignSelf: "flex-end", end: e.spaces.space20 }, fabLarge: { end: e.spaces.space20 }, fabMicro: { bottom: e.spaces.space16, end: e.spaces.space16 }, buttonMicro: { height: e.spaces.space40, width: e.spaces.space40 } })),
                 b = (e) => {
                     const { "aria-label": t, label: o, onPress: b, scribeComponent: g, ...f } = e,
-                        { loggedInUserId: y } = n.useContext(u.rC),
-                        Z = (0, m.z)(),
+                        { loggedInUserId: Z } = n.useContext(u.rC),
+                        y = (0, m.z)(),
                         E = n.useCallback(
                             (e) => {
-                                Z.scribe({ component: g, action: "click" }), b && b(e);
+                                y.scribe({ component: g, action: "click" }), b && b(e);
                             },
-                            [Z, b, g],
+                            [y, b, g],
                         ),
                         w = d.ZM.useCollapsibleNavBars(),
                         x = [...d.Ah({ elementPosition: "bottom" }), w && h.fabStaysAboveSafeArea];
-                    return y
+                    return Z
                         ? n.createElement(
                               s.Z.FloatingAction,
                               null,
@@ -170,7 +170,7 @@
             const p = (0, n.ZP)(i(l));
         },
         849078: (e, t, o) => {
-            o.r(t), o.d(t, { ExploreTopicsScreen: () => D, default: () => F });
+            o.r(t), o.d(t, { ExploreTopicsScreen: () => T, default: () => F });
             var a = o(202784),
                 n = o(457311),
                 r = o(108362),
@@ -186,43 +186,43 @@
                 b = o(163889),
                 g = o(519896),
                 f = o(24949),
-                y = o(668214),
-                Z = o(644829),
+                Z = o(668214),
+                y = o(644829),
                 E = o(218951);
             const w = { news: "url", sim_cluster: "cluster_id", ttt: "ttt_id", semantic_core: "entity_id" };
             var x = o(312771);
-            const P = c().fcf3e54c,
-                _ = (e, t) => t.match.params.topicId,
-                C = (e, t) => t.match.params.taxonomy,
-                v = (0, f.P1)(_, C, (e, t) => (({ taxonomy: e, topicId: t }) => (0, E.Z)({ timelineId: `guide-${t}-${e}-topic`, network: { getEndpoint: (e) => e.withEndpoint(Z.Z).fetchExploreTopic, getEndpointParams: (o) => ({ [w[e]]: t, ...o }) }, context: "FETCH_EXPLORE_TOPIC", perfKey: "guide-topic" }))({ topicId: e, taxonomy: t })),
+            const v = c().fcf3e54c,
+                P = (e, t) => t.match.params.topicId,
+                _ = (e, t) => t.match.params.taxonomy,
+                C = (0, f.P1)(P, _, (e, t) => (({ taxonomy: e, topicId: t }) => (0, E.Z)({ timelineId: `guide-${t}-${e}-topic`, network: { getEndpoint: (e) => e.withEndpoint(y.Z).fetchExploreTopic, getEndpointParams: (o) => ({ [w[e]]: t, ...o }) }, context: "FETCH_EXPLORE_TOPIC", perfKey: "guide-topic" }))({ topicId: e, taxonomy: t })),
                 I = (e, t) => {
-                    const o = v(e, t);
+                    const o = C(e, t);
                     if (o.selectInitialFetchStatus(e, t) !== x.ZP.LOADED) return "";
-                    const { title: a = P } = o.selectMetadata(e);
+                    const { title: a = v } = o.selectMetadata(e);
                     return a;
                 },
-                k = (0, y.Z)()
-                    .propsFromState(() => ({ module: v, topicId: _, taxonomy: C, title: I }))
+                k = (0, Z.Z)()
+                    .propsFromState(() => ({ module: C, topicId: P, taxonomy: _, title: I }))
                     .withAnalytics({ page: "guide", section: "topic" });
-            const B = { ...(0, o(335632).G)({ withMessageGaps: !1 }) },
-                S = c().a2a3824a,
-                L = c().ed827af6,
-                A = () => a.createElement(m.Z, null),
-                M = () => a.createElement(n.Z, { message: L }),
-                T = ["news", "ttt", "semantic_core", "sim_cluster"];
-            function D(e) {
+            const M = { ...(0, o(335632).G)({ withMessageGaps: !1 }) },
+                B = c().a2a3824a,
+                S = c().ed827af6,
+                L = () => a.createElement(m.Z, null),
+                A = () => a.createElement(n.Z, { message: S }),
+                D = ["news", "ttt", "semantic_core", "sim_cluster"];
+            function T(e) {
                 const { history: t, title: o } = e,
                     n = a.createElement(d.Z, { history: t }),
                     s = () => {
                         const { taxonomy: t } = e;
-                        return T.indexOf(t) >= 0;
+                        return D.indexOf(t) >= 0;
                     };
                 return a.createElement(
                     u.Z,
                     null,
                     a.createElement(p.Z, {
                         backLocation: "/explore",
-                        documentTitle: S,
+                        documentTitle: B,
                         history: t,
                         primaryContent: a.createElement(
                             l.Z,
@@ -230,11 +230,11 @@
                             (() => {
                                 if (s()) {
                                     const { module: t } = e;
-                                    return a.createElement(h.Z, { entryConfiguration: B, module: t, prerollDisplayLocation: g.Nw.OTHER, renderEmptyState: A, renderUnavailable: M, title: S });
+                                    return a.createElement(h.Z, { entryConfiguration: M, module: t, prerollDisplayLocation: g.Nw.OTHER, renderEmptyState: L, renderUnavailable: A, title: B });
                                 }
                                 {
                                     const { taxonomy: t, topicId: o } = e;
-                                    return t && o ? (0, b.ZP)(`Unexpected guide topic: Taxonomy '${t}' requested with topicId '${o}'`) : (0, b.ZP)("Missing taxonomy and/or topic id for guide topic:"), A();
+                                    return t && o ? (0, b.ZP)(`Unexpected guide topic: Taxonomy '${t}' requested with topicId '${o}'`) : (0, b.ZP)("Missing taxonomy and/or topic id for guide topic:"), L();
                                 }
                             })(),
                         ),
@@ -243,7 +243,7 @@
                     }),
                 );
             }
-            const F = k(D);
+            const F = k(T);
         },
         392027: (e, t, o) => {
             o.d(t, { Z: () => i });
@@ -261,6 +261,19 @@
             const c = r.default.create((e) => ({ root: { borderWidth: 0, height: e.spaces.space48, boxShadow: e.boxShadows.small }, iconOnly: { height: e.spaces.space56, width: e.spaces.space56 } })),
                 i = s;
         },
+        748138: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => i });
+            var a = o(202784),
+                n = o(890601),
+                r = o(783427),
+                s = o(347101);
+            const c = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+            };
+            c.metadata = { width: 24, height: 24 };
+            const i = c;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ExploreTopics.c6addd1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ExploreTopics.41cb6d7a.js.map

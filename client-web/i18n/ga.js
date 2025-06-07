@@ -1189,7 +1189,6 @@
                 n("c3aa76c4", "Teangach a d'fhéadfadh a bheith ar eolas agat"),
                 n("g099069c", "Manage the languages X inferred based on your activity, such as the accounts you follow and the posts you engage with."),
                 n("cf9ce876", "App and post languages"),
-                n("d4372cf4", "English (US), 中文(简体), Español"),
                 n("f8e46b90", "These are the social accounts you connected to your X account to log in. You can disable access here."),
                 n("d84ed6b2", "Disconnect"),
                 n("i51130d4", "Google"),
@@ -1932,9 +1931,9 @@
                 n("a8fdd09c", "Publish Article"),
                 n("d8047cc8", "Foilsigh"),
                 n("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
-                n("ef34d7be", "Audience and reply controls are not editable after an article has been published.");
-            n("e52d4998", "Choose your audience"),
-                n("d7985b24", "Choose who can reply to this Article"),
+                n("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
+                n("e52d4998", "Choose your audience");
+            n("d7985b24", "Choose who can reply to this Article"),
                 n("b5660338", "Timeline preview"),
                 n("hff1b97a", "Only Subscribed can reply."),
                 n("a330771e", "Copy link to your clipboard"),
@@ -2988,9 +2987,9 @@
                 n("ce6d095a", "Gairmeacha"),
                 n("e0adec82", "Acmhainní Branda"),
                 n("df1b7550", "Marketing"),
-                n("he258678", "X for Business");
-            n("c6f58084", "Developers"),
-                n("d83f18d2", "Directory"),
+                n("he258678", "X for Business"),
+                n("c6f58084", "Developers");
+            n("d83f18d2", "Directory"),
                 n("hc5aa17c", "Get the X app"),
                 n("j0693948", "Get the Grok app"),
                 n("fce9ecce", "Suggested Videos"),
@@ -3902,11 +3901,11 @@
                 n("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
                 n("e111f531", function (e) {
                     return e.count + " tiúnáilte isteach";
+                }),
+                n("cbef820f", function (e) {
+                    return e.screenName + " reposted the stream!";
                 });
-            n("cbef820f", function (e) {
-                return e.screenName + " reposted the stream!";
-            }),
-                n("e3275464", "Seol"),
+            n("e3275464", "Seol"),
                 n("cededf2a", "Óstach"),
                 n("i2caef48", "Co-hosts"),
                 n("j245c654", "Speakers"),
@@ -4940,9 +4939,9 @@
                 n("d9f9dec0", "View Space"),
                 n("h0c1f37a", "View Space Analytics"),
                 n("e41fffbc", "The total watch time of your videos."),
-                n("if2909ba", "Watch Time");
-            n("i0e5bf4c", "Your videos"),
-                n("ed99baea", "Early Beta Access"),
+                n("if2909ba", "Watch Time"),
+                n("i0e5bf4c", "Your videos");
+            n("ed99baea", "Early Beta Access"),
                 n("gf898b70", "Advanced Search"),
                 n("d2a43a7a", 'contains both "ai" and "startup"'),
                 n("a8584698", "ai startup"),
@@ -5896,9 +5895,9 @@
                 n("e41c9b4f", function (e) {
                     return "Sábháilte go " + e.bookmarkFolderName;
                 }),
-                n("h18f86a4", "Scrios an Fillteán");
-            n("f4ea967a", "Scriosadh an fillteán"),
-                n("b670aa62", "Ainm an Fhillteáin"),
+                n("h18f86a4", "Scrios an Fillteán"),
+                n("f4ea967a", "Scriosadh an fillteán");
+            n("b670aa62", "Ainm an Fhillteáin"),
                 n("aece5462", "D'éirigh linn ainm an fhillteáin a nuashonrú"),
                 n("e3299b94", "Tharla earráid. Bain triail as an bhfillteán a nuashonrú arís i gceann nóiméid."),
                 n("c09ea714", "Tharla earráid. Bain triail as an bhfillteán a scriosadh arís i gceann nóiméid."),
@@ -6900,9 +6899,9 @@
                 n("ede7d0a2", "Currency"),
                 n("b925c18c", "Salary Type"),
                 n("j3d242ce", "Invalid range"),
-                n("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search.");
-            n("b8cbb51a", "Job Summary"),
-                n("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                n("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
+                n("b8cbb51a", "Job Summary");
+            n("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 n("b075c68a", "Edit job"),
                 n("d4b6a6e0", "Profile Spotlight"),
                 n("j2dd3686", "Highlight featured jobs above my posts."),
@@ -7245,6 +7244,8 @@
                 n("hd80bd3e", "Promote a post"),
                 n("fe2b0008", "Learn how to use X"),
                 n("h257d4aa", "Select a post to promote"),
+                n("e9334fe6", "Data updates every few minutes"),
+                n("a6d7b1d0", "Based on X Internal Data"),
                 n("h9b28dae", "You’re saving time with an ad-free feed"),
                 n("f6c50ec0", "Your ad-free trial has ended"),
                 n("e1d1fbca", "You’ve avoided"),
@@ -7879,8 +7880,7 @@
                 n("i5f14be7", function (e) {
                     return "Welcome back, " + e.displayName;
                 }),
-                n("a76d58ba", "Ads Analytics"),
-                n("eccd0e1a", "Organization Analytics");
+                n("a76d58ba", "Ads Analytics");
             function r(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var n = a[t];
@@ -7919,7 +7919,8 @@
                     c(e, a)
                 );
             }
-            n("deea1708", "Want to view analytics across all your X accounts?"),
+            n("eccd0e1a", "Organization Analytics"),
+                n("deea1708", "Want to view analytics across all your X accounts?"),
                 n("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
                 n("gf67aae4", "Upgrade to Full Access"),
                 n("h75e3618", "Include organization"),
@@ -8917,9 +8918,9 @@
                 n("a6ada13e", "Shop now"),
                 n("j0f12222", "Féach ar a thuilleadh"),
                 n("f569f7c8", "Téigh chuig an suíomh gréasáin"),
-                n("j0c6772a", "Tabhair cuairt ar an suíomh gréasáin"),
-                n("f73003aa", "Seinnfear an físeán i ndiaidh an fhógra");
-            n("b3112b8a", "Scipeáil"),
+                n("j0c6772a", "Tabhair cuairt ar an suíomh gréasáin");
+            n("f73003aa", "Seinnfear an físeán i ndiaidh an fhógra"),
+                n("b3112b8a", "Scipeáil"),
                 n("h6333ad0", "Scipeáil Fógra"),
                 n("c59da417", function (e) {
                     return "Léim thar Fhógra i " + e.seconds;
@@ -13368,4 +13369,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.22de116a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.f5e1584a.js.map

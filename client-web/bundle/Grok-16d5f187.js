@@ -99,7 +99,7 @@
                 le = n(214997),
                 ce = n(976021);
             function de({ followup: e, onClick: t }) {
-                return a.createElement(r.Z, { style: pe.animation }, a.createElement(D.ZP, { backgroundColor: "gray50", borderColor: "transparent", onClick: t, size: "xSmall", style: pe.followUpBotton }, a.createElement(ce.B, { text: e.label }, a.createElement(T.ZP, { color: "gray900", selectable: !1, weight: "normal" }, e.label))));
+                return a.createElement(r.Z, { style: pe.animation }, a.createElement(D.ZP, { backgroundColor: "gray0", borderColor: "gray100", onClick: t, size: "xSmall", style: pe.followUpBotton }, a.createElement(ce.B, { text: e.label }, a.createElement(T.ZP, { color: "gray900", selectable: !1, weight: "normal" }, e.label))));
             }
             function me({ followups: e, onSelectFollowup: t }) {
                 return 0 === e.length
@@ -114,7 +114,7 @@
                           ),
                       );
             }
-            const pe = d.default.create((e) => ({ container: { maxWidth: "100%", marginStart: "auto", marginEnd: "auto", paddingVertical: e.spaces.space4 }, row: { display: "flex", width: "fit-content", flexDirection: "row", justifyContent: "flex-start", gap: e.spaces.space12, paddingHorizontal: e.spaces.space12 }, animation: { opacity: 1, animationDuration: "2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, followUpBotton: { borderRadius: e.borderRadii.large, padding: e.spaces.space8 } })),
+            const pe = d.default.create((e) => ({ container: { maxWidth: "100%", marginStart: "auto", marginEnd: "auto", paddingVertical: e.spaces.space4 }, row: { display: "flex", width: "fit-content", flexDirection: "row", justifyContent: "flex-start", gap: e.spaces.space12, paddingHorizontal: e.spaces.space12 }, animation: { opacity: 1, animationDuration: "2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, followUpBotton: { padding: e.spaces.space8, borderRadius: e.spaces.space24 } })),
                 ue = ({ conversationKey: e }) => {
                     const t = (0, E.z)(),
                         n = (0, _.uf)(),
@@ -812,4 +812,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-16d5f187.06b6ea5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-16d5f187.d8cba7ba.js.map

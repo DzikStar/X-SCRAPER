@@ -8,22 +8,24 @@
             const n = (0, d(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.8"),
-                        d.e("icons.15"),
-                        d.e("icons.7"),
-                        d.e("icons.3"),
-                        d.e("icons.24"),
+                        d.e("icons.0"),
+                        d.e("icons.5"),
                         d.e("icons.12"),
-                        d.e("icons.22"),
+                        d.e("icons.20"),
                         d.e("icons.2"),
-                        d.e("icons.18"),
+                        d.e("icons.21"),
+                        d.e("icons.28"),
+                        d.e("icons.10"),
+                        d.e("icons.17"),
                         d.e("icons.9"),
-                        d.e("icons.1"),
-                        d.e("icons.6"),
-                        d.e("icons.14"),
+                        d.e("icons.23"),
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
-                        d.e("icons.5"),
+                        d.e("icons.22"),
+                        d.e("icons.24"),
+                        d.e("icons.25"),
+                        d.e("icons.14"),
+                        d.e("icons.13"),
                         d.e("modules.audio-6107ac1a"),
                         d.e("modules.audio-b953418a"),
                         d.e("modules.audio-7c51e6a7"),
@@ -34,14 +36,12 @@
                         d.e("modules.audio-e019dbda"),
                         d.e("modules.audio-262c94d4"),
                         d.e("modules.audio-c6fe4ea4"),
-                        d.e("icons.21"),
-                        d.e("icons.16"),
-                        d.e("icons.28"),
-                        d.e("icons.17"),
-                        d.e("icons.27"),
-                        d.e("icons.19"),
-                        d.e("icons.0"),
+                        d.e("icons.6"),
+                        d.e("icons.3"),
                         d.e("icons.4"),
+                        d.e("icons.1"),
+                        d.e("icons.18"),
+                        d.e("icons.8"),
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -84,8 +84,6 @@
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-c6c15d67"),
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3fd5f349"),
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.TimelineFrameHandler~loader.J-f4267732"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.TimelineFrameHandler~loader.J-80af7626"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
@@ -109,7 +107,7 @@
                         d.e("shared~bundle.Birdwatch~bundle.News~bundle.Grok~ondemand.News~loader.inlineTombstoneHandler~loader.tweetHandl"),
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~bundle.Payments~ondemand.News~ondemand.Insights~loader"),
-                        d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-3ba4c741"),
+                        d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-b75711ed"),
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-eadf0bc8"),
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-b6859af7"),
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-856c9f2b"),
@@ -125,10 +123,11 @@
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-92ee7280"),
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-4cd14b6e"),
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-380ace89"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders"),
                         d.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         d.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
                         d.e("shared~bundle.Grok~loader.Markdown"),
-                        d.e("bundle.Grok-e907d115"),
+                        d.e("bundle.Grok-bc6ccf4c"),
                         d.e("bundle.Grok-e96e9bea"),
                         d.e("bundle.Grok-0ae4e026"),
                         d.e("bundle.Grok-b16f5c14"),
@@ -172,20 +171,22 @@
             const o = (0, d(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.8"),
-                        d.e("icons.15"),
-                        d.e("icons.7"),
-                        d.e("icons.3"),
-                        d.e("icons.24"),
-                        d.e("icons.12"),
-                        d.e("icons.22"),
-                        d.e("icons.2"),
-                        d.e("icons.18"),
-                        d.e("icons.9"),
-                        d.e("icons.1"),
-                        d.e("icons.6"),
-                        d.e("icons.14"),
+                        d.e("icons.0"),
                         d.e("icons.5"),
+                        d.e("icons.12"),
+                        d.e("icons.20"),
+                        d.e("icons.2"),
+                        d.e("icons.21"),
+                        d.e("icons.28"),
+                        d.e("icons.10"),
+                        d.e("icons.17"),
+                        d.e("icons.9"),
+                        d.e("icons.23"),
+                        d.e("icons.22"),
+                        d.e("icons.24"),
+                        d.e("icons.25"),
+                        d.e("icons.14"),
+                        d.e("icons.13"),
                         d.e("modules.audio-6107ac1a"),
                         d.e("modules.audio-b953418a"),
                         d.e("modules.audio-7c51e6a7"),
@@ -196,21 +197,18 @@
                         d.e("modules.audio-e019dbda"),
                         d.e("modules.audio-262c94d4"),
                         d.e("modules.audio-c6fe4ea4"),
-                        d.e("icons.21"),
-                        d.e("icons.16"),
-                        d.e("icons.28"),
-                        d.e("icons.17"),
-                        d.e("icons.27"),
-                        d.e("icons.19"),
-                        d.e("icons.0"),
+                        d.e("icons.6"),
+                        d.e("icons.3"),
                         d.e("icons.4"),
+                        d.e("icons.1"),
+                        d.e("icons.18"),
+                        d.e("icons.8"),
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-bbc41769"),
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-8aa1f3e4"),
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-c6c15d67"),
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3fd5f349"),
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.TimelineFrameHandler~loader.J-f4267732"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.TimelineFrameHandler~loader.J-80af7626"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~loader.JetfuelFrame~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
                         d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"),
                         d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"),
                         d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"),
@@ -219,26 +217,26 @@
                         d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
                         d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-9d7f6429"),
                         d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3db21160"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0be21f6e"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2c76ece2"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-fd191714"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3b520976"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-624e4131"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-5f74528c"),
                         d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-595f2b1d"),
                         d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0bb5e702"),
                         d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-694f31ec"),
                         d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-b92f6bfc"),
                         d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-a1125a9a"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-f2bb72dd"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-249e2412"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-ed3623d8"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-e09d3f9e"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2a260989"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-88378ee8"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-f74a18f0"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-740d0596"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-d2aabe6c"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-f6ead13c"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-7bb1b8da"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-8a88cd79"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-d92491c1"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-5720fb01"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-7cf24f0b"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2b9410ca"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-6107ac-34e706af"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-5e06d6-12bcec36"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-2c7fc7-61faba46"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-fdc77e-17d653ee"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-8c3bf7-5a644cb3"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-82a7f3-7d927d91"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-782158-4b9d14dc"),
                         d.e("loader.JetfuelFrame"),
                     ]).then(d.bind(d, 654907)),
             });
@@ -285,24 +283,24 @@
             const n = d.n(o)().gf5e9ea6;
         },
         916585: (e, a, d) => {
-            d.d(a, { k: () => l });
+            d.d(a, { k: () => t });
             var o = d(111677),
                 n = d.n(o),
                 r = d(437358);
-            const l = (e, a) => {
+            const t = (e, a) => {
                 const { id_str: d, screen_name: o } = e,
-                    l = (0, n().d78131b9)({ screenName: o });
-                return { Icon: r.default, text: l, link: { pathname: "/i/lists/add_member", state: { userId: d } }, onClick: a };
+                    t = (0, n().d78131b9)({ screenName: o });
+                return { Icon: r.default, text: t, link: { pathname: "/i/lists/add_member", state: { userId: d } }, onClick: a };
             };
         },
         847607: (e, a, d) => {
-            d.d(a, { Aq: () => c, FK: () => g, GS: () => t, N1: () => b, PY: () => m, X6: () => f, cm: () => s });
+            d.d(a, { Aq: () => c, FK: () => f, GS: () => l, N1: () => b, PY: () => m, X6: () => k, cm: () => s });
             d(202784);
             var o = d(111677),
                 n = d.n(o),
                 r = d(391366),
-                l = d(40904);
-            const t = n().hb568af4,
+                t = d(40904);
+            const l = n().hb568af4,
                 s = n().bb1cbeb6,
                 i = (n().h2f62206, n().e67b2d65),
                 u = n().f05597b3,
@@ -310,14 +308,14 @@
                 m = (e) => u({ screenName: e }),
                 b = (e, a, d) => {
                     const { muting: o, screen_name: n } = e;
-                    return { text: o ? m(n) : c(n), onClick: o ? d : a, Icon: o ? r.default : l.default };
+                    return { text: o ? m(n) : c(n), onClick: o ? d : a, Icon: o ? r.default : t.default };
                 },
                 h = n().h59f52ee,
                 D = n().eea0cbee,
                 p = n().i29533b3,
-                k = n().h129c3c3,
-                g = (e) => (e ? ((e) => p({ screenName: e }))(e) : h),
-                f = (e) => (e ? ((e) => k({ screenName: e }))(e) : D);
+                g = n().h129c3c3,
+                f = (e) => (e ? ((e) => p({ screenName: e }))(e) : h),
+                k = (e) => (e ? ((e) => g({ screenName: e }))(e) : D);
         },
         417714: (e, a, d) => {
             d.d(a, { l: () => u });
@@ -325,34 +323,34 @@
             var o = d(111677),
                 n = d.n(o),
                 r = d(224823);
-            const l = n().b3036480,
-                t = n().b3036480,
+            const t = n().b3036480,
+                l = n().b3036480,
                 s = n().e68b09b4,
                 i = n().h27b7407,
                 u = ({ removeFollowerAction: e, user: a }) => {
                     const d = c(a);
-                    return { Icon: r.default, text: l, onClick: () => e(d) };
+                    return { Icon: r.default, text: t, onClick: () => e(d) };
                 },
-                c = (e) => ({ confirmButtonType: "destructiveFilled", headline: t, label: s, text: i({ screenName: e.screen_name }) });
+                c = (e) => ({ confirmButtonType: "destructiveFilled", headline: l, label: s, text: i({ screenName: e.screen_name }) });
         },
         518966: (e, a, d) => {
             d.d(a, { h: () => s });
             var o = d(111677),
                 n = d.n(o),
                 r = d(615656);
-            const l = n().ef504d80,
-                t = n().cef96d5a,
-                s = { defaultToast: { text: n().b2542f56 }, [r.ZP.DuplicateBookmark]: { toast: { text: t } }, [r.ZP.ProtectedTweetBookmarkError]: { toast: { text: l } }, showToast: !0 };
+            const t = n().ef504d80,
+                l = n().cef96d5a,
+                s = { defaultToast: { text: n().b2542f56 }, [r.ZP.DuplicateBookmark]: { toast: { text: l } }, [r.ZP.ProtectedTweetBookmarkError]: { toast: { text: t } }, showToast: !0 };
         },
         200770: (e, a, d) => {
             d.d(a, { o: () => i });
             var o = d(111677),
                 n = d.n(o),
                 r = d(615656);
-            const l = n().fe3b9942,
-                t = n().c2a6dc5c,
+            const t = n().fe3b9942,
+                l = n().c2a6dc5c,
                 s = n().b57f01b8,
-                i = { defaultToast: { text: t }, [r.ZP.BlockedUserError]: { toast: { text: l } }, [r.ZP.ProtectedStatusFavoriteError]: { toast: { text: s } }, showToast: !0 };
+                i = { defaultToast: { text: l }, [r.ZP.BlockedUserError]: { toast: { text: t } }, [r.ZP.ProtectedStatusFavoriteError]: { toast: { text: s } }, showToast: !0 };
         },
         48886: (e, a, d) => {
             d.d(a, { q: () => n });
@@ -381,34 +379,34 @@
             const r = { [o.ZP.FollowError]: { customAction: n.w1 } };
         },
         943245: (e, a, d) => {
-            d.d(a, { It: () => c, mD: () => u, sE: () => t, t: () => s });
+            d.d(a, { It: () => c, mD: () => u, sE: () => l, t: () => s });
             var o = d(899492),
                 n = d(733357);
             const r = ["da", "de", "en", "en-gb", "es", "et", "eu", "fi", "fil", "fr", "ga", "gl", "ht", "hu", "id", "it", "lt", "lv", "nl", "no", "ms", "pl", "pt", "sk", "sl", "sv", "tr", "vi"],
-                l = { "en-gb": "en", "en-ss": "en", fil: "tl", he: "iw", id: "in", msa: "ms", "xx-lc": "en" },
-                t = (e) => {
+                t = { "en-gb": "en", "en-ss": "en", fil: "tl", he: "iw", id: "in", msa: "ms", "xx-lc": "en" },
+                l = (e) => {
                     const a = e.toLowerCase();
-                    return l[a] || a;
+                    return t[a] || a;
                 },
                 s = (e, a) => {
                     if (a) return new Intl.DisplayNames([e], { type: "language" }).of(a);
                 },
                 i = (e, a) => {
-                    const d = t(e);
+                    const d = l(e);
                     return !(r.indexOf(d) > -1 && a < 20) && !("und" === e);
                 },
                 u = ({ displayTextRange: e, entities: a, language: d, text: r }) => {
                     if (!e || !i(d, e[1] - e[0])) return !1;
-                    const l = ((e, a) => {
+                    const t = ((e, a) => {
                             let d = o.Z.getTwemojiEntities(e).map((e) => e.indices);
                             for (const e in a) d = d.concat(a[e].map((e) => e.indices));
                             return d.sort((e, a) => e[0] - a[0]), d;
                         })(r, a),
-                        t = ((e, a, d) => {
+                        l = ((e, a, d) => {
                             const { accText: o, lastIndex: n } = d.reduce(({ accText: d, lastIndex: o }, n) => (n[1] <= o || a[1] <= n[0] ? { lastIndex: o, accText: d } : { accText: d + e.slice(o, n[0]), lastIndex: n[1] }), { accText: "", lastIndex: a[0] });
                             return o + e.slice(n, a[1]);
-                        })(r, e, l);
-                    return !(0, n.Z)(t) && i(d, t.length);
+                        })(r, e, t);
+                    return !(0, n.Z)(l) && i(d, l.length);
                 },
                 c = (e) => {
                     if (e.includes("-")) return e;
@@ -447,25 +445,25 @@
                 };
         },
         397159: (e, a, d) => {
-            d.d(a, { Fi: () => c, fQ: () => f, iS: () => u });
+            d.d(a, { Fi: () => c, fQ: () => k, iS: () => u });
             d(136728), d(574858), d(543673), d(240753), d(128399);
             var o = d(468811),
                 n = d.n(o),
                 r = d(111677),
-                l = d.n(r),
-                t = d(123702);
-            const s = l().c3f04d9c,
-                i = l().cbdddb0a,
+                t = d.n(r),
+                l = d(123702);
+            const s = t().c3f04d9c,
+                i = t().cbdddb0a,
                 u = { HEADER: "header", ASSISTANT: "assistant", DECISION: "decision", RAW_FUNCTION_RESULT: "raw_function_result", FUNCTION: "function", SUMMARY: "summary", FINAL: "final", SOFT_STOP: "softstop", FINAL_LONG: "final_long" },
                 c = { IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED", FAILED: "FAILED" },
-                m = l().e98cc293,
-                b = l().b0d1e205,
-                h = l().i2e0f4d7,
-                D = l().acb9b845,
-                p = l().ef261d8d,
-                k = l().f7d9cfb9,
-                g = l().bec7eb11;
-            class f {
+                m = t().e98cc293,
+                b = t().b0d1e205,
+                h = t().i2e0f4d7,
+                D = t().acb9b845,
+                p = t().ef261d8d,
+                g = t().f7d9cfb9,
+                f = t().bec7eb11;
+            class k {
                 constructor(e) {
                     (this.initiateFromHistoryResponses = (e, a = !1) => {
                         this.lastStreamedDataTimestamp = Date.now();
@@ -477,8 +475,8 @@
                                 let n = 0;
                                 if ((o.assistant && ((this.accumulatedTrace += o.assistant), (this.traceEnabled = !0)), o.summary && (e.subSteps.push({ messageStepId: d + n, messageTag: u.SUMMARY, summary: o.summary }), n++), o.decision)) {
                                     const a = this.parseMessageJSON(o.decision),
-                                        { markdown: r, text: l } = this.getContentForDecisionAction(a);
-                                    e.subSteps.push({ messageStepId: d + n, messageTag: u.DECISION, actionIcon: this.getIconForDecisionAction(a), actionType: a?.action, actionMarkdownSummary: r, actionSummary: l, actionWebResult: this.webResults.find((e) => e.url === a?.action_input?.url), actionState: "COMPLETED", webResults: o.webResults, xPostIds: o.xPostIds }), n++;
+                                        { markdown: r, text: t } = this.getContentForDecisionAction(a);
+                                    e.subSteps.push({ messageStepId: d + n, messageTag: u.DECISION, actionIcon: this.getIconForDecisionAction(a), actionType: a?.action, actionMarkdownSummary: r, actionSummary: t, actionWebResult: this.webResults.find((e) => e.url === a?.action_input?.url), actionState: "COMPLETED", webResults: o.webResults, xPostIds: o.xPostIds }), n++;
                                 }
                             }
                             this.steps.push(e);
@@ -501,8 +499,8 @@
                                 return void (a >= 0 && this.completeStep(a));
                             }
                             const r = this.steps[a],
-                                l = r.subSteps.findLastIndex((a) => (e.messageTag === u.RAW_FUNCTION_RESULT ? a.messageStepId === e.messageStepId && (a.messageTag === e.messageTag || a.messageTag === u.DECISION) : a.messageStepId === e.messageStepId && a.messageTag === e.messageTag)),
-                                i = l > -1 ? r.subSteps[l] : void 0;
+                                t = r.subSteps.findLastIndex((a) => (e.messageTag === u.RAW_FUNCTION_RESULT ? a.messageStepId === e.messageStepId && (a.messageTag === e.messageTag || a.messageTag === u.DECISION) : a.messageStepId === e.messageStepId && a.messageTag === e.messageTag)),
+                                i = t > -1 ? r.subSteps[t] : void 0;
                             let m = !1;
                             if (i) {
                                 switch (e.messageTag) {
@@ -510,7 +508,7 @@
                                         (this.accumulatedTrace += e.message), (this.traceEnabled = !0);
                                         break;
                                     case u.SUMMARY:
-                                        (i.summary = (i.summary || "") + e.message), (i.bulletPoints = [...(i.bulletPoints || []), (0, t.K)(e.message)]), (m = !0), (this.accumulatedSummary += e.message);
+                                        (i.summary = (i.summary || "") + e.message), (i.bulletPoints = [...(i.bulletPoints || []), (0, l.K)(e.message)]), (m = !0), (this.accumulatedSummary += e.message);
                                         break;
                                     case u.DECISION: {
                                         const a = this.parseMessageJSON(e.message),
@@ -522,7 +520,7 @@
                                         if (!((e.webResults && e.webResults.length) || (e.xPostIds && e.xPostIds.length))) break;
                                         e.webResults && ((i.webResults = e.webResults), this.addWebResults(e.webResults || [])), e.xPostIds && ((i.xPostIds = e.xPostIds), this.addXPostIds(e.xPostIds || [])), i.actionState, (m = !0);
                                 }
-                                m && ((r.subSteps[l] = { ...i }), (r.subSteps = [...r.subSteps]));
+                                m && ((r.subSteps[t] = { ...i }), (r.subSteps = [...r.subSteps]));
                             } else {
                                 let a = null;
                                 switch (e.messageTag) {
@@ -571,7 +569,7 @@
                         (this.getContentForDecisionAction = (e) => {
                             if (!e) return { text: "", markdown: "" };
                             if (e.action_input?.username) {
-                                if (e.action_input?.query) return { text: k({ username: e.action_input?.username, query: e.action_input?.query }), markdown: g({ username: e.action_input?.username, query: e.action_input?.query }) };
+                                if (e.action_input?.query) return { text: g({ username: e.action_input?.username, query: e.action_input?.query }), markdown: f({ username: e.action_input?.username, query: e.action_input?.query }) };
                                 const a = p({ username: e.action_input?.username });
                                 return { text: a, markdown: a };
                             }
@@ -666,8 +664,8 @@
             var o = d(392237),
                 n = d(122375),
                 r = d(967262);
-            const l = { BOLD: "Bold", ITALIC: "Italic", STRIKETHROUGH: "Strikethrough" },
-                t = { IMMUTABLE: "Immutable", MUTABLE: "Mutable", SEGMENTED: "Segmented" },
+            const t = { BOLD: "Bold", ITALIC: "Italic", STRIKETHROUGH: "Strikethrough" },
+                l = { IMMUTABLE: "Immutable", MUTABLE: "Mutable", SEGMENTED: "Segmented" },
                 s = (e) => {
                     if ("ApiImage" === e?.media_info?.__typename) return { height: e?.media_info?.original_img_height, url: e?.media_info?.original_img_url, width: e?.media_info?.original_img_width };
                 },
@@ -680,10 +678,10 @@
                 c = () => o.default.theme.aspectRatios.articleBanner,
                 m = (e) => {
                     const a = [],
-                        d = e.blocks.map((e) => ({ data: e.data, text: e.text, key: e.key || void 0, type: e.type, entity_ranges: e.entityRanges?.map((e) => ({ key: e.key, offset: e.offset, length: e.length })), inline_style_ranges: e.inlineStyleRanges?.map((e) => ({ length: e.length, offset: e.offset, style: l[e.style] || e.style })) }));
+                        d = e.blocks.map((e) => ({ data: e.data, text: e.text, key: e.key || void 0, type: e.type, entity_ranges: e.entityRanges?.map((e) => ({ key: e.key, offset: e.offset, length: e.length })), inline_style_ranges: e.inlineStyleRanges?.map((e) => ({ length: e.length, offset: e.offset, style: t[e.style] || e.style })) }));
                     Object.keys(e.entityMap).forEach((d) => {
                         const o = e.entityMap[d];
-                        a.push({ key: d, value: { data: { caption: o.data?.caption || void 0, entity_key: o.data?.entityKey || void 0, media_items: o.data?.mediaItems?.map((e) => ({ local_media_id: e.localMediaId, media_category: e.mediaCategory, media_id: e.mediaId })), tweet_id: o.data?.tweetId, url: o.data?.url, markdown: o.data?.markdown }, type: o.type, mutability: t[o.mutability] } });
+                        a.push({ key: d, value: { data: { caption: o.data?.caption || void 0, entity_key: o.data?.entityKey || void 0, media_items: o.data?.mediaItems?.map((e) => ({ local_media_id: e.localMediaId, media_category: e.mediaCategory, media_id: e.mediaId })), tweet_id: o.data?.tweetId, url: o.data?.url, markdown: o.data?.markdown }, type: o.type, mutability: l[o.mutability] } });
                     });
                     return { blocks: d, entity_map: a };
                 },
@@ -713,8 +711,8 @@
             var o = d(595088),
                 n = d(161821),
                 r = d(2138),
-                l = d(516951),
-                t = d(774717),
+                t = d(516951),
+                l = d(774717),
                 s = d(4463);
             let i = {},
                 u = 0;
@@ -722,14 +720,14 @@
                 m = () => {
                     (0, o.Z)(i).forEach(([e, a], d) => {
                         const r = (0, n.Z)(a),
-                            l = r.length;
+                            t = r.length;
                         r.forEach((a) => {
                             (0, o.Z)(c).map(([d, [o, n]]) => {
-                                ((e) => 1 === e || Math.random() <= 0.01)(l) && o in a && n in a && (0, t.IM)(((e, a) => `lifecycle:${e.toLowerCase()}:${a}`)(e, d), { duration_ms: a[o] - a[n] });
+                                ((e) => 1 === e || Math.random() <= 0.01)(t) && o in a && n in a && (0, l.IM)(((e, a) => `lifecycle:${e.toLowerCase()}:${a}`)(e, d), { duration_ms: a[o] - a[n] });
                             });
                         });
                     }),
-                        (0, t.yl)(),
+                        (0, l.yl)(),
                         (i = {});
                 },
                 b = (0, r.Z)(m, 2e4) || m,
@@ -743,7 +741,7 @@
                     i[e][a][d] = o;
                 },
                 p = function (e) {
-                    const a = { UNSAFE_componentWillMount: e.prototype.UNSAFE_componentWillMount || l.Z, componentDidMount: e.prototype.componentDidMount || l.Z, UNSAFE_componentWillUpdate: e.prototype.UNSAFE_componentWillUpdate || l.Z, componentDidUpdate: e.prototype.componentDidUpdate || l.Z, componentWillUnmount: e.prototype.componentWillUnmount || l.Z };
+                    const a = { UNSAFE_componentWillMount: e.prototype.UNSAFE_componentWillMount || t.Z, componentDidMount: e.prototype.componentDidMount || t.Z, UNSAFE_componentWillUpdate: e.prototype.UNSAFE_componentWillUpdate || t.Z, componentDidUpdate: e.prototype.componentDidUpdate || t.Z, componentWillUnmount: e.prototype.componentWillUnmount || t.Z };
                     return (
                         (e.prototype.UNSAFE_componentWillMount = function (...e) {
                             const [d, o] = h(this, !0);
@@ -770,4 +768,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef.1ba0584a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef.c196307a.js.map

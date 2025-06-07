@@ -8,11 +8,11 @@
                 l = a(325686),
                 c = a(661810),
                 r = a(731708),
-                i = a(392237),
-                o = a(950822),
+                o = a(392237),
+                i = a(950822),
                 s = a(347101);
-            const m = (e) =>
-                    (0, o.Z)("svg", {
+            const d = (e) =>
+                    (0, i.Z)("svg", {
                         viewBox: "0 0 78.308 30.929",
                         style: [s.Z.root, e.style],
                         children: n.createElement(
@@ -82,9 +82,9 @@
                             n.createElement("ellipse", { cx: "73.510002", cy: "16.941", rx: ".24", ry: ".256" }),
                         ),
                     }),
-                d = () => n.createElement(l.Z, { style: u.contentWrapper }, n.createElement(c.Z, { spacing: "space8" }), n.createElement(l.Z, { style: u.row }, n.createElement(m, { style: u.logo }), n.createElement(l.Z, { style: u.column }, n.createElement(r.ZP, { color: "gray500", size: "subtext3" }, "Your deposits are eligible for pass through FDIC insurance up to $250,000."), n.createElement(r.ZP, { color: "gray500", size: "subtext3" }, "X is a financial services company and not a bank. Banking services and FDIC insurance is provided by Cross River Bank, Member FDIC.")))),
-                u = i.default.create((e) => ({ logo: { width: e.spaces.space64, color: e.colors.gray500 }, row: { flexDirection: "row", gap: e.spaces.space24 }, column: { flexDirection: "column", gap: e.spaces.space12, flex: 1 } })),
-                p = n.memo(d);
+                m = () => n.createElement(l.Z, { style: u.contentWrapper }, n.createElement(c.Z, { spacing: "space8" }), n.createElement(l.Z, { style: u.row }, n.createElement(d, { style: u.logo }), n.createElement(l.Z, { style: u.column }, n.createElement(r.ZP, { color: "gray500", size: "subtext3" }, "Your deposits are eligible for pass through FDIC insurance up to $250,000."), n.createElement(r.ZP, { color: "gray500", size: "subtext3" }, "X is a financial services company and not a bank. Banking services and FDIC insurance is provided by Cross River Bank, Member FDIC.")))),
+                u = o.default.create((e) => ({ logo: { width: e.spaces.space64, color: e.colors.gray500 }, row: { flexDirection: "row", gap: e.spaces.space24 }, column: { flexDirection: "column", gap: e.spaces.space12, flex: 1 } })),
+                p = n.memo(m);
         },
         575123: (e, t, a) => {
             a.d(t, { Z: () => h });
@@ -92,13 +92,13 @@
                 l = a(325686),
                 c = a(154003),
                 r = a(692165),
-                i = a(19197),
-                o = a(514639),
+                o = a(19197),
+                i = a(514639),
                 s = a(743080);
-            const m = "Help Center",
-                d = "Settings",
-                u = { pathname: o.N6, external: !0, openInSameFrame: !1 },
-                p = () => n.createElement(l.Z, { style: s.ZP.actionButtons }, n.createElement(c.ZP, { "aria-label": m, hoverLabel: { label: m }, icon: n.createElement(r.default, null), link: u, pullRight: !0, type: "primaryText" }), n.createElement(c.ZP, { "aria-label": d, hoverLabel: { label: d }, icon: n.createElement(i.default, null), link: o.Sr, pullRight: !0, type: "primaryText" })),
+            const d = "Help Center",
+                m = "Settings",
+                u = { pathname: i.N6, external: !0, openInSameFrame: !1 },
+                p = () => n.createElement(l.Z, { style: s.ZP.actionButtons }, n.createElement(c.ZP, { "aria-label": d, hoverLabel: { label: d }, icon: n.createElement(r.default, null), link: u, pullRight: !0, type: "primaryText" }), n.createElement(c.ZP, { "aria-label": m, hoverLabel: { label: m }, icon: n.createElement(o.default, null), link: i.Sr, pullRight: !0, type: "primaryText" })),
                 h = n.memo(p);
         },
         827309: (e, t, a) => {
@@ -107,45 +107,45 @@
                 l = a(325686),
                 c = a(731708),
                 r = a(154003),
-                i = a(392237),
-                o = a(760286),
+                o = a(392237),
+                i = a(760286),
                 s = a(980407),
-                m = a(743080);
-            const d = ({ actionLabel: e, children: t, headline: a, history: i, onAction: d, onClose: p, subtext: h, supportUrl: y }) => {
-                    const g = (0, m.jh)();
-                    return n.createElement(s.Z, { backButtonType: p ? "close" : void 0, hideBackButton: !p, history: i, onBackClick: p, withoutBottomBarMobile: !0 }, n.createElement(l.Z, { style: g.container }, n.createElement(o.default, { style: m.ZP.illustration }), n.createElement(c.ZP, { size: "title1", weight: "bold" }, a), n.createElement(c.ZP, { color: "gray700", size: "subtext1" }, h, y ? n.createElement(n.Fragment, null, n.createElement(c.ZP, { link: y, size: "body", style: m.ZP.learnMoreLink }, "Learn more")) : null), n.createElement(l.Z, { style: u.content }, t)), d ? n.createElement(l.Z, { style: g.footer }, n.createElement(r.ZP, { onPress: d, size: "large", type: "primaryFilled" }, e)) : null);
+                d = a(743080);
+            const m = ({ actionLabel: e, children: t, headline: a, history: o, onAction: m, onClose: p, subtext: h, supportUrl: y }) => {
+                    const g = (0, d.jh)();
+                    return n.createElement(s.Z, { backButtonType: p ? "close" : void 0, hideBackButton: !p, history: o, onBackClick: p, withoutBottomBarMobile: !0 }, n.createElement(l.Z, { style: g.container }, n.createElement(i.default, { style: d.ZP.illustration }), n.createElement(c.ZP, { size: "title1", weight: "bold" }, a), n.createElement(c.ZP, { color: "gray700", size: "subtext1" }, h, y ? n.createElement(n.Fragment, null, n.createElement(c.ZP, { link: y, size: "body", style: d.ZP.learnMoreLink }, "Learn more")) : null), n.createElement(l.Z, { style: u.content }, t)), m ? n.createElement(l.Z, { style: g.footer }, n.createElement(r.ZP, { onPress: m, size: "large", type: "primaryFilled" }, e)) : null);
                 },
-                u = i.default.create((e) => ({ content: { marginTop: e.spaces.space32 } })),
-                p = n.memo(d);
+                u = o.default.create((e) => ({ content: { marginTop: e.spaces.space32 } })),
+                p = n.memo(m);
         },
         749122: (e, t, a) => {
-            a.d(t, { Z: () => i });
+            a.d(t, { Z: () => o });
             var n = a(202784),
                 l = a(731708);
             const c = ({ account: e, size: t, weight: a }) => n.createElement(l.ZP, { size: t, style: r.name, weight: a }, e.issuedCardAccountName),
                 r = a(392237).default.create((e) => ({ name: { display: "flex", overflow: "hidden", textOverflow: "clip" } })),
-                i = n.memo(c);
+                o = n.memo(c);
         },
         615954: (e, t, a) => {
-            a.d(t, { Z: () => m });
+            a.d(t, { Z: () => d });
             var n = a(202784),
                 l = a(470397),
                 c = a(731708),
                 r = a(392237),
-                i = a(191796);
-            const o = ({ name: e, size: t, website: a }) => n.createElement(l.Z, null, e && n.createElement(c.ZP, { size: t, style: s.merchantName, weight: "medium" }, e), a ? n.createElement(c.ZP, { link: { pathname: `https://${a}`, external: !0 }, size: t, weight: "medium" }, "Website", n.createElement(i.default, null)) : null),
+                o = a(191796);
+            const i = ({ name: e, size: t, website: a }) => n.createElement(l.Z, null, e && n.createElement(c.ZP, { size: t, style: s.merchantName, weight: "medium" }, e), a ? n.createElement(c.ZP, { link: { pathname: `https://${a}`, external: !0 }, size: t, weight: "medium" }, "Website", n.createElement(o.default, null)) : null),
                 s = r.default.create((e) => ({ merchantName: { display: "flex", overflow: "hidden", textOverflow: "clip" } })),
-                m = n.memo(o);
+                d = n.memo(i);
         },
         413499: (e, t, a) => {
-            a.d(t, { Z: () => m });
+            a.d(t, { Z: () => d });
             var n = a(807896),
                 l = a(202784),
                 c = a(325686),
                 r = a(3348),
-                i = a(731708),
-                o = a(392237);
-            function s({ maxLength: e, onChange: t, placeholder: a = "Optionally add a note", placeholderTextColor: o, value: s, ...m }) {
+                o = a(731708),
+                i = a(392237);
+            function s({ maxLength: e, onChange: t, placeholder: a = "Optionally add a note", placeholderTextColor: i, value: s, ...d }) {
                 const [u, p] = l.useState(!1),
                     [h, y] = l.useState(!1),
                     g = l.useCallback(() => {
@@ -161,11 +161,11 @@
                         },
                         [t, e, u],
                     ),
-                    v = u && e ? ((e) => `Note cannot exceed ${e} characters.`)(e) : null;
-                return l.createElement(c.Z, null, l.createElement(c.Z, { style: [d.noteInputContainer, u ? d.noteInputContainerError : null] }, l.createElement(r.Z, (0, n.Z)({}, m, { maxLength: e, onBlur: E, onChange: f, onFocus: g, placeholder: a, placeholderTextColor: o ?? d.placeholder.color, style: [d.noteInput, h && d.noteInputFocused], testID: "note-input", value: s }))), l.createElement(c.Z, { style: d.errorContainer }, v && l.createElement(i.ZP, { style: d.errorText }, v)));
+                    b = u && e ? ((e) => `Note cannot exceed ${e} characters.`)(e) : null;
+                return l.createElement(c.Z, null, l.createElement(c.Z, { style: [m.noteInputContainer, u ? m.noteInputContainerError : null] }, l.createElement(r.Z, (0, n.Z)({}, d, { maxLength: e, onBlur: E, onChange: f, onFocus: g, placeholder: a, placeholderTextColor: i ?? m.placeholder.color, style: [m.noteInput, h && m.noteInputFocused], testID: "note-input", value: s }))), l.createElement(c.Z, { style: m.errorContainer }, b && l.createElement(o.ZP, { style: m.errorText }, b)));
             }
-            const m = l.memo(s),
-                d = o.default.create((e) => ({ noteInput: { padding: e.spaces.space16, width: "100%", height: e.spaces.space48, textAlign: "start", fontSize: e.fontSizes.body, color: e.colors.text, backgroundColor: "transparent", border: "none" }, placeholder: { color: e.colors.gray400 }, noteInputContainer: { borderWidth: e.spaces.space1, borderColor: e.colors.gray200, borderRadius: e.spaces.space12 }, noteInputContainerError: { borderColor: e.colors.red500 }, errorContainer: { justifyContent: "flex-start", marginTop: e.spaces.space8 }, errorText: { color: e.colors.red500, fontSize: e.fontSizes.subtext3 }, noteInputFocused: { outlineColor: e.colors.gray200, borderRadius: e.spaces.space12 } }));
+            const d = l.memo(s),
+                m = i.default.create((e) => ({ noteInput: { padding: e.spaces.space16, width: "100%", height: e.spaces.space48, textAlign: "start", fontSize: e.fontSizes.body, color: e.colors.text, backgroundColor: "transparent", border: "none" }, placeholder: { color: e.colors.gray400 }, noteInputContainer: { borderWidth: e.spaces.space1, borderColor: e.colors.gray200, borderRadius: e.spaces.space12 }, noteInputContainerError: { borderColor: e.colors.red500 }, errorContainer: { justifyContent: "flex-start", marginTop: e.spaces.space8 }, errorText: { color: e.colors.red500, fontSize: e.fontSizes.subtext3 }, noteInputFocused: { outlineColor: e.colors.gray200, borderRadius: e.spaces.space12 } }));
         },
         743250: (e, t, a) => {
             a.d(t, { Z: () => S });
@@ -173,11 +173,11 @@
                 l = a(202784),
                 c = a(325686),
                 r = (a(585488), a(277660)),
-                i = a.n(r),
-                o = a(952428),
+                o = a.n(r),
+                i = a(952428),
                 s = a(909377),
-                m = a(731708),
-                d = a(392237),
+                d = a(731708),
+                m = a(392237),
                 u = a(211971),
                 p = a(711223),
                 h = a(642317),
@@ -185,55 +185,55 @@
                 g = a(14284),
                 E = a(58399),
                 f = a(976352),
-                v = a(988291),
-                b = a(829464),
+                b = a(988291),
+                v = a(829464),
                 k = a(727828),
-                x = a(514639);
-            const z = "Verify",
-                Z = n.Z,
-                w = Object.freeze({ [v.S.Alert]: "danger", [v.S.Info]: "primary", [v.S.Warning]: "warning" }),
-                C = Object.freeze({ [v.S.Alert]: u.default, [v.S.Info]: p.default, [v.S.Warning]: u.default }),
+                Z = a(514639);
+            const x = "Verify",
+                C = n.Z,
+                z = Object.freeze({ [b.S.Alert]: "danger", [b.S.Info]: "primary", [b.S.Warning]: "warning" }),
+                w = Object.freeze({ [b.S.Alert]: u.default, [b.S.Info]: p.default, [b.S.Warning]: u.default }),
                 P = ({ itemRef: e, supportLink: t }) => {
-                    const a = i()(Z, e),
-                        n = a.topics?.includes(b.h.Premium),
-                        r = a.topics?.includes(b.h.Interest),
-                        d = a.topics?.includes(b.h.Geography),
-                        u = a.level === v.S.Info,
+                    const a = o()(C, e),
+                        n = a.topics?.includes(v.h.Premium),
+                        r = a.topics?.includes(v.h.Interest),
+                        m = a.topics?.includes(v.h.Geography),
+                        u = a.level === b.S.Info,
                         p = (({ action: e, supportLink: t, url: a }) => {
                             switch (e) {
                                 case f.C.ContactSupport:
                                     return { label: "Contact support", link: a ?? t };
                                 case f.C.LearnMore:
-                                    return { label: "Learn More", link: a ?? x.N6 };
+                                    return { label: "Learn More", link: a ?? Z.N6 };
                                 case f.C.KycVerification:
-                                    return { label: z, link: { pathname: x.AU.tier2.verifyIdentityPath, state: { closePath: x.gp } } };
+                                    return { label: x, link: { pathname: Z.AU.tier2.verifyIdentityPath, state: { closePath: Z.gp } } };
                                 case f.C.KycDocumentUpload:
-                                    return { label: z, link: { pathname: x.AU.tier3.verifyIdentityPath, state: { closePath: x.gp } } };
+                                    return { label: x, link: { pathname: Z.AU.tier3.verifyIdentityPath, state: { closePath: Z.gp } } };
                                 case f.C.SelfieVerification:
-                                    return { label: z, link: { pathname: x.AU.selfie.verifyIdentityPath, state: { closePath: x.gp } } };
+                                    return { label: x, link: { pathname: Z.AU.selfie.verifyIdentityPath, state: { closePath: Z.gp } } };
                                 case f.C.Deposit:
-                                    return { label: "Add money", link: x.IN };
+                                    return { label: "Add money", link: Z.IN };
                                 case f.C.SetupPasskey:
-                                    return { label: "Setup", link: x.ul };
+                                    return { label: "Setup", link: Z.ul };
                                 default:
                                     return;
                             }
                         })({ action: a.call_to_action, supportLink: t, url: a.call_to_action_url }),
-                        P = (u ? (n ? "primary" : r ? "success" : void 0) : void 0) ?? w[a.level],
-                        S = n ? h.default : r ? y.default : d ? g.default : C[a.level];
-                    return l.createElement(o.Z, { key: a.title, link: !n && p ? p.link : void 0, style: [I.noticeListItem, !n && p && I.pointer], withInteractiveStyling: !1 }, l.createElement(c.Z, { style: I.contentContainer }, l.createElement(c.Z, { style: I.noticeContainer }, l.createElement(s.Z, { Icon: S, color: P, size: "xLarge" }), l.createElement(c.Z, { style: I.noticeTextContainer }, l.createElement(m.ZP, { color: "text", size: "subtext2", weight: "medium" }, a.title), l.createElement(m.ZP, { color: "gray800", size: "subtext2", weight: "normal" }, a.subtitle))), n ? l.createElement(k.Z, { variant: "MoneyInterest" }) : p ? l.createElement(E.default, { style: I.icon }) : null));
+                        P = (u ? (n ? "primary" : r ? "success" : void 0) : void 0) ?? z[a.level],
+                        S = n ? h.default : r ? y.default : m ? g.default : w[a.level];
+                    return l.createElement(i.Z, { key: a.title, link: !n && p ? p.link : void 0, style: [I.noticeListItem, !n && p && I.pointer], withInteractiveStyling: !1 }, l.createElement(c.Z, { style: I.contentContainer }, l.createElement(c.Z, { style: I.noticeContainer }, l.createElement(s.Z, { Icon: S, color: P, size: "xLarge" }), l.createElement(c.Z, { style: I.noticeTextContainer }, l.createElement(d.ZP, { color: "text", size: "subtext2", weight: "medium" }, a.title), l.createElement(d.ZP, { color: "gray800", size: "subtext2", weight: "normal" }, a.subtitle))), n ? l.createElement(k.Z, { variant: "MoneyInterest" }) : p ? l.createElement(E.default, { style: I.icon }) : null));
                 },
-                I = d.default.create((e) => ({ contentContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%" }, noticeContainer: { display: "flex", flexDirection: "row", gap: e.spaces.space16 }, noticeTextContainer: { display: "flex", flexDirection: "col", gap: e.spaces.space4 }, noticeListItem: { gap: e.spaces.space8, flex: 1, flexDirection: "row", borderRadius: e.borderRadii.large, alignItems: "center", paddingVertical: e.spaces.space8 }, pointer: { cursor: "pointer" }, icon: { color: e.colors.gray700 } })),
+                I = m.default.create((e) => ({ contentContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%" }, noticeContainer: { display: "flex", flexDirection: "row", gap: e.spaces.space16 }, noticeTextContainer: { display: "flex", flexDirection: "col", gap: e.spaces.space4 }, noticeListItem: { gap: e.spaces.space8, flex: 1, flexDirection: "row", borderRadius: e.borderRadii.large, alignItems: "center", paddingVertical: e.spaces.space8 }, pointer: { cursor: "pointer" }, icon: { color: e.colors.gray700 } })),
                 S = l.memo(P);
         },
         86320: (e, t, a) => {
-            a.d(t, { Z: () => o });
+            a.d(t, { Z: () => i });
             var n = a(202784),
                 l = a(470397),
                 c = a(731708);
-            const r = ({ account: e, size: t, weight: a = "medium" }) => n.createElement(l.Z, null, e.accountType && n.createElement(c.ZP, { size: t, style: i.bankName, weight: a }, e.accountType), n.createElement(c.ZP, { size: t, style: i.bankName, weight: a }, e.accountName.name)),
-                i = a(392237).default.create((e) => ({ bankName: { display: "flex", overflow: "hidden", textOverflow: "clip" } })),
-                o = n.memo(r);
+            const r = ({ account: e, size: t, weight: a = "medium" }) => n.createElement(l.Z, null, e.accountType && n.createElement(c.ZP, { size: t, style: o.bankName, weight: a }, e.accountType), n.createElement(c.ZP, { size: t, style: o.bankName, weight: a }, e.accountName.name)),
+                o = a(392237).default.create((e) => ({ bankName: { display: "flex", overflow: "hidden", textOverflow: "clip" } })),
+                i = n.memo(r);
         },
         671738: (e, t, a) => {
             a.d(t, { Z: () => h });
@@ -241,31 +241,31 @@
                 l = a(325686),
                 c = a(30899),
                 r = a(392237),
-                i = a(727384),
-                o = a(392046),
+                o = a(727384),
+                i = a(392046),
                 s = a(189305),
-                m = a(281838);
-            const d = ({ accountId: e, addAccountLink: t, addBankCardLink: a, handleDismiss: c, methodConfigs: r, onSelectAccountId: d, paymentMethods: u, transferDirection: h }) => {
+                d = a(281838);
+            const m = ({ accountId: e, addAccountLink: t, addBankCardLink: a, handleDismiss: c, methodConfigs: r, onSelectAccountId: m, paymentMethods: u, transferDirection: h }) => {
                     const y = n.useCallback(
                         (e) => () => {
-                            d(e), c();
+                            m(e), c();
                         },
-                        [c, d],
+                        [c, m],
                     );
                     return n.createElement(
                         l.Z,
                         { style: p.popoverContent },
                         u?.map((t) => {
-                            const a = (0, i.xe)({ method: t, methodConfigs: r, transferDirection: h });
-                            return a && a.id ? n.createElement(o.Z, { account: a, isSelected: e === a.id, key: a.id, onClick: y(a.id) }) : null;
+                            const a = (0, o.xe)({ method: t, methodConfigs: r, transferDirection: h });
+                            return a && a.id ? n.createElement(i.Z, { account: a, isSelected: e === a.id, key: a.id, onClick: y(a.id) }) : null;
                         }),
-                        n.createElement(m.Z, { link: a, methodConfigs: r, transferDirection: h, variant: "link" }),
+                        n.createElement(d.Z, { link: a, methodConfigs: r, transferDirection: h, variant: "link" }),
                         n.createElement(s.Z, { link: t, methodConfigs: r, transferDirection: h, variant: "link" }),
                     );
                 },
-                u = ({ accountId: e, addAccountLink: t, addBankCardLink: a, calculatedFee: l, methodConfigs: r, onSelectAccountId: i, paymentMethods: s, selectedAccount: m, transferDirection: u }) => {
-                    const h = n.useCallback((l) => n.createElement(d, { accountId: e, addAccountLink: t, addBankCardLink: a, handleDismiss: l, methodConfigs: r, onSelectAccountId: i, paymentMethods: s, transferDirection: u }), [e, t, a, r, i, s, u]);
-                    return n.createElement(c.Z, { contentStyle: p.contentStyle, renderContent: h, withArrow: !0 }, n.createElement(o.Z, { account: m, calculatedFee: l, withChevron: !0, withInteractiveStyling: !0 }));
+                u = ({ accountId: e, addAccountLink: t, addBankCardLink: a, calculatedFee: l, methodConfigs: r, onSelectAccountId: o, paymentMethods: s, selectedAccount: d, transferDirection: u }) => {
+                    const h = n.useCallback((l) => n.createElement(m, { accountId: e, addAccountLink: t, addBankCardLink: a, handleDismiss: l, methodConfigs: r, onSelectAccountId: o, paymentMethods: s, transferDirection: u }), [e, t, a, r, o, s, u]);
+                    return n.createElement(c.Z, { contentStyle: p.contentStyle, renderContent: h, withArrow: !0 }, n.createElement(i.Z, { account: d, calculatedFee: l, withChevron: !0, withInteractiveStyling: !0 }));
                 },
                 p = r.default.create((e) => ({ popoverContent: { margin: e.spaces.space16, flexDirection: "column", gap: e.spaces.space16 }, contentStyle: { maxHeight: 360, maxWidth: 400 } })),
                 h = n.memo(u);
@@ -276,10 +276,10 @@
                 l = a(40610),
                 c = a(514639),
                 r = a(727384);
-            const i = "Review limits",
-                o = ({ type: e }) => `This action would exceed your ${e} limits. We need to verify your identify to continue.`,
+            const o = "Review limits",
+                i = ({ type: e }) => `This action would exceed your ${e} limits. We need to verify your identify to continue.`,
                 s = ({ type: e }) => `This action would exceed your ${e} limits. Please review your limits and try again later.`,
-                m = Object.freeze({
+                d = Object.freeze({
                     InsufficientFunds: { message: "Your account balance is insufficient to make this transfer. Please fund your account and then try again.", action: { link: c.IN, label: "Deposit" } },
                     InvalidReceiver: { message: "Transfers to this account are unavailable right now. Please try again later." },
                     InvalidReceiverCurrentState: { message: "Transfers to this account are unavailable right now. Please try again later." },
@@ -293,48 +293,106 @@
                     PaymentMethodLinkRequired: { message: "You need to login to verify your bank account before you can proceed.", action: { link: c.VN, label: "Verify" } },
                     InsufficientBalance: { message: "Your bank account balance is insufficient. Please check your balance and try again." },
                     TwoFactorAuthRequired: { message: "You need to setup a passkey before you can proceed.", action: { link: c.ul, label: "Setup" } },
-                    VolumeLimitExceeded7DaySend: { message: s({ type: "weekly" }), action: { link: c.iE.limits, label: i } },
-                    VolumeLimitExceeded30DaySend: { message: s({ type: "monthly" }), action: { link: c.iE.limits, label: i } },
-                    VolumeLimitExceeded7Day: { message: s({ type: "weekly" }), action: { link: c.iE.limits, label: i } },
-                    VolumeLimitExceeded30Day: { message: s({ type: "monthly" }), action: { link: c.iE.limits, label: i } },
-                    AdditionalKycRequiredVolumeLimitExceeded7DaySend: { message: o({ type: "weekly" }), action: { link: c.AU.tier2.verifyIdentityPath, label: "Verify your identity" } },
-                    AdditionalKycRequiredVolumeLimitExceeded30DaySend: { message: o({ type: "monthly" }), action: { link: c.AU.tier2.verifyIdentityPath, label: "Verify your identity" } },
+                    VolumeLimitExceeded7DaySend: { message: s({ type: "weekly" }), action: { link: c.iE.limits, label: o } },
+                    VolumeLimitExceeded30DaySend: { message: s({ type: "monthly" }), action: { link: c.iE.limits, label: o } },
+                    VolumeLimitExceeded7Day: { message: s({ type: "weekly" }), action: { link: c.iE.limits, label: o } },
+                    VolumeLimitExceeded30Day: { message: s({ type: "monthly" }), action: { link: c.iE.limits, label: o } },
+                    AdditionalKycRequiredVolumeLimitExceeded7DaySend: { message: i({ type: "weekly" }), action: { link: c.AU.tier2.verifyIdentityPath, label: "Verify your identity" } },
+                    AdditionalKycRequiredVolumeLimitExceeded30DaySend: { message: i({ type: "monthly" }), action: { link: c.AU.tier2.verifyIdentityPath, label: "Verify your identity" } },
                     AdditionalKycRequiredTotalVolumeLimitExceeded: { message: "This action would exceed your limits. We need to verify your identify to continue.", action: { link: c.AU.tier2.verifyIdentityPath, label: "Verify your identity" } },
                     Velocity: { message: "You have temporarily exceeded your limits. Please try again later." },
                     Default: { message: "Something went wrong. Please try again later." },
                 }),
-                d = ["AdditionalKycRequiredVolumeLimitExceeded7DaySend", "AdditionalKycRequiredVolumeLimitExceeded30DaySend", "AdditionalKycRequiredTotalVolumeLimitExceeded"],
-                u = ({ errors: e, roles: t }) => (!!e?.find((e) => d.includes(e.error_code)) ? (0, r.FW)({ roles: t }) : null),
+                m = ["AdditionalKycRequiredVolumeLimitExceeded7DaySend", "AdditionalKycRequiredVolumeLimitExceeded30DaySend", "AdditionalKycRequiredTotalVolumeLimitExceeded"],
+                u = ({ errors: e, roles: t }) => (!!e?.find((e) => m.includes(e.error_code)) ? (0, r.FW)({ roles: t }) : null),
                 p = ({ errors: e, opts: t }) => {
-                    const a = e.find((e) => ((e) => !!m[e])(e.error_code));
-                    return m[a?.error_code ?? "Default"];
+                    const a = e.find((e) => ((e) => !!d[e])(e.error_code));
+                    return d[a?.error_code ?? "Default"];
                 },
                 h = ({ errors: e, linkState: t, opts: a, roles: c }) => {
                     const r = p({ errors: e, opts: a }),
-                        i = r?.action,
-                        o = u({ errors: e, roles: c }) ?? i?.link,
-                        s = i && o ? { ...i, link: { pathname: o, state: t } } : void 0,
-                        m = r.getMessage && a ? r.getMessage(a) : r.message;
-                    return n.createElement(l.Z.Danger, { action: s, text: m, withIcon: !0 });
+                        o = r?.action,
+                        i = u({ errors: e, roles: c }) ?? o?.link,
+                        s = o && i ? { ...o, link: { pathname: i, state: t } } : void 0,
+                        d = r.getMessage && a ? r.getMessage(a) : r.message;
+                    return n.createElement(l.Z.Danger, { action: s, text: d, withIcon: !0 });
                 },
                 y = n.memo(h);
         },
+        261906: (e, t, a) => {
+            a.d(t, { Z: () => m });
+            var n = a(202784),
+                l = a(325686),
+                c = a(731708),
+                r = a(530732),
+                o = a(392237),
+                i = a(58399),
+                s = a(743080);
+            const d = o.default.create((e) => ({ container: { backgroundColor: e.colors.gray0, borderTopWidth: e.spaces.space1, borderBottomWidth: e.spaces.space1, borderColor: e.colors.gray100 }, focusedContainer: { borderWidth: e.spaces.space2, borderTopWidth: e.spaces.space2, borderBottomWidth: e.spaces.space2, borderColor: e.colors.text }, activeContainer: { backgroundColor: e.colors.gray100 }, firstCard: { borderTopStartRadius: e.spaces.space16, borderTopEndRadius: e.spaces.space16, borderTopWidth: 0 }, lastCard: { borderBottomStartRadius: e.spaces.space16, borderBottomEndRadius: e.spaces.space16, borderBottomWidth: 0 }, content: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space20 }, chevron: { color: e.colors.gray700, height: e.spaces.space24, width: e.spaces.space24 } })),
+                m = (e) => {
+                    const { isActive: t = !1, isFirst: a = !1, isLast: o = !1, label: m, link: u, onPress: p, testID: h } = e,
+                        [y, g] = n.useState(!1),
+                        E = n.useCallback(() => {
+                            g(!0);
+                        }, [g]),
+                        f = n.useCallback(() => {
+                            g(!1);
+                        }, [g]),
+                        b = "string" == typeof m ? n.createElement(c.ZP, { size: "body", weight: "normal" }, m) : m,
+                        v = [d.container, t && d.activeContainer, a && d.firstCard, o && d.lastCard, y && d.focusedContainer],
+                        k = (0, s.YC)();
+                    return n.createElement(r.Z, { interactiveStyles: k, link: u, onBlur: f, onFocus: E, onPress: p, role: "button", style: v, testID: h }, n.createElement(l.Z, { style: d.content }, n.createElement(c.ZP, { color: "text", size: "body", weight: "medium" }, b), (u || p) && n.createElement(i.default, { style: d.chevron })));
+                };
+        },
+        722610: (e, t, a) => {
+            a.d(t, { Z: () => r });
+            var n = a(202784),
+                l = a(325686);
+            const c = a(392237).default.create((e) => ({ container: { paddingHorizontal: e.spaces.space24, borderRadius: e.spaces.space16, marginTop: e.spaces.space32 } })),
+                r = (e) => {
+                    const { children: t, style: a } = e;
+                    return n.createElement(l.Z, { style: [c.container, a] }, t);
+                };
+        },
+        221554: (e, t, a) => {
+            a.d(t, { Z: () => y });
+            a(136728);
+            var n = a(202784),
+                l = a(107267),
+                c = a(222718),
+                r = a(514639),
+                o = a(325686),
+                i = a(154003),
+                s = a(692165),
+                d = a(743080);
+            const m = "Help Center",
+                u = { pathname: r.N6, external: !0, openInSameFrame: !1 },
+                p = () => n.createElement(o.Z, { style: d.ZP.actionButtons }, n.createElement(i.ZP, { "aria-label": m, hoverLabel: { label: m }, icon: n.createElement(s.default, null), link: u, pullRight: !0, type: "primaryText" })),
+                h = n.memo(p),
+                y = ({ children: e, title: t }) => {
+                    const a = (0, l.useHistory)(),
+                        o = n.useCallback(() => {
+                            a.push(r.Sr);
+                        }, [a]);
+                    return n.createElement(c.Z, { backLocation: r.Sr, onBackClick: o, rightControl: n.createElement(h, null), screenType: "primaryDetail", showTitleOnRoot: !1, title: t, withBottomBorder: !1 }, e);
+                };
+        },
         442880: (e, t, a) => {
-            a.d(t, { Z: () => d });
+            a.d(t, { Z: () => m });
             var n = a(202784),
                 l = a(868634),
                 c = a(731708),
                 r = a(453333),
-                i = a(848739),
-                o = a(514639),
+                o = a(848739),
+                i = a(514639),
                 s = a(743080);
-            const m = ({ processingTime: e }) => {
-                    const t = e?.processing_time_type === i.l.RealTime,
-                        a = e?.max_duration_in_business_days ?? o.UJ,
-                        m = t ? "Instant" : (({ count: e }) => `${e} - ${e + 2} Days`)({ count: a });
-                    return n.createElement(l.ZP, { background: t ? "green0" : "gray50", style: s.ZP.label, type: t ? "bestValue" : void 0 }, n.createElement(c.ZP, { color: t ? "green500" : "gray900", size: "subtext1", weight: "medium" }, t ? n.createElement(r.default, { style: s.mR.icon }) : null, m));
+            const d = ({ processingTime: e }) => {
+                    const t = e?.processing_time_type === o.l.RealTime,
+                        a = e?.max_duration_in_business_days ?? i.UJ,
+                        d = t ? "Instant" : (({ count: e }) => `${e} - ${e + 2} Days`)({ count: a });
+                    return n.createElement(l.ZP, { background: t ? "green0" : "gray50", style: s.ZP.label, type: t ? "bestValue" : void 0 }, n.createElement(c.ZP, { color: t ? "green500" : "gray900", size: "subtext1", weight: "medium" }, t ? n.createElement(r.default, { style: s.mR.icon }) : null, d));
                 },
-                d = n.memo(m);
+                m = n.memo(d);
         },
         19804: (e, t, a) => {
             a.d(t, { Z: () => u });
@@ -342,17 +400,18 @@
                 l = a(325686),
                 c = a(165822),
                 r = a(731708),
-                i = a(392237),
-                o = a(58399),
+                o = a(392237),
+                i = a(58399),
                 s = a(743080);
-            const m = ({ Icon: e, decoration: t, disabled: a, iconStyle: i, link: m, onClick: u, subtitle: p, title: h }) => {
+            const d = ({ Icon: e, decoration: t, disabled: a, iconStyle: o, link: d, onClick: u, subtitle: p, title: h }) => {
                     const y = (0, s.jh)(),
-                        g = !!u || !!m;
-                    return n.createElement(c.Z, { "aria-label": h, containerStyle: y.tile, disabled: a, interactiveStyles: s.LR, link: m, onClick: u, stackLayoutUpperStyle: s.ZP.upper, upper: n.createElement(l.Z, { style: s.ZP.rowSpaceBetween }, n.createElement(l.Z, { style: s.ZP.row }, e ? n.createElement(e, { style: [s.ZP.icon, i] }) : null, n.createElement(l.Z, { style: d.textContainer }, n.createElement(r.ZP, { size: "subtext2", weight: "medium" }, h), p ? n.createElement(r.ZP, { color: "gray700", size: "subtext2", weight: "normal" }, p) : null)), t || (g ? n.createElement(o.default, { style: s.ZP.centeredIcon }) : null)), withInteractiveStyling: g });
+                        g = (0, s.sw)(),
+                        E = !!u || !!d;
+                    return n.createElement(c.Z, { "aria-label": h, containerStyle: y.tile, disabled: a, interactiveStyles: g, link: d, onClick: u, stackLayoutUpperStyle: s.ZP.upper, upper: n.createElement(l.Z, { style: s.ZP.rowSpaceBetween }, n.createElement(l.Z, { style: s.ZP.row }, e ? n.createElement(e, { style: [s.ZP.icon, o] }) : null, n.createElement(l.Z, { style: m.textContainer }, n.createElement(r.ZP, { size: "subtext2", weight: "medium" }, h), p ? n.createElement(r.ZP, { color: "gray700", size: "subtext2", weight: "normal" }, p) : null)), t || (E ? n.createElement(i.default, { style: s.ZP.centeredIcon }) : null)), withInteractiveStyling: E });
                 },
-                d = i.default.create((e) => ({ textContainer: { flex: 1, gap: e.spaces.space4 } })),
-                u = n.memo(m);
+                m = o.default.create((e) => ({ textContainer: { flex: 1, gap: e.spaces.space4 } })),
+                u = n.memo(d);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c411f24f.c7c117ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c411f24f.32628cea.js.map

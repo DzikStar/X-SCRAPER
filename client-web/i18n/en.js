@@ -1174,7 +1174,6 @@
                 a("c3aa76c4", "Languages you may know"),
                 a("g099069c", "Manage the languages X inferred based on your activity, such as the accounts you follow and the posts you engage with."),
                 a("cf9ce876", "App and post languages"),
-                a("d4372cf4", "English (US), 中文(简体), Español"),
                 a("f8e46b90", "These are the social accounts you connected to your X account to log in. You can disable access here."),
                 a("d84ed6b2", "Disconnect"),
                 a("i51130d4", "Google"),
@@ -1917,9 +1916,9 @@
                 a("a8fdd09c", "Publish Article"),
                 a("d8047cc8", "Publish"),
                 a("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
-                a("ef34d7be", "Audience and reply controls are not editable after an article has been published.");
-            a("e52d4998", "Choose your audience"),
-                a("d7985b24", "Choose who can reply to this Article"),
+                a("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
+                a("e52d4998", "Choose your audience");
+            a("d7985b24", "Choose who can reply to this Article"),
                 a("b5660338", "Timeline preview"),
                 a("hff1b97a", "Only Subscribed can reply."),
                 a("a330771e", "Copy link to your clipboard"),
@@ -2973,9 +2972,9 @@
                 a("ce6d095a", "Careers"),
                 a("e0adec82", "Brand Resources"),
                 a("df1b7550", "Marketing"),
-                a("he258678", "X for Business");
-            a("c6f58084", "Developers"),
-                a("d83f18d2", "Directory"),
+                a("he258678", "X for Business"),
+                a("c6f58084", "Developers");
+            a("d83f18d2", "Directory"),
                 a("hc5aa17c", "Get the X app"),
                 a("j0693948", "Get the Grok app"),
                 a("fce9ecce", "Suggested Videos"),
@@ -3887,11 +3886,11 @@
                 a("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
                 a("e111f531", function (e) {
                     return e.count + " tuned in";
+                }),
+                a("cbef820f", function (e) {
+                    return e.screenName + " reposted the stream!";
                 });
-            a("cbef820f", function (e) {
-                return e.screenName + " reposted the stream!";
-            }),
-                a("e3275464", "Send"),
+            a("e3275464", "Send"),
                 a("cededf2a", "Host"),
                 a("i2caef48", "Co-hosts"),
                 a("j245c654", "Speakers"),
@@ -4925,9 +4924,9 @@
                 a("d9f9dec0", "View Space"),
                 a("h0c1f37a", "View Space Analytics"),
                 a("e41fffbc", "The total watch time of your videos."),
-                a("if2909ba", "Watch Time");
-            a("i0e5bf4c", "Your videos"),
-                a("ed99baea", "Early Beta Access"),
+                a("if2909ba", "Watch Time"),
+                a("i0e5bf4c", "Your videos");
+            a("ed99baea", "Early Beta Access"),
                 a("gf898b70", "Advanced Search"),
                 a("d2a43a7a", 'contains both "ai" and "startup"'),
                 a("a8584698", "ai startup"),
@@ -5881,9 +5880,9 @@
                 a("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                a("h18f86a4", "Delete Folder");
-            a("f4ea967a", "Folder has been deleted"),
-                a("b670aa62", "Folder Name"),
+                a("h18f86a4", "Delete Folder"),
+                a("f4ea967a", "Folder has been deleted");
+            a("b670aa62", "Folder Name"),
                 a("aece5462", "Folder name has been updated successfully"),
                 a("e3299b94", "Something went wrong. Try updating that folder again in a minute."),
                 a("c09ea714", "Something went wrong. Try deleting that folder again in a minute."),
@@ -6885,9 +6884,9 @@
                 a("ede7d0a2", "Currency"),
                 a("b925c18c", "Salary Type"),
                 a("j3d242ce", "Invalid range"),
-                a("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search.");
-            a("b8cbb51a", "Job Summary"),
-                a("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                a("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
+                a("b8cbb51a", "Job Summary");
+            a("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 a("b075c68a", "Edit job"),
                 a("d4b6a6e0", "Profile Spotlight"),
                 a("j2dd3686", "Highlight featured jobs above my posts."),
@@ -7230,6 +7229,8 @@
                 a("hd80bd3e", "Promote a post"),
                 a("fe2b0008", "Learn how to use X"),
                 a("h257d4aa", "Select a post to promote"),
+                a("e9334fe6", "Data updates every few minutes"),
+                a("a6d7b1d0", "Based on X Internal Data"),
                 a("h9b28dae", "You’re saving time with an ad-free feed"),
                 a("f6c50ec0", "Your ad-free trial has ended"),
                 a("e1d1fbca", "You’ve avoided"),
@@ -7864,8 +7865,7 @@
                 a("i5f14be7", function (e) {
                     return "Welcome back, " + e.displayName;
                 }),
-                a("a76d58ba", "Ads Analytics"),
-                a("eccd0e1a", "Organization Analytics");
+                a("a76d58ba", "Ads Analytics");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7904,7 +7904,8 @@
                     r(e, t)
                 );
             }
-            a("deea1708", "Want to view analytics across all your X accounts?"),
+            a("eccd0e1a", "Organization Analytics"),
+                a("deea1708", "Want to view analytics across all your X accounts?"),
                 a("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
                 a("gf67aae4", "Upgrade to Full Access"),
                 a("h75e3618", "Include organization"),
@@ -8902,9 +8903,9 @@
                 a("a6ada13e", "Shop now"),
                 a("j0f12222", "See more"),
                 a("f569f7c8", "Go to website"),
-                a("j0c6772a", "Visit website"),
-                a("f73003aa", "Video will play after ad");
-            a("b3112b8a", "Skip"),
+                a("j0c6772a", "Visit website");
+            a("f73003aa", "Video will play after ad"),
+                a("b3112b8a", "Skip"),
                 a("h6333ad0", "Skip Ad"),
                 a("c59da417", function (e) {
                     return "Skip Ad in " + e.seconds;
@@ -13352,4 +13353,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.4044891a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.8c379c2a.js.map

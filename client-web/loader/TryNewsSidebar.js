@@ -16,14 +16,14 @@
                 m = n(507504),
                 p = (n(136728), n(107267)),
                 g = n(530732),
-                y = n(125363),
-                h = n(836255),
+                h = n(125363),
+                y = n(836255),
                 f = n(448301),
                 k = n(695356),
                 b = n(287627);
             function _({ article: e, onClick: t, style: n }) {
                 const r = (0, u.Z)(),
-                    i = (0, y.I0)(),
+                    i = (0, h.I0)(),
                     o = (0, p.useHistory)(),
                     c = a.useMemo(() => {
                         if (!e) return [];
@@ -42,7 +42,7 @@
                         return t.push(...c.slice(0, 3)), t;
                     }, [e, c]);
                 a.useEffect(() => {
-                    i(h.Z.fetchMultipleIfNeeded(m));
+                    i(y.Z.fetchMultipleIfNeeded(m));
                 }, [i, m]);
                 const _ = a.useCallback(() => {
                         t && t(), o.push(`/i/news/article/${e.id}`);
@@ -55,9 +55,9 @@
             const w = i.default.create((e) => ({ container: {}, contentContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space4, backgroundColor: e.colors.navigationBackground, transition: "background-color 0.2s ease" }, hoveredContentContainer: { backgroundColor: "light" === e.paletteName ? e.colors.gray0 : e.colors.navigationBackground }, title: {}, infoContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4 }, commentsPill: { border: "none", paddingHorizontal: 0, paddingVertical: 0, backgroundColor: "transparent" }, dot: { width: e.spaces.space2, height: e.spaces.space2, backgroundColor: e.colors.gray700, borderRadius: e.spaces.space2 }, commentsPillText: { fontSize: e.fontSizes.subtext2, color: e.colors.gray700 }, timeAgo: { fontSize: e.fontSizes.subtext2, color: e.colors.gray700 } }));
             var C = n(399398);
             const x = c().j66b95a2,
-                S = c().ad35153e,
-                E = "/i/news",
-                v = c().d228a9a0;
+                v = c().ad35153e,
+                S = "/i/news",
+                E = c().d228a9a0;
             function T() {
                 const e = (0, u.Z)(),
                     t = (0, m.Z)({ limit: 3 }),
@@ -72,7 +72,7 @@
                           a.createElement(
                               l.Z,
                               { style: F.container },
-                              a.createElement(l.Z, { style: F.headerContainer }, a.createElement(s.ZP, { style: F.headerText, weight: "heavy" }, x), a.createElement(l.Z, { style: F.betaLabel }, a.createElement(s.ZP, { style: F.betaLabelText, weight: "bold" }, S))),
+                              a.createElement(l.Z, { style: F.headerContainer }, a.createElement(s.ZP, { style: F.headerText, weight: "heavy" }, x), a.createElement(l.Z, { style: F.betaLabel }, a.createElement(s.ZP, { style: F.betaLabelText, weight: "bold" }, v))),
                               a.createElement(
                                   l.Z,
                                   { style: F.articlesContainer },
@@ -87,7 +87,7 @@
                                       }),
                                   ),
                               ),
-                              a.createElement(r.Z, { link: E, text: v, withBottomRadius: !0, withDarkerInteractiveBackground: !0 }),
+                              a.createElement(r.Z, { link: S, text: E, withBottomRadius: !0, withDarkerInteractiveBackground: !0 }),
                           ),
                       )
                     : null;
@@ -114,10 +114,10 @@
                     g = a.useCallback(() => {
                         e < m - 1 && n(e + 1);
                     }, [e, n, m]),
-                    y = a.useCallback(() => {
+                    h = a.useCallback(() => {
                         e > 0 && n(e - 1);
                     }, [e, n]),
-                    h = a.useMemo(() => {
+                    y = a.useMemo(() => {
                         const t = [];
                         let n = Math.max(0, e - Math.floor(c / 2));
                         const a = Math.min(m - 1, n + c - 1);
@@ -128,11 +128,11 @@
                 return a.createElement(
                     l.Z,
                     { style: [u.container, r] },
-                    a.createElement(s.ZP, { backgroundColor: "transparent", borderColor: "transparent", color: "text", disabled: e <= 0, icon: a.createElement(i.default, { style: u.chevron }), onClick: y, size: "small", style: u.button }),
+                    a.createElement(s.ZP, { backgroundColor: "transparent", borderColor: "transparent", color: "text", disabled: e <= 0, icon: a.createElement(i.default, { style: u.chevron }), onClick: h, size: "small", style: u.button }),
                     a.createElement(
                         l.Z,
                         { style: u.pageNumContainer },
-                        h.map((e) => a.createElement(s.ZP, { borderColor: "transparent", color: e.isSelected ? "text" : "gray700", key: `page_${e.text}`, onClick: () => n(e.idx), size: "small", style: u.button }, e.text)),
+                        y.map((e) => a.createElement(s.ZP, { borderColor: "transparent", color: e.isSelected ? "text" : "gray700", key: `page_${e.text}`, onClick: () => n(e.idx), size: "small", style: u.button }, e.text)),
                     ),
                     a.createElement(s.ZP, { backgroundColor: "transparent", borderColor: "transparent", color: "text", disabled: e >= m - 1, icon: a.createElement(o.default, { style: u.chevron }), onClick: g, size: "small", style: u.button }),
                 );
@@ -171,24 +171,24 @@
                         { align: "right", buttonType: "primaryText", onDismissed: e, style: r, title: p, topBarStyle: i, withTransparentMask: o },
                         a.createElement(
                             l.Z,
-                            { style: h.container },
+                            { style: y.container },
                             f && a.createElement(m.Z, { currentPageIdx: c, numPerPage: t?.numResultsPerPage || 0, onPageIdxChange: k, total: n.length }),
-                            u.map((e) => a.createElement(y, { key: `post_${e}`, postId: e })),
+                            u.map((e) => a.createElement(h, { key: `post_${e}`, postId: e })),
                         ),
                     );
                 },
-                y = ({ postId: e }) => {
+                h = ({ postId: e }) => {
                     const t = a.useRef(!1),
                         n = (0, u.Z)(),
                         s = a.useCallback(() => {
                             t.current || ((t.current = !0), n.scribe({ action: "impression", component: "post", data: { tweet_id: e } }));
                         }, [n, e]);
-                    return a.createElement(l.Z, { key: `post_${e}`, style: h.post }, a.createElement(c.ZP, { displayPromotedContent: !0, tweetId: e, withActions: !0 }), a.createElement(d.D, { id: `post_${e}`, onFullyVisible: s, position: "bottom", testID: `post_${e}` }));
+                    return a.createElement(l.Z, { key: `post_${e}`, style: y.post }, a.createElement(c.ZP, { displayPromotedContent: !0, tweetId: e, withActions: !0 }), a.createElement(d.D, { id: `post_${e}`, onFullyVisible: s, position: "bottom", testID: `post_${e}` }));
                 },
-                h = r.default.create((e) => ({ container: { width: "100%", maxWidth: 500, marginBottom: e.spaces.space12 }, post: { borderBottomWidth: 1, borderBottomColor: e.colors.borderColor }, mediaContent: { marginHorizontal: e.spaces.space16, marginBottom: e.spaces.space8, borderRadius: e.borderRadii.large, overflow: "hidden" } }));
+                y = r.default.create((e) => ({ container: { width: "100%", maxWidth: 500, marginBottom: e.spaces.space12 }, post: { borderBottomWidth: 1, borderBottomColor: e.colors.borderColor }, mediaContent: { marginHorizontal: e.spaces.space16, marginBottom: e.spaces.space8, borderRadius: e.borderRadii.large, overflow: "hidden" } }));
         },
         507504: (e, t, n) => {
-            n.d(t, { Z: () => v });
+            n.d(t, { Z: () => E });
             n(136728);
             var a,
                 l,
@@ -202,8 +202,8 @@
                 m,
                 p,
                 g,
-                y,
                 h,
+                y,
                 f,
                 k,
                 b,
@@ -261,8 +261,8 @@
                                                                     (u = { alias: null, args: null, kind: "ScalarField", name: "last_updated_at", storageKey: null }),
                                                                     (m = { alias: null, args: null, kind: "ScalarField", name: "total_trend_posts", storageKey: null }),
                                                                     (p = { alias: null, args: null, kind: "ScalarField", name: "live_article", storageKey: null }),
-                                                                    (y = { alias: null, args: null, concreteType: "NewsTimeline", kind: "LinkedField", name: "timeline", plural: !1, selections: [{ alias: null, args: null, concreteType: "NewsTimelineEvent", kind: "LinkedField", name: "events", plural: !0, selections: [d, (g = { alias: null, args: null, kind: "ScalarField", name: "timestamp", storageKey: null })], storageKey: null }, c], storageKey: null }),
-                                                                    (h = {
+                                                                    (h = { alias: null, args: null, concreteType: "NewsTimeline", kind: "LinkedField", name: "timeline", plural: !1, selections: [{ alias: null, args: null, concreteType: "NewsTimelineEvent", kind: "LinkedField", name: "events", plural: !0, selections: [d, (g = { alias: null, args: null, kind: "ScalarField", name: "timestamp", storageKey: null })], storageKey: null }, c], storageKey: null }),
+                                                                    (y = {
                                                                         alias: null,
                                                                         args: null,
                                                                         concreteType: "GrokBraveSearch",
@@ -314,17 +314,17 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: a, kind: "Operation", name: "useHomeNewsArticlesQuery", selections: [{ alias: "deepsearchArticlesHomePageResult", args: l, concreteType: "DeepsearchArticleHomePage", kind: "LinkedField", name: "deepsearch_articles_home_page", plural: !0, selections: [{ alias: null, args: null, concreteType: "AiTrendResults", kind: "LinkedField", name: "trend_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(_ = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "NewsArticle", kind: "LinkedField", name: "deepsearch_news_articles", plural: !1, selections: [s, r, o, c, d, u, m, p, y, h, f, { alias: null, args: null, concreteType: "NewsArticleSection", kind: "LinkedField", name: "sections", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "content", plural: !1, selections: [_, k], storageKey: null }], storageKey: null }], storageKey: null }, b, s], type: "AiTrend", abstractKey: null }], storageKey: null }, s], storageKey: null }], storageKey: null }] },
+                    operation: { argumentDefinitions: a, kind: "Operation", name: "useHomeNewsArticlesQuery", selections: [{ alias: "deepsearchArticlesHomePageResult", args: l, concreteType: "DeepsearchArticleHomePage", kind: "LinkedField", name: "deepsearch_articles_home_page", plural: !0, selections: [{ alias: null, args: null, concreteType: "AiTrendResults", kind: "LinkedField", name: "trend_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(_ = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "NewsArticle", kind: "LinkedField", name: "deepsearch_news_articles", plural: !1, selections: [s, r, o, c, d, u, m, p, h, y, f, { alias: null, args: null, concreteType: "NewsArticleSection", kind: "LinkedField", name: "sections", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "content", plural: !1, selections: [_, k], storageKey: null }], storageKey: null }], storageKey: null }, b, s], type: "AiTrend", abstractKey: null }], storageKey: null }, s], storageKey: null }], storageKey: null }] },
                     params: { id: "gTItUBXHQzDYz5zGcfHOSw", metadata: {}, name: "useHomeNewsArticlesQuery", operationKind: "query", text: null },
                 };
             w.hash = "3801ff63426a8e5a7f7864683169d9be";
             const C = w;
             n(585488);
             var x = n(712696),
-                S = n.n(x);
-            const E = C;
-            const v = function ({ limit: e }) {
-                const t = S()(E, { limit: e }).deepsearchArticlesHomePageResult || [],
+                v = n.n(x);
+            const S = C;
+            const E = function ({ limit: e }) {
+                const t = v()(S, { limit: e }).deepsearchArticlesHomePageResult || [],
                     n = [];
                 return (
                     t.forEach((e) => {
@@ -401,7 +401,7 @@
             };
         },
         287627: (e, t, n) => {
-            n.d(t, { Z: () => y });
+            n.d(t, { Z: () => h });
             var a = n(202784),
                 l = n(325686),
                 s = n(392237),
@@ -414,7 +414,7 @@
                 m = n(448301);
             const p = 100,
                 g = 3;
-            function y({ containerStyle: e, disableClick: t, numPosts: n, postIds: i, style: c, textStyle: d, userAvatarShape: y, userAvatarSize: k, variant: b }) {
+            function h({ containerStyle: e, disableClick: t, numPosts: n, postIds: i, style: c, textStyle: d, userAvatarShape: h, userAvatarSize: k, variant: b }) {
                 const [_, w] = a.useState(!1),
                     C = { filled: { commentsContainer: f.filledMetadataContainer }, outline: { commentsContainer: f.outlineMetadataContainer } }[b || "outline"],
                     x = a.useMemo(() => (0, o.Z)(i).slice(0, p), [i]);
@@ -432,7 +432,7 @@
                                       a.createElement(
                                           l.Z,
                                           { style: f.postAvatars },
-                                          x.slice(0, g).map((e, t) => a.createElement(h, { key: e, postId: e, shape: y, size: k, style: [f.postAvatar, { animationDelay: 0.1 * t + "s" }, 0 !== t ? { marginStart: -1 * s.default.theme.spacesPx.space12 } : {}] })),
+                                          x.slice(0, g).map((e, t) => a.createElement(y, { key: e, postId: e, shape: h, size: k, style: [f.postAvatar, { animationDelay: 0.1 * t + "s" }, 0 !== t ? { marginStart: -1 * s.default.theme.spacesPx.space12 } : {}] })),
                                       ),
                                   a.createElement(r.ZP, { style: [f.commentsText, d] }, `${(0, m.uf)(n)} comments`),
                               ),
@@ -441,7 +441,7 @@
                       )
                     : null;
             }
-            function h({ postId: e, shape: t, size: n, style: l }) {
+            function y({ postId: e, shape: t, size: n, style: l }) {
                 const s = a.useMemo(() => d.Z.createHydratorForTweet(e), [e]),
                     r = (0, c.v9)(s);
                 return r && r.user.profile_image_url_https ? a.createElement(i.default, { backgroundColor: "transparent", borderColor: "transparent", borderWidth: "small", shape: t || "circle", size: n || "medium", style: l, uri: r.user.profile_image_url_https }) : null;
@@ -462,8 +462,8 @@
                 m = n(743618),
                 p = n(745153),
                 g = n(292627),
-                y = n(224162),
-                h = n(392237);
+                h = n(224162),
+                y = n(392237);
             const f = r().af8fa2ae,
                 k = a.createElement(i.default, null);
             class b extends a.Component {
@@ -497,15 +497,15 @@
                     this._isMounted = !1;
                 }
                 render() {
-                    const { additionalControl: e, align: t, buttonType: n, children: s, style: r, subtitle: i, title: d, topBarStyle: h, withBackgroundBlur: f, withTopBar: k, withTransparentMask: b } = this.props,
+                    const { additionalControl: e, align: t, buttonType: n, children: s, style: r, subtitle: i, title: d, topBarStyle: y, withBackgroundBlur: f, withTopBar: k, withTransparentMask: b } = this.props,
                         { isVisible: C } = this.state;
-                    return a.createElement(y.ZP.Consumer, null, ({ direction: y }) => {
-                        const x = "rtl" === y,
-                            S = C ? w.visibleDrawer : ("left" === t) === x ? w.offscreenRightDrawer : w.offscreenLeftDrawer,
-                            E = C && !b ? w.maskWithBg : w.maskTransparent,
-                            v = C ? w.animateOpen : w.animateClose,
-                            T = o.Z.reducedMotionEnabled ? null : v;
-                        return a.createElement(g.Z.Modal, null, a.createElement(p.Z, null, a.createElement(m.Z, null, a.createElement(l.Z, { onClick: this._handleMaskClick, onKeyUp: this._handleEsc, style: [w.mask, E, T, f ? w.backgroundBlur : null, "left" === t ? w.alignLeft : w.alignRight] }, (0, u.Z)("div", { role: "dialog", onTransitionEnd: this._handleTransitionEnd, ref: this._setAnimationNode, onClick: _, style: [w.root, f ? w.backgroundRootBlur : null, S, T, r], children: a.createElement(a.Fragment, null, k ? a.createElement(c.Z, { leftControl: "left" === t ? e : "right" === t ? this._renderCloseButton(n) : null, rightControl: "left" === t ? this._renderCloseButton(n) : "right" === t ? e : null, style: h, subtitle: i, title: d }) : null, a.createElement(l.Z, { style: w.contentContainer }, s)) })))));
+                    return a.createElement(h.ZP.Consumer, null, ({ direction: h }) => {
+                        const x = "rtl" === h,
+                            v = C ? w.visibleDrawer : ("left" === t) === x ? w.offscreenRightDrawer : w.offscreenLeftDrawer,
+                            S = C && !b ? w.maskWithBg : w.maskTransparent,
+                            E = C ? w.animateOpen : w.animateClose,
+                            T = o.Z.reducedMotionEnabled ? null : E;
+                        return a.createElement(g.Z.Modal, null, a.createElement(p.Z, null, a.createElement(m.Z, null, a.createElement(l.Z, { onClick: this._handleMaskClick, onKeyUp: this._handleEsc, style: [w.mask, S, T, f ? w.backgroundBlur : null, "left" === t ? w.alignLeft : w.alignRight] }, (0, u.Z)("div", { role: "dialog", onTransitionEnd: this._handleTransitionEnd, ref: this._setAnimationNode, onClick: _, style: [w.root, f ? w.backgroundRootBlur : null, v, T, r], children: a.createElement(a.Fragment, null, k ? a.createElement(c.Z, { leftControl: "left" === t ? e : "right" === t ? this._renderCloseButton(n) : null, rightControl: "left" === t ? this._renderCloseButton(n) : "right" === t ? e : null, style: y, subtitle: i, title: d }) : null, a.createElement(l.Z, { style: w.contentContainer }, s)) })))));
                     });
                 }
                 _renderCloseButton(e) {
@@ -516,7 +516,7 @@
             const _ = (e) => {
                     e.stopPropagation();
                 },
-                w = h.default.create((e) => ({ backgroundBlur: { backdropFilter: "blur(2px)" }, backgroundRootBlur: { boxShadow: "light" === e.paletteName ? e.boxShadows.small : "0 0 5px rgba(80,80,80,0.2), 0 1px 4px 1px rgba(80,80,80,0.25)" }, mask: { ...h.default.absoluteFillObject, position: "fixed", transitionProperty: "background-color", transitionTimingFunction: "ease" }, maskWithBg: { backgroundColor: e.colors.maskColor }, maskTransparent: { backgroundColor: e.colors.transparent }, root: { display: "flex", flexDirection: "column", backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.small, minWidth: 280, maxWidth: "100%", flexGrow: 1, flexShrink: 1, minHeight: 0, height: "100vh", transitionProperty: "transform", transitionTimingFunction: "ease" }, visibleDrawer: { transform: [{ translateX: "0%" }] }, offscreenLeftDrawer: { transform: [{ translateX: "-100%" }] }, offscreenRightDrawer: { transform: [{ translateX: "100%" }] }, alignLeft: { alignItems: "flex-start" }, alignRight: { alignItems: "flex-end" }, animateOpen: { transitionDuration: "250ms" }, animateClose: { transitionDuration: "200ms" }, contentContainer: { flexGrow: 1, flexShrink: 1, minHeight: 0, overflowY: "auto", overscrollBehavior: "contain" } })),
+                w = y.default.create((e) => ({ backgroundBlur: { backdropFilter: "blur(2px)" }, backgroundRootBlur: { boxShadow: "light" === e.paletteName ? e.boxShadows.small : "0 0 5px rgba(80,80,80,0.2), 0 1px 4px 1px rgba(80,80,80,0.25)" }, mask: { ...y.default.absoluteFillObject, position: "fixed", transitionProperty: "background-color", transitionTimingFunction: "ease" }, maskWithBg: { backgroundColor: e.colors.maskColor }, maskTransparent: { backgroundColor: e.colors.transparent }, root: { display: "flex", flexDirection: "column", backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.small, minWidth: 280, maxWidth: "100%", flexGrow: 1, flexShrink: 1, minHeight: 0, height: "100vh", transitionProperty: "transform", transitionTimingFunction: "ease" }, visibleDrawer: { transform: [{ translateX: "0%" }] }, offscreenLeftDrawer: { transform: [{ translateX: "-100%" }] }, offscreenRightDrawer: { transform: [{ translateX: "100%" }] }, alignLeft: { alignItems: "flex-start" }, alignRight: { alignItems: "flex-end" }, animateOpen: { transitionDuration: "250ms" }, animateClose: { transitionDuration: "200ms" }, contentContainer: { flexGrow: 1, flexShrink: 1, minHeight: 0, overflowY: "auto", overscrollBehavior: "contain" } })),
                 C = b;
         },
         30183: (e, t, n) => {
@@ -529,6 +529,19 @@
                     return a.createElement(s.Z, { link: t, onPress: n, style: [r.root, c && r.withBottomRadius], withDarkerInteractiveBackground: d }, a.createElement(l.ZP, { align: e, color: "primary", weight: o }, i));
                 };
         },
+        748138: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => o });
+            var a = n(202784),
+                l = n(890601),
+                s = n(783427),
+                r = n(347101);
+            const i = (e = {}) => {
+                const { direction: t } = (0, s.Z)();
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const o = i;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TryNewsSidebar.26df1c9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TryNewsSidebar.f84e99ca.js.map

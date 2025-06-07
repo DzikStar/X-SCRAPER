@@ -10,7 +10,7 @@
             const i = (0, a.Z)({ loader: () => r.e("loader.AbsolutePower").then(r.bind(r, 590136)), renderPlaceholder: (e, t) => n.createElement(o.Z, { hasError: e, onRetry: t }) });
         },
         127218: (e, t, r) => {
-            r.d(t, { C: () => b });
+            r.d(t, { C: () => h });
             var n = r(202784),
                 a = r(614983),
                 o = r.n(a),
@@ -23,15 +23,15 @@
                 m = r(585488),
                 u = r(71620),
                 g = r(163889),
-                h = r(312771),
-                f = r(535338);
-            function b(e, t, r) {
+                f = r(312771),
+                b = r(535338);
+            function h(e, t, r) {
                 const [a, i] = n.useState(!1),
                     [l, p] = n.useState(null),
-                    b = s()(),
+                    h = s()(),
                     Z = c()(t),
                     E = (0, u.po)(),
-                    _ = (0, f.p)(e, Z, r);
+                    v = (0, b.p)(e, Z, r);
                 return n.useMemo(() => {
                     const t = (0, m.getRequest)(e).params?.metadata?.sliceInfoPath;
                     o()(!!t, "The provided query does not have an associated sliceInfoPath. Make sure you are using the `@slice` directive with your query.");
@@ -45,11 +45,11 @@
                                 } catch (e) {
                                     return void (0, g.ZP)(e.message);
                                 }
-                            })(_, t) || {},
+                            })(v, t) || {},
                         s = (t) => {
                             a ||
                                 (i(!0),
-                                d()(b, e, { ...Z, cursor: t }).subscribe({
+                                d()(h, e, { ...Z, cursor: t }).subscribe({
                                     complete: () => {
                                         i(!1);
                                     },
@@ -64,67 +64,12 @@
                         u = () => {
                             n && s(n);
                         },
-                        f = () => {
+                        b = () => {
                             s(void 0);
                         };
-                    return l ? { subsequentFetchStatus: h.ZP.FAILED, error: l, fetchNext: c, fetchPrevious: u, refetch: f, data: _, hasNext: Boolean(r), hasPrevious: Boolean(n) } : { subsequentFetchStatus: a ? h.ZP.LOADING : h.ZP.NONE, error: void 0, fetchNext: c, fetchPrevious: u, refetch: f, data: _, hasNext: Boolean(r), hasPrevious: Boolean(n) };
-                }, [e, _, a, l, b, Z, E]);
+                    return l ? { subsequentFetchStatus: f.ZP.FAILED, error: l, fetchNext: c, fetchPrevious: u, refetch: b, data: v, hasNext: Boolean(r), hasPrevious: Boolean(n) } : { subsequentFetchStatus: a ? f.ZP.LOADING : f.ZP.NONE, error: void 0, fetchNext: c, fetchPrevious: u, refetch: b, data: v, hasNext: Boolean(r), hasPrevious: Boolean(n) };
+                }, [e, v, a, l, h, Z, E]);
             }
-        },
-        264922: (e, t, r) => {
-            r.d(t, { Z: () => v });
-            var n = r(202784),
-                a = r(108362),
-                o = r(420412),
-                i = r(154003),
-                s = r(392237),
-                l = r(111677),
-                c = r.n(l),
-                p = r(290402),
-                d = r(253493),
-                m = r(71620),
-                u = r(668214),
-                g = r(38562),
-                h = r(919022);
-            const f = (0, u.Z)()
-                    .propsFromState(() => ({ fetchStatus: g.UD, viewerUser: h.ZP.selectViewerUser }))
-                    .propsFromActions(() => ({ fetchSettingsIfNeeded: g.Sb, createLocalApiErrorHandler: (0, m.zr)("SETTINGS_LOADER") })),
-                b = "settingsDetailSave",
-                Z = c().i2209530;
-            class E extends n.Component {
-                constructor(...e) {
-                    super(...e),
-                        (this._renderWithFetchSettings = () => {
-                            const { fetchStatus: e } = this.props;
-                            return n.createElement(p.Z, { fetchStatus: e, onRequestRetry: this._handleFetch, render: this._render });
-                        }),
-                        (this._render = () => {
-                            const { children: e, onSubmit: t, submitDisabled: r, submitLabel: s, submitType: l, withMarginBottom: c } = this.props;
-                            return n.createElement(a.Z, { style: [_.contentRoot, c && _.withMarginBottom] }, e, t ? n.createElement(n.Fragment, null, n.createElement(o.Z, null), n.createElement(a.Z, { style: _.buttonContainer }, n.createElement(i.ZP, { disabled: r, onPress: t, style: _.button, testID: b, type: l }, s))) : null);
-                        }),
-                        (this._handleFetch = () => {
-                            const { createLocalApiErrorHandler: e, fetchSettingsIfNeeded: t } = this.props;
-                            t().catch(e());
-                        });
-                }
-                componentDidMount() {
-                    this._handleFetch();
-                }
-                getBackLocation() {
-                    const { location: e, viewerUser: t } = this.props,
-                        r = t ? "/settings" : "/settings/account/personalization";
-                    return e && e.pathname === r ? "/" : r;
-                }
-                render() {
-                    const { onBackClick: e, rightControl: t, screenType: r, secondaryBar: a, title: o, viewerUser: i, withBottomBorder: s } = this.props,
-                        l = this.getBackLocation(),
-                        c = i ? `@${i.screen_name}` : void 0;
-                    return n.createElement(d.Z, { backLocation: l, onBackClick: e, rightControl: t, screenType: r, secondaryBar: a, showSubtitleOnWideDetail: !1, subtitle: c, title: o, withBottomBorder: s }, i ? this._renderWithFetchSettings() : this._render());
-                }
-            }
-            E.defaultProps = { submitLabel: Z, submitType: "brandFilled", withMarginBottom: !0 };
-            const _ = s.default.create((e) => ({ contentRoot: { backgroundColor: e.colors.cellBackground, backgroundClip: "content-box", justifyContent: "flex-start" }, buttonContainer: { backgroundColor: e.colors.cellBackground, flexDirection: "row", justifyContent: "flex-end", marginVertical: 0, marginHorizontal: "auto", paddingVertical: e.spaces.space12, paddingHorizontal: 0 }, button: { marginVertical: 0, marginHorizontal: e.spaces.space12 }, withMarginBottom: { marginBottom: `calc(${e.spaces.space64} + ${s.default.iPhoneOffsetBottom})` } })),
-                v = f(E);
         },
         50998: (e, t, r) => {
             r.d(t, { Z: () => u });
@@ -145,10 +90,10 @@
                         [s, u] = n.useState(void 0),
                         g = n.useCallback((e, t) => !r(e, t) || (u({ nextLocation: e, action: t }), !1), [u, r]);
                     n.useEffect(() => i.block(g), [g, i]);
-                    const h = n.useCallback(() => {
+                    const f = n.useCallback(() => {
                             u(void 0);
                         }, [u]),
-                        f = n.useCallback(() => {
+                        b = n.useCallback(() => {
                             t?.(),
                                 u((e) => {
                                     if (null == e) return;
@@ -165,7 +110,7 @@
                                     }
                                 });
                         }, [i, t, u]);
-                    return s ? n.createElement(o.Z, { cancelButtonLabel: d, confirmButtonLabel: m, confirmButtonType: "destructiveFilled", headline: c, onCancel: h, onConfirm: f, text: p }) : null;
+                    return s ? n.createElement(o.Z, { cancelButtonLabel: d, confirmButtonLabel: m, confirmButtonType: "destructiveFilled", headline: c, onCancel: f, onConfirm: b, text: p }) : null;
                 };
         },
         977126: (e, t, r) => {
@@ -182,7 +127,7 @@
                 c = i.default.create((e) => ({ root: { marginHorizontal: e.componentDimensions.gutterHorizontal, marginTop: e.spaces.space20, marginBottom: e.spaces.space24 }, header: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" }, headline: { marginVertical: e.spaces.space12 }, illustration: { alignSelf: "start" } }));
         },
         541659: (e, t, r) => {
-            r.d(t, { Z: () => _ });
+            r.d(t, { Z: () => v });
             var n = r(807896),
                 a = r(202784),
                 o = r(325686),
@@ -195,27 +140,27 @@
                 m = r(980407),
                 u = r(720816),
                 g = r(154003),
-                h = r(711223),
-                f = r(176544);
-            const b = p().d1a683b8,
-                Z = () => a.createElement(g.ZP, { "aria-label": b, icon: a.createElement(h.default, null), link: f._t, type: "primaryText" }),
+                f = r(711223),
+                b = r(176544);
+            const h = p().d1a683b8,
+                Z = () => a.createElement(g.ZP, { "aria-label": h, icon: a.createElement(f.default, null), link: b._t, type: "primaryText" }),
                 E = p().d7b51c68,
-                _ = (e) => {
-                    const { bottomBar: t, children: r, leftControlShouldClose: l, percentageComplete: c, rightControl: p, screenRef: g, withInfoButton: h, ...f } = e,
-                        b = (0, i.useHistory)(),
-                        _ = l ? "close" : "back",
+                v = (e) => {
+                    const { bottomBar: t, children: r, leftControlShouldClose: l, percentageComplete: c, rightControl: p, screenRef: g, withInfoButton: f, ...b } = e,
+                        h = (0, i.useHistory)(),
+                        v = l ? "close" : "back",
                         y = u.LI,
-                        w = h ? a.createElement(o.Z, { style: v.rightControl }, a.createElement(Z, null), p) : p,
+                        w = f ? a.createElement(o.Z, { style: _.rightControl }, a.createElement(Z, null), p) : p,
                         k = c ? a.createElement(s.Z, { progress: c }) : void 0,
-                        C = a.createElement(a.Fragment, null, a.createElement(o.Z, { style: v.childrenWrapper }, r), t && a.createElement(o.Z, { style: v.bottomBarWrapper }, t)),
-                        P = () => {
-                            l ? b.goBackThroughModals({ fallbackPath: y }) : b.goBack({ backLocation: y });
+                        P = a.createElement(a.Fragment, null, a.createElement(o.Z, { style: _.childrenWrapper }, r), t && a.createElement(o.Z, { style: _.bottomBarWrapper }, t)),
+                        C = () => {
+                            l ? h.goBackThroughModals({ fallbackPath: y }) : h.goBack({ backLocation: y });
                         };
-                    g && (g.current = { goBack: P });
+                    g && (g.current = { goBack: C });
                     const x = d.ZP.isTwitterApp();
-                    return a.createElement(m.Z, (0, n.Z)({}, f, { backButtonType: _, backLocation: y, children: C, documentTitle: E, hideBackButton: x, onBackClick: P, rightControl: !x && w, secondaryBar: k }));
+                    return a.createElement(m.Z, (0, n.Z)({}, b, { backButtonType: v, backLocation: y, children: P, documentTitle: E, hideBackButton: x, onBackClick: C, rightControl: !x && w, secondaryBar: k }));
                 },
-                v = l.default.create((e) => ({ iconTwitter: { color: e.colors.primary, flexGrow: 1, height: "1.75rem" }, rightControl: { alignItems: "center", flexDirection: "row", gap: e.spaces.space4 }, childrenWrapper: { flexBasis: 0, flexGrow: 1, flexShrink: 1, overflow: "auto" }, bottomBarWrapper: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small, boxShadow: e.boxShadows.small } }));
+                _ = l.default.create((e) => ({ iconTwitter: { color: e.colors.primary, flexGrow: 1, height: "1.75rem" }, rightControl: { alignItems: "center", flexDirection: "row", gap: e.spaces.space4 }, childrenWrapper: { flexBasis: 0, flexGrow: 1, flexShrink: 1, overflow: "auto" }, bottomBarWrapper: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small, boxShadow: e.boxShadows.small } }));
         },
         973316: (e, t, r) => {
             r.d(t, { Z: () => s });
@@ -283,25 +228,25 @@
                 m = r.n(d),
                 u = r(724345),
                 g = r(569778),
-                h = r(779295),
-                f = r(274257),
-                b = r(720816),
+                f = r(779295),
+                b = r(274257),
+                h = r(720816),
                 Z = r(209434);
             const E = m().iba08a94,
-                _ = m().a5f55bfa,
-                v = a.Z,
+                v = m().a5f55bfa,
+                _ = a.Z,
                 y = n.Z,
                 w = ({ user: e, viewer: t }) => {
-                    const r = l()(v, e),
+                    const r = l()(_, e),
                         n = l()(y, t),
                         { name: a, screen_name: s } = r?.core || {},
                         { image_url: p } = r?.avatar ?? {},
                         { protected: d } = r?.privacy || {},
                         { verified: m } = r.verification || {},
                         { is_blue_verified: w } = r,
-                        C = (0, f.JG)(n) ?? "",
-                        P = (0, f.fJ)(n) ?? "";
-                    return o.createElement(o.Fragment, null, o.createElement(u.Z, { style: k.interstitial }, o.createElement(g.Z, { headline: E, subtext: _ })), o.createElement(c.Z, null), o.createElement(u.Z, { style: k.previewCallout }, o.createElement(Z.Z, { path: b.Km })), o.createElement(i.Z, { style: k.summaryFramed }, o.createElement(h.Z, { badgeImageUrl: p ?? void 0, badgeName: a ?? void 0, badgeScreenName: s ?? void 0, descriptionValue: P, imageUrl: p ?? void 0, introValue: C, isBlueVerified: w || !1, isProtected: d ?? !1, isVerified: m ?? !1, name: a ?? void 0, screenName: s ?? void 0 })));
+                        P = (0, b.JG)(n) ?? "",
+                        C = (0, b.fJ)(n) ?? "";
+                    return o.createElement(o.Fragment, null, o.createElement(u.Z, { style: k.interstitial }, o.createElement(g.Z, { headline: E, subtext: v })), o.createElement(c.Z, null), o.createElement(u.Z, { style: k.previewCallout }, o.createElement(Z.Z, { path: h.Km })), o.createElement(i.Z, { style: k.summaryFramed }, o.createElement(f.Z, { badgeImageUrl: p ?? void 0, badgeName: a ?? void 0, badgeScreenName: s ?? void 0, descriptionValue: C, imageUrl: p ?? void 0, introValue: P, isBlueVerified: w || !1, isProtected: d ?? !1, isVerified: m ?? !1, name: a ?? void 0, screenName: s ?? void 0 })));
                 },
                 k = p.default.create((e) => ({ interstitial: { marginBottom: e.spaces.space28, marginTop: e.spaces.space32 }, previewCallout: { marginBottom: e.spaces.space4, marginTop: e.spaces.space20 }, blob: { paddingTop: 0, paddingBottom: 0, paddingStart: 0, paddingEnd: 0 }, summaryFramed: { marginTop: e.spaces.space20, marginHorizontal: e.spaces.space20, marginBottom: e.spaces.space32 } }));
         },
@@ -319,52 +264,52 @@
                 m = r(420412),
                 u = r(392237),
                 g = r(111677),
-                h = r.n(g),
-                f = r(187669),
-                b = r(272191),
+                f = r.n(g),
+                b = r(187669),
+                h = r(272191),
                 Z = r(724345),
                 E = r(569778),
-                _ = r(274257),
-                v = r(720816),
+                v = r(274257),
+                _ = r(720816),
                 y = r(523361),
                 w = r(209434);
-            const k = h().gf32cca2,
-                C = h().j8ba99b4,
-                P = h().j679dcda,
+            const k = f().gf32cca2,
+                P = f().j8ba99b4,
+                C = f().j679dcda,
                 x = a.Z,
-                B = n.Z,
-                I = (e, t) => {
+                I = n.Z,
+                B = (e, t) => {
                     const { autoFocus: r, descriptionMaxLength: n, user: a, viewer: i } = e,
                         c = (0, d.D2)(),
                         u = o.useRef();
-                    (0, f.q)(() => {
+                    (0, b.q)(() => {
                         r && u.current?.scrollIntoView && u.current.scrollIntoView();
                     });
                     const g = p()(x, a),
-                        h = p()(B, i),
-                        { screen_name: I } = g.core ?? {},
+                        f = p()(I, i),
+                        { screen_name: B } = g.core ?? {},
                         { image_url: L } = g.avatar ?? {},
-                        T = (0, _.fJ)(h),
-                        $ = (0, _.NP)(h, "description");
+                        T = (0, v.fJ)(f),
+                        z = (0, v.NP)(f, "description");
                     return (
                         s()("string" == typeof L, "imageUrl must be defined"),
-                        s()("string" == typeof I, "screenName must be defined"),
+                        s()("string" == typeof B, "screenName must be defined"),
                         o.createElement(
                             o.Fragment,
                             null,
-                            o.createElement(Z.Z, { style: S.interstitial }, o.createElement(E.Z, { headline: k, subtext: C })),
-                            o.createElement(Z.Z, { style: S.examplesLink }, o.createElement(y.Z, { label: P, path: v.$w })),
+                            o.createElement(Z.Z, { style: $.interstitial }, o.createElement(E.Z, { headline: k, subtext: P })),
+                            o.createElement(Z.Z, { style: $.examplesLink }, o.createElement(y.Z, { label: C, path: _.$w })),
                             o.createElement(m.Z, null),
-                            o.createElement(Z.Z, { style: S.previewCallout }, o.createElement(w.Z, { path: v.Km })),
-                            o.createElement(b.Z, {
+                            o.createElement(Z.Z, { style: $.previewCallout }, o.createElement(w.Z, { path: _.Km })),
+                            o.createElement(h.Z, {
                                 autoFocus: r,
                                 imageUrl: L,
                                 onChange: (e) => {
-                                    $(e.currentTarget.value);
+                                    z(e.currentTarget.value);
                                 },
                                 ref: t,
-                                screenName: I,
-                                style: [S.preview, c && S.previewWide],
+                                screenName: B,
+                                style: [$.preview, c && $.previewWide],
                                 value: T,
                                 valueMaxLength: n,
                             }),
@@ -372,8 +317,8 @@
                         )
                     );
                 },
-                L = o.forwardRef(I),
-                S = u.default.create((e) => ({ interstitial: { marginTop: e.spaces.space32 }, examplesLink: { marginBottom: e.spaces.space28, marginTop: e.spaces.space24 }, previewCallout: { marginBottom: e.spaces.space4, marginTop: e.spaces.space20 }, preview: { marginVertical: e.spaces.space16, marginHorizontal: e.spaces.space32 }, previewWide: { marginHorizontal: e.spaces.space16 } }));
+                L = o.forwardRef(B),
+                $ = u.default.create((e) => ({ interstitial: { marginTop: e.spaces.space32 }, examplesLink: { marginBottom: e.spaces.space28, marginTop: e.spaces.space24 }, previewCallout: { marginBottom: e.spaces.space4, marginTop: e.spaces.space20 }, preview: { marginVertical: e.spaces.space16, marginHorizontal: e.spaces.space32 }, previewWide: { marginHorizontal: e.spaces.space16 } }));
         },
         315121: (e, t, r) => {
             r.d(t, { Z: () => L });
@@ -389,52 +334,52 @@
                 m = r(420412),
                 u = r(392237),
                 g = r(111677),
-                h = r.n(g),
-                f = r(187669),
-                b = r(724345),
+                f = r.n(g),
+                b = r(187669),
+                h = r(724345),
                 Z = r(569778),
                 E = r(126819),
-                _ = r(274257),
-                v = r(720816),
+                v = r(274257),
+                _ = r(720816),
                 y = r(523361),
                 w = r(209434);
-            const k = h().j325331a,
-                C = h().e18e8da8,
-                P = h().j679dcda,
+            const k = f().j325331a,
+                P = f().e18e8da8,
+                C = f().j679dcda,
                 x = a.Z,
-                B = n.Z,
-                I = (e, t) => {
+                I = n.Z,
+                B = (e, t) => {
                     const { autoFocus: r, introMaxLength: n, user: a, viewer: i } = e,
                         c = (0, d.D2)(),
                         u = o.useRef();
-                    (0, f.q)(() => {
+                    (0, b.q)(() => {
                         r && u.current?.scrollIntoView && u.current.scrollIntoView();
                     });
                     const g = p()(x, a),
-                        h = p()(B, i),
-                        { name: I } = g.core ?? {},
+                        f = p()(I, i),
+                        { name: B } = g.core ?? {},
                         { image_url: L } = g.avatar ?? {},
-                        T = (0, _.JG)(h),
-                        $ = (0, _.NP)(h, "creator_intro");
+                        T = (0, v.JG)(f),
+                        z = (0, v.NP)(f, "creator_intro");
                     return (
                         s()("string" == typeof L, "imageUrl must be defined"),
-                        s()("string" == typeof I, "name must be defined"),
+                        s()("string" == typeof B, "name must be defined"),
                         o.createElement(
                             o.Fragment,
                             null,
-                            o.createElement(b.Z, { style: S.interstitial }, o.createElement(Z.Z, { headline: k, subtext: C })),
-                            o.createElement(b.Z, { style: S.examplesLink }, o.createElement(y.Z, { label: P, path: v.o5 })),
+                            o.createElement(h.Z, { style: $.interstitial }, o.createElement(Z.Z, { headline: k, subtext: P })),
+                            o.createElement(h.Z, { style: $.examplesLink }, o.createElement(y.Z, { label: C, path: _.o5 })),
                             o.createElement(m.Z, null),
-                            o.createElement(b.Z, { style: S.previewCallout }, o.createElement(w.Z, { path: v.Km })),
+                            o.createElement(h.Z, { style: $.previewCallout }, o.createElement(w.Z, { path: _.Km })),
                             o.createElement(E.Z, {
                                 autoFocus: r,
                                 imageUrl: L,
-                                name: I,
+                                name: B,
                                 onChange: (e) => {
-                                    $(e.currentTarget.value);
+                                    z(e.currentTarget.value);
                                 },
                                 ref: t,
-                                style: [S.preview, c && S.previewWide],
+                                style: [$.preview, c && $.previewWide],
                                 value: T,
                                 valueMaxLength: n,
                             }),
@@ -442,8 +387,8 @@
                         )
                     );
                 },
-                L = o.forwardRef(I),
-                S = u.default.create((e) => ({ interstitial: { marginTop: e.spaces.space32 }, examplesLink: { marginBottom: e.spaces.space28, marginTop: e.spaces.space24 }, previewCallout: { marginBottom: e.spaces.space4, marginTop: e.spaces.space20 }, preview: { marginVertical: e.spaces.space16, marginHorizontal: e.spaces.space32 }, previewWide: { marginHorizontal: e.spaces.space16 } }));
+                L = o.forwardRef(B),
+                $ = u.default.create((e) => ({ interstitial: { marginTop: e.spaces.space32 }, examplesLink: { marginBottom: e.spaces.space28, marginTop: e.spaces.space24 }, previewCallout: { marginBottom: e.spaces.space4, marginTop: e.spaces.space20 }, preview: { marginVertical: e.spaces.space16, marginHorizontal: e.spaces.space32 }, previewWide: { marginHorizontal: e.spaces.space16 } }));
         },
         209434: (e, t, r) => {
             r.d(t, { Z: () => u });
@@ -460,7 +405,7 @@
                 u = ({ path: e, style: t }) => n.createElement(a.Z, { style: [m.root, t] }, n.createElement(o.ZP, { size: "headline2", weight: "heavy" }, p), n.createElement(c.Z, { label: d, path: e }));
         },
         642097: (e, t, r) => {
-            r.d(t, { Z: () => f });
+            r.d(t, { Z: () => b });
             var n = r(490188),
                 a = r(829028),
                 o = r(202784),
@@ -473,11 +418,11 @@
                 m = r(859538);
             const u = c().hf6f2914,
                 g = a.Z,
-                h = n.Z,
-                f = (0, p.Z)(
+                f = n.Z,
+                b = (0, p.Z)(
                     ({ user: e, viewer: t }) => {
                         const r = s()(g, e),
-                            n = s()(h, t);
+                            n = s()(f, t);
                         return o.createElement(d.Z, { title: u, withInfoButton: !0 }, o.createElement(m.Z, { user: r, viewer: n }));
                     },
                     { component: "management_perks_confirm" },
@@ -497,25 +442,25 @@
                 m = r(541659),
                 u = r(973316),
                 g = r(325319),
-                h = r(376755),
-                f = r(274257),
-                b = r(535083);
+                f = r(376755),
+                b = r(274257),
+                h = r(535083);
             const Z = p().af5b098e,
                 E = p().e36287c6,
-                _ = p().b772cd66,
-                v = o.Z,
+                v = p().b772cd66,
+                _ = o.Z,
                 y = a.Z,
                 w = (0, d.Z)(
                     ({ backLocation: e, user: t, viewer: r }) => {
-                        const a = l()(v, t),
+                        const a = l()(_, t),
                             o = l()(y, r),
-                            s = (0, h.IH)(a),
-                            c = (0, f.fJ)(o),
+                            s = (0, f.IH)(a),
+                            c = (0, b.fJ)(o),
                             p = c.length > 0 && c.length <= 140 && c !== s,
-                            [d, w] = (0, b.Z)(a, { description: c }),
-                            k = { disabled: !p || w, label: _, onPress: d, path: e, type: "primaryFilled" },
-                            C = i.createElement(u.Z, (0, n.Z)({}, k, { size: "small" }));
-                        return i.createElement(m.Z, { rightControl: C, subtitle: E, title: Z }, i.createElement(g.Z, { autoFocus: !0, descriptionMaxLength: 140, user: a, viewer: o }));
+                            [d, w] = (0, h.Z)(a, { description: c }),
+                            k = { disabled: !p || w, label: v, onPress: d, path: e, type: "primaryFilled" },
+                            P = i.createElement(u.Z, (0, n.Z)({}, k, { size: "small" }));
+                        return i.createElement(m.Z, { rightControl: P, subtitle: E, title: Z }, i.createElement(g.Z, { autoFocus: !0, descriptionMaxLength: 140, user: a, viewer: o }));
                     },
                     { component: "management_perks_description" },
                 );
@@ -534,31 +479,31 @@
                 m = r(541659),
                 u = r(973316),
                 g = r(315121),
-                h = r(376755),
-                f = r(274257),
-                b = r(535083);
+                f = r(376755),
+                b = r(274257),
+                h = r(535083);
             const Z = p().af5b098e,
                 E = p().c0348964,
-                _ = p().b772cd66,
-                v = o.Z,
+                v = p().b772cd66,
+                _ = o.Z,
                 y = a.Z,
                 w = (0, d.Z)(
                     ({ backLocation: e, user: t, viewer: r }) => {
-                        const a = l()(v, t),
+                        const a = l()(_, t),
                             o = l()(y, r),
-                            s = (0, h.IU)(a),
-                            c = (0, f.JG)(o),
+                            s = (0, f.IU)(a),
+                            c = (0, b.JG)(o),
                             p = c.length > 0 && c.length <= 140 && c !== s,
-                            [d, w] = (0, b.Z)(a, { creatorIntro: c }),
-                            k = { disabled: !p || w, label: _, onPress: d, path: e, type: "primaryFilled" },
-                            C = i.createElement(u.Z, (0, n.Z)({}, k, { size: "small" }));
-                        return i.createElement(m.Z, { rightControl: C, subtitle: E, title: Z }, i.createElement(g.Z, { autoFocus: !0, introMaxLength: 140, user: a, viewer: o }));
+                            [d, w] = (0, h.Z)(a, { creatorIntro: c }),
+                            k = { disabled: !p || w, label: v, onPress: d, path: e, type: "primaryFilled" },
+                            P = i.createElement(u.Z, (0, n.Z)({}, k, { size: "small" }));
+                        return i.createElement(m.Z, { rightControl: P, subtitle: E, title: Z }, i.createElement(g.Z, { autoFocus: !0, introMaxLength: 140, user: a, viewer: o }));
                     },
                     { component: "management_perks_intro" },
                 );
         },
         893903: (e, t, r) => {
-            r.d(t, { Z: () => Pe });
+            r.d(t, { Z: () => Ce });
             r(136728);
             var n = r(949289),
                 a = r(401301),
@@ -572,34 +517,34 @@
                 m = r(731708),
                 u = r(420412),
                 g = r(154003),
-                h = r(392237),
-                f = r(111677),
-                b = r.n(f),
+                f = r(392237),
+                b = r(111677),
+                h = r.n(b),
                 Z = r(439412),
                 E = r(443781),
-                _ = r(652904),
-                v = r(105633),
+                v = r(652904),
+                _ = r(105633),
                 y = r(865721),
                 w = r(725516),
                 k = r(264922),
-                C = r(293723);
-            const P = b().be103b84,
-                x = () => s.createElement(l.Z, { style: B.root }, s.createElement(C.default, { style: B.icon }), s.createElement(m.ZP, { size: "subtext2", weight: "bold" }, P)),
-                B = h.default.create((e) => ({ root: { alignItems: "center", borderColor: e.colors.borderColor, borderRadius: e.borderRadii.medium, borderWidth: e.borderWidths.small, flexDirection: "row", gap: e.spaces.space4, paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space12 }, icon: { color: e.colors.plum500, height: e.spaces.space16 } }));
-            var I = r(75277),
+                P = r(293723);
+            const C = h().be103b84,
+                x = () => s.createElement(l.Z, { style: I.root }, s.createElement(P.default, { style: I.icon }), s.createElement(m.ZP, { size: "subtext2", weight: "bold" }, C)),
+                I = f.default.create((e) => ({ root: { alignItems: "center", borderColor: e.colors.borderColor, borderRadius: e.borderRadii.medium, borderWidth: e.borderWidths.small, flexDirection: "row", gap: e.spaces.space4, paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space12 }, icon: { color: e.colors.plum500, height: e.spaces.space16 } }));
+            var B = r(75277),
                 L = r(161475),
-                S = r(461715),
+                $ = r(461715),
                 T = r(614983),
-                $ = r.n(T),
-                z = r(351743),
-                F = r.n(z),
-                D = r(376755);
-            const N = S.Z,
-                H = L.Z,
-                O = ({ priceChange: e, user: t }) => {
-                    const r = p()(N, t),
-                        n = (0, D.d7)(r),
-                        [a, o] = F()(H);
+                z = r.n(T),
+                S = r(351743),
+                F = r.n(S),
+                N = r(376755);
+            const O = $.Z,
+                j = L.Z,
+                D = ({ priceChange: e, user: t }) => {
+                    const r = p()(O, t),
+                        n = (0, N.d7)(r),
+                        [a, o] = F()(j);
                     return [
                         s.useCallback(
                             () =>
@@ -610,7 +555,7 @@
                                             onCompleted: (e, r) => t(),
                                             onError: r,
                                             updater: (e) => {
-                                                $()(n, "priceChangeId must be specified");
+                                                z()(n, "priceChangeId must be specified");
                                                 e.get(n) && e.delete(n);
                                             },
                                         });
@@ -620,26 +565,26 @@
                         o,
                     ];
                 };
-            var V = r(973316);
-            const j = b().a4c6e458,
-                U = b().be54a313,
-                R = b().hadd463a,
-                W = b().b0728b5c,
-                J = b().aea9f79c,
-                M = I.Z;
-            function q({ perksPricingLocation: e, price: t, priceChangeId: r, requestedPrice: n, user: a }) {
+            var H = r(973316);
+            const V = h().a4c6e458,
+                U = h().be54a313,
+                J = h().hadd463a,
+                R = h().b0728b5c,
+                W = h().aea9f79c,
+                q = B.Z;
+            function M({ perksPricingLocation: e, price: t, priceChangeId: r, requestedPrice: n, user: a }) {
                 const o = !!n,
-                    i = p()(M, a),
-                    [l, c] = O({ user: i, priceChange: r });
+                    i = p()(q, a),
+                    [l, c] = D({ user: i, priceChange: r });
                 return s.createElement(
                     s.Fragment,
                     null,
-                    s.createElement(m.ZP, { color: "gray700" }, j, " ", s.createElement(m.ZP, { weight: "bold" }, U({ price: t }))),
+                    s.createElement(m.ZP, { color: "gray700" }, V, " ", s.createElement(m.ZP, { weight: "bold" }, U({ price: t }))),
                     o
                         ? s.createElement(
                               s.Fragment,
                               null,
-                              s.createElement(m.ZP, { color: "gray700" }, J, " ", s.createElement(m.ZP, { weight: "bold" }, U({ price: n }))),
+                              s.createElement(m.ZP, { color: "gray700" }, W, " ", s.createElement(m.ZP, { weight: "bold" }, U({ price: n }))),
                               r &&
                                   s.createElement(
                                       g.ZP,
@@ -651,73 +596,73 @@
                                           size: "small",
                                           type: "destructiveOutlined",
                                       },
-                                      W,
+                                      R,
                                   ),
                           )
-                        : s.createElement(V.Z, { label: R, path: e, size: "small", type: "primaryOutlined" }),
+                        : s.createElement(H.Z, { label: J, path: e, size: "small", type: "primaryOutlined" }),
                 );
             }
-            const G = s.memo(q);
+            const G = s.memo(M);
             var A = r(977126);
             const K = (e) => {
                     const { children: t, headline: r, rightControl: n } = e;
                     return s.createElement(l.Z, { style: Q.root }, s.createElement(l.Z, { style: Q.header }, s.createElement(m.ZP, { "aria-level": 4, role: "heading", size: "headline2", style: Q.headline, weight: "heavy" }, r), t), n);
                 },
-                Q = h.default.create((e) => ({ root: { alignItems: "start", flexDirection: "row", gap: e.spaces.space8 }, header: { flex: 1 }, headline: { marginBottom: e.spaces.space8 } }));
+                Q = f.default.create((e) => ({ root: { alignItems: "start", flexDirection: "row", gap: e.spaces.space8 }, header: { flex: 1 }, headline: { marginBottom: e.spaces.space8 } }));
             var X = r(523361),
                 Y = r(274257),
                 ee = r(176544);
-            const te = b().d7b51c68,
-                re = b().a384fda0,
-                ne = b().i4313618,
-                ae = b().c0348964,
-                oe = b().g522fd30,
-                ie = b().e85471c6,
-                se = b().fd75ca92,
-                le = b().ia9c37c4,
-                ce = b().f5be83b2,
-                pe = b().e4ee8c6a,
-                de = b().f3ce76c0,
-                me = b().i8982e7e,
-                ue = b().i3a90dee,
-                ge = b().e261e6e6,
-                he = b().ca5ca5ee,
-                fe = b().abd845fe,
-                be = b().f5be83b2,
-                Ze = b().f66d24be,
-                Ee = b().g5925628,
-                _e = b().e58e85d2,
-                ve = i.Z,
+            const te = h().d7b51c68,
+                re = h().a384fda0,
+                ne = h().i4313618,
+                ae = h().c0348964,
+                oe = h().g522fd30,
+                ie = h().e85471c6,
+                se = h().fd75ca92,
+                le = h().ia9c37c4,
+                ce = h().f5be83b2,
+                pe = h().e4ee8c6a,
+                de = h().f3ce76c0,
+                me = h().i8982e7e,
+                ue = h().i3a90dee,
+                ge = h().e261e6e6,
+                fe = h().ca5ca5ee,
+                be = h().abd845fe,
+                he = h().f5be83b2,
+                Ze = h().f66d24be,
+                Ee = h().g5925628,
+                ve = h().e58e85d2,
+                _e = i.Z,
                 ye = o.Z,
                 we = a.Z,
                 ke = n.Z,
-                Ce = h.default.create((e) => ({ title: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, benefits: { gap: e.spaces.space32, marginTop: e.spaces.space16 }, other: { gap: e.spaces.space24, marginTop: e.spaces.space12 }, buttons: { flexDirection: "row", flexWrap: "wrap", gap: e.spaces.space8 }, button: { flexBasis: `${e.breakpoints.micro}px`, flexGrow: 1, flexShrink: 1 } })),
-                Pe = (0, w.Z)(
-                    ({ backLocation: e, perksConfirmLocation: t, perksDescriptionLocation: r, perksIntroLocation: n, perksPricingLocation: a, priceOfferings: o, subscriptionsPriceOfferings: i, user: c, viewer: h, withAppBar: f }) => {
-                        const { featureSwitches: b } = (0, E.QZ)(),
-                            w = b.isTrue("super_follow_web_deactivate_enabled"),
-                            C = (0, d.useHistory)(),
-                            P = (0, d.useLocation)(),
-                            { $fragmentType: B, ...I } = p()(ve, o),
-                            { $fragmentType: L, ...S } = p()(ye, i),
+                Pe = f.default.create((e) => ({ title: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, benefits: { gap: e.spaces.space32, marginTop: e.spaces.space16 }, other: { gap: e.spaces.space24, marginTop: e.spaces.space12 }, buttons: { flexDirection: "row", flexWrap: "wrap", gap: e.spaces.space8 }, button: { flexBasis: `${e.breakpoints.micro}px`, flexGrow: 1, flexShrink: 1 } })),
+                Ce = (0, w.Z)(
+                    ({ backLocation: e, perksConfirmLocation: t, perksDescriptionLocation: r, perksIntroLocation: n, perksPricingLocation: a, priceOfferings: o, subscriptionsPriceOfferings: i, user: c, viewer: f, withAppBar: b }) => {
+                        const { featureSwitches: h } = (0, E.QZ)(),
+                            w = h.isTrue("super_follow_web_deactivate_enabled"),
+                            P = (0, d.useHistory)(),
+                            C = (0, d.useLocation)(),
+                            { $fragmentType: I, ...B } = p()(_e, o),
+                            { $fragmentType: L, ...$ } = p()(ye, i),
                             T = p()(we, c),
-                            $ = p()(ke, h),
-                            z = (0, D.IU)(T),
-                            F = (0, D.IH)(T),
-                            N = (0, D.Ex)(T) ?? "offer2",
-                            H = T.avatar?.image_url ?? void 0,
-                            O = T.core?.screen_name ?? void 0,
-                            { new_price: j, price_change: U } = T.super_follow_pending_price_change || {},
-                            R = (0, Y.Eo)(N, I, S),
-                            W = (0, Y.Eo)(j || "", I, S),
-                            J = s.createElement(X.Z, { label: he, path: t, size: "subtext1" }),
-                            M = s.createElement(V.Z, { label: fe, path: n, size: "small", type: "primaryOutlined" }),
-                            q = s.createElement(V.Z, { label: fe, path: r, size: "small", type: "primaryOutlined" }),
+                            z = p()(ke, f),
+                            S = (0, N.IU)(T),
+                            F = (0, N.IH)(T),
+                            O = (0, N.Ex)(T) ?? "offer2",
+                            j = T.avatar?.image_url ?? void 0,
+                            D = T.core?.screen_name ?? void 0,
+                            { new_price: V, price_change: U } = T.super_follow_pending_price_change || {},
+                            J = (0, Y.Eo)(O, B, $),
+                            R = (0, Y.Eo)(V || "", B, $),
+                            W = s.createElement(X.Z, { label: fe, path: t, size: "subtext1" }),
+                            q = s.createElement(H.Z, { label: be, path: n, size: "small", type: "primaryOutlined" }),
+                            M = s.createElement(H.Z, { label: be, path: r, size: "small", type: "primaryOutlined" }),
                             Q = s.useCallback(() => {
-                                C.push(e);
-                            }, [C, e]),
-                            Pe = s.createElement(s.Fragment, null, s.createElement(A.Z, { childrenStyle: Ce.benefits, headline: re, illustration: A.j.Ribbon, rightControl: J }, s.createElement(m.ZP, { color: "gray700" }, ne), s.createElement(K, { headline: ae, rightControl: M }, s.createElement(Z.Z, { imageUrl: H, screenName: O, value: z })), s.createElement(K, { headline: oe, rightControl: q }, s.createElement(Z.Z, { imageUrl: H, screenName: O, value: F })), s.createElement(K, { headline: ie }, s.createElement(m.ZP, { color: "gray700" }, se)), b.isTrue("responsive_web_creator_preferences_previews_enabled_setting") ? s.createElement(v.Z, null) : null), s.createElement(u.Z, null), s.createElement(A.Z, { childrenStyle: Ce.other, headline: le, illustration: A.j.PiggyBank }, s.createElement(G, { perksPricingLocation: a, price: R, priceChangeId: U || "", requestedPrice: W, user: T })), s.createElement(u.Z, null), s.createElement(A.Z, { childrenStyle: Ce.other, headline: ce, illustration: A.j.Chat }, s.createElement(m.ZP, { color: "gray700" }, pe), s.createElement(l.Z, { style: Ce.buttons }, s.createElement(g.ZP, { link: ee.bJ, style: Ce.button, type: "primaryOutlined" }, be))), s.createElement(u.Z, null), s.createElement(A.Z, { childrenStyle: Ce.other, headline: de, illustration: A.j.LifeSaver }, s.createElement(m.ZP, { color: "gray700" }, me), s.createElement(l.Z, { style: Ce.buttons }, s.createElement(g.ZP, { link: ee._t, style: Ce.button, type: "primaryOutlined" }, Ze), s.createElement(g.ZP, { link: ee.hz, style: Ce.button, type: "primaryOutlined" }, Ee))), w && s.createElement(s.Fragment, null, s.createElement(u.Z, null), s.createElement(A.Z, { childrenStyle: Ce.other, headline: ue, illustration: A.j.Cone }, s.createElement(m.ZP, { color: "gray700" }, ge), s.createElement(l.Z, { style: Ce.buttons }, s.createElement(y.Z, { label: _e, onConfirm: Q, style: Ce.button, viewer: $ })))));
-                        return f ? s.createElement(_.Z, null, s.createElement(k.Z, { location: P, rightControl: s.createElement(x, null), screenType: "secondaryDetail", title: te }, Pe)) : Pe;
+                                P.push(e);
+                            }, [P, e]),
+                            Ce = s.createElement(s.Fragment, null, s.createElement(A.Z, { childrenStyle: Pe.benefits, headline: re, illustration: A.j.Ribbon, rightControl: W }, s.createElement(m.ZP, { color: "gray700" }, ne), s.createElement(K, { headline: ae, rightControl: q }, s.createElement(Z.Z, { imageUrl: j, screenName: D, value: S })), s.createElement(K, { headline: oe, rightControl: M }, s.createElement(Z.Z, { imageUrl: j, screenName: D, value: F })), s.createElement(K, { headline: ie }, s.createElement(m.ZP, { color: "gray700" }, se)), h.isTrue("responsive_web_creator_preferences_previews_enabled_setting") ? s.createElement(_.Z, null) : null), s.createElement(u.Z, null), s.createElement(A.Z, { childrenStyle: Pe.other, headline: le, illustration: A.j.PiggyBank }, s.createElement(G, { perksPricingLocation: a, price: J, priceChangeId: U || "", requestedPrice: R, user: T })), s.createElement(u.Z, null), s.createElement(A.Z, { childrenStyle: Pe.other, headline: ce, illustration: A.j.Chat }, s.createElement(m.ZP, { color: "gray700" }, pe), s.createElement(l.Z, { style: Pe.buttons }, s.createElement(g.ZP, { link: ee.bJ, style: Pe.button, type: "primaryOutlined" }, he))), s.createElement(u.Z, null), s.createElement(A.Z, { childrenStyle: Pe.other, headline: de, illustration: A.j.LifeSaver }, s.createElement(m.ZP, { color: "gray700" }, me), s.createElement(l.Z, { style: Pe.buttons }, s.createElement(g.ZP, { link: ee._t, style: Pe.button, type: "primaryOutlined" }, Ze), s.createElement(g.ZP, { link: ee.hz, style: Pe.button, type: "primaryOutlined" }, Ee))), w && s.createElement(s.Fragment, null, s.createElement(u.Z, null), s.createElement(A.Z, { childrenStyle: Pe.other, headline: ue, illustration: A.j.Cone }, s.createElement(m.ZP, { color: "gray700" }, ge), s.createElement(l.Z, { style: Pe.buttons }, s.createElement(y.Z, { label: ve, onConfirm: Q, style: Pe.button, viewer: z })))));
+                        return b ? s.createElement(v.Z, null, s.createElement(k.Z, { location: C, rightControl: s.createElement(x, null), screenType: "secondaryDetail", title: te }, Ce)) : Ce;
                     },
                     { component: "management_summary" },
                 );
@@ -740,16 +685,16 @@
                         m = (0, l.IH)(n),
                         u = (0, l.Ex)(n),
                         g = (0, c.JG)(a),
-                        h = (0, c.fJ)(a),
-                        f = (0, c.qO)(a),
-                        b = (0, c.NP)(a, "creator_intro"),
+                        f = (0, c.fJ)(a),
+                        b = (0, c.qO)(a),
+                        h = (0, c.NP)(a, "creator_intro"),
                         Z = (0, c.NP)(a, "description"),
                         E = (0, c.NP)(a, "selected_price");
                     return {
-                        shouldBlockNavigation: o.useCallback((t, r) => t.pathname === e && "POP" === r && (g !== i || h !== m || f !== u), [g, h, f, i, m, u, e]),
+                        shouldBlockNavigation: o.useCallback((t, r) => t.pathname === e && "POP" === r && (g !== i || f !== m || b !== u), [g, f, b, i, m, u, e]),
                         discardChanges: o.useCallback(() => {
-                            b(i), Z(m), E(u);
-                        }, [i, m, u, b, Z, E]),
+                            h(i), Z(m), E(u);
+                        }, [i, m, u, h, Z, E]),
                     };
                 };
         },
@@ -785,7 +730,7 @@
                 };
         },
         274257: (e, t, r) => {
-            r.d(t, { JG: () => x, fJ: () => B, NP: () => P, zG: () => C, xX: () => S, qO: () => I, Eo: () => L });
+            r.d(t, { JG: () => x, fJ: () => I, NP: () => C, zG: () => P, xX: () => $, qO: () => B, Eo: () => L });
             var n = r(117365),
                 a = r(770094),
                 o = r(249817),
@@ -798,26 +743,26 @@
                 m = r.n(d),
                 u = r(53647),
                 g = r.n(u),
-                h = (r(585488), r(277660)),
-                f = r.n(h),
-                b = r(437429),
-                Z = r.n(b),
+                f = (r(585488), r(277660)),
+                b = r.n(f),
+                h = r(437429),
+                Z = r.n(h),
                 E = r(187669),
-                _ = r(674057);
-            const v = "super_follows_onboarding_draft",
-                y = (e, t) => (0, _.g)(e, t).getLinkedRecord(v),
+                v = r(674057);
+            const _ = "super_follows_onboarding_draft",
+                y = (e, t) => (0, v.g)(e, t).getLinkedRecord(_),
                 w = (e, t, { creator_intro: r = null, description: n = null, selected_price: a = null } = {}) => {
-                    const o = (0, _.E)(t),
-                        i = (0, _.g)(e, t);
+                    const o = (0, v.E)(t),
+                        i = (0, v.g)(e, t);
                     if (y(e, t)) return;
-                    const s = e.create(`${o}:${v}`, "SuperFollowsOnboardingDraft");
+                    const s = e.create(`${o}:${_}`, "SuperFollowsOnboardingDraft");
                     s.setValue(r, "creator_intro"), s.setValue(n, "description"), s.setValue(a, "selected_price"), i.setLinkedRecord(s, "super_follows_onboarding_draft");
                 },
                 k = (e, t, r, n) => {
                     const a = y(e, t);
                     m()(a, "onboardingDraft must be defined"), a.setValue(n, r);
                 };
-            function C(e, t) {
+            function P(e, t) {
                 const r = Z()();
                 (0, E.q)(() => {
                     m()(e, "viewerRef must be defined"),
@@ -826,7 +771,7 @@
                         });
                 });
             }
-            function P(e, t) {
+            function C(e, t) {
                 const r = Z()();
                 return p.useCallback(
                     (n) => {
@@ -839,31 +784,31 @@
                 );
             }
             const x = (e) => {
-                    const t = f()(c.Z, e);
+                    const t = b()(c.Z, e);
                     return t.super_follows_onboarding_draft?.creator_intro ?? "";
                 },
-                B = (e) => {
-                    const t = f()(l.Z, e);
+                I = (e) => {
+                    const t = b()(l.Z, e);
                     return t.super_follows_onboarding_draft?.description ?? "";
                 },
-                I = (e) => {
-                    const t = f()(s.Z, e);
+                B = (e) => {
+                    const t = b()(s.Z, e);
                     return t.super_follows_onboarding_draft?.selected_price ?? null;
                 },
                 L = (e, t, r) => {
-                    const n = f()(i.Z, t),
-                        a = f()(o.Z, r),
-                        { priceOfferings: s, subscriptionsPriceOfferings: l } = S(n, a),
+                    const n = b()(i.Z, t),
+                        a = b()(o.Z, r),
+                        { priceOfferings: s, subscriptionsPriceOfferings: l } = $(n, a),
                         c = l.offers.find((t) => t.key === e)?.price;
                     return c || s[e];
                 },
-                S = (e, t) => {
-                    const r = f()(a.Z, e);
-                    return { subscriptionsPriceOfferings: f()(n.Z, t), priceOfferings: r };
+                $ = (e, t) => {
+                    const r = b()(a.Z, e);
+                    return { subscriptionsPriceOfferings: b()(n.Z, t), priceOfferings: r };
                 };
         },
         535083: (e, t, r) => {
-            r.d(t, { Z: () => h });
+            r.d(t, { Z: () => f });
             var n = r(696138),
                 a = r(837390),
                 o = r(202784),
@@ -876,37 +821,37 @@
                 m = r(376755);
             const u = a.Z,
                 g = n.Z,
-                h = (e, { creatorIntro: t, description: r }) => {
+                f = (e, { creatorIntro: t, description: r }) => {
                     const n = c()(u, e),
                         a = (0, m.Jw)(n),
                         i = (0, m.IU)(n),
                         l = (0, m.IH)(n),
                         p = t || i,
-                        h = r || l,
-                        [f, b] = d()(g);
+                        f = r || l,
+                        [b, h] = d()(g);
                     return [
                         o.useCallback(
                             () =>
                                 new Promise((e, t) => {
-                                    f({
-                                        variables: { creator_intro: p, benefits_data: [{ benefit_type: "ExclusiveContent", title: "", description: h }] },
+                                    b({
+                                        variables: { creator_intro: p, benefits_data: [{ benefit_type: "ExclusiveContent", title: "", description: f }] },
                                         onCompleted: (t, r) => e(),
                                         onError: t,
                                         updater: (e) => {
                                             s()(a, "benefitsId must be specified");
                                             const t = e.get(a);
-                                            if ((s()(t, "benefitsRecord must be specified"), p !== i && t.setValue(p, "creator_intro"), h !== l)) {
+                                            if ((s()(t, "benefitsRecord must be specified"), p !== i && t.setValue(p, "creator_intro"), f !== l)) {
                                                 const e = t.getLinkedRecords("benefits_data");
                                                 e?.forEach((e) => {
-                                                    "ExclusiveContent" === e?.getValue("benefit_type") && e?.setValue(h, "description");
+                                                    "ExclusiveContent" === e?.getValue("benefit_type") && e?.setValue(f, "description");
                                                 });
                                             }
                                         },
                                     });
                                 }),
-                            [a, p, h, i, l, f],
+                            [a, p, f, i, l, b],
                         ),
-                        b,
+                        h,
                     ];
                 };
         },
@@ -948,4 +893,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-e4e3d8bb.a602a1aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-e4e3d8bb.052681ea.js.map

@@ -121,7 +121,7 @@
             const g = l.default.create((e) => ({ translationSourceLink: { marginTop: "0.1em", marginHorizontal: e.spaces.space4 }, nightLogo: { fill: e.colors.gray700 }, callout: { display: "flex", flexWrap: "wrap", marginTop: e.spaces.space4, gap: e.spaces.space4, alignItems: "center" }, calloutOnTop: { marginTop: 0, marginBottom: e.spaces.space4 }, toggle: { cursor: "pointer" }, loading: { marginStart: e.spaces.space4 } }));
         },
         818065: (e, t, a) => {
-            a.d(t, { B: () => Z, VW: () => L, eE: () => I, g: () => _, k7: () => F, lL: () => G, li: () => S, so: () => E });
+            a.d(t, { B: () => Z, VW: () => L, eE: () => I, g: () => _, k7: () => S, lL: () => G, li: () => F, so: () => E });
             var n = a(202784),
                 l = a(731708),
                 s = a(392237),
@@ -144,8 +144,8 @@
                 y = d().caa5ba3d,
                 E = d().deaf5b16,
                 L = d().a66d80d0,
-                S = d().be9b9fb8,
-                F = d().he9c9634,
+                F = d().be9b9fb8,
+                S = d().he9c9634,
                 w = d().j2198c98,
                 Z = d().d4d35bea,
                 I = d().i7ac410e;
@@ -160,34 +160,35 @@
                 const { handleCollapseTranslation: t, handleGetTranslationClick: a, originLanguage: c, position: L, translateButtonText: w, translationSource: I, translationStatus: G } = e,
                     v = c ? b({ originLanguage: c }) : T,
                     M = s.default.isDarkMode() ? n.createElement(u.default, { style: z.nightLogo }) : n.createElement(g.default, null),
-                    P = D(n.createElement(C, { a11yLabel: v, translatorLogo: M, translatorUrl: "https://translate.google.com" }), t),
-                    O = c ? k({ originLanguage: c }) : f,
+                    O = D(n.createElement(C, { a11yLabel: v, translatorLogo: M, translatorUrl: "https://translate.google.com" }), t),
+                    P = c ? k({ originLanguage: c }) : f,
                     V = s.default.isDarkMode() ? n.createElement(h.default, { style: z.nightLogo }) : n.createElement(h.default, null),
-                    A = D(n.createElement(C, { a11yLabel: O, translatorLogo: V, translatorUrl: "https://papago.naver.com" }), t),
+                    A = D(n.createElement(C, { a11yLabel: P, translatorLogo: V, translatorUrl: "https://papago.naver.com" }), t),
                     B = c ? y({ originLanguage: c }) : x,
                     H = D(n.createElement(C, { a11yLabel: B, translatorLogo: m, translatorUrl: "" }), t),
-                    R = s.default.isDarkMode() ? n.createElement(l.ZP, { color: "white" }, n.createElement(p.x1, { style: z.nightLogo }), " Grok") : n.createElement(l.ZP, { color: "alwaysBlack" }, n.createElement(p.x1, null), " Grok"),
-                    N = c ? _({ originLanguage: c }) : S,
-                    U = D(n.createElement(C, { a11yLabel: N, translatorLogo: R, translatorUrl: "" }), t);
+                    N = s.default.isDarkMode() ? n.createElement(l.ZP, { color: "white" }, n.createElement(p.x1, { style: z.nightLogo }), " Grok") : n.createElement(l.ZP, { color: "alwaysBlack" }, n.createElement(p.x1, null), " Grok"),
+                    R = c ? _({ originLanguage: c }) : F,
+                    U = D(n.createElement(C, { a11yLabel: R, translatorLogo: N, translatorUrl: "" }), t);
                 let W;
-                W = "Papago" === I ? A : "X" === I ? H : "Grok" === I ? U : P;
-                const $ = n.createElement(r.RD.Consumer, null, ({ direction: e }) => ("loading" === G ? n.createElement(l.ZP, { align: "center", color: "link", dir: e, numberOfLines: 1, size: "subtext2", style: [z.callout, "top" === L && z.calloutOnTop] }, Z, " ", n.createElement(o.Z, { size: 13, style: z.loading })) : "failed" === G ? n.createElement(l.ZP, { align: "center", color: "gray700", dir: e, numberOfLines: 1, size: "subtext2", style: [z.callout, "top" === L && z.calloutOnTop] }, F, " ", n.createElement(l.ZP, { color: "link", onClick: a, role: "button", style: z.retry }, E)) : "loaded" === G ? n.createElement(l.ZP, { align: "center", dir: e, numberOfLines: 1, size: "subtext2", style: [z.callout, "top" === L && z.calloutOnTop] }, "X" === I ? n.createElement(d().I18NFormatMessage, { $i18n: "cbb4db07" }, n.cloneElement(W.toggle, null, d().e0f81ff3)) : c ? n.createElement(d().I18NFormatMessage, { $i18n: "be5322c7" }, n.cloneElement(W.toggle, null, d().j2862695({ originLanguage: c })), W.company) : n.createElement(d().I18NFormatMessage, { $i18n: "c5f6ee1d" }, n.cloneElement(W.toggle, null, d().b7cb4fab), W.company)) : n.createElement(l.ZP, { "aria-expanded": !1, color: "link", onClick: a, role: "button", size: "subtext2", style: [z.callout, z.toggle, "top" === L && z.calloutOnTop], withInteractiveStyling: !0 }, w)));
+                W = "Papago" === I ? A : "X" === I ? H : "Grok" === I ? U : O;
+                const $ = n.createElement(r.RD.Consumer, null, ({ direction: e }) => ("loading" === G ? n.createElement(l.ZP, { align: "center", color: "link", dir: e, numberOfLines: 1, size: "subtext2", style: [z.callout, "top" === L && z.calloutOnTop] }, Z, " ", n.createElement(o.Z, { size: 13, style: z.loading })) : "failed" === G ? n.createElement(l.ZP, { align: "center", color: "gray700", dir: e, numberOfLines: 1, size: "subtext2", style: [z.callout, "top" === L && z.calloutOnTop] }, S, " ", n.createElement(l.ZP, { color: "link", onClick: a, role: "button", style: z.retry }, E)) : "loaded" === G ? n.createElement(l.ZP, { align: "center", dir: e, numberOfLines: 1, size: "subtext2", style: [z.callout, "top" === L && z.calloutOnTop] }, "X" === I ? n.createElement(d().I18NFormatMessage, { $i18n: "cbb4db07" }, n.cloneElement(W.toggle, null, d().e0f81ff3)) : c ? n.createElement(d().I18NFormatMessage, { $i18n: "be5322c7" }, n.cloneElement(W.toggle, null, d().j2862695({ originLanguage: c })), W.company) : n.createElement(d().I18NFormatMessage, { $i18n: "c5f6ee1d" }, n.cloneElement(W.toggle, null, d().b7cb4fab), W.company)) : n.createElement(l.ZP, { "aria-expanded": !1, color: "link", onClick: a, role: "button", size: "subtext2", style: [z.callout, z.toggle, "top" === L && z.calloutOnTop], withInteractiveStyling: !0 }, w)));
                 return n.createElement(i.z, { context: { id: "", richtext_tags: [], entity_set: {}, is_expandable: !1, text: "", inline_media: [] } }, $);
             }
             const z = s.default.create((e) => ({ translationSourceLink: { marginTop: "0.1em", marginHorizontal: e.spaces.space4 }, nightLogo: { fill: e.colors.white }, callout: { display: "flex", flexWrap: "wrap", marginTop: e.spaces.space4 }, calloutOnTop: { marginTop: 0, marginBottom: e.spaces.space4 }, toggle: { cursor: "pointer" }, retry: { marginStart: e.spaces.space4 }, loading: { marginStart: e.spaces.space4 } }));
         },
         720728: (e, t, a) => {
-            a.d(t, { Z: () => p });
+            a.d(t, { Z: () => m });
             var n = a(202784),
                 l = a(325686),
                 s = a(853435),
                 r = a(879113),
                 o = a(392237),
                 i = a(725516),
-                c = a(443781),
-                d = a(818065),
-                u = a(424439);
-            class g extends n.Component {
+                c = a(312771),
+                d = a(443781),
+                u = a(818065),
+                g = a(424439);
+            class h extends n.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._handleGetTranslationClick = (e) => {
@@ -212,13 +213,13 @@
                             const { originLanguage: e, streamedTranslationFetchStatus: t, translateButtonText: a, translationFetchStatus: l, translationSource: s, useGrokTranslation: r } = this.props,
                                 o = this.state.translationVisible ? t || l : "none",
                                 i = this._isInlineTranslationEnabled() ? "top" : "bottom";
-                            return r ? n.createElement(u.O, { handleCollapseTranslation: this._handleCollapseTranslation, handleGetTranslationClick: this._handleGetTranslationClick, position: i, sourceLanguageDisplayName: e, translateButtonText: a, translationStatus: o }) : n.createElement(d.lL, { handleCollapseTranslation: this._handleCollapseTranslation, handleGetTranslationClick: this._handleGetTranslationClick, originLanguage: e, position: i, translateButtonText: a, translationSource: s, translationStatus: o });
+                            return r ? n.createElement(g.O, { handleCollapseTranslation: this._handleCollapseTranslation, handleGetTranslationClick: this._handleGetTranslationClick, position: i, sourceLanguageDisplayName: e, translateButtonText: a, translationStatus: o }) : n.createElement(u.lL, { handleCollapseTranslation: this._handleCollapseTranslation, handleGetTranslationClick: this._handleGetTranslationClick, originLanguage: e, position: i, translateButtonText: a, translationSource: s, translationStatus: o });
                         }),
                         (this._renderTranslationMessage = () => {
                             if (!this.state.translationVisible) return null;
                             const { translatedMessage: e } = this.props,
                                 t = this._isInlineTranslationEnabled();
-                            return n.createElement(l.Z, { style: !t && h.translation }, e);
+                            return n.createElement(l.Z, { style: !t && p.translation }, e);
                         }),
                         (this._renderTranslationFeedback = () => {
                             if (!this.state.translationVisible) return null;
@@ -226,30 +227,30 @@
                             return n.createElement(s.z, { context: { id: "", richtext_tags: [], entity_set: {}, is_expandable: !1, text: "", inline_media: [] } }, e?.());
                         }),
                         (this._renderTranslationBlock = () => n.createElement(n.Fragment, null, this._renderTranslationHeader(), this._renderTranslationMessage(), this._renderTranslationFeedback())),
-                        (this.state = { translationVisible: !1 });
+                        (this.state = { translationVisible: e.isInitiallyTranslated ?? !1 });
                 }
                 componentDidMount() {
                     const { disableTranslation: e } = this.props;
                     !e && this._scribeAction("impression");
                 }
                 render() {
-                    const { children: e, disableTranslation: t, header: a, streamedTranslationFetchStatus: s, style: o, translationFetchStatus: i, withOriginalText: c } = this.props,
-                        { translationVisible: u } = this.state,
-                        { featureSwitches: g, loggedInUserId: h } = this.context,
-                        p = t || (!h && g.isTrue("machine_translation_holdback_logged_out")) || (h && g.isTrue("machine_translation_holdback_logged_in")),
-                        m = this._isInlineTranslationEnabled(),
-                        T = c || !u ? e : null;
-                    if (p) return T ? n.createElement(l.Z, { style: o }, this.props.headerWhenTranslationDisabled, T) : null;
-                    if (m) {
-                        const e = u && !!this.props.translatedMessage;
-                        return n.createElement(l.Z, { style: o }, a, this._renderTranslationBlock(), !e && T);
+                    const { children: e, disableTranslation: t, header: a, streamedTranslationFetchStatus: s, style: o, translationFetchStatus: i, withOriginalText: d } = this.props,
+                        { translationVisible: g } = this.state,
+                        { featureSwitches: h, loggedInUserId: p } = this.context,
+                        m = t || (!p && h.isTrue("machine_translation_holdback_logged_out")) || (p && h.isTrue("machine_translation_holdback_logged_in")),
+                        T = this._isInlineTranslationEnabled(),
+                        b = d || !g ? e : null;
+                    if (m) return b ? n.createElement(l.Z, { style: o }, this.props.headerWhenTranslationDisabled, b) : null;
+                    if (T) {
+                        const e = g && !!this.props.translatedMessage;
+                        return n.createElement(l.Z, { style: o }, a, this._renderTranslationBlock(), !e && b);
                     }
-                    return u ? n.createElement(l.Z, { style: o }, a, T, n.createElement(r.Z, { fetchStatus: s || i, loadingMessage: "loading" === s ? d.B : void 0, onRequestRetry: this._handleGetTranslationClick, render: this._renderTranslationBlock, retryMessage: d.k7 })) : n.createElement(l.Z, { style: o }, a, T, this._renderTranslationHeader());
+                    return g ? n.createElement(l.Z, { style: o }, a, b, n.createElement(r.Z, { fetchStatus: s || i, loadingMessage: s === c.iF.LOADING ? u.B : void 0, onRequestRetry: this._handleGetTranslationClick, render: this._renderTranslationBlock, retryMessage: u.k7 })) : n.createElement(l.Z, { style: o }, a, b, this._renderTranslationHeader());
                 }
             }
-            (g.contextType = c.rC), (g.defaultProps = { withOriginalText: !0 });
-            const h = o.default.create((e) => ({ translation: { marginTop: e.spaces.space4 } })),
-                p = (0, i.Z)(g);
+            (h.contextType = d.rC), (h.defaultProps = { withOriginalText: !0 });
+            const p = o.default.create((e) => ({ translation: { marginTop: e.spaces.space4 } })),
+                m = (0, i.Z)(h);
         },
         900813: (e, t, a) => {
             a.d(t, { Z: () => w });
@@ -279,7 +280,7 @@
             const L = (0, T.Z)()
                 .propsFromState(() => ({ translation: x, translationFetchStatus: y, userLanguage: f.VT, isForYouTimelineSelected: E }))
                 .propsFromActions(() => ({ createLocalApiErrorHandler: (0, m.zr)("TRANSLATE_TWEET"), fetchTranslation: k.Z.fetchOneIfNeeded, fetchStreamedGrokTranslation: k.Z.fetchStreamedGrokTranslation, fetchGrokTranslationAndForget: k.Z.fetchGrokTranslationAndForget }));
-            class S extends l.Component {
+            class F extends l.Component {
                 constructor(...e) {
                     super(...e),
                         (this._useGrokTranslation = () => {
@@ -315,7 +316,7 @@
                             return d && p && !u;
                         }),
                         (this._renderTranslation = () => {
-                            const { createLocalApiErrorHandler: e, disableTranslation: t, fetchGrokTranslationAndForget: a, fetchStreamedGrokTranslation: o, fetchTranslation: i, header: c, headerWhenTranslationDisabled: d, hitHighlights: u, isFocal: h, isForYouTimelineSelected: p, isTranslatable: m, onMediaTranslation: T, onToggleTranslation: b, renderTranslationFeedback: _, style: f, supplementalLang: k, text: x, translation: y, translationFetchStatus: E, tweetId: L, userLanguage: S, weight: F, withOriginalText: w, ...Z } = this.props,
+                            const { createLocalApiErrorHandler: e, disableTranslation: t, fetchGrokTranslationAndForget: a, fetchStreamedGrokTranslation: o, fetchTranslation: i, header: c, headerWhenTranslationDisabled: d, hitHighlights: u, isFocal: h, isForYouTimelineSelected: p, isTranslatable: m, onMediaTranslation: T, onToggleTranslation: b, renderTranslationFeedback: _, style: f, supplementalLang: k, text: x, translation: y, translationFetchStatus: E, tweetId: L, userLanguage: F, weight: S, withOriginalText: w, ...Z } = this.props,
                                 { featureSwitches: I } = this.context,
                                 C = (0, g.F)(I, x);
                             if (!y) return;
@@ -344,15 +345,15 @@
                     this._fetchGrokTranslationAndForgetIfNeeded();
                 }
                 render() {
-                    const { createLocalApiErrorHandler: e, disableTranslation: t, fetchGrokTranslationAndForget: a, fetchStreamedGrokTranslation: s, fetchTranslation: o, header: i, headerWhenTranslationDisabled: c, isFocal: g, isForYouTimelineSelected: h, isTranslatable: m, onMediaTranslation: T, onToggleTranslation: b, renderTranslationFeedback: _, style: f, supplementalLang: k, translation: x, translationFetchStatus: y, tweetId: E, userLanguage: L, withOriginalText: S, ...w } = this.props,
+                    const { createLocalApiErrorHandler: e, disableTranslation: t, fetchGrokTranslationAndForget: a, fetchStreamedGrokTranslation: s, fetchTranslation: o, header: i, headerWhenTranslationDisabled: c, isFocal: g, isForYouTimelineSelected: h, isTranslatable: m, onMediaTranslation: T, onToggleTranslation: b, renderTranslationFeedback: _, style: f, supplementalLang: k, translation: x, translationFetchStatus: y, tweetId: E, userLanguage: L, withOriginalText: F, ...w } = this.props,
                         Z = x?.localizedSourceLanguage ?? (0, u.t)(L, x?.sourceLanguage);
-                    return l.createElement(d.Z, { disableTranslation: this._shouldDisableTranslation(), fetchTranslation: this._fetchTranslation, header: i, headerWhenTranslationDisabled: c, key: E, onToggleTranslation: b, originLanguage: Z, renderTranslationFeedback: _, scribeElement: "translate_tweet", streamedTranslationFetchStatus: x?.streamedTranslationFetchStatus, style: f, translateButtonText: p.VW, translatedMessage: this._renderTranslation(), translationFetchStatus: y, translationSource: x && x.translationSource, translationState: x && x.translationState, tweetId: E, useGrokTranslation: this._useGrokTranslation(), withOriginalText: S }, l.createElement(r.Z, (0, n.Z)({ style: g && F.focalTweetText }, w)));
+                    return l.createElement(d.Z, { disableTranslation: this._shouldDisableTranslation(), fetchTranslation: this._fetchTranslation, header: i, headerWhenTranslationDisabled: c, key: E, onToggleTranslation: b, originLanguage: Z, renderTranslationFeedback: _, scribeElement: "translate_tweet", streamedTranslationFetchStatus: x?.streamedTranslationFetchStatus, style: f, translateButtonText: p.VW, translatedMessage: this._renderTranslation(), translationFetchStatus: y, translationSource: x && x.translationSource, tweetId: E, useGrokTranslation: this._useGrokTranslation(), withOriginalText: F }, l.createElement(r.Z, (0, n.Z)({ style: g && S.focalTweetText }, w)));
                 }
             }
-            S.contextType = h.rC;
-            const F = o.default.create((e) => ({ focalTweetText: { lineHeight: e.lineHeightsPx.headline1 } })),
-                w = L(S);
+            F.contextType = h.rC;
+            const S = o.default.create((e) => ({ focalTweetText: { lineHeight: e.lineHeightsPx.headline1 } })),
+                w = L(F);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d.6fa27a5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d.d67ea3ba.js.map

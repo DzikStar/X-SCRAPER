@@ -110,32 +110,31 @@
             a.contextType = o.rC;
         },
         729996: (e, t, s) => {
-            s.d(t, { ZP: () => P });
+            s.d(t, { ZP: () => S });
             var r = s(202784),
-                i = s(107267),
-                o = s(457311),
-                n = s(111677),
-                l = s.n(n),
-                a = s(615656),
-                c = s(898948),
-                d = s(443781),
-                h = s(38293),
-                u = s(652904),
-                m = s(810641),
-                f = s(438965),
-                p = s(335632),
-                _ = s(466015),
-                w = s(788993),
-                b = s(519896),
-                N = s(668214),
-                g = s(919022);
-            const y = (0, N.Z)().propsFromActions(() => ({ fetchUser: g.ZP.fetchOne })),
-                E = l().h088ae72,
-                S = (e) => {
+                i = s(457311),
+                o = s(111677),
+                n = s.n(o),
+                l = s(615656),
+                a = s(898948),
+                c = s(443781),
+                d = s(38293),
+                h = s(652904),
+                u = s(810641),
+                m = s(438965),
+                f = s(335632),
+                p = s(466015),
+                _ = s(788993),
+                w = s(519896),
+                b = s(668214),
+                N = s(919022);
+            const g = (0, b.Z)().propsFromActions(() => ({ fetchUser: N.ZP.fetchOne })),
+                y = n().h088ae72,
+                E = (e) => {
                     let t = -1;
                     if (
                         (e.forEach((e, s) => {
-                            _.CL(e) && e.content.socialContext && e.content.socialContext.generalContext && "string" == typeof e.content.socialContext.generalContext.contextType && e.content.socialContext.generalContext.contextType === w.Z.Pin && (t = s);
+                            p.CL(e) && e.content.socialContext && e.content.socialContext.generalContext && "string" == typeof e.content.socialContext.generalContext.contextType && e.content.socialContext.generalContext.contextType === _.Z.Pin && (t = s);
                         }),
                         t > -1)
                     ) {
@@ -144,14 +143,13 @@
                     }
                     return e;
                 };
-            const P = y(function (e) {
-                const { featureSwitches: t, viewerUserId: s } = (0, d.QZ)(),
-                    n = (0, i.useHistory)(),
-                    { displayBlocked: l = !1, fetchOptions: _ = {}, fetchUser: w, loadingLabelFormatter: N, module: g, onEntriesRendered: y, showWithheldBannerOnMyTweets: P = !1, timelineTitleFormatter: C, timelineEmptyHeaderFormatter: F, timelineEmptyMessageFormatter: T, timelineEmptyStateButtonLabel: I, timelineEmptyStateButtonLink: Z, timelineEmptyStateImageVariants: v, titleFormatter: O, userId: k } = e,
-                    x = r.useMemo(() => (0, p.G)({ displayBlocked: l, hideReplyContextMode: t.isTrue("rweb_tweets_reply_context_hidden") ? f.j.TIMELINE : void 0, showWithheldBannerOnMyTweets: P }), [l, t, P]),
-                    L = r.useMemo(() => ({ [a.ZP.NotAuthorizedToViewUser]: { customAction: () => w(k) } }), [w, k]),
-                    B = r.useCallback(() => (s ? r.createElement(o.Z, { buttonLink: Z, buttonText: I, header: F, imageVariants: v, message: T && T }) : (n.replace(`/i/flow/login?redirect_after_login=${encodeURIComponent(location.pathname)}`), null)), [n, F, T, I, Z, v, s]);
-                return r.createElement(c.Z, { collectionName: E }, r.createElement(u.Z, null, r.createElement(h.Z, { title: O }), r.createElement(m.Z, { apiErrorHandlerMap: L, entryConfiguration: x, fetchOptions: _, loadingAccessibilityLabel: N, module: g, onEntriesRendered: y, preprocessEntryList: S, prerollDisplayLocation: b.Nw.PROFILE_TWEETS, refreshControl: null, renderEmptyState: B, title: C })));
+            const S = g(function (e) {
+                const { featureSwitches: t } = (0, c.QZ)(),
+                    { displayBlocked: s = !1, fetchOptions: o = {}, fetchUser: n, loadingLabelFormatter: p, module: _, onEntriesRendered: b, showWithheldBannerOnMyTweets: N = !1, timelineTitleFormatter: g, timelineEmptyHeaderFormatter: S, timelineEmptyMessageFormatter: P, timelineEmptyStateButtonLabel: C, timelineEmptyStateButtonLink: F, timelineEmptyStateImageVariants: T, titleFormatter: I, userId: Z } = e,
+                    v = r.useMemo(() => (0, f.G)({ displayBlocked: s, hideReplyContextMode: t.isTrue("rweb_tweets_reply_context_hidden") ? m.j.TIMELINE : void 0, showWithheldBannerOnMyTweets: N }), [s, t, N]),
+                    O = r.useMemo(() => ({ [l.ZP.NotAuthorizedToViewUser]: { customAction: () => n(Z) } }), [n, Z]),
+                    k = r.useCallback(() => r.createElement(i.Z, { buttonLink: F, buttonText: C, header: S, imageVariants: T, message: P && P }), [S, P, C, F, T]);
+                return r.createElement(a.Z, { collectionName: y }, r.createElement(h.Z, null, r.createElement(d.Z, { title: I }), r.createElement(u.Z, { apiErrorHandlerMap: O, entryConfiguration: v, fetchOptions: o, loadingAccessibilityLabel: p, module: _, onEntriesRendered: b, preprocessEntryList: E, prerollDisplayLocation: w.Nw.PROFILE_TWEETS, refreshControl: null, renderEmptyState: k, title: g })));
             });
         },
         642692: (e, t, s) => {
@@ -540,4 +538,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-70e212e1.5732eb9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-70e212e1.6d54898a.js.map

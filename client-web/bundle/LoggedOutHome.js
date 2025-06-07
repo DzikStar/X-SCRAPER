@@ -7,10 +7,10 @@
             var o = n(202784),
                 a = n(99107),
                 i = n(272175),
-                s = n(111677);
-            const r = n.n(s)().c39b0e24,
+                r = n(111677);
+            const s = n.n(r)().c39b0e24,
                 l = ({ deepLink: e }) => {
-                    const t = r;
+                    const t = s;
                     return e ? o.createElement(i.ql, null, o.createElement("meta", { content: e, property: "al:ios:url" }), o.createElement("meta", { content: a.AF, property: "al:ios:app_store_id" }), o.createElement("meta", { content: t, property: "al:ios:app_name" }), o.createElement("meta", { content: e, property: "al:android:url" }), o.createElement("meta", { content: "com.twitter.android", property: "al:android:package" }), o.createElement("meta", { content: t, property: "al:android:app_name" })) : null;
                 };
         },
@@ -19,8 +19,8 @@
             var o = n(202784),
                 a = n(272175);
             const i = (e) => {
-                const { canonical: t, description: n = "", image: i, imageAlt: s, imageH: r, imageType: l, imageW: c, title: p, ttl: d, type: u } = e;
-                return o.createElement(a.ql, null, u ? o.createElement("meta", { content: u, property: "og:type" }) : null, t ? o.createElement("meta", { content: t, property: "og:url" }) : null, p ? o.createElement("meta", { content: p, property: "og:title" }) : null, o.createElement("meta", { content: n, property: "og:description" }), i ? o.createElement("meta", { content: i, property: "og:image" }) : null, l ? o.createElement("meta", { content: l, property: "og:image:type" }) : null, c ? o.createElement("meta", { content: c, property: "og:image:width" }) : null, r ? o.createElement("meta", { content: r, property: "og:image:height" }) : null, s ? o.createElement("meta", { content: s, property: "og:image:alt" }) : null, d ? o.createElement("meta", { content: d, property: "og:ttl" }) : null);
+                const { canonical: t, description: n = "", image: i, imageAlt: r, imageH: s, imageType: l, imageW: c, title: p, ttl: d, type: u } = e;
+                return o.createElement(a.ql, null, u ? o.createElement("meta", { content: u, property: "og:type" }) : null, t ? o.createElement("meta", { content: t, property: "og:url" }) : null, p ? o.createElement("meta", { content: p, property: "og:title" }) : null, o.createElement("meta", { content: n, property: "og:description" }), i ? o.createElement("meta", { content: i, property: "og:image" }) : null, l ? o.createElement("meta", { content: l, property: "og:image:type" }) : null, c ? o.createElement("meta", { content: c, property: "og:image:width" }) : null, s ? o.createElement("meta", { content: s, property: "og:image:height" }) : null, r ? o.createElement("meta", { content: r, property: "og:image:alt" }) : null, d ? o.createElement("meta", { content: d, property: "og:ttl" }) : null);
             };
         },
         105019: (e, t, n) => {
@@ -28,13 +28,13 @@
             var o = n(202784),
                 a = n(107267),
                 i = n(31667),
-                s = n(952793),
-                r = n(964814),
+                r = n(952793),
+                s = n(964814),
                 l = n(885824);
             function c(e) {
                 return !["/i/flow/login"].includes(e);
             }
-            const p = (0, r.Z)(function (e = { hideCookieBannerPicker: !1 }) {
+            const p = (0, s.Z)(function (e = { hideCookieBannerPicker: !1 }) {
                 const t = (function () {
                         const e = (0, a.useLocation)(),
                             [t, n] = o.useState(() => c(e.pathname));
@@ -45,17 +45,17 @@
                             t
                         );
                     })(),
-                    n = (0, s.hC)("rweb_conf_only_enabled");
+                    n = (0, r.hC)("rweb_conf_only_enabled");
                 return e.hideCookieBannerPicker || !t || n ? null : o.createElement(i.Z, null, o.createElement(l.Z, null));
             });
         },
         885824: (e, t, n) => {
-            n.d(t, { Z: () => P });
+            n.d(t, { Z: () => v });
             var o = n(202784),
                 a = n(666305),
                 i = n(2138),
-                s = n(443781),
-                r = n(325686),
+                r = n(443781),
+                s = n(325686),
                 l = n(688715),
                 c = n(731708),
                 p = n(67369),
@@ -79,7 +79,7 @@
                 return o.createElement(E, { body: t, title: S });
             }
             function E(e) {
-                return o.createElement(r.Z, { style: C.cookieComplianceMessageWrap }, o.createElement(c.ZP, { color: "buttonWhite", size: "headline2", weight: "medium" }, e.title), o.createElement(c.ZP, { color: "buttonWhite", size: "subtext2", style: C.cookieComplianceExpandedDetails }, e.body));
+                return o.createElement(s.Z, { style: C.cookieComplianceMessageWrap }, o.createElement(c.ZP, { color: "buttonWhite", size: "headline2", weight: "medium" }, e.title), o.createElement(c.ZP, { color: "buttonWhite", size: "subtext2", style: C.cookieComplianceExpandedDetails }, e.body));
             }
             const k = o.forwardRef(function (e, t) {
                     const n = (0, h.z)(),
@@ -93,12 +93,12 @@
                                 },
                             };
                         })(),
-                        { acceptAllCookies: s, isBannerOpen: l, refuseNonEssentialCookies: c } = (0, f.O)();
+                        { acceptAllCookies: r, isBannerOpen: l, refuseNonEssentialCookies: c } = (0, f.O)();
                     o.useEffect(() => {
                         l && n.scribe({ ...b.A, action: "impression" });
                     }, [n, l]);
                     const m = (0, p.pj)();
-                    return l ? o.createElement(r.Z, { ref: t, style: [C.root, m && C.rootNarrow] }, i ? o.createElement(B, null) : o.createElement(x, { onExpand: a }), o.createElement(r.Z, { style: [C.buttonContainer, m && C.buttonContainerNarrow] }, o.createElement(d.ZP, { dominantColor: "alwaysBaseGray1100", onPress: s, size: "medium", style: [C.ctaButton, m && C.ctaButtonNarrow], type: u.default.isDarkMode() ? "onMediaDominantColorFilled" : "onMediaWhiteFilled" }, _), o.createElement(d.ZP, { dominantColor: "alwaysBaseGray1100", onPress: c, size: "medium", style: [C.ctaButton, m && C.ctaButtonNarrow], type: u.default.isDarkMode() ? "onMediaDominantColorFilled" : "onMediaWhiteFilled" }, y))) : null;
+                    return l ? o.createElement(s.Z, { ref: t, style: [C.root, m && C.rootNarrow] }, i ? o.createElement(B, null) : o.createElement(x, { onExpand: a }), o.createElement(s.Z, { style: [C.buttonContainer, m && C.buttonContainerNarrow] }, o.createElement(d.ZP, { dominantColor: "alwaysBaseGray1100", onPress: r, size: "medium", style: [C.ctaButton, m && C.ctaButtonNarrow], type: u.default.isDarkMode() ? "onMediaDominantColorFilled" : "onMediaWhiteFilled" }, _), o.createElement(d.ZP, { dominantColor: "alwaysBaseGray1100", onPress: c, size: "medium", style: [C.ctaButton, m && C.ctaButtonNarrow], type: u.default.isDarkMode() ? "onMediaDominantColorFilled" : "onMediaWhiteFilled" }, y))) : null;
                 }),
                 C = u.default.create((e) => ({ root: { alignItems: "center", boxShadow: e.boxShadows.xSmall, flexDirection: "row", width: "100%", justifyContent: "space-evenly", paddingVertical: e.componentDimensions.gutterVertical, paddingHorizontal: e.componentDimensions.gutterHorizontal, backgroundColor: e.colors.buttonBlack }, rootNarrow: { flexDirection: "column", paddingVertical: e.componentDimensions.gutterVertical, paddingTop: e.spaces.space20, backgroundColor: e.colors.buttonBlack }, buttonContainer: { flexDirection: "column", marginVertical: e.spaces.space16, marginStart: e.spaces.space20 }, buttonContainerNarrow: { width: "100%", maxWidth: 550, marginStart: 0, flexDirection: "column", flexWrap: "wrap" }, ctaButton: { height: e.spaces.space40, marginBottom: e.spaces.space8, width: 420, flexGrow: 0, flexShrink: 0 }, ctaButtonNarrow: { marginStart: 0, width: "100%" }, cookieComplianceMessageWrap: { flex: 1, maxWidth: 640 }, cookieComplianceExpandedDetails: { marginTop: e.spaces.space8, marginBottom: e.spaces.space8 }, background: { backgroundColor: e.colors.buttonBlack } }));
             function Z(e, t = 100) {
@@ -141,28 +141,28 @@
                     ),
                 );
             }
-            function P(e) {
-                const { featureSwitches: t } = o.useContext(s.rC),
+            function v(e) {
+                const { featureSwitches: t } = o.useContext(r.rC),
                     n = Z(e.onHeightChange);
                 return t.isTrue("responsive_web_cookie_compliance_banner_enabled") ? o.createElement(k, { ref: n }) : null;
             }
         },
         664918: (e, t, n) => {
-            n.d(t, { D0: () => l, c$: () => p, fD: () => r, iB: () => m, jk: () => c });
+            n.d(t, { D0: () => l, c$: () => p, fD: () => s, iB: () => m, jk: () => c });
             var o = n(366097),
                 a = n(163889);
             const i = 2,
-                s = 1e3,
-                r = Object.freeze({ AcceptAllCookies: "acceptAllCookies", RefuseNonEssentialCookies: "refuseNonEssentialCookies", Invalid: "invalid", NotSet: "notSet" });
+                r = 1e3,
+                s = Object.freeze({ AcceptAllCookies: "acceptAllCookies", RefuseNonEssentialCookies: "refuseNonEssentialCookies", Invalid: "invalid", NotSet: "notSet" });
             function l(e) {
                 const t = (0, o.bL)(e);
-                return t ? (d(t) ? (u(t) ? (t[1] ? r.AcceptAllCookies : t[2] ? r.RefuseNonEssentialCookies : ((0, a.ZP)("Invalid consent signal state"), r.Invalid)) : r.NotSet) : r.Invalid) : r.NotSet;
+                return t ? (d(t) ? (u(t) ? (t[1] ? s.AcceptAllCookies : t[2] ? s.RefuseNonEssentialCookies : ((0, a.ZP)("Invalid consent signal state"), s.Invalid)) : s.NotSet) : s.Invalid) : s.NotSet;
             }
             function c(e) {
-                (0, o.kA)({ consent_version: i, text_version: s, 1: !0 }, e);
+                (0, o.kA)({ consent_version: i, text_version: r, 1: !0 }, e);
             }
             function p(e) {
-                (0, o.kA)({ consent_version: i, text_version: s, 2: !0 }, e);
+                (0, o.kA)({ consent_version: i, text_version: r, 2: !0 }, e);
             }
             function d(e) {
                 return !(e[1] && e[2]);
@@ -172,7 +172,7 @@
             }
             function m(e) {
                 const t = (0, o.bL)(e);
-                return !t || !d(t) || !u(t) || t.consent_version < i || t.text_version < s;
+                return !t || !d(t) || !u(t) || t.consent_version < i || t.text_version < r;
             }
         },
         421023: (e, t, n) => {
@@ -184,21 +184,21 @@
             var o = n(202784),
                 a = n(323265),
                 i = n(725516),
-                s = n(443781),
-                r = n(664918),
+                r = n(443781),
+                s = n(664918),
                 l = n(421023);
             function c() {
                 const e = (0, i.z)(),
-                    { featureSwitches: t } = o.useContext(s.rC),
+                    { featureSwitches: t } = o.useContext(r.rC),
                     n = !!a.ZP.getTwitterAppVersion(),
-                    [c, p] = o.useState(() => r.iB(t) && !n);
+                    [c, p] = o.useState(() => s.iB(t) && !n);
                 return {
                     isBannerOpen: c,
                     acceptAllCookies() {
-                        e.scribe({ ...l.A, action: "click", element: "accept_all" }), r.jk(t), p(!1);
+                        e.scribe({ ...l.A, action: "click", element: "accept_all" }), s.jk(t), p(!1);
                     },
                     refuseNonEssentialCookies() {
-                        e.scribe({ ...l.A, action: "click", element: "refuse_non_essential" }), r.c$(t), p(!1);
+                        e.scribe({ ...l.A, action: "click", element: "refuse_non_essential" }), s.c$(t), p(!1);
                     },
                 };
             }
@@ -208,10 +208,10 @@
             var o = n(202784),
                 a = n(500002),
                 i = n(668214),
-                s = n(997174),
-                r = n(118823);
+                r = n(997174),
+                s = n(118823);
             const l = (0, i.Z)()
-                .propsFromActions(() => ({ updateLocation: r.YF, updateTweetDetailNav: s.NH }))
+                .propsFromActions(() => ({ updateLocation: s.YF, updateTweetDetailNav: r.NH }))
                 .withAnalytics();
             class c extends o.Component {
                 componentDidMount() {
@@ -224,13 +224,13 @@
                             locationKey: a,
                         } = this.props,
                         {
-                            location: { pathname: i, search: s },
-                            locationKey: r,
+                            location: { pathname: i, search: r },
+                            locationKey: s,
                         } = e;
                     let l = !1;
                     t.pathname !== n ? (this._isInBackground = !0) : this._isInBackground && t.pathname === n && ((this._isInBackground = !1), (l = !0));
-                    const c = a || r;
-                    ((c && a !== r) || (!c && n !== i) || o !== s || l) && this._performPageUpdates(this.props);
+                    const c = a || s;
+                    ((c && a !== s) || (!c && n !== i) || o !== r || l) && this._performPageUpdates(this.props);
                 }
                 render() {
                     return this.props.children;
@@ -249,9 +249,9 @@
             var o = n(202784),
                 a = n(99107),
                 i = n(688715),
-                s = n(154003),
-                r = n(111677),
-                l = n.n(r),
+                r = n(154003),
+                s = n(111677),
+                l = n.n(s),
                 c = n(261214),
                 p = n(462775),
                 d = n(182495),
@@ -293,15 +293,15 @@
                         }),
                         (this._handleOnPress = () => {
                             const { AppleID: e } = window,
-                                { analytics: t, buttonState: n, history: o, loginReturnPath: i, personalizationSettings: s, shouldPropagateP13nSettings: r, ssoInitTokens: l } = this.props,
-                                { allowCookieUse: c, allowDeviceAccess: p, allowPartnerships: d, allowPersonalization: u } = s || {};
+                                { analytics: t, buttonState: n, history: o, loginReturnPath: i, personalizationSettings: r, shouldPropagateP13nSettings: s, ssoInitTokens: l } = this.props,
+                                { allowCookieUse: c, allowDeviceAccess: p, allowPartnerships: d, allowPersonalization: u } = r || {};
                             t.scribe({ component: "apple_sign_in", element: n, action: "click" }),
                                 e.auth
                                     .signIn()
                                     .then((e) => {
                                         t.scribe({ component: "apple_sign_in", element: n, action: "success" });
-                                        const s = e.user && e.user.name && e.user.name.firstName && e.user.name.lastName;
-                                        o.push({ pathname: "/i/flow/single_sign_on", state: { input: { cookie_personalization_settings: r && { allow_cookie_use: !!c, allow_device_personalization: !!p, allow_partnerships: !!d, allow_ads_personalization: !!u }, requested_variant: JSON.stringify({ display_name: s && `${e.user.name.firstName} ${e.user.name.lastName}`, id_token: e.authorization.id_token, provider: a.Bm.Apple, state: l[a.Bm.Apple], redirect_uri: this._isSSORedirectEnabled ? i : void 0 }) } } });
+                                        const r = e.user && e.user.name && e.user.name.firstName && e.user.name.lastName;
+                                        o.push({ pathname: "/i/flow/single_sign_on", state: { input: { cookie_personalization_settings: s && { allow_cookie_use: !!c, allow_device_personalization: !!p, allow_partnerships: !!d, allow_ads_personalization: !!u }, requested_variant: JSON.stringify({ display_name: r && `${e.user.name.firstName} ${e.user.name.lastName}`, id_token: e.authorization.id_token, provider: a.Bm.Apple, state: l[a.Bm.Apple], redirect_uri: this._isSSORedirectEnabled ? i : void 0 }) } } });
                                     })
                                     .catch((e) => {
                                         const { addToast: o } = this.props,
@@ -324,19 +324,19 @@
                     const { buttonSize: e, style: t } = this.props,
                         { isScriptLoaded: n } = this.state,
                         a = this._getButtonLabel();
-                    return this._is3rdPartyIntegrationDisabled ? null : o.createElement(s.ZP, { backgroundColor: "white", borderColor: "gray200", children: a, color: "alwaysBaseGray1100", disabled: !n, fontWeight: "normal", icon: o.createElement(c.default, null), onPress: this._handleOnPress, size: e, style: t, testID: b.Z.apple });
+                    return this._is3rdPartyIntegrationDisabled ? null : o.createElement(r.ZP, { backgroundColor: "white", borderColor: "gray200", children: a, color: "alwaysBaseGray1100", disabled: !n, fontWeight: "normal", icon: o.createElement(c.default, null), onPress: this._handleOnPress, size: e, style: t, testID: b.Z.apple });
                 }
             }
             (x.contextType = g.rC), (x.defaultProps = { buttonSize: "xLarge", buttonState: "signup" });
             const E = (0, m.ZP)((0, h.Z)(x));
         },
         826033: (e, t, n) => {
-            n.r(t), n.d(t, { CookieComplianceBannerPadder: () => oe, LoggedOutHome: () => ae, default: () => se });
+            n.r(t), n.d(t, { CookieComplianceBannerPadder: () => oe, LoggedOutHome: () => ae, default: () => re });
             var o = n(202784),
                 a = n(272175),
                 i = n(325686),
-                s = n(688715),
-                r = n(154003),
+                r = n(688715),
+                s = n(154003),
                 l = n(731708),
                 c = n(420412),
                 p = n(392237),
@@ -357,22 +357,22 @@
                 k = n(885824),
                 C = n(664918),
                 Z = n(38293),
-                P = n(652904),
-                I = n(3196),
-                v = n(487659),
+                v = n(652904),
+                P = n(3196),
+                I = n(487659),
                 T = n(911318),
-                W = n(655352),
-                D = n(182495),
-                z = n(668214),
+                z = n(655352),
+                W = n(182495),
+                D = n(668214),
                 A = n(390387);
-            const L = (0, z.Z)()
+            const L = (0, D.Z)()
                     .propsFromState(() => ({ userLanguage: A.VT }))
                     .withAnalytics({ page: "front" }),
                 N = 380,
                 M = 1.15 * N,
-                O = 500,
-                G = 1e3,
-                H = 350,
+                H = 500,
+                O = 1e3,
+                G = 350,
                 j = "signupButton",
                 F = "loginButton",
                 R = [
@@ -391,7 +391,7 @@
                 Q = m().a4298bc0,
                 ee = m().j3f49ff6,
                 te = m().d65555c2,
-                ne = (0, s.ju)("https://x.com/");
+                ne = (0, r.ju)("https://x.com/");
             function oe(e) {
                 const [t, n] = o.useState(0),
                     a = o.useCallback((e) => {
@@ -411,10 +411,10 @@
                         (this._renderGrokButton = (e, t, n) => {
                             const { analytics: a } = this.props,
                                 i = t ? ie.ctaButton : ie.ctaButtonMobile,
-                                s = () => {
+                                r = () => {
                                     a.scribe({ component: "grok_button_logout_page", element: "grok", action: "click" });
                                 };
-                            return this._showGrokButton ? (a.scribe({ component: "grok_button_logout_page", element: "grok", action: "impression" }), o.createElement(r.ZP, { icon: o.createElement(f.default, null), link: "desktop" !== t ? "https://grok.com/download" : "https://grok.com/", onPress: s, style: [i, ie.ssoButtonStyles, ie.redesignedSSOButtonStyles, { alignSelf: e }], textSizeOverride: "body" }, o.createElement(l.ZP, { style: ie.grokLabel, weight: "medium" }, "desktop" !== t ? K : X))) : null;
+                            return this._showGrokButton ? (a.scribe({ component: "grok_button_logout_page", element: "grok", action: "impression" }), o.createElement(s.ZP, { icon: o.createElement(f.default, null), link: "desktop" !== t ? "https://grok.com/download" : "https://grok.com/", onPress: r, style: [i, ie.ssoButtonStyles, ie.redesignedSSOButtonStyles, { alignSelf: e }], textSizeOverride: "body" }, o.createElement(l.ZP, { style: ie.grokLabel, weight: "medium" }, "desktop" !== t ? K : X))) : null;
                         }),
                         (this.renderBody = (e, t) => {
                             const n = "desktop" === e;
@@ -422,18 +422,18 @@
                         }),
                         (this._renderLoginSignupButtons = (e, t) => {
                             const n = e ? ie.ctaButton : ie.ctaButtonMobile,
-                                { signUpLabel: a } = (0, D.M5)(this.context.featureSwitches);
-                            return o.createElement(i.Z, null, o.createElement(o.Fragment, null, this._renderSSOButtons(e, t), o.createElement(i.Z, { style: ie.gapContainer }, o.createElement(c.Z, { label: o.createElement(l.ZP, { children: te }) })), o.createElement(r.ZP, { link: { pathname: "/i/flow/signup", state: { input: { requested_variant: JSON.stringify({ signup_type: D.mk }) } } }, onPress: this._handleSignupButton, size: "medium", style: [n, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles], testID: j, type: "brandFilled" }, a), o.createElement(l.ZP, { color: "gray700", size: "subtext3", style: [n, { width: T.fI }] }, D.K2), o.createElement(i.Z, { style: ie.signInButtonContainer }, o.createElement(l.ZP, { size: "headline2", style: n, weight: "bold" }, J), o.createElement(r.ZP, { link: "/login", onPress: this._handleLoginButton, size: "medium", style: [n, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles], testID: F, type: "brandOutlined" }, Y))));
+                                { signUpLabel: a } = (0, W.M5)(this.context.featureSwitches);
+                            return o.createElement(i.Z, null, o.createElement(o.Fragment, null, this._renderSSOButtons(e, t), o.createElement(i.Z, { style: ie.gapContainer }, o.createElement(c.Z, { label: o.createElement(l.ZP, { children: te }) })), o.createElement(s.ZP, { link: { pathname: "/i/flow/signup", state: { input: { requested_variant: JSON.stringify({ signup_type: W.mk }) } } }, onPress: this._handleSignupButton, size: "medium", style: [n, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles], testID: j, type: "brandFilled" }, a), o.createElement(l.ZP, { color: "gray700", size: "subtext3", style: [n, { width: T.fI }] }, W.K2), o.createElement(i.Z, { style: ie.signInButtonContainer }, o.createElement(l.ZP, { size: "headline2", style: n, weight: "bold" }, J), o.createElement(s.ZP, { link: "/login", onPress: this._handleLoginButton, size: "medium", style: [n, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles], testID: F, type: "brandOutlined" }, Y))));
                         }),
                         (this._renderRedesignedLoginSignupButtons = (e, t) => {
                             const n = e ? ie.ctaButton : ie.ctaButtonMobile;
-                            return o.createElement(i.Z, null, o.createElement(o.Fragment, null, this._renderSSOButtons(e, t), o.createElement(i.Z, { style: ie.redesignedGapContainer }, o.createElement(c.Z, { borderColor: "gray400", label: o.createElement(l.ZP, { children: te, color: "alwaysDarkGray700" }) })), o.createElement(i.Z, null, o.createElement(r.ZP, { fontWeight: "medium", link: { pathname: "/i/flow/signup", state: { input: { requested_variant: JSON.stringify({ signup_type: D.mk }) } } }, onPress: this._handleSignupButton, style: [n, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles, ie.redesignedSSOButtonStyles], testID: j, textSizeOverride: "body", type: this._showBlueBrandFilledButton ? "brandFilled" : "primaryFilled" }, $), o.createElement(l.ZP, { color: "gray700", size: "subtext3", style: [ie.legalText, n, { width: T.fI }] }, D.K2)), o.createElement(i.Z, { style: ie.redesignedSignInButtonContainer }, o.createElement(l.ZP, { size: "body", style: ie.labelText, weight: "bold" }, J), o.createElement(r.ZP, { backgroundColor: "light" === p.default.theme.paletteName ? "transparent" : "buttonBlack", borderColor: "light" === p.default.theme.paletteName ? void 0 : "transparent", color: "primary", fontWeight: "medium", link: "/login", onPress: this._handleLoginButton, style: [n, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles, ie.redesignedSSOButtonStyles, ie.redesignedSignInButton], testID: F }, Y))));
+                            return o.createElement(i.Z, null, o.createElement(o.Fragment, null, this._renderSSOButtons(e, t), o.createElement(i.Z, { style: ie.redesignedGapContainer }, o.createElement(c.Z, { borderColor: "gray400", label: o.createElement(l.ZP, { children: te, color: "alwaysDarkGray700" }) })), o.createElement(i.Z, null, o.createElement(s.ZP, { fontWeight: "medium", link: { pathname: "/i/flow/signup", state: { input: { requested_variant: JSON.stringify({ signup_type: W.mk }) } } }, onPress: this._handleSignupButton, style: [n, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles, ie.redesignedSSOButtonStyles], testID: j, textSizeOverride: "body", type: this._showBlueBrandFilledButton ? "brandFilled" : "primaryFilled" }, $), o.createElement(l.ZP, { color: "gray700", size: "subtext3", style: [ie.legalText, n, { width: T.fI }] }, W.K2)), o.createElement(i.Z, { style: ie.redesignedSignInButtonContainer }, o.createElement(l.ZP, { size: "body", style: ie.labelText, weight: "bold" }, J), o.createElement(s.ZP, { backgroundColor: "light" === p.default.theme.paletteName ? "transparent" : "buttonBlack", borderColor: "light" === p.default.theme.paletteName ? void 0 : "transparent", color: "primary", fontWeight: "medium", link: "/login", onPress: this._handleLoginButton, style: [n, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles, ie.redesignedSSOButtonStyles, ie.redesignedSignInButton], testID: F }, Y))));
                         }),
                         (this._renderSSOButtons = (e, t) => {
                             const { buttonState: n, isCookieCompliant: a } = this.state,
                                 i = e ? ie.ctaButton : ie.ctaButtonMobile,
-                                s = { ...ie.ssoButtonStyles, width: t };
-                            return o.createElement(o.Fragment, null, o.createElement(v.Z, { buttonSize: "medium", buttonState: n, customWidth: t, displayType: T.qv.Button, isCookieCompliant: this._cookieComplianceGingersnapEnabled && this._isPlaceholderSIWGButtonEnabled ? a : void 0, onPress: this._handleCookieCompliance, style: [i, "tablet" === e && ie.ctaButtonSplitSpacing, s] }), o.createElement(I.Z, { buttonSize: "medium", buttonState: n, style: [i, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles, ie.appleSsoButton] }));
+                                r = { ...ie.ssoButtonStyles, width: t };
+                            return o.createElement(o.Fragment, null, o.createElement(I.Z, { buttonSize: "medium", buttonState: n, customWidth: t, displayType: T.qv.Button, isCookieCompliant: this._cookieComplianceGingersnapEnabled && this._isPlaceholderSIWGButtonEnabled ? a : void 0, onPress: this._handleCookieCompliance, style: [i, "tablet" === e && ie.ctaButtonSplitSpacing, r] }), o.createElement(P.Z, { buttonSize: "medium", buttonState: n, style: [i, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles, ie.appleSsoButton] }));
                         }),
                         (this._handleSignupButton = () => {
                             const { analytics: e } = this.props;
@@ -446,29 +446,29 @@
                         (this._handleCookieCompliance = () => {
                             this.setState({ isCookieCompliant: !0 });
                         }),
-                        (this.state = { buttonState: (0, D.BG)(this.context.featureSwitches), isCookieCompliant: (0, C.D0)(this.context.featureSwitches) === C.fD.AcceptAllCookies });
+                        (this.state = { buttonState: (0, W.BG)(this.context.featureSwitches), isCookieCompliant: (0, C.D0)(this.context.featureSwitches) === C.fD.AcceptAllCookies });
                 }
                 componentDidMount() {
-                    (0, W.ZP)() && this.context.setSideNavSupport(!1);
+                    (0, z.ZP)() && this.context.setSideNavSupport(!1);
                 }
                 componentWillUnmount() {
-                    (0, W.ZP)() && this.context.setSideNavSupport(!0);
+                    (0, z.ZP)() && this.context.setSideNavSupport(!0);
                 }
                 componentDidUpdate() {
-                    (0, W.ZP)() && this.context.setSideNavSupport(!1);
+                    (0, z.ZP)() && this.context.setSideNavSupport(!1);
                 }
                 render() {
                     const { analytics: e } = this.props;
                     return o.createElement(
-                        P.Z,
+                        v.Z,
                         null,
                         o.createElement(Z.Z, { title: Q }),
                         o.createElement(x.Z, { canonical: ne, description: ee, title: Q, type: "website" }),
                         o.createElement(B.Z, { deepLink: "twitter://" }),
                         o.createElement(a.ql, null, o.createElement("meta", { content: "NOODP", name: "robots" }), o.createElement("meta", { content: ee, name: "description" })),
                         o.createElement(d.ZP, null, ({ windowHeight: t, windowWidth: n }) => {
-                            const { deviceSize: a, ssoButtonsWidth: s } = ((e) => ({ deviceSize: e > G ? "desktop" : e > O ? "tablet" : void 0, ssoButtonsWidth: e < H ? T.ND : T.fI }))(n);
-                            return o.createElement(i.Z, { style: ie.root }, this.renderBody(a, s), o.createElement(oe, null, o.createElement(w.Z, { align: "center", analytics: e, isMobile: "desktop" !== a })));
+                            const { deviceSize: a, ssoButtonsWidth: r } = ((e) => ({ deviceSize: e > O ? "desktop" : e > H ? "tablet" : void 0, ssoButtonsWidth: e < G ? T.ND : T.fI }))(n);
+                            return o.createElement(i.Z, { style: ie.root }, this.renderBody(a, r), o.createElement(oe, null, o.createElement(w.Z, { align: "center", analytics: e, isMobile: "desktop" !== a })));
                         }),
                     );
                 }
@@ -481,8 +481,8 @@
                         i.Z,
                         { style: ie.communicationItems },
                         R.map(({ Icon: t, text: n }, a) => {
-                            const s = a + 1 === e;
-                            return o.createElement(i.Z, { key: n, style: [ie.communicationItem, s && ie.communicationItemLast] }, o.createElement(t, { style: ie.communicationItemIcon }), o.createElement(l.ZP, { color: "white", size: "headline1", style: ie.communicationItemText, weight: "bold" }, n));
+                            const r = a + 1 === e;
+                            return o.createElement(i.Z, { key: n, style: [ie.communicationItem, r && ie.communicationItemLast] }, o.createElement(t, { style: ie.communicationItemIcon }), o.createElement(l.ZP, { color: "white", size: "headline1", style: ie.communicationItemText, weight: "bold" }, n));
                         }),
                     );
                 }
@@ -546,39 +546,52 @@
                     twitterIcon: { alignSelf: "flex-start", color: e.colors.brandColor, height: "3rem", paddingBottom: e.spaces.space12 },
                     twitterIconHero: { color: e.colors.brandColor, height: "50%", justifyContent: "center", maxHeight: "380px", padding: e.spaces.space32 },
                 })),
-                se = L(ae);
+                re = L(ae);
         },
         420412: (e, t, n) => {
             n.d(t, { Z: () => l });
             var o = n(202784),
                 a = n(325686),
                 i = n(235902),
-                s = n(885015),
-                r = n(392237);
+                r = n(885015),
+                s = n(392237);
             function l({ borderColor: e = "borderColor", isSlim: t = !1, label: n }) {
                 const { isWebRedesign: l } = i.ZP.useProps(),
-                    p = "borderColor" === e || "nestedBorderColor" === e ? c[e] : { backgroundColor: r.default.theme.colors[e] ?? r.default.theme.colors.borderColor };
-                return n ? o.createElement(s.Z, { style: !t && c.root, withGutter: !0 }, o.createElement(a.Z, { style: c.gapColumn }, o.createElement(a.Z, { style: [c.gap, p] })), o.createElement(a.Z, { style: c.gapText }, n), o.createElement(a.Z, { style: c.gapColumn }, o.createElement(a.Z, { style: [c.gap, p] }))) : o.createElement(a.Z, { style: [!t && c.root, l() && c.rootRedesign, c.gap, p] });
+                    p = "borderColor" === e || "nestedBorderColor" === e ? c[e] : { backgroundColor: s.default.theme.colors[e] ?? s.default.theme.colors.borderColor };
+                return n ? o.createElement(r.Z, { style: !t && c.root, withGutter: !0 }, o.createElement(a.Z, { style: c.gapColumn }, o.createElement(a.Z, { style: [c.gap, p] })), o.createElement(a.Z, { style: c.gapText }, n), o.createElement(a.Z, { style: c.gapColumn }, o.createElement(a.Z, { style: [c.gap, p] }))) : o.createElement(a.Z, { style: [!t && c.root, l() && c.rootRedesign, c.gap, p] });
             }
-            const c = r.default.create((e) => ({ borderColor: { backgroundColor: r.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: r.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
+            const c = s.default.create((e) => ({ borderColor: { backgroundColor: s.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: s.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
         },
         885015: (e, t, n) => {
             n.d(t, { Z: () => c });
             var o = n(807896),
                 a = n(202784),
                 i = n(325686),
-                s = n(392237);
-            class r extends a.Component {
+                r = n(392237);
+            class s extends a.Component {
                 render() {
-                    const { children: e, style: t, withGutter: n, ...s } = this.props,
-                        r = a.Children.map(e, (e) => e && a.cloneElement(e, { style: [e.props.style, l.column, n && l.withGutterColumn] }));
-                    return a.createElement(i.Z, (0, o.Z)({ style: [t, l.root, n && l.withGutter] }, s), r);
+                    const { children: e, style: t, withGutter: n, ...r } = this.props,
+                        s = a.Children.map(e, (e) => e && a.cloneElement(e, { style: [e.props.style, l.column, n && l.withGutterColumn] }));
+                    return a.createElement(i.Z, (0, o.Z)({ style: [t, l.root, n && l.withGutter] }, r), s);
                 }
             }
-            r.defaultProps = { withGutter: !1 };
-            const l = s.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
-                c = r;
+            s.defaultProps = { withGutter: !1 };
+            const l = r.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
+                c = s;
+        },
+        748138: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => l });
+            var o = n(202784),
+                a = n(890601),
+                i = n(783427),
+                r = n(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LoggedOutHome.a109f18a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LoggedOutHome.9ef7720a.js.map

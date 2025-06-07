@@ -330,7 +330,7 @@
                 h = n(655352),
                 _ = n(163889),
                 p = n(514639),
-                g = n(412450),
+                g = n(351990),
                 f = n(441484),
                 y = n(99387),
                 b = n(743080),
@@ -788,7 +788,7 @@
         137882: (e, t, n) => {
             n.d(t, { b: () => r, v: () => s });
             n(543673), n(240753), n(128399);
-            var a = n(412450);
+            var a = n(351990);
             const r = ({ txId: e }) => {
                     const { supportUrl: t } = (0, a.Z)(),
                         n = new URL(t);
@@ -986,10 +986,9 @@
                     { amount_local_micro: n, currency: o, details: c, transaction_status: i, transaction_type: l } = t ?? {},
                     d = c?.sender_results?.result,
                     u = d?.core?.name ?? "",
-                    m = parseFloat(n),
-                    h = n ? (0, a.p2)({ amount: m, currency: o }) : null,
-                    _ = (0, r.Z)({ senderId: d?.rest_id });
-                return [(0, a.M9)({ status: i, transactionType: l, isViewerSender: _ }), u && h ? { name: u, formattedAmount: h } : null];
+                    m = n ? (0, a.vw)({ amount: n, currency: o }) : null,
+                    h = (0, r.Z)({ senderId: d?.rest_id });
+                return [(0, a.M9)({ status: i, transactionType: l, isViewerSender: h }), u && m ? { name: u, formattedAmount: m } : null];
             };
         },
         825941: (e, t, n) => {
@@ -1055,4 +1054,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.f603680a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.78acbd6a.js.map

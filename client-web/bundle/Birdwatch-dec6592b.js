@@ -612,7 +612,7 @@
                 },
                 d = (0, l.Z)()
                     .propsFromState(() => ({ tweetFetchStatus: s, userAlias: r.OV }))
-                    .propsFromActions(() => ({ addToast: o.fz, createAppeal: r.gP, createLocalApiErrorHandler: (0, n.zr)("BIRDWATCH_SCREEN"), deleteNote: i.f, fetchTweet: c.Z.fetchOneIfNeeded, fetchAuthenticatedUserProfileIfNeeded: r.eY, fetchNoteTranslation: r.EW }))
+                    .propsFromActions(() => ({ addToast: o.fz, createAppeal: r.gP, createLocalApiErrorHandler: (0, n.zr)("BIRDWATCH_SCREEN"), deleteNote: i.f, fetchTweet: c.Z.fetchOneIfNeeded, fetchAuthenticatedUserProfileIfNeeded: r.eY, fetchNoteTranslation: r.EW, fetchStreamedGrokNoteTranslation: r.C7 }))
                     .withAnalytics({ component: "birdwatch_note" });
         },
         357972: (e, t, a) => {
@@ -782,4 +782,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-dec6592b.2819be8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-dec6592b.c896a63a.js.map

@@ -454,8 +454,8 @@
                 abstractKey: null,
                 hash: "43e69f78d091b0224f6cc6b3fde7ed6e",
             };
-            const b = f;
-            var h = a(443781),
+            const h = f;
+            var b = a(443781),
                 k =
                     (a(136728),
                     {
@@ -499,9 +499,9 @@
                 C = a(67369),
                 K = a(731708),
                 w = a(174326),
-                v = a(392237),
-                x = a(111677),
-                L = a.n(x),
+                x = a(392237),
+                v = a(111677),
+                L = a.n(v),
                 T = {
                     argumentDefinitions: [],
                     kind: "Fragment",
@@ -521,18 +521,18 @@
                     abstractKey: null,
                     hash: "e12f018382d560e8d2a737488ee07147",
                 };
-            const E = T;
-            var I = a(9577);
-            const M = E,
+            const I = T;
+            var E = a(9577);
+            const M = I,
                 Z = ({ isVerifiedOrg: e, isViewerFollowsUser: l, jobId: a, jobIndex: n, jobRef: t, profileId: i }) => {
                     const r = u()(M, t);
-                    return s.createElement(I.Z, { formattedSalary: r.formatted_salary, id: a, isVerifiedOrg: e, isViewerFollowsUser: l, jobIndex: n, location: r.location, maxSalary: r.salary_max, minSalary: r.salary_min, profileId: i, redirectUrl: r.redirect_url, salaryInterval: r.salary_interval, title: r.title || "" });
+                    return s.createElement(E.Z, { formattedSalary: r.formatted_salary, id: a, isVerifiedOrg: e, isViewerFollowsUser: l, jobIndex: n, location: r.location, maxSalary: r.salary_max, minSalary: r.salary_min, profileId: i, redirectUrl: r.redirect_url, salaryInterval: r.salary_interval, title: r.title || "" });
                 },
                 P = s.memo(Z);
             var D = a(725516),
-                j = a(272590);
-            const R = L().ddee8ae2,
-                B = L().d2a04c68,
+                B = a(272590);
+            const j = L().ddee8ae2,
+                R = L().d2a04c68,
                 U = S,
                 A = ({ profileSpotlight: e, user: l }) => {
                     const [a, n] = s.useState(0),
@@ -542,11 +542,11 @@
                         c = Boolean(l?.relationship_perspectives?.following),
                         d = u()(U, e);
                     s.useEffect(() => {
-                        d && d.data?.featured_jobs_results?.length && r.scribe({ ...(0, j.yt)("jobs_module", "impression"), data: { ...(0, j.RV)(void 0, void 0, c, o) } });
+                        d && d.data?.featured_jobs_results?.length && r.scribe({ ...(0, B.yt)("jobs_module", "impression"), data: { ...(0, B.RV)(void 0, void 0, c, o) } });
                     }, [r, c, d, o]);
                     const m = s.useCallback(
                             ({ next: e, previous: l }) => {
-                                (a === e && t === l) || (a !== e && n(e), t !== l && i(l), r.scribe({ ...(0, j.yt)("jobs_module", "scroll"), data: { ...(0, j.RV)(void 0, void 0, c, o) } }));
+                                (a === e && t === l) || (a !== e && n(e), t !== l && i(l), r.scribe({ ...(0, B.yt)("jobs_module", "scroll"), data: { ...(0, B.RV)(void 0, void 0, c, o) } }));
                             },
                             [r, c, a, t, o],
                         ),
@@ -557,39 +557,39 @@
                                 if (!g[e]) {
                                     if (l >= 0.5) {
                                         const l = e === d?.data?.featured_jobs_results?.length;
-                                        r.scribe({ ...(0, j.yt)("jobs_module", "impression", l ? "view_more" : "job"), data: { ...(0, j.RV)(a, e, c, o) } });
+                                        r.scribe({ ...(0, B.yt)("jobs_module", "impression", l ? "view_more" : "job"), data: { ...(0, B.RV)(a, e, c, o) } });
                                     }
                                     p((a) => ({ ...a, [e]: { min: l } }));
                                 }
                                 var n;
                                 if (((n = e), 1 === l && g[n]?.min < 0.5)) {
                                     const l = e === d?.data?.featured_jobs_results?.length;
-                                    r.scribe({ ...(0, j.yt)("jobs_module", "impression", l ? "view_more" : "job"), data: { ...(0, j.RV)(d?.data?.featured_jobs_results?.[e]?.rest_id, e, c, o) } }), p((l) => ({ ...l, [e]: { min: 1 } }));
+                                    r.scribe({ ...(0, B.yt)("jobs_module", "impression", l ? "view_more" : "job"), data: { ...(0, B.RV)(d?.data?.featured_jobs_results?.[e]?.rest_id, e, c, o) } }), p((l) => ({ ...l, [e]: { min: 1 } }));
                                 } else g[e]?.min > l && p((a) => ({ ...a, [e]: { min: l } }));
                             },
                             [r, g, c, d.data?.featured_jobs_results, o],
                         ),
                         { featured_jobs_results: _ } = d.data,
                         f = s.useCallback(() => {
-                            r.scribe({ ...(0, j.yt)("jobs_module", "click", "view_more"), data: { ...(0, j.RV)(void 0, void 0, c, o) } });
+                            r.scribe({ ...(0, B.yt)("jobs_module", "click", "view_more"), data: { ...(0, B.RV)(void 0, void 0, c, o) } });
                         }, [r, c, o]),
-                        b = l.core?.screen_name ? { pathname: `/${l.core.screen_name}/jobs`, external: !1 } : void 0,
-                        h = (0, C.yu)();
+                        h = l.core?.screen_name ? { pathname: `/${l.core.screen_name}/jobs`, external: !1 } : void 0,
+                        b = (0, C.yu)();
                     if (0 === _?.length) return null;
                     const k = [z.spotlightCard];
-                    return h ? k.push(z.mobileSpotlightCard) : h || k.push(z.desktopSpotlightCard), s.createElement(F.Z, { testID: "jobs" }, s.createElement(F.Z, { style: z.header }, s.createElement(K.ZP, { color: "text", size: "subtext1", weight: "bold" }, B), s.createElement(K.ZP, { link: b, onClick: f, size: "subtext1" }, R)), s.createElement(w.Z, { "aria-label": "Jobs carousel", childrenStyle: z.carouselChild, onScroll: m, onVisibleRangeChange: y, scrollToCenter: !0, showNavButtonsOnHover: !1 }, ((e) => _?.map((a, n) => (a.result?.core ? s.createElement(F.Z, { key: a.rest_id, style: e, testID: `job-tile-${n}` }, s.createElement(P, { isVerifiedOrg: !!l.is_verified_organization, isViewerFollowsUser: c, jobId: a.rest_id, jobIndex: n, jobRef: a.result.core, profileId: o })) : null)) ?? [])(k)));
+                    return b ? k.push(z.mobileSpotlightCard) : b || k.push(z.desktopSpotlightCard), s.createElement(F.Z, { testID: "jobs" }, s.createElement(F.Z, { style: z.header }, s.createElement(K.ZP, { color: "text", size: "subtext1", weight: "bold" }, R), s.createElement(K.ZP, { link: h, onClick: f, size: "subtext1" }, j)), s.createElement(w.Z, { "aria-label": "Jobs carousel", childrenStyle: z.carouselChild, onScroll: m, onVisibleRangeChange: y, scrollToCenter: !0, showNavButtonsOnHover: !1 }, ((e) => _?.map((a, n) => (a.result?.core ? s.createElement(F.Z, { key: a.rest_id, style: e, testID: `job-tile-${n}` }, s.createElement(P, { isVerifiedOrg: !!l.is_verified_organization, isViewerFollowsUser: c, jobId: a.rest_id, jobIndex: n, jobRef: a.result.core, profileId: o })) : null)) ?? [])(k)));
                 },
-                z = v.default.create((e) => ({ header: { display: "flex", flexDirection: "row", justifyContent: "space-between" }, carouselChild: { height: "auto" }, spotlightCard: { borderRadius: e.borderRadii.large, boxShadow: e.boxShadows.xSmall, marginVertical: e.spaces.space16, marginHorizontal: `calc(${e.spaces.space4} + ${e.spaces.space2})`, overflow: "hidden", flexGrow: 1 }, desktopSpotlightCard: { minWidth: "150px", maxWidth: "300px" }, mobileSpotlightCard: { minWidth: "150px", maxWidth: "200px" } })),
+                z = x.default.create((e) => ({ header: { display: "flex", flexDirection: "row", justifyContent: "space-between" }, carouselChild: { height: "auto" }, spotlightCard: { borderRadius: e.borderRadii.large, boxShadow: e.boxShadows.xSmall, marginVertical: e.spaces.space16, marginHorizontal: `calc(${e.spaces.space4} + ${e.spaces.space2})`, overflow: "hidden", flexGrow: 1 }, desktopSpotlightCard: { minWidth: "150px", maxWidth: "300px" }, mobileSpotlightCard: { minWidth: "150px", maxWidth: "200px" } })),
                 O = s.memo(A),
-                J = b,
+                J = h,
                 V = ({ profileSpotlightRef: e, userRef: l }) => {
-                    const { featureSwitches: a } = s.useContext(h.rC),
+                    const { featureSwitches: a } = s.useContext(b.rC),
                         { $fragmentType: n, ...t } = u()(J, l);
                     if (!t) return null;
                     return a.isTrue("recruiting_jobs_list_consumption_enabled") ? s.createElement(O, { profileSpotlight: e, user: t }) : null;
                 };
-            var $,
-                W = {
+            var N,
+                $ = {
                     argumentDefinitions: [],
                     kind: "Fragment",
                     metadata: null,
@@ -674,7 +674,7 @@
                                             kind: "LinkedField",
                                             name: "opens",
                                             plural: !1,
-                                            selections: ($ = [
+                                            selections: (N = [
                                                 { alias: null, args: null, kind: "ScalarField", name: "day", storageKey: null },
                                                 {
                                                     alias: null,
@@ -692,7 +692,7 @@
                                             ]),
                                             storageKey: null,
                                         },
-                                        { alias: null, args: null, concreteType: "OpenCloseTimeNext", kind: "LinkedField", name: "closes", plural: !1, selections: $, storageKey: null },
+                                        { alias: null, args: null, concreteType: "OpenCloseTimeNext", kind: "LinkedField", name: "closes", plural: !1, selections: N, storageKey: null },
                                     ],
                                     storageKey: null,
                                 },
@@ -704,19 +704,19 @@
                     type: "AboutModule",
                     abstractKey: null,
                 };
-            W.hash = "3da47343f1756b0c4208e4edde6a08ca";
-            const N = W;
+            $.hash = "3da47343f1756b0c4208e4edde6a08ca";
+            const W = $;
             var G = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "LocationSpotlight_user", selections: [{ alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }], type: "User", abstractKey: null, hash: "9c8dfb09cccf9c8338bfa02a25fe4c6b" };
             const H = G;
             var Q = a(617041);
             const q = L().jaaa8984,
-                X = H,
-                Y = N,
+                Y = H,
+                X = W,
                 ee = ({ profileSpotlightRef: e, showLabel: l = !0, userRef: a }) => {
-                    const { featureSwitches: n } = s.useContext(h.rC),
+                    const { featureSwitches: n } = s.useContext(b.rC),
                         t = n.isTrue("responsive_web_location_spotlight_v1_display"),
-                        { $fragmentType: i, ...r } = u()(X, a),
-                        { $fragmentType: o, ...c } = u()(Y, e);
+                        { $fragmentType: i, ...r } = u()(Y, a),
+                        { $fragmentType: o, ...c } = u()(X, e);
                     return t ? s.createElement(Q.Z, { label: l ? q : void 0, location: c, user: r }) : null;
                 };
             var le = {
@@ -865,8 +865,8 @@
             const ye = L().h10bb33c,
                 _e = L().j24c37b2,
                 fe = L().dda5d96a,
-                be = ({ onScribeEvent: e }) => ({
-                    confirmation: { confirmButtonType: "primary", headline: ye, label: _e, text: s.createElement(s.Fragment, null, s.createElement(K.ZP, { style: he.textFormat }, s.createElement(L().I18NFormatMessage, { $i18n: "i8197603" }, s.createElement(K.ZP, { link: (0, ge.ju)("https://help.x.com/forms/ipi") }, L().fca46f40))), s.createElement(K.ZP, null, s.createElement(L().I18NFormatMessage, { $i18n: "a21f2f79" }, s.createElement(K.ZP, { link: (0, ge.ju)("https://help.x.com/rules-and-policies/twitter-report-violation") }, L().c71a053b)))), withCancelButton: false },
+                he = ({ onScribeEvent: e }) => ({
+                    confirmation: { confirmButtonType: "primary", headline: ye, label: _e, text: s.createElement(s.Fragment, null, s.createElement(K.ZP, { style: be.textFormat }, s.createElement(L().I18NFormatMessage, { $i18n: "i8197603" }, s.createElement(K.ZP, { link: (0, ge.ju)("https://help.x.com/forms/ipi") }, L().fca46f40))), s.createElement(K.ZP, null, s.createElement(L().I18NFormatMessage, { $i18n: "a21f2f79" }, s.createElement(K.ZP, { link: (0, ge.ju)("https://help.x.com/rules-and-policies/twitter-report-violation") }, L().c71a053b)))), withCancelButton: false },
                     Icon: pe.default,
                     onClick: () => {
                         e?.();
@@ -874,20 +874,20 @@
                     testID: "Report Product Action Item",
                     text: fe,
                 }),
-                he = v.default.create((e) => ({ textFormat: { display: "inline-block", marginBottom: e.spaces.space20 } })),
-                ke = v.default.create((e) => ({ card: { display: "flex", flexDirection: "row" }, cardImage: { height: "92px", width: "92px" }, largeCardImage: { height: "119px", width: "119px" }, xLargeCardImage: { height: "129px", width: "129px" }, cardText: { display: "flex", flex: 1, flexDirection: "column", justifyContent: "space-between", margin: e.spaces.space12, marginEnd: 0, textAlign: "start", width: "min-content" }, iconFlag: { marginEnd: 0, marginStart: e.spaces.space12, marginVertical: 0 }, iconMore: { height: "1em", width: "1em" }, imgContainer: { borderRadius: `calc(${e.borderRadii.medium} + (${e.borderRadii.xSmall} / 2))`, margin: e.spaces.space4, marginEnd: 0, overflow: "hidden" }, contentBackground: { backgroundColor: e.colors.cellBackground }, darkModeContentBackground: { backgroundColor: e.colors.gray0 }, menuControl: { transform: "rotate(90deg)" }, menuControlContainer: { padding: "0.5em", marginTop: e.spaces.space4, marginEnd: e.spaces.space4, marginStart: e.spaces.space8 }, textLabel: { display: "block", minWidth: "116px" }, cardSectionWrapper: { display: "flex", flexDirection: "column" }, textOverflow: { overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }, productCategory: { marginBottom: e.spaces.space12 }, priceGap: { paddingEnd: e.spaces.space4 }, priceTruncate: { display: "inline-block" }, priceWrap: { display: "flex", flexWrap: "wrap" }, productName: { marginBottom: e.spaces.space4 }, salePriceOverride: { color: e.colors.gray700, textDecorationLine: "line-through", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" } })),
+                be = x.default.create((e) => ({ textFormat: { display: "inline-block", marginBottom: e.spaces.space20 } })),
+                ke = x.default.create((e) => ({ card: { display: "flex", flexDirection: "row" }, cardImage: { height: "92px", width: "92px" }, largeCardImage: { height: "119px", width: "119px" }, xLargeCardImage: { height: "129px", width: "129px" }, cardText: { display: "flex", flex: 1, flexDirection: "column", justifyContent: "space-between", margin: e.spaces.space12, marginEnd: 0, textAlign: "start", width: "min-content" }, iconFlag: { marginEnd: 0, marginStart: e.spaces.space12, marginVertical: 0 }, iconMore: { height: "1em", width: "1em" }, imgContainer: { borderRadius: `calc(${e.borderRadii.medium} + (${e.borderRadii.xSmall} / 2))`, margin: e.spaces.space4, marginEnd: 0, overflow: "hidden" }, contentBackground: { backgroundColor: e.colors.cellBackground }, darkModeContentBackground: { backgroundColor: e.colors.gray0 }, menuControl: { transform: "rotate(90deg)" }, menuControlContainer: { padding: "0.5em", marginTop: e.spaces.space4, marginEnd: e.spaces.space4, marginStart: e.spaces.space8 }, textLabel: { display: "block", minWidth: "116px" }, cardSectionWrapper: { display: "flex", flexDirection: "column" }, textOverflow: { overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }, productCategory: { marginBottom: e.spaces.space12 }, priceGap: { paddingEnd: e.spaces.space4 }, priceTruncate: { display: "inline-block" }, priceWrap: { display: "flex", flexWrap: "wrap" }, productName: { marginBottom: e.spaces.space4 }, salePriceOverride: { color: e.colors.gray700, textDecorationLine: "line-through", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" } })),
                 Se = (e) => {
                     const { category: l, imgUrl: a, isViewerFollowsUser: n, price: t, productIndex: i, productKey: r, productLink: o, productName: u, profileId: c, salePrice: d } = e,
                         m = (0, D.z)(),
                         { ThemeScaleNames: g } = se.default,
-                        p = (e) => v.default.theme.scale === g[e],
+                        p = (e) => x.default.theme.scale === g[e],
                         y = p("xSmall") || p("small") || p("normal"),
                         _ = p("large") || p("xLarge"),
                         f = (e) => (0, de.x)({ amount: parseInt(e.micro_value, 10), currencyCode: e.currency_code.toUpperCase(), formatter: 1e6 }),
-                        b = () => {
-                            m.scribe({ ...(0, j.UJ)("shop_module", "click", "report_product"), data: { items: [{ commerce_details: { merchant_id: c, product_key: r, product_index: i } }] } });
+                        h = () => {
+                            m.scribe({ ...(0, B.UJ)("shop_module", "click", "report_product"), data: { items: [{ commerce_details: { merchant_id: c, product_key: r, product_index: i } }] } });
                         },
-                        h = (e) => s.createElement(me.default, { actionItems: [be({ onScribeEvent: b })], dividerIndices: [1], onClose: e });
+                        b = (e) => s.createElement(me.default, { actionItems: [he({ onScribeEvent: h })], dividerIndices: [1], onClose: e });
                     if (a && o) {
                         const e = String(o);
                         return s.createElement(
@@ -895,14 +895,14 @@
                             {
                                 link: e,
                                 onClick: (e) => {
-                                    m.scribe({ ...(0, j.UJ)("shop_module", "click", "product"), data: { items: [{ commerce_details: { profile_id: c, product_index: i, product_key: r, is_viewer_follows_user: n } }] } });
+                                    m.scribe({ ...(0, B.UJ)("shop_module", "click", "product"), data: { items: [{ commerce_details: { profile_id: c, product_index: i, product_key: r, is_viewer_follows_user: n } }] } });
                                 },
                                 role: "link",
-                                style: [ke.card, v.default.isDarkMode() ? ke.darkModeContentBackground : ke.contentBackground],
+                                style: [ke.card, x.default.isDarkMode() ? ke.darkModeContentBackground : ke.contentBackground],
                             },
                             s.createElement(F.Z, { style: ke.imgContainer }, s.createElement(ue.Z, { "aria-label": "product", source: { uri: a }, style: [ke.cardImage, p("large") && ke.largeCardImage, p("xLarge") && ke.xLargeCardImage] })),
                             s.createElement(F.Z, { style: ke.cardText }, s.createElement(F.Z, { style: ke.cardSectionWrapper }, s.createElement(K.ZP, { size: "body", style: [ke.textLabel, ke.productName, ke.textOverflow], weight: "bold" }, u), s.createElement(K.ZP, { color: "gray700", size: "subtext2", style: [ke.textLabel, ke.productCategory, ke.textOverflow], testID: "category", weight: "normal" }, l || " ")), s.createElement(F.Z, { style: ke.cardSectionWrapper }, ((e, l) => (null == l || l?.micro_value > e.micro_value ? s.createElement(K.ZP, { size: "subtext1", style: ke.textOverflow, weight: "bold" }, f(e)) : s.createElement(K.ZP, { numberOfLines: 2, style: [y ? ke.textOverflow : "", _ ? ke.priceWrap : ke.priceTruncate] }, s.createElement(K.ZP, { numberOfLines: 1, size: "subtext1", style: ke.priceGap, weight: "bold" }, f(l)), s.createElement(K.ZP, { numberOfLines: 1, size: "subtext1", style: ke.salePriceOverride, weight: "normal" }, f(e)))))(t, d))),
-                            s.createElement(F.Z, { style: ke.menuControlContainer }, s.createElement(ce.Z, { renderActionMenu: h, style: ke.menuControl })),
+                            s.createElement(F.Z, { style: ke.menuControlContainer }, s.createElement(ce.Z, { renderActionMenu: b, style: ke.menuControl })),
                         );
                     }
                     return null;
@@ -929,64 +929,64 @@
                         r = te,
                         o = u()(r, e);
                     s.useEffect(() => {
-                        o && o.data?.items.length && n.scribe({ ...(0, j.UJ)("shop_module", "impression"), data: { items: [{ commerce_details: { profile_id: t, is_viewer_follows_user: i } }] } });
+                        o && o.data?.items.length && n.scribe({ ...(0, B.UJ)("shop_module", "impression"), data: { items: [{ commerce_details: { profile_id: t, is_viewer_follows_user: i } }] } });
                     }, [n, i, t, o]);
                     const [c, d] = s.useState(0),
                         [m, g] = s.useState(0),
                         p = s.useCallback(
                             ({ next: e, previous: l }) => {
-                                (c === e && m === l) || (c !== e && d(e), m !== l && g(l), n.scribe({ ...(0, j.UJ)("shop_module", "scroll"), data: { items: [{ commerce_details: { profile_id: t, is_viewer_follows_user: i } }] } }));
+                                (c === e && m === l) || (c !== e && d(e), m !== l && g(l), n.scribe({ ...(0, B.UJ)("shop_module", "scroll"), data: { items: [{ commerce_details: { profile_id: t, is_viewer_follows_user: i } }] } }));
                             },
                             [n, i, c, m, t],
                         ),
                         [y, _] = s.useState({}),
                         f = s.useCallback(
                             ({ index: e, intersectionRatio: l }) => {
-                                y[e] || (l >= 0.5 && n.scribe({ ...(0, j.UJ)("shop_module", "impression", "product"), data: { items: [{ commerce_details: { profile_id: t, product_index: e, product_key: o?.data.items[e].product_core_data?.product_metadata.product_key, is_viewer_follows_user: i } }] } }), _((a) => ({ ...a, [e]: { min: l } })));
+                                y[e] || (l >= 0.5 && n.scribe({ ...(0, B.UJ)("shop_module", "impression", "product"), data: { items: [{ commerce_details: { profile_id: t, product_index: e, product_key: o?.data.items[e].product_core_data?.product_metadata.product_key, is_viewer_follows_user: i } }] } }), _((a) => ({ ...a, [e]: { min: l } })));
                                 var a;
-                                ((a = e), 1 === l && y[a]?.min < 0.5) ? (n.scribe({ ...(0, j.UJ)("shop_module", "impression", "product"), data: { items: [{ commerce_details: { profile_id: t, product_index: e, product_key: o?.data.items[e].product_core_data?.product_metadata.product_key, is_viewer_follows_user: i } }] } }), _((l) => ({ ...l, [e]: { min: 1 } }))) : y[e]?.min > l && _((a) => ({ ...a, [e]: { min: l } }));
+                                ((a = e), 1 === l && y[a]?.min < 0.5) ? (n.scribe({ ...(0, B.UJ)("shop_module", "impression", "product"), data: { items: [{ commerce_details: { profile_id: t, product_index: e, product_key: o?.data.items[e].product_core_data?.product_metadata.product_key, is_viewer_follows_user: i } }] } }), _((l) => ({ ...l, [e]: { min: 1 } }))) : y[e]?.min > l && _((a) => ({ ...a, [e]: { min: l } }));
                             },
                             [n, y, i, t, o?.data.items],
                         ),
-                        b = o && o.data.items.length && a && null !== a.relationship_perspectives?.following,
-                        h = (0, C.yu)(),
+                        h = o && o.data.items.length && a && null !== a.relationship_perspectives?.following,
+                        b = (0, C.yu)(),
                         k = 1 === o?.data?.items.length;
-                    return b
+                    return h
                         ? s.createElement(
                               F.Z,
                               { testID: "Shop" },
                               s.createElement(
                                   w.Z,
-                                  { "aria-label": L().b5fea270, childrenStyle: k && ve.singleCard, isLocked: k, onScroll: p, onVisibleRangeChange: f, scrollToCenter: !0, showNavButtonsOnHover: !1 },
+                                  { "aria-label": L().b5fea270, childrenStyle: k && xe.singleCard, isLocked: k, onScroll: p, onVisibleRangeChange: f, scrollToCenter: !0, showNavButtonsOnHover: !1 },
                                   ((e, l) => {
                                       const { items: a } = o.data;
                                       return a?.map((a, n) => {
                                           if (a.product_core_data) {
                                               const r = a.product_core_data?.product_metadata.product_key;
-                                              return s.createElement(F.Z, { key: n, style: [ve.spotlightCard, l ? "" : e ? ve.mobileSpotlightCard : ve.desktopSpotlightCard] }, s.createElement(Ke, { isMobileLayout: e, isViewerFollowsUser: i, productIndex: n, productKey: r, productTile: a.product_core_data, profileId: t }));
+                                              return s.createElement(F.Z, { key: n, style: [xe.spotlightCard, l ? "" : e ? xe.mobileSpotlightCard : xe.desktopSpotlightCard] }, s.createElement(Ke, { isMobileLayout: e, isViewerFollowsUser: i, productIndex: n, productKey: r, productTile: a.product_core_data, profileId: t }));
                                           }
                                           return null;
                                       });
-                                  })(h, k),
+                                  })(b, k),
                               ),
                           )
                         : null;
                 },
-                ve = v.default.create((e) => ({ spotlightCard: { borderRadius: e.borderRadii.large, boxShadow: e.boxShadows.xSmall, minHeight: "100px", marginVertical: e.spaces.space16, marginHorizontal: `calc(${e.spaces.space4} + ${e.spaces.space2})`, overflow: "hidden" }, desktopSpotlightCard: { maxWidth: "350px" }, mobileSpotlightCard: { maxWidth: "304px" }, singleCard: { flex: 1 } })),
-                xe = s.memo(we),
+                xe = x.default.create((e) => ({ spotlightCard: { borderRadius: e.borderRadii.large, boxShadow: e.boxShadows.xSmall, minHeight: "100px", marginVertical: e.spaces.space16, marginHorizontal: `calc(${e.spaces.space4} + ${e.spaces.space2})`, overflow: "hidden" }, desktopSpotlightCard: { maxWidth: "350px" }, mobileSpotlightCard: { maxWidth: "304px" }, singleCard: { flex: 1 } })),
+                ve = s.memo(we),
                 Le = ae,
                 Te = ({ profileSpotlightRef: e, showLabel: l = !0, userRef: a }) => {
-                    const { featureSwitches: n } = s.useContext(h.rC),
+                    const { featureSwitches: n } = s.useContext(b.rC),
                         t = n.isTrue("responsive_web_commerce_shop_spotlight_enabled"),
                         { $fragmentType: i, ...r } = u()(Le, a);
-                    return t ? s.createElement(xe, { profileSpotlight: e, showLabel: l, user: r }) : null;
+                    return t ? s.createElement(ve, { profileSpotlight: e, showLabel: l, user: r }) : null;
                 },
-                Ee = r,
-                Ie = t,
+                Ie = r,
+                Ee = t,
                 Me = Object.freeze({ Location: "AboutModule", Shop: "ShopModule", Communities: "CommunitiesModule", Jobs: "JobsModule" });
             function Ze({ profileSpotlightRef: e, setIsRenderingProfileSpotlight: l, showLabel: a = !0, userRef: n }) {
-                const t = u()(Ee, n),
-                    i = u()(Ie, e);
+                const t = u()(Ie, n),
+                    i = u()(Ee, e);
                 switch (
                     (s.useEffect(() => {
                         const e = [Me.Shop, Me.Jobs, Me.Communities].includes(i.__typename);
@@ -1009,7 +1009,7 @@
             const Pe = s.memo(Ze);
         },
         719146: (e, l, a) => {
-            a.d(l, { Z: () => h });
+            a.d(l, { Z: () => b });
             var n = a(699418),
                 t = a(202784),
                 i = a(325686),
@@ -1025,12 +1025,12 @@
             const y = c().f277e94a,
                 _ = c().h02a6fe6,
                 f = n.Z,
-                b = ({ community: e, showLabel: l = !0, showViewAction: a = !1 }) => {
+                h = ({ community: e, showLabel: l = !0, showViewAction: a = !1 }) => {
                     const n = s()(f, e),
                         r = t.useMemo(() => ({ label: l ? _ : void 0, headline: n.name, actions: a ? [{ label: y, link: `/i/communities/${n.rest_id}` }] : [], media: t.createElement(g.Z, { community: n }), bodyElements: [n.description ? { elements: [{ text: n.description, numberOfLines: 2 }] } : null], link: a ? void 0 : `/i/communities/${n.rest_id}` }), [n, l, a]);
                     return t.createElement(p.Z, r, t.createElement(i.Z, { style: k.members }, t.createElement(d.Z, { community: n, style: k.facePile, userAvatarSize: "medium" }), t.createElement(m.Z, { community: n, onMedia: !1, style: k.memberCount })));
                 },
-                h = t.memo(b),
+                b = t.memo(h),
                 k = o.default.create((e) => ({ members: { display: "flex", flexDirection: "row", alignItems: "center", columnGap: e.spaces.space8, flexWrap: "wrap", paddingTop: e.spaces.space4 }, facePile: { flexBasis: "auto" }, memberCount: { flexBasis: "auto" } }));
         },
         9577: (e, l, a) => {
@@ -1046,13 +1046,13 @@
                 d = a(725516),
                 m = a(272590);
             const g = r.default.create((e) => ({ card: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space20, height: "100%" }, cardLayout: { display: "flex", flexDirection: "column", gap: e.spaces.space8, height: "100%" }, cardMeta: { display: "flex", flexDirection: "column", gap: 8 }, cardSubtext: { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: 12 }, withIcon: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4 }, contentBackground: { backgroundColor: e.colors.cellBackground }, darkModeContentBackground: { backgroundColor: e.colors.gray0 } })),
-                p = ({ formattedSalary: e, id: l, isVerifiedOrg: a, isViewerFollowsUser: p, jobIndex: y, location: _, profileId: f, redirectUrl: b, salaryInterval: h, timestamp: k, title: S }) => {
+                p = ({ formattedSalary: e, id: l, isVerifiedOrg: a, isViewerFollowsUser: p, jobIndex: y, location: _, profileId: f, redirectUrl: h, salaryInterval: b, timestamp: k, title: S }) => {
                     const F = (0, d.z)(),
                         C = n.useCallback(() => {
                             F.scribe({ ...(0, m.yt)("jobs_module", "click", "job"), data: { profile_id: f, items: [{ position: y, id: l, is_viewer_follows_user: p }] } });
                         }, [F, l, p, y, f]),
                         K = n.useMemo(() => `/i/jobs/${l}`, [l]);
-                    return n.createElement(i.Z, { link: a ? { pathname: K, external: !0 } : b || "", onClick: C, role: "link", style: [g.card, r.default.isDarkMode() ? g.darkModeContentBackground : g.contentBackground] }, n.createElement(t.Z, { style: g.cardLayout }, n.createElement(s.ZP, { hoverLabel: { label: S, withDelay: !0 }, numberOfLines: 1, size: "subtext2", weight: "bold" }, S), n.createElement(t.Z, { style: g.cardMeta }, n.createElement(t.Z, { style: g.withIcon }, n.createElement(s.ZP, { color: "gray700", size: "subtext3" }, n.createElement(o.default, null)), n.createElement(s.ZP, { color: "gray700", hoverLabel: { label: _, withDelay: !0 }, numberOfLines: 1, size: "subtext3", weight: "normal" }, _)), e || k ? n.createElement(t.Z, { style: g.cardSubtext }, e ? n.createElement(t.Z, { style: g.withIcon }, n.createElement(s.ZP, { color: "gray700", size: "subtext3" }, n.createElement(u.default, null)), n.createElement(s.ZP, { color: "gray700", hoverLabel: { label: _, withDelay: !0 }, numberOfLines: 1, size: "subtext3", style: g.withIcon, weight: "normal" }, (0, c.M)(e, h))) : null, k ? n.createElement(s.ZP, { color: "gray700", size: "subtext2", weight: "normal" }, k) : null) : null)));
+                    return n.createElement(i.Z, { link: a ? { pathname: K, external: !0 } : h || "", onClick: C, role: "link", style: [g.card, r.default.isDarkMode() ? g.darkModeContentBackground : g.contentBackground] }, n.createElement(t.Z, { style: g.cardLayout }, n.createElement(s.ZP, { hoverLabel: { label: S, withDelay: !0 }, numberOfLines: 1, size: "subtext2", weight: "bold" }, S), n.createElement(t.Z, { style: g.cardMeta }, n.createElement(t.Z, { style: g.withIcon }, n.createElement(s.ZP, { color: "gray700", size: "subtext3" }, n.createElement(o.default, null)), n.createElement(s.ZP, { color: "gray700", hoverLabel: { label: _, withDelay: !0 }, numberOfLines: 1, size: "subtext3", weight: "normal" }, _)), e || k ? n.createElement(t.Z, { style: g.cardSubtext }, e ? n.createElement(t.Z, { style: g.withIcon }, n.createElement(s.ZP, { color: "gray700", size: "subtext3" }, n.createElement(u.default, null)), n.createElement(s.ZP, { color: "gray700", hoverLabel: { label: _, withDelay: !0 }, numberOfLines: 1, size: "subtext3", style: g.withIcon, weight: "normal" }, (0, c.M)(e, b))) : null, k ? n.createElement(s.ZP, { color: "gray700", size: "subtext2", weight: "normal" }, k) : null) : null)));
                 };
         },
         784380: (e, l, a) => {
@@ -1082,6 +1082,46 @@
                     return u.length > 0 ? t.createElement(s.Z, { style: l, userAvatarSize: a, userAvatarUrls: u }) : null;
                 },
                 c = t.memo(u);
+        },
+        652904: (e, l, a) => {
+            a.d(l, { Z: () => c });
+            var n = a(202784),
+                t = a(500002),
+                i = a(668214),
+                r = a(997174),
+                s = a(118823);
+            const o = (0, i.Z)()
+                .propsFromActions(() => ({ updateLocation: s.YF, updateTweetDetailNav: r.NH }))
+                .withAnalytics();
+            class u extends n.Component {
+                componentDidMount() {
+                    this._performPageUpdates(this.props);
+                }
+                componentDidUpdate(e) {
+                    const {
+                            history: { location: l },
+                            location: { pathname: a, search: n },
+                            locationKey: t,
+                        } = this.props,
+                        {
+                            location: { pathname: i, search: r },
+                            locationKey: s,
+                        } = e;
+                    let o = !1;
+                    l.pathname !== a ? (this._isInBackground = !0) : this._isInBackground && l.pathname === a && ((this._isInBackground = !1), (o = !0));
+                    const u = t || s;
+                    ((u && t !== s) || (!u && a !== i) || n !== r || o) && this._performPageUpdates(this.props);
+                }
+                render() {
+                    return this.props.children;
+                }
+                _performPageUpdates(e) {
+                    const { analytics: l, updateLocation: a, updateTweetDetailNav: n } = e;
+                    l.scribePageImpression(), a(l.contextualScribeNamespace, l.contextualScribeData), n(l.contextualScribeNamespace);
+                }
+            }
+            u.defaultProps = { children: null };
+            const c = (0, t.ZP)(o(u));
         },
         264223: (e, l, a) => {
             a.d(l, { Z: () => g });
@@ -1214,4 +1254,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.UserProfile.5acca5ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.UserProfile.8d848a6a.js.map

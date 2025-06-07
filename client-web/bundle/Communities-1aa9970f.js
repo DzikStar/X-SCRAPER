@@ -1054,7 +1054,7 @@
                 s = a(392237),
                 m = a(111677),
                 u = a.n(m),
-                d = a(253493);
+                d = a(496364);
             const p = u().i2209530;
             function b(e) {
                 const { children: t, communityId: a, onSubmit: s, rightControl: m, screenType: u, submitDisabled: b, subtitle: E, title: g, withBottomBorder: h, withDetailOpen: f } = e,
@@ -1197,4 +1197,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-1aa9970f.1afad15a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-1aa9970f.54ce1bca.js.map

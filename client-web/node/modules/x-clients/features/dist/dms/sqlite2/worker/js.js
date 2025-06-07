@@ -20,10 +20,10 @@
                             function (e) {
                                 return e.type + "#" + (n[e.type] = (n[e.type] || 0) + 1);
                             },
-                        l = (...e) => {
+                        c = (...e) => {
                             throw new Error(e.join(" "));
                         };
-                    let c, d;
+                    let l, d;
                     return (
                         r.worker || (r.worker = e.defaultConfig.worker),
                         "function" == typeof r.worker && (r.worker = r.worker()),
@@ -35,10 +35,10 @@
                                 case "error":
                                     return void a.reject(e);
                                 case "open":
-                                    c || (c = e.dbId);
+                                    l || (l = e.dbId);
                                     break;
                                 case "close":
-                                    e.dbId === c && (c = void 0);
+                                    e.dbId === l && (l = void 0);
                             }
                             try {
                                 a.resolve(e);
@@ -48,12 +48,12 @@
                         }),
                         (d = function () {
                             let e;
-                            1 === arguments.length ? (e = arguments[0]) : 2 === arguments.length ? ((e = Object.create(null)), (e.type = arguments[0]), (e.args = arguments[1]), (e.dbId = e.args.dbId)) : l("Invalid arguments for sqlite3Worker1Promiser()-created factory."), e.dbId || "open" === e.type || (e.dbId = c), (e.messageId = i(e)), (e.departureTime = performance.now());
+                            1 === arguments.length ? (e = arguments[0]) : 2 === arguments.length ? ((e = Object.create(null)), (e.type = arguments[0]), (e.args = arguments[1]), (e.dbId = e.args.dbId)) : c("Invalid arguments for sqlite3Worker1Promiser()-created factory."), e.dbId || "open" === e.type || (e.dbId = l), (e.messageId = i(e)), (e.departureTime = performance.now());
                             const a = Object.create(null);
                             let o;
-                            (a.message = e), "exec" === e.type && e.args && ("function" == typeof e.args.callback ? ((o = e.messageId + ":row"), (a.onrow = e.args.callback), (e.args.callback = o), (t[o] = a)) : "string" == typeof e.args.callback && l("exec callback may not be a string when using the Promise interface."));
+                            (a.message = e), "exec" === e.type && e.args && ("function" == typeof e.args.callback ? ((o = e.messageId + ":row"), (a.onrow = e.args.callback), (e.args.callback = o), (t[o] = a)) : "string" == typeof e.args.callback && c("exec callback may not be a string when using the Promise interface."));
                             let n = new Promise(function (o, n) {
-                                (a.resolve = o), (a.reject = n), (t[e.messageId] = a), s("Posting", e.type, "message to Worker dbId=" + (c || "default") + ":", e), r.worker.postMessage(e);
+                                (a.resolve = o), (a.reject = n), (t[e.messageId] = a), s("Posting", e.type, "message to Worker dbId=" + (l || "default") + ":", e), r.worker.postMessage(e);
                             });
                             return o && (n = n.finally(() => delete t[o])), n;
                         })
@@ -93,8 +93,8 @@
                     s = "SQLite module is not initialized",
                     n = "SQL query is missing",
                     i = "Unsupported action received",
-                    l = "OPFS VFS is not available",
-                    c = "Failed to create database backup",
+                    c = "OPFS VFS is not available",
+                    l = "Failed to create database backup",
                     d = "Invalid message: missing id or action",
                     u = "Missing userId for init_db or backup_db",
                     f = "Database not initialized",
@@ -135,7 +135,7 @@
                             try {
                                 await O(g.pool, p, `/${g.vfsName}`), _(0, { userId: p }), k({ id: "auto_backup", type: "backup_success" });
                             } catch (e) {
-                                k({ id: "auto_backup", type: "backup_error", error: c });
+                                k({ id: "auto_backup", type: "backup_error", error: l });
                             }
                             await new Promise((r) => setTimeout(r, e));
                         });
@@ -149,7 +149,7 @@
                             const t = await o({ print: () => {}, printErr: () => {} }),
                                 a = `${e}_chat_${Math.random().toString(36).slice(2)}`,
                                 s = `/${a}`;
-                            if (!t.installOpfsSAHPoolVfs) throw new Error(l);
+                            if (!t.installOpfsSAHPoolVfs) throw new Error(c);
                             const n = await t.installOpfsSAHPoolVfs({ clearOnInit: !1, initialCapacity: 5, name: a }),
                                 i = t.capi.sqlite3_vfs_find(n.vfsName);
                             if (i) {
@@ -167,8 +167,8 @@
                             } catch (r) {
                                 _(0, { userId: e, dbName: s });
                             }
-                            const c = new n.OpfsSAHPoolDb(s);
-                            (g = { db: c, pool: n, vfsName: n.vfsName }),
+                            const l = new n.OpfsSAHPoolDb(s);
+                            (g = { db: l, pool: n, vfsName: n.vfsName }),
                                 (p = e),
                                 (m = Math.random().toString(36).slice(2) + Date.now().toString(36)),
                                 (v = !1),
@@ -205,7 +205,7 @@
                 }
                 self.onmessage = async (e) => {
                     const { data: r } = e,
-                        { action: t, id: a, userId: o, sql: l, params: c } = r || {};
+                        { action: t, id: a, userId: o, sql: c, params: l } = r || {};
                     if (void 0 === a || void 0 === t) return new Error("Missing id or action"), void k({ id: a || "", error: d });
                     try {
                         if ("before_logout" === t) return;
@@ -225,8 +225,8 @@
                         if (!g) throw new Error(s);
                         switch (t) {
                             case "exec":
-                                if (!l) throw new Error(n);
-                                k({ id: a, results: { values: await g.db.exec({ sql: l, bind: c, returnValue: "resultRows" }) } });
+                                if (!c) throw new Error(n);
+                                k({ id: a, results: { values: await g.db.exec({ sql: c, bind: l, returnValue: "resultRows" }) } });
                                 break;
                             case "begin_transaction":
                                 await g.db.exec("BEGIN TRANSACTION;"), (v = !0), k({ id: a, results: { values: [] } });
@@ -263,11 +263,11 @@
             if (!t) {
                 var n = 1 / 0;
                 for (d = 0; d < e.length; d++) {
-                    for (var [t, a, s] = e[d], i = !0, l = 0; l < t.length; l++) (!1 & s || n >= s) && Object.keys(o.O).every((e) => o.O[e](t[l])) ? t.splice(l--, 1) : ((i = !1), s < n && (n = s));
+                    for (var [t, a, s] = e[d], i = !0, c = 0; c < t.length; c++) (!1 & s || n >= s) && Object.keys(o.O).every((e) => o.O[e](t[c])) ? t.splice(c--, 1) : ((i = !1), s < n && (n = s));
                     if (i) {
                         e.splice(d--, 1);
-                        var c = a();
-                        void 0 !== c && (r = c);
+                        var l = a();
+                        void 0 !== l && (r = l);
                     }
                 }
                 return r;
@@ -281,7 +281,7 @@
         }),
         (o.f = {}),
         (o.e = (e) => Promise.all(Object.keys(o.f).reduce((r, t) => (o.f[t](e, r), r), []))),
-        (o.u = (e) => e + "." + { "shared~~~-5a94f17d": "c1cc8b0", "shared~~~-ab3eb430": "38a4585", "node_modules_sqlite_org_sqlite-wasm_sqlite-wasm_jswasm_sqlite3-opfs-async-proxy_js": "ee5cbde", "node_modules_sqlite_org_sqlite-wasm_sqlite-wasm_jswasm_sqlite3-worker1-bundler-friendly_mjs": "159823a" }[e] + "a.js"),
+        (o.u = (e) => e + "." + { "shared~~~-5a94f17d": "c1cc8b0", "shared~~~-ab3eb430": "ddc510c", "node_modules_sqlite_org_sqlite-wasm_sqlite-wasm_jswasm_sqlite3-opfs-async-proxy_js": "ee5cbde", "node_modules_sqlite_org_sqlite-wasm_sqlite-wasm_jswasm_sqlite3-worker1-bundler-friendly_mjs": "6d3ba73" }[e] + "a.js"),
         (o.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r)),
         (o.p = "https://abs.twimg.com/responsive-web/client-web/"),
         (() => {
@@ -303,4 +303,4 @@
         (o.x = () => Promise.all([o.e("shared~~~-5a94f17d"), o.e("shared~~~-ab3eb430")]).then(r));
     o.x();
 })();
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/node_modules_x-clients_features_dist_dms_sqlite2_worker_js.aa29237a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/node_modules_x-clients_features_dist_dms_sqlite2_worker_js.d14624ea.js.map

@@ -8,7 +8,7 @@
             e.exports = { queryId: "YUpv7YPz8uB7j6rAaCCF7g", operationName: "DmGroupSearchSlice", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         407737: (e) => {
-            e.exports = { queryId: "-eBfZGjAz4p_FMBRQYyS9A", operationName: "DmMutedTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "KF41vf-_MCeedrJJFgDTlA", operationName: "DmMutedTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         845308: (e) => {
             e.exports = { queryId: "W26fnOQ7uTdektooZAiuYw", operationName: "DmPeopleSearchSlice", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -25,15 +25,15 @@
             var r = n(506899),
                 i = n(414742),
                 s = n(703710),
-                o = n(771613),
-                a = n(25770),
-                l = n.n(a),
+                a = n(771613),
+                o = n(25770),
+                l = n.n(o),
                 c = n(892314),
                 u = n.n(c),
                 d = n(407737),
-                m = n.n(d),
-                _ = n(845308),
-                p = n.n(_),
+                _ = n.n(d),
+                m = n(845308),
+                p = n.n(m),
                 h = n(934309);
             const g = (e, t) => {
                     let n = !1;
@@ -47,7 +47,7 @@
                 },
                 f = (e) => {
                     const t = e.items?.map((e) => e?.dm_convo_search);
-                    return (0, r.Fv)(t, [o.ZP]);
+                    return (0, r.Fv)(t, [a.ZP]);
                 },
                 b = ({ apiClient: e, featureSwitches: t }) => ({
                     fetchDMAllSearch: (t) =>
@@ -71,11 +71,11 @@
                                   }
                                   if (n && "DMMessageSlice" === n?.__typename) {
                                       const e = n?.items,
-                                          t = (0, r.Fv)(e, [o.JJ]),
+                                          t = (0, r.Fv)(e, [a.JJ]),
                                           i = e?.map((e) => e?.dm_event?.legacy?.conversation),
-                                          a = e?.find((e) => e?.highlighting?.query_tokens),
-                                          l = a && e?.map((e) => e?.highlighting?.query_tokens),
-                                          { entities: c, result: u } = (0, r.Fv)(i, [o.ZP]);
+                                          o = e?.find((e) => e?.highlighting?.query_tokens),
+                                          l = o && e?.map((e) => e?.highlighting?.query_tokens),
+                                          { entities: c, result: u } = (0, r.Fv)(i, [a.ZP]);
                                       s = { ...s, result: s?.result?.concat({ messageData: { conversationIds: u, entryIds: t?.result, highlightingTokens: l } }), entities: { ...t?.entities, conversations: { ...s?.entities?.conversations, ...c?.conversations } } };
                                   }
                                   return s;
@@ -106,7 +106,7 @@
                     fetchDMMutedUsers: ({ count: n, cursor: r }) =>
                         e
                             .graphQL(
-                                m(),
+                                _(),
                                 { count: n, cursor: r, includePromotedContent: !1, ...(0, s.d)(t) },
                                 (0, i.kj)((e) => !e?.viewer?.dm_muting_timeline?.timeline, "GQL URT: Failed to render DM Muting timeline"),
                             )
@@ -122,11 +122,11 @@
             var r = n(163889),
                 i = n(386569),
                 s = n.n(i),
-                o = n(346759),
-                a = n.n(o);
+                a = n(346759),
+                o = n.n(a);
             const l = ({ apiClient: e, featureSwitches: t }) => ({
                 fetch: () =>
-                    e.graphQL(a(), {}).then((e) => {
+                    e.graphQL(o(), {}).then((e) => {
                         let t;
                         if (e.viewer) {
                             const { user_results: n } = e.viewer;
@@ -167,22 +167,22 @@
             var r = n(769471),
                 i = n(934309),
                 s = n(750085),
-                o = n(401388),
-                a = n(626421),
+                a = n(401388),
+                o = n(626421),
                 l = n(497461);
             const c = (e) => {
                     const t = (0, l.$)(),
                         n = ((e) => {
                             if ("SegmentedTimelines" !== e.body.__typename) return;
-                            const t = e.body.timelines.map((e) => ({ graphQLTimelineId: e.timeline.id, id: e.id, labelText: e.labelText, scribeConfig: (0, o.Z)(e.scribeConfig) ? void 0 : { ...e.scribeConfig }, refreshIntervalSec: e.refreshIntervalSec }));
+                            const t = e.body.timelines.map((e) => ({ graphQLTimelineId: e.timeline.id, id: e.id, labelText: e.labelText, scribeConfig: (0, a.Z)(e.scribeConfig) ? void 0 : { ...e.scribeConfig }, refreshIntervalSec: e.refreshIntervalSec }));
                             return { initialTabId: e.body.initialTimeline && e.body.initialTimeline.id, tabs: t };
                         })(e),
                         r = ((e, t) => {
                             const { header: n } = t;
                             if (!n || "TopicPageHeader" !== n.__typename) return;
-                            const { __typename: r, facepile: i, topic: s, ...o } = n,
-                                l = i && (0, a.Zn)(e, i);
-                            return { ...o, topicId: (0, a.S0)(e, s), facepile: l };
+                            const { __typename: r, facepile: i, topic: s, ...a } = n,
+                                l = i && (0, o.Zn)(e, i);
+                            return { ...a, topicId: (0, o.S0)(e, s), facepile: l };
                         })(t, e),
                         i = ((e, t) => {
                             const { navBar: n } = t;
@@ -191,7 +191,7 @@
                                 case "TitleNavBar":
                                     return { title: n.title, subtitle: n.subtitle };
                                 case "TopicPageNavBar":
-                                    return { navBar: { topicId: (0, a.S0)(e, n.topic), clientEventInfo: n.clientEventInfo }, title: n.topic.name, subtitle: void 0 };
+                                    return { navBar: { topicId: (0, o.S0)(e, n.topic), clientEventInfo: n.clientEventInfo }, title: n.topic.name, subtitle: void 0 };
                                 default:
                                     return {};
                             }
@@ -201,100 +201,100 @@
                 u = (e) => {
                     const t = "Timeline" === (n = e.body).__typename && n.timeline ? (0, s.Z)(n.timeline) : "SegmentedTimelines" === n.__typename && n.initialTimeline?.timeline.timeline ? (0, s.Z)(n.initialTimeline.timeline.timeline) : (0, s.Z)(i.cY);
                     var n;
-                    const { globalObjects: o, pageConfiguration: a } = c(e);
-                    return { ...t, globalObjects: (0, r.Z)(o, t.globalObjects), pageConfiguration: a };
+                    const { globalObjects: a, pageConfiguration: o } = c(e);
+                    return { ...t, globalObjects: (0, r.Z)(a, t.globalObjects), pageConfiguration: o };
                 };
         },
         771613: (e, t, n) => {
             "use strict";
-            n.d(t, { JJ: () => d, ZP: () => _ });
+            n.d(t, { JJ: () => d, ZP: () => m });
             n(136728);
             var r = n(506899),
                 i = n(967262),
                 s = n(275365),
-                o = n(318752),
-                a = n(701788),
+                a = n(318752),
+                o = n(701788),
                 l = n(171697);
             const c = Object.freeze({ GROUP: "GroupDm", ONE_TO_ONE: "OneToOneDm", UNKNOWN: "Unknown" }),
                 u = Object.freeze({ MessageCreate: s.Cr.MESSAGE, ParticipantsJoin: s.Cr.PARTICIPANTS_JOIN, ParticipantsLeave: s.Cr.PARTICIPANTS_LEAVE, ConversationNameUpdate: s.Cr.CONVERSATION_NAME_UPDATE, JoinConversation: s.Cr.JOIN_CONVERSATION }),
                 d = new r.fK.Entity(
                     "entries",
-                    { message_data: { attachment: { card: a.Z, tweet: { status: l.Z } } } },
+                    { message_data: { attachment: { card: o.Z, tweet: { status: l.Z } } } },
                     {
                         processStrategy: (e, t, n) => {
                             const { legacy: r, rest_id: s } = e?.dm_event || {},
-                                a = r?.event_type,
+                                o = r?.event_type,
                                 { affects_sort: l, request_id: c } = r || {};
                             let d,
-                                m,
-                                _ = "Unknown";
-                            a in u && (_ = u[a]);
+                                _,
+                                m = "Unknown";
+                            o in u && (m = u[o]);
                             const p = r?.conversation?.rest_id,
                                 h = r?.event_detail?.dm,
                                 g = r?.created_at_millis,
-                                { card: f, media: b, tweet_results: y, urls_entity: w } = h?.attachments?.[0] || {};
+                                { card: f, media: b, tweet_results: v, urls_entity: y } = h?.attachments?.[0] || {};
                             if (
                                 (f?.legacy && (d = { card: f }),
-                                w?.length &&
+                                y?.length &&
                                     h.text &&
-                                    w.forEach((e) => {
-                                        e?.indices[0] && (m = h.text.slice(0, e?.indices[0]).concat(h.text.slice(e.indices[1])));
+                                    y.forEach((e) => {
+                                        e?.indices[0] && (_ = h.text.slice(0, e?.indices[0]).concat(h.text.slice(e.indices[1])));
                                     }),
-                                "Tweet" === y?.result?.__typename)
+                                "Tweet" === v?.result?.__typename)
                             ) {
-                                const e = y?.result?.legacy?.entities;
+                                const e = v?.result?.legacy?.entities;
                                 let t;
                                 e?.media?.length ? (t = e?.media[0]) : e?.urls?.length && (t = e?.urls[0]);
-                                const { display_url: n, expanded_url: r, id_str: i, indices: s, url: o } = t || {},
-                                    { extended_entities: a } = y?.result?.legacy || {},
-                                    l = a?.media?.map((e) => {
+                                const { display_url: n, expanded_url: r, id_str: i, indices: s, url: a } = t || {},
+                                    { extended_entities: o } = v?.result?.legacy || {},
+                                    l = o?.media?.map((e) => {
                                         if (e?.video_info) {
                                             const t = e?.video_info?.variants;
                                             return { ...e, video_info: { ...e?.video_info, variants: t } };
                                         }
                                         return e;
                                     }),
-                                    c = { ...y?.result?.legacy?.extended_entities, media: l };
-                                d = { tweet: { status: { ...y?.result, legacy: { ...y?.result?.legacy, extended_entities: c } }, display_url: n, expanded_url: r, indices: s, url: o, id: i } };
+                                    c = { ...v?.result?.legacy?.extended_entities, media: l };
+                                d = { tweet: { status: { ...v?.result, legacy: { ...v?.result?.legacy, extended_entities: c } }, display_url: n, expanded_url: r, indices: s, url: a, id: i } };
                             }
-                            const v = b ? (0, i.m)(b) : null;
-                            v && v.type && ("photo" === v.type ? (d = { photo: v }) : "video" === v.type ? (d = { video: v }) : "animated_gif" === v.type && (d = { animated_gif: v }));
-                            const S = { affects_sort: l, request_id: c, time: g, type: _, conversation_id: p, message_data: { id: s, text: m || h?.text, entities: h?.entities, recipient_id: h?.recipient_results?.result?.rest_id, sender_id: h?.sender_results?.result.rest_id, attachment: d }, id: s };
-                            return (0, o.Z)(S, t, n);
+                            const w = b ? (0, i.m)(b) : null;
+                            w && w.type && ("photo" === w.type ? (d = { photo: w }) : "video" === w.type ? (d = { video: w }) : "animated_gif" === w.type && (d = { animated_gif: w }));
+                            const S = { affects_sort: l, request_id: c, time: g, type: m, conversation_id: p, message_data: { id: s, text: _ || h?.text, entities: h?.entities, recipient_id: h?.recipient_results?.result?.rest_id, sender_id: h?.sender_results?.result.rest_id, attachment: d }, id: s };
+                            return (0, a.Z)(S, t, n);
                         },
                         idAttribute: (e) => e?.dm_event?.rest_id,
                     },
                 ),
-                m = new r.fK.Entity(
+                _ = new r.fK.Entity(
                     "conversations",
                     {},
                     {
                         processStrategy: (e, t, n) => {
-                            const { id: r, labels: i, legacy: a, perspectival_conversation_metadata: l, rest_id: u, tag: d } = e || {},
-                                m = {},
-                                _ = [];
-                            for (const e of a?.participants_metadata || []) {
+                            const { id: r, labels: i, legacy: o, perspectival_conversation_metadata: l, rest_id: u, tag: d } = e || {},
+                                _ = {},
+                                m = [];
+                            for (const e of o?.participants_metadata || []) {
                                 const t = e?.user_results?.result;
                                 if (!t || !t.legacy || !t.core) continue;
                                 const n = { description: t.legacy.description, id_str: t.legacy.id_str, name: t.core.name, profile_image_url_https: t.legacy.profile_image_url_https || "", screen_name: t.core.screen_name };
-                                (m[t.rest_id] = n), _.push({ user: n, user_id: t.rest_id });
+                                (_[t.rest_id] = n), m.push({ user: n, user_id: t.rest_id });
                             }
-                            let p = a?.metadata?.avatar;
+                            let p = o?.metadata?.avatar;
                             const h = p?.media_info,
                                 g = e?.last_readable_event_id;
                             if (h) {
                                 const { original_img_height: e, original_img_url: t, original_img_width: n } = h || {};
                                 p = { image: { original_info: { height: e, width: n, url: t } } };
                             }
-                            const f = a?.metadata?.conversation_type === c.GROUP ? s.eD.GROUP : s.eD.ONE_TO_ONE,
-                                b = { ...a?.perspectival_conversation_metadata, ...a?.metadata, ...l, id: r, conversation_id: u, avatar: p, labels: i, last_readable_event_id: g, type: f, participants: _, users: m, tag: d };
-                            return (0, o.Z)(b, t, n);
+                            const f = o?.metadata?.conversation_type === c.GROUP ? s.eD.GROUP : s.eD.ONE_TO_ONE,
+                                b = { ...o?.perspectival_conversation_metadata, ...o?.metadata, ...l, id: r, conversation_id: u, avatar: p, labels: i, last_readable_event_id: g, type: f, participants: m, users: _, tag: d };
+                            return (0, a.Z)(b, t, n);
                         },
                         idAttribute: (e) => e?.legacy?.conversation_id,
                     },
                 );
-            m.define({ entities: d });
-            const _ = m;
+            _.define({ entities: d });
+            const m = _;
         },
         917009: (e, t, n) => {
             "use strict";
@@ -302,21 +302,21 @@
             var r = n(202784),
                 i = n(154003),
                 s = n(111677),
-                o = n.n(s),
-                a = n(379327);
-            const l = o().af40a8e0,
+                a = n.n(s),
+                o = n(379327);
+            const l = a().af40a8e0,
                 c = (e) => {
                     const { "aria-label": t, link: n } = e;
-                    return r.createElement(i.ZP, { "aria-label": t, hoverLabel: { label: l }, icon: r.createElement(a.default, null), link: n, pullRight: !0, type: "primaryText" });
+                    return r.createElement(i.ZP, { "aria-label": t, hoverLabel: { label: l }, icon: r.createElement(o.default, null), link: n, pullRight: !0, type: "primaryText" });
                 };
         },
         947135: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => o });
+            n.d(t, { Z: () => a });
             var r = n(202784),
                 i = n(242454),
                 s = n(190286);
-            class o extends r.Component {
+            class a extends r.Component {
                 constructor(e) {
                     super(e),
                         (this._handleClick = (e) => {
@@ -331,11 +331,11 @@
                         (this.state = { showConfirmation: !1 });
                 }
                 render() {
-                    const { align: e, color: t, confirmationSheetConfirmButtonLabel: n, confirmationSheetConfirmButtonType: o, confirmationSheetHeadline: a, confirmationSheetText: l, label: c } = this.props;
-                    return r.createElement(r.Fragment, null, r.createElement(i.Z, { align: e, color: t, label: c, onPress: this._handleClick }), this.state.showConfirmation ? r.createElement(s.Z, { confirmButtonLabel: n, confirmButtonType: o, headline: a, onCancel: this._handleCancel, onConfirm: this._handleConfirm, text: l }) : null);
+                    const { align: e, color: t, confirmationSheetConfirmButtonLabel: n, confirmationSheetConfirmButtonType: a, confirmationSheetHeadline: o, confirmationSheetText: l, label: c } = this.props;
+                    return r.createElement(r.Fragment, null, r.createElement(i.Z, { align: e, color: t, label: c, onPress: this._handleClick }), this.state.showConfirmation ? r.createElement(s.Z, { confirmButtonLabel: n, confirmButtonType: a, headline: o, onCancel: this._handleCancel, onConfirm: this._handleConfirm, text: l }) : null);
                 }
             }
-            o.defaultProps = { color: "red500", align: "center" };
+            a.defaultProps = { color: "red500", align: "center" };
         },
         333241: (e, t, n) => {
             "use strict";
@@ -344,25 +344,25 @@
             var r = n(202784),
                 i = n(638236),
                 s = n(811176),
-                o = n(111677),
-                a = n.n(o),
+                a = n(111677),
+                o = n.n(a),
                 l = n(415506),
                 c = n(516951),
                 u = n(443781),
                 d = n(376293),
-                m = n(847607),
-                _ = n(417714),
+                _ = n(847607),
+                m = n(417714),
                 p = n(988823);
             const h = "block",
                 g = "mute",
                 f = "removeFollower",
                 b = "report",
-                y = "share",
-                w = a().j7bb1a43,
-                v = a().hef5960c,
+                v = "share",
+                y = o().j7bb1a43,
+                w = o().hef5960c,
                 S = (0, p.M)((e) => {
                     const { featureSwitches: t } = (0, u.QZ)(),
-                        { onBlock: n, onClose: o, onMute: a, onRemoveFollower: p, onReportUser: S, onShare: C, onUnblock: T, onUnmute: Z, user: E } = e,
+                        { onBlock: n, onClose: a, onMute: o, onRemoveFollower: p, onReportUser: S, onShare: C, onUnblock: T, onUnmute: Z, user: E } = e,
                         P = [],
                         k = (t, n) => {
                             const { confirm: r, onClose: i } = e;
@@ -380,27 +380,27 @@
                         P.push({
                             Icon: i.Z,
                             onClick: () => {
-                                o(), C();
+                                a(), C();
                             },
-                            testID: y,
-                            text: v,
+                            testID: v,
+                            text: w,
                         });
                     !E.blocking &&
                         P.push({
-                            ...(0, m.N1)(
+                            ...(0, _.N1)(
                                 E,
                                 () => {
-                                    o(), a();
+                                    a(), o();
                                 },
                                 () => {
-                                    o(), Z();
+                                    a(), Z();
                                 },
                             ),
                             testID: g,
                         });
                     E.followed_by &&
                         P.push({
-                            ...(0, _.l)({
+                            ...(0, m.l)({
                                 removeFollowerAction: (e) => {
                                     k(e, p);
                                 },
@@ -412,103 +412,46 @@
                         P.push({
                             Icon: l.default,
                             onClick: () => {
-                                o(), S();
+                                a(), S();
                             },
                             testID: b,
-                            text: w({ screenName: E.screen_name }),
+                            text: y({ screenName: E.screen_name }),
                         });
                     const I = P.map(({ Icon: e, onClick: t, testID: n, text: r }) => ({ text: r, onClick: t, Icon: e, testID: n }));
-                    return r.createElement(s.Z, { items: I, onCloseRequested: o });
+                    return r.createElement(s.Z, { items: I, onCloseRequested: a });
                 });
-        },
-        253493: (e, t, n) => {
-            "use strict";
-            n.d(t, { Z: () => w });
-            var r = n(202784),
-                i = n(107267),
-                s = n(791632),
-                o = n(325686),
-                a = n(537392),
-                l = n(10656),
-                c = n(655352),
-                u = n(555079),
-                d = n(500002),
-                m = n(625661),
-                _ = n(449067),
-                p = n(655543),
-                h = n(715601),
-                g = n(392237);
-            const f = g.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...g.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
-            class b extends r.Component {
-                constructor(...e) {
-                    super(...e),
-                        (this._renderChildren = () => {
-                            const { children: e } = this.props;
-                            return this.context.rootDetailPerColumnScroll ? r.createElement(o.Z, { style: f.fill }, r.createElement(h.Z, { style: f.viewportView }, this._renderInlineNav({ isTwoColumnLayout: !0 }), e)) : e;
-                        });
-                }
-                render() {
-                    return r.createElement(a.ZP, null, ({ containerWidth: e }) => (l.Z.isTwoColumnLayout(e) ? this._renderForTwoColumnLayout() : this._renderForOneColumnLayout()));
-                }
-                _renderForOneColumnLayout() {
-                    const { appBarStyle: e, children: t, leftControl: n, screenType: i, showSubtitleOnRoot: s, showSubtitleOnWideDetail: o, withBottomBorder: a, withDetailOpen: l, ...u } = this.props;
-                    return r.createElement(r.Fragment, null, (0, c.ZP)() ? this._renderInlineNav({ isTwoColumnLayout: !1 }) : r.createElement(_.Z.Configure, u), t);
-                }
-                _renderForTwoColumnLayout() {
-                    const e = this.context.rootDetailPerColumnScroll;
-                    return r.createElement(r.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
-                }
-                _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: t, TabBar: n, appBarStyle: i, backLocation: s, documentTitle: a, headerless: l, history: c, leftControl: d, middleControl: p, onBackClick: h, rightControl: g, screenType: b, searchBoxOptions: y, secondaryBar: w, showSubtitleOnRoot: v, showSubtitleOnWideDetail: S, subtitle: C, title: T, titleIconCell: Z, titleIconCellSize: E, withDetailOpen: P, withSearchBox: k, withTweetButton: I, withWideContainer: D } = this.props,
-                        O = "root" === b,
-                        x = "secondaryRoot" === b,
-                        A = "primaryDetail" === b,
-                        U = (A && S) || (O && v),
-                        L = O || (A && e),
-                        N = O ? u.ey : A ? u.vX : void 0,
-                        B = r.createElement(o.Z, { style: f.appBarContainer }, r.createElement(m.ZP, { backLocation: s, fixed: !1, hideBackButton: L, history: c, leftControl: d, middleControl: p, onBackClick: h, rightControl: g, secondaryBar: w, style: i, subtitle: U ? C : void 0, title: T, titleDomId: N, titleIconCell: Z, titleIconCellSize: E, withWideContainer: D })),
-                        F = O || (x && P) ? null : r.createElement(_.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: s, documentTitle: a, headerless: l, middleControl: p, onBackClick: h, rightControl: g, searchBoxOptions: y, subtitle: C, title: T, withSearchBox: k, withTweetButton: I });
-                    return r.createElement(r.Fragment, null, F, B);
-                }
-            }
-            (b.contextType = p.Z), (b.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0 });
-            const y = (0, d.ZP)(b),
-                w = (e) => {
-                    const t = (0, i.useHistory)();
-                    return (0, s.HD)(t) ? e.children || null : r.createElement(y, e);
-                };
         },
         811105: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => m });
+            n.d(t, { Z: () => _ });
             var r = n(202784),
                 i = n(325686),
                 s = n(731708),
-                o = n(392237),
-                a = n(111677),
-                l = n.n(a);
+                a = n(392237),
+                o = n(111677),
+                l = n.n(o);
             const c = l().c174e46e,
                 u = l().a39075ff,
-                d = o.default.create((e) => ({ listItem: { display: "list-item", listStyleType: "disc", marginBottom: e.spaces.space12, marginStart: e.spaces.space12 }, scopesHeader: { marginBottom: e.spaces.space12, marginTop: e.spaces.space12 }, toggleMoreLink: { color: e.colors.link, weight: "bold" } })),
-                m = (e) => {
-                    const { scopes: t, size: n, title: o } = e,
-                        [a, l] = r.useState(!1),
-                        m = r.useCallback(() => {
+                d = a.default.create((e) => ({ listItem: { display: "list-item", listStyleType: "disc", marginBottom: e.spaces.space12, marginStart: e.spaces.space12 }, scopesHeader: { marginBottom: e.spaces.space12, marginTop: e.spaces.space12 }, toggleMoreLink: { color: e.colors.link, weight: "bold" } })),
+                _ = (e) => {
+                    const { scopes: t, size: n, title: a } = e,
+                        [o, l] = r.useState(!1),
+                        _ = r.useCallback(() => {
                             l((e) => !e);
                         }, []),
-                        _ = a ? t : t.slice(0, 3),
+                        m = o ? t : t.slice(0, 3),
                         p = t.length > 3;
                     return r.createElement(
                         r.Fragment,
                         null,
-                        r.createElement(s.ZP, { style: d.scopesHeader, weight: "bold" }, o),
+                        r.createElement(s.ZP, { style: d.scopesHeader, weight: "bold" }, a),
                         r.createElement(
                             i.Z,
                             { role: "list" },
-                            _.map((e) => r.createElement(s.ZP, { color: "subtext2" === n ? "gray700" : void 0, key: e.name, role: "listitem", size: n, style: d.listItem }, e.description)),
+                            m.map((e) => r.createElement(s.ZP, { color: "subtext2" === n ? "gray700" : void 0, key: e.name, role: "listitem", size: n, style: d.listItem }, e.description)),
                         ),
-                        p && a ? r.createElement(s.ZP, { onPress: m, style: d.toggleMoreLink }, c) : null,
-                        p && !a ? r.createElement(s.ZP, { onPress: m, style: d.toggleMoreLink }, u({ n: t.length - 3 })) : null,
+                        p && o ? r.createElement(s.ZP, { onPress: _, style: d.toggleMoreLink }, c) : null,
+                        p && !o ? r.createElement(s.ZP, { onPress: _, style: d.toggleMoreLink }, u({ n: t.length - 3 })) : null,
                     );
                 };
         },
@@ -518,28 +461,28 @@
             var r = n(807896),
                 i = n(202784),
                 s = n(392237),
-                o = n(779610);
-            const a = (e) => {
+                a = n(779610);
+            const o = (e) => {
                     const { Icon: t, iconColor: n, testID: r } = e;
                     return i.createElement(t, { style: n ? { color: s.default.theme.colors[n] } : l.thumbnail, testID: r });
                 },
                 l = s.default.create((e) => ({ thumbnail: { color: e.colors.gray700 } }));
             function c(e) {
                 const { Icon: t, iconColor: n, testID: s, ...l } = e;
-                return i.createElement(o.Z, (0, r.Z)({}, l, { thumbnail: i.createElement(a, { Icon: t, iconColor: n, testID: s }), thumbnailSize: "large" }));
+                return i.createElement(a.Z, (0, r.Z)({}, l, { thumbnail: i.createElement(o, { Icon: t, iconColor: n, testID: s }), thumbnailSize: "large" }));
             }
             function u(e) {
                 const { link: t, ...n } = e;
-                return i.createElement(o.Z, (0, r.Z)({}, n, { link: { external: !0, pathname: e.link } }));
+                return i.createElement(a.Z, (0, r.Z)({}, n, { link: { external: !0, pathname: e.link } }));
             }
         },
         864479: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => o });
+            n.d(t, { Z: () => a });
             var r = n(807896),
                 i = n(202784),
                 s = n(771099);
-            const o = (e) => (t) => i.createElement(s.$6, null, (n) => i.createElement(e, (0, r.Z)({}, t, { isInSidebar: n })));
+            const a = (e) => (t) => i.createElement(s.$6, null, (n) => i.createElement(e, (0, r.Z)({}, t, { isInSidebar: n })));
         },
         507651: (e, t, n) => {
             "use strict";
@@ -547,12 +490,12 @@
             var r = n(807896),
                 i = n(202784),
                 s = n(107267),
-                o = n(403556),
-                a = n(791632);
+                a = n(403556),
+                o = n(791632);
             const l = (e) => {
                     const t = (0, s.useHistory)(),
                         { isCompact: n, ...l } = e;
-                    return i.createElement(o.Z, (0, r.Z)({}, l, { isCompact: n || (0, a.HD)(t) }));
+                    return i.createElement(a.Z, (0, r.Z)({}, l, { isCompact: n || (0, o.HD)(t) }));
                 },
                 c = i.memo(l);
         },
@@ -562,31 +505,31 @@
             var r = n(202784),
                 i = n(154003),
                 s = n(111677),
-                o = n.n(s),
-                a = n(74514),
+                a = n.n(s),
+                o = n(74514),
                 l = n(405303),
                 c = n(684511),
                 u = n(860174),
                 d = n(71620),
-                m = n(668214),
-                _ = n(257166),
+                _ = n(668214),
+                m = n(257166),
                 p = n(919022);
-            const h = (e, t) => !(!t.allowPromptForPush || !_.selectShouldPromptBrowserPush(e)),
-                g = (0, m.Z)()
+            const h = (e, t) => !(!t.allowPromptForPush || !m.selectShouldPromptBrowserPush(e)),
+                g = (0, _.Z)()
                     .propsFromState(() => ({ shouldPromptPush: h }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, d.zr)("DEVICE_FOLLOW_BUTTON_CONTAINER"), updateDeviceFollowing: p.ZP.updateDeviceFollowing }))
                     .withAnalytics({ element: "mobile_notifications" }),
-                f = o().bdba3e1a,
-                b = o().c4da7d28,
-                y = o().j87c21f4,
-                w = o().iebc30ca,
-                v = o().dc740eb2;
+                f = a().bdba3e1a,
+                b = a().c4da7d28,
+                v = a().j87c21f4,
+                y = a().iebc30ca,
+                w = a().dc740eb2;
             class S extends r.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderButton = () => {
                             const { isFollowing: e, style: t } = this.props;
-                            return e ? r.createElement(i.ZP, { "aria-label": b, hoverLabel: { label: w }, icon: r.createElement(a.default, null), onPress: this._handleUnfollow, style: t, type: "primaryOutlined" }) : r.createElement(i.ZP, { "aria-label": f, hoverLabel: { label: y }, icon: r.createElement(l.default, null), onPress: this._handleFollow, style: t, type: "primaryOutlined" });
+                            return e ? r.createElement(i.ZP, { "aria-label": b, hoverLabel: { label: y }, icon: r.createElement(o.default, null), onPress: this._handleUnfollow, style: t, type: "primaryOutlined" }) : r.createElement(i.ZP, { "aria-label": f, hoverLabel: { label: v }, icon: r.createElement(l.default, null), onPress: this._handleFollow, style: t, type: "primaryOutlined" });
                         }),
                         (this._handleFollow = () => {
                             const { isDeviceFollowWithoutUserFollow: e, shouldPromptPush: t } = this.props;
@@ -604,7 +547,7 @@
                         (this.state = { showingPushPrompt: !1 });
                 }
                 render() {
-                    return r.createElement("div", null, this.state.showingPushPrompt ? r.createElement(c.Z, { fullScreen: !0, message: v }) : null, this._renderButton());
+                    return r.createElement("div", null, this.state.showingPushPrompt ? r.createElement(c.Z, { fullScreen: !0, message: w }) : null, this._renderButton());
                 }
                 _updateDeviceFollowing(e) {
                     const { createLocalApiErrorHandler: t, updateDeviceFollowing: n, userId: r } = this.props;
@@ -619,24 +562,24 @@
         },
         583335: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => y });
+            n.d(t, { Z: () => v });
             var r = n(202784),
                 i = n(154003),
                 s = n(40904),
-                o = n(391366),
-                a = n(847607),
+                a = n(391366),
+                o = n(847607),
                 l = n(775412),
                 c = n(837731),
                 u = n(942893),
                 d = n(71620),
-                m = n(668214),
-                _ = n(629196),
+                _ = n(668214),
+                m = n(629196),
                 p = n(601576),
                 h = n(919022);
             const g = (e, t) => h.ZP.select(e, t.userId),
-                f = (0, m.Z)()
+                f = (0, _.Z)()
                     .propsFromState(() => ({ user: g }))
-                    .propsFromActions(() => ({ addToast: p.fz, createLocalApiErrorHandler: (0, d.zr)("MUTE_BUTTON_CONTAINER"), mute: _.r, unmute: h.ZP.unmute }))
+                    .propsFromActions(() => ({ addToast: p.fz, createLocalApiErrorHandler: (0, d.zr)("MUTE_BUTTON_CONTAINER"), mute: m.r, unmute: h.ZP.unmute }))
                     .withAnalytics();
             class b extends r.Component {
                 constructor(...e) {
@@ -649,10 +592,10 @@
                             return i
                                 ? i.muting
                                     ? r(s).then((t) => {
-                                          e({ text: (0, a.X6)(i.screen_name) }), this._scribeAction("unmute_user");
+                                          e({ text: (0, o.X6)(i.screen_name) }), this._scribeAction("unmute_user");
                                       }, t(c.G))
                                     : n(s).then((t) => {
-                                          e({ text: (0, a.FK)(i.screen_name) }), this._scribeAction("mute_user");
+                                          e({ text: (0, o.FK)(i.screen_name) }), this._scribeAction("mute_user");
                                       }, t(l.W))
                                 : Promise.resolve();
                         });
@@ -661,9 +604,9 @@
                     const { user: e } = this.props;
                     if (!e) return null;
                     const t = e.muting ? "destructiveOutlined" : "brandOutlined",
-                        n = e.muting ? s.default : o.default,
-                        l = e.muting ? (0, a.PY)(e.screen_name) : (0, a.Aq)(e.screen_name),
-                        c = e.muting ? a.cm : a.GS;
+                        n = e.muting ? s.default : a.default,
+                        l = e.muting ? (0, o.PY)(e.screen_name) : (0, o.Aq)(e.screen_name),
+                        c = e.muting ? o.cm : o.GS;
                     return r.createElement(i.ZP, { "aria-label": l, hoverLabel: { label: c }, icon: r.createElement(n, null), onPress: this._handleMutOrUnmuteToggle, type: t });
                 }
                 _scribeAction(e) {
@@ -671,7 +614,7 @@
                     t.scribe({ action: e, data: { items: n ? [u.Z.getUserItem(n)] : [] } });
                 }
             }
-            const y = f(b);
+            const v = f(b);
         },
         301410: (e, t, n) => {
             "use strict";
@@ -679,14 +622,14 @@
             var r = n(202784),
                 i = n(928123),
                 s = n.n(i),
-                o = n(72845),
-                a = n.n(o),
+                a = n(72845),
+                o = n.n(a),
                 l = n(57074),
                 c = n.n(l),
                 u = n(516951),
                 d = n(88656),
-                m = n(71620),
-                _ = n(163889),
+                _ = n(71620),
+                m = n(163889),
                 p = n(312771);
             const h = ({ render: e }) => e({ fetchStatus: p.ZP.LOADING, data: null, error: null, retry: u.Z });
             class g extends r.Component {
@@ -698,7 +641,7 @@
                 }
                 componentDidCatch(e, t) {
                     if (!(e instanceof d.Z)) throw e;
-                    this.props.errorHandler(e), (0, _.Hj)(e, { level: "warning", tags: { userVisible: !0 } });
+                    this.props.errorHandler(e), (0, m.Hj)(e, { level: "warning", tags: { userVisible: !0 } });
                 }
                 render() {
                     return this.props.children(this.state.error, this.props.retry);
@@ -710,21 +653,21 @@
                 },
                 b = (e, t) =>
                     function ({ fetchPolicy: n = "store-or-network", render: i, variables: s }) {
-                        const [o, l] = a()(e),
-                            u = (0, m.n7)(t.errorConfig.context),
+                        const [a, l] = o()(e),
+                            u = (0, _.n7)(t.errorConfig.context),
                             d = c()(s),
-                            _ = r.useCallback(() => {
+                            m = r.useCallback(() => {
                                 l(d, { fetchPolicy: "network-only" });
                             }, [l, d]);
                         return (
                             r.useLayoutEffect(() => {
                                 l(d, { fetchPolicy: n });
                             }, [n, l, d]),
-                            o
+                            a
                                 ? r.createElement(
                                       r.Suspense,
                                       { fallback: r.createElement(h, { render: i }) },
-                                      r.createElement(g, { errorHandler: u(t.errorConfig.options || {}), key: o.fetchKey, retry: _ }, (t, n) => (t ? i({ fetchStatus: p.ZP.FAILED, error: t, data: null, retry: n }) : r.createElement(f, { query: e, queryRef: o, render: i }))),
+                                      r.createElement(g, { errorHandler: u(t.errorConfig.options || {}), key: a.fetchKey, retry: m }, (t, n) => (t ? i({ fetchStatus: p.ZP.FAILED, error: t, data: null, retry: n }) : r.createElement(f, { query: e, queryRef: a, render: i }))),
                                   )
                                 : null
                         );
@@ -732,21 +675,21 @@
         },
         900128: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => v });
+            n.d(t, { Z: () => w });
             var r = n(202784),
                 i = n(325686),
                 s = n(731708),
-                o = n(855488),
-                a = n(420412),
+                a = n(855488),
+                o = n(420412),
                 l = n(844685),
                 c = n(392237),
                 u = n(111677),
                 d = n.n(u),
-                m = n(666536),
-                _ = n(668214),
+                _ = n(666536),
+                m = n(668214),
                 p = n(395042),
                 h = n(919022);
-            const g = (0, _.Z)()
+            const g = (0, m.Z)()
                     .propsFromState(() => ({ viewerUser: h.ZP.selectViewerUser, usernameData: p.El }))
                     .adjustStateProps(({ usernameData: e, viewerUser: t }) => {
                         const n = (e.suggestions ? e.suggestions.map((e) => e.suggestion) : []).filter((t) => t !== e.username),
@@ -756,7 +699,7 @@
                     .propsFromActions(() => ({ fetchUsernameAvailability: p.HR })),
                 f = d().d1f6d336,
                 b = d().de65c756;
-            class y extends r.Component {
+            class v extends r.Component {
                 constructor(e) {
                     super(e),
                         (this._fetchUsernameStatus = (e) => {
@@ -775,14 +718,14 @@
                             }
                         }),
                         (this.state = { value: e.viewerUser && e.viewerUser.screen_name }),
-                        (this._fetchUsernameStatusDebounced = (0, m.Z)((...e) => this._fetchUsernameStatus(...e), 250));
+                        (this._fetchUsernameStatusDebounced = (0, _.Z)((...e) => this._fetchUsernameStatus(...e), 250));
                 }
                 componentDidMount() {
                     const { viewerUser: e } = this.props;
                     e && this._fetchUsernameStatus(e.screen_name);
                 }
                 _renderOption(e, t) {
-                    return r.createElement(s.ZP, { color: "link", key: t, onPress: this._handleItemSelect, role: "button", style: w.altOptionText, withInteractiveStyling: !0 }, e);
+                    return r.createElement(s.ZP, { color: "link", key: t, onPress: this._handleItemSelect, role: "button", style: y.altOptionText, withInteractiveStyling: !0 }, e);
                 }
                 render() {
                     const { suggestions: e, valid: t, validatedScreenName: n, validationError: s, viewerUser: c } = this.props;
@@ -791,19 +734,19 @@
                     return r.createElement(
                         i.Z,
                         null,
-                        r.createElement(o.Z, { autoComplete: "off", autoCorrect: !1, errorText: s, invalid: u, label: f, name: "typedScreenName", onChange: this._handleTypedFieldChange, spellCheck: "false", value: this.state.value }),
-                        r.createElement(a.Z, null),
+                        r.createElement(a.Z, { autoComplete: "off", autoCorrect: !1, errorText: s, invalid: u, label: f, name: "typedScreenName", onChange: this._handleTypedFieldChange, spellCheck: "false", value: this.state.value }),
+                        r.createElement(o.Z, null),
                         r.createElement(l.Z, { text: b }),
                         r.createElement(
                             i.Z,
-                            { style: w.container },
+                            { style: y.container },
                             e.map((e, t) => this._renderOption(e, t)),
                         ),
                     );
                 }
             }
-            const w = c.default.create((e) => ({ container: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, altOptionText: { display: "block", paddingVertical: e.spaces.space12 } })),
-                v = g(y);
+            const y = c.default.create((e) => ({ container: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, altOptionText: { display: "block", paddingVertical: e.spaces.space12 } })),
+                w = g(v);
         },
         733487: (e, t, n) => {
             "use strict";
@@ -811,26 +754,26 @@
             var r = n(202784),
                 i = n(154003),
                 s = n(111677),
-                o = n.n(s),
-                a = n(40904),
+                a = n.n(s),
+                o = n(40904),
                 l = n(391366),
                 c = n(775412),
                 u = n(837731),
                 d = n(942893),
-                m = n(71620),
-                _ = n(668214),
+                _ = n(71620),
+                m = n(668214),
                 p = n(296196),
                 h = n(601576),
                 g = n(919022);
             const f = (e, t) => g.ZP.select(e, t.userId),
-                b = (0, _.Z)()
+                b = (0, m.Z)()
                     .propsFromState(() => ({ user: f }))
-                    .propsFromActions(() => ({ addToast: h.fz, createLocalApiErrorHandler: (0, m.zr)("MUTE_DM_BUTTON_CONTAINER"), muteDMUser: p.muteDMUser, unmuteDMUser: p.unmuteDMUser }))
+                    .propsFromActions(() => ({ addToast: h.fz, createLocalApiErrorHandler: (0, _.zr)("MUTE_DM_BUTTON_CONTAINER"), muteDMUser: p.muteDMUser, unmuteDMUser: p.unmuteDMUser }))
                     .withAnalytics(),
-                y = o().e67b2d65,
-                w = o().f05597b3,
-                v = o().gde6b425,
-                S = o().e308019b;
+                v = a().e67b2d65,
+                y = a().f05597b3,
+                w = a().gde6b425,
+                S = a().e308019b;
             class C extends r.Component {
                 constructor(...e) {
                     super(...e),
@@ -845,7 +788,7 @@
                                           e({ text: S({ name: i.name }) }), this._scribeAction("unmute_user");
                                       }, t(u.G))
                                     : n(s).then((t) => {
-                                          e({ text: v({ name: i.name }) }), this._scribeAction("mute_user");
+                                          e({ text: w({ name: i.name }) }), this._scribeAction("mute_user");
                                       }, t(c.W))
                                 : Promise.resolve();
                         });
@@ -854,8 +797,8 @@
                     const { user: e } = this.props;
                     if (!e) return null;
                     const t = e.dm_muting ? "destructiveOutlined" : "brandOutlined",
-                        n = e.dm_muting ? a.default : l.default,
-                        s = e.dm_muting ? w({ screenName: e.screen_name }) : y({ screenName: e.screen_name });
+                        n = e.dm_muting ? o.default : l.default,
+                        s = e.dm_muting ? y({ screenName: e.screen_name }) : v({ screenName: e.screen_name });
                     return r.createElement(i.ZP, { "aria-label": s, icon: r.createElement(n, null), onPress: this._handleUnmuteToggle, type: t });
                 }
                 _scribeAction(e) {
@@ -867,4 +810,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-9f4db315.691eeb8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-9f4db315.e5cf4f2a.js.map

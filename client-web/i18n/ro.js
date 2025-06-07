@@ -1185,7 +1185,6 @@
                 t("c3aa76c4", "Limbi pe care probabil că le cunoști"),
                 t("g099069c", "Gestionează limbile deduse de X pe baza activității tale, cum ar fi conturile pe care le urmărești și postările cu care interacționezi."),
                 t("cf9ce876", "Limbile pentru aplicație și postări"),
-                t("d4372cf4", "English (US), 中文(简体), Español"),
                 t("f8e46b90", "Acestea sunt conturile sociale pe care le-ai asociat cu contul tău X pentru a te conecta. Poți dezactiva accesul aici."),
                 t("d84ed6b2", "Deconectare"),
                 t("i51130d4", "Google"),
@@ -1928,9 +1927,9 @@
                 t("a8fdd09c", "Publică articolul"),
                 t("d8047cc8", "Publică"),
                 t("ff7ddca2", "După publicare, articolul va apărea ca postare. Îl vei găsi și în fila Articole de pe profilul tău."),
-                t("ef34d7be", "Publicul și controalele asupra răspunsurilor nu se pot edita după publicarea articolului.");
-            t("e52d4998", "Alege-ți publicul"),
-                t("d7985b24", "Alege cine poate răspunde la acest articol"),
+                t("ef34d7be", "Publicul și controalele asupra răspunsurilor nu se pot edita după publicarea articolului."),
+                t("e52d4998", "Alege-ți publicul");
+            t("d7985b24", "Alege cine poate răspunde la acest articol"),
                 t("b5660338", "Previzualizare Cronologie"),
                 t("hff1b97a", "Doar utilizatorii abonați pot răspunde."),
                 t("a330771e", "Copiază linkul pe clipboard"),
@@ -2984,9 +2983,9 @@
                 t("ce6d095a", "Cariere"),
                 t("e0adec82", "Resurse pentru branduri"),
                 t("df1b7550", "Marketing"),
-                t("he258678", "X pentru afaceri");
-            t("c6f58084", "Dezvoltatori"),
-                t("d83f18d2", "Director"),
+                t("he258678", "X pentru afaceri"),
+                t("c6f58084", "Dezvoltatori");
+            t("d83f18d2", "Director"),
                 t("hc5aa17c", "Obţine aplicația X"),
                 t("j0693948", "Obține aplicația Grok"),
                 t("fce9ecce", "Videoclipuri sugerate"),
@@ -3898,11 +3897,11 @@
                 t("ddeb0a3c", "Aceasta este Comunitatea. Îți plac membrii? Aruncă o privire."),
                 t("e111f531", function (e) {
                     return e.count + " a" + r(e.count, "u", "", "u") + " urmărit";
+                }),
+                t("cbef820f", function (e) {
+                    return e.screenName + " a repostat fluxul!";
                 });
-            t("cbef820f", function (e) {
-                return e.screenName + " a repostat fluxul!";
-            }),
-                t("e3275464", "Trimite"),
+            t("e3275464", "Trimite"),
                 t("cededf2a", "Gazdă"),
                 t("i2caef48", "Co-gazde"),
                 t("j245c654", "Vorbitori"),
@@ -4936,9 +4935,9 @@
                 t("d9f9dec0", "Vezi Spațiu"),
                 t("h0c1f37a", "Vezi Analiză Spațiu"),
                 t("e41fffbc", "Durata totală de vizionare a videoclipurilor."),
-                t("if2909ba", "Durată vizionare");
-            t("i0e5bf4c", "Videoclipurile tale"),
-                t("ed99baea", "Acces timpuriu la versiunea beta"),
+                t("if2909ba", "Durată vizionare"),
+                t("i0e5bf4c", "Videoclipurile tale");
+            t("ed99baea", "Acces timpuriu la versiunea beta"),
                 t("gf898b70", "Căutare avansată"),
                 t("d2a43a7a", "conține atât „ai”, cât și „start-up”"),
                 t("a8584698", "start-up ai"),
@@ -5892,9 +5891,9 @@
                 t("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Șterge folder");
-            t("f4ea967a", "Folderul a fost șters"),
-                t("b670aa62", "Nume folder"),
+                t("h18f86a4", "Șterge folder"),
+                t("f4ea967a", "Folderul a fost șters");
+            t("b670aa62", "Nume folder"),
                 t("aece5462", "Denumirea folderului a fost actualizată cu succes"),
                 t("e3299b94", "Ceva nu a mers bine. Încearcă din nou să actualizezi acel folder într-un minut."),
                 t("c09ea714", "Ceva nu a mers bine. Încearcă din nou să ștergi folderul într-un minut."),
@@ -6896,9 +6895,9 @@
                 t("ede7d0a2", "Monedă"),
                 t("b925c18c", "Tip de salarizare"),
                 t("j3d242ce", "Interval nevalid"),
-                t("f4d07bd2", "Include detalii opționale pentru a-i ajuta pe candidați să descopere posturile cu opțiunea de căutare.");
-            t("b8cbb51a", "Rezumatul locului de muncă"),
-                t("bda6881e", "Acest loc de muncă a fost importat din Sistemul de urmărire a candidaturilor (ATS). Ai în vedere că doar anumite câmpuri pot fi modificate."),
+                t("f4d07bd2", "Include detalii opționale pentru a-i ajuta pe candidați să descopere posturile cu opțiunea de căutare."),
+                t("b8cbb51a", "Rezumatul locului de muncă");
+            t("bda6881e", "Acest loc de muncă a fost importat din Sistemul de urmărire a candidaturilor (ATS). Ai în vedere că doar anumite câmpuri pot fi modificate."),
                 t("b075c68a", "Editare loc de muncă"),
                 t("d4b6a6e0", "Profil în prim plan"),
                 t("j2dd3686", "Evidențiază locurile de muncă recomandate deasupra postărilor mele."),
@@ -7241,6 +7240,8 @@
                 t("hd80bd3e", "Promovează o postare"),
                 t("fe2b0008", "Află cum să utilizezi X"),
                 t("h257d4aa", "Selectează o postare pe care să o promovezi"),
+                t("e9334fe6", "Data updates every few minutes"),
+                t("a6d7b1d0", "Based on X Internal Data"),
                 t("h9b28dae", "You’re saving time with an ad-free feed"),
                 t("f6c50ec0", "Perioada de încercare fără reclame s-a încheiat"),
                 t("e1d1fbca", "You’ve avoided"),
@@ -7875,8 +7876,7 @@
                 t("i5f14be7", function (e) {
                     return "Bine ai revenit, " + e.displayName;
                 }),
-                t("a76d58ba", "Analiză reclame"),
-                t("eccd0e1a", "Analiză organizații");
+                t("a76d58ba", "Analiză reclame");
             function c(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7915,7 +7915,8 @@
                     u(e, a)
                 );
             }
-            t("deea1708", "Vrei să vezi analiza pentru toate conturile tale X?"),
+            t("eccd0e1a", "Analiză organizații"),
+                t("deea1708", "Vrei să vezi analiza pentru toate conturile tale X?"),
                 t("eb603ffc", "Fă upgrade pentru a adăuga afiliați la rețeaua ta și pentru a vedea analiza agregată."),
                 t("gf67aae4", "Fă upgrade pentru acces complet"),
                 t("h75e3618", "Include organizația"),
@@ -8913,9 +8914,9 @@
                 t("a6ada13e", "Cumpără acum"),
                 t("j0f12222", "Vezi mai multe"),
                 t("f569f7c8", "Accesează site-ul"),
-                t("j0c6772a", "Vizitează site-ul"),
-                t("f73003aa", "Videoclipul se va reda după reclamă");
-            t("b3112b8a", "Omite"),
+                t("j0c6772a", "Vizitează site-ul");
+            t("f73003aa", "Videoclipul se va reda după reclamă"),
+                t("b3112b8a", "Omite"),
                 t("h6333ad0", "Omite reclama"),
                 t("c59da417", function (e) {
                     return "Omite reclama în " + e.seconds;
@@ -13365,4 +13366,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.4e21259a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.bf564e0a.js.map

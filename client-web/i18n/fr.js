@@ -1178,7 +1178,6 @@
                 n("c3aa76c4", "Langues que vous semblez connaître"),
                 n("g099069c", "Gérez les langues déduites par X en fonction de votre activité, comme les comptes que vous suivez et les posts avec lesquels vous interagissez."),
                 n("cf9ce876", "Langues de l'application et des posts"),
-                n("d4372cf4", "Anglais (US), 中文(简体), Espagnol"),
                 n("f8e46b90", "Vous avez connecté ces comptes de réseaux sociaux à votre compte X pour votre connexion. Vous pouvez désactiver l'accès ici."),
                 n("d84ed6b2", "Déconnecter"),
                 n("i51130d4", "Google"),
@@ -1921,9 +1920,9 @@
                 n("a8fdd09c", "Publier l'Article"),
                 n("d8047cc8", "Publier"),
                 n("ff7ddca2", "Votre Article apparaîtra comme un post une fois publié. Par ailleurs, vous le trouverez sous l'onglet Articles de votre profil."),
-                n("ef34d7be", "Les options d'audience et de réponse ne peuvent pas être modifiées une fois qu'un Article a été publié.");
-            n("e52d4998", "Choisissez votre audience"),
-                n("d7985b24", "Choisissez qui peut répondre à cet Article"),
+                n("ef34d7be", "Les options d'audience et de réponse ne peuvent pas être modifiées une fois qu'un Article a été publié."),
+                n("e52d4998", "Choisissez votre audience");
+            n("d7985b24", "Choisissez qui peut répondre à cet Article"),
                 n("b5660338", "Aperçu du fil"),
                 n("hff1b97a", "Seules les personnes abonnées peuvent répondre."),
                 n("a330771e", "Copier le lien dans mon Presse‑papiers"),
@@ -2977,9 +2976,9 @@
                 n("ce6d095a", "Carrières"),
                 n("e0adec82", "Ressources de la marque"),
                 n("df1b7550", "Marketing"),
-                n("he258678", "X pour les professionnels");
-            n("c6f58084", "Développeurs"),
-                n("d83f18d2", "Répertoire"),
+                n("he258678", "X pour les professionnels"),
+                n("c6f58084", "Développeurs");
+            n("d83f18d2", "Répertoire"),
                 n("hc5aa17c", "Télécharger l'application X"),
                 n("j0693948", "Télécharger l'application Grok"),
                 n("fce9ecce", "Vidéos suggérées"),
@@ -3891,11 +3890,11 @@
                 n("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
                 n("e111f531", function (e) {
                     return e.count + " " + r(e.count, "a", "ont") + " écouté";
+                }),
+                n("cbef820f", function (e) {
+                    return e.screenName + " a reposté le stream !";
                 });
-            n("cbef820f", function (e) {
-                return e.screenName + " a reposté le stream !";
-            }),
-                n("e3275464", "Envoyer"),
+            n("e3275464", "Envoyer"),
                 n("cededf2a", "Hôte"),
                 n("i2caef48", "Cohôtes"),
                 n("j245c654", "Intervenants"),
@@ -4929,9 +4928,9 @@
                 n("d9f9dec0", "Voir l'Espace"),
                 n("h0c1f37a", "Voir les statistiques de l'Espace"),
                 n("e41fffbc", "Le temps de visionnage total de vos vidéos."),
-                n("if2909ba", "Temps de visionnage");
-            n("i0e5bf4c", "Vos vidéos"),
-                n("ed99baea", "Accès anticipé à la version bêta"),
+                n("if2909ba", "Temps de visionnage"),
+                n("i0e5bf4c", "Vos vidéos");
+            n("ed99baea", "Accès anticipé à la version bêta"),
                 n("gf898b70", "Recherche avancée"),
                 n("d2a43a7a", 'contient à la fois "ia" et "startup"'),
                 n("a8584698", "startup ia"),
@@ -5885,9 +5884,9 @@
                 n("e41c9b4f", function (e) {
                     return "Enregistré dans le dossier " + e.bookmarkFolderName;
                 }),
-                n("h18f86a4", "Supprimer le dossier");
-            n("f4ea967a", "Le dossier a été supprimé."),
-                n("b670aa62", "Nom du dossier"),
+                n("h18f86a4", "Supprimer le dossier"),
+                n("f4ea967a", "Le dossier a été supprimé.");
+            n("b670aa62", "Nom du dossier"),
                 n("aece5462", "Le nom du dossier a bien été mis à jour."),
                 n("e3299b94", "Une erreur s'est produite. Réessayez de mettre ce dossier à jour dans un moment."),
                 n("c09ea714", "Une erreur s'est produite. Réessayez de supprimer ce dossier dans un moment."),
@@ -6889,9 +6888,9 @@
                 n("ede7d0a2", "Devise"),
                 n("b925c18c", "Type de salaire "),
                 n("j3d242ce", "Plage non valide"),
-                n("f4d07bd2", "Indiquez des détails facultatifs qui permettront aux candidats de découvrir plus facilement vos offres en effectuant une recherche.");
-            n("b8cbb51a", "Résumé du poste"),
-                n("bda6881e", "Cette offre d'emploi a été importée depuis votre système de suivi des candidats (Applicant Tracking System, ou ATS). Veuillez noter que seuls des champs spécifiques peuvent être modifiés."),
+                n("f4d07bd2", "Indiquez des détails facultatifs qui permettront aux candidats de découvrir plus facilement vos offres en effectuant une recherche."),
+                n("b8cbb51a", "Résumé du poste");
+            n("bda6881e", "Cette offre d'emploi a été importée depuis votre système de suivi des candidats (Applicant Tracking System, ou ATS). Veuillez noter que seuls des champs spécifiques peuvent être modifiés."),
                 n("b075c68a", "Modifier l'offre d'emploi"),
                 n("d4b6a6e0", "Spotlight sur le profil"),
                 n("j2dd3686", "Les offres mises en avant apparaissent au‑dessus de mes posts."),
@@ -7234,6 +7233,8 @@
                 n("hd80bd3e", "Sponsoriser un post"),
                 n("fe2b0008", "Découvrir comment utiliser X"),
                 n("h257d4aa", "Choisir un post à sponsoriser"),
+                n("e9334fe6", "Data updates every few minutes"),
+                n("a6d7b1d0", "Based on X Internal Data"),
                 n("h9b28dae", "You’re saving time with an ad-free feed"),
                 n("f6c50ec0", "Votre essai sans publicités est terminé"),
                 n("e1d1fbca", "You’ve avoided"),
@@ -7868,8 +7869,7 @@
                 n("i5f14be7", function (e) {
                     return "Heureux de vous retrouver, " + e.displayName;
                 }),
-                n("a76d58ba", "Statistiques des publicités"),
-                n("eccd0e1a", "Statistiques de l'organisation ");
+                n("a76d58ba", "Statistiques des publicités");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7908,7 +7908,8 @@
                     i(e, t)
                 );
             }
-            n("deea1708", "Vous voulez afficher les statistiques pour tous vos comptes X ?"),
+            n("eccd0e1a", "Statistiques de l'organisation "),
+                n("deea1708", "Vous voulez afficher les statistiques pour tous vos comptes X ?"),
                 n("eb603ffc", "Mettez à niveau pour affilier votre réseau et afficher des statistiques agrégées."),
                 n("gf67aae4", "Passez à l'Accès complet"),
                 n("h75e3618", "Inclure l'organisation"),
@@ -8906,9 +8907,9 @@
                 n("a6ada13e", "Acheter maintenant"),
                 n("j0f12222", "Voir plus"),
                 n("f569f7c8", "Accéder au site Web"),
-                n("j0c6772a", "Visiter le site Web"),
-                n("f73003aa", "La vidéo sera lue après la publicité.");
-            n("b3112b8a", "Passer"),
+                n("j0c6772a", "Visiter le site Web");
+            n("f73003aa", "La vidéo sera lue après la publicité."),
+                n("b3112b8a", "Passer"),
                 n("h6333ad0", "Ignorer la publicité"),
                 n("c59da417", function (e) {
                     return "Ignorer la publicité dans " + e.seconds;
@@ -13355,4 +13356,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.915bfe8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.0472b40a.js.map

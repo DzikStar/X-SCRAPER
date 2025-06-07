@@ -117,8 +117,8 @@
                 D = t.n(f),
                 g = t(212618),
                 y = t.n(g),
-                v = t(320378),
-                M = t.n(v),
+                M = t(320378),
+                v = t.n(M),
                 A = t(790925),
                 T = t.n(A),
                 k = t(433261),
@@ -144,22 +144,24 @@
                                             const { code: a } = e;
                                             a === x.ZP.GenericAccessDenied &&
                                                 Promise.all([
-                                                    t.e("icons.8"),
-                                                    t.e("icons.15"),
-                                                    t.e("icons.7"),
-                                                    t.e("icons.3"),
-                                                    t.e("icons.24"),
+                                                    t.e("icons.0"),
+                                                    t.e("icons.5"),
                                                     t.e("icons.12"),
-                                                    t.e("icons.22"),
+                                                    t.e("icons.20"),
                                                     t.e("icons.2"),
-                                                    t.e("icons.18"),
+                                                    t.e("icons.21"),
+                                                    t.e("icons.28"),
+                                                    t.e("icons.10"),
+                                                    t.e("icons.17"),
                                                     t.e("icons.9"),
-                                                    t.e("icons.1"),
-                                                    t.e("icons.6"),
-                                                    t.e("icons.14"),
+                                                    t.e("icons.23"),
                                                     t.e("modules.common-e907d115"),
                                                     t.e("modules.common-e019dbda"),
-                                                    t.e("icons.5"),
+                                                    t.e("icons.22"),
+                                                    t.e("icons.24"),
+                                                    t.e("icons.25"),
+                                                    t.e("icons.14"),
+                                                    t.e("icons.13"),
                                                     t.e("modules.audio-6107ac1a"),
                                                     t.e("modules.audio-b953418a"),
                                                     t.e("modules.audio-7c51e6a7"),
@@ -170,12 +172,10 @@
                                                     t.e("modules.audio-e019dbda"),
                                                     t.e("modules.audio-262c94d4"),
                                                     t.e("modules.audio-c6fe4ea4"),
-                                                    t.e("icons.21"),
-                                                    t.e("icons.16"),
-                                                    t.e("icons.28"),
-                                                    t.e("icons.17"),
-                                                    t.e("icons.27"),
-                                                    t.e("icons.0"),
+                                                    t.e("icons.6"),
+                                                    t.e("icons.3"),
+                                                    t.e("icons.4"),
+                                                    t.e("icons.1"),
                                                     t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                                                     t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                                                     t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -245,7 +245,7 @@
                     search(a, t) {
                         const o = "spacesSearch";
                         return e
-                            .graphQL(M(), { query: a, filter: t }, R(o, a))
+                            .graphQL(v(), { query: a, filter: t }, R(o, a))
                             .catch(C(o))
                             .then((e) =>
                                 e?.search_by_raw_query?.audio_spaces_grouped_by_section
@@ -472,20 +472,6 @@
             s.metadata = { width: 24, height: 24 };
             const d = s;
         },
-        409600: (e, a, t) => {
-            "use strict";
-            t.r(a), t.d(a, { default: () => d });
-            var o = t(202784),
-                r = t(890601),
-                i = t(783427),
-                n = t(347101);
-            const s = (e = {}) => {
-                const { direction: a } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M8 3v18M4 9v6m8-8v10m4-12v14m4-10v6", stroke: "#0f141a", strokeWidth: "2" })) }, { writingDirection: a });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const d = s;
-        },
         447486: (e, a, t) => {
             "use strict";
             t.d(a, { Z: () => n });
@@ -517,4 +503,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-6107ac1a.40d80e0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-6107ac1a.6da7476a.js.map

@@ -5,7 +5,7 @@
         718278: (e, s, t) => {
             t.d(s, { o: () => o });
             var n = t(552322),
-                a = t(436059),
+                a = t(993165),
                 r = t(159603);
             const i = r.com.x.logger.XLog,
                 o = () =>
@@ -33,14 +33,14 @@
         228805: (e, s, t) => {
             t.d(s, { r: () => Ze });
             var n = t(552322),
-                a = t(921879),
-                r = t(702024),
+                a = t(983706),
+                r = t(193686),
                 i = t(159603),
                 o = t(202784),
                 l = t(533476),
-                c = t(26429),
-                d = t(941204),
-                m = t(475694),
+                c = t(378364),
+                d = t(332161),
+                m = t(789764),
                 u = t(369962),
                 x = t(455091);
             const h = i.com.x.dms.model.InformationalItemContents;
@@ -129,9 +129,9 @@
                     { t } = (0, x.$G)();
                 return (0, n.jsx)(f, { children: s instanceof h.AddedGroupMembers ? (0, n.jsx)(j, { contents: s }) : s instanceof h.RemovedGroupMembers ? (0, n.jsx)(v, { contents: s }) : s instanceof h.AddedGroupAdmins ? (0, n.jsx)(y, { contents: s }) : s instanceof h.RemovedGroupAdmins ? (0, n.jsx)(w, { contents: s }) : s instanceof h.ChangedGroupTitle ? (0, n.jsx)(b, { contents: s }) : s instanceof h.ChangedGroupAvatar ? (0, n.jsx)(N, { contents: s }) : s instanceof h.DefaultTtlChanged ? (0, n.jsx)(I, { contents: s }) : s instanceof h.DateChanged ? (0, n.jsx)(C, { contents: s }) : s instanceof h.GroupInviteEnabled ? (0, n.jsx)(p, { message: t("Invite link enabled") }) : s instanceof h.GroupInviteDisabled ? (0, n.jsx)(p, { message: t("Invite link disabled") }) : null });
             }
-            var R = t(718130),
-                k = t(776076),
-                S = t(436059),
+            var R = t(594078),
+                k = t(318063),
+                S = t(993165),
                 E = t(553453),
                 M = t(611105),
                 $ = t(147602),
@@ -180,13 +180,13 @@
                 L = t(707513),
                 _ = t(38891),
                 B = t(189164),
-                q = t(461222);
+                q = t(42630);
             function K({ messageInfo: e, isReceived: s, showSignatureVerificationIssuesIcon: t }) {
                 const a = e.showReadUsers?.asJsReadonlyArrayView().map((e) => e.user?.profileImageUrl || "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png") || [],
                     r = (0, _.z)().isTrue("xchat_read_receipt_facepile") && a.length > 1;
                 return e.showReadUsers || e.showEdited || t ? (0, n.jsxs)("div", { className: `flex gap-1 items-center ${s ? "justify-start" : "justify-end"} mx-1 `, children: [e.showEdited && (0, n.jsx)(d.x, { size: "subtext3", color: "gray700", children: "Edited" }), e.showEdited && (t || (e.showReadUsers && r)) && (0, n.jsx)(q.A, {}), t && (0, n.jsx)(B.Z, {}), t && e.showReadUsers && r && (0, n.jsx)(q.A, {}), e.showReadUsers && r && (0, n.jsx)(m.o, { urls: a, size: "small", spacing: 6, stackOrder: "ascending" })] }) : null;
             }
-            var O = t(862399);
+            var O = t(983955);
             const H = ({ isReceived: e, textContent: s, textEntities: t, messageFooter: a }) => {
                     const r = {};
                     return t.forEach((e) => Y(e, r)), (0, n.jsxs)("div", { className: "inline-flex flex-wrap items-end gap-2", children: [(0, n.jsx)(O.W, { color: e ? "text" : "white", entities: r, linkColor: e ? void 0 : "white", text: s, underlineLinks: !e || void 0 }), a] });
@@ -201,8 +201,8 @@
             function W(e) {
                 return /^mailto:/i.test(e) ? e : `mailto:${e}`;
             }
-            var Q = t(86781),
-                ee = t(853425);
+            var Q = t(437712),
+                ee = t(651782);
             const se = ({ remainingReactions: e }) => {
                     const s = (0, o.useRef)(null),
                         t = (0, ee.X)(s);
@@ -323,10 +323,10 @@
                         j = r.equals(o) ? (s.senderIsCurrentUser ? p : g) : s.senderIsCurrentUser ? u : e ? h : f;
                     return (0, n.jsxs)("div", { className: `flex flex-col mt-0.5 gap-1 ${e ? "items-start" : "items-end"} cursor-pointer`, onClick: () => s.sequenceNumber && a(new ge.ReplyBubbleClicked(s.sequenceNumber)), children: [s.showReplyNames && (0, n.jsxs)("div", { className: "flex gap-1 px-2 " + (e ? "text-start" : "text-end"), children: [(0, n.jsx)(me.Z, { className: "inline-block text-text/70" }), (0, n.jsx)(d.x, { as: "span", className: "text-text/40", size: "subtext2", children: j })] }), s.attachment && (s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.Media && s.attachment.type === i.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(ue.K, { filename: s.attachment.filename, fileSize: s.attachment.fileSize }) : s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.Media.FromServer && s.attachment.uriState instanceof i.com.x.dms.model.MediaUriState.ResolvedMedia && (0, n.jsx)(xe.Et, { src: s.attachment.uriState.uri, type: s.attachment.type, dimensions: s.attachment.dimensions, className: "rounded-2xl !w-[25%] !h-[25%]", showAsStatic: !0 })), s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.UrlCard && (0, n.jsx)(he.C, { urlCard: s.attachment }), s.previewText && (0, n.jsx)("div", { className: "flex flex-col px-3 py-1.5 rounded-2xl gap-3 border " + (s.senderIsCurrentUser ? "border-primary/50" : "border-gray-400"), children: (0, n.jsx)(d.x, { color: s.senderIsCurrentUser ? "primary" : "gray900", size: "subtext1", numberOfLines: 2, children: s.previewText }) })] });
                 };
-            var fe = t(469745),
+            var fe = t(305399),
                 je = t(515790),
-                ve = t(703612),
-                ye = t(406125),
+                ve = t(589259),
+                ye = t(480158),
                 we = t(630086),
                 be = t(996016),
                 Ne = t(350311),
@@ -587,7 +587,7 @@
         548978: (e, s, t) => {
             t.d(s, { y: () => o });
             var n = t(552322),
-                a = t(475694),
+                a = t(789764),
                 r = t(350311),
                 i = t(455091);
             const o = ({ typingIndicatorItem: e }) => {
@@ -711,16 +711,16 @@
                 i = t(887491),
                 o = t(447742),
                 l = t(380389),
-                c = t(702024),
-                d = t(941204),
-                m = t(436059),
-                u = t(887390),
-                x = t(921879),
+                c = t(193686),
+                d = t(332161),
+                m = t(993165),
+                u = t(687521),
+                x = t(983706),
                 h = t(155369),
                 g = t(379342),
                 p = t(533476),
                 f = t(658358),
-                j = t(164695),
+                j = t(34681),
                 v = t(272795),
                 y = t(620134);
             const w = r.com.x.dms.newdm,
@@ -812,4 +812,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-eca6a814.2a87a3ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-eca6a814.3483e48a.js.map

@@ -367,7 +367,7 @@
                             if (!e) return null;
                             const { translationSource: i, translationState: n } = e,
                                 { featureSwitches: o } = this.context,
-                                s = o.isTrue("responsive_web_translation_feedback_enabled") && e && (!n || "Success" === n),
+                                s = o.isTrue("responsive_web_translation_feedback_enabled") && e && "Success" === n,
                                 a = t.id_str;
                             return s && a ? r.createElement(se.Z, { translationSource: i, tweetId: a }) : void 0;
                         }),
@@ -480,8 +480,9 @@
                                 n = i ? i() : null;
                             return () => r.createElement(a.Z, { style: Lt.actionsContainer }, n);
                         }),
-                        (this._isMounted = !1),
-                        (this.state = { isExpanded: !1, mediaAltTranslations: {}, showTranslation: !1, width: 0, showGrokTranslation: !!e.tweet.grok_translated_post });
+                        (this._isMounted = !1);
+                    const i = !!e.tweet.grok_translated_post || !!e.tweet.retweeted_status?.grok_translated_post;
+                    this.state = { isExpanded: !1, mediaAltTranslations: {}, showTranslation: !1, width: 0, showGrokTranslation: i };
                 }
                 componentDidMount() {
                     this._showReplyFilterInlineCallout() && this.props.handleReplyFilterInlineCalloutImpression?.(), this._shouldShowFoSnRViolationAuthorInlineCallout() && this.props.onFosnrAuthorLabelImpression?.(), (this._isMounted = !0);
@@ -922,4 +923,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.c8268fba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.df4d2f9a.js.map

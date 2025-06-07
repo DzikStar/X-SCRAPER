@@ -449,7 +449,7 @@
             }
             const L = l.default.create((e) => ({ dotContainer: { position: "relative", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", height: "100%" }, dot: { borderRadius: e.borderRadii.infinite }, pulseContainer: { position: "absolute", top: 0, start: 0, end: 0, bottom: 0, borderRadius: e.borderRadii.infinite, display: "flex", alignItems: "center", justifyContent: "center", width: "100%", height: "100%" }, pulse: { borderRadius: e.borderRadii.infinite, animationDuration: "1s", animationTimingFunction: "linear", animationIterationCount: "infinite", animationFillMode: "forwards", animationDelay: "0s", width: "100%", height: "100%", animationKeyframes: [{ "0%": { transform: "scale(0)", opacity: 1 } }, { "95%": { transform: "scale(1)", opacity: 1 } }, { "100%": { transform: "scale(1)", opacity: 0 } }] } })),
                 O = "news-sentiment-recharts";
-            function j({ chartData: e, isBlurred: t, question: n, typeMetadata: r }) {
+            function q({ chartData: e, isBlurred: t, question: n, typeMetadata: r }) {
                 const s = (0, p.Z)(),
                     { sentimentScores: d } = C({ chartData: e, typeMetadata: r }),
                     [m, u] = a.useState({}),
@@ -479,18 +479,18 @@
                     x = Object.keys(m);
                 return a.createElement(
                     o.Z,
-                    { style: [q.container, t ? q.blur : void 0] },
+                    { style: [j.container, t ? j.blur : void 0] },
                     a.createElement(
                         z.Z,
-                        { buttonsContainerStyle: q.typesContent, style: q.types },
+                        { buttonsContainerStyle: j.typesContent, style: j.types },
                         Object.keys(r).map((e) => {
                             const t = r[e];
-                            return a.createElement(f.Z, { key: `${e}-toggle`, onClick: () => g(e), withoutInteractiveStyles: !0 }, ({ isHovered: n }) => a.createElement(o.Z, { style: [q.typeContainer, { backgroundColor: c.Z.hexToCss(t.color, 0.5), color: t.color }, n ? { backgroundColor: c.Z.hexToCss(t.color, 0.3) } : void 0, x.length > 0 && !x.includes(e) ? { opacity: 0.5 } : void 0] }, a.createElement(i.ZP, { style: q.type }, t.label)));
+                            return a.createElement(f.Z, { key: `${e}-toggle`, onClick: () => g(e), withoutInteractiveStyles: !0 }, ({ isHovered: n }) => a.createElement(o.Z, { style: [j.typeContainer, { backgroundColor: c.Z.hexToCss(t.color, 0.5), color: t.color }, n ? { backgroundColor: c.Z.hexToCss(t.color, 0.3) } : void 0, x.length > 0 && !x.includes(e) ? { opacity: 0.5 } : void 0] }, a.createElement(i.ZP, { style: j.type }, t.label)));
                         }),
                     ),
                     a.createElement(
                         o.Z,
-                        { style: q.lineChart },
+                        { style: j.lineChart },
                         a.createElement(
                             B.Z,
                             { className: O },
@@ -501,8 +501,8 @@
                                     _.w,
                                     { data: e, height: y, key: h },
                                     a.createElement(S.q, { fillOpacity: 0.6, horizontal: !0, stroke: l.default.theme.colors.hoverBlack, strokeDasharray: "1 0", vertical: !1 }),
-                                    a.createElement(D.K, { axisLine: !1, dataKey: "timestamp", domain: ["dataMin", "dataMax"], tick: q.tick, tickFormatter: b, tickLine: !1, type: "number" }),
-                                    a.createElement(P.B, { axisLine: !1, domain: [0, 100], orientation: "right", tick: q.tick, tickFormatter: (e) => `${e}%`, tickLine: !1 }),
+                                    a.createElement(D.K, { axisLine: !1, dataKey: "timestamp", domain: ["dataMin", "dataMax"], tick: j.tick, tickFormatter: b, tickLine: !1, type: "number" }),
+                                    a.createElement(P.B, { axisLine: !1, domain: [0, 100], orientation: "right", tick: j.tick, tickFormatter: (e) => `${e}%`, tickLine: !1 }),
                                     a.createElement(I.u, { content: a.createElement(F, null), cursor: { stroke: l.default.theme.colors.gray200, strokeDasharray: "1 0" }, isAnimationActive: !1 }),
                                     Object.keys(r).map((e) => (m[e] || 0 === x.length ? a.createElement(M.x, { activeDot: !0, connectNulls: !0, dataKey: `${r[e].idx}-value`, dot: !1, key: `line-chart-${e}`, stroke: r[e].color, strokeWidth: 2.5, type: "monotone" }) : null)),
                                     d.map((e) => (m[e.type] || 0 === x.length ? a.createElement($.q, { alwaysShow: !0, isFront: !0, key: `sentiment-score-${e.type}`, shape: (t) => a.createElement(H, (0, v.Z)({}, t, { color: e.color })), x: e.timestamp, y: e.value }) : null)),
@@ -512,9 +512,9 @@
                     ),
                 );
             }
-            const q = l.default.create((e) => ({ container: { width: "100%" }, blur: { filter: "blur(5px)" }, types: { width: "100%" }, typesContent: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, marginVertical: e.spaces.space12 }, typeContainer: { width: "max-content", display: "flex", justifyContent: "center", alignItems: "center", paddingVertical: e.spaces.space4, paddingHorizontal: e.spaces.space8, borderRadius: e.borderRadii.xLarge, transition: "all 0.2s ease" }, type: { fontSize: e.fontSizes.subtext2 }, lineChart: { flex: 1, marginTop: e.spaces.space16 }, tick: { fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3, color: e.colors.gray900, fontFamily: e.fontFamilies.normal } })),
-                A = [l.default.theme.colors.blue300, l.default.theme.colors.yellow300, l.default.theme.colors.orange300, l.default.theme.colors.green300, l.default.theme.colors.magenta300, l.default.theme.colors.plum300, l.default.theme.colors.red300, l.default.theme.colors.purple300, l.default.theme.colors.teal300];
-            const W = m().af781666,
+            const j = l.default.create((e) => ({ container: { width: "100%" }, blur: { filter: "blur(5px)" }, types: { width: "100%" }, typesContent: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, marginVertical: e.spaces.space12 }, typeContainer: { width: "max-content", display: "flex", justifyContent: "center", alignItems: "center", paddingVertical: e.spaces.space4, paddingHorizontal: e.spaces.space8, borderRadius: e.borderRadii.xLarge, transition: "all 0.2s ease" }, type: { fontSize: e.fontSizes.subtext2 }, lineChart: { flex: 1, marginTop: e.spaces.space16 }, tick: { fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3, color: e.colors.gray900, fontFamily: e.fontFamilies.normal } })),
+                W = [l.default.theme.colors.blue300, l.default.theme.colors.yellow300, l.default.theme.colors.orange300, l.default.theme.colors.green300, l.default.theme.colors.magenta300, l.default.theme.colors.plum300, l.default.theme.colors.red300, l.default.theme.colors.purple300, l.default.theme.colors.teal300];
+            const A = m().af781666,
                 K = m().a1f414ee;
             function V({ articleId: e, containerStyle: t, hoveredContainerStyle: n, onClick: l, sentiment: c, showPercentages: d, size: m, style: f }) {
                 const g = (0, p.Z)(),
@@ -526,7 +526,7 @@
                                 n = {};
                             return (
                                 e.sentiment_types.forEach((t, a) => {
-                                    n[t] = { idx: a, label: t, color: A[a % e.sentiment_types.length] };
+                                    n[t] = { idx: a, label: t, color: W[a % e.sentiment_types.length] };
                                 }),
                                 [...(e.sentiment_scores ?? [])].forEach((e) => {
                                     const a = Number(e.timestamp),
@@ -541,7 +541,7 @@
                         const t = `https://x.com/i/news/article/${e}`;
                         u.ZP.isTwitterApp() ? (window.location.href = `https://x.com/compose/tweet?text=${t}`) : b.push({ pathname: "/compose/post", query: { text: t } }), g.scribe({ element: "share_news_article_sentiment", action: "click", data: { event_info: e } });
                     }, [g, e, b]);
-                return x.length ? (d ? a.createElement(E, { articleId: e, chartData: x, containerStyle: t, hoveredStyle: n, onClick: l, question: c.question, size: m, style: f, typeMetadata: w }) : a.createElement(o.Z, { style: [U.container, f] }, a.createElement(o.Z, { style: U.headerContainer }, a.createElement(o.Z, { style: U.questionContainer }, a.createElement(o.Z, { style: U.titleContainer }, a.createElement(i.ZP, { style: U.title, weight: "bold" }, W), a.createElement(s.ZP, { onClick: k, size: "small", type: "primaryFilled" }, K)), a.createElement(i.ZP, { style: U.question }, c.question))), a.createElement(o.Z, { style: U.visibilityContainer }, a.createElement(j, { chartData: x, isBlurred: !C, question: c.question, typeMetadata: w }), !C && a.createElement(o.Z, { style: U.loggedOutContainer }, a.createElement(s.ZP, { backgroundColor: "gray50", borderColor: "transparent", link: "/login" }, "Login to view"))))) : null;
+                return x.length ? (d ? a.createElement(E, { articleId: e, chartData: x, containerStyle: t, hoveredStyle: n, onClick: l, question: c.question, size: m, style: f, typeMetadata: w }) : a.createElement(o.Z, { style: [U.container, f] }, a.createElement(o.Z, { style: U.headerContainer }, a.createElement(o.Z, { style: U.questionContainer }, a.createElement(o.Z, { style: U.titleContainer }, a.createElement(i.ZP, { style: U.title, weight: "bold" }, A), a.createElement(s.ZP, { onClick: k, size: "small", type: "primaryFilled" }, K)), a.createElement(i.ZP, { style: U.question }, c.question))), a.createElement(o.Z, { style: U.visibilityContainer }, a.createElement(q, { chartData: x, isBlurred: !C, question: c.question, typeMetadata: w }), !C && a.createElement(o.Z, { style: U.loggedOutContainer }, a.createElement(s.ZP, { backgroundColor: "gray50", borderColor: "transparent", link: "/login" }, "Login to view"))))) : null;
             }
             const U = l.default.create((e) => ({ container: { width: "100%", padding: e.spaces.space16, backgroundColor: e.colors.gray0, transition: "background-color 0.2s ease", borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray200 }, hoveredContainer: { backgroundColor: e.colors.gray400, cursor: "pointer" }, headerContainer: { display: "flex", flexDirection: "row", width: "100%", gap: e.spaces.space16 }, questionContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8, width: "100%" }, titleContainer: { display: "flex", flexDirection: "row", flex: 1, justifyContent: "space-between", alignItems: "center" }, title: {}, question: {}, visibilityContainer: { position: "relative" }, loggedOutContainer: { position: "absolute", start: 0, top: 0, width: "100%", height: "100%", backgroundColor: c.Z.hexToCss(e.colors.gray0, 0.5), display: "flex", justifyContent: "center", alignItems: "center" } }));
         },
@@ -656,26 +656,6 @@
                 w = f.default.create((e) => ({ backgroundBlur: { backdropFilter: "blur(2px)" }, backgroundRootBlur: { boxShadow: "light" === e.paletteName ? e.boxShadows.small : "0 0 5px rgba(80,80,80,0.2), 0 1px 4px 1px rgba(80,80,80,0.25)" }, mask: { ...f.default.absoluteFillObject, position: "fixed", transitionProperty: "background-color", transitionTimingFunction: "ease" }, maskWithBg: { backgroundColor: e.colors.maskColor }, maskTransparent: { backgroundColor: e.colors.transparent }, root: { display: "flex", flexDirection: "column", backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.small, minWidth: 280, maxWidth: "100%", flexGrow: 1, flexShrink: 1, minHeight: 0, height: "100vh", transitionProperty: "transform", transitionTimingFunction: "ease" }, visibleDrawer: { transform: [{ translateX: "0%" }] }, offscreenLeftDrawer: { transform: [{ translateX: "-100%" }] }, offscreenRightDrawer: { transform: [{ translateX: "100%" }] }, alignLeft: { alignItems: "flex-start" }, alignRight: { alignItems: "flex-end" }, animateOpen: { transitionDuration: "250ms" }, animateClose: { transitionDuration: "200ms" }, contentContainer: { flexGrow: 1, flexShrink: 1, minHeight: 0, overflowY: "auto", overscrollBehavior: "contain" } })),
                 E = C;
         },
-        840489: (e, t, n) => {
-            function a(e) {
-                var t,
-                    n,
-                    o = "";
-                if ("string" == typeof e || "number" == typeof e) o += e;
-                else if ("object" == typeof e)
-                    if (Array.isArray(e)) {
-                        var r = e.length;
-                        for (t = 0; t < r; t++) e[t] && (n = a(e[t])) && (o && (o += " "), (o += n));
-                    } else for (n in e) e[n] && (o && (o += " "), (o += n));
-                return o;
-            }
-            function o() {
-                for (var e, t, n = 0, o = "", r = arguments.length; n < r; n++) (e = arguments[n]) && (t = a(e)) && (o && (o += " "), (o += t));
-                return o;
-            }
-            n.d(t, { W: () => o, Z: () => r });
-            const r = o;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News~loader.ExploreNews.1d75bfaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News~loader.ExploreNews.14aef6aa.js.map

@@ -2,7 +2,37 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.XChat-866ab763"],
     {
-        702024: (e, t, r) => {
+        97759: (e, t, r) => {
+            r.d(t, { Z: () => s });
+            var n = r(552322);
+            const s = (e) => (0, n.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, n.jsx)("path", { d: "M13 3v13.59l5.043-5.05 1.414 1.42L12 20.41l-7.457-7.45 1.414-1.42L11 16.59V3h2z" }) });
+        },
+        14313: (e, t, r) => {
+            r.d(t, { Z: () => s });
+            var n = r(552322);
+            const s = (e) => (0, n.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, n.jsx)("path", { d: "M12 3.59l7.457 7.45-1.414 1.42L13 7.41V21h-2V7.41l-5.043 5.05-1.414-1.42L12 3.59z" }) });
+        },
+        887491: (e, t, r) => {
+            r.d(t, { Z: () => s });
+            var n = r(552322);
+            const s = (e) => (0, n.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, n.jsx)("path", { d: "M10.59 12L4.54 5.96l1.42-1.42L12 10.59l6.04-6.05 1.42 1.42L13.41 12l6.05 6.04-1.42 1.42L12 13.41l-6.04 6.05-1.42-1.42L10.59 12z" }) });
+        },
+        668631: (e, t, r) => {
+            r.d(t, { Z: () => s });
+            var n = r(552322);
+            const s = (e) => (0, n.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, n.jsx)("path", { d: "M13.5 8.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5S11.17 7 12 7s1.5.67 1.5 1.5zM13 17v-5h-2v5h2zm-1 5.25c5.66 0 10.25-4.59 10.25-10.25S17.66 1.75 12 1.75 1.75 6.34 1.75 12 6.34 22.25 12 22.25zM20.25 12c0 4.56-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12 7.44 3.75 12 3.75s8.25 3.69 8.25 8.25z" }) });
+        },
+        58124: (e, t, r) => {
+            r.d(t, { Z: () => s });
+            var n = r(552322);
+            const s = (e) => (0, n.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, n.jsx)("path", { d: "M21.457 3.96L16.414 9H21v2h-8V3h2v4.59l5.043-5.05 1.414 1.42zM3 13h8v8H9v-4.59l-5.043 5.05-1.414-1.42L7.586 15H3v-2z" }) });
+        },
+        553453: (e, t, r) => {
+            r.d(t, { Z: () => s });
+            var n = r(552322);
+            const s = (e) => (0, n.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, n.jsx)("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z" }) });
+        },
+        193686: (e, t, r) => {
             r.d(t, { P: () => a });
             var n = r(552322),
                 s = r(840489);
@@ -10,11 +40,11 @@
                 return (0, n.jsx)("div", { className: "flex w-full items-center justify-center", children: (0, n.jsx)("div", { className: (0, s.Z)("animate-spin", !e && "pause", { "h-3 w-3": "xSmall" === r, "h-5 w-5": "small" === r, "h-9 w-9": "large" === r }), children: (0, n.jsxs)("svg", { height: "100%", viewBox: "0 0 32 32", width: "100%", children: [(0, n.jsx)("circle", { className: (0, s.Z)("opacity-20", { "stroke-background": "background" === t, "stroke-primary": "primary" === t, "stroke-text": "text" === t }), cx: "16", cy: "16", fill: "none", r: "14", strokeWidth: "4" }), (0, n.jsx)("circle", { className: (0, s.Z)({ "stroke-background": "background" === t, "stroke-primary": "primary" === t, "stroke-text": "text" === t }), cx: "16", cy: "16", fill: "none", r: "14", strokeDasharray: "80", strokeDashoffset: 60, strokeWidth: "4" })] }) }) });
             }
         },
-        862399: (e, t, r) => {
+        983955: (e, t, r) => {
             r.d(t, { W: () => o });
             var n = r(552322),
                 s = r(530361),
-                a = r(941204);
+                a = r(332161);
             class i {
                 segmentedText;
                 constructor(e, t = "en") {
@@ -67,7 +97,7 @@
                 return (0, n.jsx)(a.x, { color: e, dir: "auto", numberOfLines: c, size: d, children: m });
             }
         },
-        86781: (e, t, r) => {
+        437712: (e, t, r) => {
             r.d(t, { J: () => i });
             var n = r(552322),
                 s = r(254600);
@@ -76,11 +106,11 @@
                 return (0, n.jsxs)(s.fC, { open: r, onOpenChange: i, children: [(0, n.jsx)(s.xz, { asChild: !0, children: o }), (0, n.jsx)(s.h_, { children: (0, n.jsxs)(s.VY, { ...c, className: a({ borderRadius: e }), children: [t, l && (0, n.jsx)(s.Eh, { className: "fill-background" })] }) })] });
             }
         },
-        559274: (e, t, r) => {
+        253511: (e, t, r) => {
             r.d(t, { E: () => o });
             var n = r(552322),
                 s = r(202784),
-                a = r(941204);
+                a = r(332161);
             function i(e, t = "en") {
                 const r = "undefined" != typeof navigator ? navigator.language : t,
                     n = new Date(e),
@@ -116,14 +146,14 @@
                 );
             }
         },
-        164695: (e, t, r) => {
+        34681: (e, t, r) => {
             r.d(t, { $N: () => x, Be: () => v, GG: () => h, PK: () => u, Vq: () => c, cN: () => p, cZ: () => m, fK: () => g, hg: () => d, t9: () => f });
             var n = r(552322),
                 s = r(123825),
                 a = r(840489),
                 i = r(202784),
                 o = r(887491),
-                l = r(796309);
+                l = r(31674);
             const c = s.fC,
                 d = s.xz,
                 u = s.h_,
@@ -140,36 +170,6 @@
             x.displayName = s.Dx.displayName;
             const v = i.forwardRef(({ className: e, ...t }, r) => (0, n.jsx)(s.dk, { ref: r, className: (0, l.cn)("text-sm text-gray-700", e), ...t }));
             v.displayName = s.dk.displayName;
-        },
-        97759: (e, t, r) => {
-            r.d(t, { Z: () => s });
-            var n = r(552322);
-            const s = (e) => (0, n.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, n.jsx)("path", { d: "M13 3v13.59l5.043-5.05 1.414 1.42L12 20.41l-7.457-7.45 1.414-1.42L11 16.59V3h2z" }) });
-        },
-        14313: (e, t, r) => {
-            r.d(t, { Z: () => s });
-            var n = r(552322);
-            const s = (e) => (0, n.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, n.jsx)("path", { d: "M12 3.59l7.457 7.45-1.414 1.42L13 7.41V21h-2V7.41l-5.043 5.05-1.414-1.42L12 3.59z" }) });
-        },
-        887491: (e, t, r) => {
-            r.d(t, { Z: () => s });
-            var n = r(552322);
-            const s = (e) => (0, n.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, n.jsx)("path", { d: "M10.59 12L4.54 5.96l1.42-1.42L12 10.59l6.04-6.05 1.42 1.42L13.41 12l6.05 6.04-1.42 1.42L12 13.41l-6.04 6.05-1.42-1.42L10.59 12z" }) });
-        },
-        668631: (e, t, r) => {
-            r.d(t, { Z: () => s });
-            var n = r(552322);
-            const s = (e) => (0, n.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, n.jsx)("path", { d: "M13.5 8.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5S11.17 7 12 7s1.5.67 1.5 1.5zM13 17v-5h-2v5h2zm-1 5.25c5.66 0 10.25-4.59 10.25-10.25S17.66 1.75 12 1.75 1.75 6.34 1.75 12 6.34 22.25 12 22.25zM20.25 12c0 4.56-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12 7.44 3.75 12 3.75s8.25 3.69 8.25 8.25z" }) });
-        },
-        58124: (e, t, r) => {
-            r.d(t, { Z: () => s });
-            var n = r(552322);
-            const s = (e) => (0, n.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, n.jsx)("path", { d: "M21.457 3.96L16.414 9H21v2h-8V3h2v4.59l5.043-5.05 1.414 1.42zM3 13h8v8H9v-4.59l-5.043 5.05-1.414-1.42L7.586 15H3v-2z" }) });
-        },
-        553453: (e, t, r) => {
-            r.d(t, { Z: () => s });
-            var n = r(552322);
-            const s = (e) => (0, n.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, n.jsx)("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z" }) });
         },
         305163: (e, t, r) => {
             r.d(t, { _T: () => s, ev: () => a, pi: () => n });
@@ -349,4 +349,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.XChat-866ab763.371bd68a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.XChat-866ab763.7e1a756a.js.map

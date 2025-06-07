@@ -1173,7 +1173,6 @@
                 t("c3aa76c4", "Những ngôn ngữ bạn có thể biết"),
                 t("g099069c", "Quản lý các ngôn ngữ mà X phỏng đoán dựa trên hoạt động của bạn, chẳng hạn như các tài khoản bạn theo dõi và các bài đăng mà bạn tương tác."),
                 t("cf9ce876", "Ngôn ngữ ứng dụng và bài đăng"),
-                t("d4372cf4", "English (US), 中文(简体), Español"),
                 t("f8e46b90", "Đây là các tài khoản mạng xã hội mà bạn đã kết nối với tài khoản X của mình để đăng nhập. Bạn có thể tắt quyền truy cập ở đây."),
                 t("d84ed6b2", "Ngắt kết nối"),
                 t("i51130d4", "Google"),
@@ -1916,9 +1915,9 @@
                 t("a8fdd09c", "Xuất bản Bài viết"),
                 t("d8047cc8", "Đăng"),
                 t("ff7ddca2", "Sau khi xuất bản, Bài viết của bạn sẽ xuất hiện dưới dạng bài đăng. Ngoài ra, bạn có thể tìm thấy Bài viết này trong tab Bài viết trên hồ sơ của mình."),
-                t("ef34d7be", "Sau khi đã xuất bản Bài viết, bạn sẽ không thể chỉnh sửa phần kiểm soát đối tượng người xem và câu trả lời.");
-            t("e52d4998", "Chọn đối tượng người xem"),
-                t("d7985b24", "Chọn đối tượng có thể trả lời Bài viết này"),
+                t("ef34d7be", "Sau khi đã xuất bản Bài viết, bạn sẽ không thể chỉnh sửa phần kiểm soát đối tượng người xem và câu trả lời."),
+                t("e52d4998", "Chọn đối tượng người xem");
+            t("d7985b24", "Chọn đối tượng có thể trả lời Bài viết này"),
                 t("b5660338", "Xem trước dòng thời gian"),
                 t("hff1b97a", "Chỉ Người đã đăng ký có thể trả lời."),
                 t("a330771e", "Sao chép liên kết vào bảng nhớ tạm"),
@@ -2972,9 +2971,9 @@
                 t("ce6d095a", "Nghề nghiệp"),
                 t("e0adec82", "Tài nguyên thương hiệu"),
                 t("df1b7550", "Tiếp thị"),
-                t("he258678", "X dành cho doanh nghiệp");
-            t("c6f58084", "Nhà phát triển"),
-                t("d83f18d2", "Danh mục"),
+                t("he258678", "X dành cho doanh nghiệp"),
+                t("c6f58084", "Nhà phát triển");
+            t("d83f18d2", "Danh mục"),
                 t("hc5aa17c", "Tải ứng dụng X"),
                 t("j0693948", "Tải ứng dụng Grok"),
                 t("fce9ecce", "Các video được đề xuất"),
@@ -3886,11 +3885,11 @@
                 t("ddeb0a3c", "Đây là cộng đồng. Thích những người này? Hãy ghé xem."),
                 t("e111f531", function (n) {
                     return n.count + " đã nghe";
+                }),
+                t("cbef820f", function (n) {
+                    return n.screenName + " đã đăng lại buổi phát trực tuyến!";
                 });
-            t("cbef820f", function (n) {
-                return n.screenName + " đã đăng lại buổi phát trực tuyến!";
-            }),
-                t("e3275464", "Gửi"),
+            t("e3275464", "Gửi"),
                 t("cededf2a", "Chủ phòng"),
                 t("i2caef48", "Đ.chủ phòng"),
                 t("j245c654", "Người nói"),
@@ -4924,9 +4923,9 @@
                 t("d9f9dec0", "Xem phòng"),
                 t("h0c1f37a", "Xem số liệu phân tích phòng"),
                 t("e41fffbc", "Tổng thời gian xem video của bạn."),
-                t("if2909ba", "Thời gian xem");
-            t("i0e5bf4c", "Video của bạn"),
-                t("ed99baea", "Quyền truy cập sớm vào bản beta"),
+                t("if2909ba", "Thời gian xem"),
+                t("i0e5bf4c", "Video của bạn");
+            t("ed99baea", "Quyền truy cập sớm vào bản beta"),
                 t("gf898b70", "Tìm kiếm nâng cao"),
                 t("d2a43a7a", 'chứa cả "ai" và "công ty khởi nghiệp"'),
                 t("a8584698", "công ty khởi nghiệp ai"),
@@ -5880,9 +5879,9 @@
                 t("e41c9b4f", function (n) {
                     return "Saved to " + n.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Xóa thư mục");
-            t("f4ea967a", "Thư mục đã bị xóa"),
-                t("b670aa62", "Tên thư mục"),
+                t("h18f86a4", "Xóa thư mục"),
+                t("f4ea967a", "Thư mục đã bị xóa");
+            t("b670aa62", "Tên thư mục"),
                 t("aece5462", "Tên thư mục đã được cập nhật thành công"),
                 t("e3299b94", "Đã xảy ra lỗi. Hãy thử cập nhật lại thư mục đó sau ít phút nữa."),
                 t("c09ea714", "Đã xảy ra lỗi. Hãy thử cập nhật lại thư mục đó sau ít phút nữa."),
@@ -6884,9 +6883,9 @@
                 t("ede7d0a2", "Tiền tệ"),
                 t("b925c18c", "Loại lương"),
                 t("j3d242ce", "Khoảng không hợp lệ"),
-                t("f4d07bd2", "Bao gồm các chi tiết không bắt buộc để giúp ứng viên dễ dàng khám phá vai trò của bạn hơn khi tìm kiếm.");
-            t("b8cbb51a", "Tóm tắt công việc"),
-                t("bda6881e", "Công việc này đã được nhập từ Hệ thống theo dõi ứng viên (ATS) của bạn. Xin lưu ý rằng chỉ có thể sửa đổi các trường cụ thể."),
+                t("f4d07bd2", "Bao gồm các chi tiết không bắt buộc để giúp ứng viên dễ dàng khám phá vai trò của bạn hơn khi tìm kiếm."),
+                t("b8cbb51a", "Tóm tắt công việc");
+            t("bda6881e", "Công việc này đã được nhập từ Hệ thống theo dõi ứng viên (ATS) của bạn. Xin lưu ý rằng chỉ có thể sửa đổi các trường cụ thể."),
                 t("b075c68a", "Chỉnh sửa việc làm"),
                 t("d4b6a6e0", "Tiêu điểm hồ sơ"),
                 t("j2dd3686", "Quảng bá việc làm nổi bật bên trên bài đăng của tôi."),
@@ -7229,6 +7228,8 @@
                 t("hd80bd3e", "Quảng bá một bài đăng"),
                 t("fe2b0008", "Tìm hiểu cách sử dụng X"),
                 t("h257d4aa", "Chọn một bài đăng để quảng bá"),
+                t("e9334fe6", "Data updates every few minutes"),
+                t("a6d7b1d0", "Based on X Internal Data"),
                 t("h9b28dae", "You’re saving time with an ad-free feed"),
                 t("f6c50ec0", "Thời gian dùng thử không quảng cáo của bạn đã kết thúc"),
                 t("e1d1fbca", "You’ve avoided"),
@@ -7863,8 +7864,7 @@
                 t("i5f14be7", function (n) {
                     return "Chào mừng quay trở lại, " + n.displayName;
                 }),
-                t("a76d58ba", "Số liệu phân tích quảng cáo"),
-                t("eccd0e1a", "Số liệu phân tích về tổ chức");
+                t("a76d58ba", "Số liệu phân tích quảng cáo");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7903,7 +7903,8 @@
                     a(n, h)
                 );
             }
-            t("deea1708", "Bạn muốn xem số liệu phân tích trên tất cả tài khoản X của mình?"),
+            t("eccd0e1a", "Số liệu phân tích về tổ chức"),
+                t("deea1708", "Bạn muốn xem số liệu phân tích trên tất cả tài khoản X của mình?"),
                 t("eb603ffc", "Hãy nâng cấp để liên kết mạng lưới của bạn và xem số liệu phân tích tổng hợp."),
                 t("gf67aae4", "Nâng cấp lên gói Toàn quyền truy cập"),
                 t("h75e3618", "Bao gồm tổ chức"),
@@ -8901,9 +8902,9 @@
                 t("a6ada13e", "Mua ngay"),
                 t("j0f12222", "Xem thêm"),
                 t("f569f7c8", "Đi đến trang web"),
-                t("j0c6772a", "Truy cập website"),
-                t("f73003aa", "Video sẽ phát sau quảng cáo");
-            t("b3112b8a", "Bỏ qua"),
+                t("j0c6772a", "Truy cập website");
+            t("f73003aa", "Video sẽ phát sau quảng cáo"),
+                t("b3112b8a", "Bỏ qua"),
                 t("h6333ad0", "Bỏ qua quảng cáo"),
                 t("c59da417", function (n) {
                     return "Bỏ qua quảng cáo trong " + n.seconds;
@@ -13350,4 +13351,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.f3d13eba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.df7f080a.js.map

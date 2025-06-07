@@ -1174,7 +1174,6 @@
                 i("c3aa76c4", "Mga wikang maaaring alam mo"),
                 i("g099069c", "Pamahalaan ang mga wikang ipinagpalagay ng X batay sa iyong aktibidad, gaya ng mga pina-follow mong account at mga post kung saan ka nakikipag-ugnayan."),
                 i("cf9ce876", "Mga wika ng app at post"),
-                i("d4372cf4", "English (US), 中文(简体), Español"),
                 i("f8e46b90", "Ito ang mga social account na ikinonekta mo sa X account mo para mag-log in. Puwede mong i-disable ng access dito."),
                 i("d84ed6b2", "Idiskonekta"),
                 i("i51130d4", "Google"),
@@ -1917,9 +1916,9 @@
                 i("a8fdd09c", "I-publish ang Article"),
                 i("d8047cc8", "I-publish"),
                 i("ff7ddca2", "Makikita bilang isang post ang Article mo kapag nag-publish ka na. Makikita rin ito sa ilalim ng tab na Articles sa profile mo."),
-                i("ef34d7be", "Hindi na mae-edit ang mga kontrol sa Audience at reply pagkatapos ma-publish ang isang article");
-            i("e52d4998", "Piliin ang audience mo"),
-                i("d7985b24", "Piliin kung sino ang puwedeng mag-reply sa Article na ito"),
+                i("ef34d7be", "Hindi na mae-edit ang mga kontrol sa Audience at reply pagkatapos ma-publish ang isang article"),
+                i("e52d4998", "Piliin ang audience mo");
+            i("d7985b24", "Piliin kung sino ang puwedeng mag-reply sa Article na ito"),
                 i("b5660338", "Preview ng timeline"),
                 i("hff1b97a", "Mga Subscriber lang ang puwedeng mag-reply."),
                 i("a330771e", "Kopyahin ang link sa clipboard mo"),
@@ -2973,9 +2972,9 @@
                 i("ce6d095a", "Mga Career"),
                 i("e0adec82", "Mga Resource ng Brand"),
                 i("df1b7550", "Marketing"),
-                i("he258678", "X para sa Negosyo");
-            i("c6f58084", "Mga developer"),
-                i("d83f18d2", "Direktoryo"),
+                i("he258678", "X para sa Negosyo"),
+                i("c6f58084", "Mga developer");
+            i("d83f18d2", "Direktoryo"),
                 i("hc5aa17c", "Kunin ang X app"),
                 i("j0693948", "Kunin ang Grok app"),
                 i("fce9ecce", "Mga Iminumungkahing Video"),
@@ -3574,7 +3573,7 @@
                 i("hbe4f99e", "Kumusta? Excited na akong magbahagi ng mga top secret content at mas makilala ka :)"),
                 i("fb278c82", "Ano ang preview na ito?"),
                 i("j6cab6ec", "Ito ang mga nakikita ng mga tao bago sila mag-Subscribe sa iyo. Baguhin at i-edit ang iyong mga paglalarawan hanggang sa makuha mo ito ng tama."),
-                i("f2b1e83e", "Grok & Third-Party Collaborators"),
+                i("f2b1e83e", "Grok at Mga Third-party Collaborator"),
                 i("e110a46c", "I-delete ang history ng usapan"),
                 i("ebc4fda0", "Ide-delete mo ang history ng pakikipag-usap mo sa grok. Hindi mo na ulit maa-access ang mga usapan na ito."),
                 i("c90fe716", "Gusto mo bang i-delete ang mga usapan mo?"),
@@ -3887,11 +3886,11 @@
                 i("ddeb0a3c", "Narito ang Komunidad. Gusto mo ba ang mga miyembro nito? Tingnan ito."),
                 i("e111f531", function (a) {
                     return a.count + " nakatutok";
+                }),
+                i("cbef820f", function (a) {
+                    return "Ni-repost ni " + a.screenName + " ang stream!";
                 });
-            i("cbef820f", function (a) {
-                return "Ni-repost ni " + a.screenName + " ang stream!";
-            }),
-                i("e3275464", "Ipadala"),
+            i("e3275464", "Ipadala"),
                 i("cededf2a", "Host"),
                 i("i2caef48", "Mga Co-host"),
                 i("j245c654", "Mga Tagapagsalita"),
@@ -4925,9 +4924,9 @@
                 i("d9f9dec0", "Tingnan ang Space"),
                 i("h0c1f37a", "Tingnan ang Analytics ng Space"),
                 i("e41fffbc", "Ang kabuuang tagal ng panonood ng mga video mo."),
-                i("if2909ba", "Tagal ng Panonood");
-            i("i0e5bf4c", "Mga video mo"),
-                i("ed99baea", "Maagang Beta Access"),
+                i("if2909ba", "Tagal ng Panonood"),
+                i("i0e5bf4c", "Mga video mo");
+            i("ed99baea", "Maagang Beta Access"),
                 i("gf898b70", "Advanced na Paghahanap"),
                 i("d2a43a7a", 'naglalaman ng "ai" at "startup"'),
                 i("a8584698", "ai startup"),
@@ -5510,7 +5509,7 @@
                 i("j6aa6172", "I-delete ang rating?"),
                 i("i4112750", "Hindi ito maa-undo."),
                 i("i6f6191a", "Salamat!"),
-                i("h5575012", "Agree and submit"),
+                i("h5575012", "Sumang-ayon at isumite"),
                 i("f9171e52", "Nakakuha ang post na ito ng ilang like mula sa mga taong karaniwang hindi nagkakasundo, pero limitado sa ngayon ang input."),
                 i("j0f9919a", "Hindi negatibong makakaapekto ang rating mo sa isang post, pero makakatulong itong positibong kilalanin ang mga post na marami ang nag-like."),
                 i("b3af830c", "Input mo:"),
@@ -5530,7 +5529,7 @@
                 i("g0402b3b", "ni-like ng mga taong may iba't ibang pananaw"),
                 i("ged62c2b", "i-spotlight"),
                 i("b5d5f7f1", "Hinuhubog ang direksyon"),
-                i("a42fef87", "Learn more"),
+                i("a42fef87", "Matuto pa"),
                 i("bd7eb888", "Tingnan ang lahat ng note sa post na ito"),
                 i("i97b83f6", "Nagkaroon ng error sa pagsusumite ng iyong apela, pakisubukan ulit."),
                 i("a038ab9a", "Isalin ang note"),
@@ -5881,9 +5880,9 @@
                 i("e41c9b4f", function (a) {
                     return "Saved to " + a.bookmarkFolderName;
                 }),
-                i("h18f86a4", "I-delete ang Folder");
-            i("f4ea967a", "Na-delete na ang folder"),
-                i("b670aa62", "Pangalan ng Folder"),
+                i("h18f86a4", "I-delete ang Folder"),
+                i("f4ea967a", "Na-delete na ang folder");
+            i("b670aa62", "Pangalan ng Folder"),
                 i("aece5462", "Matagumpay na na-update ang pangalan ng folder"),
                 i("e3299b94", "Nagkaproblema. Subukang i-update ang folder na iyon sa loob ng ilang sandali."),
                 i("c09ea714", "Nagkaproblema. Subukang i-delete ang folder na iyon sa loob ng ilang sandali."),
@@ -6885,9 +6884,9 @@
                 i("ede7d0a2", "Currency"),
                 i("b925c18c", "Uri ng Sahod"),
                 i("j3d242ce", "Invalid na range"),
-                i("f4d07bd2", "Magsama ng mga opsyonal na detalye para maging mas madali sa mga candidate na mahanap ang mga trabaho mo gamit ang paghahanap.");
-            i("b8cbb51a", "Buod ng Trabaho"),
-                i("bda6881e", "Na-import ang trabahong ito mula sa Applicant ztracking System (ATS). Pakitandaan na mga partikular na field lang ang puwedeng baguhin."),
+                i("f4d07bd2", "Magsama ng mga opsyonal na detalye para maging mas madali sa mga candidate na mahanap ang mga trabaho mo gamit ang paghahanap."),
+                i("b8cbb51a", "Buod ng Trabaho");
+            i("bda6881e", "Na-import ang trabahong ito mula sa Applicant ztracking System (ATS). Pakitandaan na mga partikular na field lang ang puwedeng baguhin."),
                 i("b075c68a", "I-edit ang trabaho"),
                 i("d4b6a6e0", "Spotlight ng Profile"),
                 i("j2dd3686", "I-highlight ang mga naka-feature na trabaho sa itaas ng mga post ko."),
@@ -7230,6 +7229,8 @@
                 i("hd80bd3e", "Mag-promote ng post"),
                 i("fe2b0008", "Alamin kung paano gamitin ang X"),
                 i("h257d4aa", "Pumili ng ipo-promote na post"),
+                i("e9334fe6", "Data updates every few minutes"),
+                i("a6d7b1d0", "Based on X Internal Data"),
                 i("h9b28dae", "You’re saving time with an ad-free feed"),
                 i("f6c50ec0", "Natapos na ang walang ads na trial mo"),
                 i("e1d1fbca", "You’ve avoided"),
@@ -7864,8 +7865,7 @@
                 i("i5f14be7", function (a) {
                     return "Welcome back, " + a.displayName;
                 }),
-                i("a76d58ba", "Analytics ng Ads"),
-                i("eccd0e1a", "Analytics ng Organisasyon");
+                i("a76d58ba", "Analytics ng Ads");
             function t(a, n) {
                 for (var g = 0; g < n.length; g++) {
                     var i = n[g];
@@ -7904,7 +7904,8 @@
                     o(a, n)
                 );
             }
-            i("deea1708", "Gustong tingnan ang analytics sa lahat ng X account mo?"),
+            i("eccd0e1a", "Analytics ng Organisasyon"),
+                i("deea1708", "Gustong tingnan ang analytics sa lahat ng X account mo?"),
                 i("eb603ffc", "Mag-upgrade para i-affiliate ang network mo at tingnan ang pinagsama-samang analytics."),
                 i("gf67aae4", "Mag-upgrade sa Buong Access"),
                 i("h75e3618", "Isama ang organisasyon"),
@@ -8902,9 +8903,9 @@
                 i("a6ada13e", "Mamili ngayon"),
                 i("j0f12222", "Tumingin pa"),
                 i("f569f7c8", "Pumunta sa website"),
-                i("j0c6772a", "Bisitahin ang website"),
-                i("f73003aa", "Magpe-play ang video pagkatapos ng ad");
-            i("b3112b8a", "Laktawan"),
+                i("j0c6772a", "Bisitahin ang website");
+            i("f73003aa", "Magpe-play ang video pagkatapos ng ad"),
+                i("b3112b8a", "Laktawan"),
                 i("h6333ad0", "Laktawan ang Ad"),
                 i("c59da417", function (a) {
                     return "Laktawan ang Ad sa Loob ng " + a.seconds;
@@ -11538,7 +11539,7 @@
                         {
                             key: "ffd3d1a1",
                             get: function () {
-                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                                return ["Naka-anonymous ang mga rating at ginagawang available sa publiko para sa transparency. "];
                             },
                         },
                         {
@@ -13364,4 +13365,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.5894e00a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.cedc21ea.js.map

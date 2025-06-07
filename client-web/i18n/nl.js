@@ -1174,7 +1174,6 @@
                 a("c3aa76c4", "Talen die je mogelijk spreekt"),
                 a("g099069c", "Beheer de talen die X heeft afgeleid uit jouw activiteit, zoals de accounts die je volgt en de posts waarmee je interactie bent aangegaan."),
                 a("cf9ce876", "App- en posttalen"),
-                a("d4372cf4", "English (US), 中文(简体), Español"),
                 a("f8e46b90", "Dit zijn de social media-accounts die je hebt gekoppeld aan je X-account om in te loggen. Je kan toegang hier uitschakelen."),
                 a("d84ed6b2", "Loskoppelen"),
                 a("i51130d4", "Google"),
@@ -1917,9 +1916,9 @@
                 a("a8fdd09c", "Artikel publiceren"),
                 a("d8047cc8", "Publiceren"),
                 a("ff7ddca2", "Je Artikel verschijnt als post zodra je het publiceert. Je kan het ook terugvinden in het tabblad Artikelen in je profiel."),
-                a("ef34d7be", "Je kan publiek- en antwoordinstellingen niet meer bewerken nadat een Artikel is gepubliceerd.");
-            a("e52d4998", "Kies je publiek"),
-                a("d7985b24", "Kies wie op dit Artikel mag antwoorden"),
+                a("ef34d7be", "Je kan publiek- en antwoordinstellingen niet meer bewerken nadat een Artikel is gepubliceerd."),
+                a("e52d4998", "Kies je publiek");
+            a("d7985b24", "Kies wie op dit Artikel mag antwoorden"),
                 a("b5660338", "Voorvertoning tijdlijn"),
                 a("hff1b97a", "Alleen abonnees kunnen antwoorden."),
                 a("a330771e", "Link naar je klembord kopiëren"),
@@ -2973,9 +2972,9 @@
                 a("ce6d095a", "Banen"),
                 a("e0adec82", "Merkhulpmiddelen"),
                 a("df1b7550", "Marketing"),
-                a("he258678", "X voor bedrijven");
-            a("c6f58084", "Ontwikkelaars"),
-                a("d83f18d2", "Overzicht"),
+                a("he258678", "X voor bedrijven"),
+                a("c6f58084", "Ontwikkelaars");
+            a("d83f18d2", "Overzicht"),
                 a("hc5aa17c", "Download de app van X"),
                 a("j0693948", "Download de Grok-app"),
                 a("fce9ecce", "Aanbevolen video's"),
@@ -3887,11 +3886,11 @@
                 a("ddeb0a3c", "Dit is de Community. Vind je de mensen leuk? Neem een kijkje."),
                 a("e111f531", function (e) {
                     return e.count + " beluisterd";
+                }),
+                a("cbef820f", function (e) {
+                    return e.screenName + " heeft de stream opnieuw geplaatst!";
                 });
-            a("cbef820f", function (e) {
-                return e.screenName + " heeft de stream opnieuw geplaatst!";
-            }),
-                a("e3275464", "Verzenden"),
+            a("e3275464", "Verzenden"),
                 a("cededf2a", "Host"),
                 a("i2caef48", "Co-hosts"),
                 a("j245c654", "Sprekers"),
@@ -4925,9 +4924,9 @@
                 a("d9f9dec0", "Space weergeven"),
                 a("h0c1f37a", "Space-analyses bekijken"),
                 a("e41fffbc", "De totale kijktijd van je video's."),
-                a("if2909ba", "Kijktijd");
-            a("i0e5bf4c", "Jouw video's"),
-                a("ed99baea", "Vroege bèta-toegang"),
+                a("if2909ba", "Kijktijd"),
+                a("i0e5bf4c", "Jouw video's");
+            a("ed99baea", "Vroege bèta-toegang"),
                 a("gf898b70", "Geavanceerd zoeken"),
                 a("d2a43a7a", "bevat zowel 'ai' als 'start-up'"),
                 a("a8584698", "ai start-up"),
@@ -5881,9 +5880,9 @@
                 a("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                a("h18f86a4", "Map verwijderen");
-            a("f4ea967a", "Map is verwijderd"),
-                a("b670aa62", "Naam map"),
+                a("h18f86a4", "Map verwijderen"),
+                a("f4ea967a", "Map is verwijderd");
+            a("b670aa62", "Naam map"),
                 a("aece5462", "Mapnaam is bijgewerkt"),
                 a("e3299b94", "Er ging iets mis. Probeer deze map over een paar minuten opnieuw bij te werken."),
                 a("c09ea714", "Er ging iets mis. Probeer deze map over een paar minuten opnieuw te verwijderen."),
@@ -6885,9 +6884,9 @@
                 a("ede7d0a2", "Valuta"),
                 a("b925c18c", "Soort salaris"),
                 a("j3d242ce", "Ongeldig bereik"),
-                a("f4d07bd2", "Voeg optionele details toe om het makkelijker te maken voor kandidaten om je vacatures te ontdekken met zoekopdrachten.");
-            a("b8cbb51a", "Samenvatting vacature"),
-                a("bda6881e", "Deze functie is geïmporteerd uit je Applicant Tracking System (ATS). Houd er rekening mee dat alleen specifieke velden kunnen worden gewijzigd."),
+                a("f4d07bd2", "Voeg optionele details toe om het makkelijker te maken voor kandidaten om je vacatures te ontdekken met zoekopdrachten."),
+                a("b8cbb51a", "Samenvatting vacature");
+            a("bda6881e", "Deze functie is geïmporteerd uit je Applicant Tracking System (ATS). Houd er rekening mee dat alleen specifieke velden kunnen worden gewijzigd."),
                 a("b075c68a", "Vacature bewerken"),
                 a("d4b6a6e0", "Profielspotlight"),
                 a("j2dd3686", "Licht vacatures uit boven mijn posts."),
@@ -7230,6 +7229,8 @@
                 a("hd80bd3e", "Een post uitlichten"),
                 a("fe2b0008", "Ontdek hoe je X gebruikt"),
                 a("h257d4aa", "Een post selecteren om uit te lichten"),
+                a("e9334fe6", "Data updates every few minutes"),
+                a("a6d7b1d0", "Based on X Internal Data"),
                 a("h9b28dae", "You’re saving time with an ad-free feed"),
                 a("f6c50ec0", "Je reclamevrije proefperiode is afgelopen"),
                 a("e1d1fbca", "You’ve avoided"),
@@ -7864,8 +7865,7 @@
                 a("i5f14be7", function (e) {
                     return "Welkom terug, " + e.displayName;
                 }),
-                a("a76d58ba", "Advertentie-analyses"),
-                a("eccd0e1a", "Organisatie-analyses");
+                a("a76d58ba", "Advertentie-analyses");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7904,7 +7904,8 @@
                     o(e, n)
                 );
             }
-            a("deea1708", "Wil je analyses bekijken van al je accounts van X?"),
+            a("eccd0e1a", "Organisatie-analyses"),
+                a("deea1708", "Wil je analyses bekijken van al je accounts van X?"),
                 a("eb603ffc", "Upgrade om je netwerk aan je te liëren en verzamelde statistieken te bekijken."),
                 a("gf67aae4", "Upgrade naar volledige toegang"),
                 a("h75e3618", "Organisatie opnemen"),
@@ -8902,9 +8903,9 @@
                 a("a6ada13e", "Winkel nu"),
                 a("j0f12222", "Meer bekijken"),
                 a("f569f7c8", "Naar website gaan"),
-                a("j0c6772a", "Website bekijken"),
-                a("f73003aa", "Video wordt afgespeeld na de advertentie");
-            a("b3112b8a", "Overslaan"),
+                a("j0c6772a", "Website bekijken");
+            a("f73003aa", "Video wordt afgespeeld na de advertentie"),
+                a("b3112b8a", "Overslaan"),
                 a("h6333ad0", "Advertentie overslaan"),
                 a("c59da417", function (e) {
                     return "Advertentie overslaan over " + e.seconds;
@@ -13365,4 +13366,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.267b80da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.499c3f5a.js.map

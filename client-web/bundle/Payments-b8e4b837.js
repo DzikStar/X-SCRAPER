@@ -828,7 +828,7 @@
                 Pe = a(776588),
                 Ie = a(883229),
                 ve = a(943914),
-                we = a(412450),
+                we = a(351990),
                 Te = a(529438);
             const Se = a(456221).Z,
                 Be = () => {
@@ -952,4 +952,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-b8e4b837.8c9c9d2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-b8e4b837.cc517cca.js.map

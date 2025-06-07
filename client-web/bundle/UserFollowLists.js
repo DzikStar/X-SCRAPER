@@ -588,11 +588,11 @@
                 R = t(240089);
             const U = i().fe9d3afa,
                 B = i().fbce8dbe,
-                W = { superfollowers: i().ab7fc3ef, followers_you_follow: i().j0d17377, followers: i().fa9e827f, following: i().ha979be5, subscribers: i().d28be573, subscriptions: i().g9da3853, verified_followers: i().cfd952a1 },
-                H = { superfollowers: i().d52a1caa, followers_you_follow: i().i099d32e, followers: i().c64974fc, following: i().d960b55c, subscribers: i().d52a1caa, subscriptions: i().d7b51c68, verified_followers: i().fecc696e },
+                H = { superfollowers: i().ab7fc3ef, followers_you_follow: i().j0d17377, followers: i().fa9e827f, following: i().ha979be5, subscribers: i().d28be573, subscriptions: i().g9da3853, verified_followers: i().cfd952a1 },
+                W = { superfollowers: i().d52a1caa, followers_you_follow: i().i099d32e, followers: i().c64974fc, following: i().d960b55c, subscribers: i().d52a1caa, subscriptions: i().d7b51c68, verified_followers: i().fecc696e },
                 $ = { superfollowers: i().g0a2fbbe, followers_you_follow: i().g65f4bac, followers: i().c36cfddc, following: i().h0c94842, subscribers: i().g0a2fbbe, subscriptions: i().j7f5c6aa, verified_followers: i().fd275c1a },
-                G = { superfollowers: i().e08bd098, followers_you_follow: i().j029a4dc, followers: i().b2b2c6ce, following: i().cb1a15c8, subscribers: i().e08bd098, subscriptions: i().i967b954, verified_followers: i().a44e403e },
-                z = { followers_you_follow: i().d74ee2e3, followers: i().c36cfddc, following: i().ae5749c7, verified_followers: i().b5099e33 },
+                z = { superfollowers: i().e08bd098, followers_you_follow: i().j029a4dc, followers: i().b2b2c6ce, following: i().cb1a15c8, subscribers: i().e08bd098, subscriptions: i().i967b954, verified_followers: i().a44e403e },
+                G = { followers_you_follow: i().d74ee2e3, followers: i().c36cfddc, following: i().ae5749c7, verified_followers: i().b5099e33 },
                 K = { followers_you_follow: i().ec251f36, followers: i().b2b2c6ce, following: i().f8af4f48, verified_followers: i().fd0aad94 },
                 V = {
                     superfollowers: (e) => (0, P.Z)({ timelineId: `superFollowersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchSuperFollowers, getEndpointParams: ({ count: e, cursor: o }) => ({ count: e, cursor: "string" == typeof o ? o : void 0 }) }, context: "FETCH_SUPER_FOLLOWERS", perfKey: "superFollowersGraphQL", formatResponse: g.Z }),
@@ -608,8 +608,8 @@
                     if (!i && "superfollowers" === s) return (0, w.ZP)("Unexpected rendering of superfollowers empty state"), null;
                     const l = i && "following" === s ? B : void 0,
                         a = i && "following" === s ? "/i/connect_people" : void 0;
-                    let c = i ? $[s] : z[s],
-                        d = i ? G[s] : K[s];
+                    let c = i ? $[s] : G[s],
+                        d = i ? z[s] : K[s];
                     return "function" == typeof c && (c = c({ screenName: t })), "function" == typeof d && (d = d({ screenName: t })), r.createElement(n.Z, { buttonLink: a, buttonText: l, header: c, message: d });
                 });
             class j extends r.Component {
@@ -623,7 +623,7 @@
                                 l = this._isOwnProfile() && "followers" === e,
                                 a = this._canViewSubscribersPage(),
                                 c = this._canViewSubscriptionsPage();
-                            return ("subscribers" === e && !a) || ("subscriptions" === e && !c) ? r.createElement(E.Z, { to: `/${o}` }) : s ? r.createElement(f.Z, { entryConfiguration: this._getMemoizedEntryConfiguration(l), loadingAccessibilityLabel: U, module: s, renderEmptyState: i, title: H[e] }) : null;
+                            return ("subscribers" === e && !a) || ("subscriptions" === e && !c) ? r.createElement(E.Z, { to: `/${o}` }) : s ? r.createElement(f.Z, { entryConfiguration: this._getMemoizedEntryConfiguration(l), loadingAccessibilityLabel: U, module: s, renderEmptyState: i, title: W[e] }) : null;
                         }),
                         (this._getMemoizedEntryConfiguration = (0, l.Z)((e) => (({ withFollowerActionMenu: e = !1 }) => ({ ...(0, N.G)({}), [y.ZP.User]: (0, A.Z)({ decoration: e ? R.C_ : void 0 }) }))({ withFollowerActionMenu: e }))),
                         (this._handleFetchUser = () => {
@@ -652,13 +652,13 @@
                 render() {
                     const { fetchStatus: e, history: o, knownFollowersCount: t, mode: n, screenName: s, user: i, viewerUserId: l } = this.props,
                         { id_str: p, name: f = "" } = i || {},
-                        m = W[n]({ screenName: s, fullName: f }),
+                        m = H[n]({ screenName: s, fullName: f }),
                         w = this._isOwnProfile(),
                         _ = !i || (0, b.n5)({ isOwnProfile: w, isSoftBlockEnabled: this.context.featureSwitches.isTrue("xprofile_blocked_by_view_enabled"), user: i }),
                         g = this._canViewSubscribersPage(),
                         y = this._canViewSubscriptionsPage();
                     if ("superfollowers" === n) return r.createElement(E.Z, { to: `/${s}/creator-subscriptions/subscribers` });
-                    const v = [{ key: "verified_followers", to: `/${s}/verified_followers`, label: H.verified_followers }, i && l !== i.id_str && t ? { key: "followers_you_follow", to: `/${s}/followers_you_follow`, label: H.followers_you_follow } : null, { key: "followers", to: `/${s}/followers`, label: H.followers }, { key: "following", to: `/${s}/following`, label: H.following }, g ? { key: "subscribers", to: `/${s}/creator-subscriptions/subscribers`, label: H.subscribers } : null, y ? { key: "subscriptions", to: `/${s}/creator-subscriptions/subscriptions`, label: H.subscriptions } : null];
+                    const v = [{ key: "verified_followers", to: `/${s}/verified_followers`, label: W.verified_followers }, i && l !== i.id_str && t ? { key: "followers_you_follow", to: `/${s}/followers_you_follow`, label: W.followers_you_follow } : null, { key: "followers", to: `/${s}/followers`, label: W.followers }, { key: "following", to: `/${s}/following`, label: W.following }, g ? { key: "subscribers", to: `/${s}/creator-subscriptions/subscribers`, label: W.subscribers } : null, y ? { key: "subscriptions", to: `/${s}/creator-subscriptions/subscriptions`, label: W.subscriptions } : null];
                     return _ ? r.createElement(S.Z, { scribeSection: n, userId: p }, r.createElement(h.Z, null, r.createElement(d.Z, { backLocation: `/${s}`, documentTitle: m, history: o, primaryContent: r.createElement(c.Z, { "aria-label": U, fetchStatus: e, onRequestRetry: this._handleFetchUser, render: this._render }), secondaryBar: r.createElement(u.Z, { links: v }), sidebarContent: r.createElement(a.Z, null), subtitle: `@${s}`, title: f }))) : r.createElement(E.Z, { to: `/${s}` });
                 }
                 _fetchKnownFollowersIfNeeded() {
@@ -814,7 +814,7 @@
                     return n.createElement(s.Z, { "aria-label": o, buttonsContainerStyle: l && E.gap, childrenStyle: !f && E.flexGrow, key: p, style: [l ? null : E.segmentedControl, f && E.leftAligned, d], visibleItemIndex: u }, m);
                 };
         },
-        98440: (e, o, t) => {
+        748138: (e, o, t) => {
             t.r(o), t.d(o, { default: () => a });
             var r = t(202784),
                 n = t(890601),
@@ -822,12 +822,12 @@
                 i = t(347101);
             const l = (e = {}) => {
                 const { direction: o } = (0, s.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: o });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: o });
             };
             l.metadata = { width: 24, height: 24 };
             const a = l;
         },
-        226597: (e, o, t) => {
+        74514: (e, o, t) => {
             t.r(o), t.d(o, { default: () => a });
             var r = t(202784),
                 n = t(890601),
@@ -835,7 +835,7 @@
                 i = t(347101);
             const l = (e = {}) => {
                 const { direction: o } = (0, s.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: o });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 2C7.93 2 4.51 5.02 4 9.05L2.87 18H7.1c.46 2.28 2.48 4 4.9 4s4.44-1.72 4.9-4h4.24l-.64-5h-2.02l.38 3H5.13l.85-6.7C6.36 6.27 8.94 4 12 4V2zm0 18c-1.31 0-2.42-.83-2.83-2h5.66c-.41 1.17-1.52 2-2.83 2zm.3-12.29l1.41-1.42 1.76 1.76 4.29-4.72 1.48 1.34-5.7 6.28-3.24-3.24z" })) }, { writingDirection: o });
             };
             l.metadata = { width: 24, height: 24 };
             const a = l;
@@ -855,4 +855,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserFollowLists.4de7827a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserFollowLists.26421cda.js.map

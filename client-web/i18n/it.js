@@ -1178,7 +1178,6 @@
                 o("c3aa76c4", "Lingue che potresti conoscere"),
                 o("g099069c", "Gestisci le lingue che abbiamo dedotto in base alla tua attività, come gli account che segui e i post con cui interagisci."),
                 o("cf9ce876", "Lingue app e post"),
-                o("d4372cf4", "English (US), 中文(简体), Español"),
                 o("f8e46b90", "Questi sono gli account social che hai collegato al tuo account X per l'accesso. Qui puoi disabilitare l'accesso."),
                 o("d84ed6b2", "Scollega"),
                 o("i51130d4", "Google"),
@@ -1921,9 +1920,9 @@
                 o("a8fdd09c", "Pubblica articolo"),
                 o("d8047cc8", "Pubblica"),
                 o("ff7ddca2", "L'articolo apparirà come post una volta pubblicato. Inoltre, sarà disponibile nella scheda Articoli del tuo profilo."),
-                o("ef34d7be", "I controlli su pubblico e risposte non possono essere modificati in seguito alla pubblicazione dell'articolo.");
-            o("e52d4998", "Scegli il pubblico"),
-                o("d7985b24", "Scegli chi può rispondere a questo articolo"),
+                o("ef34d7be", "I controlli su pubblico e risposte non possono essere modificati in seguito alla pubblicazione dell'articolo."),
+                o("e52d4998", "Scegli il pubblico");
+            o("d7985b24", "Scegli chi può rispondere a questo articolo"),
                 o("b5660338", "Anteprima cronologia"),
                 o("hff1b97a", "Solo gli abbonati possono rispondere."),
                 o("a330771e", "Copia link negli appunti"),
@@ -2977,9 +2976,9 @@
                 o("ce6d095a", "Lavora con noi"),
                 o("e0adec82", "Risorse del brand"),
                 o("df1b7550", "Marketing"),
-                o("he258678", "X per le attività");
-            o("c6f58084", "Sviluppatori"),
-                o("d83f18d2", "Elenco"),
+                o("he258678", "X per le attività"),
+                o("c6f58084", "Sviluppatori");
+            o("d83f18d2", "Elenco"),
                 o("hc5aa17c", "Scarica l'app X"),
                 o("j0693948", "Scarica l'app Grok"),
                 o("fce9ecce", "Video suggeriti"),
@@ -3578,7 +3577,7 @@
                 o("hbe4f99e", "Ehilà! Non vedo l'ora di condividere alcuni fantastici contenuti segreti e di conoscerti più a fondo :)"),
                 o("fb278c82", "Cosa c'è in questa anteprima?"),
                 o("j6cab6ec", "Ecco ciò che gli altri vedono prima di abbonarsi a te. Metti a punto le descrizioni finché non saranno proprio come le desideri."),
-                o("f2b1e83e", "Grok & Third-Party Collaborators"),
+                o("f2b1e83e", "Grok e collaboratori di terze parti"),
                 o("e110a46c", "Elimina cronologia di conversazione"),
                 o("ebc4fda0", "Stai per eliminare la cronologia di conversazione con Grok. Non potrai più accedere a queste conversazioni."),
                 o("c90fe716", "Vuoi eliminare le conversazioni?"),
@@ -3891,11 +3890,11 @@
                 o("ddeb0a3c", "Ecco la community. Ti piacciono gli utenti? Dai un'occhiata."),
                 o("e111f531", function (e) {
                     return e.count + " sintonizzat" + t(e.count, "o", "i");
+                }),
+                o("cbef820f", function (e) {
+                    return e.screenName + " ha ripostato la trasmissione";
                 });
-            o("cbef820f", function (e) {
-                return e.screenName + " ha ripostato la trasmissione";
-            }),
-                o("e3275464", "Invia"),
+            o("e3275464", "Invia"),
                 o("cededf2a", "Host"),
                 o("i2caef48", "Cohost"),
                 o("j245c654", "Partecipanti attivi"),
@@ -4929,9 +4928,9 @@
                 o("d9f9dec0", "Visualizza spazio"),
                 o("h0c1f37a", "Visualizza statistiche spazio"),
                 o("e41fffbc", "Il tempo complessivo di visione dei tuoi video."),
-                o("if2909ba", "Tempo di visione");
-            o("i0e5bf4c", "I tuoi video"),
-                o("ed99baea", "Accesso beta in anteprima"),
+                o("if2909ba", "Tempo di visione"),
+                o("i0e5bf4c", "I tuoi video");
+            o("ed99baea", "Accesso beta in anteprima"),
                 o("gf898b70", "Ricerca avanzata"),
                 o("d2a43a7a", 'include sia "startup" sia "ia"'),
                 o("a8584698", "startup ia"),
@@ -5514,7 +5513,7 @@
                 o("j6aa6172", "Eliminare la valutazione?"),
                 o("i4112750", "Questa operazione non può essere annullata."),
                 o("i6f6191a", "Grazie!"),
-                o("h5575012", "Agree and submit"),
+                o("h5575012", "Accetta e invia"),
                 o("f9171e52", "Questo post è nei Mi piace di utenti solitamente in disaccordo, ma il numero di pareri disponibili è attualmente limitato."),
                 o("j0f9919a", "La tua valutazione non influirà negativamente sul post ma potrebbe avere un impatto positivo sui post veramente apprezzati."),
                 o("b3af830c", "Il tuo contributo:"),
@@ -5534,7 +5533,7 @@
                 o("g0402b3b", "sono nei Mi piace di utenti con punti di vista diversi"),
                 o("ged62c2b", "mettere in risalto"),
                 o("b5d5f7f1", "Contribuisci allo sviluppo"),
-                o("a42fef87", "Learn more"),
+                o("a42fef87", "Scopri di più"),
                 o("bd7eb888", "Vedi tutte le note su questo post"),
                 o("i97b83f6", "Si è verificato un errore nell'invio del ricorso. Riprova."),
                 o("a038ab9a", "Traduci nota"),
@@ -5885,9 +5884,9 @@
                 o("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                o("h18f86a4", "Elimina cartella");
-            o("f4ea967a", "La cartella è stata eliminata"),
-                o("b670aa62", "Nome cartella"),
+                o("h18f86a4", "Elimina cartella"),
+                o("f4ea967a", "La cartella è stata eliminata");
+            o("b670aa62", "Nome cartella"),
                 o("aece5462", "Il nome della cartella è stato aggiornato correttamente"),
                 o("e3299b94", "Qualcosa è andato storto. Prova ad aggiornare nuovamente la cartella tra un minuto."),
                 o("c09ea714", "Qualcosa è andato storto. Prova a eliminare nuovamente la cartella tra un minuto."),
@@ -6889,9 +6888,9 @@
                 o("ede7d0a2", "Valuta"),
                 o("b925c18c", "Tipo di retribuzione"),
                 o("j3d242ce", "Range non valido"),
-                o("f4d07bd2", "Includi i dettagli facoltativi affinché i candidati possano trovare le offerte più facilmente con una ricerca.");
-            o("b8cbb51a", "Riepilogo offerta"),
-                o("bda6881e", "Questa offerta di lavoro è stata importata dal tuo sistema di monitoraggio dei candidati (ATS). Ricorda che solo determinati campi possono essere modificati."),
+                o("f4d07bd2", "Includi i dettagli facoltativi affinché i candidati possano trovare le offerte più facilmente con una ricerca."),
+                o("b8cbb51a", "Riepilogo offerta");
+            o("bda6881e", "Questa offerta di lavoro è stata importata dal tuo sistema di monitoraggio dei candidati (ATS). Ricorda che solo determinati campi possono essere modificati."),
                 o("b075c68a", "Modifica offerta"),
                 o("d4b6a6e0", "Profile Spotlight"),
                 o("j2dd3686", "Metti in primo piano le offerte in evidenza sopra i miei post."),
@@ -7234,6 +7233,8 @@
                 o("hd80bd3e", "Promuovi un post"),
                 o("fe2b0008", "Scopri come utilizzare X"),
                 o("h257d4aa", "Seleziona un post da promuovere"),
+                o("e9334fe6", "Data updates every few minutes"),
+                o("a6d7b1d0", "Based on X Internal Data"),
                 o("h9b28dae", "You’re saving time with an ad-free feed"),
                 o("f6c50ec0", "La prova gratuita senza annunci è terminata"),
                 o("e1d1fbca", "You’ve avoided"),
@@ -7868,8 +7869,7 @@
                 o("i5f14be7", function (e) {
                     return "È bello rivederti, " + e.displayName;
                 }),
-                o("a76d58ba", "Statistiche annunci"),
-                o("eccd0e1a", "Statistiche dell'organizzazione");
+                o("a76d58ba", "Statistiche annunci");
             function r(e, i) {
                 for (var a = 0; a < i.length; a++) {
                     var o = i[a];
@@ -7908,7 +7908,8 @@
                     c(e, i)
                 );
             }
-            o("deea1708", "Vuoi vedere le statistiche per tutti i tuoi account X?"),
+            o("eccd0e1a", "Statistiche dell'organizzazione"),
+                o("deea1708", "Vuoi vedere le statistiche per tutti i tuoi account X?"),
                 o("eb603ffc", "Esegui l'upgrade per affiliare la tua rete e visualizzare le statistiche aggregate."),
                 o("gf67aae4", "Esegui l'upgrade a Full access"),
                 o("h75e3618", "Includi organizzazione"),
@@ -8906,9 +8907,9 @@
                 o("a6ada13e", "Compra ora"),
                 o("j0f12222", "Approfondisci"),
                 o("f569f7c8", "Passa al sito Web"),
-                o("j0c6772a", "Visita il sito Web"),
-                o("f73003aa", "Il video sarà riprodotto dopo l'annuncio");
-            o("b3112b8a", "Salta"),
+                o("j0c6772a", "Visita il sito Web");
+            o("f73003aa", "Il video sarà riprodotto dopo l'annuncio"),
+                o("b3112b8a", "Salta"),
                 o("h6333ad0", "Salta annuncio"),
                 o("c59da417", function (e) {
                     return "Salta annuncio tra " + e.seconds;
@@ -11535,7 +11536,7 @@
                         {
                             key: "ffd3d1a1",
                             get: function () {
-                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                                return ["Le valutazioni vengono rese anonime e pubbliche per trasparenza. "];
                             },
                         },
                         {
@@ -13356,4 +13357,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.9bff583a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.f0559e0a.js.map

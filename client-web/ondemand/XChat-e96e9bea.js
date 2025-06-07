@@ -1,262 +1,348 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["ondemand.XChat-e96e9bea"],
     {
-        830806: (e, t, s) => {
+        318063: (e, t, s) => {
             "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsxs)("svg", { viewBox: "0 0 14 14", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", display: "flex", role: "img", ...e, children: [(0, l.jsx)("path", { d: "M2.16256 1.33754C1.93475 1.10974 1.56541 1.10974 1.3376 1.33754C1.1098 1.56535 1.1098 1.93469 1.3376 2.1625L2.7855 3.6104C2.46865 4.16466 2.25919 4.78916 2.18754 5.45796L1.76493 8.89949C1.67952 9.595 2.22216 10.2084 2.9229 10.2084H9.38346L11.8376 12.6625C12.0654 12.8903 12.4348 12.8903 12.6626 12.6625C12.8904 12.4347 12.8904 12.0653 12.6626 11.8375L2.16256 1.33754Z" }), (0, l.jsx)("path", { d: "M12.2351 8.89949C12.2932 9.37206 12.0613 9.8067 11.6868 10.0368L3.92014 2.27011C4.76367 1.57863 5.84199 1.16669 7.00002 1.16669C9.45456 1.16669 11.551 3.0174 11.8125 5.45797L12.2351 8.89949Z" }), (0, l.jsx)("path", { d: "M4.32604 11.0834C4.77612 12.1135 5.804 12.8334 7.00002 12.8334C8.19604 12.8334 9.22392 12.1135 9.67399 11.0834H4.32604Z" })] });
+            s.d(t, { P: () => o });
+            var r = s(552322),
+                n = s(480158),
+                a = s(202784),
+                i = s(332161);
+            const l = ({ destructive: e, icon: t, onClick: s, text: n }) => (0, r.jsxs)("button", { type: "button", className: "px-6 flex items-center h-10 min-w-10 gap-3 w-full justify-start border-transparent hover:bg-gray-50 focus:brightness-100 " + (e ? "text-destructive" : "text-text"), onClick: s, children: [t && (0, a.cloneElement)(t, { className: "size-[22px]" }), (0, r.jsx)(i.x, { color: "inherit", numberOfLines: 1, size: "body", weight: "bold", children: n })] }),
+                o = ({ items: e, open: t, onOpenChange: s, trigger: a }) => (0, r.jsx)(n.h, { borderRadius: "2xLarge", trigger: a, open: t, onOpenChange: s, children: (0, r.jsx)("div", { className: "overflow-hidden flex flex-col items-start justify-start rounded-2xl border border-gray-200 gap-1", children: e.map((e) => (0, r.jsx)(l, { ...e }, e.text)) }) });
         },
-        741321: (e, t, s) => {
+        959992: (e, t, s) => {
             "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsxs)("svg", { xmlns: "http://www.w3.org/2000/svg", fill: "currentColor", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", role: "img", ...e, children: [(0, l.jsxs)("g", { children: [(0, l.jsx)("clipPath", { id: "clip", children: (0, l.jsx)("path", { d: "M13 0h10v10H13z" }) }), (0, l.jsx)("path", { clipPath: "url(#clip)", d: "M18 0.729c-0.845 0-1.67 0.251-2.373 0.72-0.702 0.469-1.249 1.136-1.573 1.917-0.323 0.78-0.408 1.639-0.243 2.467 0.165 0.829 0.572 1.59 1.169 2.187 0.597 0.597 1.358 1.004 2.187 1.169 0.828 0.165 1.687 0.08 2.468-0.243 0.78-0.323 1.447-0.871 1.916-1.573 0.469-0.703 0.72-1.528 0.72-2.373 0-1.133-0.45-2.219-1.251-3.02-0.801-0.801-1.887-1.251-3.02-1.251zm-0.337 6.117l-1.709-1.363 0.521-0.654 1.029 0.825 1.654-2.279 0.675 0.492-2.17 2.979z" })] }), (0, l.jsx)("path", { d: "M20.2 11.9V11h2v0.2c0 2.9-1.3 5.6-3.8 7.1L10.2 23v-4H10c-4.4 0-8-3.6-8-8s3.6-8 8-8h1.2v2H10c-3.3 0-6 2.7-6 6s2.7 6 6 6h2.2v2.5l5.2-3c1.7-1 2.6-2.7 2.8-4.6z" })] });
+            s.d(t, { r: () => a });
+            var r = s(552322),
+                n = s(31674);
+            function a({ className: e, strength: t = 5, to: s = "bottom" }) {
+                return (0, r.jsxs)("div", {
+                    className: (0, n.cn)("absolute inset-0", e),
+                    children: [
+                        (0, r.jsx)("div", { className: "absolute inset-0", style: { background: `linear-gradient(to ${s}, transparent 10%, hsl(var(--colors-background)) 100%)` } }),
+                        Array.from({ length: t })
+                            .map((e, t) => t + 1)
+                            .map((e) => (0, r.jsx)("div", { className: "absolute inset-0", style: { backdropFilter: "blur(8px)", mask: `linear-gradient(to ${s}, transparent 0%, hsl(var(--colors-background) / 0.8) 50%, hsl(var(--colors-background) / 1) 100%)` } }, e)),
+                    ],
+                });
+            }
         },
-        9001: (e, t, s) => {
+        344851: (e, t, s) => {
             "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsxs)("svg", { xmlns: "http://www.w3.org/2000/svg", fill: "currentColor", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", role: "img", ...e, children: [(0, l.jsx)("path", { d: "M13.5 5a4 4 0 1 1 8 0 4 4 0 1 1-8 0" }), (0, l.jsx)("path", { d: "M20.2 11.9V11h2v0.2c0 2.9-1.3 5.6-3.8 7.1L10.2 23v-4H10c-4.4 0-8-3.6-8-8s3.6-8 8-8h1.2v2H10c-3.3 0-6 2.7-6 6s2.7 6 6 6h2.2v2.5l5.2-3c1.7-1 2.6-2.7 2.8-4.6z" })] });
+            s.d(t, { c: () => i });
+            var r = s(552322),
+                n = s(34681),
+                a = s(993165);
+            const i = ({ title: e, message: t, onConfirm: s, confirmText: i = "Confirm", cancelText: l = "Cancel", trigger: o }) => (0, r.jsxs)(n.Vq, { children: [(0, r.jsx)(n.hg, { asChild: !0, children: o }), (0, r.jsxs)(n.cZ, { className: "max-w-sm md:max-w-2xl [&>button]:hidden", children: [(0, r.jsx)(n.fK, { children: (0, r.jsx)(n.$N, { children: e }) }), (0, r.jsx)(n.Be, { children: t }), (0, r.jsxs)(n.cN, { className: "gap-4", children: [(0, r.jsx)(n.GG, { asChild: !0, children: (0, r.jsxs)(a.z, { type: "button", size: "xxLargeCompact", children: [(0, r.jsx)("span", { className: "sr-only", children: l }), l] }) }), (0, r.jsxs)(a.z, { type: "submit", size: "xxLargeCompact", onClick: s, variant: "destructiveFilled", children: [(0, r.jsx)("span", { className: "sr-only", children: i }), i] })] })] })] });
         },
-        242782: (e, t, s) => {
+        388414: (e, t, s) => {
             "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, l.jsx)("path", { d: "M12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-.81 14.68l-4.1-3.27 1.25-1.57 2.47 1.98 3.97-5.47 1.62 1.18-5.21 7.15z" }) });
+            s.d(t, { I: () => d });
+            var r = s(552322),
+                n = s(966830),
+                a = s(110929),
+                i = s(202784),
+                l = s(332161);
+            const o = ({ destructive: e, icon: t, onClick: s, text: a }) => (0, r.jsxs)(n.ck, { className: "focus-visible:outline-none cursor-pointer px-6 flex items-center h-10 min-w-10 gap-3 w-full justify-start border-transparent hover:bg-gray-50 focus:brightness-100 " + (e ? "text-destructive" : "text-text"), onClick: s, children: [t && (0, i.cloneElement)(t, { className: "size-[22px]" }), (0, r.jsx)(l.x, { color: "inherit", numberOfLines: 1, size: "body", weight: "bold", children: a })] }),
+                c = (0, a.j)("bg-background z-50 overflow-hidden shadow-md outline-none", { variants: { borderRadius: { "2xLarge": "rounded-2xl", "3xLarge": "rounded-3xl", full: "rounded-full", large: "rounded-lg", medium: "rounded-md", none: "rounded-none", small: "rounded-sm", xLarge: "rounded-xl", true: "rounded" } } });
+            function d({ borderRadius: e = "2xLarge", items: t, onOpenChange: s, trigger: a, ...i }) {
+                return (0, r.jsxs)(n.fC, { onOpenChange: s, children: [(0, r.jsx)(n.xz, { asChild: !0, children: a }), (0, r.jsx)(n.Uv, { children: (0, r.jsx)(n.VY, { ...i, className: c({ borderRadius: e }), children: (0, r.jsx)("div", { className: "overflow-hidden flex flex-col items-start justify-start rounded-2xl border border-gray-200 gap-1", children: t.map((e) => (0, r.jsx)(o, { ...e }, e.text)) }) }) })] });
+            }
         },
-        14269: (e, t, s) => {
+        594078: (e, t, s) => {
             "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, l.jsx)("circle", { cx: 12, cy: 12, r: 10.3 }) });
+            s.d(t, { c: () => h, h: () => m });
+            var r = s(552322),
+                n = s(687521),
+                a = s(983706),
+                i = s(347725),
+                l = s(447742),
+                o = s(202784),
+                c = s(332161);
+            const d = i.S.spriteSheetColumns,
+                u = i.S.spriteSheetRows,
+                h = ({ emoji: e }) => {
+                    const t = i.S.emojis[e]?.k[0] || 0,
+                        s = i.S.emojis[e]?.k[1] || 0,
+                        n = `-${t * (1200 / d)}px -${s * (1728 / u)}px`;
+                    return (0, r.jsx)("div", { style: { width: "24px", height: "24px", backgroundImage: "url(https://abs.twimg.com/responsive-web/client-web/twemoji_sprite.5e8ec19a.png)", backgroundPosition: n, backgroundRepeat: "no-repeat" } });
+                },
+                x = ({ item: e, index: t, onReactionClicked: s }) => (0, r.jsxs)("div", { className: "mb-4", id: `Emoji-${t}`, children: [(0, r.jsx)(c.x, { size: "body", weight: "bold", className: "mb-2", children: e.name }), (0, r.jsx)("div", { className: "grid grid-cols-8 gap-2", children: e.emojis.map((e) => (0, r.jsx)("button", { className: "flex justify-center items-center cursor-pointer hover:bg-gray-100 rounded", onClick: () => s(e), type: "button", children: (0, r.jsx)(h, { emoji: e }) }, `${e}`)) })] }),
+                m = ({ onReactionClicked: e, recentlyUsedEmojis: t = [] }) => {
+                    const [s, d] = (0, o.useState)(""),
+                        u = (0, o.useMemo)(() => {
+                            if (!s) return i.S.categories;
+                            const e = s.toLowerCase();
+                            return i.S.categories
+                                .map((t) => {
+                                    const s = t.emojis.filter((t) => {
+                                        const s = i.S.emojis[t];
+                                        return s?.j.some((t) => t.toLowerCase().includes(e));
+                                    });
+                                    return { ...t, emojis: s };
+                                })
+                                .filter((e) => e.emojis.length > 0);
+                        }, [s]);
+                    return (0, r.jsxs)("div", { className: "h-100 w-80 p-4 border border-gray-100 rounded-2xl", children: [(0, r.jsx)("div", { className: "py-2", children: (0, r.jsx)(n._, { autoFocus: !0, placeholder: "Search", value: s, onChange: (e) => d(e.target.value), borderRadius: "xLarge", className: "bg-gray-0 focus-within:bg-transparent", inputClassName: "placeholder:text-gray-700", leftContent: (0, r.jsx)(l.Z, { className: "h-5 w-5 text-gray-700" }) }) }), (0, r.jsx)(a.T, { items: u, renderItem: (n, a) => (0, r.jsxs)(r.Fragment, { children: [0 === a && t.length > 0 && "" === s && (0, r.jsxs)("div", { className: "mb-4", children: [(0, r.jsx)(c.x, { size: "body", weight: "bold", className: "mb-2", children: "Recently Used" }), (0, r.jsx)("div", { className: "grid grid-cols-8 gap-2", children: t.map((t) => (0, r.jsx)("button", { className: "flex justify-center items-center cursor-pointer hover:bg-gray-100 rounded", onClick: () => e(t), type: "button", children: (0, r.jsx)(h, { emoji: t }) }, `${t}-recent`)) })] }), (0, r.jsx)(x, { item: n, index: a, onReactionClicked: e })] }), className: "!h-80 scrollbar-thin-custom" })] });
+                };
         },
-        147602: (e, t, s) => {
+        789764: (e, t, s) => {
             "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, l.jsx)("path", { d: "M15 6v3h3v2h-3v3h-2v-3h-3V9h3V6h2zm4.5-4C20.88 2 22 3.12 22 4.5v11c0 1.38-1.12 2.5-2.5 2.5h-11C7.12 18 6 16.88 6 15.5v-11C6 3.12 7.12 2 8.5 2h11zM8 15.5c0 .28.22.5.5.5h11c.28 0 .5-.22.5-.5v-11c0-.28-.22-.5-.5-.5h-11c-.28 0-.5.22-.5.5v11zm-4 4V8h-.5C2.67 8 2 8.67 2 9.5v10C2 20.88 3.12 22 4.5 22h10c.83 0 1.5-.67 1.5-1.5V20H4.5c-.28 0-.5-.22-.5-.5z" }) });
+            s.d(t, { o: () => a });
+            var r = s(552322),
+                n = s(378364);
+            function a({ size: e = "medium", spacing: t = 12, urls: s, resolution: a, stackOrder: i = "descending" }) {
+                const l = (function (e, t) {
+                    if ("ascending" === t) return e.map((e, t) => ({ index: t, scale: "scale-75" }));
+                    if ("descending" === t) return e.map((t, s) => ({ index: e.length - s, scale: "scale-75" }));
+                    const s = Math.floor(e.length / 2);
+                    return e.map((t, r) => {
+                        if (r === s) return { index: e.length, scale: "scale-100" };
+                        const n = Math.abs(r - s);
+                        return { index: e.length - n, scale: "scale-75" };
+                    });
+                })(s, i);
+                return (0, r.jsx)("div", { className: "flex", style: { marginInlineStart: `${t}px` }, children: s.map((s, i) => (0, r.jsx)("div", { className: `rounded-full bg-background p-0.5 ${l[i]?.scale}`, style: { marginInlineStart: -1 * t, zIndex: l[i]?.index }, children: (0, r.jsx)(n.q, { size: e, shape: "circle", url: s, resolution: a }) }, `${s}${i}`)) });
+            }
         },
-        1357: (e, t, s) => {
+        472275: (e, t, s) => {
             "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsxs)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: [(0, l.jsx)("path", { d: "M8 11h8v2H8zm0-4h5v2H8z" }), (0, l.jsx)("path", { d: "M17.5 2h-11C5.12 2 4 3.12 4 4.5v15C4 20.88 5.12 22 6.5 22h6c4.14 0 7.5-3.36 7.5-7.5v-10C20 3.12 18.88 2 17.5 2zm-2.52 17.41c.01-.1.02-.21.02-.32v-1.27c0-.48.32-.82.84-.82h1.28c.09 0 .19 0 .29-.01-.53 1.04-1.39 1.89-2.43 2.42zM18 14c0 .58-.46 1-.88 1h-1.28C14.26 15 13 16.19 13 17.82v1.27c0 .46-.43.91-.97.91H6.5c-.28 0-.5-.22-.5-.5v-15c0-.28.22-.5.5-.5h11c.27 0 .5.22.5.5V14z" })] });
+            s.d(t, { e: () => o });
+            var r = s(552322),
+                n = s(666200),
+                a = s(52053),
+                i = s(34681),
+                l = s(202784);
+            function o({ mediaItems: e, initialIndex: t = 0, isOpen: s, onClose: o }) {
+                const [c, d] = (0, l.useState)(t);
+                (0, l.useEffect)(() => {
+                    d(t);
+                }, [t]);
+                const u = e[c],
+                    h = (e) => {
+                        e.target === e.currentTarget && o();
+                    };
+                return s && u
+                    ? (0, r.jsx)(i.Vq, {
+                          open: s,
+                          onOpenChange: o,
+                          children: (0, r.jsxs)(i.PK, {
+                              children: [
+                                  (0, r.jsx)(i.t9, { className: "fixed inset-0 bg-black/50 z-50" }),
+                                  (0, r.jsxs)(i.cZ, {
+                                      className: "fixed z-50 w-full h-[95vh] max-w-[100vw] outline-none border-none bg-transparent flex items-center justify-center",
+                                      onClick: h,
+                                      children: [
+                                          (0, r.jsx)("div", { className: "w-full h-full max-w-[90vw] max-h-[90vh] flex items-center justify-center bg-transparent", onClick: h, children: "animated_gif" === u.type ? (0, r.jsx)("div", { className: "relative flex items-center justify-center max-h-[85vh]", onClick: (e) => e.stopPropagation(), children: (0, r.jsx)("video", { src: u.src, autoPlay: !0, loop: !0, muted: !0, playsInline: !0, className: "max-w-full max-h-full object-contain", poster: u.previewImage }) }) : (0, r.jsx)("div", { className: "relative flex items-center justify-center max-h-[85vh] overflow-hidden", onClick: (e) => e.stopPropagation(), children: (0, r.jsx)("img", { src: u.src, alt: "", className: "w-full h-full object-cover max-h-[inherit] select-none" }) }) }),
+                                          e.length > 1 &&
+                                              (0, r.jsxs)(r.Fragment, {
+                                                  children: [
+                                                      (0, r.jsx)("div", {
+                                                          className: "absolute inset-x-0 z-[60]",
+                                                          onClick: (e) => e.stopPropagation(),
+                                                          children: (0, r.jsxs)("div", {
+                                                              className: "relative w-full flex",
+                                                              children: [
+                                                                  (0, r.jsx)("div", {
+                                                                      className: "flex-1 flex justify-start",
+                                                                      children:
+                                                                          c > 0 &&
+                                                                          (0, r.jsx)("button", {
+                                                                              type: "button",
+                                                                              onClick: (t) => {
+                                                                                  t.preventDefault(), t.stopPropagation(), d((t) => (t > 0 ? t - 1 : e.length - 1));
+                                                                              },
+                                                                              className: "p-2 bg-black/30 text-white/75 hover:bg-black/50 hover:text-white transition-all [-webkit-tap-highlight-color:transparent] [tap-highlight-color:transparent] touch-none",
+                                                                              "aria-label": "previous",
+                                                                              children: (0, r.jsx)(n.Z, { className: "w-4 h-4" }),
+                                                                          }),
+                                                                  }),
+                                                                  (0, r.jsx)("div", {
+                                                                      className: "flex-1 flex justify-end",
+                                                                      children:
+                                                                          c < e.length - 1 &&
+                                                                          (0, r.jsx)("button", {
+                                                                              type: "button",
+                                                                              onClick: (t) => {
+                                                                                  t.preventDefault(), t.stopPropagation(), d((t) => (t < e.length - 1 ? t + 1 : 0));
+                                                                              },
+                                                                              className: "p-2 bg-black/30 text-white/75 hover:bg-black/50 hover:text-white transition-all [-webkit-tap-highlight-color:transparent] [tap-highlight-color:transparent] touch-none",
+                                                                              "aria-label": "next",
+                                                                              children: (0, r.jsx)(a.Z, { className: "w-4 h-4" }),
+                                                                          }),
+                                                                  }),
+                                                              ],
+                                                          }),
+                                                      }),
+                                                      (0, r.jsxs)("div", { className: "absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center justify-center text-white text-subtext1 z-[60]", onClick: (e) => e.stopPropagation(), children: [c + 1, " / ", e.length] }),
+                                                  ],
+                                              }),
+                                      ],
+                                  }),
+                              ],
+                          }),
+                      })
+                    : null;
+            }
         },
-        59463: (e, t, s) => {
+        653748: (e, t, s) => {
             "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, l.jsx)("path", { d: "M12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zM13.25 7L13 12.7s-.5-.2-1-.2-1 .2-1 .2L10.75 7h2.5zM12 17c-.83 0-1.5-.67-1.5-1.5S11.17 14 12 14s1.5.67 1.5 1.5S12.83 17 12 17z" }) });
+            s.d(t, { s: () => i });
+            var r = s(552322),
+                n = s(840489),
+                a = s(533131);
+            function i({ variant: e = "normal", ...t }) {
+                return (0, r.jsx)(a.ZA, { className: "z-40 bg-mask fixed bottom-0 end-0 start-0 top-0 flex h-full w-full items-center justify-center", ...t, children: (0, r.jsx)(a.u_, { ...t, className: (0, n.Z)("bg-background max-h-full overflow-y-auto rounded-xl", "small" === e && "max-w-[32rem]", "normal" === e && "max-w-[60rem]") }) });
+            }
         },
-        442942: (e, t, s) => {
+        423011: (e, t, s) => {
             "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, l.jsx)("path", { d: "M4 4.5C4 3.12 5.12 2 6.5 2h11C18.88 2 20 3.12 20 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-11C5.12 22 4 20.88 4 19.5V16h2v3.5c0 .28.22.5.5.5h11c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-11c-.28 0-.5.22-.5.5V8H4V4.5zm6.95 3.04L15.42 12l-4.47 4.46-1.41-1.42L11.58 13H2v-2h9.58L9.54 8.96l1.41-1.42z" }) });
+            s.d(t, { x: () => a });
+            var r = s(552322),
+                n = s(332161);
+            const a = ({ leftContent: e, rightContent: t, title: s, subtitle: a }) => (0, r.jsxs)("div", { className: "flex flex-row justify-between  p-2 py-4", children: [(0, r.jsxs)("div", { className: "flex flex-row justify-start items-center gap-2", children: [e, (0, r.jsxs)("div", { className: "flex flex-col", children: [(0, r.jsx)(n.x, { size: "headline1", weight: "extrabold", children: s }), a && (0, r.jsx)(n.x, { color: "gray700", children: a })] })] }), t] });
         },
-        384226: (e, t, s) => {
+        480158: (e, t, s) => {
             "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, l.jsx)("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm6.543.04l1.414 1.42L20 10.41l2.043 2.05 1.414-1.42L21.414 9l2.043-2.04-1.414-1.42L20 7.59l-2.043-2.05-1.414 1.42L18.586 9l-2.043 2.04z" }) });
+            s.d(t, { h: () => d });
+            var r = s(552322),
+                n = s(305399),
+                a = s(110929),
+                i = s(194787);
+            const l = (0, a.j)("bg-background h-fit fixed bottom-0 left-0 right-0 outline-none", { variants: { borderRadius: { "2xLarge": "rounded-t-2xl", "3xLarge": "rounded-t-3xl", full: "rounded-t-full", large: "rounded-t-lg", medium: "rounded-t-md", none: "rounded-t-none", small: "rounded-t-sm", xLarge: "rounded-t-xl", true: "rounded-t" } } });
+            function o({ borderRadius: e = "medium", children: t, className: s, title: n, trigger: a, withHandle: o, ...c }) {
+                return (0, r.jsxs)(i.dy.Root, { ...c, children: [(0, r.jsx)(i.dy.Trigger, { asChild: !0, children: a }), (0, r.jsxs)(i.dy.Portal, { children: [(0, r.jsx)(i.dy.Overlay, { className: "fixed inset-0 bg-black/40" }), (0, r.jsxs)(i.dy.Content, { className: l({ borderRadius: e, className: s }), children: [o && (0, r.jsx)(i.dy.Handle, { className: "my-2" }), n && (0, r.jsx)(i.dy.Title, { children: n }), t] })] })] });
+            }
+            var c = s(437712);
+            function d({ children: e, open: t, onOpenChange: s, trigger: a, borderRadius: i }) {
+                return (0, n.a)("(min-width: 768px)") ? (0, r.jsx)(c.J, { open: t, onOpenChange: s, trigger: a, withArrow: !0, borderRadius: i, children: e }) : (0, r.jsx)(o, { open: t, onOpenChange: s, trigger: a, children: e });
+            }
         },
-        439252: (e, t, s) => {
+        261012: (e, t, s) => {
             "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsx)("svg", { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, l.jsxs)("g", { fill: "transparent", children: [(0, l.jsx)("path", { id: "vector", d: "M11 4.00006H7.2C6.0799 4.00006 5.51984 4.00006 5.09202 4.21804C4.71569 4.40979 4.40973 4.71575 4.21799 5.09208C4 5.5199 4 6.07995 4 7.20006V16.8001C4 17.9202 4 18.4802 4.21799 18.908C4.40973 19.2844 4.71569 19.5903 5.09202 19.7821C5.51984 20.0001 6.0799 20.0001 7.2 20.0001H16.8C17.9201 20.0001 18.4802 20.0001 18.908 19.7821C19.2843 19.5903 19.5903 19.2844 19.782 18.908C20 18.4802 20 17.9202 20 16.8001V13.0001", stroke: "currentColor", strokeWidth: 2, strokeLinecap: "round", strokeLinejoin: "round" }), (0, l.jsx)("path", { id: "vector_2", d: "M9 15V12.4142C9 12.149 9.10536 11.8946 9.29289 11.7071L17.3358 3.66421C18.1168 2.88316 19.3832 2.88316 20.1642 3.66421L20.3358 3.83578C21.1168 4.61683 21.1168 5.88316 20.3358 6.66421L12.2929 14.7071C12.1054 14.8946 11.851 15 11.5858 15H9Z", stroke: "currentColor", strokeWidth: 2, strokeLinecap: "square", strokeLinejoin: "round" })] }) });
-        },
-        407602: (e, t, s) => {
-            "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, l.jsx)("path", { d: "M17 12v3h-2.998v2h3v3h2v-3h3v-2h-3.001v-3H17zm-5 6.839c-3.871-2.34-6.053-4.639-7.127-6.609-1.112-2.04-1.031-3.7-.479-4.82.561-1.13 1.667-1.84 2.91-1.91 1.222-.06 2.68.51 3.892 2.16l.806 1.09.805-1.09c1.211-1.65 2.668-2.22 3.89-2.16 1.242.07 2.347.78 2.908 1.91.334.677.49 1.554.321 2.59h2.011c.153-1.283-.039-2.469-.539-3.48-.887-1.79-2.647-2.91-4.601-3.01-1.65-.09-3.367.56-4.796 2.01-1.43-1.45-3.147-2.1-4.798-2.01-1.954.1-3.714 1.22-4.601 3.01-.896 1.81-.846 4.17.514 6.67 1.353 2.48 4.003 5.12 8.382 7.67l.502.299v-2.32z" }) });
-        },
-        955504: (e, t, s) => {
-            "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, l.jsx)("path", { d: "M12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zM13 17h-2v-5h2v5zm-1-7c-.83 0-1.5-.67-1.5-1.5S11.17 7 12 7s1.5.67 1.5 1.5S12.83 10 12 10z" }) });
-        },
-        89195: (e, t, s) => {
-            "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, l.jsx)("path", { d: "M18.36 5.64c-1.95-1.96-5.11-1.96-7.07 0L9.88 7.05 8.46 5.64l1.42-1.42c2.73-2.73 7.16-2.73 9.9 0 2.73 2.74 2.73 7.17 0 9.9l-1.42 1.42-1.41-1.42 1.41-1.41c1.96-1.96 1.96-5.12 0-7.07zm-2.12 3.53l-7.07 7.07-1.41-1.41 7.07-7.07 1.41 1.41zm-12.02.71l1.42-1.42 1.41 1.42-1.41 1.41c-1.96 1.96-1.96 5.12 0 7.07 1.95 1.96 5.11 1.96 7.07 0l1.41-1.41 1.42 1.41-1.42 1.42c-2.73 2.73-7.16 2.73-9.9 0-2.73-2.74-2.73-7.17 0-9.9z" }) });
-        },
-        788452: (e, t, s) => {
-            "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, l.jsx)("path", { d: "M1.998 5.5c0-1.381 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.119 2.5 2.5v13c0 1.381-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.119-2.5-2.5v-13zm2.5-.5c-.276 0-.5.224-.5.5v2.764l8 3.638 8-3.636V5.5c0-.276-.224-.5-.5-.5h-15zm15.5 5.463l-8 3.636-8-3.638V18.5c0 .276.224.5.5.5h15c.276 0 .5-.224.5-.5v-8.037z" }) });
-        },
-        951671: (e, t, s) => {
-            "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, l.jsx)("path", { d: "M17.584 4l-2.043-2.043L16.955.543l2.043 2.043L21.041.543l1.414 1.414L20.412 4l2.043 2.043-1.414 1.414-2.043-2.043-2.043 2.043-1.414-1.414L17.584 4zm-11.4-.949C7.734 2.534 9.849 2 12 2v2c-1.849 0-3.734.465-5.184.949-.719.24-1.318.479-1.735.658L5 5.642v6.377c0 1.565.445 3.066 1.291 4.269 1.467-1.484 3.429-2.287 5.715-2.287s4.241.801 5.708 2.279C18.557 15.079 19 13.581 19 12.019V11h2v1.019c0 2.407-.852 4.792-2.575 6.514-.282.282-.587.545-.914.787-.86.636-1.821 1.288-2.742 1.785-.882.476-1.879.895-2.768.895s-1.886-.42-2.768-.895c-.922-.497-1.882-1.149-2.742-1.785-.324-.24-.626-.5-.905-.778-1.729-1.723-2.584-4.112-2.584-6.523V4.382l.553-.276.447.894-.447-.894h.002l.004-.003.012-.006.04-.02.146-.069c.126-.059.308-.141.537-.24.458-.196 1.109-.457 1.89-.717h-.002zM16.32 17.713C15.234 16.605 13.783 16 12.007 16s-3.232.608-4.318 1.719c.82.606 1.692 1.193 2.493 1.625.844.455 1.463.656 1.819.656s.975-.2 1.819-.656c.804-.433 1.678-1.023 2.5-1.631zM12 8c-.828 0-1.5.672-1.5 1.5S11.172 11 12 11s1.5-.672 1.5-1.5S12.828 8 12 8zM8.5 9.5C8.5 7.567 10.067 6 12 6s3.5 1.567 3.5 3.5S13.933 13 12 13s-3.5-1.567-3.5-3.5z" }) });
-        },
-        429804: (e, t, s) => {
-            "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, l.jsx)("path", { d: "M17.998 3V0h2v3h3v2h-3v3h-2V5h-3V3h3zm-11.814.051C7.734 2.534 9.849 2 12 2v2c-1.849 0-3.734.465-5.184.949-.719.24-1.318.479-1.735.658L5 5.642v6.377c0 1.565.445 3.066 1.291 4.269 1.467-1.484 3.429-2.287 5.715-2.287s4.241.801 5.708 2.28C18.557 15.08 19 13.582 19 12.02v-1.019h2v1.019c0 2.407-.852 4.792-2.575 6.514-.282.282-.587.545-.914.787-.86.636-1.821 1.288-2.742 1.785-.882.476-1.879.895-2.768.895s-1.886-.42-2.768-.895c-.922-.497-1.882-1.149-2.742-1.785-.324-.24-.626-.5-.905-.778-1.729-1.723-2.584-4.112-2.584-6.523V4.382l.553-.276.447.894-.447-.894h.002l.004-.003.012-.006.04-.02.146-.069c.126-.059.308-.141.537-.24.458-.196 1.109-.457 1.89-.717h-.002zM16.32 17.713C15.234 16.605 13.783 16 12.007 16s-3.232.608-4.318 1.719c.82.606 1.692 1.193 2.493 1.625.844.455 1.463.656 1.819.656s.975-.2 1.819-.656c.804-.433 1.678-1.023 2.5-1.631zM12.001 8c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5zm-3.5 1.5c0-1.933 1.567-3.5 3.5-3.5s3.5 1.567 3.5 3.5-1.567 3.5-3.5 3.5-3.5-1.567-3.5-3.5z" }) });
-        },
-        421018: (e, t, s) => {
-            "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, l.jsx)("path", { d: "M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z" }) });
-        },
-        189164: (e, t, s) => {
-            "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsxs)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: [(0, l.jsx)("path", { fill: "#FFD700", d: "M23.098 17.97l-8.62-14.93c-.54-.94-1.51-1.5-2.6-1.5h-.02c-1.09 0-2.06.58-2.6 1.53L.888 18c-.53.94-.52 2.06.03 2.99.54.92 1.49 1.47 2.55 1.47h17.07c1.06 0 2.02-.55 2.56-1.48.54-.94.54-2.07 0-3.01z" }), (0, l.jsx)("path", { fill: "#FFF", d: "M11.998 18.89c-.76 0-1.38-.62-1.38-1.38s.62-1.37 1.38-1.37 1.37.61 1.37 1.37-.61 1.38-1.37 1.38zm1.72-9.03l-.93 4.39c-.07.38-.4.64-.79.64s-.71-.26-.8-.64l-.93-4.39c-.1-.52.03-1.06.36-1.47.67-.83 2.07-.83 2.74 0 .33.41.46.95.35 1.47z" })] });
-        },
-        380389: (e, t, s) => {
-            "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsx)("svg", { viewBox: "0 0 24 24", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", display: "flex", fill: "none", role: "img", ...e, children: (0, l.jsx)("path", { d: "M18.0003 19H19.9999C21.1598 19 22.1087 17.9982 21.7536 16.894C20.7757 13.8524 18.2557 12.5926 16.0004 13.1147M11.0004 7C11.0004 8.65685 9.65721 10 8.00036 10C6.3435 10 5.00036 8.65685 5.00036 7C5.00036 5.34315 6.3435 4 8.00036 4C9.65721 4 11.0004 5.34315 11.0004 7ZM19.5004 7.5C19.5004 8.88071 18.3811 10 17.0004 10C15.6196 10 14.5004 8.88071 14.5004 7.5C14.5004 6.11929 15.6196 5 17.0004 5C18.3811 5 19.5004 6.11929 19.5004 7.5ZM11.8544 20H4.1463C2.98636 20 2.04449 18.9995 2.35619 17.8822C4.17226 11.3726 11.8284 11.3726 13.6445 17.8822C13.9562 18.9995 13.0144 20 11.8544 20Z", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }) });
-        },
-        784344: (e, t, s) => {
-            "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsx)("svg", { viewBox: "0 0 12 12", xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, l.jsx)("path", { d: "M3.393 5.565L4.826 7L3.942 7.88L1 4.94L3.942 2L4.826 2.88L3.393 4.315H6.634C8.498 4.315 10.009 5.825 10.009 7.69V9.44H8.759V7.69C8.759 6.515 7.8075 5.565 6.634 5.565H3.393Z" }) });
-        },
-        447742: (e, t, s) => {
-            "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, l.jsx)("path", { d: "M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z" }) });
-        },
-        849436: (e, t, s) => {
-            "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, l.jsx)("path", { d: "M10.54 1.75h2.92l1.57 2.36c.11.17.32.25.53.21l2.53-.59 2.17 2.17-.58 2.54c-.05.2.04.41.21.53l2.36 1.57v2.92l-2.36 1.57c-.17.12-.26.33-.21.53l.58 2.54-2.17 2.17-2.53-.59c-.21-.04-.42.04-.53.21l-1.57 2.36h-2.92l-1.58-2.36c-.11-.17-.32-.25-.52-.21l-2.54.59-2.17-2.17.58-2.54c.05-.2-.03-.41-.21-.53l-2.35-1.57v-2.92L4.1 8.97c.18-.12.26-.33.21-.53L3.73 5.9 5.9 3.73l2.54.59c.2.04.41-.04.52-.21l1.58-2.36zm1.07 2l-.98 1.47C10.05 6.08 9 6.5 7.99 6.27l-1.46-.34-.6.6.33 1.46c.24 1.01-.18 2.07-1.05 2.64l-1.46.98v.78l1.46.98c.87.57 1.29 1.63 1.05 2.64l-.33 1.46.6.6 1.46-.34c1.01-.23 2.06.19 2.64 1.05l.98 1.47h.78l.97-1.47c.58-.86 1.63-1.28 2.65-1.05l1.45.34.61-.6-.34-1.46c-.23-1.01.18-2.07 1.05-2.64l1.47-.98v-.78l-1.47-.98c-.87-.57-1.28-1.63-1.05-2.64l.34-1.46-.61-.6-1.45.34c-1.02.23-2.07-.19-2.65-1.05l-.97-1.47h-.78zM12 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5c.82 0 1.5-.67 1.5-1.5s-.68-1.5-1.5-1.5zM8.5 12c0-1.93 1.56-3.5 3.5-3.5 1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5c-1.94 0-3.5-1.57-3.5-3.5z" }) });
-        },
-        515790: (e, t, s) => {
-            "use strict";
-            s.d(t, { Z: () => r });
-            var l = s(552322);
-            const r = (e) => (0, l.jsx)("svg", { viewBox: "0 0 24 24", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", display: "flex", role: "img", ...e, children: (0, l.jsx)("path", { d: "M19 13C19 9.13401 15.866 6 12 6C8.13401 6 5 9.13401 5 13C5 16.866 8.13401 20 12 20C15.866 20 19 16.866 19 13ZM8.29297 9.29297C8.65908 8.92685 9.23809 8.90426 9.63086 9.22461L9.70703 9.29297L12.707 12.293L12.7754 12.3691C13.0957 12.7619 13.0731 13.3409 12.707 13.707C12.3409 14.0731 11.7619 14.0957 11.3691 13.7754L11.293 13.707L8.29297 10.707L8.22461 10.6309C7.90426 10.2381 7.92685 9.65908 8.29297 9.29297ZM14 1C14.5523 1 15 1.44772 15 2C15 2.55228 14.5523 3 14 3H10C9.44772 3 9 2.55228 9 2C9 1.44772 9.44772 1 10 1H14ZM21 13C21 17.9706 16.9706 22 12 22C7.02944 22 3 17.9706 3 13C3 8.02944 7.02944 4 12 4C16.9706 4 21 8.02944 21 13Z", fill: "currentColor" }) });
+            s.d(t, { r: () => l });
+            var r = s(552322),
+                n = s(199237),
+                a = s(202784),
+                i = s(31674);
+            const l = (0, a.forwardRef)(function ({ className: e, size: t = "medium", thumbClassName: s, ...a }, l) {
+                return (0, r.jsx)(n.fC, { className: (0, i.cn)("focus-visible:ring-offset-background data-[state=checked]:bg-primary rounded-full focus-visible:ring-primary inline-flex shrink-0 cursor-pointer items-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=unchecked]:bg-gray-500", "medium" === t ? "h-3 w-10" : "h-2 w-6", e), ...a, ref: l, children: (0, r.jsx)(n.bU, { className: (0, i.cn)("rounded-full pointer-events-none block shadow-md ring-0 transition-transform data-[state=checked]:bg-blue-300 data-[state=unchecked]:bg-gray-50", "medium" === t ? "size-5 data-[state=checked]:translate-x-5 data-[state=checked]:rtl:-translate-x-5 data-[state=unchecked]:translate-x-0" : "size-3.5 data-[state=checked]:translate-x-2.5 data-[state=checked]:rtl:-translate-x-2.5 data-[state=unchecked]:translate-x-0", s) }) });
+            });
         },
         597322: (e, t, s) => {
             "use strict";
-            s.r(t), s.d(t, { default: () => w });
+            s.r(t), s.d(t, { default: () => x });
             s(136728);
-            var l = s(202784),
-                r = s(176453),
-                i = s(325686),
-                h = s(107267),
-                c = s(67369),
+            var r = s(202784),
+                n = s(176453),
+                a = s(325686),
+                i = s(107267),
+                l = s(67369),
                 o = s(392237),
-                n = s(857378),
+                c = s(857378),
                 d = s(252021),
-                a = s(234622);
+                u = s(234622);
             s(536188);
-            const v = o.default.create((e) => ({ root: { width: "100%", display: "block" } })),
-                w = (e) => {
-                    const t = (0, c.yu)(),
-                        s = (0, h.useHistory)(),
-                        { id: o, token: w } = (0, h.useParams)(),
-                        m = t ? n.h$ : 0;
-                    return (o && w) || s.push("/i/chat"), l.createElement(a.i, null, l.createElement(d.Z, { history: s, isFullWidth: !0, primaryContent: () => l.createElement(i.Z, { style: v.root }, l.createElement(r.N, { groupId: o, settings: { path: "/i/chat", bottomBarHeight: m }, token: w })), sidebarContent: null }));
+            const h = o.default.create((e) => ({ root: { width: "100%", display: "block" } })),
+                x = (e) => {
+                    const t = (0, l.yu)(),
+                        s = (0, i.useHistory)(),
+                        { id: o, token: x } = (0, i.useParams)(),
+                        m = t ? c.h$ : 0;
+                    return (o && x) || s.push("/i/chat"), r.createElement(u.i, null, r.createElement(d.Z, { history: s, isFullWidth: !0, primaryContent: () => r.createElement(a.Z, { style: h.root }, r.createElement(n.N, { groupId: o, settings: { path: "/i/chat", bottomBarHeight: m }, token: x })), sidebarContent: null }));
                 };
         },
         647665: (e, t, s) => {
             "use strict";
-            s.r(t), s.d(t, { default: () => w });
-            var l = s(202784),
-                r = s(850697),
-                i = s(325686),
-                h = s(107267),
-                c = s(67369),
+            s.r(t), s.d(t, { default: () => x });
+            var r = s(202784),
+                n = s(850697),
+                a = s(325686),
+                i = s(107267),
+                l = s(67369),
                 o = s(392237),
-                n = s(857378),
+                c = s(857378),
                 d = s(252021),
-                a = s(234622);
+                u = s(234622);
             s(470201);
-            const v = o.default.create((e) => ({ root: { width: "100%", display: "block" } })),
-                w = (e) => {
-                    const t = (0, c.yu)(),
-                        s = (0, h.useHistory)(),
-                        { xChatPinMode: o } = (0, h.useParams)(),
-                        w = t ? n.h$ : 0;
-                    return l.createElement(a.i, null, l.createElement(d.Z, { history: s, isFullWidth: !0, primaryContent: () => l.createElement(i.Z, { style: v.root }, l.createElement(r.x, { mode: o ?? "new", settings: { path: "/i/chat", bottomBarHeight: w } })), sidebarContent: null }));
+            const h = o.default.create((e) => ({ root: { width: "100%", display: "block" } })),
+                x = (e) => {
+                    const t = (0, l.yu)(),
+                        s = (0, i.useHistory)(),
+                        { xChatPinMode: o } = (0, i.useParams)(),
+                        x = t ? c.h$ : 0;
+                    return r.createElement(u.i, null, r.createElement(d.Z, { history: s, isFullWidth: !0, primaryContent: () => r.createElement(a.Z, { style: h.root }, r.createElement(n.x, { mode: o ?? "new", settings: { path: "/i/chat", bottomBarHeight: x } })), sidebarContent: null }));
                 };
         },
         476644: (e, t, s) => {
             "use strict";
-            s.r(t), s.d(t, { default: () => g });
-            var l = s(202784),
-                r = s(700931),
-                i = s(264531),
-                h = s(325686),
-                c = s(107267),
+            s.r(t), s.d(t, { default: () => p });
+            var r = s(202784),
+                n = s(700931),
+                a = s(264531),
+                i = s(325686),
+                l = s(107267),
                 o = s(67369),
-                n = s(392237),
+                c = s(392237),
                 d = s(857378),
-                a = s(252021),
-                v = s(234622),
-                w = (s(434882), s(134760)),
+                u = s(252021),
+                h = s(234622),
+                x = (s(434882), s(134760)),
                 m = s(952793);
-            const x = n.default.create((e) => ({ root: { width: "100%", display: "block" } })),
-                g = (e) => {
-                    const t = (0, c.useHistory)(),
-                        s = (0, c.useLocation)(),
-                        n = (0, m.hC)("rweb_xchat_debug_enabled"),
-                        g = (0, o.yu)(),
-                        p = !("/i/chat/" === s.pathname || "/i/chat" === s.pathname),
-                        C = g && !p ? d.h$ : 0,
-                        u = (0, m.hC)("rweb_xchat_logs"),
-                        f = (0, m.hC)("rweb_xchat_new_db_worker_enabled");
-                    return l.createElement(v.i, null, l.createElement(a.Z, { headerless: g && p, history: t, isFullWidth: !0, primaryContent: () => l.createElement(h.Z, { style: x.root }, l.createElement(r.H, { settings: { path: "/i/chat", showDebugOptions: n, bottomBarHeight: C, logLevel: u ? i.B$.INFO : i.B$.ERROR, newDBWorker: f, rwebElements: { dashMenuButton: l.createElement(w.Z, null) } } })), sidebarContent: null, withTopNav: !1 }));
+            const g = c.default.create((e) => ({ root: { width: "100%", display: "block" } })),
+                p = (e) => {
+                    const t = (0, l.useHistory)(),
+                        s = (0, l.useLocation)(),
+                        c = (0, m.hC)("rweb_xchat_debug_enabled"),
+                        p = (0, o.yu)(),
+                        b = "/i/chat/" === s.pathname || "/i/chat" === s.pathname,
+                        f = !b,
+                        j = p && !f ? d.h$ : 0,
+                        v = (0, m.hC)("rweb_xchat_logs"),
+                        y = (0, m.hC)("rweb_xchat_new_db_worker_enabled");
+                    return r.createElement(h.i, null, r.createElement(u.Z, { headerless: p && f, history: t, isFullWidth: !0, primaryContent: () => r.createElement(i.Z, { style: g.root }, r.createElement(n.H, { settings: { path: "/i/chat", showDebugOptions: c, bottomBarHeight: j, logLevel: v ? a.B$.INFO : a.B$.ERROR, newDBWorker: y, rwebElements: { dashMenuButton: p && b ? r.createElement(x.Z, null) : void 0 } } })), sidebarContent: null, withTopNav: !1 }));
                 };
         },
         115290: (e, t, s) => {
-            var l = s(482609),
-                r = s(274380);
-            (t = l(!1)).i(r), t.push([e.id, "\n", ""]), (e.exports = t);
+            var r = s(482609),
+                n = s(274380);
+            (t = r(!1)).i(n), t.push([e.id, "\n", ""]), (e.exports = t);
         },
         278003: (e, t, s) => {
-            var l = s(482609),
-                r = s(274380);
-            (t = l(!1)).i(r), t.push([e.id, "\n", ""]), (e.exports = t);
+            var r = s(482609),
+                n = s(274380);
+            (t = r(!1)).i(n), t.push([e.id, "\n", ""]), (e.exports = t);
         },
         606299: (e, t, s) => {
-            var l = s(482609),
-                r = s(274380);
-            (t = l(!1)).i(r), t.push([e.id, "\n", ""]), (e.exports = t);
+            var r = s(482609),
+                n = s(274380);
+            (t = r(!1)).i(n), t.push([e.id, "\n", ""]), (e.exports = t);
         },
         536188: (e, t, s) => {
-            var l = s(46062),
-                r = s(115290);
-            "string" == typeof (r = r.__esModule ? r.default : r) && (r = [[e.id, r, ""]]);
-            var i = { insert: "head", singleton: !1 };
-            l(r, i);
-            e.exports = r.locals || {};
+            var r = s(46062),
+                n = s(115290);
+            "string" == typeof (n = n.__esModule ? n.default : n) && (n = [[e.id, n, ""]]);
+            var a = { insert: "head", singleton: !1 };
+            r(n, a);
+            e.exports = n.locals || {};
         },
         470201: (e, t, s) => {
-            var l = s(46062),
-                r = s(278003);
-            "string" == typeof (r = r.__esModule ? r.default : r) && (r = [[e.id, r, ""]]);
-            var i = { insert: "head", singleton: !1 };
-            l(r, i);
-            e.exports = r.locals || {};
+            var r = s(46062),
+                n = s(278003);
+            "string" == typeof (n = n.__esModule ? n.default : n) && (n = [[e.id, n, ""]]);
+            var a = { insert: "head", singleton: !1 };
+            r(n, a);
+            e.exports = n.locals || {};
         },
         434882: (e, t, s) => {
-            var l = s(46062),
-                r = s(606299);
-            "string" == typeof (r = r.__esModule ? r.default : r) && (r = [[e.id, r, ""]]);
-            var i = { insert: "head", singleton: !1 };
-            l(r, i);
-            e.exports = r.locals || {};
+            var r = s(46062),
+                n = s(606299);
+            "string" == typeof (n = n.__esModule ? n.default : n) && (n = [[e.id, n, ""]]);
+            var a = { insert: "head", singleton: !1 };
+            r(n, a);
+            e.exports = n.locals || {};
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.5c83dc8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.bbb9b0ba.js.map

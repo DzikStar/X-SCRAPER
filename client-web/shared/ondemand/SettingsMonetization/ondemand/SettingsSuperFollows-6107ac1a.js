@@ -555,7 +555,7 @@
                 o = s;
         },
         290402: (e, a, n) => {
-            n.d(a, { Z: () => g });
+            n.d(a, { Z: () => p });
             var r = n(807896),
                 l = n(202784),
                 t = n(182056),
@@ -567,10 +567,10 @@
             const c = d().aa6e3300,
                 m = ({ retryMessage: e, ...a }, n) => {
                     const i = t.Z.isOnline();
-                    return l.createElement(s.Z, (0, r.Z)({}, a, { icon: i ? void 0 : l.createElement(u.default, { style: p.icon }), retryMessage: i ? e : c }));
+                    return l.createElement(s.Z, (0, r.Z)({}, a, { icon: i ? void 0 : l.createElement(u.default, { style: g.icon }), retryMessage: i ? e : c }));
                 },
-                p = i.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
-                g = l.forwardRef(m);
+                g = i.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
+                p = l.forwardRef(m);
         },
         965245: (e, a, n) => {
             n.d(a, { Z: () => o });
@@ -583,62 +583,6 @@
                 const o = l.createElement(i.C, (0, r.Z)({}, n, { footer: a }));
                 return e ? l.createElement(t.Z, { title: e }, o) : o;
             };
-        },
-        253493: (e, a, n) => {
-            n.d(a, { Z: () => k });
-            var r = n(202784),
-                l = n(107267),
-                t = n(791632),
-                s = n(325686),
-                i = n(537392),
-                o = n(10656),
-                d = n(655352),
-                u = n(555079),
-                c = n(500002),
-                m = n(625661),
-                p = n(449067),
-                g = n(655543),
-                f = n(715601),
-                b = n(392237);
-            const y = b.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...b.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
-            class h extends r.Component {
-                constructor(...e) {
-                    super(...e),
-                        (this._renderChildren = () => {
-                            const { children: e } = this.props;
-                            return this.context.rootDetailPerColumnScroll ? r.createElement(s.Z, { style: y.fill }, r.createElement(f.Z, { style: y.viewportView }, this._renderInlineNav({ isTwoColumnLayout: !0 }), e)) : e;
-                        });
-                }
-                render() {
-                    return r.createElement(i.ZP, null, ({ containerWidth: e }) => (o.Z.isTwoColumnLayout(e) ? this._renderForTwoColumnLayout() : this._renderForOneColumnLayout()));
-                }
-                _renderForOneColumnLayout() {
-                    const { appBarStyle: e, children: a, leftControl: n, screenType: l, showSubtitleOnRoot: t, showSubtitleOnWideDetail: s, withBottomBorder: i, withDetailOpen: o, ...u } = this.props;
-                    return r.createElement(r.Fragment, null, (0, d.ZP)() ? this._renderInlineNav({ isTwoColumnLayout: !1 }) : r.createElement(p.Z.Configure, u), a);
-                }
-                _renderForTwoColumnLayout() {
-                    const e = this.context.rootDetailPerColumnScroll;
-                    return r.createElement(r.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
-                }
-                _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: a, TabBar: n, appBarStyle: l, backLocation: t, documentTitle: i, headerless: o, history: d, leftControl: c, middleControl: g, onBackClick: f, rightControl: b, screenType: h, searchBoxOptions: F, secondaryBar: k, showSubtitleOnRoot: w, showSubtitleOnWideDetail: S, subtitle: _, title: v, titleIconCell: C, titleIconCellSize: D, withDetailOpen: Z, withSearchBox: K, withTweetButton: E, withWideContainer: P } = this.props,
-                        O = "root" === h,
-                        B = "secondaryRoot" === h,
-                        T = "primaryDetail" === h,
-                        x = (T && S) || (O && w),
-                        I = O || (T && e),
-                        L = O ? u.ey : T ? u.vX : void 0,
-                        R = r.createElement(s.Z, { style: y.appBarContainer }, r.createElement(m.ZP, { backLocation: t, fixed: !1, hideBackButton: I, history: d, leftControl: c, middleControl: g, onBackClick: f, rightControl: b, secondaryBar: k, style: l, subtitle: x ? _ : void 0, title: v, titleDomId: L, titleIconCell: C, titleIconCellSize: D, withWideContainer: P })),
-                        M = O || (B && Z) ? null : r.createElement(p.Z.Configure, { SideNavButton: a, TabBar: n, backLocation: t, documentTitle: i, headerless: o, middleControl: g, onBackClick: f, rightControl: b, searchBoxOptions: F, subtitle: _, title: v, withSearchBox: K, withTweetButton: E });
-                    return r.createElement(r.Fragment, null, M, R);
-                }
-            }
-            (h.contextType = g.Z), (h.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0 });
-            const F = (0, c.ZP)(h),
-                k = (e) => {
-                    const a = (0, l.useHistory)();
-                    return (0, t.HD)(a) ? e.children || null : r.createElement(F, e);
-                };
         },
         334346: (e, a, n) => {
             n.d(a, { C: () => o, Z: () => i });
@@ -783,23 +727,23 @@
                 u = n(614983),
                 c = n.n(u),
                 m = (n(585488), n(712696)),
-                p = n.n(m),
-                g = n(351743),
-                f = n.n(g),
+                g = n.n(m),
+                p = n(351743),
+                f = n.n(p),
                 b = n(420412),
                 y = n(954110),
-                h = n(111677),
-                F = n.n(h),
-                k = n(125363),
-                w = n(390387);
-            const S = F().g40b2b30,
-                _ = F().c1521804,
+                F = n(111677),
+                k = n.n(F),
+                h = n(125363),
+                _ = n(390387);
+            const S = k().g40b2b30,
+                w = k().c1521804,
                 v = o,
                 C = s;
             function D() {
-                const e = (0, k.v9)(w.x0);
+                const e = (0, h.v9)(_.x0);
                 c()(e, "UserID must be defined");
-                const a = p()(v, { userId: e }),
+                const a = g()(v, { userId: e }),
                     [n] = f()(C),
                     r = a?.user_result_by_rest_id?.result?.creator_preferences?.previews_enabled,
                     l = void 0 === r || r,
@@ -817,11 +761,11 @@
                                 variables: { previewsEnabled: !t, userId: e },
                             });
                     }, [n, t, e, a]);
-                return d.createElement(d.Fragment, null, d.createElement(b.Z, null), d.createElement(y.Z, { checked: t, disabled: !1, helpText: _, label: S, name: "previewsEnabledTabCustomization", onChange: i }), d.createElement(b.Z, null));
+                return d.createElement(d.Fragment, null, d.createElement(b.Z, null), d.createElement(y.Z, { checked: t, disabled: !1, helpText: w, label: S, name: "previewsEnabledTabCustomization", onChange: i }), d.createElement(b.Z, null));
             }
         },
         865721: (e, a, n) => {
-            n.d(a, { Z: () => I });
+            n.d(a, { Z: () => R });
             var r = n(807896),
                 l = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "SuperFollowsDeactivateButton_viewer", selections: [{ args: null, kind: "FragmentSpread", name: "useSuperFollowsDeactivate_viewer" }], type: "Viewer", abstractKey: null, hash: "4afbdff48be896080e44496b4cd6868e" };
             const t = l;
@@ -832,21 +776,21 @@
                 u = n(190286),
                 c = n(111677),
                 m = n.n(c),
-                p = n(668214),
-                g = n(601576);
-            const f = (0, p.Z)().propsFromActions(() => ({ addToast: g.fz }));
+                g = n(668214),
+                p = n(601576);
+            const f = (0, g.Z)().propsFromActions(() => ({ addToast: p.fz }));
             var b,
                 y = { fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsDeactivateMutation", selections: (b = [{ alias: null, args: [{ kind: "Literal", name: "s", value: "4721" }], kind: "ScalarField", name: "deactivate_super_follows_creator", storageKey: 'deactivate_super_follows_creator(s:"4721")' }]), type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [], kind: "Operation", name: "useSuperFollowsDeactivateMutation", selections: b }, params: { id: "K5_KjMpjdtjQXzKGLqyFXw", metadata: {}, name: "useSuperFollowsDeactivateMutation", operationKind: "mutation", text: null } };
             y.hash = "c33de27607da73145e2d32d5855eaa27";
-            const h = y;
-            var F = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsDeactivate_viewer", selections: [{ kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }], type: "Viewer", abstractKey: null, hash: "be30a750d32c634903dac132ededc4bf" };
-            const k = F;
-            var w = n(614983),
-                S = n.n(w),
-                _ = n(351743),
-                v = n.n(_);
-            const C = k,
-                D = h,
+            const F = y;
+            var k = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsDeactivate_viewer", selections: [{ kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }], type: "Viewer", abstractKey: null, hash: "be30a750d32c634903dac132ededc4bf" };
+            const h = k;
+            var _ = n(614983),
+                S = n.n(_),
+                w = n(351743),
+                v = n.n(w);
+            const C = h,
+                D = F,
                 Z = (e) => {
                     const a = o()(C, e),
                         [n, r] = v()(D);
@@ -875,34 +819,34 @@
                 E = m().c6c27fc8,
                 P = m().cfd2f35e,
                 O = m().bee26fa8,
-                B = m().f82a23ec,
-                T = m().ef4602ec,
-                x = t,
-                I = f((e) => {
+                x = m().f82a23ec,
+                B = m().ef4602ec,
+                I = t,
+                R = f((e) => {
                     const { addToast: a, disabled: n, label: l, onCancel: t, onConfirm: i, viewer: c, ...m } = e,
-                        p = o()(x, c),
-                        [g, f] = s.useState(!1),
-                        [b, y] = Z(p),
-                        h = s.useCallback(() => {
+                        g = o()(I, c),
+                        [p, f] = s.useState(!1),
+                        [b, y] = Z(g),
+                        F = s.useCallback(() => {
                             f(!0);
                         }, []),
-                        F = s.useCallback(() => {
+                        k = s.useCallback(() => {
                             b()
                                 .then(() => {
-                                    f(!1), a({ text: B }), i?.();
+                                    f(!1), a({ text: x }), i?.();
                                 })
                                 .catch(() => {
-                                    a({ text: T });
+                                    a({ text: B });
                                 });
                         }, [a, b, i]),
-                        k = s.useCallback(() => {
+                        h = s.useCallback(() => {
                             f(!1), t?.();
                         }, [t]);
-                    return s.createElement(s.Fragment, null, s.createElement(d.ZP, (0, r.Z)({}, m, { disabled: y || n, onPress: h, type: "destructiveOutlined" }), l), g && s.createElement(u.Z, { cancelButtonLabel: P, confirmButtonLabel: O, confirmButtonType: "destructiveFilled", headline: K, onCancel: k, onConfirm: F, text: E }));
+                    return s.createElement(s.Fragment, null, s.createElement(d.ZP, (0, r.Z)({}, m, { disabled: y || n, onPress: F, type: "destructiveOutlined" }), l), p && s.createElement(u.Z, { cancelButtonLabel: P, confirmButtonLabel: O, confirmButtonType: "destructiveFilled", headline: K, onCancel: h, onConfirm: k, text: E }));
                 });
         },
         879113: (e, a, n) => {
-            n.d(a, { Z: () => p });
+            n.d(a, { Z: () => g });
             var r = n(202784),
                 l = n(476984),
                 t = n.n(l),
@@ -913,27 +857,27 @@
                 u = "loaded",
                 c = "loading",
                 m = "none";
-            class p extends r.Component {
+            class g extends r.Component {
                 shouldComponentUpdate(e) {
                     const a = e.fetchStatus === u,
                         n = this.props.fetchStatus !== e.fetchStatus;
                     return !(!a && !n) || !t()(e, this.props);
                 }
                 render() {
-                    const { "aria-label": e, color: a, failureMessage: n, fetchStatus: l, icon: t, loadingMessage: s, onRequestRetry: u, render: p, renderFailure: g, retryMessage: f, retryable: b } = this.props;
+                    const { "aria-label": e, color: a, failureMessage: n, fetchStatus: l, icon: t, loadingMessage: s, onRequestRetry: u, render: g, renderFailure: p, retryMessage: f, retryable: b } = this.props;
                     switch (l) {
                         case d:
-                            return b ? r.createElement(i.Z, { icon: t, onRequestRetry: u, retryMessage: f }) : n ? r.createElement(o.m, { failureMessage: n }) : g();
+                            return b ? r.createElement(i.Z, { icon: t, onRequestRetry: u, retryMessage: f }) : n ? r.createElement(o.m, { failureMessage: n }) : p();
                         case c:
                             return r.createElement(o.J, { "aria-label": e, color: a, loadingMessage: s });
                         case m:
                             return null;
                         default:
-                            return p();
+                            return g();
                     }
                 }
             }
-            p.defaultProps = { renderFailure: s.Z, retryable: !0 };
+            g.defaultProps = { renderFailure: s.Z, retryable: !0 };
         },
         420412: (e, a, n) => {
             n.d(a, { Z: () => o });
@@ -978,8 +922,8 @@
                 u = n(224162),
                 c = n(392237);
             const m = r.forwardRef((e, a) => (0, d.Z)("select", { ...e, ref: a })),
-                p = (e) => (0, d.Z)("option", e);
-            let g = 1;
+                g = (e) => (0, d.Z)("option", e);
+            let p = 1;
             class f extends r.PureComponent {
                 constructor(e) {
                     super(e),
@@ -998,22 +942,22 @@
                             const { onFocus: a } = this.props;
                             this.setState({ isFocused: !0 }), a && a();
                         }),
-                        (this._id = `SELECTOR_${g}`),
+                        (this._id = `SELECTOR_${p}`),
                         (this._errorID = `${this._id}_ERROR`),
                         (this._helperID = `${this._id}_HELP`),
                         (this._labelID = `${this._id}_LABEL`),
-                        (g += 1);
+                        (p += 1);
                 }
                 componentDidMount() {
                     this.props.autofocus && this._selectRef && this._selectRef.current && this._selectRef.current.focus();
                 }
                 render() {
-                    const { "aria-describedby": e, disabled: a, errorText: n, hasError: d, helperText: g, options: f, style: y, testID: h, value: F, withEmptyOption: k } = this.props,
-                        { isFocused: w } = this.state,
+                    const { "aria-describedby": e, disabled: a, errorText: n, hasError: d, helperText: p, options: f, style: y, testID: F, value: k, withEmptyOption: h } = this.props,
+                        { isFocused: _ } = this.state,
                         S = o.ZP.getLanguage(),
-                        _ = void 0 === d ? !!n : d,
+                        w = void 0 === d ? !!n : d,
                         v = new Set();
-                    n && v.add(this._errorID), e && v.add(e), g && v.add(this._helperID);
+                    n && v.add(this._errorID), e && v.add(e), p && v.add(this._helperID);
                     const C = v.size ? [...v].join(" ") : void 0;
                     return r.createElement(
                         r.Fragment,
@@ -1022,22 +966,22 @@
                             const o = "ja" === S ? c.default.theme.fontFamilies.japan : "rtl" === e || s.Z.isLocaleRTL(S) ? c.default.theme.fontFamilies.rtl : c.default.theme.fontFamilies.normal;
                             return r.createElement(
                                 l.Z,
-                                { style: [i.Z.border, b.container, a && i.Z.disabled, w && i.Z.focusedBorderValid, _ && i.Z.invalidBorderColor, w && _ && i.Z.focusedBorderInvalid, y] },
+                                { style: [i.Z.border, b.container, a && i.Z.disabled, _ && i.Z.focusedBorderValid, w && i.Z.invalidBorderColor, _ && w && i.Z.focusedBorderInvalid, y] },
                                 this._renderLabel(),
                                 r.createElement(
                                     m,
-                                    { "aria-describedby": C, "aria-invalid": _, "aria-labelledby": this._labelID, disabled: a, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: o }, a && i.Z.disabled], testID: h || "", value: F },
-                                    k ? r.createElement(p, { disabled: !0, style: b.option, value: "" }) : null,
+                                    { "aria-describedby": C, "aria-invalid": w, "aria-labelledby": this._labelID, disabled: a, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: o }, a && i.Z.disabled], testID: F || "", value: k },
+                                    h ? r.createElement(g, { disabled: !0, style: b.option, value: "" }) : null,
                                     f.map((e) => {
                                         const { disabled: a, label: n, value: l } = e;
-                                        return r.createElement(p, { disabled: a, key: `${n}-${l}`, style: b.option, value: l }, n);
+                                        return r.createElement(g, { disabled: a, key: `${n}-${l}`, style: b.option, value: l }, n);
                                     }),
                                 ),
-                                r.createElement(t.default, { style: [b.dropdownCaret, w && i.Z.validColor, !(!d && !n) && i.Z.invalidColor] }),
+                                r.createElement(t.default, { style: [b.dropdownCaret, _ && i.Z.validColor, !(!d && !n) && i.Z.invalidColor] }),
                             );
                         }),
-                        g ? this._renderHelperText() : null,
-                        _ && n ? this._renderErrorText() : null,
+                        p ? this._renderHelperText() : null,
+                        w && n ? this._renderErrorText() : null,
                     );
                 }
                 _renderLabel() {
@@ -1058,4 +1002,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-6107ac1a.fdc4c6da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-6107ac1a.4b6919fa.js.map

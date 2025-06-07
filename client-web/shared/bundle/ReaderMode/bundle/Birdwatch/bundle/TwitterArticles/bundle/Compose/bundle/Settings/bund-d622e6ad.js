@@ -55,7 +55,7 @@
                 c = (e) => ({ type: o, payload: e });
         },
         694180: (e, t, n) => {
-            n.d(t, { cM: () => E, dS: () => y, iY: () => _ });
+            n.d(t, { cM: () => y, dS: () => f, iY: () => T });
             var s = n(370751),
                 r = n(399896),
                 i = n(663550),
@@ -67,31 +67,31 @@
                 u = (0, s.Z)([i.dx.IMPRESSION, i.dx.DWELL]),
                 p = (0, s.Z)([i.AJ.TREND_VIEW, i.AJ.SPOTLIGHT_IMPRESSION]),
                 m = (e) => ({ payload: { eventKey: e }, type: l });
-            const f = (e, t) => !!e.promotedContent[t],
-                y =
+            const E = (e, t) => !!e.promotedContent[t],
+                f =
                     (e) =>
                     (t, n, { api: s }) => {
                         const { event: i, impression_id: o, promoted_trend_id: c } = e,
                             l = `trend-${c}-${i}`;
-                        if (p.has(i) && f(n(), l)) return Promise.resolve();
+                        if (p.has(i) && E(n(), l)) return Promise.resolve();
                         const u = { promoted_trend_id: c, event: i, impression_id: o };
                         return (0, a._O)(t, { params: u, request: s.withEndpoint(r.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: u }, (e, t) => {
                             if (!t && p.has(i)) return [m(l)];
                         });
                     },
-                E =
+                y =
                     ({ disclosureType: e, itemId: t, itemType: n, params: s }) =>
                     (i, o, { api: c }) => {
                         const { event: l, impression_id: p } = s,
-                            y = `${n}-${t ?? "undefined"}-${p ?? "undefined"}-${l ?? "undefined"}`;
-                        if (u.has(l) && f(o(), y)) return Promise.resolve();
-                        const E = e && "earned" === e.toLowerCase() ? "1" : null,
-                            _ = { ...s, earned: E, epoch_ms: Date.now() };
-                        return (0, a._O)(i, { params: _, request: c.withEndpoint(r.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: _ }, (e, t) => {
-                            if (!t && u.has(l)) return [m(y)];
+                            f = `${n}-${t ?? "undefined"}-${p ?? "undefined"}-${l ?? "undefined"}`;
+                        if (u.has(l) && E(o(), f)) return Promise.resolve();
+                        const y = e && "earned" === e.toLowerCase() ? "1" : null,
+                            T = { ...s, earned: y, epoch_ms: Date.now() };
+                        return (0, a._O)(i, { params: T, request: c.withEndpoint(r.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: T }, (e, t) => {
+                            if (!t && u.has(l)) return [m(f)];
                         });
                     },
-                _ =
+                T =
                     (e) =>
                     (t, n, { api: s }) =>
                         (0, a._O)(t, { params: e, request: s.withEndpoint(r.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: e });
@@ -152,21 +152,21 @@
             const l = (e) => [(0, c.dP)(e)];
             function u({ contextSuffix: e, getEndpointParams: t, getFetchApiEndpoint: n, mapEntitiesToActions: c = l, sliceKey: u, injectionOptions: { identityFunction: p } = {} }) {
                 const m = [],
-                    f = (e) => e[i.Yf]?.[u],
-                    y = (e) => {
-                        const t = f(e);
+                    E = (e) => e[i.Yf]?.[u],
+                    f = (e) => {
+                        const t = E(e);
                         if (!t) return m;
                         const n = t.items || m,
                             s = t.injections;
                         return s?.length > 0 ? (0, r.Z)(s.concat(n), p) : n;
                     },
-                    E = (e) => {
-                        const t = f(e),
-                            n = y(e),
+                    y = (e) => {
+                        const t = E(e),
+                            n = f(e),
                             s = n?.length > 0;
                         return t ? (0, a.ke)(t.fetchStatus, s) : a.ZP.NONE;
                     },
-                    _ =
+                    T =
                         (s) =>
                         (r, a, { api: d }) => {
                             const l = t(s);
@@ -175,24 +175,24 @@
                             });
                         };
                 return {
-                    select: f,
-                    selectItems: y,
-                    selectFetchStatus: E,
-                    fetch: _,
+                    select: E,
+                    selectItems: f,
+                    selectFetchStatus: y,
+                    fetch: T,
                     fetchIfNeeded: (e) => (t, n) => {
                         const r = n(),
-                            i = f(r),
-                            o = E(r);
-                        return !i || (o !== a.ZP.LOADING && o !== a.ZP.LOADED) ? t(_(e)) : s.O4.resolve();
+                            i = E(r),
+                            o = y(r);
+                        return !i || (o !== a.ZP.LOADING && o !== a.ZP.LOADED) ? t(T(e)) : s.O4.resolve();
                     },
                     fetchBottom: (e) => (t, n) => {
                         const r = n(),
-                            i = f(r),
+                            i = E(r),
                             o = ((e) => {
-                                const t = f(e);
+                                const t = E(e);
                                 return t?.cursors?.next_cursor;
                             })(r);
-                        return i.fetchStatus[d.Yj.BOTTOM] !== a.ZP.LOADING && o ? t(_({ ...e, cursor: o })) : s.O4.resolve();
+                        return i.fetchStatus[d.Yj.BOTTOM] !== a.ZP.LOADING && o ? t(T({ ...e, cursor: o })) : s.O4.resolve();
                     },
                     injectItems: (e) => i.WC({ items: e, sliceKey: u, identityFunction: p }),
                     removeItems: (e) => i.Er({ items: e, sliceKey: u, identityFunction: p }),
@@ -200,7 +200,7 @@
             }
         },
         841198: (e, t, n) => {
-            n.d(t, { Be: () => h, Er: () => g, Ev: () => E, WC: () => O, Yf: () => u, t5: () => P });
+            n.d(t, { Be: () => _, Er: () => I, Ev: () => y, WC: () => O, Yf: () => u, t5: () => A });
             n(571372);
             var s = n(166852),
                 r = n(370751),
@@ -213,7 +213,7 @@
                 u = "slices",
                 p = () => ({ cursors: {}, fetchStatus: { top: a.ZP.NONE, bottom: a.ZP.NONE }, items: l, injections: l }),
                 m = (0, o.dg)("rweb/slices", "FETCH");
-            const f = (e, t) => {
+            const E = (e, t) => {
                     if (!t) return e;
                     switch (t.type) {
                         case m.REQUEST: {
@@ -234,29 +234,29 @@
                             return e;
                     }
                 },
-                y = "rweb/slices/CLEAR_PARTIAL_SLICES_CACHE",
-                E = (e) => ({ type: y, meta: { sliceKey: e } }),
-                _ = "rweb/slices/DELETE_SLICE",
-                h = (e) => ({ type: _, meta: { sliceKey: e } }),
-                T = "rweb/slices/RESTORE_SLICE",
+                f = "rweb/slices/CLEAR_PARTIAL_SLICES_CACHE",
+                y = (e) => ({ type: f, meta: { sliceKey: e } }),
+                T = "rweb/slices/DELETE_SLICE",
+                _ = (e) => ({ type: T, meta: { sliceKey: e } }),
+                h = "rweb/slices/RESTORE_SLICE",
                 w = "rweb/slices/INJECT_ITEMS_SLICE",
                 O = ({ identityFunction: e, items: t, sliceKey: n }) => ({ type: w, meta: { sliceKey: n, identityFunction: e }, payload: t }),
                 S = "rweb/slices/REMOVE_ITEMS_SLICE",
-                g = ({ identityFunction: e, items: t, sliceKey: n }) => ({ type: S, meta: { sliceKey: n, identityFunction: e }, payload: t }),
-                P = ({ contextSuffix: e, params: t, sliceKey: n }) => ({ actionTypes: m, context: `FETCH_${e}`, meta: { sliceKey: n, direction: t?.cursor ? c.Yj.BOTTOM : c.Yj.TOP } });
+                I = ({ identityFunction: e, items: t, sliceKey: n }) => ({ type: S, meta: { sliceKey: n, identityFunction: e }, payload: t }),
+                A = ({ contextSuffix: e, params: t, sliceKey: n }) => ({ actionTypes: m, context: `FETCH_${e}`, meta: { sliceKey: n, direction: t?.cursor ? c.Yj.BOTTOM : c.Yj.TOP } });
             i.Z.register({
                 [u]: function (e = d, t) {
                     if (!t) return e;
                     const { sliceKey: n } = t.meta || {};
                     if (!n) return e;
                     switch (t.type) {
-                        case _: {
+                        case T: {
                             const t = { ...e };
                             return delete t[n], t;
                         }
-                        case T:
+                        case h:
                             return { ...e, [n]: t.payload };
-                        case y: {
+                        case f: {
                             const t = { ...e };
                             return (
                                 Object.keys(t).forEach((e) => {
@@ -280,7 +280,7 @@
                         }
                         default: {
                             const s = e[n] || p(),
-                                r = f(s, t);
+                                r = E(s, t);
                             return { ...e, [n]: { ...r } };
                         }
                     }
@@ -288,74 +288,80 @@
             });
         },
         251441: (e, t, n) => {
-            n.d(t, { Z: () => y });
+            n.d(t, { Z: () => T });
             n(571372);
             var s = n(506899),
                 r = n(697926),
                 i = n(265617),
                 o = n(88963),
                 a = n(869931),
-                c = n(502909),
-                d = n(600823);
-            const l = (0, c.ZP)({ namespace: "translationsTweets", fetchOneContext: "FETCH_TWEET_TRANSLATION", fetchOneEndpoint: (e) => (t, n) => e.withEndpoint(i.ZP).fetchTranslation(t, n).then(f), fetchOneParams: (e, t) => ({ id: e, ...t }) });
-            l.fetchStreamedGrokTranslation =
+                c = n(312771),
+                d = n(502909),
+                l = n(600823),
+                u = n(3693);
+            const p = (0, d.ZP)({ namespace: "translationsTweets", fetchOneContext: "FETCH_TWEET_TRANSLATION", fetchOneEndpoint: (e) => (t, n) => e.withEndpoint(i.ZP).fetchTranslation(t, n).then(y), fetchOneParams: (e, t) => ({ id: e, ...t }) });
+            p.fetchStreamedGrokTranslation =
                 (e, t, n) =>
                 (n, s, { api: r }) =>
                     new Promise((s, i) => {
                         const o = { content_type: "POST", id: e, dst_lang: t.userLanguage, include_polls: t.includePolls },
-                            a = { id: e, id_str: e, translation: "", entities: { symbols: [], hashtags: [], user_mentions: [], urls: [], media: [], timestamps: [] }, translationState: "Loading", streamedTranslationFetchStatus: "loading", sourceLanguage: t.lang, destinationLanguage: t.userLanguage, translationSource: "Grok", text: "", pollTranslations: [] };
-                        n(l.updateOrAddOne(e, m({ tweetId: e, translatedTweet: a }))),
+                            a = { id: e, id_str: e, translation: "", entities: { symbols: [], hashtags: [], user_mentions: [], urls: [], media: [], timestamps: [] }, streamedTranslationFetchStatus: c.iF.LOADING, sourceLanguage: t.lang, destinationLanguage: t.userLanguage, translationSource: "Grok", text: "", pollTranslations: [] };
+                        n(p.updateOrAddOne(e, f({ tweetId: e, translatedTweet: a }))),
                             r.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(o) }, "https://api.x.com").then(async (t) => {
-                                if (!t.ok) return (a.translationState = "Failed"), (a.streamedTranslationFetchStatus = "failed"), n(l.updateOrAddOne(e, m({ tweetId: e, translatedTweet: a }))), i(new Error("Failed to translate due to invalid API response."));
+                                if (!t.ok) return (a.translationState = u.H.ERROR), (a.streamedTranslationFetchStatus = c.iF.FAILED), n(p.updateOrAddOne(e, f({ tweetId: e, translatedTweet: a }))), i(new Error("Failed to translate due to invalid API response."));
                                 const r = t.body?.getReader();
-                                if (!r) return (a.translationState = "Failed"), (a.streamedTranslationFetchStatus = "failed"), n(l.updateOrAddOne(e, m({ tweetId: e, translatedTweet: a }))), i(new Error("Failed to translate because reader is not present."));
+                                if (!r) return (a.translationState = u.H.ERROR), (a.streamedTranslationFetchStatus = c.iF.FAILED), n(p.updateOrAddOne(e, f({ tweetId: e, translatedTweet: a }))), i(new Error("Failed to translate because reader is not present."));
                                 const o = new TextDecoder();
-                                let c = "",
-                                    d = "";
-                                const u = async () => {
-                                    const { done: t, value: p } = await r.read();
-                                    if (t) return (a.translationState = "Success"), (a.streamedTranslationFetchStatus = "loaded"), (a.translation = c), (a.text = c), n(l.updateOrAddOne(e, m({ tweetId: e, translatedTweet: a }))), s();
-                                    const f = o.decode(p);
-                                    if (((d += f), d.includes("\n"))) {
-                                        const t = d.split("\n");
-                                        d = t.pop();
+                                let d = "",
+                                    l = "";
+                                const m = async () => {
+                                    const { done: t, value: E } = await r.read();
+                                    if (t) return (a.translationState = u.H.SUCCESS), (a.streamedTranslationFetchStatus = c.iF.LOADED), (a.translation = d), (a.text = d), n(p.updateOrAddOne(e, f({ tweetId: e, translatedTweet: a }))), s();
+                                    const y = o.decode(E);
+                                    if (((l += y), l.includes("\n"))) {
+                                        const t = l.split("\n");
+                                        l = t.pop();
                                         for (const s of t)
                                             try {
                                                 const t = JSON.parse(s);
                                                 if (t.error) throw new Error(t.error);
-                                                if ((t.result && "POST" === t.result.content_type && (t.result.text && ((c += t.result.text), (a.translationState = "Streaming"), (a.streamedTranslationFetchStatus = "loaded"), (a.translation = c), (a.text = c)), t.result.entities && (t.result.entities.urls && (a.entities.urls = [...a.entities.urls, ...t.result.entities.urls]), t.result.entities.user_mentions && (a.entities.user_mentions = [...a.entities.user_mentions, ...t.result.entities.user_mentions]), t.result.entities.hashtags && (a.entities.hashtags = [...a.entities.hashtags, ...t.result.entities.hashtags]), t.result.entities.symbols && (a.entities.symbols = [...a.entities.symbols, ...t.result.entities.symbols]))), t.result && "POLL" === t.result.content_type)) {
+                                                if ((t.result && "POST" === t.result.content_type && (t.result.text && ((d += t.result.text), (a.translation = d), (a.text = d)), t.result.entities && (t.result.entities.urls && (a.entities.urls = [...a.entities.urls, ...t.result.entities.urls]), t.result.entities.user_mentions && (a.entities.user_mentions = [...a.entities.user_mentions, ...t.result.entities.user_mentions]), t.result.entities.hashtags && (a.entities.hashtags = [...a.entities.hashtags, ...t.result.entities.hashtags]), t.result.entities.symbols && (a.entities.symbols = [...a.entities.symbols, ...t.result.entities.symbols]))), t.result && "POLL" === t.result.content_type)) {
                                                     const { index: e, text: n } = t.result,
                                                         s = e - 1;
                                                     null == a.pollTranslations[s] && (a.pollTranslations[s] = ""), (a.pollTranslations[s] += n);
                                                 }
-                                                n(l.updateOrAddOne(e, m({ tweetId: e, translatedTweet: a })));
+                                                n(p.updateOrAddOne(e, f({ tweetId: e, translatedTweet: a })));
                                             } catch (t) {
-                                                return (a.translationState = "Failed"), (a.streamedTranslationFetchStatus = "failed"), n(l.updateOrAddOne(e, m({ tweetId: e, translatedTweet: a }))), i(new Error("Failed to parse translation JSON response."));
+                                                return (a.translationState = u.H.ERROR), (a.streamedTranslationFetchStatus = c.iF.FAILED), n(p.updateOrAddOne(e, f({ tweetId: e, translatedTweet: a }))), i(new Error("Failed to parse translation JSON response."));
                                             }
                                     }
-                                    u();
+                                    m();
                                 };
-                                u();
+                                m();
                             });
                     });
-            const u = new a.W(2),
-                p = new Set([]);
-            l.fetchGrokTranslationAndForget =
+            const m = new a.W(2),
+                E = new Set([]);
+            p.fetchGrokTranslationAndForget =
                 (e, t, n) =>
                 (n, s, { api: r }) => {
-                    p.has(e) ||
-                        (p.add(e),
-                        u.addTask(() => {
+                    E.has(e) ||
+                        (E.add(e),
+                        m.addTask(() => {
                             const n = { content_type: "POST", id: e, dst_lang: t.userLanguage, include_polls: t.includePolls };
                             return r.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(n) }, "https://api.x.com").then((e) => e.text());
                         }));
                 };
-            const m = ({ translatedTweet: e, tweetId: t }) => (0, s.Fv)(e, o.Z).entities.tweets[`${t}`],
-                f = (e) => {
+            const f = ({ translatedTweet: e, tweetId: t }) => (0, s.Fv)(e, o.Z).entities.tweets[`${t}`],
+                y = (e) => {
                     const t = Array.isArray(e) ? e : [e];
                     return { entities: { translationsTweets: (0, r.Z)(t, (e) => e.id_str) } };
                 },
-                y = d.Z.register(l);
+                T = l.Z.register(p);
+        },
+        3693: (e, t, n) => {
+            n.d(t, { H: () => s });
+            const s = Object.freeze({ SUCCESS: "Success", ERROR: "Error", TIMEOUT: "Timeout", DISABLED: "Disabled", MISSING: "Missing", NOT_TRANSLATABLE: "NotTranslatable", NOT_CACHED: "NotCached", VISIBILITY_FILTERED: "VisibilityFiltered" });
         },
         556303: (e, t, n) => {
             function s(e, t) {
@@ -432,4 +438,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad.f80e902a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad.07bc001a.js.map

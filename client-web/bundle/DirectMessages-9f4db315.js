@@ -338,7 +338,7 @@
         },
         300234: (e, t, o) => {
             "use strict";
-            o.d(t, { Z: () => O });
+            o.d(t, { Z: () => N });
             var n = o(202784),
                 r = o(325686),
                 i = o(284702),
@@ -431,8 +431,8 @@
             const L = l.default.create((e) => ({ img: { ...l.default.absoluteFillObject, height: "auto", margin: "auto", maxHeight: "100%", maxWidth: "100%", width: "auto" }, progressBar: { position: "absolute", top: 0, zIndex: 1 } })),
                 P = n.createElement(I.Z, { ariaValueText: E, indeterminate: !0, style: L.progressBar }),
                 D = T;
-            var M = o(310453);
-            class R extends n.PureComponent {
+            var R = o(310453);
+            class M extends n.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this._handlePlaybackStarted = () => {
@@ -454,11 +454,11 @@
                     const { promotedContent: e, video: t, videoId: o } = this.props,
                         [r, a] = t.video_info.aspect_ratio,
                         s = i.Z.extractVideoProps(o, t);
-                    return (s.aspectRatio = r / a), n.createElement(M.Z, (0, _.Z)({}, s, { onPlaybackStarted: this._handlePlaybackStarted, playbackCoordination: null, promotedContent: e, setPlayer: this._setPlayer, withPostPlayback: !0 }));
+                    return (s.aspectRatio = r / a), n.createElement(R.Z, (0, _.Z)({}, s, { onPlaybackStarted: this._handlePlaybackStarted, playbackCoordination: null, promotedContent: e, setPlayer: this._setPlayer, withPostPlayback: !0 }));
                 }
             }
             const A = l.default.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center" } }),
-                G = R,
+                G = M,
                 F = f().ac85c6b2,
                 W = (e) => {
                     const { businessAvatar: t = !1, isAvatar: o, isCurrentlyDisplayed: a, mediaDetail: s, onDismiss: l, onTap: d, promotedContent: c, videoId: p, ...h } = e,
@@ -529,8 +529,8 @@
                     );
                 },
                 V = l.default.create((e) => ({ root: { flexGrow: 1, justifyContent: "center", alignItems: "center", flexShrink: 1 }, mediaItem: { flexGrow: 1, width: "100%", height: "100%" }, container: { height: "100%", position: "absolute", width: "100%" }, errorDetail: { alignItems: "center", alignSelf: "center", justifyContent: "center", position: "absolute", height: "100%", maxWidth: 400 }, avatarImage: { borderRadius: e.borderRadii.infinite, margin: e.spaces.space16 } })),
-                q = n.memo(W, (e, t) => (0, d.Z)(e, t));
-            class z extends n.Component {
+                O = n.memo(W, (e, t) => (0, d.Z)(e, t));
+            class q extends n.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._getV2Key = () => {
@@ -581,20 +581,20 @@
                             const h = i.Z.isVideo(r),
                                 u = this._getItemVideoId(r),
                                 _ = o === p;
-                            return h && !u ? null : n.createElement(q, { businessAvatar: e, dataSaver: t, isAvatar: this.props.isAvatar, isCurrentlyDisplayed: _, key: p, mediaDetail: a[p], onDismiss: c ? void 0 : s, onTap: l, onZoomed: _ ? this._handleMediaDetailZoomed : void 0, promotedContent: d, resetZoom: o !== p, videoId: u });
+                            return h && !u ? null : n.createElement(O, { businessAvatar: e, dataSaver: t, isAvatar: this.props.isAvatar, isCurrentlyDisplayed: _, key: p, mediaDetail: a[p], onDismiss: c ? void 0 : s, onTap: l, onZoomed: _ ? this._handleMediaDetailZoomed : void 0, promotedContent: d, resetZoom: o !== p, videoId: u });
                         });
-                    return n.createElement(r.Z, { style: N.root }, a.length > 1 ? this._renderCarousel(p) : p);
+                    return n.createElement(r.Z, { style: z.root }, a.length > 1 ? this._renderCarousel(p) : p);
                 }
                 _renderCarousel(e) {
                     const { dominantColor: t, mediaIndex: o, mediaItems: r, onMediaItemChanged: l } = this.props,
                         { isZoomed: d } = this.state,
                         c = i.Z.isVideo(r[o]);
-                    return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(a.Z, { childrenStyle: [N.dimensions, N.scrollSnap], dominantButtonColor: t, isLocked: d, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: N.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !c, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(s.ZP, { currentSlide: o, dominantColor: t, locked: d, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
+                    return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(a.Z, { childrenStyle: [z.dimensions, z.scrollSnap], dominantButtonColor: t, isLocked: d, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: z.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !c, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(s.ZP, { currentSlide: o, dominantColor: t, locked: d, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
                 }
             }
-            (z.contextType = h.rC), (z.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: c.Z, onMediaItemChanged: c.Z });
-            const N = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
-                O = u(z);
+            (q.contextType = h.rC), (q.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: c.Z, onMediaItemChanged: c.Z });
+            const z = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
+                N = u(q);
         },
         827094: (e, t, o) => {
             "use strict";
@@ -681,62 +681,69 @@
                     );
                 };
         },
-        253493: (e, t, o) => {
+        222718: (e, t, o) => {
             "use strict";
-            o.d(t, { Z: () => w });
+            o.d(t, { Z: () => b });
             var n = o(202784),
-                r = o(107267),
-                i = o(791632),
-                a = o(325686),
-                s = o(537392),
-                l = o(10656),
-                d = o(655352),
-                c = o(555079),
-                p = o(500002),
-                h = o(625661),
-                u = o(449067),
-                _ = o(655543),
-                m = o(715601),
-                g = o(392237);
-            const b = g.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...g.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
-            class f extends n.Component {
+                r = o(325686),
+                i = o(537392),
+                a = o(10656),
+                s = o(655352),
+                l = o(555079),
+                d = o(500002),
+                c = o(625661),
+                p = o(449067),
+                h = o(655543),
+                u = o(715601),
+                _ = o(392237);
+            const m = _.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ..._.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
+            class g extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderChildren = () => {
                             const { children: e } = this.props;
-                            return this.context.rootDetailPerColumnScroll ? n.createElement(a.Z, { style: b.fill }, n.createElement(m.Z, { style: b.viewportView }, this._renderInlineNav({ isTwoColumnLayout: !0 }), e)) : e;
+                            return this.context.rootDetailPerColumnScroll ? n.createElement(r.Z, { style: m.fill }, n.createElement(u.Z, { style: m.viewportView }, this._renderInlineNav({ isTwoColumnLayout: !0 }), e)) : e;
                         });
                 }
                 render() {
-                    return n.createElement(s.ZP, null, ({ containerWidth: e }) => (l.Z.isTwoColumnLayout(e) ? this._renderForTwoColumnLayout() : this._renderForOneColumnLayout()));
+                    return n.createElement(i.ZP, null, ({ containerWidth: e }) => (a.Z.isTwoColumnLayout(e) ? this._renderForTwoColumnLayout() : this._renderForOneColumnLayout()));
                 }
                 _renderForOneColumnLayout() {
-                    const { appBarStyle: e, children: t, leftControl: o, screenType: r, showSubtitleOnRoot: i, showSubtitleOnWideDetail: a, withBottomBorder: s, withDetailOpen: l, ...c } = this.props;
-                    return n.createElement(n.Fragment, null, (0, d.ZP)() ? this._renderInlineNav({ isTwoColumnLayout: !1 }) : n.createElement(u.Z.Configure, c), t);
+                    const { appBarStyle: e, children: t, leftControl: o, screenType: r, showBackButtonOnRoot: i, showSubtitleOnRoot: a, showSubtitleOnWideDetail: l, showTitleOnRoot: d, withBottomBorder: c, withDetailOpen: h, ...u } = this.props;
+                    return n.createElement(n.Fragment, null, (0, s.ZP)() ? this._renderInlineNav({ isTwoColumnLayout: !1 }) : n.createElement(p.Z.Configure, u), t);
                 }
                 _renderForTwoColumnLayout() {
                     const e = this.context.rootDetailPerColumnScroll;
                     return n.createElement(n.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: t, TabBar: o, appBarStyle: r, backLocation: i, documentTitle: s, headerless: l, history: d, leftControl: p, middleControl: _, onBackClick: m, rightControl: g, screenType: f, searchBoxOptions: y, secondaryBar: w, showSubtitleOnRoot: C, showSubtitleOnWideDetail: v, subtitle: k, title: x, titleIconCell: Z, titleIconCellSize: S, withDetailOpen: I, withSearchBox: B, withTweetButton: E, withWideContainer: T } = this.props,
-                        L = "root" === f,
-                        P = "secondaryRoot" === f,
-                        D = "primaryDetail" === f,
-                        M = (D && v) || (L && C),
-                        R = L || (D && e),
-                        A = L ? c.ey : D ? c.vX : void 0,
-                        G = n.createElement(a.Z, { style: b.appBarContainer }, n.createElement(h.ZP, { backLocation: i, fixed: !1, hideBackButton: R, history: d, leftControl: p, middleControl: _, onBackClick: m, rightControl: g, secondaryBar: w, style: r, subtitle: M ? k : void 0, title: x, titleDomId: A, titleIconCell: Z, titleIconCellSize: S, withWideContainer: T })),
-                        F = L || (P && I) ? null : n.createElement(u.Z.Configure, { SideNavButton: t, TabBar: o, backLocation: i, documentTitle: s, headerless: l, middleControl: _, onBackClick: m, rightControl: g, searchBoxOptions: y, subtitle: k, title: x, withSearchBox: B, withTweetButton: E });
-                    return n.createElement(n.Fragment, null, F, G);
+                    const { SideNavButton: t, TabBar: o, appBarStyle: i, backLocation: a, documentTitle: s, headerless: d, history: h, leftControl: u, middleControl: _, onBackClick: g, rightControl: b, screenType: f, searchBoxOptions: y, secondaryBar: w, showBackButtonOnRoot: C, showSubtitleOnRoot: v, showSubtitleOnWideDetail: k, showTitleOnRoot: x, subtitle: Z, title: S, titleIconCell: I, titleIconCellSize: B, withDetailOpen: E, withSearchBox: T, withTweetButton: L, withWideContainer: P } = this.props,
+                        D = "root" === f,
+                        R = "secondaryRoot" === f,
+                        M = "primaryDetail" === f,
+                        A = (M && k) || (D && v),
+                        G = (D && !C) || (M && e),
+                        F = (D && !x) || (M && e && !x),
+                        W = D ? l.ey : M ? l.vX : void 0,
+                        V = n.createElement(r.Z, { style: m.appBarContainer }, n.createElement(c.ZP, { backLocation: a, fixed: !1, hideBackButton: G, history: h, leftControl: u, middleControl: _, onBackClick: g, rightControl: b, secondaryBar: w, style: i, subtitle: A ? Z : void 0, title: F ? void 0 : S, titleDomId: W, titleIconCell: I, titleIconCellSize: B, withWideContainer: P })),
+                        O = D || (R && E) ? null : n.createElement(p.Z.Configure, { SideNavButton: t, TabBar: o, backLocation: a, documentTitle: s, headerless: d, middleControl: _, onBackClick: g, rightControl: b, searchBoxOptions: y, subtitle: Z, title: S, withSearchBox: T, withTweetButton: L });
+                    return n.createElement(n.Fragment, null, O, V);
                 }
             }
-            (f.contextType = _.Z), (f.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0 });
-            const y = (0, p.ZP)(f),
-                w = (e) => {
-                    const t = (0, r.useHistory)();
-                    return (0, i.HD)(t) ? e.children || null : n.createElement(y, e);
-                };
+            (g.contextType = h.Z), (g.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0, showBackButtonOnRoot: !1, showTitleOnRoot: !0 });
+            const b = (0, d.ZP)(g);
+        },
+        496364: (e, t, o) => {
+            "use strict";
+            o.d(t, { Z: () => s });
+            var n = o(202784),
+                r = o(107267),
+                i = o(791632),
+                a = o(222718);
+            const s = (e) => {
+                const t = (0, r.useHistory)();
+                return (0, i.HD)(t) ? e.children || null : n.createElement(a.Z, e);
+            };
         },
         470015: (e, t, o) => {
             "use strict";
@@ -809,4 +816,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-9f4db315.207ffe7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-9f4db315.e2014dfa.js.map

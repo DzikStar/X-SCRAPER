@@ -84,31 +84,31 @@
                                     t = a.entities.broadcasts[d],
                                     n = W.Z.select(r(), e);
                                 if (!n || !t) return [];
-                                const o = J(t, n);
+                                const o = j(t, n);
                                 return [(0, H.dP)({ cards: { [e]: { ...o } } })];
                             }
                         }),
-                J = (e, a) => {
+                j = (e, a) => {
                     const { pre_live_slate_url: d, scheduled_start_time: r, state: t, status: n, user: o, user_results: l } = e,
                         i = l?.result?.core?.name,
                         { binding_values: s } = a;
                     return { binding_values: { ...s, broadcast_state: { type: "STRING", string_value: t }, broadcast_title: { type: "STRING", string_value: n }, site: { type: "USER", user_value: { id_str: o } }, broadcaster_display_name: { type: "STRING", string_value: i }, broadcast_scheduled_start_time: { type: "STRING", string_value: r }, ...(d ? { broadcast_pre_live_slate: { type: "IMAGE", image_value: { url: d } } } : null) } };
                 };
-            var j = d(702166),
+            var J = d(702166),
                 z = d(694180),
                 X = d(38562);
             const $ = (e, a) => {
                     const d = a.card ? a.card.url : a.unifiedCard?.card_uri;
-                    return a.cardState || (d && j.MH(e, d)?.cardState);
+                    return a.cardState || (d && J.MH(e, d)?.cardState);
                 },
                 Q = (e, a) => {
                     const d = a.card ? a.card.url : a.unifiedCard?.card_uri;
-                    return a.initialCarouselIndex || (d ? j.MH(e, d)?.carouselIndex : void 0);
+                    return a.initialCarouselIndex || (d ? J.MH(e, d)?.carouselIndex : void 0);
                 },
                 Y = (e, a) => (a.card ? n.default.getBindingValue(a.card.binding_values, "broadcast_id") : void 0),
                 ee = (0, N.Z)()
                     .propsFromState(() => ({ cardState: $, initialCarouselIndex: Q, isDataSaverEnabled: X.IX, broadcastId: Y }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, x.zr)("CARD_CONTAINER"), requestCardUpdate: W.Z.fetchOne, log: z.cM, updateBroadcastCard: K, vote: W.Z.vote, remindMeButtonSubscribe: W.Z.eventSubscribe, remindMeButtonUnsubscribe: W.Z.eventUnsubscribe, updateCardState: j.dy }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, x.zr)("CARD_CONTAINER"), requestCardUpdate: W.Z.fetchOne, log: z.cM, updateBroadcastCard: K, vote: W.Z.vote, remindMeButtonSubscribe: W.Z.eventSubscribe, remindMeButtonUnsubscribe: W.Z.eventUnsubscribe, updateCardState: J.dy }))
                     .withAnalytics({ element: "platform_card" });
             var ae = d(803810);
             const de = ({ action: e, buttonIndex: a, componentType: d, ucEventData: r, ucPromotedMetadata: t }) => {
@@ -143,22 +143,24 @@
             const re = (0, d(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.8"),
-                        d.e("icons.15"),
-                        d.e("icons.7"),
-                        d.e("icons.3"),
-                        d.e("icons.24"),
+                        d.e("icons.0"),
+                        d.e("icons.5"),
                         d.e("icons.12"),
-                        d.e("icons.22"),
+                        d.e("icons.20"),
                         d.e("icons.2"),
-                        d.e("icons.18"),
+                        d.e("icons.21"),
+                        d.e("icons.28"),
+                        d.e("icons.10"),
+                        d.e("icons.17"),
                         d.e("icons.9"),
-                        d.e("icons.1"),
-                        d.e("icons.6"),
-                        d.e("icons.14"),
+                        d.e("icons.23"),
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
-                        d.e("icons.5"),
+                        d.e("icons.22"),
+                        d.e("icons.24"),
+                        d.e("icons.25"),
+                        d.e("icons.14"),
+                        d.e("icons.13"),
                         d.e("modules.audio-6107ac1a"),
                         d.e("modules.audio-b953418a"),
                         d.e("modules.audio-7c51e6a7"),
@@ -169,14 +171,12 @@
                         d.e("modules.audio-e019dbda"),
                         d.e("modules.audio-262c94d4"),
                         d.e("modules.audio-c6fe4ea4"),
-                        d.e("icons.21"),
-                        d.e("icons.16"),
-                        d.e("icons.28"),
-                        d.e("icons.17"),
-                        d.e("icons.27"),
-                        d.e("icons.19"),
-                        d.e("icons.0"),
+                        d.e("icons.6"),
+                        d.e("icons.3"),
                         d.e("icons.4"),
+                        d.e("icons.1"),
+                        d.e("icons.18"),
+                        d.e("icons.8"),
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -219,8 +219,6 @@
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-c6c15d67"),
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3fd5f349"),
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.TimelineFrameHandler~loader.J-f4267732"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.TimelineFrameHandler~loader.J-80af7626"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
@@ -244,7 +242,7 @@
                         d.e("shared~bundle.Birdwatch~bundle.News~bundle.Grok~ondemand.News~loader.inlineTombstoneHandler~loader.tweetHandl"),
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~bundle.Payments~ondemand.News~ondemand.Insights~loader"),
-                        d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-3ba4c741"),
+                        d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-b75711ed"),
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-eadf0bc8"),
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-b6859af7"),
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-856c9f2b"),
@@ -260,10 +258,11 @@
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-92ee7280"),
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-4cd14b6e"),
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-380ace89"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders"),
                         d.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         d.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
                         d.e("shared~bundle.Grok~loader.Markdown"),
-                        d.e("bundle.Grok-e907d115"),
+                        d.e("bundle.Grok-bc6ccf4c"),
                         d.e("bundle.Grok-e96e9bea"),
                         d.e("bundle.Grok-0ae4e026"),
                         d.e("bundle.Grok-b16f5c14"),
@@ -299,7 +298,7 @@
             });
             d(136728);
             var te = d(530525),
-                ne = d(836938),
+                ne = d(538619),
                 oe = d(439592),
                 le = d(731708),
                 ie = d(67369),
@@ -382,8 +381,8 @@
                 He = _().cb8c547e,
                 qe = _().d980e29f,
                 Ke = _().f93bb3ee,
-                Je = _().fc209bb7,
-                je = p.ZP.isIOS() ? "ios" : p.ZP.isAndroid() ? "android" : "other",
+                je = _().fc209bb7,
+                Je = p.ZP.isIOS() ? "ios" : p.ZP.isAndroid() ? "android" : "other",
                 ze = {},
                 Xe = (e) => {
                     if (ze[e]) return ze[e];
@@ -441,7 +440,7 @@
                                                 return Fe;
                                         }
                                     },
-                                    getMobileOS: () => je,
+                                    getMobileOS: () => Je,
                                     getDefaultVanityUrl: () => Ze,
                                     getPlayerCardIFrameUrl: (e) => `/i/cards-frame/${e}`,
                                     renderImage: ({ altText: e, cropCandidates: a, hideDataSaverOverlay: d, layoutCacheKey: r, onError: n, onLoad: o, quality: l, ratio: i, source: s }) => {
@@ -453,7 +452,7 @@
                                     renderTwemojiText: (e) => t.createElement(le.ZP, null, e),
                                     renderStartingTimeLabel: (e) => {
                                         const a = new Date(parseInt(e, 10));
-                                        return qe({ date: Je(a) });
+                                        return qe({ date: je(a) });
                                     },
                                     storeCardState: (e, d) => a(e, { cardState: d }),
                                     storeCarouselIndex: (e, d) => a(e, { carouselIndex: d }),
@@ -638,4 +637,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-76dc24ae.b58b0aea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-76dc24ae.5ae252ba.js.map

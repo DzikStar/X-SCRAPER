@@ -38,7 +38,7 @@
                 d = { isPreview: !1 };
         },
         228698: (e, t, r) => {
-            r.d(t, { $y: () => v, A3: () => E, A9: () => U, AB: () => z, BA: () => j, BN: () => Z, Cx: () => W, D0: () => c, DE: () => f, ET: () => ye, EX: () => s, F3: () => a, Gf: () => i, H4: () => F, JZ: () => o, K5: () => b, KE: () => k, Ku: () => D, LO: () => m, M8: () => C, Mf: () => J, Mn: () => M, OA: () => X, OI: () => de, OM: () => B, PB: () => le, PY: () => _e, Pt: () => K, QF: () => g, RM: () => se, Rf: () => d, Sb: () => Ee, Sg: () => A, U9: () => Y, Ug: () => ie, VE: () => n, Vi: () => he, WS: () => N, Yz: () => ae, a: () => pe, a$: () => O, ak: () => L, cW: () => q, cg: () => ne, er: () => ee, fc: () => fe, gA: () => T, hV: () => Se, hz: () => u, li: () => V, p1: () => x, pK: () => re, pQ: () => l, pm: () => h, qA: () => S, s2: () => Q, s3: () => _, s8: () => w, sO: () => $, sX: () => ce, uJ: () => p, uW: () => H, v3: () => Ie, w7: () => I, x9: () => y, xb: () => ue, xl: () => R, xq: () => P, y4: () => te, zG: () => Te, ze: () => oe, zn: () => G });
+            r.d(t, { $y: () => v, A3: () => E, A9: () => U, AB: () => z, BA: () => j, BN: () => Z, Cx: () => W, D0: () => c, DE: () => f, ET: () => Te, EX: () => s, F3: () => a, Gf: () => i, H4: () => F, JZ: () => o, K5: () => b, KE: () => k, Ku: () => D, LO: () => m, M8: () => C, Mf: () => J, Mn: () => M, OA: () => X, OI: () => de, OM: () => B, PB: () => le, PY: () => _e, Pt: () => K, QF: () => g, RM: () => se, Rf: () => d, Sb: () => Ee, Sg: () => A, U9: () => Y, Ug: () => ie, VE: () => n, Vi: () => he, WS: () => N, Yz: () => ae, a: () => pe, a$: () => O, ak: () => L, cW: () => q, cg: () => ne, er: () => ee, fc: () => fe, gA: () => y, hV: () => Se, hz: () => u, li: () => V, p1: () => x, pK: () => re, pQ: () => l, pm: () => h, qA: () => S, s2: () => Q, s3: () => _, s8: () => w, sO: () => $, sX: () => ce, uJ: () => p, uW: () => H, v3: () => Ie, w7: () => I, x9: () => T, xb: () => ue, xl: () => R, xq: () => P, y4: () => te, zG: () => ye, ze: () => oe, zn: () => G });
             const s = { PAUSE_REQUESTED: "PAUSE_REQUESTED", PLAY_REQUESTED: "PLAY_REQUESTED" },
                 n = { MUTE_REQUESTED: "MUTE_REQUESTED", UNMUTE_REQUESTED: "UNMUTE_REQUESTED" },
                 a = { CAPTIONS_ON_REQUESTED: "CAPTIONS_ON_REQUESTED", CAPTIONS_OFF_REQUESTED: "CAPTIONS_OFF_REQUESTED", CAPTIONS_RESET_REQUESTED: "CAPTIONS_RESET_REQUESTED" },
@@ -51,8 +51,8 @@
                 E = (e) => ({ type: d, playerId: e }),
                 p = "VIDEO_PLAYED",
                 h = (e) => ({ type: p, playerId: e }),
-                T = "VIDEO_PAUSED",
-                y = (e) => ({ type: T, playerId: e }),
+                y = "VIDEO_PAUSED",
+                T = (e) => ({ type: y, playerId: e }),
                 I = "REQUEST_MUTE",
                 S = (e) => ({ type: I, playerId: e }),
                 f = "REQUEST_UNMUTE",
@@ -105,15 +105,15 @@
                 Ee = (e) => ({ type: de, playerId: e }),
                 pe = "DATA_USAGE_COLLECTED",
                 he = (e, t) => ({ type: pe, playerId: e, bytes: t }),
-                Te = "REQUEST_PICTURE_IN_PICTURE_ON",
-                ye = (e) => ({ type: Te, playerId: e }),
+                ye = "REQUEST_PICTURE_IN_PICTURE_ON",
+                Te = (e) => ({ type: ye, playerId: e }),
                 Ie = "REQUEST_PICTURE_IN_PICTURE_OFF",
                 Se = (e) => ({ type: Ie, playerId: e }),
                 fe = "PICTURE_IN_PICTURE_MODE_TOGGLED",
                 _e = (e, t) => ({ type: fe, playerId: e, inPiPMode: t });
         },
         768256: (e, t, r) => {
-            r.d(t, { Am: () => l, HY: () => E, MD: () => y, Se: () => f, ZP: () => S, aX: () => T, fi: () => I, ni: () => c, ql: () => d, uE: () => u });
+            r.d(t, { Am: () => l, HY: () => E, MD: () => T, Se: () => f, ZP: () => S, aX: () => y, fi: () => I, ni: () => c, ql: () => d, uE: () => u });
             var s = r(470833),
                 n = r(356841),
                 a = r(426582),
@@ -126,26 +126,26 @@
                 E = "CONFIGURATION_LOADED",
                 p = (e, t) => ({ type: E, playerState: t, playerId: e }),
                 h = "FEATURES_LOADED",
-                T = (e, t) => ({ type: h, features: t, playerId: e }),
-                y =
-                    (e, t, r, s, l, u, d, E, h = {}, T) =>
-                    (y) => (
-                        y(((e, t, r, s, n, a, o, i, l, u) => ({ type: c, source: t, session: r, analytics: s, playerId: e, adProvider: n, videoConfig: a, promotedContext: o, initiallyMutedCaptions: i, intentToPlayTime: l, precache: u }))(e, t, s, l, u, r, h.promotedContext, h.initiallyMutedCaptions, h.intentToPlayTime, h.precache)),
-                        (0, n.Z)(t, r, (0, n.J)(y, (0, i.Sv)(e), (0, i.$n)(e), e, h.showGeolocationPrompt, h.includeBroadcastEventAssociation, T), h)
+                y = (e, t) => ({ type: h, features: t, playerId: e }),
+                T =
+                    (e, t, r, s, l, u, d, E, h = {}, y) =>
+                    (T) => (
+                        T(((e, t, r, s, n, a, o, i, l, u) => ({ type: c, source: t, session: r, analytics: s, playerId: e, adProvider: n, videoConfig: a, promotedContext: o, initiallyMutedCaptions: i, intentToPlayTime: l, precache: u }))(e, t, s, l, u, r, h.promotedContext, h.initiallyMutedCaptions, h.intentToPlayTime, h.precache)),
+                        (0, n.Z)(t, r, (0, n.J)(T, (0, i.Sv)(e), (0, i.$n)(e), e, h.showGeolocationPrompt, h.includeBroadcastEventAssociation, y), h)
                             .then((t) => {
-                                if ((y(p(e, t)), d(), (0, a.PC)(t))) {
+                                if ((T(p(e, t)), d(), (0, a.PC)(t))) {
                                     const r = t.source.id,
-                                        s = new a.H6(y, (0, i.$n)(e), e, r, h.includeBroadcastEventAssociation);
+                                        s = new a.H6(T, (0, i.$n)(e), e, r, h.includeBroadcastEventAssociation);
                                     return (
                                         s.queueUpdate(t.isLive).catch((t) => {
-                                            y((0, o.bH)(e, t));
+                                            T((0, o.bH)(e, t));
                                         }),
                                         s
                                     );
                                 }
                             })
                             .catch((t) => {
-                                y((0, o.bH)(e, t)), E();
+                                T((0, o.bH)(e, t)), E();
                             })
                     ),
                 I =
@@ -187,7 +187,7 @@
                 f = { configuration: { loading: !1, error: void 0 }, tracks: [] };
         },
         842337: (e, t, r) => {
-            r.d(t, { $w: () => d, K4: () => I, Ou: () => l, Se: () => m, Y4: () => o, ZP: () => R, bH: () => p, cJ: () => i, iV: () => E, vq: () => T });
+            r.d(t, { $w: () => d, K4: () => I, Ou: () => l, Se: () => m, Y4: () => o, ZP: () => R, bH: () => p, cJ: () => i, iV: () => E, vq: () => y });
             r(571372);
             var s = r(789403),
                 n = r(768256),
@@ -201,9 +201,9 @@
                 E = "CONFIGURATION_LOAD_ERROR",
                 p = (e, t) => ({ type: E, playerId: e, thrownError: t, isFatal: !0 }),
                 h = "ERROR_RESOLVED",
-                T = (e) => ({ type: h, playerId: e }),
-                y = "GEOLOCATION_PROMPT",
-                I = (e) => ({ type: y, playerId: e }),
+                y = (e) => ({ type: h, playerId: e }),
+                T = "GEOLOCATION_PROMPT",
+                I = (e) => ({ type: T, playerId: e }),
                 S = (e) => {
                     switch (e.message) {
                         case s.Z.BROADCAST_ENDED_NO_REPLAY:
@@ -266,7 +266,7 @@
                             return (r = { ...e.controls, requestedQualityLevel: -1 }), { ...e, controls: r };
                         case h:
                             return { ...e, error: void 0, errorInfo: { ...e.errorInfo, autoRetry: !1, canRetry: !1 } };
-                        case y: {
+                        case T: {
                             const t = new Error(s.Z.LIVE_VIDEO_GEOLOCATION_PROMPT);
                             return { ...e, error: t.message, errorInfo: { ...e.errorInfo, autoRetry: f(t), canRetry: S(t) } };
                         }
@@ -281,7 +281,7 @@
             const s = { BROADCAST_EVENT_ASSOCIATION_UPDATED: "broadcastEventAssociationUpdated", FULLSCREEN_ENTERED: "fullscreenEntered", FULLSCREEN_EXITED: "fullscreenExited", HLSJS_INSTANTIATED: "hlsJsInstantiated", GEOBLOCK_ERROR: "geoblockError", LIVE_ENDED: "liveEnded", LIVE_STARTED: "liveStarted", LIVE_CLICKTHROUGH: "liveClickthrough", MUTE: "mute", NO_COOKIES_ERROR: "noCookiesError", PAUSE: "pause", PICTURE_IN_PICTURE_ENTERED: "pictureInPictureEntered", PICTURE_IN_PICTURE_EXITED: "pictureInPictureExited", PLAY: "play", PLAYBACK_COMPLETE: "playbackComplete", READY: "ready", UNMUTE: "unmute" };
         },
         270223: (e, t, r) => {
-            r.d(t, { Oo: () => p, Rm: () => h, ZP: () => T });
+            r.d(t, { Oo: () => p, Rm: () => h, ZP: () => y });
             r(136728);
             var s = r(22525),
                 n = r(789403),
@@ -299,40 +299,40 @@
                 h = (e) => {
                     delete E[e];
                 },
-                T = (e) => (t) => (r) => {
+                y = (e) => (t) => (r) => {
                     const p = r.playerId,
                         h = r.type,
-                        T = e.getState().players[p],
-                        y = t(r),
+                        y = e.getState().players[p],
+                        T = t(r),
                         I = e.getState().players[p];
                     let S, f;
                     if (p in E) {
-                        const e = T.tracks.find((e) => "content" === e.displayType),
+                        const e = y.tracks.find((e) => "content" === e.displayType),
                             t = I.tracks.find((e) => "content" === e.displayType);
                         switch (h) {
                             case i.Y4:
                                 r.thrownError.message === n.Z.LIVE_VIDEO_GEOBLOCK_ERROR ? (S = c.Z.GEOBLOCK_ERROR) : r.thrownError.message === n.Z.LIVE_VIDEO_NO_COOKIES_ERROR && (S = c.Z.NO_COOKIES_ERROR);
                                 break;
                             case a.Ku:
-                                !T.isMuted && I.isMuted ? (S = c.Z.MUTE) : T.isMuted && !I.isMuted && (S = c.Z.UNMUTE);
+                                !y.isMuted && I.isMuted ? (S = c.Z.MUTE) : y.isMuted && !I.isMuted && (S = c.Z.UNMUTE);
                                 break;
                             case o.uE:
-                                if ((void 0 !== e && void 0 !== t && (e.isLive && !t.isLive ? (S = c.Z.LIVE_ENDED) : !e.isLive && t.isLive && (S = c.Z.LIVE_STARTED)), !S && (T.eventTitle !== I.eventTitle || T.eventDescription !== I.eventDescription || T.eventUrl !== I.eventUrl))) {
+                                if ((void 0 !== e && void 0 !== t && (e.isLive && !t.isLive ? (S = c.Z.LIVE_ENDED) : !e.isLive && t.isLive && (S = c.Z.LIVE_STARTED)), !S && (y.eventTitle !== I.eventTitle || y.eventDescription !== I.eventDescription || y.eventUrl !== I.eventUrl))) {
                                     const { eventDescription: e, eventTitle: t, eventUrl: r } = I;
                                     (S = c.Z.BROADCAST_EVENT_ASSOCIATION_UPDATED), (f = { eventTitle: t, eventDescription: e, eventUrl: r });
                                 }
                                 break;
                             case a.PB:
-                                T.liveClickthroughClicked !== I.liveClickthroughClicked && (S = c.Z.LIVE_CLICKTHROUGH);
+                                y.liveClickthroughClicked !== I.liveClickthroughClicked && (S = c.Z.LIVE_CLICKTHROUGH);
                                 break;
                             case a.fc: {
-                                const { inPiPMode: e } = T,
+                                const { inPiPMode: e } = y,
                                     { inPiPMode: t } = I;
                                 !e && t && (S = c.Z.PICTURE_IN_PICTURE_ENTERED), e && !t && (S = c.Z.PICTURE_IN_PICTURE_EXITED);
                                 break;
                             }
                             case l.AI: {
-                                const { isFullscreen: e } = T.fullscreen,
+                                const { isFullscreen: e } = y.fullscreen,
                                     { isFullscreen: t } = I.fullscreen;
                                 !e && t ? (S = c.Z.FULLSCREEN_ENTERED) : e && !t && (S = c.Z.FULLSCREEN_EXITED);
                                 break;
@@ -357,7 +357,7 @@
                                     t in E[e] && delete E[e][t];
                                 })(p, S);
                     }
-                    return y;
+                    return T;
                 };
         },
         486934: (e, t, r) => {
@@ -407,8 +407,8 @@
             var E = r(842337),
                 p = r(828063),
                 h = r(418577);
-            const T = { ...s.Se, ...n.Se, ...d, ...i.Se, ...E.Se, ...p.Se, ...h.Se, ...c.Se, percentVisible: 1, percentOfViewportOccupied: 1, sizesInfo: {} },
-                y = [
+            const y = { ...s.Se, ...n.Se, ...d, ...i.Se, ...E.Se, ...p.Se, ...h.Se, ...c.Se, percentVisible: 1, percentOfViewportOccupied: 1, sizesInfo: {} },
+                T = [
                     s.ZP,
                     i.ZP,
                     (e, t) => {
@@ -528,7 +528,7 @@
                 ],
                 I = "TEARDOWN_PLAYER",
                 S = (e) => ({ type: I, playerId: e }),
-                f = (e = {}, t, r = y) => {
+                f = (e = {}, t, r = T) => {
                     if (void 0 !== t.playerId) {
                         if (t.type === I) {
                             const r = { ...e };
@@ -537,9 +537,9 @@
                         let s = e[t.playerId];
                         if (t.type === i.Am) {
                             if (!s) return e;
-                            s = { ...T, errorInfo: s.errorInfo, features: s.features };
+                            s = { ...y, errorInfo: s.errorInfo, features: s.features };
                         }
-                        const n = ((e = T, t, r) => r.reduce((e, r) => r(e, t), e))(s, t, r);
+                        const n = ((e = y, t, r) => r.reduce((e, r) => r(e, t), e))(s, t, r);
                         if (void 0 !== n) return { ...e, [t.playerId]: n };
                     }
                     return e;
@@ -582,7 +582,7 @@
                 h = { bufferingStatus: void 0, isPrecacheEnabled: void 0, maximumBufferLength: void 0, targetDuration: void 0 };
         },
         773975: (e, t, r) => {
-            r.d(t, { $9: () => v, Bw: () => o, Dk: () => u, Eo: () => l, Ev: () => w, FI: () => b, IV: () => d, Iu: () => A, JA: () => S, Ky: () => i, PC: () => T, RR: () => g, Se: () => Q, UL: () => p, XB: () => P, ZP: () => x, fh: () => E, ho: () => I, pp: () => f, qV: () => D, qx: () => c });
+            r.d(t, { $9: () => v, Bw: () => o, Dk: () => u, Eo: () => l, Ev: () => w, FI: () => b, IV: () => d, Iu: () => A, JA: () => S, Ky: () => i, PC: () => y, RR: () => g, Se: () => Q, UL: () => p, XB: () => P, ZP: () => x, fh: () => E, ho: () => I, pp: () => f, qV: () => D, qx: () => c });
             var s = r(22525),
                 n = r(104591),
                 a = r(228698);
@@ -595,9 +595,9 @@
                 E = "PLAYER_READY",
                 p = (e) => ({ type: E, playerId: e }),
                 h = "ROTATION_UPDATED",
-                T = (e, t) => ({ type: h, playerId: e, rotation: t }),
-                y = "BLANK_UPDATED",
-                I = (e, t) => ({ type: y, playerId: e, blank: t }),
+                y = (e, t) => ({ type: h, playerId: e, rotation: t }),
+                T = "BLANK_UPDATED",
+                I = (e, t) => ({ type: T, playerId: e, blank: t }),
                 S = "HLSJS_READY",
                 f = (e) => ({ type: S, playerId: e }),
                 _ = new Date("Jan 01 1900 GMT").getTime(),
@@ -641,7 +641,7 @@
                         }
                         case h:
                             return B(e, { rotation: t.rotation });
-                        case y:
+                        case T:
                             return B(e, { blank: t.blank });
                         case m: {
                             const { metadata: r } = t;
@@ -709,8 +709,8 @@
                 E = r(724429),
                 p = r(773975);
             const h = {};
-            var T = r(828063),
-                y = r(915331);
+            var y = r(828063),
+                T = r(915331);
             var I = r(270223),
                 S = r(486934);
             class f {
@@ -843,7 +843,7 @@
                     (e) => (t) => (r) => {
                         switch (r.type) {
                             case i.Bt: {
-                                const { initiallyMutedCaptions: t, userSpecifiedCaptions: s } = (0, y.YI)(e, r.playerId) || {};
+                                const { initiallyMutedCaptions: t, userSpecifiedCaptions: s } = (0, T.YI)(e, r.playerId) || {};
                                 t && !s && e.dispatch((0, c.AB)(r.playerId, !1));
                                 break;
                             }
@@ -852,8 +852,8 @@
                             case c.DE:
                             case c.Sg:
                             case c.p1:
-                            case T.JO: {
-                                const { isPreview: t, userSpecifiedCaptions: s } = (0, y.YI)(e, r.playerId) || {};
+                            case y.JO: {
+                                const { isPreview: t, userSpecifiedCaptions: s } = (0, T.YI)(e, r.playerId) || {};
                                 t && !s && e.dispatch((0, c.Cx)(r.playerId, !1));
                                 break;
                             }
@@ -863,12 +863,12 @@
                     S.ZP,
                     (e) => {
                         const t = new f((t, r) => {
-                            e.dispatch((0, T.ye)(t, r));
+                            e.dispatch((0, y.ye)(t, r));
                         });
                         return (r) => (s) => {
                             const n = e.getState().players[s.playerId],
                                 { type: a } = s;
-                            return !n || (a !== T.JO && a !== T.Cn) || (a === T.JO ? (e.dispatch((0, T.ye)(s.playerId, !0)), t.expand(s.playerId, s.containerEl, s.videoEl)) : t.shrink(s.playerId)), r(s);
+                            return !n || (a !== y.JO && a !== y.Cn) || (a === y.JO ? (e.dispatch((0, y.ye)(s.playerId, !0)), t.expand(s.playerId, s.containerEl, s.videoEl)) : t.shrink(s.playerId)), r(s);
                         };
                     },
                     (e) => (t) => (r) => {
@@ -946,7 +946,7 @@
                                 break;
                             case A.Go:
                                 if (r.targetDuration && E) {
-                                    const t = (0, y.ks)(s, (e) => (e?.isPlaying || "PLAY_REQUESTED" === e?.controls?.playState) && void 0 !== e?.bufferingStatus && e?.bufferingStatus !== U);
+                                    const t = (0, T.ks)(s, (e) => (e?.isPlaying || "PLAY_REQUESTED" === e?.controls?.playState) && void 0 !== e?.bufferingStatus && e?.bufferingStatus !== U);
                                     if (void 0 === t || t.playerId === r.playerId) {
                                         const t = r.targetDuration * P.dN;
                                         e.dispatch((0, A.$u)(r.playerId, t));
@@ -1038,7 +1038,7 @@
                     I.ZP,
                     a.$4,
                     n.Z,
-                ],
+                ].filter((e) => "function" == typeof e),
                 N = (0, s.MT)((0, s.UY)({ players: E.ZP, hydraExperiences: a.ZP }), (0, s.md)(...w));
         },
         915331: (e, t, r) => {
@@ -1411,4 +1411,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10.ced322da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10.17d4fb0a.js.map

@@ -595,6 +595,7 @@
                         { alias: null, args: null, kind: "ScalarField", name: "availability_date", storageKey: null },
                         { alias: null, args: null, kind: "ScalarField", name: "transaction_status", storageKey: null },
                         { alias: null, args: null, kind: "ScalarField", name: "authorization_method", storageKey: null },
+                        { alias: null, args: null, kind: "ScalarField", name: "transaction_rail", storageKey: null },
                         { alias: null, args: null, kind: "ScalarField", name: "challenge_id", storageKey: null },
                         {
                             alias: null,
@@ -696,7 +697,7 @@
                     type: "XPaymentsTransaction",
                     abstractKey: null,
                 };
-            y.hash = "29bfe64d5b13e41d1f71ae1e5c805c66";
+            y.hash = "cec82f10572c0f1831644c67da15dc5d";
             const k = y;
         },
         860648: (e, l, a) => {
@@ -748,4 +749,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.695ac8ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.0cc0d50a.js.map

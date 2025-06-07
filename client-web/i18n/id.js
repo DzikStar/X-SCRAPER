@@ -1173,7 +1173,6 @@
                 i("c3aa76c4", "Bahasa yang mungkin Anda ketahui"),
                 i("g099069c", "Kelola bahasa yang disimpulkan X berdasarkan aktivitas Anda, seperti akun yang Anda ikuti dan postingan yang Anda tanggapi."),
                 i("cf9ce876", "Bahasa aplikasi dan postingan"),
-                i("d4372cf4", "English (US), 中文(简体), Español"),
                 i("f8e46b90", "Ini adalah akun sosial yang Anda hubungkan ke akun X Anda untuk masuk. Anda dapat menonaktifkan akses di sini."),
                 i("d84ed6b2", "Putuskan"),
                 i("i51130d4", "Google"),
@@ -1916,9 +1915,9 @@
                 i("a8fdd09c", "Terbitkan Artikel"),
                 i("d8047cc8", "Terbitkan"),
                 i("ff7ddca2", "Artikel Anda akan muncul sebagai postingan setelah Anda terbitkan. Anda juga dapat menemukannya di tab Artikel pada profil Anda."),
-                i("ef34d7be", "Audiens dan kontrol balasan tidak dapat diedit setelah artikel diterbitkan.");
-            i("e52d4998", "Pilih audiens Anda"),
-                i("d7985b24", "Pilih siapa yang bisa membalas Artikel ini"),
+                i("ef34d7be", "Audiens dan kontrol balasan tidak dapat diedit setelah artikel diterbitkan."),
+                i("e52d4998", "Pilih audiens Anda");
+            i("d7985b24", "Pilih siapa yang bisa membalas Artikel ini"),
                 i("b5660338", "Pratinjau Timeline"),
                 i("hff1b97a", "Hanya Pelanggan yang dapat membalas."),
                 i("a330771e", "Salin tautan ke clipboard Anda"),
@@ -2972,9 +2971,9 @@
                 i("ce6d095a", "Karier"),
                 i("e0adec82", "Sumber Daya Merek"),
                 i("df1b7550", "Marketing"),
-                i("he258678", "X untuk Bisnis");
-            i("c6f58084", "Pengembang"),
-                i("d83f18d2", "Direktori"),
+                i("he258678", "X untuk Bisnis"),
+                i("c6f58084", "Pengembang");
+            i("d83f18d2", "Direktori"),
                 i("hc5aa17c", "Dapatkan aplikasi X"),
                 i("j0693948", "Dapatkan aplikasi Grok"),
                 i("fce9ecce", "Video yang disarankan"),
@@ -3886,11 +3885,11 @@
                 i("ddeb0a3c", "Selamat datang di Komunitas. Lihat saja dulu. Siapa tahu menarik."),
                 i("e111f531", function (a) {
                     return a.count + " mendengarkan";
+                }),
+                i("cbef820f", function (a) {
+                    return a.screenName + " memposting ulang streaming!";
                 });
-            i("cbef820f", function (a) {
-                return a.screenName + " memposting ulang streaming!";
-            }),
-                i("e3275464", "Kirim"),
+            i("e3275464", "Kirim"),
                 i("cededf2a", "Host"),
                 i("i2caef48", "Co-host"),
                 i("j245c654", "Pembicara"),
@@ -4924,9 +4923,9 @@
                 i("d9f9dec0", "Lihat Space"),
                 i("h0c1f37a", "Lihat Analitik Space"),
                 i("e41fffbc", "Total waktu tonton video Anda."),
-                i("if2909ba", "Waktu Tonton");
-            i("i0e5bf4c", "Video Anda"),
-                i("ed99baea", "Akses Beta Lebih Awal"),
+                i("if2909ba", "Waktu Tonton"),
+                i("i0e5bf4c", "Video Anda");
+            i("ed99baea", "Akses Beta Lebih Awal"),
                 i("gf898b70", "Pencarian Lanjutan"),
                 i("d2a43a7a", 'berisi "ai" dan "startup"'),
                 i("a8584698", "startup ai"),
@@ -5880,9 +5879,9 @@
                 i("e41c9b4f", function (a) {
                     return "Disimpan ke " + a.bookmarkFolderName;
                 }),
-                i("h18f86a4", "Hapus Folder?");
-            i("f4ea967a", "Folder sudah dihapus"),
-                i("b670aa62", "Nama Folder"),
+                i("h18f86a4", "Hapus Folder?"),
+                i("f4ea967a", "Folder sudah dihapus");
+            i("b670aa62", "Nama Folder"),
                 i("aece5462", "Nama folder berhasil diperbarui"),
                 i("e3299b94", "Ada kesalahan teknis. Coba perbarui lagi folder tersebut dalam satu menit."),
                 i("c09ea714", "Ada kesalahan teknis. Coba hapus lagi folder tersebut dalam satu menit."),
@@ -6884,9 +6883,9 @@
                 i("ede7d0a2", "Mata uang"),
                 i("b925c18c", "Jenis Gaji"),
                 i("j3d242ce", "Rentang tidak valid"),
-                i("f4d07bd2", "Cantumkan detail opsional untuk memudahkan kandidat menemukan posisi Anda melalui pencarian.");
-            i("b8cbb51a", "Ringkasan Pekerjaan"),
-                i("bda6881e", "Lowongan ini telah diimpor dari Sistem Pelacakan Pelamar (ATS) Anda. Harap diketahui bahwa hanya bidang tertentu yang dapat diubah."),
+                i("f4d07bd2", "Cantumkan detail opsional untuk memudahkan kandidat menemukan posisi Anda melalui pencarian."),
+                i("b8cbb51a", "Ringkasan Pekerjaan");
+            i("bda6881e", "Lowongan ini telah diimpor dari Sistem Pelacakan Pelamar (ATS) Anda. Harap diketahui bahwa hanya bidang tertentu yang dapat diubah."),
                 i("b075c68a", "Edit lowongan kerja"),
                 i("d4b6a6e0", "Spotlight Profil"),
                 i("j2dd3686", "Sorot lowongan unggulan di atas postingan Anda."),
@@ -7229,6 +7228,8 @@
                 i("hd80bd3e", "Promosikan sebuah postingan"),
                 i("fe2b0008", "Pelajari cara menggunakan X"),
                 i("h257d4aa", "Pilih postingan untuk dipromosikan"),
+                i("e9334fe6", "Data updates every few minutes"),
+                i("a6d7b1d0", "Based on X Internal Data"),
                 i("h9b28dae", "You’re saving time with an ad-free feed"),
                 i("f6c50ec0", "Uji coba bebas iklan Anda sudah berakhir"),
                 i("e1d1fbca", "You’ve avoided"),
@@ -7863,8 +7864,7 @@
                 i("i5f14be7", function (a) {
                     return "Selamat datang, " + a.displayName;
                 }),
-                i("a76d58ba", "Analitik Iklan"),
-                i("eccd0e1a", "Analitik Organisasi");
+                i("a76d58ba", "Analitik Iklan");
             function r(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7903,7 +7903,8 @@
                     d(a, n)
                 );
             }
-            i("deea1708", "Ingin melihat analitik di semua akun X Anda?"),
+            i("eccd0e1a", "Analitik Organisasi"),
+                i("deea1708", "Ingin melihat analitik di semua akun X Anda?"),
                 i("eb603ffc", "Tingkatkan untuk mengafiliasikan jaringan Anda dan melihat analitik gabungan."),
                 i("gf67aae4", "Tingkatkan ke Akses Penuh"),
                 i("h75e3618", "Sertakan organisasi"),
@@ -8901,9 +8902,9 @@
                 i("a6ada13e", "Belanja sekarang"),
                 i("j0f12222", "Lihat selengkapnya"),
                 i("f569f7c8", "Kunjungi situs web"),
-                i("j0c6772a", "Kunjungi situs web"),
-                i("f73003aa", "Video akan diputar setelah iklan");
-            i("b3112b8a", "Lewati"),
+                i("j0c6772a", "Kunjungi situs web");
+            i("f73003aa", "Video akan diputar setelah iklan"),
+                i("b3112b8a", "Lewati"),
                 i("h6333ad0", "Lewati Iklan"),
                 i("c59da417", function (a) {
                     return "Lewati Iklan dalam " + a.seconds;
@@ -13350,4 +13351,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.b621d75a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.082794ca.js.map

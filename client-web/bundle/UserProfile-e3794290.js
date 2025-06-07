@@ -49,8 +49,8 @@
                     const r = S.ZP.select(e, t.userId);
                     return r?.refresh_delay_secs ? 1e3 * r.refresh_delay_secs : 1e3 * S.vj;
                 },
-                D = (0, x.Z)().propsFromState(() => ({ userPresencePollingIntervalMs: U, userSpace: N })),
-                T = w.Z.createLayoutCache(),
+                T = (0, x.Z)().propsFromState(() => ({ userPresencePollingIntervalMs: U, userSpace: N })),
+                D = w.Z.createLayoutCache(),
                 F = { opensProfilePhoto: P().f30795d0 },
                 W = n.memo((e) => {
                     const { isOwnProfile: t, isWithheld: r, profileImageUrlHttps: s, screenName: i, user: o, userId: a, userPresencePollingIntervalMs: c, userSpace: u } = e,
@@ -71,7 +71,7 @@
                         x = P || !s ? void 0 : s,
                         N = n.useMemo(() => {
                             const e = {
-                                imageLayoutCache: T,
+                                imageLayoutCache: D,
                                 onClick: (e) => {
                                     f.scribe({ element: "avatar", action: "click" });
                                 },
@@ -88,7 +88,7 @@
                     return n.createElement(W, (0, _.Z)({ profileImageUrlHttps: s.avatar?.image_url ?? "", screenName: s.core?.screen_name ?? "", user: s, userId: s.rest_id }, r));
                 });
             const V = n.memo(
-                D(function (e) {
+                T(function (e) {
                     if (e.user) {
                         const { user: t, userRef: r, ...s } = e;
                         return n.createElement(W, (0, _.Z)({ profileImageUrlHttps: e.user.profile_image_url_https, screenName: e.user.screen_name, userId: e.user.id_str }, s));
@@ -173,15 +173,15 @@
                         x = !I && h?.screen_name && P,
                         N = w && !I && !S,
                         U = (0, de.hC)("responsive_web_repeat_profile_visits_notifications_device_follow_only_version_enabled") && u && !a,
-                        D = ((0, de.hC)("responsive_web_device_follow_without_user_follow_enabled") || U) && !h?.protected,
-                        T = (0, de.hC)("rweb_tipjar_consumption_enabled"),
+                        T = ((0, de.hC)("responsive_web_device_follow_without_user_follow_enabled") || U) && !h?.protected,
+                        D = (0, de.hC)("rweb_tipjar_consumption_enabled"),
                         F = (0, de.hC)("responsive_web_grok_profile_summary_enabled"),
                         W = (0, de.JY)("responsive_web_grok_profile_summary_min_followers", 1e6),
                         L = (0, de.JY)("responsive_web_grok_profile_summary_min_posts", 100),
                         V = !h?.verified_type || "User" === h?.verified_type,
                         A = F && !h?.protected && V && (h?.statuses_count ?? 0) > L && (h?.followers_count ?? 0) > W,
                         { openGrok: M } = (0, _e.Z)(),
-                        z = (a || D) && w && !t && !e && !c,
+                        z = (a || T) && w && !t && !e && !c,
                         j = (0, de.hC)("subscriptions_sign_up_enabled") && v.isTrueAndEnabled("subscriptions_feature_can_gift_premium") && h?.premium_gifting_eligible,
                         H = i && !o && !m,
                         $ = C;
@@ -191,7 +191,7 @@
                               s.Z,
                               { style: Se.buttons },
                               N && n.createElement(he.Z, { buttonStyle: Se.button, promotedContent: f, user: h, userRef: g }),
-                              T ? n.createElement(ue.Z, { style: Se.button, userId: b }) : null,
+                              D ? n.createElement(ue.Z, { style: Se.button, userId: b }) : null,
                               A
                                   ? n.createElement(ee.ZP, {
                                         "aria-label": Ce,
@@ -222,7 +222,7 @@
                                       type: "primaryOutlined",
                                   }),
                               !I && R && n.createElement(oe.Z, { buttonStyle: Se.button, userId: b }),
-                              !I && z && n.createElement(se.Z, { allowPromptForPush: !0, isDeviceFollowWithoutUserFollow: D && !a, isFollowing: u, style: Se.button, userId: b }),
+                              !I && z && n.createElement(se.Z, { allowPromptForPush: !0, isDeviceFollowWithoutUserFollow: T && !a, isFollowing: u, style: Se.button, userId: b }),
                               !I && h?.screen_name && j && n.createElement(ee.ZP, { "aria-label": Pe, hoverLabel: { label: Pe }, icon: Ze, link: `/${h?.screen_name}/gift-premium`, style: Se.button }),
                               !I && Z && p && !_ ? n.createElement(ce.Z, { isFollowing: a, isSuperFollowing: _, style: Se.button, userId: b }) : null,
                               !I && !e && !S && n.createElement(ne.Z, { onOffscreenChange: d }, n.createElement(ie.C, { isSuperFollowSubscriptionEnabled: Z, promotedContent: f, style: Se.lastButton, userId: b })),
@@ -246,15 +246,15 @@
                 xe = r(14544),
                 Ne = r(290213),
                 Ue = r(12333),
-                De = r(731708),
-                Te = r(688715),
+                Te = r(731708),
+                De = r(688715),
                 Fe = r(529356);
             const We = P().df7cb6d4,
                 Le = P().j24c37b2,
-                Ve = { link: n.createElement(De.ZP, { link: (0, Te.ju)("https://help.x.com/rules-and-policies/profile-labels"), withInteractiveStyling: !0 }) },
+                Ve = { link: n.createElement(Te.ZP, { link: (0, De.ju)("https://help.x.com/rules-and-policies/profile-labels"), withInteractiveStyling: !0 }) },
                 Ae = (e) => {
                     const { onAction: t } = e;
-                    return n.createElement(Fe.Z, { actionLabel: Le, actionType: "primaryFilled", backButtonType: "close", graphicDisplayMode: "none", headline: We, isFullHeightOnMobile: !1, onAction: t, subtext: n.createElement(De.ZP, null, n.createElement(P().I18NFormatMessage, { $i18n: "f575f533" }, n.cloneElement(Ve.link, null, P().ec429e79))), withCloseButton: !1 });
+                    return n.createElement(Fe.Z, { actionLabel: Le, actionType: "primaryFilled", backButtonType: "close", graphicDisplayMode: "none", headline: We, isFullHeightOnMobile: !1, onAction: t, subtext: n.createElement(Te.ZP, null, n.createElement(P().I18NFormatMessage, { $i18n: "f575f533" }, n.cloneElement(Ve.link, null, P().ec429e79))), withCloseButton: !1 });
                 },
                 Me = n.memo(Ae);
             var ze = r(520385),
@@ -322,12 +322,12 @@
                 return e.user ? n.createElement(pt, { birthdate: e.user?.birthdate, isOwnProfile: e.isOwnProfile }) : e.userRef ? n.createElement(_t, { isOwnProfile: e.isOwnProfile, user: e.userRef }) : null;
             }
             const bt = n.memo(ht),
-                gt = n.memo(({ children: e }) => n.createElement(s.Z, { style: wt.details }, n.createElement(De.ZP, { style: wt.detailsText, testID: Ge }, e))),
+                gt = n.memo(({ children: e }) => n.createElement(s.Z, { style: wt.details }, n.createElement(Te.ZP, { style: wt.detailsText, testID: Ge }, e))),
                 wt = i.default.create((e) => ({ details: { display: "block", marginBottom: e.spaces.space12 }, detailsText: { lineHeight: e.spaces.space12 } }));
             var Et = r(231684),
                 yt = r(733357),
                 vt = r(665468);
-            const Zt = n.memo(({ location: e }) => (!e || (0, yt.Z)(e) ? null : n.createElement(dt.Z, { Icon: vt.default, testID: tt }, n.createElement(De.ZP, null, e)))),
+            const Zt = n.memo(({ location: e }) => (!e || (0, yt.Z)(e) ? null : n.createElement(dt.Z, { Icon: vt.default, testID: tt }, n.createElement(Te.ZP, null, e)))),
                 Pt = n.memo((e) => {
                     const t = g()(Et.Z, e.user);
                     return n.createElement(Zt, { location: t.location?.location });
@@ -350,16 +350,16 @@
                         o = n.useCallback(() => {
                             l.scribe({ page: s ? "me" : "profile", ...St.yL() }), i();
                         }, [l, s, i]);
-                    return n.createElement(dt.Z, { Icon: Ot(t), style: Ut.root, testID: rt, withInteractiveStyling: !1 }, n.createElement(De.ZP, { onPress: o }, r));
+                    return n.createElement(dt.Z, { Icon: Ot(t), style: Ut.root, testID: rt, withInteractiveStyling: !1 }, n.createElement(Te.ZP, { onPress: o }, r));
                 },
                 Nt = n.memo(xt),
                 Ut = i.default.create((e) => ({ root: { cursor: "pointer" } }));
-            var Dt = r(268723),
-                Tt = r(179562),
+            var Tt = r(268723),
+                Dt = r(179562),
                 Ft = r(787379);
-            const Wt = n.memo(({ description: e, entities: t, isProfileTranslatable: r, userId: i, withheldDescription: l, withheldEntities: o }) => (e ? n.createElement(s.Z, { style: Vt.description }, n.createElement(Tt.Z, { description: e, disableTranslation: !r, entities: t, testID: Ke, userId: i, withheldDescription: l || void 0, withheldEntities: o })) : null)),
+            const Wt = n.memo(({ description: e, entities: t, grokTranslatedBio: r, isProfileTranslatable: i, userId: l, withheldDescription: o, withheldEntities: a }) => (e ? n.createElement(s.Z, { style: Vt.description }, n.createElement(Dt.Z, { description: e, disableTranslation: !i, entities: t, grokTranslatedBio: r, testID: Ke, userId: l, withheldDescription: o || void 0, withheldEntities: a })) : null)),
                 Lt = n.memo((e) => {
-                    const { is_profile_translatable: t, legacy: r, rest_id: s } = g()(Dt.Z, e.user),
+                    const { is_profile_translatable: t, legacy: r, rest_id: s } = g()(Tt.Z, e.user),
                         i = n.useMemo(() => (0, Ft._)(r?.entities), [r?.entities]),
                         l = n.useMemo(() => (0, Ft._)(r?.withheld_entities), [r?.withheld_entities]);
                     return n.createElement(Wt, { description: r?.description || "", entities: i, isProfileTranslatable: Boolean(t), userId: s, withheldDescription: r?.withheld_description, withheldEntities: l });
@@ -368,7 +368,7 @@
                 At = function (e) {
                     if (e.user) {
                         const { user: t } = e;
-                        return n.createElement(Wt, { description: t?.description || "", entities: t.entities, isProfileTranslatable: Boolean(t.is_profile_translatable), userId: t.id_str, withheldDescription: t.withheld_description, withheldEntities: t.withheld_entities });
+                        return n.createElement(Wt, { description: t?.description || "", entities: t.entities, grokTranslatedBio: t.grok_translated_bio, isProfileTranslatable: Boolean(t.is_profile_translatable), userId: t.id_str, withheldDescription: t.withheld_description, withheldEntities: t.withheld_entities });
                     }
                     return e.userRef ? n.createElement(Lt, { user: e.userRef }) : null;
                 };
@@ -394,7 +394,7 @@
                         (0, qt.q)(() => {
                             t.scribe({ element: "verified_phone_label", action: "impression" });
                         }),
-                        e ? n.createElement(dt.Z, { Icon: Yt.default, testID: st }, n.createElement(De.ZP, null, Jt)) : null
+                        e ? n.createElement(dt.Z, { Icon: Yt.default, testID: st }, n.createElement(Te.ZP, null, Jt)) : null
                     );
                 }),
                 er = n.memo((e) => {
@@ -457,12 +457,12 @@
                         n.Fragment,
                         null,
                         n.createElement(
-                            De.ZP,
+                            Te.ZP,
                             { color: "gray700", style: wr.mute },
                             _r,
                             " ",
                             n.createElement(
-                                De.ZP,
+                                Te.ZP,
                                 {
                                     color: "link",
                                     onPress: () => {
@@ -514,8 +514,8 @@
                 xr = r(32256);
             const Nr = "UserName";
             var Ur = r(622078),
-                Dr = r(649846),
-                Tr = r(686689),
+                Tr = r(649846),
+                Dr = r(686689),
                 Fr = r(673096),
                 Wr = r(273490),
                 Lr = r(479506);
@@ -527,8 +527,8 @@
             }
             const Ar = n.memo(({ namespace: e, user: t }) => {
                     const r = Vr(e, t.id_str, t.screen_name),
-                        s = n.useMemo(() => (t.highlightedLabel?.longDescription?.entities ? n.createElement(Tr.Z, { entities: t.highlightedLabel.longDescription.entities, forceAutoTextDirection: !0, onEntityClick: r, text: t.highlightedLabel.longDescription.text }) : t.highlightedLabel?.description || null), [r, t.highlightedLabel]);
-                    return null == t.highlightedLabel && null == s ? null : n.createElement(Dr.Z, { isIconLarge: !0, label: { ...t.highlightedLabel, description: s } });
+                        s = n.useMemo(() => (t.highlightedLabel?.longDescription?.entities ? n.createElement(Dr.Z, { entities: t.highlightedLabel.longDescription.entities, forceAutoTextDirection: !0, onEntityClick: r, text: t.highlightedLabel.longDescription.text }) : t.highlightedLabel?.description || null), [r, t.highlightedLabel]);
+                    return null == t.highlightedLabel && null == s ? null : n.createElement(Tr.Z, { isIconLarge: !0, label: { ...t.highlightedLabel, description: s } });
                 }),
                 Mr = n.memo((e) => {
                     const t = g()(Ur.Z, e.user),
@@ -676,8 +676,8 @@
                             n.createElement(
                                 s.Z,
                                 { style: yn.inner },
-                                n.createElement(De.ZP, { style: yn.heading, weight: "bold" }, gn(p)),
-                                n.createElement(De.ZP, { size: "body", style: yn.subheading }, f[0], n.createElement(De.ZP, { weight: "bold" }, f[1]), f[2]),
+                                n.createElement(Te.ZP, { style: yn.heading, weight: "bold" }, gn(p)),
+                                n.createElement(Te.ZP, { size: "body", style: yn.subheading }, f[0], n.createElement(Te.ZP, { weight: "bold" }, f[1]), f[2]),
                                 n.createElement(
                                     ee.ZP,
                                     {
@@ -696,7 +696,7 @@
                 },
                 gn = (e) => {
                     const t = e.lastIndexOf(" ");
-                    return -1 !== t ? n.createElement(De.ZP, { style: yn.heading, weight: "bold" }, e.slice(0, t + 1), n.createElement(De.ZP, { style: yn.inlineVerified }, e.slice(t + 1), " ", n.createElement(un.default, { style: yn.verifiedIcon }))) : n.createElement(s.Z, null, e, " ", n.createElement(un.default, { style: yn.verifiedIcon }));
+                    return -1 !== t ? n.createElement(Te.ZP, { style: yn.heading, weight: "bold" }, e.slice(0, t + 1), n.createElement(Te.ZP, { style: yn.inlineVerified }, e.slice(t + 1), " ", n.createElement(un.default, { style: yn.verifiedIcon }))) : n.createElement(s.Z, null, e, " ", n.createElement(un.default, { style: yn.verifiedIcon }));
                 },
                 wn = (e) => {
                     const { dismiss: t, impress: r, shouldShow: s } = (0, c.ZP)({ showForMsec: null, reappearAfterMsec: null, dismissForMsec: c.$i, key: "verified_profile_visitor" });
@@ -732,12 +732,12 @@
                         [B, k] = n.useState(E.id_str),
                         [S, O] = n.useState(E.following),
                         R = { key: "verified_profile_card_upsell", showForMsec: c.IZ, reappearAfterMsec: c.IZ, dismissForMsec: null, dismissUntilNextReappear: !0 },
-                        { dismiss: x, gotDismissed: N, impress: U, shouldShow: D } = (0, c.ZP)(R),
-                        T = (0, a.z)();
+                        { dismiss: x, gotDismissed: N, impress: U, shouldShow: T } = (0, c.ZP)(R),
+                        D = (0, a.z)();
                     n.useEffect(() => {
                         U();
-                    }, [U, D, N]);
-                    const F = v.isTrue("subscriptions_upsells_get_verified_profile_rotation_enabled") && D;
+                    }, [U, T, N]);
+                    const F = v.isTrue("subscriptions_upsells_get_verified_profile_rotation_enabled") && T;
                     B !== E.id_str && (k(E.id_str), C(!1)), !1 === S && !0 === E.following && (O(E.following), C(!0));
                     const W = (0, an.nf)(y, E),
                         L = (0, an.ZQ)(y, r, E, Z),
@@ -745,11 +745,11 @@
                         M = (0, an.Xy)(y, r, E, Z),
                         z = (0, an.zi)({ isSoftBlockEnabled: Z, isWithheld: r, showBlockedTweets: g, user: E, viewerUserId: y }),
                         [j, H] = n.useState(!1);
-                    return n.createElement(d.nO, { namespace: vn }, n.createElement(s.Z, { style: T && Pn.rootRedesign }, n.createElement(G, { isOwnProfile: W, isWithheld: r, user: E }), n.createElement(s.Z, { style: [m.Z.content, Pn.content, L && m.Z.withheld] }, n.createElement(s.Z, { style: m.Z.avatarAndButton }, n.createElement(V, { isOwnProfile: W, isWithheld: r, user: E, userId: E.id_str }), n.createElement(Oe, { isWithheld: r, onFollowButtonOffscreen: i, promotedContent: b, user: E, viewerUserId: y })), n.createElement(Yr, { getVerifiedCardShouldShow: F, isOwnProfile: W, isWithheld: r, namespace: vn, user: E }), L ? null : n.createElement(ir, { isOwnProfile: W, professionalCategoryIcon: _, professionalCategoryName: h, user: E, userRef: void 0 }), A ? null : n.createElement(on, { isActiveCreator: t, isOwnProfile: W, subscribersCount: w, user: E }), M ? null : n.createElement(s.Z, { style: Pn.marginTopXSmall }, n.createElement(o.Z, { userId: E.id_str, userScreenName: E.screen_name })), E.muting ? n.createElement(Er, { user: E, userRef: void 0 }) : null), z ? null : n.createElement(f.U, { setIsRenderingProfileSpotlight: H, user: E, viewerUserId: y }), !j && !E.possibly_sensitive && n.createElement(En, { userData: E }), W && F ? n.createElement(p.Z, { dismissProfileUpsellCard: x, gotDismissedProfileUpsellCard: N, shouldShowProfileUpsellCard: F, user: E }) : null, P ? n.createElement(u.Z, { onRemoveClusterFollow: I, userId: E.id_str }) : null));
+                    return n.createElement(d.nO, { namespace: vn }, n.createElement(s.Z, { style: D && Pn.rootRedesign }, n.createElement(G, { isOwnProfile: W, isWithheld: r, user: E }), n.createElement(s.Z, { style: [m.Z.content, Pn.content, L && m.Z.withheld] }, n.createElement(s.Z, { style: m.Z.avatarAndButton }, n.createElement(V, { isOwnProfile: W, isWithheld: r, user: E, userId: E.id_str }), n.createElement(Oe, { isWithheld: r, onFollowButtonOffscreen: i, promotedContent: b, user: E, viewerUserId: y })), n.createElement(Yr, { getVerifiedCardShouldShow: F, isOwnProfile: W, isWithheld: r, namespace: vn, user: E }), L ? null : n.createElement(ir, { isOwnProfile: W, professionalCategoryIcon: _, professionalCategoryName: h, user: E, userRef: void 0 }), A ? null : n.createElement(on, { isActiveCreator: t, isOwnProfile: W, subscribersCount: w, user: E }), M ? null : n.createElement(s.Z, { style: Pn.marginTopXSmall }, n.createElement(o.Z, { userId: E.id_str, userScreenName: E.screen_name })), E.muting ? n.createElement(Er, { user: E, userRef: void 0 }) : null), z ? null : n.createElement(f.U, { setIsRenderingProfileSpotlight: H, user: E, viewerUserId: y }), !j && !E.possibly_sensitive && n.createElement(En, { userData: E }), W && F ? n.createElement(p.Z, { dismissProfileUpsellCard: x, gotDismissedProfileUpsellCard: N, shouldShowProfileUpsellCard: F, user: E }) : null, P ? n.createElement(u.Z, { onRemoveClusterFollow: I, userId: E.id_str }) : null));
                 },
                 Pn = i.default.create((e) => ({ rootRedesign: { paddingHorizontal: e.spaces.space16 }, content: { marginBottom: e.spaces.space16 }, marginTopXSmall: { marginTop: e.spaces.space12 } })),
                 Cn = n.memo(Zn);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e3794290.f04f9a1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e3794290.075b469a.js.map

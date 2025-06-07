@@ -50,7 +50,7 @@
                 (n.left + n.right) / 2 < window.innerWidth / 2 ? ((t.style.left = "0px"), (t.style.right = "")) : ((t.style.left = ""), (t.style.right = "0px")), n.bottom + t.offsetHeight < document.documentElement.scrollHeight ? ((t.style.top = `${e.offsetHeight}px`), (t.style.bottom = "")) : ((t.style.top = ""), (t.style.bottom = `${e.offsetHeight}px`));
             };
             function d({ el: e, p: t, mods: n }) {
-                const d = (0, i.o)(),
+                const d = (0, i.oG)(),
                     u = d?.Runtime;
                 if (!d || !u) return (0, s.jsx)("div", { children: "Runtime not available" });
                 const m = t.element("popover"),
@@ -123,7 +123,7 @@
                     [c, d] = (0, r.useState)(),
                     u = "https://x.com",
                     m = "https://twitter.com",
-                    f = (0, o.o)();
+                    f = (0, o.oG)();
                 if (!f || !f.Runtime) return (0, s.jsx)("div", { className: `${t}`, children: "Can't find runtime" });
                 const { Runtime: h } = f,
                     p = h.history,
@@ -194,7 +194,7 @@
             function i({ p: e, el: t, mods: n }) {
                 const i = e.url("url") ?? "",
                     l = e.enum("target"),
-                    c = (0, o.o)();
+                    c = (0, o.oG)();
                 if (!c || !c.Runtime) return (0, s.jsx)("div", { className: `${n}`, children: "Can't find runtime" });
                 const { Runtime: d } = c;
                 function u(e) {
@@ -236,7 +236,7 @@
                 i = n(608222);
             function l({ showModal: e, setShowModal: t, children: n }) {
                 const o = (0, r.useRef)(null),
-                    a = (0, i.o)(),
+                    a = (0, i.oG)(),
                     [l, c] = (0, r.useState)(!1);
                 if (!a) return (0, s.jsx)("div", { children: "Runtime not available" });
                 const { Runtime: d } = a;
@@ -287,11 +287,14 @@
             }
         },
         315198: (e, t, n) => {
-            n.d(t, { Z: () => r });
+            n.d(t, { A: () => r, Z: () => o });
             var s = n(552322);
-            function r({ p: e, mods: t }) {
+            function r({ size: e = 12, mods: t = "" }) {
+                return (0, s.jsx)("div", { className: `flex w-full items-center justify-center ${t}`, children: (0, s.jsx)("div", { className: "animate-spin motion-reduce:animate-none", style: { width: `${e}px`, height: `${e}px` }, children: (0, s.jsxs)("svg", { height: "100%", viewBox: "0 0 32 32", width: "100%", children: [(0, s.jsx)("circle", { className: "opacity-20 stroke-primary", cx: "16", cy: "16", fill: "none", r: "14", strokeWidth: "4" }), (0, s.jsx)("circle", { className: "stroke-primary", cx: "16", cy: "16", fill: "none", r: "14", strokeDasharray: "80", strokeDashoffset: 60, strokeWidth: "4" })] }) }) });
+            }
+            function o({ p: e, mods: t }) {
                 const n = e.int("size") ?? 12;
-                return (0, s.jsx)("div", { className: `flex w-full items-center justify-center ${t}`, children: (0, s.jsx)("div", { className: "animate-spin motion-reduce:animate-none", style: { width: `${n}px`, height: `${n}px` }, children: (0, s.jsxs)("svg", { height: "100%", viewBox: "0 0 32 32", width: "100%", children: [(0, s.jsx)("circle", { className: "opacity-20 stroke-primary", cx: "16", cy: "16", fill: "none", r: "14", strokeWidth: "4" }), (0, s.jsx)("circle", { className: "stroke-primary", cx: "16", cy: "16", fill: "none", r: "14", strokeDasharray: "80", strokeDashoffset: 60, strokeWidth: "4" })] }) }) });
+                return (0, s.jsx)(r, { size: n, mods: t });
             }
         },
         139466: (e, t, n) => {
@@ -300,7 +303,7 @@
                 r = n(801102),
                 o = n(608222);
             function a({ el: e, mods: t, p: n }) {
-                const a = (0, o.o)();
+                const a = (0, o.oG)();
                 if (!a || !a.Runtime) return (0, s.jsx)("div", { className: `${t}`, children: "Can't find runtime" });
                 const { Runtime: i } = a,
                     l = i.getComponentOverride()[-22153];
@@ -323,7 +326,7 @@
                 r = n(801102),
                 o = n(608222);
             function a({ el: e, mods: t }) {
-                const n = (0, o.o)();
+                const n = (0, o.oG)();
                 if (!n || !n.Runtime) return (0, s.jsx)("div", { className: `${t}`, children: "Can't find runtime" });
                 const { Runtime: a } = n,
                     i = a.getComponentOverride()[24045];
@@ -435,7 +438,7 @@
                 a = n(608222);
             function i() {
                 const [e, t] = (0, r.useState)([]),
-                    n = (0, a.o)();
+                    n = (0, a.oG)();
                 if (!n || !n.Runtime) return;
                 const { Runtime: i } = n,
                     l = () => {
@@ -512,4 +515,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0bb5e702.493b1a8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0bb5e702.c35a906a.js.map

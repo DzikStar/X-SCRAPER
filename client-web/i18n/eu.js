@@ -1177,7 +1177,6 @@
                 o("c3aa76c4", "Agian ezagutzen dituzun hizkuntzak"),
                 o("g099069c", "Manage the languages X inferred based on your activity, such as the accounts you follow and the posts you engage with."),
                 o("cf9ce876", "App and post languages"),
-                o("d4372cf4", "English (US), 中文(简体), Español"),
                 o("f8e46b90", "These are the social accounts you connected to your X account to log in. You can disable access here."),
                 o("d84ed6b2", "Disconnect"),
                 o("i51130d4", "Google"),
@@ -1920,9 +1919,9 @@
                 o("a8fdd09c", "Publish Article"),
                 o("d8047cc8", "Argitaratu"),
                 o("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
-                o("ef34d7be", "Audience and reply controls are not editable after an article has been published.");
-            o("e52d4998", "Choose your audience"),
-                o("d7985b24", "Choose who can reply to this Article"),
+                o("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
+                o("e52d4998", "Choose your audience");
+            o("d7985b24", "Choose who can reply to this Article"),
                 o("b5660338", "Timeline preview"),
                 o("hff1b97a", "Only Subscribed can reply."),
                 o("a330771e", "Copy link to your clipboard"),
@@ -2976,9 +2975,9 @@
                 o("ce6d095a", "Lanbideak"),
                 o("e0adec82", "Markaren baliabideak"),
                 o("df1b7550", "Marketing"),
-                o("he258678", "X for Business");
-            o("c6f58084", "Developers"),
-                o("d83f18d2", "Directory"),
+                o("he258678", "X for Business"),
+                o("c6f58084", "Developers");
+            o("d83f18d2", "Directory"),
                 o("hc5aa17c", "Get the X app"),
                 o("j0693948", "Get the Grok app"),
                 o("fce9ecce", "Suggested Videos"),
@@ -3890,11 +3889,11 @@
                 o("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
                 o("e111f531", function (e) {
                     return e.count + " sintonizatuta";
+                }),
+                o("cbef820f", function (e) {
+                    return e.screenName + " reposted the stream!";
                 });
-            o("cbef820f", function (e) {
-                return e.screenName + " reposted the stream!";
-            }),
-                o("e3275464", "Bidali"),
+            o("e3275464", "Bidali"),
                 o("cededf2a", "Anfitrioia"),
                 o("i2caef48", "Co-hosts"),
                 o("j245c654", "Speakers"),
@@ -4928,9 +4927,9 @@
                 o("d9f9dec0", "View Space"),
                 o("h0c1f37a", "View Space Analytics"),
                 o("e41fffbc", "The total watch time of your videos."),
-                o("if2909ba", "Watch Time");
-            o("i0e5bf4c", "Your videos"),
-                o("ed99baea", "Early Beta Access"),
+                o("if2909ba", "Watch Time"),
+                o("i0e5bf4c", "Your videos");
+            o("ed99baea", "Early Beta Access"),
                 o("gf898b70", "Advanced Search"),
                 o("d2a43a7a", 'contains both "ai" and "startup"'),
                 o("a8584698", "ai startup"),
@@ -5884,9 +5883,9 @@
                 o("e41c9b4f", function (e) {
                     return "Hemen gordeta: " + e.bookmarkFolderName;
                 }),
-                o("h18f86a4", "Ezabatu karpeta");
-            o("f4ea967a", "Karpeta ezabatu da"),
-                o("b670aa62", "Karpetaren izena"),
+                o("h18f86a4", "Ezabatu karpeta"),
+                o("f4ea967a", "Karpeta ezabatu da");
+            o("b670aa62", "Karpetaren izena"),
                 o("aece5462", "Karpeta izena behar bezala eguneratu da"),
                 o("e3299b94", "Arazoren bat izan da. Saiatu berriro karpeta hori eguneratzen minutu bat barru."),
                 o("c09ea714", "Arazoren bat izan da. Saiatu berriro karpeta hori ezabatzen minutu bat barru."),
@@ -6888,9 +6887,9 @@
                 o("ede7d0a2", "Currency"),
                 o("b925c18c", "Salary Type"),
                 o("j3d242ce", "Invalid range"),
-                o("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search.");
-            o("b8cbb51a", "Job Summary"),
-                o("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                o("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
+                o("b8cbb51a", "Job Summary");
+            o("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 o("b075c68a", "Edit job"),
                 o("d4b6a6e0", "Profilaren fokua"),
                 o("j2dd3686", "Highlight featured jobs above my posts."),
@@ -7233,6 +7232,8 @@
                 o("hd80bd3e", "Promote a post"),
                 o("fe2b0008", "Learn how to use X"),
                 o("h257d4aa", "Select a post to promote"),
+                o("e9334fe6", "Data updates every few minutes"),
+                o("a6d7b1d0", "Based on X Internal Data"),
                 o("h9b28dae", "You’re saving time with an ad-free feed"),
                 o("f6c50ec0", "Your ad-free trial has ended"),
                 o("e1d1fbca", "You’ve avoided"),
@@ -7867,8 +7868,7 @@
                 o("i5f14be7", function (e) {
                     return "Welcome back, " + e.displayName;
                 }),
-                o("a76d58ba", "Ads Analytics"),
-                o("eccd0e1a", "Organization Analytics");
+                o("a76d58ba", "Ads Analytics");
             function n(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var o = a[t];
@@ -7907,7 +7907,8 @@
                     u(e, a)
                 );
             }
-            o("deea1708", "Want to view analytics across all your X accounts?"),
+            o("eccd0e1a", "Organization Analytics"),
+                o("deea1708", "Want to view analytics across all your X accounts?"),
                 o("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
                 o("gf67aae4", "Upgrade to Full Access"),
                 o("h75e3618", "Include organization"),
@@ -8905,9 +8906,9 @@
                 o("a6ada13e", "Erosi orain"),
                 o("j0f12222", "Ikusi gehiago"),
                 o("f569f7c8", "Joan webgunera"),
-                o("j0c6772a", "Bisitatu webgunea"),
-                o("f73003aa", "Bideoa iragarkiaren ondoren erreproduzituko da");
-            o("b3112b8a", "Pasatu"),
+                o("j0c6772a", "Bisitatu webgunea");
+            o("f73003aa", "Bideoa iragarkiaren ondoren erreproduzituko da"),
+                o("b3112b8a", "Pasatu"),
                 o("h6333ad0", "Saltatu iragarkia"),
                 o("c59da417", function (e) {
                     return "Saltatu iragarkia " + e.seconds + " segundo barru";
@@ -13358,4 +13359,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.b92ca1aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.2d96934a.js.map

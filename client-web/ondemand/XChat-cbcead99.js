@@ -46,9 +46,9 @@
             var n = t(552322),
                 a = t(159603),
                 i = t(455091),
-                r = t(702024),
-                l = t(436059),
-                o = t(407250),
+                r = t(193686),
+                l = t(993165),
+                o = t(917317),
                 c = t(202784),
                 d = t(155369),
                 m = t(379342),
@@ -110,12 +110,12 @@
             t.d(s, { C: () => j });
             var n = t(552322),
                 a = t(159603),
-                i = t(844098),
-                r = t(702024),
-                l = t(130629),
-                o = t(436059),
-                c = t(887390),
-                d = t(921879),
+                i = t(653748),
+                r = t(193686),
+                l = t(423011),
+                o = t(993165),
+                c = t(687521),
+                d = t(983706),
                 m = t(202784),
                 x = t(155369),
                 u = t(533476),
@@ -210,8 +210,8 @@
             var n = t(552322),
                 a = t(159603),
                 i = t(289752),
-                r = t(130844),
-                l = t(941204),
+                r = t(322506),
+                l = t(332161),
                 o = t(89195),
                 c = t(517922),
                 d = t(556160);
@@ -220,7 +220,7 @@
             function u({ post: e, onEvent: s, className: t }) {
                 return e.postState instanceof m.NeedsResolution ? (s(new x.ResolvePost(e.postId)), (0, n.jsx)(c.C, {})) : e.postState instanceof m.ResolvedPost ? (0, n.jsx)(d.K, { post: e.postState, url: e.url, className: t }) : (0, n.jsxs)(r.r, { href: e.url, target: "_blank", className: "gap-2 w-52 p-4 bg-gray-200 flex items-center justify-between", children: [(0, n.jsx)(l.x, { children: "x.com" }), (0, n.jsx)("div", { className: "text-headline1", children: (0, n.jsx)(o.Z, {}) })] });
             }
-            var p = t(702024),
+            var p = t(193686),
                 h = t(530361);
             const f = a.com.x.dms.model.MessageItemAttachment,
                 g = a.com.x.dms.chat.DmEvent;
@@ -253,11 +253,11 @@
         83083: (e, s, t) => {
             t.d(s, { Q: () => d });
             var n = t(552322),
-                a = t(941204),
-                i = t(461222),
+                a = t(332161),
+                i = t(42630),
                 r = t(1357),
                 l = t(455091),
-                o = t(796309),
+                o = t(31674),
                 c = t(509597);
             function d({ filename: e, fileType: s = "Document", fileSize: t, uriToLoad: d, className: m }) {
                 const { t: x } = (0, l.$G)(),
@@ -268,9 +268,9 @@
         617092: (e, s, t) => {
             t.d(s, { K: () => o });
             var n = t(552322),
-                a = t(941204),
+                a = t(332161),
                 i = t(1357),
-                r = t(796309),
+                r = t(31674),
                 l = t(509597);
             function o({ filename: e, fileSize: s, className: t }) {
                 const o = (0, l.s)(s?.fileSizeMb ?? 0);
@@ -281,12 +281,12 @@
             t.d(s, { DM: () => u, Et: () => m, _9: () => x });
             var n = t(552322),
                 a = t(59463),
-                i = t(335944),
-                r = t(702024),
-                l = t(941204),
-                o = t(796309),
+                i = t(472275),
+                r = t(193686),
+                l = t(332161),
+                o = t(31674),
                 c = t(202784),
-                d = t(697597);
+                d = t(841227);
             function m({ src: e, type: s, dimensions: t, className: a, showAsStatic: r = !1 }) {
                 const { width: l, height: m } = p(t),
                     [x, u] = (0, c.useState)(!1),
@@ -324,7 +324,7 @@
             t.d(s, { C: () => o });
             var n = t(552322),
                 a = t(159603),
-                i = t(941204),
+                i = t(332161),
                 r = t(89195);
             const l = a.com.x.dms.model.MessageItemAttachment;
             function o({ urlCard: e }) {
@@ -334,4 +334,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-cbcead99.8079dd3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-cbcead99.c2f1368a.js.map

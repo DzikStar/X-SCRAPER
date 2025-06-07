@@ -1177,7 +1177,6 @@
                 a("c3aa76c4", "Àwọn èdè tí o lè mọ̀"),
                 a("g099069c", "Manage the languages X inferred based on your activity, such as the accounts you follow and the posts you engage with."),
                 a("cf9ce876", "App and post languages"),
-                a("d4372cf4", "English (US), 中文(简体), Español"),
                 a("f8e46b90", "These are the social accounts you connected to your X account to log in. You can disable access here."),
                 a("d84ed6b2", "Já a kúrò"),
                 a("i51130d4", "Google"),
@@ -1920,9 +1919,9 @@
                 a("a8fdd09c", "Publish Article"),
                 a("d8047cc8", "Tẹ̀ ẹ́ jáde"),
                 a("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
-                a("ef34d7be", "Audience and reply controls are not editable after an article has been published.");
-            a("e52d4998", "Choose your audience"),
-                a("d7985b24", "Choose who can reply to this Article"),
+                a("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
+                a("e52d4998", "Choose your audience");
+            a("d7985b24", "Choose who can reply to this Article"),
                 a("b5660338", "Timeline preview"),
                 a("hff1b97a", "Only Subscribed can reply."),
                 a("a330771e", "Copy link to your clipboard"),
@@ -2976,9 +2975,9 @@
                 a("ce6d095a", "Iṣẹ́ àṣelà"),
                 a("e0adec82", "Àwọn Ohun-èlò Àmi Òwò"),
                 a("df1b7550", "Ìpolówó ọjà"),
-                a("he258678", "X for Business");
-            a("c6f58084", "Àwọn olùkò kóòdù"),
-                a("d83f18d2", "Ìtọ́nisọ́nà"),
+                a("he258678", "X for Business"),
+                a("c6f58084", "Àwọn olùkò kóòdù");
+            a("d83f18d2", "Ìtọ́nisọ́nà"),
                 a("hc5aa17c", "Get the X app"),
                 a("j0693948", "Get the Grok app"),
                 a("fce9ecce", "Suggested Videos"),
@@ -3890,11 +3889,11 @@
                 a("ddeb0a3c", "Àwùjọ náà nìyìí. O fẹ́ràn àwọn ènìyàn náà bí? Wò ó."),
                 a("e111f531", function (e) {
                     return e.count + " wọlé sí";
+                }),
+                a("cbef820f", function (e) {
+                    return e.screenName + " reposted the stream!";
                 });
-            a("cbef820f", function (e) {
-                return e.screenName + " reposted the stream!";
-            }),
-                a("e3275464", "Fiṣọwọ́"),
+            a("e3275464", "Fiṣọwọ́"),
                 a("cededf2a", "Agbàlejò"),
                 a("i2caef48", "Ajọgbàlejò"),
                 a("j245c654", "Àwọn olùbánisọ̀rọ̀"),
@@ -4928,9 +4927,9 @@
                 a("d9f9dec0", "View Space"),
                 a("h0c1f37a", "View Space Analytics"),
                 a("e41fffbc", "The total watch time of your videos."),
-                a("if2909ba", "Watch Time");
-            a("i0e5bf4c", "Your videos"),
-                a("ed99baea", "Early Beta Access"),
+                a("if2909ba", "Watch Time"),
+                a("i0e5bf4c", "Your videos");
+            a("ed99baea", "Early Beta Access"),
                 a("gf898b70", "Advanced Search"),
                 a("d2a43a7a", 'contains both "ai" and "startup"'),
                 a("a8584698", "ai startup"),
@@ -5884,9 +5883,9 @@
                 a("e41c9b4f", function (e) {
                     return "Fipamọ̀ sí " + e.bookmarkFolderName;
                 }),
-                a("h18f86a4", "Pa Fódà rẹ́");
-            a("f4ea967a", "A ti pa fódà rẹ́"),
-                a("b670aa62", "Orúkọ Fódà"),
+                a("h18f86a4", "Pa Fódà rẹ́"),
+                a("f4ea967a", "A ti pa fódà rẹ́");
+            a("b670aa62", "Orúkọ Fódà"),
                 a("aece5462", "Orúkọ fódà rẹ ti wà ní ìmú kójú òṣùwọ̀n láyọ̀"),
                 a("e3299b94", "Ǹkankan ò lọ dáadáa. Gbìyanjú láti se ìmú kójú òṣùwọ̀n fódà yẹn lẹ́ẹ̀kansi láarín ìṣẹ́jú kan."),
                 a("c09ea714", "Ǹkankan ò lọ dáadáa. Gbìyanjú láti pa fódà yẹn rẹ́ lẹ́ẹ̀kansi láarín ìṣẹ́jú kan."),
@@ -6888,9 +6887,9 @@
                 a("ede7d0a2", "Currency"),
                 a("b925c18c", "Salary Type"),
                 a("j3d242ce", "Invalid range"),
-                a("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search.");
-            a("b8cbb51a", "Job Summary"),
-                a("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                a("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
+                a("b8cbb51a", "Job Summary");
+            a("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 a("b075c68a", "Edit job"),
                 a("d4b6a6e0", "Ojútáyé Prófaìlì"),
                 a("j2dd3686", "Highlight featured jobs above my posts."),
@@ -7233,6 +7232,8 @@
                 a("hd80bd3e", "Promote a post"),
                 a("fe2b0008", "Learn how to use X"),
                 a("h257d4aa", "Select a post to promote"),
+                a("e9334fe6", "Data updates every few minutes"),
+                a("a6d7b1d0", "Based on X Internal Data"),
                 a("h9b28dae", "You’re saving time with an ad-free feed"),
                 a("f6c50ec0", "Your ad-free trial has ended"),
                 a("e1d1fbca", "You’ve avoided"),
@@ -7867,8 +7868,7 @@
                 a("i5f14be7", function (e) {
                     return "Welcome back, " + e.displayName;
                 }),
-                a("a76d58ba", "Ads Analytics"),
-                a("eccd0e1a", "Organization Analytics");
+                a("a76d58ba", "Ads Analytics");
             function r(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7907,7 +7907,8 @@
                     s(e, n)
                 );
             }
-            a("deea1708", "Want to view analytics across all your X accounts?"),
+            a("eccd0e1a", "Organization Analytics"),
+                a("deea1708", "Want to view analytics across all your X accounts?"),
                 a("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
                 a("gf67aae4", "Upgrade to Full Access"),
                 a("h75e3618", "Include organization"),
@@ -8905,9 +8906,9 @@
                 a("a6ada13e", "Shop now"),
                 a("j0f12222", "Wò sì i"),
                 a("f569f7c8", "Go to website"),
-                a("j0c6772a", "Visit website"),
-                a("f73003aa", "Video will play after ad");
-            a("b3112b8a", "Fò ó"),
+                a("j0c6772a", "Visit website");
+            a("f73003aa", "Video will play after ad"),
+                a("b3112b8a", "Fò ó"),
                 a("h6333ad0", "Skip Ad"),
                 a("c59da417", function (e) {
                     return "Skip Ad in " + e.seconds;
@@ -13354,4 +13355,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.7303509a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.b05262ea.js.map

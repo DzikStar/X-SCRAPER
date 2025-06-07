@@ -1183,7 +1183,6 @@
                 i("c3aa76c4", "Języki, które możesz znać"),
                 i("g099069c", "Zarządzaj listą języków utworzoną na podstawie Twoich aktywności, takich jak konta, które obserwujesz, oraz wpisy, na które reagujesz."),
                 i("cf9ce876", "Języki aplikacji i wpisów"),
-                i("d4372cf4", "English (US), 中文(简体), Español"),
                 i("f8e46b90", "Są to konta społecznościowe powiązane z Twoim kontem w serwisie X na potrzeby logowania. W tym miejscu możesz wyłączyć dostęp."),
                 i("d84ed6b2", "Usuń"),
                 i("i51130d4", "Google"),
@@ -1926,9 +1925,9 @@
                 i("a8fdd09c", "Opublikuj artykuł"),
                 i("d8047cc8", "Opublikuj"),
                 i("ff7ddca2", "Opublikowany artykuł będzie widoczny jako wpis. Będzie go też można znaleźć na karcie Artykuły w Twoim profilu."),
-                i("ef34d7be", "Kontrolek Odbiorcy i Odpowiedź nie można edytować po opublikowaniu artykułu.");
-            i("e52d4998", "Wybierz odbiorców"),
-                i("d7985b24", "Określ, kto może odpowiadać na ten artykuł"),
+                i("ef34d7be", "Kontrolek Odbiorcy i Odpowiedź nie można edytować po opublikowaniu artykułu."),
+                i("e52d4998", "Wybierz odbiorców");
+            i("d7985b24", "Określ, kto może odpowiadać na ten artykuł"),
                 i("b5660338", "Podgląd osi czasu"),
                 i("hff1b97a", "Odpowiadać mogą tylko subskrybenci."),
                 i("a330771e", "Kopiuj link do schowka"),
@@ -2982,9 +2981,9 @@
                 i("ce6d095a", "Praca"),
                 i("e0adec82", "Zasoby marki"),
                 i("df1b7550", "Marketing"),
-                i("he258678", "X dla firm");
-            i("c6f58084", "Deweloperzy"),
-                i("d83f18d2", "Ścieżka"),
+                i("he258678", "X dla firm"),
+                i("c6f58084", "Deweloperzy");
+            i("d83f18d2", "Ścieżka"),
                 i("hc5aa17c", "Pobierz aplikację X"),
                 i("j0693948", "Pobierz aplikację Grok"),
                 i("fce9ecce", "Sugerowane filmy"),
@@ -3896,11 +3895,11 @@
                 i("ddeb0a3c", "Podoba Ci się atmosfera w tej Grupie dyskusyjnej? Rozejrzyj się tu."),
                 i("e111f531", function (e) {
                     return e.count + " dołączy" + n(e.count, "li/ły", "ło", "ł/a", "ło");
+                }),
+                i("cbef820f", function (e) {
+                    return "Użytkownik " + e.screenName + " podał dalej strumień!";
                 });
-            i("cbef820f", function (e) {
-                return "Użytkownik " + e.screenName + " podał dalej strumień!";
-            }),
-                i("e3275464", "Wyślij"),
+            i("e3275464", "Wyślij"),
                 i("cededf2a", "Host"),
                 i("i2caef48", "Współhości"),
                 i("j245c654", "Mówcy"),
@@ -4934,9 +4933,9 @@
                 i("d9f9dec0", "Wyświetl pokój"),
                 i("h0c1f37a", "Wyświetl analizy pokoju"),
                 i("e41fffbc", "Łączny czas oglądania Twoich filmów."),
-                i("if2909ba", "Czas oglądania");
-            i("i0e5bf4c", "Twoje filmy"),
-                i("ed99baea", "Wczesny dostęp do wersji Beta"),
+                i("if2909ba", "Czas oglądania"),
+                i("i0e5bf4c", "Twoje filmy");
+            i("ed99baea", "Wczesny dostęp do wersji Beta"),
                 i("gf898b70", "Wyszukiwanie zaawansowane"),
                 i("d2a43a7a", 'zawiera oba wyrazy „startup" i „ai”'),
                 i("a8584698", "startup ai"),
@@ -5890,9 +5889,9 @@
                 i("e41c9b4f", function (e) {
                     return "Zapisano w folderze " + e.bookmarkFolderName;
                 }),
-                i("h18f86a4", "Usuń folder");
-            i("f4ea967a", "Usunięto folder"),
-                i("b670aa62", "Nazwa folderu"),
+                i("h18f86a4", "Usuń folder"),
+                i("f4ea967a", "Usunięto folder");
+            i("b670aa62", "Nazwa folderu"),
                 i("aece5462", "Nazwa folderu została pomyślnie zaktualizowana"),
                 i("e3299b94", "Wystąpił błąd. Poczekaj chwilę i spróbuj ponownie zaktualizować folder."),
                 i("c09ea714", "Wystąpił błąd. Poczekaj chwilę i spróbuj ponownie usunąć folder."),
@@ -6894,9 +6893,9 @@
                 i("ede7d0a2", "Waluta"),
                 i("b925c18c", "Rodzaj wynagrodzenia"),
                 i("j3d242ce", "Nieprawidłowy zakres"),
-                i("f4d07bd2", "Dołącz opcjonalne szczegóły, aby ułatwić osobom kandydującym znajdowanie interesujących ich stanowisk za pomocą funkcji wyszukiwania.");
-            i("b8cbb51a", "Podsumowanie oferty pracy"),
-                i("bda6881e", "Ta oferta pracy została zaimportowana z Twojego systemu śledzenia osób aplikujących (ATS). Pamiętaj, że można modyfikować tylko określone pola."),
+                i("f4d07bd2", "Dołącz opcjonalne szczegóły, aby ułatwić osobom kandydującym znajdowanie interesujących ich stanowisk za pomocą funkcji wyszukiwania."),
+                i("b8cbb51a", "Podsumowanie oferty pracy");
+            i("bda6881e", "Ta oferta pracy została zaimportowana z Twojego systemu śledzenia osób aplikujących (ATS). Pamiętaj, że można modyfikować tylko określone pola."),
                 i("b075c68a", "Edytuj ofertę pracy"),
                 i("d4b6a6e0", "Wyróżnione treści na profilu"),
                 i("j2dd3686", "Wyróżniaj promowane oferty pracy nad moimi wpisami."),
@@ -7239,6 +7238,8 @@
                 i("hd80bd3e", "Promuj wpis"),
                 i("fe2b0008", "Dowiedz się, jak użytkować X"),
                 i("h257d4aa", "Wybierz wpis, który chcesz promować"),
+                i("e9334fe6", "Data updates every few minutes"),
+                i("a6d7b1d0", "Based on X Internal Data"),
                 i("h9b28dae", "You’re saving time with an ad-free feed"),
                 i("f6c50ec0", "Okres korzystania z wersji próbnej bez reklam został zakończony"),
                 i("e1d1fbca", "You’ve avoided"),
@@ -7873,8 +7874,7 @@
                 i("i5f14be7", function (e) {
                     return "Witaj ponownie, " + e.displayName;
                 }),
-                i("a76d58ba", "Analizy reklam"),
-                i("eccd0e1a", "Analizy organizacji");
+                i("a76d58ba", "Analizy reklam");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7913,7 +7913,8 @@
                     c(e, a)
                 );
             }
-            i("deea1708", "Chcesz wyświetlić analizy wszystkich swoich kont w serwisie X?"),
+            i("eccd0e1a", "Analizy organizacji"),
+                i("deea1708", "Chcesz wyświetlić analizy wszystkich swoich kont w serwisie X?"),
                 i("eb603ffc", "Podnieś poziom, aby powiązać swoją sieć i przeglądać zagregowane analizy."),
                 i("gf67aae4", "Podnieś poziom do poziomu Pełny dostęp"),
                 i("h75e3618", "Uwzględnij organizację"),
@@ -8911,9 +8912,9 @@
                 i("a6ada13e", "Zrób zakupy"),
                 i("j0f12222", "Zobacz więcej"),
                 i("f569f7c8", "Przejdź do strony"),
-                i("j0c6772a", "Odwiedź stronę"),
-                i("f73003aa", "Film rozpocznie się po reklamie");
-            i("b3112b8a", "Pomiń"),
+                i("j0c6772a", "Odwiedź stronę");
+            i("f73003aa", "Film rozpocznie się po reklamie"),
+                i("b3112b8a", "Pomiń"),
                 i("h6333ad0", "Pomiń reklamę"),
                 i("c59da417", function (e) {
                     return "Pomiń reklamę za " + e.seconds;
@@ -13365,4 +13366,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.977f52ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.f139b86a.js.map

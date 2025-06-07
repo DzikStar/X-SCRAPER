@@ -3,10 +3,12 @@
     ["shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-595f2b1d"],
     {
         244448: (e, t, a) => {
-            a.d(t, { GZ: () => n.GZ, mQ: () => i.Z, q3: () => o.q3, tJ: () => n.tJ, vz: () => n.vz });
-            var i = a(295133),
-                n = a(798324),
-                o = a(511799);
+            a.d(t, { GZ: () => r.GZ, N_: () => o.N_, bk: () => o.bk, kb: () => n.Z, mQ: () => i.Z, q3: () => l.q3, tJ: () => r.tJ, vz: () => r.vz });
+            var i = a(498348),
+                n = a(685940),
+                o = a(608222),
+                r = a(752659),
+                l = a(511799);
         },
         801102: (e, t, a) => {
             a.d(t, { Z: () => o });
@@ -28,11 +30,11 @@
             a.d(t, { Z: () => d });
             var i = a(552322),
                 n = a(202784),
-                o = a(801102),
-                r = a(109195),
-                l = a(244448),
+                o = a(244448),
+                r = a(801102),
+                l = a(109195),
                 s = a(608222),
-                c = a(193686);
+                c = a(315198);
             function d({ el: e, p: t, mods: a }) {
                 const [d, m] = (0, n.useState)(["init"]),
                     [_, u] = (0, n.useState)(!1),
@@ -47,9 +49,9 @@
                     j = t.element("footer"),
                     C = t.str("cursor:top"),
                     S = t.str("cursor:bottom"),
-                    Z = (0, s.o)();
+                    Z = (0, s.oG)();
                 function N(e, t) {
-                    return (0, i.jsx)("div", { children: (0, i.jsx)(r.Z, { el: e }) }, e?.id || `list-item-${t}`);
+                    return (0, i.jsx)("div", { children: (0, i.jsx)(l.Z, { el: e }) }, e?.id || `list-item-${t}`);
                 }
                 return (
                     (0, n.useEffect)(() => {
@@ -66,12 +68,12 @@
                                     u(!0);
                                     const { Runtime: a } = Z;
                                     if (!a) return;
-                                    const i = (0, l.vz)(a),
+                                    const i = (0, o.vz)(a),
                                         n = i.session(),
-                                        o = await a.net.httpGet(t);
-                                    if ((o.data && n.onChunk(new Uint8Array(o.data)), i.root.value)) {
-                                        const t = (0, l.tJ)(i.root.value).str("cursor:bottom") || "",
-                                            a = (0, l.tJ)(i.root.value).str("cursor:top") || "";
+                                        r = await a.net.httpGet(t);
+                                    if ((r.data && n.onChunk(new Uint8Array(r.data)), i.root.value)) {
+                                        const t = (0, o.tJ)(i.root.value).str("cursor:bottom") || "",
+                                            a = (0, o.tJ)(i.root.value).str("cursor:top") || "";
                                         t && f(t), a && g(a), b((t) => ({ ...t, [e]: i.root.value }));
                                     }
                                 } catch (e) {
@@ -117,18 +119,18 @@
                         className: `${a}`,
                         children: [
                             (0, i.jsx)("div", { ref: x, style: { height: "10px", width: "100%" } }),
-                            X && (0, i.jsx)(r.Z, { el: X }),
-                            (0, i.jsx)("div", { className: "list-static-items", children: (0, o.Z)(e, N) }),
+                            X && (0, i.jsx)(l.Z, { el: X }),
+                            (0, i.jsx)("div", { className: "list-static-items", children: (0, r.Z)(e, N) }),
                             !_ &&
                                 (0, i.jsx)("div", {
                                     className: "list-feed-items",
                                     children: d.map((e) => {
                                         const t = k[e];
-                                        return t ? (0, i.jsx)("div", { className: "feed-page", children: (0, o.Z)(t, N) }, e) : (0, i.jsx)("div", {}, e);
+                                        return t ? (0, i.jsx)("div", { className: "feed-page", children: (0, r.Z)(t, N) }, e) : (0, i.jsx)("div", {}, e);
                                     }),
                                 }),
-                            _ && (0, i.jsx)(c.P, {}),
-                            j && (0, i.jsx)(r.Z, { el: j }),
+                            _ && (0, i.jsx)(c.A, { size: 20 }),
+                            j && (0, i.jsx)(l.Z, { el: j }),
                             (0, i.jsx)("div", { ref: w, style: { height: "10px", width: "100%" } }),
                         ],
                     })
@@ -150,7 +152,7 @@
                     _ = t.strDict("scribe:longpress") ?? {},
                     u = t.bool("disabled") ?? !1,
                     p = (0, l.h8)(),
-                    f = (0, r.o)()?.Analytics,
+                    f = (0, r.oG)()?.Analytics,
                     h = (0, n.useRef)(null),
                     g = (0, n.useRef)(!1),
                     k = (0, n.useRef)(null),
@@ -222,7 +224,7 @@
             function s({ showModal: e, setShowModal: t, children: a }) {
                 const o = (0, n.useRef)(null),
                     [r, s] = (0, n.useState)(!1),
-                    c = (0, l.o)();
+                    c = (0, l.oG)();
                 if (!c) return (0, i.jsx)("div", { children: "Runtime not available" });
                 const { Runtime: d } = c;
                 if (!d) return (0, i.jsx)("div", { children: "Runtime not available" });
@@ -276,15 +278,15 @@
             var i = a(552322),
                 n = a(202784),
                 o = a(801102),
-                r = a(798324),
+                r = a(752659),
                 l = a(608222),
-                s = a(193686);
+                s = a(315198);
             function c({ feedSrc: e, onBottomCursor: t, onLoadComplete: a }) {
                 const [c, d] = (0, n.useState)(!0),
                     [m, _] = (0, n.useState)(null),
                     [u, p] = (0, n.useState)(null),
                     f = (0, n.useRef)({}),
-                    h = (0, l.o)();
+                    h = (0, l.oG)();
                 return h && h.Runtime
                     ? ((0, n.useEffect)(() => {
                           if (f.current[e]) return;
@@ -305,7 +307,7 @@
                               d(!1), a();
                           })();
                       }, [e, t, a, h]),
-                      c ? (0, i.jsx)(s.P, {}) : m ? (0, i.jsx)("p", { style: { color: "red" }, children: m.message }) : (0, i.jsx)("div", { className: "contents", children: !u || c || m ? null : (0, o.Z)(u) }))
+                      c ? (0, i.jsx)(s.A, { size: 20 }) : m ? (0, i.jsx)("p", { style: { color: "red" }, children: m.message }) : (0, i.jsx)("div", { className: "contents", children: !u || c || m ? null : (0, o.Z)(u) }))
                     : (_(new Error("Runtime not available")), d(!1), void a());
             }
             function d({ p: e, mods: t }) {
@@ -348,7 +350,7 @@
                 r = a(910352),
                 l = a(511799);
             function s({ p: e, el: t }) {
-                const a = (0, o.o)(),
+                const a = (0, o.oG)(),
                     s = e.action("next"),
                     c = e.strDict("errors"),
                     { setErrors: d } = (0, i.useContext)(l.q3),
@@ -383,7 +385,7 @@
                 n = a(202784),
                 o = a(801102),
                 r = a(109195),
-                l = a(798324),
+                l = a(752659),
                 s = a(608222),
                 c = a(644109),
                 d = a(916025),
@@ -392,7 +394,7 @@
                 u = a(910352),
                 p = a(511799);
             function f({ el: e, p: t, mods: a }) {
-                const f = (0, s.o)(),
+                const f = (0, s.oG)(),
                     h = t.url("action") ?? "",
                     g = t.strDict("errors"),
                     k = t.url("validation"),
@@ -437,7 +439,7 @@
                                 }
                         }
                     }),
-                    P = (0, u.Z)((e, t) => {
+                    L = (0, u.Z)((e, t) => {
                         w(
                             void 0 !== t
                                 ? (a) => ({ ...a, [e]: t })
@@ -450,9 +452,9 @@
                             M("pending"),
                             y(void 0);
                     }),
-                    L = (0, n.useRef)(v);
+                    P = (0, n.useRef)(v);
                 (0, n.useLayoutEffect)(() => {
-                    L.current = v;
+                    P.current = v;
                 }, [v]);
                 const T = (0, u.Z)((e, t) => {
                         M("ongoing");
@@ -462,7 +464,7 @@
                             a.net
                                 .httpPOST(t, new Map(Object.entries(i)))
                                 .then(({ ok: t, data: a }) => {
-                                    if (L.current === e)
+                                    if (P.current === e)
                                         if (t && a) {
                                             const e = JSON.parse(new TextDecoder().decode(a));
                                             (0, d.x)(e) ? (Z({}), M("success")) : (Z(e), M("failure"));
@@ -482,7 +484,7 @@
                     (0, n.useEffect)(() => {
                         E(v);
                     }, [v, E]),
-                    (0, i.jsxs)(p.q3.Provider, { value: { values: v, submit: $, change: P, submissionResult: x, submissionKey: X, submissionStatus: b, validationStatus: C, errors: g, setErrors: Z, setFocus: N, canSubmit: B }, children: [(0, i.jsx)("div", { className: a, children: (0, o.Z)(e) }), x && (0, i.jsx)(r.Z, { el: x })] })
+                    (0, i.jsxs)(p.q3.Provider, { value: { values: v, submit: $, change: L, submissionResult: x, submissionKey: X, submissionStatus: b, validationStatus: C, errors: g, setErrors: Z, setFocus: N, canSubmit: B }, children: [(0, i.jsx)("div", { className: a, children: (0, o.Z)(e) }), x && (0, i.jsx)(r.Z, { el: x })] })
                 );
             }
         },
@@ -1036,7 +1038,7 @@
             var i = a(552322),
                 n = a(202784),
                 o = a(801102),
-                r = a(798324);
+                r = a(752659);
             function l({ p: e, el: t, mods: a }) {
                 const l = e.int("gapH") ?? 2,
                     s = e.int("gapV") ?? 2,
@@ -1119,8 +1121,8 @@
         514378: (e, t, a) => {
             a.d(t, { Z: () => s });
             var i = a(552322),
-                n = a(690560),
-                o = a(523366),
+                n = a(787923),
+                o = a(533210),
                 r = a(202784),
                 l = a(109195);
             function s({ el: e, p: t, mods: a }) {
@@ -1216,8 +1218,8 @@
         608594: (e, t, a) => {
             a.d(t, { C: () => s });
             var i = a(552322),
-                n = a(877751),
-                o = a(898171);
+                n = a(499533),
+                o = a(487574);
             const r = [
                     "accessibility_alt",
                     "accessibility_circle",
@@ -1821,7 +1823,7 @@
                 n = a(801102),
                 o = a(608222);
             function r({ el: e, p: t, mods: a }) {
-                const r = (0, o.o)();
+                const r = (0, o.oG)();
                 if (!r || !r.Runtime) return (0, i.jsx)("div", { className: `${a}`, children: "Can't find runtime" });
                 const { Runtime: l } = r,
                     s = "https://x.com",
@@ -1867,7 +1869,7 @@
                 n = a(801102),
                 o = a(608222);
             function r({ el: e, p: t, mods: a }) {
-                const r = (0, o.o)();
+                const r = (0, o.oG)();
                 if (!r || !r.Runtime) return (0, i.jsx)("div", { className: `${a}`, children: "Can't find runtime" });
                 const { Runtime: l } = r,
                     s = t.str("to") ?? "",
@@ -1886,4 +1888,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-595f2b1d.e213f9ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-595f2b1d.2efbb23a.js.map

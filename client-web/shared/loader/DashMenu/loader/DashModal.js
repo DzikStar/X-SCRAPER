@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~loader.DashMenu~loader.DashModal", "icons/IconDraw-js", "icons/IconHeartBurst-js"],
+    ["shared~loader.DashMenu~loader.DashModal", "icons/IconCameraVideoStroke-js", "icons/IconDraw-js"],
     {
         395337: (e, i, n) => {
             n.d(i, { Z: () => r });
@@ -43,30 +43,30 @@
                 T = n(175564),
                 Z = n(748138),
                 F = n(698891),
-                z = n(68290),
+                S = n(68290),
                 L = n(707570),
-                M = n(839),
-                S = n(593875),
-                K = n(829110),
-                P = n(720930),
-                V = n(516951),
-                O = n(450681),
-                U = n(400915),
-                j = n(420182),
-                x = n(997657),
-                D = n(306114),
-                E = n(279918),
+                K = n(839),
+                P = n(593875),
+                V = n(829110),
+                z = n(720930),
+                O = n(516951),
+                U = n(450681),
+                j = n(400915),
+                x = n(420182),
+                D = n(997657),
+                E = n(306114),
+                M = n(279918),
                 I = n(722517),
                 A = n(880647),
                 R = n(655352),
                 q = n(125363),
                 B = n(466036),
-                H = n(390387),
-                Q = n(76920),
-                W = n(477403),
-                N = n(104119),
-                $ = n(484633),
-                G = n(381904),
+                Q = n(390387),
+                W = n(76920),
+                N = n(477403),
+                $ = n(104119),
+                G = n(484633),
+                H = n(381904),
                 Y = n(206962);
             const J = c().a15648a4,
                 X = c().i3145aa0,
@@ -94,55 +94,55 @@
                 he = c().h5e38204,
                 we = c().h7d5d9fa,
                 Ce = "rweb.navItemDecorations",
-                Te = ({ analytics: e, featureSwitches: i, onClose: n = V.Z, userClaims: r, viewerUser: c, acceptedFollowerCount: Te, pendingFollowerCount: Ze }) => {
+                Te = ({ analytics: e, featureSwitches: i, onClose: n = O.Z, userClaims: r, viewerUser: c, acceptedFollowerCount: Te, pendingFollowerCount: Ze }) => {
                     let Fe = [],
-                        ze = [];
+                        Se = [];
                     const Le = (0, I.Z)("PremiumNav"),
-                        Me = i.isTrue("subscriptions_branding_checkmark_logo_enabled"),
-                        Se = (0, t.Dv)(j.lZ),
-                        [Ke, Pe] = l.useState(!1),
-                        [Ve, Oe] = l.useState(!1),
-                        Ue = i.isTrue("subscriptions_upsells_vo_nav_decoration_enabled"),
-                        je = i.getStringValue("subscriptions_upsells_vo_nav_decoration_variant"),
-                        xe = (0, N.Md)(je);
+                        Ke = i.isTrue("subscriptions_branding_checkmark_logo_enabled"),
+                        Pe = (0, t.Dv)(x.lZ),
+                        [Ve, ze] = l.useState(!1),
+                        [Oe, Ue] = l.useState(!1),
+                        je = i.isTrue("subscriptions_upsells_vo_nav_decoration_enabled"),
+                        xe = i.getStringValue("subscriptions_upsells_vo_nav_decoration_variant"),
+                        De = (0, $.Md)(xe);
                     l.useEffect(() => {
-                        xe &&
-                            Se.get(Ce).then((e) => {
-                                Pe(!e?.analyticsClickedV2), Oe(!e?.[xe?.key]);
+                        De &&
+                            Pe.get(Ce).then((e) => {
+                                ze(!e?.analyticsClickedV2), Ue(!e?.[De?.key]);
                             });
-                    }, [Se, xe]);
-                    const De = (0, q.I0)();
+                    }, [Pe, De]);
+                    const Ee = (0, q.I0)();
                     l.useEffect(() => {
-                        c?.protected && De(B.GE());
-                    }, [De, c]);
-                    const Ee = (0, Q.Zy)();
-                    Ee.size > 0 && Ee.add("/settings");
-                    const Ie = (0, q.v9)(H.Lz),
-                        Ae = ({ link: e }) => !(Ie && (("string" == typeof e && ((e.startsWith("/settings") && !Ee.has(e)) || e.includes("ads.twitter.com") || e.includes("studio.twitter.com") || e.includes("analytics.twitter.com") || e.includes("ads.x.com") || e.includes("studio.x.com") || e.includes("analytics.x.com"))) || ("object" == typeof e && e.pathname.startsWith("/i/flow")))),
+                        c?.protected && Ee(B.GE());
+                    }, [Ee, c]);
+                    const Me = (0, W.Zy)();
+                    Me.size > 0 && Me.add("/settings");
+                    const Ie = (0, q.v9)(Q.Lz),
+                        Ae = ({ link: e }) => !(Ie && (("string" == typeof e && ((e.startsWith("/settings") && !Me.has(e)) || e.includes("ads.twitter.com") || e.includes("studio.twitter.com") || e.includes("analytics.twitter.com") || e.includes("ads.x.com") || e.includes("studio.x.com") || e.includes("analytics.x.com"))) || ("object" == typeof e && e.pathname.startsWith("/i/flow")))),
                         Re = c?.screen_name || "",
                         qe = (0, a.iv)().width,
                         Be = A.Z.isOneColumnLayout(qe) || A.Z.isOneColumnSquishedLayout(qe),
-                        He = i.isTrue("responsive_web_birdwatch_note_writing_enabled") && !Ie,
-                        Qe = i.isTrue("branded_like_preview_enabled"),
-                        We = i.isTrue("subscriptions_sign_up_enabled"),
-                        Ne = i.isTrue("dash_region_specific_de_media_transparency_items_enabled"),
-                        $e = i.isTrue("blue_business_vo_nav_for_legacy_verified"),
-                        Ge = i.isTrue("rweb_xchat_enabled"),
+                        Qe = i.isTrue("responsive_web_birdwatch_note_writing_enabled") && !Ie,
+                        We = i.isTrue("branded_like_preview_enabled"),
+                        Ne = i.isTrue("subscriptions_sign_up_enabled"),
+                        $e = i.isTrue("dash_region_specific_de_media_transparency_items_enabled"),
+                        Ge = i.isTrue("blue_business_vo_nav_for_legacy_verified"),
+                        He = i.isTrue("rweb_xchat_enabled"),
                         Ye = r.isAnyPremiumSubscriber(),
                         Je = r.isVerifiedOrg(),
                         Xe = r.isTrueAndEnabled("subscriptions_feature_article_composer"),
                         ei = Ye,
                         ii = r.isTrueAndEnabled("subscriptions_feature_article_composer") && !(0, R.ZP)(),
-                        { role: ni } = (0, U.l7)(),
-                        { activeItem: li } = (0, G.Y)(),
-                        ti = i.isTrue("voice_rooms_web_space_creation") && ni !== $.Q.host && li?.type !== $.W.space,
+                        { role: ni } = (0, j.l7)(),
+                        { activeItem: li } = (0, H.Y)(),
+                        ti = i.isTrue("voice_rooms_web_space_creation") && ni !== G.Q.host && li?.type !== G.W.space,
                         ai = i.isTrue("rweb_go_live_enabled"),
                         si = i.isTrue("tweet_awards_web_coin_purchase_enabled"),
                         oi = i.isTrue("payments_enabled"),
                         ri = i.isTrue("recruiting_global_jobs_search_enabled"),
-                        ci = (0, W.vC)(),
+                        ci = (0, N.vC)(),
                         di = i.isTrue("c9s_enabled") && !!c,
-                        ui = (0, D.Z)(),
+                        ui = (0, E.Z)(),
                         _i = l.useMemo(() => !(Ye || !ui) && i.isTrue("subscriptions_upsells_app_tab_bar_analytics_upsell_enabled"), [Ye, i, ui]),
                         mi = (i) => () => {
                             i && e.scribe({ section: "overflow_menu", element: i, action: "click", data: { message: "VDL redesign dash menu item" } }), n && n();
@@ -163,56 +163,56 @@
                             label: ke,
                             link: { pathname: "/i/account_analytics", state: { cameFromUpsell: !0, referring_page: "analytics_dash_menu" } },
                             onClick:
-                                (Se.get(Ce).then((e) => {
+                                (Pe.get(Ce).then((e) => {
                                     const i = { ...e, analyticsClicked: !0, analyticsClickedV2: !0 };
-                                    Se.set(Ce, i);
+                                    Pe.set(Ce, i);
                                 }),
                                 mi("analytics")),
-                            decoration: Ke ? l.createElement(o.ZP, { background: "blue500" }, ve) : null,
+                            decoration: Ve ? l.createElement(o.ZP, { background: "blue500" }, ve) : null,
                         }),
                         Fi = () => {
                             const e = i.isTrue("subscriptions_upsells_premium_nav_migration_enabled"),
                                 { upsellContent: n } = e ? Le : {},
                                 t = "UpsellButtonRenderProperties" === n?.render_properties.__typename && n.render_properties.action_label ? n.render_properties.action_label : pe,
                                 a = "UpsellButtonRenderProperties" === Le?.upsellContent?.render_properties.__typename ? Le.upsellContent.render_properties.decoration_label : null;
-                            return { icon: Me ? h.default : w.default, label: t, link: { pathname: "/i/premium_sign_up", state: { referring_page: "dash_menu" } }, onClick: mi("verified_overflow_item"), decoration: a ? l.createElement(o.ZP, { background: "blue500" }, a) : null };
+                            return { icon: Ke ? h.default : w.default, label: t, link: { pathname: "/i/premium_sign_up", state: { referring_page: "dash_menu" } }, onClick: mi("verified_overflow_item"), decoration: a ? l.createElement(o.ZP, { background: "blue500" }, a) : null };
                         },
-                        zi = { icon: Me ? h.default : w.default, label: pe, link: "/i/premium", onClick: mi("premium_hub") },
+                        Si = { icon: Ke ? h.default : w.default, label: pe, link: "/i/premium", onClick: mi("premium_hub") },
                         Li = { label: te, link: "/logout", icon: C.default, onClick: mi("logout_overflow_item"), testID: Y.Z.logout },
-                        Mi = { icon: T.default, label: ce, link: (0, s.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-ads-rweb"), onClick: mi("twitter_ads_item") },
-                        Si = i.isTrue("subscriptions_upsells_monetization_redesign_enabled"),
-                        Ki = { icon: Z.default, label: ae, link: Si ? "/i/monetization" : "/settings/monetization", onClick: mi("monetization") },
-                        Pi = { icon: F.default, label: oe, link: "/settings", onClick: mi("settings_overflow_item"), testID: Y.Z.settings },
-                        Vi = () => ({
-                            label: Ue ? ye : ue,
+                        Ki = { icon: T.default, label: ce, link: (0, s.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-ads-rweb"), onClick: mi("twitter_ads_item") },
+                        Pi = i.isTrue("subscriptions_upsells_monetization_redesign_enabled"),
+                        Vi = { icon: Z.default, label: ae, link: Pi ? "/i/monetization" : "/settings/monetization", onClick: mi("monetization") },
+                        zi = { icon: F.default, label: oe, link: "/settings", onClick: mi("settings_overflow_item"), testID: Y.Z.settings },
+                        Oi = () => ({
+                            label: je ? ye : ue,
                             onClick: () => (
-                                Ue &&
-                                    xe &&
-                                    Se.get(Ce).then((e) => {
-                                        const i = { ...e, [xe?.key]: !0 };
-                                        Se.set(Ce, i);
+                                je &&
+                                    De &&
+                                    Pe.get(Ce).then((e) => {
+                                        const i = { ...e, [De?.key]: !0 };
+                                        Pe.set(Ce, i);
                                     }),
                                 mi("verified_organization_signup_item")()
                             ),
                             link: { pathname: "/i/verified-orgs-signup", state: { referring_page: "dash_menu" } },
-                            icon: z.default,
-                            decoration: Ve && Ue && xe ? l.createElement(o.ZP, { background: "blue500" }, xe.label) : null,
+                            icon: S.default,
+                            decoration: Oe && je && De ? l.createElement(o.ZP, { background: "blue500" }, De.label) : null,
                         }),
-                        Oi = { label: ue, onClick: mi("verified_organization_dashboard_item"), link: "/i/verified", icon: z.default },
-                        Ui = { label: _e, onClick: mi("create_space_item"), link: "/i/spaces/start", icon: L.default },
-                        ji = { label: me, onClick: mi("go_live_item"), link: "/i/go-live", icon: M.default },
-                        xi = c ? { label: fe, onClick: mi("communities_item"), link: `/${c.screen_name}/communities`, icon: S.default } : void 0,
-                        Di = Ge && c ? { label: he, onClick: mi("chat_item"), link: "/i/chat", icon: K.default, decoration: l.createElement(o.ZP, { background: "blue500" }, we) } : void 0,
-                        Ei = i.isTrue("spaces_conference_enabled") || !!ci,
-                        Ii = { label: "Conferences", onClick: mi("conferences_item"), link: "/i/conferences", icon: M.default },
-                        Ai = { label: ge, onClick: mi("jobs_item"), link: "/jobs", icon: P.default },
+                        Ui = { label: ue, onClick: mi("verified_organization_dashboard_item"), link: "/i/verified", icon: S.default },
+                        ji = { label: _e, onClick: mi("create_space_item"), link: "/i/spaces/start", icon: L.default },
+                        xi = { label: me, onClick: mi("go_live_item"), link: "/i/go-live", icon: K.default },
+                        Di = c ? { label: fe, onClick: mi("communities_item"), link: `/${c.screen_name}/communities`, icon: P.default } : void 0,
+                        Ei = He && c ? { label: he, onClick: mi("chat_item"), link: "/i/chat", icon: V.default, decoration: l.createElement(o.ZP, { background: "blue500" }, we) } : void 0,
+                        Mi = i.isTrue("spaces_conference_enabled") || !!ci,
+                        Ii = { label: "Conferences", onClick: mi("conferences_item"), link: "/i/conferences", icon: K.default },
+                        Ai = { label: ge, onClick: mi("jobs_item"), link: "/jobs", icon: z.default },
                         Ri = [pi, bi],
-                        qi = We && !Ye,
-                        Bi = $e,
-                        Hi = (0, O.Z)([Di, wi, ei ? zi : void 0, oi ? Ci : void 0, qi ? Fi() : void 0, di ? xi : void 0, Re ? yi : void 0, ki, ii ? fi : void 0, Bi ? (Je ? Oi : Vi()) : void 0, si ? Ti : void 0, He ? gi : void 0, Ze || Te ? hi : void 0, _i ? Zi() : void 0, Ki, Mi, ri ? Ai : void 0, Ei ? Ii : void 0, Pi, Li]).filter(Ae),
-                        Qi = l.useContext(x.hC),
-                        Wi = (0, O.Z)([Di, E.yw.Lists > Qi && Re ? yi : void 0, E.yw.Premium > Qi && ei ? zi : void 0, E.yw.PremiumSignup > Qi && qi ? Fi() : void 0, E.yw.Bookmarks > Qi ? ki : void 0, E.yw.Payments > Qi && oi ? Ci : void 0, E.yw.Communities > Qi && di ? xi : void 0, E.yw.Articles > Qi && Xe ? fi : void 0, E.yw.CommunityNotes > Qi && He ? gi : void 0, E.yw.Analytics > Qi && _i ? Zi() : void 0, Ki, E.yw.VerifiedOrgDash > Qi && Bi && Je ? Oi : void 0, (((!Je || r.isLegacyVerifiedOrg()) && E.yw.VerifiedOrgSignup > Qi) || (r.isVerifiedOrgAffiliate() && !r.isVerifiedOrg())) && i.isTrue("blue_business_vo_nav_for_legacy_verified") ? Vi() : void 0, si ? Ti : void 0, Qe ? vi : void 0, Ze || Te ? hi : void 0, Mi, E.yw.Jobs > Qi && ri ? Ai : void 0, void 0, ti ? Ui : void 0, ai ? ji : void 0, Ei ? Ii : void 0, Pi]).filter(Ae);
-                    return (0, R.ZP)() ? ((Fe = Fe.concat(Wi)), Ne && Be && (ze = Ri)) : ((Fe = Fe.concat(Hi)), Ne && (ze = Ri)), { coreItems: Fe, countrySpecificItems: ze };
+                        qi = Ne && !Ye,
+                        Bi = Ge,
+                        Qi = (0, U.Z)([Ei, wi, ei ? Si : void 0, oi ? Ci : void 0, qi ? Fi() : void 0, di ? Di : void 0, Re ? yi : void 0, ki, ii ? fi : void 0, Bi ? (Je ? Ui : Oi()) : void 0, si ? Ti : void 0, Qe ? gi : void 0, Ze || Te ? hi : void 0, _i ? Zi() : void 0, Vi, Ki, ri ? Ai : void 0, Mi ? Ii : void 0, zi, Li]).filter(Ae),
+                        Wi = l.useContext(D.hC),
+                        Ni = (0, U.Z)([Ei, M.yw.Lists > Wi && Re ? yi : void 0, M.yw.Premium > Wi && ei ? Si : void 0, M.yw.PremiumSignup > Wi && qi ? Fi() : void 0, M.yw.Bookmarks > Wi ? ki : void 0, M.yw.Payments > Wi && oi ? Ci : void 0, M.yw.Communities > Wi && di ? Di : void 0, M.yw.Articles > Wi && Xe ? fi : void 0, M.yw.CommunityNotes > Wi && Qe ? gi : void 0, M.yw.Analytics > Wi && _i ? Zi() : void 0, Vi, M.yw.VerifiedOrgDash > Wi && Bi && Je ? Ui : void 0, (((!Je || r.isLegacyVerifiedOrg()) && M.yw.VerifiedOrgSignup > Wi) || (r.isVerifiedOrgAffiliate() && !r.isVerifiedOrg())) && i.isTrue("blue_business_vo_nav_for_legacy_verified") ? Oi() : void 0, si ? Ti : void 0, We ? vi : void 0, Ze || Te ? hi : void 0, Ki, M.yw.Jobs > Wi && ri ? Ai : void 0, void 0, ti ? ji : void 0, ai ? xi : void 0, Mi ? Ii : void 0, zi]).filter(Ae);
+                    return (0, R.ZP)() ? ((Fe = Fe.concat(Ni)), $e && Be && (Se = Ri)) : ((Fe = Fe.concat(Qi)), $e && (Se = Ri)), { coreItems: Fe, countrySpecificItems: Se };
                 };
         },
         206962: (e, i, n) => {
@@ -271,6 +271,19 @@
                 }, [e.affiliations?.affiliated_account_ids_results, i]);
             }
         },
+        839: (e, i, n) => {
+            n.r(i), n.d(i, { default: () => r });
+            var l = n(202784),
+                t = n(890601),
+                a = n(783427),
+                s = n(347101);
+            const o = (e = {}) => {
+                const { direction: i } = (0, a.Z)();
+                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M2.008 6.5c0-1.381 1.119-2.5 2.5-2.5h11c1.381 0 2.5 1.119 2.5 2.5v1.882l4-2v11.236l-4-2V17.5c0 1.381-1.119 2.5-2.5 2.5h-11c-1.381 0-2.5-1.119-2.5-2.5v-11zm16 6.882l2 1V9.618l-2 1v2.764zM4.508 6c-.276 0-.5.224-.5.5v11c0 .276.224.5.5.5h11c.276 0 .5-.224.5-.5v-11c0-.276-.224-.5-.5-.5h-11zm5.5 4c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.896-2-2-2zm-4 2c0-2.209 1.791-4 4-4s4 1.791 4 4-1.791 4-4 4-4-1.791-4-4z" })) }, { writingDirection: i });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const r = o;
+        },
         197318: (e, i, n) => {
             n.r(i), n.d(i, { default: () => r });
             var l = n(202784),
@@ -284,19 +297,6 @@
             o.metadata = { width: 24, height: 24 };
             const r = o;
         },
-        279849: (e, i, n) => {
-            n.r(i), n.d(i, { default: () => r });
-            var l = n(202784),
-                t = n(890601),
-                a = n(783427),
-                s = n(347101);
-            const o = (e = {}) => {
-                const { direction: i } = (0, a.Z)();
-                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M18.037 13.084c-.918 1.685-2.719 3.479-5.694 5.212l-.342.204-.343-.204c-2.976-1.733-4.777-3.527-5.696-5.212-.924-1.699-.958-3.303-.349-4.533.603-1.216 1.799-1.978 3.127-2.046 1.122-.061 2.289.381 3.261 1.366.971-.985 2.138-1.427 3.259-1.366 1.328.068 2.524.829 3.127 2.046.609 1.23.575 2.834-.349 4.533zM19.42 3.16l1.42 1.42-1.77 1.76-1.41-1.41 1.76-1.77zM13 .5h-2V3h2V.5zM.5 13H3v-2H.5v2zm2.66 6.42l1.42 1.42 1.76-1.77-1.41-1.41-1.77 1.76zM21 11v2h2.5v-2H21zM11 23.5h2V21h-2v2.5zm6.66-4.43l1.76 1.77 1.42-1.42-1.77-1.76-1.41 1.41zM6.34 4.93L4.58 3.16 3.16 4.58l1.77 1.76 1.41-1.41z" })) }, { writingDirection: i });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const r = o;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.DashModal.33a696fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.DashModal.669d5d0a.js.map

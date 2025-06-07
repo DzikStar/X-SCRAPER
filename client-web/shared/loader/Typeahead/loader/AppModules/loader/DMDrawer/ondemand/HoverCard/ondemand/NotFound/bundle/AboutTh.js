@@ -3,7 +3,7 @@
     {
         804027: (e, t, r) => {
             "use strict";
-            r.d(t, { $T: () => B, $b: () => G, AA: () => v, Ae: () => j, CE: () => V, C_: () => L, D7: () => I, Dk: () => W, GN: () => J, Hm: () => U, IN: () => H, Iq: () => E, J$: () => N, QS: () => S, R8: () => m, RA: () => Y, TT: () => x, Ti: () => R, WZ: () => O, XD: () => D, Xb: () => P, YI: () => Z, ZF: () => k, ZJ: () => b, __: () => A, aD: () => T, bc: () => w, h0: () => C, ho: () => q, lS: () => M, q0: () => Q, qE: () => y, qJ: () => F, vY: () => z });
+            r.d(t, { $T: () => B, $b: () => G, AA: () => v, Ae: () => z, CE: () => V, C_: () => L, D7: () => C, Dk: () => W, GN: () => J, Hm: () => U, IN: () => H, Iq: () => E, J$: () => N, QS: () => S, R8: () => m, RA: () => Y, TT: () => x, Ti: () => R, WZ: () => O, XD: () => D, Xb: () => I, YI: () => Z, ZF: () => k, ZJ: () => b, __: () => A, aD: () => T, bc: () => w, h0: () => P, ho: () => q, lS: () => M, q0: () => Q, qE: () => y, qJ: () => F, vY: () => j });
             var n = r(261214),
                 o = r(956056),
                 i = r(41065),
@@ -29,9 +29,9 @@
                 v = Object.freeze({ PhoneOnly: "phone_only", EmailOnly: "email_only", PhoneThenEmail: "phone_then_email", EmailThenPhone: "email_then_phone" }),
                 R = Object.freeze({ ActionList: "ACTION_LIST", AlertDialog: "ALERT_DIALOG", AlertDialogSupressClientEvents: "ALERT_DIALOG_SUPRESS_CLIENT_EVENTS", AppDownloadCTA: "APP_DOWNLOAD_CTA", AppLocaleUpdate: "APP_LOCALE_UPDATE", BrowsableNux: "BROWSABLE_NUX", CallToAction: "CALL_TO_ACTION", CheckLoggedInAccount: "CHECK_LOGGED_IN_ACCOUNT", ChoiceSelection: "CHOICE_SELECTION", ContactsLiveSyncPermissionPrompt: "CONTACTS_LIVE_SYNC_PERMISSION_PROMPT", EmailContactsSync: "EMAIL_CONTACTS_SYNC", EmailVerification: "EMAIL_VERIFICATION", EndFlow: "END_FLOW", EnterDate: "ENTER_DATE", EnterEmail: "ENTER_EMAIL", EnterPassword: "ENTER_PASSWORD", EnterPhone: "ENTER_PHONE", EnterRecaptcha: "ENTER_RECAPTCHA", EnterText: "ENTER_TEXT", EnterUsername: "ENTER_USERNAME", FetchPassword: "FETCH_PASSWORD", GenericURT: "GENERIC_URT", InAppNotification: "IN_APP_NOTIFICATION", InterestPicker: "INTEREST_PICKER", JsInstrumentation: "JS_INSTRUMENTATION", MenuDialog: "MENU_DIALOG", NotificationsPermissionPrompt: "NOTIFICATIONS_PERMISSION_PROMPT", OpenAccount: "OPEN_ACCOUNT", OpenHomeTimeline: "OPEN_HOME_TIMELINE", OpenLink: "OPEN_LINK", Passkey: "PASSKEY", PhoneVerification: "PHONE_VERIFICATION", PrivacyOptions: "PRIVACY_OPTIONS", Recaptcha: "RECAPTCHA", SecurityKey: "SECURITY_KEY", SelectAvatar: "SELECT_AVATAR", SelectBanner: "SELECT_BANNER", SettingsList: "SETTINGS_LIST", ShowCode: "SHOW_CODE", Signup: "SIGNUP", SignupReview: "SIGNUP_REVIEW", TopicsSelector: "TOPICS_SELECTOR", TweetSelectionURT: "TWEET_SELECTION_URT", TypeaheadSearch: "TYPEAHEAD_SEARCH", UpdateUsers: "UPDATE_USERS", UploadMedia: "UPLOAD_MEDIA", UserRecommendations: "USER_RECOMMENDATIONS_LIST", UserRecommendationsURT: "USER_RECOMMENDATIONS_URT", WaitSpinner: "WAIT_SPINNER", WebModal: "WEB_MODAL" }),
                 O = (Object.freeze({ Centered: "centered", Left: "left" }), (0, g.Z)([R.EndFlow, R.FetchPassword, R.CheckLoggedInAccount, R.OpenAccount, R.OpenHomeTimeline, R.OpenLink, R.NotificationsPermissionPrompt, R.UploadMedia, R.WaitSpinner])),
-                C = Object.freeze({ Action: "action", Boolean: "boolean", DestructiveAction: "destructive_action", PreciseLocation: "precise_location", SettingsGroup: "settings_group", StaticText: "static_text", Separator: "separator", TextField: "text_field", Button: "button", Tweet: "tweet" }),
-                P = "setting_responses",
-                I = "SignupSSOSubtask",
+                P = Object.freeze({ Action: "action", Boolean: "boolean", DestructiveAction: "destructive_action", PreciseLocation: "precise_location", SettingsGroup: "settings_group", StaticText: "static_text", Separator: "separator", TextField: "text_field", Button: "button", Tweet: "tweet" }),
+                I = "setting_responses",
+                C = "SignupSSOSubtask",
                 k = Object.freeze({ AppleSSOButton: "apple_sso_button", GoogleSSOButton: "google_sso_button", NextButton: "next_button", UserIdentifier: "user_identifier" }),
                 U = Object.freeze({ DEPRECATED_UnorderedList: "UnorderedList", DEPRECATED_ListItem: "ListItem", UnorderedList: "unordered_list", ListItem: "list_item" }),
                 N = Object.freeze({ Normal: "Normal", Bold: "Bold" }),
@@ -42,8 +42,8 @@
                 x = Object.freeze({ Checkbox: "checkbox", Follow: "follow" }),
                 M = Object.freeze({ Tile: "tile", List: "list", TileFollowButton: "tile_follow_btn" }),
                 Y = (Object.freeze({ Always: "always", Never: "never", Preprompt: "preprompt" }), Object.freeze({ Email: "email", Number: "number", Password: "password", Telephone: "telephone", Text: "text" })),
-                z = Object.freeze({ ResendSms: "resend_sms", ResendVoice: "resend_voice", ResendEmail: "resend_email" }),
-                j = Object.freeze({ Password: "password", NewPassword: "new_password", Text: "text" }),
+                j = Object.freeze({ ResendSms: "resend_sms", ResendVoice: "resend_voice", ResendEmail: "resend_email" }),
+                z = Object.freeze({ Password: "password", NewPassword: "new_password", Text: "text" }),
                 Z = Object.freeze({ Normal: "normal", Compact: "compact" }),
                 W = Object.freeze({ Username: "username", Password: "password", NewPassword: "new_password", Text: "text" }),
                 H = Object.freeze({ Mismatch: "mismatch" }),
@@ -55,7 +55,7 @@
         },
         118823: (e, t, r) => {
             "use strict";
-            r.d(t, { WP: () => ne, R2: () => re, YW: () => J, Ig: () => ee, n8: () => $, YU: () => ae, Ai: () => se, Lw: () => H, z_: () => Q, qE: () => q, tY: () => oe, iD: () => G, jv: () => M, or: () => L, UD: () => N, cu: () => k, b: () => j, Du: () => V, zj: () => Y, W2: () => B, uz: () => F, Lg: () => D, li: () => x, $B: () => z, B7: () => U, aR: () => Z, Wl: () => ie, YF: () => te, d7: () => ue, if: () => K });
+            r.d(t, { WP: () => ne, R2: () => re, YW: () => J, Ig: () => ee, n8: () => $, YU: () => ae, Ai: () => se, Lw: () => H, z_: () => Q, qE: () => q, tY: () => oe, iD: () => G, jv: () => M, or: () => L, UD: () => N, cu: () => k, b: () => z, Du: () => V, zj: () => Y, W2: () => B, uz: () => F, Lg: () => D, li: () => x, $B: () => j, B7: () => U, aR: () => Z, Wl: () => ie, YF: () => te, d7: () => ue, if: () => K });
             r(543673), r(240753), r(128399);
             var n = r(695003),
                 o = r.n(n),
@@ -82,18 +82,18 @@
                 v = Object.freeze({ REQUEST: "rweb/ocf/VERIFY_IDENTIFIER_REQUEST", SUCCESS: "rweb/ocf/VERIFY_IDENTIFIER_SUCCESS", FAILURE: "rweb/ocf/VERIFY_IDENTIFIER_FAILURE" }),
                 R = Object.freeze({ REQUEST: "rweb/ocf/FETCH_BROWSABLE_NUX_RECOMMENDATIONS_REQUEST", SUCCESS: "rweb/ocf/FETCH_BROWSABLE_NUX_RECOMMENDATIONS_SUCCESS", FAILURE: "rweb/ocf/FETCH_BROWSABLE_NUX_RECOMMENDATIONS_FAILURE" }),
                 O = (0, i.Z)(["signup"]),
-                C = { currentSubtask: void 0, previouslySubmittedSubtaskId: void 0, failureMessage: "", fetchStatus: d.ZP.NONE, flowName: void 0, flowToken: void 0, shouldAbort: !1, shouldEndFlow: !1, submitFailed: !1, startLocation: void 0, subtasks: [], subtaskInputs: {}, navigationContext: { action: "", link: "" }, navigationStack: [], flowData: {}, sendPinCode: !1, browsableNuxRecommendations: [] },
-                P = (e) => {
+                P = { currentSubtask: void 0, previouslySubmittedSubtaskId: void 0, failureMessage: "", fetchStatus: d.ZP.NONE, flowName: void 0, flowToken: void 0, shouldAbort: !1, shouldEndFlow: !1, submitFailed: !1, startLocation: void 0, subtasks: [], subtaskInputs: {}, navigationContext: { action: "", link: "" }, navigationStack: [], flowData: {}, sendPinCode: !1, browsableNuxRecommendations: [] },
+                I = (e) => {
                     const t = e && (0, f.uL)(e);
                     return t === l.Ti.EmailVerification || t === l.Ti.PhoneVerification;
                 },
-                I = (e) => e === u.ZP.ValidationFailure || e === u.ZP.OnboardingFlowFailure || e === u.ZP.OnboardingFlowRetriableFailure;
+                C = (e) => e === u.ZP.ValidationFailure || e === u.ZP.OnboardingFlowFailure || e === u.ZP.OnboardingFlowRetriableFailure;
             h.Z.register({
-                [_]: function (e = C, t) {
+                [_]: function (e = P, t) {
                     if (!t) return e;
                     switch (t.type) {
                         case m.REQUEST:
-                            return { ...C, fetchStatus: d.ZP.LOADING, flowName: t.meta?.flowName, startLocation: e.startLocation };
+                            return { ...P, fetchStatus: d.ZP.LOADING, flowName: t.meta?.flowName, startLocation: e.startLocation };
                         case w.REQUEST:
                             return { ...e, fetchStatus: d.ZP.LOADING, submitFailed: !1 };
                         case T: {
@@ -112,7 +112,7 @@
                             const r = t.payload?.errors[0].code,
                                 n = t.payload?.errors[0].message,
                                 o = r !== s.Z.Offline,
-                                i = I(r) ? n : void 0;
+                                i = C(r) ? n : void 0;
                             return { ...e, fetchStatus: d.ZP.FAILED, failureMessage: i, shouldAbort: o };
                         }
                         case w.FAILURE: {
@@ -122,7 +122,7 @@
                                 }, 1e4);
                             const r = t.payload?.errors[0].code,
                                 n = t.payload?.errors[0].message,
-                                o = I(r) ? n : void 0,
+                                o = C(r) ? n : void 0,
                                 i = !((e, t) => {
                                     const r = void 0 !== e && (e === s.Z.Offline || e === u.ZP.ValidationFailure || e === u.ZP.OnboardingFlowRetriableFailure),
                                         n = t && (0, f.uL)(t),
@@ -134,7 +134,7 @@
                         case v.FAILURE: {
                             const r = t.payload?.errors[0].code,
                                 n = t.payload?.errors[0].message,
-                                o = I(r) ? n : void 0;
+                                o = C(r) ? n : void 0;
                             return { ...e, verificationSendFailureMessage: o, sendPinCode: !1 };
                         }
                         case m.SUCCESS:
@@ -142,12 +142,12 @@
                             const { flow_token: r, subtasks: n } = t.payload ?? {},
                                 { isTaskNavigation: o } = t.meta ?? {},
                                 i = n && n.length ? n[0] : void 0,
-                                a = P(i),
+                                a = I(i),
                                 s = !!o && !i;
                             return { ...e, previouslySubmittedSubtaskId: e.currentSubtask?.subtask_id, currentSubtask: i, fetchStatus: d.ZP.LOADED, flowToken: r, sendPinCode: a, shouldEndFlow: s, submitFailed: !1, subtasks: n, subtaskInputs: {}, navigationStack: i ? [i.subtask_id] : [], shouldAbort: !1 };
                         }
                         case b:
-                            return { ...C };
+                            return { ...P };
                         case S:
                             return t.payload ?? e;
                         case v.REQUEST:
@@ -175,8 +175,8 @@
                 x = (e) => e[_].submitFailed,
                 M = (e) => e[_].currentSubtask,
                 Y = (e) => e[_].previouslySubmittedSubtaskId,
-                z = (e) => e[_].subtaskInputs,
-                j = (e) => e[_].navigationContext,
+                j = (e) => e[_].subtaskInputs,
+                z = (e) => e[_].navigationContext,
                 Z = (e) => e[_].verificationSendFailureMessage,
                 W = (e) => e[_].navigationStack,
                 H = (e) => !!e.alert_dialog || !!e.menu_dialog || e?.cta?.style === l.aD.HalfCover,
@@ -217,7 +217,7 @@
                                 const s = o(),
                                     u = k(s),
                                     c = U(s),
-                                    l = z(s),
+                                    l = j(s),
                                     f = X(c, l),
                                     h = { ...r, flow_token: u, subtask_inputs: f };
                                 return (0, p._O)(n, { params: h, request: e.task(i) })({ actionTypes: w, context: "SUBMIT_FLOW", meta: { isTaskNavigation: t } }).then((e) => {
@@ -273,7 +273,7 @@
                             p = r && r.action,
                             d = p === l.vY.ResendSms || p === l.vY.ResendVoice || p === l.vY.ResendEmail;
                         "clear" === p && n && (f[n] = {});
-                        const g = P(h) && (!p || d);
+                        const g = I(h) && (!p || d);
                         o({ type: T, payload: { navigationContext: { action: "", ...r }, sendPinCode: g, subtaskId: n, subtaskInputs: f, navigationStack: c } });
                     },
                 X = (e, t) =>
@@ -486,7 +486,7 @@
                 b = (e) => e === i.h0.Boolean || e === i.h0.PreciseLocation,
                 y = (e) => ({ uri: e.image_info.url, width: e.image_info.width, height: e.image_info.height });
         },
-        487606: (e, t, r) => {
+        42635: (e, t, r) => {
             "use strict";
             r.r(t), r.d(t, { default: () => u });
             var n = r(202784),
@@ -495,7 +495,7 @@
                 a = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M2 4c1.66 0 3-1.34 3-3h1c0 1.66 1.34 3 3 3v1C7.34 5 6 6.34 6 8H5c0-1.66-1.34-3-3-3V4zm7.89 4.9C11.26 7.53 12 5.35 12 2h2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1zm7.32 3.1c-.97-.42-1.81-.97-2.53-1.69-.71-.71-1.27-1.56-1.68-2.52-.42.96-.98 1.81-1.69 2.52-.72.72-1.56 1.27-2.53 1.69.97.42 1.81.97 2.53 1.69.71.71 1.27 1.56 1.69 2.52.41-.96.97-1.81 1.68-2.52.72-.72 1.56-1.27 2.53-1.69z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 1.75C6.339 1.75 1.75 6.339 1.75 12S6.339 22.25 12 22.25 22.25 17.661 22.25 12 17.661 1.751 12 1.75zm.571 12.75v2.857L12 18.5l-.571-1.143V14.5H7.36l1.783-3.566V7.928c0-.789.64-1.429 1.429-1.429h2.857c.789 0 1.429.64 1.429 1.429v3.006l1.783 3.566h-4.069z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const u = s;
@@ -635,7 +635,7 @@
                         case "utf8":
                         case "utf-8":
                         case void 0:
-                            return z(e).length;
+                            return j(e).length;
                         case "ucs2":
                         case "ucs-2":
                         case "utf16le":
@@ -644,9 +644,9 @@
                         case "hex":
                             return r >>> 1;
                         case "base64":
-                            return j(e).length;
+                            return z(e).length;
                         default:
-                            if (n) return z(e).length;
+                            if (n) return j(e).length;
                             (t = ("" + t).toLowerCase()), (n = !0);
                     }
             }
@@ -658,15 +658,15 @@
                 for (e || (e = "utf8"); ; )
                     switch (e) {
                         case "hex":
-                            return I(this, t, r);
+                            return C(this, t, r);
                         case "utf8":
                         case "utf-8":
                             return R(this, t, r);
                         case "ascii":
-                            return C(this, t, r);
+                            return P(this, t, r);
                         case "latin1":
                         case "binary":
-                            return P(this, t, r);
+                            return I(this, t, r);
                         case "base64":
                             return v(this, t, r);
                         case "ucs2":
@@ -740,7 +740,7 @@
                 return a;
             }
             function b(e, t, r, n) {
-                return Z(z(t, e.length - r), e, r, n);
+                return Z(j(t, e.length - r), e, r, n);
             }
             function y(e, t, r, n) {
                 return Z(
@@ -757,7 +757,7 @@
                 return y(e, t, r, n);
             }
             function S(e, t, r, n) {
-                return Z(j(t), e, r, n);
+                return Z(z(t), e, r, n);
             }
             function A(e, t, r, n) {
                 return Z(
@@ -992,19 +992,19 @@
                     return { type: "Buffer", data: Array.prototype.slice.call(this._arr || this, 0) };
                 });
             var O = 4096;
-            function C(e, t, r) {
+            function P(e, t, r) {
                 var n = "";
                 r = Math.min(e.length, r);
                 for (var o = t; o < r; ++o) n += String.fromCharCode(127 & e[o]);
                 return n;
             }
-            function P(e, t, r) {
+            function I(e, t, r) {
                 var n = "";
                 r = Math.min(e.length, r);
                 for (var o = t; o < r; ++o) n += String.fromCharCode(e[o]);
                 return n;
             }
-            function I(e, t, r) {
+            function C(e, t, r) {
                 var n = e.length;
                 (!t || t < 0) && (t = 0), (!r || r < 0 || r > n) && (r = n);
                 for (var o = "", i = t; i < r; ++i) o += Y(e[i]);
@@ -1224,7 +1224,7 @@
                     var i;
                     if (((t >>>= 0), (r = void 0 === r ? this.length : r >>> 0), e || (e = 0), "number" == typeof e)) for (i = t; i < r; ++i) this[i] = e;
                     else {
-                        var a = u.isBuffer(e) ? e : z(new u(e, n).toString()),
+                        var a = u.isBuffer(e) ? e : j(new u(e, n).toString()),
                             s = a.length;
                         for (i = 0; i < r - t; ++i) this[i + t] = a[i % s];
                     }
@@ -1234,7 +1234,7 @@
             function Y(e) {
                 return e < 16 ? "0" + e.toString(16) : e.toString(16);
             }
-            function z(e, t) {
+            function j(e, t) {
                 var r;
                 t = t || 1 / 0;
                 for (var n = e.length, o = null, i = [], a = 0; a < n; ++a) {
@@ -1274,7 +1274,7 @@
                 }
                 return i;
             }
-            function j(e) {
+            function z(e) {
                 return n.toByteArray(
                     (function (e) {
                         if (
@@ -1395,4 +1395,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh.fee7a51a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh.b9e1991a.js.map

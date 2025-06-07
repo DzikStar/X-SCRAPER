@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.PremiumLoaders", "icons/IconAtBold-js", "icons/IconBookStrokeOff-js", "icons/IconBookmarkCloseStroke-js", "icons/IconFilterFill-js", "icons/IconItalic-js", "icons/IconNumberedList-js", "icons/IconThumbsUp-js"],
+    ["loader.PremiumLoaders", "icons/IconBoldCompact-js", "icons/IconBookmarkCloseStroke-js", "icons/IconDrafts-js", "icons/IconItalic-js", "icons/IconQuoteStroke-js", "icons/IconRepliesStroke-js"],
     {
         96768: (e, t, a) => {
             a.d(t, { Z: () => s });
@@ -237,7 +237,7 @@
             };
         },
         127939: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => A });
+            a.r(t), a.d(t, { default: () => R });
             var r = a(202784),
                 i = a(400752),
                 n = a(325686),
@@ -250,90 +250,90 @@
                 m = a(841972),
                 p = a(647174),
                 g = a(530813),
-                v = a(420182),
-                _ = a(443781),
-                h = a(56851),
-                y = a(736063),
-                f = a(88660),
+                _ = a(420182),
+                v = a(443781),
+                y = a(56851),
+                f = a(736063),
+                h = a(88660),
                 k = a(39182),
                 b = a(313129),
                 w = a(738124),
                 Z = a(643426),
                 E = a(293115),
                 F = a(725405),
-                C = a(620243);
-            const S = u().f0701753,
+                S = a(620243);
+            const C = u().f0701753,
                 K = u().j7d0e836,
-                T = u().d227d19e,
-                V = { isCollapsed: !1 },
-                L = ({ dismiss: e }) => {
+                L = u().d227d19e,
+                T = { isCollapsed: !1 },
+                V = ({ dismiss: e }) => {
                     (0, k.E)();
-                    const { featureSwitches: t } = (0, _.QZ)(),
+                    const { featureSwitches: t } = (0, v.QZ)(),
                         a = t.isTrue("rweb_sourcemap_migration"),
                         o = (0, F.Z)(),
                         [c, d] = r.useState(!1),
-                        u = (0, i.Dv)(v.lZ),
-                        [y, f] = r.useState(null);
+                        u = (0, i.Dv)(_.lZ),
+                        [f, h] = r.useState(null);
                     r.useEffect(() => {
                         u.get("rweb.premiumModule").then((e) => {
-                            f(e || V);
+                            h(e || T);
                         });
                     }, [u]);
                     let E = "/premium/module";
-                    y?.isCollapsed && (E += "?collapsed=true");
-                    const C = (0, b._3)(E, { refreshTimeMs: 1e4 });
-                    if (!y) return null;
-                    if (!C) return r.createElement(h.Z, null);
-                    const L = () => {
+                    f?.isCollapsed && (E += "?collapsed=true");
+                    const S = (0, b._3)(E, { refreshTimeMs: 1e4 });
+                    if (!f) return null;
+                    if (!S) return r.createElement(y.Z, null);
+                    const V = () => {
                             d(!c);
                         },
-                        P = () => {
+                        z = () => {
                             e(), o.scribeAction("dismiss"), d(!1);
                         },
-                        z = () => {
-                            o.scribeAction(y.isCollapsed ? "expand" : "collapse");
-                            const e = { isCollapsed: !y.isCollapsed };
-                            f(e), u.set("rweb.premiumModule", e), d(!1);
+                        P = () => {
+                            o.scribeAction(f.isCollapsed ? "expand" : "collapse");
+                            const e = { isCollapsed: !f.isCollapsed };
+                            h(e), u.set("rweb.premiumModule", e), d(!1);
                         };
-                    return C.jfResponse?.root.value
+                    return S.jfResponse?.root.value
                         ? r.createElement(
                               Z.b.Provider,
-                              { value: { dismiss: L } },
+                              { value: { dismiss: V } },
                               r.createElement(
                                   n.Z,
                                   { style: a ? H.containerRedesign : H.container },
                                   c
                                       ? r.createElement(l.Z, {
                                             items: [
-                                                { onClick: z, text: y.isCollapsed ? K : T, Icon: y.isCollapsed ? m.default : p.default },
-                                                { onClick: P, text: S({ number: 7 }), Icon: g.default },
+                                                { onClick: P, text: f.isCollapsed ? K : L, Icon: f.isCollapsed ? m.default : p.default },
+                                                { onClick: z, text: C({ number: 7 }), Icon: g.default },
                                             ],
-                                            onCloseRequested: L,
+                                            onCloseRequested: V,
                                         })
                                       : null,
-                                  C.jfResponse?.root.value ? r.createElement(w.Z, { payload: C.jfResponse.root.value }) : null,
+                                  S.jfResponse?.root.value ? r.createElement(w.Z, { payload: S.jfResponse.root.value }) : null,
                               ),
                           )
-                        : r.createElement(s.Z, { onRetry: null, title: C.error });
+                        : r.createElement(s.Z, { onRetry: null, title: S.error });
                 },
-                P = () => {
-                    const { dismiss: e, impress: t, shouldShow: a } = (0, f.ZP)({ key: "premium_module_v1", dismissForMsec: f.IZ, showForMsec: null, reappearAfterMsec: null });
+                z = () => {
+                    const { dismiss: e, impress: t, shouldShow: a } = (0, h.ZP)({ key: "premium_module_v1", dismissForMsec: h.IZ, showForMsec: null, reappearAfterMsec: null });
                     return (
                         r.useEffect(() => {
                             t();
                         }, [t]),
-                        a ? r.createElement(E.nO, { namespace: { component: "premium_module " } }, r.createElement(L, { dismiss: e })) : null
+                        a ? r.createElement(E.nO, { namespace: { component: "premium_module " } }, r.createElement(V, { dismiss: e })) : null
                     );
                 },
-                z = () => {
-                    const { verified_program_application_status: e, verified_program_eligibility: t, verified_user_profiles: a } = (0, C.Z)(),
-                        { featureSwitches: i } = (0, _.QZ)(),
+                P = () => {
+                    const { verified_program_application_status: e, verified_program_eligibility: t, verified_user_profiles: a } = (0, S.Z)(),
+                        { featureSwitches: i } = (0, v.QZ)(),
                         n = a?.ad_revenue_sharing_user_profile?.is_active;
-                    if ((n || (0 === t?.ad_revenue_sharing_eligibility?.length && "NotStarted" === e?.ad_revenue_sharing_application_status)) && i.isTrue("subscriptions_premium_module_enabled")) return r.createElement(r.Suspense, { fallback: r.createElement(o.J, null) }, r.createElement(P, null));
+                    if ((n || (0 === t?.ad_revenue_sharing_eligibility?.length && "NotStarted" === e?.ad_revenue_sharing_application_status)) && i.isTrue("subscriptions_premium_module_enabled")) return r.createElement(r.Suspense, { fallback: r.createElement(o.J, null) }, r.createElement(z, null));
                 },
-                A = () => {
-                    const { featureSwitches: e, userClaims: t } = (0, _.QZ)();
-                    return t.isAnyPremiumSubscriber() && e.isTrue("subscriptions_premium_module_creator_gate_enabled") ? r.createElement(y.H, { errorConfig: { context: "premium_module" } }, r.createElement(z, null)) : null;
+                R = () => {
+                    const { featureSwitches: e, userClaims: t } = (0, v.QZ)();
+                    return t.isAnyPremiumSubscriber() && e.isTrue("subscriptions_premium_module_creator_gate_enabled") ? r.createElement(f.H, { errorConfig: { context: "premium_module" } }, r.createElement(P, null)) : null;
                 },
                 H = c.default.create((e) => ({ container: { marginBottom: e.spaces.space12 }, containerRedesign: { paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 } }));
         },
@@ -351,13 +351,13 @@
                 m = a(736063),
                 p = a(177210),
                 g = a(782826),
-                v = a(725405),
-                _ = a(199232);
-            const h = c().fbf83158,
-                y = c().jadeb4da,
-                f = c().bce3726a,
+                _ = a(725405),
+                v = a(199232);
+            const y = c().fbf83158,
+                f = c().jadeb4da,
+                h = c().bce3726a,
                 k = ({ entryPoint: e, originProduct: t }) => {
-                    const a = (0, v.Z)(),
+                    const a = (0, _.Z)(),
                         { origin: s } = g.ZP.get(),
                         o = (0, p.Z)({ returnUrl: `${s}/i/profile`, originProduct: t }),
                         c = `payment_failure_alert_card_${e}_sidebar`;
@@ -367,11 +367,11 @@
                     const u = r.useCallback(() => {
                         a.scribe({ component: c, action: "click", element: `payment_failure_${e}_sidebar` }), o?.();
                     }, [o, a, c, e]);
-                    return r.createElement(i.Z, { style: Z.cardBlock, testID: "paymentCardBlock" }, r.createElement(i.Z, { style: Z.inner }, r.createElement(n.ZP, { size: "headline1", style: Z.heading, weight: "heavy" }, r.createElement(d.default, { style: Z.icon, testID: "errorIcon" }), h), r.createElement(n.ZP, { size: "body", style: Z.subheading }, y), r.createElement(l.ZP, { onClick: u, style: Z.button, type: "primaryFilled" }, f)));
+                    return r.createElement(i.Z, { style: Z.cardBlock, testID: "paymentCardBlock" }, r.createElement(i.Z, { style: Z.inner }, r.createElement(n.ZP, { size: "headline1", style: Z.heading, weight: "heavy" }, r.createElement(d.default, { style: Z.icon, testID: "errorIcon" }), y), r.createElement(n.ZP, { size: "body", style: Z.subheading }, f), r.createElement(l.ZP, { onClick: u, style: Z.button, type: "primaryFilled" }, h)));
                 },
                 b = ({ entryPoint: e }) => {
                     const { featureSwitches: t } = (0, u.QZ)(),
-                        { hasPremiumPaymentFailure: a, hasVerifiedOrgPaymentFailure: n } = (0, _.Z)(["VerifiedOrganization", "Premium"]);
+                        { hasPremiumPaymentFailure: a, hasVerifiedOrgPaymentFailure: n } = (0, v.Z)(["VerifiedOrganization", "Premium"]);
                     return (n && t.isTrue("subscriptions_management_failed_payment_profile_card_enabled")) || (a && t.isTrue("subscriptions_management_failed_payment_message_premium_enabled")) ? r.createElement(i.Z, { style: Z.paddedContainer, testID: "paymentCardView" }, r.createElement(k, { entryPoint: e, originProduct: n ? "VerifiedOrganizations" : "TwitterBlue" })) : null;
                 },
                 w = ({ entryPoint: e }) => r.createElement(m.H, { errorConfig: { context: "payment_alert_card" } }, r.createElement(b, { entryPoint: e })),
@@ -392,31 +392,31 @@
                 m = a(187669),
                 p = a(399398),
                 g = a(177210),
-                v = a(337394),
-                _ = a(147595),
-                h = a(811574),
-                y = a(293115),
-                f = a(725405),
+                _ = a(337394),
+                v = a(147595),
+                y = a(811574),
+                f = a(293115),
+                h = a(725405),
                 k = a(443781);
             const b = d().ie4f57d2,
                 w = d().h293aa52,
                 Z = d().j1923668,
                 E = d().ac7e97ee,
                 F = { PremiumBasic: d().f70c69b4, BlueVerified: d().f4cec4d2, BlueVerifiedPlus: d().f4cec4d2 },
-                C = ({ activeRestId: e }) => {
-                    const t = (0, f.Z)(),
+                S = ({ activeRestId: e }) => {
+                    const t = (0, h.Z)(),
                         [a, o] = r.useState(!1);
                     (0, m.q)(() => {
                         t.scribeAction("impression");
                     });
                     const c = (0, g.Z)({ returnUrl: `https://${window.location.host}/home`, originProduct: "TwitterBlue" }),
-                        d = v.v5.premium[e ?? ""];
+                        d = _.v5.premium[e ?? ""];
                     return r.createElement(
                         p.g,
                         { testID: "renew-subscription-module" },
                         r.createElement(
                             i.Z,
-                            { "aria-label": b, role: "complementary", style: T.root },
+                            { "aria-label": b, role: "complementary", style: L.root },
                             r.createElement(n.ZP, { size: "headline1", weight: "heavy" }, w),
                             r.createElement(n.ZP, null, Z, " ", F[d]),
                             r.createElement(
@@ -433,18 +433,18 @@
                         ),
                     );
                 },
-                S = () => {
+                C = () => {
                     const { featureSwitches: e } = (0, k.QZ)(),
-                        t = (0, h.Z)();
+                        t = (0, y.Z)();
                     if (!t) return null;
-                    const a = (0, _.R)(t);
-                    return a && "Stripe" === a.payment_source && "Expire" === a.state && e.isTrue("subscriptions_management_renew_module_enabled") ? r.createElement(y.nO, { namespace: { component: "renew-subscription-module", element: "renew-button" } }, r.createElement(C, { activeRestId: a?.product?.rest_id })) : null;
+                    const a = (0, v.R)(t);
+                    return a && "Stripe" === a.payment_source && "Expire" === a.state && e.isTrue("subscriptions_management_renew_module_enabled") ? r.createElement(f.nO, { namespace: { component: "renew-subscription-module", element: "renew-button" } }, r.createElement(S, { activeRestId: a?.product?.rest_id })) : null;
                 },
                 K = () => {
                     const { featureSwitches: e, userClaims: t } = (0, k.QZ)();
-                    return e.isTrue("subscriptions_management_renew_module_api_enabled") && t.isAnyPremiumSubscriber() && !t.isAnyVerifiedOrgOrAffiliate() ? r.createElement(S, null) : null;
+                    return e.isTrue("subscriptions_management_renew_module_api_enabled") && t.isAnyPremiumSubscriber() && !t.isAnyVerifiedOrgOrAffiliate() ? r.createElement(C, null) : null;
                 },
-                T = o.default.create((e) => ({ root: { position: "relative", alignItems: "flex-start", gap: 10, flexDirection: "column", paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16 } }));
+                L = o.default.create((e) => ({ root: { position: "relative", alignItems: "flex-start", gap: 10, flexDirection: "column", paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16 } }));
         },
         282559: (e, t, a) => {
             a.d(t, { v: () => o });
@@ -540,7 +540,7 @@
             }
             const s = n.default.create((e) => ({ divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }));
         },
-        388941: (e, t, a) => {
+        394123: (e, t, a) => {
             a.r(t), a.d(t, { default: () => o });
             var r = a(202784),
                 i = a(890601),
@@ -548,20 +548,7 @@
                 l = a(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 4.25c-4.28 0-7.75 3.47-7.75 7.75s3.47 7.75 7.75 7.75c1.499 0 2.894-.424 4.078-1.158l1.318 2.125c-1.568.972-3.418 1.534-5.396 1.534-5.661 0-10.25-4.589-10.25-10.25S6.339 1.75 12 1.75 22.25 6.339 22.25 12c0 .534-.032 1.061-.08 1.549-.223 2.285-2.31 3.65-4.378 3.471-1.128-.098-2.114-.621-2.817-1.396-1.008 1.136-2.467 1.802-4.077 1.576-2.748-.386-4.354-3.149-3.973-5.86s2.686-4.924 5.434-4.538c.793.111 1.491.421 2.074.87l.038-.32 2.482.298-.584 4.861c-.122 1.015.621 1.93 1.64 2.019.927.081 1.605-.515 1.674-1.223.042-.426.068-.869.068-1.306 0-4.28-3.47-7.75-7.75-7.75H12zm.01 5.026c-1.08-.152-2.377.746-2.611 2.41s.765 2.885 1.845 3.036c1.08.152 2.377-.746 2.611-2.41.234-1.664-.765-2.884-1.845-3.036z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
-        416276: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => o });
-            var r = a(202784),
-                i = a(890601),
-                n = a(783427),
-                l = a(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.002 4h7.764c1.23 0 2.386.49 3.236 1.32.85-.83 2.006-1.32 3.236-1.32h7.764v16h-8.146c-.839 0-1.488.51-1.959 1.45h-1.789l-.171-.34C10.598 20.43 9.906 20 9.148 20H1.002V4zm10 3.26C10.53 6.48 9.685 6 8.766 6H3.002v12h6.146c.658 0 1.292.16 1.854.46V7.26zm2 11.21c.527-.29 1.143-.47 1.854-.47h6.146V6h-5.764c-.918 0-1.764.48-2.236 1.26v11.21zM19 11h-4V9h4v2zm0 4h-4v-2h4v2z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M15.636 11.671c2.079-.583 3.093-2.18 3.093-3.929 0-2.307-1.471-4.741-5.983-4.741H5.623V21h7.579c4.411 0 6.008-2.484 6.008-4.994 0-2.383-1.343-3.955-3.574-4.335zm-3.295-6.287c2.535 0 3.27 1.319 3.27 2.662 0 1.242-.583 2.611-3.27 2.611H8.69V5.384h3.651zM8.69 18.617v-5.628h4.208c2.231 0 3.194 1.166 3.194 2.738 0 1.547-.887 2.89-3.397 2.89H8.69z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
@@ -579,7 +566,7 @@
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
-        194417: (e, t, a) => {
+        266151: (e, t, a) => {
             a.r(t), a.d(t, { default: () => o });
             var r = a(202784),
                 i = a(890601),
@@ -587,7 +574,7 @@
                 l = a(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M16 3v8h-3V8.5H3v-3h10V3h3zm5 12.5h-9v3h9v-3zM10 21v-8H7v2.5H3v3h4V21h3zm8-12.5h3v-3h-3v3z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M10 5H2V3h8v2zM7 7H2v2h5V7zm12.94 4.946C19.48 15.918 16.1 19 12 19H8.19c-.12.988-.19 1.993-.19 3H6c0-4.669 1.29-9.39 3.95-12.97C12.62 5.421 16.38 2.9 23 3c.17 3.359-.21 7.147-3.06 8.946zM21 5.033c-4.16.276-7.29 2.275-9.45 5.187-1.43 1.929-2.43 4.268-3 6.78H12c2.68 0 4.95-1.76 5.72-4.188-.52.108-1.09.172-1.72.188h-1.5v-2H16c3.9 0 4.95-2.921 5-5.967z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
@@ -605,7 +592,7 @@
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
-        89085: (e, t, a) => {
+        748138: (e, t, a) => {
             a.r(t), a.d(t, { default: () => o });
             var r = a(202784),
                 i = a(890601),
@@ -613,12 +600,12 @@
                 l = a(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.905 6.516h-.423V4.354h.263c.564-.015 1.018-.126 1.361-.332s.61-.529.8-.972h2.093v7.949H5.471v-4.94c-.351.305-.873.457-1.567.457zm2.194 10.88c.403-.273.69-.542.861-.81.171-.265.257-.566.257-.9 0-.304-.087-.542-.262-.713-.175-.172-.426-.257-.753-.257-.35 0-.623.096-.821.285-.198.19-.297.457-.297.799 0 .145.016.296.046.457l-2.577-.228c-.023-.175-.034-.342-.034-.502 0-.547.16-1.018.479-1.413s.764-.699 1.334-.913c.57-.213 1.224-.319 1.961-.319 1.125 0 2.009.221 2.651.662.643.441.964 1.079.964 1.916 0 .532-.112.998-.336 1.397-.224.399-.584.766-1.078 1.1-.562.381-1.372.768-2.428 1.164H10v1.881H2.542v-1.687c1.642-.806 2.828-1.445 3.558-1.917zM22 6H12v2h10V6zm0 10H12v2h10v-2z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
-        98440: (e, t, a) => {
+        74514: (e, t, a) => {
             a.r(t), a.d(t, { default: () => o });
             var r = a(202784),
                 i = a(890601),
@@ -626,12 +613,12 @@
                 l = a(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 2C7.93 2 4.51 5.02 4 9.05L2.87 18H7.1c.46 2.28 2.48 4 4.9 4s4.44-1.72 4.9-4h4.24l-.64-5h-2.02l.38 3H5.13l.85-6.7C6.36 6.27 8.94 4 12 4V2zm0 18c-1.31 0-2.42-.83-2.83-2h5.66c-.41 1.17-1.52 2-2.83 2zm.3-12.29l1.41-1.42 1.76 1.76 4.29-4.72 1.48 1.34-5.7 6.28-3.24-3.24z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
-        226597: (e, t, a) => {
+        42635: (e, t, a) => {
             a.r(t), a.d(t, { default: () => o });
             var r = a(202784),
                 i = a(890601),
@@ -639,7 +626,33 @@
                 l = a(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 1.75C6.339 1.75 1.75 6.339 1.75 12S6.339 22.25 12 22.25 22.25 17.661 22.25 12 17.661 1.751 12 1.75zm.571 12.75v2.857L12 18.5l-.571-1.143V14.5H7.36l1.783-3.566V7.928c0-.789.64-1.429 1.429-1.429h2.857c.789 0 1.429.64 1.429 1.429v3.006l1.783 3.566h-4.069z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
+        },
+        474761: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => o });
+            var r = a(202784),
+                i = a(890601),
+                n = a(783427),
+                l = a(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, n.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M10.883 4H2v8.5h2.255c-.643 1.14-1.66 1.83-2.735 2.51l3.224 5.06c3.139-2 5.335-4.63 6.084-8.37.444-2.21.405-4.55.154-6.81L10.883 4zM4 10.5V6h5.081c.151 1.84.121 3.64-.213 5.31-.466 2.32-1.519 4.39-3.537 5.96l-1.083-1.7c1.43-1.18 2.662-3.14 2.662-5.07H4zM21.876 4h-8.882v8.5h2.255c-.644 1.14-1.66 1.83-2.735 2.51l3.224 5.06c3.138-2 5.334-4.63 6.083-8.37.444-2.21.406-4.55.154-6.81L21.876 4zm-6.883 6.5V6h5.082c.151 1.84.121 3.64-.214 5.31-.466 2.32-1.519 4.39-3.537 5.96l-1.083-1.7c1.43-1.18 2.663-3.14 2.663-5.07h-2.911z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
+        },
+        368761: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => o });
+            var r = a(202784),
+                i = a(890601),
+                n = a(783427),
+                l = a(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, n.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12.312 23.736c-.123 0-.246-.03-.358-.091-.241-.132-.392-.385-.392-.659v-.871c0-.414.336-.75.75-.75.256 0 .482.128.617.324 1.905-1.247 4.823-3.192 5.908-4.11 2.256-1.908 3.604-4.732 3.608-7.554 0-.414.336-.749.75-.749s.75.337.749.751c-.004 3.256-1.552 6.507-4.14 8.697-1.326 1.121-5.009 3.546-7.086 4.892-.124.08-.266.12-.408.12zm-2.557-1.897c1.697-1.082 6.672-4.317 8.048-5.48 1.902-1.609 3.04-3.976 3.043-6.329-.006-4.366-3.433-7.787-7.8-7.787l-4.149-.01c-4.375-.001-7.801 3.426-7.801 7.801 0 4.104 3.14 7.204 7.465 7.37.002 1.79.008 2.88.058 3.544-.041.101-.061.21-.055.322.009.178.081.344.198.471.111.241.283.241.552.241.163 0 .316-.053.441-.144zm3.289-18.097c3.529 0 6.298 2.763 6.302 6.287-.003 1.917-.941 3.855-2.512 5.184-1.03.871-4.478 3.16-6.771 4.645l-.002-3.175c0-.403-.319-.734-.722-.749l-.721-.027c-3.49-.135-6.022-2.604-6.022-5.872 0-3.534 2.768-6.302 6.299-6.302l4.149.01z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
@@ -657,32 +670,6 @@
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
-        487606: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => o });
-            var r = a(202784),
-                i = a(890601),
-                n = a(783427),
-                l = a(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M2 4c1.66 0 3-1.34 3-3h1c0 1.66 1.34 3 3 3v1C7.34 5 6 6.34 6 8H5c0-1.66-1.34-3-3-3V4zm7.89 4.9C11.26 7.53 12 5.35 12 2h2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1zm7.32 3.1c-.97-.42-1.81-.97-2.53-1.69-.71-.71-1.27-1.56-1.68-2.52-.42.96-.98 1.81-1.69 2.52-.72.72-1.56 1.27-2.53 1.69.97.42 1.81.97 2.53 1.69.71.71 1.27 1.56 1.69 2.52.41-.96.97-1.81 1.68-2.52.72-.72 1.56-1.27 2.53-1.69z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
-        946474: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => o });
-            var r = a(202784),
-                i = a(890601),
-                n = a(783427),
-                l = a(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M18.36 8h-2.68l.42-2.52C16.4 3.66 15 2 13.15 2c-1.07 0-2.06.57-2.59 1.51l-3 5.24c-.04.06-.08.11-.14.15C6.96 8.35 6.27 8 5.5 8H2v13h14.2c2.1 0 3.92-1.45 4.39-3.5l1.19-5.22C22.27 10.09 20.61 8 18.36 8zM6 19H4v-9h1.5c.27 0 .5.22.5.5V19zm13.83-7.17l-1.19 5.22C18.38 18.19 17.37 19 16.2 19H8v-8.16c.54-.2 1-.58 1.3-1.1l2.99-5.24c.18-.31.5-.5.86-.5.61 0 1.07.55.97 1.15l-.8 4.85h5.04c.97 0 1.68.89 1.47 1.83z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
         730895: (e, t, a) => {
             var r = a(821176);
             e.exports = function () {
@@ -693,4 +680,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.PremiumLoaders.5f067b8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.PremiumLoaders.81f6c0aa.js.map

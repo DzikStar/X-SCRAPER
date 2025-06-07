@@ -5,8 +5,8 @@
         676763: (e, a, l) => {
             l.d(a, { Z: () => o });
             var n,
-                i,
                 t,
+                i,
                 r,
                 s = {
                     argumentDefinitions: [
@@ -32,18 +32,18 @@
                                     kind: "LinkedField",
                                     name: "breakdown_segment",
                                     plural: !1,
-                                    selections: (i = [
+                                    selections: (t = [
                                         { alias: null, args: null, kind: "ScalarField", name: "segment_name", storageKey: null },
                                         { alias: null, args: null, kind: "ScalarField", name: "segment_value", storageKey: null },
                                     ]),
                                     storageKey: null,
                                 },
-                                (t = { alias: null, args: null, kind: "ScalarField", name: "metric_type", storageKey: null }),
+                                (i = { alias: null, args: null, kind: "ScalarField", name: "metric_type", storageKey: null }),
                                 (r = { alias: null, args: null, kind: "ScalarField", name: "metric_value", storageKey: null }),
                             ],
                             storageKey: 'audience_follow_status(requested_metrics:["UniqueImpressions"])',
                         },
-                        { alias: null, args: null, concreteType: "Ad", kind: "LinkedField", name: "ad", plural: !1, selections: [{ alias: null, args: null, concreteType: "AdCreative", kind: "LinkedField", name: "creative", plural: !1, selections: [{ alias: null, args: [{ fields: [{ kind: "Variable", name: "iso8601_time", variableName: "from_time" }], kind: "ObjectValue", name: "from_time" }, n, { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "to_time" }], kind: "ObjectValue", name: "to_time" }], concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_follow_status", plural: !1, selections: [{ alias: null, args: null, concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "items", plural: !0, selections: [{ alias: null, args: null, concreteType: "HubbleBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: i, storageKey: null }, t, r], storageKey: null }], storageKey: null }], storageKey: null }], storageKey: null },
+                        { alias: null, args: null, concreteType: "Ad", kind: "LinkedField", name: "ad", plural: !1, selections: [{ alias: null, args: null, concreteType: "AdCreative", kind: "LinkedField", name: "creative", plural: !1, selections: [{ alias: null, args: [{ fields: [{ kind: "Variable", name: "iso8601_time", variableName: "from_time" }], kind: "ObjectValue", name: "from_time" }, n, { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "to_time" }], kind: "ObjectValue", name: "to_time" }], concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_follow_status", plural: !1, selections: [{ alias: null, args: null, concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "items", plural: !0, selections: [{ alias: null, args: null, concreteType: "HubbleBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: t, storageKey: null }, i, r], storageKey: null }], storageKey: null }], storageKey: null }], storageKey: null },
                     ],
                     type: "Tweet",
                     abstractKey: null,
@@ -54,8 +54,8 @@
         175989: (e, a, l) => {
             l.d(a, { Z: () => o });
             var n,
-                i,
                 t,
+                i,
                 r,
                 s = {
                     argumentDefinitions: [
@@ -66,8 +66,8 @@
                     metadata: null,
                     name: "AgeBreakdown_metrics",
                     selections: [
-                        { alias: null, args: [(n = { kind: "Literal", name: "requested_metrics", value: ["UniqueImpressions"] })], concreteType: "AnalyticsAudienceMetricsTotalValue", kind: "LinkedField", name: "audience_age", plural: !0, selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "metric_type", storageKey: null }), (t = { alias: null, args: null, kind: "ScalarField", name: "metric_value", storageKey: null }), { alias: null, args: null, concreteType: "AnalyticsAudienceBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: (r = [{ alias: null, args: null, kind: "ScalarField", name: "segment_name", storageKey: null }]), storageKey: null }], storageKey: 'audience_age(requested_metrics:["UniqueImpressions"])' },
-                        { alias: null, args: null, concreteType: "Ad", kind: "LinkedField", name: "ad", plural: !1, selections: [{ alias: null, args: null, concreteType: "AdCreative", kind: "LinkedField", name: "creative", plural: !1, selections: [{ alias: null, args: [{ fields: [{ kind: "Variable", name: "iso8601_time", variableName: "from_time" }], kind: "ObjectValue", name: "from_time" }, n, { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "to_time" }], kind: "ObjectValue", name: "to_time" }], concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_age", plural: !1, selections: [{ alias: null, args: null, concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "items", plural: !0, selections: [i, t, { alias: null, args: null, concreteType: "HubbleBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: r, storageKey: null }], storageKey: null }], storageKey: null }], storageKey: null }], storageKey: null },
+                        { alias: null, args: [(n = { kind: "Literal", name: "requested_metrics", value: ["UniqueImpressions"] })], concreteType: "AnalyticsAudienceMetricsTotalValue", kind: "LinkedField", name: "audience_age", plural: !0, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "metric_type", storageKey: null }), (i = { alias: null, args: null, kind: "ScalarField", name: "metric_value", storageKey: null }), { alias: null, args: null, concreteType: "AnalyticsAudienceBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: (r = [{ alias: null, args: null, kind: "ScalarField", name: "segment_name", storageKey: null }]), storageKey: null }], storageKey: 'audience_age(requested_metrics:["UniqueImpressions"])' },
+                        { alias: null, args: null, concreteType: "Ad", kind: "LinkedField", name: "ad", plural: !1, selections: [{ alias: null, args: null, concreteType: "AdCreative", kind: "LinkedField", name: "creative", plural: !1, selections: [{ alias: null, args: [{ fields: [{ kind: "Variable", name: "iso8601_time", variableName: "from_time" }], kind: "ObjectValue", name: "from_time" }, n, { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "to_time" }], kind: "ObjectValue", name: "to_time" }], concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_age", plural: !1, selections: [{ alias: null, args: null, concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "items", plural: !0, selections: [t, i, { alias: null, args: null, concreteType: "HubbleBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: r, storageKey: null }], storageKey: null }], storageKey: null }], storageKey: null }], storageKey: null },
                     ],
                     type: "Tweet",
                     abstractKey: null,
@@ -78,14 +78,14 @@
         651868: (e, a, l) => {
             l.d(a, { Z: () => m });
             var n,
-                i,
                 t,
+                i,
                 r,
                 s,
                 o,
                 d,
-                c,
-                u = {
+                u,
+                c = {
                     argumentDefinitions: [
                         { kind: "RootArgument", name: "from_time" },
                         { kind: "RootArgument", name: "to_time" },
@@ -97,9 +97,9 @@
                         { args: null, kind: "FragmentSpread", name: "GenderBreakdown_metrics" },
                         { args: null, kind: "FragmentSpread", name: "AgeBreakdown_metrics" },
                         { args: null, kind: "FragmentSpread", name: "CountriesBreakdown_metrics" },
-                        { alias: null, args: (i = [(n = { kind: "Literal", name: "requested_metrics", value: ["UniqueImpressions"] })]), concreteType: "AnalyticsAudienceMetricsTotalValue", kind: "LinkedField", name: "audience_gender", plural: !0, selections: (o = [(t = { alias: null, args: null, kind: "ScalarField", name: "metric_type", storageKey: null }), (r = { alias: null, args: null, kind: "ScalarField", name: "metric_value", storageKey: null }), { alias: null, args: null, concreteType: "AnalyticsAudienceBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: (s = [{ alias: null, args: null, kind: "ScalarField", name: "segment_name", storageKey: null }]), storageKey: null }]), storageKey: 'audience_gender(requested_metrics:["UniqueImpressions"])' },
-                        { alias: null, args: i, concreteType: "AnalyticsAudienceMetricsTotalValue", kind: "LinkedField", name: "audience_age", plural: !0, selections: o, storageKey: 'audience_age(requested_metrics:["UniqueImpressions"])' },
-                        { alias: null, args: i, concreteType: "AnalyticsAudienceMetricsTotalValue", kind: "LinkedField", name: "audience_top_countries", plural: !0, selections: o, storageKey: 'audience_top_countries(requested_metrics:["UniqueImpressions"])' },
+                        { alias: null, args: (t = [(n = { kind: "Literal", name: "requested_metrics", value: ["UniqueImpressions"] })]), concreteType: "AnalyticsAudienceMetricsTotalValue", kind: "LinkedField", name: "audience_gender", plural: !0, selections: (o = [(i = { alias: null, args: null, kind: "ScalarField", name: "metric_type", storageKey: null }), (r = { alias: null, args: null, kind: "ScalarField", name: "metric_value", storageKey: null }), { alias: null, args: null, concreteType: "AnalyticsAudienceBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: (s = [{ alias: null, args: null, kind: "ScalarField", name: "segment_name", storageKey: null }]), storageKey: null }]), storageKey: 'audience_gender(requested_metrics:["UniqueImpressions"])' },
+                        { alias: null, args: t, concreteType: "AnalyticsAudienceMetricsTotalValue", kind: "LinkedField", name: "audience_age", plural: !0, selections: o, storageKey: 'audience_age(requested_metrics:["UniqueImpressions"])' },
+                        { alias: null, args: t, concreteType: "AnalyticsAudienceMetricsTotalValue", kind: "LinkedField", name: "audience_top_countries", plural: !0, selections: o, storageKey: 'audience_top_countries(requested_metrics:["UniqueImpressions"])' },
                         {
                             alias: null,
                             args: null,
@@ -116,9 +116,9 @@
                                     name: "creative",
                                     plural: !1,
                                     selections: [
-                                        { alias: null, args: (d = [{ fields: [{ kind: "Variable", name: "iso8601_time", variableName: "from_time" }], kind: "ObjectValue", name: "from_time" }, n, { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "to_time" }], kind: "ObjectValue", name: "to_time" }]), concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_gender", plural: !1, selections: (c = [{ alias: null, args: null, concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "items", plural: !0, selections: [t, r, { alias: null, args: null, concreteType: "HubbleBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: s, storageKey: null }], storageKey: null }]), storageKey: null },
-                                        { alias: null, args: d, concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_age", plural: !1, selections: c, storageKey: null },
-                                        { alias: null, args: d, concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_top_countries", plural: !1, selections: c, storageKey: null },
+                                        { alias: null, args: (d = [{ fields: [{ kind: "Variable", name: "iso8601_time", variableName: "from_time" }], kind: "ObjectValue", name: "from_time" }, n, { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "to_time" }], kind: "ObjectValue", name: "to_time" }]), concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_gender", plural: !1, selections: (u = [{ alias: null, args: null, concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "items", plural: !0, selections: [i, r, { alias: null, args: null, concreteType: "HubbleBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: s, storageKey: null }], storageKey: null }]), storageKey: null },
+                                        { alias: null, args: d, concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_age", plural: !1, selections: u, storageKey: null },
+                                        { alias: null, args: d, concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_top_countries", plural: !1, selections: u, storageKey: null },
                                     ],
                                     storageKey: null,
                                 },
@@ -129,13 +129,13 @@
                     type: "Tweet",
                     abstractKey: null,
                 };
-            u.hash = "e74845c1ab8481ca8462e543c9369b99";
-            const m = u;
+            c.hash = "e74845c1ab8481ca8462e543c9369b99";
+            const m = c;
         },
         173265: (e, a, l) => {
-            l.d(a, { Z: () => t });
+            l.d(a, { Z: () => i });
             var n,
-                i = {
+                t = {
                     argumentDefinitions: [
                         { kind: "RootArgument", name: "from_time" },
                         { kind: "RootArgument", name: "requested_organic_metrics" },
@@ -214,11 +214,11 @@
                     type: "Tweet",
                     abstractKey: null,
                 };
-            i.hash = "267e84804c59b2debdc9d5603ec77768";
-            const t = i;
+            t.hash = "267e84804c59b2debdc9d5603ec77768";
+            const i = t;
         },
         470911: (e, a, l) => {
-            l.d(a, { Z: () => i });
+            l.d(a, { Z: () => t });
             var n = {
                 argumentDefinitions: [
                     { kind: "RootArgument", name: "first_48_hours_time" },
@@ -263,13 +263,13 @@
                 abstractKey: null,
                 hash: "10852888ca78590ac785df9ef1f10f77",
             };
-            const i = n;
+            const t = n;
         },
         241545: (e, a, l) => {
             l.d(a, { Z: () => o });
             var n,
-                i,
                 t,
+                i,
                 r,
                 s = {
                     argumentDefinitions: [
@@ -280,8 +280,8 @@
                     metadata: null,
                     name: "GenderBreakdown_metrics",
                     selections: [
-                        { alias: null, args: [(n = { kind: "Literal", name: "requested_metrics", value: ["UniqueImpressions"] })], concreteType: "AnalyticsAudienceMetricsTotalValue", kind: "LinkedField", name: "audience_gender", plural: !0, selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "metric_type", storageKey: null }), (t = { alias: null, args: null, kind: "ScalarField", name: "metric_value", storageKey: null }), { alias: null, args: null, concreteType: "AnalyticsAudienceBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: (r = [{ alias: null, args: null, kind: "ScalarField", name: "segment_name", storageKey: null }]), storageKey: null }], storageKey: 'audience_gender(requested_metrics:["UniqueImpressions"])' },
-                        { alias: null, args: null, concreteType: "Ad", kind: "LinkedField", name: "ad", plural: !1, selections: [{ alias: null, args: null, concreteType: "AdCreative", kind: "LinkedField", name: "creative", plural: !1, selections: [{ alias: null, args: [{ fields: [{ kind: "Variable", name: "iso8601_time", variableName: "from_time" }], kind: "ObjectValue", name: "from_time" }, n, { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "to_time" }], kind: "ObjectValue", name: "to_time" }], concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_gender", plural: !1, selections: [{ alias: null, args: null, concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "items", plural: !0, selections: [i, t, { alias: null, args: null, concreteType: "HubbleBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: r, storageKey: null }], storageKey: null }], storageKey: null }], storageKey: null }], storageKey: null },
+                        { alias: null, args: [(n = { kind: "Literal", name: "requested_metrics", value: ["UniqueImpressions"] })], concreteType: "AnalyticsAudienceMetricsTotalValue", kind: "LinkedField", name: "audience_gender", plural: !0, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "metric_type", storageKey: null }), (i = { alias: null, args: null, kind: "ScalarField", name: "metric_value", storageKey: null }), { alias: null, args: null, concreteType: "AnalyticsAudienceBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: (r = [{ alias: null, args: null, kind: "ScalarField", name: "segment_name", storageKey: null }]), storageKey: null }], storageKey: 'audience_gender(requested_metrics:["UniqueImpressions"])' },
+                        { alias: null, args: null, concreteType: "Ad", kind: "LinkedField", name: "ad", plural: !1, selections: [{ alias: null, args: null, concreteType: "AdCreative", kind: "LinkedField", name: "creative", plural: !1, selections: [{ alias: null, args: [{ fields: [{ kind: "Variable", name: "iso8601_time", variableName: "from_time" }], kind: "ObjectValue", name: "from_time" }, n, { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "to_time" }], kind: "ObjectValue", name: "to_time" }], concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_gender", plural: !1, selections: [{ alias: null, args: null, concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "items", plural: !0, selections: [t, i, { alias: null, args: null, concreteType: "HubbleBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: r, storageKey: null }], storageKey: null }], storageKey: null }], storageKey: null }], storageKey: null },
                     ],
                     type: "Tweet",
                     abstractKey: null,
@@ -290,7 +290,7 @@
             const o = s;
         },
         743738: (e, a, l) => {
-            l.d(a, { Z: () => i });
+            l.d(a, { Z: () => t });
             var n = {
                 argumentDefinitions: [
                     { kind: "RootArgument", name: "from_time" },
@@ -344,10 +344,10 @@
                 abstractKey: null,
                 hash: "1f49ea31fa2ae656b97ebe5bc41aa27b",
             };
-            const i = n;
+            const t = n;
         },
         716754: (e, a, l) => {
-            l.d(a, { Z: () => i });
+            l.d(a, { Z: () => t });
             var n = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -389,12 +389,12 @@
                 abstractKey: null,
                 hash: "1d907cbd3c3fc1eb168bcef6aa2b19a6",
             };
-            const i = n;
+            const t = n;
         },
         573519: (e, a, l) => {
-            l.d(a, { Z: () => t });
+            l.d(a, { Z: () => i });
             var n,
-                i = {
+                t = {
                     argumentDefinitions: [
                         { kind: "RootArgument", name: "from_time" },
                         { kind: "RootArgument", name: "to_time" },
@@ -456,20 +456,20 @@
                     type: "Tweet",
                     abstractKey: null,
                 };
-            i.hash = "3cb8d633319a8d17fc6409ac808b0a30";
-            const t = i;
+            t.hash = "3cb8d633319a8d17fc6409ac808b0a30";
+            const i = t;
         },
         999325: (e, a, l) => {
             l.d(a, { Z: () => Z });
             var n,
-                i,
                 t,
+                i,
                 r,
                 s,
                 o,
                 d,
-                c,
                 u,
+                c,
                 m,
                 g,
                 k,
@@ -477,24 +477,24 @@
                 y,
                 _,
                 b,
-                T,
                 f,
+                T,
                 F,
                 h,
                 K,
+                w,
                 V,
                 L,
-                w,
                 v,
                 A,
                 S,
                 C,
                 B,
-                q,
                 M,
+                q,
                 I = {
                     fragment: {
-                        argumentDefinitions: [(n = { defaultValue: null, kind: "LocalArgument", name: "first_48_hours_time" }), (i = { defaultValue: null, kind: "LocalArgument", name: "from_time" }), (t = { defaultValue: null, kind: "LocalArgument", name: "requested_organic_metrics" }), (r = { defaultValue: null, kind: "LocalArgument", name: "requested_promoted_metrics" }), (s = { defaultValue: null, kind: "LocalArgument", name: "restId" }), (o = { defaultValue: null, kind: "LocalArgument", name: "to_time" })],
+                        argumentDefinitions: [(n = { defaultValue: null, kind: "LocalArgument", name: "first_48_hours_time" }), (t = { defaultValue: null, kind: "LocalArgument", name: "from_time" }), (i = { defaultValue: null, kind: "LocalArgument", name: "requested_organic_metrics" }), (r = { defaultValue: null, kind: "LocalArgument", name: "requested_promoted_metrics" }), (s = { defaultValue: null, kind: "LocalArgument", name: "restId" }), (o = { defaultValue: null, kind: "LocalArgument", name: "to_time" })],
                         kind: "Fragment",
                         metadata: null,
                         name: "TweetActivityQuery",
@@ -509,7 +509,7 @@
                                 kind: "LinkedField",
                                 name: "tweet_result_by_rest_id",
                                 plural: !1,
-                                selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(c = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), (u = { args: null, kind: "FragmentSpread", name: "LikeRetweetReplyAnalytics_metrics" }), (m = { args: null, kind: "FragmentSpread", name: "DataPointsGrid_metrics" }), (g = { args: null, kind: "FragmentSpread", name: "PromotionInfo_metrics" }), (k = { args: null, kind: "FragmentSpread", name: "VideoMetrics_metrics" }), (p = { args: null, kind: "FragmentSpread", name: "AudienceMetrics_metrics" }), (y = { args: null, kind: "FragmentSpread", name: "PromotionInfo_campaignInfo" }), { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "Tweet", kind: "LinkedField", name: "tweet", plural: !1, selections: [u, m, g, k, p, y], storageKey: null }], type: "TweetWithVisibilityResults", abstractKey: null }], storageKey: null }],
+                                selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(u = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), (c = { args: null, kind: "FragmentSpread", name: "LikeRetweetReplyAnalytics_metrics" }), (m = { args: null, kind: "FragmentSpread", name: "DataPointsGrid_metrics" }), (g = { args: null, kind: "FragmentSpread", name: "PromotionInfo_metrics" }), (k = { args: null, kind: "FragmentSpread", name: "VideoMetrics_metrics" }), (p = { args: null, kind: "FragmentSpread", name: "AudienceMetrics_metrics" }), (y = { args: null, kind: "FragmentSpread", name: "PromotionInfo_campaignInfo" }), { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "Tweet", kind: "LinkedField", name: "tweet", plural: !1, selections: [c, m, g, k, p, y], storageKey: null }], type: "TweetWithVisibilityResults", abstractKey: null }], storageKey: null }],
                                 storageKey: null,
                             },
                         ],
@@ -518,7 +518,7 @@
                     },
                     kind: "Request",
                     operation: {
-                        argumentDefinitions: [s, i, o, n, t, r],
+                        argumentDefinitions: [s, t, o, n, i, r],
                         kind: "Operation",
                         name: "TweetActivityQuery",
                         selections: [
@@ -538,10 +538,10 @@
                                         name: "result",
                                         plural: !1,
                                         selections: [
-                                            c,
+                                            u,
                                             {
                                                 kind: "InlineFragment",
-                                                selections: (M = [
+                                                selections: (q = [
                                                     {
                                                         alias: null,
                                                         args: null,
@@ -558,15 +558,15 @@
                                                                 name: "creative",
                                                                 plural: !1,
                                                                 selections: [
-                                                                    { alias: "like_retweet_replies", args: [(_ = { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "from_time" }], kind: "ObjectValue", name: "from_time" }), { kind: "Literal", name: "requested_metrics", value: ["Likes", "Retweets", "Replies"] }, (b = { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "to_time" }], kind: "ObjectValue", name: "to_time" })], concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "metrics_total", plural: !0, selections: (F = [(T = { alias: null, args: null, kind: "ScalarField", name: "metric_type", storageKey: null }), (f = { alias: null, args: null, kind: "ScalarField", name: "metric_value", storageKey: null })]), storageKey: null },
+                                                                    { alias: "like_retweet_replies", args: [(_ = { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "from_time" }], kind: "ObjectValue", name: "from_time" }), { kind: "Literal", name: "requested_metrics", value: ["Likes", "Retweets", "Replies"] }, (b = { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "to_time" }], kind: "ObjectValue", name: "to_time" })], concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "metrics_total", plural: !0, selections: (F = [(f = { alias: null, args: null, kind: "ScalarField", name: "metric_type", storageKey: null }), (T = { alias: null, args: null, kind: "ScalarField", name: "metric_value", storageKey: null })]), storageKey: null },
                                                                     (h = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
-                                                                    { alias: null, args: (V = [_, (K = { kind: "Literal", name: "requested_metrics", value: ["UniqueImpressions"] }), b]), concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_follow_status", plural: !1, selections: [{ alias: null, args: null, concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "items", plural: !0, selections: [{ alias: null, args: null, concreteType: "HubbleBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: (w = [(L = { alias: null, args: null, kind: "ScalarField", name: "segment_name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "segment_value", storageKey: null }]), storageKey: null }, T, f], storageKey: null }], storageKey: null },
+                                                                    { alias: null, args: (w = [_, (K = { kind: "Literal", name: "requested_metrics", value: ["UniqueImpressions"] }), b]), concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_follow_status", plural: !1, selections: [{ alias: null, args: null, concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "items", plural: !0, selections: [{ alias: null, args: null, concreteType: "HubbleBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: (L = [(V = { alias: null, args: null, kind: "ScalarField", name: "segment_name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "segment_value", storageKey: null }]), storageKey: null }, f, T], storageKey: null }], storageKey: null },
                                                                     { alias: "datapoints_grid", args: [_, { kind: "Variable", name: "requested_metrics", variableName: "requested_promoted_metrics" }, b], concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "metrics_total", plural: !0, selections: F, storageKey: null },
                                                                     { alias: "promotion_info", args: [_, { kind: "Literal", name: "requested_metrics", value: ["Impressions", "Engagements"] }, b], concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "metrics_total", plural: !0, selections: F, storageKey: null },
                                                                     { alias: "video", args: [_, (v = { kind: "Literal", name: "requested_metrics", value: ["VideoViews", "UniqueVideoViews", "VideoStarts", "VideoPlayed25Percent", "VideoPlayed50Percent", "VideoPlayed75Percent", "VideoCompletions"] }), b], concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "metrics_total", plural: !0, selections: F, storageKey: null },
-                                                                    { alias: null, args: V, concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_gender", plural: !1, selections: (S = [{ alias: null, args: null, concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "items", plural: !0, selections: [T, f, { alias: null, args: null, concreteType: "HubbleBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: (A = [L]), storageKey: null }], storageKey: null }]), storageKey: null },
-                                                                    { alias: null, args: V, concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_age", plural: !1, selections: S, storageKey: null },
-                                                                    { alias: null, args: V, concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_top_countries", plural: !1, selections: S, storageKey: null },
+                                                                    { alias: null, args: w, concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_gender", plural: !1, selections: (S = [{ alias: null, args: null, concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "items", plural: !0, selections: [f, T, { alias: null, args: null, concreteType: "HubbleBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: (A = [V]), storageKey: null }], storageKey: null }]), storageKey: null },
+                                                                    { alias: null, args: w, concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_age", plural: !1, selections: S, storageKey: null },
+                                                                    { alias: null, args: w, concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_top_countries", plural: !1, selections: S, storageKey: null },
                                                                 ],
                                                                 storageKey: null,
                                                             },
@@ -588,19 +588,19 @@
                                                         ],
                                                         storageKey: null,
                                                     },
-                                                    { alias: null, args: (B = [K]), concreteType: "AnalyticsAudienceMetricsTotalValue", kind: "LinkedField", name: "audience_follow_status", plural: !0, selections: [{ alias: null, args: null, concreteType: "AnalyticsAudienceBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: w, storageKey: null }, T, f], storageKey: 'audience_follow_status(requested_metrics:["UniqueImpressions"])' },
+                                                    { alias: null, args: (B = [K]), concreteType: "AnalyticsAudienceMetricsTotalValue", kind: "LinkedField", name: "audience_follow_status", plural: !0, selections: [{ alias: null, args: null, concreteType: "AnalyticsAudienceBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: L, storageKey: null }, f, T], storageKey: 'audience_follow_status(requested_metrics:["UniqueImpressions"])' },
                                                     { alias: "datapoints_grid", args: [{ kind: "Variable", name: "requested_metrics", variableName: "requested_organic_metrics" }], concreteType: "AnayticsMetricsTotalValue", kind: "LinkedField", name: "organic_metrics_total", plural: !0, selections: F, storageKey: null },
                                                     { alias: "promotion_info", args: [C], concreteType: "AnayticsMetricsTotalValue", kind: "LinkedField", name: "organic_metrics_total", plural: !0, selections: F, storageKey: 'organic_metrics_total(requested_metrics:["Impressions"])' },
                                                     { alias: "video", args: [v], concreteType: "AnayticsMetricsTotalValue", kind: "LinkedField", name: "organic_metrics_total", plural: !0, selections: F, storageKey: 'organic_metrics_total(requested_metrics:["VideoViews","UniqueVideoViews","VideoStarts","VideoPlayed25Percent","VideoPlayed50Percent","VideoPlayed75Percent","VideoCompletions"])' },
-                                                    { alias: null, args: B, concreteType: "AnalyticsAudienceMetricsTotalValue", kind: "LinkedField", name: "audience_gender", plural: !0, selections: (q = [T, f, { alias: null, args: null, concreteType: "AnalyticsAudienceBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: A, storageKey: null }]), storageKey: 'audience_gender(requested_metrics:["UniqueImpressions"])' },
-                                                    { alias: null, args: B, concreteType: "AnalyticsAudienceMetricsTotalValue", kind: "LinkedField", name: "audience_age", plural: !0, selections: q, storageKey: 'audience_age(requested_metrics:["UniqueImpressions"])' },
-                                                    { alias: null, args: B, concreteType: "AnalyticsAudienceMetricsTotalValue", kind: "LinkedField", name: "audience_top_countries", plural: !0, selections: q, storageKey: 'audience_top_countries(requested_metrics:["UniqueImpressions"])' },
+                                                    { alias: null, args: B, concreteType: "AnalyticsAudienceMetricsTotalValue", kind: "LinkedField", name: "audience_gender", plural: !0, selections: (M = [f, T, { alias: null, args: null, concreteType: "AnalyticsAudienceBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: A, storageKey: null }]), storageKey: 'audience_gender(requested_metrics:["UniqueImpressions"])' },
+                                                    { alias: null, args: B, concreteType: "AnalyticsAudienceMetricsTotalValue", kind: "LinkedField", name: "audience_age", plural: !0, selections: M, storageKey: 'audience_age(requested_metrics:["UniqueImpressions"])' },
+                                                    { alias: null, args: B, concreteType: "AnalyticsAudienceMetricsTotalValue", kind: "LinkedField", name: "audience_top_countries", plural: !0, selections: M, storageKey: 'audience_top_countries(requested_metrics:["UniqueImpressions"])' },
                                                     h,
                                                 ]),
                                                 type: "Tweet",
                                                 abstractKey: null,
                                             },
-                                            { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "Tweet", kind: "LinkedField", name: "tweet", plural: !1, selections: M, storageKey: null }], type: "TweetWithVisibilityResults", abstractKey: null },
+                                            { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "Tweet", kind: "LinkedField", name: "tweet", plural: !1, selections: q, storageKey: null }], type: "TweetWithVisibilityResults", abstractKey: null },
                                         ],
                                         storageKey: null,
                                     },
@@ -618,8 +618,8 @@
         393416: (e, a, l) => {
             l.d(a, { Z: () => r });
             var n,
-                i,
-                t = {
+                t,
+                i = {
                     argumentDefinitions: [
                         { kind: "RootArgument", name: "from_time" },
                         { kind: "RootArgument", name: "to_time" },
@@ -635,31 +635,31 @@
                             kind: "LinkedField",
                             name: "organic_metrics_total",
                             plural: !0,
-                            selections: (i = [
+                            selections: (t = [
                                 { alias: null, args: null, kind: "ScalarField", name: "metric_type", storageKey: null },
                                 { alias: null, args: null, kind: "ScalarField", name: "metric_value", storageKey: null },
                             ]),
                             storageKey: 'organic_metrics_total(requested_metrics:["VideoViews","UniqueVideoViews","VideoStarts","VideoPlayed25Percent","VideoPlayed50Percent","VideoPlayed75Percent","VideoCompletions"])',
                         },
-                        { alias: null, args: null, concreteType: "Ad", kind: "LinkedField", name: "ad", plural: !1, selections: [{ alias: null, args: null, concreteType: "AdCreative", kind: "LinkedField", name: "creative", plural: !1, selections: [{ alias: "video", args: [{ fields: [{ kind: "Variable", name: "iso8601_time", variableName: "from_time" }], kind: "ObjectValue", name: "from_time" }, n, { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "to_time" }], kind: "ObjectValue", name: "to_time" }], concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "metrics_total", plural: !0, selections: i, storageKey: null }], storageKey: null }], storageKey: null },
+                        { alias: null, args: null, concreteType: "Ad", kind: "LinkedField", name: "ad", plural: !1, selections: [{ alias: null, args: null, concreteType: "AdCreative", kind: "LinkedField", name: "creative", plural: !1, selections: [{ alias: "video", args: [{ fields: [{ kind: "Variable", name: "iso8601_time", variableName: "from_time" }], kind: "ObjectValue", name: "from_time" }, n, { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "to_time" }], kind: "ObjectValue", name: "to_time" }], concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "metrics_total", plural: !0, selections: t, storageKey: null }], storageKey: null }], storageKey: null },
                     ],
                     type: "Tweet",
                     abstractKey: null,
                 };
-            t.hash = "28fb2130ff421a25cacd718a50d9c8c2";
-            const r = t;
+            i.hash = "28fb2130ff421a25cacd718a50d9c8c2";
+            const r = i;
         },
         625661: (e, a, l) => {
             l.d(a, { ZP: () => m });
             var n = l(202784),
-                i = l(614983),
-                t = l.n(i),
+                t = l(614983),
+                i = l.n(t),
                 r = l(325686),
                 s = l(370006),
                 o = l(786998),
                 d = l(929028),
-                c = l(386802);
-            function u(e, a, l) {
+                u = l(386802);
+            function c(e, a, l) {
                 return e || (!a && l ? "fixed" : void 0);
             }
             class m extends n.Component {
@@ -667,7 +667,7 @@
                     super(...e),
                         (this._handleBackClick = () => {
                             const { history: e, onBackClick: a } = this.props;
-                            t()(a || e, "Either onBackClick must be specified, or history should be supplied"), a ? a(this.goBack) : this.goBack();
+                            i()(a || e, "Either onBackClick must be specified, or history should be supplied"), a ? a(this.goBack) : this.goBack();
                         }),
                         (this.goBack = () => {
                             const { backLocation: e, history: a } = this.props;
@@ -675,13 +675,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: a, centeredLogo: l, fixed: i, hideBackButton: t, isFullWidth: r, isLarge: d, leftControl: c, middleControl: m, position: g, rightControl: k, secondaryBar: p, style: y, subtitle: _, title: b, titleDomId: T, titleIconCell: f, titleIconCellSize: F, withBackground: h, withWideContainer: K } = this.props,
-                        { isModal: V } = this.context,
-                        L = t ? c : n.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        w = (function (e, a, l) {
+                    const { backButtonType: e, centerTitle: a, centeredLogo: l, fixed: t, hideBackButton: i, isFullWidth: r, isLarge: d, leftControl: u, middleControl: m, position: g, rightControl: k, secondaryBar: p, style: y, subtitle: _, title: b, titleDomId: f, titleIconCell: T, titleIconCellSize: F, withBackground: h, withWideContainer: K } = this.props,
+                        { isModal: w } = this.context,
+                        V = i ? u : n.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        L = (function (e, a, l) {
                             return e && !(a && l);
-                        })(!!h, V, !!p);
-                    return n.createElement(n.Fragment, null, n.createElement(o.Z, { centerTitle: a, centeredLogo: l, isFullWidth: r, isLarge: d, leftControl: L, middleControl: m, position: u(g, V, i), rightControl: k, style: y, subtitle: _, title: b, titleDomId: T, titleIconCell: f, titleIconCellSize: F, withBackground: w, withWideContainer: K }), p || null);
+                        })(!!h, w, !!p);
+                    return n.createElement(n.Fragment, null, n.createElement(o.Z, { centerTitle: a, centeredLogo: l, isFullWidth: r, isLarge: d, leftControl: V, middleControl: m, position: c(g, w, t), rightControl: k, style: y, subtitle: _, title: b, titleDomId: f, titleIconCell: T, titleIconCellSize: F, withBackground: L, withWideContainer: K }), p || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -690,27 +690,27 @@
                     return a ? n.createElement(r.Z, { style: !!e && l }, this._renderContent()) : this._renderContent();
                 }
             }
-            (m.contextType = c.Z), (m.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
+            (m.contextType = u.Z), (m.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
         980407: (e, a, l) => {
             l.d(a, { Z: () => p, w: () => g });
             var n = l(202784),
-                i = l(325686),
-                t = l(108362),
+                t = l(325686),
+                i = l(108362),
                 r = l(386802),
                 s = l(392237),
                 o = l(652904),
                 d = l(555079),
-                c = l(625661),
-                u = l(449067),
+                u = l(625661),
+                c = l(449067),
                 m = l(715601);
             class g extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: a, backButtonType: l, backLocation: t, centerTitle: r, hideBackButton: s, history: o, isFullWidth: u, isLarge: m, middleControl: g, onBackClick: p, rightControl: y, secondaryBar: _, subtitle: b, title: T } = this.props,
-                                { isModal: f } = this.context;
-                            return n.createElement(i.Z, { style: f ? [k.childViewAppBarRoot, k.appBarZindex] : k.appBarZindex }, n.createElement(c.ZP, { backButtonType: l || (f ? "close" : "back"), backLocation: t, centerTitle: r, fixed: !f, hideBackButton: s, history: o, isFullWidth: u, isLarge: m, middleControl: g, onBackClick: p, ref: e, rightControl: y, secondaryBar: _, style: [f && k.appBarModal, a], subtitle: b, title: T, titleDomId: d.Q_ }));
+                            const { appBarRef: e, appBarStyle: a, backButtonType: l, backLocation: i, centerTitle: r, hideBackButton: s, history: o, isFullWidth: c, isLarge: m, middleControl: g, onBackClick: p, rightControl: y, secondaryBar: _, subtitle: b, title: f } = this.props,
+                                { isModal: T } = this.context;
+                            return n.createElement(t.Z, { style: T ? [k.childViewAppBarRoot, k.appBarZindex] : k.appBarZindex }, n.createElement(u.ZP, { backButtonType: l || (T ? "close" : "back"), backLocation: i, centerTitle: r, fixed: !T, hideBackButton: s, history: o, isFullWidth: c, isLarge: m, middleControl: g, onBackClick: p, ref: e, rightControl: y, secondaryBar: _, style: [T && k.appBarModal, a], subtitle: b, title: f, titleDomId: d.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: a } = this.props,
@@ -719,10 +719,10 @@
                         });
                 }
                 render() {
-                    const { "aria-hidden": e, bottomBar: a, children: l, containerStyle: r, documentTitle: s, isFullWidth: d, isLarge: c, renderHeader: g, title: p, withoutBottomBarMobile: y } = this.props,
+                    const { "aria-hidden": e, bottomBar: a, children: l, containerStyle: r, documentTitle: s, isFullWidth: d, isLarge: u, renderHeader: g, title: p, withoutBottomBarMobile: y } = this.props,
                         { isModal: _ } = this.context,
                         b = g ? g(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return n.createElement(o.Z, null, n.createElement(u.Z.Configure, { documentTitle: s, headerless: !0, title: p }), n.createElement(i.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [k.root, _ && k.rootModal] }, !_ && b, n.createElement(t.Z, { isFullWidth: d, isLarge: c, style: [k.container, _ && k.containerModal, r] }, _ ? n.createElement(m.Z, { style: k.viewport }, b, l) : l), a ? n.createElement(i.Z, { style: [k.bottomBarModal, !_ && !y && k.bottomBarMobile] }, n.createElement(t.Z, { isFullWidth: d, isLarge: c }, a)) : null));
+                    return n.createElement(o.Z, null, n.createElement(c.Z.Configure, { documentTitle: s, headerless: !0, title: p }), n.createElement(t.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [k.root, _ && k.rootModal] }, !_ && b, n.createElement(i.Z, { isFullWidth: d, isLarge: u, style: [k.container, _ && k.containerModal, r] }, _ ? n.createElement(m.Z, { style: k.viewport }, b, l) : l), a ? n.createElement(t.Z, { style: [k.bottomBarModal, !_ && !y && k.bottomBarMobile] }, n.createElement(i.Z, { isFullWidth: d, isLarge: u }, a)) : null));
                 }
             }
             (g.defaultProps = { isFullWidth: !1, isLarge: !1 }), (g.contextType = r.Z);
@@ -730,13 +730,13 @@
                 p = g;
         },
         652904: (e, a, l) => {
-            l.d(a, { Z: () => c });
+            l.d(a, { Z: () => u });
             var n = l(202784),
-                i = l(500002),
-                t = l(668214),
+                t = l(500002),
+                i = l(668214),
                 r = l(997174),
                 s = l(118823);
-            const o = (0, t.Z)()
+            const o = (0, i.Z)()
                 .propsFromActions(() => ({ updateLocation: s.YF, updateTweetDetailNav: r.NH }))
                 .withAnalytics();
             class d extends n.Component {
@@ -747,16 +747,16 @@
                     const {
                             history: { location: a },
                             location: { pathname: l, search: n },
-                            locationKey: i,
+                            locationKey: t,
                         } = this.props,
                         {
-                            location: { pathname: t, search: r },
+                            location: { pathname: i, search: r },
                             locationKey: s,
                         } = e;
                     let o = !1;
                     a.pathname !== l ? (this._isInBackground = !0) : this._isInBackground && a.pathname === l && ((this._isInBackground = !1), (o = !0));
-                    const d = i || s;
-                    ((d && i !== s) || (!d && l !== t) || n !== r || o) && this._performPageUpdates(this.props);
+                    const d = t || s;
+                    ((d && t !== s) || (!d && l !== i) || n !== r || o) && this._performPageUpdates(this.props);
                 }
                 render() {
                     return this.props.children;
@@ -767,19 +767,19 @@
                 }
             }
             d.defaultProps = { children: null };
-            const c = (0, i.ZP)(o(d));
+            const u = (0, t.ZP)(o(d));
         },
         301758: (e, a, l) => {
             l.d(a, { Z: () => _ });
             var n = l(807896),
-                i = l(202784),
-                t = l(235902),
+                t = l(202784),
+                i = l(235902),
                 r = l(521288),
                 s = l(401388),
                 o = l(988566),
                 d = l(725516),
-                c = l(443781),
-                u = l(71620),
+                u = l(443781),
+                c = l(71620),
                 m = l(668214),
                 g = l(491963),
                 k = l(836255);
@@ -791,40 +791,40 @@
                 },
                 _ = (0, m.Z)()
                     .propsFromState(() => ({ community: y, hydratedTweet: k.Z.createHydratedTweetSelector(p) }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, u.zr)("QUOTE_TWEET_CONTAINER"), fetchCommunityIfNeeded: g.ZP.fetchOneIfNeeded }))(({ community: e, createLocalApiErrorHandler: a, fetchCommunityIfNeeded: l, hydratedTweet: u, onAvatarClick: m, onMediaClick: g, onPress: k, onScreenNameClick: p, tweetId: y, withBirdwatchPivot: _ = !0, ...b }) => {
-                    const { featureSwitches: T, viewerUserId: f } = i.useContext(c.rC),
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, c.zr)("QUOTE_TWEET_CONTAINER"), fetchCommunityIfNeeded: g.ZP.fetchOneIfNeeded }))(({ community: e, createLocalApiErrorHandler: a, fetchCommunityIfNeeded: l, hydratedTweet: c, onAvatarClick: m, onMediaClick: g, onPress: k, onScreenNameClick: p, tweetId: y, withBirdwatchPivot: _ = !0, ...b }) => {
+                    const { featureSwitches: f, viewerUserId: T } = t.useContext(u.rC),
                         F = (0, d.z)(),
-                        h = u?.community_id_str;
-                    i.useEffect(() => {
+                        h = c?.community_id_str;
+                    t.useEffect(() => {
                         h && (0, s.Z)(e) && l(h).catch(a());
                     }, [e, h, a, l]);
-                    const K = i.useCallback(
+                    const K = t.useCallback(
                             (e) => {
                                 F.scribeAction("click"), k && k(e);
                             },
                             [k, F],
                         ),
-                        V = !!_,
-                        L = u && (0, o.D$)(u, f, e),
-                        w = L && (0, o.rl)(L);
-                    return i.createElement(t.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => T.isTrue("responsive_web_edit_tweet_enabled") || T.isTrue("subscriptions_feature_labs_1004") } }, i.createElement(r.Z, (0, n.Z)({}, b, { loggedInUserId: f, onAvatarClick: m, onMediaClick: g, onPress: K, onScreenNameClick: p, shouldShowAltLabelAlways: !0, socialContextProps: w, tweet: u, withBirdwatchPivot: V })));
+                        w = !!_,
+                        V = c && (0, o.D$)(c, T, e),
+                        L = V && (0, o.rl)(V);
+                    return t.createElement(i.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => f.isTrue("responsive_web_edit_tweet_enabled") || f.isTrue("subscriptions_feature_labs_1004") } }, t.createElement(r.Z, (0, n.Z)({}, b, { loggedInUserId: T, onAvatarClick: m, onMediaClick: g, onPress: K, onScreenNameClick: p, shouldShowAltLabelAlways: !0, socialContextProps: L, tweet: c, withBirdwatchPivot: w })));
                 });
         },
         301410: (e, a, l) => {
             l.d(a, { i: () => k.ZP, z: () => b });
             var n = l(202784),
-                i = l(928123),
-                t = l.n(i),
+                t = l(928123),
+                i = l.n(t),
                 r = l(72845),
                 s = l.n(r),
                 o = l(57074),
                 d = l.n(o),
-                c = l(516951),
-                u = l(88656),
+                u = l(516951),
+                c = l(88656),
                 m = l(71620),
                 g = l(163889),
                 k = l(312771);
-            const p = ({ render: e }) => e({ fetchStatus: k.ZP.LOADING, data: null, error: null, retry: c.Z });
+            const p = ({ render: e }) => e({ fetchStatus: k.ZP.LOADING, data: null, error: null, retry: u.Z });
             class y extends n.Component {
                 constructor(...e) {
                     super(...e), (this.state = { error: null });
@@ -833,7 +833,7 @@
                     return { error: e };
                 }
                 componentDidCatch(e, a) {
-                    if (!(e instanceof u.Z)) throw e;
+                    if (!(e instanceof c.Z)) throw e;
                     this.props.errorHandler(e), (0, g.Hj)(e, { level: "warning", tags: { userVisible: !0 } });
                 }
                 render() {
@@ -841,62 +841,86 @@
                 }
             }
             const _ = ({ query: e, queryRef: a, render: l }) => {
-                    const n = t()(e, a);
-                    return l({ fetchStatus: k.ZP.LOADED, data: n, error: null, retry: c.Z });
+                    const n = i()(e, a);
+                    return l({ fetchStatus: k.ZP.LOADED, data: n, error: null, retry: u.Z });
                 },
                 b = (e, a) =>
-                    function ({ fetchPolicy: l = "store-or-network", render: i, variables: t }) {
+                    function ({ fetchPolicy: l = "store-or-network", render: t, variables: i }) {
                         const [r, o] = s()(e),
-                            c = (0, m.n7)(a.errorConfig.context),
-                            u = d()(t),
+                            u = (0, m.n7)(a.errorConfig.context),
+                            c = d()(i),
                             g = n.useCallback(() => {
-                                o(u, { fetchPolicy: "network-only" });
-                            }, [o, u]);
+                                o(c, { fetchPolicy: "network-only" });
+                            }, [o, c]);
                         return (
                             n.useLayoutEffect(() => {
-                                o(u, { fetchPolicy: l });
-                            }, [l, o, u]),
+                                o(c, { fetchPolicy: l });
+                            }, [l, o, c]),
                             r
                                 ? n.createElement(
                                       n.Suspense,
-                                      { fallback: n.createElement(p, { render: i }) },
-                                      n.createElement(y, { errorHandler: c(a.errorConfig.options || {}), key: r.fetchKey, retry: g }, (a, l) => (a ? i({ fetchStatus: k.ZP.FAILED, error: a, data: null, retry: l }) : n.createElement(_, { query: e, queryRef: r, render: i }))),
+                                      { fallback: n.createElement(p, { render: t }) },
+                                      n.createElement(y, { errorHandler: u(a.errorConfig.options || {}), key: r.fetchKey, retry: g }, (a, l) => (a ? t({ fetchStatus: k.ZP.FAILED, error: a, data: null, retry: l }) : n.createElement(_, { query: e, queryRef: r, render: t }))),
                                   )
                                 : null
                         );
                     };
         },
         702001: (e, a, l) => {
-            l.d(a, { c: () => t });
+            l.d(a, { c: () => i });
             var n = l(516951),
-                i = l(615656);
-            const t = { [i.ZP.OtherUserSuspended]: { customAction: n.Z }, [i.ZP.StatusViewForbidden]: { customAction: n.Z } };
+                t = l(615656);
+            const i = { [t.ZP.OtherUserSuspended]: { customAction: n.Z }, [t.ZP.StatusViewForbidden]: { customAction: n.Z } };
         },
         566220: (e, a, l) => {
             l.d(a, { R: () => r });
             var n = l(202784);
-            const i = () => new Date(),
-                t = n.createContext(i),
-                r = () => n.useContext(t);
+            const t = () => new Date(),
+                i = n.createContext(t),
+                r = () => n.useContext(i);
         },
         738321: (e, a, l) => {
-            l.d(a, { X0: () => s, _b: () => t, gG: () => r });
+            l.d(a, { X0: () => s, _b: () => i, gG: () => r });
             var n = l(782261),
-                i = l(942893);
-            function t(e) {
-                const { dwellStartTime: a, eventInfo: l, tweet: t } = e,
+                t = l(942893);
+            function i(e) {
+                const { dwellStartTime: a, eventInfo: l, tweet: i } = e,
                     r = Date.now() - a,
-                    s = t ? n.Z.getOriginalTweet(t) : void 0;
-                return { action: "view", data: { event_info: JSON.stringify({ duration_ms: r, event_info: l }), items: s ? [i.Z.getTweetItem(s)] : [] } };
+                    s = i ? n.Z.getOriginalTweet(i) : void 0;
+                return { action: "view", data: { event_info: JSON.stringify({ duration_ms: r, event_info: l }), items: s ? [t.Z.getTweetItem(s)] : [] } };
             }
             function r(e) {
-                const { element: a, eventInfo: l, tweet: t, userId: r } = e,
-                    s = t ? n.Z.getOriginalTweet(t) : void 0;
-                return { element: a, action: "click", data: { event_info: l, profile_id: r, items: s ? [i.Z.getTweetItem(s)] : [] } };
+                const { element: a, eventInfo: l, tweet: i, userId: r } = e,
+                    s = i ? n.Z.getOriginalTweet(i) : void 0;
+                return { element: a, action: "click", data: { event_info: l, profile_id: r, items: s ? [t.Z.getTweetItem(s)] : [] } };
             }
             function s(e, a, l) {
-                const t = l ? n.Z.getOriginalTweet(l) : void 0;
-                return { element: "TweetActivityQueryRenderer", action: "error", data: { event_info: e, items: t ? [i.Z.getTweetItem(t)] : [], profile_id: a } };
+                const i = l ? n.Z.getOriginalTweet(l) : void 0;
+                return { element: "TweetActivityQueryRenderer", action: "error", data: { event_info: e, items: i ? [t.Z.getTweetItem(i)] : [], profile_id: a } };
+            }
+        },
+        207137: (e, a, l) => {
+            l.d(a, { BC: () => d, FI: () => o, Pm: () => r, gO: () => i, zk: () => t });
+            const n = () => new Date(Date.now());
+            function t(e, a = n()) {
+                return a.getFullYear() === e.getFullYear() && a.getMonth() === e.getMonth() && a.getDate() === e.getDate();
+            }
+            function i(e, a = n()) {
+                const l = new Date(a);
+                return l.setHours(l.getHours() - 24), t(e, l);
+            }
+            function r(e, a = n()) {
+                const l = new Date(a);
+                return l.setHours(l.getHours() + 24), t(e, l);
+            }
+            const s = 6048e5;
+            function o(e, a = n()) {
+                const l = a - e;
+                return l >= 0 && l <= s;
+            }
+            function d(e, a) {
+                const l = new Date();
+                return a < l || a < e ? 0 : Math.min(1, (l - e) / (a - e));
             }
         },
         16222: (e, a, l) => {
@@ -911,4 +935,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConversationWithRelay-a2dee9c7.19eac51a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConversationWithRelay-a2dee9c7.ec093f4a.js.map

@@ -1173,7 +1173,6 @@
                 o("c3aa76c4", "Idiomas que tal vez sabes"),
                 o("g099069c", "Administra los idiomas que X infirió en función de tu actividad, como las cuentas que sigues y los posts con los que interactúas."),
                 o("cf9ce876", "Idiomas de la app y los posts"),
-                o("d4372cf4", "Inglés (EE. UU.), 中文(简体), español"),
                 o("f8e46b90", "Estas son las cuentas de redes sociales que conectaste a tu cuenta de X para iniciar sesión. Puedes desactivar el acceso aquí."),
                 o("d84ed6b2", "Desconectar"),
                 o("i51130d4", "Google"),
@@ -1916,9 +1915,9 @@
                 o("a8fdd09c", "Publicar Artículo"),
                 o("d8047cc8", "Publicar"),
                 o("ff7ddca2", "Tu Artículo aparecerá como un post una vez que lo publiques. También lo encontrarás en la pestaña Artículos de tu perfil."),
-                o("ef34d7be", "Los controles de Audiencia y respuesta no son editables una vez que se publica un Artículo.");
-            o("e52d4998", "Elige tu audiencia"),
-                o("d7985b24", "Elige quién puede responder a este artículo"),
+                o("ef34d7be", "Los controles de Audiencia y respuesta no son editables una vez que se publica un Artículo."),
+                o("e52d4998", "Elige tu audiencia");
+            o("d7985b24", "Elige quién puede responder a este artículo"),
                 o("b5660338", "Vista previa de la cronología"),
                 o("hff1b97a", "Solo pueden responder los suscriptores."),
                 o("a330771e", "Copiar enlace a tu portapapeles"),
@@ -2972,9 +2971,9 @@
                 o("ce6d095a", "Empleos"),
                 o("e0adec82", "Recursos para marcas"),
                 o("df1b7550", "Marketing"),
-                o("he258678", "X para empresas");
-            o("c6f58084", "Desarrolladores"),
-                o("d83f18d2", "Guía"),
+                o("he258678", "X para empresas"),
+                o("c6f58084", "Desarrolladores");
+            o("d83f18d2", "Guía"),
                 o("hc5aa17c", "Obtén la app de X"),
                 o("j0693948", "Obtén la app de Grok"),
                 o("fce9ecce", "Videos sugeridos"),
@@ -3886,11 +3885,11 @@
                 o("ddeb0a3c", "Esta es la Comunidad. ¿Te gusta la gente? Dale un vistazo."),
                 o("e111f531", function (e) {
                     return e.count + " conectado" + r(e.count, "", "s");
+                }),
+                o("cbef820f", function (e) {
+                    return "¡" + e.screenName + " reposteó la transmisión!";
                 });
-            o("cbef820f", function (e) {
-                return "¡" + e.screenName + " reposteó la transmisión!";
-            }),
-                o("e3275464", "Enviar"),
+            o("e3275464", "Enviar"),
                 o("cededf2a", "Anfitrión"),
                 o("i2caef48", "Coanfitriones"),
                 o("j245c654", "Hablantes"),
@@ -4924,9 +4923,9 @@
                 o("d9f9dec0", "Ver Espacio"),
                 o("h0c1f37a", "Ver estadísticas de Espacios"),
                 o("e41fffbc", "El tiempo total de reproducción de tus videos."),
-                o("if2909ba", "Tiempo de reproducción");
-            o("i0e5bf4c", "Tus videos"),
-                o("ed99baea", "Acceso anticipado a la versión beta"),
+                o("if2909ba", "Tiempo de reproducción"),
+                o("i0e5bf4c", "Tus videos");
+            o("ed99baea", "Acceso anticipado a la versión beta"),
                 o("gf898b70", "Búsqueda avanzada"),
                 o("d2a43a7a", 'contiene "ai" y "startup"'),
                 o("a8584698", "ai startup"),
@@ -5880,9 +5879,9 @@
                 o("e41c9b4f", function (e) {
                     return "Guardado en " + e.bookmarkFolderName;
                 }),
-                o("h18f86a4", "Eliminar carpeta");
-            o("f4ea967a", "Se eliminó la carpeta"),
-                o("b670aa62", "Nombre de carpeta"),
+                o("h18f86a4", "Eliminar carpeta"),
+                o("f4ea967a", "Se eliminó la carpeta");
+            o("b670aa62", "Nombre de carpeta"),
                 o("aece5462", "El nombre de la carpeta se actualizó correctamente"),
                 o("e3299b94", "Algo salió mal. Intenta actualizar esa carpeta de nuevo dentro de un minuto."),
                 o("c09ea714", "Algo salió mal. Intenta eliminar esa carpeta de nuevo dentro de un minuto."),
@@ -6884,9 +6883,9 @@
                 o("ede7d0a2", "Divisa"),
                 o("b925c18c", "Tipo de salario"),
                 o("j3d242ce", "Rango no válido"),
-                o("f4d07bd2", "Incluye detalles opcionales para que sea más fácil para los candidatos descubrir los roles con la búsqueda.");
-            o("b8cbb51a", "Resumen del empleo"),
-                o("bda6881e", "Este empleo se importó desde tu sistema de gestión del proceso de selección (ATS, por sus siglas en inglés). Solo se pueden modificar campos específicos."),
+                o("f4d07bd2", "Incluye detalles opcionales para que sea más fácil para los candidatos descubrir los roles con la búsqueda."),
+                o("b8cbb51a", "Resumen del empleo");
+            o("bda6881e", "Este empleo se importó desde tu sistema de gestión del proceso de selección (ATS, por sus siglas en inglés). Solo se pueden modificar campos específicos."),
                 o("b075c68a", "Editar empleo"),
                 o("d4b6a6e0", "Spotlight de perfil"),
                 o("j2dd3686", "Empleos destacados sobre mis posts."),
@@ -7229,6 +7228,8 @@
                 o("hd80bd3e", "Promocionar un post"),
                 o("fe2b0008", "Aprende cómo usar X"),
                 o("h257d4aa", "Seleccionar un post para promocionar"),
+                o("e9334fe6", "Data updates every few minutes"),
+                o("a6d7b1d0", "Based on X Internal Data"),
                 o("h9b28dae", "You’re saving time with an ad-free feed"),
                 o("f6c50ec0", "Finalizó tu prueba sin anuncios"),
                 o("e1d1fbca", "You’ve avoided"),
@@ -7863,8 +7864,7 @@
                 o("i5f14be7", function (e) {
                     return e.displayName + ", te damos la bienvenida otra vez";
                 }),
-                o("a76d58ba", "Estadísticas de anuncios"),
-                o("eccd0e1a", "Estadísticas de la organización");
+                o("a76d58ba", "Estadísticas de anuncios");
             function s(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var o = a[n];
@@ -7903,7 +7903,8 @@
                     i(e, a)
                 );
             }
-            o("deea1708", "¿Quieres ver las estadísticas de todas tus cuentas de X?"),
+            o("eccd0e1a", "Estadísticas de la organización"),
+                o("deea1708", "¿Quieres ver las estadísticas de todas tus cuentas de X?"),
                 o("eb603ffc", "Actualiza para afiliar a tu red y ver las estadísticas totales."),
                 o("gf67aae4", "Actualizar al nivel de acceso total"),
                 o("h75e3618", "Incluir organización"),
@@ -8901,9 +8902,9 @@
                 o("a6ada13e", "Comprar"),
                 o("j0f12222", "Ver más"),
                 o("f569f7c8", "Ir al sitio web"),
-                o("j0c6772a", "Visitar sitio web"),
-                o("f73003aa", "El video se reproducirá después del anuncio");
-            o("b3112b8a", "Omitir"),
+                o("j0c6772a", "Visitar sitio web");
+            o("f73003aa", "El video se reproducirá después del anuncio"),
+                o("b3112b8a", "Omitir"),
                 o("h6333ad0", "Omitir anuncio"),
                 o("c59da417", function (e) {
                     return "Omitir anuncio dentro de " + e.seconds;
@@ -13363,4 +13364,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.61fb018a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.7f52f48a.js.map

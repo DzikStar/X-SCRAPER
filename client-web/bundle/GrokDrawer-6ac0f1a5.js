@@ -162,23 +162,23 @@
                             },
                             [N],
                         ),
-                        F = (0, r.Mv)(),
-                        H = !g,
-                        O = !!g,
-                        W = "Research" === g,
+                        O = (0, r.Mv)(),
+                        F = !g,
+                        W = !!g,
+                        H = "Research" === g,
                         z = "Reasoning" === g,
                         K = "ImageEdit" === g,
                         J = "CreateImage" === g,
                         X = (0, r.yu)(),
                         U = X && t.ZP.isWebView(),
-                        V = F || !!k,
+                        V = O || !!k,
                         $ = f.focused,
-                        j = (W && !S) || (z && !E);
+                        j = (H && !S) || (z && !E);
                     return (
                         o.useEffect(() => {
-                            A && ("Research" !== A || W ? ("Reasoning" !== A || z ? "ImageEdit" !== A || K || B() : Z()) : T(), C(""));
-                        }, [v, y, R, K, z, W, A, T, B, Z]),
-                        { grokInput: f, setFocused: _, isResearchEnabled: W, isReasoningEnabled: z, isImageEditEnabled: K, isCreateImageEnabled: J, isDefault: H, isInputFocused: $, hasSelectedFilterKey: O, isInputMobileSize: X, isInputMobile: U, isInputCompact: V, grokModeButtons: v, grokModeButtonStatusKey: y, filterKey: g, isFileInputDisabled: j, setAdvancedSettings: P, setDeepsearchAdvancedSettings: x, setDeepersearchAdvancedSettings: G, advancedSettings: D, grokModeButtonOverrides: M, selectDeepsearchFilterKey: T, selectReasoningFilterKey: Z, selectImageEditFilterKey: B, clearFilterKey: R, setPendingModeButtonFilterKey: C, setFilterKey: L, hasValue: e, setHasValue: a }
+                            A && ("Research" !== A || H ? ("Reasoning" !== A || z ? "ImageEdit" !== A || K || B() : Z()) : T(), C(""));
+                        }, [v, y, R, K, z, H, A, T, B, Z]),
+                        { grokInput: f, setFocused: _, isResearchEnabled: H, isReasoningEnabled: z, isImageEditEnabled: K, isCreateImageEnabled: J, isDefault: F, isInputFocused: $, hasSelectedFilterKey: W, isInputMobileSize: X, isInputMobile: U, isInputCompact: V, grokModeButtons: v, grokModeButtonStatusKey: y, filterKey: g, isFileInputDisabled: j, setAdvancedSettings: P, setDeepsearchAdvancedSettings: x, setDeepersearchAdvancedSettings: G, advancedSettings: D, grokModeButtonOverrides: M, selectDeepsearchFilterKey: T, selectReasoningFilterKey: Z, selectImageEditFilterKey: B, clearFilterKey: R, setPendingModeButtonFilterKey: C, setFilterKey: L, hasValue: e, setHasValue: a }
                     );
                 };
         },
@@ -240,13 +240,13 @@
                     o = -1 !== (0, m.v9)(n.selectPromptSource)?.indexOf("post_analysis"),
                     t = (0, m.v9)(n.selectStatus),
                     l = t === G.Q_.TYPING || t === G.Q_.WAITING;
-                return d.createElement(r.Z, { style: F.titleTextRoot }, o && e ? (l ? d.createElement(N, { size: "headline2", weight: "bold" }, `${Z}...`) : d.createElement(E.ZP, { size: "headline2", style: F.animation }, B)) : d.createElement(E.ZP, null, T));
+                return d.createElement(r.Z, { style: O.titleTextRoot }, o && e ? (l ? d.createElement(N, { size: "headline2", weight: "bold" }, `${Z}...`) : d.createElement(E.ZP, { size: "headline2", style: O.animation }, B)) : d.createElement(E.ZP, null, T));
             }
-            const F = v.default.create((e) => ({ titleTextRoot: { paddingStart: e.spaces.space2, flexGrow: 1, flexShrink: 1 }, animation: { opacity: 1, animationDuration: "2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] } }));
+            const O = v.default.create((e) => ({ titleTextRoot: { paddingStart: e.spaces.space2, flexGrow: 1, flexShrink: 1 }, animation: { opacity: 1, animationDuration: "2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] } }));
             n(136728);
-            var H = n(154003),
-                O = n(530243),
-                W = n(52735),
+            var F = n(154003),
+                W = n(530243),
+                H = n(52735),
                 z = n(487552),
                 K = n(899667),
                 J = n(807901);
@@ -261,7 +261,7 @@
                         e && (l.push(e), a());
                     }, [a, e, l]),
                     { canClearConversation: s, handleClearConversationClickWithoutNav: c } = (0, J.Z)();
-                return d.createElement(r.Z, { style: Q.rightControls }, n && e && d.createElement(H.ZP, { "aria-label": X, hoverLabel: { label: X }, icon: d.createElement(O.default, { style: { height: 19, width: 19, marginBottom: 2 } }), onPress: i, type: "primaryText" }), n && s && d.createElement(H.ZP, { "aria-label": $, disabled: !s, hoverLabel: j, icon: d.createElement(W.default, { style: Q.composeIcon }), onPress: c, type: "primaryText" }), n && d.createElement(H.ZP, { "aria-label": U, hoverLabel: { label: U }, icon: d.createElement(z.default, null), onPress: a, type: "primaryText" }), !n && d.createElement(H.ZP, { "aria-label": V, hoverLabel: { label: V }, icon: d.createElement(K.default, null), onPress: a, type: "primaryText" }));
+                return d.createElement(r.Z, { style: Q.rightControls }, n && e && d.createElement(F.ZP, { "aria-label": X, hoverLabel: { label: X }, icon: d.createElement(W.default, { style: { height: 19, width: 19, marginBottom: 2 } }), onPress: i, type: "primaryText" }), n && s && d.createElement(F.ZP, { "aria-label": $, disabled: !s, hoverLabel: j, icon: d.createElement(H.default, { style: Q.composeIcon }), onPress: c, type: "primaryText" }), n && d.createElement(F.ZP, { "aria-label": U, hoverLabel: { label: U }, icon: d.createElement(z.default, null), onPress: a, type: "primaryText" }), !n && d.createElement(F.ZP, { "aria-label": V, hoverLabel: { label: V }, icon: d.createElement(K.default, null), onPress: a, type: "primaryText" }));
             }
             const Q = v.default.create((e) => ({ rightControls: { flexDirection: "row", alignItems: "center" }, composeIcon: { fill: "none" } }));
             function q({ conversationUrl: e }) {
@@ -299,22 +299,24 @@
             const ne = (0, l.Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.8"),
-                        n.e("icons.15"),
-                        n.e("icons.7"),
-                        n.e("icons.3"),
-                        n.e("icons.24"),
+                        n.e("icons.0"),
+                        n.e("icons.5"),
                         n.e("icons.12"),
-                        n.e("icons.22"),
+                        n.e("icons.20"),
                         n.e("icons.2"),
-                        n.e("icons.18"),
+                        n.e("icons.21"),
+                        n.e("icons.28"),
+                        n.e("icons.10"),
+                        n.e("icons.17"),
                         n.e("icons.9"),
-                        n.e("icons.1"),
-                        n.e("icons.6"),
-                        n.e("icons.14"),
+                        n.e("icons.23"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.5"),
+                        n.e("icons.22"),
+                        n.e("icons.24"),
+                        n.e("icons.25"),
+                        n.e("icons.14"),
+                        n.e("icons.13"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -325,14 +327,12 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.21"),
-                        n.e("icons.16"),
-                        n.e("icons.28"),
-                        n.e("icons.17"),
-                        n.e("icons.27"),
-                        n.e("icons.19"),
-                        n.e("icons.0"),
+                        n.e("icons.6"),
+                        n.e("icons.3"),
                         n.e("icons.4"),
+                        n.e("icons.1"),
+                        n.e("icons.18"),
+                        n.e("icons.8"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -375,8 +375,6 @@
                         n.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-c6c15d67"),
                         n.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3fd5f349"),
                         n.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
-                        n.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.TimelineFrameHandler~loader.J-f4267732"),
-                        n.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.TimelineFrameHandler~loader.J-80af7626"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
@@ -400,7 +398,7 @@
                         n.e("shared~bundle.Birdwatch~bundle.News~bundle.Grok~ondemand.News~loader.inlineTombstoneHandler~loader.tweetHandl"),
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~bundle.Payments~ondemand.News~ondemand.Insights~loader"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-3ba4c741"),
+                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-b75711ed"),
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-eadf0bc8"),
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-b6859af7"),
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-856c9f2b"),
@@ -416,10 +414,11 @@
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-92ee7280"),
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-4cd14b6e"),
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-380ace89"),
+                        n.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders"),
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
                         n.e("shared~bundle.Grok~loader.Markdown"),
-                        n.e("bundle.Grok-e907d115"),
+                        n.e("bundle.Grok-bc6ccf4c"),
                         n.e("bundle.Grok-e96e9bea"),
                         n.e("bundle.Grok-0ae4e026"),
                         n.e("bundle.Grok-b16f5c14"),
@@ -752,4 +751,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.e03c71ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.bb22a32a.js.map

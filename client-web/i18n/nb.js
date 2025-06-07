@@ -1173,7 +1173,6 @@
                 t("c3aa76c4", "Språk du kanskje behersker"),
                 t("g099069c", "Administrer språkene X antok på bakgrunn av aktiviteten din, f.eks. kontoer du følger, og innlegg du har svart på."),
                 t("cf9ce876", "App- og innleggsspråk"),
-                t("d4372cf4", "English (US), 中文(简体), Español"),
                 t("f8e46b90", "Dette er de sosiale kontoene du koblet til X-kontoen din for å kunne logge deg inn. Du kan deaktivere tilgangen her."),
                 t("d84ed6b2", "Koble fra"),
                 t("i51130d4", "Google"),
@@ -1916,9 +1915,9 @@
                 t("a8fdd09c", "Publiser artikkel"),
                 t("d8047cc8", "Publiser"),
                 t("ff7ddca2", "Artikkelen din vises som et innlegg når du har publisert den. Du finner den også under fanen Artikler i profilen din."),
-                t("ef34d7be", "Målgruppe og svarkontroller kan ikke endres etter at en artikkel er publisert.");
-            t("e52d4998", "Velg målgruppe"),
-                t("d7985b24", "Velg hvem som kan svare på denne artikkelen"),
+                t("ef34d7be", "Målgruppe og svarkontroller kan ikke endres etter at en artikkel er publisert."),
+                t("e52d4998", "Velg målgruppe");
+            t("d7985b24", "Velg hvem som kan svare på denne artikkelen"),
                 t("b5660338", "Tidslinjeforhåndsvisning"),
                 t("hff1b97a", "Bare abonnenter kan svare."),
                 t("a330771e", "Kopier lenke til utklippstavlen"),
@@ -2972,9 +2971,9 @@
                 t("ce6d095a", "Jobbmuligheter"),
                 t("e0adec82", "Merkevareressurser"),
                 t("df1b7550", "Markedsføring"),
-                t("he258678", "X for bedrifter");
-            t("c6f58084", "Utviklere"),
-                t("d83f18d2", "Katalog"),
+                t("he258678", "X for bedrifter"),
+                t("c6f58084", "Utviklere");
+            t("d83f18d2", "Katalog"),
                 t("hc5aa17c", "Last ned X-appen"),
                 t("j0693948", "Last ned Grok-appen"),
                 t("fce9ecce", "Foreslåtte videoer"),
@@ -3886,11 +3885,11 @@
                 t("ddeb0a3c", "Her er fellesskapet. Liker du medlemmene? Ta en titt."),
                 t("e111f531", function (e) {
                     return e.count + " lytter(e)";
+                }),
+                t("cbef820f", function (e) {
+                    return e.screenName + " republiserte strømmen!";
                 });
-            t("cbef820f", function (e) {
-                return e.screenName + " republiserte strømmen!";
-            }),
-                t("e3275464", "Send"),
+            t("e3275464", "Send"),
                 t("cededf2a", "Vert"),
                 t("i2caef48", "Medverter"),
                 t("j245c654", "Talere"),
@@ -4924,9 +4923,9 @@
                 t("d9f9dec0", "Vis område"),
                 t("h0c1f37a", "Vis områdestatistikk"),
                 t("e41fffbc", "Den totale visningstiden til videoene dine."),
-                t("if2909ba", "Visningstid");
-            t("i0e5bf4c", "Dine videoer"),
-                t("ed99baea", "Tidlig betatilgang"),
+                t("if2909ba", "Visningstid"),
+                t("i0e5bf4c", "Dine videoer");
+            t("ed99baea", "Tidlig betatilgang"),
                 t("gf898b70", "Avansert søk"),
                 t("d2a43a7a", "inneholder både «ki» og «oppstartsselskap»"),
                 t("a8584698", "ki oppstartsselskap"),
@@ -5880,9 +5879,9 @@
                 t("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Slett mappe");
-            t("f4ea967a", "Mappen er slettet"),
-                t("b670aa62", "Mappenavn"),
+                t("h18f86a4", "Slett mappe"),
+                t("f4ea967a", "Mappen er slettet");
+            t("b670aa62", "Mappenavn"),
                 t("aece5462", "Mappenavnet er oppdatert"),
                 t("e3299b94", "Noe gikk galt. Prøv å oppdatere denne mappen på nytt om en liten stund."),
                 t("c09ea714", "Noe gikk galt. Prøv å slette denne mappen på nytt om en liten stund."),
@@ -6884,9 +6883,9 @@
                 t("ede7d0a2", "Valuta"),
                 t("b925c18c", "Avlønningstype"),
                 t("j3d242ce", "Ugyldig intervall"),
-                t("f4d07bd2", "Legg til valgfrie detaljer for å gjøre det enklere for kandidater å finne jobbene dine i søk.");
-            t("b8cbb51a", "Jobbsammendrag"),
-                t("bda6881e", "Denne jobben er importert fra kandidatsystemet ditt. Vær obs på at bare visse felt kan endres."),
+                t("f4d07bd2", "Legg til valgfrie detaljer for å gjøre det enklere for kandidater å finne jobbene dine i søk."),
+                t("b8cbb51a", "Jobbsammendrag");
+            t("bda6881e", "Denne jobben er importert fra kandidatsystemet ditt. Vær obs på at bare visse felt kan endres."),
                 t("b075c68a", "Rediger jobb"),
                 t("d4b6a6e0", "Profilfremheving"),
                 t("j2dd3686", "Fremhev viste jobber over innleggene mine."),
@@ -7229,6 +7228,8 @@
                 t("hd80bd3e", "Promoter et innlegg"),
                 t("fe2b0008", "Lær hvordan du bruker X"),
                 t("h257d4aa", "Velg et innlegg du vil promotere"),
+                t("e9334fe6", "Data updates every few minutes"),
+                t("a6d7b1d0", "Based on X Internal Data"),
                 t("h9b28dae", "You’re saving time with an ad-free feed"),
                 t("f6c50ec0", "Den annonsefrie prøveperioden er avsluttet"),
                 t("e1d1fbca", "You’ve avoided"),
@@ -7863,8 +7864,7 @@
                 t("i5f14be7", function (e) {
                     return "Velkommen tilbake, " + e.displayName;
                 }),
-                t("a76d58ba", "Annonsestatistikk"),
-                t("eccd0e1a", "Organisasjonsstatistikk");
+                t("a76d58ba", "Annonsestatistikk");
             function a(e, n) {
                 for (var r = 0; r < n.length; r++) {
                     var t = n[r];
@@ -7903,7 +7903,8 @@
                     d(e, n)
                 );
             }
-            t("deea1708", "Vil du se samlet statistikk for alle X-kontoene dine?"),
+            t("eccd0e1a", "Organisasjonsstatistikk"),
+                t("deea1708", "Vil du se samlet statistikk for alle X-kontoene dine?"),
                 t("eb603ffc", "Oppgrader for å tilknytte nettverket ditt og se aggregert statistikk."),
                 t("gf67aae4", "Oppgrader til full tilgang"),
                 t("h75e3618", "Ta med organisasjon"),
@@ -8901,9 +8902,9 @@
                 t("a6ada13e", "Handle nå"),
                 t("j0f12222", "Se mer"),
                 t("f569f7c8", "Gå til nettstedet"),
-                t("j0c6772a", "Besøk nettstedet"),
-                t("f73003aa", "Videoen spilles av etter annonsen");
-            t("b3112b8a", "Hopp over"),
+                t("j0c6772a", "Besøk nettstedet");
+            t("f73003aa", "Videoen spilles av etter annonsen"),
+                t("b3112b8a", "Hopp over"),
                 t("h6333ad0", "Hopp over annonse"),
                 t("c59da417", function (e) {
                     return "Hopp over annonse om " + e.seconds;
@@ -13350,4 +13351,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.fa98bc8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.7b76465a.js.map

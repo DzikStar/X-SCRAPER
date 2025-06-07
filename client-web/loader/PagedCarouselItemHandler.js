@@ -37,20 +37,20 @@
                     n.useEffect(() => {
                         g && (0, c.Z)(e) && r(g).catch(t());
                     }, [e, g, t, r]);
-                    const k = n.useCallback(
+                    const v = n.useCallback(
                             (e) => {
                                 x.scribeAction("click"), w && w(e);
                             },
                             [w, x],
                         ),
-                        v = !!b,
+                        k = !!b,
                         T = u && (0, i.D$)(u, E, e),
                         Z = T && (0, i.rl)(T);
-                    return n.createElement(s.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => y.isTrue("responsive_web_edit_tweet_enabled") || y.isTrue("subscriptions_feature_labs_1004") } }, n.createElement(a.Z, (0, o.Z)({}, _, { loggedInUserId: E, onAvatarClick: m, onMediaClick: p, onPress: k, onScreenNameClick: C, shouldShowAltLabelAlways: !0, socialContextProps: Z, tweet: u, withBirdwatchPivot: v })));
+                    return n.createElement(s.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => y.isTrue("responsive_web_edit_tweet_enabled") || y.isTrue("subscriptions_feature_labs_1004") } }, n.createElement(a.Z, (0, o.Z)({}, _, { loggedInUserId: E, onAvatarClick: m, onMediaClick: p, onPress: v, onScreenNameClick: C, shouldShowAltLabelAlways: !0, socialContextProps: Z, tweet: u, withBirdwatchPivot: k })));
                 });
         },
         562154: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => k });
+            r.r(t), r.d(t, { default: () => v });
             var o = r(459643),
                 n = r(942893),
                 s = r(351322),
@@ -103,7 +103,7 @@
                 g = (0, b.Z)()
                     .propsFromState(() => ({ tweet: E }))
                     .propsFromActions(({ module: e }) => ({ applyReactionInstructions: e.applyReactionInstructions, createLocalApiErrorHandler: (0, h.zr)("PAGED_CAROUSEL_FEEDBACK_ITEM"), processCallback: y.Z }))(a.memo(x)),
-                k = s.iH({ component: g, getScribeDataItem: (e) => n.Z.getPagedCarouselTweetURTEntryItem(e), shouldDisplayBorder: (0, o.Z)(!1), isFocusable: (0, o.Z)(!0) }).getHandler();
+                v = s.iH({ component: g, getScribeDataItem: (e) => n.Z.getPagedCarouselTweetURTEntryItem(e), shouldDisplayBorder: (0, o.Z)(!1), isFocusable: (0, o.Z)(!0) }).getHandler();
         },
         988566: (e, t, r) => {
             r.d(t, { D$: () => c, Du: () => d, GK: () => l, Iv: () => m, pz: () => p, rl: () => u });
@@ -134,7 +134,7 @@
             r.d(t, { K: () => o });
             const o = Object.freeze({ ON_LINGER: "onLinger", ON_IS_RELEVANT: "onIsRelevant", ON_SHOW_MORE: "onShowMore", ON_LIKE: "onLike", ON_FOLLOW: "onFollow" });
         },
-        98440: (e, t, r) => {
+        452693: (e, t, r) => {
             r.r(t), r.d(t, { default: () => i });
             var o = r(202784),
                 n = r(890601),
@@ -142,11 +142,11 @@
                 a = r(347101);
             const c = (e = {}) => {
                 const { direction: t } = (0, s.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
             };
             c.metadata = { width: 24, height: 24 };
             const i = c;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.PagedCarouselItemHandler.525b7f4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.PagedCarouselItemHandler.921ccf4a.js.map

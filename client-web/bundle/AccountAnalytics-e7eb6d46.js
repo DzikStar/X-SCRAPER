@@ -6,8 +6,8 @@
             a.d(t, { E: () => V, A: () => T });
             var s = a(552322),
                 l = a(446368),
-                r = a(702024),
-                i = a(469745),
+                r = a(193686),
+                i = a(305399),
                 n = a(65738),
                 o = a(995348),
                 c = a(840489),
@@ -20,10 +20,10 @@
                 f = a(991732),
                 g = a(598705),
                 h = a(643715),
-                v = a(829233),
-                b = a(433579),
-                j = a(701883),
-                w = a(209570);
+                v = a(1468),
+                b = a(994805),
+                j = a(217105),
+                w = a(5392);
             const { Area: k, AreaChart: N, Bar: C, BarChart: M, CartesianGrid: F, Line: _, LineChart: S, XAxis: L, YAxis: R } = h;
             function D({ chartType: e = "area", data: t, dataKey: a, granularity: l, secondaryDataKey: r, timeRange: i }) {
                 const n = (0, f.T)(),
@@ -233,7 +233,7 @@
                 o = a(430962),
                 c = a(777301),
                 d = a(674836),
-                m = a(702024),
+                m = a(193686),
                 u = a(524145),
                 p = a(808106),
                 x = a(703383),
@@ -300,14 +300,14 @@
                     a ? (0, s.jsx)(f.D, { value: { isFetching: !1, ...a, timeRange: t }, children: e }) : null
                 );
             }
-            var N = a(236379),
+            var N = a(199705),
                 C = a(668631),
-                M = a(796309),
+                M = a(31674),
                 F = a(840489),
                 _ = a(995961),
                 S = a(643715),
-                L = a(829233),
-                R = a(701883);
+                L = a(1468),
+                R = a(217105);
             const { Bar: D, BarChart: T, CartesianGrid: V, XAxis: O, YAxis: K } = S,
                 A = "Posts",
                 I = "Replies";
@@ -353,7 +353,7 @@
                     l = (0, i.useMemo)(() => Object.entries(e).map(([e, t]) => ({ follows: t.Follows ?? 0, timestamp: e, unfollows: t.Unfollows ?? 0 })), [e]);
                 return (0, s.jsxs)("div", { className: "bg-gray-0 rounded-2xl relative flex h-[170px] w-full flex-col gap-4 md:h-[200px] border border-gray-200", children: [(0, s.jsxs)("div", { className: "flex items-center justify-between px-4 pt-4", children: [(0, s.jsx)("div", { className: "text-subtext1 md:text-body font-medium text-gray-900", children: a.followsOverTime }), (0, s.jsxs)(_.cu, { children: [(0, s.jsx)(_.ag, { children: (0, s.jsx)("button", { className: "text-gray-700", type: "button", children: (0, s.jsx)(C.Z, {}) }) }), (0, s.jsx)(_.hC, { title: a.followsOverTime, description: a.followsOverTimeInfo })] })] }), (0, s.jsx)(X, { data: l }), (0, s.jsx)("div", { className: (0, F.Z)("bg-gray-0/50 pointer-events-none absolute inset-0 flex items-center justify-center transition-opacity delay-100 duration-200", { "opacity-0": !t, "opacity-100": t }), children: (0, s.jsx)(m.P, { size: "large" }) })] });
             };
-            var H = a(469745),
+            var H = a(305399),
                 J = a(808116),
                 ee = a(85349),
                 te = a(991732);
@@ -443,4 +443,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e7eb6d46.910801aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e7eb6d46.e136978a.js.map

@@ -1173,7 +1173,6 @@
                 i("c3aa76c4", "Bahasa yang mungkin anda ketahui"),
                 i("g099069c", "Uruskan bahasa yang X simpulkan berdasarkan aktiviti anda, seperti akaun yang anda ikuti dan siaran yang anda berinteraksi."),
                 i("cf9ce876", "Bahasa aplikasi dan siaran"),
-                i("d4372cf4", "English (US), 中文(简体), Español"),
                 i("f8e46b90", "Ini merupakan akaun sosial yang disambungkan dengan akaun X anda untuk log masuk. Anda boleh menyahdayakan akses di sini."),
                 i("d84ed6b2", "Nyahsambung"),
                 i("i51130d4", "Google"),
@@ -1916,9 +1915,9 @@
                 i("a8fdd09c", "Terbitkan Artikel"),
                 i("d8047cc8", "Terbitkan"),
                 i("ff7ddca2", "Artikel anda akan muncul sebagai siaran sebaik sahaja diterbitkan. Anda juga boleh menemukan Artikel itu di bawah tab Artikel pada profil anda."),
-                i("ef34d7be", "Kawalan khalayak dan balasan tidak dapat diedit selepas sesebuah artikel diterbitkan.");
-            i("e52d4998", "Pilih khalayak anda"),
-                i("d7985b24", "Pilih orang yang boleh membalas kepada Artikel ini"),
+                i("ef34d7be", "Kawalan khalayak dan balasan tidak dapat diedit selepas sesebuah artikel diterbitkan."),
+                i("e52d4998", "Pilih khalayak anda");
+            i("d7985b24", "Pilih orang yang boleh membalas kepada Artikel ini"),
                 i("b5660338", "Pratonton Garis masa"),
                 i("hff1b97a", "Hanya yang Melanggan boleh membalas."),
                 i("a330771e", "Salin pautan pada papan klip anda"),
@@ -2972,9 +2971,9 @@
                 i("ce6d095a", "Karier"),
                 i("e0adec82", "Sumber Jenama"),
                 i("df1b7550", "Pemasaran"),
-                i("he258678", "X untuk Perniagaan");
-            i("c6f58084", "Pembangun"),
-                i("d83f18d2", "Direktori"),
+                i("he258678", "X untuk Perniagaan"),
+                i("c6f58084", "Pembangun");
+            i("d83f18d2", "Direktori"),
                 i("hc5aa17c", "Dapatkan aplikasi X"),
                 i("j0693948", "Dapatkan aplikasi Grok"),
                 i("fce9ecce", "Video yang Dicadangkan"),
@@ -3886,11 +3885,11 @@
                 i("ddeb0a3c", "Inilah Komuniti itu. Suka orang dalam Komuniti ini? Sila lihat."),
                 i("e111f531", function (a) {
                     return a.count + " turut serta";
+                }),
+                i("cbef820f", function (a) {
+                    return a.screenName + " menyiarkan semula strim!";
                 });
-            i("cbef820f", function (a) {
-                return a.screenName + " menyiarkan semula strim!";
-            }),
-                i("e3275464", "Hantar"),
+            i("e3275464", "Hantar"),
                 i("cededf2a", "Hos"),
                 i("i2caef48", "Hos lain"),
                 i("j245c654", "Pembicara"),
@@ -4924,9 +4923,9 @@
                 i("d9f9dec0", "Lihat Space"),
                 i("h0c1f37a", "Lihat Analitis Space"),
                 i("e41fffbc", "Jumlah masa tontonan video anda."),
-                i("if2909ba", "Masa Tontonan");
-            i("i0e5bf4c", "Video anda"),
-                i("ed99baea", "Akses Beta Awal"),
+                i("if2909ba", "Masa Tontonan"),
+                i("i0e5bf4c", "Video anda");
+            i("ed99baea", "Akses Beta Awal"),
                 i("gf898b70", "Carian Lanjutan"),
                 i("d2a43a7a", 'mengandungi "ai" dan juga "pemula"'),
                 i("a8584698", "pemula ai"),
@@ -5880,9 +5879,9 @@
                 i("e41c9b4f", function (a) {
                     return "Saved to " + a.bookmarkFolderName;
                 }),
-                i("h18f86a4", "Padamkan Folder");
-            i("f4ea967a", "Folder telah dipadamkan"),
-                i("b670aa62", "Nama Folder"),
+                i("h18f86a4", "Padamkan Folder"),
+                i("f4ea967a", "Folder telah dipadamkan");
+            i("b670aa62", "Nama Folder"),
                 i("aece5462", "Nama folder telah berjaya dikemas kini"),
                 i("e3299b94", "Ada sesuatu yang tidak kena. Cuba kemas kini folder itu semula sebentar lagi."),
                 i("c09ea714", "Ada sesuatu yang tidak kena. Cuba padamkan folder itu semula sebentar lagi."),
@@ -6884,9 +6883,9 @@
                 i("ede7d0a2", "Mata wang"),
                 i("b925c18c", "Jenis Gaji"),
                 i("j3d242ce", "Julat tidak sah"),
-                i("f4d07bd2", "Sertakan butiran pilihan untuk memudahkan calon menemukan peranan anda dengan carian.");
-            i("b8cbb51a", "Ringkasan Pekerjaan"),
-                i("bda6881e", "Pekerjaan ini telah diimport daripada Sistem Penjejakan Pemohon (ATS) anda. Harap maklum bahawa hanya medan yang tertentu boleh diubah suai."),
+                i("f4d07bd2", "Sertakan butiran pilihan untuk memudahkan calon menemukan peranan anda dengan carian."),
+                i("b8cbb51a", "Ringkasan Pekerjaan");
+            i("bda6881e", "Pekerjaan ini telah diimport daripada Sistem Penjejakan Pemohon (ATS) anda. Harap maklum bahawa hanya medan yang tertentu boleh diubah suai."),
                 i("b075c68a", "Edit pekerjaan"),
                 i("d4b6a6e0", "Sorotan Profil"),
                 i("j2dd3686", "Serlahkan pekerjaan yang ditampilkan di atas siaran saya."),
@@ -7229,6 +7228,8 @@
                 i("hd80bd3e", "Promosikan siaran"),
                 i("fe2b0008", "Ketahui cara untuk menggunakan X"),
                 i("h257d4aa", "Pilih siaran untuk dipromosikan"),
+                i("e9334fe6", "Data updates every few minutes"),
+                i("a6d7b1d0", "Based on X Internal Data"),
                 i("h9b28dae", "You’re saving time with an ad-free feed"),
                 i("f6c50ec0", "Percubaan bebas iklan anda telah tamat"),
                 i("e1d1fbca", "You’ve avoided"),
@@ -7863,8 +7864,7 @@
                 i("i5f14be7", function (a) {
                     return "Selamat kembali, " + a.displayName;
                 }),
-                i("a76d58ba", "Analitis Iklan"),
-                i("eccd0e1a", "Analitis Organisasi");
+                i("a76d58ba", "Analitis Iklan");
             function u(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7903,7 +7903,8 @@
                     d(a, n)
                 );
             }
-            i("deea1708", "Ingin melihat analitis pada semua akaun X anda?"),
+            i("eccd0e1a", "Analitis Organisasi"),
+                i("deea1708", "Ingin melihat analitis pada semua akaun X anda?"),
                 i("eb603ffc", "Naik taraf untuk menggabungkan rangkaian anda dan melihat analitis yang diagregatkan."),
                 i("gf67aae4", "Naik taraf kepada Akses Penuh"),
                 i("h75e3618", "Sertakan organisasi"),
@@ -8901,9 +8902,9 @@
                 i("a6ada13e", "Beli sekarang"),
                 i("j0f12222", "Lihat lagi"),
                 i("f569f7c8", "Pergi ke laman web"),
-                i("j0c6772a", "Lawati laman web"),
-                i("f73003aa", "Video akan dimainkan selepas iklan");
-            i("b3112b8a", "Langkau"),
+                i("j0c6772a", "Lawati laman web");
+            i("f73003aa", "Video akan dimainkan selepas iklan"),
+                i("b3112b8a", "Langkau"),
                 i("h6333ad0", "Langkau Iklan"),
                 i("c59da417", function (a) {
                     return "Langkau Iklan dalam masa " + a.seconds;
@@ -13350,4 +13351,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.9c27d34a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.185a99ba.js.map

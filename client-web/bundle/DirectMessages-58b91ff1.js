@@ -70,7 +70,7 @@
                 P = n(325686),
                 B = n(392237),
                 F = n(927075),
-                N = n(253493),
+                N = n(496364),
                 O = n(655352),
                 H = n(691108),
                 U = n(844054);
@@ -411,7 +411,7 @@
                 o = n(111677),
                 a = n.n(o),
                 c = n(290402),
-                l = n(253493),
+                l = n(496364),
                 i = n(715601),
                 d = n(62857),
                 u = n(8448),
@@ -609,4 +609,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-58b91ff1.a9d3fcaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-58b91ff1.67153e0a.js.map

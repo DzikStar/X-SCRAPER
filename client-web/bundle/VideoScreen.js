@@ -71,7 +71,7 @@
             const d = (0, s.ZP)(c(l));
         },
         376293: (e, t, o) => {
-            o.d(t, { $f: () => w, KV: () => b, LI: () => P, SC: () => C, Vt: () => v, ed: () => x, op: () => I });
+            o.d(t, { $f: () => C, KV: () => b, LI: () => x, SC: () => w, Vt: () => v, ed: () => P, op: () => Z });
             var n = o(202784),
                 s = o(190286),
                 r = o(111677),
@@ -85,42 +85,42 @@
                 g = i().fcd4d489,
                 m = i().a6450e84,
                 f = i().g353ad73,
-                k = i().ad00a739,
+                h = i().ad00a739,
                 b = i().a9fd20be,
-                y = i().j546fb79,
-                h = i().c9623eeb,
+                k = i().j546fb79,
+                y = i().c9623eeb,
                 v = i().e133be4e,
                 T = i().he43bca4,
                 E = i().f5f01af6,
-                C = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                w = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: m, text: t ? k({ screenName: e }) : f({ screenName: e }) }),
-                I = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: o, source: n, testID: s, unblockAction: r, unblockSubtext: i, user: a }) => {
+                w = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
+                C = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: m, text: t ? h({ screenName: e }) : f({ screenName: e }) }),
+                Z = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: o, source: n, testID: s, unblockAction: r, unblockSubtext: i, user: a }) => {
                     let c,
                         u = l.Z;
-                    const p = P(a, o);
+                    const p = x(a, o);
                     switch (n) {
-                        case C.PROFILE:
-                        case C.LIST_DETAIL:
-                        case C.FOLLOWERS_LIST:
+                        case w.PROFILE:
+                        case w.LIST_DETAIL:
+                        case w.FOLLOWERS_LIST:
                             u = () => {
                                 a.blocking ? r(p) : e(p);
                             };
                             break;
-                        case C.TWEET:
-                        case C.TWEET_CARET:
-                        case C.RICH_FEEDBACK:
+                        case w.TWEET:
+                        case w.TWEET_CARET:
+                        case w.RICH_FEEDBACK:
                             (c = d.uq.block),
                                 (u = () => {
                                     a.blocking ? r(p) : e(p);
                                 });
                     }
-                    return { confirmation: p, onClick: u, testID: s, shortcutKey: c, Icon: _(a.blocking), text: S(a), subText: Z({ user: a, blockSubtext: t, unblockSubtext: i }) };
+                    return { confirmation: p, onClick: u, testID: s, shortcutKey: c, Icon: I(a.blocking), text: S(a), subText: _({ user: a, blockSubtext: t, unblockSubtext: i }) };
                 },
-                _ = (e) => (e ? c.default : a.default),
-                Z = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
-                S = (e) => (e.blocking ? h({ screenName: e.screen_name }) : g({ screenName: e.screen_name })),
-                P = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: y({ screenName: e }), label: v, text: t ? E : T }))(e.screen_name, t) : w(e.screen_name, t)),
-                x = ({ confirmation: e, handleConfirm: t, onClose: o }) => {
+                I = (e) => (e ? c.default : a.default),
+                _ = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
+                S = (e) => (e.blocking ? y({ screenName: e.screen_name }) : g({ screenName: e.screen_name })),
+                x = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: k({ screenName: e }), label: v, text: t ? E : T }))(e.screen_name, t) : C(e.screen_name, t)),
+                P = ({ confirmation: e, handleConfirm: t, onClose: o }) => {
                     const { confirmButtonType: r, headline: i, label: a, text: c } = e;
                     return n.createElement(s.Z, { cancelButtonLabel: u, confirmButtonLabel: a, confirmButtonType: r, headline: i, onCancel: o, onConfirm: t, text: c });
                 };
@@ -220,7 +220,7 @@
                 p = r.Z.register(u);
         },
         460283: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => C });
+            o.r(t), o.d(t, { default: () => w });
             var n = o(202784),
                 s = o(392237),
                 r = o(205705),
@@ -234,20 +234,20 @@
                 g = o(218951);
             const m = () => (0, g.Z)({ timelineId: "video", network: { getEndpoint: (e) => e.withEndpoint(u.Z).fetchMediaTabVideoMixer, getEndpointParams: ({ count: e, cursor: t }) => ({ count: e, cursor: "string" == typeof t ? t : void 0 }) }, formatResponse: p.Z, context: "FETCH_MEDIA_TAB_VIDEO_TIMELINE", perfKey: "video" });
             var f = o(769471),
-                k = o(674530),
+                h = o(674530),
                 b = o(367879),
-                y = o(335632),
-                h = o(962741),
+                k = o(335632),
+                y = o(962741),
                 v = o(742742);
-            const T = (0, f.Z)({}, (0, y.G)({}), { [h.ZP.TimelineModule]: { handlers: { [v.Z.Carousel]: (0, b.Z)({ moduleDisplayType: k.m.Carousel, divider: { top: !1, bottom: !1 } }), [v.Z.CompactCarousel]: (0, b.Z)({ moduleDisplayType: k.m.CompactCarousel, divider: { top: !1, bottom: !1 } }) } } }),
+            const T = (0, f.Z)({}, (0, k.G)({}), { [y.ZP.TimelineModule]: { handlers: { [v.Z.Carousel]: (0, b.Z)({ moduleDisplayType: h.m.Carousel, divider: { top: !1, bottom: !1 } }), [v.Z.CompactCarousel]: (0, b.Z)({ moduleDisplayType: h.m.CompactCarousel, divider: { top: !1, bottom: !1 } }) } } }),
                 E = { page: "media" };
-            function C({ history: e }) {
+            function w({ history: e }) {
                 const t = !(0, l.ZP)(),
                     o = n.useMemo(() => m(), []),
-                    s = t ? n.createElement(r.Z, { style: w.icon }) : void 0;
+                    s = t ? n.createElement(r.Z, { style: C.icon }) : void 0;
                 return n.createElement(d.nO, { namespace: E }, n.createElement(a.Z, { locationKey: E.page }, n.createElement(i.Z, { centeredLogo: s, history: e, isFullWidth: !0, primaryContent: n.createElement(c.Z, { entryConfiguration: T, module: o, title: "Video Screen" }), sidebarContent: null })));
             }
-            const w = s.default.create((e) => ({ icon: { flexGrow: 1, height: "1.75rem", color: e.colors.brandColor } }));
+            const C = s.default.create((e) => ({ icon: { flexGrow: 1, height: "1.75rem", color: e.colors.brandColor } }));
         },
         879113: (e, t, o) => {
             o.d(t, { Z: () => g });
@@ -268,10 +268,10 @@
                     return !(!t && !o) || !r()(e, this.props);
                 }
                 render() {
-                    const { "aria-label": e, color: t, failureMessage: o, fetchStatus: s, icon: r, loadingMessage: i, onRequestRetry: d, render: g, renderFailure: m, retryMessage: f, retryable: k } = this.props;
+                    const { "aria-label": e, color: t, failureMessage: o, fetchStatus: s, icon: r, loadingMessage: i, onRequestRetry: d, render: g, renderFailure: m, retryMessage: f, retryable: h } = this.props;
                     switch (s) {
                         case l:
-                            return k ? n.createElement(a.Z, { icon: r, onRequestRetry: d, retryMessage: f }) : o ? n.createElement(c.m, { failureMessage: o }) : m();
+                            return h ? n.createElement(a.Z, { icon: r, onRequestRetry: d, retryMessage: f }) : o ? n.createElement(c.m, { failureMessage: o }) : m();
                         case u:
                             return n.createElement(c.J, { "aria-label": e, color: t, loadingMessage: i });
                         case p:
@@ -283,6 +283,32 @@
             }
             g.defaultProps = { renderFailure: i.Z, retryable: !0 };
         },
+        748138: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => c });
+            var n = o(202784),
+                s = o(890601),
+                r = o(783427),
+                i = o(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const c = a;
+        },
+        314948: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => c });
+            var n = o(202784),
+                s = o(890601),
+                r = o(783427),
+                i = o(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 3.75c-4.55 0-8.25 3.69-8.25 8.25 0 1.92.66 3.68 1.75 5.08l2.8-2.79 1.41 1.42-2.79 2.79c1.4 1.1 3.16 1.75 5.08 1.75 4.56 0 8.25-3.69 8.25-8.25 0-1.92-.65-3.68-1.75-5.08l-2.79 2.79-1.41-1.42 2.79-2.79C15.68 4.4 13.92 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const c = a;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.VideoScreen.d5d2bb9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.VideoScreen.31bb2f0a.js.map

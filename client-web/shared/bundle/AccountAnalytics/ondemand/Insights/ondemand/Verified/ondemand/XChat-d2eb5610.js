@@ -188,12 +188,12 @@
                     }
                 });
             }
-            function W(t) {
-                const e = V(),
+            function V(t) {
+                const e = W(),
                     n = D(t) ? N(t) : t;
                 return "none" !== n.transform || "none" !== n.perspective || (!!n.containerType && "normal" !== n.containerType) || (!e && !!n.backdropFilter && "none" !== n.backdropFilter) || (!e && !!n.filter && "none" !== n.filter) || ["transform", "perspective", "filter"].some((t) => (n.willChange || "").includes(t)) || ["paint", "layout", "strict", "content"].some((t) => (n.contain || "").includes(t));
             }
-            function V() {
+            function W() {
                 return !("undefined" == typeof CSS || !CSS.supports) && CSS.supports("-webkit-backdrop-filter", "none");
             }
             function B(t) {
@@ -252,11 +252,11 @@
                 return (c && Number.isFinite(c)) || (c = 1), (a && Number.isFinite(a)) || (a = 1), { x: c, y: a };
             }
             const J = s(0);
-            function Z(t) {
+            function G(t) {
                 const e = S(t);
-                return V() && e.visualViewport ? { x: e.visualViewport.offsetLeft, y: e.visualViewport.offsetTop } : J;
+                return W() && e.visualViewport ? { x: e.visualViewport.offsetLeft, y: e.visualViewport.offsetTop } : J;
             }
-            function G(t, e, n, o) {
+            function K(t, e, n, o) {
                 void 0 === e && (e = !1), void 0 === n && (n = !1);
                 const r = t.getBoundingClientRect(),
                     i = X(t);
@@ -265,7 +265,7 @@
                 const c = (function (t, e, n) {
                     return void 0 === e && (e = !1), !(!n || (e && n !== S(t))) && e;
                 })(i, n, o)
-                    ? Z(i)
+                    ? G(i)
                     : s(0);
                 let a = (r.left + c.x) / l.x,
                     f = (r.top + c.y) / l.y,
@@ -287,10 +287,10 @@
                 }
                 return R({ width: u, height: d, x: a, y: f });
             }
-            function K(t) {
-                return G(C(t)).left + _(t).scrollLeft;
+            function Q(t) {
+                return K(C(t)).left + _(t).scrollLeft;
             }
-            function Q(t, e, n) {
+            function Z(t, e, n) {
                 let o;
                 if ("viewport" === e)
                     o = (function (t, e) {
@@ -303,7 +303,7 @@
                             s = 0;
                         if (r) {
                             (i = r.width), (l = r.height);
-                            const t = V();
+                            const t = W();
                             (!t || (t && "fixed" === e)) && ((c = r.offsetLeft), (s = r.offsetTop));
                         }
                         return { width: i, height: l, x: c, y: s };
@@ -315,20 +315,20 @@
                             o = t.ownerDocument.body,
                             r = i(e.scrollWidth, e.clientWidth, o.scrollWidth, o.clientWidth),
                             l = i(e.scrollHeight, e.clientHeight, o.scrollHeight, o.clientHeight);
-                        let c = -n.scrollLeft + K(t);
+                        let c = -n.scrollLeft + Q(t);
                         const s = -n.scrollTop;
                         return "rtl" === N(o).direction && (c += i(e.clientWidth, o.clientWidth) - r), { width: r, height: l, x: c, y: s };
                     })(C(t));
                 else if (D(e))
                     o = (function (t, e) {
-                        const n = G(t, !0, "fixed" === e),
+                        const n = K(t, !0, "fixed" === e),
                             o = n.top + t.clientTop,
                             r = n.left + t.clientLeft,
                             i = k(t) ? q(t) : s(1);
                         return { width: t.clientWidth * i.x, height: t.clientHeight * i.y, x: r * i.x, y: o * i.y };
                     })(e, n);
                 else {
-                    const n = Z(t);
+                    const n = G(t);
                     o = { ...e, x: e.x - n.x, y: e.y - n.y };
                 }
                 return R(o);
@@ -341,14 +341,14 @@
                 const o = k(e),
                     r = C(e),
                     i = "fixed" === n,
-                    l = G(t, !0, i, e);
+                    l = K(t, !0, i, e);
                 let c = { scrollLeft: 0, scrollTop: 0 };
                 const a = s(0);
                 if (o || (!o && !i))
                     if ((("body" !== O(e) || H(r)) && (c = _(e)), o)) {
-                        const t = G(e, !0, i, e);
+                        const t = K(e, !0, i, e);
                         (a.x = t.x + e.clientLeft), (a.y = t.y + e.clientTop);
-                    } else r && (a.x = K(r));
+                    } else r && (a.x = Q(r));
                 return { x: l.left + c.scrollLeft - a.x, y: l.top + c.scrollTop - a.y, width: l.width, height: l.height };
             }
             function nt(t) {
@@ -370,13 +370,13 @@
                 }
                 let o = ot(t, e);
                 for (; o && M(o) && nt(o); ) o = ot(o, e);
-                return o && B(o) && nt(o) && !W(o)
+                return o && B(o) && nt(o) && !V(o)
                     ? n
                     : o ||
                           (function (t) {
                               let e = z(t);
                               for (; k(e) && !B(e); ) {
-                                  if (W(e)) return e;
+                                  if (V(e)) return e;
                                   if (j(e)) return null;
                                   e = z(e);
                               }
@@ -396,7 +396,7 @@
                     const u = s(0),
                         d = k(o);
                     if ((d || (!d && !i)) && (("body" !== O(o) || H(l)) && (a = _(o)), k(o))) {
-                        const t = G(o);
+                        const t = K(o);
                         (f = q(o)), (u.x = t.x + o.clientLeft), (u.y = t.y + o.clientTop);
                     }
                     return { width: n.width * f.x, height: n.height * f.y, x: n.x * f.x - a.scrollLeft * f.x + u.x, y: n.y * f.y - a.scrollTop * f.y + u.y };
@@ -417,7 +417,7 @@
                                           let l = i ? z(t) : t;
                                           for (; D(l) && !B(l); ) {
                                               const e = N(l),
-                                                  n = W(l);
+                                                  n = V(l);
                                               n || "fixed" !== e.position || (r = null), (i ? !n && !r : (!n && "static" === e.position && r && ["absolute", "fixed"].includes(r.position)) || (H(l) && !n && tt(t, l))) ? (o = o.filter((t) => t !== l)) : (r = e), (l = z(l));
                                           }
                                           return e.set(t, o), o;
@@ -428,10 +428,10 @@
                         s = c[0],
                         a = c.reduce(
                             (t, n) => {
-                                const o = Q(e, n, l);
+                                const o = Z(e, n, l);
                                 return (t.top = i(o.top, t.top)), (t.right = r(o.right, t.right)), (t.bottom = r(o.bottom, t.bottom)), (t.left = i(o.left, t.left)), t;
                             },
-                            Q(e, s, l),
+                            Z(e, s, l),
                         );
                     return { width: a.right - a.left, height: a.bottom - a.top, x: a.left, y: a.top };
                 },
@@ -522,11 +522,11 @@
                     })),
                     d && !u && y.observe(d),
                     y.observe(e));
-                let w = u ? G(t) : null;
+                let w = u ? K(t) : null;
                 return (
                     u &&
                         (function e() {
-                            const o = G(t);
+                            const o = K(t);
                             !w || (o.x === w.x && o.y === w.y && o.width === w.width && o.height === w.height) || n();
                             (w = o), (h = requestAnimationFrame(e));
                         })(),
@@ -672,18 +672,18 @@
                                     H.push(F[t[0]], F[t[1]]);
                                 }
                                 if (((M = [...M, { placement: r, overflows: H }]), !H.every((t) => t <= 0))) {
-                                    var j, W;
+                                    var j, V;
                                     const t = ((null == (j = i.flip) ? void 0 : j.index) || 0) + 1,
                                         e = k[t];
                                     if (e) return { data: { index: t, overflows: M }, reset: { placement: e } };
-                                    let n = null == (W = M.filter((t) => t.overflows[0] <= 0).sort((t, e) => t.overflows[1] - e.overflows[1])[0]) ? void 0 : W.placement;
+                                    let n = null == (V = M.filter((t) => t.overflows[0] <= 0).sort((t, e) => t.overflows[1] - e.overflows[1])[0]) ? void 0 : V.placement;
                                     if (!n)
                                         switch (b) {
                                             case "bestFit": {
-                                                var V;
+                                                var W;
                                                 const t =
                                                     null ==
-                                                    (V = M.filter((t) => {
+                                                    (W = M.filter((t) => {
                                                         if (D) {
                                                             const e = y(t.placement);
                                                             return e === O || "y" === e;
@@ -693,7 +693,7 @@
                                                         .map((t) => [t.placement, t.overflows.filter((t) => t > 0).reduce((t, e) => t + e, 0)])
                                                         .sort((t, e) => t[1] - e[1])[0])
                                                         ? void 0
-                                                        : V[0];
+                                                        : W[0];
                                                 t && (n = t);
                                                 break;
                                             }
@@ -796,11 +796,11 @@
                             H = r(h[T], k),
                             M = F,
                             j = P - R[x] - H,
-                            W = P / 2 - R[x] / 2 + D,
-                            V = u(M, W, j),
-                            B = !a.arrow && null != m(i) && W !== V && l.reference[x] / 2 - (W < M ? F : H) - R[x] / 2 < 0,
-                            N = B ? (W < M ? W - M : W - j) : 0;
-                        return { [v]: y[v] + N, data: { [v]: V, centerOffset: W - V - N, ...(B && { alignmentOffset: N }) }, reset: B };
+                            V = P / 2 - R[x] / 2 + D,
+                            W = u(M, V, j),
+                            B = !a.arrow && null != m(i) && V !== W && l.reference[x] / 2 - (V < M ? F : H) - R[x] / 2 < 0,
+                            N = B ? (V < M ? V - M : V - j) : 0;
+                        return { [v]: y[v] + N, data: { [v]: W, centerOffset: V - W - N, ...(B && { alignmentOffset: N }) }, reset: B };
                     },
                 }),
                 pt = function (t) {
@@ -931,7 +931,7 @@
                         M.current && (t.platform = M.current),
                             (0, o.oo)(P.current, D.current, t).then((t) => {
                                 const e = { ...t, isPositioned: !0 };
-                                W.current &&
+                                V.current &&
                                     !c(k.current, e) &&
                                     ((k.current = e),
                                     i.flushSync(() => {
@@ -942,12 +942,12 @@
                 l(() => {
                     !1 === y && k.current.isPositioned && ((k.current.isPositioned = !1), v((t) => ({ ...t, isPositioned: !1 })));
                 }, [y]);
-                const W = r.useRef(!1);
+                const V = r.useRef(!1);
                 l(
                     () => (
-                        (W.current = !0),
+                        (V.current = !0),
                         () => {
-                            W.current = !1;
+                            V.current = !1;
                         }
                     ),
                     [],
@@ -958,7 +958,7 @@
                             j();
                         }
                     }, [S, C, j, H, F]);
-                const V = r.useMemo(() => ({ reference: P, floating: D, setReference: E, setFloating: O }), [E, O]),
+                const W = r.useMemo(() => ({ reference: P, floating: D, setReference: E, setFloating: O }), [E, O]),
                     B = r.useMemo(() => ({ reference: S, floating: C }), [S, C]),
                     N = r.useMemo(() => {
                         const t = { position: n, left: 0, top: 0 };
@@ -967,7 +967,7 @@
                             o = a(B.floating, w.y);
                         return h ? { ...t, transform: "translate(" + e + "px, " + o + "px)", ...(s(B.floating) >= 1.5 && { willChange: "transform" }) } : { position: n, left: e, top: o };
                     }, [n, h, B.floating, w.x, w.y]);
-                return r.useMemo(() => ({ ...w, update: j, refs: V, elements: B, floatingStyles: N }), [w, j, V, B, N]);
+                return r.useMemo(() => ({ ...w, update: j, refs: W, elements: B, floatingStyles: N }), [w, j, W, B, N]);
             }
             const d = (t) => ({
                     name: "arrow",
@@ -1023,26 +1023,6 @@
                     return i(t, s, f, null == n ? void 0 : n.class, null == n ? void 0 : n.className);
                 };
         },
-        840489: (t, e, n) => {
-            function o(t) {
-                var e,
-                    n,
-                    r = "";
-                if ("string" == typeof t || "number" == typeof t) r += t;
-                else if ("object" == typeof t)
-                    if (Array.isArray(t)) {
-                        var i = t.length;
-                        for (e = 0; e < i; e++) t[e] && (n = o(t[e])) && (r && (r += " "), (r += n));
-                    } else for (n in t) t[n] && (r && (r += " "), (r += n));
-                return r;
-            }
-            function r() {
-                for (var t, e, n = 0, r = "", i = arguments.length; n < i; n++) (t = arguments[n]) && (e = o(t)) && (r && (r += " "), (r += e));
-                return r;
-            }
-            n.d(e, { W: () => r, Z: () => i });
-            const i = r;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.Verified~ondemand.XChat-d2eb5610.1f39ed8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.Verified~ondemand.XChat-d2eb5610.54a97dca.js.map

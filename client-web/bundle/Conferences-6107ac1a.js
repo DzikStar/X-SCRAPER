@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Conferences-6107ac1a", "loader.AudioDock", "loader.AudioContextVoiceMedia", "icons/IconSortArrows-js"],
+    ["bundle.Conferences-6107ac1a", "loader.AudioDock", "loader.AudioContextVoiceMedia", "icons/IconExiting-js"],
     {
         403883: (e, n, l) => {
             l.d(n, { Z: () => o });
@@ -362,7 +362,7 @@
             };
         },
         965728: (e, n, l) => {
-            l.d(n, { C_: () => h, I5: () => p, K2: () => y, L$: () => u, Rb: () => f, nk: () => g, sI: () => _, xr: () => k });
+            l.d(n, { C_: () => h, I5: () => p, K2: () => y, L$: () => u, Rb: () => f, nk: () => g, sI: () => v, xr: () => k });
             var t = l(202784),
                 r = l(483677),
                 a = l(782578),
@@ -409,7 +409,7 @@
                             return e;
                     }
                 },
-                _ = () => {
+                v = () => {
                     const [e, n] = t.useReducer(b, { isZoomed: !1, showControls: !0 });
                     return {
                         hideButtons: e.isZoomed || !e.showControls,
@@ -508,7 +508,7 @@
                 return s({ listItem1: l, listItem2: c(t, n) });
             }
         },
-        98440: (e, n, l) => {
+        297896: (e, n, l) => {
             l.r(n), l.d(n, { default: () => o });
             var t = l(202784),
                 r = l(890601),
@@ -516,12 +516,12 @@
                 s = l(347101);
             const i = (e = {}) => {
                 const { direction: n } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: n });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M4 4.5C4 3.12 5.12 2 6.5 2h11C18.88 2 20 3.12 20 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-11C5.12 22 4 20.88 4 19.5V16h2v3.5c0 .28.22.5.5.5h11c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-11c-.28 0-.5.22-.5.5V8H4V4.5zm6.95 3.04L15.42 12l-4.47 4.46-1.41-1.42L11.58 13H2v-2h9.58L9.54 8.96l1.41-1.42z" })) }, { writingDirection: n });
             };
             i.metadata = { width: 24, height: 24 };
             const o = i;
         },
-        413522: (e, n, l) => {
+        452693: (e, n, l) => {
             l.r(n), l.d(n, { default: () => o });
             var t = l(202784),
                 r = l(890601),
@@ -529,7 +529,7 @@
                 s = l(347101);
             const i = (e = {}) => {
                 const { direction: n } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M1.54 8.04L7 2.59l5.46 5.45-1.42 1.42L8 6.41V21H6V6.41L2.96 9.46 1.54 8.04zM18 17.59l3.04-3.05 1.42 1.42L17 21.41l-5.46-5.45 1.42-1.42L16 17.59V3h2v14.59z" })) }, { writingDirection: n });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: n });
             };
             i.metadata = { width: 24, height: 24 };
             const o = i;
@@ -596,4 +596,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-6107ac1a.b8dd3c3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-6107ac1a.e43cc67a.js.map

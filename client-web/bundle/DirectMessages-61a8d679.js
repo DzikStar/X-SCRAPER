@@ -50,7 +50,7 @@
                 P = n.n(k),
                 D = n(913313),
                 A = n(201787),
-                U = n(253493),
+                U = n(496364),
                 M = n(952793),
                 R = n(10656),
                 B = n(198506),
@@ -292,7 +292,7 @@
                 E = n(947135),
                 y = n(290402),
                 O = n(721754),
-                N = n(253493),
+                N = n(496364),
                 S = n(443781),
                 T = n(62857),
                 Z = n(712816),
@@ -631,4 +631,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-61a8d679.6062655a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-61a8d679.34fc946a.js.map

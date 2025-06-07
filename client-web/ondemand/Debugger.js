@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.Debugger"],
+    ["ondemand.Debugger", "icons/IconEye-js"],
     {
         232678: (e, t, n) => {
             n.r(t), n.d(t, { default: () => xe });
@@ -141,7 +141,7 @@
             function M(e, t) {
                 return `data:${t};base64,${e}`;
             }
-            async function F(e, t, n) {
+            async function D(e, t, n) {
                 const r = await fetch(e, t);
                 if (404 === r.status) throw new Error(`Resource "${r.url}" not found`);
                 const o = await r.blob();
@@ -158,17 +158,17 @@
                         i.readAsDataURL(o);
                 });
             }
-            const D = {};
+            const F = {};
             async function H(e, t, n) {
                 const r = (function (e, t, n) {
                     let r = e.replace(/\?.*/, "");
                     return n && (r = e), /ttf|otf|eot|woff2?/i.test(r) && (r = r.replace(/.*\//, "")), t ? `[${t}]${r}` : r;
                 })(e, t, n.includeQueryParams);
-                if (null != D[r]) return D[r];
+                if (null != F[r]) return F[r];
                 let o;
                 n.cacheBust && (e += (/\?/.test(e) ? "&" : "?") + new Date().getTime());
                 try {
-                    const r = await F(
+                    const r = await D(
                         e,
                         n.fetchRequestInit,
                         ({ res: e, result: n }) => (
@@ -184,7 +184,7 @@
                     let r = `Failed to fetch resource: ${e}`;
                     t && (r = "string" == typeof t ? t : t.message);
                 }
-                return (D[r] = o), o;
+                return (F[r] = o), o;
             }
             async function N(e, t) {
                 return _(e, HTMLCanvasElement)
@@ -211,11 +211,11 @@
                               } catch (e) {}
                               return e.cloneNode(!1);
                           })(e, t)
-                        : e.cloneNode(O(e));
+                        : e.cloneNode(z(e));
             }
             const B = (e) => null != e.tagName && "SLOT" === e.tagName.toUpperCase(),
-                O = (e) => null != e.tagName && "SVG" === e.tagName.toUpperCase();
-            function z(e, t, n) {
+                z = (e) => null != e.tagName && "SVG" === e.tagName.toUpperCase();
+            function O(e, t, n) {
                 return (
                     _(t, Element) &&
                         ((function (e, t, n) {
@@ -256,7 +256,7 @@
                           .then((n) =>
                               (async function (e, t, n) {
                                   var r, o;
-                                  if (O(t)) return t;
+                                  if (z(t)) return t;
                                   let i = [];
                                   return (
                                       (i = B(e) && e.assignedNodes ? b(e.assignedNodes()) : _(e, HTMLIFrameElement) && (null === (r = e.contentDocument) || void 0 === r ? void 0 : r.body) ? b(e.contentDocument.body.childNodes) : b((null !== (o = e.shadowRoot) && void 0 !== o ? o : e).childNodes)),
@@ -275,7 +275,7 @@
                                   );
                               })(e, n, t),
                           )
-                          .then((n) => z(e, n, t))
+                          .then((n) => O(e, n, t))
                           .then((e) =>
                               (async function (e, t) {
                                   const n = e.querySelectorAll ? e.querySelectorAll("use") : [];
@@ -408,7 +408,7 @@
                 const r = /url\(["']?([^"')]+)["']?\)/g,
                     o = (n.match(/url\([^)]+\)/g) || []).map(async (o) => {
                         let i = o.replace(r, "$1");
-                        return i.startsWith("https://") || (i = new URL(i, e.url).href), F(i, t.fetchRequestInit, ({ result: e }) => ((n = n.replace(o, `url(${e})`)), [o, e]));
+                        return i.startsWith("https://") || (i = new URL(i, e.url).href), D(i, t.fetchRequestInit, ({ result: e }) => ((n = n.replace(o, `url(${e})`)), [o, e]));
                     });
                 return Promise.all(o).then(() => n);
             }
@@ -975,6 +975,19 @@
             n.d(t, { Z: () => r });
             const r = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
+        988227: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => l });
+            var r = n(202784),
+                o = n(890601),
+                i = n(783427),
+                a = n(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Debugger.fd5fd35a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Debugger.5f4df0fa.js.map

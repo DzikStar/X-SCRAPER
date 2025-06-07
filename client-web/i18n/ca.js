@@ -1174,7 +1174,6 @@
                 t("c3aa76c4", "Llengües que podries saber"),
                 t("g099069c", "Gestiona les llengües inferides per X en funció de la teva activitat, com ara els comptes que segueixes o les publicacions amb què interacciones."),
                 t("cf9ce876", "Idiomes de l'aplicació i de les publicacions"),
-                t("d4372cf4", "English (US), 中文(简体), Español"),
                 t("f8e46b90", "Aquests són els comptes socials que has connectat al compte de X per iniciar la sessió. En pots desactivar l'accés des d'aquí."),
                 t("d84ed6b2", "Desconnecta"),
                 t("i51130d4", "Google"),
@@ -1917,9 +1916,9 @@
                 t("a8fdd09c", "Publica l'article"),
                 t("d8047cc8", "Publica"),
                 t("ff7ddca2", "Quan el publiquis, l'article es mostrarà com una publicació. A més, el podràs trobar a la pestanya Articles del teu perfil."),
-                t("ef34d7be", "Els controls d'audiència i de resposta no es poden editar un cop s'ha publicat l'article.");
-            t("e52d4998", "Tria la teva audiència"),
-                t("d7985b24", "Tria qui pot respondre a aquest article"),
+                t("ef34d7be", "Els controls d'audiència i de resposta no es poden editar un cop s'ha publicat l'article."),
+                t("e52d4998", "Tria la teva audiència");
+            t("d7985b24", "Tria qui pot respondre a aquest article"),
                 t("b5660338", "Vista prèvia de la cronologia"),
                 t("hff1b97a", "Només els subscriptors hi poden respondre."),
                 t("a330771e", "Copia l'enllaç al porta-retalls"),
@@ -2973,9 +2972,9 @@
                 t("ce6d095a", "Professions"),
                 t("e0adec82", "Recursos de marca"),
                 t("df1b7550", "Màrqueting"),
-                t("he258678", "X per a empreses");
-            t("c6f58084", "Desenvolupadors"),
-                t("d83f18d2", "Directori"),
+                t("he258678", "X per a empreses"),
+                t("c6f58084", "Desenvolupadors");
+            t("d83f18d2", "Directori"),
                 t("hc5aa17c", "Obtén l'aplicació de X"),
                 t("j0693948", "Obtén l'aplicació de Grok"),
                 t("fce9ecce", "Vídeos suggerits"),
@@ -3887,11 +3886,11 @@
                 t("ddeb0a3c", "Aquí tens la Comunitat. Te n'agraden els usuaris? Dona-hi un cop d'ull."),
                 t("e111f531", function (e) {
                     return e.count + " estan escoltant";
+                }),
+                t("cbef820f", function (e) {
+                    return e.screenName + " ha republicat la transmissió!";
                 });
-            t("cbef820f", function (e) {
-                return e.screenName + " ha republicat la transmissió!";
-            }),
-                t("e3275464", "Envia"),
+            t("e3275464", "Envia"),
                 t("cededf2a", "Amfitrió"),
                 t("i2caef48", "Coamfitrions"),
                 t("j245c654", "Participants"),
@@ -4925,9 +4924,9 @@
                 t("d9f9dec0", "Mostra l'espai"),
                 t("h0c1f37a", "Mostra les analítiques dels espais"),
                 t("e41fffbc", "Temps total de visualització dels vídeos."),
-                t("if2909ba", "Temps de visualització");
-            t("i0e5bf4c", "Els teus vídeos"),
-                t("ed99baea", "Accès beta anticipat"),
+                t("if2909ba", "Temps de visualització"),
+                t("i0e5bf4c", "Els teus vídeos");
+            t("ed99baea", "Accès beta anticipat"),
                 t("gf898b70", "Cerca avançada"),
                 t("d2a43a7a", 'conté "ia" i "empresa emergent"'),
                 t("a8584698", "empresa emergent d'ia"),
@@ -5881,9 +5880,9 @@
                 t("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Suprimeix la carpeta");
-            t("f4ea967a", "S'ha suprimit la carpeta"),
-                t("b670aa62", "Nom de la carpeta"),
+                t("h18f86a4", "Suprimeix la carpeta"),
+                t("f4ea967a", "S'ha suprimit la carpeta");
+            t("b670aa62", "Nom de la carpeta"),
                 t("aece5462", "El nom de la carpeta s'ha actualitzat correctament"),
                 t("e3299b94", "Alguna cosa ha anat malament. Torna a provar d'actualitzar la carpeta d'aquí a un minut."),
                 t("c09ea714", "Alguna cosa ha anat malament. Torna a provar de suprimir la carpeta d'aquí a un minut."),
@@ -6885,9 +6884,9 @@
                 t("ede7d0a2", "Moneda"),
                 t("b925c18c", "Tipus de salari"),
                 t("j3d242ce", "Interval no vàlid"),
-                t("f4d07bd2", "Inclou detalls opcionals perquè els candidats puguin trobar fàcilment les funcions amb la cerca.");
-            t("b8cbb51a", "Resum de la feina"),
-                t("bda6881e", "Aquesta feina s'ha importat del teu sistema de seguiment d'aspirants (ATS). Tingues en compte que només es poden modificar camps concrets."),
+                t("f4d07bd2", "Inclou detalls opcionals perquè els candidats puguin trobar fàcilment les funcions amb la cerca."),
+                t("b8cbb51a", "Resum de la feina");
+            t("bda6881e", "Aquesta feina s'ha importat del teu sistema de seguiment d'aspirants (ATS). Tingues en compte que només es poden modificar camps concrets."),
                 t("b075c68a", "Edita la feina"),
                 t("d4b6a6e0", "Spotlight de perfil"),
                 t("j2dd3686", "Mostra les feines destacades a sobre de les meves publicacions."),
@@ -7230,6 +7229,8 @@
                 t("hd80bd3e", "Patrocina una publicació"),
                 t("fe2b0008", "Aprèn a utilitzar X"),
                 t("h257d4aa", "Selecciona una publicació per patrocinar-la"),
+                t("e9334fe6", "Data updates every few minutes"),
+                t("a6d7b1d0", "Based on X Internal Data"),
                 t("h9b28dae", "You’re saving time with an ad-free feed"),
                 t("f6c50ec0", "La prova sense anuncis ha finalitzat"),
                 t("e1d1fbca", "You’ve avoided"),
@@ -7864,8 +7865,7 @@
                 t("i5f14be7", function (e) {
                     return "Et donem la benvinguda, " + e.displayName;
                 }),
-                t("a76d58ba", "Analítiques d'anuncis"),
-                t("eccd0e1a", "Analítiques de l'organització");
+                t("a76d58ba", "Analítiques d'anuncis");
             function s(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7904,7 +7904,8 @@
                     n(e, a)
                 );
             }
-            t("deea1708", "Vols veure les analítiques de tots els teus comptes de X?"),
+            t("eccd0e1a", "Analítiques de l'organització"),
+                t("deea1708", "Vols veure les analítiques de tots els teus comptes de X?"),
                 t("eb603ffc", "Actualitza per afiliar la teva xarxa i consultar les analítiques agregades."),
                 t("gf67aae4", "Actualitza a l'accés total"),
                 t("h75e3618", "Inclou l'organització"),
@@ -8902,9 +8903,9 @@
                 t("a6ada13e", "Compra ara"),
                 t("j0f12222", "Mostra'n més"),
                 t("f569f7c8", "Ves al lloc web"),
-                t("j0c6772a", "Visita el lloc web"),
-                t("f73003aa", "El vídeo es reproduirà després de l'anunci");
-            t("b3112b8a", "Omet"),
+                t("j0c6772a", "Visita el lloc web");
+            t("f73003aa", "El vídeo es reproduirà després de l'anunci"),
+                t("b3112b8a", "Omet"),
                 t("h6333ad0", "Omet l'anunci"),
                 t("c59da417", function (e) {
                     return "Omet l'anunci d'aquí a: " + e.seconds;
@@ -13352,4 +13353,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.66a02d8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.2877651a.js.map

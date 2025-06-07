@@ -138,7 +138,7 @@
         746659: (e, t, r) => {
             r.d(t, { BE: () => p, Gx: () => b, r0: () => y });
             var i = r(552322),
-                n = r(702024),
+                n = r(193686),
                 o = r(202784),
                 s = r(889906),
                 a = r(134877),
@@ -267,4 +267,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-971a3c48.1005fe7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-971a3c48.9892032a.js.map

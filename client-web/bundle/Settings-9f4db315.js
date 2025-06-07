@@ -43,12 +43,12 @@
                 }
                 _renderContent() {
                     const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: a, isFullWidth: l, isLarge: c, leftControl: d, middleControl: p, position: m, rightControl: h, secondaryBar: f, style: C, subtitle: b, title: w, titleDomId: y, titleIconCell: g, titleIconCellSize: k, withBackground: v, withWideContainer: Z } = this.props,
-                        { isModal: E } = this.context,
-                        x = a ? d : n.createElement(i.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        _ = (function (e, t, o) {
+                        { isModal: B } = this.context,
+                        E = a ? d : n.createElement(i.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        x = (function (e, t, o) {
                             return e && !(t && o);
-                        })(!!v, E, !!f);
-                    return n.createElement(n.Fragment, null, n.createElement(s.Z, { centerTitle: t, centeredLogo: o, isFullWidth: l, isLarge: c, leftControl: x, middleControl: p, position: u(m, E, r), rightControl: h, style: C, subtitle: b, title: w, titleDomId: y, titleIconCell: g, titleIconCellSize: k, withBackground: _, withWideContainer: Z }), f || null);
+                        })(!!v, B, !!f);
+                    return n.createElement(n.Fragment, null, n.createElement(s.Z, { centerTitle: t, centeredLogo: o, isFullWidth: l, isLarge: c, leftControl: E, middleControl: p, position: u(m, B, r), rightControl: h, style: C, subtitle: b, title: w, titleDomId: y, titleIconCell: g, titleIconCellSize: k, withBackground: x, withWideContainer: Z }), f || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -75,61 +75,67 @@
                 });
             };
         },
-        253493: (e, t, o) => {
-            o.d(t, { Z: () => g });
+        222718: (e, t, o) => {
+            o.d(t, { Z: () => b });
             var n = o(202784),
-                r = o(107267),
-                a = o(791632),
-                l = o(325686),
-                i = o(537392),
-                s = o(10656),
-                c = o(655352),
-                d = o(555079),
-                u = o(500002),
-                p = o(625661),
-                m = o(449067),
-                h = o(655543),
-                f = o(715601),
-                C = o(392237);
-            const b = C.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...C.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
-            class w extends n.Component {
+                r = o(325686),
+                a = o(537392),
+                l = o(10656),
+                i = o(655352),
+                s = o(555079),
+                c = o(500002),
+                d = o(625661),
+                u = o(449067),
+                p = o(655543),
+                m = o(715601),
+                h = o(392237);
+            const f = h.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...h.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
+            class C extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderChildren = () => {
                             const { children: e } = this.props;
-                            return this.context.rootDetailPerColumnScroll ? n.createElement(l.Z, { style: b.fill }, n.createElement(f.Z, { style: b.viewportView }, this._renderInlineNav({ isTwoColumnLayout: !0 }), e)) : e;
+                            return this.context.rootDetailPerColumnScroll ? n.createElement(r.Z, { style: f.fill }, n.createElement(m.Z, { style: f.viewportView }, this._renderInlineNav({ isTwoColumnLayout: !0 }), e)) : e;
                         });
                 }
                 render() {
-                    return n.createElement(i.ZP, null, ({ containerWidth: e }) => (s.Z.isTwoColumnLayout(e) ? this._renderForTwoColumnLayout() : this._renderForOneColumnLayout()));
+                    return n.createElement(a.ZP, null, ({ containerWidth: e }) => (l.Z.isTwoColumnLayout(e) ? this._renderForTwoColumnLayout() : this._renderForOneColumnLayout()));
                 }
                 _renderForOneColumnLayout() {
-                    const { appBarStyle: e, children: t, leftControl: o, screenType: r, showSubtitleOnRoot: a, showSubtitleOnWideDetail: l, withBottomBorder: i, withDetailOpen: s, ...d } = this.props;
-                    return n.createElement(n.Fragment, null, (0, c.ZP)() ? this._renderInlineNav({ isTwoColumnLayout: !1 }) : n.createElement(m.Z.Configure, d), t);
+                    const { appBarStyle: e, children: t, leftControl: o, screenType: r, showBackButtonOnRoot: a, showSubtitleOnRoot: l, showSubtitleOnWideDetail: s, showTitleOnRoot: c, withBottomBorder: d, withDetailOpen: p, ...m } = this.props;
+                    return n.createElement(n.Fragment, null, (0, i.ZP)() ? this._renderInlineNav({ isTwoColumnLayout: !1 }) : n.createElement(u.Z.Configure, m), t);
                 }
                 _renderForTwoColumnLayout() {
                     const e = this.context.rootDetailPerColumnScroll;
                     return n.createElement(n.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: t, TabBar: o, appBarStyle: r, backLocation: a, documentTitle: i, headerless: s, history: c, leftControl: u, middleControl: h, onBackClick: f, rightControl: C, screenType: w, searchBoxOptions: y, secondaryBar: g, showSubtitleOnRoot: k, showSubtitleOnWideDetail: v, subtitle: Z, title: E, titleIconCell: x, titleIconCellSize: _, withDetailOpen: B, withSearchBox: S, withTweetButton: D, withWideContainer: I } = this.props,
-                        T = "root" === w,
-                        F = "secondaryRoot" === w,
-                        L = "primaryDetail" === w,
-                        A = (L && v) || (T && k),
-                        P = T || (L && e),
-                        N = T ? d.ey : L ? d.vX : void 0,
-                        R = n.createElement(l.Z, { style: b.appBarContainer }, n.createElement(p.ZP, { backLocation: a, fixed: !1, hideBackButton: P, history: c, leftControl: u, middleControl: h, onBackClick: f, rightControl: C, secondaryBar: g, style: r, subtitle: A ? Z : void 0, title: E, titleDomId: N, titleIconCell: x, titleIconCellSize: _, withWideContainer: I })),
-                        O = T || (F && B) ? null : n.createElement(m.Z.Configure, { SideNavButton: t, TabBar: o, backLocation: a, documentTitle: i, headerless: s, middleControl: h, onBackClick: f, rightControl: C, searchBoxOptions: y, subtitle: Z, title: E, withSearchBox: S, withTweetButton: D });
-                    return n.createElement(n.Fragment, null, O, R);
+                    const { SideNavButton: t, TabBar: o, appBarStyle: a, backLocation: l, documentTitle: i, headerless: c, history: p, leftControl: m, middleControl: h, onBackClick: C, rightControl: b, screenType: w, searchBoxOptions: y, secondaryBar: g, showBackButtonOnRoot: k, showSubtitleOnRoot: v, showSubtitleOnWideDetail: Z, showTitleOnRoot: B, subtitle: E, title: x, titleIconCell: _, titleIconCellSize: S, withDetailOpen: D, withSearchBox: I, withTweetButton: T, withWideContainer: F } = this.props,
+                        L = "root" === w,
+                        A = "secondaryRoot" === w,
+                        P = "primaryDetail" === w,
+                        N = (P && Z) || (L && v),
+                        R = (L && !k) || (P && e),
+                        O = (L && !B) || (P && e && !B),
+                        W = L ? s.ey : P ? s.vX : void 0,
+                        z = n.createElement(r.Z, { style: f.appBarContainer }, n.createElement(d.ZP, { backLocation: l, fixed: !1, hideBackButton: R, history: p, leftControl: m, middleControl: h, onBackClick: C, rightControl: b, secondaryBar: g, style: a, subtitle: N ? E : void 0, title: O ? void 0 : x, titleDomId: W, titleIconCell: _, titleIconCellSize: S, withWideContainer: F })),
+                        M = L || (A && D) ? null : n.createElement(u.Z.Configure, { SideNavButton: t, TabBar: o, backLocation: l, documentTitle: i, headerless: c, middleControl: h, onBackClick: C, rightControl: b, searchBoxOptions: y, subtitle: E, title: x, withSearchBox: I, withTweetButton: T });
+                    return n.createElement(n.Fragment, null, M, z);
                 }
             }
-            (w.contextType = h.Z), (w.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0 });
-            const y = (0, u.ZP)(w),
-                g = (e) => {
-                    const t = (0, r.useHistory)();
-                    return (0, a.HD)(t) ? e.children || null : n.createElement(y, e);
-                };
+            (C.contextType = p.Z), (C.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0, showBackButtonOnRoot: !1, showTitleOnRoot: !0 });
+            const b = (0, c.ZP)(C);
+        },
+        496364: (e, t, o) => {
+            o.d(t, { Z: () => i });
+            var n = o(202784),
+                r = o(107267),
+                a = o(791632),
+                l = o(222718);
+            const i = (e) => {
+                const t = (0, r.useHistory)();
+                return (0, a.HD)(t) ? e.children || null : n.createElement(l.Z, e);
+            };
         },
         534763: (e, t, o) => {
             o.d(t, { H: () => c, b: () => d });
@@ -171,7 +177,7 @@
             const w = u().f065ba8c,
                 y = u().b08821f4,
                 g = c.default.create((e) => ({ root: { flex: 1, flexDirection: "column", position: "relative" }, typeaheadContainer: { flex: 1, position: "relative" }, keydownInputListener: { flexShrink: 1 }, dropdown: { backgroundColor: e.colors.cellBackground, start: 0, end: 0, overflowY: "auto", overscrollBehavior: "contain", position: "absolute", top: 0 }, modalDropdown: { backgroundColor: e.colors.cellBackground, flex: 1, minHeight: 300, position: "relative", overflowY: "auto", overscrollBehavior: "auto" }, wideModeDropdown: { borderRadius: e.borderRadii.medium, boxShadow: e.boxShadows.medium, minHeight: 100, maxHeight: `calc(80vh - ${e.componentDimensions.appBarHeight})` }, wrapper: { alignItems: "stretch", flex: 1 }, topBorder: { borderTopColor: e.colors.gray200, borderTopStyle: "solid", borderTopWidth: e.borderWidths.small }, inputContainer: { flexDirection: "row", alignItems: "center" }, inputWrapper: { flex: 1 }, backButton: { marginEnd: e.spaces.space4 } })),
-                k = ({ alwaysOpen: e, disableClearButton: t = !1, dropdownPosition: o = "overlap", inputStyle: c, isCompact: d, isModal: u, items: k, onBackClicked: v, onClick: Z, onDismiss: E, onFocus: x, onItemClick: _, onQueryChange: B, onSubmit: S, placeholder: D, renderEmptyState: I, renderInSearchField: T, rounded: F, shouldAutoFocus: L, shouldClearOnSelect: A, shouldFocusOnClear: P, shouldRenderEmptyState: N, source: R, style: O, testID: W }) => {
+                k = ({ alwaysOpen: e, disableClearButton: t = !1, dropdownPosition: o = "overlap", inputStyle: c, isCompact: d, isModal: u, items: k, onBackClicked: v, onClick: Z, onDismiss: B, onFocus: E, onItemClick: x, onQueryChange: _, onSubmit: S, placeholder: D, renderEmptyState: I, renderInSearchField: T, rounded: F, shouldAutoFocus: L, shouldClearOnSelect: A, shouldFocusOnClear: P, shouldRenderEmptyState: N, source: R, style: O, testID: W }) => {
                     const z = n.useRef(null),
                         M = n.useRef(null),
                         H = n.useRef(null),
@@ -199,17 +205,17 @@
                             e !== K && U(e);
                         },
                         te = (e) => {
-                            q(e), B?.(e);
+                            q(e), _?.(e);
                         },
                         oe = () => {
-                            X(!1), E?.();
+                            X(!1), B?.();
                         },
                         ne = () => {
                             oe(), H?.current?.blur();
                         },
                         re = (e, t) => {
                             const o = A ? "" : G;
-                            X(!1), H.current && (A && P ? H.current.focus() : (A && H.current?.clear(), H.current?.blur())), te(o), E?.(), _?.(e, t);
+                            X(!1), H.current && (A && P ? H.current.focus() : (A && H.current?.clear(), H.current?.blur())), te(o), B?.(), x?.(e, t);
                         },
                         ae = () => {
                             Q((0, f.A1)());
@@ -238,7 +244,7 @@
                                 {
                                     "aria-label": D,
                                     onSubmit: (e) => {
-                                        e.preventDefault(), e.stopPropagation(), H?.current?.blur(), X(!1), E?.(), S?.();
+                                        e.preventDefault(), e.stopPropagation(), H?.current?.blur(), X(!1), B?.(), S?.();
                                     },
                                     role: "search",
                                     style: g.wrapper,
@@ -281,7 +287,7 @@
                                                 te("");
                                             },
                                             onFocus: () => {
-                                                X(!0), ee(), x?.();
+                                                X(!0), ee(), E?.();
                                             },
                                             onLayout: ee,
                                             placeholder: D,
@@ -405,10 +411,10 @@
                 k = d().j59f0b94,
                 v = d().b81aaad8,
                 Z = d().c7044880,
-                E = { [C.xSmall]: y, [C.small]: g, [C.normal]: k, [C.large]: v, [C.xLarge]: Z },
-                x = [y, g, k, v, Z],
-                _ = d().e46dffa0,
-                B = l.default.create((e) => ({ sliderContainer: { alignItems: "center", flexDirection: "row", padding: e.spaces.space16 }, slider: { flexGrow: 1, marginHorizontal: e.spaces.space20 } })),
+                B = { [C.xSmall]: y, [C.small]: g, [C.normal]: k, [C.large]: v, [C.xLarge]: Z },
+                E = [y, g, k, v, Z],
+                x = d().e46dffa0,
+                _ = l.default.create((e) => ({ sliderContainer: { alignItems: "center", flexDirection: "row", padding: e.spaces.space16 }, slider: { flexGrow: 1, marginHorizontal: e.spaces.space20 } })),
                 S = f((e) => {
                     const { analytics: t, onSliderChanged: o, updateSettings: a } = e,
                         c = n.useCallback(
@@ -418,7 +424,7 @@
                             },
                             [t, o, a],
                         );
-                    return n.createElement(u.Z, { themeItem: "textSize" }, (e) => n.createElement(r.Z, { style: B.sliderContainer }, n.createElement(i.ZP, { size: "subtext2" }, "Aa"), n.createElement(r.Z, { style: B.slider }, n.createElement(s.Z, { accessibilityLabelValueText: E[l.default.theme.scale], "aria-label": _, autoFocus: e, hoverLabels: x, max: w, min: 0, onChange: c, value: b.indexOf(l.default.theme.scale), withMarkers: !0 })), n.createElement(i.ZP, { size: "headline1" }, "Aa")));
+                    return n.createElement(u.Z, { themeItem: "textSize" }, (e) => n.createElement(r.Z, { style: _.sliderContainer }, n.createElement(i.ZP, { size: "subtext2" }, "Aa"), n.createElement(r.Z, { style: _.slider }, n.createElement(s.Z, { accessibilityLabelValueText: B[l.default.theme.scale], "aria-label": x, autoFocus: e, hoverLabels: E, max: w, min: 0, onChange: c, value: b.indexOf(l.default.theme.scale), withMarkers: !0 })), n.createElement(i.ZP, { size: "headline1" }, "Aa")));
                 });
         },
         564297: (e, t, o) => {
@@ -555,4 +561,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Settings-9f4db315.5a16eeaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Settings-9f4db315.77e55fda.js.map

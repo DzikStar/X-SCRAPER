@@ -1174,7 +1174,6 @@
                 e("c3aa76c4", "Kielet, joita saatat osata"),
                 e("g099069c", "Hallitse kieliä, joita X on päätellyt sinun osaavan toimintasi, kuten seuraamiesi tilien ja sinut reagoimaan saaneiden julkaisujen perusteella."),
                 e("cf9ce876", "Sovelluksen ja julkaisujen kieli"),
-                e("d4372cf4", "English (US), 中文(简体), Español"),
                 e("f8e46b90", "Nämä ovat X-tiliin liittämäsi sosiaaliset tilit. Voit poistaa käyttöoikeuden täällä."),
                 e("d84ed6b2", "Poista yhteys"),
                 e("i51130d4", "Google"),
@@ -1917,9 +1916,9 @@
                 e("a8fdd09c", "Julkaise artikkeli"),
                 e("d8047cc8", "Julkaise"),
                 e("ff7ddca2", "Artikkelisi ilmestyy julkaisuna, kun olet julkaissut sen. Löydät sen myös profiilisi Artikkelit-välilehdeltä."),
-                e("ef34d7be", "Yleisö- ja vastausvalintoja ei voi muuttaa artikkelin julkaisun jälkeen.");
-            e("e52d4998", "Valitse yleisösi"),
-                e("d7985b24", "Valitse, ketkä voivat vastata tähän artikkeliin"),
+                e("ef34d7be", "Yleisö- ja vastausvalintoja ei voi muuttaa artikkelin julkaisun jälkeen."),
+                e("e52d4998", "Valitse yleisösi");
+            e("d7985b24", "Valitse, ketkä voivat vastata tähän artikkeliin"),
                 e("b5660338", "Aikajanan esikatselu"),
                 e("hff1b97a", "Vain tilaajat voivat vastata."),
                 e("a330771e", "Kopioi linkki leikepöydällesi"),
@@ -2973,9 +2972,9 @@
                 e("ce6d095a", "Työpaikat"),
                 e("e0adec82", "Brändiresurssit"),
                 e("df1b7550", "Markkinointi"),
-                e("he258678", "X yrityksille");
-            e("c6f58084", "Kehittäjät"),
-                e("d83f18d2", "Hakemisto"),
+                e("he258678", "X yrityksille"),
+                e("c6f58084", "Kehittäjät");
+            e("d83f18d2", "Hakemisto"),
                 e("hc5aa17c", "Hanki X-sovellus"),
                 e("j0693948", "Hanki Grok-sovellus"),
                 e("fce9ecce", "Ehdotetut videot"),
@@ -3887,11 +3886,11 @@
                 e("ddeb0a3c", "Tässä on tämä Yhteisö. Pidätkö väestä? Katso ympärillesi."),
                 e("e111f531", function (a) {
                     return a.count + " linjoille saapunut" + n(a.count, "", "ta");
+                }),
+                e("cbef820f", function (a) {
+                    return a.screenName + " julkaisi striimin uudelleen!";
                 });
-            e("cbef820f", function (a) {
-                return a.screenName + " julkaisi striimin uudelleen!";
-            }),
-                e("e3275464", "Lähetä"),
+            e("e3275464", "Lähetä"),
                 e("cededf2a", "Host"),
                 e("i2caef48", "Co-hostit"),
                 e("j245c654", "Puhujat"),
@@ -4925,9 +4924,9 @@
                 e("d9f9dec0", "Näytä huone"),
                 e("h0c1f37a", "Näytä huoneen tilastot"),
                 e("e41fffbc", "Videoittesi katseluaika yhteensä."),
-                e("if2909ba", "Katseluaika");
-            e("i0e5bf4c", "Videosi"),
-                e("ed99baea", "Beta-ennakkokäyttö"),
+                e("if2909ba", "Katseluaika"),
+                e("i0e5bf4c", "Videosi");
+            e("ed99baea", "Beta-ennakkokäyttö"),
                 e("gf898b70", "Tarkennettu haku"),
                 e("d2a43a7a", 'sisältää sekä termit "ai" että "startup"'),
                 e("a8584698", "ai startup"),
@@ -5881,9 +5880,9 @@
                 e("e41c9b4f", function (a) {
                     return "Tallennettu kokoelmaan " + a.bookmarkFolderName;
                 }),
-                e("h18f86a4", "Poista kansio");
-            e("f4ea967a", "Kansio on poistettu"),
-                e("b670aa62", "Kansion nimi"),
+                e("h18f86a4", "Poista kansio"),
+                e("f4ea967a", "Kansio on poistettu");
+            e("b670aa62", "Kansion nimi"),
                 e("aece5462", "Kansion nimen päivitys onnistui"),
                 e("e3299b94", "Jokin meni pieleen. Yritä kansion päivittämistä hetken kuluttua uudelleen."),
                 e("c09ea714", "Jokin meni pieleen. Yritä kansion poistamista hetken kuluttua uudelleen."),
@@ -6885,9 +6884,9 @@
                 e("ede7d0a2", "Valuutta"),
                 e("b925c18c", "Palkkatyyppi"),
                 e("j3d242ce", "Virheellinen väli"),
-                e("f4d07bd2", "Lisää halutessasi yksityiskohtia, jotta hakijat löytävät helpommin avoimet paikkasi hakutoiminnolla.");
-            e("b8cbb51a", "Tehtävän yhteenveto"),
-                e("bda6881e", "Tämä työpaikka on tuotu hakijaseurantajärjestelmästäsi (Applicant Tracking System, ATS). Huomaathan, että vain osaa kentistä voi muokata."),
+                e("f4d07bd2", "Lisää halutessasi yksityiskohtia, jotta hakijat löytävät helpommin avoimet paikkasi hakutoiminnolla."),
+                e("b8cbb51a", "Tehtävän yhteenveto");
+            e("bda6881e", "Tämä työpaikka on tuotu hakijaseurantajärjestelmästäsi (Applicant Tracking System, ATS). Huomaathan, että vain osaa kentistä voi muokata."),
                 e("b075c68a", "Muokkaa työpaikkaa"),
                 e("d4b6a6e0", "Profiilivalokeila"),
                 e("j2dd3686", "Esittele työpaikkoja julkaisujeni yläpuolella."),
@@ -7230,6 +7229,8 @@
                 e("hd80bd3e", "Mainosta julkaisua"),
                 e("fe2b0008", "Opi X:n käyttäjäksi"),
                 e("h257d4aa", "Valitse mainostettava julkaisu"),
+                e("e9334fe6", "Data updates every few minutes"),
+                e("a6d7b1d0", "Based on X Internal Data"),
                 e("h9b28dae", "You’re saving time with an ad-free feed"),
                 e("f6c50ec0", "Mainokseton kokeilusi on päättynyt"),
                 e("e1d1fbca", "You’ve avoided"),
@@ -7864,8 +7865,7 @@
                 e("i5f14be7", function (a) {
                     return "Tervetuloa takaisin, " + a.displayName;
                 }),
-                e("a76d58ba", "Mainostilastot"),
-                e("eccd0e1a", "Organisaation analytiikka");
+                e("a76d58ba", "Mainostilastot");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7904,7 +7904,8 @@
                     u(a, t)
                 );
             }
-            e("deea1708", "Haluatko tarkastella tilastoja kaikista X-tileistäsi?"),
+            e("eccd0e1a", "Organisaation analytiikka"),
+                e("deea1708", "Haluatko tarkastella tilastoja kaikista X-tileistäsi?"),
                 e("eb603ffc", "Päivittämällä saat oman verkostosi affilioitua ja näet kootut tilastot."),
                 e("gf67aae4", "Päivitä tilaus täysiin käyttöoikeuksiin"),
                 e("h75e3618", "Sisällytä organisaatio"),
@@ -8902,9 +8903,9 @@
                 e("a6ada13e", "Osta nyt"),
                 e("j0f12222", "Näe lisää"),
                 e("f569f7c8", "Siirry sivustolle"),
-                e("j0c6772a", "Käy sivustolla"),
-                e("f73003aa", "Video näytetään mainoksen jälkeen");
-            e("b3112b8a", "Ohita"),
+                e("j0c6772a", "Käy sivustolla");
+            e("f73003aa", "Video näytetään mainoksen jälkeen"),
+                e("b3112b8a", "Ohita"),
                 e("h6333ad0", "Ohita mainos"),
                 e("c59da417", function (a) {
                     return "Ohita mainos " + a.seconds + " kuluttua";
@@ -13365,4 +13366,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.7f9e948a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.6e0d708a.js.map

@@ -1178,7 +1178,6 @@
                 t("c3aa76c4", "Idiomas que podes saber"),
                 t("g099069c", "Manage the languages X inferred based on your activity, such as the accounts you follow and the posts you engage with."),
                 t("cf9ce876", "App and post languages"),
-                t("d4372cf4", "English (US), 中文(简体), Español"),
                 t("f8e46b90", "These are the social accounts you connected to your X account to log in. You can disable access here."),
                 t("d84ed6b2", "Disconnect"),
                 t("i51130d4", "Google"),
@@ -1921,9 +1920,9 @@
                 t("a8fdd09c", "Publish Article"),
                 t("d8047cc8", "Publicar"),
                 t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
-                t("ef34d7be", "Audience and reply controls are not editable after an article has been published.");
-            t("e52d4998", "Choose your audience"),
-                t("d7985b24", "Choose who can reply to this Article"),
+                t("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
+                t("e52d4998", "Choose your audience");
+            t("d7985b24", "Choose who can reply to this Article"),
                 t("b5660338", "Timeline preview"),
                 t("hff1b97a", "Only Subscribed can reply."),
                 t("a330771e", "Copy link to your clipboard"),
@@ -2977,9 +2976,9 @@
                 t("ce6d095a", "Empregos"),
                 t("e0adec82", "Recursos de marca"),
                 t("df1b7550", "Marketing"),
-                t("he258678", "X for Business");
-            t("c6f58084", "Developers"),
-                t("d83f18d2", "Directory"),
+                t("he258678", "X for Business"),
+                t("c6f58084", "Developers");
+            t("d83f18d2", "Directory"),
                 t("hc5aa17c", "Get the X app"),
                 t("j0693948", "Get the Grok app"),
                 t("fce9ecce", "Suggested Videos"),
@@ -3891,11 +3890,11 @@
                 t("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
                 t("e111f531", function (e) {
                     return e.count + " usuario" + n(e.count, "", "s") + " escoitando";
+                }),
+                t("cbef820f", function (e) {
+                    return e.screenName + " reposted the stream!";
                 });
-            t("cbef820f", function (e) {
-                return e.screenName + " reposted the stream!";
-            }),
-                t("e3275464", "Enviar"),
+            t("e3275464", "Enviar"),
                 t("cededf2a", "Organizador"),
                 t("i2caef48", "Co-hosts"),
                 t("j245c654", "Speakers"),
@@ -4929,9 +4928,9 @@
                 t("d9f9dec0", "View Space"),
                 t("h0c1f37a", "View Space Analytics"),
                 t("e41fffbc", "The total watch time of your videos."),
-                t("if2909ba", "Watch Time");
-            t("i0e5bf4c", "Your videos"),
-                t("ed99baea", "Early Beta Access"),
+                t("if2909ba", "Watch Time"),
+                t("i0e5bf4c", "Your videos");
+            t("ed99baea", "Early Beta Access"),
                 t("gf898b70", "Advanced Search"),
                 t("d2a43a7a", 'contains both "ai" and "startup"'),
                 t("a8584698", "ai startup"),
@@ -5885,9 +5884,9 @@
                 t("e41c9b4f", function (e) {
                     return "Gardouse en " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Eliminar cartafol");
-            t("f4ea967a", "Eliminouse o cartafol"),
-                t("b670aa62", "Nome do cartafol"),
+                t("h18f86a4", "Eliminar cartafol"),
+                t("f4ea967a", "Eliminouse o cartafol");
+            t("b670aa62", "Nome do cartafol"),
                 t("aece5462", "O nome do cartafol actualizouse correctamente"),
                 t("e3299b94", "Houbo algún problema. Tenta actualizar o cartafol de novo dentro dun minuto."),
                 t("c09ea714", "Houbo algún problema. Tenta eliminar o cartafol de novo dentro dun minuto."),
@@ -6889,9 +6888,9 @@
                 t("ede7d0a2", "Currency"),
                 t("b925c18c", "Salary Type"),
                 t("j3d242ce", "Invalid range"),
-                t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search.");
-            t("b8cbb51a", "Job Summary"),
-                t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
+                t("b8cbb51a", "Job Summary");
+            t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 t("b075c68a", "Edit job"),
                 t("d4b6a6e0", "Detalles principais do perfil"),
                 t("j2dd3686", "Highlight featured jobs above my posts."),
@@ -7234,6 +7233,8 @@
                 t("hd80bd3e", "Promote a post"),
                 t("fe2b0008", "Learn how to use X"),
                 t("h257d4aa", "Select a post to promote"),
+                t("e9334fe6", "Data updates every few minutes"),
+                t("a6d7b1d0", "Based on X Internal Data"),
                 t("h9b28dae", "You’re saving time with an ad-free feed"),
                 t("f6c50ec0", "Your ad-free trial has ended"),
                 t("e1d1fbca", "You’ve avoided"),
@@ -7868,8 +7869,7 @@
                 t("i5f14be7", function (e) {
                     return "Welcome back, " + e.displayName;
                 }),
-                t("a76d58ba", "Ads Analytics"),
-                t("eccd0e1a", "Organization Analytics");
+                t("a76d58ba", "Ads Analytics");
             function r(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var t = a[o];
@@ -7908,7 +7908,8 @@
                     s(e, a)
                 );
             }
-            t("deea1708", "Want to view analytics across all your X accounts?"),
+            t("eccd0e1a", "Organization Analytics"),
+                t("deea1708", "Want to view analytics across all your X accounts?"),
                 t("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
                 t("gf67aae4", "Upgrade to Full Access"),
                 t("h75e3618", "Include organization"),
@@ -8906,9 +8907,9 @@
                 t("a6ada13e", "Mercar agora"),
                 t("j0f12222", "Ver máis"),
                 t("f569f7c8", "Ir ao sitio web"),
-                t("j0c6772a", "Visitar sitio web"),
-                t("f73003aa", "O vídeo reproducirase despois do anuncio");
-            t("b3112b8a", "Omitir"),
+                t("j0c6772a", "Visitar sitio web");
+            t("f73003aa", "O vídeo reproducirase despois do anuncio"),
+                t("b3112b8a", "Omitir"),
                 t("h6333ad0", "Omitir anuncio"),
                 t("c59da417", function (e) {
                     return "Omitir anuncio dentro de " + e.seconds;
@@ -13356,4 +13357,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.ccef443a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.77d5adda.js.map
