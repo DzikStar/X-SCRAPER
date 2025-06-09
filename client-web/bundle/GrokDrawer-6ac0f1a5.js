@@ -14,8 +14,8 @@
                 c = n(111677),
                 u = n.n(c),
                 b = n(725516),
-                h = n(988290),
-                m = n(928831);
+                m = n(988290),
+                h = n(928831);
             const p = u().g7b1c574,
                 f = u().f388a7ec,
                 D = u().ab1eb384,
@@ -31,8 +31,8 @@
                 ],
                 C = s.default.create((e) => ({ container: { flex: 1 }, scrollView: { flex: 1 }, contentContainerScrollView: { display: "flex", flexDirection: "column", gap: e.spaces.space12, paddingHorizontal: e.spaces.space24 }, compactContentContainerScrollView: { gap: e.spaces.space8, paddingVertical: e.spaces.space16 }, title: { fontSize: e.fontSizes.headline2 }, subtitle: { color: e.colors.gray700 }, section: { marginTop: e.spaces.space8, gap: e.spaces.space12 }, buttonContainer: { display: "flex", width: "100%", flexDirection: "row", justifyContent: "flex-end", padding: e.spaces.space24 }, compactButtonContainer: { justifyContent: "center" }, resetToDefaultButton: {} })),
                 S = () => {
-                    const { isCompactLayout: e, isGrokDrawer: a } = (0, h.ZP)(),
-                        { advancedSettings: n, setDeepersearchAdvancedSettings: s, setDeepsearchAdvancedSettings: c } = (0, m.w)(),
+                    const { isCompactLayout: e, isGrokDrawer: a } = (0, m.ZP)(),
+                        { advancedSettings: n, setDeepersearchAdvancedSettings: s, setDeepsearchAdvancedSettings: c } = (0, h.w)(),
                         u = (0, b.z)(),
                         g = e && !a,
                         k = o.useCallback(
@@ -78,15 +78,15 @@
                 c = n(125363),
                 u = n(389071),
                 b = n(962379),
-                h = n(988290),
-                m = n(448781);
+                m = n(988290),
+                h = n(448781);
             const p = "rweb.grokInputAdvancedSettings",
                 f = () => {
                     const [e, a] = o.useState(!1),
                         n = (0, d.Dv)(l.lZ),
                         f = (0, c.v9)((e) => (0, u.JU)(e)),
                         { advancedSettings: D, filterKey: g } = f,
-                        { isGrokDrawer: k } = (0, h.ZP)(),
+                        { isGrokDrawer: k } = (0, m.ZP)(),
                         w = (0, c.I0)(),
                         v = (() => {
                             const e = (0, c.oR)(),
@@ -105,7 +105,7 @@
                                 { advancedSettings: a } = e;
                             return o.useMemo(() => {
                                 const e = { Research: {}, Reasoning: {}, ImageEdit: { enabledOnClickBehavior: "FileInput" } };
-                                return a?.deepsearchArgs?.mode === m.z_ && (e.Research.label = m.p9), e;
+                                return a?.deepsearchArgs?.mode === h.z_ && (e.Research.label = h.p9), e;
                             }, [a]);
                         })(),
                         [A, C] = o.useState(""),
@@ -131,7 +131,7 @@
                             } else P(null);
                         }, [D, P]),
                         G = o.useCallback(() => {
-                            P({ ...D, deepsearchArgs: { mode: m.z_ } });
+                            P({ ...D, deepsearchArgs: { mode: h.z_ } });
                         }, [D, P]);
                     o.useEffect(() => {
                         n.get(p).then((e) => {
@@ -206,8 +206,8 @@
                 c = n(461756),
                 u = n(292484),
                 b = n(528840),
-                h = n(293115),
-                m = n(125363),
+                m = n(293115),
+                h = n(125363),
                 p = n(456228),
                 f = n(551864),
                 D = n(537392),
@@ -235,10 +235,10 @@
                 B = _().d1d92e40;
             function L() {
                 const e = (0, P.hC)("responsive_web_grok_analyze_animation"),
-                    a = (0, m.v9)(x.Es),
+                    a = (0, h.v9)(x.Es),
                     n = (0, x.f)({ conversationKey: a }),
-                    o = -1 !== (0, m.v9)(n.selectPromptSource)?.indexOf("post_analysis"),
-                    t = (0, m.v9)(n.selectStatus),
+                    o = -1 !== (0, h.v9)(n.selectPromptSource)?.indexOf("post_analysis"),
+                    t = (0, h.v9)(n.selectStatus),
                     l = t === G.Q_.TYPING || t === G.Q_.WAITING;
                 return d.createElement(r.Z, { style: O.titleTextRoot }, o && e ? (l ? d.createElement(N, { size: "headline2", weight: "bold" }, `${Z}...`) : d.createElement(E.ZP, { size: "headline2", style: O.animation }, B)) : d.createElement(E.ZP, null, T));
             }
@@ -266,9 +266,9 @@
             const Q = v.default.create((e) => ({ rightControls: { flexDirection: "row", alignItems: "center" }, composeIcon: { fill: "none" } }));
             function q({ conversationUrl: e }) {
                 const a = d.createRef(),
-                    n = (0, m.I0)(),
-                    o = (0, m.v9)(p.kX) === f.j.EXPANDED,
-                    t = (0, m.v9)(A.kX) === C.S.EXPANDED,
+                    n = (0, h.I0)(),
+                    o = (0, h.v9)(p.kX) === f.j.EXPANDED,
+                    t = (0, h.v9)(A.kX) === C.S.EXPANDED,
                     l = d.useCallback(() => {
                         const e = o ? f.j.COLLAPSED : f.j.EXPANDED;
                         e === f.j.EXPANDED && t && n(A.bi(C.S.COLLAPSED)), n(p.bi(e));
@@ -299,24 +299,24 @@
             const ne = (0, l.Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.0"),
-                        n.e("icons.5"),
-                        n.e("icons.12"),
-                        n.e("icons.20"),
                         n.e("icons.2"),
-                        n.e("icons.21"),
-                        n.e("icons.28"),
+                        n.e("icons.24"),
                         n.e("icons.10"),
+                        n.e("icons.15"),
+                        n.e("icons.27"),
+                        n.e("icons.16"),
+                        n.e("icons.12"),
+                        n.e("icons.7"),
+                        n.e("icons.5"),
+                        n.e("icons.22"),
+                        n.e("icons.19"),
                         n.e("icons.17"),
-                        n.e("icons.9"),
-                        n.e("icons.23"),
+                        n.e("icons.26"),
+                        n.e("icons.4"),
+                        n.e("icons.29"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.22"),
-                        n.e("icons.24"),
-                        n.e("icons.25"),
                         n.e("icons.14"),
-                        n.e("icons.13"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -327,12 +327,13 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.6"),
-                        n.e("icons.3"),
-                        n.e("icons.4"),
+                        n.e("icons.13"),
                         n.e("icons.1"),
+                        n.e("icons.21"),
+                        n.e("icons.6"),
                         n.e("icons.18"),
-                        n.e("icons.8"),
+                        n.e("icons.0"),
+                        n.e("icons.20"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -368,13 +369,13 @@
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
-                        n.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         n.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         n.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-bbc41769"),
                         n.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-8aa1f3e4"),
                         n.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-c6c15d67"),
                         n.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3fd5f349"),
                         n.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
+                        n.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders~ico"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
@@ -414,7 +415,6 @@
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-92ee7280"),
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-4cd14b6e"),
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-380ace89"),
-                        n.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders"),
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
                         n.e("shared~bundle.Grok~loader.Markdown"),
@@ -462,7 +462,7 @@
                             return a ? e * Math.max(a, 0.5) : Math.min(w, Math.ceil(g.T6 * e));
                         }));
                 var w;
-                const v = (0, m.v9)((e) => p.kX(e)),
+                const v = (0, h.v9)((e) => p.kX(e)),
                     y = v === f.j.EXPANDED,
                     M = v === f.j.CLOSED;
                 d.useEffect(() => {
@@ -491,7 +491,7 @@
                     : d.createElement(
                           i.Z.GrokDrawer,
                           null,
-                          d.createElement(s.Z, { id: "GrokDrawer" }, (a, t) => d.createElement(h.nO, { namespace: ae }, d.createElement(r.Z, (0, o.Z)({ ref: a() }, t({ style: [g.ZP.denyPointer, g.ZP.root, { width: e, height: n }, c.Z.reducedMotionEnabled && g.ZP.reducedMotion], testID: S.root })), d.createElement(r.Z, { onLayout: A, style: C }, d.createElement(q, { conversationUrl: "/i/grok" }), y && d.createElement(ne, null))))),
+                          d.createElement(s.Z, { id: "GrokDrawer" }, (a, t) => d.createElement(m.nO, { namespace: ae }, d.createElement(r.Z, (0, o.Z)({ ref: a() }, t({ style: [g.ZP.denyPointer, g.ZP.root, { width: e, height: n }, c.Z.reducedMotionEnabled && g.ZP.reducedMotion], testID: S.root })), d.createElement(r.Z, { onLayout: A, style: C }, d.createElement(q, { conversationUrl: "/i/grok" }), y && d.createElement(ne, null))))),
                       );
             }
         },
@@ -517,15 +517,15 @@
                 c = n(189953),
                 u = n(928831),
                 b = n(623494),
-                h = n(654917);
-            const m = t().f794af9a,
+                m = n(654917);
+            const h = t().f794af9a,
                 p = t().eccf9fea;
             function f() {
                 const e = (0, s.I0)(),
-                    a = (0, h.uf)(),
+                    a = (0, m.uf)(),
                     n = (0, d.useHistory)(),
                     r = (0, s.v9)(a.selectCanClearConversation),
-                    { access: t, changeMode: f, mode: D } = (0, h.ZP)(),
+                    { access: t, changeMode: f, mode: D } = (0, m.ZP)(),
                     { clearFilterKey: g } = (0, u.w)(),
                     k = !1 !== t,
                     w = (0, i.z)(),
@@ -564,7 +564,7 @@
                                     onClick: function () {
                                         f(c.IK.FUN, w);
                                     },
-                                    text: m,
+                                    text: h,
                                 },
                             ];
                             return o.createElement(l.default, { actionItems: a, onClose: e });
@@ -575,7 +575,7 @@
             }
         },
         654917: (e, a, n) => {
-            n.d(a, { ZP: () => p, eX: () => h, uf: () => m });
+            n.d(a, { ZP: () => p, eX: () => m, uf: () => h });
             var o = n(202784),
                 d = n(107267),
                 r = n(323265),
@@ -586,21 +586,21 @@
                 c = n(389071),
                 u = n(63538),
                 b = n(623494);
-            function h() {
+            function m() {
                 const e = (0, d.useHistory)(),
                     a = (0, s.v9)(c.Es);
                 return (0, t.HD)(e) ? (0, t.tT)(e) : a;
             }
-            function m() {
-                const e = h(),
+            function h() {
+                const e = m(),
                     a = (0, s.I0)(),
                     n = (0, s.v9)((a) => (0, c.YJ)(a, e));
                 return (0, s.v9)(n.selectIsInitialized) || a((0, c.Ki)(e)), n;
             }
             function p() {
                 const { userClaims: e } = (0, l.QZ)(),
-                    a = h(),
-                    n = m(),
+                    a = m(),
+                    n = h(),
                     d = (0, s.v9)(n.selectMessageIds),
                     t = (0, s.I0)(),
                     p = (0, s.v9)(n.selectFetchConversationIdStatus),
@@ -647,7 +647,7 @@
             }
         },
         623494: (e, a, n) => {
-            n.d(a, { DE: () => m, G$: () => l, HO: () => S, HR: () => P, JO: () => D, Jm: () => A, NH: () => x, RC: () => f, S7: () => _, UV: () => N, Uk: () => y, YI: () => c, YW: () => I, ZY: () => p, az: () => i, c3: () => t, dP: () => k, dd: () => h, eS: () => M, eV: () => C, hf: () => g, hq: () => s, kl: () => v, mm: () => b, op: () => w, pv: () => r, qQ: () => T, u1: () => E, y6: () => u, zC: () => G, zX: () => R });
+            n.d(a, { DE: () => h, G$: () => l, HO: () => S, HR: () => P, JO: () => D, Jm: () => A, NH: () => x, RC: () => f, S7: () => _, UV: () => N, Uk: () => y, YI: () => c, YW: () => I, ZY: () => p, az: () => i, c3: () => t, dP: () => k, dd: () => m, eS: () => M, eV: () => C, hf: () => g, hq: () => s, kl: () => v, mm: () => b, op: () => w, pv: () => r, qQ: () => T, u1: () => E, y6: () => u, zC: () => G, zX: () => R });
             var o = n(163889);
             function d() {
                 return `online:${window.navigator.onLine}|effectiveType:${window.navigator.connection?.effectiveType ?? "unknown"}`;
@@ -676,10 +676,10 @@
             function b(e, a, n) {
                 Z(e)({ element: "api-add-response-retry", action: "start", data: { event_info: JSON.stringify({ numRetriesExecuted: a, error: n }) } });
             }
-            function h(e, a) {
+            function m(e, a) {
                 Z(e)({ element: "api-add-response-edit", action: "start", data: { event_info: JSON.stringify(a) } });
             }
-            function m(e) {
+            function h(e) {
                 Z(e)({ element: "abort", action: "click" });
             }
             function p(e) {
@@ -751,4 +751,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.bb22a32a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.992aee0a.js.map

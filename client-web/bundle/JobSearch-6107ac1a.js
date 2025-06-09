@@ -3,7 +3,7 @@
     ["bundle.JobSearch-6107ac1a", "loader.AudioContextVoiceMedia", "icons/IconEye-js"],
     {
         771741: (e, l, a) => {
-            a.d(l, { Z: () => g });
+            a.d(l, { Z: () => m });
             var n,
                 i,
                 r,
@@ -249,10 +249,10 @@
                     params: { id: "HeGR5lrUJh1N7bMsMlHQHg", metadata: {}, name: "JobBookmarksListContainerQuery", operationKind: "query", text: null },
                 };
             c.hash = "24c236e39ef6f8567817bc588787b248";
-            const g = c;
+            const m = c;
         },
         255875: (e, l, a) => {
-            a.d(l, { Z: () => m });
+            a.d(l, { Z: () => g });
             var n,
                 i,
                 r,
@@ -262,7 +262,7 @@
                 o,
                 d,
                 c,
-                g = {
+                m = {
                     fragment: {
                         argumentDefinitions: [],
                         kind: "Fragment",
@@ -329,8 +329,8 @@
                     },
                     params: { id: "KyP8Xn6i971KhAlvtt82BA", metadata: {}, name: "JobRecommendationSettingsContainerQuery", operationKind: "query", text: null },
                 };
-            g.hash = "3d29c264d4bf9d235184f195fe296322";
-            const m = g;
+            m.hash = "3d29c264d4bf9d235184f195fe296322";
+            const g = m;
         },
         335572: (e, l, a) => {
             a.d(l, { Z: () => o });
@@ -391,7 +391,7 @@
             const o = u;
         },
         893211: (e, l, a) => {
-            a.d(l, { Z: () => g });
+            a.d(l, { Z: () => m });
             var n,
                 i,
                 r,
@@ -625,7 +625,7 @@
                     params: { id: "sNlxXap-Zl7CMjuH9hVjdw", metadata: {}, name: "JobRecommendationsListContainerQuery", operationKind: "query", text: null },
                 };
             c.hash = "a2f9147c015c58ceed84d98f3e96cbdb";
-            const g = c;
+            const m = c;
         },
         377178: (e, l, a) => {
             a.d(l, { Z: () => k });
@@ -638,8 +638,8 @@
                 o,
                 d,
                 c,
-                g,
                 m,
+                g,
                 y = {
                     fragment: {
                         argumentDefinitions: (n = [
@@ -689,14 +689,14 @@
                                         name: "result",
                                         plural: !1,
                                         selections: [
-                                            (g = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                            (m = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
                                             {
                                                 kind: "InlineFragment",
                                                 selections: [
                                                     s,
                                                     u,
                                                     { alias: null, args: null, concreteType: "JobCore", kind: "LinkedField", name: "core", plural: !1, selections: [o, { alias: null, args: null, kind: "ScalarField", name: "employment_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "external_url", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "featured", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "formatted_salary", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "job_description", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "job_function", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "job_page_url", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "location", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "location_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "posted_at", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_currency_code", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_interval", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_max", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_min", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "seniority_level", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "short_description", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "team", storageKey: null }], storageKey: null },
-                                                    { alias: null, args: null, concreteType: "ApiCompanyProfileResults", kind: "LinkedField", name: "company_profile_results", plural: !1, selections: [s, t, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [g, { kind: "InlineFragment", selections: [s, t, { alias: null, args: null, concreteType: "CompanyProfileCore", kind: "LinkedField", name: "core", plural: !1, selections: [(m = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null })], storageKey: null }, { alias: null, args: null, concreteType: "CompanyLogoImage", kind: "LinkedField", name: "logo", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "normal_url", storageKey: null }], storageKey: null }], type: "ApiCompanyProfile", abstractKey: null }], storageKey: null }], storageKey: null },
+                                                    { alias: null, args: null, concreteType: "ApiCompanyProfileResults", kind: "LinkedField", name: "company_profile_results", plural: !1, selections: [s, t, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [m, { kind: "InlineFragment", selections: [s, t, { alias: null, args: null, concreteType: "CompanyProfileCore", kind: "LinkedField", name: "core", plural: !1, selections: [(g = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null })], storageKey: null }, { alias: null, args: null, concreteType: "CompanyLogoImage", kind: "LinkedField", name: "logo", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "normal_url", storageKey: null }], storageKey: null }], type: "ApiCompanyProfile", abstractKey: null }], storageKey: null }], storageKey: null },
                                                     {
                                                         alias: null,
                                                         args: null,
@@ -713,14 +713,14 @@
                                                                 name: "result",
                                                                 plural: !1,
                                                                 selections: [
-                                                                    g,
+                                                                    m,
                                                                     {
                                                                         kind: "InlineFragment",
                                                                         selections: [
                                                                             t,
                                                                             { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
                                                                             { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
-                                                                            { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [m, { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                                                                            { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [g, { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
                                                                             {
                                                                                 alias: null,
                                                                                 args: null,
@@ -794,7 +794,7 @@
                                 ],
                                 storageKey: null,
                             },
-                            { condition: "loggedIn", kind: "Condition", passingValue: !0, selections: [{ alias: "viewer", args: d, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [g, c], storageKey: null }, s], storageKey: null }], storageKey: 'viewer_v2(s:"f3d8")' }] },
+                            { condition: "loggedIn", kind: "Condition", passingValue: !0, selections: [{ alias: "viewer", args: d, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [m, c], storageKey: null }, s], storageKey: null }], storageKey: 'viewer_v2(s:"f3d8")' }] },
                         ],
                     },
                     params: { id: "8uZH_OBKTFNIMzTJaV5lbQ", metadata: {}, name: "JobScreenQuery", operationKind: "query", text: null },
@@ -954,7 +954,7 @@
             const i = n;
         },
         175967: (e, l, a) => {
-            a.d(l, { Z: () => m });
+            a.d(l, { Z: () => g });
             var n,
                 i,
                 r,
@@ -964,7 +964,7 @@
                 o,
                 d,
                 c,
-                g = {
+                m = {
                     fragment: {
                         argumentDefinitions: (n = [
                             { defaultValue: null, kind: "LocalArgument", name: "count" },
@@ -1132,8 +1132,8 @@
                     },
                     params: { id: "w6VgeLQLBKmi9brKZz_QNA", metadata: { sliceInfoPath: ["job_search", "slice_info"] }, name: "JobSearchQueryScreenJobsQuery", operationKind: "query", text: null },
                 };
-            g.hash = "a2ffaaeb36509d6abe442707e15770fc";
-            const m = g;
+            m.hash = "a2ffaaeb36509d6abe442707e15770fc";
+            const g = m;
         },
         36879: (e, l, a) => {
             a.d(l, { Z: () => s });
@@ -1353,6 +1353,84 @@
             var n = { kind: "InlineDataFragment", name: "parseUserEntities_userEntities", hash: "16101b38cee4e401a6aa44e1c860d74f" };
             const i = n;
         },
+        594695: (e, l, a) => {
+            a.d(l, { Z: () => d });
+            var n,
+                i,
+                r,
+                s,
+                t,
+                u,
+                o = {
+                    fragment: {
+                        argumentDefinitions: [(n = { defaultValue: null, kind: "LocalArgument", name: "consented" }), (i = { defaultValue: null, kind: "LocalArgument", name: "matchingCriteria" }), (r = { defaultValue: null, kind: "LocalArgument", name: "recommendationsEnabled" }), (s = { defaultValue: null, kind: "LocalArgument", name: "remoteWorkAllowed" }), (t = { defaultValue: null, kind: "LocalArgument", name: "userId" })],
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "usePutMatchingProfileMutation",
+                        selections: (u = [
+                            {
+                                alias: null,
+                                args: [
+                                    { kind: "Variable", name: "consented", variableName: "consented" },
+                                    { kind: "Variable", name: "matching_criteria", variableName: "matchingCriteria" },
+                                    { kind: "Variable", name: "recommendations_enabled", variableName: "recommendationsEnabled" },
+                                    { kind: "Variable", name: "remote_work_allowed", variableName: "remoteWorkAllowed" },
+                                    { kind: "Literal", name: "s", value: "84b0" },
+                                    { kind: "Variable", name: "user_id", variableName: "userId" },
+                                ],
+                                concreteType: "PutMatchingProfileResult",
+                                kind: "LinkedField",
+                                name: "put_matching_profile",
+                                plural: !1,
+                                selections: [{ alias: null, args: null, kind: "ScalarField", name: "success", storageKey: null }],
+                                storageKey: null,
+                            },
+                        ]),
+                        type: "Mutation",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: [t, n, r, s, i], kind: "Operation", name: "usePutMatchingProfileMutation", selections: u },
+                    params: { id: "2jaLJJQhearTWZhqu89gBQ", metadata: {}, name: "usePutMatchingProfileMutation", operationKind: "mutation", text: null },
+                };
+            o.hash = "b23a8c052c25cec3489865df8f18d46d";
+            const d = o;
+        },
+        488248: (e, l, a) => {
+            a.d(l, { Z: () => s });
+            var n,
+                i,
+                r = {
+                    fragment: {
+                        argumentDefinitions: (n = [{ defaultValue: null, kind: "LocalArgument", name: "userId" }]),
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "useRefreshJobRecommendationsMutation",
+                        selections: (i = [
+                            {
+                                alias: null,
+                                args: [
+                                    { kind: "Literal", name: "s", value: "84b0" },
+                                    { kind: "Variable", name: "user_id", variableName: "userId" },
+                                ],
+                                concreteType: "RefreshJobRecommendationsResult",
+                                kind: "LinkedField",
+                                name: "refresh_job_recommendations",
+                                plural: !1,
+                                selections: [{ alias: null, args: null, kind: "ScalarField", name: "recommendation_count", storageKey: null }],
+                                storageKey: null,
+                            },
+                        ]),
+                        type: "Mutation",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: n, kind: "Operation", name: "useRefreshJobRecommendationsMutation", selections: i },
+                    params: { id: "NjDhjn_53KnOmYAcoyxqew", metadata: {}, name: "useRefreshJobRecommendationsMutation", operationKind: "mutation", text: null },
+                };
+            r.hash = "492b79a53d8f9fbe4f7ba82e23dbab65";
+            const s = r;
+        },
         420412: (e, l, a) => {
             a.d(l, { Z: () => u });
             var n = a(202784),
@@ -1383,6 +1461,50 @@
             t.defaultProps = { withGutter: !1 };
             const u = s.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 o = t;
+        },
+        524496: (e, l, a) => {
+            a.d(l, { Z: () => b });
+            a(136728);
+            var n = a(202784),
+                i = a(301503),
+                r = a(325686),
+                s = a(595088),
+                t = a(516951),
+                u = a(731708),
+                o = a(779802),
+                d = a(537392),
+                c = a(989272),
+                m = a(925873),
+                g = a(202253),
+                y = a(786475),
+                k = a(392237),
+                p = a(135904);
+            const F = { [o.P7.atomic]: { element: "section" }, [o.P7.header1]: { element: "h1", wrapper: n.createElement(u.ZP, null) }, [o.P7.header2]: { element: "h2", wrapper: n.createElement(u.ZP, null) } },
+                K = (0, s.Z)(F).reduce((e, [l, a]) => e.set(l, a), i.DefaultDraftBlockRenderMap);
+            let _ = !1;
+            const b = n.memo(function (e) {
+                    const { componentByType: l, contentState: a, onScribeEvent: s, paragraphFontSizeOverride: u } = e;
+                    n.useEffect(() => {
+                        _ || (c.fH(p.c, p.n), (_ = !0));
+                    }, []);
+                    const k = [(0, g.ez)(s, u), g.aF, g.RU];
+                    e.disable_entityLinkDecorator || k.push((0, g.NA)(s, u));
+                    const F = m.Z.initEditorState(a, { decorators: k });
+                    let b = t.Z;
+                    return (
+                        l &&
+                            (b = (e) => {
+                                const a = e.getType();
+                                return l[a] || null;
+                            }),
+                        n.createElement(d.ZP, null, ({ containerWidth: e }) => n.createElement(r.Z, { style: f.fontFamily }, n.createElement(i.Editor, { blockRenderMap: K, blockRendererFn: b, blockStyleFn: (0, o.su)(y.Z.isNarrowScreenWidth(e)), editorState: F, onChange: t.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
+                    );
+                }),
+                f = k.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
+        },
+        183806: (e, l, a) => {
+            a.d(l, { Z: () => n });
+            const n = a(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
         988227: (e, l, a) => {
             a.r(l), a.d(l, { default: () => u });
@@ -1431,4 +1553,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.JobSearch-6107ac1a.fdd08bda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.JobSearch-6107ac1a.4edb559a.js.map

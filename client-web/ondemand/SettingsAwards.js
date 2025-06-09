@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.SettingsAwards", "icons/IconIllustrationPassiveIncome-js"],
+    ["ondemand.SettingsAwards", "icons/IconIllustrationConnectAudience-js"],
     {
         625661: (e, t, a) => {
             a.d(t, { ZP: () => m });
@@ -161,18 +161,18 @@
                 x = a(782642),
                 F = a(892541),
                 B = a(87908),
-                z = a(491369);
-            const T = v.default.create((e) => ({ list: { gap: e.spaces.space24 }, listItem: { flexDirection: "row", gap: e.spaces.space16 }, listItemContent: { flex: 1 }, listItemTitle: { marginBottom: e.spaces.space4 }, illustration: { height: "50px", width: "50px" } })),
-                I = [
-                    { illustration: c.createElement(F.default, { style: T.illustration }), title: E().d520d188, description: E().ea770766 },
-                    { illustration: c.createElement(B.default, { style: T.illustration }), title: E().d27f5ac6, description: E().h1d66df0 },
-                    { illustration: c.createElement(z.default, { style: T.illustration }), title: E().f85fb0a2, description: E().d1433e24 },
+                T = a(491369);
+            const I = v.default.create((e) => ({ list: { gap: e.spaces.space24 }, listItem: { flexDirection: "row", gap: e.spaces.space16 }, listItemContent: { flex: 1 }, listItemTitle: { marginBottom: e.spaces.space4 }, illustration: { height: "50px", width: "50px" } })),
+                S = [
+                    { illustration: c.createElement(F.default, { style: I.illustration }), title: E().d520d188, description: E().ea770766 },
+                    { illustration: c.createElement(B.default, { style: I.illustration }), title: E().d27f5ac6, description: E().h1d66df0 },
+                    { illustration: c.createElement(T.default, { style: I.illustration }), title: E().f85fb0a2, description: E().d1433e24 },
                 ],
-                S = () =>
+                z = () =>
                     c.createElement(
                         y.Z,
-                        { role: "list", style: T.list },
-                        I.map((e) => c.createElement(y.Z, { key: e.title, role: "listitem", style: T.listItem }, e.illustration, c.createElement(y.Z, { style: T.listItemContent }, c.createElement(b.ZP, { style: T.listItemTitle, weight: "heavy" }, e.title), c.createElement(b.ZP, { color: "gray700" }, e.description)))),
+                        { role: "list", style: I.list },
+                        S.map((e) => c.createElement(y.Z, { key: e.title, role: "listitem", style: I.listItem }, e.illustration, c.createElement(y.Z, { style: I.listItemContent }, c.createElement(b.ZP, { style: I.listItemTitle, weight: "heavy" }, e.title), c.createElement(b.ZP, { color: "gray700" }, e.description)))),
                     ),
                 K = "/settings/monetization";
             var A = (function () {
@@ -181,19 +181,19 @@
             })();
             A.hash = "aaaa1c71aa5e6b2e3a109a5b37594b3f";
             const L = A;
-            var P = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useAwardsActivate_user", selections: [{ kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }], type: "User", abstractKey: null, hash: "eaa526ce3924dce881ea12c7b2d29239" };
-            const R = P;
+            var R = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useAwardsActivate_user", selections: [{ kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }], type: "User", abstractKey: null, hash: "eaa526ce3924dce881ea12c7b2d29239" };
+            const P = R;
             var D = a(614983),
-                H = a.n(D),
-                M = a(277660),
-                W = a.n(M),
+                M = a.n(D),
+                H = a(277660),
+                W = a.n(H),
                 q = a(351743),
-                V = a.n(q);
-            const U = R,
-                N = L,
+                U = a.n(q);
+            const N = P,
+                V = L,
                 Q = (e) => {
-                    const t = W()(U, e),
-                        [a, n] = V()(N);
+                    const t = W()(N, e),
+                        [a, n] = U()(V);
                     return [
                         c.useCallback(
                             () =>
@@ -204,9 +204,9 @@
                                         onError: n,
                                         updater: (e, a) => {
                                             const n = t.__id;
-                                            H()(n, "userId must be specified");
+                                            M()(n, "userId must be specified");
                                             const i = e.get(n);
-                                            H()(i, "userRecord must be specified"), i.invalidateRecord();
+                                            M()(i, "userRecord must be specified"), i.invalidateRecord();
                                         },
                                     });
                                 }),
@@ -242,7 +242,7 @@
                                 }, [n, i, t]),
                                 r = c.useMemo(() => ({ link: c.createElement(b.ZP, { link: $, weight: "bold" }) }), []),
                                 o = c.useMemo(() => c.createElement(y.Z, { style: J.footer }, c.createElement(b.ZP, { align: "center", color: "gray700", style: J.spacing }, c.createElement(E().I18NFormatMessage, { $i18n: "d4b0b963" }, c.cloneElement(r.link, null, E().d604fb32))), c.createElement(w.ZP, { disabled: l, onPress: s, type: "primaryFilled" }, l ? c.createElement(f.Z, null) : X)), [l, s, r]);
-                            return c.createElement(C.Z, { backButtonType: "close", bottomBar: o, documentTitle: G, history: t, onBackClick: a }, c.createElement(y.Z, { style: J.root }, c.createElement(b.ZP, { "aria-level": 1, role: "heading", size: "title1", weight: "heavy" }, G), c.createElement(b.ZP, { size: "headline1", style: J.headline, weight: "medium" }, Y), c.createElement(Z.Z, { style: J.spacing, type: Z.j.DiscoGlobe }), c.createElement(S, null)));
+                            return c.createElement(C.Z, { backButtonType: "close", bottomBar: o, documentTitle: G, history: t, onBackClick: a }, c.createElement(y.Z, { style: J.root }, c.createElement(b.ZP, { "aria-level": 1, role: "heading", size: "title1", weight: "heavy" }, G), c.createElement(b.ZP, { size: "headline1", style: J.headline, weight: "medium" }, Y), c.createElement(Z.Z, { style: J.spacing, type: Z.j.DiscoGlobe }), c.createElement(z, null)));
                         },
                         { page: "onboarding", section: "Coins" },
                     ),
@@ -262,7 +262,7 @@
                 ie = { type: "CustomRetry", content: () => null },
                 le = c.memo((0, p.Z)(() => c.createElement(m.N, { errorConfig: ne, fallback: ie }, c.createElement(ae, null)), { page: "settings", section: "awards" }));
         },
-        87908: (e, t, a) => {
+        491369: (e, t, a) => {
             a.r(t), a.d(t, { default: () => o });
             var n = a(202784),
                 i = a(890601),
@@ -270,7 +270,7 @@
                 s = a(347101);
             const r = (e = {}) => {
                 const { direction: t } = (0, l.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 50 50", children: n.createElement("g", null, n.createElement("circle", { cx: "25", cy: "25", fill: "#0f1419", r: "25" }), n.createElement("path", { d: "M36 16v14h-2V18H18v-2zm-22 4h18v14H14zm13.5 2c0 .328.065.653.19.957.126.303.31.579.542.81.47.47 1.105.733 1.768.733V22zm0 10H30v-2.5c-.663 0-1.299.263-1.768.732-.469.47-.732 1.105-.732 1.768zM21 27c0 1.66.9 3 2 3s2-1.34 2-3-.9-3-2-3-2 1.34-2 3zm-5-2.5c.328 0 .653-.065.957-.19.303-.126.579-.31.81-.542.233-.232.417-.508.543-.811.125-.304.19-.629.19-.957H16zm0 7.5h2.5c0-.663-.263-1.299-.732-1.768-.47-.469-1.105-.732-1.768-.732z", fill: "#fff" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 50 50", children: n.createElement("g", null, n.createElement("circle", { cx: "25", cy: "25", fill: "#0f1419", r: "25" }), n.createElement("path", { d: "M25 14.75c-2.027 0-4.009.601-5.695 1.727-1.685 1.127-2.999 2.728-3.775 4.6-.776 1.873-.978 3.934-.583 5.923.396 1.988 1.372 3.814 2.805 5.248 1.434 1.433 3.26 2.41 5.248 2.805 1.989.396 4.05.193 5.922-.583 1.873-.776 3.474-2.09 4.6-3.775C34.65 29.009 35.25 27.027 35.25 25c0-2.718-1.08-5.325-3.002-7.248-1.923-1.922-4.53-3.002-7.248-3.002zm-.25 10.48L23.5 30.5l-2-1.5v-3.5l-1-3.5-2.47-1.41c.721-1.14 1.711-2.086 2.882-2.756 1.172-.67 2.49-1.041 3.838-1.084L24 19l-2 .5-.5 2.5 5 1.5zM30 27v-3l-1.5-3 2.88-1.23c1 1.22 1.63 2.701 1.814 4.268s-.085 3.153-.774 4.572z", fill: "#fff" })) }, { writingDirection: t });
             };
             r.metadata = { width: 50, height: 50 };
             const o = r;
@@ -290,4 +290,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsAwards.b778f8ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsAwards.5a75adea.js.map

@@ -295,22 +295,22 @@
             const r = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.0"),
-                        n.e("icons.5"),
-                        n.e("icons.12"),
-                        n.e("icons.20"),
                         n.e("icons.2"),
-                        n.e("icons.21"),
-                        n.e("icons.28"),
+                        n.e("icons.24"),
                         n.e("icons.10"),
-                        n.e("icons.17"),
-                        n.e("icons.9"),
-                        n.e("icons.23"),
+                        n.e("icons.15"),
+                        n.e("icons.27"),
+                        n.e("icons.16"),
+                        n.e("icons.12"),
+                        n.e("icons.7"),
+                        n.e("icons.5"),
+                        n.e("icons.22"),
+                        n.e("icons.19"),
+                        n.e("icons.26"),
+                        n.e("icons.4"),
+                        n.e("icons.29"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.22"),
-                        n.e("icons.24"),
-                        n.e("icons.25"),
                         n.e("icons.14"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
@@ -322,9 +322,13 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
+                        n.e("icons.13"),
+                        n.e("icons.1"),
+                        n.e("icons.21"),
                         n.e("icons.6"),
-                        n.e("icons.3"),
-                        n.e("icons.8"),
+                        n.e("icons.18"),
+                        n.e("icons.0"),
+                        n.e("icons.20"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -353,20 +357,19 @@
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         n.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
-                        n.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         n.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~bundle.Payments~ondemand.News~ondemand.Insights~loader"),
                         n.e("shared~bundle.AccountAnalytics~bundle.Payments~ondemand.Insights~ondemand.Verified~ondemand.XChat"),
                         n.e("shared~bundle.Payments~bundle.TV"),
-                        n.e("shared~bundle.Payments~bundle.PaymentShared"),
                         n.e("bundle.Payments-bc6ccf4c"),
                         n.e("bundle.Payments-27545368"),
                         n.e("bundle.Payments-960914ab"),
                         n.e("bundle.Payments-17a1c92a"),
                         n.e("bundle.Payments-39d0705d"),
+                        n.e("bundle.Payments-fd087ba8"),
                         n.e("bundle.Payments-7e6638bc"),
                         n.e("bundle.Payments-9f4db315"),
-                        n.e("bundle.Payments-63cb1cc4"),
+                        n.e("bundle.Payments-6cc66b21"),
                         n.e("bundle.Payments-b8e4b837"),
                         n.e("bundle.Payments-49827288"),
                         n.e("bundle.Payments-25e67f1f"),
@@ -616,37 +619,37 @@
                 l = n(516951),
                 d = n(720728),
                 c = n(943245),
-                u = n(556303),
-                m = n(312771),
-                p = n(443781),
-                h = n(71620),
-                f = n(668214),
-                b = n(390387),
-                g = (n(571372), n(697926)),
-                y = n(120071),
-                _ = n(502909),
-                w = n(600823),
-                D = n(3693);
-            const T = (0, _.ZP)({ namespace: "translationsProfiles", fetchOneContext: "FETCH_PROFILE_TRANSLATION", fetchOneEndpoint: (e) => (t, n) => e.withEndpoint(y.Z).fetchProfileTranslation(t, n).then(M), fetchOneParams: (e) => ({ profileUserId: e }) });
+                u = n(3693),
+                m = n(556303),
+                p = n(312771),
+                h = n(443781),
+                f = n(71620),
+                b = n(668214),
+                g = n(390387),
+                y = (n(571372), n(697926)),
+                _ = n(120071),
+                w = n(502909),
+                D = n(600823);
+            const T = (0, w.ZP)({ namespace: "translationsProfiles", fetchOneContext: "FETCH_PROFILE_TRANSLATION", fetchOneEndpoint: (e) => (t, n) => e.withEndpoint(_.Z).fetchProfileTranslation(t, n).then(M), fetchOneParams: (e) => ({ profileUserId: e }) });
             T.fetchStreamedGrokTranslation =
                 (e, t, n) =>
                 (n, r, { api: a }) =>
                     new Promise((r, o) => {
                         const s = { content_type: "BIO", id: e, dst_lang: t.userLanguage },
-                            i = { profileUserId: e, profileTranslation: { entities: { symbols: [], hashtags: [], user_mentions: [], urls: [], media: [], timestamps: [] }, translation: "", streamedTranslationFetchStatus: m.iF.LOADING, translationSource: "Grok", localizedSourceLanguage: "" } };
+                            i = { profileUserId: e, profileTranslation: { entities: { symbols: [], hashtags: [], user_mentions: [], urls: [], media: [], timestamps: [] }, translation: "", streamedTranslationFetchStatus: p.iF.LOADING, translationSource: "Grok", localizedSourceLanguage: "" } };
                         n(T.updateOrAddOne(e, i)),
                             a.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(s) }, "https://api.x.com").then(async (t) => {
-                                if (!t.ok) return (i.profileTranslation.translationState = D.H.ERROR), (i.profileTranslation.streamedTranslationFetchStatus = m.iF.FAILED), n(T.updateOrAddOne(e, i)), o(new Error("Failed to translate due to invalid API response."));
+                                if (!t.ok) return (i.profileTranslation.translationState = u.H.ERROR), (i.profileTranslation.streamedTranslationFetchStatus = p.iF.FAILED), n(T.updateOrAddOne(e, i)), o(new Error("Failed to translate due to invalid API response."));
                                 const a = t.body?.getReader();
-                                if (!a) return (i.profileTranslation.translationState = D.H.ERROR), (i.profileTranslation.streamedTranslationFetchStatus = m.iF.FAILED), n(T.updateOrAddOne(e, i)), o(new Error("Failed to translate because reader is not present."));
+                                if (!a) return (i.profileTranslation.translationState = u.H.ERROR), (i.profileTranslation.streamedTranslationFetchStatus = p.iF.FAILED), n(T.updateOrAddOne(e, i)), o(new Error("Failed to translate because reader is not present."));
                                 const s = new TextDecoder();
                                 let l = "",
                                     d = "";
                                 const c = async () => {
-                                    const { done: t, value: u } = await a.read();
-                                    if (t) return (i.profileTranslation.translationState = D.H.SUCCESS), (i.profileTranslation.streamedTranslationFetchStatus = m.iF.LOADED), (i.profileTranslation.translation = l), n(T.updateOrAddOne(e, i)), r();
-                                    const p = s.decode(u);
-                                    if (((d += p), d.includes("\n"))) {
+                                    const { done: t, value: m } = await a.read();
+                                    if (t) return (i.profileTranslation.translationState = u.H.SUCCESS), (i.profileTranslation.streamedTranslationFetchStatus = p.iF.LOADED), (i.profileTranslation.translation = l), n(T.updateOrAddOne(e, i)), r();
+                                    const h = s.decode(m);
+                                    if (((d += h), d.includes("\n"))) {
                                         const t = d.split("\n");
                                         d = t.pop();
                                         for (const r of t)
@@ -655,7 +658,7 @@
                                                 if (t.error) throw new Error(t.error);
                                                 t.result && "BIO" === t.result.content_type && (t.result.text && ((l += t.result.text), (i.profileTranslation.translation = l)), t.result.entities && (t.result.entities.urls && (i.profileTranslation.entities.urls = [...i.profileTranslation.entities.urls, ...t.result.entities.urls]), t.result.entities.user_mentions && (i.profileTranslation.entities.user_mentions = [...i.profileTranslation.entities.user_mentions, ...t.result.entities.user_mentions]), t.result.entities.hashtags && (i.profileTranslation.entities.hashtags = [...i.profileTranslation.entities.hashtags, ...t.result.entities.hashtags]), t.result.entities.symbols && (i.profileTranslation.entities.symbols = [...i.profileTranslation.entities.symbols, ...t.result.entities.symbols]))), n(T.updateOrAddOne(e, i));
                                             } catch (t) {
-                                                return (i.profileTranslation.translationState = D.H.ERROR), (i.profileTranslation.streamedTranslationFetchStatus = m.iF.FAILED), n(T.updateOrAddOne(e, i)), o(new Error("Failed to parse translation JSON response."));
+                                                return (i.profileTranslation.translationState = u.H.ERROR), (i.profileTranslation.streamedTranslationFetchStatus = p.iF.FAILED), n(T.updateOrAddOne(e, i)), o(new Error("Failed to parse translation JSON response."));
                                             }
                                     }
                                     c();
@@ -665,14 +668,14 @@
                     });
             const M = (e) => {
                     const t = Array.isArray(e) ? e : [e];
-                    return { entities: { translationsProfiles: (0, g.Z)(t, (e) => e.profileUserId) } };
+                    return { entities: { translationsProfiles: (0, y.Z)(t, (e) => e.profileUserId) } };
                 },
-                E = w.Z.register(T),
+                E = D.Z.register(T),
                 I = (e, t) => E.select(e, t.userId),
                 P = (e, t) => E.selectFetchStatus(e, t.userId),
-                k = (0, f.Z)()
-                    .propsFromState(() => ({ translation: I, translationFetchStatus: P, userLanguage: b.VT }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, h.zr)("TRANSLATE_USER_BIO"), fetchTranslation: E.fetchOneIfNeeded, fetchStreamedGrokTranslation: E.fetchStreamedGrokTranslation }))
+                k = (0, b.Z)()
+                    .propsFromState(() => ({ translation: I, translationFetchStatus: P, userLanguage: g.VT }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, f.zr)("TRANSLATE_USER_BIO"), fetchTranslation: E.fetchOneIfNeeded, fetchStreamedGrokTranslation: E.fetchStreamedGrokTranslation }))
                     .withAnalytics(),
                 S = i().ad7a451e,
                 Z = "translate_bio";
@@ -681,11 +684,17 @@
                     super(...e),
                         (this._useGrokTranslation = () => {
                             const { featureSwitches: e } = this.context;
-                            return (0, u.F)(e, "");
+                            return (0, m.F)(e, "");
                         }),
                         (this._fetchTranslation = () => {
-                            const { createLocalApiErrorHandler: e, fetchStreamedGrokTranslation: t, fetchTranslation: n, userId: r, userLanguage: a } = this.props;
-                            this._useGrokTranslation() ? t(r, { userLanguage: a }) : n(r).catch(e());
+                            const { createLocalApiErrorHandler: e, fetchStreamedGrokTranslation: t, fetchTranslation: n, translation: r, translationFetchStatus: a, userId: o, userLanguage: s } = this.props,
+                                i = this._useGrokTranslation(),
+                                l = r?.profileTranslation;
+                            if (l?.translationState !== u.H.SUCCESS)
+                                if (i) {
+                                    if (l?.streamedTranslationFetchStatus === p.ZP.LOADING) return;
+                                    t(o, { userLanguage: s });
+                                } else a !== p.ZP.LOADING && n(o).catch(e());
                         }),
                         (this._renderGrokTranslatedBio = () => {
                             const { analytics: e, createLocalApiErrorHandler: t, disableTranslation: n, fetchStreamedGrokTranslation: r, fetchTranslation: s, grokTranslatedBio: i, style: l, translation: d, translationFetchStatus: c, userLanguage: u, withOriginalText: m, ...p } = this.props;
@@ -694,24 +703,24 @@
                             return a.createElement(o.Z, h);
                         }),
                         (this._renderTranslation = () => {
-                            const { analytics: e, createLocalApiErrorHandler: t, disableTranslation: n, fetchStreamedGrokTranslation: r, fetchTranslation: s, grokTranslatedBio: i, style: l, translation: d, translationFetchStatus: c, userLanguage: m, withOriginalText: p, ...h } = this.props,
+                            const { analytics: e, createLocalApiErrorHandler: t, disableTranslation: n, fetchStreamedGrokTranslation: r, fetchTranslation: s, grokTranslatedBio: i, style: l, translation: d, translationFetchStatus: c, userLanguage: u, withOriginalText: p, ...h } = this.props,
                                 { featureSwitches: f } = this.context,
-                                b = (0, u.F)(f, "");
+                                b = (0, m.F)(f, "");
                             if (!d) return;
                             const g = { ...h, description: d.profileTranslation.translation, entities: { description: d.profileTranslation.entities }, withheldDescription: void 0, withheldEntities: void 0, animateIn: b };
                             return a.createElement(o.Z, g);
                         });
                 }
                 render() {
-                    const { analytics: e, createLocalApiErrorHandler: t, disableTranslation: n, fetchStreamedGrokTranslation: s, fetchTranslation: i, grokTranslatedBio: u, style: p, translation: h, translationFetchStatus: f, userId: b, userLanguage: g, withOriginalText: y, ..._ } = this.props;
+                    const { analytics: e, createLocalApiErrorHandler: t, disableTranslation: n, fetchStreamedGrokTranslation: s, fetchTranslation: i, grokTranslatedBio: u, style: m, translation: h, translationFetchStatus: f, userId: b, userLanguage: g, withOriginalText: y, ..._ } = this.props;
                     if (u) {
                         const e = (0, c.t)(g, u.source_language);
-                        return a.createElement(d.Z, { disableTranslation: this.props.disableTranslation, fetchTranslation: l.Z, isInitiallyTranslated: !0, key: `${b}-auto-translation`, originLanguage: e, scribeElement: Z, streamedTranslationFetchStatus: m.ZP.LOADED, style: p, translateButtonText: S, translatedMessage: this._renderGrokTranslatedBio(), translationFetchStatus: m.ZP.LOADED, translationSource: "Grok", useGrokTranslation: !0, withOriginalText: y }, a.createElement(o.Z, (0, r.Z)({}, _, { userId: b })));
+                        return a.createElement(d.Z, { disableTranslation: this.props.disableTranslation, fetchTranslation: l.Z, isInitiallyTranslated: !0, key: `${b}-auto-translation`, originLanguage: e, scribeElement: Z, streamedTranslationFetchStatus: p.ZP.LOADED, style: m, translateButtonText: S, translatedMessage: this._renderGrokTranslatedBio(), translationFetchStatus: p.ZP.LOADED, translationSource: "Grok", useGrokTranslation: !0, withOriginalText: y }, a.createElement(o.Z, (0, r.Z)({}, _, { userId: b })));
                     }
-                    return a.createElement(d.Z, { disableTranslation: this.props.disableTranslation, fetchTranslation: this._fetchTranslation, key: `${b}-translation`, originLanguage: h && h.profileTranslation.localizedSourceLanguage, scribeElement: Z, streamedTranslationFetchStatus: h && h.profileTranslation.streamedTranslationFetchStatus, style: p, translateButtonText: S, translatedMessage: this._renderTranslation(), translationFetchStatus: f, translationSource: h && h.profileTranslation.translationSource, useGrokTranslation: this._useGrokTranslation(), withOriginalText: y }, a.createElement(o.Z, (0, r.Z)({}, _, { userId: b })));
+                    return a.createElement(d.Z, { disableTranslation: this.props.disableTranslation, fetchTranslation: this._fetchTranslation, key: `${b}-translation`, originLanguage: h && h.profileTranslation.localizedSourceLanguage, scribeElement: Z, streamedTranslationFetchStatus: h && h.profileTranslation.streamedTranslationFetchStatus, style: m, translateButtonText: S, translatedMessage: this._renderTranslation(), translationFetchStatus: f, translationSource: h && h.profileTranslation.translationSource, useGrokTranslation: this._useGrokTranslation(), withOriginalText: y }, a.createElement(o.Z, (0, r.Z)({}, _, { userId: b })));
                 }
             }
-            v.contextType = p.rC;
+            v.contextType = h.rC;
             const A = k(v);
         },
         703738: (e, t, n) => {
@@ -724,7 +733,7 @@
         507986: (e, t, n) => {
             n.d(t, { Z: () => r });
             n(202784);
-            const r = (0, n(523561).Z)({ loader: () => Promise.all([n.e("icons.0"), n.e("icons.20"), n.e("icons.10"), n.e("icons.9"), n.e("modules.common-e907d115"), n.e("modules.common-e019dbda"), n.e("icons.6"), n.e("loader.ProfileClusterFollow")]).then(n.bind(n, 751154)) });
+            const r = (0, n(523561).Z)({ loader: () => Promise.all([n.e("icons.2"), n.e("icons.24"), n.e("icons.10"), n.e("icons.19"), n.e("icons.26"), n.e("modules.common-e907d115"), n.e("modules.common-e019dbda"), n.e("icons.14"), n.e("loader.ProfileClusterFollow")]).then(n.bind(n, 751154)) });
         },
         103335: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -1081,4 +1090,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e019dbda.c343841a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e019dbda.dbc00dba.js.map

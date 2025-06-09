@@ -7228,8 +7228,8 @@
                 t("hd80bd3e", "Quảng bá một bài đăng"),
                 t("fe2b0008", "Tìm hiểu cách sử dụng X"),
                 t("h257d4aa", "Chọn một bài đăng để quảng bá"),
-                t("e9334fe6", "Data updates every few minutes"),
-                t("a6d7b1d0", "Based on X Internal Data"),
+                t("e9334fe6", "Dữ liệu cập nhật vài phút một lần"),
+                t("a6d7b1d0", "Dựa trên dữ liệu nội bộ của X"),
                 t("h9b28dae", "You’re saving time with an ad-free feed"),
                 t("f6c50ec0", "Thời gian dùng thử không quảng cáo của bạn đã kết thúc"),
                 t("e1d1fbca", "You’ve avoided"),
@@ -13351,4 +13351,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.df7f080a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.c2d72c0a.js.map

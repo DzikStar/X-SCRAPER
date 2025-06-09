@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.AccountVerification-6107ac1a", "icons/IconEye-js"],
+    ["bundle.AccountVerification-6107ac1a", "icons/IconChevronRight-js", "icons/IconEye-js"],
     {
         625661: (e, t, o) => {
             o.d(t, { ZP: () => p });
@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: a, hideBackButton: i, isFullWidth: l, isLarge: c, leftControl: d, middleControl: p, position: u, rightControl: b, secondaryBar: m, style: g, subtitle: y, title: f, titleDomId: C, titleIconCell: k, titleIconCellSize: B, withBackground: v, withWideContainer: x } = this.props,
-                        { isModal: Z } = this.context,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: a, hideBackButton: i, isFullWidth: l, isLarge: c, leftControl: d, middleControl: p, position: u, rightControl: b, secondaryBar: m, style: g, subtitle: y, title: f, titleDomId: C, titleIconCell: k, titleIconCellSize: B, withBackground: v, withWideContainer: Z } = this.props,
+                        { isModal: x } = this.context,
                         w = i ? d : r.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         _ = (function (e, t, o) {
                             return e && !(t && o);
-                        })(!!v, Z, !!m);
-                    return r.createElement(r.Fragment, null, r.createElement(n.Z, { centerTitle: t, centeredLogo: o, isFullWidth: l, isLarge: c, leftControl: w, middleControl: p, position: h(u, Z, a), rightControl: b, style: g, subtitle: y, title: f, titleDomId: C, titleIconCell: k, titleIconCellSize: B, withBackground: _, withWideContainer: x }), m || null);
+                        })(!!v, x, !!m);
+                    return r.createElement(r.Fragment, null, r.createElement(n.Z, { centerTitle: t, centeredLogo: o, isFullWidth: l, isLarge: c, leftControl: w, middleControl: p, position: h(u, x, a), rightControl: b, style: g, subtitle: y, title: f, titleDomId: C, titleIconCell: k, titleIconCellSize: B, withBackground: _, withWideContainer: Z }), m || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -217,6 +217,21 @@
             o.d(t, { Z: () => r });
             const r = o(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
+        58399: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => c });
+            var r = o(202784),
+                a = o(890601),
+                i = o(783427),
+                l = o(717683),
+                s = o(347101);
+            const n = (e = {}) => {
+                const t = r.useContext(l.Z),
+                    { direction: o } = (0, i.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, t && s.Z.iconRTL], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: o });
+            };
+            n.metadata = { width: 24, height: 24 };
+            const c = n;
+        },
         988227: (e, t, o) => {
             o.r(t), o.d(t, { default: () => n });
             var r = o(202784),
@@ -245,4 +260,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountVerification-6107ac1a.6ff5b28a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountVerification-6107ac1a.23cef32a.js.map

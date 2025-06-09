@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.TV~bundle.Account-6107ac1a", "icons/IconExiting-js"],
+    ["shared~bundle.TV~bundle.Account-6107ac1a", "icons/IconChevronRight-js"],
     {
         396342: function (t, e, o) {
             var n, s, i, r, a, u, c, l, d, f, h, p;
@@ -962,19 +962,21 @@
                     },
                 };
         },
-        297896: (t, e, o) => {
+        58399: (t, e, o) => {
             "use strict";
-            o.r(e), o.d(e, { default: () => u });
+            o.r(e), o.d(e, { default: () => c });
             var n = o(202784),
                 s = o(890601),
                 i = o(783427),
-                r = o(347101);
-            const a = (t = {}) => {
-                const { direction: e } = (0, i.Z)();
-                return (0, s.Z)("svg", { ...t, role: t["aria-label"] ? t.role || "img" : void 0, "aria-hidden": void 0 === t["aria-label"], style: [r.Z.root, t.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M4 4.5C4 3.12 5.12 2 6.5 2h11C18.88 2 20 3.12 20 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-11C5.12 22 4 20.88 4 19.5V16h2v3.5c0 .28.22.5.5.5h11c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-11c-.28 0-.5.22-.5.5V8H4V4.5zm6.95 3.04L15.42 12l-4.47 4.46-1.41-1.42L11.58 13H2v-2h9.58L9.54 8.96l1.41-1.42z" })) }, { writingDirection: e });
+                r = o(717683),
+                a = o(347101);
+            const u = (t = {}) => {
+                const e = n.useContext(r.Z),
+                    { direction: o } = (0, i.Z)();
+                return (0, s.Z)("svg", { ...t, role: t["aria-label"] ? t.role || "img" : void 0, "aria-hidden": void 0 === t["aria-label"], style: [a.Z.root, t.style, e && a.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: o });
             };
-            a.metadata = { width: 24, height: 24 };
-            const u = a;
+            u.metadata = { width: 24, height: 24 };
+            const c = u;
         },
         730895: (t, e, o) => {
             "use strict";
@@ -1566,4 +1568,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TV~bundle.Account-6107ac1a.d58ab2ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TV~bundle.Account-6107ac1a.1d17d53a.js.map

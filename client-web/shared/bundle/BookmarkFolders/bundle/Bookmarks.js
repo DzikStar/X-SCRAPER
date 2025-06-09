@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.BookmarkFolders~bundle.Bookmarks"],
+    ["shared~bundle.BookmarkFolders~bundle.Bookmarks", "icons/IconChevronRight-js"],
     {
         721879: (e) => {
             e.exports = { queryId: "pOUUqD-SLt5tuLjKBYZGsA", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
@@ -30,7 +30,7 @@
         },
         403911: (e, t, o) => {
             "use strict";
-            o.d(t, { Z: () => R });
+            o.d(t, { Z: () => A });
             var r = o(506899),
                 n = o(163889),
                 i = o(414742),
@@ -54,8 +54,8 @@
                 v = o.n(g),
                 F = o(630986),
                 T = o.n(F),
-                S = o(934309);
-            const Z = { result: [], entities: {}, slice_info: {} },
+                Z = o(934309);
+            const S = { result: [], entities: {}, slice_info: {} },
                 I = (e, t) => {
                     const o = t?.bookmark_all_delete,
                         r = "Done" === o;
@@ -67,11 +67,11 @@
                         r = o?.bookmark_collections_slice?.items;
                     return !r;
                 }, "GQL Bookmark Folders: Failed to render Bookmark Folders timeline"),
-                A = (0, i.kj)((e) => {
+                R = (0, i.kj)((e) => {
                     const t = e?.bookmark_collection_timeline?.timeline;
                     return !t;
                 }, "GQL Bookmark Folders: Failed to render Bookmark Folders timeline"),
-                R = ({ apiClient: e, featureSwitches: t }) => ({
+                A = ({ apiClient: e, featureSwitches: t }) => ({
                     bookmarkTweetToFolder: (t) =>
                         e.graphQL(
                             h(),
@@ -97,8 +97,8 @@
                         const { bookmarkFolderId: o, tweetId: r } = t;
                         return e.graphQL(T(), { bookmark_collection_id: o, tweet_id: r });
                     },
-                    fetchBookmarksTimeline: ({ count: o, cursor: r }) => e.graphQL(u(), { count: o, cursor: r, includePromotedContent: !0, ...(0, a.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || S.cY),
-                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: o, cursor: r }) => e.graphQL(_(), { bookmark_collection_id: o, cursor: r, includePromotedContent: !0, ...(0, a.d)(t) }, A).then((e) => e?.bookmark_collection_timeline?.timeline || S.cY),
+                    fetchBookmarksTimeline: ({ count: o, cursor: r }) => e.graphQL(u(), { count: o, cursor: r, includePromotedContent: !0, ...(0, a.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || Z.cY),
+                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: o, cursor: r }) => e.graphQL(_(), { bookmark_collection_id: o, cursor: r, includePromotedContent: !0, ...(0, a.d)(t) }, R).then((e) => e?.bookmark_collection_timeline?.timeline || Z.cY),
                     fetchBookmarkFoldersSlice: (t) =>
                         t
                             ? e.graphQL(c(), t, C).then((e) => {
@@ -109,9 +109,9 @@
                                       const { entities: e, result: t } = (0, r.Fv)(n.items, [s]);
                                       return { entities: e, result: t, slice_info: n.slice_info };
                                   }
-                                  return Z;
+                                  return S;
                               })
-                            : Promise.resolve(Z),
+                            : Promise.resolve(S),
                 });
         },
         229333: (e, t, o) => {
@@ -265,7 +265,7 @@
         },
         598897: (e, t, o) => {
             "use strict";
-            o.d(t, { K: () => u, f: () => Z });
+            o.d(t, { K: () => u, f: () => S });
             var r = o(202784),
                 n = o(325686),
                 i = o(371344),
@@ -317,8 +317,8 @@
                     .withAnalytics(),
                 F = l().e9c65c4a,
                 T = l().b92a21d9,
-                S = r.createElement(l().I18NFormatMessage, { $i18n: "e7e44bab" }, r.createElement(p.ZP, { link: "/settings/search" }, l().f191a2ba)),
-                Z = v(({ clearTimelineCache: e, createLocalApiErrorHandler: t, query: o }) => {
+                Z = r.createElement(l().I18NFormatMessage, { $i18n: "e7e44bab" }, r.createElement(p.ZP, { link: "/settings/search" }, l().f191a2ba)),
+                S = v(({ clearTimelineCache: e, createLocalApiErrorHandler: t, query: o }) => {
                     const n = r.useMemo(
                         () =>
                             (function (e) {
@@ -329,7 +329,7 @@
                     r.useEffect(() => {
                         e(n).catch(t());
                     }, [n, e, t]);
-                    return r.createElement(w.Z, { module: n, renderEmptyState: () => r.createElement(h.Z, { header: T({ query: o }), message: S }), title: F });
+                    return r.createElement(w.Z, { module: n, renderEmptyState: () => r.createElement(h.Z, { header: T({ query: o }), message: Z }), title: F });
                 });
         },
         652904: (e, t, o) => {
@@ -737,12 +737,28 @@
                     const { decoration: t, description: o, disabled: d = !1, isActive: m = !1, label: u, link: p, onPress: h, paddingHorizontal: b, renderRightContent: k, role: f = "tab", styleOverride: w, testID: E = "pivot", thumbnail: y, thumbnailSize: g, withoutArrow: v = !1 } = e,
                         F = [_.thumbnailContainer, "medium" === g && _.thumbnailContainerMedium],
                         T = "string" == typeof u ? r.createElement(s.ZP, null, u) : u,
-                        S = "object" == typeof p && p.external && !p.openInSameFrame,
-                        Z = o ? ("string" == typeof o ? r.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${E}-description` }, o) : o) : null,
+                        Z = "object" == typeof p && p.external && !p.openInSameFrame,
+                        S = o ? ("string" == typeof o ? r.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${E}-description` }, o) : o) : null,
                         I = r.useMemo(() => ("space0" === b ? { paddingHorizontal: 0 } : { paddingHorizontal: b ? c.default.theme.spaces[b] : c.default.theme.componentDimensions.gutterHorizontal }), [b]);
-                    return r.createElement(l.Z, { "aria-selected": "tab" === f ? m : null, disabled: d, link: d ? void 0 : p, onPress: h, role: f, style: [_.root, I, d && _.disabled, w], testID: E, withInteractiveStyling: !!p || !!h }, r.createElement(n.Z, { style: _.contentContainer }, y ? r.createElement(n.Z, { style: F }, y) : null, r.createElement(n.Z, { style: _.content }, T, Z), k ? k() : null, (!p && !h) || d || v ? null : S ? r.createElement(i.default, { style: _.icon }) : r.createElement(a.default, { style: _.icon })), t);
+                    return r.createElement(l.Z, { "aria-selected": "tab" === f ? m : null, disabled: d, link: d ? void 0 : p, onPress: h, role: f, style: [_.root, I, d && _.disabled, w], testID: E, withInteractiveStyling: !!p || !!h }, r.createElement(n.Z, { style: _.contentContainer }, y ? r.createElement(n.Z, { style: F }, y) : null, r.createElement(n.Z, { style: _.content }, T, S), k ? k() : null, (!p && !h) || d || v ? null : Z ? r.createElement(i.default, { style: _.icon }) : r.createElement(a.default, { style: _.icon })), t);
                 },
                 _ = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
+        },
+        58399: (e, t, o) => {
+            "use strict";
+            o.r(t), o.d(t, { default: () => c });
+            var r = o(202784),
+                n = o(890601),
+                i = o(783427),
+                a = o(717683),
+                s = o(347101);
+            const l = (e = {}) => {
+                const t = r.useContext(a.Z),
+                    { direction: o } = (0, i.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, t && s.Z.iconRTL], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: o });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const c = l;
         },
         748138: (e, t, o) => {
             "use strict";
@@ -760,4 +776,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.BookmarkFolders~bundle.Bookmarks.2d3cdffa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.BookmarkFolders~bundle.Bookmarks.5866388a.js.map

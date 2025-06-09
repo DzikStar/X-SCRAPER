@@ -115,13 +115,13 @@
             function u(e) {
                 const { handleCollapseTranslation: t, handleGetTranslationClick: a, position: u, sourceLanguageDisplayName: h, style: p, translateButtonText: m, translationStatus: T } = e,
                     b = l.default.isDarkMode() ? n.createElement(s.ZP, { color: "white" }, n.createElement(c.x1, { style: g.nightLogo })) : n.createElement(s.ZP, { color: "gray700" }, n.createElement(c.x1, null)),
-                    _ = n.createElement(r.RD.Consumer, null, ({ direction: e }) => ("loading" === T ? n.createElement(s.ZP, { align: "center", color: "link", dir: e, numberOfLines: 1, size: "subtext2", style: [g.callout, "top" === u && g.calloutOnTop, p] }, b, d.B, " ", n.createElement(o.Z, { size: 13, style: g.loading })) : "failed" === T ? n.createElement(s.ZP, { align: "center", color: "gray700", dir: e, numberOfLines: 1, size: "subtext2", style: [g.callout, "top" === u && g.calloutOnTop, p] }, b, d.k7, " ", a && n.createElement(s.ZP, { color: "link", onClick: a, role: "button" }, d.so)) : "loaded" === T ? n.createElement(s.ZP, { align: "center", color: "gray700", dir: e, numberOfLines: 1, size: "subtext2", style: [g.callout, "top" === u && g.calloutOnTop, p] }, b, h ? (0, d.g)({ originLanguage: h }) : d.li, t && n.createElement(s.ZP, { color: "link", onClick: t, role: "button", style: g.toggle, withInteractiveStyling: !0 }, d.eE)) : null != m ? n.createElement(s.ZP, { "aria-expanded": !1, color: "link", onClick: a, role: "button", size: "subtext2", style: [g.callout, "top" === u && g.calloutOnTop, p], withInteractiveStyling: !0 }, b, m) : void 0));
+                    _ = n.createElement(r.RD.Consumer, null, ({ direction: e }) => ("loading" === T ? n.createElement(s.ZP, { align: "center", color: "link", dir: e, numberOfLines: 1, onClick: t, role: "button", size: "subtext2", style: [g.callout, "top" === u && g.calloutOnTop, p] }, b, d.B, " ", n.createElement(o.Z, { size: 13, style: g.loading })) : "failed" === T ? n.createElement(s.ZP, { align: "center", color: "gray700", dir: e, numberOfLines: 1, size: "subtext2", style: [g.callout, "top" === u && g.calloutOnTop, p] }, b, d.k7, " ", a && n.createElement(s.ZP, { color: "link", onClick: a, role: "button" }, d.so)) : "loaded" === T ? n.createElement(s.ZP, { align: "center", color: "gray700", dir: e, numberOfLines: 1, size: "subtext2", style: [g.callout, "top" === u && g.calloutOnTop, p] }, b, h ? (0, d.g)({ originLanguage: h }) : d.li, t && n.createElement(s.ZP, { color: "link", onClick: t, role: "button", style: g.toggle, withInteractiveStyling: !0 }, d.eE)) : null != m ? n.createElement(s.ZP, { "aria-expanded": !1, color: "link", onClick: a, role: "button", size: "subtext2", style: [g.callout, "top" === u && g.calloutOnTop, p], withInteractiveStyling: !0 }, b, m) : void 0));
                 return n.createElement(i.z, { context: { id: "", richtext_tags: [], entity_set: {}, is_expandable: !1, text: "", inline_media: [] } }, _);
             }
             const g = l.default.create((e) => ({ translationSourceLink: { marginTop: "0.1em", marginHorizontal: e.spaces.space4 }, nightLogo: { fill: e.colors.gray700 }, callout: { display: "flex", flexWrap: "wrap", marginTop: e.spaces.space4, gap: e.spaces.space4, alignItems: "center" }, calloutOnTop: { marginTop: 0, marginBottom: e.spaces.space4 }, toggle: { cursor: "pointer" }, loading: { marginStart: e.spaces.space4 } }));
         },
         818065: (e, t, a) => {
-            a.d(t, { B: () => Z, VW: () => L, eE: () => I, g: () => _, k7: () => S, lL: () => G, li: () => F, so: () => E });
+            a.d(t, { B: () => Z, VW: () => L, eE: () => I, g: () => _, k7: () => F, lL: () => G, li: () => S, so: () => E });
             var n = a(202784),
                 l = a(731708),
                 s = a(392237),
@@ -144,8 +144,8 @@
                 y = d().caa5ba3d,
                 E = d().deaf5b16,
                 L = d().a66d80d0,
-                F = d().be9b9fb8,
-                S = d().he9c9634,
+                S = d().be9b9fb8,
+                F = d().he9c9634,
                 w = d().j2198c98,
                 Z = d().d4d35bea,
                 I = d().i7ac410e;
@@ -158,20 +158,20 @@
             }
             function G(e) {
                 const { handleCollapseTranslation: t, handleGetTranslationClick: a, originLanguage: c, position: L, translateButtonText: w, translationSource: I, translationStatus: G } = e,
-                    v = c ? b({ originLanguage: c }) : T,
-                    M = s.default.isDarkMode() ? n.createElement(u.default, { style: z.nightLogo }) : n.createElement(g.default, null),
-                    O = D(n.createElement(C, { a11yLabel: v, translatorLogo: M, translatorUrl: "https://translate.google.com" }), t),
-                    P = c ? k({ originLanguage: c }) : f,
-                    V = s.default.isDarkMode() ? n.createElement(h.default, { style: z.nightLogo }) : n.createElement(h.default, null),
-                    A = D(n.createElement(C, { a11yLabel: P, translatorLogo: V, translatorUrl: "https://papago.naver.com" }), t),
+                    O = c ? b({ originLanguage: c }) : T,
+                    P = s.default.isDarkMode() ? n.createElement(u.default, { style: z.nightLogo }) : n.createElement(g.default, null),
+                    v = D(n.createElement(C, { a11yLabel: O, translatorLogo: P, translatorUrl: "https://translate.google.com" }), t),
+                    M = c ? k({ originLanguage: c }) : f,
+                    A = s.default.isDarkMode() ? n.createElement(h.default, { style: z.nightLogo }) : n.createElement(h.default, null),
+                    V = D(n.createElement(C, { a11yLabel: M, translatorLogo: A, translatorUrl: "https://papago.naver.com" }), t),
                     B = c ? y({ originLanguage: c }) : x,
                     H = D(n.createElement(C, { a11yLabel: B, translatorLogo: m, translatorUrl: "" }), t),
                     N = s.default.isDarkMode() ? n.createElement(l.ZP, { color: "white" }, n.createElement(p.x1, { style: z.nightLogo }), " Grok") : n.createElement(l.ZP, { color: "alwaysBlack" }, n.createElement(p.x1, null), " Grok"),
-                    R = c ? _({ originLanguage: c }) : F,
+                    R = c ? _({ originLanguage: c }) : S,
                     U = D(n.createElement(C, { a11yLabel: R, translatorLogo: N, translatorUrl: "" }), t);
                 let W;
-                W = "Papago" === I ? A : "X" === I ? H : "Grok" === I ? U : O;
-                const $ = n.createElement(r.RD.Consumer, null, ({ direction: e }) => ("loading" === G ? n.createElement(l.ZP, { align: "center", color: "link", dir: e, numberOfLines: 1, size: "subtext2", style: [z.callout, "top" === L && z.calloutOnTop] }, Z, " ", n.createElement(o.Z, { size: 13, style: z.loading })) : "failed" === G ? n.createElement(l.ZP, { align: "center", color: "gray700", dir: e, numberOfLines: 1, size: "subtext2", style: [z.callout, "top" === L && z.calloutOnTop] }, S, " ", n.createElement(l.ZP, { color: "link", onClick: a, role: "button", style: z.retry }, E)) : "loaded" === G ? n.createElement(l.ZP, { align: "center", dir: e, numberOfLines: 1, size: "subtext2", style: [z.callout, "top" === L && z.calloutOnTop] }, "X" === I ? n.createElement(d().I18NFormatMessage, { $i18n: "cbb4db07" }, n.cloneElement(W.toggle, null, d().e0f81ff3)) : c ? n.createElement(d().I18NFormatMessage, { $i18n: "be5322c7" }, n.cloneElement(W.toggle, null, d().j2862695({ originLanguage: c })), W.company) : n.createElement(d().I18NFormatMessage, { $i18n: "c5f6ee1d" }, n.cloneElement(W.toggle, null, d().b7cb4fab), W.company)) : n.createElement(l.ZP, { "aria-expanded": !1, color: "link", onClick: a, role: "button", size: "subtext2", style: [z.callout, z.toggle, "top" === L && z.calloutOnTop], withInteractiveStyling: !0 }, w)));
+                W = "Papago" === I ? V : "X" === I ? H : "Grok" === I ? U : v;
+                const $ = n.createElement(r.RD.Consumer, null, ({ direction: e }) => ("loading" === G ? n.createElement(l.ZP, { align: "center", color: "link", dir: e, numberOfLines: 1, size: "subtext2", style: [z.callout, "top" === L && z.calloutOnTop] }, Z, " ", n.createElement(o.Z, { size: 13, style: z.loading })) : "failed" === G ? n.createElement(l.ZP, { align: "center", color: "gray700", dir: e, numberOfLines: 1, size: "subtext2", style: [z.callout, "top" === L && z.calloutOnTop] }, F, " ", n.createElement(l.ZP, { color: "link", onClick: a, role: "button", style: z.retry }, E)) : "loaded" === G ? n.createElement(l.ZP, { align: "center", dir: e, numberOfLines: 1, size: "subtext2", style: [z.callout, "top" === L && z.calloutOnTop] }, "X" === I ? n.createElement(d().I18NFormatMessage, { $i18n: "cbb4db07" }, n.cloneElement(W.toggle, null, d().e0f81ff3)) : c ? n.createElement(d().I18NFormatMessage, { $i18n: "be5322c7" }, n.cloneElement(W.toggle, null, d().j2862695({ originLanguage: c })), W.company) : n.createElement(d().I18NFormatMessage, { $i18n: "c5f6ee1d" }, n.cloneElement(W.toggle, null, d().b7cb4fab), W.company)) : n.createElement(l.ZP, { "aria-expanded": !1, color: "link", onClick: a, role: "button", size: "subtext2", style: [z.callout, z.toggle, "top" === L && z.calloutOnTop], withInteractiveStyling: !0 }, w)));
                 return n.createElement(i.z, { context: { id: "", richtext_tags: [], entity_set: {}, is_expandable: !1, text: "", inline_media: [] } }, $);
             }
             const z = s.default.create((e) => ({ translationSourceLink: { marginTop: "0.1em", marginHorizontal: e.spaces.space4 }, nightLogo: { fill: e.colors.white }, callout: { display: "flex", flexWrap: "wrap", marginTop: e.spaces.space4 }, calloutOnTop: { marginTop: 0, marginBottom: e.spaces.space4 }, toggle: { cursor: "pointer" }, retry: { marginStart: e.spaces.space4 }, loading: { marginStart: e.spaces.space4 } }));
@@ -253,7 +253,7 @@
                 m = (0, i.Z)(h);
         },
         900813: (e, t, a) => {
-            a.d(t, { Z: () => w });
+            a.d(t, { Z: () => I });
             var n = a(807896),
                 l = a(202784),
                 s = a(853435),
@@ -263,37 +263,43 @@
                 c = a(401388),
                 d = a(720728),
                 u = a(943245),
-                g = a(556303),
-                h = a(443781),
-                p = a(818065),
-                m = a(71620),
-                T = a(668214),
-                b = a(709318),
-                _ = a(872788),
-                f = a(390387),
-                k = a(251441);
-            const x = (e, t) => k.Z.select(e, t.tweetId),
-                y = (e, t) => k.Z.selectFetchStatus(e, t.tweetId);
-            function E(e, t) {
-                return (0, b.br)(e).type === _.Jz.HOME;
+                g = a(3693),
+                h = a(556303),
+                p = a(312771),
+                m = a(443781),
+                T = a(818065),
+                b = a(71620),
+                _ = a(668214),
+                f = a(709318),
+                k = a(872788),
+                x = a(390387),
+                y = a(251441);
+            const E = (e, t) => y.Z.select(e, t.tweetId),
+                L = (e, t) => y.Z.selectFetchStatus(e, t.tweetId);
+            function S(e, t) {
+                return (0, f.br)(e).type === k.Jz.HOME;
             }
-            const L = (0, T.Z)()
-                .propsFromState(() => ({ translation: x, translationFetchStatus: y, userLanguage: f.VT, isForYouTimelineSelected: E }))
-                .propsFromActions(() => ({ createLocalApiErrorHandler: (0, m.zr)("TRANSLATE_TWEET"), fetchTranslation: k.Z.fetchOneIfNeeded, fetchStreamedGrokTranslation: k.Z.fetchStreamedGrokTranslation, fetchGrokTranslationAndForget: k.Z.fetchGrokTranslationAndForget }));
-            class F extends l.Component {
+            const F = (0, _.Z)()
+                .propsFromState(() => ({ translation: E, translationFetchStatus: L, userLanguage: x.VT, isForYouTimelineSelected: S }))
+                .propsFromActions(() => ({ createLocalApiErrorHandler: (0, b.zr)("TRANSLATE_TWEET"), fetchTranslation: y.Z.fetchOneIfNeeded, fetchStreamedGrokTranslation: y.Z.fetchStreamedGrokTranslation, fetchGrokTranslationAndForget: y.Z.fetchGrokTranslationAndForget }));
+            class w extends l.Component {
                 constructor(...e) {
                     super(...e),
                         (this._useGrokTranslation = () => {
                             const { text: e } = this.props,
                                 { featureSwitches: t } = this.context;
-                            return (0, g.F)(t, e);
+                            return (0, h.F)(t, e);
                         }),
                         (this._fetchTranslation = () => {
-                            const { createLocalApiErrorHandler: e, fetchStreamedGrokTranslation: t, fetchTranslation: a, lang: n, text: l, tweetId: s, userLanguage: r } = this.props,
-                                { featureSwitches: o } = this.context,
-                                i = this._useGrokTranslation(),
-                                c = o.isTrue("responsive_web_grok_poll_translation_enabled");
-                            i ? t(s, { lang: n, userLanguage: r, text: l, includePolls: c }) : a(s, { lang: n, userLanguage: r, text: l }).catch(e());
+                            const { createLocalApiErrorHandler: e, fetchStreamedGrokTranslation: t, fetchTranslation: a, lang: n, text: l, translation: s, translationFetchStatus: r, tweetId: o, userLanguage: i } = this.props,
+                                { featureSwitches: c } = this.context,
+                                d = this._useGrokTranslation(),
+                                u = c.isTrue("responsive_web_grok_poll_translation_enabled");
+                            if (s?.translationState !== g.H.SUCCESS)
+                                if (d) {
+                                    if (s?.streamedTranslationFetchStatus === p.ZP.LOADING) return;
+                                    t(o, { lang: n, userLanguage: i, text: l, includePolls: u });
+                                } else r !== p.ZP.LOADING && a(o, { lang: n, userLanguage: i, text: l }).catch(e());
                         }),
                         (this._fetchGrokTranslationAndForgetIfNeeded = () => {
                             if (!this._shouldFetchGrokTranslationAndForget()) return;
@@ -309,16 +315,16 @@
                         (this._shouldFetchGrokTranslationAndForget = () => {
                             const { featureSwitches: e } = this.context,
                                 { disableTranslation: t, displayTextRange: a, entities: n, isForYouTimelineSelected: l, isTranslatable: s, lang: r, supplementalLang: o, text: i, userLanguage: c } = this.props,
-                                d = e.isTrue("responsive_web_grok_enable_translation_bg_fetch_and_forget") && (0, g.F)(e, i),
+                                d = e.isTrue("responsive_web_grok_enable_translation_bg_fetch_and_forget") && (0, h.F)(e, i),
                                 u = this._getMemoizedDisableTranslation(t, a, n, i, r, o, c, s),
-                                { location: h } = this.context.history,
-                                p = /\/home\/?/.test(h.pathname) && l;
+                                { location: g } = this.context.history,
+                                p = /\/home\/?/.test(g.pathname) && l;
                             return d && p && !u;
                         }),
                         (this._renderTranslation = () => {
-                            const { createLocalApiErrorHandler: e, disableTranslation: t, fetchGrokTranslationAndForget: a, fetchStreamedGrokTranslation: o, fetchTranslation: i, header: c, headerWhenTranslationDisabled: d, hitHighlights: u, isFocal: h, isForYouTimelineSelected: p, isTranslatable: m, onMediaTranslation: T, onToggleTranslation: b, renderTranslationFeedback: _, style: f, supplementalLang: k, text: x, translation: y, translationFetchStatus: E, tweetId: L, userLanguage: F, weight: S, withOriginalText: w, ...Z } = this.props,
+                            const { createLocalApiErrorHandler: e, disableTranslation: t, fetchGrokTranslationAndForget: a, fetchStreamedGrokTranslation: o, fetchTranslation: i, header: c, headerWhenTranslationDisabled: d, hitHighlights: u, isFocal: g, isForYouTimelineSelected: p, isTranslatable: m, onMediaTranslation: T, onToggleTranslation: b, renderTranslationFeedback: _, style: f, supplementalLang: k, text: x, translation: y, translationFetchStatus: E, tweetId: L, userLanguage: S, weight: F, withOriginalText: w, ...Z } = this.props,
                                 { featureSwitches: I } = this.context,
-                                C = (0, g.F)(I, x);
+                                C = (0, h.F)(I, x);
                             if (!y) return;
                             const D = { id: L, richtext_tags: [], entity_set: y.entities, is_expandable: !1, text: y.text, inline_media: [] };
                             return y.text.length ? l.createElement(s.z, { context: D }, l.createElement(r.Z, (0, n.Z)({}, Z, { animateDisplayTextIn: C, displayTextRange: C ? [0, y.text.length] : this._getMemoizedDisplayTextRange(y.text), entities: y.entities, lang: y.destinationLanguage, text: y.text }))) : null;
@@ -345,15 +351,15 @@
                     this._fetchGrokTranslationAndForgetIfNeeded();
                 }
                 render() {
-                    const { createLocalApiErrorHandler: e, disableTranslation: t, fetchGrokTranslationAndForget: a, fetchStreamedGrokTranslation: s, fetchTranslation: o, header: i, headerWhenTranslationDisabled: c, isFocal: g, isForYouTimelineSelected: h, isTranslatable: m, onMediaTranslation: T, onToggleTranslation: b, renderTranslationFeedback: _, style: f, supplementalLang: k, translation: x, translationFetchStatus: y, tweetId: E, userLanguage: L, withOriginalText: F, ...w } = this.props,
-                        Z = x?.localizedSourceLanguage ?? (0, u.t)(L, x?.sourceLanguage);
-                    return l.createElement(d.Z, { disableTranslation: this._shouldDisableTranslation(), fetchTranslation: this._fetchTranslation, header: i, headerWhenTranslationDisabled: c, key: E, onToggleTranslation: b, originLanguage: Z, renderTranslationFeedback: _, scribeElement: "translate_tweet", streamedTranslationFetchStatus: x?.streamedTranslationFetchStatus, style: f, translateButtonText: p.VW, translatedMessage: this._renderTranslation(), translationFetchStatus: y, translationSource: x && x.translationSource, tweetId: E, useGrokTranslation: this._useGrokTranslation(), withOriginalText: F }, l.createElement(r.Z, (0, n.Z)({ style: g && S.focalTweetText }, w)));
+                    const { createLocalApiErrorHandler: e, disableTranslation: t, fetchGrokTranslationAndForget: a, fetchStreamedGrokTranslation: s, fetchTranslation: o, header: i, headerWhenTranslationDisabled: c, isFocal: g, isForYouTimelineSelected: h, isTranslatable: p, onMediaTranslation: m, onToggleTranslation: b, renderTranslationFeedback: _, style: f, supplementalLang: k, translation: x, translationFetchStatus: y, tweetId: E, userLanguage: L, withOriginalText: S, ...F } = this.props,
+                        w = x?.localizedSourceLanguage ?? (0, u.t)(L, x?.sourceLanguage);
+                    return l.createElement(d.Z, { disableTranslation: this._shouldDisableTranslation(), fetchTranslation: this._fetchTranslation, header: i, headerWhenTranslationDisabled: c, key: E, onToggleTranslation: b, originLanguage: w, renderTranslationFeedback: _, scribeElement: "translate_tweet", streamedTranslationFetchStatus: x?.streamedTranslationFetchStatus, style: f, translateButtonText: T.VW, translatedMessage: this._renderTranslation(), translationFetchStatus: y, translationSource: x && x.translationSource, tweetId: E, useGrokTranslation: this._useGrokTranslation(), withOriginalText: S }, l.createElement(r.Z, (0, n.Z)({ style: g && Z.focalTweetText }, F)));
                 }
             }
-            F.contextType = h.rC;
-            const S = o.default.create((e) => ({ focalTweetText: { lineHeight: e.lineHeightsPx.headline1 } })),
-                w = L(F);
+            w.contextType = m.rC;
+            const Z = o.default.create((e) => ({ focalTweetText: { lineHeight: e.lineHeightsPx.headline1 } })),
+                I = F(w);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d.d67ea3ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d.2c3d44ba.js.map

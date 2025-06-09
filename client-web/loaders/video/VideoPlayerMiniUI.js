@@ -341,7 +341,7 @@
                 k = a(38660),
                 I = a(804455),
                 M = a(472238);
-            const O = (0, a(523561).Z)({ loader: () => Promise.all([a.e("icons.2"), a.e("icons.28"), a.e("modules.common-e907d115"), a.e("modules.common-e019dbda"), a.e("icons.25"), a.e("icons.4"), a.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU"), a.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI"), a.e("loaders.video.VideoPlayerPrerollUI")]).then(a.bind(a, 463371)), renderPlaceholder: () => r.createElement("div", { "data-testid": "videoPlayer" }) }),
+            const O = (0, a(523561).Z)({ loader: () => Promise.all([a.e("icons.24"), a.e("icons.10"), a.e("icons.7"), a.e("icons.5"), a.e("modules.common-e907d115"), a.e("modules.common-e019dbda"), a.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU"), a.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI"), a.e("loaders.video.VideoPlayerPrerollUI")]).then(a.bind(a, 463371)), renderPlaceholder: () => r.createElement("div", { "data-testid": "videoPlayer" }) }),
                 B = ({ "aria-label": e, containerRef: t, id: a, includeDisputeLinkInCopyrightErrorMessage: s, liveBroadcastRewindEnabled: d, onClick: u, onScribeEvent: y, playerApi: h, playerDisplayOptions: m, playerState: b, poster: g, shouldShowAltLabel: f, showWatchAgain: S, useKeyboardShortcuts: E }) => {
                     const P = r.useCallback(() => {
                         u?.({ playerState: b, playerApi: h });
@@ -374,4 +374,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.VideoPlayerMiniUI.9907fcba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.VideoPlayerMiniUI.7892104a.js.map
