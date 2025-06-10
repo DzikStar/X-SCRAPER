@@ -7238,22 +7238,22 @@
                 n("hd80bd3e", "Продвиньте пост"),
                 n("fe2b0008", "Узнайте, как пользоваться X"),
                 n("h257d4aa", "Выберите пост для продвижения"),
-                n("e9334fe6", "Data updates every few minutes"),
-                n("a6d7b1d0", "Based on X Internal Data"),
-                n("h9b28dae", "You’re saving time with an ad-free feed"),
+                n("e9334fe6", "Данные обновляются каждые несколько минут"),
+                n("a6d7b1d0", "На основе внутренних данных X"),
+                n("h9b28dae", "Лента без рекламы экономит ваше время"),
                 n("f6c50ec0", "Ваш пробный период без рекламы закончился"),
-                n("e1d1fbca", "You’ve avoided"),
+                n("e1d1fbca", "Вы избежали"),
                 n("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return "Объявлений: " + e.numberOfAds;
                 }),
-                n("ff074c76", "You’re seeing more of the posts you want."),
+                n("ff074c76", "Вы видите больше постов, которые вам интересны."),
                 n("cbc38428", "Пользуйтесь X без рекламы с Premium+"),
-                n("b9028f60", "Back to my ad-free trial"),
-                n("e081d6a0", "No thanks, I’d like to see ads again"),
-                n("fee73dca", "Saving an estimated"),
+                n("b9028f60", "Вернуться к пробной версии без рекламы"),
+                n("e081d6a0", "Нет, спасибо, я хочу снова видеть рекламу"),
+                n("fee73dca", "Вы сэкономили"),
                 n("ic073e4e", "Ваше время ценно"),
                 n("eb866e88", "Приблизительная экономия времени за год"),
-                n("ce72f092", "Based on your usage so far."),
+                n("ce72f092", "На основе имеющихся данных об использовании"),
                 n("c534c6b4", "Мы ведем подсчет…"),
                 n("i57332f0", "Продолжайте прокручивать ленту и вернитесь позже, чтобы увидеть, скольких объявлений вы избежали и сколько времени сэкономили."),
                 n("cc10f019", function (e) {
@@ -7268,15 +7268,15 @@
                 n("b93d00e5", function (e) {
                     return e.days + " д" + f(e.days, "ня", "ней", "ень", "ня");
                 }),
-                n("g2c63852", "100% free. No credit card required."),
+                n("g2c63852", "Абсолютно бесплатно. Кредитная карта не требуется."),
                 n("be88be23", function (e) {
                     return "Ваша " + e.durationInDays + "-дневная пробная версия без рекламы активирована";
                 }),
-                n("b63766a6", "Scroll without ads"),
-                n("h028f7e0", "Spend more time on the content you love"),
-                n("dd68eef6", "Experience the Premium+ luxury life"),
+                n("b63766a6", "Читайте ленту без рекламы"),
+                n("h028f7e0", "Уделяйте больше времени любимому контенту"),
+                n("dd68eef6", "Пользуйтесь всеми преимуществами Premium+"),
                 n("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return "Использовать X без рекламы " + e.durationInDays + " дн.";
                 }),
                 n("dec99336", "Без рекламы"),
                 n("i95803fa", "К сожалению, в настоящее время вы не соответствуете условиям."),
@@ -13366,4 +13366,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ru.c1d3732a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ru.1e35a7aa.js.map

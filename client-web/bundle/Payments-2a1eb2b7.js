@@ -67,7 +67,7 @@
                 m = o;
         },
         727384: (e, t, n) => {
-            n.d(t, { BC: () => Ae, BR: () => Se, Bj: () => Dt, Bl: () => Oe, DK: () => Ve, DO: () => mt, Dc: () => Q, EQ: () => Ke, FW: () => yt, Fs: () => it, GU: () => pe, Gl: () => Be, Gs: () => ot, H_: () => nt, Ix: () => Tt, J$: () => at, M9: () => De, MO: () => ft, Mw: () => Je, NG: () => _e, Oc: () => rt, Ou: () => qe, Q1: () => be, QE: () => Ze, Qu: () => bt, Se: () => tt, So: () => dt, T3: () => Ne, T7: () => kt, Tp: () => ke, Ts: () => Ge, UM: () => Ie, UV: () => Ct, V9: () => Me, XT: () => Ue, _T: () => ze, aY: () => ct, ab: () => ut, bI: () => st, dN: () => Y, fq: () => St, gh: () => ht, gx: () => X, i7: () => Pe, iv: () => lt, jm: () => pt, lD: () => de, lw: () => ne, nV: () => J, p2: () => Z, p6: () => xe, pQ: () => ee, qK: () => te, qQ: () => Ye, qU: () => Fe, qc: () => Rt, uG: () => wt, uN: () => Qe, ve: () => Xe, vw: () => G, wg: () => Ce, wu: () => xt, xe: () => $e, y4: () => At, yH: () => gt, zK: () => Ee, zx: () => ae });
+            n.d(t, { BC: () => Ae, BR: () => De, Bj: () => St, Bl: () => Oe, DK: () => Ve, DO: () => mt, Dc: () => Q, EQ: () => Ke, FW: () => yt, Fs: () => it, GU: () => pe, Gl: () => Be, Gs: () => ot, H_: () => nt, Ix: () => Tt, J$: () => at, M9: () => Se, MO: () => ft, Mw: () => Je, NG: () => _e, Oc: () => rt, Ou: () => qe, Q1: () => be, QE: () => Ze, Qu: () => bt, Se: () => tt, So: () => dt, T3: () => Ne, T7: () => kt, Tp: () => ke, Ts: () => Ge, UM: () => Ie, UV: () => Ct, V9: () => Me, XT: () => Ue, _T: () => ze, aY: () => ct, ab: () => ut, bI: () => st, dN: () => Y, fq: () => Dt, gh: () => ht, gx: () => X, i7: () => Pe, iv: () => lt, jm: () => pt, lD: () => de, lw: () => ne, nV: () => J, p2: () => Z, p6: () => xe, pQ: () => ee, qK: () => te, qQ: () => Ye, qU: () => Fe, qc: () => Rt, uG: () => wt, uN: () => Qe, ve: () => Xe, vw: () => G, wg: () => Ce, wu: () => xt, xe: () => $e, y4: () => At, yH: () => gt, zK: () => Ee, zx: () => ae });
             n(543673), n(240753), n(128399), n(136728);
             var a = n(617374),
                 r = n.n(a),
@@ -92,8 +92,8 @@
                 P = n(115571),
                 T = n(810088),
                 v = n(357818),
-                D = n(539660),
-                S = n(724983),
+                S = n(539660),
+                D = n(724983),
                 k = n(297679),
                 A = n(942512),
                 I = n(217995),
@@ -210,8 +210,8 @@
                         return "";
                 }
             }
-            const se = Object.freeze({ [T.g.Cancelled]: "Cancelled", [T.g.Failed]: "Failed", [T.g.Expired]: "Expired", [T.g.Pending]: "Pending", [T.g.Hold]: "Pending", [T.g.AuthorizationOpen]: "Pending", [T.g.AwaitingUnrecognizedConfirmation]: "Awaiting approval", [T.g.PendingReview]: "Under review", [T.g.PendingRecipientAction]: "Pending", [T.g.PendingRecipientOnboarding]: "Pending", [T.g.AwaitingRequestAcceptance]: "Pending", [T.g.PendingRecipientAcceptance]: "Pending", [T.g.PinVerificationRequired]: "Pending", [T.g.RequestVerificationRequired]: "Pending", [T.g.VerificationRequired]: "Pending", [T.g.RejectedByRecipient]: "Rejected", [T.g.RequestRejected]: "Rejected", [T.g.Settled]: "Completed", [T.g.SoftSettled]: "Completed", [T.g.AuthorizationClosed]: "Completed" }),
-                ie = Object.freeze({ [D.P.RejectedLimitsExceeded]: "Declined due to exceeded limits", [D.P.InReview]: "Under review", [D.P.RejectedByUnsupportedRegion]: "Unsupported region", [D.P.RejectedNotSufficientFunds]: "Declined due to insufficient funds", [D.P.RejectedCardPaymentsDisabled]: "Flagged as suspicious", [D.P.UnrecognizedActivityConfirmed]: "Declined", [D.P.UnrecognizedActivityRejected]: "Flagged as suspicious" }),
+            const se = Object.freeze({ [T.g.Cancelled]: "Cancelled", [T.g.Failed]: "Failed", [T.g.Expired]: "Expired", [T.g.Pending]: "Pending", [T.g.Hold]: "Pending", [T.g.AuthorizationOpen]: "Pending", [T.g.AwaitingUnrecognizedConfirmation]: "Awaiting approval", [T.g.PendingReview]: "Under review", [T.g.PendingRecipientAction]: "Pending", [T.g.PendingRecipientOnboarding]: "Pending", [T.g.AwaitingRequestAcceptance]: "Pending", [T.g.PendingRecipientAcceptance]: "Pending", [T.g.PinVerificationRequired]: "Pending", [T.g.RequestVerificationRequired]: "Pending", [T.g.VerificationRequired]: "Pending", [T.g.RejectedByRecipient]: "Rejected", [T.g.RequestRejected]: "Rejected", [T.g.Settled]: "Completed", [T.g.SoftSettled]: "Completed", [T.g.AuthorizationClosed]: "Completed", [T.g.PendingFundingTransactionSettlement]: "Pending", [T.g.CreditedAwaitingSettlement]: "Pending" }),
+                ie = Object.freeze({ [S.P.RejectedLimitsExceeded]: "Declined due to exceeded limits", [S.P.InReview]: "Under review", [S.P.RejectedByUnsupportedRegion]: "Unsupported region", [S.P.RejectedNotSufficientFunds]: "Declined due to insufficient funds", [S.P.RejectedCardPaymentsDisabled]: "Flagged as suspicious", [S.P.UnrecognizedActivityConfirmed]: "Declined", [S.P.UnrecognizedActivityRejected]: "Flagged as suspicious" }),
                 oe = Object.freeze({ [T.g.PendingRecipientAcceptance]: F, [T.g.PendingRecipientOnboarding]: F, [T.g.PendingRecipientAction]: F }),
                 ce = Object.freeze({ [T.g.AwaitingRequestAcceptance]: F, [T.g.PendingRequestAcceptance]: F, [T.g.RequestVerificationRequired]: F });
             function de({ isViewerSender: e, reasonCode: t, status: n }) {
@@ -270,8 +270,8 @@
             function ve({ status: e, transactionType: t }) {
                 return t === v.x.Transfer && e === T.g.PendingRecipientOnboarding;
             }
-            const De = ({ isViewerSender: e, status: t, transactionType: n }) => (Re({ status: t, transactionType: n }) || ve({ status: t, transactionType: n })) && !e;
-            function Se({ isViewerSender: e, status: t, transactionType: n }) {
+            const Se = ({ isViewerSender: e, status: t, transactionType: n }) => (Re({ status: t, transactionType: n }) || ve({ status: t, transactionType: n })) && !e;
+            function De({ isViewerSender: e, status: t, transactionType: n }) {
                 return Re({ status: t, transactionType: n }) && !e;
             }
             function ke({ isViewerSender: e, status: t, transactionType: n }) {
@@ -292,7 +292,7 @@
                 return Te({ status: t, transactionType: n }) && !e;
             }
             function Ve(e) {
-                return Ie(e) || Se(e) || Ae({ status: e.status });
+                return Ie(e) || De(e) || Ae({ status: e.status });
             }
             function Ue(e) {
                 return Ve(e) || Ne(e) || ke(e);
@@ -368,7 +368,7 @@
                 Ye = (e) => {
                     const t = (0, o.getStorageKey)(O.Z.fragment.selections[0], { search_filter_id: j.$W });
                     Le(e, t);
-                    const n = (0, o.getStorageKey)(S.Z.fragment.selections[0], {});
+                    const n = (0, o.getStorageKey)(D.Z.fragment.selections[0], {});
                     He({ store: e, key: n });
                     const a = (0, o.getStorageKey)(k.Z.fragment.selections[0], {});
                     Le(e, a), et(e);
@@ -461,8 +461,8 @@
                 Pt = { [B.kW.forgotPin]: B.jR, [B.kW.changeCardPin]: B.SR },
                 Tt = ({ challengeInitiator: e }) => (e ? Pt[e] : void 0) ?? B.vw,
                 vt = (e) => parseInt(e, 10) / 100,
-                Dt = ({ apy: e }) => `${vt(e).toFixed(2)}% APY`,
-                St = ({ rate: e }) => `${vt(e)}% Everywhere`,
+                St = ({ apy: e }) => `${vt(e).toFixed(2)}% APY`,
+                Dt = ({ rate: e }) => `${vt(e)}% Everywhere`,
                 kt = (e) => {
                     const t = e?.address,
                         n = t?.postal_code;
@@ -475,4 +475,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.68ccca6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.64e9a12a.js.map

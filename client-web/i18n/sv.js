@@ -7229,22 +7229,22 @@
                 t("hd80bd3e", "Marknadsför ett inlägg"),
                 t("fe2b0008", "Lär dig använda X"),
                 t("h257d4aa", "Välj ett inlägg att marknadsföra"),
-                t("e9334fe6", "Data updates every few minutes"),
-                t("a6d7b1d0", "Based on X Internal Data"),
-                t("h9b28dae", "You’re saving time with an ad-free feed"),
+                t("e9334fe6", "Data uppdateras med några minuters mellanrum"),
+                t("a6d7b1d0", "Baserat på interna data från X"),
+                t("h9b28dae", "Du sparar tid på ett annonsfritt flöde"),
                 t("f6c50ec0", "Din annonsfria testperiod är över"),
-                t("e1d1fbca", "You’ve avoided"),
+                t("e1d1fbca", "Du har undvikit"),
                 t("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return e.numberOfAds + " annonser";
                 }),
-                t("ff074c76", "You’re seeing more of the posts you want."),
+                t("ff074c76", "Du ser fler av de inlägg du vill ha"),
                 t("cbc38428", "Slipp annonser med Premium+"),
-                t("b9028f60", "Back to my ad-free trial"),
-                t("e081d6a0", "No thanks, I’d like to see ads again"),
-                t("fee73dca", "Saving an estimated"),
+                t("b9028f60", "Tillbaka till min annonsfria testversion"),
+                t("e081d6a0", "Nej tack, jag vill se annonser igen"),
+                t("fee73dca", "Du sparar uppskattningsvis"),
                 t("ic073e4e", "Din tid är värdefull."),
                 t("eb866e88", "Uppskattad besparing på ett år"),
-                t("ce72f092", "Based on your usage so far."),
+                t("ce72f092", "Utifrån ditt bruk hittills."),
                 t("c534c6b4", "Vi genomför beräkningarna …"),
                 t("i57332f0", "Rulla vidare och kom tillbaka senare för att se hur många annonser du har sluppit och hur mycket tid du har sparat"),
                 t("cc10f019", function (e) {
@@ -7259,15 +7259,15 @@
                 t("b93d00e5", function (e) {
                     return e.days + " dag" + r(e.days, "", "ar");
                 }),
-                t("g2c63852", "100% free. No credit card required."),
+                t("g2c63852", "Helt gratis. Inget kreditkort behövs."),
                 t("be88be23", function (e) {
                     return "Din " + e.durationInDays + " dagar långa testperiod utan annonser har aktiverats";
                 }),
-                t("b63766a6", "Scroll without ads"),
-                t("h028f7e0", "Spend more time on the content you love"),
-                t("dd68eef6", "Experience the Premium+ luxury life"),
+                t("b63766a6", "Scrolla utan annonser"),
+                t("h028f7e0", "Lägg mer tid på det innehåll du verkligen gillar"),
+                t("dd68eef6", "Upplev lyxen med Premium+"),
                 t("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return "Slipp annonser i " + e.durationInDays + " dagar";
                 }),
                 t("dec99336", "Annonsfritt"),
                 t("i95803fa", "Tyvärr är du inte kvalificerad nu."),
@@ -13353,4 +13353,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.9eb43c6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.1430e12a.js.map

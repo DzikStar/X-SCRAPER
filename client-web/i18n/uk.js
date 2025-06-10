@@ -7238,8 +7238,8 @@
                 n("hd80bd3e", "Прорекламуйте пост"),
                 n("fe2b0008", "Дізнайтеся, як користуватися X"),
                 n("h257d4aa", "Виберіть пост для реклами"),
-                n("e9334fe6", "Data updates every few minutes"),
-                n("a6d7b1d0", "Based on X Internal Data"),
+                n("e9334fe6", "Дані оновлюються кожні кілька хвилин"),
+                n("a6d7b1d0", "На основі внутрішніх даних X"),
                 n("h9b28dae", "You’re saving time with an ad-free feed"),
                 n("f6c50ec0", "Ваш пробний період без реклами закінчився"),
                 n("e1d1fbca", "You’ve avoided"),
@@ -13366,4 +13366,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/uk.02e1fb7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/uk.1fd809ca.js.map

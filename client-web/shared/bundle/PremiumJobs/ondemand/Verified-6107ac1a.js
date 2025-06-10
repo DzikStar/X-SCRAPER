@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.PremiumJobs~ondemand.Verified-6107ac1a", "icons/IconChevronRight-js", "icons/IconStar-js"],
+    ["shared~bundle.PremiumJobs~ondemand.Verified-6107ac1a", "icons/IconLayersStroke-js"],
     {
         322633: (e, l, a) => {
             a.d(l, { Z: () => t });
@@ -1596,22 +1596,7 @@
                         } catch (e) {}
                 };
         },
-        58399: (e, l, a) => {
-            a.r(l), a.d(l, { default: () => o });
-            var n = a(202784),
-                i = a(890601),
-                r = a(783427),
-                t = a(717683),
-                s = a(347101);
-            const u = (e = {}) => {
-                const l = n.useContext(t.Z),
-                    { direction: a } = (0, r.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, l && s.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: a });
-            };
-            u.metadata = { width: 24, height: 24 };
-            const o = u;
-        },
-        258292: (e, l, a) => {
+        720526: (e, l, a) => {
             a.r(l), a.d(l, { default: () => u });
             var n = a(202784),
                 i = a(890601),
@@ -1619,11 +1604,11 @@
                 t = a(347101);
             const s = (e = {}) => {
                 const { direction: l } = (0, r.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [t.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12.013 1l3.527 7.15 7.886 1.14-5.707 5.56 1.347 7.86L12.013 19 4.96 22.71l1.347-7.86L.6 9.29l7.886-1.14L12.013 1z" })) }, { writingDirection: l });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [t.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M19.5 2C20.88 2 22 3.12 22 4.5v11c0 1.21-.86 2.22-2 2.45V4.5c0-.28-.22-.5-.5-.5H6.05c.23-1.14 1.24-2 2.45-2h11zm-4 4C16.88 6 18 7.12 18 8.5v11c0 1.38-1.12 2.5-2.5 2.5h-11C3.12 22 2 20.88 2 19.5v-11C2 7.12 3.12 6 4.5 6h11zM4 19.5c0 .28.22.5.5.5h11c.28 0 .5-.22.5-.5v-11c0-.28-.22-.5-.5-.5h-11c-.28 0-.5.22-.5.5v11z" })) }, { writingDirection: l });
             };
             s.metadata = { width: 24, height: 24 };
             const u = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.PremiumJobs~ondemand.Verified-6107ac1a.fa918b8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.PremiumJobs~ondemand.Verified-6107ac1a.a700a6ea.js.map

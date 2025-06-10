@@ -7236,22 +7236,22 @@
                 n("hd80bd3e", "Промовиши објаву"),
                 n("fe2b0008", "Научи да користиш мрежу X"),
                 n("h257d4aa", "Изабери објаву за промовисање"),
-                n("e9334fe6", "Data updates every few minutes"),
-                n("a6d7b1d0", "Based on X Internal Data"),
-                n("h9b28dae", "You’re saving time with an ad-free feed"),
+                n("e9334fe6", "Подаци се ажурирају сваких пар минута"),
+                n("a6d7b1d0", "Засновано на интерним подацима мреже X"),
+                n("h9b28dae", "Штедиш време уз фид без огласа"),
                 n("f6c50ec0", "Твој пробни период без огласа је завршен"),
-                n("e1d1fbca", "You’ve avoided"),
+                n("e1d1fbca", "Ниси видео/ла"),
                 n("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return "Огласи: " + e.numberOfAds;
                 }),
-                n("ff074c76", "You’re seeing more of the posts you want."),
+                n("ff074c76", "Гледаш више објава које желиш да видиш."),
                 n("cbc38428", "Елиминиши огласе уз Premium+"),
-                n("b9028f60", "Back to my ad-free trial"),
-                n("e081d6a0", "No thanks, I’d like to see ads again"),
-                n("fee73dca", "Saving an estimated"),
+                n("b9028f60", "Назад на пробну верзију без огласа"),
+                n("e081d6a0", "Не, хвала, желим поново да видим огласе"),
+                n("fee73dca", "Процена уштеде"),
                 n("ic073e4e", "Твоје време је драгоцено."),
                 n("eb866e88", "Процењена уштеда времена у трајању од годину дана"),
-                n("ce72f092", "Based on your usage so far."),
+                n("ce72f092", "Засновано на твом коришћењу до сада."),
                 n("c534c6b4", "Прерачунавамо резултате..."),
                 n("i57332f0", "Настави да листаш и касније погледај колико је огласа избегнуто и колика је уштеда времена остварена"),
                 n("cc10f019", function (e) {
@@ -7266,15 +7266,15 @@
                 n("b93d00e5", function (e) {
                     return e.days + " дан" + f(e.days, "а", "", "а");
                 }),
-                n("g2c63852", "100% free. No credit card required."),
+                n("g2c63852", "100% бесплатно. Није неопходна кредитна картица."),
                 n("be88be23", function (e) {
                     return "Твој " + e.durationInDays + "-дневни пробни период без огласа је активиран";
                 }),
-                n("b63766a6", "Scroll without ads"),
-                n("h028f7e0", "Spend more time on the content you love"),
-                n("dd68eef6", "Experience the Premium+ luxury life"),
+                n("b63766a6", "Листај без огласа"),
+                n("h028f7e0", "Више времена за садржај који волиш"),
+                n("dd68eef6", "Искуси луксузни живот уз Premium+"),
                 n("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return "Уживај без огласа " + e.durationInDays + " дан/а";
                 }),
                 n("dec99336", "Без огласа"),
                 n("i95803fa", "Нажалост, тренутно не испуњаваш услове."),
@@ -13367,4 +13367,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sr.8841087a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sr.d2ca2c6a.js.map

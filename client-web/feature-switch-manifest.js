@@ -1,5 +1,5 @@
 var manifest = {
-    feature_set_token: "1369ea88872469ea8664a492b5f5b7a9f877c5d8",
+    feature_set_token: "c797632b693e257bb697a84e024af17d4e8a4397",
     config: {
         "2fa_temporary_password_enabled": { value: !1 },
         Arkose_rweb_hosted_page: { value: !0 },
@@ -293,6 +293,7 @@ var manifest = {
         payments_qr_onboarding_mobile_link_enabled: { value: !1 },
         payments_settings_documents_enabled: { value: !1 },
         payments_tasks_carousel_enabled: { value: !1 },
+        payments_transfer_funding_sources_enabled: { value: !1 },
         payments_transfer_methods_enabled: { value: !1 },
         premium_content_api_read_enabled: { value: !1 },
         premium_home_nav_upgrade_upsell__variant_key_fs: { value: "" },
@@ -1854,7 +1855,7 @@ var manifest = {
         payments_tasks_carousel_enabled: { name: "payments_tasks_carousel_enabled", type: "boolean", defaultValue: !1 },
         payments_crb_iframe_delay_msecs: { name: "payments_crb_iframe_delay_msecs", type: "number", defaultValue: 1e3 },
         payments_transfer_methods_enabled: { name: "payments_transfer_methods_enabled", type: "boolean", defaultValue: !1 },
-        payments_transfer_funding_sources_enabled: { name: "payments_transfer_funding_sources_enabled", type: "string" },
+        payments_transfer_funding_sources_enabled: { name: "payments_transfer_funding_sources_enabled", type: "boolean", defaultValue: !1 },
         payments_settings_notifications_enabled: { name: "payments_settings_notifications_enabled", type: "string" },
         payments_qr_onboarding_mobile_link_enabled: { name: "payments_qr_onboarding_mobile_link_enabled", type: "boolean", defaultValue: !1 },
         payments_settings_sections_enabled: { name: "payments_settings_sections_enabled", type: "string" },
@@ -1865,7 +1866,7 @@ var manifest = {
         premium_content_api_read_enabled: { name: "premium_content_api_read_enabled", type: "boolean", defaultValue: !1 },
         premium_failed_payment_profile_card_17219: { name: "premium_failed_payment_profile_card_17219", type: "experiment", enumeration_values: ["control", "holdback"] },
         premium_home_nav_upgrade_upsell__variant_key_fs: { name: "premium_home_nav_upgrade_upsell__variant_key_fs", type: "string", defaultValue: "" },
-        premium_module_v1_17146: { name: "premium_module_v1_17146", type: "experiment", enumeration_values: ["control", "treatment"] },
+        premium_module_v1_17146: { name: "premium_module_v1_17146", type: "experiment", enumeration_values: [] },
         premium_post_analytics_post_details_upsell_17122: { name: "premium_post_analytics_post_details_upsell_17122", type: "experiment", enumeration_values: [] },
         premium_reply_boost_popup_web_17100: { name: "premium_reply_boost_popup_web_17100", type: "experiment", enumeration_values: [] },
         premium_verified_icon_logo_update_web_17126: { name: "premium_verified_icon_logo_update_web_17126", type: "experiment", enumeration_values: [] },

@@ -7228,22 +7228,22 @@
                 f("hd80bd3e", "ポストをプロモーション"),
                 f("fe2b0008", "Xの使い方について"),
                 f("h257d4aa", "プロモーションするポストを選択"),
-                f("e9334fe6", "Data updates every few minutes"),
-                f("a6d7b1d0", "Based on X Internal Data"),
-                f("h9b28dae", "You’re saving time with an ad-free feed"),
+                f("e9334fe6", "データは数分おきに更新されます"),
+                f("a6d7b1d0", "X内部データにもとづく"),
+                f("h9b28dae", "広告なしのフィードで時間を節約しています"),
                 f("f6c50ec0", "広告なしトライアルが終了しました"),
-                f("e1d1fbca", "You’ve avoided"),
+                f("e1d1fbca", "表示されなかった広告"),
                 f("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return e.numberOfAds + "件";
                 }),
-                f("ff074c76", "You’re seeing more of the posts you want."),
+                f("ff074c76", "見たいポストがたくさん表示されています。"),
                 f("cbc38428", "プレミアムプラスで広告をなくす"),
-                f("b9028f60", "Back to my ad-free trial"),
-                f("e081d6a0", "No thanks, I’d like to see ads again"),
-                f("fee73dca", "Saving an estimated"),
+                f("b9028f60", "広告の非表示トライアルに戻る"),
+                f("e081d6a0", "いいえ、再び広告を表示します"),
+                f("fee73dca", "節約した時間（推定）"),
                 f("ic073e4e", "時は金なりです。"),
                 f("eb866e88", "1年間に節約できる時間（推定）"),
-                f("ce72f092", "Based on your usage so far."),
+                f("ce72f092", "現在までの使用状況にもとづきます。"),
                 f("c534c6b4", "数字を分析中です..."),
                 f("i57332f0", "しばらく閲覧してからここを確認してください。表示されなかった広告の数や節約した時間が表示されます"),
                 f("cc10f019", function (e) {
@@ -7258,15 +7258,15 @@
                 f("b93d00e5", function (e) {
                     return e.days + " 日";
                 }),
-                f("g2c63852", "100% free. No credit card required."),
+                f("g2c63852", "100%無料です。クレジットカードは不要です。"),
                 f("be88be23", function (e) {
                     return e.durationInDays + "日間の広告なしトライアルが有効になりました";
                 }),
-                f("b63766a6", "Scroll without ads"),
-                f("h028f7e0", "Spend more time on the content you love"),
-                f("dd68eef6", "Experience the Premium+ luxury life"),
+                f("b63766a6", "スクロールしても広告が表示されません"),
+                f("h028f7e0", "好きなコンテンツだけに時間を使えます"),
+                f("dd68eef6", "プレミアムプラスの効果を体験できます"),
                 f("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return e.durationInDays + "日間限定、広告の非表示が無料";
                 }),
                 f("dec99336", "広告なし"),
                 f("i95803fa", "申し訳ありませんが、現在のところご利用いただけません。"),
@@ -13358,4 +13358,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.5393133a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.db202fba.js.map

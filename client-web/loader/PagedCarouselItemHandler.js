@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.PagedCarouselItemHandler", "icons/IconChevronRight-js"],
+    ["loader.PagedCarouselItemHandler"],
     {
         64899: (e, t, r) => {
             r.d(t, { H: () => s });
@@ -21,32 +21,32 @@
                 u = r(71620),
                 m = r(668214),
                 p = r(491963),
-                h = r(836255);
-            const w = (e, t) => t.tweetId,
-                C = (e, t) => {
+                w = r(836255);
+            const C = (e, t) => t.tweetId,
+                h = (e, t) => {
                     const r = t.tweetId,
-                        o = r && h.Z.select(e, r);
+                        o = r && w.Z.select(e, r);
                     return o ? (0, p.z0)(e, o) : void 0;
                 },
                 b = (0, m.Z)()
-                    .propsFromState(() => ({ community: C, hydratedTweet: h.Z.createHydratedTweetSelector(w) }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, u.zr)("QUOTE_TWEET_CONTAINER"), fetchCommunityIfNeeded: p.ZP.fetchOneIfNeeded }))(({ community: e, createLocalApiErrorHandler: t, fetchCommunityIfNeeded: r, hydratedTweet: u, onAvatarClick: m, onMediaClick: p, onPress: h, onScreenNameClick: w, tweetId: C, withBirdwatchPivot: b = !0, ...g }) => {
+                    .propsFromState(() => ({ community: h, hydratedTweet: w.Z.createHydratedTweetSelector(C) }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, u.zr)("QUOTE_TWEET_CONTAINER"), fetchCommunityIfNeeded: p.ZP.fetchOneIfNeeded }))(({ community: e, createLocalApiErrorHandler: t, fetchCommunityIfNeeded: r, hydratedTweet: u, onAvatarClick: m, onMediaClick: p, onPress: w, onScreenNameClick: C, tweetId: h, withBirdwatchPivot: b = !0, ..._ }) => {
                     const { featureSwitches: y, viewerUserId: E } = n.useContext(d.rC),
-                        _ = (0, l.z)(),
-                        x = u?.community_id_str;
+                        x = (0, l.z)(),
+                        g = u?.community_id_str;
                     n.useEffect(() => {
-                        x && (0, c.Z)(e) && r(x).catch(t());
-                    }, [e, x, t, r]);
+                        g && (0, c.Z)(e) && r(g).catch(t());
+                    }, [e, g, t, r]);
                     const v = n.useCallback(
                             (e) => {
-                                _.scribeAction("click"), h && h(e);
+                                x.scribeAction("click"), w && w(e);
                             },
-                            [h, _],
+                            [w, x],
                         ),
-                        Z = !!b,
+                        k = !!b,
                         T = u && (0, i.D$)(u, E, e),
-                        k = T && (0, i.rl)(T);
-                    return n.createElement(s.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => y.isTrue("responsive_web_edit_tweet_enabled") || y.isTrue("subscriptions_feature_labs_1004") } }, n.createElement(a.Z, (0, o.Z)({}, g, { loggedInUserId: E, onAvatarClick: m, onMediaClick: p, onPress: v, onScreenNameClick: w, shouldShowAltLabelAlways: !0, socialContextProps: k, tweet: u, withBirdwatchPivot: Z })));
+                        Z = T && (0, i.rl)(T);
+                    return n.createElement(s.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => y.isTrue("responsive_web_edit_tweet_enabled") || y.isTrue("subscriptions_feature_labs_1004") } }, n.createElement(a.Z, (0, o.Z)({}, _, { loggedInUserId: E, onAvatarClick: m, onMediaClick: p, onPress: v, onScreenNameClick: C, shouldShowAltLabelAlways: !0, socialContextProps: Z, tweet: u, withBirdwatchPivot: k })));
                 });
         },
         562154: (e, t, r) => {
@@ -65,45 +65,45 @@
                     const { content: t, showLessOnClick: r, showLessText: o, showMoreOnClick: n, showMoreText: s } = e,
                         l = a.useRef(),
                         p = (0, d.z)(),
-                        h = (e) => (t) => {
+                        w = (e) => (t) => {
                             p.scribeAction("show_more"), n(), l.current?.blur(), e(t);
                         },
-                        w = (e) => (t) => {
+                        C = (e) => (t) => {
                             p.scribeAction("show_less"), r(), l.current?.focus(), l.current?.blur(), e(t);
                         },
-                        C = () => {
+                        h = () => {
                             p.scribeAction("click");
                         };
-                    return a.createElement(u.H.Consumer, null, ({ handleNextSlide: e }) => a.createElement(c.Z, { style: m.root }, a.createElement(c.Z, { onClick: C }, t), a.createElement(c.Z, { style: m.buttonsContainer }, a.createElement(i.ZP, { onPress: w(e), size: "medium", style: [m.button, m.leftControl], type: "primaryOutlined" }, o), a.createElement(i.ZP, { onPress: h(e), ref: l, size: "medium", style: [m.button, m.rightControl], type: "primaryFilled" }, s))));
+                    return a.createElement(u.H.Consumer, null, ({ handleNextSlide: e }) => a.createElement(c.Z, { style: m.root }, a.createElement(c.Z, { onClick: h }, t), a.createElement(c.Z, { style: m.buttonsContainer }, a.createElement(i.ZP, { onPress: C(e), size: "medium", style: [m.button, m.leftControl], type: "primaryOutlined" }, o), a.createElement(i.ZP, { onPress: w(e), ref: l, size: "medium", style: [m.button, m.rightControl], type: "primaryFilled" }, s))));
                 };
-            var h = r(23679),
-                w = r(301758),
-                C = r(71620),
+            var w = r(23679),
+                C = r(301758),
+                h = r(71620),
                 b = r(668214),
-                g = r(836255),
+                _ = r(836255),
                 y = r(960919);
             const E = (e, t) => {
                     const { entry: r } = t,
                         o = r.content.content.pagedCarouselFeedbackItem ? r.content.content.pagedCarouselFeedbackItem.content.tweet.id : void 0;
-                    return o ? g.Z.select(e, o) : void 0;
+                    return o ? _.Z.select(e, o) : void 0;
                 },
-                _ = (e) => {
+                x = (e) => {
                     const { applyReactionInstructions: t, createLocalApiErrorHandler: r, entry: o, processCallback: n, tweet: s } = e,
                         c = s?.id_str,
                         i = o.content.content.pagedCarouselFeedbackItem ? o.content.content.pagedCarouselFeedbackItem : void 0,
                         l = a.useCallback(() => {
-                            i && (n(i.showMoreCallback).catch(r()), t({ entry: o, triggerName: h.K.ON_SHOW_MORE }));
+                            i && (n(i.showMoreCallback).catch(r()), t({ entry: o, triggerName: w.K.ON_SHOW_MORE }));
                         }, [r, t, o, n, i]),
                         d = a.useCallback(() => {
                             i && n(i.showLessCallback).catch(r());
                         }, [r, n, i]),
-                        u = a.useMemo(() => (c ? a.createElement(w.Z, { shouldShowBorder: !1, tweetId: c }) : null), [c]);
+                        u = a.useMemo(() => (c ? a.createElement(C.Z, { shouldShowBorder: !1, tweetId: c }) : null), [c]);
                     return i && s ? a.createElement(p, { content: u, showLessOnClick: d, showLessText: i.showLessText, showMoreOnClick: l, showMoreText: i.showMoreText }) : null;
                 },
-                x = (0, b.Z)()
+                g = (0, b.Z)()
                     .propsFromState(() => ({ tweet: E }))
-                    .propsFromActions(({ module: e }) => ({ applyReactionInstructions: e.applyReactionInstructions, createLocalApiErrorHandler: (0, C.zr)("PAGED_CAROUSEL_FEEDBACK_ITEM"), processCallback: y.Z }))(a.memo(_)),
-                v = s.iH({ component: x, getScribeDataItem: (e) => n.Z.getPagedCarouselTweetURTEntryItem(e), shouldDisplayBorder: (0, o.Z)(!1), isFocusable: (0, o.Z)(!0) }).getHandler();
+                    .propsFromActions(({ module: e }) => ({ applyReactionInstructions: e.applyReactionInstructions, createLocalApiErrorHandler: (0, h.zr)("PAGED_CAROUSEL_FEEDBACK_ITEM"), processCallback: y.Z }))(a.memo(x)),
+                v = s.iH({ component: g, getScribeDataItem: (e) => n.Z.getPagedCarouselTweetURTEntryItem(e), shouldDisplayBorder: (0, o.Z)(!1), isFocusable: (0, o.Z)(!0) }).getHandler();
         },
         988566: (e, t, r) => {
             r.d(t, { D$: () => c, Du: () => d, GK: () => l, Iv: () => m, pz: () => p, rl: () => u });
@@ -134,22 +134,7 @@
             r.d(t, { K: () => o });
             const o = Object.freeze({ ON_LINGER: "onLinger", ON_IS_RELEVANT: "onIsRelevant", ON_SHOW_MORE: "onShowMore", ON_LIKE: "onLike", ON_FOLLOW: "onFollow" });
         },
-        58399: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var o = r(202784),
-                n = r(890601),
-                s = r(783427),
-                a = r(717683),
-                c = r(347101);
-            const i = (e = {}) => {
-                const t = o.useContext(a.Z),
-                    { direction: r } = (0, s.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style, t && c.Z.iconRTL], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: r });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const l = i;
-        },
-        98440: (e, t, r) => {
+        452693: (e, t, r) => {
             r.r(t), r.d(t, { default: () => i });
             var o = r(202784),
                 n = r(890601),
@@ -157,11 +142,11 @@
                 a = r(347101);
             const c = (e = {}) => {
                 const { direction: t } = (0, s.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
             };
             c.metadata = { width: 24, height: 24 };
             const i = c;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.PagedCarouselItemHandler.f52c8cca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.PagedCarouselItemHandler.921ccf4a.js.map

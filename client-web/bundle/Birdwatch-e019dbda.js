@@ -43,7 +43,7 @@
             const c = (0, a.ZP)(i(l));
         },
         337523: (e, t, n) => {
-            n.d(t, { Z: () => we });
+            n.d(t, { Z: () => Te });
             var o = n(202784),
                 a = n(457311),
                 r = n(708852),
@@ -60,8 +60,8 @@
                 p = n(652904),
                 S = n(507651),
                 m = n(3138),
-                T = n(655352),
-                w = n(503229),
+                w = n(655352),
+                T = n(503229),
                 C = n(71620),
                 I = n(668214);
             const A = (e, t) => t.module.selectInitialFetchStatus(e),
@@ -108,7 +108,7 @@
                                         }
                                     );
                                 });
-                                return o.createElement(o.Fragment, null, o.createElement(S.Z, { alignFirstItem: (0, T.ZP)(), links: l, visibleItemIndex: i }));
+                                return o.createElement(o.Fragment, null, o.createElement(S.Z, { alignFirstItem: (0, w.ZP)(), links: l, visibleItemIndex: i }));
                             }
                             return null;
                         });
@@ -134,7 +134,7 @@
                     }
                 }
             }
-            const O = D((0, w.Z)(R));
+            const O = D((0, T.Z)(R));
             var g = n(912021),
                 L = n(383675),
                 U = n(611423),
@@ -142,24 +142,23 @@
             const y = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.2"),
-                        n.e("icons.24"),
-                        n.e("icons.10"),
-                        n.e("icons.15"),
-                        n.e("icons.27"),
-                        n.e("icons.16"),
-                        n.e("icons.12"),
-                        n.e("icons.7"),
+                        n.e("icons.0"),
                         n.e("icons.5"),
-                        n.e("icons.22"),
-                        n.e("icons.19"),
+                        n.e("icons.12"),
+                        n.e("icons.20"),
+                        n.e("icons.2"),
+                        n.e("icons.21"),
+                        n.e("icons.28"),
+                        n.e("icons.10"),
                         n.e("icons.17"),
-                        n.e("icons.26"),
-                        n.e("icons.4"),
-                        n.e("icons.29"),
+                        n.e("icons.9"),
+                        n.e("icons.23"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
+                        n.e("icons.22"),
+                        n.e("icons.25"),
                         n.e("icons.14"),
+                        n.e("icons.13"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -170,12 +169,12 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.13"),
-                        n.e("icons.1"),
-                        n.e("icons.21"),
                         n.e("icons.6"),
+                        n.e("icons.3"),
+                        n.e("icons.4"),
+                        n.e("icons.1"),
                         n.e("icons.18"),
-                        n.e("icons.0"),
+                        n.e("icons.8"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -210,6 +209,7 @@
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
+                        n.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         n.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
@@ -373,13 +373,13 @@
                 }),
                 Se = i().e9f1fbcc,
                 me = o.createElement(c.Z, null),
-                Te = (e) => {
-                    const { TabBar: t, backLocation: n, documentTitle: a, entryConfiguration: d, fab: i, getTabLink: c, hasTabNavigation: S, history: m, initialFetchStatus: T, initialPageNamespace: w, logoButton: C, module: I, onBackClick: A, pageConfiguration: N, prerollDisplayLocation: f, renderEmptyState: D, renderUnavailable: R, rightControl: g, selectedTabId: L, sidebarContent: U, timelinePrefix: M, title: y, withAppLinks: F, withBottomLoginSignupBar: P, withDeferredView: B, withOpenGraphMeta: Z, withSearchBox: v, withTweetButton: x } = e,
+                we = (e) => {
+                    const { TabBar: t, backLocation: n, documentTitle: a, entryConfiguration: d, fab: i, getTabLink: c, hasTabNavigation: S, history: m, initialFetchStatus: w, initialPageNamespace: T, logoButton: C, module: I, onBackClick: A, pageConfiguration: N, prerollDisplayLocation: f, renderEmptyState: D, renderUnavailable: R, rightControl: g, selectedTabId: L, sidebarContent: U, timelinePrefix: M, title: y, withAppLinks: F, withBottomLoginSignupBar: P, withDeferredView: B, withOpenGraphMeta: Z, withSearchBox: v, withTweetButton: x } = e,
                         G = (0, r.tj)(),
                         Q = o.useMemo(() => ({ ...d, ...(0, k.Z)({ isLegacy: !0, isWide: G }) }), [d, G]),
                         [W, q] = o.useState(!0),
                         { header: j, navBar: z, subtitle: V, title: Y } = N || {},
-                        $ = T === h.Z.LOADED ? Y || y : "",
+                        $ = w === h.Z.LOADED ? Y || y : "",
                         J = ((e, t, n) => {
                             const o = t?.scribeConfig,
                                 { entityToken: a, ...r } = o || {},
@@ -388,7 +388,7 @@
                                 i = s?.tabs.find((e) => e.id === d),
                                 { entityToken: c, ...u } = i?.scribeConfig || {};
                             return (0, l.Z)({}, n, r, u);
-                        })(L, N, w),
+                        })(L, N, T),
                         X = j ? o.createElement(K, { header: j, onHeaderVisible: q }) : null,
                         ee = z ? o.createElement(pe, { isHeaderOffscreen: !W, navBar: z, pageNamespace: J, withAppLinks: F, withOpenGraphMeta: Z }) : null,
                         te = B ? u.Z : o.Fragment,
@@ -397,8 +397,8 @@
                         ae = c && S ? o.createElement(O, { getTabLink: c, module: I, selectedTabId: L }) : void 0;
                     return o.createElement(b.nO, { namespace: J }, o.createElement(p.Z, null, o.createElement(_.Z, { TabBar: t, backLocation: n, documentTitle: a, history: m, logoButton: C, onBackClick: A, primaryContent: oe, rightControl: ee || g, secondaryBar: ae, sidebarContent: U, subtitle: V, title: X && W ? y : $, withBottomLoginSignupBar: P, withSearchBox: v, withTweetButton: x })));
                 };
-            Te.defaultProps = { entryConfiguration: (0, x.G)({}), renderEmptyState: () => o.createElement(a.Z, { header: Se }), sidebarContent: me, withDeferredView: !1, withAppLinks: !1, withOpenGraphMeta: !1 };
-            const we = te(Te);
+            we.defaultProps = { entryConfiguration: (0, x.G)({}), renderEmptyState: () => o.createElement(a.Z, { header: Se }), sidebarContent: me, withDeferredView: !1, withAppLinks: !1, withOpenGraphMeta: !1 };
+            const Te = te(we);
         },
         709070: (e, t, n) => {
             n.d(t, { Z: () => r });
@@ -536,7 +536,7 @@
             const r = (e) => (0, a.Z)({ contextSuffix: "BIRDWATCH_CONTRIBUTOR_NOTES_SLICE", getFetchApiEndpoint: (e) => e.withEndpoint(o.Z).fetchBirdwatchContributorNotesSlice, getEndpointParams: (t) => ({ ...t, alias: e }), sliceKey: `birdwatchContributorNotesSlice-${e}` });
         },
         979090: (e, t, n) => {
-            n.d(t, { $e: () => fe, BG: () => ne, Bb: () => Pe, Bs: () => ae, C7: () => Ae, EW: () => Ie, HO: () => Ee, JL: () => ie, Jn: () => he, Kc: () => ge, Ld: () => Fe, Lt: () => J, OV: () => te, PL: () => re, Pi: () => Se, Qg: () => W, SZ: () => ve, V0: () => Me, Wk: () => X, X3: () => Le, _T: () => Ge, _b: () => Ze, aZ: () => Re, ap: () => de, cS: () => oe, dw: () => Y, eD: () => se, eY: () => Te, et: () => V, f3: () => _e, f_: () => Ue, gH: () => ue, gP: () => ke, jm: () => j, kT: () => ye, kX: () => He, lC: () => De, lW: () => le, lw: () => Ne, mZ: () => xe, mv: () => me, oV: () => Qe, pN: () => Ce, qm: () => Oe, r9: () => q, sz: () => $, tk: () => K, vF: () => pe, w6: () => ce, wK: () => Be, wd: () => be, ww: () => we });
+            n.d(t, { $e: () => fe, BG: () => ne, Bb: () => Pe, Bs: () => ae, C7: () => Ae, EW: () => Ie, HO: () => Ee, JL: () => ie, Jn: () => he, Kc: () => ge, Ld: () => Fe, Lt: () => J, OV: () => te, PL: () => re, Pi: () => Se, Qg: () => W, SZ: () => ve, V0: () => Me, Wk: () => X, X3: () => Le, _T: () => Ge, _b: () => Ze, aZ: () => Re, ap: () => de, cS: () => oe, dw: () => Y, eD: () => se, eY: () => we, et: () => V, f3: () => _e, f_: () => Ue, gH: () => ue, gP: () => ke, jm: () => j, kT: () => ye, kX: () => He, lC: () => De, lW: () => le, lw: () => Ne, mZ: () => xe, mv: () => me, oV: () => Qe, pN: () => Ce, qm: () => Oe, r9: () => q, sz: () => $, tk: () => K, vF: () => pe, w6: () => ce, wK: () => Be, wd: () => be, ww: () => Te });
             n(571372), n(136728);
             var o = n(744531),
                 a = n(401388),
@@ -554,8 +554,8 @@
                 p = (0, l.dg)(b, "CREATE_RATING"),
                 S = (0, l.dg)(b, "DELETE_RATING"),
                 m = (0, l.dg)(b, "SELECT_ALIAS"),
-                T = (0, l.dg)(b, "CREATE_APPEAL"),
-                w = (0, l.dg)(b, "EDIT_NOTIFICATION_SETTINGS"),
+                w = (0, l.dg)(b, "CREATE_APPEAL"),
+                T = (0, l.dg)(b, "EDIT_NOTIFICATION_SETTINGS"),
                 C = Object.freeze({ REQUEST: "rweb/birdwatchNotes/CREATE_BIRDWATCH_BAT_SIGNAL_REQUEST", SUCCESS: "rweb/birdwatchNotes/CREATE_BIRDWATCH_BAT_SIGNAL_SUCCESS", FAILURE: "rweb/birdwatchNotes/CREATE_BIRDWATCH_BAT_SIGNAL_FAILURE" }),
                 I = Object.freeze({ REQUEST: "rweb/birdwatchNotes/DELETE_BIRDWATCH_BAT_SIGNAL_REQUEST", SUCCESS: "rweb/birdwatchNotes/DELETE_BIRDWATCH_BAT_SIGNAL", FAILURE: "rweb/birdwatchNotes/DELETE_BIRDWATCH_BAT_SIGNAL" }),
                 A = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_BIRDWATCH_BAT_SIGNAL_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_BIRDWATCH_BAT_SIGNAL_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_BIRDWATCH_BAT_SIGNAL_FAILURE" }),
@@ -920,11 +920,11 @@
                                   )(e),
                               );
                     },
-                Te =
+                we =
                     () =>
                     (e, t, { api: n }) =>
                         !!re(t()) ? Promise.resolve() : e(De()),
-                we =
+                Te =
                     (e) =>
                     (t, n, { api: o }) => {
                         const a = !!W(n(), e),
@@ -1049,7 +1049,7 @@
                 ke =
                     (e) =>
                     (t, n, { api: o }) =>
-                        (0, l._O)(t, { request: o.withEndpoint(r.Z).createAppeal, params: { note_id: e } })({ actionTypes: T, context: "CREATE_APPEAL", meta: { note_id: e } }),
+                        (0, l._O)(t, { request: o.withEndpoint(r.Z).createAppeal, params: { note_id: e } })({ actionTypes: w, context: "CREATE_APPEAL", meta: { note_id: e } }),
                 xe =
                     (e, t) =>
                     (n, o, { api: a }) =>
@@ -1057,7 +1057,7 @@
                 Ge =
                     (e) =>
                     (t, n, { api: o }) =>
-                        (0, l._O)(t, { request: o.withEndpoint(r.Z).editNotificationSettings, params: { settings: e } })({ actionTypes: w, context: "EDIT_NOTIFICATION_SETTINGS", meta: { settings: e } }),
+                        (0, l._O)(t, { request: o.withEndpoint(r.Z).editNotificationSettings, params: { settings: e } })({ actionTypes: T, context: "EDIT_NOTIFICATION_SETTINGS", meta: { settings: e } }),
                 Qe =
                     () =>
                     (e, t, { api: n }) =>
@@ -1154,4 +1154,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.fac2acea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.00383f9a.js.map

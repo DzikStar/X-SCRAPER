@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.CommandCenter", "icons/IconCameraVideoStroke-js", "icons/IconChevronRight-js", "icons/IconHeartBurst-js"],
+    ["ondemand.CommandCenter", "icons/IconCameraVideoStroke-js", "icons/IconDraw-js", "icons/IconExiting-js"],
     {
         395337: (e, t, n) => {
             n.d(t, { Z: () => s });
@@ -48,24 +48,24 @@
                 y = n.n(w),
                 I = n(698891),
                 D = n(459679),
-                M = n(420182),
+                E = n(420182),
                 Z = n(390387),
-                E = n(76920),
-                C = n(688715),
+                C = n(76920),
+                M = n(688715),
                 T = n(348256),
                 x = n(956272),
-                R = n(684869),
-                S = n(717160),
-                z = n(707570),
-                L = n(1753),
+                S = n(684869),
+                R = n(717160),
+                L = n(707570),
+                z = n(1753),
                 F = n(625271),
                 K = n(883069),
                 A = n(279849),
                 N = n(197318),
                 $ = n(689582),
                 H = n(256260),
-                U = n(511323),
-                V = n(80361),
+                V = n(511323),
+                U = n(80361),
                 j = n(856151),
                 q = n(53674),
                 B = n(520913),
@@ -102,48 +102,48 @@
                 ye = y().a5a30af0,
                 Ie = y().b007440a,
                 De = y().c818c60c,
-                Me = y().ha8209bc,
+                Ee = y().ha8209bc,
                 Ze = y().a2f81050,
-                Ee = y().h5860a68,
-                Ce = y().eb75875e,
+                Ce = y().h5860a68,
+                Me = y().eb75875e,
                 Te = y().fcf3e54c,
                 xe = y().ded416b0,
-                Re = y().j0e2cfa8,
-                Se = (0, r.cn)((e) => {
-                    const t = e(M.qc).getState(),
+                Se = y().j0e2cfa8,
+                Re = (0, r.cn)((e) => {
+                    const t = e(E.qc).getState(),
                         n = le.ZP.selectViewerUser(t)?.screen_name,
                         { acceptedIds: i, ids: l } = ie.sC(t),
                         a = l.length - i.length,
-                        r = e(M.f0),
-                        o = e(M.TD),
-                        s = { icon: T.default, label: Me, link: "/home", id: "home" },
+                        r = e(E.f0),
+                        o = e(E.TD),
+                        s = { icon: T.default, label: Ee, link: "/home", id: "home" },
                         d = { icon: x.default, label: Te, link: "/explore", id: "explore" },
-                        c = r.isTrue("subscriptions_inapp_grok_upsell_enabled") || o.isTrueAndEnabled("subscriptions_inapp_grok") ? { icon: te.x1, label: Ee, link: "/i/grok", id: "grok" } : void 0,
-                        u = { icon: R.default, label: Ce, link: "/notifications", id: "notifications" },
-                        m = { icon: S.default, label: Ze, link: "/messages", id: "messages" },
-                        f = r.isTrue("voice_rooms_discovery_page_enabled") ? { icon: z.default, label: xe, link: "/i/spaces", id: "spaces" } : void 0,
-                        p = { icon: L.default, label: ye, link: "/compose/articles", id: "article_composer" },
+                        c = r.isTrue("subscriptions_inapp_grok_upsell_enabled") || o.isTrueAndEnabled("subscriptions_inapp_grok") ? { icon: te.x1, label: Ce, link: "/i/grok", id: "grok" } : void 0,
+                        u = { icon: S.default, label: Me, link: "/notifications", id: "notifications" },
+                        m = { icon: R.default, label: Ze, link: "/messages", id: "messages" },
+                        f = r.isTrue("voice_rooms_discovery_page_enabled") ? { icon: L.default, label: xe, link: "/i/spaces", id: "spaces" } : void 0,
+                        p = { icon: z.default, label: ye, link: "/compose/articles", id: "article_composer" },
                         b = { icon: F.default, label: re, link: "/i/communitynotes", id: "birdwatch" },
                         v = { icon: K.default, label: oe, link: "/i/bookmarks", id: "bookmarks_overflow_item" },
                         _ = { icon: A.default, label: se, link: "/i/branded_likes_preview", id: "branded_likes_preview_overflow_item" },
                         g = (N.default, n ? { icon: $.default, label: ce, link: `/${n}/lists`, id: "lists_overflow_item" } : void 0),
                         h = { badgeCount: a, icon: H.default, label: de, link: "/follower_requests", id: "follower_requests_overflow_item" },
-                        k = n ? { icon: U.default, label: fe, link: `/${n}`, id: "profile_overflow_item" } : void 0,
-                        w = { icon: V.default, label: "Money", link: "/i/xpayments", id: "payments_overflow_item" },
+                        k = n ? { icon: V.default, label: fe, link: `/${n}`, id: "profile_overflow_item" } : void 0,
+                        w = { icon: U.default, label: "Money", link: "/i/xpayments", id: "payments_overflow_item" },
                         y = { icon: j.default, label: ve, link: "/i/coins", id: "twitter_coins" },
                         D = { icon: B.default, label: ke, link: "/i/premium", id: "premium_hub" },
-                        E = { label: ue, link: "/logout", icon: O.default, id: "logout_overflow_item" },
-                        Se = { icon: P.default, label: be, link: (0, C.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-ads-rweb"), id: "twitter_ads_item" },
-                        ze = r.isTrue("subscriptions_upsells_monetization_redesign_enabled"),
-                        Le = { icon: Q.default, label: me, link: ze ? "/i/monetization" : "/settings/monetization", id: "monetization" },
+                        C = { label: ue, link: "/logout", icon: O.default, id: "logout_overflow_item" },
+                        Re = { icon: P.default, label: be, link: (0, M.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-ads-rweb"), id: "twitter_ads_item" },
+                        Le = r.isTrue("subscriptions_upsells_monetization_redesign_enabled"),
+                        ze = { icon: Q.default, label: me, link: Le ? "/i/monetization" : "/settings/monetization", id: "monetization" },
                         Fe = { icon: I.default, label: pe, link: "/settings", id: "settings_overflow_item" },
-                        Ke = { label: r.isTrue("subscriptions_upsells_vo_nav_decoration_enabled") ? Re : _e, id: "verified_organization_signup_item", link: "/i/verified-orgs-signup", icon: W.default },
+                        Ke = { label: r.isTrue("subscriptions_upsells_vo_nav_decoration_enabled") ? Se : _e, id: "verified_organization_signup_item", link: "/i/verified-orgs-signup", icon: W.default },
                         Ae = { label: _e, id: "verified_organization_dashboard_item", link: "/i/verified", icon: W.default },
-                        Ne = { label: ge, id: "create_space_item", link: "/i/spaces/start", icon: z.default },
+                        Ne = { label: ge, id: "create_space_item", link: "/i/spaces/start", icon: L.default },
                         $e = n ? { label: he, id: "communities_item", link: `/${n}/communities`, icon: G.default } : void 0,
                         He = (0, ae.eY)(t),
-                        Ue = r.isTrue("spaces_conference_enabled") || !!He,
-                        Ve = { label: "Conferences", id: "conferences_item", link: "/i/conferences", icon: X.default },
+                        Ve = r.isTrue("spaces_conference_enabled") || !!He,
+                        Ue = { label: "Conferences", id: "conferences_item", link: "/i/conferences", icon: X.default },
                         je = { label: Ie, id: "jobs_item", link: "/jobs", icon: Y.default },
                         qe = o.isAnyPremiumSubscriber(),
                         Be = qe,
@@ -187,28 +187,28 @@
                         Je ? b : void 0,
                         a || et ? h : void 0,
                         tt ? { icon: q.default, label: De, link: "/i/account_analytics", id: "analytics" } : void 0,
-                        Le,
-                        Se,
+                        ze,
+                        Re,
                         nt ? je : void 0,
-                        Ue ? Ve : void 0,
+                        Ve ? Ue : void 0,
                         at ? Ne : void 0,
                         Fe,
-                        E,
+                        C,
                         rt ? $e : void 0,
                         void 0,
                         ot ? _ : void 0,
                     ].filter(Boolean);
                 }),
-                ze = (0, r.cn)(""),
-                Le = (0, r.cn)((e) => [...e(Ke), ...e(Ae), ...e(je), ...e(Oe)]),
+                Le = (0, r.cn)(""),
+                ze = (0, r.cn)((e) => [...e(Ke), ...e(Ae), ...e(je), ...e(Oe)]),
                 Fe = (0, r.cn)((e) =>
-                    e(ze)
+                    e(Le)
                         .split(/ +/g)
                         .filter(Boolean)
                         .map((e) => Ne(e.toLowerCase())),
                 ),
                 Ke = (0, r.cn)((e) => {
-                    const t = e(Se),
+                    const t = e(Re),
                         n = e(Fe);
                     return (0, D.Z)(t, ({ icon: e, id: t, label: i, link: l }) => (n.every((e) => Ne(i.toLowerCase()).includes(e)) ? { id: `nav-${t}`, label: i, path: l, Icon: e } : void 0));
                 }),
@@ -241,21 +241,21 @@
                     });
                 }),
                 He = (0, r.cn)((e) => {
-                    const t = e(M.qc).getState(),
+                    const t = e(E.qc).getState(),
                         n = (0, Z.Lz)(t),
                         i = (0, Z.vd)(t),
-                        l = e(M.f0),
-                        a = e(M.TD);
-                    return (0, E.VA)({ isDelegate: n, delegateRole: i, featureSwitches: l, userClaims: a });
+                        l = e(E.f0),
+                        a = e(E.TD);
+                    return (0, C.VA)({ isDelegate: n, delegateRole: i, featureSwitches: l, userClaims: a });
                 });
-            const Ue = (0, g.K9)((e) =>
+            const Ve = (0, g.K9)((e) =>
                     Promise.all([n.e("modules.audio-6107ac1a"), n.e("modules.audio-b953418a"), n.e("modules.audio-7c51e6a7"), n.e("modules.audio-04db59e9"), n.e("modules.audio-76583d6c"), n.e("modules.audio-b7a8a5fb"), n.e("modules.audio-51f6e793"), n.e("modules.audio-e019dbda"), n.e("modules.audio-262c94d4"), n.e("modules.audio-c6fe4ea4"), n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"), n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"), n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"), n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ab949d70"), n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"), n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"), n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"), n.e("ondemand.devItems")])
                         .then(n.bind(n, 825630))
                         .then(({ devItemsAtom: e }) => e),
                 ),
-                Ve = (0, r.cn)((e) => (e(Ue), e(e(Ue.resolved) ?? (0, r.cn)(() => [])))),
+                Ue = (0, r.cn)((e) => (e(Ve), e(e(Ve.resolved) ?? (0, r.cn)(() => [])))),
                 je =
-                    ((qe = () => Ve),
+                    ((qe = () => Ue),
                     (0, r.cn)((e) => {
                         const t = e(qe()),
                             n = e(Fe);
@@ -264,7 +264,7 @@
             var qe;
             const Be = y().fa9adac1,
                 Oe = (0, r.cn)((e) => {
-                    const t = e(ze).trim();
+                    const t = e(Le).trim();
                     return [{ id: "default-search", label: Be({ query: t }), Icon: f.default, path: `/search?q=${encodeURIComponent(t)}&src=typed_query` }];
                 });
             const Pe = (0, r.cn)((e) => e(et)[e(e(Qe))]),
@@ -286,7 +286,7 @@
                         void 0 !== i && i >= 0 && i < l.length && n(t(Qe), i);
                     }),
                 ),
-                et = (0, r.cn)((e) => e(Le).flatMap((e) => (e.subItems ? (e.path ? [e, ...e.subItems] : e.subItems) : e)));
+                et = (0, r.cn)((e) => e(ze).flatMap((e) => (e.subItems ? (e.path ? [e, ...e.subItems] : e.subItems) : e)));
             var tt = n(187669);
             const nt = (0, r.cn)(null, (e, t, n, i) => {
                 n.scribe(
@@ -310,10 +310,10 @@
                 ),
                 at = (0, r.cn)(null, (e, t, n, i) => {
                     const l = i?.path;
-                    i && l && (t(_._K), t(ze, ""), t(nt, n, i.id), "function" == typeof l ? l() : v.default.push(l));
+                    i && l && (t(_._K), t(Le, ""), t(nt, n, i.id), "function" == typeof l ? l() : v.default.push(l));
                 });
             function rt({ resultId: e }) {
-                const t = (0, a.Dv)(ze),
+                const t = (0, a.Dv)(Le),
                     n = (0, a.b9)(ot),
                     i = (0, b.Z)(),
                     r = (0, a.b9)(lt(i)),
@@ -321,11 +321,11 @@
                 return l.createElement(d.Z, { Icon: f.default, appTextSize: "title4", ariaActiveDescendant: void 0 !== o ? pt(e, o) : "", ariaAutocomplete: "list", ariaControls: e, ariaExpanded: !0, ariaRole: "combobox", autoFocus: !0, onChange: n, onKeyDown: r, placeholder: "Search", style: bt.input, styleType: "selection", value: t });
             }
             const ot = (0, r.cn)(null, (e, t, n) => {
-                    t(ze, n.target.value);
+                    t(Le, n.target.value);
                 }),
                 st = "Results";
             function dt({ id: e }) {
-                const t = (0, a.Dv)(Le);
+                const t = (0, a.Dv)(ze);
                 return l.createElement(
                     o.Z,
                     { "aria-label": st, id: e, role: "listbox", style: bt.results },
@@ -502,22 +502,7 @@
             o.metadata = { width: 24, height: 24 };
             const s = o;
         },
-        58399: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => d });
-            var i = n(202784),
-                l = n(890601),
-                a = n(783427),
-                r = n(717683),
-                o = n(347101);
-            const s = (e = {}) => {
-                const t = i.useContext(r.Z),
-                    { direction: n } = (0, a.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style, t && o.Z.iconRTL], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: n });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const d = s;
-        },
-        279849: (e, t, n) => {
+        197318: (e, t, n) => {
             n.r(t), n.d(t, { default: () => s });
             var i = n(202784),
                 l = n(890601),
@@ -525,12 +510,12 @@
                 r = n(347101);
             const o = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M18.037 13.084c-.918 1.685-2.719 3.479-5.694 5.212l-.342.204-.343-.204c-2.976-1.733-4.777-3.527-5.696-5.212-.924-1.699-.958-3.303-.349-4.533.603-1.216 1.799-1.978 3.127-2.046 1.122-.061 2.289.381 3.261 1.366.971-.985 2.138-1.427 3.259-1.366 1.328.068 2.524.829 3.127 2.046.609 1.23.575 2.834-.349 4.533zM19.42 3.16l1.42 1.42-1.77 1.76-1.41-1.41 1.76-1.77zM13 .5h-2V3h2V.5zM.5 13H3v-2H.5v2zm2.66 6.42l1.42 1.42 1.76-1.77-1.41-1.41-1.77 1.76zM21 11v2h2.5v-2H21zM11 23.5h2V21h-2v2.5zm6.66-4.43l1.76 1.77 1.42-1.42-1.77-1.76-1.41 1.41zM6.34 4.93L4.58 3.16 3.16 4.58l1.77 1.76 1.41-1.41z" })) }, { writingDirection: t });
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M8.7 2.4c.7-.6 1.5-1 2.3-1.4.5-.2 1.1-.3 1.7-.3.4 0 .8.1 1.1.3s.7.4.9.7c.2.3.3.6.4 1 .1.4.1.7 0 1.1-.1.5-.2 1-.4 1.4-.4.8-.8 1.5-1.3 2.2-1.8 2.8-3.9 5.1-5.7 7.7-.4.6-.9 1.3-1.3 1.9-.2.3-.4.6-.6 1.1-.3.6.2.8.8.5 2.3-1.1 10.3-11.2 12.8-9 .3.3 1.7 1.5-1.3 5.8-.4.6-.7 1.1-1.1 1.6-.5.7-1.1 1.5-1.6 2.3-.4.6-.7 1.2-1 1.9-.1.2-.2.6 0 .8.4.4 1.9-.7 3.7-2.4l3.2-3.2c.5-.5 1.2.1.7.7-1.6 1.9-5.5 6.4-7.5 6.3-.4 0-.7-.1-1-.3s-.5-.5-.6-.8c-.1-.2-.2-.7.1-1.5.3-.8.6-1.6 1.1-2.3.5-.8 1-1.7 1.5-2.4.3-.5.7-1.1 1-1.6.3-.5.8-1.4 1.2-2 .2-.3.6-.9.2-1.2-.2-.2-.5-.2-1.3.6 0 0-6.6 6.7-9 8.4-1.3.9-2.8 1.2-3.6.4-1-.9-1.6-2.5 1.5-6.4 3.1-3.8 6.5-8.7 6.8-9.6.1-.2.1-.4.1-.5.1-.5-.5-.9-1-.7-.3.2-.8.5-1.6 1.2-2.3 2-4.3 4.3-6.1 6.8-.1.2-.3.3-.5.4s-.4.2-.6.2c-.4.1-.8-.1-1.2-.3-.3-.2-.5-.6-.6-1v-.6c.1-.2.1-.4.3-.5 2.7-2.9 5-5.2 7.5-7.3z" })) }, { writingDirection: t });
             };
             o.metadata = { width: 24, height: 24 };
             const s = o;
         },
-        98440: (e, t, n) => {
+        297896: (e, t, n) => {
             n.r(t), n.d(t, { default: () => s });
             var i = n(202784),
                 l = n(890601),
@@ -538,7 +523,20 @@
                 r = n(347101);
             const o = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M4 4.5C4 3.12 5.12 2 6.5 2h11C18.88 2 20 3.12 20 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-11C5.12 22 4 20.88 4 19.5V16h2v3.5c0 .28.22.5.5.5h11c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-11c-.28 0-.5.22-.5.5V8H4V4.5zm6.95 3.04L15.42 12l-4.47 4.46-1.41-1.42L11.58 13H2v-2h9.58L9.54 8.96l1.41-1.42z" })) }, { writingDirection: t });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const s = o;
+        },
+        452693: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => s });
+            var i = n(202784),
+                l = n(890601),
+                a = n(783427),
+                r = n(347101);
+            const o = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
             };
             o.metadata = { width: 24, height: 24 };
             const s = o;
@@ -561,4 +559,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.CommandCenter.441047da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.CommandCenter.ace73b9a.js.map

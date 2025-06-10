@@ -7238,22 +7238,22 @@
                 n("hd80bd3e", "קדם פוסט"),
                 n("fe2b0008", "למד איך להשתמש ב-X"),
                 n("h257d4aa", "בחר פוסט שברצונך לקדם"),
-                n("e9334fe6", "Data updates every few minutes"),
-                n("a6d7b1d0", "Based on X Internal Data"),
-                n("h9b28dae", "You’re saving time with an ad-free feed"),
+                n("e9334fe6", "עדכוני נתונים כל כמה דקות"),
+                n("a6d7b1d0", "מבוסס על נתונים פנימיים של X"),
+                n("h9b28dae", "הזנה ללא מודעות תאפשר לך לחסוך זמן"),
                 n("f6c50ec0", "תקופת ההתנסות של החוויה ללא מודעות הסתיימה"),
-                n("e1d1fbca", "You’ve avoided"),
+                n("e1d1fbca", "נמנעת מלראות"),
                 n("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return e.numberOfAds + " מודעות";
                 }),
-                n("ff074c76", "You’re seeing more of the posts you want."),
+                n("ff074c76", "תוכל לראות יותר פוסטים שמעניינים אותך."),
                 n("cbc38428", "שימוש נטול מודעות פרסומת עם Premium+‎"),
-                n("b9028f60", "Back to my ad-free trial"),
-                n("e081d6a0", "No thanks, I’d like to see ads again"),
-                n("fee73dca", "Saving an estimated"),
+                n("b9028f60", "חזרה לתקופת ההתנסות של מינוי ללא מודעות"),
+                n("e081d6a0", "לא תודה, אני רוצה להמשיך לראות מודעות"),
+                n("fee73dca", "חיסכון משוער"),
                 n("ic073e4e", "הזמן שלך יקר."),
                 n("eb866e88", "הזמן המשוער שנחסך במשך שנה"),
-                n("ce72f092", "Based on your usage so far."),
+                n("ce72f092", "מבוסס על אופי השימוש שלך עד כה."),
                 n("c534c6b4", "אנחנו מחשבים את המספרים..."),
                 n("i57332f0", "המשך לגלול וחזור מאוחר יותר כדי לבדוק כמה מודעות נמנעו וכמה זמן חסכת"),
                 n("cc10f019", function (e) {
@@ -7268,15 +7268,15 @@
                 n("b93d00e5", function (e) {
                     return e.days + " י" + t(e.days, "מי", "ו", "מי", "מי") + "ם";
                 }),
-                n("g2c63852", "100% free. No credit card required."),
+                n("g2c63852", "100% בחינם. לא נדרש כרטיס אשראי."),
                 n("be88be23", function (e) {
                     return "תקופת הניסיון בת " + e.durationInDays + " הימים שלך הופעלה";
                 }),
-                n("b63766a6", "Scroll without ads"),
-                n("h028f7e0", "Spend more time on the content you love"),
-                n("dd68eef6", "Experience the Premium+ luxury life"),
+                n("b63766a6", "לגלול ללא מודעות"),
+                n("h028f7e0", "להשקיע יותר מזן בתוכן שאתה אוהב"),
+                n("dd68eef6", "ליהנות מחיי היוקרה שמעניק מינוי Premium+‎"),
                 n("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return "ליהנות ממינוי ללא מודעות למשך " + e.durationInDays + " ימים";
                 }),
                 n("dec99336", "ללא מודעות"),
                 n("i95803fa", "למרבה הצער, בשלב זה אינך זכאי."),
@@ -13366,4 +13366,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.72f1972a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.ec41a1aa.js.map

@@ -7229,22 +7229,22 @@
                 e("hd80bd3e", "Mainosta julkaisua"),
                 e("fe2b0008", "Opi X:n käyttäjäksi"),
                 e("h257d4aa", "Valitse mainostettava julkaisu"),
-                e("e9334fe6", "Data updates every few minutes"),
-                e("a6d7b1d0", "Based on X Internal Data"),
-                e("h9b28dae", "You’re saving time with an ad-free feed"),
+                e("e9334fe6", "Tiedot päivittyvät muutaman minuutin välein"),
+                e("a6d7b1d0", "X:n sisäisen datan perusteella"),
+                e("h9b28dae", "Säästät aikaa, kun syötteessä ei ole mainoksia"),
                 e("f6c50ec0", "Mainokseton kokeilusi on päättynyt"),
-                e("e1d1fbca", "You’ve avoided"),
+                e("e1d1fbca", "Olet välttänyt"),
                 e("a82d7abd", function (a) {
-                    return a.numberOfAds + " ads";
+                    return a.numberOfAds + " mainosta";
                 }),
-                e("ff074c76", "You’re seeing more of the posts you want."),
+                e("ff074c76", "Näet enemmän haluamiasi julkaisuja."),
                 e("cbc38428", "Ota kokeiluun Premium+ ilman mainoksia"),
-                e("b9028f60", "Back to my ad-free trial"),
-                e("e081d6a0", "No thanks, I’d like to see ads again"),
-                e("fee73dca", "Saving an estimated"),
+                e("b9028f60", "Takaisin mainoksettomaan kokeiluun"),
+                e("e081d6a0", "Ei kiitos, haluan taas mainoksia"),
+                e("fee73dca", "Olet säästänyt aikaa arviolta"),
                 e("ic073e4e", "Aika on rahaa."),
                 e("eb866e88", "Arvioidut säästöt 1 vuodessa"),
-                e("ce72f092", "Based on your usage so far."),
+                e("ce72f092", "Tähänastisen käyttösi perusteella."),
                 e("c534c6b4", "Lasketaanpa..."),
                 e("i57332f0", "Jatka skrollailua ja palaa myöhemmin katsomaan, montako mainosta olet välttänyt ja paljonko aikaa säästänyt"),
                 e("cc10f019", function (a) {
@@ -7259,15 +7259,15 @@
                 e("b93d00e5", function (a) {
                     return a.days + " päivä" + n(a.days, "", "ä");
                 }),
-                e("g2c63852", "100% free. No credit card required."),
+                e("g2c63852", "100 % ilmainen. Et tarvitse luottokorttia."),
                 e("be88be23", function (a) {
                     return a.durationInDays + "-päiväinen mainokseton kokeilusi on aktivoitu";
                 }),
-                e("b63766a6", "Scroll without ads"),
-                e("h028f7e0", "Spend more time on the content you love"),
-                e("dd68eef6", "Experience the Premium+ luxury life"),
+                e("b63766a6", "Skrollaa ilman mainoksia"),
+                e("h028f7e0", "Käytä enemmän aikaa mieluisan sisällön parissa"),
+                e("dd68eef6", "Koe Premium+:n mukavuus"),
                 e("g8a2f217", function (a) {
-                    return "Enjoy ad-free for " + a.durationInDays + " days";
+                    return "Ota lomaa mainoksista " + a.durationInDays + " päiväksi";
                 }),
                 e("dec99336", "Ilman mainoksia"),
                 e("i95803fa", "Valitettavasti et täytä kelpoisuusvaatimuksia."),
@@ -13366,4 +13366,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.6e0d708a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.916adbaa.js.map

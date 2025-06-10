@@ -7229,22 +7229,22 @@
                 n("hd80bd3e", "ಪೋಸ್ಟ್ ಅನ್ನು ಉತ್ತೇಜಿಸಿ"),
                 n("fe2b0008", "X ಅನ್ನು ಹೇಗೆ ಬಳಸುವುದೆಂದು ತಿಳಿದುಕೊಳ್ಳಿ"),
                 n("h257d4aa", "ಪ್ರಾಯೋಜಿಸಲು ಒಂದು ಪೋಸ್ಟ್ ಆಯ್ಕೆಮಾಡಿ"),
-                n("e9334fe6", "Data updates every few minutes"),
-                n("a6d7b1d0", "Based on X Internal Data"),
-                n("h9b28dae", "You’re saving time with an ad-free feed"),
+                n("e9334fe6", "ಪ್ರತಿ ಕೆಲವು ನಿಮಿಷಗಳಿಗೊಮ್ಮೆ ಡೇಟಾ ಅಪ್‌ಡೇಟ್ ಆಗುತ್ತದೆ"),
+                n("a6d7b1d0", "X ಆಂತರಿಕ ಡೇಟಾವನ್ನು ಆಧರಿಸಿದೆ"),
+                n("h9b28dae", "ಜಾಹೀರಾತು-ಮುಕ್ತ ಫೀಡ್‌ನೊಂದಿಗೆ ನೀವು ಸಮಯವನ್ನು ಉಳಿಸುತ್ತಿದ್ದೀರಿ"),
                 n("f6c50ec0", "ನಿಮ್ಮ ಜಾಹೀರಾತು-ರಹಿತ ಪ್ರಾಯೋಗಿಕ ಅವಧಿ ಮುಗಿದಿದೆ."),
-                n("e1d1fbca", "You’ve avoided"),
+                n("e1d1fbca", "ನೀವು ತಪ್ಪಿಸಿಕೊಂಡಿದ್ದೀರಿ"),
                 n("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return e.numberOfAds + " ಜಾಹೀರಾತುಗಳು";
                 }),
-                n("ff074c76", "You’re seeing more of the posts you want."),
+                n("ff074c76", "ನೀವು ಬಯಸುವ ಹೆಚ್ಚಿನ ಪೋಸ್ಟ್‌ಗಳನ್ನು ನೀವು ನೋಡುತ್ತಿದ್ದೀರಿ."),
                 n("cbc38428", "Premium+ ನೊಂದಿಗೆ ಜಾಹೀರಾತು-ಮುಕ್ತವಾಗಿರಿ"),
-                n("b9028f60", "Back to my ad-free trial"),
-                n("e081d6a0", "No thanks, I’d like to see ads again"),
-                n("fee73dca", "Saving an estimated"),
+                n("b9028f60", "ನನ್ನ ಜಾಹೀರಾತು-ಮುಕ್ತ ಪ್ರಯೋಗಕ್ಕೆ ಹಿಂತಿರುಗಿ"),
+                n("e081d6a0", "ಬೇಡ ಧನ್ಯವಾದಗಳು, ನಾನು ಪುನಃ ಜಾಹೀರಾತುಗಳನ್ನು ನೋಡಲು ಬಯಸುತ್ತೇನೆ"),
+                n("fee73dca", "ಅಂದಾಜು ಉಳಿತಾಯ"),
                 n("ic073e4e", "ನಿಮ್ಮ ಸಮಯ ಅಮೂಲ್ಯವಾಗಿದೆ."),
                 n("eb866e88", "ಅಂದಾಜು 1-ವರ್ಷದ ಸಮಯ ಉಳಿತಾಯಗಳು"),
-                n("ce72f092", "Based on your usage so far."),
+                n("ce72f092", "ಇದುವರೆಗಿನ ನಿಮ್ಮ ಬಳಕೆಯನ್ನು ಆಧರಿಸಿದೆ."),
                 n("c534c6b4", "ನಾವು ಸಂಖ್ಯೆಗಳನ್ನು ಲೆಕ್ಕ ಹಾಕುತ್ತಿದ್ದೇವೆ..."),
                 n("i57332f0", "ನೀವು ಎಷ್ಟು ಜಾಹೀರಾತುಗಳನ್ನು ತಪ್ಪಿಸಿದ್ದೀರಿ ಮತ್ತು ಎಷ್ಟು ಸಮಯವನ್ನು ಉಳಿಸಿದ್ದೀರಿ ಎಂಬುದನ್ನು ನೋಡಲು ಸ್ಕ್ರಾಲಿಂಗ್ ಮಾಡುವುದನ್ನು ಮುಂದುವರಿಸಿ ಮತ್ತು ನಂತರ ಪುನಃ ಪರಿಶೀಲಿಸಿ."),
                 n("cc10f019", function (e) {
@@ -7259,15 +7259,15 @@
                 n("b93d00e5", function (e) {
                     return e.days + " ದಿನ" + f(e.days, "", "ಗಳು");
                 }),
-                n("g2c63852", "100% free. No credit card required."),
+                n("g2c63852", "100% ಉಚಿತ. ಯಾವುದೇ ಕ್ರೆಡಿಟ್ ಕಾರ್ಡ್ ಅಗತ್ಯವಿಲ್ಲ."),
                 n("be88be23", function (e) {
                     return "ನಿಮ್ಮ " + e.durationInDays + "-ದಿನದ ಜಾಹೀರಾತು-ಮುಕ್ತ ಪ್ರಾಯೋಗಿಕ ಅವಧಿಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ";
                 }),
-                n("b63766a6", "Scroll without ads"),
-                n("h028f7e0", "Spend more time on the content you love"),
-                n("dd68eef6", "Experience the Premium+ luxury life"),
+                n("b63766a6", "ಜಾಹೀರಾತುಗಳಿಲ್ಲದೆ ಸ್ಕ್ರಾಲ್ ಮಾಡಿ"),
+                n("h028f7e0", "ನೀವು ಇಷ್ಟಪಡುವ ವಿಷಯದ ಮೇಲೆ ಹೆಚ್ಚಿನ ಸಮಯವನ್ನು ಕಳೆಯಿರಿ"),
+                n("dd68eef6", "Premium+ ಐಷಾರಾಮಿ ಜೀವನದ ಅನುಭವವನ್ನು ಪಡೆಯಿರಿ"),
                 n("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return e.durationInDays + " ದಿನಗಳವರೆಗೆ ಜಾಹೀರಾತು-ಮುಕ್ತವಾಗಿ ಆನಂದಿಸಿ";
                 }),
                 n("dec99336", "ಜಾಹೀರಾತು-ರಹಿತ"),
                 n("i95803fa", "ದುರದೃಷ್ಟವಶಾತ್, ನೀವು ಈ ಸಮಯದಲ್ಲಿ ಅರ್ಹರಾಗಿಲ್ಲ."),
@@ -13365,4 +13365,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/kn.b0dd37fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/kn.60e120ba.js.map

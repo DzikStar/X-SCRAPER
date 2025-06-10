@@ -1,9 +1,9 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch", "icons/IconChevronRight-js"],
+    ["shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch", "icons/IconExiting-js"],
     {
         110512: (e, l, a) => {
-            a.d(l, { ZP: () => Q, V7: () => W });
+            a.d(l, { ZP: () => z, V7: () => W });
             a(136728);
             var n,
                 i,
@@ -12,8 +12,8 @@
                 s,
                 o,
                 d,
-                u,
                 c,
+                u,
                 g,
                 p = {
                     fragment: {
@@ -77,7 +77,7 @@
                                                                         },
                                                                         action: "THROW",
                                                                     },
-                                                                    { kind: "RequiredField", field: { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ kind: "RequiredField", field: (u = { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }), action: "THROW" }], storageKey: null }, action: "THROW" },
+                                                                    { kind: "RequiredField", field: { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ kind: "RequiredField", field: (c = { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }), action: "THROW" }], storageKey: null }, action: "THROW" },
                                                                     { args: null, kind: "FragmentSpread", name: "UserCell_user" },
                                                                 ],
                                                                 type: "User",
@@ -144,7 +144,7 @@
                                                                     r,
                                                                     { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [s], storageKey: null },
                                                                     { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [o, d], storageKey: null },
-                                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [u], storageKey: null },
+                                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [c], storageKey: null },
                                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
                                                                     { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
@@ -172,7 +172,7 @@
                                                                                         name: "url",
                                                                                         plural: !1,
                                                                                         selections: [
-                                                                                            (c = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null }),
+                                                                                            (u = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null }),
                                                                                             { alias: "urlType", args: null, kind: "ScalarField", name: "url_type", storageKey: null },
                                                                                             {
                                                                                                 alias: "urtEndpointOptions",
@@ -205,7 +205,7 @@
                                                                                         ],
                                                                                         storageKey: null,
                                                                                     },
-                                                                                    { alias: null, args: null, concreteType: "BadgeInfo", kind: "LinkedField", name: "badge", plural: !1, selections: [c], storageKey: null },
+                                                                                    { alias: null, args: null, concreteType: "BadgeInfo", kind: "LinkedField", name: "badge", plural: !1, selections: [u], storageKey: null },
                                                                                     { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
                                                                                     { alias: "userLabelType", args: null, kind: "ScalarField", name: "user_label_type", storageKey: null },
                                                                                     { alias: "userLabelDisplayType", args: null, kind: "ScalarField", name: "user_label_display_type", storageKey: null },
@@ -253,8 +253,8 @@
                     params: { id: "vPrfbpPK7KoeIHlqqoHLbA", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "DelegatedAccountListQuery", operationKind: "query", text: null },
                 };
             p.hash = "1e0a77d9768f003fab71a100e8291dbc";
-            const y = p;
-            var m = a(202784),
+            const m = p;
+            var y = a(202784),
                 k = a(325686),
                 _ = (a(585488), a(712696)),
                 v = a.n(_),
@@ -271,13 +271,13 @@
                 E = a(621416),
                 C = a(125363),
                 A = a(175856),
-                R = a(390387),
-                I = a(114084),
-                D = a(736063);
-            const Z = (0, a(668214).Z)()
-                    .propsFromActions(() => ({ setDelegateUser: R.vU }))
+                I = a(390387),
+                D = a(114084),
+                R = a(736063);
+            const H = (0, a(668214).Z)()
+                    .propsFromActions(() => ({ setDelegateUser: I.vU }))
                     .withAnalytics({ component: "delegated_account_list" }),
-                H = y,
+                Z = m,
                 q = L().daffabde,
                 P = L().eccbfa26,
                 x = L().a1b7a904,
@@ -286,26 +286,26 @@
                     const r = (0, C.I0)(),
                         s = (0, h.useHistory)(),
                         [o] = (0, E.m)(A.s7),
-                        [d, u] = m.useState(!0),
-                        c = v()(H, {}),
-                        g = m.useMemo(() => {
+                        [d, c] = y.useState(!0),
+                        u = v()(Z, {}),
+                        g = y.useMemo(() => {
                             const l = [];
                             return (
-                                c.viewer_v2?.list_delegation_groups?.forEach((a) => {
+                                u.viewer_v2?.list_delegation_groups?.forEach((a) => {
                                     const { result: n } = a.handle || {};
                                     ("User" === n?.__typename && n?.rest_id === e) || ("User" === n?.__typename && l.push(n));
                                 }),
                                 l
                             );
-                        }, [e, c.viewer_v2?.list_delegation_groups]),
-                        p = m.useMemo(() => l?.userId && g.some((e) => e?.rest_id && l?.userId === e?.rest_id), [l, g]),
-                        y = m.useCallback(() => {
-                            u(!d);
+                        }, [e, u.viewer_v2?.list_delegation_groups]),
+                        p = y.useMemo(() => l?.userId && g.some((e) => e?.rest_id && l?.userId === e?.rest_id), [l, g]),
+                        m = y.useCallback(() => {
+                            c(!d);
                         }, [d]);
-                    m.useEffect(() => {
-                        r(R.po(g.length));
+                    y.useEffect(() => {
+                        r(I.po(g.length));
                     }, [g, r]);
-                    const _ = m.useCallback(
+                    const _ = y.useCallback(
                         (e) => () => {
                             o ? s.push("/i/delegate/switch", { delegateUser: e }) : t && t(e), n();
                         },
@@ -313,25 +313,25 @@
                     );
                     return g.length < 1
                         ? null
-                        : m.createElement(
-                              m.Fragment,
+                        : y.createElement(
+                              y.Fragment,
                               null,
-                              a ? m.createElement(k.Z, { style: B.updatedDelegateAccountsLabel }, m.createElement(F.ZP, { color: "gray700", weight: "bold" }, P)) : m.createElement(k.Z, { onClick: y, style: B.delegateAccountsLabel }, m.createElement(F.ZP, { color: "gray700", weight: "bold" }, p ? q : P), !p && (d ? m.createElement(T.default, { style: B.IconChevronUp }) : m.createElement(S.default, { style: B.IconChevronDown }))),
+                              a ? y.createElement(k.Z, { style: V.updatedDelegateAccountsLabel }, y.createElement(F.ZP, { color: "gray700", weight: "bold" }, P)) : y.createElement(k.Z, { onClick: m, style: V.delegateAccountsLabel }, y.createElement(F.ZP, { color: "gray700", weight: "bold" }, p ? q : P), !p && (d ? y.createElement(T.default, { style: V.IconChevronUp }) : y.createElement(S.default, { style: V.IconChevronDown }))),
                               a || d || p
                                   ? g.map((e) => {
                                         const { id_str: n } = e.legacy,
                                             t = n === l?.userId,
                                             r = i ? i({ withBadges: !1, isActiveUser: t }) : void 0,
                                             s = _({ userId: n });
-                                        return m.createElement(m.Fragment, { key: e.rest_id }, m.createElement(I.Z, { "aria-label": x, badgeContext: "account", decoration: r, displayMode: "UserCompact", onCellClick: t ? U.Z : s, user: e, withInteractiveStyling: !t, withLink: !1 }), a && m.createElement(b.Z, { style: B.accountDivider }));
+                                        return y.createElement(y.Fragment, { key: e.rest_id }, y.createElement(D.Z, { "aria-label": x, badgeContext: "account", decoration: r, displayMode: "UserCompact", onCellClick: t ? U.Z : s, user: e, withInteractiveStyling: !t, withLink: !1 }), a && y.createElement(b.Z, { style: V.accountDivider }));
                                     })
-                                  : m.createElement(k.Z, { style: B.facePileContainer }, m.createElement(f.Z, { userAvatarSize: "large", userAvatarUrls: g.map((e) => (e?.legacy && e?.avatar?.image_url) || "") })),
+                                  : y.createElement(k.Z, { style: V.facePileContainer }, y.createElement(f.Z, { userAvatarSize: "large", userAvatarUrls: g.map((e) => (e?.legacy && e?.avatar?.image_url) || "") })),
                           );
                 };
             function W() {
-                const e = v()(H, {}),
-                    l = (0, C.v9)(R.x0);
-                return m.useMemo(() => {
+                const e = v()(Z, {}),
+                    l = (0, C.v9)(I.x0);
+                return y.useMemo(() => {
                     const a = [];
                     return (
                         e.viewer_v2?.list_delegation_groups?.forEach((e) => {
@@ -342,8 +342,8 @@
                     );
                 }, [e.viewer_v2?.list_delegation_groups, l]);
             }
-            const B = K.default.create((e) => ({ IconChevronUp: { color: e.colors.primary, marginEnd: e.spaces.space12 }, IconChevronDown: { color: e.colors.gray700, marginEnd: e.spaces.space12 }, delegateAccountsLabel: { padding: e.spaces.space12, alignItems: "center", flexDirection: "row", justifyContent: "space-between", cursor: "pointer" }, updatedDelegateAccountsLabel: { margin: e.spaces.space16, marginBottom: e.spaces.space4 }, accountDivider: { marginHorizontal: e.spaces.space16 }, facePileContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } })),
-                Q = Z((e) => m.createElement(D.H, { errorConfig: M }, m.createElement(O, e)));
+            const V = K.default.create((e) => ({ IconChevronUp: { color: e.colors.primary, marginEnd: e.spaces.space12 }, IconChevronDown: { color: e.colors.gray700, marginEnd: e.spaces.space12 }, delegateAccountsLabel: { padding: e.spaces.space12, alignItems: "center", flexDirection: "row", justifyContent: "space-between", cursor: "pointer" }, updatedDelegateAccountsLabel: { margin: e.spaces.space16, marginBottom: e.spaces.space4 }, accountDivider: { marginHorizontal: e.spaces.space16 }, facePileContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } })),
+                z = H((e) => y.createElement(R.H, { errorConfig: M }, y.createElement(O, e)));
         },
         621416: (e, l, a) => {
             a.d(l, { m: () => t });
@@ -399,22 +399,7 @@
             }
             const s = t.default.create((e) => ({ divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }));
         },
-        58399: (e, l, a) => {
-            a.r(l), a.d(l, { default: () => d });
-            var n = a(202784),
-                i = a(890601),
-                t = a(783427),
-                r = a(717683),
-                s = a(347101);
-            const o = (e = {}) => {
-                const l = n.useContext(r.Z),
-                    { direction: a } = (0, t.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, l && s.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: a });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const d = o;
-        },
-        98440: (e, l, a) => {
+        297896: (e, l, a) => {
             a.r(l), a.d(l, { default: () => o });
             var n = a(202784),
                 i = a(890601),
@@ -422,11 +407,24 @@
                 r = a(347101);
             const s = (e = {}) => {
                 const { direction: l } = (0, t.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: l });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M4 4.5C4 3.12 5.12 2 6.5 2h11C18.88 2 20 3.12 20 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-11C5.12 22 4 20.88 4 19.5V16h2v3.5c0 .28.22.5.5.5h11c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-11c-.28 0-.5.22-.5.5V8H4V4.5zm6.95 3.04L15.42 12l-4.47 4.46-1.41-1.42L11.58 13H2v-2h9.58L9.54 8.96l1.41-1.42z" })) }, { writingDirection: l });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
+        },
+        452693: (e, l, a) => {
+            a.r(l), a.d(l, { default: () => o });
+            var n = a(202784),
+                i = a(890601),
+                t = a(783427),
+                r = a(347101);
+            const s = (e = {}) => {
+                const { direction: l } = (0, t.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: l });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch.9da2daea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch.43b11dfa.js.map

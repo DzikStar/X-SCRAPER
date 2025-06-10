@@ -7228,22 +7228,22 @@
                 n("hd80bd3e", "இடுகையை விளம்பரப்படுத்து"),
                 n("fe2b0008", "X -ஐ எவ்வாறு பயன்படுத்துவது என்பதை அறிக"),
                 n("h257d4aa", "விளம்பரப்படுத்த ஓர் இடுகையைத் தேர்ந்தெடுக்கவும்"),
-                n("e9334fe6", "Data updates every few minutes"),
-                n("a6d7b1d0", "Based on X Internal Data"),
-                n("h9b28dae", "You’re saving time with an ad-free feed"),
+                n("e9334fe6", "ஒவ்வொரு சில நிமிடங்களுக்கும் தரவு புதுப்பிக்கப்படும்"),
+                n("a6d7b1d0", "X அகத் தரவின் அடிப்படையில்"),
+                n("h9b28dae", "விளம்பரமில்லா ஃபீடு மூலம் நேரத்தை மிச்சப்படுத்துகிறீர்கள்"),
                 n("f6c50ec0", "உங்கள் விளம்பரமில்லா சோதனை முடிந்தது"),
-                n("e1d1fbca", "You’ve avoided"),
+                n("e1d1fbca", "தவிர்த்துவிட்டீர்கள்"),
                 n("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return e.numberOfAds + " விளம்பரங்கள்";
                 }),
-                n("ff074c76", "You’re seeing more of the posts you want."),
+                n("ff074c76", "நீங்கள் விரும்பும் இடுகைகளை அதிகமாகப் பார்க்கிறீர்கள்."),
                 n("cbc38428", "Premium+ மூலம் விளம்பரமில்லா அணுகலைத் தொடரவும்"),
-                n("b9028f60", "Back to my ad-free trial"),
-                n("e081d6a0", "No thanks, I’d like to see ads again"),
-                n("fee73dca", "Saving an estimated"),
+                n("b9028f60", "எனது விளம்பரமில்லா சோதனைக்குத் திரும்பு"),
+                n("e081d6a0", "வேண்டாம் நன்றி, விளம்பரங்களை மீண்டும் பார்க்க விரும்புகிறேன்"),
+                n("fee73dca", "மதிப்பிடப்பட்ட சேமிப்பு"),
                 n("ic073e4e", "உங்கள் நேரம் மதிப்புமிக்கது."),
                 n("eb866e88", "மதிப்பிடப்பட்ட 1 வருட நேரச் சேமிப்பு"),
-                n("ce72f092", "Based on your usage so far."),
+                n("ce72f092", "இதுவரையிலான உங்கள் உபயோகத்தின் அடிப்படையில்."),
                 n("c534c6b4", "நாங்கள் எண்களைக் கணக்கிடுகிறோம்..."),
                 n("i57332f0", "நீங்கள் எத்தனை விளம்பரங்களைத் தவிர்த்துள்ளீர்கள், எவ்வளவு நேரத்தைச் சேமித்துள்ளீர்கள் என்பதைப் பார்க்க, தொடர்ந்து ஸ்க்ரோல் செய்து, பின்னர் மீண்டும் சரிபார்க்கவும்"),
                 n("cc10f019", function (e) {
@@ -7258,15 +7258,15 @@
                 n("b93d00e5", function (e) {
                     return e.days + " நா" + t(e.days, "", "ட்க") + "ள்";
                 }),
-                n("g2c63852", "100% free. No credit card required."),
+                n("g2c63852", "100% இலவசம். கிரெடிட் கார்டு தேவையில்லை."),
                 n("be88be23", function (e) {
                     return "உங்கள் " + e.durationInDays + " நாள் விளம்பரமில்லா சோதனை செயல்படுத்தப்பட்டது";
                 }),
-                n("b63766a6", "Scroll without ads"),
-                n("h028f7e0", "Spend more time on the content you love"),
-                n("dd68eef6", "Experience the Premium+ luxury life"),
+                n("b63766a6", "விளம்பரங்கள் இல்லாமல் ஸ்க்ரோல் செய்யலாம்"),
+                n("h028f7e0", "நீங்கள் விரும்பும் உள்ளடக்கத்தில் அதிக நேரம் செலவிடுங்கள்"),
+                n("dd68eef6", "Premium+ சொகுசு வாழ்க்கையை அனுபவியுங்கள்"),
                 n("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return e.durationInDays + " நாட்களுக்கு விளம்பரமில்லா சேவை";
                 }),
                 n("dec99336", "விளம்பரமற்றது"),
                 n("i95803fa", "துரதிர்ஷ்டவசமாக, இந்த நேரத்தில் நீங்கள் தகுதி பெறவில்லை."),
@@ -13370,4 +13370,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ta.2217a65a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ta.1584257a.js.map

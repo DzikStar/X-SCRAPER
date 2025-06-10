@@ -7229,22 +7229,22 @@
                 a("hd80bd3e", "Een post uitlichten"),
                 a("fe2b0008", "Ontdek hoe je X gebruikt"),
                 a("h257d4aa", "Een post selecteren om uit te lichten"),
-                a("e9334fe6", "Data updates every few minutes"),
-                a("a6d7b1d0", "Based on X Internal Data"),
-                a("h9b28dae", "You’re saving time with an ad-free feed"),
+                a("e9334fe6", "Gegevens worden om de paar minuten bijgewerkt"),
+                a("a6d7b1d0", "Gebaseerd op interne gegevens van X"),
+                a("h9b28dae", "Je bespaart tijd met een feed zonder advertenties"),
                 a("f6c50ec0", "Je reclamevrije proefperiode is afgelopen"),
-                a("e1d1fbca", "You’ve avoided"),
+                a("e1d1fbca", "Dit heb je vermeden:"),
                 a("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return e.numberOfAds + " advertenties";
                 }),
-                a("ff074c76", "You’re seeing more of the posts you want."),
+                a("ff074c76", "Je ziet meer van de posts die je wil."),
                 a("cbc38428", "Blijf reclamevrij met Premium+"),
-                a("b9028f60", "Back to my ad-free trial"),
-                a("e081d6a0", "No thanks, I’d like to see ads again"),
-                a("fee73dca", "Saving an estimated"),
+                a("b9028f60", "Terug naar mijn reclamevrije proefperiode"),
+                a("e081d6a0", "Nee bedankt, ik wil weer advertenties zien"),
+                a("fee73dca", "Je hebt ongeveer aan tijd bespaard:"),
                 a("ic073e4e", "Jouw tijd is kostbaar."),
                 a("eb866e88", "Geschatte tijdsbesparing per jaar"),
-                a("ce72f092", "Based on your usage so far."),
+                a("ce72f092", "Gebaseerd op je gebruik tot nu toe."),
                 a("c534c6b4", "We berekenen de cijfers ..."),
                 a("i57332f0", "Blijf scrollen en kom later terug om te zien hoeveel advertenties je hebt vermeden en hoeveel tijd je hebt bespaard"),
                 a("cc10f019", function (e) {
@@ -7259,15 +7259,15 @@
                 a("b93d00e5", function (e) {
                     return e.days + " dag" + r(e.days, "", "en");
                 }),
-                a("g2c63852", "100% free. No credit card required."),
+                a("g2c63852", "100% gratis. Geen creditcard nodig."),
                 a("be88be23", function (e) {
                     return "Je advertentievrije proefperiode van " + e.durationInDays + " dagen is geactiveerd";
                 }),
-                a("b63766a6", "Scroll without ads"),
-                a("h028f7e0", "Spend more time on the content you love"),
-                a("dd68eef6", "Experience the Premium+ luxury life"),
+                a("b63766a6", "Scrollen zonder advertenties"),
+                a("h028f7e0", "Besteed meer tijd aan de content die je leuk vindt"),
+                a("dd68eef6", "Ervaar de luxe van Premium+"),
                 a("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return "Profiteer van " + e.durationInDays + " dagen lang reclamevrij";
                 }),
                 a("dec99336", "Reclamevrij"),
                 a("i95803fa", "Helaas kom je op dit moment hiervoor niet in aanmerking."),
@@ -13366,4 +13366,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.499c3f5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.64343e7a.js.map

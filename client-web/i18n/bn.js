@@ -7229,22 +7229,22 @@
                 n("hd80bd3e", "একটি পোস্ট প্রোমোট করুন"),
                 n("fe2b0008", "X কীভাবে ব্যবহার করবেন জানুন"),
                 n("h257d4aa", "প্রোমোট করতে একটি পোস্ট নির্বাচন করুন"),
-                n("e9334fe6", "Data updates every few minutes"),
-                n("a6d7b1d0", "Based on X Internal Data"),
-                n("h9b28dae", "You’re saving time with an ad-free feed"),
+                n("e9334fe6", "প্রতি কয়েক মিনিটে ডেটা আপডেট হয়"),
+                n("a6d7b1d0", "X-এর অভ্যন্তরীণ তথ্যের উপর ভিত্তি করে"),
+                n("h9b28dae", "বিজ্ঞাপন-মুক্ত ফিডের মাধ্যমে আপনি সময় বাঁচাচ্ছেন"),
                 n("f6c50ec0", "আপনার বিজ্ঞাপন-ছাড়া ট্রায়াল শেষ হয়েছে"),
-                n("e1d1fbca", "You’ve avoided"),
+                n("e1d1fbca", "আপনি এড়িয়ে গেছেন"),
                 n("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return e.numberOfAds + " বিজ্ঞাপন";
                 }),
-                n("ff074c76", "You’re seeing more of the posts you want."),
+                n("ff074c76", "আপনি আপনার পছন্দের পোস্টগুলোর আরও বেশি দেখতে পাচ্ছেন।"),
                 n("cbc38428", "Premium+ এর সাথে বিজ্ঞাপন ছাড়া উপভোগ করে যান"),
-                n("b9028f60", "Back to my ad-free trial"),
-                n("e081d6a0", "No thanks, I’d like to see ads again"),
-                n("fee73dca", "Saving an estimated"),
+                n("b9028f60", "আমার বিজ্ঞাপন-মুক্ত ট্রায়ালে ফিরে যান"),
+                n("e081d6a0", "না, ধন্যবাদ, আমি আবার বিজ্ঞাপন দেখতে চাই"),
+                n("fee73dca", "আনুমানিক সঞ্চয়"),
                 n("ic073e4e", "আপনার সময় আমাদের জন্য খুবই গুরুত্বপূর্ণ।"),
                 n("eb866e88", "প্রত্যাশিত 1-বছর সময় সাশ্রয় করা হয়েছে"),
-                n("ce72f092", "Based on your usage so far."),
+                n("ce72f092", "আপনার এখনও পর্যন্ত ব্যবহারের উপর ভিত্তি করে।"),
                 n("c534c6b4", "আমরা এখন গাণিতিক বিশ্লেষণ করছি..."),
                 n("i57332f0", "স্ক্রোল করতে থাকুন এবং পরে আবার দেখুন আপনি কতগুলি বিজ্ঞাপন এড়িয়ে গেছেন এবং কতটা সময় সাশ্রয় করেছেন।"),
                 n("cc10f019", function (e) {
@@ -7259,15 +7259,15 @@
                 n("b93d00e5", function (e) {
                     return e.days + " দিন";
                 }),
-                n("g2c63852", "100% free. No credit card required."),
+                n("g2c63852", "100% বিনামূল্যে। কোনো ক্রেডিট কার্ডের প্রয়োজন নেই।"),
                 n("be88be23", function (e) {
                     return "আপনার " + e.durationInDays + " দিনের বিজ্ঞাপন-ফ্রি ট্রায়াল সক্রিয় করা হয়েছে";
                 }),
-                n("b63766a6", "Scroll without ads"),
-                n("h028f7e0", "Spend more time on the content you love"),
-                n("dd68eef6", "Experience the Premium+ luxury life"),
+                n("b63766a6", "বিজ্ঞাপন ছাড়াই স্ক্রোল করুন"),
+                n("h028f7e0", "আপনার পছন্দের কন্টেন্টের উপর আরও বেশি সময় ব্যয় করুন"),
+                n("dd68eef6", "প্রিমিয়াম+ বিলাসবহুল জীবনের অভিজ্ঞতা অর্জন করুন"),
                 n("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return e.durationInDays + " দিনের জন্য বিজ্ঞাপন-মুক্ত উপভোগ করুন";
                 }),
                 n("dec99336", "বিজ্ঞাপন-ছাড়া"),
                 n("i95803fa", "দুর্ভাগ্যবশত, আপনি এই মুহুর্তে যোগ্য নন।"),
@@ -13028,7 +13028,7 @@
                 p = (m._validateParameterTypeDate, m._dateToPartsFormat, m._dateToPartsFormatterFn),
                 k = (m._dateFormat, m._dateFormatterFn),
                 N = m._relativeTimeFormatterFn,
-                l = m._unitFormatterFn;
+                X = m._unitFormatterFn;
             (m.a1243793601 = s(["", , 1, 0, 1, , , , 3, 2, "", "#,##,##0.###", "-#,##,##0.###", "-", "", g("truncate"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, "০১২৩৪৫৬৭৮৯", { 3: { one: "0 হাজার", other: "0 হাজার" }, 4: { one: "00 হাজার", other: "00 হাজার" }, 5: { one: "0 লাখ", other: "0 লাখ" }, 6: { one: "0M", other: "0M" }, 7: { one: "00M", other: "00M" }, 8: { one: "000M", other: "000M" }, 9: { one: "0B", other: "0B" }, 10: { one: "00B", other: "00B" }, 11: { one: "000B", other: "000B" }, 12: { one: "0T", other: "0T" }, 13: { one: "00T", other: "00T" }, 14: { one: "000T", other: "000T" }, maxExponent: 14 }], m("bn").pluralGenerator({}))),
                 (m.b554273779 = s(["", , 1, 0, 3, , , , 3, 2, "", "#,##,##0.###", "-#,##,##0.###", "-", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, "০১২৩৪৫৬৭৮৯"])),
                 (m.b923134963 = s(["", , 1, 0, 2, , , , 3, 2, "", "#,##,##0.###", "-#,##,##0.###", "-", "", g("round"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, "০১২৩৪৫৬৭৮৯"])),
@@ -13228,22 +13228,22 @@
                 (m.a1438407935 = k(m("bn").dateToPartsFormatter({ skeleton: "MMMM" }))),
                 (m.b1603313921 = k(m("bn").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (m.b1074409575 = N(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "{0} দিনের মধ্যে", "relativeTimePattern-count-other": "{0} দিনের মধ্যে" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "{0} দিন আগে", "relativeTimePattern-count-other": "{0} দিন আগে" }, "relative-type--2": "গত পরশু", "relative-type--1": "গতকাল", "relative-type-0": "আজ", "relative-type-1": "আগামীকাল", "relative-type-2": "আগামী পরশু" })),
-                (m.b1420048002 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেকেন্ড", other: "{0} সেকেন্ড", perUnitPattern: "{0} প্রতি সেকেন্ড" } })),
-                (m.a987955998 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "মিনিট", one: "{0} মিনিট", other: "{0} মিনিট", perUnitPattern: "{0} প্রতি মিনিট" } })),
-                (m.a2084942126 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "ঘন্টা", one: "{0} ঘন্টা", other: "{0} ঘন্টা", perUnitPattern: "{0} প্রতি ঘন্টা" } })),
-                (m.b1470131905 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেঃ", other: "{0} সেঃ", perUnitPattern: "{0}/সে:" } })),
-                (m.a1929306847 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "মিনিট", one: "{0} মিঃ", other: "{0} মিঃ", perUnitPattern: "{0}/মি:" } })),
-                (m.b428978961 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ঘন্টা", one: "{0} ঘঃ", other: "{0} ঘঃ", perUnitPattern: "{0}/ঘ:" } })),
-                (m.a277603157 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "দিন", one: "{0} দিন", other: "{0} দিন", perUnitPattern: "{0}/দিন" } })),
-                (m.a92383508 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "দিন", one: "{0} দিন", other: "{0} দিন", perUnitPattern: "{0} প্রতি দিন" } })),
-                (m.a81498745 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "মাস", one: "{0} মাস", other: "{0} মাস", perUnitPattern: "{0}/মাস" } })),
-                (m.b1820667592 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "মাস", one: "{0} মাস", other: "{0} মাস", perUnitPattern: "{0} প্রতি মাস" } })),
-                (m.a975583432 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "বছর", one: "{0} বছর", other: "{0} বছর", perUnitPattern: "{0}/বছর" } })),
-                (m.b729235641 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "বছর", one: "{0} বছর", other: "{0} বছর", perUnitPattern: "{0} প্রতি বছর" } })),
-                (m.a661508558 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেকেন্ড", other: "{0} সেকেন্ড", perUnitPattern: "{0} প্রতি সেকেন্ড" } })),
-                (m.b1999778770 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "মিনিট", one: "{0} মিনিট", other: "{0} মিনিট", perUnitPattern: "{0} প্রতি মিনিট" } })),
-                (m.a1942020126 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ঘন্টা", one: "{0} ঘন্টা", other: "{0} ঘন্টা", perUnitPattern: "{0} প্রতি ঘন্টা" } })),
-                (m.a1393778542 = l(m("bn").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেঃ", other: "{0} সেঃ", perUnitPattern: "{0}/সে:" } })),
+                (m.b1420048002 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেকেন্ড", other: "{0} সেকেন্ড", perUnitPattern: "{0} প্রতি সেকেন্ড" } })),
+                (m.a987955998 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "মিনিট", one: "{0} মিনিট", other: "{0} মিনিট", perUnitPattern: "{0} প্রতি মিনিট" } })),
+                (m.a2084942126 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "ঘন্টা", one: "{0} ঘন্টা", other: "{0} ঘন্টা", perUnitPattern: "{0} প্রতি ঘন্টা" } })),
+                (m.b1470131905 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেঃ", other: "{0} সেঃ", perUnitPattern: "{0}/সে:" } })),
+                (m.a1929306847 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "মিনিট", one: "{0} মিঃ", other: "{0} মিঃ", perUnitPattern: "{0}/মি:" } })),
+                (m.b428978961 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ঘন্টা", one: "{0} ঘঃ", other: "{0} ঘঃ", perUnitPattern: "{0}/ঘ:" } })),
+                (m.a277603157 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "দিন", one: "{0} দিন", other: "{0} দিন", perUnitPattern: "{0}/দিন" } })),
+                (m.a92383508 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "দিন", one: "{0} দিন", other: "{0} দিন", perUnitPattern: "{0} প্রতি দিন" } })),
+                (m.a81498745 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "মাস", one: "{0} মাস", other: "{0} মাস", perUnitPattern: "{0}/মাস" } })),
+                (m.b1820667592 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "মাস", one: "{0} মাস", other: "{0} মাস", perUnitPattern: "{0} প্রতি মাস" } })),
+                (m.a975583432 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "বছর", one: "{0} বছর", other: "{0} বছর", perUnitPattern: "{0}/বছর" } })),
+                (m.b729235641 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "বছর", one: "{0} বছর", other: "{0} বছর", perUnitPattern: "{0} প্রতি বছর" } })),
+                (m.a661508558 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেকেন্ড", other: "{0} সেকেন্ড", perUnitPattern: "{0} প্রতি সেকেন্ড" } })),
+                (m.b1999778770 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "মিনিট", one: "{0} মিনিট", other: "{0} মিনিট", perUnitPattern: "{0} প্রতি মিনিট" } })),
+                (m.a1942020126 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ঘন্টা", one: "{0} ঘন্টা", other: "{0} ঘন্টা", perUnitPattern: "{0} প্রতি ঘন্টা" } })),
+                (m.a1393778542 = X(m("bn").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেঃ", other: "{0} সেঃ", perUnitPattern: "{0}/সে:" } })),
                 n("d58baa7f", m.a1243793601),
                 n("ia24dc8d", m.b554273779),
                 n("iab73d4b", m.b923134963),
@@ -13368,4 +13368,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bn.4108a0ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bn.8893cd6a.js.map

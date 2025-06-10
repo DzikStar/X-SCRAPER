@@ -7228,22 +7228,22 @@
                 i("hd80bd3e", "Promosikan sebuah postingan"),
                 i("fe2b0008", "Pelajari cara menggunakan X"),
                 i("h257d4aa", "Pilih postingan untuk dipromosikan"),
-                i("e9334fe6", "Data updates every few minutes"),
-                i("a6d7b1d0", "Based on X Internal Data"),
-                i("h9b28dae", "You’re saving time with an ad-free feed"),
+                i("e9334fe6", "Data diperbarui setiap beberapa menit"),
+                i("a6d7b1d0", "Berdasarkan Data Internal X"),
+                i("h9b28dae", "Anda menghemat waktu dengan feed tanpa iklan"),
                 i("f6c50ec0", "Uji coba bebas iklan Anda sudah berakhir"),
-                i("e1d1fbca", "You’ve avoided"),
+                i("e1d1fbca", "Anda telah menghindari"),
                 i("a82d7abd", function (a) {
-                    return a.numberOfAds + " ads";
+                    return a.numberOfAds + " iklan";
                 }),
-                i("ff074c76", "You’re seeing more of the posts you want."),
+                i("ff074c76", "Anda melihat lebih banyak postingan yang Anda suka."),
                 i("cbc38428", "Tetap nikmati tanpa iklan dengan Premium+"),
-                i("b9028f60", "Back to my ad-free trial"),
-                i("e081d6a0", "No thanks, I’d like to see ads again"),
-                i("fee73dca", "Saving an estimated"),
+                i("b9028f60", "Kembali ke uji coba bebas iklan"),
+                i("e081d6a0", "Tidak, terima kasih. Saya tidak masalah dengan iklan"),
+                i("fee73dca", "Menghemat sekitar"),
                 i("ic073e4e", "Waktu Anda berharga."),
                 i("eb866e88", "Estimasi penghematan waktu 1 tahun"),
-                i("ce72f092", "Based on your usage so far."),
+                i("ce72f092", "Berdasarkan penggunaan Anda sejauh ini."),
                 i("c534c6b4", "Kami sedang mengumpulkan penghitungannya..."),
                 i("i57332f0", "Terus menjelajah dan periksa lagi nanti untuk mengetahui berapa banyak iklan yang berhasil Anda hindari dan berapa lama waktu yang Anda hemat"),
                 i("cc10f019", function (a) {
@@ -7258,15 +7258,15 @@
                 i("b93d00e5", function (a) {
                     return a.days + " hari";
                 }),
-                i("g2c63852", "100% free. No credit card required."),
+                i("g2c63852", "100% gratis. Tidak memerlukan kartu kredit."),
                 i("be88be23", function (a) {
                     return "Uji coba bebas iklan " + a.durationInDays + " hari sudah diaktifkan untuk Anda";
                 }),
-                i("b63766a6", "Scroll without ads"),
-                i("h028f7e0", "Spend more time on the content you love"),
-                i("dd68eef6", "Experience the Premium+ luxury life"),
+                i("b63766a6", "Gulir tanpa iklan"),
+                i("h028f7e0", "Luangkan lebih banyak waktu menikmati konten yang Anda suka"),
+                i("dd68eef6", "Nikmati pengalaman mewah Premium+"),
                 i("g8a2f217", function (a) {
-                    return "Enjoy ad-free for " + a.durationInDays + " days";
+                    return "Nikmati tanpa iklan selama " + a.durationInDays + " hari";
                 }),
                 i("dec99336", "Bebas iklan"),
                 i("i95803fa", "Sayangnya, saat ini Anda belum memenuhi syarat."),
@@ -13351,4 +13351,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.082794ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.88ca186a.js.map

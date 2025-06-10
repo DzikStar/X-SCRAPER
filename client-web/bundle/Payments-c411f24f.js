@@ -5,8 +5,8 @@
         601463: (e, t, a) => {
             a.d(t, { Z: () => p });
             var n = a(202784),
-                l = a(325686),
-                c = a(661810),
+                c = a(325686),
+                l = a(661810),
                 r = a(731708),
                 o = a(392237),
                 i = a(950822),
@@ -82,15 +82,15 @@
                             n.createElement("ellipse", { cx: "73.510002", cy: "16.941", rx: ".24", ry: ".256" }),
                         ),
                     }),
-                m = () => n.createElement(l.Z, { style: u.contentWrapper }, n.createElement(c.Z, { spacing: "space8" }), n.createElement(l.Z, { style: u.row }, n.createElement(d, { style: u.logo }), n.createElement(l.Z, { style: u.column }, n.createElement(r.ZP, { color: "gray500", size: "subtext3" }, "Your deposits are eligible for pass through FDIC insurance up to $250,000."), n.createElement(r.ZP, { color: "gray500", size: "subtext3" }, "X is a financial services company and not a bank. Banking services and FDIC insurance is provided by Cross River Bank, Member FDIC.")))),
+                m = () => n.createElement(c.Z, { style: u.contentWrapper }, n.createElement(l.Z, { spacing: "space8" }), n.createElement(c.Z, { style: u.row }, n.createElement(d, { style: u.logo }), n.createElement(c.Z, { style: u.column }, n.createElement(r.ZP, { color: "gray500", size: "subtext3" }, "Your deposits are eligible for pass through FDIC insurance up to $250,000."), n.createElement(r.ZP, { color: "gray500", size: "subtext3" }, "X is a financial services company and not a bank. Banking services and FDIC insurance is provided by Cross River Bank, Member FDIC.")))),
                 u = o.default.create((e) => ({ logo: { width: e.spaces.space64, color: e.colors.gray500 }, row: { flexDirection: "row", gap: e.spaces.space24 }, column: { flexDirection: "column", gap: e.spaces.space12, flex: 1 } })),
                 p = n.memo(m);
         },
         575123: (e, t, a) => {
             a.d(t, { Z: () => h });
             var n = a(202784),
-                l = a(325686),
-                c = a(154003),
+                c = a(325686),
+                l = a(154003),
                 r = a(692165),
                 o = a(19197),
                 i = a(514639),
@@ -98,14 +98,14 @@
             const d = "Help Center",
                 m = "Settings",
                 u = { pathname: i.N6, external: !0, openInSameFrame: !1 },
-                p = () => n.createElement(l.Z, { style: s.ZP.actionButtons }, n.createElement(c.ZP, { "aria-label": d, hoverLabel: { label: d }, icon: n.createElement(r.default, null), link: u, pullRight: !0, type: "primaryText" }), n.createElement(c.ZP, { "aria-label": m, hoverLabel: { label: m }, icon: n.createElement(o.default, null), link: i.Sr, pullRight: !0, type: "primaryText" })),
+                p = () => n.createElement(c.Z, { style: s.ZP.actionButtons }, n.createElement(l.ZP, { "aria-label": d, hoverLabel: { label: d }, icon: n.createElement(r.default, null), link: u, pullRight: !0, type: "primaryText" }), n.createElement(l.ZP, { "aria-label": m, hoverLabel: { label: m }, icon: n.createElement(o.default, null), link: i.Sr, pullRight: !0, type: "primaryText" })),
                 h = n.memo(p);
         },
         827309: (e, t, a) => {
             a.d(t, { Z: () => p });
             var n = a(202784),
-                l = a(325686),
-                c = a(731708),
+                c = a(325686),
+                l = a(731708),
                 r = a(154003),
                 o = a(392237),
                 i = a(760286),
@@ -113,7 +113,7 @@
                 d = a(743080);
             const m = ({ actionLabel: e, children: t, headline: a, history: o, onAction: m, onClose: p, subtext: h, supportUrl: y }) => {
                     const g = (0, d.jh)();
-                    return n.createElement(s.Z, { backButtonType: p ? "close" : void 0, hideBackButton: !p, history: o, onBackClick: p, withoutBottomBarMobile: !0 }, n.createElement(l.Z, { style: g.container }, n.createElement(i.default, { style: d.ZP.illustration }), n.createElement(c.ZP, { size: "title1", weight: "bold" }, a), n.createElement(c.ZP, { color: "gray700", size: "subtext1" }, h, y ? n.createElement(n.Fragment, null, n.createElement(c.ZP, { link: y, size: "body", style: d.ZP.learnMoreLink }, "Learn more")) : null), n.createElement(l.Z, { style: u.content }, t)), m ? n.createElement(l.Z, { style: g.footer }, n.createElement(r.ZP, { onPress: m, size: "large", type: "primaryFilled" }, e)) : null);
+                    return n.createElement(s.Z, { backButtonType: p ? "close" : void 0, hideBackButton: !p, history: o, onBackClick: p, withoutBottomBarMobile: !0 }, n.createElement(c.Z, { style: g.container }, n.createElement(i.default, { style: d.ZP.illustration }), n.createElement(l.ZP, { size: "title1", weight: "bold" }, a), n.createElement(l.ZP, { color: "gray700", size: "subtext1" }, h, y ? n.createElement(n.Fragment, null, n.createElement(l.ZP, { link: y, size: "body", style: d.ZP.learnMoreLink }, "Learn more")) : null), n.createElement(c.Z, { style: u.content }, t)), m ? n.createElement(c.Z, { style: g.footer }, n.createElement(r.ZP, { onPress: m, size: "large", type: "primaryFilled" }, e)) : null);
                 },
                 u = o.default.create((e) => ({ content: { marginTop: e.spaces.space32 } })),
                 p = n.memo(m);
@@ -121,40 +121,40 @@
         749122: (e, t, a) => {
             a.d(t, { Z: () => o });
             var n = a(202784),
-                l = a(731708);
-            const c = ({ account: e, size: t, weight: a }) => n.createElement(l.ZP, { size: t, style: r.name, weight: a }, e.issuedCardAccountName),
+                c = a(731708);
+            const l = ({ account: e, size: t, weight: a }) => n.createElement(c.ZP, { size: t, style: r.name, weight: a }, e.issuedCardAccountName),
                 r = a(392237).default.create((e) => ({ name: { display: "flex", overflow: "hidden", textOverflow: "clip" } })),
-                o = n.memo(c);
+                o = n.memo(l);
         },
         615954: (e, t, a) => {
             a.d(t, { Z: () => d });
             var n = a(202784),
-                l = a(470397),
-                c = a(731708),
+                c = a(470397),
+                l = a(731708),
                 r = a(392237),
                 o = a(191796);
-            const i = ({ name: e, size: t, website: a }) => n.createElement(l.Z, null, e && n.createElement(c.ZP, { size: t, style: s.merchantName, weight: "medium" }, e), a ? n.createElement(c.ZP, { link: { pathname: `https://${a}`, external: !0 }, size: t, weight: "medium" }, "Website", n.createElement(o.default, null)) : null),
+            const i = ({ name: e, size: t, website: a }) => n.createElement(c.Z, null, e && n.createElement(l.ZP, { size: t, style: s.merchantName, weight: "medium" }, e), a ? n.createElement(l.ZP, { link: { pathname: `https://${a}`, external: !0 }, size: t, weight: "medium" }, "Website", n.createElement(o.default, null)) : null),
                 s = r.default.create((e) => ({ merchantName: { display: "flex", overflow: "hidden", textOverflow: "clip" } })),
                 d = n.memo(i);
         },
         413499: (e, t, a) => {
             a.d(t, { Z: () => d });
             var n = a(807896),
-                l = a(202784),
-                c = a(325686),
+                c = a(202784),
+                l = a(325686),
                 r = a(3348),
                 o = a(731708),
                 i = a(392237);
             function s({ maxLength: e, onChange: t, placeholder: a = "Optionally add a note", placeholderTextColor: i, value: s, ...d }) {
-                const [u, p] = l.useState(!1),
-                    [h, y] = l.useState(!1),
-                    g = l.useCallback(() => {
+                const [u, p] = c.useState(!1),
+                    [h, y] = c.useState(!1),
+                    g = c.useCallback(() => {
                         y(!0);
                     }, []),
-                    E = l.useCallback(() => {
+                    E = c.useCallback(() => {
                         y(!1);
                     }, []),
-                    f = l.useCallback(
+                    f = c.useCallback(
                         (a) => {
                             const n = a.target.value;
                             e && n.length > e ? p(!0) : (u && e && n.length <= e && p(!1), t(a));
@@ -162,16 +162,16 @@
                         [t, e, u],
                     ),
                     b = u && e ? ((e) => `Note cannot exceed ${e} characters.`)(e) : null;
-                return l.createElement(c.Z, null, l.createElement(c.Z, { style: [m.noteInputContainer, u ? m.noteInputContainerError : null] }, l.createElement(r.Z, (0, n.Z)({}, d, { maxLength: e, onBlur: E, onChange: f, onFocus: g, placeholder: a, placeholderTextColor: i ?? m.placeholder.color, style: [m.noteInput, h && m.noteInputFocused], testID: "note-input", value: s }))), l.createElement(c.Z, { style: m.errorContainer }, b && l.createElement(o.ZP, { style: m.errorText }, b)));
+                return c.createElement(l.Z, null, c.createElement(l.Z, { style: [m.noteInputContainer, u ? m.noteInputContainerError : null] }, c.createElement(r.Z, (0, n.Z)({}, d, { maxLength: e, onBlur: E, onChange: f, onFocus: g, placeholder: a, placeholderTextColor: i ?? m.placeholder.color, style: [m.noteInput, h && m.noteInputFocused], testID: "note-input", value: s }))), c.createElement(l.Z, { style: m.errorContainer }, b && c.createElement(o.ZP, { style: m.errorText }, b)));
             }
-            const d = l.memo(s),
+            const d = c.memo(s),
                 m = i.default.create((e) => ({ noteInput: { padding: e.spaces.space16, width: "100%", height: e.spaces.space48, textAlign: "start", fontSize: e.fontSizes.body, color: e.colors.text, backgroundColor: "transparent", border: "none" }, placeholder: { color: e.colors.gray400 }, noteInputContainer: { borderWidth: e.spaces.space1, borderColor: e.colors.gray200, borderRadius: e.spaces.space12 }, noteInputContainerError: { borderColor: e.colors.red500 }, errorContainer: { justifyContent: "flex-start", marginTop: e.spaces.space8 }, errorText: { color: e.colors.red500, fontSize: e.fontSizes.subtext3 }, noteInputFocused: { outlineColor: e.colors.gray200, borderRadius: e.spaces.space12 } }));
         },
         743250: (e, t, a) => {
-            a.d(t, { Z: () => S });
+            a.d(t, { Z: () => I });
             var n = a(882956),
-                l = a(202784),
-                c = a(325686),
+                c = a(202784),
+                l = a(325686),
                 r = (a(585488), a(277660)),
                 o = a.n(r),
                 i = a(952428),
@@ -189,12 +189,11 @@
                 v = a(829464),
                 k = a(727828),
                 Z = a(514639);
-            const x = "Verify",
-                C = n.Z,
-                z = Object.freeze({ [b.S.Alert]: "danger", [b.S.Info]: "primary", [b.S.Warning]: "warning" }),
-                w = Object.freeze({ [b.S.Alert]: u.default, [b.S.Info]: p.default, [b.S.Warning]: u.default }),
-                P = ({ itemRef: e, supportLink: t }) => {
-                    const a = o()(C, e),
+            const x = n.Z,
+                C = Object.freeze({ [b.S.Alert]: "danger", [b.S.Info]: "primary", [b.S.Warning]: "warning" }),
+                z = Object.freeze({ [b.S.Alert]: u.default, [b.S.Info]: p.default, [b.S.Warning]: u.default }),
+                w = ({ itemRef: e, supportLink: t }) => {
+                    const a = o()(x, e),
                         n = a.topics?.includes(v.h.Premium),
                         r = a.topics?.includes(v.h.Interest),
                         m = a.topics?.includes(v.h.Geography),
@@ -202,70 +201,72 @@
                         p = (({ action: e, supportLink: t, url: a }) => {
                             switch (e) {
                                 case f.C.ContactSupport:
-                                    return { label: "Contact support", link: a ?? t };
+                                    return { link: a ?? t };
                                 case f.C.LearnMore:
-                                    return { label: "Learn More", link: a ?? Z.N6 };
+                                    return { link: a ?? Z.N6 };
                                 case f.C.KycVerification:
-                                    return { label: x, link: { pathname: Z.AU.tier2.verifyIdentityPath, state: { closePath: Z.gp } } };
+                                    return { link: { pathname: Z.AU.tier2.verifyIdentityPath, state: { closePath: Z.gp } } };
                                 case f.C.KycDocumentUpload:
-                                    return { label: x, link: { pathname: Z.AU.tier3.verifyIdentityPath, state: { closePath: Z.gp } } };
+                                    return { link: { pathname: Z.AU.tier3.verifyIdentityPath, state: { closePath: Z.gp } } };
                                 case f.C.SelfieVerification:
-                                    return { label: x, link: { pathname: Z.AU.selfie.verifyIdentityPath, state: { closePath: Z.gp } } };
+                                    return { link: { pathname: Z.AU.selfie.verifyIdentityPath, state: { closePath: Z.gp } } };
                                 case f.C.Deposit:
-                                    return { label: "Add money", link: Z.IN };
+                                    return { link: Z.IN };
                                 case f.C.SetupPasskey:
-                                    return { label: "Setup", link: Z.ul };
+                                    return { link: Z.ul };
+                                case f.C.Questionnaire:
+                                    return { link: Z.d9 };
                                 default:
                                     return;
                             }
                         })({ action: a.call_to_action, supportLink: t, url: a.call_to_action_url }),
-                        P = (u ? (n ? "primary" : r ? "success" : void 0) : void 0) ?? z[a.level],
-                        S = n ? h.default : r ? y.default : m ? g.default : w[a.level];
-                    return l.createElement(i.Z, { key: a.title, link: !n && p ? p.link : void 0, style: [I.noticeListItem, !n && p && I.pointer], withInteractiveStyling: !1 }, l.createElement(c.Z, { style: I.contentContainer }, l.createElement(c.Z, { style: I.noticeContainer }, l.createElement(s.Z, { Icon: S, color: P, size: "xLarge" }), l.createElement(c.Z, { style: I.noticeTextContainer }, l.createElement(d.ZP, { color: "text", size: "subtext2", weight: "medium" }, a.title), l.createElement(d.ZP, { color: "gray800", size: "subtext2", weight: "normal" }, a.subtitle))), n ? l.createElement(k.Z, { variant: "MoneyInterest" }) : p ? l.createElement(E.default, { style: I.icon }) : null));
+                        w = (u ? (n ? "primary" : r ? "success" : void 0) : void 0) ?? C[a.level],
+                        I = n ? h.default : r ? y.default : m ? g.default : z[a.level];
+                    return c.createElement(i.Z, { key: a.title, link: !n && p ? p.link : void 0, style: [P.noticeListItem, !n && p && P.pointer], withInteractiveStyling: !1 }, c.createElement(l.Z, { style: P.contentContainer }, c.createElement(l.Z, { style: P.noticeContainer }, c.createElement(s.Z, { Icon: I, color: w, size: "xLarge" }), c.createElement(l.Z, { style: P.noticeTextContainer }, c.createElement(d.ZP, { color: "text", size: "subtext2", weight: "medium" }, a.title), c.createElement(d.ZP, { color: "gray800", size: "subtext2", weight: "normal" }, a.subtitle))), n ? c.createElement(k.Z, { variant: "MoneyInterest" }) : p ? c.createElement(E.default, { style: P.icon }) : null));
                 },
-                I = m.default.create((e) => ({ contentContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%" }, noticeContainer: { display: "flex", flexDirection: "row", gap: e.spaces.space16 }, noticeTextContainer: { display: "flex", flexDirection: "col", gap: e.spaces.space4 }, noticeListItem: { gap: e.spaces.space8, flex: 1, flexDirection: "row", borderRadius: e.borderRadii.large, alignItems: "center", paddingVertical: e.spaces.space8 }, pointer: { cursor: "pointer" }, icon: { color: e.colors.gray700 } })),
-                S = l.memo(P);
+                P = m.default.create((e) => ({ contentContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%" }, noticeContainer: { display: "flex", flexDirection: "row", gap: e.spaces.space16 }, noticeTextContainer: { display: "flex", flexDirection: "col", gap: e.spaces.space4 }, noticeListItem: { gap: e.spaces.space8, flex: 1, flexDirection: "row", borderRadius: e.borderRadii.large, alignItems: "center", paddingVertical: e.spaces.space8 }, pointer: { cursor: "pointer" }, icon: { color: e.colors.gray700 } })),
+                I = c.memo(w);
         },
         86320: (e, t, a) => {
             a.d(t, { Z: () => i });
             var n = a(202784),
-                l = a(470397),
-                c = a(731708);
-            const r = ({ account: e, size: t, weight: a = "medium" }) => n.createElement(l.Z, null, e.accountType && n.createElement(c.ZP, { size: t, style: o.bankName, weight: a }, e.accountType), n.createElement(c.ZP, { size: t, style: o.bankName, weight: a }, e.accountName.name)),
+                c = a(470397),
+                l = a(731708);
+            const r = ({ account: e, size: t, weight: a = "medium" }) => n.createElement(c.Z, null, e.accountType && n.createElement(l.ZP, { size: t, style: o.bankName, weight: a }, e.accountType), n.createElement(l.ZP, { size: t, style: o.bankName, weight: a }, e.accountName.name)),
                 o = a(392237).default.create((e) => ({ bankName: { display: "flex", overflow: "hidden", textOverflow: "clip" } })),
                 i = n.memo(r);
         },
         671738: (e, t, a) => {
             a.d(t, { Z: () => h });
             var n = a(202784),
-                l = a(325686),
-                c = a(30899),
+                c = a(325686),
+                l = a(30899),
                 r = a(392237),
                 o = a(727384),
                 i = a(392046),
                 s = a(189305),
                 d = a(281838);
-            const m = ({ accountId: e, addAccountLink: t, addBankCardLink: a, handleDismiss: c, methodConfigs: r, onSelectAccountId: m, paymentMethods: u, transferDirection: h }) => {
+            const m = ({ accountId: e, addAccountLink: t, addBankCardLink: a, handleDismiss: l, methodConfigs: r, onSelectAccountId: m, paymentMethods: u, transferDirection: h }) => {
                     const y = n.useCallback(
                         (e) => () => {
-                            m(e), c();
+                            m(e), l();
                         },
-                        [c, m],
+                        [l, m],
                     );
                     return n.createElement(
-                        l.Z,
+                        c.Z,
                         { style: p.popoverContent },
                         u?.map((t) => {
                             const a = (0, o.xe)({ method: t, methodConfigs: r, transferDirection: h });
                             return a && a.id ? n.createElement(i.Z, { account: a, isSelected: e === a.id, key: a.id, onClick: y(a.id) }) : null;
                         }),
                         n.createElement(d.Z, { link: a, methodConfigs: r, transferDirection: h, variant: "link" }),
-                        n.createElement(s.Z, { link: t, methodConfigs: r, transferDirection: h, variant: "link" }),
+                        t && n.createElement(s.Z, { link: t, methodConfigs: r, transferDirection: h, variant: "link" }),
                     );
                 },
-                u = ({ accountId: e, addAccountLink: t, addBankCardLink: a, calculatedFee: l, methodConfigs: r, onSelectAccountId: o, paymentMethods: s, selectedAccount: d, transferDirection: u }) => {
-                    const h = n.useCallback((l) => n.createElement(m, { accountId: e, addAccountLink: t, addBankCardLink: a, handleDismiss: l, methodConfigs: r, onSelectAccountId: o, paymentMethods: s, transferDirection: u }), [e, t, a, r, o, s, u]);
-                    return n.createElement(c.Z, { contentStyle: p.contentStyle, renderContent: h, withArrow: !0 }, n.createElement(i.Z, { account: d, calculatedFee: l, withChevron: !0, withInteractiveStyling: !0 }));
+                u = ({ accountId: e, addAccountLink: t, addBankCardLink: a, calculatedFee: c, methodConfigs: r, onSelectAccountId: o, paymentMethods: s, selectedAccount: d, transferDirection: u }) => {
+                    const h = n.useCallback((c) => n.createElement(m, { accountId: e, addAccountLink: t, addBankCardLink: a, handleDismiss: c, methodConfigs: r, onSelectAccountId: o, paymentMethods: s, transferDirection: u }), [e, t, a, r, o, s, u]);
+                    return n.createElement(l.Z, { contentStyle: p.contentStyle, renderContent: h, withArrow: !0 }, n.createElement(i.Z, { account: d, calculatedFee: c, withChevron: !0, withInteractiveStyling: !0 }));
                 },
                 p = r.default.create((e) => ({ popoverContent: { margin: e.spaces.space16, flexDirection: "column", gap: e.spaces.space16 }, contentStyle: { maxHeight: 360, maxWidth: 400 } })),
                 h = n.memo(u);
@@ -273,33 +274,33 @@
         413713: (e, t, a) => {
             a.d(t, { XE: () => u, ZP: () => y, kJ: () => p });
             var n = a(202784),
-                l = a(40610),
-                c = a(514639),
+                c = a(40610),
+                l = a(514639),
                 r = a(727384);
             const o = "Review limits",
                 i = ({ type: e }) => `This action would exceed your ${e} limits. We need to verify your identify to continue.`,
                 s = ({ type: e }) => `This action would exceed your ${e} limits. Please review your limits and try again later.`,
                 d = Object.freeze({
-                    InsufficientFunds: { message: "Your account balance is insufficient to make this transfer. Please fund your account and then try again.", action: { link: c.IN, label: "Deposit" } },
+                    InsufficientFunds: { message: "Your account balance is insufficient to make this transfer. Please fund your account and then try again.", action: { link: l.IN, label: "Deposit" } },
                     InvalidReceiver: { message: "Transfers to this account are unavailable right now. Please try again later." },
                     InvalidReceiverCurrentState: { message: "Transfers to this account are unavailable right now. Please try again later." },
                     InvalidReceiverPreferences: { message: "This account blocked this type of transaction.", getMessage: ({ counterPartyScreenName: e }) => (e ? `@${e}` : "This account") + " blocked this type of transaction." },
                     InvalidSender: { message: "Requests to this account are unavailable right now. Please try again later." },
                     InvalidSenderCurrentState: { message: "Requests to this account are unavailable right now. Please try again later." },
                     InvalidSenderPreferences: { message: "This account blocked this type of transaction.", getMessage: ({ counterPartyScreenName: e }) => (e ? `@${e}` : "This account") + " blocked this type of transaction." },
-                    IdempotencyKeyConflict: { message: "You might be attempting a duplicate payment. Please check before trying again!", action: { link: c.gp, label: "View account" } },
+                    IdempotencyKeyConflict: { message: "You might be attempting a duplicate payment. Please check before trying again!", action: { link: l.gp, label: "View account" } },
                     BankIssue: { message: "There was an issue with your bank while processing your transfer. Please try again." },
-                    LoginRequired: { message: "You need to login to verify your bank account before you can proceed.", action: { link: c.VN, label: "Verify" } },
-                    PaymentMethodLinkRequired: { message: "You need to login to verify your bank account before you can proceed.", action: { link: c.VN, label: "Verify" } },
+                    LoginRequired: { message: "You need to login to verify your bank account before you can proceed.", action: { link: l.VN, label: "Verify" } },
+                    PaymentMethodLinkRequired: { message: "You need to login to verify your bank account before you can proceed.", action: { link: l.VN, label: "Verify" } },
                     InsufficientBalance: { message: "Your bank account balance is insufficient. Please check your balance and try again." },
-                    TwoFactorAuthRequired: { message: "You need to setup a passkey before you can proceed.", action: { link: c.ul, label: "Setup" } },
-                    VolumeLimitExceeded7DaySend: { message: s({ type: "weekly" }), action: { link: c.iE.limits, label: o } },
-                    VolumeLimitExceeded30DaySend: { message: s({ type: "monthly" }), action: { link: c.iE.limits, label: o } },
-                    VolumeLimitExceeded7Day: { message: s({ type: "weekly" }), action: { link: c.iE.limits, label: o } },
-                    VolumeLimitExceeded30Day: { message: s({ type: "monthly" }), action: { link: c.iE.limits, label: o } },
-                    AdditionalKycRequiredVolumeLimitExceeded7DaySend: { message: i({ type: "weekly" }), action: { link: c.AU.tier2.verifyIdentityPath, label: "Verify your identity" } },
-                    AdditionalKycRequiredVolumeLimitExceeded30DaySend: { message: i({ type: "monthly" }), action: { link: c.AU.tier2.verifyIdentityPath, label: "Verify your identity" } },
-                    AdditionalKycRequiredTotalVolumeLimitExceeded: { message: "This action would exceed your limits. We need to verify your identify to continue.", action: { link: c.AU.tier2.verifyIdentityPath, label: "Verify your identity" } },
+                    TwoFactorAuthRequired: { message: "You need to setup a passkey before you can proceed.", action: { link: l.ul, label: "Setup" } },
+                    VolumeLimitExceeded7DaySend: { message: s({ type: "weekly" }), action: { link: l.iE.limits, label: o } },
+                    VolumeLimitExceeded30DaySend: { message: s({ type: "monthly" }), action: { link: l.iE.limits, label: o } },
+                    VolumeLimitExceeded7Day: { message: s({ type: "weekly" }), action: { link: l.iE.limits, label: o } },
+                    VolumeLimitExceeded30Day: { message: s({ type: "monthly" }), action: { link: l.iE.limits, label: o } },
+                    AdditionalKycRequiredVolumeLimitExceeded7DaySend: { message: i({ type: "weekly" }), action: { link: l.AU.tier2.verifyIdentityPath, label: "Verify your identity" } },
+                    AdditionalKycRequiredVolumeLimitExceeded30DaySend: { message: i({ type: "monthly" }), action: { link: l.AU.tier2.verifyIdentityPath, label: "Verify your identity" } },
+                    AdditionalKycRequiredTotalVolumeLimitExceeded: { message: "This action would exceed your limits. We need to verify your identify to continue.", action: { link: l.AU.tier2.verifyIdentityPath, label: "Verify your identity" } },
                     Velocity: { message: "You have temporarily exceeded your limits. Please try again later." },
                     Default: { message: "Something went wrong. Please try again later." },
                 }),
@@ -309,21 +310,21 @@
                     const a = e.find((e) => ((e) => !!d[e])(e.error_code));
                     return d[a?.error_code ?? "Default"];
                 },
-                h = ({ errors: e, linkState: t, opts: a, roles: c }) => {
+                h = ({ errors: e, linkState: t, opts: a, roles: l }) => {
                     const r = p({ errors: e, opts: a }),
                         o = r?.action,
-                        i = u({ errors: e, roles: c }) ?? o?.link,
+                        i = u({ errors: e, roles: l }) ?? o?.link,
                         s = o && i ? { ...o, link: { pathname: i, state: t } } : void 0,
                         d = r.getMessage && a ? r.getMessage(a) : r.message;
-                    return n.createElement(l.Z.Danger, { action: s, text: d, withIcon: !0 });
+                    return n.createElement(c.Z.Danger, { action: s, text: d, withIcon: !0 });
                 },
                 y = n.memo(h);
         },
         261906: (e, t, a) => {
             a.d(t, { Z: () => m });
             var n = a(202784),
-                l = a(325686),
-                c = a(731708),
+                c = a(325686),
+                l = a(731708),
                 r = a(530732),
                 o = a(392237),
                 i = a(58399),
@@ -338,28 +339,28 @@
                         f = n.useCallback(() => {
                             g(!1);
                         }, [g]),
-                        b = "string" == typeof m ? n.createElement(c.ZP, { size: "body", weight: "normal" }, m) : m,
+                        b = "string" == typeof m ? n.createElement(l.ZP, { size: "body", weight: "normal" }, m) : m,
                         v = [d.container, t && d.activeContainer, a && d.firstCard, o && d.lastCard, y && d.focusedContainer],
                         k = (0, s.YC)();
-                    return n.createElement(r.Z, { interactiveStyles: k, link: u, onBlur: f, onFocus: E, onPress: p, role: "button", style: v, testID: h }, n.createElement(l.Z, { style: d.content }, n.createElement(c.ZP, { color: "text", size: "body", weight: "medium" }, b), (u || p) && n.createElement(i.default, { style: d.chevron })));
+                    return n.createElement(r.Z, { interactiveStyles: k, link: u, onBlur: f, onFocus: E, onPress: p, role: "button", style: v, testID: h }, n.createElement(c.Z, { style: d.content }, n.createElement(l.ZP, { color: "text", size: "body", weight: "medium" }, b), (u || p) && n.createElement(i.default, { style: d.chevron })));
                 };
         },
         722610: (e, t, a) => {
             a.d(t, { Z: () => r });
             var n = a(202784),
-                l = a(325686);
-            const c = a(392237).default.create((e) => ({ container: { paddingHorizontal: e.spaces.space24, borderRadius: e.spaces.space16, marginTop: e.spaces.space32 } })),
+                c = a(325686);
+            const l = a(392237).default.create((e) => ({ container: { paddingHorizontal: e.spaces.space24, borderRadius: e.spaces.space16, marginTop: e.spaces.space32 } })),
                 r = (e) => {
                     const { children: t, style: a } = e;
-                    return n.createElement(l.Z, { style: [c.container, a] }, t);
+                    return n.createElement(c.Z, { style: [l.container, a] }, t);
                 };
         },
         221554: (e, t, a) => {
             a.d(t, { Z: () => y });
             a(136728);
             var n = a(202784),
-                l = a(107267),
-                c = a(222718),
+                c = a(107267),
+                l = a(222718),
                 r = a(514639),
                 o = a(325686),
                 i = a(154003),
@@ -370,18 +371,18 @@
                 p = () => n.createElement(o.Z, { style: d.ZP.actionButtons }, n.createElement(i.ZP, { "aria-label": m, hoverLabel: { label: m }, icon: n.createElement(s.default, null), link: u, pullRight: !0, type: "primaryText" })),
                 h = n.memo(p),
                 y = ({ children: e, title: t }) => {
-                    const a = (0, l.useHistory)(),
+                    const a = (0, c.useHistory)(),
                         o = n.useCallback(() => {
                             a.push(r.Sr);
                         }, [a]);
-                    return n.createElement(c.Z, { backLocation: r.Sr, onBackClick: o, rightControl: n.createElement(h, null), screenType: "primaryDetail", showTitleOnRoot: !1, title: t, withBottomBorder: !1 }, e);
+                    return n.createElement(l.Z, { backLocation: r.Sr, onBackClick: o, rightControl: n.createElement(h, null), screenType: "primaryDetail", showTitleOnRoot: !1, title: t, withBottomBorder: !1 }, e);
                 };
         },
         442880: (e, t, a) => {
             a.d(t, { Z: () => m });
             var n = a(202784),
-                l = a(868634),
-                c = a(731708),
+                c = a(868634),
+                l = a(731708),
                 r = a(453333),
                 o = a(848739),
                 i = a(514639),
@@ -390,15 +391,15 @@
                     const t = e?.processing_time_type === o.l.RealTime,
                         a = e?.max_duration_in_business_days ?? i.UJ,
                         d = t ? "Instant" : (({ count: e }) => `${e} - ${e + 2} Days`)({ count: a });
-                    return n.createElement(l.ZP, { background: t ? "green0" : "gray50", style: s.ZP.label, type: t ? "bestValue" : void 0 }, n.createElement(c.ZP, { color: t ? "green500" : "gray900", size: "subtext1", weight: "medium" }, t ? n.createElement(r.default, { style: s.mR.icon }) : null, d));
+                    return n.createElement(c.ZP, { background: t ? "green0" : "gray50", style: s.ZP.label, type: t ? "bestValue" : void 0 }, n.createElement(l.ZP, { color: t ? "green500" : "gray900", size: "subtext1", weight: "medium" }, t ? n.createElement(r.default, { style: s.mR.icon }) : null, d));
                 },
                 m = n.memo(d);
         },
         19804: (e, t, a) => {
             a.d(t, { Z: () => u });
             var n = a(202784),
-                l = a(325686),
-                c = a(165822),
+                c = a(325686),
+                l = a(165822),
                 r = a(731708),
                 o = a(392237),
                 i = a(58399),
@@ -407,11 +408,11 @@
                     const y = (0, s.jh)(),
                         g = (0, s.sw)(),
                         E = !!u || !!d;
-                    return n.createElement(c.Z, { "aria-label": h, containerStyle: y.tile, disabled: a, interactiveStyles: g, link: d, onClick: u, stackLayoutUpperStyle: s.ZP.upper, upper: n.createElement(l.Z, { style: s.ZP.rowSpaceBetween }, n.createElement(l.Z, { style: s.ZP.row }, e ? n.createElement(e, { style: [s.ZP.icon, o] }) : null, n.createElement(l.Z, { style: m.textContainer }, n.createElement(r.ZP, { size: "subtext2", weight: "medium" }, h), p ? n.createElement(r.ZP, { color: "gray700", size: "subtext2", weight: "normal" }, p) : null)), t || (E ? n.createElement(i.default, { style: s.ZP.centeredIcon }) : null)), withInteractiveStyling: E });
+                    return n.createElement(l.Z, { "aria-label": h, containerStyle: y.tile, disabled: a, interactiveStyles: g, link: d, onClick: u, stackLayoutUpperStyle: s.ZP.upper, upper: n.createElement(c.Z, { style: s.ZP.rowSpaceBetween }, n.createElement(c.Z, { style: s.ZP.row }, e ? n.createElement(e, { style: [s.ZP.icon, o] }) : null, n.createElement(c.Z, { style: m.textContainer }, n.createElement(r.ZP, { size: "subtext2", weight: "medium" }, h), p ? n.createElement(r.ZP, { color: "gray700", size: "subtext2", weight: "normal" }, p) : null)), t || (E ? n.createElement(i.default, { style: s.ZP.centeredIcon }) : null)), withInteractiveStyling: E });
                 },
                 m = o.default.create((e) => ({ textContainer: { flex: 1, gap: e.spaces.space4 } })),
                 u = n.memo(d);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c411f24f.32628cea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c411f24f.b659a92a.js.map

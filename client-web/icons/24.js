@@ -2,302 +2,216 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["icons.24"],
     {
-        233040: (e, t, l) => {
-            l.d(t, { Z: () => n });
-            var i = l(807896),
-                r = l(202784),
-                a = l(392237),
-                c = l(404971);
-            function n(e) {
-                return r.createElement(c.default, (0, i.Z)({}, e, { style: a.default.flatten([e ? e.style : null, o.icon]) }));
-            }
-            const o = a.default.create((e) => ({ icon: { fill: e.colors.purple500 } }));
-        },
-        916910: (e, t, l) => {
+        625823: (e, t, l) => {
             l.r(t), l.d(t, { default: () => o });
             var i = l(202784),
-                r = l(890601),
-                a = l(783427),
+                a = l(890601),
+                r = l(783427),
                 c = l(347101);
             const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 3.786c-4.556 0-8.25 3.694-8.25 8.25s3.694 8.25 8.25 8.25c1.595 0 3.081-.451 4.341-1.233l1.054 1.7c-1.568.972-3.418 1.534-5.395 1.534-5.661 0-10.25-4.589-10.25-10.25S6.339 1.786 12 1.786s10.25 4.589 10.25 10.25c0 .901-.21 1.77-.452 2.477-.592 1.731-2.343 2.477-3.917 2.334-1.242-.113-2.307-.74-3.013-1.647-.961 1.253-2.45 2.011-4.092 1.78-2.581-.363-4.127-2.971-3.76-5.578.366-2.606 2.571-4.688 5.152-4.325 1.019.143 1.877.637 2.519 1.342l1.803.258-.507 3.549c-.187 1.31.761 2.509 2.079 2.629.915.083 1.627-.356 1.843-.99.2-.585.345-1.224.345-1.83 0-4.556-3.694-8.25-8.25-8.25zm-.111 5.274c-1.247-.175-2.645.854-2.893 2.623-.249 1.769.811 3.143 2.058 3.319 1.247.175 2.645-.854 2.893-2.623.249-1.769-.811-3.144-2.058-3.319z" })) }, { writingDirection: t });
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M4.98 4.48C5.88 2.94 7.52 2 9.3 2h5.4c1.78 0 3.43.94 4.32 2.48l2.92 5c.91 1.56.91 3.48 0 5.04l-2.92 5c-.11.2-.24.39-.38.57-.94 1.2-2.39 1.91-3.94 1.91H9.3c-1.55 0-3-.72-3.94-1.92-.14-.17-.26-.36-.38-.56l-2.92-5c-.91-1.56-.91-3.48 0-5.04l2.92-5zM9.3 4c-1.07 0-2.05.57-2.59 1.49l-2.92 5c-.55.93-.55 2.09 0 3.02l2.41 4.14C7.61 16.03 9.68 15 12 15s4.39 1.03 5.8 2.65l2.41-4.14c.55-.93.55-2.09 0-3.02l-2.91-5C16.76 4.57 15.77 4 14.7 4H9.3zm7.28 15.34C15.55 17.92 13.88 17 12 17s-3.55.92-4.58 2.34c.52.42 1.18.66 1.88.66h5.4c.7 0 1.36-.24 1.88-.66zM12 8.5c-.97 0-1.75.78-1.75 1.75S11.03 12 12 12s1.75-.78 1.75-1.75S12.97 8.5 12 8.5zm-3.75 1.75C8.25 8.18 9.93 6.5 12 6.5s3.75 1.68 3.75 3.75S14.07 14 12 14s-3.75-1.68-3.75-3.75z" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const o = n;
         },
-        954802: (e, t, l) => {
+        601625: (e, t, l) => {
             l.r(t), l.d(t, { default: () => o });
             var i = l(202784),
-                r = l(890601),
-                a = l(783427),
+                a = l(890601),
+                r = l(783427),
                 c = l(347101);
             const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M10.5 17c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5zm1.5-3c.5 0 1 .2 1 .2l.25-5.7h-2.5l.25 5.7s.5-.2 1-.2zm10.568 6.745c.451-.783.45-1.717-.002-2.496l-8.4-14.511C13.712 2.957 12.903 2.49 12 2.49s-1.711.467-2.165 1.249l-8.4 14.509c-.453.78-.454 1.714-.002 2.497C1.886 21.531 2.696 22 3.6 22h16.8c.905 0 1.715-.469 2.168-1.255zM12.435 4.741l8.4 14.511c.125.214.053.402 0 .495-.044.076-.174.253-.435.253H3.6c-.261 0-.391-.177-.435-.253-.053-.093-.125-.281 0-.495l8.4-14.51c.131-.228.348-.252.435-.252s.304.024.435.251z" })) }, { writingDirection: t });
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M9.697 3H11v2h-.697l-3 2H5c-.276 0-.5.224-.5.5v11c0 .276.224.5.5.5h14c.276 0 .5-.224.5-.5V10h2v8.5c0 1.381-1.119 2.5-2.5 2.5H5c-1.381 0-2.5-1.119-2.5-2.5v-11C2.5 6.119 3.619 5 5 5h1.697l3-2zM12 10.5c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.895-2-2-2zm-4 2c0-2.209 1.791-4 4-4s4 1.791 4 4-1.791 4-4 4-4-1.791-4-4zM17 2c0 1.657-1.343 3-3 3v1c1.657 0 3 1.343 3 3h1c0-1.657 1.343-3 3-3V5c-1.657 0-3-1.343-3-3h-1z" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const o = n;
         },
-        536698: (e, t, l) => {
+        487552: (e, t, l) => {
             l.r(t), l.d(t, { default: () => o });
             var i = l(202784),
-                r = l(890601),
-                a = l(783427),
+                a = l(890601),
+                r = l(783427),
                 c = l(347101);
             const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12zM11 6v6.72l5.19 1.73.63-1.9L13 11.28V6h-2z" })) }, { writingDirection: t });
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const o = n;
         },
-        466930: (e, t, l) => {
+        164174: (e, t, l) => {
             l.r(t), l.d(t, { default: () => o });
             var i = l(202784),
-                r = l(890601),
-                a = l(783427),
+                a = l(890601),
+                r = l(783427),
                 c = l(347101);
             const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M9 3c-4.962 0-9 4.037-9 9s4.038 9 9 9 9-4.037 9-9-4.038-9-9-9zm0 16c-1.342 0-2.593-.386-3.66-1.044C6.371 17.322 7.597 17 9 17s2.628.321 3.659.956C11.593 18.614 10.342 19 9 19zm5.244-2.379C12.794 15.561 11.003 15 9.001 15s-3.793.562-5.243 1.622c-1.09-1.235-1.757-2.85-1.757-4.622 0-3.859 3.14-7 7-7s7 3.141 7 7c0 1.772-.667 3.387-1.756 4.621zM24 12c0 4.963-3.14 9-7 9v-2c2.757 0 5-3.141 5-7s-2.243-7-5-7V3c3.86 0 7 4.037 7 9zM9 7c-1.93 0-3.5 1.57-3.5 3.5S7.07 14 9 14s3.5-1.57 3.5-3.5S10.93 7 9 7zm0 5c-.827 0-1.5-.673-1.5-1.5S8.173 9 9 9s1.5.673 1.5 1.5S9.827 12 9 12z" })) }, { writingDirection: t });
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M8 18V6H4.5c-.28 0-.5.22-.5.5v11c0 .28.22.5.5.5H8zm11.5 0c.28 0 .5-.22.5-.5v-11c0-.28-.22-.5-.5-.5H16v12h3.5zM10 6v12h4V6h-4zM4.5 20C3.12 20 2 18.88 2 17.5v-11C2 5.12 3.12 4 4.5 4h15C20.88 4 22 5.12 22 6.5v11c0 1.38-1.12 2.5-2.5 2.5h-15z" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const o = n;
         },
-        449663: (e, t, l) => {
+        506868: (e, t, l) => {
             l.r(t), l.d(t, { default: () => o });
             var i = l(202784),
-                r = l(890601),
-                a = l(783427),
+                a = l(890601),
+                r = l(783427),
                 c = l(347101);
             const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 12V2L3.5 7l8.5 5z", fill: "#00ba7c" }), i.createElement("path", { d: "M12 12V2l8.5 5-8.5 5z", fill: "#ffd400" }), i.createElement("path", { d: "M12 22V12l-8.5 5 8.5 5z", fill: "#7856ff" }), i.createElement("path", { d: "M12 22V12l8.5 5-8.5 5z", fill: "#f4212e" }), i.createElement("path", { d: "M3.5 7l8.5 5-8.5 5V7z", fill: "#1d9bf0" }), i.createElement("path", { d: "M20.5 7L12 12l8.5 5V7z", fill: "#ff7a00" }), i.createElement("path", { d: "M12 3.75c-4.56 0-8.25 3.694-8.25 8.25s3.69 8.25 8.25 8.25 8.25-3.694 8.25-8.25S16.56 3.75 12 3.75zM1.75 12C1.75 6.339 6.34 1.75 12 1.75S22.25 6.339 22.25 12 17.66 22.25 12 22.25 1.75 17.661 1.75 12z" })) }, { writingDirection: t });
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M2 12c0-.552.448-1 1-1h18c.552 0 1 .448 1 1s-.448 1-1 1H3c-.552 0-1-.448-1-1z" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const o = n;
         },
-        488746: (e, t, l) => {
+        189700: (e, t, l) => {
             l.r(t), l.d(t, { default: () => o });
             var i = l(202784),
-                r = l(890601),
-                a = l(783427),
+                a = l(890601),
+                r = l(783427),
                 c = l(347101);
             const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M15.96 1.54L21.41 7l-5.45 5.46-1.42-1.42L17.59 8H3V6h14.59l-3.05-3.04 1.42-1.42zM6.41 18l3.05 3.04-1.42 1.42L2.59 17l5.45-5.46 1.42 1.42L6.41 16H21v2H6.41z" })) }, { writingDirection: t });
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M8 11h8v2H8zm0-4h5v2H8z" }), i.createElement("path", { d: "M17.5 2h-11C5.12 2 4 3.12 4 4.5v15C4 20.88 5.12 22 6.5 22h6c4.14 0 7.5-3.36 7.5-7.5v-10C20 3.12 18.88 2 17.5 2zm-2.52 17.41c.01-.1.02-.21.02-.32v-1.27c0-.48.32-.82.84-.82h1.28c.09 0 .19 0 .29-.01-.53 1.04-1.39 1.89-2.43 2.42zM18 14c0 .58-.46 1-.88 1h-1.28C14.26 15 13 16.19 13 17.82v1.27c0 .46-.43.91-.97.91H6.5c-.28 0-.5-.22-.5-.5v-15c0-.28.22-.5.5-.5h11c.27 0 .5.22.5.5V14z" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const o = n;
         },
-        542832: (e, t, l) => {
+        215080: (e, t, l) => {
             l.r(t), l.d(t, { default: () => o });
             var i = l(202784),
-                r = l(890601),
-                a = l(783427),
+                a = l(890601),
+                r = l(783427),
                 c = l(347101);
             const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 88 32", children: i.createElement("g", null, i.createElement("path", { d: "M76.717 24.208V7.916h2.596v10.752l5.493-6.257h3.148l-4.94 5.362L88 24.208h-3.102l-4.04-5.53-1.545-.01v5.54h-2.596zm-7.876.274c-3.86 0-5.951-2.716-5.951-6.184 0-3.491 2.09-6.184 5.951-6.184 3.884 0 5.952 2.693 5.952 6.184 0 3.468-2.068 6.184-5.952 6.184zm-3.24-6.184c0 2.692 1.471 4.039 3.24 4.039 1.793 0 3.24-1.347 3.24-4.04 0-2.692-1.447-4.06-3.24-4.06-1.769 0-3.24 1.368-3.24 4.06zm-9.939 5.91v-9.926l2.184-1.871h4.642v2.19h-4.229v9.607h-2.597zm-9.929.301c-4.95 0-7.9-3.564-7.9-8.424 0-4.906 3.056-8.557 7.997-8.557 3.86 0 6.687 1.962 7.353 5.613H50.22c-.437-2.076-2.183-3.24-4.39-3.24-3.561 0-5.124 3.058-5.124 6.184 0 3.126 1.563 6.16 5.125 6.16 3.4 0 4.895-2.441 5.01-4.472h-5.125v-2.362h7.744l-.013 1.235c0 4.59-1.886 7.863-7.713 7.863zM12.98 20.54l11.175-8.19c.547-.4 1.33-.244 1.591.38 1.374 3.288.76 7.241-1.973 9.955-2.733 2.714-6.536 3.31-10.012 1.954l-3.797 1.745c5.446 3.697 12.06 2.782 16.193-1.324 3.278-3.255 4.293-7.692 3.344-11.693l.008.009c-1.376-5.878.339-8.227 3.852-13.031l.25-.345-4.624 4.59v-.014l-16.01 15.968m-2.302 1.987c-3.91-3.707-3.235-9.446.1-12.755 2.467-2.449 6.508-3.448 10.036-1.979l3.788-1.737c-.682-.49-1.557-1.017-2.561-1.387-4.537-1.854-9.97-.931-13.658 2.728-3.547 3.523-4.663 8.94-2.747 13.561 1.431 3.454-.915 5.898-3.278 8.364C1.517 30.2.677 31.074 0 32l10.672-9.466" })) }, { writingDirection: t });
-            };
-            n.metadata = { width: 88, height: 32 };
-            const o = n;
-        },
-        534222: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
-            var i = l(202784),
-                r = l(890601),
-                a = l(783427),
-                c = l(347101);
-            const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { clipRule: "evenodd", d: "M9.5 7C8.672 7 8 8.119 8 9.5S8.672 12 9.5 12 11 10.881 11 9.5 10.328 7 9.5 7zM16 9.5c0 1.381-.672 2.5-1.5 2.5S13 10.881 13 9.5 13.672 7 14.5 7 16 8.119 16 9.5zm4.523 8.195c1.126-1.686 1.727-3.668 1.727-5.695-.003-2.718-1.084-5.323-3.005-7.245C17.323 2.834 14.718 1.753 12 1.75c-2.027 0-4.009.601-5.695 1.727-1.685 1.127-2.999 2.728-3.775 4.6-.776 1.873-.979 3.934-.583 5.923.395 1.988 1.372 3.814 2.805 5.248 1.434 1.433 3.26 2.41 5.248 2.805 1.989.395 4.05.193 5.922-.583 1.873-.776 3.474-2.09 4.6-3.775zM18.86 7.417c.906 1.356 1.39 2.951 1.39 4.583-.002 2.187-.872 4.284-2.419 5.831-1.547 1.547-3.644 2.417-5.831 2.419-1.632 0-3.227-.484-4.583-1.39-1.357-.907-2.415-2.195-3.039-3.703-.624-1.507-.788-3.166-.47-4.767.319-1.6 1.105-3.07 2.258-4.224C7.32 5.013 8.79 4.226 10.39 3.91c1.6-.319 3.26-.155 4.767.469 1.508.624 2.796 1.682 3.703 3.039zM12 17.997c2.85 0 5.159-1.983 5.159-4.34H6.84c0 2.357 2.31 4.34 5.159 4.34z", fillRule: "evenodd" })) }, { writingDirection: t });
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M19.5 6H14V4h5.5C20.881 4 22 5.119 22 6.5v11c0 1.381-1.119 2.5-2.5 2.5H14v-2h5.5c.276 0 .5-.224.5-.5v-11c0-.276-.224-.5-.5-.5zM10 4H4.5C3.119 4 2 5.119 2 6.5v11C2 18.881 3.119 20 4.5 20H10v2h2V2h-2v2z" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const o = n;
         },
-        608421: (e, t, l) => {
+        247520: (e, t, l) => {
             l.r(t), l.d(t, { default: () => o });
             var i = l(202784),
-                r = l(890601),
-                a = l(783427),
+                a = l(890601),
+                r = l(783427),
                 c = l(347101);
             const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M3.004 12h2m-2-5h3m-3 10h3m13.496-.5L22 19m-.996-7c0 3.314-2.686 6-6 6s-6-2.686-6-6 2.686-6 6-6 6 2.686 6 6z", fill: "none", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2" })) }, { writingDirection: t });
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M21.398 6.52c-.887-1.79-2.647-2.91-4.601-3.01-1.65-.09-3.367.56-4.796 2.01-1.43-1.45-3.147-2.1-4.798-2.01-1.954.1-3.714 1.22-4.601 3.01-.896 1.81-.846 4.17.514 6.67 1.353 2.48 4.003 5.12 8.382 7.67l.504.3.503-.3c4.378-2.55 7.028-5.19 8.379-7.67 1.36-2.5 1.41-4.86.514-6.67zm-2.27 5.71c-1.074 1.97-3.256 4.27-7.126 6.61-3.872-2.34-6.055-4.64-7.129-6.61-1.112-2.04-1.031-3.7-.479-4.82.561-1.13 1.667-1.84 2.91-1.91 1.077-.05 2.338.38 3.452 1.61L8.588 10.3l4.009 2.5-1.428 2.15 1.665 1.1 2.569-3.85-3.991-2.5 1.405-2.06c1.21-1.63 2.662-2.2 3.88-2.14 1.242.07 2.347.78 2.908 1.91.553 1.12.634 2.78-.477 4.82z" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const o = n;
         },
-        169435: (e, t, l) => {
+        199882: (e, t, l) => {
             l.r(t), l.d(t, { default: () => o });
             var i = l(202784),
-                r = l(890601),
-                a = l(783427),
+                a = l(890601),
+                r = l(783427),
                 c = l(347101);
             const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M2 4.5C2 3.12 3.12 2 4.5 2h11C16.88 2 18 3.12 18 4.5v11c0 1.38-1.12 2.5-2.5 2.5h-11C3.12 18 2 16.88 2 15.5v-11zm18 1.55V19.5c0 .28-.22.5-.5.5H6.05c.23 1.14 1.24 2 2.45 2h11c1.38 0 2.5-1.12 2.5-2.5v-11c0-1.21-.86-2.22-2-2.45z" })) }, { writingDirection: t });
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M18 9.601v1.261l-1.452.002v.569h1.091v1.178h-1.09v.524H18v1.262h-2.75V9.602H18zM12.437 9.6l.447 2.86.449-2.86h1.297l-1.009 4.799h-1.473L11.137 9.6h1.3zm-1.908 0H9.23v4.796h1.299V9.6zm-4.528 0H7.3l.002 3.534h1.203v1.262H6.001V9.6zm-.5-6.6c-1.381 0-2.5 1.119-2.5 2.5v13c0 1.381 1.119 2.5 2.5 2.5h13c1.381 0 2.5-1.119 2.5-2.5v-13c0-1.381-1.119-2.5-2.5-2.5h-13zm-.5 2.501c0-.276.224-.5.5-.5h13c.276 0 .5.224.5.5v13c0 .276-.224.5-.5.5H5.5c-.276 0-.5-.224-.5-.5V5.5h.001z" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const o = n;
         },
-        264171: (e, t, l) => {
+        876048: (e, t, l) => {
             l.r(t), l.d(t, { default: () => o });
             var i = l(202784),
-                r = l(890601),
-                a = l(783427),
+                a = l(890601),
+                r = l(783427),
                 c = l(347101);
             const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: t });
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M21.43 11.277c0 4.335-4.223 7.85-9.43 7.85-.66 0-1.3-.057-1.92-.164-.537-.092-1.092-.008-1.554.28-.003 0-.008.004-.01.005-.595.37-1.767.953-1.767.953-.428.174-.715.15-.867.11-.066-.02-.092-.1-.05-.157l1.11-1.4c.07-.096.1-.208.106-.327.007-.283-.156-.544-.4-.685-2.465-1.416-4.08-3.783-4.08-6.463 0-4.335 4.222-7.85 9.43-7.85 5.207 0 9.43 3.515 9.43 7.85z" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
-            const o = n;
-        },
-        660969: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
-            var i = l(202784),
-                r = l(890601),
-                a = l(783427),
-                c = l(347101);
-            const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 18 18", children: i.createElement("g", null, i.createElement("path", { d: "M10 0h8v8h-2V3.41l-5.043 5.05-1.414-1.42L14.586 2H10V0zM8.457 10.96L3.414 16H8v2H0v-8h2v4.59l5.043-5.05 1.414 1.42z" })) }, { writingDirection: t });
-            };
-            n.metadata = { width: 18, height: 18 };
             const o = n;
         },
         933288: (e, t, l) => {
             l.r(t), l.d(t, { default: () => o });
             var i = l(202784),
-                r = l(890601),
-                a = l(783427),
+                a = l(890601),
+                r = l(783427),
                 c = l(347101);
             const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M22.99 11.295l-6.986-2.13-.877-.326-.325-.88L12.67.975c-.092-.303-.372-.51-.688-.51-.316 0-.596.207-.688.51l-2.392 7.84-1.774.657-6.148 1.82c-.306.092-.515.372-.515.69 0 .32.21.6.515.69l7.956 2.358 2.356 7.956c.09.306.37.515.69.515.32 0 .6-.21.69-.514l1.822-6.15.656-1.773 7.84-2.392c.303-.09.51-.37.51-.687 0-.316-.207-.596-.51-.688z", fill: "#794BC4" })) }, { writingDirection: t });
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M22.99 11.295l-6.986-2.13-.877-.326-.325-.88L12.67.975c-.092-.303-.372-.51-.688-.51-.316 0-.596.207-.688.51l-2.392 7.84-1.774.657-6.148 1.82c-.306.092-.515.372-.515.69 0 .32.21.6.515.69l7.956 2.358 2.356 7.956c.09.306.37.515.69.515.32 0 .6-.21.69-.514l1.822-6.15.656-1.773 7.84-2.392c.303-.09.51-.37.51-.687 0-.316-.207-.596-.51-.688z", fill: "#794BC4" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const o = n;
         },
-        590901: (e, t, l) => {
+        833057: (e, t, l) => {
             l.r(t), l.d(t, { default: () => o });
             var i = l(202784),
-                r = l(890601),
-                a = l(783427),
+                a = l(890601),
+                r = l(783427),
                 c = l(347101);
             const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M17 13.76V22h4V2h-4v8.24L3 2v20l14-8.24z" })) }, { writingDirection: t });
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M17 9.76V4.5C17 3.12 15.88 2 14.5 2h-5C8.12 2 7 3.12 7 4.5v5.26L3.88 16H11v5l1 2 1-2v-5h7.12L17 9.76zM7.12 14L9 10.24V4.5c0-.28.22-.5.5-.5h5c.28 0 .5.22.5.5v5.74L16.88 14H7.12z" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const o = n;
         },
-        178610: (e, t, l) => {
+        291281: (e, t, l) => {
             l.r(t), l.d(t, { default: () => o });
             var i = l(202784),
-                r = l(890601),
-                a = l(783427),
+                a = l(890601),
+                r = l(783427),
                 c = l(347101);
             const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M8 5.5C8 4.12 9.119 3 10.5 3h3C14.881 3 16 4.12 16 5.5V11h5.204L12 21.52 2.796 11H8V5.5zm2.5-.5c-.276 0-.5.22-.5.5V13H7.204L12 18.48 16.796 13H14V5.5c0-.28-.224-.5-.5-.5h-3z" })) }, { writingDirection: t });
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M11 9.499c0 1.381-.672 2.5-1.5 2.5S8 10.88 8 9.499s.672-2.5 1.5-2.5 1.5 1.119 1.5 2.5zm5 0c0 1.381-.672 2.5-1.5 2.5S13 10.88 13 9.499s.672-2.5 1.5-2.5 1.5 1.119 1.5 2.5zm6.173.364c.051.376.077.758.077 1.136 0 5.231-6.26 11.195-11.75 11.195h-.543c-4.756-.208-8.207-4.495-8.207-10.195C1.75 6.348 6.348 1.75 12 1.75c5.159 0 9.532 3.488 10.172 8.113M12 3.75c-4.549 0-8.25 3.701-8.25 8.25 0 3.92 2.144 7.982 6.241 8.194.192-.017 1.188-.135 1.725-.814.282-.357.455-.848.605-1.39-.106.006-.213.01-.321.01-3.679 0-4.898-3.533-4.948-3.684l1.896-.633-.948.316.947-.322c.032.095.829 2.322 3.053 2.322.333 0 .648-.048.943-.145.232-.593.607-1.313 1.272-1.936 1.078-1.008 2.259-1.273 3.301-1.508.738-.166 1.376-.309 1.861-.695.637-.505.772-1.417.799-1.68-.555-3.591-4.05-6.287-8.177-6.287v.002zm2.687 13.172c-.109.333-.195.674-.281 1.009-.116.454-.233.916-.399 1.363 2.304-1.146 4.349-3.233 5.431-5.346-.502.194-1.008.308-1.48.414-.908.205-1.692.381-2.373 1.017-.391.366-.668.842-.896 1.542" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const o = n;
         },
-        797681: (e, t, l) => {
+        461512: (e, t, l) => {
             l.r(t), l.d(t, { default: () => o });
             var i = l(202784),
-                r = l(890601),
-                a = l(783427),
+                a = l(890601),
+                r = l(783427),
                 c = l(347101);
             const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M22 17H2L12 6l10 11z" })) }, { writingDirection: t });
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M15.704 8.99c.457-.05.891-.17 1.296-.35-.302.45-.685.84-1.125 1.15.004.1.006.19.006.29 0 2.94-2.269 6.32-6.421 6.32-1.274 0-2.46-.37-3.459-1 .177.02.357.03.539.03 1.057 0 2.03-.35 2.803-.95-.988-.02-1.821-.66-2.109-1.54.138.03.28.04.425.04.206 0 .405-.03.595-.08-1.033-.2-1.811-1.1-1.811-2.18v-.03c.305.17.652.27 1.023.28-.606-.4-1.004-1.08-1.004-1.85 0-.4.111-.78.305-1.11 1.113 1.34 2.775 2.22 4.652 2.32-.038-.17-.058-.33-.058-.51 0-1.23 1.01-2.22 2.256-2.22.649 0 1.235.27 1.647.7.514-.1.997-.28 1.433-.54-.168.52-.526.96-.992 1.23zM2 21h15c3.038 0 5.5-2.46 5.5-5.5 0-1.4-.524-2.68-1.385-3.65-.08-.09-.089-.22-.023-.32.574-.87.908-1.91.908-3.03C22 5.46 19.538 3 16.5 3H2v18zM16.5 5C18.433 5 20 6.57 20 8.5c0 1.01-.43 1.93-1.12 2.57-.468.43-.414 1.19.111 1.55.914.63 1.509 1.69 1.509 2.88 0 1.93-1.567 3.5-3.5 3.5H4V5h12.5z" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const o = n;
         },
-        391366: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
+        376021: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => d });
             var i = l(202784),
-                r = l(890601),
-                a = l(783427),
-                c = l(347101);
-            const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M18 1.2v21.6L8.71 17H5.5C4.12 17 3 15.88 3 14.5v-5C3 8.12 4.12 7 5.5 7h3.21L18 1.2zM8 9H5.5c-.28 0-.5.22-.5.5v5c0 .28.22.5.5.5H8V9zm2 6.45l6 3.75V4.8l-6 3.75v6.9z" })) }, { writingDirection: t });
+                a = l(890601),
+                r = l(783427),
+                c = l(717683),
+                n = l(347101);
+            const o = (e = {}) => {
+                const t = i.useContext(c.Z),
+                    { direction: l } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style, t && n.Z.iconRTL], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M14.23 2.854c.98-.977 2.56-.977 3.54 0l3.38 3.378c.97.977.97 2.559 0 3.536L9.91 21H3v-6.914L14.23 2.854zm2.12 1.414c-.19-.195-.51-.195-.7 0L5 14.914V19h4.09L19.73 8.354c.2-.196.2-.512 0-.708l-3.38-3.378zM14.75 19l-2 2H21v-2h-6.25z" })) }, { writingDirection: l });
             };
-            n.metadata = { width: 24, height: 24 };
-            const o = n;
+            o.metadata = { width: 24, height: 24 };
+            const d = o;
         },
-        426700: (e, t, l) => {
+        308986: (e, t, l) => {
             l.r(t), l.d(t, { default: () => o });
             var i = l(202784),
-                r = l(890601),
-                a = l(783427),
+                a = l(890601),
+                r = l(783427),
                 c = l(347101);
             const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M9 2h6v1h5v2h-1v9.27l3.15.49-.3 1.98-2.85-.45V19h1v2h-5v1H9v-1H4v-2h1V5H4V3h5V2zM7 5v2.4l10 1.67V5H7zm10 6.1L7 9.43v2.96l10 1.57V11.1zm0 4.88L7 14.42V19h10v-3.02z" })) }, { writingDirection: t });
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 55 9", children: i.createElement("g", null, i.createElement("path", { d: "M53 7.393C53 8.28 52.28 9 51.393 9h-5.786C44.72 9 44 8.28 44 7.393V1.607C44 .72 44.72 0 45.607 0h5.786C52.28 0 53 .72 53 1.607v5.786z", fill: "#DA050A" }), i.createElement("path", { d: "M51.556 3.792l-2.112-.31-.967-2.192v-.003L47.56 3.48l-2.11.307 1.525 1.494-.36 2.116 1.863-1.227 1.93 1.183-.38-2.067", fill: "#FFF" }), i.createElement("path", { d: "M42 7.393C42 8.28 41.28 9 40.393 9h-5.786C33.72 9 33 8.28 33 7.393V1.607C33 .72 33.72 0 34.607 0h5.786C41.28 0 42 .72 42 1.607v5.786z", fill: "#DA050A" }), i.createElement("path", { d: "M40.556 3.792l-2.112-.31-.967-2.192v-.003L36.56 3.48l-2.11.307 1.525 1.494-.36 2.116 1.863-1.227 1.93 1.183-.38-2.067", fill: "#FFF" }), i.createElement("path", { d: "M31 7.393C31 8.28 30.28 9 29.393 9h-5.786C22.72 9 22 8.28 22 7.393V1.607C22 .72 22.72 0 23.607 0h5.786C30.28 0 31 .72 31 1.607v5.786z", fill: "#DA050A" }), i.createElement("path", { d: "M29.557 3.792l-2.112-.31-.967-2.19-.917 2.188-2.11.307 1.526 1.494-.36 2.116L26.48 6.17l1.93 1.183-.38-2.067", fill: "#FFF" }), i.createElement("path", { d: "M20 7.393C20 8.28 19.28 9 18.393 9h-5.786C11.72 9 11 8.28 11 7.393V1.607C11 .72 11.72 0 12.607 0h5.786C19.28 0 20 .72 20 1.607v5.786z", fill: "#DA050A" }), i.createElement("path", { d: "M18.556 3.792l-2.112-.31-.965-2.19-.92 2.188-2.11.307 1.526 1.494-.36 2.116L15.48 6.17l1.927 1.183-.378-2.067", fill: "#FFF" }), i.createElement("path", { d: "M9 7.393C9 8.28 8.28 9 7.393 9H1.607C.72 9 0 8.28 0 7.393V1.607C0 .72.72 0 1.607 0h5.786C8.28 0 9 .72 9 1.607v5.786z", fill: "#DA050A" }), i.createElement("path", { d: "M7.556 3.792l-2.112-.31-.965-2.19-.92 2.188-2.11.307L2.977 5.28l-.36 2.116L4.48 6.17l1.927 1.183-.378-2.067", fill: "#FFF" })) }, { writingDirection: t });
             };
-            n.metadata = { width: 24, height: 24 };
-            const o = n;
-        },
-        517330: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
-            var i = l(202784),
-                r = l(890601),
-                a = l(783427),
-                c = l(347101);
-            const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M21.869 16h-3.5c-.77 0-1.46-.35-1.92-.9-.06.04-.1.09-.14.15l-3 5.24c-.53.94-1.52 1.51-2.59 1.51-1.85 0-3.25-1.66-2.95-3.48l.42-2.52h-2.68c-2.25 0-3.92-2.09-3.42-4.28l1.19-5.22c.46-2.05 2.29-3.5 4.39-3.5h14.2v13zm-6-11h-8.2c-1.17 0-2.18.81-2.44 1.95l-1.19 5.22c-.21.94.5 1.83 1.47 1.83h5.04l-.8 4.85c-.1.6.36 1.15.97 1.15.35 0 .68-.19.86-.5l2.99-5.24c.3-.52.76-.9 1.3-1.1V5zm2 8.5c0 .28.23.5.5.5h1.5V5h-2v8.5z" })) }, { writingDirection: t });
-            };
-            n.metadata = { width: 24, height: 24 };
-            const o = n;
-        },
-        199359: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
-            var i = l(202784),
-                r = l(890601),
-                a = l(783427),
-                c = l(347101);
-            const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)(
-                    "svg",
-                    {
-                        ...e,
-                        role: e["aria-label"] ? e.role || "img" : void 0,
-                        "aria-hidden": void 0 === e["aria-label"],
-                        style: [c.Z.root, e.style],
-                        viewBox: "0 0 40 20",
-                        children: i.createElement(
-                            "g",
-                            null,
-                            i.createElement("path", {
-                                d: "M37.292 16.134h-.002l-.004.002.006-.002zM24.135 7.622h.005c.002.002.004.002.005.002l-.01-.002zm15.135 3.53c-.255-.193-.297-.223-1.832-.728 1.33-.326 1.387-.36 1.622-.516.533-.36.818-.96.776-1.61l-.005-.072c-.108-1.042-1.45-3.008-2.354-3.45-.597-.284-1.26-.243-1.782.107-.246.163-.278.185-1.288 1.564-.096-1.61-.286-4.45-.333-4.717l-.01-.06-.017-.06c-.172-.624-.66-1.09-1.31-1.254-1.08-.27-3.94.536-4.708 1.328-.45.47-.624 1.103-.468 1.696l.03.118.054.11c.073.15.267.472 1.928 3.077l.61.964c-1.485-.61-1.543-.61-1.85-.614-.587-.026-1.174.288-1.527.84l-.007.01c-.183.296-.295.696-.366 1.114-.477-.646-1.2-1.163-2.292-1.377-.775-.156-1.5-.063-2.186.214-.628-.4-1.49-.447-2.21-.035-.223.126-.39.277-.52.438v-.883l-.07-.525-.02-.094c-.144-.572-.574-1.052-1.15-1.288l-.006-.002c-.632-.254-1.34-.194-1.942.165-.64.38-.97 1.007-.97 1.866V9.28c-.227-.355-.51-.663-.844-.917-.9-.682-2.106-.913-3.487-.665-.8.14-1.47.49-2.002 1.002-.008-.017-.017-.037-.026-.053-.27-.484-.706-.815-1.266-.96-.935-.26-2.12.06-2.612 1.73l-.188.64c-.215-.393-.77-1.467-.794-1.5-.5-.76-1.505-1.088-2.402-.73-.867.325-1.37 1.088-1.37 1.985 0 .282.05.577.154.876l.026.075 2.297 4.678c-.827.218-1.417.836-1.513 1.683-.01.08-.015.162-.015.243 0 .538.224 1.053.634 1.43.623.576 1.59.765 2.728.534 1.236-.243 1.946-.988 2.444-2.567l.757-2.38c.247 1.002.695 1.657 1.12 2.076.614.606 1.734 1.276 3.59 1.025 1.38-.193 2.333-.81 2.848-1.535l.033.175c.147.517.546.977 1.083 1.222.56.26 1.21.255 1.78-.013.296-.13.548-.333.745-.587v.75c0 1.24.717 1.768 1.145 1.972.558.28 1.226.304 1.808.052.55-.238.958-.69 1.118-1.242l.024-.084.074-.513v-.22c.746.077 1.524-.045 2.21-.4.303-.158.57-.347.806-.565h.503c.274.145.585.234.92.234.337 0 .648-.09.923-.234h1.46c.967.545 2.382.957 3.14.83.65-.117 1.164-.538 1.382-1.126l.01-.03c.093-.267.108-.316.114-1.83.83 1.34.873 1.376 1.105 1.56.5.39 1.158.476 1.766.232.976-.39 2.466-2.286 2.615-3.326.013-.09.02-.183.02-.272-.003-.546-.238-1.05-.658-1.386z",
-                                fill: "#FFF",
-                                stroke: "#BCBEC0",
-                                strokeWidth: ".136",
-                            }),
-                            i.createElement("path", { d: "M27.668 9.052c-.237.38-.336 1.57-.254 2.362.03.26.075.48.144.61.094.18.254.287.435.293.115.006.187-.014 2.37-.717 0 0 .97-.31.975-.31.24-.062.405-.284.42-.568.016-.292-.135-.55-.383-.642l-.684-.278c-2.346-.968-2.45-1.005-2.57-1.006-.18-.01-.34.08-.452.256zm5.248 7.208c.038-.11.042-.185.05-2.478l.005-1.024c.016-.247-.143-.474-.407-.575-.27-.106-.563-.04-.727.163 0 0-.478.568-.48.568-1.644 1.93-1.712 2.02-1.752 2.135-.025.065-.035.137-.026.208.01.102.055.205.133.298.382.454 2.21 1.126 2.792 1.026.204-.036.35-.152.414-.32zm3.704-.797c.553-.22 1.756-1.75 1.84-2.337.028-.205-.036-.38-.177-.494-.092-.07-.164-.096-2.344-.813 0 0-.96-.317-.97-.322-.232-.09-.496-.007-.674.212-.185.226-.214.52-.066.746l.386.627c1.294 2.103 1.393 2.252 1.486 2.325.146.112.33.132.52.055zm-1.124-5.415c2.48-.6 2.575-.63 2.673-.696.15-.1.224-.27.21-.477 0-.007.003-.013 0-.02-.062-.61-1.13-2.193-1.655-2.45-.186-.09-.373-.084-.526.02-.097.063-.168.155-1.494 1.972 0 0-.6.818-.608.824-.157.193-.16.47-.006.706.16.244.43.364.68.295 0 0-.012.02-.015.022.122-.045.34-.1.74-.194zM33.006 8c-.042-.982-.338-5.357-.373-5.56-.05-.184-.193-.314-.4-.366-.632-.157-3.05.522-3.5.984-.143.15-.197.335-.153.5.07.143 3.067 4.857 3.067 4.857.443.72.805.607.923.57.118-.034.477-.146.436-.984z", fill: "#E6E7E8" }),
-                            i.createElement("path", { d: "M27.867 8.555c-.236.38-.336 1.57-.254 2.362.03.26.076.48.144.61.094.18.253.286.435.292.116.005.188-.015 2.37-.717 0 0 .97-.31.975-.31.242-.062.405-.285.42-.57.016-.29-.134-.548-.382-.64l-.686-.28c-2.346-.966-2.45-1.004-2.57-1.006-.18-.008-.34.083-.453.258zm5.247 7.209c.038-.11.042-.186.05-2.48l.005-1.023c.014-.247-.146-.472-.41-.575-.27-.104-.563-.04-.726.165 0 0-.478.568-.48.568-1.644 1.93-1.712 2.02-1.752 2.133-.024.07-.035.14-.026.212.01.102.056.203.133.297.38.453 2.207 1.125 2.79 1.025.204-.037.35-.15.414-.32zm3.706-.798c.55-.22 1.754-1.75 1.84-2.337.028-.206-.036-.382-.177-.495-.092-.07-.164-.097-2.345-.813 0 0-.957-.316-.97-.322-.23-.09-.495-.007-.673.213-.184.225-.212.52-.065.746l.385.625c1.295 2.103 1.394 2.252 1.487 2.325.145.114.328.133.52.056zm-1.126-5.414c2.48-.6 2.575-.632 2.673-.696.15-.1.225-.27.212-.476v-.02c-.064-.61-1.132-2.193-1.657-2.45-.186-.09-.373-.084-.526.02-.096.063-.167.157-1.494 1.972l-.607.825c-.158.192-.16.468-.006.704.16.245.43.365.68.296 0 0-.01.017-.014.02.122-.046.34-.1.738-.194zm-2.489-2.047c-.042-.982-.338-5.357-.373-5.56-.05-.183-.193-.314-.4-.367-.633-.157-3.052.52-3.5.983-.144.15-.197.336-.154.5.07.145 3.068 4.86 3.068 4.86.443.718.804.607.922.57.12-.036.478-.147.437-.985z", fill: "#B12A31" }),
-                            i.createElement("path", {
-                                d: "M2.508 17.875c.312.288.903.37 1.622.224.674-.135 1.092-.435 1.495-1.713l2.002-6.29c.103-.335.095-.625-.023-.84-.097-.174-.257-.29-.484-.35-.356-.1-.802-.09-1.083.87l-1.05 3.568s-2.14-4.042-2.143-4.043c-.135-.27-.53-.463-.934-.303-.526.198-.7.67-.49 1.28 0 0 2.602 5.298 2.608 5.313 0 0 .07.188.07.22l.024.148c-.005.205-.073.376-.195.492-.12.112-.287.172-.48.163l-.438-.008c-.42.05-.68.29-.723.66-.03.238.047.447.22.608zm11.97-6.451c-.09-.91-.44-1.62-1.016-2.053-.613-.464-1.48-.612-2.506-.43-1.286.223-2.06 1.144-2.236 2.664-.218 1.817.08 3.186.867 3.96.594.588 1.47.82 2.537.676 1.52-.213 2.205-1.05 2.205-1.577 0-.388-.236-.694-.58-.74-.2-.04-.365 0-.734.328-.53.465-1.147.65-1.692.513-.416-.105-.74-.393-.887-.785 0 0-.065-.26-.062-.23-.044-.235-.065-.467.08-.562l.038-.026h3.34c.31 0 .465-.04.556-.137.182-.204.167-.786.088-1.6zm-1.712.485H9.978c-.076-.056-.112-.15-.056-.427.036-.146.074-.277.186-.46.035-.056.074-.112.11-.168.203-.258.48-.423.793-.496.98-.24 1.664.256 1.775 1.107.054.37.02.442-.02.442zm4.742-5.293c-.265-.107-.563-.078-.824.078-.252.15-.357.376-.357.785v7.966s.044.284.048.297c.057.2.204.367.408.46.226.105.487.104.72-.006.29-.125.463-.416.463-.777V7.44l-.05-.394c-.05-.185-.2-.345-.408-.43zm6.386 2.244c-.74-.152-1.37-.026-1.98.386 0 0-.068.056-.094.072l-.053.027-.167.074-.047-.187-.04-.068-.014-.042-.006-.013-.046-.062c-.174-.272-.65-.396-1.077-.152-.208.118-.328.285-.328.785v7.82c0 .428.134.695.428.835.248.125.528.135.766.03.204-.087.353-.245.41-.437l.048-.334V16.24l-.013-.218.007-.065.007-.03.08-.257.246.163s.06.04.087.068l.073.05.084.05.08.037c.656.31 1.534.274 2.24-.09.888-.465 1.327-1.288 1.43-2.673.213-2.764-.422-4.085-2.12-4.415zm-.082 5.85c-1.104 0-1.28-.98-1.314-1.72-.002-.002-.014-.433-.014-.433l.012-.333c.072-1.28.336-1.783 1.01-1.924.454-.106.8-.054 1.06.155.39.314.563.98.547 2.09-.012 1.3-.237 2.164-1.3 2.164zm3.608.177c.25 0 .463.197.463.457 0 .265-.212.46-.464.46-.254 0-.464-.196-.464-.456 0-.264.21-.46.463-.46zm0 .852c.215 0 .388-.17.388-.396 0-.22-.173-.39-.39-.39-.216 0-.39.17-.39.395.002.22.175.39.39.39zm-.173-.657h.196c.127 0 .187.047.187.154 0 .095-.062.135-.14.144l.153.236h-.08l-.147-.23h-.095v.23h-.073v-.533zm.074.237h.093c.074 0 .144-.004.144-.088 0-.074-.063-.083-.12-.083h-.115v.17z",
-                            }),
-                        ),
-                    },
-                    { writingDirection: t },
-                );
-            };
-            n.metadata = { width: 40, height: 20 };
+            n.metadata = { width: 55, height: 9 };
             const o = n;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/icons.24.56392e3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/icons.24.86e7c24a.js.map

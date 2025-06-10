@@ -7228,22 +7228,22 @@
                 o("hd80bd3e", "Promocionar un post"),
                 o("fe2b0008", "Aprende cómo usar X"),
                 o("h257d4aa", "Seleccionar un post para promocionar"),
-                o("e9334fe6", "Data updates every few minutes"),
-                o("a6d7b1d0", "Based on X Internal Data"),
-                o("h9b28dae", "You’re saving time with an ad-free feed"),
+                o("e9334fe6", "Actualizaciones de datos cada tantos minutos"),
+                o("a6d7b1d0", "En función de los Datos Internos de X"),
+                o("h9b28dae", "Estás ahorrando tiempo con un feed sin anuncios"),
                 o("f6c50ec0", "Finalizó tu prueba sin anuncios"),
-                o("e1d1fbca", "You’ve avoided"),
+                o("e1d1fbca", "Evitaste"),
                 o("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return e.numberOfAds + " anuncios";
                 }),
-                o("ff074c76", "You’re seeing more of the posts you want."),
+                o("ff074c76", "Estás viendo más posts como los que tú quieres."),
                 o("cbc38428", "Continúa sin anuncios con Premium+"),
-                o("b9028f60", "Back to my ad-free trial"),
-                o("e081d6a0", "No thanks, I’d like to see ads again"),
-                o("fee73dca", "Saving an estimated"),
+                o("b9028f60", "Volver a mi prueba sin anuncios"),
+                o("e081d6a0", "No, gracias, quiero volver a ver anuncios"),
+                o("fee73dca", "Ahorrando aproximadamente"),
                 o("ic073e4e", "Tu tiempo es valioso."),
                 o("eb866e88", "Ahorro de tiempo estimado en 1 año"),
-                o("ce72f092", "Based on your usage so far."),
+                o("ce72f092", "En función de tu uso hasta ahora."),
                 o("c534c6b4", "Estamos haciendo números..."),
                 o("i57332f0", "Sigue desplazándote y vuelve a consultar más tarde para ver cuántos anuncios evitaste y cuánto tiempo ahorraste."),
                 o("cc10f019", function (e) {
@@ -7258,15 +7258,15 @@
                 o("b93d00e5", function (e) {
                     return e.days + " día" + r(e.days, "", "s");
                 }),
-                o("g2c63852", "100% free. No credit card required."),
+                o("g2c63852", "100 % gratuita. No se necesita tarjeta de crédito."),
                 o("be88be23", function (e) {
                     return "Tu prueba de " + e.durationInDays + " día(s) sin anuncios está activada";
                 }),
-                o("b63766a6", "Scroll without ads"),
-                o("h028f7e0", "Spend more time on the content you love"),
-                o("dd68eef6", "Experience the Premium+ luxury life"),
+                o("b63766a6", "Desplázate sin anuncios"),
+                o("h028f7e0", "Pasa más tiempo en el contenido que te gusta"),
+                o("dd68eef6", "Experimenta la vida de lujo que te ofrece Premium+"),
                 o("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return "Disfruta de la versión sin anuncios durante " + e.durationInDays + " días";
                 }),
                 o("dec99336", "Sin anuncios"),
                 o("i95803fa", "Lamentablemente, no eres elegible en este momento."),
@@ -13364,4 +13364,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.7f52f48a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.0b7346fa.js.map

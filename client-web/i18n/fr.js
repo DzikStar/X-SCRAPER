@@ -7233,22 +7233,22 @@
                 n("hd80bd3e", "Sponsoriser un post"),
                 n("fe2b0008", "Découvrir comment utiliser X"),
                 n("h257d4aa", "Choisir un post à sponsoriser"),
-                n("e9334fe6", "Data updates every few minutes"),
-                n("a6d7b1d0", "Based on X Internal Data"),
-                n("h9b28dae", "You’re saving time with an ad-free feed"),
+                n("e9334fe6", "Mises à jour des données toutes les quelques minutes"),
+                n("a6d7b1d0", "Sur la base de données internes X"),
+                n("h9b28dae", "Vous gagnez du temps grâce à un fil sans publicités"),
                 n("f6c50ec0", "Votre essai sans publicités est terminé"),
-                n("e1d1fbca", "You’ve avoided"),
+                n("e1d1fbca", "Vous avez évité"),
                 n("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return e.numberOfAds + " publicités";
                 }),
-                n("ff074c76", "You’re seeing more of the posts you want."),
+                n("ff074c76", "Vous voyez plus de posts que vous voulez voir."),
                 n("cbc38428", "Conservez une expérience sans publicités avec Premium+"),
-                n("b9028f60", "Back to my ad-free trial"),
-                n("e081d6a0", "No thanks, I’d like to see ads again"),
-                n("fee73dca", "Saving an estimated"),
+                n("b9028f60", "Retour à mon essai sans publicités"),
+                n("e081d6a0", "Non merci, je voudrais revoir des publicités"),
+                n("fee73dca", "Estimation du temps gagné"),
                 n("ic073e4e", "Votre temps est précieux."),
                 n("eb866e88", "Estimation du temps gagné sur un an"),
-                n("ce72f092", "Based on your usage so far."),
+                n("ce72f092", "Sur la base de votre utilisation jusqu'à présent."),
                 n("c534c6b4", "Nous préparons les chiffres…"),
                 n("i57332f0", "Continuez à utiliser X et revenez plus tard pour voir combien de publicités vous avez évitées et combien de temps vous avez gagné."),
                 n("cc10f019", function (e) {
@@ -7263,15 +7263,15 @@
                 n("b93d00e5", function (e) {
                     return e.days + " day" + o(e.days, "", "s");
                 }),
-                n("g2c63852", "100% free. No credit card required."),
+                n("g2c63852", "100 % gratuit. Aucune carte de crédit n'est requise."),
                 n("be88be23", function (e) {
                     return "Votre essai sans publicités de " + e.durationInDays + " jours est activé.";
                 }),
-                n("b63766a6", "Scroll without ads"),
-                n("h028f7e0", "Spend more time on the content you love"),
-                n("dd68eef6", "Experience the Premium+ luxury life"),
+                n("b63766a6", "Faites défiler sans publicités"),
+                n("h028f7e0", "Passez plus de temps sur du contenu qui vous plaît"),
+                n("dd68eef6", "Découvrez le luxe de Premium+"),
                 n("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return "Profitez d'une expérience sans publicités pendant " + e.durationInDays + " jours";
                 }),
                 n("dec99336", "Sans publicités"),
                 n("i95803fa", "Malheureusement, vous ne respectez actuellement pas les critères requis."),
@@ -13356,4 +13356,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.0472b40a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.77ac658a.js.map

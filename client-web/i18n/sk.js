@@ -7238,22 +7238,22 @@
                 n("hd80bd3e", "Sponzorovať príspevok"),
                 n("fe2b0008", "Ako používať X"),
                 n("h257d4aa", "Vyberte príspevok, ktorý sa má sponzorovať"),
-                n("e9334fe6", "Data updates every few minutes"),
-                n("a6d7b1d0", "Based on X Internal Data"),
-                n("h9b28dae", "You’re saving time with an ad-free feed"),
+                n("e9334fe6", "Údaje sa aktualizujú každých pár minút"),
+                n("a6d7b1d0", "Založené na interných údajoch služby X"),
+                n("h9b28dae", "Kanál bez reklám vám šetrí čas"),
                 n("f6c50ec0", "Vaše skúšobné obdobie bez reklám sa skončilo"),
-                n("e1d1fbca", "You’ve avoided"),
+                n("e1d1fbca", "Vyhli ste sa"),
                 n("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return e.numberOfAds + " reklamám";
                 }),
-                n("ff074c76", "You’re seeing more of the posts you want."),
+                n("ff074c76", "Vidíte viac príspevkov, ktoré vás zaujímajú."),
                 n("cbc38428", "Zbavte sa reklám s predplatným Premium+"),
-                n("b9028f60", "Back to my ad-free trial"),
-                n("e081d6a0", "No thanks, I’d like to see ads again"),
-                n("fee73dca", "Saving an estimated"),
+                n("b9028f60", "Späť na moje skúšobné obdobie bez reklám"),
+                n("e081d6a0", "Nie, ďakujem, znova chcem vidieť reklamy"),
+                n("fee73dca", "Odhadovaná úspora "),
                 n("ic073e4e", "Váš čas je cenný."),
                 n("eb866e88", "Odhadovaná ročná úspora času"),
-                n("ce72f092", "Based on your usage so far."),
+                n("ce72f092", "Na základe vášho doterajšieho používania."),
                 n("c534c6b4", "Vykonávame výpočty…"),
                 n("i57332f0", "Pozerajte si obsah a vráťte sa sem neskôr, aby ste zistili, koľkým reklamám ste sa vyhli a koľko času ste ušetrili."),
                 n("cc10f019", function (e) {
@@ -7268,15 +7268,15 @@
                 n("b93d00e5", function (e) {
                     return e.days + " d" + t(e.days, "ni", "ňa", "eň", "ní");
                 }),
-                n("g2c63852", "100% free. No credit card required."),
+                n("g2c63852", "100 % zadarmo. Nie je potrebná kreditná karta."),
                 n("be88be23", function (e) {
                     return "Vaše " + e.durationInDays + "-dňové skúšobné obdobie bez reklám je aktivované";
                 }),
-                n("b63766a6", "Scroll without ads"),
-                n("h028f7e0", "Spend more time on the content you love"),
-                n("dd68eef6", "Experience the Premium+ luxury life"),
+                n("b63766a6", "Prezerajte si obsah bez reklám"),
+                n("h028f7e0", "Venujte viac času obsahu, ktorý máte radi"),
+                n("dd68eef6", "Vyskúšajte si luxusný život s predplatným Premium+"),
                 n("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return "Používajte službu bez reklám " + e.durationInDays + " d.";
                 }),
                 n("dec99336", "Bez reklám"),
                 n("i95803fa", "Ľutujeme, ale v súčasnosti nespĺňate podmienky."),
@@ -13368,4 +13368,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.00e24e4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.ebaf908a.js.map

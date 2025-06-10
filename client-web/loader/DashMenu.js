@@ -121,8 +121,8 @@
                 E = r(725516),
                 C = r(125363),
                 _ = r(390387),
-                y = r(919022),
-                M = r(110512),
+                M = r(919022),
+                y = r(110512),
                 v = r(105131),
                 Z = r(206962),
                 A = r(71620),
@@ -139,8 +139,8 @@
                 L = { page: "dash" },
                 B = ({ createLocalApiErrorHandler: e, delegateUser: t, multiAccountUsers: r, onClose: a, showMultiAccountOverflowPip: s, switchAccount: l }) => {
                     const i = (0, E.z)(),
-                        d = (0, C.v9)(y.ZP.selectLoggedInUser),
-                        c = (0, M.V7)(),
+                        d = (0, C.v9)(M.ZP.selectLoggedInUser),
+                        c = (0, y.V7)(),
                         u = (0, C.I0)(),
                         m = t || c.length || r.length > 0,
                         h = (e) => (e ? n.createElement(p.Z, { count: e, truncatedCountFormatter: N, unreadCountLabel: T }) : null),
@@ -177,7 +177,7 @@
                 V = (0, v.P3)(S(n.memo(B)));
             var O = r(659773);
             const H = (0, I.Z)()
-                .propsFromState(() => ({ viewerUser: y.ZP.selectViewerUser }))
+                .propsFromState(() => ({ viewerUser: M.ZP.selectViewerUser }))
                 .propsFromActions(() => ({ fetchDataUsageSettingsIfNeeded: O.MJ }))
                 .withAnalytics({ page: "dash" });
             var z = r(120735);
@@ -212,24 +212,22 @@
             const n = (0, r(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.2"),
-                        r.e("icons.24"),
-                        r.e("icons.10"),
-                        r.e("icons.15"),
-                        r.e("icons.27"),
-                        r.e("icons.16"),
-                        r.e("icons.12"),
-                        r.e("icons.7"),
+                        r.e("icons.0"),
                         r.e("icons.5"),
-                        r.e("icons.22"),
-                        r.e("icons.19"),
+                        r.e("icons.12"),
+                        r.e("icons.20"),
+                        r.e("icons.2"),
+                        r.e("icons.21"),
+                        r.e("icons.28"),
+                        r.e("icons.10"),
                         r.e("icons.17"),
-                        r.e("icons.26"),
-                        r.e("icons.4"),
-                        r.e("icons.29"),
+                        r.e("icons.9"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
+                        r.e("icons.22"),
+                        r.e("icons.25"),
                         r.e("icons.14"),
+                        r.e("icons.6"),
                         r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                         r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                         r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -258,10 +256,10 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         r.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                        r.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         r.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         r.e("shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"),
-                        r.e("loader.WideLayout-6107ac1a"),
-                        r.e("loader.WideLayout-9f4db315"),
+                        r.e("loader.WideLayout"),
                     ]).then(r.bind(r, 616753)),
             });
         },
@@ -318,11 +316,11 @@
                         { isVisible: C } = this.state;
                     return n.createElement(f.ZP.Consumer, null, ({ direction: f }) => {
                         const _ = "rtl" === f,
-                            y = C ? E.visibleDrawer : ("left" === t) === _ ? E.offscreenRightDrawer : E.offscreenLeftDrawer,
-                            M = C && !b ? E.maskWithBg : E.maskTransparent,
+                            M = C ? E.visibleDrawer : ("left" === t) === _ ? E.offscreenRightDrawer : E.offscreenLeftDrawer,
+                            y = C && !b ? E.maskWithBg : E.maskTransparent,
                             v = C ? E.animateOpen : E.animateClose,
                             Z = i.Z.reducedMotionEnabled ? null : v;
-                        return n.createElement(p.Z.Modal, null, n.createElement(h.Z, null, n.createElement(m.Z, null, n.createElement(o.Z, { onClick: this._handleMaskClick, onKeyUp: this._handleEsc, style: [E.mask, M, Z, g ? E.backgroundBlur : null, "left" === t ? E.alignLeft : E.alignRight] }, (0, u.Z)("div", { role: "dialog", onTransitionEnd: this._handleTransitionEnd, ref: this._setAnimationNode, onClick: k, style: [E.root, g ? E.backgroundRootBlur : null, y, Z, s], children: n.createElement(n.Fragment, null, D ? n.createElement(d.Z, { leftControl: "left" === t ? e : "right" === t ? this._renderCloseButton(r) : null, rightControl: "left" === t ? this._renderCloseButton(r) : "right" === t ? e : null, style: w, subtitle: l, title: c }) : null, n.createElement(o.Z, { style: E.contentContainer }, a)) })))));
+                        return n.createElement(p.Z.Modal, null, n.createElement(h.Z, null, n.createElement(m.Z, null, n.createElement(o.Z, { onClick: this._handleMaskClick, onKeyUp: this._handleEsc, style: [E.mask, y, Z, g ? E.backgroundBlur : null, "left" === t ? E.alignLeft : E.alignRight] }, (0, u.Z)("div", { role: "dialog", onTransitionEnd: this._handleTransitionEnd, ref: this._setAnimationNode, onClick: k, style: [E.root, g ? E.backgroundRootBlur : null, M, Z, s], children: n.createElement(n.Fragment, null, D ? n.createElement(d.Z, { leftControl: "left" === t ? e : "right" === t ? this._renderCloseButton(r) : null, rightControl: "left" === t ? this._renderCloseButton(r) : "right" === t ? e : null, style: w, subtitle: l, title: c }) : null, n.createElement(o.Z, { style: E.contentContainer }, a)) })))));
                     });
                 }
                 _renderCloseButton(e) {
@@ -632,4 +630,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DashMenu.6d00b92a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DashMenu.2670e65a.js.map

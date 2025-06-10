@@ -480,9 +480,9 @@
                                 a = parseFloat(t),
                                 n = parseFloat(s),
                                 r = parseFloat(l);
-                            return /^\d*(\.\d{1,2})?$/.test(t) && a > 0 && a >= n && a <= r && (!g || a <= k);
+                            return /^\d*(\.\d{1,2})?$/.test(t) && a > 0 && a >= n && a <= r && !(g && a > k);
                         },
-                        [k, l, s, g],
+                        [l, s, g, k],
                     ),
                     P = n.useCallback(
                         (e) => {
@@ -740,4 +740,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.3923ccaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.3332f4ba.js.map

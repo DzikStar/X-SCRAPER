@@ -2,14 +2,14 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["i18n/th"],
     {
-        743834: (e, a, c) => {
-            var n = c(292426)._register("th", {
+        743834: (e, c, a) => {
+            var n = a(292426)._register("th", {
                 get emoji() {
-                    return c.e("i18n/emoji-th").then(c.t.bind(c, 953899, 23));
+                    return a.e("i18n/emoji-th").then(a.t.bind(a, 953899, 23));
                 },
             });
-            function t(e, a) {
-                return a;
+            function t(e, c) {
+                return c;
             }
             n("c39b0e24", "X"),
                 n("jb38600c", "ไม่มี"),
@@ -7228,22 +7228,22 @@
                 n("hd80bd3e", "ประชาสัมพันธ์โพสต์"),
                 n("fe2b0008", "เรียนรู้วิธีการใช้ X"),
                 n("h257d4aa", "เลือกโพสต์เพื่อประชาสัมพันธ์"),
-                n("e9334fe6", "Data updates every few minutes"),
-                n("a6d7b1d0", "Based on X Internal Data"),
-                n("h9b28dae", "You’re saving time with an ad-free feed"),
+                n("e9334fe6", "ข้อมูลจะอัปเดตทุกๆ สองสามนาที"),
+                n("a6d7b1d0", "อิงตามข้อมูลภายใน X"),
+                n("h9b28dae", "คุณประหยัดเวลาได้ด้วยฟีดแบบไม่มีโฆษณา"),
                 n("f6c50ec0", "ช่วงทดลองใช้งานแบบปลอดโฆษณาของคุณสิ้นสุดลงแล้ว"),
-                n("e1d1fbca", "You’ve avoided"),
+                n("e1d1fbca", "คุณสามารถหลีกเลี่ยงได้"),
                 n("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return "โฆษณา " + e.numberOfAds + " รายการ";
                 }),
-                n("ff074c76", "You’re seeing more of the posts you want."),
+                n("ff074c76", "คุณกำลังเห็นโพสต์ที่คุณต้องการมากขึ้น"),
                 n("cbc38428", "ใช้งานแบบไม่มีโฆษณาด้วย Premium+"),
-                n("b9028f60", "Back to my ad-free trial"),
-                n("e081d6a0", "No thanks, I’d like to see ads again"),
-                n("fee73dca", "Saving an estimated"),
+                n("b9028f60", "กลับสู่การทดลองใช้แบบปลอดโฆษณาของฉัน"),
+                n("e081d6a0", "ไม่ล่ะ ขอบคุณ ฉันต้องการเห็นโฆษณาอีกครั้ง"),
+                n("fee73dca", "ประหยัดโดยประมาณ"),
                 n("ic073e4e", "เวลาของคุณมีค่า"),
                 n("eb866e88", "เวลาที่ประหยัดโดยประมาณใน 1 ปี"),
-                n("ce72f092", "Based on your usage so far."),
+                n("ce72f092", "ขึ้นอยู่กับการใช้งานของคุณจนถึงตอนนี้"),
                 n("c534c6b4", "เรากำลังคำนวณตัวเลขอยู่..."),
                 n("i57332f0", "เลื่อนดูต่อไปและตรวจสอบอีกครั้งในภายหลังเพื่อดูว่าคุณสามารถหลีกเลี่ยงโฆษณาไปได้กี่รายการและคุณประหยัดเวลาไปได้เท่าไร"),
                 n("cc10f019", function (e) {
@@ -7258,15 +7258,15 @@
                 n("b93d00e5", function (e) {
                     return e.days + " วัน";
                 }),
-                n("g2c63852", "100% free. No credit card required."),
+                n("g2c63852", "ฟรี 100% ไม่ต้องใช้บัตรเครดิต"),
                 n("be88be23", function (e) {
                     return "ช่วงทดลองใช้งานฟรี " + e.durationInDays + " วันแบบไม่มีโฆษณาของคุณถูกเปิดใช้งานแล้ว";
                 }),
-                n("b63766a6", "Scroll without ads"),
-                n("h028f7e0", "Spend more time on the content you love"),
-                n("dd68eef6", "Experience the Premium+ luxury life"),
+                n("b63766a6", "เลื่อนดูโดยไม่มีโฆษณา"),
+                n("h028f7e0", "เพลิดเพลินกับเนื้อหาที่คุณชื่นชอบมากขึ้น"),
+                n("dd68eef6", "สัมผัสประสบการณ์ชีวิตหรูหราเหนือระดับกับ Premium+"),
                 n("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return "เพลิดเพลินกับการใช้งานแบบปลอดโฆษณาเป็นเวลา " + e.durationInDays + " วัน";
                 }),
                 n("dec99336", "ปลอดโฆษณา"),
                 n("i95803fa", "ขออภัย คุณไม่มีสิทธิ์ในขณะนี้"),
@@ -7865,9 +7865,9 @@
                     return "ยินดีต้อนรับอีกครั้ง " + e.displayName;
                 }),
                 n("a76d58ba", "การวิเคราะห์โฆษณา");
-            function f(e, a) {
-                for (var c = 0; c < a.length; c++) {
-                    var n = a[c];
+            function f(e, c) {
+                for (var a = 0; a < c.length; a++) {
+                    var n = c[a];
                     (n.enumerable = n.enumerable || !1),
                         (n.configurable = !0),
                         "value" in n && (n.writable = !0),
@@ -7876,15 +7876,15 @@
                             ((t = n.key),
                             (f = void 0),
                             "symbol" ==
-                            typeof (f = (function (e, a) {
+                            typeof (f = (function (e, c) {
                                 if ("object" != typeof e || null === e) return e;
-                                var c = e[Symbol.toPrimitive];
-                                if (void 0 !== c) {
-                                    var n = c.call(e, a || "default");
+                                var a = e[Symbol.toPrimitive];
+                                if (void 0 !== a) {
+                                    var n = a.call(e, c || "default");
                                     if ("object" != typeof n) return n;
                                     throw new TypeError("@@toPrimitive must return a primitive value.");
                                 }
-                                return ("string" === a ? String : Number)(e);
+                                return ("string" === c ? String : Number)(e);
                             })(t, "string"))
                                 ? f
                                 : String(f)),
@@ -7893,14 +7893,14 @@
                 }
                 var t, f;
             }
-            function r(e, a) {
+            function r(e, c) {
                 return (
                     (r = Object.setPrototypeOf
                         ? Object.setPrototypeOf.bind()
-                        : function (e, a) {
-                              return (e.__proto__ = a), e;
+                        : function (e, c) {
+                              return (e.__proto__ = c), e;
                           }),
-                    r(e, a)
+                    r(e, c)
                 );
             }
             n("eccd0e1a", "การวิเคราะห์องค์กร"),
@@ -9521,22 +9521,22 @@
                 n("acddd4d4", "สีแดง"),
                 n("cef9b062", "สีน้ำเงินอมเขียว"),
                 n("d9daefca", "สีเทาเข้ม");
-            var d = c(202784),
+            var d = a(202784),
                 b = [],
                 u = {};
             function i(e) {
                 return e;
             }
             var o = (function (e) {
-                var a, c, n, t, o;
+                var c, a, n, t, o;
                 function m() {
                     return e.apply(this, arguments) || this;
                 }
                 return (
-                    (c = e),
-                    ((a = m).prototype = Object.create(c.prototype)),
-                    (a.prototype.constructor = a),
-                    r(a, c),
+                    (a = e),
+                    ((c = m).prototype = Object.create(a.prototype)),
+                    (c.prototype.constructor = c),
+                    r(c, a),
                     (m.prototype.render = function () {
                         return d.createElement.apply(d, this[this.props.$i18n].reduce(this.templateReducer, [d.Fragment, null]));
                     }),
@@ -12984,10 +12984,10 @@
                             key: "templateReducer",
                             get: function () {
                                 var e,
-                                    a = d.Children.toArray(this.props.children),
-                                    c = ((e = this.props.$i18n), b[u[e]] || i);
+                                    c = d.Children.toArray(this.props.children),
+                                    a = ((e = this.props.$i18n), b[u[e]] || i);
                                 return function (e, n, t) {
-                                    return e.concat(n, a[c(t)]);
+                                    return e.concat(n, c[a(t)]);
                                 };
                             },
                         },
@@ -12996,13 +12996,13 @@
                     Object.defineProperty(n, "prototype", { writable: !1 }),
                     m
                 );
-            })(c(111677)._ActualI18NFormatMessage || d.Component);
+            })(a(111677)._ActualI18NFormatMessage || d.Component);
             n("_ActualI18NFormatMessage", o),
                 n("I18NFormatMessage", function (e) {
                     return d.createElement(o, e);
                 });
-            var m = c(495075);
-            c(800694), c(556829), c(530152), c(658610), c(492344), c(663823);
+            var m = a(495075);
+            a(800694), a(556829), a(530152), a(658610), a(492344), a(663823);
             m._validateParameterTypeNumber, m._validateParameterPresence;
             var g = m._numberRound,
                 h = (m._numberFormat, m._numberFormatterFn),
@@ -13351,4 +13351,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.46e33a9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.068ccffa.js.map

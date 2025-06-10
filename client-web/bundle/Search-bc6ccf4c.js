@@ -161,8 +161,8 @@
                         _ = R ? this._getMemoizedLink(R, k) : void 0,
                         Z = c ? c(R) : S?.pathname === _?.pathname,
                         I = b.Z.generate({ backgroundColor: "transparent", color: l.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: p ? v.pillHoverStyle.backgroundColor : void 0 }),
-                        E = m ? "medium" : Z ? "bold" : "medium";
-                    return r.createElement(f.Z, { "aria-label": t, "aria-selected": Z, focusable: !!Z, interactiveStyles: I, link: _, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(p ? [v.pillStyle] : [v.link]), ...(p && Z ? [v.pillActiveStyle] : []), d ? (p ? v.compactPill : v.compactLink) : null, h ? v.roundedRect : null, w], withoutInteractiveStyles: m }, ({ isFocused: t, isHovered: c }) => r.createElement(n.Z, { style: p && v.flexGrow }, r.createElement(u.ZP, { size: m ? "headline2" : void 0, style: [v.text, { color: this._getTextColor(Z, c, m, p) }, d && v.compactText, m && t && v.focusedText, p && v.pillTextStyle, p && Z && v.pillActiveTextStyle, p && c && v.pillHoverTextStyle], weight: E }, e && r.createElement(e, { style: v.icon }), a, m || p ? null : r.createElement(n.Z, { style: Z && [v.border, { backgroundColor: l.default.theme.colors[s] }] })), o ? r.createElement(g.Z, { count: o, standalone: !0, style: [v.badge, o >= 10 && v.multiDigitBadge, o >= 20 && v.truncatedCountBadge], truncatedCountFormatter: x, unreadCountLabel: y, withBorder: !1 }) : i ? r.createElement(g.Z, { pip: !0, standalone: !0, style: v.badgePip, textColor: "red500", unreadCountLabel: C, withBorder: !1 }) : null));
+                        P = m ? "medium" : Z ? "bold" : "medium";
+                    return r.createElement(f.Z, { "aria-label": t, "aria-selected": Z, focusable: !!Z, interactiveStyles: I, link: _, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(p ? [v.pillStyle] : [v.link]), ...(p && Z ? [v.pillActiveStyle] : []), d ? (p ? v.compactPill : v.compactLink) : null, h ? v.roundedRect : null, w], withoutInteractiveStyles: m }, ({ isFocused: t, isHovered: c }) => r.createElement(n.Z, { style: p && v.flexGrow }, r.createElement(u.ZP, { size: m ? "headline2" : void 0, style: [v.text, { color: this._getTextColor(Z, c, m, p) }, d && v.compactText, m && t && v.focusedText, p && v.pillTextStyle, p && Z && v.pillActiveTextStyle, p && c && v.pillHoverTextStyle], weight: P }, e && r.createElement(e, { style: v.icon }), a, m || p ? null : r.createElement(n.Z, { style: Z && [v.border, { backgroundColor: l.default.theme.colors[s] }] })), o ? r.createElement(g.Z, { count: o, standalone: !0, style: [v.badge, o >= 10 && v.multiDigitBadge, o >= 20 && v.truncatedCountBadge], truncatedCountFormatter: x, unreadCountLabel: y, withBorder: !1 }) : i ? r.createElement(g.Z, { pip: !0, standalone: !0, style: v.badgePip, textColor: "red500", unreadCountLabel: C, withBorder: !1 }) : null));
                 }
             }
             (k.contextType = m.Z), (k.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -222,19 +222,6 @@
             l.metadata = { width: 24, height: 24 };
             const n = l;
         },
-        98440: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => n });
-            var i = o(202784),
-                r = o(890601),
-                a = o(783427),
-                s = o(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const n = l;
-        },
         842623: (e, t, o) => {
             o.d(t, { Z: () => r });
             var i = o(316118);
@@ -246,4 +233,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Search-bc6ccf4c.1a3e411a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Search-bc6ccf4c.1c7a237a.js.map

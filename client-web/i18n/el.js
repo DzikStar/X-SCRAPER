@@ -7228,22 +7228,22 @@
                 n("hd80bd3e", "Προώθηση ανάρτησης"),
                 n("fe2b0008", "Μάθετε πώς να χρησιμοποιείτε το X"),
                 n("h257d4aa", "Επιλέξτε μια ανάρτηση για προώθηση"),
-                n("e9334fe6", "Data updates every few minutes"),
-                n("a6d7b1d0", "Based on X Internal Data"),
-                n("h9b28dae", "You’re saving time with an ad-free feed"),
+                n("e9334fe6", "Ενημέρωση δεδομένων κάθε λίγα λεπτά"),
+                n("a6d7b1d0", "Με βάση τα εσωτερικά δεδομένα X"),
+                n("h9b28dae", "Εξοικονομείτε χρόνο με μια τροφοδοσία χωρίς διαφημίσεις"),
                 n("f6c50ec0", "Η δωρεάν δοκιμαστική περίοδος χωρίς διαφημίσεις έληξε"),
-                n("e1d1fbca", "You’ve avoided"),
+                n("e1d1fbca", "Έχετε αποφύγει"),
                 n("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return e.numberOfAds + " διαφημίσεις";
                 }),
-                n("ff074c76", "You’re seeing more of the posts you want."),
+                n("ff074c76", "Βλέπετε περισσότερες από τις αναρτήσεις που θέλετε."),
                 n("cbc38428", "Μείνετε χωρίς διαφημίσεις με το Premium+"),
-                n("b9028f60", "Back to my ad-free trial"),
-                n("e081d6a0", "No thanks, I’d like to see ads again"),
-                n("fee73dca", "Saving an estimated"),
+                n("b9028f60", "Επιστροφή στη δοκιμαστική μου έκδοση χωρίς διαφημίσεις"),
+                n("e081d6a0", "Όχι ευχαριστώ, θα ήθελα να ξαναδώ διαφημίσεις"),
+                n("fee73dca", "Εξοικονόμηση περίπου"),
                 n("ic073e4e", "Ο χρόνος σας είναι πολύτιμος."),
                 n("eb866e88", "Εκτιμώμενη εξοικονόμηση χρόνου σε 1 έτος"),
-                n("ce72f092", "Based on your usage so far."),
+                n("ce72f092", "Με βάση τη μέχρι τώρα χρήση σας."),
                 n("c534c6b4", "Αναλύουμε τους αριθμούς..."),
                 n("i57332f0", "Συνεχίστε την κύλιση και ελέγξτε ξανά αργότερα για να δείτε πόσες διαφημίσεις αποφύγατε και πόσο χρόνο εξοικονομήσατε"),
                 n("cc10f019", function (e) {
@@ -7258,15 +7258,15 @@
                 n("b93d00e5", function (e) {
                     return e.days + " ημέρ" + f(e.days, "α", "ες");
                 }),
-                n("g2c63852", "100% free. No credit card required."),
+                n("g2c63852", "100% δωρεάν. Δεν απαιτείται πιστωτική κάρτα."),
                 n("be88be23", function (e) {
                     return "Ενεργοποιείται η " + e.durationInDays + "-ημερών δοκιμή σας χωρίς διαφημίσεις";
                 }),
-                n("b63766a6", "Scroll without ads"),
-                n("h028f7e0", "Spend more time on the content you love"),
-                n("dd68eef6", "Experience the Premium+ luxury life"),
+                n("b63766a6", "Κύλιση χωρίς διαφημίσεις"),
+                n("h028f7e0", "Αφιερώστε περισσότερο χρόνο στο περιεχόμενο που αγαπάτε"),
+                n("dd68eef6", "Ζήστε την εμπειρία της πολυτελούς ζωής Premium+"),
                 n("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return "Απολαύστε χωρίς διαφημίσεις για " + e.durationInDays + " ημέρες";
                 }),
                 n("dec99336", "Χωρίς διαφημίσεις"),
                 n("i95803fa", "Δυστυχώς, δεν πληροίτε τις προϋποθέσεις αυτήν τη στιγμή."),
@@ -13351,4 +13351,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/el.29c9109a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/el.060a10fa.js.map

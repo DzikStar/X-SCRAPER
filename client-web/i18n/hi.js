@@ -7233,22 +7233,22 @@
                 n("hd80bd3e", "पोस्ट का प्रचार करें"),
                 n("fe2b0008", "X को इस्तेमाल करने का तरीका जानें"),
                 n("h257d4aa", "प्रचार करने के लिए एक पोस्ट चुनें"),
-                n("e9334fe6", "Data updates every few minutes"),
-                n("a6d7b1d0", "Based on X Internal Data"),
-                n("h9b28dae", "You’re saving time with an ad-free feed"),
+                n("e9334fe6", "डेटा हर कुछ मिनट में अपडेट होता है"),
+                n("a6d7b1d0", "X के आतंरिक डेटा पर आधारित"),
+                n("h9b28dae", "आप विज्ञापन-मुक्त फ़ीड के साथ समय बचा रहे हैं"),
                 n("f6c50ec0", "आपका विज्ञापन-मुक्त ट्रायल समाप्त हो गया है"),
-                n("e1d1fbca", "You’ve avoided"),
+                n("e1d1fbca", "आपने टाला है"),
                 n("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return e.numberOfAds + " विज्ञापन";
                 }),
-                n("ff074c76", "You’re seeing more of the posts you want."),
+                n("ff074c76", "आप अपनी पसंद की ज़्यादा पोस्ट देख रहे हैं."),
                 n("cbc38428", "Premium+ के साथ विज्ञापन मुक्त हो रहें"),
-                n("b9028f60", "Back to my ad-free trial"),
-                n("e081d6a0", "No thanks, I’d like to see ads again"),
-                n("fee73dca", "Saving an estimated"),
+                n("b9028f60", "अपने विज्ञापन-मुक्त ट्रायल पर वापस जाएं"),
+                n("e081d6a0", "नहीं धन्यवाद, मैं फिर से विज्ञापन देखना चाहूंगा"),
+                n("fee73dca", "अनुमानित बचत"),
                 n("ic073e4e", "आपका समय बहुमूल्य है."),
                 n("eb866e88", "अनुमानित 1 वर्ष में समय की बचत"),
-                n("ce72f092", "Based on your usage so far."),
+                n("ce72f092", "आपके अब तक के उपयोग के आधार पर."),
                 n("c534c6b4", "हम संख्याओं पर विचार कर रहे हैं..."),
                 n("i57332f0", "स्क्रॉल करते रहें और बाद में फिर से जाँच करके देखें कि आपने कितने विज्ञापनों से परहेज किया और आपने कितना समय बचाया"),
                 n("cc10f019", function (e) {
@@ -7263,15 +7263,15 @@
                 n("b93d00e5", function (e) {
                     return e.days + " दिन";
                 }),
-                n("g2c63852", "100% free. No credit card required."),
+                n("g2c63852", "100% मुफ़्त. किसी क्रेडिट कार्ड की ज़रूरत नहीं."),
                 n("be88be23", function (e) {
                     return "आपका " + e.durationInDays + "-दिन का विज्ञापन-मुक्त ट्रायल सक्रिय हो गया है";
                 }),
-                n("b63766a6", "Scroll without ads"),
-                n("h028f7e0", "Spend more time on the content you love"),
-                n("dd68eef6", "Experience the Premium+ luxury life"),
+                n("b63766a6", "विज्ञापन के बिना स्क्रॉल करें"),
+                n("h028f7e0", "अपनी पसंदीदा सामग्री पर अधिक समय बिताएं"),
+                n("dd68eef6", "Premium+ लक्ज़री जीवन का अनुभव करें"),
                 n("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return e.durationInDays + " दिनों के लिए विज्ञापन-मुक्त रहने का आनंद लें";
                 }),
                 n("dec99336", "विज्ञापन-मुक्त"),
                 n("i95803fa", "दुर्भाग्यवश, आप इस समय पात्र नहीं हैं."),
@@ -13360,4 +13360,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hi.b8cd196a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hi.b7c6983a.js.map

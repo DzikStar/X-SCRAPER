@@ -7228,22 +7228,22 @@
                 n("hd80bd3e", "推廣貼文"),
                 n("fe2b0008", "了解如何使用 X"),
                 n("h257d4aa", "選取要推廣的貼文"),
-                n("e9334fe6", "Data updates every few minutes"),
-                n("a6d7b1d0", "Based on X Internal Data"),
-                n("h9b28dae", "You’re saving time with an ad-free feed"),
+                n("e9334fe6", "資料每隔幾分鐘會更新一次"),
+                n("a6d7b1d0", "根據 X 內部資料"),
+                n("h9b28dae", "你正透過無廣告摘要節省時間"),
                 n("f6c50ec0", "你的無廣告試用已結束"),
-                n("e1d1fbca", "You’ve avoided"),
+                n("e1d1fbca", "你已避免"),
                 n("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return e.numberOfAds + " 則廣告";
                 }),
-                n("ff074c76", "You’re seeing more of the posts you want."),
+                n("ff074c76", "你看到了更多你想要的貼文。"),
                 n("cbc38428", "透過 Premium+ 暢享無廣告體驗"),
-                n("b9028f60", "Back to my ad-free trial"),
-                n("e081d6a0", "No thanks, I’d like to see ads again"),
-                n("fee73dca", "Saving an estimated"),
+                n("b9028f60", "返回我的無廣告試用"),
+                n("e081d6a0", "不用了，我想再次看到廣告"),
+                n("fee73dca", "預估節省時間"),
                 n("ic073e4e", "你的時間相當寶貴。"),
                 n("eb866e88", "預估一年的節省時間"),
-                n("ce72f092", "Based on your usage so far."),
+                n("ce72f092", "根據你迄今的使用情況。"),
                 n("c534c6b4", "我們正在進行數據統計…"),
                 n("i57332f0", "請繼續瀏覽並稍後回來查看，看看你避免了多少廣告及節省了多少時間"),
                 n("cc10f019", function (e) {
@@ -7258,15 +7258,15 @@
                 n("b93d00e5", function (e) {
                     return e.days + " 天";
                 }),
-                n("g2c63852", "100% free. No credit card required."),
+                n("g2c63852", "完全免費。無需使用信用卡。"),
                 n("be88be23", function (e) {
                     return "你的 " + e.durationInDays + " 天無廣告試用已啟動";
                 }),
-                n("b63766a6", "Scroll without ads"),
-                n("h028f7e0", "Spend more time on the content you love"),
-                n("dd68eef6", "Experience the Premium+ luxury life"),
+                n("b63766a6", "無廣告瀏覽"),
+                n("h028f7e0", "花更多時間在你喜愛的內容上"),
+                n("dd68eef6", "體驗 Premium+ 奢華生活"),
                 n("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return "享受 " + e.durationInDays + " 天的無廣告體驗";
                 }),
                 n("dec99336", "無廣告"),
                 n("i95803fa", "很遺憾，你目前不符合資格。"),
@@ -13361,4 +13361,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.573f332a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.3ab73ffa.js.map

@@ -7228,22 +7228,22 @@
                 f("hd80bd3e", "推广帖子"),
                 f("fe2b0008", "了解如何使用 X"),
                 f("h257d4aa", "选择要推广的帖子"),
-                f("e9334fe6", "Data updates every few minutes"),
-                f("a6d7b1d0", "Based on X Internal Data"),
-                f("h9b28dae", "You’re saving time with an ad-free feed"),
+                f("e9334fe6", "数据每隔几分钟更新一次"),
+                f("a6d7b1d0", "基于 X 内部数据"),
+                f("h9b28dae", "你正在通过免广告信息流节省时间"),
                 f("f6c50ec0", "你的免广告试用已结束"),
-                f("e1d1fbca", "You’ve avoided"),
+                f("e1d1fbca", "你跳过了"),
                 f("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return e.numberOfAds + " 个广告";
                 }),
-                f("ff074c76", "You’re seeing more of the posts you want."),
+                f("ff074c76", "你正在查看更多自己感兴趣的帖子。"),
                 f("cbc38428", "通过 Premium+ 免广告"),
-                f("b9028f60", "Back to my ad-free trial"),
-                f("e081d6a0", "No thanks, I’d like to see ads again"),
-                f("fee73dca", "Saving an estimated"),
+                f("b9028f60", "返回我的免广告试用"),
+                f("e081d6a0", "不用了，我还是想再看看广告"),
+                f("fee73dca", "预计节省"),
                 f("ic073e4e", "你的时间很宝贵。"),
                 f("eb866e88", "预计 1 年可节省的时间"),
-                f("ce72f092", "Based on your usage so far."),
+                f("ce72f092", "根据你截至目前的使用情况。"),
                 f("c534c6b4", "我们正在计算数字..."),
                 f("i57332f0", "继续浏览，稍后再查看你屏蔽了多少广告，以及节省了多少时间"),
                 f("cc10f019", function (e) {
@@ -7258,15 +7258,15 @@
                 f("b93d00e5", function (e) {
                     return e.days + " 天";
                 }),
-                f("g2c63852", "100% free. No credit card required."),
+                f("g2c63852", "100% 免费。无需信用卡。"),
                 f("be88be23", function (e) {
                     return "你的 " + e.durationInDays + " 天免广告试用已激活";
                 }),
-                f("b63766a6", "Scroll without ads"),
-                f("h028f7e0", "Spend more time on the content you love"),
-                f("dd68eef6", "Experience the Premium+ luxury life"),
+                f("b63766a6", "免广告浏览"),
+                f("h028f7e0", "花更多时间在你喜欢的内容上"),
+                f("dd68eef6", "享受 Premium+ 尊贵体验"),
                 f("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return "尊享 " + e.durationInDays + " 天免广告体验";
                 }),
                 f("dec99336", "免广告"),
                 f("i95803fa", "很遗憾，你目前不符合条件。"),
@@ -13367,4 +13367,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.962f04ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.3815278a.js.map

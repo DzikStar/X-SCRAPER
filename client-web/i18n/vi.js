@@ -7229,21 +7229,21 @@
                 t("fe2b0008", "Tìm hiểu cách sử dụng X"),
                 t("h257d4aa", "Chọn một bài đăng để quảng bá"),
                 t("e9334fe6", "Dữ liệu cập nhật vài phút một lần"),
-                t("a6d7b1d0", "Dựa trên dữ liệu nội bộ của X"),
-                t("h9b28dae", "You’re saving time with an ad-free feed"),
+                t("a6d7b1d0", "Dựa trên Dữ liệu nội bộ của X"),
+                t("h9b28dae", "Bạn đang tiết kiệm thời gian với bảng tin không quảng cáo"),
                 t("f6c50ec0", "Thời gian dùng thử không quảng cáo của bạn đã kết thúc"),
-                t("e1d1fbca", "You’ve avoided"),
+                t("e1d1fbca", "Bạn đã tránh được"),
                 t("a82d7abd", function (n) {
-                    return n.numberOfAds + " ads";
+                    return n.numberOfAds + " quảng cáo";
                 }),
-                t("ff074c76", "You’re seeing more of the posts you want."),
+                t("ff074c76", "Bạn đang xem nhiều bài đăng bạn muốn hơn."),
                 t("cbc38428", "Tiếp tục sử dụng mà không có quảng cáo nhờ gói Premium+ "),
-                t("b9028f60", "Back to my ad-free trial"),
-                t("e081d6a0", "No thanks, I’d like to see ads again"),
-                t("fee73dca", "Saving an estimated"),
+                t("b9028f60", "Quay lại bản dùng thử không quảng cáo của tôi"),
+                t("e081d6a0", "Không, cảm ơn, tôi muốn tiếp tục xem quảng cáo"),
+                t("fee73dca", "Tiết kiệm được khoảng"),
                 t("ic073e4e", "Thời gian của bạn rất quý giá."),
                 t("eb866e88", "Ước tính thời gian tiết kiệm được trong 1 năm"),
-                t("ce72f092", "Based on your usage so far."),
+                t("ce72f092", "Dựa trên mức sử dụng của bạn từ trước đến nay."),
                 t("c534c6b4", "Chúng tôi đang tính toán số liệu..."),
                 t("i57332f0", "Tiếp tục cuộn và kiểm tra lại sau để xem bạn đã tránh được bao nhiêu quảng cáo và tiết kiệm được bao nhiêu thời gian"),
                 t("cc10f019", function (n) {
@@ -7258,15 +7258,15 @@
                 t("b93d00e5", function (n) {
                     return n.days + " ngày";
                 }),
-                t("g2c63852", "100% free. No credit card required."),
+                t("g2c63852", "Miễn phí 100%. Không yêu cầu thẻ tín dụng."),
                 t("be88be23", function (n) {
                     return n.durationInDays + " ngày dùng thử không quảng cáo của bạn đã được kích hoạt";
                 }),
-                t("b63766a6", "Scroll without ads"),
-                t("h028f7e0", "Spend more time on the content you love"),
-                t("dd68eef6", "Experience the Premium+ luxury life"),
+                t("b63766a6", "Cuộn xem mà không phải thấy quảng cáo"),
+                t("h028f7e0", "Dành thêm thời gian cho nội dung bạn thích"),
+                t("dd68eef6", "Trải nghiệm đời sống đẳng cấp của Premium+"),
                 t("g8a2f217", function (n) {
-                    return "Enjoy ad-free for " + n.durationInDays + " days";
+                    return "Dùng không quảng cáo trong " + n.durationInDays + " ngày";
                 }),
                 t("dec99336", "Không có quảng cáo"),
                 t("i95803fa", "Rất tiếc, hiện tại, bạn chưa đủ điều kiện tham gia."),
@@ -13351,4 +13351,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.c2d72c0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.67a6f82a.js.map

@@ -7229,22 +7229,22 @@
                 s("hd80bd3e", "Promover post"),
                 s("fe2b0008", "Aprenda a usar o X"),
                 s("h257d4aa", "Selecione um post para promover"),
-                s("e9334fe6", "Data updates every few minutes"),
-                s("a6d7b1d0", "Based on X Internal Data"),
-                s("h9b28dae", "You’re saving time with an ad-free feed"),
+                s("e9334fe6", "Os dados são atualizados a cada alguns minutos"),
+                s("a6d7b1d0", "Com base nos dados internos do X"),
+                s("h9b28dae", "Você está economizando tempo com um feed sem anúncios"),
                 s("f6c50ec0", "Seu teste sem anúncios expirou"),
-                s("e1d1fbca", "You’ve avoided"),
+                s("e1d1fbca", "Você evitou"),
                 s("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return e.numberOfAds + " anúncios";
                 }),
-                s("ff074c76", "You’re seeing more of the posts you want."),
+                s("ff074c76", "Você está vendo mais dos posts que gosta."),
                 s("cbc38428", "Navegue sem anúncios com o Premium+"),
-                s("b9028f60", "Back to my ad-free trial"),
-                s("e081d6a0", "No thanks, I’d like to see ads again"),
-                s("fee73dca", "Saving an estimated"),
+                s("b9028f60", "Voltar para o teste gratuito sem anúncios"),
+                s("e081d6a0", "Não, obrigado, gostaria de ver os anúncios novamente"),
+                s("fee73dca", "Economizando cerca de"),
                 s("ic073e4e", "Seu tempo é valioso."),
                 s("eb866e88", "Economia estimada de tempo em 1 ano"),
-                s("ce72f092", "Based on your usage so far."),
+                s("ce72f092", "Com base no seu uso até agora."),
                 s("c534c6b4", "Estamos analisando os números..."),
                 s("i57332f0", "Continue percorrendo a página e volte mais tarde para ver quantos anúncios você evitou e quanto tempo conseguiu economizar"),
                 s("cc10f019", function (e) {
@@ -7259,15 +7259,15 @@
                 s("b93d00e5", function (e) {
                     return e.days + " dia" + r(e.days, "", "s");
                 }),
-                s("g2c63852", "100% free. No credit card required."),
+                s("g2c63852", "100% grátis. Não é necessário cartão de crédito."),
                 s("be88be23", function (e) {
                     return "Seu teste sem anúncios de " + e.durationInDays + " dia foi ativado";
                 }),
-                s("b63766a6", "Scroll without ads"),
-                s("h028f7e0", "Spend more time on the content you love"),
-                s("dd68eef6", "Experience the Premium+ luxury life"),
+                s("b63766a6", "Rolar sem anúncios"),
+                s("h028f7e0", "Passe mais tempo no conteúdo que você ama"),
+                s("dd68eef6", "Experimente a vida de luxo Premium+"),
                 s("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return "Desfrute de uma experiência sem anúncios por " + e.durationInDays + " dias";
                 }),
                 s("dec99336", "Sem anúncios"),
                 s("i95803fa", "Infelizmente, você não é elegível no momento."),
@@ -13353,4 +13353,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.de8619fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.b0af063a.js.map

@@ -7229,22 +7229,22 @@
                 n("hd80bd3e", "تبلیغ کردن پست"),
                 n("fe2b0008", "با روش استفاده از X آشنا شوید"),
                 n("h257d4aa", "انتخاب پست برای تبلیغ کردن"),
-                n("e9334fe6", "Data updates every few minutes"),
-                n("a6d7b1d0", "Based on X Internal Data"),
-                n("h9b28dae", "You’re saving time with an ad-free feed"),
+                n("e9334fe6", "چند دقیقه یک‌بار داده‌ها به‌روز می‌شوند"),
+                n("a6d7b1d0", "براساس داده‌های داخلی X"),
+                n("h9b28dae", "با فید بدون آگهی، در زمان صرفه‌جویی می‌کنید."),
                 n("f6c50ec0", "دوره آزمایشی بدون آگهی‌تان پایان یافته است"),
-                n("e1d1fbca", "You’ve avoided"),
+                n("e1d1fbca", "پرهیز کرده‌اید"),
                 n("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return "‫" + e.numberOfAds + " آگهی‌ها";
                 }),
-                n("ff074c76", "You’re seeing more of the posts you want."),
+                n("ff074c76", "از پست‌هایی که دوست دارید بیشتر می‌بینید."),
                 n("cbc38428", "تجربه‌ای بدون آگهی با Premium+‎"),
-                n("b9028f60", "Back to my ad-free trial"),
-                n("e081d6a0", "No thanks, I’d like to see ads again"),
-                n("fee73dca", "Saving an estimated"),
+                n("b9028f60", "بازگشت به دوره آزمایشی بدون آگهی"),
+                n("e081d6a0", "نه سپاس‌گزارم، می‌خواهم دوباره آگهی ببینم"),
+                n("fee73dca", "صرفه‌جویی پیش‌بینی‌شده"),
                 n("ic073e4e", "زمان شما ارزشمند است."),
                 n("eb866e88", "زمان صرفه‌جویی‌شده تخمینی برای ۱ سال"),
-                n("ce72f092", "Based on your usage so far."),
+                n("ce72f092", "براساس کاربری شما تا کنون."),
                 n("c534c6b4", "درحال کم کردن تعداد هستیم…"),
                 n("i57332f0", "به پیمایش ادامه دهید و بعدا برای دیدن تعداد آگهی‌هایی که از آن‌ها جلوگیری کرده‌اید و زمان ذخیره‌شده‌تان دوباره بازگردید"),
                 n("cc10f019", function (e) {
@@ -7259,15 +7259,15 @@
                 n("b93d00e5", function (e) {
                     return e.days + " روز";
                 }),
-                n("g2c63852", "100% free. No credit card required."),
+                n("g2c63852", "‫٪۱۰۰ رایگان. کارت اعتباری نیاز نیست."),
                 n("be88be23", function (e) {
                     return "دوره آزمایشی " + e.durationInDays + " روزه بدون آگهی شما فعال شده است";
                 }),
-                n("b63766a6", "Scroll without ads"),
-                n("h028f7e0", "Spend more time on the content you love"),
-                n("dd68eef6", "Experience the Premium+ luxury life"),
+                n("b63766a6", "پیمایش بدون آگهی"),
+                n("h028f7e0", "گذراندن زمان بیشتر روی محتوایی که دوست دارید"),
+                n("dd68eef6", "تجربه زندگی مجلل با ‎Premium+"),
                 n("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return "از بدون آگهی بودن برای " + e.durationInDays + " روز لذت ببرید";
                 }),
                 n("dec99336", "بدون آگهی"),
                 n("i95803fa", "متأسفانه اکنون واجدشرایط نیستید."),
@@ -13359,4 +13359,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fa.dbeb99ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fa.5d5c89ea.js.map

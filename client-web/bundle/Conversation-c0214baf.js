@@ -32,7 +32,7 @@
                 A = n(980151),
                 k = n(546281),
                 R = n(187296),
-                B = n(887742),
+                B = n(564313),
                 L = n(318069),
                 N = n(695823),
                 T = n(728300),
@@ -333,4 +333,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-c0214baf.8a34d29a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-c0214baf.8d51782a.js.map

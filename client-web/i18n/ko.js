@@ -7232,22 +7232,22 @@
                 n("hd80bd3e", "게시물 프로모션하기"),
                 n("fe2b0008", "X 사용 방법 알아보기"),
                 n("h257d4aa", "프로모션할 게시물을 선택하세요"),
-                n("e9334fe6", "Data updates every few minutes"),
-                n("a6d7b1d0", "Based on X Internal Data"),
-                n("h9b28dae", "You’re saving time with an ad-free feed"),
+                n("e9334fe6", "데이터는 몇 분마다 업데이트됩니다"),
+                n("a6d7b1d0", "X 내부 데이터 기반"),
+                n("h9b28dae", "피드에서 광고를 없애고 시간을 절약하고 있습니다"),
                 n("f6c50ec0", "광고 안 보기 무료 체험 기간 종료"),
-                n("e1d1fbca", "You’ve avoided"),
+                n("e1d1fbca", "표시되지 않은 광고 수"),
                 n("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return "광고 " + e.numberOfAds + "개";
                 }),
-                n("ff074c76", "You’re seeing more of the posts you want."),
+                n("ff074c76", "보고 싶은 게시물이 더 많이 표시되고 있습니다."),
                 n("cbc38428", "Premium+로 계속해서 광고 없애기"),
-                n("b9028f60", "Back to my ad-free trial"),
-                n("e081d6a0", "No thanks, I’d like to see ads again"),
-                n("fee73dca", "Saving an estimated"),
+                n("b9028f60", "광고 안 보기 무료 체험으로 돌아가기"),
+                n("e081d6a0", "괜찮습니다. 다시 광고를 표시합니다"),
+                n("fee73dca", "예상 절약 시간"),
                 n("ic073e4e", "여러분의 시간은 중요합니다."),
                 n("eb866e88", "1년간 절약한 시간 추정치"),
-                n("ce72f092", "Based on your usage so far."),
+                n("ce72f092", "사용량을 기준으로 계산했습니다."),
                 n("c534c6b4", "계산 중입니다..."),
                 n("i57332f0", "계속해서 스크롤하세요. 나중에 다시 확인하면 표시되지 않은 광고 수와 절약한 시간을 확인하실 수 있습니다."),
                 n("cc10f019", function (e) {
@@ -7262,15 +7262,15 @@
                 n("b93d00e5", function (e) {
                     return e.days + " 일";
                 }),
-                n("g2c63852", "100% free. No credit card required."),
+                n("g2c63852", "완전 무료. 신용카드는 없어도 됩니다."),
                 n("be88be23", function (e) {
                     return e.durationInDays + "일 광고 안 보기 체험 기간이 시작되었습니다";
                 }),
-                n("b63766a6", "Scroll without ads"),
-                n("h028f7e0", "Spend more time on the content you love"),
-                n("dd68eef6", "Experience the Premium+ luxury life"),
+                n("b63766a6", "스크롤하는 동안 광고가 표시되지 않습니다"),
+                n("h028f7e0", "좋아하는 콘텐츠에 더 많은 시간을 투자하세요"),
+                n("dd68eef6", "Premium+의 고급 기능을 경험해 보세요"),
                 n("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return e.durationInDays + "일간 광고 안 보기";
                 }),
                 n("dec99336", "광고 없음"),
                 n("i95803fa", "죄송합니다. 지금은 요건을 충족하지 않습니다."),
@@ -13371,4 +13371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.768ee1ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.0a2d0f4a.js.map

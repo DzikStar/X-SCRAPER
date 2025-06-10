@@ -7228,22 +7228,22 @@
                 i("hd80bd3e", "Promosikan siaran"),
                 i("fe2b0008", "Ketahui cara untuk menggunakan X"),
                 i("h257d4aa", "Pilih siaran untuk dipromosikan"),
-                i("e9334fe6", "Data updates every few minutes"),
-                i("a6d7b1d0", "Based on X Internal Data"),
-                i("h9b28dae", "You’re saving time with an ad-free feed"),
+                i("e9334fe6", "Data dikemaskinikan setiap beberapa minit"),
+                i("a6d7b1d0", "Berdasarkan Data Dalaman X"),
+                i("h9b28dae", "Anda menjimatkan masa dengan suapan yang bebas iklan."),
                 i("f6c50ec0", "Percubaan bebas iklan anda telah tamat"),
-                i("e1d1fbca", "You’ve avoided"),
+                i("e1d1fbca", "Anda mengelakkan"),
                 i("a82d7abd", function (a) {
-                    return a.numberOfAds + " ads";
+                    return a.numberOfAds + " iklan";
                 }),
-                i("ff074c76", "You’re seeing more of the posts you want."),
+                i("ff074c76", "Anda melihat lebih banyak siaran yang anda mahu."),
                 i("cbc38428", "Kekal bersama pengalaman bebas iklan dengan Premium+"),
-                i("b9028f60", "Back to my ad-free trial"),
-                i("e081d6a0", "No thanks, I’d like to see ads again"),
-                i("fee73dca", "Saving an estimated"),
+                i("b9028f60", "Kembali ke percubaan bebas iklan saya"),
+                i("e081d6a0", "Tidak mengapa, saya ingin melihat iklan semula"),
+                i("fee73dca", "Anggaran masa yang dijimatkan"),
                 i("ic073e4e", "Masa anda berharga."),
                 i("eb866e88", "Anggaran penjimatan masa dalam tempoh 1 tahun"),
-                i("ce72f092", "Based on your usage so far."),
+                i("ce72f092", "Berdasarkan penggunaan anda setakat ini."),
                 i("c534c6b4", "Kami sedang membuat pengiraan..."),
                 i("i57332f0", "Teruskan menatal dan semak kembali kemudian untuk melihat jumlah iklan yang telah anda elakkan dan jumlah masa yang telah anda jimatkan"),
                 i("cc10f019", function (a) {
@@ -7258,15 +7258,15 @@
                 i("b93d00e5", function (a) {
                     return a.days + " hari";
                 }),
-                i("g2c63852", "100% free. No credit card required."),
+                i("g2c63852", "100% percuma. Kad kredit tidak diperlukan."),
                 i("be88be23", function (a) {
                     return "Percubaan bebas iklan " + a.durationInDays + " hari anda telah diaktifkan";
                 }),
-                i("b63766a6", "Scroll without ads"),
-                i("h028f7e0", "Spend more time on the content you love"),
-                i("dd68eef6", "Experience the Premium+ luxury life"),
+                i("b63766a6", "Tatal tanpa iklan"),
+                i("h028f7e0", "Luangkan lebih banyak masa untuk kandungan yang anda suka"),
+                i("dd68eef6", "Alami kehidupan mewah Premium+"),
                 i("g8a2f217", function (a) {
-                    return "Enjoy ad-free for " + a.durationInDays + " days";
+                    return "Nikmati suasana bebas iklan selama " + a.durationInDays + " hari";
                 }),
                 i("dec99336", "Bebas iklan"),
                 i("i95803fa", "Malangnya, anda tidak layak pada masa ini."),
@@ -13351,4 +13351,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.185a99ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.3310bbea.js.map

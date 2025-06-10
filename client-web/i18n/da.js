@@ -7229,22 +7229,22 @@
                 t("hd80bd3e", "Promover en post"),
                 t("fe2b0008", "Lær at bruge X"),
                 t("h257d4aa", "Vælg en post at promovere"),
-                t("e9334fe6", "Data updates every few minutes"),
-                t("a6d7b1d0", "Based on X Internal Data"),
-                t("h9b28dae", "You’re saving time with an ad-free feed"),
+                t("e9334fe6", "Data opdateres med få minutters mellemrum"),
+                t("a6d7b1d0", "Baseret på interne data af X"),
+                t("h9b28dae", "Du sparer tid med et annoncefrit feed"),
                 t("f6c50ec0", "Din reklamefri prøveperiode er slut"),
-                t("e1d1fbca", "You’ve avoided"),
+                t("e1d1fbca", "Du har undgået"),
                 t("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return e.numberOfAds + " annoncer";
                 }),
-                t("ff074c76", "You’re seeing more of the posts you want."),
+                t("ff074c76", "Du ser flere af de posts, du ønsker."),
                 t("cbc38428", "Forbliv annoncefri med Premium+"),
-                t("b9028f60", "Back to my ad-free trial"),
-                t("e081d6a0", "No thanks, I’d like to see ads again"),
-                t("fee73dca", "Saving an estimated"),
+                t("b9028f60", "Tilbage til min annoncefri prøveperiode"),
+                t("e081d6a0", "Nej tak, jeg vil gerne se annoncer igen"),
+                t("fee73dca", "Sparer skønsmæssigt"),
                 t("ic073e4e", "Din tid er dyrebar."),
                 t("eb866e88", "Anslået 1-årig tidsbesparelse"),
-                t("ce72f092", "Based on your usage so far."),
+                t("ce72f092", "Baseret på din hidtidige brug."),
                 t("c534c6b4", "Vi er i gang med at regne på det..."),
                 t("i57332f0", "Bliv ved med at scrolle og kom tilbage senere for at se, hvor mange annoncer du har undgået, og hvor meget tid du har sparet."),
                 t("cc10f019", function (e) {
@@ -7259,15 +7259,15 @@
                 t("b93d00e5", function (e) {
                     return e.days + " dag" + i(e.days, "", "e");
                 }),
-                t("g2c63852", "100% free. No credit card required."),
+                t("g2c63852", "100% gratis. Der kræves ikke noget kreditkort."),
                 t("be88be23", function (e) {
                     return "Din " + e.durationInDays + " dages annoncefri prøveperiode er aktiveret";
                 }),
-                t("b63766a6", "Scroll without ads"),
-                t("h028f7e0", "Spend more time on the content you love"),
-                t("dd68eef6", "Experience the Premium+ luxury life"),
+                t("b63766a6", "Rul videre uden annoncer"),
+                t("h028f7e0", "Brug mere tid på det indhold, du elsker"),
+                t("dd68eef6", "Oplev Premium+ luksuslivet"),
                 t("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return "Nyd uden annoncer for " + e.durationInDays + " dage";
                 }),
                 t("dec99336", "Annoncefri"),
                 t("i95803fa", "Desværre er du ikke kvalificeret på nuværende tidspunkt."),
@@ -13355,4 +13355,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.dd575d6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.1a9db7ea.js.map

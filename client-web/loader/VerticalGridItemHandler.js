@@ -3,7 +3,7 @@
     ["loader.VerticalGridItemHandler"],
     {
         395267: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => M });
+            r.r(t), r.d(t, { default: () => D });
             var o = r(459643),
                 l = r(942893),
                 a = r(351322),
@@ -37,10 +37,10 @@
                 E = r(233391),
                 S = r(288955),
                 x = r(71620),
-                R = r(668214),
-                z = r(466380);
-            const I = (0, R.Z)()
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, x.zr)("TOPIC_TILE_CONTEXT"), follow: z.Z.follow, unfollow: z.Z.unfollow }))
+                z = r(668214),
+                R = r(466380);
+            const I = (0, z.Z)()
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, x.zr)("TOPIC_TILE_CONTEXT"), follow: R.Z.follow, unfollow: R.Z.unfollow }))
                     .withAnalytics(),
                 T = k().je808a17,
                 H = k().ge8f3043,
@@ -80,9 +80,9 @@
                     );
                 }),
                 A = (e, t) => {
-                    if (t.entry.content.content.topicTile) return z.Z.select(e, t.entry.content.content?.topicTile.topicId);
+                    if (t.entry.content.content.topicTile) return R.Z.select(e, t.entry.content.content?.topicTile.topicId);
                 },
-                _ = ({ entry: e, feedbackItems: t, module: r, topic: o }) => {
+                M = ({ entry: e, feedbackItems: t, module: r, topic: o }) => {
                     const l = (0, c.z)(),
                         { functionalityType: a, style: s, url: d } = e.content.content.topicTile,
                         p = a === i.sv.Recommendation;
@@ -93,12 +93,12 @@
                         o ? n.createElement(F, { isRecommended: p, style: s, topic: o, url: d }) : null
                     );
                 },
-                D = (0, R.Z)()
+                _ = (0, z.Z)()
                     .propsFromState(() => ({ topic: A }))
-                    .withAnalytics()(n.memo(_)),
-                M = a
+                    .withAnalytics()(n.memo(M)),
+                D = a
                     .iH({
-                        component: D,
+                        component: _,
                         shouldDisplayBorder: (0, o.Z)(!1),
                         isFocusable: (0, o.Z)(!0),
                         getScribeDataItem(e) {
@@ -139,7 +139,7 @@
             i.metadata = { width: 24, height: 24 };
             const c = i;
         },
-        98440: (e, t, r) => {
+        452693: (e, t, r) => {
             r.r(t), r.d(t, { default: () => c });
             var o = r(202784),
                 l = r(890601),
@@ -147,11 +147,11 @@
                 n = r(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const c = i;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.VerticalGridItemHandler.ebda02aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.VerticalGridItemHandler.cfe111ba.js.map

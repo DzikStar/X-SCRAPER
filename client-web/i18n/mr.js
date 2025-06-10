@@ -7229,22 +7229,22 @@
                 n("hd80bd3e", "पोस्ट प्रमोट करा"),
                 n("fe2b0008", " X कसे वापरावे ते शिका"),
                 n("h257d4aa", "प्रमोट करण्यासाठी पोस्ट निवडा"),
-                n("e9334fe6", "Data updates every few minutes"),
-                n("a6d7b1d0", "Based on X Internal Data"),
-                n("h9b28dae", "You’re saving time with an ad-free feed"),
+                n("e9334fe6", "दर काही मिनिटांनी डेटा अपडेट होतो"),
+                n("a6d7b1d0", "X अंतर्गत डेटावर आधारित"),
+                n("h9b28dae", "आपण जाहिरात-मुक्त फीडसह वेळ वाचवत आहात"),
                 n("f6c50ec0", "तुमची जाहिरातमुक्त चाचणी संपली आहे"),
-                n("e1d1fbca", "You’ve avoided"),
+                n("e1d1fbca", "आपण टाळले आहे"),
                 n("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return e.numberOfAds + " जाहिराती";
                 }),
-                n("ff074c76", "You’re seeing more of the posts you want."),
+                n("ff074c76", "आपल्याला पाहिजे असलेल्या अधिक पोस्ट आपण पहात आहात."),
                 n("cbc38428", "Premium+ सह जाहिरात-मुक्त रहा"),
-                n("b9028f60", "Back to my ad-free trial"),
-                n("e081d6a0", "No thanks, I’d like to see ads again"),
-                n("fee73dca", "Saving an estimated"),
+                n("b9028f60", "माझ्या जाहिरात-मुक्त ट्रायलवर परत"),
+                n("e081d6a0", "नाही धन्यवाद, मला पुन्हा जाहिराती पहायच्या आहेत"),
+                n("fee73dca", "अंदाजे याची बचत"),
                 n("ic073e4e", "तुमचा वेळ मौल्यवान आहे."),
                 n("eb866e88", "अंदाजे 1 वर्ष वेळेची बचत"),
-                n("ce72f092", "Based on your usage so far."),
+                n("ce72f092", "आत्तापर्यंतच्या आपल्या वापराच्या आधारित."),
                 n("c534c6b4", "आम्ही आकडे मोजत आहोत..."),
                 n("i57332f0", "स्क्रोल करत रहा आणि तुम्ही किती जाहिराती टाळल्या आहेत आणि तुमचा किती वेळ वाचला आहे हे पाहण्यासाठी नंतर परत तपासा."),
                 n("cc10f019", function (e) {
@@ -7259,15 +7259,15 @@
                 n("b93d00e5", function (e) {
                     return e.days + " दिवस";
                 }),
-                n("g2c63852", "100% free. No credit card required."),
+                n("g2c63852", "100% विनामूल्य. कोणतेही क्रेडिट कार्ड आवश्यक नाही."),
                 n("be88be23", function (e) {
                     return "आपली " + e.durationInDays + "-दिवसाची जाहिरात-मुक्त चाचणी सक्रिय केली आहे";
                 }),
-                n("b63766a6", "Scroll without ads"),
-                n("h028f7e0", "Spend more time on the content you love"),
-                n("dd68eef6", "Experience the Premium+ luxury life"),
+                n("b63766a6", "जाहिरातीविना स्क्रोल करा"),
+                n("h028f7e0", "आपल्याला आवडणाऱ्या मजकूरावर अधिक वेळ घालवा"),
+                n("dd68eef6", "Premium+ लक्झरी जीवनाचा अनुभव घ्या"),
                 n("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return e.durationInDays + " दिवसांसाठी जाहिरात-मुक्तचा आनंद घ्या";
                 }),
                 n("dec99336", "जाहिरात-मुक्त"),
                 n("i95803fa", "दुर्दैवाने, यावेळी तुम्ही पात्र नाही."),
@@ -13359,4 +13359,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/mr.94c36aca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/mr.f9ca5c5a.js.map

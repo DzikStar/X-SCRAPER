@@ -7236,22 +7236,22 @@
                 o("hd80bd3e", "Promovirajte objavu"),
                 o("fe2b0008", "Saznajte kako upotrebljavati X"),
                 o("h257d4aa", "Odaberite objavu za promoviranje"),
-                o("e9334fe6", "Data updates every few minutes"),
-                o("a6d7b1d0", "Based on X Internal Data"),
-                o("h9b28dae", "You’re saving time with an ad-free feed"),
+                o("e9334fe6", "Podaci se ažuriraju svakih nekoliko minuta"),
+                o("a6d7b1d0", "Na temelju internih podataka tvrtke X"),
+                o("h9b28dae", "Štedite vrijeme uz sažetak sadržaja bez oglasa"),
                 o("f6c50ec0", "Vaše probno razdoblje bez oglasa završilo je"),
-                o("e1d1fbca", "You’ve avoided"),
+                o("e1d1fbca", "Izbjegli ste"),
                 o("a82d7abd", function (a) {
-                    return a.numberOfAds + " ads";
+                    return a.numberOfAds + " oglasa";
                 }),
-                o("ff074c76", "You’re seeing more of the posts you want."),
+                o("ff074c76", "Prikazuje vam se više objava koje želite."),
                 o("cbc38428", "Zadržite iskustvo bez oglasa uz Premium+"),
-                o("b9028f60", "Back to my ad-free trial"),
-                o("e081d6a0", "No thanks, I’d like to see ads again"),
-                o("fee73dca", "Saving an estimated"),
+                o("b9028f60", "Natrag na moju probnu verziju bez oglasa"),
+                o("e081d6a0", "Ne, hvala, želim ponovno vidjeti oglase"),
+                o("fee73dca", "Uštedjeli ste približno"),
                 o("ic073e4e", "Vaše je vrijeme vrijedno."),
                 o("eb866e88", "Procijenjena jednogodišnja ušteda vremena"),
-                o("ce72f092", "Based on your usage so far."),
+                o("ce72f092", "Na temelju vaše upotrebe dosad."),
                 o("c534c6b4", "Zbrajamo..."),
                 o("i57332f0", "Nastavite pregledavati i provjerite kasnije kako biste vidjeli koliko ste oglasa izbjegli i koliko ste vremena uštedjeli"),
                 o("cc10f019", function (a) {
@@ -7266,15 +7266,15 @@
                 o("b93d00e5", function (a) {
                     return a.days + " dan" + n(a.days, "a", "", "a");
                 }),
-                o("g2c63852", "100% free. No credit card required."),
+                o("g2c63852", "100 % besplatno. Nije potrebna kreditna kartica."),
                 o("be88be23", function (a) {
                     return "Aktivirano je vaše " + a.durationInDays + "-dnevno probno razdoblje bez oglasa";
                 }),
-                o("b63766a6", "Scroll without ads"),
-                o("h028f7e0", "Spend more time on the content you love"),
-                o("dd68eef6", "Experience the Premium+ luxury life"),
+                o("b63766a6", "Pregledavajte sadržaj bez oglasa"),
+                o("h028f7e0", "Trošite više vremena na sadržaj koji volite"),
+                o("dd68eef6", "Iskusite luksuzan život koji pruža Premium+"),
                 o("g8a2f217", function (a) {
-                    return "Enjoy ad-free for " + a.durationInDays + " days";
+                    return "Uživajte bez oglasa ovoliko dana: " + a.durationInDays;
                 }),
                 o("dec99336", "Bez oglasa"),
                 o("i95803fa", "Nažalost, trenutačno ne ispunjavate uvjete."),
@@ -13374,4 +13374,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.064b40da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.d03f66ea.js.map

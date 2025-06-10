@@ -7228,22 +7228,22 @@
                 n("hd80bd3e", "Рекламиране на публикация"),
                 n("fe2b0008", "Научи как да използваш X"),
                 n("h257d4aa", "Избери публикация, която да рекламираш"),
-                n("e9334fe6", "Data updates every few minutes"),
-                n("a6d7b1d0", "Based on X Internal Data"),
-                n("h9b28dae", "You’re saving time with an ad-free feed"),
+                n("e9334fe6", "Данните се обновяват на няколко минути"),
+                n("a6d7b1d0", "Въз основа на вътрешни данни на X"),
+                n("h9b28dae", "Спестяваш време благодарение на емисията без реклами"),
                 n("f6c50ec0", "Твоят пробен период без реклами завърши"),
-                n("e1d1fbca", "You’ve avoided"),
+                n("e1d1fbca", "Избегна"),
                 n("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return e.numberOfAds + " реклами";
                 }),
-                n("ff074c76", "You’re seeing more of the posts you want."),
+                n("ff074c76", "Виждаш повече публикации, които са ти интересни."),
                 n("cbc38428", "Отърви се от реклами с Premium+"),
-                n("b9028f60", "Back to my ad-free trial"),
-                n("e081d6a0", "No thanks, I’d like to see ads again"),
-                n("fee73dca", "Saving an estimated"),
+                n("b9028f60", "Обратно към моя пробен период без реклами"),
+                n("e081d6a0", "Не, благодаря, искам отново да виждам реклами"),
+                n("fee73dca", "Спестени са приблизително"),
                 n("ic073e4e", "Твоето време е безценно."),
                 n("eb866e88", "Прогнозно спестено време за 1 година"),
-                n("ce72f092", "Based on your usage so far."),
+                n("ce72f092", "Въз основа на използването ти досега."),
                 n("c534c6b4", "В момента изчисляваме..."),
                 n("i57332f0", "Продължавай с разглеждането и се върни по-късно, за да видиш количеството избегнати реклами и спестено време"),
                 n("cc10f019", function (e) {
@@ -7258,15 +7258,15 @@
                 n("b93d00e5", function (e) {
                     return e.days + " д" + t(e.days, "ен", "ни");
                 }),
-                n("g2c63852", "100% free. No credit card required."),
+                n("g2c63852", "Напълно безплатно. Не се изисква кредитна карта."),
                 n("be88be23", function (e) {
                     return "Твоята " + e.durationInDays + "-дневна пробна версия без реклами е активирана";
                 }),
-                n("b63766a6", "Scroll without ads"),
-                n("h028f7e0", "Spend more time on the content you love"),
-                n("dd68eef6", "Experience the Premium+ luxury life"),
+                n("b63766a6", "Разглеждай без реклами"),
+                n("h028f7e0", "Прекарай повече време в гледане на съдържание, което харесваш"),
+                n("dd68eef6", "Усети лукса от живота с Premium+"),
                 n("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return "Наслади се на " + e.durationInDays + " дни без реклами";
                 }),
                 n("dec99336", "Без реклами"),
                 n("i95803fa", "За съжаление, към момента не отговаряш на условията."),
@@ -13351,4 +13351,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bg.d5be8f7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bg.b4af48fa.js.map

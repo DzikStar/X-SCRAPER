@@ -7229,8 +7229,8 @@
                 i("hd80bd3e", "Mag-promote ng post"),
                 i("fe2b0008", "Alamin kung paano gamitin ang X"),
                 i("h257d4aa", "Pumili ng ipo-promote na post"),
-                i("e9334fe6", "Data updates every few minutes"),
-                i("a6d7b1d0", "Based on X Internal Data"),
+                i("e9334fe6", "Ina-update ang data kada ilang minuto"),
+                i("a6d7b1d0", "Batay sa Internal Data ng X"),
                 i("h9b28dae", "You’re saving time with an ad-free feed"),
                 i("f6c50ec0", "Natapos na ang walang ads na trial mo"),
                 i("e1d1fbca", "You’ve avoided"),
@@ -13365,4 +13365,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.cedc21ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.1a75c2ca.js.map
