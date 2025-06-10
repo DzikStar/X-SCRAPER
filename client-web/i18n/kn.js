@@ -8,9 +8,13 @@
                     return a.e("i18n/emoji-kn").then(a.t.bind(a, 434291, 23));
                 },
             });
-            function f(e, c, a) {
+            function t(e, c, a) {
                 return "one" == ((n = e) >= 0 && n <= 1 ? "one" : "other") ? c : a;
                 var n;
+            }
+            function f(e, c, a) {
+                return "one" == ((n = e), (t = !String(n).split(".")[1]), 1 == n && t ? "one" : "other") ? c : a;
+                var n, t;
             }
             n("c39b0e24", "X"),
                 n("jb38600c", "ಯಾವುದೂ ಇಲ್ಲ"),
@@ -609,11 +613,11 @@
                 n("h5e38204", "ಚಾಟ್ ಮಾಡಿ"),
                 n("h7d5d9fa", "ಬೀಟಾ"),
                 n("ga169e1b", function (e) {
-                    return "ನೇರ ಸಂದೇಶಗಳು (" + e.count + " ಓದಿಲ್ಲದ ಸಂವಾದ" + f(e.count, "", "ಗಳು") + ")";
+                    return "ನೇರ ಸಂದೇಶಗಳು (" + e.count + " ಓದಿಲ್ಲದ ಸಂವಾದ" + t(e.count, "", "ಗಳು") + ")";
                 }),
                 n("d83682ec", "ಹೋಮ್ (ಹೊಸ ಓದದ ಪೋಸ್ಟ್‌ಗಳು)"),
                 n("e1249849", function (e) {
-                    return "ಸೂಚನೆಗಳು (" + e.count + " ಓದಿಲ್ಲದ ಸೂಚನೆ" + f(e.count, "", "ಗಳು") + ")";
+                    return "ಸೂಚನೆಗಳು (" + e.count + " ಓದಿಲ್ಲದ ಸೂಚನೆ" + t(e.count, "", "ಗಳು") + ")";
                 }),
                 n("c0b786ee", "ಹುಡುಕಿ ಮತ್ತು ಅನ್ವೇಷಿಸಿ"),
                 n("bb967f9e", "ವೀಡಿಯೋಗಳು"),
@@ -626,7 +630,7 @@
                 }),
                 n("j62f43a6", "ಡೆಲಿಗೇಟ್ ಖಾತೆಗಳನ್ನು ನೋಡಿ"),
                 n("d4c52015", function (e) {
-                    return e.count + " ಬಾಕಿರುವ ಡೆಲಿಗೇಟ್‌ ಖಾತೆ ಆಹ್ವಾನ" + f(e.count, "", "ಗಳು");
+                    return e.count + " ಬಾಕಿರುವ ಡೆಲಿಗೇಟ್‌ ಖಾತೆ ಆಹ್ವಾನ" + t(e.count, "", "ಗಳು");
                 }),
                 n("b8e1d524", "ಖಾತೆಗಳು"),
                 n("gef27c4c", "ಖಾತೆ ಮೆನು"),
@@ -649,7 +653,7 @@
                     return e.count + " ಜನರು";
                 }),
                 n("b93ba92d", function (e) {
-                    return e.peopleCount + " " + f(e.peopleCount, "ವ್ಯಕ್ತಿ", "ಜನರು");
+                    return e.peopleCount + " " + t(e.peopleCount, "ವ್ಯಕ್ತಿ", "ಜನರು");
                 }),
                 n("ae2205d2", "ನೀವು ಪರಸ್ಸರ ಹಿಂಬಾಲಿಸುತ್ತೀರಿ"),
                 n("fd06b02f", function (e) {
@@ -1261,7 +1265,7 @@
                 n("e18cb87c", "ಈ ಪೋಸ್ಟ್ ಅನ್ನು ವಿವರಿಸಿ"),
                 n("ffe16626", "ಪ್ರತಿಕ್ರಿಯೆ ಫಿಲ್ಟರ್ ಆನ್ ಆಗಿದೆ."),
                 n("jc81f6a7", function (e) {
-                    return e.count + " ವೀಕ್ಷಣೆ" + f(e.count, "", "ಗಳು");
+                    return e.count + " ವೀಕ್ಷಣೆ" + t(e.count, "", "ಗಳು");
                 }),
                 n("g521abc6", "Grok, ವಿಶ್ಲೇಷಣೆ!"),
                 n("a09331e0", "ಸಂಬಂಧಿತ ಲೇಖನಗಳು"),
@@ -1274,7 +1278,7 @@
                     return "" + e.displayCount;
                 }),
                 n("aa037e65", function (e) {
-                    return "ವೀಕ್ಷಣೆ" + f(e.count, "", "ಗಳು");
+                    return "ವೀಕ್ಷಣೆ" + t(e.count, "", "ಗಳು");
                 }),
                 n("b8f3500a", "ರೀಡರ್‌ನಲ್ಲಿ ಥ್ರೆಡ್ ನೋಡಿ"),
                 n("fc7db594", "ಪ್ರೊಫೈಲ್ ಸಾರಾಂಶ"),
@@ -1309,7 +1313,7 @@
                 n("c74e87e0", "ಈ ಫೈಲ್ ತುಂಬಾ ದೊಡ್ಡದಾಗಿದೆ. ದಯವಿಟ್ಟು ಚಿಕ್ಕ ಫೈಲ್ ಅನ್ನು ಆಯ್ಕೆಮಾಡಿ."),
                 n("bea50a2a", "ಈ ಫೈಲ್ ಫಾರ್ಮ್ಯಾಟ್ ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."),
                 n("j77292b7", function (e) {
-                    return "ದಯವಿಟ್ಟು ಕೇವಲ " + e.count + " ಫೈಲ್" + f(e.count, "", "‌ಗಳು") + " ವರೆಗೆ ಮಾತ್ರ ಆರಿಸಿ";
+                    return "ದಯವಿಟ್ಟು ಕೇವಲ " + e.count + " ಫೈಲ್" + t(e.count, "", "‌ಗಳು") + " ವರೆಗೆ ಮಾತ್ರ ಆರಿಸಿ";
                 }),
                 n("cbc8fed4", "ಈ ಅನುವಾದವು ನಿಖರವಾಗಿದೆಯೇ? ನಮಗೆ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ನೀಡಿ ಇದರಿಂದ ನಾವು ಸುಧಾರಿಸಬಹುದು:"),
                 n("d56779a2", "ಅರ್ಥ ಮಾಡಿಕೊಳ್ಳಲು ಸುಲಭ"),
@@ -1431,25 +1435,25 @@
                     return "" + e.displayCount;
                 }),
                 n("f23d99b0", function (e) {
-                    return "ಬುಕ್‌ಮಾರ್ಕ್" + f(e.count, "", "‌ಗಳು");
+                    return "ಬುಕ್‌ಮಾರ್ಕ್" + t(e.count, "", "‌ಗಳು");
                 }),
                 n("e8866a55", function (e) {
                     return "" + e.displayCount;
                 }),
                 n("eb3abe45", function (e) {
-                    return "ಇಷ್ಟ" + f(e.count, "", "ಗಳು");
+                    return "ಇಷ್ಟ" + t(e.count, "", "ಗಳು");
                 }),
                 n("eff958fb", function (e) {
                     return "" + e.displayCount;
                 }),
                 n("i5a8c515", function (e) {
-                    return "ಉಲ್ಲೇಖ" + f(e.count, "ಿಸಿ", "ಗಳು");
+                    return "ಉಲ್ಲೇಖ" + t(e.count, "ಿಸಿ", "ಗಳು");
                 }),
                 n("dd77f9fb", function (e) {
                     return "" + e.displayCount;
                 }),
                 n("a755b81b", function (e) {
-                    return "ಮರುಪೋಸ್ಟ್" + f(e.count, " ಮಾಡಿ", "‌ಗಳು");
+                    return "ಮರುಪೋಸ್ಟ್" + t(e.count, " ಮಾಡಿ", "‌ಗಳು");
                 }),
                 n("e9f1fbcc", "ಇಲ್ಲಿ ಇನ್ನೂ ನೋಡಲು ಏನೂ ಇಲ್ಲ"),
                 n("a3b80be6", "ಈ ಕುರಿತು ಪೋಸ್ಟ್‌ಗಳನ್ನು ನೋಡಲು ನಂತರ ಮರಳಿ ಪರಿಶೀಲಿಸಿ."),
@@ -1537,7 +1541,7 @@
                     return "" + e.formattedCount;
                 }),
                 n("cface2d1", function (e) {
-                    return "ಸದಸ್ಯ" + f(e.count, "", "ರು");
+                    return "ಸದಸ್ಯ" + t(e.count, "", "ರು");
                 }),
                 n("b5334780", "ಬಾಕಿ ಇದೆ"),
                 n("b171d7c4", "ಸೇರಿಕೊಳ್ಳಿ"),
@@ -1640,10 +1644,10 @@
                 n("cc8f8a80", "ಪಟ್ಟಿಮಾಡಿಲ್ಲ"),
                 n("c33a97d6", "ಸಾರ್ವಜನಿಕ"),
                 n("i73fff1b", function (e) {
-                    return "ತೋರಿಸಿ " + e.count + " ಪೋಸ್ಟ್" + f(e.count, "", "‌ಗಳು");
+                    return "ತೋರಿಸಿ " + e.count + " ಪೋಸ್ಟ್" + t(e.count, "", "‌ಗಳು");
                 }),
                 n("a682906d", function (e) {
-                    return e.count + " ಇಷ್ಟ" + f(e.count, "", "ಗಳು") + " ಬಾಕಿ";
+                    return e.count + " ಇಷ್ಟ" + t(e.count, "", "ಗಳು") + " ಬಾಕಿ";
                 }),
                 n("g566e973", function (e) {
                     return e.jobCount + " ಉದ್ಯೋಗಗಳನ್ನು ತೆರೆಯಿರಿ" + e.tcc_organization_open_job_count;
@@ -1762,7 +1766,7 @@
                 n("g345246c", "ಇದೊಂದು ಪ್ರಕಟಿತ ಲೇಖನವಾಗಿದೆ, X ನಲ್ಲಿ ಬರೆಯಲು ಹೊಸ ವಿಧಾನವಾಗಿದೆ."),
                 n("b14efa0a", "ಲೇಖನದ ಕವರ್ ಚಿತ್ರ"),
                 n("afdccedb", function (e) {
-                    return "ತೋರಿಸಿ " + e.displayCount + " ಪ್ರತಿಕ್ರಿಯೆ" + f(e.count, "", "ಗಳನ್ನು ಇಷ್ಟಪಟ್ಟಿದ್ದಾರೆ");
+                    return "ತೋರಿಸಿ " + e.displayCount + " ಪ್ರತಿಕ್ರಿಯೆ" + t(e.count, "", "ಗಳನ್ನು ಇಷ್ಟಪಟ್ಟಿದ್ದಾರೆ");
                 }),
                 n("bdba3e1a", "ಪೋಸ್ಟ್ ಸೂಚನೆಗಳನ್ನು ಆನ್ ಮಾಡಿ"),
                 n("c4da7d28", "ಪೋಸ್ಟ್ ಸೂಚನೆಗಳನ್ನು ಆಫ್ ಮಾಡಿ"),
@@ -1970,10 +1974,10 @@
                 n("ifea3114", "ಹಂಚು"),
                 n("b384f696", "50-70 ಅಕ್ಷರಗಳ ನಡುವಿನ ಶೀರ್ಷಿಕೆಯನ್ನು ನಾವು ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ"),
                 n("a7da0adb", function (e) {
-                    return e.count + " ಶಬ್ದ" + f(e.count, "", "ಗಳು");
+                    return e.count + " ಶಬ್ದ" + t(e.count, "", "ಗಳು");
                 }),
                 n("aea1d455", function (e) {
-                    return e.count + " ನಿಮಿಷ" + f(e.count, " ಬಾಕಿ ಇದ", "ಗಳು ಬಾಕಿ ಇವ") + "ೆ";
+                    return e.count + " ನಿಮಿಷ" + t(e.count, " ಬಾಕಿ ಇದ", "ಗಳು ಬಾಕಿ ಇವ") + "ೆ";
                 }),
                 n("df898d71", function (e) {
                     return e.readingTimeValue + " ಓದುವ ಸಮಯ";
@@ -2048,18 +2052,18 @@
                 n("e289d950", "ಆ ಪೋಸ್ಟ್ ಅನ್ನು ಹಂಚಿಕೊಳ್ಳಬಹುದಾದ ಮೊದಲು ನೀವು ಲಾಗ್ ಇನ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ."),
                 n("d28215f0", "ಕ್ಷಮಿಸಿ, ಸಮುದಾಯಗಳಲ್ಲಿ ಸಮೀಕ್ಷೆಯನ್ನು ಅನುಮತಿಸಿಲ್ಲ!"),
                 n("ec2fc089", function (e) {
-                    return "ನಿಮ್ಮ ಪೋಸ್ಟ್ " + f(e.numOfTweets, "ಆಗಿತ್ತ", "ಇದ್ದವ") + "ು ಅನ್ನು " + e.communityName + " ಗೆ ಕಳುಹಿಸಲಾಗಿದೆ";
+                    return "ನಿಮ್ಮ ಪೋಸ್ಟ್ " + t(e.numOfTweets, "ಆಗಿತ್ತ", "ಇದ್ದವ") + "ು ಅನ್ನು " + e.communityName + " ಗೆ ಕಳುಹಿಸಲಾಗಿದೆ";
                 }),
                 n("c7152355", function (e) {
-                    return "ನಿಮ್ಮ ಚಿತ್ರ" + f(e.numberOfImages, "ವ", "ಗಳ") + "ನ್ನು  ಸುಲಭ ಲಭ್ಯವಾಗಿಸಲು ಮರೆಯಬೇಡಿ";
+                    return "ನಿಮ್ಮ ಚಿತ್ರ" + t(e.numberOfImages, "ವ", "ಗಳ") + "ನ್ನು  ಸುಲಭ ಲಭ್ಯವಾಗಿಸಲು ಮರೆಯಬೇಡಿ";
                 }),
                 n("ffa5562a", "ಉತ್ತಮ ಚಿತ್ರ ವಿವರಣೆಯು ಸಂಕ್ಷಿಪ್ತವಾಗಿರುತ್ತದೆ, ಆದರೂ ವಿವರವಾಗಿರುತ್ತದೆ. ಸಾರಾಂಶಗೊಳಿಸಲು ಅಥವಾ ಚಿತ್ರದಲ್ಲೇ ಯಾವುದೇ ಪಠ್ಯವನ್ನು ಬರೆಯುವುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ."),
                 n("a2d3facd", function (e) {
-                    return "ನಿಮ್ಮ ವಿವರಣೆ" + f(e.numberOfImages, "ಯು ಮಾಡುತ್ತದ", "ಗಳು ಮಾಡುತ್ತವ") + "ೆ ಅಂಗವೈಕಲ್ಯವನ್ನು ಹೊಂದಿರುವ ಮತ್ತು ಇನ್ನಷ್ಟು ಸಂದರ್ಭವನ್ನು ಬಯಸುವ ಎಲ್ಲರಿಗೂ X ಅನ್ನು ಸುಲಭ ಲಭ್ಯವಾಗಿಸುತ್ತದೆ.";
+                    return "ನಿಮ್ಮ ವಿವರಣೆ" + t(e.numberOfImages, "ಯು ಮಾಡುತ್ತದ", "ಗಳು ಮಾಡುತ್ತವ") + "ೆ ಅಂಗವೈಕಲ್ಯವನ್ನು ಹೊಂದಿರುವ ಮತ್ತು ಇನ್ನಷ್ಟು ಸಂದರ್ಭವನ್ನು ಬಯಸುವ ಎಲ್ಲರಿಗೂ X ಅನ್ನು ಸುಲಭ ಲಭ್ಯವಾಗಿಸುತ್ತದೆ.";
                 }),
                 n("cc6d0a48", "ಅಕ್ಸೆಸಿಬಿಲಿಟಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಈ ಜ್ಞಾಪನೆಯನ್ನು ನೀವು ಆಫ್‌ ಮಾಡಬಹುದು."),
                 n("j499fbcb", function (e) {
-                    return "ಸೇರಿಸಿ ವಿವರಣೆ" + f(e.numberOfImages, "", "ಗಳು");
+                    return "ಸೇರಿಸಿ ವಿವರಣೆ" + t(e.numberOfImages, "", "ಗಳು");
                 }),
                 n("bb8170da", "ಈ ಬಾರಿ ಬೇಡ"),
                 n("h4dd544e", "ನಿಮ್ಮ ಪೋಸ್ಟ್‌ ಕಳುಹಿಸಲ್ಪಟ್ಟಿದೆ."),
@@ -2121,14 +2125,14 @@
                 n("cce30dcc", "ಟ್ಯಾಗ್ ಸ್ಥಳ"),
                 n("ee016dd6", "ದೀರ್ಘ ವೀಡಿಯೋಗಳನ್ನು ಅಪ್‌ಲೋಡ್‌ ಮಾಡಲು ಸ್ವಲ್ಪ ಸಮಯ ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ. ಅಪ್‌ಲೋಡ್‌ ತೊಂದರೆಗಳನ್ನು ದೂರವಿಡಲು ನಿಮ್ಮ ಬ್ರೌಸರ್ ಟ್ಯಾಬ್ ತೆರೆದೇ ಇಡುವುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ."),
                 n("b7d8e3f1", function (e) {
-                    return e.numberOfAltTextEntries + " ಚಿತ್ರ ವಿವರಣೆ" + f(e.numberOfAltTextEntries, "", "ಗಳು");
+                    return e.numberOfAltTextEntries + " ಚಿತ್ರ ವಿವರಣೆ" + t(e.numberOfAltTextEntries, "", "ಗಳು");
                 }),
                 n("d1175c78", "ಜನರನ್ನು ಟ್ಯಾಗ್ ಮಾಡಿ"),
                 n("b2943227", function (e) {
-                    return "ಶೀರ್ಷಿಕೆ ಫೈಲ್" + f(e.numberOfVideos, "", "‌ಗಳು") + " ಅನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ (.srt)";
+                    return "ಶೀರ್ಷಿಕೆ ಫೈಲ್" + t(e.numberOfVideos, "", "‌ಗಳು") + " ಅನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ (.srt)";
                 }),
                 n("d0afbb37", function (e) {
-                    return e.numberOfSubtitles + " ಶೀರ್ಷಿಕೆ ಫೈಲ್" + f(e.numberOfSubtitles, "", "‌ಗಳು");
+                    return e.numberOfSubtitles + " ಶೀರ್ಷಿಕೆ ಫೈಲ್" + t(e.numberOfSubtitles, "", "‌ಗಳು");
                 }),
                 n("e349147c", "ಏನಾಗುತ್ತಿದೆ?"),
                 n("b4481d6c", "ನಿಮ್ಮ ಆಲೋಚನೆಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಿ..."),
@@ -2147,7 +2151,7 @@
                     return "" + e.formattedCount;
                 }),
                 n("a7daec1e", function (e) {
-                    return "" + f(e.count, "ವ್ಯಕ್ತಿ", "ಜನರು");
+                    return "" + t(e.count, "ವ್ಯಕ್ತಿ", "ಜನರು");
                 }),
                 n("f0598964", "ಕಡಿಮೆ ಸಂಖ್ಯೆಯ ಜನರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಲು ಬಯಸಿದ್ದೀರಾ?"),
                 n("e1ae1c0a", "ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಜನರಿಗೆ ಮಾತ್ರ ಪೋಸ್ಟ್‌ಗಳನ್ನು ಕಳುಹಿಸಲು Circle ನಿಮಗೆ ಅನುವು ಮಾಡುತ್ತದೆ."),
@@ -2218,7 +2222,7 @@
                     return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + e.userThreeName;
                 }),
                 n("h758cd23", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + f(e.othersCount, "1", "" + e.othersCount) + " ಇತರರು";
+                    return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + t(e.othersCount, "1", "" + e.othersCount) + " ಇತರರು";
                 }),
                 n("fba61ad6", function (e) {
                     return "" + e.userName;
@@ -2230,7 +2234,7 @@
                     return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + e.userThreeName;
                 }),
                 n("b8168f25", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + f(e.othersCount, "1 ಇತರರು", e.othersCount + " ಇತರೆ");
+                    return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + t(e.othersCount, "1 ಇತರರು", e.othersCount + " ಇತರೆ");
                 }),
                 n("ab67a7ac", function (e) {
                     return "" + e.userName;
@@ -2245,7 +2249,7 @@
                 }),
                 n("dcbb6a0b", "ಸಬ್‌ಸ್ಕ್ರೈಬರ್‌ಗಳಿಗೆ"),
                 n("ba74e38b", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + f(e.othersCount, "1", "" + e.othersCount) + " ಇತರರು";
+                    return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + t(e.othersCount, "1", "" + e.othersCount) + " ಇತರರು";
                 }),
                 n("c65916af", "ಸಬ್‌ಸ್ಕ್ರೈಬರ್‌ಗಳಿಗೆ"),
                 n("g5c5ebb8", function (e) {
@@ -2279,13 +2283,13 @@
                     return e.trustedFriendsTweetOwner + "ಅವರ";
                 }),
                 n("a035ba65", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + f(e.othersCount, "1 ಇತರ", e.othersCount + " ಇತರರು");
+                    return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + t(e.othersCount, "1 ಇತರ", e.othersCount + " ಇತರರು");
                 }),
                 n("e4c52c45", function (e) {
                     return e.trustedFriendsTweetOwner + "ಅವರ ";
                 }),
                 n("baf2c639", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + f(e.othersCount, "1 ಇತರ", e.othersCount + " ಇತರರು");
+                    return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + t(e.othersCount, "1 ಇತರ", e.othersCount + " ಇತರರು");
                 }),
                 n("j8e134e5", function (e) {
                     return e.trustedFriendsTweetOwner + "ಅವರ";
@@ -2318,10 +2322,10 @@
                 n("ceb1ad26", "ಡೌನ್‌ಲೋಡ್ ಮಾಡಬಹುದಾದ ವೀಡಿಯೊಗಳನ್ನು ಪರಿಚಯಿಸಲಾಗುತ್ತಿದೆ"),
                 n("ea97bc08", "ಆಫ್ಲೈನ್ಗೆ ಹೋಗಿ, ಅಥವಾ ರೀಮಿಕ್ಸ್ಗೆ ಹೋಗಿ! ಪ್ರೀಮಿಯಂ ಬಳಕೆದಾರರು ಈಗ ನಿಮ್ಮ ಕಂಟೆಂಟ್ ಅನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡುವ ಮತ್ತು ಮರುರೂಪಿಸುವ ಅಧಿಕಾರವನ್ನು ಹೊಂದಿದ್ದಾರೆ. ನಿಮ್ಮ ವೀಡಿಯೊಗಳನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡಲಾಗುವುದಿಲ್ಲ ಎಂದು ನೀವು ಬಯಸಿದರೆ, ನಿಮ್ಮ ವೀಡಿಯೊದಲ್ಲಿ “ಸಂಪಾದಿಸಿ” ಅನ್ನು ತಟ್ಟಿ. ನಿಮ್ಮ ಕಂಟೆಂಟ್, ನಿಮ್ಮ ನಿಯಮಗಳು."),
                 n("e6042757", function (e) {
-                    return "ಪೋಸ್ಟ್ ಎಡಿಟ್ ಮಾಡಲು " + e.minutes + " ನಿಮಿಷ" + f(e.minutes, " ಬಾಕಿ ಇದ", "ಗಳು ಬಾಕಿ ಇವ") + "ೆ ಮತ್ತು " + e.seconds + " ಸೆಕೆಂಡ" + f(e.seconds, "್ ಬಾಕಿ ಇದ", "ುಗಳು ಬಾಕಿ ಇವ") + "ೆ ಬಾಕಿ ಉಳಿದಿದೆ";
+                    return "ಪೋಸ್ಟ್ ಎಡಿಟ್ ಮಾಡಲು " + e.minutes + " ನಿಮಿಷ" + t(e.minutes, " ಬಾಕಿ ಇದ", "ಗಳು ಬಾಕಿ ಇವ") + "ೆ ಮತ್ತು " + e.seconds + " ಸೆಕೆಂಡ" + t(e.seconds, "್ ಬಾಕಿ ಇದ", "ುಗಳು ಬಾಕಿ ಇವ") + "ೆ ಬಾಕಿ ಉಳಿದಿದೆ";
                 }),
                 n("a4e39717", function (e) {
-                    return "ಪೋಸ್ಟ್ ಎಡಿಟ್ ಮಾಡಲು " + e.minutes + " ನಿಮಿಷ" + f(e.minutes, " ಬಾಕಿ ಇದ", "ಗಳು ಬಾಕಿ ಇವ") + "ೆ ಬಾಕಿ ಉಳಿದಿದೆ";
+                    return "ಪೋಸ್ಟ್ ಎಡಿಟ್ ಮಾಡಲು " + e.minutes + " ನಿಮಿಷ" + t(e.minutes, " ಬಾಕಿ ಇದ", "ಗಳು ಬಾಕಿ ಇವ") + "ೆ ಬಾಕಿ ಉಳಿದಿದೆ";
                 }),
                 n("c55eed72", "ಇವರಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸಲಾಗುತ್ತಿದೆ"),
                 n("caca3102", "ಈ ಸಂವಾದದಲ್ಲಿರುವ ಇತರರು"),
@@ -2354,7 +2358,7 @@
                 n("j74e5dd4", "ನೀವು ಪ್ರತಿಕ್ರಿಯಿಸಲು ಪ್ರಯತ್ನಿಸುತ್ತಿರುವ ಪೋಸ್ಟ್ ಅನ್ನು ಅಳಿಸಲಾಗಿದೆ"),
                 n("c5ceafc8", "ಪ್ರತಿಕ್ರಿಯಿಸಲಾಗುತ್ತಿದೆ"),
                 n("f501ba43", function (e) {
-                    return e.count + " ಹೆಚ್ಚಿನ ಪೋಸ್ಟ್" + f(e.count, "", "‌ಗಳು");
+                    return e.count + " ಹೆಚ್ಚಿನ ಪೋಸ್ಟ್" + t(e.count, "", "‌ಗಳು");
                 }),
                 n("b321d0cc", "ಇಮೇಜ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಿ"),
                 n("abd649ce", "ಕಳುಹಿಸದ ಪೋಸ್ಟ್ ಅನ್ನು ತ್ಯಜಿಸಿ"),
@@ -2540,7 +2544,7 @@
                     return "" + e.displayCoins;
                 }),
                 n("g62dcfbc", function (e) {
-                    return "ಕಾಯಿನ್" + f(e.count, "", "‌ಗಳು");
+                    return "ಕಾಯಿನ್" + t(e.count, "", "‌ಗಳು");
                 }),
                 n("be059f7e", "ಈಗ 100k ರಷ್ಟು ಹೆಚ್ಚಿನ ಬಳಕೆದಾರರನ್ನು ತಲುಪಿ"),
                 n("c34f845e", "ಈ ಪೋಸ್ಟ್ ಅನ್ನು ಬೂಸ್ಟ್ ಮಾಡಲು ಪ್ರಯತ್ನಿಸಿ!"),
@@ -2576,7 +2580,7 @@
                 n("d555d7e0", "ಹೊಸ ಪಾಸ್‌ವರ್ಡ್ ಮತ್ತು ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಪಾಸ್‌ವರ್ಡ್‌ ಒಂದೇ ಆಗಿರಬಾರದು."),
                 n("fa8af9ae", "ಪಾಸ್‌ವರ್ಡ್ ಹೊಂದಾಣಿಕೆಯಾಗುವುದಿಲ್ಲ."),
                 n("a03f5c73", function (e) {
-                    return e.applicationCount + " ಅಪ್ಲಿಕೇಶನ್‌" + f(e.applicationCount, "", "ಗಳು");
+                    return e.applicationCount + " ಅಪ್ಲಿಕೇಶನ್‌" + t(e.applicationCount, "", "ಗಳು");
                 }),
                 n("j25601d9", "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"),
                 n("cb841d56", "ಫೋನ್ ಬದಲಾಯಿಸಿ"),
@@ -2737,10 +2741,10 @@
                     return e.price + " / ವರ್ಷ";
                 }),
                 n("i57aeafb", function (e) {
-                    return "ಮೊದಲ " + f(e.duration, "", e.duration + " ") + "ತಿಂಗಳಿಗೆ, ನಂತರ " + e.standardPrice + " ಮಾಸಿಕವಾಗಿ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ";
+                    return "ಮೊದಲ " + t(e.duration, "", e.duration + " ") + "ತಿಂಗಳಿಗೆ, ನಂತರ " + e.standardPrice + " ಮಾಸಿಕವಾಗಿ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ";
                 }),
                 n("ae3e3723", function (e) {
-                    return "ಮೊದಲ " + f(e.duration, "", e.duration + " ") + "ವರ್ಷಕ್ಕೆ, ನಂತರ " + e.standardPrice + " ವಾರ್ಷಿಕವಾಗಿ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ";
+                    return "ಮೊದಲ " + t(e.duration, "", e.duration + " ") + "ವರ್ಷಕ್ಕೆ, ನಂತರ " + e.standardPrice + " ವಾರ್ಷಿಕವಾಗಿ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ";
                 }),
                 n("ade4c757", function (e) {
                     return "ನಂತರ " + e.price + " / ತಿಂಗಳು";
@@ -2772,10 +2776,10 @@
                 n("fb3c7168", "ನಿಮ್ಮ ಬುಕ್‌ಮಾರ್ಕ್ ಫೋಲ್ಡರ್‌ಗಳು"),
                 n("b346bc12", "ಚೆಕ್‌ಮಾರ್ಕ್"),
                 n("je8143e1", function (e) {
-                    return f(e.duration, "ಒಂದು ತಿಂ", e.duration + " ತಿಂಗಳು") + "ಗಳು ಗಾಗಿ X " + e.productName + " ಮೇಲೆ %" + e.percentage + " ರಿಯಾಯಿತಿ ಪಡೆಯಿರಿ";
+                    return t(e.duration, "ಒಂದು ತಿಂ", e.duration + " ತಿಂಗಳು") + "ಗಳು ಗಾಗಿ X " + e.productName + " ಮೇಲೆ %" + e.percentage + " ರಿಯಾಯಿತಿ ಪಡೆಯಿರಿ";
                 }),
                 n("j5847735", function (e) {
-                    return f(e.duration, "ಒಂದು ವರ್ಷ", e.duration + " ವರ್ಷಗಳು") + " ಗಾಗಿ X " + e.productName + " ಮೇಲೆ %" + e.percentage + " ರಿಯಾಯಿತಿ ಪಡೆಯಿರಿ";
+                    return t(e.duration, "ಒಂದು ವರ್ಷ", e.duration + " ವರ್ಷಗಳು") + " ಗಾಗಿ X " + e.productName + " ಮೇಲೆ %" + e.percentage + " ರಿಯಾಯಿತಿ ಪಡೆಯಿರಿ";
                 }),
                 n("da3431f9", function (e) {
                     return "ನೀವು ಸ್ವಲ್ಪ ಸಮಯದವರೆಗೆ X " + e.productName + " ಅನ್ನು ಇಟ್ಟುಕೊಳ್ಳಲು ಬಯಸಿದರೆ ಈ ರಿಯಾಯಿತಿ ನಮ್ಮಿಂದ ಒಂದು ಸಣ್ಣ ಉಡುಗೊರೆಯಾಗಿದೆ!";
@@ -3037,15 +3041,15 @@
                 n("b956c04a", "ನಿಮ್ಮ ವಿಸ್ತರಿತ ಬಯೋವನ್ನು ಅಳಿಸಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?"),
                 n("ifb23caa", "ನಿಮ್ಮ ವಿಸ್ತರಿತ ಬಯೋವನ್ನು ಅಳಿಸುವುದರಿಂದ ಅದನ್ನು ನಿಮ್ಮ ಪ್ರೊಫೈಲ್‌ನಿಂದ ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ."),
                 n("c2333081", function (e) {
-                    return e.count + " ಅಕ್ಷರ" + f(e.count, "", "ಗಳು");
+                    return e.count + " ಅಕ್ಷರ" + t(e.count, "", "ಗಳು");
                 }),
                 n("a2b8c54c", "ಅಳಿಸಲಾಗಿದೆ"),
                 n("a9cc8f96", "ಗರಿಷ್ಠ ಅಕ್ಷರಗಳನ್ನು ಮೀರಿದೆ"),
                 n("eb7710f1", function (e) {
-                    return e.years + " ವರ್ಷ" + f(e.years, "", "ಗಳು");
+                    return e.years + " ವರ್ಷ" + t(e.years, "", "ಗಳು");
                 }),
                 n("bfc38bb5", function (e) {
-                    return e.months + " ತಿಂಗಳು" + f(e.months, "", "ಗಳು");
+                    return e.months + " ತಿಂಗಳು" + t(e.months, "", "ಗಳು");
                 }),
                 n("h6a724ac", "ಇದನ್ನು ಅಳಿಸಲು ನೀವು ನಿಜವಾಗಿಯೂ ಬಯಸುವಿರಾ?"),
                 n("f94aacae", "ಅಳಿಸುವುದರಿಂದ ಅದನ್ನು ನಿಮ್ಮ ಪ್ರೊಫೈಲ್‌ನಿಂದ ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ."),
@@ -3177,7 +3181,7 @@
                 n("c349b958", "ಸದಸ್ಯರನ್ನು ಆಹ್ವಾನಿಸಿ"),
                 n("e177f72a", "ನಿಮ್ಮ ಖಾತೆ ಪರವಾಗಿ ವರ್ತಿಸಲು ಮತ್ತು ಖಾತೆ ಪಾತ್ರಗಳನ್ನು ನಿರ್ವಹಿಸಲು ಇತರರನ್ನು ಆಹ್ವಾನಿಸಿ. ಸದಸ್ಯರು ನೇರ ಸಂದೇಶಗಳನ್ನು ಕಳುಹಿಸಬಹುದು, ಪೋಸ್ಟ್‌ಗಳನ್ನು ಪ್ರಕಟಿಸಬಹುದು ಮತ್ತು ಪಟ್ಟಿಗಳನ್ನು ರಚಿಸಬಹುದು ಹಾಗೂ ಅವುಗಳನ್ನು ನೋಡಬಹುದು."),
                 n("cd5c5e73", function (e) {
-                    return "ನೀವು " + e.numDelegatesLabel + " ಡೆಲಿಗೇ" + f(e.numDelegates, "ಟ್", "ಶನ್‌ಗಳು") + " ಅನ್ನು ಮಾತ್ರ ಹೊಂದಿರಬಹುದು";
+                    return "ನೀವು " + e.numDelegatesLabel + " ಡೆಲಿಗೇ" + t(e.numDelegates, "ಟ್", "ಶನ್‌ಗಳು") + " ಅನ್ನು ಮಾತ್ರ ಹೊಂದಿರಬಹುದು";
                 }),
                 n("efee0a50", "ಈ ಖಾತೆಗೆ ಸದಸ್ಯರನ್ನು ಆಹ್ವಾನಿಸಿ"),
                 n("ja0a1aa6", "ಈ ಖಾತೆಗೆ ಕಾಂಟ್ರಿಬ್ಯೂಟರ್ ಆಹ್ವಾನಿಸಿ"),
@@ -3384,7 +3388,7 @@
                 n("ee9ea930", "ವಜ್ರಗಳು"),
                 n("cf3b535e", "ಅರ್ಹ ಪೋಸ್ಟ್‌ಗಳಲ್ಲಿ  ಕಾಯಿನ್‌ಗಳನ್ನು ಪಡೆಯುವ ಮೂಲಕ ವಜ್ರಗಳನ್ನು ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ. ವಜ್ರಗಳಿಂದ ಗಳಿಸಿದ ಹಣವು ನಿಮ್ಮ ಅಂದಾಜಿಸಲಾದ ಗಳಿಕೆಗಳಿಗೆ ಸ್ವತಃ ಬಂದು ಸೇರಿಕೊಳ್ಳುತ್ತದೆ."),
                 n("fbb7764b", function (e) {
-                    return e.count + " ಕಾಯಿನ್" + f(e.count, "", "‌ಗಳು");
+                    return e.count + " ಕಾಯಿನ್" + t(e.count, "", "‌ಗಳು");
                 }),
                 n("e70a07b2", "ಅನಾಮಧೇಯ"),
                 n("c76972f0", "ಕಳೆದ ಪೇಔಟ್‌ನಿಂದ"),
@@ -3723,19 +3727,19 @@
                 n("ea522535", "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"),
                 n("hf5ca8f8", "ಪ್ರೊಫೈಲ್‌ಗೆ"),
                 n("d9cbe351", function (e) {
-                    return e.count + " ಲಾಗಿನ್ಈವೆಂಟ್" + f(e.count, "", "‌ಗಳು");
+                    return e.count + " ಲಾಗಿನ್ಈವೆಂಟ್" + t(e.count, "", "‌ಗಳು");
                 }),
                 n("de90b04a", "ನೀವು ಭೇಟಿ ನೀಡಿರುವ ಸ್ಥಳಗಳು"),
                 n("cbd2ef59", function (e) {
-                    return e.count + " ಸ್ಥಳ" + f(e.count, "", "ಗಳು");
+                    return e.count + " ಸ್ಥಳ" + t(e.count, "", "ಗಳು");
                 }),
                 n("a4441bb8", "X ನಿಂದ ಆಸಕ್ತಿಗಳು"),
                 n("e1c6b2d6", "ವಿಶೇಷವಾಗಿ ರೂಪಿಸಲಾದ ಪ್ರೇಕ್ಷಕರು"),
                 n("ed19d10d", function (e) {
-                    return e.audienceCount + " ಪ್ರೇಕ್ಷಕ" + f(e.audienceCount, "", "ರು") + " ರಿಂದ" + e.advertiserCount + " ಜಾಹೀರಾತುದಾರ" + f(e.advertiserCount, "", "ರು");
+                    return e.audienceCount + " ಪ್ರೇಕ್ಷಕ" + t(e.audienceCount, "", "ರು") + " ರಿಂದ" + e.advertiserCount + " ಜಾಹೀರಾತುದಾರ" + t(e.advertiserCount, "", "ರು");
                 }),
                 n("f00d0d03", function (e) {
-                    return e.count + " ಆಸಕ್ತಿ" + f(e.count, "", "ಗಳು");
+                    return e.count + " ಆಸಕ್ತಿ" + t(e.count, "", "ಗಳು");
                 }),
                 n("hf9c2caa", "ಜಾಹೀರಾತುದಾರ ಪಟ್ಟಿಗೆ ವಿನಂತಿಸುವುದೇ?"),
                 n("c29b7971", function (e) {
@@ -3758,11 +3762,11 @@
                 n("jd8607ba", "ಸಕ್ರಿಯಗೊಳಿಸಿದ ದಿನಾಂಕ"),
                 n("ea4f6c9e", "ಬ್ರೌಸರ್‌ಗಳು"),
                 n("d750b93f", function (e) {
-                    return e.count + " ಬ್ರೌಸರ್" + f(e.count, "", "‌ಗಳು");
+                    return e.count + " ಬ್ರೌಸರ್" + t(e.count, "", "‌ಗಳು");
                 }),
                 n("a9783602", "ಮೊಬೈಲ್ ಸಾಧನಗಳು"),
                 n("j043aa31", function (e) {
-                    return e.count + " ಮೊಬೈಲ್ ಸಾಧನ" + f(e.count, "", "ಗಳು");
+                    return e.count + " ಮೊಬೈಲ್ ಸಾಧನ" + t(e.count, "", "ಗಳು");
                 }),
                 n("ae415fd2", "ಈ ಸೆಟ್ಟಿಂಗ್‌ ಆಫ್‌ ಆಗಿದೆ."),
                 n("a90be7b4", "ಇಮೇಲ್ ವಿಳಾಸಗಳು"),
@@ -3835,7 +3839,7 @@
                 n("e5d26f84", "ಸೂಚನೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುವ ಮೂಲಕ ಏನು ನಡೆಯುತ್ತಿದೆ ಎಂಬುದನ್ನು ಎಂದೂ ತಪ್ಪಿಸಿಕೊಳ್ಳಬೇಡಿ. ನಿಮ್ಮ ಸೂಚನೆಗಳನ್ನು ವೈಯಕ್ತಿಕಗೊಳಿಸಲು ನಿಮ್ಮ ಸಾಧನದ ದೇಶ ಮತ್ತು ಭಾಷೆಯನ್ನು X ಪಡೆಯುತ್ತದೆ."),
                 n("f91f00ba", "ಕ್ಲಿಪ್‌ ರಚಿಸಿ"),
                 n("f9b2d343", function (e) {
-                    return e.count + " ಪೋಸ್ಟ್" + f(e.count, "", "‌ಗಳು");
+                    return e.count + " ಪೋಸ್ಟ್" + t(e.count, "", "‌ಗಳು");
                 }),
                 n("jcc8306e", "ಮಾತನಾಡಲು ವಿನಂತಿ"),
                 n("j41fd45a", "ವಿನಂತಿಯನ್ನು ಕಳುಹಿಸಲಾಗಿದೆ"),
@@ -3908,22 +3912,22 @@
                     return "ಅಮಂತ್ರಿಸಿ " + e.name;
                 }),
                 n("f5c7aaa7", function (e) {
-                    return "ಹೋಸ್ಟ್" + f(e.count, "", "‌ಗಳು");
+                    return "ಹೋಸ್ಟ್" + t(e.count, "", "‌ಗಳು");
                 }),
                 n("fc56c8b1", function (e) {
-                    return "ಕೋ-ಹೋಸ್ಟ್" + f(e.count, "", "‌ಗಳು");
+                    return "ಕೋ-ಹೋಸ್ಟ್" + t(e.count, "", "‌ಗಳು");
                 }),
                 n("iba0f45d", function (e) {
                     return "ಮಾತನಾಡುವವರು";
                 }),
                 n("dc066955", function (e) {
-                    return "ಶ್ರೋತೃ" + f(e.count, "", "ಗಳು");
+                    return "ಶ್ರೋತೃ" + t(e.count, "", "ಗಳು");
                 }),
                 n("b53ed9ab", function (e) {
-                    return e.participantCount + " " + e.title + " · " + e.remainingCapacityCount + " ಸ್ಪಾಟ್" + f(e.remainingCapacityCount, "", "‌ಗಳು") + " ತೆರೆಯಿರಿ";
+                    return e.participantCount + " " + e.title + " · " + e.remainingCapacityCount + " ಸ್ಪಾಟ್" + t(e.remainingCapacityCount, "", "‌ಗಳು") + " ತೆರೆಯಿರಿ";
                 }),
                 n("c3b5b829", function (e) {
-                    return e.count + " ವಿನಂತಿ" + f(e.count, "", "ಗಳು");
+                    return e.count + " ವಿನಂತಿ" + t(e.count, "", "ಗಳು");
                 }),
                 n("fe7a1910", "ಆಹ್ವಾನಗಳನ್ನು ಕಳುಹಿಸಿ"),
                 n("ic3c757e", "ಬಳಕೆದಾರರಿಗಾಗಿ ಹುಡುಕಿ"),
@@ -3977,7 +3981,7 @@
                 n("c4fdbd16", "ನೀವು ತಡೆಗಟ್ಟಿರುವ ಬಳಕೆದಾರರಿಗೆ ಸಂದೇಶಗಳನ್ನು ಕಳುಹಿಸಲು ನಿಮಗೆ ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ."),
                 n("hf3e7e38", "ನಿಮ್ಮ ಸಂದೇಶವನ್ನು ಕಳುಹಿಸಲಾಗಲಿಲ್ಲ."),
                 n("dd8272fd", function (e) {
-                    return e.count + " ಹೊಸತು ಸಂದೇಶ" + f(e.count, "", "ಗಳು");
+                    return e.count + " ಹೊಸತು ಸಂದೇಶ" + t(e.count, "", "ಗಳು");
                 }),
                 n("e2cd3b7c", "ಆಡಿಯೋ ಕರೆ ಮುಕ್ತಾಯಗೊಂಡಿದೆ"),
                 n("f42f365a", "ವೀಡಿಯೊ ಕರೆ ಮುಕ್ತಾಯಗೊಂಡಿದೆ"),
@@ -4032,7 +4036,7 @@
                     return "ನಿನ್ನೆ, " + e.time;
                 }),
                 n("h95f9e77", function (e) {
-                    return e.reactionCount + " ಪ್ರತಿಕ್ರಿಯೆ" + f(e.reactionCount, "", "ಗಳು");
+                    return e.reactionCount + " ಪ್ರತಿಕ್ರಿಯೆ" + t(e.reactionCount, "", "ಗಳು");
                 }),
                 n("c0098d4a", "ಪ್ರತಿಕ್ರಿಯೆಗಳು"),
                 n("j85999ec", "ಬಳಕೆದಾರ ಪ್ರತಿಕ್ರಿಯೆಗಳ ಪಟ್ಟಿ"),
@@ -4043,13 +4047,13 @@
                 n("e8bd8fec", "ಕಳುಹಿಸಲಾಗಿದೆ"),
                 n("b2d32fae", "ಪ್ರತಿಯೊಬ್ಬರೂ ನೋಡಿದ್ದಾರೆ"),
                 n("a763d33f", function (e) {
-                    return e.count + " " + f(e.count, "ವ್ಯಕ್ತಿ", "ಜನರು") + " ಅವರು ನೋಡಿದ್ದಾರೆ";
+                    return e.count + " " + t(e.count, "ವ್ಯಕ್ತಿ", "ಜನರು") + " ಅವರು ನೋಡಿದ್ದಾರೆ";
                 }),
                 n("d84b485e", "ನೀವು ಈ ಖಾತೆಯನ್ನು ಹಿಂಬಾಲಿಸಿದ್ದೀರಿ"),
                 n("be0c83d8", "ನೀವು ವಿನಂತಿಯನ್ನು ಒಪ್ಪಿರುವಿರಿ"),
                 n("bcc13060", "ಆರಂಭಿಕ ಪ್ರವೇಶಾವಕಾಶ"),
                 n("e535cae9", function (e) {
-                    return e.count + " ಹಿಂಬಾಲಕ" + f(e.count, "", "ರು");
+                    return e.count + " ಹಿಂಬಾಲಕ" + t(e.count, "", "ರು");
                 }),
                 n("cf249089", function (e) {
                     return "ಸೇರಿದ ದಿನಾಂಕ " + e.joinDate;
@@ -4116,7 +4120,7 @@
                 n("hd3927c6", "ಅನ್‌ಪಿನ್ ಮಾಡಲು ಸಂವಾದವು ವಿಫಲವಾಗಿದೆ. ಪುನಃ ಪ್ರಯತ್ನಿಸಿ."),
                 n("f1ac0968", "ಅನ್‌ಪಿನ್‌ ಮಾಡಲು ಸಂವಾದ ವಿಫಲವಾಗಿದೆ. ನಿಮ್ಮ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಪುನಃ ಪ್ರಯತ್ನಿಸಿ."),
                 n("d571e4f9", function (e) {
-                    return "ನೀವು ಕೇವಲ " + e.count + " ಸಂವಾದ" + f(e.count, "", "ಗಳನ್ನು") + " ಪಿನ್ ಮಾಡಬಹುದು";
+                    return "ನೀವು ಕೇವಲ " + e.count + " ಸಂವಾದ" + t(e.count, "", "ಗಳನ್ನು") + " ಪಿನ್ ಮಾಡಬಹುದು";
                 }),
                 n("a551bf7e", "ನೀವು ಇನ್ನೊಂದು ಸಂವಾದವನ್ನು ಪಿನ್ ಮಾಡಲು ಅನ್‌ಪಿನ್‌ ಮಾಡಬೇಕಾಗುತ್ತದೆ."),
                 n("a676a876", "ನಿಮ್ಮ ಇನ್‌ಬಾಕ್ಸ್‌ಗೆ ಸ್ವಾಗತ!"),
@@ -4137,16 +4141,16 @@
                 n("bece84b4", "ನಿಮ್ಮ ಸಂದೇಶ ವಿನಂತಿಗಳು ಖಾಲಿ ಇವೆ"),
                 n("e51be7c1", "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"),
                 n("f041be05", function (e) {
-                    return e.stringCount + " pending request" + f(e.count, "", "s");
+                    return e.stringCount + " pending request" + t(e.count, "", "s");
                 }),
                 n("a2fad0f3", function (e) {
-                    return e.stringCount + " new pe" + f(e.count, "rson", "ople") + " you may know";
+                    return e.stringCount + " new pe" + t(e.count, "rson", "ople") + " you may know";
                 }),
                 n("cbddf365", function (e) {
-                    return e.stringCount + " pe" + f(e.count, "rson", "ople") + " you may know";
+                    return e.stringCount + " pe" + t(e.count, "rson", "ople") + " you may know";
                 }),
                 n("fac945ad", function (e) {
-                    return e.stringCount + " new request" + f(e.count, "", "s");
+                    return e.stringCount + " new request" + t(e.count, "", "s");
                 }),
                 n("ed93de0c", "ಪೋಸ್ಟ್ ಅನ್ನು ವಿಶ್ಲೇಷಿಸಲಾಗುತ್ತಿದೆ"),
                 n("d1d92e40", "ಹೆಚ್ಚಿನ ವಿವರಗಳು"),
@@ -4355,7 +4359,7 @@
                 n("ef018bf6", "Premium ನೊಂದಿಗೆ ಹೆಚ್ಚಿನ ಚಿತ್ರಗಳನ್ನು ವಿಶ್ಲೇಷಿಸಿ"),
                 n("cdace6d2", "ಈಗಲೇ ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಿ"),
                 n("a3186bff", function (e) {
-                    return e.count + " ವೆಬ್ ಪುಟ" + f(e.count, "", "ಗಳು");
+                    return e.count + " ವೆಬ್ ಪುಟ" + t(e.count, "", "ಗಳು");
                 }),
                 n("f4146dda", "ನೀವು ಯಾವ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಬಯಸುತ್ತೀರಿ?"),
                 n("a2c2be32", "ಇದು Grok ಅನ್ನು ಉತ್ತಮಗೊಳಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ."),
@@ -5167,7 +5171,7 @@
                 n("cef977e4", "ನಿಮ್ಮ ಡೇಟಾವನ್ನು ರಫ್ತು ಮಾಡಿ"),
                 n("f88e624e", "ಸಂವಾದ ನವೀಕರಿಸಲಾಗಿದೆ"),
                 n("e15e5637", function (e) {
-                    return "ಕಳೆದ " + f(e.count, "ಗಂಟೆ", e.count + " ಗಂಟೆಗಳು");
+                    return "ಕಳೆದ " + t(e.count, "ಗಂಟೆ", e.count + " ಗಂಟೆಗಳು");
                 }),
                 n("h5ab8b0e", "ಅವರು ಹಿಂಬಾಲಿಸುವ ಜನರು"),
                 n("a0f01bca", "ಟೈಮ್‌ ಫ್ರೇಮ್ ಬದಲಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ"),
@@ -5224,7 +5228,7 @@
                 n("a26da034", "ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಿರಿ"),
                 n("b3633046", "ಸಮುದಾಯ ಆಯ್ಕೆ ಮಾಡಿ"),
                 n("ce447fcb", function (e) {
-                    return e.count + " ಶ್ರೋತೃ" + f(e.count, "", "ಗಳು");
+                    return e.count + " ಶ್ರೋತೃ" + t(e.count, "", "ಗಳು");
                 }),
                 n("ef7da97f", function (e) {
                     return e.count + " ಜನರು ಕೇಳುತ್ತಿದ್ದಾರೆ";
@@ -5249,7 +5253,7 @@
                 }),
                 n("e4e811fc", "ಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ…"),
                 n("aadbc747", function (e) {
-                    return "ಕೋ-ಹೋಸ್ಟ್‌" + f(e.hostCount, "", "ಗಳು");
+                    return "ಕೋ-ಹೋಸ್ಟ್‌" + t(e.hostCount, "", "ಗಳು");
                 }),
                 n("hbd6035f", function (e) {
                     return "ಮಾತನಾಡುವವರು";
@@ -5437,6 +5441,8 @@
                 n("i8cae552", "ರೇಟಿಂಗ್ ನೀಡುವ ಮೂಲಕ ನೀವು ಕಮ್ಯೂನಿಟಿ ನೋಟ್ಸ್‌ನಲ್ಲಿನ ಗುಣಮಟ್ಟವನ್ನು ಉತ್ತಮವಾಗಿ ಕಾಯ್ದುಕೊಳ್ಳಲು ಸಹಾಯ ಮಾಡುತ್ತೀರಿ."),
                 n("hd43a218", "ನೋಟ್ಸ್ ಬರೆಯುವ ನಿಮ್ಮ ದೈನಂದಿನ ಮಿತಿಯನ್ನು ನೀವು ತಲುಪಿದ್ದೀರಿ"),
                 n("aaba8ed2", "ನೋಟ್ ಗುಣಮಟ್ಟವನ್ನು ಹೆಚ್ಚು ಇರಿಸಿಕೊಳ್ಳಲು ಮತ್ತು ಸ್ಪ್ಯಾಮ್ ಅನ್ನು ತಡೆಯಲು, ಕೊಡುಗೆದಾರರು ತಮ್ಮ ಬರವಣಿಗೆಯ ಪ್ರಭಾವದ ಆಧಾರದ ಮೇಲೆ ಪ್ರತಿ ದಿನ ಬರೆಯಬಹುದಾದ ನೋಟ್ಸ್ ಸಂಖ್ಯೆಗೆ ಮಿತಿಯಿದೆ. ದಯವಿಟ್ಟು ನಂತರ ಪುನಃ ಪ್ರಯತ್ನಿಸಿ."),
+                n("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
+                n("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
                 n("b98f077c", "ಟಿಪ್ಪಣಿ ಮಾಹಿತಿಯನ್ನು ವಿನಂತಿಸಿ"),
                 n("ee691104", "ಈ ಪೋಸ್ಟ್ ಕುರಿತು ಸಮುದಾಯ ಟಿಪ್ಪಣಿಯನ್ನು ವಿನಂತಿಸಿ"),
                 n("f8cbdf02", "ಈ ಪೋಸ್ಟ್ ಸಂಭಾವ್ಯವಾಗಿ ದಾರಿತಪ್ಪಿಸುವಂತಿದೆ ಎಂದು ಭಾವಿಸುತ್ತೀರಾ? ಕಮ್ಯೂನಿಟಿ ನೋಟ್ ಅನ್ನು ವಿನಂತಿಸಿ. "),
@@ -5729,7 +5735,7 @@
                 n("a796c19c", "ಪುನಃ ಸೇರಿಕೊಳ್ಳಿ"),
                 n("h837a96c", "ನೀವು ಕಮ್ಯೂನಿಟಿ ನೋಟ್ಸ್ ಪ್ರೋಗ್ರಾಂಗೆ ಪುನಃ ಸೇರಿಕೊಳ್ಳುತ್ತೀರಿ."),
                 n("a4d4bcb9", function (e) {
-                    return "ನೀವು ಪುನಃ ಸೇರಲು ಬಯಸಿದರೆ, ಇಲ್ಲಿ " + e.numDaysToRejoin + " ದಿನ" + f(e.numDaysToRejoin, "", "ಗಳು") + "ರಲ್ಲಿ ನೀವು ಹಾಗೆ ಮಾಡಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ.";
+                    return "ನೀವು ಪುನಃ ಸೇರಲು ಬಯಸಿದರೆ, ಇಲ್ಲಿ " + e.numDaysToRejoin + " ದಿನ" + t(e.numDaysToRejoin, "", "ಗಳು") + "ರಲ್ಲಿ ನೀವು ಹಾಗೆ ಮಾಡಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ.";
                 }),
                 n("a490bc51", "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"),
                 n("c94ad3e8", "ನಮಗೆ ಪ್ರತಿಕ್ರಿಯೆ ಕಳುಹಿಸಿ"),
@@ -5879,10 +5885,10 @@
                 n("beba2a0e", "ಹೊಸ ಬುಕ್‌ಮಾರ್ಕ್‌ ಫೋಲ್ಡರ್ ರಚಿಸಿ"),
                 n("e41c9b4f", function (e) {
                     return e.bookmarkFolderName + " ಗೆ ಉಳಿಸಲಾಗಿದೆ";
-                }),
-                n("h18f86a4", "ಫೋಲ್ಡರ್ ಅಳಿಸಿ"),
-                n("f4ea967a", "ಫೋಲ್ಡರ್‌ ಅಳಿಸಲಾಗಿದೆ");
-            n("b670aa62", "ಫೋಲ್ಡರ್ ಹೆಸರು"),
+                });
+            n("h18f86a4", "ಫೋಲ್ಡರ್ ಅಳಿಸಿ"),
+                n("f4ea967a", "ಫೋಲ್ಡರ್‌ ಅಳಿಸಲಾಗಿದೆ"),
+                n("b670aa62", "ಫೋಲ್ಡರ್ ಹೆಸರು"),
                 n("aece5462", "ಫೋಲ್ಡರ್ ಹೆಸರನ್ನು ಯಶಸ್ವಿಯಾಗಿ ನವೀಕರಿಸಲ್ಪಟ್ಟಿದೆ"),
                 n("e3299b94", "ಏನೋ ತಪ್ಪಾಗಿದೆ. ಒಂದು ನಿಮಿಷದ ನಂತರ ಆ ಫೋಲ್ಡರ್ ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ಪ್ರಯತ್ನಿಸಿ."),
                 n("c09ea714", "ಏನೋ ತಪ್ಪಾಗಿದೆ. ಒಂದು ನಿಮಿಷದ ನಂತರ ಆ ಫೋಲ್ಡರ್ ಅಳಿಸಲು ಪ್ರಯತ್ನಿಸಿ."),
@@ -5933,13 +5939,13 @@
                 n("cb6adb10", "ಸಮುದಾಯಗಳನ್ನು ಶೋಧಿಸಿ"),
                 n("df362964", "ಸಮುದಾಯಗಳನ್ನು ಕಂಡುಕೊಳ್ಳಿ"),
                 n("dfd5031f", function (e) {
-                    return e.newTweets + " ಹೊಸತು ಪೋಸ್ಟ್" + f(e.newTweets, "", "‌ಗಳು");
+                    return e.newTweets + " ಹೊಸತು ಪೋಸ್ಟ್" + t(e.newTweets, "", "‌ಗಳು");
                 }),
                 n("ha4bb8a9", function (e) {
-                    return e.reportedTweets + " ವರದಿ" + f(e.reportedTweets, "", "ಗಳು");
+                    return e.reportedTweets + " ವರದಿ" + t(e.reportedTweets, "", "ಗಳು");
                 }),
                 n("caf003b3", function (e) {
-                    return e.memberRequests + " ವಿನಂತಿ" + f(e.memberRequests, "", "ಗಳು");
+                    return e.memberRequests + " ವಿನಂತಿ" + t(e.memberRequests, "", "ಗಳು");
                 }),
                 n("a2118086", "ಪೋಸ್ಟ್‌ಗಳನ್ನು ವಿಂಗಡಿಸಿ"),
                 n("hb01fe46", "ನೀವು ಸೇರಿದಾಗ, ಅವುಗಳನ್ನು ನೀವು ಇಲ್ಲಿ ಕಾಣುತ್ತೀರಿ."),
@@ -6013,10 +6019,10 @@
                 n("ee609174", "ಸಾಮಾನ್ಯ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"),
                 n("ab19cdaa", "ಸ್ಪ್ಯಾಮ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"),
                 n("d755f47d", function (e) {
-                    return e.count + " ಹೊಸತು ಪೋಸ್ಟ್" + f(e.count, "", "‌ಗಳು") + " ಪರಿಶೀಲನೆಗಿದೆ";
+                    return e.count + " ಹೊಸತು ಪೋಸ್ಟ್" + t(e.count, "", "‌ಗಳು") + " ಪರಿಶೀಲನೆಗಿದೆ";
                 }),
                 n("efc26607", function (e) {
-                    return e.memberCount + " ಸದಸ್ಯ" + f(e.memberCount, "", "ರು");
+                    return e.memberCount + " ಸದಸ್ಯ" + t(e.memberCount, "", "ರು");
                 }),
                 n("adfcc3ce", "ನಿಯಮಗಳನ್ನು ಸೇರಿಸಿ, ಅಳಿಸಿ ಅಥವಾ ಸಂಪಾದಿಸಿ"),
                 n("d0330d9c", "ನಿಯಮಗಳನ್ನು ನೋಡಿ"),
@@ -6039,7 +6045,7 @@
                 n("e538848c", "ಮಾಡರೇಶನ್‌ ಪರಿಕರಗಳಿಗೆ ನೀವು ಇನ್ನು ಪ್ರವೇಶ ಹೊಂದಿಲ್ಲ. ನೀವು ನಿಮ್ಮ ಮನಸನ್ನು ಬದಲಿಸಿದರೆ, ನಿಮ್ಮನ್ನು ಪುನಃ ಮಾಡರೇಟರ್ ಎಂಬುದಾಗಿ ಆಹ್ವಾನಿಸಬೇಕಾಗುತ್ತದೆ."),
                 n("j49e6aa2", "ಹೌದು, ನಾನು ತೊರೆಯಲು ಬಯಸಿದ್ದೇನೆ"),
                 n("dde5f323", function (e) {
-                    return e.count + " ಹೊಸತು ಸದಸ್ಯ ವಿನಂತಿ" + f(e.count, "", "ಗಳು") + " ಪರಿಶೀಲನೆಗಿದೆ";
+                    return e.count + " ಹೊಸತು ಸದಸ್ಯ ವಿನಂತಿ" + t(e.count, "", "ಗಳು") + " ಪರಿಶೀಲನೆಗಿದೆ";
                 }),
                 n("f5e0332a", "ವಯಸ್ಕರ ಕಂಟೆಂಟ್ (NSFW)"),
                 n("e983404a", "ಪಿನ್ ಮಾಡಲಾದ ಹ್ಯಾಶ್ ಟ್ಯಾಗ್‌ಗಳು"),
@@ -6161,7 +6167,7 @@
                     return "@" + e.screen_name + " ಅವರನ್ನು ಈಗ ಆಹ್ವಾನಿಸಲಾಗದು";
                 }),
                 n("i6568549", function (e) {
-                    return "ನೀವು " + e.remaining_invite_count + " ಆಹ್ವಾನ" + f(e.remaining_invite_count, "", "ಗಳನ್ನು") + " ಬಾಕಿ ಹೊಂದಿದ್ದೀರಿ";
+                    return "ನೀವು " + e.remaining_invite_count + " ಆಹ್ವಾನ" + t(e.remaining_invite_count, "", "ಗಳನ್ನು") + " ಬಾಕಿ ಹೊಂದಿದ್ದೀರಿ";
                 }),
                 n("b4f16d00", "ಆಹ್ವಾನಿಸಲು ಜನರನ್ನು ಹುಡುಕಿ"),
                 n("ja1387a8", "ನಿಮ್ಮ ಹಿಂಬಾಲಕರು ಮತ್ತು ಎಲ್ಲರಿಂದಲೂ ನೇರ ಸಂದೇಶಗಳನ್ನು ಅನುಮತಿಸುವರನ್ನು ಮಾತ್ರ ಶೋಧ ಫಲಿತಾಂಶಗಳು ಒಳಗೊಂಡಿರುತ್ತವೆ."),
@@ -6291,11 +6297,11 @@
                 n("dc7a9436", "ಪೋಸ್ಟ್ ಅನ್ನು Xಗೆ ರಿಪೋರ್ಟ್ ಮಾಡಿ"),
                 n("e2bc5db0", "@X"),
                 n("d0a1b248", function (e) {
-                    return e.formattedCount + " ಸದಸ್ಯ" + f(e.count, "", "ರು");
+                    return e.formattedCount + " ಸದಸ್ಯ" + t(e.count, "", "ರು");
                 }),
                 n("cd4d48d2", " @X"),
                 n("ff0f742a", function (e) {
-                    return e.formattedCount + " ಸದಸ್ಯ" + f(e.count, "", "ರು");
+                    return e.formattedCount + " ಸದಸ್ಯ" + t(e.count, "", "ರು");
                 }),
                 n("dca19c06", "ನೀವು  ಈ ಪೋಸ್ಟ್ ಅನ್ನು ಮರೆಮಾಡಿದ್ದೀರಿ"),
                 n("dd641764", "ನೀವು ಈ ಪೋಸ್ಟ್ ಅನ್ನು ಇಟ್ಟುಕೊಂಡಿದ್ದೀರಿ"),
@@ -6883,10 +6889,10 @@
                 n("hf352d42", "ಅಭ್ಯರ್ಥಿಗಳಿಗೆ ಗೋಚರಿಸುವ ಐಚ್ಛಿಕ ವೇತನ ಶ್ರೇಣಿಯನ್ನು ಸೇರಿಸಿ. ನೀವು ಆಯ್ಕೆ ಮಾಡಿಕೊಳ್ಳದಿದ್ದರೆ, ನೀವು ನೇಮಕ ಮಾಡಿಕೊಳ್ಳುತ್ತಿರುವ ಸ್ಥಳದಲ್ಲಿ ಯಾವುದೇ ಪಾವತಿ ಪಾರದರ್ಶಕತೆಯ ಕಾನೂನುಗಳ ಬಗ್ಗೆ ತಿಳಿದಿರಲಿ."),
                 n("ede7d0a2", "ಕರೆನ್ಸಿ"),
                 n("b925c18c", "ಸಂಬಳದ ಪ್ರಕಾರ"),
-                n("j3d242ce", "ಅಮಾನ್ಯ ಶ್ರೇಣಿ"),
-                n("f4d07bd2", "ಹುಡುಕಾಟದೊಂದಿಗೆ ನಿಮ್ಮ ಪಾತ್ರಗಳನ್ನು ಪರಿಶೋಧಿಸಲು ಅಭ್ಯರ್ಥಿಗಳಿಗೆ ಸುಲಭವಾಗುವಂತೆ ಐಚ್ಛಿಕ ವಿವರಗಳನ್ನು ಸೇರಿಸಿ."),
-                n("b8cbb51a", "ಉದ್ಯೋಗದ ಸಾರಾಂಶ");
-            n("bda6881e", "ಈ ಕೆಲಸವನ್ನು ನಿಮ್ಮ ಅರ್ಜಿದಾರರ ಟ್ರ್ಯಾಕಿಂಗ್ ಸಿಸ್ಟಮ್ (ATS) ನಿಂದ ಆಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗಿದೆ. ನಿರ್ದಿಷ್ಟ ಕ್ಷೇತ್ರಗಳನ್ನು ಮಾತ್ರ ಮಾರ್ಪಡಿಸಬಹುದು ಎಂಬುದನ್ನು ದಯವಿಟ್ಟು ನೋಟ್ ಮಾಡಿ."),
+                n("j3d242ce", "ಅಮಾನ್ಯ ಶ್ರೇಣಿ");
+            n("f4d07bd2", "ಹುಡುಕಾಟದೊಂದಿಗೆ ನಿಮ್ಮ ಪಾತ್ರಗಳನ್ನು ಪರಿಶೋಧಿಸಲು ಅಭ್ಯರ್ಥಿಗಳಿಗೆ ಸುಲಭವಾಗುವಂತೆ ಐಚ್ಛಿಕ ವಿವರಗಳನ್ನು ಸೇರಿಸಿ."),
+                n("b8cbb51a", "ಉದ್ಯೋಗದ ಸಾರಾಂಶ"),
+                n("bda6881e", "ಈ ಕೆಲಸವನ್ನು ನಿಮ್ಮ ಅರ್ಜಿದಾರರ ಟ್ರ್ಯಾಕಿಂಗ್ ಸಿಸ್ಟಮ್ (ATS) ನಿಂದ ಆಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗಿದೆ. ನಿರ್ದಿಷ್ಟ ಕ್ಷೇತ್ರಗಳನ್ನು ಮಾತ್ರ ಮಾರ್ಪಡಿಸಬಹುದು ಎಂಬುದನ್ನು ದಯವಿಟ್ಟು ನೋಟ್ ಮಾಡಿ."),
                 n("b075c68a", "ಉದ್ಯೋಗವನ್ನು ಎಡಿಟ್ ಮಾಡಿ"),
                 n("d4b6a6e0", "ಪ್ರೊಫೈಲ್ ಸ್ಪಾಟ್‌ಲೈಟ್"),
                 n("j2dd3686", "ನನ್ನ ಪೋಸ್ಟ್‌ಗಳ ಮೇಲೆ ವೈಶಿಷ್ಟ್ಯಗೊಳಿಸಿದ ಉದ್ಯೋಗಗಳನ್ನು ಹೈಲೈಟ್ ಮಾಡಿ."),
@@ -7231,7 +7237,7 @@
                 n("h257d4aa", "ಪ್ರಾಯೋಜಿಸಲು ಒಂದು ಪೋಸ್ಟ್ ಆಯ್ಕೆಮಾಡಿ"),
                 n("e9334fe6", "ಪ್ರತಿ ಕೆಲವು ನಿಮಿಷಗಳಿಗೊಮ್ಮೆ ಡೇಟಾ ಅಪ್‌ಡೇಟ್ ಆಗುತ್ತದೆ"),
                 n("a6d7b1d0", "X ಆಂತರಿಕ ಡೇಟಾವನ್ನು ಆಧರಿಸಿದೆ"),
-                n("h9b28dae", "ಜಾಹೀರಾತು-ಮುಕ್ತ ಫೀಡ್‌ನೊಂದಿಗೆ ನೀವು ಸಮಯವನ್ನು ಉಳಿಸುತ್ತಿದ್ದೀರಿ"),
+                n("h71a00e6", "You’re saving time with ad-free"),
                 n("f6c50ec0", "ನಿಮ್ಮ ಜಾಹೀರಾತು-ರಹಿತ ಪ್ರಾಯೋಗಿಕ ಅವಧಿ ಮುಗಿದಿದೆ."),
                 n("e1d1fbca", "ನೀವು ತಪ್ಪಿಸಿಕೊಂಡಿದ್ದೀರಿ"),
                 n("a82d7abd", function (e) {
@@ -7248,16 +7254,19 @@
                 n("c534c6b4", "ನಾವು ಸಂಖ್ಯೆಗಳನ್ನು ಲೆಕ್ಕ ಹಾಕುತ್ತಿದ್ದೇವೆ..."),
                 n("i57332f0", "ನೀವು ಎಷ್ಟು ಜಾಹೀರಾತುಗಳನ್ನು ತಪ್ಪಿಸಿದ್ದೀರಿ ಮತ್ತು ಎಷ್ಟು ಸಮಯವನ್ನು ಉಳಿಸಿದ್ದೀರಿ ಎಂಬುದನ್ನು ನೋಡಲು ಸ್ಕ್ರಾಲಿಂಗ್ ಮಾಡುವುದನ್ನು ಮುಂದುವರಿಸಿ ಮತ್ತು ನಂತರ ಪುನಃ ಪರಿಶೀಲಿಸಿ."),
                 n("cc10f019", function (e) {
-                    return e.minutes + " ನಿಮಿಷ" + f(e.minutes, "", "ಗಳು");
+                    return e.minutes + " ನಿಮಿಷ" + t(e.minutes, "", "ಗಳು");
                 }),
                 n("f9b6b7d3", function (e) {
-                    return e.hours + " ಗಂಟೆ" + f(e.hours, "", "ಗಳು");
+                    return e.hours + " ಗಂಟೆ" + t(e.hours, "", "ಗಳು");
                 }),
                 n("a9af8753", function (e) {
-                    return e.days + " ದಿನ" + f(e.days, "", "ಗಳು") + ", " + e.hours + " ಗಂಟೆ" + f(e.hours, "", "ಗಳು");
+                    return e.days + " ದಿನ" + t(e.days, "", "ಗಳು") + ", " + e.hours + " ಗಂಟೆ" + t(e.hours, "", "ಗಳು");
                 }),
                 n("b93d00e5", function (e) {
-                    return e.days + " ದಿನ" + f(e.days, "", "ಗಳು");
+                    return e.days + " ದಿನ" + t(e.days, "", "ಗಳು");
+                }),
+                n("dc9661b3", function (e) {
+                    return e.seconds + " second" + f(e.seconds, "", "s");
                 }),
                 n("g2c63852", "100% ಉಚಿತ. ಯಾವುದೇ ಕ್ರೆಡಿಟ್ ಕಾರ್ಡ್ ಅಗತ್ಯವಿಲ್ಲ."),
                 n("be88be23", function (e) {
@@ -7442,7 +7451,7 @@
                 n("h1c5d6aa", "ನಿಮ್ಮಿಂದ ಕಳುಹಿಸಲಾಗಿದೆ"),
                 n("h6d45054", "ಎಲ್ಲರಿಂದ ಕಳುಹಿಸಲಾಗಿದೆ"),
                 n("da68fff1", function (e) {
-                    return e.count + " ಕಾಯಿನ್" + f(e.count, "", "‌ಗಳು") + " (ನಿಮಗೆ ಮಾತ್ರ ಕಂಡುಬರುತ್ತದೆ)";
+                    return e.count + " ಕಾಯಿನ್" + t(e.count, "", "‌ಗಳು") + " (ನಿಮಗೆ ಮಾತ್ರ ಕಂಡುಬರುತ್ತದೆ)";
                 }),
                 n("e35f2534", "ಪೋಸ್ಟ್ ಎಂಗೇಜ್ಮೆಂಟ್ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ"),
                 n("i60dfa72", "ಪೋಸ್ಟ್ ಎಂಗೇಜ್‌ಮೆಂಟ್‌ಗಳು"),
@@ -7509,13 +7518,13 @@
                     return "ಪೋಸ್ಟ್ ಮಾಡಿದ ಮೊದಲ 48 ಗಂಟೆಗಳಲ್ಲಿ ಈ ಪೋಸ್ಟ್ ಅನ್ನು ಓದಿದ ಸಂಖ್ಯೆಗಳನ್ನು ಇದು ಟ್ರ್ಯಾಕ್ ಮಾಡುತ್ತದೆ. ಗರಿಷ್ಠ ಮೌಲ್ಯವು " + e.maxValue + " ಇಂಪ್ರೆಶನ್‌ಗಳಾಗಿರುತ್ತವೆ.";
                 }),
                 n("ib1f8491", function (e) {
-                    return e.likeCount + " ಇಷ್ಟ" + f(e.likeCount, "", "ಗಳು");
+                    return e.likeCount + " ಇಷ್ಟ" + t(e.likeCount, "", "ಗಳು");
                 }),
                 n("dc0e7f37", function (e) {
-                    return e.retweetCount + " ಮರುಪೋಸ್ಟ್" + f(e.retweetCount, "", "‌ಗಳು");
+                    return e.retweetCount + " ಮರುಪೋಸ್ಟ್" + t(e.retweetCount, "", "‌ಗಳು");
                 }),
                 n("d0eeb127", function (e) {
-                    return e.replyCount + " ಪ್ರತಿಕ್ರಿಯ" + f(e.replyCount, "ಿಸಿ", "ೆಗಳು");
+                    return e.replyCount + " ಪ್ರತಿಕ್ರಿಯ" + t(e.replyCount, "ಿಸಿ", "ೆಗಳು");
                 }),
                 n("db6efeb8", "ನಿಮ್ಮ ಪ್ರಚಾರ ನಡೆಯುತ್ತಿದೆ"),
                 n("j6daea86", "ನಿಮ್ಮ ಪ್ರಚಾರವನ್ನು ವಿರಾಮಗೊಳಿಸಲಾಗಿದೆ"),
@@ -7528,7 +7537,7 @@
                 n("e8adeec8", "ಪುನಃ ಪ್ರಚಾರ ಮಾಡಿ"),
                 n("fbb5c37e", "ಪುನಃ ಬೂಸ್ಟ್‌ ಮಾಡಿ"),
                 n("ccffb487", function (e) {
-                    return "ನಿಮ್ಮ ಪೋಸ್ಟ್‌ ಈವರೆಗೆ " + e.impressions + " ಇಂಪ್ರೆಶನ್‌" + f(e.impressions, "", "ಗಳನ್ನು") + " ಗಳಿಸಿದೆ. ನಿಮ್ಮ ವ್ಯಾಪ್ತಿಯನ್ನು ಹೆಚ್ಚಿಸಲು ಪ್ರೊಫೆಷನಲ್ ಖಾತೆಗೆ ಬದಲಿಸಿ.";
+                    return "ನಿಮ್ಮ ಪೋಸ್ಟ್‌ ಈವರೆಗೆ " + e.impressions + " ಇಂಪ್ರೆಶನ್‌" + t(e.impressions, "", "ಗಳನ್ನು") + " ಗಳಿಸಿದೆ. ನಿಮ್ಮ ವ್ಯಾಪ್ತಿಯನ್ನು ಹೆಚ್ಚಿಸಲು ಪ್ರೊಫೆಷನಲ್ ಖಾತೆಗೆ ಬದಲಿಸಿ.";
                 }),
                 n("ha13fd94", "ಪೋಸ್ಟ್ ಅನ್ನು ಬೂಸ್ಟ್ ಮಾಡಿ"),
                 n("jede3014", "ನಿಮ್ಮ ಪ್ರಚಾರ ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ"),
@@ -7571,7 +7580,7 @@
                     return e.totalBudget + " ಓವರ್ " + e.durationLabel;
                 }),
                 n("bad70c09", function (e) {
-                    return "ಸ್ಥಳ" + f(e.numLocations, "", "ಗಳು");
+                    return "ಸ್ಥಳ" + t(e.numLocations, "", "ಗಳು");
                 }),
                 n("c133a39b", function (e) {
                     return e.minAge + "-" + e.maxAge;
@@ -7580,7 +7589,7 @@
                     return e.minAge + "+";
                 }),
                 n("g4bf9cb7", function (e) {
-                    return e.durationDays + " ದಿನ" + f(e.durationDays, "", "ಗಳು");
+                    return e.durationDays + " ದಿನ" + t(e.durationDays, "", "ಗಳು");
                 }),
                 n("gc3ce5d9", function (e) {
                     return "ಪ್ರತಿ ದಿನ ಅಂದಾಜು " + e.audienceLow + " - " + e.audienceHigh + " ಜನರ ತಲುಪುವಿಕೆ";
@@ -7680,7 +7689,7 @@
                 n("a74821a0", "ನಿಮ್ಮ ಪಾವತಿ ಸಂಭವಿಸಲಿಲ್ಲ ಅಥವಾ ಅವಧಿ ಮೀರಲಿದೆ ಎಂಬಂತೆ ಕಂಡುಬರುತ್ತಿದೆ. ನಿಮ್ಮ Premium ಸಬ್ಸ್ಕ್ರಿಪ್ಷನ್ ಉಳಿಸಿಕೊಳ್ಳಲು ನಿಮ್ಮ ಪಾವತಿ ಮಾಹಿತಿಯನ್ನು ಅಪ್ಡೇಟ್ ಮಾಡಿ."),
                 n("bb55752e", "ಕಾಯಿನ್‌ಗಳು ನಿಮಗೆ ಉತ್ತಮ ವಿಷಯವನ್ನು ಪೋಸ್ಟ್ ಮಾಡುವಂತಹ ಕ್ರಿಯೇಟರ್‌ಗಳನ್ನು ಬೆಂಬಲಿಸಲು ಅವಕಾಶ ನೀಡುತ್ತವೆ. ಬಳಸದ ಕಾಯಿನ್‌ಗಳನ್ನು ನಿಮ್ಮ ಬ್ಯಾಲೆನ್ಸ್‌ನಲ್ಲಿ ಇರಿಸಲಾಗುತ್ತದೆ. "),
                 n("ea7ce65f", function (e) {
-                    return e.count + " ಬೋನಸ್ ಕಾಯಿನ್" + f(e.count, " ಅ", "‌ಗಳ") + "ನ್ನು ಒಳಗೊಂಡಿದೆ.";
+                    return e.count + " ಬೋನಸ್ ಕಾಯಿನ್" + t(e.count, " ಅ", "‌ಗಳ") + "ನ್ನು ಒಳಗೊಂಡಿದೆ.";
                 }),
                 n("e557f9d2", "ನಿಮ್ಮ ಕಾಯಿನ್ ಬ್ಯಾಲೆನ್ಸ್ ಮಿತಿಯನ್ನು ನೀವು ತಲುಪಿದ್ದೀರಿ."),
                 n("e2beba5e", "ಅತ್ಯಂತ ಜನಪ್ರಿಯ"),
@@ -7860,13 +7869,8 @@
                 n("b74ff5fc", "ನೀವು ರದ್ದು ಮಾಡಿದರೆ, ಬಿಲ್ಲಿಂಗ್‌ ಆವರ್ತನದ ಕೊನೆಯಲ್ಲಿ ನಿಮ್ಮ ಸಬ್‌ಸ್ಕ್ರಿಪ್ಷನ್‌ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅವಧಿ ಮೀರುತ್ತದೆ."),
                 n("ee9efbc8", "ರದ್ದತಿಗೆ ಮುಂದುವರಿಯಿರಿ"),
                 n("c5d9c77a", "ಒಂದು ಸಣ್ಣ ಅಡೆತಡೆ ಇರುವಂತೆ ಕಾಣಿಸುತ್ತಿದೆ. ಚಿಂತಿಸಬೇಡಿ, ಇದು ನಿಮ್ಮ ದೋಷವಲ್ಲ. ಈ ವಿಂಡೋ ಮುಚ್ಚಿ ಮತ್ತು ಪುನಃ ಪ್ರಯತ್ನಿಸಿ."),
-                n("jda53c24", "ನಿಮ್ಮ ಸಬ್‌ಸ್ಕ್ರಿಪ್ಷನ್ ಅನ್ನು Apple ಪ್ಲೇ ಸ್ಟೋರ್‌ ಮೂಲಕ ನೀವು ರದ್ದು ಮಾಡಬಹುದು."),
-                n("g0a7a53e", "ನಿಮ್ಮ ಸಬ್‌ಸ್ಕ್ರಿಪ್ಷನ್ ಅನ್ನು Google ಪ್ಲೇ ಸ್ಟೋರ್‌ ಮೂಲಕ ನೀವು ರದ್ದು ಮಾಡಬಹುದು."),
-                n("i5f14be7", function (e) {
-                    return "ಮರಳಿ ಸ್ವಾಗತ, " + e.displayName;
-                }),
-                n("a76d58ba", "ಜಾಹೀರಾತುಗಳ ವಿಶ್ಲೇಷಣೆ");
-            function t(e, c) {
+                n("jda53c24", "ನಿಮ್ಮ ಸಬ್‌ಸ್ಕ್ರಿಪ್ಷನ್ ಅನ್ನು Apple ಪ್ಲೇ ಸ್ಟೋರ್‌ ಮೂಲಕ ನೀವು ರದ್ದು ಮಾಡಬಹುದು.");
+            function r(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
                     (n.enumerable = n.enumerable || !1),
@@ -7874,10 +7878,10 @@
                         "value" in n && (n.writable = !0),
                         Object.defineProperty(
                             e,
-                            ((f = n.key),
-                            (t = void 0),
+                            ((t = n.key),
+                            (f = void 0),
                             "symbol" ==
-                            typeof (t = (function (e, c) {
+                            typeof (f = (function (e, c) {
                                 if ("object" != typeof e || null === e) return e;
                                 var a = e[Symbol.toPrimitive];
                                 if (void 0 !== a) {
@@ -7886,25 +7890,30 @@
                                     throw new TypeError("@@toPrimitive must return a primitive value.");
                                 }
                                 return ("string" === c ? String : Number)(e);
-                            })(f, "string"))
-                                ? t
-                                : String(t)),
+                            })(t, "string"))
+                                ? f
+                                : String(f)),
                             n,
                         );
                 }
-                var f, t;
+                var t, f;
             }
-            function r(e, c) {
+            function d(e, c) {
                 return (
-                    (r = Object.setPrototypeOf
+                    (d = Object.setPrototypeOf
                         ? Object.setPrototypeOf.bind()
                         : function (e, c) {
                               return (e.__proto__ = c), e;
                           }),
-                    r(e, c)
+                    d(e, c)
                 );
             }
-            n("eccd0e1a", "ಸಂಸ್ಥೆಯ ವಿಶ್ಲೇಷಣೆ"),
+            n("g0a7a53e", "ನಿಮ್ಮ ಸಬ್‌ಸ್ಕ್ರಿಪ್ಷನ್ ಅನ್ನು Google ಪ್ಲೇ ಸ್ಟೋರ್‌ ಮೂಲಕ ನೀವು ರದ್ದು ಮಾಡಬಹುದು."),
+                n("i5f14be7", function (e) {
+                    return "ಮರಳಿ ಸ್ವಾಗತ, " + e.displayName;
+                }),
+                n("a76d58ba", "ಜಾಹೀರಾತುಗಳ ವಿಶ್ಲೇಷಣೆ"),
+                n("eccd0e1a", "ಸಂಸ್ಥೆಯ ವಿಶ್ಲೇಷಣೆ"),
                 n("deea1708", "ನಿಮ್ಮ ಎಲ್ಲಾ X ಖಾತೆಗಳಲ್ಲಿ ವಿಶ್ಲೇಷಣೆಗಳನ್ನು ವೀಕ್ಷಿಸಲು ಬಯಸುವಿರಾ?"),
                 n("eb603ffc", "ನಿಮ್ಮ ನೆಟ್‌ವರ್ಕ್ ಅನ್ನು ಸಂಯೋಜಿತಗೊಳಿಸಲು ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಿ ಮತ್ತು ಒಟ್ಟುಗೂಡಿದ ವಿಶ್ಲೇಷಣೆಗಳನ್ನು ವೀಕ್ಷಿಸಿ."),
                 n("gf67aae4", "ಪೂರ್ಣ ಪ್ರವೇಶಕ್ಕೆ ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಿ"),
@@ -7912,7 +7921,7 @@
                 n("h24a8862", "ಈ ಚೆಕ್‌ಬಾಕ್ಸ್ ಬಗ್ಗೆ"),
                 n("c29e3a88", "ಅಫಿಲಿಯೇಟ್‌ಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ"),
                 n("j8318d57", function (e) {
-                    return e.number + " ಅಫಿಲಿಯೇಟ್" + f(e.number, "", "‌ಗಳು");
+                    return e.number + " ಅಫಿಲಿಯೇಟ್" + t(e.number, "", "‌ಗಳು");
                 }),
                 n("bf809ec0", "ಅಫಿಲಿಯೇಟ್‌ಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ"),
                 n("b719e224", "ಫಲಿತಾಂಶಗಳಿಲ್ಲ"),
@@ -8131,7 +8140,7 @@
                 n("e6b0965a", "ನಿಮ್ಮ ಆರ್ಡರ್"),
                 n("a1b58798", "ಕೆಳಗಿನ ನಿಮ್ಮ ಆರ್ಡರ್ ಅನ್ನು ಪರಿಶೀಲಿಸಿ"),
                 n("b651c7d7", function (e) {
-                    return "ಅಫಿಲಿಯೇಟ್" + f(e.count, "", "‌ಗಳು") + " x " + e.count;
+                    return "ಅಫಿಲಿಯೇಟ್" + t(e.count, "", "‌ಗಳು") + " x " + e.count;
                 }),
                 n("ec5e9c54", "ಮೂಲ ಸಬ್‌ಸ್ಕ್ರಿಪ್ಷನ್"),
                 n("e16093fc", "ತಿಂಗಳಿಗೆ ಒಟ್ಟು"),
@@ -8783,7 +8792,7 @@
                     return e.hoursWord + " " + e.minutesWord + " " + e.secondsWord + " ಸಮಯಕ್ಕೆ ಪ್ರಾರಂಭಗೊಳ್ಳುತ್ತದೆ";
                 }),
                 n("daa73df1", function (e) {
-                    return e.viewerCount + " ವೀಕ್ಷಣೆ" + f(e.viewerCount, "", "ಗಳು");
+                    return e.viewerCount + " ವೀಕ್ಷಣೆ" + t(e.viewerCount, "", "ಗಳು");
                 }),
                 n("b4f19b97", function (e) {
                     return e.listItem1 + " ಮತ್ತು " + e.listItem2;
@@ -8900,11 +8909,11 @@
                     return e.advertiserName + " ಗೆ ಭೇಟಿ ಕೊಡಿ";
                 }),
                 n("c67e71aa", "ಈಗ ವೀಕ್ಷಿಸಿ"),
-                n("a6ada13e", "ಈಗ ಶಾಪಿಂಗ್ ಮಾಡಿ"),
-                n("j0f12222", "ಇನ್ನಷ್ಟು ನೋಡಿ"),
+                n("a6ada13e", "ಈಗ ಶಾಪಿಂಗ್ ಮಾಡಿ");
+            n("j0f12222", "ಇನ್ನಷ್ಟು ನೋಡಿ"),
                 n("f569f7c8", "ವೆಬ್‌ಸೈಟ್‌ಗೆ ಹೋಗಿ"),
-                n("j0c6772a", "ವೆಬ್‌ಸೈಟ್‌ಗೆ ಭೇಟಿ ನೀಡಿ");
-            n("f73003aa", "ಜಾಹೀರಾತಿನ ನಂತರ ವೀಡಿಯೋ ಪ್ರಸಾರವಾಗುತ್ತದೆ"),
+                n("j0c6772a", "ವೆಬ್‌ಸೈಟ್‌ಗೆ ಭೇಟಿ ನೀಡಿ"),
+                n("f73003aa", "ಜಾಹೀರಾತಿನ ನಂತರ ವೀಡಿಯೋ ಪ್ರಸಾರವಾಗುತ್ತದೆ"),
                 n("b3112b8a", "ಬಿಟ್ಟುಬಿಡು"),
                 n("h6333ad0", "ಜಾಹೀರಾತು ಸ್ಕಿಪ್ ಮಾಡಿ"),
                 n("c59da417", function (e) {
@@ -9012,7 +9021,7 @@
                     return e.count + " ಇತರೆ";
                 }),
                 n("dbeae6cf", function (e) {
-                    return e.count + " ಇತರ ಶ್ರೋತೃ" + f(e.count, "", "ಗಳು");
+                    return e.count + " ಇತರ ಶ್ರೋತೃ" + t(e.count, "", "ಗಳು");
                 }),
                 n("d2543d97", function (e) {
                     return "+" + e.count;
@@ -9033,19 +9042,19 @@
                     return e.hours + " " + e.minutes + " " + e.seconds;
                 }),
                 n("d925a4f9", function (e) {
-                    return e.formattedCount + " ನಿಮಿಷ" + f(e.count, " ಉಳಿದಿದ", "ಗಳು ಉಳಿದಿವ") + "ೆ";
+                    return e.formattedCount + " ನಿಮಿಷ" + t(e.count, " ಉಳಿದಿದ", "ಗಳು ಉಳಿದಿವ") + "ೆ";
                 }),
                 n("ib15cddb", function (e) {
-                    return e.formattedCount + " ಗಂಟೆ" + f(e.count, " ಉಳಿದಿದ", "ಗಳು ಉಳಿದಿವ") + "ೆ";
+                    return e.formattedCount + " ಗಂಟೆ" + t(e.count, " ಉಳಿದಿದ", "ಗಳು ಉಳಿದಿವ") + "ೆ";
                 }),
                 n("db9ed19f", function (e) {
-                    return e.formattedCount + " ದಿನ" + f(e.count, "", "ಗಳು") + " ಉಳಿದಿದೆ";
+                    return e.formattedCount + " ದಿನ" + t(e.count, "", "ಗಳು") + " ಉಳಿದಿದೆ";
                 }),
                 n("e1ebcecb", function (e) {
-                    return e.formattedDays + " ದಿನ" + f(e.days, "", "ಗಳು") + " " + e.formattedHours + " ಗಂಟೆ" + f(e.hours, " ಉಳಿದಿದ", "ಗಳು ಉಳಿದಿವ") + "ೆ";
+                    return e.formattedDays + " ದಿನ" + t(e.days, "", "ಗಳು") + " " + e.formattedHours + " ಗಂಟೆ" + t(e.hours, " ಉಳಿದಿದ", "ಗಳು ಉಳಿದಿವ") + "ೆ";
                 }),
                 n("cc1da1fd", function (e) {
-                    return e.formattedHours + " ಗಂಟೆ" + f(e.hours, "", "ಗಳು") + " " + e.formattedMins + " ನಿಮಿಷ" + f(e.mins, " ಉಳಿದಿದ", "ಗಳು ಉಳಿದಿವ") + "ೆ";
+                    return e.formattedHours + " ಗಂಟೆ" + t(e.hours, "", "ಗಳು") + " " + e.formattedMins + " ನಿಮಿಷ" + t(e.mins, " ಉಳಿದಿದ", "ಗಳು ಉಳಿದಿವ") + "ೆ";
                 }),
                 n("f89a5d60", "ಹೋಸ್ಟ್‌"),
                 n("ce2cfb36", "ಸಬ್‌ಸ್ಕ್ರೈಬರ್‌ಗಳು ಮಾತ್ರ"),
@@ -9099,20 +9108,20 @@
                 n("f8e8e32e", "ನೀವು"),
                 n("df6703d3", "ನೀವು"),
                 n("c20f7e9f", function (e) {
-                    return f(e.otherUsersCount, d.createElement(d.Fragment, null, "", e.secondName), e.otherUsersCount + " ಇತರರು");
+                    return t(e.otherUsersCount, b.createElement(b.Fragment, null, "", e.secondName), e.otherUsersCount + " ಇತರರು");
                 }),
                 n("he26f627", function (e) {
-                    return f(e.otherUsersCount, d.createElement(d.Fragment, null, "", e.secondName), e.otherUsersCount + " ಇತರರು");
+                    return t(e.otherUsersCount, b.createElement(b.Fragment, null, "", e.secondName), e.otherUsersCount + " ಇತರರು");
                 }),
                 n("gea7aa3c", "ಮುಂದಿನ"),
                 n("b6462b32", "ಹಿಂದಿನ"),
                 n("caddb529", "ಮತ್ತು"),
                 n("ff31714c", function (e) {
-                    return " ಮತ್ತು " + f(e.othersCount, "1", "" + e.othersCount) + " ಇತರರು";
+                    return " ಮತ್ತು " + t(e.othersCount, "1", "" + e.othersCount) + " ಇತರರು";
                 }),
                 n("e06c99b7", "ಮತ್ತು"),
                 n("i4e2f96c", function (e) {
-                    return " ಮತ್ತು " + f(e.othersCount, "1", "" + e.othersCount) + " ಇತರರು";
+                    return " ಮತ್ತು " + t(e.othersCount, "1", "" + e.othersCount) + " ಇತರರು";
                 }),
                 n("ga629a8c", "ಸಂವಾದದಲ್ಲಿರುವ ಜನರನ್ನು ವೀಕ್ಷಿಸಿ"),
                 n("d6f781e4", "ನಿಮ್ಮ ಮೆಚ್ಚಿನ X ಕ್ರಿಯೇಟರ್‌ಗೆ ಸಬ್‌ಸ್ಕ್ರೈಬ್‌ ಮಾಡಿದಾಗ, ನೀವು ವಿಶೇಷ ಕಂಟೆಂಟ್‌ ಪಡೆಯುತ್ತೀರಿ ಮತ್ತು ಅವರು ಸ್ವಲ್ಪ ಹಣವನ್ನು ಗಳಿಸುತ್ತಾರೆ."),
@@ -9134,10 +9143,10 @@
                 n("ec286028", "ಆಡಿಯೋ ವಿರಾಮ ಮಾಡಿ"),
                 n("ad77feb6", "ಶೀರ್ಷಿಕೆಗಳು ಲಭ್ಯವಿಲ್ಲ"),
                 n("e82adfeb", function (e) {
-                    return e.count + " ವೆಬ್ ಪುಟ" + f(e.count, "", "ಗಳು");
+                    return e.count + " ವೆಬ್ ಪುಟ" + t(e.count, "", "ಗಳು");
                 }),
                 n("cfb8c1f7", function (e) {
-                    return e.count + " ಪೋಸ್ಟ್" + f(e.count, "", "‌ಗಳು");
+                    return e.count + " ಪೋಸ್ಟ್" + t(e.count, "", "‌ಗಳು");
                 }),
                 n("g78032d5", function (e) {
                     return e.count + " ವೆಬ್ ಪುಟಗಳು ಮತ್ತು ಪೋಸ್ಟ್‌ಗಳು";
@@ -9163,7 +9172,7 @@
                 n("g10ace38", "ಸಮೀಕ್ಷೆ ಆಯ್ಕೆಗಳು"),
                 n("a3edf99a", "ಅಂತಿಮ ಫಲಿತಾಂಶಗಳು"),
                 n("c2b81e9d", function (e) {
-                    return e.formattedCount + " ಮತ" + f(e.count, "", "ಗಳು");
+                    return e.formattedCount + " ಮತ" + t(e.count, "", "ಗಳು");
                 }),
                 n("e86732e4", "ಆಯ್ಕೆಮಾಡಲಾಗಿದೆ"),
                 n("a35a5b10", "ನಿಮಗೆ ತಿಳಿದಿರುವ ಹಿಂಬಾಲಕರು"),
@@ -9192,7 +9201,7 @@
                     return e.count + " ಅಕ್ಷರ ಮಿತಿಯನ್ನು ನೀವು ಮೀರಿದ್ದೀರಿ";
                 }),
                 n("db11b27f", function (e) {
-                    return e.count + " ಅಕ್ಷರ" + f(e.count, "", "ಗಳು") + " ಉಳಿದಿದೆ";
+                    return e.count + " ಅಕ್ಷರ" + t(e.count, "", "ಗಳು") + " ಉಳಿದಿದೆ";
                 }),
                 n("bb7b821a", "ನೀವು ಪ್ರತಿಕ್ರಿಯಿಸಬಹುದು"),
                 n("fc41217b", function (e) {
@@ -9247,22 +9256,22 @@
                     return e.trendValuePositivePercent + " ರಷ್ಟು ಹೆಚ್ಚು";
                 }),
                 n("e3098e07", function (e) {
-                    return e.minutes + " ನಿಮಿಷ" + f(e.minutes, " ಬಾಕಿ ಇದ", "ಗಳು ಬಾಕಿ ಇವ") + "ೆ ಹಿಂದೆ";
+                    return e.minutes + " ನಿಮಿಷ" + t(e.minutes, " ಬಾಕಿ ಇದ", "ಗಳು ಬಾಕಿ ಇವ") + "ೆ ಹಿಂದೆ";
                 }),
                 n("fea16a51", function (e) {
-                    return e.hours + " ಗಂಟೆ" + f(e.hours, "", "ಗಳು") + " ಹಿಂದೆ";
+                    return e.hours + " ಗಂಟೆ" + t(e.hours, "", "ಗಳು") + " ಹಿಂದೆ";
                 }),
                 n("a4f2d94d", function (e) {
-                    return e.days + " ದಿನ" + f(e.days, "", "ಗಳು") + " ಹಿಂದೆ";
+                    return e.days + " ದಿನ" + t(e.days, "", "ಗಳು") + " ಹಿಂದೆ";
                 }),
                 n("hf9bc787", function (e) {
-                    return e.weeks + " ವಾರ" + f(e.weeks, "", "ಗಳು") + " ಹಿಂದೆ";
+                    return e.weeks + " ವಾರ" + t(e.weeks, "", "ಗಳು") + " ಹಿಂದೆ";
                 }),
                 n("efcd5885", function (e) {
-                    return e.months + " ತಿಂಗಳು" + f(e.months, "", "ಗಳು") + " ಹಿಂದೆ";
+                    return e.months + " ತಿಂಗಳು" + t(e.months, "", "ಗಳು") + " ಹಿಂದೆ";
                 }),
                 n("c37228b5", function (e) {
-                    return e.years + " ವರ್ಷ" + f(e.years, "", "ಗಳು") + " ಹಿಂದೆ";
+                    return e.years + " ವರ್ಷ" + t(e.years, "", "ಗಳು") + " ಹಿಂದೆ";
                 }),
                 n("jf83d092", "ದಿನ"),
                 n("af4abf20", "ತಿಂಗಳು"),
@@ -9282,7 +9291,7 @@
                 n("de540c32", "ಪಾಸ್‌ವರ್ಡ್ ಬಹಿರಂಗಪಡಿಸಿ"),
                 n("b4abfdb4", "ಪಾಸ್‌ವರ್ಡ್ ಅಡಗಿಸಿ"),
                 n("f06ae5d3", function (e) {
-                    return "ಪ್ರಮಾಣಿತ ಪೋಸ್ಟ್‌ಗೆ " + e.standardTweetCount + " ಅಕ್ಷರ" + f(e.standardTweetCount, "", "ಗಳು") + " ಉಳಿದಿದೆ, ಒಟ್ಟು " + e.totalCount + " ಅಕ್ಷರ" + f(e.totalCount, "", "ಗಳು") + " ಉಳಿದಿದೆ";
+                    return "ಪ್ರಮಾಣಿತ ಪೋಸ್ಟ್‌ಗೆ " + e.standardTweetCount + " ಅಕ್ಷರ" + t(e.standardTweetCount, "", "ಗಳು") + " ಉಳಿದಿದೆ, ಒಟ್ಟು " + e.totalCount + " ಅಕ್ಷರ" + t(e.totalCount, "", "ಗಳು") + " ಉಳಿದಿದೆ";
                 }),
                 n("fee0a8bc", "ಉಳಿಸಿ"),
                 n("ae7f7656", "ತೆರವುಗೊಳಿಸಿ"),
@@ -9366,52 +9375,52 @@
                 n("b8c465e2", "ಮರುಪೋಸ್ಟ್ ಮಾಡಿದ್ದಾರೆ"),
                 n("c7a989ce", "ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಲಾಗಿದೆ"),
                 n("b03835c7", function (e) {
-                    return e.replyCount + " ಪ್ರತಿಕ್ರಿಯ" + f(e.replyCount, "ಿಸಿ", "ೆಗಳು");
+                    return e.replyCount + " ಪ್ರತಿಕ್ರಿಯ" + t(e.replyCount, "ಿಸಿ", "ೆಗಳು");
                 }),
                 n("g4a195e7", function (e) {
-                    return e.retweetCount + " ಮರುಪೋಸ್ಟ್" + f(e.retweetCount, "", "‌ಗಳು");
+                    return e.retweetCount + " ಮರುಪೋಸ್ಟ್" + t(e.retweetCount, "", "‌ಗಳು");
                 }),
                 n("e089b42d", function (e) {
-                    return e.likeCount + " ಇಷ್ಟ" + f(e.likeCount, "", "ಗಳು");
+                    return e.likeCount + " ಇಷ್ಟ" + t(e.likeCount, "", "ಗಳು");
                 }),
                 n("e0a8fe39", function (e) {
-                    return e.bookmarkCount + " ಬುಕ್‌ಮಾರ್ಕ್" + f(e.bookmarkCount, "", "‌ಗಳು");
+                    return e.bookmarkCount + " ಬುಕ್‌ಮಾರ್ಕ್" + t(e.bookmarkCount, "", "‌ಗಳು");
                 }),
                 n("c58b2ab7", function (e) {
-                    return e.viewCount + " ವೀಕ್ಷಣೆ" + f(e.viewCount, "", "ಗಳು");
+                    return e.viewCount + " ವೀಕ್ಷಣೆ" + t(e.viewCount, "", "ಗಳು");
                 }),
                 n("f2849136", "ಅನಾಲಿಟಿಕ್ಸ್"),
                 n("f206e970", "ಪೋಸ್ಟ್ ಅನಾಲಿಟಿಕ್ಸ್ ವೀಕ್ಷಿಸಿ"),
                 n("c7073f5b", function (e) {
-                    return e.count + " ವೀಕ್ಷಣೆ" + f(e.count, "", "ಗಳು") + ". ಪೋಸ್ಟ್ ಅನಾಲಿಟಿಕ್ಸ್ ವೀಕ್ಷಿಸಿ";
+                    return e.count + " ವೀಕ್ಷಣೆ" + t(e.count, "", "ಗಳು") + ". ಪೋಸ್ಟ್ ಅನಾಲಿಟಿಕ್ಸ್ ವೀಕ್ಷಿಸಿ";
                 }),
                 n("hf417cf0", "ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳಿಂದ ತೆಗೆದುಹಾಕಿ"),
                 n("febd30ed", function (e) {
-                    return e.count + " ಬುಕ್‌ಮಾರ್ಕ್" + f(e.count, "", "‌ಗಳು") + ". ಬುಕ್‌ಮಾರ್ಕ್";
+                    return e.count + " ಬುಕ್‌ಮಾರ್ಕ್" + t(e.count, "", "‌ಗಳು") + ". ಬುಕ್‌ಮಾರ್ಕ್";
                 }),
                 n("a8dc9587", function (e) {
-                    return e.count + " ಬುಕ್‌ಮಾರ್ಕ್" + f(e.count, "", "‌ಗಳು") + ". ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಲಾಗಿದೆ";
+                    return e.count + " ಬುಕ್‌ಮಾರ್ಕ್" + t(e.count, "", "‌ಗಳು") + ". ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಲಾಗಿದೆ";
                 }),
                 n("d636ebc6", "ಇಷ್ಟಪಡಿ"),
                 n("eb3a8b0c", "ಇಷ್ಟವಿಲ್ಲ"),
                 n("j472ecfc", "ಈ ಪೋಸ್ಟ್ ಅನ್ನು ಇಷ್ಟಪಡಿ"),
                 n("dac92b0d", function (e) {
-                    return e.count + " ಇಷ್ಟ" + f(e.count, "", "ಗಳು") + ". ಇಷ್ಟ";
+                    return e.count + " ಇಷ್ಟ" + t(e.count, "", "ಗಳು") + ". ಇಷ್ಟ";
                 }),
                 n("aa650427", function (e) {
-                    return e.count + " ಇಷ್ಟ" + f(e.count, "", "ಗಳು") + ". ಇಷ್ಟಪಡಲಾಗಿದೆ";
+                    return e.count + " ಇಷ್ಟ" + t(e.count, "", "ಗಳು") + ". ಇಷ್ಟಪಡಲಾಗಿದೆ";
                 }),
                 n("hdf7226a", "ಪ್ರತಿಕ್ರಿಯಿಸಿ"),
                 n("c9940955", function (e) {
-                    return e.count + " ಪ್ರತಿಕ್ರಿಯ" + f(e.count, "ಿಸಿ", "ೆಗಳು") + ". ಪ್ರತಿಕ್ರಿಯೆ";
+                    return e.count + " ಪ್ರತಿಕ್ರಿಯ" + t(e.count, "ಿಸಿ", "ೆಗಳು") + ". ಪ್ರತಿಕ್ರಿಯೆ";
                 }),
                 n("f2919fb8", "ಮರುಪೋಸ್ಟ್ ಮಾಡಿ"),
                 n("fd1e5446", "ಮರುಪೋಸ್ಟ್ ಅನ್ನು ರದ್ದುಗೊಳಿಸಿ"),
                 n("dfad425d", function (e) {
-                    return e.count + " ಮರುಪೋಸ್ಟ್" + f(e.count, "", "‌ಗಳು") + ". ಮರುಪೋಸ್ಟ್";
+                    return e.count + " ಮರುಪೋಸ್ಟ್" + t(e.count, "", "‌ಗಳು") + ". ಮರುಪೋಸ್ಟ್";
                 }),
                 n("a386dc55", function (e) {
-                    return e.count + " ಮರುಪೋಸ್ಟ್" + f(e.count, "", "‌ಗಳು") + ". ಮರು ಪೋಸ್ಟ್ ಮಾಡಲಾಗಿದೆ";
+                    return e.count + " ಮರುಪೋಸ್ಟ್" + t(e.count, "", "‌ಗಳು") + ". ಮರು ಪೋಸ್ಟ್ ಮಾಡಲಾಗಿದೆ";
                 }),
                 n("f65198c2", "ಉಲ್ಲೇಖಗಳನ್ನು ವೀಕ್ಷಿಸಿ"),
                 n("dc63da16", "ಹಂಚು"),
@@ -9437,13 +9446,13 @@
                     return "" + e.formattedCount;
                 }),
                 n("ce44a35c", function (e) {
-                    return "ಚಂದಾದಾರ" + f(e.count, "", "ರು");
+                    return "ಚಂದಾದಾರ" + t(e.count, "", "ರು");
                 }),
                 n("id949f68", function (e) {
                     return "" + e.formattedCount;
                 }),
                 n("hb608cfc", function (e) {
-                    return "ಸಬ್‌ಸ್ಕ್ರಿಪ್ಷನ್" + f(e.count, "", "‌ಗಳು");
+                    return "ಸಬ್‌ಸ್ಕ್ರಿಪ್ಷನ್" + t(e.count, "", "‌ಗಳು");
                 }),
                 n("ef633578", "ಖಾತೆಯನ್ನು ಅಮಾನತುಗೊಳಿಸಲಾಗಿದೆ"),
                 n("a6a3d496", "ಲಿಂಕ್ ಅನ್ನು ಸೇರಿಸಿ"),
@@ -9522,8 +9531,8 @@
                 n("acddd4d4", "ಕೆಂಪು"),
                 n("cef9b062", "ಕಡು ಹಸಿರು"),
                 n("d9daefca", "ಕಡು ಕಂದು");
-            var d = a(202784),
-                b = [
+            var b = a(202784),
+                u = [
                     function (e) {
                         return 0 === e ? 2 : 1 === e ? 0 : 2 === e ? 1 : void 0;
                     },
@@ -9537,12 +9546,12 @@
                         return 0 === e ? 0 : 1 === e ? 1 : 2 === e ? 2 : 3 === e ? 4 : 4 === e ? 5 : 5 === e ? 3 : 6 === e ? 6 : void 0;
                     },
                 ],
-                u = { c4d3d079: 0, hc1bd66d: 1, bd3edf13: 2, e8969de9: 1, a389fb7b: 1, gd8d8205: 1, i981a661: 2, jceb2edb: 1, f20a22a1: 2, c7f250eb: 1, f5b357b5: 3, d4918c71: 1, a87b1795: 1, g46e6cc5: 1, ge9aefd5: 1 };
-            function o(e) {
+                o = { c4d3d079: 0, hc1bd66d: 1, bd3edf13: 2, e8969de9: 1, a389fb7b: 1, gd8d8205: 1, i981a661: 2, jceb2edb: 1, f20a22a1: 2, c7f250eb: 1, f5b357b5: 3, d4918c71: 1, a87b1795: 1, g46e6cc5: 1, ge9aefd5: 1 };
+            function i(e) {
                 return e;
             }
-            var i = (function (e) {
-                var c, a, n, i, m;
+            var m = (function (e) {
+                var c, a, n, f, m;
                 function g() {
                     return e.apply(this, arguments) || this;
                 }
@@ -9550,12 +9559,12 @@
                     (a = e),
                     ((c = g).prototype = Object.create(a.prototype)),
                     (c.prototype.constructor = c),
-                    r(c, a),
+                    d(c, a),
                     (g.prototype.render = function () {
-                        return d.createElement.apply(d, this[this.props.$i18n].reduce(this.templateReducer, [d.Fragment, null]));
+                        return b.createElement.apply(b, this[this.props.$i18n].reduce(this.templateReducer, [b.Fragment, null]));
                     }),
                     (n = g),
-                    (i = [
+                    (f = [
                         {
                             key: "bb85c49d",
                             get: function () {
@@ -10075,7 +10084,7 @@
                         {
                             key: "a1c39f5b",
                             get: function () {
-                                return ["ನಿರ್ಧಾರವನ್ನು ಮಾಡುತ್ತಿದ್ದಂತೆಯೇ ನಿಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಲಾಗುತ್ತದೆ. ಇದಕ್ಕೆ ಇಷ್ಟು ಕಾಲ ತಗುಲಬಹುದು " + this.props.days + " ದಿನ" + f(this.props.days, "", "ಗಳು") + "."];
+                                return ["ನಿರ್ಧಾರವನ್ನು ಮಾಡುತ್ತಿದ್ದಂತೆಯೇ ನಿಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಲಾಗುತ್ತದೆ. ಇದಕ್ಕೆ ಇಷ್ಟು ಕಾಲ ತಗುಲಬಹುದು " + this.props.days + " ದಿನ" + t(this.props.days, "", "ಗಳು") + "."];
                             },
                         },
                         {
@@ -10561,25 +10570,25 @@
                         {
                             key: "a629c16f",
                             get: function () {
-                                return ["", " " + this.props.discountedPrice + " ಮಾಸಿಕವಾಗಿ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ " + f(this.props.duration, "ಒಂದು", "" + this.props.duration) + " ತಿಂಗಳಿಗಾಗಿ"];
+                                return ["", " " + this.props.discountedPrice + " ಮಾಸಿಕವಾಗಿ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ " + t(this.props.duration, "ಒಂದು", "" + this.props.duration) + " ತಿಂಗಳಿಗಾಗಿ"];
                             },
                         },
                         {
                             key: "c142e70f",
                             get: function () {
-                                return ["", " " + this.props.discountedPrice + " ವಾರ್ಷಿಕವಾಗಿ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ " + f(this.props.duration, "ಒಂದು", "" + this.props.duration) + " ವರ್ಷಕ್ಕಾಗಿ"];
+                                return ["", " " + this.props.discountedPrice + " ವಾರ್ಷಿಕವಾಗಿ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ " + t(this.props.duration, "ಒಂದು", "" + this.props.duration) + " ವರ್ಷಕ್ಕಾಗಿ"];
                             },
                         },
                         {
                             key: "e9dc8a25",
                             get: function () {
-                                return [f(this.props.duration, "ಒಂದು ವರ್ಷ", this.props.duration + " ವರ್ಷಗಳು") + " ಗಾಗಿ ", " "];
+                                return [t(this.props.duration, "ಒಂದು ವರ್ಷ", this.props.duration + " ವರ್ಷಗಳು") + " ಗಾಗಿ ", " "];
                             },
                         },
                         {
                             key: "f8a9cbb7",
                             get: function () {
-                                return [f(this.props.duration, "ಒಂದು ತಿಂ", this.props.duration + " ತಿಂಗಳು") + "ಗಳು ಗಾಗಿ ", " "];
+                                return [t(this.props.duration, "ಒಂದು ತಿಂ", this.props.duration + " ತಿಂಗಳು") + "ಗಳು ಗಾಗಿ ", " "];
                             },
                         },
                         {
@@ -11011,7 +11020,7 @@
                         {
                             key: "b6656851",
                             get: function () {
-                                return ["ಈ ಗುಂಪಿನಲ್ಲಿ ಅವರು" + f(this.props.count, "", "ಗಳು") + " " + this.props.count + " ಇತರೆ " + f(this.props.count, "ವ್ಯಕ್ತಿ", "ಜನರು") + " ಇದ್ದಾರೆ"];
+                                return ["ಈ ಗುಂಪಿನಲ್ಲಿ ಅವರು" + t(this.props.count, "", "ಗಳು") + " " + this.props.count + " ಇತರೆ " + t(this.props.count, "ವ್ಯಕ್ತಿ", "ಜನರು") + " ಇದ್ದಾರೆ"];
                             },
                         },
                         {
@@ -11323,19 +11332,19 @@
                         {
                             key: "eea0a14f",
                             get: function () {
-                                return [this.props.formattedCount + " ಇಷ್ಟ" + f(this.props.count, "", "ಗಳು")];
+                                return [this.props.formattedCount + " ಇಷ್ಟ" + t(this.props.count, "", "ಗಳು")];
                             },
                         },
                         {
                             key: "cca42d0b",
                             get: function () {
-                                return [this.props.formattedCount + " ಫೋಟೋಗಳು ಮತ್ತು ವೀಡಿಯೋಗಳು" + f(this.props.count, ';/"', "")];
+                                return [this.props.formattedCount + " ಫೋಟೋಗಳು ಮತ್ತು ವೀಡಿಯೋಗಳು" + t(this.props.count, ';/"', "")];
                             },
                         },
                         {
                             key: "a0a3adf7",
                             get: function () {
-                                return [this.props.formattedCount + " ಪೋಸ್ಟ್" + f(this.props.count, "", "‌ಗಳು")];
+                                return [this.props.formattedCount + " ಪೋಸ್ಟ್" + t(this.props.count, "", "‌ಗಳು")];
                             },
                         },
                         {
@@ -11863,7 +11872,7 @@
                         {
                             key: "e77dac87",
                             get: function () {
-                                return ["ವಿನಂತಿಸುವವರು ಉಲ್ಲೇಖಿಸಿದ " + this.props.remainingCount + " ಇನ್ನೂ ಪೋಸ್ಟ್" + f(this.props.remainingCount, "", "‌ಗಳು") + " ಅನ್ನು ತೋರಿಸಿ"];
+                                return ["ವಿನಂತಿಸುವವರು ಉಲ್ಲೇಖಿಸಿದ " + this.props.remainingCount + " ಇನ್ನೂ ಪೋಸ್ಟ್" + t(this.props.remainingCount, "", "‌ಗಳು") + " ಅನ್ನು ತೋರಿಸಿ"];
                             },
                         },
                         {
@@ -12895,7 +12904,7 @@
                         {
                             key: "d6b02329",
                             get: function () {
-                                return [this.props.formattedCount + " ಸದಸ್ಯ" + f(this.props.count, "", "ರು")];
+                                return [this.props.formattedCount + " ಸದಸ್ಯ" + t(this.props.count, "", "ರು")];
                             },
                         },
                         {
@@ -12998,371 +13007,371 @@
                             key: "templateReducer",
                             get: function () {
                                 var e,
-                                    c = d.Children.toArray(this.props.children),
-                                    a = ((e = this.props.$i18n), b[u[e]] || o);
-                                return function (e, n, f) {
-                                    return e.concat(n, c[a(f)]);
+                                    c = b.Children.toArray(this.props.children),
+                                    a = ((e = this.props.$i18n), u[o[e]] || i);
+                                return function (e, n, t) {
+                                    return e.concat(n, c[a(t)]);
                                 };
                             },
                         },
-                    ]) && t(n.prototype, i),
-                    m && t(n, m),
+                    ]) && r(n.prototype, f),
+                    m && r(n, m),
                     Object.defineProperty(n, "prototype", { writable: !1 }),
                     g
                 );
-            })(a(111677)._ActualI18NFormatMessage || d.Component);
-            n("_ActualI18NFormatMessage", i),
+            })(a(111677)._ActualI18NFormatMessage || b.Component);
+            n("_ActualI18NFormatMessage", m),
                 n("I18NFormatMessage", function (e) {
-                    return d.createElement(i, e);
+                    return b.createElement(m, e);
                 });
-            var m = a(495075);
+            var g = a(495075);
             a(800694), a(556829), a(530152), a(658610), a(492344), a(663823);
-            m._validateParameterTypeNumber, m._validateParameterPresence;
-            var g = m._numberRound,
-                s = (m._numberFormat, m._numberFormatterFn),
-                h = m._pluralGeneratorFn,
-                k = (m._currencyNameFormat, m._currencyFormatterFn),
-                y = (m._validateParameterTypeDate, m._dateToPartsFormat, m._dateToPartsFormatterFn),
-                p = (m._dateFormat, m._dateFormatterFn),
-                N = m._relativeTimeFormatterFn,
-                l = m._unitFormatterFn;
-            (m.b905926632 = s(["", , 1, 0, 1, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("truncate"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { one: "0ಸಾ", other: "0ಸಾ" }, 4: { one: "00ಸಾ", other: "00ಸಾ" }, 5: { one: "000ಸಾ", other: "000ಸಾ" }, 6: { one: "0ಮಿ", other: "0ಮಿ" }, 7: { one: "00ಮಿ", other: "00ಮಿ" }, 8: { one: "000ಮಿ", other: "000ಮಿ" }, 9: { one: "0ಬಿ", other: "0ಬಿ" }, 10: { one: "00ಬಿ", other: "00ಬಿ" }, 11: { one: "000ಬಿ", other: "000ಬಿ" }, 12: { one: "0ಟ್ರಿ", other: "0ಟ್ರಿ" }, 13: { one: "00ಟ್ರಿ", other: "00ಟ್ರಿ" }, 14: { one: "000ಟ್ರಿ", other: "000ಟ್ರಿ" }, maxExponent: 14 }], m("kn").pluralGenerator({}))),
-                (m.b296611420 = s(["", , 1, 0, 3, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b364549034 = s(["", , 1, 0, 2, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("round"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a1834262930 = s(["", , 1, 0, 0, , , , , , "", "0", "-0", "-", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a1027906690 = s(["", , 2, 0, 0, , , , , , "", "00", "-00", "-", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a1132129657 = s(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("truncate"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { one: "0ಸಾ", other: "0ಸಾ" }, 4: { one: "00ಸಾ", other: "00ಸಾ" }, 5: { one: "000ಸಾ", other: "000ಸಾ" }, 6: { one: "0ಮಿ", other: "0ಮಿ" }, 7: { one: "00ಮಿ", other: "00ಮಿ" }, 8: { one: "000ಮಿ", other: "000ಮಿ" }, 9: { one: "0ಬಿ", other: "0ಬಿ" }, 10: { one: "00ಬಿ", other: "00ಬಿ" }, 11: { one: "000ಬಿ", other: "000ಬಿ" }, 12: { one: "0ಟ್ರಿ", other: "0ಟ್ರಿ" }, 13: { one: "00ಟ್ರಿ", other: "00ಟ್ರಿ" }, 14: { one: "000ಟ್ರಿ", other: "000ಟ್ರಿ" }, maxExponent: 14 }], m("kn").pluralGenerator({}))),
-                (m.a521843219 = s(["", , 1, 0, 1, , , , 3, , "%", "#,##0%", "-#,##0%%", "-", "%", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a1548600640 = s(["", , 1, 0, 0, , , , 3, , "%", "#,##0%", "-#,##0%%", "-", "%", g("round"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a1878366401 = s(["", , 1, 0, 1, , , , 3, , "%", "#,##0%", "-#,##0%%", "-", "%", g("round"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a2004107135 = s(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("truncate"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { one: "0ಸಾ", other: "0ಸಾ" }, 4: { one: "00ಸಾ", other: "00ಸಾ" }, 5: { one: "000ಸಾ", other: "000ಸಾ" }, 6: { one: "0ಮಿ", other: "0ಮಿ" }, 7: { one: "00ಮಿ", other: "00ಮಿ" }, 8: { one: "000ಮಿ", other: "000ಮಿ" }, 9: { one: "0ಬಿ", other: "0ಬಿ" }, 10: { one: "00ಬಿ", other: "00ಬಿ" }, 11: { one: "000ಬಿ", other: "000ಬಿ" }, 12: { one: "0ಟ್ರಿ", other: "0ಟ್ರಿ" }, 13: { one: "00ಟ್ರಿ", other: "00ಟ್ರಿ" }, 14: { one: "000ಟ್ರಿ", other: "000ಟ್ರಿ" }, maxExponent: 14 }], m("kn").pluralGenerator({}))),
-                (m.b1678900190 = s(["", , 1, 1, 1, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("truncate"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a1547591840 = s(["", , 1, 2, 2, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("truncate"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b68299812 = s(["", , 1, 0, 0, 1, 2, , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { one: "0ಸಾ", other: "0ಸಾ" }, 4: { one: "00ಸಾ", other: "00ಸಾ" }, 5: { one: "000ಸಾ", other: "000ಸಾ" }, 6: { one: "0ಮಿ", other: "0ಮಿ" }, 7: { one: "00ಮಿ", other: "00ಮಿ" }, 8: { one: "000ಮಿ", other: "000ಮಿ" }, 9: { one: "0ಬಿ", other: "0ಬಿ" }, 10: { one: "00ಬಿ", other: "00ಬಿ" }, 11: { one: "000ಬಿ", other: "000ಬಿ" }, 12: { one: "0ಟ್ರಿ", other: "0ಟ್ರಿ" }, 13: { one: "00ಟ್ರಿ", other: "00ಟ್ರಿ" }, 14: { one: "000ಟ್ರಿ", other: "000ಟ್ರಿ" }, maxExponent: 14 }], m("kn").pluralGenerator({}))),
-                (m.a501840169 = s(["'AED' ", , 1, 2, 2, , , 0, 3, , "", "'AED' #,##0.00", "-'AED' 'AED' #,##0.00", "-'AED' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b1826839698 = s(["'ALL' ", , 1, 0, 0, , , , 3, , "", "'ALL' #,##0", "-'ALL' 'ALL' #,##0", "-'ALL' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b368267577 = s(["'ARS' ", , 1, 2, 2, , , 0, 3, , "", "'ARS' #,##0.00", "-'ARS' 'ARS' #,##0.00", "-'ARS' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b2046256258 = s(["'A$'", , 1, 2, 2, , , 0, 3, , "", "'A$'#,##0.00", "-'A$''A$'#,##0.00", "-'A$'", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b1998994277 = s(["'BAM' ", , 1, 2, 2, , , 0, 3, , "", "'BAM' #,##0.00", "-'BAM' 'BAM' #,##0.00", "-'BAM' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b1015249225 = s(["'BDT' ", , 1, 2, 2, , , 0, 3, , "", "'BDT' #,##0.00", "-'BDT' 'BDT' #,##0.00", "-'BDT' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b2049176640 = s(["'BGN' ", , 1, 2, 2, , , 0, 3, , "", "'BGN' #,##0.00", "-'BGN' 'BGN' #,##0.00", "-'BGN' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b1800786071 = s(["'BHD' ", , 1, 3, 3, , , 0, 3, , "", "'BHD' #,##0.000", "-'BHD' 'BHD' #,##0.000", "-'BHD' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b2050818291 = s(["'R$'", , 1, 2, 2, , , 0, 3, , "", "'R$'#,##0.00", "-'R$''R$'#,##0.00", "-'R$'", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a1661026376 = s(["'BYR' ", , 1, 0, 0, , , , 3, , "", "'BYR' #,##0", "-'BYR' 'BYR' #,##0", "-'BYR' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a1386364115 = s(["'CA$'", , 1, 2, 2, , , 0, 3, , "", "'CA$'#,##0.00", "-'CA$''CA$'#,##0.00", "-'CA$'", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b1302657304 = s(["'CHF' ", , 1, 2, 2, , , 0, 3, , "", "'CHF' #,##0.00", "-'CHF' 'CHF' #,##0.00", "-'CHF' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b1011516556 = s(["'CLP' ", , 1, 0, 0, , , , 3, , "", "'CLP' #,##0", "-'CLP' 'CLP' #,##0", "-'CLP' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b85212953 = s(["'CN¥'", , 1, 2, 2, , , 0, 3, , "", "'CN¥'#,##0.00", "-'CN¥''CN¥'#,##0.00", "-'CN¥'", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b624268399 = s(["'COP' ", , 1, 0, 0, , , , 3, , "", "'COP' #,##0", "-'COP' 'COP' #,##0", "-'COP' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a1830645653 = s(["'CZK' ", , 1, 2, 2, , , 0, 3, , "", "'CZK' #,##0.00", "-'CZK' 'CZK' #,##0.00", "-'CZK' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a181670821 = s(["'DKK' ", , 1, 2, 2, , , 0, 3, , "", "'DKK' #,##0.00", "-'DKK' 'DKK' #,##0.00", "-'DKK' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a564054555 = s(["'DZD' ", , 1, 2, 2, , , 0, 3, , "", "'DZD' #,##0.00", "-'DZD' 'DZD' #,##0.00", "-'DZD' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b296929125 = s(["'EGP' ", , 1, 2, 2, , , 0, 3, , "", "'EGP' #,##0.00", "-'EGP' 'EGP' #,##0.00", "-'EGP' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b159554759 = s(["'€'", , 1, 2, 2, , , 0, 3, , "", "'€'#,##0.00", "-'€''€'#,##0.00", "-'€'", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a856819888 = s(["'£'", , 1, 2, 2, , , 0, 3, , "", "'£'#,##0.00", "-'£''£'#,##0.00", "-'£'", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b1327121545 = s(["'GHS' ", , 1, 2, 2, , , 0, 3, , "", "'GHS' #,##0.00", "-'GHS' 'GHS' #,##0.00", "-'GHS' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a594748229 = s(["'GTQ' ", , 1, 2, 2, , , 0, 3, , "", "'GTQ' #,##0.00", "-'GTQ' 'GTQ' #,##0.00", "-'GTQ' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b426430386 = s(["'HK$'", , 1, 2, 2, , , 0, 3, , "", "'HK$'#,##0.00", "-'HK$''HK$'#,##0.00", "-'HK$'", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a102462184 = s(["'HRK' ", , 1, 2, 2, , , 0, 3, , "", "'HRK' #,##0.00", "-'HRK' 'HRK' #,##0.00", "-'HRK' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b1437023856 = s(["'HUF' ", , 1, 2, 2, , , 0, 3, , "", "'HUF' #,##0.00", "-'HUF' 'HUF' #,##0.00", "-'HUF' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a1191435524 = s(["'IDR' ", , 1, 0, 0, , , , 3, , "", "'IDR' #,##0", "-'IDR' 'IDR' #,##0", "-'IDR' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a427251255 = s(["'₪'", , 1, 2, 2, , , 0, 3, , "", "'₪'#,##0.00", "-'₪''₪'#,##0.00", "-'₪'", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a321173446 = s(["'₹'", , 1, 2, 2, , , 0, 3, , "", "'₹'#,##0.00", "-'₹''₹'#,##0.00", "-'₹'", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b2037941175 = s(["'IQD' ", , 1, 0, 0, , , , 3, , "", "'IQD' #,##0", "-'IQD' 'IQD' #,##0", "-'IQD' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b1473533362 = s(["'ISK' ", , 1, 0, 0, , , , 3, , "", "'ISK' #,##0", "-'ISK' 'ISK' #,##0", "-'ISK' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a1280537578 = s(["'JP¥'", , 1, 0, 0, , , , 3, , "", "'JP¥'#,##0", "-'JP¥''JP¥'#,##0", "-'JP¥'", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a698020912 = s(["'KES' ", , 1, 2, 2, , , 0, 3, , "", "'KES' #,##0.00", "-'KES' 'KES' #,##0.00", "-'KES' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a1240597600 = s(["'₩'", , 1, 0, 0, , , , 3, , "", "'₩'#,##0", "-'₩''₩'#,##0", "-'₩'", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b1573978749 = s(["'KWD' ", , 1, 3, 3, , , 0, 3, , "", "'KWD' #,##0.000", "-'KWD' 'KWD' #,##0.000", "-'KWD' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a1786279204 = s(["'KZT' ", , 1, 2, 2, , , 0, 3, , "", "'KZT' #,##0.00", "-'KZT' 'KZT' #,##0.00", "-'KZT' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b648003513 = s(["'LBP' ", , 1, 0, 0, , , , 3, , "", "'LBP' #,##0", "-'LBP' 'LBP' #,##0", "-'LBP' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a1230124697 = s(["'MAD' ", , 1, 2, 2, , , 0, 3, , "", "'MAD' #,##0.00", "-'MAD' 'MAD' #,##0.00", "-'MAD' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b874226397 = s(["'MKD' ", , 1, 2, 2, , , 0, 3, , "", "'MKD' #,##0.00", "-'MKD' 'MKD' #,##0.00", "-'MKD' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a539066534 = s(["'MX$'", , 1, 2, 2, , , 0, 3, , "", "'MX$'#,##0.00", "-'MX$''MX$'#,##0.00", "-'MX$'", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a268776291 = s(["'MYR' ", , 1, 2, 2, , , 0, 3, , "", "'MYR' #,##0.00", "-'MYR' 'MYR' #,##0.00", "-'MYR' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a414347828 = s(["'NGN' ", , 1, 2, 2, , , 0, 3, , "", "'NGN' #,##0.00", "-'NGN' 'NGN' #,##0.00", "-'NGN' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a1106536287 = s(["'NOK' ", , 1, 2, 2, , , 0, 3, , "", "'NOK' #,##0.00", "-'NOK' 'NOK' #,##0.00", "-'NOK' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a1035501093 = s(["'NZ$'", , 1, 2, 2, , , 0, 3, , "", "'NZ$'#,##0.00", "-'NZ$''NZ$'#,##0.00", "-'NZ$'", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a673143152 = s(["'PEN' ", , 1, 2, 2, , , 0, 3, , "", "'PEN' #,##0.00", "-'PEN' 'PEN' #,##0.00", "-'PEN' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b110285967 = s(["'PHP' ", , 1, 2, 2, , , 0, 3, , "", "'PHP' #,##0.00", "-'PHP' 'PHP' #,##0.00", "-'PHP' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a41193508 = s(["'PKR' ", , 1, 0, 0, , , , 3, , "", "'PKR' #,##0", "-'PKR' 'PKR' #,##0", "-'PKR' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b1658896073 = s(["'PLN' ", , 1, 2, 2, , , 0, 3, , "", "'PLN' #,##0.00", "-'PLN' 'PLN' #,##0.00", "-'PLN' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a700101831 = s(["'QAR' ", , 1, 2, 2, , , 0, 3, , "", "'QAR' #,##0.00", "-'QAR' 'QAR' #,##0.00", "-'QAR' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a1842691000 = s(["'RON' ", , 1, 2, 2, , , 0, 3, , "", "'RON' #,##0.00", "-'RON' 'RON' #,##0.00", "-'RON' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b125435504 = s(["'RSD' ", , 1, 0, 0, , , , 3, , "", "'RSD' #,##0", "-'RSD' 'RSD' #,##0", "-'RSD' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b225163830 = s(["'RUB' ", , 1, 2, 2, , , 0, 3, , "", "'RUB' #,##0.00", "-'RUB' 'RUB' #,##0.00", "-'RUB' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b320966523 = s(["'SAR' ", , 1, 2, 2, , , 0, 3, , "", "'SAR' #,##0.00", "-'SAR' 'SAR' #,##0.00", "-'SAR' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a658216496 = s(["'SEK' ", , 1, 2, 2, , , 0, 3, , "", "'SEK' #,##0.00", "-'SEK' 'SEK' #,##0.00", "-'SEK' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b1377704103 = s(["'SGD' ", , 1, 2, 2, , , 0, 3, , "", "'SGD' #,##0.00", "-'SGD' 'SGD' #,##0.00", "-'SGD' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a842959948 = s(["'฿'", , 1, 2, 2, , , 0, 3, , "", "'฿'#,##0.00", "-'฿''฿'#,##0.00", "-'฿'", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b1979253067 = s(["'TND' ", , 1, 3, 3, , , 0, 3, , "", "'TND' #,##0.000", "-'TND' 'TND' #,##0.000", "-'TND' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b216866802 = s(["'TRY' ", , 1, 2, 2, , , 0, 3, , "", "'TRY' #,##0.00", "-'TRY' 'TRY' #,##0.00", "-'TRY' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b226114453 = s(["'NT$'", , 1, 2, 2, , , 0, 3, , "", "'NT$'#,##0.00", "-'NT$''NT$'#,##0.00", "-'NT$'", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b993129094 = s(["'TZS' ", , 1, 0, 0, , , , 3, , "", "'TZS' #,##0", "-'TZS' 'TZS' #,##0", "-'TZS' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b581415923 = s(["'UAH' ", , 1, 2, 2, , , 0, 3, , "", "'UAH' #,##0.00", "-'UAH' 'UAH' #,##0.00", "-'UAH' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a161041331 = s(["'UGX' ", , 1, 0, 0, , , , 3, , "", "'UGX' #,##0", "-'UGX' 'UGX' #,##0", "-'UGX' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b535703887 = s(["'$'", , 1, 2, 2, , , 0, 3, , "", "'$'#,##0.00", "-'$''$'#,##0.00", "-'$'", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a1654407090 = s(["'VEF' ", , 1, 2, 2, , , 0, 3, , "", "'VEF' #,##0.00", "-'VEF' 'VEF' #,##0.00", "-'VEF' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a847570590 = s(["'₫'", , 1, 0, 0, , , , 3, , "", "'₫'#,##0", "-'₫''₫'#,##0", "-'₫'", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a400261534 = s(["'ZAR' ", , 1, 2, 2, , , 0, 3, , "", "'ZAR' #,##0.00", "-'ZAR' 'ZAR' #,##0.00", "-'ZAR' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b1216779067 = s(["'ZMW' ", , 1, 2, 2, , , 0, 3, , "", "'ZMW' #,##0.00", "-'ZMW' 'ZMW' #,##0.00", "-'ZMW' ", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.b2118456946 = s(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a558501233 = s(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { one: "0ಸಾ", other: "0ಸಾ" }, 4: { one: "00ಸಾ", other: "00ಸಾ" }, 5: { one: "000ಸಾ", other: "000ಸಾ" }, 6: { one: "0ಮಿ", other: "0ಮಿ" }, 7: { one: "00ಮಿ", other: "00ಮಿ" }, 8: { one: "000ಮಿ", other: "000ಮಿ" }, 9: { one: "0ಬಿ", other: "0ಬಿ" }, 10: { one: "00ಬಿ", other: "00ಬಿ" }, 11: { one: "000ಬಿ", other: "000ಬಿ" }, 12: { one: "0ಟ್ರಿ", other: "0ಟ್ರಿ" }, 13: { one: "00ಟ್ರಿ", other: "00ಟ್ರಿ" }, 14: { one: "000ಟ್ರಿ", other: "000ಟ್ರಿ" }, maxExponent: 14 }], m("kn").pluralGenerator({}))),
-                (m.a3769523 = s(["", , 1, 0, 2, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { one: "0ಸಾ", other: "0ಸಾ" }, 4: { one: "00ಸಾ", other: "00ಸಾ" }, 5: { one: "000ಸಾ", other: "000ಸಾ" }, 6: { one: "0ಮಿ", other: "0ಮಿ" }, 7: { one: "00ಮಿ", other: "00ಮಿ" }, 8: { one: "000ಮಿ", other: "000ಮಿ" }, 9: { one: "0ಬಿ", other: "0ಬಿ" }, 10: { one: "00ಬಿ", other: "00ಬಿ" }, 11: { one: "000ಬಿ", other: "000ಬಿ" }, 12: { one: "0ಟ್ರಿ", other: "0ಟ್ರಿ" }, 13: { one: "00ಟ್ರಿ", other: "00ಟ್ರಿ" }, 14: { one: "000ಟ್ರಿ", other: "000ಟ್ರಿ" }, maxExponent: 14 }], m("kn").pluralGenerator({}))),
-                (m.a1324394708 = s(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("round"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (m.a1834121042 = h(function (e) {
+            g._validateParameterTypeNumber, g._validateParameterPresence;
+            var s = g._numberRound,
+                h = (g._numberFormat, g._numberFormatterFn),
+                k = g._pluralGeneratorFn,
+                y = (g._currencyNameFormat, g._currencyFormatterFn),
+                p = (g._validateParameterTypeDate, g._dateToPartsFormat, g._dateToPartsFormatterFn),
+                N = (g._dateFormat, g._dateFormatterFn),
+                l = g._relativeTimeFormatterFn,
+                j = g._unitFormatterFn;
+            (g.b905926632 = h(["", , 1, 0, 1, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s("truncate"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { one: "0ಸಾ", other: "0ಸಾ" }, 4: { one: "00ಸಾ", other: "00ಸಾ" }, 5: { one: "000ಸಾ", other: "000ಸಾ" }, 6: { one: "0ಮಿ", other: "0ಮಿ" }, 7: { one: "00ಮಿ", other: "00ಮಿ" }, 8: { one: "000ಮಿ", other: "000ಮಿ" }, 9: { one: "0ಬಿ", other: "0ಬಿ" }, 10: { one: "00ಬಿ", other: "00ಬಿ" }, 11: { one: "000ಬಿ", other: "000ಬಿ" }, 12: { one: "0ಟ್ರಿ", other: "0ಟ್ರಿ" }, 13: { one: "00ಟ್ರಿ", other: "00ಟ್ರಿ" }, 14: { one: "000ಟ್ರಿ", other: "000ಟ್ರಿ" }, maxExponent: 14 }], g("kn").pluralGenerator({}))),
+                (g.b296611420 = h(["", , 1, 0, 3, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b364549034 = h(["", , 1, 0, 2, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s("round"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a1834262930 = h(["", , 1, 0, 0, , , , , , "", "0", "-0", "-", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a1027906690 = h(["", , 2, 0, 0, , , , , , "", "00", "-00", "-", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a1132129657 = h(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s("truncate"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { one: "0ಸಾ", other: "0ಸಾ" }, 4: { one: "00ಸಾ", other: "00ಸಾ" }, 5: { one: "000ಸಾ", other: "000ಸಾ" }, 6: { one: "0ಮಿ", other: "0ಮಿ" }, 7: { one: "00ಮಿ", other: "00ಮಿ" }, 8: { one: "000ಮಿ", other: "000ಮಿ" }, 9: { one: "0ಬಿ", other: "0ಬಿ" }, 10: { one: "00ಬಿ", other: "00ಬಿ" }, 11: { one: "000ಬಿ", other: "000ಬಿ" }, 12: { one: "0ಟ್ರಿ", other: "0ಟ್ರಿ" }, 13: { one: "00ಟ್ರಿ", other: "00ಟ್ರಿ" }, 14: { one: "000ಟ್ರಿ", other: "000ಟ್ರಿ" }, maxExponent: 14 }], g("kn").pluralGenerator({}))),
+                (g.a521843219 = h(["", , 1, 0, 1, , , , 3, , "%", "#,##0%", "-#,##0%%", "-", "%", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a1548600640 = h(["", , 1, 0, 0, , , , 3, , "%", "#,##0%", "-#,##0%%", "-", "%", s("round"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a1878366401 = h(["", , 1, 0, 1, , , , 3, , "%", "#,##0%", "-#,##0%%", "-", "%", s("round"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a2004107135 = h(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s("truncate"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { one: "0ಸಾ", other: "0ಸಾ" }, 4: { one: "00ಸಾ", other: "00ಸಾ" }, 5: { one: "000ಸಾ", other: "000ಸಾ" }, 6: { one: "0ಮಿ", other: "0ಮಿ" }, 7: { one: "00ಮಿ", other: "00ಮಿ" }, 8: { one: "000ಮಿ", other: "000ಮಿ" }, 9: { one: "0ಬಿ", other: "0ಬಿ" }, 10: { one: "00ಬಿ", other: "00ಬಿ" }, 11: { one: "000ಬಿ", other: "000ಬಿ" }, 12: { one: "0ಟ್ರಿ", other: "0ಟ್ರಿ" }, 13: { one: "00ಟ್ರಿ", other: "00ಟ್ರಿ" }, 14: { one: "000ಟ್ರಿ", other: "000ಟ್ರಿ" }, maxExponent: 14 }], g("kn").pluralGenerator({}))),
+                (g.b1678900190 = h(["", , 1, 1, 1, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s("truncate"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a1547591840 = h(["", , 1, 2, 2, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s("truncate"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b68299812 = h(["", , 1, 0, 0, 1, 2, , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { one: "0ಸಾ", other: "0ಸಾ" }, 4: { one: "00ಸಾ", other: "00ಸಾ" }, 5: { one: "000ಸಾ", other: "000ಸಾ" }, 6: { one: "0ಮಿ", other: "0ಮಿ" }, 7: { one: "00ಮಿ", other: "00ಮಿ" }, 8: { one: "000ಮಿ", other: "000ಮಿ" }, 9: { one: "0ಬಿ", other: "0ಬಿ" }, 10: { one: "00ಬಿ", other: "00ಬಿ" }, 11: { one: "000ಬಿ", other: "000ಬಿ" }, 12: { one: "0ಟ್ರಿ", other: "0ಟ್ರಿ" }, 13: { one: "00ಟ್ರಿ", other: "00ಟ್ರಿ" }, 14: { one: "000ಟ್ರಿ", other: "000ಟ್ರಿ" }, maxExponent: 14 }], g("kn").pluralGenerator({}))),
+                (g.a501840169 = h(["'AED' ", , 1, 2, 2, , , 0, 3, , "", "'AED' #,##0.00", "-'AED' 'AED' #,##0.00", "-'AED' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b1826839698 = h(["'ALL' ", , 1, 0, 0, , , , 3, , "", "'ALL' #,##0", "-'ALL' 'ALL' #,##0", "-'ALL' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b368267577 = h(["'ARS' ", , 1, 2, 2, , , 0, 3, , "", "'ARS' #,##0.00", "-'ARS' 'ARS' #,##0.00", "-'ARS' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b2046256258 = h(["'A$'", , 1, 2, 2, , , 0, 3, , "", "'A$'#,##0.00", "-'A$''A$'#,##0.00", "-'A$'", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b1998994277 = h(["'BAM' ", , 1, 2, 2, , , 0, 3, , "", "'BAM' #,##0.00", "-'BAM' 'BAM' #,##0.00", "-'BAM' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b1015249225 = h(["'BDT' ", , 1, 2, 2, , , 0, 3, , "", "'BDT' #,##0.00", "-'BDT' 'BDT' #,##0.00", "-'BDT' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b2049176640 = h(["'BGN' ", , 1, 2, 2, , , 0, 3, , "", "'BGN' #,##0.00", "-'BGN' 'BGN' #,##0.00", "-'BGN' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b1800786071 = h(["'BHD' ", , 1, 3, 3, , , 0, 3, , "", "'BHD' #,##0.000", "-'BHD' 'BHD' #,##0.000", "-'BHD' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b2050818291 = h(["'R$'", , 1, 2, 2, , , 0, 3, , "", "'R$'#,##0.00", "-'R$''R$'#,##0.00", "-'R$'", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a1661026376 = h(["'BYR' ", , 1, 0, 0, , , , 3, , "", "'BYR' #,##0", "-'BYR' 'BYR' #,##0", "-'BYR' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a1386364115 = h(["'CA$'", , 1, 2, 2, , , 0, 3, , "", "'CA$'#,##0.00", "-'CA$''CA$'#,##0.00", "-'CA$'", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b1302657304 = h(["'CHF' ", , 1, 2, 2, , , 0, 3, , "", "'CHF' #,##0.00", "-'CHF' 'CHF' #,##0.00", "-'CHF' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b1011516556 = h(["'CLP' ", , 1, 0, 0, , , , 3, , "", "'CLP' #,##0", "-'CLP' 'CLP' #,##0", "-'CLP' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b85212953 = h(["'CN¥'", , 1, 2, 2, , , 0, 3, , "", "'CN¥'#,##0.00", "-'CN¥''CN¥'#,##0.00", "-'CN¥'", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b624268399 = h(["'COP' ", , 1, 0, 0, , , , 3, , "", "'COP' #,##0", "-'COP' 'COP' #,##0", "-'COP' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a1830645653 = h(["'CZK' ", , 1, 2, 2, , , 0, 3, , "", "'CZK' #,##0.00", "-'CZK' 'CZK' #,##0.00", "-'CZK' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a181670821 = h(["'DKK' ", , 1, 2, 2, , , 0, 3, , "", "'DKK' #,##0.00", "-'DKK' 'DKK' #,##0.00", "-'DKK' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a564054555 = h(["'DZD' ", , 1, 2, 2, , , 0, 3, , "", "'DZD' #,##0.00", "-'DZD' 'DZD' #,##0.00", "-'DZD' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b296929125 = h(["'EGP' ", , 1, 2, 2, , , 0, 3, , "", "'EGP' #,##0.00", "-'EGP' 'EGP' #,##0.00", "-'EGP' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b159554759 = h(["'€'", , 1, 2, 2, , , 0, 3, , "", "'€'#,##0.00", "-'€''€'#,##0.00", "-'€'", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a856819888 = h(["'£'", , 1, 2, 2, , , 0, 3, , "", "'£'#,##0.00", "-'£''£'#,##0.00", "-'£'", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b1327121545 = h(["'GHS' ", , 1, 2, 2, , , 0, 3, , "", "'GHS' #,##0.00", "-'GHS' 'GHS' #,##0.00", "-'GHS' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a594748229 = h(["'GTQ' ", , 1, 2, 2, , , 0, 3, , "", "'GTQ' #,##0.00", "-'GTQ' 'GTQ' #,##0.00", "-'GTQ' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b426430386 = h(["'HK$'", , 1, 2, 2, , , 0, 3, , "", "'HK$'#,##0.00", "-'HK$''HK$'#,##0.00", "-'HK$'", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a102462184 = h(["'HRK' ", , 1, 2, 2, , , 0, 3, , "", "'HRK' #,##0.00", "-'HRK' 'HRK' #,##0.00", "-'HRK' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b1437023856 = h(["'HUF' ", , 1, 2, 2, , , 0, 3, , "", "'HUF' #,##0.00", "-'HUF' 'HUF' #,##0.00", "-'HUF' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a1191435524 = h(["'IDR' ", , 1, 0, 0, , , , 3, , "", "'IDR' #,##0", "-'IDR' 'IDR' #,##0", "-'IDR' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a427251255 = h(["'₪'", , 1, 2, 2, , , 0, 3, , "", "'₪'#,##0.00", "-'₪''₪'#,##0.00", "-'₪'", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a321173446 = h(["'₹'", , 1, 2, 2, , , 0, 3, , "", "'₹'#,##0.00", "-'₹''₹'#,##0.00", "-'₹'", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b2037941175 = h(["'IQD' ", , 1, 0, 0, , , , 3, , "", "'IQD' #,##0", "-'IQD' 'IQD' #,##0", "-'IQD' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b1473533362 = h(["'ISK' ", , 1, 0, 0, , , , 3, , "", "'ISK' #,##0", "-'ISK' 'ISK' #,##0", "-'ISK' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a1280537578 = h(["'JP¥'", , 1, 0, 0, , , , 3, , "", "'JP¥'#,##0", "-'JP¥''JP¥'#,##0", "-'JP¥'", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a698020912 = h(["'KES' ", , 1, 2, 2, , , 0, 3, , "", "'KES' #,##0.00", "-'KES' 'KES' #,##0.00", "-'KES' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a1240597600 = h(["'₩'", , 1, 0, 0, , , , 3, , "", "'₩'#,##0", "-'₩''₩'#,##0", "-'₩'", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b1573978749 = h(["'KWD' ", , 1, 3, 3, , , 0, 3, , "", "'KWD' #,##0.000", "-'KWD' 'KWD' #,##0.000", "-'KWD' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a1786279204 = h(["'KZT' ", , 1, 2, 2, , , 0, 3, , "", "'KZT' #,##0.00", "-'KZT' 'KZT' #,##0.00", "-'KZT' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b648003513 = h(["'LBP' ", , 1, 0, 0, , , , 3, , "", "'LBP' #,##0", "-'LBP' 'LBP' #,##0", "-'LBP' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a1230124697 = h(["'MAD' ", , 1, 2, 2, , , 0, 3, , "", "'MAD' #,##0.00", "-'MAD' 'MAD' #,##0.00", "-'MAD' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b874226397 = h(["'MKD' ", , 1, 2, 2, , , 0, 3, , "", "'MKD' #,##0.00", "-'MKD' 'MKD' #,##0.00", "-'MKD' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a539066534 = h(["'MX$'", , 1, 2, 2, , , 0, 3, , "", "'MX$'#,##0.00", "-'MX$''MX$'#,##0.00", "-'MX$'", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a268776291 = h(["'MYR' ", , 1, 2, 2, , , 0, 3, , "", "'MYR' #,##0.00", "-'MYR' 'MYR' #,##0.00", "-'MYR' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a414347828 = h(["'NGN' ", , 1, 2, 2, , , 0, 3, , "", "'NGN' #,##0.00", "-'NGN' 'NGN' #,##0.00", "-'NGN' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a1106536287 = h(["'NOK' ", , 1, 2, 2, , , 0, 3, , "", "'NOK' #,##0.00", "-'NOK' 'NOK' #,##0.00", "-'NOK' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a1035501093 = h(["'NZ$'", , 1, 2, 2, , , 0, 3, , "", "'NZ$'#,##0.00", "-'NZ$''NZ$'#,##0.00", "-'NZ$'", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a673143152 = h(["'PEN' ", , 1, 2, 2, , , 0, 3, , "", "'PEN' #,##0.00", "-'PEN' 'PEN' #,##0.00", "-'PEN' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b110285967 = h(["'PHP' ", , 1, 2, 2, , , 0, 3, , "", "'PHP' #,##0.00", "-'PHP' 'PHP' #,##0.00", "-'PHP' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a41193508 = h(["'PKR' ", , 1, 0, 0, , , , 3, , "", "'PKR' #,##0", "-'PKR' 'PKR' #,##0", "-'PKR' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b1658896073 = h(["'PLN' ", , 1, 2, 2, , , 0, 3, , "", "'PLN' #,##0.00", "-'PLN' 'PLN' #,##0.00", "-'PLN' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a700101831 = h(["'QAR' ", , 1, 2, 2, , , 0, 3, , "", "'QAR' #,##0.00", "-'QAR' 'QAR' #,##0.00", "-'QAR' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a1842691000 = h(["'RON' ", , 1, 2, 2, , , 0, 3, , "", "'RON' #,##0.00", "-'RON' 'RON' #,##0.00", "-'RON' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b125435504 = h(["'RSD' ", , 1, 0, 0, , , , 3, , "", "'RSD' #,##0", "-'RSD' 'RSD' #,##0", "-'RSD' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b225163830 = h(["'RUB' ", , 1, 2, 2, , , 0, 3, , "", "'RUB' #,##0.00", "-'RUB' 'RUB' #,##0.00", "-'RUB' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b320966523 = h(["'SAR' ", , 1, 2, 2, , , 0, 3, , "", "'SAR' #,##0.00", "-'SAR' 'SAR' #,##0.00", "-'SAR' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a658216496 = h(["'SEK' ", , 1, 2, 2, , , 0, 3, , "", "'SEK' #,##0.00", "-'SEK' 'SEK' #,##0.00", "-'SEK' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b1377704103 = h(["'SGD' ", , 1, 2, 2, , , 0, 3, , "", "'SGD' #,##0.00", "-'SGD' 'SGD' #,##0.00", "-'SGD' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a842959948 = h(["'฿'", , 1, 2, 2, , , 0, 3, , "", "'฿'#,##0.00", "-'฿''฿'#,##0.00", "-'฿'", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b1979253067 = h(["'TND' ", , 1, 3, 3, , , 0, 3, , "", "'TND' #,##0.000", "-'TND' 'TND' #,##0.000", "-'TND' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b216866802 = h(["'TRY' ", , 1, 2, 2, , , 0, 3, , "", "'TRY' #,##0.00", "-'TRY' 'TRY' #,##0.00", "-'TRY' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b226114453 = h(["'NT$'", , 1, 2, 2, , , 0, 3, , "", "'NT$'#,##0.00", "-'NT$''NT$'#,##0.00", "-'NT$'", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b993129094 = h(["'TZS' ", , 1, 0, 0, , , , 3, , "", "'TZS' #,##0", "-'TZS' 'TZS' #,##0", "-'TZS' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b581415923 = h(["'UAH' ", , 1, 2, 2, , , 0, 3, , "", "'UAH' #,##0.00", "-'UAH' 'UAH' #,##0.00", "-'UAH' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a161041331 = h(["'UGX' ", , 1, 0, 0, , , , 3, , "", "'UGX' #,##0", "-'UGX' 'UGX' #,##0", "-'UGX' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b535703887 = h(["'$'", , 1, 2, 2, , , 0, 3, , "", "'$'#,##0.00", "-'$''$'#,##0.00", "-'$'", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a1654407090 = h(["'VEF' ", , 1, 2, 2, , , 0, 3, , "", "'VEF' #,##0.00", "-'VEF' 'VEF' #,##0.00", "-'VEF' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a847570590 = h(["'₫'", , 1, 0, 0, , , , 3, , "", "'₫'#,##0", "-'₫''₫'#,##0", "-'₫'", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a400261534 = h(["'ZAR' ", , 1, 2, 2, , , 0, 3, , "", "'ZAR' #,##0.00", "-'ZAR' 'ZAR' #,##0.00", "-'ZAR' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b1216779067 = h(["'ZMW' ", , 1, 2, 2, , , 0, 3, , "", "'ZMW' #,##0.00", "-'ZMW' 'ZMW' #,##0.00", "-'ZMW' ", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.b2118456946 = h(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a558501233 = h(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { one: "0ಸಾ", other: "0ಸಾ" }, 4: { one: "00ಸಾ", other: "00ಸಾ" }, 5: { one: "000ಸಾ", other: "000ಸಾ" }, 6: { one: "0ಮಿ", other: "0ಮಿ" }, 7: { one: "00ಮಿ", other: "00ಮಿ" }, 8: { one: "000ಮಿ", other: "000ಮಿ" }, 9: { one: "0ಬಿ", other: "0ಬಿ" }, 10: { one: "00ಬಿ", other: "00ಬಿ" }, 11: { one: "000ಬಿ", other: "000ಬಿ" }, 12: { one: "0ಟ್ರಿ", other: "0ಟ್ರಿ" }, 13: { one: "00ಟ್ರಿ", other: "00ಟ್ರಿ" }, 14: { one: "000ಟ್ರಿ", other: "000ಟ್ರಿ" }, maxExponent: 14 }], g("kn").pluralGenerator({}))),
+                (g.a3769523 = h(["", , 1, 0, 2, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { one: "0ಸಾ", other: "0ಸಾ" }, 4: { one: "00ಸಾ", other: "00ಸಾ" }, 5: { one: "000ಸಾ", other: "000ಸಾ" }, 6: { one: "0ಮಿ", other: "0ಮಿ" }, 7: { one: "00ಮಿ", other: "00ಮಿ" }, 8: { one: "000ಮಿ", other: "000ಮಿ" }, 9: { one: "0ಬಿ", other: "0ಬಿ" }, 10: { one: "00ಬಿ", other: "00ಬಿ" }, 11: { one: "000ಬಿ", other: "000ಬಿ" }, 12: { one: "0ಟ್ರಿ", other: "0ಟ್ರಿ" }, 13: { one: "00ಟ್ರಿ", other: "00ಟ್ರಿ" }, 14: { one: "000ಟ್ರಿ", other: "000ಟ್ರಿ" }, maxExponent: 14 }], g("kn").pluralGenerator({}))),
+                (g.a1324394708 = h(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s("round"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
+                (g.a1834121042 = k(function (e) {
                     return e >= 0 && e <= 1 ? "one" : "other";
                 })),
-                (m.b485336044 = k(m("kn").numberFormatter({ raw: "'AED' #,##0.00" }))),
-                (m.a1661255635 = k(m("kn").numberFormatter({ raw: "'ALL' #,##0" }))),
-                (m.b1403252814 = k(m("kn").numberFormatter({ raw: "'ARS' #,##0.00" }))),
-                (m.a829820964 = k(m("kn").numberFormatter({ raw: "'A$'#,##0.00" }))),
-                (m.b2034878074 = k(m("kn").numberFormatter({ raw: "'BAM' #,##0.00" }))),
-                (m.a828037026 = k(m("kn").numberFormatter({ raw: "'BDT' #,##0.00" }))),
-                (m.b976194133 = k(m("kn").numberFormatter({ raw: "'BGN' #,##0.00" }))),
-                (m.b374981962 = k(m("kn").numberFormatter({ raw: "'BHD' #,##0.000" }))),
-                (m.a139153464 = k(m("kn").numberFormatter({ raw: "'R$'#,##0.00" }))),
-                (m.b2066480455 = k(m("kn").numberFormatter({ raw: "'BYR' #,##0" }))),
-                (m.b549730098 = k(m("kn").numberFormatter({ raw: "'CA$'#,##0.00" }))),
-                (m.a1425086675 = k(m("kn").numberFormatter({ raw: "'CHF' #,##0.00" }))),
-                (m.a966425613 = k(m("kn").numberFormatter({ raw: "'CLP' #,##0" }))),
-                (m.b1295871962 = k(m("kn").numberFormatter({ raw: "'CN¥'#,##0.00" }))),
-                (m.b666030640 = k(m("kn").numberFormatter({ raw: "'COP' #,##0" }))),
-                (m.a363429504 = k(m("kn").numberFormatter({ raw: "'CZK' #,##0.00" }))),
-                (m.a1678586512 = k(m("kn").numberFormatter({ raw: "'DKK' #,##0.00" }))),
-                (m.a1905835782 = k(m("kn").numberFormatter({ raw: "'DZD' #,##0.00" }))),
-                (m.a14527878 = k(m("kn").numberFormatter({ raw: "'EGP' #,##0.00" }))),
-                (m.b388064174 = k(m("kn").numberFormatter({ raw: "'€'#,##0.00" }))),
-                (m.b937369857 = k(m("kn").numberFormatter({ raw: "'£'#,##0.00" }))),
-                (m.a178572386 = k(m("kn").numberFormatter({ raw: "'GHS' #,##0.00" }))),
-                (m.b2113543632 = k(m("kn").numberFormatter({ raw: "'GTQ' #,##0.00" }))),
-                (m.b140510797 = k(m("kn").numberFormatter({ raw: "'HK$'#,##0.00" }))),
-                (m.a1977451731 = k(m("kn").numberFormatter({ raw: "'HRK' #,##0.00" }))),
-                (m.a201849723 = k(m("kn").numberFormatter({ raw: "'HUF' #,##0.00" }))),
-                (m.a85549181 = k(m("kn").numberFormatter({ raw: "'IDR' #,##0" }))),
-                (m.b1375726812 = k(m("kn").numberFormatter({ raw: "'₪'#,##0.00" }))),
-                (m.a370651399 = k(m("kn").numberFormatter({ raw: "'₹'#,##0.00" }))),
-                (m.b1662612968 = k(m("kn").numberFormatter({ raw: "'IQD' #,##0" }))),
-                (m.a312798451 = k(m("kn").numberFormatter({ raw: "'ISK' #,##0" }))),
-                (m.b206094143 = k(m("kn").numberFormatter({ raw: "'JP¥'#,##0" }))),
-                (m.a192335387 = k(m("kn").numberFormatter({ raw: "'KES' #,##0.00" }))),
-                (m.b1040502044 = k(m("kn").numberFormatter({ raw: "'₩'#,##0" }))),
-                (m.b1441904804 = k(m("kn").numberFormatter({ raw: "'KWD' #,##0.000" }))),
-                (m.a1678672655 = k(m("kn").numberFormatter({ raw: "'KZT' #,##0.00" }))),
-                (m.b813252774 = k(m("kn").numberFormatter({ raw: "'LBP' #,##0" }))),
-                (m.b301495932 = k(m("kn").numberFormatter({ raw: "'MAD' #,##0.00" }))),
-                (m.b16393714 = k(m("kn").numberFormatter({ raw: "'MKD' #,##0.00" }))),
-                (m.b1077456239 = k(m("kn").numberFormatter({ raw: "'MX$'#,##0.00" }))),
-                (m.b75435954 = k(m("kn").numberFormatter({ raw: "'MYR' #,##0.00" }))),
-                (m.b1537306593 = k(m("kn").numberFormatter({ raw: "'NGN' #,##0.00" }))),
-                (m.a1181868106 = k(m("kn").numberFormatter({ raw: "'NOK' #,##0.00" }))),
-                (m.b2140897348 = k(m("kn").numberFormatter({ raw: "'NZ$'#,##0.00" }))),
-                (m.a173306715 = k(m("kn").numberFormatter({ raw: "'PEN' #,##0.00" }))),
-                (m.b1401891236 = k(m("kn").numberFormatter({ raw: "'PHP' #,##0.00" }))),
-                (m.a1317878109 = k(m("kn").numberFormatter({ raw: "'PKR' #,##0" }))),
-                (m.a2090865186 = k(m("kn").numberFormatter({ raw: "'PLN' #,##0.00" }))),
-                (m.b1519381070 = k(m("kn").numberFormatter({ raw: "'QAR' #,##0.00" }))),
-                (m.b350937693 = k(m("kn").numberFormatter({ raw: "'RON' #,##0.00" }))),
-                (m.b1382181775 = k(m("kn").numberFormatter({ raw: "'RSD' #,##0" }))),
-                (m.a335567285 = k(m("kn").numberFormatter({ raw: "'RUB' #,##0.00" }))),
-                (m.a1966239600 = k(m("kn").numberFormatter({ raw: "'SAR' #,##0.00" }))),
-                (m.a1020882971 = k(m("kn").numberFormatter({ raw: "'SEK' #,##0.00" }))),
-                (m.b1699481020 = k(m("kn").numberFormatter({ raw: "'SGD' #,##0.00" }))),
-                (m.a873574694 = k(m("kn").numberFormatter({ raw: "'฿'#,##0.00" }))),
-                (m.a1960887786 = k(m("kn").numberFormatter({ raw: "'TND' #,##0.000" }))),
-                (m.a1817147385 = k(m("kn").numberFormatter({ raw: "'TRY' #,##0.00" }))),
-                (m.a1358486323 = k(m("kn").numberFormatter({ raw: "'NT$'#,##0.00" }))),
-                (m.a155467335 = k(m("kn").numberFormatter({ raw: "'TZS' #,##0" }))),
-                (m.a870601464 = k(m("kn").numberFormatter({ raw: "'UAH' #,##0.00" }))),
-                (m.b1936244626 = k(m("kn").numberFormatter({ raw: "'UGX' #,##0" }))),
-                (m.b448718066 = k(m("kn").numberFormatter({ raw: "'$'#,##0.00" }))),
-                (m.a1811200925 = k(m("kn").numberFormatter({ raw: "'VEF' #,##0.00" }))),
-                (m.a1151541160 = k(m("kn").numberFormatter({ raw: "'₫'#,##0" }))),
-                (m.a1281010057 = k(m("kn").numberFormatter({ raw: "'ZAR' #,##0.00" }))),
-                (m.b810701904 = k(m("kn").numberFormatter({ raw: "'ZMW' #,##0.00" }))),
-                (m.a148478650 = y({ 1: m("kn").numberFormatter({ raw: "0" }) }, { pattern: "MMM d", timeSeparator: ":", months: { M: { 3: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿ", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗ", 9: "ಸೆಪ್ಟೆಂ", 10: "ಅಕ್ಟೋ", 11: "ನವೆಂ", 12: "ಡಿಸೆಂ" } } } })),
-                (m.b337246877 = y({ 1: m("kn").numberFormatter({ raw: "0" }) }, { pattern: "MMM d,y", timeSeparator: ":", months: { M: { 3: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿ", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗ", 9: "ಸೆಪ್ಟೆಂ", 10: "ಅಕ್ಟೋ", 11: "ನವೆಂ", 12: "ಡಿಸೆಂ" } } } })),
-                (m.a1138850316 = y({ 1: m("kn").numberFormatter({ raw: "0" }), 2: m("kn").numberFormatter({ raw: "00" }) }, { pattern: "h:mm a", timeSeparator: ":", dayPeriods: { am: "ಪೂರ್ವಾಹ್ನ", pm: "ಅಪರಾಹ್ನ" } })),
-                (m.a281121543 = y({ 1: m("kn").numberFormatter({ raw: "0" }) }, { pattern: "E, d MMM", timeSeparator: ":", days: { E: { 1: { sun: "ಭಾನು", mon: "ಸೋಮ", tue: "ಮಂಗಳ", wed: "ಬುಧ", thu: "ಗುರು", fri: "ಶುಕ್ರ", sat: "ಶನಿ" } } }, months: { M: { 3: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿ", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗ", 9: "ಸೆಪ್ಟೆಂ", 10: "ಅಕ್ಟೋ", 11: "ನವೆಂ", 12: "ಡಿಸೆಂ" } } } })),
-                (m.b1891467906 = y({ 1: m("kn").numberFormatter({ raw: "0" }) }, { pattern: "E, MMM d, y", timeSeparator: ":", days: { E: { 1: { sun: "ಭಾನು", mon: "ಸೋಮ", tue: "ಮಂಗಳ", wed: "ಬುಧ", thu: "ಗುರು", fri: "ಶುಕ್ರ", sat: "ಶನಿ" } } }, months: { M: { 3: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿ", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗ", 9: "ಸೆಪ್ಟೆಂ", 10: "ಅಕ್ಟೋ", 11: "ನವೆಂ", 12: "ಡಿಸೆಂ" } } } })),
-                (m.a288509711 = y({ 1: m("kn").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM", timeSeparator: ":", months: { M: { 4: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿಲ್", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗಸ್ಟ್", 9: "ಸೆಪ್ಟೆಂಬರ್", 10: "ಅಕ್ಟೋಬರ್", 11: "ನವೆಂಬರ್", 12: "ಡಿಸೆಂಬರ್" } } } })),
-                (m.a1960776483 = y({ 1: m("kn").numberFormatter({ raw: "0" }), 2: m("kn").numberFormatter({ raw: "00" }) }, { pattern: "MMMM d, y hh:mm:ss a z", timeSeparator: ":", months: { M: { 4: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿಲ್", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗಸ್ಟ್", 9: "ಸೆಪ್ಟೆಂಬರ್", 10: "ಅಕ್ಟೋಬರ್", 11: "ನವೆಂಬರ್", 12: "ಡಿಸೆಂಬರ್" } } }, dayPeriods: { am: "ಪೂರ್ವಾಹ್ನ", pm: "ಅಪರಾಹ್ನ" }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: ["+H;-H", "+H:mm;-H:mm"] })),
-                (m.b1907584514 = y({ 1: m("kn").numberFormatter({ raw: "0" }), 2: m("kn").numberFormatter({ raw: "00" }) }, { pattern: "MMM d,y h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿ", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗ", 9: "ಸೆಪ್ಟೆಂ", 10: "ಅಕ್ಟೋ", 11: "ನವೆಂ", 12: "ಡಿಸೆಂ" } } }, dayPeriods: { am: "ಪೂರ್ವಾಹ್ನ", pm: "ಅಪರಾಹ್ನ" } })),
-                (m.b1455625834 = y({ 1: m("kn").numberFormatter({ raw: "0" }) }, { pattern: "MMMM d, y", timeSeparator: ":", months: { M: { 4: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿಲ್", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗಸ್ಟ್", 9: "ಸೆಪ್ಟೆಂಬರ್", 10: "ಅಕ್ಟೋಬರ್", 11: "ನವೆಂಬರ್", 12: "ಡಿಸೆಂಬರ್" } } } })),
-                (m.a1018178965 = y({ 1: m("kn").numberFormatter({ raw: "0" }), 2: m("kn").numberFormatter({ raw: "00" }) }, { pattern: "MMM d h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿ", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗ", 9: "ಸೆಪ್ಟೆಂ", 10: "ಅಕ್ಟೋ", 11: "ನವೆಂ", 12: "ಡಿಸೆಂ" } } }, dayPeriods: { am: "ಪೂರ್ವಾಹ್ನ", pm: "ಅಪರಾಹ್ನ" } })),
-                (m.b441404234 = y({ 1: m("kn").numberFormatter({ raw: "0" }), 2: m("kn").numberFormatter({ raw: "00" }) }, { pattern: "d/M/yy", timeSeparator: ":" })),
-                (m.a1145552922 = y({ 1: m("kn").numberFormatter({ raw: "0" }) }, { pattern: "y", timeSeparator: ":" })),
-                (m.a543249757 = y({ 1: m("kn").numberFormatter({ raw: "0" }) }, { pattern: "MMM y", timeSeparator: ":", months: { M: { 3: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿ", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗ", 9: "ಸೆಪ್ಟೆಂ", 10: "ಅಕ್ಟೋ", 11: "ನವೆಂ", 12: "ಡಿಸೆಂ" } } } })),
-                (m.a1100798512 = y({ 1: m("kn").numberFormatter({ raw: "0" }), 2: m("kn").numberFormatter({ raw: "00" }) }, { pattern: "EEEE, MMMM d, y hh:mm:ss a zzzz", timeSeparator: ":", days: { E: { 4: { sun: "ಭಾನುವಾರ", mon: "ಸೋಮವಾರ", tue: "ಮಂಗಳವಾರ", wed: "ಬುಧವಾರ", thu: "ಗುರುವಾರ", fri: "ಶುಕ್ರವಾರ", sat: "ಶನಿವಾರ" } } }, months: { M: { 4: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿಲ್", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗಸ್ಟ್", 9: "ಸೆಪ್ಟೆಂಬರ್", 10: "ಅಕ್ಟೋಬರ್", 11: "ನವೆಂಬರ್", 12: "ಡಿಸೆಂಬರ್" } } }, dayPeriods: { am: "ಪೂರ್ವಾಹ್ನ", pm: "ಅಪರಾಹ್ನ" }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: "+HH:mm;-HH:mm" })),
-                (m.a903114826 = y({ 1: m("kn").numberFormatter({ raw: "0" }), 2: m("kn").numberFormatter({ raw: "00" }) }, { pattern: "MMM d, y hh:mm:ss a", timeSeparator: ":", months: { M: { 3: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿ", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗ", 9: "ಸೆಪ್ಟೆಂ", 10: "ಅಕ್ಟೋ", 11: "ನವೆಂ", 12: "ಡಿಸೆಂ" } } }, dayPeriods: { am: "ಪೂರ್ವಾಹ್ನ", pm: "ಅಪರಾಹ್ನ" } })),
-                (m.b316005894 = y({ 1: m("kn").numberFormatter({ raw: "0" }), 2: m("kn").numberFormatter({ raw: "00" }) }, { pattern: "dd/MM/y", timeSeparator: ":" })),
-                (m.a213940279 = y({ 2: m("kn").numberFormatter({ raw: "00" }) }, { pattern: "hh:mm a", timeSeparator: ":", dayPeriods: { am: "ಪೂರ್ವಾಹ್ನ", pm: "ಅಪರಾಹ್ನ" } })),
-                (m.b59868503 = y({ 1: m("kn").numberFormatter({ raw: "0" }), 2: m("kn").numberFormatter({ raw: "00" }) }, { pattern: "E h:mm a", timeSeparator: ":", days: { E: { 1: { sun: "ಭಾನು", mon: "ಸೋಮ", tue: "ಮಂಗಳ", wed: "ಬುಧ", thu: "ಗುರು", fri: "ಶುಕ್ರ", sat: "ಶನಿ" } } }, dayPeriods: { am: "ಪೂರ್ವಾಹ್ನ", pm: "ಅಪರಾಹ್ನ" } })),
-                (m.b337932070 = y({ 1: m("kn").numberFormatter({ raw: "0" }) }, { pattern: "MMMM y", timeSeparator: ":", months: { M: { 4: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿಲ್", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗಸ್ಟ್", 9: "ಸೆಪ್ಟೆಂಬರ್", 10: "ಅಕ್ಟೋಬರ್", 11: "ನವೆಂಬರ್", 12: "ಡಿಸೆಂಬರ್" } } } })),
-                (m.b904497667 = y({ 1: m("kn").numberFormatter({ raw: "0" }) }, { pattern: "MMM d, y", timeSeparator: ":", months: { M: { 3: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿ", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗ", 9: "ಸೆಪ್ಟೆಂ", 10: "ಅಕ್ಟೋ", 11: "ನವೆಂ", 12: "ಡಿಸೆಂ" } } } })),
-                (m.a147793457 = y({}, { pattern: "LLLL", timeSeparator: ":", months: { L: { 4: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿಲ್", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗಸ್ಟ್", 9: "ಸೆಪ್ಟೆಂಬರ್", 10: "ಅಕ್ಟೋಬರ್", 11: "ನವೆಂಬರ್", 12: "ಡಿಸೆಂಬರ್" } } } })),
-                (m.a1401038897 = y({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "ಭಾನುವಾರ", mon: "ಸೋಮವಾರ", tue: "ಮಂಗಳವಾರ", wed: "ಬುಧವಾರ", thu: "ಗುರುವಾರ", fri: "ಶುಕ್ರವಾರ", sat: "ಶನಿವಾರ" } } } })),
-                (m.b242928431 = p(m("kn").dateToPartsFormatter({ skeleton: "MMMd" }))),
-                (m.a414035500 = p(m("kn").dateToPartsFormatter({ skeleton: "yMMMd" }))),
-                (m.a302689763 = p(m("kn").dateToPartsFormatter({ skeleton: "hm" }))),
-                (m.a1032403920 = p(m("kn").dateToPartsFormatter({ skeleton: "MMMEd" }))),
-                (m.b76550699 = p(m("kn").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
-                (m.a1039792088 = p(m("kn").dateToPartsFormatter({ skeleton: "MMMMd" }))),
-                (m.a1569369402 = p(m("kn").dateToPartsFormatter({ datetime: "long" }))),
-                (m.b1479725945 = p(m("kn").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
-                (m.b553703635 = p(m("kn").dateToPartsFormatter({ date: "long" }))),
-                (m.b1461871124 = p(m("kn").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
-                (m.a1748380159 = p(m("kn").dateToPartsFormatter({ date: "short" }))),
-                (m.b959629981 = p(m("kn").dateToPartsFormatter({ skeleton: "y" }))),
-                (m.a151842676 = p(m("kn").dateToPartsFormatter({ skeleton: "yMMM" }))),
-                (m.a709391431 = p(m("kn").dateToPartsFormatter({ datetime: "full" }))),
-                (m.b1576935263 = p(m("kn").dateToPartsFormatter({ datetime: "medium" }))),
-                (m.a435276483 = p(m("kn").dateToPartsFormatter({ skeleton: "yMMdd" }))),
-                (m.b1891242624 = p(m("kn").dateToPartsFormatter({ time: "short" }))),
-                (m.b211041870 = p(m("kn").dateToPartsFormatter({ skeleton: "Ehm" }))),
-                (m.a413350307 = p(m("kn").dateToPartsFormatter({ skeleton: "yMMMM" }))),
-                (m.b1740658220 = p(m("kn").dateToPartsFormatter({ date: "medium" }))),
-                (m.b243613624 = p(m("kn").dateToPartsFormatter({ skeleton: "MMMM" }))),
-                (m.a1009631816 = p(m("kn").dateToPartsFormatter({ skeleton: "EEEE" }))),
-                (m.a87334896 = N(m("kn").numberFormatter({}), m("kn").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "{0} ದಿನದಲ್ಲಿ", "relativeTimePattern-count-other": "{0} ದಿನಗಳಲ್ಲಿ" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "{0} ದಿನದ ಹಿಂದೆ", "relativeTimePattern-count-other": "{0} ದಿನಗಳ ಹಿಂದೆ" }, "relative-type--2": "ಮೊನ್ನೆ", "relative-type--1": "ನಿನ್ನೆ", "relative-type-0": "ಇಂದು", "relative-type-1": "ನಾಳೆ", "relative-type-2": "ನಾಡಿದ್ದು" })),
-                (m.a582290389 = l(m("kn").numberFormatter({}), m("kn").pluralGenerator({}), { compoundUnitPattern: "{0} ಪ್ರತಿ {1} ಗೆ", unitProperties: { displayName: "ಸೆಕೆಂಡುಗಳು", one: "{0} ಸೆಕೆಂಡ್", other: "{0} ಸೆಕೆಂಡುಗಳು", perUnitPattern: "{0} ಪ್ರತಿ ಸೆಕೆಂಡ್" } })),
-                (m.b1304672907 = l(m("kn").numberFormatter({}), m("kn").pluralGenerator({}), { compoundUnitPattern: "{0} ಪ್ರತಿ {1} ಗೆ", unitProperties: { displayName: "ನಿಮಿಷಗಳು", one: "{0} ನಿಮಿಷ", other: "{0} ನಿಮಿಷಗಳು", perUnitPattern: "{0} ಪ್ರತಿ ನಿಮಿಷಕ್ಕೆ" } })),
-                (m.b1930846907 = l(m("kn").numberFormatter({}), m("kn").pluralGenerator({}), { compoundUnitPattern: "{0} ಪ್ರತಿ {1} ಗೆ", unitProperties: { displayName: "ಗಂಟೆಗಳು", one: "{0} ಗಂಟೆ", other: "{0} ಗಂಟೆಗಳು", perUnitPattern: "{0} ಪ್ರತಿ ಗಂಟೆ" } })),
-                (m.b1368286762 = l(m("kn").numberFormatter({}), m("kn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ಸೆಕೆಂ", one: "{0}ಸೆಕೆಂ", other: "{0} ಸೆಕೆಂ", perUnitPattern: "{0}/ಸೆ" } })),
-                (m.a2031151990 = l(m("kn").numberFormatter({}), m("kn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ನಿಮಿಷ", one: "{0}ನಿಮಿ", other: "{0}ನಿಮಿ", perUnitPattern: "{0}/ನಿಮಿ" } })),
-                (m.a1573359430 = l(m("kn").numberFormatter({}), m("kn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ಗಂಟೆ", one: "{0}ಗಂ.", other: "{0}ಗಂ.", perUnitPattern: "{0}/ಗಂ" } })),
-                (m.a342194718 = l(m("kn").numberFormatter({}), m("kn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ದಿನ", one: "{0}ದಿನ", other: "{0}ದಿನ", perUnitPattern: "{0}/ದಿ" } })),
-                (m.b1422631395 = l(m("kn").numberFormatter({}), m("kn").pluralGenerator({}), { compoundUnitPattern: "{0} ಪ್ರತಿ {1} ಗೆ", unitProperties: { displayName: "ದಿನಗಳು", one: "{0} ದಿನ", other: "{0} ದಿನಗಳು", perUnitPattern: "{0} ಪ್ರತಿ ದಿನಕ್ಕೆ" } })),
-                (m.a2024446722 = l(m("kn").numberFormatter({}), m("kn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ತಿಂಗಳು", one: "{0}ತಿಂ.", other: "{0}ತಿಂ.", perUnitPattern: "{0}/ತಿ" } })),
-                (m.b1756076031 = l(m("kn").numberFormatter({}), m("kn").pluralGenerator({}), { compoundUnitPattern: "{0} ಪ್ರತಿ {1} ಗೆ", unitProperties: { displayName: "ತಿಂಗಳು", one: "{0} ತಿಂಗಳು", other: "{0} ತಿಂಗಳು", perUnitPattern: "{0} ಪ್ರತಿ ತಿಂಗಳಿಗೆ" } })),
-                (m.b1317045473 = l(m("kn").numberFormatter({}), m("kn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ವರ್ಷಗಳು", one: "{0}ವ", other: "{0}ವ", perUnitPattern: "{0}/ವ" } })),
-                (m.b450057378 = l(m("kn").numberFormatter({}), m("kn").pluralGenerator({}), { compoundUnitPattern: "{0} ಪ್ರತಿ {1} ಗೆ", unitProperties: { displayName: "ವರ್ಷಗಳು", one: "{0} ವರ್ಷ", other: "{0} ವರ್ಷಗಳು", perUnitPattern: "{0} ಪ್ರತಿ ವರ್ಷಕ್ಕೆ" } })),
-                (m.b1690510761 = l(m("kn").numberFormatter({}), m("kn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ಸೆಕೆಂಡುಗಳು", one: "{0} ಸೆಕೆಂ", other: "{0} ಸೆಕೆಂ", perUnitPattern: "{0}/ಸೆ" } })),
-                (m.b56830793 = l(m("kn").numberFormatter({}), m("kn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ನಿಮಿಷಗಳು", one: "{0} ನಿಮಿ", other: "{0} ನಿಮಿ", perUnitPattern: "{0}/ನಿಮಿ" } })),
-                (m.a2006611687 = l(m("kn").numberFormatter({}), m("kn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ಗಂಟೆಗಳು", one: "{0} ಗಂ.", other: "{0} ಗಂ.", perUnitPattern: "{0}/ಗಂ" } })),
-                (m.b944357920 = l(m("kn").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), m("kn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ಸೆಕೆಂ", one: "{0}ಸೆಕೆಂ", other: "{0} ಸೆಕೆಂ", perUnitPattern: "{0}/ಸೆ" } })),
-                n("d58baa7f", m.b905926632),
-                n("ia24dc8d", m.b296611420),
-                n("iab73d4b", m.b364549034),
-                n("i3b7a017", m.a582290389),
-                n("ie5d110f", m.b1304672907),
-                n("df5f11b3", m.b1930846907),
-                n("e8733ed9", m.b1368286762),
-                n("be59d8c3", m.a2031151990),
-                n("i3d087db", m.a1573359430),
-                n("ga8d18c9", m.a342194718),
-                n("a91e7d49", m.b1422631395),
-                n("id952a69", m.a2024446722),
-                n("ga09ab65", m.b1756076031),
-                n("c83b901d", m.b1317045473),
-                n("a55b9fed", m.b450057378),
-                n("ccaa970f", m.b242928431),
-                n("jade381b", m.a414035500),
-                n("d725a289", m.a302689763),
-                n("g08cbabb", m.a1132129657),
-                n("c333da63", m.a87334896),
-                n("h8054d91", m.a1032403920),
-                n("i61fef37", m.b1690510761),
-                n("ba705e27", m.b56830793),
-                n("j86b0d8d", m.a2006611687),
-                n("f668e929", m.a521843219),
-                n("i2785009", m.a1548600640),
-                n("c778d80b", m.a1878366401),
-                n("e8d93005", m.a2004107135),
-                n("d46781af", m.b944357920),
-                n("ba316f05", m.b1678900190),
-                n("c0bdd345", m.a1547591840),
-                n("aa2aa1a1", m.b76550699),
-                n("da44942d", m.a1039792088),
-                n("a54d3ef5", m.a1569369402),
-                n("bfbc051d", m.b1479725945),
-                n("ba2e82a1", m.b553703635),
-                n("fc209bb7", m.b1461871124),
-                n("cf8abf59", m.b68299812),
-                n("a9f397f3", m.a1748380159),
-                n("d857e44d", m.b485336044),
-                n("cb87e3db", m.a1661255635),
-                n("a9d5ffd1", m.b1403252814),
-                n("a0e8371d", m.a829820964),
-                n("gcc50dc9", m.b2034878074),
-                n("a6a43585", m.a828037026),
-                n("a0cc8f2d", m.b976194133),
-                n("i31c32c5", m.b374981962),
-                n("i7dc69e9", m.a139153464),
-                n("c14a6c03", m.b2066480455),
-                n("jaa3d537", m.b549730098),
-                n("a824080b", m.a1425086675),
-                n("d9c0bedb", m.a966425613),
-                n("bf8c0613", m.b1295871962),
-                n("i8163625", m.b666030640),
-                n("adb53ba1", m.a363429504),
-                n("iabf697d", m.a1678586512),
-                n("a1a0555b", m.a1905835782),
-                n("f266f3d9", m.a14527878),
-                n("a9a8652b", m.b388064174),
-                n("dbf40761", m.b937369857),
-                n("b0d993d9", m.a178572386),
-                n("ac1308e1", m.b2113543632),
-                n("a7889ab3", m.b140510797),
-                n("c614f5cd", m.a1977451731),
-                n("i55d57e3", m.a201849723),
-                n("e4b6002b", m.a85549181),
-                n("d28e983b", m.b1375726812),
-                n("e8c9232d", m.a370651399),
-                n("c8994ae1", m.b1662612968),
-                n("f821c2a5", m.a312798451),
-                n("j348b9c9", m.b206094143),
-                n("i6f93b9b", m.a192335387),
-                n("c6150bd5", m.b1040502044),
-                n("i8921e09", m.b1441904804),
-                n("ef239279", m.a1678672655),
-                n("hecdb149", m.b813252774),
-                n("fdd039b7", m.b301495932),
-                n("f30c2c37", m.b16393714),
-                n("d9ea7bff", m.b1077456239),
-                n("ea3df4b7", m.b75435954),
-                n("jaac21bb", m.b1537306593),
-                n("hb435ced", m.a1181868106),
-                n("ce699d81", m.b2140897348),
-                n("bc56d3d7", m.a173306715),
-                n("f8561913", m.b1401891236),
-                n("g6485d53", m.a1317878109),
-                n("ff561cc1", m.a2090865186),
-                n("b42011d3", m.b1519381070),
-                n("a6660bcd", m.b350937693),
-                n("f9b80449", m.b1382181775),
-                n("gdee4d5d", m.a335567285),
-                n("h36f2103", m.a1966239600),
-                n("a19ad037", m.a1020882971),
-                n("g713f699", m.b1699481020),
-                n("ff2e39af", m.a873574694),
-                n("be34316d", m.a1960887786),
-                n("aef81b75", m.a1817147385),
-                n("fcce70a5", m.a1358486323),
-                n("jc9d352f", m.a155467335),
-                n("be1cb8c5", m.a870601464),
-                n("j9371501", m.b1936244626),
-                n("j7d4397d", m.b448718066),
-                n("d61441dd", m.a1811200925),
-                n("e2a99e97", m.a1151541160),
-                n("f7ce19ab", m.a1281010057),
-                n("b2a0213f", m.b810701904),
-                n("d7d71245", m.b959629981),
-                n("a2f2faab", m.a151842676),
-                n("g8d1b99b", m.a709391431),
-                n("d0a77c9b", m.b1576935263),
-                n("e18e399b", m.a435276483),
-                n("b6ca7bcb", m.b1891242624),
-                n("h0e4cdf5", m.b211041870),
-                n("g727ddcf", m.a413350307),
-                n("h3629783", m.b1740658220),
-                n("a20c68af", m.b243613624),
-                n("ja781451", m.b2118456946),
-                n("cfa1a7b9", m.a558501233),
-                n("f3b9b9a7", m.a1009631816),
-                n("eefcd267", m.a3769523),
-                n("fa8afc43", m.a1324394708);
+                (g.b485336044 = y(g("kn").numberFormatter({ raw: "'AED' #,##0.00" }))),
+                (g.a1661255635 = y(g("kn").numberFormatter({ raw: "'ALL' #,##0" }))),
+                (g.b1403252814 = y(g("kn").numberFormatter({ raw: "'ARS' #,##0.00" }))),
+                (g.a829820964 = y(g("kn").numberFormatter({ raw: "'A$'#,##0.00" }))),
+                (g.b2034878074 = y(g("kn").numberFormatter({ raw: "'BAM' #,##0.00" }))),
+                (g.a828037026 = y(g("kn").numberFormatter({ raw: "'BDT' #,##0.00" }))),
+                (g.b976194133 = y(g("kn").numberFormatter({ raw: "'BGN' #,##0.00" }))),
+                (g.b374981962 = y(g("kn").numberFormatter({ raw: "'BHD' #,##0.000" }))),
+                (g.a139153464 = y(g("kn").numberFormatter({ raw: "'R$'#,##0.00" }))),
+                (g.b2066480455 = y(g("kn").numberFormatter({ raw: "'BYR' #,##0" }))),
+                (g.b549730098 = y(g("kn").numberFormatter({ raw: "'CA$'#,##0.00" }))),
+                (g.a1425086675 = y(g("kn").numberFormatter({ raw: "'CHF' #,##0.00" }))),
+                (g.a966425613 = y(g("kn").numberFormatter({ raw: "'CLP' #,##0" }))),
+                (g.b1295871962 = y(g("kn").numberFormatter({ raw: "'CN¥'#,##0.00" }))),
+                (g.b666030640 = y(g("kn").numberFormatter({ raw: "'COP' #,##0" }))),
+                (g.a363429504 = y(g("kn").numberFormatter({ raw: "'CZK' #,##0.00" }))),
+                (g.a1678586512 = y(g("kn").numberFormatter({ raw: "'DKK' #,##0.00" }))),
+                (g.a1905835782 = y(g("kn").numberFormatter({ raw: "'DZD' #,##0.00" }))),
+                (g.a14527878 = y(g("kn").numberFormatter({ raw: "'EGP' #,##0.00" }))),
+                (g.b388064174 = y(g("kn").numberFormatter({ raw: "'€'#,##0.00" }))),
+                (g.b937369857 = y(g("kn").numberFormatter({ raw: "'£'#,##0.00" }))),
+                (g.a178572386 = y(g("kn").numberFormatter({ raw: "'GHS' #,##0.00" }))),
+                (g.b2113543632 = y(g("kn").numberFormatter({ raw: "'GTQ' #,##0.00" }))),
+                (g.b140510797 = y(g("kn").numberFormatter({ raw: "'HK$'#,##0.00" }))),
+                (g.a1977451731 = y(g("kn").numberFormatter({ raw: "'HRK' #,##0.00" }))),
+                (g.a201849723 = y(g("kn").numberFormatter({ raw: "'HUF' #,##0.00" }))),
+                (g.a85549181 = y(g("kn").numberFormatter({ raw: "'IDR' #,##0" }))),
+                (g.b1375726812 = y(g("kn").numberFormatter({ raw: "'₪'#,##0.00" }))),
+                (g.a370651399 = y(g("kn").numberFormatter({ raw: "'₹'#,##0.00" }))),
+                (g.b1662612968 = y(g("kn").numberFormatter({ raw: "'IQD' #,##0" }))),
+                (g.a312798451 = y(g("kn").numberFormatter({ raw: "'ISK' #,##0" }))),
+                (g.b206094143 = y(g("kn").numberFormatter({ raw: "'JP¥'#,##0" }))),
+                (g.a192335387 = y(g("kn").numberFormatter({ raw: "'KES' #,##0.00" }))),
+                (g.b1040502044 = y(g("kn").numberFormatter({ raw: "'₩'#,##0" }))),
+                (g.b1441904804 = y(g("kn").numberFormatter({ raw: "'KWD' #,##0.000" }))),
+                (g.a1678672655 = y(g("kn").numberFormatter({ raw: "'KZT' #,##0.00" }))),
+                (g.b813252774 = y(g("kn").numberFormatter({ raw: "'LBP' #,##0" }))),
+                (g.b301495932 = y(g("kn").numberFormatter({ raw: "'MAD' #,##0.00" }))),
+                (g.b16393714 = y(g("kn").numberFormatter({ raw: "'MKD' #,##0.00" }))),
+                (g.b1077456239 = y(g("kn").numberFormatter({ raw: "'MX$'#,##0.00" }))),
+                (g.b75435954 = y(g("kn").numberFormatter({ raw: "'MYR' #,##0.00" }))),
+                (g.b1537306593 = y(g("kn").numberFormatter({ raw: "'NGN' #,##0.00" }))),
+                (g.a1181868106 = y(g("kn").numberFormatter({ raw: "'NOK' #,##0.00" }))),
+                (g.b2140897348 = y(g("kn").numberFormatter({ raw: "'NZ$'#,##0.00" }))),
+                (g.a173306715 = y(g("kn").numberFormatter({ raw: "'PEN' #,##0.00" }))),
+                (g.b1401891236 = y(g("kn").numberFormatter({ raw: "'PHP' #,##0.00" }))),
+                (g.a1317878109 = y(g("kn").numberFormatter({ raw: "'PKR' #,##0" }))),
+                (g.a2090865186 = y(g("kn").numberFormatter({ raw: "'PLN' #,##0.00" }))),
+                (g.b1519381070 = y(g("kn").numberFormatter({ raw: "'QAR' #,##0.00" }))),
+                (g.b350937693 = y(g("kn").numberFormatter({ raw: "'RON' #,##0.00" }))),
+                (g.b1382181775 = y(g("kn").numberFormatter({ raw: "'RSD' #,##0" }))),
+                (g.a335567285 = y(g("kn").numberFormatter({ raw: "'RUB' #,##0.00" }))),
+                (g.a1966239600 = y(g("kn").numberFormatter({ raw: "'SAR' #,##0.00" }))),
+                (g.a1020882971 = y(g("kn").numberFormatter({ raw: "'SEK' #,##0.00" }))),
+                (g.b1699481020 = y(g("kn").numberFormatter({ raw: "'SGD' #,##0.00" }))),
+                (g.a873574694 = y(g("kn").numberFormatter({ raw: "'฿'#,##0.00" }))),
+                (g.a1960887786 = y(g("kn").numberFormatter({ raw: "'TND' #,##0.000" }))),
+                (g.a1817147385 = y(g("kn").numberFormatter({ raw: "'TRY' #,##0.00" }))),
+                (g.a1358486323 = y(g("kn").numberFormatter({ raw: "'NT$'#,##0.00" }))),
+                (g.a155467335 = y(g("kn").numberFormatter({ raw: "'TZS' #,##0" }))),
+                (g.a870601464 = y(g("kn").numberFormatter({ raw: "'UAH' #,##0.00" }))),
+                (g.b1936244626 = y(g("kn").numberFormatter({ raw: "'UGX' #,##0" }))),
+                (g.b448718066 = y(g("kn").numberFormatter({ raw: "'$'#,##0.00" }))),
+                (g.a1811200925 = y(g("kn").numberFormatter({ raw: "'VEF' #,##0.00" }))),
+                (g.a1151541160 = y(g("kn").numberFormatter({ raw: "'₫'#,##0" }))),
+                (g.a1281010057 = y(g("kn").numberFormatter({ raw: "'ZAR' #,##0.00" }))),
+                (g.b810701904 = y(g("kn").numberFormatter({ raw: "'ZMW' #,##0.00" }))),
+                (g.a148478650 = p({ 1: g("kn").numberFormatter({ raw: "0" }) }, { pattern: "MMM d", timeSeparator: ":", months: { M: { 3: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿ", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗ", 9: "ಸೆಪ್ಟೆಂ", 10: "ಅಕ್ಟೋ", 11: "ನವೆಂ", 12: "ಡಿಸೆಂ" } } } })),
+                (g.b337246877 = p({ 1: g("kn").numberFormatter({ raw: "0" }) }, { pattern: "MMM d,y", timeSeparator: ":", months: { M: { 3: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿ", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗ", 9: "ಸೆಪ್ಟೆಂ", 10: "ಅಕ್ಟೋ", 11: "ನವೆಂ", 12: "ಡಿಸೆಂ" } } } })),
+                (g.a1138850316 = p({ 1: g("kn").numberFormatter({ raw: "0" }), 2: g("kn").numberFormatter({ raw: "00" }) }, { pattern: "h:mm a", timeSeparator: ":", dayPeriods: { am: "ಪೂರ್ವಾಹ್ನ", pm: "ಅಪರಾಹ್ನ" } })),
+                (g.a281121543 = p({ 1: g("kn").numberFormatter({ raw: "0" }) }, { pattern: "E, d MMM", timeSeparator: ":", days: { E: { 1: { sun: "ಭಾನು", mon: "ಸೋಮ", tue: "ಮಂಗಳ", wed: "ಬುಧ", thu: "ಗುರು", fri: "ಶುಕ್ರ", sat: "ಶನಿ" } } }, months: { M: { 3: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿ", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗ", 9: "ಸೆಪ್ಟೆಂ", 10: "ಅಕ್ಟೋ", 11: "ನವೆಂ", 12: "ಡಿಸೆಂ" } } } })),
+                (g.b1891467906 = p({ 1: g("kn").numberFormatter({ raw: "0" }) }, { pattern: "E, MMM d, y", timeSeparator: ":", days: { E: { 1: { sun: "ಭಾನು", mon: "ಸೋಮ", tue: "ಮಂಗಳ", wed: "ಬುಧ", thu: "ಗುರು", fri: "ಶುಕ್ರ", sat: "ಶನಿ" } } }, months: { M: { 3: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿ", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗ", 9: "ಸೆಪ್ಟೆಂ", 10: "ಅಕ್ಟೋ", 11: "ನವೆಂ", 12: "ಡಿಸೆಂ" } } } })),
+                (g.a288509711 = p({ 1: g("kn").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM", timeSeparator: ":", months: { M: { 4: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿಲ್", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗಸ್ಟ್", 9: "ಸೆಪ್ಟೆಂಬರ್", 10: "ಅಕ್ಟೋಬರ್", 11: "ನವೆಂಬರ್", 12: "ಡಿಸೆಂಬರ್" } } } })),
+                (g.a1960776483 = p({ 1: g("kn").numberFormatter({ raw: "0" }), 2: g("kn").numberFormatter({ raw: "00" }) }, { pattern: "MMMM d, y hh:mm:ss a z", timeSeparator: ":", months: { M: { 4: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿಲ್", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗಸ್ಟ್", 9: "ಸೆಪ್ಟೆಂಬರ್", 10: "ಅಕ್ಟೋಬರ್", 11: "ನವೆಂಬರ್", 12: "ಡಿಸೆಂಬರ್" } } }, dayPeriods: { am: "ಪೂರ್ವಾಹ್ನ", pm: "ಅಪರಾಹ್ನ" }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: ["+H;-H", "+H:mm;-H:mm"] })),
+                (g.b1907584514 = p({ 1: g("kn").numberFormatter({ raw: "0" }), 2: g("kn").numberFormatter({ raw: "00" }) }, { pattern: "MMM d,y h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿ", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗ", 9: "ಸೆಪ್ಟೆಂ", 10: "ಅಕ್ಟೋ", 11: "ನವೆಂ", 12: "ಡಿಸೆಂ" } } }, dayPeriods: { am: "ಪೂರ್ವಾಹ್ನ", pm: "ಅಪರಾಹ್ನ" } })),
+                (g.b1455625834 = p({ 1: g("kn").numberFormatter({ raw: "0" }) }, { pattern: "MMMM d, y", timeSeparator: ":", months: { M: { 4: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿಲ್", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗಸ್ಟ್", 9: "ಸೆಪ್ಟೆಂಬರ್", 10: "ಅಕ್ಟೋಬರ್", 11: "ನವೆಂಬರ್", 12: "ಡಿಸೆಂಬರ್" } } } })),
+                (g.a1018178965 = p({ 1: g("kn").numberFormatter({ raw: "0" }), 2: g("kn").numberFormatter({ raw: "00" }) }, { pattern: "MMM d h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿ", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗ", 9: "ಸೆಪ್ಟೆಂ", 10: "ಅಕ್ಟೋ", 11: "ನವೆಂ", 12: "ಡಿಸೆಂ" } } }, dayPeriods: { am: "ಪೂರ್ವಾಹ್ನ", pm: "ಅಪರಾಹ್ನ" } })),
+                (g.b441404234 = p({ 1: g("kn").numberFormatter({ raw: "0" }), 2: g("kn").numberFormatter({ raw: "00" }) }, { pattern: "d/M/yy", timeSeparator: ":" })),
+                (g.a1145552922 = p({ 1: g("kn").numberFormatter({ raw: "0" }) }, { pattern: "y", timeSeparator: ":" })),
+                (g.a543249757 = p({ 1: g("kn").numberFormatter({ raw: "0" }) }, { pattern: "MMM y", timeSeparator: ":", months: { M: { 3: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿ", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗ", 9: "ಸೆಪ್ಟೆಂ", 10: "ಅಕ್ಟೋ", 11: "ನವೆಂ", 12: "ಡಿಸೆಂ" } } } })),
+                (g.a1100798512 = p({ 1: g("kn").numberFormatter({ raw: "0" }), 2: g("kn").numberFormatter({ raw: "00" }) }, { pattern: "EEEE, MMMM d, y hh:mm:ss a zzzz", timeSeparator: ":", days: { E: { 4: { sun: "ಭಾನುವಾರ", mon: "ಸೋಮವಾರ", tue: "ಮಂಗಳವಾರ", wed: "ಬುಧವಾರ", thu: "ಗುರುವಾರ", fri: "ಶುಕ್ರವಾರ", sat: "ಶನಿವಾರ" } } }, months: { M: { 4: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿಲ್", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗಸ್ಟ್", 9: "ಸೆಪ್ಟೆಂಬರ್", 10: "ಅಕ್ಟೋಬರ್", 11: "ನವೆಂಬರ್", 12: "ಡಿಸೆಂಬರ್" } } }, dayPeriods: { am: "ಪೂರ್ವಾಹ್ನ", pm: "ಅಪರಾಹ್ನ" }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: "+HH:mm;-HH:mm" })),
+                (g.a903114826 = p({ 1: g("kn").numberFormatter({ raw: "0" }), 2: g("kn").numberFormatter({ raw: "00" }) }, { pattern: "MMM d, y hh:mm:ss a", timeSeparator: ":", months: { M: { 3: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿ", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗ", 9: "ಸೆಪ್ಟೆಂ", 10: "ಅಕ್ಟೋ", 11: "ನವೆಂ", 12: "ಡಿಸೆಂ" } } }, dayPeriods: { am: "ಪೂರ್ವಾಹ್ನ", pm: "ಅಪರಾಹ್ನ" } })),
+                (g.b316005894 = p({ 1: g("kn").numberFormatter({ raw: "0" }), 2: g("kn").numberFormatter({ raw: "00" }) }, { pattern: "dd/MM/y", timeSeparator: ":" })),
+                (g.a213940279 = p({ 2: g("kn").numberFormatter({ raw: "00" }) }, { pattern: "hh:mm a", timeSeparator: ":", dayPeriods: { am: "ಪೂರ್ವಾಹ್ನ", pm: "ಅಪರಾಹ್ನ" } })),
+                (g.b59868503 = p({ 1: g("kn").numberFormatter({ raw: "0" }), 2: g("kn").numberFormatter({ raw: "00" }) }, { pattern: "E h:mm a", timeSeparator: ":", days: { E: { 1: { sun: "ಭಾನು", mon: "ಸೋಮ", tue: "ಮಂಗಳ", wed: "ಬುಧ", thu: "ಗುರು", fri: "ಶುಕ್ರ", sat: "ಶನಿ" } } }, dayPeriods: { am: "ಪೂರ್ವಾಹ್ನ", pm: "ಅಪರಾಹ್ನ" } })),
+                (g.b337932070 = p({ 1: g("kn").numberFormatter({ raw: "0" }) }, { pattern: "MMMM y", timeSeparator: ":", months: { M: { 4: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿಲ್", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗಸ್ಟ್", 9: "ಸೆಪ್ಟೆಂಬರ್", 10: "ಅಕ್ಟೋಬರ್", 11: "ನವೆಂಬರ್", 12: "ಡಿಸೆಂಬರ್" } } } })),
+                (g.b904497667 = p({ 1: g("kn").numberFormatter({ raw: "0" }) }, { pattern: "MMM d, y", timeSeparator: ":", months: { M: { 3: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿ", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗ", 9: "ಸೆಪ್ಟೆಂ", 10: "ಅಕ್ಟೋ", 11: "ನವೆಂ", 12: "ಡಿಸೆಂ" } } } })),
+                (g.a147793457 = p({}, { pattern: "LLLL", timeSeparator: ":", months: { L: { 4: { 1: "ಜನವರಿ", 2: "ಫೆಬ್ರವರಿ", 3: "ಮಾರ್ಚ್", 4: "ಏಪ್ರಿಲ್", 5: "ಮೇ", 6: "ಜೂನ್", 7: "ಜುಲೈ", 8: "ಆಗಸ್ಟ್", 9: "ಸೆಪ್ಟೆಂಬರ್", 10: "ಅಕ್ಟೋಬರ್", 11: "ನವೆಂಬರ್", 12: "ಡಿಸೆಂಬರ್" } } } })),
+                (g.a1401038897 = p({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "ಭಾನುವಾರ", mon: "ಸೋಮವಾರ", tue: "ಮಂಗಳವಾರ", wed: "ಬುಧವಾರ", thu: "ಗುರುವಾರ", fri: "ಶುಕ್ರವಾರ", sat: "ಶನಿವಾರ" } } } })),
+                (g.b242928431 = N(g("kn").dateToPartsFormatter({ skeleton: "MMMd" }))),
+                (g.a414035500 = N(g("kn").dateToPartsFormatter({ skeleton: "yMMMd" }))),
+                (g.a302689763 = N(g("kn").dateToPartsFormatter({ skeleton: "hm" }))),
+                (g.a1032403920 = N(g("kn").dateToPartsFormatter({ skeleton: "MMMEd" }))),
+                (g.b76550699 = N(g("kn").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
+                (g.a1039792088 = N(g("kn").dateToPartsFormatter({ skeleton: "MMMMd" }))),
+                (g.a1569369402 = N(g("kn").dateToPartsFormatter({ datetime: "long" }))),
+                (g.b1479725945 = N(g("kn").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
+                (g.b553703635 = N(g("kn").dateToPartsFormatter({ date: "long" }))),
+                (g.b1461871124 = N(g("kn").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
+                (g.a1748380159 = N(g("kn").dateToPartsFormatter({ date: "short" }))),
+                (g.b959629981 = N(g("kn").dateToPartsFormatter({ skeleton: "y" }))),
+                (g.a151842676 = N(g("kn").dateToPartsFormatter({ skeleton: "yMMM" }))),
+                (g.a709391431 = N(g("kn").dateToPartsFormatter({ datetime: "full" }))),
+                (g.b1576935263 = N(g("kn").dateToPartsFormatter({ datetime: "medium" }))),
+                (g.a435276483 = N(g("kn").dateToPartsFormatter({ skeleton: "yMMdd" }))),
+                (g.b1891242624 = N(g("kn").dateToPartsFormatter({ time: "short" }))),
+                (g.b211041870 = N(g("kn").dateToPartsFormatter({ skeleton: "Ehm" }))),
+                (g.a413350307 = N(g("kn").dateToPartsFormatter({ skeleton: "yMMMM" }))),
+                (g.b1740658220 = N(g("kn").dateToPartsFormatter({ date: "medium" }))),
+                (g.b243613624 = N(g("kn").dateToPartsFormatter({ skeleton: "MMMM" }))),
+                (g.a1009631816 = N(g("kn").dateToPartsFormatter({ skeleton: "EEEE" }))),
+                (g.a87334896 = l(g("kn").numberFormatter({}), g("kn").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "{0} ದಿನದಲ್ಲಿ", "relativeTimePattern-count-other": "{0} ದಿನಗಳಲ್ಲಿ" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "{0} ದಿನದ ಹಿಂದೆ", "relativeTimePattern-count-other": "{0} ದಿನಗಳ ಹಿಂದೆ" }, "relative-type--2": "ಮೊನ್ನೆ", "relative-type--1": "ನಿನ್ನೆ", "relative-type-0": "ಇಂದು", "relative-type-1": "ನಾಳೆ", "relative-type-2": "ನಾಡಿದ್ದು" })),
+                (g.a582290389 = j(g("kn").numberFormatter({}), g("kn").pluralGenerator({}), { compoundUnitPattern: "{0} ಪ್ರತಿ {1} ಗೆ", unitProperties: { displayName: "ಸೆಕೆಂಡುಗಳು", one: "{0} ಸೆಕೆಂಡ್", other: "{0} ಸೆಕೆಂಡುಗಳು", perUnitPattern: "{0} ಪ್ರತಿ ಸೆಕೆಂಡ್" } })),
+                (g.b1304672907 = j(g("kn").numberFormatter({}), g("kn").pluralGenerator({}), { compoundUnitPattern: "{0} ಪ್ರತಿ {1} ಗೆ", unitProperties: { displayName: "ನಿಮಿಷಗಳು", one: "{0} ನಿಮಿಷ", other: "{0} ನಿಮಿಷಗಳು", perUnitPattern: "{0} ಪ್ರತಿ ನಿಮಿಷಕ್ಕೆ" } })),
+                (g.b1930846907 = j(g("kn").numberFormatter({}), g("kn").pluralGenerator({}), { compoundUnitPattern: "{0} ಪ್ರತಿ {1} ಗೆ", unitProperties: { displayName: "ಗಂಟೆಗಳು", one: "{0} ಗಂಟೆ", other: "{0} ಗಂಟೆಗಳು", perUnitPattern: "{0} ಪ್ರತಿ ಗಂಟೆ" } })),
+                (g.b1368286762 = j(g("kn").numberFormatter({}), g("kn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ಸೆಕೆಂ", one: "{0}ಸೆಕೆಂ", other: "{0} ಸೆಕೆಂ", perUnitPattern: "{0}/ಸೆ" } })),
+                (g.a2031151990 = j(g("kn").numberFormatter({}), g("kn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ನಿಮಿಷ", one: "{0}ನಿಮಿ", other: "{0}ನಿಮಿ", perUnitPattern: "{0}/ನಿಮಿ" } })),
+                (g.a1573359430 = j(g("kn").numberFormatter({}), g("kn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ಗಂಟೆ", one: "{0}ಗಂ.", other: "{0}ಗಂ.", perUnitPattern: "{0}/ಗಂ" } })),
+                (g.a342194718 = j(g("kn").numberFormatter({}), g("kn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ದಿನ", one: "{0}ದಿನ", other: "{0}ದಿನ", perUnitPattern: "{0}/ದಿ" } })),
+                (g.b1422631395 = j(g("kn").numberFormatter({}), g("kn").pluralGenerator({}), { compoundUnitPattern: "{0} ಪ್ರತಿ {1} ಗೆ", unitProperties: { displayName: "ದಿನಗಳು", one: "{0} ದಿನ", other: "{0} ದಿನಗಳು", perUnitPattern: "{0} ಪ್ರತಿ ದಿನಕ್ಕೆ" } })),
+                (g.a2024446722 = j(g("kn").numberFormatter({}), g("kn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ತಿಂಗಳು", one: "{0}ತಿಂ.", other: "{0}ತಿಂ.", perUnitPattern: "{0}/ತಿ" } })),
+                (g.b1756076031 = j(g("kn").numberFormatter({}), g("kn").pluralGenerator({}), { compoundUnitPattern: "{0} ಪ್ರತಿ {1} ಗೆ", unitProperties: { displayName: "ತಿಂಗಳು", one: "{0} ತಿಂಗಳು", other: "{0} ತಿಂಗಳು", perUnitPattern: "{0} ಪ್ರತಿ ತಿಂಗಳಿಗೆ" } })),
+                (g.b1317045473 = j(g("kn").numberFormatter({}), g("kn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ವರ್ಷಗಳು", one: "{0}ವ", other: "{0}ವ", perUnitPattern: "{0}/ವ" } })),
+                (g.b450057378 = j(g("kn").numberFormatter({}), g("kn").pluralGenerator({}), { compoundUnitPattern: "{0} ಪ್ರತಿ {1} ಗೆ", unitProperties: { displayName: "ವರ್ಷಗಳು", one: "{0} ವರ್ಷ", other: "{0} ವರ್ಷಗಳು", perUnitPattern: "{0} ಪ್ರತಿ ವರ್ಷಕ್ಕೆ" } })),
+                (g.b1690510761 = j(g("kn").numberFormatter({}), g("kn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ಸೆಕೆಂಡುಗಳು", one: "{0} ಸೆಕೆಂ", other: "{0} ಸೆಕೆಂ", perUnitPattern: "{0}/ಸೆ" } })),
+                (g.b56830793 = j(g("kn").numberFormatter({}), g("kn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ನಿಮಿಷಗಳು", one: "{0} ನಿಮಿ", other: "{0} ನಿಮಿ", perUnitPattern: "{0}/ನಿಮಿ" } })),
+                (g.a2006611687 = j(g("kn").numberFormatter({}), g("kn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ಗಂಟೆಗಳು", one: "{0} ಗಂ.", other: "{0} ಗಂ.", perUnitPattern: "{0}/ಗಂ" } })),
+                (g.b944357920 = j(g("kn").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), g("kn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ಸೆಕೆಂ", one: "{0}ಸೆಕೆಂ", other: "{0} ಸೆಕೆಂ", perUnitPattern: "{0}/ಸೆ" } })),
+                n("d58baa7f", g.b905926632),
+                n("ia24dc8d", g.b296611420),
+                n("iab73d4b", g.b364549034),
+                n("i3b7a017", g.a582290389),
+                n("ie5d110f", g.b1304672907),
+                n("df5f11b3", g.b1930846907),
+                n("e8733ed9", g.b1368286762),
+                n("be59d8c3", g.a2031151990),
+                n("i3d087db", g.a1573359430),
+                n("ga8d18c9", g.a342194718),
+                n("a91e7d49", g.b1422631395),
+                n("id952a69", g.a2024446722),
+                n("ga09ab65", g.b1756076031),
+                n("c83b901d", g.b1317045473),
+                n("a55b9fed", g.b450057378),
+                n("ccaa970f", g.b242928431),
+                n("jade381b", g.a414035500),
+                n("d725a289", g.a302689763),
+                n("g08cbabb", g.a1132129657),
+                n("c333da63", g.a87334896),
+                n("h8054d91", g.a1032403920),
+                n("i61fef37", g.b1690510761),
+                n("ba705e27", g.b56830793),
+                n("j86b0d8d", g.a2006611687),
+                n("f668e929", g.a521843219),
+                n("i2785009", g.a1548600640),
+                n("c778d80b", g.a1878366401),
+                n("e8d93005", g.a2004107135),
+                n("d46781af", g.b944357920),
+                n("ba316f05", g.b1678900190),
+                n("c0bdd345", g.a1547591840),
+                n("aa2aa1a1", g.b76550699),
+                n("da44942d", g.a1039792088),
+                n("a54d3ef5", g.a1569369402),
+                n("bfbc051d", g.b1479725945),
+                n("ba2e82a1", g.b553703635),
+                n("fc209bb7", g.b1461871124),
+                n("cf8abf59", g.b68299812),
+                n("a9f397f3", g.a1748380159),
+                n("d857e44d", g.b485336044),
+                n("cb87e3db", g.a1661255635),
+                n("a9d5ffd1", g.b1403252814),
+                n("a0e8371d", g.a829820964),
+                n("gcc50dc9", g.b2034878074),
+                n("a6a43585", g.a828037026),
+                n("a0cc8f2d", g.b976194133),
+                n("i31c32c5", g.b374981962),
+                n("i7dc69e9", g.a139153464),
+                n("c14a6c03", g.b2066480455),
+                n("jaa3d537", g.b549730098),
+                n("a824080b", g.a1425086675),
+                n("d9c0bedb", g.a966425613),
+                n("bf8c0613", g.b1295871962),
+                n("i8163625", g.b666030640),
+                n("adb53ba1", g.a363429504),
+                n("iabf697d", g.a1678586512),
+                n("a1a0555b", g.a1905835782),
+                n("f266f3d9", g.a14527878),
+                n("a9a8652b", g.b388064174),
+                n("dbf40761", g.b937369857),
+                n("b0d993d9", g.a178572386),
+                n("ac1308e1", g.b2113543632),
+                n("a7889ab3", g.b140510797),
+                n("c614f5cd", g.a1977451731),
+                n("i55d57e3", g.a201849723),
+                n("e4b6002b", g.a85549181),
+                n("d28e983b", g.b1375726812),
+                n("e8c9232d", g.a370651399),
+                n("c8994ae1", g.b1662612968),
+                n("f821c2a5", g.a312798451),
+                n("j348b9c9", g.b206094143),
+                n("i6f93b9b", g.a192335387),
+                n("c6150bd5", g.b1040502044),
+                n("i8921e09", g.b1441904804),
+                n("ef239279", g.a1678672655),
+                n("hecdb149", g.b813252774),
+                n("fdd039b7", g.b301495932),
+                n("f30c2c37", g.b16393714),
+                n("d9ea7bff", g.b1077456239),
+                n("ea3df4b7", g.b75435954),
+                n("jaac21bb", g.b1537306593),
+                n("hb435ced", g.a1181868106),
+                n("ce699d81", g.b2140897348),
+                n("bc56d3d7", g.a173306715),
+                n("f8561913", g.b1401891236),
+                n("g6485d53", g.a1317878109),
+                n("ff561cc1", g.a2090865186),
+                n("b42011d3", g.b1519381070),
+                n("a6660bcd", g.b350937693),
+                n("f9b80449", g.b1382181775),
+                n("gdee4d5d", g.a335567285),
+                n("h36f2103", g.a1966239600),
+                n("a19ad037", g.a1020882971),
+                n("g713f699", g.b1699481020),
+                n("ff2e39af", g.a873574694),
+                n("be34316d", g.a1960887786),
+                n("aef81b75", g.a1817147385),
+                n("fcce70a5", g.a1358486323),
+                n("jc9d352f", g.a155467335),
+                n("be1cb8c5", g.a870601464),
+                n("j9371501", g.b1936244626),
+                n("j7d4397d", g.b448718066),
+                n("d61441dd", g.a1811200925),
+                n("e2a99e97", g.a1151541160),
+                n("f7ce19ab", g.a1281010057),
+                n("b2a0213f", g.b810701904),
+                n("d7d71245", g.b959629981),
+                n("a2f2faab", g.a151842676),
+                n("g8d1b99b", g.a709391431),
+                n("d0a77c9b", g.b1576935263),
+                n("e18e399b", g.a435276483),
+                n("b6ca7bcb", g.b1891242624),
+                n("h0e4cdf5", g.b211041870),
+                n("g727ddcf", g.a413350307),
+                n("h3629783", g.b1740658220),
+                n("a20c68af", g.b243613624),
+                n("ja781451", g.b2118456946),
+                n("cfa1a7b9", g.a558501233),
+                n("f3b9b9a7", g.a1009631816),
+                n("eefcd267", g.a3769523),
+                n("fa8afc43", g.a1324394708);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/kn.60e120ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/kn.7a0c906a.js.map

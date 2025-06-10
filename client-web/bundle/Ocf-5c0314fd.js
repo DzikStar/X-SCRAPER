@@ -25,8 +25,9 @@
                         subtask: { action_type: e, challenge: t, fail_link: s, next_link: a, unsupported_link: n },
                     } = this.props;
                     if (this._supportsWebAuthn) {
-                        if ((0, r.Z)(this.props.errorDialog))
-                            if (window.location.hostname.includes("x.com")) {
+                        if ((0, r.Z)(this.props.errorDialog)) {
+                            const n = JSON.parse(t);
+                            if (window.location.hostname.includes("x.com") && "x.com" !== n.rp?.id && "x.com" !== n.publicKeyCredentialRequestOptions?.rpId) {
                                 if ("__OCF_2FA_X_CHALLENGE__" in window) {
                                     const e = window.__OCF_2FA_X_CHALLENGE__;
                                     delete window.__OCF_2FA_X_CHALLENGE__, e ? this._navigateAndUpdate(a, e) : this._navigateAndUpdate(s);
@@ -39,6 +40,7 @@
                                     .catch(() => {
                                         this._navigateAndUpdate(s);
                                     });
+                        }
                     } else n && this._navigateAndUpdate(n);
                 }
                 render() {
@@ -669,4 +671,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-5c0314fd.06f1f54a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-5c0314fd.91070aba.js.map

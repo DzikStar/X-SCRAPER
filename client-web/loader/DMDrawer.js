@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.DMDrawer"],
+    ["loader.DMDrawer", "icons/IconDoubleChevronUp-js"],
     {
         290402: (e, t, r) => {
             r.d(t, { Z: () => h });
@@ -21,7 +21,7 @@
                 h = a.forwardRef(p);
         },
         376293: (e, t, r) => {
-            r.d(t, { $f: () => D, KV: () => f, LI: () => H, SC: () => C, Vt: () => E, ed: () => M, op: () => S });
+            r.d(t, { $f: () => D, KV: () => f, LI: () => H, SC: () => C, Vt: () => E, ed: () => M, op: () => x });
             var n = r(202784),
                 a = r(190286),
                 o = r(111677),
@@ -44,7 +44,7 @@
                 k = i().f5f01af6,
                 C = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
                 D = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: h, text: t ? v({ screenName: e }) : m({ screenName: e }) }),
-                S = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: r, source: n, testID: a, unblockAction: o, unblockSubtext: i, user: s }) => {
+                x = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: r, source: n, testID: a, unblockAction: o, unblockSubtext: i, user: s }) => {
                     let l,
                         u = c.Z;
                     const p = H(s, r);
@@ -64,11 +64,11 @@
                                     s.blocking ? o(p) : e(p);
                                 });
                     }
-                    return { confirmation: p, onClick: u, testID: a, shortcutKey: l, Icon: x(s.blocking), text: Z(s), subText: T({ user: s, blockSubtext: t, unblockSubtext: i }) };
+                    return { confirmation: p, onClick: u, testID: a, shortcutKey: l, Icon: S(s.blocking), text: T(s), subText: Z({ user: s, blockSubtext: t, unblockSubtext: i }) };
                 },
-                x = (e) => (e ? l.default : s.default),
-                T = ({ blockSubtext: e, unblockSubtext: t, user: r }) => (!r.blocking && e ? e(r.screen_name) : r.blocking ? t : void 0),
-                Z = (e) => (e.blocking ? y({ screenName: e.screen_name }) : g({ screenName: e.screen_name })),
+                S = (e) => (e ? l.default : s.default),
+                Z = ({ blockSubtext: e, unblockSubtext: t, user: r }) => (!r.blocking && e ? e(r.screen_name) : r.blocking ? t : void 0),
+                T = (e) => (e.blocking ? y({ screenName: e.screen_name }) : g({ screenName: e.screen_name })),
                 H = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: b({ screenName: e }), label: E, text: t ? k : w }))(e.screen_name, t) : D(e.screen_name, t)),
                 M = ({ confirmation: e, handleConfirm: t, onClose: r }) => {
                     const { confirmButtonType: o, headline: i, label: s, text: l } = e;
@@ -171,10 +171,10 @@
                 k = r(715913),
                 C = r(601413),
                 D = r(392237),
-                S = r(323265),
-                x = r(443781),
-                T = r(740633);
-            const Z = (0, r(523561).Z)({ loader: () => r.e("ondemand.RichText").then(r.bind(r, 687184)) });
+                x = r(323265),
+                S = r(443781),
+                Z = r(740633);
+            const T = (0, r(523561).Z)({ loader: () => r.e("ondemand.RichText").then(r.bind(r, 687184)) });
             var H = r(111311),
                 M = r(198506),
                 I = r(768572),
@@ -182,8 +182,8 @@
                 _ = r(255534),
                 P = r(164383),
                 U = r(587521),
-                A = r(806960),
-                L = r(786998),
+                L = r(806960),
+                A = r(786998),
                 O = r(516951),
                 N = r(933794),
                 B = r(163390),
@@ -191,10 +191,10 @@
             const W = { header: "DMDrawerHeader", headerHighlighted: "DMDrawerHeaderHighlighted", root: "DMDrawer" };
             var z = r(154003),
                 q = r(310088),
-                X = r(111677),
-                G = r.n(X),
-                K = r(894966);
-            const V = G().b08821f4;
+                V = r(111677),
+                X = r.n(V),
+                G = r(894966);
+            const K = X().b08821f4;
             function j({ buttonType: e, hasNewMessages: t, inboxUnreadCount: r }) {
                 const a = (0, l.I0)(),
                     o = t || (void 0 !== r && r > 0);
@@ -202,8 +202,8 @@
                     p.Z,
                     null,
                     n.createElement(z.ZP, {
-                        "aria-label": V,
-                        icon: n.createElement(K.default, null),
+                        "aria-label": K,
+                        icon: n.createElement(G.default, null),
                         onPress: () => {
                             a(d.DO(null));
                         },
@@ -217,10 +217,10 @@
             var Y = r(324922),
                 J = r(867492),
                 Q = r(377782);
-            const ee = G().d227d19e,
-                te = G().c64c1884,
-                re = G().j7d0e836,
-                ne = G().cdcebd22;
+            const ee = X().d227d19e,
+                te = X().c64c1884,
+                re = X().j7d0e836,
+                ne = X().cdcebd22;
             function ae({ analytics: e, buttonType: t, conversationTitle: r, handleToggleVisibility: o, isExpanded: i }) {
                 const s = (0, a.useHistory)();
                 return n.createElement(
@@ -244,8 +244,8 @@
             const oe = D.default.create((e) => ({ rightControls: { flexDirection: "row" } }));
             var ie = r(731708),
                 se = r(136483);
-            const le = G().a2f81050,
-                ce = G().e736990a;
+            const le = X().a2f81050,
+                ce = X().e736990a;
             function de({ conversationTitle: e, hasNewMessages: t, isConversationUnread: r, isHighlighted: a }) {
                 const o = e || n.createElement(ie.ZP, null, le),
                     i = r || (!e && t);
@@ -280,13 +280,13 @@
                             },
                         },
                     },
-                    n.createElement(p.Z, { ref: c, style: [he.headerRoot, !v && he.headerBorderClosed, ...E, he.cursor], testID: o ? W.headerHighlighted : W.header }, n.createElement(L.Z, { leftControl: t && v ? n.createElement(j, { buttonType: m, hasNewMessages: r > 0, inboxUnreadCount: r }) : null, onMiddleControlClick: b, rightControl: n.createElement(ae, { analytics: u, buttonType: m, conversationTitle: t, handleToggleVisibility: b, isExpanded: v }), style: he.roundedAppBarCorners, subtitle: e, title: n.createElement(de, { conversationTitle: t, hasNewMessages: r > 0, isConversationUnread: a, isHighlighted: o }), withBackground: !o })),
+                    n.createElement(p.Z, { ref: c, style: [he.headerRoot, !v && he.headerBorderClosed, ...E, he.cursor], testID: o ? W.headerHighlighted : W.header }, n.createElement(A.Z, { leftControl: t && v ? n.createElement(j, { buttonType: m, hasNewMessages: r > 0, inboxUnreadCount: r }) : null, onMiddleControlClick: b, rightControl: n.createElement(ae, { analytics: u, buttonType: m, conversationTitle: t, handleToggleVisibility: b, isExpanded: v }), style: he.roundedAppBarCorners, subtitle: e, title: n.createElement(de, { conversationTitle: t, hasNewMessages: r > 0, isConversationUnread: a, isHighlighted: o }), withBackground: !o })),
                 );
             }
             const ge = (e, t) => (e && t ? "onMediaText" : "primaryText"),
                 he = D.default.create((e) => ({ cursor: { cursor: "pointer" }, headerRoot: { borderTopStartRadius: e.borderRadii.xLarge, borderTopEndRadius: e.borderRadii.xLarge, transition: "all 0.3s ease" }, headerBorderClosed: { borderColor: e.colors.navigationBackground }, headerActive: { backgroundColor: e.colors.unreadCellBackground }, headerHighlighted: { borderColor: e.colors.primary, backgroundColor: e.colors.primary }, roundedAppBarCorners: { borderTopStartRadius: e.borderRadii.xLarge, borderTopEndRadius: e.borderRadii.xLarge } }));
             function me({ conversationSubtitle: e, conversationTitle: t, inboxUnreadCount: r, isConversationUnread: a = !1, isHighlighted: o, onDrawerOpen: i, triggerHighlight: s }) {
-                const c = (0, l.v9)(A.QA),
+                const c = (0, l.v9)(L.QA),
                     u = (0, l.v9)(d.gw);
                 return n.createElement(pe, { conversationSubtitle: e, conversationTitle: t, inboxUnreadCount: c, isConversationUnread: !!u && a, isHighlighted: o, onDrawerOpen: i, triggerHighlight: s });
             }
@@ -299,24 +299,24 @@
                 ke = r(131290),
                 Ce = r(601576),
                 De = r(919022),
-                Se = r(593953);
-            const xe = (e, t) => t.conversationId,
-                Te = (0, ve.P1)(
-                    (e, t) => c.selectEntriesForConversation(e, xe(0, t)),
+                xe = r(593953);
+            const Se = (e, t) => t.conversationId,
+                Ze = (0, ve.P1)(
+                    (e, t) => c.selectEntriesForConversation(e, Se(0, t)),
                     E._h,
-                    (e, t) => (t ? (0, Se.y9)(e, t) : void 0),
+                    (e, t) => (t ? (0, xe.y9)(e, t) : void 0),
                 ),
-                Ze = (e) => (t) => Ee.De(e, t),
+                Te = (e) => (t) => Ee.De(e, t),
                 He = (e) => (t, r) => Ee.rA(e, t, r),
-                Me = { conversation: (e, t) => c.selectConversation(e, xe(0, t)), entries: c.selectEntries, perspective: E._h, users: De.ZP.selectAll, dataSaverMode: we.IX, dtabBarInfo: ye.U6, quickReplyOptions: Te, visibility: d.kX, inboxUnreadCount: A.QA, isUnread: (e, t) => !c.selectConversationIsRead(e, xe(0, t)), isDmReceiptSettingEnabled: ke.cn },
-                Ie = { draftText: (e, t) => Ee.vb(e, xe(0, t)), gifMetadata: (e, t) => Ee.Tu(e, xe(0, t)), isUploading: (e, t) => Ee.q9(e, xe(0, t)), media: (e, t) => Ee.W8(e, xe(0, t)), mediaUploadProgress: (e, t) => Ee.Ah(e, xe(0, t)) },
+                Me = { conversation: (e, t) => c.selectConversation(e, Se(0, t)), entries: c.selectEntries, perspective: E._h, users: De.ZP.selectAll, dataSaverMode: we.IX, dtabBarInfo: ye.U6, quickReplyOptions: Ze, visibility: d.kX, inboxUnreadCount: L.QA, isUnread: (e, t) => !c.selectConversationIsRead(e, Se(0, t)), isDmReceiptSettingEnabled: ke.cn },
+                Ie = { draftText: (e, t) => Ee.vb(e, Se(0, t)), gifMetadata: (e, t) => Ee.Tu(e, Se(0, t)), isUploading: (e, t) => Ee.q9(e, Se(0, t)), media: (e, t) => Ee.W8(e, Se(0, t)), mediaUploadProgress: (e, t) => Ee.Ah(e, Se(0, t)) },
                 Re = (0, be.Z)()
                     .propsFromState(() => ({ ...Me, ...Ie }))
                     .adjustStateProps(({ conversation: e, dataSaverMode: t, draftText: r, dtabBarInfo: n, entries: a, gifMetadata: o, inboxUnreadCount: i, isDmReceiptSettingEnabled: s, isUnread: l, isUploading: c, media: d, mediaUploadProgress: u, perspective: p, quickReplyOptions: g, users: h, visibility: m }) => {
                         const v = e?.data;
                         return { conversation: v && (0, fe.lk)(v, a, h), perspective: p, dataSaverMode: t, draftText: r, dtabBarInfo: n, gifMetadata: o, inboxUnreadCount: i, isDmReceiptSettingEnabled: s, isUploading: c, isUnread: l, media: d, mediaUploadProgress: u, quickReplyOptions: g, visibility: m };
                     })
-                    .propsFromActions(({ conversationId: e }) => ({ addMedia: He(e), addToast: Ce.fz, createLocalApiErrorHandler: (0, s.zr)("DIRECT_MESSAGES_CONVERSATION"), fetchConversationHistory: c.fetchConversationHistory, removeMedia: Ze(e), saveText: Ee.E4, sendMessage: Ee.bG, updateConversationReadState: c.updateConversationReadState, fetchUpdatesIfNeeded: c.fetchUpdatesIfNeeded }))
+                    .propsFromActions(({ conversationId: e }) => ({ addMedia: He(e), addToast: Ce.fz, createLocalApiErrorHandler: (0, s.zr)("DIRECT_MESSAGES_CONVERSATION"), fetchConversationHistory: c.fetchConversationHistory, removeMedia: Te(e), saveText: Ee.E4, sendMessage: Ee.bG, updateConversationReadState: c.updateConversationReadState, fetchUpdatesIfNeeded: c.fetchUpdatesIfNeeded }))
                     .withAnalytics({ page: "messages", section: "thread_drawer" });
             class _e extends n.Component {
                 constructor(e, t) {
@@ -334,7 +334,7 @@
                             const { conversationId: e, createLocalApiErrorHandler: t, fetchUpdatesIfNeeded: r, isDmReceiptSettingEnabled: n } = this.props;
                             r(n ? { active_conversation_id: e, dm_users: !0 } : {}).catch(t());
                         }),
-                        (0, T.Z)();
+                        (0, Z.Z)();
                 }
                 componentDidMount() {
                     this._updatePolling();
@@ -344,7 +344,7 @@
                 }
                 render() {
                     const e = this._isExpanded();
-                    return n.createElement(I.y3.Provider, { value: void 0 }, !e && this._renderHeader(), e ? (S.ZP.isDesktopOS() ? n.createElement(Z, null, ({ richTextInputContext: e, typeaheadWrapper: t }) => this._renderConversation(e, t)) : this._renderConversation()) : null);
+                    return n.createElement(I.y3.Provider, { value: void 0 }, !e && this._renderHeader(), e ? (x.ZP.isDesktopOS() ? n.createElement(T, null, ({ richTextInputContext: e, typeaheadWrapper: t }) => this._renderConversation(e, t)) : this._renderConversation()) : null);
                 }
                 _renderHeader() {
                     const { conversation: e, conversationId: t, inboxUnreadCount: r, isHeaderHighlighted: a, isUnread: o, onDrawerOpen: i, perspective: s, triggerHeaderHighlight: l } = this.props,
@@ -358,11 +358,11 @@
                     this._pollingTimer && this._pollingTimer.stop(), this.props.visibility === y.S.COLLAPSED && ((this._pollingTimer = new H.Z(this._fetchUpdatesIfNeeded, { interval: 3e3 })), this._pollingTimer.start());
                 }
             }
-            _e.contextType = x.rC;
+            _e.contextType = S.rC;
             const Pe = D.default.create((e) => ({ headerRoot: { position: "sticky", top: 0, zIndex: e.componentZIndices.appBarZIndex } })),
                 Ue = Re(_e);
-            var Ae = r(293115),
-                Le = r(715601),
+            var Le = r(293115),
+                Ae = r(715601),
                 Oe = r(602920),
                 Ne = r(161821),
                 Be = r(973572),
@@ -370,9 +370,9 @@
                 We = r(288331),
                 ze = r(826760),
                 qe = r(149290),
-                Xe = r(763526);
-            const Ge = G().a2f81050;
-            function Ke({ dmDrawerOnClick: e, drawerCacheKey: t }) {
+                Ve = r(763526);
+            const Xe = X().a2f81050;
+            function Ge({ dmDrawerOnClick: e, drawerCacheKey: t }) {
                 const r = (0, F.z)(),
                     a = (0, l.I0)(),
                     o = (0, l.v9)(c.selectConversations),
@@ -390,10 +390,10 @@
                     ),
                     g = p.newUntrustedWithSocialProof + p.oldUntrustedWithSocialProof + p.newUntrustedWithoutSocialProof + p.oldUntrustedWithoutSocialProof,
                     h = d && (g > 0 || u > 0),
-                    m = () => n.createElement(n.Fragment, null, n.createElement(Xe.J, null), n.createElement(qe.Z, { allowUntrustedInbox: h, secondaryInboxCounts: p }));
-                return n.createElement(We.Z, { accessibilityTitle: Ge, analytics: r, conversationIds: s, customCellClick: e, fetchInboxHistory: () => a(c.fetchTrustedInboxHistory()), isDrawer: !0, renderEmptyDMInbox: () => n.createElement(ze.Z, { messageRequestPivot: m() }), renderStickyContent: m, updateLastSeenEventId: () => a(c.updateTrustedLastSeenEventId()), virtualScrollerCacheKey: t, withPinnedInbox: !0 });
+                    m = () => n.createElement(n.Fragment, null, n.createElement(Ve.J, null), n.createElement(qe.Z, { allowUntrustedInbox: h, secondaryInboxCounts: p }));
+                return n.createElement(We.Z, { accessibilityTitle: Xe, analytics: r, conversationIds: s, customCellClick: e, fetchInboxHistory: () => a(c.fetchTrustedInboxHistory()), isDrawer: !0, renderEmptyDMInbox: () => n.createElement(ze.Z, { messageRequestPivot: m() }), renderStickyContent: m, updateLastSeenEventId: () => a(c.updateTrustedLastSeenEventId()), virtualScrollerCacheKey: t, withPinnedInbox: !0 });
             }
-            const Ve = "dmDrawerInbox";
+            const Ke = "dmDrawerInbox";
             function je({ renderHeader: e }) {
                 const t = (0, l.I0)();
                 return n.createElement(
@@ -403,14 +403,14 @@
                         p.Z,
                         { style: [$e.viewportView, Oe.Z.drawerHeaderRadius] },
                         n.createElement(
-                            Le.Z,
+                            Ae.Z,
                             { style: [$e.viewportView, Oe.Z.drawerHeaderRadius] },
                             e(),
-                            n.createElement(Ke, {
+                            n.createElement(Ge, {
                                 dmDrawerOnClick: (e, r) => {
                                     t(d.DO(r)), e.preventDefault();
                                 },
-                                drawerCacheKey: Ve,
+                                drawerCacheKey: Ke,
                             }),
                         ),
                     ),
@@ -421,10 +421,10 @@
             function Je({ isHeaderHighlighted: e, onDrawerOpen: t, triggerHeaderHighlight: r }) {
                 const a = (0, l.v9)(d.kX) === y.S.EXPANDED;
                 n.useEffect(() => {
-                    a && (0, T.Z)();
+                    a && (0, Z.Z)();
                 }, [a]);
                 const o = () => n.createElement(p.Z, { style: Qe.headerRoot }, n.createElement(me, { isHighlighted: e, onDrawerOpen: t, triggerHighlight: r }));
-                return n.createElement(Ae.nO, { namespace: Ye }, n.createElement(n.Fragment, null, !a && o(), a && n.createElement(je, { renderHeader: o })));
+                return n.createElement(Le.nO, { namespace: Ye }, n.createElement(n.Fragment, null, !a && o(), a && n.createElement(je, { renderHeader: o })));
             }
             const Qe = D.default.create((e) => ({ headerRoot: { position: "sticky", top: 0, zIndex: e.componentZIndices.appBarZIndex } })),
                 et = 3e3,
@@ -437,12 +437,12 @@
                     c = (0, l.v9)(E._h),
                     C = (0, l.v9)(d.gw),
                     D = (0, l.v9)((e) => d.kX(e)),
-                    S = (0, w.N)(),
-                    [x, T] = n.useState(!1),
-                    [Z, H] = n.useState(void 0),
+                    x = (0, w.N)(),
+                    [S, Z] = n.useState(!1),
+                    [T, H] = n.useState(void 0),
                     M = D === y.S.EXPANDED,
                     I = () => {
-                        x && (T(!1), clearTimeout(o.current));
+                        S && (Z(!1), clearTimeout(o.current));
                     },
                     R = (e) => {
                         const {
@@ -450,17 +450,17 @@
                                 layout: { height: t },
                             },
                         } = e;
-                        M || void 0 !== Z || H(t);
+                        M || void 0 !== T || H(t);
                     },
                     _ = n.useCallback(() => {
                         M ||
-                            x ||
+                            S ||
                             o.current ||
-                            (T(!0),
+                            (Z(!0),
                             (o.current = setTimeout(() => {
-                                T(!1), (o.current = null);
+                                Z(!1), (o.current = null);
                             }, et)));
-                    }, [M, x]);
+                    }, [M, S]);
                 n.useEffect(
                     () => () => {
                         clearTimeout(o.current);
@@ -490,8 +490,8 @@
                         return !1;
                     })(M),
                     U = n.useRef(),
-                    A = M ? { transform: [{ translateY: 0 }] } : P ? { transition: "none", transform: [{ translateY: `calc(100% - ${U.current?.getBoundingClientRect().height ?? 0}px` }] } : { transform: [{ translateY: `calc(100% - ${Z ?? 0}px` }] },
-                    L = (function (e) {
+                    L = M ? { transform: [{ translateY: 0 }] } : P ? { transition: "none", transform: [{ translateY: `calc(100% - ${U.current?.getBoundingClientRect().height ?? 0}px` }] } : { transform: [{ translateY: `calc(100% - ${T ?? 0}px` }] },
+                    A = (function (e) {
                         const [t, r] = n.useState(!1);
                         return (
                             n.useEffect(() => {
@@ -509,7 +509,7 @@
                             }, [e]),
                             t
                         );
-                    })(!!Z);
+                    })(!!T);
                 return (() => {
                     const r = D === y.S.CLOSED;
                     return !t() && e && !r;
@@ -517,7 +517,7 @@
                     ? n.createElement(
                           g.Z.Drawer,
                           null,
-                          n.createElement(h.Z, { id: "DMDrawer" }, (e, t) => n.createElement(k.Z.Provider, { value: { isDrawer: !0 } }, n.createElement(m.ZP.Provider, { value: { isDMDrawer: () => !0 } }, n.createElement(p.Z, (0, u.Z)({ ref: e() }, t({ style: [Oe.Z.root, L && Oe.Z.expandable, !M && Z && { height: Z, maxHeight: Z }, { width: r }, A, v.Z.reducedMotionEnabled && Oe.Z.reducedMotion], testID: W.root })), n.createElement(p.Z, { onLayout: Z ? void 0 : R, ref: U, style: [M ? Oe.Z.expanded : null, Oe.Z.main] }, C ? n.createElement(f.Z.Provider, { value: rt }, n.createElement(Ue, { conversationId: C, history: i, isHeaderHighlighted: x, location: s, onDrawerOpen: I, perspective: c, triggerHeaderHighlight: _, typingNotifier: S })) : n.createElement(f.Z.Provider, { value: tt }, n.createElement(Je, { isHeaderHighlighted: x, onDrawerOpen: I, triggerHeaderHighlight: _ }))))))),
+                          n.createElement(h.Z, { id: "DMDrawer" }, (e, t) => n.createElement(k.Z.Provider, { value: { isDrawer: !0 } }, n.createElement(m.ZP.Provider, { value: { isDMDrawer: () => !0 } }, n.createElement(p.Z, (0, u.Z)({ ref: e() }, t({ style: [Oe.Z.root, A && Oe.Z.expandable, !M && T && { height: T, maxHeight: T }, { width: r }, L, v.Z.reducedMotionEnabled && Oe.Z.reducedMotion], testID: W.root })), n.createElement(p.Z, { onLayout: T ? void 0 : R, ref: U, style: [M ? Oe.Z.expanded : null, Oe.Z.main] }, C ? n.createElement(f.Z.Provider, { value: rt }, n.createElement(Ue, { conversationId: C, history: i, isHeaderHighlighted: S, location: s, onDrawerOpen: I, perspective: c, triggerHeaderHighlight: _, typingNotifier: x })) : n.createElement(f.Z.Provider, { value: tt }, n.createElement(Je, { isHeaderHighlighted: S, onDrawerOpen: I, triggerHeaderHighlight: _ }))))))),
                       )
                     : null;
             }
@@ -578,7 +578,7 @@
             }
             g.defaultProps = { renderFailure: i.Z, retryable: !0 };
         },
-        314948: (e, t, r) => {
+        377782: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var n = r(202784),
                 a = r(890601),
@@ -586,7 +586,20 @@
                 i = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 3.75c-4.55 0-8.25 3.69-8.25 8.25 0 1.92.66 3.68 1.75 5.08l2.8-2.79 1.41 1.42-2.79 2.79c1.4 1.1 3.16 1.75 5.08 1.75 4.56 0 8.25-3.69 8.25-8.25 0-1.92-.65-3.68-1.75-5.08l-2.79 2.79-1.41-1.42 2.79-2.79C15.68 4.4 13.92 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 2.59l9.46 9.45-1.42 1.42L12 5.41l-8.04 8.05-1.42-1.42L12 2.59zm0 7l9.46 9.45-1.42 1.42L12 12.41l-8.04 8.05-1.42-1.42L12 9.59z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
+        391366: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
+            var n = r(202784),
+                a = r(890601),
+                o = r(783427),
+                i = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, o.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M18 1.2v21.6L8.71 17H5.5C4.12 17 3 15.88 3 14.5v-5C3 8.12 4.12 7 5.5 7h3.21L18 1.2zM8 9H5.5c-.28 0-.5.22-.5.5v5c0 .28.22.5.5.5H8V9zm2 6.45l6 3.75V4.8l-6 3.75v6.9z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
@@ -622,4 +635,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DMDrawer.b540376a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DMDrawer.78a69caa.js.map

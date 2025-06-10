@@ -5441,6 +5441,8 @@
                 o("i8cae552", "درجہ بندی کر کے آپ کمیونٹی نوٹس کے معیار کو بہتر رکھنے میں مدد کریں گے۔"),
                 o("hd43a218", "You’ve reached your daily limit for writing notes"),
                 o("aaba8ed2", "To keep note quality high and prevent spam, there’s a limit to the number of notes contributors can write each day, based on their Writing Impact. Please try again later."),
+                o("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
+                o("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
                 o("b98f077c", "Request a Note Info"),
                 o("ee691104", "Request a Community Note about this post"),
                 o("f8cbdf02", "Think this post is potentially misleading? Request a Community Note."),
@@ -5883,10 +5885,10 @@
                 o("beba2a0e", "بک مارک کا نیا فولڈر بنائيں"),
                 o("e41c9b4f", function (e) {
                     return e.bookmarkFolderName + " میں محفوظ کر دیا گیا";
-                }),
-                o("h18f86a4", "فولڈر حذف کریں"),
-                o("f4ea967a", "فولڈر حذف کر دیا گیا ہے");
-            o("b670aa62", "فولڈر کا نام"),
+                });
+            o("h18f86a4", "فولڈر حذف کریں"),
+                o("f4ea967a", "فولڈر حذف کر دیا گیا ہے"),
+                o("b670aa62", "فولڈر کا نام"),
                 o("aece5462", "فولڈر کا نام کامیابی کے ساتھ اپ ڈیٹ ہو گیا ہے"),
                 o("e3299b94", "کچھ نقص واقع ہوا ہے۔ ایک منٹ بعد اس فولڈر کو دوبارہ اپ ڈیٹ کرنے کی کوشش کریں۔"),
                 o("c09ea714", "کچھ نقص واقع ہوا ہے۔ ایک منٹ بعد اس فولڈر کو دوبارہ حذف کرنے کی کوشش کریں۔"),
@@ -6887,10 +6889,10 @@
                 o("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for."),
                 o("ede7d0a2", "Currency"),
                 o("b925c18c", "Salary Type"),
-                o("j3d242ce", "Invalid range"),
-                o("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
-                o("b8cbb51a", "Job Summary");
-            o("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                o("j3d242ce", "Invalid range");
+            o("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
+                o("b8cbb51a", "Job Summary"),
+                o("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 o("b075c68a", "Edit job"),
                 o("d4b6a6e0", "پروفائل اسپاٹ لائٹ"),
                 o("j2dd3686", "Highlight featured jobs above my posts."),
@@ -7235,7 +7237,7 @@
                 o("h257d4aa", "Select a post to promote"),
                 o("e9334fe6", "Data updates every few minutes"),
                 o("a6d7b1d0", "Based on X Internal Data"),
-                o("h9b28dae", "You’re saving time with an ad-free feed"),
+                o("h71a00e6", "You’re saving time with ad-free"),
                 o("f6c50ec0", "Your ad-free trial has ended"),
                 o("e1d1fbca", "You’ve avoided"),
                 o("a82d7abd", function (e) {
@@ -7262,6 +7264,9 @@
                 }),
                 o("b93d00e5", function (e) {
                     return e.days + " day" + r(e.days, "", "s");
+                }),
+                o("dc9661b3", function (e) {
+                    return e.seconds + " second" + r(e.seconds, "", "s");
                 }),
                 o("g2c63852", "100% free. No credit card required."),
                 o("be88be23", function (e) {
@@ -7864,12 +7869,7 @@
                 o("b74ff5fc", "اگر آپ منسوخ کرتے ہیں، تو آپ کا سبسکرپشن خود بخود بلنگ سائیکل کے اختتام پر ختم ہو جائے گا۔"),
                 o("ee9efbc8", "کینسلیشن جاری رکھیں"),
                 o("c5d9c77a", "لگتا ہے ہلکی سی آواڑ آئی ہے۔ پریشان نہ ہوں، یہ آپ کی غلطی نہیں ہے۔ اس ونڈو کو بند کریں اور دوبارہ کوشش کریں۔"),
-                o("jda53c24", "آپ Apple App Store کے ذریعہ اپنا سبسکرپشن منسوخ کرسکتے ہیں۔"),
-                o("g0a7a53e", "آپ Google Play Storeکے ذریعہ اپنا سبسکرپشن منسوخ کرسکتے ہیں۔"),
-                o("i5f14be7", function (e) {
-                    return "Welcome back, " + e.displayName;
-                }),
-                o("a76d58ba", "Ads Analytics");
+                o("jda53c24", "آپ Apple App Store کے ذریعہ اپنا سبسکرپشن منسوخ کرسکتے ہیں۔");
             function i(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var o = t[a];
@@ -7908,7 +7908,12 @@
                     c(e, t)
                 );
             }
-            o("eccd0e1a", "Organization Analytics"),
+            o("g0a7a53e", "آپ Google Play Storeکے ذریعہ اپنا سبسکرپشن منسوخ کرسکتے ہیں۔"),
+                o("i5f14be7", function (e) {
+                    return "Welcome back, " + e.displayName;
+                }),
+                o("a76d58ba", "Ads Analytics"),
+                o("eccd0e1a", "Organization Analytics"),
                 o("deea1708", "Want to view analytics across all your X accounts?"),
                 o("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
                 o("gf67aae4", "Upgrade to Full Access"),
@@ -8904,11 +8909,11 @@
                     return e.advertiserName + " ملاحظہ کریں";
                 }),
                 o("c67e71aa", "ابھی دیکھیں"),
-                o("a6ada13e", "Shop now"),
-                o("j0f12222", "مزید دیکھیں"),
+                o("a6ada13e", "Shop now");
+            o("j0f12222", "مزید دیکھیں"),
                 o("f569f7c8", "ویب سائٹ پر جائیں"),
-                o("j0c6772a", "ویب سائٹ ملاحظہ کریں");
-            o("f73003aa", "اشتہار کے بعد ویڈیو چلے گی"),
+                o("j0c6772a", "ویب سائٹ ملاحظہ کریں"),
+                o("f73003aa", "اشتہار کے بعد ویڈیو چلے گی"),
                 o("b3112b8a", "چھوڑ دیں"),
                 o("h6333ad0", "اشتہار چھوڑیں"),
                 o("c59da417", function (e) {
@@ -13361,4 +13366,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.086947da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.e866093a.js.map

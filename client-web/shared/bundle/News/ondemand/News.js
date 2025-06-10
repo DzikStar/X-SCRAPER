@@ -227,8 +227,8 @@
                 return n ? l.createElement(w.Z, { resizeMode: "cover", source: n, style: [E.banner, { opacity: t }, { filter: `blur(${e || 0}px)` }, a] }) : null;
             }
             const E = r.default.create((e) => ({ banner: { width: "100%", height: 400, borderRadius: e.borderRadii.large, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationIterationCount: 1 } }));
-            var v = n(790167),
-                S = n(530732);
+            var S = n(790167),
+                v = n(530732);
             function T({ postId: e, style: t }) {
                 const n = l.useMemo(() => d.Z.createHydratorForTweet(e), [e]),
                     i = (0, c.v9)(n);
@@ -238,7 +238,7 @@
                     a.Z,
                     { style: [Z.attributionContainer, t] },
                     l.createElement(
-                        S.Z,
+                        v.Z,
                         {
                             onClick: () => {
                                 window.open(`https://x.com${i.permalink}`, "_blank");
@@ -283,7 +283,7 @@
                 if (!p) return null;
                 const { created_at: g, text: y, user: h } = p;
                 return l.createElement(
-                    S.Z,
+                    v.Z,
                     {
                         onClick: () => {
                             i && i(), window.open(`https://x.com${p.permalink}`, "_blank");
@@ -386,7 +386,7 @@
             var me = n(282279);
             function pe({ isExplore: e = !1, onSectionVisible: t, section: n, sources: i, style: s }) {
                 const { isCompactLayout: r } = (0, f.Z)();
-                return l.createElement(a.Z, { style: [ge.section, s] }, l.createElement(oe.D, { id: "news_article_section", onFullyVisible: t, position: "top", testID: "news_article_section" }), !!n.title && l.createElement(z, { text: n.title }), !!n.content.text && l.createElement(v.Z, { sources: i, style: ge.body, text: n.content.text }), n.content.bullets && l.createElement(C, { bulletpoints: n.content.bullets }), !!n.content.image_url && l.createElement(de, { image_caption: n.content.image_caption, image_size: n.content.image_size, image_url: n.content.image_url }), n.content.website && l.createElement(me.Z, { website: n.content.website }), n.content.post && l.createElement(a.Z, { style: [ge.outerTweetContainer, r || e ? ge.compactOuterTweetContainer : void 0] }, l.createElement(a.Z, { style: ge.tweetContainer }, l.createElement(re.ZP, { displayPromotedContent: !0, isCompact: r, tweetId: n.content.post.post_results.rest_id, withActions: !0 }))));
+                return l.createElement(a.Z, { style: [ge.section, s] }, l.createElement(oe.D, { id: "news_article_section", onFullyVisible: t, position: "top", testID: "news_article_section" }), !!n.title && l.createElement(z, { text: n.title }), !!n.content.text && l.createElement(S.Z, { sources: i, style: ge.body, text: n.content.text }), n.content.bullets && l.createElement(C, { bulletpoints: n.content.bullets }), !!n.content.image_url && l.createElement(de, { image_caption: n.content.image_caption, image_size: n.content.image_size, image_url: n.content.image_url }), n.content.website && l.createElement(me.Z, { website: n.content.website }), n.content.post && l.createElement(a.Z, { style: [ge.outerTweetContainer, r || e ? ge.compactOuterTweetContainer : void 0] }, l.createElement(a.Z, { style: ge.tweetContainer }, l.createElement(re.ZP, { displayPromotedContent: !0, isCompact: r, tweetId: n.content.post.post_results.rest_id, withActions: !0 }))));
             }
             const ge = r.default.create((e) => ({ section: { display: "flex", flexDirection: "column", gap: e.spaces.space16 }, outerTweetContainer: { width: "100%", display: "flex", justifyContent: "center", alignItems: "center", paddingHorizontal: "15%" }, compactOuterTweetContainer: { paddingHorizontal: "unset" }, tweetContainer: { borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray200, borderRadius: e.borderRadii.large, overflow: "hidden", width: "100%" }, body: { ..._ } }));
             var ye = n(858496),
@@ -410,7 +410,7 @@
                             t
                         );
                     }, [e]),
-                    S = l.useMemo(() => {
+                    v = l.useMemo(() => {
                         if (!e) return [];
                         const t = [...E];
                         return (
@@ -422,8 +422,8 @@
                         );
                     }, [e, E]);
                 l.useEffect(() => {
-                    r(d.Z.fetchMultiple(S));
-                }, [r, S]);
+                    r(d.Z.fetchMultiple(v));
+                }, [r, v]);
                 const Z = l.useCallback(
                         (t) => {
                             e && (0, k.xi)(n, { articleId: e.id, sectionIdx: t, totalNumSections: e.sections.length });
@@ -449,7 +449,7 @@
                                   l.createElement(
                                       a.Z,
                                       { style: [_e.centerComponents, m && _e.compactCenterComponents] },
-                                      l.createElement(a.Z, { style: _e.headerContainer }, l.createElement(he.Z, { text: e.title, textStyle: _e.title }), l.createElement(A.Z, { textStyle: _e.lastUpdatedAt, timestamp: e.last_updated_at }), !!e.summary && l.createElement(v.Z, { sources: [], style: _e.summary, text: e.summary })),
+                                      l.createElement(a.Z, { style: _e.headerContainer }, l.createElement(he.Z, { text: e.title, textStyle: _e.title }), l.createElement(A.Z, { textStyle: _e.lastUpdatedAt, timestamp: e.last_updated_at }), !!e.summary && l.createElement(S.Z, { sources: [], style: _e.summary, text: e.summary })),
                                       l.createElement(a.Z, { style: _e.postsContainer }, w && l.createElement(N.Z, { article: e, hideTitle: !0, isInline: !0 }), e.posts && e.posts.length > 0 && l.createElement(j, { articleId: e.id, commentPostIds: E, numComments: Number(e.total_trend_posts), posts: e.posts })),
                                       e.key_points && e.key_points.length > 0 && l.createElement(R, { keyPoints: e.key_points }),
                                       e.sections.map((n, a) =>
@@ -571,8 +571,8 @@
                 w,
                 x,
                 E,
-                v,
                 S,
+                v,
                 T,
                 Z,
                 F,
@@ -699,7 +699,7 @@
                                                                             }),
                                                                             (k = { kind: "InlineFragment", selections: [{ alias: "inline_header", args: null, kind: "ScalarField", name: "content", storageKey: null }], type: "InlineHeader", abstractKey: null }),
                                                                             (w = { kind: "InlineFragment", selections: [{ alias: "text", args: null, kind: "ScalarField", name: "content", storageKey: null }], type: "TextBlock", abstractKey: null }),
-                                                                            (A = { kind: "InlineFragment", selections: [{ alias: "website", args: null, concreteType: "GrokBraveSearch", kind: "LinkedField", name: "content", plural: !1, selections: [(x = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null }), (E = { alias: null, args: null, kind: "ScalarField", name: "cached_page_url", storageKey: null }), (v = { alias: null, args: null, kind: "ScalarField", name: "creator", storageKey: null }), (S = { alias: null, args: null, kind: "ScalarField", name: "date_last_crawled", storageKey: null }), (T = { alias: null, args: null, kind: "ScalarField", name: "date_published", storageKey: null }), (Z = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (F = { alias: null, args: null, kind: "ScalarField", name: "favicon", storageKey: null }), (C = { alias: null, args: null, kind: "ScalarField", name: "favicon_base64", storageKey: null }), (I = { alias: null, args: null, kind: "ScalarField", name: "image", storageKey: null }), (K = { alias: null, args: null, kind: "ScalarField", name: "language", storageKey: null }), (z = { alias: null, args: null, kind: "ScalarField", name: "parsed_text", storageKey: null }), (L = { alias: null, args: null, kind: "ScalarField", name: "site_name", storageKey: null }), (P = { alias: null, args: null, kind: "ScalarField", name: "snippet", storageKey: null }), (R = { alias: null, args: null, kind: "ScalarField", name: "time_accessed", storageKey: null }), u, (D = { alias: null, args: null, kind: "ScalarField", name: "media_name", storageKey: null }), m], storageKey: null }], type: "WebsiteBlock", abstractKey: null }),
+                                                                            (A = { kind: "InlineFragment", selections: [{ alias: "website", args: null, concreteType: "GrokBraveSearch", kind: "LinkedField", name: "content", plural: !1, selections: [(x = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null }), (E = { alias: null, args: null, kind: "ScalarField", name: "cached_page_url", storageKey: null }), (S = { alias: null, args: null, kind: "ScalarField", name: "creator", storageKey: null }), (v = { alias: null, args: null, kind: "ScalarField", name: "date_last_crawled", storageKey: null }), (T = { alias: null, args: null, kind: "ScalarField", name: "date_published", storageKey: null }), (Z = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (F = { alias: null, args: null, kind: "ScalarField", name: "favicon", storageKey: null }), (C = { alias: null, args: null, kind: "ScalarField", name: "favicon_base64", storageKey: null }), (I = { alias: null, args: null, kind: "ScalarField", name: "image", storageKey: null }), (K = { alias: null, args: null, kind: "ScalarField", name: "language", storageKey: null }), (z = { alias: null, args: null, kind: "ScalarField", name: "parsed_text", storageKey: null }), (L = { alias: null, args: null, kind: "ScalarField", name: "site_name", storageKey: null }), (P = { alias: null, args: null, kind: "ScalarField", name: "snippet", storageKey: null }), (R = { alias: null, args: null, kind: "ScalarField", name: "time_accessed", storageKey: null }), u, (D = { alias: null, args: null, kind: "ScalarField", name: "media_name", storageKey: null }), m], storageKey: null }], type: "WebsiteBlock", abstractKey: null }),
                                                                             (N = { kind: "InlineFragment", selections: [{ alias: "post", args: null, concreteType: "Post", kind: "LinkedField", name: "content", plural: !1, selections: o, storageKey: null }], type: "PostBlock", abstractKey: null }),
                                                                             ($ = { kind: "InlineFragment", selections: [(H = { alias: null, args: null, kind: "ScalarField", name: "last_time_updated", storageKey: null }), (M = { alias: null, args: null, kind: "ScalarField", name: "question", storageKey: null }), { alias: null, args: null, concreteType: "SentimentScore", kind: "LinkedField", name: "sentiment_scores", plural: !0, selections: [(B = { alias: null, args: null, kind: "ScalarField", name: "num_posts", storageKey: null }), (V = { alias: null, args: null, kind: "ScalarField", name: "sentiment_type", storageKey: null }), (W = { alias: null, args: null, kind: "ScalarField", name: "sentiment_value", storageKey: null }), h], storageKey: null }, (O = { alias: null, args: null, kind: "ScalarField", name: "sentiment_types", storageKey: null }), (U = { alias: null, args: null, kind: "ScalarField", name: "trend_id", storageKey: null })], type: "TrendSentiment", abstractKey: null }),
                                                                         ],
@@ -708,7 +708,7 @@
                                                                 ],
                                                                 storageKey: null,
                                                             },
-                                                            (G = { alias: null, args: null, concreteType: "GrokBraveSearch", kind: "LinkedField", name: "sources", plural: !0, selections: [x, E, v, S, T, Z, F, C, I, K, z, L, P, R, u, m, D], storageKey: null }),
+                                                            (G = { alias: null, args: null, concreteType: "GrokBraveSearch", kind: "LinkedField", name: "sources", plural: !0, selections: [x, E, S, v, T, Z, F, C, I, K, z, L, P, R, u, m, D], storageKey: null }),
                                                             (q = { alias: null, args: null, concreteType: "Post", kind: "LinkedField", name: "posts", plural: !0, selections: o, storageKey: null }),
                                                         ],
                                                         storageKey: null,
@@ -747,7 +747,7 @@
                 return { ...n.deepsearch_news_articles, sentiment: n.sentiment_data ?? void 0, post_timelines: l } || null;
             };
         },
-        748138: (e, t, n) => {
+        41065: (e, t, n) => {
             n.r(t), n.d(t, { default: () => o });
             var l = n(202784),
                 a = n(890601),
@@ -755,11 +755,11 @@
                 s = n(347101);
             const r = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
             };
             r.metadata = { width: 24, height: 24 };
             const o = r;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News.aabb2daa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News.cda6e4fa.js.map

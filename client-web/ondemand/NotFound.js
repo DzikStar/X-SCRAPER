@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: a, hideBackButton: n, isFullWidth: i, isLarge: c, leftControl: d, middleControl: h, position: u, rightControl: m, secondaryBar: b, style: g, subtitle: B, title: k, titleDomId: y, titleIconCell: f, titleIconCellSize: C, withBackground: Z, withWideContainer: x } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: a, hideBackButton: n, isFullWidth: i, isLarge: c, leftControl: d, middleControl: h, position: u, rightControl: m, secondaryBar: b, style: g, subtitle: B, title: k, titleDomId: y, titleIconCell: C, titleIconCellSize: f, withBackground: Z, withWideContainer: x } = this.props,
                         { isModal: w } = this.context,
                         E = n ? d : r.createElement(l.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        v = (function (e, t, o) {
+                        _ = (function (e, t, o) {
                             return e && !(t && o);
                         })(!!Z, w, !!b);
-                    return r.createElement(r.Fragment, null, r.createElement(s.Z, { centerTitle: t, centeredLogo: o, isFullWidth: i, isLarge: c, leftControl: E, middleControl: h, position: p(u, w, a), rightControl: m, style: g, subtitle: B, title: k, titleDomId: y, titleIconCell: f, titleIconCellSize: C, withBackground: v, withWideContainer: x }), b || null);
+                    return r.createElement(r.Fragment, null, r.createElement(s.Z, { centerTitle: t, centeredLogo: o, isFullWidth: i, isLarge: c, leftControl: E, middleControl: h, position: p(u, w, a), rightControl: m, style: g, subtitle: B, title: k, titleDomId: y, titleIconCell: C, titleIconCellSize: f, withBackground: _, withWideContainer: x }), b || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -62,8 +62,8 @@
                     super(...e),
                         (this._renderChildViewAppBar = () => {
                             const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: n, centerTitle: i, hideBackButton: l, history: s, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: b, rightControl: g, secondaryBar: B, subtitle: k, title: y } = this.props,
-                                { isModal: f } = this.context;
-                            return r.createElement(a.Z, { style: f ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, r.createElement(d.ZP, { backButtonType: o || (f ? "close" : "back"), backLocation: n, centerTitle: i, fixed: !f, hideBackButton: l, history: s, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: b, ref: e, rightControl: g, secondaryBar: B, style: [f && m.appBarModal, t], subtitle: k, title: y, titleDomId: c.Q_ }));
+                                { isModal: C } = this.context;
+                            return r.createElement(a.Z, { style: C ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, r.createElement(d.ZP, { backButtonType: o || (C ? "close" : "back"), backLocation: n, centerTitle: i, fixed: !C, hideBackButton: l, history: s, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: b, ref: e, rightControl: g, secondaryBar: B, style: [C && m.appBarModal, t], subtitle: k, title: y, titleDomId: c.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -157,7 +157,7 @@
             const i = (e) => r.createElement(n.Z, { history: e.history }, r.createElement(a.default, { history: e.history, location: e.location, match: e.match }));
         },
         466441: (e, t, o) => {
-            o.r(t), o.d(t, { NotFoundScreen: () => y, default: () => C });
+            o.r(t), o.d(t, { NotFoundScreen: () => y, default: () => f });
             o(571372);
             var r = o(202784),
                 a = o(386802),
@@ -183,13 +183,13 @@
                     (0, c.q)(() => {
                         i && t && (0, b.ZP)(new Error(`Page not found: ${t}`));
                     }),
-                    r.createElement(u.Z, null, r.createElement(d.Z.Configure, { backLocation: "/", documentTitle: B, title: k }), r.createElement(n.Z, { style: o && f.modal }, r.createElement(h.Z, null)), r.createElement(p.Z, { title: B, withMeta: !1 }))
+                    r.createElement(u.Z, null, r.createElement(d.Z.Configure, { backLocation: "/", documentTitle: B, title: k }), r.createElement(n.Z, { style: o && C.modal }, r.createElement(h.Z, null)), r.createElement(p.Z, { title: B, withMeta: !1 }))
                 );
             }
-            const f = i.default.create((e) => ({ modal: { backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.xLarge } })),
-                C = (0, g.Z)(y, { page: "not_found" });
+            const C = i.default.create((e) => ({ modal: { backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.xLarge } })),
+                f = (0, g.Z)(y, { page: "not_found" });
         },
-        748138: (e, t, o) => {
+        41065: (e, t, o) => {
             o.r(t), o.d(t, { default: () => s });
             var r = o(202784),
                 a = o(890601),
@@ -197,11 +197,11 @@
                 i = o(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.NotFound.52b0581a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.NotFound.9848190a.js.map

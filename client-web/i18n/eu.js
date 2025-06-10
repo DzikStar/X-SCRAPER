@@ -5440,6 +5440,8 @@
                 o("i8cae552", "By rating you’ll help keep quality in Community Notes high."),
                 o("hd43a218", "You’ve reached your daily limit for writing notes"),
                 o("aaba8ed2", "To keep note quality high and prevent spam, there’s a limit to the number of notes contributors can write each day, based on their Writing Impact. Please try again later."),
+                o("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
+                o("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
                 o("b98f077c", "Request a Note Info"),
                 o("ee691104", "Request a Community Note about this post"),
                 o("f8cbdf02", "Think this post is potentially misleading? Request a Community Note."),
@@ -5882,10 +5884,10 @@
                 o("beba2a0e", "Sortu laster-marken karpeta berri bat"),
                 o("e41c9b4f", function (e) {
                     return "Hemen gordeta: " + e.bookmarkFolderName;
-                }),
-                o("h18f86a4", "Ezabatu karpeta"),
-                o("f4ea967a", "Karpeta ezabatu da");
-            o("b670aa62", "Karpetaren izena"),
+                });
+            o("h18f86a4", "Ezabatu karpeta"),
+                o("f4ea967a", "Karpeta ezabatu da"),
+                o("b670aa62", "Karpetaren izena"),
                 o("aece5462", "Karpeta izena behar bezala eguneratu da"),
                 o("e3299b94", "Arazoren bat izan da. Saiatu berriro karpeta hori eguneratzen minutu bat barru."),
                 o("c09ea714", "Arazoren bat izan da. Saiatu berriro karpeta hori ezabatzen minutu bat barru."),
@@ -6886,10 +6888,10 @@
                 o("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for."),
                 o("ede7d0a2", "Currency"),
                 o("b925c18c", "Salary Type"),
-                o("j3d242ce", "Invalid range"),
-                o("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
-                o("b8cbb51a", "Job Summary");
-            o("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                o("j3d242ce", "Invalid range");
+            o("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
+                o("b8cbb51a", "Job Summary"),
+                o("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 o("b075c68a", "Edit job"),
                 o("d4b6a6e0", "Profilaren fokua"),
                 o("j2dd3686", "Highlight featured jobs above my posts."),
@@ -7234,7 +7236,7 @@
                 o("h257d4aa", "Select a post to promote"),
                 o("e9334fe6", "Data updates every few minutes"),
                 o("a6d7b1d0", "Based on X Internal Data"),
-                o("h9b28dae", "You’re saving time with an ad-free feed"),
+                o("h71a00e6", "You’re saving time with ad-free"),
                 o("f6c50ec0", "Your ad-free trial has ended"),
                 o("e1d1fbca", "You’ve avoided"),
                 o("a82d7abd", function (e) {
@@ -7261,6 +7263,9 @@
                 }),
                 o("b93d00e5", function (e) {
                     return e.days + " day" + r(e.days, "", "s");
+                }),
+                o("dc9661b3", function (e) {
+                    return e.seconds + " second" + r(e.seconds, "", "s");
                 }),
                 o("g2c63852", "100% free. No credit card required."),
                 o("be88be23", function (e) {
@@ -7863,12 +7868,7 @@
                 o("b74ff5fc", "If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
                 o("ee9efbc8", "Jarraitu uzteko"),
                 o("c5d9c77a", "Itxura txiki bat egon zela dirudi. Ez kezkatu ordea, ez da zure errua. Itxi leiho hau eta saiatu berriro."),
-                o("jda53c24", "You can cancel your Subscription through the Apple App Store."),
-                o("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
-                o("i5f14be7", function (e) {
-                    return "Welcome back, " + e.displayName;
-                }),
-                o("a76d58ba", "Ads Analytics");
+                o("jda53c24", "You can cancel your Subscription through the Apple App Store.");
             function n(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var o = a[t];
@@ -7907,7 +7907,12 @@
                     u(e, a)
                 );
             }
-            o("eccd0e1a", "Organization Analytics"),
+            o("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
+                o("i5f14be7", function (e) {
+                    return "Welcome back, " + e.displayName;
+                }),
+                o("a76d58ba", "Ads Analytics"),
+                o("eccd0e1a", "Organization Analytics"),
                 o("deea1708", "Want to view analytics across all your X accounts?"),
                 o("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
                 o("gf67aae4", "Upgrade to Full Access"),
@@ -8903,11 +8908,11 @@
                     return "Bisitatu " + e.advertiserName;
                 }),
                 o("c67e71aa", "Ikusi orain"),
-                o("a6ada13e", "Erosi orain"),
-                o("j0f12222", "Ikusi gehiago"),
+                o("a6ada13e", "Erosi orain");
+            o("j0f12222", "Ikusi gehiago"),
                 o("f569f7c8", "Joan webgunera"),
-                o("j0c6772a", "Bisitatu webgunea");
-            o("f73003aa", "Bideoa iragarkiaren ondoren erreproduzituko da"),
+                o("j0c6772a", "Bisitatu webgunea"),
+                o("f73003aa", "Bideoa iragarkiaren ondoren erreproduzituko da"),
                 o("b3112b8a", "Pasatu"),
                 o("h6333ad0", "Saltatu iragarkia"),
                 o("c59da417", function (e) {
@@ -13359,4 +13364,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.2d96934a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.bc47f94a.js.map

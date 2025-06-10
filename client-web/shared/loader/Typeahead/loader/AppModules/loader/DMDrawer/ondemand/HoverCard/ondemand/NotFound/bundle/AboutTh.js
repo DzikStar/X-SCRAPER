@@ -3,7 +3,7 @@
     {
         804027: (e, t, r) => {
             "use strict";
-            r.d(t, { $T: () => B, $b: () => G, AA: () => v, Ae: () => z, CE: () => V, C_: () => L, D7: () => C, Dk: () => W, GN: () => J, Hm: () => U, IN: () => H, Iq: () => E, J$: () => N, QS: () => S, R8: () => m, RA: () => Y, TT: () => x, Ti: () => R, WZ: () => O, XD: () => D, Xb: () => I, YI: () => Z, ZF: () => k, ZJ: () => b, __: () => A, aD: () => T, bc: () => w, h0: () => P, ho: () => q, lS: () => M, q0: () => Q, qE: () => y, qJ: () => F, vY: () => j });
+            r.d(t, { $T: () => B, $b: () => G, AA: () => v, Ae: () => z, CE: () => V, C_: () => L, D7: () => C, Dk: () => W, GN: () => J, Hm: () => U, IN: () => H, Iq: () => E, J$: () => N, QS: () => S, R8: () => m, RA: () => Y, TT: () => x, Ti: () => R, WZ: () => O, XD: () => D, Xb: () => P, YI: () => Z, ZF: () => k, ZJ: () => b, __: () => A, aD: () => y, bc: () => w, h0: () => I, ho: () => q, lS: () => M, q0: () => Q, qE: () => T, qJ: () => F, vY: () => j });
             var n = r(261214),
                 o = r(956056),
                 i = r(41065),
@@ -22,15 +22,15 @@
                 w = Object.freeze({ Allow: "allow", CancelFlow: "cancel_flow", HideExplicitCta: "hide_explicit_cta", Disallow: "disallow" }),
                 m = Object.freeze({ Default: "default", BulletList: "bullet_list" }),
                 b = Object.freeze({ DestructiveSecondary: "destructive_secondary", Primary: "primary", Secondary: "secondary", Text: "text", Brand: "brand", TwitterBrand: "twitter_brand" }),
-                y = Object.freeze({ Small: "small", NormalCompact: "normal_compact", Normal: "normal", LargeCompact: "large_compact", Large: "large" }),
-                T = (Object.freeze({ CheckmarkAndClose: "checkmark", Text: "text", ThumbsUpAndDown: "thumbs" }), Object.freeze({ Toolbar: "toolbar" }), Object.freeze({ Scrollable: "scrollable", Centered: "centered", CenteredHeader: "centered_header", HalfCover: "half_cover" })),
+                T = Object.freeze({ Small: "small", NormalCompact: "normal_compact", Normal: "normal", LargeCompact: "large_compact", Large: "large" }),
+                y = (Object.freeze({ CheckmarkAndClose: "checkmark", Text: "text", ThumbsUpAndDown: "thumbs" }), Object.freeze({ Toolbar: "toolbar" }), Object.freeze({ Scrollable: "scrollable", Centered: "centered", CenteredHeader: "centered_header", HalfCover: "half_cover" })),
                 S = Object.freeze({ Success: "success", Failure: "failure", Cancel: "cancel" }),
                 A = Object.freeze({ Icon: "icon", FullWidth: "full_width", FullBleedTop: "full_bleed_top" }),
                 v = Object.freeze({ PhoneOnly: "phone_only", EmailOnly: "email_only", PhoneThenEmail: "phone_then_email", EmailThenPhone: "email_then_phone" }),
                 R = Object.freeze({ ActionList: "ACTION_LIST", AlertDialog: "ALERT_DIALOG", AlertDialogSupressClientEvents: "ALERT_DIALOG_SUPRESS_CLIENT_EVENTS", AppDownloadCTA: "APP_DOWNLOAD_CTA", AppLocaleUpdate: "APP_LOCALE_UPDATE", BrowsableNux: "BROWSABLE_NUX", CallToAction: "CALL_TO_ACTION", CheckLoggedInAccount: "CHECK_LOGGED_IN_ACCOUNT", ChoiceSelection: "CHOICE_SELECTION", ContactsLiveSyncPermissionPrompt: "CONTACTS_LIVE_SYNC_PERMISSION_PROMPT", EmailContactsSync: "EMAIL_CONTACTS_SYNC", EmailVerification: "EMAIL_VERIFICATION", EndFlow: "END_FLOW", EnterDate: "ENTER_DATE", EnterEmail: "ENTER_EMAIL", EnterPassword: "ENTER_PASSWORD", EnterPhone: "ENTER_PHONE", EnterRecaptcha: "ENTER_RECAPTCHA", EnterText: "ENTER_TEXT", EnterUsername: "ENTER_USERNAME", FetchPassword: "FETCH_PASSWORD", GenericURT: "GENERIC_URT", InAppNotification: "IN_APP_NOTIFICATION", InterestPicker: "INTEREST_PICKER", JsInstrumentation: "JS_INSTRUMENTATION", MenuDialog: "MENU_DIALOG", NotificationsPermissionPrompt: "NOTIFICATIONS_PERMISSION_PROMPT", OpenAccount: "OPEN_ACCOUNT", OpenHomeTimeline: "OPEN_HOME_TIMELINE", OpenLink: "OPEN_LINK", Passkey: "PASSKEY", PhoneVerification: "PHONE_VERIFICATION", PrivacyOptions: "PRIVACY_OPTIONS", Recaptcha: "RECAPTCHA", SecurityKey: "SECURITY_KEY", SelectAvatar: "SELECT_AVATAR", SelectBanner: "SELECT_BANNER", SettingsList: "SETTINGS_LIST", ShowCode: "SHOW_CODE", Signup: "SIGNUP", SignupReview: "SIGNUP_REVIEW", TopicsSelector: "TOPICS_SELECTOR", TweetSelectionURT: "TWEET_SELECTION_URT", TypeaheadSearch: "TYPEAHEAD_SEARCH", UpdateUsers: "UPDATE_USERS", UploadMedia: "UPLOAD_MEDIA", UserRecommendations: "USER_RECOMMENDATIONS_LIST", UserRecommendationsURT: "USER_RECOMMENDATIONS_URT", WaitSpinner: "WAIT_SPINNER", WebModal: "WEB_MODAL" }),
                 O = (Object.freeze({ Centered: "centered", Left: "left" }), (0, g.Z)([R.EndFlow, R.FetchPassword, R.CheckLoggedInAccount, R.OpenAccount, R.OpenHomeTimeline, R.OpenLink, R.NotificationsPermissionPrompt, R.UploadMedia, R.WaitSpinner])),
-                P = Object.freeze({ Action: "action", Boolean: "boolean", DestructiveAction: "destructive_action", PreciseLocation: "precise_location", SettingsGroup: "settings_group", StaticText: "static_text", Separator: "separator", TextField: "text_field", Button: "button", Tweet: "tweet" }),
-                I = "setting_responses",
+                I = Object.freeze({ Action: "action", Boolean: "boolean", DestructiveAction: "destructive_action", PreciseLocation: "precise_location", SettingsGroup: "settings_group", StaticText: "static_text", Separator: "separator", TextField: "text_field", Button: "button", Tweet: "tweet" }),
+                P = "setting_responses",
                 C = "SignupSSOSubtask",
                 k = Object.freeze({ AppleSSOButton: "apple_sso_button", GoogleSSOButton: "google_sso_button", NextButton: "next_button", UserIdentifier: "user_identifier" }),
                 U = Object.freeze({ DEPRECATED_UnorderedList: "UnorderedList", DEPRECATED_ListItem: "ListItem", UnorderedList: "unordered_list", ListItem: "list_item" }),
@@ -75,28 +75,28 @@
                 w = Object.freeze({ REQUEST: "rweb/ocf/FETCH_REQUEST", SUCCESS: "rweb/ocf/FETCH_SUCCESS", FAILURE: "rweb/ocf/FETCH_FAILURE" }),
                 m = Object.freeze({ REQUEST: "rweb/ocf/START_REQUEST", SUCCESS: "rweb/ocf/START_SUCCESS", FAILURE: "rweb/ocf/START_FAILURE" }),
                 b = "rweb/ocf/CLEAR",
-                y = "rweb/ocf/UPDATE",
-                T = "rweb/ocf/NAVIGATE",
+                T = "rweb/ocf/UPDATE",
+                y = "rweb/ocf/NAVIGATE",
                 S = "rweb/ocf/RESUME",
                 A = "rweb/ocf/ATTRIBUTE",
                 v = Object.freeze({ REQUEST: "rweb/ocf/VERIFY_IDENTIFIER_REQUEST", SUCCESS: "rweb/ocf/VERIFY_IDENTIFIER_SUCCESS", FAILURE: "rweb/ocf/VERIFY_IDENTIFIER_FAILURE" }),
                 R = Object.freeze({ REQUEST: "rweb/ocf/FETCH_BROWSABLE_NUX_RECOMMENDATIONS_REQUEST", SUCCESS: "rweb/ocf/FETCH_BROWSABLE_NUX_RECOMMENDATIONS_SUCCESS", FAILURE: "rweb/ocf/FETCH_BROWSABLE_NUX_RECOMMENDATIONS_FAILURE" }),
                 O = (0, i.Z)(["signup"]),
-                P = { currentSubtask: void 0, previouslySubmittedSubtaskId: void 0, failureMessage: "", fetchStatus: d.ZP.NONE, flowName: void 0, flowToken: void 0, shouldAbort: !1, shouldEndFlow: !1, submitFailed: !1, startLocation: void 0, subtasks: [], subtaskInputs: {}, navigationContext: { action: "", link: "" }, navigationStack: [], flowData: {}, sendPinCode: !1, browsableNuxRecommendations: [] },
-                I = (e) => {
+                I = { currentSubtask: void 0, previouslySubmittedSubtaskId: void 0, failureMessage: "", fetchStatus: d.ZP.NONE, flowName: void 0, flowToken: void 0, shouldAbort: !1, shouldEndFlow: !1, submitFailed: !1, startLocation: void 0, subtasks: [], subtaskInputs: {}, navigationContext: { action: "", link: "" }, navigationStack: [], flowData: {}, sendPinCode: !1, browsableNuxRecommendations: [] },
+                P = (e) => {
                     const t = e && (0, f.uL)(e);
                     return t === l.Ti.EmailVerification || t === l.Ti.PhoneVerification;
                 },
                 C = (e) => e === u.ZP.ValidationFailure || e === u.ZP.OnboardingFlowFailure || e === u.ZP.OnboardingFlowRetriableFailure;
             h.Z.register({
-                [_]: function (e = P, t) {
+                [_]: function (e = I, t) {
                     if (!t) return e;
                     switch (t.type) {
                         case m.REQUEST:
-                            return { ...P, fetchStatus: d.ZP.LOADING, flowName: t.meta?.flowName, startLocation: e.startLocation };
+                            return { ...I, fetchStatus: d.ZP.LOADING, flowName: t.meta?.flowName, startLocation: e.startLocation };
                         case w.REQUEST:
                             return { ...e, fetchStatus: d.ZP.LOADING, submitFailed: !1 };
-                        case T: {
+                        case y: {
                             const { navigationContext: r, navigationStack: n, sendPinCode: o, subtaskInputs: i } = t.payload ?? {},
                                 a = { ...e.subtaskInputs };
                             for (const e in a) i[e] && delete a[e];
@@ -104,7 +104,7 @@
                         }
                         case A:
                             return { ...e, startLocation: t.payload };
-                        case y: {
+                        case T: {
                             const { flowData: r, subtaskInputs: n } = t.payload ?? {};
                             return { ...e, subtaskInputs: { ...e.subtaskInputs, ...n }, flowData: { ...e.flowData, ...r } };
                         }
@@ -142,12 +142,12 @@
                             const { flow_token: r, subtasks: n } = t.payload ?? {},
                                 { isTaskNavigation: o } = t.meta ?? {},
                                 i = n && n.length ? n[0] : void 0,
-                                a = I(i),
+                                a = P(i),
                                 s = !!o && !i;
                             return { ...e, previouslySubmittedSubtaskId: e.currentSubtask?.subtask_id, currentSubtask: i, fetchStatus: d.ZP.LOADED, flowToken: r, sendPinCode: a, shouldEndFlow: s, submitFailed: !1, subtasks: n, subtaskInputs: {}, navigationStack: i ? [i.subtask_id] : [], shouldAbort: !1 };
                         }
                         case b:
-                            return { ...P };
+                            return { ...I };
                         case S:
                             return t.payload ?? e;
                         case v.REQUEST:
@@ -227,7 +227,7 @@
                                             n = a.set(g, { [t.flowName]: t.subtasks.length && (e.statusText === E || r) ? t : void 0 });
                                         if (r) {
                                             const t = JSON.parse(r.challenge);
-                                            if (window.location.host.includes("x.com") && "x.com" !== t.rp?.id)
+                                            if (window.location.host.includes("x.com") && "x.com" !== t.rp?.id && "x.com" !== t.publicKeyCredentialRequestOptions?.rpId)
                                                 return n.then(
                                                     () => (
                                                         ((e) => {
@@ -247,7 +247,7 @@
                         updateFlow:
                             (e, t = {}, r = {}) =>
                             (n, o) => {
-                                n({ type: y, payload: { subtaskId: e, subtaskInputs: { [e]: t }, flowData: r } });
+                                n({ type: T, payload: { subtaskId: e, subtaskInputs: { [e]: t }, flowData: r } });
                             },
                     };
                 },
@@ -273,8 +273,8 @@
                             p = r && r.action,
                             d = p === l.vY.ResendSms || p === l.vY.ResendVoice || p === l.vY.ResendEmail;
                         "clear" === p && n && (f[n] = {});
-                        const g = I(h) && (!p || d);
-                        o({ type: T, payload: { navigationContext: { action: "", ...r }, sendPinCode: g, subtaskId: n, subtaskInputs: f, navigationStack: c } });
+                        const g = P(h) && (!p || d);
+                        o({ type: y, payload: { navigationContext: { action: "", ...r }, sendPinCode: g, subtaskId: n, subtaskInputs: f, navigationStack: c } });
                     },
                 X = (e, t) =>
                     Object.keys(t)
@@ -345,7 +345,7 @@
         },
         153925: (e, t, r) => {
             "use strict";
-            r.d(t, { $1: () => l, Di: () => m, Ds: () => s, JJ: () => E, OA: () => _, OG: () => a, Rs: () => c, Yr: () => f, _w: () => b, cR: () => y, eU: () => h, jb: () => u, sI: () => p, uL: () => w });
+            r.d(t, { $1: () => l, Di: () => m, Ds: () => s, JJ: () => E, OA: () => _, OG: () => a, Rs: () => c, Yr: () => f, _w: () => b, cR: () => T, eU: () => h, jb: () => u, sI: () => p, uL: () => w });
             r(202784);
             var n = r(370751),
                 o = r(163889),
@@ -484,21 +484,7 @@
                     return !!t && g.has(t);
                 },
                 b = (e) => e === i.h0.Boolean || e === i.h0.PreciseLocation,
-                y = (e) => ({ uri: e.image_info.url, width: e.image_info.width, height: e.image_info.height });
-        },
-        42635: (e, t, r) => {
-            "use strict";
-            r.r(t), r.d(t, { default: () => u });
-            var n = r(202784),
-                o = r(890601),
-                i = r(783427),
-                a = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 1.75C6.339 1.75 1.75 6.339 1.75 12S6.339 22.25 12 22.25 22.25 17.661 22.25 12 17.661 1.751 12 1.75zm.571 12.75v2.857L12 18.5l-.571-1.143V14.5H7.36l1.783-3.566V7.928c0-.789.64-1.429 1.429-1.429h2.857c.789 0 1.429.64 1.429 1.429v3.006l1.783 3.566h-4.069z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const u = s;
+                T = (e) => ({ uri: e.image_info.url, width: e.image_info.width, height: e.image_info.height });
         },
         595766: (e, t) => {
             "use strict";
@@ -663,10 +649,10 @@
                         case "utf-8":
                             return R(this, t, r);
                         case "ascii":
-                            return P(this, t, r);
+                            return I(this, t, r);
                         case "latin1":
                         case "binary":
-                            return I(this, t, r);
+                            return P(this, t, r);
                         case "base64":
                             return v(this, t, r);
                         case "ucs2":
@@ -742,7 +728,7 @@
             function b(e, t, r, n) {
                 return Z(j(t, e.length - r), e, r, n);
             }
-            function y(e, t, r, n) {
+            function T(e, t, r, n) {
                 return Z(
                     (function (e) {
                         for (var t = [], r = 0; r < e.length; ++r) t.push(255 & e.charCodeAt(r));
@@ -753,8 +739,8 @@
                     n,
                 );
             }
-            function T(e, t, r, n) {
-                return y(e, t, r, n);
+            function y(e, t, r, n) {
+                return T(e, t, r, n);
             }
             function S(e, t, r, n) {
                 return Z(z(t), e, r, n);
@@ -972,10 +958,10 @@
                             case "utf-8":
                                 return b(this, e, t, r);
                             case "ascii":
-                                return y(this, e, t, r);
+                                return T(this, e, t, r);
                             case "latin1":
                             case "binary":
-                                return T(this, e, t, r);
+                                return y(this, e, t, r);
                             case "base64":
                                 return S(this, e, t, r);
                             case "ucs2":
@@ -992,13 +978,13 @@
                     return { type: "Buffer", data: Array.prototype.slice.call(this._arr || this, 0) };
                 });
             var O = 4096;
-            function P(e, t, r) {
+            function I(e, t, r) {
                 var n = "";
                 r = Math.min(e.length, r);
                 for (var o = t; o < r; ++o) n += String.fromCharCode(127 & e[o]);
                 return n;
             }
-            function I(e, t, r) {
+            function P(e, t, r) {
                 var n = "";
                 r = Math.min(e.length, r);
                 for (var o = t; o < r; ++o) n += String.fromCharCode(e[o]);
@@ -1395,4 +1381,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh.b9e1991a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh.13f208aa.js.map

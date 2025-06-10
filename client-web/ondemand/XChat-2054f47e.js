@@ -2,623 +2,661 @@
     ["ondemand.XChat-2054f47e"],
     {
         801906: (t, i, s) => {
-            !(function (t, i, h, n, e, r) {
+            !(function (t, i, c, h, n, e) {
                 "use strict";
-                var _,
+                var r,
+                    _,
                     u,
-                    c,
-                    o,
                     a,
-                    b,
+                    o,
                     f,
-                    l,
                     w,
+                    l,
                     v,
                     x,
-                    d,
                     y,
                     z,
+                    d,
                     g,
-                    p,
                     $,
+                    b,
                     R,
-                    m,
-                    q,
+                    p,
                     k,
-                    j = Math.imul,
-                    S = i.$_$.xe,
-                    E = i.$_$.ud,
-                    J = i.$_$.g,
-                    C = i.$_$.qj,
-                    F = i.$_$.ae,
-                    A = i.$_$.rj,
-                    K = i.$_$.p6,
-                    P = i.$_$.dj,
-                    X = i.$_$.id,
-                    W = i.$_$.tc,
-                    T = i.$_$.ec,
-                    I = i.$_$.wd,
-                    N = i.$_$.yd,
-                    L = i.$_$.bf,
-                    M = i.$_$.td,
-                    U = i.$_$.kd,
-                    H = i.$_$.dl,
-                    D = h.$_$.j,
-                    G = h.$_$.h,
-                    B = i.$_$.f4,
-                    O = i.$_$.l4,
-                    Q = h.$_$.e,
-                    V = h.$_$.d,
-                    Y = i.$_$.ye,
-                    Z = i.$_$.b4,
-                    tt = n.$_$.c,
-                    it = i.$_$.fj,
-                    st = h.$_$.c,
-                    ht = h.$_$.i,
-                    nt = h.$_$.a,
-                    et = h.$_$.g,
-                    rt = i.$_$.f,
-                    _t = i.$_$.sf,
-                    ut = i.$_$.fb,
-                    ct = h.$_$.b,
-                    ot = e.$_$.n,
-                    at = r.$_$.h,
-                    bt = r.$_$.b,
-                    ft = r.$_$.w,
-                    lt = r.$_$.g,
-                    wt = i.$_$.zd,
-                    vt = h.$_$.f,
-                    xt = i.$_$.e6,
-                    dt = i.$_$.zh,
-                    yt = i.$_$.kg,
-                    zt = i.$_$.rk,
-                    gt = i.$_$.xf,
-                    pt = i.$_$.rd,
-                    $t = r.$_$.u,
-                    Rt = r.$_$.d,
-                    mt = r.$_$.c,
-                    qt = r.$_$.f,
-                    kt = r.$_$.k;
-                function jt(t) {
-                    At.call(this), (this.bytes = t);
+                    m,
+                    j,
+                    q,
+                    S,
+                    E,
+                    C = Math.imul,
+                    J = i.$_$.af,
+                    A = i.$_$.xd,
+                    F = i.$_$.g,
+                    K = i.$_$.xj,
+                    P = i.$_$.de,
+                    X = i.$_$.yj,
+                    W = i.$_$.r6,
+                    I = i.$_$.kj,
+                    T = i.$_$.ld,
+                    N = i.$_$.wc,
+                    D = i.$_$.hc,
+                    L = i.$_$.zd,
+                    M = i.$_$.be,
+                    U = i.$_$.ef,
+                    H = i.$_$.wd,
+                    G = i.$_$.nd,
+                    B = i.$_$.kl,
+                    O = c.$_$.j,
+                    Q = c.$_$.h,
+                    V = i.$_$.h4,
+                    Y = i.$_$.n4,
+                    Z = c.$_$.e,
+                    tt = c.$_$.d,
+                    it = i.$_$.bf,
+                    st = i.$_$.d4,
+                    ct = h.$_$.c,
+                    ht = i.$_$.mj,
+                    nt = c.$_$.c,
+                    et = c.$_$.i,
+                    rt = c.$_$.a,
+                    _t = c.$_$.g,
+                    ut = i.$_$.f,
+                    at = i.$_$.vf,
+                    ot = i.$_$.hb,
+                    ft = c.$_$.b,
+                    wt = i.$_$.zk,
+                    lt = n.$_$.n,
+                    vt = e.$_$.h,
+                    xt = e.$_$.b,
+                    yt = e.$_$.w,
+                    zt = e.$_$.g,
+                    dt = i.$_$.ce,
+                    gt = c.$_$.f,
+                    $t = i.$_$.g6,
+                    bt = i.$_$.fi,
+                    Rt = i.$_$.pg,
+                    pt = i.$_$.yk,
+                    kt = i.$_$.ag,
+                    mt = i.$_$.ud,
+                    jt = e.$_$.u,
+                    qt = e.$_$.d,
+                    St = e.$_$.c,
+                    Et = e.$_$.f,
+                    Ct = e.$_$.k;
+                function Jt(t) {
+                    Wt.call(this), (this.bytes = t);
                 }
-                function St(t, i) {
-                    At.call(this), (this.reason = t), (this.guessesRemaining = i);
-                }
-                function Et() {
-                    (_ = this), At.call(this);
-                }
-                function Jt() {
-                    return null == _ && new Et(), _;
-                }
-                function Ct() {
-                    (u = this), At.call(this);
+                function At(t, i) {
+                    Wt.call(this), (this.reason = t), (this.guessesRemaining = i);
                 }
                 function Ft() {
-                    return null == u && new Ct(), u;
+                    (r = this), Wt.call(this);
                 }
-                function At() {}
                 function Kt() {
-                    return [Gt(), Bt(), Ot(), Qt(), Vt(), Yt(), Zt()];
+                    return null == r && new Ft(), r;
                 }
-                function Pt(t) {
-                    switch (t) {
-                        case "InvalidPin":
-                            return Gt();
-                        case "NotRegistered":
-                            return Bt();
-                        case "InvalidAuth":
-                            return Ot();
-                        case "UpgradeRequired":
-                            return Qt();
-                        case "Assertion":
-                            return Vt();
-                        case "Transient":
-                            return Yt();
-                        case "RateLimitExceeded":
-                            return Zt();
-                        default:
-                            Xt(), A("No enum constant value.");
-                    }
+                function Pt() {
+                    (_ = this), Wt.call(this);
                 }
                 function Xt() {
-                    if (v) return K;
-                    (v = !0), (c = new Wt("InvalidPin", 0, !0)), (o = new Wt("NotRegistered", 1, !0)), (a = new Wt("InvalidAuth", 2, !0)), (b = new Wt("UpgradeRequired", 3, !1)), (f = new Wt("Assertion", 4, !1)), (l = new Wt("Transient", 5, !0)), (w = new Wt("RateLimitExceeded", 6, !0));
+                    return null == _ && new Pt(), _;
                 }
-                function Wt(t, i, s) {
-                    P.call(this, t, i), (this.retryable = s);
-                }
-                function Tt() {
-                    (x = this), Lt.call(this);
-                }
+                function Wt() {}
                 function It() {
-                    return null == x && new Tt(), x;
+                    return [Vt(), Yt(), Zt(), ti(), ii(), si(), ci()];
                 }
-                function Nt(t) {
-                    Lt.call(this), (this.reason = t);
-                }
-                function Lt() {}
-                function Mt() {
-                    return [ti(), ii(), si(), hi(), ni(), ei()];
-                }
-                function Ut(t) {
+                function Tt(t) {
                     switch (t) {
+                        case "InvalidPin":
+                            return Vt();
+                        case "NotRegistered":
+                            return Yt();
                         case "InvalidAuth":
-                            return ti();
+                            return Zt();
                         case "UpgradeRequired":
-                            return ii();
+                            return ti();
                         case "Assertion":
-                            return si();
+                            return ii();
                         case "Transient":
-                            return hi();
+                            return si();
                         case "RateLimitExceeded":
-                            return ni();
-                        case "StorageFailed":
-                            return ei();
+                            return ci();
                         default:
-                            Ht(), A("No enum constant value.");
+                            Nt(), X("No enum constant value.");
                     }
                 }
-                function Ht() {
-                    if (R) return K;
-                    (R = !0), (d = new Dt("InvalidAuth", 0, !0)), (y = new Dt("UpgradeRequired", 1, !1)), (z = new Dt("Assertion", 2, !1)), (g = new Dt("Transient", 3, !0)), (p = new Dt("RateLimitExceeded", 4, !0)), ($ = new Dt("StorageFailed", 5, !0));
+                function Nt() {
+                    if (x) return W;
+                    (x = !0), (u = new Dt("InvalidPin", 0, !0)), (a = new Dt("NotRegistered", 1, !0)), (o = new Dt("InvalidAuth", 2, !0)), (f = new Dt("UpgradeRequired", 3, !1)), (w = new Dt("Assertion", 4, !1)), (l = new Dt("Transient", 5, !0)), (v = new Dt("RateLimitExceeded", 6, !0));
                 }
                 function Dt(t, i, s) {
-                    P.call(this, t, i), (this.retryable = s);
+                    I.call(this, t, i), (this.retryable = s);
                 }
+                function Lt() {
+                    (y = this), Ht.call(this);
+                }
+                function Mt() {
+                    return null == y && new Lt(), y;
+                }
+                function Ut(t) {
+                    Ht.call(this), (this.reason = t);
+                }
+                function Ht() {}
                 function Gt() {
-                    return Xt(), c;
+                    return [hi(), ni(), ei(), ri(), _i(), ui()];
                 }
-                function Bt() {
-                    return Xt(), o;
+                function Bt(t) {
+                    switch (t) {
+                        case "InvalidAuth":
+                            return hi();
+                        case "UpgradeRequired":
+                            return ni();
+                        case "Assertion":
+                            return ei();
+                        case "Transient":
+                            return ri();
+                        case "RateLimitExceeded":
+                            return _i();
+                        case "StorageFailed":
+                            return ui();
+                        default:
+                            Ot(), X("No enum constant value.");
+                    }
                 }
                 function Ot() {
-                    return Xt(), a;
+                    if (p) return W;
+                    (p = !0), (z = new Qt("InvalidAuth", 0, !0)), (d = new Qt("UpgradeRequired", 1, !1)), (g = new Qt("Assertion", 2, !1)), ($ = new Qt("Transient", 3, !0)), (b = new Qt("RateLimitExceeded", 4, !0)), (R = new Qt("StorageFailed", 5, !0));
                 }
-                function Qt() {
-                    return Xt(), b;
+                function Qt(t, i, s) {
+                    I.call(this, t, i), (this.retryable = s);
                 }
                 function Vt() {
-                    return Xt(), f;
+                    return Nt(), u;
                 }
                 function Yt() {
-                    return Xt(), l;
+                    return Nt(), a;
                 }
                 function Zt() {
-                    return Xt(), w;
+                    return Nt(), o;
                 }
                 function ti() {
-                    return Ht(), d;
+                    return Nt(), f;
                 }
                 function ii() {
-                    return Ht(), y;
+                    return Nt(), w;
                 }
                 function si() {
-                    return Ht(), z;
+                    return Nt(), l;
+                }
+                function ci() {
+                    return Nt(), v;
                 }
                 function hi() {
-                    return Ht(), g;
+                    return Ot(), z;
                 }
                 function ni() {
-                    return Ht(), p;
+                    return Ot(), d;
                 }
                 function ei() {
-                    return Ht(), $;
+                    return Ot(), g;
                 }
-                function ri(t, i, s, h) {
-                    W.call(this, h), (this.bbd_1 = t), (this.cbd_1 = i), (this.dbd_1 = s);
+                function ri() {
+                    return Ot(), $;
                 }
-                function _i(t, i, s, h) {
-                    W.call(this, h), (this.qbd_1 = t), (this.rbd_1 = i), (this.sbd_1 = s);
+                function _i() {
+                    return Ot(), b;
                 }
-                function ui() {}
-                function ci(t, i) {
-                    (this.hbe_1 = t), (this.ibe_1 = i);
+                function ui() {
+                    return Ot(), R;
                 }
-                function oi(t, i) {
-                    (this.jbe_1 = t), (this.kbe_1 = i);
+                function ai(t, i, s, c) {
+                    N.call(this, c), (this.ec4_1 = t), (this.fc4_1 = i), (this.gc4_1 = s);
                 }
-                function ai(t, i, s, h, n) {
-                    W.call(this, n), (this.tbe_1 = t), (this.ube_1 = i), (this.vbe_1 = s), (this.wbe_1 = h);
+                function oi(t, i, s, c) {
+                    N.call(this, c), (this.tc4_1 = t), (this.uc4_1 = i), (this.vc4_1 = s);
                 }
-                function bi(t, i, s, h, n, e, r) {
-                    W.call(this, r), (this.abg_1 = t), (this.bbg_1 = i), (this.cbg_1 = s), (this.dbg_1 = h), (this.ebg_1 = n), (this.fbg_1 = e);
-                }
-                function fi(t, i, s, h) {
-                    W.call(this, h), (this.kbh_1 = t), (this.lbh_1 = i), (this.mbh_1 = s);
-                }
-                function li(t, i, s, h, n) {
-                    W.call(this, n), (this.ybh_1 = t), (this.zbh_1 = i), (this.abi_1 = s), (this.bbi_1 = h);
-                }
+                function fi() {}
                 function wi() {
-                    (m = this), (this.abh_1 = 1024), (this.bbh_1 = (1024 + ct()) | 0);
+                    if (j) return W;
+                    (j = !0), (k = new li("Identity", 0)), (m = new li("Signing", 1));
                 }
-                function vi(t, i) {
-                    var s = new xi(t, i);
-                    return (s.y9_1 = K), (s.z9_1 = null), s.oa();
+                function li(t, i) {
+                    I.call(this, t, i);
+                }
+                function vi() {
+                    return wi(), k;
                 }
                 function xi(t, i) {
-                    W.call(this, i), (this.rbi_1 = t);
+                    (this.kc5_1 = t), (this.lc5_1 = i);
                 }
-                function di() {}
-                function yi() {}
-                function zi(t) {
-                    return t.crypto;
+                function yi(t, i) {
+                    (this.mc5_1 = t), (this.nc5_1 = i);
                 }
-                function gi(t, i) {
-                    return Ki(t.wbi_1, "spki", i);
+                function zi(t, i, s, c, h) {
+                    N.call(this, h), (this.wc5_1 = t), (this.xc5_1 = i), (this.yc5_1 = s), (this.zc5_1 = c);
+                }
+                function di(t, i, s, c, h, n, e) {
+                    N.call(this, e), (this.dc7_1 = t), (this.ec7_1 = i), (this.fc7_1 = s), (this.gc7_1 = c), (this.hc7_1 = h), (this.ic7_1 = n);
+                }
+                function gi(t, i, s, c) {
+                    N.call(this, c), (this.nc8_1 = t), (this.oc8_1 = i), (this.pc8_1 = s);
+                }
+                function $i(t, i, s, c, h) {
+                    N.call(this, h), (this.bc9_1 = t), (this.cc9_1 = i), (this.dc9_1 = s), (this.ec9_1 = c);
+                }
+                function bi() {
+                    (q = this), (this.dc8_1 = 1024), (this.ec8_1 = (1024 + ft()) | 0);
+                }
+                function Ri(t, i) {
+                    var s = new pi(t, i);
+                    return (s.y9_1 = W), (s.z9_1 = null), s.oa();
                 }
                 function pi(t, i) {
-                    var s = new Xi(t, i);
-                    return (s.y9_1 = K), (s.z9_1 = null), s.oa();
+                    N.call(this, i), (this.uc9_1 = t);
                 }
-                function $i(t) {
-                    var i = zi(window).subtle,
-                        s = { name: "ECDH", namedCurve: "P-256" },
-                        h = s;
-                    return ot(i.generateKey(h, !0, ["deriveBits"]), t);
+                function ki() {}
+                function mi() {}
+                function ji(t) {
+                    return t.crypto;
                 }
-                function Ri(t) {
-                    var i = zi(window).subtle,
+                function qi(t, i) {
+                    return Di(t.zc9_1, "spki", i);
+                }
+                function Si(t, i) {
+                    var s = new Mi(t, i);
+                    return (s.y9_1 = W), (s.z9_1 = null), s.oa();
+                }
+                function Ei(t, i) {
+                    var s,
+                        c = ji(window).subtle,
+                        h = {};
+                    switch (t.y2_1) {
+                        case 0:
+                            s = "ECDH";
+                            break;
+                        case 1:
+                            s = "ECDSA";
+                            break;
+                        default:
+                            wt();
+                    }
+                    (h.name = s), (h.namedCurve = "P-256");
+                    var n,
+                        e = h;
+                    switch (t.y2_1) {
+                        case 0:
+                            n = ["deriveBits"];
+                            break;
+                        case 1:
+                            n = ["sign", "verify"];
+                            break;
+                        default:
+                            wt();
+                    }
+                    return lt(c.generateKey(e, !0, n), i);
+                }
+                function Ci(t) {
+                    var i = ji(window).subtle,
                         s = { name: "AES-GCM", length: 256 },
-                        h = s;
-                    return ot(i.generateKey(h, !0, ["encrypt", "decrypt"]), t);
+                        c = s;
+                    return lt(i.generateKey(c, !0, ["encrypt", "decrypt"]), t);
                 }
-                function mi(t, i, s) {
-                    var h = new Wi(t, i, s);
-                    return (h.y9_1 = K), (h.z9_1 = null), h.oa();
+                function Ji(t, i, s) {
+                    var c = new Ui(t, i, s);
+                    return (c.y9_1 = W), (c.z9_1 = null), c.oa();
                 }
-                function qi(t, i, s) {
-                    var h = new Ti(t, i, s);
-                    return (h.y9_1 = K), (h.z9_1 = null), h.oa();
+                function Ai(t, i, s) {
+                    var c = new Hi(t, i, s);
+                    return (c.y9_1 = W), (c.z9_1 = null), c.oa();
                 }
-                function ki(t, i, s) {
-                    var h = new Ii(t, i, s);
-                    return (h.y9_1 = K), (h.z9_1 = null), h.oa();
+                function Fi(t, i, s) {
+                    var c = new Gi(t, i, s);
+                    return (c.y9_1 = W), (c.z9_1 = null), c.oa();
                 }
-                function ji(t, i, s, h) {
-                    var n = new Ni(t, i, s, h);
-                    return (n.y9_1 = K), (n.z9_1 = null), n.oa();
+                function Ki(t, i, s, c) {
+                    var h = new Bi(t, i, s, c);
+                    return (h.y9_1 = W), (h.z9_1 = null), h.oa();
                 }
-                function Si(t, i, s, h) {
-                    var n = new Li(t, i, (s = s === J ? null : s), h);
-                    return (n.y9_1 = K), (n.z9_1 = null), n.oa();
+                function Pi(t, i, s, c) {
+                    var h = new Oi(t, i, s, c);
+                    return (h.y9_1 = W), (h.z9_1 = null), h.oa();
                 }
-                function Ei(t, i, s, h) {
-                    var n = new Mi(t, i, s, h);
-                    return (n.y9_1 = K), (n.z9_1 = null), n.oa();
+                function Xi(t, i, s, c) {
+                    var h = new Qi(t, i, s, c);
+                    return (h.y9_1 = W), (h.z9_1 = null), h.oa();
                 }
-                function Ji(t, i, s, h) {
-                    var n = new Ui(t, i, (s = s === J ? null : s), h);
-                    return (n.y9_1 = K), (n.z9_1 = null), n.oa();
-                }
-                function Ci(t, i, s) {
-                    var h = new Hi(t, i, s);
-                    return (h.y9_1 = K), (h.z9_1 = null), h.oa();
-                }
-                function Fi(t, i, s, h) {
-                    var n = new Di(t, i, s, h);
-                    return (n.y9_1 = K), (n.z9_1 = null), n.oa();
-                }
-                function Ai(t, i) {
-                    var s = new Gi(t, i);
-                    return (s.y9_1 = K), (s.z9_1 = null), s.oa();
-                }
-                function Ki(t, i, s) {
-                    return ot(zi(window).subtle.exportKey(i, t), s);
-                }
-                function Pi(t, i, s) {
-                    return ot(zi(window).subtle.exportKey(i, t), s);
-                }
-                function Xi(t, i) {
-                    W.call(this, i), (this.fbj_1 = t);
-                }
-                function Wi(t, i, s) {
-                    W.call(this, s), (this.obj_1 = t), (this.pbj_1 = i);
-                }
-                function Ti(t, i, s) {
-                    W.call(this, s), (this.zbj_1 = t), (this.abk_1 = i);
+                function Wi(t, i, s, c) {
+                    var h = new Vi(t, i, s, c);
+                    return (h.y9_1 = W), (h.z9_1 = null), h.oa();
                 }
                 function Ii(t, i, s) {
-                    W.call(this, s), (this.kbk_1 = t), (this.lbk_1 = i);
+                    var c = new Yi(t, i, s);
+                    return (c.y9_1 = W), (c.z9_1 = null), c.oa();
                 }
-                function Ni(t, i, s, h) {
-                    W.call(this, h), (this.vbk_1 = t), (this.wbk_1 = i), (this.xbk_1 = s);
+                function Ti(t, i, s, c) {
+                    var h = new Zi(t, i, s, c);
+                    return (h.y9_1 = W), (h.z9_1 = null), h.oa();
                 }
-                function Li(t, i, s, h) {
-                    W.call(this, h), (this.hbl_1 = t), (this.ibl_1 = i), (this.jbl_1 = s);
+                function Ni(t, i) {
+                    var s = new ts(t, i);
+                    return (s.y9_1 = W), (s.z9_1 = null), s.oa();
                 }
-                function Mi(t, i, s, h) {
-                    W.call(this, h), (this.tbl_1 = t), (this.ubl_1 = i), (this.vbl_1 = s);
+                function Di(t, i, s) {
+                    return lt(ji(window).subtle.exportKey(i, t), s);
                 }
-                function Ui(t, i, s, h) {
-                    W.call(this, h), (this.fbm_1 = t), (this.gbm_1 = i), (this.hbm_1 = s);
+                function Li(t, i, s) {
+                    return lt(ji(window).subtle.exportKey(i, t), s);
+                }
+                function Mi(t, i) {
+                    N.call(this, i), (this.ica_1 = t);
+                }
+                function Ui(t, i, s) {
+                    N.call(this, s), (this.rca_1 = t), (this.sca_1 = i);
                 }
                 function Hi(t, i, s) {
-                    W.call(this, s), (this.rbm_1 = t), (this.sbm_1 = i);
+                    N.call(this, s), (this.ccb_1 = t), (this.dcb_1 = i);
                 }
-                function Di(t, i, s, h) {
-                    W.call(this, h), (this.cbn_1 = t), (this.dbn_1 = i), (this.ebn_1 = s);
+                function Gi(t, i, s) {
+                    N.call(this, s), (this.ncb_1 = t), (this.ocb_1 = i);
                 }
-                function Gi(t, i) {
-                    W.call(this, i), (this.obn_1 = t);
+                function Bi(t, i, s, c) {
+                    N.call(this, c), (this.ycb_1 = t), (this.zcb_1 = i), (this.acc_1 = s);
                 }
-                function Bi(t) {
-                    var i = t.rbn_1;
+                function Oi(t, i, s, c) {
+                    N.call(this, c), (this.kcc_1 = t), (this.lcc_1 = i), (this.mcc_1 = s);
+                }
+                function Qi(t, i, s, c) {
+                    N.call(this, c), (this.wcc_1 = t), (this.xcc_1 = i), (this.ycc_1 = s);
+                }
+                function Vi(t, i, s, c) {
+                    N.call(this, c), (this.icd_1 = t), (this.jcd_1 = i), (this.kcd_1 = s);
+                }
+                function Yi(t, i, s) {
+                    N.call(this, s), (this.ucd_1 = t), (this.vcd_1 = i);
+                }
+                function Zi(t, i, s, c) {
+                    N.call(this, c), (this.fce_1 = t), (this.gce_1 = i), (this.hce_1 = s);
+                }
+                function ts(t, i) {
+                    N.call(this, i), (this.rce_1 = t);
+                }
+                function is(t) {
+                    var i = t.uce_1;
                     return (
-                        pt(
+                        mt(
                             "juiceboxModule",
                             1,
-                            gt,
+                            kt,
                             function (t) {
-                                return Bi(t);
+                                return is(t);
                             },
                             null,
                         ),
                         i.o2()
                     );
                 }
-                function Oi(t, i, s) {
-                    var h = new Zi(t, i, s);
-                    return (h.y9_1 = K), (h.z9_1 = null), h.oa();
+                function ss(t, i, s) {
+                    var c = new es(t, i, s);
+                    return (c.y9_1 = W), (c.z9_1 = null), c.oa();
                 }
-                function Qi(t, i) {
-                    (this.kbo_1 = t), W.call(this, i);
+                function cs(t, i) {
+                    (this.ncf_1 = t), N.call(this, i);
                 }
-                function Vi(t) {
+                function hs(t) {
                     return function () {
                         return (function (t, i) {
-                            var s = new Qi(t, i),
-                                h = function (t) {
-                                    return s.lbo(t);
+                            var s = new cs(t, i),
+                                c = function (t) {
+                                    return s.ocf(t);
                                 };
-                            return (h.$arity = 0), h;
+                            return (c.$arity = 0), c;
                         })(t, null);
                     };
                 }
-                function Yi(t) {
+                function ns(t) {
                     return function (i) {
                         return new Promise(
                             (function (t, i) {
-                                return function (s, h) {
+                                return function (s, c) {
                                     try {
-                                        var n = vt(t),
-                                            e = xt().in_1,
-                                            r = dt(O(n), e),
-                                            _ = i.g9z_1.r2(r);
-                                        s(null == _ ? null : _.n9z_1);
+                                        var h = gt(t),
+                                            n = $t().sn_1,
+                                            e = bt(Y(h), n),
+                                            r = i.ha7_1.r2(e);
+                                        s(null == r ? null : r.oa7_1);
                                     } catch (t) {
                                         if (!(t instanceof Error)) throw t;
-                                        h(t);
+                                        c(t);
                                     }
-                                    return K;
+                                    return W;
                                 };
                             })(i, t),
                         );
                     };
                 }
-                function Zi(t, i, s) {
-                    W.call(this, s), (this.abo_1 = t), (this.bbo_1 = i);
+                function es(t, i, s) {
+                    N.call(this, s), (this.dcf_1 = t), (this.ecf_1 = i);
                 }
-                function ts(t, i, s, h, n) {
-                    W.call(this, n), (this.ubo_1 = t), (this.vbo_1 = i), (this.wbo_1 = s), (this.xbo_1 = h);
+                function rs(t, i, s, c, h) {
+                    N.call(this, h), (this.xcf_1 = t), (this.ycf_1 = i), (this.zcf_1 = s), (this.acg_1 = c);
                 }
-                function is(t, i, s, h) {
-                    W.call(this, h), (this.jbp_1 = t), (this.kbp_1 = i), (this.lbp_1 = s);
+                function _s(t, i, s, c) {
+                    N.call(this, c), (this.mcg_1 = t), (this.ncg_1 = i), (this.ocg_1 = s);
                 }
-                function ss() {
-                    this.rbn_1 = zt(Vi(this));
-                }
-                function hs(t, i) {
-                    W.call(this, i), (this.jbq_1 = t);
-                }
-                function ns(t, i) {
-                    W.call(this, i), (this.sbq_1 = t);
-                }
-                function es(t, i, s, h) {
-                    W.call(this, h), (this.bbr_1 = t), (this.cbr_1 = i), (this.dbr_1 = s);
-                }
-                function rs(t, i, s, h) {
-                    W.call(this, h), (this.ybr_1 = t), (this.zbr_1 = i), (this.abs_1 = s);
-                }
-                function _s(t, i, s) {
-                    W.call(this, s), (this.wbs_1 = t), (this.xbs_1 = i);
-                }
-                function us(t, i, s, h) {
-                    W.call(this, h), (this.gbt_1 = t), (this.hbt_1 = i), (this.ibt_1 = s);
-                }
-                function cs(t, i, s, h) {
-                    W.call(this, h), (this.wbt_1 = t), (this.xbt_1 = i), (this.ybt_1 = s);
-                }
-                function os(t, i, s, h, n) {
-                    W.call(this, n), (this.hbu_1 = t), (this.ibu_1 = i), (this.jbu_1 = s), (this.kbu_1 = h);
+                function us() {
+                    this.uce_1 = pt(hs(this));
                 }
                 function as(t, i, s) {
-                    W.call(this, s), (this.zbp_1 = t), (this.abq_1 = i);
+                    N.call(this, s), (this.mch_1 = t), (this.nch_1 = i);
                 }
-                function bs() {
-                    this.pbr_1 = 65;
+                function os(t, i) {
+                    N.call(this, i), (this.wch_1 = t);
                 }
-                function fs(t, i) {
-                    W.call(this, i), (this.tbu_1 = t);
+                function fs(t, i, s, c) {
+                    N.call(this, c), (this.fci_1 = t), (this.gci_1 = i), (this.hci_1 = s);
                 }
-                function ls(t) {
-                    this.fbd_1 = t;
+                function ws(t, i, s, c) {
+                    N.call(this, c), (this.ccj_1 = t), (this.dcj_1 = i), (this.ecj_1 = s);
                 }
-                function ws(t, i) {
-                    W.call(this, i), (this.cbv_1 = t);
+                function ls(t, i, s, c) {
+                    N.call(this, c), (this.ack_1 = t), (this.bck_1 = i), (this.cck_1 = s);
                 }
-                function vs(t) {
-                    this.wbi_1 = t;
+                function vs(t, i, s, c, h) {
+                    N.call(this, h), (this.lck_1 = t), (this.mck_1 = i), (this.nck_1 = s), (this.ock_1 = c);
                 }
-                function xs(t, i) {
-                    W.call(this, i), (this.lbv_1 = t);
+                function xs(t, i, s, c) {
+                    N.call(this, c), (this.ccl_1 = t), (this.dcl_1 = i), (this.ecl_1 = s);
                 }
-                function ds(t) {
-                    this.qbn_1 = t;
+                function ys(t, i, s, c, h) {
+                    N.call(this, h), (this.ncl_1 = t), (this.ocl_1 = i), (this.pcl_1 = s), (this.qcl_1 = c);
                 }
-                function ys(t) {
+                function zs(t, i, s) {
+                    N.call(this, s), (this.cch_1 = t), (this.dch_1 = i);
+                }
+                function ds() {
+                    this.tci_1 = 65;
+                }
+                function gs(t, i) {
+                    N.call(this, i), (this.zcl_1 = t);
+                }
+                function $s(t) {
+                    this.ic4_1 = t;
+                }
+                function bs(t, i) {
+                    N.call(this, i), (this.icm_1 = t);
+                }
+                function Rs(t) {
+                    this.zc9_1 = t;
+                }
+                function ps(t, i) {
+                    N.call(this, i), (this.rcm_1 = t);
+                }
+                function ks(t) {
+                    this.tce_1 = t;
+                }
+                function ms(t) {
                     var i = t.com || (t.com = {}),
                         s = i.x || (i.x = {}),
-                        h = s.dms || (s.dms = {});
-                    (h.JuiceboxRecoverPrivateKeyResult = At), (h.JuiceboxRecoverPrivateKeyResult.Success = jt), (h.JuiceboxRecoverPrivateKeyResult.JuiceboxFailure = St), X(h.JuiceboxRecoverPrivateKeyResult, "KeyReconstructionFailure", Jt), X(h.JuiceboxRecoverPrivateKeyResult, "NoJuiceboxTokens", Ft), (h.JuiceboxRecoverFailureReason = Wt), (h.JuiceboxRecoverFailureReason.values = Kt), (h.JuiceboxRecoverFailureReason.valueOf = Pt), X(h.JuiceboxRecoverFailureReason, "InvalidPin", Gt), X(h.JuiceboxRecoverFailureReason, "NotRegistered", Bt), X(h.JuiceboxRecoverFailureReason, "InvalidAuth", Ot), X(h.JuiceboxRecoverFailureReason, "UpgradeRequired", Qt), X(h.JuiceboxRecoverFailureReason, "Assertion", Vt), X(h.JuiceboxRecoverFailureReason, "Transient", Yt), X(h.JuiceboxRecoverFailureReason, "RateLimitExceeded", Zt), (h.JuiceboxRegisterPrivateKeyResult = Lt), X(h.JuiceboxRegisterPrivateKeyResult, "Success", It), (h.JuiceboxRegisterPrivateKeyResult.Failure = Nt), (h.JuiceboxRegisterFailureReason = Dt), (h.JuiceboxRegisterFailureReason.values = Mt), (h.JuiceboxRegisterFailureReason.valueOf = Ut), X(h.JuiceboxRegisterFailureReason, "InvalidAuth", ti), X(h.JuiceboxRegisterFailureReason, "UpgradeRequired", ii), X(h.JuiceboxRegisterFailureReason, "Assertion", si), X(h.JuiceboxRegisterFailureReason, "Transient", hi), X(h.JuiceboxRegisterFailureReason, "RateLimitExceeded", ni), X(h.JuiceboxRegisterFailureReason, "StorageFailed", ei);
+                        c = s.dms || (s.dms = {});
+                    (c.JuiceboxRecoverPrivateKeyResult = Wt), (c.JuiceboxRecoverPrivateKeyResult.Success = Jt), (c.JuiceboxRecoverPrivateKeyResult.JuiceboxFailure = At), T(c.JuiceboxRecoverPrivateKeyResult, "KeyReconstructionFailure", Kt), T(c.JuiceboxRecoverPrivateKeyResult, "NoJuiceboxTokens", Xt), (c.JuiceboxRecoverFailureReason = Dt), (c.JuiceboxRecoverFailureReason.values = It), (c.JuiceboxRecoverFailureReason.valueOf = Tt), T(c.JuiceboxRecoverFailureReason, "InvalidPin", Vt), T(c.JuiceboxRecoverFailureReason, "NotRegistered", Yt), T(c.JuiceboxRecoverFailureReason, "InvalidAuth", Zt), T(c.JuiceboxRecoverFailureReason, "UpgradeRequired", ti), T(c.JuiceboxRecoverFailureReason, "Assertion", ii), T(c.JuiceboxRecoverFailureReason, "Transient", si), T(c.JuiceboxRecoverFailureReason, "RateLimitExceeded", ci), (c.JuiceboxRegisterPrivateKeyResult = Ht), T(c.JuiceboxRegisterPrivateKeyResult, "Success", Mt), (c.JuiceboxRegisterPrivateKeyResult.Failure = Ut), (c.JuiceboxRegisterFailureReason = Qt), (c.JuiceboxRegisterFailureReason.values = Gt), (c.JuiceboxRegisterFailureReason.valueOf = Bt), T(c.JuiceboxRegisterFailureReason, "InvalidAuth", hi), T(c.JuiceboxRegisterFailureReason, "UpgradeRequired", ni), T(c.JuiceboxRegisterFailureReason, "Assertion", ei), T(c.JuiceboxRegisterFailureReason, "Transient", ri), T(c.JuiceboxRegisterFailureReason, "RateLimitExceeded", _i), T(c.JuiceboxRegisterFailureReason, "StorageFailed", ui);
                 }
-                E(At, "JuiceboxRecoverPrivateKeyResult"),
-                    E(jt, "Success", J, At),
-                    E(St, "JuiceboxFailure", J, At),
-                    F(Et, "KeyReconstructionFailure", J, At),
-                    F(Ct, "NoJuiceboxTokens", J, At),
-                    E(Wt, "JuiceboxRecoverFailureReason", J, P),
-                    E(Lt, "JuiceboxRegisterPrivateKeyResult"),
-                    F(Tt, "Success", J, Lt),
-                    E(Nt, "Failure", J, Lt),
-                    E(Dt, "JuiceboxRegisterFailureReason", J, P),
-                    I(ri, W),
-                    I(_i, W),
-                    N(ui, "KeyFactory", J, J, J, [0, 2, 1, 3]),
-                    E(ci, "XChatKeyPair"),
-                    E(oi, "XChatPrivateKeys"),
-                    I(ai, W),
-                    I(bi, W),
-                    I(fi, W),
-                    I(li, W),
-                    F(wi, "LibsodiumEncryption", J, J, J, [3, 5, 2]),
-                    I(xi, W),
-                    N(di, "PerformanceTracer"),
-                    F(yi, "NoOpPerfTracer", J, J, [di]),
-                    I(Xi, W),
-                    I(Wi, W),
-                    I(Ti, W),
-                    I(Ii, W),
-                    I(Ni, W),
-                    I(Li, W),
-                    I(Mi, W),
-                    I(Ui, W),
-                    I(Hi, W),
-                    I(Di, W),
-                    I(Gi, W),
-                    wt(Qi, W, J, [0]),
-                    I(Zi, W),
-                    I(ts, W),
-                    I(is, W),
-                    E(ss, "WebJuiceboxApi", ss, J, J, [1, 3, 2]),
-                    I(hs, W),
-                    I(ns, W),
-                    I(es, W),
-                    I(rs, W),
-                    I(_s, W),
-                    I(us, W),
-                    I(cs, W),
-                    I(os, W),
-                    I(as, W),
-                    F(bs, "WebKeyFactory", J, J, [ui], [0, 2, 1, 3]),
-                    I(fs, W),
-                    E(ls, "XChatConversationKey", J, J, J, [0]),
-                    I(ws, W),
-                    E(vs, "XChatPublicKey", J, J, J, [0]),
-                    I(xs, W),
-                    E(ds, "XChatPrivateKey", J, J, J, [0]),
-                    (S(jt).aa2 = function () {
+                A(Wt, "JuiceboxRecoverPrivateKeyResult"),
+                    A(Jt, "Success", F, Wt),
+                    A(At, "JuiceboxFailure", F, Wt),
+                    P(Ft, "KeyReconstructionFailure", F, Wt),
+                    P(Pt, "NoJuiceboxTokens", F, Wt),
+                    A(Dt, "JuiceboxRecoverFailureReason", F, I),
+                    A(Ht, "JuiceboxRegisterPrivateKeyResult"),
+                    P(Lt, "Success", F, Ht),
+                    A(Ut, "Failure", F, Ht),
+                    A(Qt, "JuiceboxRegisterFailureReason", F, I),
+                    L(ai, N),
+                    L(oi, N),
+                    M(fi, "KeyFactory", F, F, F, [1, 0, 2, 3]),
+                    A(li, "KeypairPurpose", F, I),
+                    A(xi, "XChatKeyPair"),
+                    A(yi, "XChatPrivateKeys"),
+                    L(zi, N),
+                    L(di, N),
+                    L(gi, N),
+                    L($i, N),
+                    P(bi, "LibsodiumEncryption", F, F, F, [3, 5, 2]),
+                    L(pi, N),
+                    M(ki, "PerformanceTracer"),
+                    P(mi, "NoOpPerfTracer", F, F, [ki]),
+                    L(Mi, N),
+                    L(Ui, N),
+                    L(Hi, N),
+                    L(Gi, N),
+                    L(Bi, N),
+                    L(Oi, N),
+                    L(Qi, N),
+                    L(Vi, N),
+                    L(Yi, N),
+                    L(Zi, N),
+                    L(ts, N),
+                    dt(cs, N, F, [0]),
+                    L(es, N),
+                    L(rs, N),
+                    L(_s, N),
+                    A(us, "WebJuiceboxApi", us, F, F, [1, 3, 2]),
+                    L(as, N),
+                    L(os, N),
+                    L(fs, N),
+                    L(ws, N),
+                    L(ls, N),
+                    L(vs, N),
+                    L(xs, N),
+                    L(ys, N),
+                    L(zs, N),
+                    P(ds, "WebKeyFactory", F, F, [fi], [1, 0, 2, 3]),
+                    L(gs, N),
+                    A($s, "XChatConversationKey", F, F, F, [0]),
+                    L(bs, N),
+                    A(Rs, "XChatPublicKey", F, F, F, [0]),
+                    L(ps, N),
+                    A(ks, "XChatPrivateKey", F, F, F, [0]),
+                    (J(Jt).baa = function () {
                         return this.bytes;
                     }),
-                    (S(St).kbc = function () {
+                    (J(At).nc3 = function () {
                         return this.reason;
                     }),
-                    (S(St).lbc = function () {
+                    (J(At).oc3 = function () {
                         return this.guessesRemaining;
                     }),
-                    (S(St).gh = function () {
+                    (J(At).ph = function () {
                         return this.reason;
                     }),
-                    (S(St).hh = function () {
+                    (J(At).qh = function () {
                         return this.guessesRemaining;
                     }),
-                    (S(St).mbc = function (t, i) {
-                        return new St(t, i);
+                    (J(At).pc3 = function (t, i) {
+                        return new At(t, i);
                     }),
-                    (S(St).copy = function (t, i, s) {
-                        return (t = t === J ? this.reason : t), (i = i === J ? this.guessesRemaining : i), this.mbc(t, i);
+                    (J(At).copy = function (t, i, s) {
+                        return (t = t === F ? this.reason : t), (i = i === F ? this.guessesRemaining : i), this.pc3(t, i);
                     }),
-                    (S(St).toString = function () {
+                    (J(At).toString = function () {
                         return "JuiceboxFailure(reason=" + this.reason.toString() + ", guessesRemaining=" + this.guessesRemaining + ")";
                     }),
-                    (S(St).hashCode = function () {
+                    (J(At).hashCode = function () {
                         var t = this.reason.hashCode();
-                        return (t = (j(t, 31) + (null == this.guessesRemaining ? 0 : this.guessesRemaining)) | 0);
+                        return (t = (C(t, 31) + (null == this.guessesRemaining ? 0 : this.guessesRemaining)) | 0);
                     }),
-                    (S(St).equals = function (t) {
+                    (J(At).equals = function (t) {
                         if (this === t) return !0;
-                        if (!(t instanceof St)) return !1;
-                        var i = t instanceof St ? t : C();
+                        if (!(t instanceof At)) return !1;
+                        var i = t instanceof At ? t : K();
                         return !!this.reason.equals(i.reason) && this.guessesRemaining == i.guessesRemaining;
                     }),
-                    (S(Et).toString = function () {
+                    (J(Ft).toString = function () {
                         return "KeyReconstructionFailure";
                     }),
-                    (S(Et).hashCode = function () {
+                    (J(Ft).hashCode = function () {
                         return 188209770;
                     }),
-                    (S(Et).equals = function (t) {
-                        return this === t || (t instanceof Et && (t instanceof Et || C(), !0));
+                    (J(Ft).equals = function (t) {
+                        return this === t || (t instanceof Ft && (t instanceof Ft || K(), !0));
                     }),
-                    (S(Ct).toString = function () {
+                    (J(Pt).toString = function () {
                         return "NoJuiceboxTokens";
                     }),
-                    (S(Ct).hashCode = function () {
+                    (J(Pt).hashCode = function () {
                         return 1362829865;
                     }),
-                    (S(Ct).equals = function (t) {
-                        return this === t || (t instanceof Ct && (t instanceof Ct || C(), !0));
+                    (J(Pt).equals = function (t) {
+                        return this === t || (t instanceof Pt && (t instanceof Pt || K(), !0));
                     }),
-                    (S(Wt).pbc = function () {
+                    (J(Dt).sc3 = function () {
                         return this.retryable;
                     }),
-                    (S(Tt).toString = function () {
+                    (J(Lt).toString = function () {
                         return "Success";
                     }),
-                    (S(Tt).hashCode = function () {
+                    (J(Lt).hashCode = function () {
                         return 1551298723;
                     }),
-                    (S(Tt).equals = function (t) {
-                        return this === t || (t instanceof Tt && (t instanceof Tt || C(), !0));
+                    (J(Lt).equals = function (t) {
+                        return this === t || (t instanceof Lt && (t instanceof Lt || K(), !0));
                     }),
-                    (S(Nt).kbc = function () {
+                    (J(Ut).nc3 = function () {
                         return this.reason;
                     }),
-                    (S(Nt).gh = function () {
+                    (J(Ut).ph = function () {
                         return this.reason;
                     }),
-                    (S(Nt).qbc = function (t) {
-                        return new Nt(t);
+                    (J(Ut).tc3 = function (t) {
+                        return new Ut(t);
                     }),
-                    (S(Nt).copy = function (t, i) {
-                        return (t = t === J ? this.reason : t), this.qbc(t);
+                    (J(Ut).copy = function (t, i) {
+                        return (t = t === F ? this.reason : t), this.tc3(t);
                     }),
-                    (S(Nt).toString = function () {
+                    (J(Ut).toString = function () {
                         return "Failure(reason=" + this.reason.toString() + ")";
                     }),
-                    (S(Nt).hashCode = function () {
+                    (J(Ut).hashCode = function () {
                         return this.reason.hashCode();
                     }),
-                    (S(Nt).equals = function (t) {
+                    (J(Ut).equals = function (t) {
                         if (this === t) return !0;
-                        if (!(t instanceof Nt)) return !1;
-                        var i = t instanceof Nt ? t : C();
+                        if (!(t instanceof Ut)) return !1;
+                        var i = t instanceof Ut ? t : K();
                         return !!this.reason.equals(i.reason);
                     }),
-                    (S(Dt).pbc = function () {
+                    (J(Qt).sc3 = function () {
                         return this.retryable;
                     }),
-                    (S(ri).oa = function () {
+                    (J(ai).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 3), (this.w9_1 = 1), (t = this.dbd_1.gbd(this)) === T())) return t;
+                                        if (((this.x9_1 = 3), (this.w9_1 = 1), (t = this.gc4_1.jc4(this)) === D())) return t;
                                         continue t;
                                     case 1:
-                                        if (((this.ebd_1 = t), (this.w9_1 = 2), (t = this.bbd_1.hbd(this.cbd_1, this.ebd_1, this)) === T())) return t;
+                                        if (((this.hc4_1 = t), (this.w9_1 = 2), (t = this.ec4_1.kc4(this.fc4_1, this.hc4_1, this)) === D())) return t;
                                         continue t;
                                     case 2:
                                         return t;
@@ -631,27 +669,27 @@
                                 (this.w9_1 = this.x9_1), (this.z9_1 = i);
                             }
                     }),
-                    (S(_i).oa = function () {
+                    (J(oi).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 4), (this.w9_1 = 1), (t = this.qbd_1.xbd(this.rbd_1, this.sbd_1, this)) === T())) return t;
+                                        if (((this.x9_1 = 4), (this.w9_1 = 1), (t = this.tc4_1.ac5(this.uc4_1, this.vc4_1, this)) === D())) return t;
                                         continue t;
                                     case 1:
-                                        if (((this.tbd_1 = t), null == this.tbd_1)) {
-                                            (this.ubd_1 = null), (this.w9_1 = 3);
+                                        if (((this.wc4_1 = t), null == this.wc4_1)) {
+                                            (this.xc4_1 = null), (this.w9_1 = 3);
                                             continue t;
                                         }
-                                        this.vbd_1 = this.tbd_1;
-                                        if (((this.wbd_1 = this.vbd_1), (this.w9_1 = 2), (t = this.qbd_1.ybd(this.wbd_1, this)) === T())) return t;
+                                        this.yc4_1 = this.wc4_1;
+                                        if (((this.zc4_1 = this.yc4_1), (this.w9_1 = 2), (t = this.tc4_1.bc5(this.zc4_1, this)) === D())) return t;
                                         continue t;
                                     case 2:
-                                        (this.ubd_1 = t), (this.w9_1 = 3);
+                                        (this.xc4_1 = t), (this.w9_1 = 3);
                                         continue t;
                                     case 3:
-                                        return this.ubd_1;
+                                        return this.xc4_1;
                                     case 4:
                                         throw this.z9_1;
                                 }
@@ -661,39 +699,39 @@
                                 (this.w9_1 = this.x9_1), (this.z9_1 = i);
                             }
                     }),
-                    (S(ci).toString = function () {
-                        return "XChatKeyPair(public=" + L(this.hbe_1) + ", private=" + L(this.ibe_1) + ")";
+                    (J(xi).toString = function () {
+                        return "XChatKeyPair(public=" + U(this.kc5_1) + ", private=" + U(this.lc5_1) + ")";
                     }),
-                    (S(ci).hashCode = function () {
-                        var t = M(this.hbe_1);
-                        return (t = (j(t, 31) + M(this.ibe_1)) | 0);
+                    (J(xi).hashCode = function () {
+                        var t = H(this.kc5_1);
+                        return (t = (C(t, 31) + H(this.lc5_1)) | 0);
                     }),
-                    (S(ci).equals = function (t) {
+                    (J(xi).equals = function (t) {
                         if (this === t) return !0;
-                        if (!(t instanceof ci)) return !1;
-                        var i = t instanceof ci ? t : C();
-                        return !!U(this.hbe_1, i.hbe_1) && !!U(this.ibe_1, i.ibe_1);
+                        if (!(t instanceof xi)) return !1;
+                        var i = t instanceof xi ? t : K();
+                        return !!G(this.kc5_1, i.kc5_1) && !!G(this.lc5_1, i.lc5_1);
                     }),
-                    (S(oi).toString = function () {
-                        return "XChatPrivateKeys(identity=" + L(this.jbe_1) + ", signing=" + H(this.kbe_1) + ")";
+                    (J(yi).toString = function () {
+                        return "XChatPrivateKeys(identity=" + U(this.mc5_1) + ", signing=" + B(this.nc5_1) + ")";
                     }),
-                    (S(oi).hashCode = function () {
-                        var t = M(this.jbe_1);
-                        return (t = (j(t, 31) + (null == this.kbe_1 ? 0 : M(this.kbe_1))) | 0);
+                    (J(yi).hashCode = function () {
+                        var t = H(this.mc5_1);
+                        return (t = (C(t, 31) + (null == this.nc5_1 ? 0 : H(this.nc5_1))) | 0);
                     }),
-                    (S(oi).equals = function (t) {
+                    (J(yi).equals = function (t) {
                         if (this === t) return !0;
-                        if (!(t instanceof oi)) return !1;
-                        var i = t instanceof oi ? t : C();
-                        return !!U(this.jbe_1, i.jbe_1) && !!U(this.kbe_1, i.kbe_1);
+                        if (!(t instanceof yi)) return !1;
+                        var i = t instanceof yi ? t : K();
+                        return !!G(this.mc5_1, i.mc5_1) && !!G(this.nc5_1, i.nc5_1);
                     }),
-                    (S(ai).oa = function () {
+                    (J(zi).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 20), (this.w9_1 = 1), (t = vi(D, this)) === T())) return t;
+                                        if (((this.x9_1 = 20), (this.w9_1 = 1), (t = Ri(O, this)) === D())) return t;
                                         continue t;
                                     case 1:
                                         this.w9_1 = 2;
@@ -702,94 +740,94 @@
                                         this.w9_1 = 3;
                                         continue t;
                                     case 3:
-                                        if (((this.x9_1 = 14), (this.x9_1 = 13), (this.zbe_1 = G), (this.w9_1 = 4), (t = this.ube_1.gbd(this)) === T())) return t;
+                                        if (((this.x9_1 = 14), (this.x9_1 = 13), (this.cc6_1 = Q), (this.w9_1 = 4), (t = this.xc5_1.jc4(this)) === D())) return t;
                                         continue t;
                                     case 4:
-                                        (this.abf_1 = t), (this.bbf_1 = B(this.abf_1)), (this.cbf_1 = this.zbe_1.dbc(this.bbf_1)), (this.dbf_1 = this.cbf_1.gh()), (this.ebf_1 = this.cbf_1.cbb()), (this.w9_1 = 5);
-                                        var i = this.ebf_1;
-                                        if ((t = this.wbe_1.obf(O(i), this)) === T()) return t;
+                                        (this.dc6_1 = t), (this.ec6_1 = V(this.dc6_1)), (this.fc6_1 = this.cc6_1.gc3(this.ec6_1)), (this.gc6_1 = this.fc6_1.ph()), (this.hc6_1 = this.fc6_1.fc2()), (this.w9_1 = 5);
+                                        var i = this.hc6_1;
+                                        if ((t = this.zc5_1.rc6(Y(i), this)) === D()) return t;
                                         continue t;
                                     case 5:
                                     case 11:
                                         this.w9_1 = 6;
                                         continue t;
                                     case 6:
-                                        if (((this.w9_1 = 7), (t = this.vbe_1.pbf(1024, this)) === T())) return t;
+                                        if (((this.w9_1 = 7), (t = this.yc5_1.sc6(1024, this)) === D())) return t;
                                         continue t;
                                     case 7:
-                                        if (((this.fbf_1 = t), null == this.fbf_1)) {
-                                            (this.ybe_1 = !0), (this.x9_1 = 20), (this.w9_1 = 16);
+                                        if (((this.ic6_1 = t), null == this.ic6_1)) {
+                                            (this.bc6_1 = !0), (this.x9_1 = 20), (this.w9_1 = 16);
                                             continue t;
                                         }
-                                        (this.gbf_1 = this.fbf_1), (this.w9_1 = 8);
+                                        (this.jc6_1 = this.ic6_1), (this.w9_1 = 8);
                                         continue t;
                                     case 8:
-                                        if (((this.hbf_1 = this.gbf_1), (this.w9_1 = 9), (t = this.vbe_1.qbf(this)) === T())) return t;
+                                        if (((this.kc6_1 = this.jc6_1), (this.w9_1 = 9), (t = this.yc5_1.tc6(this)) === D())) return t;
                                         continue t;
                                     case 9:
                                         if (t) {
-                                            (this.ibf_1 = V()), (this.w9_1 = 10);
+                                            (this.lc6_1 = tt()), (this.w9_1 = 10);
                                             continue t;
                                         }
-                                        (this.ibf_1 = Q()), (this.w9_1 = 10);
+                                        (this.lc6_1 = Z()), (this.w9_1 = 10);
                                         continue t;
                                     case 10:
-                                        this.jbf_1 = this.ibf_1;
-                                        var s = G,
-                                            h = this.hbf_1,
-                                            n = B(h),
-                                            e = this.jbf_1;
-                                        (this.kbf_1 = s.fbc(this.dbf_1, n, J, Z(Y(e)))), (this.w9_1 = 11);
-                                        var r = this.kbf_1;
-                                        if ((t = this.wbe_1.obf(O(r), this)) === T()) return t;
+                                        this.mc6_1 = this.lc6_1;
+                                        var s = Q,
+                                            c = this.kc6_1,
+                                            h = V(c),
+                                            n = this.mc6_1;
+                                        (this.nc6_1 = s.ic3(this.gc6_1, h, F, st(it(n)))), (this.w9_1 = 11);
+                                        var e = this.nc6_1;
+                                        if ((t = this.zc5_1.rc6(Y(e), this)) === D()) return t;
                                         continue t;
                                     case 12:
-                                        (this.xbe_1 = K), (this.x9_1 = 20), (this.w9_1 = 18);
+                                        (this.ac6_1 = W), (this.x9_1 = 20), (this.w9_1 = 18);
                                         continue t;
                                     case 13:
-                                        if (((this.x9_1 = 14), this.z9_1 instanceof it)) {
-                                            this.lbf_1 = this.z9_1;
-                                            var _ = tt(),
-                                                u = this.lbf_1;
-                                            if (!_.q5p_1.h())
-                                                for (var c = _.q5p_1.z().p(); c.q(); ) {
-                                                    c.r().o2().w("XWS", u, "encryptStream failed");
+                                        if (((this.x9_1 = 14), this.z9_1 instanceof ht)) {
+                                            this.oc6_1 = this.z9_1;
+                                            var r = ct(),
+                                                _ = this.oc6_1;
+                                            if (!r.i5w_1.h())
+                                                for (var u = r.i5w_1.z().p(); u.q(); ) {
+                                                    u.r().o2().w("XWS", _, "encryptStream failed");
                                                 }
-                                            (this.ybe_1 = !1), (this.x9_1 = 20), (this.w9_1 = 16);
+                                            (this.bc6_1 = !1), (this.x9_1 = 20), (this.w9_1 = 16);
                                             continue t;
                                         }
                                         throw this.z9_1;
                                     case 14:
-                                        if (((this.x9_1 = 20), (this.mbf_1 = this.z9_1), this.vbe_1.e5(), (this.w9_1 = 15), (t = this.wbe_1.rbf(this)) === T())) return t;
+                                        if (((this.x9_1 = 20), (this.pc6_1 = this.z9_1), this.yc5_1.e5(), (this.w9_1 = 15), (t = this.zc5_1.uc6(this)) === D())) return t;
                                         continue t;
                                     case 15:
-                                        throw (this.wbe_1.e5(), this.mbf_1);
+                                        throw (this.zc5_1.e5(), this.pc6_1);
                                     case 16:
-                                        if (((this.nbf_1 = this.ybe_1), (this.x9_1 = 20), this.vbe_1.e5(), (this.w9_1 = 17), (t = this.wbe_1.rbf(this)) === T())) return t;
+                                        if (((this.qc6_1 = this.bc6_1), (this.x9_1 = 20), this.yc5_1.e5(), (this.w9_1 = 17), (t = this.zc5_1.uc6(this)) === D())) return t;
                                         continue t;
                                     case 17:
-                                        return this.wbe_1.e5(), this.nbf_1;
+                                        return this.zc5_1.e5(), this.qc6_1;
                                     case 18:
-                                        if (((this.x9_1 = 20), this.vbe_1.e5(), (this.w9_1 = 19), (t = this.wbe_1.rbf(this)) === T())) return t;
+                                        if (((this.x9_1 = 20), this.yc5_1.e5(), (this.w9_1 = 19), (t = this.zc5_1.uc6(this)) === D())) return t;
                                         continue t;
                                     case 19:
-                                        return this.wbe_1.e5(), K;
+                                        return this.zc5_1.e5(), W;
                                     case 20:
                                         throw this.z9_1;
                                 }
                             } catch (t) {
-                                var o = t;
-                                if (20 === this.x9_1) throw o;
-                                (this.w9_1 = this.x9_1), (this.z9_1 = o);
+                                var a = t;
+                                if (20 === this.x9_1) throw a;
+                                (this.w9_1 = this.x9_1), (this.z9_1 = a);
                             }
                     }),
-                    (S(bi).oa = function () {
+                    (J(di).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 19), (this.w9_1 = 1), (t = vi(D, this)) === T())) return t;
+                                        if (((this.x9_1 = 19), (this.w9_1 = 1), (t = Ri(O, this)) === D())) return t;
                                         continue t;
                                     case 1:
                                         this.w9_1 = 2;
@@ -798,116 +836,116 @@
                                         this.w9_1 = 3;
                                         continue t;
                                     case 3:
-                                        if (((this.x9_1 = 13), (this.x9_1 = 12), (this.w9_1 = 4), (t = this.cbg_1.pbf(st(), this)) === T())) return t;
+                                        if (((this.x9_1 = 13), (this.x9_1 = 12), (this.w9_1 = 4), (t = this.fc7_1.sc6(nt(), this)) === D())) return t;
                                         continue t;
                                     case 4:
-                                        if (((this.ibg_1 = t), null == this.ibg_1)) {
-                                            (this.hbg_1 = !1), (this.x9_1 = 19), (this.w9_1 = 15);
+                                        if (((this.lc7_1 = t), null == this.lc7_1)) {
+                                            (this.kc7_1 = !1), (this.x9_1 = 19), (this.w9_1 = 15);
                                             continue t;
                                         }
-                                        (this.jbg_1 = this.ibg_1), (this.w9_1 = 5);
+                                        (this.mc7_1 = this.lc7_1), (this.w9_1 = 5);
                                         continue t;
                                     case 5:
-                                        if (((this.kbg_1 = this.jbg_1), (this.lbg_1 = this.kbg_1.length), (this.mbg_1 = G), (this.w9_1 = 6), (t = this.bbg_1.gbd(this)) === T())) return t;
+                                        if (((this.nc7_1 = this.mc7_1), (this.oc7_1 = this.nc7_1.length), (this.pc7_1 = Q), (this.w9_1 = 6), (t = this.ec7_1.jc4(this)) === D())) return t;
                                         continue t;
                                     case 6:
-                                        (this.nbg_1 = t), (this.obg_1 = B(this.nbg_1));
-                                        var i = this.kbg_1;
-                                        (this.pbg_1 = this.mbg_1.gbc(this.obg_1, B(i))), (this.qbg_1 = this.pbg_1.gh()), (this.rbg_1 = 0), (this.w9_1 = 7);
+                                        (this.qc7_1 = t), (this.rc7_1 = V(this.qc7_1));
+                                        var i = this.nc7_1;
+                                        (this.sc7_1 = this.pc7_1.jc3(this.rc7_1, V(i))), (this.tc7_1 = this.sc7_1.ph()), (this.uc7_1 = 0), (this.w9_1 = 7);
                                         continue t;
                                     case 7:
-                                        if (((this.w9_1 = 8), (t = this.cbg_1.pbf(this.abg_1.bbh_1, this)) === T())) return t;
+                                        if (((this.w9_1 = 8), (t = this.fc7_1.sc6(this.dc7_1.ec8_1, this)) === D())) return t;
                                         continue t;
                                     case 8:
-                                        if (((this.sbg_1 = t), null == this.sbg_1)) {
-                                            (this.hbg_1 = !0), (this.x9_1 = 19), (this.w9_1 = 15);
+                                        if (((this.vc7_1 = t), null == this.vc7_1)) {
+                                            (this.kc7_1 = !0), (this.x9_1 = 19), (this.w9_1 = 15);
                                             continue t;
                                         }
-                                        (this.tbg_1 = this.sbg_1), (this.w9_1 = 9);
+                                        (this.wc7_1 = this.vc7_1), (this.w9_1 = 9);
                                         continue t;
                                     case 9:
-                                        (this.ubg_1 = this.tbg_1), (this.lbg_1 = (this.lbg_1 + this.ubg_1.length) | 0);
-                                        var s = G,
-                                            h = this.ubg_1;
-                                        (this.vbg_1 = s.ibc(this.qbg_1, B(h))), (this.wbg_1 = this.vbg_1.fbb()), (this.w9_1 = 10);
-                                        var n = this.wbg_1;
-                                        if ((t = this.dbg_1.obf(O(n), this)) === T()) return t;
+                                        (this.xc7_1 = this.wc7_1), (this.oc7_1 = (this.oc7_1 + this.xc7_1.length) | 0);
+                                        var s = Q,
+                                            c = this.xc7_1;
+                                        (this.yc7_1 = s.lc3(this.tc7_1, V(c))), (this.zc7_1 = this.yc7_1.ic2()), (this.w9_1 = 10);
+                                        var h = this.zc7_1;
+                                        if ((t = this.gc7_1.rc6(Y(h), this)) === D()) return t;
                                         continue t;
                                     case 10:
-                                        if (null != this.fbg_1 && null != this.ebg_1) {
-                                            var e = this.lbg_1 / this.ebg_1.bytes.y3();
-                                            e > this.rbg_1 + 0.1 && (this.fbg_1(e), (this.rbg_1 = e));
+                                        if (null != this.ic7_1 && null != this.hc7_1) {
+                                            var n = this.oc7_1 / this.hc7_1.bytes.y3();
+                                            n > this.uc7_1 + 0.1 && (this.ic7_1(n), (this.uc7_1 = n));
                                         }
                                         this.w9_1 = 7;
                                         continue t;
                                     case 11:
-                                        (this.gbg_1 = K), (this.x9_1 = 19), (this.w9_1 = 17);
+                                        (this.jc7_1 = W), (this.x9_1 = 19), (this.w9_1 = 17);
                                         continue t;
                                     case 12:
-                                        if (((this.x9_1 = 13), this.z9_1 instanceof it)) {
-                                            this.xbg_1 = this.z9_1;
-                                            var r = tt(),
-                                                _ = this.xbg_1;
-                                            if (!r.q5p_1.h())
-                                                for (var u = r.q5p_1.z().p(); u.q(); ) {
-                                                    u.r().o2().w("XWS", _, "decryptStream failed");
+                                        if (((this.x9_1 = 13), this.z9_1 instanceof ht)) {
+                                            this.ac8_1 = this.z9_1;
+                                            var e = ct(),
+                                                r = this.ac8_1;
+                                            if (!e.i5w_1.h())
+                                                for (var _ = e.i5w_1.z().p(); _.q(); ) {
+                                                    _.r().o2().w("XWS", r, "decryptStream failed");
                                                 }
-                                            (this.hbg_1 = !1), (this.x9_1 = 19), (this.w9_1 = 15);
+                                            (this.kc7_1 = !1), (this.x9_1 = 19), (this.w9_1 = 15);
                                             continue t;
                                         }
                                         throw this.z9_1;
                                     case 13:
-                                        if (((this.x9_1 = 19), (this.ybg_1 = this.z9_1), this.cbg_1.e5(), (this.w9_1 = 14), (t = this.dbg_1.rbf(this)) === T())) return t;
+                                        if (((this.x9_1 = 19), (this.bc8_1 = this.z9_1), this.fc7_1.e5(), (this.w9_1 = 14), (t = this.gc7_1.uc6(this)) === D())) return t;
                                         continue t;
                                     case 14:
-                                        throw (this.dbg_1.e5(), this.ybg_1);
+                                        throw (this.gc7_1.e5(), this.bc8_1);
                                     case 15:
-                                        if (((this.zbg_1 = this.hbg_1), (this.x9_1 = 19), this.cbg_1.e5(), (this.w9_1 = 16), (t = this.dbg_1.rbf(this)) === T())) return t;
+                                        if (((this.cc8_1 = this.kc7_1), (this.x9_1 = 19), this.fc7_1.e5(), (this.w9_1 = 16), (t = this.gc7_1.uc6(this)) === D())) return t;
                                         continue t;
                                     case 16:
-                                        return this.dbg_1.e5(), this.zbg_1;
+                                        return this.gc7_1.e5(), this.cc8_1;
                                     case 17:
-                                        if (((this.x9_1 = 19), this.cbg_1.e5(), (this.w9_1 = 18), (t = this.dbg_1.rbf(this)) === T())) return t;
+                                        if (((this.x9_1 = 19), this.fc7_1.e5(), (this.w9_1 = 18), (t = this.gc7_1.uc6(this)) === D())) return t;
                                         continue t;
                                     case 18:
-                                        return this.dbg_1.e5(), K;
+                                        return this.gc7_1.e5(), W;
                                     case 19:
                                         throw this.z9_1;
                                 }
                             } catch (t) {
-                                var c = t;
-                                if (19 === this.x9_1) throw c;
-                                (this.w9_1 = this.x9_1), (this.z9_1 = c);
+                                var u = t;
+                                if (19 === this.x9_1) throw u;
+                                (this.w9_1 = this.x9_1), (this.z9_1 = u);
                             }
                     }),
-                    (S(fi).oa = function () {
+                    (J(gi).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 4), (this.w9_1 = 1), (t = vi(D, this)) === T())) return t;
+                                        if (((this.x9_1 = 4), (this.w9_1 = 1), (t = Ri(O, this)) === D())) return t;
                                         continue t;
                                     case 1:
-                                        (this.x9_1 = 3), (this.nbh_1 = ht.jbc(nt())), (this.obh_1 = et);
-                                        var i = this.mbh_1;
-                                        if (((this.pbh_1 = B(i)), (this.w9_1 = 2), (t = this.lbh_1.gbd(this)) === T())) return t;
+                                        (this.x9_1 = 3), (this.qc8_1 = et.mc3(rt())), (this.rc8_1 = _t);
+                                        var i = this.pc8_1;
+                                        if (((this.sc8_1 = V(i)), (this.w9_1 = 2), (t = this.oc8_1.jc4(this)) === D())) return t;
                                         continue t;
                                     case 2:
-                                        var s = B(t),
-                                            h = this.obh_1.bbc(this.pbh_1, this.nbh_1, s),
-                                            n = this.nbh_1,
-                                            e = O(n),
-                                            r = O(h),
-                                            _ = B(rt([e, r]));
-                                        return O(_).slice();
+                                        var s = V(t),
+                                            c = this.rc8_1.ec3(this.sc8_1, this.qc8_1, s),
+                                            h = this.qc8_1,
+                                            n = Y(h),
+                                            e = Y(c),
+                                            r = V(ut([n, e]));
+                                        return Y(r).slice();
                                     case 3:
-                                        if (((this.x9_1 = 4), this.z9_1 instanceof it)) {
-                                            var u = this.z9_1,
-                                                c = tt();
-                                            if (!c.q5p_1.h())
-                                                for (var o = c.q5p_1.z().p(); o.q(); ) {
-                                                    o.r().o2().w("XWS", u, "encryptMessage failed");
+                                        if (((this.x9_1 = 4), this.z9_1 instanceof ht)) {
+                                            var _ = this.z9_1,
+                                                u = ct();
+                                            if (!u.i5w_1.h())
+                                                for (var a = u.i5w_1.z().p(); a.q(); ) {
+                                                    a.r().o2().e("XWS", _, "encryptMessage failed");
                                                 }
                                             return null;
                                         }
@@ -916,37 +954,37 @@
                                         throw this.z9_1;
                                 }
                             } catch (t) {
-                                var a = t;
-                                if (4 === this.x9_1) throw a;
-                                (this.w9_1 = this.x9_1), (this.z9_1 = a);
+                                var o = t;
+                                if (4 === this.x9_1) throw o;
+                                (this.w9_1 = this.x9_1), (this.z9_1 = o);
                             }
                     }),
-                    (S(li).oa = function () {
+                    (J($i).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 4), (this.w9_1 = 1), (t = vi(D, this)) === T())) return t;
+                                        if (((this.x9_1 = 4), (this.w9_1 = 1), (t = Ri(O, this)) === D())) return t;
                                         continue t;
                                     case 1:
                                         this.x9_1 = 3;
-                                        var i = ut(this.abi_1, _t(0, nt()));
-                                        this.cbi_1 = B(i.slice());
-                                        var s = ut(this.abi_1, _t(nt(), this.abi_1.length));
-                                        if (((this.dbi_1 = B(s.slice())), (this.ebi_1 = et), (this.w9_1 = 2), (t = this.zbh_1.gbd(this)) === T())) return t;
+                                        var i = ot(this.dc9_1, at(0, rt()));
+                                        this.fc9_1 = V(i.slice());
+                                        var s = ot(this.dc9_1, at(rt(), this.dc9_1.length));
+                                        if (((this.gc9_1 = V(s.slice())), (this.hc9_1 = _t), (this.w9_1 = 2), (t = this.cc9_1.jc4(this)) === D())) return t;
                                         continue t;
                                     case 2:
-                                        var h = B(t),
-                                            n = this.ebi_1.cbc(this.dbi_1, this.cbi_1, h);
-                                        return O(n).slice();
+                                        var c = V(t),
+                                            h = this.hc9_1.fc3(this.gc9_1, this.fc9_1, c);
+                                        return Y(h).slice();
                                     case 3:
-                                        if (((this.x9_1 = 4), this.z9_1 instanceof it)) {
-                                            var e = this.z9_1,
-                                                r = tt();
-                                            if (!r.q5p_1.h())
-                                                for (var _ = "decryptMessage failed for " + this.bbi_1, u = r.q5p_1.z().p(); u.q(); ) {
-                                                    u.r().o2().w("XWS", e, _);
+                                        if (((this.x9_1 = 4), this.z9_1 instanceof ht)) {
+                                            var n = this.z9_1,
+                                                e = ct();
+                                            if (!e.i5w_1.h())
+                                                for (var r = "decryptMessage failed for " + this.ec9_1, _ = e.i5w_1.z().p(); _.q(); ) {
+                                                    _.r().o2().w("XWS", n, r);
                                                 }
                                             return null;
                                         }
@@ -955,44 +993,44 @@
                                         throw this.z9_1;
                                 }
                             } catch (t) {
-                                var c = t;
-                                if (4 === this.x9_1) throw c;
-                                (this.w9_1 = this.x9_1), (this.z9_1 = c);
+                                var u = t;
+                                if (4 === this.x9_1) throw u;
+                                (this.w9_1 = this.x9_1), (this.z9_1 = u);
                             }
                     }),
-                    (S(wi).fbi = function (t, i, s, h) {
-                        var n = new ai(this, t, i, s, h);
-                        return (n.y9_1 = K), (n.z9_1 = null), n.oa();
+                    (J(bi).ic9 = function (t, i, s, c) {
+                        var h = new zi(this, t, i, s, c);
+                        return (h.y9_1 = W), (h.z9_1 = null), h.oa();
                     }),
-                    (S(wi).gbi = function (t, i, s, h, n, e) {
-                        var r = new bi(this, t, i, s, h, n, e);
-                        return (r.y9_1 = K), (r.z9_1 = null), r.oa();
+                    (J(bi).jc9 = function (t, i, s, c, h, n) {
+                        var e = new di(this, t, i, s, c, h, n);
+                        return (e.y9_1 = W), (e.z9_1 = null), e.oa();
                     }),
-                    (S(wi).hbi = function (t, i, s) {
-                        var h = new fi(this, t, i, s);
-                        return (h.y9_1 = K), (h.z9_1 = null), h.oa();
+                    (J(bi).kc9 = function (t, i, s) {
+                        var c = new gi(this, t, i, s);
+                        return (c.y9_1 = W), (c.z9_1 = null), c.oa();
                     }),
-                    (S(wi).ibi = function (t, i, s, h) {
-                        var n = new li(this, t, i, s, h);
-                        return (n.y9_1 = K), (n.z9_1 = null), n.oa();
+                    (J(bi).lc9 = function (t, i, s, c) {
+                        var h = new $i(this, t, i, s, c);
+                        return (h.y9_1 = W), (h.z9_1 = null), h.oa();
                     }),
-                    (S(xi).oa = function () {
+                    (J(pi).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 3), this.rbi_1.hp())) {
+                                        if (((this.x9_1 = 3), this.uc9_1.qp())) {
                                             this.w9_1 = 2;
                                             continue t;
                                         }
-                                        if (((this.w9_1 = 1), (t = this.rbi_1.abc(this)) === T())) return t;
+                                        if (((this.w9_1 = 1), (t = this.uc9_1.dc3(this)) === D())) return t;
                                         continue t;
                                     case 1:
                                         this.w9_1 = 2;
                                         continue t;
                                     case 2:
-                                        return K;
+                                        return W;
                                     case 3:
                                         throw this.z9_1;
                                 }
@@ -1002,175 +1040,138 @@
                                 (this.w9_1 = this.x9_1), (this.z9_1 = i);
                             }
                     }),
-                    (S(yi).sbi = function () {
+                    (J(mi).vc9 = function () {
                         return !1;
                     }),
-                    (S(yi).tbi = function (t) {
-                        return K;
+                    (J(mi).wc9 = function (t) {
+                        return W;
                     }),
-                    (S(yi).ubi = function (t) {
-                        return K;
+                    (J(mi).xc9 = function (t) {
+                        return W;
                     }),
-                    (S(Xi).oa = function () {
+                    (J(Mi).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = Pi(this.fbj_1.qbn_1, "jwk", this)) === T())) return t;
+                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = Li(this.ica_1.tce_1, "jwk", this)) === D())) return t;
                                         continue t;
                                     case 1:
                                         var i = t.d,
-                                            s = at(i);
-                                        return bt(s);
+                                            s = vt(i);
+                                        return xt(s);
                                     case 2:
                                         throw this.z9_1;
                                 }
                             } catch (t) {
-                                var h = t;
-                                if (2 === this.x9_1) throw h;
-                                (this.w9_1 = this.x9_1), (this.z9_1 = h);
+                                var c = t;
+                                if (2 === this.x9_1) throw c;
+                                (this.w9_1 = this.x9_1), (this.z9_1 = c);
                             }
                     }),
-                    (S(Wi).oa = function () {
+                    (J(Ui).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
                                         (this.x9_1 = 3), (this.x9_1 = 2), (this.w9_1 = 1);
-                                        var i = zi(window).subtle,
+                                        var i = ji(window).subtle,
                                             s = { name: "ECDH" };
-                                        if (((s.public = this.obj_1), (t = ot(i.deriveBits(s, this.pbj_1, 256), this)) === T())) return t;
+                                        if (((s.public = this.rca_1), (t = lt(i.deriveBits(s, this.sca_1, 256), this)) === D())) return t;
                                         continue t;
                                     case 1:
-                                        (this.qbj_1 = t), (this.x9_1 = 3), (this.w9_1 = 4);
+                                        (this.tca_1 = t), (this.x9_1 = 3), (this.w9_1 = 4);
                                         continue t;
                                     case 2:
                                         if (((this.x9_1 = 3), this.z9_1 instanceof Error)) {
-                                            var h = this.z9_1,
-                                                n = tt();
-                                            if (!n.q5p_1.h())
-                                                for (var e = n.q5p_1.z().p(); e.q(); ) {
-                                                    e.r().o2().e("XWS", h, null);
+                                            var c = this.z9_1,
+                                                h = ct();
+                                            if (!h.i5w_1.h())
+                                                for (var n = h.i5w_1.z().p(); n.q(); ) {
+                                                    n.r().o2().e("XWS", c, null);
                                                 }
-                                            (this.qbj_1 = null), (this.w9_1 = 4);
+                                            (this.tca_1 = null), (this.w9_1 = 4);
                                             continue t;
                                         }
                                         throw this.z9_1;
                                     case 3:
                                         throw this.z9_1;
                                     case 4:
-                                        return (this.x9_1 = 3), this.qbj_1;
+                                        return (this.x9_1 = 3), this.tca_1;
                                 }
                             } catch (t) {
-                                var r = t;
-                                if (3 === this.x9_1) throw r;
-                                (this.w9_1 = this.x9_1), (this.z9_1 = r);
+                                var e = t;
+                                if (3 === this.x9_1) throw e;
+                                (this.w9_1 = this.x9_1), (this.z9_1 = e);
                             }
                     }),
-                    (S(Ti).oa = function () {
+                    (J(Hi).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 3), (this.x9_1 = 2), (this.w9_1 = 1), (t = ot(zi(window).subtle.digest("SHA-256", lt([this.zbj_1, ft(new Int8Array([0, 0, 0, 1])).buffer, this.abk_1])), this)) === T())) return t;
+                                        if (((this.x9_1 = 3), (this.x9_1 = 2), (this.w9_1 = 1), (t = lt(ji(window).subtle.digest("SHA-256", zt([this.ccb_1, yt(new Int8Array([0, 0, 0, 1])).buffer, this.dcb_1])), this)) === D())) return t;
                                         continue t;
                                     case 1:
-                                        (this.bbk_1 = t), (this.x9_1 = 3), (this.w9_1 = 4);
+                                        (this.ecb_1 = t), (this.x9_1 = 3), (this.w9_1 = 4);
                                         continue t;
                                     case 2:
                                         if (((this.x9_1 = 3), this.z9_1 instanceof Error)) {
                                             var i = this.z9_1,
-                                                s = tt();
-                                            if (!s.q5p_1.h())
-                                                for (var h = s.q5p_1.z().p(); h.q(); ) {
-                                                    h.r().o2().e("XWS", i, null);
+                                                s = ct();
+                                            if (!s.i5w_1.h())
+                                                for (var c = s.i5w_1.z().p(); c.q(); ) {
+                                                    c.r().o2().e("XWS", i, null);
                                                 }
-                                            (this.bbk_1 = null), (this.w9_1 = 4);
+                                            (this.ecb_1 = null), (this.w9_1 = 4);
                                             continue t;
                                         }
                                         throw this.z9_1;
                                     case 3:
                                         throw this.z9_1;
                                     case 4:
-                                        return (this.x9_1 = 3), this.bbk_1;
+                                        return (this.x9_1 = 3), this.ecb_1;
                                 }
                             } catch (t) {
-                                var n = t;
-                                if (3 === this.x9_1) throw n;
-                                (this.w9_1 = this.x9_1), (this.z9_1 = n);
+                                var h = t;
+                                if (3 === this.x9_1) throw h;
+                                (this.w9_1 = this.x9_1), (this.z9_1 = h);
                             }
                     }),
-                    (S(Ii).oa = function () {
+                    (J(Gi).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
                                         (this.x9_1 = 3), (this.x9_1 = 2), (this.w9_1 = 1);
-                                        var i = zi(window).subtle,
+                                        var i = ji(window).subtle,
                                             s = { name: "AES-GCM" },
-                                            h = [this.lbk_1];
-                                        if ((t = ot(i.importKey("raw", this.kbk_1, s, !1, h), this)) === T()) return t;
+                                            c = [this.ocb_1];
+                                        if ((t = lt(i.importKey("raw", this.ncb_1, s, !1, c), this)) === D()) return t;
                                         continue t;
                                     case 1:
-                                        (this.mbk_1 = t), (this.x9_1 = 3), (this.w9_1 = 4);
-                                        continue t;
-                                    case 2:
-                                        if (((this.x9_1 = 3), this.z9_1 instanceof Error)) {
-                                            var n = this.z9_1,
-                                                e = tt();
-                                            if (!e.q5p_1.h())
-                                                for (var r = e.q5p_1.z().p(); r.q(); ) {
-                                                    r.r().o2().e("XWS", n, null);
-                                                }
-                                            (this.mbk_1 = null), (this.w9_1 = 4);
-                                            continue t;
-                                        }
-                                        throw this.z9_1;
-                                    case 3:
-                                        throw this.z9_1;
-                                    case 4:
-                                        return (this.x9_1 = 3), this.mbk_1;
-                                }
-                            } catch (t) {
-                                var _ = t;
-                                if (3 === this.x9_1) throw _;
-                                (this.w9_1 = this.x9_1), (this.z9_1 = _);
-                            }
-                    }),
-                    (S(Ni).oa = function () {
-                        var t = this.y9_1;
-                        t: for (;;)
-                            try {
-                                switch (this.w9_1) {
-                                    case 0:
-                                        (this.x9_1 = 3), (this.x9_1 = 2), (this.w9_1 = 1);
-                                        var i = zi(window).subtle,
-                                            s = { name: "AES-GCM" };
-                                        if (((s.iv = this.xbk_1), (t = ot(i.encrypt(s, this.vbk_1, this.wbk_1), this)) === T())) return t;
-                                        continue t;
-                                    case 1:
-                                        (this.ybk_1 = t), (this.x9_1 = 3), (this.w9_1 = 4);
+                                        (this.pcb_1 = t), (this.x9_1 = 3), (this.w9_1 = 4);
                                         continue t;
                                     case 2:
                                         if (((this.x9_1 = 3), this.z9_1 instanceof Error)) {
                                             var h = this.z9_1,
-                                                n = tt();
-                                            if (!n.q5p_1.h())
-                                                for (var e = n.q5p_1.z().p(); e.q(); ) {
+                                                n = ct();
+                                            if (!n.i5w_1.h())
+                                                for (var e = n.i5w_1.z().p(); e.q(); ) {
                                                     e.r().o2().e("XWS", h, null);
                                                 }
-                                            (this.ybk_1 = null), (this.w9_1 = 4);
+                                            (this.pcb_1 = null), (this.w9_1 = 4);
                                             continue t;
                                         }
                                         throw this.z9_1;
                                     case 3:
                                         throw this.z9_1;
                                     case 4:
-                                        return (this.x9_1 = 3), this.ybk_1;
+                                        return (this.x9_1 = 3), this.pcb_1;
                                 }
                             } catch (t) {
                                 var r = t;
@@ -1178,7 +1179,44 @@
                                 (this.w9_1 = this.x9_1), (this.z9_1 = r);
                             }
                     }),
-                    (S(Li).oa = function () {
+                    (J(Bi).oa = function () {
+                        var t = this.y9_1;
+                        t: for (;;)
+                            try {
+                                switch (this.w9_1) {
+                                    case 0:
+                                        (this.x9_1 = 3), (this.x9_1 = 2), (this.w9_1 = 1);
+                                        var i = ji(window).subtle,
+                                            s = { name: "AES-GCM" };
+                                        if (((s.iv = this.acc_1), (t = lt(i.encrypt(s, this.ycb_1, this.zcb_1), this)) === D())) return t;
+                                        continue t;
+                                    case 1:
+                                        (this.bcc_1 = t), (this.x9_1 = 3), (this.w9_1 = 4);
+                                        continue t;
+                                    case 2:
+                                        if (((this.x9_1 = 3), this.z9_1 instanceof Error)) {
+                                            var c = this.z9_1,
+                                                h = ct();
+                                            if (!h.i5w_1.h())
+                                                for (var n = h.i5w_1.z().p(); n.q(); ) {
+                                                    n.r().o2().e("XWS", c, null);
+                                                }
+                                            (this.bcc_1 = null), (this.w9_1 = 4);
+                                            continue t;
+                                        }
+                                        throw this.z9_1;
+                                    case 3:
+                                        throw this.z9_1;
+                                    case 4:
+                                        return (this.x9_1 = 3), this.bcc_1;
+                                }
+                            } catch (t) {
+                                var e = t;
+                                if (3 === this.x9_1) throw e;
+                                (this.w9_1 = this.x9_1), (this.z9_1 = e);
+                            }
+                    }),
+                    (J(Oi).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
@@ -1186,29 +1224,50 @@
                                     case 0:
                                         (this.x9_1 = 3), (this.x9_1 = 2), (this.w9_1 = 1);
                                         var i,
-                                            s = zi(window).subtle,
+                                            s,
+                                            c = ji(window).subtle,
                                             h = {};
-                                        if (((h.name = "ECDH"), (h.namedCurve = "P-256"), (i = null == this.jbl_1 ? [] : [this.jbl_1]), (t = ot(s.importKey(this.hbl_1, this.ibl_1, h, !0, i), this)) === T())) return t;
+                                        switch (this.mcc_1.y2_1) {
+                                            case 0:
+                                                i = "ECDH";
+                                                break;
+                                            case 1:
+                                                i = "ECDSA";
+                                                break;
+                                            default:
+                                                wt();
+                                        }
+                                        switch (((h.name = i), (h.namedCurve = "P-256"), this.mcc_1.y2_1)) {
+                                            case 0:
+                                                s = [];
+                                                break;
+                                            case 1:
+                                                s = ["verify"];
+                                                break;
+                                            default:
+                                                wt();
+                                        }
+                                        if ((t = lt(c.importKey(this.kcc_1, this.lcc_1, h, !0, s), this)) === D()) return t;
                                         continue t;
                                     case 1:
-                                        (this.kbl_1 = t), (this.x9_1 = 3), (this.w9_1 = 4);
+                                        (this.ncc_1 = t), (this.x9_1 = 3), (this.w9_1 = 4);
                                         continue t;
                                     case 2:
                                         if (((this.x9_1 = 3), this.z9_1 instanceof Error)) {
                                             var n = this.z9_1,
-                                                e = tt();
-                                            if (!e.q5p_1.h())
-                                                for (var r = e.q5p_1.z().p(); r.q(); ) {
+                                                e = ct();
+                                            if (!e.i5w_1.h())
+                                                for (var r = e.i5w_1.z().p(); r.q(); ) {
                                                     r.r().o2().e("XWS", n, null);
                                                 }
-                                            (this.kbl_1 = null), (this.w9_1 = 4);
+                                            (this.ncc_1 = null), (this.w9_1 = 4);
                                             continue t;
                                         }
                                         throw this.z9_1;
                                     case 3:
                                         throw this.z9_1;
                                     case 4:
-                                        return (this.x9_1 = 3), this.kbl_1;
+                                        return (this.x9_1 = 3), this.ncc_1;
                                 }
                             } catch (t) {
                                 var _ = t;
@@ -1216,44 +1275,44 @@
                                 (this.w9_1 = this.x9_1), (this.z9_1 = _);
                             }
                     }),
-                    (S(Mi).oa = function () {
+                    (J(Qi).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
                                         (this.x9_1 = 3), (this.x9_1 = 2), (this.w9_1 = 1);
-                                        var i = zi(window).subtle,
+                                        var i = ji(window).subtle,
                                             s = { name: "AES-GCM" };
-                                        if (((s.iv = this.tbl_1), (t = ot(i.decrypt(s, this.ubl_1, this.vbl_1), this)) === T())) return t;
+                                        if (((s.iv = this.wcc_1), (t = lt(i.decrypt(s, this.xcc_1, this.ycc_1), this)) === D())) return t;
                                         continue t;
                                     case 1:
-                                        (this.wbl_1 = t), (this.x9_1 = 3), (this.w9_1 = 4);
+                                        (this.zcc_1 = t), (this.x9_1 = 3), (this.w9_1 = 4);
                                         continue t;
                                     case 2:
                                         if (((this.x9_1 = 3), this.z9_1 instanceof Error)) {
-                                            var h = this.z9_1,
-                                                n = tt();
-                                            if (!n.q5p_1.h())
-                                                for (var e = n.q5p_1.z().p(); e.q(); ) {
-                                                    e.r().o2().e("XWS", h, null);
+                                            var c = this.z9_1,
+                                                h = ct();
+                                            if (!h.i5w_1.h())
+                                                for (var n = h.i5w_1.z().p(); n.q(); ) {
+                                                    n.r().o2().e("XWS", c, null);
                                                 }
-                                            (this.wbl_1 = null), (this.w9_1 = 4);
+                                            (this.zcc_1 = null), (this.w9_1 = 4);
                                             continue t;
                                         }
                                         throw this.z9_1;
                                     case 3:
                                         throw this.z9_1;
                                     case 4:
-                                        return (this.x9_1 = 3), this.wbl_1;
+                                        return (this.x9_1 = 3), this.zcc_1;
                                 }
                             } catch (t) {
-                                var r = t;
-                                if (3 === this.x9_1) throw r;
-                                (this.w9_1 = this.x9_1), (this.z9_1 = r);
+                                var e = t;
+                                if (3 === this.x9_1) throw e;
+                                (this.w9_1 = this.x9_1), (this.z9_1 = e);
                             }
                     }),
-                    (S(Ui).oa = function () {
+                    (J(Vi).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
@@ -1261,29 +1320,50 @@
                                     case 0:
                                         (this.x9_1 = 3), (this.x9_1 = 2), (this.w9_1 = 1);
                                         var i,
-                                            s = zi(window).subtle,
+                                            s,
+                                            c = ji(window).subtle,
                                             h = {};
-                                        if (((h.name = "ECDH"), (h.namedCurve = "P-256"), (i = null == this.hbm_1 ? [] : [this.hbm_1]), (t = ot(s.importKey(this.fbm_1, this.gbm_1, h, !0, i), this)) === T())) return t;
+                                        switch (this.kcd_1.y2_1) {
+                                            case 0:
+                                                i = "ECDH";
+                                                break;
+                                            case 1:
+                                                i = "ECDSA";
+                                                break;
+                                            default:
+                                                wt();
+                                        }
+                                        switch (((h.name = i), (h.namedCurve = "P-256"), this.kcd_1.y2_1)) {
+                                            case 0:
+                                                s = ["deriveBits"];
+                                                break;
+                                            case 1:
+                                                s = ["sign"];
+                                                break;
+                                            default:
+                                                wt();
+                                        }
+                                        if ((t = lt(c.importKey(this.icd_1, this.jcd_1, h, !0, s), this)) === D()) return t;
                                         continue t;
                                     case 1:
-                                        (this.ibm_1 = t), (this.x9_1 = 3), (this.w9_1 = 4);
+                                        (this.lcd_1 = t), (this.x9_1 = 3), (this.w9_1 = 4);
                                         continue t;
                                     case 2:
                                         if (((this.x9_1 = 3), this.z9_1 instanceof Error)) {
                                             var n = this.z9_1,
-                                                e = tt();
-                                            if (!e.q5p_1.h())
-                                                for (var r = e.q5p_1.z().p(); r.q(); ) {
+                                                e = ct();
+                                            if (!e.i5w_1.h())
+                                                for (var r = e.i5w_1.z().p(); r.q(); ) {
                                                     r.r().o2().e("XWS", n, null);
                                                 }
-                                            (this.ibm_1 = null), (this.w9_1 = 4);
+                                            (this.lcd_1 = null), (this.w9_1 = 4);
                                             continue t;
                                         }
                                         throw this.z9_1;
                                     case 3:
                                         throw this.z9_1;
                                     case 4:
-                                        return (this.x9_1 = 3), this.ibm_1;
+                                        return (this.x9_1 = 3), this.lcd_1;
                                 }
                             } catch (t) {
                                 var _ = t;
@@ -1291,112 +1371,37 @@
                                 (this.w9_1 = this.x9_1), (this.z9_1 = _);
                             }
                     }),
-                    (S(Hi).oa = function () {
+                    (J(Yi).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
                                         (this.x9_1 = 3), (this.x9_1 = 2), (this.w9_1 = 1);
-                                        var i = zi(window).subtle,
+                                        var i = ji(window).subtle,
                                             s = { name: "ECDSA" },
-                                            h = { name: "SHA-256" };
-                                        if (((s.hash = h), (t = ot(i.sign(s, this.rbm_1, this.sbm_1), this)) === T())) return t;
+                                            c = { name: "SHA-256" };
+                                        if (((s.hash = c), (t = lt(i.sign(s, this.ucd_1, this.vcd_1), this)) === D())) return t;
                                         continue t;
                                     case 1:
-                                        (this.tbm_1 = t), (this.x9_1 = 3), (this.w9_1 = 4);
-                                        continue t;
-                                    case 2:
-                                        if (((this.x9_1 = 3), this.z9_1 instanceof Error)) {
-                                            var n = this.z9_1,
-                                                e = tt();
-                                            if (!e.q5p_1.h())
-                                                for (var r = e.q5p_1.z().p(); r.q(); ) {
-                                                    r.r().o2().e("XWS", n, null);
-                                                }
-                                            (this.tbm_1 = null), (this.w9_1 = 4);
-                                            continue t;
-                                        }
-                                        throw this.z9_1;
-                                    case 3:
-                                        throw this.z9_1;
-                                    case 4:
-                                        return (this.x9_1 = 3), this.tbm_1;
-                                }
-                            } catch (t) {
-                                var _ = t;
-                                if (3 === this.x9_1) throw _;
-                                (this.w9_1 = this.x9_1), (this.z9_1 = _);
-                            }
-                    }),
-                    (S(Di).oa = function () {
-                        var t = this.y9_1;
-                        t: for (;;)
-                            try {
-                                switch (this.w9_1) {
-                                    case 0:
-                                        (this.x9_1 = 3), (this.x9_1 = 2), (this.w9_1 = 1);
-                                        var i = zi(window).subtle,
-                                            s = { name: "ECDSA" },
-                                            h = { name: "SHA-256" };
-                                        if (((s.hash = h), (t = ot(i.verify(s, this.cbn_1, this.ebn_1, this.dbn_1), this)) === T())) return t;
-                                        continue t;
-                                    case 1:
-                                        (this.fbn_1 = t), (this.x9_1 = 3), (this.w9_1 = 4);
-                                        continue t;
-                                    case 2:
-                                        if (((this.x9_1 = 3), this.z9_1 instanceof Error)) {
-                                            var n = this.z9_1,
-                                                e = tt();
-                                            if (!e.q5p_1.h())
-                                                for (var r = e.q5p_1.z().p(); r.q(); ) {
-                                                    r.r().o2().e("XWS", n, null);
-                                                }
-                                            (this.fbn_1 = null), (this.w9_1 = 4);
-                                            continue t;
-                                        }
-                                        throw this.z9_1;
-                                    case 3:
-                                        throw this.z9_1;
-                                    case 4:
-                                        return (this.x9_1 = 3), this.fbn_1;
-                                }
-                            } catch (t) {
-                                var _ = t;
-                                if (3 === this.x9_1) throw _;
-                                (this.w9_1 = this.x9_1), (this.z9_1 = _);
-                            }
-                    }),
-                    (S(Gi).oa = function () {
-                        var t = this.y9_1;
-                        t: for (;;)
-                            try {
-                                switch (this.w9_1) {
-                                    case 0:
-                                        (this.x9_1 = 3), (this.x9_1 = 2), (this.w9_1 = 1);
-                                        var i = zi(window).subtle,
-                                            s = { name: "AES-GCM" };
-                                        if ((t = ot(i.importKey("raw", this.obn_1, s, !0, ["encrypt", "decrypt"]), this)) === T()) return t;
-                                        continue t;
-                                    case 1:
-                                        (this.pbn_1 = t), (this.x9_1 = 3), (this.w9_1 = 4);
+                                        (this.wcd_1 = t), (this.x9_1 = 3), (this.w9_1 = 4);
                                         continue t;
                                     case 2:
                                         if (((this.x9_1 = 3), this.z9_1 instanceof Error)) {
                                             var h = this.z9_1,
-                                                n = tt();
-                                            if (!n.q5p_1.h())
-                                                for (var e = n.q5p_1.z().p(); e.q(); ) {
+                                                n = ct();
+                                            if (!n.i5w_1.h())
+                                                for (var e = n.i5w_1.z().p(); e.q(); ) {
                                                     e.r().o2().e("XWS", h, null);
                                                 }
-                                            (this.pbn_1 = null), (this.w9_1 = 4);
+                                            (this.wcd_1 = null), (this.w9_1 = 4);
                                             continue t;
                                         }
                                         throw this.z9_1;
                                     case 3:
                                         throw this.z9_1;
                                     case 4:
-                                        return (this.x9_1 = 3), this.pbn_1;
+                                        return (this.x9_1 = 3), this.wcd_1;
                                 }
                             } catch (t) {
                                 var r = t;
@@ -1404,20 +1409,95 @@
                                 (this.w9_1 = this.x9_1), (this.z9_1 = r);
                             }
                     }),
-                    (S(Qi).lbo = function (t) {
+                    (J(Zi).oa = function () {
+                        var t = this.y9_1;
+                        t: for (;;)
+                            try {
+                                switch (this.w9_1) {
+                                    case 0:
+                                        (this.x9_1 = 3), (this.x9_1 = 2), (this.w9_1 = 1);
+                                        var i = ji(window).subtle,
+                                            s = { name: "ECDSA" },
+                                            c = { name: "SHA-256" };
+                                        if (((s.hash = c), (t = lt(i.verify(s, this.fce_1, this.hce_1, this.gce_1), this)) === D())) return t;
+                                        continue t;
+                                    case 1:
+                                        (this.ice_1 = t), (this.x9_1 = 3), (this.w9_1 = 4);
+                                        continue t;
+                                    case 2:
+                                        if (((this.x9_1 = 3), this.z9_1 instanceof Error)) {
+                                            var h = this.z9_1,
+                                                n = ct();
+                                            if (!n.i5w_1.h())
+                                                for (var e = n.i5w_1.z().p(); e.q(); ) {
+                                                    e.r().o2().e("XWS", h, null);
+                                                }
+                                            (this.ice_1 = null), (this.w9_1 = 4);
+                                            continue t;
+                                        }
+                                        throw this.z9_1;
+                                    case 3:
+                                        throw this.z9_1;
+                                    case 4:
+                                        return (this.x9_1 = 3), this.ice_1;
+                                }
+                            } catch (t) {
+                                var r = t;
+                                if (3 === this.x9_1) throw r;
+                                (this.w9_1 = this.x9_1), (this.z9_1 = r);
+                            }
+                    }),
+                    (J(ts).oa = function () {
+                        var t = this.y9_1;
+                        t: for (;;)
+                            try {
+                                switch (this.w9_1) {
+                                    case 0:
+                                        (this.x9_1 = 3), (this.x9_1 = 2), (this.w9_1 = 1);
+                                        var i = ji(window).subtle,
+                                            s = { name: "AES-GCM" };
+                                        if ((t = lt(i.importKey("raw", this.rce_1, s, !0, ["encrypt", "decrypt"]), this)) === D()) return t;
+                                        continue t;
+                                    case 1:
+                                        (this.sce_1 = t), (this.x9_1 = 3), (this.w9_1 = 4);
+                                        continue t;
+                                    case 2:
+                                        if (((this.x9_1 = 3), this.z9_1 instanceof Error)) {
+                                            var c = this.z9_1,
+                                                h = ct();
+                                            if (!h.i5w_1.h())
+                                                for (var n = h.i5w_1.z().p(); n.q(); ) {
+                                                    n.r().o2().e("XWS", c, null);
+                                                }
+                                            (this.sce_1 = null), (this.w9_1 = 4);
+                                            continue t;
+                                        }
+                                        throw this.z9_1;
+                                    case 3:
+                                        throw this.z9_1;
+                                    case 4:
+                                        return (this.x9_1 = 3), this.sce_1;
+                                }
+                            } catch (t) {
+                                var e = t;
+                                if (3 === this.x9_1) throw e;
+                                (this.w9_1 = this.x9_1), (this.z9_1 = e);
+                            }
+                    }),
+                    (J(cs).ocf = function (t) {
                         var i = this.sa(t);
-                        return (i.y9_1 = K), (i.z9_1 = null), i.oa();
+                        return (i.y9_1 = W), (i.z9_1 = null), i.oa();
                     }),
-                    (S(Qi).a2e = function (t) {
-                        return this.lbo(t);
+                    (J(cs).k2e = function (t) {
+                        return this.ocf(t);
                     }),
-                    (S(Qi).oa = function () {
+                    (J(cs).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = ot((this.kbo_1, s.e("node_modules_juicebox-sdk_juicebox-sdk_js").then(s.bind(s, 94156))), this)) === T())) return t;
+                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = lt((this.ncf_1, s.e("node_modules_juicebox-sdk_juicebox-sdk_js").then(s.bind(s, 94156))), this)) === D())) return t;
                                         continue t;
                                     case 1:
                                         return t;
@@ -1430,142 +1510,142 @@
                                 (this.w9_1 = this.x9_1), (this.z9_1 = i);
                             }
                     }),
-                    (S(Qi).sa = function (t) {
-                        return new Qi(this.kbo_1, t);
+                    (J(cs).sa = function (t) {
+                        return new cs(this.ncf_1, t);
                     }),
-                    (S(Zi).oa = function () {
+                    (J(es).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = Bi(this.abo_1)(this)) === T())) return t;
+                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = is(this.dcf_1)(this)) === D())) return t;
                                         continue t;
                                     case 1:
                                         var i = t,
                                             s = i.Configuration,
-                                            h = i.Client;
-                                        return (window.JuiceboxGetAuthToken = Yi(this.bbo_1)), new h(new s(this.bbo_1.l9z_1), []);
+                                            c = i.Client;
+                                        return (window.JuiceboxGetAuthToken = ns(this.ecf_1)), new c(new s(this.ecf_1.ma7_1), []);
                                     case 2:
                                         throw this.z9_1;
                                 }
                             } catch (t) {
-                                var n = t;
-                                if (2 === this.x9_1) throw n;
-                                (this.w9_1 = this.x9_1), (this.z9_1 = n);
+                                var h = t;
+                                if (2 === this.x9_1) throw h;
+                                (this.w9_1 = this.x9_1), (this.z9_1 = h);
                             }
                     }),
-                    (S(ts).oa = function () {
+                    (J(rs).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 6), (this.w9_1 = 1), (t = Bi(this.ubo_1)(this)) === T())) return t;
+                                        if (((this.x9_1 = 6), (this.w9_1 = 1), (t = is(this.xcf_1)(this)) === D())) return t;
                                         continue t;
                                     case 1:
-                                        (this.ybo_1 = t), (this.x9_1 = 4);
-                                        var i = tt();
-                                        if (!i.q5p_1.h())
-                                            for (var s = i.q5p_1.z().p(); s.q(); ) {
+                                        (this.bcg_1 = t), (this.x9_1 = 4);
+                                        var i = ct();
+                                        if (!i.i5w_1.h())
+                                            for (var s = i.i5w_1.z().p(); s.q(); ) {
                                                 s.r().o2().d("XWS", "Registering key with juicebox using realmIdToAuthToken:", null);
                                             }
-                                        var h = tt();
-                                        if (!h.q5p_1.h())
-                                            for (var n = L(this.wbo_1.g9z_1), e = h.q5p_1.z().p(); e.q(); ) {
-                                                e.r().o2().d("XWS", n, null);
+                                        var c = ct();
+                                        if (!c.i5w_1.h())
+                                            for (var h = U(this.zcf_1.ha7_1), n = c.i5w_1.z().p(); n.q(); ) {
+                                                n.r().o2().d("XWS", h, null);
                                             }
-                                        if (((this.w9_1 = 2), (t = Oi(this.ubo_1, this.wbo_1, this)) === T())) return t;
+                                        if (((this.w9_1 = 2), (t = ss(this.xcf_1, this.zcf_1, this)) === D())) return t;
                                         continue t;
                                     case 2:
-                                        if (((this.abp_1 = t), (this.w9_1 = 3), (t = ot(this.abp_1.register(yt(this.vbo_1), this.xbo_1, new Int8Array(0), this.wbo_1.h9z_1), this)) === T())) return t;
+                                        if (((this.dcg_1 = t), (this.w9_1 = 3), (t = lt(this.dcg_1.register(Rt(this.ycf_1), this.acg_1, new Int8Array(0), this.zcf_1.ia7_1), this)) === D())) return t;
                                         continue t;
                                     case 3:
-                                        (this.zbo_1 = It()), (this.x9_1 = 6), (this.w9_1 = 5);
+                                        (this.ccg_1 = Mt()), (this.x9_1 = 6), (this.w9_1 = 5);
+                                        continue t;
+                                    case 4:
+                                        this.x9_1 = 6;
+                                        var e = this.z9_1,
+                                            r = e == this.bcg_1.RegisterError.InvalidAuth ? hi() : e == this.bcg_1.RegisterError.UpgradeRequired ? ni() : e == this.bcg_1.RegisterError.Assertion ? ei() : e == this.bcg_1.RegisterError.Transient ? ri() : e == this.bcg_1.RegisterError.RateLimitExceeded ? _i() : ri();
+                                        (this.ccg_1 = new Ut(r)), (this.w9_1 = 5);
+                                        continue t;
+                                    case 5:
+                                        return (this.x9_1 = 6), this.ccg_1;
+                                    case 6:
+                                        throw this.z9_1;
+                                }
+                            } catch (t) {
+                                var _ = t;
+                                if (6 === this.x9_1) throw _;
+                                (this.w9_1 = this.x9_1), (this.z9_1 = _);
+                            }
+                    }),
+                    (J(_s).oa = function () {
+                        var t = this.y9_1;
+                        t: for (;;)
+                            try {
+                                switch (this.w9_1) {
+                                    case 0:
+                                        if (((this.x9_1 = 6), (this.w9_1 = 1), (t = is(this.mcg_1)(this)) === D())) return t;
+                                        continue t;
+                                    case 1:
+                                        (this.pcg_1 = t), (this.x9_1 = 4);
+                                        var i = ct();
+                                        if (!i.i5w_1.h())
+                                            for (var s = i.i5w_1.z().p(); s.q(); ) {
+                                                s.r().o2().d("XWS", "Recovering key with juicebox using realmIdToAuthToken:", null);
+                                            }
+                                        var c = ct();
+                                        if (!c.i5w_1.h())
+                                            for (var h = U(this.ocg_1.ha7_1), n = c.i5w_1.z().p(); n.q(); ) {
+                                                n.r().o2().d("XWS", h, null);
+                                            }
+                                        if (((this.w9_1 = 2), (t = ss(this.mcg_1, this.ocg_1, this)) === D())) return t;
+                                        continue t;
+                                    case 2:
+                                        if (((this.rcg_1 = t), (this.w9_1 = 3), (t = lt(this.rcg_1.recover(Rt(this.ncg_1), new Int8Array(0)), this)) === D())) return t;
+                                        continue t;
+                                    case 3:
+                                        var e = t;
+                                        (this.qcg_1 = new Jt(e)), (this.x9_1 = 6), (this.w9_1 = 5);
                                         continue t;
                                     case 4:
                                         this.x9_1 = 6;
                                         var r = this.z9_1,
-                                            _ = r == this.ybo_1.RegisterError.InvalidAuth ? ti() : r == this.ybo_1.RegisterError.UpgradeRequired ? ii() : r == this.ybo_1.RegisterError.Assertion ? si() : r == this.ybo_1.RegisterError.Transient ? hi() : r == this.ybo_1.RegisterError.RateLimitExceeded ? ni() : hi();
-                                        (this.zbo_1 = new Nt(_)), (this.w9_1 = 5);
+                                            _ = r.reason,
+                                            u = _ == this.pcg_1.RecoverErrorReason.InvalidPin ? Vt() : _ == this.pcg_1.RecoverErrorReason.NotRegistered ? Yt() : _ == this.pcg_1.RecoverErrorReason.InvalidAuth ? Zt() : _ == this.pcg_1.RecoverErrorReason.UpgradeRequired ? ti() : _ == this.pcg_1.RecoverErrorReason.Assertion ? ii() : _ == this.pcg_1.RecoverErrorReason.Transient ? si() : _ == this.pcg_1.RecoverErrorReason.RateLimitExceeded ? ci() : si();
+                                        (this.qcg_1 = new At(u, r.guesses_remaining)), (this.w9_1 = 5);
                                         continue t;
                                     case 5:
-                                        return (this.x9_1 = 6), this.zbo_1;
+                                        return (this.x9_1 = 6), this.qcg_1;
                                     case 6:
                                         throw this.z9_1;
                                 }
                             } catch (t) {
-                                var u = t;
-                                if (6 === this.x9_1) throw u;
-                                (this.w9_1 = this.x9_1), (this.z9_1 = u);
+                                var a = t;
+                                if (6 === this.x9_1) throw a;
+                                (this.w9_1 = this.x9_1), (this.z9_1 = a);
                             }
                     }),
-                    (S(is).oa = function () {
+                    (J(us).scg = function (t, i, s, c) {
+                        var h = new rs(this, t, i, s, c);
+                        return (h.y9_1 = W), (h.z9_1 = null), h.oa();
+                    }),
+                    (J(us).tcg = function (t, i, s) {
+                        var c = new _s(this, t, i, s);
+                        return (c.y9_1 = W), (c.z9_1 = null), c.oa();
+                    }),
+                    (J(as).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 6), (this.w9_1 = 1), (t = Bi(this.jbp_1)(this)) === T())) return t;
-                                        continue t;
-                                    case 1:
-                                        (this.mbp_1 = t), (this.x9_1 = 4);
-                                        var i = tt();
-                                        if (!i.q5p_1.h())
-                                            for (var s = i.q5p_1.z().p(); s.q(); ) {
-                                                s.r().o2().d("XWS", "Recovering key with juicebox using realmIdToAuthToken:", null);
-                                            }
-                                        var h = tt();
-                                        if (!h.q5p_1.h())
-                                            for (var n = L(this.lbp_1.g9z_1), e = h.q5p_1.z().p(); e.q(); ) {
-                                                e.r().o2().d("XWS", n, null);
-                                            }
-                                        if (((this.w9_1 = 2), (t = Oi(this.jbp_1, this.lbp_1, this)) === T())) return t;
-                                        continue t;
-                                    case 2:
-                                        if (((this.obp_1 = t), (this.w9_1 = 3), (t = ot(this.obp_1.recover(yt(this.kbp_1), new Int8Array(0)), this)) === T())) return t;
-                                        continue t;
-                                    case 3:
-                                        var r = t;
-                                        (this.nbp_1 = new jt(r)), (this.x9_1 = 6), (this.w9_1 = 5);
-                                        continue t;
-                                    case 4:
-                                        this.x9_1 = 6;
-                                        var _ = this.z9_1,
-                                            u = _.reason,
-                                            c = u == this.mbp_1.RecoverErrorReason.InvalidPin ? Gt() : u == this.mbp_1.RecoverErrorReason.NotRegistered ? Bt() : u == this.mbp_1.RecoverErrorReason.InvalidAuth ? Ot() : u == this.mbp_1.RecoverErrorReason.UpgradeRequired ? Qt() : u == this.mbp_1.RecoverErrorReason.Assertion ? Vt() : u == this.mbp_1.RecoverErrorReason.Transient ? Yt() : u == this.mbp_1.RecoverErrorReason.RateLimitExceeded ? Zt() : Yt();
-                                        (this.nbp_1 = new St(c, _.guesses_remaining)), (this.w9_1 = 5);
-                                        continue t;
-                                    case 5:
-                                        return (this.x9_1 = 6), this.nbp_1;
-                                    case 6:
-                                        throw this.z9_1;
-                                }
-                            } catch (t) {
-                                var o = t;
-                                if (6 === this.x9_1) throw o;
-                                (this.w9_1 = this.x9_1), (this.z9_1 = o);
-                            }
-                    }),
-                    (S(ss).pbp = function (t, i, s, h) {
-                        var n = new ts(this, t, i, s, h);
-                        return (n.y9_1 = K), (n.z9_1 = null), n.oa();
-                    }),
-                    (S(ss).qbp = function (t, i, s) {
-                        var h = new is(this, t, i, s);
-                        return (h.y9_1 = K), (h.z9_1 = null), h.oa();
-                    }),
-                    (S(hs).oa = function () {
-                        var t = this.y9_1;
-                        t: for (;;)
-                            try {
-                                switch (this.w9_1) {
-                                    case 0:
-                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = $i(this)) === T())) return t;
+                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = Ei(this.nch_1, this)) === D())) return t;
                                         continue t;
                                     case 1:
                                         var i = t;
-                                        return new ci(new vs(i.publicKey), new ds(i.privateKey));
+                                        return new xi(new Rs(i.publicKey), new ks(i.privateKey));
                                     case 2:
                                         throw this.z9_1;
                                 }
@@ -1575,16 +1655,16 @@
                                 (this.w9_1 = this.x9_1), (this.z9_1 = s);
                             }
                     }),
-                    (S(ns).oa = function () {
+                    (J(os).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = Ri(this)) === T())) return t;
+                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = Ci(this)) === D())) return t;
                                         continue t;
                                     case 1:
-                                        return new ls(t);
+                                        return new $s(t);
                                     case 2:
                                         throw this.z9_1;
                                 }
@@ -1594,104 +1674,104 @@
                                 (this.w9_1 = this.x9_1), (this.z9_1 = i);
                             }
                     }),
-                    (S(es).oa = function () {
+                    (J(fs).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 7), (this.w9_1 = 1), (t = this.bbr_1.zbd(this)) === T())) return t;
+                                        if (((this.x9_1 = 7), (this.w9_1 = 1), (t = this.fci_1.cc5(vi(), this)) === D())) return t;
                                         continue t;
                                     case 1:
-                                        if (((this.ebr_1 = t), (this.w9_1 = 2), (t = mi(this.cbr_1.wbi_1, this.ebr_1.ibe_1.qbn_1, this)) === T())) return t;
+                                        if (((this.ici_1 = t), (this.w9_1 = 2), (t = Ji(this.gci_1.zc9_1, this.ici_1.lc5_1.tce_1, this)) === D())) return t;
                                         continue t;
                                     case 2:
-                                        this.fbr_1 = t;
+                                        this.jci_1 = t;
                                         var i;
-                                        if (null == this.fbr_1) return null;
-                                        if (((i = this.fbr_1), (this.gbr_1 = i), (this.w9_1 = 3), (t = gi(this.ebr_1.hbe_1, this)) === T())) return t;
+                                        if (null == this.jci_1) return null;
+                                        if (((i = this.jci_1), (this.kci_1 = i), (this.w9_1 = 3), (t = qi(this.ici_1.kc5_1, this)) === D())) return t;
                                         continue t;
                                     case 3:
-                                        if (((this.hbr_1 = t), (this.ibr_1 = $t(this.hbr_1, 65)), (this.w9_1 = 4), (t = qi(this.gbr_1, this.ibr_1, this)) === T())) return t;
+                                        if (((this.lci_1 = t), (this.mci_1 = jt(this.lci_1, 65)), (this.w9_1 = 4), (t = Ai(this.kci_1, this.mci_1, this)) === D())) return t;
                                         continue t;
                                     case 4:
-                                        this.jbr_1 = t;
+                                        this.nci_1 = t;
                                         var s;
-                                        if (null == this.jbr_1) return null;
-                                        if (((s = this.jbr_1), (this.kbr_1 = s), (this.lbr_1 = this.kbr_1.slice(0, 16)), (this.mbr_1 = this.kbr_1.slice(16, 32)), (this.w9_1 = 5), (t = ki(this.lbr_1, "encrypt", this)) === T())) return t;
+                                        if (null == this.nci_1) return null;
+                                        if (((s = this.nci_1), (this.oci_1 = s), (this.pci_1 = this.oci_1.slice(0, 16)), (this.qci_1 = this.oci_1.slice(16, 32)), (this.w9_1 = 5), (t = Fi(this.pci_1, "encrypt", this)) === D())) return t;
                                         continue t;
                                     case 5:
-                                        this.nbr_1 = t;
-                                        var h;
-                                        if (null == this.nbr_1) return null;
-                                        if (((h = this.nbr_1), (this.obr_1 = h), (this.w9_1 = 6), (t = ji(this.obr_1, bt(this.dbr_1), this.mbr_1, this)) === T())) return t;
+                                        this.rci_1 = t;
+                                        var c;
+                                        if (null == this.rci_1) return null;
+                                        if (((c = this.rci_1), (this.sci_1 = c), (this.w9_1 = 6), (t = Ki(this.sci_1, xt(this.hci_1), this.qci_1, this)) === D())) return t;
                                         continue t;
                                     case 6:
                                         if (null == t) return null;
-                                        var n = t;
-                                        return Rt(lt([this.ibr_1, n]));
+                                        var h = t;
+                                        return qt(zt([this.mci_1, h]));
                                     case 7:
                                         throw this.z9_1;
                                 }
                             } catch (t) {
-                                var e = t;
-                                if (7 === this.x9_1) throw e;
-                                (this.w9_1 = this.x9_1), (this.z9_1 = e);
+                                var n = t;
+                                if (7 === this.x9_1) throw n;
+                                (this.w9_1 = this.x9_1), (this.z9_1 = n);
                             }
                     }),
-                    (S(rs).oa = function () {
+                    (J(ws).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 6), (this.bbs_1 = bt(this.abs_1)), (this.cbs_1 = this.bbs_1.slice(0, 65)), (this.dbs_1 = this.bbs_1.slice(65)), (this.w9_1 = 1), (t = Si("raw", this.cbs_1, J, this)) === T())) return t;
+                                        if (((this.x9_1 = 6), (this.fcj_1 = xt(this.ecj_1)), (this.gcj_1 = this.fcj_1.slice(0, 65)), (this.hcj_1 = this.fcj_1.slice(65)), (this.w9_1 = 1), (t = Pi("raw", this.gcj_1, vi(), this)) === D())) return t;
                                         continue t;
                                     case 1:
-                                        this.ebs_1 = t;
+                                        this.icj_1 = t;
                                         var i;
-                                        if (null == this.ebs_1) return null;
-                                        if (((i = this.ebs_1), (this.fbs_1 = i), (this.w9_1 = 2), (t = mi(this.fbs_1, this.zbr_1.qbn_1, this)) === T())) return t;
+                                        if (null == this.icj_1) return null;
+                                        if (((i = this.icj_1), (this.jcj_1 = i), (this.w9_1 = 2), (t = Ji(this.jcj_1, this.dcj_1.tce_1, this)) === D())) return t;
                                         continue t;
                                     case 2:
-                                        this.gbs_1 = t;
+                                        this.kcj_1 = t;
                                         var s;
-                                        if (null == this.gbs_1) return null;
-                                        if (((s = this.gbs_1), (this.hbs_1 = s), (this.w9_1 = 3), (t = qi(this.hbs_1, this.cbs_1, this)) === T())) return t;
+                                        if (null == this.kcj_1) return null;
+                                        if (((s = this.kcj_1), (this.lcj_1 = s), (this.w9_1 = 3), (t = Ai(this.lcj_1, this.gcj_1, this)) === D())) return t;
                                         continue t;
                                     case 3:
-                                        this.ibs_1 = t;
-                                        var h;
-                                        if (null == this.ibs_1) return null;
-                                        if (((h = this.ibs_1), (this.jbs_1 = h), (this.kbs_1 = this.jbs_1.slice(0, 16)), (this.lbs_1 = this.jbs_1.slice(16, 32)), (this.w9_1 = 4), (t = ki(this.kbs_1, "decrypt", this)) === T())) return t;
+                                        this.mcj_1 = t;
+                                        var c;
+                                        if (null == this.mcj_1) return null;
+                                        if (((c = this.mcj_1), (this.ncj_1 = c), (this.ocj_1 = this.ncj_1.slice(0, 16)), (this.pcj_1 = this.ncj_1.slice(16, 32)), (this.w9_1 = 4), (t = Fi(this.ocj_1, "decrypt", this)) === D())) return t;
                                         continue t;
                                     case 4:
-                                        this.mbs_1 = t;
-                                        var n;
-                                        if (null == this.mbs_1) return null;
-                                        if (((n = this.mbs_1), (this.nbs_1 = n), (this.w9_1 = 5), (t = Ei(this.lbs_1, this.nbs_1, this.dbs_1, this)) === T())) return t;
+                                        this.qcj_1 = t;
+                                        var h;
+                                        if (null == this.qcj_1) return null;
+                                        if (((h = this.qcj_1), (this.rcj_1 = h), (this.w9_1 = 5), (t = Xi(this.pcj_1, this.rcj_1, this.hcj_1, this)) === D())) return t;
                                         continue t;
                                     case 5:
-                                        return null == t ? null : mt(t);
+                                        return null == t ? null : St(t);
                                     case 6:
                                         throw this.z9_1;
                                 }
                             } catch (t) {
-                                var e = t;
-                                if (6 === this.x9_1) throw e;
-                                (this.w9_1 = this.x9_1), (this.z9_1 = e);
+                                var n = t;
+                                if (6 === this.x9_1) throw n;
+                                (this.w9_1 = this.x9_1), (this.z9_1 = n);
                             }
                     }),
-                    (S(_s).oa = function () {
+                    (J(ls).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = Si("spki", qt(this.xbs_1), J, this)) === T())) return t;
+                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = Pi("spki", Et(this.bck_1), this.cck_1, this)) === D())) return t;
                                         continue t;
                                     case 1:
-                                        return null == t ? null : new vs(t);
+                                        return null == t ? null : new Rs(t);
                                     case 2:
                                         throw this.z9_1;
                                 }
@@ -1701,7 +1781,7 @@
                                 (this.w9_1 = this.x9_1), (this.z9_1 = i);
                             }
                     }),
-                    (S(us).oa = function () {
+                    (J(vs).oa = function () {
                         var t,
                             i,
                             s = this.y9_1;
@@ -1709,44 +1789,44 @@
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 4), (this.w9_1 = 1), (s = Si("spki", qt(this.ibt_1), J, this)) === T())) return s;
+                                        if (((this.x9_1 = 4), (this.w9_1 = 1), (s = Pi("spki", Et(this.nck_1), this.ock_1, this)) === D())) return s;
                                         continue t;
                                     case 1:
-                                        this.jbt_1 = s;
+                                        this.pck_1 = s;
+                                        var c;
+                                        if (null == this.pck_1) c = null;
+                                        else c = new Rs(this.pck_1);
+                                        this.qck_1 = c;
                                         var h;
-                                        if (null == this.jbt_1) h = null;
-                                        else h = new vs(this.jbt_1);
-                                        this.kbt_1 = h;
-                                        var n;
-                                        if (null == this.kbt_1) return null;
-                                        if (((n = this.kbt_1), (this.lbt_1 = n), (this.w9_1 = 2), (t = this.lbt_1), (i = this), (s = Pi(t.wbi_1, "jwk", i)) === T())) return s;
+                                        if (null == this.qck_1) return null;
+                                        if (((h = this.qck_1), (this.rck_1 = h), (this.w9_1 = 2), (t = this.rck_1), (i = this), (s = Li(t.zc9_1, "jwk", i)) === D())) return s;
                                         continue t;
                                     case 2:
-                                        this.mbt_1 = s;
-                                        var e = { crv: "P-256", ext: !0, key_opts: ["deriveBits"], kty: "EC" };
-                                        if (((e.d = kt(this.hbt_1, !0)), (e.x = this.mbt_1.x), (e.y = this.mbt_1.y), (this.nbt_1 = e), (this.w9_1 = 3), (s = Ji("jwk", this.nbt_1, "deriveBits", this)) === T())) return s;
+                                        this.sck_1 = s;
+                                        var n = { crv: "P-256", ext: !0, kty: "EC" };
+                                        if (((n.d = Ct(this.mck_1, !0)), (n.x = this.sck_1.x), (n.y = this.sck_1.y), (this.tck_1 = n), (this.w9_1 = 3), (s = Wi("jwk", this.tck_1, this.ock_1, this)) === D())) return s;
                                         continue t;
                                     case 3:
-                                        return null == s ? null : new ds(s);
+                                        return null == s ? null : new ks(s);
                                     case 4:
                                         throw this.z9_1;
                                 }
                             } catch (t) {
-                                var r = t;
-                                if (4 === this.x9_1) throw r;
-                                (this.w9_1 = this.x9_1), (this.z9_1 = r);
+                                var e = t;
+                                if (4 === this.x9_1) throw e;
+                                (this.w9_1 = this.x9_1), (this.z9_1 = e);
                             }
                     }),
-                    (S(cs).oa = function () {
+                    (J(xs).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = Ci(this.xbt_1.qbn_1, bt(this.ybt_1), this)) === T())) return t;
+                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = Ii(this.dcl_1.tce_1, xt(this.ecl_1), this)) === D())) return t;
                                         continue t;
                                     case 1:
-                                        return null == t ? null : mt(t);
+                                        return null == t ? null : St(t);
                                     case 2:
                                         throw this.z9_1;
                                 }
@@ -1756,13 +1836,13 @@
                                 (this.w9_1 = this.x9_1), (this.z9_1 = i);
                             }
                     }),
-                    (S(os).oa = function () {
+                    (J(ys).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = Fi(this.ibu_1.wbi_1, bt(this.kbu_1), bt(this.jbu_1), this)) === T())) return t;
+                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = Ti(this.ocl_1.zc9_1, xt(this.qcl_1), xt(this.pcl_1), this)) === D())) return t;
                                         continue t;
                                     case 1:
                                         return null != t && t;
@@ -1775,16 +1855,16 @@
                                 (this.w9_1 = this.x9_1), (this.z9_1 = i);
                             }
                     }),
-                    (S(as).oa = function () {
+                    (J(zs).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = Ai(this.abq_1, this)) === T())) return t;
+                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = Ni(this.dch_1, this)) === D())) return t;
                                         continue t;
                                     case 1:
-                                        return null == t ? null : new ls(t);
+                                        return null == t ? null : new $s(t);
                                     case 2:
                                         throw this.z9_1;
                                 }
@@ -1794,45 +1874,45 @@
                                 (this.w9_1 = this.x9_1), (this.z9_1 = i);
                             }
                     }),
-                    (S(bs).zbd = function (t) {
-                        var i = new hs(this, t);
-                        return (i.y9_1 = K), (i.z9_1 = null), i.oa();
+                    (J(ds).cc5 = function (t, i) {
+                        var s = new as(this, t, i);
+                        return (s.y9_1 = W), (s.z9_1 = null), s.oa();
                     }),
-                    (S(bs).abe = function (t) {
-                        var i = new ns(this, t);
-                        return (i.y9_1 = K), (i.z9_1 = null), i.oa();
+                    (J(ds).dc5 = function (t) {
+                        var i = new os(this, t);
+                        return (i.y9_1 = W), (i.z9_1 = null), i.oa();
                     }),
-                    (S(bs).hbd = function (t, i, s) {
-                        var h = new es(this, t, i, s);
-                        return (h.y9_1 = K), (h.z9_1 = null), h.oa();
+                    (J(ds).kc4 = function (t, i, s) {
+                        var c = new fs(this, t, i, s);
+                        return (c.y9_1 = W), (c.z9_1 = null), c.oa();
                     }),
-                    (S(bs).xbd = function (t, i, s) {
-                        var h = new rs(this, t, i, s);
-                        return (h.y9_1 = K), (h.z9_1 = null), h.oa();
+                    (J(ds).ac5 = function (t, i, s) {
+                        var c = new ws(this, t, i, s);
+                        return (c.y9_1 = W), (c.z9_1 = null), c.oa();
                     }),
-                    (S(bs).dbe = function (t, i) {
-                        var s = new _s(this, t, i);
-                        return (s.y9_1 = K), (s.z9_1 = null), s.oa();
+                    (J(ds).gc5 = function (t, i, s) {
+                        var c = new ls(this, t, i, s);
+                        return (c.y9_1 = W), (c.z9_1 = null), c.oa();
                     }),
-                    (S(bs).ebe = function (t, i, s) {
-                        var h = new us(this, t, i, s);
-                        return (h.y9_1 = K), (h.z9_1 = null), h.oa();
+                    (J(ds).hc5 = function (t, i, s, c) {
+                        var h = new vs(this, t, i, s, c);
+                        return (h.y9_1 = W), (h.z9_1 = null), h.oa();
                     }),
-                    (S(bs).ybd = function (t, i) {
+                    (J(ds).bc5 = function (t, i) {
                         return (function (t, i, s) {
-                            var h = new as(t, i, s);
-                            return (h.y9_1 = K), (h.z9_1 = null), h.oa();
-                        })(this, qt(t), i);
+                            var c = new zs(t, i, s);
+                            return (c.y9_1 = W), (c.z9_1 = null), c.oa();
+                        })(this, Et(t), i);
                     }),
-                    (S(bs).fbe = function (t, i, s) {
-                        var h = new cs(this, t, i, s);
-                        return (h.y9_1 = K), (h.z9_1 = null), h.oa();
+                    (J(ds).ic5 = function (t, i, s) {
+                        var c = new xs(this, t, i, s);
+                        return (c.y9_1 = W), (c.z9_1 = null), c.oa();
                     }),
-                    (S(bs).gbe = function (t, i, s, h) {
-                        var n = new os(this, t, i, s, h);
-                        return (n.y9_1 = K), (n.z9_1 = null), n.oa();
+                    (J(ds).jc5 = function (t, i, s, c) {
+                        var h = new ys(this, t, i, s, c);
+                        return (h.y9_1 = W), (h.z9_1 = null), h.oa();
                     }),
-                    (S(fs).oa = function () {
+                    (J(gs).oa = function () {
                         var t,
                             i,
                             s = this.y9_1;
@@ -1840,33 +1920,33 @@
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = this.tbu_1), (i = this), (s = Ki(t.fbd_1, "raw", i)) === T())) return s;
+                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = this.zcl_1), (i = this), (s = Di(t.ic4_1, "raw", i)) === D())) return s;
                                         continue t;
                                     case 1:
-                                        return mt(s);
+                                        return St(s);
                                     case 2:
                                         throw this.z9_1;
                                 }
                             } catch (t) {
-                                var h = t;
-                                if (2 === this.x9_1) throw h;
-                                (this.w9_1 = this.x9_1), (this.z9_1 = h);
+                                var c = t;
+                                if (2 === this.x9_1) throw c;
+                                (this.w9_1 = this.x9_1), (this.z9_1 = c);
                             }
                     }),
-                    (S(ls).gbd = function (t) {
-                        var i = new fs(this, t);
-                        return (i.y9_1 = K), (i.z9_1 = null), i.oa();
+                    (J($s).jc4 = function (t) {
+                        var i = new gs(this, t);
+                        return (i.y9_1 = W), (i.z9_1 = null), i.oa();
                     }),
-                    (S(ws).oa = function () {
+                    (J(bs).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = gi(this.cbv_1, this)) === T())) return t;
+                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = qi(this.icm_1, this)) === D())) return t;
                                         continue t;
                                     case 1:
-                                        return mt(t);
+                                        return St(t);
                                     case 2:
                                         throw this.z9_1;
                                 }
@@ -1876,20 +1956,20 @@
                                 (this.w9_1 = this.x9_1), (this.z9_1 = i);
                             }
                     }),
-                    (S(vs).gbd = function (t) {
-                        var i = new ws(this, t);
-                        return (i.y9_1 = K), (i.z9_1 = null), i.oa();
+                    (J(Rs).jc4 = function (t) {
+                        var i = new bs(this, t);
+                        return (i.y9_1 = W), (i.z9_1 = null), i.oa();
                     }),
-                    (S(xs).oa = function () {
+                    (J(ps).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
                                 switch (this.w9_1) {
                                     case 0:
-                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = pi(this.lbv_1, this)) === T())) return t;
+                                        if (((this.x9_1 = 2), (this.w9_1 = 1), (t = Si(this.rcm_1, this)) === D())) return t;
                                         continue t;
                                     case 1:
-                                        return mt(t);
+                                        return St(t);
                                     case 2:
                                         throw this.z9_1;
                                 }
@@ -1899,49 +1979,53 @@
                                 (this.w9_1 = this.x9_1), (this.z9_1 = i);
                             }
                     }),
-                    (S(ds).gbd = function (t) {
-                        var i = new xs(this, t);
-                        return (i.y9_1 = K), (i.z9_1 = null), i.oa();
+                    (J(ks).jc4 = function (t) {
+                        var i = new ps(this, t);
+                        return (i.y9_1 = W), (i.z9_1 = null), i.oa();
                     }),
-                    X(S(Wt), "name", S(Wt).z2),
-                    X(S(Wt), "ordinal", S(Wt).a3),
-                    X(S(Dt), "name", S(Dt).z2),
-                    X(S(Dt), "ordinal", S(Dt).a3),
-                    (S(yi).vbi = function (t, i) {
+                    T(J(Dt), "name", J(Dt).z2),
+                    T(J(Dt), "ordinal", J(Dt).a3),
+                    T(J(Qt), "name", J(Qt).z2),
+                    T(J(Qt), "ordinal", J(Qt).a3),
+                    (J(mi).yc9 = function (t, i) {
                         var s;
-                        return (t = t === J ? 1 : t), i === J ? (this.ubi(t), (s = K)) : (s = i.ubi.call(this, t)), s;
+                        return (t = t === F ? 1 : t), i === F ? (this.xc9(t), (s = W)) : (s = i.xc9.call(this, t)), s;
                     }),
-                    (S(bs).bbe = function (t, i, s) {
-                        var h = new ri(this, t, i, s);
-                        return (h.y9_1 = K), (h.z9_1 = null), h.oa();
+                    (J(ds).ec5 = function (t, i, s) {
+                        var c = new ai(this, t, i, s);
+                        return (c.y9_1 = W), (c.z9_1 = null), c.oa();
                     }),
-                    (S(bs).cbe = function (t, i, s) {
-                        var h = new _i(this, t, i, s);
-                        return (h.y9_1 = K), (h.z9_1 = null), h.oa();
+                    (J(ds).fc5 = function (t, i, s) {
+                        var c = new oi(this, t, i, s);
+                        return (c.y9_1 = W), (c.z9_1 = null), c.oa();
                     }),
-                    (q = new yi()),
-                    (k = new bs()),
-                    ys(t),
-                    (t.$jsExportAll$ = ys),
+                    (S = new mi()),
+                    (E = new ds()),
+                    ms(t),
+                    (t.$jsExportAll$ = ms),
                     (t.$_$ = t.$_$ || {}),
-                    (t.$_$.a = St),
-                    (t.$_$.b = jt),
-                    (t.$_$.c = Nt),
-                    (t.$_$.d = Tt),
-                    (t.$_$.e = ss),
-                    (t.$_$.f = ci),
-                    (t.$_$.g = oi),
-                    (t.$_$.h = ei),
-                    (t.$_$.i = q),
-                    (t.$_$.j = Jt),
-                    (t.$_$.k = Ft),
-                    (t.$_$.l = It),
-                    (t.$_$.m = function () {
-                        return null == m && new wi(), m;
+                    (t.$_$.a = At),
+                    (t.$_$.b = Jt),
+                    (t.$_$.c = Ut),
+                    (t.$_$.d = Lt),
+                    (t.$_$.e = us),
+                    (t.$_$.f = xi),
+                    (t.$_$.g = yi),
+                    (t.$_$.h = ui),
+                    (t.$_$.i = vi),
+                    (t.$_$.j = function () {
+                        return wi(), m;
                     }),
-                    (t.$_$.n = k);
+                    (t.$_$.k = S),
+                    (t.$_$.l = Kt),
+                    (t.$_$.m = Xt),
+                    (t.$_$.n = Mt),
+                    (t.$_$.o = function () {
+                        return null == q && new bi(), q;
+                    }),
+                    (t.$_$.p = E);
             })(t.exports, s(519039), s(776307), s(350269), s(115754), s(761256));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-2054f47e.9e9dd08a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-2054f47e.8ea0660a.js.map

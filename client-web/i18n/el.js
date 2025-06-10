@@ -8,8 +8,12 @@
                     return a.e("i18n/emoji-el").then(a.t.bind(a, 446821, 23));
                 },
             });
-            function f(e, c, a) {
+            function t(e, c, a) {
                 return "one" == (1 == e ? "one" : "other") ? c : a;
+            }
+            function f(e, c, a) {
+                return "one" == ((n = e), (t = !String(n).split(".")[1]), 1 == n && t ? "one" : "other") ? c : a;
+                var n, t;
             }
             n("c39b0e24", "X"),
                 n("jb38600c", "Καμία"),
@@ -608,11 +612,11 @@
                 n("h5e38204", "Συνομιλία"),
                 n("h7d5d9fa", "Beta"),
                 n("ga169e1b", function (e) {
-                    return "Προσωπικά μηνύματα (δεν έχουν αναγνωστεί: " + e.count + " συζ" + f(e.count, "ήτηση", "ητήσεις") + ")";
+                    return "Προσωπικά μηνύματα (δεν έχουν αναγνωστεί: " + e.count + " συζ" + t(e.count, "ήτηση", "ητήσεις") + ")";
                 }),
                 n("d83682ec", "Αρχική σελίδα (Νέες μη αναγνωσμένες αναρτήσεις)"),
                 n("e1249849", function (e) {
-                    return "Ειδοποιήσεις (δεν έχουν αναγνωστεί: " + e.count + " " + f(e.count, "notification", "ειδοποιήσεις") + ")";
+                    return "Ειδοποιήσεις (δεν έχουν αναγνωστεί: " + e.count + " " + t(e.count, "notification", "ειδοποιήσεις") + ")";
                 }),
                 n("c0b786ee", "Αναζήτηση και εξερεύνηση"),
                 n("bb967f9e", "Βίντεο"),
@@ -625,7 +629,7 @@
                 }),
                 n("j62f43a6", "Προβολή λογαριασμών που έχουν ανατεθεί"),
                 n("d4c52015", function (e) {
-                    return e.count + " εκκρεμής λογαριασμός που έχει ανατεθεί πρ" + f(e.count, "όσκληση", "οσκλήσεις");
+                    return e.count + " εκκρεμής λογαριασμός που έχει ανατεθεί πρ" + t(e.count, "όσκληση", "οσκλήσεις");
                 }),
                 n("b8e1d524", "Λογαριασμοί"),
                 n("gef27c4c", "Μενού λογαριασμού"),
@@ -648,7 +652,7 @@
                     return e.count + " άτομα";
                 }),
                 n("b93ba92d", function (e) {
-                    return e.peopleCount + " άτομ" + f(e.peopleCount, "ο", "α");
+                    return e.peopleCount + " άτομ" + t(e.peopleCount, "ο", "α");
                 }),
                 n("ae2205d2", "Ακολουθείτε ο ένας τον άλλον"),
                 n("fd06b02f", function (e) {
@@ -1260,7 +1264,7 @@
                 n("e18cb87c", "Εξηγήστε αυτή την ανάρτηση"),
                 n("ffe16626", "Το φίλτρο απαντήσεων είναι ενεργοποιημένο."),
                 n("jc81f6a7", function (e) {
-                    return e.count + " προβολ" + f(e.count, "ή", "ές");
+                    return e.count + " προβολ" + t(e.count, "ή", "ές");
                 }),
                 n("g521abc6", "Grok, ανάλυση!"),
                 n("a09331e0", "Σχετικά Άρθρα"),
@@ -1273,7 +1277,7 @@
                     return "" + e.displayCount;
                 }),
                 n("aa037e65", function (e) {
-                    return "Προβολ" + f(e.count, "ή", "ές");
+                    return "Προβολ" + t(e.count, "ή", "ές");
                 }),
                 n("b8f3500a", "Εμφάνιση νήματος Tweet στην προβολή ανάγνωσης"),
                 n("fc7db594", " Περίληψη προφίλ"),
@@ -1308,7 +1312,7 @@
                 n("c74e87e0", "Αυτό το αρχείο είναι πολύ μεγάλο. Παρακαλώ επιλέξτε ένα μικρότερο αρχείο."),
                 n("bea50a2a", "Αυτή η μορφή αρχείου δεν υποστηρίζεται."),
                 n("j77292b7", function (e) {
-                    return "Παρακαλούμε επιλέξτε μόνο έως " + e.count + " αρχεί" + f(e.count, "ο", "α");
+                    return "Παρακαλούμε επιλέξτε μόνο έως " + e.count + " αρχεί" + t(e.count, "ο", "α");
                 }),
                 n("cbc8fed4", "Ήταν αυτή η μετάφραση ακριβής; Δώστε μας σχόλια για να μπορέσουμε να βελτιωθούμε:"),
                 n("d56779a2", "εύκολη στην κατανόηση"),
@@ -1430,25 +1434,25 @@
                     return "" + e.displayCount;
                 }),
                 n("f23d99b0", function (e) {
-                    return "Σελιδοδείκτ" + f(e.count, "η", "ε") + "ς";
+                    return "Σελιδοδείκτ" + t(e.count, "η", "ε") + "ς";
                 }),
                 n("e8866a55", function (e) {
                     return "" + e.displayCount;
                 }),
                 n("eb3abe45", function (e) {
-                    return "Επισ" + f(e.count, "ήμανση", "ημάνσεις") + ' "Μου αρέσει"';
+                    return "Επισ" + t(e.count, "ήμανση", "ημάνσεις") + ' "Μου αρέσει"';
                 }),
                 n("eff958fb", function (e) {
                     return "" + e.displayCount;
                 }),
                 n("i5a8c515", function (e) {
-                    return "Παρ" + f(e.count, "άθεση", "αθέσεις");
+                    return "Παρ" + t(e.count, "άθεση", "αθέσεις");
                 }),
                 n("dd77f9fb", function (e) {
                     return "" + e.displayCount;
                 }),
                 n("a755b81b", function (e) {
-                    return "Αναδημοσ" + f(e.count, "ίευση", "ιεύσεις");
+                    return "Αναδημοσ" + t(e.count, "ίευση", "ιεύσεις");
                 }),
                 n("e9f1fbcc", "Δεν υπάρχει τίποτα να δείτε εδώ, ακόμη"),
                 n("a3b80be6", "Ελέγξτε ξανά αργότερα για να δείτε αναρτήσεις σχετικά με αυτό το θέμα."),
@@ -1536,7 +1540,7 @@
                     return "" + e.formattedCount;
                 }),
                 n("cface2d1", function (e) {
-                    return "Μέλ" + f(e.count, "ος", "η");
+                    return "Μέλ" + t(e.count, "ος", "η");
                 }),
                 n("b5334780", "Εκκρεμεί"),
                 n("b171d7c4", "Γίνετε μέλος"),
@@ -1632,17 +1636,17 @@
                     return "" + e.formattedCount;
                 }),
                 n("h9f711f0", function (e) {
-                    return "Ακόλουθο" + f(e.count, "ς", "ι");
+                    return "Ακόλουθο" + t(e.count, "ς", "ι");
                 }),
                 n("jceadc3e", "Χωρίς τίτλο"),
                 n("a1d5303c", "Ιδιωτική"),
                 n("cc8f8a80", "Εκτός λίστας"),
                 n("c33a97d6", "Δημόσιο"),
                 n("i73fff1b", function (e) {
-                    return "Εμφάνιση " + e.count + " αν" + f(e.count, "άρτηση", "αρτήσεις");
+                    return "Εμφάνιση " + e.count + " αν" + t(e.count, "άρτηση", "αρτήσεις");
                 }),
                 n("a682906d", function (e) {
-                    return e.count + " επισ" + f(e.count, "ήμανση", "ημάνσεις") + ' "Μου αρέσει" απομένουν';
+                    return e.count + " επισ" + t(e.count, "ήμανση", "ημάνσεις") + ' "Μου αρέσει" απομένουν';
                 }),
                 n("g566e973", function (e) {
                     return e.jobCount + " ανοιχτές εργασίες" + e.tcc_organization_open_job_count;
@@ -1761,7 +1765,7 @@
                 n("g345246c", "Αυτό είναι ένα δημοσιευμένο άρθρο, ένας νέος τρόπος να γράφεις για το Χ."),
                 n("b14efa0a", "Εικόνα εξωφύλλου άρθρου"),
                 n("afdccedb", function (e) {
-                    return "Εμφάνιση " + e.displayCount + " απ" + f(e.count, "άντηση", "αντήσεις");
+                    return "Εμφάνιση " + e.displayCount + " απ" + t(e.count, "άντηση", "αντήσεις");
                 }),
                 n("bdba3e1a", "Ενεργοποίηση ειδοποιήσεων ανάρτησης"),
                 n("c4da7d28", "Απενεργοποίηση ειδοποιήσεων ανάρτησης"),
@@ -1969,10 +1973,10 @@
                 n("ifea3114", "Κοινοποίηση"),
                 n("b384f696", "Συνιστούμε έναν τίτλο μεταξύ 50-70 χαρακτήρων"),
                 n("a7da0adb", function (e) {
-                    return e.count + " λέξ" + f(e.count, "η", "εις");
+                    return e.count + " λέξ" + t(e.count, "η", "εις");
                 }),
                 n("aea1d455", function (e) {
-                    return e.count + " λεπτ" + f(e.count, "ό", "ά");
+                    return e.count + " λεπτ" + t(e.count, "ό", "ά");
                 }),
                 n("df898d71", function (e) {
                     return "Χρόνος ανάγνωσης " + e.readingTimeValue;
@@ -2047,18 +2051,18 @@
                 n("e289d950", "Θα πρέπει να συνδεθείτε για να μπορέσετε να κοινοποιήσετε αυτήν την ανάρτηση."),
                 n("d28215f0", "Δυστυχώς, δεν επιτρέπονται ψηφοφορίες στις κοινότητες!"),
                 n("ec2fc089", function (e) {
-                    return "Έγινε αποστολή αν" + f(e.numOfTweets, "άρτηση", "αρτήσεις") + " ήταν σε " + e.communityName;
+                    return "Έγινε αποστολή αν" + t(e.numOfTweets, "άρτηση", "αρτήσεις") + " ήταν σε " + e.communityName;
                 }),
                 n("c7152355", function (e) {
-                    return "Μην ξεχάσετε να κάνετε τ" + f(e.numberOfImages, "ην εικόνα", "ις εικόνες") + " σας προσβάσιμη(ες)";
+                    return "Μην ξεχάσετε να κάνετε τ" + t(e.numberOfImages, "ην εικόνα", "ις εικόνες") + " σας προσβάσιμη(ες)";
                 }),
                 n("ffa5562a", "Οι καλές περιγραφές εικόνων είναι συνοπτικές αλλά λεπτομερείς. Φροντίστε να συνοψίσετε ή να γράψετε οποιοδήποτε κείμενο στην ίδια την εικόνα."),
                 n("a2d3facd", function (e) {
-                    return "Το δικό σας περιγραφ" + f(e.numberOfImages, "ή σας κάνει", "ές σας κάνουν") + " X είναι προσβάσιμο σε άτομα με αναπηρίες και σε όλους όσους θέλουν περισσότερο περιεχόμενο.";
+                    return "Το δικό σας περιγραφ" + t(e.numberOfImages, "ή σας κάνει", "ές σας κάνουν") + " X είναι προσβάσιμο σε άτομα με αναπηρίες και σε όλους όσους θέλουν περισσότερο περιεχόμενο.";
                 }),
                 n("cc6d0a48", "Μπορείτε να απενεργοποιήσετε αυτήν την υπενθύμιση στις Ρυθμίσεις προσβασιμότητας."),
                 n("j499fbcb", function (e) {
-                    return "Προσθήκη περιγραφ" + f(e.numberOfImages, "ής", "ών");
+                    return "Προσθήκη περιγραφ" + t(e.numberOfImages, "ής", "ών");
                 }),
                 n("bb8170da", "Όχι τώρα"),
                 n("h4dd544e", "Η ανάρτησή σας εστάλη."),
@@ -2120,14 +2124,14 @@
                 n("cce30dcc", "Προσθήκη ετικέτας τοποθεσίας"),
                 n("ee016dd6", "Η μεταφόρτωση βίντεο μεγάλης διάρκειας θα διαρκέσει λίγη ώρα. Διατηρήστε ανοιχτή την καρτέλα του προγράμματος περιήγησης για να αποφύγετε διακοπές στη μεταφόρτωση."),
                 n("b7d8e3f1", function (e) {
-                    return e.numberOfAltTextEntries + " εικόνα περιγραφ" + f(e.numberOfAltTextEntries, "ή", "ές");
+                    return e.numberOfAltTextEntries + " εικόνα περιγραφ" + t(e.numberOfAltTextEntries, "ή", "ές");
                 }),
                 n("d1175c78", "Προσθήκη ατόμων με ετικέτα"),
                 n("b2943227", function (e) {
-                    return "Μεταφόρτωση υποτίτλου αρχεί" + f(e.numberOfVideos, "ο", "α") + " (.srt)";
+                    return "Μεταφόρτωση υποτίτλου αρχεί" + t(e.numberOfVideos, "ο", "α") + " (.srt)";
                 }),
                 n("d0afbb37", function (e) {
-                    return e.numberOfSubtitles + " υπότιτλος αρχεί" + f(e.numberOfSubtitles, "ο", "α");
+                    return e.numberOfSubtitles + " υπότιτλος αρχεί" + t(e.numberOfSubtitles, "ο", "α");
                 }),
                 n("e349147c", "Τι συμβαίνει;"),
                 n("b4481d6c", "Μοιραστείτε τις σκέψεις σας..."),
@@ -2146,7 +2150,7 @@
                     return "" + e.formattedCount;
                 }),
                 n("a7daec1e", function (e) {
-                    return "Άτομ" + f(e.count, "ο", "α");
+                    return "Άτομ" + t(e.count, "ο", "α");
                 }),
                 n("f0598964", "Θέλετε να κοινοποιήσετε σε λιγότερο κόσμο;"),
                 n("e1ae1c0a", "Ο Κύκλος σάς επιτρέπει να στέλνετε αναρτήσεις μόνο στα άτομα που επιλέγετε."),
@@ -2217,7 +2221,7 @@
                     return e.userOneName + " " + e.userTwoName + " και " + e.userThreeName;
                 }),
                 n("h758cd23", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " και " + f(e.othersCount, "1 ακόμη χρήστη", e.othersCount + " ακόμη χρήστες");
+                    return e.userOneName + " " + e.userTwoName + " και " + t(e.othersCount, "1 ακόμη χρήστη", e.othersCount + " ακόμη χρήστες");
                 }),
                 n("fba61ad6", function (e) {
                     return "" + e.userName;
@@ -2229,7 +2233,7 @@
                     return e.userOneName + ", " + e.userTwoName + " και " + e.userThreeName;
                 }),
                 n("b8168f25", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " και " + f(e.othersCount, "1", "" + e.othersCount) + " ακόμη";
+                    return e.userOneName + " " + e.userTwoName + " και " + t(e.othersCount, "1", "" + e.othersCount) + " ακόμη";
                 }),
                 n("ab67a7ac", function (e) {
                     return "" + e.userName;
@@ -2244,7 +2248,7 @@
                 }),
                 n("dcbb6a0b", "Συνδρομητές του"),
                 n("ba74e38b", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " και " + f(e.othersCount, "1 ακόμη", e.othersCount + " άλλοι");
+                    return e.userOneName + " " + e.userTwoName + " και " + t(e.othersCount, "1 ακόμη", e.othersCount + " άλλοι");
                 }),
                 n("c65916af", "Συνδρομητές"),
                 n("g5c5ebb8", function (e) {
@@ -2278,13 +2282,13 @@
                     return "" + e.trustedFriendsTweetOwner;
                 }),
                 n("a035ba65", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " και " + f(e.othersCount, "1 άλλος", e.othersCount + " άλλοι");
+                    return e.userOneName + " " + e.userTwoName + " και " + t(e.othersCount, "1 άλλος", e.othersCount + " άλλοι");
                 }),
                 n("e4c52c45", function (e) {
                     return "" + e.trustedFriendsTweetOwner;
                 }),
                 n("baf2c639", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " και " + f(e.othersCount, "1 άλλος", e.othersCount + " άλλοι");
+                    return e.userOneName + " " + e.userTwoName + " και " + t(e.othersCount, "1 άλλος", e.othersCount + " άλλοι");
                 }),
                 n("j8e134e5", function (e) {
                     return "" + e.trustedFriendsTweetOwner;
@@ -2317,10 +2321,10 @@
                 n("ceb1ad26", "Σας παρουσιάζουμε τα βίντεο με δυνατότητα λήψης"),
                 n("ea97bc08", 'Μεταβείτε εκτός σύνδεσης ή κάντε ρεμίξ! Οι χρήστες Premium έχουν τώρα τη δυνατότητα να κατεβάζουν και να αναδημιουργούν το περιεχόμενό σας. Αν προτιμάτε τα βίντεό σας να μην μπορούν να μεταφορτωθούν, πατήστε "Επεξεργασία" στο βίντεό σας. Το περιεχόμενό σας, οι κανόνες σας.'),
                 n("e6042757", function (e) {
-                    return e.minutes + " λεπτ" + f(e.minutes, "ό", "ά") + " και " + e.seconds + " δευτερόλεπτ" + f(e.seconds, "ο", "α") + "απομένουν για επεξεργασία της ανάρτησης";
+                    return e.minutes + " λεπτ" + t(e.minutes, "ό", "ά") + " και " + e.seconds + " δευτερόλεπτ" + t(e.seconds, "ο", "α") + "απομένουν για επεξεργασία της ανάρτησης";
                 }),
                 n("a4e39717", function (e) {
-                    return e.minutes + " λεπτ" + f(e.minutes, "ό", "ά") + " απομένουν για επεξεργασία της ανάρτησης";
+                    return e.minutes + " λεπτ" + t(e.minutes, "ό", "ά") + " απομένουν για επεξεργασία της ανάρτησης";
                 }),
                 n("c55eed72", "Απάντηση σε"),
                 n("caca3102", "Άλλοι σε αυτήν τη συζήτηση"),
@@ -2353,7 +2357,7 @@
                 n("j74e5dd4", "Η ανάρτηση στην οποία προσπαθείτε να απαντήσετε έχει διαγραφεί"),
                 n("c5ceafc8", "Απάντηση"),
                 n("f501ba43", function (e) {
-                    return e.count + " περισσότερ" + f(e.count, "η ανάρτηση", "ες αναρτήσεις");
+                    return e.count + " περισσότερ" + t(e.count, "η ανάρτηση", "ες αναρτήσεις");
                 }),
                 n("b321d0cc", "Φόρτωση εικόνων"),
                 n("abd649ce", "Απόρριψη μη απεσταλμένης ανάρτησης"),
@@ -2539,7 +2543,7 @@
                     return "" + e.displayCoins;
                 }),
                 n("g62dcfbc", function (e) {
-                    return "Ν" + f(e.count, "όμισμ", "ομίσματ") + "α";
+                    return "Ν" + t(e.count, "όμισμ", "ομίσματ") + "α";
                 }),
                 n("be059f7e", "Προσεγγίστε έως και 100k περισσότερους χρήστες τώρα"),
                 n("c34f845e", "Δοκιμάστε να ενισχύσετε αυτή την ανάρτηση!"),
@@ -2575,7 +2579,7 @@
                 n("d555d7e0", "Ο νέος κωδικός πρόσβασης δεν μπορεί να είναι ίδιος με τον ισχύοντα κωδικό πρόσβασής σας."),
                 n("fa8af9ae", "Οι κωδικοί πρόσβασης δεν ταιριάζουν."),
                 n("a03f5c73", function (e) {
-                    return e.applicationCount + " εφαρμογ" + f(e.applicationCount, "ή", "ές");
+                    return e.applicationCount + " εφαρμογ" + t(e.applicationCount, "ή", "ές");
                 }),
                 n("j25601d9", "Μάθετε περισσότερα"),
                 n("cb841d56", "Αλλαγή τηλεφώνου"),
@@ -2736,10 +2740,10 @@
                     return e.price + " / έτος";
                 }),
                 n("i57aeafb", function (e) {
-                    return "Για το" + f(e.duration, "ν πρώτο μήνα", "υς πρώτους " + e.duration + " μήνες") + ", στη συνέχεια " + e.standardPrice + " χρεώνεται μηνιαίως";
+                    return "Για το" + t(e.duration, "ν πρώτο μήνα", "υς πρώτους " + e.duration + " μήνες") + ", στη συνέχεια " + e.standardPrice + " χρεώνεται μηνιαίως";
                 }),
                 n("ae3e3723", function (e) {
-                    return "Για τ" + f(e.duration, "ο πρώτο έτος", "α πρώτα " + e.duration + " έτη") + ", στη συνέχεια " + e.standardPrice + " χρεώνεται ετησίως";
+                    return "Για τ" + t(e.duration, "ο πρώτο έτος", "α πρώτα " + e.duration + " έτη") + ", στη συνέχεια " + e.standardPrice + " χρεώνεται ετησίως";
                 }),
                 n("ade4c757", function (e) {
                     return "Τότε " + e.price + " / μήνα";
@@ -2771,10 +2775,10 @@
                 n("fb3c7168", "Οι φάκελοι σελιδοδεικτών σας"),
                 n("b346bc12", "Σημάδι ελέγχου"),
                 n("je8143e1", function (e) {
-                    return "Αποκτήστε " + e.percentage + " % έκπτωση X " + e.productName + " για " + f(e.duration, "ένας μήνα", e.duration + " μήνε") + "ς";
+                    return "Αποκτήστε " + e.percentage + " % έκπτωση X " + e.productName + " για " + t(e.duration, "ένας μήνα", e.duration + " μήνε") + "ς";
                 }),
                 n("j5847735", function (e) {
-                    return "Αποκτήστε " + e.percentage + " % έκπτωση X " + e.productName + " για " + f(e.duration, "ένα έτος", e.duration + " έτη");
+                    return "Αποκτήστε " + e.percentage + " % έκπτωση X " + e.productName + " για " + t(e.duration, "ένα έτος", e.duration + " έτη");
                 }),
                 n("da3431f9", function (e) {
                     return "Αυτή η έκπτωση είναι ένα μικρό δώρο από εμάς, σε περίπτωση που θέλετε να κρατήσετε το X " + e.productName + " για λίγο ακόμα!";
@@ -3036,15 +3040,15 @@
                 n("b956c04a", "Είσαι σίγουροι ότι θέλετε να διαγράψετε το διευρυμένο βιογραφικό"),
                 n("ifb23caa", "Διαγραφή του διευρυμένου βιογραφικού θα το αφαιρέσει από το προφίλ."),
                 n("c2333081", function (e) {
-                    return e.count + " χαρακτήρ" + f(e.count, "α", "ε") + "ς";
+                    return e.count + " χαρακτήρ" + t(e.count, "α", "ε") + "ς";
                 }),
                 n("a2b8c54c", "Διαγράφηκε"),
                 n("a9cc8f96", "Υπέρβαση των μέγιστων χαρακτήρων"),
                 n("eb7710f1", function (e) {
-                    return e.years + " έτ" + f(e.years, "ος", "η");
+                    return e.years + " έτ" + t(e.years, "ος", "η");
                 }),
                 n("bfc38bb5", function (e) {
-                    return e.months + " μήν" + f(e.months, "α", "ες");
+                    return e.months + " μήν" + t(e.months, "α", "ες");
                 }),
                 n("h6a724ac", "Είστε σίγουρος ότι θέλετε να το διαγράψετε αυτό;"),
                 n("f94aacae", "Η διαγραφή θα το αφαιρέσει από το προφίλ σας."),
@@ -3176,7 +3180,7 @@
                 n("c349b958", "Πρόσκληση ενός μέλους"),
                 n("e177f72a", "Προσκαλέστε άλλους να ενεργούν εκ μέρους του λογαριασμού σας και να διαχειρίζονται τους ρόλους του λογαριασμού. Τα μέλη μπορούν να στέλνουν Προσωπικά μηνύματα, να δημοσιεύουν αναρτήσεις και να δημιουργούν λίστες, καθώς και να τις προβάλλουν."),
                 n("cd5c5e73", function (e) {
-                    return "Μπορείτε να έχετε μόνο " + e.numDelegatesLabel + " αν" + f(e.numDelegates, "άθεση", "αθέσεις");
+                    return "Μπορείτε να έχετε μόνο " + e.numDelegatesLabel + " αν" + t(e.numDelegates, "άθεση", "αθέσεις");
                 }),
                 n("efee0a50", "Προσκαλέστε ένα μέλος σε αυτόν τον λογαριασμό"),
                 n("ja0a1aa6", "Προσκαλέστε έναν συνεργάτη σε αυτόν τον λογαριασμό"),
@@ -3383,7 +3387,7 @@
                 n("ee9ea930", "Διαμάντια"),
                 n("cf3b535e", "Τα Διαμάντια συσσωρεύονται με τη λήψη Νομισμάτων σε επιλέξιμες αναρτήσεις. Τα χρήματα που κερδίζετε από τα Διαμάντια προστίθενται στα εκτιμώμενα έσοδά σας."),
                 n("fbb7764b", function (e) {
-                    return e.count + " Ν" + f(e.count, "όμισμ", "ομίσματ") + "α";
+                    return e.count + " Ν" + t(e.count, "όμισμ", "ομίσματ") + "α";
                 }),
                 n("e70a07b2", "Ανώνυμος"),
                 n("c76972f0", "Από την τελευταία πληρωμή"),
@@ -3722,19 +3726,19 @@
                 n("ea522535", "Μάθετε περισσότερα"),
                 n("hf5ca8f8", "προφίλ σας"),
                 n("d9cbe351", function (e) {
-                    return e.count + " συμβάν" + f(e.count, "", "τα") + " εισόδου";
+                    return e.count + " συμβάν" + t(e.count, "", "τα") + " εισόδου";
                 }),
                 n("de90b04a", "Τοποθεσίες που έχετε επισκεφτεί"),
                 n("cbd2ef59", function (e) {
-                    return e.count + " τοποθεσί" + f(e.count, "α", "ες");
+                    return e.count + " τοποθεσί" + t(e.count, "α", "ες");
                 }),
                 n("a4441bb8", "Ενδιαφέροντα από X"),
                 n("e1c6b2d6", "Προσαρμοσμένα κοινά"),
                 n("ed19d10d", function (e) {
-                    return e.audienceCount + " κοιν" + f(e.audienceCount, "ό", "ά") + " από " + e.advertiserCount + " διαφημιστ" + f(e.advertiserCount, "ή", "ές");
+                    return e.audienceCount + " κοιν" + t(e.audienceCount, "ό", "ά") + " από " + e.advertiserCount + " διαφημιστ" + t(e.advertiserCount, "ή", "ές");
                 }),
                 n("f00d0d03", function (e) {
-                    return e.count + " ενδιαφέρον" + f(e.count, "", "τα");
+                    return e.count + " ενδιαφέρον" + t(e.count, "", "τα");
                 }),
                 n("hf9c2caa", "Αίτημα λήψης λίστας διαφημιστών;"),
                 n("c29b7971", function (e) {
@@ -3757,11 +3761,11 @@
                 n("jd8607ba", "Ενεργοποιήθηκε στις"),
                 n("ea4f6c9e", "Προγράμματα περιήγησης"),
                 n("d750b93f", function (e) {
-                    return e.count + " πρ" + f(e.count, "όγραμμ", "ογράμματ") + "α περιήγησης";
+                    return e.count + " πρ" + t(e.count, "όγραμμ", "ογράμματ") + "α περιήγησης";
                 }),
                 n("a9783602", "Κινητές συσκευές"),
                 n("j043aa31", function (e) {
-                    return e.count + " κινητ" + f(e.count, "ή συσκευή", "ές συσκευές");
+                    return e.count + " κινητ" + t(e.count, "ή συσκευή", "ές συσκευές");
                 }),
                 n("ae415fd2", "Αυτή η ρύθμιση είναι απενεργοποιημένη."),
                 n("a90be7b4", "Διευθύνσεις email"),
@@ -3834,7 +3838,7 @@
                 n("e5d26f84", "Μην χάνετε ποτέ τι συμβαίνει ενεργοποιώντας τις ειδοποιήσεις. Το X θα λάβει τη χώρα και τη γλώσσα της συσκευής σας για να εξατομικεύσει τις ειδοποιήσεις σας."),
                 n("f91f00ba", "Δημιουργία κλιπ"),
                 n("f9b2d343", function (e) {
-                    return e.count + " αν" + f(e.count, "άρτηση", "αρτήσεις");
+                    return e.count + " αν" + t(e.count, "άρτηση", "αρτήσεις");
                 }),
                 n("jcc8306e", "Αίτημα για ομιλία"),
                 n("j41fd45a", "Το αίτημα στάλθηκε"),
@@ -3884,7 +3888,7 @@
                 n("c855ab8e", "Μόνο συνδρομητές"),
                 n("ddeb0a3c", "Αυτή είναι η Κοινότητα. Σας αρέσουν τα άτομα εδώ; Ρίξτε μια ματιά."),
                 n("e111f531", function (e) {
-                    return e.count + " συντονίστηκ" + f(e.count, "ε", "αν");
+                    return e.count + " συντονίστηκ" + t(e.count, "ε", "αν");
                 }),
                 n("cbef820f", function (e) {
                     return "Ο χρήστης " + e.screenName + " αναδημοσίευσε τη ροής! ";
@@ -3907,22 +3911,22 @@
                     return "Πρόσκληση " + e.name;
                 }),
                 n("f5c7aaa7", function (e) {
-                    return "Διοργανωτ" + f(e.count, "ή", "έ") + "ς";
+                    return "Διοργανωτ" + t(e.count, "ή", "έ") + "ς";
                 }),
                 n("fc56c8b1", function (e) {
                     return "Συνδιοργ.";
                 }),
                 n("iba0f45d", function (e) {
-                    return "ομιλητ" + f(e.count, "ή", "έ") + "ς";
+                    return "ομιλητ" + t(e.count, "ή", "έ") + "ς";
                 }),
                 n("dc066955", function (e) {
-                    return "ακροατ" + f(e.count, "ή", "έ") + "ς";
+                    return "ακροατ" + t(e.count, "ή", "έ") + "ς";
                 }),
                 n("b53ed9ab", function (e) {
-                    return e.participantCount + " " + e.title + " " + e.remainingCapacityCount + " ανοιχτό σημεί" + f(e.remainingCapacityCount, "ο", "α");
+                    return e.participantCount + " " + e.title + " " + e.remainingCapacityCount + " ανοιχτό σημεί" + t(e.remainingCapacityCount, "ο", "α");
                 }),
                 n("c3b5b829", function (e) {
-                    return e.count + " α" + f(e.count, "ίτημ", "ιτήματ") + "α";
+                    return e.count + " α" + t(e.count, "ίτημ", "ιτήματ") + "α";
                 }),
                 n("fe7a1910", "Αποστολή προσκλήσεων"),
                 n("ic3c757e", "Αναζήτηση για χρήστες"),
@@ -3976,7 +3980,7 @@
                 n("c4fdbd16", "Δεν μπορείτε να στείλετε μηνύματα σε χρήστες που έχετε θέσει σε αποκλεισμό."),
                 n("hf3e7e38", "Το μήνυμά σας δεν ήταν δυνατόν να σταλεί."),
                 n("dd8272fd", function (e) {
-                    return e.count + " νέα μ" + f(e.count, "ήνυμ", "ηνύματ") + "α";
+                    return e.count + " νέα μ" + t(e.count, "ήνυμ", "ηνύματ") + "α";
                 }),
                 n("e2cd3b7c", "Η ηχητική κλήση τερματίστηκε"),
                 n("f42f365a", "Η βιντεοκλήση τερματίστηκε"),
@@ -4031,7 +4035,7 @@
                     return "Χθες, " + e.time;
                 }),
                 n("h95f9e77", function (e) {
-                    return e.reactionCount + " αντ" + f(e.reactionCount, "ίδραση", "ιδράσεις");
+                    return e.reactionCount + " αντ" + t(e.reactionCount, "ίδραση", "ιδράσεις");
                 }),
                 n("c0098d4a", "Αντιδράσεις"),
                 n("j85999ec", "Λίστα αντιδράσεων χρήστη"),
@@ -4042,13 +4046,13 @@
                 n("e8bd8fec", "Εστάλη"),
                 n("b2d32fae", "Διαβάστηκε από όλους"),
                 n("a763d33f", function (e) {
-                    return "Διαβάστηκε από " + e.count + " άτομ" + f(e.count, "ο", "α");
+                    return "Διαβάστηκε από " + e.count + " άτομ" + t(e.count, "ο", "α");
                 }),
                 n("d84b485e", "Ακολουθήσατε αυτόν τον λογαριασμό"),
                 n("be0c83d8", "Αποδεχθήκατε το αίτημα"),
                 n("bcc13060", "Πρώιμη πρόσβαση"),
                 n("e535cae9", function (e) {
-                    return e.count + " Ακόλουθο" + f(e.count, "ς", "ι");
+                    return e.count + " Ακόλουθο" + t(e.count, "ς", "ι");
                 }),
                 n("cf249089", function (e) {
                     return "Έγινε μέλος: " + e.joinDate;
@@ -4115,7 +4119,7 @@
                 n("hd3927c6", "Το ξεκαρφίτσωμα της συζήτησης απέτυχε. Δοκιμάστε ξανά."),
                 n("f1ac0968", "Το ξεκαρφίτσωμα της συζήτησης απέτυχε. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά."),
                 n("d571e4f9", function (e) {
-                    return "Μπορείτε να καρφιτσώσετε μόνο " + e.count + " συζ" + f(e.count, "ήτηση", "ητήσεις");
+                    return "Μπορείτε να καρφιτσώσετε μόνο " + e.count + " συζ" + t(e.count, "ήτηση", "ητήσεις");
                 }),
                 n("a551bf7e", "Θα πρέπει να ξεκαρφιτσώσετε μία συζήτηση για να καρφιτσώσετε μία άλλη."),
                 n("a676a876", "Καλώς ορίσατε στα εισερχόμενά σας!"),
@@ -4136,16 +4140,16 @@
                 n("bece84b4", "Τα αιτήματα προσωπικών μηνυμάτων σας είναι κενά"),
                 n("e51be7c1", "Μάθετε περισσότερα"),
                 n("f041be05", function (e) {
-                    return e.stringCount + " pending request" + f(e.count, "", "s");
+                    return e.stringCount + " pending request" + t(e.count, "", "s");
                 }),
                 n("a2fad0f3", function (e) {
-                    return e.stringCount + " new pe" + f(e.count, "rson", "ople") + " you may know";
+                    return e.stringCount + " new pe" + t(e.count, "rson", "ople") + " you may know";
                 }),
                 n("cbddf365", function (e) {
-                    return e.stringCount + " pe" + f(e.count, "rson", "ople") + " you may know";
+                    return e.stringCount + " pe" + t(e.count, "rson", "ople") + " you may know";
                 }),
                 n("fac945ad", function (e) {
-                    return e.stringCount + " new request" + f(e.count, "", "s");
+                    return e.stringCount + " new request" + t(e.count, "", "s");
                 }),
                 n("ed93de0c", "Αναλύει ανάρτηση"),
                 n("d1d92e40", "Περισσότερες λεπτομέρειες"),
@@ -4354,7 +4358,7 @@
                 n("ef018bf6", "Αναλύστε περισσότερες εικόνες με το Premium"),
                 n("cdace6d2", "Αναβάθμιση τώρα"),
                 n("a3186bff", function (e) {
-                    return e.count + " ιστοσελίδ" + f(e.count, "α", "ες");
+                    return e.count + " ιστοσελίδ" + t(e.count, "α", "ες");
                 }),
                 n("f4146dda", "Ποια απάντηση προτιμάτε;"),
                 n("a2c2be32", "Αυτό θα βοηθήσει να γίνει το Grok καλύτερο."),
@@ -5166,7 +5170,7 @@
                 n("cef977e4", "Εξαγωγή των δεδομένων σας"),
                 n("f88e624e", "Η συζήτηση ενημερώθηκε"),
                 n("e15e5637", function (e) {
-                    return "Τελευταί" + f(e.count, "α ώρα", "ες " + e.count + " ώρες");
+                    return "Τελευταί" + t(e.count, "α ώρα", "ες " + e.count + " ώρες");
                 }),
                 n("h5ab8b0e", "Άτομα που ακολουθεί"),
                 n("a0f01bca", "Κάντε κλικ για αλλαγή του χρονικού πλαισίου"),
@@ -5223,7 +5227,7 @@
                 n("a26da034", "Αποθήκευση αλλαγών"),
                 n("b3633046", "Επιλέξτε κοινότητα"),
                 n("ce447fcb", function (e) {
-                    return e.count + " ακροατ" + f(e.count, "ή", "έ") + "ς";
+                    return e.count + " ακροατ" + t(e.count, "ή", "έ") + "ς";
                 }),
                 n("ef7da97f", function (e) {
                     return e.count + " ακούν";
@@ -5251,7 +5255,7 @@
                     return "Συνδιοργ.";
                 }),
                 n("hbd6035f", function (e) {
-                    return "Ομιλητ" + f(e.speakerCount, "ή", "έ") + "ς";
+                    return "Ομιλητ" + t(e.speakerCount, "ή", "έ") + "ς";
                 }),
                 n("if420852", "Αναπαραγωγή εγγραφής"),
                 n("f7dc3b1c", "Αυτός ο Χώρος έχει τελειώσει"),
@@ -5436,6 +5440,8 @@
                 n("i8cae552", "Με την αξιολόγηση θα συμβάλετε στη διατήρηση της ποιότητας των Σημειωμάτων Κοινότητας."),
                 n("hd43a218", "Έχετε φτάσει το ημερήσιο όριό σας για να γράφετε Σημειώματα"),
                 n("aaba8ed2", "Για να διατηρηθεί η ποιότητα των Σημειωμάτων σε υψηλό επίπεδο και να αποτραπεί η ανεπιθύμητη αλληλογραφία,  υπάρχει ένα όριο στον αριθμό των σημειώσεων που μπορούν να γράψουν οι συνεισφέροντες κάθε μέρα, με βάση τον αντίκτυπο γραφής τους. Δοκιμάστε ξανά αργότερα."),
+                n("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
+                n("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
                 n("b98f077c", "Αίτηση για πληροφορίες Σημειώματος"),
                 n("ee691104", "Αίτηση για ένα Σημείωμα Κοινότητας σχετικά με αυτή την ανάρτηση"),
                 n("f8cbdf02", "Σκέφτεστε ότι αυτή η ανάρτηση είναι ενδεχομένως παραπλανητική; Ζητήστε ένα Σημείωμα Κοινότητας."),
@@ -5728,7 +5734,7 @@
                 n("a796c19c", "Επανένταξη"),
                 n("h837a96c", "Θα ενταχθείτε εκ νέου στο πρόγραμμα Σημειωμάτων Κοινότητας."),
                 n("a4d4bcb9", function (e) {
-                    return "Αν θέλετε να επανενταχθείτε, θα μπορείτε να το κάνετε εδώ στο " + e.numDaysToRejoin + " ημέρ" + f(e.numDaysToRejoin, "α", "ες") + ".";
+                    return "Αν θέλετε να επανενταχθείτε, θα μπορείτε να το κάνετε εδώ στο " + e.numDaysToRejoin + " ημέρ" + t(e.numDaysToRejoin, "α", "ες") + ".";
                 }),
                 n("a490bc51", "Μάθετε περισσότερα"),
                 n("c94ad3e8", "στείλετε τα σχόλιά σας"),
@@ -5878,10 +5884,10 @@
                 n("beba2a0e", "Δημιουργία νέου φακέλου σελιδοδεικτών"),
                 n("e41c9b4f", function (e) {
                     return "Αποθηκεύτηκε στη συλλογή " + e.bookmarkFolderName;
-                }),
-                n("h18f86a4", "Διαγραφή φακέλου"),
-                n("f4ea967a", "Ο φάκελος διαγράφηκε");
-            n("b670aa62", "Όνομα φακέλου"),
+                });
+            n("h18f86a4", "Διαγραφή φακέλου"),
+                n("f4ea967a", "Ο φάκελος διαγράφηκε"),
+                n("b670aa62", "Όνομα φακέλου"),
                 n("aece5462", "Το όνομα του φακέλου σας ενημερώθηκε επιτυχώς"),
                 n("e3299b94", "Παρουσιάστηκε κάποιο πρόβλημα. Προσπαθήστε ξανά να ενημερώσετε αυτόν τον φάκελο σε λίγο."),
                 n("c09ea714", "Παρουσιάστηκε κάποιο πρόβλημα. Προσπαθήστε ξανά να διαγράψετε αυτόν τον φάκελο σε λίγο."),
@@ -5932,13 +5938,13 @@
                 n("cb6adb10", "Ανακαλύψτε Κοινότητες"),
                 n("df362964", "Βρείτε Κοινότητες"),
                 n("dfd5031f", function (e) {
-                    return e.newTweets + " νέα αν" + f(e.newTweets, "άρτηση", "αρτήσεις");
+                    return e.newTweets + " νέα αν" + t(e.newTweets, "άρτηση", "αρτήσεις");
                 }),
                 n("ha4bb8a9", function (e) {
-                    return e.reportedTweets + " αναφορ" + f(e.reportedTweets, "ά", "ές");
+                    return e.reportedTweets + " αναφορ" + t(e.reportedTweets, "ά", "ές");
                 }),
                 n("caf003b3", function (e) {
-                    return e.memberRequests + " " + f(e.memberRequests, "εκκρεμές αίτημ", "αιτήματ") + "α";
+                    return e.memberRequests + " " + t(e.memberRequests, "εκκρεμές αίτημ", "αιτήματ") + "α";
                 }),
                 n("a2118086", "Ταξινόμηση αναρτήσεων"),
                 n("hb01fe46", "Όταν το κάνετε, θα εμφανίζονται εδώ."),
@@ -6012,10 +6018,10 @@
                 n("ee609174", "Γενικές ρυθμίσεις"),
                 n("ab19cdaa", "Ρυθμίσεις ανεπιθύμητης αλληλογραφίας"),
                 n("d755f47d", function (e) {
-                    return e.count + " νέα αν" + f(e.count, "άρτηση", "αρτήσεις") + " για έλεγχο";
+                    return e.count + " νέα αν" + t(e.count, "άρτηση", "αρτήσεις") + " για έλεγχο";
                 }),
                 n("efc26607", function (e) {
-                    return e.memberCount + " μέλ" + f(e.memberCount, "ος", "η");
+                    return e.memberCount + " μέλ" + t(e.memberCount, "ος", "η");
                 }),
                 n("adfcc3ce", "Προσθήκη, διαγραφή ή επεξεργασία κανόνων"),
                 n("d0330d9c", "Προβολή κανόνων"),
@@ -6038,7 +6044,7 @@
                 n("e538848c", "Δεν θα έχετε πλέον πρόσβαση στα Εργαλεία επόπτη. Εάν αλλάξετε γνώμη, θα πρέπει να προσκληθείτε ξανά ως επόπτης."),
                 n("j49e6aa2", "Ναι, θέλω να αποχωρήσω"),
                 n("dde5f323", function (e) {
-                    return e.count + " νέ" + f(e.count, "ο αίτημα μέλους", "α αιτήματα μελών") + " για έλεγχο";
+                    return e.count + " νέ" + t(e.count, "ο αίτημα μέλους", "α αιτήματα μελών") + " για έλεγχο";
                 }),
                 n("f5e0332a", "Περιεχόμενο για ενήλικες (NSFW)"),
                 n("e983404a", "Καρφιτσωμένες ετικέτες"),
@@ -6160,7 +6166,7 @@
                     return "Ο χρήστης @" + e.screen_name + " δεν μπορεί να προσκληθεί αυτήν τη στιγμή";
                 }),
                 n("i6568549", function (e) {
-                    return "Έχετε " + e.remaining_invite_count + " πρ" + f(e.remaining_invite_count, "όσκληση", "οσκλήσεις") + " ακόμη";
+                    return "Έχετε " + e.remaining_invite_count + " πρ" + t(e.remaining_invite_count, "όσκληση", "οσκλήσεις") + " ακόμη";
                 }),
                 n("b4f16d00", "Αναζητήστε άτομα για να προσκαλέσετε"),
                 n("ja1387a8", "Τα αποτελέσματα αναζήτησης θα περιλαμβάνουν μόνο τους ακόλουθούς σας και άτομα που επιτρέπουν προσωπικά μηνύματα από όλους."),
@@ -6290,11 +6296,11 @@
                 n("dc7a9436", "Αναφορά ανάρτησης στο Χ"),
                 n("e2bc5db0", "@X"),
                 n("d0a1b248", function (e) {
-                    return e.formattedCount + " μέλ" + f(e.count, "ος", "η");
+                    return e.formattedCount + " μέλ" + t(e.count, "ος", "η");
                 }),
                 n("cd4d48d2", "@ Χ"),
                 n("ff0f742a", function (e) {
-                    return e.formattedCount + " μέλ" + f(e.count, "ος", "η");
+                    return e.formattedCount + " μέλ" + t(e.count, "ος", "η");
                 }),
                 n("dca19c06", "Κρύψατε αυτή την ανάρτηση"),
                 n("dd641764", "Κρατήσατε αυτήν την ανάρτηση"),
@@ -6663,7 +6669,7 @@
                 n("db4620aa", "ΖΩΝΤΑΝΟΣ ΧΩΡΟΣ"),
                 n("c958e692", "ΚΑΤΑΓΕΓΡΑΜΜΕΝΟΣ ΧΩΡΟΣ"),
                 n("i2c2bfb7", function (e) {
-                    return e.count + " ακού" + f(e.count, "ει", "ν");
+                    return e.count + " ακού" + t(e.count, "ει", "ν");
                 }),
                 n("i3f7ff00", "Μικρογραφία πολυμέσων"),
                 n("h400d7c2", "ΠΑΡΤΕ ΜΕΡΟΣ ΣΤΟΝ ΧΩΡΟ"),
@@ -6882,10 +6888,10 @@
                 n("hf352d42", "Προσθέστε ένα προαιρετικό εύρος μισθών που θα είναι ορατό στους υποψηφίους. Αν επιλέξετε να μην το κάνετε, θα πρέπει να γνωρίζετε τους νόμους περί διαφάνειας των αμοιβών στην τοποθεσία για την οποία προσλαμβάνετε."),
                 n("ede7d0a2", "Νόμισμα"),
                 n("b925c18c", "Τύπος μισθού"),
-                n("j3d242ce", "Μη έγκυρο εύρος τιμών"),
-                n("f4d07bd2", "Συμπεριλάβετε προαιρετικές λεπτομέρειες για να διευκολύνετε τους υποψηφίους να ανακαλύψουν τους ρόλους σας με την αναζήτηση."),
-                n("b8cbb51a", "Σύνοψη θέσης εργασίας");
-            n("bda6881e", "Αυτή η εργασία έχει εισαχθεί από το Σύστημα Παρακολούθησης Αιτούντων (ATS). Λάβετε υπόψη ότι μπορούν να τροποποιηθούν μόνο συγκεκριμένα πεδία."),
+                n("j3d242ce", "Μη έγκυρο εύρος τιμών");
+            n("f4d07bd2", "Συμπεριλάβετε προαιρετικές λεπτομέρειες για να διευκολύνετε τους υποψηφίους να ανακαλύψουν τους ρόλους σας με την αναζήτηση."),
+                n("b8cbb51a", "Σύνοψη θέσης εργασίας"),
+                n("bda6881e", "Αυτή η εργασία έχει εισαχθεί από το Σύστημα Παρακολούθησης Αιτούντων (ATS). Λάβετε υπόψη ότι μπορούν να τροποποιηθούν μόνο συγκεκριμένα πεδία."),
                 n("b075c68a", "Επεξεργασία θέσης εργασίας"),
                 n("d4b6a6e0", "Ανάδειξη προφίλ"),
                 n("j2dd3686", "Επισημάνετε τις θέσεις εργασίας πάνω από τις αναρτήσεις μου."),
@@ -7230,7 +7236,7 @@
                 n("h257d4aa", "Επιλέξτε μια ανάρτηση για προώθηση"),
                 n("e9334fe6", "Ενημέρωση δεδομένων κάθε λίγα λεπτά"),
                 n("a6d7b1d0", "Με βάση τα εσωτερικά δεδομένα X"),
-                n("h9b28dae", "Εξοικονομείτε χρόνο με μια τροφοδοσία χωρίς διαφημίσεις"),
+                n("h71a00e6", "You’re saving time with ad-free"),
                 n("f6c50ec0", "Η δωρεάν δοκιμαστική περίοδος χωρίς διαφημίσεις έληξε"),
                 n("e1d1fbca", "Έχετε αποφύγει"),
                 n("a82d7abd", function (e) {
@@ -7247,16 +7253,19 @@
                 n("c534c6b4", "Αναλύουμε τους αριθμούς..."),
                 n("i57332f0", "Συνεχίστε την κύλιση και ελέγξτε ξανά αργότερα για να δείτε πόσες διαφημίσεις αποφύγατε και πόσο χρόνο εξοικονομήσατε"),
                 n("cc10f019", function (e) {
-                    return e.minutes + " λεπτ" + f(e.minutes, "ό", "ά");
+                    return e.minutes + " λεπτ" + t(e.minutes, "ό", "ά");
                 }),
                 n("f9b6b7d3", function (e) {
-                    return e.hours + " ώρ" + f(e.hours, "α", "ες");
+                    return e.hours + " ώρ" + t(e.hours, "α", "ες");
                 }),
                 n("a9af8753", function (e) {
-                    return e.days + " ημέρ" + f(e.days, "α", "ες") + ", " + e.hours + " ώρ" + f(e.hours, "α", "ες");
+                    return e.days + " ημέρ" + t(e.days, "α", "ες") + ", " + e.hours + " ώρ" + t(e.hours, "α", "ες");
                 }),
                 n("b93d00e5", function (e) {
-                    return e.days + " ημέρ" + f(e.days, "α", "ες");
+                    return e.days + " ημέρ" + t(e.days, "α", "ες");
+                }),
+                n("dc9661b3", function (e) {
+                    return e.seconds + " second" + f(e.seconds, "", "s");
                 }),
                 n("g2c63852", "100% δωρεάν. Δεν απαιτείται πιστωτική κάρτα."),
                 n("be88be23", function (e) {
@@ -7441,7 +7450,7 @@
                 n("h1c5d6aa", "Εστάλησαν από εσάς"),
                 n("h6d45054", "Εστάλησαν από όλους"),
                 n("da68fff1", function (e) {
-                    return e.count + " Ν" + f(e.count, "όμισμ", "ομίσματ") + "α (ορατό μόνο σε εσάς)";
+                    return e.count + " Ν" + t(e.count, "όμισμ", "ομίσματ") + "α (ορατό μόνο σε εσάς)";
                 }),
                 n("e35f2534", "Φόρτωση αλληλεπιδράσεις ανάρτησης"),
                 n("i60dfa72", "Μετά την αλληλεπίδραση"),
@@ -7508,13 +7517,13 @@
                     return "Αυτό παρακολουθεί πόσες φορές έχει διαβαστεί αυτή η ανάρτηση τις πρώτες 48 ώρες από τη δημοσίευσή της. Η μέγιστη τιμή είναι οι " + e.maxValue + " προβολές.";
                 }),
                 n("ib1f8491", function (e) {
-                    return e.likeCount + " επισ" + f(e.likeCount, "ήμανση", "ημάνσεις") + ' "Μου αρέσει"';
+                    return e.likeCount + " επισ" + t(e.likeCount, "ήμανση", "ημάνσεις") + ' "Μου αρέσει"';
                 }),
                 n("dc0e7f37", function (e) {
-                    return e.retweetCount + " αναδημοσ" + f(e.retweetCount, "ίευση", "ιεύσεις");
+                    return e.retweetCount + " αναδημοσ" + t(e.retweetCount, "ίευση", "ιεύσεις");
                 }),
                 n("d0eeb127", function (e) {
-                    return e.replyCount + " απ" + f(e.replyCount, "άντηση", "αντήσεις");
+                    return e.replyCount + " απ" + t(e.replyCount, "άντηση", "αντήσεις");
                 }),
                 n("db6efeb8", "Η προώθησή σας είναι ενεργή"),
                 n("j6daea86", "Η προώθησή σας είναι σε παύση"),
@@ -7527,7 +7536,7 @@
                 n("e8adeec8", "Προώθηση ξανά"),
                 n("fbb5c37e", "Ενίσχυση ξανά"),
                 n("ccffb487", function (e) {
-                    return "Η ανάρτησή σας έχει κερδίσει " + e.impressions + " προβολ" + f(e.impressions, "ή", "ές") + " μέχρι στιγμής. Μεταβείτε σε επαγγελματικό λογαριασμό για να διευρύνετε την εμβέλεια.";
+                    return "Η ανάρτησή σας έχει κερδίσει " + e.impressions + " προβολ" + t(e.impressions, "ή", "ές") + " μέχρι στιγμής. Μεταβείτε σε επαγγελματικό λογαριασμό για να διευρύνετε την εμβέλεια.";
                 }),
                 n("ha13fd94", "Ενίσχυση ανάρτησης"),
                 n("jede3014", "Η προώθησή σας είναι υπό εξέταση"),
@@ -7570,7 +7579,7 @@
                     return e.totalBudget + " σε " + e.durationLabel;
                 }),
                 n("bad70c09", function (e) {
-                    return "Τοποθεσί" + f(e.numLocations, "α", "ες");
+                    return "Τοποθεσί" + t(e.numLocations, "α", "ες");
                 }),
                 n("c133a39b", function (e) {
                     return e.minAge + " - " + e.maxAge;
@@ -7579,7 +7588,7 @@
                     return e.minAge + "+";
                 }),
                 n("g4bf9cb7", function (e) {
-                    return e.durationDays + " ημέρ" + f(e.durationDays, "α", "ες");
+                    return e.durationDays + " ημέρ" + t(e.durationDays, "α", "ες");
                 }),
                 n("gc3ce5d9", function (e) {
                     return "Εκτιμώμενη απήχηση " + e.audienceLow + " - " + e.audienceHigh + " άτομα την ημέρα";
@@ -7679,7 +7688,7 @@
                 n("a74821a0", "Φαίνεται ότι η πληρωμή σας δεν ολοκληρώθηκε ή πρόκειται να λήξει. Ενημερώστε τα στοιχεία πληρωμής σας για να διατηρήσετε τη συνδρομή Premium."),
                 n("bb55752e", "Τα νομίσματα σάς επιτρέπουν να υποστηρίζετε δημιουργούς που δημοσιεύουν εξαιρετικό περιεχόμενο. Τα αχρησιμοποίητα νομίσματα διατηρούνται στο υπόλοιπό σας."),
                 n("ea7ce65f", function (e) {
-                    return "περιλαμβάν" + f(e.count, "εται " + e.count + " μπόνους νόμισμ", "ονται " + e.count + " μπόνους νομίσματ") + "α.";
+                    return "περιλαμβάν" + t(e.count, "εται " + e.count + " μπόνους νόμισμ", "ονται " + e.count + " μπόνους νομίσματ") + "α.";
                 }),
                 n("e557f9d2", "Έχετε φτάσει στο όριο του υπολοίπου Νομισμάτων σας."),
                 n("e2beba5e", "Πιο δημοφιλή"),
@@ -7859,13 +7868,8 @@
                 n("b74ff5fc", "Εάν ακυρώσετε, η Συνδρομή σας θα λήξει αυτόματα στο τέλος του κύκλου τιμολόγησης."),
                 n("ee9efbc8", "Συνέχεια στην ακύρωση"),
                 n("c5d9c77a", "Φαίνεται ότι υπήρξε ένα μικρό πρόβλημα. Μην ανησυχείτε όμως, δεν φταίτε εσείς. Κλείστε αυτό το παράθυρο και δοκιμάσετε ξανά."),
-                n("jda53c24", "Μπορείτε να ακυρώσετε τη Συνδρομή σας μέσω του Apple App Store."),
-                n("g0a7a53e", "Μπορείτε να ακυρώσετε τη Συνδρομή σας μέσω του Google Play Store."),
-                n("i5f14be7", function (e) {
-                    return "Καλώς ήρθατε πίσω, " + e.displayName;
-                }),
-                n("a76d58ba", "Στοιχεία ανάλυσης διαφημίσεων");
-            function t(e, c) {
+                n("jda53c24", "Μπορείτε να ακυρώσετε τη Συνδρομή σας μέσω του Apple App Store.");
+            function r(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
                     (n.enumerable = n.enumerable || !1),
@@ -7873,10 +7877,10 @@
                         "value" in n && (n.writable = !0),
                         Object.defineProperty(
                             e,
-                            ((f = n.key),
-                            (t = void 0),
+                            ((t = n.key),
+                            (f = void 0),
                             "symbol" ==
-                            typeof (t = (function (e, c) {
+                            typeof (f = (function (e, c) {
                                 if ("object" != typeof e || null === e) return e;
                                 var a = e[Symbol.toPrimitive];
                                 if (void 0 !== a) {
@@ -7885,25 +7889,30 @@
                                     throw new TypeError("@@toPrimitive must return a primitive value.");
                                 }
                                 return ("string" === c ? String : Number)(e);
-                            })(f, "string"))
-                                ? t
-                                : String(t)),
+                            })(t, "string"))
+                                ? f
+                                : String(f)),
                             n,
                         );
                 }
-                var f, t;
+                var t, f;
             }
-            function r(e, c) {
+            function d(e, c) {
                 return (
-                    (r = Object.setPrototypeOf
+                    (d = Object.setPrototypeOf
                         ? Object.setPrototypeOf.bind()
                         : function (e, c) {
                               return (e.__proto__ = c), e;
                           }),
-                    r(e, c)
+                    d(e, c)
                 );
             }
-            n("eccd0e1a", "Στοιχεία ανάλυσης οργανισμών"),
+            n("g0a7a53e", "Μπορείτε να ακυρώσετε τη Συνδρομή σας μέσω του Google Play Store."),
+                n("i5f14be7", function (e) {
+                    return "Καλώς ήρθατε πίσω, " + e.displayName;
+                }),
+                n("a76d58ba", "Στοιχεία ανάλυσης διαφημίσεων"),
+                n("eccd0e1a", "Στοιχεία ανάλυσης οργανισμών"),
                 n("deea1708", "Θέλετε να δείτε τα στοιχεία ανάλυσης σε όλους τους λογαριασμού του X;"),
                 n("eb603ffc", "Αναβάθμιση σε συνεργάτη του δικτύου σας και προβολή συγκεντρωτικών στοιχείων ανάλυσης."),
                 n("gf67aae4", "Αναβάθμιση σε Πλήρη Πρόσβαση"),
@@ -7911,7 +7920,7 @@
                 n("h24a8862", "Σχετικά με αυτό το πλαίσιο ελέγχου"),
                 n("c29e3a88", "Επιλέξτε συνεργάτες"),
                 n("j8318d57", function (e) {
-                    return e.number + " συνεργάτ" + f(e.number, "η", "ε") + "ς";
+                    return e.number + " συνεργάτ" + t(e.number, "η", "ε") + "ς";
                 }),
                 n("bf809ec0", "Επιλέξτε συνεργάτες"),
                 n("b719e224", "Κανένα αποτέλεσμα"),
@@ -8130,7 +8139,7 @@
                 n("e6b0965a", "Η παραγγελία σας"),
                 n("a1b58798", "Ελέγξτε την παραγγελία σας παρακάτω"),
                 n("b651c7d7", function (e) {
-                    return "Συνεργάτ" + f(e.count, "η", "ε") + "ς x " + e.count;
+                    return "Συνεργάτ" + t(e.count, "η", "ε") + "ς x " + e.count;
                 }),
                 n("ec5e9c54", "Βασική συνδρομή"),
                 n("e16093fc", "Σύνολο ανά μήνα"),
@@ -8782,7 +8791,7 @@
                     return "Έναρξη σε " + e.hoursWord + " " + e.minutesWord + " " + e.secondsWord;
                 }),
                 n("daa73df1", function (e) {
-                    return e.viewerCount + " προβολ" + f(e.viewerCount, "ή", "ές");
+                    return e.viewerCount + " προβολ" + t(e.viewerCount, "ή", "ές");
                 }),
                 n("b4f19b97", function (e) {
                     return e.listItem1 + " και " + e.listItem2;
@@ -8899,11 +8908,11 @@
                     return "Επισκεφθείτε το " + e.advertiserName;
                 }),
                 n("c67e71aa", "Παρακολουθήστε τώρα"),
-                n("a6ada13e", "Αγορά τώρα"),
-                n("j0f12222", "Δείτε περισσότερα"),
+                n("a6ada13e", "Αγορά τώρα");
+            n("j0f12222", "Δείτε περισσότερα"),
                 n("f569f7c8", "Μεταβείτε στον ιστότοπο"),
-                n("j0c6772a", "Επισκεφθείτε τον ιστότοπο");
-            n("f73003aa", "Θα γίνει αναπαραγωγή του βίντεο μετά τη διαφήμιση"),
+                n("j0c6772a", "Επισκεφθείτε τον ιστότοπο"),
+                n("f73003aa", "Θα γίνει αναπαραγωγή του βίντεο μετά τη διαφήμιση"),
                 n("b3112b8a", "Παράβλεψη"),
                 n("h6333ad0", "Παράλειψη διαφήμισης"),
                 n("c59da417", function (e) {
@@ -8992,26 +9001,26 @@
                     return e.count + " σε αυτόν τον Χώρο";
                 }),
                 n("c83eea99", function (e) {
-                    return e.participant + "+ " + e.count + " ακού" + f(e.count, "ει", "ν");
+                    return e.participant + "+ " + e.count + " ακού" + t(e.count, "ει", "ν");
                 }),
                 n("cdff6cd3", function (e) {
-                    return "Ο χρήστης " + e.speaker + " μιλάει + " + e.count + " ακού" + f(e.count, "ει", "ν");
+                    return "Ο χρήστης " + e.speaker + " μιλάει + " + e.count + " ακού" + t(e.count, "ει", "ν");
                 }),
                 n("df006f4f", function (e) {
-                    return e.count + " ενδιαφέρ" + f(e.count, "ε", "ον") + "ται";
+                    return e.count + " ενδιαφέρ" + t(e.count, "ε", "ον") + "ται";
                 }),
                 n("c889af33", function (e) {
-                    return e.count + " συμμετέχ" + f(e.count, "ει", "ουν");
+                    return e.count + " συμμετέχ" + t(e.count, "ει", "ουν");
                 }),
                 n("d6f2056f", function (e) {
-                    return e.count + " συντονίστηκ" + f(e.count, "ε", "αν");
+                    return e.count + " συντονίστηκ" + t(e.count, "ε", "αν");
                 }),
                 n("jbc5f47a", "Πλαίσιο Χώρων"),
                 n("gfe2830f", function (e) {
                     return e.count + " ακόμη";
                 }),
                 n("dbeae6cf", function (e) {
-                    return e.count + " ακόμα ακροατ" + f(e.count, "ή", "έ") + "ς";
+                    return e.count + " ακόμα ακροατ" + t(e.count, "ή", "έ") + "ς";
                 }),
                 n("d2543d97", function (e) {
                     return "+" + e.count;
@@ -9032,19 +9041,19 @@
                     return e.hours + " " + e.minutes + " " + e.seconds;
                 }),
                 n("d925a4f9", function (e) {
-                    return e.formattedCount + " λεπτ" + f(e.count, "ό", "ά") + " ακόμα";
+                    return e.formattedCount + " λεπτ" + t(e.count, "ό", "ά") + " ακόμα";
                 }),
                 n("ib15cddb", function (e) {
-                    return e.formattedCount + " ώρ" + f(e.count, "α", "ες") + " ακόμα";
+                    return e.formattedCount + " ώρ" + t(e.count, "α", "ες") + " ακόμα";
                 }),
                 n("db9ed19f", function (e) {
-                    return e.formattedCount + " ημέρ" + f(e.count, "α", "ες") + " ακόμα";
+                    return e.formattedCount + " ημέρ" + t(e.count, "α", "ες") + " ακόμα";
                 }),
                 n("e1ebcecb", function (e) {
-                    return e.formattedDays + " ημέρ" + f(e.days, "α", "ες") + " " + e.formattedHours + " ώρ" + f(e.hours, "α", "ες") + " ακόμα";
+                    return e.formattedDays + " ημέρ" + t(e.days, "α", "ες") + " " + e.formattedHours + " ώρ" + t(e.hours, "α", "ες") + " ακόμα";
                 }),
                 n("cc1da1fd", function (e) {
-                    return e.formattedHours + " ώρ" + f(e.hours, "α", "ες") + " " + e.formattedMins + " λεπτ" + f(e.mins, "ό", "ά") + " ακόμα";
+                    return e.formattedHours + " ώρ" + t(e.hours, "α", "ες") + " " + e.formattedMins + " λεπτ" + t(e.mins, "ό", "ά") + " ακόμα";
                 }),
                 n("f89a5d60", "Διοργανωτής"),
                 n("ce2cfb36", "Μόνο συνδρομητές"),
@@ -9098,20 +9107,20 @@
                 n("f8e8e32e", "Εσείς"),
                 n("df6703d3", "Εσείς"),
                 n("c20f7e9f", function (e) {
-                    return f(e.otherUsersCount, d.createElement(d.Fragment, null, "", e.secondName), e.otherUsersCount + " ακόμη χρήστες");
+                    return t(e.otherUsersCount, b.createElement(b.Fragment, null, "", e.secondName), e.otherUsersCount + " ακόμη χρήστες");
                 }),
                 n("he26f627", function (e) {
-                    return f(e.otherUsersCount, d.createElement(d.Fragment, null, "", e.secondName), e.otherUsersCount + " ακόμη χρήστες");
+                    return t(e.otherUsersCount, b.createElement(b.Fragment, null, "", e.secondName), e.otherUsersCount + " ακόμη χρήστες");
                 }),
                 n("gea7aa3c", "Επόμενο"),
                 n("b6462b32", "Προηγούμενο"),
                 n("caddb529", "και"),
                 n("ff31714c", function (e) {
-                    return " και " + f(e.othersCount, "1", "" + e.othersCount) + " ακόμη";
+                    return " και " + t(e.othersCount, "1", "" + e.othersCount) + " ακόμη";
                 }),
                 n("e06c99b7", "και"),
                 n("i4e2f96c", function (e) {
-                    return " και " + f(e.othersCount, "1 ακόμη χρήστη", e.othersCount + " ακόμη χρήστες");
+                    return " και " + t(e.othersCount, "1 ακόμη χρήστη", e.othersCount + " ακόμη χρήστες");
                 }),
                 n("ga629a8c", "Προβολή ατόμων στη συζήτηση"),
                 n("d6f781e4", "Όταν κάνετε εγγραφή στους αγαπημένους σας X δημιουργοί, παίρνετε περιεχόμενο μπόνους - και κερδίζουν λίγα χρήματα."),
@@ -9133,10 +9142,10 @@
                 n("ec286028", "Παύση ήχου"),
                 n("ad77feb6", "Μη διαθέσιμοι υπότιτλοι"),
                 n("e82adfeb", function (e) {
-                    return e.count + " ιστοσελίδ" + f(e.count, "α", "ες");
+                    return e.count + " ιστοσελίδ" + t(e.count, "α", "ες");
                 }),
                 n("cfb8c1f7", function (e) {
-                    return e.count + " αν" + f(e.count, "άρτηση", "αρτήσεις");
+                    return e.count + " αν" + t(e.count, "άρτηση", "αρτήσεις");
                 }),
                 n("g78032d5", function (e) {
                     return e.count + " ιστοσελίδες και αναρτήσεις";
@@ -9162,7 +9171,7 @@
                 n("g10ace38", "Επιλογές ψηφοφορίας"),
                 n("a3edf99a", "Τελικά αποτελέσματα"),
                 n("c2b81e9d", function (e) {
-                    return e.formattedCount + " ψήφο" + f(e.count, "ς", "ι");
+                    return e.formattedCount + " ψήφο" + t(e.count, "ς", "ι");
                 }),
                 n("e86732e4", "Επιλεγμένο"),
                 n("a35a5b10", "Ακόλουθοι που γνωρίζετε"),
@@ -9191,7 +9200,7 @@
                     return "Έχετε υπερβεί το όριο χαρακτήρων κατά " + e.count;
                 }),
                 n("db11b27f", function (e) {
-                    return e.count + " χαρακτήρ" + f(e.count, "α", "ε") + "ς ακόμη";
+                    return e.count + " χαρακτήρ" + t(e.count, "α", "ε") + "ς ακόμη";
                 }),
                 n("bb7b821a", "Μπορείτε να απαντήσετε"),
                 n("fc41217b", function (e) {
@@ -9246,22 +9255,22 @@
                     return "Άνοδος κατά " + e.trendValuePositivePercent;
                 }),
                 n("e3098e07", function (e) {
-                    return "Πριν από " + e.minutes + " λεπτ" + f(e.minutes, "ό", "ά");
+                    return "Πριν από " + e.minutes + " λεπτ" + t(e.minutes, "ό", "ά");
                 }),
                 n("fea16a51", function (e) {
-                    return "Πριν από " + e.hours + " ώρ" + f(e.hours, "α", "ες");
+                    return "Πριν από " + e.hours + " ώρ" + t(e.hours, "α", "ες");
                 }),
                 n("a4f2d94d", function (e) {
-                    return "Πριν από " + e.days + " ημέρ" + f(e.days, "α", "ες");
+                    return "Πριν από " + e.days + " ημέρ" + t(e.days, "α", "ες");
                 }),
                 n("hf9bc787", function (e) {
-                    return "Πριν από " + e.weeks + " εβδομάδ" + f(e.weeks, "α", "ες");
+                    return "Πριν από " + e.weeks + " εβδομάδ" + t(e.weeks, "α", "ες");
                 }),
                 n("efcd5885", function (e) {
-                    return "Πριν από " + e.months + " μήν" + f(e.months, "α", "ες");
+                    return "Πριν από " + e.months + " μήν" + t(e.months, "α", "ες");
                 }),
                 n("c37228b5", function (e) {
-                    return "Πριν από " + e.years + " έτ" + f(e.years, "ος", "η");
+                    return "Πριν από " + e.years + " έτ" + t(e.years, "ος", "η");
                 }),
                 n("jf83d092", "Ημέρα"),
                 n("af4abf20", "Μήνας"),
@@ -9281,7 +9290,7 @@
                 n("de540c32", "Εμφάνιση κωδικού πρόσβασης"),
                 n("b4abfdb4", "Απόκρυψη κωδικού πρόσβασης"),
                 n("f06ae5d3", function (e) {
-                    return e.standardTweetCount + " χαρακτήρ" + f(e.standardTweetCount, "α", "ε") + "ς που απομένει για μια τυπική ανάρτηση, " + e.totalCount + " χαρακτήρ" + f(e.totalCount, "α", "ε") + "ς εναπομένον σύνολο";
+                    return e.standardTweetCount + " χαρακτήρ" + t(e.standardTweetCount, "α", "ε") + "ς που απομένει για μια τυπική ανάρτηση, " + e.totalCount + " χαρακτήρ" + t(e.totalCount, "α", "ε") + "ς εναπομένον σύνολο";
                 }),
                 n("fee0a8bc", "Αποθήκευση"),
                 n("ae7f7656", "Εκκαθάριση"),
@@ -9365,52 +9374,52 @@
                 n("b8c465e2", "Αναδημοσιεύτηκε"),
                 n("c7a989ce", "Προστέθηκε στους σελιδοδείκτες"),
                 n("b03835c7", function (e) {
-                    return e.replyCount + " απ" + f(e.replyCount, "άντηση", "αντήσεις");
+                    return e.replyCount + " απ" + t(e.replyCount, "άντηση", "αντήσεις");
                 }),
                 n("g4a195e7", function (e) {
-                    return e.retweetCount + " αναδημοσ" + f(e.retweetCount, "ίευση", "ιεύσεις");
+                    return e.retweetCount + " αναδημοσ" + t(e.retweetCount, "ίευση", "ιεύσεις");
                 }),
                 n("e089b42d", function (e) {
-                    return e.likeCount + " επισ" + f(e.likeCount, "ήμανση", "ημάνσεις") + ' "Μου αρέσει"';
+                    return e.likeCount + " επισ" + t(e.likeCount, "ήμανση", "ημάνσεις") + ' "Μου αρέσει"';
                 }),
                 n("e0a8fe39", function (e) {
-                    return e.bookmarkCount + " σελιδοδείκτ" + f(e.bookmarkCount, "η", "ε") + "ς";
+                    return e.bookmarkCount + " σελιδοδείκτ" + t(e.bookmarkCount, "η", "ε") + "ς";
                 }),
                 n("c58b2ab7", function (e) {
-                    return e.viewCount + " προβολ" + f(e.viewCount, "ή", "ές");
+                    return e.viewCount + " προβολ" + t(e.viewCount, "ή", "ές");
                 }),
                 n("f2849136", "Στοιχεία ανάλυσης"),
                 n("f206e970", "Προβολή στοιχείων ανάλυσης ανάρτησης"),
                 n("c7073f5b", function (e) {
-                    return e.count + " . προβολ" + f(e.count, "ή", "ές") + "Προβολή στοιχείων ανάλυσης ανάρτησης";
+                    return e.count + " . προβολ" + t(e.count, "ή", "ές") + "Προβολή στοιχείων ανάλυσης ανάρτησης";
                 }),
                 n("hf417cf0", "Κατάργηση από τους σελιδοδείκτες"),
                 n("febd30ed", function (e) {
-                    return e.count + " Σελιδοδείκτ" + f(e.count, "η", "ε") + "ς. Σελιδοδείκτης";
+                    return e.count + " Σελιδοδείκτ" + t(e.count, "η", "ε") + "ς. Σελιδοδείκτης";
                 }),
                 n("a8dc9587", function (e) {
-                    return e.count + " Σελιδοδείκτ" + f(e.count, "η", "ε") + "ς. Με σελιδοδείκτη";
+                    return e.count + " Σελιδοδείκτ" + t(e.count, "η", "ε") + "ς. Με σελιδοδείκτη";
                 }),
                 n("d636ebc6", 'Σήμανση "Μου αρέσει"'),
                 n("eb3a8b0c", 'Αναίρεση της σήμανσης "Μου αρέσει"'),
                 n("j472ecfc", "Κάντε Like σε αυτή την ανάρτηση"),
                 n("dac92b0d", function (e) {
-                    return e.count + " επισ" + f(e.count, "ήμανση", "ημάνσεις") + ' "Μου αρέσει". Επισήμανση "Μου αρέσει"';
+                    return e.count + " επισ" + t(e.count, "ήμανση", "ημάνσεις") + ' "Μου αρέσει". Επισήμανση "Μου αρέσει"';
                 }),
                 n("aa650427", function (e) {
-                    return e.count + " επισ" + f(e.count, "ήμανση", "ημάνσεις") + ' "Μου αρέσει". Επισημάνθηκε με "Μου αρέσει"';
+                    return e.count + " επισ" + t(e.count, "ήμανση", "ημάνσεις") + ' "Μου αρέσει". Επισημάνθηκε με "Μου αρέσει"';
                 }),
                 n("hdf7226a", "Απάντηση"),
                 n("c9940955", function (e) {
-                    return e.count + " Απ" + f(e.count, "άντηση", "αντήσεις") + ". Απάντηση";
+                    return e.count + " Απ" + t(e.count, "άντηση", "αντήσεις") + ". Απάντηση";
                 }),
                 n("f2919fb8", "Αναδημοσίευση"),
                 n("fd1e5446", "Αναίρεση αναδημοσίευσης"),
                 n("dfad425d", function (e) {
-                    return e.count + " . αναδημοσ" + f(e.count, "ίευση", "ιεύσεις") + "Αναδημοσίευση";
+                    return e.count + " . αναδημοσ" + t(e.count, "ίευση", "ιεύσεις") + "Αναδημοσίευση";
                 }),
                 n("a386dc55", function (e) {
-                    return e.count + " αναδημοσ" + f(e.count, "ίευση", "ιεύσεις") + ". Αναδημοσιεύτηκε";
+                    return e.count + " αναδημοσ" + t(e.count, "ίευση", "ιεύσεις") + ". Αναδημοσιεύτηκε";
                 }),
                 n("f65198c2", "Προβολή παραθέσεων"),
                 n("dc63da16", "Κοινοποίηση"),
@@ -9430,19 +9439,19 @@
                     return "" + e.formattedCount;
                 }),
                 n("ad9b5988", function (e) {
-                    return "Ακόλουθο" + f(e.count, "ς", "ι");
+                    return "Ακόλουθο" + t(e.count, "ς", "ι");
                 }),
                 n("a9980948", function (e) {
                     return "" + e.formattedCount;
                 }),
                 n("ce44a35c", function (e) {
-                    return "Συνδρομητ" + f(e.count, "ή", "έ") + "ς";
+                    return "Συνδρομητ" + t(e.count, "ή", "έ") + "ς";
                 }),
                 n("id949f68", function (e) {
                     return "" + e.formattedCount;
                 }),
                 n("hb608cfc", function (e) {
-                    return "Συνδρομ" + f(e.count, "ή", "ές");
+                    return "Συνδρομ" + t(e.count, "ή", "ές");
                 }),
                 n("ef633578", "Ανασταλμένος λογαριασμός"),
                 n("a6a3d496", "Εισαγωγή συνδέσμου"),
@@ -9521,14 +9530,14 @@
                 n("acddd4d4", "Κόκκινο"),
                 n("cef9b062", "Πετρόλ"),
                 n("d9daefca", "Σκούρο γκρι");
-            var d = a(202784),
-                b = [],
-                u = {};
-            function i(e) {
+            var b = a(202784),
+                u = [],
+                i = {};
+            function o(e) {
                 return e;
             }
-            var o = (function (e) {
-                var c, a, n, o, m;
+            var m = (function (e) {
+                var c, a, n, f, m;
                 function g() {
                     return e.apply(this, arguments) || this;
                 }
@@ -9536,12 +9545,12 @@
                     (a = e),
                     ((c = g).prototype = Object.create(a.prototype)),
                     (c.prototype.constructor = c),
-                    r(c, a),
+                    d(c, a),
                     (g.prototype.render = function () {
-                        return d.createElement.apply(d, this[this.props.$i18n].reduce(this.templateReducer, [d.Fragment, null]));
+                        return b.createElement.apply(b, this[this.props.$i18n].reduce(this.templateReducer, [b.Fragment, null]));
                     }),
                     (n = g),
-                    (o = [
+                    (f = [
                         {
                             key: "bb85c49d",
                             get: function () {
@@ -10061,7 +10070,7 @@
                         {
                             key: "a1c39f5b",
                             get: function () {
-                                return ["Θα επικοινωνήσουμε μαζί σας μόλις ληφθεί μια απόφαση. Αυτό μπορεί να συμβεί σε έως " + this.props.days + " ημέρ" + f(this.props.days, "α", "ες") + "."];
+                                return ["Θα επικοινωνήσουμε μαζί σας μόλις ληφθεί μια απόφαση. Αυτό μπορεί να συμβεί σε έως " + this.props.days + " ημέρ" + t(this.props.days, "α", "ες") + "."];
                             },
                         },
                         {
@@ -10547,25 +10556,25 @@
                         {
                             key: "a629c16f",
                             get: function () {
-                                return ["", " " + this.props.discountedPrice + " τιμολογείται μηνιαίως για " + f(this.props.duration, "ένα μήνα", this.props.duration + " μήνες")];
+                                return ["", " " + this.props.discountedPrice + " τιμολογείται μηνιαίως για " + t(this.props.duration, "ένα μήνα", this.props.duration + " μήνες")];
                             },
                         },
                         {
                             key: "c142e70f",
                             get: function () {
-                                return ["", " " + this.props.discountedPrice + " χρεώνεται ετησίως για " + f(this.props.duration, "ένα έτος", this.props.duration + " έτη")];
+                                return ["", " " + this.props.discountedPrice + " χρεώνεται ετησίως για " + t(this.props.duration, "ένα έτος", this.props.duration + " έτη")];
                             },
                         },
                         {
                             key: "e9dc8a25",
                             get: function () {
-                                return ["", " ", " για " + f(this.props.duration, "ένα έτος", this.props.duration + " έτη")];
+                                return ["", " ", " για " + t(this.props.duration, "ένα έτος", this.props.duration + " έτη")];
                             },
                         },
                         {
                             key: "f8a9cbb7",
                             get: function () {
-                                return ["", " ", " για " + f(this.props.duration, "ένας μήνα", this.props.duration + " μήνε") + "ς"];
+                                return ["", " ", " για " + t(this.props.duration, "ένας μήνα", this.props.duration + " μήνε") + "ς"];
                             },
                         },
                         {
@@ -10997,7 +11006,7 @@
                         {
                             key: "b6656851",
                             get: function () {
-                                return ["Υπάρχ" + f(this.props.count, "ει", "ουν") + " " + this.props.count + " ακόμη άτομ" + f(this.props.count, "ο", "α") + " σε αυτή την ομάδα"];
+                                return ["Υπάρχ" + t(this.props.count, "ει", "ουν") + " " + this.props.count + " ακόμη άτομ" + t(this.props.count, "ο", "α") + " σε αυτή την ομάδα"];
                             },
                         },
                         {
@@ -11309,7 +11318,7 @@
                         {
                             key: "eea0a14f",
                             get: function () {
-                                return [this.props.formattedCount + " Επισ" + f(this.props.count, "ήμανση", "ημάνσεις") + ' "Μου αρέσει"'];
+                                return [this.props.formattedCount + " Επισ" + t(this.props.count, "ήμανση", "ημάνσεις") + ' "Μου αρέσει"'];
                             },
                         },
                         {
@@ -11321,7 +11330,7 @@
                         {
                             key: "a0a3adf7",
                             get: function () {
-                                return [this.props.formattedCount + " αν" + f(this.props.count, "άρτηση", "αρτήσεις")];
+                                return [this.props.formattedCount + " αν" + t(this.props.count, "άρτηση", "αρτήσεις")];
                             },
                         },
                         {
@@ -11849,7 +11858,7 @@
                         {
                             key: "e77dac87",
                             get: function () {
-                                return ["Εμφάνιση " + this.props.remainingCount + " περισσότερων αν" + f(this.props.remainingCount, "άρτηση", "αρτήσεις") + " αναφερομένων από αιτούντες"];
+                                return ["Εμφάνιση " + this.props.remainingCount + " περισσότερων αν" + t(this.props.remainingCount, "άρτηση", "αρτήσεις") + " αναφερομένων από αιτούντες"];
                             },
                         },
                         {
@@ -12881,7 +12890,7 @@
                         {
                             key: "d6b02329",
                             get: function () {
-                                return [this.props.formattedCount + " Μέλ" + f(this.props.count, "ος", "η")];
+                                return [this.props.formattedCount + " Μέλ" + t(this.props.count, "ος", "η")];
                             },
                         },
                         {
@@ -12984,371 +12993,371 @@
                             key: "templateReducer",
                             get: function () {
                                 var e,
-                                    c = d.Children.toArray(this.props.children),
-                                    a = ((e = this.props.$i18n), b[u[e]] || i);
-                                return function (e, n, f) {
-                                    return e.concat(n, c[a(f)]);
+                                    c = b.Children.toArray(this.props.children),
+                                    a = ((e = this.props.$i18n), u[i[e]] || o);
+                                return function (e, n, t) {
+                                    return e.concat(n, c[a(t)]);
                                 };
                             },
                         },
-                    ]) && t(n.prototype, o),
-                    m && t(n, m),
+                    ]) && r(n.prototype, f),
+                    m && r(n, m),
                     Object.defineProperty(n, "prototype", { writable: !1 }),
                     g
                 );
-            })(a(111677)._ActualI18NFormatMessage || d.Component);
-            n("_ActualI18NFormatMessage", o),
+            })(a(111677)._ActualI18NFormatMessage || b.Component);
+            n("_ActualI18NFormatMessage", m),
                 n("I18NFormatMessage", function (e) {
-                    return d.createElement(o, e);
+                    return b.createElement(m, e);
                 });
-            var m = a(495075);
+            var g = a(495075);
             a(800694), a(556829), a(530152), a(658610), a(492344), a(663823);
-            m._validateParameterTypeNumber, m._validateParameterPresence;
-            var g = m._numberRound,
-                s = (m._numberFormat, m._numberFormatterFn),
-                h = m._pluralGeneratorFn,
-                k = (m._currencyNameFormat, m._currencyFormatterFn),
-                y = (m._validateParameterTypeDate, m._dateToPartsFormat, m._dateToPartsFormatterFn),
-                l = (m._dateFormat, m._dateFormatterFn),
-                p = m._relativeTimeFormatterFn,
-                N = m._unitFormatterFn;
-            (m.a1743373916 = s(["", , 1, 0, 1, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("truncate"), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }, , { 3: { one: "0 χιλ'.'", other: "0 χιλ'.'" }, 4: { one: "00 χιλ'.'", other: "00 χιλ'.'" }, 5: { one: "000 χιλ'.'", other: "000 χιλ'.'" }, 6: { one: "0 εκ'.'", other: "0 εκ'.'" }, 7: { one: "00 εκ'.'", other: "00 εκ'.'" }, 8: { one: "000 εκ'.'", other: "000 εκ'.'" }, 9: { one: "0 δισ'.'", other: "0 δισ'.'" }, 10: { one: "00 δισ'.'", other: "00 δισ'.'" }, 11: { one: "000 δισ'.'", other: "000 δισ'.'" }, 12: { one: "0 τρισ'.'", other: "0 τρισ'.'" }, 13: { one: "00 τρισ'.'", other: "00 τρισ'.'" }, 14: { one: "000 τρισ'.'", other: "000 τρισ'.'" }, maxExponent: 14 }], m("el").pluralGenerator({}))),
-                (m.b470233368 = s(["", , 1, 0, 3, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1233556590 = s(["", , 1, 0, 2, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("round"), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1904963378 = s(["", , 1, 0, 0, , , , , , "", "0", "-0", "-", "", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1076008134 = s(["", , 2, 0, 0, , , , , , "", "00", "-00", "-", "", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b513537091 = s(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("truncate"), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }, , { 3: { one: "0 χιλ'.'", other: "0 χιλ'.'" }, 4: { one: "00 χιλ'.'", other: "00 χιλ'.'" }, 5: { one: "000 χιλ'.'", other: "000 χιλ'.'" }, 6: { one: "0 εκ'.'", other: "0 εκ'.'" }, 7: { one: "00 εκ'.'", other: "00 εκ'.'" }, 8: { one: "000 εκ'.'", other: "000 εκ'.'" }, 9: { one: "0 δισ'.'", other: "0 δισ'.'" }, 10: { one: "00 δισ'.'", other: "00 δισ'.'" }, 11: { one: "000 δισ'.'", other: "000 δισ'.'" }, 12: { one: "0 τρισ'.'", other: "0 τρισ'.'" }, 13: { one: "00 τρισ'.'", other: "00 τρισ'.'" }, 14: { one: "000 τρισ'.'", other: "000 τρισ'.'" }, maxExponent: 14 }], m("el").pluralGenerator({}))),
-                (m.b1272725681 = s(["", , 1, 0, 1, , , , 3, , "%", "#,##0%", "-#,##0%%", "-", "%", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1928401540 = s(["", , 1, 0, 0, , , , 3, , "%", "#,##0%", "-#,##0%%", "-", "%", g("round"), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1598635779 = s(["", , 1, 0, 1, , , , 3, , "%", "#,##0%", "-#,##0%%", "-", "%", g("round"), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a836020931 = s(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("truncate"), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }, , { 3: { one: "0 χιλ'.'", other: "0 χιλ'.'" }, 4: { one: "00 χιλ'.'", other: "00 χιλ'.'" }, 5: { one: "000 χιλ'.'", other: "000 χιλ'.'" }, 6: { one: "0 εκ'.'", other: "0 εκ'.'" }, 7: { one: "00 εκ'.'", other: "00 εκ'.'" }, 8: { one: "000 εκ'.'", other: "000 εκ'.'" }, 9: { one: "0 δισ'.'", other: "0 δισ'.'" }, 10: { one: "00 δισ'.'", other: "00 δισ'.'" }, 11: { one: "000 δισ'.'", other: "000 δισ'.'" }, 12: { one: "0 τρισ'.'", other: "0 τρισ'.'" }, 13: { one: "00 τρισ'.'", other: "00 τρισ'.'" }, 14: { one: "000 τρισ'.'", other: "000 τρισ'.'" }, maxExponent: 14 }], m("el").pluralGenerator({}))),
-                (m.b1475961242 = s(["", , 1, 1, 1, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("truncate"), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1750530788 = s(["", , 1, 2, 2, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("truncate"), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1447518696 = s(["", , 1, 0, 0, 1, 2, , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }, , { 3: { one: "0 χιλ'.'", other: "0 χιλ'.'" }, 4: { one: "00 χιλ'.'", other: "00 χιλ'.'" }, 5: { one: "000 χιλ'.'", other: "000 χιλ'.'" }, 6: { one: "0 εκ'.'", other: "0 εκ'.'" }, 7: { one: "00 εκ'.'", other: "00 εκ'.'" }, 8: { one: "000 εκ'.'", other: "000 εκ'.'" }, 9: { one: "0 δισ'.'", other: "0 δισ'.'" }, 10: { one: "00 δισ'.'", other: "00 δισ'.'" }, 11: { one: "000 δισ'.'", other: "000 δισ'.'" }, 12: { one: "0 τρισ'.'", other: "0 τρισ'.'" }, 13: { one: "00 τρισ'.'", other: "00 τρισ'.'" }, 14: { one: "000 τρισ'.'", other: "000 τρισ'.'" }, maxExponent: 14 }], m("el").pluralGenerator({}))),
-                (m.a1020780497 = s(["", , 1, 2, 2, , , 0, 3, , " 'AED'", "#,##0.00 'AED'", "-#,##0.00 'AED' 'AED'", "-", " 'AED'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a719180586 = s(["", , 1, 0, 0, , , , 3, , " 'ALL'", "#,##0 'ALL'", "-#,##0 'ALL' 'ALL'", "-", " 'ALL'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1406812275 = s(["", , 1, 2, 2, , , 0, 3, , " 'ARS'", "#,##0.00 'ARS'", "-#,##0.00 'ARS' 'ARS'", "-", " 'ARS'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b136961080 = s(["", , 1, 2, 2, , , 0, 3, , " 'A$'", "#,##0.00 'A$'", "-#,##0.00 'A$' 'A$'", "-", " 'A$'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1802079263 = s(["", , 1, 2, 2, , , 0, 3, , " 'BAM'", "#,##0.00 'BAM'", "-#,##0.00 'BAM' 'BAM'", "-", " 'BAM'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1894431363 = s(["", , 1, 2, 2, , , 0, 3, , " 'BDT'", "#,##0.00 'BDT'", "-#,##0.00 'BDT' 'BDT'", "-", " 'BDT'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1974777690 = s(["", , 1, 2, 2, , , 0, 3, , " 'BGN'", "#,##0.00 'BGN'", "-#,##0.00 'BGN' 'BGN'", "-", " 'BGN'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1865864293 = s(["", , 1, 3, 3, , , 0, 3, , " 'BHD'", "#,##0.000 'BHD'", "-#,##0.000 'BHD' 'BHD'", "-", " 'BHD'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a349734487 = s(["", , 1, 2, 2, , , 0, 3, , " 'R$'", "#,##0.00 'R$'", "-#,##0.00 'R$' 'R$'", "-", " 'R$'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1984404356 = s(["", , 1, 0, 0, , , , 3, , " 'BYR'", "#,##0 'BYR'", "-#,##0 'BYR' 'BYR'", "-", " 'BYR'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1643248713 = s(["", , 1, 2, 2, , , 0, 3, , " 'CA$'", "#,##0.00 'CA$'", "-#,##0.00 'CA$' 'CA$'", "-", " 'CA$'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1411444942 = s(["", , 1, 2, 2, , , 0, 3, , " 'CHF'", "#,##0.00 'CHF'", "-#,##0.00 'CHF' 'CHF'", "-", " 'CHF'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1797085264 = s(["", , 1, 0, 0, , , , 3, , " 'CLP'", "#,##0 'CLP'", "-#,##0 'CLP' 'CLP'", "-", " 'CLP'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1151935541 = s(["", , 1, 2, 2, , , 0, 3, , " 'CN¥'", "#,##0.00 'CN¥'", "-#,##0.00 'CN¥' 'CN¥'", "-", " 'CN¥'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1711197811 = s(["", , 1, 0, 0, , , , 3, , " 'COP'", "#,##0 'COP'", "-#,##0 'COP' 'COP'", "-", " 'COP'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b891502619 = s(["", , 1, 2, 2, , , 0, 3, , " 'CZK'", "#,##0.00 'CZK'", "-#,##0.00 'CZK' 'CZK'", "-", " 'CZK'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b433436203 = s(["", , 1, 2, 2, , , 0, 3, , " 'DKK'", "#,##0.00 'DKK'", "-#,##0.00 'DKK' 'DKK'", "-", " 'DKK'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b10463585 = s(["", , 1, 2, 2, , , 0, 3, , " 'DZD'", "#,##0.00 'DZD'", "-#,##0.00 'DZD' 'DZD'", "-", " 'DZD'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a344168479 = s(["", , 1, 2, 2, , , 0, 3, , " 'EGP'", "#,##0.00 'EGP'", "-#,##0.00 'EGP' 'EGP'", "-", " 'EGP'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1622701219 = s(["", , 1, 2, 2, , , 0, 3, , " '€'", "#,##0.00 '€'", "-#,##0.00 '€' '€'", "-", " '€'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b606562348 = s(["", , 1, 2, 2, , , 0, 3, , " '£'", "#,##0.00 '£'", "-#,##0.00 '£' '£'", "-", " '£'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b2144391741 = s(["", , 1, 2, 2, , , 0, 3, , " 'GHS'", "#,##0.00 'GHS'", "-#,##0.00 'GHS' 'GHS'", "-", " 'GHS'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1802688971 = s(["", , 1, 2, 2, , , 0, 3, , " 'GTQ'", "#,##0.00 'GTQ'", "-#,##0.00 'GTQ' 'GTQ'", "-", " 'GTQ'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1214406094 = s(["", , 1, 2, 2, , , 0, 3, , " 'HK$'", "#,##0.00 'HK$'", "-#,##0.00 'HK$' 'HK$'", "-", " 'HK$'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b977984718 = s(["", , 1, 2, 2, , , 0, 3, , " 'HRK'", "#,##0.00 'HRK'", "-#,##0.00 'HRK' 'HRK'", "-", " 'HRK'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b896714870 = s(["", , 1, 2, 2, , , 0, 3, , " 'HUF'", "#,##0.00 'HUF'", "-#,##0.00 'HUF' 'HUF'", "-", " 'HUF'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b994216640 = s(["", , 1, 0, 0, , , , 3, , " 'IDR'", "#,##0 'IDR'", "-#,##0 'IDR' 'IDR'", "-", " 'IDR'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1624548261 = s(["", , 1, 2, 2, , , 0, 3, , " '₪'", "#,##0.00 '₪'", "-#,##0.00 '₪' '₪'", "-", " '₪'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1610695446 = s(["", , 1, 2, 2, , , 0, 3, , " '₹'", "#,##0.00 '₹'", "-#,##0.00 '₹' '₹'", "-", " '₹'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b634966971 = s(["", , 1, 0, 0, , , , 3, , " 'IQD'", "#,##0 'IQD'", "-#,##0 'IQD' 'IQD'", "-", " 'IQD'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b571244022 = s(["", , 1, 0, 0, , , , 3, , " 'ISK'", "#,##0 'ISK'", "-#,##0 'ISK' 'ISK'", "-", " 'ISK'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a313489096 = s(["", , 1, 0, 0, , , , 3, , " 'JP¥'", "#,##0 'JP¥'", "-#,##0 'JP¥' 'JP¥'", "-", " 'JP¥'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1319735530 = s(["", , 1, 2, 2, , , 0, 3, , " 'KES'", "#,##0.00 'KES'", "-#,##0.00 'KES' 'KES'", "-", " 'KES'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a881257938 = s(["", , 1, 0, 0, , , , 3, , " '₩'", "#,##0 '₩'", "-#,##0 '₩' '₩'", "-", " '₩'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1692900095 = s(["", , 1, 3, 3, , , 0, 3, , " 'KWD'", "#,##0.000 'KWD'", "-#,##0.000 'KWD' 'KWD'", "-", " 'KWD'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1921871222 = s(["", , 1, 2, 2, , , 0, 3, , " 'KZT'", "#,##0.00 'KZT'", "-#,##0.00 'KZT' 'KZT'", "-", " 'KZT'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1609189059 = s(["", , 1, 0, 0, , , , 3, , " 'LBP'", "#,##0 'LBP'", "-#,##0 'LBP' 'LBP'", "-", " 'LBP'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1328593823 = s(["", , 1, 2, 2, , , 0, 3, , " 'MAD'", "#,##0.00 'MAD'", "-#,##0.00 'MAD' 'MAD'", "-", " 'MAD'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1042302313 = s(["", , 1, 2, 2, , , 0, 3, , " 'MKD'", "#,##0.00 'MKD'", "-#,##0.00 'MKD' 'MKD'", "-", " 'MKD'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b699676022 = s(["", , 1, 2, 2, , , 0, 3, , " 'MX$'", "#,##0.00 'MX$'", "-#,##0.00 'MX$' 'MX$'", "-", " 'MX$'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b628564905 = s(["", , 1, 2, 2, , , 0, 3, , " 'MYR'", "#,##0.00 'MYR'", "-#,##0.00 'MYR' 'MYR'", "-", " 'MYR'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b260080026 = s(["", , 1, 2, 2, , , 0, 3, , " 'NGN'", "#,##0.00 'NGN'", "-#,##0.00 'NGN' 'NGN'", "-", " 'NGN'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b33817381 = s(["", , 1, 2, 2, , , 0, 3, , " 'NOK'", "#,##0.00 'NOK'", "-#,##0.00 'NOK' 'NOK'", "-", " 'NOK'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a245085961 = s(["", , 1, 2, 2, , , 0, 3, , " 'NZ$'", "#,##0.00 'NZ$'", "-#,##0.00 'NZ$' 'NZ$'", "-", " 'NZ$'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1457669034 = s(["", , 1, 2, 2, , , 0, 3, , " 'PEN'", "#,##0.00 'PEN'", "-#,##0.00 'PEN' 'PEN'", "-", " 'PEN'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1545403529 = s(["", , 1, 2, 2, , , 0, 3, , " 'PHP'", "#,##0.00 'PHP'", "-#,##0.00 'PHP' 'PHP'", "-", " 'PHP'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1123745888 = s(["", , 1, 0, 0, , , , 3, , " 'PKR'", "#,##0 'PKR'", "-#,##0 'PKR' 'PKR'", "-", " 'PKR'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1658073091 = s(["", , 1, 2, 2, , , 0, 3, , " 'PLN'", "#,##0.00 'PLN'", "-#,##0.00 'PLN' 'PLN'", "-", " 'PLN'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b2060617101 = s(["", , 1, 2, 2, , , 0, 3, , " 'QAR'", "#,##0.00 'QAR'", "-#,##0.00 'QAR' 'QAR'", "-", " 'QAR'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b775999390 = s(["", , 1, 2, 2, , , 0, 3, , " 'RON'", "#,##0.00 'RON'", "-#,##0.00 'RON' 'RON'", "-", " 'RON'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1180110132 = s(["", , 1, 0, 0, , , , 3, , " 'RSD'", "#,##0 'RSD'", "-#,##0 'RSD' 'RSD'", "-", " 'RSD'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b615306736 = s(["", , 1, 2, 2, , , 0, 3, , " 'RUB'", "#,##0.00 'RUB'", "-#,##0.00 'RUB' 'RUB'", "-", " 'RUB'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b285609739 = s(["", , 1, 2, 2, , , 0, 3, , " 'SAR'", "#,##0.00 'SAR'", "-#,##0.00 'SAR' 'SAR'", "-", " 'SAR'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b177557782 = s(["", , 1, 2, 2, , , 0, 3, , " 'SEK'", "#,##0.00 'SEK'", "-#,##0.00 'SEK' 'SEK'", "-", " 'SEK'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b126764127 = s(["", , 1, 2, 2, , , 0, 3, , " 'SGD'", "#,##0.00 'SGD'", "-#,##0.00 'SGD' 'SGD'", "-", " 'SGD'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1683982480 = s(["", , 1, 2, 2, , , 0, 3, , " '฿'", "#,##0.00 '฿'", "-#,##0.00 '฿' '฿'", "-", " '฿'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a832836273 = s(["", , 1, 3, 3, , , 0, 3, , " 'TND'", "#,##0.000 'TND'", "-#,##0.000 'TND' 'TND'", "-", " 'TND'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1095054156 = s(["", , 1, 2, 2, , , 0, 3, , " 'TRY'", "#,##0.00 'TRY'", "-#,##0.00 'TRY' 'TRY'", "-", " 'TRY'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a73311055 = s(["", , 1, 2, 2, , , 0, 3, , " 'NT$'", "#,##0.00 'NT$'", "-#,##0.00 'NT$' 'NT$'", "-", " 'NT$'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a809154102 = s(["", , 1, 0, 0, , , , 3, , " 'TZS'", "#,##0 'TZS'", "-#,##0 'TZS' 'TZS'", "-", " 'TZS'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1480162413 = s(["", , 1, 2, 2, , , 0, 3, , " 'UAH'", "#,##0.00 'UAH'", "-#,##0.00 'UAH' 'UAH'", "-", " 'UAH'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1157321519 = s(["", , 1, 0, 0, , , , 3, , " 'UGX'", "#,##0 'UGX'", "-#,##0 'UGX' 'UGX'", "-", " 'UGX'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b723849515 = s(["", , 1, 2, 2, , , 0, 3, , " '$'", "#,##0.00 '$'", "-#,##0.00 '$' '$'", "-", " '$'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1814631640 = s(["", , 1, 2, 2, , , 0, 3, , " 'VEF'", "#,##0.00 'VEF'", "-#,##0.00 'VEF' 'VEF'", "-", " 'VEF'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a883104980 = s(["", , 1, 0, 0, , , , 3, , " '₫'", "#,##0 '₫'", "-#,##0 '₫' '₫'", "-", " '₫'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1631948732 = s(["", , 1, 2, 2, , , 0, 3, , " 'ZAR'", "#,##0.00 'ZAR'", "-#,##0.00 'ZAR' 'ZAR'", "-", " 'ZAR'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1980116149 = s(["", , 1, 2, 2, , , 0, 3, , " 'ZMW'", "#,##0.00 'ZMW'", "-#,##0.00 'ZMW' 'ZMW'", "-", " 'ZMW'", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a49078474 = s(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.b1334104659 = s(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }, , { 3: { one: "0 χιλ'.'", other: "0 χιλ'.'" }, 4: { one: "00 χιλ'.'", other: "00 χιλ'.'" }, 5: { one: "000 χιλ'.'", other: "000 χιλ'.'" }, 6: { one: "0 εκ'.'", other: "0 εκ'.'" }, 7: { one: "00 εκ'.'", other: "00 εκ'.'" }, 8: { one: "000 εκ'.'", other: "000 εκ'.'" }, 9: { one: "0 δισ'.'", other: "0 δισ'.'" }, 10: { one: "00 δισ'.'", other: "00 δισ'.'" }, 11: { one: "000 δισ'.'", other: "000 δισ'.'" }, 12: { one: "0 τρισ'.'", other: "0 τρισ'.'" }, 13: { one: "00 τρισ'.'", other: "00 τρισ'.'" }, 14: { one: "000 τρισ'.'", other: "000 τρισ'.'" }, maxExponent: 14 }], m("el").pluralGenerator({}))),
-                (m.b1888836369 = s(["", , 1, 0, 2, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }, , { 3: { one: "0 χιλ'.'", other: "0 χιλ'.'" }, 4: { one: "00 χιλ'.'", other: "00 χιλ'.'" }, 5: { one: "000 χιλ'.'", other: "000 χιλ'.'" }, 6: { one: "0 εκ'.'", other: "0 εκ'.'" }, 7: { one: "00 εκ'.'", other: "00 εκ'.'" }, 8: { one: "000 εκ'.'", other: "000 εκ'.'" }, 9: { one: "0 δισ'.'", other: "0 δισ'.'" }, 10: { one: "00 δισ'.'", other: "00 δισ'.'" }, 11: { one: "000 δισ'.'", other: "000 δισ'.'" }, 12: { one: "0 τρισ'.'", other: "0 τρισ'.'" }, 13: { one: "00 τρισ'.'", other: "00 τρισ'.'" }, 14: { one: "000 τρισ'.'", other: "000 τρισ'.'" }, maxExponent: 14 }], m("el").pluralGenerator({}))),
-                (m.a455387152 = s(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("round"), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
-                (m.a1660499094 = h(function (e) {
+            g._validateParameterTypeNumber, g._validateParameterPresence;
+            var s = g._numberRound,
+                h = (g._numberFormat, g._numberFormatterFn),
+                k = g._pluralGeneratorFn,
+                y = (g._currencyNameFormat, g._currencyFormatterFn),
+                l = (g._validateParameterTypeDate, g._dateToPartsFormat, g._dateToPartsFormatterFn),
+                p = (g._dateFormat, g._dateFormatterFn),
+                N = g._relativeTimeFormatterFn,
+                j = g._unitFormatterFn;
+            (g.a1743373916 = h(["", , 1, 0, 1, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s("truncate"), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }, , { 3: { one: "0 χιλ'.'", other: "0 χιλ'.'" }, 4: { one: "00 χιλ'.'", other: "00 χιλ'.'" }, 5: { one: "000 χιλ'.'", other: "000 χιλ'.'" }, 6: { one: "0 εκ'.'", other: "0 εκ'.'" }, 7: { one: "00 εκ'.'", other: "00 εκ'.'" }, 8: { one: "000 εκ'.'", other: "000 εκ'.'" }, 9: { one: "0 δισ'.'", other: "0 δισ'.'" }, 10: { one: "00 δισ'.'", other: "00 δισ'.'" }, 11: { one: "000 δισ'.'", other: "000 δισ'.'" }, 12: { one: "0 τρισ'.'", other: "0 τρισ'.'" }, 13: { one: "00 τρισ'.'", other: "00 τρισ'.'" }, 14: { one: "000 τρισ'.'", other: "000 τρισ'.'" }, maxExponent: 14 }], g("el").pluralGenerator({}))),
+                (g.b470233368 = h(["", , 1, 0, 3, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1233556590 = h(["", , 1, 0, 2, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s("round"), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1904963378 = h(["", , 1, 0, 0, , , , , , "", "0", "-0", "-", "", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1076008134 = h(["", , 2, 0, 0, , , , , , "", "00", "-00", "-", "", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b513537091 = h(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s("truncate"), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }, , { 3: { one: "0 χιλ'.'", other: "0 χιλ'.'" }, 4: { one: "00 χιλ'.'", other: "00 χιλ'.'" }, 5: { one: "000 χιλ'.'", other: "000 χιλ'.'" }, 6: { one: "0 εκ'.'", other: "0 εκ'.'" }, 7: { one: "00 εκ'.'", other: "00 εκ'.'" }, 8: { one: "000 εκ'.'", other: "000 εκ'.'" }, 9: { one: "0 δισ'.'", other: "0 δισ'.'" }, 10: { one: "00 δισ'.'", other: "00 δισ'.'" }, 11: { one: "000 δισ'.'", other: "000 δισ'.'" }, 12: { one: "0 τρισ'.'", other: "0 τρισ'.'" }, 13: { one: "00 τρισ'.'", other: "00 τρισ'.'" }, 14: { one: "000 τρισ'.'", other: "000 τρισ'.'" }, maxExponent: 14 }], g("el").pluralGenerator({}))),
+                (g.b1272725681 = h(["", , 1, 0, 1, , , , 3, , "%", "#,##0%", "-#,##0%%", "-", "%", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1928401540 = h(["", , 1, 0, 0, , , , 3, , "%", "#,##0%", "-#,##0%%", "-", "%", s("round"), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1598635779 = h(["", , 1, 0, 1, , , , 3, , "%", "#,##0%", "-#,##0%%", "-", "%", s("round"), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a836020931 = h(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s("truncate"), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }, , { 3: { one: "0 χιλ'.'", other: "0 χιλ'.'" }, 4: { one: "00 χιλ'.'", other: "00 χιλ'.'" }, 5: { one: "000 χιλ'.'", other: "000 χιλ'.'" }, 6: { one: "0 εκ'.'", other: "0 εκ'.'" }, 7: { one: "00 εκ'.'", other: "00 εκ'.'" }, 8: { one: "000 εκ'.'", other: "000 εκ'.'" }, 9: { one: "0 δισ'.'", other: "0 δισ'.'" }, 10: { one: "00 δισ'.'", other: "00 δισ'.'" }, 11: { one: "000 δισ'.'", other: "000 δισ'.'" }, 12: { one: "0 τρισ'.'", other: "0 τρισ'.'" }, 13: { one: "00 τρισ'.'", other: "00 τρισ'.'" }, 14: { one: "000 τρισ'.'", other: "000 τρισ'.'" }, maxExponent: 14 }], g("el").pluralGenerator({}))),
+                (g.b1475961242 = h(["", , 1, 1, 1, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s("truncate"), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1750530788 = h(["", , 1, 2, 2, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s("truncate"), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1447518696 = h(["", , 1, 0, 0, 1, 2, , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }, , { 3: { one: "0 χιλ'.'", other: "0 χιλ'.'" }, 4: { one: "00 χιλ'.'", other: "00 χιλ'.'" }, 5: { one: "000 χιλ'.'", other: "000 χιλ'.'" }, 6: { one: "0 εκ'.'", other: "0 εκ'.'" }, 7: { one: "00 εκ'.'", other: "00 εκ'.'" }, 8: { one: "000 εκ'.'", other: "000 εκ'.'" }, 9: { one: "0 δισ'.'", other: "0 δισ'.'" }, 10: { one: "00 δισ'.'", other: "00 δισ'.'" }, 11: { one: "000 δισ'.'", other: "000 δισ'.'" }, 12: { one: "0 τρισ'.'", other: "0 τρισ'.'" }, 13: { one: "00 τρισ'.'", other: "00 τρισ'.'" }, 14: { one: "000 τρισ'.'", other: "000 τρισ'.'" }, maxExponent: 14 }], g("el").pluralGenerator({}))),
+                (g.a1020780497 = h(["", , 1, 2, 2, , , 0, 3, , " 'AED'", "#,##0.00 'AED'", "-#,##0.00 'AED' 'AED'", "-", " 'AED'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a719180586 = h(["", , 1, 0, 0, , , , 3, , " 'ALL'", "#,##0 'ALL'", "-#,##0 'ALL' 'ALL'", "-", " 'ALL'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1406812275 = h(["", , 1, 2, 2, , , 0, 3, , " 'ARS'", "#,##0.00 'ARS'", "-#,##0.00 'ARS' 'ARS'", "-", " 'ARS'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b136961080 = h(["", , 1, 2, 2, , , 0, 3, , " 'A$'", "#,##0.00 'A$'", "-#,##0.00 'A$' 'A$'", "-", " 'A$'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1802079263 = h(["", , 1, 2, 2, , , 0, 3, , " 'BAM'", "#,##0.00 'BAM'", "-#,##0.00 'BAM' 'BAM'", "-", " 'BAM'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1894431363 = h(["", , 1, 2, 2, , , 0, 3, , " 'BDT'", "#,##0.00 'BDT'", "-#,##0.00 'BDT' 'BDT'", "-", " 'BDT'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1974777690 = h(["", , 1, 2, 2, , , 0, 3, , " 'BGN'", "#,##0.00 'BGN'", "-#,##0.00 'BGN' 'BGN'", "-", " 'BGN'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1865864293 = h(["", , 1, 3, 3, , , 0, 3, , " 'BHD'", "#,##0.000 'BHD'", "-#,##0.000 'BHD' 'BHD'", "-", " 'BHD'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a349734487 = h(["", , 1, 2, 2, , , 0, 3, , " 'R$'", "#,##0.00 'R$'", "-#,##0.00 'R$' 'R$'", "-", " 'R$'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1984404356 = h(["", , 1, 0, 0, , , , 3, , " 'BYR'", "#,##0 'BYR'", "-#,##0 'BYR' 'BYR'", "-", " 'BYR'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1643248713 = h(["", , 1, 2, 2, , , 0, 3, , " 'CA$'", "#,##0.00 'CA$'", "-#,##0.00 'CA$' 'CA$'", "-", " 'CA$'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1411444942 = h(["", , 1, 2, 2, , , 0, 3, , " 'CHF'", "#,##0.00 'CHF'", "-#,##0.00 'CHF' 'CHF'", "-", " 'CHF'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1797085264 = h(["", , 1, 0, 0, , , , 3, , " 'CLP'", "#,##0 'CLP'", "-#,##0 'CLP' 'CLP'", "-", " 'CLP'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1151935541 = h(["", , 1, 2, 2, , , 0, 3, , " 'CN¥'", "#,##0.00 'CN¥'", "-#,##0.00 'CN¥' 'CN¥'", "-", " 'CN¥'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1711197811 = h(["", , 1, 0, 0, , , , 3, , " 'COP'", "#,##0 'COP'", "-#,##0 'COP' 'COP'", "-", " 'COP'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b891502619 = h(["", , 1, 2, 2, , , 0, 3, , " 'CZK'", "#,##0.00 'CZK'", "-#,##0.00 'CZK' 'CZK'", "-", " 'CZK'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b433436203 = h(["", , 1, 2, 2, , , 0, 3, , " 'DKK'", "#,##0.00 'DKK'", "-#,##0.00 'DKK' 'DKK'", "-", " 'DKK'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b10463585 = h(["", , 1, 2, 2, , , 0, 3, , " 'DZD'", "#,##0.00 'DZD'", "-#,##0.00 'DZD' 'DZD'", "-", " 'DZD'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a344168479 = h(["", , 1, 2, 2, , , 0, 3, , " 'EGP'", "#,##0.00 'EGP'", "-#,##0.00 'EGP' 'EGP'", "-", " 'EGP'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1622701219 = h(["", , 1, 2, 2, , , 0, 3, , " '€'", "#,##0.00 '€'", "-#,##0.00 '€' '€'", "-", " '€'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b606562348 = h(["", , 1, 2, 2, , , 0, 3, , " '£'", "#,##0.00 '£'", "-#,##0.00 '£' '£'", "-", " '£'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b2144391741 = h(["", , 1, 2, 2, , , 0, 3, , " 'GHS'", "#,##0.00 'GHS'", "-#,##0.00 'GHS' 'GHS'", "-", " 'GHS'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1802688971 = h(["", , 1, 2, 2, , , 0, 3, , " 'GTQ'", "#,##0.00 'GTQ'", "-#,##0.00 'GTQ' 'GTQ'", "-", " 'GTQ'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1214406094 = h(["", , 1, 2, 2, , , 0, 3, , " 'HK$'", "#,##0.00 'HK$'", "-#,##0.00 'HK$' 'HK$'", "-", " 'HK$'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b977984718 = h(["", , 1, 2, 2, , , 0, 3, , " 'HRK'", "#,##0.00 'HRK'", "-#,##0.00 'HRK' 'HRK'", "-", " 'HRK'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b896714870 = h(["", , 1, 2, 2, , , 0, 3, , " 'HUF'", "#,##0.00 'HUF'", "-#,##0.00 'HUF' 'HUF'", "-", " 'HUF'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b994216640 = h(["", , 1, 0, 0, , , , 3, , " 'IDR'", "#,##0 'IDR'", "-#,##0 'IDR' 'IDR'", "-", " 'IDR'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1624548261 = h(["", , 1, 2, 2, , , 0, 3, , " '₪'", "#,##0.00 '₪'", "-#,##0.00 '₪' '₪'", "-", " '₪'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1610695446 = h(["", , 1, 2, 2, , , 0, 3, , " '₹'", "#,##0.00 '₹'", "-#,##0.00 '₹' '₹'", "-", " '₹'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b634966971 = h(["", , 1, 0, 0, , , , 3, , " 'IQD'", "#,##0 'IQD'", "-#,##0 'IQD' 'IQD'", "-", " 'IQD'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b571244022 = h(["", , 1, 0, 0, , , , 3, , " 'ISK'", "#,##0 'ISK'", "-#,##0 'ISK' 'ISK'", "-", " 'ISK'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a313489096 = h(["", , 1, 0, 0, , , , 3, , " 'JP¥'", "#,##0 'JP¥'", "-#,##0 'JP¥' 'JP¥'", "-", " 'JP¥'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1319735530 = h(["", , 1, 2, 2, , , 0, 3, , " 'KES'", "#,##0.00 'KES'", "-#,##0.00 'KES' 'KES'", "-", " 'KES'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a881257938 = h(["", , 1, 0, 0, , , , 3, , " '₩'", "#,##0 '₩'", "-#,##0 '₩' '₩'", "-", " '₩'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1692900095 = h(["", , 1, 3, 3, , , 0, 3, , " 'KWD'", "#,##0.000 'KWD'", "-#,##0.000 'KWD' 'KWD'", "-", " 'KWD'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1921871222 = h(["", , 1, 2, 2, , , 0, 3, , " 'KZT'", "#,##0.00 'KZT'", "-#,##0.00 'KZT' 'KZT'", "-", " 'KZT'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1609189059 = h(["", , 1, 0, 0, , , , 3, , " 'LBP'", "#,##0 'LBP'", "-#,##0 'LBP' 'LBP'", "-", " 'LBP'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1328593823 = h(["", , 1, 2, 2, , , 0, 3, , " 'MAD'", "#,##0.00 'MAD'", "-#,##0.00 'MAD' 'MAD'", "-", " 'MAD'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1042302313 = h(["", , 1, 2, 2, , , 0, 3, , " 'MKD'", "#,##0.00 'MKD'", "-#,##0.00 'MKD' 'MKD'", "-", " 'MKD'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b699676022 = h(["", , 1, 2, 2, , , 0, 3, , " 'MX$'", "#,##0.00 'MX$'", "-#,##0.00 'MX$' 'MX$'", "-", " 'MX$'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b628564905 = h(["", , 1, 2, 2, , , 0, 3, , " 'MYR'", "#,##0.00 'MYR'", "-#,##0.00 'MYR' 'MYR'", "-", " 'MYR'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b260080026 = h(["", , 1, 2, 2, , , 0, 3, , " 'NGN'", "#,##0.00 'NGN'", "-#,##0.00 'NGN' 'NGN'", "-", " 'NGN'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b33817381 = h(["", , 1, 2, 2, , , 0, 3, , " 'NOK'", "#,##0.00 'NOK'", "-#,##0.00 'NOK' 'NOK'", "-", " 'NOK'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a245085961 = h(["", , 1, 2, 2, , , 0, 3, , " 'NZ$'", "#,##0.00 'NZ$'", "-#,##0.00 'NZ$' 'NZ$'", "-", " 'NZ$'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1457669034 = h(["", , 1, 2, 2, , , 0, 3, , " 'PEN'", "#,##0.00 'PEN'", "-#,##0.00 'PEN' 'PEN'", "-", " 'PEN'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1545403529 = h(["", , 1, 2, 2, , , 0, 3, , " 'PHP'", "#,##0.00 'PHP'", "-#,##0.00 'PHP' 'PHP'", "-", " 'PHP'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1123745888 = h(["", , 1, 0, 0, , , , 3, , " 'PKR'", "#,##0 'PKR'", "-#,##0 'PKR' 'PKR'", "-", " 'PKR'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1658073091 = h(["", , 1, 2, 2, , , 0, 3, , " 'PLN'", "#,##0.00 'PLN'", "-#,##0.00 'PLN' 'PLN'", "-", " 'PLN'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b2060617101 = h(["", , 1, 2, 2, , , 0, 3, , " 'QAR'", "#,##0.00 'QAR'", "-#,##0.00 'QAR' 'QAR'", "-", " 'QAR'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b775999390 = h(["", , 1, 2, 2, , , 0, 3, , " 'RON'", "#,##0.00 'RON'", "-#,##0.00 'RON' 'RON'", "-", " 'RON'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1180110132 = h(["", , 1, 0, 0, , , , 3, , " 'RSD'", "#,##0 'RSD'", "-#,##0 'RSD' 'RSD'", "-", " 'RSD'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b615306736 = h(["", , 1, 2, 2, , , 0, 3, , " 'RUB'", "#,##0.00 'RUB'", "-#,##0.00 'RUB' 'RUB'", "-", " 'RUB'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b285609739 = h(["", , 1, 2, 2, , , 0, 3, , " 'SAR'", "#,##0.00 'SAR'", "-#,##0.00 'SAR' 'SAR'", "-", " 'SAR'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b177557782 = h(["", , 1, 2, 2, , , 0, 3, , " 'SEK'", "#,##0.00 'SEK'", "-#,##0.00 'SEK' 'SEK'", "-", " 'SEK'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b126764127 = h(["", , 1, 2, 2, , , 0, 3, , " 'SGD'", "#,##0.00 'SGD'", "-#,##0.00 'SGD' 'SGD'", "-", " 'SGD'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1683982480 = h(["", , 1, 2, 2, , , 0, 3, , " '฿'", "#,##0.00 '฿'", "-#,##0.00 '฿' '฿'", "-", " '฿'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a832836273 = h(["", , 1, 3, 3, , , 0, 3, , " 'TND'", "#,##0.000 'TND'", "-#,##0.000 'TND' 'TND'", "-", " 'TND'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1095054156 = h(["", , 1, 2, 2, , , 0, 3, , " 'TRY'", "#,##0.00 'TRY'", "-#,##0.00 'TRY' 'TRY'", "-", " 'TRY'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a73311055 = h(["", , 1, 2, 2, , , 0, 3, , " 'NT$'", "#,##0.00 'NT$'", "-#,##0.00 'NT$' 'NT$'", "-", " 'NT$'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a809154102 = h(["", , 1, 0, 0, , , , 3, , " 'TZS'", "#,##0 'TZS'", "-#,##0 'TZS' 'TZS'", "-", " 'TZS'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1480162413 = h(["", , 1, 2, 2, , , 0, 3, , " 'UAH'", "#,##0.00 'UAH'", "-#,##0.00 'UAH' 'UAH'", "-", " 'UAH'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1157321519 = h(["", , 1, 0, 0, , , , 3, , " 'UGX'", "#,##0 'UGX'", "-#,##0 'UGX' 'UGX'", "-", " 'UGX'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b723849515 = h(["", , 1, 2, 2, , , 0, 3, , " '$'", "#,##0.00 '$'", "-#,##0.00 '$' '$'", "-", " '$'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1814631640 = h(["", , 1, 2, 2, , , 0, 3, , " 'VEF'", "#,##0.00 'VEF'", "-#,##0.00 'VEF' 'VEF'", "-", " 'VEF'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a883104980 = h(["", , 1, 0, 0, , , , 3, , " '₫'", "#,##0 '₫'", "-#,##0 '₫' '₫'", "-", " '₫'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1631948732 = h(["", , 1, 2, 2, , , 0, 3, , " 'ZAR'", "#,##0.00 'ZAR'", "-#,##0.00 'ZAR' 'ZAR'", "-", " 'ZAR'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1980116149 = h(["", , 1, 2, 2, , , 0, 3, , " 'ZMW'", "#,##0.00 'ZMW'", "-#,##0.00 'ZMW' 'ZMW'", "-", " 'ZMW'", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a49078474 = h(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.b1334104659 = h(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }, , { 3: { one: "0 χιλ'.'", other: "0 χιλ'.'" }, 4: { one: "00 χιλ'.'", other: "00 χιλ'.'" }, 5: { one: "000 χιλ'.'", other: "000 χιλ'.'" }, 6: { one: "0 εκ'.'", other: "0 εκ'.'" }, 7: { one: "00 εκ'.'", other: "00 εκ'.'" }, 8: { one: "000 εκ'.'", other: "000 εκ'.'" }, 9: { one: "0 δισ'.'", other: "0 δισ'.'" }, 10: { one: "00 δισ'.'", other: "00 δισ'.'" }, 11: { one: "000 δισ'.'", other: "000 δισ'.'" }, 12: { one: "0 τρισ'.'", other: "0 τρισ'.'" }, 13: { one: "00 τρισ'.'", other: "00 τρισ'.'" }, 14: { one: "000 τρισ'.'", other: "000 τρισ'.'" }, maxExponent: 14 }], g("el").pluralGenerator({}))),
+                (g.b1888836369 = h(["", , 1, 0, 2, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }, , { 3: { one: "0 χιλ'.'", other: "0 χιλ'.'" }, 4: { one: "00 χιλ'.'", other: "00 χιλ'.'" }, 5: { one: "000 χιλ'.'", other: "000 χιλ'.'" }, 6: { one: "0 εκ'.'", other: "0 εκ'.'" }, 7: { one: "00 εκ'.'", other: "00 εκ'.'" }, 8: { one: "000 εκ'.'", other: "000 εκ'.'" }, 9: { one: "0 δισ'.'", other: "0 δισ'.'" }, 10: { one: "00 δισ'.'", other: "00 δισ'.'" }, 11: { one: "000 δισ'.'", other: "000 δισ'.'" }, 12: { one: "0 τρισ'.'", other: "0 τρισ'.'" }, 13: { one: "00 τρισ'.'", other: "00 τρισ'.'" }, 14: { one: "000 τρισ'.'", other: "000 τρισ'.'" }, maxExponent: 14 }], g("el").pluralGenerator({}))),
+                (g.a455387152 = h(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s("round"), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "e", "‰": "‰" }])),
+                (g.a1660499094 = k(function (e) {
                     return 1 == e ? "one" : "other";
                 })),
-                (m.b1960896936 = k(m("el").numberFormatter({ raw: "#,##0.00 'AED'" }))),
-                (m.a185694743 = k(m("el").numberFormatter({ raw: "#,##0 'ALL'" }))),
-                (m.a1416153590 = k(m("el").numberFormatter({ raw: "#,##0.00 'ARS'" }))),
-                (m.b645739928 = k(m("el").numberFormatter({ raw: "#,##0.00 'A$'" }))),
-                (m.a784528330 = k(m("el").numberFormatter({ raw: "#,##0.00 'BAM'" }))),
-                (m.b647523866 = k(m("el").numberFormatter({ raw: "#,##0.00 'BDT'" }))),
-                (m.a1843212271 = k(m("el").numberFormatter({ raw: "#,##0.00 'BGN'" }))),
-                (m.b1850542854 = k(m("el").numberFormatter({ raw: "#,##0.000 'BHD'" }))),
-                (m.b1336407428 = k(m("el").numberFormatter({ raw: "#,##0.00 'R$'" }))),
-                (m.a752925949 = k(m("el").numberFormatter({ raw: "#,##0 'BYR'" }))),
-                (m.b2025290990 = k(m("el").numberFormatter({ raw: "#,##0.00 'CA$'" }))),
-                (m.b50474217 = k(m("el").numberFormatter({ raw: "#,##0.00 'CHF'" }))),
-                (m.b509135279 = k(m("el").numberFormatter({ raw: "#,##0 'CLP'" }))),
-                (m.a1523534442 = k(m("el").numberFormatter({ raw: "#,##0.00 'CN¥'" }))),
-                (m.b2141591532 = k(m("el").numberFormatter({ raw: "#,##0 'COP'" }))),
-                (m.b1112131388 = k(m("el").numberFormatter({ raw: "#,##0.00 'CZK'" }))),
-                (m.a203025620 = k(m("el").numberFormatter({ raw: "#,##0.00 'DKK'" }))),
-                (m.a430274890 = k(m("el").numberFormatter({ raw: "#,##0.00 'DZD'" }))),
-                (m.b1461033014 = k(m("el").numberFormatter({ raw: "#,##0.00 'EGP'" }))),
-                (m.b1863625066 = k(m("el").numberFormatter({ raw: "#,##0.00 '€'" }))),
-                (m.a1882036547 = k(m("el").numberFormatter({ raw: "#,##0.00 '£'" }))),
-                (m.b1296988506 = k(m("el").numberFormatter({ raw: "#,##0.00 'GHS'" }))),
-                (m.a705862772 = k(m("el").numberFormatter({ raw: "#,##0.00 'GTQ'" }))),
-                (m.b1616071689 = k(m("el").numberFormatter({ raw: "#,##0.00 'HK$'" }))),
-                (m.a501890839 = k(m("el").numberFormatter({ raw: "#,##0.00 'HRK'" }))),
-                (m.b1273711169 = k(m("el").numberFormatter({ raw: "#,##0.00 'HUF'" }))),
-                (m.b1390011711 = k(m("el").numberFormatter({ raw: "#,##0 'IDR'" }))),
-                (m.a1443679592 = k(m("el").numberFormatter({ raw: "#,##0.00 '₪'" }))),
-                (m.b1104909493 = k(m("el").numberFormatter({ raw: "#,##0.00 '₹'" }))),
-                (m.a1156793436 = k(m("el").numberFormatter({ raw: "#,##0 'IQD'" }))),
-                (m.b1162762441 = k(m("el").numberFormatter({ raw: "#,##0 'ISK'" }))),
-                (m.b1681655035 = k(m("el").numberFormatter({ raw: "#,##0 'JP¥'" }))),
-                (m.b1283225505 = k(m("el").numberFormatter({ raw: "#,##0.00 'KES'" }))),
-                (m.a1778904360 = k(m("el").numberFormatter({ raw: "#,##0 '₩'" }))),
-                (m.a1377501600 = k(m("el").numberFormatter({ raw: "#,##0.000 'KWD'" }))),
-                (m.a203111763 = k(m("el").numberFormatter({ raw: "#,##0.00 'KZT'" }))),
-                (m.a2006153630 = k(m("el").numberFormatter({ raw: "#,##0 'LBP'" }))),
-                (m.b1777056824 = k(m("el").numberFormatter({ raw: "#,##0.00 'MAD'" }))),
-                (m.b1491954606 = k(m("el").numberFormatter({ raw: "#,##0.00 'MKD'" }))),
-                (m.a1741950165 = k(m("el").numberFormatter({ raw: "#,##0.00 'MX$'" }))),
-                (m.b1550996846 = k(m("el").numberFormatter({ raw: "#,##0.00 'MYR'" }))),
-                (m.a1282099811 = k(m("el").numberFormatter({ raw: "#,##0.00 'NGN'" }))),
-                (m.b293692786 = k(m("el").numberFormatter({ raw: "#,##0.00 'NOK'" }))),
-                (m.a678509056 = k(m("el").numberFormatter({ raw: "#,##0.00 'NZ$'" }))),
-                (m.b1302254177 = k(m("el").numberFormatter({ raw: "#,##0.00 'PEN'" }))),
-                (m.a1417515168 = k(m("el").numberFormatter({ raw: "#,##0.00 'PHP'" }))),
-                (m.b157682783 = k(m("el").numberFormatter({ raw: "#,##0 'PKR'" }))),
-                (m.a615304294 = k(m("el").numberFormatter({ raw: "#,##0.00 'PLN'" }))),
-                (m.a1300025334 = k(m("el").numberFormatter({ raw: "#,##0.00 'QAR'" }))),
-                (m.b1826498585 = k(m("el").numberFormatter({ raw: "#,##0.00 'RON'" }))),
-                (m.a1437224629 = k(m("el").numberFormatter({ raw: "#,##0 'RSD'" }))),
-                (m.b1139993607 = k(m("el").numberFormatter({ raw: "#,##0.00 'RUB'" }))),
-                (m.a490678708 = k(m("el").numberFormatter({ raw: "#,##0.00 'SAR'" }))),
-                (m.b454677921 = k(m("el").numberFormatter({ raw: "#,##0.00 'SEK'" }))),
-                (m.a1119925384 = k(m("el").numberFormatter({ raw: "#,##0.00 'SGD'" }))),
-                (m.b601986198 = k(m("el").numberFormatter({ raw: "#,##0.00 '฿'" }))),
-                (m.a485326894 = k(m("el").numberFormatter({ raw: "#,##0.000 'TND'" }))),
-                (m.a341586493 = k(m("el").numberFormatter({ raw: "#,##0.00 'TRY'" }))),
-                (m.b117074569 = k(m("el").numberFormatter({ raw: "#,##0.00 'NT$'" }))),
-                (m.b1320093557 = k(m("el").numberFormatter({ raw: "#,##0 'TZS'" }))),
-                (m.b604959428 = k(m("el").numberFormatter({ raw: "#,##0.00 'UAH'" }))),
-                (m.a883161778 = k(m("el").numberFormatter({ raw: "#,##0 'UGX'" }))),
-                (m.b1924278958 = k(m("el").numberFormatter({ raw: "#,##0.00 '$'" }))),
-                (m.a335640033 = k(m("el").numberFormatter({ raw: "#,##0.00 'VEF'" }))),
-                (m.b324019732 = k(m("el").numberFormatter({ raw: "#,##0 '₫'" }))),
-                (m.b194550835 = k(m("el").numberFormatter({ raw: "#,##0.00 'ZAR'" }))),
-                (m.a2008704500 = k(m("el").numberFormatter({ raw: "#,##0.00 'ZMW'" }))),
-                (m.a1050971638 = y({ 1: m("el").numberFormatter({ raw: "0" }) }, { pattern: "d MMM", timeSeparator: ":", months: { M: { 3: { 1: "Ιαν", 2: "Φεβ", 3: "Μαρ", 4: "Απρ", 5: "Μαΐ", 6: "Ιουν", 7: "Ιουλ", 8: "Αυγ", 9: "Σεπ", 10: "Οκτ", 11: "Νοε", 12: "Δεκ" } } } })),
-                (m.a1870231975 = y({ 1: m("el").numberFormatter({ raw: "0" }) }, { pattern: "d MMM y", timeSeparator: ":", months: { M: { 3: { 1: "Ιαν", 2: "Φεβ", 3: "Μαρ", 4: "Απρ", 5: "Μαΐ", 6: "Ιουν", 7: "Ιουλ", 8: "Αυγ", 9: "Σεπ", 10: "Οκτ", 11: "Νοε", 12: "Δεκ" } } } })),
-                (m.a688393288 = y({ 1: m("el").numberFormatter({ raw: "0" }), 2: m("el").numberFormatter({ raw: "00" }) }, { pattern: "h:mm a", timeSeparator: ":", dayPeriods: { am: "π.μ.", pm: "μ.μ." } })),
-                (m.b1806366901 = y({ 1: m("el").numberFormatter({ raw: "0" }) }, { pattern: "E, d MMM", timeSeparator: ":", days: { E: { 1: { sun: "Κυρ", mon: "Δευ", tue: "Τρί", wed: "Τετ", thu: "Πέμ", fri: "Παρ", sat: "Σάβ" } } }, months: { M: { 3: { 1: "Ιαν", 2: "Φεβ", 3: "Μαρ", 4: "Απρ", 5: "Μαΐ", 6: "Ιουν", 7: "Ιουλ", 8: "Αυγ", 9: "Σεπ", 10: "Οκτ", 11: "Νοε", 12: "Δεκ" } } } })),
-                (m.a2115867066 = y({ 1: m("el").numberFormatter({ raw: "0" }) }, { pattern: "E, d MMM y", timeSeparator: ":", days: { E: { 1: { sun: "Κυρ", mon: "Δευ", tue: "Τρί", wed: "Τετ", thu: "Πέμ", fri: "Παρ", sat: "Σάβ" } } }, months: { M: { 3: { 1: "Ιαν", 2: "Φεβ", 3: "Μαρ", 4: "Απρ", 5: "Μαΐ", 6: "Ιουν", 7: "Ιουλ", 8: "Αυγ", 9: "Σεπ", 10: "Οκτ", 11: "Νοε", 12: "Δεκ" } } } })),
-                (m.b1798978733 = y({ 1: m("el").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM", timeSeparator: ":", months: { M: { 4: { 1: "Ιανουαρίου", 2: "Φεβρουαρίου", 3: "Μαρτίου", 4: "Απριλίου", 5: "Μαΐου", 6: "Ιουνίου", 7: "Ιουλίου", 8: "Αυγούστου", 9: "Σεπτεμβρίου", 10: "Οκτωβρίου", 11: "Νοεμβρίου", 12: "Δεκεμβρίου" } } } })),
-                (m.b1431697825 = y({ 1: m("el").numberFormatter({ raw: "0" }), 2: m("el").numberFormatter({ raw: "00" }) }, { pattern: "d MMMM y - h:mm:ss a z", timeSeparator: ":", months: { M: { 4: { 1: "Ιανουαρίου", 2: "Φεβρουαρίου", 3: "Μαρτίου", 4: "Απριλίου", 5: "Μαΐου", 6: "Ιουνίου", 7: "Ιουλίου", 8: "Αυγούστου", 9: "Σεπτεμβρίου", 10: "Οκτωβρίου", 11: "Νοεμβρίου", 12: "Δεκεμβρίου" } } }, dayPeriods: { am: "π.μ.", pm: "μ.μ." }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: ["+H;-H", "+H:mm;-H:mm"] })),
-                (m.a2060715330 = y({ 1: m("el").numberFormatter({ raw: "0" }), 2: m("el").numberFormatter({ raw: "00" }) }, { pattern: "d MMM y, h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "Ιαν", 2: "Φεβ", 3: "Μαρ", 4: "Απρ", 5: "Μαΐ", 6: "Ιουν", 7: "Ιουλ", 8: "Αυγ", 9: "Σεπ", 10: "Οκτ", 11: "Νοε", 12: "Δεκ" } } }, dayPeriods: { am: "π.μ.", pm: "μ.μ." } })),
-                (m.a1310382802 = y({ 1: m("el").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM y", timeSeparator: ":", months: { M: { 4: { 1: "Ιανουαρίου", 2: "Φεβρουαρίου", 3: "Μαρτίου", 4: "Απριλίου", 5: "Μαΐου", 6: "Ιουνίου", 7: "Ιουλίου", 8: "Αυγούστου", 9: "Σεπτεμβρίου", 10: "Οκτωβρίου", 11: "Νοεμβρίου", 12: "Δεκεμβρίου" } } } })),
-                (m.a730546641 = y({ 1: m("el").numberFormatter({ raw: "0" }), 2: m("el").numberFormatter({ raw: "00" }) }, { pattern: "d MMM, h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "Ιαν", 2: "Φεβ", 3: "Μαρ", 4: "Απρ", 5: "Μαΐ", 6: "Ιουν", 7: "Ιουλ", 8: "Αυγ", 9: "Σεπ", 10: "Οκτ", 11: "Νοε", 12: "Δεκ" } } }, dayPeriods: { am: "π.μ.", pm: "μ.μ." } })),
-                (m.b594482438 = y({ 1: m("el").numberFormatter({ raw: "0" }), 2: m("el").numberFormatter({ raw: "00" }) }, { pattern: "d/M/yy", timeSeparator: ":" })),
-                (m.a992474718 = y({ 1: m("el").numberFormatter({ raw: "0" }) }, { pattern: "y", timeSeparator: ":" })),
-                (m.a1445742745 = y({ 1: m("el").numberFormatter({ raw: "0" }) }, { pattern: "MMM y", timeSeparator: ":", months: { M: { 3: { 1: "Ιαν", 2: "Φεβ", 3: "Μαρ", 4: "Απρ", 5: "Μαΐ", 6: "Ιουν", 7: "Ιουλ", 8: "Αυγ", 9: "Σεπ", 10: "Οκτ", 11: "Νοε", 12: "Δεκ" } } } })),
-                (m.a2003291500 = y({ 1: m("el").numberFormatter({ raw: "0" }), 2: m("el").numberFormatter({ raw: "00" }) }, { pattern: "EEEE, d MMMM y - h:mm:ss a zzzz", timeSeparator: ":", days: { E: { 4: { sun: "Κυριακή", mon: "Δευτέρα", tue: "Τρίτη", wed: "Τετάρτη", thu: "Πέμπτη", fri: "Παρασκευή", sat: "Σάββατο" } } }, months: { M: { 4: { 1: "Ιανουαρίου", 2: "Φεβρουαρίου", 3: "Μαρτίου", 4: "Απριλίου", 5: "Μαΐου", 6: "Ιουνίου", 7: "Ιουλίου", 8: "Αυγούστου", 9: "Σεπτεμβρίου", 10: "Οκτωβρίου", 11: "Νοεμβρίου", 12: "Δεκεμβρίου" } } }, dayPeriods: { am: "π.μ.", pm: "μ.μ." }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: "+HH:mm;-HH:mm" })),
-                (m.a615482502 = y({ 1: m("el").numberFormatter({ raw: "0" }), 2: m("el").numberFormatter({ raw: "00" }) }, { pattern: "d MMM y, h:mm:ss a", timeSeparator: ":", months: { M: { 3: { 1: "Ιαν", 2: "Φεβ", 3: "Μαρ", 4: "Απρ", 5: "Μαΐ", 6: "Ιουν", 7: "Ιουλ", 8: "Αυγ", 9: "Σεπ", 10: "Οκτ", 11: "Νοε", 12: "Δεκ" } } }, dayPeriods: { am: "π.μ.", pm: "μ.μ." } })),
-                (m.a1891472958 = y({ 1: m("el").numberFormatter({ raw: "0" }), 2: m("el").numberFormatter({ raw: "00" }) }, { pattern: "dd/MM/y", timeSeparator: ":" })),
-                (m.a60862075 = y({ 1: m("el").numberFormatter({ raw: "0" }), 2: m("el").numberFormatter({ raw: "00" }) }, { pattern: "h:mm a", timeSeparator: ":", dayPeriods: { am: "π.μ.", pm: "μ.μ." } })),
-                (m.b1139134483 = y({ 1: m("el").numberFormatter({ raw: "0" }), 2: m("el").numberFormatter({ raw: "00" }) }, { pattern: "E h:mm a", timeSeparator: ":", days: { E: { 1: { sun: "Κυρ", mon: "Δευ", tue: "Τρί", wed: "Τετ", thu: "Πέμ", fri: "Παρ", sat: "Σάβ" } } }, dayPeriods: { am: "π.μ.", pm: "μ.μ." } })),
-                (m.a1869546782 = y({ 1: m("el").numberFormatter({ raw: "0" }) }, { pattern: "LLLL y", timeSeparator: ":", months: { L: { 4: { 1: "Ιανουάριος", 2: "Φεβρουάριος", 3: "Μάρτιος", 4: "Απρίλιος", 5: "Μάιος", 6: "Ιούνιος", 7: "Ιούλιος", 8: "Αύγουστος", 9: "Σεπτέμβριος", 10: "Οκτώβριος", 11: "Νοέμβριος", 12: "Δεκέμβριος" } } } })),
-                (m.b1354954695 = y({ 1: m("el").numberFormatter({ raw: "0" }) }, { pattern: "d MMM y", timeSeparator: ":", months: { M: { 3: { 1: "Ιαν", 2: "Φεβ", 3: "Μαρ", 4: "Απρ", 5: "Μαΐ", 6: "Ιουν", 7: "Ιουλ", 8: "Αυγ", 9: "Σεπ", 10: "Οκτ", 11: "Νοε", 12: "Δεκ" } } } })),
-                (m.a1050286445 = y({}, { pattern: "MMMM", timeSeparator: ":", months: { M: { 4: { 1: "Ιανουαρίου", 2: "Φεβρουαρίου", 3: "Μαρτίου", 4: "Απριλίου", 5: "Μαΐου", 6: "Ιουνίου", 7: "Ιουλίου", 8: "Αυγούστου", 9: "Σεπτεμβρίου", 10: "Οκτωβρίου", 11: "Νοεμβρίου", 12: "Δεκεμβρίου" } } } })),
-                (m.b1991435411 = y({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "Κυριακή", mon: "Δευτέρα", tue: "Τρίτη", wed: "Τετάρτη", thu: "Πέμπτη", fri: "Παρασκευή", sat: "Σάββατο" } } } })),
-                (m.a659564557 = l(m("el").dateToPartsFormatter({ skeleton: "MMMd" }))),
-                (m.b1673452944 = l(m("el").dateToPartsFormatter({ skeleton: "yMMMd" }))),
-                (m.b147767265 = l(m("el").dateToPartsFormatter({ skeleton: "hm" }))),
-                (m.b1055084524 = l(m("el").dateToPartsFormatter({ skeleton: "MMMEd" }))),
-                (m.b364183023 = l(m("el").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
-                (m.b1047696356 = l(m("el").dateToPartsFormatter({ skeleton: "MMMMd" }))),
-                (m.b1823104906 = l(m("el").dateToPartsFormatter({ datetime: "long" }))),
-                (m.b1806393397 = l(m("el").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
-                (m.b2082662295 = l(m("el").dateToPartsFormatter({ date: "long" }))),
-                (m.b1749503448 = l(m("el").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
-                (m.a1595301955 = l(m("el").dateToPartsFormatter({ date: "short" }))),
-                (m.b1112708185 = l(m("el").dateToPartsFormatter({ skeleton: "y" }))),
-                (m.a1054335664 = l(m("el").dateToPartsFormatter({ skeleton: "yMMM" }))),
-                (m.a1611884419 = l(m("el").dateToPartsFormatter({ datetime: "full" }))),
-                (m.b1864567587 = l(m("el").dateToPartsFormatter({ datetime: "medium" }))),
-                (m.b1652211961 = l(m("el").dateToPartsFormatter({ skeleton: "yMMdd" }))),
-                (m.b2044320828 = l(m("el").dateToPartsFormatter({ time: "short" }))),
-                (m.b1290307850 = l(m("el").dateToPartsFormatter({ skeleton: "Ehm" }))),
-                (m.b1674138137 = l(m("el").dateToPartsFormatter({ skeleton: "yMMMM" }))),
-                (m.a2103852048 = l(m("el").dateToPartsFormatter({ date: "medium" }))),
-                (m.a658879364 = l(m("el").dateToPartsFormatter({ skeleton: "MMMM" }))),
-                (m.a1912124804 = l(m("el").dateToPartsFormatter({ skeleton: "EEEE" }))),
-                (m.b1388225996 = p(m("el").numberFormatter({}), m("el").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "σε {0} ημέρα", "relativeTimePattern-count-other": "σε {0} ημέρες" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "πριν από {0} ημέρα", "relativeTimePattern-count-other": "πριν από {0} ημέρες" }, "relative-type--2": "προχθές", "relative-type--1": "χθες", "relative-type-0": "σήμερα", "relative-type-1": "αύριο", "relative-type-2": "μεθαύριο" })),
-                (m.a187481625 = N(m("el").numberFormatter({}), m("el").pluralGenerator({}), { compoundUnitPattern: "{0} ανά {1}", unitProperties: { displayName: "δευτερόλεπτα", one: "{0} δευτερόλεπτο", other: "{0} δευτερόλεπτα", perUnitPattern: "{0} ανά δευτερόλεπτο" } })),
-                (m.b1699481671 = N(m("el").numberFormatter({}), m("el").pluralGenerator({}), { compoundUnitPattern: "{0} ανά {1}", unitProperties: { displayName: "λεπτά", one: "{0} λεπτό", other: "{0} λεπτά", perUnitPattern: "{0} ανά λεπτό" } })),
-                (m.a2037452937 = N(m("el").numberFormatter({}), m("el").pluralGenerator({}), { compoundUnitPattern: "{0} ανά {1}", unitProperties: { displayName: "ώρες", one: "{0} ώρα", other: "{0} ώρες", perUnitPattern: "{0} ανά ώρα" } })),
-                (m.a1472580378 = N(m("el").numberFormatter({}), m("el").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "δευτ.", one: "{0} δ", other: "{0} δ", perUnitPattern: "{0}/δευτ." } })),
-                (m.a577051834 = N(m("el").numberFormatter({}), m("el").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "λεπ.", one: "{0} λ", other: "{0} λ", perUnitPattern: "{0}/λ." } })),
-                (m.a1178550666 = N(m("el").numberFormatter({}), m("el").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ώρα", one: "{0} ώ", other: "{0} ώ", perUnitPattern: "{0}/ώ." } })),
-                (m.b1194561702 = N(m("el").numberFormatter({}), m("el").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ημέρα", one: "{0} η", other: "{0} η", perUnitPattern: "{0}/ημ." } })),
-                (m.b1710263719 = N(m("el").numberFormatter({}), m("el").pluralGenerator({}), { compoundUnitPattern: "{0} ανά {1}", unitProperties: { displayName: "ημέρες", one: "{0} ημέρα", other: "{0} ημέρες", perUnitPattern: "{0} ανά ημέρα" } })),
-                (m.b1624690370 = N(m("el").numberFormatter({}), m("el").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "μήνας", one: "{0} μ", other: "{0} μ", perUnitPattern: "{0}/μ." } })),
-                (m.a1002134845 = N(m("el").numberFormatter({}), m("el").pluralGenerator({}), { compoundUnitPattern: "{0} ανά {1}", unitProperties: { displayName: "μήνες", one: "{0} μήνας", other: "{0} μήνες", perUnitPattern: "{0} ανά μήνα" } })),
-                (m.b1711854237 = N(m("el").numberFormatter({}), m("el").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "έτ.", one: "{0} έ", other: "{0} έ", perUnitPattern: "{0}/έτ." } })),
-                (m.b776724830 = N(m("el").numberFormatter({}), m("el").pluralGenerator({}), { compoundUnitPattern: "{0} ανά {1}", unitProperties: { displayName: "έτη", one: "{0} έτος", other: "{0} έτη", perUnitPattern: "{0} ανά έτος" } })),
-                (m.b1044680557 = N(m("el").numberFormatter({}), m("el").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "δευτ.", one: "{0} δευτ.", other: "{0} δευτ.", perUnitPattern: "{0}/δευτ." } })),
-                (m.a588999411 = N(m("el").numberFormatter({}), m("el").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "λεπ.", one: "{0} λεπ.", other: "{0} λεπ.", perUnitPattern: "{0}/λ." } })),
-                (m.a469855267 = N(m("el").numberFormatter({}), m("el").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ώρες", one: "{0} ώρα", other: "{0} ώρ.", perUnitPattern: "{0}/ώ." } })),
-                (m.b1833872036 = N(m("el").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), m("el").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "δευτ.", one: "{0} δ", other: "{0} δ", perUnitPattern: "{0}/δευτ." } })),
-                n("d58baa7f", m.a1743373916),
-                n("ia24dc8d", m.b470233368),
-                n("iab73d4b", m.b1233556590),
-                n("i3b7a017", m.a187481625),
-                n("ie5d110f", m.b1699481671),
-                n("df5f11b3", m.a2037452937),
-                n("e8733ed9", m.a1472580378),
-                n("be59d8c3", m.a577051834),
-                n("i3d087db", m.a1178550666),
-                n("ga8d18c9", m.b1194561702),
-                n("a91e7d49", m.b1710263719),
-                n("id952a69", m.b1624690370),
-                n("ga09ab65", m.a1002134845),
-                n("c83b901d", m.b1711854237),
-                n("a55b9fed", m.b776724830),
-                n("ccaa970f", m.a659564557),
-                n("jade381b", m.b1673452944),
-                n("d725a289", m.b147767265),
-                n("g08cbabb", m.b513537091),
-                n("c333da63", m.b1388225996),
-                n("h8054d91", m.b1055084524),
-                n("i61fef37", m.b1044680557),
-                n("ba705e27", m.a588999411),
-                n("j86b0d8d", m.a469855267),
-                n("f668e929", m.b1272725681),
-                n("i2785009", m.b1928401540),
-                n("c778d80b", m.b1598635779),
-                n("e8d93005", m.a836020931),
-                n("d46781af", m.b1833872036),
-                n("ba316f05", m.b1475961242),
-                n("c0bdd345", m.a1750530788),
-                n("aa2aa1a1", m.b364183023),
-                n("da44942d", m.b1047696356),
-                n("a54d3ef5", m.b1823104906),
-                n("bfbc051d", m.b1806393397),
-                n("ba2e82a1", m.b2082662295),
-                n("fc209bb7", m.b1749503448),
-                n("cf8abf59", m.b1447518696),
-                n("a9f397f3", m.a1595301955),
-                n("d857e44d", m.b1960896936),
-                n("cb87e3db", m.a185694743),
-                n("a9d5ffd1", m.a1416153590),
-                n("a0e8371d", m.b645739928),
-                n("gcc50dc9", m.a784528330),
-                n("a6a43585", m.b647523866),
-                n("a0cc8f2d", m.a1843212271),
-                n("i31c32c5", m.b1850542854),
-                n("i7dc69e9", m.b1336407428),
-                n("c14a6c03", m.a752925949),
-                n("jaa3d537", m.b2025290990),
-                n("a824080b", m.b50474217),
-                n("d9c0bedb", m.b509135279),
-                n("bf8c0613", m.a1523534442),
-                n("i8163625", m.b2141591532),
-                n("adb53ba1", m.b1112131388),
-                n("iabf697d", m.a203025620),
-                n("a1a0555b", m.a430274890),
-                n("f266f3d9", m.b1461033014),
-                n("a9a8652b", m.b1863625066),
-                n("dbf40761", m.a1882036547),
-                n("b0d993d9", m.b1296988506),
-                n("ac1308e1", m.a705862772),
-                n("a7889ab3", m.b1616071689),
-                n("c614f5cd", m.a501890839),
-                n("i55d57e3", m.b1273711169),
-                n("e4b6002b", m.b1390011711),
-                n("d28e983b", m.a1443679592),
-                n("e8c9232d", m.b1104909493),
-                n("c8994ae1", m.a1156793436),
-                n("f821c2a5", m.b1162762441),
-                n("j348b9c9", m.b1681655035),
-                n("i6f93b9b", m.b1283225505),
-                n("c6150bd5", m.a1778904360),
-                n("i8921e09", m.a1377501600),
-                n("ef239279", m.a203111763),
-                n("hecdb149", m.a2006153630),
-                n("fdd039b7", m.b1777056824),
-                n("f30c2c37", m.b1491954606),
-                n("d9ea7bff", m.a1741950165),
-                n("ea3df4b7", m.b1550996846),
-                n("jaac21bb", m.a1282099811),
-                n("hb435ced", m.b293692786),
-                n("ce699d81", m.a678509056),
-                n("bc56d3d7", m.b1302254177),
-                n("f8561913", m.a1417515168),
-                n("g6485d53", m.b157682783),
-                n("ff561cc1", m.a615304294),
-                n("b42011d3", m.a1300025334),
-                n("a6660bcd", m.b1826498585),
-                n("f9b80449", m.a1437224629),
-                n("gdee4d5d", m.b1139993607),
-                n("h36f2103", m.a490678708),
-                n("a19ad037", m.b454677921),
-                n("g713f699", m.a1119925384),
-                n("ff2e39af", m.b601986198),
-                n("be34316d", m.a485326894),
-                n("aef81b75", m.a341586493),
-                n("fcce70a5", m.b117074569),
-                n("jc9d352f", m.b1320093557),
-                n("be1cb8c5", m.b604959428),
-                n("j9371501", m.a883161778),
-                n("j7d4397d", m.b1924278958),
-                n("d61441dd", m.a335640033),
-                n("e2a99e97", m.b324019732),
-                n("f7ce19ab", m.b194550835),
-                n("b2a0213f", m.a2008704500),
-                n("d7d71245", m.b1112708185),
-                n("a2f2faab", m.a1054335664),
-                n("g8d1b99b", m.a1611884419),
-                n("d0a77c9b", m.b1864567587),
-                n("e18e399b", m.b1652211961),
-                n("b6ca7bcb", m.b2044320828),
-                n("h0e4cdf5", m.b1290307850),
-                n("g727ddcf", m.b1674138137),
-                n("h3629783", m.a2103852048),
-                n("a20c68af", m.a658879364),
-                n("ja781451", m.a49078474),
-                n("cfa1a7b9", m.b1334104659),
-                n("f3b9b9a7", m.a1912124804),
-                n("eefcd267", m.b1888836369),
-                n("fa8afc43", m.a455387152);
+                (g.b1960896936 = y(g("el").numberFormatter({ raw: "#,##0.00 'AED'" }))),
+                (g.a185694743 = y(g("el").numberFormatter({ raw: "#,##0 'ALL'" }))),
+                (g.a1416153590 = y(g("el").numberFormatter({ raw: "#,##0.00 'ARS'" }))),
+                (g.b645739928 = y(g("el").numberFormatter({ raw: "#,##0.00 'A$'" }))),
+                (g.a784528330 = y(g("el").numberFormatter({ raw: "#,##0.00 'BAM'" }))),
+                (g.b647523866 = y(g("el").numberFormatter({ raw: "#,##0.00 'BDT'" }))),
+                (g.a1843212271 = y(g("el").numberFormatter({ raw: "#,##0.00 'BGN'" }))),
+                (g.b1850542854 = y(g("el").numberFormatter({ raw: "#,##0.000 'BHD'" }))),
+                (g.b1336407428 = y(g("el").numberFormatter({ raw: "#,##0.00 'R$'" }))),
+                (g.a752925949 = y(g("el").numberFormatter({ raw: "#,##0 'BYR'" }))),
+                (g.b2025290990 = y(g("el").numberFormatter({ raw: "#,##0.00 'CA$'" }))),
+                (g.b50474217 = y(g("el").numberFormatter({ raw: "#,##0.00 'CHF'" }))),
+                (g.b509135279 = y(g("el").numberFormatter({ raw: "#,##0 'CLP'" }))),
+                (g.a1523534442 = y(g("el").numberFormatter({ raw: "#,##0.00 'CN¥'" }))),
+                (g.b2141591532 = y(g("el").numberFormatter({ raw: "#,##0 'COP'" }))),
+                (g.b1112131388 = y(g("el").numberFormatter({ raw: "#,##0.00 'CZK'" }))),
+                (g.a203025620 = y(g("el").numberFormatter({ raw: "#,##0.00 'DKK'" }))),
+                (g.a430274890 = y(g("el").numberFormatter({ raw: "#,##0.00 'DZD'" }))),
+                (g.b1461033014 = y(g("el").numberFormatter({ raw: "#,##0.00 'EGP'" }))),
+                (g.b1863625066 = y(g("el").numberFormatter({ raw: "#,##0.00 '€'" }))),
+                (g.a1882036547 = y(g("el").numberFormatter({ raw: "#,##0.00 '£'" }))),
+                (g.b1296988506 = y(g("el").numberFormatter({ raw: "#,##0.00 'GHS'" }))),
+                (g.a705862772 = y(g("el").numberFormatter({ raw: "#,##0.00 'GTQ'" }))),
+                (g.b1616071689 = y(g("el").numberFormatter({ raw: "#,##0.00 'HK$'" }))),
+                (g.a501890839 = y(g("el").numberFormatter({ raw: "#,##0.00 'HRK'" }))),
+                (g.b1273711169 = y(g("el").numberFormatter({ raw: "#,##0.00 'HUF'" }))),
+                (g.b1390011711 = y(g("el").numberFormatter({ raw: "#,##0 'IDR'" }))),
+                (g.a1443679592 = y(g("el").numberFormatter({ raw: "#,##0.00 '₪'" }))),
+                (g.b1104909493 = y(g("el").numberFormatter({ raw: "#,##0.00 '₹'" }))),
+                (g.a1156793436 = y(g("el").numberFormatter({ raw: "#,##0 'IQD'" }))),
+                (g.b1162762441 = y(g("el").numberFormatter({ raw: "#,##0 'ISK'" }))),
+                (g.b1681655035 = y(g("el").numberFormatter({ raw: "#,##0 'JP¥'" }))),
+                (g.b1283225505 = y(g("el").numberFormatter({ raw: "#,##0.00 'KES'" }))),
+                (g.a1778904360 = y(g("el").numberFormatter({ raw: "#,##0 '₩'" }))),
+                (g.a1377501600 = y(g("el").numberFormatter({ raw: "#,##0.000 'KWD'" }))),
+                (g.a203111763 = y(g("el").numberFormatter({ raw: "#,##0.00 'KZT'" }))),
+                (g.a2006153630 = y(g("el").numberFormatter({ raw: "#,##0 'LBP'" }))),
+                (g.b1777056824 = y(g("el").numberFormatter({ raw: "#,##0.00 'MAD'" }))),
+                (g.b1491954606 = y(g("el").numberFormatter({ raw: "#,##0.00 'MKD'" }))),
+                (g.a1741950165 = y(g("el").numberFormatter({ raw: "#,##0.00 'MX$'" }))),
+                (g.b1550996846 = y(g("el").numberFormatter({ raw: "#,##0.00 'MYR'" }))),
+                (g.a1282099811 = y(g("el").numberFormatter({ raw: "#,##0.00 'NGN'" }))),
+                (g.b293692786 = y(g("el").numberFormatter({ raw: "#,##0.00 'NOK'" }))),
+                (g.a678509056 = y(g("el").numberFormatter({ raw: "#,##0.00 'NZ$'" }))),
+                (g.b1302254177 = y(g("el").numberFormatter({ raw: "#,##0.00 'PEN'" }))),
+                (g.a1417515168 = y(g("el").numberFormatter({ raw: "#,##0.00 'PHP'" }))),
+                (g.b157682783 = y(g("el").numberFormatter({ raw: "#,##0 'PKR'" }))),
+                (g.a615304294 = y(g("el").numberFormatter({ raw: "#,##0.00 'PLN'" }))),
+                (g.a1300025334 = y(g("el").numberFormatter({ raw: "#,##0.00 'QAR'" }))),
+                (g.b1826498585 = y(g("el").numberFormatter({ raw: "#,##0.00 'RON'" }))),
+                (g.a1437224629 = y(g("el").numberFormatter({ raw: "#,##0 'RSD'" }))),
+                (g.b1139993607 = y(g("el").numberFormatter({ raw: "#,##0.00 'RUB'" }))),
+                (g.a490678708 = y(g("el").numberFormatter({ raw: "#,##0.00 'SAR'" }))),
+                (g.b454677921 = y(g("el").numberFormatter({ raw: "#,##0.00 'SEK'" }))),
+                (g.a1119925384 = y(g("el").numberFormatter({ raw: "#,##0.00 'SGD'" }))),
+                (g.b601986198 = y(g("el").numberFormatter({ raw: "#,##0.00 '฿'" }))),
+                (g.a485326894 = y(g("el").numberFormatter({ raw: "#,##0.000 'TND'" }))),
+                (g.a341586493 = y(g("el").numberFormatter({ raw: "#,##0.00 'TRY'" }))),
+                (g.b117074569 = y(g("el").numberFormatter({ raw: "#,##0.00 'NT$'" }))),
+                (g.b1320093557 = y(g("el").numberFormatter({ raw: "#,##0 'TZS'" }))),
+                (g.b604959428 = y(g("el").numberFormatter({ raw: "#,##0.00 'UAH'" }))),
+                (g.a883161778 = y(g("el").numberFormatter({ raw: "#,##0 'UGX'" }))),
+                (g.b1924278958 = y(g("el").numberFormatter({ raw: "#,##0.00 '$'" }))),
+                (g.a335640033 = y(g("el").numberFormatter({ raw: "#,##0.00 'VEF'" }))),
+                (g.b324019732 = y(g("el").numberFormatter({ raw: "#,##0 '₫'" }))),
+                (g.b194550835 = y(g("el").numberFormatter({ raw: "#,##0.00 'ZAR'" }))),
+                (g.a2008704500 = y(g("el").numberFormatter({ raw: "#,##0.00 'ZMW'" }))),
+                (g.a1050971638 = l({ 1: g("el").numberFormatter({ raw: "0" }) }, { pattern: "d MMM", timeSeparator: ":", months: { M: { 3: { 1: "Ιαν", 2: "Φεβ", 3: "Μαρ", 4: "Απρ", 5: "Μαΐ", 6: "Ιουν", 7: "Ιουλ", 8: "Αυγ", 9: "Σεπ", 10: "Οκτ", 11: "Νοε", 12: "Δεκ" } } } })),
+                (g.a1870231975 = l({ 1: g("el").numberFormatter({ raw: "0" }) }, { pattern: "d MMM y", timeSeparator: ":", months: { M: { 3: { 1: "Ιαν", 2: "Φεβ", 3: "Μαρ", 4: "Απρ", 5: "Μαΐ", 6: "Ιουν", 7: "Ιουλ", 8: "Αυγ", 9: "Σεπ", 10: "Οκτ", 11: "Νοε", 12: "Δεκ" } } } })),
+                (g.a688393288 = l({ 1: g("el").numberFormatter({ raw: "0" }), 2: g("el").numberFormatter({ raw: "00" }) }, { pattern: "h:mm a", timeSeparator: ":", dayPeriods: { am: "π.μ.", pm: "μ.μ." } })),
+                (g.b1806366901 = l({ 1: g("el").numberFormatter({ raw: "0" }) }, { pattern: "E, d MMM", timeSeparator: ":", days: { E: { 1: { sun: "Κυρ", mon: "Δευ", tue: "Τρί", wed: "Τετ", thu: "Πέμ", fri: "Παρ", sat: "Σάβ" } } }, months: { M: { 3: { 1: "Ιαν", 2: "Φεβ", 3: "Μαρ", 4: "Απρ", 5: "Μαΐ", 6: "Ιουν", 7: "Ιουλ", 8: "Αυγ", 9: "Σεπ", 10: "Οκτ", 11: "Νοε", 12: "Δεκ" } } } })),
+                (g.a2115867066 = l({ 1: g("el").numberFormatter({ raw: "0" }) }, { pattern: "E, d MMM y", timeSeparator: ":", days: { E: { 1: { sun: "Κυρ", mon: "Δευ", tue: "Τρί", wed: "Τετ", thu: "Πέμ", fri: "Παρ", sat: "Σάβ" } } }, months: { M: { 3: { 1: "Ιαν", 2: "Φεβ", 3: "Μαρ", 4: "Απρ", 5: "Μαΐ", 6: "Ιουν", 7: "Ιουλ", 8: "Αυγ", 9: "Σεπ", 10: "Οκτ", 11: "Νοε", 12: "Δεκ" } } } })),
+                (g.b1798978733 = l({ 1: g("el").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM", timeSeparator: ":", months: { M: { 4: { 1: "Ιανουαρίου", 2: "Φεβρουαρίου", 3: "Μαρτίου", 4: "Απριλίου", 5: "Μαΐου", 6: "Ιουνίου", 7: "Ιουλίου", 8: "Αυγούστου", 9: "Σεπτεμβρίου", 10: "Οκτωβρίου", 11: "Νοεμβρίου", 12: "Δεκεμβρίου" } } } })),
+                (g.b1431697825 = l({ 1: g("el").numberFormatter({ raw: "0" }), 2: g("el").numberFormatter({ raw: "00" }) }, { pattern: "d MMMM y - h:mm:ss a z", timeSeparator: ":", months: { M: { 4: { 1: "Ιανουαρίου", 2: "Φεβρουαρίου", 3: "Μαρτίου", 4: "Απριλίου", 5: "Μαΐου", 6: "Ιουνίου", 7: "Ιουλίου", 8: "Αυγούστου", 9: "Σεπτεμβρίου", 10: "Οκτωβρίου", 11: "Νοεμβρίου", 12: "Δεκεμβρίου" } } }, dayPeriods: { am: "π.μ.", pm: "μ.μ." }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: ["+H;-H", "+H:mm;-H:mm"] })),
+                (g.a2060715330 = l({ 1: g("el").numberFormatter({ raw: "0" }), 2: g("el").numberFormatter({ raw: "00" }) }, { pattern: "d MMM y, h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "Ιαν", 2: "Φεβ", 3: "Μαρ", 4: "Απρ", 5: "Μαΐ", 6: "Ιουν", 7: "Ιουλ", 8: "Αυγ", 9: "Σεπ", 10: "Οκτ", 11: "Νοε", 12: "Δεκ" } } }, dayPeriods: { am: "π.μ.", pm: "μ.μ." } })),
+                (g.a1310382802 = l({ 1: g("el").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM y", timeSeparator: ":", months: { M: { 4: { 1: "Ιανουαρίου", 2: "Φεβρουαρίου", 3: "Μαρτίου", 4: "Απριλίου", 5: "Μαΐου", 6: "Ιουνίου", 7: "Ιουλίου", 8: "Αυγούστου", 9: "Σεπτεμβρίου", 10: "Οκτωβρίου", 11: "Νοεμβρίου", 12: "Δεκεμβρίου" } } } })),
+                (g.a730546641 = l({ 1: g("el").numberFormatter({ raw: "0" }), 2: g("el").numberFormatter({ raw: "00" }) }, { pattern: "d MMM, h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "Ιαν", 2: "Φεβ", 3: "Μαρ", 4: "Απρ", 5: "Μαΐ", 6: "Ιουν", 7: "Ιουλ", 8: "Αυγ", 9: "Σεπ", 10: "Οκτ", 11: "Νοε", 12: "Δεκ" } } }, dayPeriods: { am: "π.μ.", pm: "μ.μ." } })),
+                (g.b594482438 = l({ 1: g("el").numberFormatter({ raw: "0" }), 2: g("el").numberFormatter({ raw: "00" }) }, { pattern: "d/M/yy", timeSeparator: ":" })),
+                (g.a992474718 = l({ 1: g("el").numberFormatter({ raw: "0" }) }, { pattern: "y", timeSeparator: ":" })),
+                (g.a1445742745 = l({ 1: g("el").numberFormatter({ raw: "0" }) }, { pattern: "MMM y", timeSeparator: ":", months: { M: { 3: { 1: "Ιαν", 2: "Φεβ", 3: "Μαρ", 4: "Απρ", 5: "Μαΐ", 6: "Ιουν", 7: "Ιουλ", 8: "Αυγ", 9: "Σεπ", 10: "Οκτ", 11: "Νοε", 12: "Δεκ" } } } })),
+                (g.a2003291500 = l({ 1: g("el").numberFormatter({ raw: "0" }), 2: g("el").numberFormatter({ raw: "00" }) }, { pattern: "EEEE, d MMMM y - h:mm:ss a zzzz", timeSeparator: ":", days: { E: { 4: { sun: "Κυριακή", mon: "Δευτέρα", tue: "Τρίτη", wed: "Τετάρτη", thu: "Πέμπτη", fri: "Παρασκευή", sat: "Σάββατο" } } }, months: { M: { 4: { 1: "Ιανουαρίου", 2: "Φεβρουαρίου", 3: "Μαρτίου", 4: "Απριλίου", 5: "Μαΐου", 6: "Ιουνίου", 7: "Ιουλίου", 8: "Αυγούστου", 9: "Σεπτεμβρίου", 10: "Οκτωβρίου", 11: "Νοεμβρίου", 12: "Δεκεμβρίου" } } }, dayPeriods: { am: "π.μ.", pm: "μ.μ." }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: "+HH:mm;-HH:mm" })),
+                (g.a615482502 = l({ 1: g("el").numberFormatter({ raw: "0" }), 2: g("el").numberFormatter({ raw: "00" }) }, { pattern: "d MMM y, h:mm:ss a", timeSeparator: ":", months: { M: { 3: { 1: "Ιαν", 2: "Φεβ", 3: "Μαρ", 4: "Απρ", 5: "Μαΐ", 6: "Ιουν", 7: "Ιουλ", 8: "Αυγ", 9: "Σεπ", 10: "Οκτ", 11: "Νοε", 12: "Δεκ" } } }, dayPeriods: { am: "π.μ.", pm: "μ.μ." } })),
+                (g.a1891472958 = l({ 1: g("el").numberFormatter({ raw: "0" }), 2: g("el").numberFormatter({ raw: "00" }) }, { pattern: "dd/MM/y", timeSeparator: ":" })),
+                (g.a60862075 = l({ 1: g("el").numberFormatter({ raw: "0" }), 2: g("el").numberFormatter({ raw: "00" }) }, { pattern: "h:mm a", timeSeparator: ":", dayPeriods: { am: "π.μ.", pm: "μ.μ." } })),
+                (g.b1139134483 = l({ 1: g("el").numberFormatter({ raw: "0" }), 2: g("el").numberFormatter({ raw: "00" }) }, { pattern: "E h:mm a", timeSeparator: ":", days: { E: { 1: { sun: "Κυρ", mon: "Δευ", tue: "Τρί", wed: "Τετ", thu: "Πέμ", fri: "Παρ", sat: "Σάβ" } } }, dayPeriods: { am: "π.μ.", pm: "μ.μ." } })),
+                (g.a1869546782 = l({ 1: g("el").numberFormatter({ raw: "0" }) }, { pattern: "LLLL y", timeSeparator: ":", months: { L: { 4: { 1: "Ιανουάριος", 2: "Φεβρουάριος", 3: "Μάρτιος", 4: "Απρίλιος", 5: "Μάιος", 6: "Ιούνιος", 7: "Ιούλιος", 8: "Αύγουστος", 9: "Σεπτέμβριος", 10: "Οκτώβριος", 11: "Νοέμβριος", 12: "Δεκέμβριος" } } } })),
+                (g.b1354954695 = l({ 1: g("el").numberFormatter({ raw: "0" }) }, { pattern: "d MMM y", timeSeparator: ":", months: { M: { 3: { 1: "Ιαν", 2: "Φεβ", 3: "Μαρ", 4: "Απρ", 5: "Μαΐ", 6: "Ιουν", 7: "Ιουλ", 8: "Αυγ", 9: "Σεπ", 10: "Οκτ", 11: "Νοε", 12: "Δεκ" } } } })),
+                (g.a1050286445 = l({}, { pattern: "MMMM", timeSeparator: ":", months: { M: { 4: { 1: "Ιανουαρίου", 2: "Φεβρουαρίου", 3: "Μαρτίου", 4: "Απριλίου", 5: "Μαΐου", 6: "Ιουνίου", 7: "Ιουλίου", 8: "Αυγούστου", 9: "Σεπτεμβρίου", 10: "Οκτωβρίου", 11: "Νοεμβρίου", 12: "Δεκεμβρίου" } } } })),
+                (g.b1991435411 = l({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "Κυριακή", mon: "Δευτέρα", tue: "Τρίτη", wed: "Τετάρτη", thu: "Πέμπτη", fri: "Παρασκευή", sat: "Σάββατο" } } } })),
+                (g.a659564557 = p(g("el").dateToPartsFormatter({ skeleton: "MMMd" }))),
+                (g.b1673452944 = p(g("el").dateToPartsFormatter({ skeleton: "yMMMd" }))),
+                (g.b147767265 = p(g("el").dateToPartsFormatter({ skeleton: "hm" }))),
+                (g.b1055084524 = p(g("el").dateToPartsFormatter({ skeleton: "MMMEd" }))),
+                (g.b364183023 = p(g("el").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
+                (g.b1047696356 = p(g("el").dateToPartsFormatter({ skeleton: "MMMMd" }))),
+                (g.b1823104906 = p(g("el").dateToPartsFormatter({ datetime: "long" }))),
+                (g.b1806393397 = p(g("el").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
+                (g.b2082662295 = p(g("el").dateToPartsFormatter({ date: "long" }))),
+                (g.b1749503448 = p(g("el").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
+                (g.a1595301955 = p(g("el").dateToPartsFormatter({ date: "short" }))),
+                (g.b1112708185 = p(g("el").dateToPartsFormatter({ skeleton: "y" }))),
+                (g.a1054335664 = p(g("el").dateToPartsFormatter({ skeleton: "yMMM" }))),
+                (g.a1611884419 = p(g("el").dateToPartsFormatter({ datetime: "full" }))),
+                (g.b1864567587 = p(g("el").dateToPartsFormatter({ datetime: "medium" }))),
+                (g.b1652211961 = p(g("el").dateToPartsFormatter({ skeleton: "yMMdd" }))),
+                (g.b2044320828 = p(g("el").dateToPartsFormatter({ time: "short" }))),
+                (g.b1290307850 = p(g("el").dateToPartsFormatter({ skeleton: "Ehm" }))),
+                (g.b1674138137 = p(g("el").dateToPartsFormatter({ skeleton: "yMMMM" }))),
+                (g.a2103852048 = p(g("el").dateToPartsFormatter({ date: "medium" }))),
+                (g.a658879364 = p(g("el").dateToPartsFormatter({ skeleton: "MMMM" }))),
+                (g.a1912124804 = p(g("el").dateToPartsFormatter({ skeleton: "EEEE" }))),
+                (g.b1388225996 = N(g("el").numberFormatter({}), g("el").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "σε {0} ημέρα", "relativeTimePattern-count-other": "σε {0} ημέρες" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "πριν από {0} ημέρα", "relativeTimePattern-count-other": "πριν από {0} ημέρες" }, "relative-type--2": "προχθές", "relative-type--1": "χθες", "relative-type-0": "σήμερα", "relative-type-1": "αύριο", "relative-type-2": "μεθαύριο" })),
+                (g.a187481625 = j(g("el").numberFormatter({}), g("el").pluralGenerator({}), { compoundUnitPattern: "{0} ανά {1}", unitProperties: { displayName: "δευτερόλεπτα", one: "{0} δευτερόλεπτο", other: "{0} δευτερόλεπτα", perUnitPattern: "{0} ανά δευτερόλεπτο" } })),
+                (g.b1699481671 = j(g("el").numberFormatter({}), g("el").pluralGenerator({}), { compoundUnitPattern: "{0} ανά {1}", unitProperties: { displayName: "λεπτά", one: "{0} λεπτό", other: "{0} λεπτά", perUnitPattern: "{0} ανά λεπτό" } })),
+                (g.a2037452937 = j(g("el").numberFormatter({}), g("el").pluralGenerator({}), { compoundUnitPattern: "{0} ανά {1}", unitProperties: { displayName: "ώρες", one: "{0} ώρα", other: "{0} ώρες", perUnitPattern: "{0} ανά ώρα" } })),
+                (g.a1472580378 = j(g("el").numberFormatter({}), g("el").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "δευτ.", one: "{0} δ", other: "{0} δ", perUnitPattern: "{0}/δευτ." } })),
+                (g.a577051834 = j(g("el").numberFormatter({}), g("el").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "λεπ.", one: "{0} λ", other: "{0} λ", perUnitPattern: "{0}/λ." } })),
+                (g.a1178550666 = j(g("el").numberFormatter({}), g("el").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ώρα", one: "{0} ώ", other: "{0} ώ", perUnitPattern: "{0}/ώ." } })),
+                (g.b1194561702 = j(g("el").numberFormatter({}), g("el").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ημέρα", one: "{0} η", other: "{0} η", perUnitPattern: "{0}/ημ." } })),
+                (g.b1710263719 = j(g("el").numberFormatter({}), g("el").pluralGenerator({}), { compoundUnitPattern: "{0} ανά {1}", unitProperties: { displayName: "ημέρες", one: "{0} ημέρα", other: "{0} ημέρες", perUnitPattern: "{0} ανά ημέρα" } })),
+                (g.b1624690370 = j(g("el").numberFormatter({}), g("el").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "μήνας", one: "{0} μ", other: "{0} μ", perUnitPattern: "{0}/μ." } })),
+                (g.a1002134845 = j(g("el").numberFormatter({}), g("el").pluralGenerator({}), { compoundUnitPattern: "{0} ανά {1}", unitProperties: { displayName: "μήνες", one: "{0} μήνας", other: "{0} μήνες", perUnitPattern: "{0} ανά μήνα" } })),
+                (g.b1711854237 = j(g("el").numberFormatter({}), g("el").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "έτ.", one: "{0} έ", other: "{0} έ", perUnitPattern: "{0}/έτ." } })),
+                (g.b776724830 = j(g("el").numberFormatter({}), g("el").pluralGenerator({}), { compoundUnitPattern: "{0} ανά {1}", unitProperties: { displayName: "έτη", one: "{0} έτος", other: "{0} έτη", perUnitPattern: "{0} ανά έτος" } })),
+                (g.b1044680557 = j(g("el").numberFormatter({}), g("el").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "δευτ.", one: "{0} δευτ.", other: "{0} δευτ.", perUnitPattern: "{0}/δευτ." } })),
+                (g.a588999411 = j(g("el").numberFormatter({}), g("el").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "λεπ.", one: "{0} λεπ.", other: "{0} λεπ.", perUnitPattern: "{0}/λ." } })),
+                (g.a469855267 = j(g("el").numberFormatter({}), g("el").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ώρες", one: "{0} ώρα", other: "{0} ώρ.", perUnitPattern: "{0}/ώ." } })),
+                (g.b1833872036 = j(g("el").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), g("el").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "δευτ.", one: "{0} δ", other: "{0} δ", perUnitPattern: "{0}/δευτ." } })),
+                n("d58baa7f", g.a1743373916),
+                n("ia24dc8d", g.b470233368),
+                n("iab73d4b", g.b1233556590),
+                n("i3b7a017", g.a187481625),
+                n("ie5d110f", g.b1699481671),
+                n("df5f11b3", g.a2037452937),
+                n("e8733ed9", g.a1472580378),
+                n("be59d8c3", g.a577051834),
+                n("i3d087db", g.a1178550666),
+                n("ga8d18c9", g.b1194561702),
+                n("a91e7d49", g.b1710263719),
+                n("id952a69", g.b1624690370),
+                n("ga09ab65", g.a1002134845),
+                n("c83b901d", g.b1711854237),
+                n("a55b9fed", g.b776724830),
+                n("ccaa970f", g.a659564557),
+                n("jade381b", g.b1673452944),
+                n("d725a289", g.b147767265),
+                n("g08cbabb", g.b513537091),
+                n("c333da63", g.b1388225996),
+                n("h8054d91", g.b1055084524),
+                n("i61fef37", g.b1044680557),
+                n("ba705e27", g.a588999411),
+                n("j86b0d8d", g.a469855267),
+                n("f668e929", g.b1272725681),
+                n("i2785009", g.b1928401540),
+                n("c778d80b", g.b1598635779),
+                n("e8d93005", g.a836020931),
+                n("d46781af", g.b1833872036),
+                n("ba316f05", g.b1475961242),
+                n("c0bdd345", g.a1750530788),
+                n("aa2aa1a1", g.b364183023),
+                n("da44942d", g.b1047696356),
+                n("a54d3ef5", g.b1823104906),
+                n("bfbc051d", g.b1806393397),
+                n("ba2e82a1", g.b2082662295),
+                n("fc209bb7", g.b1749503448),
+                n("cf8abf59", g.b1447518696),
+                n("a9f397f3", g.a1595301955),
+                n("d857e44d", g.b1960896936),
+                n("cb87e3db", g.a185694743),
+                n("a9d5ffd1", g.a1416153590),
+                n("a0e8371d", g.b645739928),
+                n("gcc50dc9", g.a784528330),
+                n("a6a43585", g.b647523866),
+                n("a0cc8f2d", g.a1843212271),
+                n("i31c32c5", g.b1850542854),
+                n("i7dc69e9", g.b1336407428),
+                n("c14a6c03", g.a752925949),
+                n("jaa3d537", g.b2025290990),
+                n("a824080b", g.b50474217),
+                n("d9c0bedb", g.b509135279),
+                n("bf8c0613", g.a1523534442),
+                n("i8163625", g.b2141591532),
+                n("adb53ba1", g.b1112131388),
+                n("iabf697d", g.a203025620),
+                n("a1a0555b", g.a430274890),
+                n("f266f3d9", g.b1461033014),
+                n("a9a8652b", g.b1863625066),
+                n("dbf40761", g.a1882036547),
+                n("b0d993d9", g.b1296988506),
+                n("ac1308e1", g.a705862772),
+                n("a7889ab3", g.b1616071689),
+                n("c614f5cd", g.a501890839),
+                n("i55d57e3", g.b1273711169),
+                n("e4b6002b", g.b1390011711),
+                n("d28e983b", g.a1443679592),
+                n("e8c9232d", g.b1104909493),
+                n("c8994ae1", g.a1156793436),
+                n("f821c2a5", g.b1162762441),
+                n("j348b9c9", g.b1681655035),
+                n("i6f93b9b", g.b1283225505),
+                n("c6150bd5", g.a1778904360),
+                n("i8921e09", g.a1377501600),
+                n("ef239279", g.a203111763),
+                n("hecdb149", g.a2006153630),
+                n("fdd039b7", g.b1777056824),
+                n("f30c2c37", g.b1491954606),
+                n("d9ea7bff", g.a1741950165),
+                n("ea3df4b7", g.b1550996846),
+                n("jaac21bb", g.a1282099811),
+                n("hb435ced", g.b293692786),
+                n("ce699d81", g.a678509056),
+                n("bc56d3d7", g.b1302254177),
+                n("f8561913", g.a1417515168),
+                n("g6485d53", g.b157682783),
+                n("ff561cc1", g.a615304294),
+                n("b42011d3", g.a1300025334),
+                n("a6660bcd", g.b1826498585),
+                n("f9b80449", g.a1437224629),
+                n("gdee4d5d", g.b1139993607),
+                n("h36f2103", g.a490678708),
+                n("a19ad037", g.b454677921),
+                n("g713f699", g.a1119925384),
+                n("ff2e39af", g.b601986198),
+                n("be34316d", g.a485326894),
+                n("aef81b75", g.a341586493),
+                n("fcce70a5", g.b117074569),
+                n("jc9d352f", g.b1320093557),
+                n("be1cb8c5", g.b604959428),
+                n("j9371501", g.a883161778),
+                n("j7d4397d", g.b1924278958),
+                n("d61441dd", g.a335640033),
+                n("e2a99e97", g.b324019732),
+                n("f7ce19ab", g.b194550835),
+                n("b2a0213f", g.a2008704500),
+                n("d7d71245", g.b1112708185),
+                n("a2f2faab", g.a1054335664),
+                n("g8d1b99b", g.a1611884419),
+                n("d0a77c9b", g.b1864567587),
+                n("e18e399b", g.b1652211961),
+                n("b6ca7bcb", g.b2044320828),
+                n("h0e4cdf5", g.b1290307850),
+                n("g727ddcf", g.b1674138137),
+                n("h3629783", g.a2103852048),
+                n("a20c68af", g.a658879364),
+                n("ja781451", g.a49078474),
+                n("cfa1a7b9", g.b1334104659),
+                n("f3b9b9a7", g.a1912124804),
+                n("eefcd267", g.b1888836369),
+                n("fa8afc43", g.a455387152);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/el.060a10fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/el.bb41c26a.js.map

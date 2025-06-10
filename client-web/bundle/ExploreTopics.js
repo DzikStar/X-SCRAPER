@@ -191,24 +191,24 @@
                 E = o(218951);
             const w = { news: "url", sim_cluster: "cluster_id", ttt: "ttt_id", semantic_core: "entity_id" };
             var x = o(312771);
-            const v = c().fcf3e54c,
-                P = (e, t) => t.match.params.topicId,
-                _ = (e, t) => t.match.params.taxonomy,
-                C = (0, f.P1)(P, _, (e, t) => (({ taxonomy: e, topicId: t }) => (0, E.Z)({ timelineId: `guide-${t}-${e}-topic`, network: { getEndpoint: (e) => e.withEndpoint(y.Z).fetchExploreTopic, getEndpointParams: (o) => ({ [w[e]]: t, ...o }) }, context: "FETCH_EXPLORE_TOPIC", perfKey: "guide-topic" }))({ topicId: e, taxonomy: t })),
+            const P = c().fcf3e54c,
+                _ = (e, t) => t.match.params.topicId,
+                C = (e, t) => t.match.params.taxonomy,
+                v = (0, f.P1)(_, C, (e, t) => (({ taxonomy: e, topicId: t }) => (0, E.Z)({ timelineId: `guide-${t}-${e}-topic`, network: { getEndpoint: (e) => e.withEndpoint(y.Z).fetchExploreTopic, getEndpointParams: (o) => ({ [w[e]]: t, ...o }) }, context: "FETCH_EXPLORE_TOPIC", perfKey: "guide-topic" }))({ topicId: e, taxonomy: t })),
                 I = (e, t) => {
-                    const o = C(e, t);
+                    const o = v(e, t);
                     if (o.selectInitialFetchStatus(e, t) !== x.ZP.LOADED) return "";
-                    const { title: a = v } = o.selectMetadata(e);
+                    const { title: a = P } = o.selectMetadata(e);
                     return a;
                 },
                 k = (0, Z.Z)()
-                    .propsFromState(() => ({ module: C, topicId: P, taxonomy: _, title: I }))
+                    .propsFromState(() => ({ module: v, topicId: _, taxonomy: C, title: I }))
                     .withAnalytics({ page: "guide", section: "topic" });
-            const M = { ...(0, o(335632).G)({ withMessageGaps: !1 }) },
+            const S = { ...(0, o(335632).G)({ withMessageGaps: !1 }) },
                 B = c().a2a3824a,
-                S = c().ed827af6,
+                M = c().ed827af6,
                 L = () => a.createElement(m.Z, null),
-                A = () => a.createElement(n.Z, { message: S }),
+                A = () => a.createElement(n.Z, { message: M }),
                 D = ["news", "ttt", "semantic_core", "sim_cluster"];
             function T(e) {
                 const { history: t, title: o } = e,
@@ -230,7 +230,7 @@
                             (() => {
                                 if (s()) {
                                     const { module: t } = e;
-                                    return a.createElement(h.Z, { entryConfiguration: M, module: t, prerollDisplayLocation: g.Nw.OTHER, renderEmptyState: L, renderUnavailable: A, title: B });
+                                    return a.createElement(h.Z, { entryConfiguration: S, module: t, prerollDisplayLocation: g.Nw.OTHER, renderEmptyState: L, renderUnavailable: A, title: B });
                                 }
                                 {
                                     const { taxonomy: t, topicId: o } = e;
@@ -261,7 +261,7 @@
             const c = r.default.create((e) => ({ root: { borderWidth: 0, height: e.spaces.space48, boxShadow: e.boxShadows.small }, iconOnly: { height: e.spaces.space56, width: e.spaces.space56 } })),
                 i = s;
         },
-        748138: (e, t, o) => {
+        41065: (e, t, o) => {
             o.r(t), o.d(t, { default: () => i });
             var a = o(202784),
                 n = o(890601),
@@ -269,11 +269,11 @@
                 s = o(347101);
             const c = (e = {}) => {
                 const { direction: t } = (0, r.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
             };
             c.metadata = { width: 24, height: 24 };
             const i = c;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ExploreTopics.41cb6d7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ExploreTopics.571b398a.js.map

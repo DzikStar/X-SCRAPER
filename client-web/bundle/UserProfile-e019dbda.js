@@ -3,7 +3,7 @@
     ["bundle.UserProfile-e019dbda"],
     {
         177997: (e, t, n) => {
-            n.d(t, { Z: () => F });
+            n.d(t, { Z: () => C });
             var r = n(202784),
                 a = n(88660),
                 o = n(293115),
@@ -42,7 +42,7 @@
                             if (e.metrics.length > 1)
                                 return r.createElement(
                                     d.Z,
-                                    { style: k.tiles },
+                                    { style: S.tiles },
                                     e.metrics.map((e) => {
                                         const n = t?.find((t) => t.metric_type === e.metricType);
                                         return n?.metric_value ? r.createElement(_, { key: e.metricType, metric: e.metricType, metricResult: n }) : null;
@@ -61,7 +61,7 @@
                         i = r.useCallback(() => {
                             o.scribe({ action: "dismiss" }), n();
                         }, [n, o]);
-                    return r.createElement(d.Z, { style: k.container, testID: "analytics-preview" }, r.createElement(d.Z, { style: k.heading }, e.metrics.length > 1 ? r.createElement(c.ZP, { size: "headline2", weight: "bold" }, D({ days: e.periodInDays })) : null, r.createElement(c.ZP, { color: "gray700", size: "subtext3" }, M), r.createElement(u.ZP, { icon: r.createElement(f.default, null), onClick: i, style: k.dismissButton, testID: "dismiss-button", type: "primaryText" })), r.createElement(d.Z, { style: k.content }, s, r.createElement(u.ZP, { icon: r.createElement(b.default, null), link: { pathname: "/i/premium_sign_up", state: { referring_page: "account_analytics" } }, size: "xSmall", style: k.unlockButton, type: "primaryFilled" }, E)));
+                    return r.createElement(d.Z, { style: S.container, testID: "analytics-preview" }, r.createElement(d.Z, { style: S.heading }, e.metrics.length > 1 ? r.createElement(c.ZP, { size: "headline2", weight: "bold" }, D({ days: e.periodInDays })) : null, r.createElement(c.ZP, { color: "gray700", size: "subtext3" }, M), r.createElement(u.ZP, { icon: r.createElement(f.default, null), onClick: i, style: S.dismissButton, testID: "dismiss-button", type: "primaryText" })), r.createElement(d.Z, { style: S.content }, s, r.createElement(u.ZP, { icon: r.createElement(b.default, null), link: { pathname: "/i/premium_sign_up", state: { referring_page: "account_analytics" } }, size: "xSmall", style: S.unlockButton, type: "primaryFilled" }, E)));
                 },
                 P = (e) => {
                     const t = (0, w.Z)({ metrics: e.config.metrics, periodInDays: e.config.periodInDays }),
@@ -76,11 +76,11 @@
                         o ? r.createElement(I, (0, l.Z)({}, e, { data: n })) : (a.scribe({ action: "not_matched" }), null)
                     );
                 },
-                S = r.memo(P),
-                k = m.default.create((e) => ({ container: { marginHorizontal: e.spaces.space16, backgroundColor: e.colors.unreadCellBackground, borderRadius: e.borderRadii.large, padding: e.spaces.space16 }, content: { justifyContent: "space-between", flexDirection: "row", flexWrap: "wrap" }, tiles: { flexDirection: "row", gap: e.spaces.space48 }, heading: { flexDirection: "row", alignItems: "center", gap: e.spaces.space16 }, unlockButton: { alignSelf: "flex-end", marginTop: e.spaces.space12 }, dismissButton: { marginStart: "auto" } })),
+                k = r.memo(P),
+                S = m.default.create((e) => ({ container: { marginHorizontal: e.spaces.space16, backgroundColor: e.colors.unreadCellBackground, borderRadius: e.borderRadii.large, padding: e.spaces.space16 }, content: { justifyContent: "space-between", flexDirection: "row", flexWrap: "wrap" }, tiles: { flexDirection: "row", gap: e.spaces.space48 }, heading: { flexDirection: "row", alignItems: "center", gap: e.spaces.space16 }, unlockButton: { alignSelf: "flex-end", marginTop: e.spaces.space12 }, dismissButton: { marginStart: "auto" } })),
                 Z = { showForMsec: a.fz, reappearAfterMsec: a.Ho, dismissForMsec: a.dV },
-                A = { showForMsec: a.Tg, reappearAfterMsec: a.Vv, dismissForMsec: a.IZ },
-                v = {
+                v = { showForMsec: a.Tg, reappearAfterMsec: a.Vv, dismissForMsec: a.IZ },
+                A = {
                     DemoMultipleMetrics: {
                         metrics: [
                             { metricType: "Impressions", threshold: 1 },
@@ -98,23 +98,23 @@
                             { metricType: "Likes", threshold: 50 },
                         ],
                         periodInDays: 7,
-                        fatigueConfig: { key: "AnalyticsPreview_MultipleMetrics", ...A },
+                        fatigueConfig: { key: "AnalyticsPreview_MultipleMetrics", ...v },
                     },
-                    ProfileVisits: { metrics: [{ metricType: "ProfileVisits", threshold: 100 }], periodInDays: 7, fatigueConfig: { key: "AnalyticsPreview_ProfileVisits", ...A } },
-                    Impressions: { metrics: [{ metricType: "Impressions", threshold: 1e3 }], periodInDays: 7, fatigueConfig: { key: "AnalyticsPreview_Impressions", ...A } },
-                    ImpressionsLower: { metrics: [{ metricType: "Impressions", threshold: 50 }], periodInDays: 7, fatigueConfig: { key: "AnalyticsPreview_Impressions", ...A } },
-                    Likes: { metrics: [{ metricType: "Likes", threshold: 50 }], periodInDays: 7, fatigueConfig: { key: "AnalyticsPreview_Likes", ...A } },
+                    ProfileVisits: { metrics: [{ metricType: "ProfileVisits", threshold: 100 }], periodInDays: 7, fatigueConfig: { key: "AnalyticsPreview_ProfileVisits", ...v } },
+                    Impressions: { metrics: [{ metricType: "Impressions", threshold: 1e3 }], periodInDays: 7, fatigueConfig: { key: "AnalyticsPreview_Impressions", ...v } },
+                    ImpressionsLower: { metrics: [{ metricType: "Impressions", threshold: 50 }], periodInDays: 7, fatigueConfig: { key: "AnalyticsPreview_Impressions", ...v } },
+                    Likes: { metrics: [{ metricType: "Likes", threshold: 50 }], periodInDays: 7, fatigueConfig: { key: "AnalyticsPreview_Likes", ...v } },
                 },
-                C = (e) => {
+                F = (e) => {
                     const { dismiss: t, impress: n, shouldShow: s } = (0, a.ZP)(e.config.fatigueConfig);
                     return (
                         r.useEffect(() => {
                             n();
                         }),
-                        s ? r.createElement(o.nO, { namespace: { component: "analytics_preview" } }, r.createElement(i.H, { errorConfig: { context: "AnalyticPreview" }, suspenseFallback: null }, r.createElement(S, { config: e.config, dismiss: t, impress: n }))) : null
+                        s ? r.createElement(o.nO, { namespace: { component: "analytics_preview" } }, r.createElement(i.H, { errorConfig: { context: "AnalyticPreview" }, suspenseFallback: null }, r.createElement(k, { config: e.config, dismiss: t, impress: n }))) : null
                     );
                 },
-                F = () => {
+                C = () => {
                     const { featureSwitches: e, userClaims: t } = (0, s.QZ)(),
                         n = t.isAnyPremiumSubscriber(),
                         a = e.isTrue("subscriptions_sign_up_enabled");
@@ -123,24 +123,24 @@
                         i = ((e) => {
                             switch (e) {
                                 case "DemoMultipleMetrics":
-                                    return v.DemoMultipleMetrics;
+                                    return A.DemoMultipleMetrics;
                                 case "DemoSingleMetric":
-                                    return v.DemoSingleMetric;
+                                    return A.DemoSingleMetric;
                                 case "ProfileVisits":
-                                    return v.ProfileVisits;
+                                    return A.ProfileVisits;
                                 case "Impressions":
-                                    return v.Impressions;
+                                    return A.Impressions;
                                 case "Likes":
-                                    return v.Likes;
+                                    return A.Likes;
                                 case "MultipleMetrics":
-                                    return v.MultipleMetrics;
+                                    return A.MultipleMetrics;
                                 case "ImpressionsLower":
-                                    return v.ImpressionsLower;
+                                    return A.ImpressionsLower;
                                 default:
                                     return null;
                             }
                         })(e.getStringValue("subscriptions_upsells_analytics_profile_variant"));
-                    return o && i && !n ? r.createElement(C, { config: i }) : null;
+                    return o && i && !n ? r.createElement(F, { config: i }) : null;
                 };
         },
         336636: (e, t, n) => {
@@ -247,7 +247,7 @@
         231214: (e, t, n) => {
             n.d(t, { Z: () => r });
             n(202784);
-            const r = (0, n(523561).Z)({ loader: () => Promise.all([n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"), n.e("ondemand.IntentPrompt")]).then(n.bind(n, 958679)) });
+            const r = (0, n(523561).Z)({ loader: () => Promise.all([n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"), n.e("ondemand.IntentPrompt")]).then(n.bind(n, 958679)) });
         },
         170371: (e, t, n) => {
             n.d(t, { Z: () => b });
@@ -296,22 +296,20 @@
                 loader: () =>
                     Promise.all([
                         n.e("icons.0"),
+                        n.e("icons.13"),
+                        n.e("icons.22"),
+                        n.e("icons.29"),
                         n.e("icons.5"),
-                        n.e("icons.12"),
+                        n.e("icons.7"),
+                        n.e("icons.1"),
+                        n.e("icons.15"),
+                        n.e("icons.25"),
                         n.e("icons.20"),
-                        n.e("icons.2"),
-                        n.e("icons.21"),
-                        n.e("icons.28"),
-                        n.e("icons.10"),
-                        n.e("icons.17"),
-                        n.e("icons.9"),
-                        n.e("icons.23"),
+                        n.e("icons.11"),
+                        n.e("icons.24"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.22"),
-                        n.e("icons.24"),
-                        n.e("icons.25"),
-                        n.e("icons.14"),
+                        n.e("icons.16"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -322,9 +320,11 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
+                        n.e("icons.17"),
                         n.e("icons.6"),
-                        n.e("icons.3"),
-                        n.e("icons.8"),
+                        n.e("icons.23"),
+                        n.e("icons.28"),
+                        n.e("icons.9"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -353,7 +353,6 @@
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         n.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
-                        n.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         n.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~bundle.Payments~ondemand.News~ondemand.Insights~loader"),
                         n.e("shared~bundle.AccountAnalytics~bundle.Payments~ondemand.Insights~ondemand.Verified~ondemand.XChat"),
@@ -483,7 +482,7 @@
                         M = (0, a.useLocation)(),
                         I = y?.screen_name,
                         P = i ? r.createElement(c.default, null) : r.createElement(u.default, { style: E.superFollowsIcon }),
-                        S = r.useCallback(
+                        k = r.useCallback(
                             (e) => {
                                 const { action: n, element: r } = e,
                                     { items: a } = t.contextualScribeData,
@@ -495,27 +494,27 @@
                             },
                             [t, M, d, y],
                         ),
-                        k = r.useCallback(
+                        S = r.useCallback(
                             (e) => {
-                                _ && (S({ element: "super_follow_subscribe_button", action: "unfollow" }), g(_, { promotedContent: d }).catch(n(p.X))), e();
+                                _ && (k({ element: "super_follow_subscribe_button", action: "unfollow" }), g(_, { promotedContent: d }).catch(n(p.X))), e();
                             },
-                            [n, d, g, _, S],
+                            [n, d, g, _, k],
                         ),
                         Z = r.useCallback(
                             (e) => {
-                                const t = [{ Icon: m.default, text: T({ screenName: I }), onClick: k }];
+                                const t = [{ Icon: m.default, text: T({ screenName: I }), onClick: S }];
                                 return r.createElement(o.Z, { isFixed: !0, items: t, onCloseRequested: e });
                             },
-                            [k, I],
+                            [S, I],
                         ),
-                        A = i ? T({ screenName: I }) : D({ screenName: I });
+                        v = i ? T({ screenName: I }) : D({ screenName: I });
                     return r.createElement(s.ZP, {
-                        "aria-label": A,
+                        "aria-label": v,
                         borderColor: i || l ? void 0 : "plum500",
-                        hoverLabel: { label: A },
+                        hoverLabel: { label: v },
                         icon: P,
                         onPress: () => {
-                            !I || i || l || (S({ element: "super_follow_subscribe_button", action: "click" }), w.push(`/${I}/creator-subscriptions/subscribe`, { referring_page: "profile_intent" }));
+                            !I || i || l || (k({ element: "super_follow_subscribe_button", action: "click" }), w.push(`/${I}/creator-subscriptions/subscribe`, { referring_page: "profile_intent" }));
                         },
                         renderMenu: i ? Z : void 0,
                         style: b,
@@ -526,7 +525,7 @@
                 I = w(r.memo(M));
         },
         241304: (e, t, n) => {
-            n.d(t, { Z: () => C });
+            n.d(t, { Z: () => F });
             var r = n(202784),
                 a = n(576648),
                 o = n(325686),
@@ -551,12 +550,12 @@
                 E = n(919022);
             const I = u().ia5e7488,
                 P = { label: I },
-                S = u().j33d8902,
-                k = { label: S },
+                k = u().j33d8902,
+                S = { label: k },
                 Z = u().a8ab3d08,
-                A = u().d740d2d9,
-                v = { bandcamp_handle: { icon: r.createElement(m.default, null), label: u().a7cf1e98, url: "https://bandcamp.com/" }, bitcoin_handle: { icon: r.createElement(p.default, null), label: u().d876e67e }, cash_app_handle: { icon: r.createElement(h.default, null), label: u().f85f6760, url: "https://cash.app/" }, ethereum_handle: { icon: r.createElement(f.default, null), label: u().a32a7c06 }, gofundme_handle: { icon: r.createElement(b.default, null), label: u().cc1a3bc4, url: "https://gofundme.com/f/" }, patreon_handle: { icon: r.createElement(g.default, null), label: u().d4d74bb4, url: "https://patreon.com/" }, pay_pal_handle: { icon: r.createElement(y.default, null), label: u().h14fbc52, url: "https://paypal.me/" }, venmo_handle: { icon: r.createElement(_.default, null), label: u().h1198dcc, url: "https://venmo.com/" } };
-            function C({ style: e, userId: t }) {
+                v = u().d740d2d9,
+                A = { bandcamp_handle: { icon: r.createElement(m.default, null), label: u().a7cf1e98, url: "https://bandcamp.com/" }, bitcoin_handle: { icon: r.createElement(p.default, null), label: u().d876e67e }, cash_app_handle: { icon: r.createElement(h.default, null), label: u().f85f6760, url: "https://cash.app/" }, ethereum_handle: { icon: r.createElement(f.default, null), label: u().a32a7c06 }, gofundme_handle: { icon: r.createElement(b.default, null), label: u().cc1a3bc4, url: "https://gofundme.com/f/" }, patreon_handle: { icon: r.createElement(g.default, null), label: u().d4d74bb4, url: "https://patreon.com/" }, pay_pal_handle: { icon: r.createElement(y.default, null), label: u().h14fbc52, url: "https://paypal.me/" }, venmo_handle: { icon: r.createElement(_.default, null), label: u().h1198dcc, url: "https://venmo.com/" } };
+            function F({ style: e, userId: t }) {
                 const n = (0, T.I0)(),
                     [d, c] = r.useState(!1),
                     u = (0, T.v9)((e) => E.ZP.select(e, t));
@@ -572,8 +571,8 @@
                     r.Fragment,
                     null,
                     r.createElement(s.ZP, {
-                        "aria-label": S,
-                        hoverLabel: k,
+                        "aria-label": k,
+                        hoverLabel: S,
                         icon: r.createElement(w.default, null),
                         onPress: function () {
                             c((e) => !e);
@@ -583,31 +582,31 @@
                     d
                         ? r.createElement(
                               i.Z,
-                              { onMaskClick: f, style: F.sheet, type: "bottom", withMask: !0 },
-                              r.createElement(s.ZP, { "aria-label": I, hoverLabel: P, icon: r.createElement(D.default, null), onPress: f, style: F.close, type: "primaryText" }),
-                              r.createElement(o.Z, { style: F.header }, r.createElement(l.ZP, { weight: "bold" }, Z), r.createElement(l.ZP, null, `@${u.screen_name}`)),
+                              { onMaskClick: f, style: C.sheet, type: "bottom", withMask: !0 },
+                              r.createElement(s.ZP, { "aria-label": I, hoverLabel: P, icon: r.createElement(D.default, null), onPress: f, style: C.close, type: "primaryText" }),
+                              r.createElement(o.Z, { style: C.header }, r.createElement(l.ZP, { weight: "bold" }, Z), r.createElement(l.ZP, null, `@${u.screen_name}`)),
                               Object.entries(h)
                                   .filter(([e, t]) => t)
                                   .map(([e, t]) => {
-                                      const o = v[e];
+                                      const o = A[e];
                                       if (o) {
                                           const s = o.url
                                                   ? void 0
                                                   : function () {
-                                                        a.Z.setString(String(t)), n((0, M.fz)({ text: A({ service: o.label }) }));
+                                                        a.Z.setString(String(t)), n((0, M.fz)({ text: v({ service: o.label }) }));
                                                     },
                                               i = o.url ? `${o.url}${String(t)}` : void 0;
-                                          return r.createElement(l.ZP, { color: "text", key: e, link: i, onPress: s, style: F.service, withInteractiveStyling: !1 }, o.icon, o.label);
+                                          return r.createElement(l.ZP, { color: "text", key: e, link: i, onPress: s, style: C.service, withInteractiveStyling: !1 }, o.icon, o.label);
                                       }
                                   }),
                           )
                         : null,
                 );
             }
-            const F = d.default.create((e) => ({ close: { end: e.spaces.space16, position: "absolute", top: e.spaces.space16 }, header: { alignItems: "center", justifyContent: "center", marginHorizontal: "auto" }, service: { display: "flex", cursor: "pointer", gap: e.spaces.space8, marginBottom: e.spaces.space16 }, sheet: { padding: e.spaces.space16 } }));
+            const C = d.default.create((e) => ({ close: { end: e.spaces.space16, position: "absolute", top: e.spaces.space16 }, header: { alignItems: "center", justifyContent: "center", marginHorizontal: "auto" }, service: { display: "flex", cursor: "pointer", gap: e.spaces.space8, marginBottom: e.spaces.space16 }, sheet: { padding: e.spaces.space16 } }));
         },
         179562: (e, t, n) => {
-            n.d(t, { Z: () => v });
+            n.d(t, { Z: () => A });
             var r = n(807896),
                 a = n(202784),
                 o = n(238406),
@@ -673,13 +672,13 @@
                 E = D.Z.register(T),
                 I = (e, t) => E.select(e, t.userId),
                 P = (e, t) => E.selectFetchStatus(e, t.userId),
-                S = (0, b.Z)()
+                k = (0, b.Z)()
                     .propsFromState(() => ({ translation: I, translationFetchStatus: P, userLanguage: g.VT }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, f.zr)("TRANSLATE_USER_BIO"), fetchTranslation: E.fetchOneIfNeeded, fetchStreamedGrokTranslation: E.fetchStreamedGrokTranslation }))
                     .withAnalytics(),
-                k = i().ad7a451e,
+                S = i().ad7a451e,
                 Z = "translate_bio";
-            class A extends a.Component {
+            class v extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this._useGrokTranslation = () => {
@@ -715,13 +714,13 @@
                     const { analytics: e, createLocalApiErrorHandler: t, disableTranslation: n, fetchStreamedGrokTranslation: s, fetchTranslation: i, grokTranslatedBio: u, style: m, translation: h, translationFetchStatus: f, userId: b, userLanguage: g, withOriginalText: y, ..._ } = this.props;
                     if (u) {
                         const e = (0, c.t)(g, u.source_language);
-                        return a.createElement(d.Z, { disableTranslation: this.props.disableTranslation, fetchTranslation: l.Z, isInitiallyTranslated: !0, key: `${b}-auto-translation`, originLanguage: e, scribeElement: Z, streamedTranslationFetchStatus: p.ZP.LOADED, style: m, translateButtonText: k, translatedMessage: this._renderGrokTranslatedBio(), translationFetchStatus: p.ZP.LOADED, translationSource: "Grok", useGrokTranslation: !0, withOriginalText: y }, a.createElement(o.Z, (0, r.Z)({}, _, { userId: b })));
+                        return a.createElement(d.Z, { disableTranslation: this.props.disableTranslation, fetchTranslation: l.Z, isInitiallyTranslated: !0, key: `${b}-auto-translation`, originLanguage: e, scribeElement: Z, streamedTranslationFetchStatus: p.ZP.LOADED, style: m, translateButtonText: S, translatedMessage: this._renderGrokTranslatedBio(), translationFetchStatus: p.ZP.LOADED, translationSource: "Grok", useGrokTranslation: !0, withOriginalText: y }, a.createElement(o.Z, (0, r.Z)({}, _, { userId: b })));
                     }
-                    return a.createElement(d.Z, { disableTranslation: this.props.disableTranslation, fetchTranslation: this._fetchTranslation, key: `${b}-translation`, originLanguage: h && h.profileTranslation.localizedSourceLanguage, scribeElement: Z, streamedTranslationFetchStatus: h && h.profileTranslation.streamedTranslationFetchStatus, style: m, translateButtonText: k, translatedMessage: this._renderTranslation(), translationFetchStatus: f, translationSource: h && h.profileTranslation.translationSource, useGrokTranslation: this._useGrokTranslation(), withOriginalText: y }, a.createElement(o.Z, (0, r.Z)({}, _, { userId: b })));
+                    return a.createElement(d.Z, { disableTranslation: this.props.disableTranslation, fetchTranslation: this._fetchTranslation, key: `${b}-translation`, originLanguage: h && h.profileTranslation.localizedSourceLanguage, scribeElement: Z, streamedTranslationFetchStatus: h && h.profileTranslation.streamedTranslationFetchStatus, style: m, translateButtonText: S, translatedMessage: this._renderTranslation(), translationFetchStatus: f, translationSource: h && h.profileTranslation.translationSource, useGrokTranslation: this._useGrokTranslation(), withOriginalText: y }, a.createElement(o.Z, (0, r.Z)({}, _, { userId: b })));
                 }
             }
-            A.contextType = h.rC;
-            const v = S(A);
+            v.contextType = h.rC;
+            const A = k(v);
         },
         703738: (e, t, n) => {
             n.d(t, { z: () => s });
@@ -733,7 +732,7 @@
         507986: (e, t, n) => {
             n.d(t, { Z: () => r });
             n(202784);
-            const r = (0, n(523561).Z)({ loader: () => Promise.all([n.e("icons.0"), n.e("icons.20"), n.e("icons.10"), n.e("icons.9"), n.e("modules.common-e907d115"), n.e("modules.common-e019dbda"), n.e("icons.6"), n.e("loader.ProfileClusterFollow")]).then(n.bind(n, 751154)) });
+            const r = (0, n(523561).Z)({ loader: () => Promise.all([n.e("icons.13"), n.e("icons.7"), n.e("icons.1"), n.e("icons.25"), n.e("icons.20"), n.e("icons.11"), n.e("modules.common-e907d115"), n.e("modules.common-e019dbda"), n.e("loader.ProfileClusterFollow")]).then(n.bind(n, 751154)) });
         },
         103335: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -1090,4 +1089,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e019dbda.c9ac1a8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e019dbda.993b45ba.js.map

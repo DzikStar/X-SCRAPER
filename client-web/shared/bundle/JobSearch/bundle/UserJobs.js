@@ -60,21 +60,22 @@
                     loader: () =>
                         Promise.all([
                             o.e("icons.0"),
+                            o.e("icons.13"),
+                            o.e("icons.22"),
+                            o.e("icons.29"),
                             o.e("icons.5"),
-                            o.e("icons.12"),
-                            o.e("icons.20"),
-                            o.e("icons.2"),
-                            o.e("icons.21"),
-                            o.e("icons.28"),
+                            o.e("icons.7"),
+                            o.e("icons.1"),
+                            o.e("icons.15"),
+                            o.e("icons.25"),
                             o.e("icons.10"),
-                            o.e("icons.17"),
-                            o.e("icons.9"),
+                            o.e("icons.20"),
+                            o.e("icons.11"),
+                            o.e("icons.24"),
                             o.e("modules.common-e907d115"),
                             o.e("modules.common-e019dbda"),
-                            o.e("icons.22"),
-                            o.e("icons.25"),
-                            o.e("icons.14"),
-                            o.e("icons.6"),
+                            o.e("icons.16"),
+                            o.e("icons.9"),
                             o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                             o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                             o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -103,11 +104,11 @@
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             o.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
-                            o.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                             o.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                             o.e("shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"),
-                            o.e("loader.WideLayout"),
-                        ]).then(o.bind(o, 527969)),
+                            o.e("loader.WideLayout-6107ac1a"),
+                            o.e("loader.WideLayout-9f4db315"),
+                        ]).then(o.bind(o, 741494)),
                 }),
                 l = (e) => r.createElement(d.Z, { hideOnError: !0 }, r.createElement(n, e));
         },
@@ -193,7 +194,7 @@
             const l = (0, d.Z)({ loader: () => o.e("loader.AbsolutePower").then(o.bind(o, 590136)), renderPlaceholder: (e, a) => r.createElement(n.Z, { hasError: e, onRetry: a }) });
         },
         985124: (e, a, o) => {
-            o.d(a, { $J: () => t, WA: () => j, ZC: () => P, cj: () => T, eo: () => r.eo, hb: () => $, kW: () => s, pg: () => I, rP: () => l, u4: () => W, xk: () => R });
+            o.d(a, { $J: () => t, WA: () => j, ZC: () => P, cj: () => T, eo: () => r.eo, hb: () => $, kW: () => s, pg: () => I, rP: () => l, u4: () => W, xk: () => L });
             var r = o(89217),
                 d = o(111677),
                 n = o.n(d);
@@ -220,19 +221,19 @@
                 Z = n().e89b3f04,
                 A = n().h55825dc,
                 C = n().cc537386,
-                S = n().jfc3cece,
-                _ = n().e1b683aa,
+                _ = n().jfc3cece,
+                S = n().e1b683aa,
                 E = n().c4627fda,
                 x = n().db75b47c,
-                j = Object.freeze({ intern: g, entry_level: Z, junior: A, mid_level: C, senior: S, lead: _, manager: E, executive: x }),
-                R = Object.entries(j).map(([e, a]) => ({ label: String(a), value: e })),
-                L = n().i312f0ce,
+                j = Object.freeze({ intern: g, entry_level: Z, junior: A, mid_level: C, senior: _, lead: S, manager: E, executive: x }),
+                L = Object.entries(j).map(([e, a]) => ({ label: String(a), value: e })),
+                R = n().i312f0ce,
                 N = n().b4aff05e,
                 O = n().c08b9138,
-                B = n().ia5d6422,
-                F = n().h97c7f42,
-                U = n().ibed2d04,
-                T = Object.freeze({ onsite: { label: L, description: B, value: "onsite" }, remote: { label: O, description: U, value: "remote" }, hybrid: { label: N, description: F, value: "hybrid" } }),
+                F = n().ia5d6422,
+                U = n().h97c7f42,
+                B = n().ibed2d04,
+                T = Object.freeze({ onsite: { label: R, description: F, value: "onsite" }, remote: { label: O, description: B, value: "remote" }, hybrid: { label: N, description: U, value: "hybrid" } }),
                 W = Object.keys(T).map((e) => ({ label: T[e].label, value: e, description: T[e].description })),
                 $ = Object.keys(r.Qw).map((e) => ({ ...r.Qw[e], value: String(r.Qw[e].value) }));
         },
@@ -359,8 +360,8 @@
                     const s = (0, f.p)(),
                         c = (0, n.useHistory)(),
                         { userClaims: A, viewerUserId: C } = (0, b.QZ)(),
-                        S = (0, p.hC)("recruiting_jobs_list_share_enabled"),
-                        _ = (0, p.hC)("recruiting_pin_job_enabled") && (A.isTrueAndEnabled("subscriptions_feature_premium_jobs") || A.isVerifiedOrg()) && C !== o,
+                        _ = (0, p.hC)("recruiting_jobs_list_share_enabled"),
+                        S = (0, p.hC)("recruiting_pin_job_enabled") && (A.isTrueAndEnabled("subscriptions_feature_premium_jobs") || A.isVerifiedOrg()) && C !== o,
                         E = r.useCallback(() => {
                             c.push({ query: { text: (0, y.w)(M(a)) }, pathname: "/messages/compose" });
                         }, [c, a]),
@@ -370,22 +371,22 @@
                         j = r.useCallback(() => {
                             c.push({ query: { text: (0, y.w)(M(a)) }, pathname: "/compose/post" });
                         }, [c, a]),
-                        R = r.useCallback(() => {
+                        L = r.useCallback(() => {
                             c.push({ query: { jid: a }, pathname: "/i/share-job", state: { from: c.location.pathname } });
                         }, [c, a]),
-                        L = r.useCallback(() => {
+                        R = r.useCallback(() => {
                             const e = [];
-                            return d.Z.isAvailable() && e.push({ text: k, onClick: x, Icon: i.default }), C && (e.push(((e) => ({ text: v, onClick: e, Icon: u.default }))(E)), e.push(((e) => ({ text: P, onClick: e, Icon: h.default }))(j))), _ && e.push(((e) => ({ text: I, onClick: e, Icon: D.default }))(R)), e;
-                        }, [x, E, R, j, _, C]),
+                            return d.Z.isAvailable() && e.push({ text: k, onClick: x, Icon: i.default }), C && (e.push(((e) => ({ text: v, onClick: e, Icon: u.default }))(E)), e.push(((e) => ({ text: P, onClick: e, Icon: h.default }))(j))), S && e.push(((e) => ({ text: I, onClick: e, Icon: D.default }))(L)), e;
+                        }, [x, E, L, j, S, C]),
                         N = r.useCallback(
                             (e) => {
-                                const a = L();
+                                const a = R();
                                 return a.length ? r.createElement(l.Z, { items: a, onCloseRequested: e, shouldCloseOnClick: !0 }) : null;
                             },
-                            [L],
+                            [R],
                         ),
                         O = r.useCallback(() => {}, []);
-                    return S ? r.createElement(t.ZP, { Icon: m.default, "aria-label": g, color: "text", hoverLabel: Z, iconSize: e, onPress: O, renderMenu: N, testID: "job-share-action-btn" }) : null;
+                    return _ ? r.createElement(t.ZP, { Icon: m.default, "aria-label": g, color: "text", hoverLabel: Z, iconSize: e, onPress: O, renderMenu: N, testID: "job-share-action-btn" }) : null;
                 },
                 C = r.memo(A);
         },
@@ -435,4 +436,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.JobSearch~bundle.UserJobs.6f95dcaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.JobSearch~bundle.UserJobs.092f3d6a.js.map

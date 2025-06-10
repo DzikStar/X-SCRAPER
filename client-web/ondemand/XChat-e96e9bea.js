@@ -277,7 +277,7 @@
         },
         476644: (e, t, s) => {
             "use strict";
-            s.r(t), s.d(t, { default: () => p });
+            s.r(t), s.d(t, { default: () => b });
             var r = s(202784),
                 n = s(700931),
                 a = s(264531),
@@ -285,23 +285,24 @@
                 l = s(107267),
                 o = s(67369),
                 c = s(392237),
-                d = s(857378),
-                u = s(252021),
-                h = s(234622),
-                x = (s(434882), s(134760)),
-                m = s(952793);
-            const g = c.default.create((e) => ({ root: { width: "100%", display: "block" } })),
-                p = (e) => {
+                d = s(545457),
+                u = s(857378),
+                h = s(252021),
+                x = s(234622),
+                m = (s(434882), s(134760)),
+                g = s(952793);
+            const p = c.default.create((e) => ({ root: { width: "100%", display: "block" } })),
+                b = (e) => {
                     const t = (0, l.useHistory)(),
                         s = (0, l.useLocation)(),
-                        c = (0, m.hC)("rweb_xchat_debug_enabled"),
-                        p = (0, o.yu)(),
-                        b = "/i/chat/" === s.pathname || "/i/chat" === s.pathname,
-                        f = !b,
-                        j = p && !f ? d.h$ : 0,
-                        v = (0, m.hC)("rweb_xchat_logs"),
-                        y = (0, m.hC)("rweb_xchat_new_db_worker_enabled");
-                    return r.createElement(h.i, null, r.createElement(u.Z, { headerless: p && f, history: t, isFullWidth: !0, primaryContent: () => r.createElement(i.Z, { style: g.root }, r.createElement(n.H, { settings: { path: "/i/chat", showDebugOptions: c, bottomBarHeight: j, logLevel: v ? a.B$.INFO : a.B$.ERROR, newDBWorker: y, rwebElements: { dashMenuButton: p && b ? r.createElement(x.Z, null) : void 0 } } })), sidebarContent: null, withTopNav: !1 }));
+                        c = (0, g.hC)("rweb_xchat_debug_enabled"),
+                        b = (0, o.yu)(),
+                        f = "/i/chat/" === s.pathname || "/i/chat" === s.pathname,
+                        j = !f,
+                        v = b && !j ? u.h$ : 0,
+                        y = (0, g.hC)("rweb_xchat_logs"),
+                        w = (0, g.hC)("rweb_xchat_new_db_worker_enabled");
+                    return (0, d.MQ)(), r.createElement(x.i, null, r.createElement(h.Z, { headerless: b && j, history: t, isFullWidth: !0, primaryContent: () => r.createElement(i.Z, { style: p.root }, r.createElement(n.H, { settings: { path: "/i/chat", showDebugOptions: c, bottomBarHeight: v, logLevel: y ? a.B$.INFO : a.B$.ERROR, newDBWorker: w, rwebElements: { dashMenuButton: b && f ? r.createElement(m.Z, null) : void 0 } } })), sidebarContent: null, withTopNav: !1 }));
                 };
         },
         115290: (e, t, s) => {
@@ -345,4 +346,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.bbb9b0ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.8e04825a.js.map

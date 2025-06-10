@@ -332,17 +332,10 @@
             const d = o.default.create((e) => ({ container: { backgroundColor: e.colors.gray0, borderTopWidth: e.spaces.space1, borderBottomWidth: e.spaces.space1, borderColor: e.colors.gray100 }, focusedContainer: { borderWidth: e.spaces.space2, borderTopWidth: e.spaces.space2, borderBottomWidth: e.spaces.space2, borderColor: e.colors.text }, activeContainer: { backgroundColor: e.colors.gray100 }, firstCard: { borderTopStartRadius: e.spaces.space16, borderTopEndRadius: e.spaces.space16, borderTopWidth: 0 }, lastCard: { borderBottomStartRadius: e.spaces.space16, borderBottomEndRadius: e.spaces.space16, borderBottomWidth: 0 }, content: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space20 }, chevron: { color: e.colors.gray700, height: e.spaces.space24, width: e.spaces.space24 } })),
                 m = (e) => {
                     const { isActive: t = !1, isFirst: a = !1, isLast: o = !1, label: m, link: u, onPress: p, testID: h } = e,
-                        [y, g] = n.useState(!1),
-                        E = n.useCallback(() => {
-                            g(!0);
-                        }, [g]),
-                        f = n.useCallback(() => {
-                            g(!1);
-                        }, [g]),
-                        b = "string" == typeof m ? n.createElement(l.ZP, { size: "body", weight: "normal" }, m) : m,
-                        v = [d.container, t && d.activeContainer, a && d.firstCard, o && d.lastCard, y && d.focusedContainer],
-                        k = (0, s.YC)();
-                    return n.createElement(r.Z, { interactiveStyles: k, link: u, onBlur: f, onFocus: E, onPress: p, role: "button", style: v, testID: h }, n.createElement(c.Z, { style: d.content }, n.createElement(l.ZP, { color: "text", size: "body", weight: "medium" }, b), (u || p) && n.createElement(i.default, { style: d.chevron })));
+                        y = "string" == typeof m ? n.createElement(l.ZP, { size: "body", weight: "normal" }, m) : m,
+                        g = [d.container, t && d.activeContainer, a && d.firstCard, o && d.lastCard],
+                        E = (0, s.YC)();
+                    return n.createElement(r.Z, null, ({ isFocusedWithin: e }) => n.createElement(r.Z, { interactiveStyles: E, link: u, onPress: p, role: "button", style: [g, e && d.focusedContainer], testID: h }, n.createElement(c.Z, { style: d.content }, n.createElement(l.ZP, { color: "text", size: "body", weight: "medium" }, y), (u || p) && n.createElement(i.default, { style: d.chevron }))));
                 };
         },
         722610: (e, t, a) => {
@@ -415,4 +408,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c411f24f.b659a92a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c411f24f.b1d5711a.js.map

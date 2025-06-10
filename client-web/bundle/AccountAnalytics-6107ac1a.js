@@ -3,15 +3,15 @@
     ["bundle.AccountAnalytics-6107ac1a"],
     {
         98538: (e, t, r) => {
-            r.d(t, { Z: () => g });
+            r.d(t, { Z: () => f });
             var n = r(202784),
                 o = r(325686),
                 l = r(731708),
                 a = r(891198),
                 s = r(280278),
                 c = r(392237);
-            const i = "subtext1",
-                u = n.createContext({ onMedia: !1 });
+            const u = "subtext1",
+                i = n.createContext({ onMedia: !1 });
             class d extends n.Component {
                 constructor(...e) {
                     super(...e),
@@ -23,7 +23,7 @@
                 }
                 render() {
                     const { children: e, link: t, onMedia: r, onPress: o } = this.props;
-                    return n.createElement(l.ZP, { color: r ? "white" : "text", hoverLabel: this._getHoverLabel(), link: t, onClick: o }, n.createElement(u.Provider, { value: { onMedia: r } }, e));
+                    return n.createElement(l.ZP, { color: r ? "white" : "text", hoverLabel: this._getHoverLabel(), link: t, onClick: o }, n.createElement(i.Provider, { value: { onMedia: r } }, e));
                 }
             }
             (d.Group = (e) =>
@@ -34,10 +34,10 @@
                         .filter(Boolean)
                         .map((e, t, r) => n.createElement(o.Z, { key: t, style: t < r.length - 1 && h.groupItemNonLast }, e)),
                 )),
-                (d.Label = ({ children: e, style: t }) => n.createElement(u.Consumer, null, ({ onMedia: r }) => n.createElement(l.ZP, { children: e, color: r ? "white" : "gray700", size: i, style: t }))),
-                (d.Value = ({ animated: e, children: t, count: r, style: o, weight: a = "bold" }) => n.createElement(u.Consumer, null, ({ onMedia: c }) => (e ? n.createElement(s.ZP, { children: t, count: r, size: i, style: o, weight: a }) : n.createElement(l.ZP, { children: t, color: c ? "white" : "text", size: i, style: o, weight: a }))));
+                (d.Label = ({ children: e, style: t }) => n.createElement(i.Consumer, null, ({ onMedia: r }) => n.createElement(l.ZP, { children: e, color: r ? "white" : "gray700", size: u, style: t }))),
+                (d.Value = ({ animated: e, children: t, count: r, style: o, weight: a = "bold" }) => n.createElement(i.Consumer, null, ({ onMedia: c }) => (e ? n.createElement(s.ZP, { children: t, count: r, size: u, style: o, weight: a }) : n.createElement(l.ZP, { children: t, color: c ? "white" : "text", size: u, style: o, weight: a }))));
             const h = c.default.create((e) => ({ row: { flexDirection: "row", flexWrap: "wrap", flex: 1 }, groupItemNonLast: { marginEnd: e.spaces.space20 } })),
-                g = d;
+                f = d;
         },
         819483: (e, t, r) => {
             r.d(t, { Z: () => d });
@@ -47,18 +47,18 @@
                 a = r(212145),
                 s = r(382880),
                 c = r(516951),
-                i = r(731708),
-                u = r(392237);
+                u = r(731708),
+                i = r(392237);
             const d = (e) => {
-                    const { columns: t, onNearEnd: r, onRowClick: u, rows: d, setSortOptions: g, sortOptions: f } = e,
+                    const { columns: t, onNearEnd: r, onRowClick: i, rows: d, setSortOptions: f, sortOptions: g } = e,
                         m = n.useRef(null),
-                        v = n.useMemo(() => t.reduce((e, t) => e + t.width, 0), [t]),
-                        b = n.useMemo(() => (0, s.Z)(r || c.Z), [r]);
+                        b = n.useMemo(() => t.reduce((e, t) => e + t.width, 0), [t]),
+                        v = n.useMemo(() => (0, s.Z)(r || c.Z), [r]);
                     n.useEffect(() => {
                         if (d.length) {
                             const e = new IntersectionObserver(
                                     (e) => {
-                                        e && e.length > 0 && e[0].isIntersecting && b();
+                                        e && e.length > 0 && e[0].isIntersecting && v();
                                     },
                                     { threshold: 1 },
                                 ),
@@ -70,7 +70,7 @@
                                 }
                             );
                         }
-                    }, [m, b, d.length]);
+                    }, [m, v, d.length]);
                     return n.createElement(
                         o.Z,
                         { style: h.tableContainer },
@@ -90,13 +90,13 @@
                                                 key: e.field,
                                                 onClick: () =>
                                                     ((e, t = !1) => {
-                                                        if (!t || !g) return;
-                                                        g({ sortField: e, sortOrder: e === f?.sortField ? ("ASCENDING" === f?.sortOrder ? "DESCENDING" : "ASCENDING") : "DESCENDING" });
+                                                        if (!t || !f) return;
+                                                        f({ sortField: e, sortOrder: e === g?.sortField ? ("ASCENDING" === g?.sortOrder ? "DESCENDING" : "ASCENDING") : "DESCENDING" });
                                                     })(e.field, e.sortable),
-                                                style: { width: `${Math.floor((100 * e.width) / v)}%`, ...h.tableHeading },
+                                                style: { width: `${Math.floor((100 * e.width) / b)}%`, ...h.tableHeading },
                                             },
-                                            n.createElement(i.ZP, { weight: "bold" }, e.label),
-                                            e.field === f?.sortField && ("ASCENDING" === f?.sortOrder ? n.createElement(l.default, null) : n.createElement(a.default, null)),
+                                            n.createElement(u.ZP, { weight: "bold" }, e.label),
+                                            e.field === g?.sortField && ("ASCENDING" === g?.sortOrder ? n.createElement(l.default, null) : n.createElement(a.default, null)),
                                         ),
                                     ),
                                 ),
@@ -107,32 +107,19 @@
                                 d.map((e, r) =>
                                     n.createElement(
                                         "tr",
-                                        { key: r, onClick: () => u(e), ref: r === d.length - 5 ? m : null, style: { ...h.row, ...(u && { cursor: "pointer" }) } },
-                                        t.map((t, o) => n.createElement("td", { key: `${r}-${o}`, style: h.cell }, n.createElement(i.ZP, null, e[t.field]))),
+                                        { key: r, onClick: () => i(e), ref: r === d.length - 5 ? m : null, style: { ...h.row, ...(i && { cursor: "pointer" }) } },
+                                        t.map((t, o) => n.createElement("td", { key: `${r}-${o}`, style: h.cell }, n.createElement(u.ZP, null, e[t.field]))),
                                     ),
                                 ),
                             ),
                         ),
                     );
                 },
-                h = u.default.create((e) => ({ tableContainer: { overflowY: "auto", height: "100%" }, table: { borderCollapse: "collapse" }, tableHeading: { textAlign: "start", padding: e.spaces.space8, position: "sticky", top: 0, backgroundColor: e.colors.gray0, zIndex: 1 }, row: { borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid" }, cell: { padding: e.spaces.space8, fontVariantNumeric: "tabular-nums" } }));
+                h = i.default.create((e) => ({ tableContainer: { overflowY: "auto", height: "100%" }, table: { borderCollapse: "collapse" }, tableHeading: { textAlign: "start", padding: e.spaces.space8, position: "sticky", top: 0, backgroundColor: e.colors.gray0, zIndex: 1 }, row: { borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid" }, cell: { padding: e.spaces.space8, fontVariantNumeric: "tabular-nums" } }));
         },
         183806: (e, t, r) => {
             r.d(t, { Z: () => n });
             const n = r(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
-        },
-        155353: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => c });
-            var n = r(202784),
-                o = r(890601),
-                l = r(783427),
-                a = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const c = s;
         },
         544044: (e, t, r) => {
             r.d(t, { T: () => s });
@@ -237,7 +224,7 @@
             }
         },
         242268: (e, t, r) => {
-            r.d(t, { R: () => u });
+            r.d(t, { R: () => i });
             var n = r(31418),
                 o = r(262014),
                 l = r(537796);
@@ -245,8 +232,8 @@
                 const a = (0, o.z)(e, r),
                     s = (0, o.z)(t, r),
                     c = +a - (0, l.D)(a),
-                    i = +s - (0, l.D)(s);
-                return Math.round((c - i) / n.jE);
+                    u = +s - (0, l.D)(s);
+                return Math.round((c - u) / n.jE);
             }
             var s = r(150729);
             function c(e) {
@@ -254,9 +241,9 @@
                     r = t.getMonth();
                 return t.setFullYear(t.getFullYear(), r + 1, 0), t.setHours(0, 0, 0, 0), t;
             }
-            var i = r(200210);
-            function u(e, t) {
-                return a(c(e), (0, i.N)(e), t) + 1;
+            var u = r(200210);
+            function i(e, t) {
+                return a(c(e), (0, u.N)(e), t) + 1;
             }
         },
         251461: (e, t, r) => {
@@ -367,8 +354,8 @@
                     s = r.getDate(),
                     c = (0, n.L)(e, 0);
                 c.setFullYear(a, t, 15), c.setHours(0, 0, 0, 0);
-                const i = l(c);
-                return r.setMonth(t, Math.min(s, i)), r;
+                const u = l(c);
+                return r.setMonth(t, Math.min(s, u)), r;
             }
         },
         876346: (e, t, r) => {
@@ -397,13 +384,13 @@
             }
             var a = r(595873);
             function s(e, t) {
-                const { years: r = 0, months: o = 0, weeks: s = 0, days: c = 0, hours: i = 0, minutes: u = 0, seconds: d = 0 } = t,
+                const { years: r = 0, months: o = 0, weeks: s = 0, days: c = 0, hours: u = 0, minutes: i = 0, seconds: d = 0 } = t,
                     h = l(e, o + 12 * r),
-                    g = (0, n.k)(h, c + 7 * s),
-                    f = 1e3 * (d + 60 * (u + 60 * i));
-                return (0, a.L)(e, g.getTime() - f);
+                    f = (0, n.k)(h, c + 7 * s),
+                    g = 1e3 * (d + 60 * (i + 60 * u));
+                return (0, a.L)(e, f.getTime() - g);
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-6107ac1a.0d41d8da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-6107ac1a.9b6c54ba.js.map

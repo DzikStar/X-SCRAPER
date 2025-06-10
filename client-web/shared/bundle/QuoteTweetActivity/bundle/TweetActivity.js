@@ -1,0 +1,211 @@
+(self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
+    ["shared~bundle.QuoteTweetActivity~bundle.TweetActivity"],
+    {
+        270422: (e) => {
+            e.exports = { queryId: "PPueIFbiEKs0tjNpYA3Q5w", operationName: "Favoriters", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+        },
+        607959: (e) => {
+            e.exports = { queryId: "jDltClcbK1PAstVsdaWfzg", operationName: "Retweeters", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+        },
+        348271: (e) => {
+            e.exports = { queryId: "sSDIoF7vL0gwKTB04_D-0A", operationName: "TweetEditHistory", operationType: "query", metadata: { featureSwitches: ["premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "rweb_video_screen_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "articles_preview_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+        },
+        413798: (e, t, i) => {
+            "use strict";
+            i.d(t, { Z: () => d });
+            var r = i(703710),
+                _ = i(270422),
+                n = i.n(_),
+                s = i(607959),
+                a = i.n(s),
+                o = i(348271),
+                l = i.n(o),
+                c = i(934309);
+            const d = ({ apiClient: e, featureSwitches: t }) => ({ fetchLikedBy: ({ count: i, cursor: _, tweetId: s }) => e.graphQL(n(), { tweetId: s, count: i, cursor: _, includePromotedContent: !0, ...(0, r.d)(t) }, (e, t) => !t?.favoriters_timeline?.timeline).then((e) => e?.favoriters_timeline?.timeline || c.cY), fetchRetweetedBy: ({ count: i, cursor: _, tweetId: n }) => e.graphQL(a(), { tweetId: n, count: i, cursor: _, includePromotedContent: !0, ...(0, r.d)(t) }, (e, t) => !t?.retweeters_timeline?.timeline).then((e) => e?.retweeters_timeline?.timeline || c.cY), fetchEditHistory: ({ tweetId: i }) => e.graphQL(l(), { tweetId: i, ...(0, r.d)(t), withQuickPromoteEligibilityTweetFields: !0 }, (e, t) => !t?.tweet_result_by_rest_id?.result).then((e) => (e?.tweet_result_by_rest_id?.result && e.tweet_result_by_rest_id.result.edit_history_timeline && e.tweet_result_by_rest_id.result.edit_history_timeline?.timeline) || c.cY) });
+        },
+        652904: (e, t, i) => {
+            "use strict";
+            i.d(t, { Z: () => c });
+            var r = i(202784),
+                _ = i(500002),
+                n = i(668214),
+                s = i(997174),
+                a = i(118823);
+            const o = (0, n.Z)()
+                .propsFromActions(() => ({ updateLocation: a.YF, updateTweetDetailNav: s.NH }))
+                .withAnalytics();
+            class l extends r.Component {
+                componentDidMount() {
+                    this._performPageUpdates(this.props);
+                }
+                componentDidUpdate(e) {
+                    const {
+                            history: { location: t },
+                            location: { pathname: i, search: r },
+                            locationKey: _,
+                        } = this.props,
+                        {
+                            location: { pathname: n, search: s },
+                            locationKey: a,
+                        } = e;
+                    let o = !1;
+                    t.pathname !== i ? (this._isInBackground = !0) : this._isInBackground && t.pathname === i && ((this._isInBackground = !1), (o = !0));
+                    const l = _ || a;
+                    ((l && _ !== a) || (!l && i !== n) || r !== s || o) && this._performPageUpdates(this.props);
+                }
+                render() {
+                    return this.props.children;
+                }
+                _performPageUpdates(e) {
+                    const { analytics: t, updateLocation: i, updateTweetDetailNav: r } = e;
+                    t.scribePageImpression(), i(t.contextualScribeNamespace, t.contextualScribeData), r(t.contextualScribeNamespace);
+                }
+            }
+            l.defaultProps = { children: null };
+            const c = (0, _.ZP)(o(l));
+        },
+        886191: (e, t, i) => {
+            "use strict";
+            i.d(t, { Z: () => y });
+            var r = i(202784),
+                _ = i(731708),
+                n = i(457311),
+                s = i(111677),
+                a = i.n(s),
+                o = i(912021),
+                l = i(864702),
+                c = i(479506),
+                d = i(903019),
+                p = i(519896),
+                w = i(774006),
+                b = i(443781),
+                h = i(810641),
+                u = i(335632);
+            const m = a().c09de2d4,
+                g = a().ae111c99,
+                v = r.createElement(a().I18NFormatMessage, { $i18n: "e7e44bab" }, r.createElement(_.ZP, { link: "/settings/search" }, a().f191a2ba));
+            class f extends r.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this._shouldStoreTypeaheadItem = (e) => e === c.Z.ItemType.USER || e === c.Z.ItemType.TOPIC || e === c.Z.ItemType.EVENT),
+                        (this._getModule = () => {
+                            const { query: e, querySrc: t, searchFilters: i, searchMode: r, urtEndpointOptions: _, vertical: n } = this.props,
+                                { featureSwitches: s } = this.context,
+                                a = s.isTrue("search_timelines_graphql_enabled");
+                            return this._getMemoizedModule(e, t, r, i, n, _, a);
+                        }),
+                        (this._renderEmptyTimeline = () => {
+                            const { emptyStateComponent: e, query: t } = this.props;
+                            return e || r.createElement(n.Z, { header: g({ query: t }), message: v });
+                        }),
+                        (this._getMemoizedModule = (0, o.Z)((e, t, i, r, _, n, s) => (0, w.Z)({ query: e, searchMode: i, querySource: t, searchFilters: r, vertical: _, urtEndpointOptions: n, searchTimelinesGraphQLEnabled: s }))),
+                        (this._getMemoizedEntryConfiguration = (0, o.Z)((e) => (({ shouldStoreTypeaheadItem: e, withUserPresence: t }) => ({ ...(0, u.G)({ tweetDismissable: !0, displayBlocked: !0, shouldStoreTypeaheadItem: e, withUserPresence: t }) }))({ shouldStoreTypeaheadItem: this._shouldStoreTypeaheadItem, withUserPresence: e })));
+                }
+                render() {
+                    const e = this.props.searchMode !== d.N3.Live;
+                    return r.createElement(h.Z, { apiErrorHandlerMap: l.d, entryConfiguration: this._getMemoizedEntryConfiguration(this.props.withUserPresence), fetchOptions: this.props.fetchOptions, isSingleDirection: e, module: this._getModule(), prerollDisplayLocation: p.Nw.SEARCH_TWEETS, renderEmptyState: this._renderEmptyTimeline, title: m });
+                }
+            }
+            f.contextType = b.rC;
+            const y = f;
+        },
+        864702: (e, t, i) => {
+            "use strict";
+            i.d(t, { d: () => o });
+            var r = i(111677),
+                _ = i.n(r),
+                n = i(615656),
+                s = i(51525);
+            const a = _().i1801686,
+                o = { [n.ZP.GenericForbidden]: { toast: (0, s.j)() }, [n.ZP.InvalidRequestUrl]: { toast: { text: a, withClearButton: !0 } }, showToast: !0 };
+        },
+        883432: (e, t, i) => {
+            "use strict";
+            i.d(t, { Z: () => r });
+            const r = { AdvancedSearchPage: "advanced_search_page", CashtagClick: "cashtag_click", HashtagClick: "hashtag_click", PromotedTrendClick: "promoted_trend_click", RecentSearchClick: "recent_search_click", SavedSearchClick: "saved_search_click", RelatedQueryClick: "related_query_click", SpellingCorrectionClick: "spelling_correction_click", SpellingCorrectionRevertClick: "spelling_suggestion_revert_click", SpellingExpansionClick: "spelling_expansion_click", SpellingExpansionRevertClick: "spelling_expansion_revert_click", SpellingSuggestionClick: "spelling_suggestion_click", TrendClick: "trend_click", TrendView: "trend_view", TypeaheadClick: "typeahead_click", Typed: "typed_query", TVSearch: "TvSearch", TweetDetailQuoteTweet: "tdqt", TweetDetailSimilarPost: "tweet_detail_similar_posts" };
+        },
+        481918: (e, t, i) => {
+            "use strict";
+            i.d(t, { Z: () => a });
+            var r = i(413798),
+                _ = i(750085),
+                n = i(218951),
+                s = i(952257);
+            const a = (e) => (0, n.Z)({ timelineId: `retweetersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchRetweetedBy, getEndpointParams: ({ count: t, cursor: i }) => ({ count: t, cursor: "string" == typeof i ? i : void 0, tweetId: e }) }, formatResponse: _.Z, context: "FETCH_TWEET_ACTIVITY_RETWEETS", perfKey: "retweetersGraphQL", staleIntervalMs: s.J });
+        },
+        774006: (e, t, i) => {
+            "use strict";
+            i.d(t, { Z: () => h, u: () => b });
+            var r = i(644829),
+                _ = i(750085),
+                n = i(903019),
+                s = i(883432),
+                a = i(555875),
+                o = i(218951);
+            const l = "search-",
+                c = " near:me",
+                d = " filter:follows",
+                p = { [n.N3.Image]: { result_filter: n.N3.Image }, [n.N3.List]: { result_filter: n.N3.List }, [n.N3.Live]: { tweet_search_mode: n.N3.Live }, [n.N3.Media]: { result_filter: n.N3.Media }, [n.N3.Top]: {}, [n.N3.User]: { result_filter: n.N3.User }, [n.N3.Video]: { result_filter: n.N3.Video } },
+                w = (e) => (((e) => e === s.Z.SpellingCorrectionRevertClick || e === s.Z.SpellingExpansionRevertClick)(e) ? "-revert" : ""),
+                b = () => (e, t) => {
+                    e(
+                        (0, a.CY)(t())
+                            .filter((e) => 0 === e.indexOf(l))
+                            .map((e) => (0, a.$q)(e)),
+                    );
+                },
+                h = ({ query: e, searchMode: t = n.N3.Top, querySource: i, searchFilters: s, vertical: a, urtEndpointOptions: b, searchTimelinesGraphQLEnabled: h }) => {
+                    const u = w(i),
+                        m = s && s.peopleFilter ? "searcher_follows" : void 0,
+                        g = m ? "-pf" : "",
+                        v = s && s.locationFilter && !e.includes(c) ? `${e}${c}` : e,
+                        f = { timelineId: `${l}${v}-${t}${u}${g}`, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchSearch, getEndpointParams: (e) => ({ ...b?.requestParams, q: v, social_filter: m, vertical: a, ...p[t], ...e }) }, context: "FETCH_SEARCH_TIMELINE", perfKey: "search", staleIntervalMs: t === n.N3.Live ? 5e3 : void 0, timelineType: "search" };
+                    if (h) {
+                        const e = m && !v.includes(d) ? `${v}${d}` : v,
+                            s = ((e) => {
+                                switch (e) {
+                                    case n.N3.Image:
+                                        return "Photos";
+                                    case n.N3.List:
+                                        return "Lists";
+                                    case n.N3.Media:
+                                        return "Media";
+                                    case n.N3.Top:
+                                        return "Top";
+                                    case n.N3.User:
+                                        return "People";
+                                    case n.N3.Video:
+                                        return "Videos";
+                                    case n.N3.Live:
+                                    default:
+                                        return "Latest";
+                                }
+                            })(t),
+                            a = `gql-${l}${v}-${t}${u}${g}`;
+                        return (0, o.Z)({ ...f, timelineId: a, context: "FETCH_SEARCH_GRAPHQL_TIMELINE", formatResponse: _.Z, network: { getEndpointParams: ({ count: t, cursor: r }) => ({ rawQuery: e, count: t, product: s, querySource: i, cursor: "string" == typeof r ? r : void 0 }), getEndpoint: (e) => e.withEndpoint(r.Z).fetchSearchGraphQL } });
+                    }
+                    return (0, o.Z)(f);
+                };
+        },
+        952257: (e, t, i) => {
+            "use strict";
+            i.d(t, { J: () => r });
+            const r = 1e4;
+        },
+        41065: (e, t, i) => {
+            "use strict";
+            i.r(t), i.d(t, { default: () => o });
+            var r = i(202784),
+                _ = i(890601),
+                n = i(783427),
+                s = i(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, n.Z)();
+                return (0, _.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const o = a;
+        },
+    },
+]);
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.QuoteTweetActivity~bundle.TweetActivity.beb6bdca.js.map

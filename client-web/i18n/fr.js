@@ -5441,6 +5441,8 @@
                 n("i8cae552", "En effectuant des évaluations, vous participerez au maintien d'une qualité élevée de la fonctionnalité Notes de la Communauté."),
                 n("hd43a218", "Vous avez atteint votre limite quotidienne de rédaction de Notes"),
                 n("aaba8ed2", "Pour garantir une qualité élevée des Notes et prévenir le spam, le nombre de Notes qu'un contributeur peut écrire chaque jour est limité en fonction de l'impact de ses rédactions. Veuillez réessayer plus tard."),
+                n("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
+                n("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
                 n("b98f077c", "Information sur la demande de Note"),
                 n("ee691104", "Demander une Note de la Communauté sur ce post"),
                 n("f8cbdf02", "Vous pensez que ce post est potentiellement trompeur ? Demandez une Note de la Communauté."),
@@ -5883,10 +5885,10 @@
                 n("beba2a0e", "Créer un dossier de signets"),
                 n("e41c9b4f", function (e) {
                     return "Enregistré dans le dossier " + e.bookmarkFolderName;
-                }),
-                n("h18f86a4", "Supprimer le dossier"),
-                n("f4ea967a", "Le dossier a été supprimé.");
-            n("b670aa62", "Nom du dossier"),
+                });
+            n("h18f86a4", "Supprimer le dossier"),
+                n("f4ea967a", "Le dossier a été supprimé."),
+                n("b670aa62", "Nom du dossier"),
                 n("aece5462", "Le nom du dossier a bien été mis à jour."),
                 n("e3299b94", "Une erreur s'est produite. Réessayez de mettre ce dossier à jour dans un moment."),
                 n("c09ea714", "Une erreur s'est produite. Réessayez de supprimer ce dossier dans un moment."),
@@ -6887,10 +6889,10 @@
                 n("hf352d42", "Ajoutez une fourchette de salaire facultative qui sera affichée aux candidats. Si vous choisissez de ne pas le faire, ayez bien à l'esprit les éventuelles lois de transparence des rémunérations qui s'appliquent là où vous recrutez."),
                 n("ede7d0a2", "Devise"),
                 n("b925c18c", "Type de salaire "),
-                n("j3d242ce", "Plage non valide"),
-                n("f4d07bd2", "Indiquez des détails facultatifs qui permettront aux candidats de découvrir plus facilement vos offres en effectuant une recherche."),
-                n("b8cbb51a", "Résumé du poste");
-            n("bda6881e", "Cette offre d'emploi a été importée depuis votre système de suivi des candidats (Applicant Tracking System, ou ATS). Veuillez noter que seuls des champs spécifiques peuvent être modifiés."),
+                n("j3d242ce", "Plage non valide");
+            n("f4d07bd2", "Indiquez des détails facultatifs qui permettront aux candidats de découvrir plus facilement vos offres en effectuant une recherche."),
+                n("b8cbb51a", "Résumé du poste"),
+                n("bda6881e", "Cette offre d'emploi a été importée depuis votre système de suivi des candidats (Applicant Tracking System, ou ATS). Veuillez noter que seuls des champs spécifiques peuvent être modifiés."),
                 n("b075c68a", "Modifier l'offre d'emploi"),
                 n("d4b6a6e0", "Spotlight sur le profil"),
                 n("j2dd3686", "Les offres mises en avant apparaissent au‑dessus de mes posts."),
@@ -7235,7 +7237,7 @@
                 n("h257d4aa", "Choisir un post à sponsoriser"),
                 n("e9334fe6", "Mises à jour des données toutes les quelques minutes"),
                 n("a6d7b1d0", "Sur la base de données internes X"),
-                n("h9b28dae", "Vous gagnez du temps grâce à un fil sans publicités"),
+                n("h71a00e6", "You’re saving time with ad-free"),
                 n("f6c50ec0", "Votre essai sans publicités est terminé"),
                 n("e1d1fbca", "Vous avez évité"),
                 n("a82d7abd", function (e) {
@@ -7262,6 +7264,9 @@
                 }),
                 n("b93d00e5", function (e) {
                     return e.days + " day" + o(e.days, "", "s");
+                }),
+                n("dc9661b3", function (e) {
+                    return e.seconds + " second" + o(e.seconds, "", "s");
                 }),
                 n("g2c63852", "100 % gratuit. Aucune carte de crédit n'est requise."),
                 n("be88be23", function (e) {
@@ -7864,12 +7869,7 @@
                 n("b74ff5fc", "Si vous annulez, votre Souscription expirera automatiquement à la fin du cycle de facturation."),
                 n("ee9efbc8", "Continuer pour annuler"),
                 n("c5d9c77a", "Il semble qu'un petit problème s'est produit. Mais ne vous inquiétez pas, ce n'est pas de votre faute. Fermez cette fenêtre et réessayez."),
-                n("jda53c24", "Vous pouvez annuler votre Souscription via l'App Store Apple."),
-                n("g0a7a53e", "Vous pouvez annuler votre Souscription via la boutique Google Play."),
-                n("i5f14be7", function (e) {
-                    return "Heureux de vous retrouver, " + e.displayName;
-                }),
-                n("a76d58ba", "Statistiques des publicités");
+                n("jda53c24", "Vous pouvez annuler votre Souscription via l'App Store Apple.");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7908,7 +7908,12 @@
                     i(e, t)
                 );
             }
-            n("eccd0e1a", "Statistiques de l'organisation "),
+            n("g0a7a53e", "Vous pouvez annuler votre Souscription via la boutique Google Play."),
+                n("i5f14be7", function (e) {
+                    return "Heureux de vous retrouver, " + e.displayName;
+                }),
+                n("a76d58ba", "Statistiques des publicités"),
+                n("eccd0e1a", "Statistiques de l'organisation "),
                 n("deea1708", "Vous voulez afficher les statistiques pour tous vos comptes X ?"),
                 n("eb603ffc", "Mettez à niveau pour affilier votre réseau et afficher des statistiques agrégées."),
                 n("gf67aae4", "Passez à l'Accès complet"),
@@ -8904,11 +8909,11 @@
                     return "Rendez-vous sur " + e.advertiserName;
                 }),
                 n("c67e71aa", "Regarder maintenant"),
-                n("a6ada13e", "Acheter maintenant"),
-                n("j0f12222", "Voir plus"),
+                n("a6ada13e", "Acheter maintenant");
+            n("j0f12222", "Voir plus"),
                 n("f569f7c8", "Accéder au site Web"),
-                n("j0c6772a", "Visiter le site Web");
-            n("f73003aa", "La vidéo sera lue après la publicité."),
+                n("j0c6772a", "Visiter le site Web"),
+                n("f73003aa", "La vidéo sera lue après la publicité."),
                 n("b3112b8a", "Passer"),
                 n("h6333ad0", "Ignorer la publicité"),
                 n("c59da417", function (e) {
@@ -13356,4 +13361,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.77ac658a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.93b5923a.js.map

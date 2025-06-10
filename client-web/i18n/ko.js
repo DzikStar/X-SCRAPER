@@ -5440,6 +5440,8 @@
                 n("i8cae552", "평가해 주시면 그룹 노트의 품질을 높게 유지하는 데 도움이 됩니다."),
                 n("hd43a218", "일일 노트 작성 한도에 도달했습니다"),
                 n("aaba8ed2", "노트 품질을 높게 유지하고 스팸을 방지하기 위해 참여자가 하루에 작성할 수 있는 노트 수는 참여자의 작성 영향력에 따라 제한됩니다. 나중에 다시 시도해 주세요."),
+                n("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
+                n("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
                 n("b98f077c", "노트 정보 요청하기"),
                 n("ee691104", "이 게시물에 대해 그룹 노트를 요청하세요"),
                 n("f8cbdf02", "이 게시물이 오해의 소지가 있다고 생각되나요? 그룹 노트를 요청하세요."),
@@ -5882,10 +5884,10 @@
                 n("beba2a0e", "새 북마크 폴더 만들기"),
                 n("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
-                }),
-                n("h18f86a4", "폴더 삭제하기"),
-                n("f4ea967a", "폴더가 삭제되었습니다");
-            n("b670aa62", "폴더 이름"),
+                });
+            n("h18f86a4", "폴더 삭제하기"),
+                n("f4ea967a", "폴더가 삭제되었습니다"),
+                n("b670aa62", "폴더 이름"),
                 n("aece5462", "폴더 이름이 업데이트되었습니다"),
                 n("e3299b94", "문제가 발생했습니다. 잠시 후 폴더를 다시 업데이트하세요."),
                 n("c09ea714", "문제가 발생했습니다. 잠시 후 폴더를 다시 삭제해 보세요."),
@@ -6886,10 +6888,10 @@
                 n("hf352d42", "지원자에게 표시할 선택 급여 범위를 추가하세요. 추가하지 않으려면 채용 지역의 임금 투명성 관련 법규를 준수하는지 확인하세요."),
                 n("ede7d0a2", "통화"),
                 n("b925c18c", "급여 유형"),
-                n("j3d242ce", "범위가 잘못되었습니다"),
-                n("f4d07bd2", "지원자가 검색을 통해 채용 정보를 더 쉽게 찾을 수 있도록 세부 정보를 작성해 주세요(선택)."),
-                n("b8cbb51a", "직무 요약");
-            n("bda6881e", "이 채용공고는 지원자 추적 시스템(ATS)에서 가져온 것입니다. 특정 필드만 수정할 수 있다는 점에 유의하시기 바랍니다."),
+                n("j3d242ce", "범위가 잘못되었습니다");
+            n("f4d07bd2", "지원자가 검색을 통해 채용 정보를 더 쉽게 찾을 수 있도록 세부 정보를 작성해 주세요(선택)."),
+                n("b8cbb51a", "직무 요약"),
+                n("bda6881e", "이 채용공고는 지원자 추적 시스템(ATS)에서 가져온 것입니다. 특정 필드만 수정할 수 있다는 점에 유의하시기 바랍니다."),
                 n("b075c68a", "채용 공고 수정"),
                 n("d4b6a6e0", "프로필 스포트라이트"),
                 n("j2dd3686", "추천 공고는 눈에 잘 띄도록 게시물 위에 게재됩니다. "),
@@ -7234,7 +7236,7 @@
                 n("h257d4aa", "프로모션할 게시물을 선택하세요"),
                 n("e9334fe6", "데이터는 몇 분마다 업데이트됩니다"),
                 n("a6d7b1d0", "X 내부 데이터 기반"),
-                n("h9b28dae", "피드에서 광고를 없애고 시간을 절약하고 있습니다"),
+                n("h71a00e6", "You’re saving time with ad-free"),
                 n("f6c50ec0", "광고 안 보기 무료 체험 기간 종료"),
                 n("e1d1fbca", "표시되지 않은 광고 수"),
                 n("a82d7abd", function (e) {
@@ -7261,6 +7263,9 @@
                 }),
                 n("b93d00e5", function (e) {
                     return e.days + " 일";
+                }),
+                n("dc9661b3", function (e) {
+                    return e.seconds + " second" + t(e.seconds, "", "s");
                 }),
                 n("g2c63852", "완전 무료. 신용카드는 없어도 됩니다."),
                 n("be88be23", function (e) {
@@ -7863,12 +7868,7 @@
                 n("b74ff5fc", "취소 시, 결제 주기가 끝나면 구독이 자동으로 만료됩니다."),
                 n("ee9efbc8", "계속 취소합니다"),
                 n("c5d9c77a", "문제가 발생한 것 같습니다. 여러분의 잘못이 아니니 걱정하지 마세요. 이 창을 닫고 다시 시도해 주세요."),
-                n("jda53c24", "Apple App Store에서 구독을 취소할 수 있습니다."),
-                n("g0a7a53e", "Google Play Store에서 구독을 취소할 수 있습니다."),
-                n("i5f14be7", function (e) {
-                    return e.displayName + " 님, 다시 만나서 반가워요!";
-                }),
-                n("a76d58ba", "광고 애널리틱스");
+                n("jda53c24", "Apple App Store에서 구독을 취소할 수 있습니다.");
             function r(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7907,7 +7907,12 @@
                     d(e, c)
                 );
             }
-            n("eccd0e1a", "조직 애널리틱스"),
+            n("g0a7a53e", "Google Play Store에서 구독을 취소할 수 있습니다."),
+                n("i5f14be7", function (e) {
+                    return e.displayName + " 님, 다시 만나서 반가워요!";
+                }),
+                n("a76d58ba", "광고 애널리틱스"),
+                n("eccd0e1a", "조직 애널리틱스"),
                 n("deea1708", "모든 X 계정에 대한 애널리틱스를 보고 싶으신가요?"),
                 n("eb603ffc", "네트워크 제휴로 업그레이드하고 집계된 애널리틱스를 확인하세요."),
                 n("gf67aae4", "전체 액세스로 업그레이드"),
@@ -8903,11 +8908,11 @@
                     return e.advertiserName + " 방문하기";
                 }),
                 n("c67e71aa", "지금 시청하기"),
-                n("a6ada13e", "지금 쇼핑하기"),
-                n("j0f12222", "더 보기"),
+                n("a6ada13e", "지금 쇼핑하기");
+            n("j0f12222", "더 보기"),
                 n("f569f7c8", "웹사이트로 이동"),
-                n("j0c6772a", "웹사이트 방문하기");
-            n("f73003aa", "광고 후 동영상이 재생됩니다"),
+                n("j0c6772a", "웹사이트 방문하기"),
+                n("f73003aa", "광고 후 동영상이 재생됩니다"),
                 n("b3112b8a", "건너뛰기"),
                 n("h6333ad0", "광고 건너뛰기"),
                 n("c59da417", function (e) {
@@ -13371,4 +13376,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.0a2d0f4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.dbb7ddda.js.map

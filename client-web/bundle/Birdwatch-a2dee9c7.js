@@ -65,7 +65,7 @@
             e.exports = { queryId: "bPaR2ckUsrb7OCszG8QdaA", operationName: "BirdwatchFetchNoteTranslation", operationType: "query", metadata: { featureSwitches: ["responsive_web_birdwatch_translation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         99459: (e) => {
-            e.exports = { queryId: "vIBm6T1i0NvurrRbaArLbg", operationName: "BirdwatchFetchNotes", operationType: "query", metadata: { featureSwitches: ["responsive_web_birdwatch_media_notes_enabled", "responsive_web_birdwatch_url_notes_enabled", "responsive_web_birdwatch_translation_enabled", "responsive_web_birdwatch_fast_notes_badge_enabled", "responsive_web_graphql_timeline_navigation_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "hnZ4PYzrmZM5ygoZbJftZg", operationName: "BirdwatchFetchNotes", operationType: "query", metadata: { featureSwitches: ["responsive_web_birdwatch_enforce_author_user_quotas", "responsive_web_birdwatch_media_notes_enabled", "responsive_web_birdwatch_url_notes_enabled", "responsive_web_birdwatch_translation_enabled", "responsive_web_birdwatch_fast_notes_badge_enabled", "responsive_web_graphql_timeline_navigation_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         526745: (e) => {
             e.exports = { queryId: "ygFNhI1BmyImWxCynwCEAA", operationName: "BirdwatchFetchOneNote", operationType: "query", metadata: { featureSwitches: ["responsive_web_birdwatch_media_notes_enabled", "responsive_web_birdwatch_url_notes_enabled", "responsive_web_birdwatch_translation_enabled", "responsive_web_birdwatch_fast_notes_badge_enabled", "responsive_web_graphql_timeline_navigation_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
@@ -116,14 +116,14 @@
                 n = i(414742),
                 o = i(703710),
                 s = i(318752),
-                l = i(256563),
-                _ = i(497461),
+                _ = i(256563),
+                l = i(497461),
                 d = i(171697);
             const c = (e, t, i) => {
                     if (!t?.data_v1) return null;
                     const a = t.data_v1.summary,
                         { tweet_results: r, ...n } = t;
-                    return { ...n, data_v1: { ...n.data_v1, summary: a && (0, l.Z)(e, a) }, tombstone: t.tombstone && (0, l.Z)(e, t.tombstone), tweet: r?.result, tweetId: i };
+                    return { ...n, data_v1: { ...n.data_v1, summary: a && (0, _.Z)(e, a) }, tombstone: t.tombstone && (0, _.Z)(e, t.tombstone), tweet: r?.result, tweetId: i };
                 },
                 p = new a.fK.Entity(
                     "birdwatchNotes",
@@ -131,7 +131,7 @@
                     {
                         idAttribute: (e) => e.tweet_id,
                         processStrategy: (e) => {
-                            const t = (0, _.$)(),
+                            const t = (0, l.$)(),
                                 i = {};
                             if (e.misleading_birdwatch_notes) {
                                 const a = e.misleading_birdwatch_notes.notes.map((e) => c(t, e));
@@ -141,23 +141,23 @@
                                 const a = e.not_misleading_birdwatch_notes.notes.map((e) => c(t, e));
                                 i.not_misleading_ids = a.filter(Boolean);
                             }
-                            return e.self_birdwatch_note && (i.ownNoteId = e.self_birdwatch_note.rest_id), i;
+                            return e.self_birdwatch_note && (i.ownNoteId = e.self_birdwatch_note.rest_id), (i.canUserWriteNotesOnPost = e.can_user_write_notes_on_post_author), i;
                         },
                     },
                 ),
-                b = new a.fK.Entity(
+                u = new a.fK.Entity(
                     "birdwatchNotes",
                     {},
                     {
                         idAttribute: (e) => e.alias,
                         processStrategy: (e) => {
-                            const t = (0, _.$)(),
+                            const t = (0, l.$)(),
                                 { notes_slice: i, ...a } = e;
                             return i && (a.notes = i.notes.map((e) => c(t, e)).filter(Boolean)), a;
                         },
                     },
                 ),
-                u = new a.fK.Entity(
+                b = new a.fK.Entity(
                     "birdwatchContributorNotes",
                     {},
                     {
@@ -165,14 +165,14 @@
                         processStrategy: (e, t, i) => {
                             const { tweet_results: a, ...r } = e,
                                 n = { ...r, tweet_results: a },
-                                o = (0, _.$)(),
-                                l = c(o, n, a?.result?.tweet ? a?.result?.tweet : a?.result) || {};
-                            return (0, s.Z)(l, t, i);
+                                o = (0, l.$)(),
+                                _ = c(o, n, a?.result?.tweet ? a?.result?.tweet : a?.result) || {};
+                            return (0, s.Z)(_, t, i);
                         },
                     },
                 );
-            u.define({ tweetId: d.Z });
-            const h = new a.fK.Entity("birdwatchNotes", {}, { idAttribute: (e) => e.rest_id, processStrategy: (e) => c((0, _.$)(), e) });
+            b.define({ tweetId: d.Z });
+            const h = new a.fK.Entity("birdwatchNotes", {}, { idAttribute: (e) => e.rest_id, processStrategy: (e) => c((0, l.$)(), e) });
             var w = i(782365),
                 m = i.n(w),
                 g = i(112110),
@@ -195,8 +195,8 @@
                 Q = i.n(Z),
                 F = i(131736),
                 P = i.n(F),
-                R = i(380654),
-                M = i.n(R),
+                M = i(380654),
+                R = i.n(M),
                 z = i(259967),
                 j = i.n(z),
                 U = i(180186),
@@ -219,14 +219,14 @@
                 ne = i.n(re),
                 oe = i(526745),
                 se = i.n(oe),
-                le = i(613953),
-                _e = i.n(le),
+                _e = i(613953),
+                le = i.n(_e),
                 de = i(957624),
                 ce = i.n(de),
                 pe = i(888066),
-                be = i.n(pe),
-                ue = i(917631),
-                he = i.n(ue),
+                ue = i.n(pe),
+                be = i(917631),
+                he = i.n(be),
                 we = i(62736),
                 me = i.n(we),
                 ge = i(39702),
@@ -256,7 +256,7 @@
                     deleteBirdwatchBatSignal: (t) => e.graphQL(A(), { tweet_id: t.tweet_id }),
                     deleteNote: (t) => e.graphQL(Q(), { note_id: t.note_id }),
                     deleteRating: (t) => e.graphQL(P(), { note_id: t.note_id }),
-                    editNotificationSettings: (t) => e.graphQL(M(), { settings: t.settings }),
+                    editNotificationSettings: (t) => e.graphQL(R(), { settings: t.settings }),
                     editUserSettings: (t) => e.graphQL(j(), { show_in_app_navigation: t.show_in_app_navigation }),
                     fetchOneNote: (i) =>
                         e.graphQL(se(), { note_id: i.note_id, ...(0, o.S)(t) }).then((e) => {
@@ -281,7 +281,7 @@
                     fetchBirdwatchProfile: (t) =>
                         e.graphQL(X(), { alias: t.alias }).then((e) => {
                             const t = { ...e.birdwatch_profile_by_alias };
-                            return t && (0, a.Fv)(t, b);
+                            return t && (0, a.Fv)(t, u);
                         }),
                     fetchBirdwatchContributorNotesSlice: (i) =>
                         i
@@ -294,7 +294,7 @@
                                   .then((e) => {
                                       const t = e?.birdwatch_profile_by_alias?.notes_slice;
                                       if (t) {
-                                          const { entities: e, result: i } = (0, a.Fv)(t.notes, [u]);
+                                          const { entities: e, result: i } = (0, a.Fv)(t.notes, [b]);
                                           return { result: i, entities: e, slice_info: t.slice_info };
                                       }
                                       return ve;
@@ -311,7 +311,7 @@
                                   .then((e) => {
                                       const t = e?.birdwatch_profile_by_alias?.deleted_notes_slice;
                                       if (t) {
-                                          const { entities: e, result: i } = (0, a.Fv)(t.notes, [u]);
+                                          const { entities: e, result: i } = (0, a.Fv)(t.notes, [b]);
                                           return { result: i, entities: e, slice_info: t.slice_info };
                                       }
                                       return ve;
@@ -350,7 +350,7 @@
                         i
                             ? e
                                   .graphQL(
-                                      be(),
+                                      ue(),
                                       { count: 10, ...i, ...(0, o.S)(t) },
                                       (0, n.kj)((e) => !e?.tweet_result_by_rest_id?.result?.note_request_source_slice, "GQL Birdwatch: Failed to fetch Note Request Sources Slice"),
                                   )
@@ -379,7 +379,7 @@
                     fetchAliasSelfSelectStatus: () => e.graphQL(G(), {}).then((e) => e.authenticated_user_birdwatch_alias_self_select_status),
                     fetchAliasSelfSelectOptions: () => ke(e, 0),
                     selectAlias: (t) => e.graphQL(f(), { alias: t.alias }),
-                    fetchPublicData: () => e.graphQL(_e(), {}).then((e) => ({ ...e.birdwatch_latest_public_data_file_bundle })),
+                    fetchPublicData: () => e.graphQL(le(), {}).then((e) => ({ ...e.birdwatch_latest_public_data_file_bundle })),
                     fetchGlobalTimeline: () =>
                         e.graphQL(te(), { ...(0, o.d)(t) }, Ce).then((e) => {
                             const t = e?.viewer?.birdwatch_home_page;
@@ -395,15 +395,15 @@
                 n = i.n(r),
                 o = i(466972),
                 s = i.n(o),
-                l = i(120717),
-                _ = i.n(l);
+                _ = i(120717),
+                l = i.n(_);
             const d = ({ apiClient: e, featureSwitches: t }) => ({
                 createBoostRating(i) {
                     const { boostId: r, data: o, postId: s } = i;
                     return e.graphQL(n(), { post_id: s, boost_id: r, data: o, ...(0, a.S)(t) }).then((e) => ("CommunityBoostError" === e.communityboostpivot_rate?.type ? { error: "CommunityBoostError", reason: e.communityboostpivot_rate?.reason, error_code: e.communityboostpivot_rate?.error_code } : { ...e.communityboostpivot_rate }));
                 },
                 deleteBoostRating: (t) => e.graphQL(s(), { boost_id: t.boost_id }),
-                fetchCommunityBoostPivot: (t) => e.graphQL(_(), { tweet_id: t }).then((e) => e),
+                fetchCommunityBoostPivot: (t) => e.graphQL(l(), { tweet_id: t }).then((e) => e),
             });
         },
         740527: (e, t, i) => {
@@ -414,9 +414,9 @@
                 n = i(750085),
                 o = i(401388),
                 s = i(626421),
-                l = i(497461);
-            const _ = (e) => {
-                    const t = (0, l.$)(),
+                _ = i(497461);
+            const l = (e) => {
+                    const t = (0, _.$)(),
                         i = ((e) => {
                             if ("SegmentedTimelines" !== e.body.__typename) return;
                             const t = e.body.timelines.map((e) => ({ graphQLTimelineId: e.timeline.id, id: e.id, labelText: e.labelText, scribeConfig: (0, o.Z)(e.scribeConfig) ? void 0 : { ...e.scribeConfig }, refreshIntervalSec: e.refreshIntervalSec }));
@@ -426,8 +426,8 @@
                             const { header: i } = t;
                             if (!i || "TopicPageHeader" !== i.__typename) return;
                             const { __typename: a, facepile: r, topic: n, ...o } = i,
-                                l = r && (0, s.Zn)(e, r);
-                            return { ...o, topicId: (0, s.S0)(e, n), facepile: l };
+                                _ = r && (0, s.Zn)(e, r);
+                            return { ...o, topicId: (0, s.S0)(e, n), facepile: _ };
                         })(t, e),
                         r = ((e, t) => {
                             const { navBar: i } = t;
@@ -446,7 +446,7 @@
                 d = (e) => {
                     const t = "Timeline" === (i = e.body).__typename && i.timeline ? (0, n.Z)(i.timeline) : "SegmentedTimelines" === i.__typename && i.initialTimeline?.timeline.timeline ? (0, n.Z)(i.initialTimeline.timeline.timeline) : (0, n.Z)(r.cY);
                     var i;
-                    const { globalObjects: o, pageConfiguration: s } = _(e);
+                    const { globalObjects: o, pageConfiguration: s } = l(e);
                     return { ...t, globalObjects: (0, a.Z)(o, t.globalObjects), pageConfiguration: s };
                 };
         },
@@ -464,29 +464,29 @@
                 n = i(731708),
                 o = i(530732),
                 s = i(392237),
-                l = i(111677),
-                _ = i.n(l),
+                _ = i(111677),
+                l = i.n(_),
                 d = i(58399),
                 c = i(795507),
                 p = i(266151),
-                b = i(262754),
-                u = i(81327);
-            const h = _().b3de4a42,
-                w = _().a7b0393c,
-                m = _().id568acc,
+                u = i(262754),
+                b = i(81327);
+            const h = l().b3de4a42,
+                w = l().a7b0393c,
+                m = l().id568acc,
                 g = s.default.create((e) => ({ awardContent: { alignItems: "center", flexDirection: "row" }, awardSection: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" }, chevronRightIcon: { color: e.colors.gray400, paddingEnd: e.spaces.space20 }, container: { paddingStart: e.spaces.space16, paddingVertical: e.spaces.space12 }, ratingAwardText: { color: e.colors.text, marginEnd: e.spaces.space4 }, impactIcon: { color: e.colors.gray700, marginEnd: e.spaces.space8 }, awardIcon: { color: e.colors.primary, marginEnd: e.spaces.space8 } })),
-                f = { [u.n.Ratings]: { title: h, badgeIcon: a.createElement(c.default, { style: g.impactIcon }) }, [u.n.Notes]: { title: w, badgeIcon: a.createElement(p.default, { style: g.impactIcon }) }, [u.n.TopContributor]: { title: m, badgeIcon: a.createElement(b.default, { style: g.awardIcon }) } },
+                f = { [b.n.Ratings]: { title: h, badgeIcon: a.createElement(c.default, { style: g.impactIcon }) }, [b.n.Notes]: { title: w, badgeIcon: a.createElement(p.default, { style: g.impactIcon }) }, [b.n.TopContributor]: { title: m, badgeIcon: a.createElement(u.default, { style: g.awardIcon }) } },
                 y = (e) => {
-                    const { badgeScore: t, badgeType: i, interactive: s, onClick: l } = e,
-                        { badgeIcon: _, title: c } = f[i],
+                    const { badgeScore: t, badgeType: i, interactive: s, onClick: _ } = e,
+                        { badgeIcon: l, title: c } = f[i],
                         p = a.createElement(d.default, { style: g.chevronRightIcon });
-                    const b = a.createElement(
+                    const u = a.createElement(
                         r.Z,
                         { style: g.awardSection },
                         a.createElement(
                             r.Z,
                             { style: g.awardContent },
-                            _,
+                            l,
                             void 0 !== t &&
                                 a.createElement(
                                     n.ZP,
@@ -499,7 +499,7 @@
                         ),
                         s && p,
                     );
-                    return a.createElement(o.Z, { interactive: s, onClick: l, style: s ? g.container : null }, b);
+                    return a.createElement(o.Z, { interactive: s, onClick: _, style: s ? g.container : null }, u);
                 };
         },
         81327: (e, t, i) => {
@@ -516,8 +516,8 @@
                 n = i.n(r),
                 o = i(325686),
                 s = i(370006),
-                l = i(786998),
-                _ = i(929028),
+                _ = i(786998),
+                l = i(929028),
                 d = i(386802);
             function c(e, t, i) {
                 return e || (!t && i ? "fixed" : void 0);
@@ -535,18 +535,18 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: i, fixed: r, hideBackButton: n, isFullWidth: o, isLarge: _, leftControl: d, middleControl: p, position: b, rightControl: u, secondaryBar: h, style: w, subtitle: m, title: g, titleDomId: f, titleIconCell: y, titleIconCellSize: v, withBackground: B, withWideContainer: C } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: i, fixed: r, hideBackButton: n, isFullWidth: o, isLarge: l, leftControl: d, middleControl: p, position: u, rightControl: b, secondaryBar: h, style: w, subtitle: m, title: g, titleDomId: f, titleIconCell: y, titleIconCellSize: v, withBackground: B, withWideContainer: C } = this.props,
                         { isModal: k } = this.context,
                         S = n ? d : a.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         T = (function (e, t, i) {
                             return e && !(t && i);
                         })(!!B, k, !!h);
-                    return a.createElement(a.Fragment, null, a.createElement(l.Z, { centerTitle: t, centeredLogo: i, isFullWidth: o, isLarge: _, leftControl: S, middleControl: p, position: c(b, k, r), rightControl: u, style: w, subtitle: m, title: g, titleDomId: f, titleIconCell: y, titleIconCellSize: v, withBackground: T, withWideContainer: C }), h || null);
+                    return a.createElement(a.Fragment, null, a.createElement(_.Z, { centerTitle: t, centeredLogo: i, isFullWidth: o, isLarge: l, leftControl: S, middleControl: p, position: c(u, k, r), rightControl: b, style: w, subtitle: m, title: g, titleDomId: f, titleIconCell: y, titleIconCellSize: v, withBackground: T, withWideContainer: C }), h || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
                         { isModal: t } = this.context,
-                        i = _.Z.getBackgroundStyles();
+                        i = l.Z.getBackgroundStyles();
                     return t ? a.createElement(o.Z, { style: !!e && i }, this._renderContent()) : this._renderContent();
                 }
             }
@@ -561,8 +561,8 @@
                 n = i(190286),
                 o = i(111677),
                 s = i.n(o),
-                l = i(912021);
-            const _ = s().cfd2f35e;
+                _ = i(912021);
+            const l = s().cfd2f35e;
             class d extends a.Component {
                 constructor(...e) {
                     super(...e),
@@ -576,15 +576,15 @@
                         (this._handleCancelConfirm = () => {
                             this.state.activeConfirmation && this.state.activeConfirmation.cancelCallback?.(), this.setState({ activeConfirmation: null });
                         }),
-                        (this._getMemoizedProcessedActionItems = (0, l.Z)((e, t, i, a) =>
-                            e.reduce((e, { Icon: r, confirmation: n, disabled: o, excludeFromActionMenu: s, isEmphasized: l, link: _, onClick: d, subText: c, testID: p, text: b, withCancelButton: u }, h) => {
+                        (this._getMemoizedProcessedActionItems = (0, _.Z)((e, t, i, a) =>
+                            e.reduce((e, { Icon: r, confirmation: n, disabled: o, excludeFromActionMenu: s, isEmphasized: _, link: l, onClick: d, subText: c, testID: p, text: u, withCancelButton: b }, h) => {
                                 if (!s) {
                                     const s = d
                                         ? () => {
                                               n ? (n.render ? a({ cancelCallback: n.onCancel, confirmCallback: d, render: n.render }) : a({ cancelCallback: n.onCancel, confirmCallback: d, text: n.text, headline: n.headline, label: n.label, confirmButtonType: n.confirmButtonType, withCancelButton: n.withCancelButton })) : (d(), i());
                                           }
                                         : i;
-                                    e.push({ disabled: o, Icon: r, isEmphasized: l, testID: p, subText: c, text: b, onClick: s, link: _, withBottomBorder: t && t.includes(h) });
+                                    e.push({ disabled: o, Icon: r, isEmphasized: _, testID: p, subText: c, text: u, onClick: s, link: l, withBottomBorder: t && t.includes(h) });
                                 }
                                 return e;
                             }, []),
@@ -593,7 +593,7 @@
                 render() {
                     const { onClose: e } = this.props,
                         { activeConfirmation: t } = this.state;
-                    return t ? this._renderConfirmation(t) : a.createElement(r.Z, { cancelButtonLabel: _, items: this._getProcessedActionItems(), onCloseRequested: e });
+                    return t ? this._renderConfirmation(t) : a.createElement(r.Z, { cancelButtonLabel: l, items: this._getProcessedActionItems(), onCloseRequested: e });
                 }
                 _renderConfirmation(e) {
                     if (e && e.render) return e.render(this._handleConfirmed, this._handleCancelConfirm);
@@ -618,39 +618,39 @@
         },
         789831: (e, t, i) => {
             "use strict";
-            i.d(t, { Z: () => _ });
+            i.d(t, { Z: () => l });
             var a = i(807896),
                 r = i(202784),
                 n = i(325686),
                 o = i(392237),
                 s = i(655352);
-            const l = o.default.create((e) => ({ root: { paddingBottom: `calc(${e.spaces.space64} + ${e.spaces.space20} * 2)` } })),
-                _ = ({ children: e, component: t, fab: i, shouldRenderFab: o = !0, style: _, withoutBottomPadding: d, ...c }) => {
+            const _ = o.default.create((e) => ({ root: { paddingBottom: `calc(${e.spaces.space64} + ${e.spaces.space20} * 2)` } })),
+                l = ({ children: e, component: t, fab: i, shouldRenderFab: o = !0, style: l, withoutBottomPadding: d, ...c }) => {
                     const p = t || n.Z,
-                        b = o && !(0, s.ZP)();
-                    return r.createElement(p, (0, a.Z)({}, c, { style: [b && !d && l.root, _] }), e, b ? i : null);
+                        u = o && !(0, s.ZP)();
+                    return r.createElement(p, (0, a.Z)({}, c, { style: [u && !d && _.root, l] }), e, u ? i : null);
                 };
         },
         980407: (e, t, i) => {
             "use strict";
-            i.d(t, { Z: () => h, w: () => b });
+            i.d(t, { Z: () => h, w: () => u });
             var a = i(202784),
                 r = i(325686),
                 n = i(108362),
                 o = i(386802),
                 s = i(392237),
-                l = i(652904),
-                _ = i(555079),
+                _ = i(652904),
+                l = i(555079),
                 d = i(625661),
                 c = i(449067),
                 p = i(715601);
-            class b extends a.Component {
+            class u extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: i, backLocation: n, centerTitle: o, hideBackButton: s, history: l, isFullWidth: c, isLarge: p, middleControl: b, onBackClick: h, rightControl: w, secondaryBar: m, subtitle: g, title: f } = this.props,
+                            const { appBarRef: e, appBarStyle: t, backButtonType: i, backLocation: n, centerTitle: o, hideBackButton: s, history: _, isFullWidth: c, isLarge: p, middleControl: u, onBackClick: h, rightControl: w, secondaryBar: m, subtitle: g, title: f } = this.props,
                                 { isModal: y } = this.context;
-                            return a.createElement(r.Z, { style: y ? [u.childViewAppBarRoot, u.appBarZindex] : u.appBarZindex }, a.createElement(d.ZP, { backButtonType: i || (y ? "close" : "back"), backLocation: n, centerTitle: o, fixed: !y, hideBackButton: s, history: l, isFullWidth: c, isLarge: p, middleControl: b, onBackClick: h, ref: e, rightControl: w, secondaryBar: m, style: [y && u.appBarModal, t], subtitle: g, title: f, titleDomId: _.Q_ }));
+                            return a.createElement(r.Z, { style: y ? [b.childViewAppBarRoot, b.appBarZindex] : b.appBarZindex }, a.createElement(d.ZP, { backButtonType: i || (y ? "close" : "back"), backLocation: n, centerTitle: o, fixed: !y, hideBackButton: s, history: _, isFullWidth: c, isLarge: p, middleControl: u, onBackClick: h, ref: e, rightControl: w, secondaryBar: m, style: [y && b.appBarModal, t], subtitle: g, title: f, titleDomId: l.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -659,25 +659,25 @@
                         });
                 }
                 render() {
-                    const { "aria-hidden": e, bottomBar: t, children: i, containerStyle: o, documentTitle: s, isFullWidth: _, isLarge: d, renderHeader: b, title: h, withoutBottomBarMobile: w } = this.props,
+                    const { "aria-hidden": e, bottomBar: t, children: i, containerStyle: o, documentTitle: s, isFullWidth: l, isLarge: d, renderHeader: u, title: h, withoutBottomBarMobile: w } = this.props,
                         { isModal: m } = this.context,
-                        g = b ? b(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return a.createElement(l.Z, null, a.createElement(c.Z.Configure, { documentTitle: s, headerless: !0, title: h }), a.createElement(r.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [u.root, m && u.rootModal] }, !m && g, a.createElement(n.Z, { isFullWidth: _, isLarge: d, style: [u.container, m && u.containerModal, o] }, m ? a.createElement(p.Z, { style: u.viewport }, g, i) : i), t ? a.createElement(r.Z, { style: [u.bottomBarModal, !m && !w && u.bottomBarMobile] }, a.createElement(n.Z, { isFullWidth: _, isLarge: d }, t)) : null));
+                        g = u ? u(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
+                    return a.createElement(_.Z, null, a.createElement(c.Z.Configure, { documentTitle: s, headerless: !0, title: h }), a.createElement(r.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [b.root, m && b.rootModal] }, !m && g, a.createElement(n.Z, { isFullWidth: l, isLarge: d, style: [b.container, m && b.containerModal, o] }, m ? a.createElement(p.Z, { style: b.viewport }, g, i) : i), t ? a.createElement(r.Z, { style: [b.bottomBarModal, !m && !w && b.bottomBarMobile] }, a.createElement(n.Z, { isFullWidth: l, isLarge: d }, t)) : null));
                 }
             }
-            (b.defaultProps = { isFullWidth: !1, isLarge: !1 }), (b.contextType = o.Z);
-            const u = s.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 }, rootModal: { borderRadius: e.borderRadii.xLarge, flexShrink: 1 }, appBarModal: { borderTopStartRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, childViewAppBarRoot: { position: "sticky", top: 0 }, appBarZindex: { zIndex: e.componentZIndices.appBarZIndex }, container: { flexGrow: 1 }, containerModal: { flexShrink: 1 }, viewport: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge, flexGrow: 1, flexShrink: 1, overflow: "auto", zIndex: void 0 }, bottomBarModal: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small }, bottomBarMobile: { position: "fixed", backfaceVisibility: "hidden", bottom: 0, width: "100%", paddingBottom: s.default.iPhoneOffsetBottom, backgroundColor: e.colors.navigationBackground, borderTopStyle: "solid" } })),
-                h = b;
+            (u.defaultProps = { isFullWidth: !1, isLarge: !1 }), (u.contextType = o.Z);
+            const b = s.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 }, rootModal: { borderRadius: e.borderRadii.xLarge, flexShrink: 1 }, appBarModal: { borderTopStartRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, childViewAppBarRoot: { position: "sticky", top: 0 }, appBarZindex: { zIndex: e.componentZIndices.appBarZIndex }, container: { flexGrow: 1 }, containerModal: { flexShrink: 1 }, viewport: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge, flexGrow: 1, flexShrink: 1, overflow: "auto", zIndex: void 0 }, bottomBarModal: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small }, bottomBarMobile: { position: "fixed", backfaceVisibility: "hidden", bottom: 0, width: "100%", paddingBottom: s.default.iPhoneOffsetBottom, backgroundColor: e.colors.navigationBackground, borderTopStyle: "solid" } })),
+                h = u;
         },
         651930: (e, t, i) => {
             "use strict";
-            i.d(t, { Z: () => l });
+            i.d(t, { Z: () => _ });
             var a = i(202784),
                 r = i(99107),
                 n = i(272175),
                 o = i(111677);
             const s = i.n(o)().c39b0e24,
-                l = ({ deepLink: e }) => {
+                _ = ({ deepLink: e }) => {
                     const t = s;
                     return e ? a.createElement(n.ql, null, a.createElement("meta", { content: e, property: "al:ios:url" }), a.createElement("meta", { content: r.AF, property: "al:ios:app_store_id" }), a.createElement("meta", { content: t, property: "al:ios:app_name" }), a.createElement("meta", { content: e, property: "al:android:url" }), a.createElement("meta", { content: "com.twitter.android", property: "al:android:package" }), a.createElement("meta", { content: t, property: "al:android:app_name" })) : null;
                 };
@@ -688,25 +688,25 @@
             var a = i(202784),
                 r = i(272175);
             const n = (e) => {
-                const { canonical: t, description: i = "", image: n, imageAlt: o, imageH: s, imageType: l, imageW: _, title: d, ttl: c, type: p } = e;
-                return a.createElement(r.ql, null, p ? a.createElement("meta", { content: p, property: "og:type" }) : null, t ? a.createElement("meta", { content: t, property: "og:url" }) : null, d ? a.createElement("meta", { content: d, property: "og:title" }) : null, a.createElement("meta", { content: i, property: "og:description" }), n ? a.createElement("meta", { content: n, property: "og:image" }) : null, l ? a.createElement("meta", { content: l, property: "og:image:type" }) : null, _ ? a.createElement("meta", { content: _, property: "og:image:width" }) : null, s ? a.createElement("meta", { content: s, property: "og:image:height" }) : null, o ? a.createElement("meta", { content: o, property: "og:image:alt" }) : null, c ? a.createElement("meta", { content: c, property: "og:ttl" }) : null);
+                const { canonical: t, description: i = "", image: n, imageAlt: o, imageH: s, imageType: _, imageW: l, title: d, ttl: c, type: p } = e;
+                return a.createElement(r.ql, null, p ? a.createElement("meta", { content: p, property: "og:type" }) : null, t ? a.createElement("meta", { content: t, property: "og:url" }) : null, d ? a.createElement("meta", { content: d, property: "og:title" }) : null, a.createElement("meta", { content: i, property: "og:description" }), n ? a.createElement("meta", { content: n, property: "og:image" }) : null, _ ? a.createElement("meta", { content: _, property: "og:image:type" }) : null, l ? a.createElement("meta", { content: l, property: "og:image:width" }) : null, s ? a.createElement("meta", { content: s, property: "og:image:height" }) : null, o ? a.createElement("meta", { content: o, property: "og:image:alt" }) : null, c ? a.createElement("meta", { content: c, property: "og:ttl" }) : null);
             };
         },
         507651: (e, t, i) => {
             "use strict";
-            i.d(t, { Z: () => _ });
+            i.d(t, { Z: () => l });
             var a = i(807896),
                 r = i(202784),
                 n = i(107267),
                 o = i(403556),
                 s = i(791632);
-            const l = (e) => {
+            const _ = (e) => {
                     const t = (0, n.useHistory)(),
-                        { isCompact: i, ...l } = e;
-                    return r.createElement(o.Z, (0, a.Z)({}, l, { isCompact: i || (0, s.HD)(t) }));
+                        { isCompact: i, ..._ } = e;
+                    return r.createElement(o.Z, (0, a.Z)({}, _, { isCompact: i || (0, s.HD)(t) }));
                 },
-                _ = r.memo(l);
+                l = r.memo(_);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-a2dee9c7.a4965cea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-a2dee9c7.bd5c999a.js.map

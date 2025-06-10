@@ -5441,6 +5441,8 @@
                 o("i8cae552", "Le tue valutazioni ci aiuteranno a preservare l'alta qualità di Note della collettività."),
                 o("hd43a218", "Hai raggiunto il limite giornaliero per la scrittura di note"),
                 o("aaba8ed2", "Affinché la qualità delle note rimanga elevata e per evitare spam, ogni collaboratore può scrivere un numero limitato di note al giorno in base al suo impatto scrittura. Riprova più tardi."),
+                o("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
+                o("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
                 o("b98f077c", "Richiedi informazioni su una nota"),
                 o("ee691104", "Richiedi una nota della collettività su questo post"),
                 o("f8cbdf02", "Se credi che questo post possa essere fuorviante, richiedi una nota della collettività."),
@@ -5883,10 +5885,10 @@
                 o("beba2a0e", "Crea una nuova cartella di segnalibri"),
                 o("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
-                }),
-                o("h18f86a4", "Elimina cartella"),
-                o("f4ea967a", "La cartella è stata eliminata");
-            o("b670aa62", "Nome cartella"),
+                });
+            o("h18f86a4", "Elimina cartella"),
+                o("f4ea967a", "La cartella è stata eliminata"),
+                o("b670aa62", "Nome cartella"),
                 o("aece5462", "Il nome della cartella è stato aggiornato correttamente"),
                 o("e3299b94", "Qualcosa è andato storto. Prova ad aggiornare nuovamente la cartella tra un minuto."),
                 o("c09ea714", "Qualcosa è andato storto. Prova a eliminare nuovamente la cartella tra un minuto."),
@@ -6887,10 +6889,10 @@
                 o("hf352d42", "Aggiungi un range di retribuzione facoltativo da mostrare ai candidati. Se decidi di non condividerlo, verifica di non violare alcuna legge sulla trasparenza retributiva per l'area in cui stai assumendo."),
                 o("ede7d0a2", "Valuta"),
                 o("b925c18c", "Tipo di retribuzione"),
-                o("j3d242ce", "Range non valido"),
-                o("f4d07bd2", "Includi i dettagli facoltativi affinché i candidati possano trovare le offerte più facilmente con una ricerca."),
-                o("b8cbb51a", "Riepilogo offerta");
-            o("bda6881e", "Questa offerta di lavoro è stata importata dal tuo sistema di monitoraggio dei candidati (ATS). Ricorda che solo determinati campi possono essere modificati."),
+                o("j3d242ce", "Range non valido");
+            o("f4d07bd2", "Includi i dettagli facoltativi affinché i candidati possano trovare le offerte più facilmente con una ricerca."),
+                o("b8cbb51a", "Riepilogo offerta"),
+                o("bda6881e", "Questa offerta di lavoro è stata importata dal tuo sistema di monitoraggio dei candidati (ATS). Ricorda che solo determinati campi possono essere modificati."),
                 o("b075c68a", "Modifica offerta"),
                 o("d4b6a6e0", "Profile Spotlight"),
                 o("j2dd3686", "Metti in primo piano le offerte in evidenza sopra i miei post."),
@@ -7233,22 +7235,22 @@
                 o("hd80bd3e", "Promuovi un post"),
                 o("fe2b0008", "Scopri come utilizzare X"),
                 o("h257d4aa", "Seleziona un post da promuovere"),
-                o("e9334fe6", "Data updates every few minutes"),
-                o("a6d7b1d0", "Based on X Internal Data"),
-                o("h9b28dae", "You’re saving time with an ad-free feed"),
+                o("e9334fe6", "I dati vengono aggiornati continuamente a intervalli di pochi minuti"),
+                o("a6d7b1d0", "In base ai dati interni di X"),
+                o("h71a00e6", "You’re saving time with ad-free"),
                 o("f6c50ec0", "La prova gratuita senza annunci è terminata"),
-                o("e1d1fbca", "You’ve avoided"),
+                o("e1d1fbca", "Hai evitato"),
                 o("a82d7abd", function (e) {
-                    return e.numberOfAds + " ads";
+                    return e.numberOfAds + " annunci";
                 }),
-                o("ff074c76", "You’re seeing more of the posts you want."),
+                o("ff074c76", "Stai visualizzando più post adatti a te."),
                 o("cbc38428", "Dimentica gli annunci con Premium+"),
-                o("b9028f60", "Back to my ad-free trial"),
-                o("e081d6a0", "No thanks, I’d like to see ads again"),
-                o("fee73dca", "Saving an estimated"),
+                o("b9028f60", "Torna alla prova senza annunci"),
+                o("e081d6a0", "No grazie, rivoglio gli annunci"),
+                o("fee73dca", "Risparmiando circa"),
                 o("ic073e4e", "Il tuo tempo è prezioso."),
                 o("eb866e88", "Stima del tempo risparmiato in 1 anno"),
-                o("ce72f092", "Based on your usage so far."),
+                o("ce72f092", "In base al tuo utilizzo fino a ora."),
                 o("c534c6b4", "Stiamo preparando i dati..."),
                 o("i57332f0", "Continua a scorrere e ritorna qui più tardi per scoprire quanti annunci hai evitato e quanto tempo hai risparmiato"),
                 o("cc10f019", function (e) {
@@ -7263,15 +7265,18 @@
                 o("b93d00e5", function (e) {
                     return e.days + " giorn" + t(e.days, "o", "i");
                 }),
-                o("g2c63852", "100% free. No credit card required."),
+                o("dc9661b3", function (e) {
+                    return e.seconds + " second" + n(e.seconds, "", "s");
+                }),
+                o("g2c63852", "Senza nessun costo. Non è necessaria alcuna carta di credito."),
                 o("be88be23", function (e) {
                     return "Hai attivato la prova gratuita senza annunci di " + e.durationInDays + " giorni";
                 }),
-                o("b63766a6", "Scroll without ads"),
-                o("h028f7e0", "Spend more time on the content you love"),
-                o("dd68eef6", "Experience the Premium+ luxury life"),
+                o("b63766a6", "Scorri senza annunci"),
+                o("h028f7e0", "Spendi più tempo sui contenuti che ti interessano"),
+                o("dd68eef6", "Goditi il vero lusso con Premium+"),
                 o("g8a2f217", function (e) {
-                    return "Enjoy ad-free for " + e.durationInDays + " days";
+                    return "Naviga senza annunci per " + e.durationInDays + " giorni";
                 }),
                 o("dec99336", "Senza annunci"),
                 o("i95803fa", "Purtroppo attualmente non disponi dell'idoneità."),
@@ -7864,12 +7869,7 @@
                 o("b74ff5fc", "Se disdici, il tuo abbonamento scadrà automaticamente al termine del ciclo di fatturazione."),
                 o("ee9efbc8", "Procedi con la disdetta"),
                 o("c5d9c77a", "Sembra ci sia un problemino, ma non preoccuparti perché non è colpa tua. Chiudi questa finestra e riprova."),
-                o("jda53c24", "Puoi disdire il tuo abbonamento tramite App Store di Apple."),
-                o("g0a7a53e", "Puoi disdire il tuo abbonamento tramite Google Play Store."),
-                o("i5f14be7", function (e) {
-                    return "È bello rivederti, " + e.displayName;
-                }),
-                o("a76d58ba", "Statistiche annunci");
+                o("jda53c24", "Puoi disdire il tuo abbonamento tramite App Store di Apple.");
             function r(e, i) {
                 for (var a = 0; a < i.length; a++) {
                     var o = i[a];
@@ -7908,7 +7908,12 @@
                     c(e, i)
                 );
             }
-            o("eccd0e1a", "Statistiche dell'organizzazione"),
+            o("g0a7a53e", "Puoi disdire il tuo abbonamento tramite Google Play Store."),
+                o("i5f14be7", function (e) {
+                    return "È bello rivederti, " + e.displayName;
+                }),
+                o("a76d58ba", "Statistiche annunci"),
+                o("eccd0e1a", "Statistiche dell'organizzazione"),
                 o("deea1708", "Vuoi vedere le statistiche per tutti i tuoi account X?"),
                 o("eb603ffc", "Esegui l'upgrade per affiliare la tua rete e visualizzare le statistiche aggregate."),
                 o("gf67aae4", "Esegui l'upgrade a Full access"),
@@ -8904,11 +8909,11 @@
                     return "Visita " + e.advertiserName;
                 }),
                 o("c67e71aa", "Guarda ora"),
-                o("a6ada13e", "Compra ora"),
-                o("j0f12222", "Approfondisci"),
+                o("a6ada13e", "Compra ora");
+            o("j0f12222", "Approfondisci"),
                 o("f569f7c8", "Passa al sito Web"),
-                o("j0c6772a", "Visita il sito Web");
-            o("f73003aa", "Il video sarà riprodotto dopo l'annuncio"),
+                o("j0c6772a", "Visita il sito Web"),
+                o("f73003aa", "Il video sarà riprodotto dopo l'annuncio"),
                 o("b3112b8a", "Salta"),
                 o("h6333ad0", "Salta annuncio"),
                 o("c59da417", function (e) {
@@ -13357,4 +13362,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.f0559e0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.f90b84fa.js.map

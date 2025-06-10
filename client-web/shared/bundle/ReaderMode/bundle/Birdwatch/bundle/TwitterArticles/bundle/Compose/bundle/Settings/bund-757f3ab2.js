@@ -3,7 +3,7 @@
     ["shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"],
     {
         808692: (e, t, i) => {
-            i.d(t, { ZP: () => Ut });
+            i.d(t, { ZP: () => Rt });
             var n = i(807896),
                 r = (i(543673), i(240753), i(128399), i(136728), i(571372), i(202784)),
                 o = i(878052),
@@ -20,8 +20,8 @@
                 w = i(459667),
                 g = i(471754),
                 T = i(891198),
-                C = i(352924),
-                b = i(16037),
+                b = i(352924),
+                C = i(16037),
                 f = i(731708),
                 k = i(137181),
                 v = i(853435),
@@ -34,8 +34,8 @@
                 P = i(40644),
                 A = i(811176),
                 L = i(366985),
-                U = i(767385),
-                R = i(834324),
+                R = i(767385),
+                U = i(834324),
                 F = i(966886),
                 M = i(528647),
                 B = i(649846),
@@ -43,9 +43,9 @@
                 N = i(98538),
                 D = i(650028),
                 O = i(409981),
-                V = i(154003),
-                W = i(111677),
-                G = i.n(W),
+                W = i(154003),
+                G = i(111677),
+                V = i.n(G),
                 q = i(368761),
                 z = i(500040),
                 Q = i(99223),
@@ -74,8 +74,8 @@
                 we = i(672890),
                 ge = i(880647),
                 Te = i(655352),
-                Ce = i(163889),
-                be = i(943245),
+                be = i(163889),
+                Ce = i(943245),
                 fe = i(383186),
                 ke = i(507824),
                 ve = i(946409),
@@ -88,8 +88,8 @@
                 Pe = i(666932),
                 Ae = i(788993),
                 Le = i(954300),
-                Ue = i(725405),
-                Re = i(312771),
+                Re = i(725405),
+                Ue = i(312771),
                 Fe = i(189244),
                 Me = i(14544),
                 Be = i(979512),
@@ -97,9 +97,9 @@
                 Ne = i(169576),
                 De = i(727828),
                 Oe = i(163301),
-                Ve = i(972198),
-                We = i(989631),
-                Ge = i(246134),
+                We = i(972198),
+                Ge = i(989631),
+                Ve = i(246134),
                 qe = i(494569),
                 ze = i(756632),
                 Qe = i(994057),
@@ -119,27 +119,27 @@
             const at = l.default.theme.aspectRatios.maxTimelineImage,
                 lt = l.default.theme.aspectRatios.minTimelineImage,
                 dt = ["magenta500", "orange500", "purple500"],
-                ct = G().f277e94a,
-                ht = G().ee79367b,
-                ut = G().a2a3824a,
-                pt = G().ec6907ba,
-                _t = G().d9587114,
-                mt = G().b7b86c3c,
-                wt = G().a407814e,
-                gt = G().i46ee3f0,
-                Tt = G().e18cb87c,
-                Ct = G().jade381b,
-                bt = G().d725a289,
-                ft = G().ffe16626,
+                ct = V().f277e94a,
+                ht = V().ee79367b,
+                ut = V().a2a3824a,
+                pt = V().ec6907ba,
+                _t = V().d9587114,
+                mt = V().b7b86c3c,
+                wt = V().a407814e,
+                gt = V().i46ee3f0,
+                Tt = V().e18cb87c,
+                bt = V().jade381b,
+                Ct = V().d725a289,
+                ft = V().ffe16626,
                 kt = { element: "user_recommendation" },
-                vt = G().i859a9d4,
-                yt = G().jc81f6a7,
-                Et = G().g521abc6,
-                xt = G().hea3f8ac,
-                St = G().a09331e0,
-                It = G().e3eceda6,
-                Zt = G().a653f08f,
-                Pt = G().dc0c8266;
+                vt = V().i859a9d4,
+                yt = V().jc81f6a7,
+                Et = V().g521abc6,
+                xt = V().hea3f8ac,
+                St = V().a09331e0,
+                It = V().e3eceda6,
+                Zt = V().a653f08f,
+                Pt = V().dc0c8266;
             class At extends r.Component {
                 constructor(e, t) {
                     super(e, t),
@@ -240,8 +240,8 @@
                         (this._renderStaleEditCallout = (e) => {
                             const { onStaleEditLinkClick: t, tweet: i } = this.props,
                                 n = d.Z.getOriginalTweet(i),
-                                o = C.F();
-                            return r.createElement(a.Z, { style: [Lt.detailItemContainer, Lt.detailItem] }, r.createElement(a.Z, { style: Lt.staleEditCallout }, r.createElement(b.Z, { editType: "stale", id: e, textMode: "standalone" })), r.createElement(f.ZP, { "aria-describedby": o, link: d.Z.getTweetLatestVersionPermalink(n), onClick: t, style: Lt.staleEditLink }, _t), r.createElement(s.Z, { id: o, style: { display: "none" } }, mt));
+                                o = b.F();
+                            return r.createElement(a.Z, { style: [Lt.detailItemContainer, Lt.detailItem] }, r.createElement(a.Z, { style: Lt.staleEditCallout }, r.createElement(C.Z, { editType: "stale", id: e, textMode: "standalone" })), r.createElement(f.ZP, { "aria-describedby": o, link: d.Z.getTweetLatestVersionPermalink(n), onClick: t, style: Lt.staleEditLink }, _t), r.createElement(s.Z, { id: o, style: { display: "none" } }, mt));
                         }),
                         (this._renderModeratedRepliesIcon = () => {
                             const { hasModeratedReplies: e, onModeratedIconClick: t, tweet: i } = this.props;
@@ -273,8 +273,8 @@
                             const { hitHighlights: t, isFocal: i, linkify: o, onEntityClick: s, onShowMoreClick: a, to: l, tweet: c, tweetTextSize: h, withCardLinks: u, withInlineMedia: p, withQuotedTweetLinks: _, withReaderModeActive: m } = this.props,
                                 { isExpanded: w, showGrokTranslation: g } = this.state,
                                 T = d.Z.getOriginalTweet(c),
-                                C = !!T.grok_translated_post,
-                                b = this.context.featureSwitches.isTrue("responsive_web_twitter_article_seed_tweet_summary_enabled");
+                                b = !!T.grok_translated_post,
+                                C = this.context.featureSwitches.isTrue("responsive_web_twitter_article_seed_tweet_summary_enabled");
                             let f;
                             f = h || e.size;
                             const k = T?.community_id_str,
@@ -290,20 +290,20 @@
                                           a && a(), this.setState({ isExpanded: !0 });
                                       }
                                     : this._getMaybeRedirectedTweetLink(l, !0));
-                            const I = { ...e, transformHashtagLink: y, hitHighlights: t, linkify: o, onEntityClick: s, size: f, transformUrl: this._transformUrl, unmentionedUserIds: T.unmentioned_user_ids, withCardLinks: u, withMediaLinks: !p, withShowMore: E, withQuoteLinks: _ || d.Z.isQuotedTweetUnavailable(T), withUnicodeEmojis: !1, article: b ? T?.article : void 0 };
+                            const I = { ...e, transformHashtagLink: y, hitHighlights: t, linkify: o, onEntityClick: s, size: f, transformUrl: this._transformUrl, unmentionedUserIds: T.unmentioned_user_ids, withCardLinks: u, withMediaLinks: !p, withShowMore: E, withQuoteLinks: _ || d.Z.isQuotedTweetUnavailable(T), withUnicodeEmojis: !1, article: C ? T?.article : void 0 };
                             let Z;
                             Z = w || m ? ke.Bq(T, { featureSwitches: this.context.featureSwitches }) : { text: T.text, entities: T.entities, display_text_range: T.display_text_range };
                             const P = !i && !this.context.featureSwitches.isTrue("longform_notetweets_rich_text_timeline_enabled");
                             let A = null;
                             T.note_tweet && (A = { ...T.note_tweet, richtext_tags: P ? [] : T.note_tweet.richtext_tags });
                             const L = m ? this._getInlineMediaSpec(A, T) : void 0,
-                                U = { text: (S && !w ? T.grok_translated_post?.preview_translation : T.grok_translated_post?.translation) ?? "", destinationLanguage: T.grok_translated_post?.destination_language ?? "", entities: T.grok_translated_post?.entities ?? {}, display_text_range: [0, T.grok_translated_post?.translation?.length ?? 0] };
-                            return r.createElement(r.Fragment, null, r.createElement(Me.Z, null, r.createElement(v.z, { context: A }, r.createElement(Ve.Z, null, r.createElement(de.Z, (0, n.Z)({}, I, { disableTranslation: C || T.user.protected, displayTextRange: this.state.showGrokTranslation ? U.display_text_range : Z.display_text_range, entities: this.state.showGrokTranslation ? U.entities : Z.entities, headerWhenTranslationDisabled: C ? this._renderGrokTranslationHeader("text") : void 0, inlineMediaSpec: L, isFocal: i, isPreviewDisplay: T.isPreviewDisplay, isTranslatable: !C && T.is_translatable, lang: this.state.showGrokTranslation ? U.destinationLanguage : T.lang, onMediaTranslation: this._handleMediaTranslations, onToggleTranslation: this._handleTranslationToggle, permalink: T.permalink, renderTranslationFeedback: this._getTranslationFeedbackRenderer("inside-text"), supplementalLang: T.supplemental_language, text: this.state.showGrokTranslation ? U.text : Z.text, tweetId: T.id_str, withOriginalText: i }))))), T.isPreviewDisplay && this._renderPreviewCta(), this._renderAtGrokPromo());
+                                R = { text: (S && !w ? T.grok_translated_post?.preview_translation : T.grok_translated_post?.translation) ?? "", destinationLanguage: T.grok_translated_post?.destination_language ?? "", entities: T.grok_translated_post?.entities ?? {}, display_text_range: [0, T.grok_translated_post?.translation?.length ?? 0] };
+                            return r.createElement(r.Fragment, null, r.createElement(Me.Z, null, r.createElement(v.z, { context: A }, r.createElement(We.Z, null, r.createElement(de.Z, (0, n.Z)({}, I, { disableTranslation: b || T.user.protected, displayTextRange: this.state.showGrokTranslation ? R.display_text_range : Z.display_text_range, entities: this.state.showGrokTranslation ? R.entities : Z.entities, inlineMediaSpec: L, isFocal: i, isPreviewDisplay: T.isPreviewDisplay, isTranslatable: !b && T.is_translatable, lang: this.state.showGrokTranslation ? R.destinationLanguage : T.lang, onMediaTranslation: this._handleMediaTranslations, onToggleTranslation: this._handleTranslationToggle, permalink: T.permalink, renderTranslationFeedback: this._getTranslationFeedbackRenderer("inside-text"), renderTranslationHeaderWhenDisabled: b ? () => this._renderGrokTranslationHeader("text") : void 0, supplementalLang: T.supplemental_language, text: this.state.showGrokTranslation ? R.text : Z.text, tweetId: T.id_str, withOriginalText: i }))))), T.isPreviewDisplay && this._renderPreviewCta(), this._renderAtGrokPromo());
                         }),
                         (this._renderGrokTranslationHeader = (e, t, i) => {
                             if ("text" === e) {
-                                const e = this.state.showGrokTranslation ? Re.ZP.LOADED : Re.ZP.NONE,
-                                    n = t ? (0, be.t)(t, i) : void 0;
+                                const e = this.state.showGrokTranslation ? Ue.ZP.LOADED : Ue.ZP.NONE,
+                                    n = t ? (0, Ce.t)(t, i) : void 0;
                                 return r.createElement(le.O, { handleCollapseTranslation: () => this.setState({ showGrokTranslation: !1 }), handleGetTranslationClick: () => this.setState({ showGrokTranslation: !0 }), position: "top", sourceLanguageDisplayName: n, translateButtonText: ae.VW, translationStatus: e });
                             }
                             if ("quote-text" === e && this.props.tweet.quoted_status?.grok_translated_post) return r.createElement(le.O, { position: "top", style: Lt.translationHeaderInQuote, translationStatus: "loaded", withAction: !1 });
@@ -317,7 +317,7 @@
                                             o = i.find((t) => t.id_str === e);
                                         if (!o) {
                                             const n = { tweet_id: t.id_str, media_list: i, mediaId: e };
-                                            return (0, Ce.ZP)("InlineMedia: unable to find media", { extra: n }), null;
+                                            return (0, be.ZP)("InlineMedia: unable to find media", { extra: n }), null;
                                         }
                                         const s = [o];
                                         return r.createElement(a.Z, { style: Lt.inline_media }, r.createElement(y.Y, (0, n.Z)({}, this._richContentProps(), { mediaDetails: s })));
@@ -332,8 +332,8 @@
                             const w = this.context.featureSwitches.isTrue("responsive_web_twitter_article_seed_tweet_summary_enabled"),
                                 g = this._isEdgeToEdgeEnabled && Lt.edgeToEdgeTextSpacer,
                                 T = i ? Lt.expandedTweetText : g,
-                                C = _?.community_id_str,
-                                b = C ? (e, t) => new URL(`/i/communities/${C}/hashtag/${t}`, e) : void 0,
+                                b = _?.community_id_str,
+                                C = b ? (e, t) => new URL(`/i/communities/${b}/hashtag/${t}`, e) : void 0,
                                 f = "true" === s?.experiment_values?.pac_in_timeline && E.default.isFollowerCard(s?.adMetadataContainer?.dynamicCardContent?.card_type),
                                 k = E.default.isCardDisabled(_.card?.name),
                                 y = !_ || !_.card || k || a.is_quote_status || f ? void 0 : _.card.url,
@@ -345,8 +345,8 @@
                             _.note_tweet && !P && (Z = { ..._.note_tweet });
                             const A = this._getInlineMediaSpec(Z, _),
                                 L = !!_.grok_translated_post,
-                                U = { text: _.grok_translated_post?.translation ?? "", destinationLanguage: _.grok_translated_post?.destination_language ?? "", entities: _.grok_translated_post?.entities ?? {}, display_text_range: [0, _.grok_translated_post?.translation?.length ?? 0] };
-                            return r.createElement(Me.Z, null, r.createElement(v.z, { context: Z }, r.createElement(Ve.Z, null, r.createElement(de.Z, { article: w ? _.article : void 0, disableTranslation: L || _.user.protected, displayTextRange: this.state.showGrokTranslation ? U.display_text_range : I.display_text_range, entities: this.state.showGrokTranslation ? U.entities : I.entities, excludeCardUrl: y, headerWhenTranslationDisabled: L ? this._renderGrokTranslationHeader("text", c, _.lang) : void 0, hitHighlights: i ? void 0 : t, id: e, inlineMediaSpec: A, isFocal: i, isPreviewDisplay: _.isPreviewDisplay, isTranslatable: !L && _.is_translatable, lang: this.state.showGrokTranslation ? U.destinationLanguage : _.lang, linkify: !!i || n, onEntityClick: o, onMediaTranslation: this._handleMediaTranslations, onToggleTranslation: this._handleTranslationToggle, permalink: _.permalink, quotedTweetId: _.quoted_status && _.quoted_status.id_str, quotedTweetPermalink: _.quoted_status_permalink, renderTranslationFeedback: this._getTranslationFeedbackRenderer("inside-text"), size: m, style: T, supplementalLang: _.supplemental_language, text: this.state.showGrokTranslation ? U.text : I.text, transformHashtagLink: b, transformUrl: this._transformUrl, tweetId: _.id_str, unmentionedUserIds: _.unmentioned_user_ids, withCardLinks: i ? void 0 : h, withMediaLinks: i ? void 0 : !u, withOriginalText: i, withQuoteLinks: (!i && p) || d.Z.isQuotedTweetUnavailable(_), withUnicodeEmojis: !1 }))));
+                                R = { text: _.grok_translated_post?.translation ?? "", destinationLanguage: _.grok_translated_post?.destination_language ?? "", entities: _.grok_translated_post?.entities ?? {}, display_text_range: [0, _.grok_translated_post?.translation?.length ?? 0] };
+                            return r.createElement(Me.Z, null, r.createElement(v.z, { context: Z }, r.createElement(We.Z, null, r.createElement(de.Z, { article: w ? _.article : void 0, disableTranslation: L || _.user.protected, displayTextRange: this.state.showGrokTranslation ? R.display_text_range : I.display_text_range, entities: this.state.showGrokTranslation ? R.entities : I.entities, excludeCardUrl: y, hitHighlights: i ? void 0 : t, id: e, inlineMediaSpec: A, isFocal: i, isPreviewDisplay: _.isPreviewDisplay, isTranslatable: !L && _.is_translatable, lang: this.state.showGrokTranslation ? R.destinationLanguage : _.lang, linkify: !!i || n, onEntityClick: o, onMediaTranslation: this._handleMediaTranslations, onToggleTranslation: this._handleTranslationToggle, permalink: _.permalink, quotedTweetId: _.quoted_status && _.quoted_status.id_str, quotedTweetPermalink: _.quoted_status_permalink, renderTranslationFeedback: this._getTranslationFeedbackRenderer("inside-text"), renderTranslationFeedbackWhenDisabled: this._getTranslationFeedbackRenderer("inside-text"), renderTranslationHeaderWhenDisabled: L ? () => this._renderGrokTranslationHeader("text", c, _.lang) : void 0, size: m, style: T, supplementalLang: _.supplemental_language, text: this.state.showGrokTranslation ? R.text : I.text, transformHashtagLink: C, transformUrl: this._transformUrl, tweetId: _.id_str, unmentionedUserIds: _.unmentioned_user_ids, withCardLinks: i ? void 0 : h, withMediaLinks: i ? void 0 : !u, withOriginalText: i, withQuoteLinks: (!i && p) || d.Z.isQuotedTweetUnavailable(_), withUnicodeEmojis: !1 }))));
                         }),
                         (this._renderPreviewCta = () => {
                             const { tweet: e } = this.props,
@@ -372,18 +372,32 @@
                                 a = t.id_str;
                             return s && a ? r.createElement(se.Z, { translationSource: i, tweetId: a }) : void 0;
                         }),
+                        (this._renderTranslationFeedbackWhenDisabled = (e) => {
+                            const { featureSwitches: t } = this.context;
+                            return t.isTrue("responsive_web_translation_feedback_enabled") && r.createElement(se.Z, { translationSource: "Grok", tweetId: e });
+                        }),
                         (this._getTranslationFeedbackRenderer = (e) => {
-                            if (!this.state.showTranslation) return;
-                            const t = this.props.translation?.pollTranslations,
-                                i = t && t.length > 0;
-                            return (i && "below-poll" === e) || (!i && "inside-text" === e) ? () => this._renderTranslationFeedback() : void 0;
+                            if (this.props.isFocal) {
+                                if (this.state.showTranslation) {
+                                    const t = this.props.translation?.pollTranslations,
+                                        i = t && t.length > 0;
+                                    if ((i && "below-poll" === e) || (!i && "inside-text" === e)) return () => this._renderTranslationFeedback();
+                                }
+                                if (this.state.showGrokTranslation) {
+                                    const t = d.Z.getOriginalTweet(this.props.tweet),
+                                        i = t.grok_translated_post,
+                                        n = i?.associated_data?.poll_translations,
+                                        r = n && n.length > 0;
+                                    if ((r && "below-poll" === e) || (!r && "inside-text" === e)) return () => this._renderTranslationFeedbackWhenDisabled(t.id_str);
+                                }
+                            }
                         }),
                         (this._renderArticleContent = () => {
                             const { isFocal: e, tweet: t } = this.props,
                                 { featureSwitches: i } = this.context,
                                 n = d.Z.getOriginalTweet(t),
                                 o = i.isTrue("responsive_web_twitter_article_seed_tweet_detail_enabled") && e;
-                            return d.Z.isArticlePost(n) && n.article && o ? (n.isPreviewDisplay ? r.createElement(S.Z, { articleEntity: n.article, hasSensitiveContent: n.possibly_sensitive, mediaVisibilityResults: n.mediaVisibilityResults }) : r.createElement(Ge.ZP, { minContentThreshold: 5, publishedPost: n, renderInTweet: !0, twitterArticle: n.article, withActionBar: !0 })) : null;
+                            return d.Z.isArticlePost(n) && n.article && o ? (n.isPreviewDisplay ? r.createElement(S.Z, { articleEntity: n.article, hasSensitiveContent: n.possibly_sensitive, mediaVisibilityResults: n.mediaVisibilityResults }) : r.createElement(Ve.ZP, { minContentThreshold: 5, publishedPost: n, renderInTweet: !0, twitterArticle: n.article, withActionBar: !0 })) : null;
                         }),
                         (this._renderAuthorAppealLabel = () => (this._shouldShowFoSnRViolationAuthorInlineCallout() ? this._getFoSnRViolationAuthorAppealInfo() : null)),
                         (this._shouldShowFoSnRViolationAuthorInlineCallout = () => {
@@ -430,12 +444,12 @@
                                 m = ({ containerWidth: e }) => i && h.id_str !== this.context.viewerUserId && !this.props.tweet?.user?.following && (ge.Z.isOneColumnLayout(e) || ge.Z.isOneColumnSquishedLayout(e)),
                                 w = !(this.props.viewerUser?.id_str !== _?.user?.id_str || !_.user.professional),
                                 g = _.quick_promote_eligibility?.eligibility,
-                                C = this._renderGrokButton(),
-                                b = !(!this.props.viewerUser?.is_blue_verified && !this.props.viewerUser?.verified_type),
-                                k = !((!w && !b) || !Ft(g) || this.context.featureSwitches.isTrue("gryphon_hide_quick_promote")),
+                                b = this._renderGrokButton(),
+                                C = !(!this.props.viewerUser?.is_blue_verified && !this.props.viewerUser?.verified_type),
+                                k = !((!w && !C) || !Ft(g) || this.context.featureSwitches.isTrue("gryphon_hide_quick_promote")),
                                 v = _.views?.count ?? 0,
                                 y = !(!this.props.withSocialContext || !this.props.socialContext);
-                            return () => r.createElement(Z.Fo, { query: m }, (n) => r.createElement(a.Z, { style: Lt.actionsContainer }, n ? r.createElement(ee.C, { buttonType: "primaryFilled", size: (0, Te.ZP)() ? "small" : "xSmall", userId: h.id_str }) : p ? r.createElement(ee.C, { buttonType: "primaryFilled", isSuperFollowSubscriptionEnabled: l, referringPage: "subscribe_tweet_details", relationshipMode: "subscribe", size: (0, Te.ZP)() ? "small" : "xSmall", userId: h.id_str }) : k ? r.createElement(tt.Z, { hasSocialContext: y, isFocal: i, permalink: o.permalink, tweetId: o.id_str, tweetText: o.text }) : null, u ? r.createElement(f.ZP, { "aria-label": e, color: "gray700" }, pt) : null, t && !u && v ? r.createElement(f.ZP, { "aria-label": yt({ count: v }), color: "gray700" }, T.ZP.getTruncatedCount(v)) : null, C, s));
+                            return () => r.createElement(Z.Fo, { query: m }, (n) => r.createElement(a.Z, { style: Lt.actionsContainer }, n ? r.createElement(ee.C, { buttonType: "primaryFilled", size: (0, Te.ZP)() ? "small" : "xSmall", userId: h.id_str }) : p ? r.createElement(ee.C, { buttonType: "primaryFilled", isSuperFollowSubscriptionEnabled: l, referringPage: "subscribe_tweet_details", relationshipMode: "subscribe", size: (0, Te.ZP)() ? "small" : "xSmall", userId: h.id_str }) : k ? r.createElement(tt.Z, { hasSocialContext: y, isFocal: i, permalink: o.permalink, tweetId: o.id_str, tweetText: o.text }) : null, u ? r.createElement(f.ZP, { "aria-label": e, color: "gray700" }, pt) : null, t && !u && v ? r.createElement(f.ZP, { "aria-label": yt({ count: v }), color: "gray700" }, T.ZP.getTruncatedCount(v)) : null, b, s));
                         }),
                         (this._renderGrokButton = () => {
                             const { featureSwitches: e } = this.context,
@@ -492,27 +506,27 @@
                     this._isMounted = !1;
                 }
                 render() {
-                    const { conversationTreeMetadata: e, forwardPivotInfo: t, hideConversationControlsEducationText: i, hideExclusivityInfoEducationTextInReplies: o, hideTrustedFriendsEducationTextInReplies: s, isCompact: u, isFocal: p, onBlur: m, onClick: w, onFocus: g, onPromotedUserProfileCardClick: T, promotedContent: b, quotedTweetTombstoneInfo: k, readerModeAvailable: v, socialContext: y, to: E, tweet: x, withReaderModeActive: S, withTimestamp: I, withUnreadStyles: Z } = this.props,
+                    const { conversationTreeMetadata: e, forwardPivotInfo: t, hideConversationControlsEducationText: i, hideExclusivityInfoEducationTextInReplies: o, hideTrustedFriendsEducationTextInReplies: s, isCompact: u, isFocal: p, onBlur: m, onClick: w, onFocus: g, onPromotedUserProfileCardClick: T, promotedContent: C, quotedTweetTombstoneInfo: k, readerModeAvailable: v, socialContext: y, to: E, tweet: x, withReaderModeActive: S, withTimestamp: I, withUnreadStyles: Z } = this.props,
                         P = d.Z.getOriginalTweet(x),
-                        A = c.Z.isPromoted(b),
-                        F = b?.adMetadataContainer?.dynamicCardContent,
-                        M = "true" === b?.experiment_values?.pac_in_timeline && !P.card && !F,
+                        A = c.Z.isPromoted(C),
+                        F = C?.adMetadataContainer?.dynamicCardContent,
+                        M = "true" === C?.experiment_values?.pac_in_timeline && !P.card && !F,
                         B = () => this.context.featureSwitches.isTrue("smbo_legacy_pac_is_in_follow_position_test"),
                         H = !(this.props.viewerUser?.id_str !== P?.user?.id_str || !P.user.professional),
                         N = !(!this.props.viewerUser?.is_blue_verified && !this.props.viewerUser?.verified_type),
                         D = P.quick_promote_eligibility?.eligibility,
                         O = !((!H && !N) || !Ft(D) || this.context.featureSwitches.isTrue("gryphon_hide_quick_promote")),
-                        V = "IneligibleCampaignRunning" === D || "IneligibleBoostCampaignRunning" === D || "IneligibleCampaignPaused" === D,
-                        W = e && e.ancestorConnector,
-                        G = e && e.indents,
-                        q = C.F(),
+                        W = "IneligibleCampaignRunning" === D || "IneligibleBoostCampaignRunning" === D || "IneligibleCampaignPaused" === D,
+                        G = e && e.ancestorConnector,
+                        V = e && e.indents,
+                        q = b.F(),
                         z = this.context.featureSwitches.isTrue("responsive_web_delete_tweet_stats_enabled");
                     return p
                         ? r.createElement(L.j, { tweet: x }, ([n, d]) => {
-                              const c = V ? r.createElement(it.Z, { id: n.promotionStatusLabel, status: Mt(D), style: Lt.promotionStatus }) : null,
+                              const c = W ? r.createElement(it.Z, { id: n.promotionStatusLabel, status: Mt(D), style: Lt.promotionStatus }) : null,
                                   u = e ? r.createElement(f.ZP, { id: n.conversationLevel, style: l.default.visuallyHidden }, ht({ conversationTreeDepth: e.depth.toString() })) : null,
                                   p = P.tombstoneInfo || x.tombstoneInfo,
-                                  C = r.createElement(r.Fragment, null, p ? this._renderTombstone(n.tombstone, p) : null, this._renderReplyContext({ id: n.replyContext }), r.createElement(a.Z, null, this._renderTweetText(n.text)), r.createElement(a.Z, null, this._renderRichContent({ id: n.richContent })), P.isPreviewDisplay && this._renderPreviewCta(), r.createElement(a.Z, null, M ? r.createElement(xe.nO, { namespace: kt }, r.createElement(_.ZP.Provider, { value: { followButtonAtBottomOfPromotedUserCard: B } }, r.createElement(h.Z.PromotedUserProfileCard, { followButton: r.createElement(ee.C, { promotedContent: b, userId: P.user.id_str }), isUserProtected: P.user.protected, isUserVerified: P.user.verified, link: { pathname: `/${P.user.screen_name}`, anchorless: !0, state: { promotedTweetState: b } }, onClick: T, onScreenNameClick: T, promotedContent: b, style: Lt.promotedUserCard, userDescription: P.user.description, userId: P.user.id_str, userName: P.user.name, userScreenName: P.user.screen_name }))) : null));
+                                  b = r.createElement(r.Fragment, null, p ? this._renderTombstone(n.tombstone, p) : null, this._renderReplyContext({ id: n.replyContext }), r.createElement(a.Z, null, this._renderTweetText(n.text)), r.createElement(a.Z, null, this._renderRichContent({ id: n.richContent })), P.isPreviewDisplay && this._renderPreviewCta(), r.createElement(a.Z, null, M ? r.createElement(xe.nO, { namespace: kt }, r.createElement(_.ZP.Provider, { value: { followButtonAtBottomOfPromotedUserCard: B } }, r.createElement(h.Z.PromotedUserProfileCard, { followButton: r.createElement(ee.C, { promotedContent: C, userId: P.user.id_str }), isUserProtected: P.user.protected, isUserVerified: P.user.verified, link: { pathname: `/${P.user.screen_name}`, anchorless: !0, state: { promotedTweetState: C } }, onClick: T, onScreenNameClick: T, promotedContent: C, style: Lt.promotedUserCard, userDescription: P.user.description, userId: P.user.id_str, userName: P.user.name, userScreenName: P.user.screen_name }))) : null));
                               return r.createElement(
                                   _.ZP.Provider,
                                   { value: this._getFeatureConfigurationContextProviderValue() },
@@ -520,17 +534,17 @@
                                       Oe.ZP,
                                       { forwardPivotInfo: t, tweet: x },
                                       r.createElement(
-                                          U.Z,
-                                          { a11yDomIds: d, actionMenu: this._getActionMenuRenderer({ promotedContentA11yId: n.promotedLabel })(), avatar: this._renderAvatar({ id: n.avatar, promotedContent: b, screenName: P.user.screen_name, uri: P.user.profile_image_url_https }), footer: this._renderFooter(), header: this._renderHeader(n), indents: G, onBlur: m, onFocus: g, onPress: w, testID: je.Z.tweet, timestamp: A || this._getUsernameStackedLayoutEnabled() || !I ? null : this._renderTweetRelativeTimestamp(n.timestamp), userFollowIndicators: void 0, userLabel: this._renderUserLabel(P.user, n.userLabel), userName: this._renderUserName({ id: n.username, promotedContent: b, tweetId: P.id_str, userData: { isProtected: P.user.protected, isVerified: P.user.verified, isBlueVerified: P.user.is_blue_verified, name: P.user.name, screenName: P.user.screen_name, userId: P.user.id_str, verifiedType: P.user.verified_type, affiliateBadgeInfo: P.user.highlightedLabel, isSubscriber: P.has_super_follower, communityModeratorStatus: P.author_community_relationship?.role } }), withBottomLine: this._getWithBottomLine(), withElbow: G ? "side" === W : void 0, withFooterGap: !1, withFullWidthChildren: !0, withTopLine: this._getWithTopLine(), withUnreadStyles: Z },
+                                          R.Z,
+                                          { a11yDomIds: d, actionMenu: this._getActionMenuRenderer({ promotedContentA11yId: n.promotedLabel })(), avatar: this._renderAvatar({ id: n.avatar, promotedContent: C, screenName: P.user.screen_name, uri: P.user.profile_image_url_https }), footer: this._renderFooter(), header: this._renderHeader(n), indents: V, onBlur: m, onFocus: g, onPress: w, testID: je.Z.tweet, timestamp: A || this._getUsernameStackedLayoutEnabled() || !I ? null : this._renderTweetRelativeTimestamp(n.timestamp), userFollowIndicators: void 0, userLabel: this._renderUserLabel(P.user, n.userLabel), userName: this._renderUserName({ id: n.username, promotedContent: C, tweetId: P.id_str, userData: { isProtected: P.user.protected, isVerified: P.user.verified, isBlueVerified: P.user.is_blue_verified, name: P.user.name, screenName: P.user.screen_name, userId: P.user.id_str, verifiedType: P.user.verified_type, affiliateBadgeInfo: P.user.highlightedLabel, isSubscriber: P.has_super_follower, communityModeratorStatus: P.author_community_relationship?.role } }), withBottomLine: this._getWithBottomLine(), withElbow: V ? "side" === G : void 0, withFooterGap: !1, withFullWidthChildren: !0, withTopLine: this._getWithTopLine(), withUnreadStyles: Z },
                                           u,
-                                          C,
+                                          b,
                                           this._renderAtGrokPromo(),
                                           this._renderFocalContent({ withPromoteButton: O, promotionStatusBadge: c, a11yIds: n }),
                                           x.isPreview ? r.createElement(we.Z, { previewTweetId: x.id_str }) : this._renderTweetActions({ actionSize: "large", displayStyle: "block", id: n.actionsBar, style: [Lt.actionBarFocalTweet, !v && this._willRenderInlineReply() && Lt.actionBarWithInlineReply], withAnalyticsAction: !1, withCount: z }),
                                           this._renderGrokAnalysisPivotAndReplySortingButton(),
                                           this._renderLoggedOutReadRepliesPivot(),
                                           this._renderReaderModeButton(),
-                                          this._showReplyFilterInlineCallout() ? r.createElement(R.Z, { Icon: $.default, headline: ft, id: q, withThumbnail: !1 }) : null,
+                                          this._showReplyFilterInlineCallout() ? r.createElement(U.Z, { Icon: $.default, headline: ft, id: q, withThumbnail: !1 }) : null,
                                           r.createElement(Ye.Z, { conversationControlLabelNativeID: n.conversationControlLabel, displayStyle: "detail", exclusivityInfoLabelNativeID: n.exclusivityInfoLabel, hideConversationControlsEducationText: !!i, hideExclusivityInfoEducationTextInReplies: !!o, hideTrustedFriendsEducationTextInReplies: !!s, loggedInUser: this.props.viewerUser, longformNotesLabelNativeID: n.longformNotesLabel, premiumInfoLabelNativeID: n.premiumInfoLabel, trustedFriendsLabelNativeID: n.trustedFriendsLabel, tweet: x }),
                                           S ? r.createElement(a.Z, { style: Lt.readerBottomBar, testID: je.Z.readerModeBottomBar }) : null,
                                       ),
@@ -546,7 +560,7 @@
                               _.ZP.Provider,
                               { value: this._getFeatureConfigurationContextProviderValue() },
                               r.createElement(
-                                  Rt,
+                                  Ut,
                                   this.props,
                                   r.createElement(
                                       Oe.ZP,
@@ -557,7 +571,7 @@
                                           onBlur: m,
                                           onFocus: g,
                                           onPress: w,
-                                          promotedContent: b,
+                                          promotedContent: C,
                                           quotedTweetTombstoneInfo: k,
                                           renderActionMenu: this._getActionMenuRenderer({ withViews: u }),
                                           renderActionsBar: (e) => (x.isPreview ? r.createElement(we.Z, { previewTweetId: x.id_str }) : r.createElement(r.Fragment, null, this._renderTweetActions({ actionSize: e.actionSize, displayStyle: e.displayStyle, id: e.id, style: e.style, withCount: e.withCount, withAnalyticsAction: !0 }), S ? r.createElement(a.Z, { style: Lt.readerBottomBar, testID: je.Z.readerModeBottomBar }) : null)),
@@ -565,8 +579,8 @@
                                           renderEducation: (e) => r.createElement(Ye.Z, (0, n.Z)({}, e, { hideConversationControlsEducationText: !!i, hideExclusivityInfoEducationTextInReplies: !!o, hideTrustedFriendsEducationTextInReplies: !!s, loggedInUser: this.props.viewerUser })),
                                           renderHighlightedUserLabel: (e) => this._renderHighlightedUserLabel(e),
                                           renderPromotedDetails: this._withAdLabel ? K.Z : (e) => r.createElement(h.Z.PromotedDetails, e),
-                                          renderPromotedUserProfileCard: (e) => (M ? r.createElement(xe.nO, { namespace: kt }, r.createElement(_.ZP.Provider, { value: { followButtonAtBottomOfPromotedUserCard: B } }, r.createElement(h.Z.PromotedUserProfileCard, (0, n.Z)({}, e, { followButton: r.createElement(ee.C, { promotedContent: b, userId: e.userId }), link: { pathname: `/${P.user.screen_name}`, anchorless: !0, state: { promotedTweetState: b } }, onClick: T, onScreenNameClick: T, style: Lt.promotedUserCard })))) : null),
-                                          renderPromotionStatusBadge: V ? (e) => r.createElement(it.Z, { id: e.id, status: Mt(D), style: Lt.promotionStatus }) : () => null,
+                                          renderPromotedUserProfileCard: (e) => (M ? r.createElement(xe.nO, { namespace: kt }, r.createElement(_.ZP.Provider, { value: { followButtonAtBottomOfPromotedUserCard: B } }, r.createElement(h.Z.PromotedUserProfileCard, (0, n.Z)({}, e, { followButton: r.createElement(ee.C, { promotedContent: C, userId: e.userId }), link: { pathname: `/${P.user.screen_name}`, anchorless: !0, state: { promotedTweetState: C } }, onClick: T, onScreenNameClick: T, style: Lt.promotedUserCard })))) : null),
+                                          renderPromotionStatusBadge: W ? (e) => r.createElement(it.Z, { id: e.id, status: Mt(D), style: Lt.promotionStatus }) : () => null,
                                           renderReplyContext: (e) => this._renderReplyContext({ id: e.id }),
                                           renderRichContent: (e) => this._renderRichContent({ id: e.id }),
                                           renderStats: this._renderTweetStats(),
@@ -668,9 +682,9 @@
                         m = c && !h && this._isEditTweetConsumptionEnabled(),
                         w = h && this._isEditTweetConsumptionEnabled(),
                         g = m && !s.isStaleEdit,
-                        C = new Date(l),
-                        k = Ct(C),
-                        v = `${bt(C)} · ${k}`,
+                        b = new Date(l),
+                        k = bt(b),
+                        v = `${Ct(b)} · ${k}`,
                         y = this.context.featureSwitches.isTrue("view_counts_public_visibility_enabled"),
                         E = _?.count,
                         x = E ? T.ZP.getTruncatedCount(Number(E)) : void 0,
@@ -679,7 +693,7 @@
                     return r.createElement(
                         r.Fragment,
                         null,
-                        r.createElement(a.Z, { style: Lt.footerContainer }, r.createElement(a.Z, { style: Lt.footerContent }, r.createElement(H.Z, { linkColor: "gray700", renderCoinCount: this._renderCoinsCount(), renderEditCallout: m ? (t) => r.createElement(b.Z, { editType: t.editType, id: e.a11yIds.editCallout, textMode: t.textMode }) : K.Z, renderPlace: p ? () => r.createElement(f.ZP, { color: p.id ? "gray700" : void 0, link: p.id ? `/places/${p.id}` : void 0 }, p.full_name) : K.Z, renderTimestamp: (e) => r.createElement(F.Z, { "aria-describedby": e["aria-describedby"], "aria-label": m ? `${gt} ${wt} ${v}` : void 0, link: m ? d.Z.getTweetEditHistoryRoute(s) : u, onPress: m ? n : void 0, prefix: e.prefix, relative: !1, timestamp: l }), renderViewCount: x && y ? () => r.createElement(N.Z, null, r.createElement(f.ZP, null, r.createElement(G().I18NFormatMessage, { $i18n: "c1976bcf" }, r.createElement(N.Z.Value, { animated: !0, count: Number(E) }, G().f396c105({ displayCount: x })), r.createElement(N.Z.Label, null, G().aa037e65({ count: Number(E) }))))) : K.Z, style: Lt.timeLocSource }), r.createElement(a.Z, { style: Lt.footerIcons }, this._renderModeratedRepliesIcon())), this._withAdLabel ? null : this._renderPromotedDetails(), e.promotionStatusBadge),
+                        r.createElement(a.Z, { style: Lt.footerContainer }, r.createElement(a.Z, { style: Lt.footerContent }, r.createElement(H.Z, { linkColor: "gray700", renderCoinCount: this._renderCoinsCount(), renderEditCallout: m ? (t) => r.createElement(C.Z, { editType: t.editType, id: e.a11yIds.editCallout, textMode: t.textMode }) : K.Z, renderPlace: p ? () => r.createElement(f.ZP, { color: p.id ? "gray700" : void 0, link: p.id ? `/places/${p.id}` : void 0 }, p.full_name) : K.Z, renderTimestamp: (e) => r.createElement(F.Z, { "aria-describedby": e["aria-describedby"], "aria-label": m ? `${gt} ${wt} ${v}` : void 0, link: m ? d.Z.getTweetEditHistoryRoute(s) : u, onPress: m ? n : void 0, prefix: e.prefix, relative: !1, timestamp: l }), renderViewCount: x && y ? () => r.createElement(N.Z, null, r.createElement(f.ZP, null, r.createElement(V().I18NFormatMessage, { $i18n: "c1976bcf" }, r.createElement(N.Z.Value, { animated: !0, count: Number(E) }, V().f396c105({ displayCount: x })), r.createElement(N.Z.Label, null, V().aa037e65({ count: Number(E) }))))) : K.Z, style: Lt.timeLocSource }), r.createElement(a.Z, { style: Lt.footerIcons }, this._renderModeratedRepliesIcon())), this._withAdLabel ? null : this._renderPromotedDetails(), e.promotionStatusBadge),
                         w && this._renderStaleEditCallout(e.a11yIds.editCallout),
                         S ? r.createElement(Xe.Z, { onEngagementsClick: i, tweet: s, viewerUserId: this.context.viewerUserId }) : r.createElement(Ke.Z, { onAnalyticsClick: t, tweet: s, viewerUserId: this.context.viewerUserId }),
                         I ? r.createElement(De.Z, { variant: "PostAnalytics", wrapperStyles: Lt.postEngagementsUpsell }) : null,
@@ -698,7 +712,7 @@
                     const { onSelfThreadClick: e, onSelfThreadImpression: t, tweet: i } = this.props,
                         n = d.Z.getOriginalTweet(i),
                         o = this._shouldShowSelfThreadWithAvatar();
-                    return this._shouldShowSelfThread() ? r.createElement(We.Z, { avatarUrl: o ? n.user.profile_image_url_https : void 0, onClick: e, onImpression: t, style: Lt.selfThreadCTA, to: i.permalink, userName: n.user.screen_name, withConversationLine: o }) : null;
+                    return this._shouldShowSelfThread() ? r.createElement(Ge.Z, { avatarUrl: o ? n.user.profile_image_url_https : void 0, onClick: e, onImpression: t, style: Lt.selfThreadCTA, to: i.permalink, userName: n.user.screen_name, withConversationLine: o }) : null;
                 }
                 _shouldShowSelfThread() {
                     const { conversationPosition: e, tweet: t, withSelfThread: i } = this.props,
@@ -725,12 +739,12 @@
                     if (!p || !l) return u ? r.createElement(pe.Z, { context: u.context }) : null;
                     const { featureSwitches: _ } = this.context,
                         m = t && !this._getIsConversationStart(),
-                        { contextType: w, isSelfRetweet: g, landingUrl: T, name: C, screenName: b, text: f, topicContext: k } = l,
+                        { contextType: w, isSelfRetweet: g, landingUrl: T, name: b, screenName: C, text: f, topicContext: k } = l,
                         v = T ? (0, ve.s9)(T) : void 0;
                     if (k && h && (0, nt.eM)({ featureSwitches: _, isExpanded: o, topic: h, topicContext: k })) return r.createElement(nt.pZ, { onUndoTopicNotInterestedClick: s });
                     const y = { contextType: w, iconSize: "large", withLeftPadding: !m && !this._getWithTopLine(), text: f },
                         E = k && h ? (0, nt.cN)({ featureSwitches: _, iconSize: y.iconSize, injectedFeedbackItem: i, isExpanded: o, socialContext: l, topic: h, withLeftPadding: y.withLeftPadding }) : y;
-                    return r.createElement(re.Z, (0, n.Z)({}, E, { iconColor: d, id: e, link: v, onClick: w === Ae.Z.Topic ? this._handleSocialContextClick : void 0, retweetData: { name: C, screenName: b, isSelfRetweet: g }, style: Lt.socialContext, testID: je.Z.socialContext, textColor: d, weight: "bold" }));
+                    return r.createElement(re.Z, (0, n.Z)({}, E, { iconColor: d, id: e, link: v, onClick: w === Ae.Z.Topic ? this._handleSocialContextClick : void 0, retweetData: { name: b, screenName: C, isSelfRetweet: g }, style: Lt.socialContext, testID: je.Z.socialContext, textColor: d, weight: "bold" }));
                 }
                 _renderReplyContext({ id: e }) {
                     const { conversationPosition: t, conversationTreeMetadata: i, isFocal: n, onReplyContextClick: o, replyContext: s, tweet: a } = this.props,
@@ -743,10 +757,10 @@
                     return e ? r.createElement(a.Z, { style: this._willRenderInlineReply() ? Lt.actionBarWithInlineReply : void 0 }, r.createElement(ie.Z, { focalTweet: t, isExpanded: !0, readerModeAvailable: !!e })) : null;
                 }
                 _renderTweetActions({ actionSize: e, displayStyle: t, id: i, style: n, withAnalyticsAction: o, withCount: s }) {
-                    const { bookmarkFolderId: l, contextTweet: d, contextualClientEventInfo: c, enableKeyboardShortcuts: h, forwardPivotInfo: u, isCompact: p, isFocal: _, isInEditHistory: m, nudges: w, onLikeSuccess: g, onReplyPress: T, promotedContent: C, socialContext: b, tweet: f, withActions: k, withActionsDisabled: v, withRemoveFromBookmarks: y } = this.props;
+                    const { bookmarkFolderId: l, contextTweet: d, contextualClientEventInfo: c, enableKeyboardShortcuts: h, forwardPivotInfo: u, isCompact: p, isFocal: _, isInEditHistory: m, nudges: w, onLikeSuccess: g, onReplyPress: T, promotedContent: b, socialContext: C, tweet: f, withActions: k, withActionsDisabled: v, withRemoveFromBookmarks: y } = this.props;
                     if (p || !k) return null;
                     const E = this.state.width < 290;
-                    return r.createElement(a.Z, { onLayout: this._handleLayout }, r.createElement(he.Z, { actionSize: e, allowBookmarkInActionsBar: !E, bookmarkFolderId: l, contextualClientEventInfo: c, displayStyle: t, enableKeyboardShortcuts: h, forwardPivotInfo: f.softIntervention || u, id: i, isFocalTweet: _, isInEditHistory: m, likeActionIconContainerRef: this._iconContainerRef, nudges: w, onLikeSuccess: g, onReplyPress: T, promotedContent: C, socialContext: b, style: n, tweet: d || f, withActionsDisabled: v || f.isPreviewDisplay, withAnalyticsAction: o, withCount: s, withRemoveFromBookmarks: y }));
+                    return r.createElement(a.Z, { onLayout: this._handleLayout }, r.createElement(he.Z, { actionSize: e, allowBookmarkInActionsBar: !E, bookmarkFolderId: l, contextualClientEventInfo: c, displayStyle: t, enableKeyboardShortcuts: h, forwardPivotInfo: f.softIntervention || u, id: i, isFocalTweet: _, isInEditHistory: m, likeActionIconContainerRef: this._iconContainerRef, nudges: w, onLikeSuccess: g, onReplyPress: T, promotedContent: b, socialContext: C, style: n, tweet: d || f, withActionsDisabled: v || f.isPreviewDisplay, withAnalyticsAction: o, withCount: s, withRemoveFromBookmarks: y }));
                 }
                 _renderAvatar(e) {
                     const { isFocal: t, onAvatarClick: i, onScreenNameClick: o, tweet: s, withUserAvatar: a, withUserHoverCard: l, withUserPresence: c } = this.props;
@@ -797,18 +811,18 @@
                 }
                 _richContentProps() {
                     const { featureSwitches: e } = this.context,
-                        { enableKeyboardShortcuts: t, forwardPivotInfo: i, inlineCalloutInfo: n, innerForwardPivotInfo: o, innerNudges: s, isFocal: a, linkableQuotedTweet: l, nudges: c, onCardLinkClick: h, onMediaClick: u, onQuoteTweetClick: p, onQuoteTweetMediaClick: _, onQuotedTweetAvatarClick: m, onQuotedTweetScreenNameClick: w, preventVideoPlayback: g, promotedContent: T, quoteTweetSocialContextProps: C, quotedTweetTombstoneInfo: b, translation: f, tweet: k, withAltTextBadge: v, withCardLinks: y, withCondensedQuoteTweet: E, withHalvedMediaSize: x, withInlineMedia: S, withReaderModeActive: I, withUserHoverCard: Z } = this.props,
+                        { enableKeyboardShortcuts: t, forwardPivotInfo: i, inlineCalloutInfo: n, innerForwardPivotInfo: o, innerNudges: s, isFocal: a, linkableQuotedTweet: l, nudges: c, onCardLinkClick: h, onMediaClick: u, onQuoteTweetClick: p, onQuoteTweetMediaClick: _, onQuotedTweetAvatarClick: m, onQuotedTweetScreenNameClick: w, preventVideoPlayback: g, promotedContent: T, quoteTweetSocialContextProps: b, quotedTweetTombstoneInfo: C, translation: f, tweet: k, withAltTextBadge: v, withCardLinks: y, withCondensedQuoteTweet: E, withHalvedMediaSize: x, withInlineMedia: S, withReaderModeActive: I, withUserHoverCard: Z } = this.props,
                         P = a ? "DETAIL" : "TIMELINE",
                         A = this.context.featureSwitches.isTrue("responsive_web_compact_media_max_height_enabled_for_all"),
                         L = this._hasPhoto() || this._quoteTweetHasPhoto(),
-                        U = L || (0, Le.wV)(k),
-                        R = (A ? U : L) && !!Y.ZP.isDesktopOS() && !a,
+                        R = L || (0, Le.wV)(k),
+                        U = (A ? R : L) && !!Y.ZP.isDesktopOS() && !a,
                         F = d.Z.getOriginalTweet(k),
                         M = this.props.withActionsDisabled || (0, ue.$y)(e, F, ue.d.VoteOnPoll),
                         B = (this._isTweetInConversation() && !a) || !this._isEdgeToEdgeEnabled,
                         { showGrokTranslation: H, showTranslation: N } = this.state,
                         D = H ? F.grok_translated_post?.associated_data?.poll_translations : N ? f?.pollTranslations : void 0;
-                    return { cardCacheLocationKey: P, displayMediaMetadata: a, enableKeyboardShortcuts: t, filterOutInlineMedia: a || I, forwardPivotInfo: k.softIntervention || i, inlineCalloutInfo: n, innerForwardPivotInfo: o, innerNudges: s, isMediaMaxHeightEnabled: R, loggedInUserId: this.context.viewerUserId, mediaAltTranslations: this.state.mediaAltTranslations, mediaCacheLocationKey: P, nudges: c, onCardLinkClick: h, onGrokClick: this._onGrokClick, onMediaClick: u, onQuotedTweetAvatarClick: m, onQuotedTweetScreenNameClick: w, onQuoteTweetClick: p, onQuoteTweetMediaClick: _, pollTranslations: D, preventVideoPlayback: g, promotedContent: T, quotedTweetTombstoneInfo: b, quoteTweetSingleImageMinAspectRatio: lt, quoteTweetSocialContextProps: C, renderGrokTranslationHeaderForQuote: () => this._renderGrokTranslationHeader("quote-text"), renderJetfuelFrame: this._renderJetfuelFrame(), renderPrerollActionMenu: this._getPrerollActionMenuRenderer({}), renderQuoteTweetTombstone: (e) => r.createElement($e.Z, e), renderTranslationFeedback: this._getTranslationFeedbackRenderer("below-poll"), showAltTranslation: this.state.showTranslation, singleImageMaxAspectRatio: at, singleImageMinAspectRatio: a ? 0.1 : lt, style: Lt.richContent, tweet: k, withActionsDisabled: M, withAltTextBadge: v, withCardLinks: y, withCenterCrop: !0, withCondensedQuoteTweet: (!a && d.Z.hasMedia(F, !S)) || !!E, withHalvedMediaSize: x, withMediaTagsIcon: a, withQuoteTweetBirdwatchPivot: !0, withQuoteTweetHeaderLinks: !1, withQuoteTweetLink: l, withQuoteTweetMedia: S, withRoundMediaCorners: B, withTweetMedia: S, withUserHoverCard: Z };
+                    return { cardCacheLocationKey: P, displayMediaMetadata: a, enableKeyboardShortcuts: t, filterOutInlineMedia: a || I, forwardPivotInfo: k.softIntervention || i, inlineCalloutInfo: n, innerForwardPivotInfo: o, innerNudges: s, isMediaMaxHeightEnabled: U, loggedInUserId: this.context.viewerUserId, mediaAltTranslations: this.state.mediaAltTranslations, mediaCacheLocationKey: P, nudges: c, onCardLinkClick: h, onGrokClick: this._onGrokClick, onMediaClick: u, onQuotedTweetAvatarClick: m, onQuotedTweetScreenNameClick: w, onQuoteTweetClick: p, onQuoteTweetMediaClick: _, pollTranslations: D, preventVideoPlayback: g, promotedContent: T, quotedTweetTombstoneInfo: C, quoteTweetSingleImageMinAspectRatio: lt, quoteTweetSocialContextProps: b, renderGrokTranslationHeaderForQuote: () => this._renderGrokTranslationHeader("quote-text"), renderJetfuelFrame: this._renderJetfuelFrame(), renderPrerollActionMenu: this._getPrerollActionMenuRenderer({}), renderQuoteTweetTombstone: (e) => r.createElement($e.Z, e), renderTranslationFeedback: this._getTranslationFeedbackRenderer("below-poll"), showAltTranslation: this.state.showTranslation, singleImageMaxAspectRatio: at, singleImageMinAspectRatio: a ? 0.1 : lt, style: Lt.richContent, tweet: k, withActionsDisabled: M, withAltTextBadge: v, withCardLinks: y, withCenterCrop: !0, withCondensedQuoteTweet: (!a && d.Z.hasMedia(F, !S)) || !!E, withHalvedMediaSize: x, withMediaTagsIcon: a, withQuoteTweetBirdwatchPivot: !0, withQuoteTweetHeaderLinks: !1, withQuoteTweetLink: l, withQuoteTweetMedia: S, withRoundMediaCorners: B, withTweetMedia: S, withUserHoverCard: Z };
                 }
                 _renderRichContent({ id: e }) {
                     const { location: t } = this.context.history;
@@ -859,8 +873,8 @@
                     pivotContainer: { display: "flex", gap: e.spaces.space8, flexDirection: "row" },
                     translationHeaderInQuote: { marginBottom: 0, marginTop: e.spaces.space8 },
                 })),
-                Ut = (0, st.n)((0, ye.Z)(At));
-            function Rt({ children: e, handleLikeOrUnlike: t, isCompact: i, primaryFeedbackItem: n, tweet: o }) {
+                Rt = (0, st.n)((0, ye.Z)(At));
+            function Ut({ children: e, handleLikeOrUnlike: t, isCompact: i, primaryFeedbackItem: n, tweet: o }) {
                 const s = o.retweeted_status?.favorited || o.favorited;
                 const l = [Lt.likeBadge, { start: 24, top: 54, transform: [{ rotate: "0deg" }] }];
                 return i
@@ -899,7 +913,7 @@
                     case "IneligibleCampaignPaused":
                         return "paused";
                     default:
-                        return (0, Ce.ZP)(new Error(`Tweet promotion badge should never render when quick promote eligibility is ${e || "null"}`), { level: "warning" }), "in-progress";
+                        return (0, be.ZP)(new Error(`Tweet promotion badge should never render when quick promote eligibility is ${e || "null"}`), { level: "warning" }), "in-progress";
                 }
             }
             const Bt = ({ onOpenGrokUpdate: e }) => {
@@ -912,16 +926,16 @@
                 );
             };
             function Ht(e) {
-                const t = (0, Ue.Z)(),
+                const t = (0, Re.Z)(),
                     i = r.useCallback(() => {
                         t.scribe({ element: "grok_post_atgrok_button", action: "click" });
                     }, [t]),
                     n = r.useCallback(() => {
                         t.scribe({ element: "grok_post_atgrok_button", action: "impression" });
                     }, [t]);
-                return r.createElement(a.Z, { style: Lt.askGrokPromo }, r.createElement(ce.D, { id: "grok_post_atgrok_button", onFullyVisible: n, position: "bottom", testID: "grok_post_atgrok_button" }), r.createElement(V.ZP, { icon: r.createElement(te.x1, null), link: "/i/grok", onClick: i, type: "primaryFilled" }, Pt));
+                return r.createElement(a.Z, { style: Lt.askGrokPromo }, r.createElement(ce.D, { id: "grok_post_atgrok_button", onFullyVisible: n, position: "bottom", testID: "grok_post_atgrok_button" }), r.createElement(W.ZP, { icon: r.createElement(te.x1, null), link: "/i/grok", onClick: i, type: "primaryFilled" }, Pt));
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.a8607c4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.cdb6a2ba.js.map

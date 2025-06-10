@@ -5448,6 +5448,8 @@
                 t("i8cae552", "Prin evaluare ne vei ajuta să păstrăm Notele Comunității la un nivel calitativ ridicat."),
                 t("hd43a218", "Ai atins limita zilnică pentru scrisul de note"),
                 t("aaba8ed2", "Pentru a menține înalta calitate a notelor și a preveni spamul, există o limită pentru numărul de note pe care contributorii le pot scrie zilnic, în funcție de Impactul scrierii acestora. Încearcă din nou mai târziu."),
+                t("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
+                t("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
                 t("b98f077c", "Cere informații despre Notă"),
                 t("ee691104", "Cere o Notă a Comunității în legătură cu această postare"),
                 t("f8cbdf02", "Crezi că această postare poate fi înșelătoare? Solicită o Notă a Comunității."),
@@ -5890,10 +5892,10 @@
                 t("beba2a0e", "Creează un nou folder cu Marcaje"),
                 t("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
-                }),
-                t("h18f86a4", "Șterge folder"),
-                t("f4ea967a", "Folderul a fost șters");
-            t("b670aa62", "Nume folder"),
+                });
+            t("h18f86a4", "Șterge folder"),
+                t("f4ea967a", "Folderul a fost șters"),
+                t("b670aa62", "Nume folder"),
                 t("aece5462", "Denumirea folderului a fost actualizată cu succes"),
                 t("e3299b94", "Ceva nu a mers bine. Încearcă din nou să actualizezi acel folder într-un minut."),
                 t("c09ea714", "Ceva nu a mers bine. Încearcă din nou să ștergi folderul într-un minut."),
@@ -6894,10 +6896,10 @@
                 t("hf352d42", "Adaugă opțional un interval salarial pe care candidații să îl poată vedea. Dacă alegi să nu incluzi acest lucru, ai în vedere legile privind transparența remunerațiilor în locul pentru care dorești să angajezi persoane."),
                 t("ede7d0a2", "Monedă"),
                 t("b925c18c", "Tip de salarizare"),
-                t("j3d242ce", "Interval nevalid"),
-                t("f4d07bd2", "Include detalii opționale pentru a-i ajuta pe candidați să descopere posturile cu opțiunea de căutare."),
-                t("b8cbb51a", "Rezumatul locului de muncă");
-            t("bda6881e", "Acest loc de muncă a fost importat din Sistemul de urmărire a candidaturilor (ATS). Ai în vedere că doar anumite câmpuri pot fi modificate."),
+                t("j3d242ce", "Interval nevalid");
+            t("f4d07bd2", "Include detalii opționale pentru a-i ajuta pe candidați să descopere posturile cu opțiunea de căutare."),
+                t("b8cbb51a", "Rezumatul locului de muncă"),
+                t("bda6881e", "Acest loc de muncă a fost importat din Sistemul de urmărire a candidaturilor (ATS). Ai în vedere că doar anumite câmpuri pot fi modificate."),
                 t("b075c68a", "Editare loc de muncă"),
                 t("d4b6a6e0", "Profil în prim plan"),
                 t("j2dd3686", "Evidențiază locurile de muncă recomandate deasupra postărilor mele."),
@@ -7242,7 +7244,7 @@
                 t("h257d4aa", "Selectează o postare pe care să o promovezi"),
                 t("e9334fe6", "Actualizări ale datelor la fiecare câteva minute"),
                 t("a6d7b1d0", "Pe baza datelor interne X"),
-                t("h9b28dae", "Economisești timp cu fluxul fără reclame"),
+                t("h71a00e6", "You’re saving time with ad-free"),
                 t("f6c50ec0", "Perioada de încercare fără reclame s-a încheiat"),
                 t("e1d1fbca", "Ai evitat"),
                 t("a82d7abd", function (e) {
@@ -7269,6 +7271,9 @@
                 }),
                 t("b93d00e5", function (e) {
                     return e.days + " " + r(e.days, "(de) zile", "zi", "(de) zile");
+                }),
+                t("dc9661b3", function (e) {
+                    return e.seconds + " second" + n(e.seconds, "", "s");
                 }),
                 t("g2c63852", "100% gratuit. Nu este nevoie de un card de credit."),
                 t("be88be23", function (e) {
@@ -7871,12 +7876,7 @@
                 t("b74ff5fc", "Dacă anulezi, Abonamentul tău va expira automat la sfârșitul ciclului de facturare."),
                 t("ee9efbc8", "Continuă spre anulare"),
                 t("c5d9c77a", "Se pare că a fost o mică problemă. Dar nu-ți face griji, nu este din vina ta. Închide această fereastră și încearcă din nou."),
-                t("jda53c24", "Îți poți anula Abonamentul prin Apple App Store."),
-                t("g0a7a53e", "Îți poți anula Abonamentul prin Magazinul Google Play."),
-                t("i5f14be7", function (e) {
-                    return "Bine ai revenit, " + e.displayName;
-                }),
-                t("a76d58ba", "Analiză reclame");
+                t("jda53c24", "Îți poți anula Abonamentul prin Apple App Store.");
             function c(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7915,7 +7915,12 @@
                     u(e, a)
                 );
             }
-            t("eccd0e1a", "Analiză organizații"),
+            t("g0a7a53e", "Îți poți anula Abonamentul prin Magazinul Google Play."),
+                t("i5f14be7", function (e) {
+                    return "Bine ai revenit, " + e.displayName;
+                }),
+                t("a76d58ba", "Analiză reclame"),
+                t("eccd0e1a", "Analiză organizații"),
                 t("deea1708", "Vrei să vezi analiza pentru toate conturile tale X?"),
                 t("eb603ffc", "Fă upgrade pentru a adăuga afiliați la rețeaua ta și pentru a vedea analiza agregată."),
                 t("gf67aae4", "Fă upgrade pentru acces complet"),
@@ -8911,11 +8916,11 @@
                     return "Vizitează " + e.advertiserName;
                 }),
                 t("c67e71aa", "Urmărește acum"),
-                t("a6ada13e", "Cumpără acum"),
-                t("j0f12222", "Vezi mai multe"),
+                t("a6ada13e", "Cumpără acum");
+            t("j0f12222", "Vezi mai multe"),
                 t("f569f7c8", "Accesează site-ul"),
-                t("j0c6772a", "Vizitează site-ul");
-            t("f73003aa", "Videoclipul se va reda după reclamă"),
+                t("j0c6772a", "Vizitează site-ul"),
+                t("f73003aa", "Videoclipul se va reda după reclamă"),
                 t("b3112b8a", "Omite"),
                 t("h6333ad0", "Omite reclama"),
                 t("c59da417", function (e) {
@@ -13366,4 +13371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.e8bb93ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.028f1b6a.js.map

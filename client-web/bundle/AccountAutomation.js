@@ -125,18 +125,18 @@
                 B = g().a2981062,
                 F = g().aff4540e,
                 O = g().b8b9d100,
-                v = o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, o.createElement(g().I18NFormatMessage, { $i18n: "d79b6b7b" }, o.createElement(s.ZP, { link: D, size: "subtext2" }, g().f79acef3))),
-                R = g().e0bc51f6,
-                M = g().i9028824,
+                R = o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, o.createElement(g().I18NFormatMessage, { $i18n: "d79b6b7b" }, o.createElement(s.ZP, { link: D, size: "subtext2" }, g().f79acef3))),
+                M = g().e0bc51f6,
+                v = g().i9028824,
                 z = g().b92190c2,
                 I = g().fb03b39a,
                 N = g().bd51ddfa,
                 k = { page: "settings", section: "account_information", component: "automation" },
                 H = { page: "system", section: "message" },
-                V = g().e91c15f6,
-                j = g().df035b80,
-                G = g().bd12cf34,
-                Q = g().cfd2f35e,
+                j = g().e91c15f6,
+                G = g().df035b80,
+                Q = g().bd12cf34,
+                V = g().cfd2f35e,
                 q = "/i/flow/enable_automated_account";
             class W extends o.Component {
                 constructor(e, t) {
@@ -165,9 +165,9 @@
                         (this._handleToggleDisableConfirmation = () => {
                             this.setState({ showDisableConfirmation: !this.state.showDisableConfirmation });
                         }),
-                        (this._renderUnassignedManagingAccountView = () => o.createElement(n.Z, null, o.createElement(l.Z, { description: v, label: O, link: q }), this.state.showCallout && this._renderCallout())),
-                        (this._renderAssignedManagingAccountView = () => o.createElement(n.Z, null, o.createElement(i.Z, { label: B, subtext: this.props.managingAccount || "", withBottomBorder: !1 }), o.createElement(l.Z, { label: F, link: q }), this.state.showCallout && this._renderCallout(), o.createElement(u.Z, null), o.createElement(d.Z, { color: "red500", label: R, onPress: this._handleToggleDisableConfirmation }))),
-                        (this._renderDisconnectConfirmation = () => o.createElement(h.Z, { actionLabel: G, graphicDisplayMode: "none", headline: V, onAction: this._handleDisableUserAccountLabel, onClose: this._handleToggleDisableConfirmation, onSecondaryAction: this._handleToggleDisableConfirmation, secondaryActionLabel: Q, subtext: j, useBrandedActionButtons: !0, withCloseButton: !0 })),
+                        (this._renderUnassignedManagingAccountView = () => o.createElement(n.Z, null, o.createElement(l.Z, { description: R, label: O, link: q }), this.state.showCallout && this._renderCallout())),
+                        (this._renderAssignedManagingAccountView = () => o.createElement(n.Z, null, o.createElement(i.Z, { label: B, subtext: this.props.managingAccount || "", withBottomBorder: !1 }), o.createElement(l.Z, { label: F, link: q }), this.state.showCallout && this._renderCallout(), o.createElement(u.Z, null), o.createElement(d.Z, { color: "red500", label: M, onPress: this._handleToggleDisableConfirmation }))),
+                        (this._renderDisconnectConfirmation = () => o.createElement(h.Z, { actionLabel: Q, graphicDisplayMode: "none", headline: j, onAction: this._handleDisableUserAccountLabel, onClose: this._handleToggleDisableConfirmation, onSecondaryAction: this._handleToggleDisableConfirmation, secondaryActionLabel: V, subtext: G, useBrandedActionButtons: !0, withCloseButton: !0 })),
                         (this._render = () => {
                             const e = this.props.managingAccount ? this._renderAssignedManagingAccountView() : this._renderUnassignedManagingAccountView(),
                                 { showDisableConfirmation: t } = this.state;
@@ -202,7 +202,7 @@
                 }
                 render() {
                     const { managingAccountFetchStatus: e } = this.props;
-                    return o.createElement(S.nO, { namespace: k }, o.createElement(A.Z, null, o.createElement(C.Z, { "aria-label": M, fetchStatus: e, onRequestRetry: this._handleFetchUserAccountLabel, render: this._render })));
+                    return o.createElement(S.nO, { namespace: k }, o.createElement(A.Z, null, o.createElement(C.Z, { "aria-label": v, fetchStatus: e, onRequestRetry: this._handleFetchUserAccountLabel, render: this._render })));
                 }
             }
             W.contextType = f.rC;
@@ -321,7 +321,7 @@
             const l = s.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, bottomBorder: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor } })),
                 i = c;
         },
-        748138: (e, t, a) => {
+        41065: (e, t, a) => {
             "use strict";
             a.r(t), a.d(t, { default: () => l });
             var o = a(202784),
@@ -330,7 +330,7 @@
                 s = a(347101);
             const c = (e = {}) => {
                 const { direction: t } = (0, r.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
             };
             c.metadata = { width: 24, height: 24 };
             const l = c;
@@ -348,4 +348,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAutomation.196bd1aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAutomation.1377a16a.js.map

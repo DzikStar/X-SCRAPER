@@ -5437,6 +5437,8 @@
                 a("i8cae552", "[[274015]] By rating you’ll help keep quality in Community Notes high."),
                 a("hd43a218", "[[275792]] You’ve reached your daily limit for writing notes"),
                 a("aaba8ed2", "[[275791]] To keep note quality high and prevent spam, there’s a limit to the number of notes contributors can write each day, based on their Writing Impact. Please try again later."),
+                a("a67ed4d6", "[[296257]] You’ve reached the limit for adding notes to this author’s posts for now"),
+                a("ic484166", "[[296256]] To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
                 a("b98f077c", "[[287909]] Request a Note Info"),
                 a("ee691104", "[[287908]] Request a Community Note about this post"),
                 a("f8cbdf02", "[[287926]] Think this post is potentially misleading? Request a Community Note."),
@@ -5879,10 +5881,10 @@
                 a("beba2a0e", "[[242311]] Create a new Bookmark Folder"),
                 a("e41c9b4f", function (e) {
                     return "[[242357]] Saved to " + e.bookmarkFolderName;
-                }),
-                a("h18f86a4", "[[242318]] Delete Folder"),
-                a("f4ea967a", "[[242841]] Folder has been deleted");
-            a("b670aa62", "[[242315]] Folder Name"),
+                });
+            a("h18f86a4", "[[242318]] Delete Folder"),
+                a("f4ea967a", "[[242841]] Folder has been deleted"),
+                a("b670aa62", "[[242315]] Folder Name"),
                 a("aece5462", "[[242839]] Folder name has been updated successfully"),
                 a("e3299b94", "[[242842]] Something went wrong. Try updating that folder again in a minute."),
                 a("c09ea714", "[[242843]] Something went wrong. Try deleting that folder again in a minute."),
@@ -6883,10 +6885,10 @@
                 a("hf352d42", "[[282447]] Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for."),
                 a("ede7d0a2", "[[276389]] Currency"),
                 a("b925c18c", "[[283691]] Salary Type"),
-                a("j3d242ce", "[[276541]] Invalid range"),
-                a("f4d07bd2", "[[282456]] Include optional details to make it easier for candidates to discover your roles with search."),
-                a("b8cbb51a", "[[282457]] Job Summary");
-            a("bda6881e", "[[282745]] This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                a("j3d242ce", "[[276541]] Invalid range");
+            a("f4d07bd2", "[[282456]] Include optional details to make it easier for candidates to discover your roles with search."),
+                a("b8cbb51a", "[[282457]] Job Summary"),
+                a("bda6881e", "[[282745]] This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 a("b075c68a", "[[276392]] Edit job"),
                 a("d4b6a6e0", "[[249571]] Profile Spotlight"),
                 a("j2dd3686", "[[285949]] Highlight featured jobs above my posts."),
@@ -7231,7 +7233,7 @@
                 a("h257d4aa", "[[282221]] Select a post to promote"),
                 a("e9334fe6", "[[296231]] Data updates every few minutes"),
                 a("a6d7b1d0", "[[296230]] Based on X Internal Data"),
-                a("h9b28dae", "[[296184]] You’re saving time with an ad-free feed"),
+                a("h71a00e6", "[[296271]] You’re saving time with ad-free"),
                 a("f6c50ec0", "[[295800]] Your ad-free trial has ended"),
                 a("e1d1fbca", "[[296185]] You’ve avoided"),
                 a("a82d7abd", function (e) {
@@ -7258,6 +7260,9 @@
                 }),
                 a("b93d00e5", function (e) {
                     return "[[295679]] " + e.days + " day" + n(e.days, "", "s");
+                }),
+                a("dc9661b3", function (e) {
+                    return "[[296251]] " + e.seconds + " second" + n(e.seconds, "", "s");
                 }),
                 a("g2c63852", "[[296174]] 100% free. No credit card required."),
                 a("be88be23", function (e) {
@@ -7860,12 +7865,7 @@
                 a("b74ff5fc", "[[272795]] If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
                 a("ee9efbc8", "[[265375]] Continue to cancellation"),
                 a("c5d9c77a", "[[265380]] Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Close this window and try again."),
-                a("jda53c24", "[[272809]] You can cancel your Subscription through the Apple App Store."),
-                a("g0a7a53e", "[[272807]] You can cancel your Subscription through the Google Play Store."),
-                a("i5f14be7", function (e) {
-                    return "[[288006]] Welcome back, " + e.displayName;
-                }),
-                a("a76d58ba", "[[288167]] Ads Analytics");
+                a("jda53c24", "[[272809]] You can cancel your Subscription through the Apple App Store.");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7904,7 +7904,12 @@
                     r(e, t)
                 );
             }
-            a("eccd0e1a", "[[288001]] Organization Analytics"),
+            a("g0a7a53e", "[[272807]] You can cancel your Subscription through the Google Play Store."),
+                a("i5f14be7", function (e) {
+                    return "[[288006]] Welcome back, " + e.displayName;
+                }),
+                a("a76d58ba", "[[288167]] Ads Analytics"),
+                a("eccd0e1a", "[[288001]] Organization Analytics"),
                 a("deea1708", "[[288004]] Want to view analytics across all your X accounts?"),
                 a("eb603ffc", "[[288007]] Upgrade to affiliate your network and view aggregated analytics."),
                 a("gf67aae4", "[[288005]] Upgrade to Full Access"),
@@ -8900,11 +8905,11 @@
                     return "[[223889]] Visit " + e.advertiserName;
                 }),
                 a("c67e71aa", "[[223887]] Watch now"),
-                a("a6ada13e", "[[142677]] Shop now"),
-                a("j0f12222", "[[223888]] See more"),
+                a("a6ada13e", "[[142677]] Shop now");
+            a("j0f12222", "[[223888]] See more"),
                 a("f569f7c8", "[[223884]] Go to website"),
-                a("j0c6772a", "[[223886]] Visit website");
-            a("f73003aa", "[[225566]] Video will play after ad"),
+                a("j0c6772a", "[[223886]] Visit website"),
+                a("f73003aa", "[[225566]] Video will play after ad"),
                 a("b3112b8a", "[[153003]] Skip"),
                 a("h6333ad0", "[[209963]] Skip Ad"),
                 a("c59da417", function (e) {
@@ -13353,4 +13358,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.eab0e13a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.1fb1cf9a.js.map

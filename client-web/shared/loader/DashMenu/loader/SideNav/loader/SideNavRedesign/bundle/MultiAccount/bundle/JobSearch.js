@@ -256,9 +256,9 @@
             const m = p;
             var y = a(202784),
                 k = a(325686),
-                _ = (a(585488), a(712696)),
-                v = a.n(_),
-                h = a(107267),
+                v = (a(585488), a(712696)),
+                h = a.n(v),
+                _ = a(107267),
                 F = a(731708),
                 b = a(661810),
                 f = a(642153),
@@ -271,23 +271,23 @@
                 E = a(621416),
                 C = a(125363),
                 A = a(175856),
-                I = a(390387),
-                D = a(114084),
-                R = a(736063);
-            const H = (0, a(668214).Z)()
-                    .propsFromActions(() => ({ setDelegateUser: I.vU }))
+                D = a(390387),
+                I = a(114084),
+                Z = a(736063);
+            const R = (0, a(668214).Z)()
+                    .propsFromActions(() => ({ setDelegateUser: D.vU }))
                     .withAnalytics({ component: "delegated_account_list" }),
-                Z = m,
+                H = m,
                 q = L().daffabde,
-                P = L().eccbfa26,
-                x = L().a1b7a904,
-                M = { context: "DelegateGroups" },
+                x = L().eccbfa26,
+                M = L().a1b7a904,
+                P = { context: "DelegateGroups" },
                 O = ({ activeUserId: e, delegateUser: l, isUpdatedManageAccounts: a, onDelegateSwitch: n, renderUserDecoration: i, setDelegateUser: t }) => {
                     const r = (0, C.I0)(),
-                        s = (0, h.useHistory)(),
+                        s = (0, _.useHistory)(),
                         [o] = (0, E.m)(A.s7),
                         [d, c] = y.useState(!0),
-                        u = v()(Z, {}),
+                        u = h()(H, {}),
                         g = y.useMemo(() => {
                             const l = [];
                             return (
@@ -303,9 +303,9 @@
                             c(!d);
                         }, [d]);
                     y.useEffect(() => {
-                        r(I.po(g.length));
+                        r(D.po(g.length));
                     }, [g, r]);
-                    const _ = y.useCallback(
+                    const v = y.useCallback(
                         (e) => () => {
                             o ? s.push("/i/delegate/switch", { delegateUser: e }) : t && t(e), n();
                         },
@@ -316,21 +316,21 @@
                         : y.createElement(
                               y.Fragment,
                               null,
-                              a ? y.createElement(k.Z, { style: V.updatedDelegateAccountsLabel }, y.createElement(F.ZP, { color: "gray700", weight: "bold" }, P)) : y.createElement(k.Z, { onClick: m, style: V.delegateAccountsLabel }, y.createElement(F.ZP, { color: "gray700", weight: "bold" }, p ? q : P), !p && (d ? y.createElement(T.default, { style: V.IconChevronUp }) : y.createElement(S.default, { style: V.IconChevronDown }))),
+                              a ? y.createElement(k.Z, { style: V.updatedDelegateAccountsLabel }, y.createElement(F.ZP, { color: "gray700", weight: "bold" }, x)) : y.createElement(k.Z, { onClick: m, style: V.delegateAccountsLabel }, y.createElement(F.ZP, { color: "gray700", weight: "bold" }, p ? q : x), !p && (d ? y.createElement(T.default, { style: V.IconChevronUp }) : y.createElement(S.default, { style: V.IconChevronDown }))),
                               a || d || p
                                   ? g.map((e) => {
                                         const { id_str: n } = e.legacy,
                                             t = n === l?.userId,
                                             r = i ? i({ withBadges: !1, isActiveUser: t }) : void 0,
-                                            s = _({ userId: n });
-                                        return y.createElement(y.Fragment, { key: e.rest_id }, y.createElement(D.Z, { "aria-label": x, badgeContext: "account", decoration: r, displayMode: "UserCompact", onCellClick: t ? U.Z : s, user: e, withInteractiveStyling: !t, withLink: !1 }), a && y.createElement(b.Z, { style: V.accountDivider }));
+                                            s = v({ userId: n });
+                                        return y.createElement(y.Fragment, { key: e.rest_id }, y.createElement(I.Z, { "aria-label": M, badgeContext: "account", decoration: r, displayMode: "UserCompact", onCellClick: t ? U.Z : s, user: e, withInteractiveStyling: !t, withLink: !1 }), a && y.createElement(b.Z, { style: V.accountDivider }));
                                     })
                                   : y.createElement(k.Z, { style: V.facePileContainer }, y.createElement(f.Z, { userAvatarSize: "large", userAvatarUrls: g.map((e) => (e?.legacy && e?.avatar?.image_url) || "") })),
                           );
                 };
             function W() {
-                const e = v()(Z, {}),
-                    l = (0, C.v9)(I.x0);
+                const e = h()(H, {}),
+                    l = (0, C.v9)(D.x0);
                 return y.useMemo(() => {
                     const a = [];
                     return (
@@ -343,7 +343,7 @@
                 }, [e.viewer_v2?.list_delegation_groups, l]);
             }
             const V = K.default.create((e) => ({ IconChevronUp: { color: e.colors.primary, marginEnd: e.spaces.space12 }, IconChevronDown: { color: e.colors.gray700, marginEnd: e.spaces.space12 }, delegateAccountsLabel: { padding: e.spaces.space12, alignItems: "center", flexDirection: "row", justifyContent: "space-between", cursor: "pointer" }, updatedDelegateAccountsLabel: { margin: e.spaces.space16, marginBottom: e.spaces.space4 }, accountDivider: { marginHorizontal: e.spaces.space16 }, facePileContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } })),
-                z = H((e) => y.createElement(R.H, { errorConfig: M }, y.createElement(O, e)));
+                z = R((e) => y.createElement(Z.H, { errorConfig: P }, y.createElement(O, e)));
         },
         621416: (e, l, a) => {
             a.d(l, { m: () => t });
@@ -412,6 +412,19 @@
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
+        98440: (e, l, a) => {
+            a.r(l), a.d(l, { default: () => o });
+            var n = a(202784),
+                i = a(890601),
+                t = a(783427),
+                r = a(347101);
+            const s = (e = {}) => {
+                const { direction: l } = (0, t.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: l });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
+        },
         452693: (e, l, a) => {
             a.r(l), a.d(l, { default: () => o });
             var n = a(202784),
@@ -427,4 +440,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch.43b11dfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch.fcf3e75a.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.TwitterArticles~bundle.SettingsExtendedProfile~bundle.WorkHistory~ondemand.Verified", "icons/IconDrafts-js", "icons/IconEye-js"],
+    ["shared~bundle.TwitterArticles~bundle.SettingsExtendedProfile~bundle.WorkHistory~ondemand.Verified"],
     {
         385264: (e, t, n) => {
             n.d(t, { Q: () => o });
@@ -44,7 +44,7 @@
                 m = p;
         },
         874111: (e, t, n) => {
-            n.d(t, { Ff: () => I, KU: () => T, O7: () => Z, QX: () => M, Sc: () => B, Ve: () => k, Vn: () => D, WE: () => L, WF: () => b, c6: () => x, ci: () => C, eE: () => _, iT: () => S, ii: () => F, jB: () => P, k: () => V, mA: () => w, r_: () => v, wq: () => R });
+            n.d(t, { Ff: () => I, KU: () => T, O7: () => R, QX: () => L, Sc: () => w, Ve: () => k, Vn: () => D, WE: () => M, WF: () => b, c6: () => x, ci: () => C, eE: () => _, iT: () => S, ii: () => F, jB: () => P, k: () => V, mA: () => v, r_: () => B, wq: () => Z });
             n(136728);
             var o = n(301503),
                 r = n(111677),
@@ -106,7 +106,7 @@
                     return g(i, r, " ");
                 },
                 T = (e) => (e.mediaFile?.isImage ? u._e.IMAGE : e.mediaFile?.isVideo ? u._e.VIDEO : u._e.GIF),
-                v = (e, t) => {
+                B = (e, t) => {
                     const n = e.getCurrentContent(),
                         r = t.map((e) => ({ mediaCategory: T(e), localMediaId: e.id, mediaId: e.uploadId })),
                         i = n.createEntity(u.DC.MEDIA, u.pc.IMMUTABLE, { mediaItems: r }),
@@ -115,7 +115,7 @@
                         l = o.EditorState.set(e, { currentContent: a });
                     return { newEditorState: g(l, s, " "), entityKey: s };
                 },
-                B = (e, t, n, r) => {
+                w = (e, t, n, r) => {
                     const i = e.getCurrentContent(),
                         s = i.getEntity(t).getData(),
                         { mediaItems: a } = s,
@@ -129,7 +129,7 @@
                     }
                     return e;
                 },
-                w = (e, t, n, r) => {
+                v = (e, t, n, r) => {
                     const i = e.getCurrentContent(),
                         s = i
                             .getEntity(t)
@@ -162,13 +162,13 @@
                         n
                     );
                 },
-                M = (e, t, n) => {
+                L = (e, t, n) => {
                     const r = e.getCurrentContent().mergeEntityData(t, n),
                         i = o.EditorState.push(e, r, "change-block-data"),
                         s = o.SelectionState.createEmpty(m(e).getKey());
                     return o.EditorState.forceSelection(i, s);
                 },
-                L = (e, t, n) => {
+                M = (e, t, n) => {
                     const o = n.map((e) => t[e.mediaId]).map((t) => e.find((e) => e.id === t) ?? null);
                     return o.some((e) => !e) ? n.map((t) => e.find((e) => e.id === t.localMediaId) ?? null) : o;
                 },
@@ -178,13 +178,13 @@
                         i = o.EditorState.set(e, { currentContent: n });
                     return g(i, r, " ");
                 },
-                Z = (e) => {
+                R = (e) => {
                     const t = e.getCurrentContent().createEntity(u.DC.DIVIDER, u.pc.IMMUTABLE),
                         n = t.getLastCreatedEntityKey(),
                         r = o.EditorState.set(e, { currentContent: t });
                     return g(r, n, " ");
                 },
-                R = (e, t) => {
+                Z = (e, t) => {
                     const n = e.getCurrentContent().createEntity(u.DC.LATEX, u.pc.IMMUTABLE),
                         r = n.getLastCreatedEntityKey(),
                         i = o.EditorState.set(e, { currentContent: n });
@@ -201,25 +201,25 @@
                         h = o.Modifier.applyEntity(c, d, a);
                     return o.EditorState.set(e, { currentContent: h });
                 },
-                z = i().add55c98,
-                O = i().i0db46e6,
-                A = i().fa4e68ca,
-                K = i().c80940f4,
+                O = i().add55c98,
+                A = i().i0db46e6,
+                K = i().fa4e68ca,
+                z = i().c80940f4,
                 W = i().i89195ea,
                 H = i().cfeb3f86,
                 U = i().ad9e175c,
                 V = [
-                    { id: p.Q.Media, text: z, Icon: s.default },
-                    { id: p.Q.GIFs, text: O, Icon: a.default },
-                    { id: p.Q.Posts, text: A, Icon: l.default },
-                    { id: p.Q.Markdown, text: K, Icon: c.default },
+                    { id: p.Q.Media, text: O, Icon: s.default },
+                    { id: p.Q.GIFs, text: A, Icon: a.default },
+                    { id: p.Q.Posts, text: K, Icon: l.default },
+                    { id: p.Q.Markdown, text: z, Icon: c.default },
                     { id: p.Q.Divider, text: W, Icon: d.default },
                     { id: p.Q.Code, text: H, Icon: c.default },
                     { id: p.Q.LaTeX, text: U, Icon: h.default },
                 ];
         },
         297256: (e, t, n) => {
-            n.d(t, { b: () => $ });
+            n.d(t, { b: () => j });
             var o = n(807896),
                 r = (n(136728), n(202784)),
                 i = n(301503),
@@ -284,30 +284,30 @@
                     return r.createElement(k.Z, { onClose: t, primaryButtonConfig: { label: e || E, forceDisabled: !this._isSaveEnabled(), onClick: this._handleSave }, title: n, withKeyboardNavigation: !0 }, this._render());
                 }
             }
-            var v = n(371344),
-                B = n(40610),
-                w = n(530732),
+            var B = n(371344),
+                w = n(40610),
+                v = n(530732),
                 I = n(215337),
                 F = n(135904),
-                M = n(989272),
-                L = n(855125),
+                L = n(989272),
+                M = n(855125),
                 P = n(202253),
-                Z = n(392237),
-                R = n(779802);
-            const D = Z.default.create((e) => ({ separator: { borderEndWidth: e.borderWidths.small, borderColor: e.colors.gray200, marginVertical: e.spaces.space8 } })),
-                z = ({ style: e }) => r.createElement(s.Z, { style: [D.separator, e] }),
-                O = l().a6a3d496,
-                A = l().acce6978,
-                K = l().f5e8f526,
+                R = n(392237),
+                Z = n(779802);
+            const D = R.default.create((e) => ({ separator: { borderEndWidth: e.borderWidths.small, borderColor: e.colors.gray200, marginVertical: e.spaces.space8 } })),
+                O = ({ style: e }) => r.createElement(s.Z, { style: [D.separator, e] }),
+                A = l().a6a3d496,
+                K = l().acce6978,
+                z = l().f5e8f526,
                 W = l().h517e8d8,
                 H = l().a30ae58e,
                 U = l().da38c958,
                 V = l().fee0a8bc,
                 G = l().d5d57678,
-                j = l().ec822028,
-                N = l().ebc5d2cc,
-                Q = { [R.P7.bulleted]: ["-", "*", "+"], [R.P7.numbered]: ["1.", "1)", "1]"], [R.P7.blockquote]: [">", ">>"], [R.P7.header1]: ["#"], [R.P7.header2]: ["##"] };
-            class $ extends r.Component {
+                N = l().ec822028,
+                Q = l().ebc5d2cc,
+                $ = { [Z.P7.bulleted]: ["-", "*", "+"], [Z.P7.numbered]: ["1.", "1)", "1]"], [Z.P7.blockquote]: [">", ">>"], [Z.P7.header1]: ["#"], [Z.P7.header2]: ["##"] };
+            class j extends r.Component {
                 constructor(e) {
                     super(e),
                         (this.isPopoverShown = !1),
@@ -325,7 +325,7 @@
                                 n = i.KeyBindingUtil.hasCommandModifier(e),
                                 o = e.shiftKey && n,
                                 r = e.key.toLowerCase();
-                            return "k" === r && n ? R.Qm.toLowerCase() : "x" === r && o ? R.fR.strikethrough.toLowerCase() : "7" === r && o ? R.P7.numbered : "8" === r && o ? R.P7.bulleted : "9" === r && o ? R.P7.blockquote : "." === r && o ? R.u4 : "," === r && o ? R.db : t?.(e);
+                            return "k" === r && n ? Z.Qm.toLowerCase() : "x" === r && o ? Z.fR.strikethrough.toLowerCase() : "7" === r && o ? Z.P7.numbered : "8" === r && o ? Z.P7.bulleted : "9" === r && o ? Z.P7.blockquote : "." === r && o ? Z.u4 : "," === r && o ? Z.db : t?.(e);
                         }),
                         (this._isEditorFocused = () => {
                             const {
@@ -339,7 +339,7 @@
                                 } = this.props,
                                 t = e?.getCurrentContent(),
                                 n = t?.getBlockMap().first().getType(),
-                                o = n === R.P7.bulleted || n === R.P7.numbered || n === R.P7.blockquote;
+                                o = n === Z.P7.bulleted || n === Z.P7.numbered || n === Z.P7.blockquote;
                             return !this._isEditorFocused() && !o;
                         }),
                         (this._getBackspaceAndDeleteCommandHandlers = () => {
@@ -353,7 +353,7 @@
                                         return o ? () => e(o) : void 0;
                                     },
                                     o = (e, t) => (t ? Object.fromEntries(e.map((e) => [e, t])) : {});
-                                return { ...o(R.wX, n(i.RichUtils.onBackspace)), ...o(R.Ak, n(i.RichUtils.onDelete)) };
+                                return { ...o(Z.wX, n(i.RichUtils.onBackspace)), ...o(Z.Ak, n(i.RichUtils.onDelete)) };
                             }
                             return {};
                         }),
@@ -406,7 +406,7 @@
                                     textSizesOverride: t,
                                 } = this.props,
                                 n = e ? i.RichUtils.getCurrentBlockType(e) : void 0;
-                            return (t || R.iH).find((e) => e.blockType === n) || R.Tr;
+                            return (t || Z.iH).find((e) => e.blockType === n) || Z.Tr;
                         }),
                         (this._toggleTextStyle = (e) => {
                             const {
@@ -424,7 +424,7 @@
                         }),
                         (this._handleIncreaseTextSize = () => {
                             const { textSizesOverride: e } = this.props,
-                                t = e || R.iH,
+                                t = e || Z.iH,
                                 n = this._getSelectedTextSize(),
                                 o = t.indexOf(n);
                             if (0 !== o) {
@@ -434,7 +434,7 @@
                         }),
                         (this._handleDecreaseTextSize = () => {
                             const { textSizesOverride: e } = this.props,
-                                t = e || R.iH,
+                                t = e || Z.iH,
                                 n = this._getSelectedTextSize(),
                                 o = t.indexOf(n);
                             if (o !== t.length - 1) {
@@ -463,7 +463,7 @@
                                         c = this._getEditorStateWithTextSelection(a, s.getStartOffset(), l.getEndOffset()),
                                         d = c
                                             .getCurrentContent()
-                                            .createEntity(R.Qm, "MUTABLE", { url: this._getUrlWithProtocol(n) })
+                                            .createEntity(Z.Qm, "MUTABLE", { url: this._getUrlWithProtocol(n) })
                                             .getLastCreatedEntityKey();
                                     r(i.EditorState.forceSelection(i.RichUtils.toggleLink(c, c.getSelection(), d), l));
                                 }
@@ -499,8 +499,8 @@
                                     r = o.getCurrentContent(),
                                     s = t.getStartKey(),
                                     a = s === t.getEndKey() ? r.getBlockForKey(s) : void 0;
-                                if (a?.getType() === R.P7.blockquote && 0 === a?.getLength()) {
-                                    return n(i.RichUtils.toggleBlockType(o, R.P7.blockquote)), "handled";
+                                if (a?.getType() === Z.P7.blockquote && 0 === a?.getLength()) {
+                                    return n(i.RichUtils.toggleBlockType(o, Z.P7.blockquote)), "handled";
                                 }
                             }
                             return t?.(e) || "not-handled";
@@ -519,7 +519,7 @@
                             return i.EditorState.push(e, r, "change-block-data");
                         }),
                         (this._removeInvalidStylesFromContentBlock = (e) => {
-                            const t = [...(0, u.Z)(R.fR), ...(0, u.Z)(R.P7)],
+                            const t = [...(0, u.Z)(Z.fR), ...(0, u.Z)(Z.P7)],
                                 n = e.getCharacterList().map((e) =>
                                     e
                                         .getStyle()
@@ -529,7 +529,7 @@
                             return (t?.includes(e.getType()) ? e : e.set("type", "unstyled")).set("characterList", n);
                         }),
                         (this._getUrlWithProtocol = (e) => (e.startsWith("http://") || e.startsWith("https://") ? e : `https://${e}`)),
-                        (this._getSourceInputErrorText = (e) => (e ? ((0, g.Z)(e, !1, !1) ? void 0 : N) : j)),
+                        (this._getSourceInputErrorText = (e) => (e ? ((0, g.Z)(e, !1, !1) ? void 0 : Q) : N)),
                         (this._renderToolbarButtonGroup = (e, t) => {
                             const {
                                     richTextInputContext: { editorState: n },
@@ -539,12 +539,12 @@
                             return r.createElement(
                                 s.Z,
                                 { style: q.buttonGroup },
-                                t ? null : r.createElement(z, { style: q.separatorMargin }),
+                                t ? null : r.createElement(O, { style: q.separatorMargin }),
                                 e.map((e, t) => {
                                     const { Icon: n, buttonTestId: i, key: s, renderActionMenu: c, ...d } = e,
                                         h = this._isEditorFocused() && a?.contains(s),
                                         u = this._isEditorFocused() && s === l,
-                                        p = s === R.Qm && this.isPopoverShown,
+                                        p = s === Z.Qm && this.isPopoverShown,
                                         g = h || u || p,
                                         m = r.createElement(n, { style: g ? void 0 : q.iconGray });
                                     return r.createElement(r.Fragment, { key: s }, r.createElement(y.ZP, (0, o.Z)({ icon: m, key: s, preventFocusShift: this._isEditorFocused(), size: "small", testID: i, type: g ? "brandText" : "primaryText" }, d)), c && c());
@@ -553,7 +553,7 @@
                         }),
                         (this._renderTextSizeMenu = () => {
                             const { textSizesOverride: e } = this.props,
-                                t = e || R.iH,
+                                t = e || Z.iH,
                                 n = this._getSelectedTextSize(),
                                 o = t.map((e) => ({ isSelected: n === e, onClick: () => this._handleChangeTextSize(e), selectable: !0, text: e.component }));
                             return r.createElement(m.Z, { items: o, onCloseRequested: this._handleHideTextSizeMenu, preventFocusShift: this._isEditorFocused(), shouldCloseOnClick: !0 });
@@ -564,7 +564,7 @@
                                 s.Z,
                                 { style: q.linkPopoverContent },
                                 r.createElement(f.ZP, { numberOfLines: 2, style: q.bottomMargin, weight: "bold" }, e),
-                                r.createElement(L.Z, { link: o, style: q.bottomMargin }, t),
+                                r.createElement(M.Z, { link: o, style: q.bottomMargin }, t),
                                 r.createElement(
                                     s.Z,
                                     { style: q.linkPopoverButtons },
@@ -576,7 +576,7 @@
                                             },
                                             type: "primaryFilled",
                                         },
-                                        K,
+                                        z,
                                     ),
                                     r.createElement(
                                         y.ZP,
@@ -598,7 +598,7 @@
                             if (e) {
                                 const { editorStateWithLinkSelected: t, entityUrl: n } = this._getEditorStateWithLinkSelected(e),
                                     o = this._getSelectedText(t);
-                                return r.createElement(T, { buttonLabelOverride: n ? V : G, fields: { source: { label: U, initialValue: n || "", getErrorText: this._getSourceInputErrorText }, ...(void 0 !== o ? { text: { label: H, initialValue: o } } : {}) }, onClose: this._handleToggleLinkSheet, onSave: this._handleAddLink(t, void 0 !== o), sheetTitle: n ? A : O });
+                                return r.createElement(T, { buttonLabelOverride: n ? V : G, fields: { source: { label: U, initialValue: n || "", getErrorText: this._getSourceInputErrorText }, ...(void 0 !== o ? { text: { label: H, initialValue: o } } : {}) }, onClose: this._handleToggleLinkSheet, onSave: this._handleAddLink(t, void 0 !== o), sheetTitle: n ? K : A });
                             }
                         }),
                         (this._handleInTextShortcut = (e) => (t, n, o) => {
@@ -618,7 +618,7 @@
                                 s = r.getText().slice(0, o.getFocusOffset()),
                                 a = this._handleInTextShortcut(t);
                             if ("unstyled" !== i) return "not-handled";
-                            for (const [t, n] of Object.entries(Q)) if (n.includes(s)) return a(t, s, e);
+                            for (const [t, n] of Object.entries($)) if (n.includes(s)) return a(t, s, e);
                             return "not-handled";
                         }),
                         (this._setFieldTextInputRef = (e) => {
@@ -629,7 +629,7 @@
                     e.limitedRichText || (t.push((0, P.U_)(this._renderLinkPopoverContent, this._handleLinkPopoverOpen, this._handleLinkPopoverClose)), t.push((0, P.NA)(p.Z, e.paragraphFontSizeOverride))), t.push(P.aF), t.push(P.RU), (this.decorator = new i.CompositeDecorator(t));
                 }
                 componentDidMount() {
-                    this._setDecorator(), M.fH(F.c, F.n);
+                    this._setDecorator(), L.fH(F.c, F.n);
                 }
                 componentDidUpdate() {
                     const {
@@ -639,29 +639,29 @@
                 }
                 render() {
                     const { additionalToolbarButtonConfigs: e, emojiPickerButton: t, errorText: n, inputStyle: a, isInputFullWidth: l, keyCommandHandlers: c, limitedRichText: d, middleControl: h, onChange: u, paragraphFontSizeOverride: p, placeholder: g, richTextInputContext: m, showError: b, textSizesOverride: x, toolbarRightControl: _, toolbarStyle: k, withAppBar: E, ...T } = this.props,
-                        { showLinkSheet: F, showTextSizeMenu: M } = this.state,
-                        L = (0, R.b$)(this._toggleTextStyle(i.RichUtils.toggleInlineStyle)),
-                        P = (0, R.QF)(this._toggleTextStyle(i.RichUtils.toggleBlockType)),
-                        D = (0, R.lD)(this._toggleTextStyle(i.RichUtils.toggleBlockType)),
-                        O = (0, R.KJ)(this._handleToggleLinkSheet),
-                        A = this._getSelectedTextSize(),
-                        K = { ...m, blockStyleFn: (0, R.su)(!1, m.blockStyleFn), stripPastedStyles: !1 },
-                        W = Object.fromEntries([...L, ...(d ? [] : O), ...D, ...(d ? [] : P)].map((e) => [e.key.toLowerCase(), e.onPress])),
-                        H = { [R.u4]: this._handleIncreaseTextSize, [R.db]: this._handleDecreaseTextSize },
+                        { showLinkSheet: F, showTextSizeMenu: L } = this.state,
+                        M = (0, Z.b$)(this._toggleTextStyle(i.RichUtils.toggleInlineStyle)),
+                        P = (0, Z.QF)(this._toggleTextStyle(i.RichUtils.toggleBlockType)),
+                        D = (0, Z.lD)(this._toggleTextStyle(i.RichUtils.toggleBlockType)),
+                        A = (0, Z.KJ)(this._handleToggleLinkSheet),
+                        K = this._getSelectedTextSize(),
+                        z = { ...m, blockStyleFn: (0, Z.su)(!1, m.blockStyleFn), stripPastedStyles: !1 },
+                        W = Object.fromEntries([...M, ...(d ? [] : A), ...D, ...(d ? [] : P)].map((e) => [e.key.toLowerCase(), e.onPress])),
+                        H = { [Z.u4]: this._handleIncreaseTextSize, [Z.db]: this._handleDecreaseTextSize },
                         U = { ...W, ...(d ? {} : H), ...this._getBackspaceAndDeleteCommandHandlers() },
                         V = c ? { ...U, ...c } : U,
                         G = this._handleOnChange,
-                        j = S.Z.hexToCss(Z.default.theme.colors.navigationBackground, 0),
-                        N = S.Z.hexToCss(Z.default.theme.colors.navigationBackground, 1),
-                        Q = [q.toolbar_container, this.props.withAppBar ? q.toolbar_container_with_app_bar : q.toolbar_container_no_padding];
+                        N = S.Z.hexToCss(R.default.theme.colors.navigationBackground, 0),
+                        Q = S.Z.hexToCss(R.default.theme.colors.navigationBackground, 1),
+                        $ = [q.toolbar_container, this.props.withAppBar ? q.toolbar_container_with_app_bar : q.toolbar_container_no_padding];
                     return r.createElement(
                         r.Fragment,
                         null,
                         r.createElement(
                             s.Z,
-                            { style: Q },
+                            { style: $ },
                             F ? this._renderLinkSheet() : null,
-                            b && n ? r.createElement(B.Z.Danger, { text: n, withIcon: !0 }) : null,
+                            b && n ? r.createElement(w.Z.Danger, { text: n, withIcon: !0 }) : null,
                             r.createElement(
                                 s.Z,
                                 { style: [q.toolbar, k] },
@@ -669,26 +669,26 @@
                                 r.createElement(
                                     s.Z,
                                     { id: "toolbar-styling-buttons", style: q.toolbar_styling_buttons },
-                                    this._renderToolbarButtonGroup(L, !0),
+                                    this._renderToolbarButtonGroup(M, !0),
                                     d
                                         ? null
                                         : r.createElement(
                                               r.Fragment,
                                               null,
-                                              r.createElement(z, { style: q.separatorMargin }),
-                                              r.createElement(w.Z, { interactiveStyles: null, onClick: this._handleShowTextSizeMenu, preventFocusShift: this._isEditorFocused(), style: q.textSizeSelection }, (e) => r.createElement(r.Fragment, null, r.createElement(f.ZP, { color: "gray700", numberOfLines: 1, size: "subtext1" }, A.label), r.createElement(y.ZP, { icon: X, interactivityState: e, size: "small", type: "primaryText" }), M ? this._renderTextSizeMenu() : null)),
+                                              r.createElement(O, { style: q.separatorMargin }),
+                                              r.createElement(v.Z, { interactiveStyles: null, onClick: this._handleShowTextSizeMenu, preventFocusShift: this._isEditorFocused(), style: q.textSizeSelection }, (e) => r.createElement(r.Fragment, null, r.createElement(f.ZP, { color: "gray700", numberOfLines: 1, size: "subtext1" }, K.label), r.createElement(y.ZP, { icon: X, interactivityState: e, size: "small", type: "primaryText" }), L ? this._renderTextSizeMenu() : null)),
                                           ),
                                     d ? null : this._renderToolbarButtonGroup(P),
                                     this._renderToolbarButtonGroup(D),
-                                    d ? null : this._renderToolbarButtonGroup(O),
+                                    d ? null : this._renderToolbarButtonGroup(A),
                                     t ? t() : null,
                                     e ? this._renderToolbarButtonGroup(e) : null,
                                 ),
-                                r.createElement(s.Z, { style: q.toolbar_right_control }, _, r.createElement(I.Z, { angle: 90, angleUnit: "deg", colors: [j, N, N], locations: [0, 0.75, 1], style: q.toolbar_styling_buttons_fadeout_right })),
+                                r.createElement(s.Z, { style: q.toolbar_right_control }, _, r.createElement(I.Z, { angle: 90, angleUnit: "deg", colors: [N, Q, Q], locations: [0, 0.75, 1], style: q.toolbar_styling_buttons_fadeout_right })),
                             ),
-                            r.createElement(I.Z, { angle: 270, angleUnit: "deg", colors: [j, N, N], locations: [0, 0.75, 1], style: q.toolbar_styling_buttons_fadeout_left }),
+                            r.createElement(I.Z, { angle: 270, angleUnit: "deg", colors: [N, Q, Q], locations: [0, 0.75, 1], style: q.toolbar_styling_buttons_fadeout_left }),
                         ),
-                        r.createElement(C.Z, { isFullWidth: l, withWideContainer: !0 }, h, r.createElement(v.Z, (0, o.Z)({ handleBeforeInput: this._handleBeforeInput, handleReturn: this._handleReturn, inputStyle: [q.input, a], keyBindingFn: this._keyBindingFn, keyCommandHandlers: V, onChange: G, placeholder: this._shouldShowPlaceholder() ? g : void 0, ref: this._setFieldTextInputRef, richTextInputContext: K }, T))),
+                        r.createElement(C.Z, { isFullWidth: l, withWideContainer: !0 }, h, r.createElement(B.Z, (0, o.Z)({ handleBeforeInput: this._handleBeforeInput, handleReturn: this._handleReturn, inputStyle: [q.input, a], keyBindingFn: this._keyBindingFn, keyCommandHandlers: V, onChange: G, placeholder: this._shouldShowPlaceholder() ? g : void 0, ref: this._setFieldTextInputRef, richTextInputContext: z }, T))),
                     );
                 }
                 focus() {
@@ -698,8 +698,8 @@
                     return this.fieldTextInput?.getTextInputHeight();
                 }
             }
-            $.defaultProps = { leftAligned: !0, multiline: !0, styleType: "selection" };
-            const q = Z.default.create((e) => {
+            j.defaultProps = { leftAligned: !0, multiline: !0, styleType: "selection" };
+            const q = R.default.create((e) => {
                     const t = e.componentZIndices.appBarZIndex,
                         n = { position: "absolute", width: e.spacesPx.space48, height: "100%", pointerEvents: "none" };
                     return { bottomMargin: { marginBottom: e.spaces.space8 }, buttonGroup: { flexDirection: "row" }, iconGray: { color: e.colors.gray700 }, input: { paddingHorizontal: 0, paddingBottom: 0 }, linkPopoverButtons: { flexDirection: "row", marginTop: e.spaces.space8 }, linkPopoverContent: { marginHorizontal: e.spaces.space24, marginVertical: e.spaces.space24 }, removeLinkButtonMargin: { marginStart: e.spaces.space8 }, separatorMargin: { marginHorizontal: `calc(${e.spaces.space4} + ${e.spaces.space2})` }, textSizeSelection: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", marginStart: e.spaces.space8, marginEnd: e.spaces.space4, width: `calc(${e.spaces.space80} + ${e.spaces.space32})` }, toolbar_container_no_padding: { top: 0 }, toolbar_container_with_app_bar: { top: e.componentDimensions.appBarHeightPx - 0.5 }, toolbar_container: { zIndex: t, position: "sticky", width: "100%", backgroundColor: e.colors.cellBackground, borderBottomWidth: e.borderWidths.small, borderColor: e.colors.borderColor }, toolbar: { flexDirection: "row", justifyContent: "space-between", paddingBottom: e.spaces.space4 }, toolbar_styling_buttons: { flex: 1, flexDirection: "row", paddingStart: e.spaces.space8, paddingEnd: e.spaces.space48, overflowX: "auto", overscrollBehavior: "contain", WebkitOverflowScrolling: "touch", scrollbarWidth: "none", alignItems: "center", paddingVertical: e.spaces.space2 }, toolbar_styling_buttons_fadeout_right: { ...n, start: -1 * n.width }, toolbar_styling_buttons_fadeout_left: { ...n, start: 0, width: e.spacesPx.space16, zIndex: t + 1 }, toolbar_right_control: { flexShrink: 1, flexDirection: "row", alignItems: "center", paddingEnd: e.spaces.space16 } };
@@ -900,7 +900,7 @@
                             if (!c) return "not-handled";
                             if (!o) {
                                 const e = (function (e) {
-                                    return e.replace(B.all_newlines, " ");
+                                    return e.replace(w.all_newlines, " ");
                                 })(c.getPlainText());
                                 c = i.ContentState.createFromText(e);
                             }
@@ -909,7 +909,7 @@
                         (this._myKeyBindingFn = (e) => {
                             const { dismissComposerCommandName: t, keyBindingFn: n, sendTweetCommandName: o } = this.props,
                                 { hasCommandModifier: r } = i.KeyBindingUtil;
-                            return e.keyCode === v.enter && r(e) ? o : e.keyCode === v.esc ? t : n?.(e) || (0, i.getDefaultKeyBinding)(e);
+                            return e.keyCode === B.enter && r(e) ? o : e.keyCode === B.esc ? t : n?.(e) || (0, i.getDefaultKeyBinding)(e);
                         }),
                         (this._onKeyCommand = (e) => {
                             const { keyCommandHandlers: t } = this.props,
@@ -921,7 +921,7 @@
                             return n?.(e, t), "handled";
                         }),
                         (this._getContainerStyle = () => {
-                            const e = w[this.props.appTextSize],
+                            const e = v[this.props.appTextSize],
                                 t = d.default.theme.lineHeightsPx[e];
                             let n = 1,
                                 o = 1;
@@ -948,9 +948,9 @@
             }
             E.defaultProps = { allowExtendedPasteStyles: !1, appTextSize: "body", autoFocus: !1, keyCommandHandlers: {}, maxNumberOfLines: 30, multiline: !0, numberOfLines: 6, onFocus: s.Z, positionCursorAtEnd: !1, spellCheck: "true", stripPastedStyles: !0, withMaxHeight: !0, longformRichTextTransform: !1 };
             const T = (e) => (0, a.Z)("div", e),
-                v = { enter: 13, esc: 27 };
-            const B = { all_newlines: /[\r\n]/g },
-                w = { small: "subtext2", normal: "body", large: "headline1", subtext2: "subtext2", body: "body", headline1: "headline1", title4: "title4" },
+                B = { enter: 13, esc: 27 };
+            const w = { all_newlines: /[\r\n]/g },
+                v = { small: "subtext2", normal: "body", large: "headline1", subtext2: "subtext2", body: "body", headline1: "headline1", title4: "title4" },
                 I = r.forwardRef((e, t) =>
                     r.createElement(
                         E,
@@ -1019,7 +1019,7 @@
             n.d(t, { Z: () => o });
             const o = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        266151: (e, t, n) => {
+        41065: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
             var o = n(202784),
                 r = n(890601),
@@ -1027,37 +1027,11 @@
                 s = n(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M10 5H2V3h8v2zM7 7H2v2h5V7zm12.94 4.946C19.48 15.918 16.1 19 12 19H8.19c-.12.988-.19 1.993-.19 3H6c0-4.669 1.29-9.39 3.95-12.97C12.62 5.421 16.38 2.9 23 3c.17 3.359-.21 7.147-3.06 8.946zM21 5.033c-4.16.276-7.29 2.275-9.45 5.187-1.43 1.929-2.43 4.268-3 6.78H12c2.68 0 4.95-1.76 5.72-4.188-.52.108-1.09.172-1.72.188h-1.5v-2H16c3.9 0 4.95-2.921 5-5.967z" })) }, { writingDirection: t });
-            };
-            a.metadata = { width: 24, height: 24 };
-            const l = a;
-        },
-        988227: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => l });
-            var o = n(202784),
-                r = n(890601),
-                i = n(783427),
-                s = n(347101);
-            const a = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: t });
-            };
-            a.metadata = { width: 24, height: 24 };
-            const l = a;
-        },
-        748138: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => l });
-            var o = n(202784),
-                r = n(890601),
-                i = n(783427),
-                s = n(347101);
-            const a = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const l = a;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.SettingsExtendedProfile~bundle.WorkHistory~ondemand.Verified.c998d52a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.SettingsExtendedProfile~bundle.WorkHistory~ondemand.Verified.9bfcd07a.js.map

@@ -64,9 +64,14 @@
                                     t,
                                     new a.com.x.models.dm.XConversationId.Group(e.replace("g", "")),
                                     s,
-                                    new a.com.x.dms.acceptinvite.AcceptGroupInviteCallbacks(() => {
-                                        o.toInbox();
-                                    }),
+                                    new a.com.x.dms.acceptinvite.AcceptGroupInviteCallbacks(
+                                        () => {
+                                            o.toInbox();
+                                        },
+                                        () => {
+                                            o.toPinScreen("new");
+                                        },
+                                    ),
                                 );
                             return (
                                 i(n),
@@ -214,7 +219,7 @@
                 l = t(332161),
                 o = t(89195),
                 c = t(517922),
-                d = t(556160);
+                d = t(157114);
             const m = a.com.x.models.dm.PostLoadingState,
                 x = a.com.x.dms.chat.DmEvent;
             function u({ post: e, onEvent: s, className: t }) {
@@ -234,16 +239,16 @@
             var j = t(83083),
                 y = t(858108);
             const w = a.com.x.dms.model.MessageItemAttachment,
-                N = a.com.x.dms.chat.DmEvent,
-                b = a.com.x.dms.model.MediaUriState;
+                b = a.com.x.dms.chat.DmEvent,
+                N = a.com.x.dms.model.MediaUriState;
             function C({ attachment: e, isReceived: s, onEvent: t, className: r }) {
                 if (e instanceof w.Post) return (0, n.jsx)(u, { isReceived: s, post: e, onEvent: t, className: r });
                 if (e instanceof w.UrlCard) return (0, n.jsx)(v, { urlCard: e, onEvent: t });
                 if (e instanceof w.Media) {
                     if (e instanceof w.Media.FromServer) {
-                        if ((e.uriState instanceof b.AttachmentNeedsResolving && !(0, y.G)() && t(new N.ResolveAttachment(e.uriState)), e.uriState instanceof b.ResolvedMedia)) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(j.Q, { filename: e.filename, fileSize: e.fileSize, uriToLoad: e.uriState.uri, className: r }) : (0, n.jsx)(i.Et, { src: e.uriState.uri, type: e.type, dimensions: e.dimensions, className: r });
-                        if (e.uriState instanceof b.Resolving) return (0, n.jsx)(i._9, { dimensions: e.dimensions });
-                        if (e.uriState === b.FailedToLoad) return (0, n.jsx)(i.DM, { dimensions: e.dimensions });
+                        if ((e.uriState instanceof N.AttachmentNeedsResolving && !(0, y.G)() && t(new b.ResolveAttachment(e.uriState)), e.uriState instanceof N.ResolvedMedia)) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(j.Q, { filename: e.filename, fileSize: e.fileSize, uriToLoad: e.uriState.uri, className: r }) : (0, n.jsx)(i.Et, { src: e.uriState.uri, type: e.type, dimensions: e.dimensions, className: r });
+                        if (e.uriState instanceof N.Resolving) return (0, n.jsx)(i._9, { dimensions: e.dimensions });
+                        if (e.uriState === N.FailedToLoad) return (0, n.jsx)(i.DM, { dimensions: e.dimensions });
                     }
                     if (e instanceof w.Media.Pending) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(j.Q, { filename: e.filename, fileSize: e.fileSize, className: r }) : (0, n.jsx)(i._9, { dimensions: e.dimensions });
                 }
@@ -261,7 +266,7 @@
                 c = t(509597);
             function d({ filename: e, fileType: s = "Document", fileSize: t, uriToLoad: d, className: m }) {
                 const { t: x } = (0, l.$G)(),
-                    u = (0, n.jsxs)("div", { className: (0, o.cn)("flex items-center gap-3 bg-gray-100 px-6 py-3 transition-colors", d && "cursor-pointer hover:bg-gray-200", m), children: [(0, n.jsx)("div", { className: "flex-shrink-0", children: (0, n.jsx)(r.Z, { className: "text-gray-500 size-5" }) }), (0, n.jsxs)("div", { className: "flex flex-col", children: [(0, n.jsx)(a.x, { weight: "medium", numberOfLines: 1, children: e }), (0, n.jsxs)(i.S, { children: [(0, n.jsx)(a.x, { size: "subtext2", color: "gray700", children: d ? x("Tap to download") : s }), t?.fileSizeMb && (0, n.jsx)(a.x, { size: "subtext2", color: "gray700", children: (0, c.s)(t.fileSizeMb) })] })] })] });
+                    u = (0, n.jsxs)("div", { className: (0, o.cn)("flex items-center gap-3 bg-gray-100 px-6 py-3 transition-colors", d && "cursor-pointer hover:bg-gray-200", m), children: [(0, n.jsx)("div", { className: "flex-shrink-0", children: (0, n.jsx)(r.Z, { className: "text-gray-500 size-5" }) }), (0, n.jsxs)("div", { className: "flex flex-col", children: [(0, n.jsx)(a.x, { weight: "medium", numberOfLines: 1, breakText: "all", children: e }), (0, n.jsxs)(i.S, { children: [(0, n.jsx)(a.x, { size: "subtext2", color: "gray700", children: d ? x("Tap to download") : s }), t?.fileSizeMb && (0, n.jsx)(a.x, { size: "subtext2", color: "gray700", children: (0, c.s)(t.fileSizeMb) })] })] })] });
                 return d ? (0, n.jsx)("a", { href: d, download: e, target: "_blank", rel: "noopener noreferrer", style: { textDecoration: "none" }, children: u }) : u;
             }
         },
@@ -334,4 +339,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-cbcead99.c2f1368a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-cbcead99.ddd89a0a.js.map

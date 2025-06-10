@@ -5440,6 +5440,8 @@
                 t("i8cae552", "Site n'inye ọkwa ị ga-edobe kwọliti dị na Ndetu Ọgbakọ elu."),
                 t("hd43a218", "You’ve reached your daily limit for writing notes"),
                 t("aaba8ed2", "To keep note quality high and prevent spam, there’s a limit to the number of notes contributors can write each day, based on their Writing Impact. Please try again later."),
+                t("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
+                t("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
                 t("b98f077c", "Request a Note Info"),
                 t("ee691104", "Request a Community Note about this post"),
                 t("f8cbdf02", "Think this post is potentially misleading? Request a Community Note."),
@@ -5882,10 +5884,10 @@
                 t("beba2a0e", "Mepụta Foldà Ebenrụtụakā ọhụrụ"),
                 t("e41c9b4f", function (e) {
                     return "Echekwara na " + e.bookmarkFolderName;
-                }),
-                t("h18f86a4", "Hichapụ Foldà"),
-                t("f4ea967a", "Ehichapụla foldà");
-            t("b670aa62", "Aha Foldà"),
+                });
+            t("h18f86a4", "Hichapụ Foldà"),
+                t("f4ea967a", "Ehichapụla foldà"),
+                t("b670aa62", "Aha Foldà"),
                 t("aece5462", "Emelitela aha foldà nke ọma"),
                 t("e3299b94", "Ọ nwere ihe na-agaghị nke ọma. Gbalịa imelite folda ahụ ọzọ n'otu nkeji."),
                 t("c09ea714", "Ọ nwere ihe na-agaghị nke ọma. Gbalịa ihichapụ folda ahụ ọzọ n'otu nkeji."),
@@ -6886,10 +6888,10 @@
                 t("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for."),
                 t("ede7d0a2", "Currency"),
                 t("b925c18c", "Salary Type"),
-                t("j3d242ce", "Invalid range"),
-                t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
-                t("b8cbb51a", "Job Summary");
-            t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                t("j3d242ce", "Invalid range");
+            t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
+                t("b8cbb51a", "Job Summary"),
+                t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 t("b075c68a", "Edit job"),
                 t("d4b6a6e0", "Ihuọha Profaịlụ"),
                 t("j2dd3686", "Highlight featured jobs above my posts."),
@@ -7234,7 +7236,7 @@
                 t("h257d4aa", "Select a post to promote"),
                 t("e9334fe6", "Data updates every few minutes"),
                 t("a6d7b1d0", "Based on X Internal Data"),
-                t("h9b28dae", "You’re saving time with an ad-free feed"),
+                t("h71a00e6", "You’re saving time with ad-free"),
                 t("f6c50ec0", "Your ad-free trial has ended"),
                 t("e1d1fbca", "You’ve avoided"),
                 t("a82d7abd", function (e) {
@@ -7261,6 +7263,9 @@
                 }),
                 t("b93d00e5", function (e) {
                     return e.days + " day" + i(e.days, "", "s");
+                }),
+                t("dc9661b3", function (e) {
+                    return e.seconds + " second" + i(e.seconds, "", "s");
                 }),
                 t("g2c63852", "100% free. No credit card required."),
                 t("be88be23", function (e) {
@@ -7863,12 +7868,7 @@
                 t("b74ff5fc", "Ọ bụrụ na ị kàgbuo, Ndebanye aha gị ga-eji mmereonwe mee nkwụsịoge mgbe akwụmụgwọ gachara."),
                 t("ee9efbc8", "Gaa n'ihu na nkàgbu"),
                 t("c5d9c77a", "Ọ dịka e nwetere obere ihe ọdachi. Esogbula onwe gị n'agbanyeghị, na o sighị gị n'aka. Mechie window ahụ ma nwàa ọzọ."),
-                t("jda53c24", "I nwere ike kagbuo Ndebanye aha gị site n'Ụlọahịa Ngwa Apple."),
-                t("g0a7a53e", "I nwere ike kagbuo Ndebanyeaha gị site n'Ụlọahịa Google Play."),
-                t("i5f14be7", function (e) {
-                    return "Welcome back, " + e.displayName;
-                }),
-                t("a76d58ba", "Ads Analytics");
+                t("jda53c24", "I nwere ike kagbuo Ndebanye aha gị site n'Ụlọahịa Ngwa Apple.");
             function r(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7907,7 +7907,12 @@
                     c(e, a)
                 );
             }
-            t("eccd0e1a", "Organization Analytics"),
+            t("g0a7a53e", "I nwere ike kagbuo Ndebanyeaha gị site n'Ụlọahịa Google Play."),
+                t("i5f14be7", function (e) {
+                    return "Welcome back, " + e.displayName;
+                }),
+                t("a76d58ba", "Ads Analytics"),
+                t("eccd0e1a", "Organization Analytics"),
                 t("deea1708", "Want to view analytics across all your X accounts?"),
                 t("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
                 t("gf67aae4", "Upgrade to Full Access"),
@@ -8903,11 +8908,11 @@
                     return "Visit " + e.advertiserName;
                 }),
                 t("c67e71aa", "Watch now"),
-                t("a6ada13e", "Shop now"),
-                t("j0f12222", "Hụ ọzọ"),
+                t("a6ada13e", "Shop now");
+            t("j0f12222", "Hụ ọzọ"),
                 t("f569f7c8", "Go to website"),
-                t("j0c6772a", "Visit website");
-            t("f73003aa", "Video will play after ad"),
+                t("j0c6772a", "Visit website"),
+                t("f73003aa", "Video will play after ad"),
                 t("b3112b8a", "Gaba"),
                 t("h6333ad0", "Skip Ad"),
                 t("c59da417", function (e) {
@@ -13368,4 +13373,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.35206baa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.0a28162a.js.map

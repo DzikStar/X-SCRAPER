@@ -5441,6 +5441,8 @@
                 t("i8cae552", "By rating you’ll help keep quality in Community Notes high."),
                 t("hd43a218", "You’ve reached your daily limit for writing notes"),
                 t("aaba8ed2", "To keep note quality high and prevent spam, there’s a limit to the number of notes contributors can write each day, based on their Writing Impact. Please try again later."),
+                t("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
+                t("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
                 t("b98f077c", "Request a Note Info"),
                 t("ee691104", "Request a Community Note about this post"),
                 t("f8cbdf02", "Think this post is potentially misleading? Request a Community Note."),
@@ -5883,10 +5885,10 @@
                 t("beba2a0e", "Crear cartafol de marcadores"),
                 t("e41c9b4f", function (e) {
                     return "Gardouse en " + e.bookmarkFolderName;
-                }),
-                t("h18f86a4", "Eliminar cartafol"),
-                t("f4ea967a", "Eliminouse o cartafol");
-            t("b670aa62", "Nome do cartafol"),
+                });
+            t("h18f86a4", "Eliminar cartafol"),
+                t("f4ea967a", "Eliminouse o cartafol"),
+                t("b670aa62", "Nome do cartafol"),
                 t("aece5462", "O nome do cartafol actualizouse correctamente"),
                 t("e3299b94", "Houbo algún problema. Tenta actualizar o cartafol de novo dentro dun minuto."),
                 t("c09ea714", "Houbo algún problema. Tenta eliminar o cartafol de novo dentro dun minuto."),
@@ -6887,10 +6889,10 @@
                 t("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for."),
                 t("ede7d0a2", "Currency"),
                 t("b925c18c", "Salary Type"),
-                t("j3d242ce", "Invalid range"),
-                t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
-                t("b8cbb51a", "Job Summary");
-            t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                t("j3d242ce", "Invalid range");
+            t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
+                t("b8cbb51a", "Job Summary"),
+                t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 t("b075c68a", "Edit job"),
                 t("d4b6a6e0", "Detalles principais do perfil"),
                 t("j2dd3686", "Highlight featured jobs above my posts."),
@@ -7235,7 +7237,7 @@
                 t("h257d4aa", "Select a post to promote"),
                 t("e9334fe6", "Data updates every few minutes"),
                 t("a6d7b1d0", "Based on X Internal Data"),
-                t("h9b28dae", "You’re saving time with an ad-free feed"),
+                t("h71a00e6", "You’re saving time with ad-free"),
                 t("f6c50ec0", "Your ad-free trial has ended"),
                 t("e1d1fbca", "You’ve avoided"),
                 t("a82d7abd", function (e) {
@@ -7262,6 +7264,9 @@
                 }),
                 t("b93d00e5", function (e) {
                     return e.days + " day" + i(e.days, "", "s");
+                }),
+                t("dc9661b3", function (e) {
+                    return e.seconds + " second" + i(e.seconds, "", "s");
                 }),
                 t("g2c63852", "100% free. No credit card required."),
                 t("be88be23", function (e) {
@@ -7864,12 +7869,7 @@
                 t("b74ff5fc", "If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
                 t("ee9efbc8", "Continuar coa cancelación"),
                 t("c5d9c77a", "Semella que houbo algún problemiña. Non te preocupes, non foi culta túa. Pecha esta ventá e téntao de novo."),
-                t("jda53c24", "You can cancel your Subscription through the Apple App Store."),
-                t("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
-                t("i5f14be7", function (e) {
-                    return "Welcome back, " + e.displayName;
-                }),
-                t("a76d58ba", "Ads Analytics");
+                t("jda53c24", "You can cancel your Subscription through the Apple App Store.");
             function r(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var t = a[o];
@@ -7908,7 +7908,12 @@
                     s(e, a)
                 );
             }
-            t("eccd0e1a", "Organization Analytics"),
+            t("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
+                t("i5f14be7", function (e) {
+                    return "Welcome back, " + e.displayName;
+                }),
+                t("a76d58ba", "Ads Analytics"),
+                t("eccd0e1a", "Organization Analytics"),
                 t("deea1708", "Want to view analytics across all your X accounts?"),
                 t("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
                 t("gf67aae4", "Upgrade to Full Access"),
@@ -8904,11 +8909,11 @@
                     return "Visitar " + e.advertiserName;
                 }),
                 t("c67e71aa", "Ver agora"),
-                t("a6ada13e", "Mercar agora"),
-                t("j0f12222", "Ver máis"),
+                t("a6ada13e", "Mercar agora");
+            t("j0f12222", "Ver máis"),
                 t("f569f7c8", "Ir ao sitio web"),
-                t("j0c6772a", "Visitar sitio web");
-            t("f73003aa", "O vídeo reproducirase despois do anuncio"),
+                t("j0c6772a", "Visitar sitio web"),
+                t("f73003aa", "O vídeo reproducirase despois do anuncio"),
                 t("b3112b8a", "Omitir"),
                 t("h6333ad0", "Omitir anuncio"),
                 t("c59da417", function (e) {
@@ -13357,4 +13362,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.77d5adda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.32b5ab4a.js.map

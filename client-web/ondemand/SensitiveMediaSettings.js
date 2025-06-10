@@ -74,8 +74,8 @@
                 E,
                 S,
                 Z = n(277660),
-                M = n.n(Z),
-                x = n(101890),
+                x = n.n(Z),
+                M = n(101890),
                 I = {
                     fragment: {
                         argumentDefinitions: [(k = { defaultValue: null, kind: "LocalArgument", name: "userId" }), (C = { defaultValue: null, kind: "LocalArgument", name: "view_adult_content" }), (w = { defaultValue: null, kind: "LocalArgument", name: "view_other_content" }), (E = { defaultValue: null, kind: "LocalArgument", name: "view_violent_content" })],
@@ -134,15 +134,15 @@
             };
             const D = F;
             var z = n(351743),
-                V = n.n(z),
-                K = n(71620);
+                K = n.n(z),
+                V = n(71620);
             const P = D,
                 T = R,
-                H = (e, t) => {
-                    const { sensitive_media_settings: n } = M()(P, e),
-                        [i, r] = V()(T),
+                j = (e, t) => {
+                    const { sensitive_media_settings: n } = x()(P, e),
+                        [i, r] = K()(T),
                         s = (0, g.z)(),
-                        o = (0, K.po)();
+                        o = (0, V.po)();
                     return [
                         a.useCallback(
                             (e, a) => {
@@ -169,13 +169,13 @@
                         r,
                     ];
                 },
-                j = u().aa4342be,
-                A = u().jfec3aa0,
+                A = u().aa4342be,
+                H = u().jfec3aa0,
                 B = u().c365dcc6,
                 G = u().j6bacd6a,
-                W = u().a73e66a8,
-                $ = u().fef1b8dc,
-                L = u().d0a5a1c0,
+                L = u().a73e66a8,
+                W = u().fef1b8dc,
+                $ = u().d0a5a1c0,
                 O = u().ga197e26,
                 U = u().eb723386,
                 N = u().ea31c622,
@@ -183,26 +183,26 @@
                 J = a.createElement(u().I18NFormatMessage, { $i18n: "cbc4f32d" }, a.createElement(s.ZP, { link: (0, o.ju)("https://help.x.com/rules-and-policies/media-settings") }, u().h7e0672b)),
                 Q = y,
                 X = (e) => [
-                    { value: "Warn", label: L, helpText: e },
+                    { value: "Warn", label: $, helpText: e },
                     { value: "Allow", label: O },
                     { value: "Drop", label: U },
                 ],
                 Y = [
-                    { title: j, description: N, options: X(G), key: "view_violent_content" },
-                    { title: A, description: q, options: X(W), key: "view_adult_content" },
-                    { title: B, description: J, options: X($), key: "view_other_content" },
+                    { title: A, description: N, options: X(G), key: "view_violent_content" },
+                    { title: H, description: q, options: X(L), key: "view_adult_content" },
+                    { title: B, description: J, options: X(W), key: "view_other_content" },
                 ],
                 ee = ({ userId: e, userSensitiveMediaSettingsInfo: t }) => {
-                    const n = M()(Q, t),
+                    const n = x()(Q, t),
                         { can_user_allow_sensitive_content: i, sensitive_media_settings: l } = n,
-                        [r] = H(n, e);
+                        [r] = j(n, e);
                     return a.createElement(
                         a.Fragment,
                         null,
                         Y.map((e) => {
                             const { description: t, key: n, options: s, title: o } = e,
                                 c = l[n];
-                            return "view_adult_content" === n && !i ? null : a.createElement(x.Z, { description: t, key: n, label: o, name: n, onChange: r, options: s, value: c });
+                            return "view_adult_content" === n && !i ? null : a.createElement(M.Z, { description: t, key: n, label: o, name: n, onChange: r, options: s, value: c });
                         }),
                     );
                 };
@@ -416,7 +416,7 @@
             const s = (e) => a.createElement(i.Z, { style: o.root }, a.createElement(l.Z, e)),
                 o = r.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical } }));
         },
-        748138: (e, t, n) => {
+        41065: (e, t, n) => {
             n.r(t), n.d(t, { default: () => o });
             var a = n(202784),
                 i = n(890601),
@@ -424,11 +424,11 @@
                 r = n(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, l.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SensitiveMediaSettings.729ca47a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SensitiveMediaSettings.ab05b32a.js.map

@@ -2,19 +2,143 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~bundle.TwitterArticles~bundle.ComposeMedia-a2dee9c7"],
     {
+        625661: (e, t, a) => {
+            a.d(t, { ZP: () => m });
+            var i = a(202784),
+                n = a(614983),
+                r = a.n(n),
+                s = a(325686),
+                o = a(370006),
+                l = a(786998),
+                d = a(929028),
+                c = a(386802);
+            function h(e, t, a) {
+                return e || (!t && a ? "fixed" : void 0);
+            }
+            class m extends i.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this._handleBackClick = () => {
+                            const { history: e, onBackClick: t } = this.props;
+                            r()(t || e, "Either onBackClick must be specified, or history should be supplied"), t ? t(this.goBack) : this.goBack();
+                        }),
+                        (this.goBack = () => {
+                            const { backLocation: e, history: t } = this.props;
+                            t && t.goBack({ backLocation: e });
+                        });
+                }
+                _renderContent() {
+                    const { backButtonType: e, centerTitle: t, centeredLogo: a, fixed: n, hideBackButton: r, isFullWidth: s, isLarge: d, leftControl: c, middleControl: m, position: u, rightControl: p, secondaryBar: g, style: b, subtitle: _, title: f, titleDomId: C, titleIconCell: M, titleIconCellSize: y, withBackground: E, withWideContainer: T } = this.props,
+                        { isModal: v } = this.context,
+                        I = r ? c : i.createElement(o.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        w = (function (e, t, a) {
+                            return e && !(t && a);
+                        })(!!E, v, !!g);
+                    return i.createElement(i.Fragment, null, i.createElement(l.Z, { centerTitle: t, centeredLogo: a, isFullWidth: s, isLarge: d, leftControl: I, middleControl: m, position: h(u, v, n), rightControl: p, style: b, subtitle: _, title: f, titleDomId: C, titleIconCell: M, titleIconCellSize: y, withBackground: w, withWideContainer: T }), g || null);
+                }
+                render() {
+                    const { secondaryBar: e } = this.props,
+                        { isModal: t } = this.context,
+                        a = d.Z.getBackgroundStyles();
+                    return t ? i.createElement(s.Z, { style: !!e && a }, this._renderContent()) : this._renderContent();
+                }
+            }
+            (m.contextType = c.Z), (m.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
+        },
+        873637: (e, t, a) => {
+            a.d(t, { Z: () => b });
+            var i = a(807896),
+                n = a(202784),
+                r = a(325686),
+                s = a(167630),
+                o = a(548485),
+                l = a(392237),
+                d = a(111677),
+                c = a.n(d),
+                h = a(205074),
+                m = a(653843);
+            const u = c().gff1f69e;
+            class p extends n.Component {
+                constructor(e) {
+                    super(e), (this.state = { orientedImage: null });
+                }
+                componentDidMount() {
+                    const { media: e } = this.props,
+                        { originalMediaFile: t = {} } = e || {};
+                    t &&
+                        t instanceof h.ZP &&
+                        (0, m.ZP)(t).then((e) =>
+                            new h.ZP(e).withDimensionsAndOrientation().then((e) => {
+                                this.setState({ orientedImage: e });
+                            }),
+                        );
+                }
+                render() {
+                    return this.state.orientedImage ? this._renderCropper() : n.createElement(s.Z, { "aria-label": u, style: g.activityIndicator });
+                }
+                _renderCropper() {
+                    const { cropperRef: e, defaultAspectRatio: t, defaultCropData: a, media: i, withAspectRatioOptions: s, withZoomControl: l } = this.props,
+                        { orientedImage: d } = this.state,
+                        { cropData: c, originalMediaFile: h = {} } = i || {};
+                    return d ? n.createElement(r.Z, { style: g.cropper }, n.createElement(o.Z, { circle: this.props.circle, defaultAspectRatio: (a && a.aspectRatio) || (c && c.aspectRatio) || t, defaultCropData: a || c, image: { src: d.url, width: h.width, height: h.height }, ref: e, withAspectRatioOptions: s, withZoomControl: l })) : null;
+                }
+            }
+            const g = l.default.create((e) => ({ cropper: { backgroundColor: e.colors.navigationBackground, flexGrow: 1 }, activityIndicator: { flexGrow: 1 } })),
+                b = n.forwardRef((e, t) => n.createElement(p, (0, i.Z)({}, e, { cropperRef: t })));
+        },
         507651: (e, t, a) => {
             a.d(t, { Z: () => d });
             var i = a(807896),
                 n = a(202784),
                 r = a(107267),
                 s = a(403556),
-                l = a(791632);
-            const o = (e) => {
+                o = a(791632);
+            const l = (e) => {
                     const t = (0, r.useHistory)(),
-                        { isCompact: a, ...o } = e;
-                    return n.createElement(s.Z, (0, i.Z)({}, o, { isCompact: a || (0, l.HD)(t) }));
+                        { isCompact: a, ...l } = e;
+                    return n.createElement(s.Z, (0, i.Z)({}, l, { isCompact: a || (0, o.HD)(t) }));
                 },
-                d = n.memo(o);
+                d = n.memo(l);
+        },
+        652904: (e, t, a) => {
+            a.d(t, { Z: () => c });
+            var i = a(202784),
+                n = a(500002),
+                r = a(668214),
+                s = a(997174),
+                o = a(118823);
+            const l = (0, r.Z)()
+                .propsFromActions(() => ({ updateLocation: o.YF, updateTweetDetailNav: s.NH }))
+                .withAnalytics();
+            class d extends i.Component {
+                componentDidMount() {
+                    this._performPageUpdates(this.props);
+                }
+                componentDidUpdate(e) {
+                    const {
+                            history: { location: t },
+                            location: { pathname: a, search: i },
+                            locationKey: n,
+                        } = this.props,
+                        {
+                            location: { pathname: r, search: s },
+                            locationKey: o,
+                        } = e;
+                    let l = !1;
+                    t.pathname !== a ? (this._isInBackground = !0) : this._isInBackground && t.pathname === a && ((this._isInBackground = !1), (l = !0));
+                    const d = n || o;
+                    ((d && n !== o) || (!d && a !== r) || i !== s || l) && this._performPageUpdates(this.props);
+                }
+                render() {
+                    return this.props.children;
+                }
+                _performPageUpdates(e) {
+                    const { analytics: t, updateLocation: a, updateTweetDetailNav: i } = e;
+                    t.scribePageImpression(), a(t.contextualScribeNamespace, t.contextualScribeData), i(t.contextualScribeNamespace);
+                }
+            }
+            d.defaultProps = { children: null };
+            const c = (0, n.ZP)(l(d));
         },
         536210: (e, t, a) => {
             a.d(t, { Z: () => wt });
@@ -22,8 +146,8 @@
                 n = a(202784),
                 r = a(443781),
                 s = (a(136728), a(325686)),
-                l = a(154003),
-                o = a(731708),
+                o = a(154003),
+                l = a(731708),
                 d = a(111677),
                 c = a.n(d),
                 h = a(894966),
@@ -33,37 +157,37 @@
                 g = a(205074),
                 b = a(653843),
                 _ = a(912021),
-                M = a(193089),
-                f = a(908478),
-                T = a(980407),
-                E = a(873637),
-                C = a(507651),
-                y = a(293115),
+                f = a(193089),
+                C = a(908478),
+                M = a(980407),
+                y = a(873637),
+                E = a(507651),
+                T = a(293115),
                 v = a(529356),
                 I = a(392237),
                 w = a(175856);
-            const S = "altTextInput",
-                x = "endEditingButton",
-                A = "altTextEducationSheetPrimaryAction";
-            var k = a(855488),
+            const x = "altTextInput",
+                S = "endEditingButton",
+                k = "altTextEducationSheetPrimaryAction";
+            var A = a(855488),
                 D = a(992942),
-                P = a(167630),
-                Z = a(304059);
+                Z = a(167630),
+                P = a(304059);
             const F = c().gff1f69e;
-            const L = I.default.create((e) => ({ activityIndicator: { height: "100%", width: "100%" }, image: { width: "100%", flexGrow: 1 }, mediaContainer: { overflow: "hidden", flexGrow: 1, flexBasis: 0, width: "100%" }, mediaPreviewWrapper: { flexDirection: "column", flexGrow: 1, alignItems: "center", width: "100%", paddingVertical: 25, paddingHorizontal: 25, backgroundColor: e.colors.gray0 } })),
-                B = function ({ mediaItem: e, orientedImage: t }) {
-                    return n.createElement(s.Z, { style: L.mediaPreviewWrapper }, void 0 === t && e ? n.createElement(Z.Z, { imageResizeMode: "contain", mediaItem: e, style: L.mediaContainer, withCloseButton: !1 }) : t ? n.createElement(D.Z, { resizeMode: "contain", source: t.url, style: L.image }) : n.createElement(P.Z, { "aria-label": F, style: L.activityIndicator }));
+            const B = I.default.create((e) => ({ activityIndicator: { height: "100%", width: "100%" }, image: { width: "100%", flexGrow: 1 }, mediaContainer: { overflow: "hidden", flexGrow: 1, flexBasis: 0, width: "100%" }, mediaPreviewWrapper: { flexDirection: "column", flexGrow: 1, alignItems: "center", width: "100%", paddingVertical: 25, paddingHorizontal: 25, backgroundColor: e.colors.gray0 } })),
+                L = function ({ mediaItem: e, orientedImage: t }) {
+                    return n.createElement(s.Z, { style: B.mediaPreviewWrapper }, void 0 === t && e ? n.createElement(P.Z, { imageResizeMode: "contain", mediaItem: e, style: B.mediaContainer, withCloseButton: !1 }) : t ? n.createElement(D.Z, { resizeMode: "contain", source: t.url, style: B.image }) : n.createElement(Z.Z, { "aria-label": F, style: B.activityIndicator }));
                 },
-                W = I.default.create((e) => ({ formTextInput: { width: "100%", backgroundColor: e.colors.navigationBackground, paddingHorizontal: e.spaces.space12, paddingBottom: 0, borderTopWidth: e.spaces.space1, borderTopStyle: "solid", borderTopColor: e.colors.borderColor }, attachmentContainer: { width: "100%", height: "100%", flexGrow: 1 }, root: { display: "flex", flexDirection: "column", flexWrap: "nowrap", height: "100%", flexGrow: 1 } })),
-                R = c().feabf2a0,
+                R = I.default.create((e) => ({ formTextInput: { width: "100%", backgroundColor: e.colors.navigationBackground, paddingHorizontal: e.spaces.space12, paddingBottom: 0, borderTopWidth: e.spaces.space1, borderTopStyle: "solid", borderTopColor: e.colors.borderColor }, attachmentContainer: { width: "100%", height: "100%", flexGrow: 1 }, root: { display: "flex", flexDirection: "column", flexWrap: "nowrap", height: "100%", flexGrow: 1 } })),
+                W = c().feabf2a0,
                 V = c().e36287c6,
                 O = c().cf565d08;
-            class z extends n.Component {
+            class N extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderInputHelperText = () => {
                             const { onShowEducation: e } = this.props;
-                            return e ? n.createElement(o.ZP, { color: "link", onPress: e, withInteractiveStyling: !0 }, O) : null;
+                            return e ? n.createElement(l.ZP, { color: "link", onPress: e, withInteractiveStyling: !0 }, O) : null;
                         }),
                         (this._handleChange = (e) => {
                             const { currentMediaId: t, mediaItem: a, onChange: i } = this.props,
@@ -73,17 +197,17 @@
                 }
                 render() {
                     const { autofocus: e, maxLength: t, mediaItem: a, orientedImage: i, value: r } = this.props;
-                    return n.createElement(s.Z, { style: W.root }, n.createElement(s.Z, { style: W.attachmentContainer }, n.createElement(B, { mediaItem: a, orientedImage: i }), n.createElement(k.Z, { "aria-label": R, autoFocus: e, helperText: this._renderInputHelperText(), label: V, maxLength: t, maxNumberOfLines: 6, multiline: !0, name: "altTextInput", numberOfLines: 2, onChange: this._handleChange, style: W.formTextInput, testID: S, value: r })));
+                    return n.createElement(s.Z, { style: R.root }, n.createElement(s.Z, { style: R.attachmentContainer }, n.createElement(L, { mediaItem: a, orientedImage: i }), n.createElement(A.Z, { "aria-label": W, autoFocus: e, helperText: this._renderInputHelperText(), label: V, maxLength: t, maxNumberOfLines: 6, multiline: !0, name: "altTextInput", numberOfLines: 2, onChange: this._handleChange, style: R.formTextInput, testID: x, value: r })));
                 }
             }
             var U = a(668214);
-            const N = (e, t) => (0, w.t5)(e, w.Fs),
+            const z = (e, t) => (0, w.t5)(e, w.Fs),
                 G = (0, U.Z)()
-                    .propsFromState(() => ({ showEducationOnMount: N }))
+                    .propsFromState(() => ({ showEducationOnMount: z }))
                     .propsFromActions(() => ({ addFlag: w.pj }))
                     .withAnalytics(),
-                H = c().ffe9ec3a,
-                K = c().j063b262,
+                K = c().ffe9ec3a,
+                H = c().j063b262,
                 Q = c().e57144f0,
                 j = c().f9f9210c;
             class q extends n.Component {
@@ -113,8 +237,8 @@
                 render() {
                     const { mediaItem: e, onAltTextChange: t, orientedImage: a, value: i } = this.props,
                         { showAltTextEducationSheet: r } = this.state,
-                        l = e && e.id.toString();
-                    return n.createElement(s.Z, { style: X.root }, r ? n.createElement(v.Z, { actionLabel: Q, headline: H, onAction: this._handleEducationPromptPrimaryAction, onClose: this._handleCloseEducationPrompt, onSecondaryAction: this._handleEducationPromptSecondaryAction, primaryButtonTestID: A, secondaryActionLabel: j, subtext: K }) : null, n.createElement(z, { autofocus: !0, currentMediaId: l, maxLength: 1e3, mediaItem: e, onChange: t, onShowEducation: this._handleOpenEducationPrompt, orientedImage: a, value: i }));
+                        o = e && e.id.toString();
+                    return n.createElement(s.Z, { style: X.root }, r ? n.createElement(v.Z, { actionLabel: Q, headline: K, onAction: this._handleEducationPromptPrimaryAction, onClose: this._handleCloseEducationPrompt, onSecondaryAction: this._handleEducationPromptSecondaryAction, primaryButtonTestID: k, secondaryActionLabel: j, subtext: H }) : null, n.createElement(N, { autofocus: !0, currentMediaId: o, maxLength: 1e3, mediaItem: e, onChange: t, onShowEducation: this._handleOpenEducationPrompt, orientedImage: a, value: i }));
                 }
             }
             const X = I.default.create((e) => ({ root: { flexGrow: 1 } })),
@@ -128,20 +252,20 @@
                 ne = c().faf745fa,
                 re = c().b96e6682,
                 se = c().h2437f26,
-                le = c().g5e1668a,
-                oe = c().fdc6a52a;
+                oe = c().g5e1668a,
+                le = c().fdc6a52a;
             function de(e) {
-                const { currentWarnings: t, isAllowedVideoDownload: a, mediaItem: i, onWarningChange: r, orientedImage: l, toggleIsAllowedVideoDownload: o } = e,
+                const { currentWarnings: t, isAllowedVideoDownload: a, mediaItem: i, onWarningChange: r, orientedImage: o, toggleIsAllowedVideoDownload: l } = e,
                     d = [
                         { label: ne, value: "adult_content" },
                         { label: re, value: "graphic_violence" },
                         { label: se, value: "other" },
                     ],
                     c = J.b(),
-                    h = n.createElement(B, { mediaItem: i, orientedImage: l }),
+                    h = n.createElement(L, { mediaItem: i, orientedImage: o }),
                     m = n.useCallback(() => {
-                        o?.();
-                    }, [o]);
+                        l?.();
+                    }, [l]);
                 return n.createElement(
                     s.Z,
                     { style: ce.root },
@@ -156,7 +280,7 @@
                             d.map(({ label: e, value: a }) => n.createElement(ee.Z, { checked: t && t.has(a), key: a, label: e, name: a, onChange: r })),
                         ),
                         n.createElement(s.Z, null),
-                        "boolean" == typeof a && o ? n.createElement(s.Z, { role: "group", style: ce.topBorder }, n.createElement(ee.Z, { checked: a, helpText: oe, label: le, name: "download", onChange: m, type: "switch" })) : null,
+                        "boolean" == typeof a && l ? n.createElement(s.Z, { role: "group", style: ce.topBorder }, n.createElement(ee.Z, { checked: a, helpText: le, label: oe, name: "download", onChange: m, type: "switch" })) : null,
                     ),
                 );
             }
@@ -168,23 +292,23 @@
                 ge = { section: "sensitive_media" },
                 be = c().e070024a,
                 _e = c().i2209530,
-                Me = c().i7d24b36,
-                fe = c().f96a38a2,
-                Te = c().hac7c548,
-                Ee = c().e3dbfba4,
-                Ce = c().dd4a83a6;
-            class ye extends n.Component {
+                fe = c().i7d24b36,
+                Ce = c().f96a38a2,
+                Me = c().hac7c548,
+                ye = c().e3dbfba4,
+                Ee = c().dd4a83a6;
+            class Te extends n.Component {
                 constructor(e) {
                     super(e),
                         (this._cropper = n.createRef()),
-                        (this._getMemoizedTabMetadata = (0, _.Z)((e, t) => (t && e === me.P.SensitiveMedia ? { namespace: ge, title: Ce, renderer: this._renderSensitiveMediaTab } : e === me.P.AltText ? { namespace: ue, title: Ee, renderer: this._renderAltTextTab } : { namespace: pe, title: Te, renderer: this._renderCropTab }))),
+                        (this._getMemoizedTabMetadata = (0, _.Z)((e, t) => (t && e === me.P.SensitiveMedia ? { namespace: ge, title: Ee, renderer: this._renderSensitiveMediaTab } : e === me.P.AltText ? { namespace: ue, title: ye, renderer: this._renderAltTextTab } : { namespace: pe, title: Me, renderer: this._renderCropTab }))),
                         (this._renderTabContent = (e) => {
                             const { location: t, sensitiveMediaTabEnabled: a } = this.props,
                                 i = this._getMemoizedTabMetadata(e, a),
                                 r = !t.state?.hideTabs,
-                                l = r ? this._getTabLinks(e) : [],
-                                o = i.renderer();
-                            return r && l.length > 1 ? n.createElement(n.Fragment, null, n.createElement(C.Z, { "aria-label": be, links: l }), n.createElement(s.Z, { style: he.segmentedControlChildren }, o)) : o;
+                                o = r ? this._getTabLinks(e) : [],
+                                l = i.renderer();
+                            return r && o.length > 1 ? n.createElement(n.Fragment, null, n.createElement(E.Z, { "aria-label": be, links: o }), n.createElement(s.Z, { style: he.segmentedControlChildren }, l)) : l;
                         }),
                         (this._renderAltTextTab = () => {
                             const { history: e } = this.props,
@@ -196,7 +320,7 @@
                         (this._renderCropTab = () => {
                             const { cropData: e, currentMediaId: t } = this.state,
                                 a = this._getCurrentMediaItem();
-                            return n.createElement(E.Z, { defaultCropData: e.get(t), key: t, media: a, ref: this._cropper, withAspectRatioOptions: !0 });
+                            return n.createElement(y.Z, { defaultCropData: e.get(t), key: t, media: a, ref: this._cropper, withAspectRatioOptions: !0 });
                         }),
                         (this._renderSensitiveMediaTab = () => {
                             const { currentMediaId: e, mediaMetadata: t, orientedImage: a } = this.state,
@@ -208,7 +332,7 @@
                             const { isProcessing: e } = this.state,
                                 t = this._getNextMediaIndex(1),
                                 a = this._getNextMediaIndex(-1);
-                            return n.createElement(s.Z, { style: he.rightControl }, this._hasMediaAtIndex(a) || this._hasMediaAtIndex(t) ? n.createElement(s.Z, { style: [he.rightControl, he.leftRightButtons] }, n.createElement(l.ZP, { "aria-label": fe, disabled: !this._hasMediaAtIndex(a), icon: n.createElement(h.default, null), onPress: this._handleClickToMediaAtIndex(a), size: "small", style: he.prevButton, type: "primaryOutlined" }), n.createElement(l.ZP, { "aria-label": Me, disabled: !this._hasMediaAtIndex(t), icon: n.createElement(m.default, null), onPress: this._handleClickToMediaAtIndex(t), size: "small", type: "primaryOutlined" })) : null, n.createElement(l.ZP, { disabled: e, onPress: this._handleEndEditingClick, size: "small", style: he.saveButton, testID: x, type: "primaryFilled" }, _e));
+                            return n.createElement(s.Z, { style: he.rightControl }, this._hasMediaAtIndex(a) || this._hasMediaAtIndex(t) ? n.createElement(s.Z, { style: [he.rightControl, he.leftRightButtons] }, n.createElement(o.ZP, { "aria-label": Ce, disabled: !this._hasMediaAtIndex(a), icon: n.createElement(h.default, null), onPress: this._handleClickToMediaAtIndex(a), size: "small", style: he.prevButton, type: "primaryOutlined" }), n.createElement(o.ZP, { "aria-label": fe, disabled: !this._hasMediaAtIndex(t), icon: n.createElement(m.default, null), onPress: this._handleClickToMediaAtIndex(t), size: "small", type: "primaryOutlined" })) : null, n.createElement(o.ZP, { disabled: e, onPress: this._handleEndEditingClick, size: "small", style: he.saveButton, testID: S, type: "primaryFilled" }, _e));
                         }),
                         (this._handleCancelEditingClick = (e) => {
                             this._scribeWithNamespace({ action: "cancel" }), e();
@@ -261,9 +385,9 @@
                                     { currentMediaId: r } = this.state;
                                 this.setState({ isProcessing: !0 });
                                 let s = a;
-                                this._getCurrentMediaItem()?.mediaFile?.isImage && t && (s = (0, M.Z)([...a, [r, t.getCropData()]]));
-                                const l = e.map((e) => (s.get(e.id) ? (n({ id: e.id, cropData: s.get(e.id) }), i(e.id)) : Promise.resolve()));
-                                Promise.all(l).then(() => {
+                                this._getCurrentMediaItem()?.mediaFile?.isImage && t && (s = (0, f.Z)([...a, [r, t.getCropData()]]));
+                                const o = e.map((e) => (s.get(e.id) ? (n({ id: e.id, cropData: s.get(e.id) }), i(e.id)) : Promise.resolve()));
+                                Promise.all(o).then(() => {
                                     this._scribeWithNamespace({ action: "done" });
                                 });
                             }
@@ -285,19 +409,19 @@
                             if (t) {
                                 const { currentMediaId: a } = this.state,
                                     i = t.getCropData();
-                                if (e && !(0, f.Z)(i, this.state.cropData.get(a)) && (this.setState((e) => ({ orientedImage: (0, M.Z)([...e.orientedImage, [a, null]]) })), e.originalMediaFile && e.originalMediaFile instanceof g.ZP)) {
+                                if (e && !(0, C.Z)(i, this.state.cropData.get(a)) && (this.setState((e) => ({ orientedImage: (0, f.Z)([...e.orientedImage, [a, null]]) })), e.originalMediaFile && e.originalMediaFile instanceof g.ZP)) {
                                     const { cropData: t } = e;
                                     (0, b.ZP)(e.originalMediaFile, { cropData: i || t })
                                         .then((e) =>
                                             new g.ZP(e).withDimensionsAndOrientation().then((e) => {
-                                                this.setState((t) => ({ orientedImage: (0, M.Z)([...t.orientedImage, [a, e]]), cropData: (0, M.Z)([...t.cropData, [a, i]]) }));
+                                                this.setState((t) => ({ orientedImage: (0, f.Z)([...t.orientedImage, [a, e]]), cropData: (0, f.Z)([...t.cropData, [a, i]]) }));
                                             }),
                                         )
                                         .catch(() => {
-                                            this.setState((e) => ({ orientedImage: (0, M.Z)([...e.orientedImage, [a, void 0]]) }));
+                                            this.setState((e) => ({ orientedImage: (0, f.Z)([...e.orientedImage, [a, void 0]]) }));
                                         });
                                 }
-                                this.setState((e) => ({ cropData: (0, M.Z)([...e.cropData, [a, i]]) }));
+                                this.setState((e) => ({ cropData: (0, f.Z)([...e.cropData, [a, i]]) }));
                             }
                         }),
                         (this._scribeWithNamespace = (e) => {
@@ -318,7 +442,7 @@
                     const { history: e, sensitiveMediaTabEnabled: t } = this.props,
                         a = this._getCurrentTab(),
                         i = this._getMemoizedTabMetadata(a, t);
-                    return n.createElement(y.nO, { namespace: i.namespace }, n.createElement(T.Z, { backButtonType: "back", containerStyle: he.root, documentTitle: i.title, history: e, onBackClick: this._handleCancelEditingClick, rightControl: this._renderAppBarRightControl(), title: i.title }, this._renderTabContent(a)));
+                    return n.createElement(T.nO, { namespace: i.namespace }, n.createElement(M.Z, { backButtonType: "back", containerStyle: he.root, documentTitle: i.title, history: e, onBackClick: this._handleCancelEditingClick, rightControl: this._renderAppBarRightControl(), title: i.title }, this._renderTabContent(a)));
                 }
                 _getCurrentTab() {
                     const { location: e, sensitiveMediaTabEnabled: t } = this.props,
@@ -329,48 +453,48 @@
                     const { analytics: t, location: a, sensitiveMediaTabEnabled: i } = this.props,
                         r = this._getCurrentMediaItem(),
                         s = [];
-                    return r?.originalMediaFile?.isImage && s.push({ to: { ...a, state: { ...a.state, tab: me.P.Crop } }, label: n.createElement(u.default, null), key: me.P.Crop, "aria-label": Te, isActive: () => e === me.P.Crop, onClick: () => t.scribePageImpression() }), s.push({ to: { ...a, state: { ...a.state, tab: me.P.AltText } }, label: n.createElement(o.ZP, { weight: "bold" }, "ALT"), key: me.P.AltText, "aria-label": Ee, isActive: () => e === me.P.AltText, onClick: () => this._handleClickTab("alt_text_button") }), i && s.push({ to: { ...a, state: { ...a.state, tab: me.P.SensitiveMedia } }, label: n.createElement(p.default, null), key: me.P.SensitiveMedia, "aria-label": Ce, isActive: () => e === me.P.SensitiveMedia, onClick: () => this._handleClickTab("sensitive_media_tab") }), s;
+                    return r?.originalMediaFile?.isImage && s.push({ to: { ...a, state: { ...a.state, tab: me.P.Crop } }, label: n.createElement(u.default, null), key: me.P.Crop, "aria-label": Me, isActive: () => e === me.P.Crop, onClick: () => t.scribePageImpression() }), s.push({ to: { ...a, state: { ...a.state, tab: me.P.AltText } }, label: n.createElement(l.ZP, { weight: "bold" }, "ALT"), key: me.P.AltText, "aria-label": ye, isActive: () => e === me.P.AltText, onClick: () => this._handleClickTab("alt_text_button") }), i && s.push({ to: { ...a, state: { ...a.state, tab: me.P.SensitiveMedia } }, label: n.createElement(p.default, null), key: me.P.SensitiveMedia, "aria-label": Ee, isActive: () => e === me.P.SensitiveMedia, onClick: () => this._handleClickTab("sensitive_media_tab") }), s;
                 }
             }
-            const ve = ye;
+            const ve = Te;
             var Ie = a(815479),
                 we = a(926981),
-                Se = a(804579),
-                xe = a(540387),
-                Ae = a(736063);
-            var ke = a(449161),
+                xe = a(804579),
+                Se = a(540387),
+                ke = a(736063);
+            var Ae = a(449161),
                 De = a(38502),
-                Pe = a(946208);
-            const Ze = "fileInput",
+                Ze = a(946208);
+            const Pe = "fileInput",
                 Fe = n.createElement(De.default, null),
-                Le = c().icbec4ae,
-                Be = I.default.create((e) => ({ button: { alignSelf: "start" } })),
-                We = (e) => {
-                    const { icon: t = Fe, size: a = "medium", style: r, withIcon: l = !0, ...o } = e,
-                        d = Pe.Id.join(",");
-                    return n.createElement(s.Z, null, n.createElement(ke.Z, (0, i.Z)({}, o, { accept: d, icon: l ? t : void 0, size: a, style: [Be.button, r], testID: Ze, type: "primaryFilled" }), Le));
+                Be = c().icbec4ae,
+                Le = I.default.create((e) => ({ button: { alignSelf: "start" } })),
+                Re = (e) => {
+                    const { icon: t = Fe, size: a = "medium", style: r, withIcon: o = !0, ...l } = e,
+                        d = Ze.Id.join(",");
+                    return n.createElement(s.Z, null, n.createElement(Ae.Z, (0, i.Z)({}, l, { accept: d, icon: o ? t : void 0, size: a, style: [Le.button, r], testID: Pe, type: "primaryFilled" }), Be));
                 };
-            var Re = a(716233),
+            var We = a(716233),
                 Ve = a(71620),
                 Oe = a(661461),
-                ze = a(497294),
+                Ne = a(497294),
                 Ue = a(390387);
-            const Ne = (e) => {
+            const ze = (e) => {
                     const t = (0, Ue.VT)(e);
                     return t && (0, Oe.ug)(e, t);
                 },
                 Ge = (0, U.Z)()
-                    .propsFromState(() => ({ language: Ue.VT, languageName: Ne }))
-                    .propsFromActions(() => ({ addMedia: ze.rA, createLocalApiErrorHandler: (0, Ve.zr)("VIDEO_SUBTITLES_UPLOAD"), fetchAvailableLanguagesIfNeeded: Oe.yt, removeMediaUpload: ze.WU }))
+                    .propsFromState(() => ({ language: Ue.VT, languageName: ze }))
+                    .propsFromActions(() => ({ addMedia: Ne.rA, createLocalApiErrorHandler: (0, Ve.zr)("VIDEO_SUBTITLES_UPLOAD"), fetchAvailableLanguagesIfNeeded: Oe.yt, removeMediaUpload: Ne.WU }))
                     .withAnalytics(),
-                He = c().bf4e9d7a,
-                Ke = c().j435467e,
+                Ke = c().bf4e9d7a,
+                He = c().j435467e,
                 Qe = c().a6b267fa;
             class je extends n.Component {
                 constructor(...e) {
                     super(...e),
-                        (this._renderSubtitlesPickerButton = () => n.createElement(We, { onChange: this._handleAddMediaFiles, type: "brandText" })),
-                        (this._renderSubtitlesRemovalButton = () => n.createElement(l.ZP, { onPress: this._handleRemoveSubtitles, type: "destructiveOutlined" }, Qe)),
+                        (this._renderSubtitlesPickerButton = () => n.createElement(Re, { onChange: this._handleAddMediaFiles, type: "brandText" })),
+                        (this._renderSubtitlesRemovalButton = () => n.createElement(o.ZP, { onPress: this._handleRemoveSubtitles, type: "destructiveOutlined" }, Qe)),
                         (this._handleRemoveSubtitles = () => {
                             const { onRemove: e } = this.props;
                             e();
@@ -378,7 +502,7 @@
                         (this._handleAddMediaFiles = (e) => {
                             const { addMedia: t, analytics: a, language: i, languageName: n, onChange: r } = this.props;
                             a.scribe({ element: "subtitles_upload", action: "click" }),
-                                t(e, { location: Re.vC.Tweet }).then((e) => {
+                                t(e, { location: We.vC.Tweet }).then((e) => {
                                     r(e[0], i, n);
                                 });
                         });
@@ -389,7 +513,7 @@
                 }
                 render() {
                     const { mediaItem: e, subtitles: t } = this.props;
-                    return n.createElement(s.Z, { style: qe.root }, n.createElement(s.Z, { style: qe.attachmentContainer }, n.createElement(o.ZP, { size: "title3", style: qe.header, weight: "heavy" }, `${e?.mediaFile?.name || "undefined"}: ${He}`), n.createElement(o.ZP, { size: "body", style: qe.body }, Ke), n.createElement(s.Z, { style: qe.buttonWrapper }, t ? this._renderSubtitlesRemovalButton() : this._renderSubtitlesPickerButton())));
+                    return n.createElement(s.Z, { style: qe.root }, n.createElement(s.Z, { style: qe.attachmentContainer }, n.createElement(l.ZP, { size: "title3", style: qe.header, weight: "heavy" }, `${e?.mediaFile?.name || "undefined"}: ${Ke}`), n.createElement(l.ZP, { size: "body", style: qe.body }, He), n.createElement(s.Z, { style: qe.buttonWrapper }, t ? this._renderSubtitlesRemovalButton() : this._renderSubtitlesPickerButton())));
                 }
             }
             const qe = I.default.create((e) => ({ root: { display: "flex", flexDirection: "column", flexWrap: "nowrap", flex: 1 }, attachmentContainer: { flex: 1, margin: e.spaces.space16, maxHeight: "100%" }, body: { marginBottom: e.spaces.space28 }, buttonWrapper: { flexDirection: "row", alignItems: "center" }, header: { marginTop: e.spaces.space16, marginBottom: e.spaces.space8 } })),
@@ -497,8 +621,8 @@
                 nt = a(111531);
             const rt = tt,
                 st = { section: "subtitles" },
-                lt = { section: "trimmer" },
-                ot = { section: "sensitive_media" },
+                ot = { section: "trimmer" },
+                lt = { section: "sensitive_media" },
                 dt = c().c91f83ae,
                 ct = c().icbec4ae,
                 ht = c().e0342f98,
@@ -508,20 +632,20 @@
                 gt = c().e7048e74,
                 bt = c().dd4a83a6,
                 _t = c().ga408160,
-                Mt = c().dc402134,
-                ft = me.P.Subtitles,
-                Tt = me.P.Trimmer,
-                Et = me.P.SensitiveMedia;
-            class Ct extends n.Component {
+                ft = c().dc402134,
+                Ct = me.P.Subtitles,
+                Mt = me.P.Trimmer,
+                yt = me.P.SensitiveMedia;
+            class Et extends n.Component {
                 constructor(e) {
                     super(e),
                         (this._videoTrimmerRef = n.createRef()),
                         (this._getMemoizedCurrentTabMetadata = (0, _.Z)((e, t, a) => {
                             switch (e) {
-                                case Tt:
-                                    if (t) return { namespace: lt, title: dt, renderer: this._renderTrimmerTab };
-                                case Et:
-                                    if (a) return { namespace: ot, title: bt, renderer: this._renderSensitiveMediaTab };
+                                case Mt:
+                                    if (t) return { namespace: ot, title: dt, renderer: this._renderTrimmerTab };
+                                case yt:
+                                    if (a) return { namespace: lt, title: bt, renderer: this._renderSensitiveMediaTab };
                                 default:
                                     return { namespace: st, title: ct, renderer: this._renderSubtitlesTab };
                             }
@@ -530,12 +654,12 @@
                             const { isVideoTrimmerEnabled: e, location: t, sensitiveMediaTabEnabled: a } = this.props,
                                 i = this._getSegmentedControlLinks(),
                                 r = this._getMemoizedCurrentTabMetadata(t.state?.tab, e, a);
-                            return n.createElement(n.Fragment, null, i.length > 1 ? n.createElement(C.Z, { "aria-label": dt, links: i }) : null, n.createElement(s.Z, { style: he.segmentedControlChildren }, r.renderer()));
+                            return n.createElement(n.Fragment, null, i.length > 1 ? n.createElement(E.Z, { "aria-label": dt, links: i }) : null, n.createElement(s.Z, { style: he.segmentedControlChildren }, r.renderer()));
                         }),
                         (this._renderTrimmerTab = () => {
                             const e = this._getCurrentMediaItem(),
                                 { trimData: t } = this.state;
-                            if (e?.mediaFile && e.mediaFile instanceof xe.ZP) {
+                            if (e?.mediaFile && e.mediaFile instanceof Se.ZP) {
                                 const { mediaFile: a } = e,
                                     i = { duration: 1e3 * a.duration, height: a.height, variants: [{ src: a.url, type: a.type }], width: a.width };
                                 return n.createElement(s.Z, { style: he.videoTrimmerWrapper }, n.createElement(Ie.Z, { defaultTrimData: t, ref: this._videoTrimmerRef, video: i }));
@@ -585,7 +709,7 @@
                             const { isVideoTrimmerEnabled: e } = this.props,
                                 t = this._getNextMediaIndex(1),
                                 a = this._getNextMediaIndex(-1);
-                            return n.createElement(s.Z, { style: he.rightControl }, this._hasMediaAtIndex(a) || this._hasMediaAtIndex(t) ? n.createElement(s.Z, { style: [he.rightControl, he.leftRightButtons] }, n.createElement(l.ZP, { "aria-label": Mt, disabled: !this._hasMediaAtIndex(a), icon: n.createElement(h.default, null), onPress: this._handleClickToMediaAtIndex(a), size: "small", style: he.prevButton, type: "primaryOutlined" }), n.createElement(l.ZP, { "aria-label": _t, disabled: !this._hasMediaAtIndex(t), icon: n.createElement(m.default, null), onPress: this._handleClickToMediaAtIndex(t), size: "small", type: "primaryOutlined" })) : null, n.createElement(l.ZP, { onPress: this._handleEndEditingClick, size: "small", style: he.saveButton, type: "primaryFilled" }, e ? mt : ut));
+                            return n.createElement(s.Z, { style: he.rightControl }, this._hasMediaAtIndex(a) || this._hasMediaAtIndex(t) ? n.createElement(s.Z, { style: [he.rightControl, he.leftRightButtons] }, n.createElement(o.ZP, { "aria-label": ft, disabled: !this._hasMediaAtIndex(a), icon: n.createElement(h.default, null), onPress: this._handleClickToMediaAtIndex(a), size: "small", style: he.prevButton, type: "primaryOutlined" }), n.createElement(o.ZP, { "aria-label": _t, disabled: !this._hasMediaAtIndex(t), icon: n.createElement(m.default, null), onPress: this._handleClickToMediaAtIndex(t), size: "small", type: "primaryOutlined" })) : null, n.createElement(o.ZP, { onPress: this._handleEndEditingClick, size: "small", style: he.saveButton, type: "primaryFilled" }, e ? mt : ut));
                         }),
                         (this._getCurrentMediaItem = () => {
                             const { initialMediaId: e, media: t } = this.props,
@@ -631,7 +755,7 @@
                             this._addTrimDataToState(), e.scribePageImpression();
                         });
                     const t = this._getCurrentMediaItem();
-                    if (t?.mediaFile && t.mediaFile instanceof xe.ZP) {
+                    if (t?.mediaFile && t.mediaFile instanceof Se.ZP) {
                         const { mediaFile: a, mediaMetadata: i, trimData: n } = t,
                             r = { endTime: n?.endTime ? 1e3 * n.endTime : 1e3 * a.duration, startTime: n?.startTime ? 1e3 * n.startTime : 0 };
                         this.state = { trimData: r, sensitiveMediaWarning: i?.sensitiveMediaWarning || new Set(), isAllowedDownloadVideo: e.allowDownloadVideoDefault, currentMediaId: t.id };
@@ -640,19 +764,19 @@
                 render() {
                     const { history: e, isVideoTrimmerEnabled: t, location: a, sensitiveMediaTabEnabled: i } = this.props,
                         r = this._getMemoizedCurrentTabMetadata(a.state?.tab, t, i);
-                    return n.createElement(y.nO, { namespace: r.namespace }, n.createElement(T.Z, { backButtonType: "back", containerStyle: he.root, documentTitle: r.title, history: e, rightControl: this._renderAppBarRightControl(), title: r.title }, this._renderSegmentedControl()));
+                    return n.createElement(T.nO, { namespace: r.namespace }, n.createElement(M.Z, { backButtonType: "back", containerStyle: he.root, documentTitle: r.title, history: e, rightControl: this._renderAppBarRightControl(), title: r.title }, this._renderSegmentedControl()));
                 }
                 _getSegmentedControlLinks() {
                     const { isVideoTrimmerEnabled: e, location: t, sensitiveMediaTabEnabled: a } = this.props,
                         i = this._getCurrentMediaItem(),
                         r = [];
-                    return e && i?.originalMediaFile?.isVideo && r.push({ to: { ...t, state: { ...t.state, tab: Tt } }, label: n.createElement(we.default, null), key: Tt, "aria-label": gt, isActive: () => t.state?.tab === Tt }), i?.originalMediaFile?.isVideo && r.push({ to: { ...t, state: { ...t.state, tab: ft } }, label: n.createElement(Se.default, null), key: ft, "aria-label": ht, isActive: () => t.state?.tab === ft, onClick: this._addTrimDataToState }), a && r.push({ to: { ...t, state: { ...t.state, tab: Et } }, label: n.createElement(p.default, null), key: Et, "aria-label": bt, isActive: () => t.state?.tab === Et, onClick: this._handleClickSensitiveMediaTab }), r;
+                    return e && i?.originalMediaFile?.isVideo && r.push({ to: { ...t, state: { ...t.state, tab: Mt } }, label: n.createElement(we.default, null), key: Mt, "aria-label": gt, isActive: () => t.state?.tab === Mt }), i?.originalMediaFile?.isVideo && r.push({ to: { ...t, state: { ...t.state, tab: Ct } }, label: n.createElement(xe.default, null), key: Ct, "aria-label": ht, isActive: () => t.state?.tab === Ct, onClick: this._addTrimDataToState }), a && r.push({ to: { ...t, state: { ...t.state, tab: yt } }, label: n.createElement(p.default, null), key: yt, "aria-label": bt, isActive: () => t.state?.tab === yt, onClick: this._handleClickSensitiveMediaTab }), r;
                 }
             }
-            const yt = (function (e, t) {
-                return n.forwardRef((a, r) => n.createElement(Ae.H, { errorConfig: t }, n.createElement(e, (0, i.Z)({}, a, { ref: r }))));
+            const Tt = (function (e, t) {
+                return n.forwardRef((a, r) => n.createElement(ke.H, { errorConfig: t }, n.createElement(e, (0, i.Z)({}, a, { ref: r }))));
             })(
-                ((vt = Ct),
+                ((vt = Et),
                 n.forwardRef((e, t) => {
                     const {
                             user_preferences: { allow_video_downloads: a },
@@ -664,20 +788,20 @@
                 { context: "TABBED_VIDEO_EDIT" },
             );
             var vt;
-            const It = yt;
+            const It = Tt;
             const wt = function (e) {
                 const { history: t, initialMediaId: a, media: s } = e,
-                    { featureSwitches: l } = n.useContext(r.rC),
-                    o = s.filter((e) => e.mediaFile?.isImage || e.mediaFile?.isGif || e.externalMediaDetails),
+                    { featureSwitches: o } = n.useContext(r.rC),
+                    l = s.filter((e) => e.mediaFile?.isImage || e.mediaFile?.isGif || e.externalMediaDetails),
                     d = s.filter((e) => e.mediaFile?.isVideo),
                     c = s.find((e) => e.id === a),
                     h = !!c?.mediaFile?.isVideo;
                 if (s.length <= 0 || !c) return t.replace("/"), null;
                 if (h) {
-                    const t = l.isTrue("responsive_web_video_trimmer_enabled");
+                    const t = o.isTrue("responsive_web_video_trimmer_enabled");
                     return n.createElement(It, (0, i.Z)({}, e, { isVideoTrimmerEnabled: t, media: d }));
                 }
-                return n.createElement(ve, (0, i.Z)({}, e, { media: o }));
+                return n.createElement(ve, (0, i.Z)({}, e, { media: l }));
             };
         },
         661461: (e, t, a) => {
@@ -686,24 +810,24 @@
                 n = a(689048),
                 r = a(499627),
                 s = a(917799),
-                l = a(312771),
-                o = a(390387);
+                o = a(312771),
+                l = a(390387);
             const d = "availableLanguages",
                 c = Object.freeze({ REQUEST: "rweb/availableLanguages/FETCH_AVAILABLE_LANGUAGES_REQUEST", SUCCESS: "rweb/availableLanguages/FETCH_AVAILABLE_LANGUAGES_SUCCESS", FAILURE: "rweb/availableLanguages/FETCH_AVAILABLE_LANGUAGES_FAILURE" }),
-                h = { fetchStatus: l.ZP.NONE, languages: [] };
+                h = { fetchStatus: o.ZP.NONE, languages: [] };
             function m(e = h, t) {
                 if (!t) return e;
                 switch (t.type) {
                     case c.REQUEST:
-                        return { ...e, fetchStatus: l.ZP.LOADING };
+                        return { ...e, fetchStatus: o.ZP.LOADING };
                     case c.FAILURE:
-                        return { ...e, error: t.payload, fetchStatus: l.ZP.FAILED };
+                        return { ...e, error: t.payload, fetchStatus: o.ZP.FAILED };
                     case c.SUCCESS: {
                         const { meta: a, payload: i } = t,
                             n = a?.lang ? a.lang : "en",
                             r = "undefined" != typeof Intl && Intl.Collator && new Intl.Collator(n),
                             s = r ? (e, t) => r.compare(e.name, t.name) : void 0;
-                        return { ...e, languages: i?.slice().sort(s) || [], fetchStatus: l.ZP.LOADED };
+                        return { ...e, languages: i?.slice().sort(s) || [], fetchStatus: o.ZP.LOADED };
                     }
                     default:
                         return e;
@@ -716,12 +840,12 @@
                         i = e[d].languages.find((e) => e.code === a);
                     return i?.name;
                 },
-                g = () => (e, t) => (t()[d].fetchStatus === l.ZP.LOADED ? Promise.resolve() : e(b())),
+                g = () => (e, t) => (t()[d].fetchStatus === o.ZP.LOADED ? Promise.resolve() : e(b())),
                 b =
                     () =>
                     (e, t, { api: a }) =>
-                        s._O(e, { request: a.withEndpoint(i.Z).fetchSupportedLanguages })({ actionTypes: c, context: "FETCH_AVAILABLE_LANGUAGES", meta: { lang: (0, o.VT)(t()) } });
+                        s._O(e, { request: a.withEndpoint(i.Z).fetchSupportedLanguages })({ actionTypes: c, context: "FETCH_AVAILABLE_LANGUAGES", meta: { lang: (0, l.VT)(t()) } });
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.ComposeMedia-a2dee9c7.d1c4dd5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.ComposeMedia-a2dee9c7.f3778dea.js.map

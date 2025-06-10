@@ -19,8 +19,8 @@
                     super(...e),
                         (this._renderChildViewAppBar = () => {
                             const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: a, centerTitle: i, hideBackButton: l, history: s, isFullWidth: u, isLarge: p, middleControl: m, onBackClick: b, rightControl: g, secondaryBar: f, subtitle: y, title: k } = this.props,
-                                { isModal: x } = this.context;
-                            return r.createElement(n.Z, { style: x ? [h.childViewAppBarRoot, h.appBarZindex] : h.appBarZindex }, r.createElement(d.ZP, { backButtonType: o || (x ? "close" : "back"), backLocation: a, centerTitle: i, fixed: !x, hideBackButton: l, history: s, isFullWidth: u, isLarge: p, middleControl: m, onBackClick: b, ref: e, rightControl: g, secondaryBar: f, style: [x && h.appBarModal, t], subtitle: y, title: k, titleDomId: c.Q_ }));
+                                { isModal: C } = this.context;
+                            return r.createElement(n.Z, { style: C ? [h.childViewAppBarRoot, h.appBarZindex] : h.appBarZindex }, r.createElement(d.ZP, { backButtonType: o || (C ? "close" : "back"), backLocation: a, centerTitle: i, fixed: !C, hideBackButton: l, history: s, isFullWidth: u, isLarge: p, middleControl: m, onBackClick: b, ref: e, rightControl: g, secondaryBar: f, style: [C && h.appBarModal, t], subtitle: y, title: k, titleDomId: c.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -59,7 +59,7 @@
             const i = o(392237).default.create((e) => ({ root: { position: "relative", pointerEvents: "none", userSelect: "none" }, overlay: { height: "100%", pointerEvents: "none", position: "absolute", userSelect: "none", width: "100%", zIndex: 1 } }));
         },
         617041: (e, t, o) => {
-            o.d(t, { Z: () => A });
+            o.d(t, { Z: () => H });
             o(136728);
             var r = o(202784),
                 n = o(111677),
@@ -83,8 +83,8 @@
                 },
                 y = () => ({ elements: [{ text: h.noHours }] }),
                 k = (e) => (e ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(e)}` : void 0),
-                x = (e) => C(e) || _(e) || w(e) || B(e),
-                C = (e) => !!e.config.enable_dm,
+                C = (e) => x(e) || _(e) || w(e) || B(e),
+                x = (e) => !!e.config.enable_dm,
                 _ = (e) => !(!e.config.enable_email || !e.data.contact?.email?.email_address),
                 w = (e) => !!(e.config.enable_call && e.data.contact?.phone?.country_code && e.data.contact?.phone?.number),
                 B = (e) => !!(e.config.enable_sms && e.data.contact?.phone?.country_code && e.data.contact?.phone?.number),
@@ -96,7 +96,7 @@
                     return ((e) => new Date().toLocaleString("en-US", { weekday: "long" }) === e)(e) ? m({ time: r }) : p({ day: e, time: r });
                 },
                 Z = Object.freeze({ directMessage: a().h845f282, email: a().a3841918, callFormatter: a().ha9b8035, textFormatter: a().g2244521 });
-            function v(e) {
+            function L(e) {
                 const { location: t, onClose: o, user: n } = e,
                     a = (0, s.z)(),
                     l = r.useMemo(() => {
@@ -108,32 +108,32 @@
                             s = (e, t) => () => {
                                 a.scribe((0, c.dm)(e, t));
                             };
-                        return C(t) && l.push({ text: Z.directMessage, link: `/messages/compose?recipient_id=${encodeURIComponent(n.rest_id)}`, onClick: s("click", "dm") }), _(t) && o && l.push({ text: Z.email, link: `mailto:${o}`, onClick: s("click", "email") }), w(t) && r && i && l.push({ text: Z.callFormatter({ phoneCode: r, phoneNumber: i }), link: `tel:${r}${i}`, onClick: s("click", "phone_call") }), B(t) && r && i && l.push({ text: Z.textFormatter({ phoneCode: r, phoneNumber: i }), link: `sms:${r}${i}`, onClick: s("click", "text_message") }), l;
+                        return x(t) && l.push({ text: Z.directMessage, link: `/messages/compose?recipient_id=${encodeURIComponent(n.rest_id)}`, onClick: s("click", "dm") }), _(t) && o && l.push({ text: Z.email, link: `mailto:${o}`, onClick: s("click", "email") }), w(t) && r && i && l.push({ text: Z.callFormatter({ phoneCode: r, phoneNumber: i }), link: `tel:${r}${i}`, onClick: s("click", "phone_call") }), B(t) && r && i && l.push({ text: Z.textFormatter({ phoneCode: r, phoneNumber: i }), link: `sms:${r}${i}`, onClick: s("click", "text_message") }), l;
                     }, [a, t, n.rest_id]);
                 return (
                     (0, i.q)(() => {
-                        a.scribe((0, c.dm)("click", "contact")), C(t) && a.scribe((0, c.dm)("impression", "dm")), _(t) && a.scribe((0, c.dm)("impression", "email")), w(t) && a.scribe((0, c.dm)("impression", "phone_call")), B(t) && a.scribe((0, c.dm)("impression", "text_message"));
+                        a.scribe((0, c.dm)("click", "contact")), x(t) && a.scribe((0, c.dm)("impression", "dm")), _(t) && a.scribe((0, c.dm)("impression", "email")), w(t) && a.scribe((0, c.dm)("impression", "phone_call")), B(t) && a.scribe((0, c.dm)("impression", "text_message"));
                     }),
                     r.createElement(u.Z, { items: l, onCloseRequested: o })
                 );
             }
-            var L = o(444178),
+            var v = o(444178),
                 M = o(392237),
-                R = o(264171);
-            const S = M.default.create((e) => ({ root: { alignItems: "center", backgroundColor: e.colors.gray200, backgroundRepeat: "no-repeat", backgroundSize: "contain", cursor: "pointer", display: "flex", height: "100%", justifyContent: "center" }, iconLocation: { color: e.colors.alwaysBaseGray1100, height: e.spaces.space32 } })),
+                S = o(264171);
+            const R = M.default.create((e) => ({ root: { alignItems: "center", backgroundColor: e.colors.gray200, backgroundRepeat: "no-repeat", backgroundSize: "contain", cursor: "pointer", display: "flex", height: "100%", justifyContent: "center" }, iconLocation: { color: e.colors.alwaysBaseGray1100, height: e.spaces.space32 } })),
                 z = ({ imageUrl: e, link: t, onClick: o }) => {
                     const n = e ? { backgroundImage: `url(${e})` } : null;
-                    return r.createElement(L.Z, { link: t, onClick: o, role: "img", style: [S.root, n] }, e ? null : r.createElement(R.default, { style: S.iconLocation, testID: "iconLocation" }));
+                    return r.createElement(v.Z, { link: t, onClick: o, role: "img", style: [R.root, n] }, e ? null : r.createElement(S.default, { style: R.iconLocation, testID: "iconLocation" }));
                 },
-                H = a().dc12a126,
-                $ = a().e2acb642;
-            function A(e) {
+                $ = a().dc12a126,
+                A = a().e2acb642;
+            function H(e) {
                 const { label: t, location: o, showUpdatedHours: n, user: a } = e,
                     { featureSwitches: u } = r.useContext(l.rC),
                     p = (0, s.z)(),
                     m = k(o.data.address?.formatted_address);
                 (0, i.q)(() => {
-                    p.scribe((0, c.dm)("impression")), m && p.scribe((0, c.dm)("impression", "directions")), x(o) && p.scribe((0, c.dm)("impression", "contact"));
+                    p.scribe((0, c.dm)("impression")), m && p.scribe((0, c.dm)("impression", "directions")), C(o) && p.scribe((0, c.dm)("impression", "contact"));
                 });
                 return r.createElement(d.$, {
                     actions: (() => {
@@ -141,13 +141,13 @@
                         return (
                             m &&
                                 e.push({
-                                    label: H,
+                                    label: $,
                                     link: m,
                                     onClick: (e) => {
                                         e?.preventDefault(), p.scribe((0, c.dm)("click", "directions"));
                                     },
                                 }),
-                            x(o) && e.push({ label: $, renderMenu: (e) => r.createElement(v, { location: o, onClose: e, user: a }) }),
+                            C(o) && e.push({ label: A, renderMenu: (e) => r.createElement(L, { location: o, onClose: e, user: a }) }),
                             e
                         );
                     })(),
@@ -297,7 +297,7 @@
                     return n.createElement(a.Z, { style: d.container }, n.createElement(s.Z, (0, r.Z)({}, u, { interactiveStyles: p, style: d.root }), n.createElement(i.ZP, { align: e, color: t }, o)));
                 };
         },
-        748138: (e, t, o) => {
+        41065: (e, t, o) => {
             o.r(t), o.d(t, { default: () => s });
             var r = o(202784),
                 n = o(890601),
@@ -305,11 +305,11 @@
                 i = o(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.SettingsProfessionalProfileLocationSpotlight.8cb143da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.SettingsProfessionalProfileLocationSpotlight.ebe7f00a.js.map

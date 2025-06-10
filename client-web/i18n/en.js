@@ -5437,6 +5437,8 @@
                 a("i8cae552", "By rating you’ll help keep quality in Community Notes high."),
                 a("hd43a218", "You’ve reached your daily limit for writing notes"),
                 a("aaba8ed2", "To keep note quality high and prevent spam, there’s a limit to the number of notes contributors can write each day, based on their Writing Impact. Please try again later."),
+                a("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
+                a("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
                 a("b98f077c", "Request a Note Info"),
                 a("ee691104", "Request a Community Note about this post"),
                 a("f8cbdf02", "Think this post is potentially misleading? Request a Community Note."),
@@ -5879,10 +5881,10 @@
                 a("beba2a0e", "Create a new Bookmark Folder"),
                 a("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
-                }),
-                a("h18f86a4", "Delete Folder"),
-                a("f4ea967a", "Folder has been deleted");
-            a("b670aa62", "Folder Name"),
+                });
+            a("h18f86a4", "Delete Folder"),
+                a("f4ea967a", "Folder has been deleted"),
+                a("b670aa62", "Folder Name"),
                 a("aece5462", "Folder name has been updated successfully"),
                 a("e3299b94", "Something went wrong. Try updating that folder again in a minute."),
                 a("c09ea714", "Something went wrong. Try deleting that folder again in a minute."),
@@ -6883,10 +6885,10 @@
                 a("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for."),
                 a("ede7d0a2", "Currency"),
                 a("b925c18c", "Salary Type"),
-                a("j3d242ce", "Invalid range"),
-                a("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
-                a("b8cbb51a", "Job Summary");
-            a("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                a("j3d242ce", "Invalid range");
+            a("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
+                a("b8cbb51a", "Job Summary"),
+                a("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 a("b075c68a", "Edit job"),
                 a("d4b6a6e0", "Profile Spotlight"),
                 a("j2dd3686", "Highlight featured jobs above my posts."),
@@ -7231,7 +7233,7 @@
                 a("h257d4aa", "Select a post to promote"),
                 a("e9334fe6", "Data updates every few minutes"),
                 a("a6d7b1d0", "Based on X Internal Data"),
-                a("h9b28dae", "You’re saving time with an ad-free feed"),
+                a("h71a00e6", "You’re saving time with ad-free"),
                 a("f6c50ec0", "Your ad-free trial has ended"),
                 a("e1d1fbca", "You’ve avoided"),
                 a("a82d7abd", function (e) {
@@ -7258,6 +7260,9 @@
                 }),
                 a("b93d00e5", function (e) {
                     return e.days + " day" + n(e.days, "", "s");
+                }),
+                a("dc9661b3", function (e) {
+                    return e.seconds + " second" + n(e.seconds, "", "s");
                 }),
                 a("g2c63852", "100% free. No credit card required."),
                 a("be88be23", function (e) {
@@ -7860,12 +7865,7 @@
                 a("b74ff5fc", "If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
                 a("ee9efbc8", "Continue to cancellation"),
                 a("c5d9c77a", "Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Close this window and try again."),
-                a("jda53c24", "You can cancel your Subscription through the Apple App Store."),
-                a("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
-                a("i5f14be7", function (e) {
-                    return "Welcome back, " + e.displayName;
-                }),
-                a("a76d58ba", "Ads Analytics");
+                a("jda53c24", "You can cancel your Subscription through the Apple App Store.");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7904,7 +7904,12 @@
                     r(e, t)
                 );
             }
-            a("eccd0e1a", "Organization Analytics"),
+            a("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
+                a("i5f14be7", function (e) {
+                    return "Welcome back, " + e.displayName;
+                }),
+                a("a76d58ba", "Ads Analytics"),
+                a("eccd0e1a", "Organization Analytics"),
                 a("deea1708", "Want to view analytics across all your X accounts?"),
                 a("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
                 a("gf67aae4", "Upgrade to Full Access"),
@@ -8900,11 +8905,11 @@
                     return "Visit " + e.advertiserName;
                 }),
                 a("c67e71aa", "Watch now"),
-                a("a6ada13e", "Shop now"),
-                a("j0f12222", "See more"),
+                a("a6ada13e", "Shop now");
+            a("j0f12222", "See more"),
                 a("f569f7c8", "Go to website"),
-                a("j0c6772a", "Visit website");
-            a("f73003aa", "Video will play after ad"),
+                a("j0c6772a", "Visit website"),
+                a("f73003aa", "Video will play after ad"),
                 a("b3112b8a", "Skip"),
                 a("h6333ad0", "Skip Ad"),
                 a("c59da417", function (e) {
@@ -13353,4 +13358,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.8c379c2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.41698f6a.js.map
