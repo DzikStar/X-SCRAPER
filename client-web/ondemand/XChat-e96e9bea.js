@@ -232,7 +232,7 @@
         },
         597322: (e, t, s) => {
             "use strict";
-            s.r(t), s.d(t, { default: () => x });
+            s.r(t), s.d(t, { default: () => m });
             s(136728);
             var r = s(202784),
                 n = s(176453),
@@ -240,39 +240,41 @@
                 i = s(107267),
                 l = s(67369),
                 o = s(392237),
-                c = s(857378),
-                d = s(252021),
-                u = s(234622);
+                c = s(545457),
+                d = s(857378),
+                u = s(252021),
+                h = s(234622);
             s(536188);
-            const h = o.default.create((e) => ({ root: { width: "100%", display: "block" } })),
-                x = (e) => {
+            const x = o.default.create((e) => ({ root: { width: "100%", display: "block" } })),
+                m = (e) => {
                     const t = (0, l.yu)(),
                         s = (0, i.useHistory)(),
-                        { id: o, token: x } = (0, i.useParams)(),
-                        m = t ? c.h$ : 0;
-                    return (o && x) || s.push("/i/chat"), r.createElement(u.i, null, r.createElement(d.Z, { history: s, isFullWidth: !0, primaryContent: () => r.createElement(a.Z, { style: h.root }, r.createElement(n.N, { groupId: o, settings: { path: "/i/chat", bottomBarHeight: m }, token: x })), sidebarContent: null }));
+                        { id: o, token: m } = (0, i.useParams)(),
+                        g = t ? d.h$ : 0;
+                    return (o && m) || s.push("/i/chat"), (0, c.MQ)(), r.createElement(h.i, null, r.createElement(u.Z, { history: s, isFullWidth: !0, primaryContent: () => r.createElement(a.Z, { style: x.root }, r.createElement(n.N, { groupId: o, settings: { path: "/i/chat", bottomBarHeight: g }, token: m })), sidebarContent: null }));
                 };
         },
         647665: (e, t, s) => {
             "use strict";
-            s.r(t), s.d(t, { default: () => x });
+            s.r(t), s.d(t, { default: () => m });
             var r = s(202784),
                 n = s(850697),
                 a = s(325686),
                 i = s(107267),
                 l = s(67369),
                 o = s(392237),
-                c = s(857378),
-                d = s(252021),
-                u = s(234622);
+                c = s(545457),
+                d = s(857378),
+                u = s(252021),
+                h = s(234622);
             s(470201);
-            const h = o.default.create((e) => ({ root: { width: "100%", display: "block" } })),
-                x = (e) => {
+            const x = o.default.create((e) => ({ root: { width: "100%", display: "block" } })),
+                m = (e) => {
                     const t = (0, l.yu)(),
                         s = (0, i.useHistory)(),
                         { xChatPinMode: o } = (0, i.useParams)(),
-                        x = t ? c.h$ : 0;
-                    return r.createElement(u.i, null, r.createElement(d.Z, { history: s, isFullWidth: !0, primaryContent: () => r.createElement(a.Z, { style: h.root }, r.createElement(n.x, { mode: o ?? "new", settings: { path: "/i/chat", bottomBarHeight: x } })), sidebarContent: null }));
+                        m = t ? d.h$ : 0;
+                    return (0, c.MQ)(), r.createElement(h.i, null, r.createElement(u.Z, { history: s, isFullWidth: !0, primaryContent: () => r.createElement(a.Z, { style: x.root }, r.createElement(n.x, { mode: o ?? "new", settings: { path: "/i/chat", bottomBarHeight: m } })), sidebarContent: null }));
                 };
         },
         476644: (e, t, s) => {
@@ -302,7 +304,7 @@
                         v = b && !j ? u.h$ : 0,
                         y = (0, g.hC)("rweb_xchat_logs"),
                         w = (0, g.hC)("rweb_xchat_new_db_worker_enabled");
-                    return (0, d.MQ)(), r.createElement(x.i, null, r.createElement(h.Z, { headerless: b && j, history: t, isFullWidth: !0, primaryContent: () => r.createElement(i.Z, { style: p.root }, r.createElement(n.H, { settings: { path: "/i/chat", showDebugOptions: c, bottomBarHeight: v, logLevel: y ? a.B$.INFO : a.B$.ERROR, newDBWorker: w, rwebElements: { dashMenuButton: b && f ? r.createElement(m.Z, null) : void 0 } } })), sidebarContent: null, withTopNav: !1 }));
+                    return (0, d.MQ)(), r.createElement(x.i, null, r.createElement(h.Z, { headerless: b && j, history: t, isFullWidth: !0, primaryContent: () => r.createElement(i.Z, { style: p.root }, r.createElement(n.H, { settings: { path: "/i/chat", showDebugOptions: c, bottomBarHeight: v, logLevel: y ? a.B$.INFO : a.B$.WARN, newDBWorker: w, rwebElements: { dashMenuButton: b && f ? r.createElement(m.Z, null) : void 0 } } })), sidebarContent: null, withTopNav: !1 }));
                 };
         },
         115290: (e, t, s) => {
@@ -346,4 +348,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.8e04825a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.62a71d5a.js.map

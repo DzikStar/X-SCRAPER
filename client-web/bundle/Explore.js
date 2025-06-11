@@ -216,6 +216,7 @@
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
+                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
@@ -275,14 +276,14 @@
                     .propsFromState(() => ({ initialTabModule: _(), selectedTabId: I }))
                     .withAnalytics({ page: "guide", section: "main" });
             const Z = { ...(0, a(335632).G)({ withThirdPartyCards: !0, errorContext: "EXPLORE_SCREEN" }) },
-                P = l().fcf3e54c,
-                C = l().c797b44e,
+                C = l().fcf3e54c,
+                P = l().c797b44e,
                 T = l().a19ce060,
-                N = () => t.createElement(g.Z, null),
-                S = () => t.createElement(d.Z, { message: T }),
+                S = () => t.createElement(g.Z, null),
+                N = () => t.createElement(d.Z, { message: T }),
                 B = 600,
-                G = 315,
-                R = "https://abs.twimg.com/a/1602199131/img/moments/moments-card.jpg";
+                R = 315,
+                G = "https://abs.twimg.com/a/1602199131/img/moments/moments-card.jpg";
             class v extends t.Component {
                 constructor(...e) {
                     super(...e),
@@ -310,7 +311,7 @@
                         _ = t.createElement(i.Z, { withNews: A, withSearchBox: !1, withTrends: !1 }, k && t.createElement(h, null), I && t.createElement(m, null)),
                         x = this.context.featureSwitches.isTrue("rweb_enable_logged_out_search_search_bar_enabled"),
                         T = e.contextualScribeNamespace;
-                    return t.createElement(t.Fragment, null, t.createElement(c.Z, { description: C, includeOpenGraphMeta: !1, title: P }), t.createElement(u.Z, { canonical: (0, o.ju)("https://x.com/explore"), description: C, image: R, imageH: G, imageW: B, title: P, type: "article" }), t.createElement(f.Z, { entryConfiguration: Z, fab: b, getTabLink: this._getTabLink, history: n, initialPageNamespace: T, module: a, onBackClick: y ? this._handleBackClick : void 0, prerollDisplayLocation: D.Nw.OTHER, renderEmptyState: N, renderUnavailable: S, rightControl: g, selectedTabId: r, sidebarContent: _, timelinePrefix: E.uI, title: P, withBottomLoginSignupBar: !0, withDeferredView: !0, withSearchBox: x }), !1);
+                    return t.createElement(t.Fragment, null, t.createElement(c.Z, { description: P, includeOpenGraphMeta: !1, title: C }), t.createElement(u.Z, { canonical: (0, o.ju)("https://x.com/explore"), description: P, image: G, imageH: R, imageW: B, title: C, type: "article" }), t.createElement(f.Z, { entryConfiguration: Z, fab: b, getTabLink: this._getTabLink, history: n, initialPageNamespace: T, module: a, onBackClick: y ? this._handleBackClick : void 0, prerollDisplayLocation: D.Nw.OTHER, renderEmptyState: S, renderUnavailable: N, rightControl: g, selectedTabId: r, sidebarContent: _, timelinePrefix: E.uI, title: C, withBottomLoginSignupBar: !0, withDeferredView: !0, withSearchBox: x }), !1);
                 }
             }
             v.contextType = p.rC;
@@ -334,4 +335,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Explore.6e69e5ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Explore.11548eba.js.map

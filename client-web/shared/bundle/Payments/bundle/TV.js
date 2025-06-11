@@ -335,7 +335,7 @@
                                 a,
                                 f = "";
                             const h = `l${t},0 0,${t} -${t},0 0,-${t}z `;
-                            for (f += '<svg version="1.1" xmlns="http://www.w3.org/2000/svg"', f += o.scalable ? "" : ` width="${i}px" height="${i}px"`, f += ` viewBox="0 0 ${i} ${i}" `, f += ' preserveAspectRatio="xMinYMin meet"', f += n.text || r.text ? ` role="img" aria-labelledby="${L([n.id, r.id].join(" ").trim())}"` : "", f += ">", f += n.text ? `<title id="${L(n.id)}">${L(n.text)}</title>` : "", f += r.text ? `<description id="${L(r.id)}">${L(r.text)}</description>` : "", f += '<rect width="100%" height="100%" fill="white" cx="0" cy="0"/>', f += '<path d="', u = 0; u < s.getModuleCount(); u += 1) for (a = u * t + e, l = 0; l < s.getModuleCount(); l += 1) s.isDark(u, l) && ((c = l * t + e), (f += `M${c},${a}${h}`));
+                            for (f += '<svg version="1.1" xmlns="http://www.w3.org/2000/svg"', f += o.scalable ? "" : ` width="${i}px" height="${i}px"`, f += ` viewBox="0 0 ${i} ${i}" `, f += ' preserveAspectRatio="xMinYMin meet"', f += n.text || r.text ? ` role="img" aria-labelledby="${v([n.id, r.id].join(" ").trim())}"` : "", f += ">", f += n.text ? `<title id="${v(n.id)}">${v(n.text)}</title>` : "", f += r.text ? `<description id="${v(r.id)}">${v(r.text)}</description>` : "", f += '<rect width="100%" height="100%" fill="white" cx="0" cy="0"/>', f += '<path d="', u = 0; u < s.getModuleCount(); u += 1) for (a = u * t + e, l = 0; l < s.getModuleCount(); l += 1) s.isDark(u, l) && ((c = l * t + e), (f += `M${c},${a}${h}`));
                             return (f += '" stroke="transparent" fill="black"/>'), (f += "</svg>"), f;
                         }),
                         (s.createDataURL = function (t, e) {
@@ -356,9 +356,9 @@
                             (t = t || 2), (e = void 0 === e ? 4 * t : e);
                             const n = s.getModuleCount() * t + 2 * e;
                             let o = "";
-                            return (o += "<img"), (o += ' src="'), (o += s.createDataURL(t, e)), (o += '"'), (o += ' width="'), (o += n), (o += '"'), (o += ' height="'), (o += n), (o += '"'), r && ((o += ' alt="'), (o += L(r)), (o += '"')), (o += "/>"), o;
+                            return (o += "<img"), (o += ' src="'), (o += s.createDataURL(t, e)), (o += '"'), (o += ' width="'), (o += n), (o += '"'), (o += ' height="'), (o += n), (o += '"'), r && ((o += ' alt="'), (o += v(r)), (o += '"')), (o += "/>"), o;
                         });
-                    const L = function (t) {
+                    const v = function (t) {
                         let e = "";
                         for (let r = 0; r < t.length; r += 1) {
                             const n = t.charAt(r);
@@ -1200,7 +1200,7 @@
                 }),
                 "function" == typeof define && r.amdO ? define([], o) : "object" == typeof exports && (t.exports = o());
         },
-        41065: (t, e, r) => {
+        748138: (t, e, r) => {
             r.r(e), r.d(e, { default: () => u });
             var n = r(202784),
                 o = r(890601),
@@ -1208,11 +1208,11 @@
                 l = r(347101);
             const c = (t = {}) => {
                 const { direction: e } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...t, role: t["aria-label"] ? t.role || "img" : void 0, "aria-hidden": void 0 === t["aria-label"], style: [l.Z.root, t.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: e });
+                return (0, o.Z)("svg", { ...t, role: t["aria-label"] ? t.role || "img" : void 0, "aria-hidden": void 0 === t["aria-label"], style: [l.Z.root, t.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: e });
             };
             c.metadata = { width: 24, height: 24 };
             const u = c;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Payments~bundle.TV.079acf7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Payments~bundle.TV.729002ca.js.map

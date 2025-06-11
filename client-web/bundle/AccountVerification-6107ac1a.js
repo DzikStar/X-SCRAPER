@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.AccountVerification-6107ac1a"],
+    ["bundle.AccountVerification-6107ac1a", "icons/IconEye-js"],
     {
         625661: (e, t, o) => {
             o.d(t, { ZP: () => p });
@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: a, hideBackButton: i, isFullWidth: l, isLarge: c, leftControl: d, middleControl: p, position: u, rightControl: b, secondaryBar: m, style: g, subtitle: y, title: f, titleDomId: C, titleIconCell: k, titleIconCellSize: B, withBackground: x, withWideContainer: Z } = this.props,
-                        { isModal: w } = this.context,
-                        _ = i ? d : r.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        v = (function (e, t, o) {
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: a, hideBackButton: i, isFullWidth: l, isLarge: c, leftControl: d, middleControl: p, position: u, rightControl: b, secondaryBar: m, style: g, subtitle: y, title: f, titleDomId: C, titleIconCell: k, titleIconCellSize: B, withBackground: v, withWideContainer: x } = this.props,
+                        { isModal: Z } = this.context,
+                        w = i ? d : r.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        _ = (function (e, t, o) {
                             return e && !(t && o);
-                        })(!!x, w, !!m);
-                    return r.createElement(r.Fragment, null, r.createElement(n.Z, { centerTitle: t, centeredLogo: o, isFullWidth: l, isLarge: c, leftControl: _, middleControl: p, position: h(u, w, a), rightControl: b, style: g, subtitle: y, title: f, titleDomId: C, titleIconCell: k, titleIconCellSize: B, withBackground: v, withWideContainer: Z }), m || null);
+                        })(!!v, Z, !!m);
+                    return r.createElement(r.Fragment, null, r.createElement(n.Z, { centerTitle: t, centeredLogo: o, isFullWidth: l, isLarge: c, leftControl: w, middleControl: p, position: h(u, Z, a), rightControl: b, style: g, subtitle: y, title: f, titleDomId: C, titleIconCell: k, titleIconCellSize: B, withBackground: _, withWideContainer: x }), m || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -217,7 +217,7 @@
             o.d(t, { Z: () => r });
             const r = o(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        41065: (e, t, o) => {
+        988227: (e, t, o) => {
             o.r(t), o.d(t, { default: () => n });
             var r = o(202784),
                 a = o(890601),
@@ -225,11 +225,24 @@
                 l = o(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const n = s;
+        },
+        748138: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => n });
+            var r = o(202784),
+                a = o(890601),
+                i = o(783427),
+                l = o(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const n = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountVerification-6107ac1a.9668ac4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountVerification-6107ac1a.6ff5b28a.js.map

@@ -181,7 +181,7 @@
                 };
         },
         842485: (e, t, o) => {
-            o.r(t), o.d(t, { Entry: () => E, KeyboardShortcutsScreen: () => x, ShortcutContent: () => Z, default: () => M });
+            o.r(t), o.d(t, { Entry: () => E, KeyboardShortcutsScreen: () => x, ShortcutContent: () => Z, default: () => T });
             var r = o(202784),
                 i = o(325686),
                 s = o(386802),
@@ -226,7 +226,7 @@
                 Z = ({ isModal: e, shortcuts: t }) =>
                     r.createElement(
                         i.Z,
-                        { style: [T.root, e && T.row] },
+                        { style: [M.root, e && M.row] },
                         t.map(({ headerText: t, shortcuts: o, subtitleText: s }, n) => {
                             const l = n === o.length - 1,
                                 c = o.length > 1;
@@ -234,11 +234,11 @@
                                 ? null
                                 : r.createElement(
                                       i.Z,
-                                      { key: n, style: [T.section, !l && !e && T.sectionBottomMargin] },
-                                      t ? r.createElement(a.Z, { style: T.moduleHeader, subtext: s, text: t }) : null,
+                                      { key: n, style: [M.section, !l && !e && M.sectionBottomMargin] },
+                                      t ? r.createElement(a.Z, { style: M.moduleHeader, subtext: s, text: t }) : null,
                                       r.createElement(
                                           i.Z,
-                                          { role: "table", style: !l && c && e && T.divider },
+                                          { role: "table", style: !l && c && e && M.divider },
                                           o.map((e, t) => r.createElement(E, { description: e.description, key: t, keys: e.keys })),
                                       ),
                                   );
@@ -248,19 +248,19 @@
                     const o = Array.isArray(t) ? t : [t];
                     return r.createElement(
                         i.Z,
-                        { role: "row", style: T.entry },
+                        { role: "row", style: M.entry },
                         r.createElement(n.ZP, { role: "cell" }, e),
                         r.createElement(
                             i.Z,
-                            { role: "cell", style: T.keyRow },
-                            o.map((e, t) => e.split(" ").map((e, o, i) => r.createElement(r.Fragment, { key: o }, 0 !== t && r.createElement(n.ZP, { style: T.plus }, ", "), r.createElement(n.ZP, { align: "center", style: T.key, withoutTwemojiAndHashflags: !0 }, e), o !== i.length - 1 ? r.createElement(n.ZP, { style: T.plus }, "+") : null))),
+                            { role: "cell", style: M.keyRow },
+                            o.map((e, t) => e.split(" ").map((e, o, i) => r.createElement(r.Fragment, { key: o }, 0 !== t && r.createElement(n.ZP, { style: M.plus }, ", "), r.createElement(n.ZP, { align: "center", style: M.key, withoutTwemojiAndHashflags: !0 }, e), o !== i.length - 1 ? r.createElement(n.ZP, { style: M.plus }, "+") : null))),
                         ),
                     );
                 },
-                T = l.default.create((e) => ({ root: { padding: e.spaces.space12, paddingBottom: e.spaces.space20 }, row: { flexDirection: "row" }, keyRow: { flexDirection: "row", alignItems: "center" }, section: { flexShrink: 1 }, sectionBottomMargin: { marginBottom: e.spaces.space12 }, divider: { borderStyle: "solid", borderEndWidth: e.borderWidths.small, borderColor: e.colors.gray50, paddingEnd: e.spaces.space12, marginEnd: e.spaces.space12 }, entry: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: e.spaces.space12, marginVertical: e.spaces.space2 }, key: { backgroundColor: e.colors.gray0, borderColor: e.colors.gray50, borderRadius: e.borderRadii.small, borderStyle: "solid", borderWidth: e.borderWidths.small, boxShadow: `inset 0 -1px 0 ${e.colors.gray200}`, fontFamily: "monospace, monospace", minWidth: "1.7em", paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space1 }, plus: { marginHorizontal: e.spaces.space2 }, moduleHeader: { paddingStart: e.spaces.space12 } })),
-                M = k(x);
+                M = l.default.create((e) => ({ root: { padding: e.spaces.space12, paddingBottom: e.spaces.space20 }, row: { flexDirection: "row" }, keyRow: { flexDirection: "row", alignItems: "center" }, section: { flexShrink: 1 }, sectionBottomMargin: { marginBottom: e.spaces.space12 }, divider: { borderStyle: "solid", borderEndWidth: e.borderWidths.small, borderColor: e.colors.gray50, paddingEnd: e.spaces.space12, marginEnd: e.spaces.space12 }, entry: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: e.spaces.space12, marginVertical: e.spaces.space2 }, key: { backgroundColor: e.colors.gray0, borderColor: e.colors.gray50, borderRadius: e.borderRadii.small, borderStyle: "solid", borderWidth: e.borderWidths.small, boxShadow: `inset 0 -1px 0 ${e.colors.gray200}`, fontFamily: "monospace, monospace", minWidth: "1.7em", paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space1 }, plus: { marginHorizontal: e.spaces.space2 }, moduleHeader: { paddingStart: e.spaces.space12 } })),
+                T = k(x);
         },
-        41065: (e, t, o) => {
+        748138: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var r = o(202784),
                 i = o(890601),
@@ -268,7 +268,7 @@
                 a = o(347101);
             const n = (e = {}) => {
                 const { direction: t } = (0, s.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const l = n;
@@ -288,4 +288,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.KeyboardShortcuts.fb7d743a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.KeyboardShortcuts.912b9a9a.js.map

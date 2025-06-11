@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.SettingsRevamp~bundle.SettingsTransparency"],
+    ["shared~bundle.SettingsRevamp~bundle.SettingsTransparency", "icons/IconEye-js"],
     {
         290402: (e, t, r) => {
             r.d(t, { Z: () => m });
@@ -70,14 +70,14 @@
                 b = r(443781),
                 f = r(500002),
                 y = r(312771),
-                C = r(615027),
-                w = r(267966),
-                _ = r(71620),
-                E = r(668214),
+                w = r(615027),
+                C = r(267966),
+                E = r(71620),
+                v = r(668214),
                 Z = r(673110);
-            const v = (0, E.Z)()
+            const _ = (0, v.Z)()
                     .propsFromState(() => ({ verifyPasswordFetchStatus: Z.UD }))
-                    .propsFromActions(() => ({ verifyPassword: Z.Gv, createLocalApiErrorHandler: (0, _.zr)("PASSWORD_GATEWAY") })),
+                    .propsFromActions(() => ({ verifyPassword: Z.Gv, createLocalApiErrorHandler: (0, E.zr)("PASSWORD_GATEWAY") })),
                 S = u().fe36fe10,
                 k = u().dec3c9b8,
                 P = u().hccd9dbe,
@@ -131,19 +131,19 @@
                     const { titleHeader: e } = this.props,
                         { passwordError: t } = this.state,
                         r = o.createElement(s.ZP, { link: { pathname: (0, i.ju)("https://x.com/i/flow/password_reset"), external: !0, openInSameFrame: !0 } }, R);
-                    return o.createElement(o.Fragment, null, e ? o.createElement(n.Z, { text: e }) : null, o.createElement(a.Z, { style: [w.Z.viewItem, w.Z.bottomBorder] }, o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, P)), o.createElement(l.Z, { errorText: t, helperText: r, invalid: !!t, label: k, name: "current_password", onChange: this._handleChange, onSubmitEditing: this._handlePasswordSubmit, type: "password", value: this.state.password }), o.createElement(c.Z, { style: F.buttonContainer }, o.createElement(d.ZP, { disabled: !1, onPress: this._handlePasswordSubmit, style: F.button, type: "brandFilled" }, D)));
+                    return o.createElement(o.Fragment, null, e ? o.createElement(n.Z, { text: e }) : null, o.createElement(a.Z, { style: [C.Z.viewItem, C.Z.bottomBorder] }, o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, P)), o.createElement(l.Z, { errorText: t, helperText: r, invalid: !!t, label: k, name: "current_password", onChange: this._handleChange, onSubmitEditing: this._handlePasswordSubmit, type: "password", value: this.state.password }), o.createElement(c.Z, { style: z.buttonContainer }, o.createElement(d.ZP, { disabled: !1, onPress: this._handlePasswordSubmit, style: z.button, type: "brandFilled" }, D)));
                 }
                 render() {
                     const { fetchStatus: e, location: t, render: r } = this.props,
                         { verificationRequired: a } = this.state,
                         s = e === y.ZP.FAILED && a;
-                    return o.createElement(o.Fragment, null, s ? (this._passwordlessSsoEnabled ? o.createElement(C.Z, { to: { pathname: "/i/flow/verify_account_ownership", state: { input: { requested_variant: t.pathname } } } }) : this._renderPasswordPrompt()) : o.createElement(g.Z, { fetchStatus: e, onRequestRetry: this._handleFetch, render: r }));
+                    return o.createElement(o.Fragment, null, s ? (this._passwordlessSsoEnabled ? o.createElement(w.Z, { to: { pathname: "/i/flow/verify_account_ownership", state: { input: { requested_variant: t.pathname } } } }) : this._renderPasswordPrompt()) : o.createElement(g.Z, { fetchStatus: e, onRequestRetry: this._handleFetch, render: r }));
                 }
             }
             (I.contextType = b.rC), (I.defaultProps = { titleHeader: S });
-            const F = p.default.create((e) => ({ buttonContainer: { flexDirection: "row", justifyContent: "flex-end", marginVertical: 0, marginHorizontal: "auto", paddingBottom: e.spaces.space12, paddingHorizontal: 0 }, button: { marginVertical: 0, marginHorizontal: e.componentDimensions.gutterHorizontal } })),
-                z = v(I),
-                A = (0, f.ZP)(z);
+            const z = p.default.create((e) => ({ buttonContainer: { flexDirection: "row", justifyContent: "flex-end", marginVertical: 0, marginHorizontal: "auto", paddingBottom: e.spaces.space12, paddingHorizontal: 0 }, button: { marginVertical: 0, marginHorizontal: e.componentDimensions.gutterHorizontal } })),
+                F = _(I),
+                A = (0, f.ZP)(F);
         },
         267966: (e, t, r) => {
             r.d(t, { Z: () => s });
@@ -194,9 +194,9 @@
                 render() {
                     const { "aria-posinset": e, "aria-setsize": t, checked: r, disabled: p, helpText: u, label: g, name: b, testID: f } = this.props,
                         y = c.Z.generate({ backgroundColor: h.default.theme.colors.transparent, color: h.default.theme.colors.primary, withFocusWithinFocusRing: !0 }),
-                        C = c.Z.generate({ backgroundColor: h.default.theme.colors.transparent, color: h.default.theme.colors.gray700, withFocusWithinFocusRing: !0 }),
-                        w = r ? y : C;
-                    return o.createElement(l.Z, { disabled: p }, (l) => o.createElement(a.Z, { role: "label", style: [m.root, !p && m.interactive], testID: f }, o.createElement(a.Z, { style: m.topContainer }, o.createElement(i.ZP, { id: this.labelId }, g), o.createElement(a.Z, { style: m.radioContainer }, o.createElement(d.Z, { interactiveStyles: w, interactivityState: l, style: m.radioBackground }, o.createElement(a.Z, { style: [m.circle, r && m.circleActive, p && m.circleDisabled, r && p && m.circleCheckedAndDisabled] }, r ? o.createElement(s.default, { style: m.checkMark }) : null)), (0, n.Z)("input", { "aria-posinset": e, "aria-setsize": t, "aria-describedby": this.descriptionId, "aria-labelledby": this.labelId, checked: r, disabled: p, name: b, onChange: this._handleChange, ref: this._setRef, style: [m.nativeControl], type: "radio" }))), u ? o.createElement(i.ZP, { color: "gray700", id: this.descriptionId, size: "subtext2", style: m.helpText }, u) : null));
+                        w = c.Z.generate({ backgroundColor: h.default.theme.colors.transparent, color: h.default.theme.colors.gray700, withFocusWithinFocusRing: !0 }),
+                        C = r ? y : w;
+                    return o.createElement(l.Z, { disabled: p }, (l) => o.createElement(a.Z, { role: "label", style: [m.root, !p && m.interactive], testID: f }, o.createElement(a.Z, { style: m.topContainer }, o.createElement(i.ZP, { id: this.labelId }, g), o.createElement(a.Z, { style: m.radioContainer }, o.createElement(d.Z, { interactiveStyles: C, interactivityState: l, style: m.radioBackground }, o.createElement(a.Z, { style: [m.circle, r && m.circleActive, p && m.circleDisabled, r && p && m.circleCheckedAndDisabled] }, r ? o.createElement(s.default, { style: m.checkMark }) : null)), (0, n.Z)("input", { "aria-posinset": e, "aria-setsize": t, "aria-describedby": this.descriptionId, "aria-labelledby": this.labelId, checked: r, disabled: p, name: b, onChange: this._handleChange, ref: this._setRef, style: [m.nativeControl], type: "radio" }))), u ? o.createElement(i.ZP, { color: "gray700", id: this.descriptionId, size: "subtext2", style: m.helpText }, u) : null));
                 }
                 focus() {
                     this._ref && this._ref.focus();
@@ -230,14 +230,14 @@
                     const { "aria-label": e, description: t, disabled: r, label: s, name: n, options: l, value: c } = this.props;
                     return o.createElement(
                         a.Z,
-                        { "aria-label": e, "aria-labelledby": s && !e ? this._labelId : void 0, role: "radiogroup", style: r && C.disabled, testID: `${b}${n}` },
-                        s ? o.createElement(a.Z, { id: this._labelId, role: "label", style: C.header }, o.createElement(i.ZP, { style: C.label, weight: "bold" }, s), t ? o.createElement(i.ZP, { color: "gray700", size: "subtext2" }, t) : null) : null,
+                        { "aria-label": e, "aria-labelledby": s && !e ? this._labelId : void 0, role: "radiogroup", style: r && w.disabled, testID: `${b}${n}` },
+                        s ? o.createElement(a.Z, { id: this._labelId, role: "label", style: w.header }, o.createElement(i.ZP, { style: w.label, weight: "bold" }, s), t ? o.createElement(i.ZP, { color: "gray700", size: "subtext2" }, t) : null) : null,
                         l.map((e, t) => o.createElement(g, { "aria-posinset": t + 1, "aria-setsize": l.length, checked: e.value === c, disabled: r, helpText: e.helpText, key: e.value, label: e.label, name: n, onChange: this._handleItemChanged(e.value), ref: this._setRadioRef(t, e.value === c), testID: e.testID })),
                     );
                 }
             }
             y.defaultProps = { disabled: !1 };
-            const C = h.default.create((e) => ({ header: { alignItems: "flex-start" }, label: { paddingTop: e.spaces.space12, paddingBottom: e.spaces.space4 }, disabled: { opacity: 0.5 } }));
+            const w = h.default.create((e) => ({ header: { alignItems: "flex-start" }, label: { paddingTop: e.spaces.space12, paddingBottom: e.spaces.space4 }, disabled: { opacity: 0.5 } }));
         },
         101890: (e, t, r) => {
             r.d(t, { Z: () => n });
@@ -252,6 +252,19 @@
             r.d(t, { Z: () => o });
             const o = r(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
+        988227: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
+            var o = r(202784),
+                a = r(890601),
+                s = r(783427),
+                i = r(347101);
+            const n = (e = {}) => {
+                const { direction: t } = (0, s.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: t });
+            };
+            n.metadata = { width: 24, height: 24 };
+            const l = n;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsRevamp~bundle.SettingsTransparency.02d23fba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsRevamp~bundle.SettingsTransparency.5dc99eda.js.map

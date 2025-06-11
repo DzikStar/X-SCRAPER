@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.SettingsAwards"],
+    ["ondemand.SettingsAwards", "icons/IconIllustrationPassiveIncome-js"],
     {
         625661: (e, t, a) => {
             a.d(t, { ZP: () => m });
@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: a, fixed: i, hideBackButton: l, isFullWidth: s, isLarge: c, leftControl: d, middleControl: m, position: p, rightControl: g, secondaryBar: h, style: y, subtitle: k, title: b, titleDomId: w, titleIconCell: _, titleIconCellSize: f, withBackground: v, withWideContainer: C } = this.props,
-                        { isModal: E } = this.context,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: a, fixed: i, hideBackButton: l, isFullWidth: s, isLarge: c, leftControl: d, middleControl: m, position: p, rightControl: g, secondaryBar: h, style: y, subtitle: k, title: b, titleDomId: w, titleIconCell: f, titleIconCellSize: v, withBackground: _, withWideContainer: E } = this.props,
+                        { isModal: C } = this.context,
                         Z = l ? d : n.createElement(r.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        F = (function (e, t, a) {
+                        x = (function (e, t, a) {
                             return e && !(t && a);
-                        })(!!v, E, !!h);
-                    return n.createElement(n.Fragment, null, n.createElement(o.Z, { centerTitle: t, centeredLogo: a, isFullWidth: s, isLarge: c, leftControl: Z, middleControl: m, position: u(p, E, i), rightControl: g, style: y, subtitle: k, title: b, titleDomId: w, titleIconCell: _, titleIconCellSize: f, withBackground: F, withWideContainer: C }), h || null);
+                        })(!!_, C, !!h);
+                    return n.createElement(n.Fragment, null, n.createElement(o.Z, { centerTitle: t, centeredLogo: a, isFullWidth: s, isLarge: c, leftControl: Z, middleControl: m, position: u(p, C, i), rightControl: g, style: y, subtitle: k, title: b, titleDomId: w, titleIconCell: f, titleIconCellSize: v, withBackground: x, withWideContainer: E }), h || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -152,48 +152,48 @@
                 k = a(688715),
                 b = a(731708),
                 w = a(154003),
-                _ = a(167630),
-                f = a(392237),
-                v = a(111677),
-                C = a.n(v),
-                E = a(980407),
+                f = a(167630),
+                v = a(392237),
+                _ = a(111677),
+                E = a.n(_),
+                C = a(980407),
                 Z = a(698537),
-                F = a(782642),
-                x = a(892541),
+                x = a(782642),
+                F = a(892541),
                 B = a(87908),
-                T = a(491369);
-            const S = f.default.create((e) => ({ list: { gap: e.spaces.space24 }, listItem: { flexDirection: "row", gap: e.spaces.space16 }, listItemContent: { flex: 1 }, listItemTitle: { marginBottom: e.spaces.space4 }, illustration: { height: "50px", width: "50px" } })),
+                z = a(491369);
+            const T = v.default.create((e) => ({ list: { gap: e.spaces.space24 }, listItem: { flexDirection: "row", gap: e.spaces.space16 }, listItemContent: { flex: 1 }, listItemTitle: { marginBottom: e.spaces.space4 }, illustration: { height: "50px", width: "50px" } })),
                 I = [
-                    { illustration: c.createElement(x.default, { style: S.illustration }), title: C().d520d188, description: C().ea770766 },
-                    { illustration: c.createElement(B.default, { style: S.illustration }), title: C().d27f5ac6, description: C().h1d66df0 },
-                    { illustration: c.createElement(T.default, { style: S.illustration }), title: C().f85fb0a2, description: C().d1433e24 },
+                    { illustration: c.createElement(F.default, { style: T.illustration }), title: E().d520d188, description: E().ea770766 },
+                    { illustration: c.createElement(B.default, { style: T.illustration }), title: E().d27f5ac6, description: E().h1d66df0 },
+                    { illustration: c.createElement(z.default, { style: T.illustration }), title: E().f85fb0a2, description: E().d1433e24 },
                 ],
-                K = () =>
+                S = () =>
                     c.createElement(
                         y.Z,
-                        { role: "list", style: S.list },
-                        I.map((e) => c.createElement(y.Z, { key: e.title, role: "listitem", style: S.listItem }, e.illustration, c.createElement(y.Z, { style: S.listItemContent }, c.createElement(b.ZP, { style: S.listItemTitle, weight: "heavy" }, e.title), c.createElement(b.ZP, { color: "gray700" }, e.description)))),
+                        { role: "list", style: T.list },
+                        I.map((e) => c.createElement(y.Z, { key: e.title, role: "listitem", style: T.listItem }, e.illustration, c.createElement(y.Z, { style: T.listItemContent }, c.createElement(b.ZP, { style: T.listItemTitle, weight: "heavy" }, e.title), c.createElement(b.ZP, { color: "gray700" }, e.description)))),
                     ),
-                A = "/settings/monetization";
-            var L = (function () {
+                K = "/settings/monetization";
+            var A = (function () {
                 var e = [{ alias: null, args: [{ kind: "Literal", name: "s", value: "4721" }], kind: "ScalarField", name: "awards_feature_activate", storageKey: 'awards_feature_activate(s:"4721")' }];
                 return { fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useAwardsActivateMutation", selections: e, type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [], kind: "Operation", name: "useAwardsActivateMutation", selections: e }, params: { id: "ql0nbxLYZcgEQyw5Z0PlWw", metadata: {}, name: "useAwardsActivateMutation", operationKind: "mutation", text: null } };
             })();
-            L.hash = "aaaa1c71aa5e6b2e3a109a5b37594b3f";
-            const R = L;
-            var z = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useAwardsActivate_user", selections: [{ kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }], type: "User", abstractKey: null, hash: "eaa526ce3924dce881ea12c7b2d29239" };
-            const P = z;
+            A.hash = "aaaa1c71aa5e6b2e3a109a5b37594b3f";
+            const L = A;
+            var P = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useAwardsActivate_user", selections: [{ kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }], type: "User", abstractKey: null, hash: "eaa526ce3924dce881ea12c7b2d29239" };
+            const R = P;
             var D = a(614983),
-                M = a.n(D),
-                W = a(277660),
-                q = a.n(W),
-                H = a(351743),
-                U = a.n(H);
-            const N = P,
-                Q = R,
-                O = (e) => {
-                    const t = q()(N, e),
-                        [a, n] = U()(Q);
+                H = a.n(D),
+                M = a(277660),
+                W = a.n(M),
+                q = a(351743),
+                V = a.n(q);
+            const U = R,
+                N = L,
+                Q = (e) => {
+                    const t = W()(U, e),
+                        [a, n] = V()(N);
                     return [
                         c.useCallback(
                             () =>
@@ -204,9 +204,9 @@
                                         onError: n,
                                         updater: (e, a) => {
                                             const n = t.__id;
-                                            M()(n, "userId must be specified");
+                                            H()(n, "userId must be specified");
                                             const i = e.get(n);
-                                            M()(i, "userRecord must be specified"), i.invalidateRecord();
+                                            H()(i, "userRecord must be specified"), i.invalidateRecord();
                                         },
                                     });
                                 }),
@@ -215,34 +215,34 @@
                         n,
                     ];
                 },
-                j = C().ecdbece0,
-                V = C().ef4602ec,
-                G = C().j087774e,
-                Y = C().db3f0bbe,
-                X = C().a1f40cf8,
+                j = E().ecdbece0,
+                O = E().ef4602ec,
+                G = E().j087774e,
+                Y = E().db3f0bbe,
+                X = E().a1f40cf8,
                 $ = (0, k.ju)("https://legal.x.com/creator-terms"),
-                J = f.default.create((e) => ({ root: { paddingHorizontal: e.spaces.space64, paddingTop: e.spaces.space8, paddingBottom: "120px" }, iconTwitter: { color: e.colors.primary }, headline: { marginVertical: e.spaces.space16 }, spacing: { marginBottom: e.spaces.space8 }, footer: { marginHorizontal: e.spaces.space64, marginVertical: e.spaces.space16 } })),
+                J = v.default.create((e) => ({ root: { paddingHorizontal: e.spaces.space64, paddingTop: e.spaces.space8, paddingBottom: "120px" }, iconTwitter: { color: e.colors.primary }, headline: { marginVertical: e.spaces.space16 }, spacing: { marginBottom: e.spaces.space8 }, footer: { marginHorizontal: e.spaces.space64, marginVertical: e.spaces.space16 } })),
                 ee = c.memo(
                     (0, p.Z)(
                         ({ user: e }) => {
                             const t = (0, d.useHistory)(),
                                 a = c.useCallback(() => {
-                                    t.push(A);
+                                    t.push(K);
                                 }, [t]),
-                                n = (0, F.p)(),
-                                [i, l] = O(e),
+                                n = (0, x.p)(),
+                                [i, l] = Q(e),
                                 s = c.useCallback(() => {
                                     i()
                                         .then(() => {
                                             n({ text: j }), t.push("/settings/monetization/awards/dashboard");
                                         })
                                         .catch(() => {
-                                            n({ text: V });
+                                            n({ text: O });
                                         });
                                 }, [n, i, t]),
                                 r = c.useMemo(() => ({ link: c.createElement(b.ZP, { link: $, weight: "bold" }) }), []),
-                                o = c.useMemo(() => c.createElement(y.Z, { style: J.footer }, c.createElement(b.ZP, { align: "center", color: "gray700", style: J.spacing }, c.createElement(C().I18NFormatMessage, { $i18n: "d4b0b963" }, c.cloneElement(r.link, null, C().d604fb32))), c.createElement(w.ZP, { disabled: l, onPress: s, type: "primaryFilled" }, l ? c.createElement(_.Z, null) : X)), [l, s, r]);
-                            return c.createElement(E.Z, { backButtonType: "close", bottomBar: o, documentTitle: G, history: t, onBackClick: a }, c.createElement(y.Z, { style: J.root }, c.createElement(b.ZP, { "aria-level": 1, role: "heading", size: "title1", weight: "heavy" }, G), c.createElement(b.ZP, { size: "headline1", style: J.headline, weight: "medium" }, Y), c.createElement(Z.Z, { style: J.spacing, type: Z.j.DiscoGlobe }), c.createElement(K, null)));
+                                o = c.useMemo(() => c.createElement(y.Z, { style: J.footer }, c.createElement(b.ZP, { align: "center", color: "gray700", style: J.spacing }, c.createElement(E().I18NFormatMessage, { $i18n: "d4b0b963" }, c.cloneElement(r.link, null, E().d604fb32))), c.createElement(w.ZP, { disabled: l, onPress: s, type: "primaryFilled" }, l ? c.createElement(f.Z, null) : X)), [l, s, r]);
+                            return c.createElement(C.Z, { backButtonType: "close", bottomBar: o, documentTitle: G, history: t, onBackClick: a }, c.createElement(y.Z, { style: J.root }, c.createElement(b.ZP, { "aria-level": 1, role: "heading", size: "title1", weight: "heavy" }, G), c.createElement(b.ZP, { size: "headline1", style: J.headline, weight: "medium" }, Y), c.createElement(Z.Z, { style: J.spacing, type: Z.j.DiscoGlobe }), c.createElement(S, null)));
                         },
                         { page: "onboarding", section: "Coins" },
                     ),
@@ -256,13 +256,13 @@
                         i = n.user_results.result,
                         l = a && i.award_eligible,
                         s = 0 === i.awards_eligibility?.length;
-                    return c.createElement(d.Switch, null, t && s && !l ? null : c.createElement(d.Route, null, c.createElement(h.Z, { to: A })), c.createElement(d.Route, { exact: !0, path: "/settings/awards" }, c.createElement(ee, { user: i })));
+                    return c.createElement(d.Switch, null, t && s && !l ? null : c.createElement(d.Route, null, c.createElement(h.Z, { to: K })), c.createElement(d.Route, { exact: !0, path: "/settings/awards" }, c.createElement(ee, { user: i })));
                 },
                 ne = { context: "AWARD_SETTINGS" },
                 ie = { type: "CustomRetry", content: () => null },
                 le = c.memo((0, p.Z)(() => c.createElement(m.N, { errorConfig: ne, fallback: ie }, c.createElement(ae, null)), { page: "settings", section: "awards" }));
         },
-        41065: (e, t, a) => {
+        87908: (e, t, a) => {
             a.r(t), a.d(t, { default: () => o });
             var n = a(202784),
                 i = a(890601),
@@ -270,11 +270,24 @@
                 s = a(347101);
             const r = (e = {}) => {
                 const { direction: t } = (0, l.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 50 50", children: n.createElement("g", null, n.createElement("circle", { cx: "25", cy: "25", fill: "#0f1419", r: "25" }), n.createElement("path", { d: "M36 16v14h-2V18H18v-2zm-22 4h18v14H14zm13.5 2c0 .328.065.653.19.957.126.303.31.579.542.81.47.47 1.105.733 1.768.733V22zm0 10H30v-2.5c-.663 0-1.299.263-1.768.732-.469.47-.732 1.105-.732 1.768zM21 27c0 1.66.9 3 2 3s2-1.34 2-3-.9-3-2-3-2 1.34-2 3zm-5-2.5c.328 0 .653-.065.957-.19.303-.126.579-.31.81-.542.233-.232.417-.508.543-.811.125-.304.19-.629.19-.957H16zm0 7.5h2.5c0-.663-.263-1.299-.732-1.768-.47-.469-1.105-.732-1.768-.732z", fill: "#fff" })) }, { writingDirection: t });
+            };
+            r.metadata = { width: 50, height: 50 };
+            const o = r;
+        },
+        748138: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => o });
+            var n = a(202784),
+                i = a(890601),
+                l = a(783427),
+                s = a(347101);
+            const r = (e = {}) => {
+                const { direction: t } = (0, l.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
             };
             r.metadata = { width: 24, height: 24 };
             const o = r;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsAwards.5f36310a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsAwards.b778f8ca.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.ProfessionalHome", "icons/IconBookStrokeOn-js"],
+    ["bundle.ProfessionalHome"],
     {
         233935: (e, t, a) => {
             a.d(t, { Z: () => p });
@@ -95,7 +95,7 @@
                 };
         },
         286960: (e, t, a) => {
-            a.d(t, { If: () => h });
+            a.d(t, { If: () => k });
             var n = a(202784),
                 r = a(325686),
                 l = a(731708),
@@ -152,18 +152,18 @@
             function _(e, t) {
                 if (t && 0 !== t) return (e - t) / t;
             }
-            const h = (e) => {
+            const k = (e) => {
                     const { metrics: t, showTimeMessage: a = !0, showTrend: c = !0 } = e,
                         d = (0, i.LX)();
                     if (!t) return null;
                     const u = e.metricsKeysToRender ?? ["Impressions", "EngagementRate", "ProfileVisits", "LinkClicks"],
-                        h = t.current_organic_metrics,
-                        v = t.past_organic_metrics,
-                        E = t.advertiser_accounts_by_primary_promotable_user?.items[0].current_promoted_metrics,
+                        k = t.current_organic_metrics,
+                        E = t.past_organic_metrics,
+                        v = t.advertiser_accounts_by_primary_promotable_user?.items[0].current_promoted_metrics,
                         Z = t.advertiser_accounts_by_primary_promotable_user?.items[0].past_promoted_metrics,
                         w = (e) => {
-                            const t = b(e, h, E ?? []),
-                                a = b(e, v, Z ?? []);
+                            const t = b(e, k, v ?? []),
+                                a = b(e, E, Z ?? []);
                             return { current: t.total_value, past: a.total_value, metadata: t.metadata };
                         };
                     function T(e) {
@@ -173,21 +173,21 @@
                             u = isFinite(i) && !isNaN(i),
                             y = u && isFinite(d) && !isNaN(d) && c,
                             b = "percent" === a.format ? f(i ?? 0) : "currency" === a.format && s?.currency_code ? (0, m.x)({ amount: i, currencyCode: s.currency_code, formatter: 1, removeTrailingZeros: !0 }) : (0, p.fV)(i, 1e4);
-                        return n.createElement(o.ZP, { animated: !0, count: i ?? 0, key: e, label: a.label, popover: ((h = a.popover), n.createElement(r.Z, null, n.createElement(l.ZP, { color: "gray700", size: "body", weight: "normal" }, h))), size: "title2", trendValue: y ? (_(i, d) ?? void 0) : void 0, value: u ? b : "-" });
-                        var h;
+                        return n.createElement(o.ZP, { animated: !0, count: i ?? 0, key: e, label: a.label, popover: ((k = a.popover), n.createElement(r.Z, null, n.createElement(l.ZP, { color: "gray700", size: "body", weight: "normal" }, k))), size: "title2", trendValue: y ? (_(i, d) ?? void 0) : void 0, value: u ? b : "-" });
+                        var k;
                     }
                     return n.createElement(
                         r.Z,
                         null,
                         n.createElement(
                             r.Z,
-                            { style: d ? k.gridMobile : k.gridDesktop },
-                            u.map((e) => n.createElement(s.Z, { "aria-label": e, key: e, upper: n.createElement(r.Z, { style: k.tile }, T(e)) })),
+                            { style: d ? h.gridMobile : h.gridDesktop },
+                            u.map((e) => n.createElement(s.Z, { "aria-label": e, key: e, upper: n.createElement(r.Z, { style: h.tile }, T(e)) })),
                         ),
                         a && n.createElement(l.ZP, { color: "gray700", size: "subtext3" }, y),
                     );
                 },
-                k = c.default.create((e) => {
+                h = c.default.create((e) => {
                     const t = { display: "grid", gridTemplateRows: "repeat(2, 1fr)", paddingVertical: e.spaces.space8, rowGap: e.spaces.space2 };
                     return { root: { padding: e.spaces.space16 }, gridDesktop: { ...t, gridTemplateColumns: "repeat(4, 1fr)" }, gridMobile: { ...t, gridTemplateColumns: "repeat(2, 1fr)" }, tile: { backgroundColor: e.colors.gray0, flexGrow: 1, justifyContent: "center", paddingStart: e.spaces.space16 } };
                 });
@@ -335,10 +335,10 @@
             const y = f;
             var b = a(202784),
                 _ = (a(585488), a(750410)),
-                h = a(111677),
-                k = a.n(h),
-                v = a(443781),
-                E = a(301410),
+                k = a(111677),
+                h = a.n(k),
+                E = a(443781),
+                v = a(301410),
                 Z = a(566220),
                 w = a(615027),
                 T = {
@@ -361,24 +361,24 @@
                 x = a(107267),
                 D = a(323265),
                 F = a(952793),
-                I = a(782826),
-                L = { kind: "InlineDataFragment", name: "invalidateProfessionalHomeUser_user", hash: "c4c066fd92866d7a3ce5ca16f23dc15f" };
-            const V = L;
-            var K = a(53647),
-                R = a.n(K),
+                L = a(782826),
+                I = { kind: "InlineDataFragment", name: "invalidateProfessionalHomeUser_user", hash: "c4c066fd92866d7a3ce5ca16f23dc15f" };
+            const K = I;
+            var V = a(53647),
+                R = a.n(V),
                 A = a(437429),
                 H = a.n(A),
                 B = a(990242),
                 M = a.n(B);
-            const z = V,
+            const U = K,
                 j = (e, t) => {
                     const a = ((e) => {
-                        const { __id: t } = M()(z, e);
+                        const { __id: t } = M()(U, e);
                         return t;
                     })(t);
                     return e.get(a);
                 },
-                U = (e) => {
+                z = (e) => {
                     const t = H()();
                     return b.useCallback(() => {
                         R()(t, (t) => {
@@ -401,14 +401,14 @@
             const J = "professional_home";
             var ee = a(206727);
             const te = ee.Z.root,
-                ae = k().c46cdabc,
+                ae = h().c46cdabc,
                 ne = () => {
                     const e = (0, x.useHistory)(),
                         t = (0, X.z)(),
                         a = Boolean(D.ZP.getTwitterAppVersion()),
                         n = a ? D.ZP.osString() : "web";
                     t.scribePageImpression({ page: J, section: n, component: "advanced_tools", action: "show" });
-                    return b.createElement(Y.Z, { backLocation: te, headerless: a, history: e, primaryContent: b.createElement(N.Z, { role: "list" }, b.createElement(N.Z, { role: "listitem" }, b.createElement(O.Z, { description: k().f6a2233a, disabled: !0, label: k().ccb3ca48, link: { pathname: "dummy" }, role: "link", thumbnail: b.createElement($.default, { style: le.actionIconsColor }) })), b.createElement(N.Z, { role: "listitem" }, b.createElement(O.Z, { description: k().b0ef3100, label: k().e0cb0c72, link: { pathname: (0, q.ju)("https://ads.x.com/"), external: !0 }, onPress: () => t.scribe({ page: J, section: "advanced_tools", element: "twitter_ads", action: "click" }), role: "link", thumbnail: b.createElement(Q.default, { style: le.actionIconsColor }) }))), sidebarContent: b.createElement(W.Z, null), title: ae, withBackButton: !a });
+                    return b.createElement(Y.Z, { backLocation: te, headerless: a, history: e, primaryContent: b.createElement(N.Z, { role: "list" }, b.createElement(N.Z, { role: "listitem" }, b.createElement(O.Z, { description: h().f6a2233a, disabled: !0, label: h().ccb3ca48, link: { pathname: "dummy" }, role: "link", thumbnail: b.createElement($.default, { style: le.actionIconsColor }) })), b.createElement(N.Z, { role: "listitem" }, b.createElement(O.Z, { description: h().b0ef3100, label: h().e0cb0c72, link: { pathname: (0, q.ju)("https://ads.x.com/"), external: !0 }, onPress: () => t.scribe({ page: J, section: "advanced_tools", element: "twitter_ads", action: "click" }), role: "link", thumbnail: b.createElement(Q.default, { style: le.actionIconsColor }) }))), sidebarContent: b.createElement(W.Z, null), title: ae, withBackButton: !a });
                 },
                 re = b.memo(ne),
                 le = G.default.create((e) => ({ actionIconsColor: { color: e.colors.gray700, marginBottom: e.spaces.space4 } }));
@@ -490,14 +490,14 @@
                 },
                 be = b.memo(ye);
             var _e = a(813751),
-                he = a(119232),
-                ke = a(301633),
-                ve = a(847988),
-                Ee = a(149170);
+                ke = a(119232),
+                he = a(301633),
+                Ee = a(847988),
+                ve = a(149170);
             const Ze = () => b.createElement(N.Z, { style: we.separator }),
                 we = G.default.create((e) => ({ separator: { backgroundColor: e.colors.gray50, height: e.borderWidths.small } })),
                 Te = () => {
-                    const { featureSwitches: e } = b.useContext(v.rC),
+                    const { featureSwitches: e } = b.useContext(E.rC),
                         t = (0, X.z)(),
                         a = e.isTrue("professional_launchpad_upload_address_book"),
                         n = e.isTrue("professional_launchpad_mobile_promotable_timeline"),
@@ -507,12 +507,12 @@
                     return b.createElement(
                         N.Z,
                         { role: "list" },
-                        b.createElement(N.Z, { role: "listitem" }, b.createElement(O.Z, { description: k().f53adc36, label: k().hc4981d6, link: { pathname: r ? "twitter://profile_spotlight" : "/settings/professional_profile/profile_spotlight", openInSameFrame: !0 }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "profile_spotlight", action: "click" }), role: "link", thumbnail: b.createElement(_e.default, { style: Se.actionIconsColor }) })),
-                        b.createElement(N.Z, { role: "listitem" }, b.createElement(O.Z, { description: k().fbce8dbe, disabled: !a, label: k().ae76c624, link: { openInSameFrame: !0, method: "push", ...(r ? { pathname: "twitter://onboarding/flow?flow_name=make_more_connections&input_flow_data=%7B%22requested_variant%22%3A%22professionalhome-professionalHomeEnabled%22%7D" } : { pathname: "/i/flow/make_more_connections", state: { input: { requested_variant: "launchpad" } } }) }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "make_more_connections", action: "click" }), role: "link", thumbnail: b.createElement(he.default, { style: Se.actionIconsColor }) })),
-                        b.createElement(N.Z, { role: "listitem" }, b.createElement(O.Z, { description: D.ZP.isIOS() ? k().ae0383d4 : k().a1dbe746, disabled: r && !n, label: D.ZP.isIOS() ? k().hbd124ae : k().hd80bd3e, link: { pathname: ee.Z.promotions }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "promotions", action: "click" }), role: "link", thumbnail: b.createElement(ke.default, { style: Se.actionIconsColor }) })),
+                        b.createElement(N.Z, { role: "listitem" }, b.createElement(O.Z, { description: h().f53adc36, label: h().hc4981d6, link: { pathname: r ? "twitter://profile_spotlight" : "/settings/professional_profile/profile_spotlight", openInSameFrame: !0 }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "profile_spotlight", action: "click" }), role: "link", thumbnail: b.createElement(_e.default, { style: Se.actionIconsColor }) })),
+                        b.createElement(N.Z, { role: "listitem" }, b.createElement(O.Z, { description: h().fbce8dbe, disabled: !a, label: h().ae76c624, link: { openInSameFrame: !0, method: "push", ...(r ? { pathname: "twitter://onboarding/flow?flow_name=make_more_connections&input_flow_data=%7B%22requested_variant%22%3A%22professionalhome-professionalHomeEnabled%22%7D" } : { pathname: "/i/flow/make_more_connections", state: { input: { requested_variant: "launchpad" } } }) }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "make_more_connections", action: "click" }), role: "link", thumbnail: b.createElement(ke.default, { style: Se.actionIconsColor }) })),
+                        b.createElement(N.Z, { role: "listitem" }, b.createElement(O.Z, { description: D.ZP.isIOS() ? h().ae0383d4 : h().a1dbe746, disabled: r && !n, label: D.ZP.isIOS() ? h().hbd124ae : h().hd80bd3e, link: { pathname: ee.Z.promotions }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "promotions", action: "click" }), role: "link", thumbnail: b.createElement(he.default, { style: Se.actionIconsColor }) })),
                         b.createElement(N.Z, { "aria-hidden": !0 }, b.createElement(Ze, null)),
-                        b.createElement(N.Z, { role: "listitem" }, b.createElement(O.Z, { description: k().fe2b0008, label: k().a35d9c9a, link: { pathname: (0, q.ju)("https://business.x.com/"), external: !0 }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "resources", action: "click" }), role: "link", thumbnail: b.createElement(ve.default, { style: Se.actionIconsColor }) })),
-                        b.createElement(N.Z, { role: "listitem" }, b.createElement(O.Z, { label: k().c46cdabc, link: { pathname: ee.Z.advancedTools }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "advanced_tools", action: "click" }), role: "link", thumbnail: b.createElement(Ee.default, { style: Se.actionIconsColor }) })),
+                        b.createElement(N.Z, { role: "listitem" }, b.createElement(O.Z, { description: h().fe2b0008, label: h().a35d9c9a, link: { pathname: (0, q.ju)("https://business.x.com/"), external: !0 }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "resources", action: "click" }), role: "link", thumbnail: b.createElement(Ee.default, { style: Se.actionIconsColor }) })),
+                        b.createElement(N.Z, { role: "listitem" }, b.createElement(O.Z, { label: h().c46cdabc, link: { pathname: ee.Z.advancedTools }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "advanced_tools", action: "click" }), role: "link", thumbnail: b.createElement(ve.default, { style: Se.actionIconsColor }) })),
                     );
                 },
                 Pe = b.memo(Te),
@@ -551,23 +551,23 @@
             const xe = Ce;
             var De = a(823161),
                 Fe = a(366635),
-                Ie = a(731708);
-            const Le = xe,
-                Ve = ({ userRef: e }) => {
-                    const t = C()(Le, e),
+                Le = a(731708);
+            const Ie = xe,
+                Ke = ({ userRef: e }) => {
+                    const t = C()(Ie, e),
                         a = t.avatar?.image_url ?? void 0,
                         n = t.professional?.category?.[0]?.name;
-                    return b.createElement(N.Z, { "aria-level": 3, role: "heading", style: Re.container }, b.createElement(De.default, { hasAdaptiveImage: !0, size: "large", style: Re.element, uri: a }), t.core?.name ? b.createElement(Fe.Z, { isBlueVerified: !!t.is_blue_verified, isVerified: !!t.verification?.verified, name: t.core.name ?? "", nameSize: "title3", verifiedType: t.verification?.verified_type ?? void 0, weight: "heavy" }) : null, n ? b.createElement(Ie.ZP, { color: "gray700", size: "body", style: Re.element, weight: "medium" }, n) : null);
+                    return b.createElement(N.Z, { "aria-level": 3, role: "heading", style: Re.container }, b.createElement(De.default, { hasAdaptiveImage: !0, size: "large", style: Re.element, uri: a }), t.core?.name ? b.createElement(Fe.Z, { isBlueVerified: !!t.is_blue_verified, isVerified: !!t.verification?.verified, name: t.core.name ?? "", nameSize: "title3", verifiedType: t.verification?.verified_type ?? void 0, weight: "heavy" }) : null, n ? b.createElement(Le.ZP, { color: "gray700", size: "body", style: Re.element, weight: "medium" }, n) : null);
                 },
-                Ke = b.memo(Ve),
+                Ve = b.memo(Ke),
                 Re = G.default.create((e) => ({ container: { marginHorizontal: e.spaces.space16, marginVertical: `calc(${e.spaces.space16} - ${e.spaces.space2})` }, element: { marginVertical: e.spaces.space2 } })),
                 Ae = ee.Z.home,
-                He = k().ff1c5e1a,
-                Be = k().bb081ea2,
+                He = h().ff1c5e1a,
+                Be = h().bb081ea2,
                 Me = oe,
-                ze = { pathname: "twitter://settings/professional_profile", openInSameFrame: !0 },
+                Ue = { pathname: "twitter://settings/professional_profile", openInSameFrame: !0 },
                 je = { label: Be },
-                Ue = ({ userRef: e }) => {
+                ze = ({ userRef: e }) => {
                     const t = (0, x.useHistory)(),
                         a = C()(Me, e),
                         n = (0, X.z)(),
@@ -575,13 +575,13 @@
                         l = r ? D.ZP.osString() : "web";
                     n.scribePageImpression({ page: J, section: l, component: "home", action: "show" });
                     const i = b.useCallback(() => n.scribe({ page: J, section: l, component: "SettingsAppBarButton", element: "professional_profile_settings", action: "click" }), [n, l]),
-                        o = b.createElement(N.Z, { style: Oe.webViewHeader }, b.createElement(Ke, { userRef: a }), !D.ZP.isAndroid() && b.createElement(N.Z, { style: Oe.webViewWrench }, b.createElement(se.ZP, { "aria-label": Be, hoverLabel: je, icon: b.createElement($.default, null), link: ze, onPress: i, type: "primaryText" }))),
-                        s = b.createElement(N.Z, { "aria-label": He, role: "region", style: Oe.contentMobile }, r ? o : b.createElement(Ke, { userRef: a }), b.createElement(Ze, null), b.createElement(be, { userRef: a }), b.createElement(Ze, null), b.createElement(Pe, null)),
+                        o = b.createElement(N.Z, { style: Oe.webViewHeader }, b.createElement(Ve, { userRef: a }), !D.ZP.isAndroid() && b.createElement(N.Z, { style: Oe.webViewWrench }, b.createElement(se.ZP, { "aria-label": Be, hoverLabel: je, icon: b.createElement($.default, null), link: Ue, onPress: i, type: "primaryText" }))),
+                        s = b.createElement(N.Z, { "aria-label": He, role: "region", style: Oe.contentMobile }, r ? o : b.createElement(Ve, { userRef: a }), b.createElement(Ze, null), b.createElement(be, { userRef: a }), b.createElement(Ze, null), b.createElement(Pe, null)),
                         c = (0, ce.yu)(),
                         d = !r && !(0, ue.ZP)() && c;
                     return b.createElement(Y.Z, { backLocation: Ae, headerless: r, history: t, primaryContent: s, rightControl: r ? null : b.createElement(de.Z, { onPress: i, to: "/settings/professional_profile" }), sidebarContent: b.createElement(W.Z, null), title: d ? null : He, withBackButton: d });
                 },
-                Ne = b.memo(Ue),
+                Ne = b.memo(ze),
                 Oe = G.default.create((e) => ({ contentMobile: { paddingBottom: e.spaces.space48 }, webViewHeader: { display: "flex", flexDirection: "row", alignItems: "flex-start", justifyContent: "space-between" }, webViewWrench: { marginHorizontal: e.spaces.space16, marginVertical: `calc(${e.spaces.space16} - ${e.spaces.space2})` } }));
             var qe = a(810641),
                 Ge = a(912021),
@@ -590,11 +590,11 @@
                 We = a(218951);
             const Ye = (0, Ge.Z)((e) => (0, We.Z)({ timelineId: `userPromotableTweets-graphql-${e}`, formatResponse: Qe.Z, network: { getEndpoint: (e) => e.withEndpoint($e.Z).fetchUserPromotableTweets, getEndpointParams: ({ count: t, cursor: a }) => ({ count: t, cursor: "string" == typeof a ? a : void 0, userId: e }) }, context: "FETCH_USERS_PROMOTABLE_TWEETS_TIMELINE", perfKey: "userPromotableTweetsGraphQL" })),
                 Xe = ee.Z.root,
-                Je = k().h257d4aa,
+                Je = h().h257d4aa,
                 et = (e) => {
                     const t = (0, x.useHistory)(),
                         a = (0, X.z)(),
-                        { viewerUserId: n } = b.useContext(v.rC);
+                        { viewerUserId: n } = b.useContext(E.rC);
                     if (!n) return null;
                     const r = Boolean(D.ZP.getTwitterAppVersion()),
                         l = r ? D.ZP.osString() : "web";
@@ -607,18 +607,18 @@
                 nt = ({ userRef: e }) => {
                     const t = C()(at, e),
                         a = b.useRef(t),
-                        n = U(t),
+                        n = z(t),
                         r = Boolean(D.ZP.getTwitterAppVersion()),
                         l = (0, F.hC)("professional_launchpad_m1_enabled"),
                         i = b.useMemo(() => ({ pathname: "/i/flow/convert_to_professional", state: l ? { input: { requested_variant: "professionalhome-professionalHomeEnabled" } } : void 0 }), [l]);
-                    return t?.professional ? b.createElement(x.Switch, null, b.createElement(x.Route, { exact: !0, path: ee.Z.root }, b.createElement(Ne, { userRef: t })), b.createElement(x.Route, { exact: !0, path: ee.Z.promotions }, b.createElement(tt, null)), b.createElement(x.Route, { exact: !0, path: ee.Z.advancedTools }, b.createElement(re, null))) : (n(), a.current?.professional ? (I.ZP.navigateTo(r ? "twitter://timeline" : "/home"), null) : b.createElement(w.Z, { to: i }));
+                    return t?.professional ? b.createElement(x.Switch, null, b.createElement(x.Route, { exact: !0, path: ee.Z.root }, b.createElement(Ne, { userRef: t })), b.createElement(x.Route, { exact: !0, path: ee.Z.promotions }, b.createElement(tt, null)), b.createElement(x.Route, { exact: !0, path: ee.Z.advancedTools }, b.createElement(re, null))) : (n(), a.current?.professional ? (L.ZP.navigateTo(r ? "twitter://timeline" : "/home"), null) : b.createElement(w.Z, { to: i }));
                 },
                 rt = b.memo(nt),
-                lt = k().a0b4541c,
+                lt = h().a0b4541c,
                 it = y,
-                ot = (0, E.z)(it, { errorConfig: { context: "PROFESSIONAL_HOME_SCREEN" } }),
+                ot = (0, v.z)(it, { errorConfig: { context: "PROFESSIONAL_HOME_SCREEN" } }),
                 st = () => {
-                    const { viewerUserId: e } = b.useContext(v.rC),
+                    const { viewerUserId: e } = b.useContext(E.rC),
                         t = (0, Z.R)(),
                         [a] = b.useState(t()),
                         n = new Date(a.getTime() - 6048e5),
@@ -626,8 +626,8 @@
                     return e
                         ? b.createElement(ot, {
                               render: ({ data: e, fetchStatus: t, retry: a }) => {
-                                  if (t === E.i.FAILED) return b.createElement(_.Z, { onRequestRetry: a, retryMessage: lt });
-                                  if (t === E.i.LOADED) {
+                                  if (t === v.i.FAILED) return b.createElement(_.Z, { onRequestRetry: a, retryMessage: lt });
+                                  if (t === v.i.LOADED) {
                                       const t = e?.user.result;
                                       return t ? b.createElement(rt, { userRef: t }) : b.createElement(w.Z, { to: "/home" });
                                   }
@@ -662,26 +662,26 @@
                 y = i().d9687d23,
                 b = i().ac73eb5a,
                 _ = i().c5a9f921,
-                h = (e) => {
-                    const { label: t, popover: a } = e;
-                    return t ? n.createElement(r.Z, { style: E.labelBar }, n.createElement(d.ZP, { color: "gray700", size: "subtext2", weight: "medium" }, t), a ? n.createElement(p.Z, { label: t, popover: a }) : null) : null;
-                },
                 k = (e) => {
-                    const { style: t, unit: a } = e;
-                    return a ? n.createElement(d.ZP, { color: "gray700", style: [E.unitText, t], weight: "medium" }, a) : null;
+                    const { label: t, popover: a } = e;
+                    return t ? n.createElement(r.Z, { style: v.labelBar }, n.createElement(d.ZP, { color: "gray700", size: "subtext2", weight: "medium" }, t), a ? n.createElement(p.Z, { label: t, popover: a }) : null) : null;
                 },
-                v = (e) => {
+                h = (e) => {
+                    const { style: t, unit: a } = e;
+                    return a ? n.createElement(d.ZP, { color: "gray700", style: [v.unitText, t], weight: "medium" }, a) : null;
+                },
+                E = (e) => {
                     let t,
                         a,
                         { trendValue: l } = e;
-                    return void 0 === l ? null : (Math.abs(l) < 0.1 ? ((l = Math.round(1e3 * l) / 1e3), (t = f(l))) : ((l = Math.round(100 * l) / 100), (t = g(l))), (a = ((e, t) => (e < 0 ? y({ trendValueNegativePercent: t }) : 0 === e ? b : _({ trendValuePositivePercent: t })))(l, t)), l < 0 ? n.createElement(r.Z, { style: E.trendBar, testID: "trendLabel" }, n.createElement(o.default, { "aria-label": a, style: E.trendIconNeg }), n.createElement(d.ZP, { "aria-hidden": !0, color: "red500", size: "body", weight: "medium" }, t)) : 0 === l ? n.createElement(r.Z, { style: E.trendBar, testID: "trendLabel" }, n.createElement(s.default, { "aria-label": a, style: E.trendIconZero }), n.createElement(d.ZP, { "aria-hidden": !0, color: "gray700", size: "body", weight: "medium" }, t)) : n.createElement(r.Z, { style: E.trendBar, testID: "trendLabel" }, n.createElement(c.default, { "aria-label": a, style: E.trendIconPos }), n.createElement(d.ZP, { "aria-hidden": !0, color: "green500", size: "body", weight: "medium" }, t)));
+                    return void 0 === l ? null : (Math.abs(l) < 0.1 ? ((l = Math.round(1e3 * l) / 1e3), (t = f(l))) : ((l = Math.round(100 * l) / 100), (t = g(l))), (a = ((e, t) => (e < 0 ? y({ trendValueNegativePercent: t }) : 0 === e ? b : _({ trendValuePositivePercent: t })))(l, t)), l < 0 ? n.createElement(r.Z, { style: v.trendBar, testID: "trendLabel" }, n.createElement(o.default, { "aria-label": a, style: v.trendIconNeg }), n.createElement(d.ZP, { "aria-hidden": !0, color: "red500", size: "body", weight: "medium" }, t)) : 0 === l ? n.createElement(r.Z, { style: v.trendBar, testID: "trendLabel" }, n.createElement(s.default, { "aria-label": a, style: v.trendIconZero }), n.createElement(d.ZP, { "aria-hidden": !0, color: "gray700", size: "body", weight: "medium" }, t)) : n.createElement(r.Z, { style: v.trendBar, testID: "trendLabel" }, n.createElement(c.default, { "aria-label": a, style: v.trendIconPos }), n.createElement(d.ZP, { "aria-hidden": !0, color: "green500", size: "body", weight: "medium" }, t)));
                 },
-                E = m.default.create((e) => ({ dataPoint: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, labelBar: { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: e.spaces.space2 }, valueBar: { display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "flex-end", marginBottom: e.spaces.space4 }, unitText: { flexDirection: "column" }, trendBar: { flexDirection: "row" }, textWithMargin: { marginEnd: e.spaces.space4 }, trendIconPos: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.green500 }, trendIconZero: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.gray700 }, trendIconNeg: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.red500 } })),
+                v = m.default.create((e) => ({ dataPoint: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, labelBar: { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: e.spaces.space2 }, valueBar: { display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "flex-end", marginBottom: e.spaces.space4 }, unitText: { flexDirection: "column" }, trendBar: { flexDirection: "row" }, textWithMargin: { marginEnd: e.spaces.space4 }, trendIconPos: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.green500 }, trendIconZero: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.gray700 }, trendIconNeg: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.red500 } })),
                 Z = (e) => {
                     const { animated: t, count: a, label: l, popover: i, size: o, subTextList: s, trendValue: c, unit: m, value: p } = e,
-                        g = m || void 0 !== c ? E.textWithMargin : void 0,
-                        f = void 0 !== c ? E.textWithMargin : void 0;
-                    return n.createElement(r.Z, { style: E.dataPoint }, n.createElement(h, { label: l, popover: i }), n.createElement(r.Z, { style: E.valueBar }, t ? n.createElement(u.ZP, { count: a, size: o, style: g, weight: "bold" }, p) : n.createElement(d.ZP, { size: o, style: g, weight: "bold" }, p), n.createElement(k, { style: f, unit: m }), n.createElement(v, { trendValue: c })), s);
+                        g = m || void 0 !== c ? v.textWithMargin : void 0,
+                        f = void 0 !== c ? v.textWithMargin : void 0;
+                    return n.createElement(r.Z, { style: v.dataPoint }, n.createElement(k, { label: l, popover: i }), n.createElement(r.Z, { style: v.valueBar }, t ? n.createElement(u.ZP, { count: a, size: o, style: g, weight: "bold" }, p) : n.createElement(d.ZP, { size: o, style: g, weight: "bold" }, p), n.createElement(h, { style: f, unit: m }), n.createElement(E, { trendValue: c })), s);
                 };
         },
         635998: (e, t, a) => {
@@ -713,13 +713,13 @@
                 s = a(952428),
                 c = a(392237);
             const d = (e) => {
-                    const { decoration: t, description: a, disabled: d = !1, isActive: m = !1, label: p, link: g, onPress: f, paddingHorizontal: y, renderRightContent: b, role: _ = "tab", styleOverride: h, testID: k = "pivot", thumbnail: v, thumbnailSize: E, withoutArrow: Z = !1 } = e,
-                        w = [u.thumbnailContainer, "medium" === E && u.thumbnailContainerMedium],
+                    const { decoration: t, description: a, disabled: d = !1, isActive: m = !1, label: p, link: g, onPress: f, paddingHorizontal: y, renderRightContent: b, role: _ = "tab", styleOverride: k, testID: h = "pivot", thumbnail: E, thumbnailSize: v, withoutArrow: Z = !1 } = e,
+                        w = [u.thumbnailContainer, "medium" === v && u.thumbnailContainerMedium],
                         T = "string" == typeof p ? n.createElement(o.ZP, null, p) : p,
                         P = "object" == typeof g && g.external && !g.openInSameFrame,
-                        S = a ? ("string" == typeof a ? n.createElement(o.ZP, { color: "gray700", size: "subtext2", testID: `${k}-description` }, a) : a) : null,
+                        S = a ? ("string" == typeof a ? n.createElement(o.ZP, { color: "gray700", size: "subtext2", testID: `${h}-description` }, a) : a) : null,
                         C = n.useMemo(() => ("space0" === y ? { paddingHorizontal: 0 } : { paddingHorizontal: y ? c.default.theme.spaces[y] : c.default.theme.componentDimensions.gutterHorizontal }), [y]);
-                    return n.createElement(s.Z, { "aria-selected": "tab" === _ ? m : null, disabled: d, link: d ? void 0 : g, onPress: f, role: _, style: [u.root, C, d && u.disabled, h], testID: k, withInteractiveStyling: !!g || !!f }, n.createElement(r.Z, { style: u.contentContainer }, v ? n.createElement(r.Z, { style: w }, v) : null, n.createElement(r.Z, { style: u.content }, T, S), b ? b() : null, (!g && !f) || d || Z ? null : P ? n.createElement(l.default, { style: u.icon }) : n.createElement(i.default, { style: u.icon })), t);
+                    return n.createElement(s.Z, { "aria-selected": "tab" === _ ? m : null, disabled: d, link: d ? void 0 : g, onPress: f, role: _, style: [u.root, C, d && u.disabled, k], testID: h, withInteractiveStyling: !!g || !!f }, n.createElement(r.Z, { style: u.contentContainer }, E ? n.createElement(r.Z, { style: w }, E) : null, n.createElement(r.Z, { style: u.content }, T, S), b ? b() : null, (!g && !f) || d || Z ? null : P ? n.createElement(l.default, { style: u.icon }) : n.createElement(i.default, { style: u.icon })), t);
                 },
                 u = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -814,24 +814,11 @@
                 o = a(392237);
             const s = o.default.create((e) => ({ root: { padding: e.spaces.space12, borderRadius: e.borderRadii.large }, defaultLowerContainerStyle: { marginTop: e.spaces.space12, justifyContent: "flex-end" }, defaultUpperContainerStyle: { height: `calc(${e.spaces.space48}*2)`, overflow: "hidden", borderRadius: e.borderRadii.large } })),
                 c = ({ "aria-label": e, containerStyle: t, disabled: a, interactiveStyles: c, isCompact: d, link: u, lower: m, onClick: p, stackLayoutLowerStyle: g, stackLayoutUpperStyle: f, upper: y, withInsetFocusRing: b = !0, withInteractiveStyling: _ = !1 }) => {
-                    const h = c ?? l.Z.generate({ backgroundColor: o.default.theme.colors.transparent, color: o.default.theme.colors.primary, insetFocusRing: b }),
-                        k = n.createElement(n.Fragment, null, n.createElement(r.Z, { style: [s.defaultUpperContainerStyle, f, d && { height: "auto" }] }, y), m ? n.createElement(r.Z, { style: [s.defaultLowerContainerStyle, g] }, m) : null);
-                    return n.createElement(i.Z, { "aria-label": e, disabled: a, interactive: _, interactiveStyles: _ ? h : void 0, link: u, onClick: p, style: [s.root, t] }, k);
+                    const k = c ?? l.Z.generate({ backgroundColor: o.default.theme.colors.transparent, color: o.default.theme.colors.primary, insetFocusRing: b }),
+                        h = n.createElement(n.Fragment, null, n.createElement(r.Z, { style: [s.defaultUpperContainerStyle, f, d && { height: "auto" }] }, y), m ? n.createElement(r.Z, { style: [s.defaultLowerContainerStyle, g] }, m) : null);
+                    return n.createElement(i.Z, { "aria-label": e, disabled: a, interactive: _, interactiveStyles: _ ? k : void 0, link: u, onClick: p, style: [s.root, t] }, h);
                 };
-        },
-        847988: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => s });
-            var n = a(202784),
-                r = a(890601),
-                l = a(783427),
-                i = a(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M15.2 4c-1.2 0-2.4.5-3.2 1.3-.8-.8-2-1.3-3.2-1.3H1v16h8.2c.8 0 1.4.4 1.8 1.1l.2.3H13c.5-.9 1.1-1.5 2-1.5h8V4h-7.8zM11 18.5c-.6-.3-1.2-.5-1.8-.5H3V6h5.8c.9 0 1.8.5 2.2 1.3v11.2zm10-.5h-6.1c-.7 0-1.3.2-1.9.5V7.3c.5-.8 1.3-1.3 2.2-1.3H21v12zm-2-5v2h-4v-2h4zm0-4v2h-4V9h4zM9 9v2H5V9h4zm0 4v2H5v-2h4z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const s = o;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ProfessionalHome.dd7712da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ProfessionalHome.cb82165a.js.map

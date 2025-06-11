@@ -51,9 +51,9 @@
                 E = o(418631),
                 y = o.n(E),
                 g = o(734701),
-                F = o.n(g),
-                v = o(630986),
-                T = o.n(v),
+                v = o.n(g),
+                F = o(630986),
+                T = o.n(F),
                 S = o(934309);
             const Z = { result: [], entities: {}, slice_info: {} },
                 I = (e, t) => {
@@ -91,7 +91,7 @@
                     },
                     editBookmarkFolder(t) {
                         const { bookmarkFolderId: o, name: r } = t;
-                        return e.graphQL(F(), { bookmark_collection_id: o, name: r });
+                        return e.graphQL(v(), { bookmark_collection_id: o, name: r });
                     },
                     removeTweetFromBookmarkFolder(t) {
                         const { bookmarkFolderId: o, tweetId: r } = t;
@@ -312,13 +312,13 @@
                 E = o(71620),
                 y = o(668214),
                 g = o(735313);
-            const F = (0, y.Z)()
+            const v = (0, y.Z)()
                     .propsFromActions(() => ({ clearTimelineCache: (e) => (0, g.Z)(e), createLocalApiErrorHandler: (0, E.zr)("BOOKMARK_SEARCH_CONTAINER") }))
                     .withAnalytics(),
-                v = l().e9c65c4a,
+                F = l().e9c65c4a,
                 T = l().b92a21d9,
                 S = r.createElement(l().I18NFormatMessage, { $i18n: "e7e44bab" }, r.createElement(p.ZP, { link: "/settings/search" }, l().f191a2ba)),
-                Z = F(({ clearTimelineCache: e, createLocalApiErrorHandler: t, query: o }) => {
+                Z = v(({ clearTimelineCache: e, createLocalApiErrorHandler: t, query: o }) => {
                     const n = r.useMemo(
                         () =>
                             (function (e) {
@@ -329,7 +329,7 @@
                     r.useEffect(() => {
                         e(n).catch(t());
                     }, [n, e, t]);
-                    return r.createElement(w.Z, { module: n, renderEmptyState: () => r.createElement(h.Z, { header: T({ query: o }), message: S }), title: v });
+                    return r.createElement(w.Z, { module: n, renderEmptyState: () => r.createElement(h.Z, { header: T({ query: o }), message: S }), title: F });
                 });
         },
         652904: (e, t, o) => {
@@ -432,7 +432,7 @@
         },
         482176: (e, t, o) => {
             "use strict";
-            o.d(t, { SS: () => E, ZP: () => F, aL: () => y, zs: () => w });
+            o.d(t, { SS: () => E, ZP: () => v, aL: () => y, zs: () => w });
             var r = o(912021),
                 n = o(744531),
                 i = o(403911),
@@ -552,7 +552,7 @@
                     return Promise.resolve(r([(0, m.m)(e).removeTweets({ [t]: !0 }), n.injectItems([e])]));
                 },
                 g = { ...b, ...f, customActionTypes: (0, c.X7)(f) },
-                F = d.Z.register(g);
+                v = d.Z.register(g);
         },
         545521: (e, t, o) => {
             "use strict";
@@ -616,7 +616,7 @@
         },
         841198: (e, t, o) => {
             "use strict";
-            o.d(t, { Be: () => f, Er: () => F, Ev: () => b, WC: () => y, Yf: () => _, t5: () => v });
+            o.d(t, { Be: () => f, Er: () => v, Ev: () => b, WC: () => y, Yf: () => _, t5: () => F });
             o(571372);
             var r = o(166852),
                 n = o(370751),
@@ -658,8 +658,8 @@
                 E = "rweb/slices/INJECT_ITEMS_SLICE",
                 y = ({ identityFunction: e, items: t, sliceKey: o }) => ({ type: E, meta: { sliceKey: o, identityFunction: e }, payload: t }),
                 g = "rweb/slices/REMOVE_ITEMS_SLICE",
-                F = ({ identityFunction: e, items: t, sliceKey: o }) => ({ type: g, meta: { sliceKey: o, identityFunction: e }, payload: t }),
-                v = ({ contextSuffix: e, params: t, sliceKey: o }) => ({ actionTypes: u, context: `FETCH_${e}`, meta: { sliceKey: o, direction: t?.cursor ? l.Yj.BOTTOM : l.Yj.TOP } });
+                v = ({ identityFunction: e, items: t, sliceKey: o }) => ({ type: g, meta: { sliceKey: o, identityFunction: e }, payload: t }),
+                F = ({ contextSuffix: e, params: t, sliceKey: o }) => ({ actionTypes: u, context: `FETCH_${e}`, meta: { sliceKey: o, direction: t?.cursor ? l.Yj.BOTTOM : l.Yj.TOP } });
             i.Z.register({
                 [_]: function (e = c, t) {
                     if (!t) return e;
@@ -734,17 +734,17 @@
                 l = o(952428),
                 c = o(392237);
             const d = (e) => {
-                    const { decoration: t, description: o, disabled: d = !1, isActive: m = !1, label: u, link: p, onPress: h, paddingHorizontal: b, renderRightContent: k, role: f = "tab", styleOverride: w, testID: E = "pivot", thumbnail: y, thumbnailSize: g, withoutArrow: F = !1 } = e,
-                        v = [_.thumbnailContainer, "medium" === g && _.thumbnailContainerMedium],
+                    const { decoration: t, description: o, disabled: d = !1, isActive: m = !1, label: u, link: p, onPress: h, paddingHorizontal: b, renderRightContent: k, role: f = "tab", styleOverride: w, testID: E = "pivot", thumbnail: y, thumbnailSize: g, withoutArrow: v = !1 } = e,
+                        F = [_.thumbnailContainer, "medium" === g && _.thumbnailContainerMedium],
                         T = "string" == typeof u ? r.createElement(s.ZP, null, u) : u,
                         S = "object" == typeof p && p.external && !p.openInSameFrame,
                         Z = o ? ("string" == typeof o ? r.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${E}-description` }, o) : o) : null,
                         I = r.useMemo(() => ("space0" === b ? { paddingHorizontal: 0 } : { paddingHorizontal: b ? c.default.theme.spaces[b] : c.default.theme.componentDimensions.gutterHorizontal }), [b]);
-                    return r.createElement(l.Z, { "aria-selected": "tab" === f ? m : null, disabled: d, link: d ? void 0 : p, onPress: h, role: f, style: [_.root, I, d && _.disabled, w], testID: E, withInteractiveStyling: !!p || !!h }, r.createElement(n.Z, { style: _.contentContainer }, y ? r.createElement(n.Z, { style: v }, y) : null, r.createElement(n.Z, { style: _.content }, T, Z), k ? k() : null, (!p && !h) || d || F ? null : S ? r.createElement(i.default, { style: _.icon }) : r.createElement(a.default, { style: _.icon })), t);
+                    return r.createElement(l.Z, { "aria-selected": "tab" === f ? m : null, disabled: d, link: d ? void 0 : p, onPress: h, role: f, style: [_.root, I, d && _.disabled, w], testID: E, withInteractiveStyling: !!p || !!h }, r.createElement(n.Z, { style: _.contentContainer }, y ? r.createElement(n.Z, { style: F }, y) : null, r.createElement(n.Z, { style: _.content }, T, Z), k ? k() : null, (!p && !h) || d || v ? null : S ? r.createElement(i.default, { style: _.icon }) : r.createElement(a.default, { style: _.icon })), t);
                 },
                 _ = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
-        41065: (e, t, o) => {
+        748138: (e, t, o) => {
             "use strict";
             o.r(t), o.d(t, { default: () => l });
             var r = o(202784),
@@ -753,11 +753,11 @@
                 a = o(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.BookmarkFolders~bundle.Bookmarks.33a5d4da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.BookmarkFolders~bundle.Bookmarks.2d3cdffa.js.map
