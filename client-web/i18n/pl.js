@@ -5450,8 +5450,8 @@
                 i("i8cae552", "Dodając swoją ocenę, pomagasz nam dbać o wysoką jakość uwag dodawanych w ramach programu Uwagi Społeczności."),
                 i("hd43a218", "Osiągnięto dzienny limit dodanych uwag"),
                 i("aaba8ed2", "Mając na uwadze zapewnienie wysokiej jakości uwag i ograniczenie rozpowszechniania spamu, uczestników programu obowiązuje dzienny limit uwag, które mogą oni dodać do Tweetów, wyrażany jako wartość pisarska. Spróbuj ponownie później."),
-                i("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                i("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                i("a67ed4d6", "Osiągnięto limit dodawania uwag do wpisów tego autora"),
+                i("ic484166", "Aby zachować wysoką jakość uwag oraz zapobiegać spamowaniu, wprowadziliśmy limit liczby uwag, które możesz napisać w odniesieniu do danego autora wpisów w danym okresie. Ten limit jest oparty na opiniach innych osób wskazujących, jak bardzo pomocne były Twoje poprzednie uwagi dotyczące tego autora. Spróbuj ponownie później."),
                 i("b98f077c", "Informacje dotyczące żądania uwagi"),
                 i("ee691104", "Zażądaj uwagi społeczności dotyczącej tego wpisu"),
                 i("f8cbdf02", "Uważasz, że ten wpis może wprowadzać w błąd? Zażądaj uwagi społeczności."),
@@ -7246,7 +7246,7 @@
                 i("h257d4aa", "Wybierz wpis, który chcesz promować"),
                 i("e9334fe6", "Aktualizacje danych co kilka minut"),
                 i("a6d7b1d0", "Na podstawie wewnętrznych danych serwisu X"),
-                i("h71a00e6", "You’re saving time with ad-free"),
+                i("h71a00e6", "Brak reklam pozwala Ci oszczędzać czas"),
                 i("f6c50ec0", "Okres korzystania z wersji próbnej bez reklam został zakończony"),
                 i("e1d1fbca", "Uniknięto"),
                 i("a82d7abd", function (e) {
@@ -8311,6 +8311,7 @@
                 i("e5e6479e", "Wyślij nam wiadomość e-mail zawierającą nazwę użytkownika organizacji oraz szczegóły zapytania, aby skorzystać z najszybszej pomocy technicznej."),
                 i("ica8392a", "Gdy otrzymamy Twoje żądanie, przeanalizujemy je i nadamy mu priorytet zgodnie z jego pozycją w kolejności odebranych żądań."),
                 i("ed37e36e", "Ważne: brak nazwy użytkownika organizacji lub użycie prywatnego adresu e-mail może spowodować opóźnienia w przetwarzaniu Twojego żądania."),
+                i("h7e1c146", "Delegate accounts are not currently supported."),
                 i("eb0d4fe2", "Utwórz kolumnę"),
                 i("e93d2f8a", "Dostosuj swoje ustawienia, dodając różne rodzaje kolumn, takie jak:"),
                 i("e8203d1e", "Wyszukiwania"),
@@ -8917,9 +8918,9 @@
                 i("b0b22805", function (e) {
                     return "Odwiedź " + e.advertiserName;
                 }),
-                i("c67e71aa", "Oglądaj teraz"),
-                i("a6ada13e", "Zrób zakupy");
-            i("j0f12222", "Zobacz więcej"),
+                i("c67e71aa", "Oglądaj teraz");
+            i("a6ada13e", "Zrób zakupy"),
+                i("j0f12222", "Zobacz więcej"),
                 i("f569f7c8", "Przejdź do strony"),
                 i("j0c6772a", "Odwiedź stronę"),
                 i("f73003aa", "Film rozpocznie się po reklamie"),
@@ -13375,4 +13376,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.44db8d6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.f8a84f3a.js.map

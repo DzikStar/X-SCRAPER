@@ -5440,8 +5440,8 @@
                 i("i8cae552", "Dengan memberi nilai, Anda akan membantu menjaga kualitas Catatan Komunitas."),
                 i("hd43a218", "Anda telah mencapai batas penulisan catatan per hari"),
                 i("aaba8ed2", "Untuk menjaga kualitas catatan dan mencegah spam, ada batas jumlah catatan yang dapat ditulis oleh kontributor setiap harinya berdasarkan Dampak Penulisan mereka. Silakan coba lagi nanti."),
-                i("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                i("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                i("a67ed4d6", "Saat ini Anda sudah mencapai batas maksimal catatan untuk postingan penulis ini"),
+                i("ic484166", "Untuk menjaga kualitas catatan tetap tinggi dan mencegah spam, ada batasan jumlah catatan yang bisa ditulis untuk seorang penulis postingan tertentu dalam jangka waktu tertentu. Batas ini didasarkan pada seberapa bermanfaat catatan dari orang tersebut tentang penulis tersebut. Silakan coba lagi nanti."),
                 i("b98f077c", "Minta Info Catatan"),
                 i("ee691104", "Minta Catatan Komunitas tentang postingan ini"),
                 i("f8cbdf02", "Menurut Anda, postingan ini berpotensi menyesatkan? Minta Catatan Komunitas."),
@@ -7236,7 +7236,7 @@
                 i("h257d4aa", "Pilih postingan untuk dipromosikan"),
                 i("e9334fe6", "Data diperbarui setiap beberapa menit"),
                 i("a6d7b1d0", "Berdasarkan Data Internal X"),
-                i("h71a00e6", "You’re saving time with ad-free"),
+                i("h71a00e6", "Bebas iklan menghemat waktu Anda"),
                 i("f6c50ec0", "Uji coba bebas iklan Anda sudah berakhir"),
                 i("e1d1fbca", "Anda telah menghindari"),
                 i("a82d7abd", function (a) {
@@ -8301,6 +8301,7 @@
                 i("e5e6479e", "Kirimkan email kepada kami berisi pegangan organisasi Anda dan detail permintaan Anda untuk mendapatkan dukungan secepatnya."),
                 i("ica8392a", "Setelah kami menerima permintaan Anda, kami akan meninjau dan memprioritaskannya berdasarkan urutan penerimaannya."),
                 i("ed37e36e", "Penting: Tidak mencantumkan pegangan organisasi Anda atau menggunakan email pribadi dapat membuat pemrosesan permintaan Anda memakan waktu lebih lama."),
+                i("h7e1c146", "Delegate accounts are not currently supported."),
                 i("eb0d4fe2", "Buat kolom"),
                 i("e93d2f8a", "Ciptakan pengalaman tersendiri dengan menambahkan berbagai kolom seperti:"),
                 i("e8203d1e", "Pencarian"),
@@ -8907,9 +8908,9 @@
                 i("b0b22805", function (a) {
                     return "Kunjungi " + a.advertiserName;
                 }),
-                i("c67e71aa", "Tonton sekarang"),
-                i("a6ada13e", "Belanja sekarang");
-            i("j0f12222", "Lihat selengkapnya"),
+                i("c67e71aa", "Tonton sekarang");
+            i("a6ada13e", "Belanja sekarang"),
+                i("j0f12222", "Lihat selengkapnya"),
                 i("f569f7c8", "Kunjungi situs web"),
                 i("j0c6772a", "Kunjungi situs web"),
                 i("f73003aa", "Video akan diputar setelah iklan"),
@@ -13360,4 +13361,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.462ca28a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.b306d5ea.js.map

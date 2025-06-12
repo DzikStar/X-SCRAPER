@@ -5441,8 +5441,8 @@
                 n("i8cae552", "En effectuant des évaluations, vous participerez au maintien d'une qualité élevée de la fonctionnalité Notes de la Communauté."),
                 n("hd43a218", "Vous avez atteint votre limite quotidienne de rédaction de Notes"),
                 n("aaba8ed2", "Pour garantir une qualité élevée des Notes et prévenir le spam, le nombre de Notes qu'un contributeur peut écrire chaque jour est limité en fonction de l'impact de ses rédactions. Veuillez réessayer plus tard."),
-                n("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                n("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                n("a67ed4d6", "Vous avez atteint la limite d'ajout de notes aux posts de cet auteur"),
+                n("ic484166", "Pour garantir une qualité élevée des notes et prévenir le spam, le nombre de notes qu'il est possible d'écrire sur un auteur de post est limité sur une période donnée. Cette limite est basée sur la perception de l'utilité des notes passées d'un contributeur au sujet cet auteur. Veuillez réessayer plus tard."),
                 n("b98f077c", "Information sur la demande de Note"),
                 n("ee691104", "Demander une Note de la Communauté sur ce post"),
                 n("f8cbdf02", "Vous pensez que ce post est potentiellement trompeur ? Demandez une Note de la Communauté."),
@@ -7237,7 +7237,7 @@
                 n("h257d4aa", "Choisir un post à sponsoriser"),
                 n("e9334fe6", "Mises à jour des données toutes les quelques minutes"),
                 n("a6d7b1d0", "Sur la base de données internes X"),
-                n("h71a00e6", "You’re saving time with ad-free"),
+                n("h71a00e6", "Vous gagnez du temps en évitant les publicités"),
                 n("f6c50ec0", "Votre essai sans publicités est terminé"),
                 n("e1d1fbca", "Vous avez évité"),
                 n("a82d7abd", function (e) {
@@ -8302,6 +8302,7 @@
                 n("e5e6479e", "Envoyez‑nous un email avec le nom d'utilisateur de votre organisation et les détails de votre demande pour bénéficier de l'assistance la plus rapide possible."),
                 n("ica8392a", "À la réception de votre demande, nous la passerons en revue. Les demandes sont traitées par ordre d'arrivée."),
                 n("ed37e36e", "Important : si le nom d'utilisateur de votre organisation n'est pas indiqué ou si vous utilisez une adresse email personnelle, le traitement de votre demande pourra être retardé."),
+                n("h7e1c146", "Delegate accounts are not currently supported."),
                 n("eb0d4fe2", "Créer une colonne"),
                 n("e93d2f8a", "Personnalisez votre expérience en ajoutant diverses colonnes. Par exemple :"),
                 n("e8203d1e", "Recherches"),
@@ -8908,9 +8909,9 @@
                 n("b0b22805", function (e) {
                     return "Rendez-vous sur " + e.advertiserName;
                 }),
-                n("c67e71aa", "Regarder maintenant"),
-                n("a6ada13e", "Acheter maintenant");
-            n("j0f12222", "Voir plus"),
+                n("c67e71aa", "Regarder maintenant");
+            n("a6ada13e", "Acheter maintenant"),
+                n("j0f12222", "Voir plus"),
                 n("f569f7c8", "Accéder au site Web"),
                 n("j0c6772a", "Visiter le site Web"),
                 n("f73003aa", "La vidéo sera lue après la publicité."),
@@ -13361,4 +13362,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.93b5923a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.4032998a.js.map

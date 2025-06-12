@@ -8302,6 +8302,7 @@
                 t("e5e6479e", "Send us an email with your organization’s handle and the details of your inquiry to receive the fastest support."),
                 t("ica8392a", "Once we receive your request, we’ll review and prioritize it in the order it was received."),
                 t("ed37e36e", "Important: Missing your organization’s handle or using a personal email may cause delays in processing your request."),
+                t("h7e1c146", "Delegate accounts are not currently supported."),
                 t("eb0d4fe2", "Crea unha columna"),
                 t("e93d2f8a", "Para personalizar a túa experiencia, engade diferentes columnas como estas:"),
                 t("e8203d1e", "Procuras"),
@@ -8908,9 +8909,9 @@
                 t("b0b22805", function (e) {
                     return "Visitar " + e.advertiserName;
                 }),
-                t("c67e71aa", "Ver agora"),
-                t("a6ada13e", "Mercar agora");
-            t("j0f12222", "Ver máis"),
+                t("c67e71aa", "Ver agora");
+            t("a6ada13e", "Mercar agora"),
+                t("j0f12222", "Ver máis"),
                 t("f569f7c8", "Ir ao sitio web"),
                 t("j0c6772a", "Visitar sitio web"),
                 t("f73003aa", "O vídeo reproducirase despois do anuncio"),
@@ -13362,4 +13363,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.32b5ab4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.add9081a.js.map

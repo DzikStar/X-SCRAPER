@@ -322,15 +322,15 @@
                 f = n.createElement(a.default, null),
                 b = { context: "PaymentsProfileButton" },
                 C = { type: "CustomRetry", content: () => null },
-                y = ({ buttonStyle: e, userId: t }) => {
-                    const o = (0, u.z)(),
-                        a = (0, r.useHistory)(),
-                        { permissions: l } = (0, s.Z)({ fetchKey: "UserProfile" }),
-                        c = (0, d.nK)(l),
-                        h = n.useCallback(() => {
-                            t && (o.scribe({ section: "x-payments-profile", element: "payments", action: "click" }), a.push("/i/money/transfer", { userId: t, step: "reviewPane" }));
-                        }, [o, a, t]);
-                    return c ? n.createElement(i.ZP, { accessibilityLabel: p, hoverLabel: m, icon: f, onPress: h, style: e, testID: "paymentsFromProfile", type: "primaryOutlined" }) : null;
+                y = ({ buttonStyle: e, disabled: t, userId: o }) => {
+                    const a = (0, u.z)(),
+                        l = (0, r.useHistory)(),
+                        { permissions: c } = (0, s.Z)({ fetchKey: "UserProfile" }),
+                        h = (0, d.nK)(c),
+                        b = n.useCallback(() => {
+                            o && (a.scribe({ section: "x-payments-profile", element: "payments", action: "click" }), l.push("/i/money/transfer", { userId: o, step: "reviewPane" }));
+                        }, [a, l, o]);
+                    return h ? n.createElement(i.ZP, { accessibilityLabel: p, disabled: t, hoverLabel: m, icon: f, onPress: b, style: e, testID: "paymentsFromProfile", type: "primaryOutlined" }) : null;
                 },
                 B = (e) => {
                     const [t] = (0, c.Z)({ allowLockedSession: !0 });
@@ -431,4 +431,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-9f4db315.1b7bebaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-9f4db315.3c4989da.js.map

@@ -5441,8 +5441,8 @@
                 t("i8cae552", "Valora les Notes de la Comunitat per contribuir a mantenir-ne la qualitat."),
                 t("hd43a218", "Has arribat al teu límit diari per escriure anotacions"),
                 t("aaba8ed2", "Per mantenir la qualitat de les anotacions i evitar el contingut brossa, hi ha un límit en el número d'anotacions que els col·laboradors poden escriure cada dia, en funció del seu impacte d'escriptura. Torna-ho a provar més tard."),
-                t("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                t("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                t("a67ed4d6", "Has arribat al límit d'anotacions que pots afegir a les publicacions d'aquest autor de moment"),
+                t("ic484166", "Perquè la qualitat de les anotacions sigui sempre alta i per tal d'evitar el correu brossa, el nombre d'anotacions que es poden escriure a l'autor d'una publicació concreta en un període de temps específic és limitat. Aquest límit es basa en si altres persones han considerat útils les anotacions que aquesta persona ha escrit sobre l'autor en el passat. Torna-ho a provar més tard."),
                 t("b98f077c", "Informació sobre Sol·licita una nota"),
                 t("ee691104", "Sol·licita una Nota de la Comunitat sobre aquesta publicació"),
                 t("f8cbdf02", "Creus que aquesta publicació podria ser enganyosa? Sol·licita una Nota de la Comunitat."),
@@ -7237,7 +7237,7 @@
                 t("h257d4aa", "Selecciona una publicació per patrocinar-la"),
                 t("e9334fe6", "Actualitzacions de dades cada pocs minuts"),
                 t("a6d7b1d0", "Basat en dades internes de X"),
-                t("h71a00e6", "You’re saving time with ad-free"),
+                t("h71a00e6", "Estàs estalviant temps sense anuncis"),
                 t("f6c50ec0", "La prova sense anuncis ha finalitzat"),
                 t("e1d1fbca", "Has evitat"),
                 t("a82d7abd", function (e) {
@@ -8302,6 +8302,7 @@
                 t("e5e6479e", "Envia'ns un correu electrònic amb l'identificador de la teva organització i els detalls de la consulta per rebre assistència ràpida."),
                 t("ica8392a", "Quan rebem la teva sol·licitud, la revisarem i prioritzarem segons l'ordre d'arribada."),
                 t("ed37e36e", "Important: No incloure l'identificador de la teva organització o utilitzar un correu electrònic personal pot endarrerir el processament de la teva sol·licitud."),
+                t("h7e1c146", "Delegate accounts are not currently supported."),
                 t("eb0d4fe2", "Crea una columna"),
                 t("e93d2f8a", "Personalitza la teva experiència afegint diverses columnes, com ara:"),
                 t("e8203d1e", "Cerques"),
@@ -8908,9 +8909,9 @@
                 t("b0b22805", function (e) {
                     return "Visita " + e.advertiserName;
                 }),
-                t("c67e71aa", "Mira-ho ara"),
-                t("a6ada13e", "Compra ara");
-            t("j0f12222", "Mostra'n més"),
+                t("c67e71aa", "Mira-ho ara");
+            t("a6ada13e", "Compra ara"),
+                t("j0f12222", "Mostra'n més"),
                 t("f569f7c8", "Ves al lloc web"),
                 t("j0c6772a", "Visita el lloc web"),
                 t("f73003aa", "El vídeo es reproduirà després de l'anunci"),
@@ -13362,4 +13363,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.976a387a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.f98dd0fa.js.map

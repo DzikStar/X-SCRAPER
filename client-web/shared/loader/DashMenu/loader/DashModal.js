@@ -60,9 +60,9 @@
                 A = n(880647),
                 R = n(655352),
                 q = n(125363),
-                B = n(466036),
-                Q = n(390387),
-                W = n(76920),
+                W = n(466036),
+                B = n(390387),
+                Q = n(76920),
                 N = n(477403),
                 $ = n(104119),
                 G = n(484633),
@@ -113,17 +113,17 @@
                     }, [Pe, De]);
                     const Ee = (0, q.I0)();
                     l.useEffect(() => {
-                        c?.protected && Ee(B.GE());
+                        c?.protected && Ee(W.GE());
                     }, [Ee, c]);
-                    const Me = (0, W.Zy)();
+                    const Me = (0, Q.Zy)();
                     Me.size > 0 && Me.add("/settings");
-                    const Ie = (0, q.v9)(Q.Lz),
-                        Ae = ({ link: e }) => !(Ie && (("string" == typeof e && ((e.startsWith("/settings") && !Me.has(e)) || e.includes("ads.twitter.com") || e.includes("studio.twitter.com") || e.includes("analytics.twitter.com") || e.includes("ads.x.com") || e.includes("studio.x.com") || e.includes("analytics.x.com"))) || ("object" == typeof e && e.pathname.startsWith("/i/flow")))),
+                    const Ie = (0, q.v9)(B.Lz),
+                        Ae = ({ link: e }) => !(Ie && (("string" == typeof e && ((e.startsWith("/settings") && !Me.has(e)) || e.includes("ads.twitter.com") || e.includes("studio.twitter.com") || e.includes("analytics.twitter.com") || e.includes("ads.x.com") || e.startsWith("/i/chat") || e.includes("studio.x.com") || e.includes("analytics.x.com"))) || ("object" == typeof e && e.pathname.startsWith("/i/flow")))),
                         Re = c?.screen_name || "",
                         qe = (0, a.iv)().width,
-                        Be = A.Z.isOneColumnLayout(qe) || A.Z.isOneColumnSquishedLayout(qe),
-                        Qe = i.isTrue("responsive_web_birdwatch_note_writing_enabled") && !Ie,
-                        We = i.isTrue("branded_like_preview_enabled"),
+                        We = A.Z.isOneColumnLayout(qe) || A.Z.isOneColumnSquishedLayout(qe),
+                        Be = i.isTrue("responsive_web_birdwatch_note_writing_enabled") && !Ie,
+                        Qe = i.isTrue("branded_like_preview_enabled"),
                         Ne = i.isTrue("subscriptions_sign_up_enabled"),
                         $e = i.isTrue("dash_region_specific_de_media_transparency_items_enabled"),
                         Ge = i.isTrue("blue_business_vo_nav_for_legacy_verified"),
@@ -208,11 +208,11 @@
                         Ai = { label: ge, onClick: mi("jobs_item"), link: "/jobs", icon: z.default },
                         Ri = [pi, bi],
                         qi = Ne && !Ye,
-                        Bi = Ge,
-                        Qi = (0, U.Z)([Ei, wi, ei ? Si : void 0, oi ? Ci : void 0, qi ? Fi() : void 0, di ? Di : void 0, Re ? yi : void 0, ki, ii ? fi : void 0, Bi ? (Je ? Ui : Oi()) : void 0, si ? Ti : void 0, Qe ? gi : void 0, Ze || Te ? hi : void 0, _i ? Zi() : void 0, Vi, Ki, ri ? Ai : void 0, Mi ? Ii : void 0, zi, Li]).filter(Ae),
-                        Wi = l.useContext(D.hC),
-                        Ni = (0, U.Z)([Ei, M.yw.Lists > Wi && Re ? yi : void 0, M.yw.Premium > Wi && ei ? Si : void 0, M.yw.PremiumSignup > Wi && qi ? Fi() : void 0, M.yw.Bookmarks > Wi ? ki : void 0, M.yw.Payments > Wi && oi ? Ci : void 0, M.yw.Communities > Wi && di ? Di : void 0, M.yw.Articles > Wi && Xe ? fi : void 0, M.yw.CommunityNotes > Wi && Qe ? gi : void 0, M.yw.Analytics > Wi && _i ? Zi() : void 0, Vi, M.yw.VerifiedOrgDash > Wi && Bi && Je ? Ui : void 0, (((!Je || r.isLegacyVerifiedOrg()) && M.yw.VerifiedOrgSignup > Wi) || (r.isVerifiedOrgAffiliate() && !r.isVerifiedOrg())) && i.isTrue("blue_business_vo_nav_for_legacy_verified") ? Oi() : void 0, si ? Ti : void 0, We ? vi : void 0, Ze || Te ? hi : void 0, Ki, M.yw.Jobs > Wi && ri ? Ai : void 0, void 0, ti ? ji : void 0, ai ? xi : void 0, Mi ? Ii : void 0, zi]).filter(Ae);
-                    return (0, R.ZP)() ? ((Fe = Fe.concat(Ni)), $e && Be && (Se = Ri)) : ((Fe = Fe.concat(Qi)), $e && (Se = Ri)), { coreItems: Fe, countrySpecificItems: Se };
+                        Wi = Ge,
+                        Bi = (0, U.Z)([Ei, wi, ei ? Si : void 0, oi ? Ci : void 0, qi ? Fi() : void 0, di ? Di : void 0, Re ? yi : void 0, ki, ii ? fi : void 0, Wi ? (Je ? Ui : Oi()) : void 0, si ? Ti : void 0, Be ? gi : void 0, Ze || Te ? hi : void 0, _i ? Zi() : void 0, Vi, Ki, ri ? Ai : void 0, Mi ? Ii : void 0, zi, Li]).filter(Ae),
+                        Qi = l.useContext(D.hC),
+                        Ni = (0, U.Z)([Ei, M.yw.Lists > Qi && Re ? yi : void 0, M.yw.Premium > Qi && ei ? Si : void 0, M.yw.PremiumSignup > Qi && qi ? Fi() : void 0, M.yw.Bookmarks > Qi ? ki : void 0, M.yw.Payments > Qi && oi ? Ci : void 0, M.yw.Communities > Qi && di ? Di : void 0, M.yw.Articles > Qi && Xe ? fi : void 0, M.yw.CommunityNotes > Qi && Be ? gi : void 0, M.yw.Analytics > Qi && _i ? Zi() : void 0, Vi, M.yw.VerifiedOrgDash > Qi && Wi && Je ? Ui : void 0, (((!Je || r.isLegacyVerifiedOrg()) && M.yw.VerifiedOrgSignup > Qi) || (r.isVerifiedOrgAffiliate() && !r.isVerifiedOrg())) && i.isTrue("blue_business_vo_nav_for_legacy_verified") ? Oi() : void 0, si ? Ti : void 0, Qe ? vi : void 0, Ze || Te ? hi : void 0, Ki, M.yw.Jobs > Qi && ri ? Ai : void 0, void 0, ti ? ji : void 0, ai ? xi : void 0, Mi ? Ii : void 0, zi]).filter(Ae);
+                    return (0, R.ZP)() ? ((Fe = Fe.concat(Ni)), $e && We && (Se = Ri)) : ((Fe = Fe.concat(Bi)), $e && (Se = Ri)), { coreItems: Fe, countrySpecificItems: Se };
                 };
         },
         206962: (e, i, n) => {
@@ -299,4 +299,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.DashModal.669d5d0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.DashModal.0d71244a.js.map

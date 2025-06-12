@@ -170,41 +170,42 @@
                         S = c && !I,
                         O = r && w && !t && !e && !S,
                         R = w && !t && !e && !S && !C,
-                        x = !I && h?.screen_name && P,
-                        N = w && !I && !S,
-                        U = (0, de.hC)("responsive_web_repeat_profile_visits_notifications_device_follow_only_version_enabled") && u && !a,
-                        T = ((0, de.hC)("responsive_web_device_follow_without_user_follow_enabled") || U) && !h?.protected,
-                        D = (0, de.hC)("rweb_tipjar_consumption_enabled"),
-                        F = (0, de.hC)("responsive_web_grok_profile_summary_enabled"),
-                        W = (0, de.JY)("responsive_web_grok_profile_summary_min_followers", 1e6),
-                        L = (0, de.JY)("responsive_web_grok_profile_summary_min_posts", 100),
-                        V = !h?.verified_type || "User" === h?.verified_type,
-                        A = F && !h?.protected && V && (h?.statuses_count ?? 0) > L && (h?.followers_count ?? 0) > W,
-                        { openGrok: M } = (0, _e.Z)(),
-                        z = (a || T) && w && !t && !e && !c,
-                        j = (0, de.hC)("subscriptions_sign_up_enabled") && v.isTrueAndEnabled("subscriptions_feature_can_gift_premium") && h?.premium_gifting_eligible,
-                        H = i && !o && !m,
-                        $ = C;
+                        x = null == h?.can_pay || h?.can_pay,
+                        N = !I && h?.screen_name && P,
+                        U = w && !I && !S,
+                        T = (0, de.hC)("responsive_web_repeat_profile_visits_notifications_device_follow_only_version_enabled") && u && !a,
+                        D = ((0, de.hC)("responsive_web_device_follow_without_user_follow_enabled") || T) && !h?.protected,
+                        F = (0, de.hC)("rweb_tipjar_consumption_enabled"),
+                        W = (0, de.hC)("responsive_web_grok_profile_summary_enabled"),
+                        L = (0, de.JY)("responsive_web_grok_profile_summary_min_followers", 1e6),
+                        V = (0, de.JY)("responsive_web_grok_profile_summary_min_posts", 100),
+                        A = !h?.verified_type || "User" === h?.verified_type,
+                        M = W && !h?.protected && A && (h?.statuses_count ?? 0) > V && (h?.followers_count ?? 0) > L,
+                        { openGrok: z } = (0, _e.Z)(),
+                        j = (a || D) && w && !t && !e && !c,
+                        H = (0, de.hC)("subscriptions_sign_up_enabled") && v.isTrueAndEnabled("subscriptions_feature_can_gift_premium") && h?.premium_gifting_eligible,
+                        $ = i && !o && !m,
+                        Q = C;
                     return c
                         ? null
                         : n.createElement(
                               s.Z,
                               { style: Se.buttons },
-                              N && n.createElement(he.Z, { buttonStyle: Se.button, promotedContent: f, user: h, userRef: g }),
-                              D ? n.createElement(ue.Z, { style: Se.button, userId: b }) : null,
-                              A
+                              U && n.createElement(he.Z, { buttonStyle: Se.button, promotedContent: f, user: h, userRef: g }),
+                              F ? n.createElement(ue.Z, { style: Se.button, userId: b }) : null,
+                              M
                                   ? n.createElement(ee.ZP, {
                                         "aria-label": Ce,
                                         hoverLabel: { label: Ce },
                                         icon: n.createElement(le.x1, null),
                                         onPress: () => {
-                                            h?.screen_name && (E.scribe({ element: "grok_profile_summary", action: "click" }), M({ text: `@${h.screen_name}`, autoSubmit: !0, source: "user_profile_summary" }));
+                                            h?.screen_name && (E.scribe({ element: "grok_profile_summary", action: "click" }), z({ text: `@${h.screen_name}`, autoSubmit: !0, source: "user_profile_summary" }));
                                         },
                                         style: Se.button,
                                     })
                                   : null,
-                              w && I && !$ ? n.createElement(ee.ZP, { link: H ? "/i/flow/setup_profile" : "/settings/profile", style: Se.lastButton, testID: ge, type: "primaryOutlined" }, H ? Ee : we) : null,
-                              x && n.createElement(ae.r, { fullName: h?.name, screenName: h?.screen_name, style: Se.button, userId: b }),
+                              w && I && !Q ? n.createElement(ee.ZP, { link: $ ? "/i/flow/setup_profile" : "/settings/profile", style: Se.lastButton, testID: ge, type: "primaryOutlined" }, $ ? Ee : we) : null,
+                              N && n.createElement(ae.r, { fullName: h?.name, screenName: h?.screen_name, style: Se.button, userId: b }),
                               !I &&
                                   O &&
                                   n.createElement(ee.ZP, {
@@ -221,9 +222,9 @@
                                       testID: be,
                                       type: "primaryOutlined",
                                   }),
-                              !I && R && n.createElement(oe.Z, { buttonStyle: Se.button, userId: b }),
-                              !I && z && n.createElement(se.Z, { allowPromptForPush: !0, isDeviceFollowWithoutUserFollow: T && !a, isFollowing: u, style: Se.button, userId: b }),
-                              !I && h?.screen_name && j && n.createElement(ee.ZP, { "aria-label": Pe, hoverLabel: { label: Pe }, icon: Ze, link: `/${h?.screen_name}/gift-premium`, style: Se.button }),
+                              !I && R && n.createElement(oe.Z, { buttonStyle: Se.button, disabled: !x, userId: b }),
+                              !I && j && n.createElement(se.Z, { allowPromptForPush: !0, isDeviceFollowWithoutUserFollow: D && !a, isFollowing: u, style: Se.button, userId: b }),
+                              !I && h?.screen_name && H && n.createElement(ee.ZP, { "aria-label": Pe, hoverLabel: { label: Pe }, icon: Ze, link: `/${h?.screen_name}/gift-premium`, style: Se.button }),
                               !I && Z && p && !_ ? n.createElement(ce.Z, { isFollowing: a, isSuperFollowing: _, style: Se.button, userId: b }) : null,
                               !I && !e && !S && n.createElement(ne.Z, { onOffscreenChange: d }, n.createElement(ie.C, { isSuperFollowSubscriptionEnabled: Z, promotedContent: f, style: Se.lastButton, userId: b })),
                           );
@@ -752,4 +753,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e3794290.075b469a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e3794290.8f4505ea.js.map

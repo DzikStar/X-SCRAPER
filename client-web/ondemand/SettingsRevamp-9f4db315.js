@@ -8,7 +8,7 @@
             e.exports = { queryId: "kaH0vdJmbuocpRAeWpRC7A", operationName: "DeleteGrokMessage", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         645513: (e) => {
-            e.exports = { queryId: "AP0IN_JEh62MdIOfmkQK8A", operationName: "GrokConversationItemsByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "NS-xp6AJT5wt_LyRS_UjRA", operationName: "GrokConversationItemsByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         470969: (e) => {
             e.exports = { queryId: "9Hyh5D4-WXLnExZkONSkZg", operationName: "GrokHistory", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -29,7 +29,7 @@
             e.exports = { queryId: "Sr2QEitvnemma5D2NJlA2Q", operationName: "SearchGrokConversations", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         985289: (e) => {
-            e.exports = { queryId: "k7GjpRuvAYhZU8Hyk1uklw", operationName: "GrokShare", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "35pL_F5A2NdP7FuXgHHOuQ", operationName: "GrokShare", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         524816: (e) => {
             e.exports = { queryId: "-5e798p4EVbuhGGFFuw3Tg", operationName: "GrokUnpinConversation", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -70,9 +70,9 @@
                 _ = r(470969),
                 p = r.n(_),
                 m = r(374709),
-                f = r.n(m),
-                g = r(709401),
-                b = r.n(g),
+                g = r.n(m),
+                f = r(709401),
+                b = r.n(f),
                 h = r(965508),
                 y = r.n(h),
                 w = r(416024),
@@ -82,9 +82,9 @@
                 C = r(985289),
                 Z = r.n(C),
                 E = r(524816),
-                P = r.n(E),
-                S = r(917665),
-                T = r.n(S),
+                S = r.n(E),
+                P = r(917665),
+                T = r.n(P),
                 I = r(587068),
                 D = r.n(I);
             function A({ apiClient: e }) {
@@ -93,7 +93,7 @@
                     setPreferences: ({ grokMode: t, grokModelOptionId: r }) => e.graphQL(D(), { grokMode: t, grokModelOptionId: r }).then((e) => (e.set_grok_preferences?.preference_update_error?.error_code && (0, o.ZP)("GraphQL set grok preferences failed."), e)),
                     fetchConversation: ({ restId: t }) => e.graphQL(u(), { restId: t }).then((e) => e),
                     fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(Z(), { grok_share_id: t }).then((e) => e),
-                    fetchGrokHome: () => e.graphQL(f(), {}).then((e) => e),
+                    fetchGrokHome: () => e.graphQL(g(), {}).then((e) => e),
                     fetchHistory: ({ cursor: t }) => e.graphQL(p(), { cursor: t }).then((e) => e),
                     fetchPinnedConversations: ({ cursor: t }) => e.graphQL(v(), { cursor: t }).then((e) => e),
                     fetchMediaHistory: ({ cursor: t }) => e.graphQL(b(), { cursor: t }).then((e) => e),
@@ -101,7 +101,7 @@
                     deleteMessage: ({ chat_item_id: t, conversation_id: r }) => e.graphQL(l(), { conversation_id: r, chat_item_id: t }).then((e) => e),
                     logUserEventGrok: ({ action_type: t, group_id: r, object_id: n }) => e.graphQL(T(), { group_id: r, object_id: n, action_type: t }).then((e) => e),
                     grokPinConversation: ({ conversationId: t }) => e.graphQL(y(), { conversationId: t }).then((e) => e),
-                    grokUnpinConversation: ({ conversationId: t }) => e.graphQL(P(), { conversationId: t }).then((e) => e),
+                    grokUnpinConversation: ({ conversationId: t }) => e.graphQL(S(), { conversationId: t }).then((e) => e),
                     uploadFile: ({ abortController: t, file: r }) => {
                         const n = new FormData();
                         return n.append("image", r), e.postForm("grok/attachment", n, {}, { "x-xai-request-id": a().v4() }, void 0, t.signal).then((e) => e.map((e) => ({ ...e, url: e.url ?? (void 0 !== e.mediaId ? `https://api.x.com/2/grok/attachment.json?mediaId=${e.mediaId}` : void 0) })));
@@ -163,8 +163,8 @@
                 _ = r(443781),
                 p = r(518180),
                 m = r(534763),
-                f = r(603e3),
-                g = r(794721);
+                g = r(603e3),
+                f = r(794721);
             const b = d().j087774e,
                 h = d().df837dac,
                 y = n.Z,
@@ -172,7 +172,7 @@
                     const { featureSwitches: t } = a.useContext(_.rC),
                         r = t.isTrue("creator_monetization_web_tips_dashboard_enabled"),
                         n = i()(y, e);
-                    return r && n.award_eligible ? a.createElement(a.Fragment, null, a.createElement(m.H, { Icon: u.default, description: a.createElement(s.ZP, { color: "gray700", size: "subtext2", style: k.spacing }, a.createElement(g.Z, { revenueType: f.AU.awards_revenue, title: h, user: n })), label: b, link: p.OB.dashboard.root })) : null;
+                    return r && n.award_eligible ? a.createElement(a.Fragment, null, a.createElement(m.H, { Icon: u.default, description: a.createElement(s.ZP, { color: "gray700", size: "subtext2", style: k.spacing }, a.createElement(f.Z, { revenueType: g.AU.awards_revenue, title: h, user: n })), label: b, link: p.OB.dashboard.root })) : null;
                 },
                 v = a.memo(w),
                 k = c.default.create((e) => ({ spacing: { marginTop: e.spaces.space4 } }));
@@ -190,14 +190,14 @@
                 d = r(779610),
                 u = r(725405);
             const _ = ({ disabled: e = !1, formattedPayoutAmount: t, scribeComponent: r, styleOverride: _, ...p }) => {
-                    const f = (0, u.Z)(),
-                        { Icon: g, description: b, heading: h, iconBGColor: y, id: w, link: v, pill: k } = p,
+                    const g = (0, u.Z)(),
+                        { Icon: f, description: b, heading: h, iconBGColor: y, id: w, link: v, pill: k } = p,
                         x = n.useMemo(() => n.createElement(a.Z, { style: m.description }, n.createElement(o.ZP, { color: "gray700", size: "subtext2" }, b), t && n.createElement(o.ZP, { size: "subtext2", style: m.amount, weight: "bold" }, t)), [b, t]),
                         C = n.useMemo(() => n.createElement(a.Z, { style: m.heading }, k && n.createElement(i.ZP, { background: k.color }, n.createElement(o.ZP, { size: "subtext3", weight: "medium" }, k.label)), n.createElement(o.ZP, { weight: "bold" }, h)), [h, k]),
-                        Z = n.useMemo(() => n.createElement(s.Z, { Icon: g, shape: "square", style: { backgroundColor: c.Z.hexToCss(l.default.theme.colors[y], 0.8) } }), [g, y]),
+                        Z = n.useMemo(() => n.createElement(s.Z, { Icon: f, shape: "square", style: { backgroundColor: c.Z.hexToCss(l.default.theme.colors[y], 0.8) } }), [f, y]),
                         E = n.useCallback(() => {
-                            f.scribe({ component: r, action: "click" });
-                        }, [f, r]);
+                            g.scribe({ component: r, action: "click" });
+                        }, [g, r]);
                     return n.createElement(d.Z, { description: x, disabled: e, label: C, link: v, onPress: v ? E : void 0, paddingHorizontal: "space8", styleOverride: _, testID: w, thumbnail: Z });
                 },
                 p = n.memo(_),
@@ -221,9 +221,9 @@
                         o = i()(_, t),
                         [c, l] = (0, d.$)(o, r),
                         [p, m] = (0, d.LF)(o),
-                        f = a.useMemo(() => ({ color: "primary" }), []),
-                        g = a.useMemo(() => ({ label: `/${m}`, value: l }), [l, m]);
-                    return a.createElement(s.Z, { progressBarConfig: f, statConfig: g, title: n, valueCurrent: c, valueMax: p });
+                        g = a.useMemo(() => ({ color: "primary" }), []),
+                        f = a.useMemo(() => ({ label: `/${m}`, value: l }), [l, m]);
+                    return a.createElement(s.Z, { progressBarConfig: g, statConfig: f, title: n, valueCurrent: c, valueMax: p });
                 },
                 m = a.memo(p);
         },
@@ -242,13 +242,13 @@
             const _ = d().f139168e,
                 p = d().ee0510c2,
                 m = Object.freeze({ earnings: { link: "/settings/monetization/earnings", text: _, size: "xLarge" }, payoutHistory: { link: "/settings/monetization/payout_history", text: p } }),
-                f = (e) => {
+                g = (e) => {
                     const { type: t } = e;
                     if (!t) return null;
                     const { link: r, size: a, text: o } = m[t];
                     return n.createElement(s.ZP, { link: r, size: a, style: b.button }, o);
                 },
-                g = n.memo(f),
+                f = n.memo(g),
                 b = c.default.create((e) => ({ button: { marginVertical: e.spaces.space16 } }));
             var h = r(794721);
             const y = d().b0ac642a,
@@ -258,7 +258,7 @@
                 x = { pathname: u.NW.stripeSetup, state: { cameFromEarningsDashboard: !0 } },
                 C = (e) => {
                     const { revenueType: t, showHelperText: r, showProgress: c, stripeStatus: l, type: d, user: u } = e;
-                    return "Completed" !== l ? n.createElement(a.Z, { style: E.root }, n.createElement(o.Z, { text: w }), n.createElement(i.ZP, { color: "gray700", style: E.subtext }, k), n.createElement(s.ZP, { link: x }, v)) : n.createElement(a.Z, { style: E.root }, c && n.createElement(h.Z, { revenueType: t, user: u }), r && n.createElement(i.ZP, { color: "gray700", size: "subtext2" }, y), n.createElement(g, { type: d }));
+                    return "Completed" !== l ? n.createElement(a.Z, { style: E.root }, n.createElement(o.Z, { text: w }), n.createElement(i.ZP, { color: "gray700", style: E.subtext }, k), n.createElement(s.ZP, { link: x }, v)) : n.createElement(a.Z, { style: E.root }, c && n.createElement(h.Z, { revenueType: t, user: u }), r && n.createElement(i.ZP, { color: "gray700", size: "subtext2" }, y), n.createElement(f, { type: d }));
                 },
                 Z = n.memo(C),
                 E = c.default.create((e) => ({ root: { padding: e.spaces.space16 }, subtext: { marginVertical: e.spaces.space12, textAlign: "center" } }));
@@ -278,14 +278,14 @@
                 _ = r(518180),
                 p = r(720816),
                 m = r(534763),
-                f = r(794721);
-            const g = d().d7b51c68,
+                g = r(794721);
+            const f = d().d7b51c68,
                 b = d().df837dac,
                 h = n.Z,
                 y = (e) => {
                     const { description: t, isActiveCreator: r, user: n } = e,
                         o = i()(h, n);
-                    return a.createElement(m.H, { Icon: u.default, description: t || (r && a.createElement(s.ZP, { color: "gray700", size: "subtext2", style: v.spacing }, a.createElement(f.Z, { title: b, user: o }))), iconColor: "plum500", label: g, link: r ? _.Vt.dashboard.root : p.Jz });
+                    return a.createElement(m.H, { Icon: u.default, description: t || (r && a.createElement(s.ZP, { color: "gray700", size: "subtext2", style: v.spacing }, a.createElement(g.Z, { title: b, user: o }))), iconColor: "plum500", label: f, link: r ? _.Vt.dashboard.root : p.Jz });
                 },
                 w = a.memo(y),
                 v = c.default.create((e) => ({ spacing: { marginTop: e.spaces.space4 } }));
@@ -351,12 +351,12 @@
                 _ = r(844685),
                 p = r(943401),
                 m = r(111677),
-                f = r.n(m),
-                g = r(443781),
+                g = r.n(m),
+                f = r(443781),
                 b = r(736063);
-            const h = f().b5fe50fc,
-                y = f().c31a2ea6,
-                w = f().if996630,
+            const h = g().b5fe50fc,
+                y = g().c31a2ea6,
+                w = g().if996630,
                 v = a.Z,
                 k = n.Z;
             function x() {
@@ -377,7 +377,7 @@
             }
             const C = { context: "ads_categories_container" };
             function Z() {
-                const { featureSwitches: e } = (0, g.QZ)();
+                const { featureSwitches: e } = (0, f.QZ)();
                 return e.isTrue("ad_categories_setting_enabled") ? o.createElement(o.Fragment, null, o.createElement(u.Z, null), o.createElement(_.Z, { text: h }), o.createElement(p.Z, { description: y }), o.createElement(b.H, { errorConfig: C }, o.createElement(x, null)), o.createElement(u.Z, null)) : null;
             }
         },
@@ -425,8 +425,8 @@
                 _ = r(420412),
                 p = r(111677),
                 m = r.n(p),
-                f = r(736063);
-            const g = m().e26dbcd0,
+                g = r(736063);
+            const f = m().e26dbcd0,
                 b = m().aea7dda8,
                 h = (0, d.ju)("https://help.x.com/using-x/x-premium"),
                 y = a.Z,
@@ -444,11 +444,11 @@
                         }
                         n({ optimisticUpdater: e, updater: e, variables: { hideSubscriptionsOnProfile: !a } });
                     }, [a, t, n]);
-                return o.createElement(o.Fragment, null, o.createElement(u.Z, { checked: a, disabled: !1, helpText: b, label: g, learnMoreLink: h, name: "hideSubscriptionsCustomization", onChange: i }), o.createElement(_.Z, null));
+                return o.createElement(o.Fragment, null, o.createElement(u.Z, { checked: a, disabled: !1, helpText: b, label: f, learnMoreLink: h, name: "hideSubscriptionsCustomization", onChange: i }), o.createElement(_.Z, null));
             }
             const k = { context: "hidden_subscriptions_container" };
             function x({ userPreferences: e }) {
-                return o.createElement(f.H, { errorConfig: k }, o.createElement(v, { userPreferences: e }));
+                return o.createElement(g.H, { errorConfig: k }, o.createElement(v, { userPreferences: e }));
             }
         },
         440630: (e, t, r) => {
@@ -466,8 +466,8 @@
                 _ = r.n(u),
                 p = r(944681),
                 m = r(125363),
-                f = r(919022),
-                g = r(443781),
+                g = r(919022),
+                f = r(443781),
                 b = r(736063);
             const h = {
                     allow_for_you_recommendations: {
@@ -484,8 +484,8 @@
             function v({ preferences: e }) {
                 const t = s()(w, {}),
                     [r] = l()(y),
-                    { featureSwitches: n } = (0, g.QZ)(),
-                    a = (0, m.v9)(f.ZP.selectViewerUser);
+                    { featureSwitches: n } = (0, f.QZ)(),
+                    a = (0, m.v9)(g.ZP.selectViewerUser);
                 function i(e, n) {
                     const { __id: a, ...o } = t.user_preferences;
                     o &&
@@ -533,8 +533,8 @@
                 _ = r(111677),
                 p = r.n(_),
                 m = r(952793),
-                f = r(125363),
-                g = r(919022),
+                g = r(125363),
+                f = r(919022),
                 b = r(736063),
                 h = r(78940);
             const y = p().i586f3e0,
@@ -543,7 +543,7 @@
                 k = a.Z,
                 x = n.Z;
             function C({ userPreferences: e }) {
-                const t = (0, f.v9)(g.ZP.selectLoggedInUser),
+                const t = (0, g.v9)(f.ZP.selectLoggedInUser),
                     r = (0, m.hC)("grok_settings_age_restriction_enabled"),
                     n = (0, m.JY)("grok_settings_restriction_age", 18),
                     a = t?.birthdate,
@@ -584,15 +584,15 @@
                 _ = r.n(u),
                 p = r(952793),
                 m = r(125363),
-                f = r(919022),
-                g = r(736063),
+                g = r(919022),
+                f = r(736063),
                 b = r(78940);
             const h = _().a127886c,
                 y = _().f49b39b8,
                 w = a.Z,
                 v = n.Z;
             function k({ userPreferences: e }) {
-                const t = (0, m.v9)(f.ZP.selectLoggedInUser),
+                const t = (0, m.v9)(g.ZP.selectLoggedInUser),
                     r = (0, p.hC)("grok_settings_age_restriction_enabled"),
                     n = (0, p.JY)("grok_settings_restriction_age", 18),
                     a = (0, p.wW)("grok_settings_memory_visibility", "hide"),
@@ -600,23 +600,23 @@
                     c = new Date(),
                     u = { year: c.getFullYear(), month: c.getMonth(), day: c.getDay() },
                     _ = !!r && !(0, b.T)(n, i || u),
-                    { __id: g, allow_grok_memory: k } = l()(w, e),
+                    { __id: f, allow_grok_memory: k } = l()(w, e),
                     [x] = s()(v),
                     C = !!k,
                     Z = o.useCallback(() => {
                         function e(e) {
-                            if (g) {
-                                const t = e.get(g);
+                            if (f) {
+                                const t = e.get(f);
                                 t && t.setValue(!C, "allow_grok_memory");
                             }
                         }
                         x({ optimisticUpdater: e, updater: e, variables: { allow_grok_memory: !C } });
-                    }, [C, g, x]);
+                    }, [C, f, x]);
                 return "hide" === a ? null : o.createElement(o.Fragment, null, o.createElement(d.Z, { checked: C, disabled: _ || "disable" === a, helpText: y, label: h, name: "allowXaiMemory", onChange: Z }));
             }
             const x = { context: "allow_xai_memory_container" };
             function C({ userPreferences: e }) {
-                return o.createElement(g.H, { errorConfig: x }, o.createElement(k, { userPreferences: e }));
+                return o.createElement(f.H, { errorConfig: x }, o.createElement(k, { userPreferences: e }));
             }
         },
         987317: (e, t, r) => {
@@ -634,8 +634,8 @@
                 _ = r(111677),
                 p = r.n(_),
                 m = r(952793),
-                f = r(125363),
-                g = r(919022),
+                g = r(125363),
+                f = r(919022),
                 b = r(736063);
             const h = (e, t) => {
                     const r = new Date(),
@@ -648,7 +648,7 @@
                 k = a.Z,
                 x = n.Z;
             function C({ userPreferences: e }) {
-                const t = (0, f.v9)(g.ZP.selectLoggedInUser),
+                const t = (0, g.v9)(f.ZP.selectLoggedInUser),
                     r = (0, m.hC)("grok_settings_age_restriction_enabled"),
                     n = (0, m.JY)("grok_settings_restriction_age", 18),
                     a = t?.birthdate,
@@ -988,7 +988,7 @@
         },
         685731: (e, t, r) => {
             "use strict";
-            r.d(t, { Gi: () => b, Mk: () => y, ZV: () => f, aU: () => m, d3: () => h, fS: () => w, pt: () => g });
+            r.d(t, { Gi: () => b, Mk: () => y, ZV: () => g, aU: () => m, d3: () => h, fS: () => w, pt: () => f });
             r(202784);
             var n = r(111677),
                 a = r.n(n),
@@ -1014,10 +1014,10 @@
                 }
                 return n;
             }
-            function f(e) {
+            function g(e) {
                 return "number" == typeof e?.tax_amount_local_micro ? u : d;
             }
-            const g = (e, t, r) => (Array.isArray(e) ? e.filter((e) => e.charge_interval === r && e.metadata.purchasable).find((e) => (t ? !0 === e.metadata?.seated : !1 === e.metadata?.seated)) : void 0);
+            const f = (e, t, r) => (Array.isArray(e) ? e.filter((e) => e.charge_interval === r && e.metadata.purchasable).find((e) => (t ? !0 === e.metadata?.seated : !1 === e.metadata?.seated)) : void 0);
             function b(e, t) {
                 if (e && t) return t?.find((t) => t?.charge_interval === e);
             }
@@ -1038,4 +1038,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-9f4db315.975af8aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-9f4db315.017fe07a.js.map

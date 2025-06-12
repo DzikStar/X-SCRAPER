@@ -3,60 +3,62 @@
     ["ondemand.Debugger", "icons/IconEye-js"],
     {
         232678: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => xe });
+            n.r(t), n.d(t, { default: () => $e });
             var r = n(202784),
-                o = n(154003),
-                i = n(522450),
-                a = n(666536),
-                s = n(443781),
-                l = n(251067),
-                c = n(576648),
-                u = n(325686),
-                d = n(370006),
-                h = n(138099),
-                f = n(786998),
-                m = n(143670),
-                p = n(392237),
-                g = n(939419),
-                w = n(782642);
+                o = n(400752),
+                i = n(154003),
+                a = n(522450),
+                s = n(666536),
+                l = n(420182),
+                c = n(443781),
+                u = n(251067),
+                d = n(576648),
+                h = n(325686),
+                f = n(370006),
+                m = n(138099),
+                p = n(786998),
+                g = n(143670),
+                w = n(392237),
+                y = n(939419),
+                b = n(782642);
             n(571372);
-            const y = (() => {
+            const v = (() => {
                 let e = 0;
                 return () => ((e += 1), `u${`0000${((Math.random() * 36 ** 4) | 0).toString(36)}`.slice(-4)}${e}`);
             })();
-            function b(e) {
+            function E(e) {
                 const t = [];
                 for (let n = 0, r = e.length; n < r; n++) t.push(e[n]);
                 return t;
             }
-            let v = null;
-            function E(e = {}) {
-                return v || (e.includeStyleProperties ? ((v = e.includeStyleProperties), v) : ((v = b(window.getComputedStyle(document.documentElement))), v));
+            let x = null;
+            function C(e = {}) {
+                return x || (e.includeStyleProperties ? ((x = e.includeStyleProperties), x) : ((x = E(window.getComputedStyle(document.documentElement))), x));
             }
-            function x(e, t) {
+            function S(e, t) {
                 const n = (e.ownerDocument.defaultView || window).getComputedStyle(e).getPropertyValue(t);
                 return n ? parseFloat(n.replace("px", "")) : 0;
             }
-            function C(e, t = {}) {
+            function $(e, t = {}) {
                 return {
                     width:
                         t.width ||
                         (function (e) {
-                            const t = x(e, "border-left-width"),
-                                n = x(e, "border-right-width");
+                            const t = S(e, "border-left-width"),
+                                n = S(e, "border-right-width");
                             return e.clientWidth + t + n;
                         })(e),
                     height:
                         t.height ||
                         (function (e) {
-                            const t = x(e, "border-top-width"),
-                                n = x(e, "border-bottom-width");
+                            const t = S(e, "border-top-width"),
+                                n = S(e, "border-bottom-width");
                             return e.clientHeight + t + n;
                         })(e),
                 };
             }
-            const S = 16384;
-            function $(e) {
+            const T = 16384;
+            function _(e) {
                 return new Promise((t, n) => {
                     const r = new Image();
                     (r.onload = () => {
@@ -70,7 +72,7 @@
                         (r.src = e);
                 });
             }
-            async function T(e, t, n) {
+            async function P(e, t, n) {
                 const r = "http://www.w3.org/2000/svg",
                     o = document.createElementNS(r, "svg"),
                     i = document.createElementNS(r, "foreignObject");
@@ -93,12 +95,12 @@
                     })(o)
                 );
             }
-            const _ = (e, t) => {
+            const R = (e, t) => {
                 if (e instanceof t) return !0;
                 const n = Object.getPrototypeOf(e);
-                return null !== n && (n.constructor.name === t.name || _(n, t));
+                return null !== n && (n.constructor.name === t.name || R(n, t));
             };
-            function P(e, t, n, r) {
+            function A(e, t, n, r) {
                 const o = `.${e}:${t}`,
                     i = n.cssText
                         ? (function (e) {
@@ -106,42 +108,42 @@
                               return `${e.cssText} content: '${t.replace(/'|"/g, "")}';`;
                           })(n)
                         : (function (e, t) {
-                              return E(t)
+                              return C(t)
                                   .map((t) => `${t}: ${e.getPropertyValue(t)}${e.getPropertyPriority(t) ? " !important" : ""};`)
                                   .join(" ");
                           })(n, r);
                 return document.createTextNode(`${o}{${i}}`);
             }
-            function R(e, t, n, r) {
+            function k(e, t, n, r) {
                 const o = window.getComputedStyle(e, n),
                     i = o.getPropertyValue("content");
                 if ("" === i || "none" === i) return;
-                const a = y();
+                const a = v();
                 try {
                     t.className = `${t.className} ${a}`;
                 } catch (e) {
                     return;
                 }
                 const s = document.createElement("style");
-                s.appendChild(P(a, n, o, r)), t.appendChild(s);
+                s.appendChild(A(a, n, o, r)), t.appendChild(s);
             }
-            const A = "application/font-woff",
-                k = "image/jpeg",
-                Z = { woff: A, woff2: A, ttf: "application/font-truetype", eot: "application/vnd.ms-fontobject", png: "image/png", jpg: k, jpeg: k, gif: "image/gif", tiff: "image/tiff", svg: "image/svg+xml", webp: "image/webp" };
-            function L(e) {
+            const Z = "application/font-woff",
+                L = "image/jpeg",
+                I = { woff: Z, woff2: Z, ttf: "application/font-truetype", eot: "application/vnd.ms-fontobject", png: "image/png", jpg: L, jpeg: L, gif: "image/gif", tiff: "image/tiff", svg: "image/svg+xml", webp: "image/webp" };
+            function M(e) {
                 const t = (function (e) {
                     const t = /\.([^./]*?)$/g.exec(e);
                     return t ? t[1] : "";
                 })(e).toLowerCase();
-                return Z[t] || "";
+                return I[t] || "";
             }
-            function I(e) {
+            function D(e) {
                 return -1 !== e.search(/^(data:)/);
             }
-            function M(e, t) {
+            function F(e, t) {
                 return `data:${t};base64,${e}`;
             }
-            async function D(e, t, n) {
+            async function H(e, t, n) {
                 const r = await fetch(e, t);
                 if (404 === r.status) throw new Error(`Resource "${r.url}" not found`);
                 const o = await r.blob();
@@ -158,17 +160,17 @@
                         i.readAsDataURL(o);
                 });
             }
-            const F = {};
-            async function H(e, t, n) {
+            const N = {};
+            async function B(e, t, n) {
                 const r = (function (e, t, n) {
                     let r = e.replace(/\?.*/, "");
                     return n && (r = e), /ttf|otf|eot|woff2?/i.test(r) && (r = r.replace(/.*\//, "")), t ? `[${t}]${r}` : r;
                 })(e, t, n.includeQueryParams);
-                if (null != F[r]) return F[r];
+                if (null != N[r]) return N[r];
                 let o;
                 n.cacheBust && (e += (/\?/.test(e) ? "&" : "?") + new Date().getTime());
                 try {
-                    const r = await D(
+                    const r = await H(
                         e,
                         n.fetchRequestInit,
                         ({ res: e, result: n }) => (
@@ -178,69 +180,69 @@
                             })(n)
                         ),
                     );
-                    o = M(r, t);
+                    o = F(r, t);
                 } catch (t) {
                     o = n.imagePlaceholder || "";
                     let r = `Failed to fetch resource: ${e}`;
                     t && (r = "string" == typeof t ? t : t.message);
                 }
-                return (F[r] = o), o;
+                return (N[r] = o), o;
             }
-            async function N(e, t) {
-                return _(e, HTMLCanvasElement)
+            async function z(e, t) {
+                return R(e, HTMLCanvasElement)
                     ? (async function (e) {
                           const t = e.toDataURL();
-                          return "data:," === t ? e.cloneNode(!1) : $(t);
+                          return "data:," === t ? e.cloneNode(!1) : _(t);
                       })(e)
-                    : _(e, HTMLVideoElement)
+                    : R(e, HTMLVideoElement)
                       ? (async function (e, t) {
                             if (e.currentSrc) {
                                 const t = document.createElement("canvas"),
                                     n = t.getContext("2d");
-                                return (t.width = e.clientWidth), (t.height = e.clientHeight), null == n || n.drawImage(e, 0, 0, t.width, t.height), $(t.toDataURL());
+                                return (t.width = e.clientWidth), (t.height = e.clientHeight), null == n || n.drawImage(e, 0, 0, t.width, t.height), _(t.toDataURL());
                             }
                             const n = e.poster,
-                                r = L(n);
-                            return $(await H(n, r, t));
+                                r = M(n);
+                            return _(await B(n, r, t));
                         })(e, t)
-                      : _(e, HTMLIFrameElement)
+                      : R(e, HTMLIFrameElement)
                         ? (async function (e, t) {
                               var n;
                               try {
-                                  if (null === (n = null == e ? void 0 : e.contentDocument) || void 0 === n ? void 0 : n.body) return await V(e.contentDocument.body, t, !0);
+                                  if (null === (n = null == e ? void 0 : e.contentDocument) || void 0 === n ? void 0 : n.body) return await q(e.contentDocument.body, t, !0);
                               } catch (e) {}
                               return e.cloneNode(!1);
                           })(e, t)
-                        : e.cloneNode(z(e));
+                        : e.cloneNode(V(e));
             }
-            const B = (e) => null != e.tagName && "SLOT" === e.tagName.toUpperCase(),
-                z = (e) => null != e.tagName && "SVG" === e.tagName.toUpperCase();
-            function O(e, t, n) {
+            const O = (e) => null != e.tagName && "SLOT" === e.tagName.toUpperCase(),
+                V = (e) => null != e.tagName && "SVG" === e.tagName.toUpperCase();
+            function j(e, t, n) {
                 return (
-                    _(t, Element) &&
+                    R(t, Element) &&
                         ((function (e, t, n) {
                             const r = t.style;
                             if (!r) return;
                             const o = window.getComputedStyle(e);
                             o.cssText
                                 ? ((r.cssText = o.cssText), (r.transformOrigin = o.transformOrigin))
-                                : E(n).forEach((n) => {
+                                : C(n).forEach((n) => {
                                       let i = o.getPropertyValue(n);
                                       if ("font-size" === n && i.endsWith("px")) {
                                           const e = Math.floor(parseFloat(i.substring(0, i.length - 2))) - 0.1;
                                           i = `${e}px`;
                                       }
-                                      _(e, HTMLIFrameElement) && "display" === n && "inline" === i && (i = "block"), "d" === n && t.getAttribute("d") && (i = `path(${t.getAttribute("d")})`), r.setProperty(n, i, o.getPropertyPriority(n));
+                                      R(e, HTMLIFrameElement) && "display" === n && "inline" === i && (i = "block"), "d" === n && t.getAttribute("d") && (i = `path(${t.getAttribute("d")})`), r.setProperty(n, i, o.getPropertyPriority(n));
                                   });
                         })(e, t, n),
                         (function (e, t, n) {
-                            R(e, t, ":before", n), R(e, t, ":after", n);
+                            k(e, t, ":before", n), k(e, t, ":after", n);
                         })(e, t, n),
                         (function (e, t) {
-                            _(e, HTMLTextAreaElement) && (t.innerHTML = e.value), _(e, HTMLInputElement) && t.setAttribute("value", e.value);
+                            R(e, HTMLTextAreaElement) && (t.innerHTML = e.value), R(e, HTMLInputElement) && t.setAttribute("value", e.value);
                         })(e, t),
                         (function (e, t) {
-                            if (_(e, HTMLSelectElement)) {
+                            if (R(e, HTMLSelectElement)) {
                                 const n = t,
                                     r = Array.from(n.children).find((t) => e.value === t.getAttribute("value"));
                                 r && r.setAttribute("selected", "");
@@ -249,23 +251,23 @@
                     t
                 );
             }
-            async function V(e, t, n) {
+            async function q(e, t, n) {
                 return n || !t.filter || t.filter(e)
                     ? Promise.resolve(e)
-                          .then((e) => N(e, t))
+                          .then((e) => z(e, t))
                           .then((n) =>
                               (async function (e, t, n) {
                                   var r, o;
-                                  if (z(t)) return t;
+                                  if (V(t)) return t;
                                   let i = [];
                                   return (
-                                      (i = B(e) && e.assignedNodes ? b(e.assignedNodes()) : _(e, HTMLIFrameElement) && (null === (r = e.contentDocument) || void 0 === r ? void 0 : r.body) ? b(e.contentDocument.body.childNodes) : b((null !== (o = e.shadowRoot) && void 0 !== o ? o : e).childNodes)),
+                                      (i = O(e) && e.assignedNodes ? E(e.assignedNodes()) : R(e, HTMLIFrameElement) && (null === (r = e.contentDocument) || void 0 === r ? void 0 : r.body) ? E(e.contentDocument.body.childNodes) : E((null !== (o = e.shadowRoot) && void 0 !== o ? o : e).childNodes)),
                                       0 === i.length ||
-                                          _(e, HTMLVideoElement) ||
+                                          R(e, HTMLVideoElement) ||
                                           (await i.reduce(
                                               (e, r) =>
                                                   e
-                                                      .then(() => V(r, n))
+                                                      .then(() => q(r, n))
                                                       .then((e) => {
                                                           e && t.appendChild(e);
                                                       }),
@@ -275,7 +277,7 @@
                                   );
                               })(e, n, t),
                           )
-                          .then((n) => O(e, n, t))
+                          .then((n) => j(e, n, t))
                           .then((e) =>
                               (async function (e, t) {
                                   const n = e.querySelectorAll ? e.querySelectorAll("use") : [];
@@ -286,7 +288,7 @@
                                       if (i) {
                                           const n = e.querySelector(i),
                                               o = document.querySelector(i);
-                                          n || !o || r[i] || (r[i] = await V(o, t, !0));
+                                          n || !o || r[i] || (r[i] = await q(o, t, !0));
                                       }
                                   }
                                   const o = Object.values(r);
@@ -304,10 +306,10 @@
                           )
                     : null;
             }
-            const j = /url\((['"]?)([^'"]+?)\1\)/g,
-                q = /url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,
-                W = /src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;
-            async function U(e, t, n, r, o) {
+            const U = /url\((['"]?)([^'"]+?)\1\)/g,
+                W = /url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,
+                X = /src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;
+            async function Y(e, t, n, r, o) {
                 try {
                     const i = n
                             ? (function (e, t) {
@@ -320,11 +322,11 @@
                                   return n.head.appendChild(r), n.body.appendChild(o), t && (r.href = t), (o.href = e), o.href;
                               })(t, n)
                             : t,
-                        a = L(t);
+                        a = M(t);
                     let s;
                     if (o) {
-                        s = M(await o(i), a);
-                    } else s = await H(i, a, r);
+                        s = F(await o(i), a);
+                    } else s = await B(i, a, r);
                     return e.replace(
                         (function (e) {
                             const t = e.replace(/([.*+?^${}()|\[\]\/\\])/g, "\\$1");
@@ -335,16 +337,16 @@
                 } catch (e) {}
                 return e;
             }
-            function X(e) {
-                return -1 !== e.search(j);
+            function K(e) {
+                return -1 !== e.search(U);
             }
-            async function Y(e, t, n) {
-                if (!X(e)) return e;
+            async function G(e, t, n) {
+                if (!K(e)) return e;
                 const r = (function (e, { preferredFontFormat: t }) {
                         return t
-                            ? e.replace(W, (e) => {
+                            ? e.replace(X, (e) => {
                                   for (;;) {
-                                      const [n, , r] = q.exec(e) || [];
+                                      const [n, , r] = W.exec(e) || [];
                                       if (!r) return "";
                                       if (r === t) return `src: ${n};`;
                                   }
@@ -353,29 +355,29 @@
                     })(e, n),
                     o = (function (e) {
                         const t = [];
-                        return e.replace(j, (e, n, r) => (t.push(r), e)), t.filter((e) => !I(e));
+                        return e.replace(U, (e, n, r) => (t.push(r), e)), t.filter((e) => !D(e));
                     })(r);
-                return o.reduce((e, r) => e.then((e) => U(e, r, t, n)), Promise.resolve(r));
+                return o.reduce((e, r) => e.then((e) => Y(e, r, t, n)), Promise.resolve(r));
             }
-            async function K(e, t, n) {
+            async function J(e, t, n) {
                 var r;
                 const o = null === (r = t.style) || void 0 === r ? void 0 : r.getPropertyValue(e);
                 if (o) {
-                    const r = await Y(o, null, n);
+                    const r = await G(o, null, n);
                     return t.style.setProperty(e, r, t.style.getPropertyPriority(e)), !0;
                 }
                 return !1;
             }
-            async function G(e, t) {
-                _(e, Element) &&
+            async function Q(e, t) {
+                R(e, Element) &&
                     (await (async function (e, t) {
-                        (await K("background", e, t)) || (await K("background-image", e, t)), (await K("mask", e, t)) || (await K("-webkit-mask", e, t)) || (await K("mask-image", e, t)) || (await K("-webkit-mask-image", e, t));
+                        (await J("background", e, t)) || (await J("background-image", e, t)), (await J("mask", e, t)) || (await J("-webkit-mask", e, t)) || (await J("mask-image", e, t)) || (await J("-webkit-mask-image", e, t));
                     })(e, t),
                     await (async function (e, t) {
-                        const n = _(e, HTMLImageElement);
-                        if ((!n || I(e.src)) && (!_(e, SVGImageElement) || I(e.href.baseVal))) return;
+                        const n = R(e, HTMLImageElement);
+                        if ((!n || D(e.src)) && (!R(e, SVGImageElement) || D(e.href.baseVal))) return;
                         const r = n ? e.src : e.href.baseVal,
-                            o = await H(r, L(r), t);
+                            o = await B(r, M(r), t);
                         await new Promise((r, i) => {
                             (e.onload = r),
                                 (e.onerror = t.onImageErrorHandler
@@ -392,27 +394,27 @@
                         });
                     })(e, t),
                     await (async function (e, t) {
-                        const n = b(e.childNodes).map((e) => G(e, t));
+                        const n = E(e.childNodes).map((e) => Q(e, t));
                         await Promise.all(n).then(() => e);
                     })(e, t));
             }
-            const J = {};
-            async function Q(e) {
-                let t = J[e];
+            const ee = {};
+            async function te(e) {
+                let t = ee[e];
                 if (null != t) return t;
                 const n = await fetch(e);
-                return (t = { url: e, cssText: await n.text() }), (J[e] = t), t;
+                return (t = { url: e, cssText: await n.text() }), (ee[e] = t), t;
             }
-            async function ee(e, t) {
+            async function ne(e, t) {
                 let n = e.cssText;
                 const r = /url\(["']?([^"')]+)["']?\)/g,
                     o = (n.match(/url\([^)]+\)/g) || []).map(async (o) => {
                         let i = o.replace(r, "$1");
-                        return i.startsWith("https://") || (i = new URL(i, e.url).href), D(i, t.fetchRequestInit, ({ result: e }) => ((n = n.replace(o, `url(${e})`)), [o, e]));
+                        return i.startsWith("https://") || (i = new URL(i, e.url).href), H(i, t.fetchRequestInit, ({ result: e }) => ((n = n.replace(o, `url(${e})`)), [o, e]));
                     });
                 return Promise.all(o).then(() => n);
             }
-            function te(e) {
+            function re(e) {
                 if (null == e) return [];
                 const t = [];
                 let n = e.replace(/(\/\*[\s\S]*?\*\/)/gi, "");
@@ -435,9 +437,9 @@
                 }
                 return t;
             }
-            async function ne(e, t) {
+            async function oe(e, t) {
                 if (null == e.ownerDocument) throw new Error("Provided element is not within a Document");
-                const n = b(e.ownerDocument.styleSheets),
+                const n = E(e.ownerDocument.styleSheets),
                     r = await (async function (e, t) {
                         const n = [],
                             r = [];
@@ -445,13 +447,13 @@
                             e.forEach((n) => {
                                 if ("cssRules" in n)
                                     try {
-                                        b(n.cssRules || []).forEach((e, o) => {
+                                        E(n.cssRules || []).forEach((e, o) => {
                                             if (e.type === CSSRule.IMPORT_RULE) {
                                                 let i = o + 1;
-                                                const a = Q(e.href)
-                                                    .then((e) => ee(e, t))
+                                                const a = te(e.href)
+                                                    .then((e) => ne(e, t))
                                                     .then((e) =>
-                                                        te(e).forEach((e) => {
+                                                        re(e).forEach((e) => {
                                                             try {
                                                                 n.insertRule(e, e.startsWith("@import") ? (i += 1) : n.cssRules.length);
                                                             } catch (e) {}
@@ -465,10 +467,10 @@
                                         const i = e.find((e) => null == e.href) || document.styleSheets[0];
                                         null != n.href &&
                                             r.push(
-                                                Q(n.href)
-                                                    .then((e) => ee(e, t))
+                                                te(n.href)
+                                                    .then((e) => ne(e, t))
                                                     .then((e) =>
-                                                        te(e).forEach((e) => {
+                                                        re(e).forEach((e) => {
                                                             i.insertRule(e, i.cssRules.length);
                                                         }),
                                                     )
@@ -481,7 +483,7 @@
                                     e.forEach((e) => {
                                         if ("cssRules" in e)
                                             try {
-                                                b(e.cssRules || []).forEach((e) => {
+                                                E(e.cssRules || []).forEach((e) => {
                                                     n.push(e);
                                                 });
                                             } catch (e) {}
@@ -492,20 +494,20 @@
                         );
                     })(n, t);
                 return (function (e) {
-                    return e.filter((e) => e.type === CSSRule.FONT_FACE_RULE).filter((e) => X(e.style.getPropertyValue("src")));
+                    return e.filter((e) => e.type === CSSRule.FONT_FACE_RULE).filter((e) => K(e.style.getPropertyValue("src")));
                 })(r);
             }
-            function re(e) {
+            function ie(e) {
                 return e.trim().replace(/["']/g, "");
             }
-            async function oe(e, t) {
-                const n = await ne(e, t),
+            async function ae(e, t) {
+                const n = await oe(e, t),
                     r = (function (e) {
                         const t = new Set();
                         return (
                             (function e(n) {
                                 (n.style.fontFamily || getComputedStyle(n).fontFamily).split(",").forEach((e) => {
-                                    t.add(re(e));
+                                    t.add(ie(e));
                                 }),
                                     Array.from(n.children).forEach((t) => {
                                         t instanceof HTMLElement && e(t);
@@ -517,26 +519,26 @@
                 return (
                     await Promise.all(
                         n
-                            .filter((e) => r.has(re(e.style.fontFamily)))
+                            .filter((e) => r.has(ie(e.style.fontFamily)))
                             .map((e) => {
                                 const n = e.parentStyleSheet ? e.parentStyleSheet.href : null;
-                                return Y(e.cssText, n, t);
+                                return G(e.cssText, n, t);
                             }),
                     )
                 ).join("\n");
             }
-            async function ie(e, t = {}) {
-                const { width: n, height: r } = C(e, t),
-                    o = await V(e, t, !0);
+            async function se(e, t = {}) {
+                const { width: n, height: r } = $(e, t),
+                    o = await q(e, t, !0);
                 await (async function (e, t) {
-                    const n = null != t.fontEmbedCSS ? t.fontEmbedCSS : t.skipFonts ? null : await oe(e, t);
+                    const n = null != t.fontEmbedCSS ? t.fontEmbedCSS : t.skipFonts ? null : await ae(e, t);
                     if (n) {
                         const t = document.createElement("style"),
                             r = document.createTextNode(n);
                         t.appendChild(r), e.firstChild ? e.insertBefore(t, e.firstChild) : e.appendChild(t);
                     }
                 })(o, t),
-                    await G(o, t),
+                    await Q(o, t),
                     (function (e, t) {
                         const { style: n } = e;
                         t.backgroundColor && (n.backgroundColor = t.backgroundColor), t.width && (n.width = `${t.width}px`), t.height && (n.height = `${t.height}px`);
@@ -546,12 +548,12 @@
                                 n[e] = r[e];
                             });
                     })(o, t);
-                return await T(o, n, r);
+                return await P(o, n, r);
             }
-            async function ae(e, t = {}) {
-                const { width: n, height: r } = C(e, t),
-                    o = await ie(e, t),
-                    i = await $(o),
+            async function le(e, t = {}) {
+                const { width: n, height: r } = $(e, t),
+                    o = await se(e, t),
+                    i = await _(o),
                     a = document.createElement("canvas"),
                     s = a.getContext("2d"),
                     l =
@@ -571,7 +573,7 @@
                     (a.height = u * l),
                     t.skipAutoScale ||
                         (function (e) {
-                            (e.width > S || e.height > S) && (e.width > S && e.height > S ? (e.width > e.height ? ((e.height *= S / e.width), (e.width = S)) : ((e.width *= S / e.height), (e.height = S))) : e.width > S ? ((e.height *= S / e.width), (e.width = S)) : ((e.width *= S / e.height), (e.height = S)));
+                            (e.width > T || e.height > T) && (e.width > T && e.height > T ? (e.width > e.height ? ((e.height *= T / e.width), (e.width = T)) : ((e.width *= T / e.height), (e.height = T))) : e.width > T ? ((e.height *= T / e.width), (e.width = T)) : ((e.width *= T / e.height), (e.height = T)));
                         })(a),
                     (a.style.width = `${c}`),
                     (a.style.height = `${u}`),
@@ -580,8 +582,8 @@
                     a
                 );
             }
-            async function se(e, t = {}) {
-                const n = await ae(e, t),
+            async function ce(e, t = {}) {
+                const n = await le(e, t),
                     r = await (function (e, t = {}) {
                         return e.toBlob
                             ? new Promise((n) => {
@@ -597,16 +599,16 @@
                     })(n);
                 return r;
             }
-            var le = n(466818),
-                ce = n(855488),
-                ue = n(731708),
-                de = n(451566),
-                he = n(242454),
-                fe = n(40610),
-                me = n(323265),
-                pe = n(497088),
-                ge = n(125363);
-            const we = [
+            var ue = n(466818),
+                de = n(855488),
+                he = n(731708),
+                fe = n(451566),
+                me = n(242454),
+                pe = n(40610),
+                ge = n(323265),
+                we = n(497088),
+                ye = n(125363);
+            const be = [
                 { label: "New bug / triage", value: "new_bug" },
                 { label: "QA regression", value: "qa_regression" },
                 { label: "Ads", value: "ads" },
@@ -616,38 +618,38 @@
                 { label: "Video", value: "video" },
                 { label: "Other", value: "other" },
             ];
-            function ye({ onClose: e }) {
-                const { featureSwitches: t, viewerUserId: n } = r.useContext(s.rC),
-                    o = (0, ge.oR)(),
-                    i = (0, w.p)(),
-                    [a, c] = r.useState(we[0]),
-                    [d, h] = r.useState(""),
+            function ve({ onClose: e }) {
+                const { featureSwitches: t, viewerUserId: n } = r.useContext(c.rC),
+                    o = (0, ye.oR)(),
+                    i = (0, b.p)(),
+                    [a, s] = r.useState(be[0]),
+                    [l, d] = r.useState(""),
                     [f, m] = r.useState(""),
                     [p, g] = r.useState(""),
-                    [y, b] = r.useState(!1),
+                    [w, y] = r.useState(!1),
                     [v, E] = r.useState(),
-                    x = me.ZP.browserString(),
-                    C = me.ZP.getBrowserTagVersion(x),
-                    S = me.ZP.osString(),
-                    $ = me.ZP.userAgent,
+                    x = ge.ZP.browserString(),
+                    C = ge.ZP.getBrowserTagVersion(x),
+                    S = ge.ZP.osString(),
+                    $ = ge.ZP.userAgent,
                     T = `${x}, ${C}. ${S} \n\n${$}.`;
                 return r.createElement(
                     r.Fragment,
                     null,
-                    r.createElement(le.ZP, { label: "Where did we go wrong?", onChange: (e, t) => c(we[t]), options: we, value: a.value }),
-                    r.createElement(ce.Z, { label: "Summary", multiline: !0, name: "summary", onChange: (e) => h(e.target.value), style: be.formTextInput, value: d }),
-                    r.createElement(ce.Z, { label: "Expected result (optional)", multiline: !0, name: "expected", onChange: (e) => m(e.target.value), style: be.formTextInput, value: f }),
-                    r.createElement(ce.Z, { label: "Actual result (optional)", multiline: !0, name: "actual", onChange: (e) => g(e.target.value), style: be.formTextInput, value: p }),
+                    r.createElement(ue.ZP, { label: "Where did we go wrong?", onChange: (e, t) => s(be[t]), options: be, value: a.value }),
+                    r.createElement(de.Z, { label: "Summary", multiline: !0, name: "summary", onChange: (e) => d(e.target.value), style: Ee.formTextInput, value: l }),
+                    r.createElement(de.Z, { label: "Expected result (optional)", multiline: !0, name: "expected", onChange: (e) => m(e.target.value), style: Ee.formTextInput, value: f }),
+                    r.createElement(de.Z, { label: "Actual result (optional)", multiline: !0, name: "actual", onChange: (e) => g(e.target.value), style: Ee.formTextInput, value: p }),
                     r.createElement(
-                        u.Z,
-                        { style: be.switch },
-                        r.createElement(ue.ZP, null, "Attach screenshot (experimental)"),
-                        r.createElement(de.Z, {
-                            disabled: y,
+                        h.Z,
+                        { style: Ee.switch },
+                        r.createElement(he.ZP, null, "Attach screenshot (experimental)"),
+                        r.createElement(fe.Z, {
+                            disabled: w,
                             onValueChange: function (e) {
                                 e
-                                    ? (b(!0),
-                                      se(document.body, { filter: (e) => "NOSCRIPT" !== e.tagName && "debugger" !== e.dataset?.testid && "mask" !== e.dataset?.testid, height: document.body.scrollHeight, width: document.body.scrollWidth })
+                                    ? (y(!0),
+                                      ce(document.body, { filter: (e) => "NOSCRIPT" !== e.tagName && "debugger" !== e.dataset?.testid && "mask" !== e.dataset?.testid, height: document.body.scrollHeight, width: document.body.scrollWidth })
                                           .then((e) => {
                                               E(e);
                                           })
@@ -655,29 +657,29 @@
                                               i({ text: "Failed to generate screenshot. Please try again" });
                                           })
                                           .finally(() => {
-                                              b(!1);
+                                              y(!1);
                                           }))
                                     : E();
                             },
                             value: !!v,
                         }),
                     ),
-                    r.createElement(he.Z, {
+                    r.createElement(me.Z, {
                         color: "primary",
-                        disabled: !d.length || y,
-                        label: y ? "Loading" : "Submit",
+                        disabled: !l.length || w,
+                        label: w ? "Loading" : "Submit",
                         onPress: function () {
                             const r = `Bug report: ${a.label}`;
-                            let s = `Summary:%0A${d}%0A%0A`;
-                            f.length && (s += `Expected:%0A${f}%0A%0A`), p.length && (s += `Actual:%0A${p}%0A%0A`), (s += `User agent:%0A${$}%0A%0A`), l.MK && (s += `Sha:%0A${l.MK}%0A%0A`);
-                            const c = JSON.stringify(pe.InMemoryCache.flush()),
-                                u = o.getState(),
-                                h = JSON.stringify({ entities: u.entities, featureSwitch: { customOverrides: { ...u.featureSwitch.customOverrides }, user: { ...u.featureSwitch.user } }, multiAccount: u.multiAccount, ocf: u.ocf, pinnedTimelines: u.pinnedTimelines, tweetComposer: u.tweetComposer, urt: u.urt }),
+                            let s = `Summary:%0A${l}%0A%0A`;
+                            f.length && (s += `Expected:%0A${f}%0A%0A`), p.length && (s += `Actual:%0A${p}%0A%0A`), (s += `User agent:%0A${$}%0A%0A`), u.MK && (s += `Sha:%0A${u.MK}%0A%0A`);
+                            const c = JSON.stringify(we.InMemoryCache.flush()),
+                                d = o.getState(),
+                                h = JSON.stringify({ entities: d.entities, featureSwitch: { customOverrides: { ...d.featureSwitch.customOverrides }, user: { ...d.featureSwitch.user } }, multiAccount: d.multiAccount, ocf: d.ocf, pinnedTimelines: d.pinnedTimelines, tweetComposer: d.tweetComposer, urt: d.urt }),
                                 m = Date.now(),
                                 g = `https://ton.x.com/i/ton/data/web-logs/debug/${n || ""}-network-${m}.json`,
                                 w = `https://ton.x.com/i/ton/data/web-logs/debug/${n || ""}-state-${m}.json`,
-                                y = `https://ton.x.com/i/ton/data/web-logs/debug/${n || ""}-screenshot-${m}.png`;
-                            b(!0),
+                                b = `https://ton.x.com/i/ton/data/web-logs/debug/${n || ""}-screenshot-${m}.png`;
+                            y(!0),
                                 Promise.all([
                                     fetch(w, { body: h, credentials: "include", method: "POST" }).then((e) => {
                                         if (!e.ok) throw new Error("state request failed");
@@ -688,7 +690,7 @@
                                         return e;
                                     }),
                                     v
-                                        ? fetch(y, { body: v, credentials: "include", method: "POST" }).then((e) => {
+                                        ? fetch(b, { body: v, credentials: "include", method: "POST" }).then((e) => {
                                               if (!e.ok) throw new Error("screnshot request failed");
                                               return e;
                                           })
@@ -696,81 +698,102 @@
                                 ])
                                     .then(() => {
                                         const n = t.getStringValue("rweb_debugger_bug_report_email", "");
-                                        (s += `Application state:%0A${w}%0A%0A`), (s += `Network requests:%0A${g}%0A%0A`), v && (s += `Screenshot:%0A${y}%0A%0A`), window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${n}&su=${r}&body=${s}`, "_blank"), e();
+                                        (s += `Application state:%0A${w}%0A%0A`), (s += `Network requests:%0A${g}%0A%0A`), v && (s += `Screenshot:%0A${b}%0A%0A`), window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${n}&su=${r}&body=${s}`, "_blank"), e();
                                     })
                                     .catch(() => {
                                         i({ text: "Failed to upload data. Please try again" });
                                     })
                                     .finally(() => {
-                                        b(!1);
+                                        y(!1);
                                     });
                         },
                     }),
-                    r.createElement(fe.Z.Primary, { headline: "Device information", text: T, withIcon: !0 }),
+                    r.createElement(pe.Z.Primary, { headline: "Device information", text: T, withIcon: !0 }),
                 );
             }
-            const be = p.default.create((e) => ({ formTextInput: { paddingHorizontal: 0, paddingVertical: 0 }, switch: { flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between" } }));
-            function ve({ onClose: e }) {
+            const Ee = w.default.create((e) => ({ formTextInput: { paddingHorizontal: 0, paddingVertical: 0 }, switch: { flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between" } }));
+            function xe({ onClose: e }) {
                 const [t, n] = r.useState("home"),
-                    o = (0, w.p)(),
-                    i = `${l.OB}${l.MK ? ` - ${l.MK}` : ""}`,
+                    o = (0, b.p)(),
+                    i = `${u.OB}${u.MK ? ` - ${u.MK}` : ""}`,
                     a = "home" === t ? "Debug" : "Report a bug",
                     s =
                         "home" === t
-                            ? r.createElement(d.Z, {
+                            ? r.createElement(f.Z, {
                                   backButtonType: "close",
                                   onClick: function () {
                                       e(), n("home");
                                   },
                               })
-                            : r.createElement(d.Z, {
+                            : r.createElement(f.Z, {
                                   backButtonType: "back",
                                   onClick: function () {
                                       n("home");
                                   },
                               });
                 return r.createElement(
-                    h.Z,
+                    m.Z,
                     { onMaskClick: e, testID: "debugger", type: "bottom", withMask: !0, withNativeMaskColor: !0 },
-                    r.createElement(f.Z, { leftControl: s, title: a, withGutter: !0 }),
+                    r.createElement(p.Z, { leftControl: s, title: a, withGutter: !0 }),
                     r.createElement(
-                        u.Z,
-                        { style: Ee.container },
+                        h.Z,
+                        { style: Ce.container },
                         "home" === t &&
                             r.createElement(
                                 r.Fragment,
                                 null,
-                                r.createElement(m.Z, { Icon: g.default, actionText: "Report a bug", onClick: () => n("report-bug") }),
-                                r.createElement(m.Z, {
+                                r.createElement(g.Z, { Icon: y.default, actionText: "Report a bug", onClick: () => n("report-bug") }),
+                                r.createElement(g.Z, {
                                     actionText: i,
                                     onClick: function () {
-                                        c.Z.setString(i), o({ text: "Copied version to clipboard" });
+                                        d.Z.setString(i), o({ text: "Copied version to clipboard" });
                                     },
-                                    style: Ee.version,
+                                    style: Ce.version,
                                 }),
                             ),
-                        "report-bug" === t && r.createElement(ye, { onClose: e }),
+                        "report-bug" === t && r.createElement(ve, { onClose: e }),
                     ),
                 );
             }
-            const Ee = p.default.create((e) => ({ container: { padding: e.spaces.space16, gap: e.spaces.space8 }, version: { textAlign: "center" } }));
-            function xe({ initialX: e = 8, initialY: t = 200 }) {
-                const { featureSwitches: n } = r.useContext(s.rC),
-                    [l, c] = r.useState(!1),
-                    [u, d] = r.useState(!1),
-                    h = r.useRef(null),
-                    f = r.useRef({ offsetX: e, offsetY: t, startX: e, startY: t }),
-                    m = r.useRef({ x: e, y: t });
+            const Ce = w.default.create((e) => ({ container: { padding: e.spaces.space16, gap: e.spaces.space8 }, version: { textAlign: "center" } })),
+                Se = "rweb.debugger";
+            function $e({ initialX: e = 8, initialY: t = 200 }) {
+                const n = (0, o.Dv)(l.L$),
+                    { featureSwitches: u } = r.useContext(c.rC),
+                    [d, h] = r.useState(!1),
+                    [f, m] = r.useState(!1),
+                    p = r.useRef(null),
+                    g = r.useRef({ offsetX: 0, offsetY: 0, startX: 0, startY: 0 }),
+                    w = r.useRef({ x: -64, y: -64 }),
+                    y = r.useMemo(
+                        () =>
+                            (0, s.Z)((e, t) => {
+                                n.set(Se, { position: { x: e, y: t } });
+                            }, 500),
+                        [n],
+                    ),
+                    b = r.useCallback(
+                        (e, t, n = !1) => {
+                            const r = p.current;
+                            if (!r) return;
+                            const { height: o, width: i } = r.getBoundingClientRect(),
+                                a = Math.max(0, Math.min(e, window.innerWidth - i)),
+                                s = Math.max(0, Math.min(t, window.innerHeight - o));
+                            (w.current = { x: a, y: s }), (r.style.left = `${a}px`), (r.style.top = `${s}px`), n || y(a, s);
+                        },
+                        [y],
+                    );
                 return (
+                    r.useLayoutEffect(() => {
+                        n.get(Se).then((n) => {
+                            n?.position ? b(n.position.x, n.position.y) : b(e, t);
+                        });
+                    }, [n, e, t, b]),
                     r.useEffect(() => {
-                        const e = h.current;
+                        const e = p.current;
                         if (!e) return;
-                        function t(t, n) {
-                            if (!e) return;
-                            const { height: r, width: o } = e.getBoundingClientRect();
-                            let i = t - f.current.offsetX,
-                                a = n - f.current.offsetY;
-                            (i = Math.max(0, Math.min(i, window.innerWidth - o))), (a = Math.max(0, Math.min(a, window.innerHeight - r))), (m.current = { x: i, y: a }), (e.style.left = `${i}px`), (e.style.top = `${a}px`);
+                        function t(e, t) {
+                            b(e - g.current.offsetX, t - g.current.offsetY, !0);
                         }
                         function n(e) {
                             t(e.clientX, e.clientY);
@@ -779,49 +802,45 @@
                             t(e.touches[0].clientX, e.touches[0].clientY);
                         }
                         function o(e, t) {
-                            c(!1);
-                            Math.abs(e - f.current.startX) < 5 && Math.abs(t - f.current.startY) < 5 && d(!0);
+                            h(!1);
+                            Math.abs(e - g.current.startX) < 5 && Math.abs(t - g.current.startY) < 5 && m(!0), y(w.current.x, w.current.y);
                         }
                         function i(e) {
                             o(e.clientX, e.clientY), window.removeEventListener("mousemove", n), window.removeEventListener("mouseup", i);
                         }
-                        function s(e) {
-                            o(e.changedTouches[0].clientX, e.changedTouches[0].clientY), window.removeEventListener("touchmove", r), window.removeEventListener("touchend", s);
+                        function a(e) {
+                            o(e.changedTouches[0].clientX, e.changedTouches[0].clientY), window.removeEventListener("touchmove", r), window.removeEventListener("touchend", a);
                         }
                         function l(e, t) {
-                            (f.current = { offsetX: e - m.current.x, offsetY: t - m.current.y, startX: e, startY: t }), c(!0);
+                            (g.current = { offsetX: e - w.current.x, offsetY: t - w.current.y, startX: e, startY: t }), h(!0);
                         }
-                        function u(e) {
+                        function c(e) {
                             e.preventDefault(), 0 === e.button && (l(e.clientX, e.clientY), window.addEventListener("mousemove", n), window.addEventListener("mouseup", i));
                         }
-                        function p(e) {
-                            e.preventDefault(), l(e.touches[0].clientX, e.touches[0].clientY), window.addEventListener("touchmove", r), window.addEventListener("touchend", s);
+                        function u(e) {
+                            e.preventDefault(), l(e.touches[0].clientX, e.touches[0].clientY), window.addEventListener("touchmove", r), window.addEventListener("touchend", a);
                         }
-                        const g = (0, a.Z)(function () {
-                            if (!e) return;
-                            const { height: t, width: n } = e.getBoundingClientRect(),
-                                r = Math.max(0, Math.min(m.current.x, window.innerWidth - n)),
-                                o = Math.max(0, Math.min(m.current.y, window.innerHeight - t));
-                            (m.current = { x: r, y: o }), (e.style.left = `${r}px`), (e.style.top = `${o}px`);
+                        const d = (0, s.Z)(() => {
+                            b(w.current.x, w.current.y);
                         }, 500);
                         return (
-                            e.addEventListener("touchstart", p),
-                            e.addEventListener("mousedown", u),
-                            window.addEventListener("resize", g),
+                            e.addEventListener("touchstart", u),
+                            e.addEventListener("mousedown", c),
+                            window.addEventListener("resize", d),
                             () => {
-                                e.removeEventListener("mousedown", u), e.removeEventListener("touchstart", p), window.removeEventListener("resize", g);
+                                e.removeEventListener("mousedown", c), e.removeEventListener("touchstart", u), window.removeEventListener("resize", d);
                             }
                         );
-                    }, []),
-                    n.isTrue("rweb_debugger_enabled")
+                    }, [n, y, b]),
+                    u.isTrue("rweb_debugger_enabled")
                         ? r.createElement(
                               r.Fragment,
                               null,
-                              r.createElement(o.ZP, { "aria-label": "debugger", borderColor: "buttonWhite", icon: r.createElement(i.default, null), ref: h, size: "small", style: { position: "fixed", start: e, top: t, transition: "transform 0.2s", transform: `scale(${l ? "1.2" : "1"})` }, type: "primaryFilled" }),
-                              u &&
-                                  r.createElement(ve, {
+                              r.createElement(i.ZP, { "aria-label": "debugger", borderColor: "buttonWhite", icon: r.createElement(a.default, null), ref: p, size: "small", style: { position: "fixed", start: `${w.current.x}px`, top: `${w.current.y}px`, transition: "transform 0.2s", transform: `scale(${d ? "1.2" : "1"})` }, type: "primaryFilled" }),
+                              f &&
+                                  r.createElement(xe, {
                                       onClose: function () {
-                                          d(!1);
+                                          m(!1);
                                       },
                                   }),
                           )
@@ -990,4 +1009,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Debugger.5f4df0fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Debugger.c3ca310a.js.map

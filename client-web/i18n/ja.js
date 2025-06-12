@@ -5440,8 +5440,8 @@
                 f("i8cae552", "評価することにより、コミュニティノートの品質維持に貢献できます。"),
                 f("hd43a218", "1日に作成できるノートの数の上限に達しました。"),
                 f("aaba8ed2", "ノートの品質を維持し、スパムを防止するため、協力者が1日に作成できるノートの数には、協力者の作成ポイントに基づく上限が設けられています。しばらくしてから再度お試しください。"),
-                f("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                f("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                f("a67ed4d6", "この作成者のポストに現時点で追加できるノート数の上限に達しています"),
+                f("ic484166", "ノートの質を高く保ち、スパム行為を防ぐため、特定のポスト作成者に対して1人のユーザーが一定期間内に作成できるノートの数には制限があります。この制限は、その作成者に関する過去のノートがどの程度役に立ったと評価されたかにもとづいて決まります。しばらくしてからやりなおしてください。"),
                 f("b98f077c", "ノート情報をリクエスト"),
                 f("ee691104", "このポストについてのコミュニティノートをリクエストする"),
                 f("f8cbdf02", "このポストは誤解を招く可能性があるとお考えの場合、コミュニティノートをリクエストしましょう。"),
@@ -7236,7 +7236,7 @@
                 f("h257d4aa", "プロモーションするポストを選択"),
                 f("e9334fe6", "データは数分おきに更新されます"),
                 f("a6d7b1d0", "Xの内部データにもとづく"),
-                f("h71a00e6", "You’re saving time with ad-free"),
+                f("h71a00e6", "広告の非表示により時間を節約しています"),
                 f("f6c50ec0", "広告の非表示トライアルが終了しました"),
                 f("e1d1fbca", "表示されなかった広告"),
                 f("a82d7abd", function (e) {
@@ -8301,6 +8301,7 @@
                 f("e5e6479e", "できるだけ早くサポートを提供するため、組織のユーザー名とお問い合わせ内容の詳細を記載してメールをお送りください。"),
                 f("ica8392a", "リクエストがXに届いたら、受領順に確認いたします。"),
                 f("ed37e36e", "重要: 組織のユーザー名がない場合や個人用メールアドレスを使用した場合は、リクエストの処理が遅れることがあります。"),
+                f("h7e1c146", "Delegate accounts are not currently supported."),
                 f("eb0d4fe2", "列を作成"),
                 f("e93d2f8a", "次のようなさまざまな列を追加して表示内容をカスタマイズします。"),
                 f("e8203d1e", "検索"),
@@ -8907,9 +8908,9 @@
                 f("b0b22805", function (e) {
                     return e.advertiserName + "に移動";
                 }),
-                f("c67e71aa", "今すぐ見る"),
-                f("a6ada13e", "今すぐ購入");
-            f("j0f12222", "さらに表示"),
+                f("c67e71aa", "今すぐ見る");
+            f("a6ada13e", "今すぐ購入"),
+                f("j0f12222", "さらに表示"),
                 f("f569f7c8", "ウェブサイトに移動"),
                 f("j0c6772a", "ウェブサイトに移動"),
                 f("f73003aa", "動画は広告の後に再生されます"),
@@ -13367,4 +13368,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.5d79232a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.b447f7ea.js.map

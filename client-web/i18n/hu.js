@@ -5440,8 +5440,8 @@
                 s("i8cae552", "Az értékeléssel segítesz fenntartani a Közösségi Megjegyzések magas minőségét."),
                 s("hd43a218", "Elérted a megjegyzések írásának napi korlátját"),
                 s("aaba8ed2", "A megjegyzések minőségének magas szinten tartása és a spam elkerülése érdekében a közreműködők naponta korlátozott számú megjegyzést írhatnak, az írási hatásuk alapján. Kérünk, próbálkozz újra később!"),
-                s("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                s("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                s("a67ed4d6", "Elérted a korlátot, ezért jelenleg nem írhatsz több megjegyzést ennek az írónak a bejegyzéseihez"),
+                s("ic484166", "A megjegyzések minőségének magas szinten tartása és a spamek elkerülése érdekében egy személy egy adott időszakban csak korlátozott számú megjegyzést írhat egy konkrét bejegyzés írójára vonatkozóan. A korlát attól függ, hogy a felhasználók mennyire találták hasznosnak az illető adott íróra vonatkozó korábbi megjegyzéseit. Próbálkozz újra később."),
                 s("b98f077c", "Megjegyzésinformáció kérése"),
                 s("ee691104", "Közösségi Megjegyzés kérése ehhez a bejegyzéshez"),
                 s("f8cbdf02", "Úgy véled, ez a bejegyzés félrevezető lehet? Kérj Közösségi Megjegyzést!"),
@@ -7236,7 +7236,7 @@
                 s("h257d4aa", "Válassz ki egy ajánlandó bejegyzést"),
                 s("e9334fe6", "Az adatok néhány percenként frissülnek"),
                 s("a6d7b1d0", "Az X belső adatai alapján"),
-                s("h71a00e6", "You’re saving time with ad-free"),
+                s("h71a00e6", "A hirdetések nélküli verzióval időt takarítasz meg"),
                 s("f6c50ec0", "A hirdetésmentes próbaverziód véget ért"),
                 s("e1d1fbca", "Nem láttál"),
                 s("a82d7abd", function (e) {
@@ -8301,6 +8301,7 @@
                 s("e5e6479e", "Küldj egy e-mailt a szervezeted leírójával és a kérésed részleteivel, hogy a leggyorsabb támogatást nyújthassuk."),
                 s("ica8392a", "Miután megkaptuk a kérésedet, áttekintjük és priorizáljuk azt a beérkezés sorrendjében."),
                 s("ed37e36e", "Fontos: Ha nincs meg a szervezeted leírója vagy személyes e-mail-címet használsz, az késedelmet okozhat a kérés feldolgozásakor."),
+                s("h7e1c146", "Delegate accounts are not currently supported."),
                 s("eb0d4fe2", "Oszlop létrehozása"),
                 s("e93d2f8a", "Szabd testre az élményt oszlopok hozzáadásával, pl.:"),
                 s("e8203d1e", "Keresések"),
@@ -8907,9 +8908,9 @@
                 s("b0b22805", function (e) {
                     return "A(z) " + e.advertiserName + " megtekintése";
                 }),
-                s("c67e71aa", "Nézd meg most!"),
-                s("a6ada13e", "Vásárolj most");
-            s("j0f12222", "Továbbiak megtekintése"),
+                s("c67e71aa", "Nézd meg most!");
+            s("a6ada13e", "Vásárolj most"),
+                s("j0f12222", "Továbbiak megtekintése"),
                 s("f569f7c8", "Ugrás a weboldalra"),
                 s("j0c6772a", "Weboldal megtekintése"),
                 s("f73003aa", "A videó lejátszása a hirdetés után indul"),
@@ -13370,4 +13371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.7baaf6ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.8323357a.js.map

@@ -214,7 +214,7 @@
                     const Ue = (0, H.Zy)();
                     Ue.size > 0 && Ue.add("/settings");
                     const Oe = (0, $.v9)(K.Lz),
-                        Be = ({ link: e }) => !(Oe && (("string" == typeof e && ((e.startsWith("/settings") && !Ue.has(e)) || e.includes("ads.twitter.com") || e.includes("studio.twitter.com") || e.includes("analytics.twitter.com") || e.includes("ads.x.com") || e.includes("studio.x.com") || e.includes("analytics.x.com"))) || ("object" == typeof e && e.pathname.startsWith("/i/flow")))),
+                        Be = ({ link: e }) => !(Oe && (("string" == typeof e && ((e.startsWith("/settings") && !Ue.has(e)) || e.includes("ads.twitter.com") || e.includes("studio.twitter.com") || e.includes("analytics.twitter.com") || e.includes("ads.x.com") || e.startsWith("/i/chat") || e.includes("studio.x.com") || e.includes("analytics.x.com"))) || ("object" == typeof e && e.pathname.startsWith("/i/flow")))),
                         Re = c?.screen_name || "",
                         $e = (0, l.iv)().width,
                         je = B.Z.isOneColumnLayout($e) || B.Z.isOneColumnSquishedLayout($e),
@@ -826,4 +826,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Account.c915561a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Account.6f5bdb4a.js.map

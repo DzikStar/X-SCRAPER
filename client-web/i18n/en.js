@@ -8298,6 +8298,7 @@
                 a("e5e6479e", "Send us an email with your organization’s handle and the details of your inquiry to receive the fastest support."),
                 a("ica8392a", "Once we receive your request, we’ll review and prioritize it in the order it was received."),
                 a("ed37e36e", "Important: Missing your organization’s handle or using a personal email may cause delays in processing your request."),
+                a("h7e1c146", "Delegate accounts are not currently supported."),
                 a("eb0d4fe2", "Make a column"),
                 a("e93d2f8a", "Customize your experience by adding a variety of columns such as:"),
                 a("e8203d1e", "Searches"),
@@ -8904,9 +8905,9 @@
                 a("b0b22805", function (e) {
                     return "Visit " + e.advertiserName;
                 }),
-                a("c67e71aa", "Watch now"),
-                a("a6ada13e", "Shop now");
-            a("j0f12222", "See more"),
+                a("c67e71aa", "Watch now");
+            a("a6ada13e", "Shop now"),
+                a("j0f12222", "See more"),
                 a("f569f7c8", "Go to website"),
                 a("j0c6772a", "Visit website"),
                 a("f73003aa", "Video will play after ad"),
@@ -13358,4 +13359,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.41698f6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.cb9db85a.js.map

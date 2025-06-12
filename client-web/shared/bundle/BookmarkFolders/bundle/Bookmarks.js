@@ -2,7 +2,7 @@
     ["shared~bundle.BookmarkFolders~bundle.Bookmarks"],
     {
         721879: (e) => {
-            e.exports = { queryId: "pOUUqD-SLt5tuLjKBYZGsA", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "kdUVS11GOq2h4tu5cwSZHA", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         218276: (e) => {
             e.exports = { queryId: "i78YDd0Tza-dV4SYs58kRg", operationName: "BookmarkFoldersSlice", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -11,7 +11,7 @@
             e.exports = { queryId: "4KHZvvNbHNf07bsgnL9gWA", operationName: "bookmarkTweetToFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         549186: (e) => {
-            e.exports = { queryId: "yuPrLB4ze698uVRBz6ayBw", operationName: "Bookmarks", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "ViFW5abLxtdHpwYsHKSuFg", operationName: "Bookmarks", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         769948: (e) => {
             e.exports = { queryId: "6Xxqpq8TM_CREYiuof_h5w", operationName: "createBookmarkFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -51,9 +51,9 @@
                 E = o(418631),
                 y = o.n(E),
                 g = o(734701),
-                v = o.n(g),
-                F = o(630986),
-                T = o.n(F),
+                F = o.n(g),
+                v = o(630986),
+                T = o.n(v),
                 S = o(934309);
             const Z = { result: [], entities: {}, slice_info: {} },
                 I = (e, t) => {
@@ -91,7 +91,7 @@
                     },
                     editBookmarkFolder(t) {
                         const { bookmarkFolderId: o, name: r } = t;
-                        return e.graphQL(v(), { bookmark_collection_id: o, name: r });
+                        return e.graphQL(F(), { bookmark_collection_id: o, name: r });
                     },
                     removeTweetFromBookmarkFolder(t) {
                         const { bookmarkFolderId: o, tweetId: r } = t;
@@ -312,13 +312,13 @@
                 E = o(71620),
                 y = o(668214),
                 g = o(735313);
-            const v = (0, y.Z)()
+            const F = (0, y.Z)()
                     .propsFromActions(() => ({ clearTimelineCache: (e) => (0, g.Z)(e), createLocalApiErrorHandler: (0, E.zr)("BOOKMARK_SEARCH_CONTAINER") }))
                     .withAnalytics(),
-                F = l().e9c65c4a,
+                v = l().e9c65c4a,
                 T = l().b92a21d9,
                 S = r.createElement(l().I18NFormatMessage, { $i18n: "e7e44bab" }, r.createElement(p.ZP, { link: "/settings/search" }, l().f191a2ba)),
-                Z = v(({ clearTimelineCache: e, createLocalApiErrorHandler: t, query: o }) => {
+                Z = F(({ clearTimelineCache: e, createLocalApiErrorHandler: t, query: o }) => {
                     const n = r.useMemo(
                         () =>
                             (function (e) {
@@ -329,7 +329,7 @@
                     r.useEffect(() => {
                         e(n).catch(t());
                     }, [n, e, t]);
-                    return r.createElement(w.Z, { module: n, renderEmptyState: () => r.createElement(h.Z, { header: T({ query: o }), message: S }), title: F });
+                    return r.createElement(w.Z, { module: n, renderEmptyState: () => r.createElement(h.Z, { header: T({ query: o }), message: S }), title: v });
                 });
         },
         652904: (e, t, o) => {
@@ -432,7 +432,7 @@
         },
         482176: (e, t, o) => {
             "use strict";
-            o.d(t, { SS: () => E, ZP: () => v, aL: () => y, zs: () => w });
+            o.d(t, { SS: () => E, ZP: () => F, aL: () => y, zs: () => w });
             var r = o(912021),
                 n = o(744531),
                 i = o(403911),
@@ -552,7 +552,7 @@
                     return Promise.resolve(r([(0, m.m)(e).removeTweets({ [t]: !0 }), n.injectItems([e])]));
                 },
                 g = { ...b, ...f, customActionTypes: (0, c.X7)(f) },
-                v = d.Z.register(g);
+                F = d.Z.register(g);
         },
         545521: (e, t, o) => {
             "use strict";
@@ -616,7 +616,7 @@
         },
         841198: (e, t, o) => {
             "use strict";
-            o.d(t, { Be: () => f, Er: () => v, Ev: () => b, WC: () => y, Yf: () => _, t5: () => F });
+            o.d(t, { Be: () => f, Er: () => F, Ev: () => b, WC: () => y, Yf: () => _, t5: () => v });
             o(571372);
             var r = o(166852),
                 n = o(370751),
@@ -658,8 +658,8 @@
                 E = "rweb/slices/INJECT_ITEMS_SLICE",
                 y = ({ identityFunction: e, items: t, sliceKey: o }) => ({ type: E, meta: { sliceKey: o, identityFunction: e }, payload: t }),
                 g = "rweb/slices/REMOVE_ITEMS_SLICE",
-                v = ({ identityFunction: e, items: t, sliceKey: o }) => ({ type: g, meta: { sliceKey: o, identityFunction: e }, payload: t }),
-                F = ({ contextSuffix: e, params: t, sliceKey: o }) => ({ actionTypes: u, context: `FETCH_${e}`, meta: { sliceKey: o, direction: t?.cursor ? l.Yj.BOTTOM : l.Yj.TOP } });
+                F = ({ identityFunction: e, items: t, sliceKey: o }) => ({ type: g, meta: { sliceKey: o, identityFunction: e }, payload: t }),
+                v = ({ contextSuffix: e, params: t, sliceKey: o }) => ({ actionTypes: u, context: `FETCH_${e}`, meta: { sliceKey: o, direction: t?.cursor ? l.Yj.BOTTOM : l.Yj.TOP } });
             i.Z.register({
                 [_]: function (e = c, t) {
                     if (!t) return e;
@@ -734,13 +734,13 @@
                 l = o(952428),
                 c = o(392237);
             const d = (e) => {
-                    const { decoration: t, description: o, disabled: d = !1, isActive: m = !1, label: u, link: p, onPress: h, paddingHorizontal: b, renderRightContent: k, role: f = "tab", styleOverride: w, testID: E = "pivot", thumbnail: y, thumbnailSize: g, withoutArrow: v = !1 } = e,
-                        F = [_.thumbnailContainer, "medium" === g && _.thumbnailContainerMedium],
+                    const { decoration: t, description: o, disabled: d = !1, isActive: m = !1, label: u, link: p, onPress: h, paddingHorizontal: b, renderRightContent: k, role: f = "tab", styleOverride: w, testID: E = "pivot", thumbnail: y, thumbnailSize: g, withoutArrow: F = !1 } = e,
+                        v = [_.thumbnailContainer, "medium" === g && _.thumbnailContainerMedium],
                         T = "string" == typeof u ? r.createElement(s.ZP, null, u) : u,
                         S = "object" == typeof p && p.external && !p.openInSameFrame,
                         Z = o ? ("string" == typeof o ? r.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${E}-description` }, o) : o) : null,
                         I = r.useMemo(() => ("space0" === b ? { paddingHorizontal: 0 } : { paddingHorizontal: b ? c.default.theme.spaces[b] : c.default.theme.componentDimensions.gutterHorizontal }), [b]);
-                    return r.createElement(l.Z, { "aria-selected": "tab" === f ? m : null, disabled: d, link: d ? void 0 : p, onPress: h, role: f, style: [_.root, I, d && _.disabled, w], testID: E, withInteractiveStyling: !!p || !!h }, r.createElement(n.Z, { style: _.contentContainer }, y ? r.createElement(n.Z, { style: F }, y) : null, r.createElement(n.Z, { style: _.content }, T, Z), k ? k() : null, (!p && !h) || d || v ? null : S ? r.createElement(i.default, { style: _.icon }) : r.createElement(a.default, { style: _.icon })), t);
+                    return r.createElement(l.Z, { "aria-selected": "tab" === f ? m : null, disabled: d, link: d ? void 0 : p, onPress: h, role: f, style: [_.root, I, d && _.disabled, w], testID: E, withInteractiveStyling: !!p || !!h }, r.createElement(n.Z, { style: _.contentContainer }, y ? r.createElement(n.Z, { style: v }, y) : null, r.createElement(n.Z, { style: _.content }, T, Z), k ? k() : null, (!p && !h) || d || F ? null : S ? r.createElement(i.default, { style: _.icon }) : r.createElement(a.default, { style: _.icon })), t);
                 },
                 _ = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -760,4 +760,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.BookmarkFolders~bundle.Bookmarks.2d3cdffa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.BookmarkFolders~bundle.Bookmarks.c1f4c0ba.js.map

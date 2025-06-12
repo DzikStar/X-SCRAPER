@@ -5440,8 +5440,8 @@
                 o("i8cae552", "Tu calificación ayudará a mantener una calidad alta en Notas de la comunidad."),
                 o("hd43a218", "Alcanzaste tu límite diario para escribir notas"),
                 o("aaba8ed2", "Para evitar el spam y mantener la calidad de las notas a un nivel alto, hay un límite para el número de notas que los colaboradores pueden escribir cada día, que depende de su Impacto de escritura. Inténtalo de nuevo más tarde."),
-                o("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                o("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                o("a67ed4d6", "Por ahora, ya alcanzaste el límite para añadir notas a los posts de este autor"),
+                o("ic484166", "Para mantener la buena calidad de las notas y evitar el spam, hay un límite en el número de notas que se pueden escribir sobre el autor de un post específico en un período de tiempo determinado. El límite se basa en lo útiles que le hayan resultado a la gente tus notas anteriores sobre ese autor. Inténtalo de nuevo más tarde."),
                 o("b98f077c", "Solicitar información de una Nota"),
                 o("ee691104", "Solicitar una Nota de la comunidad sobre este post"),
                 o("f8cbdf02", "¿Crees que este post podría ser engañoso? Solicita una Nota de la comunidad."),
@@ -7236,7 +7236,7 @@
                 o("h257d4aa", "Seleccionar un post para promocionar"),
                 o("e9334fe6", "Actualizaciones de datos cada tantos minutos"),
                 o("a6d7b1d0", "En función de los Datos Internos de X"),
-                o("h71a00e6", "You’re saving time with ad-free"),
+                o("h71a00e6", "Estás ahorrando tiempo sin anuncios"),
                 o("f6c50ec0", "Finalizó tu prueba sin anuncios"),
                 o("e1d1fbca", "Evitaste"),
                 o("a82d7abd", function (e) {
@@ -8301,6 +8301,7 @@
                 o("e5e6479e", "Envíanos un correo electrónico con el nombre de usuario de tu organización y los detalles de tu consulta para recibir el soporte más rápido."),
                 o("ica8392a", "Una vez que recibamos tu solicitud, la revisaremos y priorizaremos en el orden recibido."),
                 o("ed37e36e", "Importante: la falta del nombre de usuario de tu organización o el uso de un correo electrónico personal puede causar retrasos en el procesamiento de tu solicitud."),
+                o("h7e1c146", "Delegate accounts are not currently supported."),
                 o("eb0d4fe2", "Hacer una columna"),
                 o("e93d2f8a", "Personaliza tu experiencia añadiendo una variedad de columnas, por ejemplo:"),
                 o("e8203d1e", "Búsquedas"),
@@ -8907,9 +8908,9 @@
                 o("b0b22805", function (e) {
                     return "Visitar " + e.advertiserName;
                 }),
-                o("c67e71aa", "Ver ahora"),
-                o("a6ada13e", "Comprar");
-            o("j0f12222", "Ver más"),
+                o("c67e71aa", "Ver ahora");
+            o("a6ada13e", "Comprar"),
+                o("j0f12222", "Ver más"),
                 o("f569f7c8", "Ir al sitio web"),
                 o("j0c6772a", "Visitar sitio web"),
                 o("f73003aa", "El video se reproducirá después del anuncio"),
@@ -13373,4 +13374,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.12a51baa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.a59e6faa.js.map

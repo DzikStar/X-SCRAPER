@@ -5448,8 +5448,8 @@
                 o("i8cae552", "Svojim ocjenama pridonosite visokoj kvaliteti bilješki zajednice."),
                 o("hd43a218", "Dosegnuli ste dnevno ograničenje broja zabilješki"),
                 o("aaba8ed2", "U svrhu održavanja kvalitete zabilješki i sprječavanja spama, broj zabilješki koje suradnici mogu dnevno napisati ograničen je ovisno o njihovu utjecaju. Pokušajte ponovno poslije."),
-                o("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                o("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                o("a67ed4d6", "Zasad ste dosegnuli ste ograničenje za dodavanje zabilješki objavama tog autora"),
+                o("ic484166", "Da biste zadržali visoku kvalitetu zabilješki i spriječili spam, postoji ograničenje broja zabilješki koje pojedinac može napisati o određenom autoruu objava u određenom vremenskom razdoblju. Ograničenje se temelji na tome koliko su korisne prethodne bilješke te osobe o tom autoru bile prema mišljenju drugih korisnika. Pokušajte ponovno kasnije."),
                 o("b98f077c", "Zatražite informacije o bilješci"),
                 o("ee691104", "Zatražite Bilješku zajednice o ovoj objavi"),
                 o("f8cbdf02", "Smatrate da je ova objava možda obmanjujuća? Zatražite Bilješku zajednice."),
@@ -7244,7 +7244,7 @@
                 o("h257d4aa", "Odaberite objavu za promoviranje"),
                 o("e9334fe6", "Podaci se ažuriraju svakih nekoliko minuta"),
                 o("a6d7b1d0", "Na temelju internih podataka tvrtke X"),
-                o("h71a00e6", "You’re saving time with ad-free"),
+                o("h71a00e6", "Štedite vrijeme uz pregledavanje bez oglasa"),
                 o("f6c50ec0", "Vaše probno razdoblje bez oglasa završilo je"),
                 o("e1d1fbca", "Izbjegli ste"),
                 o("a82d7abd", function (a) {
@@ -8309,6 +8309,7 @@
                 o("e5e6479e", "Pošaljite nam poruku e-pošte i navedite nadimak vaše organizacije i pojedinosti upita kako biste dobili brzu podršku."),
                 o("ica8392a", "Kada primimo vaš zahtjev, pregledat ćemo ga i dati mu prioritet prema redoslijedu primitka."),
                 o("ed37e36e", "Važno: ako nedostaje nadimak vaše organizacije ili upotrebljavate privatnu adresu e-pošte, može doći do kašnjenja u obradi vašeg zahtjeva."),
+                o("h7e1c146", "Delegate accounts are not currently supported."),
                 o("eb0d4fe2", "Izradi stupac"),
                 o("e93d2f8a", "Prilagodite sučelje dodavanjem raznih stupaca, kao što su:"),
                 o("e8203d1e", "Pretrage"),
@@ -8915,9 +8916,9 @@
                 o("b0b22805", function (a) {
                     return "Posjetite " + a.advertiserName;
                 }),
-                o("c67e71aa", "Gledajte odmah"),
-                o("a6ada13e", "Odmah kupujte");
-            o("j0f12222", "Pogledajte više"),
+                o("c67e71aa", "Gledajte odmah");
+            o("a6ada13e", "Odmah kupujte"),
+                o("j0f12222", "Pogledajte više"),
                 o("f569f7c8", "Idi na web-mjesto"),
                 o("j0c6772a", "Posjetite web-mjesto"),
                 o("f73003aa", "Videozapis će se reproducirati nakon oglasa"),
@@ -13383,4 +13384,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.f2e03f0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.274e1eaa.js.map

@@ -5441,8 +5441,8 @@
                 t("i8cae552", "Ved at bedømme hjælper du med at højne kvaliteten af Fællesskabsnoter."),
                 t("hd43a218", "Du har nået din daglige grænse for skrivning af notater"),
                 t("aaba8ed2", "For at opretholde en høj kvalitet af notater og forhindre spam er der en grænse for, hvor mange notater bidragydere kan skrive hver dag, baseret på deres skrivepåvirkning. Prøv igen senere."),
-                t("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                t("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                t("a67ed4d6", "Du har nået grænsen for at tilføje noter til denne forfatters posts for nu"),
+                t("ic484166", "For at opretholde en høj notekvalitet og forhindre spam er der en grænse for, hvor mange noter man kan skrive om en bestemt indlægsforfatter i en given tidsperiode. Grænsen er baseret på, hvor nyttige folk har fundet ens tidligere noter om den pågældende forfatter. Prøv igen senere."),
                 t("b98f077c", "Anmod om note-info"),
                 t("ee691104", "Anmod om en Fællesskabsnote om denne post"),
                 t("f8cbdf02", "Synes du, at denne post er potentielt vildledende? Anmod om en Fællesskabsnote."),
@@ -7237,7 +7237,7 @@
                 t("h257d4aa", "Vælg en post at promovere"),
                 t("e9334fe6", "Data opdateres med få minutters mellemrum"),
                 t("a6d7b1d0", "Baseret på interne data af X"),
-                t("h71a00e6", "You’re saving time with ad-free"),
+                t("h71a00e6", "Du sparer tid med annoncefri"),
                 t("f6c50ec0", "Din reklamefri prøveperiode er slut"),
                 t("e1d1fbca", "Du har undgået"),
                 t("a82d7abd", function (e) {
@@ -8302,6 +8302,7 @@
                 t("e5e6479e", "Send os en e-mail med navnet på din organisation og nærmere oplysninger om din forespørgsel for at få den hurtigste support."),
                 t("ica8392a", "Når vi har modtaget din anmodning, gennemgår og prioriterer vi den i den rækkefølge, vi har modtaget den."),
                 t("ed37e36e", "Vigtigt: Hvis brugernavnet på din organisation mangler, eller du bruger en personlig e-mail, kan det medføre forsinkelser i behandlingen af din anmodning."),
+                t("h7e1c146", "Delegate accounts are not currently supported."),
                 t("eb0d4fe2", "Opret en kolonne"),
                 t("e93d2f8a", "Tilpas din oplevelse ved at tilføje forskellige kolonner såsom:"),
                 t("e8203d1e", "Søgninger"),
@@ -8908,9 +8909,9 @@
                 t("b0b22805", function (e) {
                     return "Besøg " + e.advertiserName;
                 }),
-                t("c67e71aa", "Se nu"),
-                t("a6ada13e", "Køb nu");
-            t("j0f12222", "Se mere"),
+                t("c67e71aa", "Se nu");
+            t("a6ada13e", "Køb nu"),
+                t("j0f12222", "Se mere"),
                 t("f569f7c8", "Gå til webstedet"),
                 t("j0c6772a", "Besøg webstedet"),
                 t("f73003aa", "Videoen afspilles efter annoncen"),
@@ -13364,4 +13365,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.275afb9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.2eb9ee6a.js.map

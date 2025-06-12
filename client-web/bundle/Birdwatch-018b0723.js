@@ -173,7 +173,7 @@
                             isNotePage: G,
                         } = this.props,
                         { featureSwitches: Y } = this.context,
-                        Q = (0, y.F)(Y, ""),
+                        Q = (0, y.F)(Y, "") ? "button" : void 0,
                         K = V?.media_note_category,
                         J = !1 === e?.is_in_account_language,
                         X = e?.noteTranslation,
@@ -217,7 +217,7 @@
                                 n.createElement(r.Z, { size: "space4" }),
                                 n.createElement(N.t, { fullyVisibleModel: U, impressionCount: E, isShownOnTwitter: this._isShownOnTwitter() }),
                                 n.createElement(r.Z, { size: "space4" }),
-                                n.createElement(i.Z, { style: z.noteBody }, F ? n.createElement(w.Z, { inline: !0 }, n.createElement(f.Z, { entities: F.entities, rtl: F.rtl, text: F.text })) : n.createElement(n.Fragment, null, n.createElement(I.c, { helpful_tags: _, not_helpful_tags: Z, rating_status: H }), (t || a) && ie && H && n.createElement(i.Z, { style: z.mediaNoteContainer }, t ? n.createElement(u.default, { style: z.icon }) : n.createElement(h.default, { style: z.icon }), n.createElement(r.Z, { size: "space8" }), n.createElement(o.ZP, { color: "gray700", size: "subtext2", style: z.subtext }, (0, R.L)(d, K, H, V?.rest_id, te, O, a, c, oe)), n.createElement(r.Z, { size: "space8" })), n.createElement(r.Z, { size: "space8" }), n.createElement(i.Z, { style: z.noteTextSection }, !he && n.createElement(f.Z, { entities: ne, onEntityClick: this._handleEntityClick, text: ae }), ue ? n.createElement(i.Z, { style: z.translatedNoteTextSection }, n.createElement(g.Z, { fetchTranslation: this._fetchNoteTranslation, scribeElement: "translate_note", streamedTranslationFetchStatus: ee?.fetchStatus, translateButtonText: D, translatedMessage: "" !== me ? n.createElement(f.Z, { animateIn: !0, entities: be, onEntityClick: this._handleEntityClick, text: me }) : void 0, translationFetchStatus: X?.fetchStatus, translationSource: Q ? "Grok" : "Google", useGrokTranslation: Q, withOriginalText: he }, he ? n.createElement(f.Z, { entities: ne, onEntityClick: this._handleEntityClick, text: ae }) : void 0)) : null))),
+                                n.createElement(i.Z, { style: z.noteBody }, F ? n.createElement(w.Z, { inline: !0 }, n.createElement(f.Z, { entities: F.entities, rtl: F.rtl, text: F.text })) : n.createElement(n.Fragment, null, n.createElement(I.c, { helpful_tags: _, not_helpful_tags: Z, rating_status: H }), (t || a) && ie && H && n.createElement(i.Z, { style: z.mediaNoteContainer }, t ? n.createElement(u.default, { style: z.icon }) : n.createElement(h.default, { style: z.icon }), n.createElement(r.Z, { size: "space8" }), n.createElement(o.ZP, { color: "gray700", size: "subtext2", style: z.subtext }, (0, R.L)(d, K, H, V?.rest_id, te, O, a, c, oe)), n.createElement(r.Z, { size: "space8" })), n.createElement(r.Z, { size: "space8" }), n.createElement(i.Z, { style: z.noteTextSection }, !he && n.createElement(f.Z, { entities: ne, onEntityClick: this._handleEntityClick, text: ae }), ue ? n.createElement(i.Z, { style: z.translatedNoteTextSection }, n.createElement(g.Z, { fetchTranslation: this._fetchNoteTranslation, streamedTranslationFetchStatus: ee?.fetchStatus, translateButtonText: D, translateTargetType: "community_note", translatedMessage: "" !== me ? n.createElement(f.Z, { animateIn: !0, entities: be, onEntityClick: this._handleEntityClick, text: me }) : void 0, translationFetchStatus: X?.fetchStatus, translationSource: Q ? "Grok" : "Google", useGrokTranslation: Q, withOriginalText: he }, he ? n.createElement(f.Z, { entities: ne, onEntityClick: this._handleEntityClick, text: ae }) : void 0)) : null))),
                             ),
                             pe ? n.createElement(B._, { hasVisitedEntity: this.state.hasVisitedEntity, isNotePage: G, note: e, setHasVisitedEntity: this._setHasVisitedEntity, tweetId: te, updateShowSignupPrompt: this._updateShowSignupPrompt }) : null,
                         ),
@@ -944,4 +944,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-018b0723.9e95f96a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-018b0723.824c247a.js.map

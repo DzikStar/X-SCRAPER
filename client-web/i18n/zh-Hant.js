@@ -5440,8 +5440,8 @@
                 n("i8cae552", "透過評價，你將可協助社群備註保持高品質。"),
                 n("hd43a218", "你已達到每天可撰寫備註的上限"),
                 n("aaba8ed2", "為了維持備註的品質以及防止垃圾訊息，我們會根據貢獻者的撰寫積分，限制他們每天可撰寫的備註數量。請稍後再試。"),
-                n("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                n("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                n("a67ed4d6", "你目前已達到為此作者的貼文加入備註的數量上限"),
+                n("ic484166", "為了確保備註的品質並防止垃圾訊息，我們會限制使用者在指定時間內對特定貼文作者所撰寫的備註數量。此限制取決於人們認為使用者過去對該作者所撰寫之備註的幫助程度。請稍後再試。"),
                 n("b98f077c", "請求提供備註資訊"),
                 n("ee691104", "請求提供有關此貼文的社群備註"),
                 n("f8cbdf02", "認為這則貼文可能具有誤導性嗎？請求提供社群備註。"),
@@ -7236,7 +7236,7 @@
                 n("h257d4aa", "選取要推廣的貼文"),
                 n("e9334fe6", "資料每隔幾分鐘會更新一次"),
                 n("a6d7b1d0", "根據 X 內部資料"),
-                n("h71a00e6", "You’re saving time with ad-free"),
+                n("h71a00e6", "你正透過無廣告體驗節省時間"),
                 n("f6c50ec0", "你的無廣告試用已結束"),
                 n("e1d1fbca", "你已避免"),
                 n("a82d7abd", function (e) {
@@ -8301,6 +8301,7 @@
                 n("e5e6479e", "請發送電子郵件給我們，內含貴組織的推號和查詢的詳細資料，以獲得最快的支援。"),
                 n("ica8392a", "在收到你的請求後，我們將進行審核並依照收到的順序優先處理。"),
                 n("ed37e36e", "重要：缺少貴組織的推號或使用個人電子郵件可能會導致處理請求時發生延遲。"),
+                n("h7e1c146", "Delegate accounts are not currently supported."),
                 n("eb0d4fe2", "建立欄"),
                 n("e93d2f8a", "透過加入各種欄來自訂你的體驗，例如："),
                 n("e8203d1e", "搜尋結果"),
@@ -8907,9 +8908,9 @@
                 n("b0b22805", function (e) {
                     return "造訪 " + e.advertiserName;
                 }),
-                n("c67e71aa", "立即觀看"),
-                n("a6ada13e", "立即購買");
-            n("j0f12222", "查看更多"),
+                n("c67e71aa", "立即觀看");
+            n("a6ada13e", "立即購買"),
+                n("j0f12222", "查看更多"),
                 n("f569f7c8", "前往網站"),
                 n("j0c6772a", "造訪網站"),
                 n("f73003aa", "影片將在廣告之後播放"),
@@ -13370,4 +13371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.68393b4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.de3ed31a.js.map

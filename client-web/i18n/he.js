@@ -8311,6 +8311,7 @@
                 n("e5e6479e", "שלח לנו הודעת דואר שכוללת את כינוי הארגון ואת פרטי הבקשה כדי שנוכל להעניק לך תמיכה מהירה יותר."),
                 n("ica8392a", "לאחר שנקבל את הבקשה, נבחן אותה ונעניק לה עדיפות בהתאם לסדר הקבלה."),
                 n("ed37e36e", "חשוב: אי יכולת לזהות את כינוי הארגון או שימוש בכתובת דואר פרטית עשויים לגרום לעיכובים בטיפול בבקשה."),
+                n("h7e1c146", "Delegate accounts are not currently supported."),
                 n("eb0d4fe2", "צור עמודה"),
                 n("e93d2f8a", "התאם אישית את החוויה שלך על-ידי הוספת מגוון עמודות כגון:"),
                 n("e8203d1e", "חיפושים"),
@@ -8917,9 +8918,9 @@
                 n("b0b22805", function (e) {
                     return "בקר ב־" + e.advertiserName;
                 }),
-                n("c67e71aa", "צפה עכשיו"),
-                n("a6ada13e", "קנה עכשיו");
-            n("j0f12222", "ראה עוד"),
+                n("c67e71aa", "צפה עכשיו");
+            n("a6ada13e", "קנה עכשיו"),
+                n("j0f12222", "ראה עוד"),
                 n("f569f7c8", "עבור לאתר"),
                 n("j0c6772a", "בקר באתר"),
                 n("f73003aa", "הסרטון יוצג לאחר המודעה"),
@@ -13375,4 +13376,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.11860aca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.09fa4a9a.js.map

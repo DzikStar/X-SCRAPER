@@ -5440,8 +5440,8 @@
                 t("i8cae552", "Bằng cách xếp hạng, bạn sẽ giúp duy trì chất lượng Ghi chép cho cộng đồng ở mức cao."),
                 t("hd43a218", "Bạn đã đạt đến giới hạn hằng ngày cho việc viết ghi chép"),
                 t("aaba8ed2", "Để duy trì chất lượng cao của ghi chép và ngăn nội dung rác, người cộng tác sẽ chỉ được viết một số lượng giới hạn các ghi chép mỗi ngày, tùy theo Tác động của bài viết của họ. Vui lòng thử lại sau."),
-                t("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                t("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                t("a67ed4d6", "Bạn hiện đã đạt đến giới hạn thêm ghi chép vào bài đăng của tác giả này"),
+                t("ic484166", "Để đảm bảo chất lượng của ghi chép và ngăn chặn tin rác, có giới hạn về số lượng ghi chép mà một người có thể viết về một tác giả bài đăng cụ thể trong một khoảng thời gian nhất định. Giới hạn này dựa trên mức độ hữu ích mà người khác đánh giá đối với các ghi chép trước đây của bạn về tác giả đó. Vui lòng thử lại sau."),
                 t("b98f077c", "Yêu cầu thông tin ghi chép"),
                 t("ee691104", "Yêu cầu Ghi chép cho cộng đồng về bài đăng này"),
                 t("f8cbdf02", "Bạn cho rằng bài đăng này có thể gây hiểu nhầm? Hãy yêu cầu Ghi chép cho cộng đồng."),
@@ -7236,7 +7236,7 @@
                 t("h257d4aa", "Chọn một bài đăng để quảng bá"),
                 t("e9334fe6", "Dữ liệu cập nhật vài phút một lần"),
                 t("a6d7b1d0", "Dựa trên Dữ liệu nội bộ của X"),
-                t("h71a00e6", "You’re saving time with ad-free"),
+                t("h71a00e6", "Bạn đang tiết kiệm thời gian với trải nghiệm không quảng cáo"),
                 t("f6c50ec0", "Thời gian dùng thử không quảng cáo của bạn đã kết thúc"),
                 t("e1d1fbca", "Bạn đã tránh được"),
                 t("a82d7abd", function (n) {
@@ -8301,6 +8301,7 @@
                 t("e5e6479e", "Hãy gửi email kèm theo thông tin đăng nhập của tổ chức bạn và chi tiết về yêu cầu của bạn để được hỗ trợ nhanh nhất."),
                 t("ica8392a", "Sau khi nhận được yêu cầu, chúng tôi sẽ xem xét và ưu tiên theo thứ tự nhận được yêu cầu."),
                 t("ed37e36e", "Quan trọng: Nếu bạn gửi thiếu thông tin đăng nhập của tổ chức hoặc dùng email cá nhân, thì việc xử lý yêu cầu có thể bị chậm trễ."),
+                t("h7e1c146", "Delegate accounts are not currently supported."),
                 t("eb0d4fe2", "Tạo cột"),
                 t("e93d2f8a", "Tùy chỉnh trải nghiệm của bạn bằng cách thêm nhiều loại cột như:"),
                 t("e8203d1e", "Tìm kiếm"),
@@ -8907,9 +8908,9 @@
                 t("b0b22805", function (n) {
                     return "Truy cập " + n.advertiserName;
                 }),
-                t("c67e71aa", "Xem ngay"),
-                t("a6ada13e", "Mua ngay");
-            t("j0f12222", "Xem thêm"),
+                t("c67e71aa", "Xem ngay");
+            t("a6ada13e", "Mua ngay"),
+                t("j0f12222", "Xem thêm"),
                 t("f569f7c8", "Đi đến trang web"),
                 t("j0c6772a", "Truy cập website"),
                 t("f73003aa", "Video sẽ phát sau quảng cáo"),
@@ -13360,4 +13361,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.78dc563a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.e82804ca.js.map

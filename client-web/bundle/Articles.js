@@ -2,10 +2,10 @@
     ["bundle.Articles"],
     {
         879604: (e) => {
-            e.exports = { queryId: "lhwPZpWCyJDKRYna7jKZpQ", operationName: "ArticleTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "Pn3pJBsVLiWbkqOncsOAQA", operationName: "ArticleTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         103508: (e) => {
-            e.exports = { queryId: "ms2f8VLgoQ0UpyPxOEyQTA", operationName: "ArticleTweetsTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "xA3FxmFpDCq6j91buAnm-A", operationName: "ArticleTweetsTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         4691: (e, t, n) => {
             "use strict";
@@ -147,7 +147,7 @@
                     return i.createElement(i.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: t, TabBar: n, appBarStyle: o, backLocation: a, documentTitle: s, headerless: c, history: p, leftControl: m, middleControl: _, onBackClick: h, rightControl: b, screenType: y, searchBoxOptions: f, secondaryBar: w, showBackButtonOnRoot: k, showSubtitleOnRoot: v, showSubtitleOnWideDetail: C, showTitleOnRoot: E, subtitle: T, title: x, titleIconCell: S, titleIconCellSize: Z, withDetailOpen: I, withSearchBox: F, withTweetButton: L, withWideContainer: R } = this.props,
+                    const { SideNavButton: t, TabBar: n, appBarStyle: o, backLocation: a, documentTitle: s, headerless: c, history: p, leftControl: m, middleControl: _, onBackClick: h, rightControl: b, screenType: y, searchBoxOptions: f, secondaryBar: w, showBackButtonOnRoot: k, showSubtitleOnRoot: v, showSubtitleOnWideDetail: C, showTitleOnRoot: E, subtitle: T, title: x, titleIconCell: S, titleIconCellSize: Z, withDetailOpen: F, withSearchBox: I, withTweetButton: L, withWideContainer: R } = this.props,
                         B = "root" === y,
                         P = "secondaryRoot" === y,
                         D = "primaryDetail" === y,
@@ -156,7 +156,7 @@
                         N = (B && !E) || (D && e && !E),
                         W = B ? l.ey : D ? l.vX : void 0,
                         z = i.createElement(r.Z, { style: g.appBarContainer }, i.createElement(d.ZP, { backLocation: a, fixed: !1, hideBackButton: A, history: p, leftControl: m, middleControl: _, onBackClick: h, rightControl: b, secondaryBar: w, style: o, subtitle: O ? T : void 0, title: N ? void 0 : x, titleDomId: W, titleIconCell: S, titleIconCellSize: Z, withWideContainer: R })),
-                        M = B || (P && I) ? null : i.createElement(u.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: a, documentTitle: s, headerless: c, middleControl: _, onBackClick: h, rightControl: b, searchBoxOptions: f, subtitle: T, title: x, withSearchBox: F, withTweetButton: L });
+                        M = B || (P && F) ? null : i.createElement(u.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: a, documentTitle: s, headerless: c, middleControl: _, onBackClick: h, rightControl: b, searchBoxOptions: f, subtitle: T, title: x, withSearchBox: I, withTweetButton: L });
                     return i.createElement(i.Fragment, null, M, z);
                 }
             }
@@ -301,9 +301,9 @@
                 x = n(668214),
                 S = n(502909),
                 Z = n(600823);
-            const I = (0, S.ZP)({ namespace: "articles" }),
-                F = Z.Z.register(I),
-                L = (e, t) => F.select(e, t.id.toString()),
+            const F = (0, S.ZP)({ namespace: "articles" }),
+                I = Z.Z.register(F),
+                L = (e, t) => I.select(e, t.id.toString()),
                 R = (0, x.Z)()
                     .propsFromState(() => ({ article: L }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, T.zr)("ARTICLE_SUMMARY") })),
@@ -313,13 +313,13 @@
                     R(({ article: e, createLocalApiErrorHandler: t, id: n, location: y, socialContext: f, withInternalLink: E }) => {
                         const T = (0, C.Z)(),
                             x = i.useContext(o.ZP),
-                            { article_url: S, description: Z, domain: I, image_url: F, publish_date: L, title: R } = e || {},
+                            { article_url: S, description: Z, domain: F, image_url: I, publish_date: L, title: R } = e || {},
                             D = { domain: a.b(), timestamp: a.b(), title: a.b(), description: a.b(), adFree: a.b(), socialContext: a.b() },
                             O = [D.domain, D.timestamp, D.title, D.description, D.socialContext],
                             A = i.useMemo(() => {
                                 const e = (0, w.Z)(T.contextualScribeData.items || []) || {};
-                                return { url: S, items: [(0, k.Z)({}, e, { article_details: { publisher_name: I, is_showing_label: !1, is_ad_free: !1 } })] };
-                            }, [T.contextualScribeData.items, S, I]),
+                                return { url: S, items: [(0, k.Z)({}, e, { article_details: { publisher_name: F, is_showing_label: !1, is_ad_free: !1 } })] };
+                            }, [T.contextualScribeData.items, S, F]),
                             N = i.useCallback(() => {
                                 T.scribe({ action: "impression", data: A });
                             }, [T, A]);
@@ -331,12 +331,12 @@
                         )
                             return null;
                         const { contextImageUrls: W, landingUrl: z, text: M } = f || {},
-                            $ = F ? { url: F, height: 750, width: 1250 } : void 0,
+                            $ = I ? { url: I, height: 750, width: 1250 } : void 0,
                             H = { pathname: S, external: !0 },
-                            U = (e) => {
+                            q = (e) => {
                                 T.scribe({ element: E ? "read_article" : "article_header", action: "open_link", data: A });
                             },
-                            q = () => {
+                            U = () => {
                                 T.scribe({ element: "conversation_view", action: "click", data: A });
                             },
                             K = z ? x.getLinkFromUrtUrl(z) : void 0,
@@ -350,14 +350,14 @@
                                       })()}`,
                                   }
                                 : void 0,
-                            G = i.createElement(i.Fragment, null, i.createElement(r.Z, { style: P.horizontalContainer }, i.createElement(r.Z, { style: P.textContainer }, i.createElement(s.Z, { style: P.middotGroup }, I && i.createElement(l.ZP, { color: "gray700", id: D.domain, size: "subtext2", weight: "bold" }, I), L && i.createElement(l.ZP, { color: "gray700", id: D.timestamp, size: "subtext2" }, i.createElement(c.Z, { timestamp: L }))), i.createElement(l.ZP, { color: "text", id: D.title, link: j, numberOfLines: 3, size: "headline2", style: P.text, weight: "bold", withInteractiveStyling: !1 }, R), Z ? i.createElement(l.ZP, { id: D.description, numberOfLines: 2 }, Z) : null, E ? i.createElement(r.Z, { style: P.buttonContainer }, i.createElement(d.ZP, { link: H, onClick: U, size: "xSmall", type: "primaryOutlined" }, B)) : null), $ ? i.createElement(r.Z, { style: P.imageContainer }, i.createElement(u.Z, { ratio: p.default.theme.aspectRatios.square }, i.createElement(m.Z, { "aria-label": "", aspectMode: _.Z.SQUARE, image: $ }))) : null), i.createElement(g.Z, { contextType: "Facepile", iconSize: "large", id: D.socialContext, text: M, textSize: "subtext2", userAvatarUrls: W, withLeftPadding: !1, withTextCentered: !0 }));
-                        return E ? i.createElement(v.Z, { exact: !1, path: j?.pathname || "" }, (e) => i.createElement(h.Z, { "aria-labelledby": O.join(" "), "aria-selected": e, link: j, onClick: q, role: "article", style: P.container }, G)) : i.createElement(b.Z, { link: H, onClick: U, style: [P.container, P.bottomBorder] }, G);
+                            G = i.createElement(i.Fragment, null, i.createElement(r.Z, { style: P.horizontalContainer }, i.createElement(r.Z, { style: P.textContainer }, i.createElement(s.Z, { style: P.middotGroup }, F && i.createElement(l.ZP, { color: "gray700", id: D.domain, size: "subtext2", weight: "bold" }, F), L && i.createElement(l.ZP, { color: "gray700", id: D.timestamp, size: "subtext2" }, i.createElement(c.Z, { timestamp: L }))), i.createElement(l.ZP, { color: "text", id: D.title, link: j, numberOfLines: 3, size: "headline2", style: P.text, weight: "bold", withInteractiveStyling: !1 }, R), Z ? i.createElement(l.ZP, { id: D.description, numberOfLines: 2 }, Z) : null, E ? i.createElement(r.Z, { style: P.buttonContainer }, i.createElement(d.ZP, { link: H, onClick: q, size: "xSmall", type: "primaryOutlined" }, B)) : null), $ ? i.createElement(r.Z, { style: P.imageContainer }, i.createElement(u.Z, { ratio: p.default.theme.aspectRatios.square }, i.createElement(m.Z, { "aria-label": "", aspectMode: _.Z.SQUARE, image: $ }))) : null), i.createElement(g.Z, { contextType: "Facepile", iconSize: "large", id: D.socialContext, text: M, textSize: "subtext2", userAvatarUrls: W, withLeftPadding: !1, withTextCentered: !0 }));
+                        return E ? i.createElement(v.Z, { exact: !1, path: j?.pathname || "" }, (e) => i.createElement(h.Z, { "aria-labelledby": O.join(" "), "aria-selected": e, link: j, onClick: U, role: "article", style: P.container }, G)) : i.createElement(b.Z, { link: H, onClick: q, style: [P.container, P.bottomBorder] }, G);
                     }),
                 );
         },
         376293: (e, t, n) => {
             "use strict";
-            n.d(t, { $f: () => E, KV: () => b, LI: () => I, SC: () => C, Vt: () => w, ed: () => F, op: () => T });
+            n.d(t, { $f: () => E, KV: () => b, LI: () => F, SC: () => C, Vt: () => w, ed: () => I, op: () => T });
             var i = n(202784),
                 r = n(190286),
                 o = n(111677),
@@ -383,7 +383,7 @@
                 T = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: n, source: i, testID: r, unblockAction: o, unblockSubtext: a, user: s }) => {
                     let l,
                         u = c.Z;
-                    const p = I(s, n);
+                    const p = F(s, n);
                     switch (i) {
                         case C.PROFILE:
                         case C.LIST_DETAIL:
@@ -405,8 +405,8 @@
                 x = (e) => (e ? l.default : s.default),
                 S = ({ blockSubtext: e, unblockSubtext: t, user: n }) => (!n.blocking && e ? e(n.screen_name) : n.blocking ? t : void 0),
                 Z = (e) => (e.blocking ? f({ screenName: e.screen_name }) : m({ screenName: e.screen_name })),
-                I = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: y({ screenName: e }), label: w, text: t ? v : k }))(e.screen_name, t) : E(e.screen_name, t)),
-                F = ({ confirmation: e, handleConfirm: t, onClose: n }) => {
+                F = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: y({ screenName: e }), label: w, text: t ? v : k }))(e.screen_name, t) : E(e.screen_name, t)),
+                I = ({ confirmation: e, handleConfirm: t, onClose: n }) => {
                     const { confirmButtonType: o, headline: a, label: s, text: l } = e;
                     return i.createElement(r.Z, { cancelButtonLabel: u, confirmButtonLabel: s, confirmButtonType: o, headline: a, onCancel: n, onConfirm: t, text: l });
                 };
@@ -539,8 +539,8 @@
                 x = n(332878),
                 S = n(810641),
                 Z = n(668214);
-            const I = (e, t) => t.module.selectEntries(e),
-                F = (0, Z.Z)().propsFromState(() => ({ entries: I }));
+            const F = (e, t) => t.module.selectEntries(e),
+                I = (0, Z.Z)().propsFromState(() => ({ entries: F }));
             const L = (0, n(335632).G)({}),
                 R = l().b7fa0cfe,
                 B = l().e950f6e0,
@@ -556,7 +556,7 @@
                     );
                 },
                 A = T.default.create((e) => ({ emptyState: { height: `calc(100vh - ${e.componentDimensions.appBarHeight})`, justifyContent: "center", marginVertical: 0 } })),
-                N = F(i.memo(O));
+                N = I(i.memo(O));
             var W = n(2430),
                 z = n(506063);
             const M = (e, t) => (0, f.t5)(e, f.q4),
@@ -573,11 +573,11 @@
                         i = n?.query?.time_window;
                     return Number(i) || 24;
                 },
-                U = (0, Z.Z)()
+                q = (0, Z.Z)()
                     .propsFromState(() => ({ seedType: $, showFriendsOfFriendsNUX: M, timeWindowQuery: H }))
                     .propsFromActions(() => ({ addFlag: f.pj }))
                     .withAnalytics({ page: "top_articles", section: "top_articles" }),
-                q = l().b7fa0cfe,
+                U = l().b7fa0cfe,
                 K = l().e15e5637,
                 V = l().af293dc2,
                 j = l().h5ab8b0e,
@@ -599,11 +599,11 @@
                     const { featureSwitches: x } = i.useContext(g.rC),
                         S = (0, b.Cz)(),
                         Z = x.isTrue("longform_top_articles_time_window_enabled"),
-                        I = x.isTrue("longform_top_articles_friends_of_friends_enabled"),
-                        [F, L] = i.useState(E),
+                        F = x.isTrue("longform_top_articles_friends_of_friends_enabled"),
+                        [I, L] = i.useState(E),
                         R = (e) => `?time_window=${e || 24}`,
                         B = i.useCallback(() => (C === z.v.FRIENDS_OF_FRIENDS ? "fof" : "following"), [C]),
-                        P = I ? `_${B()}` : "",
+                        P = F ? `_${B()}` : "",
                         D = i.useCallback(() => {
                             t.scribe({ action: "impression", section: `top_articles${P}`, data: { context: `time_window_${te(T)}` } });
                         }, [t, P, T]);
@@ -632,17 +632,17 @@
                         M = i.createElement(o.Z, { Icon: c.default, label: Q, renderActionMenu: (e) => i.createElement(r.Z, { items: W, onCloseRequested: e, shouldCloseOnClick: !0 }) }),
                         $ = (e) => e === C,
                         H = (e) => `/i/articles/${e}${R(T)}`,
-                        U = () => {
+                        q = () => {
                             e(f.q4), L(!1);
                         },
                         V = () => {
                             const e = H(z.v.FRIENDS_OF_FRIENDS);
-                            n.replace(e), U();
+                            n.replace(e), q();
                         },
-                        j = (e) => i.createElement(a.Z, { actionPrimary: { text: Y, onClick: V }, actionSecondary: { text: ee, onClick: U }, headline: J, icon: d.default, iconColor: "primary", onDismiss: U, shouldDisplay: F, text: X, withMask: !0 }, ie[e]),
+                        j = (e) => i.createElement(a.Z, { actionPrimary: { text: Y, onClick: V }, actionSecondary: { text: ee, onClick: q }, headline: J, icon: d.default, iconColor: "primary", onDismiss: q, shouldDisplay: I, text: X, withMask: !0 }, ie[e]),
                         oe = ne.map((e) => ({
                             key: e,
-                            label: e === z.v.FRIENDS_OF_FRIENDS && F && !$(e) ? j(e) : ie[e],
+                            label: e === z.v.FRIENDS_OF_FRIENDS && I && !$(e) ? j(e) : ie[e],
                             isActive: () => $(e),
                             to: { pathname: H(e) },
                             onClick: () => {
@@ -654,9 +654,9 @@
                             return t > -1 ? t : 0;
                         })(C),
                         se = i.useMemo(() => ((e, t = 864e5) => (0, v.Z)({ timelineId: `articlesTimeline-${e}-${t}`, network: { getEndpoint: (e) => e.withEndpoint(w.ZP).fetchArticleTimeline, getEndpointParams: ({ count: n, cursor: i }) => ({ count: n, cursor: "string" == typeof i ? i : void 0, articleListSeedType: e, timeWindowMillis: t }) }, context: "FETCH_TOP_ARTICLES_TIMELINE", perfKey: "articlesTimeline", formatResponse: k.Z }))(C, te(T || 24)), [C, T]);
-                    return i.createElement(i.Fragment, null, i.createElement(h.Z, { title: q }), i.createElement(p.Z, { rightControl: Z ? M : void 0, screenType: "root", showSubtitleOnRoot: !0, subtitle: K({ count: T || 24 }), title: i.createElement(_.Z, { text: q }) }, I ? i.createElement(m.Z, { links: oe, visibleItemIndex: ae }) : null, i.createElement(N, { module: se, onEntriesChanged: O })));
+                    return i.createElement(i.Fragment, null, i.createElement(h.Z, { title: U }), i.createElement(p.Z, { rightControl: Z ? M : void 0, screenType: "root", showSubtitleOnRoot: !0, subtitle: K({ count: T || 24 }), title: i.createElement(_.Z, { text: U }) }, F ? i.createElement(m.Z, { links: oe, visibleItemIndex: ae }) : null, i.createElement(N, { module: se, onEntriesChanged: O })));
                 },
-                ae = U(oe);
+                ae = q(oe);
         },
         463818: (e, t, n) => {
             "use strict";
@@ -839,20 +839,20 @@
                 x = n(263863);
             const S = (0, v.Z)({}, (0, E.G)({}), { [T.ZP.Tweet]: { handlers: { [x.Z.TweetWithoutCard]: (0, C.Cw)({ createAdditionalProps: () => ({ withCardLinks: !0 }) }) } } }),
                 Z = c().d35d74e4,
-                I = c().f88e624e,
-                F = s.default.create((e) => ({ contentWrapper: { height: `calc(100vh - ${e.componentDimensions.appBarHeight} - 1px)` }, viewport: { flex: 1, height: "100%", width: "100%" }, withOverflow: { overflow: "auto" } })),
+                F = c().f88e624e,
+                I = s.default.create((e) => ({ contentWrapper: { height: `calc(100vh - ${e.componentDimensions.appBarHeight} - 1px)` }, viewport: { flex: 1, height: "100%", width: "100%" }, withOverflow: { overflow: "auto" } })),
                 L = (0, h.Z)(
                     (e) => {
                         const t = Number(e.match.params.articleId),
                             n = (0, o.useHistory)(),
-                            s = i.useMemo(() => [F.viewport, !(0, d.HD)(n) && F.withOverflow], [n]);
+                            s = i.useMemo(() => [I.viewport, !(0, d.HD)(n) && I.withOverflow], [n]);
                         return i.createElement(
                             u.Z,
                             { backLocation: "/i/articles", screenType: "primaryDetail", title: Z, withBottomBorder: !0 },
                             i.createElement(
                                 r.Z,
-                                { style: F.contentWrapper },
-                                i.createElement(r.Z, { "aria-atomic": !0, "aria-live": "polite" }, i.createElement(a.ZP, { visuallyHidden: !0 }, I), i.createElement(_.Z, { id: t, withInternalLink: !1 })),
+                                { style: I.contentWrapper },
+                                i.createElement(r.Z, { "aria-atomic": !0, "aria-live": "polite" }, i.createElement(a.ZP, { visuallyHidden: !0 }, F), i.createElement(_.Z, { id: t, withInternalLink: !1 })),
                                 i.createElement(
                                     m.Z,
                                     { style: s },
@@ -896,13 +896,13 @@
                     const [C, E] = i.useState(!1),
                         T = (e) => i.createElement(u.Z, { onDismiss: R, renderContent: () => S(R), switchOnlyOnXSmallBreakpoint: !0, visibilityBehavior: o.J.forceVisible, withArrow: !0, withFixedPosition: !0, withMask: v }, e),
                         x = () => i.createElement(p.Z, { onMaskClick: () => R(), type: "center", withMask: !0 }, S(R)),
-                        S = (n) => i.createElement(r.Z, { style: [_.root, y && _.rootWithImage] }, Z(), i.createElement(r.Z, { style: _.container }, I(), F(), L({ action: e, dismiss: n, type: t && "primaryFilled" }), L({ action: t, dismiss: n }))),
+                        S = (n) => i.createElement(r.Z, { style: [_.root, y && _.rootWithImage] }, Z(), i.createElement(r.Z, { style: _.container }, F(), I(), L({ action: e, dismiss: n, type: t && "primaryFilled" }), L({ action: t, dismiss: n }))),
                         Z = () => {
                             let e = h && i.createElement(h, { style: b ? [_.icon, { color: m.default.theme.colors[b] }] : _.icon });
                             return y && !d.Z.isEnabled && (e = i.createElement(a.Z, { "aria-label": "", aspectMode: l.Z.exact(2), image: y })), e && i.createElement(r.Z, { style: _.graphic }, e);
                         },
-                        I = () => i.createElement(s.ZP, { size: "title3", weight: "heavy" }, g),
-                        F = () => i.createElement(s.ZP, { color: "gray700", style: _.description }, k),
+                        F = () => i.createElement(s.ZP, { size: "title3", weight: "heavy" }, g),
+                        I = () => i.createElement(s.ZP, { color: "gray700", style: _.description }, k),
                         L = ({ action: e, dismiss: t, type: n }) => e && i.createElement(c.ZP, { link: e.link && e.link, onPress: e.onClick ? e.onClick : t, size: "large", style: _.actionButton, type: n }, e.text),
                         R = () => {
                             f && f(), E(!0);
@@ -1006,8 +1006,8 @@
                         x = E ? this._getMemoizedLink(E, k) : void 0,
                         S = c ? c(E) : T?.pathname === x?.pathname,
                         Z = h.Z.generate({ backgroundColor: "transparent", color: s.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? v.pillHoverStyle.backgroundColor : void 0 }),
-                        I = g ? "medium" : S ? "bold" : "medium";
-                    return r.createElement(b.Z, { "aria-label": t, "aria-selected": S, focusable: !!S, interactiveStyles: Z, link: x, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [v.pillStyle] : [v.link]), ...(u && S ? [v.pillActiveStyle] : []), d ? (u ? v.compactPill : v.compactLink) : null, p ? v.roundedRect : null, C], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => r.createElement(l.Z, { style: u && v.flexGrow }, r.createElement(m.ZP, { size: g ? "headline2" : void 0, style: [v.text, { color: this._getTextColor(S, c, g, u) }, d && v.compactText, g && t && v.focusedText, u && v.pillTextStyle, u && S && v.pillActiveTextStyle, u && c && v.pillHoverTextStyle], weight: I }, e && r.createElement(e, { style: v.icon }), o, g || u ? null : r.createElement(l.Z, { style: S && [v.border, { backgroundColor: s.default.theme.colors[a] }] })), n ? r.createElement(_.Z, { count: n, standalone: !0, style: [v.badge, n >= 10 && v.multiDigitBadge, n >= 20 && v.truncatedCountBadge], truncatedCountFormatter: w, unreadCountLabel: y, withBorder: !1 }) : i ? r.createElement(_.Z, { pip: !0, standalone: !0, style: v.badgePip, textColor: "red500", unreadCountLabel: f, withBorder: !1 }) : null));
+                        F = g ? "medium" : S ? "bold" : "medium";
+                    return r.createElement(b.Z, { "aria-label": t, "aria-selected": S, focusable: !!S, interactiveStyles: Z, link: x, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [v.pillStyle] : [v.link]), ...(u && S ? [v.pillActiveStyle] : []), d ? (u ? v.compactPill : v.compactLink) : null, p ? v.roundedRect : null, C], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => r.createElement(l.Z, { style: u && v.flexGrow }, r.createElement(m.ZP, { size: g ? "headline2" : void 0, style: [v.text, { color: this._getTextColor(S, c, g, u) }, d && v.compactText, g && t && v.focusedText, u && v.pillTextStyle, u && S && v.pillActiveTextStyle, u && c && v.pillHoverTextStyle], weight: F }, e && r.createElement(e, { style: v.icon }), o, g || u ? null : r.createElement(l.Z, { style: S && [v.border, { backgroundColor: s.default.theme.colors[a] }] })), n ? r.createElement(_.Z, { count: n, standalone: !0, style: [v.badge, n >= 10 && v.multiDigitBadge, n >= 20 && v.truncatedCountBadge], truncatedCountFormatter: w, unreadCountLabel: y, withBorder: !1 }) : i ? r.createElement(_.Z, { pip: !0, standalone: !0, style: v.badgePip, textColor: "red500", unreadCountLabel: f, withBorder: !1 }) : null));
                 }
             }
             (k.contextType = g.Z), (k.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -1089,4 +1089,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles.ceb71b9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles.d33f47aa.js.map

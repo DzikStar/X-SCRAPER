@@ -5440,8 +5440,8 @@
                 n("i8cae552", "Değerlendirme yaparak Topluluk Notları'nda yüksek kaliteyi korumaya yardımcı olursun."),
                 n("hd43a218", "Günlük not yazma sınırına ulaştın"),
                 n("aaba8ed2", "Not kalitesinin yüksek olmasını sağlamak ve spam'i önlemek için katkıda bulunanların Yazma Etkileri temel alınarak günlük yazabilecekleri not sayısına sınır getirilmiştir. Lütfen daha sonra tekrar dene."),
-                n("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                n("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                n("a67ed4d6", "Bu yazarın gönderilerine not ekleme sınırına ulaştın"),
+                n("ic484166", "Not kalitesinin yüksek olmasını sağlamak ve spam'i önlemek için bir kullanıcının belirli bir süre içinde bir gönderi yazarıyla ilgili yazabileceği not sayısına sınır getirilmiştir. Sınır, kullanıcıların bir kişinin söz konusu yazarla ilgili geçmiş notlarını ne kadar faydalı bulduğuna bağlı olarak değişir. Lütfen daha sonra tekrar dene."),
                 n("b98f077c", "Not bilgileri iste"),
                 n("ee691104", "Bu gönderi hakkında bir Topluluk Notu iste"),
                 n("f8cbdf02", "Bu gönderinin yanıltıcı olabileceğini mi düşünüyorsun? Topluluk Notu iste."),
@@ -7236,7 +7236,7 @@
                 n("h257d4aa", "Tanıtmak için bir gönderi seç"),
                 n("e9334fe6", "Veriler birkaç dakikada bir güncellenir"),
                 n("a6d7b1d0", "X'in Dahili Verilerine Göre"),
-                n("h71a00e6", "You’re saving time with ad-free"),
+                n("h71a00e6", "Reklamsız kullanım sayesinde zamandan tasarruf ediyorsun"),
                 n("f6c50ec0", "Reklamsız deneme süren sona erdi"),
                 n("e1d1fbca", "Senin önlediklerin"),
                 n("a82d7abd", function (e) {
@@ -8301,6 +8301,7 @@
                 n("e5e6479e", "En hızlı desteği almak için bize kuruluşunun kullanıcı adı ve sorunun ayrıntılarını içeren bir e-posta gönder."),
                 n("ica8392a", "Talebin bize ulaştığında, talebi alınma sırasına göre inceleyip önceliklendireceğiz."),
                 n("ed37e36e", "Önemli: Kuruluşunun kullanıcı adını eklememek veya kişisel e-posta kullanmak talebinin işlenmesinde gecikmelere yol açabilir."),
+                n("h7e1c146", "Delegate accounts are not currently supported."),
                 n("eb0d4fe2", "Sütun oluştur"),
                 n("e93d2f8a", "Şunlar gibi çeşitli sütunlar ekleyerek deneyimini kişiselleştir:"),
                 n("e8203d1e", "Aramalar"),
@@ -8907,9 +8908,9 @@
                 n("b0b22805", function (e) {
                     return e.advertiserName + " adresini ziyaret et";
                 }),
-                n("c67e71aa", "Şimdi izle"),
-                n("a6ada13e", "Alışverişe başla");
-            n("j0f12222", "Daha fazlasını gör"),
+                n("c67e71aa", "Şimdi izle");
+            n("a6ada13e", "Alışverişe başla"),
+                n("j0f12222", "Daha fazlasını gör"),
                 n("f569f7c8", "İnternet sitesine git"),
                 n("j0c6772a", "İnternet sitesini ziyaret et"),
                 n("f73003aa", "Video reklamdan sonra oynatılacak"),
@@ -13370,4 +13371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.d3bd01ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.0b6bf66a.js.map

@@ -8,13 +8,13 @@
                     return a.e("i18n/emoji-kn").then(a.t.bind(a, 434291, 23));
                 },
             });
-            function t(e, c, a) {
+            function f(e, c, a) {
                 return "one" == ((n = e) >= 0 && n <= 1 ? "one" : "other") ? c : a;
                 var n;
             }
-            function f(e, c, a) {
-                return "one" == ((n = e), (t = !String(n).split(".")[1]), 1 == n && t ? "one" : "other") ? c : a;
-                var n, t;
+            function t(e, c, a) {
+                return "one" == ((n = e), (f = !String(n).split(".")[1]), 1 == n && f ? "one" : "other") ? c : a;
+                var n, f;
             }
             n("c39b0e24", "X"),
                 n("jb38600c", "ಯಾವುದೂ ಇಲ್ಲ"),
@@ -613,11 +613,11 @@
                 n("h5e38204", "ಚಾಟ್ ಮಾಡಿ"),
                 n("h7d5d9fa", "ಬೀಟಾ"),
                 n("ga169e1b", function (e) {
-                    return "ನೇರ ಸಂದೇಶಗಳು (" + e.count + " ಓದಿಲ್ಲದ ಸಂವಾದ" + t(e.count, "", "ಗಳು") + ")";
+                    return "ನೇರ ಸಂದೇಶಗಳು (" + e.count + " ಓದಿಲ್ಲದ ಸಂವಾದ" + f(e.count, "", "ಗಳು") + ")";
                 }),
                 n("d83682ec", "ಹೋಮ್ (ಹೊಸ ಓದದ ಪೋಸ್ಟ್‌ಗಳು)"),
                 n("e1249849", function (e) {
-                    return "ಸೂಚನೆಗಳು (" + e.count + " ಓದಿಲ್ಲದ ಸೂಚನೆ" + t(e.count, "", "ಗಳು") + ")";
+                    return "ಸೂಚನೆಗಳು (" + e.count + " ಓದಿಲ್ಲದ ಸೂಚನೆ" + f(e.count, "", "ಗಳು") + ")";
                 }),
                 n("c0b786ee", "ಹುಡುಕಿ ಮತ್ತು ಅನ್ವೇಷಿಸಿ"),
                 n("bb967f9e", "ವೀಡಿಯೋಗಳು"),
@@ -630,7 +630,7 @@
                 }),
                 n("j62f43a6", "ಡೆಲಿಗೇಟ್ ಖಾತೆಗಳನ್ನು ನೋಡಿ"),
                 n("d4c52015", function (e) {
-                    return e.count + " ಬಾಕಿರುವ ಡೆಲಿಗೇಟ್‌ ಖಾತೆ ಆಹ್ವಾನ" + t(e.count, "", "ಗಳು");
+                    return e.count + " ಬಾಕಿರುವ ಡೆಲಿಗೇಟ್‌ ಖಾತೆ ಆಹ್ವಾನ" + f(e.count, "", "ಗಳು");
                 }),
                 n("b8e1d524", "ಖಾತೆಗಳು"),
                 n("gef27c4c", "ಖಾತೆ ಮೆನು"),
@@ -653,7 +653,7 @@
                     return e.count + " ಜನರು";
                 }),
                 n("b93ba92d", function (e) {
-                    return e.peopleCount + " " + t(e.peopleCount, "ವ್ಯಕ್ತಿ", "ಜನರು");
+                    return e.peopleCount + " " + f(e.peopleCount, "ವ್ಯಕ್ತಿ", "ಜನರು");
                 }),
                 n("ae2205d2", "ನೀವು ಪರಸ್ಸರ ಹಿಂಬಾಲಿಸುತ್ತೀರಿ"),
                 n("fd06b02f", function (e) {
@@ -1265,7 +1265,7 @@
                 n("e18cb87c", "ಈ ಪೋಸ್ಟ್ ಅನ್ನು ವಿವರಿಸಿ"),
                 n("ffe16626", "ಪ್ರತಿಕ್ರಿಯೆ ಫಿಲ್ಟರ್ ಆನ್ ಆಗಿದೆ."),
                 n("jc81f6a7", function (e) {
-                    return e.count + " ವೀಕ್ಷಣೆ" + t(e.count, "", "ಗಳು");
+                    return e.count + " ವೀಕ್ಷಣೆ" + f(e.count, "", "ಗಳು");
                 }),
                 n("g521abc6", "Grok, ವಿಶ್ಲೇಷಣೆ!"),
                 n("a09331e0", "ಸಂಬಂಧಿತ ಲೇಖನಗಳು"),
@@ -1278,7 +1278,7 @@
                     return "" + e.displayCount;
                 }),
                 n("aa037e65", function (e) {
-                    return "ವೀಕ್ಷಣೆ" + t(e.count, "", "ಗಳು");
+                    return "ವೀಕ್ಷಣೆ" + f(e.count, "", "ಗಳು");
                 }),
                 n("b8f3500a", "ರೀಡರ್‌ನಲ್ಲಿ ಥ್ರೆಡ್ ನೋಡಿ"),
                 n("fc7db594", "ಪ್ರೊಫೈಲ್ ಸಾರಾಂಶ"),
@@ -1313,7 +1313,7 @@
                 n("c74e87e0", "ಈ ಫೈಲ್ ತುಂಬಾ ದೊಡ್ಡದಾಗಿದೆ. ದಯವಿಟ್ಟು ಚಿಕ್ಕ ಫೈಲ್ ಅನ್ನು ಆಯ್ಕೆಮಾಡಿ."),
                 n("bea50a2a", "ಈ ಫೈಲ್ ಫಾರ್ಮ್ಯಾಟ್ ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."),
                 n("j77292b7", function (e) {
-                    return "ದಯವಿಟ್ಟು ಕೇವಲ " + e.count + " ಫೈಲ್" + t(e.count, "", "‌ಗಳು") + " ವರೆಗೆ ಮಾತ್ರ ಆರಿಸಿ";
+                    return "ದಯವಿಟ್ಟು ಕೇವಲ " + e.count + " ಫೈಲ್" + f(e.count, "", "‌ಗಳು") + " ವರೆಗೆ ಮಾತ್ರ ಆರಿಸಿ";
                 }),
                 n("cbc8fed4", "ಈ ಅನುವಾದವು ನಿಖರವಾಗಿದೆಯೇ? ನಮಗೆ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ನೀಡಿ ಇದರಿಂದ ನಾವು ಸುಧಾರಿಸಬಹುದು:"),
                 n("d56779a2", "ಅರ್ಥ ಮಾಡಿಕೊಳ್ಳಲು ಸುಲಭ"),
@@ -1435,25 +1435,25 @@
                     return "" + e.displayCount;
                 }),
                 n("f23d99b0", function (e) {
-                    return "ಬುಕ್‌ಮಾರ್ಕ್" + t(e.count, "", "‌ಗಳು");
+                    return "ಬುಕ್‌ಮಾರ್ಕ್" + f(e.count, "", "‌ಗಳು");
                 }),
                 n("e8866a55", function (e) {
                     return "" + e.displayCount;
                 }),
                 n("eb3abe45", function (e) {
-                    return "ಇಷ್ಟ" + t(e.count, "", "ಗಳು");
+                    return "ಇಷ್ಟ" + f(e.count, "", "ಗಳು");
                 }),
                 n("eff958fb", function (e) {
                     return "" + e.displayCount;
                 }),
                 n("i5a8c515", function (e) {
-                    return "ಉಲ್ಲೇಖ" + t(e.count, "ಿಸಿ", "ಗಳು");
+                    return "ಉಲ್ಲೇಖ" + f(e.count, "ಿಸಿ", "ಗಳು");
                 }),
                 n("dd77f9fb", function (e) {
                     return "" + e.displayCount;
                 }),
                 n("a755b81b", function (e) {
-                    return "ಮರುಪೋಸ್ಟ್" + t(e.count, " ಮಾಡಿ", "‌ಗಳು");
+                    return "ಮರುಪೋಸ್ಟ್" + f(e.count, " ಮಾಡಿ", "‌ಗಳು");
                 }),
                 n("e9f1fbcc", "ಇಲ್ಲಿ ಇನ್ನೂ ನೋಡಲು ಏನೂ ಇಲ್ಲ"),
                 n("a3b80be6", "ಈ ಕುರಿತು ಪೋಸ್ಟ್‌ಗಳನ್ನು ನೋಡಲು ನಂತರ ಮರಳಿ ಪರಿಶೀಲಿಸಿ."),
@@ -1541,7 +1541,7 @@
                     return "" + e.formattedCount;
                 }),
                 n("cface2d1", function (e) {
-                    return "ಸದಸ್ಯ" + t(e.count, "", "ರು");
+                    return "ಸದಸ್ಯ" + f(e.count, "", "ರು");
                 }),
                 n("b5334780", "ಬಾಕಿ ಇದೆ"),
                 n("b171d7c4", "ಸೇರಿಕೊಳ್ಳಿ"),
@@ -1644,10 +1644,10 @@
                 n("cc8f8a80", "ಪಟ್ಟಿಮಾಡಿಲ್ಲ"),
                 n("c33a97d6", "ಸಾರ್ವಜನಿಕ"),
                 n("i73fff1b", function (e) {
-                    return "ತೋರಿಸಿ " + e.count + " ಪೋಸ್ಟ್" + t(e.count, "", "‌ಗಳು");
+                    return "ತೋರಿಸಿ " + e.count + " ಪೋಸ್ಟ್" + f(e.count, "", "‌ಗಳು");
                 }),
                 n("a682906d", function (e) {
-                    return e.count + " ಇಷ್ಟ" + t(e.count, "", "ಗಳು") + " ಬಾಕಿ";
+                    return e.count + " ಇಷ್ಟ" + f(e.count, "", "ಗಳು") + " ಬಾಕಿ";
                 }),
                 n("g566e973", function (e) {
                     return e.jobCount + " ಉದ್ಯೋಗಗಳನ್ನು ತೆರೆಯಿರಿ" + e.tcc_organization_open_job_count;
@@ -1766,7 +1766,7 @@
                 n("g345246c", "ಇದೊಂದು ಪ್ರಕಟಿತ ಲೇಖನವಾಗಿದೆ, X ನಲ್ಲಿ ಬರೆಯಲು ಹೊಸ ವಿಧಾನವಾಗಿದೆ."),
                 n("b14efa0a", "ಲೇಖನದ ಕವರ್ ಚಿತ್ರ"),
                 n("afdccedb", function (e) {
-                    return "ತೋರಿಸಿ " + e.displayCount + " ಪ್ರತಿಕ್ರಿಯೆ" + t(e.count, "", "ಗಳನ್ನು ಇಷ್ಟಪಟ್ಟಿದ್ದಾರೆ");
+                    return "ತೋರಿಸಿ " + e.displayCount + " ಪ್ರತಿಕ್ರಿಯೆ" + f(e.count, "", "ಗಳನ್ನು ಇಷ್ಟಪಟ್ಟಿದ್ದಾರೆ");
                 }),
                 n("bdba3e1a", "ಪೋಸ್ಟ್ ಸೂಚನೆಗಳನ್ನು ಆನ್ ಮಾಡಿ"),
                 n("c4da7d28", "ಪೋಸ್ಟ್ ಸೂಚನೆಗಳನ್ನು ಆಫ್ ಮಾಡಿ"),
@@ -1974,10 +1974,10 @@
                 n("ifea3114", "ಹಂಚು"),
                 n("b384f696", "50-70 ಅಕ್ಷರಗಳ ನಡುವಿನ ಶೀರ್ಷಿಕೆಯನ್ನು ನಾವು ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ"),
                 n("a7da0adb", function (e) {
-                    return e.count + " ಶಬ್ದ" + t(e.count, "", "ಗಳು");
+                    return e.count + " ಶಬ್ದ" + f(e.count, "", "ಗಳು");
                 }),
                 n("aea1d455", function (e) {
-                    return e.count + " ನಿಮಿಷ" + t(e.count, " ಬಾಕಿ ಇದ", "ಗಳು ಬಾಕಿ ಇವ") + "ೆ";
+                    return e.count + " ನಿಮಿಷ" + f(e.count, " ಬಾಕಿ ಇದ", "ಗಳು ಬಾಕಿ ಇವ") + "ೆ";
                 }),
                 n("df898d71", function (e) {
                     return e.readingTimeValue + " ಓದುವ ಸಮಯ";
@@ -2052,18 +2052,18 @@
                 n("e289d950", "ಆ ಪೋಸ್ಟ್ ಅನ್ನು ಹಂಚಿಕೊಳ್ಳಬಹುದಾದ ಮೊದಲು ನೀವು ಲಾಗ್ ಇನ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ."),
                 n("d28215f0", "ಕ್ಷಮಿಸಿ, ಸಮುದಾಯಗಳಲ್ಲಿ ಸಮೀಕ್ಷೆಯನ್ನು ಅನುಮತಿಸಿಲ್ಲ!"),
                 n("ec2fc089", function (e) {
-                    return "ನಿಮ್ಮ ಪೋಸ್ಟ್ " + t(e.numOfTweets, "ಆಗಿತ್ತ", "ಇದ್ದವ") + "ು ಅನ್ನು " + e.communityName + " ಗೆ ಕಳುಹಿಸಲಾಗಿದೆ";
+                    return "ನಿಮ್ಮ ಪೋಸ್ಟ್ " + f(e.numOfTweets, "ಆಗಿತ್ತ", "ಇದ್ದವ") + "ು ಅನ್ನು " + e.communityName + " ಗೆ ಕಳುಹಿಸಲಾಗಿದೆ";
                 }),
                 n("c7152355", function (e) {
-                    return "ನಿಮ್ಮ ಚಿತ್ರ" + t(e.numberOfImages, "ವ", "ಗಳ") + "ನ್ನು  ಸುಲಭ ಲಭ್ಯವಾಗಿಸಲು ಮರೆಯಬೇಡಿ";
+                    return "ನಿಮ್ಮ ಚಿತ್ರ" + f(e.numberOfImages, "ವ", "ಗಳ") + "ನ್ನು  ಸುಲಭ ಲಭ್ಯವಾಗಿಸಲು ಮರೆಯಬೇಡಿ";
                 }),
                 n("ffa5562a", "ಉತ್ತಮ ಚಿತ್ರ ವಿವರಣೆಯು ಸಂಕ್ಷಿಪ್ತವಾಗಿರುತ್ತದೆ, ಆದರೂ ವಿವರವಾಗಿರುತ್ತದೆ. ಸಾರಾಂಶಗೊಳಿಸಲು ಅಥವಾ ಚಿತ್ರದಲ್ಲೇ ಯಾವುದೇ ಪಠ್ಯವನ್ನು ಬರೆಯುವುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ."),
                 n("a2d3facd", function (e) {
-                    return "ನಿಮ್ಮ ವಿವರಣೆ" + t(e.numberOfImages, "ಯು ಮಾಡುತ್ತದ", "ಗಳು ಮಾಡುತ್ತವ") + "ೆ ಅಂಗವೈಕಲ್ಯವನ್ನು ಹೊಂದಿರುವ ಮತ್ತು ಇನ್ನಷ್ಟು ಸಂದರ್ಭವನ್ನು ಬಯಸುವ ಎಲ್ಲರಿಗೂ X ಅನ್ನು ಸುಲಭ ಲಭ್ಯವಾಗಿಸುತ್ತದೆ.";
+                    return "ನಿಮ್ಮ ವಿವರಣೆ" + f(e.numberOfImages, "ಯು ಮಾಡುತ್ತದ", "ಗಳು ಮಾಡುತ್ತವ") + "ೆ ಅಂಗವೈಕಲ್ಯವನ್ನು ಹೊಂದಿರುವ ಮತ್ತು ಇನ್ನಷ್ಟು ಸಂದರ್ಭವನ್ನು ಬಯಸುವ ಎಲ್ಲರಿಗೂ X ಅನ್ನು ಸುಲಭ ಲಭ್ಯವಾಗಿಸುತ್ತದೆ.";
                 }),
                 n("cc6d0a48", "ಅಕ್ಸೆಸಿಬಿಲಿಟಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಈ ಜ್ಞಾಪನೆಯನ್ನು ನೀವು ಆಫ್‌ ಮಾಡಬಹುದು."),
                 n("j499fbcb", function (e) {
-                    return "ಸೇರಿಸಿ ವಿವರಣೆ" + t(e.numberOfImages, "", "ಗಳು");
+                    return "ಸೇರಿಸಿ ವಿವರಣೆ" + f(e.numberOfImages, "", "ಗಳು");
                 }),
                 n("bb8170da", "ಈ ಬಾರಿ ಬೇಡ"),
                 n("h4dd544e", "ನಿಮ್ಮ ಪೋಸ್ಟ್‌ ಕಳುಹಿಸಲ್ಪಟ್ಟಿದೆ."),
@@ -2125,14 +2125,14 @@
                 n("cce30dcc", "ಟ್ಯಾಗ್ ಸ್ಥಳ"),
                 n("ee016dd6", "ದೀರ್ಘ ವೀಡಿಯೋಗಳನ್ನು ಅಪ್‌ಲೋಡ್‌ ಮಾಡಲು ಸ್ವಲ್ಪ ಸಮಯ ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ. ಅಪ್‌ಲೋಡ್‌ ತೊಂದರೆಗಳನ್ನು ದೂರವಿಡಲು ನಿಮ್ಮ ಬ್ರೌಸರ್ ಟ್ಯಾಬ್ ತೆರೆದೇ ಇಡುವುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ."),
                 n("b7d8e3f1", function (e) {
-                    return e.numberOfAltTextEntries + " ಚಿತ್ರ ವಿವರಣೆ" + t(e.numberOfAltTextEntries, "", "ಗಳು");
+                    return e.numberOfAltTextEntries + " ಚಿತ್ರ ವಿವರಣೆ" + f(e.numberOfAltTextEntries, "", "ಗಳು");
                 }),
                 n("d1175c78", "ಜನರನ್ನು ಟ್ಯಾಗ್ ಮಾಡಿ"),
                 n("b2943227", function (e) {
-                    return "ಶೀರ್ಷಿಕೆ ಫೈಲ್" + t(e.numberOfVideos, "", "‌ಗಳು") + " ಅನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ (.srt)";
+                    return "ಶೀರ್ಷಿಕೆ ಫೈಲ್" + f(e.numberOfVideos, "", "‌ಗಳು") + " ಅನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ (.srt)";
                 }),
                 n("d0afbb37", function (e) {
-                    return e.numberOfSubtitles + " ಶೀರ್ಷಿಕೆ ಫೈಲ್" + t(e.numberOfSubtitles, "", "‌ಗಳು");
+                    return e.numberOfSubtitles + " ಶೀರ್ಷಿಕೆ ಫೈಲ್" + f(e.numberOfSubtitles, "", "‌ಗಳು");
                 }),
                 n("e349147c", "ಏನಾಗುತ್ತಿದೆ?"),
                 n("b4481d6c", "ನಿಮ್ಮ ಆಲೋಚನೆಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಿ..."),
@@ -2151,7 +2151,7 @@
                     return "" + e.formattedCount;
                 }),
                 n("a7daec1e", function (e) {
-                    return "" + t(e.count, "ವ್ಯಕ್ತಿ", "ಜನರು");
+                    return "" + f(e.count, "ವ್ಯಕ್ತಿ", "ಜನರು");
                 }),
                 n("f0598964", "ಕಡಿಮೆ ಸಂಖ್ಯೆಯ ಜನರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಲು ಬಯಸಿದ್ದೀರಾ?"),
                 n("e1ae1c0a", "ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಜನರಿಗೆ ಮಾತ್ರ ಪೋಸ್ಟ್‌ಗಳನ್ನು ಕಳುಹಿಸಲು Circle ನಿಮಗೆ ಅನುವು ಮಾಡುತ್ತದೆ."),
@@ -2222,7 +2222,7 @@
                     return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + e.userThreeName;
                 }),
                 n("h758cd23", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + t(e.othersCount, "1", "" + e.othersCount) + " ಇತರರು";
+                    return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + f(e.othersCount, "1", "" + e.othersCount) + " ಇತರರು";
                 }),
                 n("fba61ad6", function (e) {
                     return "" + e.userName;
@@ -2234,7 +2234,7 @@
                     return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + e.userThreeName;
                 }),
                 n("b8168f25", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + t(e.othersCount, "1 ಇತರರು", e.othersCount + " ಇತರೆ");
+                    return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + f(e.othersCount, "1 ಇತರರು", e.othersCount + " ಇತರೆ");
                 }),
                 n("ab67a7ac", function (e) {
                     return "" + e.userName;
@@ -2249,7 +2249,7 @@
                 }),
                 n("dcbb6a0b", "ಸಬ್‌ಸ್ಕ್ರೈಬರ್‌ಗಳಿಗೆ"),
                 n("ba74e38b", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + t(e.othersCount, "1", "" + e.othersCount) + " ಇತರರು";
+                    return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + f(e.othersCount, "1", "" + e.othersCount) + " ಇತರರು";
                 }),
                 n("c65916af", "ಸಬ್‌ಸ್ಕ್ರೈಬರ್‌ಗಳಿಗೆ"),
                 n("g5c5ebb8", function (e) {
@@ -2283,13 +2283,13 @@
                     return e.trustedFriendsTweetOwner + "ಅವರ";
                 }),
                 n("a035ba65", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + t(e.othersCount, "1 ಇತರ", e.othersCount + " ಇತರರು");
+                    return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + f(e.othersCount, "1 ಇತರ", e.othersCount + " ಇತರರು");
                 }),
                 n("e4c52c45", function (e) {
                     return e.trustedFriendsTweetOwner + "ಅವರ ";
                 }),
                 n("baf2c639", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + t(e.othersCount, "1 ಇತರ", e.othersCount + " ಇತರರು");
+                    return e.userOneName + " " + e.userTwoName + " ಮತ್ತು " + f(e.othersCount, "1 ಇತರ", e.othersCount + " ಇತರರು");
                 }),
                 n("j8e134e5", function (e) {
                     return e.trustedFriendsTweetOwner + "ಅವರ";
@@ -2322,10 +2322,10 @@
                 n("ceb1ad26", "ಡೌನ್‌ಲೋಡ್ ಮಾಡಬಹುದಾದ ವೀಡಿಯೊಗಳನ್ನು ಪರಿಚಯಿಸಲಾಗುತ್ತಿದೆ"),
                 n("ea97bc08", "ಆಫ್ಲೈನ್ಗೆ ಹೋಗಿ, ಅಥವಾ ರೀಮಿಕ್ಸ್ಗೆ ಹೋಗಿ! ಪ್ರೀಮಿಯಂ ಬಳಕೆದಾರರು ಈಗ ನಿಮ್ಮ ಕಂಟೆಂಟ್ ಅನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡುವ ಮತ್ತು ಮರುರೂಪಿಸುವ ಅಧಿಕಾರವನ್ನು ಹೊಂದಿದ್ದಾರೆ. ನಿಮ್ಮ ವೀಡಿಯೊಗಳನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡಲಾಗುವುದಿಲ್ಲ ಎಂದು ನೀವು ಬಯಸಿದರೆ, ನಿಮ್ಮ ವೀಡಿಯೊದಲ್ಲಿ “ಸಂಪಾದಿಸಿ” ಅನ್ನು ತಟ್ಟಿ. ನಿಮ್ಮ ಕಂಟೆಂಟ್, ನಿಮ್ಮ ನಿಯಮಗಳು."),
                 n("e6042757", function (e) {
-                    return "ಪೋಸ್ಟ್ ಎಡಿಟ್ ಮಾಡಲು " + e.minutes + " ನಿಮಿಷ" + t(e.minutes, " ಬಾಕಿ ಇದ", "ಗಳು ಬಾಕಿ ಇವ") + "ೆ ಮತ್ತು " + e.seconds + " ಸೆಕೆಂಡ" + t(e.seconds, "್ ಬಾಕಿ ಇದ", "ುಗಳು ಬಾಕಿ ಇವ") + "ೆ ಬಾಕಿ ಉಳಿದಿದೆ";
+                    return "ಪೋಸ್ಟ್ ಎಡಿಟ್ ಮಾಡಲು " + e.minutes + " ನಿಮಿಷ" + f(e.minutes, " ಬಾಕಿ ಇದ", "ಗಳು ಬಾಕಿ ಇವ") + "ೆ ಮತ್ತು " + e.seconds + " ಸೆಕೆಂಡ" + f(e.seconds, "್ ಬಾಕಿ ಇದ", "ುಗಳು ಬಾಕಿ ಇವ") + "ೆ ಬಾಕಿ ಉಳಿದಿದೆ";
                 }),
                 n("a4e39717", function (e) {
-                    return "ಪೋಸ್ಟ್ ಎಡಿಟ್ ಮಾಡಲು " + e.minutes + " ನಿಮಿಷ" + t(e.minutes, " ಬಾಕಿ ಇದ", "ಗಳು ಬಾಕಿ ಇವ") + "ೆ ಬಾಕಿ ಉಳಿದಿದೆ";
+                    return "ಪೋಸ್ಟ್ ಎಡಿಟ್ ಮಾಡಲು " + e.minutes + " ನಿಮಿಷ" + f(e.minutes, " ಬಾಕಿ ಇದ", "ಗಳು ಬಾಕಿ ಇವ") + "ೆ ಬಾಕಿ ಉಳಿದಿದೆ";
                 }),
                 n("c55eed72", "ಇವರಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸಲಾಗುತ್ತಿದೆ"),
                 n("caca3102", "ಈ ಸಂವಾದದಲ್ಲಿರುವ ಇತರರು"),
@@ -2358,7 +2358,7 @@
                 n("j74e5dd4", "ನೀವು ಪ್ರತಿಕ್ರಿಯಿಸಲು ಪ್ರಯತ್ನಿಸುತ್ತಿರುವ ಪೋಸ್ಟ್ ಅನ್ನು ಅಳಿಸಲಾಗಿದೆ"),
                 n("c5ceafc8", "ಪ್ರತಿಕ್ರಿಯಿಸಲಾಗುತ್ತಿದೆ"),
                 n("f501ba43", function (e) {
-                    return e.count + " ಹೆಚ್ಚಿನ ಪೋಸ್ಟ್" + t(e.count, "", "‌ಗಳು");
+                    return e.count + " ಹೆಚ್ಚಿನ ಪೋಸ್ಟ್" + f(e.count, "", "‌ಗಳು");
                 }),
                 n("b321d0cc", "ಇಮೇಜ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಿ"),
                 n("abd649ce", "ಕಳುಹಿಸದ ಪೋಸ್ಟ್ ಅನ್ನು ತ್ಯಜಿಸಿ"),
@@ -2544,7 +2544,7 @@
                     return "" + e.displayCoins;
                 }),
                 n("g62dcfbc", function (e) {
-                    return "ಕಾಯಿನ್" + t(e.count, "", "‌ಗಳು");
+                    return "ಕಾಯಿನ್" + f(e.count, "", "‌ಗಳು");
                 }),
                 n("be059f7e", "ಈಗ 100k ರಷ್ಟು ಹೆಚ್ಚಿನ ಬಳಕೆದಾರರನ್ನು ತಲುಪಿ"),
                 n("c34f845e", "ಈ ಪೋಸ್ಟ್ ಅನ್ನು ಬೂಸ್ಟ್ ಮಾಡಲು ಪ್ರಯತ್ನಿಸಿ!"),
@@ -2580,7 +2580,7 @@
                 n("d555d7e0", "ಹೊಸ ಪಾಸ್‌ವರ್ಡ್ ಮತ್ತು ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಪಾಸ್‌ವರ್ಡ್‌ ಒಂದೇ ಆಗಿರಬಾರದು."),
                 n("fa8af9ae", "ಪಾಸ್‌ವರ್ಡ್ ಹೊಂದಾಣಿಕೆಯಾಗುವುದಿಲ್ಲ."),
                 n("a03f5c73", function (e) {
-                    return e.applicationCount + " ಅಪ್ಲಿಕೇಶನ್‌" + t(e.applicationCount, "", "ಗಳು");
+                    return e.applicationCount + " ಅಪ್ಲಿಕೇಶನ್‌" + f(e.applicationCount, "", "ಗಳು");
                 }),
                 n("j25601d9", "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"),
                 n("cb841d56", "ಫೋನ್ ಬದಲಾಯಿಸಿ"),
@@ -2741,10 +2741,10 @@
                     return e.price + " / ವರ್ಷ";
                 }),
                 n("i57aeafb", function (e) {
-                    return "ಮೊದಲ " + t(e.duration, "", e.duration + " ") + "ತಿಂಗಳಿಗೆ, ನಂತರ " + e.standardPrice + " ಮಾಸಿಕವಾಗಿ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ";
+                    return "ಮೊದಲ " + f(e.duration, "", e.duration + " ") + "ತಿಂಗಳಿಗೆ, ನಂತರ " + e.standardPrice + " ಮಾಸಿಕವಾಗಿ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ";
                 }),
                 n("ae3e3723", function (e) {
-                    return "ಮೊದಲ " + t(e.duration, "", e.duration + " ") + "ವರ್ಷಕ್ಕೆ, ನಂತರ " + e.standardPrice + " ವಾರ್ಷಿಕವಾಗಿ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ";
+                    return "ಮೊದಲ " + f(e.duration, "", e.duration + " ") + "ವರ್ಷಕ್ಕೆ, ನಂತರ " + e.standardPrice + " ವಾರ್ಷಿಕವಾಗಿ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ";
                 }),
                 n("ade4c757", function (e) {
                     return "ನಂತರ " + e.price + " / ತಿಂಗಳು";
@@ -2776,10 +2776,10 @@
                 n("fb3c7168", "ನಿಮ್ಮ ಬುಕ್‌ಮಾರ್ಕ್ ಫೋಲ್ಡರ್‌ಗಳು"),
                 n("b346bc12", "ಚೆಕ್‌ಮಾರ್ಕ್"),
                 n("je8143e1", function (e) {
-                    return t(e.duration, "ಒಂದು ತಿಂ", e.duration + " ತಿಂಗಳು") + "ಗಳು ಗಾಗಿ X " + e.productName + " ಮೇಲೆ %" + e.percentage + " ರಿಯಾಯಿತಿ ಪಡೆಯಿರಿ";
+                    return f(e.duration, "ಒಂದು ತಿಂ", e.duration + " ತಿಂಗಳು") + "ಗಳು ಗಾಗಿ X " + e.productName + " ಮೇಲೆ %" + e.percentage + " ರಿಯಾಯಿತಿ ಪಡೆಯಿರಿ";
                 }),
                 n("j5847735", function (e) {
-                    return t(e.duration, "ಒಂದು ವರ್ಷ", e.duration + " ವರ್ಷಗಳು") + " ಗಾಗಿ X " + e.productName + " ಮೇಲೆ %" + e.percentage + " ರಿಯಾಯಿತಿ ಪಡೆಯಿರಿ";
+                    return f(e.duration, "ಒಂದು ವರ್ಷ", e.duration + " ವರ್ಷಗಳು") + " ಗಾಗಿ X " + e.productName + " ಮೇಲೆ %" + e.percentage + " ರಿಯಾಯಿತಿ ಪಡೆಯಿರಿ";
                 }),
                 n("da3431f9", function (e) {
                     return "ನೀವು ಸ್ವಲ್ಪ ಸಮಯದವರೆಗೆ X " + e.productName + " ಅನ್ನು ಇಟ್ಟುಕೊಳ್ಳಲು ಬಯಸಿದರೆ ಈ ರಿಯಾಯಿತಿ ನಮ್ಮಿಂದ ಒಂದು ಸಣ್ಣ ಉಡುಗೊರೆಯಾಗಿದೆ!";
@@ -3041,15 +3041,15 @@
                 n("b956c04a", "ನಿಮ್ಮ ವಿಸ್ತರಿತ ಬಯೋವನ್ನು ಅಳಿಸಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?"),
                 n("ifb23caa", "ನಿಮ್ಮ ವಿಸ್ತರಿತ ಬಯೋವನ್ನು ಅಳಿಸುವುದರಿಂದ ಅದನ್ನು ನಿಮ್ಮ ಪ್ರೊಫೈಲ್‌ನಿಂದ ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ."),
                 n("c2333081", function (e) {
-                    return e.count + " ಅಕ್ಷರ" + t(e.count, "", "ಗಳು");
+                    return e.count + " ಅಕ್ಷರ" + f(e.count, "", "ಗಳು");
                 }),
                 n("a2b8c54c", "ಅಳಿಸಲಾಗಿದೆ"),
                 n("a9cc8f96", "ಗರಿಷ್ಠ ಅಕ್ಷರಗಳನ್ನು ಮೀರಿದೆ"),
                 n("eb7710f1", function (e) {
-                    return e.years + " ವರ್ಷ" + t(e.years, "", "ಗಳು");
+                    return e.years + " ವರ್ಷ" + f(e.years, "", "ಗಳು");
                 }),
                 n("bfc38bb5", function (e) {
-                    return e.months + " ತಿಂಗಳು" + t(e.months, "", "ಗಳು");
+                    return e.months + " ತಿಂಗಳು" + f(e.months, "", "ಗಳು");
                 }),
                 n("h6a724ac", "ಇದನ್ನು ಅಳಿಸಲು ನೀವು ನಿಜವಾಗಿಯೂ ಬಯಸುವಿರಾ?"),
                 n("f94aacae", "ಅಳಿಸುವುದರಿಂದ ಅದನ್ನು ನಿಮ್ಮ ಪ್ರೊಫೈಲ್‌ನಿಂದ ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ."),
@@ -3181,7 +3181,7 @@
                 n("c349b958", "ಸದಸ್ಯರನ್ನು ಆಹ್ವಾನಿಸಿ"),
                 n("e177f72a", "ನಿಮ್ಮ ಖಾತೆ ಪರವಾಗಿ ವರ್ತಿಸಲು ಮತ್ತು ಖಾತೆ ಪಾತ್ರಗಳನ್ನು ನಿರ್ವಹಿಸಲು ಇತರರನ್ನು ಆಹ್ವಾನಿಸಿ. ಸದಸ್ಯರು ನೇರ ಸಂದೇಶಗಳನ್ನು ಕಳುಹಿಸಬಹುದು, ಪೋಸ್ಟ್‌ಗಳನ್ನು ಪ್ರಕಟಿಸಬಹುದು ಮತ್ತು ಪಟ್ಟಿಗಳನ್ನು ರಚಿಸಬಹುದು ಹಾಗೂ ಅವುಗಳನ್ನು ನೋಡಬಹುದು."),
                 n("cd5c5e73", function (e) {
-                    return "ನೀವು " + e.numDelegatesLabel + " ಡೆಲಿಗೇ" + t(e.numDelegates, "ಟ್", "ಶನ್‌ಗಳು") + " ಅನ್ನು ಮಾತ್ರ ಹೊಂದಿರಬಹುದು";
+                    return "ನೀವು " + e.numDelegatesLabel + " ಡೆಲಿಗೇ" + f(e.numDelegates, "ಟ್", "ಶನ್‌ಗಳು") + " ಅನ್ನು ಮಾತ್ರ ಹೊಂದಿರಬಹುದು";
                 }),
                 n("efee0a50", "ಈ ಖಾತೆಗೆ ಸದಸ್ಯರನ್ನು ಆಹ್ವಾನಿಸಿ"),
                 n("ja0a1aa6", "ಈ ಖಾತೆಗೆ ಕಾಂಟ್ರಿಬ್ಯೂಟರ್ ಆಹ್ವಾನಿಸಿ"),
@@ -3388,7 +3388,7 @@
                 n("ee9ea930", "ವಜ್ರಗಳು"),
                 n("cf3b535e", "ಅರ್ಹ ಪೋಸ್ಟ್‌ಗಳಲ್ಲಿ  ಕಾಯಿನ್‌ಗಳನ್ನು ಪಡೆಯುವ ಮೂಲಕ ವಜ್ರಗಳನ್ನು ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ. ವಜ್ರಗಳಿಂದ ಗಳಿಸಿದ ಹಣವು ನಿಮ್ಮ ಅಂದಾಜಿಸಲಾದ ಗಳಿಕೆಗಳಿಗೆ ಸ್ವತಃ ಬಂದು ಸೇರಿಕೊಳ್ಳುತ್ತದೆ."),
                 n("fbb7764b", function (e) {
-                    return e.count + " ಕಾಯಿನ್" + t(e.count, "", "‌ಗಳು");
+                    return e.count + " ಕಾಯಿನ್" + f(e.count, "", "‌ಗಳು");
                 }),
                 n("e70a07b2", "ಅನಾಮಧೇಯ"),
                 n("c76972f0", "ಕಳೆದ ಪೇಔಟ್‌ನಿಂದ"),
@@ -3727,19 +3727,19 @@
                 n("ea522535", "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"),
                 n("hf5ca8f8", "ಪ್ರೊಫೈಲ್‌ಗೆ"),
                 n("d9cbe351", function (e) {
-                    return e.count + " ಲಾಗಿನ್ಈವೆಂಟ್" + t(e.count, "", "‌ಗಳು");
+                    return e.count + " ಲಾಗಿನ್ಈವೆಂಟ್" + f(e.count, "", "‌ಗಳು");
                 }),
                 n("de90b04a", "ನೀವು ಭೇಟಿ ನೀಡಿರುವ ಸ್ಥಳಗಳು"),
                 n("cbd2ef59", function (e) {
-                    return e.count + " ಸ್ಥಳ" + t(e.count, "", "ಗಳು");
+                    return e.count + " ಸ್ಥಳ" + f(e.count, "", "ಗಳು");
                 }),
                 n("a4441bb8", "X ನಿಂದ ಆಸಕ್ತಿಗಳು"),
                 n("e1c6b2d6", "ವಿಶೇಷವಾಗಿ ರೂಪಿಸಲಾದ ಪ್ರೇಕ್ಷಕರು"),
                 n("ed19d10d", function (e) {
-                    return e.audienceCount + " ಪ್ರೇಕ್ಷಕ" + t(e.audienceCount, "", "ರು") + " ರಿಂದ" + e.advertiserCount + " ಜಾಹೀರಾತುದಾರ" + t(e.advertiserCount, "", "ರು");
+                    return e.audienceCount + " ಪ್ರೇಕ್ಷಕ" + f(e.audienceCount, "", "ರು") + " ರಿಂದ" + e.advertiserCount + " ಜಾಹೀರಾತುದಾರ" + f(e.advertiserCount, "", "ರು");
                 }),
                 n("f00d0d03", function (e) {
-                    return e.count + " ಆಸಕ್ತಿ" + t(e.count, "", "ಗಳು");
+                    return e.count + " ಆಸಕ್ತಿ" + f(e.count, "", "ಗಳು");
                 }),
                 n("hf9c2caa", "ಜಾಹೀರಾತುದಾರ ಪಟ್ಟಿಗೆ ವಿನಂತಿಸುವುದೇ?"),
                 n("c29b7971", function (e) {
@@ -3762,11 +3762,11 @@
                 n("jd8607ba", "ಸಕ್ರಿಯಗೊಳಿಸಿದ ದಿನಾಂಕ"),
                 n("ea4f6c9e", "ಬ್ರೌಸರ್‌ಗಳು"),
                 n("d750b93f", function (e) {
-                    return e.count + " ಬ್ರೌಸರ್" + t(e.count, "", "‌ಗಳು");
+                    return e.count + " ಬ್ರೌಸರ್" + f(e.count, "", "‌ಗಳು");
                 }),
                 n("a9783602", "ಮೊಬೈಲ್ ಸಾಧನಗಳು"),
                 n("j043aa31", function (e) {
-                    return e.count + " ಮೊಬೈಲ್ ಸಾಧನ" + t(e.count, "", "ಗಳು");
+                    return e.count + " ಮೊಬೈಲ್ ಸಾಧನ" + f(e.count, "", "ಗಳು");
                 }),
                 n("ae415fd2", "ಈ ಸೆಟ್ಟಿಂಗ್‌ ಆಫ್‌ ಆಗಿದೆ."),
                 n("a90be7b4", "ಇಮೇಲ್ ವಿಳಾಸಗಳು"),
@@ -3839,7 +3839,7 @@
                 n("e5d26f84", "ಸೂಚನೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುವ ಮೂಲಕ ಏನು ನಡೆಯುತ್ತಿದೆ ಎಂಬುದನ್ನು ಎಂದೂ ತಪ್ಪಿಸಿಕೊಳ್ಳಬೇಡಿ. ನಿಮ್ಮ ಸೂಚನೆಗಳನ್ನು ವೈಯಕ್ತಿಕಗೊಳಿಸಲು ನಿಮ್ಮ ಸಾಧನದ ದೇಶ ಮತ್ತು ಭಾಷೆಯನ್ನು X ಪಡೆಯುತ್ತದೆ."),
                 n("f91f00ba", "ಕ್ಲಿಪ್‌ ರಚಿಸಿ"),
                 n("f9b2d343", function (e) {
-                    return e.count + " ಪೋಸ್ಟ್" + t(e.count, "", "‌ಗಳು");
+                    return e.count + " ಪೋಸ್ಟ್" + f(e.count, "", "‌ಗಳು");
                 }),
                 n("jcc8306e", "ಮಾತನಾಡಲು ವಿನಂತಿ"),
                 n("j41fd45a", "ವಿನಂತಿಯನ್ನು ಕಳುಹಿಸಲಾಗಿದೆ"),
@@ -3912,22 +3912,22 @@
                     return "ಅಮಂತ್ರಿಸಿ " + e.name;
                 }),
                 n("f5c7aaa7", function (e) {
-                    return "ಹೋಸ್ಟ್" + t(e.count, "", "‌ಗಳು");
+                    return "ಹೋಸ್ಟ್" + f(e.count, "", "‌ಗಳು");
                 }),
                 n("fc56c8b1", function (e) {
-                    return "ಕೋ-ಹೋಸ್ಟ್" + t(e.count, "", "‌ಗಳು");
+                    return "ಕೋ-ಹೋಸ್ಟ್" + f(e.count, "", "‌ಗಳು");
                 }),
                 n("iba0f45d", function (e) {
                     return "ಮಾತನಾಡುವವರು";
                 }),
                 n("dc066955", function (e) {
-                    return "ಶ್ರೋತೃ" + t(e.count, "", "ಗಳು");
+                    return "ಶ್ರೋತೃ" + f(e.count, "", "ಗಳು");
                 }),
                 n("b53ed9ab", function (e) {
-                    return e.participantCount + " " + e.title + " · " + e.remainingCapacityCount + " ಸ್ಪಾಟ್" + t(e.remainingCapacityCount, "", "‌ಗಳು") + " ತೆರೆಯಿರಿ";
+                    return e.participantCount + " " + e.title + " · " + e.remainingCapacityCount + " ಸ್ಪಾಟ್" + f(e.remainingCapacityCount, "", "‌ಗಳು") + " ತೆರೆಯಿರಿ";
                 }),
                 n("c3b5b829", function (e) {
-                    return e.count + " ವಿನಂತಿ" + t(e.count, "", "ಗಳು");
+                    return e.count + " ವಿನಂತಿ" + f(e.count, "", "ಗಳು");
                 }),
                 n("fe7a1910", "ಆಹ್ವಾನಗಳನ್ನು ಕಳುಹಿಸಿ"),
                 n("ic3c757e", "ಬಳಕೆದಾರರಿಗಾಗಿ ಹುಡುಕಿ"),
@@ -3981,7 +3981,7 @@
                 n("c4fdbd16", "ನೀವು ತಡೆಗಟ್ಟಿರುವ ಬಳಕೆದಾರರಿಗೆ ಸಂದೇಶಗಳನ್ನು ಕಳುಹಿಸಲು ನಿಮಗೆ ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ."),
                 n("hf3e7e38", "ನಿಮ್ಮ ಸಂದೇಶವನ್ನು ಕಳುಹಿಸಲಾಗಲಿಲ್ಲ."),
                 n("dd8272fd", function (e) {
-                    return e.count + " ಹೊಸತು ಸಂದೇಶ" + t(e.count, "", "ಗಳು");
+                    return e.count + " ಹೊಸತು ಸಂದೇಶ" + f(e.count, "", "ಗಳು");
                 }),
                 n("e2cd3b7c", "ಆಡಿಯೋ ಕರೆ ಮುಕ್ತಾಯಗೊಂಡಿದೆ"),
                 n("f42f365a", "ವೀಡಿಯೊ ಕರೆ ಮುಕ್ತಾಯಗೊಂಡಿದೆ"),
@@ -4036,7 +4036,7 @@
                     return "ನಿನ್ನೆ, " + e.time;
                 }),
                 n("h95f9e77", function (e) {
-                    return e.reactionCount + " ಪ್ರತಿಕ್ರಿಯೆ" + t(e.reactionCount, "", "ಗಳು");
+                    return e.reactionCount + " ಪ್ರತಿಕ್ರಿಯೆ" + f(e.reactionCount, "", "ಗಳು");
                 }),
                 n("c0098d4a", "ಪ್ರತಿಕ್ರಿಯೆಗಳು"),
                 n("j85999ec", "ಬಳಕೆದಾರ ಪ್ರತಿಕ್ರಿಯೆಗಳ ಪಟ್ಟಿ"),
@@ -4047,13 +4047,13 @@
                 n("e8bd8fec", "ಕಳುಹಿಸಲಾಗಿದೆ"),
                 n("b2d32fae", "ಪ್ರತಿಯೊಬ್ಬರೂ ನೋಡಿದ್ದಾರೆ"),
                 n("a763d33f", function (e) {
-                    return e.count + " " + t(e.count, "ವ್ಯಕ್ತಿ", "ಜನರು") + " ಅವರು ನೋಡಿದ್ದಾರೆ";
+                    return e.count + " " + f(e.count, "ವ್ಯಕ್ತಿ", "ಜನರು") + " ಅವರು ನೋಡಿದ್ದಾರೆ";
                 }),
                 n("d84b485e", "ನೀವು ಈ ಖಾತೆಯನ್ನು ಹಿಂಬಾಲಿಸಿದ್ದೀರಿ"),
                 n("be0c83d8", "ನೀವು ವಿನಂತಿಯನ್ನು ಒಪ್ಪಿರುವಿರಿ"),
                 n("bcc13060", "ಆರಂಭಿಕ ಪ್ರವೇಶಾವಕಾಶ"),
                 n("e535cae9", function (e) {
-                    return e.count + " ಹಿಂಬಾಲಕ" + t(e.count, "", "ರು");
+                    return e.count + " ಹಿಂಬಾಲಕ" + f(e.count, "", "ರು");
                 }),
                 n("cf249089", function (e) {
                     return "ಸೇರಿದ ದಿನಾಂಕ " + e.joinDate;
@@ -4120,7 +4120,7 @@
                 n("hd3927c6", "ಅನ್‌ಪಿನ್ ಮಾಡಲು ಸಂವಾದವು ವಿಫಲವಾಗಿದೆ. ಪುನಃ ಪ್ರಯತ್ನಿಸಿ."),
                 n("f1ac0968", "ಅನ್‌ಪಿನ್‌ ಮಾಡಲು ಸಂವಾದ ವಿಫಲವಾಗಿದೆ. ನಿಮ್ಮ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಪುನಃ ಪ್ರಯತ್ನಿಸಿ."),
                 n("d571e4f9", function (e) {
-                    return "ನೀವು ಕೇವಲ " + e.count + " ಸಂವಾದ" + t(e.count, "", "ಗಳನ್ನು") + " ಪಿನ್ ಮಾಡಬಹುದು";
+                    return "ನೀವು ಕೇವಲ " + e.count + " ಸಂವಾದ" + f(e.count, "", "ಗಳನ್ನು") + " ಪಿನ್ ಮಾಡಬಹುದು";
                 }),
                 n("a551bf7e", "ನೀವು ಇನ್ನೊಂದು ಸಂವಾದವನ್ನು ಪಿನ್ ಮಾಡಲು ಅನ್‌ಪಿನ್‌ ಮಾಡಬೇಕಾಗುತ್ತದೆ."),
                 n("a676a876", "ನಿಮ್ಮ ಇನ್‌ಬಾಕ್ಸ್‌ಗೆ ಸ್ವಾಗತ!"),
@@ -4141,16 +4141,16 @@
                 n("bece84b4", "ನಿಮ್ಮ ಸಂದೇಶ ವಿನಂತಿಗಳು ಖಾಲಿ ಇವೆ"),
                 n("e51be7c1", "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"),
                 n("f041be05", function (e) {
-                    return e.stringCount + " pending request" + t(e.count, "", "s");
+                    return e.stringCount + " pending request" + f(e.count, "", "s");
                 }),
                 n("a2fad0f3", function (e) {
-                    return e.stringCount + " new pe" + t(e.count, "rson", "ople") + " you may know";
+                    return e.stringCount + " new pe" + f(e.count, "rson", "ople") + " you may know";
                 }),
                 n("cbddf365", function (e) {
-                    return e.stringCount + " pe" + t(e.count, "rson", "ople") + " you may know";
+                    return e.stringCount + " pe" + f(e.count, "rson", "ople") + " you may know";
                 }),
                 n("fac945ad", function (e) {
-                    return e.stringCount + " new request" + t(e.count, "", "s");
+                    return e.stringCount + " new request" + f(e.count, "", "s");
                 }),
                 n("ed93de0c", "ಪೋಸ್ಟ್ ಅನ್ನು ವಿಶ್ಲೇಷಿಸಲಾಗುತ್ತಿದೆ"),
                 n("d1d92e40", "ಹೆಚ್ಚಿನ ವಿವರಗಳು"),
@@ -4359,7 +4359,7 @@
                 n("ef018bf6", "Premium ನೊಂದಿಗೆ ಹೆಚ್ಚಿನ ಚಿತ್ರಗಳನ್ನು ವಿಶ್ಲೇಷಿಸಿ"),
                 n("cdace6d2", "ಈಗಲೇ ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಿ"),
                 n("a3186bff", function (e) {
-                    return e.count + " ವೆಬ್ ಪುಟ" + t(e.count, "", "ಗಳು");
+                    return e.count + " ವೆಬ್ ಪುಟ" + f(e.count, "", "ಗಳು");
                 }),
                 n("f4146dda", "ನೀವು ಯಾವ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಬಯಸುತ್ತೀರಿ?"),
                 n("a2c2be32", "ಇದು Grok ಅನ್ನು ಉತ್ತಮಗೊಳಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ."),
@@ -5171,7 +5171,7 @@
                 n("cef977e4", "ನಿಮ್ಮ ಡೇಟಾವನ್ನು ರಫ್ತು ಮಾಡಿ"),
                 n("f88e624e", "ಸಂವಾದ ನವೀಕರಿಸಲಾಗಿದೆ"),
                 n("e15e5637", function (e) {
-                    return "ಕಳೆದ " + t(e.count, "ಗಂಟೆ", e.count + " ಗಂಟೆಗಳು");
+                    return "ಕಳೆದ " + f(e.count, "ಗಂಟೆ", e.count + " ಗಂಟೆಗಳು");
                 }),
                 n("h5ab8b0e", "ಅವರು ಹಿಂಬಾಲಿಸುವ ಜನರು"),
                 n("a0f01bca", "ಟೈಮ್‌ ಫ್ರೇಮ್ ಬದಲಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ"),
@@ -5228,7 +5228,7 @@
                 n("a26da034", "ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಿರಿ"),
                 n("b3633046", "ಸಮುದಾಯ ಆಯ್ಕೆ ಮಾಡಿ"),
                 n("ce447fcb", function (e) {
-                    return e.count + " ಶ್ರೋತೃ" + t(e.count, "", "ಗಳು");
+                    return e.count + " ಶ್ರೋತೃ" + f(e.count, "", "ಗಳು");
                 }),
                 n("ef7da97f", function (e) {
                     return e.count + " ಜನರು ಕೇಳುತ್ತಿದ್ದಾರೆ";
@@ -5253,7 +5253,7 @@
                 }),
                 n("e4e811fc", "ಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ…"),
                 n("aadbc747", function (e) {
-                    return "ಕೋ-ಹೋಸ್ಟ್‌" + t(e.hostCount, "", "ಗಳು");
+                    return "ಕೋ-ಹೋಸ್ಟ್‌" + f(e.hostCount, "", "ಗಳು");
                 }),
                 n("hbd6035f", function (e) {
                     return "ಮಾತನಾಡುವವರು";
@@ -5441,8 +5441,8 @@
                 n("i8cae552", "ರೇಟಿಂಗ್ ನೀಡುವ ಮೂಲಕ ನೀವು ಕಮ್ಯೂನಿಟಿ ನೋಟ್ಸ್‌ನಲ್ಲಿನ ಗುಣಮಟ್ಟವನ್ನು ಉತ್ತಮವಾಗಿ ಕಾಯ್ದುಕೊಳ್ಳಲು ಸಹಾಯ ಮಾಡುತ್ತೀರಿ."),
                 n("hd43a218", "ನೋಟ್ಸ್ ಬರೆಯುವ ನಿಮ್ಮ ದೈನಂದಿನ ಮಿತಿಯನ್ನು ನೀವು ತಲುಪಿದ್ದೀರಿ"),
                 n("aaba8ed2", "ನೋಟ್ ಗುಣಮಟ್ಟವನ್ನು ಹೆಚ್ಚು ಇರಿಸಿಕೊಳ್ಳಲು ಮತ್ತು ಸ್ಪ್ಯಾಮ್ ಅನ್ನು ತಡೆಯಲು, ಕೊಡುಗೆದಾರರು ತಮ್ಮ ಬರವಣಿಗೆಯ ಪ್ರಭಾವದ ಆಧಾರದ ಮೇಲೆ ಪ್ರತಿ ದಿನ ಬರೆಯಬಹುದಾದ ನೋಟ್ಸ್ ಸಂಖ್ಯೆಗೆ ಮಿತಿಯಿದೆ. ದಯವಿಟ್ಟು ನಂತರ ಪುನಃ ಪ್ರಯತ್ನಿಸಿ."),
-                n("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                n("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                n("a67ed4d6", "ಈ ಲೇಖಕರ ಪೋಸ್ಟ್‌ಗಳಿಗೆ ಟಿಪ್ಪಣಿಗಳನ್ನು ಸೇರಿಸುವ ಮಿತಿಯನ್ನು ನೀವು ಇದೀಗ ತಲುಪಿದ್ದೀರಿ."),
+                n("ic484166", "ಟಿಪ್ಪಣಿಯ ಗುಣಮಟ್ಟವನ್ನು ಉನ್ನತ ಮಟ್ಟದಲ್ಲಿಡಲು ಮತ್ತು ಸ್ಪ್ಯಾಮ್ ಅನ್ನು ತಡೆಗಟ್ಟಲು, ನಿರ್ದಿಷ್ಟ ಅವಧಿಯಲ್ಲಿ ಒಬ್ಬ ನಿರ್ದಿಷ್ಟ ಪೋಸ್ಟ್ ಲೇಖಕರ ಕುರಿತು ಬರೆಯಬಹುದಾದ ಟಿಪ್ಪಣಿಗಳ ಸಂಖ್ಯೆಗೆ ಮಿತಿ ಇದೆ. ಆ ಮಿತಿಯು ಆ ಲೇಖಕರ ಕುರಿತು ಜನರು ತಮ್ಮ ಹಿಂದಿನ ಟಿಪ್ಪಣಿಗಳನ್ನು ಎಷ್ಟು ಸಹಾಯಕವಾಗಿ ಕಂಡುಕೊಂಡಿದ್ದಾರೆ ಎಂಬುದರ ಮೇಲೆ ಆಧಾರಿತವಾಗಿದೆ. ದಯವಿಟ್ಟು ನಂತರ ಪುನಃ ಪ್ರಯತ್ನಿಸಿ."),
                 n("b98f077c", "ಟಿಪ್ಪಣಿ ಮಾಹಿತಿಯನ್ನು ವಿನಂತಿಸಿ"),
                 n("ee691104", "ಈ ಪೋಸ್ಟ್ ಕುರಿತು ಸಮುದಾಯ ಟಿಪ್ಪಣಿಯನ್ನು ವಿನಂತಿಸಿ"),
                 n("f8cbdf02", "ಈ ಪೋಸ್ಟ್ ಸಂಭಾವ್ಯವಾಗಿ ದಾರಿತಪ್ಪಿಸುವಂತಿದೆ ಎಂದು ಭಾವಿಸುತ್ತೀರಾ? ಕಮ್ಯೂನಿಟಿ ನೋಟ್ ಅನ್ನು ವಿನಂತಿಸಿ. "),
@@ -5735,7 +5735,7 @@
                 n("a796c19c", "ಪುನಃ ಸೇರಿಕೊಳ್ಳಿ"),
                 n("h837a96c", "ನೀವು ಕಮ್ಯೂನಿಟಿ ನೋಟ್ಸ್ ಪ್ರೋಗ್ರಾಂಗೆ ಪುನಃ ಸೇರಿಕೊಳ್ಳುತ್ತೀರಿ."),
                 n("a4d4bcb9", function (e) {
-                    return "ನೀವು ಪುನಃ ಸೇರಲು ಬಯಸಿದರೆ, ಇಲ್ಲಿ " + e.numDaysToRejoin + " ದಿನ" + t(e.numDaysToRejoin, "", "ಗಳು") + "ರಲ್ಲಿ ನೀವು ಹಾಗೆ ಮಾಡಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ.";
+                    return "ನೀವು ಪುನಃ ಸೇರಲು ಬಯಸಿದರೆ, ಇಲ್ಲಿ " + e.numDaysToRejoin + " ದಿನ" + f(e.numDaysToRejoin, "", "ಗಳು") + "ರಲ್ಲಿ ನೀವು ಹಾಗೆ ಮಾಡಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ.";
                 }),
                 n("a490bc51", "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"),
                 n("c94ad3e8", "ನಮಗೆ ಪ್ರತಿಕ್ರಿಯೆ ಕಳುಹಿಸಿ"),
@@ -5939,13 +5939,13 @@
                 n("cb6adb10", "ಸಮುದಾಯಗಳನ್ನು ಶೋಧಿಸಿ"),
                 n("df362964", "ಸಮುದಾಯಗಳನ್ನು ಕಂಡುಕೊಳ್ಳಿ"),
                 n("dfd5031f", function (e) {
-                    return e.newTweets + " ಹೊಸತು ಪೋಸ್ಟ್" + t(e.newTweets, "", "‌ಗಳು");
+                    return e.newTweets + " ಹೊಸತು ಪೋಸ್ಟ್" + f(e.newTweets, "", "‌ಗಳು");
                 }),
                 n("ha4bb8a9", function (e) {
-                    return e.reportedTweets + " ವರದಿ" + t(e.reportedTweets, "", "ಗಳು");
+                    return e.reportedTweets + " ವರದಿ" + f(e.reportedTweets, "", "ಗಳು");
                 }),
                 n("caf003b3", function (e) {
-                    return e.memberRequests + " ವಿನಂತಿ" + t(e.memberRequests, "", "ಗಳು");
+                    return e.memberRequests + " ವಿನಂತಿ" + f(e.memberRequests, "", "ಗಳು");
                 }),
                 n("a2118086", "ಪೋಸ್ಟ್‌ಗಳನ್ನು ವಿಂಗಡಿಸಿ"),
                 n("hb01fe46", "ನೀವು ಸೇರಿದಾಗ, ಅವುಗಳನ್ನು ನೀವು ಇಲ್ಲಿ ಕಾಣುತ್ತೀರಿ."),
@@ -6019,10 +6019,10 @@
                 n("ee609174", "ಸಾಮಾನ್ಯ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"),
                 n("ab19cdaa", "ಸ್ಪ್ಯಾಮ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"),
                 n("d755f47d", function (e) {
-                    return e.count + " ಹೊಸತು ಪೋಸ್ಟ್" + t(e.count, "", "‌ಗಳು") + " ಪರಿಶೀಲನೆಗಿದೆ";
+                    return e.count + " ಹೊಸತು ಪೋಸ್ಟ್" + f(e.count, "", "‌ಗಳು") + " ಪರಿಶೀಲನೆಗಿದೆ";
                 }),
                 n("efc26607", function (e) {
-                    return e.memberCount + " ಸದಸ್ಯ" + t(e.memberCount, "", "ರು");
+                    return e.memberCount + " ಸದಸ್ಯ" + f(e.memberCount, "", "ರು");
                 }),
                 n("adfcc3ce", "ನಿಯಮಗಳನ್ನು ಸೇರಿಸಿ, ಅಳಿಸಿ ಅಥವಾ ಸಂಪಾದಿಸಿ"),
                 n("d0330d9c", "ನಿಯಮಗಳನ್ನು ನೋಡಿ"),
@@ -6045,7 +6045,7 @@
                 n("e538848c", "ಮಾಡರೇಶನ್‌ ಪರಿಕರಗಳಿಗೆ ನೀವು ಇನ್ನು ಪ್ರವೇಶ ಹೊಂದಿಲ್ಲ. ನೀವು ನಿಮ್ಮ ಮನಸನ್ನು ಬದಲಿಸಿದರೆ, ನಿಮ್ಮನ್ನು ಪುನಃ ಮಾಡರೇಟರ್ ಎಂಬುದಾಗಿ ಆಹ್ವಾನಿಸಬೇಕಾಗುತ್ತದೆ."),
                 n("j49e6aa2", "ಹೌದು, ನಾನು ತೊರೆಯಲು ಬಯಸಿದ್ದೇನೆ"),
                 n("dde5f323", function (e) {
-                    return e.count + " ಹೊಸತು ಸದಸ್ಯ ವಿನಂತಿ" + t(e.count, "", "ಗಳು") + " ಪರಿಶೀಲನೆಗಿದೆ";
+                    return e.count + " ಹೊಸತು ಸದಸ್ಯ ವಿನಂತಿ" + f(e.count, "", "ಗಳು") + " ಪರಿಶೀಲನೆಗಿದೆ";
                 }),
                 n("f5e0332a", "ವಯಸ್ಕರ ಕಂಟೆಂಟ್ (NSFW)"),
                 n("e983404a", "ಪಿನ್ ಮಾಡಲಾದ ಹ್ಯಾಶ್ ಟ್ಯಾಗ್‌ಗಳು"),
@@ -6167,7 +6167,7 @@
                     return "@" + e.screen_name + " ಅವರನ್ನು ಈಗ ಆಹ್ವಾನಿಸಲಾಗದು";
                 }),
                 n("i6568549", function (e) {
-                    return "ನೀವು " + e.remaining_invite_count + " ಆಹ್ವಾನ" + t(e.remaining_invite_count, "", "ಗಳನ್ನು") + " ಬಾಕಿ ಹೊಂದಿದ್ದೀರಿ";
+                    return "ನೀವು " + e.remaining_invite_count + " ಆಹ್ವಾನ" + f(e.remaining_invite_count, "", "ಗಳನ್ನು") + " ಬಾಕಿ ಹೊಂದಿದ್ದೀರಿ";
                 }),
                 n("b4f16d00", "ಆಹ್ವಾನಿಸಲು ಜನರನ್ನು ಹುಡುಕಿ"),
                 n("ja1387a8", "ನಿಮ್ಮ ಹಿಂಬಾಲಕರು ಮತ್ತು ಎಲ್ಲರಿಂದಲೂ ನೇರ ಸಂದೇಶಗಳನ್ನು ಅನುಮತಿಸುವರನ್ನು ಮಾತ್ರ ಶೋಧ ಫಲಿತಾಂಶಗಳು ಒಳಗೊಂಡಿರುತ್ತವೆ."),
@@ -6297,11 +6297,11 @@
                 n("dc7a9436", "ಪೋಸ್ಟ್ ಅನ್ನು Xಗೆ ರಿಪೋರ್ಟ್ ಮಾಡಿ"),
                 n("e2bc5db0", "@X"),
                 n("d0a1b248", function (e) {
-                    return e.formattedCount + " ಸದಸ್ಯ" + t(e.count, "", "ರು");
+                    return e.formattedCount + " ಸದಸ್ಯ" + f(e.count, "", "ರು");
                 }),
                 n("cd4d48d2", " @X"),
                 n("ff0f742a", function (e) {
-                    return e.formattedCount + " ಸದಸ್ಯ" + t(e.count, "", "ರು");
+                    return e.formattedCount + " ಸದಸ್ಯ" + f(e.count, "", "ರು");
                 }),
                 n("dca19c06", "ನೀವು  ಈ ಪೋಸ್ಟ್ ಅನ್ನು ಮರೆಮಾಡಿದ್ದೀರಿ"),
                 n("dd641764", "ನೀವು ಈ ಪೋಸ್ಟ್ ಅನ್ನು ಇಟ್ಟುಕೊಂಡಿದ್ದೀರಿ"),
@@ -7237,7 +7237,7 @@
                 n("h257d4aa", "ಪ್ರಾಯೋಜಿಸಲು ಒಂದು ಪೋಸ್ಟ್ ಆಯ್ಕೆಮಾಡಿ"),
                 n("e9334fe6", "ಪ್ರತಿ ಕೆಲವು ನಿಮಿಷಗಳಿಗೊಮ್ಮೆ ಡೇಟಾ ಅಪ್‌ಡೇಟ್ ಆಗುತ್ತದೆ"),
                 n("a6d7b1d0", "X ಆಂತರಿಕ ಡೇಟಾವನ್ನು ಆಧರಿಸಿದೆ"),
-                n("h71a00e6", "You’re saving time with ad-free"),
+                n("h71a00e6", "ಜಾಹೀರಾತು-ಮುಕ್ತತೆಯಿಂದ ನೀವು ಸಮಯವನ್ನು ಉಳಿಸುತ್ತಿದ್ದೀರಿ"),
                 n("f6c50ec0", "ನಿಮ್ಮ ಜಾಹೀರಾತು-ರಹಿತ ಪ್ರಾಯೋಗಿಕ ಅವಧಿ ಮುಗಿದಿದೆ."),
                 n("e1d1fbca", "ನೀವು ತಪ್ಪಿಸಿಕೊಂಡಿದ್ದೀರಿ"),
                 n("a82d7abd", function (e) {
@@ -7254,19 +7254,19 @@
                 n("c534c6b4", "ನಾವು ಸಂಖ್ಯೆಗಳನ್ನು ಲೆಕ್ಕ ಹಾಕುತ್ತಿದ್ದೇವೆ..."),
                 n("i57332f0", "ನೀವು ಎಷ್ಟು ಜಾಹೀರಾತುಗಳನ್ನು ತಪ್ಪಿಸಿದ್ದೀರಿ ಮತ್ತು ಎಷ್ಟು ಸಮಯವನ್ನು ಉಳಿಸಿದ್ದೀರಿ ಎಂಬುದನ್ನು ನೋಡಲು ಸ್ಕ್ರಾಲಿಂಗ್ ಮಾಡುವುದನ್ನು ಮುಂದುವರಿಸಿ ಮತ್ತು ನಂತರ ಪುನಃ ಪರಿಶೀಲಿಸಿ."),
                 n("cc10f019", function (e) {
-                    return e.minutes + " ನಿಮಿಷ" + t(e.minutes, "", "ಗಳು");
+                    return e.minutes + " ನಿಮಿಷ" + f(e.minutes, "", "ಗಳು");
                 }),
                 n("f9b6b7d3", function (e) {
-                    return e.hours + " ಗಂಟೆ" + t(e.hours, "", "ಗಳು");
+                    return e.hours + " ಗಂಟೆ" + f(e.hours, "", "ಗಳು");
                 }),
                 n("a9af8753", function (e) {
-                    return e.days + " ದಿನ" + t(e.days, "", "ಗಳು") + ", " + e.hours + " ಗಂಟೆ" + t(e.hours, "", "ಗಳು");
+                    return e.days + " ದಿನ" + f(e.days, "", "ಗಳು") + ", " + e.hours + " ಗಂಟೆ" + f(e.hours, "", "ಗಳು");
                 }),
                 n("b93d00e5", function (e) {
-                    return e.days + " ದಿನ" + t(e.days, "", "ಗಳು");
+                    return e.days + " ದಿನ" + f(e.days, "", "ಗಳು");
                 }),
                 n("dc9661b3", function (e) {
-                    return e.seconds + " second" + f(e.seconds, "", "s");
+                    return e.seconds + " second" + t(e.seconds, "", "s");
                 }),
                 n("g2c63852", "100% ಉಚಿತ. ಯಾವುದೇ ಕ್ರೆಡಿಟ್ ಕಾರ್ಡ್ ಅಗತ್ಯವಿಲ್ಲ."),
                 n("be88be23", function (e) {
@@ -7451,7 +7451,7 @@
                 n("h1c5d6aa", "ನಿಮ್ಮಿಂದ ಕಳುಹಿಸಲಾಗಿದೆ"),
                 n("h6d45054", "ಎಲ್ಲರಿಂದ ಕಳುಹಿಸಲಾಗಿದೆ"),
                 n("da68fff1", function (e) {
-                    return e.count + " ಕಾಯಿನ್" + t(e.count, "", "‌ಗಳು") + " (ನಿಮಗೆ ಮಾತ್ರ ಕಂಡುಬರುತ್ತದೆ)";
+                    return e.count + " ಕಾಯಿನ್" + f(e.count, "", "‌ಗಳು") + " (ನಿಮಗೆ ಮಾತ್ರ ಕಂಡುಬರುತ್ತದೆ)";
                 }),
                 n("e35f2534", "ಪೋಸ್ಟ್ ಎಂಗೇಜ್ಮೆಂಟ್ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ"),
                 n("i60dfa72", "ಪೋಸ್ಟ್ ಎಂಗೇಜ್‌ಮೆಂಟ್‌ಗಳು"),
@@ -7518,13 +7518,13 @@
                     return "ಪೋಸ್ಟ್ ಮಾಡಿದ ಮೊದಲ 48 ಗಂಟೆಗಳಲ್ಲಿ ಈ ಪೋಸ್ಟ್ ಅನ್ನು ಓದಿದ ಸಂಖ್ಯೆಗಳನ್ನು ಇದು ಟ್ರ್ಯಾಕ್ ಮಾಡುತ್ತದೆ. ಗರಿಷ್ಠ ಮೌಲ್ಯವು " + e.maxValue + " ಇಂಪ್ರೆಶನ್‌ಗಳಾಗಿರುತ್ತವೆ.";
                 }),
                 n("ib1f8491", function (e) {
-                    return e.likeCount + " ಇಷ್ಟ" + t(e.likeCount, "", "ಗಳು");
+                    return e.likeCount + " ಇಷ್ಟ" + f(e.likeCount, "", "ಗಳು");
                 }),
                 n("dc0e7f37", function (e) {
-                    return e.retweetCount + " ಮರುಪೋಸ್ಟ್" + t(e.retweetCount, "", "‌ಗಳು");
+                    return e.retweetCount + " ಮರುಪೋಸ್ಟ್" + f(e.retweetCount, "", "‌ಗಳು");
                 }),
                 n("d0eeb127", function (e) {
-                    return e.replyCount + " ಪ್ರತಿಕ್ರಿಯ" + t(e.replyCount, "ಿಸಿ", "ೆಗಳು");
+                    return e.replyCount + " ಪ್ರತಿಕ್ರಿಯ" + f(e.replyCount, "ಿಸಿ", "ೆಗಳು");
                 }),
                 n("db6efeb8", "ನಿಮ್ಮ ಪ್ರಚಾರ ನಡೆಯುತ್ತಿದೆ"),
                 n("j6daea86", "ನಿಮ್ಮ ಪ್ರಚಾರವನ್ನು ವಿರಾಮಗೊಳಿಸಲಾಗಿದೆ"),
@@ -7537,7 +7537,7 @@
                 n("e8adeec8", "ಪುನಃ ಪ್ರಚಾರ ಮಾಡಿ"),
                 n("fbb5c37e", "ಪುನಃ ಬೂಸ್ಟ್‌ ಮಾಡಿ"),
                 n("ccffb487", function (e) {
-                    return "ನಿಮ್ಮ ಪೋಸ್ಟ್‌ ಈವರೆಗೆ " + e.impressions + " ಇಂಪ್ರೆಶನ್‌" + t(e.impressions, "", "ಗಳನ್ನು") + " ಗಳಿಸಿದೆ. ನಿಮ್ಮ ವ್ಯಾಪ್ತಿಯನ್ನು ಹೆಚ್ಚಿಸಲು ಪ್ರೊಫೆಷನಲ್ ಖಾತೆಗೆ ಬದಲಿಸಿ.";
+                    return "ನಿಮ್ಮ ಪೋಸ್ಟ್‌ ಈವರೆಗೆ " + e.impressions + " ಇಂಪ್ರೆಶನ್‌" + f(e.impressions, "", "ಗಳನ್ನು") + " ಗಳಿಸಿದೆ. ನಿಮ್ಮ ವ್ಯಾಪ್ತಿಯನ್ನು ಹೆಚ್ಚಿಸಲು ಪ್ರೊಫೆಷನಲ್ ಖಾತೆಗೆ ಬದಲಿಸಿ.";
                 }),
                 n("ha13fd94", "ಪೋಸ್ಟ್ ಅನ್ನು ಬೂಸ್ಟ್ ಮಾಡಿ"),
                 n("jede3014", "ನಿಮ್ಮ ಪ್ರಚಾರ ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ"),
@@ -7580,7 +7580,7 @@
                     return e.totalBudget + " ಓವರ್ " + e.durationLabel;
                 }),
                 n("bad70c09", function (e) {
-                    return "ಸ್ಥಳ" + t(e.numLocations, "", "ಗಳು");
+                    return "ಸ್ಥಳ" + f(e.numLocations, "", "ಗಳು");
                 }),
                 n("c133a39b", function (e) {
                     return e.minAge + "-" + e.maxAge;
@@ -7589,7 +7589,7 @@
                     return e.minAge + "+";
                 }),
                 n("g4bf9cb7", function (e) {
-                    return e.durationDays + " ದಿನ" + t(e.durationDays, "", "ಗಳು");
+                    return e.durationDays + " ದಿನ" + f(e.durationDays, "", "ಗಳು");
                 }),
                 n("gc3ce5d9", function (e) {
                     return "ಪ್ರತಿ ದಿನ ಅಂದಾಜು " + e.audienceLow + " - " + e.audienceHigh + " ಜನರ ತಲುಪುವಿಕೆ";
@@ -7689,7 +7689,7 @@
                 n("a74821a0", "ನಿಮ್ಮ ಪಾವತಿ ಸಂಭವಿಸಲಿಲ್ಲ ಅಥವಾ ಅವಧಿ ಮೀರಲಿದೆ ಎಂಬಂತೆ ಕಂಡುಬರುತ್ತಿದೆ. ನಿಮ್ಮ Premium ಸಬ್ಸ್ಕ್ರಿಪ್ಷನ್ ಉಳಿಸಿಕೊಳ್ಳಲು ನಿಮ್ಮ ಪಾವತಿ ಮಾಹಿತಿಯನ್ನು ಅಪ್ಡೇಟ್ ಮಾಡಿ."),
                 n("bb55752e", "ಕಾಯಿನ್‌ಗಳು ನಿಮಗೆ ಉತ್ತಮ ವಿಷಯವನ್ನು ಪೋಸ್ಟ್ ಮಾಡುವಂತಹ ಕ್ರಿಯೇಟರ್‌ಗಳನ್ನು ಬೆಂಬಲಿಸಲು ಅವಕಾಶ ನೀಡುತ್ತವೆ. ಬಳಸದ ಕಾಯಿನ್‌ಗಳನ್ನು ನಿಮ್ಮ ಬ್ಯಾಲೆನ್ಸ್‌ನಲ್ಲಿ ಇರಿಸಲಾಗುತ್ತದೆ. "),
                 n("ea7ce65f", function (e) {
-                    return e.count + " ಬೋನಸ್ ಕಾಯಿನ್" + t(e.count, " ಅ", "‌ಗಳ") + "ನ್ನು ಒಳಗೊಂಡಿದೆ.";
+                    return e.count + " ಬೋನಸ್ ಕಾಯಿನ್" + f(e.count, " ಅ", "‌ಗಳ") + "ನ್ನು ಒಳಗೊಂಡಿದೆ.";
                 }),
                 n("e557f9d2", "ನಿಮ್ಮ ಕಾಯಿನ್ ಬ್ಯಾಲೆನ್ಸ್ ಮಿತಿಯನ್ನು ನೀವು ತಲುಪಿದ್ದೀರಿ."),
                 n("e2beba5e", "ಅತ್ಯಂತ ಜನಪ್ರಿಯ"),
@@ -7878,10 +7878,10 @@
                         "value" in n && (n.writable = !0),
                         Object.defineProperty(
                             e,
-                            ((t = n.key),
-                            (f = void 0),
+                            ((f = n.key),
+                            (t = void 0),
                             "symbol" ==
-                            typeof (f = (function (e, c) {
+                            typeof (t = (function (e, c) {
                                 if ("object" != typeof e || null === e) return e;
                                 var a = e[Symbol.toPrimitive];
                                 if (void 0 !== a) {
@@ -7890,13 +7890,13 @@
                                     throw new TypeError("@@toPrimitive must return a primitive value.");
                                 }
                                 return ("string" === c ? String : Number)(e);
-                            })(t, "string"))
-                                ? f
-                                : String(f)),
+                            })(f, "string"))
+                                ? t
+                                : String(t)),
                             n,
                         );
                 }
-                var t, f;
+                var f, t;
             }
             function d(e, c) {
                 return (
@@ -7921,7 +7921,7 @@
                 n("h24a8862", "ಈ ಚೆಕ್‌ಬಾಕ್ಸ್ ಬಗ್ಗೆ"),
                 n("c29e3a88", "ಅಫಿಲಿಯೇಟ್‌ಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ"),
                 n("j8318d57", function (e) {
-                    return e.number + " ಅಫಿಲಿಯೇಟ್" + t(e.number, "", "‌ಗಳು");
+                    return e.number + " ಅಫಿಲಿಯೇಟ್" + f(e.number, "", "‌ಗಳು");
                 }),
                 n("bf809ec0", "ಅಫಿಲಿಯೇಟ್‌ಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ"),
                 n("b719e224", "ಫಲಿತಾಂಶಗಳಿಲ್ಲ"),
@@ -8140,7 +8140,7 @@
                 n("e6b0965a", "ನಿಮ್ಮ ಆರ್ಡರ್"),
                 n("a1b58798", "ಕೆಳಗಿನ ನಿಮ್ಮ ಆರ್ಡರ್ ಅನ್ನು ಪರಿಶೀಲಿಸಿ"),
                 n("b651c7d7", function (e) {
-                    return "ಅಫಿಲಿಯೇಟ್" + t(e.count, "", "‌ಗಳು") + " x " + e.count;
+                    return "ಅಫಿಲಿಯೇಟ್" + f(e.count, "", "‌ಗಳು") + " x " + e.count;
                 }),
                 n("ec5e9c54", "ಮೂಲ ಸಬ್‌ಸ್ಕ್ರಿಪ್ಷನ್"),
                 n("e16093fc", "ತಿಂಗಳಿಗೆ ಒಟ್ಟು"),
@@ -8302,6 +8302,7 @@
                 n("e5e6479e", "ವೇಗವಾದ ಬೆಂಬಲವನ್ನು ಪಡೆಯಲು ನಿಮ್ಮ ಸಂಸ್ಥೆಯ ಬಳಕೆದಾರರ ಹೆಸರು ಮತ್ತು ನಿಮ್ಮ ವಿಚಾರಣೆಯ ವಿವರಗಳೊಂದಿಗೆ ನಮಗೆ ಇಮೇಲ್ ಕಳುಹಿಸಿ."),
                 n("ica8392a", "ಒಮ್ಮೆ ನಾವು ನಿಮ್ಮ ವಿನಂತಿಯನ್ನು ಸ್ವೀಕರಿಸಿದರೆ, ಅದನ್ನು ಸ್ವೀಕರಿಸಿದ ಕ್ರಮದಲ್ಲಿ ನಾವು ಪರಿಶೀಲಿಸುತ್ತೇವೆ ಮತ್ತು ಆದ್ಯತೆ ನೀಡುತ್ತೇವೆ."),
                 n("ed37e36e", "ಪ್ರಮುಖ: ನಿಮ್ಮ ಸಂಸ್ಥೆಯ ಬಳಕೆದಾರರ ಹೆಸರನ್ನು ಕಳೆದುಕೊಂಡಿರುವುದು ಅಥವಾ ವೈಯಕ್ತಿಕ ಇಮೇಲ್ ಅನ್ನು ಬಳಸುವುದರಿಂದ ನಿಮ್ಮ ವಿನಂತಿಯನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುವಲ್ಲಿ ವಿಳಂಬವಾಗಬಹುದು."),
+                n("h7e1c146", "Delegate accounts are not currently supported."),
                 n("eb0d4fe2", "ಕಾಲಂ ಮಾಡಿ"),
                 n("e93d2f8a", "ಈ ರೀತಿಯ ವಿವಿಧ ಕಾಲಂಗಳನ್ನು ಸೇರಿಸುವ ಮೂಲಕ ನಿಮ್ಮ ಅನುಭವವನ್ನು ಗ್ರಾಹಕೀಯಗೊಳಿಸಿ:"),
                 n("e8203d1e", "ಹುಡುಕಾಟಗಳು"),
@@ -8792,7 +8793,7 @@
                     return e.hoursWord + " " + e.minutesWord + " " + e.secondsWord + " ಸಮಯಕ್ಕೆ ಪ್ರಾರಂಭಗೊಳ್ಳುತ್ತದೆ";
                 }),
                 n("daa73df1", function (e) {
-                    return e.viewerCount + " ವೀಕ್ಷಣೆ" + t(e.viewerCount, "", "ಗಳು");
+                    return e.viewerCount + " ವೀಕ್ಷಣೆ" + f(e.viewerCount, "", "ಗಳು");
                 }),
                 n("b4f19b97", function (e) {
                     return e.listItem1 + " ಮತ್ತು " + e.listItem2;
@@ -8908,9 +8909,9 @@
                 n("b0b22805", function (e) {
                     return e.advertiserName + " ಗೆ ಭೇಟಿ ಕೊಡಿ";
                 }),
-                n("c67e71aa", "ಈಗ ವೀಕ್ಷಿಸಿ"),
-                n("a6ada13e", "ಈಗ ಶಾಪಿಂಗ್ ಮಾಡಿ");
-            n("j0f12222", "ಇನ್ನಷ್ಟು ನೋಡಿ"),
+                n("c67e71aa", "ಈಗ ವೀಕ್ಷಿಸಿ");
+            n("a6ada13e", "ಈಗ ಶಾಪಿಂಗ್ ಮಾಡಿ"),
+                n("j0f12222", "ಇನ್ನಷ್ಟು ನೋಡಿ"),
                 n("f569f7c8", "ವೆಬ್‌ಸೈಟ್‌ಗೆ ಹೋಗಿ"),
                 n("j0c6772a", "ವೆಬ್‌ಸೈಟ್‌ಗೆ ಭೇಟಿ ನೀಡಿ"),
                 n("f73003aa", "ಜಾಹೀರಾತಿನ ನಂತರ ವೀಡಿಯೋ ಪ್ರಸಾರವಾಗುತ್ತದೆ"),
@@ -9021,7 +9022,7 @@
                     return e.count + " ಇತರೆ";
                 }),
                 n("dbeae6cf", function (e) {
-                    return e.count + " ಇತರ ಶ್ರೋತೃ" + t(e.count, "", "ಗಳು");
+                    return e.count + " ಇತರ ಶ್ರೋತೃ" + f(e.count, "", "ಗಳು");
                 }),
                 n("d2543d97", function (e) {
                     return "+" + e.count;
@@ -9042,19 +9043,19 @@
                     return e.hours + " " + e.minutes + " " + e.seconds;
                 }),
                 n("d925a4f9", function (e) {
-                    return e.formattedCount + " ನಿಮಿಷ" + t(e.count, " ಉಳಿದಿದ", "ಗಳು ಉಳಿದಿವ") + "ೆ";
+                    return e.formattedCount + " ನಿಮಿಷ" + f(e.count, " ಉಳಿದಿದ", "ಗಳು ಉಳಿದಿವ") + "ೆ";
                 }),
                 n("ib15cddb", function (e) {
-                    return e.formattedCount + " ಗಂಟೆ" + t(e.count, " ಉಳಿದಿದ", "ಗಳು ಉಳಿದಿವ") + "ೆ";
+                    return e.formattedCount + " ಗಂಟೆ" + f(e.count, " ಉಳಿದಿದ", "ಗಳು ಉಳಿದಿವ") + "ೆ";
                 }),
                 n("db9ed19f", function (e) {
-                    return e.formattedCount + " ದಿನ" + t(e.count, "", "ಗಳು") + " ಉಳಿದಿದೆ";
+                    return e.formattedCount + " ದಿನ" + f(e.count, "", "ಗಳು") + " ಉಳಿದಿದೆ";
                 }),
                 n("e1ebcecb", function (e) {
-                    return e.formattedDays + " ದಿನ" + t(e.days, "", "ಗಳು") + " " + e.formattedHours + " ಗಂಟೆ" + t(e.hours, " ಉಳಿದಿದ", "ಗಳು ಉಳಿದಿವ") + "ೆ";
+                    return e.formattedDays + " ದಿನ" + f(e.days, "", "ಗಳು") + " " + e.formattedHours + " ಗಂಟೆ" + f(e.hours, " ಉಳಿದಿದ", "ಗಳು ಉಳಿದಿವ") + "ೆ";
                 }),
                 n("cc1da1fd", function (e) {
-                    return e.formattedHours + " ಗಂಟೆ" + t(e.hours, "", "ಗಳು") + " " + e.formattedMins + " ನಿಮಿಷ" + t(e.mins, " ಉಳಿದಿದ", "ಗಳು ಉಳಿದಿವ") + "ೆ";
+                    return e.formattedHours + " ಗಂಟೆ" + f(e.hours, "", "ಗಳು") + " " + e.formattedMins + " ನಿಮಿಷ" + f(e.mins, " ಉಳಿದಿದ", "ಗಳು ಉಳಿದಿವ") + "ೆ";
                 }),
                 n("f89a5d60", "ಹೋಸ್ಟ್‌"),
                 n("ce2cfb36", "ಸಬ್‌ಸ್ಕ್ರೈಬರ್‌ಗಳು ಮಾತ್ರ"),
@@ -9108,20 +9109,20 @@
                 n("f8e8e32e", "ನೀವು"),
                 n("df6703d3", "ನೀವು"),
                 n("c20f7e9f", function (e) {
-                    return t(e.otherUsersCount, b.createElement(b.Fragment, null, "", e.secondName), e.otherUsersCount + " ಇತರರು");
+                    return f(e.otherUsersCount, b.createElement(b.Fragment, null, "", e.secondName), e.otherUsersCount + " ಇತರರು");
                 }),
                 n("he26f627", function (e) {
-                    return t(e.otherUsersCount, b.createElement(b.Fragment, null, "", e.secondName), e.otherUsersCount + " ಇತರರು");
+                    return f(e.otherUsersCount, b.createElement(b.Fragment, null, "", e.secondName), e.otherUsersCount + " ಇತರರು");
                 }),
                 n("gea7aa3c", "ಮುಂದಿನ"),
                 n("b6462b32", "ಹಿಂದಿನ"),
                 n("caddb529", "ಮತ್ತು"),
                 n("ff31714c", function (e) {
-                    return " ಮತ್ತು " + t(e.othersCount, "1", "" + e.othersCount) + " ಇತರರು";
+                    return " ಮತ್ತು " + f(e.othersCount, "1", "" + e.othersCount) + " ಇತರರು";
                 }),
                 n("e06c99b7", "ಮತ್ತು"),
                 n("i4e2f96c", function (e) {
-                    return " ಮತ್ತು " + t(e.othersCount, "1", "" + e.othersCount) + " ಇತರರು";
+                    return " ಮತ್ತು " + f(e.othersCount, "1", "" + e.othersCount) + " ಇತರರು";
                 }),
                 n("ga629a8c", "ಸಂವಾದದಲ್ಲಿರುವ ಜನರನ್ನು ವೀಕ್ಷಿಸಿ"),
                 n("d6f781e4", "ನಿಮ್ಮ ಮೆಚ್ಚಿನ X ಕ್ರಿಯೇಟರ್‌ಗೆ ಸಬ್‌ಸ್ಕ್ರೈಬ್‌ ಮಾಡಿದಾಗ, ನೀವು ವಿಶೇಷ ಕಂಟೆಂಟ್‌ ಪಡೆಯುತ್ತೀರಿ ಮತ್ತು ಅವರು ಸ್ವಲ್ಪ ಹಣವನ್ನು ಗಳಿಸುತ್ತಾರೆ."),
@@ -9143,10 +9144,10 @@
                 n("ec286028", "ಆಡಿಯೋ ವಿರಾಮ ಮಾಡಿ"),
                 n("ad77feb6", "ಶೀರ್ಷಿಕೆಗಳು ಲಭ್ಯವಿಲ್ಲ"),
                 n("e82adfeb", function (e) {
-                    return e.count + " ವೆಬ್ ಪುಟ" + t(e.count, "", "ಗಳು");
+                    return e.count + " ವೆಬ್ ಪುಟ" + f(e.count, "", "ಗಳು");
                 }),
                 n("cfb8c1f7", function (e) {
-                    return e.count + " ಪೋಸ್ಟ್" + t(e.count, "", "‌ಗಳು");
+                    return e.count + " ಪೋಸ್ಟ್" + f(e.count, "", "‌ಗಳು");
                 }),
                 n("g78032d5", function (e) {
                     return e.count + " ವೆಬ್ ಪುಟಗಳು ಮತ್ತು ಪೋಸ್ಟ್‌ಗಳು";
@@ -9172,7 +9173,7 @@
                 n("g10ace38", "ಸಮೀಕ್ಷೆ ಆಯ್ಕೆಗಳು"),
                 n("a3edf99a", "ಅಂತಿಮ ಫಲಿತಾಂಶಗಳು"),
                 n("c2b81e9d", function (e) {
-                    return e.formattedCount + " ಮತ" + t(e.count, "", "ಗಳು");
+                    return e.formattedCount + " ಮತ" + f(e.count, "", "ಗಳು");
                 }),
                 n("e86732e4", "ಆಯ್ಕೆಮಾಡಲಾಗಿದೆ"),
                 n("a35a5b10", "ನಿಮಗೆ ತಿಳಿದಿರುವ ಹಿಂಬಾಲಕರು"),
@@ -9201,7 +9202,7 @@
                     return e.count + " ಅಕ್ಷರ ಮಿತಿಯನ್ನು ನೀವು ಮೀರಿದ್ದೀರಿ";
                 }),
                 n("db11b27f", function (e) {
-                    return e.count + " ಅಕ್ಷರ" + t(e.count, "", "ಗಳು") + " ಉಳಿದಿದೆ";
+                    return e.count + " ಅಕ್ಷರ" + f(e.count, "", "ಗಳು") + " ಉಳಿದಿದೆ";
                 }),
                 n("bb7b821a", "ನೀವು ಪ್ರತಿಕ್ರಿಯಿಸಬಹುದು"),
                 n("fc41217b", function (e) {
@@ -9256,22 +9257,22 @@
                     return e.trendValuePositivePercent + " ರಷ್ಟು ಹೆಚ್ಚು";
                 }),
                 n("e3098e07", function (e) {
-                    return e.minutes + " ನಿಮಿಷ" + t(e.minutes, " ಬಾಕಿ ಇದ", "ಗಳು ಬಾಕಿ ಇವ") + "ೆ ಹಿಂದೆ";
+                    return e.minutes + " ನಿಮಿಷ" + f(e.minutes, " ಬಾಕಿ ಇದ", "ಗಳು ಬಾಕಿ ಇವ") + "ೆ ಹಿಂದೆ";
                 }),
                 n("fea16a51", function (e) {
-                    return e.hours + " ಗಂಟೆ" + t(e.hours, "", "ಗಳು") + " ಹಿಂದೆ";
+                    return e.hours + " ಗಂಟೆ" + f(e.hours, "", "ಗಳು") + " ಹಿಂದೆ";
                 }),
                 n("a4f2d94d", function (e) {
-                    return e.days + " ದಿನ" + t(e.days, "", "ಗಳು") + " ಹಿಂದೆ";
+                    return e.days + " ದಿನ" + f(e.days, "", "ಗಳು") + " ಹಿಂದೆ";
                 }),
                 n("hf9bc787", function (e) {
-                    return e.weeks + " ವಾರ" + t(e.weeks, "", "ಗಳು") + " ಹಿಂದೆ";
+                    return e.weeks + " ವಾರ" + f(e.weeks, "", "ಗಳು") + " ಹಿಂದೆ";
                 }),
                 n("efcd5885", function (e) {
-                    return e.months + " ತಿಂಗಳು" + t(e.months, "", "ಗಳು") + " ಹಿಂದೆ";
+                    return e.months + " ತಿಂಗಳು" + f(e.months, "", "ಗಳು") + " ಹಿಂದೆ";
                 }),
                 n("c37228b5", function (e) {
-                    return e.years + " ವರ್ಷ" + t(e.years, "", "ಗಳು") + " ಹಿಂದೆ";
+                    return e.years + " ವರ್ಷ" + f(e.years, "", "ಗಳು") + " ಹಿಂದೆ";
                 }),
                 n("jf83d092", "ದಿನ"),
                 n("af4abf20", "ತಿಂಗಳು"),
@@ -9291,7 +9292,7 @@
                 n("de540c32", "ಪಾಸ್‌ವರ್ಡ್ ಬಹಿರಂಗಪಡಿಸಿ"),
                 n("b4abfdb4", "ಪಾಸ್‌ವರ್ಡ್ ಅಡಗಿಸಿ"),
                 n("f06ae5d3", function (e) {
-                    return "ಪ್ರಮಾಣಿತ ಪೋಸ್ಟ್‌ಗೆ " + e.standardTweetCount + " ಅಕ್ಷರ" + t(e.standardTweetCount, "", "ಗಳು") + " ಉಳಿದಿದೆ, ಒಟ್ಟು " + e.totalCount + " ಅಕ್ಷರ" + t(e.totalCount, "", "ಗಳು") + " ಉಳಿದಿದೆ";
+                    return "ಪ್ರಮಾಣಿತ ಪೋಸ್ಟ್‌ಗೆ " + e.standardTweetCount + " ಅಕ್ಷರ" + f(e.standardTweetCount, "", "ಗಳು") + " ಉಳಿದಿದೆ, ಒಟ್ಟು " + e.totalCount + " ಅಕ್ಷರ" + f(e.totalCount, "", "ಗಳು") + " ಉಳಿದಿದೆ";
                 }),
                 n("fee0a8bc", "ಉಳಿಸಿ"),
                 n("ae7f7656", "ತೆರವುಗೊಳಿಸಿ"),
@@ -9375,52 +9376,52 @@
                 n("b8c465e2", "ಮರುಪೋಸ್ಟ್ ಮಾಡಿದ್ದಾರೆ"),
                 n("c7a989ce", "ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಲಾಗಿದೆ"),
                 n("b03835c7", function (e) {
-                    return e.replyCount + " ಪ್ರತಿಕ್ರಿಯ" + t(e.replyCount, "ಿಸಿ", "ೆಗಳು");
+                    return e.replyCount + " ಪ್ರತಿಕ್ರಿಯ" + f(e.replyCount, "ಿಸಿ", "ೆಗಳು");
                 }),
                 n("g4a195e7", function (e) {
-                    return e.retweetCount + " ಮರುಪೋಸ್ಟ್" + t(e.retweetCount, "", "‌ಗಳು");
+                    return e.retweetCount + " ಮರುಪೋಸ್ಟ್" + f(e.retweetCount, "", "‌ಗಳು");
                 }),
                 n("e089b42d", function (e) {
-                    return e.likeCount + " ಇಷ್ಟ" + t(e.likeCount, "", "ಗಳು");
+                    return e.likeCount + " ಇಷ್ಟ" + f(e.likeCount, "", "ಗಳು");
                 }),
                 n("e0a8fe39", function (e) {
-                    return e.bookmarkCount + " ಬುಕ್‌ಮಾರ್ಕ್" + t(e.bookmarkCount, "", "‌ಗಳು");
+                    return e.bookmarkCount + " ಬುಕ್‌ಮಾರ್ಕ್" + f(e.bookmarkCount, "", "‌ಗಳು");
                 }),
                 n("c58b2ab7", function (e) {
-                    return e.viewCount + " ವೀಕ್ಷಣೆ" + t(e.viewCount, "", "ಗಳು");
+                    return e.viewCount + " ವೀಕ್ಷಣೆ" + f(e.viewCount, "", "ಗಳು");
                 }),
                 n("f2849136", "ಅನಾಲಿಟಿಕ್ಸ್"),
                 n("f206e970", "ಪೋಸ್ಟ್ ಅನಾಲಿಟಿಕ್ಸ್ ವೀಕ್ಷಿಸಿ"),
                 n("c7073f5b", function (e) {
-                    return e.count + " ವೀಕ್ಷಣೆ" + t(e.count, "", "ಗಳು") + ". ಪೋಸ್ಟ್ ಅನಾಲಿಟಿಕ್ಸ್ ವೀಕ್ಷಿಸಿ";
+                    return e.count + " ವೀಕ್ಷಣೆ" + f(e.count, "", "ಗಳು") + ". ಪೋಸ್ಟ್ ಅನಾಲಿಟಿಕ್ಸ್ ವೀಕ್ಷಿಸಿ";
                 }),
                 n("hf417cf0", "ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳಿಂದ ತೆಗೆದುಹಾಕಿ"),
                 n("febd30ed", function (e) {
-                    return e.count + " ಬುಕ್‌ಮಾರ್ಕ್" + t(e.count, "", "‌ಗಳು") + ". ಬುಕ್‌ಮಾರ್ಕ್";
+                    return e.count + " ಬುಕ್‌ಮಾರ್ಕ್" + f(e.count, "", "‌ಗಳು") + ". ಬುಕ್‌ಮಾರ್ಕ್";
                 }),
                 n("a8dc9587", function (e) {
-                    return e.count + " ಬುಕ್‌ಮಾರ್ಕ್" + t(e.count, "", "‌ಗಳು") + ". ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಲಾಗಿದೆ";
+                    return e.count + " ಬುಕ್‌ಮಾರ್ಕ್" + f(e.count, "", "‌ಗಳು") + ". ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಲಾಗಿದೆ";
                 }),
                 n("d636ebc6", "ಇಷ್ಟಪಡಿ"),
                 n("eb3a8b0c", "ಇಷ್ಟವಿಲ್ಲ"),
                 n("j472ecfc", "ಈ ಪೋಸ್ಟ್ ಅನ್ನು ಇಷ್ಟಪಡಿ"),
                 n("dac92b0d", function (e) {
-                    return e.count + " ಇಷ್ಟ" + t(e.count, "", "ಗಳು") + ". ಇಷ್ಟ";
+                    return e.count + " ಇಷ್ಟ" + f(e.count, "", "ಗಳು") + ". ಇಷ್ಟ";
                 }),
                 n("aa650427", function (e) {
-                    return e.count + " ಇಷ್ಟ" + t(e.count, "", "ಗಳು") + ". ಇಷ್ಟಪಡಲಾಗಿದೆ";
+                    return e.count + " ಇಷ್ಟ" + f(e.count, "", "ಗಳು") + ". ಇಷ್ಟಪಡಲಾಗಿದೆ";
                 }),
                 n("hdf7226a", "ಪ್ರತಿಕ್ರಿಯಿಸಿ"),
                 n("c9940955", function (e) {
-                    return e.count + " ಪ್ರತಿಕ್ರಿಯ" + t(e.count, "ಿಸಿ", "ೆಗಳು") + ". ಪ್ರತಿಕ್ರಿಯೆ";
+                    return e.count + " ಪ್ರತಿಕ್ರಿಯ" + f(e.count, "ಿಸಿ", "ೆಗಳು") + ". ಪ್ರತಿಕ್ರಿಯೆ";
                 }),
                 n("f2919fb8", "ಮರುಪೋಸ್ಟ್ ಮಾಡಿ"),
                 n("fd1e5446", "ಮರುಪೋಸ್ಟ್ ಅನ್ನು ರದ್ದುಗೊಳಿಸಿ"),
                 n("dfad425d", function (e) {
-                    return e.count + " ಮರುಪೋಸ್ಟ್" + t(e.count, "", "‌ಗಳು") + ". ಮರುಪೋಸ್ಟ್";
+                    return e.count + " ಮರುಪೋಸ್ಟ್" + f(e.count, "", "‌ಗಳು") + ". ಮರುಪೋಸ್ಟ್";
                 }),
                 n("a386dc55", function (e) {
-                    return e.count + " ಮರುಪೋಸ್ಟ್" + t(e.count, "", "‌ಗಳು") + ". ಮರು ಪೋಸ್ಟ್ ಮಾಡಲಾಗಿದೆ";
+                    return e.count + " ಮರುಪೋಸ್ಟ್" + f(e.count, "", "‌ಗಳು") + ". ಮರು ಪೋಸ್ಟ್ ಮಾಡಲಾಗಿದೆ";
                 }),
                 n("f65198c2", "ಉಲ್ಲೇಖಗಳನ್ನು ವೀಕ್ಷಿಸಿ"),
                 n("dc63da16", "ಹಂಚು"),
@@ -9446,13 +9447,13 @@
                     return "" + e.formattedCount;
                 }),
                 n("ce44a35c", function (e) {
-                    return "ಚಂದಾದಾರ" + t(e.count, "", "ರು");
+                    return "ಚಂದಾದಾರ" + f(e.count, "", "ರು");
                 }),
                 n("id949f68", function (e) {
                     return "" + e.formattedCount;
                 }),
                 n("hb608cfc", function (e) {
-                    return "ಸಬ್‌ಸ್ಕ್ರಿಪ್ಷನ್" + t(e.count, "", "‌ಗಳು");
+                    return "ಸಬ್‌ಸ್ಕ್ರಿಪ್ಷನ್" + f(e.count, "", "‌ಗಳು");
                 }),
                 n("ef633578", "ಖಾತೆಯನ್ನು ಅಮಾನತುಗೊಳಿಸಲಾಗಿದೆ"),
                 n("a6a3d496", "ಲಿಂಕ್ ಅನ್ನು ಸೇರಿಸಿ"),
@@ -9551,7 +9552,7 @@
                 return e;
             }
             var m = (function (e) {
-                var c, a, n, f, m;
+                var c, a, n, t, m;
                 function g() {
                     return e.apply(this, arguments) || this;
                 }
@@ -9564,7 +9565,7 @@
                         return b.createElement.apply(b, this[this.props.$i18n].reduce(this.templateReducer, [b.Fragment, null]));
                     }),
                     (n = g),
-                    (f = [
+                    (t = [
                         {
                             key: "bb85c49d",
                             get: function () {
@@ -10084,7 +10085,7 @@
                         {
                             key: "a1c39f5b",
                             get: function () {
-                                return ["ನಿರ್ಧಾರವನ್ನು ಮಾಡುತ್ತಿದ್ದಂತೆಯೇ ನಿಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಲಾಗುತ್ತದೆ. ಇದಕ್ಕೆ ಇಷ್ಟು ಕಾಲ ತಗುಲಬಹುದು " + this.props.days + " ದಿನ" + t(this.props.days, "", "ಗಳು") + "."];
+                                return ["ನಿರ್ಧಾರವನ್ನು ಮಾಡುತ್ತಿದ್ದಂತೆಯೇ ನಿಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಲಾಗುತ್ತದೆ. ಇದಕ್ಕೆ ಇಷ್ಟು ಕಾಲ ತಗುಲಬಹುದು " + this.props.days + " ದಿನ" + f(this.props.days, "", "ಗಳು") + "."];
                             },
                         },
                         {
@@ -10570,25 +10571,25 @@
                         {
                             key: "a629c16f",
                             get: function () {
-                                return ["", " " + this.props.discountedPrice + " ಮಾಸಿಕವಾಗಿ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ " + t(this.props.duration, "ಒಂದು", "" + this.props.duration) + " ತಿಂಗಳಿಗಾಗಿ"];
+                                return ["", " " + this.props.discountedPrice + " ಮಾಸಿಕವಾಗಿ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ " + f(this.props.duration, "ಒಂದು", "" + this.props.duration) + " ತಿಂಗಳಿಗಾಗಿ"];
                             },
                         },
                         {
                             key: "c142e70f",
                             get: function () {
-                                return ["", " " + this.props.discountedPrice + " ವಾರ್ಷಿಕವಾಗಿ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ " + t(this.props.duration, "ಒಂದು", "" + this.props.duration) + " ವರ್ಷಕ್ಕಾಗಿ"];
+                                return ["", " " + this.props.discountedPrice + " ವಾರ್ಷಿಕವಾಗಿ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ " + f(this.props.duration, "ಒಂದು", "" + this.props.duration) + " ವರ್ಷಕ್ಕಾಗಿ"];
                             },
                         },
                         {
                             key: "e9dc8a25",
                             get: function () {
-                                return [t(this.props.duration, "ಒಂದು ವರ್ಷ", this.props.duration + " ವರ್ಷಗಳು") + " ಗಾಗಿ ", " "];
+                                return [f(this.props.duration, "ಒಂದು ವರ್ಷ", this.props.duration + " ವರ್ಷಗಳು") + " ಗಾಗಿ ", " "];
                             },
                         },
                         {
                             key: "f8a9cbb7",
                             get: function () {
-                                return [t(this.props.duration, "ಒಂದು ತಿಂ", this.props.duration + " ತಿಂಗಳು") + "ಗಳು ಗಾಗಿ ", " "];
+                                return [f(this.props.duration, "ಒಂದು ತಿಂ", this.props.duration + " ತಿಂಗಳು") + "ಗಳು ಗಾಗಿ ", " "];
                             },
                         },
                         {
@@ -11020,7 +11021,7 @@
                         {
                             key: "b6656851",
                             get: function () {
-                                return ["ಈ ಗುಂಪಿನಲ್ಲಿ ಅವರು" + t(this.props.count, "", "ಗಳು") + " " + this.props.count + " ಇತರೆ " + t(this.props.count, "ವ್ಯಕ್ತಿ", "ಜನರು") + " ಇದ್ದಾರೆ"];
+                                return ["ಈ ಗುಂಪಿನಲ್ಲಿ ಅವರು" + f(this.props.count, "", "ಗಳು") + " " + this.props.count + " ಇತರೆ " + f(this.props.count, "ವ್ಯಕ್ತಿ", "ಜನರು") + " ಇದ್ದಾರೆ"];
                             },
                         },
                         {
@@ -11332,19 +11333,19 @@
                         {
                             key: "eea0a14f",
                             get: function () {
-                                return [this.props.formattedCount + " ಇಷ್ಟ" + t(this.props.count, "", "ಗಳು")];
+                                return [this.props.formattedCount + " ಇಷ್ಟ" + f(this.props.count, "", "ಗಳು")];
                             },
                         },
                         {
                             key: "cca42d0b",
                             get: function () {
-                                return [this.props.formattedCount + " ಫೋಟೋಗಳು ಮತ್ತು ವೀಡಿಯೋಗಳು" + t(this.props.count, ';/"', "")];
+                                return [this.props.formattedCount + " ಫೋಟೋಗಳು ಮತ್ತು ವೀಡಿಯೋಗಳು" + f(this.props.count, ';/"', "")];
                             },
                         },
                         {
                             key: "a0a3adf7",
                             get: function () {
-                                return [this.props.formattedCount + " ಪೋಸ್ಟ್" + t(this.props.count, "", "‌ಗಳು")];
+                                return [this.props.formattedCount + " ಪೋಸ್ಟ್" + f(this.props.count, "", "‌ಗಳು")];
                             },
                         },
                         {
@@ -11872,7 +11873,7 @@
                         {
                             key: "e77dac87",
                             get: function () {
-                                return ["ವಿನಂತಿಸುವವರು ಉಲ್ಲೇಖಿಸಿದ " + this.props.remainingCount + " ಇನ್ನೂ ಪೋಸ್ಟ್" + t(this.props.remainingCount, "", "‌ಗಳು") + " ಅನ್ನು ತೋರಿಸಿ"];
+                                return ["ವಿನಂತಿಸುವವರು ಉಲ್ಲೇಖಿಸಿದ " + this.props.remainingCount + " ಇನ್ನೂ ಪೋಸ್ಟ್" + f(this.props.remainingCount, "", "‌ಗಳು") + " ಅನ್ನು ತೋರಿಸಿ"];
                             },
                         },
                         {
@@ -12904,7 +12905,7 @@
                         {
                             key: "d6b02329",
                             get: function () {
-                                return [this.props.formattedCount + " ಸದಸ್ಯ" + t(this.props.count, "", "ರು")];
+                                return [this.props.formattedCount + " ಸದಸ್ಯ" + f(this.props.count, "", "ರು")];
                             },
                         },
                         {
@@ -13009,12 +13010,12 @@
                                 var e,
                                     c = b.Children.toArray(this.props.children),
                                     a = ((e = this.props.$i18n), u[o[e]] || i);
-                                return function (e, n, t) {
-                                    return e.concat(n, c[a(t)]);
+                                return function (e, n, f) {
+                                    return e.concat(n, c[a(f)]);
                                 };
                             },
                         },
-                    ]) && r(n.prototype, f),
+                    ]) && r(n.prototype, t),
                     m && r(n, m),
                     Object.defineProperty(n, "prototype", { writable: !1 }),
                     g
@@ -13374,4 +13375,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/kn.7a0c906a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/kn.16da288a.js.map

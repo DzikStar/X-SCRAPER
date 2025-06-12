@@ -5,7 +5,7 @@
             e.exports = { queryId: "88Bu08U2ddaVVjKmmXjVYg", operationName: "articleNudgeDomains", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         721879: (e) => {
-            e.exports = { queryId: "pOUUqD-SLt5tuLjKBYZGsA", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "kdUVS11GOq2h4tu5cwSZHA", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         218276: (e) => {
             e.exports = { queryId: "i78YDd0Tza-dV4SYs58kRg", operationName: "BookmarkFoldersSlice", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -14,7 +14,7 @@
             e.exports = { queryId: "4KHZvvNbHNf07bsgnL9gWA", operationName: "bookmarkTweetToFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         549186: (e) => {
-            e.exports = { queryId: "yuPrLB4ze698uVRBz6ayBw", operationName: "Bookmarks", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "ViFW5abLxtdHpwYsHKSuFg", operationName: "Bookmarks", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         155074: (e) => {
             e.exports = { queryId: "83Gg0lfI-47Z3-ZOxyUjiQ", operationName: "ClearGrokConversations", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -38,7 +38,7 @@
             e.exports = { queryId: "a6kPp1cS1Dgbsjhapz1PNw", operationName: "EditBookmarkFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         645513: (e) => {
-            e.exports = { queryId: "AP0IN_JEh62MdIOfmkQK8A", operationName: "GrokConversationItemsByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "NS-xp6AJT5wt_LyRS_UjRA", operationName: "GrokConversationItemsByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         470969: (e) => {
             e.exports = { queryId: "9Hyh5D4-WXLnExZkONSkZg", operationName: "GrokHistory", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -59,7 +59,7 @@
             e.exports = { queryId: "Sr2QEitvnemma5D2NJlA2Q", operationName: "SearchGrokConversations", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         985289: (e) => {
-            e.exports = { queryId: "k7GjpRuvAYhZU8Hyk1uklw", operationName: "GrokShare", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "35pL_F5A2NdP7FuXgHHOuQ", operationName: "GrokShare", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         524816: (e) => {
             e.exports = { queryId: "-5e798p4EVbuhGGFFuw3Tg", operationName: "GrokUnpinConversation", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -73,14 +73,14 @@
         587068: (e) => {
             e.exports = { queryId: "NqLS09LPofalCjVhFolKtA", operationName: "SetGrokPreferences", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        262324: (e, t, o) => {
+        262324: (e, t, a) => {
             "use strict";
-            o.d(t, { Z: () => i });
-            var a,
+            a.d(t, { Z: () => i });
+            var o,
                 r,
                 n = {
                     fragment: {
-                        argumentDefinitions: (a = [
+                        argumentDefinitions: (o = [
                             { defaultValue: null, kind: "LocalArgument", name: "feedback_enum" },
                             { defaultValue: null, kind: "LocalArgument", name: "source" },
                             { defaultValue: null, kind: "LocalArgument", name: "tweet_id" },
@@ -105,62 +105,62 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: a, kind: "Operation", name: "TranslationFeedbackProvideFeedbackMutation", selections: r },
+                    operation: { argumentDefinitions: o, kind: "Operation", name: "TranslationFeedbackProvideFeedbackMutation", selections: r },
                     params: { id: "5sPWsMj6Tl23V6v_0CEUsQ", metadata: {}, name: "TranslationFeedbackProvideFeedbackMutation", operationKind: "mutation", text: null },
                 };
             n.hash = "aa37bac46970b94970a7a8b24894b04e";
             const i = n;
         },
-        19640: (e, t, o) => {
+        19640: (e, t, a) => {
             "use strict";
-            o.d(t, { f: () => a });
-            const a = Object.freeze({ Draft: "Draft", Published: "Published", SoftDeleted: "SoftDeleted" });
+            a.d(t, { f: () => o });
+            const o = Object.freeze({ Draft: "Draft", Published: "Published", SoftDeleted: "SoftDeleted" });
         },
-        337511: (e, t, o) => {
+        337511: (e, t, a) => {
             "use strict";
-            o.d(t, { Z: () => n });
-            var a = o(139343),
-                r = o.n(a);
+            a.d(t, { Z: () => n });
+            var o = a(139343),
+                r = a.n(o);
             const n = ({ apiClient: e, featureSwitches: t }) => ({ fetchArticleDomainsGraphQL: () => e.graphQL(r(), {}).then((e) => e.viewer?.article_nudge_domains) });
         },
-        403911: (e, t, o) => {
+        403911: (e, t, a) => {
             "use strict";
-            o.d(t, { Z: () => C });
-            var a = o(506899),
-                r = o(163889),
-                n = o(414742),
-                i = o(703710);
-            const _ = new a.fK.Entity("bookmarkFolders", {});
-            var s = o(218276),
-                l = o.n(s),
-                d = o(721879),
-                p = o.n(d),
-                c = o(549186),
-                m = o.n(c),
-                b = o(295904),
-                u = o.n(b),
-                w = o(769948),
-                h = o.n(w),
-                g = o(871585),
-                k = o.n(g),
-                f = o(418631),
-                v = o.n(f),
-                y = o(734701),
-                T = o.n(y),
-                q = o(630986),
-                I = o.n(q),
-                x = o(934309);
-            const S = { result: [], entities: {}, slice_info: {} },
-                F = (e, t) => {
-                    const o = t?.bookmark_all_delete,
-                        a = "Done" === o;
-                    return a || (0, r.ZP)("GQL Bookmarks: Failed to delete all bookmarks"), (0, n.jB)(e) || !a;
+            a.d(t, { Z: () => C });
+            var o = a(506899),
+                r = a(163889),
+                n = a(414742),
+                i = a(703710);
+            const _ = new o.fK.Entity("bookmarkFolders", {});
+            var s = a(218276),
+                l = a.n(s),
+                d = a(721879),
+                p = a.n(d),
+                c = a(549186),
+                m = a.n(c),
+                b = a(295904),
+                u = a.n(b),
+                w = a(769948),
+                g = a.n(w),
+                h = a(871585),
+                k = a.n(h),
+                f = a(418631),
+                v = a.n(f),
+                y = a(734701),
+                T = a.n(y),
+                q = a(630986),
+                S = a.n(q),
+                x = a(934309);
+            const F = { result: [], entities: {}, slice_info: {} },
+                I = (e, t) => {
+                    const a = t?.bookmark_all_delete,
+                        o = "Done" === a;
+                    return o || (0, r.ZP)("GQL Bookmarks: Failed to delete all bookmarks"), (0, n.jB)(e) || !o;
                 },
                 L = (0, n.kj)((e) => {
                     const t = e?.viewer?.user_results?.result,
-                        o = "User" === t?.__typename ? t : void 0,
-                        a = o?.bookmark_collections_slice?.items;
-                    return !a;
+                        a = "User" === t?.__typename ? t : void 0,
+                        o = a?.bookmark_collections_slice?.items;
+                    return !o;
                 }, "GQL Bookmark Folders: Failed to render Bookmark Folders timeline"),
                 A = (0, n.kj)((e) => {
                     const t = e?.bookmark_collection_timeline?.timeline;
@@ -175,138 +175,138 @@
                         ),
                     createBookmarkFolder: (t) =>
                         e.graphQL(
-                            h(),
+                            g(),
                             { ...t },
                             (0, n.kj)((e) => !e.bookmark_collection_create, "GQL Bookmark Folders: failed to Create Bookmark Folder"),
                         ),
-                    deleteAll: () => e.graphQL(k(), {}, F).then((e) => e),
+                    deleteAll: () => e.graphQL(k(), {}, I).then((e) => e),
                     deleteBookmarkFolder(t) {
-                        const { bookmarkFolderId: o } = t;
-                        return e.graphQL(v(), { bookmark_collection_id: o });
+                        const { bookmarkFolderId: a } = t;
+                        return e.graphQL(v(), { bookmark_collection_id: a });
                     },
                     editBookmarkFolder(t) {
-                        const { bookmarkFolderId: o, name: a } = t;
-                        return e.graphQL(T(), { bookmark_collection_id: o, name: a });
+                        const { bookmarkFolderId: a, name: o } = t;
+                        return e.graphQL(T(), { bookmark_collection_id: a, name: o });
                     },
                     removeTweetFromBookmarkFolder(t) {
-                        const { bookmarkFolderId: o, tweetId: a } = t;
-                        return e.graphQL(I(), { bookmark_collection_id: o, tweet_id: a });
+                        const { bookmarkFolderId: a, tweetId: o } = t;
+                        return e.graphQL(S(), { bookmark_collection_id: a, tweet_id: o });
                     },
-                    fetchBookmarksTimeline: ({ count: o, cursor: a }) => e.graphQL(m(), { count: o, cursor: a, includePromotedContent: !0, ...(0, i.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || x.cY),
-                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: o, cursor: a }) => e.graphQL(p(), { bookmark_collection_id: o, cursor: a, includePromotedContent: !0, ...(0, i.d)(t) }, A).then((e) => e?.bookmark_collection_timeline?.timeline || x.cY),
+                    fetchBookmarksTimeline: ({ count: a, cursor: o }) => e.graphQL(m(), { count: a, cursor: o, includePromotedContent: !0, ...(0, i.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || x.cY),
+                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: a, cursor: o }) => e.graphQL(p(), { bookmark_collection_id: a, cursor: o, includePromotedContent: !0, ...(0, i.d)(t) }, A).then((e) => e?.bookmark_collection_timeline?.timeline || x.cY),
                     fetchBookmarkFoldersSlice: (t) =>
                         t
                             ? e.graphQL(l(), t, L).then((e) => {
                                   const t = e?.viewer?.user_results?.result,
-                                      o = "User" === t?.__typename ? t : void 0,
-                                      r = o?.bookmark_collections_slice;
+                                      a = "User" === t?.__typename ? t : void 0,
+                                      r = a?.bookmark_collections_slice;
                                   if (r) {
-                                      const { entities: e, result: t } = (0, a.Fv)(r.items, [_]);
+                                      const { entities: e, result: t } = (0, o.Fv)(r.items, [_]);
                                       return { entities: e, result: t, slice_info: r.slice_info };
                                   }
-                                  return S;
+                                  return F;
                               })
-                            : Promise.resolve(S),
+                            : Promise.resolve(F),
                 });
         },
-        6157: (e, t, o) => {
+        6157: (e, t, a) => {
             "use strict";
-            o.d(t, { Z: () => Q });
-            var a = o(468811),
-                r = o.n(a),
-                n = o(163889),
-                i = o(155074),
-                _ = o.n(i),
-                s = o(491156),
-                l = o.n(s),
-                d = o(645513),
-                p = o.n(d),
-                c = o(470969),
-                m = o.n(c),
-                b = o(374709),
-                u = o.n(b),
-                w = o(709401),
-                h = o.n(w),
-                g = o(965508),
-                k = o.n(g),
-                f = o(416024),
-                v = o.n(f),
-                y = o(716442),
-                T = o.n(y),
-                q = o(985289),
-                I = o.n(q),
-                x = o(524816),
-                S = o.n(x),
-                F = o(917665),
-                L = o.n(F),
-                A = o(587068),
-                C = o.n(A);
+            a.d(t, { Z: () => Q });
+            var o = a(468811),
+                r = a.n(o),
+                n = a(163889),
+                i = a(155074),
+                _ = a.n(i),
+                s = a(491156),
+                l = a.n(s),
+                d = a(645513),
+                p = a.n(d),
+                c = a(470969),
+                m = a.n(c),
+                b = a(374709),
+                u = a.n(b),
+                w = a(709401),
+                g = a.n(w),
+                h = a(965508),
+                k = a.n(h),
+                f = a(416024),
+                v = a.n(f),
+                y = a(716442),
+                T = a.n(y),
+                q = a(985289),
+                S = a.n(q),
+                x = a(524816),
+                F = a.n(x),
+                I = a(917665),
+                L = a.n(I),
+                A = a(587068),
+                C = a.n(A);
             function Q({ apiClient: e }) {
                 return {
-                    clearConversations: (t, o) => e.graphQL(_(), {}).then((e) => (e.clear_grok_conversations?.grok_deletion_error?.error_code && (0, n.ZP)("GraphQL clear grok conversations failed."), e)),
-                    setPreferences: ({ grokMode: t, grokModelOptionId: o }) => e.graphQL(C(), { grokMode: t, grokModelOptionId: o }).then((e) => (e.set_grok_preferences?.preference_update_error?.error_code && (0, n.ZP)("GraphQL set grok preferences failed."), e)),
+                    clearConversations: (t, a) => e.graphQL(_(), {}).then((e) => (e.clear_grok_conversations?.grok_deletion_error?.error_code && (0, n.ZP)("GraphQL clear grok conversations failed."), e)),
+                    setPreferences: ({ grokMode: t, grokModelOptionId: a }) => e.graphQL(C(), { grokMode: t, grokModelOptionId: a }).then((e) => (e.set_grok_preferences?.preference_update_error?.error_code && (0, n.ZP)("GraphQL set grok preferences failed."), e)),
                     fetchConversation: ({ restId: t }) => e.graphQL(p(), { restId: t }).then((e) => e),
-                    fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(I(), { grok_share_id: t }).then((e) => e),
+                    fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(S(), { grok_share_id: t }).then((e) => e),
                     fetchGrokHome: () => e.graphQL(u(), {}).then((e) => e),
                     fetchHistory: ({ cursor: t }) => e.graphQL(m(), { cursor: t }).then((e) => e),
                     fetchPinnedConversations: ({ cursor: t }) => e.graphQL(v(), { cursor: t }).then((e) => e),
-                    fetchMediaHistory: ({ cursor: t }) => e.graphQL(h(), { cursor: t }).then((e) => e),
+                    fetchMediaHistory: ({ cursor: t }) => e.graphQL(g(), { cursor: t }).then((e) => e),
                     searchConversations: ({ keyword: t }) => e.graphQL(T(), { keyword: t }).then((e) => (e.grok_conversation_search_timeline?.items ?? []).map((e) => ({ chatItemId: e.chat_item_id, conversation: { id: e.grokConversation?.rest_id }, message: e.chat_item?.message, createdAt: e.chat_item?.created_at_ms, title: e.conversation_title })).filter((e) => e.chatItemId && e.conversation.id)),
-                    deleteMessage: ({ chat_item_id: t, conversation_id: o }) => e.graphQL(l(), { conversation_id: o, chat_item_id: t }).then((e) => e),
-                    logUserEventGrok: ({ action_type: t, group_id: o, object_id: a }) => e.graphQL(L(), { group_id: o, object_id: a, action_type: t }).then((e) => e),
+                    deleteMessage: ({ chat_item_id: t, conversation_id: a }) => e.graphQL(l(), { conversation_id: a, chat_item_id: t }).then((e) => e),
+                    logUserEventGrok: ({ action_type: t, group_id: a, object_id: o }) => e.graphQL(L(), { group_id: a, object_id: o, action_type: t }).then((e) => e),
                     grokPinConversation: ({ conversationId: t }) => e.graphQL(k(), { conversationId: t }).then((e) => e),
-                    grokUnpinConversation: ({ conversationId: t }) => e.graphQL(S(), { conversationId: t }).then((e) => e),
-                    uploadFile: ({ abortController: t, file: o }) => {
-                        const a = new FormData();
-                        return a.append("image", o), e.postForm("grok/attachment", a, {}, { "x-xai-request-id": r().v4() }, void 0, t.signal).then((e) => e.map((e) => ({ ...e, url: e.url ?? (void 0 !== e.mediaId ? `https://api.x.com/2/grok/attachment.json?mediaId=${e.mediaId}` : void 0) })));
+                    grokUnpinConversation: ({ conversationId: t }) => e.graphQL(F(), { conversationId: t }).then((e) => e),
+                    uploadFile: ({ abortController: t, file: a }) => {
+                        const o = new FormData();
+                        return o.append("image", a), e.postForm("grok/attachment", o, {}, { "x-xai-request-id": r().v4() }, void 0, t.signal).then((e) => e.map((e) => ({ ...e, url: e.url ?? (void 0 !== e.mediaId ? `https://api.x.com/2/grok/attachment.json?mediaId=${e.mediaId}` : void 0) })));
                     },
                 };
             }
         },
         449633: (e) => {
-            e.exports = function (e, t, o, a) {
-                function r(e, t, o, a) {
-                    return e < 20 ? (t & o) | (~t & a) : e < 40 ? t ^ o ^ a : e < 60 ? (t & o) | (t & a) | (o & a) : t ^ o ^ a;
+            e.exports = function (e, t, a, o) {
+                function r(e, t, a, o) {
+                    return e < 20 ? (t & a) | (~t & o) : e < 40 ? t ^ a ^ o : e < 60 ? (t & a) | (t & o) | (a & o) : t ^ a ^ o;
                 }
                 function n(e) {
                     return e < 20 ? 1518500249 : e < 40 ? 1859775393 : e < 60 ? -1894007588 : -899497514;
                 }
                 function i(e, t) {
-                    var o = (65535 & e) + (65535 & t);
-                    return (((e >> 16) + (t >> 16) + (o >> 16)) << 16) | (65535 & o);
+                    var a = (65535 & e) + (65535 & t);
+                    return (((e >> 16) + (t >> 16) + (a >> 16)) << 16) | (65535 & a);
                 }
                 function _(e, t) {
                     return (e << t) | (e >>> (32 - t));
                 }
                 function s(e, t) {
                     (e[t >> 5] |= 128 << (24 - (t % 32))), (e[15 + (((t + 64) >> 9) << 4)] = t);
-                    for (var o = [80], a = 1732584193, s = -271733879, l = -1732584194, d = 271733878, p = -1009589776, c = 0; c < e.length; c += 16) {
-                        for (var m = a, b = s, u = l, w = d, h = p, g = 0; g < 80; g++) {
-                            o[g] = g < 16 ? e[c + g] : _(o[g - 3] ^ o[g - 8] ^ o[g - 14] ^ o[g - 16], 1);
-                            var k = i(i(_(a, 5), r(g, s, l, d)), i(i(p, o[g]), n(g)));
-                            (p = d), (d = l), (l = _(s, 30)), (s = a), (a = k);
+                    for (var a = [80], o = 1732584193, s = -271733879, l = -1732584194, d = 271733878, p = -1009589776, c = 0; c < e.length; c += 16) {
+                        for (var m = o, b = s, u = l, w = d, g = p, h = 0; h < 80; h++) {
+                            a[h] = h < 16 ? e[c + h] : _(a[h - 3] ^ a[h - 8] ^ a[h - 14] ^ a[h - 16], 1);
+                            var k = i(i(_(o, 5), r(h, s, l, d)), i(i(p, a[h]), n(h)));
+                            (p = d), (d = l), (l = _(s, 30)), (s = o), (o = k);
                         }
-                        (a = i(a, m)), (s = i(s, b)), (l = i(l, u)), (d = i(d, w)), (p = i(p, h));
+                        (o = i(o, m)), (s = i(s, b)), (l = i(l, u)), (d = i(d, w)), (p = i(p, g));
                     }
-                    return [a, s, l, d, p];
+                    return [o, s, l, d, p];
                 }
                 function l(e) {
-                    for (var t = [], o = (1 << a) - 1, r = 0; r < e.length * a; r += a) t[r >> 5] |= (e.charCodeAt(r / 8) & o) << (32 - a - (r % 32));
+                    for (var t = [], a = (1 << o) - 1, r = 0; r < e.length * o; r += o) t[r >> 5] |= (e.charCodeAt(r / 8) & a) << (32 - o - (r % 32));
                     return t;
                 }
                 return (
-                    o || (o = "="),
-                    a || (a = 8),
+                    a || (a = "="),
+                    o || (o = 8),
                     (function (e, t) {
                         return (function (e) {
-                            for (var t = "", a = 0; a < 4 * e.length; a += 3) for (var r = (((e[a >> 2] >> (8 * (3 - (a % 4)))) & 255) << 16) | (((e[(a + 1) >> 2] >> (8 * (3 - ((a + 1) % 4)))) & 255) << 8) | ((e[(a + 2) >> 2] >> (8 * (3 - ((a + 2) % 4)))) & 255), n = 0; n < 4; n++) 8 * a + 6 * n > 32 * e.length ? (t += o) : (t += "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".charAt((r >> (6 * (3 - n))) & 63));
+                            for (var t = "", o = 0; o < 4 * e.length; o += 3) for (var r = (((e[o >> 2] >> (8 * (3 - (o % 4)))) & 255) << 16) | (((e[(o + 1) >> 2] >> (8 * (3 - ((o + 1) % 4)))) & 255) << 8) | ((e[(o + 2) >> 2] >> (8 * (3 - ((o + 2) % 4)))) & 255), n = 0; n < 4; n++) 8 * o + 6 * n > 32 * e.length ? (t += a) : (t += "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".charAt((r >> (6 * (3 - n))) & 63));
                             return t;
                         })(
                             (function (e, t) {
-                                var o = l(e);
-                                o.length > 16 && (o = s(o, e.length * a));
-                                for (var r = [16], n = [16], i = 0; i < 16; i++) (r[i] = 909522486 ^ o[i]), (n[i] = 1549556828 ^ o[i]);
-                                var _ = s(r.concat(l(t)), 512 + t.length * a);
+                                var a = l(e);
+                                a.length > 16 && (a = s(a, e.length * o));
+                                for (var r = [16], n = [16], i = 0; i < 16; i++) (r[i] = 909522486 ^ a[i]), (n[i] = 1549556828 ^ a[i]);
+                                var _ = s(r.concat(l(t)), 512 + t.length * o);
                                 return s(n.concat(_), 672);
                             })(e, t),
                         );
@@ -314,21 +314,21 @@
                 );
             };
         },
-        900664: (e, t, o) => {
+        900664: (e, t, a) => {
             "use strict";
-            o.d(t, { Z: () => r });
-            var a = (e) => {
+            a.d(t, { Z: () => r });
+            var o = (e) => {
                 "vibrate" in window.navigator && window.navigator.vibrate(e);
             };
             const r = {
                 cancel() {
-                    a(0);
+                    o(0);
                 },
                 vibrate(e) {
-                    void 0 === e && (e = 400), a(e);
+                    void 0 === e && (e = 400), o(e);
                 },
             };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044.58303bca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044.df42a59a.js.map

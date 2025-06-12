@@ -5441,8 +5441,8 @@
                 t("i8cae552", "Durch deine Bewertung trägst du dazu bei, die Qualität der kollektiven Anmerkungen zu sichern."),
                 t("hd43a218", "Du hast dein Tageslimit für verfasste Anmerkungen erreicht"),
                 t("aaba8ed2", "Wir möchten die Qualität der Anmerkungen auf einem hohen Niveau halten und Spam vorbeugen. Deshalb können Mitwirkende pro Tag nur eine bestimmte Anzahl von Anmerkungen verfassen. Wie viele das sind, hängt von ihrem Einfluss durch verfasste Anmerkungen ab. Bitte versuche es später erneut."),
-                t("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                t("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                t("a67ed4d6", "Du hast vorerst das Limit für Anmerkungen zu diesem/dieser Autor*in erreicht"),
+                t("ic484166", "Wir möchten die Qualität der Anmerkungen auf einem hohen Niveau halten und Spam vorbeugen. Deshalb kannst du pro vorgegebenem Zeitraum nur eine bestimmte Anzahl von Anmerkungen zu einem spezifischen Post-Autoren oder einer spezifischen Post-Autorin verfassen. Wie viele das sind, hängt davon ab, als wie hilfreich deine Anmerkungen zu diesem/dieser Autor*in in der Vergangenheit bewertet wurden. Bitte versuche es später erneut."),
                 t("b98f077c", "Informationen zur Bitte um eine Anmerkung"),
                 t("ee691104", "Um Kollektive Anmerkung zu diesem Post bitten"),
                 t("f8cbdf02", "Meinst du, dass dieser Post potenziell irreführend ist? Dann bitte um eine Kollektive Anmerkung."),
@@ -7237,7 +7237,7 @@
                 t("h257d4aa", "Post auswählen, der gesponsert werden soll"),
                 t("e9334fe6", "Daten werden alle paar Minuten aktualisiert"),
                 t("a6d7b1d0", "Basierend auf internen Daten von X"),
-                t("h71a00e6", "You’re saving time with ad-free"),
+                t("h71a00e6", "Ohne Werbung sparst du Zeit"),
                 t("f6c50ec0", "Dein werbefreier Probezeitraum ist beendet"),
                 t("e1d1fbca", "Nicht gesehen:"),
                 t("a82d7abd", function (e) {
@@ -8302,6 +8302,7 @@
                 t("e5e6479e", "Sende uns eine E-Mail mit dem Nutzernamen deiner Organisation und den Details deiner Anfrage, wenn du schnelleren Support erhalten möchtest."),
                 t("ica8392a", "Wenn wir deine Anfrage erhalten haben, prüfen und priorisieren wir sie in der Reihenfolge des Eingangs."),
                 t("ed37e36e", "Wichtig: Wenn du den Nutzernamen deiner Organisation nicht angibst oder eine private E-Mail-Adresse verwendest, kann das zu Verzögerungen bei der Bearbeitung deiner Anfrage führen."),
+                t("h7e1c146", "Delegate accounts are not currently supported."),
                 t("eb0d4fe2", "Spalte erstellen"),
                 t("e93d2f8a", "Passe deine Nutzung an, indem du verschiedene Spalten hinzufügst, z. B.:"),
                 t("e8203d1e", "Suchanfragen"),
@@ -8908,9 +8909,9 @@
                 t("b0b22805", function (e) {
                     return e.advertiserName + " besuchen";
                 }),
-                t("c67e71aa", "Jetzt ansehen"),
-                t("a6ada13e", "Jetzt kaufen");
-            t("j0f12222", "Mehr anzeigen"),
+                t("c67e71aa", "Jetzt ansehen");
+            t("a6ada13e", "Jetzt kaufen"),
+                t("j0f12222", "Mehr anzeigen"),
                 t("f569f7c8", "Zu Website wechseln"),
                 t("j0c6772a", "Website besuchen"),
                 t("f73003aa", "Video wird nach der Anzeige abgespielt"),
@@ -13375,4 +13376,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.482f5fea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.4d304e6a.js.map

@@ -5441,8 +5441,8 @@
                 t("i8cae552", "Genom att ange en bedömning bidrar du till att hålla upp kvaliteten på Gruppanmärkningar."),
                 t("hd43a218", "Du har uppnått gränsen för antalet anteckningar du får skriva i dag"),
                 t("aaba8ed2", "För att hålla kvaliteten på anmärkningar uppe och förhindra spam finns det en gräns för antalet anteckningar som medarbetare får skriva varje dag. Antalet beror på vilken inverkan det de skriver har. Försök igen senare."),
-                t("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                t("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                t("a67ed4d6", "Du har nått gränsen för att lägga till anmärkningar om den här upphovsmannens inlägg för närvarande"),
+                t("ic484166", "För att kvaliteten på anmärkningen hög och undvika spam finns det en gräns för hur många anmärkningar man kan skriva om en vissa upphovsman till inlägg under en given period. Gränsen beror på hur hjälpsamma folk har tyckt att personens tidigare anmärkningar har varit om upphovsmannen. Försök igen senare."),
                 t("b98f077c", "Information om att begära en anmärkning"),
                 t("ee691104", "Begär en gruppanmärkning om detta inlägg"),
                 t("f8cbdf02", "Tycker du att detta inlägg är vilseledande? Begär en gruppanmärkning."),
@@ -7237,7 +7237,7 @@
                 t("h257d4aa", "Välj ett inlägg att marknadsföra"),
                 t("e9334fe6", "Data uppdateras med några minuters mellanrum"),
                 t("a6d7b1d0", "Baserat på interna data från X"),
-                t("h71a00e6", "You’re saving time with ad-free"),
+                t("h71a00e6", "Du sparar tid genom att vara annonsfri"),
                 t("f6c50ec0", "Din annonsfria testperiod är över"),
                 t("e1d1fbca", "Du har undvikit"),
                 t("a82d7abd", function (e) {
@@ -8302,6 +8302,7 @@
                 t("e5e6479e", "Mejla oss organisationens användarnamn och detaljer om din fråga så får du hjälp snarast möjligt."),
                 t("ica8392a", "När vi får din begäran granskar vi och prioriterar den i tur och ordning."),
                 t("ed37e36e", "Viktigt! Om din organisations användarnamn saknas eller om du använder din egen e-postadress kan förseningar uppstå med hanteringen av begäran."),
+                t("h7e1c146", "Delegate accounts are not currently supported."),
                 t("eb0d4fe2", "Skapa en kolumn"),
                 t("e93d2f8a", "Anpassa gränssnittet genom att lägga till kolumner av olika slag, till exempel dessa:"),
                 t("e8203d1e", "Sökningar"),
@@ -8908,9 +8909,9 @@
                 t("b0b22805", function (e) {
                     return "Besök " + e.advertiserName;
                 }),
-                t("c67e71aa", "Titta nu"),
-                t("a6ada13e", "Handla nu");
-            t("j0f12222", "Se mer"),
+                t("c67e71aa", "Titta nu");
+            t("a6ada13e", "Handla nu"),
+                t("j0f12222", "Se mer"),
                 t("f569f7c8", "Besök webbplatsen"),
                 t("j0c6772a", "Besök webbplatsen"),
                 t("f73003aa", "Videon spelas efter annonsen"),
@@ -13362,4 +13363,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.abf182ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.b20e12ba.js.map

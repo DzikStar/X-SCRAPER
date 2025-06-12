@@ -5448,8 +5448,8 @@
                 t("i8cae552", "Prin evaluare ne vei ajuta să păstrăm Notele Comunității la un nivel calitativ ridicat."),
                 t("hd43a218", "Ai atins limita zilnică pentru scrisul de note"),
                 t("aaba8ed2", "Pentru a menține înalta calitate a notelor și a preveni spamul, există o limită pentru numărul de note pe care contributorii le pot scrie zilnic, în funcție de Impactul scrierii acestora. Încearcă din nou mai târziu."),
-                t("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                t("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                t("a67ed4d6", "Ai atins limita pentru adăugarea de note la postările acestui autor"),
+                t("ic484166", "Pentru a menține calitatea ridicată a notelor și a preveni spamul, există o limită pentru numărul de note care se pot scrie despre un autor de postări, într-o anumită perioadă. Limita se bazează de pe cât de utile au fost considerate notele anterioare ale persoanei respective asupra autorului. Încearcă din nou mai târziu."),
                 t("b98f077c", "Cere informații despre Notă"),
                 t("ee691104", "Cere o Notă a Comunității în legătură cu această postare"),
                 t("f8cbdf02", "Crezi că această postare poate fi înșelătoare? Solicită o Notă a Comunității."),
@@ -7244,7 +7244,7 @@
                 t("h257d4aa", "Selectează o postare pe care să o promovezi"),
                 t("e9334fe6", "Actualizări ale datelor la fiecare câteva minute"),
                 t("a6d7b1d0", "Pe baza datelor interne X"),
-                t("h71a00e6", "You’re saving time with ad-free"),
+                t("h71a00e6", "Economisești timp nevizualizând reclame"),
                 t("f6c50ec0", "Perioada de încercare fără reclame s-a încheiat"),
                 t("e1d1fbca", "Ai evitat"),
                 t("a82d7abd", function (e) {
@@ -8309,6 +8309,7 @@
                 t("e5e6479e", "Pentru a primi asistență cât mai rapid, trimite-ne un e-mail cu identificatorul organizației și detaliile cererii tale."),
                 t("ica8392a", "După ce primim cererea, o vom revizui și prioritiza în ordinea primirii."),
                 t("ed37e36e", "Important: Lipsa identificatorului organizației sau folosirea unui e-mail personal poate cauza întârzieri de procesare a cererii tale."),
+                t("h7e1c146", "Delegate accounts are not currently supported."),
                 t("eb0d4fe2", "Creează o coloană"),
                 t("e93d2f8a", "Personalizează-ți experiența prin adăugarea mai multor coloane, cum ar fi:"),
                 t("e8203d1e", "Căutări"),
@@ -8915,9 +8916,9 @@
                 t("b0b22805", function (e) {
                     return "Vizitează " + e.advertiserName;
                 }),
-                t("c67e71aa", "Urmărește acum"),
-                t("a6ada13e", "Cumpără acum");
-            t("j0f12222", "Vezi mai multe"),
+                t("c67e71aa", "Urmărește acum");
+            t("a6ada13e", "Cumpără acum"),
+                t("j0f12222", "Vezi mai multe"),
                 t("f569f7c8", "Accesează site-ul"),
                 t("j0c6772a", "Vizitează site-ul"),
                 t("f73003aa", "Videoclipul se va reda după reclamă"),
@@ -13371,4 +13372,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.028f1b6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.22a19a6a.js.map

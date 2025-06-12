@@ -5,7 +5,7 @@
             e.exports = { queryId: "imr0xefZmILHTgb6-9pe3g", operationName: "ActionTrend", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         572524: (e) => {
-            e.exports = { queryId: "DAF8KdsDgPqhuRe1G5Nxgw", operationName: "AiTrendByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "_w_r-4r5HmexfYoVEhuGnw", operationName: "AiTrendByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         64129: (e) => {
             e.exports = { queryId: "3BZlCEmD645zQ-MpJM19CA", operationName: "ReportTrend", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -162,7 +162,7 @@
         },
         219770: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => V });
+            n.d(t, { Z: () => M });
             n(136728);
             var i = n(202784),
                 a = n(325686),
@@ -232,10 +232,10 @@
                 Z = n(883069),
                 x = n(148843);
             const q = d().i2209530,
-                D = d().gde7b6b0,
-                N = (e) => {
+                N = d().gde7b6b0,
+                D = (e) => {
                     const { isSaved: t, trendId: n } = e,
-                        a = t ? D : q,
+                        a = t ? N : q,
                         r = (0, y.I0)(),
                         o = t ? i.createElement(A.default, { style: L.button }) : i.createElement(Z.default, { style: L.button });
                     return i.createElement(s.ZP, {
@@ -250,19 +250,19 @@
                     });
                 },
                 L = l.default.create((e) => ({ button: { marginEnd: e.spaces.space4, color: e.colors.text } })),
-                F = i.memo(N);
-            var U = n(688715),
+                U = i.memo(D);
+            var F = n(688715),
                 O = n(907552);
-            const R = { page: "trending_event_timeline", section: "trending_event_header" },
-                B = l.default.create((e) => ({ button: { marginEnd: e.spaces.space8 } })),
+            const B = { page: "trending_event_timeline", section: "trending_event_header" },
+                R = l.default.create((e) => ({ button: { marginEnd: e.spaces.space8 } })),
                 G = (e) => {
                     const { hashtag: t, id: n } = e,
-                        r = (0, U.ju)(`https://x.com/i/trending/${n}`);
-                    return i.createElement(a.Z, { style: B.button }, i.createElement(O.ZP, { scribeNamespace: R, shareText: t, url: r }));
+                        r = (0, F.ju)(`https://x.com/i/trending/${n}`);
+                    return i.createElement(a.Z, { style: R.button }, i.createElement(O.ZP, { scribeNamespace: B, shareText: t, url: r }));
                 },
                 z = { page: "trending_event_timeline", section: "trending_event_header", element: "contribute_to_birdwatch" },
                 Y = d().a9042b6c,
-                M = (e) => {
+                V = (e) => {
                     const t = (0, b.z)(),
                         { additionalActions: n, communityNoteUrl: l, id: c, isSaved: P } = e,
                         v = (0, r.useHistory)(),
@@ -295,9 +295,9 @@
                                 e
                             );
                         };
-                    return i.createElement(a.Z, { style: H.headerRoot }, i.createElement(F, { isSaved: P, trendId: c }), i.createElement(C, { trendId: c }), i.createElement(G, { id: c }), i.createElement(s.ZP, { icon: i.createElement(m.default, { style: H.button }), renderMenu: (e) => i.createElement(o.Z, { items: T(), onCloseRequested: e, shouldCloseOnClick: !0 }), size: "medium", style: H.button, type: "onMediaText" }));
+                    return i.createElement(a.Z, { style: H.headerRoot }, i.createElement(U, { isSaved: P, trendId: c }), i.createElement(C, { trendId: c }), i.createElement(G, { id: c }), i.createElement(s.ZP, { icon: i.createElement(m.default, { style: H.button }), renderMenu: (e) => i.createElement(o.Z, { items: T(), onCloseRequested: e, shouldCloseOnClick: !0 }), size: "medium", style: H.button, type: "onMediaText" }));
                 },
-                V = i.memo(M),
+                M = i.memo(V),
                 H = l.default.create((e) => ({ root: { flexDirection: "row", end: -e.spacesPx.space2 }, headerRoot: { flexDirection: "row" }, button: { marginEnd: e.spaces.space4, color: e.colors.text } }));
         },
         208560: (e, t, n) => {
@@ -780,4 +780,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-9f4db315.aeebcf5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-9f4db315.e549730a.js.map

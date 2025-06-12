@@ -5440,8 +5440,8 @@
                 n("i8cae552", "평가해 주시면 그룹 노트의 품질을 높게 유지하는 데 도움이 됩니다."),
                 n("hd43a218", "일일 노트 작성 한도에 도달했습니다"),
                 n("aaba8ed2", "노트 품질을 높게 유지하고 스팸을 방지하기 위해 참여자가 하루에 작성할 수 있는 노트 수는 참여자의 작성 영향력에 따라 제한됩니다. 나중에 다시 시도해 주세요."),
-                n("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                n("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                n("a67ed4d6", "현재 이 작성자의 게시물에 노트를 추가할 수 있는 한도를 초과했습니다"),
+                n("ic484166", "노트 품질을 유지하고 스팸을 방지하기 위한 조치로, 사용자는 특정 게시물의 작성자에 대해 일정 기간 동안 제한된 수의 노트만 작성할 수 있습니다. 이 제한은 해당 작성자가 과거에 받은 노트가 다른 사용자들로부터 얼마나 유용하다고 평가되었는지에 따라 결정됩니다. 나중에 다시 시도해 주세요."),
                 n("b98f077c", "노트 정보 요청하기"),
                 n("ee691104", "이 게시물에 대해 그룹 노트를 요청하세요"),
                 n("f8cbdf02", "이 게시물이 오해의 소지가 있다고 생각되나요? 그룹 노트를 요청하세요."),
@@ -7236,7 +7236,7 @@
                 n("h257d4aa", "프로모션할 게시물을 선택하세요"),
                 n("e9334fe6", "데이터는 몇 분마다 업데이트됩니다"),
                 n("a6d7b1d0", "X 내부 데이터 기반"),
-                n("h71a00e6", "You’re saving time with ad-free"),
+                n("h71a00e6", "광고를 없애고 시간을 절약하고 있습니다"),
                 n("f6c50ec0", "광고 안 보기 무료 체험 기간 종료"),
                 n("e1d1fbca", "표시되지 않은 광고 수"),
                 n("a82d7abd", function (e) {
@@ -8301,6 +8301,7 @@
                 n("e5e6479e", "보다 신속하게 지원을 받으려면 조직의 사용자 아이디와 문의 내용을 포함한 이메일을 보내주세요."),
                 n("ica8392a", "요청이 접수되면 접수 순서에 따라 요청을 검토하고 우선순위를 정합니다."),
                 n("ed37e36e", "중요: 조직의 사용자 아이디를 누락하거나 개인 이메일을 사용하면 요청 처리가지연될 수 있습니다."),
+                n("h7e1c146", "Delegate accounts are not currently supported."),
                 n("eb0d4fe2", "열 만들기"),
                 n("e93d2f8a", "다음과 같은 다양한 열을 추가해 덱 환경을 맞춤 설정하세요"),
                 n("e8203d1e", "검색어"),
@@ -8907,9 +8908,9 @@
                 n("b0b22805", function (e) {
                     return e.advertiserName + " 방문하기";
                 }),
-                n("c67e71aa", "지금 시청하기"),
-                n("a6ada13e", "지금 쇼핑하기");
-            n("j0f12222", "더 보기"),
+                n("c67e71aa", "지금 시청하기");
+            n("a6ada13e", "지금 쇼핑하기"),
+                n("j0f12222", "더 보기"),
                 n("f569f7c8", "웹사이트로 이동"),
                 n("j0c6772a", "웹사이트 방문하기"),
                 n("f73003aa", "광고 후 동영상이 재생됩니다"),
@@ -13376,4 +13377,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.dbb7ddda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.c183918a.js.map

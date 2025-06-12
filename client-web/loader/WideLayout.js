@@ -2,7 +2,7 @@
     ["loader.WideLayout"],
     {
         801301: (e) => {
-            e.exports = { queryId: "apoLb8lvGh-n59pXrJY9aQ", operationName: "SidebarUserRecommendations", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "IWdZXQ2Hdh_gprXkyn58ug", operationName: "SidebarUserRecommendations", operationType: "query", metadata: { featureSwitches: ["payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         616753: (e, t, n) => {
             "use strict";
@@ -55,7 +55,7 @@
                     const { featureSwitches: t } = (0, c.QZ)(),
                         { onBlock: n, onClose: a, onMute: i, onRemoveFollower: h, onReportUser: w, onShare: E, onUnblock: I, onUnmute: S, user: D } = e,
                         P = [],
-                        T = (t, n) => {
+                        Z = (t, n) => {
                             const { confirm: s, onClose: r } = e;
                             if (t) {
                                 const { label: e, ...o } = t;
@@ -93,13 +93,13 @@
                         P.push({
                             ...(0, p.l)({
                                 removeFollowerAction: (e) => {
-                                    T(e, h);
+                                    Z(e, h);
                                 },
                                 user: D,
                             }),
                             testID: y,
                         }),
-                        P.push((0, u.op)({ blockAction: (e) => T(e, n), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: g, unblockAction: (e) => T(e, I), user: D })),
+                        P.push((0, u.op)({ blockAction: (e) => Z(e, n), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: g, unblockAction: (e) => Z(e, I), user: D })),
                         P.push({
                             Icon: l.default,
                             onClick: () => {
@@ -108,8 +108,8 @@
                             testID: _,
                             text: k({ screenName: D.screen_name }),
                         });
-                    const Z = P.map(({ Icon: e, onClick: t, testID: n, text: s }) => ({ text: s, onClick: t, Icon: e, testID: n }));
-                    return s.createElement(o.Z, { items: Z, onCloseRequested: a });
+                    const T = P.map(({ Icon: e, onClick: t, testID: n, text: s }) => ({ text: s, onClick: t, Icon: e, testID: n }));
+                    return s.createElement(o.Z, { items: T, onCloseRequested: a });
                 });
         },
         864479: (e, t, n) => {
@@ -548,8 +548,8 @@
                 S = n(399398),
                 D = n(822502),
                 P = n(910113),
-                T = n(535338),
-                Z = n(736063);
+                Z = n(535338),
+                T = n(736063);
             const L = E().fb15ec28,
                 C = E().ece910f0,
                 F = E().jd08bc14,
@@ -573,7 +573,7 @@
                 },
                 x = v.default.create((e) => ({ content: { paddingHorizontal: e.spaces.space16, paddingBottom: e.spaces.space16, gap: e.spaces.space16 }, bulletRow: { flexDirection: "row", gap: e.spaces.space4, alignItems: "center" } })),
                 N = ({ isSidebarModule: e }) => {
-                    const t = (0, T.p)(U, {}),
+                    const t = (0, Z.p)(U, {}),
                         n = t?.viewer_v2.user_results.result.matching_profile,
                         s = t?.viewer_v2.user_results.result.job_recommendations_results;
                     if (!t || (n?.consented_at && !s?.length)) return null;
@@ -593,7 +593,7 @@
                     );
                 },
                 K = { context: "JobRecommendationsModule" },
-                H = (e) => m.createElement(Z.H, { errorConfig: K }, m.createElement(N, e));
+                H = (e) => m.createElement(T.H, { errorConfig: K }, m.createElement(N, e));
         },
         62857: (e, t, n) => {
             "use strict";
@@ -811,8 +811,8 @@
                         l = n.length > 0;
                     return s.createElement(r.Z, { "aria-label": I, role: "complementary" }, s.createElement(d.Z, { text: o ? S : I }), s.createElement(u.Z, { displayMode: p.Z.UserCompact, userIds: n }), a && l && s.createElement(E, { fallbackSlotId: "div-gpt-ad-1740520505566-0", primarySlotId: "div-gpt-ad-1738265577622-0" }), l && s.createElement(c.Z, { link: i, text: D, withBottomRadius: !0, withDarkerInteractiveBackground: e }));
                 });
-            var T = n(967977),
-                Z = n(942893),
+            var Z = n(967977),
+                T = n(942893),
                 L = n(312771),
                 C = n(71620),
                 F = n(973572),
@@ -849,11 +849,11 @@
                         }),
                         (this._handleImpression = (e) => {
                             const { analytics: t, users: n } = this.props,
-                                s = e && e.map((e) => ({ ...Z.Z.forUser(e.user_id), suggestion_details: { source_data: e.token } }));
+                                s = e && e.map((e) => ({ ...T.Z.forUser(e.user_id), suggestion_details: { source_data: e.token } }));
                             t.scribe({ ...B, data: { items: s } }),
                                 n &&
                                     n.map((e) => {
-                                        const n = e ? [Z.Z.forUser(e.id_str)] : [];
+                                        const n = e ? [T.Z.forUser(e.id_str)] : [];
                                         e.following ? t.scribe({ element: "followed_user", action: "impression", data: { items: n } }) : e.muting ? t.scribe({ element: "muted_user", action: "impression", data: { items: n } }) : e.blocking && t.scribe({ element: "blocked_user", action: "impression", data: { items: n } });
                                     });
                         });
@@ -872,7 +872,7 @@
                 }
                 _fetchRecommendations(e) {
                     const { createLocalApiErrorHandler: t, fetchRecommendationsIfNeeded: n, userId: s } = e;
-                    n({ limit: 3, displayLocation: R, similarToUserId: s }).catch(t(T.C));
+                    n({ limit: 3, displayLocation: R, similarToUserId: s }).catch(t(Z.C));
                 }
                 _hasEmptySuggestionList() {
                     const { fetchStatus: e, recommendations: t } = this.props;
@@ -916,7 +916,7 @@
         },
         376293: (e, t, n) => {
             "use strict";
-            n.d(t, { $f: () => I, KV: () => y, LI: () => Z, SC: () => E, Vt: () => k, ed: () => L, op: () => S });
+            n.d(t, { $f: () => I, KV: () => y, LI: () => T, SC: () => E, Vt: () => k, ed: () => L, op: () => S });
             var s = n(202784),
                 r = n(190286),
                 o = n(111677),
@@ -942,7 +942,7 @@
                 S = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: n, source: s, testID: r, unblockAction: o, unblockSubtext: a, user: i }) => {
                     let l,
                         u = d.Z;
-                    const m = Z(i, n);
+                    const m = T(i, n);
                     switch (s) {
                         case E.PROFILE:
                         case E.LIST_DETAIL:
@@ -959,12 +959,12 @@
                                     i.blocking ? o(m) : e(m);
                                 });
                     }
-                    return { confirmation: m, onClick: u, testID: r, shortcutKey: l, Icon: D(i.blocking), text: T(i), subText: P({ user: i, blockSubtext: t, unblockSubtext: a }) };
+                    return { confirmation: m, onClick: u, testID: r, shortcutKey: l, Icon: D(i.blocking), text: Z(i), subText: P({ user: i, blockSubtext: t, unblockSubtext: a }) };
                 },
                 D = (e) => (e ? l.default : i.default),
                 P = ({ blockSubtext: e, unblockSubtext: t, user: n }) => (!n.blocking && e ? e(n.screen_name) : n.blocking ? t : void 0),
-                T = (e) => (e.blocking ? b({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
-                Z = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: _({ screenName: e }), label: k, text: t ? w : v }))(e.screen_name, t) : I(e.screen_name, t)),
+                Z = (e) => (e.blocking ? b({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
+                T = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: _({ screenName: e }), label: k, text: t ? w : v }))(e.screen_name, t) : I(e.screen_name, t)),
                 L = ({ confirmation: e, handleConfirm: t, onClose: n }) => {
                     const { confirmButtonType: o, headline: a, label: i, text: l } = e;
                     return s.createElement(r.Z, { cancelButtonLabel: u, confirmButtonLabel: i, confirmButtonType: o, headline: a, onCancel: n, onConfirm: t, text: l });
@@ -1279,7 +1279,7 @@
                         case I: {
                             const n = P(t.meta),
                                 s = t.payload && t.payload.entities ? t.payload.entities : { recommendations: r() },
-                                o = (t.payload && t.payload.result ? t.payload.result : Z).map((e) => s.recommendations[e]);
+                                o = (t.payload && t.payload.result ? t.payload.result : T).map((e) => s.recommendations[e]);
                             return { ...e, [n]: { ...e[n], fetchStatus: b.ZP.LOADED, recommendations: o } };
                         }
                         default:
@@ -1287,11 +1287,11 @@
                     }
                 },
             });
-            const T = [],
-                Z = [],
+            const Z = [],
+                T = [],
                 L = (e, { displayLocation: t, similarToUserId: n }) => {
                     const s = e[v][P({ displayLocation: t, similarToUserId: n })];
-                    return s && s.recommendations ? s.recommendations : T;
+                    return s && s.recommendations ? s.recommendations : Z;
                 },
                 C = (e, { displayLocation: t, similarToUserId: n }) => {
                     const s = e[v][P({ displayLocation: t, similarToUserId: n })];
@@ -1487,4 +1487,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.WideLayout.ff6457aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.WideLayout.262e61ca.js.map

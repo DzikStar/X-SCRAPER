@@ -5450,8 +5450,8 @@
                 n("i8cae552", "Hodnotením pomôžete udržiavať vysokú kvalitu Poznámok komunity."),
                 n("hd43a218", "Dosiahli ste denný limit písania poznámok"),
                 n("aaba8ed2", "Na udržanie vysokej kvality zápiskov a prevenciu spamu, je počet zápiskov, ktoré môžu prispievatelia každý deň napísať, obmedzený na základe ich Vplyvu písania. Skúste to znova neskôr."),
-                n("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                n("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                n("a67ed4d6", "Dosiahli ste limit pridávania poznámok k príspevkom tohto autora. "),
+                n("ic484166", "Aby bola kvalita poznámok vysoká a aby sa zabránilo spamu, je obmedzený počet poznámok, ktoré môže jeden používateľ napísať k príspevku konkrétneho autora v príslušnom časovom období. Limit je založený na tom, ako užitočné boli pre ostatných používateľov vaše predchádzajúce poznámky k danému autorovi. Skúste to neskôr."),
                 n("b98f077c", "Informácie k žiadosti o poznámku"),
                 n("ee691104", "Žiadosť o poznámku komunity k tomuto príspevku"),
                 n("f8cbdf02", "Je podľa vás tento príspevok zavádzajúci? Požiadajte o poznámku komunity."),
@@ -7246,7 +7246,7 @@
                 n("h257d4aa", "Vyberte príspevok, ktorý sa má sponzorovať"),
                 n("e9334fe6", "Údaje sa aktualizujú každých pár minút"),
                 n("a6d7b1d0", "Založené na interných údajoch služby X"),
-                n("h71a00e6", "You’re saving time with ad-free"),
+                n("h71a00e6", "Nezobrazovanie reklám vám šetrí čas"),
                 n("f6c50ec0", "Vaše skúšobné obdobie bez reklám sa skončilo"),
                 n("e1d1fbca", "Vyhli ste sa"),
                 n("a82d7abd", function (e) {
@@ -8311,6 +8311,7 @@
                 n("e5e6479e", "Ak chcete, aby sme vám poskytli podporu čo najrýchlejšie, pošlite nám e-mail a uveďte v ňom prezývku svojej organizácie a podrobnosti svojej žiadosti."),
                 n("ica8392a", "Keď nám príde vaša žiadosť, vybavíme ju v poradí, v akom sme ju dostali."),
                 n("ed37e36e", "Dôležité: Ak nezadáte prezývku organizácie alebo použijete osobný e-mail, môže to spôsobiť oneskorené spracovanie vašej žiadosti."),
+                n("h7e1c146", "Delegate accounts are not currently supported."),
                 n("eb0d4fe2", "Vytvorte stĺpec"),
                 n("e93d2f8a", "Prispôsobte si prostredie pridaním rôznych stĺpcov, ako napríklad:"),
                 n("e8203d1e", "Hľadania"),
@@ -8917,9 +8918,9 @@
                 n("b0b22805", function (e) {
                     return "Prejsť na: " + e.advertiserName;
                 }),
-                n("c67e71aa", "Pozerať"),
-                n("a6ada13e", "Nakupovať teraz");
-            n("j0f12222", "Zobraziť viac"),
+                n("c67e71aa", "Pozerať");
+            n("a6ada13e", "Nakupovať teraz"),
+                n("j0f12222", "Zobraziť viac"),
                 n("f569f7c8", "Prejsť na webstránku"),
                 n("j0c6772a", "Navštíviť webstránku"),
                 n("f73003aa", "Video sa spustí po reklame"),
@@ -13377,4 +13378,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.8013454a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.f7f250ba.js.map

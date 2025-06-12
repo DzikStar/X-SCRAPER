@@ -8,19 +8,19 @@
             e.exports = { queryId: "-Ja49b1NyF9nkZtiMQ4iiw", operationName: "GeneratePinCode", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         742710: (e) => {
-            e.exports = { queryId: "zNVABL1VDLkBgZr25CzOeQ", operationName: "ImmersiveMedia", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "SZWJiXuWiKIXx9RYKW1pHg", operationName: "ImmersiveMedia", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         209857: (e) => {
-            e.exports = { queryId: "Z42_Z7xa9NCsQ-ZnIQIsvg", operationName: "ImmersiveProfile", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "jgQbrsJbEHL0P4oP25H__A", operationName: "ImmersiveProfile", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         535203: (e) => {
-            e.exports = { queryId: "ctwHgGr-mnWkFruA801oZA", operationName: "TVTrend", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "rYZICDKuT7pL0Qk2Rsuyaw", operationName: "TVTrend", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         762611: (e) => {
-            e.exports = { queryId: "8r-O3Ivwf6nmvEGY77BUfg", operationName: "TVUserProfile", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "rweb_video_screen_enabled", "responsive_web_graphql_timeline_navigation_enabled", "creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "yDzV8Sngt9pKOgt27JU6-w", operationName: "TVUserProfile", operationType: "query", metadata: { featureSwitches: ["payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "rweb_video_screen_enabled", "responsive_web_graphql_timeline_navigation_enabled", "creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         623114: (e) => {
-            e.exports = { queryId: "Ftq49OGBALOvRd1cuJ5-VQ", operationName: "TweetRelatedVideos", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "dgsXjwCQRCfkXfFKpVEXSw", operationName: "TweetRelatedVideos", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         768727: (e, a, d) => {
             "use strict";
@@ -199,8 +199,8 @@
                 S = d(823161),
                 L = d(731708),
                 C = d(530525),
-                F = d(111677),
-                x = d.n(F),
+                x = d(111677),
+                F = d.n(x),
                 Z = d(837020),
                 R = d(144251),
                 B = d(187669),
@@ -209,8 +209,8 @@
                 N = d(725405),
                 O = d(125363),
                 z = d(919022);
-            const U = x().da1aa48f,
-                j = x().b68c3784,
+            const U = F().da1aa48f,
+                j = F().b68c3784,
                 V = "get_verified_profile_sidebar",
                 q = ({ dismiss: e, profileUser: { screen_name: a }, viewerUser: { name: d, profile_image_url_https: n } }) => {
                     const l = (0, N.Z)(),
@@ -236,7 +236,7 @@
                     (0, B.q)(() => {
                         l.scribeAction("impression");
                     });
-                    const { description: u, header: m, withAnimatedBadge: b, withAvatar: D, withUsername: h } = ((e, a) => ({ variant_a: { header: x().e4a7a968, description: U({ screenName: a }), withAnimatedBadge: !0 }, variant_b: { header: x().id9c1e82, description: U({ screenName: a }), withAnimatedBadge: !0 }, variant_c: { header: x().d43b0edc, description: U({ screenName: a }), withAnimatedBadge: !0 }, variant_d: { header: x().d4ea0ed4, description: U({ screenName: a }), withAnimatedBadge: !0 }, variant_e: { header: x().cffeaeae, description: U({ screenName: a }), withAvatar: !0 }, variant_f: { header: x().cffeaeae, description: U({ screenName: a }), withUsername: !0 } })[e])(c, a);
+                    const { description: u, header: m, withAnimatedBadge: b, withAvatar: D, withUsername: h } = ((e, a) => ({ variant_a: { header: F().e4a7a968, description: U({ screenName: a }), withAnimatedBadge: !0 }, variant_b: { header: F().id9c1e82, description: U({ screenName: a }), withAnimatedBadge: !0 }, variant_c: { header: F().d43b0edc, description: U({ screenName: a }), withAnimatedBadge: !0 }, variant_d: { header: F().d4ea0ed4, description: U({ screenName: a }), withAnimatedBadge: !0 }, variant_e: { header: F().cffeaeae, description: U({ screenName: a }), withAvatar: !0 }, variant_f: { header: F().cffeaeae, description: U({ screenName: a }), withUsername: !0 } })[e])(c, a);
                     return o.createElement(
                         H.g,
                         { testID: "verified_profile_upsell" },
@@ -298,9 +298,9 @@
                 },
                 W = s.default.create((e) => ({ closeButton: { position: "absolute", top: e.spaces.space8, end: e.spaces.space8, zIndex: 1 }, root: { position: "relative", flexDirection: "column" }, inner: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, gap: e.spaces.space12, alignItems: "flex-start" }, image: { width: "100px", animationDuration: "8s", animationKeyframes: [{ "0%": { transform: "scale(0.9)" }, "25%": { transform: "scale(1)" }, "60%": { transform: "scale(0.9)" }, "100%": { transform: "scale(0.9)" } }], animationTimingFunction: "ease-in-out", animationIterationCount: "infinite" }, displayName: { backgroundColor: e.colors.gray50, padding: e.spaces.space16, width: "100%", paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, alignItems: "center", gap: e.spaces.space8 }, iconVerified: { color: e.colors.blue500 }, userName: { flexDirection: "row", gap: e.spaces.space4, alignItems: "center" }, userAvatar: {}, iconOverlap: { position: "absolute", fontSize: e.fontSizes.title1, end: "-28px" } })),
                 K = (0, c.Z)({ loader: () => d.e("loader.ExploreSidebar").then(d.bind(d, 657346)) }),
-                $ = (0, c.Z)({ loader: () => Promise.all([d.e("icons.0"), d.e("loader.SignupModule")]).then(d.bind(d, 173446)) });
-            var Y = d(597496);
-            const X = (0, c.Z)({
+                X = (0, c.Z)({ loader: () => Promise.all([d.e("icons.0"), d.e("loader.SignupModule")]).then(d.bind(d, 173446)) });
+            var $ = d(597496);
+            const Y = (0, c.Z)({
                 loader: () =>
                     Promise.all([
                         d.e("icons.0"),
@@ -372,7 +372,7 @@
                 _e = d(366635),
                 pe = d(451051),
                 fe = d(379990);
-            const ke = x().ic1e826e,
+            const ke = F().ic1e826e,
                 we = ({ isFocused: e, isHovered: a, isPressed: d, onPress: n, style: l }) => o.createElement(r.Z, { "aria-label": ke, onPress: n }, o.createElement(fe.Z, { isFocused: e, isHovered: a, isPressed: d, style: l })),
                 Me = ({ tweet: e }) => {
                     const a = o.useRef(),
@@ -393,7 +393,7 @@
                         : null;
                 },
                 ve = s.default.create((e) => ({ container: {}, videoContainer: { aspectRatio: 0.8, color: e.colors.whiteOnColor, borderRadius: e.borderRadii.medium }, innerContentContainer: { padding: e.spaces.space12, display: "flex", height: "100%", justifyContent: "center", alignItems: "center" }, backgroundImage: { position: "absolute", width: "100%", height: "100%", borderRadius: e.spaces.space12 }, button: { width: e.spaces.space32, height: e.spaces.space32 }, userRow: { display: "flex", flexDirection: "row", alignItems: "center", paddingTop: e.spaces.space4, paddingBottom: e.spaces.space4 }, userAvatar: { marginEnd: e.spaces.space4 } })),
-                ge = x().fce9ecce,
+                ge = F().fce9ecce,
                 ye = () => {
                     const e = (0, O.I0)(),
                         a = (0, O.v9)(ue.jK),
@@ -690,7 +690,7 @@
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-5563f741"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
-                            d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-9d7f6429"),
+                            d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-d8458ca7"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3db21160"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0be21f6e"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2c76ece2"),
@@ -765,7 +765,7 @@
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-5563f741"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
-                            d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-9d7f6429"),
+                            d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-d8458ca7"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3db21160"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0be21f6e"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2c76ece2"),
@@ -840,7 +840,7 @@
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-5563f741"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
-                            d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-9d7f6429"),
+                            d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-d8458ca7"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3db21160"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0be21f6e"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2c76ece2"),
@@ -865,7 +865,7 @@
                             d.e("loader.PremiumLoaders"),
                         ]).then(d.bind(d, 293605)),
                 }),
-                Fe = (0, c.Z)({
+                xe = (0, c.Z)({
                     loader: () =>
                         Promise.all([
                             d.e("icons.0"),
@@ -915,7 +915,7 @@
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-5563f741"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
-                            d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-9d7f6429"),
+                            d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-d8458ca7"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3db21160"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0be21f6e"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2c76ece2"),
@@ -940,12 +940,12 @@
                             d.e("loader.PremiumLoaders"),
                         ]).then(d.bind(d, 900285)),
                 }),
-                xe = { withSuggestedVideos: !0, withSearchBox: !0, withTopicsToFollow: !0, withTrends: !0, withNews: !0, withWhoToFollow: !0 };
+                Fe = { withSuggestedVideos: !0, withSearchBox: !0, withTopicsToFollow: !0, withTrends: !0, withNews: !0, withWhoToFollow: !0 };
             function Ze(e) {
                 return (0, Te.x2)() ? o.createElement(Ee, null) : o.createElement(Re, e);
             }
             const Re = o.memo(function (e) {
-                const a = { ...xe, ...e },
+                const a = { ...Fe, ...e },
                     d = (0, Te.Ct)();
                 return o.createElement(r.Z, { ref: d, style: [Qe.root, e.withMaxHeight && Qe.rootWithMaxHeight], testID: a.testID }, o.createElement(He, a), o.createElement(Je, a), e.withRadarUpsell && o.createElement(r.Z, { style: Qe.paddedContainer }, o.createElement(ne.Z, { variant: "RadarUpsell" })), o.createElement(Ne, a), o.createElement(Be, a), o.createElement(qe, a));
             });
@@ -965,7 +965,7 @@
                     w = i && !s && "/home" === b.pathname;
                 if (e.profileUserId) return o.createElement(o.Fragment, null, h && o.createElement(Le, null), o.createElement(m, null), e.profileScreenName ? o.createElement(G, { screenName: e.profileScreenName }) : null, o.createElement(D.O, null), c && u && o.createElement(ze, e), e.isOwnProfile ? o.createElement(Ce, { entryPoint: "profile" }) : null, f && o.createElement(r.Z, { style: Qe.paddedContainer, testID: "profileAnalyticsUpsell" }, o.createElement(ne.Z, { variant: "ProfileSidebarAnalyticsUpsell" })), o.createElement(Ue, e), o.createElement(Oe, e), o.createElement(je, e));
                 let M = o.createElement(o.Fragment, null, e.withNews && o.createElement(Ve, e), o.createElement(Oe, e), o.createElement(Ue, e));
-                return a.isTrue("rweb_sidebar_lower_whats_happening_enabled") && (M = o.createElement(o.Fragment, null, o.createElement(Ue, e), e.withNews && o.createElement(Ve, e), o.createElement(Oe, e))), c && (M = o.createElement(o.Fragment, null, u && o.createElement(ze, e), e.withNews && o.createElement(Ve, e), o.createElement(Oe, e), o.createElement(Ue, e))), o.createElement(o.Fragment, null, "/home" === b.pathname ? o.createElement(Se, null) : null, h && o.createElement(Le, null), w && o.createElement(Ce, { entryPoint: "home" }), o.createElement(m, { userProfileId: e.profileUserId, userProfileScreenName: e.profileScreenName }), o.createElement(Fe, null), s && a.isTrue("blue_business_admin_sidebar_module_enabled") ? o.createElement(I, null) : null, "/home" === b.pathname && k && o.createElement(Ie.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: Ie.c.MarchMadness, withBackgroundImage: !0 }), o.createElement(D.O, null), M, p && o.createElement(r.Z, { style: Qe.paddedContainer, testID: "exploreAnalyticsUpsell" }, o.createElement(ne.Z, { variant: "ExploreSidebarAnalyticsUpsell" })), o.createElement(je, e));
+                return a.isTrue("rweb_sidebar_lower_whats_happening_enabled") && (M = o.createElement(o.Fragment, null, o.createElement(Ue, e), e.withNews && o.createElement(Ve, e), o.createElement(Oe, e))), c && (M = o.createElement(o.Fragment, null, u && o.createElement(ze, e), e.withNews && o.createElement(Ve, e), o.createElement(Oe, e), o.createElement(Ue, e))), o.createElement(o.Fragment, null, "/home" === b.pathname ? o.createElement(Se, null) : null, h && o.createElement(Le, null), w && o.createElement(Ce, { entryPoint: "home" }), o.createElement(m, { userProfileId: e.profileUserId, userProfileScreenName: e.profileScreenName }), o.createElement(xe, null), s && a.isTrue("blue_business_admin_sidebar_module_enabled") ? o.createElement(I, null) : null, "/home" === b.pathname && k && o.createElement(Ie.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: Ie.c.MarchMadness, withBackgroundImage: !0 }), o.createElement(D.O, null), M, p && o.createElement(r.Z, { style: Qe.paddedContainer, testID: "exploreAnalyticsUpsell" }, o.createElement(ne.Z, { variant: "ExploreSidebarAnalyticsUpsell" })), o.createElement(je, e));
             }
             function He(e) {
                 const { featureSwitches: a, viewerUserId: d } = (0, t.QZ)(),
@@ -977,7 +977,7 @@
                 return o.createElement(
                     o.Fragment,
                     null,
-                    o.createElement(l.ZP, null, ({ windowWidth: e }) => o.createElement(r.Z, { style: [Qe.searchContainer, i ? ae.Z.getSidebarWidthStyleRedesign(e, n ?? s) : ae.Z.getSidebarWidthStyle(e), i && Qe.withHorizontalPadding] }, o.createElement(Y.Rj, { shouldHandleSearchShortcut: !0 }))),
+                    o.createElement(l.ZP, null, ({ windowWidth: e }) => o.createElement(r.Z, { style: [Qe.searchContainer, i ? ae.Z.getSidebarWidthStyleRedesign(e, n ?? s) : ae.Z.getSidebarWidthStyle(e), i && Qe.withHorizontalPadding] }, o.createElement($.Rj, { shouldHandleSearchShortcut: !0 }))),
                     o.createElement(r.Z, { style: Qe.searchPlaceholder }),
                 );
             }
@@ -987,7 +987,7 @@
                 if (d) return null;
                 if (r.pathname.startsWith("/i/jf/onboarding")) return null;
                 const l = a.isTrue("march_madness_brackets_enabled_logout_popup");
-                return o.createElement(i.Z, { hideOnError: !0 }, o.createElement(H.g, null, o.createElement($, null)), l && o.createElement(Ie.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: Ie.c.MarchMadness, styleOverrides: { backgroundcolor: "gray0", headercolor: "white", textcolor: "gray900" } }));
+                return o.createElement(i.Z, { hideOnError: !0 }, o.createElement(H.g, null, o.createElement(X, null)), l && o.createElement(Ie.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: Ie.c.MarchMadness, styleOverrides: { backgroundcolor: "gray0", headercolor: "white", textcolor: "gray900" } }));
             }
             function Ne(e) {
                 return e.children ? o.Children.map(e.children, (e) => (e ? o.createElement(i.Z, { hideOnError: !0 }, o.createElement(H.g, null, e)) : null)) : null;
@@ -1004,7 +1004,7 @@
             function Ue(e) {
                 const { viewerUserId: a } = (0, t.QZ)(),
                     d = e.profileUserId || a;
-                return e.withWhoToFollow && d ? o.createElement(i.Z, { hideOnError: !0 }, o.createElement(H.g, null, o.createElement(X, { userId: d, withProfileHeaderText: !!e.profileUserId }))) : null;
+                return e.withWhoToFollow && d ? o.createElement(i.Z, { hideOnError: !0 }, o.createElement(H.g, null, o.createElement(Y, { userId: d, withProfileHeaderText: !!e.profileUserId }))) : null;
             }
             function je(e) {
                 const { featureSwitches: a, isRestrictedSession: d, viewerUserId: r } = (0, t.QZ)(),
@@ -1661,4 +1661,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749.012f659a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749.5b435cda.js.map

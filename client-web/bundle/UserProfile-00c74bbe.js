@@ -920,6 +920,7 @@
                 name: "UserProfileHeaderButtons_user",
                 selections: [
                     { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null },
+                    { alias: null, args: null, kind: "ScalarField", name: "can_pay", storageKey: null },
                     { alias: null, args: null, concreteType: "UserDMPermissions", kind: "LinkedField", name: "dm_permissions", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "can_dm", storageKey: null }], storageKey: null },
                     {
                         alias: null,
@@ -956,7 +957,7 @@
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "72026a313bee0670bf34d450f205744a",
+                hash: "1cc21ac329c991c59c74a3c2e8ffcd16",
             };
             const i = n;
         },
@@ -1767,4 +1768,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-00c74bbe.27f72cda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-00c74bbe.23655e5a.js.map

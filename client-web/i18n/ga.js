@@ -8313,6 +8313,7 @@
                 n("e5e6479e", "Send us an email with your organization’s handle and the details of your inquiry to receive the fastest support."),
                 n("ica8392a", "Once we receive your request, we’ll review and prioritize it in the order it was received."),
                 n("ed37e36e", "Important: Missing your organization’s handle or using a personal email may cause delays in processing your request."),
+                n("h7e1c146", "Delegate accounts are not currently supported."),
                 n("eb0d4fe2", "Déan colún"),
                 n("e93d2f8a", "Déan do thaithí a shaincheapadh trí cholúin éagsúla a chur leis amhail na colúin seo a leanas:"),
                 n("e8203d1e", "Cuardaigh "),
@@ -8919,9 +8920,9 @@
                 n("b0b22805", function (e) {
                     return "Tabhair cuairt ar " + e.advertiserName;
                 }),
-                n("c67e71aa", "Breathnaigh air anois"),
-                n("a6ada13e", "Shop now");
-            n("j0f12222", "Féach ar a thuilleadh"),
+                n("c67e71aa", "Breathnaigh air anois");
+            n("a6ada13e", "Shop now"),
+                n("j0f12222", "Féach ar a thuilleadh"),
                 n("f569f7c8", "Téigh chuig an suíomh gréasáin"),
                 n("j0c6772a", "Tabhair cuairt ar an suíomh gréasáin"),
                 n("f73003aa", "Seinnfear an físeán i ndiaidh an fhógra"),
@@ -13374,4 +13375,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.5e90b71a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.5be2a60a.js.map

@@ -8301,6 +8301,7 @@
                 o("e5e6479e", "Send us an email with your organization’s handle and the details of your inquiry to receive the fastest support."),
                 o("ica8392a", "Once we receive your request, we’ll review and prioritize it in the order it was received."),
                 o("ed37e36e", "Important: Missing your organization’s handle or using a personal email may cause delays in processing your request."),
+                o("h7e1c146", "Delegate accounts are not currently supported."),
                 o("eb0d4fe2", "Egin zutabe bat"),
                 o("e93d2f8a", "Pertsonalizatu zure esperientzia hainbat zutabe gehituz, hala nola:"),
                 o("e8203d1e", "Bilaketak"),
@@ -8907,9 +8908,9 @@
                 o("b0b22805", function (e) {
                     return "Bisitatu " + e.advertiserName;
                 }),
-                o("c67e71aa", "Ikusi orain"),
-                o("a6ada13e", "Erosi orain");
-            o("j0f12222", "Ikusi gehiago"),
+                o("c67e71aa", "Ikusi orain");
+            o("a6ada13e", "Erosi orain"),
+                o("j0f12222", "Ikusi gehiago"),
                 o("f569f7c8", "Joan webgunera"),
                 o("j0c6772a", "Bisitatu webgunea"),
                 o("f73003aa", "Bideoa iragarkiaren ondoren erreproduzituko da"),
@@ -13364,4 +13365,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.bc47f94a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.1d1e86ba.js.map

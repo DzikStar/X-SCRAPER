@@ -8302,6 +8302,7 @@
                 o("e5e6479e", "Send us an email with your organization’s handle and the details of your inquiry to receive the fastest support."),
                 o("ica8392a", "Once we receive your request, we’ll review and prioritize it in the order it was received."),
                 o("ed37e36e", "Important: Missing your organization’s handle or using a personal email may cause delays in processing your request."),
+                o("h7e1c146", "Delegate accounts are not currently supported."),
                 o("eb0d4fe2", "Make a column"),
                 o("e93d2f8a", "Customize your experience by adding a variety of columns such as:"),
                 o("e8203d1e", "Searches"),
@@ -8908,9 +8909,9 @@
                 o("b0b22805", function (e) {
                     return e.advertiserName + " ملاحظہ کریں";
                 }),
-                o("c67e71aa", "ابھی دیکھیں"),
-                o("a6ada13e", "Shop now");
-            o("j0f12222", "مزید دیکھیں"),
+                o("c67e71aa", "ابھی دیکھیں");
+            o("a6ada13e", "Shop now"),
+                o("j0f12222", "مزید دیکھیں"),
                 o("f569f7c8", "ویب سائٹ پر جائیں"),
                 o("j0c6772a", "ویب سائٹ ملاحظہ کریں"),
                 o("f73003aa", "اشتہار کے بعد ویڈیو چلے گی"),
@@ -13366,4 +13367,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.e866093a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.cd84ff7a.js.map

@@ -5441,8 +5441,8 @@
                 e("i8cae552", "Arvioimalla tuet Yhteisöhuomautusten korkeaa laatua."),
                 e("hd43a218", "Huomautusten kirjoittamisen päivärajasi on täyttynyt"),
                 e("aaba8ed2", "Jotta saamme pidettyä laadun korkeana ja ehkäistyä massapostitusta, olemme rajanneet sitä, montako huomautusta tekijät voivat päivässä kirjoittaa. Raja perustuu kunkin tekijän kerryttämiin kirjoituspisteisiin. Yritä myöhemmin uudelleen."),
-                e("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                e("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                e("a67ed4d6", "Huomautusrajasi tämän kirjoittajan julkaisuihin on täynnä"),
+                e("ic484166", "Huomautusten laadun vaalimiseksi ja spämmäyksen estämiseksi olemme rajanneet sitä, montako huomautusta yksi henkilö voi laatia yksittäisestä kirjoittajasta määräaikana. Raja perustuu siihen, miten hyödyllisiksi henkilön aiemmat huomautukset kirjoittajan teksteihin on arvioitu. Yritä myöhemmin uudelleen."),
                 e("b98f077c", "Pyydä huomautusta -info"),
                 e("ee691104", "Pyydä Yhteisöhuomautusta tästä julkaisusta"),
                 e("f8cbdf02", "Koetko tämän julkaisun potentiaalisesti harhaanjohtavaksi? Pyydä yhteisöhuomautusta."),
@@ -7237,7 +7237,7 @@
                 e("h257d4aa", "Valitse mainostettava julkaisu"),
                 e("e9334fe6", "Tiedot päivittyvät muutaman minuutin välein"),
                 e("a6d7b1d0", "X:n sisäisen datan perusteella"),
-                e("h71a00e6", "You’re saving time with ad-free"),
+                e("h71a00e6", "Säästät aikaa, kun et näe mainoksia"),
                 e("f6c50ec0", "Mainokseton kokeilusi on päättynyt"),
                 e("e1d1fbca", "Olet välttänyt"),
                 e("a82d7abd", function (a) {
@@ -8302,6 +8302,7 @@
                 e("e5e6479e", "Lähetä meille sähköpostitse organisaatiosi käyttäjätunnus ja tiedustelusi saadaksesi avun nopeimmin."),
                 e("ica8392a", "Kun saamme pyyntösi, arvioimme ja priorisoimme sen saapumisjärjestyksessä."),
                 e("ed37e36e", "Tärkeää: Organisaatiosi käyttäjätunnuksen puuttuminen tai henkilökohtaisen sähköpostiosoitteen käyttö saattaa viivästyttää pyynnön käsittelyä."),
+                e("h7e1c146", "Delegate accounts are not currently supported."),
                 e("eb0d4fe2", "Luo palsta"),
                 e("e93d2f8a", "Räätälöi oma käyttökokemuksesi lisäämällä erilaisia palstoja, kuten:"),
                 e("e8203d1e", "Haut"),
@@ -8908,9 +8909,9 @@
                 e("b0b22805", function (a) {
                     return "Käy paikassa " + a.advertiserName;
                 }),
-                e("c67e71aa", "Katso nyt"),
-                e("a6ada13e", "Osta nyt");
-            e("j0f12222", "Näe lisää"),
+                e("c67e71aa", "Katso nyt");
+            e("a6ada13e", "Osta nyt"),
+                e("j0f12222", "Näe lisää"),
                 e("f569f7c8", "Siirry sivustolle"),
                 e("j0c6772a", "Käy sivustolla"),
                 e("f73003aa", "Video näytetään mainoksen jälkeen"),
@@ -13375,4 +13376,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.95aa463a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.25890c2a.js.map

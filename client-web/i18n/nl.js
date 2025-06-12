@@ -5441,8 +5441,8 @@
                 a("i8cae552", "Door je beoordeling hou je de kwaliteit van Community-opmerkingen hoog."),
                 a("hd43a218", "Je hebt je dagelijkse limiet voor het schrijven van opmerkingen schrijven bereikt"),
                 a("aaba8ed2", "Om de kwaliteit van de opmerkingen hoog te houden en spam te voorkomen, is er een limiet aan het aantal opmerkingen dat deelnemers per dag kunnen schrijven, gebaseerd op hun Impact van opmerkingen schrijven. Probeer het later opnieuw."),
-                a("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                a("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                a("a67ed4d6", "Je hebt voorlopig de limiet bereikt voor het toevoegen van opmerkingen aan de posts van deze auteur"),
+                a("ic484166", "Om de kwaliteit van opmerkingen hoog te houden en spam te voorkomen, is er een limiet op het aantal opmerkingen dat iemand kan schrijven over een specifieke auteur van een post in een bepaalde periode. De limiet is gebaseerd op hoe nuttig mensen eerdere opmerkingen over die auteur vonden. Probeer het later opnieuw."),
                 a("b98f077c", "Informatie over een opmerking aanvragen"),
                 a("ee691104", "Een Community-opmerking aanvragen over deze post"),
                 a("f8cbdf02", "Denk je dat deze post mogelijk misleidend is? Vraag een Community-opmerking aan."),
@@ -7237,7 +7237,7 @@
                 a("h257d4aa", "Een post selecteren om uit te lichten"),
                 a("e9334fe6", "Gegevens worden om de paar minuten bijgewerkt"),
                 a("a6d7b1d0", "Gebaseerd op interne gegevens van X"),
-                a("h71a00e6", "You’re saving time with ad-free"),
+                a("h71a00e6", "Je bespaart tijd met een feed zonder advertenties"),
                 a("f6c50ec0", "Je reclamevrije proefperiode is afgelopen"),
                 a("e1d1fbca", "Dit heb je vermeden:"),
                 a("a82d7abd", function (e) {
@@ -8302,6 +8302,7 @@
                 a("e5e6479e", "Stuur ons een e-mail met de gebruikersnaam van je organisatie en de details van je vraag voor de snelste ondersteuning."),
                 a("ica8392a", "Zodra we je aanvraag hebben ontvangen, bekijken we die en geven we die prioriteit in volgorde van binnenkomst."),
                 a("ed37e36e", "Belangrijk: als de gebruikersnaam van je organisatie ontbreekt of als je een persoonlijk e-mailadres gebruikt, kan dat vertraging van de behandeling van je aanvraag veroorzaken."),
+                a("h7e1c146", "Delegate accounts are not currently supported."),
                 a("eb0d4fe2", "Een kolom maken"),
                 a("e93d2f8a", "Maak je ervaring op maat door verschillende soorten kolommen toe te voegen, zoals:"),
                 a("e8203d1e", "Zoekopdrachten"),
@@ -8908,9 +8909,9 @@
                 a("b0b22805", function (e) {
                     return e.advertiserName + " bezoeken";
                 }),
-                a("c67e71aa", "Nu bekijken"),
-                a("a6ada13e", "Winkel nu");
-            a("j0f12222", "Meer bekijken"),
+                a("c67e71aa", "Nu bekijken");
+            a("a6ada13e", "Winkel nu"),
+                a("j0f12222", "Meer bekijken"),
                 a("f569f7c8", "Naar website gaan"),
                 a("j0c6772a", "Website bekijken"),
                 a("f73003aa", "Video wordt afgespeeld na de advertentie"),
@@ -13375,4 +13376,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.db2c2a1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.b0f9d37a.js.map

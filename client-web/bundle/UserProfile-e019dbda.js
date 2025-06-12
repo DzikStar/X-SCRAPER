@@ -42,7 +42,7 @@
                             if (e.metrics.length > 1)
                                 return r.createElement(
                                     d.Z,
-                                    { style: k.tiles },
+                                    { style: S.tiles },
                                     e.metrics.map((e) => {
                                         const n = t?.find((t) => t.metric_type === e.metricType);
                                         return n?.metric_value ? r.createElement(_, { key: e.metricType, metric: e.metricType, metricResult: n }) : null;
@@ -61,7 +61,7 @@
                         i = r.useCallback(() => {
                             o.scribe({ action: "dismiss" }), n();
                         }, [n, o]);
-                    return r.createElement(d.Z, { style: k.container, testID: "analytics-preview" }, r.createElement(d.Z, { style: k.heading }, e.metrics.length > 1 ? r.createElement(c.ZP, { size: "headline2", weight: "bold" }, D({ days: e.periodInDays })) : null, r.createElement(c.ZP, { color: "gray700", size: "subtext3" }, M), r.createElement(u.ZP, { icon: r.createElement(f.default, null), onClick: i, style: k.dismissButton, testID: "dismiss-button", type: "primaryText" })), r.createElement(d.Z, { style: k.content }, s, r.createElement(u.ZP, { icon: r.createElement(b.default, null), link: { pathname: "/i/premium_sign_up", state: { referring_page: "account_analytics" } }, size: "xSmall", style: k.unlockButton, type: "primaryFilled" }, E)));
+                    return r.createElement(d.Z, { style: S.container, testID: "analytics-preview" }, r.createElement(d.Z, { style: S.heading }, e.metrics.length > 1 ? r.createElement(c.ZP, { size: "headline2", weight: "bold" }, D({ days: e.periodInDays })) : null, r.createElement(c.ZP, { color: "gray700", size: "subtext3" }, M), r.createElement(u.ZP, { icon: r.createElement(f.default, null), onClick: i, style: S.dismissButton, testID: "dismiss-button", type: "primaryText" })), r.createElement(d.Z, { style: S.content }, s, r.createElement(u.ZP, { icon: r.createElement(b.default, null), link: { pathname: "/i/premium_sign_up", state: { referring_page: "account_analytics" } }, size: "xSmall", style: S.unlockButton, type: "primaryFilled" }, E)));
                 },
                 P = (e) => {
                     const t = (0, w.Z)({ metrics: e.config.metrics, periodInDays: e.config.periodInDays }),
@@ -76,8 +76,8 @@
                         o ? r.createElement(I, (0, l.Z)({}, e, { data: n })) : (a.scribe({ action: "not_matched" }), null)
                     );
                 },
-                S = r.memo(P),
-                k = m.default.create((e) => ({ container: { marginHorizontal: e.spaces.space16, backgroundColor: e.colors.unreadCellBackground, borderRadius: e.borderRadii.large, padding: e.spaces.space16 }, content: { justifyContent: "space-between", flexDirection: "row", flexWrap: "wrap" }, tiles: { flexDirection: "row", gap: e.spaces.space48 }, heading: { flexDirection: "row", alignItems: "center", gap: e.spaces.space16 }, unlockButton: { alignSelf: "flex-end", marginTop: e.spaces.space12 }, dismissButton: { marginStart: "auto" } })),
+                k = r.memo(P),
+                S = m.default.create((e) => ({ container: { marginHorizontal: e.spaces.space16, backgroundColor: e.colors.unreadCellBackground, borderRadius: e.borderRadii.large, padding: e.spaces.space16 }, content: { justifyContent: "space-between", flexDirection: "row", flexWrap: "wrap" }, tiles: { flexDirection: "row", gap: e.spaces.space48 }, heading: { flexDirection: "row", alignItems: "center", gap: e.spaces.space16 }, unlockButton: { alignSelf: "flex-end", marginTop: e.spaces.space12 }, dismissButton: { marginStart: "auto" } })),
                 Z = { showForMsec: a.fz, reappearAfterMsec: a.Ho, dismissForMsec: a.dV },
                 A = { showForMsec: a.Tg, reappearAfterMsec: a.Vv, dismissForMsec: a.IZ },
                 v = {
@@ -111,7 +111,7 @@
                         r.useEffect(() => {
                             n();
                         }),
-                        s ? r.createElement(o.nO, { namespace: { component: "analytics_preview" } }, r.createElement(i.H, { errorConfig: { context: "AnalyticPreview" }, suspenseFallback: null }, r.createElement(S, { config: e.config, dismiss: t, impress: n }))) : null
+                        s ? r.createElement(o.nO, { namespace: { component: "analytics_preview" } }, r.createElement(i.H, { errorConfig: { context: "AnalyticPreview" }, suspenseFallback: null }, r.createElement(k, { config: e.config, dismiss: t, impress: n }))) : null
                     );
                 },
                 F = () => {
@@ -483,7 +483,7 @@
                         M = (0, a.useLocation)(),
                         I = y?.screen_name,
                         P = i ? r.createElement(c.default, null) : r.createElement(u.default, { style: E.superFollowsIcon }),
-                        S = r.useCallback(
+                        k = r.useCallback(
                             (e) => {
                                 const { action: n, element: r } = e,
                                     { items: a } = t.contextualScribeData,
@@ -495,18 +495,18 @@
                             },
                             [t, M, d, y],
                         ),
-                        k = r.useCallback(
+                        S = r.useCallback(
                             (e) => {
-                                _ && (S({ element: "super_follow_subscribe_button", action: "unfollow" }), g(_, { promotedContent: d }).catch(n(p.X))), e();
+                                _ && (k({ element: "super_follow_subscribe_button", action: "unfollow" }), g(_, { promotedContent: d }).catch(n(p.X))), e();
                             },
-                            [n, d, g, _, S],
+                            [n, d, g, _, k],
                         ),
                         Z = r.useCallback(
                             (e) => {
-                                const t = [{ Icon: m.default, text: T({ screenName: I }), onClick: k }];
+                                const t = [{ Icon: m.default, text: T({ screenName: I }), onClick: S }];
                                 return r.createElement(o.Z, { isFixed: !0, items: t, onCloseRequested: e });
                             },
-                            [k, I],
+                            [S, I],
                         ),
                         A = i ? T({ screenName: I }) : D({ screenName: I });
                     return r.createElement(s.ZP, {
@@ -515,7 +515,7 @@
                         hoverLabel: { label: A },
                         icon: P,
                         onPress: () => {
-                            !I || i || l || (S({ element: "super_follow_subscribe_button", action: "click" }), w.push(`/${I}/creator-subscriptions/subscribe`, { referring_page: "profile_intent" }));
+                            !I || i || l || (k({ element: "super_follow_subscribe_button", action: "click" }), w.push(`/${I}/creator-subscriptions/subscribe`, { referring_page: "profile_intent" }));
                         },
                         renderMenu: i ? Z : void 0,
                         style: b,
@@ -551,8 +551,8 @@
                 E = n(919022);
             const I = u().ia5e7488,
                 P = { label: I },
-                S = u().j33d8902,
-                k = { label: S },
+                k = u().j33d8902,
+                S = { label: k },
                 Z = u().a8ab3d08,
                 A = u().d740d2d9,
                 v = { bandcamp_handle: { icon: r.createElement(m.default, null), label: u().a7cf1e98, url: "https://bandcamp.com/" }, bitcoin_handle: { icon: r.createElement(p.default, null), label: u().d876e67e }, cash_app_handle: { icon: r.createElement(h.default, null), label: u().f85f6760, url: "https://cash.app/" }, ethereum_handle: { icon: r.createElement(f.default, null), label: u().a32a7c06 }, gofundme_handle: { icon: r.createElement(b.default, null), label: u().cc1a3bc4, url: "https://gofundme.com/f/" }, patreon_handle: { icon: r.createElement(g.default, null), label: u().d4d74bb4, url: "https://patreon.com/" }, pay_pal_handle: { icon: r.createElement(y.default, null), label: u().h14fbc52, url: "https://paypal.me/" }, venmo_handle: { icon: r.createElement(_.default, null), label: u().h1198dcc, url: "https://venmo.com/" } };
@@ -572,8 +572,8 @@
                     r.Fragment,
                     null,
                     r.createElement(s.ZP, {
-                        "aria-label": S,
-                        hoverLabel: k,
+                        "aria-label": k,
+                        hoverLabel: S,
                         icon: r.createElement(w.default, null),
                         onPress: function () {
                             c((e) => !e);
@@ -607,7 +607,7 @@
             const F = d.default.create((e) => ({ close: { end: e.spaces.space16, position: "absolute", top: e.spaces.space16 }, header: { alignItems: "center", justifyContent: "center", marginHorizontal: "auto" }, service: { display: "flex", cursor: "pointer", gap: e.spaces.space8, marginBottom: e.spaces.space16 }, sheet: { padding: e.spaces.space16 } }));
         },
         179562: (e, t, n) => {
-            n.d(t, { Z: () => v });
+            n.d(t, { Z: () => A });
             var r = n(807896),
                 a = n(202784),
                 o = n(238406),
@@ -673,18 +673,18 @@
                 E = D.Z.register(T),
                 I = (e, t) => E.select(e, t.userId),
                 P = (e, t) => E.selectFetchStatus(e, t.userId),
-                S = (0, b.Z)()
+                k = (0, b.Z)()
                     .propsFromState(() => ({ translation: I, translationFetchStatus: P, userLanguage: g.VT }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, f.zr)("TRANSLATE_USER_BIO"), fetchTranslation: E.fetchOneIfNeeded, fetchStreamedGrokTranslation: E.fetchStreamedGrokTranslation }))
                     .withAnalytics(),
-                k = i().ad7a451e,
-                Z = "translate_bio";
-            class A extends a.Component {
+                S = i().ad7a451e;
+            class Z extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this._useGrokTranslation = () => {
-                            const { featureSwitches: e } = this.context;
-                            return (0, m.F)(e, "");
+                            const { grokTranslatedBio: e } = this.props,
+                                { featureSwitches: t } = this.context;
+                            if ((0, m.F)(t, "")) return e ? "auto" : "button";
                         }),
                         (this._fetchTranslation = () => {
                             const { createLocalApiErrorHandler: e, fetchStreamedGrokTranslation: t, fetchTranslation: n, translation: r, translationFetchStatus: a, userId: o, userLanguage: s } = this.props,
@@ -715,13 +715,13 @@
                     const { analytics: e, createLocalApiErrorHandler: t, disableTranslation: n, fetchStreamedGrokTranslation: s, fetchTranslation: i, grokTranslatedBio: u, style: m, translation: h, translationFetchStatus: f, userId: b, userLanguage: g, withOriginalText: y, ..._ } = this.props;
                     if (u) {
                         const e = (0, c.t)(g, u.source_language);
-                        return a.createElement(d.Z, { disableTranslation: this.props.disableTranslation, fetchTranslation: l.Z, isInitiallyTranslated: !0, key: `${b}-auto-translation`, originLanguage: e, scribeElement: Z, streamedTranslationFetchStatus: p.ZP.LOADED, style: m, translateButtonText: k, translatedMessage: this._renderGrokTranslatedBio(), translationFetchStatus: p.ZP.LOADED, translationSource: "Grok", useGrokTranslation: !0, withOriginalText: y }, a.createElement(o.Z, (0, r.Z)({}, _, { userId: b })));
+                        return a.createElement(d.Z, { disableTranslation: this.props.disableTranslation, fetchTranslation: l.Z, isInitiallyTranslated: !0, key: `${b}-auto-translation`, originLanguage: e, streamedTranslationFetchStatus: p.ZP.LOADED, style: m, translateButtonText: S, translateTargetType: "bio", translatedMessage: this._renderGrokTranslatedBio(), translationFetchStatus: p.ZP.LOADED, translationSource: "Grok", useGrokTranslation: "auto", withOriginalText: y }, a.createElement(o.Z, (0, r.Z)({}, _, { userId: b })));
                     }
-                    return a.createElement(d.Z, { disableTranslation: this.props.disableTranslation, fetchTranslation: this._fetchTranslation, key: `${b}-translation`, originLanguage: h && h.profileTranslation.localizedSourceLanguage, scribeElement: Z, streamedTranslationFetchStatus: h && h.profileTranslation.streamedTranslationFetchStatus, style: m, translateButtonText: k, translatedMessage: this._renderTranslation(), translationFetchStatus: f, translationSource: h && h.profileTranslation.translationSource, useGrokTranslation: this._useGrokTranslation(), withOriginalText: y }, a.createElement(o.Z, (0, r.Z)({}, _, { userId: b })));
+                    return a.createElement(d.Z, { disableTranslation: this.props.disableTranslation, fetchTranslation: this._fetchTranslation, key: `${b}-translation`, originLanguage: h && h.profileTranslation.localizedSourceLanguage, streamedTranslationFetchStatus: h && h.profileTranslation.streamedTranslationFetchStatus, style: m, translateButtonText: S, translateTargetType: "bio", translatedMessage: this._renderTranslation(), translationFetchStatus: f, translationSource: h && h.profileTranslation.translationSource, useGrokTranslation: this._useGrokTranslation(), withOriginalText: y }, a.createElement(o.Z, (0, r.Z)({}, _, { userId: b })));
                 }
             }
-            A.contextType = h.rC;
-            const v = S(A);
+            Z.contextType = h.rC;
+            const A = k(Z);
         },
         703738: (e, t, n) => {
             n.d(t, { z: () => s });
@@ -1090,4 +1090,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e019dbda.c9ac1a8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e019dbda.9eab73ea.js.map

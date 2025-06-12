@@ -2,17 +2,17 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["i18n/th"],
     {
-        743834: (e, a, c) => {
-            var n = c(292426)._register("th", {
+        743834: (e, c, a) => {
+            var n = a(292426)._register("th", {
                 get emoji() {
-                    return c.e("i18n/emoji-th").then(c.t.bind(c, 953899, 23));
+                    return a.e("i18n/emoji-th").then(a.t.bind(a, 953899, 23));
                 },
             });
-            function t(e, a) {
-                return a;
+            function t(e, c) {
+                return c;
             }
-            function f(e, a, c) {
-                return "one" == ((n = e), (t = !String(n).split(".")[1]), 1 == n && t ? "one" : "other") ? a : c;
+            function f(e, c, a) {
+                return "one" == ((n = e), (t = !String(n).split(".")[1]), 1 == n && t ? "one" : "other") ? c : a;
                 var n, t;
             }
             n("c39b0e24", "X"),
@@ -5440,8 +5440,8 @@
                 n("i8cae552", "คุณจะช่วยรักษาคุณภาพในหมายเหตุจากชุมชนให้อยู่ในระดับสูงได้ด้วยการให้คะแนน"),
                 n("hd43a218", "คุณเขียนบันทึกถึงขีดจำกัดรายวันแล้ว"),
                 n("aaba8ed2", "มีการจำกัดจำนวนผู้ได้รับมอบหมายของบันทึกที่สามารถเขียนได้ในแต่ละวัน โดยขึ้นอยู่กับผลกระทบของการเขียนของพวกเขาเพื่อรักษาคุณภาพของบันทึกให้อยู่ในระดับสูงและป้องกันสแปม โปรดลองใหม่อีกครั้งในภายหลัง"),
-                n("a67ed4d6", "You’ve reached the limit for adding notes to this author’s posts for now"),
-                n("ic484166", "To keep note quality high and prevent spam, there’s a limit to the number of notes one can write on a specific post author in a given time period. The limit is based on how helpful people have found one’s past notes on that author. Please try again later."),
+                n("a67ed4d6", "ในขณะนี้ คุณเพิ่มหมายเหตุในโพสต์ของผู้เขียนคนนี้ถึงขีดจำกัดแล้ว"),
+                n("ic484166", "เพื่อรักษาคุณภาพของหมายเหตุให้อยู่ในระดับสูงและป้องกันสแปม ระบบจึงจำกัดจำนวนหมายเหตุที่แต่ละคนสามารถเขียนเกี่ยวกับผู้เขียนโพสต์คนใดคนหนึ่งภายในช่วงเวลาหนึ่ง โดยขีดจำกัดนี้ขึ้นอยู่กับว่าผู้คนพบว่าหมายเหตุก่อนหน้ามีประโยชน์มากน้อยเพียงใด โปรดลองใหม่ภายหลัง"),
                 n("b98f077c", "ขอข้อมูลบันทึก"),
                 n("ee691104", "ขอหมายเหตุจากชุมชนเกี่ยวกับโพสต์นี้"),
                 n("f8cbdf02", "คิดว่าโพสต์นี้อาจทำให้เข้าใจผิดใช่ไหม ขอหมายเหตุจากชุมชน"),
@@ -7236,7 +7236,7 @@
                 n("h257d4aa", "เลือกโพสต์เพื่อประชาสัมพันธ์"),
                 n("e9334fe6", "ข้อมูลจะอัปเดตทุกๆ สองสามนาที"),
                 n("a6d7b1d0", "อิงตามข้อมูลภายใน X"),
-                n("h71a00e6", "You’re saving time with ad-free"),
+                n("h71a00e6", "คุณประหยัดเวลาได้ด้วยการใช้งานแบบปลอดโฆษณา"),
                 n("f6c50ec0", "ช่วงทดลองใช้งานแบบปลอดโฆษณาของคุณสิ้นสุดลงแล้ว"),
                 n("e1d1fbca", "คุณสามารถหลีกเลี่ยงได้"),
                 n("a82d7abd", function (e) {
@@ -7869,9 +7869,9 @@
                 n("ee9efbc8", "ดำเนินการต่อเพื่อยกเลิก"),
                 n("c5d9c77a", "ดูเหมือนว่าจะมีการสะดุดเล็กน้อย ไม่ต้องกังวล ไม่ใช่ความผิดของคุณ ปิดหน้าต่างนี้แล้วลองอีกครั้ง"),
                 n("jda53c24", "คุณสามารถยกเลิกระบบสมาชิกของคุณผ่าน Apple App Store");
-            function r(e, a) {
-                for (var c = 0; c < a.length; c++) {
-                    var n = a[c];
+            function r(e, c) {
+                for (var a = 0; a < c.length; a++) {
+                    var n = c[a];
                     (n.enumerable = n.enumerable || !1),
                         (n.configurable = !0),
                         "value" in n && (n.writable = !0),
@@ -7880,15 +7880,15 @@
                             ((t = n.key),
                             (f = void 0),
                             "symbol" ==
-                            typeof (f = (function (e, a) {
+                            typeof (f = (function (e, c) {
                                 if ("object" != typeof e || null === e) return e;
-                                var c = e[Symbol.toPrimitive];
-                                if (void 0 !== c) {
-                                    var n = c.call(e, a || "default");
+                                var a = e[Symbol.toPrimitive];
+                                if (void 0 !== a) {
+                                    var n = a.call(e, c || "default");
                                     if ("object" != typeof n) return n;
                                     throw new TypeError("@@toPrimitive must return a primitive value.");
                                 }
-                                return ("string" === a ? String : Number)(e);
+                                return ("string" === c ? String : Number)(e);
                             })(t, "string"))
                                 ? f
                                 : String(f)),
@@ -7897,14 +7897,14 @@
                 }
                 var t, f;
             }
-            function d(e, a) {
+            function d(e, c) {
                 return (
                     (d = Object.setPrototypeOf
                         ? Object.setPrototypeOf.bind()
-                        : function (e, a) {
-                              return (e.__proto__ = a), e;
+                        : function (e, c) {
+                              return (e.__proto__ = c), e;
                           }),
-                    d(e, a)
+                    d(e, c)
                 );
             }
             n("g0a7a53e", "คุณสามารถยกเลิกระบบสมาชิกของคุณผ่าน Google Play Store"),
@@ -8301,6 +8301,7 @@
                 n("e5e6479e", "ส่งอีเมลถึงเราพร้อมกับชื่่อเรียกหน่วยงานของคุณและรายละเอียดคำถามเพื่อรับการสนับสนุนที่รวดเร็วที่สุด"),
                 n("ica8392a", "เมื่อเราได้รับคำขอของคุณ เราจะตรวจสอบและจัดลำดับความสำคัญตามลำดับที่ได้รับ"),
                 n("ed37e36e", "สิ่งสำคัญ: การขาดชื่่อเรียกขององค์กรของคุณหรือการใช้อีเมลส่วนตัวอาจทำให้เกิดความล่าช้าในการดำเนินการตามคำขอของคุณ"),
+                n("h7e1c146", "Delegate accounts are not currently supported."),
                 n("eb0d4fe2", "สร้างคอลัมน์"),
                 n("e93d2f8a", "ปรับแต่งประสบการณ์ของคุณโดยเพิ่มคอลัมน์หลากหลายประเภท เช่น"),
                 n("e8203d1e", "การค้นหา"),
@@ -8907,9 +8908,9 @@
                 n("b0b22805", function (e) {
                     return "เข้าชม " + e.advertiserName;
                 }),
-                n("c67e71aa", "ดูตอนนี้"),
-                n("a6ada13e", "ช็อปเลย");
-            n("j0f12222", "ดูเพิ่มเติม"),
+                n("c67e71aa", "ดูตอนนี้");
+            n("a6ada13e", "ช็อปเลย"),
+                n("j0f12222", "ดูเพิ่มเติม"),
                 n("f569f7c8", "ไปยังเว็บไซต์"),
                 n("j0c6772a", "เข้าชมเว็บไซต์"),
                 n("f73003aa", "วิดีโอจะเล่นหลังโฆษณา"),
@@ -9530,22 +9531,22 @@
                 n("acddd4d4", "สีแดง"),
                 n("cef9b062", "สีน้ำเงินอมเขียว"),
                 n("d9daefca", "สีเทาเข้ม");
-            var b = c(202784),
+            var b = a(202784),
                 u = [],
                 i = {};
             function o(e) {
                 return e;
             }
             var m = (function (e) {
-                var a, c, n, t, f;
+                var c, a, n, t, f;
                 function m() {
                     return e.apply(this, arguments) || this;
                 }
                 return (
-                    (c = e),
-                    ((a = m).prototype = Object.create(c.prototype)),
-                    (a.prototype.constructor = a),
-                    d(a, c),
+                    (a = e),
+                    ((c = m).prototype = Object.create(a.prototype)),
+                    (c.prototype.constructor = c),
+                    d(c, a),
                     (m.prototype.render = function () {
                         return b.createElement.apply(b, this[this.props.$i18n].reduce(this.templateReducer, [b.Fragment, null]));
                     }),
@@ -12993,10 +12994,10 @@
                             key: "templateReducer",
                             get: function () {
                                 var e,
-                                    a = b.Children.toArray(this.props.children),
-                                    c = ((e = this.props.$i18n), u[i[e]] || o);
+                                    c = b.Children.toArray(this.props.children),
+                                    a = ((e = this.props.$i18n), u[i[e]] || o);
                                 return function (e, n, t) {
-                                    return e.concat(n, a[c(t)]);
+                                    return e.concat(n, c[a(t)]);
                                 };
                             },
                         },
@@ -13005,13 +13006,13 @@
                     Object.defineProperty(n, "prototype", { writable: !1 }),
                     m
                 );
-            })(c(111677)._ActualI18NFormatMessage || b.Component);
+            })(a(111677)._ActualI18NFormatMessage || b.Component);
             n("_ActualI18NFormatMessage", m),
                 n("I18NFormatMessage", function (e) {
                     return b.createElement(m, e);
                 });
-            var g = c(495075);
-            c(800694), c(556829), c(530152), c(658610), c(492344), c(663823);
+            var g = a(495075);
+            a(800694), a(556829), a(530152), a(658610), a(492344), a(663823);
             g._validateParameterTypeNumber, g._validateParameterPresence;
             var h = g._numberRound,
                 s = (g._numberFormat, g._numberFormatterFn),
@@ -13360,4 +13361,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.ca9ffe9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.5532b10a.js.map
