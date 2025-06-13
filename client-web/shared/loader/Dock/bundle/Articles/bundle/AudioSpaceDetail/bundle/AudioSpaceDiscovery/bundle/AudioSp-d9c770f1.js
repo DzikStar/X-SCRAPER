@@ -14,7 +14,7 @@
             var r = i(202784),
                 n = i(523561),
                 s = i(195560);
-            const o = (0, n.Z)({ loader: () => Promise.all([i.e("icons.0"), i.e("modules.common-e907d115"), i.e("modules.common-e019dbda"), i.e("icons.14"), i.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~bundle"), i.e("loader.TimelineRenderer")]).then(i.bind(i, 22371)), renderPlaceholder: (e, t) => r.createElement(s.Z, { hasError: e, onRetry: t }) });
+            const o = (0, n.Z)({ loader: () => Promise.all([i.e("icons.2"), i.e("modules.common-e907d115"), i.e("modules.common-e019dbda"), i.e("icons.6"), i.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~bundle"), i.e("loader.TimelineRenderer")]).then(i.bind(i, 22371)), renderPlaceholder: (e, t) => r.createElement(s.Z, { hasError: e, onRetry: t }) });
         },
         3138: (e, t, i) => {
             i.d(t, { M: () => s });
@@ -843,4 +843,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1.37958f3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1.1bc0bcea.js.map

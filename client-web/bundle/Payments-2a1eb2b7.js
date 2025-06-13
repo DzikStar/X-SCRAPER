@@ -10,6 +10,7 @@
                 i = n(655352);
             const o = a.default.create((e) => ({
                     container: { display: "flex", flexDirection: "column", flexGrow: 1, paddingBottom: e.spaces.space24, paddingTop: e.spaces.space16, gap: e.spaces.space24 },
+                    spaceBetweenRow: { flex: 1, flexDirection: "row", justifyContent: "space-between", alignItems: "center" },
                     paddingWide: { paddingHorizontal: e.spaces.space72 },
                     modalPaddingWide: { paddingHorizontal: e.spaces.space32 },
                     paddingSmall: { paddingHorizontal: e.spaces.space16 },
@@ -67,7 +68,7 @@
                 m = o;
         },
         727384: (e, t, n) => {
-            n.d(t, { BC: () => Ae, BR: () => De, Bj: () => St, Bl: () => Oe, DK: () => Ve, DO: () => mt, Dc: () => Q, EQ: () => Ke, FW: () => yt, Fs: () => it, GU: () => pe, Gl: () => Be, Gs: () => ot, H_: () => nt, Ix: () => Tt, J$: () => at, M9: () => Se, MO: () => ft, Mw: () => Je, NG: () => _e, Oc: () => rt, Ou: () => qe, Q1: () => be, QE: () => Ze, Qu: () => bt, Se: () => tt, So: () => dt, T3: () => Ne, T7: () => kt, Tp: () => ke, Ts: () => Ge, UM: () => Ie, UV: () => Ct, V9: () => Me, XT: () => Ue, _T: () => ze, aY: () => ct, ab: () => ut, bI: () => st, dN: () => Y, fq: () => Dt, gh: () => ht, gx: () => X, i7: () => Pe, iv: () => lt, jm: () => pt, lD: () => de, lw: () => ne, nV: () => J, p2: () => Z, p6: () => xe, pQ: () => ee, qK: () => te, qQ: () => Ye, qU: () => Fe, qc: () => Rt, uG: () => wt, uN: () => Qe, ve: () => Xe, vw: () => G, wg: () => Ce, wu: () => xt, xe: () => $e, y4: () => At, yH: () => gt, zK: () => Ee, zx: () => ae });
+            n.d(t, { BC: () => Ae, BR: () => Se, Bj: () => Dt, Bl: () => Oe, DK: () => Ve, DO: () => mt, Dc: () => Q, EQ: () => Ke, FW: () => yt, Fs: () => it, GU: () => pe, Gl: () => Be, Gs: () => ot, H_: () => nt, Ix: () => Tt, J$: () => at, M9: () => De, MO: () => ft, Mw: () => Je, NG: () => _e, Oc: () => rt, Ou: () => qe, Q1: () => be, QE: () => Ze, Qu: () => bt, Se: () => tt, So: () => dt, T3: () => Ne, T7: () => kt, Tp: () => ke, Ts: () => Ge, UM: () => Ie, UV: () => Ct, V9: () => Me, XT: () => Ue, _T: () => ze, aY: () => ct, ab: () => ut, bI: () => st, dN: () => Y, fq: () => St, gh: () => ht, gx: () => X, i7: () => Pe, iv: () => lt, jm: () => pt, lD: () => de, lw: () => ne, nV: () => J, p2: () => Z, p6: () => xe, pQ: () => ee, qK: () => te, qQ: () => Ye, qU: () => Fe, qc: () => Rt, uG: () => wt, uN: () => Qe, ve: () => Xe, vw: () => G, wg: () => Ce, wu: () => xt, xe: () => $e, y4: () => At, yH: () => gt, zK: () => Ee, zx: () => ae });
             n(543673), n(240753), n(128399), n(136728);
             var a = n(617374),
                 r = n.n(a),
@@ -92,8 +93,8 @@
                 P = n(115571),
                 T = n(810088),
                 v = n(357818),
-                S = n(539660),
-                D = n(724983),
+                D = n(539660),
+                S = n(724983),
                 k = n(297679),
                 A = n(942512),
                 I = n(217995),
@@ -103,8 +104,8 @@
                 O = n(258074),
                 z = n(97882),
                 B = n(514639),
-                W = n(441484),
-                j = n(43429);
+                j = n(441484),
+                W = n(43429);
             const q = "Interest Payout",
                 M = "Deposit",
                 _ = "Withdrawal",
@@ -136,16 +137,16 @@
                 return t.setDate(0), H(t);
             }
             function ee({ account: e, productCode: t, transactionType: n }) {
-                if (t === x.O.Interest) return { title: q, iconType: j.Ms.interest };
-                if (t === x.O.Cashback) return { title: K, iconType: j.Ms.cashback };
+                if (t === x.O.Interest) return { title: q, iconType: W.Ms.interest };
+                if (t === x.O.Cashback) return { title: K, iconType: W.Ms.cashback };
                 const a = t === x.O.Banking;
                 switch (n) {
                     case v.x.AtmWithdrawal:
-                        return { title: $, iconType: j.Ms.atm };
+                        return { title: $, iconType: W.Ms.atm };
                     case v.x.Deposit:
-                        return a ? void 0 : { title: M, iconType: j.Ms.deposit, uri: e?.avatar?.uri };
+                        return a ? void 0 : { title: M, iconType: W.Ms.deposit, uri: e?.avatar?.uri };
                     case v.x.Withdraw:
-                        return a ? void 0 : { title: _, iconType: j.Ms.withdraw, uri: e?.avatar?.uri };
+                        return a ? void 0 : { title: _, iconType: W.Ms.withdraw, uri: e?.avatar?.uri };
                     default:
                         return;
                 }
@@ -211,7 +212,7 @@
                 }
             }
             const se = Object.freeze({ [T.g.Cancelled]: "Cancelled", [T.g.Failed]: "Failed", [T.g.Expired]: "Expired", [T.g.Pending]: "Pending", [T.g.Hold]: "Pending", [T.g.AuthorizationOpen]: "Pending", [T.g.AwaitingUnrecognizedConfirmation]: "Awaiting approval", [T.g.PendingReview]: "Under review", [T.g.PendingRecipientAction]: "Pending", [T.g.PendingRecipientOnboarding]: "Pending", [T.g.AwaitingRequestAcceptance]: "Pending", [T.g.PendingRecipientAcceptance]: "Pending", [T.g.PinVerificationRequired]: "Pending", [T.g.RequestVerificationRequired]: "Pending", [T.g.VerificationRequired]: "Pending", [T.g.RejectedByRecipient]: "Rejected", [T.g.RequestRejected]: "Rejected", [T.g.Settled]: "Completed", [T.g.SoftSettled]: "Completed", [T.g.AuthorizationClosed]: "Completed", [T.g.PendingFundingTransactionSettlement]: "Pending", [T.g.CreditedAwaitingSettlement]: "Pending" }),
-                ie = Object.freeze({ [S.P.RejectedLimitsExceeded]: "Declined due to exceeded limits", [S.P.InReview]: "Under review", [S.P.RejectedByUnsupportedRegion]: "Unsupported region", [S.P.RejectedNotSufficientFunds]: "Declined due to insufficient funds", [S.P.RejectedCardPaymentsDisabled]: "Flagged as suspicious", [S.P.UnrecognizedActivityConfirmed]: "Declined", [S.P.UnrecognizedActivityRejected]: "Flagged as suspicious" }),
+                ie = Object.freeze({ [D.P.RejectedLimitsExceeded]: "Declined due to exceeded limits", [D.P.InReview]: "Under review", [D.P.RejectedByUnsupportedRegion]: "Unsupported region", [D.P.RejectedNotSufficientFunds]: "Declined due to insufficient funds", [D.P.RejectedCardPaymentsDisabled]: "Flagged as suspicious", [D.P.UnrecognizedActivityConfirmed]: "Declined", [D.P.UnrecognizedActivityRejected]: "Flagged as suspicious" }),
                 oe = Object.freeze({ [T.g.PendingRecipientAcceptance]: F, [T.g.PendingRecipientOnboarding]: F, [T.g.PendingRecipientAction]: F }),
                 ce = Object.freeze({ [T.g.AwaitingRequestAcceptance]: F, [T.g.PendingRequestAcceptance]: F, [T.g.RequestVerificationRequired]: F });
             function de({ isViewerSender: e, reasonCode: t, status: n }) {
@@ -221,18 +222,18 @@
                 return a ?? r ?? s ?? "";
             }
             function pe({ isViewerSender: e, productCode: t, transactionType: n }) {
-                if (t === x.O.Cashback) return j.NU.credit;
+                if (t === x.O.Cashback) return W.NU.credit;
                 switch (n) {
                     case v.x.Deposit:
-                        return j.NU.credit;
+                        return W.NU.credit;
                     case v.x.Withdraw:
                     case v.x.Payment:
                     case v.x.AtmWithdrawal:
-                        return j.NU.debit;
+                        return W.NU.debit;
                     case v.x.Refund:
-                        return j.NU.credit;
+                        return W.NU.credit;
                     default:
-                        return e ? j.NU.debit : j.NU.credit;
+                        return e ? W.NU.debit : W.NU.credit;
                 }
             }
             const le = Object.freeze({ [g.t.Checking]: "Checking", [g.t.Savings]: "Savings" }),
@@ -270,8 +271,8 @@
             function ve({ status: e, transactionType: t }) {
                 return t === v.x.Transfer && e === T.g.PendingRecipientOnboarding;
             }
-            const Se = ({ isViewerSender: e, status: t, transactionType: n }) => (Re({ status: t, transactionType: n }) || ve({ status: t, transactionType: n })) && !e;
-            function De({ isViewerSender: e, status: t, transactionType: n }) {
+            const De = ({ isViewerSender: e, status: t, transactionType: n }) => (Re({ status: t, transactionType: n }) || ve({ status: t, transactionType: n })) && !e;
+            function Se({ isViewerSender: e, status: t, transactionType: n }) {
                 return Re({ status: t, transactionType: n }) && !e;
             }
             function ke({ isViewerSender: e, status: t, transactionType: n }) {
@@ -292,7 +293,7 @@
                 return Te({ status: t, transactionType: n }) && !e;
             }
             function Ve(e) {
-                return Ie(e) || De(e) || Ae({ status: e.status });
+                return Ie(e) || Se(e) || Ae({ status: e.status });
             }
             function Ue(e) {
                 return Ve(e) || Ne(e) || ke(e);
@@ -306,16 +307,16 @@
             function Be({ status: e }) {
                 return !ze({ status: e });
             }
-            const We = (e) => (e ? `data:image/png;base64,${e}` : ""),
-                je = Object.freeze({ [f.U.AmericanExpress]: "https://abs.twimg.com/responsive-web/client-web/payment-method-amex.b2cd046a.svg", [f.U.Mastercard]: "https://abs.twimg.com/responsive-web/client-web/payment-method-mastercard.f126316a.svg", [f.U.Visa]: "https://abs.twimg.com/responsive-web/client-web/payment-method-visa.c768170a.svg" }),
+            const je = (e) => (e ? `data:image/png;base64,${e}` : ""),
+                We = Object.freeze({ [f.U.AmericanExpress]: "https://abs.twimg.com/responsive-web/client-web/payment-method-amex.b2cd046a.svg", [f.U.Mastercard]: "https://abs.twimg.com/responsive-web/client-web/payment-method-mastercard.f126316a.svg", [f.U.Visa]: "https://abs.twimg.com/responsive-web/client-web/payment-method-visa.c768170a.svg" }),
                 qe = (e) => {
                     if (!e) return null;
                     const { core: t, rest_id: n } = e,
                         a = t?.details ?? {},
                         { account_number_mask: r, bank_account_type: s, bank_name: i, card_brand: o, card_number_mask: c, card_type: d, issued_card_type: p, logo: l, status: u } = a,
                         g = o ? fe[o] : "",
-                        f = o ? je[o] : "";
-                    return s ? { accountName: { name: r ? `${le[s]} (...${r})` : `${le[s]}` }, avatar: { shape: "square", uri: We(l) }, id: n, accountType: i, type: j.dX.bank, label: ye({ status: u }) } : d && c ? { accountName: { name: `${ge[d]} (...${c})` }, avatar: { shape: "square", uri: f }, id: n, accountType: i, brandName: g, type: j.dX.card, label: ye({ status: u }), issuedCardAccountName: !p || (p !== w.W.IssuedCardTypePhysical && p !== w.W.IssuedCardTypeVirtual) ? void 0 : `${ue[p]} (...${c})` } : null;
+                        f = o ? We[o] : "";
+                    return s ? { accountName: { name: r ? `${le[s]} (...${r})` : `${le[s]}` }, avatar: { shape: "square", uri: je(l) }, id: n, accountType: i, type: W.dX.bank, label: ye({ status: u }) } : d && c ? { accountName: { name: `${ge[d]} (...${c})` }, avatar: { shape: "square", uri: f }, id: n, accountType: i, brandName: g, type: W.dX.card, label: ye({ status: u }), issuedCardAccountName: !p || (p !== w.W.IssuedCardTypePhysical && p !== w.W.IssuedCardTypeVirtual) ? void 0 : `${ue[p]} (...${c})` } : null;
                 },
                 Me = (e) => {
                     const t = e?.core?.supported_transfer_methods,
@@ -323,11 +324,11 @@
                         a = t?.pull_transfer_methods?.[0];
                     return { debitMethod: n, creditMethod: a };
                 },
-                _e = ({ creditMethod: e, debitMethod: t, methodConfigs: n, transferDirection: a }) => (a === j.Rz.debit && t ? n.debitMethodConfigs?.get(t) : a === j.Rz.credit && e ? n.creditMethodConfigs?.get(e) : null),
+                _e = ({ creditMethod: e, debitMethod: t, methodConfigs: n, transferDirection: a }) => (a === W.Rz.debit && t ? n.debitMethodConfigs?.get(t) : a === W.Rz.credit && e ? n.creditMethodConfigs?.get(e) : null),
                 $e = ({ method: e, methodConfigs: t, transferDirection: n }) => {
                     const a = qe(e),
                         { creditMethod: r, debitMethod: s } = Me(e),
-                        i = n === j.Rz.debit && s ? t.debitMethodConfigs?.get(s) : n === j.Rz.credit && r ? t.creditMethodConfigs?.get(r) : null;
+                        i = n === W.Rz.debit && s ? t.debitMethodConfigs?.get(s) : n === W.Rz.credit && r ? t.creditMethodConfigs?.get(r) : null;
                     return a ? { ...a, config: i, debitMethod: s, creditMethod: r } : null;
                 },
                 Fe = ({ productCode: e, transactionType: t }) => e === x.O.Issuing && (t === v.x.Payment || t === v.x.Refund || t === v.x.AtmWithdrawal),
@@ -335,7 +336,7 @@
                 Ee = ({ amountType: e, merchantDetails: t, productCode: n, transactionType: a }) => {
                     const r = a === v.x.AtmWithdrawal,
                         s = Fe({ productCode: n, transactionType: a });
-                    return (Ke({ productCode: n, transactionType: a }) || s) && t ? { ...t, type: r ? j.wC.atm : s ? j.wC.card : e === j.NU.credit ? j.wC.bankDeposit : j.wC.bankWithdraw } : void 0;
+                    return (Ke({ productCode: n, transactionType: a }) || s) && t ? { ...t, type: r ? W.wC.atm : s ? W.wC.card : e === W.NU.credit ? W.wC.bankDeposit : W.wC.bankWithdraw } : void 0;
                 },
                 He = ({ handleEmptyList: e, key: t, store: n }) => {
                     const a = n.getRoot(),
@@ -366,9 +367,9 @@
                     });
                 },
                 Ye = (e) => {
-                    const t = (0, o.getStorageKey)(O.Z.fragment.selections[0], { search_filter_id: j.$W });
+                    const t = (0, o.getStorageKey)(O.Z.fragment.selections[0], { search_filter_id: W.$W });
                     Le(e, t);
-                    const n = (0, o.getStorageKey)(D.Z.fragment.selections[0], {});
+                    const n = (0, o.getStorageKey)(S.Z.fragment.selections[0], {});
                     He({ store: e, key: n });
                     const a = (0, o.getStorageKey)(k.Z.fragment.selections[0], {});
                     Le(e, a), et(e);
@@ -447,7 +448,7 @@
                 Rt = ({ challengeInitiator: e, closePath: t, environment: n, history: a }) => {
                     switch ((at(n), e)) {
                         case B.kW.auth:
-                            W.Z.closeChallenge();
+                            j.Z.closeChallenge();
                             break;
                         case B.kW.preference:
                             ((e) => {
@@ -461,8 +462,8 @@
                 Pt = { [B.kW.forgotPin]: B.jR, [B.kW.changeCardPin]: B.SR },
                 Tt = ({ challengeInitiator: e }) => (e ? Pt[e] : void 0) ?? B.vw,
                 vt = (e) => parseInt(e, 10) / 100,
-                St = ({ apy: e }) => `${vt(e).toFixed(2)}% APY`,
-                Dt = ({ rate: e }) => `${vt(e)}% Everywhere`,
+                Dt = ({ apy: e }) => `${vt(e).toFixed(2)}% APY`,
+                St = ({ rate: e }) => `${vt(e)}% Everywhere`,
                 kt = (e) => {
                     const t = e?.address,
                         n = t?.postal_code;
@@ -475,4 +476,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.64e9a12a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.f03cd21a.js.map

@@ -1353,6 +1353,9 @@
                     return "Translated from " + a.originLanguage + " by";
                 }),
                 o("b7cb4fab", "Prevedeno pomoću servisa "),
+                o("e0bffbf8", "About automatic translation"),
+                o("e839db3a", "Odbaci"),
+                o("a15585b4", "Language Settings"),
                 o("d4c339b9", function (a) {
                     return "Objava korisnika/ce " + a.fullName + " (@" + a.screenName + ")";
                 }),
@@ -1729,7 +1732,6 @@
                 o("bf994ab2", "Samo vi"),
                 o("e7b4b30a", "Samo računi koje ste spomenuli"),
                 o("ca6500a8", "Onemogući vanjske veze u odgovorima"),
-                o("e839db3a", "Odbaci"),
                 o("c8a98928", "Promotivna slika"),
                 o("f5b3dc1e", "Možda poslije"),
                 o("ae0c5fbe", "Prilikom promjene postavke o korisnicima koji mogu odgovoriti dogodila se pogreška"),
@@ -1926,10 +1928,10 @@
                 o("da8ac57c", "Uredi titlove"),
                 o("a8fdd09c", "Objavi članak"),
                 o("d8047cc8", "Objavi"),
-                o("ff7ddca2", "Vaš će se članak prikazati kao objava nakon što ga objavite. Možete ga pronaći i na kartici Članci na svom profilu."),
-                o("ef34d7be", "Kontrole za publiku i odgovor ne mogu se uređivati nakon objave članka."),
-                o("e52d4998", "Odaberite publiku");
-            o("d7985b24", "Odaberite tko sve može odgovoriti na ovaj članak"),
+                o("ff7ddca2", "Vaš će se članak prikazati kao objava nakon što ga objavite. Možete ga pronaći i na kartici Članci na svom profilu.");
+            o("ef34d7be", "Kontrole za publiku i odgovor ne mogu se uređivati nakon objave članka."),
+                o("e52d4998", "Odaberite publiku"),
+                o("d7985b24", "Odaberite tko sve može odgovoriti na ovaj članak"),
                 o("b5660338", "Pretpregled vremenske crte"),
                 o("hff1b97a", "Odgovoriti mogu samo pretplatnici."),
                 o("a330771e", "Kopirajte vezu u međuspremnik"),
@@ -2982,10 +2984,10 @@
                 o("jb0a4c36", "Blog"),
                 o("ce6d095a", "Posao"),
                 o("e0adec82", "Resursi za robne marke"),
-                o("df1b7550", "Marketing"),
-                o("he258678", "X za tvrtke"),
-                o("c6f58084", "Razvojni inženjeri");
-            o("d83f18d2", "Direktorij"),
+                o("df1b7550", "Marketing");
+            o("he258678", "X za tvrtke"),
+                o("c6f58084", "Razvojni inženjeri"),
+                o("d83f18d2", "Direktorij"),
                 o("hc5aa17c", "Preuzmite aplikaciju X"),
                 o("j0693948", "Preuzmite aplikaciju Grok"),
                 o("fce9ecce", "Preporučeni videozapisi"),
@@ -3894,14 +3896,14 @@
                 o("caa8d928", "Uključivanje/isključivanje prigušivanja buke"),
                 o("b5d88f0c", "Samo zaposlenici"),
                 o("c855ab8e", "Samo za pretplatnike"),
-                o("ddeb0a3c", "Evo te Zajednice. Sviđaju vam se korisnici? Pogledajte."),
-                o("e111f531", function (a) {
-                    return a.count + " slušatelj" + n(a.count, "a", "", "a");
-                }),
+                o("ddeb0a3c", "Evo te Zajednice. Sviđaju vam se korisnici? Pogledajte.");
+            o("e111f531", function (a) {
+                return a.count + " slušatelj" + n(a.count, "a", "", "a");
+            }),
                 o("cbef820f", function (a) {
                     return a.screenName + " podijelio/la je prijenos!";
-                });
-            o("e3275464", "Pošalji"),
+                }),
+                o("e3275464", "Pošalji"),
                 o("cededf2a", "Voditelj(ica)"),
                 o("i2caef48", "Suvoditelji"),
                 o("j245c654", "Govornici"),
@@ -4934,10 +4936,10 @@
                 o("d9508ab0", "prikaza"),
                 o("d9f9dec0", "Prikaži Prostor"),
                 o("h0c1f37a", "Prikaži analitičke podatke o Prostoru"),
-                o("e41fffbc", "Ukupno vrijeme gledanja vaših videozapisa."),
-                o("if2909ba", "Vrijeme gledanja"),
-                o("i0e5bf4c", "Vaši videozapisi");
-            o("ed99baea", "Rani pristup beta verziji"),
+                o("e41fffbc", "Ukupno vrijeme gledanja vaših videozapisa.");
+            o("if2909ba", "Vrijeme gledanja"),
+                o("i0e5bf4c", "Vaši videozapisi"),
+                o("ed99baea", "Rani pristup beta verziji"),
                 o("gf898b70", "Napredno pretraživanje"),
                 o("d2a43a7a", "sadrži i „ai” i „pokretanje”"),
                 o("a8584698", "AI pokretanje"),
@@ -5888,12 +5890,12 @@
                 }),
                 o("f191a2ba", "postavkama pretraživanja"),
                 o("a068008a", "Mape se trenutno ne učitavaju"),
-                o("f075b0e8", "Uređivanje mape"),
-                o("beba2a0e", "Stvori novu mapu s knjižnim oznakama"),
+                o("f075b0e8", "Uređivanje mape");
+            o("beba2a0e", "Stvori novu mapu s knjižnim oznakama"),
                 o("e41c9b4f", function (a) {
                     return "Saved to " + a.bookmarkFolderName;
-                });
-            o("h18f86a4", "Izbriši mapu"),
+                }),
+                o("h18f86a4", "Izbriši mapu"),
                 o("f4ea967a", "Mapa je izbrisana"),
                 o("b670aa62", "Naziv mape"),
                 o("aece5462", "Naziv mape uspješno je ažuriran"),
@@ -6894,10 +6896,10 @@
                 o("d70c24d4", "Upotrebljava se kako bi kandidati jednostavnije pretraživali vaš posao."),
                 o("de1c4376", "Visina plaće"),
                 o("hf352d42", "Dodajte opcionalan raspon plaće koji će biti vidljiv kandidatima. Ako odlučite da ga ne želite dodati, provjerite pridržavate li se svih zakona o transparentnosti plaća na lokaciji u kojoj zapošljavate."),
-                o("ede7d0a2", "Valuta"),
-                o("b925c18c", "Vrsta plaće"),
-                o("j3d242ce", "Raspon nije valjan");
-            o("f4d07bd2", "Uključite neobavezne podatke kako biste kandidatima olakšali otkrivanje vaših radnih mjesta putem pretraživanja."),
+                o("ede7d0a2", "Valuta");
+            o("b925c18c", "Vrsta plaće"),
+                o("j3d242ce", "Raspon nije valjan"),
+                o("f4d07bd2", "Uključite neobavezne podatke kako biste kandidatima olakšali otkrivanje vaših radnih mjesta putem pretraživanja."),
                 o("b8cbb51a", "Sažetak posla"),
                 o("bda6881e", "Taj je posao uvezen iz vašeg sustava za praćenje kandidata (ATS). Imajte na umu da se samo određena polja mogu izmijeniti."),
                 o("b075c68a", "Uredi posao"),
@@ -7874,9 +7876,7 @@
                 o("d7b8387e", "Ako ste već otkazali pretplatu, više ništa ne morate učiniti. Ona će automatski isteći po završetku ciklusa naplate."),
                 o("f4166d9a", "Želite otkazati pretplatu?"),
                 o("b74ff5fc", "Ako otkažete pretplatu, ona će automatski isteći po završetku ciklusa naplate."),
-                o("ee9efbc8", "Nastavi na otkazivanje"),
-                o("c5d9c77a", "Izgleda da je došlo do manjih poteškoća u radu. Ne brinite, nije vaša greška. Zatvorite taj prozor i pokušajte ponovno."),
-                o("jda53c24", "Pretplatu možete otkazati putem servisa Apple App Store.");
+                o("ee9efbc8", "Nastavi na otkazivanje");
             function r(a, e) {
                 for (var i = 0; i < e.length; i++) {
                     var o = e[i];
@@ -7915,7 +7915,9 @@
                     j(a, e)
                 );
             }
-            o("g0a7a53e", "Pretplatu možete otkazati putem servisa Google Play Store."),
+            o("c5d9c77a", "Izgleda da je došlo do manjih poteškoća u radu. Ne brinite, nije vaša greška. Zatvorite taj prozor i pokušajte ponovno."),
+                o("jda53c24", "Pretplatu možete otkazati putem servisa Apple App Store."),
+                o("g0a7a53e", "Pretplatu možete otkazati putem servisa Google Play Store."),
                 o("i5f14be7", function (a) {
                     return "Dobro došli natrag, " + a.displayName;
                 }),
@@ -8912,12 +8914,12 @@
                 }),
                 o("dff1ddd9", function (a) {
                     return "Idi na " + a.advertiserName;
-                }),
-                o("b0b22805", function (a) {
-                    return "Posjetite " + a.advertiserName;
-                }),
-                o("c67e71aa", "Gledajte odmah");
-            o("a6ada13e", "Odmah kupujte"),
+                });
+            o("b0b22805", function (a) {
+                return "Posjetite " + a.advertiserName;
+            }),
+                o("c67e71aa", "Gledajte odmah"),
+                o("a6ada13e", "Odmah kupujte"),
                 o("j0f12222", "Pogledajte više"),
                 o("f569f7c8", "Idi na web-mjesto"),
                 o("j0c6772a", "Posjetite web-mjesto"),
@@ -10165,6 +10167,12 @@
                             key: "c5f6ee1d",
                             get: function () {
                                 return ["", " "];
+                            },
+                        },
+                        {
+                            key: "b6411d33",
+                            get: function () {
+                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
                             },
                         },
                         {
@@ -13384,4 +13392,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.274e1eaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.d19beb8a.js.map

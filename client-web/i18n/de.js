@@ -1346,6 +1346,9 @@
                     return "Original (" + e.originLanguage + ") übersetzt von";
                 }),
                 t("b7cb4fab", "Übersetzt von"),
+                t("e0bffbf8", "About automatic translation"),
+                t("e839db3a", "Verwerfen"),
+                t("a15585b4", "Language Settings"),
                 t("d4c339b9", function (e) {
                     return "Post from " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1722,7 +1725,6 @@
                 t("bf994ab2", "Nur du"),
                 t("e7b4b30a", "Nur Accounts, die du erwähnt hast"),
                 t("ca6500a8", "Externe Links in Antworten deaktivieren"),
-                t("e839db3a", "Verwerfen"),
                 t("c8a98928", "Unterstützendes Bild"),
                 t("f5b3dc1e", "Vielleicht später"),
                 t("ae0c5fbe", "Fehler bei der Änderung, wer antworten kann"),
@@ -1919,10 +1921,10 @@
                 t("da8ac57c", "Beschriftung bearbeiten"),
                 t("a8fdd09c", "Artikel veröffentlichen"),
                 t("d8047cc8", "Veröffentlichen"),
-                t("ff7ddca2", "Dein Artikel erscheint als Post, wenn du ihn veröffentlichst. Außerdem findest du ihn im Tab „Artikel“ in deinem Profil."),
-                t("ef34d7be", "Steueroptionen für Zielgruppe und Antworten können nicht mehr bearbeitet werden, nachdem ein Artikel veröffentlicht wurde."),
-                t("e52d4998", "Deine Zielgruppe wählen");
-            t("d7985b24", "Wählen, wer auf diesen Artikel antworten kann"),
+                t("ff7ddca2", "Dein Artikel erscheint als Post, wenn du ihn veröffentlichst. Außerdem findest du ihn im Tab „Artikel“ in deinem Profil.");
+            t("ef34d7be", "Steueroptionen für Zielgruppe und Antworten können nicht mehr bearbeitet werden, nachdem ein Artikel veröffentlicht wurde."),
+                t("e52d4998", "Deine Zielgruppe wählen"),
+                t("d7985b24", "Wählen, wer auf diesen Artikel antworten kann"),
                 t("b5660338", "Timeline-Vorschau"),
                 t("hff1b97a", "Nur Abonnent*innen können antworten."),
                 t("a330771e", "Link in deine Zwischenablage kopieren"),
@@ -2975,10 +2977,10 @@
                 t("jb0a4c36", "Blog"),
                 t("ce6d095a", "Karriere"),
                 t("e0adec82", "Markenressourcen"),
-                t("df1b7550", "Marketing"),
-                t("he258678", "X für Unternehmen"),
-                t("c6f58084", "Entwickler");
-            t("d83f18d2", "Verzeichnis"),
+                t("df1b7550", "Marketing");
+            t("he258678", "X für Unternehmen"),
+                t("c6f58084", "Entwickler"),
+                t("d83f18d2", "Verzeichnis"),
                 t("hc5aa17c", "Hol dir die X App"),
                 t("j0693948", "Hol dir die Grok App"),
                 t("fce9ecce", "Vorgeschlagene Videos"),
@@ -3887,14 +3889,14 @@
                 t("caa8d928", "Rauschunterdrückung ein-/ausschalten"),
                 t("b5d88f0c", "Nur Beschäftigte"),
                 t("c855ab8e", "Nur Abonnent*innen"),
-                t("ddeb0a3c", "Hier ist die Community. Magst du die Leute? Sieh's dir mal an."),
-                t("e111f531", function (e) {
-                    return e.count + " ha" + r(e.count, "t", "ben") + " zugehört";
-                }),
+                t("ddeb0a3c", "Hier ist die Community. Magst du die Leute? Sieh's dir mal an.");
+            t("e111f531", function (e) {
+                return e.count + " ha" + r(e.count, "t", "ben") + " zugehört";
+            }),
                 t("cbef820f", function (e) {
                     return e.screenName + " hat den Stream repostet!";
-                });
-            t("e3275464", "Senden"),
+                }),
+                t("e3275464", "Senden"),
                 t("cededf2a", "Host"),
                 t("i2caef48", "Co-Hosts"),
                 t("j245c654", "Sprecher"),
@@ -4927,10 +4929,10 @@
                 t("d9508ab0", "Mal angezeigt"),
                 t("d9f9dec0", "Space anzeigen"),
                 t("h0c1f37a", "Space-Statistiken anzeigen"),
-                t("e41fffbc", "Wie lange deine Videos insgesamt angezeigt wurden."),
-                t("if2909ba", "Abspielzeit"),
-                t("i0e5bf4c", "Deine Videos");
-            t("ed99baea", "Vorzeitiger Beta-Zugriff"),
+                t("e41fffbc", "Wie lange deine Videos insgesamt angezeigt wurden.");
+            t("if2909ba", "Abspielzeit"),
+                t("i0e5bf4c", "Deine Videos"),
+                t("ed99baea", "Vorzeitiger Beta-Zugriff"),
                 t("gf898b70", "Erweiterte Suche"),
                 t("d2a43a7a", "enthält sowohl „ai“ als auch „startup“"),
                 t("a8584698", "ai startup"),
@@ -5881,12 +5883,12 @@
                 }),
                 t("f191a2ba", "Sucheinstellungen"),
                 t("a068008a", "Ordner können im Moment nicht geladen werden"),
-                t("f075b0e8", "Ordner bearbeiten"),
-                t("beba2a0e", "Neuen Lesezeichenordner erstellen"),
+                t("f075b0e8", "Ordner bearbeiten");
+            t("beba2a0e", "Neuen Lesezeichenordner erstellen"),
                 t("e41c9b4f", function (e) {
                     return "Gespeichert in " + e.bookmarkFolderName;
-                });
-            t("h18f86a4", "Ordner löschen"),
+                }),
+                t("h18f86a4", "Ordner löschen"),
                 t("f4ea967a", "Ordner wurde gelöscht"),
                 t("b670aa62", "Ordnername"),
                 t("aece5462", "Ordnername wurde erfolgreich aktualisiert"),
@@ -6887,10 +6889,10 @@
                 t("d70c24d4", "Hilft Kandidat*innen bei der Suche nach deinem Job."),
                 t("de1c4376", "Gehaltsspanne"),
                 t("hf352d42", "Füge eine optionale Gehaltsspanne hinzu, die für Kandidat*innen sichtbar ist. Wenn du dich dagegen entscheidest, musst du sicherstellen, dass du dadurch nicht gegen Gesetze zur Gehaltstransparenz verstößt, die am Ort der Einstellung gelten."),
-                t("ede7d0a2", "Währung"),
-                t("b925c18c", "Gehaltstyp"),
-                t("j3d242ce", "Ungültiger Bereich");
-            t("f4d07bd2", "Nimm optionale Details auf, damit Kandidat*innen ihre Rollen mit der Suche leichter entdecken können."),
+                t("ede7d0a2", "Währung");
+            t("b925c18c", "Gehaltstyp"),
+                t("j3d242ce", "Ungültiger Bereich"),
+                t("f4d07bd2", "Nimm optionale Details auf, damit Kandidat*innen ihre Rollen mit der Suche leichter entdecken können."),
                 t("b8cbb51a", "Jobzusammenfassung"),
                 t("bda6881e", "Dieser Job wurde aus deinem Applicant Tracking System (ATS) importiert. Beachte bitte, dass nur bestimmte Felder geändert werden können."),
                 t("b075c68a", "Job bearbeiten"),
@@ -7867,9 +7869,7 @@
                 t("d7b8387e", "Wenn du bereits gekündigt hast, gibt es nichts mehr zu tun. Dein Abonnement läuft am Ende des Abrechnungszeitraums automatisch aus."),
                 t("f4166d9a", "Du möchtest dein Abonnement kündigen?"),
                 t("b74ff5fc", "Wenn du kündigst, läuft dein Abonnement automatisch am Ende des Abrechnungszeitraums aus."),
-                t("ee9efbc8", "Weiter zur Kündigung"),
-                t("c5d9c77a", "Es sieht so aus, als ob es einen kleinen Fehler gab. Aber keine Sorge, es ist nicht deine Schuld. Schließe dieses Fenster und versuche es noch einmal."),
-                t("jda53c24", "Du kannst dein Abonnement über den Apple App Store kündigen.");
+                t("ee9efbc8", "Weiter zur Kündigung");
             function d(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7908,7 +7908,9 @@
                     s(e, n)
                 );
             }
-            t("g0a7a53e", "Du kannst dein Abonnement über den Google Play Store kündigen."),
+            t("c5d9c77a", "Es sieht so aus, als ob es einen kleinen Fehler gab. Aber keine Sorge, es ist nicht deine Schuld. Schließe dieses Fenster und versuche es noch einmal."),
+                t("jda53c24", "Du kannst dein Abonnement über den Apple App Store kündigen."),
+                t("g0a7a53e", "Du kannst dein Abonnement über den Google Play Store kündigen."),
                 t("i5f14be7", function (e) {
                     return "Willkommen zurück, " + e.displayName;
                 }),
@@ -8905,12 +8907,12 @@
                 }),
                 t("dff1ddd9", function (e) {
                     return "Zu " + e.advertiserName + " wechseln";
-                }),
-                t("b0b22805", function (e) {
-                    return e.advertiserName + " besuchen";
-                }),
-                t("c67e71aa", "Jetzt ansehen");
-            t("a6ada13e", "Jetzt kaufen"),
+                });
+            t("b0b22805", function (e) {
+                return e.advertiserName + " besuchen";
+            }),
+                t("c67e71aa", "Jetzt ansehen"),
+                t("a6ada13e", "Jetzt kaufen"),
                 t("j0f12222", "Mehr anzeigen"),
                 t("f569f7c8", "Zu Website wechseln"),
                 t("j0c6772a", "Website besuchen"),
@@ -10164,6 +10166,12 @@
                             key: "c5f6ee1d",
                             get: function () {
                                 return ["", " "];
+                            },
+                        },
+                        {
+                            key: "b6411d33",
+                            get: function () {
+                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
                             },
                         },
                         {
@@ -13376,4 +13384,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.4d304e6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.2966ec9a.js.map

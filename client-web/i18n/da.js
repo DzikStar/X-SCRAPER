@@ -1346,6 +1346,9 @@
                     return "Oversat fra " + e.originLanguage + " af";
                 }),
                 t("b7cb4fab", "Oversat af"),
+                t("e0bffbf8", "About automatic translation"),
+                t("e839db3a", "Afvis"),
+                t("a15585b4", "Language Settings"),
                 t("d4c339b9", function (e) {
                     return "Post fra " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1722,7 +1725,6 @@
                 t("bf994ab2", "Kun dig"),
                 t("e7b4b30a", "Kun konti, du har omtalt"),
                 t("ca6500a8", "Deaktiver eksterne links i svar"),
-                t("e839db3a", "Afvis"),
                 t("c8a98928", "Salgsfremmende billede"),
                 t("f5b3dc1e", "Måske senere"),
                 t("ae0c5fbe", "Fejl under ændring af, hvem der kan svare"),
@@ -1919,10 +1921,10 @@
                 t("da8ac57c", "Rediger billedtekst"),
                 t("a8fdd09c", "Udgiv Artikel"),
                 t("d8047cc8", "Udgiv"),
-                t("ff7ddca2", "Din Artikel vil blive vist som en post, når du udgiver den. Du kan også finde den på fanen Artikler på din profil."),
-                t("ef34d7be", "Indstillingerne for målgruppe og svar kan ikke ændres, når en Artikel er blevet udgivet."),
-                t("e52d4998", "Vælg din målgruppe");
-            t("d7985b24", "Vælg, hvem der kan svare på denne artikel"),
+                t("ff7ddca2", "Din Artikel vil blive vist som en post, når du udgiver den. Du kan også finde den på fanen Artikler på din profil.");
+            t("ef34d7be", "Indstillingerne for målgruppe og svar kan ikke ændres, når en Artikel er blevet udgivet."),
+                t("e52d4998", "Vælg din målgruppe"),
+                t("d7985b24", "Vælg, hvem der kan svare på denne artikel"),
                 t("b5660338", "Forhåndsvisning af tidslinje"),
                 t("hff1b97a", "Kun abonnenter kan svare."),
                 t("a330771e", "Kopier linket til din udklipsholder"),
@@ -2975,10 +2977,10 @@
                 t("jb0a4c36", "Blog"),
                 t("ce6d095a", "Karrierer"),
                 t("e0adec82", "Brandressourcer"),
-                t("df1b7550", "Marketing"),
-                t("he258678", "X til virksomheder"),
-                t("c6f58084", "Udviklere");
-            t("d83f18d2", "Oversigt"),
+                t("df1b7550", "Marketing");
+            t("he258678", "X til virksomheder"),
+                t("c6f58084", "Udviklere"),
+                t("d83f18d2", "Oversigt"),
                 t("hc5aa17c", "Hent X-appen"),
                 t("j0693948", "Hent Grok-appen"),
                 t("fce9ecce", "Foreslåede videoer"),
@@ -3887,14 +3889,14 @@
                 t("caa8d928", "Slå støjdæmpning til og fra"),
                 t("b5d88f0c", "Kun medarbejdere"),
                 t("c855ab8e", "Kun for abonnenter"),
-                t("ddeb0a3c", "Her er Fællesskabet. Synes du om personerne? Tag et kig."),
-                t("e111f531", function (e) {
-                    return e.count + " følger med";
-                }),
+                t("ddeb0a3c", "Her er Fællesskabet. Synes du om personerne? Tag et kig.");
+            t("e111f531", function (e) {
+                return e.count + " følger med";
+            }),
                 t("cbef820f", function (e) {
                     return e.screenName + " repostede streamingen!";
-                });
-            t("e3275464", "Send"),
+                }),
+                t("e3275464", "Send"),
                 t("cededf2a", "Vært"),
                 t("i2caef48", "Medværter"),
                 t("j245c654", "Talere"),
@@ -4927,10 +4929,10 @@
                 t("d9508ab0", "visninger"),
                 t("d9f9dec0", "Se Rum"),
                 t("h0c1f37a", "Se rumanalysen"),
-                t("e41fffbc", "Den samlede visningstid for dine videoer."),
-                t("if2909ba", "Visningstid"),
-                t("i0e5bf4c", "Dine videoer");
-            t("ed99baea", "Tidlig beta-adgang"),
+                t("e41fffbc", "Den samlede visningstid for dine videoer.");
+            t("if2909ba", "Visningstid"),
+                t("i0e5bf4c", "Dine videoer"),
+                t("ed99baea", "Tidlig beta-adgang"),
                 t("gf898b70", "Avanceret søgning"),
                 t("d2a43a7a", 'indeholder både "ai" og "startup"'),
                 t("a8584698", "ai startup"),
@@ -5881,12 +5883,12 @@
                 }),
                 t("f191a2ba", "søgeindstillinger"),
                 t("a068008a", "Mapper indlæses ikke lige nu"),
-                t("f075b0e8", "Rediger mappe"),
-                t("beba2a0e", "Opret en ny mappe til bogmærker"),
+                t("f075b0e8", "Rediger mappe");
+            t("beba2a0e", "Opret en ny mappe til bogmærker"),
                 t("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
-                });
-            t("h18f86a4", "Slet mappe"),
+                }),
+                t("h18f86a4", "Slet mappe"),
                 t("f4ea967a", "Mappen er blevet slettet"),
                 t("b670aa62", "Mappenavn"),
                 t("aece5462", "Mappenavnet er blevet opdateret"),
@@ -6887,10 +6889,10 @@
                 t("d70c24d4", "Bruges til at hjælpe ansøgere med at søge efter din stilling."),
                 t("de1c4376", "Løninterval"),
                 t("hf352d42", "Tilføj et valgfrit løninterval, som vil være synligt for ansøgere. Hvis du vælger ikke at gøre det, skal du være opmærksom på eventuelle love om løngennemsigtighed på den lokalitet, hvor du ansætter."),
-                t("ede7d0a2", "Valuta"),
-                t("b925c18c", "Løntype"),
-                t("j3d242ce", "Ugyldigt interval");
-            t("f4d07bd2", "Inkluder valgfrie oplysninger for at gøre det lettere for ansøgere at finde dine stillinger med søgning."),
+                t("ede7d0a2", "Valuta");
+            t("b925c18c", "Løntype"),
+                t("j3d242ce", "Ugyldigt interval"),
+                t("f4d07bd2", "Inkluder valgfrie oplysninger for at gøre det lettere for ansøgere at finde dine stillinger med søgning."),
                 t("b8cbb51a", "Stillingsoversigt"),
                 t("bda6881e", "Denne stilling er blevet importeret fra dit ansøgersporingssystem (ATS). Bemærk, at kun specifikke felter kan ændres."),
                 t("b075c68a", "Rediger stilling"),
@@ -7867,9 +7869,7 @@
                 t("d7b8387e", "Hvis du allerede har annulleret, er der ikke mere, du skal gøre. Dit abonnement udløber automatisk ved afslutningen af faktureringsperioden."),
                 t("f4166d9a", "Vil du annullere dit abonnement?"),
                 t("b74ff5fc", "Hvis du annullerer, udløber dit abonnement automatisk ved afslutningen af faktureringsperioden."),
-                t("ee9efbc8", "Fortsæt til annullering"),
-                t("c5d9c77a", "Det ser ud til, at der var en lille forstyrrelse. Bare rolig, det er ikke din skyld. Luk dette vindue, og prøv igen."),
-                t("jda53c24", "Du kan annullere dit abonnement via Apple App Store.");
+                t("ee9efbc8", "Fortsæt til annullering");
             function a(e, r) {
                 for (var n = 0; n < r.length; n++) {
                     var t = r[n];
@@ -7908,7 +7908,9 @@
                     o(e, r)
                 );
             }
-            t("g0a7a53e", "Du kan annullere dit abonnement via Google Play Store."),
+            t("c5d9c77a", "Det ser ud til, at der var en lille forstyrrelse. Bare rolig, det er ikke din skyld. Luk dette vindue, og prøv igen."),
+                t("jda53c24", "Du kan annullere dit abonnement via Apple App Store."),
+                t("g0a7a53e", "Du kan annullere dit abonnement via Google Play Store."),
                 t("i5f14be7", function (e) {
                     return "Velkommen tilbage " + e.displayName;
                 }),
@@ -8905,12 +8907,12 @@
                 }),
                 t("dff1ddd9", function (e) {
                     return "Gå til " + e.advertiserName;
-                }),
-                t("b0b22805", function (e) {
-                    return "Besøg " + e.advertiserName;
-                }),
-                t("c67e71aa", "Se nu");
-            t("a6ada13e", "Køb nu"),
+                });
+            t("b0b22805", function (e) {
+                return "Besøg " + e.advertiserName;
+            }),
+                t("c67e71aa", "Se nu"),
+                t("a6ada13e", "Køb nu"),
                 t("j0f12222", "Se mere"),
                 t("f569f7c8", "Gå til webstedet"),
                 t("j0c6772a", "Besøg webstedet"),
@@ -10151,6 +10153,12 @@
                             key: "c5f6ee1d",
                             get: function () {
                                 return ["", " "];
+                            },
+                        },
+                        {
+                            key: "b6411d33",
+                            get: function () {
+                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
                             },
                         },
                         {
@@ -13365,4 +13373,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.2eb9ee6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.3c7d5b4a.js.map

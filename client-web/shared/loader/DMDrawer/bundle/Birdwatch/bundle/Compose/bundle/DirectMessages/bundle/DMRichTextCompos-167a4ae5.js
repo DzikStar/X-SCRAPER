@@ -99,7 +99,7 @@
                 a = n.n(i),
                 o = n(817480),
                 s = n(323265),
-                d = n(538619),
+                d = n(836938),
                 r = n(542908),
                 l = n(85375),
                 _ = n(94909);
@@ -361,7 +361,7 @@
                 b = n(734408),
                 g = (n(136728), n(85375)),
                 A = n(323265),
-                f = n(538619),
+                f = n(836938),
                 v = n(542908);
             const D = "AndroidApp",
                 O = "IphoneApp",
@@ -736,4 +736,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5.62468b2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5.471b658a.js.map

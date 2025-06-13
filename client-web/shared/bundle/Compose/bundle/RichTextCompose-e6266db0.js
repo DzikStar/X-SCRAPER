@@ -854,9 +854,9 @@
             const o = { introButton: "introButton", nextButton: "nextButton", objectiveScreen: "objectiveScreen", targetingScreen: "targetingScreen", getObjective: (e) => `objectiveScreenObjective${e}`, targetingLocationScreen: "targetingLocationScreen", targetingGenderScreen: "targetingGenderScreen", targetingKeywordsScreen: "targetingKeywordsScreen", budgetSelectScreen: "budgetSelectScreen", reviewScreen: "reviewScreen", reviewButton: "reviewButton", reviewObjectiveDescription: "reviewObjectiveDescription", reviewTargetingDescription: "reviewTargetingDescription", reviewBudgetAndDurationDescription: "reviewBudgetAndDurationDescription", reviewPaymentPivot: "reviewPaymentPivot", reviewPromotionTotalDescription: "reviewPromotionTotalDescription", targetingLocationPivot: "targetingLocationPivot", targetingGenderPivot: "targetingGenderPivot", targetingKeywordsPivot: "targetingKeywordsPivot", backButton: "backButton", targetingLocationSearch: "targetingLocationSearch", targetingLocationItem: "targetingLocationItem", getTargetingGender: (e) => `targetingGenderScreenGender${e}`, targetingKeywordsInput: "targetingKeywordsInput", paymentMethodSelect: "paymentMethodSelect", dropoffScreen: "dropoffScreen" };
         },
         202205: (e, t, n) => {
-            n.d(t, { ZV: () => ne, D_: () => oe, MN: () => te, cU: () => de, gC: () => X, bx: () => Te, C0: () => be, Jy: () => me, lg: () => re, WS: () => Y, s0: () => he, YZ: () => se, Mi: () => ee, Ur: () => o, EP: () => le, hq: () => ue });
+            n.d(t, { ZV: () => re, D_: () => ae, MN: () => oe, gC: () => te, bx: () => Te, C0: () => be, lg: () => ie, WS: () => ee, s0: () => he, YZ: () => le, Mi: () => ne, Ur: () => o, EP: () => de, hq: () => me });
             var o = {};
-            n.r(o), n.d(o, { audienceEstimateCall: () => G, audienceEstimateFail: () => U, audienceEstimateSuccess: () => H, back: () => y, boostCreationClick: () => $, budgetSelectPageLoad: () => d, donePageLoad: () => h, dropOffScreenCancel: () => w, dropOffScreenConfirm: () => f, enrollCouponFail: () => A, enrollCouponSuccess: () => L, fetchCouponFailed: () => M, fetchCouponSuccess: () => R, goalSelectionPageLoad: () => u, graphQlFetchReturnedInvalidData: () => D, introPageLoad: () => s, liteLoadFail: () => v, pageLoadFail: () => T, paymentMethodChanged: () => J, paymentMethodDeleted: () => Q, paymentPageLoad: () => m, paymentPageLoadAddingCard: () => p, paymentSelectPageLoad: () => V, professionalAccountsEligible: () => x, professionalAccountsIneligible: () => E, professionalAccountsNotRetrieved: () => _, professionalAccountsSignup: () => C, promotionCall: () => K, promotionClick: () => j, promotionError: () => q, promotionSuccess: () => z, qpExperimentIntro: () => W, reload: () => b, reviewPageLoad: () => g, setBudgetDuration: () => F, setDailyBudget: () => B, setPromoteGoal: () => N, setTargetingAgeBucket: () => P, setTargetingGender: () => O, setTargetingKeywords: () => Z, setTargetingLocation: () => S, targetingLocationInvalid: () => I, targetingLocationPageLoad: () => l, targetingLocationSearch: () => k, targetingPageLoad: () => c });
+            n.r(o), n.d(o, { audienceEstimateCall: () => U, audienceEstimateFail: () => V, audienceEstimateSuccess: () => W, back: () => y, boostCreationClick: () => q, budgetSelectPageLoad: () => d, donePageLoad: () => h, dropOffScreenCancel: () => w, dropOffScreenConfirm: () => f, enrollCouponFail: () => $, enrollCouponSuccess: () => j, fetchCouponFailed: () => A, fetchCouponSuccess: () => L, goalSelectionPageLoad: () => u, graphQlFetchReturnedInvalidData: () => M, introPageLoad: () => s, liteLoadFail: () => v, pageLoadFail: () => T, paymentMethodChanged: () => Y, paymentMethodDeleted: () => X, paymentPageLoad: () => m, paymentPageLoadAddingCard: () => p, paymentSelectPageLoad: () => Q, professionalAccountsEligible: () => x, professionalAccountsIneligible: () => E, professionalAccountsNotRetrieved: () => _, professionalAccountsSignup: () => C, promotionCall: () => z, promotionClick: () => K, promotionError: () => G, promotionSuccess: () => H, qpExperimentIntro: () => J, reload: () => b, reviewPageLoad: () => g, setBudgetDuration: () => F, setDailyBudget: () => B, setPromoteGoal: () => N, setTargetingAgeBucket: () => P, setTargetingGender: () => O, setTargetingKeywords: () => Z, setTargetingLocation: () => S, targetingLocationInvalid: () => I, targetingLocationPageLoad: () => l, targetingLocationSearch: () => k, targetingLocationSearchGraphQLFail: () => D, targetingLocationSearchRestFail: () => R, targetingPageLoad: () => c });
             n(136728);
             var r = n(688715),
                 a = n(323265),
@@ -946,121 +946,125 @@
                 return { component: "targeting_location", element: "interaction", action: "invalid" };
             }
             function D(e) {
-                return { component: "intro", element: "use_gql_ads_account_data", action: "error", data: { context: e, event_info: e } };
+                return { component: "targeting_location", element: "search_graphql", action: "fail", data: { context: e, event_info: e } };
             }
             function R(e) {
-                return { component: "intro", element: "fetch_coupon", action: "success", data: { context: JSON.stringify(e), event_info: JSON.stringify(e) } };
+                return { component: "targeting_location", element: "search_rest", action: "fail", data: { context: e, event_info: e } };
             }
             function M(e) {
-                return { component: "intro", element: "fetch_coupon", action: "fail", data: { context: e, event_info: e } };
+                return { component: "intro", element: "use_gql_ads_account_data", action: "error", data: { context: e, event_info: e } };
             }
             function L(e) {
-                return { component: "review", element: "enroll_coupon", action: "success", data: { context: JSON.stringify(e), event_info: JSON.stringify(e) } };
+                return { component: "intro", element: "fetch_coupon", action: "success", data: { context: JSON.stringify(e), event_info: JSON.stringify(e) } };
             }
             function A(e) {
+                return { component: "intro", element: "fetch_coupon", action: "fail", data: { context: e, event_info: e } };
+            }
+            function j(e) {
+                return { component: "review", element: "enroll_coupon", action: "success", data: { context: JSON.stringify(e), event_info: JSON.stringify(e) } };
+            }
+            function $(e) {
                 return { component: "review", element: "enroll_coupon", action: "fail", data: { context: e, event_info: e } };
             }
-            function j() {
+            function K() {
                 return { component: "review", element: "promotion", action: "click" };
             }
-            function $() {
+            function q() {
                 return { component: "boost", element: "promotion", action: "click" };
             }
-            function K(e) {
+            function z(e) {
                 return { component: "review", element: "promotion", action: "call", data: { context: JSON.stringify(e), event_info: JSON.stringify(e) } };
             }
-            function q(e) {
+            function G(e) {
                 return { component: "review", element: "promotion", action: "error", data: { context: e, event_info: e } };
             }
-            function z(e) {
+            function H(e) {
                 return { component: "review", element: "promotion", action: "success", data: { context: e, event_info: e } };
             }
-            function G(e) {
+            function U(e) {
                 return { component: "budget_select", element: "audience_estimate", action: "call", data: { context: JSON.stringify(e), event_info: JSON.stringify(e) } };
             }
-            function H(e) {
+            function W(e) {
                 return { component: "budget_select", element: "audience_estimate", action: "success", data: { context: JSON.stringify(e), event_info: JSON.stringify(e) } };
             }
-            function U(e) {
+            function V(e) {
                 return { component: "budget_select", element: "audience_estimate", action: "fail", data: { context: JSON.stringify(e), event_info: JSON.stringify(e) } };
             }
-            function W(e) {
+            function J(e) {
                 return { component: "experiment", element: "intro_skip", action: e ? "enabled" : "disabled" };
             }
-            function V() {
+            function Q() {
                 return { component: "payment_select", element: "page", action: "load" };
             }
-            function J(e) {
+            function Y(e) {
                 return { component: "payment_select", element: "change_payment_method", action: e ? "fail" : "success", data: e ? { context: e, event_info: e } : void 0 };
             }
-            function Q(e) {
+            function X(e) {
                 return { component: "payment_select", element: "delete_payment_method", action: e ? "fail" : "success", data: e ? { context: e, event_info: e } : void 0 };
             }
-            function Y(e, t, n, o) {
+            function ee(e, t, n, o) {
                 return `/${e}/status/${t}/${n}/${o}`;
             }
-            function X(e, t) {
+            function te(e, t) {
                 return `/${e}/status/${t}/analytics`;
             }
-            const ee = (e, t) => (t, n, o, r) => {
+            const ne = (e, t) => (t, n, o, r) => {
                 const a = (function (e, t, n, o) {
                     switch (o) {
                         case "intro":
                         case "objective":
                         case "targeting":
-                            return X(e, t);
+                            return te(e, t);
                         case "budget_select":
                         case "targeting_location":
                         case "targeting_gender":
                         case "targeting_keywords":
-                            return Y(e, t, n, te.Targeting);
+                            return ee(e, t, n, oe.Targeting);
                         case "review":
-                            return Y(e, t, n, te.BudgetSelect);
+                            return ee(e, t, n, oe.BudgetSelect);
                         case "payment":
                         case "payment_select":
                         case "done":
-                            return Y(e, t, n, te.Review);
+                            return ee(e, t, n, oe.Review);
                         default:
                             (0, i.ZP)(`handleGoBack: screenType ${o} is invalid`);
                     }
                 })(t, n, o, r);
                 e.goBack({ backLocation: a });
             };
-            const te = Object.freeze({ Intro: "intro", Objective: "objective", Targeting: "targeting", TargetingLocation: "targeting_location", TargetingGender: "targeting_gender", TargetingKeywords: "targeting_keywords", BudgetSelect: "budget_select", Review: "review", Payment: "payment", Done: "done", PaymentSelect: "payment_select" }),
-                ne = Object.freeze({ Webview: "quick_promote", Rweb: "quick_promote_web" }),
-                oe = Object.freeze({ Objective: 0.2, Targeting: 0.4, BudgetSelect: 0.6, Review: 0.8, Finish: 1 });
-            function re(e, t, n, o, r, a) {
-                return e === ne.Webview ? { isSameHost: !1, url: r ? ae(n, window.location.hostname) : ie(window.location.hostname, t, n, o, a) } : { isSameHost: !0, url: r ? ae(n, window.location.hostname) : ie(window.location.hostname, t, n, o, a) };
+            const oe = Object.freeze({ Intro: "intro", Objective: "objective", Targeting: "targeting", TargetingLocation: "targeting_location", TargetingGender: "targeting_gender", TargetingKeywords: "targeting_keywords", BudgetSelect: "budget_select", Review: "review", Payment: "payment", Done: "done", PaymentSelect: "payment_select" }),
+                re = Object.freeze({ Webview: "quick_promote", Rweb: "quick_promote_web" }),
+                ae = Object.freeze({ Objective: 0.2, Targeting: 0.4, BudgetSelect: 0.6, Review: 0.8, Finish: 1 });
+            function ie(e, t, n, o, r, a) {
+                return e === re.Webview ? { isSameHost: !1, url: r ? se(n, window.location.hostname) : ce(window.location.hostname, t, n, o, a) } : { isSameHost: !0, url: r ? se(n, window.location.hostname) : ce(window.location.hostname, t, n, o, a) };
             }
-            const ae = (e, t) => (0, r.ju)(`https://${t}/i/tfb/v1/advertiser_signup/${ce()}/payment?tweetId=${e}&isAddingPayment=true`);
-            function ie(e, t, n, o, a) {
+            const se = (e, t) => (0, r.ju)(`https://${t}/i/tfb/v1/advertiser_signup/${ue()}/payment?tweetId=${e}&isAddingPayment=true`);
+            function ce(e, t, n, o, a) {
                 if (a && a.isTrue("responsive_web_qp_new_payment_enabled") && t?.id) return (0, r.ju)(`https://x.com/i/payments/${parseInt(t.id, 10).toString(36)}/quick-promote/new`);
                 const i = (0, r.ju)(`https://${e}/i/tfb/v1/advertiser_signup`),
                     s = `?tweetId=${n}`,
-                    c = ce();
+                    c = ue();
                 return t ? (t.timezone && t.country_code ? (o ? `${i}/${c}/vat${s}` : `${i}/${c}/payment${s}`) : `${i}/${c}/setup${s}`) : `${i}/${c}/create_account${s}`;
             }
-            const se = (e) => (t, n, o) => {
+            const le = (e) => (t, n, o) => {
                 switch (o) {
                     case "quick_promote":
                     case "quick_promote_web":
-                        return void e.push(X(t, n));
+                        return void e.push(te(t, n));
                     default:
-                        (0, i.ZP)(`Unknown platformType: "${o}"`), e.push(X(t, n));
+                        (0, i.ZP)(`Unknown platformType: "${o}"`), e.push(te(t, n));
                 }
             };
-            function ce() {
+            function ue() {
                 return a.ZP.isIOS() ? "ios" : a.ZP.isAndroid() ? "android" : "lite";
             }
-            const le = { page: "quick_promote" },
-                ue = (e) => (t) => {
+            const de = { page: "quick_promote" },
+                me = (e) => (t) => {
                     const n = a.ZP.osString(),
                         o = a.ZP.isTwitterApp();
                     e.scribe({ section: o ? `${n}-webview` : n, ...t, data: { url: window.location.href, ...t.data } });
                 },
-                de = Object.freeze({ CurrentCountryMatch: "currentCountryMatch", Match: "match", NoMatch: "noMatch" }),
-                me = (e) => (t, n, o) => (t.toLowerCase().includes(o.toLowerCase()) ? (e.toLowerCase() === n.toLowerCase() ? de.CurrentCountryMatch : de.Match) : de.NoMatch),
-                pe = Object.freeze({ AU: (0, r.ju)("https://legal.x.com/ads-terms/apac.html"), BR: (0, r.ju)("https://legal.x.com/ads-terms/brazil.html"), GB: (0, r.ju)("https://legal.x.com/ads-terms/uk.html"), ID: (0, r.ju)("https://legal.x.com/ads-terms/indonesia.html"), JP: (0, r.ju)("https://legal.x.com/ads-terms/japan.html"), NZ: (0, r.ju)("https://legal.x.com/ads-terms/apac.html"), US: (0, r.ju)("https://legal.x.com/ads-terms/us.html") }),
+                pe = (Object.freeze({ CurrentCountryMatch: "currentCountryMatch", Match: "match", NoMatch: "noMatch" }), Object.freeze({ AU: (0, r.ju)("https://legal.x.com/ads-terms/apac.html"), BR: (0, r.ju)("https://legal.x.com/ads-terms/brazil.html"), GB: (0, r.ju)("https://legal.x.com/ads-terms/uk.html"), ID: (0, r.ju)("https://legal.x.com/ads-terms/indonesia.html"), JP: (0, r.ju)("https://legal.x.com/ads-terms/japan.html"), NZ: (0, r.ju)("https://legal.x.com/ads-terms/apac.html"), US: (0, r.ju)("https://legal.x.com/ads-terms/us.html") })),
                 ge = (0, r.ju)("https://legal.x.com/ads-terms/international.html");
             function he(e) {
                 return (e && pe[e]) || ge;
@@ -1079,4 +1083,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-e6266db0.26bc249a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-e6266db0.ae65f5ea.js.map

@@ -453,6 +453,42 @@
             i.hash = "19f43aff1c7054223a231655937864e7";
             const t = i;
         },
+        217995: (e, a, n) => {
+            n.d(a, { Z: () => t });
+            var l,
+                i = {
+                    fragment: {
+                        argumentDefinitions: [],
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "usePaymentsAccountStatusQuery",
+                        selections: (l = [
+                            {
+                                alias: null,
+                                args: [{ kind: "Literal", name: "s", value: "4721" }],
+                                concreteType: "XPaymentsCustomer",
+                                kind: "LinkedField",
+                                name: "get_customer",
+                                plural: !1,
+                                selections: [
+                                    { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "permissions", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "roles", storageKey: null },
+                                    { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] },
+                                ],
+                                storageKey: 'get_customer(s:"4721")',
+                            },
+                        ]),
+                        type: "Query",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: [], kind: "Operation", name: "usePaymentsAccountStatusQuery", selections: l },
+                    params: { id: "8qNB72LDdA7MIPa-TSs5nw", metadata: {}, name: "usePaymentsAccountStatusQuery", operationKind: "query", text: null },
+                };
+            i.hash = "037ff302ff922b7d6eaecbcec3eb1fdb";
+            const t = i;
+        },
         183276: (e, a, n) => {
             n.d(a, { Z: () => r });
             var l,
@@ -503,6 +539,129 @@
                     params: { id: "jVWKSXmg3ocpQVO4CwvN6w", metadata: {}, name: "usePaymentsBalanceQuery", operationKind: "query", text: null },
                 };
             s.hash = "8c7a7a7001c069e38c076f29d4a69181";
+            const r = s;
+        },
+        990312: (e, a, n) => {
+            n.d(a, { Z: () => r });
+            var l,
+                i,
+                t,
+                s = {
+                    fragment: {
+                        argumentDefinitions: [],
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "usePaymentsConfigQuery",
+                        selections: [
+                            (i = {
+                                alias: null,
+                                args: (l = [{ kind: "Literal", name: "s", value: "4721" }]),
+                                concreteType: "XPaymentsClientConfig",
+                                kind: "LinkedField",
+                                name: "get_payments_client_config",
+                                plural: !1,
+                                selections: [
+                                    { alias: null, args: null, kind: "ScalarField", name: "payments_web_host", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "sardine_client_id", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "sardine_environment", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "payments_help_url", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "payments_report_url", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "socure_public_key", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "sardine_api_subdomain", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "sardine_pixel_subdomain", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "stripe_issuing_publishable_key", storageKey: null },
+                                ],
+                                storageKey: 'get_payments_client_config(s:"4721")',
+                            }),
+                            {
+                                alias: null,
+                                args: l,
+                                concreteType: null,
+                                kind: "LinkedField",
+                                name: "get_transfer_methods_config",
+                                plural: !1,
+                                selections: [
+                                    (t = {
+                                        kind: "InlineFragment",
+                                        selections: [
+                                            {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: "XPaymentsTransferMethodConfig",
+                                                kind: "LinkedField",
+                                                name: "transfer_methods_config",
+                                                plural: !0,
+                                                selections: [
+                                                    {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: "XPaymentsTransferMethodFees",
+                                                        kind: "LinkedField",
+                                                        name: "fees",
+                                                        plural: !1,
+                                                        selections: [
+                                                            {
+                                                                alias: null,
+                                                                args: null,
+                                                                concreteType: "XPaymentsAmount",
+                                                                kind: "LinkedField",
+                                                                name: "fixed_minimum_amount",
+                                                                plural: !1,
+                                                                selections: [
+                                                                    { alias: null, args: null, kind: "ScalarField", name: "currency", storageKey: null },
+                                                                    { alias: null, args: null, kind: "ScalarField", name: "local_micro", storageKey: null },
+                                                                ],
+                                                                storageKey: null,
+                                                            },
+                                                            { alias: null, args: null, kind: "ScalarField", name: "percentage_micro", storageKey: null },
+                                                        ],
+                                                        storageKey: null,
+                                                    },
+                                                    {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: "XPaymentsTransferMethodProcessingTime",
+                                                        kind: "LinkedField",
+                                                        name: "processing_time",
+                                                        plural: !1,
+                                                        selections: [
+                                                            { alias: null, args: null, kind: "ScalarField", name: "max_duration_in_business_days", storageKey: null },
+                                                            { alias: null, args: null, kind: "ScalarField", name: "processing_time_type", storageKey: null },
+                                                        ],
+                                                        storageKey: null,
+                                                    },
+                                                    {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: "XPaymentsTransferMethodType",
+                                                        kind: "LinkedField",
+                                                        name: "transfer_method_type",
+                                                        plural: !1,
+                                                        selections: [
+                                                            { alias: null, args: null, kind: "ScalarField", name: "pull_transfer_method_type", storageKey: null },
+                                                            { alias: null, args: null, kind: "ScalarField", name: "push_transfer_method_type", storageKey: null },
+                                                        ],
+                                                        storageKey: null,
+                                                    },
+                                                ],
+                                                storageKey: null,
+                                            },
+                                        ],
+                                        type: "XPaymentsGetTransferMethodsConfigSuccess",
+                                        abstractKey: null,
+                                    }),
+                                ],
+                                storageKey: 'get_transfer_methods_config(s:"4721")',
+                            },
+                        ],
+                        type: "Query",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: [], kind: "Operation", name: "usePaymentsConfigQuery", selections: [i, { alias: null, args: l, concreteType: null, kind: "LinkedField", name: "get_transfer_methods_config", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, t], storageKey: 'get_transfer_methods_config(s:"4721")' }] },
+                    params: { id: "Fu7zu8Ae1f6C--2m6Ho4fQ", metadata: { features: ["payments_transfer_methods_enabled"] }, name: "usePaymentsConfigQuery", operationKind: "query", text: null },
+                };
+            s.hash = "c22392b79e87b157c450129c9ed7e9b8";
             const r = s;
         },
         576751: (e, a, n) => {
@@ -847,4 +1006,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-7f8e98f6.61f2c20a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-7f8e98f6.5a1c8cea.js.map

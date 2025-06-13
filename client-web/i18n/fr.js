@@ -1346,6 +1346,9 @@
                     return "À l'origine en " + e.originLanguage + " et traduit par";
                 }),
                 n("b7cb4fab", "Traduit par"),
+                n("e0bffbf8", "About automatic translation"),
+                n("e839db3a", "Ignorer"),
+                n("a15585b4", "Language Settings"),
                 n("d4c339b9", function (e) {
                     return "Post de " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1722,7 +1725,6 @@
                 n("bf994ab2", "Vous uniquement"),
                 n("e7b4b30a", "Seuls les comptes que vous avez mentionnés"),
                 n("ca6500a8", "Désactiver les liens externes dans les réponses"),
-                n("e839db3a", "Ignorer"),
                 n("c8a98928", "Image promotionnelle"),
                 n("f5b3dc1e", "Peut-être plus tard"),
                 n("ae0c5fbe", "Erreur lors de la modification des personnes qui peuvent répondre"),
@@ -1919,10 +1921,10 @@
                 n("da8ac57c", "Éditer la légende"),
                 n("a8fdd09c", "Publier l'Article"),
                 n("d8047cc8", "Publier"),
-                n("ff7ddca2", "Votre Article apparaîtra comme un post une fois publié. Par ailleurs, vous le trouverez sous l'onglet Articles de votre profil."),
-                n("ef34d7be", "Les options d'audience et de réponse ne peuvent pas être modifiées une fois qu'un Article a été publié."),
-                n("e52d4998", "Choisissez votre audience");
-            n("d7985b24", "Choisissez qui peut répondre à cet Article"),
+                n("ff7ddca2", "Votre Article apparaîtra comme un post une fois publié. Par ailleurs, vous le trouverez sous l'onglet Articles de votre profil.");
+            n("ef34d7be", "Les options d'audience et de réponse ne peuvent pas être modifiées une fois qu'un Article a été publié."),
+                n("e52d4998", "Choisissez votre audience"),
+                n("d7985b24", "Choisissez qui peut répondre à cet Article"),
                 n("b5660338", "Aperçu du fil"),
                 n("hff1b97a", "Seules les personnes abonnées peuvent répondre."),
                 n("a330771e", "Copier le lien dans mon Presse‑papiers"),
@@ -2975,10 +2977,10 @@
                 n("jb0a4c36", "Blog"),
                 n("ce6d095a", "Carrières"),
                 n("e0adec82", "Ressources de la marque"),
-                n("df1b7550", "Marketing"),
-                n("he258678", "X pour les professionnels"),
-                n("c6f58084", "Développeurs");
-            n("d83f18d2", "Répertoire"),
+                n("df1b7550", "Marketing");
+            n("he258678", "X pour les professionnels"),
+                n("c6f58084", "Développeurs"),
+                n("d83f18d2", "Répertoire"),
                 n("hc5aa17c", "Télécharger l'application X"),
                 n("j0693948", "Télécharger l'application Grok"),
                 n("fce9ecce", "Vidéos suggérées"),
@@ -3887,14 +3889,14 @@
                 n("caa8d928", "Activer/désactiver la suppression du bruit"),
                 n("b5d88f0c", "Employés uniquement"),
                 n("c855ab8e", "Réservé aux Souscripteurs"),
-                n("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
-                n("e111f531", function (e) {
-                    return e.count + " " + r(e.count, "a", "ont") + " écouté";
-                }),
+                n("ddeb0a3c", "Here’s the Community. Like the people? Take a look.");
+            n("e111f531", function (e) {
+                return e.count + " " + r(e.count, "a", "ont") + " écouté";
+            }),
                 n("cbef820f", function (e) {
                     return e.screenName + " a reposté le stream !";
-                });
-            n("e3275464", "Envoyer"),
+                }),
+                n("e3275464", "Envoyer"),
                 n("cededf2a", "Hôte"),
                 n("i2caef48", "Cohôtes"),
                 n("j245c654", "Intervenants"),
@@ -4927,10 +4929,10 @@
                 n("d9508ab0", "vues"),
                 n("d9f9dec0", "Voir l'Espace"),
                 n("h0c1f37a", "Voir les statistiques de l'Espace"),
-                n("e41fffbc", "Le temps de visionnage total de vos vidéos."),
-                n("if2909ba", "Temps de visionnage"),
-                n("i0e5bf4c", "Vos vidéos");
-            n("ed99baea", "Accès anticipé à la version bêta"),
+                n("e41fffbc", "Le temps de visionnage total de vos vidéos.");
+            n("if2909ba", "Temps de visionnage"),
+                n("i0e5bf4c", "Vos vidéos"),
+                n("ed99baea", "Accès anticipé à la version bêta"),
                 n("gf898b70", "Recherche avancée"),
                 n("d2a43a7a", 'contient à la fois "ia" et "startup"'),
                 n("a8584698", "startup ia"),
@@ -5881,12 +5883,12 @@
                 }),
                 n("f191a2ba", "paramètres de recherche"),
                 n("a068008a", "Les dossiers ne se chargent pas pour le moment."),
-                n("f075b0e8", "Éditer le dossier"),
-                n("beba2a0e", "Créer un dossier de signets"),
+                n("f075b0e8", "Éditer le dossier");
+            n("beba2a0e", "Créer un dossier de signets"),
                 n("e41c9b4f", function (e) {
                     return "Enregistré dans le dossier " + e.bookmarkFolderName;
-                });
-            n("h18f86a4", "Supprimer le dossier"),
+                }),
+                n("h18f86a4", "Supprimer le dossier"),
                 n("f4ea967a", "Le dossier a été supprimé."),
                 n("b670aa62", "Nom du dossier"),
                 n("aece5462", "Le nom du dossier a bien été mis à jour."),
@@ -6887,10 +6889,10 @@
                 n("d70c24d4", "Sert à aider les candidats à trouver votre offre d'emploi."),
                 n("de1c4376", "Échelle des salaires"),
                 n("hf352d42", "Ajoutez une fourchette de salaire facultative qui sera affichée aux candidats. Si vous choisissez de ne pas le faire, ayez bien à l'esprit les éventuelles lois de transparence des rémunérations qui s'appliquent là où vous recrutez."),
-                n("ede7d0a2", "Devise"),
-                n("b925c18c", "Type de salaire "),
-                n("j3d242ce", "Plage non valide");
-            n("f4d07bd2", "Indiquez des détails facultatifs qui permettront aux candidats de découvrir plus facilement vos offres en effectuant une recherche."),
+                n("ede7d0a2", "Devise");
+            n("b925c18c", "Type de salaire "),
+                n("j3d242ce", "Plage non valide"),
+                n("f4d07bd2", "Indiquez des détails facultatifs qui permettront aux candidats de découvrir plus facilement vos offres en effectuant une recherche."),
                 n("b8cbb51a", "Résumé du poste"),
                 n("bda6881e", "Cette offre d'emploi a été importée depuis votre système de suivi des candidats (Applicant Tracking System, ou ATS). Veuillez noter que seuls des champs spécifiques peuvent être modifiés."),
                 n("b075c68a", "Modifier l'offre d'emploi"),
@@ -7867,9 +7869,7 @@
                 n("d7b8387e", "Si vous avez déjà annulé, vous n'avez rien d'autre à faire. Votre Souscription expirera automatiquement à la fin du cycle de facturation."),
                 n("f4166d9a", "Vous voulez annuler votre Souscription ?"),
                 n("b74ff5fc", "Si vous annulez, votre Souscription expirera automatiquement à la fin du cycle de facturation."),
-                n("ee9efbc8", "Continuer pour annuler"),
-                n("c5d9c77a", "Il semble qu'un petit problème s'est produit. Mais ne vous inquiétez pas, ce n'est pas de votre faute. Fermez cette fenêtre et réessayez."),
-                n("jda53c24", "Vous pouvez annuler votre Souscription via l'App Store Apple.");
+                n("ee9efbc8", "Continuer pour annuler");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7908,7 +7908,9 @@
                     i(e, t)
                 );
             }
-            n("g0a7a53e", "Vous pouvez annuler votre Souscription via la boutique Google Play."),
+            n("c5d9c77a", "Il semble qu'un petit problème s'est produit. Mais ne vous inquiétez pas, ce n'est pas de votre faute. Fermez cette fenêtre et réessayez."),
+                n("jda53c24", "Vous pouvez annuler votre Souscription via l'App Store Apple."),
+                n("g0a7a53e", "Vous pouvez annuler votre Souscription via la boutique Google Play."),
                 n("i5f14be7", function (e) {
                     return "Heureux de vous retrouver, " + e.displayName;
                 }),
@@ -8905,12 +8907,12 @@
                 }),
                 n("dff1ddd9", function (e) {
                     return "Accédez à " + e.advertiserName;
-                }),
-                n("b0b22805", function (e) {
-                    return "Rendez-vous sur " + e.advertiserName;
-                }),
-                n("c67e71aa", "Regarder maintenant");
-            n("a6ada13e", "Acheter maintenant"),
+                });
+            n("b0b22805", function (e) {
+                return "Rendez-vous sur " + e.advertiserName;
+            }),
+                n("c67e71aa", "Regarder maintenant"),
+                n("a6ada13e", "Acheter maintenant"),
                 n("j0f12222", "Voir plus"),
                 n("f569f7c8", "Accéder au site Web"),
                 n("j0c6772a", "Visiter le site Web"),
@@ -10151,6 +10153,12 @@
                             key: "c5f6ee1d",
                             get: function () {
                                 return ["", " "];
+                            },
+                        },
+                        {
+                            key: "b6411d33",
+                            get: function () {
+                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
                             },
                         },
                         {
@@ -13362,4 +13370,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.4032998a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.fa267ffa.js.map

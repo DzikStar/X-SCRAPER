@@ -1345,6 +1345,9 @@
                     return "Oversatt fra " + e.originLanguage + " av";
                 }),
                 t("b7cb4fab", "Oversatt av"),
+                t("e0bffbf8", "About automatic translation"),
+                t("e839db3a", "Forkast"),
+                t("a15585b4", "Language Settings"),
                 t("d4c339b9", function (e) {
                     return "Innlegg fra " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1721,7 +1724,6 @@
                 t("bf994ab2", "Bare deg"),
                 t("e7b4b30a", "Bare kontoer du omtaler"),
                 t("ca6500a8", "Deaktiver eksterne lenker i svar"),
-                t("e839db3a", "Forkast"),
                 t("c8a98928", "Reklamebilde"),
                 t("f5b3dc1e", "Kanskje senere"),
                 t("ae0c5fbe", "Kunne ikke endre hvem som kan svare"),
@@ -1918,10 +1920,10 @@
                 t("da8ac57c", "Rediger bildetekst"),
                 t("a8fdd09c", "Publiser artikkel"),
                 t("d8047cc8", "Publiser"),
-                t("ff7ddca2", "Artikkelen din vises som et innlegg når du har publisert den. Du finner den også under fanen Artikler i profilen din."),
-                t("ef34d7be", "Målgruppe og svarkontroller kan ikke endres etter at en artikkel er publisert."),
-                t("e52d4998", "Velg målgruppe");
-            t("d7985b24", "Velg hvem som kan svare på denne artikkelen"),
+                t("ff7ddca2", "Artikkelen din vises som et innlegg når du har publisert den. Du finner den også under fanen Artikler i profilen din.");
+            t("ef34d7be", "Målgruppe og svarkontroller kan ikke endres etter at en artikkel er publisert."),
+                t("e52d4998", "Velg målgruppe"),
+                t("d7985b24", "Velg hvem som kan svare på denne artikkelen"),
                 t("b5660338", "Tidslinjeforhåndsvisning"),
                 t("hff1b97a", "Bare abonnenter kan svare."),
                 t("a330771e", "Kopier lenke til utklippstavlen"),
@@ -2974,10 +2976,10 @@
                 t("jb0a4c36", "Blogg"),
                 t("ce6d095a", "Jobbmuligheter"),
                 t("e0adec82", "Merkevareressurser"),
-                t("df1b7550", "Markedsføring"),
-                t("he258678", "X for bedrifter"),
-                t("c6f58084", "Utviklere");
-            t("d83f18d2", "Katalog"),
+                t("df1b7550", "Markedsføring");
+            t("he258678", "X for bedrifter"),
+                t("c6f58084", "Utviklere"),
+                t("d83f18d2", "Katalog"),
                 t("hc5aa17c", "Last ned X-appen"),
                 t("j0693948", "Last ned Grok-appen"),
                 t("fce9ecce", "Foreslåtte videoer"),
@@ -3886,14 +3888,14 @@
                 t("caa8d928", "Veksle støydemping"),
                 t("b5d88f0c", "Bare for ansatte"),
                 t("c855ab8e", "Bare abonnenter"),
-                t("ddeb0a3c", "Her er fellesskapet. Liker du medlemmene? Ta en titt."),
-                t("e111f531", function (e) {
-                    return e.count + " lytter(e)";
-                }),
+                t("ddeb0a3c", "Her er fellesskapet. Liker du medlemmene? Ta en titt.");
+            t("e111f531", function (e) {
+                return e.count + " lytter(e)";
+            }),
                 t("cbef820f", function (e) {
                     return e.screenName + " republiserte strømmen!";
-                });
-            t("e3275464", "Send"),
+                }),
+                t("e3275464", "Send"),
                 t("cededf2a", "Vert"),
                 t("i2caef48", "Medverter"),
                 t("j245c654", "Talere"),
@@ -4926,10 +4928,10 @@
                 t("d9508ab0", "visninger"),
                 t("d9f9dec0", "Vis område"),
                 t("h0c1f37a", "Vis områdestatistikk"),
-                t("e41fffbc", "Den totale visningstiden til videoene dine."),
-                t("if2909ba", "Visningstid"),
-                t("i0e5bf4c", "Dine videoer");
-            t("ed99baea", "Tidlig betatilgang"),
+                t("e41fffbc", "Den totale visningstiden til videoene dine.");
+            t("if2909ba", "Visningstid"),
+                t("i0e5bf4c", "Dine videoer"),
+                t("ed99baea", "Tidlig betatilgang"),
                 t("gf898b70", "Avansert søk"),
                 t("d2a43a7a", "inneholder både «ki» og «oppstartsselskap»"),
                 t("a8584698", "ki oppstartsselskap"),
@@ -5880,12 +5882,12 @@
                 }),
                 t("f191a2ba", "søkeinnstillingene"),
                 t("a068008a", "Mapper kan ikke lastes inn nå"),
-                t("f075b0e8", "Rediger mappe"),
-                t("beba2a0e", "Opprett en ny bokmerkemappe"),
+                t("f075b0e8", "Rediger mappe");
+            t("beba2a0e", "Opprett en ny bokmerkemappe"),
                 t("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
-                });
-            t("h18f86a4", "Slett mappe"),
+                }),
+                t("h18f86a4", "Slett mappe"),
                 t("f4ea967a", "Mappen er slettet"),
                 t("b670aa62", "Mappenavn"),
                 t("aece5462", "Mappenavnet er oppdatert"),
@@ -6886,10 +6888,10 @@
                 t("d70c24d4", "Brukes til å hjelpe kandidater å søke etter jobben din."),
                 t("de1c4376", "Lønnsintervall"),
                 t("hf352d42", "Legg til et valgfritt lønnsintervall som er synlig for kandidatene. Hvis du ikke gjør dette, må du være obs på eventuelle lokale lover og regler angående åpenhet om lønn."),
-                t("ede7d0a2", "Valuta"),
-                t("b925c18c", "Avlønningstype"),
-                t("j3d242ce", "Ugyldig intervall");
-            t("f4d07bd2", "Legg til valgfrie detaljer for å gjøre det enklere for kandidater å finne jobbene dine i søk."),
+                t("ede7d0a2", "Valuta");
+            t("b925c18c", "Avlønningstype"),
+                t("j3d242ce", "Ugyldig intervall"),
+                t("f4d07bd2", "Legg til valgfrie detaljer for å gjøre det enklere for kandidater å finne jobbene dine i søk."),
                 t("b8cbb51a", "Jobbsammendrag"),
                 t("bda6881e", "Denne jobben er importert fra kandidatsystemet ditt. Vær obs på at bare visse felt kan endres."),
                 t("b075c68a", "Rediger jobb"),
@@ -7866,9 +7868,7 @@
                 t("d7b8387e", "Har du allerede kansellert, trenger du ikke gjøre noe mer. Abonnementet utløper automatisk på slutten av faktureringssyklusen."),
                 t("f4166d9a", "Vil du kansellere abonnementet ditt?"),
                 t("b74ff5fc", "Hvis du kansellerer, utløper abonnementet automatisk på slutten av faktureringssyklusen."),
-                t("ee9efbc8", "Fortsett til kansellering"),
-                t("c5d9c77a", "Det ser ut til at det oppstod et lite problem. Men slapp av, det er ikke din feil. Lukk dette vinduet og prøv på nytt."),
-                t("jda53c24", "Abonnementet kan kanselleres via Apple App Store.");
+                t("ee9efbc8", "Fortsett til kansellering");
             function d(e, n) {
                 for (var r = 0; r < n.length; r++) {
                     var t = n[r];
@@ -7897,17 +7897,19 @@
                 }
                 var i, a;
             }
-            function l(e, n) {
+            function s(e, n) {
                 return (
-                    (l = Object.setPrototypeOf
+                    (s = Object.setPrototypeOf
                         ? Object.setPrototypeOf.bind()
                         : function (e, n) {
                               return (e.__proto__ = n), e;
                           }),
-                    l(e, n)
+                    s(e, n)
                 );
             }
-            t("g0a7a53e", "Abonnementet kan kanselleres via Google Play Butikk."),
+            t("c5d9c77a", "Det ser ut til at det oppstod et lite problem. Men slapp av, det er ikke din feil. Lukk dette vinduet og prøv på nytt."),
+                t("jda53c24", "Abonnementet kan kanselleres via Apple App Store."),
+                t("g0a7a53e", "Abonnementet kan kanselleres via Google Play Butikk."),
                 t("i5f14be7", function (e) {
                     return "Velkommen tilbake, " + e.displayName;
                 }),
@@ -8904,12 +8906,12 @@
                 }),
                 t("dff1ddd9", function (e) {
                     return "Gå til " + e.advertiserName;
-                }),
-                t("b0b22805", function (e) {
-                    return "Besøk " + e.advertiserName;
-                }),
-                t("c67e71aa", "Se nå");
-            t("a6ada13e", "Handle nå"),
+                });
+            t("b0b22805", function (e) {
+                return "Besøk " + e.advertiserName;
+            }),
+                t("c67e71aa", "Se nå"),
+                t("a6ada13e", "Handle nå"),
                 t("j0f12222", "Se mer"),
                 t("f569f7c8", "Gå til nettstedet"),
                 t("j0c6772a", "Besøk nettstedet"),
@@ -9108,10 +9110,10 @@
                 t("f8e8e32e", "Du"),
                 t("df6703d3", "Du"),
                 t("c20f7e9f", function (e) {
-                    return i(e.otherUsersCount, s.createElement(s.Fragment, null, "", e.secondName), e.otherUsersCount + " andre");
+                    return i(e.otherUsersCount, l.createElement(l.Fragment, null, "", e.secondName), e.otherUsersCount + " andre");
                 }),
                 t("he26f627", function (e) {
-                    return i(e.otherUsersCount, s.createElement(s.Fragment, null, "", e.secondName), e.otherUsersCount + " andre");
+                    return i(e.otherUsersCount, l.createElement(l.Fragment, null, "", e.secondName), e.otherUsersCount + " andre");
                 }),
                 t("gea7aa3c", "Neste"),
                 t("b6462b32", "Forrige"),
@@ -9531,7 +9533,7 @@
                 t("acddd4d4", "Rød"),
                 t("cef9b062", "Blågrønn"),
                 t("d9daefca", "Mørk grå");
-            var s = r(202784),
+            var l = r(202784),
                 o = [],
                 g = {};
             function k(e) {
@@ -9546,9 +9548,9 @@
                     (r = e),
                     ((n = u).prototype = Object.create(r.prototype)),
                     (n.prototype.constructor = n),
-                    l(n, r),
+                    s(n, r),
                     (u.prototype.render = function () {
-                        return s.createElement.apply(s, this[this.props.$i18n].reduce(this.templateReducer, [s.Fragment, null]));
+                        return l.createElement.apply(l, this[this.props.$i18n].reduce(this.templateReducer, [l.Fragment, null]));
                     }),
                     (t = u),
                     (a = [
@@ -10150,6 +10152,12 @@
                             key: "c5f6ee1d",
                             get: function () {
                                 return ["", " "];
+                            },
+                        },
+                        {
+                            key: "b6411d33",
+                            get: function () {
+                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
                             },
                         },
                         {
@@ -12994,7 +13002,7 @@
                             key: "templateReducer",
                             get: function () {
                                 var e,
-                                    n = s.Children.toArray(this.props.children),
+                                    n = l.Children.toArray(this.props.children),
                                     r = ((e = this.props.$i18n), o[g[e]] || k);
                                 return function (e, t, i) {
                                     return e.concat(t, n[r(i)]);
@@ -13006,10 +13014,10 @@
                     Object.defineProperty(t, "prototype", { writable: !1 }),
                     u
                 );
-            })(r(111677)._ActualI18NFormatMessage || s.Component);
+            })(r(111677)._ActualI18NFormatMessage || l.Component);
             t("_ActualI18NFormatMessage", f),
                 t("I18NFormatMessage", function (e) {
-                    return s.createElement(f, e);
+                    return l.createElement(f, e);
                 });
             var u = r(495075);
             r(800694), r(556829), r(530152), r(658610), r(492344), r(663823);
@@ -13361,4 +13369,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.bdd3bc2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.1aa9853a.js.map

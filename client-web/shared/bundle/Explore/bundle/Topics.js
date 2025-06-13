@@ -237,26 +237,27 @@
                 x = n(383675),
                 N = n(611423),
                 Z = n(443781);
-            const B = (0, n(523561).Z)({
+            const _ = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.0"),
-                        n.e("icons.5"),
-                        n.e("icons.12"),
-                        n.e("icons.20"),
                         n.e("icons.2"),
-                        n.e("icons.21"),
-                        n.e("icons.28"),
+                        n.e("icons.24"),
                         n.e("icons.10"),
+                        n.e("icons.15"),
+                        n.e("icons.27"),
+                        n.e("icons.16"),
+                        n.e("icons.12"),
+                        n.e("icons.7"),
+                        n.e("icons.5"),
+                        n.e("icons.22"),
+                        n.e("icons.19"),
                         n.e("icons.17"),
-                        n.e("icons.9"),
-                        n.e("icons.23"),
+                        n.e("icons.26"),
+                        n.e("icons.4"),
+                        n.e("icons.29"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.22"),
-                        n.e("icons.25"),
                         n.e("icons.14"),
-                        n.e("icons.13"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -267,12 +268,12 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.6"),
-                        n.e("icons.3"),
-                        n.e("icons.4"),
+                        n.e("icons.13"),
                         n.e("icons.1"),
+                        n.e("icons.21"),
+                        n.e("icons.6"),
                         n.e("icons.18"),
-                        n.e("icons.8"),
+                        n.e("icons.0"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -307,7 +308,6 @@
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
-                        n.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         n.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
@@ -348,9 +348,9 @@
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-380ace89"),
                         n.e("shared~bundle.News~ondemand.News~loader.ExploreNews"),
                         n.e("loader.ExploreNews"),
-                    ]).then(n.bind(n, 169698)),
+                    ]).then(n.bind(n, 568527)),
             });
-            var _ = n(810641);
+            var B = n(810641);
             const P = (e, t) => t.initialModule.selectPageConfiguration && t.initialModule.selectPageConfiguration(e),
                 R = (e, t) => {
                     const n = t.selectedTabId,
@@ -392,11 +392,11 @@
                 }
                 render() {
                     const { entryConfiguration: e, initialModule: t, pageConfiguration: n, prerollDisplayLocation: o, refreshControl: r, renderEmptyState: d, renderUnavailable: l, selectedTab: i, timelinePrefix: s, title: c, withoutHeadroom: u } = this.props;
-                    if (this.context.featureSwitches.isTrue("responsive_web_grok_05221996") && "news" === i?.id) return a.createElement(B, null);
+                    if (this.context.featureSwitches.isTrue("responsive_web_grok_05221996") && "news" === i?.id) return a.createElement(_, null);
                     const p = this._getModule(i, n?.tabs?.initialTabId, t, s),
                         m = this._getRefreshIntervalSecForCurrentTab(),
                         b = m ? 1e3 * m : void 0;
-                    return a.createElement(h.nO, { namespace: this._getTimelineNamespace() }, a.createElement(_.Z, { entryConfiguration: e, module: p, pollingIntervalMsOverride: b, prerollDisplayLocation: o, refreshControl: r, renderEmptyState: d, renderUnavailable: l, title: c, withoutHeadroom: u }));
+                    return a.createElement(h.nO, { namespace: this._getTimelineNamespace() }, a.createElement(B.Z, { entryConfiguration: e, module: p, pollingIntervalMsOverride: b, prerollDisplayLocation: o, refreshControl: r, renderEmptyState: d, renderUnavailable: l, title: c, withoutHeadroom: u }));
                 }
             }
             G.contextType = Z.rC;
@@ -472,12 +472,12 @@
                 fe = i().e9f1fbcc,
                 De = a.createElement(c.Z, null),
                 we = (e) => {
-                    const { TabBar: t, backLocation: n, documentTitle: o, entryConfiguration: l, fab: i, getTabLink: c, hasTabNavigation: f, history: D, initialFetchStatus: w, initialPageNamespace: y, logoButton: M, module: C, onBackClick: E, pageConfiguration: k, prerollDisplayLocation: S, renderEmptyState: v, renderUnavailable: I, rightControl: T, selectedTabId: x, sidebarContent: N, timelinePrefix: Z, title: B, withAppLinks: _, withBottomLoginSignupBar: P, withDeferredView: R, withOpenGraphMeta: L, withSearchBox: G, withTweetButton: z } = e,
+                    const { TabBar: t, backLocation: n, documentTitle: o, entryConfiguration: l, fab: i, getTabLink: c, hasTabNavigation: f, history: D, initialFetchStatus: w, initialPageNamespace: y, logoButton: M, module: C, onBackClick: E, pageConfiguration: k, prerollDisplayLocation: S, renderEmptyState: v, renderUnavailable: I, rightControl: T, selectedTabId: x, sidebarContent: N, timelinePrefix: Z, title: _, withAppLinks: B, withBottomLoginSignupBar: P, withDeferredView: R, withOpenGraphMeta: L, withSearchBox: G, withTweetButton: z } = e,
                         W = (0, r.tj)(),
                         O = a.useMemo(() => ({ ...l, ...(0, F.Z)({ isLegacy: !0, isWide: W }) }), [l, W]),
                         [U, $] = a.useState(!0),
                         { header: j, navBar: V, subtitle: q, title: K } = k || {},
-                        Y = w === b.Z.LOADED ? K || B : "",
+                        Y = w === b.Z.LOADED ? K || _ : "",
                         J = ((e, t, n) => {
                             const a = t?.scribeConfig,
                                 { entityToken: o, ...r } = a || {},
@@ -488,12 +488,12 @@
                             return (0, s.Z)({}, n, r, u);
                         })(x, k, y),
                         X = j ? a.createElement(Q, { header: j, onHeaderVisible: $ }) : null,
-                        ee = V ? a.createElement(ge, { isHeaderOffscreen: !U, navBar: V, pageNamespace: J, withAppLinks: _, withOpenGraphMeta: L }) : null,
+                        ee = V ? a.createElement(ge, { isHeaderOffscreen: !U, navBar: V, pageNamespace: J, withAppLinks: B, withOpenGraphMeta: L }) : null,
                         te = R ? u.Z : a.Fragment,
-                        ne = a.createElement(a.Fragment, null, X, a.createElement(te, null, a.createElement(H, { entryConfiguration: O, initialModule: C, prerollDisplayLocation: S, renderEmptyState: v, renderUnavailable: I, selectedTabId: x, timelinePrefix: Z, title: B, withoutHeadroom: !0 }))),
+                        ne = a.createElement(a.Fragment, null, X, a.createElement(te, null, a.createElement(H, { entryConfiguration: O, initialModule: C, prerollDisplayLocation: S, renderEmptyState: v, renderUnavailable: I, selectedTabId: x, timelinePrefix: Z, title: _, withoutHeadroom: !0 }))),
                         ae = i ? a.createElement(p.Z, { component: d.Z, fab: i }, ne) : ne,
                         oe = c && f ? a.createElement(A, { getTabLink: c, module: C, selectedTabId: x }) : void 0;
-                    return a.createElement(h.nO, { namespace: J }, a.createElement(g.Z, null, a.createElement(m.Z, { TabBar: t, backLocation: n, documentTitle: o, history: D, logoButton: M, onBackClick: E, primaryContent: ae, rightControl: ee || T, secondaryBar: oe, sidebarContent: N, subtitle: q, title: X && U ? B : Y, withBottomLoginSignupBar: P, withSearchBox: G, withTweetButton: z })));
+                    return a.createElement(h.nO, { namespace: J }, a.createElement(g.Z, null, a.createElement(m.Z, { TabBar: t, backLocation: n, documentTitle: o, history: D, logoButton: M, onBackClick: E, primaryContent: ae, rightControl: ee || T, secondaryBar: oe, sidebarContent: N, subtitle: q, title: X && U ? _ : Y, withBottomLoginSignupBar: P, withSearchBox: G, withTweetButton: z })));
                 };
             we.defaultProps = { entryConfiguration: (0, z.G)({}), renderEmptyState: () => a.createElement(o.Z, { header: fe }), sidebarContent: De, withDeferredView: !1, withAppLinks: !1, withOpenGraphMeta: !1 };
             const ye = te(we);
@@ -684,4 +684,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Explore~bundle.Topics.098e37fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Explore~bundle.Topics.c6410f8a.js.map

@@ -1342,6 +1342,9 @@
                     return "Translated from " + e.originLanguage + " by";
                 }),
                 a("b7cb4fab", "Translated by"),
+                a("e0bffbf8", "About automatic translation"),
+                a("e839db3a", "[[192595]] Dismiss"),
+                a("a15585b4", "Language Settings"),
                 a("d4c339b9", function (e) {
                     return "[[281741]] Post from " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1718,7 +1721,6 @@
                 a("bf994ab2", "[[196896]] Only you"),
                 a("e7b4b30a", "[[283476]] Only accounts you mentioned"),
                 a("ca6500a8", "[[288887]] Disable external links in replies"),
-                a("e839db3a", "[[192595]] Dismiss"),
                 a("c8a98928", "[[289254]] Promotional image"),
                 a("f5b3dc1e", "[[258870]] Maybe later"),
                 a("ae0c5fbe", "[[234224]] Error changing who can reply"),
@@ -1915,10 +1917,10 @@
                 a("da8ac57c", "[[284900]] Edit Caption"),
                 a("a8fdd09c", "[[284919]] Publish Article"),
                 a("d8047cc8", "[[221087]] Publish"),
-                a("ff7ddca2", "[[284961]] Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
-                a("ef34d7be", "[[284897]] Audience and reply controls are not editable after an article has been published."),
-                a("e52d4998", "[[284896]] Choose your audience");
-            a("d7985b24", "[[288078]] Choose who can reply to this Article"),
+                a("ff7ddca2", "[[284961]] Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile.");
+            a("ef34d7be", "[[284897]] Audience and reply controls are not editable after an article has been published."),
+                a("e52d4998", "[[284896]] Choose your audience"),
+                a("d7985b24", "[[288078]] Choose who can reply to this Article"),
                 a("b5660338", "[[286495]] Timeline preview"),
                 a("hff1b97a", "[[284914]] Only Subscribed can reply."),
                 a("a330771e", "[[284904]] Copy link to your clipboard"),
@@ -2971,10 +2973,10 @@
                 a("jb0a4c36", "[[180896]] Blog"),
                 a("ce6d095a", "[[225663]] Careers"),
                 a("e0adec82", "[[225676]] Brand Resources"),
-                a("df1b7550", "[[180908]] Marketing"),
-                a("he258678", "[[280696]] X for Business"),
-                a("c6f58084", "[[180900]] Developers");
-            a("d83f18d2", "[[180901]] Directory"),
+                a("df1b7550", "[[180908]] Marketing");
+            a("he258678", "[[280696]] X for Business"),
+                a("c6f58084", "[[180900]] Developers"),
+                a("d83f18d2", "[[180901]] Directory"),
                 a("hc5aa17c", "[[294380]] Get the X app"),
                 a("j0693948", "[[294379]] Get the Grok app"),
                 a("fce9ecce", "[[291414]] Suggested Videos"),
@@ -3883,14 +3885,14 @@
                 a("caa8d928", "[[292248]] Toggle noise suppression"),
                 a("b5d88f0c", "[[283830]] Employees only"),
                 a("c855ab8e", "[[273092]] Subscribers only"),
-                a("ddeb0a3c", "[[271043]] Here’s the Community. Like the people? Take a look."),
-                a("e111f531", function (e) {
-                    return "[[265990]] " + e.count + " tuned in";
-                }),
+                a("ddeb0a3c", "[[271043]] Here’s the Community. Like the people? Take a look.");
+            a("e111f531", function (e) {
+                return "[[265990]] " + e.count + " tuned in";
+            }),
                 a("cbef820f", function (e) {
                     return "[[293244]] " + e.screenName + " reposted the stream!";
-                });
-            a("e3275464", "[[150231]] Send"),
+                }),
+                a("e3275464", "[[150231]] Send"),
                 a("cededf2a", "[[231304]] Host"),
                 a("i2caef48", "[[238359]] Co-hosts"),
                 a("j245c654", "[[237272]] Speakers"),
@@ -4923,10 +4925,10 @@
                 a("d9508ab0", "[[293196]] views"),
                 a("d9f9dec0", "[[294167]] View Space"),
                 a("h0c1f37a", "[[294166]] View Space Analytics"),
-                a("e41fffbc", "[[291999]] The total watch time of your videos."),
-                a("if2909ba", "[[292000]] Watch Time"),
-                a("i0e5bf4c", "[[293195]] Your videos");
-            a("ed99baea", "[[289716]] Early Beta Access"),
+                a("e41fffbc", "[[291999]] The total watch time of your videos.");
+            a("if2909ba", "[[292000]] Watch Time"),
+                a("i0e5bf4c", "[[293195]] Your videos"),
+                a("ed99baea", "[[289716]] Early Beta Access"),
                 a("gf898b70", "[[289702]] Advanced Search"),
                 a("d2a43a7a", '[[289747]] contains both "ai" and "startup"'),
                 a("a8584698", "[[289739]] ai startup"),
@@ -5877,12 +5879,12 @@
                 }),
                 a("f191a2ba", "Search settings"),
                 a("a068008a", "[[290206]] Folders aren`t loading right now"),
-                a("f075b0e8", "[[241449]] Edit Folder"),
-                a("beba2a0e", "[[242311]] Create a new Bookmark Folder"),
+                a("f075b0e8", "[[241449]] Edit Folder");
+            a("beba2a0e", "[[242311]] Create a new Bookmark Folder"),
                 a("e41c9b4f", function (e) {
                     return "[[242357]] Saved to " + e.bookmarkFolderName;
-                });
-            a("h18f86a4", "[[242318]] Delete Folder"),
+                }),
+                a("h18f86a4", "[[242318]] Delete Folder"),
                 a("f4ea967a", "[[242841]] Folder has been deleted"),
                 a("b670aa62", "[[242315]] Folder Name"),
                 a("aece5462", "[[242839]] Folder name has been updated successfully"),
@@ -6883,10 +6885,10 @@
                 a("d70c24d4", "[[282474]] Used to help candidates search for your job."),
                 a("de1c4376", "[[276543]] Salary Range"),
                 a("hf352d42", "[[282447]] Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for."),
-                a("ede7d0a2", "[[276389]] Currency"),
-                a("b925c18c", "[[283691]] Salary Type"),
-                a("j3d242ce", "[[276541]] Invalid range");
-            a("f4d07bd2", "[[282456]] Include optional details to make it easier for candidates to discover your roles with search."),
+                a("ede7d0a2", "[[276389]] Currency");
+            a("b925c18c", "[[283691]] Salary Type"),
+                a("j3d242ce", "[[276541]] Invalid range"),
+                a("f4d07bd2", "[[282456]] Include optional details to make it easier for candidates to discover your roles with search."),
                 a("b8cbb51a", "[[282457]] Job Summary"),
                 a("bda6881e", "[[282745]] This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 a("b075c68a", "[[276392]] Edit job"),
@@ -7863,9 +7865,7 @@
                 a("d7b8387e", "[[272796]] If you’ve already canceled, there’s nothing more to do. Your Subscription will automatically expire at the end of the billing cycle."),
                 a("f4166d9a", "[[272806]] Want to cancel your Subscription?"),
                 a("b74ff5fc", "[[272795]] If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
-                a("ee9efbc8", "[[265375]] Continue to cancellation"),
-                a("c5d9c77a", "[[265380]] Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Close this window and try again."),
-                a("jda53c24", "[[272809]] You can cancel your Subscription through the Apple App Store.");
+                a("ee9efbc8", "[[265375]] Continue to cancellation");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7904,7 +7904,9 @@
                     r(e, t)
                 );
             }
-            a("g0a7a53e", "[[272807]] You can cancel your Subscription through the Google Play Store."),
+            a("c5d9c77a", "[[265380]] Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Close this window and try again."),
+                a("jda53c24", "[[272809]] You can cancel your Subscription through the Apple App Store."),
+                a("g0a7a53e", "[[272807]] You can cancel your Subscription through the Google Play Store."),
                 a("i5f14be7", function (e) {
                     return "[[288006]] Welcome back, " + e.displayName;
                 }),
@@ -8901,12 +8903,12 @@
                 }),
                 a("dff1ddd9", function (e) {
                     return "[[223885]] Go to " + e.advertiserName;
-                }),
-                a("b0b22805", function (e) {
-                    return "[[223889]] Visit " + e.advertiserName;
-                }),
-                a("c67e71aa", "[[223887]] Watch now");
-            a("a6ada13e", "[[142677]] Shop now"),
+                });
+            a("b0b22805", function (e) {
+                return "[[223889]] Visit " + e.advertiserName;
+            }),
+                a("c67e71aa", "[[223887]] Watch now"),
+                a("a6ada13e", "[[142677]] Shop now"),
                 a("j0f12222", "[[223888]] See more"),
                 a("f569f7c8", "[[223884]] Go to website"),
                 a("j0c6772a", "[[223886]] Visit website"),
@@ -10147,6 +10149,12 @@
                             key: "c5f6ee1d",
                             get: function () {
                                 return ["[[194958]] ", " "];
+                            },
+                        },
+                        {
+                            key: "b6411d33",
+                            get: function () {
+                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
                             },
                         },
                         {
@@ -13359,4 +13367,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.be1a2fca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.7e2b559a.js.map

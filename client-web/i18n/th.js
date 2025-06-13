@@ -2,17 +2,17 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["i18n/th"],
     {
-        743834: (e, c, a) => {
-            var n = a(292426)._register("th", {
+        743834: (e, a, c) => {
+            var n = c(292426)._register("th", {
                 get emoji() {
-                    return a.e("i18n/emoji-th").then(a.t.bind(a, 953899, 23));
+                    return c.e("i18n/emoji-th").then(c.t.bind(c, 953899, 23));
                 },
             });
-            function t(e, c) {
-                return c;
+            function t(e, a) {
+                return a;
             }
-            function f(e, c, a) {
-                return "one" == ((n = e), (t = !String(n).split(".")[1]), 1 == n && t ? "one" : "other") ? c : a;
+            function f(e, a, c) {
+                return "one" == ((n = e), (t = !String(n).split(".")[1]), 1 == n && t ? "one" : "other") ? a : c;
                 var n, t;
             }
             n("c39b0e24", "X"),
@@ -1345,6 +1345,9 @@
                     return "แปลจาก " + e.originLanguage + " โดย ";
                 }),
                 n("b7cb4fab", "แปลโดย"),
+                n("e0bffbf8", "About automatic translation"),
+                n("e839db3a", "ยกเลิก"),
+                n("a15585b4", "Language Settings"),
                 n("d4c339b9", function (e) {
                     return "โพสต์จาก " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1721,7 +1724,6 @@
                 n("bf994ab2", "เฉพาะคุณเท่านั้น"),
                 n("e7b4b30a", "เฉพาะบัญชีที่คุณพูดถึงเท่านั้น"),
                 n("ca6500a8", "ปิดการใช้งานลิงก์ภายนอกในการตอบกลับ"),
-                n("e839db3a", "ยกเลิก"),
                 n("c8a98928", "รูปภาพสำหรับประชาสัมพันธ์"),
                 n("f5b3dc1e", "ไว้คราวหน้า"),
                 n("ae0c5fbe", "เกิดข้อผิดพลาดในการเปลี่ยนผู้ที่สามารถตอบกลับ"),
@@ -1918,10 +1920,10 @@
                 n("da8ac57c", "แก้ไขคําบรรยาย"),
                 n("a8fdd09c", "เผยแพร่บทความ"),
                 n("d8047cc8", "เผยแพร่"),
-                n("ff7ddca2", "บทความของคุณจะปรากฏเป็นโพสต์เมื่อคุณเผยแพร่ นอกจากนี้ ให้ค้นหาได้ภายใต้แท็บบทความในข้อมูลส่วนตัวของคุณ"),
-                n("ef34d7be", "การควบคุมผู้ชมและการตอบกลับจะไม่สามารถแก้ไขได้หลังจากที่บทความได้รับการเผยแพร่แล้ว"),
-                n("e52d4998", "เลือกกลุ่มเป้าหมายของคุณ");
-            n("d7985b24", "เลือกผู้ที่สามารถตอบกลับบทความนี้ได้"),
+                n("ff7ddca2", "บทความของคุณจะปรากฏเป็นโพสต์เมื่อคุณเผยแพร่ นอกจากนี้ ให้ค้นหาได้ภายใต้แท็บบทความในข้อมูลส่วนตัวของคุณ");
+            n("ef34d7be", "การควบคุมผู้ชมและการตอบกลับจะไม่สามารถแก้ไขได้หลังจากที่บทความได้รับการเผยแพร่แล้ว"),
+                n("e52d4998", "เลือกกลุ่มเป้าหมายของคุณ"),
+                n("d7985b24", "เลือกผู้ที่สามารถตอบกลับบทความนี้ได้"),
                 n("b5660338", "ตัวอย่างลําดับเหตุการณ์"),
                 n("hff1b97a", "มีเพียงสมาชิกเท่านั้นที่สามารถตอบกลับได้"),
                 n("a330771e", "คัดลอกลิงก์ไปยังคลิปบอร์ดของคุณ"),
@@ -2974,10 +2976,10 @@
                 n("jb0a4c36", "บล็อก"),
                 n("ce6d095a", "อาชีพ"),
                 n("e0adec82", "ทรัพยากรด้านแบรนด์"),
-                n("df1b7550", "การตลาด"),
-                n("he258678", "X สำหรับธุรกิจ"),
-                n("c6f58084", "นักพัฒนา");
-            n("d83f18d2", "ไดเรกทอรี"),
+                n("df1b7550", "การตลาด");
+            n("he258678", "X สำหรับธุรกิจ"),
+                n("c6f58084", "นักพัฒนา"),
+                n("d83f18d2", "ไดเรกทอรี"),
                 n("hc5aa17c", "รับแอพ X"),
                 n("j0693948", "รับแอพ Grok"),
                 n("fce9ecce", "วิดีโอแนะนำ"),
@@ -3886,14 +3888,14 @@
                 n("caa8d928", "เปิด/ปิดการลดเสียงรบกวน"),
                 n("b5d88f0c", "พนักงานเท่านั้น"),
                 n("c855ab8e", "เฉพาะสมาชิกเท่านั้น"),
-                n("ddeb0a3c", "ที่นี่คือชุมชน ชอบผู้คนไหม ลองดูสิ"),
-                n("e111f531", function (e) {
-                    return e.count + " รับฟัง";
-                }),
+                n("ddeb0a3c", "ที่นี่คือชุมชน ชอบผู้คนไหม ลองดูสิ");
+            n("e111f531", function (e) {
+                return e.count + " รับฟัง";
+            }),
                 n("cbef820f", function (e) {
                     return e.screenName + " รีโพสต์สตรีม!";
-                });
-            n("e3275464", "ส่ง"),
+                }),
+                n("e3275464", "ส่ง"),
                 n("cededf2a", "โฮสต์"),
                 n("i2caef48", "โฮสต์ร่วม"),
                 n("j245c654", "ผู้พูด"),
@@ -4926,10 +4928,10 @@
                 n("d9508ab0", "ยอดดู"),
                 n("d9f9dec0", "ดูพื้นที่สนทนา"),
                 n("h0c1f37a", "ดูการวิเคราะห์พื้นที่สนทนา"),
-                n("e41fffbc", "เวลาที่รับชมวิดีโอของคุณทั้งหมด"),
-                n("if2909ba", "เวลาที่รับชม"),
-                n("i0e5bf4c", "วิดีโอของคุณ");
-            n("ed99baea", "เข้าถึงเบต้าได้ก่อนใคร"),
+                n("e41fffbc", "เวลาที่รับชมวิดีโอของคุณทั้งหมด");
+            n("if2909ba", "เวลาที่รับชม"),
+                n("i0e5bf4c", "วิดีโอของคุณ"),
+                n("ed99baea", "เข้าถึงเบต้าได้ก่อนใคร"),
                 n("gf898b70", "การค้นหาขั้นสูง"),
                 n("d2a43a7a", 'มีทั้ง "ai" และ "startup"'),
                 n("a8584698", "ai startup"),
@@ -5880,12 +5882,12 @@
                 }),
                 n("f191a2ba", "การตั้งค่าการค้นหา"),
                 n("a068008a", "โฟลเดอร์ไม่โหลดในขณะนี้"),
-                n("f075b0e8", "แก้ไขโฟลเดอร์"),
-                n("beba2a0e", "สร้างโฟลเดอร์บุ๊คมาร์กใหม่"),
+                n("f075b0e8", "แก้ไขโฟลเดอร์");
+            n("beba2a0e", "สร้างโฟลเดอร์บุ๊คมาร์กใหม่"),
                 n("e41c9b4f", function (e) {
                     return "บันทึกลงใน " + e.bookmarkFolderName + " แล้ว";
-                });
-            n("h18f86a4", "ลบโฟลเดอร์"),
+                }),
+                n("h18f86a4", "ลบโฟลเดอร์"),
                 n("f4ea967a", "ลบโฟลเดอร์แล้ว"),
                 n("b670aa62", "ชื่อโฟลเดอร์"),
                 n("aece5462", "อัพเดตชื่อโฟลเดอร์เรียบร้อย"),
@@ -6886,10 +6888,10 @@
                 n("d70c24d4", "ใช้เพื่อช่วยผู้สมัครค้นหางานของคุณ"),
                 n("de1c4376", "ช่วงเงินเดือน"),
                 n("hf352d42", "เพิ่มช่วงเงินเดือนเพิ่มเติมที่ผู้สมัครจะมองเห็นได้ หากคุณเลือกที่จะไม่เพิ่ม โปรดระวังกฎหมายด้านความโปร่งใสในการจ่ายเงินในสถานที่ที่คุณกำลังจ้างงาน"),
-                n("ede7d0a2", "สกุลเงิน"),
-                n("b925c18c", "ประเภทเงินเดือน"),
-                n("j3d242ce", "ช่วงไม่ถูกต้อง");
-            n("f4d07bd2", "รวมรายละเอียดเพิ่มเติมเพื่อให้ผู้สมัครค้นพบบทบาทของคุณด้วยการค้นหาได้ง่ายดายยิ่งขึ้น"),
+                n("ede7d0a2", "สกุลเงิน");
+            n("b925c18c", "ประเภทเงินเดือน"),
+                n("j3d242ce", "ช่วงไม่ถูกต้อง"),
+                n("f4d07bd2", "รวมรายละเอียดเพิ่มเติมเพื่อให้ผู้สมัครค้นพบบทบาทของคุณด้วยการค้นหาได้ง่ายดายยิ่งขึ้น"),
                 n("b8cbb51a", "สรุปเกี่ยวกับงาน"),
                 n("bda6881e", "งานนี้นำเข้าจากระบบติดตามผู้สมัคร (ATS) ของคุณแล้ว โปรดทราบว่าเฉพาะช่องบางรายการเท่านั้นที่สามารถแก้ไขได้"),
                 n("b075c68a", "แก้ไขงาน"),
@@ -7866,12 +7868,10 @@
                 n("d7b8387e", "หากคุณได้ยกเลิกไปแล้ว ก็ไม่ต้องทำอะไรอีก ระบบสมาชิกของคุณจะหมดอายุโดยอัตโนมัติเมื่อสิ้นสุดรอบการเรียกเก็บเงิน"),
                 n("f4166d9a", "ต้องการยกเลิกระบบสมาชิกหรือไม่"),
                 n("b74ff5fc", "หากคุณยกเลิก ระบบสมาชิกของคุณจะหมดอายุโดยอัตโนมัติเมื่อสิ้นสุดรอบการเรียกเก็บเงิน"),
-                n("ee9efbc8", "ดำเนินการต่อเพื่อยกเลิก"),
-                n("c5d9c77a", "ดูเหมือนว่าจะมีการสะดุดเล็กน้อย ไม่ต้องกังวล ไม่ใช่ความผิดของคุณ ปิดหน้าต่างนี้แล้วลองอีกครั้ง"),
-                n("jda53c24", "คุณสามารถยกเลิกระบบสมาชิกของคุณผ่าน Apple App Store");
-            function r(e, c) {
-                for (var a = 0; a < c.length; a++) {
-                    var n = c[a];
+                n("ee9efbc8", "ดำเนินการต่อเพื่อยกเลิก");
+            function r(e, a) {
+                for (var c = 0; c < a.length; c++) {
+                    var n = a[c];
                     (n.enumerable = n.enumerable || !1),
                         (n.configurable = !0),
                         "value" in n && (n.writable = !0),
@@ -7880,15 +7880,15 @@
                             ((t = n.key),
                             (f = void 0),
                             "symbol" ==
-                            typeof (f = (function (e, c) {
+                            typeof (f = (function (e, a) {
                                 if ("object" != typeof e || null === e) return e;
-                                var a = e[Symbol.toPrimitive];
-                                if (void 0 !== a) {
-                                    var n = a.call(e, c || "default");
+                                var c = e[Symbol.toPrimitive];
+                                if (void 0 !== c) {
+                                    var n = c.call(e, a || "default");
                                     if ("object" != typeof n) return n;
                                     throw new TypeError("@@toPrimitive must return a primitive value.");
                                 }
-                                return ("string" === c ? String : Number)(e);
+                                return ("string" === a ? String : Number)(e);
                             })(t, "string"))
                                 ? f
                                 : String(f)),
@@ -7897,17 +7897,19 @@
                 }
                 var t, f;
             }
-            function d(e, c) {
+            function d(e, a) {
                 return (
                     (d = Object.setPrototypeOf
                         ? Object.setPrototypeOf.bind()
-                        : function (e, c) {
-                              return (e.__proto__ = c), e;
+                        : function (e, a) {
+                              return (e.__proto__ = a), e;
                           }),
-                    d(e, c)
+                    d(e, a)
                 );
             }
-            n("g0a7a53e", "คุณสามารถยกเลิกระบบสมาชิกของคุณผ่าน Google Play Store"),
+            n("c5d9c77a", "ดูเหมือนว่าจะมีการสะดุดเล็กน้อย ไม่ต้องกังวล ไม่ใช่ความผิดของคุณ ปิดหน้าต่างนี้แล้วลองอีกครั้ง"),
+                n("jda53c24", "คุณสามารถยกเลิกระบบสมาชิกของคุณผ่าน Apple App Store"),
+                n("g0a7a53e", "คุณสามารถยกเลิกระบบสมาชิกของคุณผ่าน Google Play Store"),
                 n("i5f14be7", function (e) {
                     return "ยินดีต้อนรับอีกครั้ง " + e.displayName;
                 }),
@@ -8904,12 +8906,12 @@
                 }),
                 n("dff1ddd9", function (e) {
                     return "ไปยัง " + e.advertiserName;
-                }),
-                n("b0b22805", function (e) {
-                    return "เข้าชม " + e.advertiserName;
-                }),
-                n("c67e71aa", "ดูตอนนี้");
-            n("a6ada13e", "ช็อปเลย"),
+                });
+            n("b0b22805", function (e) {
+                return "เข้าชม " + e.advertiserName;
+            }),
+                n("c67e71aa", "ดูตอนนี้"),
+                n("a6ada13e", "ช็อปเลย"),
                 n("j0f12222", "ดูเพิ่มเติม"),
                 n("f569f7c8", "ไปยังเว็บไซต์"),
                 n("j0c6772a", "เข้าชมเว็บไซต์"),
@@ -9531,22 +9533,22 @@
                 n("acddd4d4", "สีแดง"),
                 n("cef9b062", "สีน้ำเงินอมเขียว"),
                 n("d9daefca", "สีเทาเข้ม");
-            var b = a(202784),
+            var b = c(202784),
                 u = [],
                 i = {};
             function o(e) {
                 return e;
             }
             var m = (function (e) {
-                var c, a, n, t, f;
+                var a, c, n, t, f;
                 function m() {
                     return e.apply(this, arguments) || this;
                 }
                 return (
-                    (a = e),
-                    ((c = m).prototype = Object.create(a.prototype)),
-                    (c.prototype.constructor = c),
-                    d(c, a),
+                    (c = e),
+                    ((a = m).prototype = Object.create(c.prototype)),
+                    (a.prototype.constructor = a),
+                    d(a, c),
                     (m.prototype.render = function () {
                         return b.createElement.apply(b, this[this.props.$i18n].reduce(this.templateReducer, [b.Fragment, null]));
                     }),
@@ -10150,6 +10152,12 @@
                             key: "c5f6ee1d",
                             get: function () {
                                 return ["", " "];
+                            },
+                        },
+                        {
+                            key: "b6411d33",
+                            get: function () {
+                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
                             },
                         },
                         {
@@ -12994,10 +13002,10 @@
                             key: "templateReducer",
                             get: function () {
                                 var e,
-                                    c = b.Children.toArray(this.props.children),
-                                    a = ((e = this.props.$i18n), u[i[e]] || o);
+                                    a = b.Children.toArray(this.props.children),
+                                    c = ((e = this.props.$i18n), u[i[e]] || o);
                                 return function (e, n, t) {
-                                    return e.concat(n, c[a(t)]);
+                                    return e.concat(n, a[c(t)]);
                                 };
                             },
                         },
@@ -13006,13 +13014,13 @@
                     Object.defineProperty(n, "prototype", { writable: !1 }),
                     m
                 );
-            })(a(111677)._ActualI18NFormatMessage || b.Component);
+            })(c(111677)._ActualI18NFormatMessage || b.Component);
             n("_ActualI18NFormatMessage", m),
                 n("I18NFormatMessage", function (e) {
                     return b.createElement(m, e);
                 });
-            var g = a(495075);
-            a(800694), a(556829), a(530152), a(658610), a(492344), a(663823);
+            var g = c(495075);
+            c(800694), c(556829), c(530152), c(658610), c(492344), c(663823);
             g._validateParameterTypeNumber, g._validateParameterPresence;
             var h = g._numberRound,
                 s = (g._numberFormat, g._numberFormatterFn),
@@ -13361,4 +13369,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.5532b10a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.4968ef6a.js.map

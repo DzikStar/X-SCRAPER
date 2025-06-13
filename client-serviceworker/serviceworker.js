@@ -190,7 +190,7 @@
                             return r && f(r, k) ? r[k] : B(e);
                         }
                     },
-                    H = function (t) {
+                    q = function (t) {
                         if (!l(t)) return !1;
                         var e = p(t);
                         return f(N, e) || f(M, e);
@@ -220,7 +220,7 @@
                     NATIVE_ARRAY_BUFFER_VIEWS: D,
                     TYPED_ARRAY_TAG: U && F,
                     aTypedArray: function (t) {
-                        if (H(t)) return t;
+                        if (q(t)) return t;
                         throw new L("Target is not a typed array");
                     },
                     aTypedArrayConstructor: function (t) {
@@ -268,7 +268,7 @@
                         var e = p(t);
                         return "DataView" === e || f(N, e) || f(M, e);
                     },
-                    isTypedArray: H,
+                    isTypedArray: q,
                     TypedArray: I,
                     TypedArrayPrototype: P,
                 };
@@ -313,8 +313,8 @@
                     N = U && U[I],
                     M = Object.prototype,
                     B = n.Array,
-                    H = n.RangeError,
-                    q = o(E),
+                    q = n.RangeError,
+                    H = o(E),
                     W = o([].reverse),
                     V = y.pack,
                     G = y.unpack,
@@ -348,7 +348,7 @@
                         var o = L(t),
                             i = d(r),
                             a = !!n;
-                        if (i + e > o.byteLength) throw new H(P);
+                        if (i + e > o.byteLength) throw new q(P);
                         var u = o.bytes,
                             s = i + o.byteOffset,
                             c = x(u, s, s + e);
@@ -359,7 +359,7 @@
                             u = d(r),
                             s = n(+o),
                             c = !!i;
-                        if (u + e > a.byteLength) throw new H(P);
+                        if (u + e > a.byteLength) throw new q(P);
                         for (var l = a.bytes, f = u + a.byteOffset, p = 0; p < e; p++) l[f + p] = s[c ? p : e - p - 1];
                     };
                 if (a) {
@@ -405,15 +405,15 @@
                     (D = (k = function (t) {
                         p(this, D);
                         var e = d(t);
-                        C(this, { type: O, bytes: q(B(e), 0), byteLength: e }), i || ((this.byteLength = e), (this.detached = !1));
+                        C(this, { type: O, bytes: H(B(e), 0), byteLength: e }), i || ((this.byteLength = e), (this.detached = !1));
                     })[I]),
                         (N = (U = function (t, e, r) {
                             p(this, N), p(t, D);
                             var n = j(t),
                                 o = n.byteLength,
                                 a = h(e);
-                            if (a < 0 || a > o) throw new H("Wrong offset");
-                            if (a + (r = void 0 === r ? o - a : v(r)) > o) throw new H("Wrong length");
+                            if (a < 0 || a > o) throw new q("Wrong offset");
+                            if (a + (r = void 0 === r ? o - a : v(r)) > o) throw new q("Wrong length");
                             C(this, { type: T, buffer: t, byteLength: r, byteOffset: a, bytes: n.bytes }), i || ((this.buffer = t), (this.byteLength = r), (this.byteOffset = a));
                         })[I]),
                         i && (J(k, "byteLength", j), J(U, "buffer", L), J(U, "byteLength", L), J(U, "byteOffset", L)),
@@ -3269,8 +3269,8 @@
                     N = j.f,
                     M = L.f,
                     B = o.RangeError,
-                    H = c.ArrayBuffer,
-                    q = H.prototype,
+                    q = c.ArrayBuffer,
+                    H = q.prototype,
                     W = c.DataView,
                     V = s.NATIVE_ARRAY_BUFFER_VIEWS,
                     G = s.TYPED_ARRAY_TAG,
@@ -3295,7 +3295,7 @@
                     },
                     tt = function (t) {
                         var e;
-                        return R(q, t) || "ArrayBuffer" === (e = b(t)) || "SharedArrayBuffer" === e;
+                        return R(H, t) || "ArrayBuffer" === (e = b(t)) || "SharedArrayBuffer" === e;
                     },
                     et = function (t, e) {
                         return K(t) && !x(e) && e in t && h(+e) && e >= 0;
@@ -3361,7 +3361,7 @@
                                             if ((u = p - f) < 0) throw new B(Z);
                                         } else if ((u = v(n) * a) + f > p) throw new B(Z);
                                         s = u / a;
-                                    } else (s = d(e)), (o = new H((u = s * a)));
+                                    } else (s = d(e)), (o = new q((u = s * a)));
                                     for (D(t, { buffer: o, byteOffset: f, byteLength: u, length: s, view: new W(o) }); c < s; ) x(t, c++);
                                 })),
                                 S && S(m, z),
@@ -3937,8 +3937,8 @@
                     N = c.TypeError,
                     M = c.document,
                     B = c.process,
-                    H = T.f,
-                    q = H,
+                    q = T.f,
+                    H = q,
                     W = !!(M && M.createEvent && c.dispatchEvent),
                     V = "unhandledrejection",
                     G = function (t) {
@@ -4042,7 +4042,7 @@
                         F(this, { type: I, done: !1, notified: !1, parent: !1, reactions: new R(), rejection: !1, state: 0, value: void 0 });
                     }).prototype = f(U, "then", function (t, e) {
                         var r = C(this),
-                            n = H(w(this, D));
+                            n = q(w(this, D));
                         return (
                             (r.parent = !0),
                             (n.ok = !g(t) || t),
@@ -4061,9 +4061,9 @@
                             e = C(t);
                         (this.promise = t), (this.resolve = J(tt, e)), (this.reject = J(X, e));
                     }),
-                    (T.f = H =
+                    (T.f = q =
                         function (t) {
-                            return t === D || undefined === t ? new o(t) : q(t);
+                            return t === D || undefined === t ? new o(t) : H(t);
                         }),
                     !u && g(_) && k !== Object.prototype)
                 ) {
@@ -4266,12 +4266,12 @@
                                     } catch (E) {}
                                 return a;
                             },
-                            H = c(S),
-                            q = 0;
-                        H.length > q;
+                            q = c(S),
+                            H = 0;
+                        q.length > H;
 
                     )
-                        d(B, S, H[q++]);
+                        d(B, S, q[H++]);
                     (_.constructor = B), (B.prototype = _), g(o, "RegExp", B, { constructor: !0 });
                 }
                 b("RegExp");
@@ -5088,14 +5088,14 @@
                     M = D || 25 !== S[A] || 25 !== _[A],
                     B = E ? U || N || M : D;
                 n({ global: !0, constructor: !0, forced: B }, { DOMException: B ? L : S });
-                var H = i(x),
-                    q = H.prototype;
-                for (var W in (U && (E || S === H) && l(q, "toString", d),
+                var q = i(x),
+                    H = q.prototype;
+                for (var W in (U && (E || S === q) && l(H, "toString", d),
                 N &&
                     b &&
-                    S === H &&
+                    S === q &&
                     f(
-                        q,
+                        H,
                         "code",
                         F(function () {
                             return j(v(this).name);
@@ -5106,7 +5106,7 @@
                         var V = y[W],
                             G = V.s,
                             z = s(6, V.c);
-                        p(H, G) || c(H, G, z), p(q, G) || c(q, G, z);
+                        p(q, G) || c(q, G, z), p(H, G) || c(H, G, z);
                     }
             },
             5640: (t, e, r) => {
@@ -5231,8 +5231,8 @@
                     N = U("fetch"),
                     M = U("Request"),
                     B = U("Headers"),
-                    H = M && M.prototype,
-                    q = B && B.prototype,
+                    q = M && M.prototype,
+                    H = B && B.prototype,
                     W = o.RegExp,
                     V = o.TypeError,
                     G = o.decodeURIComponent,
@@ -5417,8 +5417,8 @@
                     n({ global: !0, constructor: !0, forced: !s }, { URLSearchParams: pt }),
                     !s && g(B))
                 ) {
-                    var vt = a(q.has),
-                        dt = a(q.set),
+                    var vt = a(H.has),
+                        dt = a(H.set),
                         gt = function (t) {
                             if (E(t)) {
                                 var e,
@@ -5440,9 +5440,9 @@
                         g(M))
                     ) {
                         var yt = function (t) {
-                            return d(this, H), new M(t, arguments.length > 1 ? gt(arguments[1]) : {});
+                            return d(this, q), new M(t, arguments.length > 1 ? gt(arguments[1]) : {});
                         };
-                        (H.constructor = yt), (yt.prototype = H), n({ global: !0, constructor: !0, dontCallGetSet: !0, forced: !0 }, { Request: yt });
+                        (q.constructor = yt), (yt.prototype = q), n({ global: !0, constructor: !0, dontCallGetSet: !0, forced: !0 }, { Request: yt });
                     }
                 }
                 t.exports = { URLSearchParams: pt, getState: F };
@@ -5576,8 +5576,8 @@
                     N = c([].push),
                     M = c("".replace),
                     B = c([].shift),
-                    H = c("".split),
-                    q = c("".slice),
+                    q = c("".split),
+                    H = c("".slice),
                     W = c("".toLowerCase),
                     V = c([].unshift),
                     G = "Invalid scheme",
@@ -5632,7 +5632,7 @@
                     },
                     vt = function (t) {
                         var e;
-                        return t.length > 1 && ht(q(t, 0, 2)) && (2 === t.length || "/" === (e = C(t, 2)) || "\\" === e || "?" === e || "#" === e);
+                        return t.length > 1 && ht(H(t, 0, 2)) && (2 === t.length || "/" === (e = C(t, 2)) || "\\" === e || "?" === e || "#" === e);
                     },
                     dt = function (t) {
                         return "." === t || "%2e" === W(t);
@@ -5950,7 +5950,7 @@
                                     if (null !== l) for (a = c - l, c = 7; 0 !== c && a > 0; ) (u = s[c]), (s[c--] = s[l + a - 1]), (s[l + --a] = u);
                                     else if (8 !== c) return;
                                     return s;
-                                })(q(t, 1, -1))),
+                                })(H(t, 1, -1))),
                                 !e)
                             )
                                 return z;
@@ -5966,11 +5966,11 @@
                                         i,
                                         a,
                                         u,
-                                        s = H(t, ".");
+                                        s = q(t, ".");
                                     if ((s.length && "" === s[s.length - 1] && s.length--, (e = s.length) > 4)) return t;
                                     for (r = [], n = 0; n < e; n++) {
                                         if ("" === (o = s[n])) return t;
-                                        if (((i = 10), o.length > 1 && "0" === C(o, 0) && ((i = F(Z, o) ? 16 : 8), (o = q(o, 8 === i ? 1 : 2))), "" === o)) a = 0;
+                                        if (((i = 10), o.length > 1 && "0" === C(o, 0) && ((i = F(Z, o) ? 16 : 8), (o = H(o, 8 === i ? 1 : 2))), "" === o)) a = 0;
                                         else {
                                             if (!F(10 === i ? X : 8 === i ? J : tt, o)) return t;
                                             a = P(o, i);
@@ -6097,7 +6097,7 @@
                         return t ? "?" + t : "";
                     },
                     setSearch: function (t) {
-                        "" === (t = w(t)) ? (this.query = null) : ("?" === C(t, 0) && (t = q(t, 1)), (this.query = ""), this.parse(t, kt)), this.searchParams.update();
+                        "" === (t = w(t)) ? (this.query = null) : ("?" === C(t, 0) && (t = H(t, 1)), (this.query = ""), this.parse(t, kt)), this.searchParams.update();
                     },
                     getSearchParams: function () {
                         return this.searchParams.facade;
@@ -6107,7 +6107,7 @@
                         return t ? "#" + t : "";
                     },
                     setHash: function (t) {
-                        "" !== (t = w(t)) ? ("#" === C(t, 0) && (t = q(t, 1)), (this.fragment = ""), this.parse(t, Dt)) : (this.fragment = null);
+                        "" !== (t = w(t)) ? ("#" === C(t, 0) && (t = H(t, 1)), (this.fragment = ""), this.parse(t, Dt)) : (this.fragment = null);
                     },
                     update: function () {
                         this.query = this.searchParams.serialize() || null;
@@ -6154,9 +6154,9 @@
                     ),
                     T)
                 ) {
-                    var Ht = T.createObjectURL,
-                        qt = T.revokeObjectURL;
-                    Ht && l(Nt, "createObjectURL", s(Ht, T)), qt && l(Nt, "revokeObjectURL", s(qt, T));
+                    var qt = T.createObjectURL,
+                        Ht = T.revokeObjectURL;
+                    qt && l(Nt, "createObjectURL", s(qt, T)), Ht && l(Nt, "revokeObjectURL", s(Ht, T));
                 }
                 b(Nt, "URL"), o({ global: !0, constructor: !0, forced: !a, sham: !i }, { URL: Nt });
             },
@@ -6484,8 +6484,8 @@
                                         return { type: "optionalFormatPattern", selector: t, value: e };
                                     },
                                     B = "offset:",
-                                    H = { type: "literal", value: "offset:", description: '"offset:"' },
-                                    q = function (t) {
+                                    q = { type: "literal", value: "offset:", description: '"offset:"' },
+                                    H = function (t) {
                                         return t;
                                     },
                                     W = function (t, e) {
@@ -6644,8 +6644,8 @@
                                             (t = Et),
                                                 (r = (function () {
                                                     var t, r, n, i, a, u;
-                                                    (t = Et), (r = []), (n = Et), (i = Dt()) !== o && (a = Ht()) !== o && (u = Dt()) !== o ? (n = i = [i, a, u]) : ((Et = n), (n = s));
-                                                    if (n !== o) for (; n !== o; ) r.push(n), (n = Et), (i = Dt()) !== o && (a = Ht()) !== o && (u = Dt()) !== o ? (n = i = [i, a, u]) : ((Et = n), (n = s));
+                                                    (t = Et), (r = []), (n = Et), (i = Dt()) !== o && (a = qt()) !== o && (u = Dt()) !== o ? (n = i = [i, a, u]) : ((Et = n), (n = s));
+                                                    if (n !== o) for (; n !== o; ) r.push(n), (n = Et), (i = Dt()) !== o && (a = qt()) !== o && (u = Dt()) !== o ? (n = i = [i, a, u]) : ((Et = n), (n = s));
                                                     else r = s;
                                                     r !== o && (r = c(r));
                                                     (t = r), t === o && ((t = Et), (r = kt()) !== o && (r = e.substring(t, Et)), (t = r));
@@ -6677,7 +6677,7 @@
                                                                           var t, r, n, i, a, u;
                                                                           (t = Et), e.substr(Et, 6) === E ? ((r = E), (Et += 6)) : ((r = o), 0 === _t && Tt(x));
                                                                           r === o && (e.substr(Et, 4) === A ? ((r = A), (Et += 4)) : ((r = o), 0 === _t && Tt(R)), r === o && (e.substr(Et, 4) === S ? ((r = S), (Et += 4)) : ((r = o), 0 === _t && Tt(_))));
-                                                                          r !== o && Dt() !== o ? ((n = Et), 44 === e.charCodeAt(Et) ? ((i = g), Et++) : ((i = o), 0 === _t && Tt(y)), i !== o && (a = Dt()) !== o && (u = Ht()) !== o ? (n = i = [i, a, u]) : ((Et = n), (n = s)), n === o && (n = d), n !== o ? (t = r = O(r, n)) : ((Et = t), (t = s))) : ((Et = t), (t = s));
+                                                                          r !== o && Dt() !== o ? ((n = Et), 44 === e.charCodeAt(Et) ? ((i = g), Et++) : ((i = o), 0 === _t && Tt(y)), i !== o && (a = Dt()) !== o && (u = qt()) !== o ? (n = i = [i, a, u]) : ((Et = n), (n = s)), n === o && (n = d), n !== o ? (t = r = O(r, n)) : ((Et = t), (t = s))) : ((Et = t), (t = s));
                                                                           return t;
                                                                       })()),
                                                                           t === o &&
@@ -6731,7 +6731,7 @@
                                         Dt() !== o
                                             ? ((r = (function () {
                                                   var t, r, n, i;
-                                                  return (t = Et), (r = Et), 61 === e.charCodeAt(Et) ? ((n = U), Et++) : ((n = o), 0 === _t && Tt(N)), n !== o && (i = Mt()) !== o ? (r = n = [n, i]) : ((Et = r), (r = s)), r !== o && (r = e.substring(t, Et)), (t = r) === o && (t = Ht()), t;
+                                                  return (t = Et), (r = Et), 61 === e.charCodeAt(Et) ? ((n = U), Et++) : ((n = o), 0 === _t && Tt(N)), n !== o && (i = Mt()) !== o ? (r = n = [n, i]) : ((Et = r), (r = s)), r !== o && (r = e.substring(t, Et)), (t = r) === o && (t = qt()), t;
                                               })()),
                                               r !== o && Dt() !== o ? (123 === e.charCodeAt(Et) ? ((n = h), Et++) : ((n = o), 0 === _t && Tt(v)), n !== o && Dt() !== o && (i = jt()) !== o && Dt() !== o ? (125 === e.charCodeAt(Et) ? ((a = m), Et++) : ((a = o), 0 === _t && Tt(w)), a !== o ? (t = M(r, i)) : ((Et = t), (t = s))) : ((Et = t), (t = s))) : ((Et = t), (t = s)))
                                             : ((Et = t), (t = s)),
@@ -6744,7 +6744,7 @@
                                         ((t = Et),
                                         (r = (function () {
                                             var t, r, n;
-                                            return (t = Et), e.substr(Et, 7) === B ? ((r = B), (Et += 7)) : ((r = o), 0 === _t && Tt(H)), r !== o && Dt() !== o && (n = Mt()) !== o ? (t = r = q(n)) : ((Et = t), (t = s)), t;
+                                            return (t = Et), e.substr(Et, 7) === B ? ((r = B), (Et += 7)) : ((r = o), 0 === _t && Tt(q)), r !== o && Dt() !== o && (n = Mt()) !== o ? (t = r = H(n)) : ((Et = t), (t = s)), t;
                                         })()),
                                         r === o && (r = d),
                                         r !== o)
@@ -6791,7 +6791,7 @@
                                     var t, r, n, i, a, u, c, l;
                                     return nt.test(e.charAt(Et)) ? ((t = e.charAt(Et)), Et++) : ((t = o), 0 === _t && Tt(ot)), t === o && ((t = Et), e.substr(Et, 2) === it ? ((r = it), (Et += 2)) : ((r = o), 0 === _t && Tt(at)), r !== o && (r = ut()), (t = r) === o && ((t = Et), e.substr(Et, 2) === st ? ((r = st), (Et += 2)) : ((r = o), 0 === _t && Tt(ct)), r !== o && (r = lt()), (t = r) === o && ((t = Et), e.substr(Et, 2) === ft ? ((r = ft), (Et += 2)) : ((r = o), 0 === _t && Tt(pt)), r !== o && (r = ht()), (t = r) === o && ((t = Et), e.substr(Et, 2) === vt ? ((r = vt), (Et += 2)) : ((r = o), 0 === _t && Tt(dt)), r !== o && (r = gt()), (t = r) === o && ((t = Et), e.substr(Et, 2) === yt ? ((r = yt), (Et += 2)) : ((r = o), 0 === _t && Tt(mt)), r !== o ? ((n = Et), (i = Et), (a = Nt()) !== o && (u = Nt()) !== o && (c = Nt()) !== o && (l = Nt()) !== o ? (i = a = [a, u, c, l]) : ((Et = i), (i = s)), i !== o && (i = e.substring(n, Et)), (n = i) !== o ? (t = r = wt(n)) : ((Et = t), (t = s))) : ((Et = t), (t = s))))))), t;
                                 }
-                                function Ht() {
+                                function qt() {
                                     var t, e, r;
                                     if (((t = Et), (e = []), (r = Bt()) !== o)) for (; r !== o; ) e.push(r), (r = Bt());
                                     else e = s;
@@ -7239,8 +7239,8 @@
                     );
                 }),
                 O(self);
-            var H = "ACTION_NAVIGATE",
-                q =
+            var q = "ACTION_NAVIGATE",
+                H =
                     (r(6710),
                     function (t) {
                         return t.startsWith("/i/tv");
@@ -7252,13 +7252,13 @@
                     self.cookieStore.get("ct0").then(function (n) {
                         var o,
                             i = { authorization: ((o = r.g.IS_TV_CLIENT), o ? "Bearer AAAAAAAAAAAAAAAAAAAAAMupswEAAAAANC5Yk%2FHGiZmGDRV3EhXMBO3uX08%3DEwAT9YySxXZXGrYScXeoKUaeyqXQFeNVWUW4SaZUvtegCUVjIi" : "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"), Accept: "application/x-www-form-urlencoded", "Content-Type": "application/x-www-form-urlencoded" };
-                        n && (i["x-csrf-token"] = n.value), self.fetch("https://api.x.com/1.1/jot/client_event.json", { credentials: "include", method: "post", headers: i, body: "debug=true&log=".concat(encodeURIComponent(JSON.stringify([G(t, e)]))) });
+                        n && (i["x-csrf-token"] = n.value), self.fetch("https://api.x.com/1.1/graphql/user_flow.json", { credentials: "include", method: "post", headers: i, body: "debug=true&log=".concat(encodeURIComponent(JSON.stringify([G(t, e)]))) });
                     });
             };
             var G = function (t) {
                 var e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : W;
                 if (!t || !t.action) throw new Error("You must specify an action term in your client_event.");
-                var r = q("") ? { clientName: "tv", clientAppId: "28551627" } : { clientName: "m5", clientAppId: "3033300" },
+                var r = H("") ? { clientName: "tv", clientAppId: "28551627" } : { clientName: "m5", clientAppId: "3033300" },
                     n = r.clientAppId,
                     o = { client: r.clientName, page: "app", section: t.section || "", component: t.component || "", element: t.element || "", action: t.action };
                 return c(c({}, e), {}, { event_namespace: o, _category_: "client_event", triggered_on: Date.now(), format_version: 2, client_app_id: n });
@@ -7289,7 +7289,7 @@
                                     V({ page: "app", section: "share_target", element: o.externalMediaFiles.length > 0 ? "files" : "text", action: "attempt" }, { event_value: o.externalMediaFiles.length }),
                                     (r = t.resultingClientId || t.clientId),
                                     (n = function (t) {
-                                        return t.postMessage({ type: H, meta: { navigateType: "replace" }, payload: { pathname: "/compose/post", state: o } });
+                                        return t.postMessage({ type: q, meta: { navigateType: "replace" }, payload: { pathname: "/compose/post", state: o } });
                                     }),
                                     self.clients.get(r).then(function (t) {
                                         return new Promise(function (e) {
@@ -8275,11 +8275,11 @@
             var Nt = ["actions", "enable_for_desktop_web", "enable_for_mobile_web"],
                 Mt = "bundle",
                 Bt = "/notifications",
-                Ht = ["favorite", "retweet", "mention", "reply", "quote", "follow"].concat(["rweb_favorite", "rweb_retweet", "rweb_mention", "rweb_reply", "rweb_quote", "rweb_follow"]),
-                qt = function (t) {
+                qt = ["favorite", "retweet", "mention", "reply", "quote", "follow"].concat(["rweb_favorite", "rweb_retweet", "rweb_mention", "rweb_reply", "rweb_quote", "rweb_follow"]),
+                Ht = function (t) {
                     return (
                         t.tag &&
-                        Ht.some(function (e) {
+                        qt.some(function (e) {
                             return 0 === t.tag.indexOf(e);
                         }) &&
                         t.data.bundle_text
@@ -8298,7 +8298,7 @@
                         })(t);
                         return e && e.focus
                             ? e.focus().then(function () {
-                                  return e.postMessage({ type: H, payload: r });
+                                  return e.postMessage({ type: q, payload: r });
                               })
                             : (function (t) {
                                   return self.clients.openWindow(t);
@@ -8308,7 +8308,7 @@
                 Gt = { title: "Twitter", body: "New notification", tag: "default", icon: St, badge: _t, data: { scribe_target: "default", uri: Bt } },
                 zt = function (t) {
                     var e;
-                    return (t.tag || (null != t && null !== (e = t.data) && void 0 !== e && e.actions)) && t.data && self.Intl && self.Intl.NumberFormat ? (qt(t) ? $t(t) : Yt(t)) : Promise.resolve(c(c({}, t), {}, { badge: _t, data: c(c({}, t.data), {}, { totalCount: 1 }) }));
+                    return (t.tag || (null != t && null !== (e = t.data) && void 0 !== e && e.actions)) && t.data && self.Intl && self.Intl.NumberFormat ? (Ht(t) ? $t(t) : Yt(t)) : Promise.resolve(c(c({}, t), {}, { badge: _t, data: c(c({}, t.data), {}, { totalCount: 1 }) }));
                 },
                 Yt = function (t) {
                     return jt(t.tag).then(function (e) {
@@ -8331,7 +8331,7 @@
                 },
                 $t = function (t) {
                     return jt().then(function (e) {
-                        var r = e.filter(qt),
+                        var r = e.filter(Ht),
                             n = e.find(function (t) {
                                 return t.tag && t.tag === Mt;
                             });
@@ -8425,4 +8425,4 @@
                 });
         })();
 })();
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-serviceworker/serviceworker.a8d944ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-serviceworker/serviceworker.be43aafa.js.map

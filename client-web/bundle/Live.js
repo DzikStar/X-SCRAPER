@@ -38,11 +38,11 @@
                 h = a(257166),
                 p = a(919022);
             const b = (e, t) => !(!t.allowPromptForPush || !h.selectShouldPromptBrowserPush(e)),
-                g = (0, u.Z)()
+                f = (0, u.Z)()
                     .propsFromState(() => ({ shouldPromptPush: b }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, m.zr)("DEVICE_FOLLOW_BUTTON_CONTAINER"), updateDeviceFollowing: p.ZP.updateDeviceFollowing }))
                     .withAnalytics({ element: "mobile_notifications" }),
-                f = l().bdba3e1a,
+                g = l().bdba3e1a,
                 _ = l().c4da7d28,
                 w = l().j87c21f4,
                 y = l().iebc30ca,
@@ -52,7 +52,7 @@
                     super(e),
                         (this._renderButton = () => {
                             const { isFollowing: e, style: t } = this.props;
-                            return e ? r.createElement(n.ZP, { "aria-label": _, hoverLabel: { label: y }, icon: r.createElement(i.default, null), onPress: this._handleUnfollow, style: t, type: "primaryOutlined" }) : r.createElement(n.ZP, { "aria-label": f, hoverLabel: { label: w }, icon: r.createElement(s.default, null), onPress: this._handleFollow, style: t, type: "primaryOutlined" });
+                            return e ? r.createElement(n.ZP, { "aria-label": _, hoverLabel: { label: y }, icon: r.createElement(i.default, null), onPress: this._handleUnfollow, style: t, type: "primaryOutlined" }) : r.createElement(n.ZP, { "aria-label": g, hoverLabel: { label: w }, icon: r.createElement(s.default, null), onPress: this._handleFollow, style: t, type: "primaryOutlined" });
                         }),
                         (this._handleFollow = () => {
                             const { isDeviceFollowWithoutUserFollow: e, shouldPromptPush: t } = this.props;
@@ -81,7 +81,7 @@
                     t.scribeAction(e);
                 }
             }
-            const v = g(D);
+            const v = f(D);
         },
         652904: (e, t, a) => {
             a.d(t, { Z: () => d });
@@ -138,8 +138,8 @@
                 h = a(376180),
                 p = a(502940),
                 b = a(70962),
-                g = a(933340),
-                f = a(321264),
+                f = a(933340),
+                g = a(321264),
                 _ = a(208340),
                 w = a(707305),
                 y = a(748138),
@@ -153,7 +153,7 @@
                 C = { label: T },
                 x = m().a8ab3d08,
                 I = m().d740d2d9,
-                k = { bandcamp_handle: { icon: r.createElement(u.default, null), label: m().a7cf1e98, url: "https://bandcamp.com/" }, bitcoin_handle: { icon: r.createElement(h.default, null), label: m().d876e67e }, cash_app_handle: { icon: r.createElement(p.default, null), label: m().f85f6760, url: "https://cash.app/" }, ethereum_handle: { icon: r.createElement(b.default, null), label: m().a32a7c06 }, gofundme_handle: { icon: r.createElement(g.default, null), label: m().cc1a3bc4, url: "https://gofundme.com/f/" }, patreon_handle: { icon: r.createElement(f.default, null), label: m().d4d74bb4, url: "https://patreon.com/" }, pay_pal_handle: { icon: r.createElement(_.default, null), label: m().h14fbc52, url: "https://paypal.me/" }, venmo_handle: { icon: r.createElement(w.default, null), label: m().h1198dcc, url: "https://venmo.com/" } };
+                k = { bandcamp_handle: { icon: r.createElement(u.default, null), label: m().a7cf1e98, url: "https://bandcamp.com/" }, bitcoin_handle: { icon: r.createElement(h.default, null), label: m().d876e67e }, cash_app_handle: { icon: r.createElement(p.default, null), label: m().f85f6760, url: "https://cash.app/" }, ethereum_handle: { icon: r.createElement(b.default, null), label: m().a32a7c06 }, gofundme_handle: { icon: r.createElement(f.default, null), label: m().cc1a3bc4, url: "https://gofundme.com/f/" }, patreon_handle: { icon: r.createElement(g.default, null), label: m().d4d74bb4, url: "https://patreon.com/" }, pay_pal_handle: { icon: r.createElement(_.default, null), label: m().h14fbc52, url: "https://paypal.me/" }, venmo_handle: { icon: r.createElement(w.default, null), label: m().h1198dcc, url: "https://venmo.com/" } };
             function S({ style: e, userId: t }) {
                 const a = (0, D.I0)(),
                     [c, d] = r.useState(!1),
@@ -295,7 +295,7 @@
                 c = (e) => r.createElement(n.ql, null, ...((e) => i(e).map(s))(e));
         },
         679180: (e, t, a) => {
-            a.d(t, { H: () => g });
+            a.d(t, { H: () => f });
             var r = a(202784),
                 n = a(325686),
                 o = a(154003),
@@ -309,10 +309,10 @@
                 h = a(741810),
                 p = a(782642);
             const b = { cancel: d().cfd2f35e, defaultTitle: d().jceadc3e, edit: d().abd845fe, save: d().i2209530, toastSuccessMessage: d().d39d46c4, toastErrorMessage: d().ef4602ec };
-            function g(e) {
+            function f(e) {
                 const { broadcastId: t, canEdit: a, remoteTitle: s } = e,
                     [c, d] = r.useState({ currentTitle: s, draftTitle: s, isEditing: !1 }),
-                    g = (0, p.p)();
+                    f = (0, p.p)();
                 r.useEffect(() => {
                     d((e) => ({ ...e, currentTitle: s, draftTitle: s }));
                 }, [s]);
@@ -325,25 +325,25 @@
                     D = r.useCallback(() => {
                         Promise.resolve(h.E.replayBroadcastEdit(t, { replay_edited_title: c.draftTitle }))
                             .then(() => {
-                                d((e) => ({ ...e, currentTitle: c.draftTitle, isEditing: !1 })), g({ text: b.toastSuccessMessage });
+                                d((e) => ({ ...e, currentTitle: c.draftTitle, isEditing: !1 })), f({ text: b.toastSuccessMessage });
                             })
                             .catch(() => {
-                                d((e) => ({ ...e, draftTitle: e.currentTitle })), g({ text: b.toastErrorMessage });
+                                d((e) => ({ ...e, draftTitle: e.currentTitle })), f({ text: b.toastErrorMessage });
                             });
-                    }, [t, c.draftTitle, g]),
+                    }, [t, c.draftTitle, f]),
                     v = r.useCallback(() => {
                         d((e) => ({ ...e, draftTitle: e.currentTitle, isEditing: !1 }));
                     }, []),
-                    Z = () => r.createElement(n.Z, { style: f.buttonContainer }, r.createElement(o.ZP, { onPress: v, size: "small", type: "primaryOutlined" }, b.cancel), r.createElement(o.ZP, { disabled: y, onPress: D, size: "small", type: "primaryFilled" }, b.save));
+                    Z = () => r.createElement(n.Z, { style: g.buttonContainer }, r.createElement(o.ZP, { onPress: v, size: "small", type: "primaryOutlined" }, b.cancel), r.createElement(o.ZP, { disabled: y, onPress: D, size: "small", type: "primaryFilled" }, b.save));
                 return r.createElement(
                     n.Z,
-                    { style: f.broadcastTitleRow },
+                    { style: g.broadcastTitleRow },
                     c.isEditing
-                        ? r.createElement(l.Z, { appTextSize: "headline1", inputStyle: f.titleInput, maxLength: 256, maxNumberOfLines: 3, multiline: !0, onChange: E, onSubmitEditing: y ? void 0 : D, placeholder: b.defaultTitle, rightContent: r.createElement(Z, null), styleType: "selection", value: c.draftTitle })
+                        ? r.createElement(l.Z, { appTextSize: "headline1", inputStyle: g.titleInput, maxLength: 256, maxNumberOfLines: 3, multiline: !0, onChange: E, onSubmitEditing: y ? void 0 : D, placeholder: b.defaultTitle, rightContent: r.createElement(Z, null), styleType: "selection", value: c.draftTitle })
                         : r.createElement(
                               n.Z,
-                              { style: f.broadcastTitleRow },
-                              r.createElement(i.Z, { displayTextRange: w, entities: _, linkify: !0, size: "headline1", style: f.broadcastTitleText, text: c.currentTitle, weight: "bold" }),
+                              { style: g.broadcastTitleRow },
+                              r.createElement(i.Z, { displayTextRange: w, entities: _, linkify: !0, size: "headline1", style: g.broadcastTitleText, text: c.currentTitle, weight: "bold" }),
                               a &&
                                   r.createElement(o.ZP, {
                                       "aria-label": b.edit,
@@ -358,7 +358,7 @@
                           ),
                 );
             }
-            const f = s.default.create((e) => ({ buttonContainer: { flexDirection: "row", gap: e.spaces.space8 }, titleInput: { fontWeight: e.fontWeights.heavy, padding: 0 }, broadcastTitleRow: { alignItems: "center", display: "flex", flexDirection: "row", justifyContent: "space-between", width: "100%" }, broadcastTitleText: { flex: 1 } }));
+            const g = s.default.create((e) => ({ buttonContainer: { flexDirection: "row", gap: e.spaces.space8 }, titleInput: { fontWeight: e.fontWeights.heavy, padding: 0 }, broadcastTitleRow: { alignItems: "center", display: "flex", flexDirection: "row", justifyContent: "space-between", width: "100%" }, broadcastTitleText: { flex: 1 } }));
         },
         386592: (e, t, a) => {
             a.d(t, { N8: () => r, rZ: () => n });
@@ -367,7 +367,7 @@
                 n = { Canceled: "CANCELED", Ended: "ENDED", NotStarted: "NOT_STARTED", PrePublished: "PRE_PUBLISHED", Running: "RUNNING", TimedOut: "TIMED_OUT" };
         },
         365470: (e, t, a) => {
-            a.r(t), a.d(t, { LiveScreen: () => Be, default: () => Ue });
+            a.r(t), a.d(t, { LiveScreen: () => Le, default: () => Re });
             var r = a(202784),
                 n = a(272175),
                 o = a(325686),
@@ -381,8 +381,8 @@
                 h = a(879113),
                 p = a(111677),
                 b = a.n(p),
-                g = a(123751),
-                f = a(615656),
+                f = a(123751),
+                g = a(615656),
                 _ = a(545457),
                 w = a(651930),
                 y = a(572067),
@@ -401,12 +401,12 @@
                 A = a(386592),
                 N = a(807896),
                 F = a(666305);
-            const L = r.memo(({ ...e }) => {
+            const B = r.memo(({ ...e }) => {
                     const { ref: t, style: a } = z(),
                         n = r.useMemo(() => [a, e.style], [a, e.style]);
                     return r.createElement(o.Z, (0, N.Z)({ ref: t }, e, { style: n }));
                 }),
-                B = 16 / 9,
+                L = 16 / 9,
                 z = () => {
                     const e = r.useRef(null),
                         [t, a] = r.useState(!0),
@@ -414,8 +414,8 @@
                             const t = e.current,
                                 r = t?.parentElement;
                             if (!t || !r) return;
-                            const n = U(r),
-                                o = U(t);
+                            const n = R(r),
+                                o = R(t);
                             a(o >= n);
                         }, []);
                     r.useEffect(() => {
@@ -430,21 +430,21 @@
                                 }
                             );
                     }, [n]);
-                    const o = r.useMemo(() => (t ? R.widthConstrained : R.heightConstrained), [t]);
+                    const o = r.useMemo(() => (t ? U.widthConstrained : U.heightConstrained), [t]);
                     return { ref: e, style: o };
                 },
-                U = (e) => {
+                R = (e) => {
                     const { height: t, width: a } = e.getBoundingClientRect();
                     return a / t;
                 },
-                R = m.default.create((e) => {
-                    const t = { aspectRatio: B, marginHorizontal: "auto", top: 0 };
+                U = m.default.create((e) => {
+                    const t = { aspectRatio: L, marginHorizontal: "auto", top: 0 };
                     return { widthConstrained: { ...t, width: "100%", height: "auto" }, heightConstrained: { ...t, height: "100%", width: "auto" } };
                 });
             var O = a(400752),
-                H = a(107267),
-                W = a(154003),
-                j = a(978053),
+                W = a(107267),
+                j = a(154003),
+                H = a(978053),
                 V = a(673510),
                 $ = a(366635),
                 q = a(360816),
@@ -463,27 +463,27 @@
                 le = b().daca8a2c,
                 ie = r.memo(({ broadcast: e, broadcastId: t, broadcaster: a, isLive: n }) => {
                     const { featureSwitches: i, viewerUserId: s } = (0, E.QZ)(),
-                        c = (0, H.useHistory)(),
+                        c = (0, W.useHistory)(),
                         d = (0, Q.I0)(),
                         m = (0, O.b9)(te.Tc),
                         h = r.useCallback(() => {
                             t && (m(t), d(X.bi(ee.N.EXPANDED)), c.goBack());
                         }, [t, d, c, m]),
-                        p = r.useCallback(() => r.createElement(W.ZP, { "aria-label": le, hoverLabel: { label: le }, icon: r.createElement(q.default, null), onPress: h, type: "primaryOutlined" }), [h]),
+                        p = r.useCallback(() => r.createElement(j.ZP, { "aria-label": le, hoverLabel: { label: le }, icon: r.createElement(q.default, null), onPress: h, type: "primaryOutlined" }), [h]),
                         b = r.useCallback((e) => {
                             const t = new Date(),
                                 a = new Date(e);
-                            return t.getTime() - a.getTime() > 2592e6 ? ae(a) : j.default.formatTimeSinceDate(a);
+                            return t.getTime() - a.getTime() > 2592e6 ? ae(a) : H.default.formatTimeSinceDate(a);
                         }, []),
-                        g = r.useMemo(() => {
+                        f = r.useMemo(() => {
                             const t = e?.end_time ?? e?.timedout_time ?? e?.start_time;
                             if (!t) return null;
                             const a = b(t);
                             return r.createElement(u.ZP, { color: "gray700", size: "subtext1" }, n ? re({ timestamp: a }) : ne({ timestamp: a }));
                         }, [e, b, n]),
-                        f = r.useCallback(() => (!a || s === a.id_str || a.blocked_by ? null : r.createElement(o.Z, { style: se.userActionsWrapper }, r.createElement(p, null), i.isTrue("rweb_tipjar_consumption_enabled") && r.createElement(J.Z, { userId: a.id_str }), a.following && r.createElement(Y.Z, { allowPromptForPush: !0, isFollowing: a.notifications, userId: a.id_str }), r.createElement(G.C, { isSuperFollowSubscriptionEnabled: i.isTrue("super_follow_android_web_subscription_enabled"), promotedContent: a.promoted_content, userId: a.id_str }))), [p, a, i, s]),
-                        _ = r.useMemo(() => (a ? r.createElement(o.Z, { style: se.userNameWrapper }, r.createElement(V.ZP, { affiliateBadgeInfo: a.highlightedLabel, avatarUri: a.profile_image_url_https, decoration: f(), isBlueVerified: a.is_blue_verified, isProtected: a.protected, isVerified: a.verified, name: a.name, screenName: a.screen_name, style: se.userCell, translatorType: a.translator_type, userId: a.id_str, verifiedType: a.verified_type, withLink: !0 })) : a?.profile_image_url && a?.screen_name ? r.createElement(o.Z, { style: se.userNameWrapper }, r.createElement($.Z, { name: a.screen_name, profileImageUrl: a.profile_image_url })) : void 0), [f, a]);
-                    return r.createElement(o.Z, { style: se.header }, _, r.createElement(o.Z, { style: se.timeAndShareWrapper }, g, t && r.createElement(K.Tz, { scribeNamespace: oe, url: (0, l.ju)(`https://x.com/i/broadcasts/${t}`) })));
+                        g = r.useCallback(() => (!a || s === a.id_str || a.blocked_by ? null : r.createElement(o.Z, { style: se.userActionsWrapper }, r.createElement(p, null), i.isTrue("rweb_tipjar_consumption_enabled") && r.createElement(J.Z, { userId: a.id_str }), a.following && r.createElement(Y.Z, { allowPromptForPush: !0, isFollowing: a.notifications, userId: a.id_str }), r.createElement(G.C, { isSuperFollowSubscriptionEnabled: i.isTrue("super_follow_android_web_subscription_enabled"), promotedContent: a.promoted_content, userId: a.id_str }))), [p, a, i, s]),
+                        _ = r.useMemo(() => (a ? r.createElement(o.Z, { style: se.userNameWrapper }, r.createElement(V.ZP, { affiliateBadgeInfo: a.highlightedLabel, avatarUri: a.profile_image_url_https, decoration: g(), isBlueVerified: a.is_blue_verified, isProtected: a.protected, isVerified: a.verified, name: a.name, screenName: a.screen_name, style: se.userCell, translatorType: a.translator_type, userId: a.id_str, verifiedType: a.verified_type, withLink: !0 })) : a?.profile_image_url && a?.screen_name ? r.createElement(o.Z, { style: se.userNameWrapper }, r.createElement($.Z, { name: a.screen_name, profileImageUrl: a.profile_image_url })) : void 0), [g, a]);
+                    return r.createElement(o.Z, { style: se.header }, _, r.createElement(o.Z, { style: se.timeAndShareWrapper }, f, t && r.createElement(K.Tz, { scribeNamespace: oe, url: (0, l.ju)(`https://x.com/i/broadcasts/${t}`) })));
                 }),
                 se = m.default.create((e) => ({ header: { flexDirection: "column", gap: e.spaces.space12, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small, marginBottom: e.spaces.space48 }, userCell: { paddingHorizontal: 0, paddingVertical: 0, width: "100%" }, userActionsWrapper: { alignItems: "center", display: "flex", flexDirection: "row", gap: e.spaces.space8 }, userNameWrapper: { alignItems: "flex-start", flex: 1, justifyContent: "center" }, timeAndShareWrapper: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" } }));
             var ce = a(71620),
@@ -493,41 +493,41 @@
                 he = a(919022),
                 pe = a(312771);
             const be = (0, de.cI)("t"),
-                ge = (e, t) => {
+                fe = (e, t) => {
                     const a = t.match.params.screenName;
                     if (a) return a;
                     const r = we(e, t);
                     return r?.user_results?.result?.core?.screen_name || "";
                 },
-                fe = (e, t) => {
+                ge = (e, t) => {
                     const a = t.match.params.broadcastId;
                     if (a) return a;
                     const r = _e(e, t);
                     return r?.latest_broadcast?.broadcast_id;
                 },
                 _e = (e, t) => {
-                    const a = ge(e, t);
+                    const a = fe(e, t);
                     if (a) return he.ZP.selectByScreenName(e, a);
                     const r = we(e, t);
                     return r?.user ? he.ZP.select(e, r.user) : void 0;
                 },
                 we = (e, t) => {
-                    const a = fe(e, t);
+                    const a = ge(e, t);
                     return a ? ue.Z.select(e, a) : void 0;
                 },
                 ye = (e, t) => he.ZP.selectViewerUser(e),
                 Ee = (e, t) => {
-                    const a = ge(e, t);
+                    const a = fe(e, t);
                     return ue.Z.selectLatestBroadcastFetched(e, a);
                 },
                 De = (e, t) => {
                     const a = we(e, t),
                         r = Ee(e, t),
-                        n = fe(e, t);
+                        n = ge(e, t);
                     return a || (!n && r) ? pe.ZP.LOADED : pe.ZP.LOADING;
                 },
                 ve = (0, me.Z)()
-                    .propsFromState(() => ({ broadcast: we, broadcastId: fe, broadcaster: _e, fetchStatus: De, latestBroadcastFetched: Ee, screenName: ge, timecode: be, viewerUser: ye }))
+                    .propsFromState(() => ({ broadcast: we, broadcastId: ge, broadcaster: _e, fetchStatus: De, latestBroadcastFetched: Ee, screenName: fe, timecode: be, viewerUser: ye }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, ce.zr)("LIVE_SCREEN"), fetchBroadcast: ue.Z.fetchOneIfNeeded, fetchLatestBroadcast: ue.Z.fetchLatestBroadcast })),
                 Ze = 16 / 9,
                 Me = { objectFitVideo: "contain" },
@@ -541,21 +541,21 @@
                 Ae = b().i9028824,
                 Ne = { page: "broadcast" },
                 Fe = { url: "https://pbs.twimg.com/lex/placeholder_live_nomargin.png", width: 1920, height: 1080 },
-                Le = (e, t) => (0, l.ju)(`https://x.com/i/broadcasts/${e}${t ? `?t=${t}` : ""}`);
-            function Be(e) {
-                const { broadcast: t, broadcastId: a, broadcaster: l, createLocalApiErrorHandler: p, fetchBroadcast: I, fetchLatestBroadcast: N, fetchStatus: F, latestBroadcastFetched: B, screenName: z, timecode: U } = e,
-                    R = r.useContext(E.rC),
-                    { viewerUserId: O } = R,
-                    H = l?.id_str === O,
-                    W = (0, i.Zx)(Pe),
-                    j = (0, C.ZP)();
+                Be = (e, t) => (0, l.ju)(`https://x.com/i/broadcasts/${e}${t ? `?t=${t}` : ""}`);
+            function Le(e) {
+                const { broadcast: t, broadcastId: a, broadcaster: l, createLocalApiErrorHandler: p, fetchBroadcast: I, fetchLatestBroadcast: N, fetchStatus: F, latestBroadcastFetched: L, screenName: z, timecode: R } = e,
+                    U = r.useContext(E.rC),
+                    { viewerUserId: O } = U,
+                    W = l?.id_str === O,
+                    j = (0, i.Zx)(Pe),
+                    H = (0, C.ZP)();
                 (0, _.ph)(),
                     (0, _.hB)(),
                     r.useEffect(() => {
                         z && N(z);
                     }, [N, z]);
                 const V = r.useCallback(() => {
-                    a && I(a).catch(p({ [f.ZP.GenericNotFound]: { customAction: T.vv } }));
+                    a && I(a).catch(p({ [g.ZP.GenericNotFound]: { customAction: T.vv } }));
                 }, [a, p, I]);
                 r.useEffect(() => {
                     V();
@@ -592,12 +592,12 @@
                     }, [t, G]),
                     J = r.useMemo(() => {
                         const e = t && t.media_key,
-                            i = !a && l && B,
+                            i = !a && l && L,
                             s = Te(t);
-                        return t && t.state === A.N8.NotStarted ? K() : i ? r.createElement(o.Z, { style: ze.offlineContainer }, r.createElement(u.ZP, { size: "title2" }, ke({ screenName: z }))) : t && l && a && s && e ? r.createElement(r.Fragment, null, r.createElement(n.ql, { prioritizeSeoTags: !0 }, r.createElement("meta", { content: s.url, property: "og:image" }), r.createElement("meta", { content: s.width, property: "og:image:width" }), r.createElement("meta", { content: s.height, property: "og:image:height" })), r.createElement(P.Z, { "aria-label": Se, aspectRatio: Ze, displayOptions: Me, poster: s, source: { variants: [], videoId: g.Z.forBroadcast(a), contentId: e }, videoType: "video" })) : null;
-                    }, [t, a, l, B, K, z]),
+                        return t && t.state === A.N8.NotStarted ? K() : i ? r.createElement(o.Z, { style: ze.offlineContainer }, r.createElement(u.ZP, { size: "title2" }, ke({ screenName: z }))) : t && l && a && s && e ? r.createElement(r.Fragment, null, r.createElement(n.ql, { prioritizeSeoTags: !0 }, r.createElement("meta", { content: s.url, property: "og:image" }), r.createElement("meta", { content: s.width, property: "og:image:width" }), r.createElement("meta", { content: s.height, property: "og:image:height" })), r.createElement(P.Z, { "aria-label": Se, aspectRatio: Ze, displayOptions: Me, poster: s, source: { variants: [], videoId: f.Z.forBroadcast(a), contentId: e }, videoType: "video" })) : null;
+                    }, [t, a, l, L, K, z]),
                     Q = r.useMemo(() => r.createElement(o.Z, { style: ze.chat }, r.createElement(Z.Z, { broadcastId: a ?? "", defaultChatNotice: ke({ screenName: z }) })), [a, z]),
-                    X = r.useCallback(() => r.createElement(M.aM, null, r.createElement(o.Z, { style: [ze.container, j ? ze.navBorder : void 0] }, r.createElement(o.Z, { style: ze.videoContainer }, r.createElement(L, null, J), a && r.createElement(o.Z, { style: ze.title }, r.createElement(S.H, { broadcastId: a, canEdit: H, remoteTitle: $ })), r.createElement(ie, { broadcast: t, broadcastId: a, broadcaster: l, isLive: t?.state === A.N8.Running })), W && Q)), [Q, J, t, a, l, H, W, j, $]);
+                    X = r.useCallback(() => r.createElement(M.aM, null, r.createElement(o.Z, { style: [ze.container, H ? ze.navBorder : void 0] }, r.createElement(o.Z, { style: ze.videoContainer }, r.createElement(B, null, J), a && r.createElement(o.Z, { style: ze.title }, r.createElement(S.H, { broadcastId: a, canEdit: W, remoteTitle: $ })), r.createElement(ie, { broadcast: t, broadcastId: a, broadcaster: l, isLive: t?.state === A.N8.Running })), j && Q)), [Q, J, t, a, l, W, j, H, $]);
                 return r.createElement(
                     x.nO,
                     { namespace: Ne },
@@ -607,9 +607,9 @@
                         ((e) => {
                             const n = l?.name,
                                 o = `twitter://broadcasts/${a || ""}`,
-                                i = Le(a || ""),
-                                s = Le(a || "", U);
-                            return l ? r.createElement(r.Fragment, null, r.createElement(y.Z, { canonical: i, description: e, title: n, type: "article" }), r.createElement(w.Z, { deepLink: o }), r.createElement(k.Z, { broadcast: t, broadcaster: l, id: a || "", timecode: U, title: e, url: s })) : null;
+                                i = Be(a || ""),
+                                s = Be(a || "", R);
+                            return l ? r.createElement(r.Fragment, null, r.createElement(y.Z, { canonical: i, description: e, title: n, type: "article" }), r.createElement(w.Z, { deepLink: o }), r.createElement(k.Z, { broadcast: t, broadcaster: l, id: a || "", timecode: R, title: e, url: s })) : null;
                         })($),
                         r.createElement(D.Z, { title: $, withMeta: !1 }),
                         r.createElement(h.Z, { "aria-label": Ae, fetchStatus: F, onRequestRetry: V, render: X }),
@@ -617,7 +617,7 @@
                 );
             }
             const ze = m.default.create((e) => ({ container: { display: "flex", flexDirection: "row", height: "100vh", overflow: "hidden" }, chat: { borderStartWidth: e.borderWidths.small, borderColor: e.colors.borderColor, height: "100vh", width: "340px" }, labelOverlay: { position: "absolute", bottom: e.spaces.space12, start: e.spaces.space12 }, navBorder: { borderStartWidth: e.borderWidths.small, borderColor: e.colors.borderColor }, title: { alignItems: "center", display: "flex", flexDirection: "row", gap: e.spaces.space12, justifyContent: "space-between", paddingHorizontal: e.spaces.space12, paddingTop: e.spaces.space12 }, offlineContainer: { aspectRatio: Ze, backgroundColor: e.colors.gray0, flex: 1, justifyContent: "center", alignItems: "center" }, videoContainer: { flex: 1, WebkitOverflowScrolling: "touch", scrollbarWidth: "none", msOverflowStyle: "none", overflow: "auto" } })),
-                Ue = ve((0, I.Z)(Be));
+                Re = ve((0, I.Z)(Le));
         },
         978053: (e, t, a) => {
             a.d(t, { default: () => b });
@@ -696,10 +696,10 @@
                     return !(!t && !a) || !o()(e, this.props);
                 }
                 render() {
-                    const { "aria-label": e, color: t, failureMessage: a, fetchStatus: n, icon: o, loadingMessage: l, onRequestRetry: d, render: h, renderFailure: p, retryMessage: b, retryable: g } = this.props;
+                    const { "aria-label": e, color: t, failureMessage: a, fetchStatus: n, icon: o, loadingMessage: l, onRequestRetry: d, render: h, renderFailure: p, retryMessage: b, retryable: f } = this.props;
                     switch (n) {
                         case c:
-                            return g ? r.createElement(i.Z, { icon: o, onRequestRetry: d, retryMessage: b }) : a ? r.createElement(s.m, { failureMessage: a }) : p();
+                            return f ? r.createElement(i.Z, { icon: o, onRequestRetry: d, retryMessage: b }) : a ? r.createElement(s.m, { failureMessage: a }) : p();
                         case m:
                             return r.createElement(s.J, { "aria-label": e, color: t, loadingMessage: l });
                         case u:
@@ -711,7 +711,7 @@
             }
             h.defaultProps = { renderFailure: l.Z, retryable: !0 };
         },
-        502940: (e, t, a) => {
+        652255: (e, t, a) => {
             a.r(t), a.d(t, { default: () => s });
             var r = a(202784),
                 n = a(890601),
@@ -719,7 +719,20 @@
                 l = a(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M15.985 8.264c.215.227.573.227.775 0l1.077-1.181c.228-.227.215-.636-.026-.881-.846-.778-1.83-1.37-2.894-1.745l.34-1.726c.073-.377-.194-.731-.551-.731H12.62c-.13.001-.256.05-.356.138-.1.087-.17.209-.195.343l-.301 1.536c-2.774.15-5.125 1.635-5.125 4.678 0 2.635 1.942 3.766 3.996 4.543 1.942.781 2.972 1.072 2.972 2.171 0 1.131-1.025 1.794-2.541 1.794-1.378 0-2.825-.486-3.945-1.671-.052-.055-.114-.099-.182-.129-.068-.03-.14-.045-.214-.045-.074 0-.147.016-.215.045-.068.03-.13.074-.181.129L5.17 16.758c-.11.116-.171.273-.171.436 0 .164.061.32.17.436.905.94 2.05 1.622 3.357 1.999l-.32 1.621c-.072.378.19.727.548.732l2.088.018c.132 0 .26-.047.362-.135.102-.088.172-.21.198-.346l.302-1.54c3.337-.237 5.37-2.176 5.37-5.006 0-2.607-2.025-3.707-4.48-4.601-1.404-.55-2.618-.927-2.618-2.058 0-1.1 1.133-1.535 2.27-1.535 1.447 0 2.838.631 3.746 1.494l-.008-.01z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { clipRule: "evenodd", d: "M11.999 1C18.075 1 23 5.925 23 12s-4.925 11-11.001 11C5.999 23 1.12 18.198 1 12.228v-.456C1.121 5.802 6 1 11.999 1zm5.887 7.54H9.86l-3.75 6.92h8.027l3.748-6.92z", fillRule: "evenodd" })) }, { writingDirection: t });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const s = i;
+        },
+        376180: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => s });
+            var r = a(202784),
+                n = a(890601),
+                o = a(783427),
+                l = a(347101);
+            const i = (e = {}) => {
+                const { direction: t } = (0, o.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { clipRule: "evenodd", d: "M9.338 22.67C3.446 21.202-.141 15.234 1.33 9.34 2.798 3.447 8.767-.14 14.66 1.33c5.894 1.468 9.48 7.438 8.01 13.331-1.469 5.893-7.438 9.48-13.332 8.01zm4.959-19.885c5.09 1.268 8.187 6.424 6.918 11.513-1.269 5.089-6.424 8.186-11.514 6.917-5.088-1.269-8.186-6.423-6.916-11.512 1.268-5.09 6.423-8.187 11.512-6.918zm.133 4.873c1.523.524 2.638 1.311 2.419 2.775-.159 1.071-.753 1.59-1.541 1.772 1.083.564 1.634 1.428 1.109 2.927-.652 1.861-2.2 2.019-4.257 1.629l-.5 2.002-1.207-.301.493-1.975c-.313-.078-.632-.16-.961-.25l-.495 1.985-1.206-.301.5-2.006c-.113-.028-.226-.058-.34-.088-.172-.044-.345-.09-.52-.134l-1.571-.391.599-1.382s.89.237.877.22c.342.084.493-.139.553-.287l.79-3.165.086.022.041.01c-.048-.02-.092-.032-.125-.04l.563-2.259c.014-.256-.074-.58-.563-.702.02-.013-.876-.218-.876-.218l.32-1.289 1.665.416-.001.006c.25.062.508.121.77.181l.495-1.982 1.206.3-.484 1.944c.323.074.65.148.967.228l.48-1.93 1.208.3-.494 1.983zm-3.818 7.188c.985.26 3.137.829 3.48-.546.35-1.406-1.738-1.875-2.756-2.103-.114-.026-.214-.048-.296-.069l-.663 2.657.235.061zm.929-3.882c.82.22 2.612.697 2.924-.553.318-1.278-1.422-1.663-2.273-1.851-.095-.022-.18-.04-.248-.057l-.601 2.41c.056.013.123.031.198.051z", fillRule: "evenodd" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const s = i;
@@ -737,7 +750,7 @@
             i.metadata = { width: 24, height: 24 };
             const s = i;
         },
-        74514: (e, t, a) => {
+        98440: (e, t, a) => {
             a.r(t), a.d(t, { default: () => s });
             var r = a(202784),
                 n = a(890601),
@@ -745,37 +758,11 @@
                 l = a(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 2C7.93 2 4.51 5.02 4 9.05L2.87 18H7.1c.46 2.28 2.48 4 4.9 4s4.44-1.72 4.9-4h4.24l-.64-5h-2.02l.38 3H5.13l.85-6.7C6.36 6.27 8.94 4 12 4V2zm0 18c-1.31 0-2.42-.83-2.83-2h5.66c-.41 1.17-1.52 2-2.83 2zm.3-12.29l1.41-1.42 1.76 1.76 4.29-4.72 1.48 1.34-5.7 6.28-3.24-3.24z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const s = i;
-        },
-        452693: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => s });
-            var r = a(202784),
-                n = a(890601),
-                o = a(783427),
-                l = a(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const s = i;
-        },
-        707305: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => s });
-            var r = a(202784),
-                n = a(890601),
-                o = a(783427),
-                l = a(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M19.1 4c.62 1.02.9 2.072.9 3.4 0 4.235-3.629 9.737-6.574 13.6H6.698L4 4.927l5.89-.557 1.427 11.437c1.333-2.163 2.978-5.563 2.978-7.88 0-1.27-.218-2.134-.56-2.845L19.1 4z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const s = i;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Live.9f168cda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Live.290f884a.js.map

@@ -15,7 +15,7 @@
                 u = i(659651),
                 p = i(392237),
                 m = i(336961),
-                h = i(538619),
+                h = i(836938),
                 y = i(85375),
                 b = i(94909),
                 g = i(596036),
@@ -577,7 +577,7 @@
                 p = i(891198),
                 m = i(392237),
                 h = i(366635),
-                y = i(538619),
+                y = i(836938),
                 b = i(94909),
                 g = i(747101),
                 f = i(615919);
@@ -652,7 +652,7 @@
                 a = i(630715),
                 o = i(731708),
                 n = i(392237),
-                s = i(538619);
+                s = i(836938);
             const l = n.default.create((e) => ({ icon: { marginEnd: e.spaces.space2 } })),
                 d = (e) => {
                     const { children: t, color: i, dir: n = "auto", disableIcon: d, numberOfLines: c, size: u, type: p, weight: m } = e,
@@ -662,4 +662,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-0a1983f3.074f2b9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-0a1983f3.5b25a8ba.js.map

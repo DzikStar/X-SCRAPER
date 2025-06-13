@@ -1348,13 +1348,16 @@
                 n("he9c9634", "Nepodarilo sa načítať preklad"),
                 n("j2198c98", "Skryť preložený príspevok"),
                 n("d4d35bea", "Prekladá sa…"),
-                n("i7ac410e", "Zobraziť pôvodný text"),
+                n("i7ac410e", "Zobraziť originál"),
                 n("c67f09e8", "Zobraziť preklad"),
                 n("e0f81ff3", "Preklad:"),
                 n("j2862695", function (e) {
                     return "Preložené z jazyka " + e.originLanguage + " spoločnosťou";
                 }),
                 n("b7cb4fab", "Preklad poskytuje"),
+                n("e0bffbf8", "About automatic translation"),
+                n("e839db3a", "Zrušiť"),
+                n("a15585b4", "Language Settings"),
                 n("d4c339b9", function (e) {
                     return "Príspevok z " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1731,7 +1734,6 @@
                 n("bf994ab2", "Iba vy"),
                 n("e7b4b30a", "Iba účty, o ktorých ste sa zmienili"),
                 n("ca6500a8", "Zakázať externé odkazy v odpovediach"),
-                n("e839db3a", "Zrušiť"),
                 n("c8a98928", "Propagačný obrázok"),
                 n("f5b3dc1e", "Možno neskôr"),
                 n("ae0c5fbe", "Pri zmene nastavenia, kto môže odpovedať, sa vyskytla chyba"),
@@ -1928,10 +1930,10 @@
                 n("da8ac57c", "Upraviť opis"),
                 n("a8fdd09c", "Zverejnenie článku"),
                 n("d8047cc8", "Publikovať"),
-                n("ff7ddca2", "Zverejnený článok sa bude zobrazovať ako príspevok a nájdete ho aj vo svojom profile na karte Články."),
-                n("ef34d7be", "Nastavenia publika a odpovedí sa po zverejnení článku nedajú upravovať."),
-                n("e52d4998", "Vyberte svoje publikum");
-            n("d7985b24", "Vyberte, kto môže na tento článok odpovedať"),
+                n("ff7ddca2", "Zverejnený článok sa bude zobrazovať ako príspevok a nájdete ho aj vo svojom profile na karte Články.");
+            n("ef34d7be", "Nastavenia publika a odpovedí sa po zverejnení článku nedajú upravovať."),
+                n("e52d4998", "Vyberte svoje publikum"),
+                n("d7985b24", "Vyberte, kto môže na tento článok odpovedať"),
                 n("b5660338", "Ukážka časovej osi"),
                 n("hff1b97a", "Odpovedať môžu len predplatitelia."),
                 n("a330771e", "Kopírovať odkaz do schránky"),
@@ -2984,10 +2986,10 @@
                 n("jb0a4c36", "Blog"),
                 n("ce6d095a", "Kariéry"),
                 n("e0adec82", "Zdroje pre značku"),
-                n("df1b7550", "Marketing"),
-                n("he258678", "X pre firmy"),
-                n("c6f58084", "Vývojári");
-            n("d83f18d2", "Adresár"),
+                n("df1b7550", "Marketing");
+            n("he258678", "X pre firmy"),
+                n("c6f58084", "Vývojári"),
+                n("d83f18d2", "Adresár"),
                 n("hc5aa17c", "Získajte aplikáciu X"),
                 n("j0693948", "Získajte aplikáciu Grok"),
                 n("fce9ecce", "Navrhované videá"),
@@ -3896,14 +3898,14 @@
                 n("caa8d928", "Prepnúť potláčanie ruchu"),
                 n("b5d88f0c", "Iba pre zamestnancov"),
                 n("c855ab8e", "Len pre predplatiteľov"),
-                n("ddeb0a3c", "Páčia sa vám ľudia z tejto Komunity? Pozrite si ju."),
-                n("e111f531", function (e) {
-                    return e.count + " naladen" + t(e.count, "í", "ých", "ý/-á", "ých");
-                }),
+                n("ddeb0a3c", "Páčia sa vám ľudia z tejto Komunity? Pozrite si ju.");
+            n("e111f531", function (e) {
+                return e.count + " naladen" + t(e.count, "í", "ých", "ý/-á", "ých");
+            }),
                 n("cbef820f", function (e) {
                     return "Používateľ " + e.screenName + " opätovne uverejnil stream.";
-                });
-            n("e3275464", "Odoslať"),
+                }),
+                n("e3275464", "Odoslať"),
                 n("cededf2a", "Hostiteľ"),
                 n("i2caef48", "Spoluhostitelia"),
                 n("j245c654", "Rečníci"),
@@ -4936,10 +4938,10 @@
                 n("d9508ab0", "zobr."),
                 n("d9f9dec0", "Zobraziť priestor"),
                 n("h0c1f37a", "Zobraziť analýzu priestoru"),
-                n("e41fffbc", "Celkový čas pozerania vašich videí."),
-                n("if2909ba", "Čas pozerania"),
-                n("i0e5bf4c", "Vaše videá");
-            n("ed99baea", "Prednostný prístup k beta verzii"),
+                n("e41fffbc", "Celkový čas pozerania vašich videí.");
+            n("if2909ba", "Čas pozerania"),
+                n("i0e5bf4c", "Vaše videá"),
+                n("ed99baea", "Prednostný prístup k beta verzii"),
                 n("gf898b70", "Rozšírené vyhľadávanie"),
                 n("d2a43a7a", "obsahuje „ai“ aj „startup“"),
                 n("a8584698", "ai startup"),
@@ -5890,12 +5892,12 @@
                 }),
                 n("f191a2ba", "nastavenia vyhľadávania"),
                 n("a068008a", "Priečinky sa momentálne nenačítavajú"),
-                n("f075b0e8", "Upraviť priečinok"),
-                n("beba2a0e", "Vytvoriť nový priečinok Záložka"),
+                n("f075b0e8", "Upraviť priečinok");
+            n("beba2a0e", "Vytvoriť nový priečinok Záložka"),
                 n("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
-                });
-            n("h18f86a4", "Odstrániť priečinok"),
+                }),
+                n("h18f86a4", "Odstrániť priečinok"),
                 n("f4ea967a", "Priečinok bol odstránený"),
                 n("b670aa62", "Názov priečinka"),
                 n("aece5462", "Názov priečinka bol úspešne aktualizovaný"),
@@ -6896,10 +6898,10 @@
                 n("d70c24d4", "Pomáha uchádzačom vyhľadať vašu pracovnú pozíciu."),
                 n("de1c4376", "Rozsah mzdy"),
                 n("hf352d42", "Pridajte voliteľné platové rozpätie, ktoré bude viditeľné pre uchádzačov. Ak to neurobíte, vezmite do úvahy prípadné zákony o transparentnosti platov v mieste, kde prijímate zamestnancov."),
-                n("ede7d0a2", "Mena"),
-                n("b925c18c", "Typ mzdy"),
-                n("j3d242ce", "Neplatný rozsah");
-            n("f4d07bd2", "Uveďte nepovinné údaje, ktoré uchádzačom uľahčia nájdenie vašich pracovných pozícií."),
+                n("ede7d0a2", "Mena");
+            n("b925c18c", "Typ mzdy"),
+                n("j3d242ce", "Neplatný rozsah"),
+                n("f4d07bd2", "Uveďte nepovinné údaje, ktoré uchádzačom uľahčia nájdenie vašich pracovných pozícií."),
                 n("b8cbb51a", "Zhrnutie pracovnej pozície"),
                 n("bda6881e", "Toto pracovné miesto bolo importované zo systému sledovania uchádzačov (ATS). Vezmite prosím na vedomie, že je možné upravovať iba určité polia."),
                 n("b075c68a", "Upraviť pracovnú pozíciu"),
@@ -7876,9 +7878,7 @@
                 n("d7b8387e", "Ak ste už svoje Predplatné zrušili, nemusíte robiť nič. Platnosť Predplatného automaticky uplynie na konci fakturačného cyklu."),
                 n("f4166d9a", "Chcete zrušiť svoje Predplatné?"),
                 n("b74ff5fc", "Ak Predplatné zrušíte, jeho platnosť automaticky uplynie na konci fakturačného cyklu."),
-                n("ee9efbc8", "Pokračovať na zrušenie"),
-                n("c5d9c77a", "Zdá sa, že sa vyskytla menšia chyba. Žiadne obavy, nie je to vaša vina. Zavrite toto okno a skúste to znova."),
-                n("jda53c24", "Predplatné môžete zrušiť prostredníctvom obchodu Apple App Store.");
+                n("ee9efbc8", "Pokračovať na zrušenie");
             function r(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var n = a[o];
@@ -7917,7 +7917,9 @@
                     d(e, a)
                 );
             }
-            n("g0a7a53e", "Predplatné môžete zrušiť prostredníctvom Obchodu Google Play."),
+            n("c5d9c77a", "Zdá sa, že sa vyskytla menšia chyba. Žiadne obavy, nie je to vaša vina. Zavrite toto okno a skúste to znova."),
+                n("jda53c24", "Predplatné môžete zrušiť prostredníctvom obchodu Apple App Store."),
+                n("g0a7a53e", "Predplatné môžete zrušiť prostredníctvom Obchodu Google Play."),
                 n("i5f14be7", function (e) {
                     return "Vitajte späť, " + e.displayName;
                 }),
@@ -8914,12 +8916,12 @@
                 }),
                 n("dff1ddd9", function (e) {
                     return "Prejsť na: " + e.advertiserName;
-                }),
-                n("b0b22805", function (e) {
-                    return "Prejsť na: " + e.advertiserName;
-                }),
-                n("c67e71aa", "Pozerať");
-            n("a6ada13e", "Nakupovať teraz"),
+                });
+            n("b0b22805", function (e) {
+                return "Prejsť na: " + e.advertiserName;
+            }),
+                n("c67e71aa", "Pozerať"),
+                n("a6ada13e", "Nakupovať teraz"),
                 n("j0f12222", "Zobraziť viac"),
                 n("f569f7c8", "Prejsť na webstránku"),
                 n("j0c6772a", "Navštíviť webstránku"),
@@ -10164,6 +10166,12 @@
                             key: "c5f6ee1d",
                             get: function () {
                                 return ["", " "];
+                            },
+                        },
+                        {
+                            key: "b6411d33",
+                            get: function () {
+                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
                             },
                         },
                         {
@@ -13378,4 +13386,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.f7f250ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.13efa44a.js.map

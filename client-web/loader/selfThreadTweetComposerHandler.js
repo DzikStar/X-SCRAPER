@@ -33,4 +33,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.selfThreadTweetComposerHandler.0622b03a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.selfThreadTweetComposerHandler.36f2e00a.js.map

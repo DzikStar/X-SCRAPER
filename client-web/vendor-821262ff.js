@@ -297,4 +297,4 @@ window.__SCRIPTS_LOADED__.runtime &&
         },
     ]),
     (window.__SCRIPTS_LOADED__.vendor = !0));
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/vendor-821262ff.b8cdca5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/vendor-821262ff.79408eba.js.map

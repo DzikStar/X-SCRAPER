@@ -1338,13 +1338,16 @@
                 n("he9c9634", "無法取得翻譯"),
                 n("j2198c98", "隱藏翻譯的貼文"),
                 n("d4d35bea", "翻譯中…"),
-                n("i7ac410e", "顯示原始貼文"),
+                n("i7ac410e", "顯示原文"),
                 n("c67f09e8", "顯示翻譯"),
                 n("e0f81ff3", "翻譯："),
                 n("j2862695", function (e) {
                     return "Translated from " + e.originLanguage + " by";
                 }),
                 n("b7cb4fab", "由"),
+                n("e0bffbf8", "About automatic translation"),
+                n("e839db3a", "關閉"),
+                n("a15585b4", "Language Settings"),
                 n("d4c339b9", function (e) {
                     return "來自 " + e.fullName + " (@" + e.screenName + ") 的貼文";
                 }),
@@ -1721,7 +1724,6 @@
                 n("bf994ab2", "僅限你"),
                 n("e7b4b30a", "僅限你提及的帳戶"),
                 n("ca6500a8", "停用回覆中的外部連結"),
-                n("e839db3a", "關閉"),
                 n("c8a98928", "推廣圖片"),
                 n("f5b3dc1e", "稍後再說"),
                 n("ae0c5fbe", "變更哪些人可以回覆時發生錯誤"),
@@ -1918,10 +1920,10 @@
                 n("da8ac57c", "編輯說明文字"),
                 n("a8fdd09c", "發佈文章"),
                 n("d8047cc8", "發佈"),
-                n("ff7ddca2", "發佈後，你的文章將顯示為貼文。此外，你可以在個人資料的「文章」標籤下找到它。"),
-                n("ef34d7be", "文章發佈後，就無法編輯受眾和回覆控制項。"),
-                n("e52d4998", "選擇你的受眾");
-            n("d7985b24", "選擇誰可以回覆此文章"),
+                n("ff7ddca2", "發佈後，你的文章將顯示為貼文。此外，你可以在個人資料的「文章」標籤下找到它。");
+            n("ef34d7be", "文章發佈後，就無法編輯受眾和回覆控制項。"),
+                n("e52d4998", "選擇你的受眾"),
+                n("d7985b24", "選擇誰可以回覆此文章"),
                 n("b5660338", "時間軸預覽"),
                 n("hff1b97a", "只有訂閱者可以回覆。"),
                 n("a330771e", "將連結複製到剪貼簿"),
@@ -2974,10 +2976,10 @@
                 n("jb0a4c36", "部落格"),
                 n("ce6d095a", "人才招募"),
                 n("e0adec82", "品牌資源"),
-                n("df1b7550", "行銷"),
-                n("he258678", "X 商業版"),
-                n("c6f58084", "開發人員");
-            n("d83f18d2", "目錄"),
+                n("df1b7550", "行銷");
+            n("he258678", "X 商業版"),
+                n("c6f58084", "開發人員"),
+                n("d83f18d2", "目錄"),
                 n("hc5aa17c", "取得 X 應用程式"),
                 n("j0693948", "取得 Grok 應用程式"),
                 n("fce9ecce", "建議的影片"),
@@ -3886,14 +3888,14 @@
                 n("caa8d928", "切換噪音抑制"),
                 n("b5d88f0c", "僅限員工"),
                 n("c855ab8e", "訂閱者專屬"),
-                n("ddeb0a3c", "這裡就是社群。喜歡這群人嗎？瞧一瞧。"),
-                n("e111f531", function (e) {
-                    return e.count + " 人已收聽";
-                }),
+                n("ddeb0a3c", "這裡就是社群。喜歡這群人嗎？瞧一瞧。");
+            n("e111f531", function (e) {
+                return e.count + " 人已收聽";
+            }),
                 n("cbef820f", function (e) {
                     return e.screenName + " 已轉發此直播！";
-                });
-            n("e3275464", "發送"),
+                }),
+                n("e3275464", "發送"),
                 n("cededf2a", "主持人"),
                 n("i2caef48", "共同主持人"),
                 n("j245c654", "說話者"),
@@ -4926,10 +4928,10 @@
                 n("d9508ab0", "次觀看"),
                 n("d9f9dec0", "查看音訊空間"),
                 n("h0c1f37a", "查看音訊空間分析"),
-                n("e41fffbc", "你影片的總觀看時間。"),
-                n("if2909ba", "觀看時間"),
-                n("i0e5bf4c", "你的影片");
-            n("ed99baea", "搶先體驗 Beta 版"),
+                n("e41fffbc", "你影片的總觀看時間。");
+            n("if2909ba", "觀看時間"),
+                n("i0e5bf4c", "你的影片"),
+                n("ed99baea", "搶先體驗 Beta 版"),
                 n("gf898b70", "進階搜尋"),
                 n("d2a43a7a", '同時包含 "ai" 和 "啟動"'),
                 n("a8584698", "ai 啟動"),
@@ -5880,12 +5882,12 @@
                 }),
                 n("f191a2ba", "搜尋設定"),
                 n("a068008a", "資料夾目前無法載入"),
-                n("f075b0e8", "編輯資料夾"),
-                n("beba2a0e", "建立新的書籤資料夾"),
+                n("f075b0e8", "編輯資料夾");
+            n("beba2a0e", "建立新的書籤資料夾"),
                 n("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
-                });
-            n("h18f86a4", "刪除資料夾"),
+                }),
+                n("h18f86a4", "刪除資料夾"),
                 n("f4ea967a", "資料夾已刪除"),
                 n("b670aa62", "資料夾名稱"),
                 n("aece5462", "資料夾名稱已更新成功"),
@@ -6886,10 +6888,10 @@
                 n("d70c24d4", "用於協助應徵者搜尋你的工作。"),
                 n("de1c4376", "薪資範圍"),
                 n("hf352d42", "加入應徵者將看到的選擇性薪資範圍。如果你選擇不加入，請留意你僱用位置的任何薪資透明度法律。"),
-                n("ede7d0a2", "貨幣"),
-                n("b925c18c", "薪資類型"),
-                n("j3d242ce", "無效範圍");
-            n("f4d07bd2", "包括選擇性的詳細資料，以便應徵者更輕鬆地透過搜尋找到你的職位。"),
+                n("ede7d0a2", "貨幣");
+            n("b925c18c", "薪資類型"),
+                n("j3d242ce", "無效範圍"),
+                n("f4d07bd2", "包括選擇性的詳細資料，以便應徵者更輕鬆地透過搜尋找到你的職位。"),
                 n("b8cbb51a", "工作摘要"),
                 n("bda6881e", "此工作已從你的應徵者追蹤系統 (ATS) 匯入。請注意，只能修改特定欄位。"),
                 n("b075c68a", "編輯工作"),
@@ -7866,9 +7868,7 @@
                 n("d7b8387e", "如果你已經取消，則無需採取其他動作。你的訂閱將在計費周期結束時自動到期。"),
                 n("f4166d9a", "想要取消你的訂閱嗎？"),
                 n("b74ff5fc", "如果你取消，你的訂閱將在計費周期結束時自動到期。"),
-                n("ee9efbc8", "繼續取消"),
-                n("c5d9c77a", "似乎發生一個小問題。但別擔心，這不是你的錯。請關閉此視窗，然後再試一次。"),
-                n("jda53c24", "你可以透過 Apple App Store 取消訂閱。");
+                n("ee9efbc8", "繼續取消");
             function r(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7907,7 +7907,9 @@
                     d(e, c)
                 );
             }
-            n("g0a7a53e", "你可以透過 Google Play 商店取消訂閱。"),
+            n("c5d9c77a", "似乎發生一個小問題。但別擔心，這不是你的錯。請關閉此視窗，然後再試一次。"),
+                n("jda53c24", "你可以透過 Apple App Store 取消訂閱。"),
+                n("g0a7a53e", "你可以透過 Google Play 商店取消訂閱。"),
                 n("i5f14be7", function (e) {
                     return e.displayName + "，歡迎回來";
                 }),
@@ -8904,12 +8906,12 @@
                 }),
                 n("dff1ddd9", function (e) {
                     return "前往 " + e.advertiserName;
-                }),
-                n("b0b22805", function (e) {
-                    return "造訪 " + e.advertiserName;
-                }),
-                n("c67e71aa", "立即觀看");
-            n("a6ada13e", "立即購買"),
+                });
+            n("b0b22805", function (e) {
+                return "造訪 " + e.advertiserName;
+            }),
+                n("c67e71aa", "立即觀看"),
+                n("a6ada13e", "立即購買"),
                 n("j0f12222", "查看更多"),
                 n("f569f7c8", "前往網站"),
                 n("j0c6772a", "造訪網站"),
@@ -10160,6 +10162,12 @@
                             key: "c5f6ee1d",
                             get: function () {
                                 return ["", " ", " 翻譯"];
+                            },
+                        },
+                        {
+                            key: "b6411d33",
+                            get: function () {
+                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
                             },
                         },
                         {
@@ -13029,8 +13037,8 @@
                 y = g._pluralGeneratorFn,
                 k = (g._currencyNameFormat, g._currencyFormatterFn),
                 p = (g._validateParameterTypeDate, g._dateToPartsFormat, g._dateToPartsFormatterFn),
-                j = (g._dateFormat, g._dateFormatterFn),
-                l = g._relativeTimeFormatterFn,
+                l = (g._dateFormat, g._dateFormatterFn),
+                j = g._relativeTimeFormatterFn,
                 X = g._unitFormatterFn;
             (g.a1844743793 = s(["", , 1, 0, 1, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", h("truncate"), "∞", "非數值", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { other: "0" }, 4: { other: "0萬" }, 5: { other: "00萬" }, 6: { other: "000萬" }, 7: { other: "0000萬" }, 8: { other: "0億" }, 9: { other: "00億" }, 10: { other: "000億" }, 11: { other: "0000億" }, 12: { other: "0兆" }, 13: { other: "00兆" }, 14: { other: "000兆" }, maxExponent: 14 }], g("zh-Hant").pluralGenerator({}))),
                 (g.a1393757629 = s(["", , 1, 0, 3, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", h(), "∞", "非數值", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
@@ -13208,29 +13216,29 @@
                 (g.b594161176 = p({ 1: g("zh-Hant").numberFormatter({ raw: "0" }) }, { pattern: "y年M月d日", timeSeparator: ":" })),
                 (g.a2028417884 = p({}, { pattern: "LLLL", timeSeparator: ":", months: { L: { 4: { 1: "1月", 2: "2月", 3: "3月", 4: "4月", 5: "5月", 6: "6月", 7: "7月", 8: "8月", 9: "9月", 10: "10月", 11: "11月", 12: "12月" } } } })),
                 (g.b1013303972 = p({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "星期日", mon: "星期一", tue: "星期二", wed: "星期三", thu: "星期四", fri: "星期五", sat: "星期六" } } } })),
-                (g.a884327470 = j(g("zh-Hant").dateToPartsFormatter({ skeleton: "MMMd" }))),
-                (g.a999230063 = j(g("zh-Hant").dateToPartsFormatter({ skeleton: "yMMMd" }))),
-                (g.a1877045376 = j(g("zh-Hant").dateToPartsFormatter({ skeleton: "hm" }))),
-                (g.a1617598483 = j(g("zh-Hant").dateToPartsFormatter({ skeleton: "MMMEd" }))),
-                (g.a884611570 = j(g("zh-Hant").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
-                (g.a1624986651 = j(g("zh-Hant").dateToPartsFormatter({ skeleton: "MMMMd" }))),
-                (g.b1598341993 = j(g("zh-Hant").dateToPartsFormatter({ datetime: "long" }))),
-                (g.b1748466678 = j(g("zh-Hant").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
-                (g.a904916234 = j(g("zh-Hant").dateToPartsFormatter({ date: "long" }))),
-                (g.b500708855 = j(g("zh-Hant").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
-                (g.b279044158 = j(g("zh-Hant").dateToPartsFormatter({ date: "short" }))),
-                (g.a1307912998 = j(g("zh-Hant").dateToPartsFormatter({ skeleton: "y" }))),
-                (g.a1279098577 = j(g("zh-Hant").dateToPartsFormatter({ skeleton: "yMMM" }))),
-                (g.a1836647332 = j(g("zh-Hant").dateToPartsFormatter({ datetime: "full" }))),
-                (g.b615772994 = j(g("zh-Hant").dateToPartsFormatter({ datetime: "medium" }))),
-                (g.a1020471046 = j(g("zh-Hant").dateToPartsFormatter({ skeleton: "yMMdd" }))),
-                (g.a376300355 = j(g("zh-Hant").dateToPartsFormatter({ time: "short" }))),
-                (g.a1349341877 = j(g("zh-Hant").dateToPartsFormatter({ skeleton: "Ehm" }))),
-                (g.a998544870 = j(g("zh-Hant").dateToPartsFormatter({ skeleton: "yMMMM" }))),
-                (g.b166302607 = j(g("zh-Hant").dateToPartsFormatter({ date: "medium" }))),
-                (g.a883642277 = j(g("zh-Hant").dateToPartsFormatter({ skeleton: "MMMM" }))),
-                (g.a2136887717 = j(g("zh-Hant").dateToPartsFormatter({ skeleton: "EEEE" }))),
-                (g.a913265705 = l(g("zh-Hant").numberFormatter({}), g("zh-Hant").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-other": "{0} 天後" }, "relativeTime-type-past": { "relativeTimePattern-count-other": "{0} 天前" }, "relative-type--2": "前天", "relative-type--1": "昨天", "relative-type-0": "今天", "relative-type-1": "明天", "relative-type-2": "後天" })),
+                (g.a884327470 = l(g("zh-Hant").dateToPartsFormatter({ skeleton: "MMMd" }))),
+                (g.a999230063 = l(g("zh-Hant").dateToPartsFormatter({ skeleton: "yMMMd" }))),
+                (g.a1877045376 = l(g("zh-Hant").dateToPartsFormatter({ skeleton: "hm" }))),
+                (g.a1617598483 = l(g("zh-Hant").dateToPartsFormatter({ skeleton: "MMMEd" }))),
+                (g.a884611570 = l(g("zh-Hant").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
+                (g.a1624986651 = l(g("zh-Hant").dateToPartsFormatter({ skeleton: "MMMMd" }))),
+                (g.b1598341993 = l(g("zh-Hant").dateToPartsFormatter({ datetime: "long" }))),
+                (g.b1748466678 = l(g("zh-Hant").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
+                (g.a904916234 = l(g("zh-Hant").dateToPartsFormatter({ date: "long" }))),
+                (g.b500708855 = l(g("zh-Hant").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
+                (g.b279044158 = l(g("zh-Hant").dateToPartsFormatter({ date: "short" }))),
+                (g.a1307912998 = l(g("zh-Hant").dateToPartsFormatter({ skeleton: "y" }))),
+                (g.a1279098577 = l(g("zh-Hant").dateToPartsFormatter({ skeleton: "yMMM" }))),
+                (g.a1836647332 = l(g("zh-Hant").dateToPartsFormatter({ datetime: "full" }))),
+                (g.b615772994 = l(g("zh-Hant").dateToPartsFormatter({ datetime: "medium" }))),
+                (g.a1020471046 = l(g("zh-Hant").dateToPartsFormatter({ skeleton: "yMMdd" }))),
+                (g.a376300355 = l(g("zh-Hant").dateToPartsFormatter({ time: "short" }))),
+                (g.a1349341877 = l(g("zh-Hant").dateToPartsFormatter({ skeleton: "Ehm" }))),
+                (g.a998544870 = l(g("zh-Hant").dateToPartsFormatter({ skeleton: "yMMMM" }))),
+                (g.b166302607 = l(g("zh-Hant").dateToPartsFormatter({ date: "medium" }))),
+                (g.a883642277 = l(g("zh-Hant").dateToPartsFormatter({ skeleton: "MMMM" }))),
+                (g.a2136887717 = l(g("zh-Hant").dateToPartsFormatter({ skeleton: "EEEE" }))),
+                (g.a913265705 = j(g("zh-Hant").numberFormatter({}), g("zh-Hant").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-other": "{0} 天後" }, "relativeTime-type-past": { "relativeTimePattern-count-other": "{0} 天前" }, "relative-type--2": "前天", "relative-type--1": "昨天", "relative-type-0": "今天", "relative-type-1": "明天", "relative-type-2": "後天" })),
                 (g.a1728784644 = X(g("zh-Hant").numberFormatter({}), g("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "每秒 {0}" } })),
                 (g.b158178652 = X(g("zh-Hant").numberFormatter({}), g("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "分鐘", other: "{0} 分鐘", perUnitPattern: "每分鐘 {0}" } })),
                 (g.b1120716236 = X(g("zh-Hant").numberFormatter({}), g("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "小時", other: "{0} 小時", perUnitPattern: "每小時 {0}" } })),
@@ -13371,4 +13379,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.de3ed31a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.05ee211a.js.map

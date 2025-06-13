@@ -3,7 +3,7 @@
     ["bundle.Conversation-c14c160f"],
     {
         752500: (e, t, n) => {
-            n.d(t, { $D: () => G, HB: () => W, R9: () => H, Sy: () => J, Uk: () => I, Ul: () => z, Un: () => F, WF: () => V, Wl: () => Z, d2: () => U, ep: () => Q, ib: () => E, mL: () => M, n9: () => R, nW: () => T, sA: () => B, sV: () => Y, xE: () => K });
+            n.d(t, { $D: () => N, HB: () => Z, R9: () => M, Sy: () => O, Uk: () => q, Ul: () => B, Un: () => z, WF: () => E, Wl: () => T, d2: () => I, ep: () => K, ib: () => J, mL: () => C, n9: () => G, nW: () => P, sV: () => R, xE: () => F });
             var o = n(976145),
                 c = n(111677),
                 i = n.n(c),
@@ -28,15 +28,10 @@
                 j = i().cb51c854,
                 k = i().bb7b39e2,
                 A = i().eb9466d0,
-                L = i().c21037d0,
-                $ = i().b07cc9f2,
-                D = i().ce309bee,
-                P = i().c6c16a52,
-                O = i().cc49d030,
-                C = i().c3fca124,
-                q = i().d4f57cce,
-                N = i().c6daa762;
-            function T(e) {
+                $ = (i().c21037d0, i().b07cc9f2, i().ce309bee, i().c6c16a52, i().cc49d030, i().c3fca124),
+                D = i().d4f57cce,
+                L = i().c6daa762;
+            function P(e) {
                 switch (e) {
                     case "AnyGender":
                         return j;
@@ -48,93 +43,77 @@
                         return (0, a.ZP)(`Unknown gender: ${e}`), e;
                 }
             }
-            function B(e) {
-                switch (e) {
-                    case "COUNTRIES":
-                        return L;
-                    case "REGIONS":
-                        return $;
-                    case "METROS":
-                        return D;
-                    case "CITIES":
-                        return P;
-                    case "POSTAL_CODES":
-                        return O;
-                    default:
-                        return (0, a.ZP)(`Unknown targeting locationType: ${e}`), e;
-                }
-            }
-            function J({ amount: e, currency: t, fractionDigits: n, lang: o }) {
+            function O({ amount: e, currency: t, fractionDigits: n, lang: o }) {
                 return e.toLocaleString((0, u.It)(o), { currency: t, style: "currency", maximumFractionDigits: void 0 !== n ? n : 2, minimumFractionDigits: void 0 !== n ? n : 2 });
             }
-            function I({ couponAmount: e, currency: t, lang: n }) {
-                const o = J({ amount: e, lang: n, currency: t, fractionDigits: 0 });
+            function q({ couponAmount: e, currency: t, lang: n }) {
+                const o = O({ amount: e, lang: n, currency: t, fractionDigits: 0 });
                 return s({ couponAmount: o });
             }
-            function M({ coupon: e, enrolByDate: t, lang: n }) {
-                const o = J({ amount: e.total_amount, lang: n, currency: e.currency_code, fractionDigits: 0 });
+            function C({ coupon: e, enrolByDate: t, lang: n }) {
+                const o = O({ amount: e.total_amount, lang: n, currency: e.currency_code, fractionDigits: 0 });
                 return m({ couponAmount: o, date: i().ba2e82a1(t) });
             }
-            function z({ coupon: e, enrolByDate: t, lang: n }) {
-                const o = J({ amount: e.total_amount, lang: n, currency: e.currency_code, fractionDigits: 0 });
+            function B({ coupon: e, enrolByDate: t, lang: n }) {
+                const o = O({ amount: e.total_amount, lang: n, currency: e.currency_code, fractionDigits: 0 });
                 return g({ couponAmount: o, date: i().ba2e82a1(t) });
             }
-            function G({ coupon: e, lang: t }) {
-                const n = J({ amount: e.credit_amount, lang: t, currency: e.currency_code, fractionDigits: 0 }),
-                    o = J({ amount: e.spend_amount, lang: t, currency: e.currency_code, fractionDigits: 0 });
+            function N({ coupon: e, lang: t }) {
+                const n = O({ amount: e.credit_amount, lang: t, currency: e.currency_code, fractionDigits: 0 }),
+                    o = O({ amount: e.spend_amount, lang: t, currency: e.currency_code, fractionDigits: 0 });
                 return l({ couponAmount: n, spendAmount: o });
             }
-            function Z({ currency: e, dailyBudgetNum: t, durationDays: n, lang: o }) {
-                const c = J({ amount: t, lang: o, currency: e, fractionDigits: 0 });
-                return d({ dailyBudget: c, durationLabel: U({ durationDays: n }) });
+            function T({ currency: e, dailyBudgetNum: t, durationDays: n, lang: o }) {
+                const c = O({ amount: t, lang: o, currency: e, fractionDigits: 0 });
+                return d({ dailyBudget: c, durationLabel: I({ durationDays: n }) });
             }
-            function E({ durationDays: e }) {
-                return p({ durationLabel: U({ durationDays: e }) });
+            function J({ durationDays: e }) {
+                return p({ durationLabel: I({ durationDays: e }) });
             }
-            function F({ numLocations: e }) {
+            function z({ numLocations: e }) {
                 const t = i().ia24dc8d(e);
                 return f({ numLocations: t });
             }
-            function R({ maxAge: e, minAge: t }) {
+            function G({ maxAge: e, minAge: t }) {
                 return e ? h({ minAge: t, maxAge: e }) : _({ minAge: t });
             }
-            function U({ durationDays: e }) {
+            function I({ durationDays: e }) {
                 const t = i().ia24dc8d(e);
                 return y({ durationDays: t });
             }
-            function K({ high: e, low: t }) {
+            function F({ high: e, low: t }) {
                 const n = i().cf8abf59(t),
                     o = i().cf8abf59(e);
                 return b({ audienceLow: n, audienceHigh: o });
             }
-            function W({ formattedAge: e, gender: t, locations: n }) {
+            function Z({ formattedAge: e, gender: t, locations: n }) {
                 const c = n.length;
-                return v({ newlinePlaceholder: "\n", locations: (0, o.Z)(n), locationsHeading: F({ numLocations: c }), formattedAge: e, gender: t });
+                return v({ newlinePlaceholder: "\n", locations: (0, o.Z)(n), locationsHeading: z({ numLocations: c }), formattedAge: e, gender: t });
             }
-            function H({ formattedAge: e, gender: t, keywords: n, locations: c }) {
+            function M({ formattedAge: e, gender: t, keywords: n, locations: c }) {
                 const i = c.length;
-                return w({ newlinePlaceholder: "\n", locations: (0, o.Z)(c), locationsHeading: F({ numLocations: i }), formattedAge: e, gender: t, keywords: (0, o.Z)(n) });
+                return w({ newlinePlaceholder: "\n", locations: (0, o.Z)(c), locationsHeading: z({ numLocations: i }), formattedAge: e, gender: t, keywords: (0, o.Z)(n) });
             }
-            function V(e) {
+            function E(e) {
                 switch (e) {
                     case "Engagements":
-                        return C;
+                        return $;
                     case "Followers":
-                        return q;
+                        return D;
                     case "WebsiteClicks":
-                        return N;
+                        return L;
                     default:
                         throw (0, r.q8)(e);
                 }
             }
-            function Q({ calloutType: e, couponAmount: t, currency: n, lang: o, spendAmount: c }) {
-                const i = J({ amount: t, lang: o, currency: n, fractionDigits: 0 }),
-                    a = J({ amount: c, lang: o, currency: n, fractionDigits: 0 });
+            function K({ calloutType: e, couponAmount: t, currency: n, lang: o, spendAmount: c }) {
+                const i = O({ amount: t, lang: o, currency: n, fractionDigits: 0 }),
+                    a = O({ amount: c, lang: o, currency: n, fractionDigits: 0 });
                 return "eligibleCoupon" === e ? S({ couponAmount: i, spendAmount: a }) : x({ couponAmount: i, spendAmount: a });
             }
-            function Y({ calloutType: e, couponAmount: t, currency: n, lang: o, spendAmount: c }) {
-                const i = J({ amount: t, lang: o, currency: n, fractionDigits: 0 }),
-                    a = J({ amount: c, lang: o, currency: n, fractionDigits: 0 });
+            function R({ calloutType: e, couponAmount: t, currency: n, lang: o, spendAmount: c }) {
+                const i = O({ amount: t, lang: o, currency: n, fractionDigits: 0 }),
+                    a = O({ amount: c, lang: o, currency: n, fractionDigits: 0 });
                 return x({ couponAmount: i, spendAmount: a });
             }
         },
@@ -143,9 +122,9 @@
             const o = { introButton: "introButton", nextButton: "nextButton", objectiveScreen: "objectiveScreen", targetingScreen: "targetingScreen", getObjective: (e) => `objectiveScreenObjective${e}`, targetingLocationScreen: "targetingLocationScreen", targetingGenderScreen: "targetingGenderScreen", targetingKeywordsScreen: "targetingKeywordsScreen", budgetSelectScreen: "budgetSelectScreen", reviewScreen: "reviewScreen", reviewButton: "reviewButton", reviewObjectiveDescription: "reviewObjectiveDescription", reviewTargetingDescription: "reviewTargetingDescription", reviewBudgetAndDurationDescription: "reviewBudgetAndDurationDescription", reviewPaymentPivot: "reviewPaymentPivot", reviewPromotionTotalDescription: "reviewPromotionTotalDescription", targetingLocationPivot: "targetingLocationPivot", targetingGenderPivot: "targetingGenderPivot", targetingKeywordsPivot: "targetingKeywordsPivot", backButton: "backButton", targetingLocationSearch: "targetingLocationSearch", targetingLocationItem: "targetingLocationItem", getTargetingGender: (e) => `targetingGenderScreenGender${e}`, targetingKeywordsInput: "targetingKeywordsInput", paymentMethodSelect: "paymentMethodSelect", dropoffScreen: "dropoffScreen" };
         },
         202205: (e, t, n) => {
-            n.d(t, { ZV: () => ne, D_: () => oe, MN: () => te, cU: () => ge, gC: () => X, bx: () => ve, C0: () => be, Jy: () => le, lg: () => ce, WS: () => Y, s0: () => fe, YZ: () => re, Mi: () => ee, Ur: () => o, EP: () => se, hq: () => me });
+            n.d(t, { ZV: () => ce, D_: () => ie, MN: () => oe, gC: () => te, bx: () => ve, C0: () => be, lg: () => ae, WS: () => ee, s0: () => fe, YZ: () => se, Mi: () => ne, Ur: () => o, EP: () => ge, hq: () => le });
             var o = {};
-            n.r(o), n.d(o, { audienceEstimateCall: () => R, audienceEstimateFail: () => K, audienceEstimateSuccess: () => U, back: () => y, boostCreationClick: () => G, budgetSelectPageLoad: () => g, donePageLoad: () => f, dropOffScreenCancel: () => _, dropOffScreenConfirm: () => h, enrollCouponFail: () => M, enrollCouponSuccess: () => I, fetchCouponFailed: () => J, fetchCouponSuccess: () => B, goalSelectionPageLoad: () => m, graphQlFetchReturnedInvalidData: () => T, introPageLoad: () => r, liteLoadFail: () => w, pageLoadFail: () => v, paymentMethodChanged: () => V, paymentMethodDeleted: () => Q, paymentPageLoad: () => l, paymentPageLoadAddingCard: () => d, paymentSelectPageLoad: () => H, professionalAccountsEligible: () => x, professionalAccountsIneligible: () => j, professionalAccountsNotRetrieved: () => k, professionalAccountsSignup: () => S, promotionCall: () => Z, promotionClick: () => z, promotionError: () => E, promotionSuccess: () => F, qpExperimentIntro: () => W, reload: () => b, reviewPageLoad: () => p, setBudgetDuration: () => C, setDailyBudget: () => q, setPromoteGoal: () => A, setTargetingAgeBucket: () => D, setTargetingGender: () => P, setTargetingKeywords: () => O, setTargetingLocation: () => L, targetingLocationInvalid: () => N, targetingLocationPageLoad: () => s, targetingLocationSearch: () => $, targetingPageLoad: () => u });
+            n.r(o), n.d(o, { audienceEstimateCall: () => U, audienceEstimateFail: () => H, audienceEstimateSuccess: () => W, back: () => y, boostCreationClick: () => M, budgetSelectPageLoad: () => g, donePageLoad: () => f, dropOffScreenCancel: () => _, dropOffScreenConfirm: () => h, enrollCouponFail: () => F, enrollCouponSuccess: () => I, fetchCouponFailed: () => G, fetchCouponSuccess: () => z, goalSelectionPageLoad: () => m, graphQlFetchReturnedInvalidData: () => J, introPageLoad: () => r, liteLoadFail: () => w, pageLoadFail: () => v, paymentMethodChanged: () => Y, paymentMethodDeleted: () => X, paymentPageLoad: () => l, paymentPageLoadAddingCard: () => d, paymentSelectPageLoad: () => V, professionalAccountsEligible: () => x, professionalAccountsIneligible: () => j, professionalAccountsNotRetrieved: () => k, professionalAccountsSignup: () => S, promotionCall: () => E, promotionClick: () => Z, promotionError: () => K, promotionSuccess: () => R, qpExperimentIntro: () => Q, reload: () => b, reviewPageLoad: () => p, setBudgetDuration: () => q, setDailyBudget: () => C, setPromoteGoal: () => A, setTargetingAgeBucket: () => L, setTargetingGender: () => P, setTargetingKeywords: () => O, setTargetingLocation: () => $, targetingLocationInvalid: () => B, targetingLocationPageLoad: () => s, targetingLocationSearch: () => D, targetingLocationSearchGraphQLFail: () => N, targetingLocationSearchRestFail: () => T, targetingPageLoad: () => u });
             n(136728);
             var c = n(688715),
                 i = n(323265),
@@ -210,13 +189,13 @@
             function A(e) {
                 return { component: "objective", element: "interaction", action: "change", data: { context: e, event_info: e } };
             }
-            function L(e) {
+            function $(e) {
                 return { component: "targeting_location", element: "interaction", action: "change", data: { context: JSON.stringify(e), event_info: JSON.stringify(e) } };
             }
-            function $(e) {
+            function D(e) {
                 return { component: "targeting_location", element: "interaction", action: "change", data: { context: e, event_info: e } };
             }
-            function D(e) {
+            function L(e) {
                 return { component: "targeting_age", element: "interaction", action: "change", data: { context: e, event_info: e } };
             }
             function P(e) {
@@ -225,131 +204,135 @@
             function O(e) {
                 return { component: "targeting_keywords", element: "interaction", action: "change", data: { context: e, event_info: e } };
             }
-            function C(e) {
+            function q(e) {
                 return { component: "budget_select_days", element: "interaction", action: "change", data: { context: e, event_info: e } };
             }
-            function q(e) {
+            function C(e) {
                 return { component: "budget_select_daily_budget", element: "interaction", action: "change", data: { context: e, event_info: e } };
             }
-            function N() {
+            function B() {
                 return { component: "targeting_location", element: "interaction", action: "invalid" };
             }
-            function T(e) {
-                return { component: "intro", element: "use_gql_ads_account_data", action: "error", data: { context: e, event_info: e } };
+            function N(e) {
+                return { component: "targeting_location", element: "search_graphql", action: "fail", data: { context: e, event_info: e } };
             }
-            function B(e) {
-                return { component: "intro", element: "fetch_coupon", action: "success", data: { context: JSON.stringify(e), event_info: JSON.stringify(e) } };
+            function T(e) {
+                return { component: "targeting_location", element: "search_rest", action: "fail", data: { context: e, event_info: e } };
             }
             function J(e) {
+                return { component: "intro", element: "use_gql_ads_account_data", action: "error", data: { context: e, event_info: e } };
+            }
+            function z(e) {
+                return { component: "intro", element: "fetch_coupon", action: "success", data: { context: JSON.stringify(e), event_info: JSON.stringify(e) } };
+            }
+            function G(e) {
                 return { component: "intro", element: "fetch_coupon", action: "fail", data: { context: e, event_info: e } };
             }
             function I(e) {
                 return { component: "review", element: "enroll_coupon", action: "success", data: { context: JSON.stringify(e), event_info: JSON.stringify(e) } };
             }
-            function M(e) {
+            function F(e) {
                 return { component: "review", element: "enroll_coupon", action: "fail", data: { context: e, event_info: e } };
             }
-            function z() {
+            function Z() {
                 return { component: "review", element: "promotion", action: "click" };
             }
-            function G() {
+            function M() {
                 return { component: "boost", element: "promotion", action: "click" };
             }
-            function Z(e) {
+            function E(e) {
                 return { component: "review", element: "promotion", action: "call", data: { context: JSON.stringify(e), event_info: JSON.stringify(e) } };
             }
-            function E(e) {
+            function K(e) {
                 return { component: "review", element: "promotion", action: "error", data: { context: e, event_info: e } };
             }
-            function F(e) {
+            function R(e) {
                 return { component: "review", element: "promotion", action: "success", data: { context: e, event_info: e } };
             }
-            function R(e) {
+            function U(e) {
                 return { component: "budget_select", element: "audience_estimate", action: "call", data: { context: JSON.stringify(e), event_info: JSON.stringify(e) } };
             }
-            function U(e) {
+            function W(e) {
                 return { component: "budget_select", element: "audience_estimate", action: "success", data: { context: JSON.stringify(e), event_info: JSON.stringify(e) } };
             }
-            function K(e) {
+            function H(e) {
                 return { component: "budget_select", element: "audience_estimate", action: "fail", data: { context: JSON.stringify(e), event_info: JSON.stringify(e) } };
             }
-            function W(e) {
+            function Q(e) {
                 return { component: "experiment", element: "intro_skip", action: e ? "enabled" : "disabled" };
             }
-            function H() {
+            function V() {
                 return { component: "payment_select", element: "page", action: "load" };
             }
-            function V(e) {
+            function Y(e) {
                 return { component: "payment_select", element: "change_payment_method", action: e ? "fail" : "success", data: e ? { context: e, event_info: e } : void 0 };
             }
-            function Q(e) {
+            function X(e) {
                 return { component: "payment_select", element: "delete_payment_method", action: e ? "fail" : "success", data: e ? { context: e, event_info: e } : void 0 };
             }
-            function Y(e, t, n, o) {
+            function ee(e, t, n, o) {
                 return `/${e}/status/${t}/${n}/${o}`;
             }
-            function X(e, t) {
+            function te(e, t) {
                 return `/${e}/status/${t}/analytics`;
             }
-            const ee = (e, t) => (t, n, o, c) => {
+            const ne = (e, t) => (t, n, o, c) => {
                 const i = (function (e, t, n, o) {
                     switch (o) {
                         case "intro":
                         case "objective":
                         case "targeting":
-                            return X(e, t);
+                            return te(e, t);
                         case "budget_select":
                         case "targeting_location":
                         case "targeting_gender":
                         case "targeting_keywords":
-                            return Y(e, t, n, te.Targeting);
+                            return ee(e, t, n, oe.Targeting);
                         case "review":
-                            return Y(e, t, n, te.BudgetSelect);
+                            return ee(e, t, n, oe.BudgetSelect);
                         case "payment":
                         case "payment_select":
                         case "done":
-                            return Y(e, t, n, te.Review);
+                            return ee(e, t, n, oe.Review);
                         default:
                             (0, a.ZP)(`handleGoBack: screenType ${o} is invalid`);
                     }
                 })(t, n, o, c);
                 e.goBack({ backLocation: i });
             };
-            const te = Object.freeze({ Intro: "intro", Objective: "objective", Targeting: "targeting", TargetingLocation: "targeting_location", TargetingGender: "targeting_gender", TargetingKeywords: "targeting_keywords", BudgetSelect: "budget_select", Review: "review", Payment: "payment", Done: "done", PaymentSelect: "payment_select" }),
-                ne = Object.freeze({ Webview: "quick_promote", Rweb: "quick_promote_web" }),
-                oe = Object.freeze({ Objective: 0.2, Targeting: 0.4, BudgetSelect: 0.6, Review: 0.8, Finish: 1 });
-            function ce(e, t, n, o, c, i) {
-                return e === ne.Webview ? { isSameHost: !1, url: c ? ie(n, window.location.hostname) : ae(window.location.hostname, t, n, o, i) } : { isSameHost: !0, url: c ? ie(n, window.location.hostname) : ae(window.location.hostname, t, n, o, i) };
+            const oe = Object.freeze({ Intro: "intro", Objective: "objective", Targeting: "targeting", TargetingLocation: "targeting_location", TargetingGender: "targeting_gender", TargetingKeywords: "targeting_keywords", BudgetSelect: "budget_select", Review: "review", Payment: "payment", Done: "done", PaymentSelect: "payment_select" }),
+                ce = Object.freeze({ Webview: "quick_promote", Rweb: "quick_promote_web" }),
+                ie = Object.freeze({ Objective: 0.2, Targeting: 0.4, BudgetSelect: 0.6, Review: 0.8, Finish: 1 });
+            function ae(e, t, n, o, c, i) {
+                return e === ce.Webview ? { isSameHost: !1, url: c ? re(n, window.location.hostname) : ue(window.location.hostname, t, n, o, i) } : { isSameHost: !0, url: c ? re(n, window.location.hostname) : ue(window.location.hostname, t, n, o, i) };
             }
-            const ie = (e, t) => (0, c.ju)(`https://${t}/i/tfb/v1/advertiser_signup/${ue()}/payment?tweetId=${e}&isAddingPayment=true`);
-            function ae(e, t, n, o, i) {
+            const re = (e, t) => (0, c.ju)(`https://${t}/i/tfb/v1/advertiser_signup/${me()}/payment?tweetId=${e}&isAddingPayment=true`);
+            function ue(e, t, n, o, i) {
                 if (i && i.isTrue("responsive_web_qp_new_payment_enabled") && t?.id) return (0, c.ju)(`https://x.com/i/payments/${parseInt(t.id, 10).toString(36)}/quick-promote/new`);
                 const a = (0, c.ju)(`https://${e}/i/tfb/v1/advertiser_signup`),
                     r = `?tweetId=${n}`,
-                    u = ue();
+                    u = me();
                 return t ? (t.timezone && t.country_code ? (o ? `${a}/${u}/vat${r}` : `${a}/${u}/payment${r}`) : `${a}/${u}/setup${r}`) : `${a}/${u}/create_account${r}`;
             }
-            const re = (e) => (t, n, o) => {
+            const se = (e) => (t, n, o) => {
                 switch (o) {
                     case "quick_promote":
                     case "quick_promote_web":
-                        return void e.push(X(t, n));
+                        return void e.push(te(t, n));
                     default:
-                        (0, a.ZP)(`Unknown platformType: "${o}"`), e.push(X(t, n));
+                        (0, a.ZP)(`Unknown platformType: "${o}"`), e.push(te(t, n));
                 }
             };
-            function ue() {
+            function me() {
                 return i.ZP.isIOS() ? "ios" : i.ZP.isAndroid() ? "android" : "lite";
             }
-            const se = { page: "quick_promote" },
-                me = (e) => (t) => {
+            const ge = { page: "quick_promote" },
+                le = (e) => (t) => {
                     const n = i.ZP.osString(),
                         o = i.ZP.isTwitterApp();
                     e.scribe({ section: o ? `${n}-webview` : n, ...t, data: { url: window.location.href, ...t.data } });
                 },
-                ge = Object.freeze({ CurrentCountryMatch: "currentCountryMatch", Match: "match", NoMatch: "noMatch" }),
-                le = (e) => (t, n, o) => (t.toLowerCase().includes(o.toLowerCase()) ? (e.toLowerCase() === n.toLowerCase() ? ge.CurrentCountryMatch : ge.Match) : ge.NoMatch),
-                de = Object.freeze({ AU: (0, c.ju)("https://legal.x.com/ads-terms/apac.html"), BR: (0, c.ju)("https://legal.x.com/ads-terms/brazil.html"), GB: (0, c.ju)("https://legal.x.com/ads-terms/uk.html"), ID: (0, c.ju)("https://legal.x.com/ads-terms/indonesia.html"), JP: (0, c.ju)("https://legal.x.com/ads-terms/japan.html"), NZ: (0, c.ju)("https://legal.x.com/ads-terms/apac.html"), US: (0, c.ju)("https://legal.x.com/ads-terms/us.html") }),
+                de = (Object.freeze({ CurrentCountryMatch: "currentCountryMatch", Match: "match", NoMatch: "noMatch" }), Object.freeze({ AU: (0, c.ju)("https://legal.x.com/ads-terms/apac.html"), BR: (0, c.ju)("https://legal.x.com/ads-terms/brazil.html"), GB: (0, c.ju)("https://legal.x.com/ads-terms/uk.html"), ID: (0, c.ju)("https://legal.x.com/ads-terms/indonesia.html"), JP: (0, c.ju)("https://legal.x.com/ads-terms/japan.html"), NZ: (0, c.ju)("https://legal.x.com/ads-terms/apac.html"), US: (0, c.ju)("https://legal.x.com/ads-terms/us.html") })),
                 pe = (0, c.ju)("https://legal.x.com/ads-terms/international.html");
             function fe(e) {
                 return (e && de[e]) || pe;
@@ -368,4 +351,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-c14c160f.ac88052a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-c14c160f.474fba1a.js.map

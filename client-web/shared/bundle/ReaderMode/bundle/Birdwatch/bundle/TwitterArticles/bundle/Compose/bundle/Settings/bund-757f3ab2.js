@@ -63,7 +63,7 @@
                 oe = i(177371),
                 se = i(41803),
                 ae = i(818065),
-                le = i(424439),
+                le = i(198052),
                 de = i(900813),
                 ce = i(306677),
                 he = i(778955),
@@ -302,9 +302,10 @@
                         }),
                         (this._renderGrokTranslationHeader = (e, t, i) => {
                             if ("text" === e) {
-                                const e = this.state.showGrokTranslation ? Ue.ZP.LOADED : Ue.ZP.NONE,
-                                    n = t ? (0, Ce.t)(t, i) : void 0;
-                                return r.createElement(le.O, { handleCollapseTranslation: () => this.setState({ showGrokTranslation: !1 }), handleGetTranslationClick: () => this.setState({ showGrokTranslation: !0 }), position: "top", sourceLanguageDisplayName: n, translateButtonText: ae.VW, translateTargetType: "post", translationStatus: e, useGrokTranslation: "auto" });
+                                const { showGrokTranslation: e } = this.state,
+                                    n = e ? Ue.ZP.LOADED : Ue.ZP.NONE,
+                                    o = t ? (0, Ce.t)(t, i) : void 0;
+                                return r.createElement(le.O, { handleCollapseTranslation: () => this.setState({ showGrokTranslation: !1 }), handleGetTranslationClick: () => this.setState({ showGrokTranslation: !0 }), position: "top", showInfoButton: this.props.isFocal && e, sourceLanguageDisplayName: o, translateButtonText: ae.VW, translateTargetType: "post", translationStatus: n, useGrokTranslation: "auto" });
                             }
                             if ("quote-text" === e && this.props.tweet.quoted_status?.grok_translated_post) return r.createElement(le.O, { position: "top", style: Lt.translationHeaderInQuote, translateTargetType: "post", translationStatus: "loaded", useGrokTranslation: "auto", withAction: !1 });
                         }),
@@ -938,4 +939,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.fd98ca4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.c951721a.js.map

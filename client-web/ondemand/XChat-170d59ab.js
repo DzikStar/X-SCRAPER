@@ -13,54 +13,54 @@
                     s,
                     c,
                     n = Math.imul,
-                    u = r.$_$.u7,
-                    p = r.$_$.r6,
-                    d = r.$_$.af,
-                    g = r.$_$.ze,
+                    u = r.$_$.v7,
+                    p = r.$_$.s6,
+                    d = r.$_$.bf,
+                    g = r.$_$.af,
                     m = r.$_$.u,
-                    h = r.$_$.xd,
-                    f = r.$_$.f8,
+                    h = r.$_$.yd,
+                    f = r.$_$.g8,
                     b = r.$_$.t,
-                    q = r.$_$.ll,
-                    v = r.$_$.fa,
-                    w = r.$_$.qb,
-                    y = r.$_$.de,
+                    q = r.$_$.ml,
+                    v = r.$_$.ga,
+                    w = r.$_$.rb,
+                    y = r.$_$.ee,
                     E = r.$_$.d1,
                     A = r.$_$.h1,
-                    D = r.$_$.hd,
-                    L = r.$_$.x3,
-                    x = r.$_$.df,
-                    S = r.$_$.k5,
-                    _ = r.$_$.ik,
-                    T = r.$_$.jd,
-                    $ = r.$_$.ef,
-                    N = r.$_$.id,
+                    D = r.$_$.id,
+                    L = r.$_$.y3,
+                    x = r.$_$.ef,
+                    S = r.$_$.l5,
+                    _ = r.$_$.jk,
+                    T = r.$_$.kd,
+                    $ = r.$_$.ff,
+                    N = r.$_$.jd,
                     R = r.$_$.g,
-                    U = r.$_$.ah,
-                    C = r.$_$.yg,
-                    V = r.$_$.p1,
-                    O = r.$_$.kj,
-                    B = r.$_$.db,
-                    I = r.$_$.yd,
-                    G = r.$_$.eb,
-                    H = r.$_$.r3,
-                    P = r.$_$.h2,
-                    z = r.$_$.ii,
-                    j = r.$_$.tj,
-                    F = r.$_$.ve,
-                    M = r.$_$.te,
-                    Y = r.$_$.li,
-                    J = r.$_$.f2,
-                    Z = r.$_$.gd,
-                    K = r.$_$.fd;
+                    U = r.$_$.bh,
+                    C = r.$_$.zg,
+                    V = r.$_$.q1,
+                    O = r.$_$.lj,
+                    B = r.$_$.eb,
+                    I = r.$_$.zd,
+                    G = r.$_$.fb,
+                    H = r.$_$.s3,
+                    z = r.$_$.i2,
+                    P = r.$_$.ji,
+                    j = r.$_$.uj,
+                    F = r.$_$.we,
+                    M = r.$_$.ue,
+                    Y = r.$_$.mi,
+                    J = r.$_$.g2,
+                    Z = r.$_$.hd,
+                    K = r.$_$.gd;
                 function Q(k) {
                     return (function (k, r) {
-                        return W.call(r), u(r.rd1_1, k), r;
+                        return W.call(r), u(r.yd3_1, k), r;
                     })(k, g(d(W)));
                 }
                 function W() {
                     tk.call(this);
-                    this.rd1_1 = m();
+                    this.yd3_1 = m();
                 }
                 function X(k, r) {
                     for (var e = b(f(r, 10)), a = r.p(); a.q(); ) {
@@ -74,9 +74,9 @@
                 }
                 function kk() {
                     (e = this),
-                        (this.ud1_1 = v([q("<", "&gt;"), q(">", "&lt;"), q('"', "&quot;"), q("'", "&apos;"), q("&", "&amp;")])),
-                        (this.vd1_1 = X(0, this.ud1_1)),
-                        (this.wd1_1 = v([
+                        (this.bd4_1 = v([q("<", "&gt;"), q(">", "&lt;"), q('"', "&quot;"), q("'", "&apos;"), q("&", "&amp;")])),
+                        (this.cd4_1 = X(0, this.bd4_1)),
+                        (this.dd4_1 = v([
                             q("'", "&apos;"),
                             q(" ", "&nbsp"),
                             q(" ", "&nbsp;"),
@@ -431,7 +431,7 @@
                             q("♥", "&hearts;"),
                             q("♦", "&diams;"),
                         ])),
-                        (this.xd1_1 = X(0, this.wd1_1));
+                        (this.ed4_1 = X(0, this.dd4_1));
                     var k = m();
                     k.k(q("Æ", "&AElig")),
                         k.k(q("Æ", "&AElig;")),
@@ -2664,8 +2664,8 @@
                         k.k(q("𝓏", "&zscr;")),
                         k.k(q("‍", "&zwj;")),
                         k.k(q("‌", "&zwnj;")),
-                        (this.yd1_1 = w(k)),
-                        (this.zd1_1 = X(0, this.yd1_1));
+                        (this.fd4_1 = w(k)),
+                        (this.gd4_1 = X(0, this.fd4_1));
                 }
                 function rk() {
                     return null == e && new kk(), e;
@@ -2673,25 +2673,25 @@
                 function ek() {
                     a = this;
                     var k = v([q("\0", ""), q("\v", "&#11;"), q("\f", "&#12;"), q("￾", ""), q("￿", "")]);
-                    (this.bd2_1 = Q([new ak(rk().ud1_1), new ak(k), s.ad2(1, 8), s.ad2(14, 31), s.ad2(127, 132), s.ad2(134, 159), new mk()])), (this.cd2_1 = Q([new ak(rk().wd1_1)])), (this.dd2_1 = Q([new ak(rk().yd1_1), s.ad2(1, 8), s.ad2(14, 31), s.ad2(127, 132), s.ad2(134, 159)])), (this.ed2_1 = Q([new ak(rk().xd1_1), new pk([])])), (this.fd2_1 = Q([new ak(rk().zd1_1), new pk([])])), (this.gd2_1 = Q([new ak(rk().vd1_1), new pk([])]));
+                    (this.id4_1 = Q([new ak(rk().bd4_1), new ak(k), s.hd4(1, 8), s.hd4(14, 31), s.hd4(127, 132), s.hd4(134, 159), new mk()])), (this.jd4_1 = Q([new ak(rk().dd4_1)])), (this.kd4_1 = Q([new ak(rk().fd4_1), s.hd4(1, 8), s.hd4(14, 31), s.hd4(127, 132), s.hd4(134, 159)])), (this.ld4_1 = Q([new ak(rk().ed4_1), new pk([])])), (this.md4_1 = Q([new ak(rk().gd4_1), new pk([])])), (this.nd4_1 = Q([new ak(rk().cd4_1), new pk([])]));
                 }
                 function ak(k) {
                     tk.call(this);
-                    this.jd2_1 = E();
-                    this.kd2_1 = A();
+                    this.qd4_1 = E();
+                    this.rd4_1 = A();
                     for (var r = 2147483647, e = 0, a = k.p(); a.q(); ) {
                         var t = a.r(),
                             o = t.ph(),
                             i = t.qh();
-                        this.jd2_1.u2(o, i);
+                        this.qd4_1.u2(o, i);
                         var l = D(o, 0),
                             s = L(l),
                             c = S(x(s));
-                        this.kd2_1.k(new _(c));
+                        this.rd4_1.k(new _(c));
                         var n = o.length;
                         n < r && (r = n), n > e && (e = n);
                     }
-                    (this.ld2_1 = r), (this.md2_1 = e);
+                    (this.sd4_1 = r), (this.td4_1 = e);
                 }
                 function tk() {}
                 function ok() {
@@ -2705,10 +2705,10 @@
                     O.call(this, k, r);
                 }
                 function sk(k, r) {
-                    return k.od2_1.w(r);
+                    return k.vd4_1.w(r);
                 }
                 function ck() {
-                    (l = this), (this.pd2_1 = B(uk()));
+                    (l = this), (this.wd4_1 = B(uk()));
                 }
                 function nk() {
                     return null == l && new ck(), l;
@@ -2719,11 +2719,11 @@
                 function pk(k) {
                     nk(), tk.call(this);
                     var r;
-                    (r = 0 === k.length ? nk().pd2_1 : G(k.slice())), (this.od2_1 = r);
+                    (r = 0 === k.length ? nk().wd4_1 : G(k.slice())), (this.vd4_1 = r);
                 }
                 function dk() {}
                 function gk(k, r) {
-                    ok.call(this), (this.td2_1 = k), (this.ud2_1 = r);
+                    ok.call(this), (this.ad5_1 = k), (this.bd5_1 = r);
                 }
                 function mk() {
                     ok.call(this);
@@ -2740,7 +2740,7 @@
                         })(0, r));
                 }
                 function fk() {
-                    (this.qd2_1 = 65536), (this.rd2_1 = 1114111);
+                    (this.xd4_1 = 65536), (this.yd4_1 = 1114111);
                 }
                 h(tk, "StringTranslator"),
                     h(W, "AggregateTranslator", W, tk),
@@ -2763,45 +2763,45 @@
                     ),
                     h(mk, "UnicodeUnpairedSurrogateRemover", mk, ok),
                     y(fk, "CharsUtils"),
-                    (d(W).sd1 = function (k, r, e) {
-                        for (var a = this.rd1_1.p(); a.q(); ) {
-                            var t = a.r().sd1(k, r, e);
+                    (d(W).zd3 = function (k, r, e) {
+                        for (var a = this.yd3_1.p(); a.q(); ) {
+                            var t = a.r().zd3(k, r, e);
                             if (0 !== t) return t;
                         }
                         return 0;
                     }),
-                    (d(ek).hd2 = function (k) {
-                        return this.fd2_1.td1(k);
+                    (d(ek).od4 = function (k) {
+                        return this.md4_1.ad4(k);
                     }),
-                    (d(ek).id2 = function (k) {
-                        return this.hd2(k);
+                    (d(ek).pd4 = function (k) {
+                        return this.od4(k);
                     }),
-                    (d(ak).sd1 = function (k, r, e) {
+                    (d(ak).zd3 = function (k, r, e) {
                         var a = D(k, r),
                             t = L(a),
                             o = S(x(t));
-                        if (this.kd2_1.w(new _(o))) {
-                            var i = this.md2_1;
-                            ((r + this.md2_1) | 0) > k.length && (i = (k.length - r) | 0);
+                        if (this.rd4_1.w(new _(o))) {
+                            var i = this.td4_1;
+                            ((r + this.td4_1) | 0) > k.length && (i = (k.length - r) | 0);
                             var l = i,
-                                s = this.ld2_1;
+                                s = this.sd4_1;
                             if (s <= l)
                                 do {
                                     var c = l;
                                     l = (l + -1) | 0;
                                     var n = T(k, r, (r + c) | 0),
-                                        u = this.jd2_1.r2($(n));
+                                        u = this.qd4_1.r2($(n));
                                     if (null != u) return e.f9(u), N(n);
                                 } while (c !== s);
                         }
                         return 0;
                     }),
-                    (d(tk).td1 = function (k) {
+                    (d(tk).ad4 = function (k) {
                         var r = V(n(k.length, 2));
                         return (
                             (function (k, r, e) {
                                 for (var a = 0, t = r.length; a < t; ) {
-                                    var o = k.sd1(r, a, e);
+                                    var o = k.zd3(r, a, e);
                                     if (0 !== o) {
                                         var i = 0;
                                         if (i < o)
@@ -2820,12 +2820,12 @@
                             r.toString()
                         );
                     }),
-                    (d(ok).sd1 = function (k, r, e) {
+                    (d(ok).zd3 = function (k, r, e) {
                         var a = D(k, r),
                             t = L(a);
-                        return this.nd2(t, e) ? 1 : 0;
+                        return this.ud4(t, e) ? 1 : 0;
                     }),
-                    (d(pk).sd1 = function (k, r, e) {
+                    (d(pk).zd3 = function (k, r, e) {
                         var a = k.length;
                         if (D(k, r) === H(38) && r < ((a - 2) | 0) && D(k, (r + 1) | 0) === H(35)) {
                             var t = (r + 2) | 0,
@@ -2858,10 +2858,10 @@
                                 f = !(s === a) && D(k, s) === H(59);
                             if (!f) {
                                 if (sk(this, uk())) return 0;
-                                if (sk(this, (ik(), o))) throw P("Semi-colon required at end of numeric entity");
+                                if (sk(this, (ik(), o))) throw z("Semi-colon required at end of numeric entity");
                             }
                             try {
-                                h = z($(T(k, t, s)), i ? 16 : 10);
+                                h = P($(T(k, t, s)), i ? 16 : 10);
                             } catch (k) {
                                 if (k instanceof j) {
                                     return 0;
@@ -2870,7 +2870,7 @@
                             }
                             var b = h;
                             if (b > 65535)
-                                for (var q = c.sd2(b), v = 0, w = q.length; v < w; ) {
+                                for (var q = c.zd4(b), v = 0, w = q.length; v < w; ) {
                                     var y = q[v];
                                     (v = (v + 1) | 0), e.g9(y);
                                 }
@@ -2882,7 +2882,7 @@
                                     var x = H(65535);
                                     E = b > L(x);
                                 }
-                                if (E) throw P("Invalid Char code: " + b);
+                                if (E) throw z("Invalid Char code: " + b);
                                 var S = F(b);
                                 e.g9(S);
                             }
@@ -2890,13 +2890,13 @@
                         }
                         return 0;
                     }),
-                    (d(dk).ad2 = function (k, r) {
+                    (d(dk).hd4 = function (k, r) {
                         return new gk(M(k, r), !0);
                     }),
-                    (d(gk).nd2 = function (k, r) {
-                        return this.ud2_1 === this.td2_1.jm(k) && (r.f9("&#"), r.f9(Y(k, 10)), r.g9(H(59)), !0);
+                    (d(gk).ud4 = function (k, r) {
+                        return this.bd5_1 === this.ad5_1.jm(k) && (r.f9("&#"), r.f9(Y(k, 10)), r.g9(H(59)), !0);
                     }),
-                    (d(mk).nd2 = function (k, r) {
+                    (d(mk).ud4 = function (k, r) {
                         var e,
                             a = H(55296);
                         if (k >= L(a)) {
@@ -2905,7 +2905,7 @@
                         } else e = !1;
                         return e;
                     }),
-                    (d(fk).sd2 = function (k) {
+                    (d(fk).zd4 = function (k) {
                         var r;
                         if (
                             (function (k, r) {
@@ -2935,4 +2935,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-170d59ab.bf071cba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-170d59ab.699ece4a.js.map

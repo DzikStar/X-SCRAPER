@@ -230,4 +230,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows~ondemand.SettingsA.22d00f9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsRevamp~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows~ondemand.SettingsA.6d59371a.js.map

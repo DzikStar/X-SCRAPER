@@ -171,7 +171,7 @@
                     c = e.pathname.startsWith("/i/lists");
                 return l && d && !i && (s || c) ? o.createElement(b, null) : null;
             }
-            const b = (0, c.Z)({ loader: () => Promise.all([d.e("icons.0"), d.e("icons.12"), d.e("icons.20"), d.e("icons.23"), d.e("icons.24"), d.e("icons.25"), d.e("icons.3"), d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"), d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"), d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"), d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"), d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"), d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"), d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"), d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"), d.e("loader.GetVerifiedSidebar")]).then(d.bind(d, 86029)) });
+            const b = (0, c.Z)({ loader: () => Promise.all([d.e("icons.2"), d.e("icons.15"), d.e("icons.27"), d.e("icons.19"), d.e("icons.17"), d.e("icons.4"), d.e("icons.14"), d.e("icons.6"), d.e("loader.GetVerifiedSidebar")]).then(d.bind(d, 86029)) });
             var D = d(791983),
                 h = d(680961),
                 _ = d(293115),
@@ -192,15 +192,15 @@
                     const l = o.createElement(f.Z, { entryConfiguration: y, module: r, scroller: h.Z, showLoadingFooter: !1, title: "", withKeyboardShortcuts: !1 });
                     return n ? o.createElement(_.nO, { namespace: n }, l) : l;
                 }),
-                A = (0, c.Z)({ loader: () => Promise.all([d.e("icons.22"), d.e("loader.VerifiedOrgSidebarModule")]).then(d.bind(d, 482234)) }),
+                A = (0, c.Z)({ loader: () => d.e("loader.VerifiedOrgSidebarModule").then(d.bind(d, 482234)) }),
                 I = () => o.createElement(A, null);
             var E = d(807896),
                 T = d(154003),
-                S = d(823161),
-                L = d(731708),
+                L = d(823161),
+                S = d(731708),
                 C = d(530525),
-                x = d(111677),
-                F = d.n(x),
+                F = d(111677),
+                x = d.n(F),
                 Z = d(837020),
                 R = d(144251),
                 B = d(187669),
@@ -208,9 +208,9 @@
                 J = d(88660),
                 N = d(725405),
                 O = d(125363),
-                z = d(919022);
-            const U = F().da1aa48f,
-                j = F().b68c3784,
+                U = d(919022);
+            const j = x().da1aa48f,
+                z = x().b68c3784,
                 V = "get_verified_profile_sidebar",
                 q = ({ dismiss: e, profileUser: { screen_name: a }, viewerUser: { name: d, profile_image_url_https: n } }) => {
                     const l = (0, N.Z)(),
@@ -236,7 +236,7 @@
                     (0, B.q)(() => {
                         l.scribeAction("impression");
                     });
-                    const { description: u, header: m, withAnimatedBadge: b, withAvatar: D, withUsername: h } = ((e, a) => ({ variant_a: { header: F().e4a7a968, description: U({ screenName: a }), withAnimatedBadge: !0 }, variant_b: { header: F().id9c1e82, description: U({ screenName: a }), withAnimatedBadge: !0 }, variant_c: { header: F().d43b0edc, description: U({ screenName: a }), withAnimatedBadge: !0 }, variant_d: { header: F().d4ea0ed4, description: U({ screenName: a }), withAnimatedBadge: !0 }, variant_e: { header: F().cffeaeae, description: U({ screenName: a }), withAvatar: !0 }, variant_f: { header: F().cffeaeae, description: U({ screenName: a }), withUsername: !0 } })[e])(c, a);
+                    const { description: u, header: m, withAnimatedBadge: b, withAvatar: D, withUsername: h } = ((e, a) => ({ variant_a: { header: x().e4a7a968, description: j({ screenName: a }), withAnimatedBadge: !0 }, variant_b: { header: x().id9c1e82, description: j({ screenName: a }), withAnimatedBadge: !0 }, variant_c: { header: x().d43b0edc, description: j({ screenName: a }), withAnimatedBadge: !0 }, variant_d: { header: x().d4ea0ed4, description: j({ screenName: a }), withAnimatedBadge: !0 }, variant_e: { header: x().cffeaeae, description: j({ screenName: a }), withAvatar: !0 }, variant_f: { header: x().cffeaeae, description: j({ screenName: a }), withUsername: !0 } })[e])(c, a);
                     return o.createElement(
                         H.g,
                         { testID: "verified_profile_upsell" },
@@ -252,14 +252,14 @@
                                 style: W.closeButton,
                                 type: "primaryText",
                             }),
-                            h ? o.createElement(r.Z, { style: W.displayName }, o.createElement(S.default, { hasAdaptiveImage: !0, uri: n }), o.createElement(r.Z, { style: W.userName }, o.createElement(L.ZP, { size: "headline2", weight: "medium" }, d), o.createElement(R.default, { style: W.iconVerified }))) : null,
+                            h ? o.createElement(r.Z, { style: W.displayName }, o.createElement(L.default, { hasAdaptiveImage: !0, uri: n }), o.createElement(r.Z, { style: W.userName }, o.createElement(S.ZP, { size: "headline2", weight: "medium" }, d), o.createElement(R.default, { style: W.iconVerified }))) : null,
                             o.createElement(
                                 r.Z,
                                 { style: W.inner },
-                                b ? o.createElement(r.Z, { style: W.image }, o.createElement(C.Z, { "aria-label": j, image: "https://abs.twimg.com/responsive-web/client-web/verification-card-v2@3x.8ebee019.png" })) : null,
-                                D ? o.createElement(r.Z, { style: W.userAvatar }, o.createElement(S.default, { hasAdaptiveImage: !0, uri: n }), o.createElement(R.default, { style: [W.iconVerified, W.iconOverlap] })) : null,
-                                o.createElement(L.ZP, { size: "headline1", weight: "heavy" }, m),
-                                o.createElement(L.ZP, null, u),
+                                b ? o.createElement(r.Z, { style: W.image }, o.createElement(C.Z, { "aria-label": z, image: "https://abs.twimg.com/responsive-web/client-web/verification-card-v2@3x.8ebee019.png" })) : null,
+                                D ? o.createElement(r.Z, { style: W.userAvatar }, o.createElement(L.default, { hasAdaptiveImage: !0, uri: n }), o.createElement(R.default, { style: [W.iconVerified, W.iconOverlap] })) : null,
+                                o.createElement(S.ZP, { size: "headline1", weight: "heavy" }, m),
+                                o.createElement(S.ZP, null, u),
                                 o.createElement(
                                     T.ZP,
                                     {
@@ -269,7 +269,7 @@
                                         },
                                         type: "primaryFilled",
                                     },
-                                    j,
+                                    z,
                                 ),
                             ),
                         ),
@@ -287,10 +287,10 @@
                 G = ({ screenName: e }) => {
                     const { featureSwitches: a, userClaims: d } = (0, t.QZ)(),
                         r = (0, O.I0)(),
-                        n = (0, O.v9)(z.ZP.selectViewerUser),
-                        l = (0, O.v9)((a) => z.ZP.selectByScreenName(a, e));
+                        n = (0, O.v9)(U.ZP.selectViewerUser),
+                        l = (0, O.v9)((a) => U.ZP.selectByScreenName(a, e));
                     o.useEffect(() => {
-                        r(z.ZP.fetchOneByScreenNameIfNeeded(e));
+                        r(U.ZP.fetchOneByScreenNameIfNeeded(e));
                     }, [r, e]);
                     const i = n?.screen_name === l?.screen_name,
                         s = l && l.is_blue_verified;
@@ -298,27 +298,29 @@
                 },
                 W = s.default.create((e) => ({ closeButton: { position: "absolute", top: e.spaces.space8, end: e.spaces.space8, zIndex: 1 }, root: { position: "relative", flexDirection: "column" }, inner: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, gap: e.spaces.space12, alignItems: "flex-start" }, image: { width: "100px", animationDuration: "8s", animationKeyframes: [{ "0%": { transform: "scale(0.9)" }, "25%": { transform: "scale(1)" }, "60%": { transform: "scale(0.9)" }, "100%": { transform: "scale(0.9)" } }], animationTimingFunction: "ease-in-out", animationIterationCount: "infinite" }, displayName: { backgroundColor: e.colors.gray50, padding: e.spaces.space16, width: "100%", paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, alignItems: "center", gap: e.spaces.space8 }, iconVerified: { color: e.colors.blue500 }, userName: { flexDirection: "row", gap: e.spaces.space4, alignItems: "center" }, userAvatar: {}, iconOverlap: { position: "absolute", fontSize: e.fontSizes.title1, end: "-28px" } })),
                 K = (0, c.Z)({ loader: () => d.e("loader.ExploreSidebar").then(d.bind(d, 657346)) }),
-                X = (0, c.Z)({ loader: () => Promise.all([d.e("icons.0"), d.e("loader.SignupModule")]).then(d.bind(d, 173446)) });
+                X = (0, c.Z)({ loader: () => Promise.all([d.e("icons.2"), d.e("loader.SignupModule")]).then(d.bind(d, 173446)) });
             var $ = d(597496);
             const Y = (0, c.Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.0"),
-                        d.e("icons.5"),
-                        d.e("icons.12"),
-                        d.e("icons.20"),
                         d.e("icons.2"),
-                        d.e("icons.21"),
-                        d.e("icons.28"),
+                        d.e("icons.24"),
                         d.e("icons.10"),
+                        d.e("icons.15"),
+                        d.e("icons.27"),
+                        d.e("icons.16"),
+                        d.e("icons.12"),
+                        d.e("icons.7"),
+                        d.e("icons.5"),
+                        d.e("icons.22"),
+                        d.e("icons.19"),
                         d.e("icons.17"),
-                        d.e("icons.9"),
+                        d.e("icons.26"),
+                        d.e("icons.4"),
+                        d.e("icons.29"),
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
-                        d.e("icons.22"),
-                        d.e("icons.25"),
                         d.e("icons.14"),
-                        d.e("icons.6"),
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -347,10 +349,10 @@
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
-                        d.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         d.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         d.e("shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"),
-                        d.e("loader.WideLayout"),
+                        d.e("loader.WideLayout-6107ac1a"),
+                        d.e("loader.WideLayout-9f4db315"),
                     ]).then(d.bind(d, 912937)),
             });
             var ee = d(655352),
@@ -372,7 +374,7 @@
                 _e = d(366635),
                 pe = d(451051),
                 fe = d(379990);
-            const ke = F().ic1e826e,
+            const ke = x().ic1e826e,
                 we = ({ isFocused: e, isHovered: a, isPressed: d, onPress: n, style: l }) => o.createElement(r.Z, { "aria-label": ke, onPress: n }, o.createElement(fe.Z, { isFocused: e, isHovered: a, isPressed: d, style: l })),
                 Me = ({ tweet: e }) => {
                     const a = o.useRef(),
@@ -387,13 +389,13 @@
                               r.Z,
                               { style: ve.container },
                               o.createElement(De.Z, { "aria-label": i.ext_alt_text, onClick: l, ref: a, role: "link", style: ve.videoContainer, testID: `suggested-video-card-${e?.id_str}` }, ({ isFocused: e, isHovered: a, isPressed: d }) => o.createElement(o.Fragment, null, o.createElement(he.Z, { "aria-label": i?.ext_alt_text, role: "img", source: i?.media_url_https, style: ve.backgroundImage }), o.createElement(r.Z, { style: ve.innerContentContainer }, o.createElement(we, { isFocused: e, isHovered: a, isPressed: d, onPress: l, style: ve.button })))),
-                              o.createElement(r.Z, { style: ve.userRow }, o.createElement(S.default, { "aria-label": e?.user?.name, screenName: e?.user?.screen_name, size: "medium", style: ve.userAvatar, uri: e?.user?.profile_image_url_https, withLink: !0 }), o.createElement(_e.Z, { affiliateBadgeInfo: e.user.highlightedLabel, badgeContext: "content", isBlueVerified: e.user.is_blue_verified, isProtected: e.user.protected, isVerified: e.user.verified, name: e.user.name, nameSize: "subtext2", screenName: e.user.screen_name, verifiedType: e.user.verified_type, withLink: !0, withScreenName: !1 })),
+                              o.createElement(r.Z, { style: ve.userRow }, o.createElement(L.default, { "aria-label": e?.user?.name, screenName: e?.user?.screen_name, size: "medium", style: ve.userAvatar, uri: e?.user?.profile_image_url_https, withLink: !0 }), o.createElement(_e.Z, { affiliateBadgeInfo: e.user.highlightedLabel, badgeContext: "content", isBlueVerified: e.user.is_blue_verified, isProtected: e.user.protected, isVerified: e.user.verified, name: e.user.name, nameSize: "subtext2", screenName: e.user.screen_name, verifiedType: e.user.verified_type, withLink: !0, withScreenName: !1 })),
                               o.createElement(r.Z, null, o.createElement(pe.Z, { color: "gray700", displayTextRange: e?.display_text_range, isCondensed: !0, numberOfLines: 2, size: "subtext2", text: e?.text })),
                           )
                         : null;
                 },
                 ve = s.default.create((e) => ({ container: {}, videoContainer: { aspectRatio: 0.8, color: e.colors.whiteOnColor, borderRadius: e.borderRadii.medium }, innerContentContainer: { padding: e.spaces.space12, display: "flex", height: "100%", justifyContent: "center", alignItems: "center" }, backgroundImage: { position: "absolute", width: "100%", height: "100%", borderRadius: e.spaces.space12 }, button: { width: e.spaces.space32, height: e.spaces.space32 }, userRow: { display: "flex", flexDirection: "row", alignItems: "center", paddingTop: e.spaces.space4, paddingBottom: e.spaces.space4 }, userAvatar: { marginEnd: e.spaces.space4 } })),
-                ge = F().fce9ecce,
+                ge = x().fce9ecce,
                 ye = () => {
                     const e = (0, O.I0)(),
                         a = (0, O.v9)(ue.jK),
@@ -442,23 +444,24 @@
                 Ae = (0, c.Z)({
                     loader: () =>
                         Promise.all([
-                            d.e("icons.0"),
-                            d.e("icons.5"),
-                            d.e("icons.12"),
-                            d.e("icons.20"),
                             d.e("icons.2"),
-                            d.e("icons.21"),
-                            d.e("icons.28"),
+                            d.e("icons.24"),
                             d.e("icons.10"),
+                            d.e("icons.15"),
+                            d.e("icons.27"),
+                            d.e("icons.16"),
+                            d.e("icons.12"),
+                            d.e("icons.7"),
+                            d.e("icons.5"),
+                            d.e("icons.22"),
+                            d.e("icons.19"),
                             d.e("icons.17"),
-                            d.e("icons.9"),
-                            d.e("icons.23"),
+                            d.e("icons.26"),
+                            d.e("icons.4"),
+                            d.e("icons.29"),
                             d.e("modules.common-e907d115"),
                             d.e("modules.common-e019dbda"),
-                            d.e("icons.22"),
-                            d.e("icons.25"),
                             d.e("icons.14"),
-                            d.e("icons.13"),
                             d.e("modules.audio-6107ac1a"),
                             d.e("modules.audio-b953418a"),
                             d.e("modules.audio-7c51e6a7"),
@@ -469,12 +472,12 @@
                             d.e("modules.audio-e019dbda"),
                             d.e("modules.audio-262c94d4"),
                             d.e("modules.audio-c6fe4ea4"),
-                            d.e("icons.6"),
-                            d.e("icons.3"),
-                            d.e("icons.4"),
+                            d.e("icons.13"),
                             d.e("icons.1"),
+                            d.e("icons.21"),
+                            d.e("icons.6"),
                             d.e("icons.18"),
-                            d.e("icons.8"),
+                            d.e("icons.0"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -510,7 +513,6 @@
                             d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
                             d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                             d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
-                            d.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                             d.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                             d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                             d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
@@ -538,24 +540,24 @@
             const Ee = (0, c.Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.0"),
-                        d.e("icons.5"),
-                        d.e("icons.12"),
-                        d.e("icons.20"),
                         d.e("icons.2"),
-                        d.e("icons.21"),
-                        d.e("icons.28"),
+                        d.e("icons.24"),
                         d.e("icons.10"),
+                        d.e("icons.15"),
+                        d.e("icons.27"),
+                        d.e("icons.16"),
+                        d.e("icons.12"),
+                        d.e("icons.7"),
+                        d.e("icons.5"),
+                        d.e("icons.22"),
+                        d.e("icons.19"),
                         d.e("icons.17"),
-                        d.e("icons.9"),
-                        d.e("icons.23"),
+                        d.e("icons.26"),
+                        d.e("icons.4"),
+                        d.e("icons.29"),
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
-                        d.e("icons.22"),
-                        d.e("icons.24"),
-                        d.e("icons.25"),
                         d.e("icons.14"),
-                        d.e("icons.13"),
                         d.e("modules.audio-6107ac1a"),
                         d.e("modules.audio-b953418a"),
                         d.e("modules.audio-7c51e6a7"),
@@ -566,7 +568,8 @@
                         d.e("modules.audio-e019dbda"),
                         d.e("modules.audio-262c94d4"),
                         d.e("modules.audio-c6fe4ea4"),
-                        d.e("icons.6"),
+                        d.e("icons.1"),
+                        d.e("icons.21"),
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -602,7 +605,6 @@
                         d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
                         d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                         d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
-                        d.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         d.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-bbc41769"),
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-8aa1f3e4"),
@@ -640,25 +642,25 @@
                     ]).then(d.bind(d, 280418)),
             });
             var Te = d(606293);
-            const Se = (0, c.Z)({
+            const Le = (0, c.Z)({
                     loader: () =>
                         Promise.all([
-                            d.e("icons.0"),
-                            d.e("icons.5"),
-                            d.e("icons.12"),
-                            d.e("icons.20"),
                             d.e("icons.2"),
-                            d.e("icons.21"),
-                            d.e("icons.28"),
-                            d.e("icons.10"),
-                            d.e("icons.17"),
-                            d.e("icons.9"),
-                            d.e("icons.23"),
-                            d.e("icons.22"),
                             d.e("icons.24"),
-                            d.e("icons.25"),
+                            d.e("icons.10"),
+                            d.e("icons.15"),
+                            d.e("icons.27"),
+                            d.e("icons.16"),
+                            d.e("icons.12"),
+                            d.e("icons.7"),
+                            d.e("icons.5"),
+                            d.e("icons.22"),
+                            d.e("icons.19"),
+                            d.e("icons.17"),
+                            d.e("icons.26"),
+                            d.e("icons.4"),
+                            d.e("icons.29"),
                             d.e("icons.14"),
-                            d.e("icons.13"),
                             d.e("modules.audio-6107ac1a"),
                             d.e("modules.audio-b953418a"),
                             d.e("modules.audio-7c51e6a7"),
@@ -669,12 +671,13 @@
                             d.e("modules.audio-e019dbda"),
                             d.e("modules.audio-262c94d4"),
                             d.e("modules.audio-c6fe4ea4"),
-                            d.e("icons.6"),
-                            d.e("icons.3"),
-                            d.e("icons.4"),
+                            d.e("icons.13"),
                             d.e("icons.1"),
+                            d.e("icons.21"),
+                            d.e("icons.6"),
                             d.e("icons.18"),
-                            d.e("icons.8"),
+                            d.e("icons.0"),
+                            d.e("icons.20"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -683,7 +686,7 @@
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~loader.JetfuelFrame~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders~ico"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"),
@@ -692,20 +695,20 @@
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-d8458ca7"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3db21160"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0be21f6e"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2c76ece2"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-fd191714"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3b520976"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-624e4131"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-5f74528c"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-595f2b1d"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0bb5e702"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-694f31ec"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-b92f6bfc"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-a1125a9a"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-f2bb72dd"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-249e2412"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-ed3623d8"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-e09d3f9e"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2a260989"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-88378ee8"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-8a0b2451"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2b9410ca"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-6107ac-34e706af"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-3636d5-9a5c6928"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-e96e9b-2c8fc001"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-5e06d6-12bcec36"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-2c7fc7-61faba46"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-fdc77e-17d653ee"),
@@ -715,25 +718,25 @@
                             d.e("loader.PremiumLoaders"),
                         ]).then(d.bind(d, 127939)),
                 }),
-                Le = (0, c.Z)({
+                Se = (0, c.Z)({
                     loader: () =>
                         Promise.all([
-                            d.e("icons.0"),
-                            d.e("icons.5"),
-                            d.e("icons.12"),
-                            d.e("icons.20"),
                             d.e("icons.2"),
-                            d.e("icons.21"),
-                            d.e("icons.28"),
-                            d.e("icons.10"),
-                            d.e("icons.17"),
-                            d.e("icons.9"),
-                            d.e("icons.23"),
-                            d.e("icons.22"),
                             d.e("icons.24"),
-                            d.e("icons.25"),
+                            d.e("icons.10"),
+                            d.e("icons.15"),
+                            d.e("icons.27"),
+                            d.e("icons.16"),
+                            d.e("icons.12"),
+                            d.e("icons.7"),
+                            d.e("icons.5"),
+                            d.e("icons.22"),
+                            d.e("icons.19"),
+                            d.e("icons.17"),
+                            d.e("icons.26"),
+                            d.e("icons.4"),
+                            d.e("icons.29"),
                             d.e("icons.14"),
-                            d.e("icons.13"),
                             d.e("modules.audio-6107ac1a"),
                             d.e("modules.audio-b953418a"),
                             d.e("modules.audio-7c51e6a7"),
@@ -744,12 +747,13 @@
                             d.e("modules.audio-e019dbda"),
                             d.e("modules.audio-262c94d4"),
                             d.e("modules.audio-c6fe4ea4"),
-                            d.e("icons.6"),
-                            d.e("icons.3"),
-                            d.e("icons.4"),
+                            d.e("icons.13"),
                             d.e("icons.1"),
+                            d.e("icons.21"),
+                            d.e("icons.6"),
                             d.e("icons.18"),
-                            d.e("icons.8"),
+                            d.e("icons.0"),
+                            d.e("icons.20"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -758,7 +762,7 @@
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~loader.JetfuelFrame~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders~ico"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"),
@@ -767,20 +771,20 @@
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-d8458ca7"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3db21160"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0be21f6e"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2c76ece2"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-fd191714"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3b520976"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-624e4131"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-5f74528c"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-595f2b1d"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0bb5e702"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-694f31ec"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-b92f6bfc"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-a1125a9a"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-f2bb72dd"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-249e2412"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-ed3623d8"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-e09d3f9e"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2a260989"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-88378ee8"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-8a0b2451"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2b9410ca"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-6107ac-34e706af"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-3636d5-9a5c6928"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-e96e9b-2c8fc001"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-5e06d6-12bcec36"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-2c7fc7-61faba46"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-fdc77e-17d653ee"),
@@ -793,22 +797,22 @@
                 Ce = (0, c.Z)({
                     loader: () =>
                         Promise.all([
-                            d.e("icons.0"),
-                            d.e("icons.5"),
-                            d.e("icons.12"),
-                            d.e("icons.20"),
                             d.e("icons.2"),
-                            d.e("icons.21"),
-                            d.e("icons.28"),
-                            d.e("icons.10"),
-                            d.e("icons.17"),
-                            d.e("icons.9"),
-                            d.e("icons.23"),
-                            d.e("icons.22"),
                             d.e("icons.24"),
-                            d.e("icons.25"),
+                            d.e("icons.10"),
+                            d.e("icons.15"),
+                            d.e("icons.27"),
+                            d.e("icons.16"),
+                            d.e("icons.12"),
+                            d.e("icons.7"),
+                            d.e("icons.5"),
+                            d.e("icons.22"),
+                            d.e("icons.19"),
+                            d.e("icons.17"),
+                            d.e("icons.26"),
+                            d.e("icons.4"),
+                            d.e("icons.29"),
                             d.e("icons.14"),
-                            d.e("icons.13"),
                             d.e("modules.audio-6107ac1a"),
                             d.e("modules.audio-b953418a"),
                             d.e("modules.audio-7c51e6a7"),
@@ -819,12 +823,13 @@
                             d.e("modules.audio-e019dbda"),
                             d.e("modules.audio-262c94d4"),
                             d.e("modules.audio-c6fe4ea4"),
-                            d.e("icons.6"),
-                            d.e("icons.3"),
-                            d.e("icons.4"),
+                            d.e("icons.13"),
                             d.e("icons.1"),
+                            d.e("icons.21"),
+                            d.e("icons.6"),
                             d.e("icons.18"),
-                            d.e("icons.8"),
+                            d.e("icons.0"),
+                            d.e("icons.20"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -833,7 +838,7 @@
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~loader.JetfuelFrame~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders~ico"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"),
@@ -842,20 +847,20 @@
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-d8458ca7"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3db21160"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0be21f6e"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2c76ece2"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-fd191714"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3b520976"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-624e4131"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-5f74528c"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-595f2b1d"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0bb5e702"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-694f31ec"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-b92f6bfc"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-a1125a9a"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-f2bb72dd"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-249e2412"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-ed3623d8"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-e09d3f9e"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2a260989"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-88378ee8"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-8a0b2451"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2b9410ca"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-6107ac-34e706af"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-3636d5-9a5c6928"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-e96e9b-2c8fc001"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-5e06d6-12bcec36"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-2c7fc7-61faba46"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-fdc77e-17d653ee"),
@@ -865,25 +870,25 @@
                             d.e("loader.PremiumLoaders"),
                         ]).then(d.bind(d, 293605)),
                 }),
-                xe = (0, c.Z)({
+                Fe = (0, c.Z)({
                     loader: () =>
                         Promise.all([
-                            d.e("icons.0"),
-                            d.e("icons.5"),
-                            d.e("icons.12"),
-                            d.e("icons.20"),
                             d.e("icons.2"),
-                            d.e("icons.21"),
-                            d.e("icons.28"),
-                            d.e("icons.10"),
-                            d.e("icons.17"),
-                            d.e("icons.9"),
-                            d.e("icons.23"),
-                            d.e("icons.22"),
                             d.e("icons.24"),
-                            d.e("icons.25"),
+                            d.e("icons.10"),
+                            d.e("icons.15"),
+                            d.e("icons.27"),
+                            d.e("icons.16"),
+                            d.e("icons.12"),
+                            d.e("icons.7"),
+                            d.e("icons.5"),
+                            d.e("icons.22"),
+                            d.e("icons.19"),
+                            d.e("icons.17"),
+                            d.e("icons.26"),
+                            d.e("icons.4"),
+                            d.e("icons.29"),
                             d.e("icons.14"),
-                            d.e("icons.13"),
                             d.e("modules.audio-6107ac1a"),
                             d.e("modules.audio-b953418a"),
                             d.e("modules.audio-7c51e6a7"),
@@ -894,12 +899,13 @@
                             d.e("modules.audio-e019dbda"),
                             d.e("modules.audio-262c94d4"),
                             d.e("modules.audio-c6fe4ea4"),
-                            d.e("icons.6"),
-                            d.e("icons.3"),
-                            d.e("icons.4"),
+                            d.e("icons.13"),
                             d.e("icons.1"),
+                            d.e("icons.21"),
+                            d.e("icons.6"),
                             d.e("icons.18"),
-                            d.e("icons.8"),
+                            d.e("icons.0"),
+                            d.e("icons.20"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -908,7 +914,7 @@
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
                             d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~loader.JetfuelFrame~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders~ico"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"),
@@ -917,20 +923,20 @@
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-d8458ca7"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3db21160"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0be21f6e"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2c76ece2"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-fd191714"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3b520976"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-624e4131"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-5f74528c"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-595f2b1d"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0bb5e702"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-694f31ec"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-b92f6bfc"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-a1125a9a"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-f2bb72dd"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-249e2412"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-ed3623d8"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-e09d3f9e"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2a260989"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-88378ee8"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-8a0b2451"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2b9410ca"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-6107ac-34e706af"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-3636d5-9a5c6928"),
+                            d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-e96e9b-2c8fc001"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-5e06d6-12bcec36"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-2c7fc7-61faba46"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-fdc77e-17d653ee"),
@@ -940,18 +946,18 @@
                             d.e("loader.PremiumLoaders"),
                         ]).then(d.bind(d, 900285)),
                 }),
-                Fe = { withSuggestedVideos: !0, withSearchBox: !0, withTopicsToFollow: !0, withTrends: !0, withNews: !0, withWhoToFollow: !0 };
+                xe = { withSuggestedVideos: !0, withSearchBox: !0, withTopicsToFollow: !0, withTrends: !0, withNews: !0, withWhoToFollow: !0 };
             function Ze(e) {
                 return (0, Te.x2)() ? o.createElement(Ee, null) : o.createElement(Re, e);
             }
             const Re = o.memo(function (e) {
-                const a = { ...Fe, ...e },
+                const a = { ...xe, ...e },
                     d = (0, Te.Ct)();
                 return o.createElement(r.Z, { ref: d, style: [Qe.root, e.withMaxHeight && Qe.rootWithMaxHeight], testID: a.testID }, o.createElement(He, a), o.createElement(Je, a), e.withRadarUpsell && o.createElement(r.Z, { style: Qe.paddedContainer }, o.createElement(ne.Z, { variant: "RadarUpsell" })), o.createElement(Ne, a), o.createElement(Be, a), o.createElement(qe, a));
             });
             function Be(e) {
                 const { featureSwitches: a, userClaims: d } = (0, t.QZ)(),
-                    l = (0, O.v9)(z.ZP.selectViewerUser),
+                    l = (0, O.v9)(U.ZP.selectViewerUser),
                     i = d.isAnyPremiumSubscriber(),
                     s = d.isPaidVerifiedOrg(),
                     c = a.isTrue("rweb_sourcemap_migration"),
@@ -963,9 +969,9 @@
                     f = e.isOwnProfile && _ && a.isTrue("subscriptions_upsells_profile_sidebar_analytics_upsell_enabled"),
                     k = a.isTrue("march_madness_brackets_enabled_loggedin_sidebar_popup"),
                     w = i && !s && "/home" === b.pathname;
-                if (e.profileUserId) return o.createElement(o.Fragment, null, h && o.createElement(Le, null), o.createElement(m, null), e.profileScreenName ? o.createElement(G, { screenName: e.profileScreenName }) : null, o.createElement(D.O, null), c && u && o.createElement(ze, e), e.isOwnProfile ? o.createElement(Ce, { entryPoint: "profile" }) : null, f && o.createElement(r.Z, { style: Qe.paddedContainer, testID: "profileAnalyticsUpsell" }, o.createElement(ne.Z, { variant: "ProfileSidebarAnalyticsUpsell" })), o.createElement(Ue, e), o.createElement(Oe, e), o.createElement(je, e));
-                let M = o.createElement(o.Fragment, null, e.withNews && o.createElement(Ve, e), o.createElement(Oe, e), o.createElement(Ue, e));
-                return a.isTrue("rweb_sidebar_lower_whats_happening_enabled") && (M = o.createElement(o.Fragment, null, o.createElement(Ue, e), e.withNews && o.createElement(Ve, e), o.createElement(Oe, e))), c && (M = o.createElement(o.Fragment, null, u && o.createElement(ze, e), e.withNews && o.createElement(Ve, e), o.createElement(Oe, e), o.createElement(Ue, e))), o.createElement(o.Fragment, null, "/home" === b.pathname ? o.createElement(Se, null) : null, h && o.createElement(Le, null), w && o.createElement(Ce, { entryPoint: "home" }), o.createElement(m, { userProfileId: e.profileUserId, userProfileScreenName: e.profileScreenName }), o.createElement(xe, null), s && a.isTrue("blue_business_admin_sidebar_module_enabled") ? o.createElement(I, null) : null, "/home" === b.pathname && k && o.createElement(Ie.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: Ie.c.MarchMadness, withBackgroundImage: !0 }), o.createElement(D.O, null), M, p && o.createElement(r.Z, { style: Qe.paddedContainer, testID: "exploreAnalyticsUpsell" }, o.createElement(ne.Z, { variant: "ExploreSidebarAnalyticsUpsell" })), o.createElement(je, e));
+                if (e.profileUserId) return o.createElement(o.Fragment, null, h && o.createElement(Se, null), o.createElement(m, null), e.profileScreenName ? o.createElement(G, { screenName: e.profileScreenName }) : null, o.createElement(D.O, null), c && u && o.createElement(Ue, e), e.isOwnProfile ? o.createElement(Ce, { entryPoint: "profile" }) : null, f && o.createElement(r.Z, { style: Qe.paddedContainer, testID: "profileAnalyticsUpsell" }, o.createElement(ne.Z, { variant: "ProfileSidebarAnalyticsUpsell" })), o.createElement(je, e), o.createElement(Oe, e), o.createElement(ze, e));
+                let M = o.createElement(o.Fragment, null, e.withNews && o.createElement(Ve, e), o.createElement(Oe, e), o.createElement(je, e));
+                return a.isTrue("rweb_sidebar_lower_whats_happening_enabled") && (M = o.createElement(o.Fragment, null, o.createElement(je, e), e.withNews && o.createElement(Ve, e), o.createElement(Oe, e))), c && (M = o.createElement(o.Fragment, null, u && o.createElement(Ue, e), e.withNews && o.createElement(Ve, e), o.createElement(Oe, e), o.createElement(je, e))), o.createElement(o.Fragment, null, "/home" === b.pathname ? o.createElement(Le, null) : null, h && o.createElement(Se, null), w && o.createElement(Ce, { entryPoint: "home" }), o.createElement(m, { userProfileId: e.profileUserId, userProfileScreenName: e.profileScreenName }), o.createElement(Fe, null), s && a.isTrue("blue_business_admin_sidebar_module_enabled") ? o.createElement(I, null) : null, "/home" === b.pathname && k && o.createElement(Ie.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: Ie.c.MarchMadness, withBackgroundImage: !0 }), o.createElement(D.O, null), M, p && o.createElement(r.Z, { style: Qe.paddedContainer, testID: "exploreAnalyticsUpsell" }, o.createElement(ne.Z, { variant: "ExploreSidebarAnalyticsUpsell" })), o.createElement(ze, e));
             }
             function He(e) {
                 const { featureSwitches: a, viewerUserId: d } = (0, t.QZ)(),
@@ -996,17 +1002,17 @@
                 const { isRestrictedSession: a } = (0, t.QZ)();
                 return !e.withTrends || a ? null : o.createElement(i.Z, { hideOnError: !0 }, o.createElement(H.g, null, o.createElement(K, { focalTweetId: e.focalTweetId, profileUserId: e.profileUserId })));
             }
-            function ze(e) {
+            function Ue(e) {
                 const { viewerUserId: a } = (0, t.QZ)(),
                     d = e.profileUserId || a;
                 return e.withSuggestedVideos && d ? o.createElement(i.Z, { hideOnError: !0 }, o.createElement(H.g, null, o.createElement(ye, null))) : null;
             }
-            function Ue(e) {
+            function je(e) {
                 const { viewerUserId: a } = (0, t.QZ)(),
                     d = e.profileUserId || a;
                 return e.withWhoToFollow && d ? o.createElement(i.Z, { hideOnError: !0 }, o.createElement(H.g, null, o.createElement(Y, { userId: d, withProfileHeaderText: !!e.profileUserId }))) : null;
             }
-            function je(e) {
+            function ze(e) {
                 const { featureSwitches: a, isRestrictedSession: d, viewerUserId: r } = (0, t.QZ)(),
                     n = e.profileUserId || r,
                     l = o.useMemo(() => {
@@ -1280,23 +1286,24 @@
             const s = (0, n.Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.0"),
-                        d.e("icons.5"),
-                        d.e("icons.12"),
-                        d.e("icons.20"),
                         d.e("icons.2"),
-                        d.e("icons.21"),
-                        d.e("icons.28"),
+                        d.e("icons.24"),
                         d.e("icons.10"),
+                        d.e("icons.15"),
+                        d.e("icons.27"),
+                        d.e("icons.16"),
+                        d.e("icons.12"),
+                        d.e("icons.7"),
+                        d.e("icons.5"),
+                        d.e("icons.22"),
+                        d.e("icons.19"),
                         d.e("icons.17"),
-                        d.e("icons.9"),
-                        d.e("icons.23"),
+                        d.e("icons.26"),
+                        d.e("icons.4"),
+                        d.e("icons.29"),
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
-                        d.e("icons.22"),
-                        d.e("icons.25"),
                         d.e("icons.14"),
-                        d.e("icons.13"),
                         d.e("modules.audio-6107ac1a"),
                         d.e("modules.audio-b953418a"),
                         d.e("modules.audio-7c51e6a7"),
@@ -1307,10 +1314,10 @@
                         d.e("modules.audio-e019dbda"),
                         d.e("modules.audio-262c94d4"),
                         d.e("modules.audio-c6fe4ea4"),
-                        d.e("icons.6"),
-                        d.e("icons.3"),
-                        d.e("icons.4"),
+                        d.e("icons.13"),
                         d.e("icons.1"),
+                        d.e("icons.21"),
+                        d.e("icons.6"),
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -1355,23 +1362,24 @@
             const m = (0, n.Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.0"),
-                        d.e("icons.5"),
-                        d.e("icons.12"),
-                        d.e("icons.20"),
                         d.e("icons.2"),
-                        d.e("icons.21"),
-                        d.e("icons.28"),
+                        d.e("icons.24"),
                         d.e("icons.10"),
+                        d.e("icons.15"),
+                        d.e("icons.27"),
+                        d.e("icons.16"),
+                        d.e("icons.12"),
+                        d.e("icons.7"),
+                        d.e("icons.5"),
+                        d.e("icons.22"),
+                        d.e("icons.19"),
                         d.e("icons.17"),
-                        d.e("icons.9"),
-                        d.e("icons.23"),
+                        d.e("icons.26"),
+                        d.e("icons.4"),
+                        d.e("icons.29"),
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
-                        d.e("icons.22"),
-                        d.e("icons.25"),
                         d.e("icons.14"),
-                        d.e("icons.13"),
                         d.e("modules.audio-6107ac1a"),
                         d.e("modules.audio-b953418a"),
                         d.e("modules.audio-7c51e6a7"),
@@ -1382,10 +1390,10 @@
                         d.e("modules.audio-e019dbda"),
                         d.e("modules.audio-262c94d4"),
                         d.e("modules.audio-c6fe4ea4"),
-                        d.e("icons.6"),
-                        d.e("icons.3"),
-                        d.e("icons.4"),
+                        d.e("icons.13"),
                         d.e("icons.1"),
+                        d.e("icons.21"),
+                        d.e("icons.6"),
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -1422,7 +1430,7 @@
         },
         376293: (e, a, d) => {
             "use strict";
-            d.d(a, { $f: () => y, KV: () => p, LI: () => T, SC: () => g, Vt: () => w, ed: () => S, op: () => P });
+            d.d(a, { $f: () => y, KV: () => p, LI: () => T, SC: () => g, Vt: () => w, ed: () => L, op: () => P });
             var o = d(202784),
                 r = d(190286),
                 n = d(111677),
@@ -1471,7 +1479,7 @@
                 I = ({ blockSubtext: e, unblockSubtext: a, user: d }) => (!d.blocking && e ? e(d.screen_name) : d.blocking ? a : void 0),
                 E = (e) => (e.blocking ? k({ screenName: e.screen_name }) : b({ screenName: e.screen_name })),
                 T = (e, a) => (e.blocking ? ((e, a) => ({ confirmButtonType: "primary", headline: f({ screenName: e }), label: w, text: a ? v : M }))(e.screen_name, a) : y(e.screen_name, a)),
-                S = ({ confirmation: e, handleConfirm: a, onClose: d }) => {
+                L = ({ confirmation: e, handleConfirm: a, onClose: d }) => {
                     const { confirmButtonType: n, headline: l, label: i, text: s } = e;
                     return o.createElement(r.Z, { cancelButtonLabel: u, confirmButtonLabel: i, confirmButtonType: n, headline: l, onCancel: d, onConfirm: a, text: s });
                 };
@@ -1587,34 +1595,6 @@
             }
             b.defaultProps = { renderFailure: l.Z, retryable: !0 };
         },
-        314948: (e, a, d) => {
-            "use strict";
-            d.r(a), d.d(a, { default: () => s });
-            var o = d(202784),
-                r = d(890601),
-                n = d(783427),
-                l = d(347101);
-            const i = (e = {}) => {
-                const { direction: a } = (0, n.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 3.75c-4.55 0-8.25 3.69-8.25 8.25 0 1.92.66 3.68 1.75 5.08l2.8-2.79 1.41 1.42-2.79 2.79c1.4 1.1 3.16 1.75 5.08 1.75 4.56 0 8.25-3.69 8.25-8.25 0-1.92-.65-3.68-1.75-5.08l-2.79 2.79-1.41-1.42 2.79-2.79C15.68 4.4 13.92 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12z" })) }, { writingDirection: a });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const s = i;
-        },
-        452693: (e, a, d) => {
-            "use strict";
-            d.r(a), d.d(a, { default: () => s });
-            var o = d(202784),
-                r = d(890601),
-                n = d(783427),
-                l = d(347101);
-            const i = (e = {}) => {
-                const { direction: a } = (0, n.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: a });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const s = i;
-        },
         662678: (e, a, d) => {
             "use strict";
             d.d(a, { G: () => r, Z: () => o });
@@ -1661,4 +1641,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749.5b435cda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749.2b928a4a.js.map

@@ -6,8 +6,8 @@
             r.d(t, { S: () => p });
             var n = r(552322),
                 i = r(378364),
-                o = r(589259),
-                a = r(983955),
+                o = r(57478),
+                a = r(123010),
                 c = r(553453),
                 s = r(561677),
                 l = r(671026),
@@ -1306,4 +1306,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights-27545368.b2e2ae3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights-27545368.9b1c7e8a.js.map

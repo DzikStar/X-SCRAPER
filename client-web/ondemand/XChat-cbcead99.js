@@ -115,27 +115,27 @@
             t.d(s, { C: () => j });
             var n = t(552322),
                 a = t(159603),
-                i = t(653748),
-                r = t(193686),
-                l = t(423011),
-                o = t(993165),
-                c = t(687521),
-                d = t(983706),
-                m = t(202784),
-                x = t(155369),
-                u = t(533476),
-                p = t(658358),
-                h = t(466285),
+                i = t(458872),
+                r = t(875515),
+                l = t(653748),
+                o = t(193686),
+                c = t(423011),
+                d = t(993165),
+                m = t(687521),
+                x = t(983706),
+                u = t(202784),
+                p = t(155369),
+                h = t(272795),
                 f = t(620134),
-                g = t(458872),
-                v = t(875515);
+                g = t(533476),
+                v = t(658358);
             const j = ({ conversationId: e, onVisibilityChange: s }) => {
-                    const [t, l] = (0, m.useState)(null),
-                        o = (0, x.n)();
+                    const [t, i] = (0, u.useState)(null),
+                        r = (0, p.n)();
                     return (
-                        (0, m.useEffect)(() => {
+                        (0, u.useEffect)(() => {
                             const t = new a.com.x.export.CancellationSignal(),
-                                n = o.addGroupParticipantsComponent(t, e, {
+                                n = r.addGroupParticipantsComponent(t, e, {
                                     get onFinished() {
                                         return () => {
                                             s(!1);
@@ -143,35 +143,35 @@
                                     },
                                 });
                             return (
-                                l(n),
+                                i(n),
                                 () => {
                                     t.cancel();
                                 }
                             );
-                        }, [o, e, s]),
-                        (0, n.jsx)(i.s, { isOpen: !0, onOpenChange: s, isDismissable: !0, children: (0, n.jsx)("div", { className: "flex flex-1 flex-col w-[32rem] h-[32rem] transition-colors", children: t ? (0, n.jsx)(y, { component: t }) : (0, n.jsx)("div", { className: "h-full flex items-center", children: (0, n.jsx)(r.P, {}) }) }) })
+                        }, [r, e, s]),
+                        (0, n.jsx)(l.s, { isOpen: !0, onOpenChange: s, isDismissable: !0, children: (0, n.jsx)("div", { className: "flex flex-1 flex-col w-[32rem] h-[32rem] transition-colors", children: t ? (0, n.jsx)(y, { component: t }) : (0, n.jsx)("div", { className: "h-full flex items-center", children: (0, n.jsx)(o.P, {}) }) }) })
                     );
                 },
                 y = ({ component: e }) => {
-                    const s = (0, u._)(e.state);
-                    (0, p.e)(e.toasts);
+                    const s = (0, g._)(e.state);
+                    (0, v.e)(e.toasts);
                     const t = a.com.x.dms.mapToValueList(s.selectedUserIds).asJsReadonlyArrayView(),
-                        i = (s) => () => {
+                        l = (s) => () => {
                             e.handleEvent(new a.com.x.dms.addparticipants.AddGroupParticipantsEvent.DeleteSelectedGroupUser(s));
                         };
                     return (0, n.jsxs)("div", {
                         className: "flex flex-1 flex-col w-[32rem] h-[32rem] transition-colors",
                         children: [
-                            (0, n.jsx)(l.x, {
+                            (0, n.jsx)(c.x, {
                                 title: "Add people",
-                                leftContent: (0, n.jsx)(o.z, {
+                                leftContent: (0, n.jsx)(d.z, {
                                     variant: "primaryText",
-                                    icon: (0, n.jsx)(g.Z, {}),
+                                    icon: (0, n.jsx)(i.Z, {}),
                                     onClick: () => {
                                         e.handleEvent(a.com.x.dms.addparticipants.AddGroupParticipantsEvent.BackButtonClicked);
                                     },
                                 }),
-                                rightContent: (0, n.jsx)(o.z, {
+                                rightContent: (0, n.jsx)(d.z, {
                                     onClick: () => {
                                         e.handleEvent(a.com.x.dms.addparticipants.AddGroupParticipantsEvent.DoneClicked);
                                     },
@@ -180,9 +180,9 @@
                                 }),
                             }),
                             (0, n.jsx)("div", {
-                                children: (0, n.jsx)(c._, {
+                                children: (0, n.jsx)(m._, {
                                     autoFocus: !0,
-                                    leftContent: (0, n.jsx)(v.Z, { className: "text-gray-700" }),
+                                    leftContent: (0, n.jsx)(r.Z, { className: "text-gray-700" }),
                                     placeholder: "Search people",
                                     onChange: (s) => {
                                         e.handleEvent(new a.com.x.dms.addparticipants.AddGroupParticipantsEvent.QueryChanged(s.target.value));
@@ -191,27 +191,30 @@
                                     className: "w-full",
                                 }),
                             }),
-                            (0, n.jsx)("div", { className: "flex flex-row flex-wrap gap-1 p-1", children: t.length > 0 && t.map((e) => (0, n.jsx)(f.w, { avatarUrl: e.profileImageUrl, name: e.displayName, onRemove: i(e.id) }, e.id.userIdString)) }),
+                            (0, n.jsx)("div", { className: "flex flex-row flex-wrap gap-1 p-1", children: t.length > 0 && t.map((e) => (0, n.jsx)(f.w, { avatarUrl: e.profileImageUrl, name: e.displayName, onRemove: l(e.id) }, e.id.userIdString)) }),
                             s.isCallingApi
-                                ? (0, n.jsx)(r.P, {})
-                                : (0, n.jsx)(d.T, {
+                                ? (0, n.jsx)(o.P, {})
+                                : (0, n.jsx)(x.T, {
                                       items: s.suggestions?.asJsReadonlyArrayView() ?? [],
                                       renderItem: (t) =>
-                                          (0, n.jsx)(h.a, {
-                                              onClick: () => {
-                                                  e.handleEvent(new a.com.x.dms.addparticipants.AddGroupParticipantsEvent.UserRowClicked(t.user));
+                                          (0, n.jsx)(
+                                              h.c,
+                                              {
+                                                  isSelected: s.selectedUserIds.asJsReadonlyMapView().has(t.user.id) || t.alreadyParticipant,
+                                                  onClick: () => {
+                                                      e.handleEvent(new a.com.x.dms.addparticipants.AddGroupParticipantsEvent.UserRowClicked(t.user));
+                                                  },
+                                                  suggestion: t,
                                               },
-                                              user: t.user,
-                                              isAlreadyParticipant: t.alreadyParticipant,
-                                              isSelected: s.selectedUserIds.asJsReadonlyMapView().has(t.user.id) || t.alreadyParticipant,
-                                          }),
+                                              t.user.id.userIdString,
+                                          ),
                                   }),
                         ],
                     });
                 };
         },
         707513: (e, s, t) => {
-            t.d(s, { P: () => C });
+            t.d(s, { P: () => I });
             var n = t(552322),
                 a = t(159603),
                 i = t(289752),
@@ -226,31 +229,35 @@
                 return e.postState instanceof m.NeedsResolution ? (s(new x.ResolvePost(e.postId)), (0, n.jsx)(c.C, {})) : e.postState instanceof m.ResolvedPost ? (0, n.jsx)(d.K, { post: e.postState, url: e.url, className: t }) : (0, n.jsxs)(r.r, { href: e.url, target: "_blank", className: "gap-2 w-52 p-4 bg-gray-200 flex items-center justify-between", children: [(0, n.jsx)(l.x, { children: "x.com" }), (0, n.jsx)("div", { className: "text-headline1", children: (0, n.jsx)(o.Z, {}) })] });
             }
             var p = t(193686),
-                h = t(530361);
-            const f = a.com.x.dms.model.MessageItemAttachment,
-                g = a.com.x.dms.chat.DmEvent;
-            function v({ urlCard: e, onEvent: s }) {
-                e instanceof f.UrlCard.NeedsResolving && !e.showTapToLoadPrompt && s(new g.ResolveUrlCard(e, !1));
-                let t = null;
-                e instanceof f.UrlCard.Resolved && (t = e.bannerImage && (0, n.jsx)("img", { src: e.bannerImage, loading: "lazy", alt: e.displayTitle || e.displayHostname, className: "w-full h-full object-cover" })), e instanceof f.UrlCard.Loading && (t = (0, n.jsx)("div", { className: "flex items-center justify-center h-32 pt-2 w-full", children: (0, n.jsx)(p.P, {}) }));
-                const a = (0, h.decode)(e.displayTitle || "");
-                return (0, n.jsxs)("div", { className: "flex flex-col items-center gap-0.5 bg-gray-100 cursor-pointer transition-colors duration-100 max-w-sm", onClick: () => window.open(e.urlToOpen, "_blank"), children: [t, (0, n.jsxs)("div", { className: "flex flex-col gap-0.5 px-8 py-4 hover:bg-gray-50/50", children: [a && (0, n.jsx)(l.x, { weight: "medium", children: a }), (0, n.jsxs)("div", { className: "flex items-center gap-1", children: [(0, n.jsx)(l.x, { color: "gray900", size: "subtext2", children: e.displayHostname }), (0, n.jsx)(o.Z, { className: "text-gray-500 size-4" })] })] })] });
+                h = t(530361),
+                f = t(202784);
+            const g = a.com.x.dms.model.MessageItemAttachment,
+                v = a.com.x.dms.chat.DmEvent;
+            function j({ urlCard: e, onEvent: s }) {
+                e instanceof g.UrlCard.NeedsResolving && !e.showTapToLoadPrompt && s(new v.ResolveUrlCard(e, !1));
+                const [t, a] = (0, f.useState)(!1);
+                let i = null;
+                e instanceof g.UrlCard.Resolved && !t && (i = e.bannerImage && (0, n.jsx)("img", { src: e.bannerImage, loading: "lazy", alt: e.displayTitle || e.displayHostname, className: "w-full h-full object-cover", onError: () => a(!0) })), e instanceof g.UrlCard.Loading && (i = (0, n.jsx)("div", { className: "flex items-center justify-center h-32 pt-2 w-full", children: (0, n.jsx)(p.P, {}) }));
+                const r = (0, h.decode)(e.displayTitle || "");
+                return (0, n.jsxs)("div", { className: "flex flex-col items-center gap-0.5 bg-gray-100 cursor-pointer transition-colors duration-100 max-w-sm hover:bg-gray-50/50", onClick: () => window.open(e.urlToOpen, "_blank"), children: [i, (0, n.jsxs)("div", { className: "flex flex-col gap-0.5 px-8 py-4", children: [r && (0, n.jsx)(l.x, { weight: "medium", children: r }), (0, n.jsxs)("div", { className: "flex items-center gap-1", children: [(0, n.jsx)(l.x, { color: "gray900", size: "subtext2", numberOfLines: 1, children: e.displayHostname }), (0, n.jsx)(o.Z, { className: "text-gray-500 size-4" })] })] })] });
             }
-            var j = t(83083),
-                y = t(858108);
-            const w = a.com.x.dms.model.MessageItemAttachment,
-                b = a.com.x.dms.chat.DmEvent,
-                N = a.com.x.dms.model.MediaUriState;
-            function C({ attachment: e, isReceived: s, onEvent: t, className: r }) {
-                if (e instanceof w.Post) return (0, n.jsx)(u, { isReceived: s, post: e, onEvent: t, className: r });
-                if (e instanceof w.UrlCard) return (0, n.jsx)(v, { urlCard: e, onEvent: t });
-                if (e instanceof w.Media) {
-                    if (e instanceof w.Media.FromServer) {
-                        if ((e.uriState instanceof N.AttachmentNeedsResolving && !(0, y.G)() && t(new b.ResolveAttachment(e.uriState)), e.uriState instanceof N.ResolvedMedia)) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(j.Q, { filename: e.filename, fileSize: e.fileSize, uriToLoad: e.uriState.uri, className: r }) : (0, n.jsx)(i.Et, { src: e.uriState.uri, type: e.type, dimensions: e.dimensions, className: r });
-                        if (e.uriState instanceof N.Resolving) return (0, n.jsx)(i._9, { dimensions: e.dimensions });
-                        if (e.uriState === N.FailedToLoad) return (0, n.jsx)(i.DM, { dimensions: e.dimensions });
+            var y = t(38891),
+                w = t(858108),
+                b = t(83083);
+            const N = a.com.x.dms.model.MessageItemAttachment,
+                S = a.com.x.dms.chat.DmEvent,
+                C = a.com.x.dms.model.MediaUriState;
+            function I({ attachment: e, isReceived: s, onEvent: t, className: r }) {
+                const l = !(0, w.G)() || (0, y.z)().isTrue("rweb_xchat_fs_worker");
+                if (e instanceof N.Post) return (0, n.jsx)(u, { isReceived: s, post: e, onEvent: t, className: r });
+                if (e instanceof N.UrlCard) return (0, n.jsx)(j, { urlCard: e, onEvent: t });
+                if (e instanceof N.Media) {
+                    if (e instanceof N.Media.FromServer) {
+                        if ((e.uriState instanceof C.AttachmentNeedsResolving && l && t(new S.ResolveAttachment(e.uriState)), e.uriState instanceof C.ResolvedMedia)) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(b.Q, { filename: e.filename, fileSize: e.fileSize, uriToLoad: e.uriState.uri, className: r }) : (0, n.jsx)(i.Et, { src: e.uriState.uri, type: e.type, dimensions: e.dimensions, className: r });
+                        if (e.uriState instanceof C.Resolving) return (0, n.jsx)(i._9, { dimensions: e.dimensions });
+                        if (e.uriState === C.FailedToLoad) return (0, n.jsx)(i.DM, { dimensions: e.dimensions });
                     }
-                    if (e instanceof w.Media.Pending) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(j.Q, { filename: e.filename, fileSize: e.fileSize, className: r }) : (0, n.jsx)(i._9, { dimensions: e.dimensions });
+                    if (e instanceof N.Media.Pending) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(b.Q, { filename: e.filename, fileSize: e.fileSize, className: r }) : (0, n.jsx)(i._9, { dimensions: e.dimensions });
                 }
                 return null;
             }
@@ -291,14 +298,14 @@
                 l = t(332161),
                 o = t(31674),
                 c = t(202784),
-                d = t(841227);
+                d = t(263986);
             function m({ src: e, type: s, dimensions: t, className: a, showAsStatic: r = !1 }) {
                 const { width: l, height: m } = p(t),
                     [x, u] = (0, c.useState)(!1),
                     h = [{ type: "Video" === s.name ? "video" : "Gif" === s.name ? "animated_gif" : "image", src: e, previewImage: e }];
                 return (0, n.jsxs)(n.Fragment, {
                     children: [
-                        "Video" === s.name && r ? (0, n.jsx)("video", { src: e, preload: "metadata", width: `${l}px`, height: `${m}px`, className: a }) : "Video" === s.name ? (0, n.jsx)("div", { style: { width: `${l}px`, height: `${m}px` }, className: a, children: (0, n.jsx)(d.q, { src: e, poster: e, type: "video/mp4", autoPlay: !0, muted: !0, loop: !0, playsInline: !0 }) }) : (0, n.jsx)("img", { src: e, loading: "lazy", alt: "attachment", className: (0, o.cn)("max-w-[300px] max-h-[400px] cursor-pointer bg-gray-50 border border-gray-200 shadow-md", a), style: { width: `${l}px`, height: `${m}px` }, onClick: () => u(!0) }),
+                        "Video" === s.name && r ? (0, n.jsx)("video", { src: e, preload: "metadata", width: `${l}px`, height: `${m}px`, className: a }) : "Video" === s.name ? (0, n.jsx)("div", { style: { width: `${l}px`, height: `${m}px` }, className: a, children: (0, n.jsx)(d.q, { src: e, poster: e, type: "video/mp4", autoPlay: !0, muted: !0, loop: !0, playsInline: !0 }) }) : (0, n.jsx)("img", { src: e, loading: "lazy", alt: "attachment", className: (0, o.cn)("max-w-[300px] max-h-[400px] cursor-pointer bg-gray-50", a), style: { width: `${l}px`, height: `${m}px` }, onClick: () => u(!0) }),
                         (0, n.jsx)(i.e, {
                             mediaItems: h,
                             initialIndex: 0,
@@ -339,4 +346,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-cbcead99.ddd89a0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-cbcead99.207e6f8a.js.map

@@ -86,7 +86,7 @@
         },
         931386: (e, t, a) => {
             a.d(t, { F: () => l, L: () => I });
-            var i = a(538619),
+            var i = a(836938),
                 _ = a(542908),
                 r = a(85375),
                 n = a(94909);
@@ -128,7 +128,7 @@
         },
         174250: (e, t, a) => {
             a.d(t, { J: () => I, l: () => o });
-            var i = a(538619),
+            var i = a(836938),
                 _ = a(801340),
                 r = a(542908),
                 n = a(85375),
@@ -161,7 +161,7 @@
         },
         687415: (e, t, a) => {
             a.d(t, { g: () => o, o: () => l });
-            var i = a(538619),
+            var i = a(836938),
                 _ = a(542908),
                 r = a(85375),
                 n = a(94909);
@@ -199,7 +199,7 @@
         },
         649964: (e, t, a) => {
             a.d(t, { G: () => o, T: () => l });
-            var i = a(538619),
+            var i = a(836938),
                 _ = a(542908),
                 r = a(85375),
                 n = a(94909);
@@ -270,4 +270,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-53f39e22.0982c50a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-53f39e22.0daa0e8a.js.map

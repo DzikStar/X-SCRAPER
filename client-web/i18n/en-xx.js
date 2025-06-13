@@ -1342,6 +1342,9 @@
                     return "Tråänslåätéêd fröøm " + t.originLanguage + " by";
                 }),
                 s("b7cb4fab", "Tråänslåätéêd by"),
+                s("e0bffbf8", "About automatic translation"),
+                s("e839db3a", "[Dïísmïíss]"),
+                s("a15585b4", "Language Settings"),
                 s("d4c339b9", function (t) {
                     return "[Pöøst fröøm " + t.fullName + " (@" + t.screenName + ")]";
                 }),
@@ -1718,7 +1721,6 @@
                 s("bf994ab2", "[Only yöøü]"),
                 s("e7b4b30a", "[Only åäccöøünts yöøü méêntïíöønéêd]"),
                 s("ca6500a8", "[Dïísåäbléê éêxtéêrnåäl lïínks ïín réêplïíéês]"),
-                s("e839db3a", "[Dïísmïíss]"),
                 s("c8a98928", "[Pröømöøtïíöønåäl ïímåägéê]"),
                 s("f5b3dc1e", "[Måäybéê låätéêr]"),
                 s("ae0c5fbe", "[Erröør chåängïíng whöø cåän réêply]"),
@@ -1915,10 +1917,10 @@
                 s("da8ac57c", "[Edïít Cåäptïíöøn]"),
                 s("a8fdd09c", "[Püblïísh Artïícléê]"),
                 s("d8047cc8", "[Püblïísh]"),
-                s("ff7ddca2", "[Yöøür Artïícléê wïíll åäppéêåär åäs åä pöøst öøncéê yöøü püblïísh. Alsöø, fïínd ïít ündéêr théê Artïícléês tåäb öøn yöøür pröøfïíléê.]"),
-                s("ef34d7be", "[Aüdïíéêncéê åänd réêply cöøntröøls åäréê nöøt éêdïítåäbléê åäftéêr åän åärtïícléê håäs béêéên püblïíshéêd.]"),
-                s("e52d4998", "[Chöøöøséê yöøür åäüdïíéêncéê]");
-            s("d7985b24", "[Chöøöøséê whöø cåän réêply töø thïís Artïícléê]"),
+                s("ff7ddca2", "[Yöøür Artïícléê wïíll åäppéêåär åäs åä pöøst öøncéê yöøü püblïísh. Alsöø, fïínd ïít ündéêr théê Artïícléês tåäb öøn yöøür pröøfïíléê.]");
+            s("ef34d7be", "[Aüdïíéêncéê åänd réêply cöøntröøls åäréê nöøt éêdïítåäbléê åäftéêr åän åärtïícléê håäs béêéên püblïíshéêd.]"),
+                s("e52d4998", "[Chöøöøséê yöøür åäüdïíéêncéê]"),
+                s("d7985b24", "[Chöøöøséê whöø cåän réêply töø thïís Artïícléê]"),
                 s("b5660338", "[Tïíméêlïínéê préêvïíéêw]"),
                 s("hff1b97a", "[Only Sübscrïíbéêd cåän réêply.]"),
                 s("a330771e", "[Cöøpy lïínk töø yöøür clïípböøåärd]"),
@@ -2971,10 +2973,10 @@
                 s("jb0a4c36", "[Blöøg]"),
                 s("ce6d095a", "[Cåäréêéêrs]"),
                 s("e0adec82", "[Bråänd Réêsöøürcéês]"),
-                s("df1b7550", "[Måärkéêtïíng]"),
-                s("he258678", "[X föør Büsïínéêss]"),
-                s("c6f58084", "[Déêvéêlöøpéêrs]");
-            s("d83f18d2", "[Dïíréêctöøry]"),
+                s("df1b7550", "[Måärkéêtïíng]");
+            s("he258678", "[X föør Büsïínéêss]"),
+                s("c6f58084", "[Déêvéêlöøpéêrs]"),
+                s("d83f18d2", "[Dïíréêctöøry]"),
                 s("hc5aa17c", "[Géêt théê X åäpp]"),
                 s("j0693948", "[Géêt théê Gröøk åäpp]"),
                 s("fce9ecce", "[Süggéêstéêd Vïídéêöøs]"),
@@ -3883,14 +3885,14 @@
                 s("caa8d928", "[Töøggléê nöøïíséê süppréêssïíöøn]"),
                 s("b5d88f0c", "[Emplöøyéêéês öønly]"),
                 s("c855ab8e", "[Sübscrïíbéêrs öønly]"),
-                s("ddeb0a3c", "[Héêréê’s théê Cöømmünïíty. Lïíkéê théê péêöøpléê? Tåäkéê åä löøöøk.]"),
-                s("e111f531", function (t) {
-                    return "[" + t.count + " tünéêd ïín]";
-                }),
+                s("ddeb0a3c", "[Héêréê’s théê Cöømmünïíty. Lïíkéê théê péêöøpléê? Tåäkéê åä löøöøk.]");
+            s("e111f531", function (t) {
+                return "[" + t.count + " tünéêd ïín]";
+            }),
                 s("cbef820f", function (t) {
                     return "[" + t.screenName + " réêpöøstéêd théê stréêåäm!]";
-                });
-            s("e3275464", "[Séênd]"),
+                }),
+                s("e3275464", "[Séênd]"),
                 s("cededf2a", "[Höøst]"),
                 s("i2caef48", "[Cöø-höøsts]"),
                 s("j245c654", "[Spéêåäkéêrs]"),
@@ -4923,10 +4925,10 @@
                 s("d9508ab0", "[vïíéêws]"),
                 s("d9f9dec0", "[Vïíéêw Spåäcéê]"),
                 s("h0c1f37a", "[Vïíéêw Spåäcéê Anåälytïícs]"),
-                s("e41fffbc", "[Théê töøtåäl wåätch tïíméê öøf yöøür vïídéêöøs.]"),
-                s("if2909ba", "[Wåätch Tïíméê]"),
-                s("i0e5bf4c", "[Yöøür vïídéêöøs]");
-            s("ed99baea", "[Eåärly Béêtåä Accéêss]"),
+                s("e41fffbc", "[Théê töøtåäl wåätch tïíméê öøf yöøür vïídéêöøs.]");
+            s("if2909ba", "[Wåätch Tïíméê]"),
+                s("i0e5bf4c", "[Yöøür vïídéêöøs]"),
+                s("ed99baea", "[Eåärly Béêtåä Accéêss]"),
                 s("gf898b70", "[Advåäncéêd Séêåärch]"),
                 s("d2a43a7a", '[cöøntåäïíns böøth "åäïí" åänd "ståärtüp"]'),
                 s("a8584698", "[åäïí ståärtüp]"),
@@ -5877,12 +5879,12 @@
                 }),
                 s("f191a2ba", "Séêåärch séêttïíngs"),
                 s("a068008a", "[Föøldéêrs åäréên`t löøåädïíng rïíght nöøw]"),
-                s("f075b0e8", "[Edïít Föøldéêr]"),
-                s("beba2a0e", "[Créêåätéê åä néêw Böøöøkmåärk Föøldéêr]"),
+                s("f075b0e8", "[Edïít Föøldéêr]");
+            s("beba2a0e", "[Créêåätéê åä néêw Böøöøkmåärk Föøldéêr]"),
                 s("e41c9b4f", function (t) {
                     return "[Såävéêd töø " + t.bookmarkFolderName + "]";
-                });
-            s("h18f86a4", "[Déêléêtéê Föøldéêr]"),
+                }),
+                s("h18f86a4", "[Déêléêtéê Föøldéêr]"),
                 s("f4ea967a", "[Föøldéêr håäs béêéên déêléêtéêd]"),
                 s("b670aa62", "[Föøldéêr Nåäméê]"),
                 s("aece5462", "[Föøldéêr nåäméê håäs béêéên üpdåätéêd süccéêssfülly]"),
@@ -6883,10 +6885,10 @@
                 s("d70c24d4", "[Uséêd töø héêlp cåändïídåätéês séêåärch föør yöøür jöøb.]"),
                 s("de1c4376", "[Såälåäry Råängéê]"),
                 s("hf352d42", "[Add åän öøptïíöønåäl såälåäry råängéê thåät wïíll béê vïísïíbléê töø cåändïídåätéês. If yöøü chöøöøséê nöøt töø, béê åäwåäréê öøf åäny påäy tråänspåäréêncy låäws ïín théê löøcåätïíöøn yöøü’réê hïírïíng föør.]"),
-                s("ede7d0a2", "[Cürréêncy]"),
-                s("b925c18c", "[Såälåäry Typéê]"),
-                s("j3d242ce", "[Invåälïíd råängéê]");
-            s("f4d07bd2", "[Inclüdéê öøptïíöønåäl déêtåäïíls töø måäkéê ïít éêåäsïíéêr föør cåändïídåätéês töø dïíscöøvéêr yöøür röøléês wïíth séêåärch.]"),
+                s("ede7d0a2", "[Cürréêncy]");
+            s("b925c18c", "[Såälåäry Typéê]"),
+                s("j3d242ce", "[Invåälïíd råängéê]"),
+                s("f4d07bd2", "[Inclüdéê öøptïíöønåäl déêtåäïíls töø måäkéê ïít éêåäsïíéêr föør cåändïídåätéês töø dïíscöøvéêr yöøür röøléês wïíth séêåärch.]"),
                 s("b8cbb51a", "[Jöøb Sümmåäry]"),
                 s("bda6881e", "[Thïís jöøb håäs béêéên ïímpöørtéêd fröøm yöøür Applïícåänt Tråäckïíng Systéêm (ATS). Pléêåäséê nöøtéê thåät öønly spéêcïífïíc fïíéêlds cåän béê möødïífïíéêd.]"),
                 s("b075c68a", "[Edïít jöøb]"),
@@ -7863,9 +7865,7 @@
                 s("d7b8387e", "[If yöøü’véê åälréêåädy cåäncéêléêd, théêréê’s nöøthïíng möøréê töø döø. Yöøür Sübscrïíptïíöøn wïíll åäütöømåätïícåälly éêxpïíréê åät théê éênd öøf théê bïíllïíng cycléê.]"),
                 s("f4166d9a", "[Wåänt töø cåäncéêl yöøür Sübscrïíptïíöøn?]"),
                 s("b74ff5fc", "[If yöøü cåäncéêl, yöøür Sübscrïíptïíöøn wïíll åäütöømåätïícåälly éêxpïíréê åät théê éênd öøf théê bïíllïíng cycléê.]"),
-                s("ee9efbc8", "[Cöøntïínüéê töø cåäncéêllåätïíöøn]"),
-                s("c5d9c77a", "[Löøöøks lïíkéê théêréê wåäs åä slïíght hïíccüp. Döøn’t wöørry thöøügh, ïít’s nöøt yöøür fåäült. Clöøséê thïís wïíndöøw åänd try åägåäïín.]"),
-                s("jda53c24", "[Yöøü cåän cåäncéêl yöøür Sübscrïíptïíöøn thröøügh théê Appléê App Stöøréê.]");
+                s("ee9efbc8", "[Cöøntïínüéê töø cåäncéêllåätïíöøn]");
             function d(t, n) {
                 for (var r = 0; r < n.length; r++) {
                     var s = n[r];
@@ -7904,7 +7904,9 @@
                     e(t, n)
                 );
             }
-            s("g0a7a53e", "[Yöøü cåän cåäncéêl yöøür Sübscrïíptïíöøn thröøügh théê Göøöøgléê Plåäy Stöøréê.]"),
+            s("c5d9c77a", "[Löøöøks lïíkéê théêréê wåäs åä slïíght hïíccüp. Döøn’t wöørry thöøügh, ïít’s nöøt yöøür fåäült. Clöøséê thïís wïíndöøw åänd try åägåäïín.]"),
+                s("jda53c24", "[Yöøü cåän cåäncéêl yöøür Sübscrïíptïíöøn thröøügh théê Appléê App Stöøréê.]"),
+                s("g0a7a53e", "[Yöøü cåän cåäncéêl yöøür Sübscrïíptïíöøn thröøügh théê Göøöøgléê Plåäy Stöøréê.]"),
                 s("i5f14be7", function (t) {
                     return "[Wéêlcöøméê båäck, " + t.displayName + "]";
                 }),
@@ -8901,12 +8903,12 @@
                 }),
                 s("dff1ddd9", function (t) {
                     return "[Göø töø " + t.advertiserName + "]";
-                }),
-                s("b0b22805", function (t) {
-                    return "[Vïísïít " + t.advertiserName + "]";
-                }),
-                s("c67e71aa", "[Wåätch nöøw]");
-            s("a6ada13e", "[Shöøp nöøw]"),
+                });
+            s("b0b22805", function (t) {
+                return "[Vïísïít " + t.advertiserName + "]";
+            }),
+                s("c67e71aa", "[Wåätch nöøw]"),
+                s("a6ada13e", "[Shöøp nöøw]"),
                 s("j0f12222", "[Séêéê möøréê]"),
                 s("f569f7c8", "[Göø töø wéêbsïítéê]"),
                 s("j0c6772a", "[Vïísïít wéêbsïítéê]"),
@@ -10147,6 +10149,12 @@
                             key: "c5f6ee1d",
                             get: function () {
                                 return ["[", " ", "]"];
+                            },
+                        },
+                        {
+                            key: "b6411d33",
+                            get: function () {
+                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
                             },
                         },
                         {
@@ -13359,4 +13367,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.c886734a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.15995d1a.js.map

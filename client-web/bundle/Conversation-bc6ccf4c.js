@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Conversation-bc6ccf4c", "icons/IconMediaExpand-js", "icons/IconTrashcan-js"],
+    ["bundle.Conversation-bc6ccf4c", "icons/IconTrashcan-js"],
     {
         362075: (e, t, r) => {
             r.d(t, { Z: () => h });
@@ -64,13 +64,13 @@
                 s = r(952428),
                 c = r(392237);
             const d = (e) => {
-                    const { decoration: t, description: r, disabled: d = !1, isActive: h = !1, label: u, link: g, onPress: m, paddingHorizontal: b, renderRightContent: f, role: y = "tab", styleOverride: w, testID: C = "pivot", thumbnail: v, thumbnailSize: Z, withoutArrow: E = !1 } = e,
-                        x = [p.thumbnailContainer, "medium" === Z && p.thumbnailContainerMedium],
-                        I = "string" == typeof u ? a.createElement(l.ZP, null, u) : u,
-                        k = "object" == typeof g && g.external && !g.openInSameFrame,
+                    const { decoration: t, description: r, disabled: d = !1, isActive: h = !1, label: u, link: g, onPress: m, paddingHorizontal: b, renderRightContent: f, role: y = "tab", styleOverride: w, testID: C = "pivot", thumbnail: v, thumbnailSize: E, withoutArrow: Z = !1 } = e,
+                        x = [p.thumbnailContainer, "medium" === E && p.thumbnailContainerMedium],
+                        k = "string" == typeof u ? a.createElement(l.ZP, null, u) : u,
+                        I = "object" == typeof g && g.external && !g.openInSameFrame,
                         D = r ? ("string" == typeof r ? a.createElement(l.ZP, { color: "gray700", size: "subtext2", testID: `${C}-description` }, r) : r) : null,
                         R = a.useMemo(() => ("space0" === b ? { paddingHorizontal: 0 } : { paddingHorizontal: b ? c.default.theme.spaces[b] : c.default.theme.componentDimensions.gutterHorizontal }), [b]);
-                    return a.createElement(s.Z, { "aria-selected": "tab" === y ? h : null, disabled: d, link: d ? void 0 : g, onPress: m, role: y, style: [p.root, R, d && p.disabled, w], testID: C, withInteractiveStyling: !!g || !!m }, a.createElement(o.Z, { style: p.contentContainer }, v ? a.createElement(o.Z, { style: x }, v) : null, a.createElement(o.Z, { style: p.content }, I, D), f ? f() : null, (!g && !m) || d || E ? null : k ? a.createElement(i.default, { style: p.icon }) : a.createElement(n.default, { style: p.icon })), t);
+                    return a.createElement(s.Z, { "aria-selected": "tab" === y ? h : null, disabled: d, link: d ? void 0 : g, onPress: m, role: y, style: [p.root, R, d && p.disabled, w], testID: C, withInteractiveStyling: !!g || !!m }, a.createElement(o.Z, { style: p.contentContainer }, v ? a.createElement(o.Z, { style: x }, v) : null, a.createElement(o.Z, { style: p.content }, k, D), f ? f() : null, (!g && !m) || d || Z ? null : I ? a.createElement(i.default, { style: p.icon }) : a.createElement(n.default, { style: p.icon })), t);
                 },
                 p = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -173,18 +173,18 @@
                 u = r(392237);
             const g = u.default.create((e) => ({ backgroundGrey: { backgroundColor: e.colors.gray100 }, backgroundDefault: { backgroundColor: e.colors.cellBackground }, root: { overflow: "hidden", flexDirection: "row", justifyContent: "space-between", gap: e.spaces.space16, flexGrow: 1, borderColor: e.colors.transparent, borderWidth: e.borderWidths.medium }, alignCenter: { alignItems: "center" }, padding16: { padding: e.spaces.space16 }, padding8: { paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space4 }, boxShadow: { boxShadow: e.boxShadows.medium }, withMarginTop: { marginTop: e.spaces.space20 }, borderRadiusLarge: { borderRadius: e.borderRadii.large }, borderRadiusInfinite: { borderRadius: e.borderRadii.infinite }, checked: { borderColor: e.colors.primary }, interactive: { cursor: "pointer" }, withMarginEnd: { marginEnd: e.spaces.space20 }, grow: { flexGrow: 1 }, iconContainer: { alignSelf: "flex-start", flexDirection: "column", justifyContent: "center", width: e.spaces.space40, height: e.spaces.space40 }, labelContainer: { flexDirection: "column", justifyContent: "center", flex: 1 }, inlineCalloutContainer: { marginTop: e.spaces.space8 }, description: { marginTop: e.spaces.space4 }, descriptionWithPill: { marginTop: e.spaces.space2 }, endContentContainer: { justifyContent: "center", flexDirection: "column" }, row: { flexDirection: "row", alignItems: "center" }, marginTop4: { marginTop: e.spaces.space4 }, marginBottom8: { marginBottom: e.spaces.space8 }, info: { flexDirection: "row", justifyContent: "space-between", marginBottom: e.spaces.space8 }, infoIcon: { fontSize: ".74em", color: e.colors.gray700 }, backgroundTransparent: { backgroundColor: e.colors.transparent }, pill: { marginBottom: e.spaces.space4 }, inlinePill: { marginStart: e.spaces.space4 } })),
                 m = { ...u.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" },
-                b = ({ "aria-label": e, "aria-posinset": t, "aria-setsize": r, checked: a, dedicatedPillRow: i, description: u, disabled: b, disabledInlineCallout: f, endContent: y, horizontal: w, illustration: C, infoLabel: v, infoLabelType: Z, inlineCallout: E, label: x, name: I, onChange: k, pillText: D, pillType: R, reverseLabels: _, secondaryContent: z, secondaryDescription: M, switchStyle: S, testID: P }) => {
+                b = ({ "aria-label": e, "aria-posinset": t, "aria-setsize": r, checked: a, dedicatedPillRow: i, description: u, disabled: b, disabledInlineCallout: f, endContent: y, horizontal: w, illustration: C, infoLabel: v, infoLabelType: E, inlineCallout: Z, label: x, name: k, onChange: I, pillText: D, pillType: R, reverseLabels: _, secondaryContent: z, secondaryDescription: S, switchStyle: P, testID: M }) => {
                     const T = (0, h.b)(),
                         $ = (0, h.b)(),
                         W = (0, h.b)(),
-                        B = o.createElement(c.ZP, { color: S ? (a ? "text" : "gray800") : "text", id: T, role: "label", size: S ? "body" : "headline2", testID: "headline-label", weight: S ? "normal" : "bold" }, x),
-                        H = !!u && o.createElement(c.ZP, { color: "gray700", id: $, size: "subtext1", style: D ? g.descriptionWithPill : g.description, testID: "description-label" }, u),
-                        V = o.createElement(c.ZP, { color: "gray700", role: "label", size: "subtext2", style: g.description }, M),
-                        j = D ? o.createElement(d.ZP, { style: i ? g.pill : g.inlinePill, type: R }, D) : null,
-                        L = o.createElement(o.Fragment, null, i ? j : null, o.createElement(n.Z, { style: [g.row, v && g.marginBottom8] }, _ ? H : B, i ? null : j), o.createElement(n.Z, { style: [g.row, _ && g.marginTop4] }, _ ? B : H), z || (M ? V : void 0)),
-                        F = S ? "unset" : (r ? 100 / r : 100) + "%",
-                        O = S ? [g.padding8, g.borderRadiusLarge, a ? g.backgroundDefault : g.backgroundTransparent] : [g.padding16, g.boxShadow, g.borderRadiusLarge, a ? g.checked : null, g.backgroundDefault];
-                    return o.createElement(o.Fragment, null, o.createElement(p.Z, { disabled: b, style: [g.root, ...O, w ? { maxWidth: F, ...g.grow } : null, 1 === t || w ? null : g.withMarginTop, t !== r && w && !S && g.withMarginEnd, !b && g.interactive], testID: P, withInteractiveStyling: !S }, !!C && o.createElement(n.Z, { style: g.iconContainer, testID: "illustration" }, C), o.createElement(n.Z, { style: [g.labelContainer, S && g.alignCenter] }, !!v && o.createElement(n.Z, { style: g.info }, o.createElement(d.ZP, { background: "green" === Z ? "green500" : "red" === Z ? "magenta500" : "yellow" === Z ? "orange50" : "gray500" }, o.createElement(c.ZP, { color: "yellow" === Z ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, v)), "red" !== Z && "yellow" !== Z && o.createElement(l.default, { style: g.infoIcon, testID: "infoIcon" })), L, a && !!E && o.createElement(n.Z, { style: g.inlineCalloutContainer, testID: "inlineCallout" }, E)), !!y && o.createElement(n.Z, { style: g.endContentContainer, testID: "endContent" }, o.createElement(c.ZP, { id: W, size: "subtext1", weight: "bold" }, y)), o.createElement("input", { "aria-describedby": `${$} ${W}`, "aria-label": e, "aria-labelledby": T, "aria-posinset": t, "aria-setsize": r, checked: a, disabled: b, name: I, onChange: a ? s.Z : k, style: m, type: "radio" })), b && f ? f : null);
+                        B = o.createElement(c.ZP, { color: P ? (a ? "text" : "gray800") : "text", id: T, role: "label", size: P ? "body" : "headline2", testID: "headline-label", weight: P ? "normal" : "bold" }, x),
+                        j = !!u && o.createElement(c.ZP, { color: "gray700", id: $, size: "subtext1", style: D ? g.descriptionWithPill : g.description, testID: "description-label" }, u),
+                        H = o.createElement(c.ZP, { color: "gray700", role: "label", size: "subtext2", style: g.description }, S),
+                        V = D ? o.createElement(d.ZP, { style: i ? g.pill : g.inlinePill, type: R }, D) : null,
+                        F = o.createElement(o.Fragment, null, i ? V : null, o.createElement(n.Z, { style: [g.row, v && g.marginBottom8] }, _ ? j : B, i ? null : V), o.createElement(n.Z, { style: [g.row, _ && g.marginTop4] }, _ ? B : j), z || (S ? H : void 0)),
+                        L = P ? "unset" : (r ? 100 / r : 100) + "%",
+                        O = P ? [g.padding8, g.borderRadiusLarge, a ? g.backgroundDefault : g.backgroundTransparent] : [g.padding16, g.boxShadow, g.borderRadiusLarge, a ? g.checked : null, g.backgroundDefault];
+                    return o.createElement(o.Fragment, null, o.createElement(p.Z, { disabled: b, style: [g.root, ...O, w ? { maxWidth: L, ...g.grow } : null, 1 === t || w ? null : g.withMarginTop, t !== r && w && !P && g.withMarginEnd, !b && g.interactive], testID: M, withInteractiveStyling: !P }, !!C && o.createElement(n.Z, { style: g.iconContainer, testID: "illustration" }, C), o.createElement(n.Z, { style: [g.labelContainer, P && g.alignCenter] }, !!v && o.createElement(n.Z, { style: g.info }, o.createElement(d.ZP, { background: "green" === E ? "green500" : "red" === E ? "magenta500" : "yellow" === E ? "orange50" : "gray500" }, o.createElement(c.ZP, { color: "yellow" === E ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, v)), "red" !== E && "yellow" !== E && o.createElement(l.default, { style: g.infoIcon, testID: "infoIcon" })), F, a && !!Z && o.createElement(n.Z, { style: g.inlineCalloutContainer, testID: "inlineCallout" }, Z)), !!y && o.createElement(n.Z, { style: g.endContentContainer, testID: "endContent" }, o.createElement(c.ZP, { id: W, size: "subtext1", weight: "bold" }, y)), o.createElement("input", { "aria-describedby": `${$} ${W}`, "aria-label": e, "aria-labelledby": T, "aria-posinset": t, "aria-setsize": r, checked: a, disabled: b, name: k, onChange: a ? s.Z : I, style: m, type: "radio" })), b && f ? f : null);
                 },
                 f = (e) => {
                     const t = o.useCallback(({ value: e, ...t }) => o.createElement(b, (0, a.Z)({}, t, { key: e })), []);
@@ -194,21 +194,6 @@
         183806: (e, t, r) => {
             r.d(t, { Z: () => a });
             const a = r(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
-        },
-        841972: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => c });
-            var a = r(202784),
-                o = r(890601),
-                i = r(783427),
-                n = r(717683),
-                l = r(347101);
-            const s = (e = {}) => {
-                const t = a.useContext(n.Z),
-                    { direction: r } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style, t && l.Z.iconRTL], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M13 3h8v8h-2V6.41l-5.043 5.05-1.414-1.42L17.586 5H13V3zm-1.543 10.96L6.414 19H11v2H3v-8h2v4.59l5.043-5.05 1.414 1.42z" })) }, { writingDirection: r });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const c = s;
         },
         748138: (e, t, r) => {
             r.r(t), r.d(t, { default: () => s });
@@ -238,4 +223,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-bc6ccf4c.911ff24a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-bc6ccf4c.8a94a02a.js.map

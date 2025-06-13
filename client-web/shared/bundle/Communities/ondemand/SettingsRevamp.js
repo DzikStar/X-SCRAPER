@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.Communities~ondemand.SettingsRevamp", "icons/IconUndo-js"],
+    ["shared~bundle.Communities~ondemand.SettingsRevamp"],
     {
         947135: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -269,20 +269,18 @@
             const l = (e) => r.createElement(o.Z, { style: s.root }, r.createElement(i.Z, e)),
                 s = a.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical } }));
         },
-        775042: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => c });
+        98440: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => s });
             var r = n(202784),
                 o = n(890601),
                 i = n(783427),
-                a = n(717683),
-                l = n(347101);
-            const s = (e = {}) => {
-                const t = r.useContext(a.Z),
-                    { direction: n } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style, t && l.Z.iconRTL], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.29 2.29l1.42 1.42L5.41 6H15c3.87 0 7 3.13 7 7s-3.13 7-7 7H8v-2h7c2.76 0 5-2.24 5-5s-2.24-5-5-5H5.41l2.3 2.29-1.42 1.42L1.59 7l4.7-4.71z" })) }, { writingDirection: n });
+                a = n(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
             };
-            s.metadata = { width: 24, height: 24 };
-            const c = s;
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
         },
         716042: (e, t, n) => {
             n.d(t, { JN: () => Q, W8: () => ne, JV: () => z });
@@ -462,14 +460,14 @@
             function A(e) {
                 return e.touches && e.touches.length ? { x: e.touches[0].pageX, y: e.touches[0].pageY } : e.changedTouches && e.changedTouches.length ? { x: e.changedTouches[0].pageX, y: e.changedTouches[0].pageY } : { x: e.pageX, y: e.pageY };
             }
-            function L(e, t) {
+            function N(e, t) {
                 var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : { left: 0, top: 0 };
                 if (e) {
                     var r = { left: n.left + e.offsetLeft, top: n.top + e.offsetTop };
-                    return e.parentNode === t ? r : L(e.parentNode, t, r);
+                    return e.parentNode === t ? r : N(e.parentNode, t, r);
                 }
             }
-            function N(e) {
+            function L(e) {
                 var t = e.lockOffset,
                     n = e.width,
                     r = e.height,
@@ -496,8 +494,8 @@
                     : null;
             }
             var W = 27,
-                H = 32,
-                j = 37,
+                j = 32,
+                H = 37,
                 B = 38,
                 K = 39,
                 F = 40,
@@ -545,10 +543,10 @@
                     n
                 );
             }
-            function U(e) {
+            function V(e) {
                 return null != e.sortableHandle;
             }
-            var V = (function () {
+            var U = (function () {
                 function e(t, n) {
                     (0, s.Z)(this, e), (this.container = t), (this.onScrollCallback = n);
                 }
@@ -597,7 +595,7 @@
                 );
             })();
             var $ = { axis: x().oneOf(["x", "y", "xy"]), contentWindow: x().any, disableAutoscroll: x().bool, distance: x().number, getContainer: x().func, getHelperDimensions: x().func, helperClass: x().string, helperContainer: x().oneOfType([x().func, "undefined" == typeof HTMLElement ? x().any : x().instanceOf(HTMLElement)]), hideSortableGhost: x().bool, keyboardSortingTransitionDuration: x().number, lockAxis: x().string, lockOffset: x().oneOfType([x().number, x().string, x().arrayOf(x().oneOfType([x().number, x().string]))]), lockToContainerEdges: x().bool, onSortEnd: x().func, onSortMove: x().func, onSortOver: x().func, onSortStart: x().func, pressDelay: x().number, pressThreshold: x().number, keyCodes: x().shape({ lift: x().arrayOf(x().number), drop: x().arrayOf(x().number), cancel: x().arrayOf(x().number), up: x().arrayOf(x().number), down: x().arrayOf(x().number) }), shouldCancelStart: x().func, transitionDuration: x().number, updateBeforeSortStart: x().func, useDragHandle: x().bool, useWindowAsScrollContainer: x().bool },
-                X = { lift: [H], drop: [H], cancel: [W], up: [B, j], down: [F, K] },
+                X = { lift: [j], drop: [j], cancel: [W], up: [B, H], down: [F, K] },
                 q = {
                     axis: "y",
                     disableAutoscroll: !1,
@@ -652,7 +650,7 @@
                                                     s = l.index,
                                                     c = l.collection;
                                                 if (l.disabled) return;
-                                                if (a && !O(e.target, U)) return;
+                                                if (a && !O(e.target, V)) return;
                                                 (t.manager.active = { collection: c, index: s }),
                                                     (function (e) {
                                                         return (e.touches && e.touches.length) || (e.changedTouches && e.changedTouches.length);
@@ -721,7 +719,7 @@
                                                                     (t.index = b),
                                                                     (t.newIndex = b),
                                                                     (t.axis = { x: i.indexOf("x") >= 0, y: i.indexOf("y") >= 0 }),
-                                                                    (t.offsetEdge = L(f, t.container)),
+                                                                    (t.offsetEdge = N(f, t.container)),
                                                                     (t.initialOffset = A(g ? l({}, e, { pageX: t.boundingClientRect.left, pageY: t.boundingClientRect.top }) : e)),
                                                                     (t.initialScroll = { left: t.scrollContainer.scrollLeft, top: t.scrollContainer.scrollTop }),
                                                                     (t.initialWindowScroll = { left: window.pageXOffset, top: window.pageYOffset }),
@@ -909,7 +907,7 @@
                                             o = O(r, function (e) {
                                                 return null != e.sortableInfo;
                                             });
-                                        return o && o.sortableInfo && !o.sortableInfo.disabled && (n ? U(r) : r.sortableInfo);
+                                        return o && o.sortableInfo && !o.sortableInfo.disabled && (n ? V(r) : r.sortableInfo);
                                     });
                                 var r = new w();
                                 return (
@@ -937,7 +935,7 @@
                                                 var r = e.props.contentWindow || e.document.defaultView || window;
                                                 (e.contentWindow = "function" == typeof r ? r() : r),
                                                     (e.scrollContainer = t ? e.document.scrollingElement || e.document.documentElement : M(e.container) || e.container),
-                                                    (e.autoScroller = new V(e.scrollContainer, e.onAutoScroll)),
+                                                    (e.autoScroller = new U(e.scrollContainer, e.onAutoScroll)),
                                                     Object.keys(e.events).forEach(function (t) {
                                                         return S[t].forEach(function (n) {
                                                             return e.container.addEventListener(n, e.events[t], !1);
@@ -985,7 +983,7 @@
                                                         var a = i(o, 2),
                                                             l = a[0],
                                                             s = a[1];
-                                                        return [N({ height: t, lockOffset: l, width: n }), N({ height: t, lockOffset: s, width: n })];
+                                                        return [L({ height: t, lockOffset: l, width: n }), L({ height: t, lockOffset: s, width: n })];
                                                     })({ height: this.height, lockOffset: r, width: this.width }),
                                                     p = i(f, 2),
                                                     g = p[0],
@@ -1022,10 +1020,10 @@
                                                     b = c && p < this.index && p >= d,
                                                     x = { x: 0, y: 0 },
                                                     w = a[h].edgeOffset;
-                                                w || ((w = L(f, this.container)), (a[h].edgeOffset = w), c && (a[h].boundingClientRect = _(f, o)));
+                                                w || ((w = N(f, this.container)), (a[h].edgeOffset = w), c && (a[h].boundingClientRect = _(f, o)));
                                                 var Z = h < a.length - 1 && a[h + 1],
                                                     C = h > 0 && a[h - 1];
-                                                Z && !Z.edgeOffset && ((Z.edgeOffset = L(Z.node, this.container)), c && (Z.boundingClientRect = _(Z.node, o))), p !== this.index ? (t && T(f, t), this.axis.x ? (this.axis.y ? (b || (p < this.index && ((l + i.left - y.width <= w.left && s + i.top <= w.top + y.height) || s + i.top + y.height <= w.top)) ? ((x.x = this.width + this.marginOffset.x), w.left + x.x > this.containerBoundingRect.width - y.width && Z && ((x.x = Z.edgeOffset.left - w.left), (x.y = Z.edgeOffset.top - w.top)), null === this.newIndex && (this.newIndex = p)) : (v || (p > this.index && ((l + i.left + y.width >= w.left && s + i.top + y.height >= w.top) || s + i.top + y.height >= w.top + m))) && ((x.x = -(this.width + this.marginOffset.x)), w.left + x.x < this.containerBoundingRect.left + y.width && C && ((x.x = C.edgeOffset.left - w.left), (x.y = C.edgeOffset.top - w.top)), (this.newIndex = p))) : v || (p > this.index && l + i.left + y.width >= w.left) ? ((x.x = -(this.width + this.marginOffset.x)), (this.newIndex = p)) : (b || (p < this.index && l + i.left <= w.left + y.width)) && ((x.x = this.width + this.marginOffset.x), null == this.newIndex && (this.newIndex = p))) : this.axis.y && (v || (p > this.index && s + i.top + y.height >= w.top) ? ((x.y = -(this.height + this.marginOffset.y)), (this.newIndex = p)) : (b || (p < this.index && s + i.top <= w.top + y.height)) && ((x.y = this.height + this.marginOffset.y), null == this.newIndex && (this.newIndex = p))), I(f, x), (a[h].translate = x)) : n && ((this.sortableGhost = f), k(f, { opacity: 0, visibility: "hidden" }));
+                                                Z && !Z.edgeOffset && ((Z.edgeOffset = N(Z.node, this.container)), c && (Z.boundingClientRect = _(Z.node, o))), p !== this.index ? (t && T(f, t), this.axis.x ? (this.axis.y ? (b || (p < this.index && ((l + i.left - y.width <= w.left && s + i.top <= w.top + y.height) || s + i.top + y.height <= w.top)) ? ((x.x = this.width + this.marginOffset.x), w.left + x.x > this.containerBoundingRect.width - y.width && Z && ((x.x = Z.edgeOffset.left - w.left), (x.y = Z.edgeOffset.top - w.top)), null === this.newIndex && (this.newIndex = p)) : (v || (p > this.index && ((l + i.left + y.width >= w.left && s + i.top + y.height >= w.top) || s + i.top + y.height >= w.top + m))) && ((x.x = -(this.width + this.marginOffset.x)), w.left + x.x < this.containerBoundingRect.left + y.width && C && ((x.x = C.edgeOffset.left - w.left), (x.y = C.edgeOffset.top - w.top)), (this.newIndex = p))) : v || (p > this.index && l + i.left + y.width >= w.left) ? ((x.x = -(this.width + this.marginOffset.x)), (this.newIndex = p)) : (b || (p < this.index && l + i.left <= w.left + y.width)) && ((x.x = this.width + this.marginOffset.x), null == this.newIndex && (this.newIndex = p))) : this.axis.y && (v || (p > this.index && s + i.top + y.height >= w.top) ? ((x.y = -(this.height + this.marginOffset.y)), (this.newIndex = p)) : (b || (p < this.index && s + i.top <= w.top + y.height)) && ((x.y = this.height + this.marginOffset.y), null == this.newIndex && (this.newIndex = p))), I(f, x), (a[h].translate = x)) : n && ((this.sortableGhost = f), k(f, { opacity: 0, visibility: "hidden" }));
                                             }
                                             null == this.newIndex && (this.newIndex = this.index), c && (this.newIndex = d);
                                             var S = c ? this.prevIndex : d;
@@ -1231,4 +1229,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Communities~ondemand.SettingsRevamp.08cd22da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Communities~ondemand.SettingsRevamp.862fd56a.js.map

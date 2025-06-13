@@ -3,7 +3,7 @@
     ["bundle.Payments-d60a37be"],
     {
         43429: (e, t, n) => {
-            n.d(t, { $W: () => s, DH: () => g, Ln: () => m, Ms: () => v, NU: () => b, Rj: () => f, Rz: () => c, a7: () => a, ah: () => i, cX: () => l, dX: () => u, hv: () => p, ic: () => r, q9: () => y, uc: () => _, w8: () => o, wC: () => d, wG: () => h });
+            n.d(t, { $W: () => s, DH: () => g, Fw: () => y, Ln: () => m, Ms: () => P, NU: () => v, Rj: () => f, Rz: () => c, a7: () => a, ah: () => i, cX: () => l, dX: () => u, hv: () => p, ic: () => r, q9: () => b, uc: () => _, w8: () => o, wC: () => d, wG: () => h });
             n(202784);
             const a = "Usd",
                 r = 25,
@@ -20,9 +20,10 @@
                 p = "https://money.x.com/articles/privacy-policy",
                 g = "https://money.x.com/articles/short-form-disclosure",
                 f = "https://money.x.com/articles/usa-patriot-act",
-                y = Object.freeze({ initiate: "initiate-challenge", complete2fa: "2fa-complete-challenge", completeKyc: "kyc-complete-challenge", completeDocv: "docv-complete-challenge", completeSelfie: "selfie-complete-challenge" }),
-                b = Object.freeze({ balance: "balance", credit: "credit", debit: "debit" }),
-                v = Object.freeze({ interest: "interest", cashback: "cashback", deposit: "deposit", withdraw: "withdraw", atm: "atm" });
+                y = "https://money.x.com/articles/cardholder-agreement",
+                b = Object.freeze({ initiate: "initiate-challenge", complete2fa: "2fa-complete-challenge", completeKyc: "kyc-complete-challenge", completeDocv: "docv-complete-challenge", completeSelfie: "selfie-complete-challenge" }),
+                v = Object.freeze({ balance: "balance", credit: "credit", debit: "debit" }),
+                P = Object.freeze({ interest: "interest", cashback: "cashback", deposit: "deposit", withdraw: "withdraw", atm: "atm" });
         },
         452275: (e, t, n) => {
             n.d(t, { Z: () => d });
@@ -36,7 +37,7 @@
                     const e = (0, r.useLocation)(),
                         { hasPendingTransactions: t } = (0, i.Z)(),
                         n = (0, o.hC)("payments_card_spend_enabled"),
-                        l = a.useMemo(() => [{ to: { pathname: c.gp }, key: c.gp, label: "Account", isActive: () => e.pathname === c.gp }, n ? { to: { pathname: c.Tb }, key: c.Tb, label: "Card", isActive: () => e.pathname === c.Tb } : null, { to: { pathname: c.bR }, key: c.bR, label: "Activity", isActive: () => e.pathname === c.bR, badgePip: t }], [n, t, e.pathname]);
+                        l = a.useMemo(() => [{ to: { pathname: c.gp }, key: c.gp, label: "Account", isActive: () => e.pathname === c.gp }, n ? { to: { pathname: c.Tb }, key: c.Tb, label: "Card", isActive: () => e.pathname === c.Tb || e.pathname === c.F7 } : null, { to: { pathname: c.bR }, key: c.bR, label: "Activity", isActive: () => e.pathname === c.bR, badgePip: t }], [n, t, e.pathname]);
                     return a.createElement(s.Z, { isPillLink: !0, links: l });
                 },
                 d = a.memo(l);
@@ -332,7 +333,7 @@
                 h = n(655352),
                 _ = n(163889),
                 p = n(514639),
-                g = n(351990),
+                g = n(412450),
                 f = n(441484),
                 y = n(99387),
                 b = n(743080),
@@ -824,7 +825,7 @@
         137882: (e, t, n) => {
             n.d(t, { b: () => r, v: () => s });
             n(543673), n(240753), n(128399);
-            var a = n(351990);
+            var a = n(412450);
             const r = ({ txId: e }) => {
                     const { supportUrl: t } = (0, a.Z)(),
                         n = new URL(t);
@@ -1090,4 +1091,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.8d66f0ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.51d235da.js.map

@@ -1345,6 +1345,9 @@
                     return "Fassarawa daga " + a.originLanguage + " daga";
                 }),
                 t("b7cb4fab", "Fassarawa daga"),
+                t("e0bffbf8", "About automatic translation"),
+                t("e839db3a", "Kore"),
+                t("a15585b4", "Language Settings"),
                 t("d4c339b9", function (a) {
                     return "Post from " + a.fullName + " (@" + a.screenName + ")";
                 }),
@@ -1721,7 +1724,6 @@
                 t("bf994ab2", "Kai kaɗai"),
                 t("e7b4b30a", "Only accounts you mentioned"),
                 t("ca6500a8", "Disable external links in replies"),
-                t("e839db3a", "Kore"),
                 t("c8a98928", "Promotional image"),
                 t("f5b3dc1e", "Wataƙila wani lokaci"),
                 t("ae0c5fbe", "Kuskuren yayin sauya wanda zai bayar da amsa"),
@@ -1918,10 +1920,10 @@
                 t("da8ac57c", "Edit Caption"),
                 t("a8fdd09c", "Publish Article"),
                 t("d8047cc8", "Buga"),
-                t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
-                t("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
-                t("e52d4998", "Choose your audience");
-            t("d7985b24", "Choose who can reply to this Article"),
+                t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile.");
+            t("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
+                t("e52d4998", "Choose your audience"),
+                t("d7985b24", "Choose who can reply to this Article"),
                 t("b5660338", "Timeline preview"),
                 t("hff1b97a", "Only Subscribed can reply."),
                 t("a330771e", "Copy link to your clipboard"),
@@ -2974,10 +2976,10 @@
                 t("jb0a4c36", "Bulogi"),
                 t("ce6d095a", "Sana'o'i"),
                 t("e0adec82", "Albarkatun Samfuri"),
-                t("df1b7550", "Kasuwanci"),
-                t("he258678", "X for Business"),
-                t("c6f58084", "Masu samarwa");
-            t("d83f18d2", "Jagora"),
+                t("df1b7550", "Kasuwanci");
+            t("he258678", "X for Business"),
+                t("c6f58084", "Masu samarwa"),
+                t("d83f18d2", "Jagora"),
                 t("hc5aa17c", "Get the X app"),
                 t("j0693948", "Get the Grok app"),
                 t("fce9ecce", "Suggested Videos"),
@@ -3886,14 +3888,14 @@
                 t("caa8d928", "Toggle noise suppression"),
                 t("b5d88f0c", "Employees only"),
                 t("c855ab8e", "Masu rijistan biyan kaɗai"),
-                t("ddeb0a3c", "Ga Al'ummar. Ana son mutanen? Duba shi."),
-                t("e111f531", function (a) {
-                    return a.count + " na sauraro";
-                }),
+                t("ddeb0a3c", "Ga Al'ummar. Ana son mutanen? Duba shi.");
+            t("e111f531", function (a) {
+                return a.count + " na sauraro";
+            }),
                 t("cbef820f", function (a) {
                     return a.screenName + " reposted the stream!";
-                });
-            t("e3275464", "Aika"),
+                }),
+                t("e3275464", "Aika"),
                 t("cededf2a", "Mai masauki"),
                 t("i2caef48", "Masu masauki"),
                 t("j245c654", "Sifikoki"),
@@ -4926,10 +4928,10 @@
                 t("d9508ab0", "views"),
                 t("d9f9dec0", "View Space"),
                 t("h0c1f37a", "View Space Analytics"),
-                t("e41fffbc", "The total watch time of your videos."),
-                t("if2909ba", "Watch Time"),
-                t("i0e5bf4c", "Your videos");
-            t("ed99baea", "Early Beta Access"),
+                t("e41fffbc", "The total watch time of your videos.");
+            t("if2909ba", "Watch Time"),
+                t("i0e5bf4c", "Your videos"),
+                t("ed99baea", "Early Beta Access"),
                 t("gf898b70", "Advanced Search"),
                 t("d2a43a7a", 'contains both "ai" and "startup"'),
                 t("a8584698", "ai startup"),
@@ -5880,12 +5882,12 @@
                 }),
                 t("f191a2ba", " Saitunan bincikenka"),
                 t("a068008a", "Folders aren`t loading right now"),
-                t("f075b0e8", "Gyara Folda"),
-                t("beba2a0e", "Ƙirƙiri sabuwar Foldar Alama"),
+                t("f075b0e8", "Gyara Folda");
+            t("beba2a0e", "Ƙirƙiri sabuwar Foldar Alama"),
                 t("e41c9b4f", function (a) {
                     return "Ana dana a " + a.bookmarkFolderName;
-                });
-            t("h18f86a4", "Share Folda"),
+                }),
+                t("h18f86a4", "Share Folda"),
                 t("f4ea967a", "An share folda"),
                 t("b670aa62", "Sunan Folda"),
                 t("aece5462", "An yi nasarar sabunta sunan folda"),
@@ -6886,10 +6888,10 @@
                 t("d70c24d4", "Used to help candidates search for your job."),
                 t("de1c4376", "Salary Range"),
                 t("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for."),
-                t("ede7d0a2", "Currency"),
-                t("b925c18c", "Salary Type"),
-                t("j3d242ce", "Invalid range");
-            t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
+                t("ede7d0a2", "Currency");
+            t("b925c18c", "Salary Type"),
+                t("j3d242ce", "Invalid range"),
+                t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
                 t("b8cbb51a", "Job Summary"),
                 t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 t("b075c68a", "Edit job"),
@@ -7866,9 +7868,7 @@
                 t("d7b8387e", "Idan ka riga ka soke, babu komai da za a yi kuma. Rijistarka za ta ƙare ta kai tsaye a ƙarshen lokacin lissafin caji kuɗi."),
                 t("f4166d9a", "Kana son ka soke Rijistarka ne?"),
                 t("b74ff5fc", "Idan ka soke, Rijistarka za ta ƙare kai tsaye a ƙarshen lokacin lissafin caji kuɗi."),
-                t("ee9efbc8", "Ci gaba da sokewa"),
-                t("c5d9c77a", "Da alama an samu ɗan matsala. Kada ka damu amma, ba laifinka ba ne. Rufe wannan taga sai ka sake gwadawa."),
-                t("jda53c24", "Za ka iya soke Rijistarka ta hanyar Apple App Store.");
+                t("ee9efbc8", "Ci gaba da sokewa");
             function r(a, e) {
                 for (var n = 0; n < e.length; n++) {
                     var t = e[n];
@@ -7907,7 +7907,9 @@
                     u(a, e)
                 );
             }
-            t("g0a7a53e", "Za ka iya soke Rijistarka ta hanyar Google Play Store."),
+            t("c5d9c77a", "Da alama an samu ɗan matsala. Kada ka damu amma, ba laifinka ba ne. Rufe wannan taga sai ka sake gwadawa."),
+                t("jda53c24", "Za ka iya soke Rijistarka ta hanyar Apple App Store."),
+                t("g0a7a53e", "Za ka iya soke Rijistarka ta hanyar Google Play Store."),
                 t("i5f14be7", function (a) {
                     return "Welcome back, " + a.displayName;
                 }),
@@ -8904,12 +8906,12 @@
                 }),
                 t("dff1ddd9", function (a) {
                     return "Go to " + a.advertiserName;
-                }),
-                t("b0b22805", function (a) {
-                    return "Visit " + a.advertiserName;
-                }),
-                t("c67e71aa", "Watch now");
-            t("a6ada13e", "Shop now"),
+                });
+            t("b0b22805", function (a) {
+                return "Visit " + a.advertiserName;
+            }),
+                t("c67e71aa", "Watch now"),
+                t("a6ada13e", "Shop now"),
                 t("j0f12222", "Ga ƙari"),
                 t("f569f7c8", "Go to website"),
                 t("j0c6772a", "Visit website"),
@@ -10150,6 +10152,12 @@
                             key: "c5f6ee1d",
                             get: function () {
                                 return ["", " "];
+                            },
+                        },
+                        {
+                            key: "b6411d33",
+                            get: function () {
+                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
                             },
                         },
                         {
@@ -13361,4 +13369,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.686e87fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.12ec259a.js.map

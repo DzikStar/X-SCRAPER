@@ -1346,6 +1346,9 @@
                     return "Lingua originale: " + i.originLanguage + ". Traduzione di";
                 }),
                 o("b7cb4fab", "Traduzione di"),
+                o("e0bffbf8", "About automatic translation"),
+                o("e839db3a", "Chiudi"),
+                o("a15585b4", "Language Settings"),
                 o("d4c339b9", function (i) {
                     return "Post di " + i.fullName + " (@" + i.screenName + ")";
                 }),
@@ -1722,7 +1725,6 @@
                 o("bf994ab2", "Solo tu"),
                 o("e7b4b30a", "Solo gli account che hai menzionato"),
                 o("ca6500a8", "Disabilita i link esterni nelle risposte"),
-                o("e839db3a", "Chiudi"),
                 o("c8a98928", "Immagine promozionale"),
                 o("f5b3dc1e", "Magari dopo"),
                 o("ae0c5fbe", "Errore durante la modifica di chi può rispondere"),
@@ -1919,10 +1921,10 @@
                 o("da8ac57c", "Modifica didascalia"),
                 o("a8fdd09c", "Pubblica articolo"),
                 o("d8047cc8", "Pubblica"),
-                o("ff7ddca2", "L'articolo apparirà come post una volta pubblicato. Inoltre, sarà disponibile nella scheda Articoli del tuo profilo."),
-                o("ef34d7be", "I controlli su pubblico e risposte non possono essere modificati in seguito alla pubblicazione dell'articolo."),
-                o("e52d4998", "Scegli il pubblico");
-            o("d7985b24", "Scegli chi può rispondere a questo articolo"),
+                o("ff7ddca2", "L'articolo apparirà come post una volta pubblicato. Inoltre, sarà disponibile nella scheda Articoli del tuo profilo.");
+            o("ef34d7be", "I controlli su pubblico e risposte non possono essere modificati in seguito alla pubblicazione dell'articolo."),
+                o("e52d4998", "Scegli il pubblico"),
+                o("d7985b24", "Scegli chi può rispondere a questo articolo"),
                 o("b5660338", "Anteprima cronologia"),
                 o("hff1b97a", "Solo gli abbonati possono rispondere."),
                 o("a330771e", "Copia link negli appunti"),
@@ -2975,10 +2977,10 @@
                 o("jb0a4c36", "Blog"),
                 o("ce6d095a", "Lavora con noi"),
                 o("e0adec82", "Risorse del brand"),
-                o("df1b7550", "Marketing"),
-                o("he258678", "X per le attività"),
-                o("c6f58084", "Sviluppatori");
-            o("d83f18d2", "Elenco"),
+                o("df1b7550", "Marketing");
+            o("he258678", "X per le attività"),
+                o("c6f58084", "Sviluppatori"),
+                o("d83f18d2", "Elenco"),
                 o("hc5aa17c", "Scarica l'app X"),
                 o("j0693948", "Scarica l'app Grok"),
                 o("fce9ecce", "Video suggeriti"),
@@ -3887,14 +3889,14 @@
                 o("caa8d928", "Attiva/Disattiva la cancellazione del rumore"),
                 o("b5d88f0c", "Solo per dipendenti"),
                 o("c855ab8e", "Solo per abbonati"),
-                o("ddeb0a3c", "Ecco la community. Ti piacciono gli utenti? Dai un'occhiata."),
-                o("e111f531", function (i) {
-                    return i.count + " sintonizzat" + t(i.count, "o", "i");
-                }),
+                o("ddeb0a3c", "Ecco la community. Ti piacciono gli utenti? Dai un'occhiata.");
+            o("e111f531", function (i) {
+                return i.count + " sintonizzat" + t(i.count, "o", "i");
+            }),
                 o("cbef820f", function (i) {
                     return i.screenName + " ha ripostato la trasmissione";
-                });
-            o("e3275464", "Invia"),
+                }),
+                o("e3275464", "Invia"),
                 o("cededf2a", "Host"),
                 o("i2caef48", "Cohost"),
                 o("j245c654", "Partecipanti attivi"),
@@ -4927,10 +4929,10 @@
                 o("d9508ab0", "visualizzazioni"),
                 o("d9f9dec0", "Visualizza spazio"),
                 o("h0c1f37a", "Visualizza statistiche spazio"),
-                o("e41fffbc", "Il tempo complessivo di visione dei tuoi video."),
-                o("if2909ba", "Tempo di visione"),
-                o("i0e5bf4c", "I tuoi video");
-            o("ed99baea", "Accesso beta in anteprima"),
+                o("e41fffbc", "Il tempo complessivo di visione dei tuoi video.");
+            o("if2909ba", "Tempo di visione"),
+                o("i0e5bf4c", "I tuoi video"),
+                o("ed99baea", "Accesso beta in anteprima"),
                 o("gf898b70", "Ricerca avanzata"),
                 o("d2a43a7a", 'include sia "startup" sia "ia"'),
                 o("a8584698", "startup ia"),
@@ -5881,12 +5883,12 @@
                 }),
                 o("f191a2ba", "impostazioni di ricerca"),
                 o("a068008a", "Attualmente non è possibile caricare le cartelle"),
-                o("f075b0e8", "Modifica cartella"),
-                o("beba2a0e", "Crea una nuova cartella di segnalibri"),
+                o("f075b0e8", "Modifica cartella");
+            o("beba2a0e", "Crea una nuova cartella di segnalibri"),
                 o("e41c9b4f", function (i) {
                     return "Saved to " + i.bookmarkFolderName;
-                });
-            o("h18f86a4", "Elimina cartella"),
+                }),
+                o("h18f86a4", "Elimina cartella"),
                 o("f4ea967a", "La cartella è stata eliminata"),
                 o("b670aa62", "Nome cartella"),
                 o("aece5462", "Il nome della cartella è stato aggiornato correttamente"),
@@ -6887,10 +6889,10 @@
                 o("d70c24d4", "Utile per aiutare i candidati nella ricerca della tua offerta di lavoro."),
                 o("de1c4376", "Range di retribuzione"),
                 o("hf352d42", "Aggiungi un range di retribuzione facoltativo da mostrare ai candidati. Se decidi di non condividerlo, verifica di non violare alcuna legge sulla trasparenza retributiva per l'area in cui stai assumendo."),
-                o("ede7d0a2", "Valuta"),
-                o("b925c18c", "Tipo di retribuzione"),
-                o("j3d242ce", "Range non valido");
-            o("f4d07bd2", "Includi i dettagli facoltativi affinché i candidati possano trovare le offerte più facilmente con una ricerca."),
+                o("ede7d0a2", "Valuta");
+            o("b925c18c", "Tipo di retribuzione"),
+                o("j3d242ce", "Range non valido"),
+                o("f4d07bd2", "Includi i dettagli facoltativi affinché i candidati possano trovare le offerte più facilmente con una ricerca."),
                 o("b8cbb51a", "Riepilogo offerta"),
                 o("bda6881e", "Questa offerta di lavoro è stata importata dal tuo sistema di monitoraggio dei candidati (ATS). Ricorda che solo determinati campi possono essere modificati."),
                 o("b075c68a", "Modifica offerta"),
@@ -7867,9 +7869,7 @@
                 o("d7b8387e", "Se hai già disdetto, non devi fare altro. Il tuo abbonamento scadrà automaticamente al temine del ciclo di fatturazione."),
                 o("f4166d9a", "Vuoi disdire il tuo abbonamento?"),
                 o("b74ff5fc", "Se disdici, il tuo abbonamento scadrà automaticamente al termine del ciclo di fatturazione."),
-                o("ee9efbc8", "Procedi con la disdetta"),
-                o("c5d9c77a", "Sembra ci sia un problemino, ma non preoccuparti perché non è colpa tua. Chiudi questa finestra e riprova."),
-                o("jda53c24", "Puoi disdire il tuo abbonamento tramite App Store di Apple.");
+                o("ee9efbc8", "Procedi con la disdetta");
             function r(i, e) {
                 for (var a = 0; a < e.length; a++) {
                     var o = e[a];
@@ -7908,7 +7908,9 @@
                     c(i, e)
                 );
             }
-            o("g0a7a53e", "Puoi disdire il tuo abbonamento tramite Google Play Store."),
+            o("c5d9c77a", "Sembra ci sia un problemino, ma non preoccuparti perché non è colpa tua. Chiudi questa finestra e riprova."),
+                o("jda53c24", "Puoi disdire il tuo abbonamento tramite App Store di Apple."),
+                o("g0a7a53e", "Puoi disdire il tuo abbonamento tramite Google Play Store."),
                 o("i5f14be7", function (i) {
                     return "È bello rivederti, " + i.displayName;
                 }),
@@ -8905,12 +8907,12 @@
                 }),
                 o("dff1ddd9", function (i) {
                     return "Passa a " + i.advertiserName;
-                }),
-                o("b0b22805", function (i) {
-                    return "Visita " + i.advertiserName;
-                }),
-                o("c67e71aa", "Guarda ora");
-            o("a6ada13e", "Compra ora"),
+                });
+            o("b0b22805", function (i) {
+                return "Visita " + i.advertiserName;
+            }),
+                o("c67e71aa", "Guarda ora"),
+                o("a6ada13e", "Compra ora"),
                 o("j0f12222", "Approfondisci"),
                 o("f569f7c8", "Passa al sito Web"),
                 o("j0c6772a", "Visita il sito Web"),
@@ -10151,6 +10153,12 @@
                             key: "c5f6ee1d",
                             get: function () {
                                 return ["", " "];
+                            },
+                        },
+                        {
+                            key: "b6411d33",
+                            get: function () {
+                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
                             },
                         },
                         {
@@ -13363,4 +13371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.982aa6fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.072b189a.js.map

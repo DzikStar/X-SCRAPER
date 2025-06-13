@@ -3,54 +3,53 @@
     ["ondemand.XChat-f141c2f6"],
     {
         272795: (e, t, n) => {
-            n.d(t, { c: () => o });
-            var a = n(552322),
-                r = n(159603),
-                s = n(332161),
-                l = n(466285),
-                i = n(759746);
-            const o = ({ onClick: e, isSelected: t, suggestion: n }) => (n instanceof r.com.x.dms.NewDmSuggestion.User ? (0, a.jsx)(l.a, { onClick: e, isSelected: t, user: n.user }) : n instanceof r.com.x.dms.NewDmSuggestion.ExistingGroup ? (0, a.jsxs)("div", { className: "flex flex-row w-full gap-2 p-2 items-center hover:bg-gray-50 cursor-pointer rounded-lg", onClick: e, children: [(0, a.jsx)(i.M, { avatarSize: "large", users: n.otherUsers.asJsReadonlyArrayView(), isInlineFacepile: !0 }), (0, a.jsxs)("div", { className: "flex-1 flex-col", children: [(0, a.jsx)(s.x, { children: n.title }), (0, a.jsxs)(s.x, { size: "subtext2", color: "gray700", children: [n.numParticipants, " people"] })] })] }, n.id) : (0, a.jsx)(a.Fragment, {}));
-        },
-        466285: (e, t, n) => {
-            n.d(t, { a: () => u });
+            n.d(t, { c: () => c });
             var a = n(552322),
                 r = n(159603),
                 s = n(256958),
-                l = n(589259),
-                i = n(242782),
-                o = n(350311),
-                c = n(336984);
-            const u = ({ onClick: e, isSelected: t, isAlreadyParticipant: n, user: u }) => {
-                const d = n || !!u.cannotMessageReason;
-                return (0, a.jsxs)(
-                    "div",
-                    {
-                        className: "flex flex-row w-full gap-3 p-2 items-center rounded-lg " + (d ? "opacity-20" : "hover:bg-gray-50 cursor-pointer"),
-                        onClick: () => {
-                            e();
-                            const t = ((e) => {
-                                switch (e) {
-                                    case r.com.x.models.dm.CannotMessageReason.NO_PUBLIC_KEY:
-                                        return "This account must set up their PIN before you're able to message them.";
-                                    case r.com.x.models.dm.CannotMessageReason.NO_PERMISSION:
-                                        return "Sorry! You cannot message this account.";
-                                }
-                                return null;
-                            })(u.cannotMessageReason);
-                            t && (0, s.Am)(t);
-                        },
-                        "aria-disabled": d,
-                        children: [(0, a.jsx)(o.s, { url: u.profileImageUrl, size: "xLarge" }), (0, a.jsx)("div", { className: "flex-1", children: (0, a.jsx)(l.R, { name: u.displayName, screenName: u.screenName, badges: (0, c.r)(u), isStacked: !0 }) }), t && (0, a.jsx)("div", { className: "justify-self-end", children: (0, a.jsx)(i.Z, { className: "text-blue-500" }) })],
-                    },
-                    u.screenName,
-                );
-            };
+                l = n(332161),
+                i = n(466285),
+                o = n(759746);
+            const c = ({ onClick: e, isSelected: t, suggestion: n }) =>
+                    n instanceof r.com.x.dms.NewDmSuggestion.User || n instanceof r.com.x.dms.addparticipants.AddParticipantSuggestion
+                        ? (0, a.jsx)(i.a, {
+                              onClick: () => {
+                                  e();
+                                  const t = u(n.user.cannotMessageReason);
+                                  t && (0, s.Am)(t);
+                              },
+                              isSelected: t,
+                              user: n.user,
+                              disabled: (n instanceof r.com.x.dms.addparticipants.AddParticipantSuggestion && n.alreadyParticipant) || !!n.user.cannotMessageReason,
+                          })
+                        : n instanceof r.com.x.dms.NewDmSuggestion.ExistingGroup
+                          ? (0, a.jsxs)("div", { className: "flex flex-row w-full gap-2 p-2 items-center hover:bg-gray-50 cursor-pointer rounded-lg", onClick: e, children: [(0, a.jsx)(o.M, { avatarSize: "large", users: n.otherUsers.asJsReadonlyArrayView(), isInlineFacepile: !0 }), (0, a.jsxs)("div", { className: "flex-1 flex-col", children: [(0, a.jsx)(l.x, { children: n.title }), (0, a.jsxs)(l.x, { size: "subtext2", color: "gray700", children: [n.numParticipants, " people"] })] })] }, n.id)
+                          : (0, a.jsx)(a.Fragment, {}),
+                u = (e) => {
+                    switch (e) {
+                        case r.com.x.models.dm.CannotMessageReason.NO_PUBLIC_KEY:
+                            return "This account must set up their PIN before you're able to message them.";
+                        case r.com.x.models.dm.CannotMessageReason.NO_PERMISSION:
+                            return "Sorry! You cannot message this account.";
+                    }
+                    return null;
+                };
+        },
+        466285: (e, t, n) => {
+            n.d(t, { a: () => c });
+            var a = n(552322),
+                r = n(242782),
+                s = n(57478),
+                l = n(31674),
+                i = n(350311),
+                o = n(336984);
+            const c = ({ onClick: e, isSelected: t, disabled: n, user: c, className: u }) => (0, a.jsxs)("div", { className: (0, l.cn)("flex flex-row w-full gap-3 p-2 items-center rounded-lg", n ? "opacity-20" : "hover:bg-gray-50 cursor-pointer", u), onClick: e, "aria-disabled": n, children: [(0, a.jsx)(i.s, { url: c.profileImageUrl, size: "xLarge" }), (0, a.jsx)("div", { className: "flex-1", children: (0, a.jsx)(s.R, { name: c.displayName, screenName: c.screenName, badges: (0, o.r)(c), isStacked: !0 }) }), t && (0, a.jsx)("div", { className: "justify-self-end", children: (0, a.jsx)(r.Z, { className: "text-blue-500" }) })] }, c.screenName);
         },
         620134: (e, t, n) => {
             n.d(t, { w: () => i });
             var a = n(552322),
                 r = n(350311),
-                s = n(589259),
+                s = n(57478),
                 l = n(887491);
             const i = ({ name: e, avatarUrl: t, onRemove: n }) => (0, a.jsxs)("div", { className: "flex items-center rounded-full px-2 py-1 gap-1.5 bg-gray-50 hover:bg-mix-text border border-gray-200 max-w-fit cursor-pointer", onClick: n, children: [(0, a.jsx)(r.s, { url: t, size: "small" }), (0, a.jsx)(s.R, { name: e, size: "subtext1" }), (0, a.jsx)(l.Z, { className: "size-4" })] });
         },
@@ -63,13 +62,13 @@
             }
         },
         157114: (e, t, n) => {
-            n.d(t, { K: () => p });
+            n.d(t, { K: () => f });
             var a = n(552322),
                 r = n(322506),
                 s = n(378364),
-                l = n(589259),
+                l = n(57478),
                 i = n(253511),
-                o = n(983955),
+                o = n(123010),
                 c = n(31674),
                 u = n(472275),
                 d = n(840489),
@@ -91,7 +90,7 @@
                                       },
                                       onMouseDown: (e) => e.stopPropagation(),
                                       onTouchStart: (e) => e.stopPropagation(),
-                                      children: (0, a.jsx)(f, { mediaItem: i, gridItem: !1 }),
+                                      children: (0, a.jsx)(p, { mediaItem: i, gridItem: !1 }),
                                   }),
                                   (0, a.jsx)(u.e, {
                                       mediaItems: e,
@@ -140,7 +139,7 @@
                                         onMouseDown: (e) => e.stopPropagation(),
                                         onTouchStart: (e) => e.stopPropagation(),
                                         style: { ...(o && 0 === t ? { gridRow: "span 2" } : void 0) },
-                                        children: (0, a.jsx)(f, { mediaItem: e, gridItem: !0, cornerClass: d(t) }),
+                                        children: (0, a.jsx)(p, { mediaItem: e, gridItem: !0, cornerClass: d(t) }),
                                     },
                                     `media-${e.src}-${t}`,
                                 ),
@@ -157,15 +156,15 @@
                     ],
                 });
             }
-            function f({ mediaItem: e, gridItem: t = !1, cornerClass: n }) {
+            function p({ mediaItem: e, gridItem: t = !1, cornerClass: n }) {
                 if (!e) return null;
                 const r = "video" === e.type,
                     s = "animated_gif" === e.type;
                 return (0, a.jsx)("div", { className: (0, d.Z)("relative overflow-hidden", t ? (0, d.Z)("w-full h-full", n) : "w-full h-full flex-shrink-0"), children: r || s ? (0, a.jsx)("video", { src: e.src, autoPlay: !0, muted: !0, loop: !0, playsInline: !0, className: (0, d.Z)("w-full h-full object-cover") }) : (0, a.jsx)("img", { src: e.previewImage, alt: "Media content", className: (0, d.Z)("w-full h-full object-cover") }) });
             }
-            function p({ post: e, url: t, className: n }) {
+            function f({ post: e, url: t, className: n }) {
                 const u = e.post;
-                return (0, a.jsxs)(r.r, { href: t, target: "_blank", className: (0, c.cn)("flex flex-col gap-2 h-full w-full border border-gray-200 py-2 px-4 cursor-pointer hover:bg-gray-50/50 transition-colors duration-100", n), children: [(0, a.jsxs)("div", { className: "flex gap-2 items-center", children: [(0, a.jsx)(s.q, { screenName: u.author.screenName, size: "small", url: u.author.profileImageUrl, withLink: !1, shape: u.author.profileImageShape, className: "size-5 shrink-0" }), (0, a.jsxs)("div", { className: "flex items-center gap-1 w-full", children: [(0, a.jsx)(l.R, { badges: u.author.badges, name: u.author.name, size: "subtext1", withLink: !1, screenNameColor: "gray800", screenName: u.author.screenName, isStacked: !1 }), (0, a.jsx)("div", { className: "shrink-0 size-0.5 bg-text/40 rounded-full" }), (0, a.jsx)("div", { className: "shrink-0", children: (0, a.jsx)(i.E, { timestamp: u.createdAt, size: "subtext1", color: "gray800" }) })] })] }), (0, a.jsx)(o.W, { text: u.text, displayTextRange: u.displayTextRange, entities: u.entities }), u.media && u.media.length > 0 && (0, a.jsx)("div", { className: "pb-2", children: (0, a.jsx)(g, { mediaItems: u.media }) })] });
+                return (0, a.jsxs)(r.r, { href: t, target: "_blank", className: (0, c.cn)("flex flex-col gap-2 h-full w-full max-w-[500px] border border-gray-200 py-2 px-4 cursor-pointer hover:bg-gray-50/50 transition-colors duration-100", n), children: [(0, a.jsxs)("div", { className: "flex gap-2 items-center", children: [(0, a.jsx)(s.q, { screenName: u.author.screenName, size: "small", url: u.author.profileImageUrl, withLink: !1, shape: u.author.profileImageShape, className: "size-5 shrink-0" }), (0, a.jsxs)("div", { className: "flex items-center gap-1 w-full", children: [(0, a.jsx)(l.R, { badges: u.author.badges, name: u.author.name, size: "subtext1", withLink: !1, screenNameColor: "gray800", screenName: u.author.screenName, isStacked: !1 }), (0, a.jsx)("div", { className: "shrink-0 size-0.5 bg-text/40 rounded-full" }), (0, a.jsx)("div", { className: "shrink-0", children: (0, a.jsx)(i.E, { timestamp: u.createdAt, size: "subtext1", color: "gray800" }) })] })] }), (0, a.jsx)(o.W, { text: u.text, displayTextRange: u.displayTextRange, entities: u.entities }), u.media && u.media.length > 0 && (0, a.jsx)("div", { className: "pb-2", children: (0, a.jsx)(g, { mediaItems: u.media }) })] });
             }
         },
         537335: (e, t, n) => {
@@ -225,11 +224,11 @@
                 d = n(264531),
                 m = n(718278),
                 g = n(664147),
-                f = n(173399);
-            const p = () =>
+                p = n(173399);
+            const f = () =>
                     (0, a.jsx)(l.z, {
                         onClick: () => {
-                            (0, f.O)()
+                            (0, p.O)()
                                 .then(() => {
                                     location.reload();
                                 })
@@ -239,7 +238,7 @@
                     }),
                 h = () => (0, a.jsx)(l.z, { onClick: () => window.dispatchEvent(new Event("xchat_database_backup_event")), children: "Backup" });
             function y() {
-                return (0, a.jsxs)("div", { className: "flex flex-col gap-1 w-full", children: [(0, a.jsx)(c.x, { children: "Please close all other tabs with XChat before hitting Reset" }), (0, a.jsxs)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: [(0, a.jsx)(p, {}), (0, a.jsx)(m.o, {})] }), (0, a.jsx)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: (0, a.jsx)(g.i, {}) }), (0, a.jsx)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: (0, a.jsx)(h, {}) })] });
+                return (0, a.jsxs)("div", { className: "flex flex-col gap-1 w-full", children: [(0, a.jsx)(c.x, { children: "Please close all other tabs with XChat before hitting Reset" }), (0, a.jsxs)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: [(0, a.jsx)(f, {}), (0, a.jsx)(m.o, {})] }), (0, a.jsx)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: (0, a.jsx)(g.i, {}) }), (0, a.jsx)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: (0, a.jsx)(h, {}) })] });
             }
             const x = () => {
                 const [e, t] = (0, u.useState)(!1),
@@ -308,8 +307,8 @@
                 d = n(727071),
                 m = n(768246),
                 g = n(264531),
-                f = n(155369),
-                p = n(173399);
+                p = n(155369),
+                f = n(173399);
             const h = ({ children: e, settings: t }) => {
                 const n = (0, o.useLocation)(),
                     h = (0, o.useHistory)(),
@@ -322,9 +321,9 @@
                 const b = (0, i.useMemo)(() => ({ push: (e, t) => h.push(e, t) }), [h]);
                 return (
                     (0, i.useEffect)(() => {
-                        (0, p.z)();
+                        (0, f.z)();
                     }, []),
-                    (0, a.jsx)(c.S, { message: w("Something went wrong while loading Chat. Please try again later."), children: (0, a.jsx)(u.p, { router: b, children: (0, a.jsx)(r.ng, { children: (0, a.jsx)(d.d, { useParams: () => v, children: (0, a.jsx)(m.x, { searchParams: y, children: (0, a.jsx)(g.mp, { settings: t, children: (0, a.jsxs)(f.U, { children: [e, (0, a.jsx)(l.x, {})] }) }) }) }) }) }) })
+                    (0, a.jsx)(c.S, { message: w("Something went wrong while loading Chat. Please try again later."), children: (0, a.jsx)(u.p, { router: b, children: (0, a.jsx)(r.ng, { children: (0, a.jsx)(d.d, { useParams: () => v, children: (0, a.jsx)(m.x, { searchParams: y, children: (0, a.jsx)(g.mp, { settings: t, children: (0, a.jsxs)(p.U, { children: [e, (0, a.jsx)(l.x, {})] }) }) }) }) }) }) })
                 );
             };
         },
@@ -341,8 +340,8 @@
                 d = n(455091),
                 m = n(788452),
                 g = n(305399),
-                f = n(671889),
-                p = n(31674);
+                p = n(671889),
+                f = n(31674);
             function h({ value: e, onChange: t, digitVisible: n = !1, className: r, length: s = 4, autoFocus: i = !1 }) {
                 const o = (0, l.useRef)([]),
                     u = (0, l.useRef)(!1);
@@ -389,7 +388,7 @@
                         [e, t, s],
                     );
                 return (0, a.jsx)("div", {
-                    className: (0, p.cn)("flex gap-3", r),
+                    className: (0, f.cn)("flex gap-3", r),
                     children: Array.from({ length: s }).map((t, r) =>
                         (0, a.jsxs)(
                             "div",
@@ -407,7 +406,7 @@
                                         value: "",
                                         onChange: (e) => m(e, r),
                                         onKeyDown: (e) => d(e, r),
-                                        className: (0, p.cn)("absolute inset-0 w-full h-full text-transparent caret-primary bg-transparent border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors z-10 text-center", e[r] && "text-left pl-7"),
+                                        className: (0, f.cn)("absolute inset-0 w-full h-full text-transparent caret-primary bg-transparent border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors z-10 text-center", e[r] && "text-left pl-7"),
                                         placeholder: " ",
                                     }),
                                     (0, a.jsx)("div", { className: "absolute inset-0 flex items-center justify-center z-0", children: n ? (0, a.jsx)(c.x, { size: "title4", weight: "bold", children: e[r] || "" }) : (0, a.jsx)("div", { className: "flex items-center justify-center w-full", children: e[r] ? (0, a.jsx)("div", { className: "h-3 w-3 rounded-full bg-text" }) : null }) }),
@@ -430,8 +429,8 @@
                     i.current && i.current.focus();
                 }, []);
                 return r.isProcessing
-                    ? (0, a.jsx)(f.g, { className: "flex w-full min-h-dvh md:h-dvh items-center", children: (0, a.jsx)(o.P, {}) })
-                    : (0, a.jsxs)(f.g, {
+                    ? (0, a.jsx)(p.g, { className: "flex w-full min-h-dvh md:h-dvh items-center", children: (0, a.jsx)(o.P, {}) })
+                    : (0, a.jsxs)(p.g, {
                           className: `flex flex-col min-h-dvh md:h-dvh w-full ${n ? "items-start py-12" : "items-center justify-center py-0"} flex-grow gap-4  px-12`,
                           children: [
                               (0, a.jsx)(m.Z, { width: 76, height: 76, className: "rotate-[-8.29deg]" }),
@@ -616,7 +615,7 @@
                 };
         },
         686524: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => p });
+            n.r(t), n.d(t, { default: () => f });
             const a = {
                 fragment: {
                     argumentDefinitions: (r = [{ defaultValue: null, kind: "LocalArgument", name: "id" }]),
@@ -748,7 +747,7 @@
                                                                                     storageKey: null,
                                                                                 }),
                                                                                 (g = { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null }),
-                                                                                (f = {
+                                                                                (p = {
                                                                                     alias: null,
                                                                                     args: null,
                                                                                     concreteType: "HighlightedUserLabelResponse",
@@ -802,12 +801,12 @@
                     abstractKey: null,
                 },
                 kind: "Request",
-                operation: { argumentDefinitions: r, kind: "Operation", name: "fetchPostQuery", selections: [{ alias: null, args: s, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_result_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [l, { kind: "InlineFragment", selections: [o, c, u, { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [l, { kind: "InlineFragment", selections: [u, d, m, g, f, c], type: "User", abstractKey: null }], storageKey: null }, c], storageKey: null }], storageKey: null }], type: "Tweet", abstractKey: null }], storageKey: null }, c], storageKey: null }] },
+                operation: { argumentDefinitions: r, kind: "Operation", name: "fetchPostQuery", selections: [{ alias: null, args: s, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_result_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [l, { kind: "InlineFragment", selections: [o, c, u, { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [l, { kind: "InlineFragment", selections: [u, d, m, g, p, c], type: "User", abstractKey: null }], storageKey: null }, c], storageKey: null }], storageKey: null }], type: "Tweet", abstractKey: null }], storageKey: null }, c], storageKey: null }] },
                 params: { id: "BrdmgaNbXWZa4D4KLY-hCA", metadata: {}, name: "fetchPostQuery", operationKind: "query", text: null },
             };
-            var r, s, l, i, o, c, u, d, m, g, f;
+            var r, s, l, i, o, c, u, d, m, g, p;
             a.hash = "6b931e47d1ab528a8de40a76cc4aef9e";
-            const p = a;
+            const f = a;
         },
         84504: (e, t, n) => {
             n.d(t, { n5: () => r });
@@ -1014,7 +1013,7 @@
             };
         },
         595117: (e, t, n) => {
-            n.d(t, { $: () => s });
+            n.d(t, { $: () => s, F: () => l });
             const a = "temp-files";
             async function r(e) {
                 const t = await navigator.storage.getDirectory(),
@@ -1031,6 +1030,30 @@
                     t();
                     n(await r(e));
                 } catch (e) {}
+            }
+            async function l(e) {
+                return new Promise((t) => {
+                    const n = new Image(),
+                        a = document.createElement("canvas"),
+                        r = a.getContext("2d");
+                    (n.onload = () => {
+                        const s = Math.min(n.width, n.height);
+                        (a.width = s),
+                            (a.height = s),
+                            r?.drawImage(n, (n.width - s) / 2, (n.height - s) / 2, s, s, 0, 0, s, s),
+                            a.toBlob(
+                                (n) => {
+                                    if (n) {
+                                        const a = new File([n], e.name, { type: e.type });
+                                        t(a);
+                                    }
+                                },
+                                "image/jpeg",
+                                0.8,
+                            );
+                    }),
+                        (n.src = URL.createObjectURL(e));
+                });
             }
         },
         950849: (e, t, n) => {
@@ -1157,4 +1180,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f141c2f6.b09a8cca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f141c2f6.aa721c4a.js.map

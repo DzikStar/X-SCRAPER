@@ -71,7 +71,7 @@
             const d = (0, s.ZP)(c(l));
         },
         376293: (e, t, o) => {
-            o.d(t, { $f: () => C, KV: () => b, LI: () => x, SC: () => w, Vt: () => v, ed: () => P, op: () => Z });
+            o.d(t, { $f: () => C, KV: () => k, LI: () => x, SC: () => w, Vt: () => v, ed: () => P, op: () => Z });
             var n = o(202784),
                 s = o(190286),
                 r = o(111677),
@@ -86,8 +86,8 @@
                 m = i().a6450e84,
                 f = i().g353ad73,
                 h = i().ad00a739,
-                b = i().a9fd20be,
-                k = i().j546fb79,
+                k = i().a9fd20be,
+                b = i().j546fb79,
                 y = i().c9623eeb,
                 v = i().e133be4e,
                 T = i().he43bca4,
@@ -119,7 +119,7 @@
                 I = (e) => (e ? c.default : a.default),
                 _ = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
                 S = (e) => (e.blocking ? y({ screenName: e.screen_name }) : g({ screenName: e.screen_name })),
-                x = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: k({ screenName: e }), label: v, text: t ? E : T }))(e.screen_name, t) : C(e.screen_name, t)),
+                x = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: b({ screenName: e }), label: v, text: t ? E : T }))(e.screen_name, t) : C(e.screen_name, t)),
                 P = ({ confirmation: e, handleConfirm: t, onClose: o }) => {
                     const { confirmButtonType: r, headline: i, label: a, text: c } = e;
                     return n.createElement(s.Z, { cancelButtonLabel: u, confirmButtonLabel: a, confirmButtonType: r, headline: i, onCancel: o, onConfirm: t, text: c });
@@ -235,11 +235,11 @@
             const m = () => (0, g.Z)({ timelineId: "video", network: { getEndpoint: (e) => e.withEndpoint(u.Z).fetchMediaTabVideoMixer, getEndpointParams: ({ count: e, cursor: t }) => ({ count: e, cursor: "string" == typeof t ? t : void 0 }) }, formatResponse: p.Z, context: "FETCH_MEDIA_TAB_VIDEO_TIMELINE", perfKey: "video" });
             var f = o(769471),
                 h = o(674530),
-                b = o(367879),
-                k = o(335632),
+                k = o(367879),
+                b = o(335632),
                 y = o(962741),
                 v = o(742742);
-            const T = (0, f.Z)({}, (0, k.G)({}), { [y.ZP.TimelineModule]: { handlers: { [v.Z.Carousel]: (0, b.Z)({ moduleDisplayType: h.m.Carousel, divider: { top: !1, bottom: !1 } }), [v.Z.CompactCarousel]: (0, b.Z)({ moduleDisplayType: h.m.CompactCarousel, divider: { top: !1, bottom: !1 } }) } } }),
+            const T = (0, f.Z)({}, (0, b.G)({}), { [y.ZP.TimelineModule]: { handlers: { [v.Z.Carousel]: (0, k.Z)({ moduleDisplayType: h.m.Carousel, divider: { top: !1, bottom: !1 } }), [v.Z.CompactCarousel]: (0, k.Z)({ moduleDisplayType: h.m.CompactCarousel, divider: { top: !1, bottom: !1 } }) } } }),
                 E = { page: "media" };
             function w({ history: e }) {
                 const t = !(0, l.ZP)(),
@@ -296,19 +296,6 @@
             a.metadata = { width: 24, height: 24 };
             const c = a;
         },
-        314948: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => c });
-            var n = o(202784),
-                s = o(890601),
-                r = o(783427),
-                i = o(347101);
-            const a = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 3.75c-4.55 0-8.25 3.69-8.25 8.25 0 1.92.66 3.68 1.75 5.08l2.8-2.79 1.41 1.42-2.79 2.79c1.4 1.1 3.16 1.75 5.08 1.75 4.56 0 8.25-3.69 8.25-8.25 0-1.92-.65-3.68-1.75-5.08l-2.79 2.79-1.41-1.42 2.79-2.79C15.68 4.4 13.92 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12z" })) }, { writingDirection: t });
-            };
-            a.metadata = { width: 24, height: 24 };
-            const c = a;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.VideoScreen.31bb2f0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.VideoScreen.6febd02a.js.map

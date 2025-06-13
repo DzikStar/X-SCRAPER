@@ -1340,12 +1340,15 @@
                 s("j2198c98", "Ocultar post traduzido"),
                 s("d4d35bea", "Traduzindo..."),
                 s("i7ac410e", "Mostrar original"),
-                s("c67f09e8", " Mostrar tradução"),
+                s("c67f09e8", "Mostrar tradução"),
                 s("e0f81ff3", "Tradução:"),
                 s("j2862695", function (e) {
                     return "Traduzido do " + e.originLanguage + " por";
                 }),
                 s("b7cb4fab", "Traduzido por"),
+                s("e0bffbf8", "About automatic translation"),
+                s("e839db3a", "Dispensar"),
+                s("a15585b4", "Language Settings"),
                 s("d4c339b9", function (e) {
                     return "Post de " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1722,7 +1725,6 @@
                 s("bf994ab2", "Somente você"),
                 s("e7b4b30a", "Somente contas que você mencionou"),
                 s("ca6500a8", "Desabilitar links externos em respostas"),
-                s("e839db3a", "Dispensar"),
                 s("c8a98928", "Imagem promocional"),
                 s("f5b3dc1e", "Talvez mais tarde"),
                 s("ae0c5fbe", "Erro ao alterar quem pode responder"),
@@ -1919,10 +1921,10 @@
                 s("da8ac57c", "Editar legenda"),
                 s("a8fdd09c", "Publicar Artigo"),
                 s("d8047cc8", "Publicar"),
-                s("ff7ddca2", "Seu Artigo será exibido como post depois da publicação. Além disso, encontre sob a guia Artigos no seu perfil."),
-                s("ef34d7be", "Os controles de audiência e resposta não são editados depois de o Artigo ser publicado."),
-                s("e52d4998", "Escolha sua audiência");
-            s("d7985b24", "Escolha quem pode responder a este Artigo"),
+                s("ff7ddca2", "Seu Artigo será exibido como post depois da publicação. Além disso, encontre sob a guia Artigos no seu perfil.");
+            s("ef34d7be", "Os controles de audiência e resposta não são editados depois de o Artigo ser publicado."),
+                s("e52d4998", "Escolha sua audiência"),
+                s("d7985b24", "Escolha quem pode responder a este Artigo"),
                 s("b5660338", "Visualização da Timeline"),
                 s("hff1b97a", "Somente Inscritos podem responder."),
                 s("a330771e", "Copiar link para a área de transferência"),
@@ -2975,10 +2977,10 @@
                 s("jb0a4c36", "Blog"),
                 s("ce6d095a", "Carreiras"),
                 s("e0adec82", "Recursos da marca"),
-                s("df1b7550", "Marketing"),
-                s("he258678", "X para Empresas"),
-                s("c6f58084", "Desenvolvedores");
-            s("d83f18d2", "Diretório"),
+                s("df1b7550", "Marketing");
+            s("he258678", "X para Empresas"),
+                s("c6f58084", "Desenvolvedores"),
+                s("d83f18d2", "Diretório"),
                 s("hc5aa17c", "Baixar o aplicativo X"),
                 s("j0693948", "Baixar o aplicativo Grok"),
                 s("fce9ecce", "Vídeos sugeridos"),
@@ -3887,14 +3889,14 @@
                 s("caa8d928", "Ativar/desativar supressão de ruído"),
                 s("b5d88f0c", "Somente funcionários"),
                 s("c855ab8e", "Exclusivo para Assinantes"),
-                s("ddeb0a3c", "Aqui está a Comunidade. Gosta das pessoas? Dê uma olhada."),
-                s("e111f531", function (e) {
-                    return e.count + " sintoniz" + r(e.count, "ou", "aram");
-                }),
+                s("ddeb0a3c", "Aqui está a Comunidade. Gosta das pessoas? Dê uma olhada.");
+            s("e111f531", function (e) {
+                return e.count + " sintoniz" + r(e.count, "ou", "aram");
+            }),
                 s("cbef820f", function (e) {
                     return e.screenName + " repostou a transmissão!";
-                });
-            s("e3275464", "Enviar"),
+                }),
+                s("e3275464", "Enviar"),
                 s("cededf2a", "Host"),
                 s("i2caef48", "Co-hosts"),
                 s("j245c654", "Oradores"),
@@ -4927,10 +4929,10 @@
                 s("d9508ab0", "visualizações"),
                 s("d9f9dec0", "Ver espaço"),
                 s("h0c1f37a", "Ver estatísticas do espaço"),
-                s("e41fffbc", "O tempo total de exibição dos seus vídeos."),
-                s("if2909ba", "Tempo de exibição"),
-                s("i0e5bf4c", "Seus vídeos");
-            s("ed99baea", "Acesso Beta Antecipado"),
+                s("e41fffbc", "O tempo total de exibição dos seus vídeos.");
+            s("if2909ba", "Tempo de exibição"),
+                s("i0e5bf4c", "Seus vídeos"),
+                s("ed99baea", "Acesso Beta Antecipado"),
                 s("gf898b70", "Busca Avançada"),
                 s("d2a43a7a", 'contém tanto "ai" quanto "startup"'),
                 s("a8584698", "ai startup"),
@@ -5881,12 +5883,12 @@
                 }),
                 s("f191a2ba", "configurações de busca"),
                 s("a068008a", "As pastas não estão carregando no momento."),
-                s("f075b0e8", "Editar pasta"),
-                s("beba2a0e", "Criar uma nova pasta de itens salvos"),
+                s("f075b0e8", "Editar pasta");
+            s("beba2a0e", "Criar uma nova pasta de itens salvos"),
                 s("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
-                });
-            s("h18f86a4", "Excluir pasta"),
+                }),
+                s("h18f86a4", "Excluir pasta"),
                 s("f4ea967a", "A pasta foi excluída"),
                 s("b670aa62", "Nome da pasta"),
                 s("aece5462", "O nome da pasta foi atualizado"),
@@ -6887,10 +6889,10 @@
                 s("d70c24d4", "Usado para ajudar os candidatos a buscarem sua vaga."),
                 s("de1c4376", "Faixa salarial"),
                 s("hf352d42", "Adicione uma faixa salarial opcional que será visível aos candidatos. Se optar por não fazer isso, observe quaisquer leis de transparência sobre pagamentos do local onde estiver contratando."),
-                s("ede7d0a2", "Moeda"),
-                s("b925c18c", "Tipo de salário"),
-                s("j3d242ce", "Faixa inválida");
-            s("f4d07bd2", "Inclua detalhes opcionais para facilitar que os candidatos visualizem suas vagas mediante busca."),
+                s("ede7d0a2", "Moeda");
+            s("b925c18c", "Tipo de salário"),
+                s("j3d242ce", "Faixa inválida"),
+                s("f4d07bd2", "Inclua detalhes opcionais para facilitar que os candidatos visualizem suas vagas mediante busca."),
                 s("b8cbb51a", "Resumo da vaga"),
                 s("bda6881e", "Esta vaga foi importada de seu Sistema de Rastreamento de Candidatos (ATS). Observe que somente campos específicos podem ser modificados."),
                 s("b075c68a", "Editar vaga"),
@@ -7867,9 +7869,7 @@
                 s("d7b8387e", "Se você já tiver cancelado, não há mais nada a fazer. Sua Assinatura vai expirar automaticamente ao final do ciclo de faturamento."),
                 s("f4166d9a", "Deseja cancelar a Assinatura?"),
                 s("b74ff5fc", "Se você cancelar, sua Assinatura vai expirar automaticamente ao final do ciclo de faturamento."),
-                s("ee9efbc8", "Continue para fazer o cancelamento"),
-                s("c5d9c77a", "Parece que houve algum problema. Mas não se preocupe, não é sua culpa. Feche esta janela e tente novamente."),
-                s("jda53c24", "Você pode cancelar a Assinatura pela Apple App Store.");
+                s("ee9efbc8", "Continue para fazer o cancelamento");
             function n(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var s = a[o];
@@ -7908,7 +7908,9 @@
                     t(e, a)
                 );
             }
-            s("g0a7a53e", "Você pode cancelar a Assinatura pela Google Play Store."),
+            s("c5d9c77a", "Parece que houve algum problema. Mas não se preocupe, não é sua culpa. Feche esta janela e tente novamente."),
+                s("jda53c24", "Você pode cancelar a Assinatura pela Apple App Store."),
+                s("g0a7a53e", "Você pode cancelar a Assinatura pela Google Play Store."),
                 s("i5f14be7", function (e) {
                     return "Bem-vindo novamente, " + e.displayName;
                 }),
@@ -8905,12 +8907,12 @@
                 }),
                 s("dff1ddd9", function (e) {
                     return "Vá para " + e.advertiserName;
-                }),
-                s("b0b22805", function (e) {
-                    return "Visite " + e.advertiserName;
-                }),
-                s("c67e71aa", "Assista agora");
-            s("a6ada13e", "Comprar agora"),
+                });
+            s("b0b22805", function (e) {
+                return "Visite " + e.advertiserName;
+            }),
+                s("c67e71aa", "Assista agora"),
+                s("a6ada13e", "Comprar agora"),
                 s("j0f12222", "Ver mais"),
                 s("f569f7c8", "Vá para o website"),
                 s("j0c6772a", "Visite o website"),
@@ -10151,6 +10153,12 @@
                             key: "c5f6ee1d",
                             get: function () {
                                 return ["", " "];
+                            },
+                        },
+                        {
+                            key: "b6411d33",
+                            get: function () {
+                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
                             },
                         },
                         {
@@ -13363,4 +13371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.46ceb86a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.adf17d1a.js.map

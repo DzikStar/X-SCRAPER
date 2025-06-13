@@ -1345,6 +1345,9 @@
                     return " " + e.originLanguage + " hizkuntzatik ";
                 }),
                 o("b7cb4fab", ""),
+                o("e0bffbf8", "About automatic translation"),
+                o("e839db3a", "Baztertu"),
+                o("a15585b4", "Language Settings"),
                 o("d4c339b9", function (e) {
                     return "Post from " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1721,7 +1724,6 @@
                 o("bf994ab2", "Zuk soilik"),
                 o("e7b4b30a", "Only accounts you mentioned"),
                 o("ca6500a8", "Disable external links in replies"),
-                o("e839db3a", "Baztertu"),
                 o("c8a98928", "Promotional image"),
                 o("f5b3dc1e", "Agian geroago"),
                 o("ae0c5fbe", "Errore bat gertatu da nork erantzun dezakeen aldatzean"),
@@ -1918,10 +1920,10 @@
                 o("da8ac57c", "Edit Caption"),
                 o("a8fdd09c", "Publish Article"),
                 o("d8047cc8", "Argitaratu"),
-                o("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
-                o("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
-                o("e52d4998", "Choose your audience");
-            o("d7985b24", "Choose who can reply to this Article"),
+                o("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile.");
+            o("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
+                o("e52d4998", "Choose your audience"),
+                o("d7985b24", "Choose who can reply to this Article"),
                 o("b5660338", "Timeline preview"),
                 o("hff1b97a", "Only Subscribed can reply."),
                 o("a330771e", "Copy link to your clipboard"),
@@ -2974,10 +2976,10 @@
                 o("jb0a4c36", "Blog"),
                 o("ce6d095a", "Lanbideak"),
                 o("e0adec82", "Markaren baliabideak"),
-                o("df1b7550", "Marketing"),
-                o("he258678", "X for Business"),
-                o("c6f58084", "Developers");
-            o("d83f18d2", "Directory"),
+                o("df1b7550", "Marketing");
+            o("he258678", "X for Business"),
+                o("c6f58084", "Developers"),
+                o("d83f18d2", "Directory"),
                 o("hc5aa17c", "Get the X app"),
                 o("j0693948", "Get the Grok app"),
                 o("fce9ecce", "Suggested Videos"),
@@ -3886,14 +3888,14 @@
                 o("caa8d928", "Toggle noise suppression"),
                 o("b5d88f0c", "Employees only"),
                 o("c855ab8e", "Subscribers only"),
-                o("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
-                o("e111f531", function (e) {
-                    return e.count + " sintonizatuta";
-                }),
+                o("ddeb0a3c", "Here’s the Community. Like the people? Take a look.");
+            o("e111f531", function (e) {
+                return e.count + " sintonizatuta";
+            }),
                 o("cbef820f", function (e) {
                     return e.screenName + " reposted the stream!";
-                });
-            o("e3275464", "Bidali"),
+                }),
+                o("e3275464", "Bidali"),
                 o("cededf2a", "Anfitrioia"),
                 o("i2caef48", "Co-hosts"),
                 o("j245c654", "Speakers"),
@@ -4926,10 +4928,10 @@
                 o("d9508ab0", "views"),
                 o("d9f9dec0", "View Space"),
                 o("h0c1f37a", "View Space Analytics"),
-                o("e41fffbc", "The total watch time of your videos."),
-                o("if2909ba", "Watch Time"),
-                o("i0e5bf4c", "Your videos");
-            o("ed99baea", "Early Beta Access"),
+                o("e41fffbc", "The total watch time of your videos.");
+            o("if2909ba", "Watch Time"),
+                o("i0e5bf4c", "Your videos"),
+                o("ed99baea", "Early Beta Access"),
                 o("gf898b70", "Advanced Search"),
                 o("d2a43a7a", 'contains both "ai" and "startup"'),
                 o("a8584698", "ai startup"),
@@ -5880,12 +5882,12 @@
                 }),
                 o("f191a2ba", "Bilaketa-ezarpenak"),
                 o("a068008a", "Folders aren`t loading right now"),
-                o("f075b0e8", "Editatu karpeta"),
-                o("beba2a0e", "Sortu laster-marken karpeta berri bat"),
+                o("f075b0e8", "Editatu karpeta");
+            o("beba2a0e", "Sortu laster-marken karpeta berri bat"),
                 o("e41c9b4f", function (e) {
                     return "Hemen gordeta: " + e.bookmarkFolderName;
-                });
-            o("h18f86a4", "Ezabatu karpeta"),
+                }),
+                o("h18f86a4", "Ezabatu karpeta"),
                 o("f4ea967a", "Karpeta ezabatu da"),
                 o("b670aa62", "Karpetaren izena"),
                 o("aece5462", "Karpeta izena behar bezala eguneratu da"),
@@ -6886,10 +6888,10 @@
                 o("d70c24d4", "Used to help candidates search for your job."),
                 o("de1c4376", "Salary Range"),
                 o("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for."),
-                o("ede7d0a2", "Currency"),
-                o("b925c18c", "Salary Type"),
-                o("j3d242ce", "Invalid range");
-            o("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
+                o("ede7d0a2", "Currency");
+            o("b925c18c", "Salary Type"),
+                o("j3d242ce", "Invalid range"),
+                o("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
                 o("b8cbb51a", "Job Summary"),
                 o("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 o("b075c68a", "Edit job"),
@@ -7866,9 +7868,7 @@
                 o("d7b8387e", "If you’ve already canceled, there’s nothing more to do. Your Subscription will automatically expire at the end of the billing cycle."),
                 o("f4166d9a", "Want to cancel your Subscription?"),
                 o("b74ff5fc", "If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
-                o("ee9efbc8", "Jarraitu uzteko"),
-                o("c5d9c77a", "Itxura txiki bat egon zela dirudi. Ez kezkatu ordea, ez da zure errua. Itxi leiho hau eta saiatu berriro."),
-                o("jda53c24", "You can cancel your Subscription through the Apple App Store.");
+                o("ee9efbc8", "Jarraitu uzteko");
             function n(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var o = a[t];
@@ -7907,7 +7907,9 @@
                     u(e, a)
                 );
             }
-            o("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
+            o("c5d9c77a", "Itxura txiki bat egon zela dirudi. Ez kezkatu ordea, ez da zure errua. Itxi leiho hau eta saiatu berriro."),
+                o("jda53c24", "You can cancel your Subscription through the Apple App Store."),
+                o("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
                 o("i5f14be7", function (e) {
                     return "Welcome back, " + e.displayName;
                 }),
@@ -8904,12 +8906,12 @@
                 }),
                 o("dff1ddd9", function (e) {
                     return "Joan hona: " + e.advertiserName;
-                }),
-                o("b0b22805", function (e) {
-                    return "Bisitatu " + e.advertiserName;
-                }),
-                o("c67e71aa", "Ikusi orain");
-            o("a6ada13e", "Erosi orain"),
+                });
+            o("b0b22805", function (e) {
+                return "Bisitatu " + e.advertiserName;
+            }),
+                o("c67e71aa", "Ikusi orain"),
+                o("a6ada13e", "Erosi orain"),
                 o("j0f12222", "Ikusi gehiago"),
                 o("f569f7c8", "Joan webgunera"),
                 o("j0c6772a", "Bisitatu webgunea"),
@@ -10154,6 +10156,12 @@
                             key: "c5f6ee1d",
                             get: function () {
                                 return ["", " ", " enpresak itzulia"];
+                            },
+                        },
+                        {
+                            key: "b6411d33",
+                            get: function () {
+                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
                             },
                         },
                         {
@@ -13365,4 +13373,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.1d1e86ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.6f4e1a0a.js.map

@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.AccountAutomation"],
+    ["bundle.AccountAutomation", "icons/IconChevronRight-js"],
     {
         200111: (e) => {
             e.exports = { queryId: "_ckHEj05gan2VfNHG6thBA", operationName: "DisableUserAccountLabel", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -14,27 +14,27 @@
                 n = a(202784),
                 r = a(182056),
                 s = a(879113),
-                c = a(392237),
-                l = a(111677),
-                i = a.n(l),
+                l = a(392237),
+                c = a(111677),
+                i = a.n(c),
                 u = a(968478);
             const d = i().aa6e3300,
                 h = ({ retryMessage: e, ...t }, a) => {
-                    const c = r.Z.isOnline();
-                    return n.createElement(s.Z, (0, o.Z)({}, t, { icon: c ? void 0 : n.createElement(u.default, { style: b.icon }), retryMessage: c ? e : d }));
+                    const l = r.Z.isOnline();
+                    return n.createElement(s.Z, (0, o.Z)({}, t, { icon: l ? void 0 : n.createElement(u.default, { style: b.icon }), retryMessage: l ? e : d }));
                 },
-                b = c.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
+                b = l.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
                 m = n.forwardRef(h);
         },
         181617: (e, t, a) => {
             "use strict";
-            a.d(t, { PP: () => w, cs: () => y, ET: () => Z, MB: () => S, iR: () => L });
+            a.d(t, { PP: () => w, cs: () => y, ET: () => Z, MB: () => L, iR: () => S });
             var o = a(424869),
                 n = a.n(o),
                 r = a(163889),
                 s = a(414742),
-                c = a(200111),
-                l = a.n(c),
+                l = a(200111),
+                c = a.n(l),
                 i = a(661490),
                 u = a.n(i),
                 d = a(503768);
@@ -46,7 +46,7 @@
                     const a = t?.disable_user_account_label;
                     return a || (0, r.ZP)("GQL AccountTaxonomy: Failed to load Disable User Account Status", { extra: (0, d.dL)(e) }), (0, s.jB)(e);
                 },
-                m = ({ apiClient: e, featureSwitches: t }) => ({ fetchUserAccountLabel: ({ userId: t }) => e.graphQL(u(), { rest_id: t }, h), disableUserAccountLabel: () => e.graphQL(l(), {}, b) });
+                m = ({ apiClient: e, featureSwitches: t }) => ({ fetchUserAccountLabel: ({ userId: t }) => e.graphQL(u(), { rest_id: t }, h), disableUserAccountLabel: () => e.graphQL(c(), {}, b) });
             var p = a(499627),
                 g = a(917799),
                 E = a(312771);
@@ -75,8 +75,8 @@
                     }
                 },
             });
-            const S = (e) => e[_]?.account_label?.managed_label?.owner_screen_name,
-                L = (e) => e[_]?.account_label?.fetchStatus || E.ZP.NONE,
+            const L = (e) => e[_]?.account_label?.managed_label?.owner_screen_name,
+                S = (e) => e[_]?.account_label?.fetchStatus || E.ZP.NONE,
                 Z = (e) => e[_]?.account_label?.disableStatus || E.ZP.NONE,
                 y =
                     (e) =>
@@ -89,13 +89,13 @@
         },
         82999: (e, t, a) => {
             "use strict";
-            a.r(t), a.d(t, { AccountAutomationScreen: () => W, changeManagingAccountLabel: () => F, default: () => J, setManagingAccountLabel: () => O });
+            a.r(t), a.d(t, { AccountAutomationScreen: () => W, changeManagingAccountLabel: () => B, default: () => J, setManagingAccountLabel: () => R });
             var o = a(202784),
                 n = a(325686),
                 r = a(688715),
                 s = a(731708),
-                c = a(834324),
-                l = a(779610),
+                l = a(834324),
+                c = a(779610),
                 i = a(88307),
                 u = a(420412),
                 d = a(242454),
@@ -109,8 +109,8 @@
                 C = a(290402),
                 f = a(443781),
                 A = a(652904),
-                S = a(293115),
-                L = a(312771),
+                L = a(293115),
+                S = a(312771),
                 Z = a(264922),
                 y = a(668214),
                 w = a(181617),
@@ -122,11 +122,11 @@
                 D = (0, r.ju)("https://help.x.com/using-twitter/automated-account-labels"),
                 T = g().d12d42dc,
                 P = g().ad31b476,
-                B = g().a2981062,
-                F = g().aff4540e,
-                O = g().b8b9d100,
-                v = o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, o.createElement(g().I18NFormatMessage, { $i18n: "d79b6b7b" }, o.createElement(s.ZP, { link: D, size: "subtext2" }, g().f79acef3))),
-                R = g().e0bc51f6,
+                v = g().a2981062,
+                B = g().aff4540e,
+                R = g().b8b9d100,
+                F = o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, o.createElement(g().I18NFormatMessage, { $i18n: "d79b6b7b" }, o.createElement(s.ZP, { link: D, size: "subtext2" }, g().f79acef3))),
+                O = g().e0bc51f6,
                 M = g().i9028824,
                 z = g().b92190c2,
                 I = g().fb03b39a,
@@ -151,7 +151,7 @@
                             const { calloutIsError: e, calloutLabel: t } = this.state,
                                 a = e ? E.default : _.default,
                                 r = e ? "danger" : "success";
-                            return o.createElement(n.Z, { style: $.inlineCallout }, o.createElement(c.Z, { Icon: a, headline: t || "", onClose: this._handleHideCallout, type: r }));
+                            return o.createElement(n.Z, { style: $.inlineCallout }, o.createElement(l.Z, { Icon: a, headline: t || "", onClose: this._handleHideCallout, type: r }));
                         }),
                         (this._handleFetchUserAccountLabel = () => {
                             const { fetchUserAccountLabel: e, user: t } = this.props,
@@ -165,8 +165,8 @@
                         (this._handleToggleDisableConfirmation = () => {
                             this.setState({ showDisableConfirmation: !this.state.showDisableConfirmation });
                         }),
-                        (this._renderUnassignedManagingAccountView = () => o.createElement(n.Z, null, o.createElement(l.Z, { description: v, label: O, link: q }), this.state.showCallout && this._renderCallout())),
-                        (this._renderAssignedManagingAccountView = () => o.createElement(n.Z, null, o.createElement(i.Z, { label: B, subtext: this.props.managingAccount || "", withBottomBorder: !1 }), o.createElement(l.Z, { label: F, link: q }), this.state.showCallout && this._renderCallout(), o.createElement(u.Z, null), o.createElement(d.Z, { color: "red500", label: R, onPress: this._handleToggleDisableConfirmation }))),
+                        (this._renderUnassignedManagingAccountView = () => o.createElement(n.Z, null, o.createElement(c.Z, { description: F, label: R, link: q }), this.state.showCallout && this._renderCallout())),
+                        (this._renderAssignedManagingAccountView = () => o.createElement(n.Z, null, o.createElement(i.Z, { label: v, subtext: this.props.managingAccount || "", withBottomBorder: !1 }), o.createElement(c.Z, { label: B, link: q }), this.state.showCallout && this._renderCallout(), o.createElement(u.Z, null), o.createElement(d.Z, { color: "red500", label: O, onPress: this._handleToggleDisableConfirmation }))),
                         (this._renderDisconnectConfirmation = () => o.createElement(h.Z, { actionLabel: G, graphicDisplayMode: "none", headline: V, onAction: this._handleDisableUserAccountLabel, onClose: this._handleToggleDisableConfirmation, onSecondaryAction: this._handleToggleDisableConfirmation, secondaryActionLabel: Q, subtext: j, useBrandedActionButtons: !0, withCloseButton: !0 })),
                         (this._render = () => {
                             const e = this.props.managingAccount ? this._renderAssignedManagingAccountView() : this._renderUnassignedManagingAccountView(),
@@ -186,23 +186,23 @@
                 shouldComponentUpdate(e, t) {
                     this._previousPath !== location.pathname && this._initialPath === location.pathname && (this._handleFetchUserAccountLabel(), this.setState({ hasExitedOCF: !0 })), (this._previousPath = location.pathname);
                     const { disableAccountLabelStatus: a, managingAccount: o, managingAccountFetchStatus: n } = this.props,
-                        { disableAccountLabelStatus: r, managingAccount: s, managingAccountFetchStatus: c } = e,
-                        { hasExitedOCF: l } = this.state,
+                        { disableAccountLabelStatus: r, managingAccount: s, managingAccountFetchStatus: l } = e,
+                        { hasExitedOCF: c } = this.state,
                         i = s && o !== s,
-                        u = c === L.ZP.LOADED || n === L.ZP.LOADED;
-                    if ((i && u && l && (this._handleShowCallout(z), this._scribe({ ...k, action: "enabled" })), a !== r))
+                        u = l === S.ZP.LOADED || n === S.ZP.LOADED;
+                    if ((i && u && c && (this._handleShowCallout(z), this._scribe({ ...k, action: "enabled" })), a !== r))
                         switch (r) {
-                            case L.ZP.LOADED:
+                            case S.ZP.LOADED:
                                 this._handleShowCallout(I), this._scribe({ ...k, action: "disabled" });
                                 break;
-                            case L.ZP.FAILED:
+                            case S.ZP.FAILED:
                                 this._handleShowCallout(N, !0), this._scribe({ ...H, element: "automation_opt_out_error", action: "view" });
                         }
                     return e !== this.props || t !== this.state;
                 }
                 render() {
                     const { managingAccountFetchStatus: e } = this.props;
-                    return o.createElement(S.nO, { namespace: k }, o.createElement(A.Z, null, o.createElement(C.Z, { "aria-label": M, fetchStatus: e, onRequestRetry: this._handleFetchUserAccountLabel, render: this._render })));
+                    return o.createElement(L.nO, { namespace: k }, o.createElement(A.Z, null, o.createElement(C.Z, { "aria-label": M, fetchStatus: e, onRequestRetry: this._handleFetchUserAccountLabel, render: this._render })));
                 }
             }
             W.contextType = f.rC;
@@ -216,13 +216,13 @@
                 n = a(202784),
                 r = a(325686),
                 s = a(731708),
-                c = a(58881),
-                l = a(530732),
+                l = a(58881),
+                c = a(530732),
                 i = a(392237);
             const u = i.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, root: { justifyContent: "center", minHeight: e.spaces.space48, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space16 } })),
                 d = ({ align: e = "center", color: t, label: a, ...d }) => {
-                    const h = c.Z.generate({ backgroundColor: i.default.theme.colors.transparent, color: i.default.theme.colors[t], insetFocusRing: !0 });
-                    return n.createElement(r.Z, { style: u.container }, n.createElement(l.Z, (0, o.Z)({}, d, { interactiveStyles: h, style: u.root }), n.createElement(s.ZP, { align: e, color: t }, a)));
+                    const h = l.Z.generate({ backgroundColor: i.default.theme.colors.transparent, color: i.default.theme.colors[t], insetFocusRing: !0 });
+                    return n.createElement(r.Z, { style: u.container }, n.createElement(c.Z, (0, o.Z)({}, d, { interactiveStyles: h, style: u.root }), n.createElement(s.ZP, { align: e, color: t }, a)));
                 };
         },
         879113: (e, t, a) => {
@@ -232,8 +232,8 @@
                 n = a(476984),
                 r = a.n(n),
                 s = a(143778),
-                c = a(750410),
-                l = a(682830);
+                l = a(750410),
+                c = a(682830);
             const i = "failed",
                 u = "loaded",
                 d = "loading",
@@ -248,9 +248,9 @@
                     const { "aria-label": e, color: t, failureMessage: a, fetchStatus: n, icon: r, loadingMessage: s, onRequestRetry: u, render: b, renderFailure: m, retryMessage: p, retryable: g } = this.props;
                     switch (n) {
                         case i:
-                            return g ? o.createElement(c.Z, { icon: r, onRequestRetry: u, retryMessage: p }) : a ? o.createElement(l.m, { failureMessage: a }) : m();
+                            return g ? o.createElement(l.Z, { icon: r, onRequestRetry: u, retryMessage: p }) : a ? o.createElement(c.m, { failureMessage: a }) : m();
                         case d:
-                            return o.createElement(l.J, { "aria-label": e, color: t, loadingMessage: s });
+                            return o.createElement(c.J, { "aria-label": e, color: t, loadingMessage: s });
                         case h:
                             return null;
                         default:
@@ -262,18 +262,18 @@
         },
         420412: (e, t, a) => {
             "use strict";
-            a.d(t, { Z: () => l });
+            a.d(t, { Z: () => c });
             var o = a(202784),
                 n = a(325686),
                 r = a(235902),
                 s = a(885015),
-                c = a(392237);
-            function l({ borderColor: e = "borderColor", isSlim: t = !1, label: a }) {
-                const { isWebRedesign: l } = r.ZP.useProps(),
-                    u = "borderColor" === e || "nestedBorderColor" === e ? i[e] : { backgroundColor: c.default.theme.colors[e] ?? c.default.theme.colors.borderColor };
-                return a ? o.createElement(s.Z, { style: !t && i.root, withGutter: !0 }, o.createElement(n.Z, { style: i.gapColumn }, o.createElement(n.Z, { style: [i.gap, u] })), o.createElement(n.Z, { style: i.gapText }, a), o.createElement(n.Z, { style: i.gapColumn }, o.createElement(n.Z, { style: [i.gap, u] }))) : o.createElement(n.Z, { style: [!t && i.root, l() && i.rootRedesign, i.gap, u] });
+                l = a(392237);
+            function c({ borderColor: e = "borderColor", isSlim: t = !1, label: a }) {
+                const { isWebRedesign: c } = r.ZP.useProps(),
+                    u = "borderColor" === e || "nestedBorderColor" === e ? i[e] : { backgroundColor: l.default.theme.colors[e] ?? l.default.theme.colors.borderColor };
+                return a ? o.createElement(s.Z, { style: !t && i.root, withGutter: !0 }, o.createElement(n.Z, { style: i.gapColumn }, o.createElement(n.Z, { style: [i.gap, u] })), o.createElement(n.Z, { style: i.gapText }, a), o.createElement(n.Z, { style: i.gapColumn }, o.createElement(n.Z, { style: [i.gap, u] }))) : o.createElement(n.Z, { style: [!t && i.root, c() && i.rootRedesign, i.gap, u] });
             }
-            const i = c.default.create((e) => ({ borderColor: { backgroundColor: c.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: c.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
+            const i = l.default.create((e) => ({ borderColor: { backgroundColor: l.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: l.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
         },
         885015: (e, t, a) => {
             "use strict";
@@ -282,16 +282,16 @@
                 n = a(202784),
                 r = a(325686),
                 s = a(392237);
-            class c extends n.Component {
+            class l extends n.Component {
                 render() {
                     const { children: e, style: t, withGutter: a, ...s } = this.props,
-                        c = n.Children.map(e, (e) => e && n.cloneElement(e, { style: [e.props.style, l.column, a && l.withGutterColumn] }));
-                    return n.createElement(r.Z, (0, o.Z)({ style: [t, l.root, a && l.withGutter] }, s), c);
+                        l = n.Children.map(e, (e) => e && n.cloneElement(e, { style: [e.props.style, c.column, a && c.withGutterColumn] }));
+                    return n.createElement(r.Z, (0, o.Z)({ style: [t, c.root, a && c.withGutter] }, s), l);
                 }
             }
-            c.defaultProps = { withGutter: !1 };
-            const l = s.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
-                i = c;
+            l.defaultProps = { withGutter: !1 };
+            const c = s.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
+                i = l;
         },
         88307: (e, t, a) => {
             "use strict";
@@ -300,7 +300,7 @@
                 n = a(325686),
                 r = a(731708),
                 s = a(392237);
-            class c extends o.Component {
+            class l extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderSubtextAndLink = () => {
@@ -313,27 +313,43 @@
                         });
                 }
                 render() {
-                    const { label: e, learnMoreLabel: t, learnMoreLink: a, subtext: s, withBottomBorder: c } = this.props;
-                    return o.createElement(n.Z, { style: [l.root, c && l.bottomBorder] }, o.createElement(r.ZP, null, e), s ? (t && a ? this._renderSubtextAndLink() : o.createElement(r.ZP, { color: "gray700", size: "subtext2" }, s)) : null);
+                    const { label: e, learnMoreLabel: t, learnMoreLink: a, subtext: s, withBottomBorder: l } = this.props;
+                    return o.createElement(n.Z, { style: [c.root, l && c.bottomBorder] }, o.createElement(r.ZP, null, e), s ? (t && a ? this._renderSubtextAndLink() : o.createElement(r.ZP, { color: "gray700", size: "subtext2" }, s)) : null);
                 }
             }
-            c.defaultProps = { withBottomBorder: !0 };
-            const l = s.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, bottomBorder: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor } })),
-                i = c;
+            l.defaultProps = { withBottomBorder: !0 };
+            const c = s.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, bottomBorder: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor } })),
+                i = l;
+        },
+        58399: (e, t, a) => {
+            "use strict";
+            a.r(t), a.d(t, { default: () => i });
+            var o = a(202784),
+                n = a(890601),
+                r = a(783427),
+                s = a(717683),
+                l = a(347101);
+            const c = (e = {}) => {
+                const t = o.useContext(s.Z),
+                    { direction: a } = (0, r.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style, t && l.Z.iconRTL], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: a });
+            };
+            c.metadata = { width: 24, height: 24 };
+            const i = c;
         },
         748138: (e, t, a) => {
             "use strict";
-            a.r(t), a.d(t, { default: () => l });
+            a.r(t), a.d(t, { default: () => c });
             var o = a(202784),
                 n = a(890601),
                 r = a(783427),
                 s = a(347101);
-            const c = (e = {}) => {
+            const l = (e = {}) => {
                 const { direction: t } = (0, r.Z)();
                 return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
             };
-            c.metadata = { width: 24, height: 24 };
-            const l = c;
+            l.metadata = { width: 24, height: 24 };
+            const c = l;
         },
         424869: (e) => {
             e.exports = function e(t) {
@@ -348,4 +364,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAutomation.196bd1aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAutomation.fcc7d74a.js.map
