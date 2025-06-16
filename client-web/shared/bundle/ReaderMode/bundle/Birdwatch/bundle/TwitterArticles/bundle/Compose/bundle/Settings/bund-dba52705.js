@@ -301,11 +301,11 @@
                     })(Y);
                 if (S.B(Y)) return r.createElement(_.Z, { tweet: Y });
                 if (Y.card && m.default.isSpaceCard(Y.card.name)) return r.createElement(o.Z, { style: D.gap }, r.createElement(M.Z, { audioSpaceId: Y.card?.binding_values.id?.string_value, clipMetadata: Y.card?.binding_values.clip_metadata?.string_value }));
-                const ae = j.isVerticalVideoNoBlackBars(),
-                    se = d && ie > 0 && (ee || X),
-                    de = re * (ee ? te : Math.max(1, te)),
-                    le = ae && X && te < 1 ? te : void 0;
-                return r.createElement(o.Z, { ref: W, style: [se && { maxWidth: de }, le ? D.squareRow : void 0] }, r.createElement(A.Z, { authorId: Y.user.id_str, authorScreenName: Y.user.screen_name, cacheLocationKey: g || B, customHoverBackgroundColor: ne && J ? oe : void 0, displayMediaAttribution: !0, displayMediaMetadata: i, enableKeyboardShortcuts: a, forwardPivotInfo: s, hasSensitiveMedia: Y.possibly_sensitive, loggedInUserId: l, mediaAltTranslations: u, mediaContentStyles: [K({ withEdgeToEdgeContent: J, withHalvedMediaSize: H, backgroundColor: oe, withMaxHeight: ne })], mediaDetails: t, mediaMaxHeight: ne ? re : void 0, mediaTagsLink: `${Y.permalink}/media_tags`, mediaVisibilityResults: Y.mediaVisibilityResults || e.tweet.mediaVisibilityResults, nudges: p, onClick: C, onClickMediaTags: T, onGrokClick: h, onPlaybackStarted: b, parentTweetId: e.tweet.id_str, preventPlayback: y, promotedContent: v, renderPrerollActionMenu: x, shouldShowAltLabelAlways: L, showAltTranslation: k, showBorder: !(ne && J), showRoundCorners: $, singleImageMaxAspectRatio: I, singleImageMinAspectRatio: E, style: [ne && !J && D.explicitlySized, le ? { aspectRatio: te } : void 0], tweetCreatedAt: Y.created_at, tweetId: Y.id_str, tweetText: Y.text, videoAspectRatio: le, withCenterCrop: U, withHalvedMediaSize: H, withMediaTagsIcon: F, withPostPlayback: !0 }));
+                const ae = j.isVerticalVideoNoBlackBars() && X && te < 1,
+                    se = ee ? te : X ? (ae ? te : Math.max(1, te)) : void 0,
+                    de = null != se ? re * se : void 0,
+                    le = (d && ie > 0 && (ee || X)) || ae;
+                return r.createElement(o.Z, { ref: W, style: le && { maxWidth: de } }, r.createElement(A.Z, { authorId: Y.user.id_str, authorScreenName: Y.user.screen_name, cacheLocationKey: g || B, customHoverBackgroundColor: ne && J ? oe : void 0, displayMediaAttribution: !0, displayMediaMetadata: i, enableKeyboardShortcuts: a, forwardPivotInfo: s, hasSensitiveMedia: Y.possibly_sensitive, loggedInUserId: l, mediaAltTranslations: u, mediaContentStyles: [K({ withEdgeToEdgeContent: J, withHalvedMediaSize: H, backgroundColor: oe, withMaxHeight: ne })], mediaDetails: t, mediaMaxHeight: ne ? re : void 0, mediaTagsLink: `${Y.permalink}/media_tags`, mediaVisibilityResults: Y.mediaVisibilityResults || e.tweet.mediaVisibilityResults, nudges: p, onClick: C, onClickMediaTags: T, onGrokClick: h, onPlaybackStarted: b, parentTweetId: e.tweet.id_str, preventPlayback: y, promotedContent: v, renderPrerollActionMenu: x, shouldShowAltLabelAlways: L, showAltTranslation: k, showBorder: !(ne && J), showRoundCorners: $, singleImageMaxAspectRatio: I, singleImageMinAspectRatio: E, style: ne && !J && D.explicitlySized, tweetCreatedAt: Y.created_at, tweetId: Y.id_str, tweetText: Y.text, videoAspectRatio: ae ? te : void 0, withCenterCrop: U, withHalvedMediaSize: H, withMediaTagsIcon: F, withPostPlayback: !0 }));
             }
             function K(e) {
                 const { backgroundColor: t, isInQuoteTweet: n = !1, withEdgeToEdgeContent: i, withHalvedMediaSize: r, withMaxHeight: o } = e;
@@ -329,4 +329,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705.a9edb7ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705.8a22969a.js.map

@@ -8,8 +8,8 @@
                 s,
                 a,
                 r,
-                l,
-                o = {
+                o,
+                l = {
                     fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "SensitiveMediaSettingsQuery", selections: [{ alias: "viewer", args: (n = [{ kind: "Literal", name: "s", value: "cd25" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [(a = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: "UserSensitiveMediaSettingsInfo", kind: "LinkedField", name: "sensitive_media_settings", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "SensitiveMediaOptions_userSensitiveMediaSettingsInfo" }, (r = { alias: null, args: null, kind: "ScalarField", name: "can_user_allow_sensitive_content", storageKey: null })], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: 'viewer_v2(s:"cd25")' }], type: "Query", abstractKey: null },
                     kind: "Request",
                     operation: {
@@ -73,7 +73,7 @@
                                                                 ],
                                                                 storageKey: null,
                                                             },
-                                                            (l = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
+                                                            (o = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
                                                         ],
                                                         type: "User",
                                                         abstractKey: null,
@@ -81,7 +81,7 @@
                                                 ],
                                                 storageKey: null,
                                             },
-                                            l,
+                                            o,
                                         ],
                                         storageKey: null,
                                     },
@@ -92,8 +92,8 @@
                     },
                     params: { id: "ft92vAsha0RhDxwgq_ojWQ", metadata: {}, name: "SensitiveMediaSettingsQuery", operationKind: "query", text: null },
                 };
-            o.hash = "47444c8ec7640b723fc59a35b0544d70";
-            const d = o;
+            l.hash = "47444c8ec7640b723fc59a35b0544d70";
+            const d = l;
         },
         498510: (e, t, i) => {
             i.d(t, { Z: () => d });
@@ -101,8 +101,8 @@
                 s,
                 a,
                 r,
-                l,
-                o = {
+                o,
+                l = {
                     fragment: {
                         argumentDefinitions: [],
                         kind: "Fragment",
@@ -181,11 +181,11 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: [], kind: "Operation", name: "fetchDownloadSettingAllowedQuery", selections: [n, { alias: "viewer", args: s, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [a, { kind: "InlineFragment", selections: [r, (l = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, l], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' }] },
+                    operation: { argumentDefinitions: [], kind: "Operation", name: "fetchDownloadSettingAllowedQuery", selections: [n, { alias: "viewer", args: s, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [a, { kind: "InlineFragment", selections: [r, (o = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, o], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' }] },
                     params: { id: "P4Y9VY-Vn1cJuBnjOVZ4xA", metadata: {}, name: "fetchDownloadSettingAllowedQuery", operationKind: "query", text: null },
                 };
-            o.hash = "8a9c6728758bc2d477246d6d2dbf9e46";
-            const d = o;
+            l.hash = "8a9c6728758bc2d477246d6d2dbf9e46";
+            const d = l;
         },
         882127: (e, t, i) => {
             i.d(t, { Z: () => s });
@@ -263,8 +263,8 @@
                 s = i(476984),
                 a = i.n(s),
                 r = i(143778),
-                l = i(750410),
-                o = i(682830);
+                o = i(750410),
+                l = i(682830);
             const d = "failed",
                 u = "loaded",
                 c = "loading",
@@ -279,9 +279,9 @@
                     const { "aria-label": e, color: t, failureMessage: i, fetchStatus: s, icon: a, loadingMessage: r, onRequestRetry: u, render: g, renderFailure: m, retryMessage: p, retryable: f } = this.props;
                     switch (s) {
                         case d:
-                            return f ? n.createElement(l.Z, { icon: a, onRequestRetry: u, retryMessage: p }) : i ? n.createElement(o.m, { failureMessage: i }) : m();
+                            return f ? n.createElement(o.Z, { icon: a, onRequestRetry: u, retryMessage: p }) : i ? n.createElement(l.m, { failureMessage: i }) : m();
                         case c:
-                            return n.createElement(o.J, { "aria-label": e, color: t, loadingMessage: r });
+                            return n.createElement(l.J, { "aria-label": e, color: t, loadingMessage: r });
                         case h:
                             return null;
                         default:
@@ -291,14 +291,96 @@
             }
             g.defaultProps = { renderFailure: r.Z, retryable: !0 };
         },
+        280278: (e, t, i) => {
+            i.d(t, { ZP: () => p });
+            var n = i(202784),
+                s = i(325686),
+                a = i(827515),
+                r = i(461756),
+                o = i(731708),
+                l = i(392237);
+            const d = "up",
+                u = "down",
+                c = (e, t, i) => {
+                    i((i) => {
+                        const n = (0, a.Z)(e) ? (e > (i.count || 0) ? d : u) : d;
+                        return { ...i, count: e, oldText: i.text, pendingCount: null, pendingText: null, text: t, transitionDirection: n };
+                    });
+                },
+                h = {};
+            [d, u].forEach((e) => {
+                const t = "0.3s";
+                h[e] = { active: { transitionProperty: "transform", transitionDuration: t, transform: "translate3d(0, 0, 0)" }, pre: { transform: `translate3d(0, ${e === d ? "100%" : "-100%"}, 0)` }, post: { transform: `translate3d(0, ${e === d ? "-100%" : "100%"}, 0)`, transitionProperty: "transform", transitionDuration: t } };
+            });
+            const g = { position: "absolute" },
+                m = l.default.create({ root: { overflow: "hidden" } }),
+                p = (e) => {
+                    const { children: t, containerStyle: i, count: l, ...u } = e,
+                        [p, f] = n.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: d }),
+                        y = n.useRef(!1);
+                    return (
+                        n.useEffect(
+                            () => (
+                                (y.current = !0),
+                                function () {
+                                    y.current = !1;
+                                }
+                            ),
+                            [],
+                        ),
+                        n.useEffect(() => {
+                            if (y.current)
+                                if (r.Z.reducedMotionEnabled) f((i) => ({ ...i, oldText: null, text: t, pendingText: null, pendingCount: null, count: e.count }));
+                                else if (t !== p.pendingText) {
+                                    t === p.text || ((0, a.Z)(e.count) && p.count === e.count) ? f((e) => ({ ...e, pendingCount: null, pendingText: null })) : (f((i) => ({ ...i, pendingCount: e.count, pendingText: t })), p.animating || c(e.count, t, f));
+                                }
+                        }, [t]),
+                        n.useEffect(() => {
+                            y.current &&
+                                !1 === p.animating &&
+                                (p.oldText
+                                    ? window.requestAnimationFrame(() =>
+                                          window.requestAnimationFrame(() => {
+                                              y.current && f((e) => ({ ...e, animating: !0 }));
+                                          }),
+                                      )
+                                    : p.pendingText && c(p.pendingCount, p.pendingText, f));
+                        }, [p.animating, p.oldText]),
+                        n.useMemo(() => {
+                            const e = h[p.transitionDirection],
+                                t = p.oldText && !r.Z.reducedMotionEnabled,
+                                a = !p.animating && p.oldText && !r.Z.reducedMotionEnabled,
+                                l = { ...g, ...(p.animating ? e.post : e.active) },
+                                d = { ...(a ? e.pre : e.active) };
+                            return n.createElement(
+                                s.Z,
+                                { style: [m.root, i] },
+                                t ? n.createElement("span", { style: l }, n.createElement(o.ZP, u, p.oldText)) : null,
+                                n.createElement(
+                                    "span",
+                                    {
+                                        "data-testid": "app-text-transition-container",
+                                        onTransitionEnd: () =>
+                                            ((e, t) => {
+                                                e && t((e) => ({ ...e, animating: !1, oldText: null }));
+                                            })(y.current, f),
+                                        style: d,
+                                    },
+                                    n.createElement(o.ZP, u, p.text),
+                                ),
+                            );
+                        }, [i, u, p, y, f])
+                    );
+                };
+        },
         646496: (e, t, i) => {
             i.d(t, { Z: () => p });
             var n = i(202784),
                 s = i(325686),
                 a = i(111677),
                 r = i.n(a),
-                l = i(731708),
-                o = i(642153),
+                o = i(731708),
+                l = i(642153),
                 d = i(992942),
                 u = i(530732),
                 c = i(537392),
@@ -307,12 +389,12 @@
             const m = g.default.create((e) => ({ buttonBottomMargin: { marginBottom: e.spaces.space16 }, buttonLeftMargin: { marginStart: e.spaces.space20 }, buttonTopMargin: { marginTop: e.spaces.space20 }, buttonWrap: { flexWrap: "wrap-reverse" }, condensedContext: { marginTop: e.spaces.space16, flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, condensedContextV2: { marginTop: e.spaces.space16 }, iconCustom: { alignSelf: "flex-start", borderRadius: e.borderRadii.infinite, height: e.spaces.space32, width: e.spaces.space32, marginTop: e.spaces.space8, marginBottom: e.spaces.space8 }, facepile: { marginBottom: e.spaces.space16, alignSelf: "flex-start" }, facepileV2: { marginEnd: e.spaces.space8, marginTop: e.spaces.space16 }, interactiveStyle: { flexShrink: 1 }, interactiveStyleV2: { flexDirection: "row", alignItems: "center" }, knownFollowersContainer: { marginTop: e.spaces.space16, marginBottom: e.spaces.space16, flexDirection: "row", justifyContent: "space-between", flexGrow: 1, flexShrink: 1 }, underline: { textDecorationLine: "underline" } })),
                 p = ({ children: e, context: t, imageSrc: i, knownFollowers: a, onFacepilesClick: p, onFacepilesImpression: f, subtitle: y, title: _, withAdditionalControls: w = !1 }) => {
                     const { firstUsername: S, knownFollowersAvatarUrls: E, trendingFollowersUrl: T, usersCount: I } = a || {},
-                        O = a && a.knownFollowersAvatarUrls.length > 3;
+                        v = a && a.knownFollowersAvatarUrls.length > 3;
                     n.useEffect(() => {
-                        O && f && f();
-                    }, [O, f]);
-                    const F = i ? n.createElement(d.Z, { source: i, style: m.iconCustom }) : null,
-                        v = t ? n.createElement(s.Z, { style: w ? m.condensedContextV2 : m.condensedContext }, n.createElement(l.ZP, { align: "left", color: "gray700", numberOfLines: 3, size: "subtext2" }, t), n.createElement(s.Z, { style: w ? m.buttonTopMargin : [m.buttonBottomMargin, m.buttonLeftMargin] }, e)) : null,
+                        v && f && f();
+                    }, [v, f]);
+                    const O = i ? n.createElement(d.Z, { source: i, style: m.iconCustom }) : null,
+                        F = t ? n.createElement(s.Z, { style: w ? m.condensedContextV2 : m.condensedContext }, n.createElement(o.ZP, { align: "left", color: "gray700", numberOfLines: 3, size: "subtext2" }, t), n.createElement(s.Z, { style: w ? m.buttonTopMargin : [m.buttonBottomMargin, m.buttonLeftMargin] }, e)) : null,
                         b = n.createElement(c.ZP, null, ({ containerWidth: i }) => {
                             const a = h.Z.isNarrowScreenWidth(i) ? "xLarge" : "xxLarge",
                                 d = i < g.default.theme.breakpoints.xSmall ? m.buttonWrap : void 0,
@@ -320,16 +402,29 @@
                             return n.createElement(
                                 s.Z,
                                 { style: w ? null : [m.knownFollowersContainer, d] },
-                                n.createElement(u.Z, { interactiveStyles: null, link: T, onPress: p, style: w ? m.interactiveStyleV2 : m.interactiveStyle }, ({ isHovered: e }) => n.createElement(n.Fragment, null, n.createElement(o.Z, { style: [m.facepile, c], userAvatarSize: a, userAvatarUrls: E }), n.createElement(l.ZP, { color: "gray700", dir: "ltr", numberOfLines: 2, size: "subtext2", style: e && m.underline }, t || ((e, t) => n.createElement(r().I18NFormatMessage, { $i18n: "bb2cd6d3" }, e, t))(S, I)))),
+                                n.createElement(u.Z, { interactiveStyles: null, link: T, onPress: p, style: w ? m.interactiveStyleV2 : m.interactiveStyle }, ({ isHovered: e }) => n.createElement(n.Fragment, null, n.createElement(l.Z, { style: [m.facepile, c], userAvatarSize: a, userAvatarUrls: E }), n.createElement(o.ZP, { color: "gray700", dir: "ltr", numberOfLines: 2, size: "subtext2", style: e && m.underline }, t || ((e, t) => n.createElement(r().I18NFormatMessage, { $i18n: "bb2cd6d3" }, e, t))(S, I)))),
                                 ((t) => {
                                     const i = t < g.default.theme.breakpoints.xSmall ? m.buttonBottomMargin : [m.buttonBottomMargin, m.buttonLeftMargin];
                                     return w ? [e] : n.createElement(s.Z, { style: i }, e);
                                 })(i),
                             );
                         }),
-                        k = a && O ? b : v;
-                    return n.createElement(n.Fragment, null, F, n.createElement(l.ZP, { size: "title2", weight: "heavy" }, _), y ? n.createElement(l.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, y) : null, k);
+                        x = a && v ? b : F;
+                    return n.createElement(n.Fragment, null, O, n.createElement(o.ZP, { size: "title2", weight: "heavy" }, _), y ? n.createElement(o.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, y) : null, x);
                 };
+        },
+        452693: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => l });
+            var n = i(202784),
+                s = i(890601),
+                a = i(783427),
+                r = i(347101);
+            const o = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const l = o;
         },
         19697: (e, t, i) => {
             i.d(t, { q8: () => d, $i: () => a });
@@ -342,62 +437,62 @@
                 return (n.fillStyle = "#FFFFFF"), n.fillRect(0, 0, e, t), i;
             };
             function a(e, t, i, s, a) {
-                return o(t, i).then(
+                return l(t, i).then(
                     (t) => (
                         (function (e, t, i, s, a, r) {
-                            const l = r || { top: 0, left: 0, width: t.width, height: t.height };
-                            let o = l.left,
-                                d = l.top,
-                                u = l.width,
-                                c = l.height,
+                            const o = r || { top: 0, left: 0, width: t.width, height: t.height };
+                            let l = o.left,
+                                d = o.top,
+                                u = o.width,
+                                c = o.height,
                                 h = 0,
                                 g = 0,
                                 m = i,
                                 p = s;
                             switch ((e.save(), a)) {
                                 case n.Z.TOP_RIGHT:
-                                    e.scale(-1, 1), (o = t.width - l.width - l.left), (h = -i);
+                                    e.scale(-1, 1), (l = t.width - o.width - o.left), (h = -i);
                                     break;
                                 case n.Z.BOTTOM_RIGHT:
-                                    e.rotate(Math.PI), (o = t.width - l.width - l.left), (d = t.height - l.height - l.top), (h = -i), (g = -s);
+                                    e.rotate(Math.PI), (l = t.width - o.width - o.left), (d = t.height - o.height - o.top), (h = -i), (g = -s);
                                     break;
                                 case n.Z.BOTTOM_LEFT:
-                                    e.scale(1, -1), (d = t.height - l.height - l.top), (g = -s);
+                                    e.scale(1, -1), (d = t.height - o.height - o.top), (g = -s);
                                     break;
                                 case n.Z.LEFT_TOP:
-                                    e.translate(i / 2, s / 2), e.rotate(-Math.PI / 2), e.scale(-1, 1), (o = l.top), (d = l.left), (u = l.height), (c = l.width), (h = -s / 2), (g = -i / 2), (m = s), (p = i);
+                                    e.translate(i / 2, s / 2), e.rotate(-Math.PI / 2), e.scale(-1, 1), (l = o.top), (d = o.left), (u = o.height), (c = o.width), (h = -s / 2), (g = -i / 2), (m = s), (p = i);
                                     break;
                                 case n.Z.LEFT_BOTTOM:
-                                    e.translate(i / 2, s / 2), e.rotate(Math.PI / 2), (o = l.top), (d = t.height - l.width - l.left), (u = l.height), (c = l.width), (h = -s / 2), (g = -i / 2), (m = s), (p = i);
+                                    e.translate(i / 2, s / 2), e.rotate(Math.PI / 2), (l = o.top), (d = t.height - o.width - o.left), (u = o.height), (c = o.width), (h = -s / 2), (g = -i / 2), (m = s), (p = i);
                                     break;
                                 case n.Z.RIGHT_BOTTOM:
-                                    e.translate(i / 2, s / 2), e.rotate(Math.PI / 2), e.scale(-1, 1), (o = t.width - l.height - l.top), (d = t.height - l.width - l.left), (u = l.height), (c = l.width), (h = -s / 2), (g = -i / 2), (m = s), (p = i);
+                                    e.translate(i / 2, s / 2), e.rotate(Math.PI / 2), e.scale(-1, 1), (l = t.width - o.height - o.top), (d = t.height - o.width - o.left), (u = o.height), (c = o.width), (h = -s / 2), (g = -i / 2), (m = s), (p = i);
                                     break;
                                 case n.Z.RIGHT_TOP:
-                                    e.translate(i / 2, s / 2), e.rotate(-Math.PI / 2), (o = t.width - l.height - l.top), (d = l.left), (u = l.height), (c = l.width), (h = -s / 2), (g = -i / 2), (m = s), (p = i);
+                                    e.translate(i / 2, s / 2), e.rotate(-Math.PI / 2), (l = t.width - o.height - o.top), (d = o.left), (u = o.height), (c = o.width), (h = -s / 2), (g = -i / 2), (m = s), (p = i);
                             }
-                            e.drawImage(t, o, d, u, c, h, g, m, p), e.restore();
+                            e.drawImage(t, l, d, u, c, h, g, m, p), e.restore();
                         })(t.getContext("2d"), e, t.width, t.height, s, a),
                         t
                     ),
                 );
             }
             const r = 3145728,
-                l = 5242880;
-            function o(e, t) {
+                o = 5242880;
+            function l(e, t) {
                 if (window.CanvasRenderingContext2D) {
                     const i = s(e, t);
                     return d(i)
                         .then(() => i)
                         .catch(() => {
                             const i = e * t;
-                            if (i > l) {
-                                const i = u(l, e, t);
-                                return o(i.width, i.height);
+                            if (i > o) {
+                                const i = u(o, e, t);
+                                return l(i.width, i.height);
                             }
                             if (i > r) {
                                 const i = u(r, e, t);
-                                return o(i.width, i.height);
+                                return l(i.width, i.height);
                             }
                             throw Error("Could not create valid canvas for resizing");
                         });
@@ -423,17 +518,17 @@
                 s = (e, t, i = 65536) => {
                     let n = new Uint8Array([]),
                         s = 0;
-                    function a(a, r, l) {
-                        const o = a - s,
-                            d = o + r;
-                        if (o >= 0 && d <= n.length) l(n.subarray(o, d), a);
+                    function a(a, r, o) {
+                        const l = a - s,
+                            d = l + r;
+                        if (l >= 0 && d <= n.length) o(n.subarray(l, d), a);
                         else {
-                            const o = new FileReader();
-                            (o.onload = function () {
-                                (n = new Uint8Array(this.result)), (s = a), l(n.subarray(0, r), a);
+                            const l = new FileReader();
+                            (l.onload = function () {
+                                (n = new Uint8Array(this.result)), (s = a), o(n.subarray(0, r), a);
                             }),
-                                (o.onerror = t.bind(null, 0)),
-                                null !== e && o.readAsArrayBuffer(e.slice(a, a + Math.max(i, r)));
+                                (l.onerror = t.bind(null, 0)),
+                                null !== e && l.readAsArrayBuffer(e.slice(a, a + Math.max(i, r)));
                         }
                     }
                     function r(e) {
@@ -459,8 +554,8 @@
                         ? a(0, 10, function e(i, n) {
                               const s = i[1];
                               if (i.length < 4 || 255 !== i[0] || 217 === s) return void t(0);
-                              const l = s < 208 || s > 217 ? (i[2] << 8) + i[3] : 0;
-                              225 === s && l > 8 && "Exif\0\0" === String.fromCharCode.apply(null, i.subarray(4, 10)) ? a(n + 10, l - 8, r) : a(n + 2 + l, 10, e);
+                              const o = s < 208 || s > 217 ? (i[2] << 8) + i[3] : 0;
+                              225 === s && o > 8 && "Exif\0\0" === String.fromCharCode.apply(null, i.subarray(4, 10)) ? a(n + 10, o - 8, r) : a(n + 2 + o, 10, e);
                           })
                         : t(0);
                 },
@@ -480,7 +575,7 @@
                 };
         },
         276259: (e, t, i) => {
-            i.d(t, { Lw: () => s, Re: () => c, VJ: () => l, ZF: () => h, hv: () => o, ku: () => n, qp: () => a, uv: () => r, v5: () => u });
+            i.d(t, { Lw: () => s, Re: () => c, VJ: () => o, ZF: () => h, hv: () => l, ku: () => n, qp: () => a, uv: () => r, v5: () => u });
             i(571372), i(875640), i(694898), i(38857), i(540171), i(157093), i(265688), i(270315), i(592529), i(86943), i(691157), i(543673), i(240753), i(128399);
             function n(e) {
                 const t = e.match(/=*$/);
@@ -523,7 +618,7 @@
                     const i = document.createElement("a");
                     (i.href = e), (i.download = t), (i.target = "_blank"), i.click(), i.remove();
                 },
-                l = (e) =>
+                o = (e) =>
                     ((e) =>
                         new Promise((t) => {
                             const i = new Image();
@@ -534,7 +629,7 @@
                                 (i.crossOrigin = "anonymous"),
                                 (i.src = e);
                         }))(e).then((e) => navigator.clipboard.write([new ClipboardItem({ "image/png": e })])),
-                o = async (e, t) => {
+                l = async (e, t) => {
                     if (e.size <= t) return e;
                     let i = e,
                         n = 1;
@@ -553,10 +648,10 @@
                             const e = document.createElement("canvas"),
                                 s = e.getContext("2d"),
                                 r = a.width * t,
-                                l = a.height * t;
+                                o = a.height * t;
                             (e.width = r),
-                                (e.height = l),
-                                s.drawImage(a, 0, 0, r, l),
+                                (e.height = o),
+                                s.drawImage(a, 0, 0, r, o),
                                 e.toBlob(
                                     (e) => {
                                         n(new File([e], "image.jpeg", { type: "image/jpeg" }));
@@ -582,7 +677,7 @@
             }
         },
         205074: (e, t, i) => {
-            i.d(t, { DS: () => l, ZP: () => o });
+            i.d(t, { DS: () => o, ZP: () => l });
             i(543673), i(240753), i(128399);
             var n = i(790187),
                 s = i(276259),
@@ -594,15 +689,15 @@
                     [s, a] = i ? [e.height, e.width] : [e.width, e.height];
                 return { width: s, height: a };
             }
-            const l = (e) => {
-                const t = e instanceof o,
+            const o = (e) => {
+                const t = e instanceof l,
                     i = e.isImage || e.isGif,
                     n = e.orientation,
                     s = e.width && e.height,
                     a = e.img;
                 return !!(t && i && n && s && a);
             };
-            class o {
+            class l {
                 constructor(e) {
                     (this.fileHandle = e), e instanceof File && (this.name = e.name), (this.size = e.size), (this.type = e.type), (this.url = window.URL.createObjectURL(this.fileHandle)), (this.isGif = this.type === s.Re), (this.isImage = s.v5.some((e) => e === this.type)), (this.isVideo = !1), (this.isSubtitles = !1);
                 }
@@ -675,21 +770,21 @@
             }
         },
         514354: (e, t, i) => {
-            i.d(t, { Q: () => o, S: () => l });
+            i.d(t, { Q: () => l, S: () => o });
             var n = i(332775),
                 s = i.n(n),
                 a = i(276259),
                 r = i(549755);
-            const l = { ERROR_READING_IMAGE_FILE: 0, HASHING_ABORTED: 1, INVALID_HASH: 2 },
-                o = (e, t) =>
+            const o = { ERROR_READING_IMAGE_FILE: 0, HASHING_ABORTED: 1, INVALID_HASH: 2 },
+                l = (e, t) =>
                     (0, a.qp)(e, t)
                         .catch((e) => {
-                            throw new r.Z(`An error occurred while reading the image file: ${e}`, e.message === a.ZF ? l.HASHING_ABORTED : l.ERROR_READING_IMAGE_FILE);
+                            throw new r.Z(`An error occurred while reading the image file: ${e}`, e.message === a.ZF ? o.HASHING_ABORTED : o.ERROR_READING_IMAGE_FILE);
                         })
                         .then((e) => {
                             const t = s()(e);
                             if (t && "string" == typeof t) return t;
-                            throw new r.Z("Hash is not a non-empty string", l.INVALID_HASH);
+                            throw new r.Z("Hash is not a non-empty string", o.INVALID_HASH);
                         });
         },
         653843: (e, t, i) => {
@@ -698,29 +793,29 @@
                 s = i(790187),
                 a = i(549755),
                 r = i(205074),
-                l = i(276259);
-            function o(e, { maxDimension: t, maxFileSize: i, targetQuality: n }) {
+                o = i(276259);
+            function l(e, { maxDimension: t, maxFileSize: i, targetQuality: n }) {
                 return (function (e, t, i, n) {
                     function s(a, r) {
                         return d(e, e.width, e.height, a, r).then((e) => {
-                            const o = e.width > i || e.height > i,
+                            const l = e.width > i || e.height > i,
                                 d = e.toDataURL("image/jpeg", n),
                                 u = d.split(";base64,")[1],
-                                c = (0, l.ku)(u);
-                            if (o || c > t) {
+                                c = (0, o.ku)(u);
+                            if (l || c > t) {
                                 let e = 0.8;
-                                return o && (e = a > r ? i / a : i / r), s(a * e, r * e);
+                                return l && (e = a > r ? i / a : i / r), s(a * e, r * e);
                             }
                             return d;
                         });
                     }
                     return s(e.width, e.height);
-                })(e, i, t, n).then(l.Lw);
+                })(e, i, t, n).then(o.Lw);
             }
             function d(e, t, i, s, a) {
                 const r = t / 2,
-                    l = i / 2;
-                return e instanceof HTMLCanvasElement && t <= s && i <= a ? Promise.resolve(e) : r <= s && l <= a ? (0, n.$i)(e, s, a) : (0, n.$i)(e, r, l).then((e) => d(e, e.width, e.height, s, a));
+                    o = i / 2;
+                return e instanceof HTMLCanvasElement && t <= s && i <= a ? Promise.resolve(e) : r <= s && o <= a ? (0, n.$i)(e, s, a) : (0, n.$i)(e, r, o).then((e) => d(e, e.width, e.height, s, a));
             }
             const u = 5242880,
                 c = 4096,
@@ -739,8 +834,8 @@
             function _(e, t) {
                 const { maxFileSize: i = u, maxDimension: n = c, cropData: s, jpgPixelsPerByteForResize: a } = t || {},
                     r = "image/jpeg" === e.type,
-                    l = (e.width * e.height) / e.size;
-                return m(e) || p(e, i, n) || y(e, s) || (r && !!a && l < a);
+                    o = (e.width * e.height) / e.size;
+                return m(e) || p(e, i, n) || y(e, s) || (r && !!a && o < a);
             }
             const w = (e, t) => {
                     const { height: i, width: n } = e;
@@ -748,7 +843,7 @@
                 },
                 S = (e) => ("function" == typeof e.decode ? e.decode() : Promise.resolve());
             function E(e, t) {
-                const { maxFileSize: i = u, maxDimension: s = c, targetQuality: l = h, cropData: d } = t || {},
+                const { maxFileSize: i = u, maxDimension: s = c, targetQuality: o = h, cropData: d } = t || {},
                     m = f(e, d);
                 if (!_(e, t)) return Promise.resolve(e.fileHandle);
                 if (!(0, r.DS)(e)) {
@@ -759,7 +854,7 @@
                     const e = new a.Z("Gifs cannot be processed.", g.GIF_IS_TOO_LARGE);
                     return Promise.reject(e);
                 }
-                const p = (e) => o(e, { maxFileSize: i, maxDimension: s, targetQuality: l });
+                const p = (e) => l(e, { maxFileSize: i, maxDimension: s, targetQuality: o });
                 return e
                     .withDimensionsAndOrientation()
                     .then(({ img: e, orientation: t }) => {
@@ -781,8 +876,8 @@
                 let s = 0,
                     a = 0,
                     r = 0,
-                    l = null;
-                function o() {
+                    o = null;
+                function l() {
                     n.clear(), (s = 0), (a = 0), (r = 0);
                 }
                 return {
@@ -802,11 +897,11 @@
                                     if (1 !== t) return;
                                     const r = s / n;
                                     if (r < 5e3 && 1 === i) return;
-                                    !l || l.byterate < r ? ((i += 1), e(), (l = { byterate: r, poolSize: i })) : ((i -= 2), (i = Math.max(i, 1)), (l = null));
-                                    o();
+                                    !o || o.byterate < r ? ((i += 1), e(), (o = { byterate: r, poolSize: i })) : ((i -= 2), (i = Math.max(i, 1)), (o = null));
+                                    l();
                                 })());
                     },
-                    reset: o,
+                    reset: l,
                     getPoolSize: () => i,
                     start: function () {
                         for (let t = 0; t < i; ++t) e();
@@ -823,13 +918,13 @@
                 }
                 return `&${String(t)}`;
             }
-            function a(e, t = l, i = r) {
+            function a(e, t = o, i = r) {
                 const n = Math.max(e, t);
                 return Math.min(n, i);
             }
             const r = 5242880,
-                l = 65536,
-                o = 2e3,
+                o = 65536,
+                l = 2e3,
                 d = 1e4;
             class u {
                 constructor(e, t = E) {
@@ -866,10 +961,10 @@
                                 const e = window.navigator.connection;
                                 if (e) {
                                     const t = e.type || e.effectiveType;
-                                    if (e.downlink) return a(((1e3 * e.downlink) / 8 / 2) * o);
-                                    if ("wifi" === t) return a(5 * l);
+                                    if (e.downlink) return a(((1e3 * e.downlink) / 8 / 2) * l);
+                                    if ("wifi" === t) return a(5 * o);
                                 }
-                                return a(2 * l);
+                                return a(2 * o);
                             })()),
                         (this.segmentIndex = 0),
                         (this.totalUploadDuration = 0),
@@ -944,7 +1039,7 @@
                     const a = this.segmentIndex;
                     this.segmentIndex += 1;
                     const r = s({ media_id: this.mediaId, segment_index: String(a) }),
-                        l = this._sendXhr(
+                        o = this._sendXhr(
                             "POST",
                             "APPEND",
                             r,
@@ -960,7 +1055,7 @@
                             () => this._startNextAppendSegment(),
                             i,
                         );
-                    this.inflightSegments.set(a, { bytes: i, request: l });
+                    this.inflightSegments.set(a, { bytes: i, request: o });
                 }
                 _postFinalize() {
                     if (this.uploadOptions.pauseBeforeFinalize) (this.state = S.PAUSED), this.uploadOptions.pause && this.uploadOptions.pause();
@@ -1051,7 +1146,7 @@
                         i.segmentBytes && (n.appendByteSize = i.segmentBytes), this.uploadOptions.stats(n);
                     }
                 }
-                _sendXhr(e, t, i, n, s, r, l, d, u = 0) {
+                _sendXhr(e, t, i, n, s, r, o, d, u = 0) {
                     const c = `${this.uploadUrl}?command=${t}${i}`;
                     let h = !1;
                     const m = new Date(),
@@ -1059,7 +1154,7 @@
                             if (r) {
                                 const a = [c, r].join("-");
                                 this.timeoutIdMap[a] = setTimeout(() => {
-                                    this._sendXhr(e, t, i, n, s, r - 1, l, d, u);
+                                    this._sendXhr(e, t, i, n, s, r - 1, o, d, u);
                                 }, y);
                             } else w(a);
                         },
@@ -1085,12 +1180,12 @@
                         E ? e.loaded === e.total && this._bitrateMonitor?.uploadFinish(c, e.total) : ((E = !0), this._bitrateMonitor?.uploadStart(c, e.loaded));
                         const t = e.loaded,
                             i = ((this.uploadedBytes + t) / this.totalBytes) * 100;
-                        if ((this._notifyProgress(i, this.mediaId), t / e.total > f && !h && ((h = !0), l))) {
+                        if ((this._notifyProgress(i, this.mediaId), t / e.total > f && !h && ((h = !0), o))) {
                             const e = Math.max(1, new Date().getTime() - m.getTime()),
                                 i = this.minSegmentBytes,
                                 n = this.sruParameterOverrides?.maxSegmentBytes;
                             (this.nextSegmentBytes = (function (e) {
-                                const t = e.idealUploadTimeMs || o,
+                                const t = e.idealUploadTimeMs || l,
                                     i = e.sentBytes / e.uploadTimeMs;
                                 return a(Math.round(t * i), e.minSegmentBytes, e.maxSegmentBytes);
                             })({ minSegmentBytes: i, sentBytes: t, uploadTimeMs: e, maxSegmentBytes: n, idealUploadTimeMs: this.sruParameterOverrides?.idealUploadTimeMs })),
@@ -1098,7 +1193,7 @@
                         }
                     };
                     for (const e in this.sruHeaders) S.setRequestHeader(e, this.sruHeaders[e]);
-                    return l ? S.send(l) : S.send(), S;
+                    return o ? S.send(o) : S.send(), S;
                 }
             }
             const c = 2147483647,
@@ -1133,14 +1228,14 @@
                 s = i(807400),
                 a = i(396616),
                 r = i(730895),
-                l = i(824229),
-                o = n.RegExp,
-                d = o.prototype;
+                o = i(824229),
+                l = n.RegExp,
+                d = l.prototype;
             s &&
-                l(function () {
+                o(function () {
                     var e = !0;
                     try {
-                        o(".", "d");
+                        l(".", "d");
                     } catch (t) {
                         e = !1;
                     }
@@ -1162,4 +1257,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.HoverCard-6107ac1a.caf05cda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.HoverCard-6107ac1a.12dbb21a.js.map

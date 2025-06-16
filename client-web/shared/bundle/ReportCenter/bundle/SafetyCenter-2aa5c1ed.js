@@ -426,11 +426,11 @@
                     })(Y);
                 if (A.B(Y)) return i.createElement(S.Z, { tweet: Y });
                 if (Y.card && m.default.isSpaceCard(Y.card.name)) return i.createElement(a.Z, { style: D.gap }, i.createElement(x.Z, { audioSpaceId: Y.card?.binding_values.id?.string_value, clipMetadata: Y.card?.binding_values.clip_metadata?.string_value }));
-                const oe = j.isVerticalVideoNoBlackBars(),
-                    se = d && re > 0 && (ee || X),
-                    de = ie * (ee ? te : Math.max(1, te)),
-                    le = oe && X && te < 1 ? te : void 0;
-                return i.createElement(a.Z, { ref: W, style: [se && { maxWidth: de }, le ? D.squareRow : void 0] }, i.createElement(M.Z, { authorId: Y.user.id_str, authorScreenName: Y.user.screen_name, cacheLocationKey: w || B, customHoverBackgroundColor: ne && J ? ae : void 0, displayMediaAttribution: !0, displayMediaMetadata: r, enableKeyboardShortcuts: o, forwardPivotInfo: s, hasSensitiveMedia: Y.possibly_sensitive, loggedInUserId: l, mediaAltTranslations: u, mediaContentStyles: [G({ withEdgeToEdgeContent: J, withHalvedMediaSize: H, backgroundColor: ae, withMaxHeight: ne })], mediaDetails: t, mediaMaxHeight: ne ? ie : void 0, mediaTagsLink: `${Y.permalink}/media_tags`, mediaVisibilityResults: Y.mediaVisibilityResults || e.tweet.mediaVisibilityResults, nudges: h, onClick: C, onClickMediaTags: T, onGrokClick: g, onPlaybackStarted: b, parentTweetId: e.tweet.id_str, preventPlayback: y, promotedContent: _, renderPrerollActionMenu: v, shouldShowAltLabelAlways: L, showAltTranslation: I, showBorder: !(ne && J), showRoundCorners: O, singleImageMaxAspectRatio: k, singleImageMinAspectRatio: E, style: [ne && !J && D.explicitlySized, le ? { aspectRatio: te } : void 0], tweetCreatedAt: Y.created_at, tweetId: Y.id_str, tweetText: Y.text, videoAspectRatio: le, withCenterCrop: U, withHalvedMediaSize: H, withMediaTagsIcon: N, withPostPlayback: !0 }));
+                const oe = j.isVerticalVideoNoBlackBars() && X && te < 1,
+                    se = ee ? te : X ? (oe ? te : Math.max(1, te)) : void 0,
+                    de = null != se ? ie * se : void 0,
+                    le = (d && re > 0 && (ee || X)) || oe;
+                return i.createElement(a.Z, { ref: W, style: le && { maxWidth: de } }, i.createElement(M.Z, { authorId: Y.user.id_str, authorScreenName: Y.user.screen_name, cacheLocationKey: w || B, customHoverBackgroundColor: ne && J ? ae : void 0, displayMediaAttribution: !0, displayMediaMetadata: r, enableKeyboardShortcuts: o, forwardPivotInfo: s, hasSensitiveMedia: Y.possibly_sensitive, loggedInUserId: l, mediaAltTranslations: u, mediaContentStyles: [G({ withEdgeToEdgeContent: J, withHalvedMediaSize: H, backgroundColor: ae, withMaxHeight: ne })], mediaDetails: t, mediaMaxHeight: ne ? ie : void 0, mediaTagsLink: `${Y.permalink}/media_tags`, mediaVisibilityResults: Y.mediaVisibilityResults || e.tweet.mediaVisibilityResults, nudges: h, onClick: C, onClickMediaTags: T, onGrokClick: g, onPlaybackStarted: b, parentTweetId: e.tweet.id_str, preventPlayback: y, promotedContent: _, renderPrerollActionMenu: v, shouldShowAltLabelAlways: L, showAltTranslation: I, showBorder: !(ne && J), showRoundCorners: O, singleImageMaxAspectRatio: k, singleImageMinAspectRatio: E, style: ne && !J && D.explicitlySized, tweetCreatedAt: Y.created_at, tweetId: Y.id_str, tweetText: Y.text, videoAspectRatio: oe ? te : void 0, withCenterCrop: U, withHalvedMediaSize: H, withMediaTagsIcon: N, withPostPlayback: !0 }));
             }
             function G(e) {
                 const { backgroundColor: t, isInQuoteTweet: n = !1, withEdgeToEdgeContent: r, withHalvedMediaSize: i, withMaxHeight: a } = e;
@@ -454,4 +454,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReportCenter~bundle.SafetyCenter-2aa5c1ed.b5d86aea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReportCenter~bundle.SafetyCenter-2aa5c1ed.7d9c12aa.js.map

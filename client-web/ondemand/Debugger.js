@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.Debugger", "icons/IconChevronDown-js"],
+    ["ondemand.Debugger"],
     {
         232678: (e, t, n) => {
             n.r(t), n.d(t, { default: () => $e });
@@ -15,8 +15,8 @@
                 d = n(576648),
                 h = n(325686),
                 f = n(370006),
-                m = n(138099),
-                p = n(786998),
+                p = n(138099),
+                m = n(786998),
                 g = n(143670),
                 w = n(392237),
                 y = n(939419),
@@ -130,14 +130,14 @@
             const Z = "application/font-woff",
                 L = "image/jpeg",
                 I = { woff: Z, woff2: Z, ttf: "application/font-truetype", eot: "application/vnd.ms-fontobject", png: "image/png", jpg: L, jpeg: L, gif: "image/gif", tiff: "image/tiff", svg: "image/svg+xml", webp: "image/webp" };
-            function D(e) {
+            function M(e) {
                 const t = (function (e) {
                     const t = /\.([^./]*?)$/g.exec(e);
                     return t ? t[1] : "";
                 })(e).toLowerCase();
                 return I[t] || "";
             }
-            function M(e) {
+            function D(e) {
                 return -1 !== e.search(/^(data:)/);
             }
             function F(e, t) {
@@ -202,7 +202,7 @@
                                 return (t.width = e.clientWidth), (t.height = e.clientHeight), null == n || n.drawImage(e, 0, 0, t.width, t.height), _(t.toDataURL());
                             }
                             const n = e.poster,
-                                r = D(n);
+                                r = M(n);
                             return _(await B(n, r, t));
                         })(e, t)
                       : R(e, HTMLIFrameElement)
@@ -322,7 +322,7 @@
                                   return n.head.appendChild(r), n.body.appendChild(o), t && (r.href = t), (o.href = e), o.href;
                               })(t, n)
                             : t,
-                        a = D(t);
+                        a = M(t);
                     let s;
                     if (o) {
                         s = F(await o(i), a);
@@ -355,7 +355,7 @@
                     })(e, n),
                     o = (function (e) {
                         const t = [];
-                        return e.replace(U, (e, n, r) => (t.push(r), e)), t.filter((e) => !M(e));
+                        return e.replace(U, (e, n, r) => (t.push(r), e)), t.filter((e) => !D(e));
                     })(r);
                 return o.reduce((e, r) => e.then((e) => Y(e, r, t, n)), Promise.resolve(r));
             }
@@ -375,9 +375,9 @@
                     })(e, t),
                     await (async function (e, t) {
                         const n = R(e, HTMLImageElement);
-                        if ((!n || M(e.src)) && (!R(e, SVGImageElement) || M(e.href.baseVal))) return;
+                        if ((!n || D(e.src)) && (!R(e, SVGImageElement) || D(e.href.baseVal))) return;
                         const r = n ? e.src : e.href.baseVal,
-                            o = await B(r, D(r), t);
+                            o = await B(r, M(r), t);
                         await new Promise((r, i) => {
                             (e.onload = r),
                                 (e.onerror = t.onImageErrorHandler
@@ -603,8 +603,8 @@
                 de = n(855488),
                 he = n(731708),
                 fe = n(451566),
-                me = n(242454),
-                pe = n(40610),
+                pe = n(242454),
+                me = n(40610),
                 ge = n(323265),
                 we = n(497088),
                 ye = n(125363);
@@ -624,8 +624,8 @@
                     i = (0, b.p)(),
                     [a, s] = r.useState(be[0]),
                     [l, d] = r.useState(""),
-                    [f, m] = r.useState(""),
-                    [p, g] = r.useState(""),
+                    [f, p] = r.useState(""),
+                    [m, g] = r.useState(""),
                     [w, y] = r.useState(!1),
                     [v, E] = r.useState(),
                     x = ge.ZP.browserString(),
@@ -638,8 +638,8 @@
                     null,
                     r.createElement(ue.ZP, { label: "Where did we go wrong?", onChange: (e, t) => s(be[t]), options: be, value: a.value }),
                     r.createElement(de.Z, { label: "Summary", multiline: !0, name: "summary", onChange: (e) => d(e.target.value), style: Ee.formTextInput, value: l }),
-                    r.createElement(de.Z, { label: "Expected result (optional)", multiline: !0, name: "expected", onChange: (e) => m(e.target.value), style: Ee.formTextInput, value: f }),
-                    r.createElement(de.Z, { label: "Actual result (optional)", multiline: !0, name: "actual", onChange: (e) => g(e.target.value), style: Ee.formTextInput, value: p }),
+                    r.createElement(de.Z, { label: "Expected result (optional)", multiline: !0, name: "expected", onChange: (e) => p(e.target.value), style: Ee.formTextInput, value: f }),
+                    r.createElement(de.Z, { label: "Actual result (optional)", multiline: !0, name: "actual", onChange: (e) => g(e.target.value), style: Ee.formTextInput, value: m }),
                     r.createElement(
                         h.Z,
                         { style: Ee.switch },
@@ -664,21 +664,21 @@
                             value: !!v,
                         }),
                     ),
-                    r.createElement(me.Z, {
+                    r.createElement(pe.Z, {
                         color: "primary",
                         disabled: !l.length || w,
                         label: w ? "Loading" : "Submit",
                         onPress: function () {
                             const r = `Bug report: ${a.label}`;
                             let s = `Summary:%0A${l}%0A%0A`;
-                            f.length && (s += `Expected:%0A${f}%0A%0A`), p.length && (s += `Actual:%0A${p}%0A%0A`), (s += `User agent:%0A${$}%0A%0A`), u.MK && (s += `Sha:%0A${u.MK}%0A%0A`);
+                            f.length && (s += `Expected:%0A${f}%0A%0A`), m.length && (s += `Actual:%0A${m}%0A%0A`), (s += `User agent:%0A${$}%0A%0A`), u.MK && (s += `Sha:%0A${u.MK}%0A%0A`);
                             const c = JSON.stringify(we.InMemoryCache.flush()),
                                 d = o.getState(),
                                 h = JSON.stringify({ entities: d.entities, featureSwitch: { customOverrides: { ...d.featureSwitch.customOverrides }, user: { ...d.featureSwitch.user } }, multiAccount: d.multiAccount, ocf: d.ocf, pinnedTimelines: d.pinnedTimelines, tweetComposer: d.tweetComposer, urt: d.urt }),
-                                m = Date.now(),
-                                g = `https://ton.x.com/i/ton/data/web-logs/debug/${n || ""}-network-${m}.json`,
-                                w = `https://ton.x.com/i/ton/data/web-logs/debug/${n || ""}-state-${m}.json`,
-                                b = `https://ton.x.com/i/ton/data/web-logs/debug/${n || ""}-screenshot-${m}.png`;
+                                p = Date.now(),
+                                g = `https://ton.x.com/i/ton/data/web-logs/debug/${n || ""}-network-${p}.json`,
+                                w = `https://ton.x.com/i/ton/data/web-logs/debug/${n || ""}-state-${p}.json`,
+                                b = `https://ton.x.com/i/ton/data/web-logs/debug/${n || ""}-screenshot-${p}.png`;
                             y(!0),
                                 Promise.all([
                                     fetch(w, { body: h, credentials: "include", method: "POST" }).then((e) => {
@@ -708,7 +708,7 @@
                                     });
                         },
                     }),
-                    r.createElement(pe.Z.Primary, { headline: "Device information", text: T, withIcon: !0 }),
+                    r.createElement(me.Z.Primary, { headline: "Device information", text: T, withIcon: !0 }),
                 );
             }
             const Ee = w.default.create((e) => ({ formTextInput: { paddingHorizontal: 0, paddingVertical: 0 }, switch: { flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between" } }));
@@ -732,9 +732,9 @@
                                   },
                               });
                 return r.createElement(
-                    m.Z,
+                    p.Z,
                     { onMaskClick: e, testID: "debugger", type: "bottom", withMask: !0, withNativeMaskColor: !0 },
-                    r.createElement(p.Z, { leftControl: s, title: a, withGutter: !0 }),
+                    r.createElement(m.Z, { leftControl: s, title: a, withGutter: !0 }),
                     r.createElement(
                         h.Z,
                         { style: Ce.container },
@@ -761,8 +761,8 @@
                 const n = (0, o.Dv)(l.L$),
                     { featureSwitches: u } = r.useContext(c.rC),
                     [d, h] = r.useState(!1),
-                    [f, m] = r.useState(!1),
-                    p = r.useRef(null),
+                    [f, p] = r.useState(!1),
+                    m = r.useRef(null),
                     g = r.useRef({ offsetX: 0, offsetY: 0, startX: 0, startY: 0 }),
                     w = r.useRef({ x: -64, y: -64 }),
                     y = r.useMemo(
@@ -774,7 +774,7 @@
                     ),
                     b = r.useCallback(
                         (e, t, n = !1) => {
-                            const r = p.current;
+                            const r = m.current;
                             if (!r) return;
                             const { height: o, width: i } = r.getBoundingClientRect(),
                                 a = Math.max(0, Math.min(e, window.innerWidth - i)),
@@ -790,7 +790,7 @@
                         });
                     }, [n, e, t, b]),
                     r.useEffect(() => {
-                        const e = p.current;
+                        const e = m.current;
                         if (!e) return;
                         function t(e, t) {
                             b(e - g.current.offsetX, t - g.current.offsetY, !0);
@@ -803,7 +803,7 @@
                         }
                         function o(e, t) {
                             h(!1);
-                            Math.abs(e - g.current.startX) < 5 && Math.abs(t - g.current.startY) < 5 && m(!0), y(w.current.x, w.current.y);
+                            Math.abs(e - g.current.startX) < 5 && Math.abs(t - g.current.startY) < 5 && p(!0), y(w.current.x, w.current.y);
                         }
                         function i(e) {
                             o(e.clientX, e.clientY), window.removeEventListener("mousemove", n), window.removeEventListener("mouseup", i);
@@ -836,11 +836,11 @@
                         ? r.createElement(
                               r.Fragment,
                               null,
-                              r.createElement(i.ZP, { "aria-label": "debugger", borderColor: "buttonWhite", icon: r.createElement(a.default, null), ref: p, size: "small", style: { position: "fixed", start: `${w.current.x}px`, top: `${w.current.y}px`, transition: "transform 0.2s", transform: `scale(${d ? "1.2" : "1"})` }, type: "primaryFilled" }),
+                              r.createElement(i.ZP, { "aria-label": "debugger", borderColor: "buttonWhite", icon: r.createElement(a.default, null), ref: m, size: "small", style: { position: "fixed", start: `${w.current.x}px`, top: `${w.current.y}px`, transition: "transform 0.2s", transform: `scale(${d ? "1.2" : "1"})` }, type: "primaryFilled" }),
                               f &&
                                   r.createElement(xe, {
                                       onClose: function () {
-                                          m(!1);
+                                          p(!1);
                                       },
                                   }),
                           )
@@ -913,8 +913,8 @@
                 d = n(392237);
             const h = r.forwardRef((e, t) => (0, c.Z)("select", { ...e, ref: t })),
                 f = (e) => (0, c.Z)("option", e);
-            let m = 1;
-            class p extends r.PureComponent {
+            let p = 1;
+            class m extends r.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._selectRef = r.createRef()),
@@ -932,22 +932,22 @@
                             const { onFocus: t } = this.props;
                             this.setState({ isFocused: !0 }), t && t();
                         }),
-                        (this._id = `SELECTOR_${m}`),
+                        (this._id = `SELECTOR_${p}`),
                         (this._errorID = `${this._id}_ERROR`),
                         (this._helperID = `${this._id}_HELP`),
                         (this._labelID = `${this._id}_LABEL`),
-                        (m += 1);
+                        (p += 1);
                 }
                 componentDidMount() {
                     this.props.autofocus && this._selectRef && this._selectRef.current && this._selectRef.current.focus();
                 }
                 render() {
-                    const { "aria-describedby": e, disabled: t, errorText: n, hasError: c, helperText: m, options: p, style: w, testID: y, value: b, withEmptyOption: v } = this.props,
+                    const { "aria-describedby": e, disabled: t, errorText: n, hasError: c, helperText: p, options: m, style: w, testID: y, value: b, withEmptyOption: v } = this.props,
                         { isFocused: E } = this.state,
                         x = l.ZP.getLanguage(),
                         C = void 0 === c ? !!n : c,
                         S = new Set();
-                    n && S.add(this._errorID), e && S.add(e), m && S.add(this._helperID);
+                    n && S.add(this._errorID), e && S.add(e), p && S.add(this._helperID);
                     const $ = S.size ? [...S].join(" ") : void 0;
                     return r.createElement(
                         r.Fragment,
@@ -962,7 +962,7 @@
                                     h,
                                     { "aria-describedby": $, "aria-invalid": C, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [g.select, { fontFamily: l }, t && s.Z.disabled], testID: y || "", value: b },
                                     v ? r.createElement(f, { disabled: !0, style: g.option, value: "" }) : null,
-                                    p.map((e) => {
+                                    m.map((e) => {
                                         const { disabled: t, label: n, value: o } = e;
                                         return r.createElement(f, { disabled: t, key: `${n}-${o}`, style: g.option, value: o }, n);
                                     }),
@@ -970,7 +970,7 @@
                                 r.createElement(i.default, { style: [g.dropdownCaret, E && s.Z.validColor, !(!c && !n) && s.Z.invalidColor] }),
                             );
                         }),
-                        m ? this._renderHelperText() : null,
+                        p ? this._renderHelperText() : null,
                         C && n ? this._renderErrorText() : null,
                     );
                 }
@@ -986,27 +986,14 @@
                     return r.createElement(o.Z, { "aria-live": "polite" }, r.createElement(l.ZP, { color: "red500", id: this._errorID, style: g.helperText }, this.props.errorText));
                 }
             }
-            p.defaultProps = { disabled: !1, autofocus: !1, withEmptyOption: !1 };
+            m.defaultProps = { disabled: !1, autofocus: !1, withEmptyOption: !1 };
             const g = d.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
-                w = p;
+                w = m;
         },
         183806: (e, t, n) => {
             n.d(t, { Z: () => r });
             const r = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        487552: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => l });
-            var r = n(202784),
-                o = n(890601),
-                i = n(783427),
-                a = n(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Debugger.f9f319ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Debugger.4c72f8ca.js.map

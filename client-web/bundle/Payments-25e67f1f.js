@@ -423,7 +423,7 @@
                 y = n(980407),
                 h = n(514639),
                 g = n(445664),
-                b = n(351990),
+                b = n(412450),
                 E = n(535338),
                 f = n(615027),
                 P = n(281838),
@@ -931,4 +931,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-25e67f1f.e52a551a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-25e67f1f.bfccfcba.js.map

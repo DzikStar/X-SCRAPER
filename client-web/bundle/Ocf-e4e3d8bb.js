@@ -6,116 +6,51 @@
             r.d(t, { Z: () => n });
             const n = () => r.e("ondemand.qrcode").then(r.t.bind(r, 374061, 19));
         },
-        376293: (e, t, r) => {
-            r.d(t, { $f: () => O, KV: () => y, LI: () => x, SC: () => T, Vt: () => h, ed: () => A, op: () => E });
-            var n = r(202784),
-                o = r(190286),
-                i = r(111677),
-                s = r.n(i),
-                a = r(616894),
-                c = r(314948),
-                l = r(516951),
-                d = r(163390);
-            const u = s().cfd2f35e,
-                p = s().f9e45cfb,
-                f = s().fcd4d489,
-                g = s().a6450e84,
-                b = s().g353ad73,
-                m = s().ad00a739,
-                y = s().a9fd20be,
-                k = s().j546fb79,
-                v = s().c9623eeb,
-                h = s().e133be4e,
-                w = s().he43bca4,
-                C = s().f5f01af6,
-                T = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                O = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: g, text: t ? m({ screenName: e }) : b({ screenName: e }) }),
-                E = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: r, source: n, testID: o, unblockAction: i, unblockSubtext: s, user: a }) => {
-                    let c,
-                        u = l.Z;
-                    const p = x(a, r);
-                    switch (n) {
-                        case T.PROFILE:
-                        case T.LIST_DETAIL:
-                        case T.FOLLOWERS_LIST:
-                            u = () => {
-                                a.blocking ? i(p) : e(p);
-                            };
-                            break;
-                        case T.TWEET:
-                        case T.TWEET_CARET:
-                        case T.RICH_FEEDBACK:
-                            (c = d.uq.block),
-                                (u = () => {
-                                    a.blocking ? i(p) : e(p);
-                                });
-                    }
-                    return { confirmation: p, onClick: u, testID: o, shortcutKey: c, Icon: S(a.blocking), text: D(a), subText: _({ user: a, blockSubtext: t, unblockSubtext: s }) };
-                },
-                S = (e) => (e ? c.default : a.default),
-                _ = ({ blockSubtext: e, unblockSubtext: t, user: r }) => (!r.blocking && e ? e(r.screen_name) : r.blocking ? t : void 0),
-                D = (e) => (e.blocking ? v({ screenName: e.screen_name }) : f({ screenName: e.screen_name })),
-                x = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: k({ screenName: e }), label: h, text: t ? C : w }))(e.screen_name, t) : O(e.screen_name, t)),
-                A = ({ confirmation: e, handleConfirm: t, onClose: r }) => {
-                    const { confirmButtonType: i, headline: s, label: a, text: c } = e;
-                    return n.createElement(o.Z, { cancelButtonLabel: u, confirmButtonLabel: a, confirmButtonType: i, headline: s, onCancel: r, onConfirm: t, text: c });
-                };
-        },
-        712816: (e, t, r) => {
-            r.d(t, { d: () => o });
-            var n = r(111677);
-            const o = { defaultToast: { text: r.n(n)().b6878b0a }, showToast: !0 };
-        },
         511473: (e, t, r) => {
-            r.d(t, { rf: () => l, uJ: () => u });
+            r.d(t, { rf: () => l, uJ: () => p });
             var n = r(111677),
-                o = r.n(n),
-                i = r(71620),
-                s = r(389073),
-                a = r(615656);
-            const c = o().e4ff75aa,
-                l = o().e4f6bd9e,
-                d = { [s.Z.Offline]: c },
-                u = (e, t, r) => {
+                i = r.n(n),
+                a = r(71620),
+                o = r(389073),
+                s = r(615656);
+            const c = i().e4ff75aa,
+                l = i().e4f6bd9e,
+                d = { [o.Z.Offline]: c },
+                p = (e, t, r) => {
                     let n;
-                    const o = {
-                        [a.ZP.AccessDeniedByBouncer]: {
+                    const i = {
+                        [s.ZP.AccessDeniedByBouncer]: {
                             customAction: (t) => {
-                                (0, i.BJ)(t, { flow: e });
+                                (0, a.BJ)(t, { flow: e });
                             },
                         },
                     };
-                    if (r) n = { ...o, customErrorHandler: ({ errors: [n] }) => (n.code === a.ZP.AccessDeniedByBouncer ? (0, i.BJ)(n, { flow: e }) : r(t || (n.code && d[n.code]) || l), []) };
+                    if (r) n = { ...i, customErrorHandler: ({ errors: [n] }) => (n.code === s.ZP.AccessDeniedByBouncer ? (0, a.BJ)(n, { flow: e }) : r(t || (n.code && d[n.code]) || l), []) };
                     else if (t) {
                         const e = { toast: { text: t } };
-                        n = { [a.ZP.ValidationFailure]: e, [a.ZP.OnboardingFlowRetriableFailure]: e, [a.ZP.OnboardingFlowFailure]: e, defaultToast: { text: t }, showToast: !0, ...o };
-                    } else n = { ...o, [s.Z.Offline]: { toast: { text: d[s.Z.Offline] } }, defaultToast: { text: l }, showToast: !0 };
+                        n = { [s.ZP.ValidationFailure]: e, [s.ZP.OnboardingFlowRetriableFailure]: e, [s.ZP.OnboardingFlowFailure]: e, defaultToast: { text: t }, showToast: !0, ...i };
+                    } else n = { ...i, [o.Z.Offline]: { toast: { text: d[o.Z.Offline] } }, defaultToast: { text: l }, showToast: !0 };
                     return n;
                 };
         },
-        879596: (e, t, r) => {
-            r.d(t, { D: () => o });
-            var n = r(111677);
-            const o = { defaultToast: { text: r.n(n)().ca96fe6e }, showToast: !0 };
-        },
         396987: (e, t, r) => {
-            r.d(t, { QF: () => a, Qo: () => c, hZ: () => s });
+            r.d(t, { QF: () => s, Qo: () => c, hZ: () => o });
             var n = r(918621);
-            const o = "external_referer",
-                i = 604800;
-            function s(e) {
-                return (0, n.ej)({ cookieName: o, featureSwitches: e });
+            const i = "external_referer",
+                a = 604800;
+            function o(e) {
+                return (0, n.ej)({ cookieName: i, featureSwitches: e });
             }
-            function a(e, t) {
+            function s(e, t) {
                 const r = (t && t.encryptedReferralDetails) || "",
-                    s = (t && t.encryptedReferer) || "",
-                    a = t && void 0 !== t.referralType ? `${t.referralType}` : "";
-                if (!r && !s && !a) return;
-                const c = `${encodeURIComponent(s)}|${a}|${encodeURIComponent(r)}`;
-                (0, n.d8)(o, c, { cookieOptions: { maxAge: i, encode: (e) => e }, featureSwitches: e });
+                    o = (t && t.encryptedReferer) || "",
+                    s = t && void 0 !== t.referralType ? `${t.referralType}` : "";
+                if (!r && !o && !s) return;
+                const c = `${encodeURIComponent(o)}|${s}|${encodeURIComponent(r)}`;
+                (0, n.d8)(i, c, { cookieOptions: { maxAge: a, encode: (e) => e }, featureSwitches: e });
             }
             const c = (e) => {
-                const t = s(e);
+                const t = o(e);
                 if (t && t.split("|").length > 1) {
                     const e = t.split("|");
                     return { encryptedReferer: e[0], referralType: e[1], encryptedReferralDetails: e[2] };
@@ -128,9 +63,9 @@
                     const t = (JSON.stringify(e) || "").split("");
                     t.sort();
                     const r = t.join("");
-                    return o(r, 0).toString();
+                    return i(r, 0).toString();
                 },
-                o = (e, t) => {
+                i = (e, t) => {
                     const r = "string" == typeof e ? e : String(e);
                     let n = t;
                     for (let e = 0; e < r.length; e++) {
@@ -139,92 +74,34 @@
                     return n;
                 };
         },
-        163390: (e, t, r) => {
-            r.d(t, { OX: () => p, Od: () => d, PN: () => f, uq: () => l, wR: () => b });
-            var n = r(251067),
-                o = r(522171),
-                i = r(111677),
-                s = r.n(i),
-                a = r(912021),
-                c = r(323265);
-            const l = Object.freeze({ toggleCommandCenter: "mod+k", openKeyboardShortcuts: "?", swipeLeft: "left", swipeRight: "right", nextItem: "j", previousItem: "k", refresh: ".", nightMode: "z", bookmark: "b", block: "x", mute: "u", newTweet: "n", newMessage: "m", toggleDMDrawer: "i", goHome: "g h", goExplore: "g e", goNotifications: "g n", goMentions: "g r", goProfile: "g p", goLikes: "g l", goLists: "g i", goMessages: "g m", goGrok: "g g", goToDrafts: "g f", goToScheduled: "g t", goSettings: "g s", goToUser: "g u", goBookmarks: "g b", goTopArticles: "g a", goDisplay: "g d", search: "/", audio: { dock: "a d", play: "a space", mute: "a m" }, video: { play1: "k", play2: "space", mute: "m" }, columns: { createNewColumn: "c n", duplicateColumn: "c d", focusOnReorderButton: "c r", lastColumn: "c 0", nextColumn: "]", nthColumn: "c 1..9", prevColumn: "[", removeColumn: "c backspace", toggleColumnOptions: "c o", undoRemoveColumn: "c u" }, decks: { createNewDeck: "d n", editActiveDeck: "d e", lastPinnedDeck: "d 0", manageAllDecks: "d m", nthPinnedDeck: "d 1..9" }, labs: { openCommandCenter: ">" } }),
-                d = (0, a.Z)((e) => {
-                    const t = e ? [{ description: s().b7fa0cfe, keys: l.goTopArticles, universal: !1 }] : [];
-                    return [...((0, n.fH)(n.vw.prod) ? [] : [{ description: "Toggle Command Center", keys: `${u} k`, universal: !1 }]), { description: s().d5696fcc, keys: l.openKeyboardShortcuts, universal: !0 }, { description: s().a83d4280, keys: l.nextItem, universal: !0 }, { description: s().g0048656, keys: l.previousItem, universal: !0 }, { description: s().a690c4d0, keys: "Space", universal: !0 }, { description: s().e893811a, keys: l.refresh, universal: !1 }, { description: s().ha8209bc, keys: l.goHome, universal: !1 }, { description: s().fcf3e54c, keys: l.goExplore, universal: !1 }, { description: s().eb75875e, keys: l.goNotifications, universal: !1 }, { description: s().cdb53d7a, keys: l.goMentions, universal: !1 }, { description: s().fa98627a, keys: l.goProfile, universal: !1 }, { description: s().d4ebc798, keys: l.goToDrafts, universal: !1 }, { description: s().fd6a3f30, keys: l.goToScheduled, universal: !1 }, { description: s().d7b8ebaa, keys: l.goLikes, universal: !1 }, { description: s().b0041756, keys: l.goLists, universal: !1 }, { description: s().d4986f86, keys: l.goMessages, universal: !1 }, { description: s().h5860a68, keys: l.goGrok, universal: !1 }, { description: s().bb081ea2, keys: l.goSettings, universal: !1 }, { description: s().i3145aa0, keys: l.goBookmarks, universal: !1 }, ...t, { description: s().eee2ed92, keys: l.goToUser, universal: !1 }, { description: s().ee5ccf3e, keys: l.goDisplay, universal: !1 }];
-                }),
-                u = c.ZP.isMac() ? "⌘" : "CTRL",
-                p = () => [
-                    { description: s().ab3d53f8, keys: l.newTweet, universal: !1 },
-                    { description: s().de94bda6, keys: `${u} Enter`, universal: !1 },
-                    { description: s().e736990a, keys: l.newMessage, universal: !1 },
-                    { description: s().a9ae1e78, keys: l.search, universal: !1 },
-                    { description: s().fe731016, keys: o.Z.shortcuts.like, universal: !1 },
-                    { description: s().d17df548, keys: o.Z.shortcuts.reply, universal: !1 },
-                    { description: s().g062295e, keys: o.Z.shortcuts.retweet, universal: !1 },
-                    { description: s().h01621a4, keys: o.Z.shortcuts.share, universal: !0 },
-                    { description: s().gb303814, keys: l.bookmark, universal: !1 },
-                    { description: s().c03b1126, keys: l.mute, universal: !1 },
-                    { description: s().ebd2abb2, keys: l.block, universal: !1 },
-                    { description: s().hc6c5510, keys: "Enter", universal: !0 },
-                    { description: s().eebdef38, keys: o.Z.shortcuts.openMediaModal, universal: !0 },
-                    { description: s().b488758c, keys: l.toggleDMDrawer, universal: !1 },
-                ],
-                f = () => [
-                    { description: s().c82314e0, keys: l.video.play1, universal: !0 },
-                    { description: s().c82314e0, keys: l.video.play2, universal: !0 },
-                    { description: s().b881560e, keys: l.video.mute, universal: !0 },
-                    { description: s().a94f7302, keys: l.audio.dock, universal: !1 },
-                    { description: s().a7e604c6, keys: l.audio.play, universal: !1 },
-                    { description: s().f978c4fc, keys: l.audio.mute, universal: !1 },
-                ],
-                g = (0, a.Z)((e) => {
-                    const t = d(e),
-                        r = p(),
-                        n = f(),
-                        o = {};
-                    return (
-                        [...r, ...n, ...t].forEach(({ description: e, keys: t }) => {
-                            Array.isArray(t)
-                                ? t.forEach((t) => {
-                                      o[t] = e;
-                                  })
-                                : (o[t] = e);
-                        }),
-                        JSON.stringify(o)
-                    );
-                }),
-                b = (e, t) => {
-                    if (t) return { dataSet: { "at-shortcutkeys": g(e) } };
-                };
-        },
         221973: (e, t, r) => {
             r.d(t, { ZP: () => c });
             r(694898), r(38857), r(540171), r(157093), r(265688), r(270315), r(592529), r(86943), r(691157), r(875640);
             const n = Object.freeze({ enrollment: "enrollment", verification: "verification" }),
-                o = (e) => {
+                i = (e) => {
                     const t = new Uint8Array(e);
                     let r = "";
-                    return t.forEach((e) => (r += String.fromCharCode(e))), i(btoa(r));
+                    return t.forEach((e) => (r += String.fromCharCode(e))), a(btoa(r));
                 },
-                i = (e) => e.replace(/\+/g, "-").replace(/(\/)/g, "_").replace(/=/g, ""),
-                s = (e) => {
+                a = (e) => e.replace(/\+/g, "-").replace(/(\/)/g, "_").replace(/=/g, ""),
+                o = (e) => {
                     const t = (r = e).replace(/-/g, "+").replace(/_/g, "/") + "====".substring(0, (4 - (r.length % 4)) % 4);
                     var r;
                     const n = window.atob(t);
                     return new Uint8Array(n.length).map((e, t) => n.charCodeAt(t)).buffer;
                 },
-                a = window.__CHALLENGE_2FA__;
+                s = window.__CHALLENGE_2FA__;
             delete window.__CHALLENGE_2FA__;
             const c = (e, t) => {
-                if (a) return Promise.resolve(a);
+                if (s) return Promise.resolve(s);
                 const r = ((e, t) => {
                     if (t === n.enrollment) {
-                        const t = { publicKey: { challenge: s(e.challenge), rp: e.rp, user: { ...e.user, id: s(e.user.id) }, pubKeyCredParams: e.pubKeyCredParams, attestation: e.attestation, excludeCredentials: e.excludeCredentials.map((e) => ({ ...e, id: s(e.id) })), extensions: e.extensions, timeout: 6e4, authenticatorSelection: { authenticatorAttachment: "cross-platform", userVerification: "discouraged" } } };
+                        const t = { publicKey: { challenge: o(e.challenge), rp: e.rp, user: { ...e.user, id: o(e.user.id) }, pubKeyCredParams: e.pubKeyCredParams, attestation: e.attestation, excludeCredentials: e.excludeCredentials.map((e) => ({ ...e, id: o(e.id) })), extensions: e.extensions, timeout: 6e4, authenticatorSelection: { authenticatorAttachment: "cross-platform", userVerification: "discouraged" } } };
                         return () => navigator.credentials?.create(t) || Promise.resolve();
                     }
                     {
                         const { publicKeyCredentialRequestOptions: t } = e,
-                            n = { publicKey: { rpId: t.rpId, extensions: { appid: t.extensions.appid }, challenge: s(t.challenge), userVerification: "discouraged", timeout: 6e4, allowCredentials: ((r = t.allowCredentials), r.map((e) => ({ type: "public-key", id: s(e.id) }))) } };
+                            n = { publicKey: { rpId: t.rpId, extensions: { appid: t.extensions.appid }, challenge: o(t.challenge), userVerification: "discouraged", timeout: 6e4, allowCredentials: ((r = t.allowCredentials), r.map((e) => ({ type: "public-key", id: o(e.id) }))) } };
                         return () => navigator.credentials?.get(n) || Promise.resolve();
                     }
                     var r;
@@ -232,9 +109,9 @@
                 return r().then((e) => {
                     if (e)
                         return ((e, t) => {
-                            const { id: r, response: i, type: s } = e;
-                            let a;
-                            return t === n.enrollment && i.attestationObject ? (a = { id: r, type: s, response: { clientDataJSON: o(i.clientDataJSON), attestationObject: o(i.attestationObject) }, clientExtensionResults: {} }) : t === n.verification && i.authenticatorData && (a = { id: r, type: s, response: { clientDataJSON: o(i.clientDataJSON), authenticatorData: o(i.authenticatorData), signature: o(i.signature), userHandle: "" }, clientExtensionResults: { appid: !0 } }), JSON.stringify(a || "");
+                            const { id: r, response: a, type: o } = e;
+                            let s;
+                            return t === n.enrollment && a.attestationObject ? (s = { id: r, type: o, response: { clientDataJSON: i(a.clientDataJSON), attestationObject: i(a.attestationObject) }, clientExtensionResults: {} }) : t === n.verification && a.authenticatorData && (s = { id: r, type: o, response: { clientDataJSON: i(a.clientDataJSON), authenticatorData: i(a.authenticatorData), signature: i(a.signature), userHandle: "" }, clientExtensionResults: { appid: !0 } }), JSON.stringify(s || "");
                         })(e, t);
                 });
             };
@@ -244,16 +121,16 @@
             const n = Object.freeze({ TopicFollowCount: "topic_follow_count" });
         },
         449850: (e, t, r) => {
-            r.d(t, { Zk: () => o, lq: () => n });
+            r.d(t, { Zk: () => i, lq: () => n });
             Object.freeze({ icon: "icon", bullet_icon: "bullet_icon", image: "image" });
             const n = Object.freeze({ headerTitle: "header_title", headerSubtitle: "header_subtitle", sectionTitle: "section_title", detailText: "detail" }),
-                o = Object.freeze({ TOP: "top", CENTER: "center", BOTTOM: "bottom" });
+                i = Object.freeze({ TOP: "top", CENTER: "center", BOTTOM: "bottom" });
         },
         730996: (e, t, r) => {
-            r.d(t, { W: () => o, g: () => n });
+            r.d(t, { W: () => i, g: () => n });
             r(571372);
             const n = Object.freeze({ AppealTweetWarning: "appealtweet", LimitedDiscoveryAppealTweet: "limiteddiscoveryappealtweet", ProfileOnlyDiscoveryAppealTweet: "profileonlydiscoveryappealtweet", DMConversation: "reportdmconversation", DMMessage: "reportdmconversation", HideCommunityTweet: "hidetweet", Moment: "reportmoment", RemoveCommunityMember: "removecommunitymember", Tweet: "reporttweet", List: "reportlist", User: "reportprofile", Space: "reportspace", AppealSuspension: "appealsuspension", Notification: "notification" });
-            function o(e) {
+            function i(e) {
                 switch (e) {
                     case "appealtweet":
                     case "limiteddiscoveryappealtweet":
@@ -280,62 +157,277 @@
             const n = Object.freeze({ TopicCategory: "topic_category", Topic: "topic" });
         },
         158272: (e, t, r) => {
-            r.d(t, { Kh: () => a, OQ: () => d, iW: () => l, xG: () => u, z_: () => c });
+            r.d(t, { Kh: () => s, OQ: () => d, iW: () => l, xG: () => p, z_: () => c });
             r(875640), r(694898), r(38857), r(540171), r(157093), r(265688), r(270315), r(592529), r(86943), r(691157), r(571372);
             var n = r(111677),
-                o = r.n(n);
-            function i(e) {
+                i = r.n(n);
+            function a(e) {
                 const t = e.replace(/-/g, "+").replace(/_/g, "/"),
                     r = atob(t),
                     n = r.length,
-                    o = new ArrayBuffer(n),
-                    i = new Uint8Array(o);
-                for (let e = 0; e < n; e++) i[e] = r.charCodeAt(e);
-                return o;
+                    i = new ArrayBuffer(n),
+                    a = new Uint8Array(i);
+                for (let e = 0; e < n; e++) a[e] = r.charCodeAt(e);
+                return i;
             }
-            function s(e) {
+            function o(e) {
                 const t = new Uint8Array(e),
                     r = String.fromCharCode(...t);
                 return btoa(r).replace(/\+/g, "-").replace(/(\/)/g, "_").replace(/=/g, "");
             }
-            const a = o().e4f6bd9e,
-                c = o().ac966f94;
+            const s = i().e4f6bd9e,
+                c = i().ac966f94;
             function l() {
                 return "undefined" != typeof window && !!window.PublicKeyCredential;
             }
             function d(e) {
                 const t = JSON.parse(e);
                 return (
-                    (t.challenge = i(t.challenge)),
-                    (t.user.id = i(t.user.id)),
+                    (t.challenge = a(t.challenge)),
+                    (t.user.id = a(t.user.id)),
                     t.excludeCredentials.forEach((e) => {
-                        e.id = i(e.id);
+                        e.id = a(e.id);
                     }),
                     "undefined" != typeof window && navigator.credentials
                         ? navigator.credentials.create({ publicKey: t }).then((e) => {
                               if (!e) throw new Error("NotAllowedError");
-                              return JSON.stringify({ clientExtensionResults: {}, id: e.id, response: { attestationObject: s(e.response.attestationObject), clientDataJSON: s(e.response.clientDataJSON) }, type: e.type });
+                              return JSON.stringify({ clientExtensionResults: {}, id: e.id, response: { attestationObject: o(e.response.attestationObject), clientDataJSON: o(e.response.clientDataJSON) }, type: e.type });
                           })
                         : Promise.reject(new Error("NotAllowedError"))
                 );
             }
-            function u(e) {
+            function p(e) {
                 const t = JSON.parse(e).publicKeyCredentialRequestOptions;
                 return (
-                    (t.challenge = i(t.challenge)),
+                    (t.challenge = a(t.challenge)),
                     "undefined" != typeof window && navigator.credentials
                         ? navigator.credentials.get({ publicKey: t }).then((e) => {
                               if (!e) throw new Error("NotAllowedError");
-                              return JSON.stringify({ clientExtensionResults: { appid: !0 }, id: e.id, response: { authenticatorData: s(e.response.authenticatorData), clientDataJSON: s(e.response.clientDataJSON), signature: s(e.response.signature), userHandle: s(e.response.userHandle) }, type: e.type });
+                              return JSON.stringify({ clientExtensionResults: { appid: !0 }, id: e.id, response: { authenticatorData: o(e.response.authenticatorData), clientDataJSON: o(e.response.clientDataJSON), signature: o(e.response.signature), userHandle: o(e.response.userHandle) }, type: e.type });
                           })
                         : Promise.reject(new Error("NotAllowedError"))
                 );
             }
         },
-        409438: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            const n = Object.freeze({ User: "User", ProfileCard: "ProfileCard", UserCompact: "UserCompact", UserConcise: "UserConcise", UserDetailed: "UserDetailed", PendingFollowUser: "PendingFollowUser", SubscribableUser: "SubscribableUser" });
+        146361: (e, t, r) => {
+            r.d(t, { Z: () => a });
+            var n = r(118823),
+                i = r(990350);
+            const a = (0, n.YW)({ task: (e) => e.withEndpoint(i.Z).task });
+        },
+        996563: (e, t, r) => {
+            r.d(t, { Z: () => a });
+            var n = r(118823),
+                i = r(447281);
+            const a = (0, n.YW)({ task: (e) => e.withEndpoint(i.Z).task });
+        },
+        508765: (e, t, r) => {
+            r.d(t, { C6: () => A, GJ: () => M, HR: () => C, Il: () => N, NJ: () => T, OG: () => H, T_: () => V, Xw: () => y, Ys: () => U, _D: () => O, b4: () => B, ck: () => F, g3: () => v, o8: () => Z, u$: () => I, vW: () => h });
+            var n = r(226395),
+                i = r(499627),
+                a = r(917799),
+                o = r(56519),
+                s = r(497294);
+            const c = `${r(291020).Y}/profile`,
+                l = `rweb/${c}`,
+                d = a.dg(l, "REMOVE_PROFILE_BANNER"),
+                p = a.dg(l, "UPDATE_PROFILE"),
+                E = a.dg(l, "UPDATE_PROFILE_AVATAR"),
+                u = a.dg(l, "UPDATE_PROFILE_BANNER"),
+                f = a.dg(l, "UPLOAD_MEDIA"),
+                _ = Object.freeze({ REQUEST: "rweb/settings/profile/ENABLE_VERIFIED_PHONE_LABEL_REQUEST", SUCCESS: "rweb/settings/profile/ENABLE_VERIFIED_PHONE_LABEL_SUCCESS", FAILURE: "rweb/settings/profile/ENABLE_VERIFIED_PHONE_LABEL_FAILURE" }),
+                m = Object.freeze({ REQUEST: "rweb/settings/profile/DISABLE_VERIFIED_PHONE_LABEL_REQUEST", SUCCESS: "rweb/settings/profile/DISABLE_VERIFIED_PHONE_LABEL_SUCCESS", FAILURE: "rweb/settings/profile/DISABLE_VERIFIED_PHONE_LABEL_FAILURE" }),
+                g = Object.freeze({ REQUEST: "rweb/settings/profile/FETCH_VERIFIED_PHONE_LABEL_REQUEST", SUCCESS: "rweb/settings/profile/FETCH_VERIFIED_PHONE_LABEL_SUCCESS", FAILURE: "rweb/settings/profile/FETCH_VERIFIED_PHONE_LABEL_FAILURE" }),
+                w = { avatarMediaId: null, bannerMediaId: null, isUploading: !1, profileSettings: null };
+            const A = (e) => e[c].avatarMediaId,
+                h = (e) => e[c].bannerMediaId,
+                I = (e) => e[c].profileSettings,
+                S = "rweb/settings/profile/ADD_AVATAR_MEDIA",
+                O = (e) => ({ meta: { mediaId: e }, type: S }),
+                b = "rweb/settings/profile/REMOVE_AVATAR_MEDIA",
+                y = (e) => ({ meta: { mediaId: e }, type: b }),
+                R = "rweb/settings/profile/ADD_BANNER_MEDIA",
+                T = (e) => ({ meta: { mediaId: e }, type: R }),
+                P = "rweb/settings/profile/REMOVE_BANNER_MEDIA",
+                C = (e) => ({ meta: { mediaId: e }, type: P }),
+                N =
+                    () =>
+                    (e, t, { api: r }) =>
+                        a._O(e, { request: r.withEndpoint(n.Z).fetchUserProfilePhoneState, params: {} })({ actionTypes: g, context: "ACTION_FETCH_VERIFIED_PHONE_LABEL" }, (e) => {
+                            if (e) return e;
+                        }),
+                L = "rweb/settings/profile/PERSIST_PROFILE_SETTINGS",
+                v = (e) => ({ meta: { profileSettings: e }, type: L }),
+                D = "rweb/settings/profile/RESET_PERSISTED_PROFILE_SETTINGS",
+                U = () => ({ type: D }),
+                Z =
+                    (e) =>
+                    (t, r, { api: i }) =>
+                        a._O(t, { params: e, request: i.withEndpoint(n.Z).removeProfileBanner })({ actionTypes: d, context: "ACTION_REMOVE_USER_BANNER" }, (e) => {
+                            if (e) return [(0, o.dP)({ users: { [e.id_str]: { ...e, profile_banner_url: null } } })];
+                        }),
+                F =
+                    (e) =>
+                    (t, r, { api: i }) =>
+                        a._O(t, { params: e, request: i.withEndpoint(n.Z).updateProfile })({ actionTypes: p, context: "ACTION_UPDATE_PROFILE_SETTINGS" }, (e) => {
+                            if (e && e.entities) return [(0, o.dP)(e.entities)];
+                        }),
+                x =
+                    (e, t, r) =>
+                    (n) =>
+                    (i, c, { api: l }) => {
+                        i({ type: f.REQUEST });
+                        const d = s.$i(n);
+                        return i(d).then(
+                            ([n]) => {
+                                i([{ type: f.SUCCESS }, { type: e.REQUEST }]);
+                                return a._O(i, { params: { media_id: n.uploadId }, request: r(l) })({ actionTypes: p, context: t }, (e) => {
+                                    if (e) return [(0, o.dP)({ users: { [e.id_str]: e } })];
+                                });
+                            },
+                            (e) => (i({ type: f.FAILURE }), Promise.reject(e)),
+                        );
+                    },
+                B = x(E, "ACTION_UPDATE_USER_AVATAR", (e) => e.withEndpoint(n.Z).updateProfileAvatar),
+                V = x(u, "ACTION_UPDATE_USER_BANNER", (e) => e.withEndpoint(n.Z).updateProfileBanner),
+                H =
+                    () =>
+                    (e, t, { api: r }) =>
+                        a._O(e, { request: r.withEndpoint(n.Z).enableVerifiedPhoneLabel, params: {} })({ actionTypes: _, context: "ACTION_ENABLE_VERIFIED_PHONE_LABEL" }),
+                M =
+                    () =>
+                    (e, t, { api: r }) =>
+                        a._O(e, { request: r.withEndpoint(n.Z).disableVerifiedPhoneLabel, params: {} })({ actionTypes: m, context: "ACTION_DISABLE_VERIFIED_PHONE_LABEL" });
+            i.Z.register({
+                [c]: function (e = w, t) {
+                    if (!t) return e;
+                    switch (t.type) {
+                        case S:
+                            return { ...e, avatarMediaId: t.meta.mediaId };
+                        case b:
+                            return { ...e, avatarMediaId: null };
+                        case R:
+                            return { ...e, bannerMediaId: t.meta.mediaId };
+                        case P:
+                            return { ...e, bannerMediaId: null };
+                        case g.SUCCESS:
+                            return { ...e, hasVerifiedPhone: t?.payload?.user_phone_state?.has_verified_phone || !1, labelDisplayOptIn: t?.payload?.user_phone_state?.label_display_opt_in || !1 };
+                        case L:
+                            return { ...e, profileSettings: t.meta.profileSettings };
+                        case D:
+                            return { ...e, profileSettings: null };
+                        case f.REQUEST:
+                            return { ...e, isUploading: !0 };
+                        case f.FAILURE:
+                        case f.SUCCESS:
+                            return { ...e, isUploading: !1 };
+                        default:
+                            return e;
+                    }
+                },
+            });
+        },
+        383675: (e, t, r) => {
+            r.d(t, { R: () => c, Z: () => s });
+            var n = r(503768),
+                i = r(644829),
+                a = r(750085),
+                o = r(218951);
+            const s = ({ endpointParams: e, endpointUrl: t, isUserRefreshable: r, timelineId: n }) => (0, o.Z)({ timelineId: n, isUserRefreshable: r, network: { getEndpoint: (e) => e.withEndpoint(i.Z).fetchGeneric, getEndpointParams: ({ count: r, cursor: n }) => ({ ...e, cursor: "string" == typeof n ? n : void 0, count: r, endpointUrl: t }) }, context: "FETCH_TIMELINE", perfKey: "generic" }),
+                c = (e, t) => (0, o.Z)({ timelineId: `generic-graphql-timeline-${e}`, isUserRefreshable: t, network: { getEndpoint: (e) => e.withEndpoint(n.ZP).fetchGenericTimelineById, getEndpointParams: ({ count: t, cursor: r }) => ({ cursor: "string" == typeof r ? r : void 0, count: t, timelineId: e }) }, formatResponse: a.Z, context: "FETCH_GENERIC_TIMELINE_GQL", perfKey: "genericGQL" });
+        },
+        48498: (e, t, r) => {
+            r.d(t, { Z: () => a });
+            var n = r(644829),
+                i = r(218951);
+            const a = ({ flow_token: e, subtask_id: t }) => (0, i.Z)({ timelineId: `nux-user-recos-${t}`, network: { getEndpoint: (e) => e.withEndpoint(n.Z).fetchNUXUserRecommendations, getEndpointParams: (r) => ({ ...r, subtask_id: t, flow_token: e }) }, context: "FETCH_NUX_USER_RECOS", perfKey: "nux-user-recos" });
+        },
+        745888: (e, t, r) => {
+            r.d(t, { Z: () => p });
+            var n = r(360917),
+                i = r.n(n),
+                a = r(24949),
+                o = r(716406),
+                s = r(312771),
+                c = r(502909),
+                l = r(600823);
+            const d = (e) => ({ valid: !0 });
+            function p(e = {}) {
+                const { localValidator: t = d, ...r } = e,
+                    n = (0, c.ZP)({ customActions: { clear: { reducer: (e, t) => ({}) } }, ...r });
+                (n.clear = () => (e) => e({ type: n.customActionTypes.clear.SUCCESS })),
+                    (n.validate = (e, r) => (i) => {
+                        const a = t(e, r);
+                        return a.valid ? i(n.fetchOneIfNeeded(e, r)) : (i(n.add({ [e]: a })), Promise.resolve());
+                    });
+                return (
+                    (n.selectEntitiesWithFetchStatus = (0, a.P1)(
+                        n.selectAll,
+                        (e) => n.selectState(e).fetchStatus || i(),
+                        (e, t) =>
+                            (0, o.Z)(t, (t, r) => {
+                                const n = e[r] || {};
+                                return { ...n, valid: !!n.valid || t === s.ZP.FAILED, isLoading: t === s.ZP.LOADING };
+                            }),
+                    )),
+                    l.Z.register(n)
+                );
+            }
+        },
+        917920: (e, t, r) => {
+            r.d(t, { Z: () => p });
+            var n = r(251067),
+                i = r(111677),
+                a = r.n(i),
+                o = r(183118),
+                s = r(745888);
+            const c = new RegExp("^[a-zA-Z0-9_\\-+\\.!\\&]+@(?:[a-zA-Z0-9\\-_]+\\.)+[a-zA-Z]{2,63}$"),
+                l = a().hc72e1fc,
+                d = a().bc0ad88a,
+                p = (0, s.Z)({ namespace: "emailValidity", fetchOneContext: "FETCH_EMAIL_VALIDITY", fetchOneEndpoint: (e) => e.withEndpoint(o.Z).isEmailAvailable, fetchOneParams: ([e], t) => ({ email: e, ...t }), localValidator: (e) => (c.test(e) ? (!n.yV && /\+\d+@/.test(e) ? { errorMessage: d, valid: !1 } : { valid: !0 }) : { errorMessage: l, valid: !1 }) });
+        },
+        878137: (e, t, r) => {
+            r.d(t, { Z: () => d });
+            var n = r(111677),
+                i = r.n(n),
+                a = r(183118),
+                o = r(71620),
+                s = r(623109),
+                c = r(745888);
+            const l = i().d5568440,
+                d = (0, c.Z)({
+                    namespace: "passwordValidity",
+                    fetchOneContext: "FETCH_PASSWORD_VALIDITY",
+                    fetchOneEndpoint: (e) => e.withEndpoint(a.Z).fetchPasswordStrength,
+                    fetchOneParams: ([e], t) => ({ password: e, ...t }),
+                    localValidator: (e, t) => {
+                        const r = !(!t || !t.username) && e === t.username,
+                            n = e.length >= s.l,
+                            i = e.length <= s.E;
+                        let a = l;
+                        return n ? i || (a = o.IM) : (a = o.px), { errorMessage: !r && n && i ? void 0 : a, valid: n && i && !r };
+                    },
+                });
+        },
+        580134: (e, t, r) => {
+            r.d(t, { Z: () => l });
+            var n = r(111677),
+                i = r.n(n),
+                a = r(183118),
+                o = r(745888);
+            const s = new RegExp("^\\+?[0-9\\-\\.\\(\\)\\s]{7,1000}$"),
+                c = i().cd24fe60,
+                l = (0, o.Z)({
+                    namespace: "phoneNumberValidity",
+                    fetchOneContext: "FETCH_PHONE_VALIDITY",
+                    fetchOneEndpoint: (e) => e.withEndpoint(a.Z).isPhoneNumberAvailable,
+                    fetchOneParams: ([e], t) => ({ raw_phone_number: e, ...t }),
+                    localValidator: (e) => {
+                        const t = s.test(e);
+                        return { errorMessage: c, valid: t };
+                    },
+                });
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-e4e3d8bb.18e2d3fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-e4e3d8bb.2e061faa.js.map

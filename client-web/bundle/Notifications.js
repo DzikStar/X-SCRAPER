@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Notifications", "icons/IconNotificationsOff-js"],
+    ["bundle.Notifications"],
     {
         405008: (e) => {
             e.exports = { queryId: "CRhq23NLRTvAcpaMn7t10Q", operationName: "NotificationsTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
@@ -60,10 +60,10 @@
                 _ = c().h8dde772,
                 k = c().i859a9d4,
                 S = (0, r.ju)("https://help.x.com/using-twitter/mentions-and-replies#mention-control"),
-                C = () => d.createElement(d.Fragment, null, d.createElement(t.ZP, null, D), d.createElement(n.Z, { style: P.details }, d.createElement(u.default, { style: P.icon }), d.createElement(n.Z, null, d.createElement(t.ZP, { style: P.title }, M), d.createElement(t.ZP, null, f)), d.createElement(b.default, { style: P.icon }), d.createElement(n.Z, null, d.createElement(t.ZP, { style: P.title }, w), d.createElement(t.ZP, null, A)), d.createElement(h.default, { style: P.icon }), d.createElement(n.Z, null, d.createElement(t.ZP, { style: P.title }, g), d.createElement(t.ZP, null, y)))),
-                I = () => d.createElement(n.Z, { style: P.footerContainer }, d.createElement(t.ZP, { align: "center" }, _, " ", d.createElement(t.ZP, { color: "text", link: S, style: P.footerLearnMoreLink, withUnderline: !0 }, k))),
-                T = () => d.createElement(t.ZP, { style: P.headline }, p),
-                P = i.default.create((e) => ({ details: { display: "grid", gridTemplateColumns: "auto auto", gridColumnGap: e.spaces.space24, gridRowGap: e.spaces.space24, paddingTop: e.spaces.space32 }, footerContainer: { display: "flex", alignItems: "center" }, footerLearnMoreLink: { whiteSpace: "nowrap" }, headline: { fontSize: e.fontSizes.title2 }, icon: { color: e.colors.text, width: e.spaces.space24, height: e.spacesPx.space24 }, image: { width: "100%" }, title: { color: e.colors.text, fontSize: e.fontSizes.headline2, fontWeight: e.fontWeights.medium, paddingBottom: e.spaces.space4 } })),
+                C = () => d.createElement(d.Fragment, null, d.createElement(t.ZP, null, D), d.createElement(n.Z, { style: T.details }, d.createElement(u.default, { style: T.icon }), d.createElement(n.Z, null, d.createElement(t.ZP, { style: T.title }, M), d.createElement(t.ZP, null, f)), d.createElement(b.default, { style: T.icon }), d.createElement(n.Z, null, d.createElement(t.ZP, { style: T.title }, w), d.createElement(t.ZP, null, A)), d.createElement(h.default, { style: T.icon }), d.createElement(n.Z, null, d.createElement(t.ZP, { style: T.title }, g), d.createElement(t.ZP, null, y)))),
+                I = () => d.createElement(n.Z, { style: T.footerContainer }, d.createElement(t.ZP, { align: "center" }, _, " ", d.createElement(t.ZP, { color: "text", link: S, style: T.footerLearnMoreLink, withUnderline: !0 }, k))),
+                P = () => d.createElement(t.ZP, { style: T.headline }, p),
+                T = i.default.create((e) => ({ details: { display: "grid", gridTemplateColumns: "auto auto", gridColumnGap: e.spaces.space24, gridRowGap: e.spaces.space24, paddingTop: e.spaces.space32 }, footerContainer: { display: "flex", alignItems: "center" }, footerLearnMoreLink: { whiteSpace: "nowrap" }, headline: { fontSize: e.fontSizes.title2 }, icon: { color: e.colors.text, width: e.spaces.space24, height: e.spacesPx.space24 }, image: { width: "100%" }, title: { color: e.colors.text, fontSize: e.fontSizes.headline2, fontWeight: e.fontWeights.medium, paddingBottom: e.spaces.space4 } })),
                 v = (e) => {
                     const { actionLabel: a, onAction: o, onClose: n, onSecondaryAction: r, secondaryActionLabel: t } = e,
                         i = (0, m.z)();
@@ -84,7 +84,7 @@
                         actionLabel: a,
                         footer: d.createElement(I, null),
                         graphicDisplayMode: "none",
-                        headline: d.createElement(T, null),
+                        headline: d.createElement(P, null),
                         isFullHeightOnMobile: !0,
                         onAction: (e) => {
                             i.scribeAction("primary_cta"), o(e);
@@ -429,8 +429,8 @@
             const S = l().eb75875e,
                 C = l().f8321d82,
                 I = l().cdb53d7a,
-                T = l().h3290872,
-                P = l().bc8baa08,
+                P = l().h3290872,
+                T = l().bc8baa08,
                 v = l().a98ba778,
                 E = d.createElement(i.Z, { pullRight: !0, to: "/settings/notifications" }),
                 B = l().eb75875e,
@@ -438,20 +438,20 @@
                     (0, w.p)(
                         () =>
                             Promise.all([
-                                o.e("icons.23"),
-                                o.e("icons.0"),
-                                o.e("icons.2"),
+                                o.e("icons.21"),
                                 o.e("icons.16"),
-                                o.e("icons.19"),
                                 o.e("icons.10"),
-                                o.e("icons.13"),
-                                o.e("icons.24"),
-                                o.e("icons.7"),
-                                o.e("icons.22"),
+                                o.e("icons.1"),
+                                o.e("icons.19"),
+                                o.e("icons.0"),
+                                o.e("icons.23"),
+                                o.e("icons.8"),
+                                o.e("icons.2"),
+                                o.e("icons.3"),
+                                o.e("icons.15"),
+                                o.e("icons.4"),
                                 o.e("modules.common-e907d115"),
                                 o.e("modules.common-e019dbda"),
-                                o.e("icons.11"),
-                                o.e("icons.26"),
                                 o.e("modules.audio-6107ac1a"),
                                 o.e("modules.audio-b953418a"),
                                 o.e("modules.audio-7c51e6a7"),
@@ -462,7 +462,10 @@
                                 o.e("modules.audio-e019dbda"),
                                 o.e("modules.audio-262c94d4"),
                                 o.e("modules.audio-c6fe4ea4"),
-                                o.e("icons.8"),
+                                o.e("icons.24"),
+                                o.e("icons.29"),
+                                o.e("icons.27"),
+                                o.e("icons.25"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -491,6 +494,7 @@
                                 o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                                 o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                                 o.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                                o.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                                 o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-bbc41769"),
                                 o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-8aa1f3e4"),
                                 o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-c6c15d67"),
@@ -518,24 +522,24 @@
                         { shouldMigrateToX: !1 },
                     ),
                 ),
-                x = (0, M.Z)(
+                R = (0, M.Z)(
                     (0, w.p)(
                         () =>
                             Promise.all([
-                                o.e("icons.23"),
-                                o.e("icons.0"),
-                                o.e("icons.2"),
+                                o.e("icons.21"),
                                 o.e("icons.16"),
-                                o.e("icons.19"),
                                 o.e("icons.10"),
-                                o.e("icons.13"),
-                                o.e("icons.24"),
-                                o.e("icons.7"),
-                                o.e("icons.22"),
+                                o.e("icons.1"),
+                                o.e("icons.19"),
+                                o.e("icons.0"),
+                                o.e("icons.23"),
+                                o.e("icons.8"),
+                                o.e("icons.2"),
+                                o.e("icons.3"),
+                                o.e("icons.15"),
+                                o.e("icons.4"),
                                 o.e("modules.common-e907d115"),
                                 o.e("modules.common-e019dbda"),
-                                o.e("icons.11"),
-                                o.e("icons.26"),
                                 o.e("modules.audio-6107ac1a"),
                                 o.e("modules.audio-b953418a"),
                                 o.e("modules.audio-7c51e6a7"),
@@ -546,7 +550,10 @@
                                 o.e("modules.audio-e019dbda"),
                                 o.e("modules.audio-262c94d4"),
                                 o.e("modules.audio-c6fe4ea4"),
-                                o.e("icons.8"),
+                                o.e("icons.24"),
+                                o.e("icons.29"),
+                                o.e("icons.27"),
+                                o.e("icons.25"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -575,6 +582,7 @@
                                 o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                                 o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                                 o.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                                o.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                                 o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-bbc41769"),
                                 o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-8aa1f3e4"),
                                 o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-c6c15d67"),
@@ -602,24 +610,24 @@
                         { shouldMigrateToX: !1 },
                     ),
                 ),
-                R = (0, M.Z)(
+                x = (0, M.Z)(
                     (0, w.p)(
                         () =>
                             Promise.all([
-                                o.e("icons.23"),
-                                o.e("icons.0"),
-                                o.e("icons.2"),
+                                o.e("icons.21"),
                                 o.e("icons.16"),
-                                o.e("icons.19"),
                                 o.e("icons.10"),
-                                o.e("icons.13"),
-                                o.e("icons.24"),
-                                o.e("icons.7"),
-                                o.e("icons.22"),
+                                o.e("icons.1"),
+                                o.e("icons.19"),
+                                o.e("icons.0"),
+                                o.e("icons.23"),
+                                o.e("icons.8"),
+                                o.e("icons.2"),
+                                o.e("icons.3"),
+                                o.e("icons.15"),
+                                o.e("icons.4"),
                                 o.e("modules.common-e907d115"),
                                 o.e("modules.common-e019dbda"),
-                                o.e("icons.11"),
-                                o.e("icons.26"),
                                 o.e("modules.audio-6107ac1a"),
                                 o.e("modules.audio-b953418a"),
                                 o.e("modules.audio-7c51e6a7"),
@@ -630,7 +638,10 @@
                                 o.e("modules.audio-e019dbda"),
                                 o.e("modules.audio-262c94d4"),
                                 o.e("modules.audio-c6fe4ea4"),
-                                o.e("icons.8"),
+                                o.e("icons.24"),
+                                o.e("icons.29"),
+                                o.e("icons.27"),
+                                o.e("icons.25"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -659,6 +670,7 @@
                                 o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                                 o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                                 o.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                                o.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                                 o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-bbc41769"),
                                 o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-8aa1f3e4"),
                                 o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-c6c15d67"),
@@ -690,20 +702,20 @@
                     (0, w.p)(
                         () =>
                             Promise.all([
-                                o.e("icons.23"),
-                                o.e("icons.0"),
-                                o.e("icons.2"),
+                                o.e("icons.21"),
                                 o.e("icons.16"),
-                                o.e("icons.19"),
                                 o.e("icons.10"),
-                                o.e("icons.13"),
-                                o.e("icons.24"),
-                                o.e("icons.7"),
-                                o.e("icons.22"),
+                                o.e("icons.1"),
+                                o.e("icons.19"),
+                                o.e("icons.0"),
+                                o.e("icons.23"),
+                                o.e("icons.8"),
+                                o.e("icons.2"),
+                                o.e("icons.3"),
+                                o.e("icons.15"),
+                                o.e("icons.4"),
                                 o.e("modules.common-e907d115"),
                                 o.e("modules.common-e019dbda"),
-                                o.e("icons.11"),
-                                o.e("icons.26"),
                                 o.e("modules.audio-6107ac1a"),
                                 o.e("modules.audio-b953418a"),
                                 o.e("modules.audio-7c51e6a7"),
@@ -714,7 +726,10 @@
                                 o.e("modules.audio-e019dbda"),
                                 o.e("modules.audio-262c94d4"),
                                 o.e("modules.audio-c6fe4ea4"),
-                                o.e("icons.8"),
+                                o.e("icons.24"),
+                                o.e("icons.29"),
+                                o.e("icons.27"),
+                                o.e("icons.25"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -743,6 +758,7 @@
                                 o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                                 o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                                 o.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                                o.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                                 o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-bbc41769"),
                                 o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-8aa1f3e4"),
                                 o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-c6c15d67"),
@@ -771,21 +787,21 @@
                     ),
                 ),
                 N = { to: k._N, key: C, label: C, retainScrollPosition: !1 },
-                z = { to: k.JV, key: I, label: I, retainScrollPosition: !1 },
-                F = { to: k.JK, key: T, label: T, retainScrollPosition: !1 },
-                H = { to: k.ag, key: P, label: P, retainScrollPosition: !1 },
-                W = () => d.createElement(f.Z, { to: k._N }),
+                F = { to: k.JV, key: I, label: I, retainScrollPosition: !1 },
+                z = { to: k.JK, key: P, label: P, retainScrollPosition: !1 },
+                W = { to: k.ag, key: T, label: T, retainScrollPosition: !1 },
+                H = () => d.createElement(f.Z, { to: k._N }),
                 O = (e) => {
                     const { featureSwitches: a } = d.useContext(h.rC),
                         { history: o, isLoggedInUserActiveCreator: t } = e,
                         l = a.isTrue("responsive_web_subscribers_ntab_for_creators_enabled"),
                         i = t && l,
                         M = d.useMemo(() => {
-                            const e = [N, F, z];
-                            return i && e.splice(2, 0, H), e;
+                            const e = [N, z, F];
+                            return i && e.splice(2, 0, W), e;
                         }, [i]),
-                        f = i ? L : W,
-                        w = d.createElement(n.Switch, null, d.createElement(n.Route, { component: Z, exact: !0, path: k._N }), d.createElement(n.Route, { component: x, exact: !0, path: k.JV }), d.createElement(n.Route, { component: R, exact: !0, path: k.JK }), d.createElement(n.Route, { component: f, exact: !0, path: k.ag }), d.createElement(n.Route, { component: W, exact: !0, path: k.Im })),
+                        f = i ? L : H,
+                        w = d.createElement(n.Switch, null, d.createElement(n.Route, { component: Z, exact: !0, path: k._N }), d.createElement(n.Route, { component: R, exact: !0, path: k.JV }), d.createElement(n.Route, { component: x, exact: !0, path: k.JK }), d.createElement(n.Route, { component: f, exact: !0, path: k.ag }), d.createElement(n.Route, { component: H, exact: !0, path: k.Im })),
                         A = d.useMemo(() => d.createElement(b.Z, { alignFirstItem: (0, D.ZP)(), "aria-label": v, links: M }), [M]);
                     return d.createElement(
                         p.Z,
@@ -841,8 +857,8 @@
                 S = i().i859a9d4,
                 C = i().j745b8a6,
                 I = ({ onClose: e }) => d.createElement(h.nO, { namespace: { element: "leave_this_conversation_education_sheet" } }, d.createElement(A.Z, { actionLabel: y, onAction: e, onClose: e })),
-                T = u.default.create((e) => ({ footerLearnMoreLink: { whiteSpace: "nowrap" }, wrapper: { borderBottomColor: e.colors.borderColor, borderBottomWidth: e.borderWidths.small } })),
-                P = (e) => {
+                P = u.default.create((e) => ({ footerLearnMoreLink: { whiteSpace: "nowrap" }, wrapper: { borderBottomColor: e.colors.borderColor, borderBottomWidth: e.borderWidths.small } })),
+                T = (e) => {
                     const { onDismiss: a } = e,
                         [o, r] = d.useState(!1),
                         t = (0, m.z)();
@@ -868,7 +884,7 @@
                             }),
                         d.createElement(
                             s.Z,
-                            { style: T.wrapper },
+                            { style: P.wrapper },
                             d.createElement(c.Z, {
                                 headline: k,
                                 image: w.image,
@@ -887,7 +903,7 @@
                                                 r(!0);
                                             },
                                             size: "subtext1",
-                                            style: T.footerLearnMoreLink,
+                                            style: P.footerLearnMoreLink,
                                             weight: "bold",
                                             withInteractiveStyling: !0,
                                             withUnderline: !0,
@@ -904,9 +920,9 @@
                 B = o(810641),
                 Z = o(900062);
             o(571372);
-            const x = Object.freeze({ VerificationCheck: "VerificationCheck" }),
-                R = Object.freeze({
-                    [x.VerificationCheck]: (function (e) {
+            const R = Object.freeze({ VerificationCheck: "VerificationCheck" }),
+                x = Object.freeze({
+                    [R.VerificationCheck]: (function (e) {
                         if (3 !== e.length) throw new Error("url list must be 3 urls for each variant (400x200, 800x400, 1200x600)");
                         const [a, o, d] = e;
                         return [
@@ -918,18 +934,18 @@
                 });
             var L = o(552378),
                 N = o(525202),
-                z = o(912021),
-                F = o(962741),
-                H = o(668214),
-                W = o(806960),
+                F = o(912021),
+                z = o(962741),
+                W = o(668214),
+                H = o(806960),
                 O = o(175856),
                 U = o(5849);
-            const V = (0, z.Z)((e, a) => a && a.notificationsModule(e, void 0));
+            const V = (0, F.Z)((e, a) => a && a.notificationsModule(e, void 0));
             var $ = o(351322),
                 j = o(801184),
                 G = o(335632),
                 q = o(263863);
-            const Q = { ...(0, G.G)({ tweetDismissable: !0, withMuteConversation: !0 }), [F.ZP.Tweet]: $.ov({ selectDisplayType: (e) => e.content.displayType, handlers: { [q.Z.Tweet]: (0, j.Cw)({ withMuteConversation: !0, withUnreadStyles: !0 }), [q.Z.QuotedTweet]: (0, j.$Q)({ isCondensed: !0 }) } }) },
+            const Q = { ...(0, G.G)({ tweetDismissable: !0, withMuteConversation: !0 }), [z.ZP.Tweet]: $.ov({ selectDisplayType: (e) => e.content.displayType, handlers: { [q.Z.Tweet]: (0, j.Cw)({ withMuteConversation: !0, withUnreadStyles: !0 }), [q.Z.QuotedTweet]: (0, j.$Q)({ isCondensed: !0 }) } }) },
                 K = i().eb75875e,
                 X = i().e9f1fbcc,
                 J = i().j887d006,
@@ -953,7 +969,7 @@
                             }
                         }),
                         (this._getEmptyMessageHeader = () => X),
-                        (this._renderTwitterBlueVerifiedEmptyState = () => d.createElement(t.Z, { header: X, imageVariants: R.VerificationCheck, message: ee, onButtonPress: this._handleEmptyTimelineButtonPress, onImpression: this._handleEmptyTimelineImpression })),
+                        (this._renderTwitterBlueVerifiedEmptyState = () => d.createElement(t.Z, { header: X, imageVariants: x.VerificationCheck, message: ee, onButtonPress: this._handleEmptyTimelineButtonPress, onImpression: this._handleEmptyTimelineImpression })),
                         (this._renderSubscribersEmptyState = () => d.createElement(t.Z, { header: X, message: oe, onButtonPress: this._handleEmptyTimelineButtonPress, onImpression: this._handleEmptyTimelineImpression })),
                         (this._renderEmptyTimeline = () => {
                             const { notificationsType: e } = this.props;
@@ -972,7 +988,7 @@
                         }),
                         (this._renderTimelineHeader = () => {
                             const { addLeaveThisConversationEducationFlag: e, notificationsType: a, shouldShowUnmentionEducation: o, timelineHasTweets: n } = this.props;
-                            return o && a === N.l.Mentions && n && this.context.featureSwitches.isTrue("dont_mention_me_mentions_tab_education_enabled") ? d.createElement(P, { onDismiss: e }) : void 0;
+                            return o && a === N.l.Mentions && n && this.context.featureSwitches.isTrue("dont_mention_me_mentions_tab_education_enabled") ? d.createElement(T, { onDismiss: e }) : void 0;
                         });
                 }
                 componentDidMount() {
@@ -996,27 +1012,27 @@
             const ne = (e) =>
                     (0, L.C)(
                         ((e) => {
-                            const a = (0, z.Z)(V);
-                            return (0, H.Z)()
+                            const a = (0, F.Z)(V);
+                            return (0, W.Z)()
                                 .propsFromState(() => ({
                                     shouldShowUnmentionEducation: (e) => (0, O.t5)(e, O.QV),
                                     unreadCount: (o, { history: d, ntabData: n }) => a(e, n)?.selectUnreadEntriesCount(o),
                                     timelineHasTweets: (o, { history: d, ntabData: n }) => {
                                         const r = a(e, n),
                                             t = r?.selectEntries(o),
-                                            l = t?.some((e) => e.type === F.ZP.Tweet);
+                                            l = t?.some((e) => e.type === z.ZP.Tweet);
                                         return !!l;
                                     },
                                 }))
                                 .propsFromActions(({ history: o, ntabData: d }) => ({
                                     setNotificationsPageLoaded: (e) => (a) => {
-                                        a((0, W.Wl)(e));
+                                        a((0, H.Wl)(e));
                                     },
                                     addLeaveThisConversationEducationFlag: () => (0, O.pj)(O.QV),
                                     markAllAsRead: a(e, d)?.markAllAsRead,
                                     updateLastRead: (e) => (a, o) => {
                                         const n = d?.updateLastSeenCursor;
-                                        n && a(n(e)), a((0, W.SE)(0));
+                                        n && a(n(e)), a((0, H.SE)(0));
                                     },
                                     setNotificationsType: U.BZ,
                                 }))
@@ -1176,9 +1192,9 @@
                         { location: S } = this.state,
                         C = k ? this._getMemoizedLink(k, g) : void 0,
                         I = s ? s(k) : S?.pathname === C?.pathname,
-                        T = D.Z.generate({ backgroundColor: "transparent", color: l.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? y.pillHoverStyle.backgroundColor : void 0 }),
-                        P = p ? "medium" : I ? "bold" : "medium";
-                    return n.createElement(M.Z, { "aria-label": a, "aria-selected": I, focusable: !!I, interactiveStyles: T, link: C, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [y.pillStyle] : [y.link]), ...(u && I ? [y.pillActiveStyle] : []), c ? (u ? y.compactPill : y.compactLink) : null, b ? y.roundedRect : null, _], withoutInteractiveStyles: p }, ({ isFocused: a, isHovered: s }) => n.createElement(i.Z, { style: u && y.flexGrow }, n.createElement(h.ZP, { size: p ? "headline2" : void 0, style: [y.text, { color: this._getTextColor(I, s, p, u) }, c && y.compactText, p && a && y.focusedText, u && y.pillTextStyle, u && I && y.pillActiveTextStyle, u && s && y.pillHoverTextStyle], weight: P }, e && n.createElement(e, { style: y.icon }), r, p || u ? null : n.createElement(i.Z, { style: I && [y.border, { backgroundColor: l.default.theme.colors[t] }] })), o ? n.createElement(m.Z, { count: o, standalone: !0, style: [y.badge, o >= 10 && y.multiDigitBadge, o >= 20 && y.truncatedCountBadge], truncatedCountFormatter: A, unreadCountLabel: f, withBorder: !1 }) : d ? n.createElement(m.Z, { pip: !0, standalone: !0, style: y.badgePip, textColor: "red500", unreadCountLabel: w, withBorder: !1 }) : null));
+                        P = D.Z.generate({ backgroundColor: "transparent", color: l.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? y.pillHoverStyle.backgroundColor : void 0 }),
+                        T = p ? "medium" : I ? "bold" : "medium";
+                    return n.createElement(M.Z, { "aria-label": a, "aria-selected": I, focusable: !!I, interactiveStyles: P, link: C, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [y.pillStyle] : [y.link]), ...(u && I ? [y.pillActiveStyle] : []), c ? (u ? y.compactPill : y.compactLink) : null, b ? y.roundedRect : null, _], withoutInteractiveStyles: p }, ({ isFocused: a, isHovered: s }) => n.createElement(i.Z, { style: u && y.flexGrow }, n.createElement(h.ZP, { size: p ? "headline2" : void 0, style: [y.text, { color: this._getTextColor(I, s, p, u) }, c && y.compactText, p && a && y.focusedText, u && y.pillTextStyle, u && I && y.pillActiveTextStyle, u && s && y.pillHoverTextStyle], weight: T }, e && n.createElement(e, { style: y.icon }), r, p || u ? null : n.createElement(i.Z, { style: I && [y.border, { backgroundColor: l.default.theme.colors[t] }] })), o ? n.createElement(m.Z, { count: o, standalone: !0, style: [y.badge, o >= 10 && y.multiDigitBadge, o >= 20 && y.truncatedCountBadge], truncatedCountFormatter: A, unreadCountLabel: f, withBorder: !1 }) : d ? n.createElement(m.Z, { pip: !0, standalone: !0, style: y.badgePip, textColor: "red500", unreadCountLabel: w, withBorder: !1 }) : null));
                 }
             }
             (g.contextType = p.Z), (g.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -1225,20 +1241,6 @@
                     return n.createElement(r.Z, { "aria-label": a, buttonsContainerStyle: l && k.gap, childrenStyle: !m && k.flexGrow, key: b, style: [l ? null : k.segmentedControl, m && k.leftAligned, c], visibleItemIndex: u }, p);
                 };
         },
-        165243: (e, a, o) => {
-            "use strict";
-            o.r(a), o.d(a, { default: () => i });
-            var d = o(202784),
-                n = o(890601),
-                r = o(783427),
-                t = o(347101);
-            const l = (e = {}) => {
-                const { direction: a } = (0, r.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [t.Z.root, e.style], viewBox: "0 0 24 24", children: d.createElement("g", null, d.createElement("path", { d: "M20.29 2.29l-2.34 2.34C16.47 3.01 14.34 2 12 2 7.93 2 4.51 5.02 4 9.05L2.87 18h1.72l-2.3 2.29 1.42 1.42 18-18-1.42-1.42zM6.59 16H5.13l.85-6.7C6.36 6.27 8.94 4 12 4c1.79 0 3.42.78 4.54 2.05L6.59 16zM12 22c-1.57 0-2.98-.73-3.89-1.86l1.42-1.43c.55.78 1.45 1.29 2.47 1.29 1.31 0 2.42-.83 2.83-2H12v-2h6.86l-.74-5.87 1.76-1.76c.05.22.08.44.11.67L21.14 18H16.9c-.46 2.28-2.48 4-4.9 4z" })) }, { writingDirection: a });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const i = l;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Notifications.b686b12a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Notifications.e56c16da.js.map

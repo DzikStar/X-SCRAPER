@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.GrokDrawer-6107ac1a", "icons/IconChevronDown-js", "loader.FeedbackSheet"],
+    ["bundle.GrokDrawer-6107ac1a", "icons/IconGrokCompose-js", "loader.FeedbackSheet"],
     {
         155074: (e) => {
             e.exports = { queryId: "83Gg0lfI-47Z3-ZOxyUjiQ", operationName: "ClearGrokConversations", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -55,9 +55,9 @@
                 p = a(470969),
                 m = a.n(p),
                 u = a(374709),
-                b = a.n(u),
-                h = a(709401),
-                g = a.n(h),
+                h = a.n(u),
+                b = a(709401),
+                g = a.n(b),
                 w = a(965508),
                 f = a.n(w),
                 y = a(416024),
@@ -78,7 +78,7 @@
                     setPreferences: ({ grokMode: t, grokModelOptionId: a }) => e.graphQL(q(), { grokMode: t, grokModelOptionId: a }).then((e) => (e.set_grok_preferences?.preference_update_error?.error_code && (0, o.ZP)("GraphQL set grok preferences failed."), e)),
                     fetchConversation: ({ restId: t }) => e.graphQL(_(), { restId: t }).then((e) => e),
                     fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(I(), { grok_share_id: t }).then((e) => e),
-                    fetchGrokHome: () => e.graphQL(b(), {}).then((e) => e),
+                    fetchGrokHome: () => e.graphQL(h(), {}).then((e) => e),
                     fetchHistory: ({ cursor: t }) => e.graphQL(m(), { cursor: t }).then((e) => e),
                     fetchPinnedConversations: ({ cursor: t }) => e.graphQL(v(), { cursor: t }).then((e) => e),
                     fetchMediaHistory: ({ cursor: t }) => e.graphQL(g(), { cursor: t }).then((e) => e),
@@ -119,14 +119,14 @@
                             this.state.activeConfirmation && this.state.activeConfirmation.cancelCallback?.(), this.setState({ activeConfirmation: null });
                         }),
                         (this._getMemoizedProcessedActionItems = (0, l.Z)((e, t, a, n) =>
-                            e.reduce((e, { Icon: r, confirmation: o, disabled: i, excludeFromActionMenu: s, isEmphasized: l, link: d, onClick: c, subText: _, testID: p, text: m, withCancelButton: u }, b) => {
+                            e.reduce((e, { Icon: r, confirmation: o, disabled: i, excludeFromActionMenu: s, isEmphasized: l, link: d, onClick: c, subText: _, testID: p, text: m, withCancelButton: u }, h) => {
                                 if (!s) {
                                     const s = c
                                         ? () => {
                                               o ? (o.render ? n({ cancelCallback: o.onCancel, confirmCallback: c, render: o.render }) : n({ cancelCallback: o.onCancel, confirmCallback: c, text: o.text, headline: o.headline, label: o.label, confirmButtonType: o.confirmButtonType, withCancelButton: o.withCancelButton })) : (c(), a());
                                           }
                                         : a;
-                                    e.push({ disabled: i, Icon: r, isEmphasized: l, testID: p, subText: _, text: m, onClick: s, link: d, withBottomBorder: t && t.includes(b) });
+                                    e.push({ disabled: i, Icon: r, isEmphasized: l, testID: p, subText: _, text: m, onClick: s, link: d, withBottomBorder: t && t.includes(h) });
                                 }
                                 return e;
                             }, []),
@@ -166,22 +166,22 @@
                 p = a(352924),
                 m = a(392237);
             const u = m.default.create((e) => ({ backgroundGrey: { backgroundColor: e.colors.gray100 }, backgroundDefault: { backgroundColor: e.colors.cellBackground }, root: { overflow: "hidden", flexDirection: "row", justifyContent: "space-between", gap: e.spaces.space16, flexGrow: 1, borderColor: e.colors.transparent, borderWidth: e.borderWidths.medium }, alignCenter: { alignItems: "center" }, padding16: { padding: e.spaces.space16 }, padding8: { paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space4 }, boxShadow: { boxShadow: e.boxShadows.medium }, withMarginTop: { marginTop: e.spaces.space20 }, borderRadiusLarge: { borderRadius: e.borderRadii.large }, borderRadiusInfinite: { borderRadius: e.borderRadii.infinite }, checked: { borderColor: e.colors.primary }, interactive: { cursor: "pointer" }, withMarginEnd: { marginEnd: e.spaces.space20 }, grow: { flexGrow: 1 }, iconContainer: { alignSelf: "flex-start", flexDirection: "column", justifyContent: "center", width: e.spaces.space40, height: e.spaces.space40 }, labelContainer: { flexDirection: "column", justifyContent: "center", flex: 1 }, inlineCalloutContainer: { marginTop: e.spaces.space8 }, description: { marginTop: e.spaces.space4 }, descriptionWithPill: { marginTop: e.spaces.space2 }, endContentContainer: { justifyContent: "center", flexDirection: "column" }, row: { flexDirection: "row", alignItems: "center" }, marginTop4: { marginTop: e.spaces.space4 }, marginBottom8: { marginBottom: e.spaces.space8 }, info: { flexDirection: "row", justifyContent: "space-between", marginBottom: e.spaces.space8 }, infoIcon: { fontSize: ".74em", color: e.colors.gray700 }, backgroundTransparent: { backgroundColor: e.colors.transparent }, pill: { marginBottom: e.spaces.space4 }, inlinePill: { marginStart: e.spaces.space4 } })),
-                b = { ...m.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" },
-                h = ({ "aria-label": e, "aria-posinset": t, "aria-setsize": a, checked: n, dedicatedPillRow: o, description: m, disabled: h, disabledInlineCallout: g, endContent: w, horizontal: f, illustration: y, infoLabel: v, infoLabelType: C, inlineCallout: k, label: x, name: I, onChange: T, pillText: S, pillType: E, reverseLabels: Z, secondaryContent: L, secondaryDescription: q, switchStyle: B, testID: D }) => {
-                    const P = (0, p.b)(),
-                        z = (0, p.b)(),
+                h = { ...m.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" },
+                b = ({ "aria-label": e, "aria-posinset": t, "aria-setsize": a, checked: n, dedicatedPillRow: o, description: m, disabled: b, disabledInlineCallout: g, endContent: w, horizontal: f, illustration: y, infoLabel: v, infoLabelType: C, inlineCallout: k, label: x, name: I, onChange: T, pillText: S, pillType: E, reverseLabels: Z, secondaryContent: L, secondaryDescription: q, switchStyle: B, testID: P }) => {
+                    const z = (0, p.b)(),
+                        D = (0, p.b)(),
                         G = (0, p.b)(),
-                        A = r.createElement(d.ZP, { color: B ? (n ? "text" : "gray800") : "text", id: P, role: "label", size: B ? "body" : "headline2", testID: "headline-label", weight: B ? "normal" : "bold" }, x),
-                        R = !!m && r.createElement(d.ZP, { color: "gray700", id: z, size: "subtext1", style: S ? u.descriptionWithPill : u.description, testID: "description-label" }, m),
+                        A = r.createElement(d.ZP, { color: B ? (n ? "text" : "gray800") : "text", id: z, role: "label", size: B ? "body" : "headline2", testID: "headline-label", weight: B ? "normal" : "bold" }, x),
+                        R = !!m && r.createElement(d.ZP, { color: "gray700", id: D, size: "subtext1", style: S ? u.descriptionWithPill : u.description, testID: "description-label" }, m),
                         Q = r.createElement(d.ZP, { color: "gray700", role: "label", size: "subtext2", style: u.description }, q),
                         j = S ? r.createElement(c.ZP, { style: o ? u.pill : u.inlinePill, type: E }, S) : null,
                         N = r.createElement(r.Fragment, null, o ? j : null, r.createElement(i.Z, { style: [u.row, v && u.marginBottom8] }, Z ? R : A, o ? null : j), r.createElement(i.Z, { style: [u.row, Z && u.marginTop4] }, Z ? A : R), L || (q ? Q : void 0)),
                         M = B ? "unset" : (a ? 100 / a : 100) + "%",
-                        F = B ? [u.padding8, u.borderRadiusLarge, n ? u.backgroundDefault : u.backgroundTransparent] : [u.padding16, u.boxShadow, u.borderRadiusLarge, n ? u.checked : null, u.backgroundDefault];
-                    return r.createElement(r.Fragment, null, r.createElement(_.Z, { disabled: h, style: [u.root, ...F, f ? { maxWidth: M, ...u.grow } : null, 1 === t || f ? null : u.withMarginTop, t !== a && f && !B && u.withMarginEnd, !h && u.interactive], testID: D, withInteractiveStyling: !B }, !!y && r.createElement(i.Z, { style: u.iconContainer, testID: "illustration" }, y), r.createElement(i.Z, { style: [u.labelContainer, B && u.alignCenter] }, !!v && r.createElement(i.Z, { style: u.info }, r.createElement(c.ZP, { background: "green" === C ? "green500" : "red" === C ? "magenta500" : "yellow" === C ? "orange50" : "gray500" }, r.createElement(d.ZP, { color: "yellow" === C ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, v)), "red" !== C && "yellow" !== C && r.createElement(s.default, { style: u.infoIcon, testID: "infoIcon" })), N, n && !!k && r.createElement(i.Z, { style: u.inlineCalloutContainer, testID: "inlineCallout" }, k)), !!w && r.createElement(i.Z, { style: u.endContentContainer, testID: "endContent" }, r.createElement(d.ZP, { id: G, size: "subtext1", weight: "bold" }, w)), r.createElement("input", { "aria-describedby": `${z} ${G}`, "aria-label": e, "aria-labelledby": P, "aria-posinset": t, "aria-setsize": a, checked: n, disabled: h, name: I, onChange: n ? l.Z : T, style: b, type: "radio" })), h && g ? g : null);
+                        H = B ? [u.padding8, u.borderRadiusLarge, n ? u.backgroundDefault : u.backgroundTransparent] : [u.padding16, u.boxShadow, u.borderRadiusLarge, n ? u.checked : null, u.backgroundDefault];
+                    return r.createElement(r.Fragment, null, r.createElement(_.Z, { disabled: b, style: [u.root, ...H, f ? { maxWidth: M, ...u.grow } : null, 1 === t || f ? null : u.withMarginTop, t !== a && f && !B && u.withMarginEnd, !b && u.interactive], testID: P, withInteractiveStyling: !B }, !!y && r.createElement(i.Z, { style: u.iconContainer, testID: "illustration" }, y), r.createElement(i.Z, { style: [u.labelContainer, B && u.alignCenter] }, !!v && r.createElement(i.Z, { style: u.info }, r.createElement(c.ZP, { background: "green" === C ? "green500" : "red" === C ? "magenta500" : "yellow" === C ? "orange50" : "gray500" }, r.createElement(d.ZP, { color: "yellow" === C ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, v)), "red" !== C && "yellow" !== C && r.createElement(s.default, { style: u.infoIcon, testID: "infoIcon" })), N, n && !!k && r.createElement(i.Z, { style: u.inlineCalloutContainer, testID: "inlineCallout" }, k)), !!w && r.createElement(i.Z, { style: u.endContentContainer, testID: "endContent" }, r.createElement(d.ZP, { id: G, size: "subtext1", weight: "bold" }, w)), r.createElement("input", { "aria-describedby": `${D} ${G}`, "aria-label": e, "aria-labelledby": z, "aria-posinset": t, "aria-setsize": a, checked: n, disabled: b, name: I, onChange: n ? l.Z : T, style: h, type: "radio" })), b && g ? g : null);
                 },
                 g = (e) => {
-                    const t = r.useCallback(({ value: e, ...t }) => r.createElement(h, (0, n.Z)({}, t, { key: e })), []);
+                    const t = r.useCallback(({ value: e, ...t }) => r.createElement(b, (0, n.Z)({}, t, { key: e })), []);
                     return r.createElement(o.Z, (0, n.Z)({}, e, { renderSelector: t }));
                 };
         },
@@ -195,7 +195,7 @@
             let s = 1;
             const l = i.default.create((e) => ({ header: { alignItems: "flex-start" }, row: { flexDirection: "row" }, label: { paddingTop: e.spaces.space12, paddingBottom: e.spaces.space4 }, disabled: { opacity: 0.5 }, switchVariant: { padding: e.spaces.space2, backgroundColor: e.colors.gray50, borderRadius: e.borderRadii.large } })),
                 d = (e) => {
-                    const { "aria-label": t, backgroundStyles: a, description: i, disabled: d, horizontal: c, label: _, name: p, onChange: m, options: u, renderBorderWhenSelected: b, renderSelector: h, selectorBackgroundStyles: g, switchStyle: w, value: f } = e,
+                    const { "aria-label": t, backgroundStyles: a, description: i, disabled: d, horizontal: c, label: _, name: p, onChange: m, options: u, renderBorderWhenSelected: h, renderSelector: b, selectorBackgroundStyles: g, switchStyle: w, value: f } = e,
                         y = (() => {
                             const e = n.useRef("");
                             return (
@@ -215,12 +215,12 @@
                         n.createElement(
                             r.Z,
                             { style: [c && l.row, w && l.switchVariant, a] },
-                            u.map((e, t) => h({ "aria-posinset": t + 1, "aria-setsize": u.length, checked: e.value === f, disabled: d, name: p, switchStyle: w, horizontal: c, renderBorderWhenSelected: b, selectorBackgroundStyles: g, onChange: v(e.value), ...e })),
+                            u.map((e, t) => b({ "aria-posinset": t + 1, "aria-setsize": u.length, checked: e.value === f, disabled: d, name: p, switchStyle: w, horizontal: c, renderBorderWhenSelected: h, selectorBackgroundStyles: g, onChange: v(e.value), ...e })),
                         ),
                     );
                 };
         },
-        487552: (e, t, a) => {
+        52735: (e, t, a) => {
             "use strict";
             a.r(t), a.d(t, { default: () => l });
             var n = a(202784),
@@ -229,11 +229,11 @@
                 i = a(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 25", children: n.createElement("g", null, n.createElement("path", { d: "M11 4.5H8.8c-1.68 0-2.52 0-3.162.327-.564.288-1.023.747-1.311 1.311C4 6.78 4 7.62 4 9.3v6.4c0 1.68 0 2.52.327 3.162.288.565.747 1.023 1.311 1.311.642.327 1.482.327 3.162.327h6.4c1.68 0 2.52 0 3.162-.327.565-.288 1.023-.746 1.311-1.311C20 18.22 20 17.38 20 15.7v-2.2", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2" }), n.createElement("path", { d: "M9 15.5v-2.586c0-.265.105-.52.293-.707L17.25 4.25c.828-.828 2.172-.828 3 0 .828.829.828 2.172 0 3l-7.957 7.957c-.188.188-.442.293-.707.293H9z", stroke: "currentColor", strokeLinecap: "square", strokeLinejoin: "round", strokeWidth: "2" })) }, { writingDirection: t });
             };
-            s.metadata = { width: 24, height: 24 };
+            s.metadata = { width: 24, height: 25 };
             const l = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6107ac1a.0df3661a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6107ac1a.8effe84a.js.map

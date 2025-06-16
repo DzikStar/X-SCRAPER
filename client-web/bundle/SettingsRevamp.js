@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.SettingsRevamp"],
+    ["bundle.SettingsRevamp", "icons/IconDeviceNotification-js", "icons/IconFilter-js"],
     {
         200111: (e) => {
             e.exports = { queryId: "_ckHEj05gan2VfNHG6thBA", operationName: "DisableUserAccountLabel", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -35,7 +35,7 @@
         },
         181617: (e, t, n) => {
             "use strict";
-            n.d(t, { PP: () => P, cs: () => w, ET: () => A, MB: () => Z, iR: () => C });
+            n.d(t, { PP: () => P, cs: () => w, ET: () => A, MB: () => C, iR: () => S });
             var a = n(424869),
                 r = n.n(a),
                 o = n(163889),
@@ -60,7 +60,7 @@
             const f = "accountTaxonomy",
                 _ = r()({ account_label: { disableStatus: E.ZP.NONE, fetchStatus: E.ZP.NONE, managed_label: void 0 } }),
                 y = Object.freeze({ REQUEST: "rweb/accountTaxonomy/FETCH_USER_ACCOUNT_LABEL_REQUEST", SUCCESS: "rweb/accountTaxonomy/FETCH_USER_ACCOUNT_LABEL_SUCCESS", FAILURE: "rweb/accountTaxonomy/FETCH_USER_ACCOUNT_LABEL_FAILURE" }),
-                S = Object.freeze({ REQUEST: "rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_REQUEST", SUCCESS: "rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_SUCCESS", FAILURE: "rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_FAILURE" });
+                Z = Object.freeze({ REQUEST: "rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_REQUEST", SUCCESS: "rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_SUCCESS", FAILURE: "rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_FAILURE" });
             b.Z.register({
                 [f]: function (e = _, t) {
                     if (!t) return e;
@@ -71,19 +71,19 @@
                             return { ...e, account_label: { ...t?.payload?.user?.result?.account_label, fetchStatus: E.ZP.LOADED } };
                         case y.FAILURE:
                             return { ...e, account_label: { ...e.account_label, fetchStatus: E.ZP.FAILED } };
-                        case S.REQUEST:
+                        case Z.REQUEST:
                             return { ...e, account_label: { ...e.account_label, disableStatus: E.ZP.LOADING } };
-                        case S.SUCCESS:
+                        case Z.SUCCESS:
                             return { ...e, account_label: { managed_label: void 0, fetchStatus: E.ZP.LOADED, disableStatus: E.ZP.LOADED } };
-                        case S.FAILURE:
+                        case Z.FAILURE:
                             return { ...e, account_label: { ...e.account_label, disableStatus: E.ZP.FAILED } };
                         default:
                             return e;
                     }
                 },
             });
-            const Z = (e) => e[f]?.account_label?.managed_label?.owner_screen_name,
-                C = (e) => e[f]?.account_label?.fetchStatus || E.ZP.NONE,
+            const C = (e) => e[f]?.account_label?.managed_label?.owner_screen_name,
+                S = (e) => e[f]?.account_label?.fetchStatus || E.ZP.NONE,
                 A = (e) => e[f]?.account_label?.disableStatus || E.ZP.NONE,
                 w =
                     (e) =>
@@ -92,7 +92,7 @@
                 P =
                     () =>
                     (e, t, { api: n }) =>
-                        (0, g._O)(e, { request: n.withEndpoint(p).disableUserAccountLabel, params: {} })({ actionTypes: S, context: "DISABLE_USER_ACCOUNT_LABEL" });
+                        (0, g._O)(e, { request: n.withEndpoint(p).disableUserAccountLabel, params: {} })({ actionTypes: Z, context: "DISABLE_USER_ACCOUNT_LABEL" });
         },
         576025: (e, t, n) => {
             "use strict";
@@ -312,9 +312,9 @@
                 f = n(439592),
                 _ = n(154003),
                 y = n(593866),
-                S = n(138099),
-                Z = n(786998),
-                C = n(370006),
+                Z = n(138099),
+                C = n(786998),
+                S = n(370006),
                 A = n(520913),
                 w = n(323265),
                 P = n(668214);
@@ -323,7 +323,7 @@
             const D = k.default.create((e) => ({ headerIcon: { color: e.colors.brandColor, height: e.spacesPx.space28, width: e.spacesPx.space28 }, curvedHeader: { clipPath: "ellipse(100% 100% at 38% 0%)", backgroundColor: e.colors.teal600, paddingBottom: e.spacesPx.space40, width: "100%" }, footer: { width: "100%", padding: e.spacesPx.space24 }, image1: { aspectRatio: "1.31", height: "100%", width: "100%", maxHeight: "249px", maxWidth: "327px" }, image2: { aspectRatio: "1.88", height: "100%", width: "100%", maxHeight: "175px", maxWidth: "329px" }, topContent: { paddingStart: e.spacesPx.space32, paddingEnd: e.spacesPx.space32 }, learnMoreContainer: { paddingTop: e.spacesPx.space8, paddingStart: e.spacesPx.space28, paddingEnd: e.spacesPx.space28 }, modalContent: { paddingTop: e.spacesPx.space28, paddingStart: e.spacesPx.space28, paddingEnd: e.spacesPx.space28 }, modalImageContainer: { alignItems: "center", backgroundColor: e.colors.teal0, height: "auto", justifyContent: "center", marginTop: e.spacesPx.space28 }, modalTitle: { paddingBottom: e.spacesPx.space8 }, numberCircle: { alignItems: "center", backgroundColor: e.colors.buttonBlack, borderRadius: e.borderRadii.infinite, height: e.spacesPx.space48, justifyContent: "center", marginEnd: e.spacesPx.space16, width: e.spacesPx.space48 }, scrollable: { flexGrow: 1, flexShrink: 1, overflowY: "auto" }, sheet: { height: "75%", maxHeight: "700px", minHeight: "480px", overflowY: "auto" }, stepListContainer: { paddingTop: e.spacesPx.space16, paddingEnd: e.spacesPx.space28 }, stepTitle: { paddingBottom: e.spacesPx.space2 } })),
                 I = "https://abs.twimg.com/images/automation-onboard-1_s.png",
                 x = "https://abs.twimg.com/images/automation-onboard-2_s.png",
-                U = [
+                v = [
                     {
                         aspectRatio: 1.31,
                         default: I,
@@ -343,45 +343,45 @@
                         ],
                     },
                 ],
-                T = (0, g.ju)("https://help.x.com/rules-and-policies/twitter-automation"),
-                F = (0, g.ju)("https://help.x.com/using-twitter/automated-account-labels"),
-                N = c().g2a9bd3e,
-                O = c().dd9b3aae,
-                v = c().b80bdc40,
+                U = (0, g.ju)("https://help.x.com/rules-and-policies/twitter-automation"),
+                T = (0, g.ju)("https://help.x.com/using-twitter/automated-account-labels"),
+                F = c().g2a9bd3e,
+                N = c().dd9b3aae,
+                O = c().b80bdc40,
                 M = c().a01ac9b6,
                 R = c().b989e1fe,
-                B = a.createElement(c().I18NFormatMessage, { $i18n: "j31f2f97" }, a.createElement(o.ZP, { color: "text", link: T, weight: "bold", withUnderline: !0 }, c().a18d6a7d)),
+                B = a.createElement(c().I18NFormatMessage, { $i18n: "j31f2f97" }, a.createElement(o.ZP, { color: "text", link: U, weight: "bold", withUnderline: !0 }, c().a18d6a7d)),
                 z = c().i2d599aa,
-                V = [
+                H = [
                     { title: c().gd5bed72, description: c().g6d44432 },
                     { title: c().e20a69e8, description: c().d2f88358 },
                     { title: c().e427f632, description: c().a4d7cffa },
                 ],
-                H = c().j24c37b2;
+                V = c().j24c37b2;
             class G extends a.Component {
                 constructor(...e) {
                     super(...e),
-                        (this._renderHeader = () => a.createElement(r.Z, { style: D.curvedHeader }, a.createElement(r.Z, { style: [D.topContent, { paddingTop: w.ZP.isMobileOS() ? "26px" : "36px" }] }, a.createElement(o.ZP, { color: "white", size: "title2", weight: "bold" }, N)))),
+                        (this._renderHeader = () => a.createElement(r.Z, { style: D.curvedHeader }, a.createElement(r.Z, { style: [D.topContent, { paddingTop: w.ZP.isMobileOS() ? "26px" : "36px" }] }, a.createElement(o.ZP, { color: "white", size: "title2", weight: "bold" }, F)))),
                         (this._renderAdaptiveImageFromSource = (e) => {
-                            const t = U[e];
+                            const t = v[e];
                             return a.createElement(E.Z, { "aria-label": "", aspectMode: f.Z.exact(t.aspectRatio), customVariants: t.variants, image: t.default });
                         }),
-                        (this._renderContent = () => a.createElement(r.Z, null, a.createElement(r.Z, { style: D.modalContent }, a.createElement(o.ZP, { size: "title4", style: D.modalTitle, weight: "heavy" }, O), a.createElement(o.ZP, { color: "gray700", size: "body" }, v)), a.createElement(r.Z, { style: D.modalImageContainer }, a.createElement(r.Z, { style: D.image1 }, this._renderAdaptiveImageFromSource(0))), a.createElement(r.Z, { style: D.modalContent }, a.createElement(o.ZP, { color: "gray700", size: "body" }, M)), a.createElement(r.Z, { style: D.modalImageContainer }, a.createElement(r.Z, { style: D.image2 }, this._renderAdaptiveImageFromSource(1))), a.createElement(r.Z, { style: D.modalContent }, a.createElement(o.ZP, { size: "title4", style: D.modalTitle, weight: "heavy" }, R), a.createElement(o.ZP, { color: "gray700", size: "body" }, B)), a.createElement(r.Z, { style: D.modalContent }, a.createElement(o.ZP, { size: "title4", style: D.modalTitle, weight: "heavy" }, z)), a.createElement(r.Z, { style: D.stepListContainer }, this._renderSteps()), a.createElement(r.Z, { style: D.learnMoreContainer }, a.createElement(o.ZP, { color: "gray700", size: "body" }, this._renderLearnMoreLabel())))),
-                        (this._renderFooter = () => a.createElement(r.Z, { style: D.footer }, a.createElement(_.ZP, { backgroundColor: "teal600", color: "white", onClick: this.props.onConfirm, size: "xLarge" }, H))),
-                        (this._renderLearnMoreLabel = () => a.createElement(c().I18NFormatMessage, { $i18n: "ed8f77d3" }, a.createElement(o.ZP, { color: "text", link: F, onClick: this.props.onFaqClick, weight: "bold", withUnderline: !0 }, c().e9965c14))),
+                        (this._renderContent = () => a.createElement(r.Z, null, a.createElement(r.Z, { style: D.modalContent }, a.createElement(o.ZP, { size: "title4", style: D.modalTitle, weight: "heavy" }, N), a.createElement(o.ZP, { color: "gray700", size: "body" }, O)), a.createElement(r.Z, { style: D.modalImageContainer }, a.createElement(r.Z, { style: D.image1 }, this._renderAdaptiveImageFromSource(0))), a.createElement(r.Z, { style: D.modalContent }, a.createElement(o.ZP, { color: "gray700", size: "body" }, M)), a.createElement(r.Z, { style: D.modalImageContainer }, a.createElement(r.Z, { style: D.image2 }, this._renderAdaptiveImageFromSource(1))), a.createElement(r.Z, { style: D.modalContent }, a.createElement(o.ZP, { size: "title4", style: D.modalTitle, weight: "heavy" }, R), a.createElement(o.ZP, { color: "gray700", size: "body" }, B)), a.createElement(r.Z, { style: D.modalContent }, a.createElement(o.ZP, { size: "title4", style: D.modalTitle, weight: "heavy" }, z)), a.createElement(r.Z, { style: D.stepListContainer }, this._renderSteps()), a.createElement(r.Z, { style: D.learnMoreContainer }, a.createElement(o.ZP, { color: "gray700", size: "body" }, this._renderLearnMoreLabel())))),
+                        (this._renderFooter = () => a.createElement(r.Z, { style: D.footer }, a.createElement(_.ZP, { backgroundColor: "teal600", color: "white", onClick: this.props.onConfirm, size: "xLarge" }, V))),
+                        (this._renderLearnMoreLabel = () => a.createElement(c().I18NFormatMessage, { $i18n: "ed8f77d3" }, a.createElement(o.ZP, { color: "text", link: T, onClick: this.props.onFaqClick, weight: "bold", withUnderline: !0 }, c().e9965c14))),
                         (this._renderStepLabel = (e) => a.createElement(o.ZP, { size: "headline2", style: D.stepTitle, weight: "bold" }, e)),
                         (this._renderStepDecorationBadge = (e) => a.createElement(r.Z, { style: D.numberCircle }, a.createElement(o.ZP, { color: "buttonWhite", size: "headline1", weight: "bold" }, e))),
                         (this._renderSteps = () => {
-                            const e = V.map((e, t) => ({ label: this._renderStepLabel(e.title), decoration: this._renderStepDecorationBadge(t + 1), description: e.description }));
+                            const e = H.map((e, t) => ({ label: this._renderStepLabel(e.title), decoration: this._renderStepDecorationBadge(t + 1), description: e.description }));
                             return a.createElement(y.Z, { items: e });
                         });
                 }
                 render() {
-                    return a.createElement(S.Z, { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: this.props.onClose, type: "full", withMask: !0 }, a.createElement(Z.Z, { centeredLogo: a.createElement(A.default, { style: D.headerIcon }), leftControl: a.createElement(C.Z, { backButtonType: "close", onClick: this.props.onClose }), withBackground: !0 }), a.createElement(r.Z, { style: w.ZP.isMobileOS() ? null : D.sheet }, a.createElement(r.Z, { style: D.scrollable }, this._renderHeader(), this._renderContent()), this._renderFooter()));
+                    return a.createElement(Z.Z, { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: this.props.onClose, type: "full", withMask: !0 }, a.createElement(C.Z, { centeredLogo: a.createElement(A.default, { style: D.headerIcon }), leftControl: a.createElement(S.Z, { backButtonType: "close", onClick: this.props.onClose }), withBackground: !0 }), a.createElement(r.Z, { style: w.ZP.isMobileOS() ? null : D.sheet }, a.createElement(r.Z, { style: D.scrollable }, this._renderHeader(), this._renderContent()), this._renderFooter()));
                 }
             }
-            const q = L(G),
-                j = c().a67dbd0a,
+            const j = L(G),
+                q = c().a67dbd0a,
                 K = [
                     { title: c().ee78c192, desc: c().c3f35e0c },
                     { title: c().d019b5fa, desc: c().dd04f24e },
@@ -389,7 +389,7 @@
                 ],
                 $ = c().j24c37b2;
             function Q() {
-                return a.createElement(r.Z, { style: D.curvedHeader }, a.createElement(r.Z, { style: [D.topContent, { paddingTop: w.ZP.isMobileOS() ? "26px" : "36px" }] }, a.createElement(o.ZP, { color: "white", size: "title2", weight: "bold" }, j)));
+                return a.createElement(r.Z, { style: D.curvedHeader }, a.createElement(r.Z, { style: [D.topContent, { paddingTop: w.ZP.isMobileOS() ? "26px" : "36px" }] }, a.createElement(o.ZP, { color: "white", size: "title2", weight: "bold" }, q)));
             }
             function W() {
                 return a.createElement(c().I18NFormatMessage, { $i18n: "dd040d67" }, a.createElement(o.ZP, { color: "text", link: "https://help.x.com/rules-and-policies/authenticity", weight: "bold", withUnderline: !0 }, c().d313d431));
@@ -406,7 +406,7 @@
                 return a.createElement(r.Z, { style: D.footer }, a.createElement(_.ZP, { backgroundColor: "teal600", color: "white", onClick: e, size: "xLarge" }, $));
             }
             const X = function (e) {
-                return a.createElement(S.Z, { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: e.onClose, type: "full", withMask: !0 }, a.createElement(Z.Z, { centeredLogo: a.createElement(A.default, { style: D.headerIcon }), leftControl: a.createElement(C.Z, { backButtonType: "close", onClick: e.onClose }), withBackground: !0 }), a.createElement(r.Z, { style: w.ZP.isMobileOS() ? null : D.sheet }, a.createElement(r.Z, { style: D.scrollable }, a.createElement(Q, null), a.createElement(Y, null)), a.createElement(J, { onConfirm: e.onConfirm })));
+                return a.createElement(Z.Z, { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: e.onClose, type: "full", withMask: !0 }, a.createElement(C.Z, { centeredLogo: a.createElement(A.default, { style: D.headerIcon }), leftControl: a.createElement(S.Z, { backButtonType: "close", onClick: e.onClose }), withBackground: !0 }), a.createElement(r.Z, { style: w.ZP.isMobileOS() ? null : D.sheet }, a.createElement(r.Z, { style: D.scrollable }, a.createElement(Q, null), a.createElement(Y, null)), a.createElement(J, { onConfirm: e.onConfirm })));
             };
             var ee = n(609848),
                 te = n(264922),
@@ -438,9 +438,9 @@
                 fe = c().d0a77c9b,
                 _e = c().jade381b,
                 ye = c().d1f6d336,
-                Se = c().a3841918,
-                Ze = c().f70cd5ee,
-                Ce = c().ib6f1694,
+                Ze = c().a3841918,
+                Ce = c().f70cd5ee,
+                Se = c().ib6f1694,
                 Ae = c().a8d0108e,
                 we = c().de323650,
                 Pe = c().b6ab31be,
@@ -449,21 +449,21 @@
                 De = c().d12d42dc,
                 Ie = c().hbd12156,
                 xe = c().b7ec04f4,
-                Ue = c().f70d5780,
-                Te = c().dc62d3c6,
-                Fe = c().ad31b476,
-                Ne = c().a67dbd0a,
-                Oe = c().a3db727e,
-                ve = c().i62a03aa,
+                ve = c().f70d5780,
+                Ue = c().dc62d3c6,
+                Te = c().ad31b476,
+                Fe = c().a67dbd0a,
+                Ne = c().a3db727e,
+                Oe = c().i62a03aa,
                 Me = c().c119dee8,
                 Re = c().eacf1990,
                 Be = c().a3bf1262,
                 ze = c().bf96fda4,
-                Ve = c().d495680e,
-                He = c().h530db16,
+                He = c().d495680e,
+                Ve = c().h530db16,
                 Ge = c().d6d80990,
-                qe = a.createElement(c().I18NFormatMessage, { $i18n: "ce6f73c7" }, a.createElement(o.ZP, { link: "/settings/account/personalization" }, c().i0d81ddb)),
-                je = c().i859a9d4,
+                je = a.createElement(c().I18NFormatMessage, { $i18n: "ce6f73c7" }, a.createElement(o.ZP, { link: "/settings/account/personalization" }, c().i0d81ddb)),
+                qe = c().i859a9d4,
                 Ke = { page: "settings", section: "account_information" },
                 $e = { page: "account_type_landing" };
             class Qe extends a.Component {
@@ -483,22 +483,22 @@
                             return a.createElement(
                                 r.Z,
                                 null,
-                                h && a.createElement(q, { onClose: this._handleCloseAutomationModal, onConfirm: this._handleConfirmAutomationModal, onFaqClick: this._handleFaqClick }),
+                                h && a.createElement(j, { onClose: this._handleCloseAutomationModal, onConfirm: this._handleConfirmAutomationModal, onFaqClick: this._handleFaqClick }),
                                 p && a.createElement(X, { onClose: this._handleCloseParodyModal, onConfirm: this._handleConfirmParodyModal }),
                                 m ? a.createElement(i.Z, { description: m.screen_name && a.createElement(o.ZP, { color: "gray700", size: "subtext2" }, `@${m.screen_name}`), label: ye, link: "/settings/screen_name" }) : null,
-                                m ? a.createElement(i.Z, { description: d, label: Ze, link: "/settings/phone" }) : null,
-                                m ? a.createElement(i.Z, { description: s, label: Se, link: "/settings/email" }) : null,
+                                m ? a.createElement(i.Z, { description: d, label: Ce, link: "/settings/phone" }) : null,
+                                m ? a.createElement(i.Z, { description: s, label: Ze, link: "/settings/email" }) : null,
                                 m ? this._renderVerified() : null,
-                                m ? a.createElement(i.Z, { description: m.protected ? xe : ve, label: He, link: "/settings/audience_and_tagging" }) : null,
-                                m ? a.createElement(r.Z, { style: [ge.infoItem, ge.bottomBorder], testID: "account-creation" }, a.createElement(o.ZP, null, Ce), a.createElement(o.ZP, { color: "gray700", style: ge.helpText }, fe(new Date(m.created_at))), u.creation_ip && u.country ? a.createElement(o.ZP, { color: "gray700", style: ge.helpText }, `${u.creation_ip} (${u.country})`) : null) : null,
+                                m ? a.createElement(i.Z, { description: m.protected ? xe : Oe, label: Ve, link: "/settings/audience_and_tagging" }) : null,
+                                m ? a.createElement(r.Z, { style: [ge.infoItem, ge.bottomBorder], testID: "account-creation" }, a.createElement(o.ZP, null, Se), a.createElement(o.ZP, { color: "gray700", style: ge.helpText }, fe(new Date(m.created_at))), u.creation_ip && u.country ? a.createElement(o.ZP, { color: "gray700", style: ge.helpText }, `${u.creation_ip} (${u.country})`) : null) : null,
                                 m ? a.createElement(i.Z, { description: n, label: Le, link: "/settings/country" }) : null,
-                                a.createElement(i.Z, { description: E, label: Ve, link: "/settings/languages" }),
+                                a.createElement(i.Z, { description: E, label: He, link: "/settings/languages" }),
                                 a.createElement(i.Z, { description: this._renderGender(l.value), label: Ae, link: "/settings/your_twitter_data/gender" }),
                                 m ? a.createElement(i.Z, { description: a.createElement(a.Fragment, null, a.createElement(o.ZP, { color: "gray700", size: "subtext2" }, g), a.createElement(o.ZP, { color: "gray700", style: ge.helpText }, t ? Be : Re)), label: Me, link: "/settings/profile" }) : null,
                                 a.createElement(i.Z, { description: b, label: ze, link: "/settings/your_twitter_data/age" }),
                                 m ? this._renderAutomation() : null,
                                 m ? this._renderParodyManage() : null,
-                                m ? null : a.createElement(r.Z, { style: ge.infoItem, testID: "loggedOutHelp" }, a.createElement(o.ZP, { color: "gray700", style: ge.helpText }, Ge), a.createElement("br", null), a.createElement(o.ZP, { color: "gray700", style: ge.helpText }, qe)),
+                                m ? null : a.createElement(r.Z, { style: ge.infoItem, testID: "loggedOutHelp" }, a.createElement(o.ZP, { color: "gray700", style: ge.helpText }, Ge), a.createElement("br", null), a.createElement(o.ZP, { color: "gray700", style: ge.helpText }, je)),
                             );
                         }),
                         (this._renderGender = (e) => {
@@ -512,7 +512,7 @@
                             }
                         }),
                         (this._renderVerified = () => {
-                            const e = a.createElement(s.Z, { label: ke, learnMoreLabel: je, learnMoreLink: "https://help.x.com/managing-your-account/about-twitter-verified-accounts", subtext: this.props.viewerUser?.verified || this.props.viewerUser?.is_blue_verified ? Ue : Te });
+                            const e = a.createElement(s.Z, { label: ke, learnMoreLabel: qe, learnMoreLink: "https://help.x.com/managing-your-account/about-twitter-verified-accounts", subtext: this.props.viewerUser?.verified || this.props.viewerUser?.is_blue_verified ? ve : Ue });
                             if (this.context.featureSwitches.isTrue("identity_verification_intake_enabled")) {
                                 let t, n;
                                 switch (this.props.verificationAccess.status) {
@@ -520,10 +520,10 @@
                                     case b.pY.NOT_ELIGIBLE:
                                         return e;
                                     case b.pY.VERIFIED:
-                                        n = Ue;
+                                        n = ve;
                                         break;
                                     default:
-                                        (t = Ie), (n = Te);
+                                        (t = Ie), (n = Ue);
                                 }
                                 return a.createElement(s.Z, { label: ke, learnMoreLabel: t, learnMoreLink: "/settings/account/request_verification", subtext: n });
                             }
@@ -558,7 +558,7 @@
                         (this._renderAutomation = () => {
                             const { managingAccount: e } = this.props,
                                 t = e ? "/settings/account/automation" : "/settings/your_twitter_data/account";
-                            return a.createElement(i.Z, { description: Fe, label: De, link: t, onPress: this._handleAutomationOnPress });
+                            return a.createElement(i.Z, { description: Te, label: De, link: t, onPress: this._handleAutomationOnPress });
                         }),
                         (this._renderParodyManage = () => {
                             const { featureSwitches: e } = this.context;
@@ -566,7 +566,7 @@
                             const t = this.props.viewerUser?.parody_commentary_fan_label,
                                 n = t && "None" !== t,
                                 r = n ? "/settings/account/parody" : "/settings/your_twitter_data/account";
-                            return a.createElement(i.Z, { description: n ? (0, m.U)(t) : Oe, label: Ne, link: r, onPress: this._handleParodyOnPress });
+                            return a.createElement(i.Z, { description: n ? (0, m.U)(t) : Ne, label: Fe, link: r, onPress: this._handleParodyOnPress });
                         }),
                         (this.state = { showAutomationOnboardingModal: !1, showParodyOnboardingModal: !1 });
                 }
@@ -599,13 +599,13 @@
                 f = n(293115),
                 _ = n(23478),
                 y = n(264922),
-                S = n(569291),
-                Z = n(71620),
-                C = n(668214),
+                Z = n(569291),
+                C = n(71620),
+                S = n(668214),
                 A = n(601576);
-            const w = (0, C.Z)()
+            const w = (0, S.Z)()
                 .propsFromState(() => ({ fetchStatus: _.UD, downloads: _.NK, isUserDataUnavailable: _.c }))
-                .propsFromActions(() => ({ addToast: A.fz, createDataDownload: _.fm, createLocalApiErrorHandler: (0, Z.zr)("DOWNLOAD_YOUR_DATA"), fetchDownloads: _._d }))
+                .propsFromActions(() => ({ addToast: A.fz, createDataDownload: _.fm, createLocalApiErrorHandler: (0, C.zr)("DOWNLOAD_YOUR_DATA"), fetchDownloads: _._d }))
                 .withAnalytics({ page: "settings", section: "account", component: "download_your_data" });
             const P = n(392237).default.create((e) => ({ description: { flexShrink: 1 }, helpText: { display: "block", fontSize: e.fontSizes.subtext2, lineHeight: "1.55" }, errorText: { marginEnd: e.spaces.space20 }, floatingLink: { paddingStart: e.spaces.space20 }, labelContainer: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", width: "100%" }, narrowButton: { alignSelf: "center", marginStart: e.spaces.space12, paddingStart: e.spaces.space20 }, narrowButtonRow: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, noShrink: { flexShrink: 0 } })),
                 L = "/settings/your_twitter_data/data",
@@ -613,27 +613,27 @@
                 D = (0, o.ju)("https://help.x.com/managing-your-account/accessing-your-twitter-data"),
                 I = (0, o.ju)("https://help.x.com/forms/feature_report?feature=emails&subtopic=email_twitter_archive&was_redirect=true"),
                 x = p().f56af9cc,
-                U = p().cce24bf4,
-                T = p().h3ed510e,
-                F = p().c39b0e24,
-                N = p().b708417c,
-                O = p().jbf5843e,
-                v = p().ea886c6e,
+                v = p().cce24bf4,
+                U = p().h3ed510e,
+                T = p().c39b0e24,
+                F = p().b708417c,
+                N = p().jbf5843e,
+                O = p().ea886c6e,
                 M = p().cdcc2ad4,
                 R = p().dbeff87a,
                 B = p().ce5d2c46,
                 z = p().b2ed92c4,
-                V = p().gee8110e,
-                H = p().f56af9cc,
+                H = p().gee8110e,
+                V = p().f56af9cc,
                 G = p().hb02ed28,
-                q = p().c2254084,
-                j = p().f62d1d9e,
+                j = p().c2254084,
+                q = p().f62d1d9e,
                 K = p().i859a9d4,
                 $ = a.createElement(p().I18NFormatMessage, { $i18n: "efc1de65" }, a.createElement(i.ZP, { link: I }, p().db40dfcf)),
                 Q = p().b221ca4c,
                 W = { page: "settings", section: "account", component: "download_your_data" },
                 Y = Object.freeze({ ..._.n$, UNAVAILABLE: "UNAVAILABLE" }),
-                J = () => a.createElement(a.Fragment, null, a.createElement(s.Z, null), a.createElement(l.Z, { label: H, withBottomBorder: !0 }), a.createElement(c.Z, { description: G })),
+                J = () => a.createElement(a.Fragment, null, a.createElement(s.Z, null), a.createElement(l.Z, { label: V, withBottomBorder: !0 }), a.createElement(c.Z, { description: G })),
                 X = (e) => {
                     switch (e) {
                         case Y.NONE:
@@ -641,7 +641,7 @@
                         case Y.FAILED:
                             return M;
                         case Y.COMPLETE:
-                            return V;
+                            return H;
                         case Y.UNAVAILABLE:
                             return B;
                         default:
@@ -655,16 +655,16 @@
                         case Y.FAILED:
                             return $;
                         case Y.COMPLETE:
-                            return j;
+                            return q;
                         case Y.UNAVAILABLE:
                             return G;
                         default:
-                            return q;
+                            return j;
                     }
                 };
             function te(e) {
                 const { viewerUserId: t } = a.useContext(g.rC),
-                    { addToast: n, analytics: o, createDataDownload: l, createLocalApiErrorHandler: h, downloads: p, fetchDownloads: Z, fetchStatus: C, isUserDataUnavailable: A, location: w } = e,
+                    { addToast: n, analytics: o, createDataDownload: l, createLocalApiErrorHandler: h, downloads: p, fetchDownloads: C, fetchStatus: S, isUserDataUnavailable: A, location: w } = e,
                     I = !!t,
                     M = !I,
                     R = A,
@@ -684,11 +684,11 @@
                         a.createElement(
                             y.Z,
                             { location: w, screenType: "secondaryDetail", title: x },
-                            a.createElement(c.Z, { description: U }),
+                            a.createElement(c.Z, { description: v }),
                             B
-                                ? a.createElement(S.Z, {
-                                      fetch: () => Z(),
-                                      fetchStatus: C,
+                                ? a.createElement(Z.Z, {
+                                      fetch: () => C(),
+                                      fetchStatus: S,
                                       renderChildren: () =>
                                           a.createElement(
                                               a.Fragment,
@@ -696,8 +696,8 @@
                                               a.createElement(
                                                   r.Z,
                                                   null,
-                                                  a.createElement(u.Z, { text: T }),
-                                                  a.createElement(c.Z, { description: N, learnMoreLabel: K, learnMoreLink: D }),
+                                                  a.createElement(u.Z, { text: U }),
+                                                  a.createElement(c.Z, { description: F, learnMoreLabel: K, learnMoreLink: D }),
                                                   (() => {
                                                       const { all: e, nonFailed: t } = p,
                                                           n = t.length ? t[0].status : e.length ? _.n$.FAILED : _.n$.NONE,
@@ -709,15 +709,15 @@
                                                           m = u ? Y.UNAVAILABLE : n,
                                                           h = n === _.n$.NONE ? z : b.Z,
                                                           g = () => a.createElement(d.ZP, { disabled: s || c || u, link: l ? L : void 0, onPress: h, size: "small", style: P.narrowButton, type: "brandFilled" }, X(m));
-                                                      return a.createElement(r.Z, { style: [P.narrowButtonRow, P.labelContainer] }, a.createElement(r.Z, { style: P.description }, a.createElement(i.ZP, null, F), a.createElement(i.ZP, { color: "gray700", style: [P.errorText, P.helpText] }, ee(m))), a.createElement(r.Z, { style: P.noShrink }, a.createElement(g, null)));
+                                                      return a.createElement(r.Z, { style: [P.narrowButtonRow, P.labelContainer] }, a.createElement(r.Z, { style: P.description }, a.createElement(i.ZP, null, T), a.createElement(i.ZP, { color: "gray700", style: [P.errorText, P.helpText] }, ee(m))), a.createElement(r.Z, { style: P.noShrink }, a.createElement(g, null)));
                                                   })(),
                                               ),
                                               a.createElement(s.Z, null),
-                                              a.createElement(r.Z, null, a.createElement(u.Z, { text: O }), a.createElement(m.Z, { label: v, link: { external: !0, pathname: k } })),
+                                              a.createElement(r.Z, null, a.createElement(u.Z, { text: N }), a.createElement(m.Z, { label: O, link: { external: !0, pathname: k } })),
                                           ),
                                   })
                                 : null,
-                            M && a.createElement(m.Z, { label: V, link: "/settings/your_twitter_data/request_data" }),
+                            M && a.createElement(m.Z, { label: H, link: "/settings/your_twitter_data/request_data" }),
                             R && a.createElement(J, null),
                         ),
                     ),
@@ -746,9 +746,9 @@
                 f = s().d3a2bde8,
                 _ = s().f15bfdb4,
                 y = s().idca4742,
-                S = s().b6ded35e,
-                Z = s().ab1f7ee0,
-                C = s().f56af9cc,
+                Z = s().b6ded35e,
+                C = s().ab1f7ee0,
+                S = s().f56af9cc,
                 A = s().cce24bf4,
                 w = s().hfb92b14,
                 P = s().i203df96,
@@ -757,8 +757,8 @@
                     const t = a.useMemo(
                         () => [
                             { description: y, label: _, link: "/settings/your_twitter_data/account", Icon: l.default },
-                            { description: S, label: Z, link: "/settings/password", Icon: c.default },
-                            { description: A, label: C, link: "/settings/download_your_data", Icon: d.default },
+                            { description: Z, label: C, link: "/settings/password", Icon: c.default },
+                            { description: A, label: S, link: "/settings/download_your_data", Icon: d.default },
                             { description: P, label: w, link: "/settings/deactivate", Icon: u.default },
                         ],
                         [],
@@ -785,7 +785,7 @@
         },
         82999: (e, t, n) => {
             "use strict";
-            n.r(t), n.d(t, { AccountAutomationScreen: () => $, changeManagingAccountLabel: () => T, default: () => W, setManagingAccountLabel: () => F });
+            n.r(t), n.d(t, { AccountAutomationScreen: () => $, changeManagingAccountLabel: () => U, default: () => W, setManagingAccountLabel: () => T });
             var a = n(202784),
                 r = n(325686),
                 o = n(688715),
@@ -804,9 +804,9 @@
                 f = n(293723),
                 _ = n(290402),
                 y = n(443781),
-                S = n(652904),
-                Z = n(293115),
-                C = n(312771),
+                Z = n(652904),
+                C = n(293115),
+                S = n(312771),
                 A = n(264922),
                 w = n(668214),
                 P = n(181617),
@@ -818,21 +818,21 @@
                 D = (0, o.ju)("https://help.x.com/using-twitter/automated-account-labels"),
                 I = g().d12d42dc,
                 x = g().ad31b476,
-                U = g().a2981062,
-                T = g().aff4540e,
-                F = g().b8b9d100,
-                N = a.createElement(i.ZP, { color: "gray700", size: "subtext2" }, a.createElement(g().I18NFormatMessage, { $i18n: "d79b6b7b" }, a.createElement(i.ZP, { link: D, size: "subtext2" }, g().f79acef3))),
-                O = g().e0bc51f6,
-                v = g().i9028824,
+                v = g().a2981062,
+                U = g().aff4540e,
+                T = g().b8b9d100,
+                F = a.createElement(i.ZP, { color: "gray700", size: "subtext2" }, a.createElement(g().I18NFormatMessage, { $i18n: "d79b6b7b" }, a.createElement(i.ZP, { link: D, size: "subtext2" }, g().f79acef3))),
+                N = g().e0bc51f6,
+                O = g().i9028824,
                 M = g().b92190c2,
                 R = g().fb03b39a,
                 B = g().bd51ddfa,
                 z = { page: "settings", section: "account_information", component: "automation" },
-                V = { page: "system", section: "message" },
-                H = g().e91c15f6,
+                H = { page: "system", section: "message" },
+                V = g().e91c15f6,
                 G = g().df035b80,
-                q = g().bd12cf34,
-                j = g().cfd2f35e,
+                j = g().bd12cf34,
+                q = g().cfd2f35e,
                 K = "/i/flow/enable_automated_account";
             class $ extends a.Component {
                 constructor(e, t) {
@@ -861,9 +861,9 @@
                         (this._handleToggleDisableConfirmation = () => {
                             this.setState({ showDisableConfirmation: !this.state.showDisableConfirmation });
                         }),
-                        (this._renderUnassignedManagingAccountView = () => a.createElement(r.Z, null, a.createElement(l.Z, { description: N, label: F, link: K }), this.state.showCallout && this._renderCallout())),
-                        (this._renderAssignedManagingAccountView = () => a.createElement(r.Z, null, a.createElement(c.Z, { label: U, subtext: this.props.managingAccount || "", withBottomBorder: !1 }), a.createElement(l.Z, { label: T, link: K }), this.state.showCallout && this._renderCallout(), a.createElement(d.Z, null), a.createElement(u.Z, { color: "red500", label: O, onPress: this._handleToggleDisableConfirmation }))),
-                        (this._renderDisconnectConfirmation = () => a.createElement(m.Z, { actionLabel: q, graphicDisplayMode: "none", headline: H, onAction: this._handleDisableUserAccountLabel, onClose: this._handleToggleDisableConfirmation, onSecondaryAction: this._handleToggleDisableConfirmation, secondaryActionLabel: j, subtext: G, useBrandedActionButtons: !0, withCloseButton: !0 })),
+                        (this._renderUnassignedManagingAccountView = () => a.createElement(r.Z, null, a.createElement(l.Z, { description: F, label: T, link: K }), this.state.showCallout && this._renderCallout())),
+                        (this._renderAssignedManagingAccountView = () => a.createElement(r.Z, null, a.createElement(c.Z, { label: v, subtext: this.props.managingAccount || "", withBottomBorder: !1 }), a.createElement(l.Z, { label: U, link: K }), this.state.showCallout && this._renderCallout(), a.createElement(d.Z, null), a.createElement(u.Z, { color: "red500", label: N, onPress: this._handleToggleDisableConfirmation }))),
+                        (this._renderDisconnectConfirmation = () => a.createElement(m.Z, { actionLabel: j, graphicDisplayMode: "none", headline: V, onAction: this._handleDisableUserAccountLabel, onClose: this._handleToggleDisableConfirmation, onSecondaryAction: this._handleToggleDisableConfirmation, secondaryActionLabel: q, subtext: G, useBrandedActionButtons: !0, withCloseButton: !0 })),
                         (this._render = () => {
                             const e = this.props.managingAccount ? this._renderAssignedManagingAccountView() : this._renderUnassignedManagingAccountView(),
                                 { showDisableConfirmation: t } = this.state;
@@ -885,20 +885,20 @@
                         { disableAccountLabelStatus: o, managingAccount: i, managingAccountFetchStatus: s } = e,
                         { hasExitedOCF: l } = this.state,
                         c = i && a !== i,
-                        d = s === C.ZP.LOADED || r === C.ZP.LOADED;
+                        d = s === S.ZP.LOADED || r === S.ZP.LOADED;
                     if ((c && d && l && (this._handleShowCallout(M), this._scribe({ ...z, action: "enabled" })), n !== o))
                         switch (o) {
-                            case C.ZP.LOADED:
+                            case S.ZP.LOADED:
                                 this._handleShowCallout(R), this._scribe({ ...z, action: "disabled" });
                                 break;
-                            case C.ZP.FAILED:
-                                this._handleShowCallout(B, !0), this._scribe({ ...V, element: "automation_opt_out_error", action: "view" });
+                            case S.ZP.FAILED:
+                                this._handleShowCallout(B, !0), this._scribe({ ...H, element: "automation_opt_out_error", action: "view" });
                         }
                     return e !== this.props || t !== this.state;
                 }
                 render() {
                     const { managingAccountFetchStatus: e } = this.props;
-                    return a.createElement(Z.nO, { namespace: z }, a.createElement(S.Z, null, a.createElement(_.Z, { "aria-label": v, fetchStatus: e, onRequestRetry: this._handleFetchUserAccountLabel, render: this._render })));
+                    return a.createElement(C.nO, { namespace: z }, a.createElement(Z.Z, null, a.createElement(_.Z, { "aria-label": O, fetchStatus: e, onRequestRetry: this._handleFetchUserAccountLabel, render: this._render })));
                 }
             }
             $.contextType = y.rC;
@@ -927,9 +927,9 @@
                 f = n(952793),
                 _ = n(71620),
                 y = n(293115),
-                S = n(125363),
-                Z = n(919022),
-                C = n(264922),
+                Z = n(125363),
+                C = n(919022),
+                S = n(264922),
                 A = {
                     fragment: {
                         argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "parodyProfileLabel" }]),
@@ -990,21 +990,21 @@
                 D = n(731708),
                 I = n(88656),
                 x = n(240666),
-                U = n(601576),
-                T = n(535338);
-            const F = "https://help.x.com/rules-and-policies/authenticity",
-                N = b().dbcf3a1a,
-                O = b().hf019b20,
-                v = b().ce62c8c2,
+                v = n(601576),
+                U = n(535338);
+            const T = "https://help.x.com/rules-and-policies/authenticity",
+                F = b().dbcf3a1a,
+                N = b().hf019b20,
+                O = b().ce62c8c2,
                 M = b().a14080ce,
                 R = b().db6796f6,
                 B = b().c700b6be,
                 z = b().e68b09b4,
-                V = b().h3701ffe,
-                H = b().i859a9d4,
+                H = b().h3701ffe,
+                V = b().i859a9d4,
                 G = b().ff1739ae,
-                q = b().h70c602c,
-                j = "AccountParody",
+                j = b().h70c602c,
+                q = "AccountParody",
                 K = { page: "settings", section: "account_information", component: "parody" },
                 $ = [
                     { label: (0, x.U)("None"), value: "None" },
@@ -1016,20 +1016,20 @@
                 W = w;
             function Y({ user: e }) {
                 const t = e.parody_commentary_fan_label ?? "None",
-                    n = (0, S.I0)(),
-                    a = (0, _.n7)(j),
-                    r = (0, T.p)(Q, {}),
+                    n = (0, Z.I0)(),
+                    a = (0, _.n7)(q),
+                    r = (0, U.p)(Q, {}),
                     o = r.get_parody_label_settings?.is_label_update_disabled ?? !1,
                     i = r.get_parody_label_settings?.update_disabled_reason,
                     [s, c] = d()(W),
                     [m, p] = l.useState(),
                     b = (t) => {
-                        n(Z.ZP.patchUser(e.id_str, { parody_commentary_fan_label: t }));
+                        n(C.ZP.patchUser(e.id_str, { parody_commentary_fan_label: t }));
                     },
                     g = (e) => {
                         if (c) return;
                         const n = ((e) => (t) => {
-                            b(e), a({ 403: { customAction: (e) => (0, U.mf)({ text: e.message ?? q }) }, showToast: !0 })(t);
+                            b(e), a({ 403: { customAction: (e) => (0, v.mf)({ text: e.message ?? j }) }, showToast: !0 })(t);
                         })(t);
                         s({
                             variables: { parodyProfileLabel: e },
@@ -1047,9 +1047,9 @@
                         E.Z,
                         null,
                         l.createElement(
-                            C.Z,
-                            { title: N },
-                            l.createElement(u.Z, { description: O, learnMoreLabel: H, learnMoreLink: F }),
+                            S.Z,
+                            { title: F },
+                            l.createElement(u.Z, { description: N, learnMoreLabel: V, learnMoreLink: T }),
                             l.createElement(k.Z, {
                                 disabled: o,
                                 label: G,
@@ -1057,11 +1057,11 @@
                                 onChange: (e, t) => {
                                     const n = "None" !== t;
                                     p({
-                                        confirmLabel: n ? V : z,
+                                        confirmLabel: n ? H : z,
                                         onConfirm: () => {
                                             p(void 0), g(t);
                                         },
-                                        title: n ? M : v,
+                                        title: n ? M : O,
                                         desc: n ? B : R,
                                     });
                                 },
@@ -1069,7 +1069,7 @@
                                 value: t,
                             }),
                             o && l.createElement(u.Z, { description: l.createElement(D.ZP, { color: "red500" }, i) }),
-                            m && l.createElement(h.Z, { confirmButtonLabel: m.confirmLabel, headline: m.title, learnMoreLink: F, learnMoreText: H, onCancel: () => p(void 0), onConfirm: m.onConfirm, text: m.desc, withCancelButton: !0 }),
+                            m && l.createElement(h.Z, { confirmButtonLabel: m.confirmLabel, headline: m.title, learnMoreLink: T, learnMoreText: V, onCancel: () => p(void 0), onConfirm: m.onConfirm, text: m.desc, withCancelButton: !0 }),
                         ),
                     ),
                 );
@@ -1094,12 +1094,12 @@
                 de = { page: "settings", section: "account_information", component: "parody" };
             function ue({ user: e }) {
                 const t = e.parody_commentary_fan_label ?? "None",
-                    n = (0, S.I0)(),
+                    n = (0, Z.I0)(),
                     a = (0, _.n7)(ce),
                     [r, o] = d()(X),
                     [i, { toggle: s }] = (0, g.O)(!1),
                     c = (t) => {
-                        n(Z.ZP.patchUser(e.id_str, { parody_commentary_fan_label: t }));
+                        n(C.ZP.patchUser(e.id_str, { parody_commentary_fan_label: t }));
                     },
                     p = (e) => {
                         if (o) return;
@@ -1123,7 +1123,7 @@
                         E.Z,
                         null,
                         l.createElement(
-                            C.Z,
+                            S.Z,
                             { title: te },
                             l.createElement(u.Z, { description: ne }),
                             l.createElement(m.Z, {
@@ -1143,7 +1143,7 @@
                 );
             }
             function me() {
-                const e = (0, S.v9)(Z.ZP.selectViewerUser),
+                const e = (0, Z.v9)(C.ZP.selectViewerUser),
                     t = (0, f.hC)("profile_label_improvements_pcf_edit_profile_enabled");
                 return null == e ? null : t ? l.createElement(Y, { user: e }) : l.createElement(ue, { user: e });
             }
@@ -1169,16 +1169,16 @@
                 f = l().i647fb04,
                 _ = l().ef1b5cbc,
                 y = l().bcd81cac,
-                S = l().da867c58,
-                Z = { page: "settings", section: "notification" },
-                C = [
+                Z = l().da867c58,
+                C = { page: "settings", section: "notification" },
+                S = [
                     { description: _, label: f, link: "/settings/notifications/filters", Icon: c.default, testID: "testIconFilter" },
-                    { description: S, label: y, link: "/settings/notifications/preferences", Icon: d.default, testID: "testIconDeviceNotification" },
+                    { description: Z, label: y, link: "/settings/notifications/preferences", Icon: d.default, testID: "testIconDeviceNotification" },
                 ],
                 A = ({ location: e }) =>
                     r.createElement(
                         h.nO,
-                        { namespace: Z },
+                        { namespace: C },
                         r.createElement(
                             m.Z,
                             null,
@@ -1189,7 +1189,7 @@
                                     o.Z,
                                     { testID: b },
                                     r.createElement(i.Z, { description: E }),
-                                    C.map((e) => r.createElement(u.H, (0, a.Z)({}, e, { key: e.link }))),
+                                    S.map((e) => r.createElement(u.H, (0, a.Z)({}, e, { key: e.link }))),
                                 ),
                             ),
                         ),
@@ -1273,6 +1273,34 @@
             const l = i.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, bottomBorder: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor } })),
                 c = s;
         },
+        744649: (e, t, n) => {
+            "use strict";
+            n.r(t), n.d(t, { default: () => l });
+            var a = n(202784),
+                r = n(890601),
+                o = n(783427),
+                i = n(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, o.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M7 17h6v2H7v-2zm7.5-15C15.88 2 17 3.12 17 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-9C4.12 22 3 20.88 3 19.5v-15C3 3.12 4.12 2 5.5 2h9zM5 19.5c0 .28.22.5.5.5h9c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-9c-.28 0-.5.22-.5.5v15zm15.74-3.49l1.64 1.15C23.4 15.7 24 13.92 24 12s-.6-3.7-1.62-5.16l-1.64 1.15C21.53 9.13 22 10.51 22 12s-.47 2.87-1.26 4.01zm-.82-7.45l-1.64 1.15c.45.65.72 1.43.72 2.29 0 .85-.27 1.64-.72 2.29l1.64 1.15C20.6 14.47 21 13.28 21 12s-.4-2.47-1.08-3.44z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
+        517747: (e, t, n) => {
+            "use strict";
+            n.r(t), n.d(t, { default: () => l });
+            var a = n(202784),
+                r = n(890601),
+                o = n(783427),
+                i = n(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, o.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14 6V3h2v8h-2V8H3V6h11zm7 2h-3.5V6H21v2zM8 16v-3h2v8H8v-3H3v-2h5zm13 2h-9.5v-2H21v2z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
         143095: (e, t, n) => {
             "use strict";
             n.d(t, { O: () => r });
@@ -1293,4 +1321,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsRevamp.46416a5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsRevamp.e2ad478a.js.map

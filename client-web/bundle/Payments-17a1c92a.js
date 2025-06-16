@@ -123,6 +123,10 @@
             a.d(n, { x: () => l });
             const l = Object.freeze({ AtmWithdrawal: "AtmWithdrawal", Deposit: "Deposit", DisputeCredit: "DisputeCredit", Payment: "Payment", Refund: "Refund", Reverse: "Reverse", Transfer: "Transfer", Unspecified: "Unspecified", Withdraw: "Withdraw" });
         },
+        848739: (e, n, a) => {
+            a.d(n, { l: () => l });
+            const l = Object.freeze({ Delayed: "Delayed", RealTime: "RealTime" });
+        },
         539660: (e, n, a) => {
             a.d(n, { P: () => l });
             const l = Object.freeze({ Cancelled: "Cancelled", InReview: "InReview", RejectedByAutoReview: "RejectedByAutoReview", RejectedByManualReview: "RejectedByManualReview", RejectedByUnsupportedRegion: "RejectedByUnsupportedRegion", RejectedCardInactive: "RejectedCardInactive", RejectedCardPaymentsDisabled: "RejectedCardPaymentsDisabled", RejectedLimitsExceeded: "RejectedLimitsExceeded", RejectedNotSufficientFunds: "RejectedNotSufficientFunds", Returned: "Returned", ReversedByAgent: "ReversedByAgent", UnrecognizedActivityConfirmed: "UnrecognizedActivityConfirmed", UnrecognizedActivityRejected: "UnrecognizedActivityRejected", Unspecified: "Unspecified" });
@@ -218,8 +222,8 @@
                 F,
                 _,
                 K,
-                S,
-                f = {
+                f,
+                S = {
                     fragment: {
                         argumentDefinitions: (l = [
                             { defaultValue: null, kind: "LocalArgument", name: "count" },
@@ -380,7 +384,7 @@
                                                             },
                                                             {
                                                                 kind: "InlineFragment",
-                                                                selections: (S = [
+                                                                selections: (f = [
                                                                     (K = {
                                                                         alias: null,
                                                                         args: null,
@@ -431,7 +435,7 @@
                                                                 type: "XPaymentsBankingDepositDetails",
                                                                 abstractKey: null,
                                                             },
-                                                            { kind: "InlineFragment", selections: S, type: "XPaymentsBankingWithdrawalDetails", abstractKey: null },
+                                                            { kind: "InlineFragment", selections: f, type: "XPaymentsBankingWithdrawalDetails", abstractKey: null },
                                                             { kind: "InlineFragment", selections: [K, y], type: "XPaymentsPaymentDetails", abstractKey: null },
                                                             { kind: "InlineFragment", selections: [K, y, { alias: null, args: null, kind: "ScalarField", name: "reference_transaction_id", storageKey: null }], type: "XPaymentsRefundDetails", abstractKey: null },
                                                         ],
@@ -457,8 +461,8 @@
                     },
                     params: { id: "qPC1JVZ6NY8QuS12-1xFxA", metadata: { sliceInfoPath: ["get_payments_customer_actions", "slice_info"] }, name: "useActionableItemsQuery", operationKind: "query", text: null },
                 };
-            f.hash = "a6a8f048d1caef1c671f17a2b72cb546";
-            const h = f;
+            S.hash = "a6a8f048d1caef1c671f17a2b72cb546";
+            const h = S;
         },
         914507: (e, n, a) => {
             a.d(n, { Z: () => u });
@@ -1146,8 +1150,8 @@
                 F,
                 _,
                 K,
-                S,
                 f,
+                S,
                 h,
                 b,
                 T,
@@ -1222,8 +1226,8 @@
                                                     }),
                                                     (_ = { alias: null, args: null, kind: "ScalarField", name: "authorization_method", storageKey: null }),
                                                     (K = { alias: null, args: null, kind: "ScalarField", name: "availability_date", storageKey: null }),
-                                                    (S = { alias: null, args: null, kind: "ScalarField", name: "available_actions", storageKey: null }),
-                                                    (f = { alias: null, args: null, kind: "ScalarField", name: "base_amount_micro", storageKey: null }),
+                                                    (f = { alias: null, args: null, kind: "ScalarField", name: "available_actions", storageKey: null }),
+                                                    (S = { alias: null, args: null, kind: "ScalarField", name: "base_amount_micro", storageKey: null }),
                                                     m,
                                                     (h = { alias: null, args: null, kind: "ScalarField", name: "created_at", storageKey: null }),
                                                     p,
@@ -1302,8 +1306,8 @@
                                                     F,
                                                     _,
                                                     K,
-                                                    S,
                                                     f,
+                                                    S,
                                                     m,
                                                     h,
                                                     p,
@@ -1355,4 +1359,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-17a1c92a.e9570f8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-17a1c92a.e75db80a.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.Communities~ondemand.SettingsRevamp", "icons/IconFeedback-js"],
+    ["shared~bundle.Communities~ondemand.SettingsRevamp", "icons/IconFollowArrowLeft-js", "icons/IconSparkle-js"],
     {
         947135: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -53,11 +53,11 @@
                             w.scribeAction("click"), v && v();
                         }, [w, v]),
                         C = i.Z.generate({ backgroundColor: a.default.theme.colors.transparent, color: a.default.theme.colors.gray300 }),
-                        S = () => r.createElement(o.Z, { style: p.header }, t && r.createElement(t, { style: [p.icon, g && { color: a.default.theme.colors[g] }], testID: `${u}-icon` }), r.createElement(l.ZP, { size: "subtext1" }, f)),
-                        E = () => r.createElement(r.Fragment, null, r.createElement(l.ZP, { size: "headline2", weight: "bold" }, b), x && r.createElement(l.ZP, { color: "gray700" }, x)),
+                        E = () => r.createElement(o.Z, { style: p.header }, t && r.createElement(t, { style: [p.icon, g && { color: a.default.theme.colors[g] }], testID: `${u}-icon` }), r.createElement(l.ZP, { size: "subtext1" }, f)),
+                        S = () => r.createElement(r.Fragment, null, r.createElement(l.ZP, { size: "headline2", weight: "bold" }, b), x && r.createElement(l.ZP, { color: "gray700" }, x)),
                         k = () => r.createElement(o.Z, { style: p.decoration, testID: `${u}-decoration` }, n),
                         I = () => !!m && r.createElement(o.Z, { style: p.decoration, testID: `${u}-img` }, r.createElement(s.Z, { "aria-label": "", aspectMode: c.Z.exact(1), image: { url: m, width: 88, height: 88 } }));
-                    return r.createElement(d.Z, { interactiveStyles: C, link: y, onClick: Z, style: p.root }, r.createElement(o.Z, { style: p.content }, r.createElement(S, { Icon: t, header: f, iconColor: g }), r.createElement(E, { primaryText: b, secondaryText: x })), n ? r.createElement(k, { decoration: n }) : r.createElement(I, { imageUrl: m }));
+                    return r.createElement(d.Z, { interactiveStyles: C, link: y, onClick: Z, style: p.root }, r.createElement(o.Z, { style: p.content }, r.createElement(E, { Icon: t, header: f, iconColor: g }), r.createElement(S, { primaryText: b, secondaryText: x })), n ? r.createElement(k, { decoration: n }) : r.createElement(I, { imageUrl: m }));
                 },
                 p = a.default.create((e) => ({ root: { borderColor: e.colors.borderColor, borderRadius: e.borderRadii.large, borderWidth: e.borderWidths.medium, padding: e.spaces.space16, flexDirection: "row", justifyContent: "space-between" }, content: { flexShrink: 1 }, header: { alignItems: "center", flexDirection: "row", marginBottom: e.spaces.space12 }, icon: { height: e.spaces.space20, width: e.spaces.space20, marginEnd: e.spaces.space8 }, decoration: { width: `calc(${e.spaces.space80} + ${e.spaces.space8})`, marginStart: e.spaces.space16 } })),
                 g = r.memo(f);
@@ -269,7 +269,7 @@
             const l = (e) => r.createElement(o.Z, { style: s.root }, r.createElement(i.Z, e)),
                 s = a.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical } }));
         },
-        790093: (e, t, n) => {
+        246492: (e, t, n) => {
             n.r(t), n.d(t, { default: () => s });
             var r = n(202784),
                 o = n(890601),
@@ -277,7 +277,20 @@
                 a = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm5.586-2l4.207 4.21 1.414-1.42L19.414 10H24V8h-4.586l1.793-1.79-1.414-1.42L15.586 9z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
+        264171: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => s });
+            var r = n(202784),
+                o = n(890601),
+                i = n(783427),
+                a = n(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
@@ -291,6 +304,19 @@
             const l = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
                 return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
+        262009: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => s });
+            var r = n(202784),
+                o = n(890601),
+                i = n(783427),
+                a = n(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1C11.26 7.53 12 5.35 12 2h2zM5 1c0 1.66-1.34 3-3 3v1c1.66 0 3 1.34 3 3h1c0-1.66 1.34-3 3-3V4C7.34 4 6 2.66 6 1H5z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
@@ -427,8 +453,8 @@
                     return -1 === t.indexOf(r) && (n[r] = e[r]), n;
                 }, {});
             }
-            var S = { end: ["touchend", "touchcancel", "mouseup"], move: ["touchmove", "mousemove"], start: ["touchstart", "mousedown"] },
-                E = (function () {
+            var E = { end: ["touchend", "touchcancel", "mouseup"], move: ["touchmove", "mousemove"], start: ["touchstart", "mousedown"] },
+                S = (function () {
                     if ("undefined" == typeof window || "undefined" == typeof document) return "";
                     var e = window.getComputedStyle(document.documentElement, "") || ["-moz-hidden-iframe"],
                         t = (Array.prototype.slice
@@ -444,10 +470,10 @@
                 });
             }
             function I(e, t) {
-                e.style["".concat(E, "Transform")] = null == t ? "" : "translate3d(".concat(t.x, "px,").concat(t.y, "px,0)");
+                e.style["".concat(S, "Transform")] = null == t ? "" : "translate3d(".concat(t.x, "px,").concat(t.y, "px,0)");
             }
             function T(e, t) {
-                e.style["".concat(E, "TransitionDuration")] = null == t ? "" : "".concat(t, "ms");
+                e.style["".concat(S, "TransitionDuration")] = null == t ? "" : "".concat(t, "ms");
             }
             function O(e, t) {
                 for (; e; ) {
@@ -456,10 +482,10 @@
                 }
                 return null;
             }
-            function R(e, t, n) {
+            function D(e, t, n) {
                 return Math.max(e, Math.min(n, t));
             }
-            function D(e) {
+            function R(e) {
                 return "px" === e.substr(-2) ? parseFloat(e) : 0;
             }
             function P(e, t) {
@@ -473,14 +499,14 @@
             function A(e) {
                 return e.touches && e.touches.length ? { x: e.touches[0].pageX, y: e.touches[0].pageY } : e.changedTouches && e.changedTouches.length ? { x: e.changedTouches[0].pageX, y: e.changedTouches[0].pageY } : { x: e.pageX, y: e.pageY };
             }
-            function N(e, t) {
+            function M(e, t) {
                 var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : { left: 0, top: 0 };
                 if (e) {
                     var r = { left: n.left + e.offsetLeft, top: n.top + e.offsetTop };
-                    return e.parentNode === t ? r : N(e.parentNode, t, r);
+                    return e.parentNode === t ? r : M(e.parentNode, t, r);
                 }
             }
-            function M(e) {
+            function L(e) {
                 var t = e.lockOffset,
                     n = e.width,
                     r = e.height,
@@ -493,7 +519,7 @@
                 }
                 return y()(isFinite(o) && isFinite(i), "lockOffset value should be a finite. Given %s", t), "%" === a && ((o = (o * n) / 100), (i = (i * r) / 100)), { x: o, y: i };
             }
-            function L(e) {
+            function N(e) {
                 return e instanceof HTMLElement
                     ? (function (e) {
                           var t = window.getComputedStyle(e),
@@ -503,16 +529,16 @@
                           });
                       })(e)
                         ? e
-                        : L(e.parentNode)
+                        : N(e.parentNode)
                     : null;
             }
             var W = 27,
                 j = 32,
                 B = 37,
                 H = 38,
-                F = 39,
-                K = 40,
-                z = { Anchor: "A", Button: "BUTTON", Canvas: "CANVAS", Input: "INPUT", Option: "OPTION", Textarea: "TEXTAREA", Select: "SELECT" };
+                z = 39,
+                F = 40,
+                K = { Anchor: "A", Button: "BUTTON", Canvas: "CANVAS", Input: "INPUT", Option: "OPTION", Textarea: "TEXTAREA", Select: "SELECT" };
             function G(e) {
                 var t,
                     n,
@@ -608,7 +634,7 @@
                 );
             })();
             var $ = { axis: x().oneOf(["x", "y", "xy"]), contentWindow: x().any, disableAutoscroll: x().bool, distance: x().number, getContainer: x().func, getHelperDimensions: x().func, helperClass: x().string, helperContainer: x().oneOfType([x().func, "undefined" == typeof HTMLElement ? x().any : x().instanceOf(HTMLElement)]), hideSortableGhost: x().bool, keyboardSortingTransitionDuration: x().number, lockAxis: x().string, lockOffset: x().oneOfType([x().number, x().string, x().arrayOf(x().oneOfType([x().number, x().string]))]), lockToContainerEdges: x().bool, onSortEnd: x().func, onSortMove: x().func, onSortOver: x().func, onSortStart: x().func, pressDelay: x().number, pressThreshold: x().number, keyCodes: x().shape({ lift: x().arrayOf(x().number), drop: x().arrayOf(x().number), cancel: x().arrayOf(x().number), up: x().arrayOf(x().number), down: x().arrayOf(x().number) }), shouldCancelStart: x().func, transitionDuration: x().number, updateBeforeSortStart: x().func, useDragHandle: x().bool, useWindowAsScrollContainer: x().bool },
-                X = { lift: [j], drop: [j], cancel: [W], up: [H, B], down: [K, F] },
+                X = { lift: [j], drop: [j], cancel: [W], up: [H, B], down: [F, z] },
                 q = {
                     axis: "y",
                     disableAutoscroll: !1,
@@ -625,7 +651,7 @@
                     keyCodes: X,
                     shouldCancelStart: function (e) {
                         return (
-                            -1 !== [z.Input, z.Textarea, z.Select, z.Option, z.Button].indexOf(e.target.tagName) ||
+                            -1 !== [K.Input, K.Textarea, K.Select, K.Option, K.Button].indexOf(e.target.tagName) ||
                             !!O(e.target, function (e) {
                                 return "true" === e.contentEditable;
                             })
@@ -668,7 +694,7 @@
                                                     (function (e) {
                                                         return (e.touches && e.touches.length) || (e.changedTouches && e.changedTouches.length);
                                                     })(e) ||
-                                                        e.target.tagName !== z.Anchor ||
+                                                        e.target.tagName !== K.Anchor ||
                                                         e.preventDefault(),
                                                     r ||
                                                         (0 === t.props.pressDelay
@@ -713,10 +739,10 @@
                                                                     m,
                                                                     y,
                                                                     b = f.sortableInfo.index,
-                                                                    x = ((n = f), { bottom: D((r = window.getComputedStyle(n)).marginBottom), left: D(r.marginLeft), right: D(r.marginRight), top: D(r.marginTop) }),
+                                                                    x = ((n = f), { bottom: R((r = window.getComputedStyle(n)).marginBottom), left: R(r.marginLeft), right: R(r.marginRight), top: R(r.marginTop) }),
                                                                     w = (function (e) {
                                                                         var t = window.getComputedStyle(e);
-                                                                        return "grid" === t.display ? { x: D(t.gridColumnGap), y: D(t.gridRowGap) } : { x: 0, y: 0 };
+                                                                        return "grid" === t.display ? { x: R(t.gridColumnGap), y: R(t.gridRowGap) } : { x: 0, y: 0 };
                                                                     })(t.container),
                                                                     Z = t.scrollContainer.getBoundingClientRect(),
                                                                     C = a({ index: b, node: f, collection: p });
@@ -732,7 +758,7 @@
                                                                     (t.index = b),
                                                                     (t.newIndex = b),
                                                                     (t.axis = { x: i.indexOf("x") >= 0, y: i.indexOf("y") >= 0 }),
-                                                                    (t.offsetEdge = N(f, t.container)),
+                                                                    (t.offsetEdge = M(f, t.container)),
                                                                     (t.initialOffset = A(g ? l({}, e, { pageX: t.boundingClientRect.left, pageY: t.boundingClientRect.top }) : e)),
                                                                     (t.initialScroll = { left: t.scrollContainer.scrollLeft, top: t.scrollContainer.scrollTop }),
                                                                     (t.initialWindowScroll = { left: window.pageXOffset, top: window.pageYOffset }),
@@ -741,7 +767,7 @@
                                                                         (m = (o = f).querySelectorAll(d)),
                                                                         (y = o.cloneNode(!0)),
                                                                         (0, v.Z)(y.querySelectorAll(d)).forEach(function (e, t) {
-                                                                            "file" !== e.type && (e.value = m[t].value), "radio" === e.type && e.name && (e.name = "__sortableClone__".concat(e.name)), e.tagName === z.Canvas && m[t].width > 0 && m[t].height > 0 && e.getContext("2d").drawImage(m[t], 0, 0);
+                                                                            "file" !== e.type && (e.value = m[t].value), "radio" === e.type && e.name && (e.name = "__sortableClone__".concat(e.name)), e.tagName === K.Canvas && m[t].width > 0 && m[t].height > 0 && e.getContext("2d").drawImage(m[t], 0, 0);
                                                                         }),
                                                                         y),
                                                                     )),
@@ -752,13 +778,13 @@
                                                                     (t.maxTranslate = {}),
                                                                     g)
                                                                 ) {
-                                                                    var E = u ? { top: 0, left: 0, width: t.contentWindow.innerWidth, height: t.contentWindow.innerHeight } : t.containerBoundingRect,
-                                                                        I = E.top,
-                                                                        T = E.left,
-                                                                        O = E.width,
-                                                                        R = I + E.height,
+                                                                    var S = u ? { top: 0, left: 0, width: t.contentWindow.innerWidth, height: t.contentWindow.innerHeight } : t.containerBoundingRect,
+                                                                        I = S.top,
+                                                                        T = S.left,
+                                                                        O = S.width,
+                                                                        D = I + S.height,
                                                                         P = T + O;
-                                                                    t.axis.x && ((t.minTranslate.x = T - t.boundingClientRect.left), (t.maxTranslate.x = P - (t.boundingClientRect.left + t.width))), t.axis.y && ((t.minTranslate.y = I - t.boundingClientRect.top), (t.maxTranslate.y = R - (t.boundingClientRect.top + t.height)));
+                                                                    t.axis.x && ((t.minTranslate.x = T - t.boundingClientRect.left), (t.maxTranslate.x = P - (t.boundingClientRect.left + t.width))), t.axis.y && ((t.minTranslate.y = I - t.boundingClientRect.top), (t.maxTranslate.y = D - (t.boundingClientRect.top + t.height)));
                                                                 } else t.axis.x && ((t.minTranslate.x = (u ? 0 : Z.left) - t.boundingClientRect.left - t.width / 2), (t.maxTranslate.x = (u ? t.contentWindow.innerWidth : Z.left + Z.width) - t.boundingClientRect.left - t.width / 2)), t.axis.y && ((t.minTranslate.y = (u ? 0 : Z.top) - t.boundingClientRect.top - t.height / 2), (t.maxTranslate.y = (u ? t.contentWindow.innerHeight : Z.top + Z.height) - t.boundingClientRect.top - t.height / 2));
                                                                 s &&
                                                                     s.split(" ").forEach(function (e) {
@@ -767,10 +793,10 @@
                                                                     (t.listenerNode = e.touches ? e.target : t.contentWindow),
                                                                     g
                                                                         ? (t.listenerNode.addEventListener("wheel", t.handleKeyEnd, !0), t.listenerNode.addEventListener("mousedown", t.handleKeyEnd, !0), t.listenerNode.addEventListener("keydown", t.handleKeyDown))
-                                                                        : (S.move.forEach(function (e) {
+                                                                        : (E.move.forEach(function (e) {
                                                                               return t.listenerNode.addEventListener(e, t.handleSortMove, !1);
                                                                           }),
-                                                                          S.end.forEach(function (e) {
+                                                                          E.end.forEach(function (e) {
                                                                               return t.listenerNode.addEventListener(e, t.handleSortEnd, !1);
                                                                           })),
                                                                     t.setState({ sorting: !0, sortingIndex: b }),
@@ -834,10 +860,10 @@
                                         t.listenerNode &&
                                             (l
                                                 ? (t.listenerNode.removeEventListener("wheel", t.handleKeyEnd, !0), t.listenerNode.removeEventListener("mousedown", t.handleKeyEnd, !0), t.listenerNode.removeEventListener("keydown", t.handleKeyDown))
-                                                : (S.move.forEach(function (e) {
+                                                : (E.move.forEach(function (e) {
                                                       return t.listenerNode.removeEventListener(e, t.handleSortMove);
                                                   }),
-                                                  S.end.forEach(function (e) {
+                                                  E.end.forEach(function (e) {
                                                       return t.listenerNode.removeEventListener(e, t.handleSortEnd);
                                                   }))),
                                             t.helper.parentNode.removeChild(t.helper),
@@ -947,10 +973,10 @@
                                                 (e.container = n), (e.document = e.container.ownerDocument || document);
                                                 var r = e.props.contentWindow || e.document.defaultView || window;
                                                 (e.contentWindow = "function" == typeof r ? r() : r),
-                                                    (e.scrollContainer = t ? e.document.scrollingElement || e.document.documentElement : L(e.container) || e.container),
+                                                    (e.scrollContainer = t ? e.document.scrollingElement || e.document.documentElement : N(e.container) || e.container),
                                                     (e.autoScroller = new U(e.scrollContainer, e.onAutoScroll)),
                                                     Object.keys(e.events).forEach(function (t) {
-                                                        return S[t].forEach(function (n) {
+                                                        return E[t].forEach(function (n) {
                                                             return e.container.addEventListener(n, e.events[t], !1);
                                                         });
                                                     }),
@@ -965,7 +991,7 @@
                                             this.helper && this.helper.parentNode && this.helper.parentNode.removeChild(this.helper),
                                                 this.container &&
                                                     (Object.keys(this.events).forEach(function (t) {
-                                                        return S[t].forEach(function (n) {
+                                                        return E[t].forEach(function (n) {
                                                             return e.container.removeEventListener(n, e.events[t]);
                                                         });
                                                     }),
@@ -996,14 +1022,14 @@
                                                         var a = i(o, 2),
                                                             l = a[0],
                                                             s = a[1];
-                                                        return [M({ height: t, lockOffset: l, width: n }), M({ height: t, lockOffset: s, width: n })];
+                                                        return [L({ height: t, lockOffset: l, width: n }), L({ height: t, lockOffset: s, width: n })];
                                                     })({ height: this.height, lockOffset: r, width: this.width }),
                                                     p = i(f, 2),
                                                     g = p[0],
                                                     m = p[1],
                                                     v = { x: this.width / 2 - g.x, y: this.height / 2 - g.y },
                                                     b = { x: this.width / 2 - m.x, y: this.height / 2 - m.y };
-                                                (u.x = R(this.minTranslate.x + v.x, this.maxTranslate.x - b.x, u.x)), (u.y = R(this.minTranslate.y + v.y, this.maxTranslate.y - b.y, u.y));
+                                                (u.x = D(this.minTranslate.x + v.x, this.maxTranslate.x - b.x, u.x)), (u.y = D(this.minTranslate.y + v.y, this.maxTranslate.y - b.y, u.y));
                                             }
                                             "x" === n ? (u.y = 0) : "y" === n && (u.x = 0), c && s && !d && T(this.helper, s), I(this.helper, u);
                                         },
@@ -1033,14 +1059,14 @@
                                                     b = c && p < this.index && p >= d,
                                                     x = { x: 0, y: 0 },
                                                     w = a[h].edgeOffset;
-                                                w || ((w = N(f, this.container)), (a[h].edgeOffset = w), c && (a[h].boundingClientRect = _(f, o)));
+                                                w || ((w = M(f, this.container)), (a[h].edgeOffset = w), c && (a[h].boundingClientRect = _(f, o)));
                                                 var Z = h < a.length - 1 && a[h + 1],
                                                     C = h > 0 && a[h - 1];
-                                                Z && !Z.edgeOffset && ((Z.edgeOffset = N(Z.node, this.container)), c && (Z.boundingClientRect = _(Z.node, o))), p !== this.index ? (t && T(f, t), this.axis.x ? (this.axis.y ? (b || (p < this.index && ((l + i.left - y.width <= w.left && s + i.top <= w.top + y.height) || s + i.top + y.height <= w.top)) ? ((x.x = this.width + this.marginOffset.x), w.left + x.x > this.containerBoundingRect.width - y.width && Z && ((x.x = Z.edgeOffset.left - w.left), (x.y = Z.edgeOffset.top - w.top)), null === this.newIndex && (this.newIndex = p)) : (v || (p > this.index && ((l + i.left + y.width >= w.left && s + i.top + y.height >= w.top) || s + i.top + y.height >= w.top + m))) && ((x.x = -(this.width + this.marginOffset.x)), w.left + x.x < this.containerBoundingRect.left + y.width && C && ((x.x = C.edgeOffset.left - w.left), (x.y = C.edgeOffset.top - w.top)), (this.newIndex = p))) : v || (p > this.index && l + i.left + y.width >= w.left) ? ((x.x = -(this.width + this.marginOffset.x)), (this.newIndex = p)) : (b || (p < this.index && l + i.left <= w.left + y.width)) && ((x.x = this.width + this.marginOffset.x), null == this.newIndex && (this.newIndex = p))) : this.axis.y && (v || (p > this.index && s + i.top + y.height >= w.top) ? ((x.y = -(this.height + this.marginOffset.y)), (this.newIndex = p)) : (b || (p < this.index && s + i.top <= w.top + y.height)) && ((x.y = this.height + this.marginOffset.y), null == this.newIndex && (this.newIndex = p))), I(f, x), (a[h].translate = x)) : n && ((this.sortableGhost = f), k(f, { opacity: 0, visibility: "hidden" }));
+                                                Z && !Z.edgeOffset && ((Z.edgeOffset = M(Z.node, this.container)), c && (Z.boundingClientRect = _(Z.node, o))), p !== this.index ? (t && T(f, t), this.axis.x ? (this.axis.y ? (b || (p < this.index && ((l + i.left - y.width <= w.left && s + i.top <= w.top + y.height) || s + i.top + y.height <= w.top)) ? ((x.x = this.width + this.marginOffset.x), w.left + x.x > this.containerBoundingRect.width - y.width && Z && ((x.x = Z.edgeOffset.left - w.left), (x.y = Z.edgeOffset.top - w.top)), null === this.newIndex && (this.newIndex = p)) : (v || (p > this.index && ((l + i.left + y.width >= w.left && s + i.top + y.height >= w.top) || s + i.top + y.height >= w.top + m))) && ((x.x = -(this.width + this.marginOffset.x)), w.left + x.x < this.containerBoundingRect.left + y.width && C && ((x.x = C.edgeOffset.left - w.left), (x.y = C.edgeOffset.top - w.top)), (this.newIndex = p))) : v || (p > this.index && l + i.left + y.width >= w.left) ? ((x.x = -(this.width + this.marginOffset.x)), (this.newIndex = p)) : (b || (p < this.index && l + i.left <= w.left + y.width)) && ((x.x = this.width + this.marginOffset.x), null == this.newIndex && (this.newIndex = p))) : this.axis.y && (v || (p > this.index && s + i.top + y.height >= w.top) ? ((x.y = -(this.height + this.marginOffset.y)), (this.newIndex = p)) : (b || (p < this.index && s + i.top <= w.top + y.height)) && ((x.y = this.height + this.marginOffset.y), null == this.newIndex && (this.newIndex = p))), I(f, x), (a[h].translate = x)) : n && ((this.sortableGhost = f), k(f, { opacity: 0, visibility: "hidden" }));
                                             }
                                             null == this.newIndex && (this.newIndex = this.index), c && (this.newIndex = d);
-                                            var S = c ? this.prevIndex : d;
-                                            r && this.newIndex !== S && r({ collection: this.manager.active.collection, index: this.index, newIndex: this.newIndex, oldIndex: S, isKeySorting: c, nodes: a, helper: this.helper });
+                                            var E = c ? this.prevIndex : d;
+                                            r && this.newIndex !== E && r({ collection: this.manager.active.collection, index: this.index, newIndex: this.newIndex, oldIndex: E, isKeySorting: c, nodes: a, helper: this.helper });
                                         },
                                     },
                                     {
@@ -1242,4 +1268,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Communities~ondemand.SettingsRevamp.5cf8fd9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Communities~ondemand.SettingsRevamp.1a35736a.js.map

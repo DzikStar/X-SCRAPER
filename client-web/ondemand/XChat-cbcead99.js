@@ -213,8 +213,8 @@
                     });
                 };
         },
-        707513: (e, s, t) => {
-            t.d(s, { P: () => I });
+        205116: (e, s, t) => {
+            t.d(s, { P: () => k });
             var n = t(552322),
                 a = t(159603),
                 i = t(289752),
@@ -243,21 +243,28 @@
             }
             var y = t(38891),
                 w = t(858108),
-                b = t(83083);
-            const N = a.com.x.dms.model.MessageItemAttachment,
-                S = a.com.x.dms.chat.DmEvent,
-                C = a.com.x.dms.model.MediaUriState;
-            function I({ attachment: e, isReceived: s, onEvent: t, className: r }) {
+                b = t(83083),
+                N = t(455091);
+            function C({ unifiedCard: e }) {
+                const { t: s } = (0, N.$G)(),
+                    t = e.url.startsWith("https://x.com/i/grok/share/") || e.url.startsWith("https://grok.com/share/") ? s("Grok share card") : e.url;
+                return (0, n.jsx)("div", { className: "flex flex-col items-center gap-0.5 bg-gray-100 cursor-pointer transition-colors duration-100 max-w-sm hover:bg-gray-50/50", onClick: () => window.open(e.url, "_blank"), children: (0, n.jsx)("div", { className: "flex flex-col gap-0.5 px-8 py-4", children: (0, n.jsxs)("div", { className: "flex items-center gap-1", children: [(0, n.jsx)(l.x, { color: "gray900", size: "subtext2", numberOfLines: 1, children: t }), (0, n.jsx)(o.Z, { className: "text-gray-500 size-4" })] }) }) });
+            }
+            const S = a.com.x.dms.model.MessageItemAttachment,
+                I = a.com.x.dms.chat.DmEvent,
+                z = a.com.x.dms.model.MediaUriState;
+            function k({ attachment: e, isReceived: s, onEvent: t, className: r }) {
                 const l = !(0, w.G)() || (0, y.z)().isTrue("rweb_xchat_fs_worker");
-                if (e instanceof N.Post) return (0, n.jsx)(u, { isReceived: s, post: e, onEvent: t, className: r });
-                if (e instanceof N.UrlCard) return (0, n.jsx)(j, { urlCard: e, onEvent: t });
-                if (e instanceof N.Media) {
-                    if (e instanceof N.Media.FromServer) {
-                        if ((e.uriState instanceof C.AttachmentNeedsResolving && l && t(new S.ResolveAttachment(e.uriState)), e.uriState instanceof C.ResolvedMedia)) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(b.Q, { filename: e.filename, fileSize: e.fileSize, uriToLoad: e.uriState.uri, className: r }) : (0, n.jsx)(i.Et, { src: e.uriState.uri, type: e.type, dimensions: e.dimensions, className: r });
-                        if (e.uriState instanceof C.Resolving) return (0, n.jsx)(i._9, { dimensions: e.dimensions });
-                        if (e.uriState === C.FailedToLoad) return (0, n.jsx)(i.DM, { dimensions: e.dimensions });
+                if (e instanceof S.Post) return (0, n.jsx)(u, { isReceived: s, post: e, onEvent: t, className: r });
+                if (e instanceof S.UrlCard) return (0, n.jsx)(j, { urlCard: e, onEvent: t });
+                if (e instanceof S.UnifiedCard) return (0, n.jsx)(C, { unifiedCard: e });
+                if (e instanceof S.Media) {
+                    if (e instanceof S.Media.FromServer) {
+                        if ((e.uriState instanceof z.AttachmentNeedsResolving && l && t(new I.ResolveAttachment(e.uriState)), e.uriState instanceof z.ResolvedMedia)) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(b.Q, { filename: e.filename, fileSize: e.fileSize, uriToLoad: e.uriState.uri, className: r }) : (0, n.jsx)(i.Et, { src: e.uriState.uri, type: e.type, dimensions: e.dimensions, className: r });
+                        if (e.uriState instanceof z.Resolving) return (0, n.jsx)(i._9, { dimensions: e.dimensions });
+                        if (e.uriState === z.FailedToLoad) return (0, n.jsx)(i.DM, { dimensions: e.dimensions });
                     }
-                    if (e instanceof N.Media.Pending) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(b.Q, { filename: e.filename, fileSize: e.fileSize, className: r }) : (0, n.jsx)(i._9, { dimensions: e.dimensions });
+                    if (e instanceof S.Media.Pending) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(b.Q, { filename: e.filename, fileSize: e.fileSize, className: r }) : (0, n.jsx)(i._9, { dimensions: e.dimensions });
                 }
                 return null;
             }
@@ -346,4 +353,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-cbcead99.207e6f8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-cbcead99.3e5f197a.js.map

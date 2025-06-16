@@ -8,19 +8,19 @@
                 r = i(202784),
                 s = i(449161),
                 o = i(392237),
-                n = i(111677),
-                l = i.n(n),
+                l = i(111677),
+                n = i.n(l),
                 d = i(473026),
                 c = i(276259),
                 u = i(540387);
             const h = "fileInput",
-                p = l().b9960f32,
+                p = n().b9960f32,
                 m = r.createElement(d.default, null),
                 f = ({ acceptGifs: e, acceptImages: t = !0, acceptVideo: i }) => (t ? c.v5 : []).concat(e ? [c.Re] : []).concat(i ? u.jn : []);
             const b = o.default.create((e) => ({ root: { margin: `-${e.spaces.space12}` } })),
-                g = function ({ "aria-label": e = p, acceptGifs: t = !0, acceptImages: i = !0, acceptVideo: o = !0, customMimeTypes: n = [], icon: l = m, size: d = "medium", style: c, withIcon: u = !0, ...g }) {
-                    const v = f({ acceptGifs: t, acceptImages: i, acceptVideo: o }).concat(n).join(",");
-                    return r.createElement(s.Z, (0, a.Z)({}, g, { accept: v, "aria-label": e, icon: u ? l : void 0, size: d, style: [b.root, c], testID: h }));
+                g = function ({ "aria-label": e = p, acceptGifs: t = !0, acceptImages: i = !0, acceptVideo: o = !0, customMimeTypes: l = [], icon: n = m, size: d = "medium", style: c, withIcon: u = !0, ...g }) {
+                    const v = f({ acceptGifs: t, acceptImages: i, acceptVideo: o }).concat(l).join(",");
+                    return r.createElement(s.Z, (0, a.Z)({}, g, { accept: v, "aria-label": e, icon: u ? n : void 0, size: d, style: [b.root, c], testID: h }));
                 };
         },
         751170: (e, t, i) => {
@@ -29,9 +29,9 @@
                 r = i(325686),
                 s = i(167630),
                 o = i(992942),
-                n = i(392237),
-                l = i(111677),
-                d = i.n(l),
+                l = i(392237),
+                n = i(111677),
+                d = i.n(n),
                 c = i(205074),
                 u = i(364837),
                 h = i(908478);
@@ -65,18 +65,18 @@
                     return !(0, h.Z)(e, this.props) || !(0, h.Z)(t, this.state);
                 }
                 render() {
-                    const { borderRadius: e, enableGif: t, mediaItem: i, onClick: n, resizeMode: l } = this.props,
+                    const { borderRadius: e, enableGif: t, mediaItem: i, onClick: l, resizeMode: n } = this.props,
                         { imagePreviewUrl: d } = this.state || {},
                         c = i.mediaFile && i.mediaFile.isGif && !t && !d,
                         u = i.needsProcessing || c,
                         h = [g.root, b[e], u && g.loadingBorder],
                         m = this._getImageSrc();
-                    return a.createElement(r.Z, { onClick: n, style: h }, u || !m ? a.createElement(s.Z, { "aria-label": p, style: g.activityIndicator }) : a.createElement(o.Z, { resizeMode: l, source: m, style: g.image }));
+                    return a.createElement(r.Z, { onClick: l, style: h }, u || !m ? a.createElement(s.Z, { "aria-label": p, style: g.activityIndicator }) : a.createElement(o.Z, { resizeMode: n, source: m, style: g.image }));
                 }
             }
             f.defaultProps = { borderRadius: m.NONE, enableGif: !0, resizeMode: "cover" };
-            const b = n.default.create((e) => ({ [m.INFINITE]: { borderRadius: e.borderRadii.infinite }, [m.MEDIUM]: { borderRadius: e.borderRadii.small }, [m.NONE]: { borderRadius: e.borderRadii.none } })),
-                g = n.default.create((e) => ({ root: { borderRadius: e.borderRadii.xLarge, borderStyle: "solid", borderWidth: e.borderWidths.none, borderColor: "transparent", maxWidth: "100%", height: "100%", overflow: "hidden" }, image: { display: "block", height: "100%", width: "100%" }, loadingBorder: { borderColor: e.colors.gray300 }, activityIndicator: { height: "100%" } })),
+            const b = l.default.create((e) => ({ [m.INFINITE]: { borderRadius: e.borderRadii.infinite }, [m.MEDIUM]: { borderRadius: e.borderRadii.small }, [m.NONE]: { borderRadius: e.borderRadii.none } })),
+                g = l.default.create((e) => ({ root: { borderRadius: e.borderRadii.xLarge, borderStyle: "solid", borderWidth: e.borderWidths.none, borderColor: "transparent", maxWidth: "100%", height: "100%", overflow: "hidden" }, image: { display: "block", height: "100%", width: "100%" }, loadingBorder: { borderColor: e.colors.gray300 }, activityIndicator: { height: "100%" } })),
                 v = f;
         },
         304059: (e, t, i) => {
@@ -85,8 +85,8 @@
                 r = i(325686),
                 s = i(537392),
                 o = i(336961),
-                n = i(659651),
-                l = i(154003),
+                l = i(659651),
+                n = i(154003),
                 d = i(392237),
                 c = i(992942),
                 u = i(111677),
@@ -114,8 +114,8 @@
                 }
                 render() {
                     const { children: e, dataSaverMode: t, getVideoRef: i, style: r, variants: s, ...o } = this.props,
-                        n = (0, w.IM)((0, I.rD)(s), t);
-                    return (0, D.Z)("video", { ...o, children: [n.map((e) => a.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: r });
+                        l = (0, w.IM)((0, I.rD)(s), t);
+                    return (0, D.Z)("video", { ...o, children: [l.map((e) => a.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: r });
                 }
             }
             C.defaultProps = { dataSaverMode: !1, variants: [] };
@@ -125,7 +125,7 @@
                 V = i(195560);
             const R = (0, S.Z)({
                     loader: () =>
-                        Promise.all([i.e("icons.0"), i.e("icons.16"), i.e("icons.10"), i.e("icons.13"), i.e("icons.22"), i.e("modules.common-e907d115"), i.e("modules.common-e019dbda"), i.e("icons.26"), i.e("modules.audio-6107ac1a"), i.e("modules.audio-b953418a"), i.e("modules.audio-7c51e6a7"), i.e("modules.audio-04db59e9"), i.e("modules.audio-76583d6c"), i.e("modules.audio-b7a8a5fb"), i.e("modules.audio-51f6e793"), i.e("modules.audio-e019dbda"), i.e("modules.audio-262c94d4"), i.e("modules.audio-c6fe4ea4"), i.e("icons.4"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), i.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), i.e("loader.MediaPreviewVideoPlayer")])
+                        Promise.all([i.e("icons.21"), i.e("icons.16"), i.e("icons.10"), i.e("icons.4"), i.e("modules.common-e907d115"), i.e("modules.common-e019dbda"), i.e("icons.28"), i.e("modules.audio-6107ac1a"), i.e("modules.audio-b953418a"), i.e("modules.audio-7c51e6a7"), i.e("modules.audio-04db59e9"), i.e("modules.audio-76583d6c"), i.e("modules.audio-b7a8a5fb"), i.e("modules.audio-51f6e793"), i.e("modules.audio-e019dbda"), i.e("modules.audio-262c94d4"), i.e("modules.audio-c6fe4ea4"), i.e("icons.24"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), i.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), i.e("loader.MediaPreviewVideoPlayer")])
                             .then(i.bind(i, 298607))
                             .then((e) => ({ default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ })),
                     renderPlaceholder: (e, t) => a.createElement(V.Z, { hasError: e, onRetry: t }),
@@ -154,9 +154,9 @@
                                         layout: { height: r, width: s },
                                     },
                                 } = e,
-                                { height: o, width: n } = a,
-                                l = n / o;
-                            Math.abs(l - s / r) > 0.05 && ("width" === i ? this.setState({ mediaContainerSizeStyle: { width: r * l } }) : "height" === i && this.setState({ mediaContainerSizeStyle: { height: s / l } }));
+                                { height: o, width: l } = a,
+                                n = l / o;
+                            Math.abs(n - s / r) > 0.05 && ("width" === i ? this.setState({ mediaContainerSizeStyle: { width: r * n } }) : "height" === i && this.setState({ mediaContainerSizeStyle: { height: s / n } }));
                         }),
                         (this._handleVideoOnPlay = (e) => {
                             this.setState({ isVideoPaused: !1 });
@@ -190,7 +190,7 @@
                         R = !!i.mediaFile?.isVideo;
                     return a.createElement(s.ZP, null, ({ windowWidth: t }) => {
                         const i = void 0 !== w ? w : !y.Z.isTwoColumnLayout(t);
-                        return a.createElement(r.Z, { "aria-label": e || L, onLayout: this._handleMediaPreviewLayout, role: h, style: [v, A.cursor, S && A.gifPlayButton, C] }, this._renderPreview(), S && !Z && a.createElement(o.Z, { "aria-label": k, onPress: this._handleGifClick, size: "small" }), V ? a.createElement(M.ZP, { type: M.AM }) : null, P && !R ? a.createElement(n.Z, { align: "left", altLabel: e }) : null, a.createElement(r.Z, { style: A.editMedia }, E ? a.createElement(l.ZP, { "aria-label": O, hoverLabel: { label: O }, icon: a.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, D && I ? a.createElement(l.ZP, { "aria-label": G, icon: a.createElement(m.default, { style: A.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, D ? a.createElement(l.ZP, { "aria-label": F, icon: i ? a.createElement(f.default, null) : void 0, onPress: d, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : x) : null), _ ? a.createElement(l.ZP, { "aria-label": B, hoverLabel: { label: z }, icon: a.createElement(b.default, null), onPress: u, size: "small", style: A.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        return a.createElement(r.Z, { "aria-label": e || L, onLayout: this._handleMediaPreviewLayout, role: h, style: [v, A.cursor, S && A.gifPlayButton, C] }, this._renderPreview(), S && !Z && a.createElement(o.Z, { "aria-label": k, onPress: this._handleGifClick, size: "small" }), V ? a.createElement(M.ZP, { type: M.AM }) : null, P && !R ? a.createElement(l.Z, { align: "left", altLabel: e }) : null, a.createElement(r.Z, { style: A.editMedia }, E ? a.createElement(n.ZP, { "aria-label": O, hoverLabel: { label: O }, icon: a.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, D && I ? a.createElement(n.ZP, { "aria-label": G, icon: a.createElement(m.default, { style: A.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, D ? a.createElement(n.ZP, { "aria-label": F, icon: i ? a.createElement(f.default, null) : void 0, onPress: d, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : x) : null), _ ? a.createElement(n.ZP, { "aria-label": B, hoverLabel: { label: z }, icon: a.createElement(b.default, null), onPress: u, size: "small", style: A.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -217,9 +217,9 @@
                     if (this.context.featureSwitches.isTrue("responsive_web_composer_configurable_video_player_enabled") && r instanceof E.ZP) {
                         let o = [];
                         (0, P.TO)(r.fileHandle) && (o = [{ src: t, type: e }]);
-                        const n = s.mediaMetadata?.subtitles,
-                            l = s?.trimData;
-                        return a.createElement(R, { mediaFile: r, mediaId: String(i), mediaItem: s, subtitles: n, trimData: l, variants: o });
+                        const l = s.mediaMetadata?.subtitles,
+                            n = s?.trimData;
+                        return a.createElement(R, { mediaFile: r, mediaId: String(i), mediaItem: s, subtitles: l, trimData: n, variants: o });
                     }
                     {
                         const i = (0, P.TO)(r.fileHandle) ? [{ content_type: e, url: t }] : [];
@@ -232,19 +232,19 @@
                 U = T;
         },
         959587: (e, t, i) => {
-            i.d(t, { AM: () => l, ZP: () => h, pX: () => d });
+            i.d(t, { AM: () => n, ZP: () => h, pX: () => d });
             var a = i(202784),
                 r = i(731708),
                 s = i(659651),
                 o = i(392237),
-                n = i(548721);
-            const l = "animated_gif",
+                l = i(548721);
+            const n = "animated_gif",
                 d = "video",
                 c = (e) => {
                     const { durationInMilliseconds: t, type: i } = e;
                     let o;
-                    if (i === l) o = a.createElement(r.ZP, { weight: "bold" }, "GIF");
-                    else if ("vine" === i) o = a.createElement(n.default, { "aria-label": "Vine", style: u.icon });
+                    if (i === n) o = a.createElement(r.ZP, { weight: "bold" }, "GIF");
+                    else if ("vine" === i) o = a.createElement(l.default, { "aria-label": "Vine", style: u.icon });
                     else if (i === d && t) {
                         const e = Math.trunc(t / 6e4).toString(),
                             i = Math.trunc((t % 6e4) / 1e3)
@@ -263,8 +263,8 @@
                 r = i(325686),
                 s = i(950822),
                 o = i(392237);
-            const n = (e) => (0, s.Z)("div", e);
-            class l extends a.Component {
+            const l = (e) => (0, s.Z)("div", e);
+            class n extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this._dragEnterCount = 0),
@@ -288,16 +288,16 @@
                 render() {
                     const { activeStyle: e, allowDragDrop: t, children: i, style: s } = this.props,
                         { active: o } = this.state,
-                        l = t ? d.dragBorderValid : d.dragBorderInvalid;
-                    return a.createElement(n, { onDragEnter: this._handleDragEnter, onDragLeave: this._handleDragLeave, onDragOver: this._handleDragOver, onDrop: this._handleDragDrop, style: [d.root, s, o && l, o && e] }, a.createElement(r.Z, { style: d.inner }, "function" == typeof i ? i(o) : i));
+                        n = t ? d.dragBorderValid : d.dragBorderInvalid;
+                    return a.createElement(l, { onDragEnter: this._handleDragEnter, onDragLeave: this._handleDragLeave, onDragOver: this._handleDragOver, onDrop: this._handleDragDrop, style: [d.root, s, o && n, o && e] }, a.createElement(r.Z, { style: d.inner }, "function" == typeof i ? i(o) : i));
                 }
                 _updateDragCount(e) {
                     (this._dragEnterCount = e), 0 === this._dragEnterCount ? this.setState({ active: !1 }) : this._dragEnterCount > 0 && this.setState({ active: !0 });
                 }
             }
-            l.defaultProps = { allowDragDrop: !0 };
+            n.defaultProps = { allowDragDrop: !0 };
             const d = o.default.create((e) => ({ root: { display: "flex", flexDirection: "column" }, dragBorderValid: { borderStyle: "dashed", borderWidth: e.spaces.space2, borderColor: e.colors.primary }, dragBorderInvalid: { borderStyle: "dashed", borderWidth: e.spaces.space2, borderColor: e.colors.magenta500 }, inner: { flexGrow: 1 } })),
-                c = l;
+                c = n;
         },
         449161: (e, t, i) => {
             i.d(t, { Z: () => m });
@@ -305,8 +305,8 @@
                 r = i(202784),
                 s = i(111677),
                 o = i.n(s),
-                n = i(154003),
-                l = i(950822),
+                l = i(154003),
+                n = i(950822),
                 d = i(392237);
             const c = o().i5450bec,
                 u = o().f7432494;
@@ -330,7 +330,7 @@
                 render() {
                     const { accept: e, disabled: t, multiple: i, onChange: s, testID: o, ...d } = this.props,
                         h = !(e?.includes("video") || e?.includes("gif"));
-                    return r.createElement(r.Fragment, null, r.createElement(n.ZP, (0, a.Z)({ hoverLabel: e ? { label: h ? u : c } : void 0 }, d, { disabled: t, onPress: this._handlePress })), (0, l.Z)("input", { accept: e, disabled: t, multiple: i, onChange: this._handleChange, ref: this._handleFileInputButtonRef, style: p.input, tabIndex: -1, testID: o, type: "file" }));
+                    return r.createElement(r.Fragment, null, r.createElement(l.ZP, (0, a.Z)({ hoverLabel: e ? { label: h ? u : c } : void 0 }, d, { disabled: t, onPress: this._handlePress })), (0, n.Z)("input", { accept: e, disabled: t, multiple: i, onChange: this._handleChange, ref: this._handleFileInputButtonRef, style: p.input, tabIndex: -1, testID: o, type: "file" }));
                 }
             }
             h.defaultProps = { disabled: !1, multiple: !1 };
@@ -339,4 +339,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview.3b54c75a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview.c357226a.js.map

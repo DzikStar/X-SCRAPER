@@ -1,40 +1,40 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.UserJobs", "icons/IconChevronDown-js"],
+    ["bundle.UserJobs", "icons/IconSparkle-js"],
     {
         42508: (e, l, a) => {
             a.d(l, { Z: () => n });
             const n = Object.freeze({ FakeAccount: "fake_account", OffensiveProfileContent: "offensive_profile_content", SensitiveMedia: "sensitive_media", Timeout: "timeout" });
         },
         835546: (e, l, a) => {
-            a.d(l, { ZP: () => t, n5: () => i });
+            a.d(l, { ZP: () => t, n5: () => s });
             var n = a(42508);
-            const t = ({ displaySensitiveMedia: e, isNotFound: l, isSuspended: a, isWithheld: n, user: t, userProfileInterstitialType: i, viewerUserId: s }) => {
-                    const o = !!s && s === t.id_str,
+            const t = ({ displaySensitiveMedia: e, isNotFound: l, isSuspended: a, isWithheld: n, user: t, userProfileInterstitialType: s, viewerUserId: i }) => {
+                    const o = !!i && i === t.id_str,
                         c = t.blocked_by,
-                        u = t.blocking,
-                        d = r({ displaySensitiveMedia: e, isOwnProfile: o, user: t, userProfileInterstitialType: i }),
+                        d = t.blocking,
+                        u = r({ displaySensitiveMedia: e, isOwnProfile: o, user: t, userProfileInterstitialType: s }),
                         m = (o || !n) && !a;
-                    return { avatar: o || (!d && !l && !a && !n), badges: o || !n, description: o || (!u && !c && !d && !a && !n), followButton: !(o || c || d || l || a || n), followersYouKnow: !o && !c && !u && !d && !l && !a && !n && (t.following || !t.protected), followIndicator: !n, fullName: m, label: m, stats: o || (!c && !d && !a && !n), subscriptionsCount: o || !t.has_hidden_subscriptions_on_profile };
+                    return { avatar: o || (!u && !l && !a && !n), badges: o || !n, description: o || (!d && !c && !u && !a && !n), followButton: !(o || c || u || l || a || n), followersYouKnow: !o && !c && !d && !u && !l && !a && !n && (t.following || !t.protected), followIndicator: !n, fullName: m, label: m, stats: o || (!c && !u && !a && !n), subscriptionsCount: o || !t.has_hidden_subscriptions_on_profile };
                 },
                 r = ({ displaySensitiveMedia: e, isOwnProfile: l, user: a, userProfileInterstitialType: t }) => (t === n.Z.SensitiveMedia || t === n.Z.OffensiveProfileContent) && !(l || a.following || e),
-                i = ({ isOwnProfile: e, isSoftBlockEnabled: l = !1, user: a }) => {
+                s = ({ isOwnProfile: e, isSoftBlockEnabled: l = !1, user: a }) => {
                     const n = a.blocked_by,
                         t = a.protected && !a.following;
                     return l ? e || !t : e || (!t && !n);
                 };
         },
         771035: (e, l, a) => {
-            a.d(l, { Z: () => u });
+            a.d(l, { Z: () => d });
             var n = a(202784),
                 t = a(107267),
                 r = a(371344),
-                i = a(956272),
-                s = a(666536),
+                s = a(956272),
+                i = a(666536),
                 o = a(943052);
             const c = ({ basePath: e, isCompact: l = !1, resetPageOnSearch: a = !1, styleType: c }) => {
-                    const [u, d, m] = (0, o.Z)(),
-                        [p, g] = n.useState(u.get("q") || ""),
+                    const [d, u, m] = (0, o.Z)(),
+                        [p, g] = n.useState(d.get("q") || ""),
                         y = (0, t.useHistory)(),
                         b = n.useRef(!1);
                     n.useEffect(
@@ -46,80 +46,80 @@
                         ),
                         [],
                     );
-                    const f = n.useCallback(() => {
+                    const h = n.useCallback(() => {
                             g(""), y.replace(e);
                         }, [e, y]),
-                        h = n.useMemo(
+                        _ = n.useMemo(
                             () =>
-                                (0, s.Z)((e) => {
-                                    b.current && (e.length > 0 ? (a ? m({ q: e, p: "1" }) : d("q", e)) : f());
+                                (0, i.Z)((e) => {
+                                    b.current && (e.length > 0 ? (a ? m({ q: e, p: "1" }) : u("q", e)) : h());
                                 }, 1e3),
-                            [f, d, m, a],
+                            [h, u, m, a],
                         ),
-                        _ = n.useCallback(
+                        f = n.useCallback(
                             (e) => {
                                 const { value: l } = e.target;
-                                g(l), h(l);
+                                g(l), _(l);
                             },
-                            [h],
+                            [_],
                         );
-                    return n.createElement(r.Z, { Icon: i.default, autoComplete: "off", isCompact: l, leftAligned: !0, onChange: _, onClear: f, placeholder: "Search jobs", styleType: c || "pill", testID: "search-jobs-input", value: p, withClearButton: !0 });
+                    return n.createElement(r.Z, { Icon: s.default, autoComplete: "off", isCompact: l, leftAligned: !0, onChange: f, onClear: h, placeholder: "Search jobs", styleType: c || "pill", testID: "search-jobs-input", value: p, withClearButton: !0 });
                 },
-                u = n.memo(c);
+                d = n.memo(c);
         },
         736181: (e, l, a) => {
             a.r(l), a.d(l, { default: () => qe });
             var n = a(202784),
                 t = a(325686),
                 r = a(457311),
-                i = a(823161),
-                s = a(731708),
+                s = a(823161),
+                i = a(731708),
                 o = a(601413),
                 c = a(392237),
-                u = a(111677),
-                d = a.n(u),
+                d = a(111677),
+                u = a.n(d),
                 m = a(324948),
                 p = a(252021),
                 g = a(443781),
                 y = a(952793),
                 b = a(835546),
-                f = a(615027),
-                h = a(771035),
-                _ = a(668214),
+                h = a(615027),
+                _ = a(771035),
+                f = a(668214),
                 k = a(919022);
-            const F = (e, l) => l.match.params.screenName || void 0,
-                S = (e, l) => {
-                    const a = F(0, l);
+            const S = (e, l) => l.match.params.screenName || void 0,
+                F = (e, l) => {
+                    const a = S(0, l);
                     if (a) return k.ZP.selectByScreenName(e, a);
                 },
-                E = (0, _.Z)()
-                    .propsFromState(() => ({ screenName: F, user: S }))
+                v = (0, f.Z)()
+                    .propsFromState(() => ({ screenName: S, user: F }))
                     .propsFromActions(() => ({ fetchOneUserByScreenNameIfNeeded: k.ZP.fetchOneByScreenNameIfNeeded }));
-            var v,
-                x,
+            var E,
+                C,
                 w,
                 Z,
-                C,
-                T,
                 K,
+                x,
                 I,
+                T,
                 L,
                 z,
                 j,
-                P,
                 R,
-                D,
-                N = a(807896),
+                P,
+                N,
+                D = a(807896),
                 U = {
                     fragment: {
-                        argumentDefinitions: [(v = { defaultValue: null, kind: "LocalArgument", name: "count" }), (x = { defaultValue: null, kind: "LocalArgument", name: "cursor" }), (w = { defaultValue: null, kind: "LocalArgument", name: "searchParams" }), (Z = { defaultValue: null, kind: "LocalArgument", name: "userId" })],
+                        argumentDefinitions: [(E = { defaultValue: null, kind: "LocalArgument", name: "count" }), (C = { defaultValue: null, kind: "LocalArgument", name: "cursor" }), (w = { defaultValue: null, kind: "LocalArgument", name: "searchParams" }), (Z = { defaultValue: null, kind: "LocalArgument", name: "userId" })],
                         kind: "Fragment",
                         metadata: null,
                         name: "UserJobListQueryScreenJobsQuery",
                         selections: [
                             {
                                 alias: "data",
-                                args: (C = [
+                                args: (K = [
                                     { kind: "Variable", name: "rest_id", variableName: "userId" },
                                     { kind: "Literal", name: "s", value: "f3d8" },
                                 ]),
@@ -138,11 +138,11 @@
                                             name: "result",
                                             plural: !1,
                                             selections: [
-                                                (T = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                                (x = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
                                                 {
                                                     kind: "InlineFragment",
                                                     selections: [
-                                                        (K = { alias: null, args: null, kind: "ScalarField", name: "is_verified_organization", storageKey: null }),
+                                                        (I = { alias: null, args: null, kind: "ScalarField", name: "is_verified_organization", storageKey: null }),
                                                         { args: null, kind: "FragmentSpread", name: "UserAvatar_user" },
                                                         { args: null, kind: "FragmentSpread", name: "JobSearchListItem_user" },
                                                         {
@@ -153,7 +153,7 @@
                                                             name: "recruiting_organization_results",
                                                             plural: !1,
                                                             selections: [
-                                                                (I = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
+                                                                (T = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
                                                                 {
                                                                     alias: null,
                                                                     args: null,
@@ -205,7 +205,7 @@
                                                     type: "User",
                                                     abstractKey: null,
                                                 },
-                                                (P = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }),
+                                                (R = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }),
                                             ],
                                             storageKey: null,
                                         },
@@ -220,13 +220,13 @@
                     },
                     kind: "Request",
                     operation: {
-                        argumentDefinitions: [Z, v, x, w],
+                        argumentDefinitions: [Z, E, C, w],
                         kind: "Operation",
                         name: "UserJobListQueryScreenJobsQuery",
                         selections: [
                             {
                                 alias: "data",
-                                args: C,
+                                args: K,
                                 concreteType: "UserResults",
                                 kind: "LinkedField",
                                 name: "user_result_by_rest_id",
@@ -240,11 +240,11 @@
                                         name: "result",
                                         plural: !1,
                                         selections: [
-                                            T,
+                                            x,
                                             {
                                                 kind: "InlineFragment",
                                                 selections: [
-                                                    K,
+                                                    I,
                                                     { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                     {
                                                         alias: null,
@@ -273,7 +273,7 @@
                                                         storageKey: null,
                                                     },
                                                     { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
-                                                    I,
+                                                    T,
                                                     {
                                                         alias: null,
                                                         args: null,
@@ -282,7 +282,7 @@
                                                         name: "recruiting_organization_results",
                                                         plural: !1,
                                                         selections: [
-                                                            I,
+                                                            T,
                                                             {
                                                                 alias: null,
                                                                 args: null,
@@ -291,13 +291,13 @@
                                                                 name: "result",
                                                                 plural: !1,
                                                                 selections: [
-                                                                    T,
+                                                                    x,
                                                                     {
                                                                         kind: "InlineFragment",
                                                                         selections: [
                                                                             {
                                                                                 alias: null,
-                                                                                args: (R = [{ kind: "Variable", name: "count", variableName: "count" }, { kind: "Variable", name: "cursor", variableName: "cursor" }, L]),
+                                                                                args: (P = [{ kind: "Variable", name: "count", variableName: "count" }, { kind: "Variable", name: "cursor", variableName: "cursor" }, L]),
                                                                                 concreteType: "JobSearchSlice",
                                                                                 kind: "LinkedField",
                                                                                 name: "consumer_job_search",
@@ -311,8 +311,8 @@
                                                                                         name: "items_results",
                                                                                         plural: !0,
                                                                                         selections: [
-                                                                                            (D = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
-                                                                                            I,
+                                                                                            (N = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
+                                                                                            T,
                                                                                             {
                                                                                                 alias: null,
                                                                                                 args: null,
@@ -321,7 +321,7 @@
                                                                                                 name: "result",
                                                                                                 plural: !1,
                                                                                                 selections: [
-                                                                                                    T,
+                                                                                                    x,
                                                                                                     {
                                                                                                         kind: "InlineFragment",
                                                                                                         selections: [
@@ -349,7 +349,7 @@
                                                                                                                 ],
                                                                                                                 storageKey: null,
                                                                                                             },
-                                                                                                            D,
+                                                                                                            N,
                                                                                                         ],
                                                                                                         type: "ApiJob",
                                                                                                         abstractKey: null,
@@ -365,8 +365,8 @@
                                                                                 ],
                                                                                 storageKey: null,
                                                                             },
-                                                                            { alias: null, args: R, filters: ["search_params"], handle: "slice", key: "UserJobListQueryScreen_consumer_job_search_slice", kind: "LinkedHandle", name: "consumer_job_search", handleArgs: [{ kind: "Literal", name: "itemsFieldName", value: "items_results" }] },
-                                                                            D,
+                                                                            { alias: null, args: P, filters: ["search_params"], handle: "slice", key: "UserJobListQueryScreen_consumer_job_search_slice", kind: "LinkedHandle", name: "consumer_job_search", handleArgs: [{ kind: "Literal", name: "itemsFieldName", value: "items_results" }] },
+                                                                            N,
                                                                         ],
                                                                         type: "ApiRecruitingOrganization",
                                                                         abstractKey: null,
@@ -374,20 +374,20 @@
                                                                 ],
                                                                 storageKey: null,
                                                             },
-                                                            D,
+                                                            N,
                                                         ],
                                                         storageKey: null,
                                                     },
-                                                    D,
+                                                    N,
                                                 ],
                                                 type: "User",
                                                 abstractKey: null,
                                             },
-                                            P,
+                                            R,
                                         ],
                                         storageKey: null,
                                     },
-                                    D,
+                                    N,
                                 ],
                                 storageKey: null,
                             },
@@ -429,9 +429,9 @@
                     abstractKey: null,
                     hash: "a688905aa4e96a202044a60f562fa122",
                 };
-            const $ = q;
-            var W = a(277660),
-                Q = a.n(W),
+            const W = q;
+            var $ = a(277660),
+                Q = a.n($),
                 Y = a(965245),
                 G = a(725516);
             const X = (e, l, a) => ({ id: e, position: l, is_viewer_follows_user: a }),
@@ -464,93 +464,93 @@
             var ne = a(301503),
                 te = a(366635),
                 re = a(989272),
-                ie = a(925873),
-                se = a(952428),
+                se = a(925873),
+                ie = a(952428),
                 oe = a(457458),
                 ce = a(524496),
-                ue = a(966886),
-                de = a(187669),
+                de = a(966886),
+                ue = a(187669),
                 me = a(949626),
                 pe = a(856438),
-                ge = a(910113),
+                ge = a(549599),
                 ye = a(478414),
                 be = a(28135);
-            const fe = ({ fallbackName: e, user: l }) => {
+            const he = ({ fallbackName: e, user: l }) => {
                     const a = Q()(ge.fR, l);
-                    return a && a.core && a.core.name && a.core.screen_name ? n.createElement(te.Z, { avatarSize: "small", isVerified: a.verification?.verified ?? !1, name: a.core.name, nameSize: "subtext2", screenName: a.core.screen_name, screenNameSize: "subtext2", verifiedType: a.verification?.verified_type ?? void 0, weight: "normal" }) : e ? n.createElement(s.ZP, { size: "subtext2", weight: "normal" }, e) : null;
+                    return a && a.core && a.core.name && a.core.screen_name ? n.createElement(te.Z, { avatarSize: "small", isVerified: a.verification?.verified ?? !1, name: a.core.name, nameSize: "subtext2", screenName: a.core.screen_name, screenNameSize: "subtext2", verifiedType: a.verification?.verified_type ?? void 0, weight: "normal" }) : e ? n.createElement(i.ZP, { size: "subtext2", weight: "normal" }, e) : null;
                 },
-                he = { h1FontSize: "headline1", h2FontSize: "headline2", paragraphFontSize: "subtext2" },
-                _e = "user-job-list-item-short-description",
+                _e = { h1FontSize: "headline1", h2FontSize: "headline2", paragraphFontSize: "subtext2" },
+                fe = "user-job-list-item-short-description",
                 ke = c.default.create((e) => ({ listContainer: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, borderBottomColor: e.colors.borderColor, borderBottomWidth: 1 }, itemRow: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 8 }, items: { display: "flex", flexDirection: "column", gap: 4, flex: 1 }, shortDescription: { color: e.colors.text }, timestamp: { fontSize: e.fontSizes.subtext3 }, lastRow: { marginTop: e.spaces.space4 } })),
-                Fe = ({ allowShare: e = !1, companyName: l, createdAt: a, formattedSalary: r, isFeatured: i, isVerifiedOrg: o, jobId: c, jobTitle: u, location: d, onClick: m, profileId: p, redirectUrl: g, salaryInterval: y, shortDescription: b, user: f, withUserInfo: h = !1 }) => {
-                    (0, de.q)(() => {
-                        (0, re.fH)((0, ye.yW)(_e, he), _e);
+                Se = ({ allowShare: e = !1, companyName: l, createdAt: a, formattedSalary: r, isFeatured: s, isVerifiedOrg: o, jobId: c, jobTitle: d, location: u, onClick: m, profileId: p, redirectUrl: g, salaryInterval: y, shortDescription: b, user: h, withUserInfo: _ = !1 }) => {
+                    (0, ue.q)(() => {
+                        (0, re.fH)((0, ye.yW)(fe, _e), fe);
                     });
-                    const _ = n.useMemo(() => ({ label: u }), [u]),
-                        k = n.useMemo(() => ie.Z.getContentStateFromRaw(b), [b]),
-                        F = n.useMemo(() => k && (0, ne.convertFromRaw)(k).hasText(), [k]),
-                        S = n.useMemo(() => `/i/jobs/${c}`, [c]);
-                    return n.createElement(se.Z, { interactive: !0, link: o ? { pathname: S, external: !0 } : g || "", onClick: m, style: ke.listContainer }, n.createElement(t.Z, { style: ke.items }, n.createElement(s.ZP, { hoverLabel: _, numberOfLines: 2, size: "subtext1", weight: "bold" }, u), h ? n.createElement(fe, { fallbackName: l, user: f }) : null, n.createElement(s.ZP, { color: "text", size: "subtext2", weight: "normal" }, d), r ? n.createElement(s.ZP, { color: "text", size: "subtext2", weight: "normal" }, (0, oe.M)(r, y)) : null, k && F ? n.createElement(t.Z, { style: ke.shortDescription }, n.createElement(me.Z, { className: _e }, n.createElement(ce.Z, { contentState: k, paragraphFontSizeOverride: he.paragraphFontSize }))) : null), n.createElement(t.Z, { style: ke.lastRow }, n.createElement(t.Z, { style: ke.itemRow }, n.createElement(t.Z, { style: ke.itemRow }, a ? n.createElement(ue.Z, { cutoff: "years", humanReadable: !0, style: ke.timestamp, timestamp: a }) : null, i ? n.createElement(pe.Z, null) : null), e ? n.createElement(be.Z, { iconSize: "small", jobId: c, jobUserId: p }) : null)));
+                    const f = n.useMemo(() => ({ label: d }), [d]),
+                        k = n.useMemo(() => se.Z.getContentStateFromRaw(b), [b]),
+                        S = n.useMemo(() => k && (0, ne.convertFromRaw)(k).hasText(), [k]),
+                        F = n.useMemo(() => `/i/jobs/${c}`, [c]);
+                    return n.createElement(ie.Z, { interactive: !0, link: o ? { pathname: F, external: !0 } : g || "", onClick: m, style: ke.listContainer }, n.createElement(t.Z, { style: ke.items }, n.createElement(i.ZP, { hoverLabel: f, numberOfLines: 2, size: "subtext1", weight: "bold" }, d), _ ? n.createElement(he, { fallbackName: l, user: h }) : null, n.createElement(i.ZP, { color: "text", size: "subtext2", weight: "normal" }, u), r ? n.createElement(i.ZP, { color: "text", size: "subtext2", weight: "normal" }, (0, oe.M)(r, y)) : null, k && S ? n.createElement(t.Z, { style: ke.shortDescription }, n.createElement(me.Z, { className: fe }, n.createElement(ce.Z, { contentState: k, paragraphFontSizeOverride: _e.paragraphFontSize }))) : null), n.createElement(t.Z, { style: ke.lastRow }, n.createElement(t.Z, { style: ke.itemRow }, n.createElement(t.Z, { style: ke.itemRow }, a ? n.createElement(de.Z, { cutoff: "years", humanReadable: !0, style: ke.timestamp, timestamp: a }) : null, s ? n.createElement(pe.Z, null) : null), e ? n.createElement(be.Z, { iconSize: "small", jobId: c, jobUserId: p }) : null)));
                 },
-                Se = ae,
-                Ee = ({ isViewerFollowsUser: e, item: l, jobId: a, jobIndex: t, profileId: r, user: i }) => {
-                    const s = (0, G.z)(),
-                        o = Q()(Se, l),
+                Fe = ae,
+                ve = ({ isViewerFollowsUser: e, item: l, jobId: a, jobIndex: t, profileId: r, user: s }) => {
+                    const i = (0, G.z)(),
+                        o = Q()(Fe, l),
                         c = n.useCallback(() => {
-                            s.scribe({ action: "click", component: "job_list_item", element: "job", data: { profile_id: r, items: [{ id: a, position: t, is_viewer_follows_user: e }] } });
-                        }, [s, e, a, t, r]),
-                        u = Boolean(i?.is_verified_organization);
-                    return o && o.title && o.location ? n.createElement(Fe, { allowShare: u, createdAt: o.created_at, formattedSalary: o.formatted_salary, isFeatured: Boolean(o.featured), isVerifiedOrg: i?.is_verified_organization, jobId: a, jobTitle: o.title, location: o.location, onClick: c, profileId: r, redirectUrl: o.redirect_url || "", salaryInterval: o.salary_interval, salaryMax: o.salary_max, salaryMin: o.salary_min, shortDescription: o.short_description, user: i }) : null;
+                            i.scribe({ action: "click", component: "job_list_item", element: "job", data: { profile_id: r, items: [{ id: a, position: t, is_viewer_follows_user: e }] } });
+                        }, [i, e, a, t, r]),
+                        d = Boolean(s?.is_verified_organization);
+                    return o && o.title && o.location ? n.createElement(Se, { allowShare: d, createdAt: o.created_at, formattedSalary: o.formatted_salary, isFeatured: Boolean(o.featured), isVerifiedOrg: s?.is_verified_organization, jobId: a, jobTitle: o.title, location: o.location, onClick: c, profileId: r, redirectUrl: o.redirect_url || "", salaryInterval: o.salary_interval, salaryMax: o.salary_max, salaryMin: o.salary_min, shortDescription: o.short_description, user: s }) : null;
                 },
-                ve = n.memo(Ee),
-                xe = $,
+                Ee = n.memo(ve),
+                Ce = W,
                 we = (e) => e.rest_id,
-                Ze = ({ fetchNext: e, isViewerFollowsUser: l, profileId: a, slice: t, user: i }) => {
-                    const s = (0, G.z)(),
-                        o = Q()(xe, t).items_results,
+                Ze = ({ fetchNext: e, isViewerFollowsUser: l, profileId: a, slice: t, user: s }) => {
+                    const i = (0, G.z)(),
+                        o = Q()(Ce, t).items_results,
                         c = n.useCallback(
                             (e) => {
                                 const t = e.result?.core;
-                                return t ? n.createElement(ve, { isViewerFollowsUser: l, item: t, jobId: e.rest_id, jobIndex: o.findIndex((l) => l.rest_id === e.rest_id), profileId: a, user: i }) : null;
+                                return t ? n.createElement(Ee, { isViewerFollowsUser: l, item: t, jobId: e.rest_id, jobIndex: o.findIndex((l) => l.rest_id === e.rest_id), profileId: a, user: s }) : null;
                             },
-                            [l, o, a, i],
+                            [l, o, a, s],
                         ),
-                        [u, d] = n.useState([]),
+                        [d, u] = n.useState([]),
                         m = n.useCallback(
                             (e) => {
                                 e.positions.forEach((n, t) => {
-                                    var r, i, o;
-                                    n.rectangle.getTop() + n.rectangle.getHeight() < e.viewport.getHeight() + e.viewport.getTop() && n.id && !u.includes(n.id) && (s.scribe({ ...((r = "job_list"), (i = "impression"), (o = "job"), { section: "jobs_list", component: r, element: o, action: i }), data: { ...ee(n.id, t, l, a) } }), d((e) => [...e, n.id]));
+                                    var r, s, o;
+                                    n.rectangle.getTop() + n.rectangle.getHeight() < e.viewport.getHeight() + e.viewport.getTop() && n.id && !d.includes(n.id) && (i.scribe({ ...((r = "job_list"), (s = "impression"), (o = "job"), { section: "jobs_list", component: r, element: o, action: s }), data: { ...ee(n.id, t, l, a) } }), u((e) => [...e, n.id]));
                                 });
                             },
-                            [s, u, l, a],
+                            [i, d, l, a],
                         );
                     return o ? (o.length ? n.createElement(Y.Z, { cacheKey: "userJobList", footer: null, identityFunction: we, items: o, onItemsRendered: m, onNearEnd: e, renderer: c }) : n.createElement(r.Z, { header: "No jobs" })) : null;
                 },
-                Ce = n.memo(Ze),
-                Te = { page: "jobs_list", section: "all" },
-                Ke = (e = "") => (e ? `Jobs created by ${e}` : "Jobs"),
-                Ie = J,
+                Ke = n.memo(Ze),
+                xe = { page: "jobs_list", section: "all" },
+                Ie = (e = "") => (e ? `Jobs created by ${e}` : "Jobs"),
+                Te = J,
                 Le = (e) => {
                     const { query: l, screenName: a, user: t } = e,
                         r = n.useMemo(() => {
                             const e = l?.keyword ? { keyword: l.keyword } : null;
                             return { userId: t.id_str, count: 50, cursor: null, searchParams: e };
                         }, [l, t.id_str]),
-                        { data: i, fetchNext: s } = (0, V.C)(Ie, r),
-                        o = i?.data?.result?.recruiting_organization_results?.result?.consumer_job_search;
-                    return o ? n.createElement(H.nO, { namespace: Te }, n.createElement(O.Z, null, n.createElement(n.Fragment, null, n.createElement(B.Z, { title: Ke(a) }), n.createElement(Ce, { fetchNext: s, isViewerFollowsUser: t.following, profileId: t.id_str, slice: o, user: i.data.result })))) : null;
+                        { data: s, fetchNext: i } = (0, V.C)(Te, r),
+                        o = s?.data?.result?.recruiting_organization_results?.result?.consumer_job_search;
+                    return o ? n.createElement(H.nO, { namespace: xe }, n.createElement(O.Z, null, n.createElement(n.Fragment, null, n.createElement(B.Z, { title: Ie(a) }), n.createElement(Ke, { fetchNext: i, isViewerFollowsUser: t.following, profileId: t.id_str, slice: o, user: s.data.result })))) : null;
                 },
                 ze = { context: "UserJobs" },
                 je = (e) => {
                     const [l] = (0, M.Z)(),
                         a = n.useMemo(() => ({ keyword: l.get("q") }), [l]);
-                    return n.createElement(A.H, { errorConfig: ze }, n.createElement(Le, (0, N.Z)({}, e, { query: a })));
+                    return n.createElement(A.H, { errorConfig: ze }, n.createElement(Le, (0, D.Z)({}, e, { query: a })));
                 },
-                Pe = n.memo(je);
-            var Re = a(138099),
-                De = a(154003),
-                Ne = a(466818),
+                Re = n.memo(je);
+            var Pe = a(138099),
+                Ne = a(154003),
+                De = a(466818),
                 Ue = a(985124);
             const Je = () => {
                     const [e, l] = (0, M.Z)(),
@@ -561,50 +561,50 @@
                             [l],
                         ),
                         t = n.useMemo(() => e.get("t") ?? "", [e]);
-                    return n.createElement(Ne.ZP, { label: "Job category", onChange: a, options: Ue.pg, testID: "select-team", value: t, withEmptyOption: !0 });
+                    return n.createElement(De.ZP, { label: "Job category", onChange: a, options: Ue.pg, testID: "select-team", value: t, withEmptyOption: !0 });
                 },
-                Be = ({ onDismiss: e, screenName: l }) => n.createElement(Re.Z, { onMaskClick: e, style: Oe.modalContainer, type: "full", withMask: !0 }, n.createElement(t.Z, { style: Oe.modalContent }, n.createElement(s.ZP, null, "Search jobs")), n.createElement(h.Z, { basePath: `/${l}/jobs` }), n.createElement(Je, null), n.createElement(De.ZP, { onClick: e, type: "brandFilled" }, "Done")),
+                Be = ({ onDismiss: e, screenName: l }) => n.createElement(Pe.Z, { onMaskClick: e, style: Oe.modalContainer, type: "full", withMask: !0 }, n.createElement(t.Z, { style: Oe.modalContent }, n.createElement(i.ZP, null, "Search jobs")), n.createElement(_.Z, { basePath: `/${l}/jobs` }), n.createElement(Je, null), n.createElement(Ne.ZP, { onClick: e, type: "brandFilled" }, "Done")),
                 Oe = c.default.create((e) => ({ container: { paddingHorizontal: e.spaces.space16 }, header: { flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", marginTop: e.spaces.space16 }, actions: { display: "flex", flexDirection: "row", gap: e.spaces.space8 }, iconActions: { display: "flex", flexDirection: "row" }, modalContainer: { display: "flex", gap: e.spaces.space32, padding: e.spacesPx.space32 }, modalContent: { display: "flex", gap: e.spaces.space16 }, modalActionsContainer: {} })),
                 Ae = n.memo(Be),
-                Me = d().b007440a,
-                He = d().c5fb5a1a,
+                Me = u().b007440a,
+                He = u().c5fb5a1a,
                 Ve = c.default.create((e) => ({ rightControlContainer: { flexDirection: "row", gap: e.spaces.space16, alignItems: "center" }, searchContainer: { borderTopColor: e.colors.borderColor, borderTopStyle: "solid", borderTopWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small, paddingVertical: e.spaces.space4, width: "100%" }, titleContent: { flexDirection: "row" }, sidebarRoot: { paddingBottom: e.spaces.space64, paddingTop: e.spaces.space12 } })),
-                qe = E((e) => {
+                qe = v((e) => {
                     const [l, a] = n.useState(!1),
-                        { fetchOneUserByScreenNameIfNeeded: c, history: u, screenName: d, user: _ } = e,
+                        { fetchOneUserByScreenNameIfNeeded: c, history: d, screenName: u, user: f } = e,
                         { viewerUserId: k } = n.useContext(g.rC),
-                        F = (0, y.hC)("recruiting_jobs_list_search_enabled"),
-                        S = (0, y.hC)("recruiting_job_recommendations_enabled"),
-                        E = (0, y.hC)("xprofile_blocked_by_view_enabled");
+                        S = (0, y.hC)("recruiting_jobs_list_search_enabled"),
+                        F = (0, y.hC)("recruiting_job_recommendations_enabled"),
+                        v = (0, y.hC)("xprofile_blocked_by_view_enabled");
                     n.useEffect(() => {
-                        d && c(d);
-                    }, [c, d]);
-                    const v = _?.id_str === k,
-                        x = !_ || (_ && (0, b.n5)({ isOwnProfile: v, isSoftBlockEnabled: E, user: _ })),
+                        u && c(u);
+                    }, [c, u]);
+                    const E = f?.id_str === k,
+                        C = !f || (f && (0, b.n5)({ isOwnProfile: E, isSoftBlockEnabled: v, user: f })),
                         w = n.useCallback(() => {
                             a(!1);
                         }, []);
-                    if (d) {
+                    if (u) {
                         const e = () => {
-                            const e = "Business" === _?.verified_type || "Square" === _?.profile_image_shape ? "square" : "circle";
-                            return n.createElement(t.Z, { style: Ve.rightControlContainer }, n.createElement(t.Z, null, _ ? n.createElement(i.default, { screenName: d, shape: e, size: "large", uri: _.profile_image_url_https }) : n.createElement(i.default, { shape: "square", size: "xLarge", uri: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" })), n.createElement(t.Z, null, n.createElement(s.ZP, { size: "body", weight: "bold" }, Me), n.createElement(o.Z, { screenName: d, size: "subtext1", style: { fontWeight: "normal" } })));
+                            const e = "Business" === f?.verified_type || "Square" === f?.profile_image_shape ? "square" : "circle";
+                            return n.createElement(t.Z, { style: Ve.rightControlContainer }, n.createElement(t.Z, null, f ? n.createElement(s.default, { screenName: u, shape: e, size: "large", uri: f.profile_image_url_https }) : n.createElement(s.default, { shape: "square", size: "xLarge", uri: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" })), n.createElement(t.Z, null, n.createElement(i.ZP, { size: "body", weight: "bold" }, Me), n.createElement(o.Z, { screenName: u, size: "subtext1", style: { fontWeight: "normal" } })));
                         };
-                        return x ? n.createElement(n.Fragment, null, n.createElement(p.Z, { backLocation: "/", history: u, primaryContent: _ ? (!_?.protected || _?.following || v ? n.createElement(n.Fragment, null, F && d ? n.createElement(t.Z, { style: Ve.rightControlContainer }, n.createElement(t.Z, { style: Ve.searchContainer }, n.createElement(h.Z, { basePath: `/${d}/jobs`, styleType: "selection" }))) : null, n.createElement(Pe, { screenName: d, user: _ })) : n.createElement(r.Z, { header: He })) : null, primaryContentLabel: Me, sidebarContent: S ? n.createElement(t.Z, { style: Ve.sidebarRoot }, n.createElement(m.Z, { isSidebarModule: !0 })) : null, title: e() }), l ? n.createElement(Ae, { onDismiss: w, screenName: d }) : null) : n.createElement(f.Z, { to: `/${d}` });
+                        return C ? n.createElement(n.Fragment, null, n.createElement(p.Z, { backLocation: "/", history: d, primaryContent: f ? (!f?.protected || f?.following || E ? n.createElement(n.Fragment, null, S && u ? n.createElement(t.Z, { style: Ve.rightControlContainer }, n.createElement(t.Z, { style: Ve.searchContainer }, n.createElement(_.Z, { basePath: `/${u}/jobs`, styleType: "selection" }))) : null, n.createElement(Re, { screenName: u, user: f })) : n.createElement(r.Z, { header: He })) : null, primaryContentLabel: Me, sidebarContent: F ? n.createElement(t.Z, { style: Ve.sidebarRoot }, n.createElement(m.Z, { isSidebarModule: !0 })) : null, title: e() }), l ? n.createElement(Ae, { onDismiss: w, screenName: u }) : null) : n.createElement(h.Z, { to: `/${u}` });
                     }
                     return null;
                 });
         },
         466818: (e, l, a) => {
-            a.d(l, { ZP: () => f });
+            a.d(l, { ZP: () => h });
             var n = a(202784),
                 t = a(325686),
                 r = a(487552),
-                i = a(302752),
-                s = a(183806),
+                s = a(302752),
+                i = a(183806),
                 o = a(731708),
                 c = a(950822),
-                u = a(224162),
-                d = a(392237);
+                d = a(224162),
+                u = a(392237);
             const m = n.forwardRef((e, l) => (0, c.Z)("select", { ...e, ref: l })),
                 p = (e) => (0, c.Z)("option", e);
             let g = 1;
@@ -636,36 +636,36 @@
                     this.props.autofocus && this._selectRef && this._selectRef.current && this._selectRef.current.focus();
                 }
                 render() {
-                    const { "aria-describedby": e, disabled: l, errorText: a, hasError: c, helperText: g, options: y, style: f, testID: h, value: _, withEmptyOption: k } = this.props,
-                        { isFocused: F } = this.state,
-                        S = o.ZP.getLanguage(),
-                        E = void 0 === c ? !!a : c,
-                        v = new Set();
-                    a && v.add(this._errorID), e && v.add(e), g && v.add(this._helperID);
-                    const x = v.size ? [...v].join(" ") : void 0;
+                    const { "aria-describedby": e, disabled: l, errorText: a, hasError: c, helperText: g, options: y, style: h, testID: _, value: f, withEmptyOption: k } = this.props,
+                        { isFocused: S } = this.state,
+                        F = o.ZP.getLanguage(),
+                        v = void 0 === c ? !!a : c,
+                        E = new Set();
+                    a && E.add(this._errorID), e && E.add(e), g && E.add(this._helperID);
+                    const C = E.size ? [...E].join(" ") : void 0;
                     return n.createElement(
                         n.Fragment,
                         null,
-                        n.createElement(u.ZP.Consumer, null, ({ direction: e }) => {
-                            const o = "ja" === S ? d.default.theme.fontFamilies.japan : "rtl" === e || i.Z.isLocaleRTL(S) ? d.default.theme.fontFamilies.rtl : d.default.theme.fontFamilies.normal;
+                        n.createElement(d.ZP.Consumer, null, ({ direction: e }) => {
+                            const o = "ja" === F ? u.default.theme.fontFamilies.japan : "rtl" === e || s.Z.isLocaleRTL(F) ? u.default.theme.fontFamilies.rtl : u.default.theme.fontFamilies.normal;
                             return n.createElement(
                                 t.Z,
-                                { style: [s.Z.border, b.container, l && s.Z.disabled, F && s.Z.focusedBorderValid, E && s.Z.invalidBorderColor, F && E && s.Z.focusedBorderInvalid, f] },
+                                { style: [i.Z.border, b.container, l && i.Z.disabled, S && i.Z.focusedBorderValid, v && i.Z.invalidBorderColor, S && v && i.Z.focusedBorderInvalid, h] },
                                 this._renderLabel(),
                                 n.createElement(
                                     m,
-                                    { "aria-describedby": x, "aria-invalid": E, "aria-labelledby": this._labelID, disabled: l, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: o }, l && s.Z.disabled], testID: h || "", value: _ },
+                                    { "aria-describedby": C, "aria-invalid": v, "aria-labelledby": this._labelID, disabled: l, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: o }, l && i.Z.disabled], testID: _ || "", value: f },
                                     k ? n.createElement(p, { disabled: !0, style: b.option, value: "" }) : null,
                                     y.map((e) => {
                                         const { disabled: l, label: a, value: t } = e;
                                         return n.createElement(p, { disabled: l, key: `${a}-${t}`, style: b.option, value: t }, a);
                                     }),
                                 ),
-                                n.createElement(r.default, { style: [b.dropdownCaret, F && s.Z.validColor, !(!c && !a) && s.Z.invalidColor] }),
+                                n.createElement(r.default, { style: [b.dropdownCaret, S && i.Z.validColor, !(!c && !a) && i.Z.invalidColor] }),
                             );
                         }),
                         g ? this._renderHelperText() : null,
-                        E && a ? this._renderErrorText() : null,
+                        v && a ? this._renderErrorText() : null,
                     );
                 }
                 _renderLabel() {
@@ -681,104 +681,22 @@
                 }
             }
             y.defaultProps = { disabled: !1, autofocus: !1, withEmptyOption: !1 };
-            const b = d.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
-                f = y;
+            const b = u.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
+                h = y;
         },
-        280278: (e, l, a) => {
-            a.d(l, { ZP: () => y });
-            var n = a(202784),
-                t = a(325686),
-                r = a(827515),
-                i = a(461756),
-                s = a(731708),
-                o = a(392237);
-            const c = "up",
-                u = "down",
-                d = (e, l, a) => {
-                    a((a) => {
-                        const n = (0, r.Z)(e) ? (e > (a.count || 0) ? c : u) : c;
-                        return { ...a, count: e, oldText: a.text, pendingCount: null, pendingText: null, text: l, transitionDirection: n };
-                    });
-                },
-                m = {};
-            [c, u].forEach((e) => {
-                const l = "0.3s";
-                m[e] = { active: { transitionProperty: "transform", transitionDuration: l, transform: "translate3d(0, 0, 0)" }, pre: { transform: `translate3d(0, ${e === c ? "100%" : "-100%"}, 0)` }, post: { transform: `translate3d(0, ${e === c ? "-100%" : "100%"}, 0)`, transitionProperty: "transform", transitionDuration: l } };
-            });
-            const p = { position: "absolute" },
-                g = o.default.create({ root: { overflow: "hidden" } }),
-                y = (e) => {
-                    const { children: l, containerStyle: a, count: o, ...u } = e,
-                        [y, b] = n.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: c }),
-                        f = n.useRef(!1);
-                    return (
-                        n.useEffect(
-                            () => (
-                                (f.current = !0),
-                                function () {
-                                    f.current = !1;
-                                }
-                            ),
-                            [],
-                        ),
-                        n.useEffect(() => {
-                            if (f.current)
-                                if (i.Z.reducedMotionEnabled) b((a) => ({ ...a, oldText: null, text: l, pendingText: null, pendingCount: null, count: e.count }));
-                                else if (l !== y.pendingText) {
-                                    l === y.text || ((0, r.Z)(e.count) && y.count === e.count) ? b((e) => ({ ...e, pendingCount: null, pendingText: null })) : (b((a) => ({ ...a, pendingCount: e.count, pendingText: l })), y.animating || d(e.count, l, b));
-                                }
-                        }, [l]),
-                        n.useEffect(() => {
-                            f.current &&
-                                !1 === y.animating &&
-                                (y.oldText
-                                    ? window.requestAnimationFrame(() =>
-                                          window.requestAnimationFrame(() => {
-                                              f.current && b((e) => ({ ...e, animating: !0 }));
-                                          }),
-                                      )
-                                    : y.pendingText && d(y.pendingCount, y.pendingText, b));
-                        }, [y.animating, y.oldText]),
-                        n.useMemo(() => {
-                            const e = m[y.transitionDirection],
-                                l = y.oldText && !i.Z.reducedMotionEnabled,
-                                r = !y.animating && y.oldText && !i.Z.reducedMotionEnabled,
-                                o = { ...p, ...(y.animating ? e.post : e.active) },
-                                c = { ...(r ? e.pre : e.active) };
-                            return n.createElement(
-                                t.Z,
-                                { style: [g.root, a] },
-                                l ? n.createElement("span", { style: o }, n.createElement(s.ZP, u, y.oldText)) : null,
-                                n.createElement(
-                                    "span",
-                                    {
-                                        "data-testid": "app-text-transition-container",
-                                        onTransitionEnd: () =>
-                                            ((e, l) => {
-                                                e && l((e) => ({ ...e, animating: !1, oldText: null }));
-                                            })(f.current, b),
-                                        style: c,
-                                    },
-                                    n.createElement(s.ZP, u, y.text),
-                                ),
-                            );
-                        }, [a, u, y, f, b])
-                    );
-                };
-        },
-        487552: (e, l, a) => {
+        262009: (e, l, a) => {
             a.r(l), a.d(l, { default: () => o });
             var n = a(202784),
                 t = a(890601),
                 r = a(783427),
-                i = a(347101);
-            const s = (e = {}) => {
+                s = a(347101);
+            const i = (e = {}) => {
                 const { direction: l } = (0, r.Z)();
-                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: l });
+                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14 2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1C11.26 7.53 12 5.35 12 2h2zM5 1c0 1.66-1.34 3-3 3v1c1.66 0 3 1.34 3 3h1c0-1.66 1.34-3 3-3V4C7.34 4 6 2.66 6 1H5z" })) }, { writingDirection: l });
             };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
+            i.metadata = { width: 24, height: 24 };
+            const o = i;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserJobs.f1d80a2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserJobs.931ed73a.js.map

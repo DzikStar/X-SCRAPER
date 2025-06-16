@@ -1,5 +1,5 @@
 var manifest = {
-    feature_set_token: "eb987f473fc4b09b0e4b9845237d6ec26f4bc51d",
+    feature_set_token: "9ee35cb96a82fb0548257215b9f3d7865ad0ec55",
     config: {
         "2fa_temporary_password_enabled": { value: !1 },
         Arkose_rweb_hosted_page: { value: !0 },
@@ -445,6 +445,7 @@ var manifest = {
         responsive_web_grok_api_enable_grok_host: { value: !0 },
         responsive_web_grok_atgrok_sample_rate: { value: 0.5 },
         responsive_web_grok_backend_prompts_enabled: { value: !0 },
+        responsive_web_grok_bio_auto_translation_is_enabled: { value: !1 },
         responsive_web_grok_continue_in_grok_enabled: { value: !0 },
         responsive_web_grok_debug_enabled: { value: !1 },
         responsive_web_grok_delete_conversations_enabled: { value: !0 },
@@ -2188,6 +2189,7 @@ var manifest = {
         responsive_web_grok_poll_translation_enabled: { name: "responsive_web_grok_poll_translation_enabled", type: "boolean", defaultValue: !1 },
         responsive_web_grok_post_inline_translation_is_enabled: { name: "responsive_web_grok_post_inline_translation_is_enabled", type: "boolean", defaultValue: !1 },
         responsive_web_grok_images_card_enabled: { name: "responsive_web_grok_images_card_enabled", type: "string" },
+        responsive_web_grok_bio_auto_translation_is_enabled: { name: "responsive_web_grok_bio_auto_translation_is_enabled", type: "boolean", defaultValue: !1 },
         responsive_web_grok_api_enable_grok_host: { name: "responsive_web_grok_api_enable_grok_host", type: "boolean", defaultValue: !0 },
         responsive_web_hashtag_highlight_is_enabled: { name: "responsive_web_hashtag_highlight_is_enabled", type: "boolean", defaultValue: !1 },
         responsive_web_hashtag_highlight_show_avatar: { name: "responsive_web_hashtag_highlight_show_avatar", type: "boolean", defaultValue: !1 },
@@ -2494,6 +2496,7 @@ var manifest = {
         rweb_xchat_messages_sidebar_enabled: { name: "rweb_xchat_messages_sidebar_enabled", type: "boolean", defaultValue: !1 },
         rweb_xchat_logs: { name: "rweb_xchat_logs", type: "boolean", defaultValue: !1 },
         rweb_xchat_new_db_worker_enabled: { name: "rweb_xchat_new_db_worker_enabled", type: "boolean", defaultValue: !0 },
+        rweb_xchat_fs_worker: { name: "rweb_xchat_fs_worker", type: "string" },
         rweb_xp_forwarded_for_enabled: { name: "rweb_xp_forwarded_for_enabled", type: "boolean", defaultValue: !1 },
         sc_mock_data_enabled: { name: "sc_mock_data_enabled", type: "boolean", defaultValue: !1 },
         sc_r4_dash_badge_enabled: { name: "sc_r4_dash_badge_enabled", type: "string" },

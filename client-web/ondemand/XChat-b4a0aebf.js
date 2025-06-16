@@ -7,8 +7,8 @@
             var s = n(552322),
                 i = n(159603),
                 a = n(455091),
-                r = n(332161),
-                o = n(193686),
+                o = n(332161),
+                r = n(193686),
                 l = n(959992),
                 c = n(202784),
                 d = n(125691),
@@ -39,16 +39,16 @@
             function G({ convId: e }) {
                 const t = (0, R.$)(),
                     [n, a] = (0, c.useState)(null),
-                    r = (0, C.n)(),
-                    o = (0, y.s)();
+                    o = (0, C.n)(),
+                    r = (0, y.s)();
                 return (
                     (0, c.useEffect)(() => {
                         const t = new i.com.x.export.CancellationSignal(),
-                            n = r.editGroupMetadataComponent(
+                            n = o.editGroupMetadataComponent(
                                 t,
                                 e,
                                 new T.EditGroupMetadataCallbacks(() => {
-                                    o.toConversationInfo(e.id);
+                                    r.toConversationInfo(e.id);
                                 }),
                             );
                         return (
@@ -57,19 +57,19 @@
                                 t.cancel();
                             }
                         );
-                    }, [r, e, o]),
+                    }, [o, e, r]),
                     n ? (0, s.jsx)(L, { isOpen: t, component: n }) : null
                 );
             }
             const L = ({ isOpen: e, component: t }) => {
                 const { t: n } = (0, a.$G)(),
-                    o = (0, z._)(t.state),
+                    r = (0, z._)(t.state),
                     l = (0, c.useRef)(null),
                     d = (0, c.useRef)(null),
                     [m, x] = (0, c.useState)(null);
                 (0, c.useEffect)(() => {
-                    o.metadata?.title?.title && t.handleEvent(new T.EditGroupMetadataEvent.TitleTextUpdated(o.metadata.title.title));
-                }, [o.metadata?.title?.title, t]);
+                    r.metadata?.title?.title && t.handleEvent(new T.EditGroupMetadataEvent.TitleTextUpdated(r.metadata.title.title));
+                }, [r.metadata?.title?.title, t]);
                 const u = (0, c.useCallback)(() => {
                         t.handleEvent(T.EditGroupMetadataEvent.SaveButtonClicked),
                             setTimeout(() => {
@@ -120,12 +120,12 @@
                                                 className: "w-24 h-24 cursor-pointer hover:opacity-90 transition-opacity",
                                                 onClick: v,
                                                 children:
-                                                    o.metadata?.title &&
+                                                    r.metadata?.title &&
                                                     (m
                                                         ? (0, s.jsx)(E.q, { url: m, size: "fill" })
                                                         : (0, s.jsx)(I.x, {
                                                               avatarSize: "fill",
-                                                              titleState: o.metadata.title,
+                                                              titleState: r.metadata.title,
                                                               onCustomAvatarNeedsResolving: (e) => {
                                                                   P.G || t.handleEvent(new T.EditGroupMetadataEvent.ResolveCustomAvatar(e));
                                                               },
@@ -138,13 +138,13 @@
                                     (0, s.jsxs)("div", {
                                         className: "w-full",
                                         children: [
-                                            (0, s.jsx)(r.x, { size: "subtext2", weight: "medium", className: "mb-2", children: n("Group Name") }),
+                                            (0, s.jsx)(o.x, { size: "subtext2", weight: "medium", className: "mb-2", children: n("Group Name") }),
                                             (0, s.jsx)(S._, {
                                                 ref: l,
-                                                value: o.currentTitle,
+                                                value: r.currentTitle,
                                                 onChange: (e) => t.handleEvent(new T.EditGroupMetadataEvent.TitleTextUpdated(e.target.value)),
                                                 onKeyDown: (e) => {
-                                                    "Enter" === e.key && o.currentTitle.trim() && (e.preventDefault(), u());
+                                                    "Enter" === e.key && r.currentTitle.trim() && (e.preventDefault(), u());
                                                 },
                                                 maxLength: 50,
                                             }),
@@ -152,7 +152,7 @@
                                     }),
                                 ],
                             }),
-                            (0, s.jsxs)(M.cN, { children: [(0, s.jsx)(g.z, { variant: "mutedText", onClick: h, children: n("Cancel") }), (0, s.jsx)(g.z, { variant: "brandFilled", onClick: u, disabled: !o.currentTitle.trim(), children: n("Save") })] }),
+                            (0, s.jsxs)(M.cN, { children: [(0, s.jsx)(g.z, { variant: "mutedText", onClick: h, children: n("Cancel") }), (0, s.jsx)(g.z, { variant: "brandFilled", onClick: u, disabled: !r.currentTitle.trim(), children: n("Save") })] }),
                         ],
                     }),
                 });
@@ -192,12 +192,12 @@
                     : null;
             }
             const X = i.com.x.dms.convinfo,
-                K = ({ className: e }) => (0, s.jsxs)("div", { className: (0, b.cn)("flex flex-col items-center justify-center h-full gap-4", e), children: [(0, s.jsx)(o.P, {}), (0, s.jsx)(r.x, { children: "Sync is in progress …" })] });
+                K = ({ className: e }) => (0, s.jsxs)("div", { className: (0, b.cn)("flex flex-col items-center justify-center h-full gap-4", e), children: [(0, s.jsx)(r.P, {}), (0, s.jsx)(o.x, { children: "Sync is in progress …" })] });
             function H({ id: e }) {
                 const [t, n] = (0, c.useState)(null),
                     a = (0, C.n)(),
-                    r = (0, y.s)(),
-                    [o, l] = (0, c.useState)(!1);
+                    o = (0, y.s)(),
+                    [r, l] = (0, c.useState)(!1);
                 return (
                     (0, c.useEffect)(() => {
                         const t = new i.com.x.export.CancellationSignal(),
@@ -206,26 +206,26 @@
                                 i.com.x.models.dm.XConversationId.Companion.fromStringRequired(e),
                                 new X.ConversationInfoCallbacks(
                                     () => {
-                                        r.toConversation(e);
+                                        o.toConversation(e);
                                     },
                                     () => {
-                                        r.toInbox();
+                                        o.toInbox();
                                     },
                                     () => {
-                                        r.toEditGroup(e);
+                                        o.toEditGroup(e);
                                     },
                                     () => {},
                                     () => {
                                         l(!0);
                                     },
                                     () => {
-                                        r.toParticipants(e);
+                                        o.toParticipants(e);
                                     },
                                     () => {
-                                        r.toVanishingMode(e);
+                                        o.toVanishingMode(e);
                                     },
                                     () => {
-                                        r.toGroupInvite(e);
+                                        o.toGroupInvite(e);
                                     },
                                 ),
                             );
@@ -235,21 +235,22 @@
                                 t.cancel();
                             }
                         );
-                    }, [a, e, r]),
-                    t ? (0, s.jsx)(Q, { component: t, showAddGroupParticipants: o, setShowAddGroupParticipants: l }) : null
+                    }, [a, e, o]),
+                    t ? (0, s.jsx)(Q, { component: t, showAddGroupParticipants: r, setShowAddGroupParticipants: l }) : null
                 );
             }
             function Q({ component: e, setShowAddGroupParticipants: t, showAddGroupParticipants: n }) {
-                const { t: o } = (0, a.$G)(),
+                const { t: r } = (0, a.$G)(),
                     d = (0, z._)(e.state);
                 (0, D.e)(e.toasts);
-                const b = (0, c.useCallback)(
+                const b = (0, m.z)(),
+                    C = (0, c.useCallback)(
                         (t) => {
                             e.onEvent(new X.ConversationInfoEvent.ParticipantClicked(t));
                         },
                         [e],
                     ),
-                    C = (0, c.useCallback)(
+                    y = (0, c.useCallback)(
                         (t, n) => {
                             e.onEvent(new X.ConversationInfoEvent.ParticipantMenuButtonClicked(t, n));
                         },
@@ -257,24 +258,24 @@
                     );
                 if (d.contents === X.ConversationInfoContents.Loading) return (0, s.jsx)(U.g, { className: "flex flex-col w-full items-center self-center min-h-dvh md:h-dvh relative overflow-y-auto", children: (0, s.jsx)(K, {}) });
                 if (!(d.contents instanceof X.ConversationInfoContents.Loaded)) return null;
-                const y = d.contents.convId,
-                    E = y instanceof i.com.x.models.dm.XConversationId.Group,
-                    S = d.contents.metadata.title instanceof i.com.x.dms.model.DmTitleState.OneToOne,
-                    M = d.contents.peopleSection,
-                    R = d.contents.memberRequestSize,
-                    A = (t) => {
+                const E = d.contents.convId,
+                    S = E instanceof i.com.x.models.dm.XConversationId.Group,
+                    M = d.contents.metadata.title instanceof i.com.x.dms.model.DmTitleState.OneToOne,
+                    R = d.contents.peopleSection,
+                    A = d.contents.memberRequestSize,
+                    T = (t) => {
                         e.onEvent(t);
                     },
-                    T = d.contents.metadata.areNotificationsDisabled,
-                    L = T ? x.Z : u.Z,
-                    Z = o(S ? (T ? "Unmute conversation" : "Mute conversation") : T ? "Unmute group" : "Mute group"),
-                    F = d.contents.metadata.attributes?.defaultTtl?.inWholeMilliseconds,
-                    _ = !(0, P.G)() || (0, m.z)().isTrue("rweb_xchat_fs_worker");
+                    L = d.contents.metadata.areNotificationsDisabled,
+                    Z = L ? x.Z : u.Z,
+                    F = r(M ? (L ? "Unmute conversation" : "Mute conversation") : L ? "Unmute group" : "Mute group"),
+                    _ = d.contents.metadata.attributes?.defaultTtl?.inWholeMilliseconds,
+                    V = !(0, P.G)() || b.isTrue("rweb_xchat_fs_worker");
                 return (0, s.jsxs)(U.g, {
                     className: "flex flex-col w-full items-center self-center min-h-dvh md:h-dvh relative overflow-y-auto",
                     children: [
-                        n && E && (0, s.jsx)(k.C, { conversationId: y, onVisibilityChange: t }),
-                        E && (0, s.jsx)(G, { convId: y }),
+                        n && S && (0, s.jsx)(k.C, { conversationId: E, onVisibilityChange: t }),
+                        S && (0, s.jsx)(G, { convId: E }),
                         (0, s.jsxs)("div", {
                             className: "w-full sticky left-0 top-0 py-4 px-2",
                             children: [
@@ -302,25 +303,25 @@
                                                         avatarSize: "fill",
                                                         titleState: d.contents.metadata.title,
                                                         onCustomAvatarNeedsResolving: (t) => {
-                                                            _ && e.onEvent(new i.com.x.dms.convinfo.ConversationInfoEvent.ResolveCustomAvatar(t));
+                                                            V && e.onEvent(new i.com.x.dms.convinfo.ConversationInfoEvent.ResolveCustomAvatar(t));
                                                         },
                                                         isInlineFacepile: !0,
                                                     }),
                                                 }),
-                                                (0, s.jsxs)("div", { className: "flex flex-col items-center", children: [(0, s.jsx)(j.R, { name: d.contents.metadata.title.title, badges: S ? (0, O.r)(d.contents.metadata.title.otherUser) : void 0 }), S && d.contents.metadata.title.otherUser && (0, s.jsx)(w.Q, { screenName: d.contents.metadata.title.otherUser.screenName })] }),
+                                                (0, s.jsxs)("div", { className: "flex flex-col items-center", children: [(0, s.jsx)(j.R, { name: d.contents.metadata.title.title, badges: M ? (0, O.r)(d.contents.metadata.title.otherUser) : void 0 }), M && d.contents.metadata.title.otherUser && (0, s.jsx)(w.Q, { screenName: d.contents.metadata.title.otherUser.screenName })] }),
                                             ],
                                         }),
                                         (0, s.jsx)("div", {
                                             className: "w-20 shrink-0",
                                             children:
                                                 d.contents.showEditGroupAction &&
-                                                E &&
+                                                S &&
                                                 (0, s.jsx)(g.z, {
                                                     variant: "brandText",
                                                     onClick: () => {
-                                                        e.onEvent(new i.com.x.dms.convinfo.ConversationInfoEvent.EditGroupClicked(y));
+                                                        e.onEvent(new i.com.x.dms.convinfo.ConversationInfoEvent.EditGroupClicked(E));
                                                     },
-                                                    children: (0, s.jsx)(r.x, { weight: "medium", color: "inherit", numberOfLines: 1, children: o("Edit") }),
+                                                    children: (0, s.jsx)(o.x, { weight: "medium", color: "inherit", numberOfLines: 1, children: r("Edit") }),
                                                 }),
                                         }),
                                     ],
@@ -337,43 +338,43 @@
                                         children: (0, s.jsxs)("div", {
                                             className: "h-20 flex flex-col justify-center items-center gap-2 cursor-pointer bg-gray-0 hover:bg-gray-100 rounded-xl p-2",
                                             onClick: () => {
-                                                e.onEvent(T ? X.ConversationInfoEvent.OnUnMuteClicked : X.ConversationInfoEvent.OnMuteClicked);
+                                                e.onEvent(L ? X.ConversationInfoEvent.OnUnMuteClicked : X.ConversationInfoEvent.OnMuteClicked);
                                             },
-                                            children: [(0, s.jsx)(L, { className: "w-6 h-6" }), (0, s.jsx)(r.x, { size: "subtext2", weight: "medium", color: "gray700", children: Z })],
+                                            children: [(0, s.jsx)(Z, { className: "w-6 h-6" }), (0, s.jsx)(o.x, { size: "subtext2", weight: "medium", color: "gray700", children: F })],
                                         }),
                                     }),
                                     (0, s.jsxs)("div", {
                                         className: "w-full",
                                         children: [
-                                            (0, s.jsx)(r.x, { weight: "bold", className: "px-4 pb-2", children: o(E ? "Group settings" : "Chat settings") }),
+                                            (0, s.jsx)(o.x, { weight: "bold", className: "px-4 pb-2", children: r(S ? "Group settings" : "Chat settings") }),
                                             (0, s.jsxs)($.I, {
                                                 children: [
                                                     !d.contents.metadata.isReadOnly &&
                                                         (0, s.jsx)($.R, {
                                                             icon: (0, s.jsx)(v.Z, { className: "h-5 w-5" }),
-                                                            title: o("Disappearing Messages"),
+                                                            title: r("Disappearing messages"),
                                                             showChevron: !0,
-                                                            value: F ? (0, B.L)(F) : "Off",
+                                                            value: _ ? (0, B.L)(_) : "Off",
                                                             onClick: () => {
                                                                 e.onEvent(X.ConversationInfoEvent.DisappearingMessagesClicked);
                                                             },
                                                         }),
-                                                    M?.canAddPeople &&
+                                                    R?.canAddPeople &&
                                                         (0, s.jsx)($.R, {
                                                             icon: (0, s.jsx)(p.Z, { className: "h-5 w-5" }),
                                                             onClick: () => {
                                                                 e.onEvent(X.ConversationInfoEvent.GroupInviteClicked);
                                                             },
-                                                            title: o("Group Invite Link"),
-                                                            value: R ? (0, s.jsx)("div", { className: "flex items-center justify-center w-6 h-6 rounded-full bg-blue-500", children: (0, s.jsx)(r.x, { size: "subtext2", color: "white", weight: "medium", children: R }) }) : d.contents.metadata.attributes?.inviteUrl ? o("On") : o("Off"),
+                                                            title: r("Group invite link"),
+                                                            value: A ? (0, s.jsx)("div", { className: "flex items-center justify-center w-6 h-6 rounded-full bg-blue-500", children: (0, s.jsx)(o.x, { size: "subtext2", color: "white", weight: "medium", children: A }) }) : d.contents.metadata.attributes?.inviteUrl ? r("On") : r("Off"),
                                                             showChevron: !0,
                                                         }),
-                                                    d.contents.bottomButtons.asJsReadonlyArrayView().map((e) => (0, s.jsx)(W, { button: e, onEvent: A, buttonStyleSheet: "h-5 w-5" }, e.name)),
+                                                    d.contents.bottomButtons.asJsReadonlyArrayView().map((e) => (0, s.jsx)(W, { button: e, onEvent: T, buttonStyleSheet: "h-5 w-5" }, e.name)),
                                                 ],
                                             }),
                                         ],
                                     }),
-                                    M
+                                    R
                                         ? (0, s.jsx)("div", {
                                               className: "w-full mt-4",
                                               children: (0, s.jsxs)("div", {
@@ -382,14 +383,14 @@
                                                       (0, s.jsxs)("div", {
                                                           className: "flex flex-row items-center justify-between px-4 pb-2",
                                                           children: [
-                                                              (0, s.jsx)(r.x, { weight: "bold", children: o("Members") }),
-                                                              M.showMoreUsersLink &&
+                                                              (0, s.jsx)(o.x, { weight: "bold", children: r("Members") }),
+                                                              R.showMoreUsersLink &&
                                                                   (0, s.jsx)("button", {
                                                                       type: "button",
                                                                       onClick: () => {
                                                                           e.onEvent(X.ConversationInfoEvent.TotalNumMembersClicked);
                                                                       },
-                                                                      children: (0, s.jsx)(r.x, { color: "primary", children: o("See all ({number})", { number: M.showMoreUsersLink + M.participants.asJsReadonlyArrayView().length }) }),
+                                                                      children: (0, s.jsx)(o.x, { color: "primary", children: r("See all ({number})", { number: R.showMoreUsersLink + R.participants.asJsReadonlyArrayView().length }) }),
                                                                   }),
                                                           ],
                                                       }),
@@ -401,9 +402,9 @@
                                                                       onClick: () => {
                                                                           e.onEvent(X.ConversationInfoEvent.AddPeopleClicked);
                                                                       },
-                                                                      title: o("Add members"),
+                                                                      title: r("Add members"),
                                                                   }),
-                                                              (0, s.jsx)(N.b, { handleParticipantClicked: b, handleParticipantMenuButtonClicked: C, participants: M.participants.asJsReadonlyArrayView(), menuItemsMap: M.menuItems.asJsReadonlyMapView() }),
+                                                              (0, s.jsx)(N.b, { handleParticipantClicked: C, handleParticipantMenuButtonClicked: y, participants: R.participants.asJsReadonlyArrayView(), menuItemsMap: R.menuItems.asJsReadonlyMapView() }),
                                                           ],
                                                       }),
                                                   ],
@@ -417,11 +418,11 @@
                     ],
                 });
             }
-            const Y = ({ title: e, onBackClicked: t }) => (0, s.jsxs)("div", { className: "flex flex-shrink-0 items-center w-full relative pt-4 px-2 pb-2", children: [(0, s.jsx)(g.z, { icon: (0, s.jsx)(h.Z, {}), onClick: t, variant: "mutedText" }), (0, s.jsx)("div", { className: "flex-1", children: (0, s.jsx)(r.x, { size: "headline1", weight: "bold", className: "text-center", children: e }) }), (0, s.jsx)("div", { className: "w-9" }), " "] }),
+            const Y = ({ title: e, onBackClicked: t }) => (0, s.jsxs)("div", { className: "flex flex-shrink-0 items-center w-full relative pt-4 px-2 pb-2", children: [(0, s.jsx)(g.z, { icon: (0, s.jsx)(h.Z, {}), onClick: t, variant: "mutedText" }), (0, s.jsx)("div", { className: "flex-1", children: (0, s.jsx)(o.x, { size: "headline1", weight: "bold", className: "text-center", children: e }) }), (0, s.jsx)("div", { className: "w-9" }), " "] }),
                 ee = i.com.x.dms.participantlist,
                 te = ({ id: e }) => {
                     const { t } = (0, a.$G)(),
-                        [n, r] = (0, c.useState)(null),
+                        [n, o] = (0, c.useState)(null),
                         l = (0, C.n)(),
                         d = (0, y.s)();
                     return (
@@ -438,7 +439,7 @@
                                     ),
                                 );
                             return (
-                                r(n),
+                                o(n),
                                 () => {
                                     t.cancel();
                                 }
@@ -453,7 +454,7 @@
                                         e.stopPropagation(), n?.handleEvent(ee.ParticipantListEvent.BackButtonClicked);
                                     },
                                 }),
-                                n ? (0, s.jsx)(ne, { component: n }) : (0, s.jsx)("div", { className: "flex items-center h-full", children: (0, s.jsx)(o.P, {}) }),
+                                n ? (0, s.jsx)(ne, { component: n }) : (0, s.jsx)("div", { className: "flex items-center h-full", children: (0, s.jsx)(r.P, {}) }),
                             ],
                         })
                     );
@@ -478,9 +479,9 @@
             var se = n(699416),
                 ie = n(167285);
             const ae = i.com.x.dms.vanishingmode,
-                re = ({ id: e }) => {
+                oe = ({ id: e }) => {
                     const { t } = (0, a.$G)(),
-                        [n, r] = (0, c.useState)(null),
+                        [n, o] = (0, c.useState)(null),
                         l = (0, C.n)(),
                         d = (0, y.s)();
                     return (
@@ -494,7 +495,7 @@
                                     }),
                                 );
                             return (
-                                r(n),
+                                o(n),
                                 () => {
                                     t.cancel();
                                 }
@@ -504,27 +505,27 @@
                             className: "flex flex-col w-full items-center self-center min-h-dvh md:h-dvh",
                             children: [
                                 (0, s.jsx)(Y, {
-                                    title: t("Disappearing Messages"),
+                                    title: t("Disappearing messages"),
                                     onBackClicked: (e) => {
                                         e.stopPropagation(), n?.handleEvent(ae.VanishingModeEvent.BackButtonClicked);
                                     },
                                 }),
-                                n ? (0, s.jsx)(oe, { component: n }) : (0, s.jsx)("div", { className: "flex items-center h-full", children: (0, s.jsx)(o.P, {}) }),
+                                n ? (0, s.jsx)(re, { component: n }) : (0, s.jsx)("div", { className: "flex items-center h-full", children: (0, s.jsx)(r.P, {}) }),
                             ],
                         })
                     );
                 },
-                oe = ({ component: e }) => {
+                re = ({ component: e }) => {
                     const { t } = (0, a.$G)(),
                         n = (0, z._)(e.state);
                     return (0, s.jsxs)("div", {
                         className: "flex flex-col items-center w-full px-4 overflow-y-auto gap-6 py-6",
                         children: [
-                            (0, s.jsxs)("div", { className: "flex gap-3 justify-start", children: [(0, s.jsx)(v.Z, { className: "flex-shrink-0", width: 24, height: 24 }), (0, s.jsx)(r.x, { children: t("After messages in this chat get read, they will vanish after the selected time below.") })] }),
+                            (0, s.jsxs)("div", { className: "flex gap-3 justify-start", children: [(0, s.jsx)(v.Z, { className: "flex-shrink-0", width: 24, height: 24 }), (0, s.jsx)(o.x, { children: t("After messages in this chat get read, they will vanish after the selected time below.") })] }),
                             (0, s.jsx)("div", {
                                 className: "w-full bg-gray-0 rounded-xl",
                                 children: n.times.asJsReadonlyArrayView().map((i, a) => {
-                                    const o = i ? (0, ie.S)({ diffSeconds: i.inWholeMilliseconds / 1e3, style: "long" }) : t("None"),
+                                    const r = i ? (0, ie.S)({ diffSeconds: i.inWholeMilliseconds / 1e3, style: "long" }) : t("None"),
                                         l = (!i && !n.currentTtl) || i?.equals(n.currentTtl);
                                     return (0, s.jsxs)(
                                         "div",
@@ -533,9 +534,9 @@
                                             onClick: () => {
                                                 e.handleEvent(new ae.VanishingModeEvent.TimeClicked(i));
                                             },
-                                            children: [(0, s.jsx)(r.x, { children: o }), (0, s.jsx)("div", { className: "h-6 text-primary", children: l && (0, s.jsx)(se.Z, { width: 24, height: 24 }) })],
+                                            children: [(0, s.jsx)(o.x, { children: r }), (0, s.jsx)("div", { className: "h-6 text-primary", children: l && (0, s.jsx)(se.Z, { width: 24, height: 24 }) })],
                                         },
-                                        o,
+                                        r,
                                     );
                                 }),
                             }),
@@ -586,8 +587,8 @@
                         ],
                     });
                 },
-                be = ({ toolbarState: e }) => ((e instanceof je.Group || e instanceof je.OneToOne) && e.ttl ? (0, s.jsx)(Ce, { ttl: e.ttl }) : e instanceof je.Group ? (0, s.jsxs)(r.x, { size: "subtext2", color: "gray700", children: [e.numParticipants, " people"] }) : null),
-                Ce = ({ ttl: e }) => (0, s.jsxs)("div", { className: "flex flex-row gap-1", children: [(0, s.jsx)(v.Z, { className: "text-gray-700" }), (0, s.jsx)(r.x, { size: "subtext2", color: "gray700", children: (0, B.L)(e.inWholeMilliseconds) })] });
+                be = ({ toolbarState: e }) => ((e instanceof je.Group || e instanceof je.OneToOne) && e.ttl ? (0, s.jsx)(Ce, { ttl: e.ttl }) : e instanceof je.Group ? (0, s.jsxs)(o.x, { size: "subtext2", color: "gray700", children: [e.numParticipants, " people"] }) : null),
+                Ce = ({ ttl: e }) => (0, s.jsxs)("div", { className: "flex flex-row gap-1", children: [(0, s.jsx)(v.Z, { className: "text-gray-700" }), (0, s.jsx)(o.x, { size: "subtext2", color: "gray700", children: (0, B.L)(e.inWholeMilliseconds) })] });
             var ye = n(788452),
                 ke = n(256958),
                 Ne = n(261012),
@@ -600,7 +601,7 @@
                 Me = i.com.x.dms.convinfo,
                 Re = ({ id: e }) => {
                     const { t } = (0, a.$G)(),
-                        [n, r] = (0, c.useState)(null),
+                        [n, o] = (0, c.useState)(null),
                         [l, d] = (0, c.useState)(null),
                         m = (0, C.n)(),
                         x = (0, y.s)();
@@ -643,7 +644,7 @@
                                     ),
                                 );
                             return (
-                                r(n),
+                                o(n),
                                 d(s),
                                 () => {
                                     t.cancel();
@@ -654,12 +655,12 @@
                             className: "flex flex-col w-full items-center self-center min-h-dvh md:h-dvh",
                             children: [
                                 (0, s.jsx)(Y, {
-                                    title: t("Group Invite Link"),
+                                    title: t("Group invite link"),
                                     onBackClicked: (e) => {
                                         e.stopPropagation(), n?.onEvent(Se.GroupInviteSettingsEvent.BackClicked);
                                     },
                                 }),
-                                n ? (0, s.jsx)(ze, { component: n }) : (0, s.jsx)("div", { className: "flex items-center h-full", children: (0, s.jsx)(o.P, {}) }),
+                                n ? (0, s.jsx)(ze, { component: n }) : (0, s.jsx)("div", { className: "flex items-center h-full", children: (0, s.jsx)(r.P, {}) }),
                                 l && (0, s.jsx)("div", { className: "flex items-center w-full px-4 ", children: (0, s.jsx)(Pe, { component: l }) }),
                             ],
                         })
@@ -681,7 +682,7 @@
                                     children: (0, s.jsxs)("div", {
                                         className: "flex flex-row items-center justify-between p-4",
                                         children: [
-                                            (0, s.jsx)("div", { className: "flex items-center gap-2", children: (0, s.jsxs)("div", { className: "flex flex-col h-10 justify-between", children: [(0, s.jsx)(r.x, { size: "body", weight: "medium", color: "text", children: t("Group link") }), (0, s.jsx)(r.x, { size: "subtext2", color: "gray700", children: t("Let external users request to join your group") })] }) }),
+                                            (0, s.jsx)("div", { className: "flex items-center gap-2", children: (0, s.jsxs)("div", { className: "flex flex-col h-10 justify-between", children: [(0, s.jsx)(o.x, { size: "body", weight: "medium", color: "text", children: t("Group link") }), (0, s.jsx)(o.x, { size: "subtext2", color: "gray700", children: t("Let external users request to join your group") })] }) }),
                                             (0, s.jsx)("div", {
                                                 className: "flex items-center gap-2",
                                                 children: (0, s.jsx)(Ne.r, {
@@ -694,7 +695,7 @@
                                         ],
                                     }),
                                 }),
-                                n.isGroupInviteEnabled && (0, s.jsx)("div", { className: "my-2 rounded-xl bg-gray-0 cursor-pointer w-full group hover:bg-gray-50", onClick: i, children: (0, s.jsxs)("div", { className: "flex flex-row items-center justify-between p-4 gap-4", children: [(0, s.jsxs)("div", { className: "flex items-center gap-2", children: [(0, s.jsx)(p.Z, { className: "shrink-0" }), (0, s.jsx)(r.x, { numberOfLines: 1, children: n.inviteUrl })] }), (0, s.jsx)("div", { className: "flex items-center gap-2 shrink-0", children: (0, s.jsx)(r.x, { size: "body", color: "gray500", className: "group-hover:text-blue-600", children: t("Copy") }) })] }) }),
+                                n.isGroupInviteEnabled && (0, s.jsx)("div", { className: "my-2 rounded-xl bg-gray-0 cursor-pointer w-full group hover:bg-gray-50", onClick: i, children: (0, s.jsxs)("div", { className: "flex flex-row items-center justify-between p-4 gap-4", children: [(0, s.jsxs)("div", { className: "flex items-center gap-2", children: [(0, s.jsx)(p.Z, { className: "shrink-0" }), (0, s.jsx)(o.x, { numberOfLines: 1, children: n.inviteUrl })] }), (0, s.jsx)("div", { className: "flex items-center gap-2 shrink-0", children: (0, s.jsx)(o.x, { size: "body", color: "gray500", className: "group-hover:text-blue-600", children: t("Copy") }) })] }) }),
                             ],
                         }),
                     });
@@ -708,7 +709,7 @@
                             },
                             [e],
                         );
-                    if (n.contents === Me.ConversationInfoContents.Loading) return (0, s.jsx)(o.P, {});
+                    if (n.contents === Me.ConversationInfoContents.Loading) return (0, s.jsx)(r.P, {});
                     if (!(n.contents instanceof Me.ConversationInfoContents.Loaded)) return null;
                     const l = n.contents.memberRequestSize;
                     return l
@@ -720,14 +721,14 @@
                                       (0, s.jsxs)("div", {
                                           className: "flex flex-row items-center justify-between px-4 pb-2",
                                           children: [
-                                              (0, s.jsx)(r.x, { color: "gray700", children: t("Pending requests") }),
+                                              (0, s.jsx)(o.x, { color: "gray700", children: t("Pending requests") }),
                                               l > 3 &&
                                                   (0, s.jsx)("button", {
                                                       type: "button",
                                                       onClick: () => {
                                                           e.onEvent(Me.ConversationInfoEvent.MembershipRequestButtonClicked);
                                                       },
-                                                      children: (0, s.jsx)(r.x, { color: "primary", children: t("See all ({number})", { number: l }) }),
+                                                      children: (0, s.jsx)(o.x, { color: "primary", children: t("See all ({number})", { number: l }) }),
                                                   }),
                                           ],
                                       }),
@@ -745,12 +746,12 @@
                     n = (0, xe.v)(),
                     i = (0, ue.k)(),
                     a = (0, he.m)();
-                return "" !== e && i ? (0, s.jsx)(te, { id: e }) : "" !== e && t ? (0, s.jsx)(H, { id: e }) : "" !== e && n ? (0, s.jsx)(re, { id: e }) : "" !== e && a ? (0, s.jsx)(Re, { id: e }) : "" !== e ? (0, s.jsx)(Le, { id: e }) : (0, s.jsxs)("div", { className: "flex flex-col h-dvh w-full justify-center items-center flex-grow gap-2", children: [(0, s.jsx)("div", { className: "text-[76px] mb-10", children: (0, s.jsx)(ye.Z, { className: "rotate-[8.29deg]" }) }), (0, s.jsx)(r.x, { size: "title4", weight: "medium", children: "Select a message" }), (0, s.jsx)(r.x, { size: "body", color: "gray700", weight: "normal", children: "To start chatting" })] });
+                return "" !== e && i ? (0, s.jsx)(te, { id: e }) : "" !== e && t ? (0, s.jsx)(H, { id: e }) : "" !== e && n ? (0, s.jsx)(oe, { id: e }) : "" !== e && a ? (0, s.jsx)(Re, { id: e }) : "" !== e ? (0, s.jsx)(Le, { id: e }) : (0, s.jsxs)("div", { className: "flex flex-col h-dvh w-full justify-center items-center flex-grow gap-2", children: [(0, s.jsx)("div", { className: "text-[76px] mb-10", children: (0, s.jsx)(ye.Z, { className: "rotate-[8.29deg]" }) }), (0, s.jsx)(o.x, { size: "title4", weight: "medium", children: "Select a message" }), (0, s.jsx)(o.x, { size: "body", color: "gray700", weight: "normal", children: "To start chatting" })] });
             }
             function Le({ id: e }) {
                 const [t, n] = (0, c.useState)(null),
                     a = (0, C.n)(),
-                    r = (0, y.s)();
+                    o = (0, y.s)();
                 return (
                     (0, c.useEffect)(() => {
                         const t = new i.com.x.export.CancellationSignal(),
@@ -758,11 +759,11 @@
                                 i.com.x.models.dm.XConversationId.Companion.fromStringRequired(e),
                                 new i.com.x.dms.chat.DmCallbacks(
                                     () => {
-                                        r.toInbox();
+                                        o.toInbox();
                                     },
                                     () => {},
                                     () => {
-                                        r.toConversationInfo(e);
+                                        o.toConversationInfo(e);
                                     },
                                     () => {},
                                     () => {},
@@ -775,15 +776,15 @@
                                 t.cancel();
                             }
                         );
-                    }, [a, e, r]),
-                    t ? (0, s.jsx)(Ue, { component: t }) : (0, s.jsx)("div", { className: "w-full h-dvh flex justify-center items-center", children: (0, s.jsx)(o.P, {}) })
+                    }, [a, e, o]),
+                    t ? (0, s.jsx)(Ue, { component: t }) : (0, s.jsx)("div", { className: "w-full h-dvh flex justify-center items-center", children: (0, s.jsx)(r.P, {}) })
                 );
             }
             function Ue({ component: e }) {
                 const t = (0, z._)(e.state),
                     { t: n } = (0, a.$G)(),
                     i = (0, c.useRef)(null),
-                    [o, m] = (0, c.useState)(0),
+                    [r, m] = (0, c.useState)(0),
                     x = (0, c.useCallback)(
                         (t) => {
                             e.composer.onEvent(new Te.OnFileAttached(t));
@@ -812,21 +813,21 @@
                             }
                         );
                     }, []),
-                    (0, s.jsxs)("div", { className: "flex flex-col h-dvh flex-grow relative", onDragOver: v, onDragLeave: p, onDrop: f, children: [h && (0, s.jsx)("div", { className: "absolute inset-0 bg-brand/10 border-2 border-dashed border-brand z-50 flex items-center justify-center", children: (0, s.jsx)(r.x, { size: "subtext1", weight: "medium", color: "brand", children: n("Drop file to attach") }) }), (0, s.jsx)(we, { component: e }), (0, s.jsx)("div", { className: "flex-1 overflow-hidden isolate", children: (0, s.jsx)(ce.Bu, { children: (0, s.jsx)(le.r, { component: e, isTypingIndicatorShown: !!t.typingIndicatorItem, composerHeight: o }) }) }), (0, s.jsxs)("div", { className: "absolute bottom-0 left-0 right-[11px] isolate", ref: i, children: [t.typingIndicatorItem && (0, s.jsx)(Ae.y, { typingIndicatorItem: t.typingIndicatorItem }), t.isReadOnly ? (0, s.jsx)("div", { className: "p-4 border-t border-gray-200 bg-gray-50", children: (0, s.jsx)(r.x, { size: "body", color: "gray700", className: "text-center", children: "RemovedFromGroup" === t.readOnlyReason?.name ? n("You can no longer send messages in this conversation because you were removed from the group.") : "LatestCKeyFailure" === t.readOnlyReason?.name ? n("You can no longer send messages in this conversation due to a security verification failure.") : n("This conversation is currently in read-only mode.") }) }) : (0, s.jsx)(d.a, { component: e, showingMentionPicker: t.showingMentionPicker }), (0, s.jsx)(l.r, { to: "bottom", className: "-z-10", strength: t.typingIndicatorItem ? 7 : 5 })] })] })
+                    (0, s.jsxs)("div", { className: "flex flex-col h-dvh flex-grow relative", onDragOver: v, onDragLeave: p, onDrop: f, children: [h && (0, s.jsx)("div", { className: "absolute inset-0 bg-brand/10 border-2 border-dashed border-brand z-50 flex items-center justify-center", children: (0, s.jsx)(o.x, { size: "subtext1", weight: "medium", color: "brand", children: n("Drop file to attach") }) }), (0, s.jsx)(we, { component: e }), (0, s.jsx)("div", { className: "flex-1 overflow-hidden isolate", children: (0, s.jsx)(ce.Bu, { children: (0, s.jsx)(le.r, { component: e, isTypingIndicatorShown: !!t.typingIndicatorItem, composerHeight: r }) }) }), (0, s.jsxs)("div", { className: "absolute bottom-0 left-0 right-[11px] isolate", ref: i, children: [t.typingIndicatorItem && (0, s.jsx)(Ae.y, { typingIndicatorItem: t.typingIndicatorItem }), t.isReadOnly ? (0, s.jsx)("div", { className: "p-4 border-t border-gray-200 bg-gray-50", children: (0, s.jsx)(o.x, { size: "body", color: "gray700", className: "text-center", children: "RemovedFromGroup" === t.readOnlyReason?.name ? n("You can no longer send messages in this conversation because you were removed from the group.") : "LatestCKeyFailure" === t.readOnlyReason?.name ? n("You can no longer send messages in this conversation due to a security verification failure.") : n("This conversation is currently in read-only mode.") }) }) : (0, s.jsx)(d.a, { component: e, showingMentionPicker: t.showingMentionPicker }), (0, s.jsx)(l.r, { to: "bottom", className: "-z-10", strength: t.typingIndicatorItem ? 7 : 5 })] })] })
                 );
             }
         },
         630086: (e, t, n) => {
-            n.d(t, { I: () => l, R: () => o });
+            n.d(t, { I: () => l, R: () => r });
             var s = n(552322),
                 i = n(52053),
                 a = n(332161),
-                r = n(31674);
-            function o({ icon: e, destructive: t, onClick: n, title: r, value: o, showChevron: l = !1 }) {
-                return (0, s.jsx)("div", { className: "rounded-xl bg-gray-0 cursor-pointer w-full", onClick: n, children: (0, s.jsxs)("div", { className: "flex flex-row items-center justify-between px-4 py-3", children: [(0, s.jsxs)("div", { className: `py-px flex items-center gap-3 ${t && "text-red-500"}`, children: [e, (0, s.jsx)(a.x, { size: "body", weight: "normal", color: t ? "red500" : "text", children: r })] }), (0, s.jsxs)("div", { className: "flex items-center gap-3", children: [o && (0, s.jsx)(a.x, { size: "body", color: "text", weight: "normal", children: o }), l && (0, s.jsx)(i.Z, { className: "text-gray-700" })] })] }) });
+                o = n(31674);
+            function r({ icon: e, destructive: t, onClick: n, title: o, value: r, showChevron: l = !1 }) {
+                return (0, s.jsx)("div", { className: "rounded-xl bg-gray-0 cursor-pointer w-full", onClick: n, children: (0, s.jsxs)("div", { className: "flex flex-row items-center justify-between px-4 py-3", children: [(0, s.jsxs)("div", { className: `py-px flex items-center gap-3 ${t && "text-red-500"}`, children: [e, (0, s.jsx)(a.x, { size: "body", weight: "normal", color: t ? "red500" : "text", children: o })] }), (0, s.jsxs)("div", { className: "flex items-center gap-3", children: [r && (0, s.jsx)(a.x, { size: "body", color: "text", weight: "normal", children: r }), l && (0, s.jsx)(i.Z, { className: "text-gray-700" })] })] }) });
             }
             function l({ children: e, className: t }) {
-                return (0, s.jsx)("div", { className: (0, r.cn)("flex flex-col w-full [&>*]:rounded-none [&>*]:my-0 [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-gray-100 [&>*:first-child]:rounded-t-xl [&>*:last-child]:rounded-b-xl", t), children: e });
+                return (0, s.jsx)("div", { className: (0, o.cn)("flex flex-col w-full [&>*]:rounded-none [&>*]:my-0 [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-gray-100 [&>*:first-child]:rounded-t-xl [&>*:last-child]:rounded-b-xl", t), children: e });
             }
         },
         238750: (e, t, n) => {
@@ -834,8 +835,8 @@
             var s = n(552322),
                 i = n(159603),
                 a = n(983706),
-                r = n(202784),
-                o = n(110241),
+                o = n(202784),
+                r = n(110241),
                 l = n(14269),
                 c = n(52053),
                 d = n(830806),
@@ -858,7 +859,7 @@
             const E = i.com.x.dms.convlist.ConversationListEvent;
             function S({ previewWithMetadata: e, actionsDialog: t, onEvent: n, children: i }) {
                 const { t: a } = (0, I.$G)(),
-                    r = t?.actions
+                    o = t?.actions
                         .asJsReadonlyArrayView()
                         .map((t) =>
                             ((e, t, n, i) => {
@@ -891,7 +892,7 @@
                         n(s);
                     },
                     trigger: i,
-                    items: r || [],
+                    items: o || [],
                     onClick: (e) => e.stopPropagation(),
                 });
             }
@@ -900,9 +901,9 @@
                     const t = e.preview.latestMessagePreview,
                         n = e.metadata.usersByIdAllTime.asJsReadonlyMapView(),
                         a = n.get(t.sender)?.displayName,
-                        r = e.isGroup && !t.isSent && !!a,
-                        o = [];
-                    if (t.messageText) r && o.push((0, s.jsx)(v.x, { as: "span", color: "inherit", size: "inherit", weight: "bold", children: `${a}: ` }, 1)), o.push((0, s.jsx)(v.x, { as: "span", color: "inherit", size: "inherit", weight: "inherit", children: t.messageText }, 2));
+                        o = e.isGroup && !t.isSent && !!a,
+                        r = [];
+                    if (t.messageText) o && r.push((0, s.jsx)(v.x, { as: "span", color: "inherit", size: "inherit", weight: "bold", children: `${a}: ` }, 1)), r.push((0, s.jsx)(v.x, { as: "span", color: "inherit", size: "inherit", weight: "inherit", children: t.messageText }, 2));
                     else if (t.withAttachmentType) {
                         const e = ((e) => {
                             if (e instanceof i.com.x.dms.MessageAttachmentType.UrlCard || e instanceof i.com.x.dms.MessageAttachmentType.UnifiedCard) return "a link";
@@ -931,12 +932,12 @@
                             }
                             return t;
                         })(t.withAttachmentType);
-                        r ? (o.push((0, s.jsx)(v.x, { as: "span", color: "inherit", size: "inherit", weight: "inherit", children: a }, 3)), o.push((0, s.jsx)(v.x, { as: "span", color: "inherit", size: "inherit", weight: "inherit", children: ` sent ${e}` }, 4))) : o.push((0, s.jsx)(v.x, { as: "span", color: "inherit", size: "inherit", weight: "inherit", children: `Sent ${e}` }, 5));
+                        o ? (r.push((0, s.jsx)(v.x, { as: "span", color: "inherit", size: "inherit", weight: "inherit", children: a }, 3)), r.push((0, s.jsx)(v.x, { as: "span", color: "inherit", size: "inherit", weight: "inherit", children: ` sent ${e}` }, 4))) : r.push((0, s.jsx)(v.x, { as: "span", color: "inherit", size: "inherit", weight: "inherit", children: `Sent ${e}` }, 5));
                     }
-                    return o;
+                    return r;
                 },
                 R = i.com.x.dms.ReadByOthersIndicator,
-                z = ({ onEvent: e, previewWithMetadata: t, actionsDialog: n, isSelected: a, withSeparator: r = !1, isSearch: o, isPinned: j }) => {
+                z = ({ onEvent: e, previewWithMetadata: t, actionsDialog: n, isSelected: a, withSeparator: o = !1, isSearch: r, isPinned: j }) => {
                     const w = t.preview?.timestampValue,
                         b = t.metadata.title instanceof i.com.x.dms.model.DmTitleState.OneToOne,
                         C = (0, s.jsx)("div", {
@@ -944,35 +945,35 @@
                             children: (0, s.jsxs)("div", {
                                 className: `select-none flex flex-row  px-1 gap-2 rounded-lg hover:bg-gray-100 ${a && "bg-gray-0"} transition-colors duration-100 cursor-pointer`,
                                 children: [
-                                    t.isUnreadByMe && !o ? (0, s.jsx)("div", { className: "flex items-center", children: (0, s.jsx)(l.Z, { width: "14", height: "14", className: "text-blue-500" }) }) : (0, s.jsx)("div", { className: "w-[14px] flex-shrink-0" }),
-                                    (0, s.jsxs)("div", { style: { transitionTimingFunction: "cubic-bezier(0, 0.5, 0.6, 1)" }, className: "flex items-center grow gap-3 rounded-lg  transition-colors duration-100", children: [(0, s.jsx)(p.x, { avatarSize: "xxLarge", titleState: t.metadata.title, onCustomAvatarNeedsResolving: (n) => e(new i.com.x.dms.convlist.ConversationListEvent.CustomAvatarNeedsResolving(t.conversationId, n)), isInlineFacepile: !0 }), (0, s.jsxs)("div", { className: "flex-1 flex-row flex self-stretch py-2 pb-3 border-b " + (r ? "border-gray-50" : "border-transparent"), children: [(0, s.jsxs)("div", { className: "flex-1 gap-5", children: [(0, s.jsx)(h.R, { name: t.metadata.title.title, badges: b ? (0, g.r)(t.metadata.title.otherUser) : void 0, screenName: b ? t.metadata.title.otherUser?.screenName : void 0 }), (0, s.jsx)(v.x, { color: "gray700", weight: t.isUnreadByMe ? "bold" : "normal", numberOfLines: 2, className: "break-all min-h-[2.5rem]", children: (0, s.jsx)(M, { previewWithMetadata: t }) })] }), (0, s.jsxs)("div", { className: "flex flex-col items-end", children: [(0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [(0, s.jsx)(v.x, { size: "subtext1", color: "gray700", children: w && (0, s.jsx)(f.Q, { timestamp: w }) }), (0, s.jsx)(c.Z, { width: "20", height: "20", className: "text-gray-300 -mr-1" })] }), (0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [t.isMuted && (0, s.jsx)(d.Z, { width: "14", height: "14", className: "text-gray-300" }), j && (0, s.jsx)(m.Z, { width: "14", height: "14", className: "text-gray-300" }), t.showReadByOthersIndicator === R.Read && (0, s.jsx)(x.Z, { width: "14", height: "14", className: "text-gray-300" }), t.showReadByOthersIndicator === R.Unread && (0, s.jsx)(u.Z, { width: "14", height: "14", className: "text-gray-300" })] })] })] })] }),
+                                    t.isUnreadByMe && !r ? (0, s.jsx)("div", { className: "flex items-center", children: (0, s.jsx)(l.Z, { width: "14", height: "14", className: "text-blue-500" }) }) : (0, s.jsx)("div", { className: "w-[14px] flex-shrink-0" }),
+                                    (0, s.jsxs)("div", { style: { transitionTimingFunction: "cubic-bezier(0, 0.5, 0.6, 1)" }, className: "flex items-center grow gap-3 rounded-lg  transition-colors duration-100", children: [(0, s.jsx)(p.x, { avatarSize: "xxLarge", titleState: t.metadata.title, onCustomAvatarNeedsResolving: (n) => e(new i.com.x.dms.convlist.ConversationListEvent.CustomAvatarNeedsResolving(t.conversationId, n)), isInlineFacepile: !0 }), (0, s.jsxs)("div", { className: "flex-1 flex-row flex self-stretch py-2 pb-3 border-b " + (o ? "border-gray-50" : "border-transparent"), children: [(0, s.jsxs)("div", { className: "flex-1 gap-5", children: [(0, s.jsx)(h.R, { name: t.metadata.title.title, badges: b ? (0, g.r)(t.metadata.title.otherUser) : void 0, screenName: b ? t.metadata.title.otherUser?.screenName : void 0 }), (0, s.jsx)(v.x, { color: "gray700", weight: t.isUnreadByMe ? "bold" : "normal", numberOfLines: 2, className: "break-all min-h-[2.5rem]", children: (0, s.jsx)(M, { previewWithMetadata: t }) })] }), (0, s.jsxs)("div", { className: "flex flex-col items-end", children: [(0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [(0, s.jsx)(v.x, { size: "subtext1", color: "gray700", children: w && (0, s.jsx)(f.Q, { timestamp: w }) }), (0, s.jsx)(c.Z, { width: "20", height: "20", className: "text-gray-300 -mr-1" })] }), (0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [t.isMuted && (0, s.jsx)(d.Z, { width: "14", height: "14", className: "text-gray-300" }), j && (0, s.jsx)(m.Z, { width: "14", height: "14", className: "text-gray-300" }), t.showReadByOthersIndicator === R.Read && (0, s.jsx)(x.Z, { width: "14", height: "14", className: "text-gray-300" }), t.showReadByOthersIndicator === R.Unread && (0, s.jsx)(u.Z, { width: "14", height: "14", className: "text-gray-300" })] })] })] })] }),
                                 ],
                             }),
                         });
-                    return o ? C : (0, s.jsx)(S, { previewWithMetadata: t, actionsDialog: n, onEvent: e, children: C });
+                    return r ? C : (0, s.jsx)(S, { previewWithMetadata: t, actionsDialog: n, onEvent: e, children: C });
                 };
             var P = n(664177);
             const A = ({ onEvent: e, isSearch: t, conversations: n, actionsDialog: l }) => {
-                const c = (0, o.a)(),
-                    d = (0, r.useRef)(null),
-                    m = (0, r.useRef)({ start: 0, end: 0 }),
-                    x = (0, r.useMemo)(() => [...n].sort((e) => (e.isPinned ? -1 : 1)), [n]),
-                    u = (0, r.useCallback)((e) => (l?.convId.id === e ? l : null), [l]),
-                    h = (0, r.useCallback)(() => {
+                const c = (0, r.a)(),
+                    d = (0, o.useRef)(null),
+                    m = (0, o.useRef)({ start: 0, end: 0 }),
+                    x = (0, o.useMemo)(() => [...n].sort((e) => (e.isPinned ? -1 : 1)), [n]),
+                    u = (0, o.useCallback)((e) => (l?.convId.id === e ? l : null), [l]),
+                    h = (0, o.useCallback)(() => {
                         const t = d.current;
                         if (!t) return;
                         const { start: n, end: s } = m.current,
                             a = t.findStartIndex(),
-                            r = t.findEndIndex();
-                        if (n !== a || s !== r) {
-                            const t = i.kotlin.collections.KtList.fromJsArray(x.slice(a, r + 1).map((e) => e.conversationId));
-                            e(new i.com.x.dms.convlist.ConversationListEvent.VisibleConversationIdsChanged(t)), (m.current = { start: a, end: r });
+                            o = t.findEndIndex();
+                        if (n !== a || s !== o) {
+                            const t = i.kotlin.collections.KtList.fromJsArray(x.slice(a, o + 1).map((e) => e.conversationId));
+                            e(new i.com.x.dms.convlist.ConversationListEvent.VisibleConversationIdsChanged(t)), (m.current = { start: a, end: o });
                         }
                     }, [e, x.slice]),
-                    v = (0, r.useCallback)(
+                    v = (0, o.useCallback)(
                         (n, a) => {
-                            const r = n.conversationId.id === c,
-                                o = a + 1 < x.length && x[a + 1]?.conversationId.id === c;
+                            const o = n.conversationId.id === c,
+                                r = a + 1 < x.length && x[a + 1]?.conversationId.id === c;
                             return (0, s.jsx)(
                                 P.E.div,
                                 {
@@ -981,7 +982,7 @@
                                         const t = new i.com.x.dms.convlist.ConversationListEvent.RowClicked(n.conversationId, n.preview?.lastReadSequenceNumber);
                                         e(t);
                                     },
-                                    children: (0, s.jsx)(z, { previewWithMetadata: n, actionsDialog: u(n.preview?.conversationId.id || ""), onEvent: e, isSelected: r, withSeparator: !o && !r, isSearch: t, isPinned: n.isPinned }),
+                                    children: (0, s.jsx)(z, { previewWithMetadata: n, actionsDialog: u(n.preview?.conversationId.id || ""), onEvent: e, isSelected: o, withSeparator: !r && !o, isSearch: t, isPinned: n.isPinned }),
                                 },
                                 n.conversationId.id,
                             );
@@ -992,14 +993,17 @@
             };
         },
         450683: (e, t, n) => {
-            n.d(t, { P: () => r });
+            n.d(t, { P: () => o });
             var s = n(552322),
                 i = n(880605);
-            function a() {
-                return (0, s.jsx)("div", { className: "px-1", children: (0, s.jsx)("div", { className: "flex flex-row gap-2 px-1", children: (0, s.jsxs)("div", { className: "flex items-center grow gap-3", children: [(0, s.jsx)(i.O, { className: "h-10 w-10 rounded-full" }), (0, s.jsx)("div", { className: "flex-1 flex flex-row self-stretch py-2 pb-3 border-b border-gray-50", children: (0, s.jsxs)("div", { className: "flex-1 flex flex-col gap-1", children: [(0, s.jsx)(i.O, { className: "h-5 w-full" }), (0, s.jsx)(i.O, { className: "h-4 w-full" }), (0, s.jsx)(i.O, { className: "h-4 w-full" })] }) })] }) }) });
+            function a({ index: e }) {
+                const t = 50 + 10 * Math.sin(e) + "%",
+                    n = 70 + 10 * Math.cos(e) + "%",
+                    a = 50 + 20 * Math.cos(e) + "%";
+                return (0, s.jsx)("div", { className: "px-1", children: (0, s.jsx)("div", { className: "flex flex-row gap-2 px-1", children: (0, s.jsxs)("div", { className: "flex items-center grow gap-3", children: [(0, s.jsx)(i.O, { className: "h-10 w-10 rounded-full" }), (0, s.jsx)("div", { className: "flex-1 flex flex-row self-stretch py-2 pb-3 border-b border-gray-50", children: (0, s.jsxs)("div", { className: "flex-1 flex flex-col gap-1", children: [(0, s.jsx)(i.O, { className: "h-5", style: { width: t } }), (0, s.jsx)(i.O, { className: "h-4", style: { width: n } }), (0, s.jsx)(i.O, { className: "h-4", style: { width: a } })] }) })] }) }) });
             }
-            function r() {
-                return (0, s.jsx)("div", { className: "flex flex-col w-full min-h-screen", children: Array.from({ length: Math.ceil(window.innerHeight / 80) }).map((e, t) => (0, s.jsx)(a, {}, t)) });
+            function o() {
+                return (0, s.jsx)("div", { className: "flex flex-col w-full min-h-screen", children: Array.from({ length: Math.ceil(window.innerHeight / 80) }).map((e, t) => (0, s.jsx)(a, { index: t }, t)) });
             }
         },
         897995: (e, t, n) => {
@@ -1007,8 +1011,8 @@
             var s = n(552322),
                 i = n(993165),
                 a = n(332161),
-                r = n(887491),
-                o = n(159603);
+                o = n(887491),
+                r = n(159603);
             const l = ({ component: e, dialogParams: t }) =>
                 (0, s.jsxs)("div", {
                     className: "p-5 rounded-2xl border-2 border-gray-100 bg-gray-0 absolute bottom-4 left-4 right-4 flex flex-col gap-2 z-10",
@@ -1016,9 +1020,9 @@
                         (0, s.jsx)(i.z, {
                             className: "absolute top-2.5 right-2.5",
                             variant: "primaryText",
-                            icon: (0, s.jsx)(r.Z, {}),
+                            icon: (0, s.jsx)(o.Z, {}),
                             onClick: () => {
-                                e.onEvent(o.com.x.dms.convlist.ConversationListEvent.DismissBottomDialog);
+                                e.onEvent(r.com.x.dms.convlist.ConversationListEvent.DismissBottomDialog);
                             },
                         }),
                         (0, s.jsx)(a.x, { size: "body", weight: "bold", children: "Daily Verification" }),
@@ -1027,7 +1031,7 @@
                             className: "h-11",
                             variant: "primaryFilled",
                             onClick: () => {
-                                e.onEvent(new o.com.x.dms.convlist.ConversationListEvent.ClickPinReminderDialog(t));
+                                e.onEvent(new r.com.x.dms.convlist.ConversationListEvent.ClickPinReminderDialog(t));
                             },
                             children: (0, s.jsx)(a.x, { size: "body", weight: "bold", color: "background", children: "Enter PIN" }),
                         }),
@@ -1039,8 +1043,8 @@
             var s = n(552322),
                 i = n(57478),
                 a = n(332161),
-                r = n(350311),
-                o = n(336984),
+                o = n(350311),
+                r = n(336984),
                 l = n(318063),
                 c = n(993165),
                 d = n(429804),
@@ -1074,17 +1078,17 @@
                     (0, s.jsx)(s.Fragment, {
                         children: n.map((n) => {
                             const c = l.get(n.userId)?.asJsReadonlyArrayView();
-                            return (0, s.jsxs)("div", { className: "flex flex-row w-full gap-3 px-4 items-center rounded-xl bg-gray-0", children: [(0, s.jsxs)("div", { className: "flex-1 flex gap-3 items-center py-3", children: [(0, s.jsx)(r.s, { url: n.user?.profileImageUrl, size: "medium" }), (0, s.jsx)(i.R, { name: n.user?.displayName || "", badges: (0, o.r)(n.user), weight: "normal" }), n.isAdmin && (0, s.jsx)("div", { className: "p-1 rounded bg-gray-200", children: (0, s.jsx)(a.x, { size: "subtext3", children: "Admin" }) })] }), (0, s.jsx)(v, { participant: n, menuItems: c, handleParticipantClicked: e, handleParticipantMenuButtonClicked: t })] }, n.userId.userIdString);
+                            return (0, s.jsxs)("div", { className: "flex flex-row w-full gap-3 px-4 items-center rounded-xl bg-gray-0", children: [(0, s.jsxs)("div", { className: "flex-1 flex gap-3 items-center py-3", children: [(0, s.jsx)(o.s, { url: n.user?.profileImageUrl, size: "medium" }), (0, s.jsx)(i.R, { name: n.user?.displayName || "", badges: (0, r.r)(n.user), weight: "normal" }), n.isAdmin && (0, s.jsx)("div", { className: "p-1 rounded bg-gray-200", children: (0, s.jsx)(a.x, { size: "subtext3", children: "Admin" }) })] }), (0, s.jsx)(v, { participant: n, menuItems: c, handleParticipantClicked: e, handleParticipantMenuButtonClicked: t })] }, n.userId.userIdString);
                         }),
                     });
         },
         759746: (e, t, n) => {
-            n.d(t, { M: () => o });
+            n.d(t, { M: () => r });
             var s = n(552322),
                 i = n(789764),
                 a = n(350311);
-            const r = ({ firstUrl: e, resolution: t, secondUrl: n, size: i = "xxLarge" }) => {
-                    const r = ((e) => {
+            const o = ({ firstUrl: e, resolution: t, secondUrl: n, size: i = "xxLarge" }) => {
+                    const o = ((e) => {
                             switch (e) {
                                 case "fill":
                                     return "33.33%";
@@ -1094,7 +1098,7 @@
                                     return "8px";
                             }
                         })(i),
-                        o = ((e) => ("fill" === e ? "2%" : "1px"))(i),
+                        r = ((e) => ("fill" === e ? "2%" : "1px"))(i),
                         l = ((e) => {
                             switch (e) {
                                 case "fill":
@@ -1105,9 +1109,9 @@
                                     return "medium";
                             }
                         })(i);
-                    return (0, s.jsxs)("div", { className: "flex rounded-lg", style: { marginTop: `calc(${r} - ${o} * 2)` }, children: [(0, s.jsx)("div", { className: "rounded-full bg-background", style: { zIndex: 2, padding: o }, children: (0, s.jsx)(a.s, { url: e, size: l, resolution: t }) }), (0, s.jsx)("div", { style: { marginLeft: `calc(-${r} - ${o} * 2)`, marginTop: `calc(-${r} + ${o} * 2)`, marginBottom: r }, children: (0, s.jsx)(a.s, { url: n, size: l, resolution: t }) })] });
+                    return (0, s.jsxs)("div", { className: "flex rounded-lg", style: { marginTop: `calc(${o} - ${r} * 2)` }, children: [(0, s.jsx)("div", { className: "rounded-full bg-background", style: { zIndex: 2, padding: r }, children: (0, s.jsx)(a.s, { url: e, size: l, resolution: t }) }), (0, s.jsx)("div", { style: { marginLeft: `calc(-${o} - ${r} * 2)`, marginTop: `calc(-${o} + ${r} * 2)`, marginBottom: o }, children: (0, s.jsx)(a.s, { url: n, size: l, resolution: t }) })] });
                 },
-                o = ({ avatarSize: e, isInlineFacepile: t, resolution: n, users: o, withLink: l }) => {
+                r = ({ avatarSize: e, isInlineFacepile: t, resolution: n, users: r, withLink: l }) => {
                     const c = ((e) => {
                         switch (e) {
                             case "fill":
@@ -1119,11 +1123,11 @@
                         }
                     })(e);
                     if (t) {
-                        if (o.length >= 2) return (0, s.jsx)(r, { size: c, firstUrl: o[0]?.profileImageUrl, resolution: n, secondUrl: o[1]?.profileImageUrl });
-                        if (1 === o.length) return (0, s.jsx)(a.s, { url: o[0]?.profileImageUrl, size: e, resolution: n, withLink: l });
+                        if (r.length >= 2) return (0, s.jsx)(o, { size: c, firstUrl: r[0]?.profileImageUrl, resolution: n, secondUrl: r[1]?.profileImageUrl });
+                        if (1 === r.length) return (0, s.jsx)(a.s, { url: r[0]?.profileImageUrl, size: e, resolution: n, withLink: l });
                     }
-                    let d = o.map((e) => e?.profileImageUrl ?? "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png");
-                    return o.length <= 3 ? (0, s.jsx)(i.o, { urls: d, size: e, resolution: n, stackOrder: "descending" }) : ((d = d.slice(0, 3)), (0, s.jsx)(i.o, { urls: d, size: e, resolution: n, stackOrder: "overlap" }));
+                    let d = r.map((e) => e?.profileImageUrl ?? "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png");
+                    return r.length <= 3 ? (0, s.jsx)(i.o, { urls: d, size: e, resolution: n, stackOrder: "descending" }) : ((d = d.slice(0, 3)), (0, s.jsx)(i.o, { urls: d, size: e, resolution: n, stackOrder: "overlap" }));
                 };
         },
         32161: (e, t, n) => {
@@ -1131,26 +1135,26 @@
             var s = n(552322),
                 i = n(159603),
                 a = n(350311);
-            const r = ({ avatar: e, avatarSize: t, onCustomAvatarNeedsResolving: n, withLink: r }) => (e instanceof i.com.x.dms.model.MediaUriState.ResolvedMedia ? (0, s.jsx)(a.s, { url: e.uri, size: t, withLink: r }) : (e instanceof i.com.x.dms.model.MediaUriState.AvatarNeedsResolving && n(e), (0, s.jsx)(a.s, { size: t })));
-            var o = n(759746);
+            const o = ({ avatar: e, avatarSize: t, onCustomAvatarNeedsResolving: n, withLink: o }) => (e instanceof i.com.x.dms.model.MediaUriState.ResolvedMedia ? (0, s.jsx)(a.s, { url: e.uri, size: t, withLink: o }) : (e instanceof i.com.x.dms.model.MediaUriState.AvatarNeedsResolving && n(e), (0, s.jsx)(a.s, { size: t })));
+            var r = n(759746);
             const l = ({ avatarSize: e, isInlineFacepile: t, onCustomAvatarNeedsResolving: n, titleState: l, withLink: c }) => {
                 if (l instanceof i.com.x.dms.model.DmTitleState.OneToOne) return (0, s.jsx)(a.s, { url: l.otherUser?.profileImageUrl, size: e, screenName: l.otherUser?.screenName, withLink: c });
                 if (l instanceof i.com.x.dms.model.DmTitleState.Group) {
-                    if (l.avatarType instanceof i.com.x.dms.model.DmTitleGroupAvatarType.CustomAvatar) return (0, s.jsx)(r, { avatar: l.avatarType.image, avatarSize: e, onCustomAvatarNeedsResolving: n, withLink: c });
-                    if (l.avatarType instanceof i.com.x.dms.model.DmTitleGroupAvatarType.Facepile) return (0, s.jsx)(o.M, { avatarSize: e, isInlineFacepile: t, users: l.avatarType.users.asJsReadonlyArrayView(), withLink: c });
+                    if (l.avatarType instanceof i.com.x.dms.model.DmTitleGroupAvatarType.CustomAvatar) return (0, s.jsx)(o, { avatar: l.avatarType.image, avatarSize: e, onCustomAvatarNeedsResolving: n, withLink: c });
+                    if (l.avatarType instanceof i.com.x.dms.model.DmTitleGroupAvatarType.Facepile) return (0, s.jsx)(r.M, { avatarSize: e, isInlineFacepile: t, users: l.avatarType.users.asJsReadonlyArrayView(), withLink: c });
                 }
                 return null;
             };
         },
         350311: (e, t, n) => {
-            n.d(t, { j: () => r, s: () => o });
+            n.d(t, { j: () => o, s: () => r });
             var s = n(552322),
                 i = n(378364),
                 a = n(165272);
-            const r = "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
-                o = ({ url: e, size: t, resolution: n = "200x200", screenName: o, withLink: l }) => {
+            const o = "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                r = ({ url: e, size: t, resolution: n = "200x200", screenName: r, withLink: l }) => {
                     const c = !(0, a.F)() || "external";
-                    return (0, s.jsx)(i.q, { url: e || r, size: t, resolution: n, screenName: o, withLink: l ?? c });
+                    return (0, s.jsx)(i.q, { url: e || o, size: t, resolution: n, screenName: r, withLink: l ?? c });
                 };
         },
         346598: (e, t, n) => {
@@ -1158,16 +1162,16 @@
             var s = n(159603),
                 i = n(8974),
                 a = n(303676),
-                r = n(928220),
-                o = n(879922),
+                o = n(928220),
+                r = n(879922),
                 l = n(196594);
             const c = s.com.x.dms.util;
             class d extends s.com.x.dms.util.EntityParser {
                 doParse(e) {
-                    return s.kotlin.collections.KtList.fromJsArray([...(0, i.Z)(e).map(({ indices: e }) => new c.ParsedEntity.Email(...e)), ...(0, a.Z)(e).map(({ indices: e }) => new c.ParsedEntity.Hashtag(...e)), ...(0, r.Z)(e).map(({ indices: e }) => new c.ParsedEntity.Cashtag(...e)), ...(0, o.Z)(e).map(({ indices: e }) => new c.ParsedEntity.Mention(...e)), ...(0, l.Z)(e).map(({ indices: e }) => new c.ParsedEntity.Url(...e))]);
+                    return s.kotlin.collections.KtList.fromJsArray([...(0, i.Z)(e).map(({ indices: e }) => new c.ParsedEntity.Email(...e)), ...(0, a.Z)(e).map(({ indices: e }) => new c.ParsedEntity.Hashtag(...e)), ...(0, o.Z)(e).map(({ indices: e }) => new c.ParsedEntity.Cashtag(...e)), ...(0, r.Z)(e).map(({ indices: e }) => new c.ParsedEntity.Mention(...e)), ...(0, l.Z)(e).map(({ indices: e }) => new c.ParsedEntity.Url(...e))]);
                 }
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-b4a0aebf.fe04108a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-b4a0aebf.d6a1e3aa.js.map

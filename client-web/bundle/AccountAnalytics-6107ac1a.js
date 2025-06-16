@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.AccountAnalytics-6107ac1a", "icons/IconChevronDown-js"],
+    ["bundle.AccountAnalytics-6107ac1a", "icons/IconChevronRight-js", "icons/IconLayers-js"],
     {
         98538: (e, t, r) => {
             r.d(t, { Z: () => g });
@@ -51,8 +51,8 @@
                 u = r(392237);
             const d = (e) => {
                     const { columns: t, onNearEnd: r, onRowClick: u, rows: d, setSortOptions: g, sortOptions: f } = e,
-                        m = n.useRef(null),
-                        v = n.useMemo(() => t.reduce((e, t) => e + t.width, 0), [t]),
+                        v = n.useRef(null),
+                        m = n.useMemo(() => t.reduce((e, t) => e + t.width, 0), [t]),
                         b = n.useMemo(() => (0, s.Z)(r || i.Z), [r]);
                     n.useEffect(() => {
                         if (d.length) {
@@ -62,7 +62,7 @@
                                     },
                                     { threshold: 1 },
                                 ),
-                                { current: t } = m || {};
+                                { current: t } = v || {};
                             return (
                                 t && e.observe(t),
                                 () => {
@@ -70,7 +70,7 @@
                                 }
                             );
                         }
-                    }, [m, b, d.length]);
+                    }, [v, b, d.length]);
                     return n.createElement(
                         o.Z,
                         { style: h.tableContainer },
@@ -93,7 +93,7 @@
                                                         if (!t || !g) return;
                                                         g({ sortField: e, sortOrder: e === f?.sortField ? ("ASCENDING" === f?.sortOrder ? "DESCENDING" : "ASCENDING") : "DESCENDING" });
                                                     })(e.field, e.sortable),
-                                                style: { width: `${Math.floor((100 * e.width) / v)}%`, ...h.tableHeading },
+                                                style: { width: `${Math.floor((100 * e.width) / m)}%`, ...h.tableHeading },
                                             },
                                             n.createElement(c.ZP, { weight: "bold" }, e.label),
                                             e.field === f?.sortField && ("ASCENDING" === f?.sortOrder ? n.createElement(l.default, null) : n.createElement(a.default, null)),
@@ -107,7 +107,7 @@
                                 d.map((e, r) =>
                                     n.createElement(
                                         "tr",
-                                        { key: r, onClick: () => u(e), ref: r === d.length - 5 ? m : null, style: { ...h.row, ...(u && { cursor: "pointer" }) } },
+                                        { key: r, onClick: () => u(e), ref: r === d.length - 5 ? v : null, style: { ...h.row, ...(u && { cursor: "pointer" }) } },
                                         t.map((t, o) => n.createElement("td", { key: `${r}-${o}`, style: h.cell }, n.createElement(c.ZP, null, e[t.field]))),
                                     ),
                                 ),
@@ -121,20 +121,22 @@
             r.d(t, { Z: () => n });
             const n = r(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        487552: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => i });
+        58399: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => c });
             var n = r(202784),
                 o = r(890601),
                 l = r(783427),
-                a = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
+                a = r(717683),
+                s = r(347101);
+            const i = (e = {}) => {
+                const t = n.useContext(a.Z),
+                    { direction: r } = (0, l.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, t && s.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: r });
             };
-            s.metadata = { width: 24, height: 24 };
-            const i = s;
+            i.metadata = { width: 24, height: 24 };
+            const c = i;
         },
-        155353: (e, t, r) => {
+        275450: (e, t, r) => {
             r.r(t), r.d(t, { default: () => i });
             var n = r(202784),
                 o = r(890601),
@@ -142,7 +144,7 @@
                 a = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, l.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M2 8.5C2 7.12 3.12 6 4.5 6h11C16.88 6 18 7.12 18 8.5v11c0 1.38-1.12 2.5-2.5 2.5h-11C3.12 22 2 20.88 2 19.5v-11zM19.5 4c.28 0 .5.22.5.5v13.45c1.14-.23 2-1.24 2-2.45v-11C22 3.12 20.88 2 19.5 2h-11c-1.21 0-2.22.86-2.45 2H19.5z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const i = s;
@@ -419,4 +421,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-6107ac1a.44c046ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-6107ac1a.76cc08ca.js.map

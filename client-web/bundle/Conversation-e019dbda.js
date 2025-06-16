@@ -46,7 +46,7 @@
             (h.contextType = c.Z), (h.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
         280418: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => k });
+            o.r(t), o.d(t, { default: () => v });
             var n = o(202784),
                 r = o(325686),
                 i = o(107267),
@@ -71,18 +71,18 @@
                 P = n.createElement(u.default, null);
             function Z() {
                 const e = n.useMemo(() => n.createElement(_, null), []),
-                    t = n.useMemo(() => n.createElement(v, null), []);
+                    t = n.useMemo(() => n.createElement(k, null), []);
                 return n.createElement(r.Z, { style: I.navStyle }, n.createElement(l.Z, { leftControl: e, rightControl: t, title: g }));
             }
             function _() {
                 const e = (0, w.RQ)();
                 return n.createElement(d.ZP, { "aria-label": D, hoverLabel: b, icon: M, onPress: e, pullLeft: !0, type: "primaryText" });
             }
-            function v() {
+            function k() {
                 const e = (0, w.VD)();
                 return n.createElement(d.ZP, { "aria-label": T, hoverLabel: C, icon: P, onPress: e, type: "primaryText" });
             }
-            const k = function () {
+            const v = function () {
                     (0, f.useStickyViewNotify)(), (0, w.Jf)();
                     const { onViewportSet: e, viewport: t } = (function () {
                             const [e, t] = n.useState(),
@@ -489,7 +489,7 @@
             }
         },
         519125: (e, t, o) => {
-            o.d(t, { Mu: () => k, ZP: () => v });
+            o.d(t, { Mu: () => v, ZP: () => k });
             var n = o(662678),
                 r = o(769471),
                 i = o(337637),
@@ -514,7 +514,7 @@
             let P;
             const Z = Object.freeze({ Default: "ui_defaultLabel", TransparentCursor: "ui_transparentCursor" }),
                 _ = { ...(0, T.G)({}), [l.ZP.Tweet]: (0, D.Z)({ hideConversationControlsEducationText: !0, withMuteConversation: !0 }) },
-                v = ({ changeDropdownState: e, hideReplyContextMode: t, isCurrentUserRootAuthor: o, isReaderMode: n, isTransparentCursorsEnabled: i, replyDropdownSelection: a, rootTweetAuthorId: s, tweetTextSize: c, withFocalTweetMedia: D, withRuxInjections: T }) =>
+                k = ({ changeDropdownState: e, hideReplyContextMode: t, isCurrentUserRootAuthor: o, isReaderMode: n, isTransparentCursorsEnabled: i, replyDropdownSelection: a, rootTweetAuthorId: s, tweetTextSize: c, withFocalTweetMedia: D, withRuxInjections: T }) =>
                     (0, r.Z)({}, _, {
                         [l.ZP.SelfThreadTweetComposer]: y.Z,
                         [l.ZP.Tweet]: {
@@ -583,7 +583,7 @@
                         [l.ZP.TimelineCursor]: (0, m.Z)({ withRuxInjections: T }),
                         [l.ZP.ThreadHeader]: w.Z,
                     }),
-                k = ({ contextTweetId: e, contextualClientEventInfo: t, focalTweetId: o, promotedContent: r, showOnlyRelevantReplies: d, socialContext: c, topicFollowPrompt: h }) => {
+                v = ({ contextTweetId: e, contextualClientEventInfo: t, focalTweetId: o, promotedContent: r, showOnlyRelevantReplies: d, socialContext: c, topicFollowPrompt: h }) => {
                     const u = (e) => (e.type === l.ZP.Tweet && e.content.id === o) || (e.type === l.ZP.Tombstone && !!e.content && !!e.content.tweet && e.content.tweet.id === o);
                     return (o) => {
                         const m = (0, i.Z)(o, u);
@@ -624,7 +624,7 @@
                 R = (e, t) => ({ ...e, conversationPosition: { isStart: t, isEnd: !1, position: "ancestor" } });
         },
         927192: (e, t, o) => {
-            o.d(t, { Z: () => v });
+            o.d(t, { Z: () => k });
             var n = o(202784),
                 r = o(111677),
                 i = o.n(r),
@@ -698,7 +698,7 @@
                 }
             }
             (_.defaultProps = { withFocalTweetMedia: !0 }), (_.contextType = m.rC);
-            const v = T(_);
+            const k = T(_);
         },
         438965: (e, t, o) => {
             o.d(t, { FE: () => i, Hx: () => l, Oj: () => r, P3: () => d, QO: () => s, j: () => a });
@@ -719,7 +719,7 @@
                 };
         },
         62857: (e, t, o) => {
-            o.d(t, { Z: () => v });
+            o.d(t, { Z: () => k });
             var n = o(807896),
                 r = o(202784),
                 i = o(476984),
@@ -818,7 +818,7 @@
                     );
                 }
             }
-            const v = P(_);
+            const k = P(_);
         },
         26193: (e, t, o) => {
             o.d(t, { Z: () => n });
@@ -826,22 +826,24 @@
             const n = (0, o(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        o.e("icons.23"),
-                        o.e("icons.0"),
-                        o.e("icons.2"),
+                        o.e("icons.21"),
                         o.e("icons.16"),
-                        o.e("icons.19"),
                         o.e("icons.10"),
-                        o.e("icons.13"),
-                        o.e("icons.24"),
-                        o.e("icons.7"),
-                        o.e("icons.22"),
-                        o.e("icons.27"),
-                        o.e("icons.17"),
+                        o.e("icons.1"),
+                        o.e("icons.19"),
+                        o.e("icons.0"),
+                        o.e("icons.23"),
+                        o.e("icons.8"),
+                        o.e("icons.2"),
+                        o.e("icons.3"),
+                        o.e("icons.15"),
                         o.e("modules.common-e907d115"),
                         o.e("modules.common-e019dbda"),
-                        o.e("icons.21"),
-                        o.e("icons.18"),
+                        o.e("icons.7"),
+                        o.e("icons.9"),
+                        o.e("icons.24"),
+                        o.e("icons.13"),
+                        o.e("icons.29"),
                         o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                         o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                         o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -870,8 +872,8 @@
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         o.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                        o.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         o.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
-                        o.e("shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"),
                         o.e("loader.WideLayout-6107ac1a"),
                         o.e("loader.WideLayout-9f4db315"),
                     ]).then(o.bind(o, 130888)),
@@ -1005,4 +1007,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-e019dbda.dec64d1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-e019dbda.ef942b6a.js.map
