@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.PremiumJobs~ondemand.Verified-6107ac1a", "icons/IconChevronRight-js", "icons/IconStar-js"],
+    ["shared~bundle.PremiumJobs~ondemand.Verified-6107ac1a"],
     {
         322633: (e, l, a) => {
             a.d(l, { Z: () => t });
@@ -1596,34 +1596,6 @@
                         } catch (e) {}
                 };
         },
-        58399: (e, l, a) => {
-            a.r(l), a.d(l, { default: () => o });
-            var n = a(202784),
-                i = a(890601),
-                r = a(783427),
-                t = a(717683),
-                s = a(347101);
-            const u = (e = {}) => {
-                const l = n.useContext(t.Z),
-                    { direction: a } = (0, r.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, l && s.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: a });
-            };
-            u.metadata = { width: 24, height: 24 };
-            const o = u;
-        },
-        258292: (e, l, a) => {
-            a.r(l), a.d(l, { default: () => u });
-            var n = a(202784),
-                i = a(890601),
-                r = a(783427),
-                t = a(347101);
-            const s = (e = {}) => {
-                const { direction: l } = (0, r.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [t.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12.013 1l3.527 7.15 7.886 1.14-5.707 5.56 1.347 7.86L12.013 19 4.96 22.71l1.347-7.86L.6 9.29l7.886-1.14L12.013 1z" })) }, { writingDirection: l });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const u = s;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.PremiumJobs~ondemand.Verified-6107ac1a.e22a6b9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.PremiumJobs~ondemand.Verified-6107ac1a.7ad7a7aa.js.map

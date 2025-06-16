@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.PagedCarouselItemHandler", "icons/IconChevronRight-js"],
+    ["loader.PagedCarouselItemHandler", "icons/IconFeedback-js"],
     {
         64899: (e, t, r) => {
             r.d(t, { H: () => s });
@@ -30,27 +30,27 @@
                 },
                 b = (0, m.Z)()
                     .propsFromState(() => ({ community: C, hydratedTweet: h.Z.createHydratedTweetSelector(w) }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, u.zr)("QUOTE_TWEET_CONTAINER"), fetchCommunityIfNeeded: p.ZP.fetchOneIfNeeded }))(({ community: e, createLocalApiErrorHandler: t, fetchCommunityIfNeeded: r, hydratedTweet: u, onAvatarClick: m, onMediaClick: p, onPress: h, onScreenNameClick: w, tweetId: C, withBirdwatchPivot: b = !0, ...g }) => {
-                    const { featureSwitches: y, viewerUserId: E } = n.useContext(d.rC),
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, u.zr)("QUOTE_TWEET_CONTAINER"), fetchCommunityIfNeeded: p.ZP.fetchOneIfNeeded }))(({ community: e, createLocalApiErrorHandler: t, fetchCommunityIfNeeded: r, hydratedTweet: u, onAvatarClick: m, onMediaClick: p, onPress: h, onScreenNameClick: w, tweetId: C, withBirdwatchPivot: b = !0, ...y }) => {
+                    const { featureSwitches: E, viewerUserId: g } = n.useContext(d.rC),
                         _ = (0, l.z)(),
-                        x = u?.community_id_str;
+                        v = u?.community_id_str;
                     n.useEffect(() => {
-                        x && (0, c.Z)(e) && r(x).catch(t());
-                    }, [e, x, t, r]);
-                    const v = n.useCallback(
+                        v && (0, c.Z)(e) && r(v).catch(t());
+                    }, [e, v, t, r]);
+                    const x = n.useCallback(
                             (e) => {
                                 _.scribeAction("click"), h && h(e);
                             },
                             [h, _],
                         ),
                         Z = !!b,
-                        T = u && (0, i.D$)(u, E, e),
-                        k = T && (0, i.rl)(T);
-                    return n.createElement(s.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => y.isTrue("responsive_web_edit_tweet_enabled") || y.isTrue("subscriptions_feature_labs_1004") } }, n.createElement(a.Z, (0, o.Z)({}, g, { loggedInUserId: E, onAvatarClick: m, onMediaClick: p, onPress: v, onScreenNameClick: w, shouldShowAltLabelAlways: !0, socialContextProps: k, tweet: u, withBirdwatchPivot: Z })));
+                        k = u && (0, i.D$)(u, g, e),
+                        T = k && (0, i.rl)(k);
+                    return n.createElement(s.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => E.isTrue("responsive_web_edit_tweet_enabled") || E.isTrue("subscriptions_feature_labs_1004") } }, n.createElement(a.Z, (0, o.Z)({}, y, { loggedInUserId: g, onAvatarClick: m, onMediaClick: p, onPress: x, onScreenNameClick: w, shouldShowAltLabelAlways: !0, socialContextProps: T, tweet: u, withBirdwatchPivot: Z })));
                 });
         },
         562154: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => v });
+            r.r(t), r.d(t, { default: () => x });
             var o = r(459643),
                 n = r(942893),
                 s = r(351322),
@@ -80,12 +80,12 @@
                 w = r(301758),
                 C = r(71620),
                 b = r(668214),
-                g = r(836255),
-                y = r(960919);
-            const E = (e, t) => {
+                y = r(836255),
+                E = r(960919);
+            const g = (e, t) => {
                     const { entry: r } = t,
                         o = r.content.content.pagedCarouselFeedbackItem ? r.content.content.pagedCarouselFeedbackItem.content.tweet.id : void 0;
-                    return o ? g.Z.select(e, o) : void 0;
+                    return o ? y.Z.select(e, o) : void 0;
                 },
                 _ = (e) => {
                     const { applyReactionInstructions: t, createLocalApiErrorHandler: r, entry: o, processCallback: n, tweet: s } = e,
@@ -100,10 +100,10 @@
                         u = a.useMemo(() => (c ? a.createElement(w.Z, { shouldShowBorder: !1, tweetId: c }) : null), [c]);
                     return i && s ? a.createElement(p, { content: u, showLessOnClick: d, showLessText: i.showLessText, showMoreOnClick: l, showMoreText: i.showMoreText }) : null;
                 },
-                x = (0, b.Z)()
-                    .propsFromState(() => ({ tweet: E }))
-                    .propsFromActions(({ module: e }) => ({ applyReactionInstructions: e.applyReactionInstructions, createLocalApiErrorHandler: (0, C.zr)("PAGED_CAROUSEL_FEEDBACK_ITEM"), processCallback: y.Z }))(a.memo(_)),
-                v = s.iH({ component: x, getScribeDataItem: (e) => n.Z.getPagedCarouselTweetURTEntryItem(e), shouldDisplayBorder: (0, o.Z)(!1), isFocusable: (0, o.Z)(!0) }).getHandler();
+                v = (0, b.Z)()
+                    .propsFromState(() => ({ tweet: g }))
+                    .propsFromActions(({ module: e }) => ({ applyReactionInstructions: e.applyReactionInstructions, createLocalApiErrorHandler: (0, C.zr)("PAGED_CAROUSEL_FEEDBACK_ITEM"), processCallback: E.Z }))(a.memo(_)),
+                x = s.iH({ component: v, getScribeDataItem: (e) => n.Z.getPagedCarouselTweetURTEntryItem(e), shouldDisplayBorder: (0, o.Z)(!1), isFocusable: (0, o.Z)(!0) }).getHandler();
         },
         988566: (e, t, r) => {
             r.d(t, { D$: () => c, Du: () => d, GK: () => l, Iv: () => m, pz: () => p, rl: () => u });
@@ -134,20 +134,18 @@
             r.d(t, { K: () => o });
             const o = Object.freeze({ ON_LINGER: "onLinger", ON_IS_RELEVANT: "onIsRelevant", ON_SHOW_MORE: "onShowMore", ON_LIKE: "onLike", ON_FOLLOW: "onFollow" });
         },
-        58399: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
+        790093: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => i });
             var o = r(202784),
                 n = r(890601),
                 s = r(783427),
-                a = r(717683),
-                c = r(347101);
-            const i = (e = {}) => {
-                const t = o.useContext(a.Z),
-                    { direction: r } = (0, s.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style, t && c.Z.iconRTL], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: r });
+                a = r(347101);
+            const c = (e = {}) => {
+                const { direction: t } = (0, s.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: t });
             };
-            i.metadata = { width: 24, height: 24 };
-            const l = i;
+            c.metadata = { width: 24, height: 24 };
+            const i = c;
         },
         98440: (e, t, r) => {
             r.r(t), r.d(t, { default: () => i });
@@ -164,4 +162,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.PagedCarouselItemHandler.ebd6fd1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.PagedCarouselItemHandler.27dba7ca.js.map

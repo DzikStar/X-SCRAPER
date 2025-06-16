@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.Debugger", "icons/IconEye-js", "icons/IconWrench-js"],
+    ["ondemand.Debugger", "icons/IconChevronDown-js"],
     {
         232678: (e, t, n) => {
             n.r(t), n.d(t, { default: () => $e });
@@ -130,14 +130,14 @@
             const Z = "application/font-woff",
                 L = "image/jpeg",
                 I = { woff: Z, woff2: Z, ttf: "application/font-truetype", eot: "application/vnd.ms-fontobject", png: "image/png", jpg: L, jpeg: L, gif: "image/gif", tiff: "image/tiff", svg: "image/svg+xml", webp: "image/webp" };
-            function M(e) {
+            function D(e) {
                 const t = (function (e) {
                     const t = /\.([^./]*?)$/g.exec(e);
                     return t ? t[1] : "";
                 })(e).toLowerCase();
                 return I[t] || "";
             }
-            function D(e) {
+            function M(e) {
                 return -1 !== e.search(/^(data:)/);
             }
             function F(e, t) {
@@ -188,7 +188,7 @@
                 }
                 return (N[r] = o), o;
             }
-            async function z(e, t) {
+            async function O(e, t) {
                 return R(e, HTMLCanvasElement)
                     ? (async function (e) {
                           const t = e.toDataURL();
@@ -202,7 +202,7 @@
                                 return (t.width = e.clientWidth), (t.height = e.clientHeight), null == n || n.drawImage(e, 0, 0, t.width, t.height), _(t.toDataURL());
                             }
                             const n = e.poster,
-                                r = M(n);
+                                r = D(n);
                             return _(await B(n, r, t));
                         })(e, t)
                       : R(e, HTMLIFrameElement)
@@ -215,7 +215,7 @@
                           })(e, t)
                         : e.cloneNode(V(e));
             }
-            const O = (e) => null != e.tagName && "SLOT" === e.tagName.toUpperCase(),
+            const z = (e) => null != e.tagName && "SLOT" === e.tagName.toUpperCase(),
                 V = (e) => null != e.tagName && "SVG" === e.tagName.toUpperCase();
             function j(e, t, n) {
                 return (
@@ -254,14 +254,14 @@
             async function q(e, t, n) {
                 return n || !t.filter || t.filter(e)
                     ? Promise.resolve(e)
-                          .then((e) => z(e, t))
+                          .then((e) => O(e, t))
                           .then((n) =>
                               (async function (e, t, n) {
                                   var r, o;
                                   if (V(t)) return t;
                                   let i = [];
                                   return (
-                                      (i = O(e) && e.assignedNodes ? E(e.assignedNodes()) : R(e, HTMLIFrameElement) && (null === (r = e.contentDocument) || void 0 === r ? void 0 : r.body) ? E(e.contentDocument.body.childNodes) : E((null !== (o = e.shadowRoot) && void 0 !== o ? o : e).childNodes)),
+                                      (i = z(e) && e.assignedNodes ? E(e.assignedNodes()) : R(e, HTMLIFrameElement) && (null === (r = e.contentDocument) || void 0 === r ? void 0 : r.body) ? E(e.contentDocument.body.childNodes) : E((null !== (o = e.shadowRoot) && void 0 !== o ? o : e).childNodes)),
                                       0 === i.length ||
                                           R(e, HTMLVideoElement) ||
                                           (await i.reduce(
@@ -306,8 +306,8 @@
                           )
                     : null;
             }
-            const W = /url\((['"]?)([^'"]+?)\1\)/g,
-                U = /url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,
+            const U = /url\((['"]?)([^'"]+?)\1\)/g,
+                W = /url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,
                 X = /src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;
             async function Y(e, t, n, r, o) {
                 try {
@@ -322,7 +322,7 @@
                                   return n.head.appendChild(r), n.body.appendChild(o), t && (r.href = t), (o.href = e), o.href;
                               })(t, n)
                             : t,
-                        a = M(t);
+                        a = D(t);
                     let s;
                     if (o) {
                         s = F(await o(i), a);
@@ -338,7 +338,7 @@
                 return e;
             }
             function K(e) {
-                return -1 !== e.search(W);
+                return -1 !== e.search(U);
             }
             async function G(e, t, n) {
                 if (!K(e)) return e;
@@ -346,7 +346,7 @@
                         return t
                             ? e.replace(X, (e) => {
                                   for (;;) {
-                                      const [n, , r] = U.exec(e) || [];
+                                      const [n, , r] = W.exec(e) || [];
                                       if (!r) return "";
                                       if (r === t) return `src: ${n};`;
                                   }
@@ -355,7 +355,7 @@
                     })(e, n),
                     o = (function (e) {
                         const t = [];
-                        return e.replace(W, (e, n, r) => (t.push(r), e)), t.filter((e) => !D(e));
+                        return e.replace(U, (e, n, r) => (t.push(r), e)), t.filter((e) => !M(e));
                     })(r);
                 return o.reduce((e, r) => e.then((e) => Y(e, r, t, n)), Promise.resolve(r));
             }
@@ -375,9 +375,9 @@
                     })(e, t),
                     await (async function (e, t) {
                         const n = R(e, HTMLImageElement);
-                        if ((!n || D(e.src)) && (!R(e, SVGImageElement) || D(e.href.baseVal))) return;
+                        if ((!n || M(e.src)) && (!R(e, SVGImageElement) || M(e.href.baseVal))) return;
                         const r = n ? e.src : e.href.baseVal,
-                            o = await B(r, M(r), t);
+                            o = await B(r, D(r), t);
                         await new Promise((r, i) => {
                             (e.onload = r),
                                 (e.onerror = t.onImageErrorHandler
@@ -994,7 +994,7 @@
             n.d(t, { Z: () => r });
             const r = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        988227: (e, t, n) => {
+        487552: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
             var r = n(202784),
                 o = n(890601),
@@ -1002,24 +1002,11 @@
                 a = n(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        522450: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => l });
-            var r = n(202784),
-                o = n(890601),
-                i = n(783427),
-                a = n(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14.355 9.649c-.773-.771-.774-2.023-.002-2.795L16.5 4.707c.37-.37.48-.926.28-1.409s-.671-.798-1.195-.798h-1.118c-1.725 0-3.346.672-4.566 1.892-1.531 1.53-2.191 3.711-1.766 5.834l.217 1.084c.065.327-.034.666-.273.905l-5.372 5.372c-.378.378-.585.88-.585 1.414s.208 1.036.585 1.414l.882.882c.378.377.88.585 1.414.585s1.036-.208 1.414-.585l5.372-5.372c.24-.24.578-.339.905-.273l1.084.217c2.123.425 4.304-.236 5.834-1.766 1.22-1.22 1.892-2.842 1.892-4.566V8.419c0-.523-.315-.995-.798-1.195s-1.039-.089-1.409.28L17.15 9.651c-.772.772-2.024.771-2.795-.002z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Debugger.a102e95a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Debugger.f9f319ca.js.map

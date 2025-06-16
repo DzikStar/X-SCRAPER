@@ -1,5 +1,5 @@
 var manifest = {
-    feature_set_token: "1dc461fd83756f57923307d3c03fc0107d4ee131",
+    feature_set_token: "eb987f473fc4b09b0e4b9845237d6ec26f4bc51d",
     config: {
         "2fa_temporary_password_enabled": { value: !1 },
         Arkose_rweb_hosted_page: { value: !0 },
@@ -775,7 +775,7 @@ var manifest = {
         rweb_xchat_enabled: { value: !1 },
         rweb_xchat_logs: { value: !1 },
         rweb_xchat_messages_sidebar_enabled: { value: !1 },
-        rweb_xchat_new_db_worker_enabled: { value: !1 },
+        rweb_xchat_new_db_worker_enabled: { value: !0 },
         rweb_xchat_old_dms_inbox_item: { value: !1 },
         rweb_xp_forwarded_for_enabled: { value: !1 },
         sc_mock_data_enabled: { value: !1 },
@@ -1902,7 +1902,7 @@ var manifest = {
         profile_label_improvements_pcf_label_in_profile_enabled: { name: "profile_label_improvements_pcf_label_in_profile_enabled", type: "string" },
         profile_label_improvements_pcf_label_in_post_enabled: { name: "profile_label_improvements_pcf_label_in_post_enabled", type: "boolean", defaultValue: !0 },
         profile_label_improvements_pcf_edit_profile_enabled: { name: "profile_label_improvements_pcf_edit_profile_enabled", type: "boolean", defaultValue: !0 },
-        profile_page_upsells_swapper_17161: { name: "profile_page_upsells_swapper_17161", type: "experiment", enumeration_values: ["control", "holdback"] },
+        profile_page_upsells_swapper_17161: { name: "profile_page_upsells_swapper_17161", type: "experiment", enumeration_values: [] },
         profile_page_upsells_swapper_non_english_17208: { name: "profile_page_upsells_swapper_non_english_17208", type: "experiment", enumeration_values: ["control", "holdback"] },
         project_jiminy_article_web_11673: { name: "project_jiminy_article_web_11673", type: "experiment", enumeration_values: [] },
         promoted_badge_placement_circle_icon: { name: "promoted_badge_placement_circle_icon", type: "string" },
@@ -2493,7 +2493,7 @@ var manifest = {
         rweb_xchat_old_dms_inbox_item: { name: "rweb_xchat_old_dms_inbox_item", type: "boolean", defaultValue: !1 },
         rweb_xchat_messages_sidebar_enabled: { name: "rweb_xchat_messages_sidebar_enabled", type: "boolean", defaultValue: !1 },
         rweb_xchat_logs: { name: "rweb_xchat_logs", type: "boolean", defaultValue: !1 },
-        rweb_xchat_new_db_worker_enabled: { name: "rweb_xchat_new_db_worker_enabled", type: "boolean", defaultValue: !1 },
+        rweb_xchat_new_db_worker_enabled: { name: "rweb_xchat_new_db_worker_enabled", type: "boolean", defaultValue: !0 },
         rweb_xp_forwarded_for_enabled: { name: "rweb_xp_forwarded_for_enabled", type: "boolean", defaultValue: !1 },
         sc_mock_data_enabled: { name: "sc_mock_data_enabled", type: "boolean", defaultValue: !1 },
         sc_r4_dash_badge_enabled: { name: "sc_r4_dash_badge_enabled", type: "string" },

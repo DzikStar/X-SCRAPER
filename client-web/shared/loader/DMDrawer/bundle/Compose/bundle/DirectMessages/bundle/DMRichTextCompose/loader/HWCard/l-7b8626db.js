@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-7b8626db", "icons/IconNewsStroke-js"],
+    ["shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-7b8626db", "icons/IconArrow360Rotate-js", "icons/IconTimelineStroke-js"],
     {
         705048: (e, t, a) => {
             a.d(t, { Z: () => B });
@@ -82,12 +82,12 @@
             }
             const Z = n().e82adfeb,
                 _ = n().cfb8c1f7,
-                I = n().g78032d5,
-                C = ({ images: e, webResultUrls: t, xPostIds: a }) => {
+                C = n().g78032d5,
+                I = ({ images: e, webResultUrls: t, xPostIds: a }) => {
                     const l = t.length + a.length;
                     if (l <= 0) return null;
                     let n = "";
-                    t.length > 0 && a.length > 0 ? (n = I({ count: l })) : t.length > 0 ? (n = Z({ count: l })) : a.length > 0 && (n = _({ count: l }));
+                    t.length > 0 && a.length > 0 ? (n = C({ count: l })) : t.length > 0 ? (n = Z({ count: l })) : a.length > 0 && (n = _({ count: l }));
                     return r.createElement(s.Z, { style: P.sourcesPill }, e.length > 0 ? r.createElement(E.Z, { userAvatarSize: "medium", userAvatarUrls: e.slice(0, 6), withIncreasedSpacing: e.length < 5 }) : a.length > 0 && r.createElement(y.default, { style: P.xPostsIcon }), r.createElement(c.ZP, { color: "gray900", size: "subtext2" }, n));
                 },
                 P = w.default.create((e) => ({ sourcesPill: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, marginBottom: e.spaces.space8 }, xPostsIcon: { color: e.colors.gray900, width: e.spaces.space16, height: e.spaces.space16 }, bulletPoints: {}, bulletItem: { flexDirection: "row", marginBottom: e.spaces.space8, alignItems: "flex-start" }, bullet: { marginEnd: e.spaces.space8 }, bulletText: { flex: 1 } })),
@@ -120,7 +120,7 @@
                     return r.createElement(
                         s.Z,
                         null,
-                        r.createElement(C, { images: n, webResultUrls: o, xPostIds: i }),
+                        r.createElement(I, { images: n, webResultUrls: o, xPostIds: i }),
                         r.createElement(
                             s.Z,
                             { style: P.bulletPoints },
@@ -132,8 +132,8 @@
                 T = n().dfd6eeac,
                 S = n().deceb214,
                 $ = n().befddd48,
-                z = n().hf3f8e3a,
-                M = n().h504ea5e,
+                M = n().hf3f8e3a,
+                z = n().h504ea5e,
                 W = n().eb722de2,
                 L = w.default.create((e) => ({
                     root: { backgroundColor: e.colors.cellBackground, borderColor: e.colors.borderColor, borderRadius: e.borderRadii.large, borderStyle: "solid", borderWidth: e.borderWidths.small, overflow: "hidden", width: "100%", cursor: "pointer" },
@@ -174,20 +174,20 @@
                         ),
                         Z = b.Z.useAnalytics(),
                         _ = r.useContext(p.Z).cardContext,
-                        I = _ ? _.tweetId : "",
-                        C = _ ? _.locationKey : "",
+                        C = _ ? _.tweetId : "",
+                        I = _ ? _.locationKey : "",
                         [P, B] = r.useState(!1),
                         [D, O] = r.useState(8),
                         U = t.length - 2,
                         H = t.length - 1;
                     if (t.length < 2) return null;
-                    const F = (t[H].deepsearch_headers && t[H].deepsearch_headers.length > 0) || (t[H].deepsearchHeaders && t[H].deepsearchHeaders.length > 0),
-                        j = v(t[U].message),
+                    const j = (t[H].deepsearch_headers && t[H].deepsearch_headers.length > 0) || (t[H].deepsearchHeaders && t[H].deepsearchHeaders.length > 0),
+                        F = v(t[U].message),
                         A = v(t[H].message),
                         J = t[U].mediaUrls[0],
                         N = t[H].mediaUrls[0],
-                        V = l?.blurred_image_interstitial?.title.text,
-                        G = l?.blurred_image_interstitial?.text.text,
+                        G = l?.blurred_image_interstitial?.title.text,
+                        V = l?.blurred_image_interstitial?.text.text,
                         q = () => (N ? n?.text || S : n?.text ? n.text : "FUN" === t[U].grokMode ? R : T);
                     return r.createElement(u.Z, { componentType: "grok_share", destinationKey: a }, ({ link: a, onClick: l }) =>
                         r.createElement(
@@ -202,20 +202,20 @@
                                         interactive: !1,
                                         link: a,
                                         onClick: () => {
-                                            Z.scribe({ element: "grok_share_card", action: "click", data: { event_source: C, tweet_id: I } }), l && l();
+                                            Z.scribe({ element: "grok_share_card", action: "click", data: { event_source: I, tweet_id: C } }), l && l();
                                         },
                                     },
-                                    N ? null : r.createElement(s.Z, { style: [N ? L.paddingImage : L.padding, L.header] }, r.createElement(s.Z, { style: L.headerContent }, J ? r.createElement(s.Z, { style: L.blurContainer }, r.createElement(m.Z, { source: { uri: J }, style: [L.headerImage, y ? L.blur : void 0] })) : null, r.createElement(s.Z, { style: L.headerTextContent }, t[0] && t[0].analysis_post ? r.createElement(s.Z, { style: L.quoteTweetContainer }, r.createElement(f.Z, { isCondensed: !0, shouldShowBorder: !1, tweet: t[0].analysis_post, withLink: !1 })) : r.createElement(c.ZP, { numberOfLines: 1, size: "headline2", style: L.headerText, weight: "bold" }, j), r.createElement(c.ZP, { color: "gray900", size: "subtext2" }, q())))),
+                                    N ? null : r.createElement(s.Z, { style: [N ? L.paddingImage : L.padding, L.header] }, r.createElement(s.Z, { style: L.headerContent }, J ? r.createElement(s.Z, { style: L.blurContainer }, r.createElement(m.Z, { source: { uri: J }, style: [L.headerImage, y ? L.blur : void 0] })) : null, r.createElement(s.Z, { style: L.headerTextContent }, t[0] && t[0].analysis_post ? r.createElement(s.Z, { style: L.quoteTweetContainer }, r.createElement(f.Z, { isCondensed: !0, shouldShowBorder: !1, tweet: t[0].analysis_post, withLink: !1 })) : r.createElement(c.ZP, { numberOfLines: 1, size: "headline2", style: L.headerText, weight: "bold" }, F), r.createElement(c.ZP, { color: "gray900", size: "subtext2" }, q())))),
                                     r.createElement(
                                         s.Z,
                                         { style: N ? L.contentImage : L.content },
                                         N
-                                            ? r.createElement(r.Fragment, null, r.createElement(m.Z, { source: { uri: N }, style: L.image }), r.createElement(s.Z, { style: L.imageOverlay }, r.createElement(c.ZP, { color: "white", numberOfLines: 1, size: "headline2", weight: "bold" }, j), r.createElement(c.ZP, { color: "white", size: "subtext2" }, q())), y ? r.createElement(s.Z, { style: L.sensitiveContent }, r.createElement(o.default, { style: L.blurIcon }), r.createElement(s.Z, { style: L.sensitiveLabels }, V ? r.createElement(c.ZP, { color: "whiteOnColor", size: "body", weight: "bold" }, V) : null, G ? r.createElement(c.ZP, { color: "whiteOnColor", size: "body" }, G) : null), r.createElement(d.ZP, { onPress: x, type: "onMediaLightFilled" }, $)) : null)
+                                            ? r.createElement(r.Fragment, null, r.createElement(m.Z, { source: { uri: N }, style: L.image }), r.createElement(s.Z, { style: L.imageOverlay }, r.createElement(c.ZP, { color: "white", numberOfLines: 1, size: "headline2", weight: "bold" }, F), r.createElement(c.ZP, { color: "white", size: "subtext2" }, q())), y ? r.createElement(s.Z, { style: L.sensitiveContent }, r.createElement(o.default, { style: L.blurIcon }), r.createElement(s.Z, { style: L.sensitiveLabels }, G ? r.createElement(c.ZP, { color: "whiteOnColor", size: "body", weight: "bold" }, G) : null, V ? r.createElement(c.ZP, { color: "whiteOnColor", size: "body" }, V) : null), r.createElement(d.ZP, { onPress: x, type: "onMediaLightFilled" }, $)) : null)
                                             : r.createElement(g.Z, null, ({ isHovered: e }) =>
                                                   r.createElement(
                                                       s.Z,
                                                       { style: L.paddingBody },
-                                                      F
+                                                      j
                                                           ? r.createElement(k, { deepsearchHeaders: t[H].deepsearchHeaders, deepsearch_headers: t[H].deepsearch_headers, rawResponse: t[H].message })
                                                           : r.createElement(
                                                                 c.ZP,
@@ -227,18 +227,18 @@
                                                                 },
                                                                 A,
                                                             ),
-                                                      P || F
+                                                      P || j
                                                           ? r.createElement(
                                                                 c.ZP,
                                                                 {
                                                                     color: "link",
                                                                     onClick: (e) => {
-                                                                        !F && D <= 8 && (e.stopPropagation(), e.preventDefault(), O(D + 24));
+                                                                        !j && D <= 8 && (e.stopPropagation(), e.preventDefault(), O(D + 24));
                                                                     },
                                                                     style: { padding: 0, margin: 0 },
                                                                     withUnderline: e,
                                                                 },
-                                                                z,
+                                                                M,
                                                             )
                                                           : null,
                                                   ),
@@ -246,18 +246,18 @@
                                     ),
                                 ),
                             ),
-                            e && void 0 !== C
+                            e && void 0 !== I
                                 ? r.createElement(
                                       d.ZP,
                                       {
                                           icon: r.createElement(i.default, null),
                                           onPress: () => {
-                                              Z.scribe({ element: "grok_create_your_version", action: "click", data: { event_source: C, tweet_id: I } }), w?.({ text: j, imageUrl: J, autoSubmit: !0, source: "grok_share_card" + (N ? "_image" : "_text") });
+                                              Z.scribe({ element: "grok_create_your_version", action: "click", data: { event_source: I, tweet_id: C } }), w?.({ text: F, imageUrl: J, autoSubmit: !0, source: "grok_share_card" + (N ? "_image" : "_text") });
                                           },
                                           style: L.footer,
                                           type: "primaryFilled",
                                       },
-                                      r.createElement(c.ZP, { size: "body", style: L.labelBtnPadding, weight: "bold" }, N ? M : W),
+                                      r.createElement(c.ZP, { size: "body", style: L.labelBtnPadding, weight: "bold" }, N ? z : W),
                                   )
                                 : null,
                         ),
@@ -317,7 +317,7 @@
                 u = s.forwardRef((e, t) => s.createElement(d, (0, r.Z)({ forwardedRef: t }, e)));
         },
         65042: (e, t, a) => {
-            a.d(t, { Z: () => I });
+            a.d(t, { Z: () => C });
             var r = a(202784),
                 s = a(325686),
                 l = a(264171),
@@ -366,7 +366,7 @@
                     return t ? r.createElement(s.Z, { style: _.richTextWrapper }, r.createElement(p.Z, { contentState: t })) : null;
                 },
                 _ = u.default.create((e) => ({ job: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, carouselJob: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, fullMeta: { gap: "inherit" }, carouselMeta: { gap: "inherit" }, compactMeta: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space12 }, withIcon: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4 }, locationWithIcon: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4, flex: 1 }, elidedText: { whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }, dontShrinkMeBro: { display: "flex", flexShrink: 0 }, metaRow: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space12 }, richTextWrapper: { color: e.colors.gray900, fontSize: e.fontSizes.body, fontFamily: e.fontFamilies.normal, fontWeight: e.fontWeights.regular, marginTop: e.spaces.space12 }, avatarRow: { alignItems: "center" }, avatarCell: { flexBasis: e.spaces.space12 } })),
-                I = (e) => {
+                C = (e) => {
                     const { displayType: t, title: a, titleSize: l } = e,
                         n = "carousel" === t,
                         o = "full" === t,
@@ -410,7 +410,7 @@
                         } catch (e) {}
                 };
         },
-        784732: (e, t, a) => {
+        270711: (e, t, a) => {
             a.r(t), a.d(t, { default: () => i });
             var r = a(202784),
                 s = a(890601),
@@ -418,11 +418,24 @@
                 n = a(347101);
             const o = (e = {}) => {
                 const { direction: t } = (0, l.Z)();
-                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.998 5.5c0-1.38 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.12 2.5 2.5v13c0 1.38-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.12-2.5-2.5v-13zm2.5-.5c-.276 0-.5.22-.5.5v13c0 .28.224.5.5.5h15c.276 0 .5-.22.5-.5v-13c0-.28-.224-.5-.5-.5h-15zM6 7h6v6H6V7zm2 2v2h2V9H8zm10 0h-4V7h4v2zm0 4h-4v-2h4v2zm-.002 4h-12v-2h12v2z" })) }, { writingDirection: t });
+                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M19.518 7.57C17.542 6.582 14.883 6 12 6s-5.543.582-7.518 1.57C2.566 8.528 1 10.036 1 12c0 1.393.803 2.565 1.913 3.446 1.054.836 2.473 1.488 4.087 1.923v-2.082c-1.19-.372-2.158-.863-2.844-1.408C3.322 13.218 3 12.564 3 12c0-.798.673-1.789 2.376-2.641C7.019 8.537 9.36 8 12 8s4.98.537 6.624 1.359C20.327 10.211 21 11.202 21 12s-.673 1.789-2.376 2.641c-1.299.65-3.038 1.116-5.012 1.286l1.353-1.459-1.467-1.359-3.564 3.845 3.844 3.564 1.36-1.467-1.231-1.141c2.137-.196 4.081-.714 5.612-1.479 1.916-.958 3.482-2.466 3.482-4.43s-1.566-3.472-3.482-4.43z" })) }, { writingDirection: t });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const i = o;
+        },
+        47286: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => i });
+            var r = a(202784),
+                s = a(890601),
+                l = a(783427),
+                n = a(347101);
+            const o = (e = {}) => {
+                const { direction: t } = (0, l.Z)();
+                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M5 5c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2H5zm2.5 5.75c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zM11 13h7v-2h-7v2zm0 4h4v-2h-4v2zm8.5-10C20.88 7 22 8.12 22 9.5v9c0 1.38-1.12 2.5-2.5 2.5h-15C3.12 21 2 19.88 2 18.5v-9C2 8.12 3.12 7 4.5 7h15zM4 18.5c0 .28.22.5.5.5h15c.28 0 .5-.22.5-.5v-9c0-.28-.22-.5-.5-.5h-15c-.28 0-.5.22-.5.5v9z" })) }, { writingDirection: t });
             };
             o.metadata = { width: 24, height: 24 };
             const i = o;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-7b8626db.6c35a7da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-7b8626db.88d59a4a.js.map

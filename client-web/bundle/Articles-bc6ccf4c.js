@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Articles-bc6ccf4c"],
+    ["bundle.Articles-bc6ccf4c", "icons/IconFeedback-js"],
     {
         425376: (e, t, n) => {
             n.d(t, { Z: () => g });
@@ -16,22 +16,22 @@
                 p = n(138099),
                 m = n(392237);
             const h = m.default.create((e) => ({ root: { paddingVertical: e.spacesPx.space32 }, rootWithImage: { paddingTop: 0 }, graphic: { marginBottom: e.spacesPx.space20 }, icon: { alignSelf: "center", height: e.spacesPx.space64, width: e.spacesPx.space64 }, container: { paddingHorizontal: e.spacesPx.space32 }, description: { marginTop: e.spacesPx.space8, marginBottom: e.spacesPx.space4 }, actionButton: { marginTop: e.spacesPx.space16 } })),
-                g = ({ actionPrimary: e, actionSecondary: t, children: n, headline: g, icon: f, iconColor: b, image: y, onDismiss: x, shouldDisplay: C, text: E, withMask: S = !0 }) => {
-                    const [v, k] = o.useState(!1),
-                        w = (e) => o.createElement(u.Z, { onDismiss: A, renderContent: () => Z(A), switchOnlyOnXSmallBreakpoint: !0, visibilityBehavior: a.J.forceVisible, withArrow: !0, withFixedPosition: !0, withMask: S }, e),
-                        P = () => o.createElement(p.Z, { onMaskClick: () => A(), type: "center", withMask: !0 }, Z(A)),
-                        Z = (n) => o.createElement(r.Z, { style: [h.root, y && h.rootWithImage] }, B(), o.createElement(r.Z, { style: h.container }, _(), T(), R({ action: e, dismiss: n, type: t && "primaryFilled" }), R({ action: t, dismiss: n }))),
+                g = ({ actionPrimary: e, actionSecondary: t, children: n, headline: g, icon: f, iconColor: b, image: y, onDismiss: x, shouldDisplay: C, text: v, withMask: E = !0 }) => {
+                    const [S, k] = o.useState(!1),
+                        w = (e) => o.createElement(u.Z, { onDismiss: D, renderContent: () => P(D), switchOnlyOnXSmallBreakpoint: !0, visibilityBehavior: a.J.forceVisible, withArrow: !0, withFixedPosition: !0, withMask: E }, e),
+                        Z = () => o.createElement(p.Z, { onMaskClick: () => D(), type: "center", withMask: !0 }, P(D)),
+                        P = (n) => o.createElement(r.Z, { style: [h.root, y && h.rootWithImage] }, B(), o.createElement(r.Z, { style: h.container }, _(), T(), R({ action: e, dismiss: n, type: t && "primaryFilled" }), R({ action: t, dismiss: n }))),
                         B = () => {
                             let e = f && o.createElement(f, { style: b ? [h.icon, { color: m.default.theme.colors[b] }] : h.icon });
                             return y && !d.Z.isEnabled && (e = o.createElement(i.Z, { "aria-label": "", aspectMode: l.Z.exact(2), image: y })), e && o.createElement(r.Z, { style: h.graphic }, e);
                         },
                         _ = () => o.createElement(s.ZP, { size: "title3", weight: "heavy" }, g),
-                        T = () => o.createElement(s.ZP, { color: "gray700", style: h.description }, E),
+                        T = () => o.createElement(s.ZP, { color: "gray700", style: h.description }, v),
                         R = ({ action: e, dismiss: t, type: n }) => e && o.createElement(c.ZP, { link: e.link && e.link, onPress: e.onClick ? e.onClick : t, size: "large", style: h.actionButton, type: n }, e.text),
-                        A = () => {
+                        D = () => {
                             x && x(), k(!0);
                         };
-                    return C && !v ? (n ? w(n) : P()) : n || null;
+                    return C && !S ? (n ? w(n) : Z()) : n || null;
                 };
         },
         879113: (e, t, n) => {
@@ -339,7 +339,7 @@
             const y = d().d2414d31,
                 x = () => d().ce4e85ae,
                 C = d().fb9f6f39;
-            class E extends r.Component {
+            class v extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._getMemoizedLink = (0, u.Z)((e, t) => {
@@ -374,17 +374,17 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": t, badgeCount: n, badgePip: o, children: a, color: i, isActive: c, isCompact: d, isPillLink: u, isRoundedRect: p, isWebRedesign: g, retainScrollPosition: E, style: v, to: k } = this.props,
+                    const { Icon: e, "aria-label": t, badgeCount: n, badgePip: o, children: a, color: i, isActive: c, isCompact: d, isPillLink: u, isRoundedRect: p, isWebRedesign: g, retainScrollPosition: v, style: S, to: k } = this.props,
                         { location: w } = this.state,
-                        P = k ? this._getMemoizedLink(k, E) : void 0,
-                        Z = c ? c(k) : w?.pathname === P?.pathname,
-                        B = f.Z.generate({ backgroundColor: "transparent", color: s.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? S.pillHoverStyle.backgroundColor : void 0 }),
-                        _ = g ? "medium" : Z ? "bold" : "medium";
-                    return r.createElement(b.Z, { "aria-label": t, "aria-selected": Z, focusable: !!Z, interactiveStyles: B, link: P, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [S.pillStyle] : [S.link]), ...(u && Z ? [S.pillActiveStyle] : []), d ? (u ? S.compactPill : S.compactLink) : null, p ? S.roundedRect : null, v], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => r.createElement(l.Z, { style: u && S.flexGrow }, r.createElement(m.ZP, { size: g ? "headline2" : void 0, style: [S.text, { color: this._getTextColor(Z, c, g, u) }, d && S.compactText, g && t && S.focusedText, u && S.pillTextStyle, u && Z && S.pillActiveTextStyle, u && c && S.pillHoverTextStyle], weight: _ }, e && r.createElement(e, { style: S.icon }), a, g || u ? null : r.createElement(l.Z, { style: Z && [S.border, { backgroundColor: s.default.theme.colors[i] }] })), n ? r.createElement(h.Z, { count: n, standalone: !0, style: [S.badge, n >= 10 && S.multiDigitBadge, n >= 20 && S.truncatedCountBadge], truncatedCountFormatter: C, unreadCountLabel: y, withBorder: !1 }) : o ? r.createElement(h.Z, { pip: !0, standalone: !0, style: S.badgePip, textColor: "red500", unreadCountLabel: x, withBorder: !1 }) : null));
+                        Z = k ? this._getMemoizedLink(k, v) : void 0,
+                        P = c ? c(k) : w?.pathname === Z?.pathname,
+                        B = f.Z.generate({ backgroundColor: "transparent", color: s.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? E.pillHoverStyle.backgroundColor : void 0 }),
+                        _ = g ? "medium" : P ? "bold" : "medium";
+                    return r.createElement(b.Z, { "aria-label": t, "aria-selected": P, focusable: !!P, interactiveStyles: B, link: Z, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [E.pillStyle] : [E.link]), ...(u && P ? [E.pillActiveStyle] : []), d ? (u ? E.compactPill : E.compactLink) : null, p ? E.roundedRect : null, S], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => r.createElement(l.Z, { style: u && E.flexGrow }, r.createElement(m.ZP, { size: g ? "headline2" : void 0, style: [E.text, { color: this._getTextColor(P, c, g, u) }, d && E.compactText, g && t && E.focusedText, u && E.pillTextStyle, u && P && E.pillActiveTextStyle, u && c && E.pillHoverTextStyle], weight: _ }, e && r.createElement(e, { style: E.icon }), a, g || u ? null : r.createElement(l.Z, { style: P && [E.border, { backgroundColor: s.default.theme.colors[i] }] })), n ? r.createElement(h.Z, { count: n, standalone: !0, style: [E.badge, n >= 10 && E.multiDigitBadge, n >= 20 && E.truncatedCountBadge], truncatedCountFormatter: C, unreadCountLabel: y, withBorder: !1 }) : o ? r.createElement(h.Z, { pip: !0, standalone: !0, style: E.badgePip, textColor: "red500", unreadCountLabel: x, withBorder: !1 }) : null));
                 }
             }
-            (E.contextType = g.Z), (E.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
-            const S = s.default.create((e) => ({
+            (v.contextType = g.Z), (v.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
+            const E = s.default.create((e) => ({
                     link: { alignItems: "center", display: "flex", flexDirection: "column", flexGrow: 1, height: e.componentDimensions.appBarHeight, justifyContent: "center", outlineStyle: "none", paddingHorizontal: e.spaces.space16, minWidth: "56px" },
                     compactLink: { height: 0.75 * e.componentDimensions.appBarHeightPx },
                     badge: { position: "absolute", height: e.spaces.space12, minWidth: e.spaces.space12, top: `calc(${e.spaces.space12} + ${e.spaces.space2})`, end: `calc(-1 * ${e.spaces.space16})`, fontSize: `calc(${e.spaces.space8} + ${e.spaces.space1})` },
@@ -407,7 +407,7 @@
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
-                v = E,
+                S = v,
                 k = s.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
                 w = ({ alignFirstItem: e, "aria-label": t, isCompact: n, isPillLink: s, isRoundedRect: l, links: c, style: d, visibleItemIndex: u }) => {
                     const p = c
@@ -420,7 +420,7 @@
                             () =>
                                 c.filter(Boolean).map(({ label: t, viewType: a, ...i }, c) => {
                                     const d = h ? [k.linkRedesign, 0 === c && k.firstLinkRedesign, e && 0 === c && k.withNoPaddingStart] : void 0;
-                                    return r.createElement(v, (0, o.Z)({ viewType: a }, i, { isCompact: n, isPillLink: s, isRoundedRect: l, isWebRedesign: h, style: d }), t);
+                                    return r.createElement(S, (0, o.Z)({ viewType: a }, i, { isCompact: n, isPillLink: s, isRoundedRect: l, isWebRedesign: h, style: d }), t);
                                 }),
                             [e, n, s, l, h, c],
                         );
@@ -428,7 +428,7 @@
                 };
         },
         40644: (e, t, n) => {
-            n.d(t, { ZP: () => E });
+            n.d(t, { ZP: () => v });
             var o = n(202784),
                 r = n(325686),
                 a = n(461756),
@@ -453,7 +453,7 @@
                         var a;
                     });
                 };
-            class E extends o.PureComponent {
+            class v extends o.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this._renderContent = (e, t) => {
@@ -464,14 +464,14 @@
                             const { activeColor: t, backgroundColor: n, hoverLabel: r, iconSize: a, isActive: i, isDisabled: c, showBackgroundWhenActive: d } = this.props,
                                 p = s.Z.generate({ backgroundColor: u.default.theme.colors[n], color: u.default.theme.colors[t], insetFocusRing: !0 }),
                                 m = d && i && !e?.isHovered;
-                            return o.createElement(l.Z, { hoverLabel: r, interactiveStyles: p, interactivityState: e, style: [u.default.absoluteFill, v[m ? "haloBackground" : n], !c && k.iconBackground, "small" === a && k.iconSmallBoundingBox, m && k.haloBoundingBox] });
+                            return o.createElement(l.Z, { hoverLabel: r, interactiveStyles: p, interactivityState: e, style: [u.default.absoluteFill, S[m ? "haloBackground" : n], !c && k.iconBackground, "small" === a && k.iconSmallBoundingBox, m && k.haloBoundingBox] });
                         }),
                         (this._renderIcon = () => {
                             const { ActiveIcon: e, iconSize: t, isActive: n, isDisabled: r, isFaded: i, onAnimationEnd: s, onAnimationStart: l, onError: c, showAnimation: m, transitionAnimationUrl: h } = this.props;
-                            if (!u.default.theme.highContrastEnabled && !a.Z.reducedMotionEnabled && e && m) return o.createElement(d.ZP, { animation: h || p.Bf, animationContainerStyle: S[t], animationStyle: P, onAnimationEnd: s, onAnimationStart: l, onError: c });
+                            if (!u.default.theme.highContrastEnabled && !a.Z.reducedMotionEnabled && e && m) return o.createElement(d.ZP, { animation: h || p.Bf, animationContainerStyle: E[t], animationStyle: Z, onAnimationEnd: s, onAnimationStart: l, onError: c });
                             {
                                 const a = n && e ? e : this.props.Icon;
-                                return o.createElement(a, { style: [S[t], !r && i && k.iconFaded] });
+                                return o.createElement(a, { style: [E[t], !r && i && k.iconFaded] });
                             }
                         }),
                         (this._renderCount = () => {
@@ -504,12 +504,12 @@
                     );
                 }
             }
-            E.defaultProps = { activeColor: "blue500", backgroundColor: "transparent", color: "gray700", count: 0, isDisabled: !1, iconSize: "normal" };
-            const S = u.default.create((e) => ({ small: { height: "1em", width: "1em" }, normal: { height: "1.25em", width: "1.25em" }, large: { height: "1.5em", width: "1.5em" } })),
-                v = u.default.create((e) => ({ transparent: { backgroundColor: e.colors.transparent }, translucentBlack77: { backgroundColor: e.colors.translucentBlack77 }, haloBackground: { backgroundColor: e.colors.activeBlack } })),
+            v.defaultProps = { activeColor: "blue500", backgroundColor: "transparent", color: "gray700", count: 0, isDisabled: !1, iconSize: "normal" };
+            const E = u.default.create((e) => ({ small: { height: "1em", width: "1em" }, normal: { height: "1.25em", width: "1.25em" }, large: { height: "1.5em", width: "1.5em" } })),
+                S = u.default.create((e) => ({ transparent: { backgroundColor: e.colors.transparent }, translucentBlack77: { backgroundColor: e.colors.translucentBlack77 }, haloBackground: { backgroundColor: e.colors.activeBlack } })),
                 k = u.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "flex-start" }, triggerAreaRoot: { justifyContent: "center", minHeight: e.lineHeights.body, overflow: "visible", userSelect: "none" }, inner: { alignItems: "center", display: "flex", justifyContent: "flex-start", transitionProperty: "color", transitionDuration: "0.2s", whiteSpace: "nowrap" }, iconFaded: { opacity: 0.4 }, iconBackground: { borderRadius: e.borderRadii.infinite, margin: -8 }, iconSmallBoundingBox: { margin: -6 }, outlineNone: { outlineStyle: "none" }, blue500: { color: e.colors.blue500 }, white: { color: e.colors.white }, haloBoundingBox: { margin: -6 } })),
                 w = "224.5%",
-                P = { width: w, height: w };
+                Z = { width: w, height: w };
         },
         551611: (e, t, n) => {
             n.d(t, { Bf: () => r, ZP: () => i });
@@ -521,6 +521,19 @@
                 }
             }
             const i = new a();
+        },
+        790093: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => l });
+            var o = n(202784),
+                r = n(890601),
+                a = n(783427),
+                i = n(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
         },
         98440: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
@@ -541,4 +554,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-bc6ccf4c.80b65e1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-bc6ccf4c.176cf6ba.js.map

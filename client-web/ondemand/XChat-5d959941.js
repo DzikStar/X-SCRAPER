@@ -1,228 +1,228 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["ondemand.XChat-5d959941"],
     {
-        849170: (c, n, t) => {
+        849170: (t, c, n) => {
             "use strict";
-            t.d(n, { _i: () => u });
-            var s = t(125959),
-                e = t(918962);
+            n.d(c, { _i: () => a });
+            var e = n(125959),
+                r = n(918962);
             const i = [
                 {
-                    onResponse: (c) => {
-                        if (!c.ok) throw new Error(`[${c.status}] Network error`);
-                        return c;
+                    onResponse: (t) => {
+                        if (!t.ok) throw new Error(`[${t.status}] Network error`);
+                        return t;
                     },
                 },
             ];
-            const r = [
-                    e.l,
+            const u = [
+                    r.l,
                     (
-                        (c = 3e5) =>
-                        (n, t, s) => {
+                        (t = 3e5) =>
+                        (c, n, e) => {
                             if (!AbortSignal.timeout) {
-                                const e = new AbortController();
-                                return setTimeout(() => e.abort(new DOMException("The operation was aborted due to timeout", "TimeoutError")), c), n(t, { ...s, signal: s?.signal ?? e.signal });
+                                const r = new AbortController();
+                                return setTimeout(() => r.abort(new DOMException("The operation was aborted due to timeout", "TimeoutError")), t), c(n, { ...e, signal: e?.signal ?? r.signal });
                             }
-                            return n(t, { ...s, signal: s?.signal ?? AbortSignal.timeout(c) });
+                            return c(n, { ...e, signal: e?.signal ?? AbortSignal.timeout(t) });
                         }
                     )(),
-                    (function (c) {
-                        return async (n, t, s) => {
-                            const e = {};
-                            let i = t,
-                                r = s;
-                            for (const n of c) n.onRequest && ([i, r] = await n.onRequest(i, r, e));
-                            let u = await n(i, r);
-                            for (const n of c) n.onResponse && (u = await n.onResponse(u, e));
-                            return u;
+                    (function (t) {
+                        return async (c, n, e) => {
+                            const r = {};
+                            let i = n,
+                                u = e;
+                            for (const c of t) c.onRequest && ([i, u] = await c.onRequest(i, u, r));
+                            let a = await c(i, u);
+                            for (const c of t) c.onResponse && (a = await c.onResponse(a, r));
+                            return a;
                         };
                     })(i),
                 ],
-                u = (0, s.g)(r);
+                a = (0, e.g)(u);
         },
-        594839: (c, n, t) => {
-            !(function (c, n, t, s, e, i) {
+        594839: (t, c, n) => {
+            !(function (t, c, n, e, r, i) {
                 "use strict";
-                var r = n.$_$.g,
-                    u = n.$_$.s6,
-                    a = n.$_$.ff,
-                    o = n.$_$.m2,
-                    _ = t.$_$.q,
-                    l = n.$_$.bf,
-                    f = t.$_$.a,
-                    h = t.$_$.e,
-                    $ = t.$_$.d,
-                    p = t.$_$.c,
-                    q = t.$_$.f,
-                    v = t.$_$.g,
-                    b = n.$_$.yd,
-                    w = n.$_$.ce,
-                    d = n.$_$.od,
-                    k = n.$_$.bd,
-                    m = n.$_$.ne,
-                    x = n.$_$.xd,
-                    y = s.$_$.b,
-                    g = e.$_$.d,
-                    C = i.$_$.b,
-                    z = t.$_$.t,
-                    N = t.$_$.o,
-                    T = n.$_$.hf,
-                    E = n.$_$.yj,
-                    R = i.$_$.a,
-                    j = (n.$_$.e6, n.$_$.zf),
-                    A = n.$_$.vd,
-                    B = e.$_$.b,
-                    D = t.$_$.h,
-                    P = n.$_$.af,
-                    F = n.$_$.al,
-                    I = t.$_$.i,
-                    M = t.$_$.j,
-                    S = t.$_$.n,
-                    H = t.$_$.m,
-                    K = t.$_$.k,
-                    L = t.$_$.l,
-                    O = t.$_$.p,
-                    X = t.$_$.s,
-                    G = n.$_$.gc,
-                    J = t.$_$.r,
-                    Q = s.$_$.c;
+                var u = c.$_$.g,
+                    a = c.$_$.s6,
+                    s = c.$_$.ff,
+                    o = c.$_$.m2,
+                    _ = n.$_$.q,
+                    l = c.$_$.bf,
+                    f = n.$_$.a,
+                    h = n.$_$.e,
+                    $ = n.$_$.d,
+                    v = n.$_$.c,
+                    b = n.$_$.f,
+                    d = n.$_$.g,
+                    q = c.$_$.yd,
+                    w = c.$_$.ce,
+                    k = c.$_$.od,
+                    m = c.$_$.bd,
+                    p = c.$_$.ne,
+                    y = c.$_$.xd,
+                    x = e.$_$.b,
+                    g = r.$_$.d,
+                    z = i.$_$.b,
+                    C = n.$_$.t,
+                    j = n.$_$.o,
+                    N = c.$_$.hf,
+                    T = c.$_$.yj,
+                    E = i.$_$.a,
+                    R = (c.$_$.e6, c.$_$.zf),
+                    A = c.$_$.vd,
+                    B = r.$_$.b,
+                    D = n.$_$.h,
+                    P = c.$_$.af,
+                    F = c.$_$.al,
+                    I = n.$_$.i,
+                    M = n.$_$.j,
+                    S = n.$_$.n,
+                    H = n.$_$.m,
+                    K = n.$_$.k,
+                    L = n.$_$.l,
+                    O = n.$_$.p,
+                    X = n.$_$.s,
+                    G = c.$_$.gc,
+                    J = n.$_$.r,
+                    Q = e.$_$.c;
                 function U() {}
                 function V() {}
-                function W(c) {
-                    this.ecs_1 = c;
+                function W(t) {
+                    this.hct_1 = t;
                 }
-                function Y(c, n, t, s) {
-                    (n = n === r ? null : n), (t = t === r ? null : t), (s = s === r ? null : s), (this.fcs_1 = c);
-                    this.gcs_1 = null == n ? y() : n;
-                    this.hcs_1 =
-                        null == t
-                            ? (function (c, n) {
-                                  n.ea().equals(_()) ? c.yap() : n.bcq(new ic(c));
-                                  return c;
-                              })(g(), this.fcs_1)
-                            : t;
-                    this.ics_1 = null == s ? C() : s;
-                    var e,
+                function Y(t, c, n, e) {
+                    (c = c === u ? null : c), (n = n === u ? null : n), (e = e === u ? null : e), (this.ict_1 = t);
+                    this.jct_1 = null == c ? x() : c;
+                    this.kct_1 =
+                        null == n
+                            ? (function (t, c) {
+                                  c.ea().equals(_()) ? t.kaq() : c.ecr(new it(t));
+                                  return t;
+                              })(g(), this.ict_1)
+                            : n;
+                    this.lct_1 = null == e ? z() : e;
+                    var r,
                         i =
-                            (((e = function (c, n, t, s) {
-                                return new Y(c, n, t, s);
+                            (((r = function (t, c, n, e) {
+                                return new Y(t, c, n, e);
                             }).callableName = "<init>"),
-                            e);
-                    this.jcs_1 = new W(i);
+                            r);
+                    this.mct_1 = new W(i);
                 }
-                function Z(c) {
-                    return c.ea().equals(_());
+                function Z(t) {
+                    return t.ea().equals(_());
                 }
-                function cc(c) {
-                    c.ocs_1.ucq(c.vcq() && c.ncs_1.vcq());
+                function tt(t) {
+                    t.rct_1.xcr(t.ycr() && t.qct_1.ycr());
                 }
-                function nc(c, n) {
-                    (this.rcs_1 = n), T.call(this, c);
+                function ct(t, c) {
+                    (this.uct_1 = c), N.call(this, t);
                 }
-                function tc(c, n, t, s) {
-                    (s = s === r ? C() : s), (this.mcs_1 = c), (this.ncs_1 = s);
-                    var e,
+                function nt(t, c, n, e) {
+                    (e = e === u ? z() : e), (this.pct_1 = t), (this.qct_1 = e);
+                    var r,
                         i =
-                            ((e = this.ncs_1),
-                            function (c) {
+                            ((r = this.qct_1),
+                            function (t) {
                                 return (
-                                    (function (c, n) {
-                                        c.ucr(n);
-                                    })(e, c),
-                                    u
+                                    (function (t, c) {
+                                        t.xcs(c);
+                                    })(r, t),
+                                    a
                                 );
                             }),
-                        a = (function (c) {
-                            var n = function (n) {
-                                return c.vcr(n), u;
+                        s = (function (t) {
+                            var c = function (c) {
+                                return t.ycs(c), a;
                             };
-                            return (n.callableName = "progressPredictiveBack"), n;
-                        })(this.ncs_1),
-                        o = (function (c) {
-                            var n = function () {
-                                return c.wcr(), u;
+                            return (c.callableName = "progressPredictiveBack"), c;
+                        })(this.qct_1),
+                        o = (function (t) {
+                            var c = function () {
+                                return t.zcs(), a;
                             };
-                            return (n.callableName = "cancelPredictiveBack"), n;
-                        })(this.ncs_1);
-                    this.ocs_1 = R(
+                            return (c.callableName = "cancelPredictiveBack"), c;
+                        })(this.qct_1);
+                    this.rct_1 = E(
                         !1,
-                        t,
+                        n,
                         i,
-                        a,
+                        s,
                         o,
-                        (function (c) {
+                        (function (t) {
                             return function () {
-                                return c.tcr(), u;
+                                return t.wcs(), a;
                             };
-                        })(this.ncs_1),
+                        })(this.qct_1),
                     );
                     var _;
-                    (this.pcs_1 = new nc(n, this)),
-                        this.ncs_1.wcq(
+                    (this.sct_1 = new ct(c, this)),
+                        this.qct_1.zcr(
                             ((_ = this),
-                            function (c) {
-                                return cc(_), u;
+                            function (t) {
+                                return tt(_), a;
                             }),
                         );
                 }
-                function sc() {
-                    this.scs_1 = g();
+                function et() {
+                    this.vct_1 = g();
                 }
-                function ec(c, n) {
-                    (this.tcs_1 = c), (this.ucs_1 = n);
+                function rt(t, c) {
+                    (this.wct_1 = t), (this.xct_1 = c);
                 }
-                function ic(c) {
-                    this.vcs_1 = c;
+                function it(t) {
+                    this.yct_1 = t;
                 }
-                function rc(c, n) {
-                    switch (n.y2_1) {
+                function ut(t, c) {
+                    switch (c.y2_1) {
                         case 0:
-                            !(function (c) {
-                                switch (c.wcs_1.ea().y2_1) {
+                            !(function (t) {
+                                switch (t.zct_1.ea().y2_1) {
                                     case 0:
                                         break;
                                     case 1:
-                                        I(c.wcs_1), M(c.wcs_1);
+                                        I(t.zct_1), M(t.zct_1);
                                         break;
                                     case 2:
                                     case 3:
                                     case 4:
-                                        M(c.wcs_1);
+                                        M(t.zct_1);
                                         break;
                                     default:
                                         F();
                                 }
-                            })(c);
+                            })(t);
                             break;
                         case 1:
                             break;
                         case 2:
-                            !(function (c) {
-                                switch (c.wcs_1.ea().y2_1) {
+                            !(function (t) {
+                                switch (t.zct_1.ea().y2_1) {
                                     case 0:
                                     case 2:
                                         break;
                                     case 1:
-                                        I(c.wcs_1);
+                                        I(t.zct_1);
                                         break;
                                     case 3:
                                     case 4:
-                                        S(c.wcs_1);
+                                        S(t.zct_1);
                                         break;
                                     default:
                                         F();
                                 }
-                            })(c);
+                            })(t);
                             break;
                         case 3:
-                            !(function (c) {
-                                switch (c.wcs_1.ea().y2_1) {
+                            !(function (t) {
+                                switch (t.zct_1.ea().y2_1) {
                                     case 1:
                                     case 2:
-                                        H(c.wcs_1);
+                                        H(t.zct_1);
                                         break;
                                     case 4:
-                                        K(c.wcs_1);
+                                        K(t.zct_1);
                                         break;
                                     case 0:
                                     case 3:
@@ -230,15 +230,15 @@
                                     default:
                                         F();
                                 }
-                            })(c);
+                            })(t);
                             break;
                         case 4:
-                            !(function (c) {
-                                switch (c.wcs_1.ea().y2_1) {
+                            !(function (t) {
+                                switch (t.zct_1.ea().y2_1) {
                                     case 1:
                                     case 2:
                                     case 3:
-                                        L(c.wcs_1);
+                                        L(t.zct_1);
                                         break;
                                     case 4:
                                     case 0:
@@ -246,323 +246,323 @@
                                     default:
                                         F();
                                 }
-                            })(c);
+                            })(t);
                             break;
                         default:
                             F();
                     }
                 }
-                function uc(c) {
-                    this.xcs_1 = c;
+                function at(t) {
+                    this.acu_1 = t;
                 }
-                function ac(c, n, t, s) {
-                    (this.ycs_1 = c), (this.zcs_1 = n), (this.act_1 = t), (this.bct_1 = s);
+                function st(t, c, n, e) {
+                    (this.bcu_1 = t), (this.ccu_1 = c), (this.dcu_1 = n), (this.ecu_1 = e);
                 }
-                function oc(c, n, t) {
-                    this.wcs_1 = c;
-                    var s,
-                        e,
+                function ot(t, c, n) {
+                    this.zct_1 = t;
+                    var e,
+                        r,
                         i,
-                        r = { _v: n.ea().equals(_()) ? _() : J() },
-                        a = { _v: t.ea().equals(_()) ? _() : J() };
-                    if ((rc(this, G(r._v, a._v)), !r._v.equals(_()) && !a._v.equals(_()))) {
-                        var o = new uc(
-                                ((s = r),
-                                (e = this),
-                                (i = a),
-                                function (c) {
-                                    return (s._v = c), rc(e, G(c, i._v)), u;
+                        u = { _v: c.ea().equals(_()) ? _() : J() },
+                        s = { _v: n.ea().equals(_()) ? _() : J() };
+                    if ((ut(this, G(u._v, s._v)), !u._v.equals(_()) && !s._v.equals(_()))) {
+                        var o = new at(
+                                ((e = u),
+                                (r = this),
+                                (i = s),
+                                function (t) {
+                                    return (e._v = t), ut(r, G(t, i._v)), a;
                                 }),
                             ),
-                            l = new uc(
-                                (function (c, n, t) {
-                                    return function (s) {
-                                        return (c._v = s), rc(n, G(s, t._v)), u;
+                            l = new at(
+                                (function (t, c, n) {
+                                    return function (e) {
+                                        return (t._v = e), ut(c, G(e, n._v)), a;
                                     };
-                                })(a, this, r),
+                                })(s, this, u),
                             );
-                        n.bcq(o), t.bcq(l);
-                        var f = this.wcs_1;
-                        f.ea().equals(_()) ? (n.kcq(o), t.kcq(l)) : f.bcq(new ac(n, o, t, l));
+                        c.ecr(o), n.ecr(l);
+                        var f = this.zct_1;
+                        f.ea().equals(_()) ? (c.ncr(o), n.ncr(l)) : f.ecr(new st(c, o, n, l));
                     }
                 }
-                function _c(c, n) {
-                    (this.cct_1 = c), (this.dct_1 = n);
+                function _t(t, c) {
+                    (this.fcu_1 = t), (this.gcu_1 = c);
                 }
-                b(U, r, r, r, [v]),
+                q(U, u, u, u, [d]),
                     w(V, "ComponentContextFactory"),
-                    b(W, "sam$com_arkivanov_decompose_ComponentContextFactory$0", r, r, [V, k]),
-                    b(Y, "DefaultComponentContext"),
-                    b(nc, r, r, T),
-                    b(tc, "DefaultChildBackHandler"),
-                    b(sc, "ChildInstanceKeeperProvider", sc, r, [B]),
-                    b(ec, r, r, r, [v]),
-                    b(ic, r, r, r, [v]),
-                    b(uc, "CallbacksImpl", r, r, [v]),
-                    b(ac, r, r, r, [v]),
-                    b(oc, "MergedLifecycle"),
-                    b(_c, r, r, r, [v]),
-                    (l(U).xap = function () {
-                        throw o(a("The lifecycle of a child ComponentContext must never be destroyed manually."));
+                    q(W, "sam$com_arkivanov_decompose_ComponentContextFactory$0", u, u, [V, m]),
+                    q(Y, "DefaultComponentContext"),
+                    q(ct, u, u, N),
+                    q(nt, "DefaultChildBackHandler"),
+                    q(et, "ChildInstanceKeeperProvider", et, u, [B]),
+                    q(rt, u, u, u, [d]),
+                    q(it, u, u, u, [d]),
+                    q(at, "CallbacksImpl", u, u, [d]),
+                    q(st, u, u, u, [d]),
+                    q(ot, "MergedLifecycle"),
+                    q(_t, u, u, u, [d]),
+                    (l(U).jaq = function () {
+                        throw o(s("The lifecycle of a child ComponentContext must never be destroyed manually."));
                     }),
-                    (l(W).dcs = function (c, n, t, s) {
-                        return this.ecs_1(c, n, t, s);
+                    (l(W).gct = function (t, c, n, e) {
+                        return this.hct_1(t, c, n, e);
                     }),
                     (l(W).a4 = function () {
-                        return this.ecs_1;
+                        return this.hct_1;
                     }),
-                    (l(W).equals = function (c) {
-                        var n;
-                        null != c && m(c, V) ? (n = !(null == c || !m(c, k)) && d(this.a4(), c.a4())) : (n = !1);
-                        return n;
+                    (l(W).equals = function (t) {
+                        var c;
+                        null != t && p(t, V) ? (c = !(null == t || !p(t, m)) && k(this.a4(), t.a4())) : (c = !1);
+                        return c;
                     }),
                     (l(W).hashCode = function () {
-                        return x(this.a4());
+                        return y(this.a4());
                     }),
-                    (l(Y).zcr = function () {
-                        return this.fcs_1;
+                    (l(Y).cct = function () {
+                        return this.ict_1;
                     }),
-                    (l(Y).acs = function () {
-                        return this.gcs_1;
+                    (l(Y).dct = function () {
+                        return this.jct_1;
                     }),
-                    (l(Y).bcs = function () {
-                        return this.hcs_1;
+                    (l(Y).ect = function () {
+                        return this.kct_1;
                     }),
-                    (l(Y).ccs = function () {
-                        return this.ics_1;
+                    (l(Y).fct = function () {
+                        return this.lct_1;
                     }),
-                    (l(Y).ycr = function () {
-                        return this.jcs_1;
+                    (l(Y).bct = function () {
+                        return this.mct_1;
                     }),
-                    (l(nc).qcq = function (c, n, t) {
-                        return cc(this.rcs_1), u;
+                    (l(ct).tcr = function (t, c, n) {
+                        return tt(this.uct_1), a;
                     }),
-                    (l(nc).rl = function (c, n, t) {
-                        var s = null == n || null != n ? n : E();
-                        return this.qcq(c, s, null == t || null != t ? t : E());
+                    (l(ct).rl = function (t, c, n) {
+                        var e = null == c || null != c ? c : T();
+                        return this.tcr(t, e, null == n || null != n ? n : T());
                     }),
-                    (l(tc).ucq = function (c) {
-                        return this.pcs_1.ul(
+                    (l(nt).xcr = function (t) {
+                        return this.sct_1.ul(
                             this,
                             A(
                                 "isEnabled",
                                 1,
-                                j,
-                                function (c) {
-                                    return c.vcq();
+                                R,
+                                function (t) {
+                                    return t.ycr();
                                 },
-                                function (c, n) {
-                                    return c.ucq(n);
+                                function (t, c) {
+                                    return t.xcr(c);
                                 },
                             ),
-                            c,
+                            t,
                         );
                     }),
-                    (l(tc).vcq = function () {
-                        return this.pcs_1.nl(
+                    (l(nt).ycr = function () {
+                        return this.sct_1.nl(
                             this,
                             A(
                                 "isEnabled",
                                 1,
-                                j,
-                                function (c) {
-                                    return c.vcq();
+                                R,
+                                function (t) {
+                                    return t.ycr();
                                 },
-                                function (c, n) {
-                                    return c.ucq(n);
+                                function (t, c) {
+                                    return t.xcr(c);
                                 },
                             ),
                         );
                     }),
-                    (l(tc).kcs = function () {
-                        this.mcs_1.qcr(this.ocs_1) || this.mcs_1.rcr(this.ocs_1);
+                    (l(nt).nct = function () {
+                        this.pct_1.tcs(this.rct_1) || this.pct_1.ucs(this.rct_1);
                     }),
-                    (l(tc).lcs = function () {
-                        this.mcs_1.qcr(this.ocs_1) && this.mcs_1.scr(this.ocs_1);
+                    (l(nt).oct = function () {
+                        this.pct_1.tcs(this.rct_1) && this.pct_1.vcs(this.rct_1);
                     }),
-                    (l(tc).qcr = function (c) {
-                        return this.ncs_1.qcr(c);
+                    (l(nt).tcs = function (t) {
+                        return this.qct_1.tcs(t);
                     }),
-                    (l(tc).rcr = function (c) {
-                        this.ncs_1.rcr(c);
+                    (l(nt).ucs = function (t) {
+                        this.qct_1.ucs(t);
                     }),
-                    (l(tc).scr = function (c) {
-                        this.ncs_1.scr(c);
+                    (l(nt).vcs = function (t) {
+                        this.qct_1.vcs(t);
                     }),
-                    (l(sc).xap = function () {
-                        this.scs_1.yap();
+                    (l(et).jaq = function () {
+                        this.vct_1.kaq();
                     }),
-                    (l(ec).xap = function () {
-                        var c = this.tcs_1.d5t(this.ucs_1);
-                        null == c || c.xap();
+                    (l(rt).jaq = function () {
+                        var t = this.wct_1.d5t(this.xct_1);
+                        null == t || t.jaq();
                     }),
-                    (l(ic).xap = function () {
-                        this.vcs_1.yap();
+                    (l(it).jaq = function () {
+                        this.yct_1.kaq();
                     }),
-                    (l(uc).xcp = function () {
-                        this.xcs_1(O());
+                    (l(at).acr = function () {
+                        this.acu_1(O());
                     }),
-                    (l(uc).i1c = function () {
-                        this.xcs_1(z());
+                    (l(at).i1c = function () {
+                        this.acu_1(C());
                     }),
-                    (l(uc).ycp = function () {
-                        this.xcs_1(X());
+                    (l(at).bcr = function () {
+                        this.acu_1(X());
                     }),
-                    (l(uc).zcp = function () {
-                        this.xcs_1(z());
+                    (l(at).ccr = function () {
+                        this.acu_1(C());
                     }),
-                    (l(uc).acq = function () {
-                        this.xcs_1(O());
+                    (l(at).dcr = function () {
+                        this.acu_1(O());
                     }),
-                    (l(uc).xap = function () {
-                        this.xcs_1(_());
+                    (l(at).jaq = function () {
+                        this.acu_1(_());
                     }),
-                    (l(ac).xap = function () {
-                        this.ycs_1.kcq(this.zcs_1), this.act_1.kcq(this.bct_1);
+                    (l(st).jaq = function () {
+                        this.bcu_1.ncr(this.ccu_1), this.dcu_1.ncr(this.ecu_1);
                     }),
-                    (l(oc).bcq = function (c) {
-                        this.wcs_1.bcq(c);
+                    (l(ot).ecr = function (t) {
+                        this.zct_1.ecr(t);
                     }),
-                    (l(oc).kcq = function (c) {
-                        this.wcs_1.kcq(c);
+                    (l(ot).ncr = function (t) {
+                        this.zct_1.ncr(t);
                     }),
-                    (l(oc).ea = function () {
-                        return this.wcs_1.ea();
+                    (l(ot).ea = function () {
+                        return this.zct_1.ea();
                     }),
-                    (l(_c).xap = function () {
-                        this.cct_1.ocp(this.dct_1);
+                    (l(_t).jaq = function () {
+                        this.fcu_1.rcq(this.gcu_1);
                     }),
-                    (l(U).xcp = f),
+                    (l(U).acr = f),
                     (l(U).i1c = h),
-                    (l(U).ycp = $),
-                    (l(U).zcp = p),
-                    (l(U).acq = q),
-                    (l(ec).xcp = f),
-                    (l(ec).i1c = h),
-                    (l(ec).ycp = $),
-                    (l(ec).zcp = p),
-                    (l(ec).acq = q),
-                    (l(ic).xcp = f),
-                    (l(ic).i1c = h),
-                    (l(ic).ycp = $),
-                    (l(ic).zcp = p),
-                    (l(ic).acq = q),
-                    (l(ac).xcp = f),
-                    (l(ac).i1c = h),
-                    (l(ac).ycp = $),
-                    (l(ac).zcp = p),
-                    (l(ac).acq = q),
-                    (l(_c).xcp = f),
-                    (l(_c).i1c = h),
-                    (l(_c).ycp = $),
-                    (l(_c).zcp = p),
-                    (l(_c).acq = q),
-                    (c.$_$ = c.$_$ || {}),
-                    (c.$_$.a = Y),
-                    (c.$_$.b = function (c, n, t) {
-                        if (null == (t = t === r ? null : t));
+                    (l(U).bcr = $),
+                    (l(U).ccr = v),
+                    (l(U).dcr = b),
+                    (l(rt).acr = f),
+                    (l(rt).i1c = h),
+                    (l(rt).bcr = $),
+                    (l(rt).ccr = v),
+                    (l(rt).dcr = b),
+                    (l(it).acr = f),
+                    (l(it).i1c = h),
+                    (l(it).bcr = $),
+                    (l(it).ccr = v),
+                    (l(it).dcr = b),
+                    (l(st).acr = f),
+                    (l(st).i1c = h),
+                    (l(st).bcr = $),
+                    (l(st).ccr = v),
+                    (l(st).dcr = b),
+                    (l(_t).acr = f),
+                    (l(_t).i1c = h),
+                    (l(_t).bcr = $),
+                    (l(_t).ccr = v),
+                    (l(_t).dcr = b),
+                    (t.$_$ = t.$_$ || {}),
+                    (t.$_$.a = Y),
+                    (t.$_$.b = function (t, c, n) {
+                        if (null == (n = n === u ? null : n));
                         else {
-                            if (t.ea().equals(_())) {
-                                throw o(a("The lifecycle of a child ComponentContext must never be destroyed manually."));
+                            if (n.ea().equals(_())) {
+                                throw o(s("The lifecycle of a child ComponentContext must never be destroyed manually."));
                             }
-                            t.bcq(new U());
+                            n.ecr(new U());
                         }
-                        return c.ycr().dcs(
-                            null == t
-                                ? c.zcr()
-                                : (function (c, n, t) {
-                                      return oc.call(t, D(), c, n), t;
-                                  })(c.zcr(), t, P(l(oc))),
-                            (function (c, n, t) {
-                                if (((t = t === r ? null : t), !!c.ncp(n))) {
-                                    throw o(a('The key "' + n + '" is already in use.'));
+                        return t.bct().gct(
+                            null == n
+                                ? t.cct()
+                                : (function (t, c, n) {
+                                      return ot.call(n, D(), t, c), n;
+                                  })(t.cct(), n, P(l(ot))),
+                            (function (t, c, n) {
+                                if (((n = n === u ? null : n), !!t.qcq(c))) {
+                                    throw o(s('The key "' + c + '" is already in use.'));
                                 }
-                                var s = y(c.lcp(n, Q.x6g()));
-                                if (null == t) {
-                                    var e = Q.x6g();
-                                    c.mcp(
-                                        n,
-                                        e,
-                                        ((u = s),
+                                var e = x(t.ocq(c, Q.x6g()));
+                                if (null == n) {
+                                    var r = Q.x6g();
+                                    t.pcq(
+                                        c,
+                                        r,
+                                        ((a = e),
                                         ((l = function () {
-                                            return u.kcp();
+                                            return a.ncq();
                                         }).callableName = "save"),
                                         l),
                                     );
-                                } else if (!Z(t)) {
+                                } else if (!Z(n)) {
                                     var i = Q.x6g();
-                                    c.mcp(
-                                        n,
+                                    t.pcq(
+                                        c,
                                         i,
-                                        (function (c) {
-                                            var n = function () {
-                                                return c.kcp();
+                                        (function (t) {
+                                            var c = function () {
+                                                return t.ncq();
                                             };
-                                            return (n.callableName = "save"), n;
-                                        })(s),
+                                            return (c.callableName = "save"), c;
+                                        })(e),
                                     ),
-                                        t.ea().equals(_()) ? c.ocp(n) : t.bcq(new _c(c, n));
+                                        n.ea().equals(_()) ? t.rcq(c) : n.ecr(new _t(t, c));
                                 }
-                                var u, l;
-                                return s;
-                            })(c.acs(), n, t),
-                            (function (c, n, t) {
-                                var s;
-                                if (((t = t === r ? null : t), null != t && Z(t))) s = g();
+                                var a, l;
+                                return e;
+                            })(t.dct(), c, n),
+                            (function (t, c, n) {
+                                var e;
+                                if (((n = n === u ? null : n), null != n && Z(n))) e = g();
                                 else {
-                                    var e = c.vap(n),
-                                        i = null == e || m(e, B) ? e : E();
-                                    null == i && ((i = new sc()), c.wap(n, i));
-                                    var u = i.scs_1;
-                                    if (null == t);
-                                    else if (t.ea().equals(_())) {
-                                        var a = c.d5t(n);
-                                        null == a || a.xap();
-                                    } else t.bcq(new ec(c, n));
-                                    s = u;
+                                    var r = t.haq(c),
+                                        i = null == r || p(r, B) ? r : T();
+                                    null == i && ((i = new et()), t.iaq(c, i));
+                                    var a = i.vct_1;
+                                    if (null == n);
+                                    else if (n.ea().equals(_())) {
+                                        var s = t.d5t(c);
+                                        null == s || s.jaq();
+                                    } else n.ecr(new rt(t, c));
+                                    e = a;
                                 }
-                                return s;
-                            })(c.bcs(), n, t),
-                            (function (c, n, t) {
-                                n = n === r ? null : n;
-                                var s = (function (c, n, t) {
-                                    return (t = t === r ? 0 : t), new tc(c, (n = n === r || n), t);
-                                })(c, !1, (t = t === r ? 0 : t));
-                                if (null == n) s.ucq(!0), s.kcs();
-                                else if (!Z(n)) {
-                                    s.ucq(n.ea().b3(z()) >= 0), s.kcs();
-                                    var e =
-                                            ((_ = s),
+                                return e;
+                            })(t.ect(), c, n),
+                            (function (t, c, n) {
+                                c = c === u ? null : c;
+                                var e = (function (t, c, n) {
+                                    return (n = n === u ? 0 : n), new nt(t, (c = c === u || c), n);
+                                })(t, !1, (n = n === u ? 0 : n));
+                                if (null == c) e.xcr(!0), e.nct();
+                                else if (!Z(c)) {
+                                    e.xcr(c.ea().b3(C()) >= 0), e.nct();
+                                    var r =
+                                            ((_ = e),
                                             function () {
-                                                return _.ucq(!0), u;
+                                                return _.xcr(!0), a;
                                             }),
-                                        i = (function (c) {
+                                        i = (function (t) {
                                             return function () {
-                                                return c.ucq(!1), u;
+                                                return t.xcr(!1), a;
                                             };
-                                        })(s);
-                                    N(
-                                        n,
+                                        })(e);
+                                    j(
+                                        c,
+                                        u,
                                         r,
-                                        e,
-                                        r,
-                                        r,
+                                        u,
+                                        u,
                                         i,
-                                        ((a = s),
+                                        ((s = e),
                                         ((o = function () {
-                                            return a.lcs(), u;
+                                            return s.oct(), a;
                                         }).callableName = "stop"),
                                         o),
                                     );
                                 }
-                                var a, o;
+                                var s, o;
                                 var _;
-                                return s;
-                            })(c.ccs(), t),
+                                return e;
+                            })(t.fct(), n),
                         );
                     });
-            })(c.exports, t(519039), t(54279), t(440172), t(538264), t(112433));
+            })(t.exports, n(519039), n(54279), n(440172), n(538264), n(112433));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-5d959941.a499633a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-5d959941.21b292ba.js.map

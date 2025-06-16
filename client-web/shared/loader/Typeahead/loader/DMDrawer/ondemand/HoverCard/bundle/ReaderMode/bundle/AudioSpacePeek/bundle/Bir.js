@@ -7,9 +7,9 @@
             o(136728);
             var n = o(202784),
                 i = o(190286),
-                s = o(970187),
-                l = o(111677),
-                a = o.n(l),
+                l = o(970187),
+                s = o(111677),
+                a = o.n(s),
                 r = o(615656),
                 c = o(666670),
                 d = o(757953),
@@ -31,10 +31,10 @@
                     .propsFromActions(() => ({ addToast: S.fz, cancelPendingFollow: C.ZP.cancelPendingFollow, createLocalApiErrorHandler: (0, g.zr)("FOLLOW_USER_BUTTON"), fetchOneUserIfNeeded: C.ZP.fetchOneIfNeeded, follow: C.ZP.follow, unblock: C.ZP.unblock, unfollow: C.ZP.unfollow }))
                     .withAnalytics(),
                 x = (e) => `${e}-follow`,
-                B = (e) => `${e}-unfollow`,
-                L = (e) => `${e}-block`,
-                P = (e) => `${e}-unblock`,
-                v = (e) => `${e}-cancel`,
+                v = (e) => `${e}-unfollow`,
+                B = (e) => `${e}-block`,
+                L = (e) => `${e}-unblock`,
+                P = (e) => `${e}-cancel`,
                 k = (e) => `${e}-subscribe`,
                 E = (e) => `${e}-manageSubscription`,
                 A = a().hbe4feb5,
@@ -60,8 +60,8 @@
                             o && e(o.id_str).catch(t({ defaultToast: { text: U }, showToast: !0 }));
                         }),
                         (this._handleLoggedInFollow = () => {
-                            const { addToast: e, createLocalApiErrorHandler: t, follow: o, isFollowNudge: n, onFollowClick: i, promotedContent: s, user: l } = this.props;
-                            l && o(l.id_str, { promotedContent: s, isFollowNudge: n }).then(() => (l.protected && e({ text: A({ screenName: l.screen_name }) }), i && i(), this._scribe({ action: "follow" })), t({ ...this._followApiErrorHandlingConfiguration, showToast: !0 }));
+                            const { addToast: e, createLocalApiErrorHandler: t, follow: o, isFollowNudge: n, onFollowClick: i, promotedContent: l, user: s } = this.props;
+                            s && o(s.id_str, { promotedContent: l, isFollowNudge: n }).then(() => (s.protected && e({ text: A({ screenName: s.screen_name }) }), i && i(), this._scribe({ action: "follow" })), t({ ...this._followApiErrorHandlingConfiguration, showToast: !0 }));
                         }),
                         (this._handleLoggedOutFollow = () => {
                             this._scribe({ action: "follow_attempt" });
@@ -106,11 +106,11 @@
                         });
                 }
                 render() {
-                    const { buttonType: e, isLoggedIn: t, isSuperFollowSubscriptionEnabled: o, isTransparent: l, relationshipMode: a, showRelationshipChangeConfirmation: r, size: c, style: d, user: u, userId: p } = this.props,
+                    const { buttonType: e, isLoggedIn: t, isSuperFollowSubscriptionEnabled: o, isTransparent: s, relationshipMode: a, showRelationshipChangeConfirmation: r, size: c, style: d, user: u, userId: p } = this.props,
                         { dialogHeadline: h, dialogText: m, showDialog: w } = this.state,
                         g = u?.screen_name,
                         _ = g ? `/${g}` : "",
-                        y = { follow: x(p), unfollow: B(p), cancel: v(p), block: L(p), unblock: P(p), subscribe: k(p), manageSubscription: E(p) },
+                        y = { follow: x(p), unfollow: v(p), cancel: P(p), block: B(p), unblock: L(p), subscribe: k(p), manageSubscription: E(p) },
                         S = !(!u?.follow_request_sent || !u.protected || u.following);
                     return (
                         !!u &&
@@ -118,17 +118,17 @@
                             n.Fragment,
                             null,
                             w ? n.createElement(i.Z, { confirmButtonLabel: M, headline: h, onCancel: this._handleClose, onConfirm: this._handleClose, text: m, withCancelButton: !1 }) : null,
-                            n.createElement(f.Z, { displayMode: b.BH.follow, postLoginPath: _, userFullName: u.name, userId: p }, (i) => n.createElement(s.Z, { buttonType: e, isBlocking: u.blocking, isFollowRequestSent: S, isFollowed: !!u.followed_by, isFollowing: !!u.following, isSuperFollowEligible: !!o && u.super_follow_eligible, isSuperFollowing: u.super_following, isTransparent: l, name: g, onCancelPendingFollow: i(this._handleCancelPendingFollow), onFollow: i(this._handleLoggedInFollow, this._handleLoggedOutFollow), onSuperFollow: i(this._handleSuperFollow), onUnSuperFollow: i(this._handleUnSuperFollow), onUnblock: i(this._handleUnblock), onUnfollow: i(this._handleUnfollow), relationshipMode: a, showRelationshipChangeConfirmation: t && r, size: c, style: d, testIDs: y, type: "user" })),
+                            n.createElement(f.Z, { displayMode: b.BH.follow, postLoginPath: _, userFullName: u.name, userId: p }, (i) => n.createElement(l.Z, { buttonType: e, isBlocking: u.blocking, isFollowRequestSent: S, isFollowed: !!u.followed_by, isFollowing: !!u.following, isSuperFollowEligible: !!o && u.super_follow_eligible, isSuperFollowing: u.super_following, isTransparent: s, name: g, onCancelPendingFollow: i(this._handleCancelPendingFollow), onFollow: i(this._handleLoggedInFollow, this._handleLoggedOutFollow), onSuperFollow: i(this._handleSuperFollow), onUnSuperFollow: i(this._handleUnSuperFollow), onUnblock: i(this._handleUnblock), onUnfollow: i(this._handleUnfollow), relationshipMode: a, showRelationshipChangeConfirmation: t && r, size: c, style: d, testIDs: y, type: "user" })),
                         )
                     );
                 }
                 _scribe(e) {
                     const { action: t, element: o } = e,
-                        { analytics: n, location: i, promotedContent: s, user: l } = this.props,
+                        { analytics: n, location: i, promotedContent: l, user: s } = this.props,
                         { items: a } = n.contextualScribeData,
-                        r = a?.find((e) => e.item_type === h.Z.ItemType.USER && e.id === l?.id_str),
+                        r = a?.find((e) => e.item_type === h.Z.ItemType.USER && e.id === s?.id_str),
                         c = [];
-                    l ? c.push({ ...r, ...m.Z.getUserItem(l, s) }) : r && c.push(r);
+                    s ? c.push({ ...r, ...m.Z.getUserItem(s, l) }) : r && c.push(r);
                     const d = i.query && i.query.screen_name ? { items: c, context: "profile_intent" } : { items: c };
                     return n.scribe({ element: o, action: t, data: d });
                 }
@@ -139,9 +139,9 @@
             o.d(t, { BH: () => O, Qj: () => j, Wc: () => z, sI: () => $ });
             var n = o(202784),
                 i = o(731708),
-                s = o(392237),
-                l = o(111677),
-                a = o.n(l),
+                l = o(392237),
+                s = o(111677),
+                a = o.n(s),
                 r = o(911373),
                 c = o(761744),
                 d = o(98440),
@@ -160,10 +160,10 @@
                 F = ({ userFullName: e }) => (e ? n.createElement(a().I18NFormatMessage, { $i18n: "e1a49407" }, n.createElement(i.ZP, null, e)) : void 0),
                 T = a().ae8b0564,
                 x = ({ userFullName: e }) => (e ? n.createElement(a().I18NFormatMessage, { $i18n: "be54ed41" }, n.createElement(i.ZP, null, e)) : void 0),
-                B = a().f2adab0e,
-                L = ({ userFullName: e }) => (e ? n.createElement(a().I18NFormatMessage, { $i18n: "jb19eb17" }, n.createElement(i.ZP, null, e)) : void 0),
-                P = ({ userFullName: e }) => (e ? n.createElement(a().I18NFormatMessage, { $i18n: "bbfee611" }, n.createElement(i.ZP, null, e)) : void 0),
-                v = a().b7821a74,
+                v = a().f2adab0e,
+                B = ({ userFullName: e }) => (e ? n.createElement(a().I18NFormatMessage, { $i18n: "jb19eb17" }, n.createElement(i.ZP, null, e)) : void 0),
+                L = ({ userFullName: e }) => (e ? n.createElement(a().I18NFormatMessage, { $i18n: "bbfee611" }, n.createElement(i.ZP, null, e)) : void 0),
+                P = a().b7821a74,
                 k = ({ userFullName: e }) => (e ? n.createElement(a().I18NFormatMessage, { $i18n: "af104f2b" }, n.createElement(i.ZP, null, e)) : void 0),
                 E = ({ customText: e }) => (e ? n.createElement(a().I18NFormatMessage, { $i18n: "ccc1f303" }, n.createElement(i.ZP, null, e)) : void 0),
                 A = ({ userFullName: e }) => (e ? n.createElement(a().I18NFormatMessage, { $i18n: "ce02fabf" }, n.createElement(i.ZP, null, e)) : void 0),
@@ -179,9 +179,9 @@
                 z = (e, t) => {
                     switch (t) {
                         case O.follow:
-                            return { icon: r.default, text: P, subtext: v, iconStyle: W.iconOther };
+                            return { icon: r.default, text: L, subtext: P, iconStyle: W.iconOther };
                         case O.like:
-                            return { icon: c.default, text: B, subtext: L, iconStyle: W.iconLike };
+                            return { icon: c.default, text: v, subtext: B, iconStyle: W.iconLike };
                         case O.reply:
                             return { icon: d.default, text: C, subtext: F, iconStyle: W.iconOther };
                         case O.retweet:
@@ -202,15 +202,15 @@
                 },
                 $ = (e) => (e.hasValue("responsive_web_use_app_prompt_copy_variant", "prompt_better") ? g : y),
                 j = (e) => (e.hasValue("responsive_web_use_app_prompt_copy_variant", "prompt_better") ? _ : S),
-                W = s.default.create((e) => ({ iconOther: { color: e.colors.blue500 }, iconLike: { color: e.colors.magenta500 }, iconTwitter: { color: e.colors.brandColor }, iconRetweet: { color: e.colors.green500 }, iconTopics: { color: e.colors.blue500 } }));
+                W = l.default.create((e) => ({ iconOther: { color: e.colors.blue500 }, iconLike: { color: e.colors.magenta500 }, iconTwitter: { color: e.colors.brandColor }, iconRetweet: { color: e.colors.green500 }, iconTopics: { color: e.colors.blue500 } }));
         },
         369241: (e, t, o) => {
-            o.d(t, { BH: () => L.BH, ZP: () => N });
+            o.d(t, { BH: () => B.BH, ZP: () => N });
             o(875640);
             var n = o(202784),
                 i = o(529356),
-                s = o(111677),
-                l = o.n(s),
+                l = o(111677),
+                s = o.n(l),
                 a = o(323265),
                 r = o(170542),
                 c = o(951790),
@@ -223,8 +223,8 @@
                 b = o(392237);
             class f extends n.PureComponent {
                 render() {
-                    const { onPrimaryButtonClick: e, onSecondaryButtonClick: t, primaryButtonLabel: o, primaryText: i, secondaryButtonLabel: s, secondaryText: l } = this.props;
-                    return n.createElement(h.Z.HalfSheet, null, n.createElement(p.Z, { style: g.sheetContent }, n.createElement(p.Z, { style: g.content }, n.createElement(p.Z, { style: g.header }, n.createElement(m.ZP, { color: "white", size: "headline1", weight: "bold" }, i)), n.createElement(m.ZP, { color: "white", style: g.secondaryText }, l)), n.createElement(p.Z, { style: g.footer }, n.createElement(w.ZP, { onPress: t, size: "medium", style: g.button, type: "onMediaOutlined" }, n.createElement(m.ZP, { numberOfLines: 1 }, s)), n.createElement(w.ZP, { onPress: e, size: "medium", style: g.button, type: "onMediaWhiteFilled" }, n.createElement(m.ZP, { numberOfLines: 1 }, o)))));
+                    const { onPrimaryButtonClick: e, onSecondaryButtonClick: t, primaryButtonLabel: o, primaryText: i, secondaryButtonLabel: l, secondaryText: s } = this.props;
+                    return n.createElement(h.Z.HalfSheet, null, n.createElement(p.Z, { style: g.sheetContent }, n.createElement(p.Z, { style: g.content }, n.createElement(p.Z, { style: g.header }, n.createElement(m.ZP, { color: "white", size: "headline1", weight: "bold" }, i)), n.createElement(m.ZP, { color: "white", style: g.secondaryText }, s)), n.createElement(p.Z, { style: g.footer }, n.createElement(w.ZP, { onPress: t, size: "medium", style: g.button, type: "onMediaOutlined" }, n.createElement(m.ZP, { numberOfLines: 1 }, l)), n.createElement(w.ZP, { onPress: e, size: "medium", style: g.button, type: "onMediaWhiteFilled" }, n.createElement(m.ZP, { numberOfLines: 1 }, o)))));
                 }
             }
             const g = b.default.create((e) => ({ content: { padding: e.spaces.space20 }, footer: { flexDirection: "row", justifyContent: "space-between", paddingBottom: e.spaces.space12, paddingHorizontal: e.spaces.space20, flexWrap: "wrap" }, button: { marginBottom: e.spaces.space4 }, header: { flexDirection: "row" }, secondaryText: { paddingTop: e.spaces.space12 }, sheetContent: { paddingBottom: b.default.iPhoneOffsetBottom, backgroundColor: e.colors.primary } })),
@@ -235,24 +235,24 @@
                 F = o(390387),
                 T = o(38562),
                 x = o(936572);
-            const B = (0, y.Z)()
+            const v = (0, y.Z)()
                 .propsFromState(() => ({ featureSwitchImpressions: S.ur, loginPromptShown: T.fj, loginPromptLastShown: x.ne, startLocation: C.Lg }))
                 .propsFromActions(() => ({ setLoginPromptShown: T.Af, setLoginReturnPath: F.Jm, updateSettings: T.VP }))
                 .withAnalytics();
-            var L = o(233391);
+            var B = o(233391);
             o(920099), o(856642), o(782826), o(903019);
-            const P = Object.freeze({ BannerSwitchToApp: "banner_switch_to_app", InterstitialSwitchToApp: "interstitial_switch_to_app", NuxAppDownload: "NUX-app-download", SwitchToAppFooter: "switch-to-app-footer", UseApp: "use-app", UseAppExtended: "use-app-extended", SwitchToAppHigh7: "switch_to_app_high_7", SwitchToAppHigh1: "switch_to_app_high_1", SwitchToAppHigh2: "switch_to_app_high_2", SwitchToAppHigh3: "switch_to_app_high_3", SwitchToAppHigh5: "switch_to_app_high_5", SwitchToAppLow7: "switch_to_app_low_7", SwitchToAppLow1: "switch_to_app_low_1", SwitchToAppLow3: "switch_to_app_low_3", SwitchToAppLow5: "switch_to_app_low_5", SwitchToAppLow9: "switch_to_app_low_9" }),
-                v = l().j607bf02,
-                k = l().j49fd4e8,
-                E = l().hd50e064,
-                A = l().a565833e,
-                H = l().e919c3bc;
+            const L = Object.freeze({ BannerSwitchToApp: "banner_switch_to_app", InterstitialSwitchToApp: "interstitial_switch_to_app", NuxAppDownload: "NUX-app-download", SwitchToAppFooter: "switch-to-app-footer", UseApp: "use-app", UseAppExtended: "use-app-extended", SwitchToAppHigh7: "switch_to_app_high_7", SwitchToAppHigh1: "switch_to_app_high_1", SwitchToAppHigh2: "switch_to_app_high_2", SwitchToAppHigh3: "switch_to_app_high_3", SwitchToAppHigh5: "switch_to_app_high_5", SwitchToAppLow7: "switch_to_app_low_7", SwitchToAppLow1: "switch_to_app_low_1", SwitchToAppLow3: "switch_to_app_low_3", SwitchToAppLow5: "switch_to_app_low_5", SwitchToAppLow9: "switch_to_app_low_9" }),
+                P = s().j607bf02,
+                k = s().j49fd4e8,
+                E = s().hd50e064,
+                A = s().a565833e,
+                H = s().e919c3bc;
             class Z extends n.Component {
                 constructor(e, t) {
                     super(e, t),
-                        (this._getFullSheetDisplayElements = L.Wc.bind(null, this.context.featureSwitches)),
-                        (this._getHalfSheetPrimaryText = L.sI.bind(null, this.context.featureSwitches)),
-                        (this._getHalfSheetSecondaryText = L.Qj.bind(null, this.context.featureSwitches)),
+                        (this._getFullSheetDisplayElements = B.Wc.bind(null, this.context.featureSwitches)),
+                        (this._getHalfSheetPrimaryText = B.sI.bind(null, this.context.featureSwitches)),
+                        (this._getHalfSheetSecondaryText = B.Qj.bind(null, this.context.featureSwitches)),
                         (this._isStandaloneApp = r.Z.isStandaloneApp()),
                         (this._shouldRenderPrompt = () => {
                             const { loginPromptLastShown: e, loginPromptShown: t, onlyShowOnce: o, useBottomBanner: n } = this.props,
@@ -283,13 +283,13 @@
                         (this._getSignupState = () => {
                             const { displayMode: e, tweetId: t, userId: o } = this.props;
                             switch (e) {
-                                case L.BH.follow:
+                                case B.BH.follow:
                                     return { gatedAction: { action: d.qJ.Follow, user_id: o } };
-                                case L.BH.like:
+                                case B.BH.like:
                                     return { gatedAction: { action: d.qJ.Favorite, tweet_id: t, user_id: o } };
-                                case L.BH.reply:
+                                case B.BH.reply:
                                     return { gatedAction: { action: d.qJ.Reply, tweet_id: t, user_id: o } };
-                                case L.BH.retweet:
+                                case B.BH.retweet:
                                     return { gatedAction: { action: d.qJ.Retweet, tweet_id: t, user_id: o } };
                                 default:
                                     return;
@@ -304,7 +304,7 @@
                     this._showTertiaryCTA = this._hasMobileAppStore() && !this._isStandaloneApp && this.context.featureSwitches.isTrue("responsive_web_login_signup_sheet_app_install_cta_enabled");
                     const n = this.context.featureSwitches.getNumberValue("rweb_update_fatigue_switch_to_app_day_timeout"),
                         i = this.context.featureSwitches.getStringValue("rweb_update_fatigue_switch_to_app_link");
-                    this.state = { displayInterval: o ? 864e5 * n : 0, switchToAppLink: P[i] };
+                    this.state = { displayInterval: o ? 864e5 * n : 0, switchToAppLink: L[i] };
                 }
                 componentDidMount() {
                     this._shouldRenderPrompt() && this._scribeAction("impression");
@@ -314,15 +314,15 @@
                     !e && t && (o(!0), n({ loginPromptLastShown: Date.now() }));
                 }
                 render() {
-                    const { allowBackNavigation: e, customText: t, displayMode: o, hideSignUp: s, isFullHeightOnMobile: l, loginLabel: a, useBottomBanner: r, userFullName: c } = this.props;
+                    const { allowBackNavigation: e, customText: t, displayMode: o, hideSignUp: l, isFullHeightOnMobile: s, loginLabel: a, useBottomBanner: r, userFullName: c } = this.props;
                     if (!this._shouldRenderPrompt()) return null;
                     const { icon: d, iconStyle: u, subtext: p, text: h } = this._getFullSheetDisplayElements(o),
                         m = "function" == typeof h ? h({ customText: t, userFullName: c }) : h,
                         w = "function" == typeof p ? p({ customText: t, userFullName: c }) : p,
-                        b = s ? "" : this.props.signupLabel,
+                        b = l ? "" : this.props.signupLabel,
                         f = { pathname: "/i/flow/login", state: this._getLoginState() },
                         g = { pathname: "/i/flow/signup", state: this._getSignupState() };
-                    return r ? n.createElement(_, { onPrimaryButtonClick: this._handleAppInstallButtonClick, onSecondaryButtonClick: this._handleNotNow, primaryButtonLabel: k, primaryText: this._getHalfSheetPrimaryText(), secondaryButtonLabel: E, secondaryText: this._getHalfSheetSecondaryText() }) : n.createElement(i.Z, { actionLabel: a, actionLink: f, allowBackNavigation: e, graphic: d, graphicStyle: u, headline: m || "", isFullHeightOnMobile: l, onAction: this._handleSubmit, onClose: this._handleClose, onSecondaryAction: this._handleSignupButtonClick, onTertiaryAction: this._showTertiaryCTA ? this._handleAppInstallButtonClick : void 0, secondaryActionLabel: b, secondaryActionLink: g, subtext: w || "", tertiaryActionLabel: this._showTertiaryCTA ? v : void 0, useBrandedActionButtons: !0 });
+                    return r ? n.createElement(_, { onPrimaryButtonClick: this._handleAppInstallButtonClick, onSecondaryButtonClick: this._handleNotNow, primaryButtonLabel: k, primaryText: this._getHalfSheetPrimaryText(), secondaryButtonLabel: E, secondaryText: this._getHalfSheetSecondaryText() }) : n.createElement(i.Z, { actionLabel: a, actionLink: f, allowBackNavigation: e, graphic: d, graphicStyle: u, headline: m || "", isFullHeightOnMobile: s, onAction: this._handleSubmit, onClose: this._handleClose, onSecondaryAction: this._handleSignupButtonClick, onTertiaryAction: this._showTertiaryCTA ? this._handleAppInstallButtonClick : void 0, secondaryActionLabel: b, secondaryActionLink: g, subtext: w || "", tertiaryActionLabel: this._showTertiaryCTA ? P : void 0, useBrandedActionButtons: !0 });
                 }
                 _scribeAction(e) {
                     const { analytics: t, displayMode: o, useBottomBanner: n } = this.props,
@@ -330,15 +330,15 @@
                     t.scribe({ component: "login_signup_sheet", element: i, action: e });
                 }
             }
-            (Z.defaultProps = { displayMode: L.BH.generic, hideSignUp: !1, isFullHeightOnMobile: !0, useBottomBanner: !1, loginLabel: H, signupLabel: A, onlyShowOnce: !1 }), (Z.displayMode = L.BH), (Z.contextType = u.rC);
-            const N = B(Z);
+            (Z.defaultProps = { displayMode: B.BH.generic, hideSignUp: !1, isFullHeightOnMobile: !0, useBottomBanner: !1, loginLabel: H, signupLabel: A, onlyShowOnce: !1 }), (Z.displayMode = B.BH), (Z.contextType = u.rC);
+            const N = v(Z);
         },
         288955: (e, t, o) => {
             o.d(t, { Z: () => r });
             var n = o(807896),
                 i = o(202784),
-                s = o(443781),
-                l = o(369241);
+                l = o(443781),
+                s = o(369241);
             class a extends i.Component {
                 constructor(...e) {
                     super(...e),
@@ -354,25 +354,25 @@
                 }
                 render() {
                     const { children: e, disabled: t, ...o } = this.props;
-                    return i.createElement(i.Fragment, null, e(this._getHandler), this.state.showLoginPrompt && i.createElement(l.ZP, (0, n.Z)({ onClose: this._handleClose }, o)));
+                    return i.createElement(i.Fragment, null, e(this._getHandler), this.state.showLoginPrompt && i.createElement(s.ZP, (0, n.Z)({ onClose: this._handleClose }, o)));
                 }
             }
-            (a.defaultProps = { disabled: !1 }), (a.contextType = s.rC);
+            (a.defaultProps = { disabled: !1 }), (a.contextType = l.rC);
             const r = a;
         },
         666670: (e, t, o) => {
-            o.d(t, { F: () => l });
+            o.d(t, { F: () => s });
             var n = o(516951),
                 i = o(615656),
-                s = o(51525);
-            const l = { [i.ZP.AddressBookLookupNotFound]: { customAction: s.vv }, [i.ZP.GenericUserNotFound]: { customAction: n.Z }, [i.ZP.OtherUserSuspended]: { customAction: n.Z }, showToast: !0 };
+                l = o(51525);
+            const s = { [i.ZP.AddressBookLookupNotFound]: { customAction: l.vv }, [i.ZP.GenericUserNotFound]: { customAction: n.Z }, [i.ZP.OtherUserSuspended]: { customAction: n.Z }, showToast: !0 };
         },
         757953: (e, t, o) => {
             o.d(t, { H: () => m });
             var n = o(111677),
                 i = o.n(n),
-                s = o(516951),
-                l = o(615656),
+                l = o(516951),
+                s = o(615656),
                 a = o(51525);
             const r = i().j4292c24,
                 c = i().a0ba5842,
@@ -380,7 +380,7 @@
                 u = i().a5202b82,
                 p = i().f8cbf714,
                 h = i().f2e66452,
-                m = { defaultToast: { text: u }, [l.ZP.CurrentUserSuspended]: { toast: { text: h, action: { label: d, link: "https://support.twitter.com/articles/15790" } } }, [l.ZP.DuplicateFollowRequest]: { customAction: s.Z }, [l.ZP.FollowBlockedUserError]: { toast: { text: r } }, [l.ZP.FollowError]: { customAction: a.w1 }, [l.ZP.FollowRateLimitExceeded]: { toast: { action: { label: d, link: "https://support.twitter.com/articles/66885" }, text: c } }, [l.ZP.TargetUserNotFound]: { toast: { text: p } } };
+                m = { defaultToast: { text: u }, [s.ZP.CurrentUserSuspended]: { toast: { text: h, action: { label: d, link: "https://support.twitter.com/articles/15790" } } }, [s.ZP.DuplicateFollowRequest]: { customAction: l.Z }, [s.ZP.FollowBlockedUserError]: { toast: { text: r } }, [s.ZP.FollowError]: { customAction: a.w1 }, [s.ZP.FollowRateLimitExceeded]: { toast: { action: { label: d, link: "https://support.twitter.com/articles/66885" }, text: c } }, [s.ZP.TargetUserNotFound]: { toast: { text: p } } };
         },
         323683: (e, t, o) => {
             o.d(t, { X: () => i });
@@ -388,24 +388,24 @@
             const i = { defaultToast: { text: o.n(n)().e1a0aaca }, showToast: !0 };
         },
         951790: (e, t, o) => {
-            o.d(t, { Z: () => l });
+            o.d(t, { Z: () => s });
             var n = o(323265);
             const i = {
                     setLocation(e) {
                         document.location = e;
                     },
                     getAppStoreURLs(e = "rwoiah") {
-                        const t = s(e),
+                        const t = l(e),
                             o = [t.android, t.ios],
                             n = o.find((e) => e.matches());
                         return n ? [n] : o;
                     },
                     getiOSAppStoreLink(e) {
-                        const t = s(e);
+                        const t = l(e);
                         return t.ios.matches() ? t.ios.url : t.ios.webUrl;
                     },
                     getAndroidAppStoreLink(e) {
-                        const t = s(e);
+                        const t = l(e);
                         return t.android.matches() ? t.android.url : t.android.webUrl;
                     },
                     goToAppStore(e) {
@@ -416,16 +416,16 @@
                         i.setLocation(e);
                     },
                 },
-                s = (e = "rwoiah") => ({ android: { platform: "android", matches: () => n.ZP.isAndroid(), url: `market://details?id=com.twitter.android&referrer=utm_source%3Drweb%26utm_medium%3D${e}`, webUrl: `https://play.google.com/store/apps/details?id=com.twitter.android&referrer=utm_source%3Drweb%26utm_medium%3D${e}` }, ios: { platform: "ios", matches: () => n.ZP.isIOS(), url: `https://apps.apple.com/app/apple-store/id333903271?pt=9551&ct=${e}&mt=8`, webUrl: `https://apps.apple.com/app/apple-store/id333903271?pt=9551&ct=${e}&mt=8` } }),
-                l = i;
+                l = (e = "rwoiah") => ({ android: { platform: "android", matches: () => n.ZP.isAndroid(), url: `market://details?id=com.twitter.android&referrer=utm_source%3Drweb%26utm_medium%3D${e}`, webUrl: `https://play.google.com/store/apps/details?id=com.twitter.android&referrer=utm_source%3Drweb%26utm_medium%3D${e}` }, ios: { platform: "ios", matches: () => n.ZP.isIOS(), url: `https://apps.apple.com/app/apple-store/id333903271?pt=9551&ct=${e}&mt=8`, webUrl: `https://apps.apple.com/app/apple-store/id333903271?pt=9551&ct=${e}&mt=8` } }),
+                s = i;
         },
         970187: (e, t, o) => {
             o.d(t, { Z: () => ge });
             var n = o(202784),
                 i = o(614983),
-                s = o.n(i),
-                l = o(111677),
-                a = o.n(l),
+                l = o.n(i),
+                s = o(111677),
+                a = o.n(s),
                 r = o(516951),
                 c = o(616894),
                 d = o(235902),
@@ -451,9 +451,9 @@
                         (this._getCustomButtonProps = (e) => {
                             const { customButtonConfig: t } = this.props;
                             if (!t) return;
-                            const { customButtonBackgroundColor: o, customButtonBorderColor: n, customButtonColor: i, customButtonHoverBackgroundColor: s, customButtonHoverBorderColor: l, customButtonHoverColor: a } = t,
+                            const { customButtonBackgroundColor: o, customButtonBorderColor: n, customButtonColor: i, customButtonHoverBackgroundColor: l, customButtonHoverBorderColor: s, customButtonHoverColor: a } = t,
                                 r = { color: i, backgroundColor: o, borderColor: n };
-                            return e && ((r.color = a || i), (r.backgroundColor = s || o), (r.borderColor = l || n)), r;
+                            return e && ((r.color = a || i), (r.backgroundColor = l || o), (r.borderColor = s || n)), r;
                         }),
                         (this._handleButtonPress = (e) => {
                             e.preventDefault(), this.props.showRelationshipChangeConfirmation ? this.setState({ showConfirmation: !0 }) : ((this._minWidth = 0), this.forceUpdate(), this.props.onClick());
@@ -482,14 +482,14 @@
                     e.buttonDefaultLabel !== this.props.buttonDefaultLabel && this._handleLabelMeasure();
                 }
                 render() {
-                    const { "aria-describedby": e, "aria-label": t, buttonDefaultLabel: o, buttonHoverLabel: i, buttonHoverType: s, buttonType: l, confirmationSheetCancelLabel: a, confirmationSheetConfirmLabel: r, confirmationSheetHeadline: c, confirmationSheetPrimaryButtonType: d, confirmationSheetText: b, disabled: f, displayMode: g, icon: _, id: y, onHoverOut: S, size: C, style: F, testID: T } = this.props,
+                    const { "aria-describedby": e, "aria-label": t, buttonDefaultLabel: o, buttonHoverLabel: i, buttonHoverType: l, buttonType: s, confirmationSheetCancelLabel: a, confirmationSheetConfirmLabel: r, confirmationSheetHeadline: c, confirmationSheetPrimaryButtonType: d, confirmationSheetText: b, disabled: f, displayMode: g, icon: _, id: y, onHoverOut: S, size: C, style: F, testID: T } = this.props,
                         x = [F, { minWidth: this._minWidth }];
                     return n.createElement(
                         p.Z,
                         { ref: this._setContainerRef, style: x },
                         n.createElement(w.Z, { onHoverIn: this._handleHoverIn, onHoverOut: S }, ({ isHovered: a }) => {
                             const r = a ? i : o,
-                                c = a && s ? s : l,
+                                c = a && l ? l : s,
                                 d = this._getCustomButtonProps(a);
                             return n.createElement(h.ZP, (0, u.Z)({ "aria-describedby": e, "aria-label": "only-icon" === g ? r : t, disabled: f, icon: "only-text" !== g ? _ : void 0, id: y, onPress: this._handleButtonPress, ref: this._setButtonRef, size: C, testID: T, type: c }, d), "only-icon" === g ? void 0 : r);
                         }),
@@ -505,12 +505,12 @@
                 S = a().ab7c3460,
                 C = a().i58d8718,
                 F = n.createElement(c.default, null),
-                T = ({ disabled: e, displayMode: t, onUnblock: o, showRelationshipChangeConfirmation: i, size: s, style: l, testID: a, userScreenName: r }) => n.createElement(f, { buttonDefaultLabel: g, buttonHoverLabel: _, buttonType: "destructiveFilled", confirmationSheetConfirmLabel: _, confirmationSheetHeadline: y({ screenName: r }), confirmationSheetText: d.ZP.useProps().isSoftBlockEnabled() ? C : S, disabled: e, displayMode: t, icon: F, onClick: o, showRelationshipChangeConfirmation: i, size: s, style: l, testID: a });
+                T = ({ disabled: e, displayMode: t, onUnblock: o, showRelationshipChangeConfirmation: i, size: l, style: s, testID: a, userScreenName: r }) => n.createElement(f, { buttonDefaultLabel: g, buttonHoverLabel: _, buttonType: "destructiveFilled", confirmationSheetConfirmLabel: _, confirmationSheetHeadline: y({ screenName: r }), confirmationSheetText: d.ZP.useProps().isSoftBlockEnabled() ? C : S, disabled: e, displayMode: t, icon: F, onClick: o, showRelationshipChangeConfirmation: i, size: l, style: s, testID: a });
             var x = o(466999),
-                B = o(76388),
-                L = o(911373),
-                P = o(733357),
-                v = o(352924),
+                v = o(76388),
+                B = o(911373),
+                L = o(733357),
+                P = o(352924),
                 k = o(392237);
             const E = a().ee05e96b,
                 A = a().f238ba1d,
@@ -520,21 +520,21 @@
                 I = (e) => ({ customButtonColor: "white", customButtonBorderColor: e ? "transparent" : "plum500", customButtonBackgroundColor: "plum500", customButtonHoverColor: "white", customButtonHoverBorderColor: "plum500" }),
                 M = (e) => ({ customButtonColor: "plum500", customButtonBorderColor: e ? "transparent" : "plum500", customButtonBackgroundColor: "transparent", customButtonHoverColor: "white", customButtonHoverBorderColor: "gray700", customButtonHoverBackgroundColor: "gray700" }),
                 D = k.default.create((e) => ({ hidden: { display: "none" } })),
-                U = ({ "aria-describedby": e, buttonType: t, disabled: o, displayMode: i, id: s, isSuperFollowEligible: l, isSuperFollowing: a, isTransparent: r, name: c, onSuperFollow: d, onUnSuperFollow: u, size: p, style: h, testID: m }) => {
+                U = ({ "aria-describedby": e, buttonType: t, disabled: o, displayMode: i, id: l, isSuperFollowEligible: s, isSuperFollowing: a, isTransparent: r, name: c, onSuperFollow: d, onUnSuperFollow: u, size: p, style: h, testID: m }) => {
                     const w = n.useCallback(() => {
-                            a ? u() : l && d();
-                        }, [l, a, d, u]),
+                            a ? u() : s && d();
+                        }, [s, a, d, u]),
                         b = void 0 !== c ? `@${String(c)}` : "",
                         g = a ? Z : H,
                         _ = b.length > 0 && void 0 !== g ? A({ followType: g, screenName: b }) : "",
                         y = a ? N : H,
                         S = a ? M(r) : t ? void 0 : I(r),
-                        C = n.useMemo(() => (void 0 !== e ? e : (0, v.F)()), [e]),
+                        C = n.useMemo(() => (void 0 !== e ? e : (0, P.F)()), [e]),
                         F = n.useCallback(() => {
-                            const e = a ? Z : l ? E({ followType: H, screenName: c }) : null;
-                            return e && !(0, P.Z)(e) ? n.createElement(x.Z, { id: C, style: D.hidden }, e) : null;
-                        }, [a, l, C, c]);
-                    return n.createElement(n.Fragment, null, n.createElement(f, { "aria-describedby": C, "aria-label": _, buttonDefaultLabel: g, buttonHoverLabel: y, buttonType: t, customButtonConfig: S, disabled: o, displayMode: i, id: s, onClick: w, size: p, style: h, testID: m }), void 0 === e ? F() : null);
+                            const e = a ? Z : s ? E({ followType: H, screenName: c }) : null;
+                            return e && !(0, L.Z)(e) ? n.createElement(x.Z, { id: C, style: D.hidden }, e) : null;
+                        }, [a, s, C, c]);
+                    return n.createElement(n.Fragment, null, n.createElement(f, { "aria-describedby": C, "aria-label": _, buttonDefaultLabel: g, buttonHoverLabel: y, buttonType: t, customButtonConfig: S, disabled: o, displayMode: i, id: l, onClick: w, size: p, style: h, testID: m }), void 0 === e ? F() : null);
                 },
                 R = Object.freeze({ user: "user", topic: "topic", list: "list", community: "community", spaces: "spaces" }),
                 O = a().cda66545,
@@ -546,8 +546,8 @@
                 J = a().i4bb9ef7,
                 V = a().ge753264,
                 Q = a().b837c0e8,
-                X = n.createElement(B.default, null),
-                G = n.createElement(L.default, null),
+                X = n.createElement(v.default, null),
+                G = n.createElement(B.default, null),
                 K = a().ddac1f1d,
                 Y = a().j8e33c40;
             class ee extends n.Component {
@@ -555,43 +555,43 @@
                     super(e, t),
                         (this._getDescribedById = () => {
                             const { "aria-describedby": e } = this.props;
-                            return void 0 !== e ? e : (0, v.F)();
+                            return void 0 !== e ? e : (0, P.F)();
                         }),
                         (this._renderDescribedBy = (e, t) => {
                             const o = this._getDescribedByText();
-                            return (0, P.Z)(o) ? null : n.createElement(x.Z, { id: e, style: { display: "none" } }, o);
+                            return (0, L.Z)(o) ? null : n.createElement(x.Z, { id: e, style: { display: "none" } }, o);
                         }),
                         (this._getDescribedByText = () => {
-                            const { buttonText: e, isFollowing: t, isSuperFollowEligible: o, isSuperFollowing: n, name: i, type: s } = this.props;
-                            let l = "";
+                            const { buttonText: e, isFollowing: t, isSuperFollowEligible: o, isSuperFollowing: n, name: i, type: l } = this.props;
+                            let s = "";
                             const a = void 0 === i ? "" : i;
-                            switch (s) {
+                            switch (l) {
                                 case R.user:
                                 case R.topic:
                                 case R.list:
-                                    n && e.unSuperFollow ? (l = e.unSuperFollow) : t ? (l = o ? z({ followType: e.superFollow, screenName: a }) : O({ followType: e.unfollow, screenName: a })) : t || (l = O({ followType: e.follow, screenName: a }));
+                                    n && e.unSuperFollow ? (s = e.unSuperFollow) : t ? (s = o ? z({ followType: e.superFollow, screenName: a }) : O({ followType: e.unfollow, screenName: a })) : t || (s = O({ followType: e.follow, screenName: a }));
                                     break;
                                 case R.community:
-                                    l = t ? $({ screenName: a }) : O({ followType: e.follow, screenName: a });
+                                    s = t ? $({ screenName: a }) : O({ followType: e.follow, screenName: a });
                                     break;
                                 case R.spaces:
-                                    t ? (l = O({ followType: e.unfollow, screenName: a })) : t || (l = O({ followType: e.follow, screenName: a }));
+                                    t ? (s = O({ followType: e.unfollow, screenName: a })) : t || (s = O({ followType: e.follow, screenName: a }));
                                     break;
                                 default:
-                                    l = "";
+                                    s = "";
                             }
-                            return l;
+                            return s;
                         }),
                         (this._getText = () => {
                             const { buttonText: e, name: t, type: o } = this.props,
                                 n = void 0 !== t ? t : "",
                                 i = J({ title: t }),
-                                s = { [R.user]: { ariaFollowName: void 0 !== t ? `@${String(t)}` : "", confirmationHeadline: q({ screenName: t }), confirmationSheetText: V }, [R.topic]: { ariaFollowName: n, confirmationHeadline: i, confirmationSheetText: Q }, [R.list]: { ariaFollowName: n, confirmationHeadline: i, confirmationSheetText: void 0 }, [R.community]: { ariaFollowName: n, confirmationHeadline: K({ communityName: t }), confirmationSheetText: Y }, [R.spaces]: { ariaFollowName: void 0 !== t ? `@${String(t)}` : "", confirmationHeadline: q({ screenName: t }), confirmationSheetText: V } };
-                            return { ariaFollowName: s[o].ariaFollowName, followLabel: e.follow, followBackLabel: e.followBack, followingLabel: e.following, unfollowLabel: e.unfollow, superFollowLabel: e.superFollow, superFollowingLabel: e.superFollowing, unSuperFollowLabel: e.unSuperFollow, confirmationHeadline: e.confirmationHeadline || s[o].confirmationHeadline, confirmationSheetText: e.confirmationSheetText || s[o].confirmationSheetText };
+                                l = { [R.user]: { ariaFollowName: void 0 !== t ? `@${String(t)}` : "", confirmationHeadline: q({ screenName: t }), confirmationSheetText: V }, [R.topic]: { ariaFollowName: n, confirmationHeadline: i, confirmationSheetText: Q }, [R.list]: { ariaFollowName: n, confirmationHeadline: i, confirmationSheetText: void 0 }, [R.community]: { ariaFollowName: n, confirmationHeadline: K({ communityName: t }), confirmationSheetText: Y }, [R.spaces]: { ariaFollowName: void 0 !== t ? `@${String(t)}` : "", confirmationHeadline: q({ screenName: t }), confirmationSheetText: V } };
+                            return { ariaFollowName: l[o].ariaFollowName, followLabel: e.follow, followBackLabel: e.followBack, followingLabel: e.following, unfollowLabel: e.unfollow, superFollowLabel: e.superFollow, superFollowingLabel: e.superFollowing, unSuperFollowLabel: e.unSuperFollow, confirmationHeadline: e.confirmationHeadline || l[o].confirmationHeadline, confirmationSheetText: e.confirmationSheetText || l[o].confirmationSheetText };
                         }),
                         (this._handlePress = () => {
-                            const { isFollowing: e, isSuperFollowEligible: t, isSuperFollowing: o, onFollow: n, onSuperFollow: i, onUnSuperFollow: s, onUnfollow: l } = this.props;
-                            o ? s() : e ? (t ? i() : l()) : (n(), this.setState({ hasJustFollowed: !0 }));
+                            const { isFollowing: e, isSuperFollowEligible: t, isSuperFollowing: o, onFollow: n, onSuperFollow: i, onUnSuperFollow: l, onUnfollow: s } = this.props;
+                            o ? l() : e ? (t ? i() : s()) : (n(), this.setState({ hasJustFollowed: !0 }));
                         }),
                         (this._handleHoverOut = () => {
                             this.state.hasJustFollowed && this.setState({ hasJustFollowed: !1 });
@@ -599,14 +599,14 @@
                         (this.state = { hasJustFollowed: !1 });
                 }
                 render() {
-                    const { "aria-describedby": e, buttonIcons: t, disabled: o, displayMode: i, id: s, isFollowed: l, isFollowing: a, isSuperFollowEligible: r, isSuperFollowing: c, isTransparent: d, showRelationshipChangeConfirmation: u, size: p, style: h, testID: m, type: w, withConfirmationSheetText: b } = this.props,
-                        { ariaFollowName: g, confirmationHeadline: _, confirmationSheetText: y, followBackLabel: S, followLabel: C, followingLabel: F, superFollowLabel: T, superFollowingLabel: x, unSuperFollowLabel: B, unfollowLabel: L } = this._getText(),
-                        { hasJustFollowed: P } = this.state,
-                        v = (t && t.followIcon) || G,
+                    const { "aria-describedby": e, buttonIcons: t, disabled: o, displayMode: i, id: l, isFollowed: s, isFollowing: a, isSuperFollowEligible: r, isSuperFollowing: c, isTransparent: d, showRelationshipChangeConfirmation: u, size: p, style: h, testID: m, type: w, withConfirmationSheetText: b } = this.props,
+                        { ariaFollowName: g, confirmationHeadline: _, confirmationSheetText: y, followBackLabel: S, followLabel: C, followingLabel: F, superFollowLabel: T, superFollowingLabel: x, unSuperFollowLabel: v, unfollowLabel: B } = this._getText(),
+                        { hasJustFollowed: L } = this.state,
+                        P = (t && t.followIcon) || G,
                         k = (t && t.followingIcon) || X,
-                        E = "only-text" !== i ? (a ? k : v) : void 0;
+                        E = "only-text" !== i ? (a ? k : P) : void 0;
                     let A = a ? F : C;
-                    l && !a && S && (A = S);
+                    s && !a && S && (A = S);
                     let H = j;
                     (c || (a && r)) && (c && x ? ((H = W), (A = x)) : r && T && ((H = W), (A = T)));
                     const Z = g.length > 0 && void 0 !== A ? H({ followType: A, screenName: g }) : "",
@@ -617,20 +617,20 @@
                         J = !c && (!a || !r) && a,
                         V = a ? "onMediaWhiteFilled" : "onMediaOutlined",
                         Q = a ? "onMediaOutlined" : "onMediaWhiteFilled";
-                    w === R.community ? (D = a ? L : C) : w === R.spaces ? ((D = a ? L : C), (U = V), (O = Q)) : c && B ? ((z = M(d)), (D = B)) : a ? ((D = P ? F : L), (U = P ? $ : q), (O = d ? "brandText" : "primaryOutlined"), r && T && ((z = I(d)), (D = T), (O = void 0), (U = void 0))) : ((D = l && S ? S : C), (U = d ? "brandText" : N), (O = d ? "brandText" : N));
+                    w === R.community ? (D = a ? B : C) : w === R.spaces ? ((D = a ? B : C), (U = V), (O = Q)) : c && v ? ((z = M(d)), (D = v)) : a ? ((D = L ? F : B), (U = L ? $ : q), (O = d ? "brandText" : "primaryOutlined"), r && T && ((z = I(d)), (D = T), (O = void 0), (U = void 0))) : ((D = s && S ? S : C), (U = d ? "brandText" : N), (O = d ? "brandText" : N));
                     const K = this._getDescribedById();
-                    return n.createElement(n.Fragment, null, n.createElement(f, { "aria-describedby": K, "aria-label": Z, buttonDefaultLabel: A, buttonHoverLabel: D, buttonHoverType: U, buttonType: O, confirmationSheetConfirmLabel: L, confirmationSheetHeadline: _, confirmationSheetText: b ? y : void 0, customButtonConfig: z, disabled: o, displayMode: i, icon: E, id: s, onClick: this._handlePress, onHoverOut: this._handleHoverOut, showRelationshipChangeConfirmation: J && u, size: p, style: h, testID: m }), void 0 === e ? this._renderDescribedBy(K) : null);
+                    return n.createElement(n.Fragment, null, n.createElement(f, { "aria-describedby": K, "aria-label": Z, buttonDefaultLabel: A, buttonHoverLabel: D, buttonHoverType: U, buttonType: O, confirmationSheetConfirmLabel: B, confirmationSheetHeadline: _, confirmationSheetText: b ? y : void 0, customButtonConfig: z, disabled: o, displayMode: i, icon: E, id: l, onClick: this._handlePress, onHoverOut: this._handleHoverOut, showRelationshipChangeConfirmation: J && u, size: p, style: h, testID: m }), void 0 === e ? this._renderDescribedBy(K) : null);
                 }
             }
             const te = ee;
             var oe = o(311687);
             const ne = a().f305840e,
                 ie = a().e23b20a0,
-                se = a().fe04d89a,
-                le = a().i036327c,
+                le = a().fe04d89a,
+                se = a().i036327c,
                 ae = a().j95e3097,
                 re = n.createElement(oe.default, null),
-                ce = ({ disabled: e, displayMode: t, onCancelPendingFollow: o, showRelationshipChangeConfirmation: i, size: s, style: l, testID: a, userScreenName: r }) => n.createElement(f, { buttonDefaultLabel: ne, buttonHoverLabel: ie, buttonType: "primaryOutlined", confirmationSheetCancelLabel: ie, confirmationSheetConfirmLabel: se, confirmationSheetHeadline: le, confirmationSheetText: ae({ screenName: r }), disabled: e, displayMode: t, icon: re, onClick: o, showRelationshipChangeConfirmation: i, size: s, style: l, testID: a }),
+                ce = ({ disabled: e, displayMode: t, onCancelPendingFollow: o, showRelationshipChangeConfirmation: i, size: l, style: s, testID: a, userScreenName: r }) => n.createElement(f, { buttonDefaultLabel: ne, buttonHoverLabel: ie, buttonType: "primaryOutlined", confirmationSheetCancelLabel: ie, confirmationSheetConfirmLabel: le, confirmationSheetHeadline: se, confirmationSheetText: ae({ screenName: r }), disabled: e, displayMode: t, icon: re, onClick: o, showRelationshipChangeConfirmation: i, size: l, style: s, testID: a }),
                 de = Object.freeze({ follow: "follow", subscribe: "subscribe" }),
                 ue = a().ec72e2f8,
                 pe = a().a5f7ce12,
@@ -647,21 +647,34 @@
                     this._validateProps();
                 }
                 render() {
-                    const { "aria-describedby": e, buttonIcons: t, buttonText: o, buttonType: i, disabled: s, displayMode: l, id: a, isBlocking: r, isFollowRequestSent: c, isFollowed: d, isFollowing: u, isSuperFollowEligible: p, isSuperFollowing: h, isTransparent: m, name: w, onCancelPendingFollow: b, onFollow: f, onSuperFollow: g, onUnSuperFollow: _, onUnblock: y, onUnfollow: S, relationshipMode: C, showRelationshipChangeConfirmation: F, size: x, style: B, testIDs: L, type: P, withConfirmationSheetText: v } = this.props,
+                    const { "aria-describedby": e, buttonIcons: t, buttonText: o, buttonType: i, disabled: l, displayMode: s, id: a, isBlocking: r, isFollowRequestSent: c, isFollowed: d, isFollowing: u, isSuperFollowEligible: p, isSuperFollowing: h, isTransparent: m, name: w, onCancelPendingFollow: b, onFollow: f, onSuperFollow: g, onUnSuperFollow: _, onUnblock: y, onUnfollow: S, relationshipMode: C, showRelationshipChangeConfirmation: F, size: x, style: v, testIDs: B, type: L, withConfirmationSheetText: P } = this.props,
                         k = r,
                         E = c,
                         A = C === de.subscribe && (p || h);
-                    return k ? n.createElement(T, { disabled: s, displayMode: l, onUnblock: y, showRelationshipChangeConfirmation: F, size: x, style: B, testID: L?.unblock, userScreenName: w }) : E ? n.createElement(ce, { disabled: s, displayMode: l, onCancelPendingFollow: b, showRelationshipChangeConfirmation: F, size: x, style: B, testID: L?.cancel, userScreenName: w }) : A ? n.createElement(U, { "aria-describedby": e, buttonType: i, disabled: s, displayMode: l, id: a, isSuperFollowEligible: p, isSuperFollowing: h, isTransparent: m, name: w, onSuperFollow: g, onUnSuperFollow: _, size: x, style: B, testID: h ? L?.manageSubscription : L?.subscribe }) : n.createElement(te, { "aria-describedby": e, buttonIcons: t, buttonText: o, disabled: s, displayMode: l, id: a, isFollowed: d, isFollowing: u, isSuperFollowEligible: p, isSuperFollowing: h, isTransparent: m, name: w, onFollow: f, onSuperFollow: g, onUnSuperFollow: _, onUnfollow: S, showRelationshipChangeConfirmation: F, size: x, style: B, testID: u ? L?.unfollow : L?.follow, type: P, withConfirmationSheetText: v });
+                    return k ? n.createElement(T, { disabled: l, displayMode: s, onUnblock: y, showRelationshipChangeConfirmation: F, size: x, style: v, testID: B?.unblock, userScreenName: w }) : E ? n.createElement(ce, { disabled: l, displayMode: s, onCancelPendingFollow: b, showRelationshipChangeConfirmation: F, size: x, style: v, testID: B?.cancel, userScreenName: w }) : A ? n.createElement(U, { "aria-describedby": e, buttonType: i, disabled: l, displayMode: s, id: a, isSuperFollowEligible: p, isSuperFollowing: h, isTransparent: m, name: w, onSuperFollow: g, onUnSuperFollow: _, size: x, style: v, testID: h ? B?.manageSubscription : B?.subscribe }) : n.createElement(te, { "aria-describedby": e, buttonIcons: t, buttonText: o, disabled: l, displayMode: s, id: a, isFollowed: d, isFollowing: u, isSuperFollowEligible: p, isSuperFollowing: h, isTransparent: m, name: w, onFollow: f, onSuperFollow: g, onUnSuperFollow: _, onUnfollow: S, showRelationshipChangeConfirmation: F, size: x, style: v, testID: u ? B?.unfollow : B?.follow, type: L, withConfirmationSheetText: P });
                 }
                 _validateProps() {
                     const { name: e, showRelationshipChangeConfirmation: t } = this.props,
                         o = t && "string" == typeof e,
                         n = !t;
-                    s()(o || n, "When showRelationshipChangeConfirmation is true, name must be defined.");
+                    l()(o || n, "When showRelationshipChangeConfirmation is true, name must be defined.");
                 }
             }
             ge.defaultProps = { buttonText: { follow: ue, followBack: pe, following: he, unfollow: me, superFollow: we, superFollowing: be, unSuperFollow: fe }, displayMode: "only-text", relationshipMode: "follow", isBlocking: !1, isFollowRequestSent: !1, isTransparent: !1, onCancelPendingFollow: r.Z, onSuperFollow: r.Z, onUnblock: r.Z, onUnSuperFollow: r.Z, showRelationshipChangeConfirmation: !0, withConfirmationSheetText: !0 };
         },
+        971657: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => r });
+            var n = o(202784),
+                i = o(890601),
+                l = o(783427),
+                s = o(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, l.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm8.999-8.921c-3.264 0-6.816 2.358-7 8.977L9.471 21h4.528v-2h-2.438c.367-3.781 2.17-6.004 4.938-6.004 1.089 0 2.022.356 2.784 1.004h2.632c-1.376-2.136-3.446-3.004-5.415-3.004zm0-.996c-.799 0-1.527-.279-2.116-.73C13.548 8.63 13 7.632 13 6.5 13 4.57 14.567 3 16.5 3S20 4.57 20 6.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zM15 6.5c0 .827.673 1.5 1.5 1.5S18 7.327 18 6.5 17.327 5 16.5 5 15 5.673 15 6.5zm-11 0C4 4.57 5.567 3 7.5 3S11 4.57 11 6.5 9.433 10 7.5 10 4 8.43 4 6.5zm2 0C6 7.327 6.673 8 7.5 8S9 7.327 9 6.5 8.327 5 7.5 5 6 5.673 6 6.5zM21 21h3v-2h-3v-3h-2v3h-3v2h3v3h2v-3z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const r = a;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir.5843fafa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir.dcad037a.js.map

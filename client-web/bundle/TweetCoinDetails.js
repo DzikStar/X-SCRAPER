@@ -10,10 +10,10 @@
                 i = l(392237),
                 s = l(111677);
             const o = l.n(s)().e5b0063d;
-            let c = 0;
-            class d extends a.Component {
+            let d = 0;
+            class c extends a.Component {
                 constructor() {
-                    super(), (this._listDomId = `accessible-list-${c}`), (c += 1);
+                    super(), (this._listDomId = `accessible-list-${d}`), (d += 1);
                 }
                 render() {
                     const { children: e, title: t } = this.props,
@@ -21,7 +21,7 @@
                     return a.createElement(r.Z, { "aria-labelledby": this._listDomId, role: "region" }, a.createElement(n.Z, { "aria-level": 1, id: this._listDomId, role: "heading", style: i.default.visuallyHidden }, t), a.createElement(r.Z, { "aria-label": l }, e));
                 }
             }
-            const u = d;
+            const u = c;
         },
         625661: (e, t, l) => {
             l.d(t, { ZP: () => p });
@@ -31,8 +31,8 @@
                 i = l(325686),
                 s = l(370006),
                 o = l(786998),
-                c = l(929028),
-                d = l(386802);
+                d = l(929028),
+                c = l(386802);
             function u(e, t, l) {
                 return e || (!t && l ? "fixed" : void 0);
             }
@@ -49,22 +49,22 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: l, fixed: n, hideBackButton: r, isFullWidth: i, isLarge: c, leftControl: d, middleControl: p, position: m, rightControl: g, secondaryBar: y, style: h, subtitle: k, title: _, titleDomId: b, titleIconCell: w, titleIconCellSize: f, withBackground: Z, withWideContainer: E } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: l, fixed: n, hideBackButton: r, isFullWidth: i, isLarge: d, leftControl: c, middleControl: p, position: m, rightControl: g, secondaryBar: y, style: h, subtitle: k, title: _, titleDomId: b, titleIconCell: w, titleIconCellSize: f, withBackground: Z, withWideContainer: E } = this.props,
                         { isModal: T } = this.context,
-                        C = r ? d : a.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        C = r ? c : a.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         F = (function (e, t, l) {
                             return e && !(t && l);
                         })(!!Z, T, !!y);
-                    return a.createElement(a.Fragment, null, a.createElement(o.Z, { centerTitle: t, centeredLogo: l, isFullWidth: i, isLarge: c, leftControl: C, middleControl: p, position: u(m, T, n), rightControl: g, style: h, subtitle: k, title: _, titleDomId: b, titleIconCell: w, titleIconCellSize: f, withBackground: F, withWideContainer: E }), y || null);
+                    return a.createElement(a.Fragment, null, a.createElement(o.Z, { centerTitle: t, centeredLogo: l, isFullWidth: i, isLarge: d, leftControl: C, middleControl: p, position: u(m, T, n), rightControl: g, style: h, subtitle: k, title: _, titleDomId: b, titleIconCell: w, titleIconCellSize: f, withBackground: F, withWideContainer: E }), y || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
                         { isModal: t } = this.context,
-                        l = c.Z.getBackgroundStyles();
+                        l = d.Z.getBackgroundStyles();
                     return t ? a.createElement(i.Z, { style: !!e && l }, this._renderContent()) : this._renderContent();
                 }
             }
-            (p.contextType = d.Z), (p.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
+            (p.contextType = c.Z), (p.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
         414939: (e, t, l) => {
             l.d(t, { Z: () => o });
@@ -90,8 +90,8 @@
                 i = l(386802),
                 s = l(392237),
                 o = l(652904),
-                c = l(555079),
-                d = l(625661),
+                d = l(555079),
+                c = l(625661),
                 u = l(449067),
                 p = l(715601);
             class m extends a.Component {
@@ -100,7 +100,7 @@
                         (this._renderChildViewAppBar = () => {
                             const { appBarRef: e, appBarStyle: t, backButtonType: l, backLocation: r, centerTitle: i, hideBackButton: s, history: o, isFullWidth: u, isLarge: p, middleControl: m, onBackClick: y, rightControl: h, secondaryBar: k, subtitle: _, title: b } = this.props,
                                 { isModal: w } = this.context;
-                            return a.createElement(n.Z, { style: w ? [g.childViewAppBarRoot, g.appBarZindex] : g.appBarZindex }, a.createElement(d.ZP, { backButtonType: l || (w ? "close" : "back"), backLocation: r, centerTitle: i, fixed: !w, hideBackButton: s, history: o, isFullWidth: u, isLarge: p, middleControl: m, onBackClick: y, ref: e, rightControl: h, secondaryBar: k, style: [w && g.appBarModal, t], subtitle: _, title: b, titleDomId: c.Q_ }));
+                            return a.createElement(n.Z, { style: w ? [g.childViewAppBarRoot, g.appBarZindex] : g.appBarZindex }, a.createElement(c.ZP, { backButtonType: l || (w ? "close" : "back"), backLocation: r, centerTitle: i, fixed: !w, hideBackButton: s, history: o, isFullWidth: u, isLarge: p, middleControl: m, onBackClick: y, ref: e, rightControl: h, secondaryBar: k, style: [w && g.appBarModal, t], subtitle: _, title: b, titleDomId: d.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -109,10 +109,10 @@
                         });
                 }
                 render() {
-                    const { "aria-hidden": e, bottomBar: t, children: l, containerStyle: i, documentTitle: s, isFullWidth: c, isLarge: d, renderHeader: m, title: y, withoutBottomBarMobile: h } = this.props,
+                    const { "aria-hidden": e, bottomBar: t, children: l, containerStyle: i, documentTitle: s, isFullWidth: d, isLarge: c, renderHeader: m, title: y, withoutBottomBarMobile: h } = this.props,
                         { isModal: k } = this.context,
                         _ = m ? m(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return a.createElement(o.Z, null, a.createElement(u.Z.Configure, { documentTitle: s, headerless: !0, title: y }), a.createElement(n.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [g.root, k && g.rootModal] }, !k && _, a.createElement(r.Z, { isFullWidth: c, isLarge: d, style: [g.container, k && g.containerModal, i] }, k ? a.createElement(p.Z, { style: g.viewport }, _, l) : l), t ? a.createElement(n.Z, { style: [g.bottomBarModal, !k && !h && g.bottomBarMobile] }, a.createElement(r.Z, { isFullWidth: c, isLarge: d }, t)) : null));
+                    return a.createElement(o.Z, null, a.createElement(u.Z.Configure, { documentTitle: s, headerless: !0, title: y }), a.createElement(n.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [g.root, k && g.rootModal] }, !k && _, a.createElement(r.Z, { isFullWidth: d, isLarge: c, style: [g.container, k && g.containerModal, i] }, k ? a.createElement(p.Z, { style: g.viewport }, _, l) : l), t ? a.createElement(n.Z, { style: [g.bottomBarModal, !k && !h && g.bottomBarMobile] }, a.createElement(r.Z, { isFullWidth: d, isLarge: c }, t)) : null));
                 }
             }
             (m.defaultProps = { isFullWidth: !1, isLarge: !1 }), (m.contextType = i.Z);
@@ -157,12 +157,12 @@
                 i = l(731708),
                 s = l(154003),
                 o = l(392237),
-                c = l(111677),
-                d = l.n(c),
+                d = l(111677),
+                c = l.n(d),
                 u = l(349035);
             const p = "error-detail",
-                m = d().e49537c2,
-                g = d().a9ae1e78;
+                m = c().e49537c2,
+                g = c().a9ae1e78;
             class y extends a.PureComponent {
                 render() {
                     return a.createElement(n.Z, { testID: p }, a.createElement(u.Z, null), a.createElement(r.Z, { style: h.root }, a.createElement(i.ZP, { align: "center", color: "gray700", style: h.retryText }, m), a.createElement(s.ZP, { link: { pathname: "/search" }, type: "brandFilled" }, g)));
@@ -171,7 +171,7 @@
             const h = o.default.create((e) => ({ root: { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12 }, retryText: { marginBottom: e.spaces.space28 } }));
         },
         652904: (e, t, l) => {
-            l.d(t, { Z: () => d });
+            l.d(t, { Z: () => c });
             var a = l(202784),
                 n = l(500002),
                 r = l(668214),
@@ -180,7 +180,7 @@
             const o = (0, r.Z)()
                 .propsFromActions(() => ({ updateLocation: s.YF, updateTweetDetailNav: i.NH }))
                 .withAnalytics();
-            class c extends a.Component {
+            class d extends a.Component {
                 componentDidMount() {
                     this._performPageUpdates(this.props);
                 }
@@ -196,8 +196,8 @@
                         } = e;
                     let o = !1;
                     t.pathname !== l ? (this._isInBackground = !0) : this._isInBackground && t.pathname === l && ((this._isInBackground = !1), (o = !0));
-                    const c = n || s;
-                    ((c && n !== s) || (!c && l !== r) || a !== i || o) && this._performPageUpdates(this.props);
+                    const d = n || s;
+                    ((d && n !== s) || (!d && l !== r) || a !== i || o) && this._performPageUpdates(this.props);
                 }
                 render() {
                     return this.props.children;
@@ -207,8 +207,8 @@
                     t.scribePageImpression(), l(t.contextualScribeNamespace, t.contextualScribeData), a(t.contextualScribeNamespace);
                 }
             }
-            c.defaultProps = { children: null };
-            const d = (0, n.ZP)(o(c));
+            d.defaultProps = { children: null };
+            const c = (0, n.ZP)(o(d));
         },
         301410: (e, t, l) => {
             l.d(t, { i: () => g.ZP, z: () => _ });
@@ -218,13 +218,13 @@
                 i = l(72845),
                 s = l.n(i),
                 o = l(57074),
-                c = l.n(o),
-                d = l(516951),
+                d = l.n(o),
+                c = l(516951),
                 u = l(88656),
                 p = l(71620),
                 m = l(163889),
                 g = l(312771);
-            const y = ({ render: e }) => e({ fetchStatus: g.ZP.LOADING, data: null, error: null, retry: d.Z });
+            const y = ({ render: e }) => e({ fetchStatus: g.ZP.LOADING, data: null, error: null, retry: c.Z });
             class h extends a.Component {
                 constructor(...e) {
                     super(...e), (this.state = { error: null });
@@ -242,13 +242,13 @@
             }
             const k = ({ query: e, queryRef: t, render: l }) => {
                     const a = r()(e, t);
-                    return l({ fetchStatus: g.ZP.LOADED, data: a, error: null, retry: d.Z });
+                    return l({ fetchStatus: g.ZP.LOADED, data: a, error: null, retry: c.Z });
                 },
                 _ = (e, t) =>
                     function ({ fetchPolicy: l = "store-or-network", render: n, variables: r }) {
                         const [i, o] = s()(e),
-                            d = (0, p.n7)(t.errorConfig.context),
-                            u = c()(r),
+                            c = (0, p.n7)(t.errorConfig.context),
+                            u = d()(r),
                             m = a.useCallback(() => {
                                 o(u, { fetchPolicy: "network-only" });
                             }, [o, u]);
@@ -260,7 +260,7 @@
                                 ? a.createElement(
                                       a.Suspense,
                                       { fallback: a.createElement(y, { render: n }) },
-                                      a.createElement(h, { errorHandler: d(t.errorConfig.options || {}), key: i.fetchKey, retry: m }, (t, l) => (t ? n({ fetchStatus: g.ZP.FAILED, error: t, data: null, retry: l }) : a.createElement(k, { query: e, queryRef: i, render: n }))),
+                                      a.createElement(h, { errorHandler: c(t.errorConfig.options || {}), key: i.fetchKey, retry: m }, (t, l) => (t ? n({ fetchStatus: g.ZP.FAILED, error: t, data: null, retry: l }) : a.createElement(k, { query: e, queryRef: i, render: n }))),
                                   )
                                 : null
                         );
@@ -282,8 +282,8 @@
                 i = l(392237),
                 s = l(111677),
                 o = l.n(s),
-                c = l(187669),
-                d = l(449067),
+                d = l(187669),
+                c = l(449067),
                 u = l(38293),
                 p = l(56851),
                 m = l(652904),
@@ -297,10 +297,10 @@
                     { isModal: l } = a.useContext(n.Z),
                     i = (0, g.hC)("responsive_web_report_page_not_found");
                 return (
-                    (0, c.q)(() => {
+                    (0, d.q)(() => {
                         i && t && (0, y.ZP)(new Error(`Page not found: ${t}`));
                     }),
-                    a.createElement(m.Z, null, a.createElement(d.Z.Configure, { backLocation: "/", documentTitle: k, title: _ }), a.createElement(r.Z, { style: l && w.modal }, a.createElement(p.Z, null)), a.createElement(u.Z, { title: k, withMeta: !1 }))
+                    a.createElement(m.Z, null, a.createElement(c.Z.Configure, { backLocation: "/", documentTitle: k, title: _ }), a.createElement(r.Z, { style: l && w.modal }, a.createElement(p.Z, null)), a.createElement(u.Z, { title: k, withMeta: !1 }))
                 );
             }
             const w = i.default.create((e) => ({ modal: { backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.xLarge } })),
@@ -314,8 +314,8 @@
                 i,
                 s,
                 o,
-                c,
                 d,
+                c,
                 u,
                 p,
                 m,
@@ -401,16 +401,16 @@
                                                                         ],
                                                                         storageKey: null,
                                                                     },
-                                                                    (c = { alias: null, args: null, kind: "ScalarField", name: "total_coins_worth", storageKey: null }),
+                                                                    (d = { alias: null, args: null, kind: "ScalarField", name: "total_coins_worth", storageKey: null }),
                                                                 ],
                                                                 storageKey: null,
                                                             },
                                                         ],
                                                         storageKey: null,
                                                     },
-                                                    (d = { alias: null, args: null, kind: "ScalarField", name: "award_eligible", storageKey: null }),
-                                                    (u = { alias: null, args: null, concreteType: "TweetAwards", kind: "LinkedField", name: "awards_granted_by_viewer", plural: !1, selections: [c, { alias: null, args: null, kind: "ScalarField", name: "total_coins_worth_anonymous", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "total_coins_worth_public", storageKey: null }], storageKey: null }),
-                                                    (p = { alias: null, args: null, concreteType: "TweetAwards", kind: "LinkedField", name: "granted_awards", plural: !1, selections: [c], storageKey: null }),
+                                                    (c = { alias: null, args: null, kind: "ScalarField", name: "award_eligible", storageKey: null }),
+                                                    (u = { alias: null, args: null, concreteType: "TweetAwards", kind: "LinkedField", name: "awards_granted_by_viewer", plural: !1, selections: [d, { alias: null, args: null, kind: "ScalarField", name: "total_coins_worth_anonymous", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "total_coins_worth_public", storageKey: null }], storageKey: null }),
+                                                    (p = { alias: null, args: null, concreteType: "TweetAwards", kind: "LinkedField", name: "granted_awards", plural: !1, selections: [d], storageKey: null }),
                                                 ],
                                                 type: "Tweet",
                                                 abstractKey: null,
@@ -559,14 +559,14 @@
                                                                         ]),
                                                                         storageKey: null,
                                                                     },
-                                                                    c,
+                                                                    d,
                                                                 ],
                                                                 storageKey: null,
                                                             },
                                                         ],
                                                         storageKey: null,
                                                     },
-                                                    d,
+                                                    c,
                                                     u,
                                                     p,
                                                     y,
@@ -597,27 +597,27 @@
                 C = l(167630),
                 F = l(392237),
                 L = l(111677),
-                v = l.n(L),
-                B = l(856151),
-                x = l(980407),
-                K = l(965245),
+                B = l.n(L),
+                x = l(856151),
+                K = l(980407),
+                v = l(965245),
                 S = l(301410),
                 D = l(293115),
                 R = l(312771),
                 I = l(466441),
                 P = l(952428),
                 A = l(823161),
-                M = l(412876),
-                U = l(553660);
-            const z = v().fbb7764b,
-                H = v().e70a07b2,
-                V = v().da68fff1,
-                W = ({ coins: e, isAnonymous: t, isLoggedinUser: l, user: a }) => b.createElement(w.Z, { role: "listitem" }, b.createElement(P.Z, { style: N.root, withInteractiveStyling: !1 }, b.createElement(w.Z, { style: N.row }, t ? b.createElement(A.default, { size: "xLarge", uri: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" }) : "User" === a?.__typename ? b.createElement(M.Z, { size: "xLarge", user: a, withLink: !0 }) : null, b.createElement(w.Z, { style: N.column }, b.createElement(f.ZP, { size: "headline2", style: N.awardDetails, weight: "medium" }, t && l ? V({ count: e }) : z({ count: e })), t ? b.createElement(f.ZP, { style: N.spacing }, H) : "User" === a?.__typename ? b.createElement(U.Z, { style: N.userName, user: a, weight: "normal", withLink: !0 }) : null)))),
-                q = b.memo(W),
+                U = l(412876),
+                M = l(553660);
+            const H = B().fbb7764b,
+                W = B().e70a07b2,
+                q = B().da68fff1,
+                V = ({ coins: e, isAnonymous: t, isLoggedinUser: l, user: a }) => b.createElement(w.Z, { role: "listitem" }, b.createElement(P.Z, { style: N.root, withInteractiveStyling: !1 }, b.createElement(w.Z, { style: N.row }, t ? b.createElement(A.default, { size: "xLarge", uri: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" }) : "User" === a?.__typename ? b.createElement(U.Z, { size: "xLarge", user: a, withLink: !0 }) : null, b.createElement(w.Z, { style: N.column }, b.createElement(f.ZP, { size: "headline2", style: N.awardDetails, weight: "medium" }, t && l ? q({ count: e }) : H({ count: e })), t ? b.createElement(f.ZP, { style: N.spacing }, W) : "User" === a?.__typename ? b.createElement(M.Z, { style: N.userName, user: a, weight: "normal", withLink: !0 }) : null)))),
+                z = b.memo(V),
                 N = F.default.create((e) => ({ root: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space12 }, row: { alignItems: "center", flexDirection: "row" }, column: { flexDirection: "column" }, userName: { marginHorizontal: e.spaces.space8 }, spacing: { marginStart: e.spaces.space8 }, awardDetails: { marginStart: e.spaces.space8, marginBottom: e.spaces.space4 } })),
-                O = v().h1c5d6aa,
-                Q = v().h6d45054,
-                G = v().fbb7764b,
+                O = B().h1c5d6aa,
+                Q = B().h6d45054,
+                G = B().fbb7764b,
                 j = { page: "tweet_coin_details" },
                 $ = _,
                 X = (0, S.z)($, { errorConfig: { context: "TWEET_COINS_DETAILS_CONTEXT" } }),
@@ -630,19 +630,19 @@
                             t.goBack();
                         }, [t]),
                         n = b.useMemo(() => ({ tweet_id: l || "0" }), [l]),
-                        r = b.useCallback((e) => b.createElement(q, { coins: e.total_coins_worth, isAnonymous: e.is_anonymous, key: e.rank, user: e.sender_results?.result }), []),
-                        i = b.useCallback((e) => b.createElement(w.Z, { style: te.title }, b.createElement(B.default, null), b.createElement(f.ZP, { size: "headline1", style: te.spacing, weight: "bold" }, G({ count: e }))), []),
+                        r = b.useCallback((e) => b.createElement(z, { coins: e.total_coins_worth, isAnonymous: e.is_anonymous, key: e.rank, user: e.sender_results?.result }), []),
+                        i = b.useCallback((e) => b.createElement(w.Z, { style: te.title }, b.createElement(x.default, null), b.createElement(f.ZP, { size: "headline1", style: te.spacing, weight: "bold" }, G({ count: e }))), []),
                         s = b.useCallback(
                             ({ data: e, fetchStatus: l, retry: n }) => {
                                 if (l === R.ZP.FAILED) return b.createElement(Z.Z, { onRequestRetry: n });
                                 if (l === R.ZP.LOADED) {
                                     const l = e?.tweet_result_by_rest_id?.result?.granted_awards?.total_coins_worth,
                                         { total_coins_worth: n, total_coins_worth_anonymous: s, total_coins_worth_public: o } = e?.tweet_result_by_rest_id?.result?.awards_granted_by_viewer || {},
-                                        c = e?.tweet_result_by_rest_id?.result?.awards_granted_leaderboard?.entries || [],
-                                        d = J(n),
+                                        d = e?.tweet_result_by_rest_id?.result?.awards_granted_leaderboard?.entries || [],
+                                        c = J(n),
                                         u = e?.viewer_v2?.user_results?.result,
                                         p = E.ZP.getTruncatedCount(Number(l));
-                                    return b.createElement(x.Z, { backButtonType: "close", history: t, middleControl: i(p), onBackClick: a }, b.createElement(w.Z, { style: te.root }, d ? b.createElement(w.Z, null, b.createElement(T.Z, { text: O }), J(o) ? b.createElement(q, { coins: o || 0, isAnonymous: !1, user: u }) : null, J(s) ? b.createElement(q, { coins: s || 0, isAnonymous: !0, isLoggedinUser: !0, user: u }) : null) : null, c ? b.createElement(w.Z, null, b.createElement(T.Z, { text: Q }), b.createElement(K.Z, { cacheKey: "awardsSentByOthers", identityFunction: Y, items: c, renderer: r, withoutHeadroom: !0 })) : null));
+                                    return b.createElement(K.Z, { backButtonType: "close", history: t, middleControl: i(p), onBackClick: a }, b.createElement(w.Z, { style: te.root }, c ? b.createElement(w.Z, null, b.createElement(T.Z, { text: O }), J(o) ? b.createElement(z, { coins: o || 0, isAnonymous: !1, user: u }) : null, J(s) ? b.createElement(z, { coins: s || 0, isAnonymous: !0, isLoggedinUser: !0, user: u }) : null) : null, d ? b.createElement(w.Z, null, b.createElement(T.Z, { text: Q }), b.createElement(v.Z, { cacheKey: "awardsSentByOthers", identityFunction: Y, items: d, renderer: r, withoutHeadroom: !0 })) : null));
                                 }
                                 return b.createElement(C.Z, null);
                             },
@@ -653,19 +653,6 @@
                 te = F.default.create((e) => ({ root: { marginHorizontal: e.spaces.space32 }, spacing: { marginStart: e.spaces.space4 }, title: { flexDirection: "row", alignItems: "center", justifyContent: "center", paddingEnd: e.spaces.space64 } })),
                 le = ee;
         },
-        748138: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
-            var a = l(202784),
-                n = l(890601),
-                r = l(783427),
-                i = l(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetCoinDetails.a570367a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetCoinDetails.bfbeaada.js.map

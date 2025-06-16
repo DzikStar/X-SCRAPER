@@ -105,7 +105,7 @@
                 f = "Action required",
                 b = ({ __id: e }) => e,
                 x = ({ data: e, fetchNext: t, type: a }) => {
-                    const n = (({ supportLink: e, type: t }) => r.useCallback((a) => ("transaction" === t && "XPaymentsTransaction" === a.__typename ? r.createElement(g.Z, { itemRef: a, key: a.__id }) : "notice" === t && "XPaymentsCustomerNotice" === a.__typename ? r.createElement(s.Z, { "aria-label": f, containerStyle: C.noticeTile, stackLayoutUpperStyle: p.ZP.upper, upper: r.createElement(h.Z, { itemRef: a, key: a.__id, supportLink: e }), withInteractiveStyling: !1 }) : null), [e, t]))({ supportLink: (0, m.b)({}), type: a }),
+                    const n = (({ supportLink: e, type: t }) => r.useCallback((a) => ("transaction" === t && "XPaymentsTransaction" === a.__typename ? r.createElement(g.Z, { itemRef: a, key: a.__id }) : "notice" === t && "XPaymentsCustomerNotice" === a.__typename ? r.createElement(s.Z, { "aria-label": f, containerStyle: C.noticeTile, stackLayoutUpperStyle: p.ZP.upper, upper: r.createElement(h.Z, { itemRef: a, key: a.__id, supportLink: e }), withInteractiveStyling: !1 }) : null), [e, t]))({ supportLink: (0, m.bR)({}), type: a }),
                         l = e?.get_payments_customer_actions,
                         { items: d } = c()(y, l) ?? { items: [] },
                         x = r.createElement(u.Z, { assumedItemHeight: 64, cacheKey: "actionNeededList", footer: null, identityFunction: b, items: d, onNearEnd: t, renderer: n, role: "list", withoutHeadroom: !0 });
@@ -494,4 +494,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d26971c7.f52e88da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d26971c7.dc6759da.js.map

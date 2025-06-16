@@ -153,8 +153,8 @@
                 u = n(33104),
                 p = n(789831),
                 m = n(252021),
-                h = n(293115),
-                b = n(87063),
+                b = n(293115),
+                h = n(87063),
                 g = n(652904),
                 f = n(507651),
                 D = n(3138),
@@ -162,18 +162,18 @@
                 y = n(503229),
                 M = n(71620),
                 C = n(668214);
-            const E = (e, t) => t.module.selectInitialFetchStatus(e),
-                k = (e, t) => t.module.selectPageConfiguration && t.module.selectPageConfiguration(e),
+            const k = (e, t) => t.module.selectInitialFetchStatus(e),
+                E = (e, t) => t.module.selectPageConfiguration && t.module.selectPageConfiguration(e),
                 S = (e, t) => {
                     const n = t.selectedTabId,
-                        a = k(e, t);
+                        a = E(e, t);
                     return a && a.tabs && a.tabs.tabs.find((e) => e.id === n);
                 },
-                v = (0, C.Z)()
-                    .propsFromState(() => ({ initialFetchStatus: E, pageConfiguration: k, selectedTab: S }))
+                I = (0, C.Z)()
+                    .propsFromState(() => ({ initialFetchStatus: k, pageConfiguration: E, selectedTab: S }))
                     .propsFromActions(({ module: e }) => ({ createLocalApiErrorHandler: (0, M.zr)("RICH_SEGMENTED_TIMELINE"), fetchInitial: e.fetchInitial }))
                     .withAnalytics();
-            class I extends a.Component {
+            class A extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this._fetchPageModule = () => {
@@ -219,7 +219,7 @@
                 }
                 render() {
                     const { initialFetchStatus: e } = this.props;
-                    return e === b.Z.LOADED ? this._render() : null;
+                    return e === h.Z.LOADED ? this._render() : null;
                 }
                 _buildTabNamespace(e, t) {
                     let n;
@@ -232,32 +232,30 @@
                     }
                 }
             }
-            const A = v((0, y.Z)(I));
-            var T = n(912021),
+            const T = I((0, y.Z)(A));
+            var v = n(912021),
                 x = n(383675),
                 N = n(611423),
                 Z = n(443781);
             const _ = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
+                        n.e("icons.23"),
+                        n.e("icons.0"),
                         n.e("icons.2"),
-                        n.e("icons.24"),
-                        n.e("icons.10"),
-                        n.e("icons.15"),
-                        n.e("icons.27"),
                         n.e("icons.16"),
-                        n.e("icons.12"),
-                        n.e("icons.7"),
-                        n.e("icons.5"),
-                        n.e("icons.22"),
                         n.e("icons.19"),
+                        n.e("icons.10"),
+                        n.e("icons.13"),
+                        n.e("icons.24"),
+                        n.e("icons.7"),
+                        n.e("icons.22"),
+                        n.e("icons.27"),
                         n.e("icons.17"),
-                        n.e("icons.26"),
-                        n.e("icons.4"),
-                        n.e("icons.29"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.14"),
+                        n.e("icons.11"),
+                        n.e("icons.26"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -268,12 +266,14 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.13"),
-                        n.e("icons.1"),
+                        n.e("icons.8"),
+                        n.e("icons.4"),
+                        n.e("icons.14"),
+                        n.e("icons.28"),
                         n.e("icons.21"),
-                        n.e("icons.6"),
+                        n.e("icons.3"),
+                        n.e("icons.1"),
                         n.e("icons.18"),
-                        n.e("icons.0"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -373,7 +373,7 @@
                             }
                             return e.contextualScribeNamespace;
                         }),
-                        (this._getModule = (0, T.Z)((e, t, n, a) => {
+                        (this._getModule = (0, v.Z)((e, t, n, a) => {
                             if (e?.id !== t) {
                                 if (e?.urtEndpoint) return (0, N.Z)({ urtUrl: e?.urtEndpoint, timelinePrefix: a });
                                 if (e?.graphQLTimelineId) return (0, x.R)(e.graphQLTimelineId);
@@ -395,24 +395,24 @@
                     if (this.context.featureSwitches.isTrue("responsive_web_grok_05221996") && "news" === i?.id) return a.createElement(_, null);
                     const p = this._getModule(i, n?.tabs?.initialTabId, t, s),
                         m = this._getRefreshIntervalSecForCurrentTab(),
-                        b = m ? 1e3 * m : void 0;
-                    return a.createElement(h.nO, { namespace: this._getTimelineNamespace() }, a.createElement(B.Z, { entryConfiguration: e, module: p, pollingIntervalMsOverride: b, prerollDisplayLocation: o, refreshControl: r, renderEmptyState: d, renderUnavailable: l, title: c, withoutHeadroom: u }));
+                        h = m ? 1e3 * m : void 0;
+                    return a.createElement(b.nO, { namespace: this._getTimelineNamespace() }, a.createElement(B.Z, { entryConfiguration: e, module: p, pollingIntervalMsOverride: h, prerollDisplayLocation: o, refreshControl: r, renderEmptyState: d, renderUnavailable: l, title: c, withoutHeadroom: u }));
                 }
             }
             G.contextType = Z.rC;
             const H = L(G);
             var F = n(929482),
-                z = n(335632),
-                W = n(325686),
-                O = n(392237),
+                W = n(335632),
+                O = n(325686),
+                z = n(392237),
                 U = n(950708),
                 $ = n(187669),
                 j = n(725516),
-                V = n(942893);
-            const q = (e, t) => {
+                q = n(942893);
+            const V = (e, t) => {
                 const n = (0, j.z)(),
                     { component: o, element: r } = t || {},
-                    d = a.useMemo(() => ({ items: [V.Z.forTopic(e, t)] }), [t, e]);
+                    d = a.useMemo(() => ({ items: [q.Z.forTopic(e, t)] }), [t, e]);
                 return (
                     (0, $.q)(() => {
                         n.scribe({ component: o, element: r, action: "impression", data: d });
@@ -425,14 +425,14 @@
                         header: { clientEventInfo: t, displayType: n, facepile: o, landingContext: r, topicId: d },
                         onHeaderVisible: l,
                     } = e,
-                    { data: i, namespace: s } = q(d, t);
-                return a.createElement(W.Z, { style: K.root }, a.createElement(h.nO, { data: i, namespace: s }, a.createElement(U.Z, { displayType: n, facepile: o, onFollowHeaderOffscreen: ({ isOffscreen: e }) => l(!e), topicId: d, topicLandingContext: r, withDivider: !0 })));
+                    { data: i, namespace: s } = V(d, t);
+                return a.createElement(O.Z, { style: K.root }, a.createElement(b.nO, { data: i, namespace: s }, a.createElement(U.Z, { displayType: n, facepile: o, onFollowHeaderOffscreen: ({ isOffscreen: e }) => l(!e), topicId: d, topicLandingContext: r, withDivider: !0 })));
             }
-            const K = O.default.create((e) => ({ root: { borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid" } }));
+            const K = z.default.create((e) => ({ root: { borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid" } }));
             var Y = n(24949);
             const J = (e, t) => t.module.selectPageConfiguration(e),
                 X = (e, t) => t.module.selectInitialFetchStatus(e),
-                ee = (0, Y.P1)(J, X, (e, t) => t !== b.Z.LOADED || (!!e && !!e.tabs)),
+                ee = (0, Y.P1)(J, X, (e, t) => t !== h.Z.LOADED || (!!e && !!e.tabs)),
                 te = (0, C.Z)()
                     .propsFromState(() => ({ hasTabNavigation: ee, pageConfiguration: J, initialFetchStatus: X }))
                     .withAnalytics();
@@ -451,8 +451,8 @@
                 ue = (0, C.Z)().propsFromState(() => ({ topic: ce })),
                 pe = (e) => (0, ne.ju)(`https://x.com/i/topics/${e}`),
                 me = (e) => `twitter://topics_timeline?id=${e}`,
-                he = i().ed88e742;
-            const be = O.default.create((e) => ({ rightControl: { flexDirection: "row" }, followButtonContainer: { justifyContent: "center", paddingEnd: e.spaces.space4 } })),
+                be = i().ed88e742;
+            const he = z.default.create((e) => ({ rightControl: { flexDirection: "row" }, followButtonContainer: { justifyContent: "center", paddingEnd: e.spaces.space4 } })),
                 ge = ue(function (e) {
                     const t = e.navBar.topicId ? e.navBar.topicId : "",
                         {
@@ -465,19 +465,19 @@
                         } = e,
                         { featureSwitches: c } = a.useContext(Z.rC),
                         u = c.isTrue("topic_landing_page_share_enabled"),
-                        { data: p, namespace: m } = q(t, o),
-                        b = (0, s.Z)({}, r, m);
-                    return d ? a.createElement(h.nO, { data: p, namespace: b }, a.createElement(a.Fragment, null, i ? a.createElement(re.Z, { canonical: pe(t), description: d.description, title: d.name, type: "article" }) : null, l ? a.createElement(oe.Z, { deepLink: me(t) }) : null, a.createElement(W.Z, { style: be.rightControl }, a.createElement(W.Z, { style: be.followButtonContainer }, a.createElement(ae.Z, { animateMount: !0, show: n, type: "fade" }, a.createElement(de.ZP, { size: "medium", textMode: le.q.FollowTopic, topic: d }))), u ? a.createElement(ie.ZP, { copyLinkShareLabel: he, scribeNamespace: b, url: pe(t) }) : null))) : null;
+                        { data: p, namespace: m } = V(t, o),
+                        h = (0, s.Z)({}, r, m);
+                    return d ? a.createElement(b.nO, { data: p, namespace: h }, a.createElement(a.Fragment, null, i ? a.createElement(re.Z, { canonical: pe(t), description: d.description, title: d.name, type: "article" }) : null, l ? a.createElement(oe.Z, { deepLink: me(t) }) : null, a.createElement(O.Z, { style: he.rightControl }, a.createElement(O.Z, { style: he.followButtonContainer }, a.createElement(ae.Z, { animateMount: !0, show: n, type: "fade" }, a.createElement(de.ZP, { size: "medium", textMode: le.q.FollowTopic, topic: d }))), u ? a.createElement(ie.ZP, { copyLinkShareLabel: be, scribeNamespace: h, url: pe(t) }) : null))) : null;
                 }),
                 fe = i().e9f1fbcc,
                 De = a.createElement(c.Z, null),
                 we = (e) => {
-                    const { TabBar: t, backLocation: n, documentTitle: o, entryConfiguration: l, fab: i, getTabLink: c, hasTabNavigation: f, history: D, initialFetchStatus: w, initialPageNamespace: y, logoButton: M, module: C, onBackClick: E, pageConfiguration: k, prerollDisplayLocation: S, renderEmptyState: v, renderUnavailable: I, rightControl: T, selectedTabId: x, sidebarContent: N, timelinePrefix: Z, title: _, withAppLinks: B, withBottomLoginSignupBar: P, withDeferredView: R, withOpenGraphMeta: L, withSearchBox: G, withTweetButton: z } = e,
-                        W = (0, r.tj)(),
-                        O = a.useMemo(() => ({ ...l, ...(0, F.Z)({ isLegacy: !0, isWide: W }) }), [l, W]),
+                    const { TabBar: t, backLocation: n, documentTitle: o, entryConfiguration: l, fab: i, getTabLink: c, hasTabNavigation: f, history: D, initialFetchStatus: w, initialPageNamespace: y, logoButton: M, module: C, onBackClick: k, pageConfiguration: E, prerollDisplayLocation: S, renderEmptyState: I, renderUnavailable: A, rightControl: v, selectedTabId: x, sidebarContent: N, timelinePrefix: Z, title: _, withAppLinks: B, withBottomLoginSignupBar: P, withDeferredView: R, withOpenGraphMeta: L, withSearchBox: G, withTweetButton: W } = e,
+                        O = (0, r.tj)(),
+                        z = a.useMemo(() => ({ ...l, ...(0, F.Z)({ isLegacy: !0, isWide: O }) }), [l, O]),
                         [U, $] = a.useState(!0),
-                        { header: j, navBar: V, subtitle: q, title: K } = k || {},
-                        Y = w === b.Z.LOADED ? K || _ : "",
+                        { header: j, navBar: q, subtitle: V, title: K } = E || {},
+                        Y = w === h.Z.LOADED ? K || _ : "",
                         J = ((e, t, n) => {
                             const a = t?.scribeConfig,
                                 { entityToken: o, ...r } = a || {},
@@ -486,16 +486,16 @@
                                 i = d?.tabs.find((e) => e.id === l),
                                 { entityToken: c, ...u } = i?.scribeConfig || {};
                             return (0, s.Z)({}, n, r, u);
-                        })(x, k, y),
+                        })(x, E, y),
                         X = j ? a.createElement(Q, { header: j, onHeaderVisible: $ }) : null,
-                        ee = V ? a.createElement(ge, { isHeaderOffscreen: !U, navBar: V, pageNamespace: J, withAppLinks: B, withOpenGraphMeta: L }) : null,
+                        ee = q ? a.createElement(ge, { isHeaderOffscreen: !U, navBar: q, pageNamespace: J, withAppLinks: B, withOpenGraphMeta: L }) : null,
                         te = R ? u.Z : a.Fragment,
-                        ne = a.createElement(a.Fragment, null, X, a.createElement(te, null, a.createElement(H, { entryConfiguration: O, initialModule: C, prerollDisplayLocation: S, renderEmptyState: v, renderUnavailable: I, selectedTabId: x, timelinePrefix: Z, title: _, withoutHeadroom: !0 }))),
+                        ne = a.createElement(a.Fragment, null, X, a.createElement(te, null, a.createElement(H, { entryConfiguration: z, initialModule: C, prerollDisplayLocation: S, renderEmptyState: I, renderUnavailable: A, selectedTabId: x, timelinePrefix: Z, title: _, withoutHeadroom: !0 }))),
                         ae = i ? a.createElement(p.Z, { component: d.Z, fab: i }, ne) : ne,
-                        oe = c && f ? a.createElement(A, { getTabLink: c, module: C, selectedTabId: x }) : void 0;
-                    return a.createElement(h.nO, { namespace: J }, a.createElement(g.Z, null, a.createElement(m.Z, { TabBar: t, backLocation: n, documentTitle: o, history: D, logoButton: M, onBackClick: E, primaryContent: ae, rightControl: ee || T, secondaryBar: oe, sidebarContent: N, subtitle: q, title: X && U ? _ : Y, withBottomLoginSignupBar: P, withSearchBox: G, withTweetButton: z })));
+                        oe = c && f ? a.createElement(T, { getTabLink: c, module: C, selectedTabId: x }) : void 0;
+                    return a.createElement(b.nO, { namespace: J }, a.createElement(g.Z, null, a.createElement(m.Z, { TabBar: t, backLocation: n, documentTitle: o, history: D, logoButton: M, onBackClick: k, primaryContent: ae, rightControl: ee || v, secondaryBar: oe, sidebarContent: N, subtitle: V, title: X && U ? _ : Y, withBottomLoginSignupBar: P, withSearchBox: G, withTweetButton: W })));
                 };
-            we.defaultProps = { entryConfiguration: (0, z.G)({}), renderEmptyState: () => a.createElement(o.Z, { header: fe }), sidebarContent: De, withDeferredView: !1, withAppLinks: !1, withOpenGraphMeta: !1 };
+            we.defaultProps = { entryConfiguration: (0, W.G)({}), renderEmptyState: () => a.createElement(o.Z, { header: fe }), sidebarContent: De, withDeferredView: !1, withAppLinks: !1, withOpenGraphMeta: !1 };
             const ye = te(we);
         },
         337455: (e, t, n) => {
@@ -574,8 +574,8 @@
                 u = n(912021),
                 p = n(516951),
                 m = n(731708),
-                h = n(310088),
-                b = n(175993),
+                b = n(310088),
+                h = n(175993),
                 g = n(58881),
                 f = n(530732);
             const D = c().d2414d31,
@@ -616,16 +616,16 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": t, badgeCount: n, badgePip: a, children: r, color: d, isActive: s, isCompact: c, isPillLink: u, isRoundedRect: p, isWebRedesign: b, retainScrollPosition: M, style: E, to: k } = this.props,
+                    const { Icon: e, "aria-label": t, badgeCount: n, badgePip: a, children: r, color: d, isActive: s, isCompact: c, isPillLink: u, isRoundedRect: p, isWebRedesign: h, retainScrollPosition: M, style: k, to: E } = this.props,
                         { location: S } = this.state,
-                        v = k ? this._getMemoizedLink(k, M) : void 0,
-                        I = s ? s(k) : S?.pathname === v?.pathname,
-                        A = g.Z.generate({ backgroundColor: "transparent", color: l.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? C.pillHoverStyle.backgroundColor : void 0 }),
-                        T = b ? "medium" : I ? "bold" : "medium";
-                    return o.createElement(f.Z, { "aria-label": t, "aria-selected": I, focusable: !!I, interactiveStyles: A, link: v, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [C.pillStyle] : [C.link]), ...(u && I ? [C.pillActiveStyle] : []), c ? (u ? C.compactPill : C.compactLink) : null, p ? C.roundedRect : null, E], withoutInteractiveStyles: b }, ({ isFocused: t, isHovered: s }) => o.createElement(i.Z, { style: u && C.flexGrow }, o.createElement(m.ZP, { size: b ? "headline2" : void 0, style: [C.text, { color: this._getTextColor(I, s, b, u) }, c && C.compactText, b && t && C.focusedText, u && C.pillTextStyle, u && I && C.pillActiveTextStyle, u && s && C.pillHoverTextStyle], weight: T }, e && o.createElement(e, { style: C.icon }), r, b || u ? null : o.createElement(i.Z, { style: I && [C.border, { backgroundColor: l.default.theme.colors[d] }] })), n ? o.createElement(h.Z, { count: n, standalone: !0, style: [C.badge, n >= 10 && C.multiDigitBadge, n >= 20 && C.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: D, withBorder: !1 }) : a ? o.createElement(h.Z, { pip: !0, standalone: !0, style: C.badgePip, textColor: "red500", unreadCountLabel: w, withBorder: !1 }) : null));
+                        I = E ? this._getMemoizedLink(E, M) : void 0,
+                        A = s ? s(E) : S?.pathname === I?.pathname,
+                        T = g.Z.generate({ backgroundColor: "transparent", color: l.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? C.pillHoverStyle.backgroundColor : void 0 }),
+                        v = h ? "medium" : A ? "bold" : "medium";
+                    return o.createElement(f.Z, { "aria-label": t, "aria-selected": A, focusable: !!A, interactiveStyles: T, link: I, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [C.pillStyle] : [C.link]), ...(u && A ? [C.pillActiveStyle] : []), c ? (u ? C.compactPill : C.compactLink) : null, p ? C.roundedRect : null, k], withoutInteractiveStyles: h }, ({ isFocused: t, isHovered: s }) => o.createElement(i.Z, { style: u && C.flexGrow }, o.createElement(m.ZP, { size: h ? "headline2" : void 0, style: [C.text, { color: this._getTextColor(A, s, h, u) }, c && C.compactText, h && t && C.focusedText, u && C.pillTextStyle, u && A && C.pillActiveTextStyle, u && s && C.pillHoverTextStyle], weight: v }, e && o.createElement(e, { style: C.icon }), r, h || u ? null : o.createElement(i.Z, { style: A && [C.border, { backgroundColor: l.default.theme.colors[d] }] })), n ? o.createElement(b.Z, { count: n, standalone: !0, style: [C.badge, n >= 10 && C.multiDigitBadge, n >= 20 && C.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: D, withBorder: !1 }) : a ? o.createElement(b.Z, { pip: !0, standalone: !0, style: C.badgePip, textColor: "red500", unreadCountLabel: w, withBorder: !1 }) : null));
                 }
             }
-            (M.contextType = b.Z), (M.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
+            (M.contextType = h.Z), (M.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
             const C = l.default.create((e) => ({
                     link: { alignItems: "center", display: "flex", flexDirection: "column", flexGrow: 1, height: e.componentDimensions.appBarHeight, justifyContent: "center", outlineStyle: "none", paddingHorizontal: e.spaces.space16, minWidth: "56px" },
                     compactLink: { height: 0.75 * e.componentDimensions.appBarHeightPx },
@@ -649,39 +649,26 @@
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
-                E = M,
-                k = l.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
+                k = M,
+                E = l.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
                 S = ({ alignFirstItem: e, "aria-label": t, isCompact: n, isPillLink: l, isRoundedRect: i, links: s, style: c, visibleItemIndex: u }) => {
                     const p = s
                             .filter(Boolean)
                             .map((e) => e.key)
                             .join("-"),
                         { isWebRedesign: m } = d.ZP.useProps(),
-                        h = m() && !l,
-                        b = o.useMemo(
+                        b = m() && !l,
+                        h = o.useMemo(
                             () =>
                                 s.filter(Boolean).map(({ label: t, viewType: r, ...d }, s) => {
-                                    const c = h ? [k.linkRedesign, 0 === s && k.firstLinkRedesign, e && 0 === s && k.withNoPaddingStart] : void 0;
-                                    return o.createElement(E, (0, a.Z)({ viewType: r }, d, { isCompact: n, isPillLink: l, isRoundedRect: i, isWebRedesign: h, style: c }), t);
+                                    const c = b ? [E.linkRedesign, 0 === s && E.firstLinkRedesign, e && 0 === s && E.withNoPaddingStart] : void 0;
+                                    return o.createElement(k, (0, a.Z)({ viewType: r }, d, { isCompact: n, isPillLink: l, isRoundedRect: i, isWebRedesign: b, style: c }), t);
                                 }),
-                            [e, n, l, i, h, s],
+                            [e, n, l, i, b, s],
                         );
-                    return o.createElement(r.Z, { "aria-label": t, buttonsContainerStyle: l && k.gap, childrenStyle: !h && k.flexGrow, key: p, style: [l ? null : k.segmentedControl, h && k.leftAligned, c], visibleItemIndex: u }, b);
+                    return o.createElement(r.Z, { "aria-label": t, buttonsContainerStyle: l && E.gap, childrenStyle: !b && E.flexGrow, key: p, style: [l ? null : E.segmentedControl, b && E.leftAligned, c], visibleItemIndex: u }, h);
                 };
-        },
-        748138: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => i });
-            var a = n(202784),
-                o = n(890601),
-                r = n(783427),
-                d = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [d.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const i = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Explore~bundle.Topics.c6410f8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Explore~bundle.Topics.c5b981aa.js.map

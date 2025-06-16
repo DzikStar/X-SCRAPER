@@ -3,7 +3,7 @@
     ["ondemand.XChat-97c99e35"],
     {
         155369: (e, s, t) => {
-            t.d(s, { U: () => C, n: () => b });
+            t.d(s, { U: () => E, n: () => N });
             var n = t(552322),
                 r = t(159603),
                 i = t(202784),
@@ -24,9 +24,10 @@
             var h = t(346598),
                 u = t(842898),
                 x = t(446368),
-                m = t(889906),
-                v = t(264531);
-            class g extends r.com.x.dms.WebXChatFeatureSwitches {
+                m = t(38891),
+                v = t(889906),
+                g = t(264531);
+            class w extends r.com.x.dms.WebXChatFeatureSwitches {
                 featureSwitches;
                 constructor(e) {
                     super(), (this.featureSwitches = e);
@@ -62,22 +63,23 @@
                     return !1;
                 }
             }
-            var w = t(38891);
             const p = r.kotlin.collections.KtList,
-                f = (0, i.createContext)(void 0),
-                _ = "undefined" == typeof window;
-            let j;
-            function b() {
-                const e = (0, i.useContext)(f);
+                f = !1,
+                _ = 800,
+                j = (0, i.createContext)(void 0),
+                b = "undefined" == typeof window;
+            let y;
+            function N() {
+                const e = (0, i.useContext)(j);
                 if (!e) throw new Error("useGraph must be used within an GraphProvider");
                 return e;
             }
-            function y(e, s, n, i, x) {
+            function S(e, s, n, i, x) {
                 const m = "true" === localStorage.getItem(l.e) || !1,
-                    w = (0, o.n5)(),
-                    f = x.isTrue("rweb_xchat_fs_worker");
+                    v = (0, o.n5)(),
+                    j = x.isTrue("rweb_xchat_fs_worker");
                 return new r.com.x.dms.WebDmObjectGraph(
-                    r.com.x.models.UserIdentifier.ofString(w),
+                    r.com.x.models.UserIdentifier.ofString(v),
                     i
                         ? (function () {
                               const e = new d(new URL(t.p + t.u("node_modules_x-clients_features_dist_dms_sqlite2_worker_js"), t.b), { type: void 0 }).createWorker();
@@ -101,8 +103,8 @@
                               const e = new d(new URL(t.p + t.u("node_modules_x-clients_features_dist_dms_sqlite_worker_js"), t.b), { type: void 0 }).createWorker();
                               return (e.onerror = (e) => {}), e.postMessage({ action: "init_db", dbName: `${(0, o.n5)()}_chat`, id: "init_1" }), () => new Promise((s) => s(e));
                           })(),
-                    N,
-                    f,
+                    C,
+                    j,
                     a._i,
                     (s, t) => {
                         (0, u.S)(s.value.toString(), e).then((e) => {
@@ -117,22 +119,22 @@
                     (e, t, n, r, i) => {
                         s.scribe({ client: "m5", page: e ?? void 0, section: t ?? void 0, component: n ?? void 0, element: r ?? void 0, action: i ?? void 0 });
                     },
-                    new r.com.x.dms.WebOptions(S(v.B$.INFO), f || !(0, c.G)() ? S(n) : null, !1),
+                    new r.com.x.dms.WebOptions(k(g.B$.INFO), j || !(0, c.G)() ? k(n) : null, !1),
                     m,
                     new h.V(),
-                    new g(x),
+                    new w(x),
                     () => {},
-                    !1,
-                    800,
+                    f,
+                    _,
                 );
             }
-            function N() {
+            function C() {
                 return new Promise((e) => {
                     const s = new d(new URL(t.p + t.u("node_modules_x-clients_features_dist_dms_fs_worker_js"), t.b), { type: void 0 }).createWorker();
                     (s.onerror = (e) => {}), e(s);
                 });
             }
-            function S(e) {
+            function k(e) {
                 switch (e) {
                     case "DEBUG":
                     case "INFO":
@@ -143,14 +145,14 @@
                         return e;
                 }
             }
-            function C({ children: e }) {
-                if (_) return;
-                const s = (0, m.useRelayEnvironment)(),
+            function E({ children: e }) {
+                if (b) return;
+                const s = (0, v.useRelayEnvironment)(),
                     t = (0, x.z$)(),
-                    r = (0, v.xq)(),
-                    i = (0, v.rF)(),
-                    a = (0, w.z)();
-                return j || (j = y(s, t, r, i, a)), (0, n.jsx)(f.Provider, { value: j, children: e });
+                    r = (0, g.xq)(),
+                    i = (0, g.rF)(),
+                    a = (0, m.z)();
+                return y || (y = S(s, t, r, i, a)), (0, n.jsx)(j.Provider, { value: y, children: e });
             }
         },
         92184: (e, s, t) => {
@@ -339,4 +341,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-97c99e35.428d7e1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-97c99e35.24efca4a.js.map

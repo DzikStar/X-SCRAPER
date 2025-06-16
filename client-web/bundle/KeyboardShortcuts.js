@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: i, hideBackButton: s, isFullWidth: a, isLarge: c, leftControl: d, middleControl: u, position: h, rightControl: m, secondaryBar: g, style: y, subtitle: k, title: b, titleDomId: f, titleIconCell: v, titleIconCellSize: B, withBackground: w, withWideContainer: C } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: i, hideBackButton: s, isFullWidth: a, isLarge: c, leftControl: d, middleControl: u, position: h, rightControl: m, secondaryBar: g, style: k, subtitle: y, title: b, titleDomId: f, titleIconCell: v, titleIconCellSize: B, withBackground: C, withWideContainer: w } = this.props,
                         { isModal: x } = this.context,
                         Z = s ? d : r.createElement(n.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         E = (function (e, t, o) {
                             return e && !(t && o);
-                        })(!!w, x, !!g);
-                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: c, leftControl: Z, middleControl: u, position: p(h, x, i), rightControl: m, style: y, subtitle: k, title: b, titleDomId: f, titleIconCell: v, titleIconCellSize: B, withBackground: E, withWideContainer: C }), g || null);
+                        })(!!C, x, !!g);
+                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: c, leftControl: Z, middleControl: u, position: p(h, x, i), rightControl: m, style: k, subtitle: y, title: b, titleDomId: f, titleIconCell: v, titleIconCellSize: B, withBackground: E, withWideContainer: w }), g || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -61,9 +61,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: s, centerTitle: a, hideBackButton: n, history: l, isFullWidth: p, isLarge: u, middleControl: h, onBackClick: g, rightControl: y, secondaryBar: k, subtitle: b, title: f } = this.props,
+                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: s, centerTitle: a, hideBackButton: n, history: l, isFullWidth: p, isLarge: u, middleControl: h, onBackClick: g, rightControl: k, secondaryBar: y, subtitle: b, title: f } = this.props,
                                 { isModal: v } = this.context;
-                            return r.createElement(i.Z, { style: v ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, r.createElement(d.ZP, { backButtonType: o || (v ? "close" : "back"), backLocation: s, centerTitle: a, fixed: !v, hideBackButton: n, history: l, isFullWidth: p, isLarge: u, middleControl: h, onBackClick: g, ref: e, rightControl: y, secondaryBar: k, style: [v && m.appBarModal, t], subtitle: b, title: f, titleDomId: c.Q_ }));
+                            return r.createElement(i.Z, { style: v ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, r.createElement(d.ZP, { backButtonType: o || (v ? "close" : "back"), backLocation: s, centerTitle: a, fixed: !v, hideBackButton: n, history: l, isFullWidth: p, isLarge: u, middleControl: h, onBackClick: g, ref: e, rightControl: k, secondaryBar: y, style: [v && m.appBarModal, t], subtitle: b, title: f, titleDomId: c.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -72,10 +72,10 @@
                         });
                 }
                 render() {
-                    const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: a, documentTitle: n, isFullWidth: c, isLarge: d, renderHeader: h, title: g, withoutBottomBarMobile: y } = this.props,
-                        { isModal: k } = this.context,
+                    const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: a, documentTitle: n, isFullWidth: c, isLarge: d, renderHeader: h, title: g, withoutBottomBarMobile: k } = this.props,
+                        { isModal: y } = this.context,
                         b = h ? h(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return r.createElement(l.Z, null, r.createElement(p.Z.Configure, { documentTitle: n, headerless: !0, title: g }), r.createElement(i.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [m.root, k && m.rootModal] }, !k && b, r.createElement(s.Z, { isFullWidth: c, isLarge: d, style: [m.container, k && m.containerModal, a] }, k ? r.createElement(u.Z, { style: m.viewport }, b, o) : o), t ? r.createElement(i.Z, { style: [m.bottomBarModal, !k && !y && m.bottomBarMobile] }, r.createElement(s.Z, { isFullWidth: c, isLarge: d }, t)) : null));
+                    return r.createElement(l.Z, null, r.createElement(p.Z.Configure, { documentTitle: n, headerless: !0, title: g }), r.createElement(i.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [m.root, y && m.rootModal] }, !y && b, r.createElement(s.Z, { isFullWidth: c, isLarge: d, style: [m.container, y && m.containerModal, a] }, y ? r.createElement(u.Z, { style: m.viewport }, b, o) : o), t ? r.createElement(i.Z, { style: [m.bottomBarModal, !y && !k && m.bottomBarMobile] }, r.createElement(s.Z, { isFullWidth: c, isLarge: d }, t)) : null));
                 }
             }
             (h.defaultProps = { isFullWidth: !1, isLarge: !1 }), (h.contextType = a.Z);
@@ -181,7 +181,7 @@
                 };
         },
         842485: (e, t, o) => {
-            o.r(t), o.d(t, { Entry: () => E, KeyboardShortcutsScreen: () => x, ShortcutContent: () => Z, default: () => M });
+            o.r(t), o.d(t, { Entry: () => E, KeyboardShortcutsScreen: () => x, ShortcutContent: () => Z, default: () => S });
             var r = o(202784),
                 i = o(325686),
                 s = o(386802),
@@ -195,16 +195,16 @@
                 h = o(163390),
                 m = o(24949),
                 g = o(668214),
-                y = o(919022);
-            const k = (0, g.Z)()
-                    .propsFromState(() => ({ viewerUserScreenName: (0, m.P1)(y.ZP.selectViewerUser, (e) => (e ? e.screen_name : void 0)) }))
+                k = o(919022);
+            const y = (0, g.Z)()
+                    .propsFromState(() => ({ viewerUserScreenName: (0, m.P1)(k.ZP.selectViewerUser, (e) => (e ? e.screen_name : void 0)) }))
                     .withAnalytics({ page: "keyboard_shortcuts" }),
                 b = d().ef1649e2,
                 f = d().h54e6138,
                 v = d().aefd89c8,
                 B = d().cafdefb2,
-                w = d().add55c98,
-                C = d().dda42cf2,
+                C = d().add55c98,
+                w = d().dda42cf2,
                 x = ({ history: e, location: t, viewerUserScreenName: o }) => {
                     const { userClaims: i } = r.useContext(u.rC),
                         { isModal: a } = r.useContext(s.Z),
@@ -214,14 +214,14 @@
                         d = (0, h.PN)(),
                         m = n(l),
                         g = n(c),
-                        y = n(d),
-                        k = [
+                        k = n(d),
+                        y = [
                             { headerText: v, shortcuts: m },
                             { headerText: B, shortcuts: g },
-                            { headerText: w, shortcuts: y },
-                            { headerText: C, shortcuts: [] },
+                            { headerText: C, shortcuts: k },
+                            { headerText: w, shortcuts: [] },
                         ];
-                    return r.createElement(p.Z, { documentTitle: b, history: e, isLarge: !0, title: f }, r.createElement(Z, { isModal: a, shortcuts: k }));
+                    return r.createElement(p.Z, { documentTitle: b, history: e, isLarge: !0, title: f }, r.createElement(Z, { isModal: a, shortcuts: y }));
                 },
                 Z = ({ isModal: e, shortcuts: t }) =>
                     r.createElement(
@@ -258,21 +258,8 @@
                     );
                 },
                 T = l.default.create((e) => ({ root: { padding: e.spaces.space12, paddingBottom: e.spaces.space20 }, row: { flexDirection: "row" }, keyRow: { flexDirection: "row", alignItems: "center" }, section: { flexShrink: 1 }, sectionBottomMargin: { marginBottom: e.spaces.space12 }, divider: { borderStyle: "solid", borderEndWidth: e.borderWidths.small, borderColor: e.colors.gray50, paddingEnd: e.spaces.space12, marginEnd: e.spaces.space12 }, entry: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: e.spaces.space12, marginVertical: e.spaces.space2 }, key: { backgroundColor: e.colors.gray0, borderColor: e.colors.gray50, borderRadius: e.borderRadii.small, borderStyle: "solid", borderWidth: e.borderWidths.small, boxShadow: `inset 0 -1px 0 ${e.colors.gray200}`, fontFamily: "monospace, monospace", minWidth: "1.7em", paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space1 }, plus: { marginHorizontal: e.spaces.space2 }, moduleHeader: { paddingStart: e.spaces.space12 } })),
-                M = k(x);
-        },
-        748138: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => l });
-            var r = o(202784),
-                i = o(890601),
-                s = o(783427),
-                a = o(347101);
-            const n = (e = {}) => {
-                const { direction: t } = (0, s.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
-            };
-            n.metadata = { width: 24, height: 24 };
-            const l = n;
+                S = y(x);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.KeyboardShortcuts.079c7aca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.KeyboardShortcuts.c168469a.js.map

@@ -311,8 +311,8 @@
                     n.useEffect(() => {
                         O && f && f();
                     }, [O, f]);
-                    const v = i ? n.createElement(d.Z, { source: i, style: m.iconCustom }) : null,
-                        F = t ? n.createElement(s.Z, { style: w ? m.condensedContextV2 : m.condensedContext }, n.createElement(l.ZP, { align: "left", color: "gray700", numberOfLines: 3, size: "subtext2" }, t), n.createElement(s.Z, { style: w ? m.buttonTopMargin : [m.buttonBottomMargin, m.buttonLeftMargin] }, e)) : null,
+                    const F = i ? n.createElement(d.Z, { source: i, style: m.iconCustom }) : null,
+                        v = t ? n.createElement(s.Z, { style: w ? m.condensedContextV2 : m.condensedContext }, n.createElement(l.ZP, { align: "left", color: "gray700", numberOfLines: 3, size: "subtext2" }, t), n.createElement(s.Z, { style: w ? m.buttonTopMargin : [m.buttonBottomMargin, m.buttonLeftMargin] }, e)) : null,
                         b = n.createElement(c.ZP, null, ({ containerWidth: i }) => {
                             const a = h.Z.isNarrowScreenWidth(i) ? "xLarge" : "xxLarge",
                                 d = i < g.default.theme.breakpoints.xSmall ? m.buttonWrap : void 0,
@@ -327,22 +327,9 @@
                                 })(i),
                             );
                         }),
-                        k = a && O ? b : F;
-                    return n.createElement(n.Fragment, null, v, n.createElement(l.ZP, { size: "title2", weight: "heavy" }, _), y ? n.createElement(l.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, y) : null, k);
+                        k = a && O ? b : v;
+                    return n.createElement(n.Fragment, null, F, n.createElement(l.ZP, { size: "title2", weight: "heavy" }, _), y ? n.createElement(l.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, y) : null, k);
                 };
-        },
-        748138: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => o });
-            var n = i(202784),
-                s = i(890601),
-                a = i(783427),
-                r = i(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const o = l;
         },
         19697: (e, t, i) => {
             i.d(t, { q8: () => d, $i: () => a });
@@ -1175,4 +1162,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.HoverCard-6107ac1a.447fcbca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.HoverCard-6107ac1a.caf05cda.js.map

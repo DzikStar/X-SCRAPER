@@ -14,7 +14,7 @@
                 d = a(804027),
                 u = a(305784),
                 p = a(153925),
-                m = a(50439),
+                m = a(497625),
                 h = a(217623);
             const g = ({ button: e, displayType: t = d.GN.Default, onNavigate: a, style: g, subtaskId: b, subtaskInputs: f, ...y }) => {
                 const { icon: w, navigation_link: C, preferred_size: v, separator: _ } = e,
@@ -107,7 +107,7 @@
                     return t ? ((S = t.user), (k = t.header_image), (E = t.primary_text), (x = t.secondary_text), (I = 10 * l.default.theme.lineHeightsPx.body), (B = k ? (I * k.image.image_info.width) / k.image.image_info.height : "initial"), (T = v && k && "icon" === k.image_type)) : ((E = "string" == typeof b ? { text: b } : b), (x = "string" == typeof y ? { text: y } : y)), k || E?.text || x?.text || S ? n.createElement(r.Z, null, v && k ? n.createElement(r.Z, { style: { marginHorizontal: "full_width" === k.image_type || "full_bleed_top" === k.image_type ? `-${P ? l.default.theme.spaces.space80 : l.default.theme.spaces.space32}` : "auto", height: T ? I : "initial", width: T ? B : "initial" } }, n.createElement(i.Z, { "aria-label": k.image.image_info.alt_text || "", aspectMode: c.Z.exact(k.image.image_info.width / k.image.image_info.height), image: k.image.image_info })) : null, n.createElement(r.Z, { style: g.headingContainer }, E ? n.createElement(h.Z, (0, o.Z)({}, E, { "aria-level": 1, id: u.Q_, onNavigate: a, role: "heading", size: P ? "title2" : "title3", subtaskInputs: w, testID: f, weight: "bold" })) : null, x || t?.header_button ? n.createElement(r.Z, { style: [g.subHeader, _ && g.subHeaderRightAlignedButton] }, n.createElement(r.Z, { style: _ && g.secondaryTextRightAlignedButton }, x ? n.createElement(h.Z, (0, o.Z)({}, x, { color: "gray700", onNavigate: a, subtaskInputs: w })) : null), t?.header_button ? n.createElement(r.Z, { style: _ && g.containerRightAlignedButton }, n.createElement(m.Z, { button: t.header_button, onNavigate: a, style: _ && g.buttonRightAligned, subtaskInputs: w })) : null) : null, S ? (C ?? n.createElement(d.ZP, { avatarUri: S.profile_image_url_https, displayMode: "UserCompact", name: S.name, screenName: S.screen_name, userId: S.id_str })) : null)) : null;
                 };
         },
-        50439: (e, t, a) => {
+        497625: (e, t, a) => {
             a.d(t, { Z: () => c });
             var o = a(202784),
                 n = a(804027),
@@ -643,4 +643,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-3c1f9d32.a28b610a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-3c1f9d32.47ab745a.js.map

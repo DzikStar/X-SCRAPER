@@ -1,9 +1,9 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.jobLoader"],
+    ["ondemand.jobLoader", "icons/IconStrikethrough-js"],
     {
         470275: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => v });
+            n.r(t), n.d(t, { default: () => S });
             var r = n(351322),
                 o = n(202784),
                 l = n(325686),
@@ -45,8 +45,8 @@
                     return { name: n, screen_name: o, verified: l, verified_type: a, is_blue_verified: t, profile_image_url_https: r };
                 },
                 E = s.default.create((e) => ({ root: { paddingStart: e.spaces.space12 }, listItem: { padding: e.spaces.space12, width: "20em", overflow: "hidden", borderRadius: e.borderRadii.xLarge, borderColor: e.colors.gray100, borderWidth: e.borderWidths.small } })),
-                S = w(o.memo(D)),
-                v = r.iH({ component: S }).getHandler();
+                v = w(o.memo(D)),
+                S = r.iH({ component: v }).getHandler();
         },
         386619: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -74,11 +74,11 @@
             const b = ({ displayType: e }) => {
                     switch (e) {
                         case "carousel":
-                            return v.carouselMeta;
+                            return S.carouselMeta;
                         case "compact":
-                            return v.compactMeta;
+                            return S.compactMeta;
                         default:
-                            return v.fullMeta;
+                            return S.fullMeta;
                     }
                 },
                 y = ({ displayType: e }) => "carousel" !== e,
@@ -90,27 +90,27 @@
                         f = "carousel" === t ? "medium" : void 0,
                         u = !!i,
                         h = r.createElement(p.Z, { isBlueVerified: o, isVerified: c, name: l, screenName: i || "<none>", verifiedType: d, weight: f, withScreenName: u });
-                    return (({ displayType: e }) => "carousel" === e)(e) && a ? r.createElement(s.Z, { avatarCell: r.createElement(m.default, { shape: "square", size: "small", uri: a }), avatarCellStyle: v.avatarCell, avatarSize: "small", style: v.avatarRow }, h) : h;
+                    return (({ displayType: e }) => "carousel" === e)(e) && a ? r.createElement(s.Z, { avatarCell: r.createElement(m.default, { shape: "square", size: "small", uri: a }), avatarCellStyle: S.avatarCell, avatarSize: "small", style: S.avatarRow }, h) : h;
                 },
                 k = (e) => {
                     const { location: t } = e;
-                    return t ? r.createElement(o.Z, { style: v.locationWithIcon }, y(e) ? r.createElement(c.ZP, { color: "gray700", size: "body", style: v.dontShrinkMeBro }, r.createElement(l.default, null)) : null, r.createElement(c.ZP, { color: "gray700", style: v.elidedText }, t)) : null;
+                    return t ? r.createElement(o.Z, { style: S.locationWithIcon }, y(e) ? r.createElement(c.ZP, { color: "gray700", size: "body", style: S.dontShrinkMeBro }, r.createElement(l.default, null)) : null, r.createElement(c.ZP, { color: "gray700", style: S.elidedText }, t)) : null;
                 },
                 E = (e) => {
                     const { employmentType: t, formattedSalary: n, salaryInterval: l } = e;
-                    return n || t ? r.createElement(o.Z, { style: v.metaRow }, n ? r.createElement(o.Z, { style: v.withIcon }, y(e) ? r.createElement(c.ZP, { color: "gray700", size: "body" }, r.createElement(a.default, null)) : null, r.createElement(c.ZP, { color: "gray700" }, (0, g.M)(n, l))) : null, t ? r.createElement(o.Z, { style: v.withIcon }, y(e) ? r.createElement(c.ZP, { color: "gray700", size: "body" }, r.createElement(i.default, null)) : null, r.createElement(c.ZP, { color: "gray700" }, h.eo[t])) : null) : null;
+                    return n || t ? r.createElement(o.Z, { style: S.metaRow }, n ? r.createElement(o.Z, { style: S.withIcon }, y(e) ? r.createElement(c.ZP, { color: "gray700", size: "body" }, r.createElement(a.default, null)) : null, r.createElement(c.ZP, { color: "gray700" }, (0, g.M)(n, l))) : null, t ? r.createElement(o.Z, { style: S.withIcon }, y(e) ? r.createElement(c.ZP, { color: "gray700", size: "body" }, r.createElement(i.default, null)) : null, r.createElement(c.ZP, { color: "gray700" }, h.eo[t])) : null) : null;
                 },
-                S = ({ shortDescription: e }) => {
+                v = ({ shortDescription: e }) => {
                     const t = (0, g.G)(e);
-                    return t ? r.createElement(o.Z, { style: v.richTextWrapper }, r.createElement(f.Z, { contentState: t })) : null;
+                    return t ? r.createElement(o.Z, { style: S.richTextWrapper }, r.createElement(f.Z, { contentState: t })) : null;
                 },
-                v = u.default.create((e) => ({ job: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, carouselJob: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, fullMeta: { gap: "inherit" }, carouselMeta: { gap: "inherit" }, compactMeta: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space12 }, withIcon: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4 }, locationWithIcon: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4, flex: 1 }, elidedText: { whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }, dontShrinkMeBro: { display: "flex", flexShrink: 0 }, metaRow: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space12 }, richTextWrapper: { color: e.colors.gray900, fontSize: e.fontSizes.body, fontFamily: e.fontFamilies.normal, fontWeight: e.fontWeights.regular, marginTop: e.spaces.space12 }, avatarRow: { alignItems: "center" }, avatarCell: { flexBasis: e.spaces.space12 } })),
+                S = u.default.create((e) => ({ job: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, carouselJob: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, fullMeta: { gap: "inherit" }, carouselMeta: { gap: "inherit" }, compactMeta: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space12 }, withIcon: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4 }, locationWithIcon: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4, flex: 1 }, elidedText: { whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }, dontShrinkMeBro: { display: "flex", flexShrink: 0 }, metaRow: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space12 }, richTextWrapper: { color: e.colors.gray900, fontSize: e.fontSizes.body, fontFamily: e.fontFamilies.normal, fontWeight: e.fontWeights.regular, marginTop: e.spaces.space12 }, avatarRow: { alignItems: "center" }, avatarCell: { flexBasis: e.spaces.space12 } })),
                 $ = (e) => {
                     const { displayType: t, title: n, titleSize: l } = e,
                         a = "carousel" === t,
                         i = "full" === t,
                         s = "full" !== t;
-                    return r.createElement(o.Z, { style: a ? v.carouselJob : v.job }, r.createElement(c.ZP, { size: l, style: s ? v.elidedText : void 0, weight: "bold" }, n), r.createElement(D, e), r.createElement(o.Z, { style: b(e) }, r.createElement(k, e), w(e) ? r.createElement(E, e) : null), i ? r.createElement(r.Fragment, null, r.createElement(S, e), r.createElement(d.ZP, { "aria-label": "Apply", size: "small", type: "primaryFilled" }, "View job")) : null);
+                    return r.createElement(o.Z, { style: a ? S.carouselJob : S.job }, r.createElement(c.ZP, { size: l, style: s ? S.elidedText : void 0, weight: "bold" }, n), r.createElement(D, e), r.createElement(o.Z, { style: b(e) }, r.createElement(k, e), w(e) ? r.createElement(E, e) : null), i ? r.createElement(r.Fragment, null, r.createElement(v, e), r.createElement(d.ZP, { "aria-label": "Apply", size: "small", type: "primaryFilled" }, "View job")) : null);
                 };
         },
         89217: (e, t, n) => {
@@ -196,7 +196,7 @@
                 k = h.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
         },
         779802: (e, t, n) => {
-            n.d(t, { $u: () => v, Ak: () => Z, KJ: () => D, LI: () => $, P7: () => g, PW: () => S, QF: () => b, Qm: () => w, Tr: () => z, b$: () => h, db: () => I, et: () => E, fR: () => p, iH: () => x, lD: () => y, su: () => k, u4: () => T, wX: () => _ });
+            n.d(t, { $u: () => S, Ak: () => Z, KJ: () => D, LI: () => $, P7: () => g, PW: () => v, QF: () => b, Qm: () => w, Tr: () => z, b$: () => h, db: () => I, et: () => E, fR: () => p, iH: () => x, lD: () => y, su: () => k, u4: () => T, wX: () => _ });
             var r = n(202784),
                 o = n(111677),
                 l = n.n(o),
@@ -242,11 +242,11 @@
                     }
                 },
                 E = l().d5a48014,
-                S = l().b92b6156,
-                v = l().ec5ed598,
+                v = l().b92b6156,
+                S = l().ec5ed598,
                 $ = ({ children: e, extendedWidth: t, size: n, weight: o }) => r.createElement(m.ZP, { extendedWidth: t, size: n, weight: o }, e),
-                z = { blockType: g.paragraph, label: v, component: $({ size: "body", children: v }) },
-                x = [{ blockType: g.header1, label: E, component: $({ size: "title1", extendedWidth: !0, children: E }) }, { blockType: g.header2, label: S, component: $({ size: "title3", weight: "heavy", children: S }) }, z],
+                z = { blockType: g.paragraph, label: S, component: $({ size: "body", children: S }) },
+                x = [{ blockType: g.header1, label: E, component: $({ size: "title1", extendedWidth: !0, children: E }) }, { blockType: g.header2, label: v, component: $({ size: "title3", weight: "heavy", children: v }) }, z],
                 _ = ["backspace", "backspace-word", "backspace-to-start-of-line"],
                 Z = ["delete", "delete-word", "delete-to-start-of-line"],
                 T = "increase-text-size",
@@ -304,6 +304,19 @@
             }
             const s = [];
         },
+        69893: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => c });
+            var r = n(202784),
+                o = n(890601),
+                l = n(783427),
+                a = n(347101);
+            const i = (e = {}) => {
+                const { direction: t } = (0, l.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M17.879 15c.079.323.121.658.121 1 0 2.757-2.691 5-6 5s-6-2.243-6-5h2c0 1.654 1.794 3 4 3s4-1.346 4-3c0-.352-.096-.686-.246-1h2.125zM12 11c-2.206 0-4-1.346-4-3s1.794-3 4-3 4 1.346 4 3h2c0-2.757-2.691-5-6-5S6 5.243 6 8c0 1.126.455 2.163 1.211 3H3v2h18v-2h-9z" })) }, { writingDirection: t });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const c = i;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.jobLoader.37da29ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.jobLoader.f60d67ca.js.map

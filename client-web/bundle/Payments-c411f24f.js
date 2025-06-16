@@ -86,21 +86,6 @@
                 u = o.default.create((e) => ({ logo: { width: e.spaces.space64, color: e.colors.gray500 }, row: { flexDirection: "row", gap: e.spaces.space24 }, column: { flexDirection: "column", gap: e.spaces.space12, flex: 1 } })),
                 p = n.memo(m);
         },
-        575123: (e, t, a) => {
-            a.d(t, { Z: () => h });
-            var n = a(202784),
-                c = a(325686),
-                l = a(154003),
-                r = a(692165),
-                o = a(19197),
-                i = a(514639),
-                s = a(743080);
-            const d = "Help Center",
-                m = "Settings",
-                u = { pathname: i.N6, external: !0, openInSameFrame: !1 },
-                p = () => n.createElement(c.Z, { style: s.ZP.actionButtons }, n.createElement(l.ZP, { "aria-label": d, hoverLabel: { label: d }, icon: n.createElement(r.default, null), link: u, pullRight: !0, type: "primaryText" }), n.createElement(l.ZP, { "aria-label": m, hoverLabel: { label: m }, icon: n.createElement(o.default, null), link: i.Sr, pullRight: !0, type: "primaryText" })),
-                h = n.memo(p);
-        },
         827309: (e, t, a) => {
             a.d(t, { Z: () => p });
             var n = a(202784),
@@ -161,8 +146,8 @@
                         },
                         [t, e, u],
                     ),
-                    b = u && e ? ((e) => `Note cannot exceed ${e} characters.`)(e) : null;
-                return c.createElement(l.Z, null, c.createElement(l.Z, { style: [m.noteInputContainer, u ? m.noteInputContainerError : null] }, c.createElement(r.Z, (0, n.Z)({}, d, { maxLength: e, onBlur: E, onChange: f, onFocus: g, placeholder: a, placeholderTextColor: i ?? m.placeholder.color, style: [m.noteInput, h && m.noteInputFocused], testID: "note-input", value: s }))), c.createElement(l.Z, { style: m.errorContainer }, b && c.createElement(o.ZP, { style: m.errorText }, b)));
+                    v = u && e ? ((e) => `Note cannot exceed ${e} characters.`)(e) : null;
+                return c.createElement(l.Z, null, c.createElement(l.Z, { style: [m.noteInputContainer, u ? m.noteInputContainerError : null] }, c.createElement(r.Z, (0, n.Z)({}, d, { maxLength: e, onBlur: E, onChange: f, onFocus: g, placeholder: a, placeholderTextColor: i ?? m.placeholder.color, style: [m.noteInput, h && m.noteInputFocused], testID: "note-input", value: s }))), c.createElement(l.Z, { style: m.errorContainer }, v && c.createElement(o.ZP, { style: m.errorText }, v)));
             }
             const d = c.memo(s),
                 m = i.default.create((e) => ({ noteInput: { padding: e.spaces.space16, width: "100%", height: e.spaces.space48, textAlign: "start", fontSize: e.fontSizes.body, color: e.colors.text, backgroundColor: "transparent", border: "none" }, placeholder: { color: e.colors.gray400 }, noteInputContainer: { borderWidth: e.spaces.space1, borderColor: e.colors.gray200, borderRadius: e.spaces.space12 }, noteInputContainerError: { borderColor: e.colors.red500 }, errorContainer: { justifyContent: "flex-start", marginTop: e.spaces.space8 }, errorText: { color: e.colors.red500, fontSize: e.fontSizes.subtext3 }, noteInputFocused: { outlineColor: e.colors.gray200, borderRadius: e.spaces.space12 } }));
@@ -185,37 +170,37 @@
                 g = a(14284),
                 E = a(58399),
                 f = a(976352),
-                b = a(988291),
-                v = a(829464),
+                v = a(988291),
+                b = a(829464),
                 k = a(727828),
-                Z = a(514639);
-            const x = n.Z,
-                C = Object.freeze({ [b.S.Alert]: "danger", [b.S.Info]: "primary", [b.S.Warning]: "warning" }),
-                z = Object.freeze({ [b.S.Alert]: u.default, [b.S.Info]: p.default, [b.S.Warning]: u.default }),
+                x = a(514639);
+            const Z = n.Z,
+                C = Object.freeze({ [v.S.Alert]: "danger", [v.S.Info]: "primary", [v.S.Warning]: "warning" }),
+                z = Object.freeze({ [v.S.Alert]: u.default, [v.S.Info]: p.default, [v.S.Warning]: u.default }),
                 w = ({ itemRef: e, supportLink: t }) => {
-                    const a = o()(x, e),
-                        n = a.topics?.includes(v.h.Premium),
-                        r = a.topics?.includes(v.h.Interest),
-                        m = a.topics?.includes(v.h.Geography),
-                        u = a.level === b.S.Info,
+                    const a = o()(Z, e),
+                        n = a.topics?.includes(b.h.Premium),
+                        r = a.topics?.includes(b.h.Interest),
+                        m = a.topics?.includes(b.h.Geography),
+                        u = a.level === v.S.Info,
                         p = (({ action: e, supportLink: t, url: a }) => {
                             switch (e) {
                                 case f.C.ContactSupport:
                                     return { link: a ?? t };
                                 case f.C.LearnMore:
-                                    return { link: a ?? Z.N6 };
+                                    return { link: a ?? x.N6 };
                                 case f.C.KycVerification:
-                                    return { link: { pathname: Z.AU.tier2.verifyIdentityPath, state: { closePath: Z.gp } } };
+                                    return { link: { pathname: x.AU.tier2.verifyIdentityPath, state: { closePath: x.gp } } };
                                 case f.C.KycDocumentUpload:
-                                    return { link: { pathname: Z.AU.tier3.verifyIdentityPath, state: { closePath: Z.gp } } };
+                                    return { link: { pathname: x.AU.tier3.verifyIdentityPath, state: { closePath: x.gp } } };
                                 case f.C.SelfieVerification:
-                                    return { link: { pathname: Z.AU.selfie.verifyIdentityPath, state: { closePath: Z.gp } } };
+                                    return { link: { pathname: x.AU.selfie.verifyIdentityPath, state: { closePath: x.gp } } };
                                 case f.C.Deposit:
-                                    return { link: Z.IN };
+                                    return { link: x.IN };
                                 case f.C.SetupPasskey:
-                                    return { link: Z.ul };
+                                    return { link: x.ul };
                                 case f.C.Questionnaire:
-                                    return { link: Z.d9 };
+                                    return { link: x.d9 };
                                 default:
                                     return;
                             }
@@ -408,4 +393,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c411f24f.d7f7cb0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c411f24f.e0670d7a.js.map

@@ -151,7 +151,7 @@
                 n("a9ae1e78", "검색"),
                 n("a2a3824a", "토픽"),
                 n("a6d5b010", "타임라인"),
-                n("h5860a68", "그록"),
+                n("h5860a68", "Grok"),
                 n("a990900c", "자기소개"),
                 n("h02a6fe6", "커뮤니티"),
                 n("a15648a4", "그룹 노트"),
@@ -1272,7 +1272,7 @@
                 n("a653f08f", function (e) {
                     return "답글 " + e.replyCount + "개 읽기";
                 }),
-                n("dc0c8266", "그록에게 물어보세요"),
+                n("dc0c8266", "Grok에게 물어보세요"),
                 n("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -7267,7 +7267,7 @@
                     return e.days + " 일";
                 }),
                 n("dc9661b3", function (e) {
-                    return e.seconds + " second" + t(e.seconds, "", "s");
+                    return e.seconds + " 초";
                 }),
                 n("g2c63852", "완전 무료. 신용카드는 없어도 됩니다."),
                 n("be88be23", function (e) {
@@ -13385,4 +13385,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.98d26a3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.6f7e3bca.js.map

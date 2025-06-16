@@ -7268,7 +7268,7 @@
                     return e.days + " दिन";
                 }),
                 n("dc9661b3", function (e) {
-                    return e.seconds + " second" + t(e.seconds, "", "s");
+                    return e.seconds + " सेकंड";
                 }),
                 n("g2c63852", "100% मुफ़्त. किसी क्रेडिट कार्ड की ज़रूरत नहीं."),
                 n("be88be23", function (e) {
@@ -13374,4 +13374,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hi.57557dca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hi.bde92dfa.js.map

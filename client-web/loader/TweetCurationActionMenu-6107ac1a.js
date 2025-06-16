@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.TweetCurationActionMenu-6107ac1a", "loader.FeedbackSheet"],
+    ["loader.TweetCurationActionMenu-6107ac1a", "icons/IconMegaphoneStroke-js", "icons/IconWriteStroke-js", "loader.FeedbackSheet"],
     {
         805020: (e) => {
             e.exports = { queryId: "TUo5Hk_nQNjxM9UEIasNag", operationName: "ArticleEntitiesSlice", operationType: "query", metadata: { featureSwitches: ["payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
@@ -97,13 +97,13 @@
             s.hash = "d615ae6a93ba6bd638e5ebb9a48ddee2";
             const o = s;
         },
-        656069: (e, t, i) => {
+        484636: (e, t, i) => {
             "use strict";
-            i.d(t, { Z: () => T });
+            i.d(t, { Z: () => E });
             var n = i(506899),
-                a = i(414742),
-                l = i(679129),
-                r = i(805020),
+                a = i(414742);
+            const l = new n.fK.Entity("articleEntities", {}, { idAttribute: "rest_id" });
+            var r = i(805020),
                 s = i.n(r),
                 o = i(803386),
                 c = i.n(o),
@@ -119,17 +119,17 @@
                 g = i.n(f),
                 v = i(553600),
                 w = i.n(v),
-                k = i(446405),
-                C = i.n(k),
+                C = i(446405),
+                k = i.n(C),
                 I = i(934309);
-            const T = ({ apiClient: e, featureSwitches: t }) => ({
+            const E = ({ apiClient: e, featureSwitches: t }) => ({
                 createDraftArticle(t) {
                     const { content_state: i, title: a } = t;
-                    return e.graphQL(_(), { content_state: i, title: a }).then((e) => (0, n.Fv)(e.articleentity_create_draft?.article_entity_results?.result, l.Z));
+                    return e.graphQL(_(), { content_state: i, title: a }).then((e) => (0, n.Fv)(e.articleentity_create_draft?.article_entity_results?.result, l));
                 },
                 fetchArticleEntity(t) {
                     const { articleEntityId: i } = t;
-                    return e.graphQL(b(), { articleEntityId: i }).then((e) => (0, n.Fv)(e.article_result_by_rest_id?.result, l.Z));
+                    return e.graphQL(b(), { articleEntityId: i }).then((e) => (0, n.Fv)(e.article_result_by_rest_id?.result, l));
                 },
                 deleteArticleEntity(t) {
                     const { articleEntityId: i } = t;
@@ -137,23 +137,23 @@
                 },
                 updateArticleEntityContent(t) {
                     const { articleEntityId: i, content_state: a } = t;
-                    return e.graphQL(g(), { content_state: a, article_entity: i }).then((e) => (0, n.Fv)(e.articleentity_update_content_state, l.Z));
+                    return e.graphQL(g(), { content_state: a, article_entity: i }).then((e) => (0, n.Fv)(e.articleentity_update_content_state, l));
                 },
                 updateArticleEntityCoverMedia(t) {
                     const { articleEntityId: i, mediaCategory: a, mediaId: r } = t;
-                    return e.graphQL(w(), { articleEntityId: i, coverMedia: r && a ? { media_id: r, media_category: a } : void 0 }).then((e) => (0, n.Fv)(e.articleentity_update_cover_media, l.Z));
+                    return e.graphQL(w(), { articleEntityId: i, coverMedia: r && a ? { media_id: r, media_category: a } : void 0 }).then((e) => (0, n.Fv)(e.articleentity_update_cover_media, l));
                 },
                 updateArticleEntityTitle(t) {
                     const { articleEntityId: i, title: a } = t;
-                    return e.graphQL(C(), { articleEntityId: i, title: a }).then((e) => (0, n.Fv)(e.articleentity_update_title, l.Z));
+                    return e.graphQL(k(), { articleEntityId: i, title: a }).then((e) => (0, n.Fv)(e.articleentity_update_title, l));
                 },
                 publishArticleEntity(t) {
                     const { articleEntityId: i, conversationControl: a, visibilitySetting: r } = t;
-                    return e.graphQL(u(), { articleEntityId: i, visibilitySetting: r, ...(a && { conversationControl: { mode: a } }) }).then((e) => (0, n.Fv)(e.articleentity_publish?.article_entity_results?.result, l.Z));
+                    return e.graphQL(u(), { articleEntityId: i, visibilitySetting: r, ...(a && { conversationControl: { mode: a } }) }).then((e) => (0, n.Fv)(e.articleentity_publish?.article_entity_results?.result, l));
                 },
                 unpublishArticleEntity(t) {
                     const { articleEntityId: i } = t;
-                    return e.graphQL(y(), { articleEntityId: i }).then((e) => (0, n.Fv)(e.articleentity_unpublish?.article_entity_results?.result, l.Z));
+                    return e.graphQL(y(), { articleEntityId: i }).then((e) => (0, n.Fv)(e.articleentity_unpublish?.article_entity_results?.result, l));
                 },
                 fetchArticleEntitiesSlice: (t) =>
                     t && t.lifecycle
@@ -171,7 +171,7 @@
                                           const { items: t, slice_info: i } = e,
                                               { entities: a, result: r } = (0, n.Fv)(
                                                   t?.map((e) => e.article_entity_results?.result),
-                                                  [l.Z],
+                                                  [l],
                                               );
                                           return { entities: a, result: r, slice_info: i };
                                       }
@@ -180,11 +180,6 @@
                               })
                         : Promise.resolve(I.d),
             });
-        },
-        679129: (e, t, i) => {
-            "use strict";
-            i.d(t, { Z: () => n });
-            const n = new (i(506899).fK.Entity)("articleEntities", {}, { idAttribute: "rest_id" });
         },
         683814: (e, t, i) => {
             "use strict";
@@ -208,15 +203,15 @@
                 g = i(511323),
                 v = i(916910),
                 w = i(443781),
-                k = i(459660);
-            const C = m().g6185a9e,
+                C = i(459660);
+            const k = m().g6185a9e,
                 I = m().i00051cc,
-                T = m().baffe39a,
-                E = m().i9000126,
+                E = m().baffe39a,
+                T = m().i9000126,
                 x = m().dcaede8a,
                 A = m().ad85cd2e,
-                S = m().f19e4bfc,
-                L = m().bf994ab2,
+                L = m().f19e4bfc,
+                S = m().bf994ab2,
                 Z = m().e7b4b30a,
                 B = m().cfd2f35e,
                 q = p.default.create((e) => ({ root: { flexDirection: "column", paddingTop: e.spaces.space16, paddingBottom: e.spaces.space4, borderRadius: e.borderRadii.xLarge }, popover: { maxWidth: 5 * e.spacesPx.space64 }, modal: { borderRadius: e.borderRadii.none }, title: { flexDirection: "column", paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 }, menuRow: { flexDirection: "row", paddingTop: e.spaces.space12, paddingBottom: e.spaces.space12, alignItems: "center", borderRadius: e.borderRadii.small }, disallowLinkRepliesCheck: { paddingHorizontal: e.spaces.space20, paddingBottom: e.spaces.space16, paddingTop: e.spaces.space16 }, cancelButton: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space16 } })),
@@ -228,34 +223,34 @@
                         },
                         R = r.isTrue("disallowed_reply_controls_enabled") && p.isAnyPremiumSubscriber(),
                         F = !!n,
-                        D = F && !n?.entities?.user_mentions?.some((e) => e.id_str !== n.user.id_str);
-                    let Q = x;
+                        z = F && !n?.entities?.user_mentions?.some((e) => e.id_str !== n.user.id_str);
+                    let D = x;
                     return (
-                        D ? (Q = L) : F && (Q = Z),
+                        z ? (D = S) : F && (D = Z),
                         a.createElement(
                             s.Z,
                             { "aria-describedby": "conversation-controls-details", "aria-labelledby": "conversation-controls-title", role: "dialog", style: [q.root, i ? q.modal : q.popover] },
-                            a.createElement(s.Z, { style: q.title }, a.createElement(o.ZP, { id: "conversation-controls-title", weight: "bold" }, C), a.createElement(o.ZP, { color: "gray700", id: "conversation-controls-details", size: "body" }, I)),
+                            a.createElement(s.Z, { style: q.title }, a.createElement(o.ZP, { id: "conversation-controls-title", weight: "bold" }, k), a.createElement(o.ZP, { color: "gray700", id: "conversation-controls-details", size: "body" }, I)),
                             a.createElement(
                                 s.Z,
                                 null,
-                                a.createElement(c.Z, { Icon: b.default, actionText: T, isSelected: k.k.all === l, onClick: u(k.k.all), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
-                                a.createElement(c.Z, { Icon: h.default, actionText: E, isSelected: k.k.community === l, onClick: u(k.k.community), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
-                                e.isActiveCreator && a.createElement(c.Z, { Icon: y.default, actionText: A, isSelected: k.k.subscribers === l, onClick: u(k.k.subscribers), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
-                                a.createElement(c.Z, { Icon: f.default, actionText: S, isSelected: k.k.verified === l, onClick: u(k.k.verified), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
-                                a.createElement(c.Z, { Icon: D ? g.default : v.default, actionText: Q, isSelected: k.k.by_invitation === l, onClick: u(k.k.by_invitation), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
+                                a.createElement(c.Z, { Icon: b.default, actionText: E, isSelected: C.k.all === l, onClick: u(C.k.all), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
+                                a.createElement(c.Z, { Icon: h.default, actionText: T, isSelected: C.k.community === l, onClick: u(C.k.community), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
+                                e.isActiveCreator && a.createElement(c.Z, { Icon: y.default, actionText: A, isSelected: C.k.subscribers === l, onClick: u(C.k.subscribers), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
+                                a.createElement(c.Z, { Icon: f.default, actionText: L, isSelected: C.k.verified === l, onClick: u(C.k.verified), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
+                                a.createElement(c.Z, { Icon: z ? g.default : v.default, actionText: D, isSelected: C.k.by_invitation === l, onClick: u(C.k.by_invitation), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
                                 R &&
                                     !n &&
                                     a.createElement(d.Z, {
-                                        checked: e.disallowedReplyControls.includes(k.m.Links),
+                                        checked: e.disallowedReplyControls.includes(C.m.Links),
                                         label: m().ca6500a8,
                                         onChange:
-                                            ((P = k.m.Links),
+                                            ((M = C.m.Links),
                                             () => {
-                                                if (e.disallowedReplyControls.includes(P)) e.setDisallowedReplyControls(e.disallowedReplyControls.filter((e) => e !== P));
+                                                if (e.disallowedReplyControls.includes(M)) e.setDisallowedReplyControls(e.disallowedReplyControls.filter((e) => e !== M));
                                                 else {
                                                     const t = new Set([...e.disallowedReplyControls]);
-                                                    t.add(P), e.setDisallowedReplyControls([...t]);
+                                                    t.add(M), e.setDisallowedReplyControls([...t]);
                                                 }
                                             }),
                                         style: q.disallowLinkRepliesCheck,
@@ -264,7 +259,7 @@
                             ),
                         )
                     );
-                    var P;
+                    var M;
                 },
                 F = (e) => {
                     const { children: t, controlled: i = !1, disabled: s } = e,
@@ -397,6 +392,36 @@
                 return n.createElement(s.ZP, { Icon: i, activeColor: e || (m ? "white" : void 0), "aria-label": t, backgroundColor: m ? "translucentBlack77" : "transparent", color: m ? "white" : "gray700", hoverLabel: h, iconSize: a, isDisabled: l, onPress: b, preventFocusShift: d, renderMenu: _, style: p, testID: u });
             };
         },
+        730873: (e, t, i) => {
+            "use strict";
+            i.r(t), i.d(t, { default: () => o });
+            var n = i(202784),
+                a = i(890601),
+                l = i(783427),
+                r = i(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, l.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M22 2.63v17.74l-7.05-2.27c-.29 1.65-1.72 2.9-3.45 2.9C9.57 21 8 19.43 8 17.5v-1.63l-1.15-.37H4.5C3.12 15.5 2 14.38 2 13v-3c0-1.38 1.12-2.5 2.5-2.5h2.35L22 2.63zM6 9.5H4.5c-.27 0-.5.22-.5.5v3c0 .28.23.5.5.5H6v-4zm2 4.27l12 3.86V5.37L8 9.23v4.54zm2 2.74v.99c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-.02l-3-.97z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
+        },
+        376021: (e, t, i) => {
+            "use strict";
+            i.r(t), i.d(t, { default: () => c });
+            var n = i(202784),
+                a = i(890601),
+                l = i(783427),
+                r = i(717683),
+                s = i(347101);
+            const o = (e = {}) => {
+                const t = n.useContext(r.Z),
+                    { direction: i } = (0, l.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, t && s.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14.23 2.854c.98-.977 2.56-.977 3.54 0l3.38 3.378c.97.977.97 2.559 0 3.536L9.91 21H3v-6.914L14.23 2.854zm2.12 1.414c-.19-.195-.51-.195-.7 0L5 14.914V19h4.09L19.73 8.354c.2-.196.2-.512 0-.708l-3.38-3.378zM14.75 19l-2 2H21v-2h-6.25z" })) }, { writingDirection: i });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-6107ac1a.eb10a2fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-6107ac1a.4e4ca0aa.js.map

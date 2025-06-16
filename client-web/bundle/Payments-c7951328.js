@@ -69,7 +69,7 @@
                 c = n(137882);
             const s = (e) => {
                     const t = (0, o.useHistory)(),
-                        n = (0, c.b)({}),
+                        n = (0, c.bR)({}),
                         a = r.useCallback(() => {
                             window.open(n, "_blank");
                         }, [n]),
@@ -255,4 +255,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.dfcb01fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.ca95e7ca.js.map

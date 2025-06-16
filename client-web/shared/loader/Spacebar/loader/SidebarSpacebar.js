@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~loader.Spacebar~loader.SidebarSpacebar", "icons/IconChevronRight-js"],
+    ["shared~loader.Spacebar~loader.SidebarSpacebar", "icons/IconFeedback-js"],
     {
         530568: (e, t, r) => {
             r.d(t, { B: () => oe, I: () => q });
@@ -31,14 +31,14 @@
                 m = r(757483);
             function f(e) {
                 const t = { borderRadius: n.default.theme.borderRadiiPx[e.borderRadius] },
-                    r = g("0", "livevideo" === e.type),
-                    o = g("1", "livevideo" === e.type),
-                    i = g("2", "livevideo" === e.type);
+                    r = b("0", "livevideo" === e.type),
+                    o = b("1", "livevideo" === e.type),
+                    i = b("2", "livevideo" === e.type);
                 return a.createElement(u.Z, { style: [t, i] }, a.createElement(u.Z, { style: [t, o] }, a.createElement(u.Z, { style: [t, r] }, e.children)));
             }
-            const h = { 0: { opacity_start: 0.2, spread_end: b(2) }, 1: { opacity_start: 0.2, spread_end: b(4) }, 2: { opacity_start: 0.2, spread_end: b(6) } };
-            function g(e, t) {
-                const r = b(0),
+            const h = { 0: { opacity_start: 0.2, spread_end: g(2) }, 1: { opacity_start: 0.2, spread_end: g(4) }, 2: { opacity_start: 0.2, spread_end: g(6) } };
+            function b(e, t) {
+                const r = g(0),
                     a = h[e];
                 n.default.isDarkMode() && (a.opacity_start = 2 * a.opacity_start);
                 const o = t ? n.default.theme.colors.magenta500 : n.default.theme.colors.purple500,
@@ -46,7 +46,7 @@
                     s = m.Z.hexToCss(o, 0);
                 return { animationDuration: "1.25s", animationIterationCount: "infinite", animationKeyframes: [{ "0%": { boxShadow: `0 0 0 ${r} ${i}` }, "100%": { boxShadow: `0 0 0 ${a.spread_end} ${s}` } }], animationTimingFunction: "linear" };
             }
-            function b(e) {
+            function g(e) {
                 return `${e}px`;
             }
             function v({ borderRadius: e, children: t, isInverted: r, type: o }) {
@@ -77,45 +77,45 @@
             const I = Object.freeze({ host: "host", cohost: "cohost", speaker: "speaker", listener: "listener" });
             var B = r(976145),
                 M = r(111677),
-                R = r.n(M),
-                T = r(292484),
-                z = r(952793),
+                z = r.n(M),
+                R = r(292484),
+                T = r(952793),
                 D = r(479506),
                 A = r(582129),
-                L = r(725516),
-                V = r(125363),
+                V = r(725516),
+                L = r(125363),
                 N = r(390387),
                 H = r(919022),
                 O = r(905710),
                 W = r(427478),
-                $ = r(823180),
-                F = r(449998);
+                F = r(823180),
+                $ = r(449998);
             const U = "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
-                j = { Broadcast: R().e39b368e, Space: R().ab4fc8bc, EmployeeSpace: R().b6de83a0, PrivateBroadcast: R().g3f251f2, PrivateSpace: R().d08666ba, BeFirstJoin: R().eadb5a46, HostsBroadcast: R().f9629a8f, HostsSpace: R().ia3c0ab7, HostedBy: R().hd552761, RelativePosition: R().c3ea19a5, WithParticipants: R().a5235305, socialProof: { isListening: R().df9f8243, isSpeaking: R().g2445c2f, isHosting: R().fcfd5a67, isCohosting: R().f7882829 } };
+                j = { Broadcast: z().e39b368e, Space: z().ab4fc8bc, EmployeeSpace: z().b6de83a0, PrivateBroadcast: z().g3f251f2, PrivateSpace: z().d08666ba, BeFirstJoin: z().eadb5a46, HostsBroadcast: z().f9629a8f, HostsSpace: z().ia3c0ab7, HostedBy: z().hd552761, RelativePosition: z().c3ea19a5, WithParticipants: z().a5235305, socialProof: { isListening: z().df9f8243, isSpeaking: z().g2445c2f, isHosting: z().fcfd5a67, isCohosting: z().f7882829 } };
             function G(e) {
-                const t = (0, L.z)(),
-                    r = (0, V.I0)(),
+                const t = (0, V.z)(),
+                    r = (0, L.I0)(),
                     o = (0, k.useHistory)(),
-                    n = (0, V.v9)(N.Qb),
-                    i = (0, z.hC)("rweb_live_dock_enabled"),
-                    s = (0, T.cm)() && i,
+                    n = (0, L.v9)(N.Qb),
+                    i = (0, T.hC)("rweb_live_dock_enabled"),
+                    s = (0, R.cm)() && i,
                     l = (0, P.b9)(A.dq),
                     c = (function () {
-                        const e = (0, V.I0)(),
-                            t = (0, P.b9)(F.wQ);
+                        const e = (0, L.I0)(),
+                            t = (0, P.b9)($.wQ);
                         return a.useCallback(
                             (r, a) => {
-                                t({ videoId: r, isLiveVideo: a }), e(W.bi($.N.EXPANDED));
+                                t({ videoId: r, isLiveVideo: a }), e(W.bi(F.N.EXPANDED));
                             },
                             [e, t],
                         );
                     })(),
-                    d = (0, P.Dv)(F.Tc),
+                    d = (0, P.Dv)($.Tc),
                     { participants_str: u, user_id: p, user_id_str: m } = e,
                     f = e.live_content.audiospace,
                     h = e.live_content.livevideo,
-                    g = f?.broadcast_id ?? h?.id ?? "",
-                    b = f?.is_employee_only ?? !1,
+                    b = f?.broadcast_id ?? h?.id ?? "",
+                    g = f?.is_employee_only ?? !1,
                     v = f?.is_locked ?? h?.is_locked ?? !1,
                     y = f?.title ?? h?.status ?? void 0,
                     C = f?.total_participating ?? h?.n_total_watching ?? 0,
@@ -129,10 +129,10 @@
                     }
                 }, [r, Z, E, m]);
                 const w = Math.max(0, C - E.length),
-                    x = (0, V.v9)((e) => H.ZP.selectMany(e, E)),
+                    x = (0, L.v9)((e) => H.ZP.selectMany(e, E)),
                     M = a.useMemo(() => (x.length ? x.map((e) => e.profile_image_url_https ?? U) : Array(E.length).fill(U)), [E, x]),
-                    R = a.useMemo(() => (x.length && "Square" === x[0].profile_image_shape ? "xSmall" : "infinite"), [x]),
-                    G = (0, V.v9)((e) => (Z ? H.ZP.select(e, Z?.user_id_str) : void 0)),
+                    z = a.useMemo(() => (x.length && "Square" === x[0].profile_image_shape ? "xSmall" : "infinite"), [x]),
+                    G = (0, L.v9)((e) => (Z ? H.ZP.select(e, Z?.user_id_str) : void 0)),
                     K = a.useMemo(() => {
                         if (Z && G) {
                             if (Z.role === I.host) return j.socialProof.isHosting({ name: G.name });
@@ -144,31 +144,31 @@
                     q = a.useMemo(() => {
                         if (Z && G && K) return { label: K, role: Z.role, user: G };
                     }, [Z, K, G]),
-                    Q = (0, V.v9)((e) => H.ZP.select(e, m));
+                    Q = (0, L.v9)((e) => H.ZP.select(e, m));
                 let J = "";
                 y ? (J = y) : Q && (f && (J = j.HostsSpace({ hostName: Q.name })), h && (J = j.HostsBroadcast({ hostName: Q.name })));
                 const Y = [];
-                if ((b ? Y.push(j.EmployeeSpace) : v ? (f && Y.push(j.PrivateSpace), h && Y.push(j.PrivateBroadcast)) : (f && Y.push(j.Space), h && Y.push(j.Broadcast)), q?.label && Y.push(q.label), Q && Y.push(j.HostedBy({ hostName: Q.name })), J && Y.push(J), x.length)) {
+                if ((g ? Y.push(j.EmployeeSpace) : v ? (f && Y.push(j.PrivateSpace), h && Y.push(j.PrivateBroadcast)) : (f && Y.push(j.Space), h && Y.push(j.Broadcast)), q?.label && Y.push(q.label), Q && Y.push(j.HostedBy({ hostName: Q.name })), J && Y.push(J), x.length)) {
                     const e = x.map((e) => e.name),
                         t = (0, B.Z)(e);
                     Y.push(j.WithParticipants({ listOfPeople: t }));
                 }
                 x.length || w || Y.push(j.BeFirstJoin);
                 const X = (0, B.Z)(Y, !0),
-                    ee = a.useMemo(() => ({ items: [{ audio_space_details: { broadcast_id: g, is_logged_in: n }, item_type: h ? D.Z.ItemType.PERISCOPE_BROADCAST : D.Z.ItemType.AUDIO_SPACE }] }), [g, n, h]);
+                    ee = a.useMemo(() => ({ items: [{ audio_space_details: { broadcast_id: b, is_logged_in: n }, item_type: h ? D.Z.ItemType.PERISCOPE_BROADCAST : D.Z.ItemType.AUDIO_SPACE }] }), [b, n, h]);
                 return {
                     "aria-label": X,
-                    borderRadius: R,
+                    borderRadius: z,
                     onImpression: a.useCallback(() => {
                         t.scribe({ action: "impression", data: ee, element: "audiospace_fleet" });
                     }, [t, ee]),
                     onPress: a.useCallback(
                         (e) => {
-                            const r = f ? (0, O.e)(g) : (0, O.s)(g),
+                            const r = f ? (0, O.e)(b) : (0, O.s)(b),
                                 a = { origin: S.Y.spacebar };
                             e.ctrlKey || e.metaKey ? window.open(r) : h && s && d !== h.id ? (l({}), c(h.id, !0)) : o.push(r, a), t.scribe({ action: "click", data: ee, element: "audiospace_fleet" });
                         },
-                        [t, f, s, d, o, g, l, h, c, ee],
+                        [t, f, s, d, o, b, l, h, c, ee],
                     ),
                     otherParticipantsCount: w,
                     socialProof: q,
@@ -180,13 +180,13 @@
             }
             const K = { start: 1, press: 0.96 };
             function q({ isFirst: e, thread: t }) {
-                const { "aria-label": r, borderRadius: c, onImpression: u, onPress: p, otherParticipantsCount: m, title: f, type: h, userAvatarUrls: g } = G(t),
-                    b = a.useRef(new o.Z.Value(K.start)).current,
+                const { "aria-label": r, borderRadius: c, onImpression: u, onPress: p, otherParticipantsCount: m, title: f, type: h, userAvatarUrls: b } = G(t),
+                    g = a.useRef(new o.Z.Value(K.start)).current,
                     v = a.useCallback(
                         (e) => {
-                            o.Z.timing(b, { toValue: e, duration: 100, useNativeDriver: !1 }).start();
+                            o.Z.timing(g, { toValue: e, duration: 100, useNativeDriver: !1 }).start();
                         },
-                        [b],
+                        [g],
                     ),
                     C = a.useCallback(() => {
                         v(K.press);
@@ -194,9 +194,9 @@
                     _ = a.useCallback(() => {
                         v(K.start);
                     }, [v]),
-                    E = a.useMemo(() => [Q.animatedViewPress, { transform: [{ scale: b }] }], [b]),
+                    E = a.useMemo(() => [Q.animatedViewPress, { transform: [{ scale: g }] }], [g]),
                     Z = a.useMemo(() => [{ borderRadius: n.default.theme.borderRadiiPx[c] }, e && { paddingStart: n.default.theme.spaces.space16 }, Q.rootContainer], [c, e]);
-                return a.createElement(s.Z, { onImpression: u }, a.createElement(i.Z, { "aria-label": r, onPress: p, onPressIn: C, onPressOut: _, style: Z }, a.createElement(o.Z.View, { style: E }, a.createElement(y, { borderRadius: c, type: h, userAvatarUrls: g }, a.createElement(w, { count: m, title: f }), a.createElement(d, null), a.createElement(l.L, { size: "space8" })))));
+                return a.createElement(s.Z, { onImpression: u }, a.createElement(i.Z, { "aria-label": r, onPress: p, onPressIn: C, onPressOut: _, style: Z }, a.createElement(o.Z.View, { style: E }, a.createElement(y, { borderRadius: c, type: h, userAvatarUrls: b }, a.createElement(w, { count: m, title: f }), a.createElement(d, null), a.createElement(l.L, { size: "space8" })))));
             }
             const Q = n.default.create((e) => ({ rootContainer: { display: "flex", flexDirection: "row", alignItems: "center", width: "100%", userSelect: "none" }, animatedViewPress: { width: "100%" } }));
             var J = r(952428),
@@ -206,16 +206,16 @@
                 te = r(443781);
             function re({ socialProof: e }) {
                 const t = a.useMemo(() => a.createElement(X.Z, { affiliateBadgeInfo: e.user.highlightedLabel, avatarSize: "small", isBlueVerified: e.user.is_blue_verified, isVerified: e.user.verified, name: e.user.name, nameSize: "subtext2", profileImageUrl: e.user.profile_image_url_https, verifiedType: e.user.verified_type }), [e]),
-                    r = a.useMemo(() => (e.role === I.host ? a.createElement(R().I18NFormatMessage, { $i18n: "d80a7547" }, t) : e.role === I.cohost ? a.createElement(R().I18NFormatMessage, { $i18n: "j7293d6b" }, t) : e.role === I.speaker ? a.createElement(R().I18NFormatMessage, { $i18n: "df79977f" }, t) : e.role === I.listener ? a.createElement(R().I18NFormatMessage, { $i18n: "ad960f39" }, t) : void 0), [t, e]);
+                    r = a.useMemo(() => (e.role === I.host ? a.createElement(z().I18NFormatMessage, { $i18n: "d80a7547" }, t) : e.role === I.cohost ? a.createElement(z().I18NFormatMessage, { $i18n: "j7293d6b" }, t) : e.role === I.speaker ? a.createElement(z().I18NFormatMessage, { $i18n: "df79977f" }, t) : e.role === I.listener ? a.createElement(z().I18NFormatMessage, { $i18n: "ad960f39" }, t) : void 0), [t, e]);
                 return a.createElement(_.ZP, { color: "gray700", numberOfLines: 1, size: "subtext2", style: ae.socialProof }, r);
             }
             const ae = n.default.create((e) => ({ socialProof: { alignItems: "center", display: "flex", flexDirection: "row", marginBottom: e.spaces.space8, marginEnd: e.spaces.space8, whiteSpace: "pre" } }));
             function oe({ thread: e }) {
                 const { featureSwitches: t } = (0, te.QZ)(),
                     r = ee.eY(),
-                    { "aria-label": o, borderRadius: n, onImpression: i, onPress: l, otherParticipantsCount: c, socialProof: d, title: m, type: f, user: h, userAvatarUrls: g } = G(e),
-                    b = t.isTrue("rweb_sourcemap_migration");
-                return h ? a.createElement(s.Z, { onImpression: i }, a.createElement(J.Z, { "aria-label": o, onPress: l, style: [ne.container, b && ne.redesignContainer], withDarkerInteractiveBackground: r }, b ? a.createElement(a.Fragment, null, a.createElement(Y.default, { "aria-label": h.name, borderColor: "livevideo" === f ? "magenta500" : "purple500", borderWidth: "medium", screenName: h.screen_name, size: "xLarge", uri: h.profile_image_url_https }), a.createElement(u.Z, { style: ne.meta }, a.createElement(X.Z, { affiliateBadgeInfo: h.highlightedLabel, isBlueVerified: h.is_blue_verified, isVerified: h.verified, name: h.name, screenName: h.screen_name, verifiedType: h.verified_type }), a.createElement(_.ZP, { numberOfLines: 1, size: "subtext1" }, m)), a.createElement(u.Z, { style: ne.participants }, "audiospace" === f ? a.createElement(p.Z, { userAvatarSize: "small", userAvatarUrls: g }) : null, c ? a.createElement(_.ZP, { color: "gray700", size: "subtext3" }, E.Z.formatCountShort(c)) : null)) : a.createElement(a.Fragment, null, d ? a.createElement(re, { socialProof: d }) : null, a.createElement(u.Z, { style: ne.content }, a.createElement(u.Z, { style: ne.textContent }, a.createElement(_.ZP, { numberOfLines: 2, size: "body", weight: "bold" }, m)), a.createElement(u.Z, { style: ne.facepilesContainer }, a.createElement(y, { borderRadius: n, isInverted: !0, type: f, userAvatarUrls: g }, c ? a.createElement(_.ZP, { color: "text", size: "subtext2", style: ne.participantsCountText, weight: "bold" }, a.createElement(E.Z.ParticipantsCount, { count: c, labelType: "plusCount" })) : null)))))) : null;
+                    { "aria-label": o, borderRadius: n, onImpression: i, onPress: l, otherParticipantsCount: c, socialProof: d, title: m, type: f, user: h, userAvatarUrls: b } = G(e),
+                    g = t.isTrue("rweb_sourcemap_migration");
+                return h ? a.createElement(s.Z, { onImpression: i }, a.createElement(J.Z, { "aria-label": o, onPress: l, style: [ne.container, g && ne.redesignContainer], withDarkerInteractiveBackground: r }, g ? a.createElement(a.Fragment, null, a.createElement(Y.default, { "aria-label": h.name, borderColor: "livevideo" === f ? "magenta500" : "purple500", borderWidth: "medium", screenName: h.screen_name, size: "xLarge", uri: h.profile_image_url_https }), a.createElement(u.Z, { style: ne.meta }, a.createElement(X.Z, { affiliateBadgeInfo: h.highlightedLabel, isBlueVerified: h.is_blue_verified, isVerified: h.verified, name: h.name, screenName: h.screen_name, verifiedType: h.verified_type }), a.createElement(_.ZP, { numberOfLines: 1, size: "subtext1" }, m)), a.createElement(u.Z, { style: ne.participants }, "audiospace" === f ? a.createElement(p.Z, { userAvatarSize: "small", userAvatarUrls: b }) : null, c ? a.createElement(_.ZP, { color: "gray700", size: "subtext3" }, E.Z.formatCountShort(c)) : null)) : a.createElement(a.Fragment, null, d ? a.createElement(re, { socialProof: d }) : null, a.createElement(u.Z, { style: ne.content }, a.createElement(u.Z, { style: ne.textContent }, a.createElement(_.ZP, { numberOfLines: 2, size: "body", weight: "bold" }, m)), a.createElement(u.Z, { style: ne.facepilesContainer }, a.createElement(y, { borderRadius: n, isInverted: !0, type: f, userAvatarUrls: b }, c ? a.createElement(_.ZP, { color: "text", size: "subtext2", style: ne.participantsCountText, weight: "bold" }, a.createElement(E.Z.ParticipantsCount, { count: c, labelType: "plusCount" })) : null)))))) : null;
             }
             const ne = n.default.create((e) => ({ container: { alignItems: "flex-start", flexDirection: "column", justifyContent: "space-between", paddingHorizontal: e.spacesPx.space16, paddingVertical: e.spacesPx.space12, userSelect: "none" }, redesignContainer: { flexDirection: "row", gap: e.spaces.space8, justifyContent: "flex-start" }, content: { flexDirection: "row", justifyContent: "space-between", width: "100%" }, textContent: { flexShrink: 1 }, facepilesContainer: { marginStart: e.spaces.space16 }, meta: { flex: 1 }, participants: { flexDirection: "row", gap: e.spaces.space8 }, participantsCountText: { marginEnd: e.spaces.space8 } }));
         },
@@ -249,13 +249,13 @@
                 m = r(526250),
                 f = r(901910),
                 h = r(2138);
-            function g(e, t, r) {
+            function b(e, t, r) {
                 return (0, o.cn)(null, (0, h.Z)(e, t, r));
             }
-            var b = r(390387);
+            var g = r(390387);
             const v = (0, p.K9)((e) => e(c.dd).withEndpoint(l.Z).spacebar()),
                 y = (0, i.xu)((e) =>
-                    g(
+                    b(
                         (e, t) => {
                             t(v);
                         },
@@ -267,7 +267,7 @@
                     const t = e(v.resolved)?.refresh_delay_secs;
                     return t ? y(t) : (0, o.cn)(null, () => {});
                 }),
-                _ = g((e, t) => {
+                _ = b((e, t) => {
                     t(v);
                 }, 1e4),
                 E = (0, f.W)((e, t) => {
@@ -280,7 +280,7 @@
                     };
                 }),
                 Z = (0, f.W)((e, t) => {
-                    const r = (0, b._h)(e(c.qc).getState());
+                    const r = (0, g._h)(e(c.qc).getState());
                     if (!r) return s.Z;
                     const a = `/live_content/${r}`;
                     return (0, d.Cg)({ topic: a, featureSwitches: e(c.f0), onTopic: () => t(_) });
@@ -330,20 +330,18 @@
             const l = i.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 c = s;
         },
-        58399: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => c });
+        790093: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
             var a = r(202784),
                 o = r(890601),
                 n = r(783427),
-                i = r(717683),
-                s = r(347101);
-            const l = (e = {}) => {
-                const t = a.useContext(i.Z),
-                    { direction: r } = (0, n.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, t && s.Z.iconRTL], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: r });
+                i = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, n.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: t });
             };
-            l.metadata = { width: 24, height: 24 };
-            const c = l;
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
         },
         98440: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
@@ -360,4 +358,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Spacebar~loader.SidebarSpacebar.b90a9f3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Spacebar~loader.SidebarSpacebar.63dac97a.js.map

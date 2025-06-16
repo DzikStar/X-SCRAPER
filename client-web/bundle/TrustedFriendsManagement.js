@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: a, centeredLogo: o, fixed: r, hideBackButton: l, isFullWidth: n, isLarge: s, leftControl: c, middleControl: h, position: D, rightControl: p, secondaryBar: m, style: b, subtitle: M, title: f, titleDomId: k, titleIconCell: g, titleIconCellSize: y, withBackground: A, withWideContainer: w } = this.props,
-                        { isModal: S } = this.context,
-                        v = l ? c : d.createElement(t.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        x = (function (e, a, o) {
+                    const { backButtonType: e, centerTitle: a, centeredLogo: o, fixed: r, hideBackButton: l, isFullWidth: n, isLarge: s, leftControl: c, middleControl: h, position: D, rightControl: p, secondaryBar: m, style: b, subtitle: M, title: f, titleDomId: k, titleIconCell: g, titleIconCellSize: y, withBackground: A, withWideContainer: S } = this.props,
+                        { isModal: w } = this.context,
+                        x = l ? c : d.createElement(t.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        C = (function (e, a, o) {
                             return e && !(a && o);
-                        })(!!A, S, !!m);
-                    return d.createElement(d.Fragment, null, d.createElement(i.Z, { centerTitle: a, centeredLogo: o, isFullWidth: n, isLarge: s, leftControl: v, middleControl: h, position: u(D, S, r), rightControl: p, style: b, subtitle: M, title: f, titleDomId: k, titleIconCell: g, titleIconCellSize: y, withBackground: x, withWideContainer: w }), m || null);
+                        })(!!A, w, !!m);
+                    return d.createElement(d.Fragment, null, d.createElement(i.Z, { centerTitle: a, centeredLogo: o, isFullWidth: n, isLarge: s, leftControl: x, middleControl: h, position: u(D, w, r), rightControl: p, style: b, subtitle: M, title: f, titleDomId: k, titleIconCell: g, titleIconCellSize: y, withBackground: C, withWideContainer: S }), m || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -217,23 +217,22 @@
                 k = (0, h.p)(
                     () =>
                         Promise.all([
+                            o.e("icons.23"),
+                            o.e("icons.0"),
                             o.e("icons.2"),
-                            o.e("icons.24"),
-                            o.e("icons.10"),
-                            o.e("icons.15"),
-                            o.e("icons.27"),
                             o.e("icons.16"),
-                            o.e("icons.12"),
-                            o.e("icons.7"),
-                            o.e("icons.5"),
-                            o.e("icons.22"),
                             o.e("icons.19"),
+                            o.e("icons.10"),
+                            o.e("icons.13"),
+                            o.e("icons.24"),
+                            o.e("icons.7"),
+                            o.e("icons.22"),
+                            o.e("icons.27"),
                             o.e("icons.17"),
-                            o.e("icons.26"),
-                            o.e("icons.4"),
                             o.e("modules.common-e907d115"),
                             o.e("modules.common-e019dbda"),
-                            o.e("icons.14"),
+                            o.e("icons.11"),
+                            o.e("icons.26"),
                             o.e("modules.audio-6107ac1a"),
                             o.e("modules.audio-b953418a"),
                             o.e("modules.audio-7c51e6a7"),
@@ -244,13 +243,10 @@
                             o.e("modules.audio-e019dbda"),
                             o.e("modules.audio-262c94d4"),
                             o.e("modules.audio-c6fe4ea4"),
-                            o.e("icons.13"),
-                            o.e("icons.1"),
+                            o.e("icons.8"),
+                            o.e("icons.4"),
+                            o.e("icons.14"),
                             o.e("icons.21"),
-                            o.e("icons.6"),
-                            o.e("icons.18"),
-                            o.e("icons.0"),
-                            o.e("icons.20"),
                             o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                             o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                             o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -294,35 +290,35 @@
                             o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
                             o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
-                            o.e("shared~bundle.Communities~bundle.UserLists"),
+                            o.e("shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview"),
+                            o.e("shared~bundle.ComposeMedia~bundle.SettingsProfile~bundle.UserLists"),
                             o.e("bundle.UserLists-bc6ccf4c"),
                             o.e("bundle.UserLists-2a1252f0"),
-                            o.e("bundle.UserLists-b308cbaf"),
-                            o.e("bundle.UserLists-8ed0fac5"),
-                            o.e("bundle.UserLists-99ebe121"),
+                            o.e("bundle.UserLists-e019dbda"),
+                            o.e("bundle.UserLists-63cb1cc4"),
+                            o.e("bundle.UserLists-6df79b50"),
                         ]).then(o.bind(o, 696705)),
                     { shouldMigrateToX: !1 },
                 ),
                 g = (0, h.p)(
                     () =>
                         Promise.all([
+                            o.e("icons.23"),
+                            o.e("icons.0"),
                             o.e("icons.2"),
-                            o.e("icons.24"),
-                            o.e("icons.10"),
-                            o.e("icons.15"),
-                            o.e("icons.27"),
                             o.e("icons.16"),
-                            o.e("icons.12"),
-                            o.e("icons.7"),
-                            o.e("icons.5"),
-                            o.e("icons.22"),
                             o.e("icons.19"),
+                            o.e("icons.10"),
+                            o.e("icons.13"),
+                            o.e("icons.24"),
+                            o.e("icons.7"),
+                            o.e("icons.22"),
+                            o.e("icons.27"),
                             o.e("icons.17"),
-                            o.e("icons.26"),
-                            o.e("icons.4"),
                             o.e("modules.common-e907d115"),
                             o.e("modules.common-e019dbda"),
-                            o.e("icons.14"),
+                            o.e("icons.11"),
+                            o.e("icons.26"),
                             o.e("modules.audio-6107ac1a"),
                             o.e("modules.audio-b953418a"),
                             o.e("modules.audio-7c51e6a7"),
@@ -333,13 +329,10 @@
                             o.e("modules.audio-e019dbda"),
                             o.e("modules.audio-262c94d4"),
                             o.e("modules.audio-c6fe4ea4"),
-                            o.e("icons.13"),
-                            o.e("icons.1"),
+                            o.e("icons.8"),
+                            o.e("icons.4"),
+                            o.e("icons.14"),
                             o.e("icons.21"),
-                            o.e("icons.6"),
-                            o.e("icons.18"),
-                            o.e("icons.0"),
-                            o.e("icons.20"),
                             o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                             o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                             o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -383,12 +376,13 @@
                             o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
                             o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
-                            o.e("shared~bundle.Communities~bundle.UserLists"),
+                            o.e("shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview"),
+                            o.e("shared~bundle.ComposeMedia~bundle.SettingsProfile~bundle.UserLists"),
                             o.e("bundle.UserLists-bc6ccf4c"),
                             o.e("bundle.UserLists-2a1252f0"),
-                            o.e("bundle.UserLists-b308cbaf"),
-                            o.e("bundle.UserLists-8ed0fac5"),
-                            o.e("bundle.UserLists-99ebe121"),
+                            o.e("bundle.UserLists-e019dbda"),
+                            o.e("bundle.UserLists-63cb1cc4"),
+                            o.e("bundle.UserLists-6df79b50"),
                         ]).then(o.bind(o, 582313)),
                     { shouldMigrateToX: !1 },
                 ),
@@ -425,7 +419,7 @@
                 A = y;
         },
         403556: (e, a, o) => {
-            o.d(a, { Z: () => v });
+            o.d(a, { Z: () => x });
             var d = o(807896),
                 r = o(202784),
                 l = o(194504),
@@ -479,13 +473,13 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": a, badgeCount: o, badgePip: d, children: l, color: n, isActive: s, isCompact: c, isPillLink: u, isRoundedRect: h, isWebRedesign: m, retainScrollPosition: y, style: w, to: S } = this.props,
-                        { location: v } = this.state,
-                        x = S ? this._getMemoizedLink(S, y) : void 0,
-                        C = s ? s(S) : v?.pathname === x?.pathname,
+                    const { Icon: e, "aria-label": a, badgeCount: o, badgePip: d, children: l, color: n, isActive: s, isCompact: c, isPillLink: u, isRoundedRect: h, isWebRedesign: m, retainScrollPosition: y, style: S, to: w } = this.props,
+                        { location: x } = this.state,
+                        C = w ? this._getMemoizedLink(w, y) : void 0,
+                        v = s ? s(w) : x?.pathname === C?.pathname,
                         B = b.Z.generate({ backgroundColor: "transparent", color: t.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? A.pillHoverStyle.backgroundColor : void 0 }),
-                        I = m ? "medium" : C ? "bold" : "medium";
-                    return r.createElement(M.Z, { "aria-label": a, "aria-selected": C, focusable: !!C, interactiveStyles: B, link: x, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [A.pillStyle] : [A.link]), ...(u && C ? [A.pillActiveStyle] : []), c ? (u ? A.compactPill : A.compactLink) : null, h ? A.roundedRect : null, w], withoutInteractiveStyles: m }, ({ isFocused: a, isHovered: s }) => r.createElement(i.Z, { style: u && A.flexGrow }, r.createElement(D.ZP, { size: m ? "headline2" : void 0, style: [A.text, { color: this._getTextColor(C, s, m, u) }, c && A.compactText, m && a && A.focusedText, u && A.pillTextStyle, u && C && A.pillActiveTextStyle, u && s && A.pillHoverTextStyle], weight: I }, e && r.createElement(e, { style: A.icon }), l, m || u ? null : r.createElement(i.Z, { style: C && [A.border, { backgroundColor: t.default.theme.colors[n] }] })), o ? r.createElement(p.Z, { count: o, standalone: !0, style: [A.badge, o >= 10 && A.multiDigitBadge, o >= 20 && A.truncatedCountBadge], truncatedCountFormatter: g, unreadCountLabel: f, withBorder: !1 }) : d ? r.createElement(p.Z, { pip: !0, standalone: !0, style: A.badgePip, textColor: "red500", unreadCountLabel: k, withBorder: !1 }) : null));
+                        I = m ? "medium" : v ? "bold" : "medium";
+                    return r.createElement(M.Z, { "aria-label": a, "aria-selected": v, focusable: !!v, interactiveStyles: B, link: C, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [A.pillStyle] : [A.link]), ...(u && v ? [A.pillActiveStyle] : []), c ? (u ? A.compactPill : A.compactLink) : null, h ? A.roundedRect : null, S], withoutInteractiveStyles: m }, ({ isFocused: a, isHovered: s }) => r.createElement(i.Z, { style: u && A.flexGrow }, r.createElement(D.ZP, { size: m ? "headline2" : void 0, style: [A.text, { color: this._getTextColor(v, s, m, u) }, c && A.compactText, m && a && A.focusedText, u && A.pillTextStyle, u && v && A.pillActiveTextStyle, u && s && A.pillHoverTextStyle], weight: I }, e && r.createElement(e, { style: A.icon }), l, m || u ? null : r.createElement(i.Z, { style: v && [A.border, { backgroundColor: t.default.theme.colors[n] }] })), o ? r.createElement(p.Z, { count: o, standalone: !0, style: [A.badge, o >= 10 && A.multiDigitBadge, o >= 20 && A.truncatedCountBadge], truncatedCountFormatter: g, unreadCountLabel: f, withBorder: !1 }) : d ? r.createElement(p.Z, { pip: !0, standalone: !0, style: A.badgePip, textColor: "red500", unreadCountLabel: k, withBorder: !1 }) : null));
                 }
             }
             (y.contextType = m.Z), (y.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -512,9 +506,9 @@
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
-                w = y,
-                S = t.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
-                v = ({ alignFirstItem: e, "aria-label": a, isCompact: o, isPillLink: t, isRoundedRect: i, links: s, style: c, visibleItemIndex: u }) => {
+                S = y,
+                w = t.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
+                x = ({ alignFirstItem: e, "aria-label": a, isCompact: o, isPillLink: t, isRoundedRect: i, links: s, style: c, visibleItemIndex: u }) => {
                     const h = s
                             .filter(Boolean)
                             .map((e) => e.key)
@@ -524,27 +518,14 @@
                         m = r.useMemo(
                             () =>
                                 s.filter(Boolean).map(({ label: a, viewType: l, ...n }, s) => {
-                                    const c = p ? [S.linkRedesign, 0 === s && S.firstLinkRedesign, e && 0 === s && S.withNoPaddingStart] : void 0;
-                                    return r.createElement(w, (0, d.Z)({ viewType: l }, n, { isCompact: o, isPillLink: t, isRoundedRect: i, isWebRedesign: p, style: c }), a);
+                                    const c = p ? [w.linkRedesign, 0 === s && w.firstLinkRedesign, e && 0 === s && w.withNoPaddingStart] : void 0;
+                                    return r.createElement(S, (0, d.Z)({ viewType: l }, n, { isCompact: o, isPillLink: t, isRoundedRect: i, isWebRedesign: p, style: c }), a);
                                 }),
                             [e, o, t, i, p, s],
                         );
-                    return r.createElement(l.Z, { "aria-label": a, buttonsContainerStyle: t && S.gap, childrenStyle: !p && S.flexGrow, key: h, style: [t ? null : S.segmentedControl, p && S.leftAligned, c], visibleItemIndex: u }, m);
+                    return r.createElement(l.Z, { "aria-label": a, buttonsContainerStyle: t && w.gap, childrenStyle: !p && w.flexGrow, key: h, style: [t ? null : w.segmentedControl, p && w.leftAligned, c], visibleItemIndex: u }, m);
                 };
-        },
-        748138: (e, a, o) => {
-            o.r(a), o.d(a, { default: () => i });
-            var d = o(202784),
-                r = o(890601),
-                l = o(783427),
-                n = o(347101);
-            const t = (e = {}) => {
-                const { direction: a } = (0, l.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: d.createElement("g", null, d.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: a });
-            };
-            t.metadata = { width: 24, height: 24 };
-            const i = t;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TrustedFriendsManagement.8acbf41a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TrustedFriendsManagement.89ce9d8a.js.map

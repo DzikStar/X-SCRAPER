@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.Communities~ondemand.SettingsRevamp"],
+    ["shared~bundle.Communities~ondemand.SettingsRevamp", "icons/IconFeedback-js"],
     {
         947135: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -269,6 +269,19 @@
             const l = (e) => r.createElement(o.Z, { style: s.root }, r.createElement(i.Z, e)),
                 s = a.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical } }));
         },
+        790093: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => s });
+            var r = n(202784),
+                o = n(890601),
+                i = n(783427),
+                a = n(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
         98440: (e, t, n) => {
             n.r(t), n.d(t, { default: () => s });
             var r = n(202784),
@@ -283,7 +296,7 @@
             const s = l;
         },
         716042: (e, t, n) => {
-            n.d(t, { JN: () => Q, W8: () => ne, JV: () => z });
+            n.d(t, { JN: () => Q, W8: () => ne, JV: () => G });
             var r = n(807896);
             var o = n(759147);
             function i(e, t) {
@@ -467,7 +480,7 @@
                     return e.parentNode === t ? r : N(e.parentNode, t, r);
                 }
             }
-            function L(e) {
+            function M(e) {
                 var t = e.lockOffset,
                     n = e.width,
                     r = e.height,
@@ -480,7 +493,7 @@
                 }
                 return y()(isFinite(o) && isFinite(i), "lockOffset value should be a finite. Given %s", t), "%" === a && ((o = (o * n) / 100), (i = (i * r) / 100)), { x: o, y: i };
             }
-            function M(e) {
+            function L(e) {
                 return e instanceof HTMLElement
                     ? (function (e) {
                           var t = window.getComputedStyle(e),
@@ -490,17 +503,17 @@
                           });
                       })(e)
                         ? e
-                        : M(e.parentNode)
+                        : L(e.parentNode)
                     : null;
             }
             var W = 27,
                 j = 32,
-                H = 37,
-                B = 38,
-                K = 39,
-                F = 40,
-                G = { Anchor: "A", Button: "BUTTON", Canvas: "CANVAS", Input: "INPUT", Option: "OPTION", Textarea: "TEXTAREA", Select: "SELECT" };
-            function z(e) {
+                B = 37,
+                H = 38,
+                F = 39,
+                K = 40,
+                z = { Anchor: "A", Button: "BUTTON", Canvas: "CANVAS", Input: "INPUT", Option: "OPTION", Textarea: "TEXTAREA", Select: "SELECT" };
+            function G(e) {
                 var t,
                     n,
                     o = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : { withRef: !1 };
@@ -595,7 +608,7 @@
                 );
             })();
             var $ = { axis: x().oneOf(["x", "y", "xy"]), contentWindow: x().any, disableAutoscroll: x().bool, distance: x().number, getContainer: x().func, getHelperDimensions: x().func, helperClass: x().string, helperContainer: x().oneOfType([x().func, "undefined" == typeof HTMLElement ? x().any : x().instanceOf(HTMLElement)]), hideSortableGhost: x().bool, keyboardSortingTransitionDuration: x().number, lockAxis: x().string, lockOffset: x().oneOfType([x().number, x().string, x().arrayOf(x().oneOfType([x().number, x().string]))]), lockToContainerEdges: x().bool, onSortEnd: x().func, onSortMove: x().func, onSortOver: x().func, onSortStart: x().func, pressDelay: x().number, pressThreshold: x().number, keyCodes: x().shape({ lift: x().arrayOf(x().number), drop: x().arrayOf(x().number), cancel: x().arrayOf(x().number), up: x().arrayOf(x().number), down: x().arrayOf(x().number) }), shouldCancelStart: x().func, transitionDuration: x().number, updateBeforeSortStart: x().func, useDragHandle: x().bool, useWindowAsScrollContainer: x().bool },
-                X = { lift: [j], drop: [j], cancel: [W], up: [B, H], down: [F, K] },
+                X = { lift: [j], drop: [j], cancel: [W], up: [H, B], down: [K, F] },
                 q = {
                     axis: "y",
                     disableAutoscroll: !1,
@@ -612,7 +625,7 @@
                     keyCodes: X,
                     shouldCancelStart: function (e) {
                         return (
-                            -1 !== [G.Input, G.Textarea, G.Select, G.Option, G.Button].indexOf(e.target.tagName) ||
+                            -1 !== [z.Input, z.Textarea, z.Select, z.Option, z.Button].indexOf(e.target.tagName) ||
                             !!O(e.target, function (e) {
                                 return "true" === e.contentEditable;
                             })
@@ -655,7 +668,7 @@
                                                     (function (e) {
                                                         return (e.touches && e.touches.length) || (e.changedTouches && e.changedTouches.length);
                                                     })(e) ||
-                                                        e.target.tagName !== G.Anchor ||
+                                                        e.target.tagName !== z.Anchor ||
                                                         e.preventDefault(),
                                                     r ||
                                                         (0 === t.props.pressDelay
@@ -728,7 +741,7 @@
                                                                         (m = (o = f).querySelectorAll(d)),
                                                                         (y = o.cloneNode(!0)),
                                                                         (0, v.Z)(y.querySelectorAll(d)).forEach(function (e, t) {
-                                                                            "file" !== e.type && (e.value = m[t].value), "radio" === e.type && e.name && (e.name = "__sortableClone__".concat(e.name)), e.tagName === G.Canvas && m[t].width > 0 && m[t].height > 0 && e.getContext("2d").drawImage(m[t], 0, 0);
+                                                                            "file" !== e.type && (e.value = m[t].value), "radio" === e.type && e.name && (e.name = "__sortableClone__".concat(e.name)), e.tagName === z.Canvas && m[t].width > 0 && m[t].height > 0 && e.getContext("2d").drawImage(m[t], 0, 0);
                                                                         }),
                                                                         y),
                                                                     )),
@@ -934,7 +947,7 @@
                                                 (e.container = n), (e.document = e.container.ownerDocument || document);
                                                 var r = e.props.contentWindow || e.document.defaultView || window;
                                                 (e.contentWindow = "function" == typeof r ? r() : r),
-                                                    (e.scrollContainer = t ? e.document.scrollingElement || e.document.documentElement : M(e.container) || e.container),
+                                                    (e.scrollContainer = t ? e.document.scrollingElement || e.document.documentElement : L(e.container) || e.container),
                                                     (e.autoScroller = new U(e.scrollContainer, e.onAutoScroll)),
                                                     Object.keys(e.events).forEach(function (t) {
                                                         return S[t].forEach(function (n) {
@@ -983,7 +996,7 @@
                                                         var a = i(o, 2),
                                                             l = a[0],
                                                             s = a[1];
-                                                        return [L({ height: t, lockOffset: l, width: n }), L({ height: t, lockOffset: s, width: n })];
+                                                        return [M({ height: t, lockOffset: l, width: n }), M({ height: t, lockOffset: s, width: n })];
                                                     })({ height: this.height, lockOffset: r, width: this.width }),
                                                     p = i(f, 2),
                                                     g = p[0],
@@ -1229,4 +1242,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Communities~ondemand.SettingsRevamp.862fd56a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Communities~ondemand.SettingsRevamp.5cf8fd9a.js.map

@@ -7268,7 +7268,7 @@
                     return i.days + " giorn" + t(i.days, "o", "i");
                 }),
                 o("dc9661b3", function (i) {
-                    return i.seconds + " second" + n(i.seconds, "", "s");
+                    return i.seconds + " second" + t(i.seconds, "o", "i");
                 }),
                 o("g2c63852", "Senza nessun costo. Non è necessaria alcuna carta di credito."),
                 o("be88be23", function (i) {
@@ -13371,4 +13371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.072b189a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.ddac29aa.js.map

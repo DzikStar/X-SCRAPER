@@ -2,20 +2,20 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.ExtendedUserProfile"],
     {
-        163015: (e, t, n) => {
-            n.d(t, { Z: () => s });
-            var l,
-                r,
-                a = {
+        163015: (e, t, r) => {
+            r.d(t, { Z: () => a });
+            var n,
+                l,
+                s = {
                     fragment: {
-                        argumentDefinitions: (l = [
+                        argumentDefinitions: (n = [
                             { defaultValue: null, kind: "LocalArgument", name: "sectionId" },
                             { defaultValue: null, kind: "LocalArgument", name: "visibility" },
                         ]),
                         kind: "Fragment",
                         metadata: null,
                         name: "VisibilityDropdown_updateSectionVisibilityMutation",
-                        selections: (r = [
+                        selections: (l = [
                             {
                                 alias: null,
                                 args: [
@@ -32,1010 +32,706 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: l, kind: "Operation", name: "VisibilityDropdown_updateSectionVisibilityMutation", selections: r },
+                    operation: { argumentDefinitions: n, kind: "Operation", name: "VisibilityDropdown_updateSectionVisibilityMutation", selections: l },
                     params: { id: "8ICa6FMhnv00iHBjpoXdAQ", metadata: {}, name: "VisibilityDropdown_updateSectionVisibilityMutation", operationKind: "mutation", text: null },
                 };
-            a.hash = "8915833d692c94a47b0fcb2939731579";
-            const s = a;
+            s.hash = "8915833d692c94a47b0fcb2939731579";
+            const a = s;
         },
-        876242: (e, t, n) => {
-            n.d(t, { Z: () => s });
-            var l,
-                r,
-                a = {
-                    fragment: {
-                        argumentDefinitions: (l = [
-                            { defaultValue: null, kind: "LocalArgument", name: "blockId" },
-                            { defaultValue: null, kind: "LocalArgument", name: "userId" },
-                        ]),
-                        kind: "Fragment",
-                        metadata: null,
-                        name: "useDeleteProfileBlockMutation",
-                        selections: (r = [
-                            {
-                                alias: null,
-                                args: [
-                                    { kind: "Variable", name: "block_id", variableName: "blockId" },
-                                    { kind: "Literal", name: "s", value: "f3d8" },
-                                    { kind: "Variable", name: "user_id", variableName: "userId" },
-                                ],
-                                concreteType: "ProfileBlockOperationSuccess",
-                                kind: "LinkedField",
-                                name: "delete_profile_block",
-                                plural: !1,
-                                selections: [{ alias: null, args: null, kind: "ScalarField", name: "success", storageKey: null }],
-                                storageKey: null,
-                            },
-                        ]),
-                        type: "Mutation",
-                        abstractKey: null,
-                    },
-                    kind: "Request",
-                    operation: { argumentDefinitions: l, kind: "Operation", name: "useDeleteProfileBlockMutation", selections: r },
-                    params: { id: "EvvA9IQR0sKW0tGqXwSzKA", metadata: {}, name: "useDeleteProfileBlockMutation", operationKind: "mutation", text: null },
+        96702: (e, t, r) => {
+            r.d(t, { Z: () => O });
+            var n = r(202784),
+                l = r(325686),
+                s = r(392237),
+                a = r(520385),
+                o = r(991617),
+                i = r(516951),
+                c = r(381335),
+                u = r(154003),
+                d = r(885724);
+            const m = n.createElement(d.default, null),
+                p = s.default.create((e) => ({ editButton: { height: "auto" } })),
+                b = () => {
+                    const { blockId: e } = (0, o._L)();
+                    return e ? n.createElement(l.Z, { style: p.editButton }, n.createElement(u.ZP, { icon: m, link: `/settings/bio/edit/${e}`, size: "xSmall", type: "primaryText" })) : null;
                 };
-            a.hash = "5d2c7077ac04854de170e0b8fd37dc6f";
-            const s = a;
-        },
-        96702: (e, t, n) => {
-            n.d(t, { Z: () => U });
-            var l = n(202784),
-                r = n(325686),
-                a = n(392237),
-                s = n(520385),
-                i = n(991617),
-                o = n(516951),
-                c = n(381335),
-                u = n(154003),
-                d = n(885724);
-            const m = l.createElement(d.default, null),
-                p = a.default.create((e) => ({ editButton: { height: "auto" } })),
-                g = () => {
-                    const { blockId: e } = (0, i._L)();
-                    return e ? l.createElement(r.Z, { style: p.editButton }, l.createElement(u.ZP, { icon: m, link: `/settings/bio/edit/${e}`, size: "xSmall", type: "primaryText" })) : null;
-                };
-            var y = n(301503),
-                k = n(989272),
-                f = n(524496),
-                b = n(925873),
-                E = n(731708),
-                _ = n(757483),
-                h = n(187669),
-                Z = n(478414),
-                v = n(949626);
-            const F = ({ content: e }) => (
-                    (0, h.q)(() => {
-                        (0, k.fH)((0, Z.yW)(Z.Hx, Z.K), Z.Hx);
+            var E = r(301503),
+                f = r(989272),
+                g = r(524496),
+                y = r(925873),
+                h = r(731708),
+                _ = r(757483),
+                Z = r(187669),
+                k = r(478414),
+                v = r(949626);
+            const x = ({ content: e }) => (
+                    (0, Z.q)(() => {
+                        (0, f.fH)((0, k.yW)(k.Hx, k.K), k.Hx);
                     }),
-                    l.createElement(l.Fragment, null, e && e.hasText() && l.createElement(v.Z, { className: Z.Hx }, l.createElement(r.Z, { style: x.richText }, l.createElement(f.Z, { contentState: (0, y.convertToRaw)(e) }))))
+                    n.createElement(n.Fragment, null, e && e.hasText() && n.createElement(v.Z, { className: k.Hx }, n.createElement(l.Z, { style: I.richText }, n.createElement(g.Z, { contentState: (0, E.convertToRaw)(e) }))))
                 ),
-                x = a.default.create((e) => {
+                I = s.default.create((e) => {
                     const t = _.Z.hexToCss(e.colors.gray0, 0),
-                        n = _.Z.hexToCss(e.colors.gray0, 0.9);
-                    return { richText: { color: e.colors.text }, link: { cursor: "pointer", marginTop: e.spaces.space8 }, previewContainer: { overflow: "hidden" }, fade: { position: "absolute", top: "50%", bottom: 0, start: `-${e.spaces.space16}`, end: `-${e.spaces.space16}`, backgroundImage: e.highContrastEnabled ? void 0 : `linear-gradient(to bottom, ${t}, ${n})` } };
+                        r = _.Z.hexToCss(e.colors.gray0, 0.9);
+                    return { richText: { color: e.colors.text }, link: { cursor: "pointer", marginTop: e.spaces.space8 }, previewContainer: { overflow: "hidden" }, fade: { position: "absolute", top: "50%", bottom: 0, start: `-${e.spaces.space16}`, end: `-${e.spaces.space16}`, backgroundImage: e.highContrastEnabled ? void 0 : `linear-gradient(to bottom, ${t}, ${r})` } };
                 }),
-                I = ({ content: e, previewHeight: t, shouldTruncate: n = !0 }) => {
-                    const [a, s] = l.useState(0),
-                        [i, o] = l.useState(0),
-                        [c, u] = l.useState(!n),
-                        d = l.useRef(null);
-                    l.useEffect(() => {
-                        d.current && 0 === a && s(d.current.offsetHeight);
-                    }, [a]);
-                    const m = l.useMemo(() => {
-                            const t = b.Z.getContentStateFromRaw(e);
-                            return t ? (0, y.convertFromRaw)(t) : null;
+                w = ({ content: e, previewHeight: t, shouldTruncate: r = !0 }) => {
+                    const [s, a] = n.useState(0),
+                        [o, i] = n.useState(0),
+                        [c, u] = n.useState(!r),
+                        d = n.useRef(null);
+                    n.useEffect(() => {
+                        d.current && 0 === s && a(d.current.offsetHeight);
+                    }, [s]);
+                    const m = n.useMemo(() => {
+                            const t = y.Z.getContentStateFromRaw(e);
+                            return t ? (0, E.convertFromRaw)(t) : null;
                         }, [e]),
-                        p = l.useMemo(() => n && a > t, [n, t, a]);
+                        p = n.useMemo(() => r && s > t, [r, t, s]);
                     return m && m.hasText()
-                        ? l.createElement(
-                              r.Z,
+                        ? n.createElement(
+                              l.Z,
                               { style: { flex: 1 } },
-                              l.createElement(
-                                  r.Z,
+                              n.createElement(
+                                  l.Z,
                                   {
                                       onLayout: () => {
-                                          d.current && d.current.offsetHeight !== i && o(d.current.offsetHeight);
+                                          d.current && d.current.offsetHeight !== o && i(d.current.offsetHeight);
                                       },
                                       ref: d,
-                                      style: p && !c ? { ...x.previewContainer, maxHeight: t } : void 0,
+                                      style: p && !c ? { ...I.previewContainer, maxHeight: t } : void 0,
                                   },
-                                  l.createElement(F, { content: m }),
-                                  p && !c ? l.createElement(r.Z, { style: x.fade }) : null,
+                                  n.createElement(x, { content: m }),
+                                  p && !c ? n.createElement(l.Z, { style: I.fade }) : null,
                               ),
-                              p && l.createElement(E.ZP, { color: "link", onPress: () => u(!c), size: "subtext1", style: x.link, withInteractiveStyling: !0 }, c ? "Show less" : "Show more"),
+                              p && n.createElement(h.ZP, { color: "link", onPress: () => u(!c), size: "subtext1", style: I.link, withInteractiveStyling: !0 }, c ? "Show less" : "Show more"),
                           )
                         : null;
                 },
-                S = a.default.create((e) => ({ row: { flexDirection: "row", gap: e.spaces.space8 } })),
-                P = ({ block: e, isEditing: t }) => {
-                    const { hasWorkHistorySection: n, sectionType: a } = (0, i.eF)(),
+                C = s.default.create((e) => ({ row: { flexDirection: "row", gap: e.spaces.space8 } })),
+                N = ({ block: e, isEditing: t }) => {
+                    const { hasWorkHistorySection: r, sectionType: s } = (0, o.eF)(),
                         u = e.result?.content,
-                        d = l.useMemo(() => a === s.NB.ABOUT && n, [n, a]);
-                    return l.createElement(r.Z, { style: { ...S.row, ...(t ? { justifyContent: "space-between" } : {}) } }, l.createElement(I, { content: u?.value, previewHeight: 0.4 * window.innerHeight, shouldTruncate: d }), t ? l.createElement(r.Z, { style: S.row }, l.createElement(g, null), l.createElement(c.Z, { onCompleted: o.Z, useIconButton: !0 })) : null);
+                        d = n.useMemo(() => s === a.NB.ABOUT && r, [r, s]);
+                    return n.createElement(l.Z, { style: { ...C.row, ...(t ? { justifyContent: "space-between" } : {}) } }, n.createElement(w, { content: u?.value, previewHeight: 0.4 * window.innerHeight, shouldTruncate: d }), t ? n.createElement(l.Z, { style: C.row }, n.createElement(b, null), n.createElement(c.Z, { onCompleted: i.Z, useIconButton: !0 })) : null);
                 };
-            var C = n(470397),
-                w = n(823161),
-                T = n(111677),
-                B = n.n(T),
-                R = n(873302);
-            const N = B().a2f2faab,
-                K = ({ endMonth: e, endYear: t, isCurrent: n, startMonth: r, startYear: a }) => {
-                    const s = (0, R.ZU)(r, a),
-                        i = (0, R.ZU)(e, t);
-                    return s ? l.createElement(C.Z, null, l.createElement(B().I18NFormatMessage, { $i18n: "bab4ce51", start: N(s), end: n ? "Present" : i ? N(i) : "" }), l.createElement(E.ZP, null, (0, R.HM)(s, i || new Date()))) : null;
+            var S = r(470397),
+                P = r(823161),
+                R = r(111677),
+                T = r.n(R),
+                F = r(873302);
+            const B = T().a2f2faab,
+                M = ({ endMonth: e, endYear: t, isCurrent: r, startMonth: l, startYear: s }) => {
+                    const a = (0, F.ZU)(l, s),
+                        o = (0, F.ZU)(e, t);
+                    return a ? n.createElement(S.Z, null, n.createElement(T().I18NFormatMessage, { $i18n: "bab4ce51", start: B(a), end: r ? "Present" : o ? B(o) : "" }), n.createElement(h.ZP, null, (0, F.HM)(a, o || new Date()))) : null;
                 },
-                L = a.default.create((e) => ({ row: { flexDirection: "row", gap: e.spaces.space8 }, workInfo: { gap: e.spaces.space4, flex: 1 } })),
-                M = ({ block: e, isEditing: t }) => {
-                    const n = e?.result?.content,
-                        a = n?.company_profile_results?.result;
-                    return n ? l.createElement(r.Z, { style: { ...L.row, ...(t ? { justifyContent: "space-between" } : {}) } }, l.createElement(r.Z, { style: { ...L.row, flex: 1 } }, l.createElement(w.default, { shape: "square", size: "large", uri: a?.logo?.normal_url || "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" }), l.createElement(r.Z, { style: L.workInfo }, l.createElement(E.ZP, { size: "subtext1", weight: "bold" }, n.title), l.createElement(C.Z, null, a?.core?.name || n.company_profile_name ? l.createElement(E.ZP, { color: "gray700", size: "subtext1" }, a?.core?.name || n.company_profile_name) : null, n.location_text ? l.createElement(E.ZP, { color: "gray700", size: "subtext1" }, n.location_text) : null), l.createElement(E.ZP, { color: "gray700", size: "subtext1" }, l.createElement(K, { endMonth: n.end_month, endYear: n.end_year, isCurrent: !!n.active_role, startMonth: n.start_month, startYear: n.start_year })), l.createElement(I, { content: n.description, previewHeight: 120, shouldTruncate: !0 }))), t ? l.createElement(r.Z, { style: L.row }, l.createElement(g, null), l.createElement(c.Z, { onCompleted: o.Z, useIconButton: !0 })) : null) : null;
+                H = s.default.create((e) => ({ row: { flexDirection: "row", gap: e.spaces.space8 }, workInfo: { gap: e.spaces.space4, flex: 1 } })),
+                D = ({ block: e, isEditing: t }) => {
+                    const r = e?.result?.content,
+                        s = r?.company_profile_results?.result;
+                    return r ? n.createElement(l.Z, { style: { ...H.row, ...(t ? { justifyContent: "space-between" } : {}) } }, n.createElement(l.Z, { style: { ...H.row, flex: 1 } }, n.createElement(P.default, { shape: "square", size: "large", uri: s?.logo?.normal_url || "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" }), n.createElement(l.Z, { style: H.workInfo }, n.createElement(h.ZP, { size: "subtext1", weight: "bold" }, r.title), n.createElement(S.Z, null, s?.core?.name || r.company_profile_name ? n.createElement(h.ZP, { color: "gray700", size: "subtext1" }, s?.core?.name || r.company_profile_name) : null, r.location_text ? n.createElement(h.ZP, { color: "gray700", size: "subtext1" }, r.location_text) : null), n.createElement(h.ZP, { color: "gray700", size: "subtext1" }, n.createElement(M, { endMonth: r.end_month, endYear: r.end_year, isCurrent: !!r.active_role, startMonth: r.start_month, startYear: r.start_year })), n.createElement(w, { content: r.description, previewHeight: 120, shouldTruncate: !0 }))), t ? n.createElement(l.Z, { style: H.row }, n.createElement(b, null), n.createElement(c.Z, { onCompleted: i.Z, useIconButton: !0 })) : null) : null;
                 },
-                D = ({ block: e, blockId: t, isEditing: n = !1 }) => {
-                    const r = l.useCallback(() => {
+                U = ({ block: e, blockId: t, isEditing: r = !1 }) => {
+                    const l = n.useCallback(() => {
                         switch (e?.result?.core?.block_type) {
-                            case s.Mp.RICHTEXT:
-                                return l.createElement(P, { block: e, isEditing: n });
-                            case s.Mp.WORK_HISTORY:
-                                return l.createElement(M, { block: e, isEditing: n });
+                            case a.Mp.RICHTEXT:
+                                return n.createElement(N, { block: e, isEditing: r });
+                            case a.Mp.WORK_HISTORY:
+                                return n.createElement(D, { block: e, isEditing: r });
                             default:
                                 return null;
                         }
-                    }, [e, n]);
-                    return e ? l.createElement(i.Vo.Provider, { value: { ...i.dq, blockId: t, blockQueryId: e.__id } }, r()) : null;
+                    }, [e, r]);
+                    return e ? n.createElement(o.Vo.Provider, { value: { ...o.dq, blockId: t, blockQueryId: e.__id } }, l()) : null;
                 },
-                H = a.default.create((e) => ({ blockGroup: { flexDirection: "row" }, block: { flex: 1, padding: e.spaces.space16, borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.navigationBackground, borderBottomStyle: "solid", backgroundColor: e.colors.gray0, borderTopStartRadius: e.borderRadii.medium, borderTopEndRadius: e.borderRadii.medium, borderBottomStartRadius: e.borderRadii.medium, borderBottomEndRadius: e.borderRadii.medium } })),
-                U = ({ blocks: e, isEditing: t }) =>
+                V = s.default.create((e) => ({ blockGroup: { flexDirection: "row" }, block: { flex: 1, padding: e.spaces.space16, borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.navigationBackground, borderBottomStyle: "solid", backgroundColor: e.colors.gray0, borderTopStartRadius: e.borderRadii.medium, borderTopEndRadius: e.borderRadii.medium, borderBottomStartRadius: e.borderRadii.medium, borderBottomEndRadius: e.borderRadii.medium } })),
+                O = ({ blocks: e, isEditing: t }) =>
                     e
-                        ? l.createElement(
-                              r.Z,
+                        ? n.createElement(
+                              l.Z,
                               null,
-                              e.map((n, a) => {
-                                  if (!n) return null;
-                                  const s = n.rest_id.block_id;
-                                  if (!s || !n?.result?.core) return null;
-                                  return l.createElement(
-                                      r.Z,
-                                      { key: s, style: H.blockGroup },
-                                      l.createElement(
-                                          r.Z,
+                              e.map((r, s) => {
+                                  if (!r) return null;
+                                  const a = r.rest_id.block_id;
+                                  if (!a || !r?.result?.core) return null;
+                                  return n.createElement(
+                                      l.Z,
+                                      { key: a, style: V.blockGroup },
+                                      n.createElement(
+                                          l.Z,
                                           {
                                               style: (() => {
-                                                  const t = H.block;
-                                                  return 1 === e.length ? t : 0 === a ? { ...t, borderBottomStartRadius: 0, borderBottomEndRadius: 0 } : a > 0 && a < e.length - 1 ? { ...t, borderTopStartRadius: 0, borderTopEndRadius: 0, borderBottomStartRadius: 0, borderBottomEndRadius: 0 } : a === e.length - 1 ? { ...t, borderTopStartRadius: 0, borderTopEndRadius: 0 } : t;
+                                                  const t = V.block;
+                                                  return 1 === e.length ? t : 0 === s ? { ...t, borderBottomStartRadius: 0, borderBottomEndRadius: 0 } : s > 0 && s < e.length - 1 ? { ...t, borderTopStartRadius: 0, borderTopEndRadius: 0, borderBottomStartRadius: 0, borderBottomEndRadius: 0 } : s === e.length - 1 ? { ...t, borderTopStartRadius: 0, borderTopEndRadius: 0 } : t;
                                               })(),
                                           },
-                                          l.createElement(D, { block: n, blockId: s, isEditing: t }),
+                                          n.createElement(U, { block: r, blockId: a, isEditing: t }),
                                       ),
                                   );
                               }),
                           )
                         : null;
         },
-        512547: (e, t, n) => {
-            n.d(t, { Z: () => f });
-            var l = n(202784),
-                r = n(190286),
-                a = n(111677),
-                s = n.n(a),
-                i = n(782642),
-                o = n(72130),
-                c = n(725516),
-                u = n(876242),
-                d = (n(585488), n(351743)),
-                m = n.n(d);
-            const p = u.Z,
-                g = () => {
-                    const [e, t] = m()(p);
-                    return [
-                        l.useCallback(
-                            (t) => {
-                                e(t);
-                            },
-                            [e],
-                        ),
-                        t,
-                    ];
-                },
-                y = s().g9677c6e,
-                k = s().a2b8c54c,
-                f = ({ blockId: e, headline: t, onClose: n, onCompleted: a, queryId: s, subtext: u, userId: d }) => {
-                    const m = (0, i.p)(),
-                        p = (0, c.z)(),
-                        [f, b] = g(),
-                        E = l.useCallback(() => {
-                            n();
-                        }, [n]),
-                        _ = l.useCallback(() => {
-                            p.scribe({ ...(0, o.MA)("delete_block_btn", "click") }),
-                                f({
-                                    variables: { blockId: e, userId: d },
-                                    updater: (e, t) => {
-                                        s && e.delete(s);
-                                    },
-                                    onCompleted: (e) => {
-                                        e?.delete_profile_block?.success && (m({ text: k }), n(), a && a());
-                                    },
-                                });
-                        }, [m, p, e, f, n, a, s, d]);
-                    return l.createElement(r.Z, { confirmButtonDisabled: b, confirmButtonLabel: y, confirmButtonType: "destructiveFilled", enableMaskForDismiss: !0, headline: t, onCancel: E, onConfirm: _, text: u });
-                };
-        },
-        381335: (e, t, n) => {
-            n.d(t, { Z: () => k });
-            var l = n(202784),
-                r = n(325686),
-                a = n(154003),
-                s = n(392237),
-                i = n(111677),
-                o = n.n(i),
-                c = n(607127),
-                u = n(991617),
-                d = n(512547);
-            const m = o().h6a724ac,
-                p = o().f94aacae,
-                g = o().d96cf7ce,
-                y = s.default.create((e) => ({ iconButton: { height: "auto" } })),
-                k = ({ onCompleted: e, useIconButton: t }) => {
-                    const { blockCount: n, sectionQueryId: s } = (0, u.eF)(),
-                        { blockId: i, blockQueryId: o } = (0, u._L)(),
-                        { userId: k, userQueryId: f } = (0, u.se)(),
-                        [b, E] = l.useState(!1),
-                        _ = l.useCallback(() => {
-                            E(!1);
+        381335: (e, t, r) => {
+            r.d(t, { Z: () => f });
+            var n = r(202784),
+                l = r(325686),
+                s = r(154003),
+                a = r(392237),
+                o = r(111677),
+                i = r.n(o),
+                c = r(607127),
+                u = r(991617),
+                d = r(512547);
+            const m = i().h6a724ac,
+                p = i().f94aacae,
+                b = i().d96cf7ce,
+                E = a.default.create((e) => ({ iconButton: { height: "auto" } })),
+                f = ({ onCompleted: e, useIconButton: t }) => {
+                    const { blockCount: r, sectionQueryId: a } = (0, u.eF)(),
+                        { blockId: o, blockQueryId: i } = (0, u._L)(),
+                        { userId: f, userQueryId: g } = (0, u.se)(),
+                        [y, h] = n.useState(!1),
+                        _ = n.useCallback(() => {
+                            h(!1);
                         }, []),
-                        h = l.useCallback(() => {
-                            E(!0);
+                        Z = n.useCallback(() => {
+                            h(!0);
                         }, []);
-                    return l.createElement(l.Fragment, null, t ? l.createElement(r.Z, { style: y.iconButton }, l.createElement(a.ZP, { disabled: !i || !k, icon: l.createElement(c.default, null), onClick: h, size: "xSmall", type: "destructiveText" })) : l.createElement(a.ZP, { disabled: !i || !k, onClick: h, size: "large", type: "destructiveText" }, g), b && i && k ? l.createElement(d.Z, { blockId: i, headline: m, onClose: _, onCompleted: e, queryId: n > 1 ? o : s || f, subtext: p, userId: k }) : null);
+                    return n.createElement(n.Fragment, null, t ? n.createElement(l.Z, { style: E.iconButton }, n.createElement(s.ZP, { disabled: !o || !f, icon: n.createElement(c.default, null), onClick: Z, size: "xSmall", type: "destructiveText" })) : n.createElement(s.ZP, { disabled: !o || !f, onClick: Z, size: "large", type: "destructiveText" }, b), y && o && f ? n.createElement(d.Z, { blockId: o, headline: m, onClose: _, onCompleted: e, queryId: r > 1 ? i : a || g, subtext: p, userId: f }) : null);
                 };
         },
-        785813: (e, t, n) => {
-            n.d(t, { Z: () => a });
-            var l = n(202784),
-                r = n(366635);
-            const a = (e) => (e ? l.createElement(r.Z, { affiliateBadgeInfo: e?.highlightedLabel, isBlueVerified: e?.is_blue_verified, isProtected: e?.protected, isVerified: e?.verified, name: e?.name, verifiedType: e?.verified_type }) : null);
-        },
-        825495: (e, t, n) => {
-            n.d(t, { Z: () => a });
-            var l = n(202784),
-                r = n(823161);
-            const a = (e) => {
-                if (!e) return null;
-                const t = "Square" === e?.profile_image_shape ? "square" : "circle";
-                return l.createElement(r.default, { shape: t, size: "xLarge", uri: e?.profile_image_url_https });
-            };
-        },
-        485822: (e, t, n) => {
-            n.d(t, { Z: () => x });
-            n(136728);
-            var l = n(202784),
-                r = n(325686),
-                a = n(277660),
-                s = n.n(a),
-                i = n(107267),
-                o = n(58881),
-                c = n(392237),
-                u = n(731708),
-                d = n(530732),
-                m = n(111677),
-                p = n.n(m),
-                g = n(982866),
-                y = n(952793),
-                k = n(462166),
-                f = n(873302),
-                b = n(96702),
-                E = n(991617),
-                _ = n(736993);
-            const h = p().b721eb38,
-                Z = ({ blocks: e, isEditing: t = !1 }) => {
-                    const { sectionId: n, sectionVisibility: a } = (0, E.eF)(),
-                        { userId: s, userQueryId: m } = (0, E.se)(),
-                        p = (0, i.useHistory)(),
-                        Z = l.useCallback(() => {
+        485822: (e, t, r) => {
+            r.d(t, { Z: () => I });
+            r(136728);
+            var n = r(202784),
+                l = r(325686),
+                s = r(277660),
+                a = r.n(s),
+                o = r(107267),
+                i = r(58881),
+                c = r(392237),
+                u = r(731708),
+                d = r(530732),
+                m = r(111677),
+                p = r.n(m),
+                b = r(982866),
+                E = r(952793),
+                f = r(462166),
+                g = r(873302),
+                y = r(96702),
+                h = r(991617),
+                _ = r(736993);
+            const Z = p().b721eb38,
+                k = ({ blocks: e, isEditing: t = !1 }) => {
+                    const { sectionId: r, sectionVisibility: s } = (0, h.eF)(),
+                        { userId: a, userQueryId: m } = (0, h.se)(),
+                        p = (0, o.useHistory)(),
+                        k = n.useCallback(() => {
                             p.push("/settings/bio/new/about");
                         }, [p]),
-                        F = (0, y.hC)("xprofile_section_visibility_enabled"),
-                        x = o.Z.generate({ backgroundColor: "transparent", color: c.default.theme.colors.text });
+                        x = (0, E.hC)("xprofile_section_visibility_enabled"),
+                        I = i.Z.generate({ backgroundColor: "transparent", color: c.default.theme.colors.text });
                     if (!t && !e?.length) return null;
-                    const I = s === m,
-                        S = (0, f.Kh)(e?.slice(), k.GL);
-                    return l.createElement(r.Z, { style: v.root }, l.createElement(r.Z, { style: v.header }, l.createElement(u.ZP, { size: "title4", weight: "bold" }, h), F && I && l.createElement(u.ZP, { hoverLabel: { label: (0, _.Q)(a) } }, l.createElement(_.K3, { style: v.visibilityIcon, visibility: a })), F && t && l.createElement(_.ZP, { currentVisibility: a, sectionId: n })), l.createElement(r.Z, null, e?.length ? l.createElement(b.Z, { blocks: S, isEditing: t }) : l.createElement(l.Fragment, null, t ? l.createElement(d.Z, { interactiveStyles: x, onClick: Z, style: v.container }, l.createElement(u.ZP, null, "Tell us about yourself"), l.createElement(g.default, null)) : null)));
+                    const w = a === m,
+                        C = (0, g.Kh)(e?.slice(), f.GL);
+                    return n.createElement(l.Z, { style: v.root }, n.createElement(l.Z, { style: v.header }, n.createElement(u.ZP, { size: "title4", weight: "bold" }, Z), x && w && n.createElement(u.ZP, { hoverLabel: { label: (0, _.Q)(s) } }, n.createElement(_.K3, { style: v.visibilityIcon, visibility: s })), x && t && n.createElement(_.ZP, { currentVisibility: s, sectionId: r })), n.createElement(l.Z, null, e?.length ? n.createElement(y.Z, { blocks: C, isEditing: t }) : n.createElement(n.Fragment, null, t ? n.createElement(d.Z, { interactiveStyles: I, onClick: k, style: v.container }, n.createElement(u.ZP, null, "Tell us about yourself"), n.createElement(b.default, null)) : null)));
                 },
                 v = c.default.create((e) => ({ root: { padding: e.spaces.space16, gap: e.spaces.space8 }, container: { backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.medium, padding: e.spaces.space16, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, header: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, visibilityIcon: { color: e.colors.gray600 } })),
-                F = ({ isEditing: e = !1, section: t }) => {
-                    const n = s()(k.C_, t),
-                        r = n?.result?.profile_blocks?.items_results;
-                    return n?.result?.id ? l.createElement(Z, { blocks: r, isEditing: e }) : null;
+                x = ({ isEditing: e = !1, section: t }) => {
+                    const r = a()(f.C_, t),
+                        l = r?.result?.profile_blocks?.items_results;
+                    return r?.result?.id ? n.createElement(k, { blocks: l, isEditing: e }) : null;
                 },
-                x = ({ isEditing: e = !1, section: t }) => (t && t.id ? l.createElement(F, { isEditing: e, section: t }) : l.createElement(Z, { isEditing: e }));
+                I = ({ isEditing: e = !1, section: t }) => (t && t.id ? n.createElement(x, { isEditing: e, section: t }) : n.createElement(k, { isEditing: e }));
         },
-        164349: (e, t, n) => {
-            n.d(t, { Z: () => x });
-            n(136728);
-            var l = n(202784),
-                r = n(325686),
-                a = n(277660),
-                s = n.n(a),
-                i = n(107267),
-                o = n(58881),
-                c = n(392237),
-                u = n(731708),
-                d = n(530732),
-                m = n(111677),
-                p = n.n(m),
-                g = n(982866),
-                y = n(952793),
-                k = n(462166),
-                f = n(873302),
-                b = n(96702),
-                E = n(991617),
-                _ = n(736993);
-            const h = p().a622dfcc,
-                Z = ({ blocks: e, isEditing: t = !1 }) => {
-                    const { sectionId: n, sectionVisibility: a } = (0, E.eF)(),
-                        { userId: s, userQueryId: m } = (0, E.se)(),
-                        p = (0, i.useHistory)(),
-                        Z = l.useCallback(() => {
-                            n ? p.push(`/settings/bio/new/${n}/work_experience`) : p.push("/settings/bio/new/work_experience");
-                        }, [p, n]),
-                        F = (0, y.hC)("xprofile_section_visibility_enabled"),
-                        x = o.Z.generate({ backgroundColor: "transparent", color: c.default.theme.colors.text });
+        164349: (e, t, r) => {
+            r.d(t, { Z: () => I });
+            r(136728);
+            var n = r(202784),
+                l = r(325686),
+                s = r(277660),
+                a = r.n(s),
+                o = r(107267),
+                i = r(58881),
+                c = r(392237),
+                u = r(731708),
+                d = r(530732),
+                m = r(111677),
+                p = r.n(m),
+                b = r(982866),
+                E = r(952793),
+                f = r(462166),
+                g = r(873302),
+                y = r(96702),
+                h = r(991617),
+                _ = r(736993);
+            const Z = p().a622dfcc,
+                k = ({ blocks: e, isEditing: t = !1 }) => {
+                    const { sectionId: r, sectionVisibility: s } = (0, h.eF)(),
+                        { userId: a, userQueryId: m } = (0, h.se)(),
+                        p = (0, o.useHistory)(),
+                        k = n.useCallback(() => {
+                            r ? p.push(`/settings/bio/new/${r}/work_experience`) : p.push("/settings/bio/new/work_experience");
+                        }, [p, r]),
+                        x = (0, E.hC)("xprofile_section_visibility_enabled"),
+                        I = i.Z.generate({ backgroundColor: "transparent", color: c.default.theme.colors.text });
                     if (!t && !e?.length) return null;
-                    const I = s === m,
-                        S = (0, f.Kh)(e?.slice(), k.lw),
-                        P = (0, f.s1)(S);
-                    return l.createElement(r.Z, { style: v.root }, l.createElement(r.Z, { style: v.headerSection }, l.createElement(u.ZP, { size: "title4", weight: "bold" }, h), F && I && l.createElement(u.ZP, { hoverLabel: { label: (0, _.Q)(a) } }, l.createElement(_.K3, { style: v.visibilityIcon, visibility: a })), F && t && l.createElement(_.ZP, { currentVisibility: a, sectionId: n })), l.createElement(r.Z, { style: v.blocksList }, P && P.length > 0 ? l.createElement(b.Z, { blocks: P, isEditing: t }) : null, l.createElement(l.Fragment, null, t ? l.createElement(d.Z, { interactiveStyles: x, onClick: Z, style: v.container }, l.createElement(u.ZP, null, "Add experience"), l.createElement(g.default, null)) : null)));
+                    const w = a === m,
+                        C = (0, g.Kh)(e?.slice(), f.lw),
+                        N = (0, g.s1)(C);
+                    return n.createElement(l.Z, { style: v.root }, n.createElement(l.Z, { style: v.headerSection }, n.createElement(u.ZP, { size: "title4", weight: "bold" }, Z), x && w && n.createElement(u.ZP, { hoverLabel: { label: (0, _.Q)(s) } }, n.createElement(_.K3, { style: v.visibilityIcon, visibility: s })), x && t && n.createElement(_.ZP, { currentVisibility: s, sectionId: r })), n.createElement(l.Z, { style: v.blocksList }, N && N.length > 0 ? n.createElement(y.Z, { blocks: N, isEditing: t }) : null, n.createElement(n.Fragment, null, t ? n.createElement(d.Z, { interactiveStyles: I, onClick: k, style: v.container }, n.createElement(u.ZP, null, "Add experience"), n.createElement(b.default, null)) : null)));
                 },
                 v = c.default.create((e) => ({ root: { padding: e.spaces.space16, gap: e.spaces.space8 }, container: { backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.medium, padding: e.spaces.space16, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, headerSection: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, blocksList: { gap: e.spaces.space8 }, visibilityIcon: { color: e.colors.gray600 } })),
-                F = ({ isEditing: e = !1, section: t }) => {
-                    const n = s()(k.C_, t),
-                        r = n?.result?.profile_blocks?.items_results;
-                    return n?.result?.id ? l.createElement(Z, { blocks: r, isEditing: e }) : null;
+                x = ({ isEditing: e = !1, section: t }) => {
+                    const r = a()(f.C_, t),
+                        l = r?.result?.profile_blocks?.items_results;
+                    return r?.result?.id ? n.createElement(k, { blocks: l, isEditing: e }) : null;
                 },
-                x = ({ isEditing: e = !1, section: t }) => (t && t.id ? l.createElement(F, { isEditing: e, section: t }) : l.createElement(Z, { isEditing: e }));
+                I = ({ isEditing: e = !1, section: t }) => (t && t.id ? n.createElement(x, { isEditing: e, section: t }) : n.createElement(k, { isEditing: e }));
         },
-        736993: (e, t, n) => {
-            n.d(t, { K3: () => _, Q: () => v, ZP: () => F });
-            var l = n(163015),
-                r = n(202784),
-                a = n(400752),
-                s = n(325686),
-                i = (n(585488), n(351743)),
-                o = n.n(i),
-                c = n(731708),
-                u = n(797553),
-                d = n(143670),
-                m = n(392237),
-                p = n(111677),
-                g = n.n(p),
-                y = n(14284),
-                k = n(468670),
-                f = n(520385),
-                b = n(991617);
-            const E = l.Z,
-                _ = ({ style: e, visibility: t }) => (t === f.pR.PUBLIC ? r.createElement(y.default, { style: e }) : t === f.pR.PRIVATE ? r.createElement(k.default, { style: e }) : void r.Fragment),
-                h = g().baffe39a,
-                Z = g().je07e266,
-                v = (e) => (e === f.pR.PUBLIC ? h : e === f.pR.PRIVATE ? Z : ""),
-                F = ({ currentVisibility: e, sectionId: t }) => {
-                    const n = (0, a.b9)(b.j7),
-                        [l, i] = r.useState(e ?? f.pR.PUBLIC),
-                        [m, p] = r.useState(!1),
-                        [h] = o()(E),
-                        Z = r.useCallback(
+        736993: (e, t, r) => {
+            r.d(t, { K3: () => _, Q: () => v, ZP: () => x });
+            var n = r(163015),
+                l = r(202784),
+                s = r(400752),
+                a = r(325686),
+                o = (r(585488), r(351743)),
+                i = r.n(o),
+                c = r(731708),
+                u = r(797553),
+                d = r(143670),
+                m = r(392237),
+                p = r(111677),
+                b = r.n(p),
+                E = r(14284),
+                f = r(468670),
+                g = r(520385),
+                y = r(991617);
+            const h = n.Z,
+                _ = ({ style: e, visibility: t }) => (t === g.pR.PUBLIC ? l.createElement(E.default, { style: e }) : t === g.pR.PRIVATE ? l.createElement(f.default, { style: e }) : void l.Fragment),
+                Z = b().baffe39a,
+                k = b().je07e266,
+                v = (e) => (e === g.pR.PUBLIC ? Z : e === g.pR.PRIVATE ? k : ""),
+                x = ({ currentVisibility: e, sectionId: t }) => {
+                    const r = (0, s.b9)(y.j7),
+                        [n, o] = l.useState(e ?? g.pR.PUBLIC),
+                        [m, p] = l.useState(!1),
+                        [Z] = i()(h),
+                        k = l.useCallback(
                             (e) => {
                                 t &&
-                                    (i(e),
+                                    (o(e),
                                     p(!1),
-                                    h({
+                                    Z({
                                         variables: { sectionId: t, visibility: e },
                                         onCompleted: () => {
-                                            n(!0);
+                                            r(!0);
                                         },
                                     }));
                             },
-                            [h, t, n],
+                            [Z, t, r],
                         );
-                    return r.createElement(s.Z, null, r.createElement(s.Z, { onClick: () => p(!0), style: x.target }, r.createElement(_, { style: x.icon, visibility: l }), r.createElement(c.ZP, { style: x.targetText }, v(l))), m && r.createElement(u.default, { isFixed: !0, onDismiss: () => p(!1), preferredHorizontalOrientation: "right", preferredVerticalOrientation: "down" }, r.createElement(d.Z, { Icon: y.default, actionText: g().baffe39a, onClick: () => Z(f.pR.PUBLIC) }), r.createElement(d.Z, { Icon: k.default, actionText: g().je07e266, onClick: () => Z(f.pR.PRIVATE) })));
+                    return l.createElement(a.Z, null, l.createElement(a.Z, { onClick: () => p(!0), style: I.target }, l.createElement(_, { style: I.icon, visibility: n }), l.createElement(c.ZP, { style: I.targetText }, v(n))), m && l.createElement(u.default, { isFixed: !0, onDismiss: () => p(!1), preferredHorizontalOrientation: "right", preferredVerticalOrientation: "down" }, l.createElement(d.Z, { Icon: E.default, actionText: b().baffe39a, onClick: () => k(g.pR.PUBLIC) }), l.createElement(d.Z, { Icon: f.default, actionText: b().je07e266, onClick: () => k(g.pR.PRIVATE) })));
                 },
-                x = m.default.create((e) => ({ target: { flex: 1, flexDirection: "row", alignItems: "center", gap: e.spaces.space4, cursor: "pointer" }, targetText: { marginStart: e.spaces.space2, marginEnd: e.spaces.space8, color: e.colors.link }, icon: { color: e.colors.link } }));
+                I = m.default.create((e) => ({ target: { flex: 1, flexDirection: "row", alignItems: "center", gap: e.spaces.space4, cursor: "pointer" }, targetText: { marginStart: e.spaces.space2, marginEnd: e.spaces.space8, color: e.colors.link }, icon: { color: e.colors.link } }));
         },
-        991617: (e, t, n) => {
-            n.d(t, { Fo: () => s, Vo: () => m, Y_: () => o, _L: () => p, bQ: () => c, dq: () => d, eF: () => u, j7: () => g, se: () => i, w: () => a });
-            var l = n(202784),
-                r = n(565058);
-            const a = { userId: null, userQueryId: null },
-                s = l.createContext(a),
-                i = () => l.useContext(s),
-                o = { blockCount: 0, hasAboutSection: !1, hasWorkHistorySection: !1, sectionId: null, sectionType: null, sectionQueryId: null, sectionVisibility: null },
-                c = l.createContext(o),
-                u = () => l.useContext(c),
+        991617: (e, t, r) => {
+            r.d(t, { Fo: () => a, Vo: () => m, Y_: () => i, _L: () => p, bQ: () => c, dq: () => d, eF: () => u, j7: () => b, se: () => o, w: () => s });
+            var n = r(202784),
+                l = r(565058);
+            const s = { userId: null, userQueryId: null },
+                a = n.createContext(s),
+                o = () => n.useContext(a),
+                i = { blockCount: 0, hasAboutSection: !1, hasWorkHistorySection: !1, sectionId: null, sectionType: null, sectionQueryId: null, sectionVisibility: null },
+                c = n.createContext(i),
+                u = () => n.useContext(c),
                 d = { blockId: null, blockQueryId: null, blocksQueryId: null },
-                m = l.createContext(d),
-                p = () => l.useContext(m),
-                g = (0, r.cn)(!1);
+                m = n.createContext(d),
+                p = () => n.useContext(m),
+                b = (0, l.cn)(!1);
         },
-        72130: (e, t, n) => {
-            n.d(t, { Ak: () => i, MA: () => s, Rz: () => l, Zi: () => a, he: () => r });
-            const l = () => ({ component: "extended_profile_settings", action: "click" }),
-                r = (e) => ({ component: "extended_profile", element: "extended_profile_edit_btn", action: "click", data: e }),
-                a = (e, t) => ({ component: "extended_profile", action: "impression", data: { profile_id: e, ...t } }),
-                s = (e, t, n) => ({ component: "rich_text_editor", element: e, action: t, data: n }),
-                i = (e, t, n) => ({ component: "work_history_editor", element: e, action: t, data: { version: 2, ...n } });
-        },
-        520385: (e, t, n) => {
-            n.d(t, { Mp: () => r, NB: () => a, P2: () => s, j3: () => l, pR: () => i });
-            const l = 5e4,
-                r = { RICHTEXT: "Richtext", WORK_HISTORY: "WorkExperience" },
-                a = (r.RICHTEXT, r.WORK_HISTORY, { ABOUT: "About", WORK_EXPERIENCE: "WorkExperience" }),
-                s = { about: a.ABOUT, work_experience: a.WORK_EXPERIENCE },
-                i = { PUBLIC: "Public", PRIVATE: "Private" };
-        },
-        238225: (e, t, n) => {
-            n.d(t, { kI: () => k, vF: () => y, m1: () => g });
-            var l,
-                r,
-                a,
-                s,
-                i = {
-                    fragment: {
-                        argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "screenName" }]),
-                        kind: "Fragment",
-                        metadata: null,
-                        name: "useFetchProfileBlocks_profileExistsQuery",
-                        selections: [
-                            {
-                                alias: null,
-                                args: (r = [
-                                    { kind: "Literal", name: "s", value: "f3d8" },
-                                    { kind: "Variable", name: "screen_name", variableName: "screenName" },
-                                ]),
-                                concreteType: "UserResults",
-                                kind: "LinkedField",
-                                name: "user_result_by_screen_name",
-                                plural: !1,
-                                selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(a = { alias: null, args: null, kind: "ScalarField", name: "has_profile_blocks", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }],
-                                storageKey: null,
-                            },
-                        ],
-                        type: "Query",
-                        abstractKey: null,
-                    },
-                    kind: "Request",
-                    operation: {
-                        argumentDefinitions: l,
-                        kind: "Operation",
-                        name: "useFetchProfileBlocks_profileExistsQuery",
-                        selections: [
-                            {
-                                alias: null,
-                                args: r,
-                                concreteType: "UserResults",
-                                kind: "LinkedField",
-                                name: "user_result_by_screen_name",
-                                plural: !1,
-                                selections: [
-                                    {
-                                        alias: null,
-                                        args: null,
-                                        concreteType: null,
-                                        kind: "LinkedField",
-                                        name: "result",
-                                        plural: !1,
-                                        selections: [
-                                            { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
-                                            { kind: "InlineFragment", selections: [a, (s = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null },
-                                        ],
-                                        storageKey: null,
-                                    },
-                                    s,
-                                ],
-                                storageKey: null,
-                            },
-                        ],
-                    },
-                    params: { id: "Z2BA99jFw6TxaJM5v7Irmg", metadata: {}, name: "useFetchProfileBlocks_profileExistsQuery", operationKind: "query", text: null },
-                };
-            i.hash = "159e51b19a254333fecf6035bc3245b7";
-            var o = (function () {
-                var e = [{ defaultValue: null, kind: "LocalArgument", name: "screenName" }],
-                    t = [
-                        { kind: "Literal", name: "s", value: "f3d8" },
-                        { kind: "Variable", name: "screen_name", variableName: "screenName" },
-                    ],
-                    n = { alias: null, args: null, kind: "ScalarField", name: "has_profile_blocks", storageKey: null },
-                    l = { alias: null, args: null, kind: "ScalarField", name: "block_id", storageKey: null },
-                    r = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
-                    a = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null };
-                return {
-                    fragment: {
-                        argumentDefinitions: e,
-                        kind: "Fragment",
-                        metadata: null,
-                        name: "useFetchProfileBlocks_profileQuery",
-                        selections: [
-                            {
-                                alias: null,
-                                args: t,
-                                concreteType: "UserResults",
-                                kind: "LinkedField",
-                                name: "user_result_by_screen_name",
-                                plural: !1,
-                                selections: [
-                                    {
-                                        alias: null,
-                                        args: null,
-                                        concreteType: null,
-                                        kind: "LinkedField",
-                                        name: "result",
-                                        plural: !1,
-                                        selections: [
-                                            {
-                                                kind: "InlineFragment",
-                                                selections: [
-                                                    n,
-                                                    {
-                                                        alias: null,
-                                                        args: null,
-                                                        concreteType: "ProfileBlocksSlice",
-                                                        kind: "LinkedField",
-                                                        name: "profile_blocks",
-                                                        plural: !1,
-                                                        selections: [
-                                                            { args: null, kind: "FragmentSpread", name: "useFetchProfileBlocks_profileBlocksSlice" },
-                                                            { alias: null, args: null, concreteType: "ProfileBlock", kind: "LinkedField", name: "items", plural: !0, selections: [l], storageKey: null },
-                                                        ],
-                                                        storageKey: null,
-                                                    },
-                                                ],
-                                                type: "User",
-                                                abstractKey: null,
-                                            },
-                                        ],
-                                        storageKey: null,
-                                    },
-                                ],
-                                storageKey: null,
-                            },
-                        ],
-                        type: "Query",
-                        abstractKey: null,
-                    },
-                    kind: "Request",
-                    operation: { argumentDefinitions: e, kind: "Operation", name: "useFetchProfileBlocks_profileQuery", selections: [{ alias: null, args: t, concreteType: "UserResults", kind: "LinkedField", name: "user_result_by_screen_name", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [n, { alias: null, args: null, concreteType: "ProfileBlocksSlice", kind: "LinkedField", name: "profile_blocks", plural: !1, selections: [{ alias: null, args: null, concreteType: "ProfileBlock", kind: "LinkedField", name: "items", plural: !0, selections: [l, { alias: null, args: null, kind: "ScalarField", name: "block_type", storageKey: null }, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "data", plural: !1, selections: [r, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "value", storageKey: null }], type: "RichtextProfileBlockData", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: null }, a], type: "User", abstractKey: null }], storageKey: null }, a], storageKey: null }] },
-                    params: { id: "Azv1m7WiLnbn36nNCk7l0Q", metadata: {}, name: "useFetchProfileBlocks_profileQuery", operationKind: "query", text: null },
-                };
-            })();
-            o.hash = "16584b716a8d455d79eefb53731f55ee";
-            const c = o;
-            var u = (function () {
-                var e = [{ kind: "Literal", name: "s", value: "f3d8" }],
-                    t = { alias: null, args: null, kind: "ScalarField", name: "has_xprofile_consent", storageKey: null },
-                    n = { alias: null, args: null, kind: "ScalarField", name: "block_id", storageKey: null },
-                    l = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] },
-                    r = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
-                    a = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null };
-                return {
-                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useFetchProfileBlocks_settingsQuery", selections: [{ alias: null, args: e, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [t, { alias: null, args: null, concreteType: "ProfileBlocksSlice", kind: "LinkedField", name: "profile_blocks", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "useFetchProfileBlocks_profileBlocksSlice" }, { alias: null, args: null, concreteType: "ProfileBlock", kind: "LinkedField", name: "items", plural: !0, selections: [n], storageKey: null }, l], storageKey: null }, l], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: 'viewer_v2(s:"f3d8")' }], type: "Query", abstractKey: null },
-                    kind: "Request",
-                    operation: { argumentDefinitions: [], kind: "Operation", name: "useFetchProfileBlocks_settingsQuery", selections: [{ alias: null, args: e, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [t, { alias: null, args: null, concreteType: "ProfileBlocksSlice", kind: "LinkedField", name: "profile_blocks", plural: !1, selections: [{ alias: null, args: null, concreteType: "ProfileBlock", kind: "LinkedField", name: "items", plural: !0, selections: [n, { alias: null, args: null, kind: "ScalarField", name: "block_type", storageKey: null }, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "data", plural: !1, selections: [r, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "value", storageKey: null }], type: "RichtextProfileBlockData", abstractKey: null }], storageKey: null }], storageKey: null }, l], storageKey: null }, l, a], type: "User", abstractKey: null }], storageKey: null }, a], storageKey: null }], storageKey: 'viewer_v2(s:"f3d8")' }] },
-                    params: { id: "vRz7Yom7hObecKwzBRUBiQ", metadata: {}, name: "useFetchProfileBlocks_settingsQuery", operationKind: "query", text: null },
-                };
-            })();
-            u.hash = "cb1d5a0879773e36614622dd4379b34e";
-            const d = u;
-            var m = {
-                argumentDefinitions: [],
-                kind: "Fragment",
-                metadata: null,
-                name: "useFetchProfileBlocks_profileBlocksSlice",
-                selections: [
-                    {
-                        alias: null,
-                        args: null,
-                        concreteType: "ProfileBlock",
-                        kind: "LinkedField",
-                        name: "items",
-                        plural: !0,
-                        selections: [
-                            { alias: null, args: null, kind: "ScalarField", name: "block_id", storageKey: null },
-                            { alias: null, args: null, kind: "ScalarField", name: "block_type", storageKey: null },
-                            { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "data", plural: !1, selections: [{ kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "value", storageKey: null }], type: "RichtextProfileBlockData", abstractKey: null }], storageKey: null },
-                        ],
-                        storageKey: null,
-                    },
-                ],
-                type: "ProfileBlocksSlice",
-                abstractKey: null,
-                hash: "cfa3efa58699d441f9f70469bb096ba6",
-            };
-            const p = m;
-            n(585488);
-            const g = p,
-                y = d,
-                k = c;
-        },
-        873302: (e, t, n) => {
-            n.d(t, { HM: () => g, Kh: () => m, ZU: () => d, hW: () => k, s1: () => p, uR: () => y });
-            var l = n(990242),
-                r = n.n(l),
-                a = n(111677),
-                s = n.n(a),
-                i = n(520385),
-                o = n(462166);
-            const c = s().eb7710f1,
-                u = s().bfc38bb5,
+        873302: (e, t, r) => {
+            r.d(t, { HM: () => b, Kh: () => m, ZU: () => d, hW: () => f, s1: () => p, uR: () => E });
+            var n = r(990242),
+                l = r.n(n),
+                s = r(111677),
+                a = r.n(s),
+                o = r(520385),
+                i = r(462166);
+            const c = a().eb7710f1,
+                u = a().bfc38bb5,
                 d = (e, t) => (e && t ? new Date(t, e - 1) : null),
                 m = (e, t) => {
                     if (!e) return [];
-                    const n = e?.filter((e) => e);
-                    return n
-                        ? n.map((e) => {
-                              const n = { ...e },
-                                  l = r()(o.wJ, n),
-                                  a = r()(t, l.result?.content);
-                              return { __id: n.__id, id: n.id, rest_id: n.rest_id, result: { ...l.result, content: a } };
+                    const r = e?.filter((e) => e);
+                    return r
+                        ? r.map((e) => {
+                              const r = { ...e },
+                                  n = l()(i.wJ, r),
+                                  s = l()(t, n.result?.content);
+                              return { __id: r.__id, id: r.id, rest_id: r.rest_id, result: { ...n.result, content: s } };
                           })
                         : [];
                 },
                 p = (e) => {
                     if (e)
                         return e.sort((e, t) => {
-                            const n = e.result?.content,
-                                l = t.result?.content,
-                                r = (n?.active_role ? new Date() : d(n?.end_month, n?.end_year)) ?? new Date(0),
-                                a = (l?.active_role ? new Date() : d(l?.end_month, l?.end_year)) ?? new Date(0);
-                            if (r.getFullYear() !== a.getFullYear()) return a.getFullYear() - r.getFullYear();
-                            if (r.getMonth() !== a.getMonth()) return a.getMonth() - r.getMonth();
-                            const s = d(n?.start_month, n?.start_year) ?? new Date(0),
-                                i = d(l?.start_month, l?.start_year) ?? new Date(0);
-                            return s.getFullYear() !== i.getFullYear() ? i.getFullYear() - s.getFullYear() : i.getMonth() - s.getMonth();
+                            const r = e.result?.content,
+                                n = t.result?.content,
+                                l = (r?.active_role ? new Date() : d(r?.end_month, r?.end_year)) ?? new Date(0),
+                                s = (n?.active_role ? new Date() : d(n?.end_month, n?.end_year)) ?? new Date(0);
+                            if (l.getFullYear() !== s.getFullYear()) return s.getFullYear() - l.getFullYear();
+                            if (l.getMonth() !== s.getMonth()) return s.getMonth() - l.getMonth();
+                            const a = d(r?.start_month, r?.start_year) ?? new Date(0),
+                                o = d(n?.start_month, n?.start_year) ?? new Date(0);
+                            return a.getFullYear() !== o.getFullYear() ? o.getFullYear() - a.getFullYear() : o.getMonth() - a.getMonth();
                         });
                 },
-                g = (e, t) => {
-                    let n = t.getMonth() - e.getMonth() + 1,
-                        l = t.getFullYear() - e.getFullYear();
-                    return n < 0 && (l--, (n += 12)), l && n ? `${c({ years: l })} ${u({ months: n })}` : l ? c({ years: l }) : n ? u({ months: n }) : "";
+                b = (e, t) => {
+                    let r = t.getMonth() - e.getMonth() + 1,
+                        n = t.getFullYear() - e.getFullYear();
+                    return r < 0 && (n--, (r += 12)), n && r ? `${c({ years: n })} ${u({ months: r })}` : n ? c({ years: n }) : r ? u({ months: r }) : "";
                 },
-                y = (e, t) => e?.find((e) => e?.result?.core?.section_type === t) || (t === i.NB.ABOUT ? e?.find((e) => !!(e?.result?.profile_blocks?.items_results || []).find((e) => e?.result?.core?.block_type === i.Mp.RICHTEXT)) : void 0),
-                k = (e) => !!e?.result?.profile_blocks?.total_count;
+                E = (e, t) => e?.find((e) => e?.result?.core?.section_type === t) || (t === o.NB.ABOUT ? e?.find((e) => !!(e?.result?.profile_blocks?.items_results || []).find((e) => e?.result?.core?.block_type === o.Mp.RICHTEXT)) : void 0),
+                f = (e) => !!e?.result?.profile_blocks?.total_count;
         },
-        990229: (e, t, n) => {
-            n.d(t, { Z: () => E });
-            n(136728);
-            var l = n(202784),
-                r = n(107267),
-                a = n(811176),
-                s = n(154003),
-                i = n(111677),
-                o = n.n(i),
-                c = n(149170),
-                u = n(415506),
-                d = n(443781),
-                m = n(395067),
-                p = n(725516);
-            const g = o().j7bb1a43,
-                y = o().h63a5c3c,
-                k = l.createElement(c.default, null),
-                f = ({ onClose: e, user: t }) => {
-                    const n = (0, p.z)(),
-                        s = (0, r.useHistory)(),
-                        { featureSwitches: i } = (0, d.QZ)(),
-                        o = () => ({
+        990229: (e, t, r) => {
+            r.d(t, { Z: () => h });
+            r(136728);
+            var n = r(202784),
+                l = r(107267),
+                s = r(811176),
+                a = r(154003),
+                o = r(111677),
+                i = r.n(o),
+                c = r(149170),
+                u = r(415506),
+                d = r(443781),
+                m = r(395067),
+                p = r(725516);
+            const b = i().j7bb1a43,
+                E = i().h63a5c3c,
+                f = n.createElement(c.default, null),
+                g = ({ onClose: e, user: t }) => {
+                    const r = (0, p.z)(),
+                        a = (0, l.useHistory)(),
+                        { featureSwitches: o } = (0, d.QZ)(),
+                        i = () => ({
                             Icon: u.default,
-                            text: g({ screenName: t.screen_name }),
+                            text: b({ screenName: t.screen_name }),
                             onClick: () => {
                                 e(),
                                     (() => {
                                         const e = m.C2.User;
-                                        if ((0, m.Yw)(i, e)) {
-                                            const l = (0, m.j_)({ clientReferer: window.location.pathname, isMedia: !1, isPromoted: !1, reportType: e, reportedUser: t.id_str, scribeNamespace: n.contextualScribeNamespace });
-                                            s.push({ pathname: "/i/safety/report_story_start", state: { input: { requested_variant: JSON.stringify(l) } } });
-                                        } else s.push({ pathname: `/i/report/user/${t.id_str}`, state: { clientReferer: window.location.pathname, scribeNamespace: n.contextualScribeNamespace } });
+                                        if ((0, m.Yw)(o, e)) {
+                                            const n = (0, m.j_)({ clientReferer: window.location.pathname, isMedia: !1, isPromoted: !1, reportType: e, reportedUser: t.id_str, scribeNamespace: r.contextualScribeNamespace });
+                                            a.push({ pathname: "/i/safety/report_story_start", state: { input: { requested_variant: JSON.stringify(n) } } });
+                                        } else a.push({ pathname: `/i/report/user/${t.id_str}`, state: { clientReferer: window.location.pathname, scribeNamespace: r.contextualScribeNamespace } });
                                     })();
                             },
                         });
-                    return l.createElement(a.Z, { items: [o()], onCloseRequested: e });
+                    return n.createElement(s.Z, { items: [i()], onCloseRequested: e });
                 },
-                b = ({ user: e }) => {
-                    const t = l.useCallback((t) => l.createElement(f, { onClose: t, user: e }), [e]),
-                        n = l.useMemo(() => ({ label: y }), []);
-                    return l.createElement(s.ZP, { "aria-label": y, hoverLabel: n, icon: k, renderMenu: t, type: "primaryOutlined" });
+                y = ({ user: e }) => {
+                    const t = n.useCallback((t) => n.createElement(g, { onClose: t, user: e }), [e]),
+                        r = n.useMemo(() => ({ label: E }), []);
+                    return n.createElement(a.ZP, { "aria-label": E, hoverLabel: r, icon: f, renderMenu: t, type: "primaryOutlined" });
                 },
-                E = l.memo(b);
+                h = n.memo(y);
         },
-        695431: (e, t, n) => {
-            n.d(t, { Z: () => m });
-            var l = n(71620),
-                r = n(668214),
-                a = n(390387),
-                s = n(919022);
-            const i = (e, t) => t.match.params.screenName || "",
-                o = (e, t) => s.ZP.selectIsUserNotFound(e, i(0, t)),
-                c = (e, t) => s.ZP.selectIsUserSuspended(e, i(0, t)),
-                u = (e, t) => s.ZP.selectUserSuspendMessage(e, i(0, t)),
-                d = (e, t) => s.ZP.selectByScreenName(e, i(0, t)),
-                m = (0, r.Z)()
-                    .propsFromState(() => ({ isNotFound: o, isSuspended: c, suspendMessage: u, screenName: i, user: d, viewerUserId: a._h }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, l.zr)("EXTENDED_USER_PROFILE"), fetchOneUserByScreenNameIfNeeded: s.ZP.fetchOneByScreenNameIfNeeded }))
+        695431: (e, t, r) => {
+            r.d(t, { Z: () => m });
+            var n = r(71620),
+                l = r(668214),
+                s = r(390387),
+                a = r(919022);
+            const o = (e, t) => t.match.params.screenName || "",
+                i = (e, t) => a.ZP.selectIsUserNotFound(e, o(0, t)),
+                c = (e, t) => a.ZP.selectIsUserSuspended(e, o(0, t)),
+                u = (e, t) => a.ZP.selectUserSuspendMessage(e, o(0, t)),
+                d = (e, t) => a.ZP.selectByScreenName(e, o(0, t)),
+                m = (0, l.Z)()
+                    .propsFromState(() => ({ isNotFound: i, isSuspended: c, suspendMessage: u, screenName: o, user: d, viewerUserId: s._h }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, n.zr)("EXTENDED_USER_PROFILE"), fetchOneUserByScreenNameIfNeeded: a.ZP.fetchOneByScreenNameIfNeeded }))
                     .withAnalytics({ page: "user_profile_extended_profile", component: "extended_profile" });
         },
-        728441: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => U });
-            var l = n(807896),
-                r = n(202784),
-                a = n(107267),
-                s = n(154003),
-                i = n(718e3),
-                o = n(785813),
-                c = n(825495),
-                u = n(252021),
-                d = n(736063),
-                m = n(666670),
-                p = n(72130),
-                g = n(238225),
-                y = n(535338),
-                k = n(416699),
-                f = n(484163),
-                b = n(972796),
-                E = n(21437),
-                _ = n(220544),
-                h = n(695431),
-                Z = n(990229),
-                v = (n(571372), n(301503)),
-                F = n(325686),
-                x = n(277660),
-                I = n.n(x),
-                S = n(989272),
-                P = n(524496),
-                C = n(392237),
-                w = n(187669),
-                T = n(949626),
-                B = n(478414),
-                R = n(520385);
-            const N = ({ profileBlocksRef: e }) => {
-                    const t = I()(g.m1, e),
-                        n = t?.items?.find((e) => e?.block_type === R.Mp.RICHTEXT),
-                        l = n?.data?.value || "",
-                        a = r.useMemo(() => {
+        728441: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => O });
+            var n = r(807896),
+                l = r(202784),
+                s = r(107267),
+                a = r(154003),
+                o = r(718e3),
+                i = r(785813),
+                c = r(825495),
+                u = r(252021),
+                d = r(736063),
+                m = r(666670),
+                p = r(72130),
+                b = r(238225),
+                E = r(535338),
+                f = r(416699),
+                g = r(484163),
+                y = r(972796),
+                h = r(21437),
+                _ = r(220544),
+                Z = r(695431),
+                k = r(990229),
+                v = (r(571372), r(301503)),
+                x = r(325686),
+                I = r(277660),
+                w = r.n(I),
+                C = r(989272),
+                N = r(524496),
+                S = r(392237),
+                P = r(187669),
+                R = r(949626),
+                T = r(478414),
+                F = r(520385);
+            const B = ({ profileBlocksRef: e }) => {
+                    const t = w()(b.m1, e),
+                        r = t?.items?.find((e) => e?.block_type === F.Mp.RICHTEXT),
+                        n = r?.data?.value || "",
+                        s = l.useMemo(() => {
                             try {
-                                const e = JSON.parse(l);
+                                const e = JSON.parse(n);
                                 if (!e.entityMap || !e.blocks) throw new Error("Malformed RawDraftContentState");
                                 return e;
                             } catch (e) {}
-                        }, [l]);
+                        }, [n]);
                     return (
-                        (0, w.q)(() => {
-                            (0, S.fH)((0, B.yW)(B.Hx, B.K), B.Hx);
+                        (0, P.q)(() => {
+                            (0, C.fH)((0, T.yW)(T.Hx, T.K), T.Hx);
                         }),
-                        r.createElement(F.Z, { style: K.root }, a && (0, v.convertFromRaw)(a).hasText() ? r.createElement(T.Z, { className: B.Hx }, r.createElement(F.Z, { style: K.richText }, r.createElement(P.Z, { contentState: a, paragraphFontSizeOverride: B.K.paragraphFontSize }))) : null)
+                        l.createElement(x.Z, { style: M.root }, s && (0, v.convertFromRaw)(s).hasText() ? l.createElement(R.Z, { className: T.Hx }, l.createElement(x.Z, { style: M.richText }, l.createElement(N.Z, { contentState: s, paragraphFontSizeOverride: T.K.paragraphFontSize }))) : null)
                     );
                 },
-                K = C.default.create((e) => ({ root: { paddingVertical: e.spaces.space20 }, flexRow: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space16 }, flexCol: { display: "flex", flexDirection: "column" }, flexOne: { flex: 1 }, avatar: { width: 90, height: 90 }, richText: { color: e.colors.text, padding: e.spaces.space16 } })),
-                L = r.memo(N),
-                M = ({ analytics: e, hasProfileBlocks: t, profileBlocksRef: n, screenName: l, user: d, viewerUserId: m }) => {
-                    const g = (0, a.useHistory)();
-                    r.useEffect(() => {
+                M = S.default.create((e) => ({ root: { paddingVertical: e.spaces.space20 }, flexRow: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space16 }, flexCol: { display: "flex", flexDirection: "column" }, flexOne: { flex: 1 }, avatar: { width: 90, height: 90 }, richText: { color: e.colors.text, padding: e.spaces.space16 } })),
+                H = l.memo(B),
+                D = ({ analytics: e, hasProfileBlocks: t, profileBlocksRef: r, screenName: n, user: d, viewerUserId: m }) => {
+                    const b = (0, s.useHistory)();
+                    l.useEffect(() => {
                         d?.id_str && e.scribe({ ...(0, p.Zi)(d?.id_str, { version: 1 }) });
                     }, [e, d?.id_str]);
-                    const y = r.useCallback(() => {
+                    const E = l.useCallback(() => {
                         e.scribe({ ...(0, p.he)({ version: 1 }) });
                     }, [e]);
-                    return r.createElement(u.Z, { backLocation: `/${l}`, history: g, primaryContent: d ? (t ? r.createElement(L, { profileBlocksRef: n }) : r.createElement(k.Z, { header: "This user does not have an expanded bio", message: "Try searching for another.", screenName: l })) : null, rightControl: d?.id_str === m ? r.createElement(s.ZP, { link: "/settings/bio", onClick: y, size: "xSmall", type: "primaryOutlined" }, "Edit") : d ? r.createElement(Z.Z, { user: d }) : null, sidebarContent: r.createElement(i.Z, null), subtitle: `@${l}`, title: (0, o.Z)(d), titleIconCell: (0, c.Z)(d) });
+                    return l.createElement(u.Z, { backLocation: `/${n}`, history: b, primaryContent: d ? (t ? l.createElement(H, { profileBlocksRef: r }) : l.createElement(f.Z, { header: "This user does not have an expanded bio", message: "Try searching for another.", screenName: n })) : null, rightControl: d?.id_str === m ? l.createElement(a.ZP, { link: "/settings/bio", onClick: E, size: "xSmall", type: "primaryOutlined" }, "Edit") : d ? l.createElement(k.Z, { user: d }) : null, sidebarContent: l.createElement(o.Z, null), subtitle: `@${n}`, title: (0, i.Z)(d), titleIconCell: (0, c.Z)(d) });
                 },
-                D = (e) => {
+                U = (e) => {
                     const { screenName: t } = e,
-                        { user_result_by_screen_name: n } = (0, y.p)(g.kI, { screenName: t }),
-                        a = n?.result?.profile_blocks,
-                        s = !!n?.result?.has_profile_blocks;
-                    return t && a ? r.createElement(M, (0, l.Z)({ hasProfileBlocks: s, profileBlocksRef: a }, e)) : null;
+                        { user_result_by_screen_name: r } = (0, E.p)(b.kI, { screenName: t }),
+                        s = r?.result?.profile_blocks,
+                        a = !!r?.result?.has_profile_blocks;
+                    return t && s ? l.createElement(D, (0, n.Z)({ hasProfileBlocks: a, profileBlocksRef: s }, e)) : null;
                 },
-                H = { context: "EXTENDED_USER_PROFILE" },
-                U = (0, h.Z)((e) => {
-                    const { createLocalApiErrorHandler: t, fetchOneUserByScreenNameIfNeeded: n, isNotFound: l, isSuspended: a, screenName: s, suspendMessage: i, user: o, viewerUserId: c } = e;
+                V = { context: "EXTENDED_USER_PROFILE" },
+                O = (0, Z.Z)((e) => {
+                    const { createLocalApiErrorHandler: t, fetchOneUserByScreenNameIfNeeded: r, isNotFound: n, isSuspended: s, screenName: a, suspendMessage: o, user: i, viewerUserId: c } = e;
                     return (
-                        r.useEffect(() => {
-                            s && n(s).catch(t(m.F));
-                        }, [t, n, s]),
-                        s && o ? (a ? r.createElement(_.i, { screenName: s, suspendMessage: i }) : o.blocked_by ? r.createElement(b.T, { screenName: s }) : !o.protected || (o && c === o.id_str) || o.following ? (l ? r.createElement(f.Y, { screenName: s }) : r.createElement(d.H, { errorConfig: H }, r.createElement(D, e))) : r.createElement(E.X, { screenName: s })) : null
+                        l.useEffect(() => {
+                            a && r(a).catch(t(m.F));
+                        }, [t, r, a]),
+                        a && i ? (s ? l.createElement(_.i, { screenName: a, suspendMessage: o }) : i.blocked_by ? l.createElement(y.T, { screenName: a }) : !i.protected || (i && c === i.id_str) || i.following ? (n ? l.createElement(g.Y, { screenName: a }) : l.createElement(d.H, { errorConfig: V }, l.createElement(U, e))) : l.createElement(h.X, { screenName: a })) : null
                     );
                 });
         },
-        806208: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => L });
-            var l = n(807896),
-                r = n(202784),
-                a = n(325686),
-                s = n(277660),
-                i = n.n(s),
-                o = n(154003),
-                c = n(392237),
-                u = n(718e3),
-                d = n(991617),
-                m = n(785813),
-                p = n(825495),
-                g = n(485822),
-                y = n(164349),
-                k = n(252021),
-                f = n(736063),
-                b = n(666670),
-                E = n(72130),
-                _ = n(520385),
-                h = n(462166),
-                Z = n(873302),
-                v = n(535338),
-                F = n(416699),
-                x = n(484163),
-                I = n(972796),
-                S = n(21437),
-                P = n(220544),
-                C = n(695431),
-                w = n(990229);
-            const T = ({ analytics: e, expandedProfile: t, hasProfileBlocks: n, history: l, screenName: s, user: i, viewerUserId: c }) => {
-                    r.useEffect(() => {
-                        i?.id_str && e.scribe({ ...(0, E.Zi)(i?.id_str, { version: 2 }) });
-                    }, [e, i?.id_str]);
-                    const f = t?.result?.profile_sections?.items_results,
-                        b = (0, Z.uR)(f, _.NB.ABOUT),
-                        h = (0, Z.uR)(f, _.NB.WORK_EXPERIENCE),
-                        v = (0, Z.hW)(b),
-                        x = (0, Z.hW)(h),
-                        I = r.useCallback(() => {
-                            e.scribe({ ...(0, E.he)({ version: 2 }) });
+        806208: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => H });
+            var n = r(807896),
+                l = r(202784),
+                s = r(325686),
+                a = r(277660),
+                o = r.n(a),
+                i = r(154003),
+                c = r(392237),
+                u = r(718e3),
+                d = r(991617),
+                m = r(785813),
+                p = r(825495),
+                b = r(485822),
+                E = r(164349),
+                f = r(252021),
+                g = r(736063),
+                y = r(666670),
+                h = r(72130),
+                _ = r(520385),
+                Z = r(462166),
+                k = r(873302),
+                v = r(535338),
+                x = r(416699),
+                I = r(484163),
+                w = r(972796),
+                C = r(21437),
+                N = r(220544),
+                S = r(695431),
+                P = r(990229);
+            const R = ({ analytics: e, expandedProfile: t, hasProfileBlocks: r, history: n, screenName: a, user: o, viewerUserId: c }) => {
+                    l.useEffect(() => {
+                        o?.id_str && e.scribe({ ...(0, h.Zi)(o?.id_str, { version: 2 }) });
+                    }, [e, o?.id_str]);
+                    const g = t?.result?.profile_sections?.items_results,
+                        y = (0, k.uR)(g, _.NB.ABOUT),
+                        Z = (0, k.uR)(g, _.NB.WORK_EXPERIENCE),
+                        v = (0, k.hW)(y),
+                        I = (0, k.hW)(Z),
+                        w = l.useCallback(() => {
+                            e.scribe({ ...(0, h.he)({ version: 2 }) });
                         }, [e]);
-                    return r.createElement(k.Z, { backLocation: `/${s}`, history: l, primaryContent: i ? (n ? r.createElement(a.Z, { style: B.root }, r.createElement(d.Fo.Provider, { value: { userId: c, userQueryId: i.id_str } }, r.createElement(d.bQ.Provider, { value: { ...d.Y_, hasAboutSection: v, hasWorkHistorySection: x, sectionId: b?.rest_id?.section_id, sectionType: _.NB.ABOUT, blockCount: b?.result?.profile_blocks?.total_count || 0, sectionQueryId: b?.id, sectionVisibility: b?.result?.core?.visibility } }, r.createElement(g.Z, { isEditing: !1, section: b })), r.createElement(d.bQ.Provider, { value: { ...d.Y_, hasAboutSection: v, hasWorkHistorySection: x, sectionId: h?.rest_id?.section_id, sectionType: _.NB.WORK_EXPERIENCE, blockCount: h?.result?.profile_blocks?.total_count || 0, sectionQueryId: h?.id, sectionVisibility: h?.result?.core?.visibility } }, r.createElement(y.Z, { isEditing: !1, section: h })))) : r.createElement(F.Z, { header: "This user does not have an expanded bio", message: "Try searching for another.", screenName: s })) : null, rightControl: i?.id_str === c ? r.createElement(o.ZP, { link: "/settings/bio", onClick: I, size: "xSmall", type: "primaryOutlined" }, "Edit") : i ? r.createElement(w.Z, { user: i }) : null, sidebarContent: r.createElement(u.Z, null), subtitle: `@${s}`, title: (0, m.Z)(i), titleIconCell: (0, p.Z)(i) });
+                    return l.createElement(f.Z, { backLocation: `/${a}`, history: n, primaryContent: o ? (r ? l.createElement(s.Z, { style: T.root }, l.createElement(d.Fo.Provider, { value: { userId: c, userQueryId: o.id_str } }, l.createElement(d.bQ.Provider, { value: { ...d.Y_, hasAboutSection: v, hasWorkHistorySection: I, sectionId: y?.rest_id?.section_id, sectionType: _.NB.ABOUT, blockCount: y?.result?.profile_blocks?.total_count || 0, sectionQueryId: y?.id, sectionVisibility: y?.result?.core?.visibility } }, l.createElement(b.Z, { isEditing: !1, section: y })), l.createElement(d.bQ.Provider, { value: { ...d.Y_, hasAboutSection: v, hasWorkHistorySection: I, sectionId: Z?.rest_id?.section_id, sectionType: _.NB.WORK_EXPERIENCE, blockCount: Z?.result?.profile_blocks?.total_count || 0, sectionQueryId: Z?.id, sectionVisibility: Z?.result?.core?.visibility } }, l.createElement(E.Z, { isEditing: !1, section: Z })))) : l.createElement(x.Z, { header: "This user does not have an expanded bio", message: "Try searching for another.", screenName: a })) : null, rightControl: o?.id_str === c ? l.createElement(i.ZP, { link: "/settings/bio", onClick: w, size: "xSmall", type: "primaryOutlined" }, "Edit") : o ? l.createElement(P.Z, { user: o }) : null, sidebarContent: l.createElement(u.Z, null), subtitle: `@${a}`, title: (0, m.Z)(o), titleIconCell: (0, p.Z)(o) });
                 },
-                B = c.default.create((e) => ({ root: { marginBottom: e.componentDimensions.appBarHeightPx } })),
-                R = ({ expandedProfile: e, hasProfileBlocks: t, ...n }) => {
-                    const a = i()(h.cH, e);
-                    return a ? r.createElement(T, (0, l.Z)({ expandedProfile: a, hasProfileBlocks: t }, n)) : null;
+                T = c.default.create((e) => ({ root: { marginBottom: e.componentDimensions.appBarHeightPx } })),
+                F = ({ expandedProfile: e, hasProfileBlocks: t, ...r }) => {
+                    const s = o()(Z.cH, e);
+                    return s ? l.createElement(R, (0, n.Z)({ expandedProfile: s, hasProfileBlocks: t }, r)) : null;
                 },
-                N = (e) => {
+                B = (e) => {
                     const { screenName: t } = e,
-                        { user_result_by_screen_name: n } = (0, v.p)(h.Sp, { screenName: t }),
-                        a = !!n?.result?.has_profile_blocks,
-                        s = n?.result?.expanded_profile_results;
-                    return t && s ? r.createElement(R, (0, l.Z)({ expandedProfile: s, hasProfileBlocks: a }, e)) : null;
+                        { user_result_by_screen_name: r } = (0, v.p)(Z.Sp, { screenName: t }),
+                        s = !!r?.result?.has_profile_blocks,
+                        a = r?.result?.expanded_profile_results;
+                    return t && a ? l.createElement(F, (0, n.Z)({ expandedProfile: a, hasProfileBlocks: s }, e)) : null;
                 },
-                K = { context: "EXTENDED_USER_PROFILE_V2" },
-                L = (0, C.Z)((e) => {
-                    const { createLocalApiErrorHandler: t, fetchOneUserByScreenNameIfNeeded: n, isNotFound: l, isSuspended: a, screenName: s, suspendMessage: i, user: o, viewerUserId: c } = e;
+                M = { context: "EXTENDED_USER_PROFILE_V2" },
+                H = (0, S.Z)((e) => {
+                    const { createLocalApiErrorHandler: t, fetchOneUserByScreenNameIfNeeded: r, isNotFound: n, isSuspended: s, screenName: a, suspendMessage: o, user: i, viewerUserId: c } = e;
                     return (
-                        r.useEffect(() => {
-                            s && n(s).catch(t(b.F));
-                        }, [t, n, s]),
-                        s && o ? (a ? r.createElement(P.i, { screenName: s, suspendMessage: i }) : o.blocked_by ? r.createElement(I.T, { screenName: s }) : !o.protected || (o && c === o.id_str) || o.following ? (l ? r.createElement(x.Y, { screenName: s }) : r.createElement(f.H, { errorConfig: K }, r.createElement(N, e))) : r.createElement(S.X, { screenName: s })) : null
+                        l.useEffect(() => {
+                            a && r(a).catch(t(y.F));
+                        }, [t, r, a]),
+                        a && i ? (s ? l.createElement(N.i, { screenName: a, suspendMessage: o }) : i.blocked_by ? l.createElement(w.T, { screenName: a }) : !i.protected || (i && c === i.id_str) || i.following ? (n ? l.createElement(I.Y, { screenName: a }) : l.createElement(g.H, { errorConfig: M }, l.createElement(B, e))) : l.createElement(C.X, { screenName: a })) : null
                     );
                 });
         },
-        416699: (e, t, n) => {
-            n.d(t, { Z: () => g });
-            var l = n(807896),
-                r = n(202784),
-                a = n(457311),
-                s = n(392237),
-                i = n(668214),
-                o = n(919022);
-            const c = (e, t) => !!t.screenName && o.ZP.selectIsUserSuspended(e, t.screenName),
+        416699: (e, t, r) => {
+            r.d(t, { Z: () => b });
+            var n = r(807896),
+                l = r(202784),
+                s = r(457311),
+                a = r(392237),
+                o = r(668214),
+                i = r(919022);
+            const c = (e, t) => !!t.screenName && i.ZP.selectIsUserSuspended(e, t.screenName),
                 u = (e, t) => {
-                    const n = t.screenName ? o.ZP.selectByScreenName(e, t.screenName) : void 0;
-                    return n?.blocking;
+                    const r = t.screenName ? i.ZP.selectByScreenName(e, t.screenName) : void 0;
+                    return r?.blocking;
                 },
-                d = (0, i.Z)().propsFromState(() => ({ isBlocking: u, isSuspended: c })),
+                d = (0, o.Z)().propsFromState(() => ({ isBlocking: u, isSuspended: c })),
                 m = (e) => {
-                    const { isBlocking: t, isSuspended: n, screenName: s, ...i } = e;
-                    return r.createElement(r.Fragment, null, null, r.createElement(a.Z, (0, l.Z)({}, i, { style: [p.root, p.verticalPadding] })));
+                    const { isBlocking: t, isSuspended: r, screenName: a, ...o } = e;
+                    return l.createElement(l.Fragment, null, null, l.createElement(s.Z, (0, n.Z)({}, o, { style: [p.root, p.verticalPadding] })));
                 },
-                p = s.default.create((e) => ({ root: { backgroundColor: s.default.theme.colors.cellBackground, paddingHorizontal: s.default.theme.spaces.space20 }, verticalPadding: { paddingVertical: s.default.theme.spaces.space40 } })),
-                g = d(r.memo(m));
+                p = a.default.create((e) => ({ root: { backgroundColor: a.default.theme.colors.cellBackground, paddingHorizontal: a.default.theme.spaces.space20 }, verticalPadding: { paddingVertical: a.default.theme.spaces.space40 } })),
+                b = d(l.memo(m));
         },
-        484163: (e, t, n) => {
-            n.d(t, { Y: () => c, Z: () => u });
-            var l = n(202784),
-                r = n(111677),
-                a = n.n(r),
-                s = n(416699);
-            const i = a().c9a1cb5e,
-                o = a().e7b201de,
+        484163: (e, t, r) => {
+            r.d(t, { Y: () => c, Z: () => u });
+            var n = r(202784),
+                l = r(111677),
+                s = r.n(l),
+                a = r(416699);
+            const o = s().c9a1cb5e,
+                i = s().e7b201de,
                 c = (e) => {
                     const { screenName: t } = e;
-                    return l.createElement(s.Z, { header: i, message: o, screenName: t });
+                    return n.createElement(a.Z, { header: o, message: i, screenName: t });
                 },
-                u = l.memo(c);
+                u = n.memo(c);
         },
-        972796: (e, t, n) => {
-            n.d(t, { T: () => d, Z: () => m });
-            var l = n(202784),
-                r = n(688715),
-                a = n(731708),
-                s = n(111677),
-                i = n.n(s),
-                o = n(416699);
-            const c = i().ica87fde,
-                u = (0, r.ju)("https://support.x.com/articles/20172060"),
+        972796: (e, t, r) => {
+            r.d(t, { T: () => d, Z: () => m });
+            var n = r(202784),
+                l = r(688715),
+                s = r(731708),
+                a = r(111677),
+                o = r.n(a),
+                i = r(416699);
+            const c = o().ica87fde,
+                u = (0, l.ju)("https://support.x.com/articles/20172060"),
                 d = (e) => {
                     const { screenName: t } = e,
-                        n = l.useMemo(() => l.createElement(i().I18NFormatMessage, { $i18n: "e6264621", screenName: t }, l.createElement(a.ZP, { link: u }, i().c7ec6faf)), [t]);
-                    return l.createElement(o.Z, { header: c, message: n, screenName: t });
+                        r = n.useMemo(() => n.createElement(o().I18NFormatMessage, { $i18n: "e6264621", screenName: t }, n.createElement(s.ZP, { link: u }, o().c7ec6faf)), [t]);
+                    return n.createElement(i.Z, { header: c, message: r, screenName: t });
                 },
-                m = l.memo(d);
+                m = n.memo(d);
         },
-        21437: (e, t, n) => {
-            n.d(t, { X: () => d, Z: () => m });
-            var l = n(202784),
-                r = n(688715),
-                a = n(731708),
-                s = n(111677),
-                i = n.n(s),
-                o = n(416699);
-            const c = i().bd598c70,
-                u = (0, r.ju)("https://support.x.com/articles/14016"),
+        21437: (e, t, r) => {
+            r.d(t, { X: () => d, Z: () => m });
+            var n = r(202784),
+                l = r(688715),
+                s = r(731708),
+                a = r(111677),
+                o = r.n(a),
+                i = r(416699);
+            const c = o().bd598c70,
+                u = (0, l.ju)("https://support.x.com/articles/14016"),
                 d = (e) => {
                     const { screenName: t } = e,
-                        n = l.useMemo(() => l.createElement(i().I18NFormatMessage, { $i18n: "i1824ce3", screenName: t }, l.createElement(a.ZP, { link: u }, i().e617164b)), [t]);
-                    return l.createElement(o.Z, { header: c, message: n, screenName: t });
+                        r = n.useMemo(() => n.createElement(o().I18NFormatMessage, { $i18n: "i1824ce3", screenName: t }, n.createElement(s.ZP, { link: u }, o().e617164b)), [t]);
+                    return n.createElement(i.Z, { header: c, message: r, screenName: t });
                 },
-                m = l.memo(d);
+                m = n.memo(d);
         },
-        220544: (e, t, n) => {
-            n.d(t, { Z: () => m, i: () => d });
-            var l = n(202784),
-                r = n(731708),
-                a = n(111677),
-                s = n.n(a),
-                i = n(686689),
-                o = n(416699);
-            const c = s().g8475f82,
-                u = l.createElement(s().I18NFormatMessage, { $i18n: "da9d52d7" }, l.createElement(r.ZP, { link: "https://support.x.com/articles/18311" }, s().j5e1cf59)),
+        220544: (e, t, r) => {
+            r.d(t, { Z: () => m, i: () => d });
+            var n = r(202784),
+                l = r(731708),
+                s = r(111677),
+                a = r.n(s),
+                o = r(686689),
+                i = r(416699);
+            const c = a().g8475f82,
+                u = n.createElement(a().I18NFormatMessage, { $i18n: "da9d52d7" }, n.createElement(l.ZP, { link: "https://support.x.com/articles/18311" }, a().j5e1cf59)),
                 d = (e) => {
-                    const { screenName: t, suspendHeader: n, suspendMessage: r } = e,
-                        a = n ? l.createElement(i.Z, { entities: n.entities, rtl: n.rtl, text: n.text }) : c,
-                        s = r ? l.createElement(i.Z, { entities: r.entities, rtl: r.rtl, text: r.text }) : u;
-                    return l.createElement(o.Z, { header: a, message: s, screenName: t });
+                    const { screenName: t, suspendHeader: r, suspendMessage: l } = e,
+                        s = r ? n.createElement(o.Z, { entities: r.entities, rtl: r.rtl, text: r.text }) : c,
+                        a = l ? n.createElement(o.Z, { entities: l.entities, rtl: l.rtl, text: l.text }) : u;
+                    return n.createElement(i.Z, { header: s, message: a, screenName: t });
                 },
-                m = l.memo(d);
+                m = n.memo(d);
         },
-        524496: (e, t, n) => {
-            n.d(t, { Z: () => _ });
-            n(136728);
-            var l = n(202784),
-                r = n(301503),
-                a = n(325686),
-                s = n(595088),
-                i = n(516951),
-                o = n(731708),
-                c = n(779802),
-                u = n(537392),
-                d = n(989272),
-                m = n(925873),
-                p = n(202253),
-                g = n(786475),
-                y = n(392237),
-                k = n(135904);
-            const f = { [c.P7.atomic]: { element: "section" }, [c.P7.header1]: { element: "h1", wrapper: l.createElement(o.ZP, null) }, [c.P7.header2]: { element: "h2", wrapper: l.createElement(o.ZP, null) } },
-                b = (0, s.Z)(f).reduce((e, [t, n]) => e.set(t, n), r.DefaultDraftBlockRenderMap);
-            let E = !1;
-            const _ = l.memo(function (e) {
-                    const { componentByType: t, contentState: n, onScribeEvent: s, paragraphFontSizeOverride: o } = e;
-                    l.useEffect(() => {
-                        E || (d.fH(k.c, k.n), (E = !0));
+        524496: (e, t, r) => {
+            r.d(t, { Z: () => _ });
+            r(136728);
+            var n = r(202784),
+                l = r(301503),
+                s = r(325686),
+                a = r(595088),
+                o = r(516951),
+                i = r(731708),
+                c = r(779802),
+                u = r(537392),
+                d = r(989272),
+                m = r(925873),
+                p = r(202253),
+                b = r(786475),
+                E = r(392237),
+                f = r(135904);
+            const g = { [c.P7.atomic]: { element: "section" }, [c.P7.header1]: { element: "h1", wrapper: n.createElement(i.ZP, null) }, [c.P7.header2]: { element: "h2", wrapper: n.createElement(i.ZP, null) } },
+                y = (0, a.Z)(g).reduce((e, [t, r]) => e.set(t, r), l.DefaultDraftBlockRenderMap);
+            let h = !1;
+            const _ = n.memo(function (e) {
+                    const { componentByType: t, contentState: r, onScribeEvent: a, paragraphFontSizeOverride: i } = e;
+                    n.useEffect(() => {
+                        h || (d.fH(f.c, f.n), (h = !0));
                     }, []);
-                    const y = [(0, p.ez)(s, o), p.aF, p.RU];
-                    e.disable_entityLinkDecorator || y.push((0, p.NA)(s, o));
-                    const f = m.Z.initEditorState(n, { decorators: y });
-                    let _ = i.Z;
+                    const E = [(0, p.ez)(a, i), p.aF, p.RU];
+                    e.disable_entityLinkDecorator || E.push((0, p.NA)(a, i));
+                    const g = m.Z.initEditorState(r, { decorators: E });
+                    let _ = o.Z;
                     return (
                         t &&
                             (_ = (e) => {
-                                const n = e.getType();
-                                return t[n] || null;
+                                const r = e.getType();
+                                return t[r] || null;
                             }),
-                        l.createElement(u.ZP, null, ({ containerWidth: e }) => l.createElement(a.Z, { style: h.fontFamily }, l.createElement(r.Editor, { blockRenderMap: b, blockRendererFn: _, blockStyleFn: (0, c.su)(g.Z.isNarrowScreenWidth(e)), editorState: f, onChange: i.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
+                        n.createElement(u.ZP, null, ({ containerWidth: e }) => n.createElement(s.Z, { style: Z.fontFamily }, n.createElement(l.Editor, { blockRenderMap: y, blockRendererFn: _, blockStyleFn: (0, c.su)(b.Z.isNarrowScreenWidth(e)), editorState: g, onChange: o.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
                     );
                 }),
-                h = y.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
+                Z = E.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ExtendedUserProfile.c584154a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ExtendedUserProfile.7b41697a.js.map

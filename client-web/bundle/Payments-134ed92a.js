@@ -32,8 +32,8 @@
                 y = { context: "PaymentsActionMenu" },
                 I = ({ onOpen: e, reportedHandle: t, transactionId: n }) => {
                     const o = (0, i.z)(),
-                        m = (0, l.b)({ txId: n }),
-                        u = (0, l.v)({ txId: n, reportedHandle: t }),
+                        m = (0, l.bR)({ txId: n }),
+                        u = (0, l.vN)({ txId: n, reportedHandle: t }),
                         y = r.useCallback(
                             ({ action: e, element: t }) => {
                                 o.scribe({ element: t, action: e });
@@ -512,4 +512,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-134ed92a.84623a6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-134ed92a.ae305a2a.js.map

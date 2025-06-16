@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.ReaderMode-6107ac1a", "loader.AudioContextVoiceMedia"],
+    ["bundle.ReaderMode-6107ac1a", "loader.AudioContextVoiceMedia", "icons/IconBook-js"],
     {
         169576: (e, t, o) => {
             o.d(t, { c: () => f, Z: () => y });
@@ -28,12 +28,12 @@
                     const C = () => {
                             p.scribe({ component: y, action: "click", element: "card" });
                         },
-                        { backgroundcolor: _, buttonSize: v, cardWidth: w, marginbottom: T, textcolor: Z } = u ?? {},
-                        x = _ ? i.default.theme.colors[_] : i.default.theme.colors.gray0,
+                        { backgroundcolor: v, buttonSize: _, cardWidth: w, marginbottom: T, textcolor: Z } = u ?? {},
+                        x = v ? i.default.theme.colors[v] : i.default.theme.colors.gray0,
                         k = Z ? i.default.theme.colors[Z] : i.default.theme.colors.gray900,
                         E = T ? i.default.theme.spaces[T] : i.default.theme.spaces.space16,
                         S = { [f.MarchMadness]: { header: g.header, description: g.description, legalDisclaimer: g.legalDisclaimer, buttonText: g.buttonText, image: g.image } }[o];
-                    return h ? n.createElement(r.Z, { interactiveStyles: null, link: t, onPress: C, style: b.bannerContainer }, n.createElement(a.Z, { resizeMode: "contain", source: { uri: "light" === i.default.theme.paletteName ? S.image.lightMode : S.image.darkMode }, style: { height: 85 } })) : n.createElement(s.Z, { style: [b.card, { backgroundColor: x }, { maxWidth: w }, { marginBottom: E }], testID: "popupCard" }, n.createElement(s.Z, { style: e ? b.horizontalContent : b.verticalContent }, n.createElement(s.Z, { style: e ? b.textContainer : null }, n.createElement(l.ZP, { size: "headline2", style: [b.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, S.header), n.createElement(l.ZP, { size: "subtext1", style: [b.popupDescription, { color: k }] }, S.description, " ", e ? null : S.legalDisclaimer)), n.createElement(s.Z, { style: b.buttonContainer }, n.createElement(c.ZP, { backgroundColor: "light" === i.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: C, size: "medium", style: [b.popupButton, { width: v }] }, S.buttonText), e && n.createElement(l.ZP, { size: "subtext3", style: [b.legalDisclaimer, { color: k }] }, S.legalDisclaimer))));
+                    return h ? n.createElement(r.Z, { interactiveStyles: null, link: t, onPress: C, style: b.bannerContainer }, n.createElement(a.Z, { resizeMode: "contain", source: { uri: "light" === i.default.theme.paletteName ? S.image.lightMode : S.image.darkMode }, style: { height: 85 } })) : n.createElement(s.Z, { style: [b.card, { backgroundColor: x }, { maxWidth: w }, { marginBottom: E }], testID: "popupCard" }, n.createElement(s.Z, { style: e ? b.horizontalContent : b.verticalContent }, n.createElement(s.Z, { style: e ? b.textContainer : null }, n.createElement(l.ZP, { size: "headline2", style: [b.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, S.header), n.createElement(l.ZP, { size: "subtext1", style: [b.popupDescription, { color: k }] }, S.description, " ", e ? null : S.legalDisclaimer)), n.createElement(s.Z, { style: b.buttonContainer }, n.createElement(c.ZP, { backgroundColor: "light" === i.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: C, size: "medium", style: [b.popupButton, { width: _ }] }, S.buttonText), e && n.createElement(l.ZP, { size: "subtext3", style: [b.legalDisclaimer, { color: k }] }, S.legalDisclaimer))));
                 },
                 b = i.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
         },
@@ -74,12 +74,12 @@
                 y = o(111677),
                 b = o.n(y),
                 C = o(965728);
-            const _ = { startX: 0, startY: 0 };
-            class v extends n.Component {
+            const v = { startX: 0, startY: 0 };
+            class _ extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._pullDistanceY = 0),
-                        (this._pullInfo = { ..._ }),
+                        (this._pullInfo = { ...v }),
                         (this._handleTouchStart = (e) => {
                             (this._pullInfo.startX = e.touches[0].clientX), (this._pullInfo.startY = e.touches[0].clientY);
                         }),
@@ -101,7 +101,7 @@
                             e && e(), this._resetPullInfo();
                         }),
                         (this._resetPullInfo = () => {
-                            this._updatePullPosition(0), (this._pullInfo = { ..._ });
+                            this._updatePullPosition(0), (this._pullInfo = { ...v });
                         });
                 }
                 render() {
@@ -110,7 +110,7 @@
                     return n.createElement(s.Z, { onLayout: o, onTouchEnd: r ? this._handleTouchEnd : void 0, onTouchMove: r ? this._handleTouchMove : void 0, onTouchStart: r ? this._handleTouchStart : void 0, style: i, testID: "swipe-to-dismiss" }, e);
                 }
             }
-            const w = v;
+            const w = _;
             var T = o(992942),
                 Z = o(7022),
                 x = o(309854),
@@ -150,7 +150,7 @@
                 M = n.createElement(E.Z, { ariaValueText: P, indeterminate: !0, style: D.progressBar }),
                 R = I;
             var z = o(310453);
-            class F extends n.PureComponent {
+            class B extends n.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this._handlePlaybackStarted = () => {
@@ -162,7 +162,7 @@
                 }
                 render() {
                     const { style: e } = this.props;
-                    return n.createElement(s.Z, { style: e }, n.createElement(s.Z, { style: B.root }, this._renderVideo()));
+                    return n.createElement(s.Z, { style: e }, n.createElement(s.Z, { style: F.root }, this._renderVideo()));
                 }
                 componentDidUpdate(e) {
                     const { isCurrentlyDisplayed: t } = this.props;
@@ -175,30 +175,30 @@
                     return (a.aspectRatio = s / r), n.createElement(z.Z, (0, m.Z)({}, a, { onPlaybackStarted: this._handlePlaybackStarted, playbackCoordination: null, promotedContent: e, setPlayer: this._setPlayer, withPostPlayback: !0 }));
                 }
             }
-            const B = l.default.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center" } }),
-                L = F,
+            const F = l.default.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center" } }),
+                L = B,
                 A = b().ac85c6b2,
                 V = (e) => {
                     const { businessAvatar: t = !1, isAvatar: o, isCurrentlyDisplayed: r, mediaDetail: a, onDismiss: l, onTap: c, promotedContent: d, videoId: u, ...h } = e,
                         [p, y] = n.useState(null),
-                        [b, _] = n.useState({ width: 0, height: 0 }),
-                        { isModal: v } = n.useContext(g.Z),
+                        [b, v] = n.useState({ width: 0, height: 0 }),
+                        { isModal: _ } = n.useContext(g.Z),
                         { height: T, width: Z } = a.original_info || {},
                         { height: x, width: k } = b,
-                        E = v || o ? (0, C.I5)({ mediaWidth: Z, mediaHeight: T, containerWidth: k, containerHeight: x }, o) : W.mediaItem;
+                        E = _ || o ? (0, C.I5)({ mediaWidth: Z, mediaHeight: T, containerWidth: k, containerHeight: x }, o) : W.mediaItem;
                     return n.createElement(
                         w,
                         {
                             onDismiss: l,
                             onLayout:
-                                v || o
+                                _ || o
                                     ? (e) => {
                                           const {
                                               nativeEvent: {
                                                   layout: { height: t, width: o },
                                               },
                                           } = e;
-                                          (o === b.width && t === b.height) || _({ width: o, height: t });
+                                          (o === b.width && t === b.height) || v({ width: o, height: t });
                                       }
                                     : void 0,
                             style: W.root,
@@ -347,7 +347,7 @@
                         });
                 }
                 render() {
-                    const { backgroundColor: e, children: t, footerButtons: o, forceDominantButtonColor: l, forceModalStyle: c, hideButtons: d, mediaItem: u, mediaUrl: g, overlayFooter: b, topRightButton: v } = this.props,
+                    const { backgroundColor: e, children: t, footerButtons: o, forceDominantButtonColor: l, forceModalStyle: c, hideButtons: d, mediaItem: u, mediaUrl: g, overlayFooter: b, topRightButton: _ } = this.props,
                         { isModal: w } = this.context,
                         T = { backgroundColor: e.rgba, ...m.nk },
                         Z = { backgroundColor: e.rgb, ...m.nk },
@@ -359,7 +359,7 @@
                         null,
                         n.createElement(s.Z, { onClick: this._handleBackgroundPress, style: x }, t, o ? n.createElement(s.Z, { pointerEvents: d ? "none" : void 0, style: [C.footerButtons, b && T, b && C.footerButtonsAbsolute, d && C.fadeOut] }, n.createElement(i.Z, { withGutter: !0 }, o)) : null),
                         n.createElement(r.Z, { interactiveStyles: null, onClick: this._handleCloseButtonPress, pointerEvents: d ? "none" : void 0, role: "none", style: [C.buttonWrapper, C.buttonWrapperLeft, m.nk, d && C.fadeOut] }, (t) => n.createElement(a.ZP, { "aria-label": f, dominantColor: e.rgb, hoverLabel: { label: f }, icon: n.createElement(h.default, null), interactivityState: t, onClick: this._handleCloseButtonPress, type: u || g || l ? "onMediaDominantColorFilled" : "onMediaWhiteFilled" })),
-                        v ? n.createElement(s.Z, { pointerEvents: d ? "none" : void 0, style: [C.buttonWrapper, C.buttonWrapperRight, m.nk, d && C.fadeOut] }, v) : null,
+                        _ ? n.createElement(s.Z, { pointerEvents: d ? "none" : void 0, style: [C.buttonWrapper, C.buttonWrapperRight, m.nk, d && C.fadeOut] }, _) : null,
                         E
                             ? n.createElement(
                                   s.Z,
@@ -376,7 +376,7 @@
                                       },
                                       y,
                                   ),
-                                  n.createElement(_, {
+                                  n.createElement(v, {
                                       onOpenGrokUpdate: (e) => {
                                           this._openGrok = e;
                                       },
@@ -388,7 +388,7 @@
             }
             (b.contextType = l.Z), (b.defaultProps = { hideButtons: !1 });
             const C = c.default.create((e) => ({ root: { overflowX: "hidden", overflowY: "hidden", height: "100%", width: "100%" }, buttonWrapper: { position: "absolute", top: 0, padding: e.spaces.space12, alignItems: "center", justifyContent: "center", cursor: "pointer" }, buttonWrapperLeft: { start: 0 }, buttonWrapperRight: { end: 0 }, buttonWrapperBottomCenter: { width: "100%", position: "absolute", bottom: 60, alignItems: "center", justifyContent: "center", cursor: "pointer" }, fadeOut: { opacity: 0 }, footerButtons: { width: "100%", alignSelf: "center" }, footerButtonsAbsolute: { position: "absolute", bottom: 0, paddingBottom: c.default.iPhoneOffsetBottom, zIndex: 1 } })),
-                _ = ({ onOpenGrokUpdate: e }) => {
+                v = ({ onOpenGrokUpdate: e }) => {
                     const { openGrok: t } = (0, g.Z)();
                     return (
                         n.useEffect(() => {
@@ -594,19 +594,19 @@
                 y = o(560520),
                 b = o(367991),
                 C = o(705638),
-                _ = o(801184),
-                v = o(335632);
+                v = o(801184),
+                _ = o(335632);
             const w = "FocalTweetInlineTombstone",
                 T = "More Replies";
             let Z;
             const x = Object.freeze({ Default: "ui_defaultLabel", TransparentCursor: "ui_transparentCursor" }),
-                k = { ...(0, v.G)({}), [l.ZP.Tweet]: (0, C.Z)({ hideConversationControlsEducationText: !0, withMuteConversation: !0 }) },
-                E = ({ changeDropdownState: e, hideReplyContextMode: t, isCurrentUserRootAuthor: o, isReaderMode: n, isTransparentCursorsEnabled: i, replyDropdownSelection: r, rootTweetAuthorId: a, tweetTextSize: d, withFocalTweetMedia: C, withRuxInjections: v }) =>
+                k = { ...(0, _.G)({}), [l.ZP.Tweet]: (0, C.Z)({ hideConversationControlsEducationText: !0, withMuteConversation: !0 }) },
+                E = ({ changeDropdownState: e, hideReplyContextMode: t, isCurrentUserRootAuthor: o, isReaderMode: n, isTransparentCursorsEnabled: i, replyDropdownSelection: r, rootTweetAuthorId: a, tweetTextSize: d, withFocalTweetMedia: C, withRuxInjections: _ }) =>
                     (0, s.Z)({}, k, {
                         [l.ZP.SelfThreadTweetComposer]: f.Z,
                         [l.ZP.Tweet]: {
                             handlers: {
-                                [h.Z.Tweet]: (0, _.Cw)({
+                                [h.Z.Tweet]: (0, v.Cw)({
                                     hideConversationControlsEducationText: !0,
                                     hideExclusivityInfoEducationTextInReplies: !0,
                                     hideTrustedFriendsEducationTextInReplies: !0,
@@ -628,7 +628,7 @@
                                     hideReplyContextMode: t,
                                     withMuteConversation: !0,
                                 }),
-                                [h.Z.FocalTweet]: (0, _.g6)({
+                                [h.Z.FocalTweet]: (0, v.g6)({
                                     createAdditionalProps: (t, { applyFeedbackAction: n }) => {
                                         const {
                                                 content: { conversation_annotation: s, hasModeratedReplies: i },
@@ -661,13 +661,13 @@
                                     divider: (e) => ({ top: !1, bottom: !1 }),
                                     hideReplyContextMode: t,
                                 }),
-                                [h.Z.SelfThread]: (0, _.Cw)({ hideReplyContextMode: t }),
-                                [h.Z.ReaderMode]: (0, _.Cw)({ hideConversationControlsEducationText: !0, hideExclusivityInfoEducationTextInReplies: !0, hideHighlightedUserLabel: !0, hideTrustedFriendsEducationTextInReplies: !0, isReaderMode: !0, shouldSelfThreadIncludeAvatar: !1, showWithheldBannerOnMyTweets: !1, tweetTextSize: d, withActionsDisabled: !1, withMuteConversation: !1, withRemoveFromBookmarks: !1, withSelfThread: !1, withUserPresence: !1 }),
+                                [h.Z.SelfThread]: (0, v.Cw)({ hideReplyContextMode: t }),
+                                [h.Z.ReaderMode]: (0, v.Cw)({ hideConversationControlsEducationText: !0, hideExclusivityInfoEducationTextInReplies: !0, hideHighlightedUserLabel: !0, hideTrustedFriendsEducationTextInReplies: !0, isReaderMode: !0, shouldSelfThreadIncludeAvatar: !1, showWithheldBannerOnMyTweets: !1, tweetTextSize: d, withActionsDisabled: !1, withMuteConversation: !1, withRemoveFromBookmarks: !1, withSelfThread: !1, withUserPresence: !1 }),
                             },
                         },
                         [l.ZP.Tombstone]: { handlers: { [w]: (0, b._n)({ isFocalTweet: !0, isReaderMode: n, withHideReply: o }), [u.Z.Inline]: (0, b._n)({ isReaderMode: n, tweetDismissFeedbackKey: o ? c.qt : void 0, withHideReply: o }) } },
                         [l.ZP.Label]: p.ov({ selectDisplayType: (e) => ((e, t) => (t && e.content.text === T ? x.TransparentCursor : x.Default))(e, i), handlers: { [x.TransparentCursor]: g.L, [x.Default]: g.k } }),
-                        [l.ZP.TimelineCursor]: (0, m.Z)({ withRuxInjections: v }),
+                        [l.ZP.TimelineCursor]: (0, m.Z)({ withRuxInjections: _ }),
                         [l.ZP.ThreadHeader]: y.Z,
                     }),
                 S = ({ contextTweetId: e, contextualClientEventInfo: t, focalTweetId: o, promotedContent: s, showOnlyRelevantReplies: c, socialContext: d, topicFollowPrompt: h }) => {
@@ -711,7 +711,7 @@
                 R = (e, t) => ({ ...e, conversationPosition: { isStart: t, isEnd: !1, position: "ancestor" } });
         },
         607015: (e, t, o) => {
-            o.d(t, { ZP: () => v });
+            o.d(t, { ZP: () => _ });
             var n = o(202784),
                 s = o(167630),
                 i = o(111677),
@@ -729,15 +729,15 @@
                 y = (e, t) => t.module.selectTopFetchStatus(e),
                 b = (0, g.Z)().propsFromState(() => ({ moduleInitialFetchStatus: f, moduleTopFetchStatus: y })),
                 C = r().c299a6c0,
-                _ = (e) => (t, o) => t && t.content && !!t.content.id && t.content.id === e,
-                v = b(({ focalTweetId: e, module: t, moduleInitialFetchStatus: o, moduleTopFetchStatus: i, rootTweetId: r, tweetTextSize: g }) => {
+                v = (e) => (t, o) => t && t.content && !!t.content.id && t.content.id === e,
+                _ = b(({ focalTweetId: e, module: t, moduleInitialFetchStatus: o, moduleTopFetchStatus: i, rootTweetId: r, tweetTextSize: g }) => {
                     const f = (0, p.ZP)({ isCurrentUserRootAuthor: !0, withFocalTweetMedia: !0, isTransparentCursorsEnabled: !0, isReaderMode: !0, tweetTextSize: g }),
                         y = (r !== e && o === d.Z.LOADING) || i === d.Z.LOADING;
                     return n.createElement(m.Z, {
                         anchoring: l.Z,
                         entryConfiguration: f,
                         header: y ? n.createElement(s.Z, null) : void 0,
-                        isInitialFocusEntry: r !== e ? _(e) : void 0,
+                        isInitialFocusEntry: r !== e ? v(e) : void 0,
                         key: g,
                         module: t,
                         olderAtTop: !0,
@@ -757,7 +757,7 @@
                 });
         },
         376293: (e, t, o) => {
-            o.d(t, { $f: () => Z, KV: () => y, LI: () => P, SC: () => T, Vt: () => _, ed: () => I, op: () => x });
+            o.d(t, { $f: () => Z, KV: () => y, LI: () => P, SC: () => T, Vt: () => v, ed: () => I, op: () => x });
             var n = o(202784),
                 s = o(190286),
                 i = o(111677),
@@ -775,8 +775,8 @@
                 y = r().a9fd20be,
                 b = r().j546fb79,
                 C = r().c9623eeb,
-                _ = r().e133be4e,
-                v = r().he43bca4,
+                v = r().e133be4e,
+                _ = r().he43bca4,
                 w = r().f5f01af6,
                 T = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
                 Z = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: h({ screenName: e }), label: m, text: t ? f({ screenName: e }) : g({ screenName: e }) }),
@@ -805,7 +805,7 @@
                 k = (e) => (e ? l.default : a.default),
                 E = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
                 S = (e) => (e.blocking ? C({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
-                P = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: b({ screenName: e }), label: _, text: t ? w : v }))(e.screen_name, t) : Z(e.screen_name, t)),
+                P = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: b({ screenName: e }), label: v, text: t ? w : _ }))(e.screen_name, t) : Z(e.screen_name, t)),
                 I = ({ confirmation: e, handleConfirm: t, onClose: o }) => {
                     const { confirmButtonType: i, headline: r, label: a, text: l } = e;
                     return n.createElement(s.Z, { cancelButtonLabel: u, confirmButtonLabel: a, confirmButtonType: i, headline: r, onCancel: o, onConfirm: t, text: l });
@@ -886,7 +886,7 @@
                 };
         },
         965728: (e, t, o) => {
-            o.d(t, { C_: () => y, I5: () => m, K2: () => f, L$: () => c, Rb: () => g, nk: () => p, sI: () => _, xr: () => b });
+            o.d(t, { C_: () => y, I5: () => m, K2: () => f, L$: () => c, Rb: () => g, nk: () => p, sI: () => v, xr: () => b });
             var n = o(202784),
                 s = o(483677),
                 i = o(782578),
@@ -933,7 +933,7 @@
                             return e;
                     }
                 },
-                _ = () => {
+                v = () => {
                     const [e, t] = n.useReducer(C, { isZoomed: !1, showControls: !0 });
                     return {
                         hideButtons: e.isZoomed || !e.showControls,
@@ -1148,7 +1148,7 @@
             const y = c.default.create((e) => ({ fill: { flex: 1 } })),
                 b = f;
         },
-        748138: (e, t, o) => {
+        899174: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var n = o(202784),
                 s = o(890601),
@@ -1156,7 +1156,7 @@
                 r = o(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M9.909 4.14C9.541 4.05 9.157 4 8.766 4H1.002v16h8.146c.758 0 1.45.43 1.789 1.11l.065.13V5.76c0-.73-.388-1.44-1.093-1.62zM8 15H4v-2h4v2zm0-4H4V9h4v2zm7.238-7c-.391 0-.774.05-1.143.14-.705.18-1.093.89-1.093 1.62v15.49c.461-.82 1.076-1.25 1.854-1.25h8.146V4h-7.764zM20 15h-4v-2h4v2zm0-4h-4V9h4v2z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const l = a;
@@ -1179,4 +1179,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ReaderMode-6107ac1a.3b43b10a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ReaderMode-6107ac1a.1151cc0a.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.UserFollowLists"],
+    ["bundle.UserFollowLists", "icons/IconFeedback-js"],
     {
         333241: (e, t, o) => {
             o.d(t, { Z: () => E });
@@ -535,7 +535,7 @@
                 };
         },
         589992: (e, t, o) => {
-            o.r(t), o.d(t, { FollowersScreen: () => V, default: () => q });
+            o.r(t), o.d(t, { FollowersScreen: () => Q, default: () => q });
             var n = o(202784),
                 r = o(457311),
                 s = o(111677),
@@ -579,9 +579,9 @@
                     const o = ((e, t) => v.ZP.selectIdByScreenName(e, I(0, t)))(e, t);
                     return o ? k.lP(e, o) : void 0;
                 },
-                A = (e, t) => t.match.params.followersSubroute || t.match.params.creatorSubscriptionsSubroute,
-                L = (0, Z.Z)()
-                    .propsFromState(() => ({ fetchStatus: F, isActiveCreator: x.WM, mode: A, screenName: I, user: M, viewerUserId: x._h, knownFollowersCount: T }))
+                L = (e, t) => t.match.params.followersSubroute || t.match.params.creatorSubscriptionsSubroute,
+                A = (0, Z.Z)()
+                    .propsFromState(() => ({ fetchStatus: F, isActiveCreator: x.WM, mode: L, screenName: I, user: M, viewerUserId: x._h, knownFollowersCount: T }))
                     .propsFromActions(() => ({ cleanupOwnFollowersList: P, createLocalApiErrorHandler: (0, D.zr)("USER_PROFILE_FOLLOWERS"), fetchOneUserByScreenNameIfNeeded: v.ZP.fetchOneByScreenNameIfNeeded, fetchKnownFollowersIfNeeded: k.Hq }));
             var O = o(269011),
                 R = o(335632),
@@ -589,8 +589,8 @@
             const B = i().fe9d3afa,
                 U = i().fbce8dbe,
                 W = { superfollowers: i().ab7fc3ef, followers_you_follow: i().j0d17377, followers: i().fa9e827f, following: i().ha979be5, subscribers: i().d28be573, subscriptions: i().g9da3853, verified_followers: i().cfd952a1 },
-                $ = { superfollowers: i().d52a1caa, followers_you_follow: i().i099d32e, followers: i().c64974fc, following: i().d960b55c, subscribers: i().d52a1caa, subscriptions: i().d7b51c68, verified_followers: i().fecc696e },
-                H = { superfollowers: i().g0a2fbbe, followers_you_follow: i().g65f4bac, followers: i().c36cfddc, following: i().h0c94842, subscribers: i().g0a2fbbe, subscriptions: i().j7f5c6aa, verified_followers: i().fd275c1a },
+                H = { superfollowers: i().d52a1caa, followers_you_follow: i().i099d32e, followers: i().c64974fc, following: i().d960b55c, subscribers: i().d52a1caa, subscriptions: i().d7b51c68, verified_followers: i().fecc696e },
+                $ = { superfollowers: i().g0a2fbbe, followers_you_follow: i().g65f4bac, followers: i().c36cfddc, following: i().h0c94842, subscribers: i().g0a2fbbe, subscriptions: i().j7f5c6aa, verified_followers: i().fd275c1a },
                 z = { superfollowers: i().e08bd098, followers_you_follow: i().j029a4dc, followers: i().b2b2c6ce, following: i().cb1a15c8, subscribers: i().e08bd098, subscriptions: i().i967b954, verified_followers: i().a44e403e },
                 G = { followers_you_follow: i().d74ee2e3, followers: i().c36cfddc, following: i().ae5749c7, verified_followers: i().b5099e33 },
                 K = { followers_you_follow: i().ec251f36, followers: i().b2b2c6ce, following: i().f8af4f48, verified_followers: i().fd0aad94 },
@@ -603,27 +603,27 @@
                     subscriptions: (e) => (0, E.Z)({ timelineId: `UserCreatorSubscription-${e}`, network: { getEndpoint: (e) => e.withEndpoint(g.ZP).fetchCreatorSubscriptions, getEndpointParams: ({ count: t, cursor: o }) => ({ count: t, cursor: "string" == typeof o ? o : void 0, userId: e }) }, context: "FETCH_CREATOR_SUBSCRIPTIONS", perfKey: "userCreatorSubscriptionsGraphQL", formatResponse: _.Z }),
                     verified_followers: (e) => (0, E.Z)({ timelineId: `verifiedFollowersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(g.ZP).fetchVerifiedFollowers, getEndpointParams: ({ count: t, cursor: o }) => ({ count: t, cursor: "string" == typeof o ? o : void 0, userId: e }) }, context: "FETCH_VERIFIED_FOLLOWERS", perfKey: "verifiedFollowersGraphQL", formatResponse: _.Z }),
                 },
-                Q = (0, a.Z)((e, t, o, s) => () => {
+                V = (0, a.Z)((e, t, o, s) => () => {
                     const i = t === e;
                     if (!i && "superfollowers" === s) return (0, b.ZP)("Unexpected rendering of superfollowers empty state"), null;
                     const a = i && "following" === s ? U : void 0,
                         l = i && "following" === s ? "/i/connect_people" : void 0;
-                    let c = i ? H[s] : G[s],
+                    let c = i ? $[s] : G[s],
                         d = i ? z[s] : K[s];
                     return "function" == typeof c && (c = c({ screenName: o })), "function" == typeof d && (d = d({ screenName: o })), n.createElement(r.Z, { buttonLink: l, buttonText: a, header: c, message: d });
                 });
-            class V extends n.Component {
+            class Q extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._getMemoizeModule = (0, a.Z)((e, t) => e && j[t](e))),
                         (this._render = () => {
                             const { mode: e, screenName: t, user: o, viewerUserId: r } = this.props,
                                 s = this._getMemoizeModule(o?.id_str, e),
-                                i = Q(r, o?.id_str, t, e),
+                                i = V(r, o?.id_str, t, e),
                                 a = this._isOwnProfile() && "followers" === e,
                                 l = this._canViewSubscribersPage(),
                                 c = this._canViewSubscriptionsPage();
-                            return ("subscribers" === e && !l) || ("subscriptions" === e && !c) ? n.createElement(S.Z, { to: `/${t}` }) : s ? n.createElement(m.Z, { entryConfiguration: this._getMemoizedEntryConfiguration(a), loadingAccessibilityLabel: B, module: s, renderEmptyState: i, title: $[e] }) : null;
+                            return ("subscribers" === e && !l) || ("subscriptions" === e && !c) ? n.createElement(S.Z, { to: `/${t}` }) : s ? n.createElement(m.Z, { entryConfiguration: this._getMemoizedEntryConfiguration(a), loadingAccessibilityLabel: B, module: s, renderEmptyState: i, title: H[e] }) : null;
                         }),
                         (this._getMemoizedEntryConfiguration = (0, a.Z)((e) => (({ withFollowerActionMenu: e = !1 }) => ({ ...(0, R.G)({}), [y.ZP.User]: (0, O.Z)({ decoration: e ? N.C_ : void 0 }) }))({ withFollowerActionMenu: e }))),
                         (this._handleFetchUser = () => {
@@ -658,7 +658,7 @@
                         _ = this._canViewSubscribersPage(),
                         y = this._canViewSubscriptionsPage();
                     if ("superfollowers" === r) return n.createElement(S.Z, { to: `/${s}/creator-subscriptions/subscribers` });
-                    const v = [{ key: "verified_followers", to: `/${s}/verified_followers`, label: $.verified_followers }, i && a !== i.id_str && o ? { key: "followers_you_follow", to: `/${s}/followers_you_follow`, label: $.followers_you_follow } : null, { key: "followers", to: `/${s}/followers`, label: $.followers }, { key: "following", to: `/${s}/following`, label: $.following }, _ ? { key: "subscribers", to: `/${s}/creator-subscriptions/subscribers`, label: $.subscribers } : null, y ? { key: "subscriptions", to: `/${s}/creator-subscriptions/subscriptions`, label: $.subscriptions } : null];
+                    const v = [{ key: "verified_followers", to: `/${s}/verified_followers`, label: H.verified_followers }, i && a !== i.id_str && o ? { key: "followers_you_follow", to: `/${s}/followers_you_follow`, label: H.followers_you_follow } : null, { key: "followers", to: `/${s}/followers`, label: H.followers }, { key: "following", to: `/${s}/following`, label: H.following }, _ ? { key: "subscribers", to: `/${s}/creator-subscriptions/subscribers`, label: H.subscribers } : null, y ? { key: "subscriptions", to: `/${s}/creator-subscriptions/subscriptions`, label: H.subscriptions } : null];
                     return g ? n.createElement(C.Z, { scribeSection: r, userId: p }, n.createElement(h.Z, null, n.createElement(d.Z, { backLocation: `/${s}`, documentTitle: f, history: t, primaryContent: n.createElement(c.Z, { "aria-label": B, fetchStatus: e, onRequestRetry: this._handleFetchUser, render: this._render }), secondaryBar: n.createElement(u.Z, { links: v }), sidebarContent: n.createElement(l.Z, null), subtitle: `@${s}`, title: m }))) : n.createElement(S.Z, { to: `/${s}` });
                 }
                 _fetchKnownFollowersIfNeeded() {
@@ -678,8 +678,8 @@
                     }
                 }
             }
-            V.contextType = p.rC;
-            const q = L(V);
+            Q.contextType = p.rC;
+            const q = A(Q);
         },
         984915: (e, t, o) => {
             o.d(t, { Z: () => l });
@@ -1160,7 +1160,7 @@
             }
             const i = new s();
         },
-        748138: (e, t, o) => {
+        790093: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var n = o(202784),
                 r = o(890601),
@@ -1168,7 +1168,7 @@
                 i = o(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, s.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const l = a;
@@ -1186,6 +1186,32 @@
             a.metadata = { width: 24, height: 24 };
             const l = a;
         },
+        226597: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => l });
+            var n = o(202784),
+                r = o(890601),
+                s = o(783427),
+                i = o(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, s.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const l = a;
+        },
+        155353: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => l });
+            var n = o(202784),
+                r = o(890601),
+                s = o(783427),
+                i = o(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, s.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const l = a;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserFollowLists.f6871d4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserFollowLists.d297637a.js.map

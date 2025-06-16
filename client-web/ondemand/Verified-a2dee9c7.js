@@ -1562,6 +1562,131 @@
                     },
                 });
         },
+        290402: (e, a, l) => {
+            l.d(a, { Z: () => _ });
+            var n = l(807896),
+                i = l(202784),
+                t = l(182056),
+                r = l(879113),
+                s = l(392237),
+                u = l(111677),
+                o = l.n(u),
+                d = l(968478);
+            const c = o().aa6e3300,
+                m = ({ retryMessage: e, ...a }, l) => {
+                    const s = t.Z.isOnline();
+                    return i.createElement(r.Z, (0, n.Z)({}, a, { icon: s ? void 0 : i.createElement(d.default, { style: g.icon }), retryMessage: s ? e : c }));
+                },
+                g = s.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
+                _ = i.forwardRef(m);
+        },
+        664052: (e, a, l) => {
+            l.d(a, { Z: () => F });
+            var n = l(202784),
+                i = l(301503),
+                t = l(325686),
+                r = l(925873),
+                s = l(989272),
+                u = l(891198),
+                o = l(731708),
+                d = l(977952),
+                c = l(297256),
+                m = l(524496),
+                g = l(392237),
+                _ = l(111677),
+                p = l.n(_),
+                y = l(187669),
+                k = l(874111);
+            const f = p().c2333081,
+                b = (e) => {
+                    const a = ((e) => {
+                            try {
+                                return e ? JSON.parse(e) : void 0;
+                            } catch {
+                                return;
+                            }
+                        })(e),
+                        l = r.Z.initEditorState(a);
+                    return r.Z.convertEmojiToEntities(l);
+                },
+                v = g.default.create((e) => ({ message: { flexDirection: "row" }, textCountLabel: { flexDirection: "row", alignSelf: "center" }, container: { paddingHorizontal: e.spaces.space20, paddingTop: e.spaces.space28, paddingBottom: e.spaces.space20 }, readOnlyContainer: { padding: e.spaces.space16, maxHeight: "500px", overflowX: "auto", backgroundColor: e.colors.gray0, color: e.colors.gray300 }, richTextWrapper: { borderWidth: e.borderWidths.small, borderColor: e.colors.gray200, borderRadius: e.borderRadii.small, padding: e.spaces.space1, marginBottom: e.spaces.space16 } })),
+                F = ({ allowExtendedPasteStyles: e, characterLimit: a, editable: l = !0, editorClass: g, editorStyles: _, initialState: p = "", limitedRichText: F = !1, numberOfLines: K = 10, onChange: S, textSizesOverride: h }) => {
+                    const [L, T] = n.useState(b(p));
+                    (0, y.q)(() => {
+                        _ && g && (0, s.fH)(_, g);
+                    });
+                    const V = n.useMemo(() => L?.getCurrentContent(), [L]),
+                        A = n.useCallback(
+                            (e) => {
+                                const a = r.Z.convertEmojiToEntities(e);
+                                T(a), S(a);
+                            },
+                            [S],
+                        ),
+                        w = (0, k.c6)(L);
+                    let R = w;
+                    w > 1 && (R = u.ZP.getFormattedCount(w));
+                    const O = n.useMemo(() => {
+                            const e = !!a && w > a;
+                            return n.createElement(t.Z, null, n.createElement(o.ZP, { color: e ? "red500" : "gray900", numberOfLines: 1, size: "subtext1", style: v.textCountLabel }, f({ count: R })));
+                        }, [w, R, a]),
+                        z = n.useMemo(() => ({ allowExtendedPasteStyles: e, editorState: L, element: d.Z, stripPastedStyles: !0 }), [e, L]);
+                    return n.createElement(t.Z, null, l ? n.createElement(t.Z, { style: v.richTextWrapper }, n.createElement(c.b, { inputStyle: v.container, isInputFullWidth: !0, limitedRichText: F, numberOfLines: K, onChange: A, richTextInputContext: z, textSizesOverride: h, toolbarRightControl: O })) : n.createElement(n.Fragment, null, V && V.hasText() ? n.createElement(t.Z, { style: v.richTextWrapper }, n.createElement(t.Z, { style: v.readOnlyContainer }, n.createElement(m.Z, { contentState: (0, i.convertToRaw)(V) }))) : null));
+                };
+        },
+        282559: (e, a, l) => {
+            l.d(a, { v: () => u });
+            l(571372);
+            var n = l(96768),
+                i = l(202784),
+                t = (l(585488), l(351743)),
+                r = l.n(t);
+            const s = n.Z,
+                u = ({ originProduct: e, returnUrl: a }) => {
+                    const [l, n] = r()(s);
+                    return [
+                        i.useCallback(
+                            () =>
+                                new Promise((n, i) => {
+                                    l({
+                                        variables: { return_url: a, origin_product: e },
+                                        onCompleted: ({ customerportalsession_create: e }, a) => {
+                                            const l = e?.customer_portal_session_url ?? void 0;
+                                            l ? n(l) : i(new Error("Missing portal URL"));
+                                        },
+                                        onError: i,
+                                    });
+                                }),
+                            [l, a, e],
+                        ),
+                        n,
+                    ];
+                };
+        },
+        177210: (e, a, l) => {
+            l.d(a, { Z: () => d });
+            var n = l(202784),
+                i = l(111677),
+                t = l.n(i),
+                r = l(782826),
+                s = l(282559),
+                u = l(782642);
+            const o = t().ef4602ec;
+            function d(e) {
+                const a = (0, u.p)(),
+                    [l, i] = (0, s.v)(e),
+                    t = n.useCallback(() => {
+                        l()
+                            .then((e) => {
+                                r.ZP.navigateTo(e);
+                            })
+                            .catch(() => {
+                                a({ text: o });
+                            });
+                    }, [l, a]);
+                return i ? void 0 : t;
+            }
+        },
         798156: (e, a, l) => {
             e.exports = l.p + "illustration-paper-plane.771a84da.png";
         },
@@ -1573,4 +1698,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-a2dee9c7.d564097a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-a2dee9c7.c53f555a.js.map

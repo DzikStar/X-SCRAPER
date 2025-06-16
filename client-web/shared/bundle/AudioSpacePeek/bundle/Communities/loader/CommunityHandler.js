@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler", "icons/IconChevronRight-js", "icons/IconEye-js"],
+    ["shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler", "icons/IconDraggable-js"],
     {
         625661: (e, t, n) => {
             n.d(t, { ZP: () => m });
@@ -71,7 +71,7 @@
                 x = ({ media: e, width: t }) => {
                     const { crop: n, image: o } = e,
                         d = (0, a.KU)(),
-                        u = r.useMemo(() => [A.thumbnailContainer, d && A.thumbnailContainerNarrow, t ? { width: l.default.theme.spaces[t] } : null], [d, t]);
+                        u = r.useMemo(() => [L.thumbnailContainer, d && L.thumbnailContainerNarrow, t ? { width: l.default.theme.spaces[t] } : null], [d, t]);
                     return r.createElement(i.Z, { style: u }, r.createElement(s.Z, { "aria-label": "", aspectMode: c.Z.SQUARE, backgroundColor: l.default.theme.colors.gray300, cropCandidates: n, image: o }));
                 },
                 P = ({ communityId: e, count: t }) => {
@@ -83,7 +83,7 @@
                         { featureSwitches: E } = r.useContext(C.rC),
                         Z = E.isTrue("communities_adult_content_setting_display"),
                         v = E.isTrue("communities_topic_display");
-                    return r.createElement(m.Z, { link: f, onPress: c, style: [A.root, d] }, r.createElement(i.Z, { style: A.container }, r.createElement(i.Z, { style: A.leftColumn }, n ? r.createElement(x, { media: n, width: h }) : null, r.createElement(i.Z, { style: A.attribution }, r.createElement(i.Z, { style: A.name }, r.createElement(u.ZP, { numberOfLines: 1, weight: "bold" }, l), t && Z ? r.createElement(u.ZP, { color: "red600", size: "subtext2" }, " ", w) : null), r.createElement(P, { communityId: e, count: o }), g && v ? r.createElement(i.Z, { style: A.name }, r.createElement(u.ZP, { color: "gray700", numberOfLines: 1 }, g)) : null, Array.isArray(a) ? r.createElement(p.Z, { style: A.facepile, userAvatarSize: "large", userAvatarUrls: a }) : a)), r.createElement(M, { communityId: e, onActionButtonJoinClick: s, withActionButton: y, withPinAction: b })));
+                    return r.createElement(m.Z, { link: f, onPress: c, style: [L.root, d] }, r.createElement(i.Z, { style: L.container }, r.createElement(i.Z, { style: L.leftColumn }, n ? r.createElement(x, { media: n, width: h }) : null, r.createElement(i.Z, { style: L.attribution }, r.createElement(i.Z, { style: L.name }, r.createElement(u.ZP, { numberOfLines: 1, weight: "bold" }, l), t && Z ? r.createElement(u.ZP, { color: "red600", size: "subtext2" }, " ", w) : null), r.createElement(P, { communityId: e, count: o }), g && v ? r.createElement(i.Z, { style: L.name }, r.createElement(u.ZP, { color: "gray700", numberOfLines: 1 }, g)) : null, Array.isArray(a) ? r.createElement(p.Z, { style: L.facepile, userAvatarSize: "large", userAvatarUrls: a }) : a)), r.createElement(M, { communityId: e, onActionButtonJoinClick: s, withActionButton: y, withPinAction: b })));
                 },
                 I = y().c5d23126,
                 S = y().j44ec610,
@@ -92,9 +92,9 @@
             function M(e) {
                 const t = (0, o.useRouteMatch)(),
                     { communityId: n, onActionButtonJoinClick: a, withActionButton: l, withPinAction: s } = e;
-                return l ? r.createElement(i.Z, { style: A.rightColumn }, r.createElement(Z.ZP, { communityId: n, match: t, onCommunityMembershipChange: E.Z, onJoinClick: a })) : s ? r.createElement(L, s) : null;
+                return l ? r.createElement(i.Z, { style: L.rightColumn }, r.createElement(Z.ZP, { communityId: n, match: t, onCommunityMembershipChange: E.Z, onJoinClick: a })) : s ? r.createElement(A, s) : null;
             }
-            function L(e) {
+            function A(e) {
                 const { handlePinOrUnpin: t, isPinned: n } = e,
                     o = r.useMemo(() => (n ? r.createElement(b.default, { "aria-label": S }) : r.createElement(f.default, { "aria-label": I })), [n]),
                     a = r.useCallback(
@@ -103,10 +103,10 @@
                         },
                         [t],
                     );
-                return r.createElement(i.Z, { style: A.rightColumn }, r.createElement(h.ZP, { hoverLabel: n ? B : _, icon: o, onPress: a, type: "brandText" }));
+                return r.createElement(i.Z, { style: L.rightColumn }, r.createElement(h.ZP, { hoverLabel: n ? B : _, icon: o, onPress: a, type: "brandText" }));
             }
             const R = r.memo(k),
-                A = l.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, container: { flexDirection: "row" }, leftColumn: { alignItems: "center", flexDirection: "row", flex: 1, flexShrink: 1 }, rightColumn: { alignItems: "center", justifyContent: "flex-end", flexDirection: "row", flex: 1, flexShrink: 1 }, attribution: { height: "100%", minWidth: 100 * e.scales[e.scale], justifyContent: "space-between", flexShrink: 1 }, facepile: { justifyContent: "flex-start" }, name: { marginBottom: e.spaces.space2, flexDirection: "row" }, thumbnailContainer: { width: 96 * e.scales[e.scale], marginEnd: e.spaces.space12, borderRadius: e.borderRadii.large, overflow: "hidden" }, thumbnailContainerNarrow: { width: e.spaces.space72 } }));
+                L = l.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, container: { flexDirection: "row" }, leftColumn: { alignItems: "center", flexDirection: "row", flex: 1, flexShrink: 1 }, rightColumn: { alignItems: "center", justifyContent: "flex-end", flexDirection: "row", flex: 1, flexShrink: 1 }, attribution: { height: "100%", minWidth: 100 * e.scales[e.scale], justifyContent: "space-between", flexShrink: 1 }, facepile: { justifyContent: "flex-start" }, name: { marginBottom: e.spaces.space2, flexDirection: "row" }, thumbnailContainer: { width: 96 * e.scales[e.scale], marginEnd: e.spaces.space12, borderRadius: e.borderRadii.large, overflow: "hidden" }, thumbnailContainerNarrow: { width: e.spaces.space72 } }));
         },
         980407: (e, t, n) => {
             n.d(t, { Z: () => g, w: () => p });
@@ -592,19 +592,19 @@
             const S = i.memo(I);
             var _ = n(731708);
             const B = m().bc7a7af4,
-                M = ({ offendingRule: e }) => i.createElement(o.Z, null, e ? i.createElement(o.Z, { style: L.offendingRule }, ((e) => i.createElement(m().I18NFormatMessage, { $i18n: "jb124a07" }, i.createElement(_.ZP, { weight: "bold" }, m().a0e0a52c({ offendingRule: e }))))(e)) : null, i.createElement(_.ZP, null, B)),
-                L = d.default.create((e) => ({ offendingRule: { display: "flex", marginBottom: e.spaces.space12 } })),
+                M = ({ offendingRule: e }) => i.createElement(o.Z, null, e ? i.createElement(o.Z, { style: A.offendingRule }, ((e) => i.createElement(m().I18NFormatMessage, { $i18n: "jb124a07" }, i.createElement(_.ZP, { weight: "bold" }, m().a0e0a52c({ offendingRule: e }))))(e)) : null, i.createElement(_.ZP, null, B)),
+                A = d.default.create((e) => ({ offendingRule: { display: "flex", marginBottom: e.spaces.space12 } })),
                 R = m().hafa07f2,
-                A = m().e7969518,
+                L = m().e7969518,
                 T = m().c15bee32,
                 D = m().efa265fc,
                 F = i.createElement(m().I18NFormatMessage, { $i18n: "gb7eca21" }, i.createElement(_.ZP, { link: "/settings/audience_and_tagging" }, m().fe832999)),
                 V = m().fc2a5c92,
-                j = m().f9cecf48,
-                z = m().bf7bdb60,
-                N = m().h27d6950,
-                O = m().b02360f6,
-                U = Object.freeze({ joinAvailable: "CommunityJoinAction", joinUnavailable: "CommunityJoinActionUnavailable", leaveAvailable: "CommunityLeaveAction", leaveUnavailable: "CommunityLeaveActionUnavailable" }),
+                N = m().f9cecf48,
+                j = m().bf7bdb60,
+                O = m().h27d6950,
+                U = m().b02360f6,
+                z = Object.freeze({ joinAvailable: "CommunityJoinAction", joinUnavailable: "CommunityJoinActionUnavailable", leaveAvailable: "CommunityLeaveAction", leaveUnavailable: "CommunityLeaveActionUnavailable" }),
                 H = Object.freeze({ Unavailable: "Unavailable", ViewerNotMember: "ViewerNotMember", ViewerIsSoleAdmin: "ViewerIsSoleAdmin" }),
                 q = Object.freeze({ Unavailable: "Unavailable", ViewerIsMember: "ViewerIsMember", ViewerIsRemoved: "ViewerIsRemoved", ViewerNotInvited: "ViewerNotInvited", ViewerIsProtected: "ViewerIsProtected", ViewerRequestPending: "ViewerRequestPending", ViewerJoinRequestRequired: "ViewerRequestRequired" });
             const W = m().e6057014,
@@ -620,7 +620,7 @@
                         I = w?.join_action_result,
                         _ = w?.leave_action_result,
                         B = (0, p.Wh)(k),
-                        L = I?.reason === q.ViewerJoinRequestRequired,
+                        A = I?.reason === q.ViewerJoinRequestRequired,
                         Y = I?.reason === q.ViewerRequestPending,
                         Q = i.useCallback(() => {
                             const { rules: e, viewerViolatedRule: t } = g,
@@ -628,20 +628,20 @@
                                     const { __typename: r, message: o, reason: a } = e,
                                         l = (e) => ({ canAction: !0, message: e }),
                                         s = (e) => ({ canAction: !1, message: e }),
-                                        c = s({ headline: j, text: z });
+                                        c = s({ headline: N, text: j });
                                     switch (r) {
-                                        case U.joinAvailable:
+                                        case z.joinAvailable:
                                             return l();
-                                        case U.joinUnavailable:
+                                        case z.joinUnavailable:
                                             switch (a) {
                                                 case q.ViewerIsRemoved:
                                                     return s({ headline: T, text: i.createElement(M, { offendingRule: n?.name }) });
                                                 case q.ViewerNotInvited:
-                                                    return s({ headline: R, text: A });
+                                                    return s({ headline: R, text: L });
                                                 case q.ViewerIsProtected:
                                                     return t ? s({ headline: D, text: F }) : l();
                                                 case q.Unavailable:
-                                                    return s({ headline: j, text: o });
+                                                    return s({ headline: N, text: o });
                                                 case q.ViewerJoinRequestRequired:
                                                     return l();
                                                 default:
@@ -651,18 +651,18 @@
                                             return c;
                                     }
                                 })(I, b, t);
-                            Z && Z(), !r && o && n(o), r && (e && e.length > 0 ? u(!0) : L ? v(x).catch(y({})) : f(x).then(C).catch(y({})));
-                        }, [g, x, y, b, f, L, I, v, C, Z]),
+                            Z && Z(), !r && o && n(o), r && (e && e.length > 0 ? u(!0) : A ? v(x).catch(y({})) : f(x).then(C).catch(y({})));
+                        }, [g, x, y, b, f, A, I, v, C, Z]),
                         X = i.useCallback(() => {
                             const { canAction: e, message: t } = (function (e) {
                                 const { __typename: t, reason: n } = e,
                                     r = (e) => ({ canAction: !1, message: e }),
-                                    i = r({ headline: V, text: z });
+                                    i = r({ headline: V, text: j });
                                 switch (t) {
-                                    case U.leaveAvailable:
+                                    case z.leaveAvailable:
                                         return { canAction: !0, message: o };
-                                    case U.leaveUnavailable:
-                                        return n === H.ViewerIsSoleAdmin ? r({ headline: N, text: O }) : i;
+                                    case z.leaveUnavailable:
+                                        return n === H.ViewerIsSoleAdmin ? r({ headline: O, text: U }) : i;
                                     default:
                                         return i;
                                 }
@@ -676,7 +676,7 @@
                         te = i.useCallback(() => {
                             u(!1);
                         }, []),
-                        ne = i.useMemo(() => (L ? { ...K, follow: W } : K), [L]);
+                        ne = i.useMemo(() => (A ? { ...K, follow: W } : K), [A]);
                     return i.createElement(o.Z, { style: G.button }, d ? i.createElement(S, { onMaskClick: te }, i.createElement(h.default, (0, r.Z)({ communityId: x, onCommunityMembershipChange: C, onDismiss: te }, m))) : null, Y ? i.createElement(l.ZP, { disabled: !0, type: "primaryOutlined" }, $) : P ? i.createElement(s.Z, { buttonText: ne, isFollowing: B, name: P, onFollow: Q, onUnfollow: X, type: "community" }) : null, t ? i.createElement(c.Z, { actionLabel: J, graphicDisplayMode: "none", headline: t.headline, onAction: ee, onClose: ee, subtext: t.text, withCloseButton: !1 }) : null);
                 },
                 G = d.default.create((e) => ({ button: { justifyContent: "right" } })),
@@ -722,9 +722,9 @@
                 _ = m().h4fbfa58,
                 B = m().ea8cfb1e,
                 M = m().dc1b14a1,
-                L = m().fc2a5c92,
+                A = m().fc2a5c92,
                 R = m().c966ac64,
-                A = m().g690e07e,
+                L = m().g690e07e,
                 T = m().a5d21bf4,
                 D = (e) => {
                     const { community: t, createLocalApiErrorHandler: n, fetchCommunityIfNeeded: d, fetchStatus: u, history: m, isCommunityMember: Z, join: v, match: w, onCommunityMembershipChange: x, onDismiss: P, requestToJoin: k } = e,
@@ -736,20 +736,20 @@
                             [S],
                         ),
                         { featureSwitches: F } = r.useContext(b.rC),
-                        j = F.getNumberValue("c9s_max_community_answer_length", 280),
-                        z = F.isTrue("c9s_community_answer_box_join_page_enabled"),
-                        N = e.communityId || w.params.communityId,
-                        O = "ViewerRequestRequired" === t?.actions?.join_action_result?.reason,
-                        [U, H] = r.useState(!1);
+                        N = F.getNumberValue("c9s_max_community_answer_length", 280),
+                        j = F.isTrue("c9s_community_answer_box_join_page_enabled"),
+                        O = e.communityId || w.params.communityId,
+                        U = "ViewerRequestRequired" === t?.actions?.join_action_result?.reason,
+                        [z, H] = r.useState(!1);
                     r.useEffect(() => {
-                        N && !t && u !== E.Z.LOADED && d(N).catch(n());
+                        O && !t && u !== E.Z.LOADED && d(O).catch(n());
                     });
                     const q = r.useCallback((e) => r.createElement(o.ZP, { size: "title4", weight: "bold" }, M({ communityName: e })), []),
-                        W = O ? B : _,
+                        W = U ? B : _,
                         $ = r.useCallback(() => {
                             if (t) {
                                 const { id_str: e } = t;
-                                if (O)
+                                if (U)
                                     return void k(e, { answer: I })
                                         .then((e) => {
                                             if ("CommunityJoinRequest" === e?.type) P();
@@ -758,12 +758,12 @@
                                         .catch(n);
                                 v(e).then(x).then(P).catch(n());
                             }
-                        }, [I, t, n, H, v, O, x, P, k]),
+                        }, [I, t, n, H, v, U, x, P, k]),
                         K = r.useCallback(() => r.createElement(a.ZP, { onPress: $, size: "small", type: "brandFilled" }, W), [W, $]),
-                        J = U ? r.createElement(i.Z, { style: V.error }, r.createElement(l.Z, { Icon: p.default, headline: L, text: R, type: "danger" })) : void 0;
+                        J = z ? r.createElement(i.Z, { style: V.error }, r.createElement(l.Z, { Icon: p.default, headline: A, text: R, type: "danger" })) : void 0;
                     if (t) {
                         const { name: e, question: n, rules: a } = t;
-                        return a && a.length && !Z ? r.createElement(h.Z, { history: m, onBackClick: P, rightControl: K(), title: (0, y.E)({ communityName: e }) }, r.createElement(s.Z, { spacing: "space2" }), n && "" !== n?.trim() && O && z && r.createElement(i.Z, null, r.createElement(o.ZP, { size: "title4", style: V.divStyles, weight: "bold" }, n), r.createElement(c.Z, { calculateLength: f.Z, helperText: T, label: A, maxLength: j, multiline: !0, name: "typedJoinRequestAnswer", numberOfLines: 3, onChange: D }), r.createElement(s.Z, { spacing: "space2" })), J, r.createElement(g.Z, { badgeStyle: V.badgeStyle, headerContainerStyle: V.containerStyle, headerExplanationStyle: V.headerExplanationStyle, heading: q(e), rules: a })) : r.createElement(C.Z, { to: `/i/communities/${t.id_str}` });
+                        return a && a.length && !Z ? r.createElement(h.Z, { history: m, onBackClick: P, rightControl: K(), title: (0, y.E)({ communityName: e }) }, r.createElement(s.Z, { spacing: "space2" }), n && "" !== n?.trim() && U && j && r.createElement(i.Z, null, r.createElement(o.ZP, { size: "title4", style: V.divStyles, weight: "bold" }, n), r.createElement(c.Z, { calculateLength: f.Z, helperText: T, label: L, maxLength: N, multiline: !0, name: "typedJoinRequestAnswer", numberOfLines: 3, onChange: D }), r.createElement(s.Z, { spacing: "space2" })), J, r.createElement(g.Z, { badgeStyle: V.badgeStyle, headerContainerStyle: V.containerStyle, headerExplanationStyle: V.headerExplanationStyle, heading: q(e), rules: a })) : r.createElement(C.Z, { to: `/i/communities/${t.id_str}` });
                     }
                     return u === E.Z.LOADED ? r.createElement(C.Z, { to: "/" }) : null;
                 },
@@ -957,22 +957,7 @@
             n.d(t, { Z: () => r });
             const r = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        58399: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => c });
-            var r = n(202784),
-                i = n(890601),
-                o = n(783427),
-                a = n(717683),
-                l = n(347101);
-            const s = (e = {}) => {
-                const t = r.useContext(a.Z),
-                    { direction: n } = (0, o.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style, t && l.Z.iconRTL], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: n });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const c = s;
-        },
-        988227: (e, t, n) => {
+        678773: (e, t, n) => {
             n.r(t), n.d(t, { default: () => s });
             var r = n(202784),
                 i = n(890601),
@@ -980,24 +965,11 @@
                 a = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        748138: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var r = n(202784),
-                i = n(890601),
-                o = n(783427),
-                a = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M19.996 10h-16V8h16v2zm0 6h-16v-2h16v2z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler.a54473aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler.da94441a.js.map

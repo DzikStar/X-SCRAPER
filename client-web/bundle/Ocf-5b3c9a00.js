@@ -348,7 +348,7 @@
                 };
             var C = n(992942),
                 E = n(593866),
-                w = n(50439);
+                w = n(497625);
             const S = f.default.create((e) => ({ infoItemContainerStyle: { paddingHorizontal: 0 }, image: { display: "flex", flexDirection: "row" }, text: { display: "flex", flexDirection: "column" }, icon: { height: e.spaces.space24, width: e.spaces.space24, color: e.colors.text }, decorationContainer: { height: e.spaces.space24, width: e.spaces.space24, marginEnd: e.spaces.space20 }, imageDecorationContainer: { marginEnd: e.spaces.space20 } })),
                 T = {
                     render: (e) => {
@@ -991,4 +991,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-5b3c9a00.80e9363a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-5b3c9a00.48816a9a.js.map

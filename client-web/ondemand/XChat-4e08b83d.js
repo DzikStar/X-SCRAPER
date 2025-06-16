@@ -2557,7 +2557,7 @@
                     Zt(Nu, "AbstractWithDateTimeBuilder", ot, ot, [gu, Vu, tu, nu]),
                     Zt(iu, "WithUtcOffset"),
                     Zt(So, "AbstractWithOffsetBuilder", ot, ot, [iu]),
-                    ct(Yr, "Builder", ot, ot, [ou, Nu, So, tu, nu, iu]),
+                    ct(Yr, "Builder", ot, ot, [ou, Nu, So, iu, tu, nu]),
                     ct(Xr, "AbstractDateTimeFormat"),
                     ct(Zr, "DateTimeComponentsFormat", ot, Xr),
                     ct(Jr, "TwoDigitNumber"),
@@ -5279,4 +5279,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-4e08b83d.fffea36a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-4e08b83d.8c9872ba.js.map

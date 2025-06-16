@@ -645,67 +645,6 @@
             c.hash = "643b536998bafcec80f1aa661b660cf7";
             const m = c;
         },
-        424250: (l, e, a) => {
-            a.d(e, { Z: () => s });
-            var n,
-                i = {
-                    argumentDefinitions: [],
-                    kind: "Fragment",
-                    metadata: null,
-                    name: "relayListCell_list",
-                    selections: [
-                        { alias: "id_str", args: null, kind: "ScalarField", name: "rest_id", storageKey: null },
-                        (n = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }),
-                        { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
-                        { alias: null, args: null, kind: "ScalarField", name: "facepile_urls", storageKey: null },
-                        { alias: null, args: null, kind: "ScalarField", name: "followers_context", storageKey: null },
-                        { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null },
-                        { alias: null, args: null, kind: "ScalarField", name: "pinning", storageKey: null },
-                        { alias: "mode", args: null, kind: "ScalarField", name: "accessibility", storageKey: null },
-                        { alias: null, args: null, kind: "ScalarField", name: "member_count", storageKey: null },
-                        { alias: null, args: null, kind: "ScalarField", name: "members_context", storageKey: null },
-                        {
-                            alias: null,
-                            args: null,
-                            concreteType: "UserResults",
-                            kind: "LinkedField",
-                            name: "owner_results",
-                            plural: !1,
-                            selections: [
-                                {
-                                    alias: null,
-                                    args: null,
-                                    concreteType: null,
-                                    kind: "LinkedField",
-                                    name: "result",
-                                    plural: !1,
-                                    selections: [
-                                        {
-                                            kind: "InlineFragment",
-                                            selections: [
-                                                { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
-                                                { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [n, { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
-                                                { alias: "author", args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }], storageKey: null },
-                                                { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
-                                                { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null },
-                                            ],
-                                            type: "User",
-                                            abstractKey: null,
-                                        },
-                                    ],
-                                    storageKey: null,
-                                },
-                            ],
-                            storageKey: null,
-                        },
-                        { args: null, kind: "FragmentSpread", name: "useBannerImage_list" },
-                    ],
-                    type: "List",
-                    abstractKey: null,
-                };
-            i.hash = "a768b241795f7686944d39bc8f540980";
-            const s = i;
-        },
         693736: (l, e, a) => {
             a.d(e, { Z: () => i });
             var n = {
@@ -1300,75 +1239,6 @@
             g.hash = "6a4e127fd8c455fa791019313dc98456";
             const y = g;
         },
-        220070: (l, e, a) => {
-            a.d(e, { Z: () => i });
-            var n = {
-                argumentDefinitions: [],
-                kind: "Fragment",
-                metadata: null,
-                name: "useBannerImage_apiMedia",
-                selections: [
-                    {
-                        alias: null,
-                        args: null,
-                        concreteType: null,
-                        kind: "LinkedField",
-                        name: "media_info",
-                        plural: !1,
-                        selections: [
-                            {
-                                kind: "InlineFragment",
-                                selections: [
-                                    { alias: null, args: null, kind: "ScalarField", name: "original_img_url", storageKey: null },
-                                    { alias: null, args: null, kind: "ScalarField", name: "original_img_width", storageKey: null },
-                                    { alias: null, args: null, kind: "ScalarField", name: "original_img_height", storageKey: null },
-                                    {
-                                        alias: null,
-                                        args: null,
-                                        concreteType: "ApiMediaRect",
-                                        kind: "LinkedField",
-                                        name: "salient_rect",
-                                        plural: !1,
-                                        selections: [
-                                            { alias: null, args: null, kind: "ScalarField", name: "height", storageKey: null },
-                                            { alias: null, args: null, kind: "ScalarField", name: "left", storageKey: null },
-                                            { alias: null, args: null, kind: "ScalarField", name: "top", storageKey: null },
-                                            { alias: null, args: null, kind: "ScalarField", name: "width", storageKey: null },
-                                        ],
-                                        storageKey: null,
-                                    },
-                                ],
-                                type: "ApiImage",
-                                abstractKey: null,
-                            },
-                        ],
-                        storageKey: null,
-                    },
-                ],
-                type: "ApiMedia",
-                abstractKey: null,
-                hash: "26e87b5a3276722491009451177bea37",
-            };
-            const i = n;
-        },
-        903039: (l, e, a) => {
-            a.d(e, { Z: () => s });
-            var n,
-                i = {
-                    argumentDefinitions: [],
-                    kind: "Fragment",
-                    metadata: null,
-                    name: "useBannerImage_list",
-                    selections: [
-                        { alias: null, args: null, concreteType: "ApiMediaResults", kind: "LinkedField", name: "custom_banner_media_results", plural: !1, selections: (n = [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "useBannerImage_apiMedia" }], storageKey: null }]), storageKey: null },
-                        { alias: null, args: null, concreteType: "ApiMediaResults", kind: "LinkedField", name: "default_banner_media_results", plural: !1, selections: n, storageKey: null },
-                    ],
-                    type: "List",
-                    abstractKey: null,
-                };
-            i.hash = "cdbab01a2d01f274e4520afbd9ab33f4";
-            const s = i;
-        },
         738666: (l, e, a) => {
             a.d(e, { Z: () => i });
             var n = {
@@ -1687,4 +1557,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-59468b1d.783904ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-59468b1d.7d23dc4a.js.map

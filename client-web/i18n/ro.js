@@ -7275,7 +7275,7 @@
                     return e.days + " " + r(e.days, "(de) zile", "zi", "(de) zile");
                 }),
                 t("dc9661b3", function (e) {
-                    return e.seconds + " second" + n(e.seconds, "", "s");
+                    return e.seconds + " " + r(e.seconds, "(de) secunde", "secundă", "(de) secunde");
                 }),
                 t("g2c63852", "100% gratuit. Nu este nevoie de un card de credit."),
                 t("be88be23", function (e) {
@@ -13380,4 +13380,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.053d3f8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.51b6fd2a.js.map

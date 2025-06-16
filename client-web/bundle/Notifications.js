@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Notifications"],
+    ["bundle.Notifications", "icons/IconNotificationsOff-js"],
     {
         405008: (e) => {
             e.exports = { queryId: "CRhq23NLRTvAcpaMn7t10Q", operationName: "NotificationsTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
@@ -401,7 +401,7 @@
         },
         80550: (e, a, o) => {
             "use strict";
-            o.r(a), o.d(a, { NotificationsScreen: () => V, default: () => O });
+            o.r(a), o.d(a, { NotificationsScreen: () => O, default: () => U });
             var d = o(202784),
                 n = o(107267),
                 r = o(108362),
@@ -438,22 +438,20 @@
                     (0, w.p)(
                         () =>
                             Promise.all([
+                                o.e("icons.23"),
+                                o.e("icons.0"),
                                 o.e("icons.2"),
-                                o.e("icons.24"),
-                                o.e("icons.10"),
-                                o.e("icons.15"),
-                                o.e("icons.27"),
                                 o.e("icons.16"),
-                                o.e("icons.12"),
-                                o.e("icons.7"),
-                                o.e("icons.5"),
-                                o.e("icons.22"),
                                 o.e("icons.19"),
-                                o.e("icons.17"),
-                                o.e("icons.26"),
-                                o.e("icons.29"),
+                                o.e("icons.10"),
+                                o.e("icons.13"),
+                                o.e("icons.24"),
+                                o.e("icons.7"),
+                                o.e("icons.22"),
                                 o.e("modules.common-e907d115"),
                                 o.e("modules.common-e019dbda"),
+                                o.e("icons.11"),
+                                o.e("icons.26"),
                                 o.e("modules.audio-6107ac1a"),
                                 o.e("modules.audio-b953418a"),
                                 o.e("modules.audio-7c51e6a7"),
@@ -464,6 +462,7 @@
                                 o.e("modules.audio-e019dbda"),
                                 o.e("modules.audio-262c94d4"),
                                 o.e("modules.audio-c6fe4ea4"),
+                                o.e("icons.8"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -523,22 +522,20 @@
                     (0, w.p)(
                         () =>
                             Promise.all([
+                                o.e("icons.23"),
+                                o.e("icons.0"),
                                 o.e("icons.2"),
-                                o.e("icons.24"),
-                                o.e("icons.10"),
-                                o.e("icons.15"),
-                                o.e("icons.27"),
                                 o.e("icons.16"),
-                                o.e("icons.12"),
-                                o.e("icons.7"),
-                                o.e("icons.5"),
-                                o.e("icons.22"),
                                 o.e("icons.19"),
-                                o.e("icons.17"),
-                                o.e("icons.26"),
-                                o.e("icons.29"),
+                                o.e("icons.10"),
+                                o.e("icons.13"),
+                                o.e("icons.24"),
+                                o.e("icons.7"),
+                                o.e("icons.22"),
                                 o.e("modules.common-e907d115"),
                                 o.e("modules.common-e019dbda"),
+                                o.e("icons.11"),
+                                o.e("icons.26"),
                                 o.e("modules.audio-6107ac1a"),
                                 o.e("modules.audio-b953418a"),
                                 o.e("modules.audio-7c51e6a7"),
@@ -549,6 +546,7 @@
                                 o.e("modules.audio-e019dbda"),
                                 o.e("modules.audio-262c94d4"),
                                 o.e("modules.audio-c6fe4ea4"),
+                                o.e("icons.8"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -608,22 +606,20 @@
                     (0, w.p)(
                         () =>
                             Promise.all([
+                                o.e("icons.23"),
+                                o.e("icons.0"),
                                 o.e("icons.2"),
-                                o.e("icons.24"),
-                                o.e("icons.10"),
-                                o.e("icons.15"),
-                                o.e("icons.27"),
                                 o.e("icons.16"),
-                                o.e("icons.12"),
-                                o.e("icons.7"),
-                                o.e("icons.5"),
-                                o.e("icons.22"),
                                 o.e("icons.19"),
-                                o.e("icons.17"),
-                                o.e("icons.26"),
-                                o.e("icons.29"),
+                                o.e("icons.10"),
+                                o.e("icons.13"),
+                                o.e("icons.24"),
+                                o.e("icons.7"),
+                                o.e("icons.22"),
                                 o.e("modules.common-e907d115"),
                                 o.e("modules.common-e019dbda"),
+                                o.e("icons.11"),
+                                o.e("icons.26"),
                                 o.e("modules.audio-6107ac1a"),
                                 o.e("modules.audio-b953418a"),
                                 o.e("modules.audio-7c51e6a7"),
@@ -634,6 +630,7 @@
                                 o.e("modules.audio-e019dbda"),
                                 o.e("modules.audio-262c94d4"),
                                 o.e("modules.audio-c6fe4ea4"),
+                                o.e("icons.8"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -693,22 +690,20 @@
                     (0, w.p)(
                         () =>
                             Promise.all([
+                                o.e("icons.23"),
+                                o.e("icons.0"),
                                 o.e("icons.2"),
-                                o.e("icons.24"),
-                                o.e("icons.10"),
-                                o.e("icons.15"),
-                                o.e("icons.27"),
                                 o.e("icons.16"),
-                                o.e("icons.12"),
-                                o.e("icons.7"),
-                                o.e("icons.5"),
-                                o.e("icons.22"),
                                 o.e("icons.19"),
-                                o.e("icons.17"),
-                                o.e("icons.26"),
-                                o.e("icons.29"),
+                                o.e("icons.10"),
+                                o.e("icons.13"),
+                                o.e("icons.24"),
+                                o.e("icons.7"),
+                                o.e("icons.22"),
                                 o.e("modules.common-e907d115"),
                                 o.e("modules.common-e019dbda"),
+                                o.e("icons.11"),
+                                o.e("icons.26"),
                                 o.e("modules.audio-6107ac1a"),
                                 o.e("modules.audio-b953418a"),
                                 o.e("modules.audio-7c51e6a7"),
@@ -719,6 +714,7 @@
                                 o.e("modules.audio-e019dbda"),
                                 o.e("modules.audio-262c94d4"),
                                 o.e("modules.audio-c6fe4ea4"),
+                                o.e("icons.8"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                                 o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -779,7 +775,7 @@
                 F = { to: k.JK, key: T, label: T, retainScrollPosition: !1 },
                 H = { to: k.ag, key: P, label: P, retainScrollPosition: !1 },
                 W = () => d.createElement(f.Z, { to: k._N }),
-                V = (e) => {
+                O = (e) => {
                     const { featureSwitches: a } = d.useContext(h.rC),
                         { history: o, isLoggedInUserActiveCreator: t } = e,
                         l = a.isTrue("responsive_web_subscribers_ntab_for_creators_enabled"),
@@ -808,7 +804,7 @@
                         }),
                     );
                 },
-                O = _(V);
+                U = _(O);
         },
         934712: (e, a, o) => {
             "use strict";
@@ -926,9 +922,9 @@
                 F = o(962741),
                 H = o(668214),
                 W = o(806960),
-                V = o(175856),
-                O = o(5849);
-            const U = (0, z.Z)((e, a) => a && a.notificationsModule(e, void 0));
+                O = o(175856),
+                U = o(5849);
+            const V = (0, z.Z)((e, a) => a && a.notificationsModule(e, void 0));
             var $ = o(351322),
                 j = o(801184),
                 G = o(335632),
@@ -1000,10 +996,10 @@
             const ne = (e) =>
                     (0, L.C)(
                         ((e) => {
-                            const a = (0, z.Z)(U);
+                            const a = (0, z.Z)(V);
                             return (0, H.Z)()
                                 .propsFromState(() => ({
-                                    shouldShowUnmentionEducation: (e) => (0, V.t5)(e, V.QV),
+                                    shouldShowUnmentionEducation: (e) => (0, O.t5)(e, O.QV),
                                     unreadCount: (o, { history: d, ntabData: n }) => a(e, n)?.selectUnreadEntriesCount(o),
                                     timelineHasTweets: (o, { history: d, ntabData: n }) => {
                                         const r = a(e, n),
@@ -1016,13 +1012,13 @@
                                     setNotificationsPageLoaded: (e) => (a) => {
                                         a((0, W.Wl)(e));
                                     },
-                                    addLeaveThisConversationEducationFlag: () => (0, V.pj)(V.QV),
+                                    addLeaveThisConversationEducationFlag: () => (0, O.pj)(O.QV),
                                     markAllAsRead: a(e, d)?.markAllAsRead,
                                     updateLastRead: (e) => (a, o) => {
                                         const n = d?.updateLastSeenCursor;
                                         n && a(n(e)), a((0, W.SE)(0));
                                     },
-                                    setNotificationsType: O.BZ,
+                                    setNotificationsType: U.BZ,
                                 }))
                                 .adjustStateProps(({ shouldShowUnmentionEducation: o, timelineHasTweets: d, unreadCount: n }, { history: r, ntabData: t }) => ({ ntabData: null, notificationsModule: a(e, t), notificationsType: e, shouldShowUnmentionEducation: o, timelineHasTweets: d, unreadCount: n }))
                                 .withAnalytics({ page: "ntab", section: e });
@@ -1229,7 +1225,7 @@
                     return n.createElement(r.Z, { "aria-label": a, buttonsContainerStyle: l && k.gap, childrenStyle: !m && k.flexGrow, key: b, style: [l ? null : k.segmentedControl, m && k.leftAligned, c], visibleItemIndex: u }, p);
                 };
         },
-        748138: (e, a, o) => {
+        165243: (e, a, o) => {
             "use strict";
             o.r(a), o.d(a, { default: () => i });
             var d = o(202784),
@@ -1238,11 +1234,11 @@
                 t = o(347101);
             const l = (e = {}) => {
                 const { direction: a } = (0, r.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [t.Z.root, e.style], viewBox: "0 0 24 24", children: d.createElement("g", null, d.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: a });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [t.Z.root, e.style], viewBox: "0 0 24 24", children: d.createElement("g", null, d.createElement("path", { d: "M20.29 2.29l-2.34 2.34C16.47 3.01 14.34 2 12 2 7.93 2 4.51 5.02 4 9.05L2.87 18h1.72l-2.3 2.29 1.42 1.42 18-18-1.42-1.42zM6.59 16H5.13l.85-6.7C6.36 6.27 8.94 4 12 4c1.79 0 3.42.78 4.54 2.05L6.59 16zM12 22c-1.57 0-2.98-.73-3.89-1.86l1.42-1.43c.55.78 1.45 1.29 2.47 1.29 1.31 0 2.42-.83 2.83-2H12v-2h6.86l-.74-5.87 1.76-1.76c.05.22.08.44.11.67L21.14 18H16.9c-.46 2.28-2.48 4-4.9 4z" })) }, { writingDirection: a });
             };
             l.metadata = { width: 24, height: 24 };
             const i = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Notifications.e425feda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Notifications.b686b12a.js.map

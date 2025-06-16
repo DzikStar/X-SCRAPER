@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.Compose~bundle.RichTextCompose-bc6ccf4c", "icons/IconAccessibilityCircle-js", "icons/IconBarChartHorizontalStroke-js"],
+    ["shared~bundle.Compose~bundle.RichTextCompose-bc6ccf4c", "icons/IconChevronDown-js", "icons/IconGifPillStroke-js"],
     {
         242454: (e, t, n) => {
             n.d(t, { Z: () => h });
@@ -81,21 +81,21 @@
                 u = n(392237);
             const m = u.default.create((e) => ({ root: { paddingVertical: e.spacesPx.space32 }, rootWithImage: { paddingTop: 0 }, graphic: { marginBottom: e.spacesPx.space20 }, icon: { alignSelf: "center", height: e.spacesPx.space64, width: e.spacesPx.space64 }, container: { paddingHorizontal: e.spacesPx.space32 }, description: { marginTop: e.spacesPx.space8, marginBottom: e.spacesPx.space4 }, actionButton: { marginTop: e.spacesPx.space16 } })),
                 g = ({ actionPrimary: e, actionSecondary: t, children: n, headline: g, icon: y, iconColor: f, image: C, onDismiss: x, shouldDisplay: b, text: w, withMask: E = !0 }) => {
-                    const [S, Z] = r.useState(!1),
-                        v = (e) => r.createElement(h.Z, { onDismiss: R, renderContent: () => _(R), switchOnlyOnXSmallBreakpoint: !0, visibilityBehavior: s.J.forceVisible, withArrow: !0, withFixedPosition: !0, withMask: E }, e),
+                    const [S, v] = r.useState(!1),
+                        Z = (e) => r.createElement(h.Z, { onDismiss: R, renderContent: () => _(R), switchOnlyOnXSmallBreakpoint: !0, visibilityBehavior: s.J.forceVisible, withArrow: !0, withFixedPosition: !0, withMask: E }, e),
                         k = () => r.createElement(p.Z, { onMaskClick: () => R(), type: "center", withMask: !0 }, _(R)),
-                        _ = (n) => r.createElement(o.Z, { style: [m.root, C && m.rootWithImage] }, T(), r.createElement(o.Z, { style: m.container }, F(), D(), P({ action: e, dismiss: n, type: t && "primaryFilled" }), P({ action: t, dismiss: n }))),
+                        _ = (n) => r.createElement(o.Z, { style: [m.root, C && m.rootWithImage] }, T(), r.createElement(o.Z, { style: m.container }, D(), F(), P({ action: e, dismiss: n, type: t && "primaryFilled" }), P({ action: t, dismiss: n }))),
                         T = () => {
                             let e = y && r.createElement(y, { style: f ? [m.icon, { color: u.default.theme.colors[f] }] : m.icon });
                             return C && !d.Z.isEnabled && (e = r.createElement(i.Z, { "aria-label": "", aspectMode: l.Z.exact(2), image: C })), e && r.createElement(o.Z, { style: m.graphic }, e);
                         },
-                        F = () => r.createElement(a.ZP, { size: "title3", weight: "heavy" }, g),
-                        D = () => r.createElement(a.ZP, { color: "gray700", style: m.description }, w),
+                        D = () => r.createElement(a.ZP, { size: "title3", weight: "heavy" }, g),
+                        F = () => r.createElement(a.ZP, { color: "gray700", style: m.description }, w),
                         P = ({ action: e, dismiss: t, type: n }) => e && r.createElement(c.ZP, { link: e.link && e.link, onPress: e.onClick ? e.onClick : t, size: "large", style: m.actionButton, type: n }, e.text),
                         R = () => {
-                            x && x(), Z(!0);
+                            x && x(), v(!0);
                         };
-                    return b && !S ? (n ? v(n) : k()) : n || null;
+                    return b && !S ? (n ? Z(n) : k()) : n || null;
                 };
         },
         130304: (e, t, n) => {
@@ -148,8 +148,8 @@
                 let E = "primary";
                 t >= n ? (E = "red500") : t >= i && (E = "yellow500");
                 const S = r.createElement(c.Z, { color: E, colorInner: E, progress: b, progressInner: w, size: t >= g ? 30 : 20, style: [u.progressCircle, f <= -10 && u.hide] });
-                let Z = null;
-                return t >= g && t < a ? (Z = r.createElement(o.Z, { style: [u.text, u.gray700], testID: "dual-phase-countdown-circle-text" }, p(y))) : t >= i && (Z = r.createElement(o.Z, { style: [u.text, t > n ? u.red500 : u.white], testID: "dual-phase-countdown-circle-text" }, p(f))), r.createElement(s.Z, { style: [u.root, u.center], testID: "dual-phase-countdown-circle" }, x, S, r.createElement(s.Z, { style: [d.default.absoluteFill, u.center] }, Z));
+                let v = null;
+                return t >= g && t < a ? (v = r.createElement(o.Z, { style: [u.text, u.gray700], testID: "dual-phase-countdown-circle-text" }, p(y))) : t >= i && (v = r.createElement(o.Z, { style: [u.text, t > n ? u.red500 : u.white], testID: "dual-phase-countdown-circle-text" }, p(f))), r.createElement(s.Z, { style: [u.root, u.center], testID: "dual-phase-countdown-circle" }, x, S, r.createElement(s.Z, { style: [d.default.absoluteFill, u.center] }, v));
             }
             const u = d.default.create(({ colors: e }) => ({ root: { alignItems: "flex-start", minHeight: 30, minWidth: 30 }, center: { alignItems: "center", justifyContent: "center", margin: "auto" }, progressCircle: { transitionDuration: "0.2s", transitionProperty: "opacity" }, hide: { opacity: 0 }, text: { fontSize: 13, lineHeight: "0.8", minWidth: 16, textAlign: "center" }, gray700: { color: e.gray700 }, red500: { color: e.red500 }, white: { color: e.white } })),
                 m = { characterOverLimitMessage: a().c2fc878d, charactersRemainingInStandardTweetAndTotalMessage: a().f06ae5d3, charactersRemainingMessage: a().db11b27f };
@@ -176,12 +176,12 @@
                     const b = i().af8fa2ae,
                         w = (0, m.b)(),
                         { direction: E } = (0, u.Z)(),
-                        [S, Z] = r.useState(Number.MIN_SAFE_INTEGER),
-                        [v, k] = r.useState(Number.MIN_SAFE_INTEGER),
+                        [S, v] = r.useState(Number.MIN_SAFE_INTEGER),
+                        [Z, k] = r.useState(Number.MIN_SAFE_INTEGER),
                         _ = "rtl" === E,
                         T = (e) => {
                             const { top: t } = e.getBoundingClientRect();
-                            return v > t;
+                            return Z > t;
                         };
                     return r.createElement(
                         r.Fragment,
@@ -196,32 +196,32 @@
                                         },
                                     } = e;
                                     k(n);
-                                    Z(t + r / 2);
+                                    v(t + r / 2);
                                 },
                             },
                             (() => {
-                                const i = !(!t || (v >= 0 && S >= 0)),
+                                const i = !(!t || (Z >= 0 && S >= 0)),
                                     u = t?.current ? ((m = t.current), T(m) ? { flexDirection: "column" } : { flexDirection: "column-reverse" }) : void 0;
                                 var m;
                                 const E = !t?.current || T(t.current),
-                                    Z = t?.current
+                                    v = t?.current
                                         ? ((e) => {
                                               const { left: t, width: n } = e.getBoundingClientRect(),
                                                   r = t + n / 2 - S;
                                               return { start: _ ? void 0 : r, end: _ ? r : void 0 };
                                           })(t.current)
                                         : void 0,
-                                    k = t ? ((t, n) => r.createElement(o.Z, { style: [y.arrowContainer, n, t ? y.arrowDirectionUp : y.arrowDirectionDown], testID: "tooltip-arrow" }, r.createElement(a.default, { style: [y.arrow, C[e], !t && y.arrowDown] })))(E, Z) : void 0,
-                                    F = [u, i && y.hidden];
-                                return r.createElement(o.Z, { style: F, testID: "tooltip-content" }, k, r.createElement(o.Z, { style: [y.root, f[e]] }, r.createElement(o.Z, { style: y.contentContainer }, n && !s ? ((P = n), r.createElement(P, { style: [y.icon, { alignItem: "flex-start" }], testID: "tooltip-icon" })) : null, s && !n ? ((D = s), r.createElement(o.Z, { style: y.illustration, testID: "tooltip-illustration" }, r.createElement(c.Z, { "aria-label": "", aspectMode: h.Z.SQUARE, image: D }))) : null, r.createElement(o.Z, { style: y.contentTextContainer }, r.createElement(d.ZP, { id: w }, x))), g && r.createElement(o.Z, { style: y.dismissButton }, r.createElement(p.ZP, { "aria-describedby": w, "aria-label": b, icon: r.createElement(l.default, { testID: "tooltip-close-icon" }), onPress: g, size: "xSmall", type: "primaryText" }))));
-                                var D, P;
+                                    k = t ? ((t, n) => r.createElement(o.Z, { style: [y.arrowContainer, n, t ? y.arrowDirectionUp : y.arrowDirectionDown], testID: "tooltip-arrow" }, r.createElement(a.default, { style: [y.arrow, C[e], !t && y.arrowDown] })))(E, v) : void 0,
+                                    D = [u, i && y.hidden];
+                                return r.createElement(o.Z, { style: D, testID: "tooltip-content" }, k, r.createElement(o.Z, { style: [y.root, f[e]] }, r.createElement(o.Z, { style: y.contentContainer }, n && !s ? ((P = n), r.createElement(P, { style: [y.icon, { alignItem: "flex-start" }], testID: "tooltip-icon" })) : null, s && !n ? ((F = s), r.createElement(o.Z, { style: y.illustration, testID: "tooltip-illustration" }, r.createElement(c.Z, { "aria-label": "", aspectMode: h.Z.SQUARE, image: F }))) : null, r.createElement(o.Z, { style: y.contentTextContainer }, r.createElement(d.ZP, { id: w }, x))), g && r.createElement(o.Z, { style: y.dismissButton }, r.createElement(p.ZP, { "aria-describedby": w, "aria-label": b, icon: r.createElement(l.default, { testID: "tooltip-close-icon" }), onPress: g, size: "xSmall", type: "primaryText" }))));
+                                var F, P;
                             })(),
                         ),
                     );
                 };
         },
         977952: (e, t, n) => {
-            n.d(t, { Z: () => F });
+            n.d(t, { Z: () => D });
             var r = n(807896),
                 o = n(202784),
                 s = (n(136728), n(301503)),
@@ -351,7 +351,7 @@
             function S() {
                 return { key: "", type: "unstyled", text: "", depth: void 0, inlineStyleRanges: [], entityRanges: [] };
             }
-            class Z extends o.Component {
+            class v extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { containerClass: void 0 }),
@@ -456,17 +456,17 @@
                 }
                 render() {
                     const { multiline: e, onKeyPress: t, onKeyUp: n, testID: r } = this.props;
-                    return o.createElement(v, { className: [!e && h._i.single_line, this.state.containerClass, this.props.withFormatInline && h._i.format_inline].join(" ") }, o.createElement(v, { onClick: this._handleViewClick, style: [this._getContainerStyle(), this.props.style], testID: r ? `${r}RichTextInputContainer` : void 0 }, o.createElement(s.Editor, { ariaActiveDescendantID: this.props.ariaActiveDescendant, ariaAutoComplete: this.props.ariaAutocomplete, ariaControls: this.props.ariaControls, ariaLabel: this.props.ariaLabel, ariaMultiline: e, blockRenderMap: this.props.blockRenderMap, blockRendererFn: this.props.blockRendererFn, blockStyleFn: this.props.blockStyleFn, customAttrs: { [c.Z.NO_REFOCUS_ATTRIBUTE]: "true", onKeyPress: t, onKeyUp: n }, customStyleMap: { overflow: { backgroundColor: d.default.theme.colors.red200 } }, editorState: this.props.editorState, handleBeforeInput: this.props.handleBeforeInput, handleDroppedFiles: this._onDroppedFiles, handleKeyCommand: this._onKeyCommand, handlePastedFiles: this._onPastedFiles, handlePastedText: this._onPastedText, handleReturn: e ? this.props.handleReturn : this._onSingleLineReturn, keyBindingFn: this._myKeyBindingFn, onChange: this.props.onChange, onFocus: this.props.onFocus, onKeyDown: this.props.onKeyDown, placeholder: this.props.placeholder, ref: this._setEditorRef, spellCheck: "false" !== this.props.spellCheck, stripPastedStyles: this.props.stripPastedStyles, tabIndex: 0, webDriverTestID: r }), this.props.dragPlaceholder));
+                    return o.createElement(Z, { className: [!e && h._i.single_line, this.state.containerClass, this.props.withFormatInline && h._i.format_inline].join(" ") }, o.createElement(Z, { onClick: this._handleViewClick, style: [this._getContainerStyle(), this.props.style], testID: r ? `${r}RichTextInputContainer` : void 0 }, o.createElement(s.Editor, { ariaActiveDescendantID: this.props.ariaActiveDescendant, ariaAutoComplete: this.props.ariaAutocomplete, ariaControls: this.props.ariaControls, ariaLabel: this.props.ariaLabel, ariaMultiline: e, blockRenderMap: this.props.blockRenderMap, blockRendererFn: this.props.blockRendererFn, blockStyleFn: this.props.blockStyleFn, customAttrs: { [c.Z.NO_REFOCUS_ATTRIBUTE]: "true", onKeyPress: t, onKeyUp: n }, customStyleMap: { overflow: { backgroundColor: d.default.theme.colors.red200 } }, editorState: this.props.editorState, handleBeforeInput: this.props.handleBeforeInput, handleDroppedFiles: this._onDroppedFiles, handleKeyCommand: this._onKeyCommand, handlePastedFiles: this._onPastedFiles, handlePastedText: this._onPastedText, handleReturn: e ? this.props.handleReturn : this._onSingleLineReturn, keyBindingFn: this._myKeyBindingFn, onChange: this.props.onChange, onFocus: this.props.onFocus, onKeyDown: this.props.onKeyDown, placeholder: this.props.placeholder, ref: this._setEditorRef, spellCheck: "false" !== this.props.spellCheck, stripPastedStyles: this.props.stripPastedStyles, tabIndex: 0, webDriverTestID: r }), this.props.dragPlaceholder));
                 }
             }
-            Z.defaultProps = { allowExtendedPasteStyles: !1, appTextSize: "body", autoFocus: !1, keyCommandHandlers: {}, maxNumberOfLines: 30, multiline: !0, numberOfLines: 6, onFocus: i.Z, positionCursorAtEnd: !1, spellCheck: "true", stripPastedStyles: !0, withMaxHeight: !0, longformRichTextTransform: !1 };
-            const v = (e) => (0, a.Z)("div", e),
+            v.defaultProps = { allowExtendedPasteStyles: !1, appTextSize: "body", autoFocus: !1, keyCommandHandlers: {}, maxNumberOfLines: 30, multiline: !0, numberOfLines: 6, onFocus: i.Z, positionCursorAtEnd: !1, spellCheck: "true", stripPastedStyles: !0, withMaxHeight: !0, longformRichTextTransform: !1 };
+            const Z = (e) => (0, a.Z)("div", e),
                 k = { enter: 13, esc: 27 };
             const _ = { all_newlines: /[\r\n]/g },
                 T = { small: "subtext2", normal: "body", large: "headline1", subtext2: "subtext2", body: "body", headline1: "headline1", title4: "title4" },
-                F = o.forwardRef((e, t) =>
+                D = o.forwardRef((e, t) =>
                     o.createElement(
-                        Z,
+                        v,
                         (0, r.Z)({}, e, {
                             onFocus: function (t) {
                                 e.onFocus && e.onFocus(t);
@@ -486,7 +486,7 @@
             }
             n.d(t, { Z: () => r });
         },
-        689107: (e, t, n) => {
+        487552: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
             var r = n(202784),
                 o = n(890601),
@@ -494,12 +494,12 @@
                 i = n(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, s.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M11.999 22.25c-5.652 0-10.25-4.598-10.25-10.25S6.347 1.75 11.999 1.75 22.249 6.348 22.249 12s-4.598 10.25-10.25 10.25zm0-18.5c-4.549 0-8.25 3.701-8.25 8.25s3.701 8.25 8.25 8.25 8.25-3.701 8.25-8.25-3.701-8.25-8.25-8.25zm.445 6.992c1.747-.096 3.748-.689 3.768-.695l.575 1.916c-.077.022-1.616.48-3.288.689v.498c.287 1.227 1.687 2.866 2.214 3.405l-1.428 1.4c-.188-.191-1.518-1.576-2.286-3.144-.769 1.568-2.098 2.952-2.286 3.144l-1.428-1.4c.527-.54 1.927-2.178 2.214-3.405v-.498c-1.672-.209-3.211-.667-3.288-.689l.575-1.916c.02.006 2.021.6 3.768.695m0 0c.301.017.59.017.891 0M12 6.25c-.967 0-1.75.78-1.75 1.75s.783 1.75 1.75 1.75 1.75-.78 1.75-1.75-.784-1.75-1.75-1.75z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const l = a;
         },
-        853485: (e, t, n) => {
+        937450: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
             var r = n(202784),
                 o = n(890601),
@@ -507,7 +507,7 @@
                 i = n(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, s.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6 5c-1.1 0-2 .895-2 2s.9 2 2 2 2-.895 2-2-.9-2-2-2zM2 7c0-2.209 1.79-4 4-4s4 1.791 4 4-1.79 4-4 4-4-1.791-4-4zm20 1H12V6h10v2zM6 15c-1.1 0-2 .895-2 2s.9 2 2 2 2-.895 2-2-.9-2-2-2zm-4 2c0-2.209 1.79-4 4-4s4 1.791 4 4-1.79 4-4 4-4-1.791-4-4zm20 1H12v-2h10v2zM7 7c0 .552-.45 1-1 1s-1-.448-1-1 .45-1 1-1 1 .448 1 1z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3 5.5C3 4.119 4.12 3 5.5 3h13C19.88 3 21 4.119 21 5.5v13c0 1.381-1.12 2.5-2.5 2.5h-13C4.12 21 3 19.881 3 18.5v-13zM5.5 5c-.28 0-.5.224-.5.5v13c0 .276.22.5.5.5h13c.28 0 .5-.224.5-.5v-13c0-.276-.22-.5-.5-.5h-13zM18 10.711V9.25h-3.74v5.5h1.44v-1.719h1.7V11.57h-1.7v-.859H18zM11.79 9.25h1.44v5.5h-1.44v-5.5zm-3.07 1.375c.34 0 .77.172 1.02.43l1.03-.86c-.51-.601-1.28-.945-2.05-.945C7.19 9.25 6 10.453 6 12s1.19 2.75 2.72 2.75c.85 0 1.54-.344 2.05-.945v-2.149H8.38v1.032H9.4v.515c-.17.086-.42.172-.68.172-.76 0-1.36-.602-1.36-1.375 0-.688.6-1.375 1.36-1.375z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const l = a;
@@ -528,4 +528,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-bc6ccf4c.b86618da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-bc6ccf4c.e73a51fa.js.map
