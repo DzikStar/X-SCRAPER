@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.AppModules-bc6ccf4c", "icons/IconXHeart-js"],
+    ["loader.AppModules-bc6ccf4c"],
     {
         661810: (t, e, i) => {
             i.d(e, { Z: () => r });
@@ -27,17 +27,17 @@
                 p = i(108362),
                 m = i(661810),
                 g = i(365023),
-                f = i(292627),
-                _ = i(537392),
-                E = i(392237);
-            const S = c().af8fa2ae,
+                _ = i(292627),
+                f = i(537392),
+                S = i(392237);
+            const E = c().af8fa2ae,
                 T = n.createElement(h.default, null);
             class y extends n.Component {
                 constructor(...t) {
                     super(...t),
                         (this._renderAriaOnly = () => {
                             const { testID: t, text: e } = this.props;
-                            return n.createElement(r.Z, { role: "alert", style: E.default.visuallyHidden, testID: t }, n.createElement(o.Z, null, e));
+                            return n.createElement(r.Z, { role: "alert", style: S.default.visuallyHidden, testID: t }, n.createElement(o.Z, null, e));
                         }),
                         (this._renderIcon = () => {
                             const { variant: t } = this.props;
@@ -49,7 +49,7 @@
                         }),
                         (this._renderContent = () => {
                             const { action: t, text: e, withAutoDismiss: i, withClearButton: s } = this.props;
-                            return n.createElement(n.Fragment, null, n.createElement(d.ZP, { color: "whiteOnColor", style: I.titleText }, e), n.createElement(r.Z, { "aria-hidden": i, style: I.actionButtons }, t && this._renderActionLabel(t), s && n.createElement(u.ZP, { "aria-label": S, borderColor: "transparent", color: "white", icon: T, onPress: this._handleClose, style: I.closeButton })));
+                            return n.createElement(n.Fragment, null, n.createElement(d.ZP, { color: "whiteOnColor", style: I.titleText }, e), n.createElement(r.Z, { "aria-hidden": i, style: I.actionButtons }, t && this._renderActionLabel(t), s && n.createElement(u.ZP, { "aria-label": E, borderColor: "transparent", color: "white", icon: T, onPress: this._handleClose, style: I.closeButton })));
                         }),
                         (this._renderVariantContent = () => {
                             const { variant: t } = this.props;
@@ -85,13 +85,13 @@
                                 n.createElement(
                                     p.Z,
                                     { style: I.noPointerEvents },
-                                    n.createElement(g.Z, { id: "Toast" }, (e, i) => n.createElement(r.Z, (0, s.Z)({ ref: e() }, i({ role: "alert", style: [I.root, a && this._getRootVariantStyle(), ...c, t > E.default.theme.breakpoints.medium && I.rootWide], testID: o })), h)),
+                                    n.createElement(g.Z, { id: "Toast" }, (e, i) => n.createElement(r.Z, (0, s.Z)({ ref: e() }, i({ role: "alert", style: [I.root, a && this._getRootVariantStyle(), ...c, t > S.default.theme.breakpoints.medium && I.rootWide], testID: o })), h)),
                                 ),
                             );
                         }),
                         (this._renderContentWithoutLayer = ({ windowWidth: t }) => {
                             const { testID: e } = this.props;
-                            return n.createElement(p.Z, null, n.createElement(r.Z, { role: "alert", style: [I.root, t > E.default.theme.breakpoints.medium && I.rootWide], testID: e }, this._renderContent()));
+                            return n.createElement(p.Z, null, n.createElement(r.Z, { role: "alert", style: [I.root, t > S.default.theme.breakpoints.medium && I.rootWide], testID: e }, this._renderContent()));
                         }),
                         (this._createTimer = () => {
                             const { action: t, autoDismissDelay: e, onClose: i, text: s, withAutoDismiss: n } = this.props;
@@ -117,7 +117,7 @@
                 }
                 render() {
                     const { ariaOnly: t, withoutLayer: e } = this.props;
-                    return t ? this._renderAriaOnly() : n.createElement(_.ZP, null, e ? this._renderContentWithoutLayer : this._renderContentWithLayer);
+                    return t ? this._renderAriaOnly() : n.createElement(f.ZP, null, e ? this._renderContentWithoutLayer : this._renderContentWithLayer);
                 }
                 _renderActionLabel(t) {
                     const { label: e, link: i } = t;
@@ -131,8 +131,8 @@
                     clearTimeout(this._timerId);
                 }
             }
-            y.defaultProps = { withAutoDismiss: !0, withClearButton: !1, LayerComponent: f.Z.ModalToasts };
-            const I = E.default.create((t) => ({ root: { alignItems: "center", backgroundColor: t.colors.primary, flexDirection: "row", justifyContent: "space-between", padding: t.spaces.space12, pointerEvents: "auto" }, rootVariantJp: { alignItems: "flex-start", backgroundColor: t.colors.green500, pointerEvents: "auto", flexDirection: "row", padding: t.spaces.space12 }, rootVariantJetfuel: { flexDirection: "column", alignItems: "center", backgroundColor: "transparent" }, icon: { flexShrink: 0, width: 50, height: 50 }, noPointerEvents: { pointerEvents: "none" }, body: { flexShrink: 1 }, divider: { marginHorizontal: t.spaces.space12, backgroundColor: t.colors.white }, content: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" }, rootWide: { alignSelf: "center", borderRadius: t.borderRadii.small, marginBottom: t.spaces.space32 }, titleText: { flexShrink: 1, paddingHorizontal: t.spaces.space12 }, actionText: { alignSelf: "center", whiteSpace: "nowrap", marginEnd: t.spaces.space12 }, actionButtons: { flexDirection: "row" }, actionMargin: { marginHorizontal: t.spaces.space12 }, closeButton: { marginStart: t.spaces.space12, paddingHorizontal: t.spaces.space4 } })),
+            y.defaultProps = { withAutoDismiss: !0, withClearButton: !1, LayerComponent: _.Z.ModalToasts };
+            const I = S.default.create((t) => ({ root: { alignItems: "center", backgroundColor: t.colors.primary, flexDirection: "row", justifyContent: "space-between", padding: t.spaces.space12, pointerEvents: "auto" }, rootVariantJp: { alignItems: "flex-start", backgroundColor: t.colors.green500, pointerEvents: "auto", flexDirection: "row", padding: t.spaces.space12 }, rootVariantJetfuel: { flexDirection: "column", alignItems: "center", backgroundColor: "transparent" }, icon: { flexShrink: 0, width: 50, height: 50 }, noPointerEvents: { pointerEvents: "none" }, body: { flexShrink: 1 }, divider: { marginHorizontal: t.spaces.space12, backgroundColor: t.colors.white }, content: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" }, rootWide: { alignSelf: "center", borderRadius: t.borderRadii.small, marginBottom: t.spaces.space32 }, titleText: { flexShrink: 1, paddingHorizontal: t.spaces.space12 }, actionText: { alignSelf: "center", whiteSpace: "nowrap", marginEnd: t.spaces.space12 }, actionButtons: { flexDirection: "row" }, actionMargin: { marginHorizontal: t.spaces.space12 }, closeButton: { marginStart: t.spaces.space12, paddingHorizontal: t.spaces.space4 } })),
                 w = y;
         },
         98440: (t, e, i) => {
@@ -146,32 +146,6 @@
                 return (0, n.Z)("svg", { ...t, role: t["aria-label"] ? t.role || "img" : void 0, "aria-hidden": void 0 === t["aria-label"], style: [r.Z.root, t.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: e });
             };
             a.metadata = { width: 24, height: 24 };
-            const c = a;
-        },
-        452693: (t, e, i) => {
-            i.r(e), i.d(e, { default: () => c });
-            var s = i(202784),
-                n = i(890601),
-                o = i(783427),
-                r = i(347101);
-            const a = (t = {}) => {
-                const { direction: e } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...t, role: t["aria-label"] ? t.role || "img" : void 0, "aria-hidden": void 0 === t["aria-label"], style: [r.Z.root, t.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: e });
-            };
-            a.metadata = { width: 24, height: 24 };
-            const c = a;
-        },
-        540820: (t, e, i) => {
-            i.r(e), i.d(e, { default: () => c });
-            var s = i(202784),
-                n = i(890601),
-                o = i(783427),
-                r = i(347101);
-            const a = (t = {}) => {
-                const { direction: e } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...t, role: t["aria-label"] ? t.role || "img" : void 0, "aria-hidden": void 0 === t["aria-label"], style: [r.Z.root, t.style], viewBox: "0 0 50 50", children: s.createElement("g", null, s.createElement("path", { d: "M25.23 12.24l-2.1-2.1c-4.54-4.54-11.9-4.54-16.45 0h0c-4.54 4.54-4.54 11.9 0 16.45l18.55 18.55 16.45-16.45 2.1-2.1c4.54-4.54 4.54-11.9 0-16.45h0c-4.54-4.54-11.9-4.54-16.45 0l-2.1 2.1h0z", fill: "none", stroke: "#fff", strokeMiterlimit: "10" }), s.createElement("path", { d: "M26.86 23.19l6.39-7.29h-1.51l-5.55 6.33-4.43-6.33h-5.11l6.7 9.57-6.7 7.64h1.51l5.86-6.68 4.68 6.68h5.11l-6.95-9.92zm-2.07 2.37l-.68-.95-5.4-7.58h2.33l4.36 6.12.68.95 5.67 7.95h-2.33l-4.62-6.49z", fill: "#fff" })) }, { writingDirection: e });
-            };
-            a.metadata = { width: 50, height: 50 };
             const c = a;
         },
         19697: (t, e, i) => {
@@ -536,7 +510,7 @@
                         });
         },
         653843: (t, e, i) => {
-            i.d(e, { Y7: () => p, ZP: () => y, m2: () => E });
+            i.d(e, { Y7: () => p, ZP: () => y, m2: () => S });
             var s = i(19697),
                 n = i(790187),
                 o = i(549755),
@@ -574,26 +548,26 @@
                     const { height: s, size: n, width: o } = t;
                     return o > i || s > i || n > e;
                 },
-                f = (t, e) => e || { top: 0, left: 0, width: t.width, height: t.height },
-                _ = (t, e) => {
-                    const { height: i, left: s, top: n, width: o } = f(t, e);
+                _ = (t, e) => e || { top: 0, left: 0, width: t.width, height: t.height },
+                f = (t, e) => {
+                    const { height: i, left: s, top: n, width: o } = _(t, e);
                     return !(0 === n && 0 === s && o === t.width && i === t.height);
                 };
-            function E(t, e) {
+            function S(t, e) {
                 const { maxFileSize: i = l, maxDimension: s = d, cropData: n, jpgPixelsPerByteForResize: o } = e || {},
                     r = "image/jpeg" === t.type,
                     a = (t.width * t.height) / t.size;
-                return m(t) || g(t, i, s) || _(t, n) || (r && !!o && a < o);
+                return m(t) || g(t, i, s) || f(t, n) || (r && !!o && a < o);
             }
-            const S = (t, e) => {
+            const E = (t, e) => {
                     const { height: i, width: s } = t;
                     return s <= e && i <= e ? { width: s, height: i } : s > i ? { width: e, height: Math.round(i / (s / e)) } : { width: Math.round(s / (i / e)), height: e };
                 },
                 T = (t) => ("function" == typeof t.decode ? t.decode() : Promise.resolve());
             function y(t, e) {
                 const { maxFileSize: i = l, maxDimension: n = d, targetQuality: a = u, cropData: h } = e || {},
-                    m = f(t, h);
-                if (!E(t, e)) return Promise.resolve(t.fileHandle);
+                    m = _(t, h);
+                if (!S(t, e)) return Promise.resolve(t.fileHandle);
                 if (!(0, r.DS)(t)) {
                     const t = new o.Z("The provided file is not a valid image", p.FILE_IS_NOT_AN_IMAGE);
                     return Promise.reject(t);
@@ -608,7 +582,7 @@
                     .then(({ img: t, orientation: e }) => {
                         const i = ({ height: i, width: n }) => (0, s.$i)(t, n, i, e, m);
                         return T(t)
-                            .then(() => ((t) => t(S(m, n)))(i))
+                            .then(() => ((t) => t(E(m, n)))(i))
                             .then(g);
                     })
                     .catch(() => {
@@ -837,7 +811,7 @@
                     },
                 };
             }
-            i.d(e, { Z: () => l, d: () => E });
+            i.d(e, { Z: () => l, d: () => S });
             i(543673), i(240753), i(128399);
             function n(t) {
                 const e = new URLSearchParams();
@@ -873,7 +847,7 @@
                         this._notifyProgress(this._uploadProgress());
                 }
                 cancel() {
-                    "function" == typeof this.uploadOptions.error && this.uploadOptions.error({ code: E.CANCELED }), this._clearState();
+                    "function" == typeof this.uploadOptions.error && this.uploadOptions.error({ code: S.CANCELED }), this._clearState();
                 }
                 pollStatusOfExistingMediaId(t, e) {
                     (this.mediaId = t), (this.uploadOptions = e || y), (this.state = T.PENDING), this._getStatus();
@@ -938,7 +912,7 @@
                                 (...t) => this._uploadError(...t),
                                 u,
                             );
-                    } else this._uploadError({ code: E.ZERO_FILE_LENGTH });
+                    } else this._uploadError({ code: S.ZERO_FILE_LENGTH });
                 }
                 _initSuccess(t) {
                     this.state === T.PENDING && ((this.mediaId = t.media_id_string), (this.mediaKey = t.media_key), this._setSessionTimeout(t.expires_after_secs), this._bitrateMonitor ? this._bitrateMonitor.start() : this._startNextAppendSegment());
@@ -947,7 +921,7 @@
                     if ((this.timeoutIdMap.session && (clearTimeout(this.timeoutIdMap.session), delete this.timeoutIdMap.session), t)) {
                         const e = Math.min(d, 1e3 * t);
                         this.timeoutIdMap.session = setTimeout(() => {
-                            this._uploadError({ code: E.TIMEOUT }), this._stats("NONE", "timeout"), this._clearState();
+                            this._uploadError({ code: S.TIMEOUT }), this._stats("NONE", "timeout"), this._clearState();
                         }, e);
                     }
                 }
@@ -1021,7 +995,7 @@
                         case "failed": {
                             const t = e.error;
                             let i;
-                            return (i = t?.code ? S[String(t.code)] : E.INTERNAL_ERROR), void this._uploadError({ ...t, code: i });
+                            return (i = t?.code ? E[String(t.code)] : S.INTERNAL_ERROR), void this._uploadError({ ...t, code: i });
                         }
                         default:
                             return void this._uploadError();
@@ -1051,8 +1025,8 @@
                     const e = t.error?.match(/{ "message": "maxFileSizeExceeded", "maxFileSizeBytes": \d+ }/);
                     if (e) {
                         const t = JSON.parse(e[0]);
-                        this.error = { code: E.FILE_TOO_LARGE, message: t.message, maxSizeBytes: t.maxFileSizeBytes };
-                    } else t && t.code ? (this.error = t) : (this.error = { code: E.INTERNAL_ERROR, message: t?.error });
+                        this.error = { code: S.FILE_TOO_LARGE, message: t.message, maxSizeBytes: t.maxFileSizeBytes };
+                    } else t && t.code ? (this.error = t) : (this.error = { code: S.INTERNAL_ERROR, message: t?.error });
                     (this.state = T.FAILED), this._notifyResult();
                 }
                 _uploadProgress() {
@@ -1084,11 +1058,11 @@
                                 const o = [d, r].join("-");
                                 this.timeoutIdMap[o] = setTimeout(() => {
                                     this._sendXhr(t, e, i, s, n, r - 1, a, h, l);
-                                }, _);
-                            } else S(o);
+                                }, f);
+                            } else E(o);
                         },
-                        S = (t) => {
-                            this._stats(e, t || "unknown-error", { requestStartTime: m, segmentBytes: l }), "function" == typeof n && n(I(T) || { code: E.INVALID_RES_STATUS, mediaId: this.mediaId });
+                        E = (t) => {
+                            this._stats(e, t || "unknown-error", { requestStartTime: m, segmentBytes: l }), "function" == typeof n && n(I(T) || { code: S.INVALID_RES_STATUS, mediaId: this.mediaId });
                         },
                         T = new XMLHttpRequest();
                     T.open(t, d, !0),
@@ -1098,7 +1072,7 @@
                             if (T.status >= 200 && T.status < 400) {
                                 const t = I(T);
                                 204 === T.status || t ? (this._stats(e, "success", { requestStartTime: m, segmentBytes: l }), s(t || {}), !u && h && h()) : g("parsererror");
-                            } else T.status && 503 !== T.status ? S("invalid-response") : g("503");
+                            } else T.status && 503 !== T.status ? E("invalid-response") : g("503");
                         }),
                         (T.onerror = () => g("error")),
                         (T.ontimeout = () => {
@@ -1109,7 +1083,7 @@
                         y ? t.loaded === t.total && this._bitrateMonitor?.uploadFinish(d, t.total) : ((y = !0), this._bitrateMonitor?.uploadStart(d, t.loaded));
                         const e = t.loaded,
                             i = ((this.uploadedBytes + e) / this.totalBytes) * 100;
-                        if ((this._notifyProgress(i, this.mediaId), e / t.total > f && !u && ((u = !0), a))) {
+                        if ((this._notifyProgress(i, this.mediaId), e / t.total > _ && !u && ((u = !0), a))) {
                             const t = Math.max(1, new Date().getTime() - m.getTime()),
                                 i = this.minSegmentBytes,
                                 s = this.sruParameterOverrides?.maxSegmentBytes;
@@ -1130,10 +1104,10 @@
                 p = 45e3,
                 m = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload.json",
                 g = 2,
-                f = 0.95,
-                _ = 1e3,
-                E = Object.freeze({ FILE_TOO_LARGE: 2, INTERNAL_ERROR: 131, INVALID_MEDIA: 1, RATE_LIMIT: 88, TIMEOUT: 67, UNSUPPORTED_MEDIA: 3, ZERO_FILE_LENGTH: 4, CANCELED: 999, INVALID_RES_STATUS: -1 }),
-                S = Object.freeze({ 0: E.INTERNAL_ERROR, 1: E.INVALID_MEDIA, 2: E.FILE_TOO_LARGE, 3: E.UNSUPPORTED_MEDIA, 4: E.TIMEOUT }),
+                _ = 0.95,
+                f = 1e3,
+                S = Object.freeze({ FILE_TOO_LARGE: 2, INTERNAL_ERROR: 131, INVALID_MEDIA: 1, RATE_LIMIT: 88, TIMEOUT: 67, UNSUPPORTED_MEDIA: 3, ZERO_FILE_LENGTH: 4, CANCELED: 999, INVALID_RES_STATUS: -1 }),
+                E = Object.freeze({ 0: S.INTERNAL_ERROR, 1: S.INVALID_MEDIA, 2: S.FILE_TOO_LARGE, 3: S.UNSUPPORTED_MEDIA, 4: S.TIMEOUT }),
                 T = Object.freeze({ RESET: 0, PENDING: 1, PAUSED: 2, SUCCEEDED: 3, FAILED: 4 }),
                 y = {};
             function I(t) {
@@ -1146,4 +1120,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-bc6ccf4c.db7f26ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-bc6ccf4c.c34612aa.js.map

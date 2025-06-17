@@ -735,15 +735,11 @@
                 P = (0, M.p)(
                     () =>
                         Promise.all([
-                            t.e("icons.21"),
-                            t.e("icons.16"),
-                            t.e("icons.10"),
-                            t.e("icons.1"),
-                            t.e("icons.19"),
-                            t.e("icons.0"),
-                            t.e("icons.23"),
                             t.e("icons.8"),
-                            t.e("icons.2"),
+                            t.e("icons.15"),
+                            t.e("icons.7"),
+                            t.e("icons.3"),
+                            t.e("icons.24"),
                             t.e("modules.common-e907d115"),
                             t.e("modules.common-e019dbda"),
                             t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
@@ -788,15 +784,11 @@
                 x = (0, M.p)(
                     () =>
                         Promise.all([
-                            t.e("icons.21"),
-                            t.e("icons.16"),
-                            t.e("icons.10"),
-                            t.e("icons.1"),
-                            t.e("icons.19"),
-                            t.e("icons.0"),
-                            t.e("icons.23"),
                             t.e("icons.8"),
-                            t.e("icons.2"),
+                            t.e("icons.15"),
+                            t.e("icons.7"),
+                            t.e("icons.3"),
+                            t.e("icons.24"),
                             t.e("modules.common-e907d115"),
                             t.e("modules.common-e019dbda"),
                             t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
@@ -1001,4 +993,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GifSearch.5b86101a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GifSearch.b2436fba.js.map

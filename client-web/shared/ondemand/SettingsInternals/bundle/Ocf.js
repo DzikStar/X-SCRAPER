@@ -80,13 +80,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: r, fixed: n, hideBackButton: s, isFullWidth: i, isLarge: c, leftControl: d, middleControl: p, position: h, rightControl: m, secondaryBar: f, style: g, subtitle: y, title: b, titleDomId: v, titleIconCell: k, titleIconCellSize: E, withBackground: C, withWideContainer: w } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: r, fixed: n, hideBackButton: s, isFullWidth: i, isLarge: c, leftControl: d, middleControl: p, position: h, rightControl: f, secondaryBar: g, style: m, subtitle: y, title: b, titleDomId: v, titleIconCell: k, titleIconCellSize: C, withBackground: E, withWideContainer: w } = this.props,
                         { isModal: x } = this.context,
                         S = s ? d : o.createElement(a.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         Z = (function (e, t, r) {
                             return e && !(t && r);
-                        })(!!C, x, !!f);
-                    return o.createElement(o.Fragment, null, o.createElement(l.Z, { centerTitle: t, centeredLogo: r, isFullWidth: i, isLarge: c, leftControl: S, middleControl: p, position: u(h, x, n), rightControl: m, style: g, subtitle: y, title: b, titleDomId: v, titleIconCell: k, titleIconCellSize: E, withBackground: Z, withWideContainer: w }), f || null);
+                        })(!!E, x, !!g);
+                    return o.createElement(o.Fragment, null, o.createElement(l.Z, { centerTitle: t, centeredLogo: r, isFullWidth: i, isLarge: c, leftControl: S, middleControl: p, position: u(h, x, n), rightControl: f, style: m, subtitle: y, title: b, titleDomId: v, titleIconCell: k, titleIconCellSize: C, withBackground: Z, withWideContainer: w }), g || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -116,7 +116,7 @@
         },
         290402: (e, t, r) => {
             "use strict";
-            r.d(t, { Z: () => m });
+            r.d(t, { Z: () => f });
             var o = r(807896),
                 n = r(202784),
                 s = r(182056),
@@ -131,11 +131,11 @@
                     return n.createElement(i.Z, (0, o.Z)({}, t, { icon: a ? void 0 : n.createElement(d.default, { style: h.icon }), retryMessage: a ? e : u }));
                 },
                 h = a.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
-                m = n.forwardRef(p);
+                f = n.forwardRef(p);
         },
         980407: (e, t, r) => {
             "use strict";
-            r.d(t, { Z: () => f, w: () => h });
+            r.d(t, { Z: () => g, w: () => h });
             var o = r(202784),
                 n = r(325686),
                 s = r(108362),
@@ -150,9 +150,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: r, backLocation: s, centerTitle: i, hideBackButton: a, history: l, isFullWidth: u, isLarge: p, middleControl: h, onBackClick: f, rightControl: g, secondaryBar: y, subtitle: b, title: v } = this.props,
+                            const { appBarRef: e, appBarStyle: t, backButtonType: r, backLocation: s, centerTitle: i, hideBackButton: a, history: l, isFullWidth: u, isLarge: p, middleControl: h, onBackClick: g, rightControl: m, secondaryBar: y, subtitle: b, title: v } = this.props,
                                 { isModal: k } = this.context;
-                            return o.createElement(n.Z, { style: k ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, o.createElement(d.ZP, { backButtonType: r || (k ? "close" : "back"), backLocation: s, centerTitle: i, fixed: !k, hideBackButton: a, history: l, isFullWidth: u, isLarge: p, middleControl: h, onBackClick: f, ref: e, rightControl: g, secondaryBar: y, style: [k && m.appBarModal, t], subtitle: b, title: v, titleDomId: c.Q_ }));
+                            return o.createElement(n.Z, { style: k ? [f.childViewAppBarRoot, f.appBarZindex] : f.appBarZindex }, o.createElement(d.ZP, { backButtonType: r || (k ? "close" : "back"), backLocation: s, centerTitle: i, fixed: !k, hideBackButton: a, history: l, isFullWidth: u, isLarge: p, middleControl: h, onBackClick: g, ref: e, rightControl: m, secondaryBar: y, style: [k && f.appBarModal, t], subtitle: b, title: v, titleDomId: c.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -161,15 +161,15 @@
                         });
                 }
                 render() {
-                    const { "aria-hidden": e, bottomBar: t, children: r, containerStyle: i, documentTitle: a, isFullWidth: c, isLarge: d, renderHeader: h, title: f, withoutBottomBarMobile: g } = this.props,
+                    const { "aria-hidden": e, bottomBar: t, children: r, containerStyle: i, documentTitle: a, isFullWidth: c, isLarge: d, renderHeader: h, title: g, withoutBottomBarMobile: m } = this.props,
                         { isModal: y } = this.context,
                         b = h ? h(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return o.createElement(l.Z, null, o.createElement(u.Z.Configure, { documentTitle: a, headerless: !0, title: f }), o.createElement(n.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [m.root, y && m.rootModal] }, !y && b, o.createElement(s.Z, { isFullWidth: c, isLarge: d, style: [m.container, y && m.containerModal, i] }, y ? o.createElement(p.Z, { style: m.viewport }, b, r) : r), t ? o.createElement(n.Z, { style: [m.bottomBarModal, !y && !g && m.bottomBarMobile] }, o.createElement(s.Z, { isFullWidth: c, isLarge: d }, t)) : null));
+                    return o.createElement(l.Z, null, o.createElement(u.Z.Configure, { documentTitle: a, headerless: !0, title: g }), o.createElement(n.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [f.root, y && f.rootModal] }, !y && b, o.createElement(s.Z, { isFullWidth: c, isLarge: d, style: [f.container, y && f.containerModal, i] }, y ? o.createElement(p.Z, { style: f.viewport }, b, r) : r), t ? o.createElement(n.Z, { style: [f.bottomBarModal, !y && !m && f.bottomBarMobile] }, o.createElement(s.Z, { isFullWidth: c, isLarge: d }, t)) : null));
                 }
             }
             (h.defaultProps = { isFullWidth: !1, isLarge: !1 }), (h.contextType = i.Z);
-            const m = a.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 }, rootModal: { borderRadius: e.borderRadii.xLarge, flexShrink: 1 }, appBarModal: { borderTopStartRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, childViewAppBarRoot: { position: "sticky", top: 0 }, appBarZindex: { zIndex: e.componentZIndices.appBarZIndex }, container: { flexGrow: 1 }, containerModal: { flexShrink: 1 }, viewport: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge, flexGrow: 1, flexShrink: 1, overflow: "auto", zIndex: void 0 }, bottomBarModal: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small }, bottomBarMobile: { position: "fixed", backfaceVisibility: "hidden", bottom: 0, width: "100%", paddingBottom: a.default.iPhoneOffsetBottom, backgroundColor: e.colors.navigationBackground, borderTopStyle: "solid" } })),
-                f = h;
+            const f = a.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 }, rootModal: { borderRadius: e.borderRadii.xLarge, flexShrink: 1 }, appBarModal: { borderTopStartRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, childViewAppBarRoot: { position: "sticky", top: 0 }, appBarZindex: { zIndex: e.componentZIndices.appBarZIndex }, container: { flexGrow: 1 }, containerModal: { flexShrink: 1 }, viewport: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge, flexGrow: 1, flexShrink: 1, overflow: "auto", zIndex: void 0 }, bottomBarModal: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small }, bottomBarMobile: { position: "fixed", backfaceVisibility: "hidden", bottom: 0, width: "100%", paddingBottom: a.default.iPhoneOffsetBottom, backgroundColor: e.colors.navigationBackground, borderTopStyle: "solid" } })),
+                g = h;
         },
         965245: (e, t, r) => {
             "use strict";
@@ -193,7 +193,7 @@
         },
         56851: (e, t, r) => {
             "use strict";
-            r.d(t, { Z: () => f });
+            r.d(t, { Z: () => g });
             var o = r(202784),
                 n = r(420740),
                 s = r(108362),
@@ -205,13 +205,13 @@
                 u = r(349035);
             const p = "error-detail",
                 h = d().e49537c2,
-                m = d().a9ae1e78;
-            class f extends o.PureComponent {
+                f = d().a9ae1e78;
+            class g extends o.PureComponent {
                 render() {
-                    return o.createElement(n.Z, { testID: p }, o.createElement(u.Z, null), o.createElement(s.Z, { style: g.root }, o.createElement(i.ZP, { align: "center", color: "gray700", style: g.retryText }, h), o.createElement(a.ZP, { link: { pathname: "/search" }, type: "brandFilled" }, m)));
+                    return o.createElement(n.Z, { testID: p }, o.createElement(u.Z, null), o.createElement(s.Z, { style: m.root }, o.createElement(i.ZP, { align: "center", color: "gray700", style: m.retryText }, h), o.createElement(a.ZP, { link: { pathname: "/search" }, type: "brandFilled" }, f)));
                 }
             }
-            const g = l.default.create((e) => ({ root: { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12 }, retryText: { marginBottom: e.spaces.space28 } }));
+            const m = l.default.create((e) => ({ root: { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12 }, retryText: { marginBottom: e.spaces.space28 } }));
         },
         652904: (e, t, r) => {
             "use strict";
@@ -268,17 +268,17 @@
             const u = i().cfd2f35e,
                 p = i().f9e45cfb,
                 h = i().fcd4d489,
-                m = i().a6450e84,
-                f = i().g353ad73,
-                g = i().ad00a739,
+                f = i().a6450e84,
+                g = i().g353ad73,
+                m = i().ad00a739,
                 y = i().a9fd20be,
                 b = i().j546fb79,
                 v = i().c9623eeb,
                 k = i().e133be4e,
-                E = i().he43bca4,
-                C = i().f5f01af6,
+                C = i().he43bca4,
+                E = i().f5f01af6,
                 w = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                x = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: m, text: t ? g({ screenName: e }) : f({ screenName: e }) }),
+                x = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: f, text: t ? m({ screenName: e }) : g({ screenName: e }) }),
                 S = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: r, source: o, testID: n, unblockAction: s, unblockSubtext: i, user: a }) => {
                     let l,
                         u = c.Z;
@@ -304,7 +304,7 @@
                 Z = (e) => (e ? l.default : a.default),
                 _ = ({ blockSubtext: e, unblockSubtext: t, user: r }) => (!r.blocking && e ? e(r.screen_name) : r.blocking ? t : void 0),
                 T = (e) => (e.blocking ? v({ screenName: e.screen_name }) : h({ screenName: e.screen_name })),
-                I = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: b({ screenName: e }), label: k, text: t ? C : E }))(e.screen_name, t) : x(e.screen_name, t)),
+                I = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: b({ screenName: e }), label: k, text: t ? E : C }))(e.screen_name, t) : x(e.screen_name, t)),
                 B = ({ confirmation: e, handleConfirm: t, onClose: r }) => {
                     const { confirmButtonType: s, headline: i, label: a, text: l } = e;
                     return o.createElement(n.Z, { cancelButtonLabel: u, confirmButtonLabel: a, confirmButtonType: s, headline: i, onCancel: r, onConfirm: t, text: l });
@@ -324,7 +324,7 @@
         },
         163390: (e, t, r) => {
             "use strict";
-            r.d(t, { OX: () => p, Od: () => d, PN: () => h, uq: () => c, wR: () => f });
+            r.d(t, { OX: () => p, Od: () => d, PN: () => h, uq: () => c, wR: () => g });
             var o = r(251067),
                 n = r(522171),
                 s = r(111677),
@@ -361,7 +361,7 @@
                     { description: i().a7e604c6, keys: c.audio.play, universal: !1 },
                     { description: i().f978c4fc, keys: c.audio.mute, universal: !1 },
                 ],
-                m = (0, a.Z)((e) => {
+                f = (0, a.Z)((e) => {
                     const t = d(e),
                         r = p(),
                         o = h(),
@@ -377,8 +377,8 @@
                         JSON.stringify(n)
                     );
                 }),
-                f = (e, t) => {
-                    if (t) return { dataSet: { "at-shortcutkeys": m(e) } };
+                g = (e, t) => {
+                    if (t) return { dataSet: { "at-shortcutkeys": f(e) } };
                 };
         },
         409438: (e, t, r) => {
@@ -445,7 +445,7 @@
         },
         466441: (e, t, r) => {
             "use strict";
-            r.r(t), r.d(t, { NotFoundScreen: () => v, default: () => E });
+            r.r(t), r.d(t, { NotFoundScreen: () => v, default: () => C });
             r(571372);
             var o = r(202784),
                 n = r(386802),
@@ -458,24 +458,24 @@
                 u = r(38293),
                 p = r(56851),
                 h = r(652904),
-                m = r(952793),
-                f = r(163889),
-                g = r(725516);
+                f = r(952793),
+                g = r(163889),
+                m = r(725516);
             const y = l().ba929da8,
                 b = l().d203e242;
             function v(e) {
                 const { splat: t } = e.match.params,
                     { isModal: r } = o.useContext(n.Z),
-                    i = (0, m.hC)("responsive_web_report_page_not_found");
+                    i = (0, f.hC)("responsive_web_report_page_not_found");
                 return (
                     (0, c.q)(() => {
-                        i && t && (0, f.ZP)(new Error(`Page not found: ${t}`));
+                        i && t && (0, g.ZP)(new Error(`Page not found: ${t}`));
                     }),
                     o.createElement(h.Z, null, o.createElement(d.Z.Configure, { backLocation: "/", documentTitle: y, title: b }), o.createElement(s.Z, { style: r && k.modal }, o.createElement(p.Z, null)), o.createElement(u.Z, { title: y, withMeta: !1 }))
                 );
             }
             const k = i.default.create((e) => ({ modal: { backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.xLarge } })),
-                E = (0, g.Z)(v, { page: "not_found" });
+                C = (0, m.Z)(v, { page: "not_found" });
         },
         242454: (e, t, r) => {
             "use strict";
@@ -513,10 +513,10 @@
                     return !(!t && !r) || !s()(e, this.props);
                 }
                 render() {
-                    const { "aria-label": e, color: t, failureMessage: r, fetchStatus: n, icon: s, loadingMessage: i, onRequestRetry: d, render: h, renderFailure: m, retryMessage: f, retryable: g } = this.props;
+                    const { "aria-label": e, color: t, failureMessage: r, fetchStatus: n, icon: s, loadingMessage: i, onRequestRetry: d, render: h, renderFailure: f, retryMessage: g, retryable: m } = this.props;
                     switch (n) {
                         case c:
-                            return g ? o.createElement(a.Z, { icon: s, onRequestRetry: d, retryMessage: f }) : r ? o.createElement(l.m, { failureMessage: r }) : m();
+                            return m ? o.createElement(a.Z, { icon: s, onRequestRetry: d, retryMessage: g }) : r ? o.createElement(l.m, { failureMessage: r }) : f();
                         case u:
                             return o.createElement(l.J, { "aria-label": e, color: t, loadingMessage: i });
                         case p:
@@ -539,13 +539,13 @@
                 l = r(952428),
                 c = r(392237);
             const d = (e) => {
-                    const { decoration: t, description: r, disabled: d = !1, isActive: p = !1, label: h, link: m, onPress: f, paddingHorizontal: g, renderRightContent: y, role: b = "tab", styleOverride: v, testID: k = "pivot", thumbnail: E, thumbnailSize: C, withoutArrow: w = !1 } = e,
-                        x = [u.thumbnailContainer, "medium" === C && u.thumbnailContainerMedium],
+                    const { decoration: t, description: r, disabled: d = !1, isActive: p = !1, label: h, link: f, onPress: g, paddingHorizontal: m, renderRightContent: y, role: b = "tab", styleOverride: v, testID: k = "pivot", thumbnail: C, thumbnailSize: E, withoutArrow: w = !1 } = e,
+                        x = [u.thumbnailContainer, "medium" === E && u.thumbnailContainerMedium],
                         S = "string" == typeof h ? o.createElement(a.ZP, null, h) : h,
-                        Z = "object" == typeof m && m.external && !m.openInSameFrame,
+                        Z = "object" == typeof f && f.external && !f.openInSameFrame,
                         _ = r ? ("string" == typeof r ? o.createElement(a.ZP, { color: "gray700", size: "subtext2", testID: `${k}-description` }, r) : r) : null,
-                        T = o.useMemo(() => ("space0" === g ? { paddingHorizontal: 0 } : { paddingHorizontal: g ? c.default.theme.spaces[g] : c.default.theme.componentDimensions.gutterHorizontal }), [g]);
-                    return o.createElement(l.Z, { "aria-selected": "tab" === b ? p : null, disabled: d, link: d ? void 0 : m, onPress: f, role: b, style: [u.root, T, d && u.disabled, v], testID: k, withInteractiveStyling: !!m || !!f }, o.createElement(n.Z, { style: u.contentContainer }, E ? o.createElement(n.Z, { style: x }, E) : null, o.createElement(n.Z, { style: u.content }, S, _), y ? y() : null, (!m && !f) || d || w ? null : Z ? o.createElement(s.default, { style: u.icon }) : o.createElement(i.default, { style: u.icon })), t);
+                        T = o.useMemo(() => ("space0" === m ? { paddingHorizontal: 0 } : { paddingHorizontal: m ? c.default.theme.spaces[m] : c.default.theme.componentDimensions.gutterHorizontal }), [m]);
+                    return o.createElement(l.Z, { "aria-selected": "tab" === b ? p : null, disabled: d, link: d ? void 0 : f, onPress: g, role: b, style: [u.root, T, d && u.disabled, v], testID: k, withInteractiveStyling: !!f || !!g }, o.createElement(n.Z, { style: u.contentContainer }, C ? o.createElement(n.Z, { style: x }, C) : null, o.createElement(n.Z, { style: u.content }, S, _), y ? y() : null, (!f && !g) || d || w ? null : Z ? o.createElement(s.default, { style: u.icon }) : o.createElement(i.default, { style: u.icon })), t);
                 },
                 u = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -553,34 +553,6 @@
             "use strict";
             r.d(t, { Z: () => o });
             const o = r(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
-        },
-        648539: (e, t, r) => {
-            "use strict";
-            r.r(t), r.d(t, { default: () => l });
-            var o = r(202784),
-                n = r(890601),
-                s = r(783427),
-                i = r(347101);
-            const a = (e = {}) => {
-                const { direction: t } = (0, s.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M19 14h2v3h-2v-3zM3 14H1v3h2v-3zm.5 7c-.276 0-.5-.225-.5-.5V19H1v1.5C1 21.879 2.122 23 3.5 23H5v-2H3.5zM10 5V3H7v2h3zm-7 .5c0-.275.224-.5.5-.5H5V3H3.5C2.122 3 1 4.121 1 5.5V7h2V5.5zM12 21v2h3v-2h-3zm-5 0v2h3v-2H7zm12-.5c0 .275-.224.5-.5.5H17v2h1.5c1.378 0 2.5-1.121 2.5-2.5V19h-2v1.5zM3 9H1v3h2V9zm3 9h5v-2H6v2zM18-.1c3.364 0 6.1 2.736 6.1 6.1s-2.736 6.1-6.1 6.1-6.1-2.736-6.1-6.1S14.636-.1 18-.1zm0 2c-2.261 0-4.1 1.839-4.1 4.1s1.839 4.1 4.1 4.1 4.1-1.839 4.1-4.1-1.839-4.1-4.1-4.1zm.5 3.1H15v2h6V5h-2.5zM6 10h4V8H6v2zm0 4h7v-2H6v2z" })) }, { writingDirection: t });
-            };
-            a.metadata = { width: 24, height: 24 };
-            const l = a;
-        },
-        452693: (e, t, r) => {
-            "use strict";
-            r.r(t), r.d(t, { default: () => l });
-            var o = r(202784),
-                n = r(890601),
-                s = r(783427),
-                i = r(347101);
-            const a = (e = {}) => {
-                const { direction: t } = (0, s.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
-            };
-            a.metadata = { width: 24, height: 24 };
-            const l = a;
         },
         662678: (e, t, r) => {
             "use strict";
@@ -644,10 +616,10 @@
                         var u = d[1].split("."),
                             p = u.pop(),
                             h = u.pop(),
-                            m = d[3],
-                            f = (d[2] ? d[2].replace(/^;|;$/g, "").split(";") : []).reduce(i, h ? { group: h } : {}),
-                            g = o(p);
-                        s(t, g, new n(g, m, f));
+                            f = d[3],
+                            g = (d[2] ? d[2].replace(/^;|;$/g, "").split(";") : []).reduce(i, h ? { group: h } : {}),
+                            m = o(p);
+                        s(t, m, new n(m, f, g));
                     }
                 }
                 return t;
@@ -836,4 +808,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsInternals~bundle.Ocf.2803222a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsInternals~bundle.Ocf.31ec0f0a.js.map

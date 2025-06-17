@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: a, hideBackButton: n, isFullWidth: i, isLarge: c, leftControl: d, middleControl: p, position: m, rightControl: h, secondaryBar: g, style: b, subtitle: f, title: y, titleDomId: k, titleIconCell: C, titleIconCellSize: w, withBackground: v, withWideContainer: Z } = this.props,
-                        { isModal: x } = this.context,
-                        E = n ? d : r.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: a, hideBackButton: n, isFullWidth: i, isLarge: c, leftControl: d, middleControl: p, position: m, rightControl: h, secondaryBar: g, style: b, subtitle: f, title: y, titleDomId: k, titleIconCell: C, titleIconCellSize: w, withBackground: x, withWideContainer: Z } = this.props,
+                        { isModal: E } = this.context,
+                        v = n ? d : r.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         T = (function (e, t, o) {
                             return e && !(t && o);
-                        })(!!v, x, !!g);
-                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: i, isLarge: c, leftControl: E, middleControl: p, position: u(m, x, a), rightControl: h, style: b, subtitle: f, title: y, titleDomId: k, titleIconCell: C, titleIconCellSize: w, withBackground: T, withWideContainer: Z }), g || null);
+                        })(!!x, E, !!g);
+                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: i, isLarge: c, leftControl: v, middleControl: p, position: u(m, E, a), rightControl: h, style: b, subtitle: f, title: y, titleDomId: k, titleIconCell: C, titleIconCellSize: w, withBackground: T, withWideContainer: Z }), g || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -71,12 +71,12 @@
                     const k = () => {
                             m.scribe({ component: f, action: "click", element: "card" });
                         },
-                        { backgroundcolor: C, buttonSize: w, cardWidth: v, marginbottom: Z, textcolor: x } = u ?? {},
-                        E = C ? n.default.theme.colors[C] : n.default.theme.colors.gray0,
-                        T = x ? n.default.theme.colors[x] : n.default.theme.colors.gray900,
+                        { backgroundcolor: C, buttonSize: w, cardWidth: x, marginbottom: Z, textcolor: E } = u ?? {},
+                        v = C ? n.default.theme.colors[C] : n.default.theme.colors.gray0,
+                        T = E ? n.default.theme.colors[E] : n.default.theme.colors.gray900,
                         B = Z ? n.default.theme.spaces[Z] : n.default.theme.spaces.space16,
                         _ = { [b.MarchMadness]: { header: g.header, description: g.description, legalDisclaimer: g.legalDisclaimer, buttonText: g.buttonText, image: g.image } }[o];
-                    return p ? r.createElement(i.Z, { interactiveStyles: null, link: t, onPress: k, style: y.bannerContainer }, r.createElement(s.Z, { resizeMode: "contain", source: { uri: "light" === n.default.theme.paletteName ? _.image.lightMode : _.image.darkMode }, style: { height: 85 } })) : r.createElement(a.Z, { style: [y.card, { backgroundColor: E }, { maxWidth: v }, { marginBottom: B }], testID: "popupCard" }, r.createElement(a.Z, { style: e ? y.horizontalContent : y.verticalContent }, r.createElement(a.Z, { style: e ? y.textContainer : null }, r.createElement(l.ZP, { size: "headline2", style: [y.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, _.header), r.createElement(l.ZP, { size: "subtext1", style: [y.popupDescription, { color: T }] }, _.description, " ", e ? null : _.legalDisclaimer)), r.createElement(a.Z, { style: y.buttonContainer }, r.createElement(c.ZP, { backgroundColor: "light" === n.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: k, size: "medium", style: [y.popupButton, { width: w }] }, _.buttonText), e && r.createElement(l.ZP, { size: "subtext3", style: [y.legalDisclaimer, { color: T }] }, _.legalDisclaimer))));
+                    return p ? r.createElement(i.Z, { interactiveStyles: null, link: t, onPress: k, style: y.bannerContainer }, r.createElement(s.Z, { resizeMode: "contain", source: { uri: "light" === n.default.theme.paletteName ? _.image.lightMode : _.image.darkMode }, style: { height: 85 } })) : r.createElement(a.Z, { style: [y.card, { backgroundColor: v }, { maxWidth: x }, { marginBottom: B }], testID: "popupCard" }, r.createElement(a.Z, { style: e ? y.horizontalContent : y.verticalContent }, r.createElement(a.Z, { style: e ? y.textContainer : null }, r.createElement(l.ZP, { size: "headline2", style: [y.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, _.header), r.createElement(l.ZP, { size: "subtext1", style: [y.popupDescription, { color: T }] }, _.description, " ", e ? null : _.legalDisclaimer)), r.createElement(a.Z, { style: y.buttonContainer }, r.createElement(c.ZP, { backgroundColor: "light" === n.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: k, size: "medium", style: [y.popupButton, { width: w }] }, _.buttonText), e && r.createElement(l.ZP, { size: "subtext3", style: [y.legalDisclaimer, { color: T }] }, _.legalDisclaimer))));
                 },
                 y = n.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
         },
@@ -199,10 +199,10 @@
                 k = d().d8680056,
                 C = d().eed02406,
                 w = d().j59f0b94,
-                v = d().b81aaad8,
+                x = d().b81aaad8,
                 Z = d().c7044880,
-                x = { [b.xSmall]: k, [b.small]: C, [b.normal]: w, [b.large]: v, [b.xLarge]: Z },
-                E = [k, C, w, v, Z],
+                E = { [b.xSmall]: k, [b.small]: C, [b.normal]: w, [b.large]: x, [b.xLarge]: Z },
+                v = [k, C, w, x, Z],
                 T = d().e46dffa0,
                 B = i.default.create((e) => ({ sliderContainer: { alignItems: "center", flexDirection: "row", padding: e.spaces.space16 }, slider: { flexGrow: 1, marginHorizontal: e.spaces.space20 } })),
                 _ = g((e) => {
@@ -214,7 +214,7 @@
                             },
                             [t, o, n],
                         );
-                    return r.createElement(u.Z, { themeItem: "textSize" }, (e) => r.createElement(a.Z, { style: B.sliderContainer }, r.createElement(s.ZP, { size: "subtext2" }, "Aa"), r.createElement(a.Z, { style: B.slider }, r.createElement(l.Z, { accessibilityLabelValueText: x[i.default.theme.scale], "aria-label": T, autoFocus: e, hoverLabels: E, max: y, min: 0, onChange: c, value: f.indexOf(i.default.theme.scale), withMarkers: !0 })), r.createElement(s.ZP, { size: "headline1" }, "Aa")));
+                    return r.createElement(u.Z, { themeItem: "textSize" }, (e) => r.createElement(a.Z, { style: B.sliderContainer }, r.createElement(s.ZP, { size: "subtext2" }, "Aa"), r.createElement(a.Z, { style: B.slider }, r.createElement(l.Z, { accessibilityLabelValueText: E[i.default.theme.scale], "aria-label": T, autoFocus: e, hoverLabels: v, max: y, min: 0, onChange: c, value: f.indexOf(i.default.theme.scale), withMarkers: !0 })), r.createElement(s.ZP, { size: "headline1" }, "Aa")));
                 });
         },
         564297: (e, t, o) => {
@@ -350,7 +350,7 @@
                 f = p(g);
         },
         376293: (e, t, o) => {
-            o.d(t, { $f: () => x, KV: () => f, LI: () => S, SC: () => Z, Vt: () => C, ed: () => M, op: () => E });
+            o.d(t, { $f: () => E, KV: () => f, LI: () => S, SC: () => Z, Vt: () => C, ed: () => M, op: () => v });
             var r = o(202784),
                 a = o(190286),
                 n = o(111677),
@@ -370,10 +370,10 @@
                 k = i().c9623eeb,
                 C = i().e133be4e,
                 w = i().he43bca4,
-                v = i().f5f01af6,
+                x = i().f5f01af6,
                 Z = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                x = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: h, text: t ? b({ screenName: e }) : g({ screenName: e }) }),
-                E = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: o, source: r, testID: a, unblockAction: n, unblockSubtext: i, user: s }) => {
+                E = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: h, text: t ? b({ screenName: e }) : g({ screenName: e }) }),
+                v = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: o, source: r, testID: a, unblockAction: n, unblockSubtext: i, user: s }) => {
                     let l,
                         u = c.Z;
                     const p = S(s, o);
@@ -398,7 +398,7 @@
                 T = (e) => (e ? l.default : s.default),
                 B = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
                 _ = (e) => (e.blocking ? k({ screenName: e.screen_name }) : m({ screenName: e.screen_name })),
-                S = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: y({ screenName: e }), label: C, text: t ? v : w }))(e.screen_name, t) : x(e.screen_name, t)),
+                S = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: y({ screenName: e }), label: C, text: t ? x : w }))(e.screen_name, t) : E(e.screen_name, t)),
                 M = ({ confirmation: e, handleConfirm: t, onClose: o }) => {
                     const { confirmButtonType: n, headline: i, label: s, text: l } = e;
                     return r.createElement(a.Z, { cancelButtonLabel: u, confirmButtonLabel: s, confirmButtonType: n, headline: i, onCancel: o, onConfirm: t, text: l });
@@ -519,10 +519,10 @@
                 k = d().ec5880e6,
                 C = d().babfa32c,
                 w = d().a2a2f98e,
-                v = d().b4a361c0,
+                x = d().b4a361c0,
                 Z = d().ce494bb4,
-                x = d().c783d45e,
-                E = d().h306a358;
+                E = d().c783d45e,
+                v = d().h306a358;
             class T extends r.Component {
                 constructor(e, t) {
                     super(e, t),
@@ -536,7 +536,7 @@
                 render() {
                     const { isModal: e } = this.context,
                         { history: t } = this.props;
-                    return r.createElement(u.Z, { history: t, renderHeader: this._renderModalHeader, title: this._isWelcomeFlow ? C : f }, r.createElement(a.Z, { style: _.root }, r.createElement(n.ZP, { align: "center", color: "gray700", style: [_.description, !e && _.descriptionMarginTop] }, this._isWelcomeFlow ? v : k), r.createElement(a.Z, { style: [_.tweetExample, e && _.tweetExampleMarginHorizontal] }, r.createElement(g.Z, { withTweetBorder: !0 })), r.createElement(n.ZP, { color: "gray700", style: _.componentTitle, weight: "bold" }, Z), r.createElement(a.Z, { style: _.component }, r.createElement(p.Z, null)), r.createElement(n.ZP, { color: "gray700", style: _.componentTitle, weight: "bold" }, x), r.createElement(a.Z, { style: [_.component, _.colorPicker] }, r.createElement(h.Z, null)), r.createElement(n.ZP, { color: "gray700", style: _.componentTitle, weight: "bold" }, E), r.createElement(a.Z, { style: [_.component, _.backgroundPicker] }, r.createElement(m.Z, null)), r.createElement(a.Z, { style: _.buttonContainer }, r.createElement(i.ZP, { onPress: this._handleBackClick, type: "brandFilled" }, this._isWelcomeFlow ? w : y))));
+                    return r.createElement(u.Z, { history: t, renderHeader: this._renderModalHeader, title: this._isWelcomeFlow ? C : f }, r.createElement(a.Z, { style: _.root }, r.createElement(n.ZP, { align: "center", color: "gray700", style: [_.description, !e && _.descriptionMarginTop] }, this._isWelcomeFlow ? x : k), r.createElement(a.Z, { style: [_.tweetExample, e && _.tweetExampleMarginHorizontal] }, r.createElement(g.Z, { withTweetBorder: !0 })), r.createElement(n.ZP, { color: "gray700", style: _.componentTitle, weight: "bold" }, Z), r.createElement(a.Z, { style: _.component }, r.createElement(p.Z, null)), r.createElement(n.ZP, { color: "gray700", style: _.componentTitle, weight: "bold" }, E), r.createElement(a.Z, { style: [_.component, _.colorPicker] }, r.createElement(h.Z, null)), r.createElement(n.ZP, { color: "gray700", style: _.componentTitle, weight: "bold" }, v), r.createElement(a.Z, { style: [_.component, _.backgroundPicker] }, r.createElement(m.Z, null)), r.createElement(a.Z, { style: _.buttonContainer }, r.createElement(i.ZP, { onPress: this._handleBackClick, type: "brandFilled" }, this._isWelcomeFlow ? w : y))));
                 }
             }
             T.contextType = s.Z;
@@ -638,10 +638,10 @@
                             d.Z.generate({ backgroundColor: n.default.theme.colors.transparent, color: n.default.theme.colors.gray700, withFocusWithinFocusRing: !0 });
                         }, []),
                         w = r.useMemo(() => (o === p.CV.dark ? s.Vi : o === p.CV.darker ? s.SR : s.vh), [o]),
-                        v = r.useMemo(() => ({ backgroundColor: w.cellBackground, borderColor: h ? n.default.theme.colors.primary : n.default.theme.colors.gray200, borderWidth: h ? "2px" : "1px" }), [h, w.cellBackground]),
+                        x = r.useMemo(() => ({ backgroundColor: w.cellBackground, borderColor: h ? n.default.theme.colors.primary : n.default.theme.colors.gray200, borderWidth: h ? "2px" : "1px" }), [h, w.cellBackground]),
                         Z = r.useMemo(() => ({ backgroundColor: h ? n.default.theme.colors.primary : n.default.theme.colors.transparent, borderColor: h ? n.default.theme.colors.primary : w.gray300 }), [h, w.gray300]),
-                        x = r.useMemo(() => (h ? k : C), [h, k, C]),
-                        E = r.useMemo(() => ({ color: w.text }), [w.text]);
+                        E = r.useMemo(() => (h ? k : C), [h, k, C]),
+                        v = r.useMemo(() => ({ color: w.text }), [w.text]);
                     function T(e) {
                         f && !h && f(o);
                     }
@@ -649,7 +649,7 @@
                         r.useEffect(() => {
                             t && y.current && y.current.focus();
                         }, [t, y]),
-                        r.createElement(u.Z, { focusable: !1, interactiveStyles: null, style: [m.root, v] }, (t) => r.createElement(r.Fragment, null, r.createElement(u.Z, { focusable: !1, interactiveStyles: x, interactivityState: t, role: "radio", style: m.radioOuterCircle }, r.createElement(a.Z, { style: [m.radioInnerCircle, Z] }, h ? r.createElement(i.default, { style: m.checkMark }) : null)), r.createElement(a.Z, { "aria-hidden": !0, style: m.text }, r.createElement(l.ZP, { numberOfLines: 1, style: E, weight: "bold" }, g)), (0, c.Z)("input", { "aria-label": e || g, checked: h, name: b, style: m.nativeControl, type: "radio", onChange: T, ref: y })))
+                        r.createElement(u.Z, { focusable: !1, interactiveStyles: null, style: [m.root, x] }, (t) => r.createElement(r.Fragment, null, r.createElement(u.Z, { focusable: !1, interactiveStyles: E, interactivityState: t, role: "radio", style: m.radioOuterCircle }, r.createElement(a.Z, { style: [m.radioInnerCircle, Z] }, h ? r.createElement(i.default, { style: m.checkMark }) : null)), r.createElement(a.Z, { "aria-hidden": !0, style: m.text }, r.createElement(l.ZP, { numberOfLines: 1, style: v, weight: "bold" }, g)), (0, c.Z)("input", { "aria-label": e || g, checked: h, name: b, style: m.nativeControl, type: "radio", onChange: T, ref: y })))
                     );
                 };
             function g({ "aria-label": e, autoFocus: t, layout: o, onChange: n, options: i, value: s }) {
@@ -729,32 +729,6 @@
             const b = n.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "space-around" }, flexWrap: { flexWrap: "wrap" } })),
                 f = g;
         },
-        648539: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => l });
-            var r = o(202784),
-                a = o(890601),
-                n = o(783427),
-                i = o(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M19 14h2v3h-2v-3zM3 14H1v3h2v-3zm.5 7c-.276 0-.5-.225-.5-.5V19H1v1.5C1 21.879 2.122 23 3.5 23H5v-2H3.5zM10 5V3H7v2h3zm-7 .5c0-.275.224-.5.5-.5H5V3H3.5C2.122 3 1 4.121 1 5.5V7h2V5.5zM12 21v2h3v-2h-3zm-5 0v2h3v-2H7zm12-.5c0 .275-.224.5-.5.5H17v2h1.5c1.378 0 2.5-1.121 2.5-2.5V19h-2v1.5zM3 9H1v3h2V9zm3 9h5v-2H6v2zM18-.1c3.364 0 6.1 2.736 6.1 6.1s-2.736 6.1-6.1 6.1-6.1-2.736-6.1-6.1S14.636-.1 18-.1zm0 2c-2.261 0-4.1 1.839-4.1 4.1s1.839 4.1 4.1 4.1 4.1-1.839 4.1-4.1-1.839-4.1-4.1-4.1zm.5 3.1H15v2h6V5h-2.5zM6 10h4V8H6v2zm0 4h7v-2H6v2z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        452693: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => l });
-            var r = o(202784),
-                a = o(890601),
-                n = o(783427),
-                i = o(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
         662678: (e, t, o) => {
             o.d(t, { G: () => a, Z: () => r });
             o(136728);
@@ -773,4 +747,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Display.527e7c4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Display.7be352ca.js.map

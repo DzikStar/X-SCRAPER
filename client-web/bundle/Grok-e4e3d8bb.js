@@ -8,24 +8,23 @@
             const a = (0, r(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.21"),
-                        r.e("icons.16"),
-                        r.e("icons.10"),
-                        r.e("icons.1"),
-                        r.e("icons.19"),
-                        r.e("icons.0"),
-                        r.e("icons.23"),
                         r.e("icons.8"),
-                        r.e("icons.2"),
-                        r.e("icons.3"),
                         r.e("icons.15"),
+                        r.e("icons.7"),
+                        r.e("icons.3"),
+                        r.e("icons.24"),
+                        r.e("icons.12"),
+                        r.e("icons.22"),
+                        r.e("icons.2"),
+                        r.e("icons.18"),
+                        r.e("icons.9"),
+                        r.e("icons.6"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
-                        r.e("icons.7"),
-                        r.e("icons.9"),
-                        r.e("icons.24"),
-                        r.e("icons.13"),
-                        r.e("icons.29"),
+                        r.e("icons.14"),
+                        r.e("icons.5"),
+                        r.e("icons.16"),
+                        r.e("icons.19"),
                         r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
                         r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
                         r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
@@ -56,8 +55,8 @@
                         r.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         r.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         r.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
-                        r.e("loader.WideLayout-6107ac1a"),
-                        r.e("loader.WideLayout-9f4db315"),
+                        r.e("shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"),
+                        r.e("loader.WideLayout"),
                     ]).then(r.bind(r, 616753)),
             });
         },
@@ -155,7 +154,7 @@
             };
         },
         309401: (e, o, r) => {
-            r.d(o, { T: () => h, Z: () => m });
+            r.d(o, { T: () => m, Z: () => h });
             r(136728), r(875640);
             var a = r(565058),
                 t = r(323265),
@@ -166,12 +165,12 @@
                 l = r(623494),
                 c = r(397159),
                 u = r(774717);
-            class m {
+            class h {
                 constructor() {
                     (this.prompt = (0, a.cn)("")), (this.status = (0, a.cn)("idle")), (this.message = (0, a.cn)("")), (this.fileAttachments = (0, a.cn)([])), (this.upsell = (0, a.cn)(null));
                 }
             }
-            class h extends m {
+            class m extends h {
                 constructor(e) {
                     super(), (this.abortController = new AbortController()), (this.imageGenerationCount = 1), (this.conversationId = ""), (this.promptSource = "NATURAL"), (this._store = e);
                 }
@@ -240,9 +239,9 @@
                     (c = "POST_COMPOSER_IMAGE_GEN" === this.promptSource ? { promptSource: "POST_COMPOSER_IMAGE_GEN", action: s } : "POST_COMPOSER_TEXT_GEN" === this.promptSource ? { promptSource: "POST_COMPOSER_TEXT_GEN", action: s } : { promptSource: "NATURAL", action: s }), o && o.toolOverrides && (this.toolOverrides = o.toolOverrides);
                     const u = { responses: [r], conversationId: this.conversationId || void 0, grokModelOptionId: this.model || "", systemPromptName: "", imageGenerationCount: this.imageGenerationCount, promptMetadata: c, resampleResponseId: this.userChatItemId, toolOverrides: this.toolOverrides || {} };
                     (0, l.pv)(e, { conversationLength: 1, isFileAttached: !1 }), this.updateMessage(""), o && o.onStart && o.onStart();
-                    const m = this._store.get(d.f0),
-                        h = !t.ZP.isTwitterApp() && m.isTrue("responsive_web_grok_api_enable_grok_host");
-                    p({ api: a, analytics: e, requestBody: u, atoms: this, eventTag: this.userChatItemId ? "regenerate" : "", enableGrokApiHost: h });
+                    const h = this._store.get(d.f0),
+                        m = !t.ZP.isTwitterApp() && h.isTrue("responsive_web_grok_api_enable_grok_host");
+                    p({ api: a, analytics: e, requestBody: u, atoms: this, eventTag: this.userChatItemId ? "regenerate" : "", enableGrokApiHost: m });
                 }
             }
             const p = ({ analytics: e, api: o, atoms: r, enableGrokApiHost: a, eventTag: s, requestBody: n }) => {
@@ -259,8 +258,8 @@
                         return { record: r, recordOnce: s };
                     })(),
                     i = s ? ` (${s})` : "";
-                let m = "",
-                    h = !1;
+                let h = "",
+                    m = !1;
                 return (
                     r.updateState("loading"),
                     o.fetchClient
@@ -279,7 +278,7 @@
                             return (
                                 clearTimeout(u),
                                 (async function o({ done: u, value: p }) {
-                                    if (u) m || h ? (r.updateState("complete"), d.record("time-to-last-chunk")) : (r.updateState("error"), (0, l.Uk)(e, `add-response failed to reach the network${i}`), d.record("network-error"));
+                                    if (u) h || m ? (r.updateState("complete"), d.record("time-to-last-chunk")) : (r.updateState("error"), (0, l.Uk)(e, `add-response failed to reach the network${i}`), d.record("network-error"));
                                     else if (p) {
                                         d.recordOnce("time-to-first-chunk");
                                         const i = t.decode(p);
@@ -289,13 +288,13 @@
                                             for (const a of o)
                                                 try {
                                                     const e = JSON.parse(a);
-                                                    if ((e.userChatItemId && (r.userChatItemId = e.userChatItemId), e.result?.upsell && r.updateUpsell(e.result.upsell), e.result?.postIds || !e.result?.message || e.result?.isThinking || (e.result?.messageTag && e.result?.messageTag !== c.iS.FINAL) || ((m += e.result.message), r.updateMessage(m)), "error" === e.result?.responseType && r.clearAttachments(), e.result?.imageAttachmentCount)) {
+                                                    if ((e.userChatItemId && (r.userChatItemId = e.userChatItemId), e.result?.upsell && r.updateUpsell(e.result.upsell), e.result?.postIds || !e.result?.message || e.result?.isThinking || (e.result?.messageTag && e.result?.messageTag !== c.iS.FINAL) || ((h += e.result.message), r.updateMessage(h)), "error" === e.result?.responseType && r.clearAttachments(), e.result?.imageAttachmentCount)) {
                                                         let o = e.result.imageAttachmentCount;
                                                         n.imageGenerationCount && (o = Math.min(o, n.imageGenerationCount)), r.setAttachmentCount(o);
                                                     }
                                                     const o = e.result?.event;
-                                                    if ((o && o.imageAttachmentUpdate && ((h = !0), r.addImageAttachmentUpdate({ imageIdStr: o.imageAttachmentUpdate.imageIdStr, imageId: o.imageAttachmentUpdate.imageId, progress: o.imageAttachmentUpdate.progress / 100, imageUrl: o.imageAttachmentUpdate.imageUrl })), "image" === e.result?.responseType || e.result?.imageAttachment?.imageUrl)) {
-                                                        h = !0;
+                                                    if ((o && o.imageAttachmentUpdate && ((m = !0), r.addImageAttachmentUpdate({ imageIdStr: o.imageAttachmentUpdate.imageIdStr, imageId: o.imageAttachmentUpdate.imageId, progress: o.imageAttachmentUpdate.progress / 100, imageUrl: o.imageAttachmentUpdate.imageUrl })), "image" === e.result?.responseType || e.result?.imageAttachment?.imageUrl)) {
+                                                        m = !0;
                                                         const o = { fileName: "image", mimeType: "image/jpeg", url: e.result.imageAttachment?.imageUrl ?? void 0 };
                                                         r.addAttachment(o);
                                                     }
@@ -321,7 +320,7 @@
             };
         },
         965728: (e, o, r) => {
-            r.d(o, { C_: () => f, I5: () => p, K2: () => g, L$: () => l, Rb: () => D, nk: () => h, sI: () => _, xr: () => M });
+            r.d(o, { C_: () => M, I5: () => p, K2: () => g, L$: () => l, Rb: () => D, nk: () => m, sI: () => _, xr: () => f });
             var a = r(202784),
                 t = r(483677),
                 s = r(782578),
@@ -330,20 +329,20 @@
             const i = (e, o) => `rgba(${e.rgb.red}, ${e.rgb.green}, ${e.rgb.blue}, ${o})`,
                 l = (e) => {
                     const o = e && t.Z.getForGallery(e);
-                    return o ? { rgb: M(o), rgba: i(o, 0.9) } : m;
+                    return o ? { rgb: f(o), rgba: i(o, 0.9) } : h;
                 },
                 c = d.Z.columnWidths.primary,
                 u = (e, o) => Math.min(o, e),
-                m = { rgb: "rgb(0, 0, 0)", rgba: "rgba(0, 0, 0, 0.9)" },
-                h = { transitionProperty: "background-color", transitionDuration: ".5s" },
+                h = { rgb: "rgb(0, 0, 0)", rgba: "rgba(0, 0, 0, 0.9)" },
+                m = { transitionProperty: "background-color", transitionDuration: ".5s" },
                 p = (e, o) => {
                     const { containerHeight: r, containerWidth: a, mediaHeight: t, mediaWidth: n } = e,
                         d = n && t ? n / t : 1,
                         i = d > 1,
                         l = o ? 400 : c,
-                        m = i && (!n || n <= l) ? u(a, l) : a,
-                        h = i || (t && !(t <= l)) ? r : u(r, l);
-                    return s.Z.getContainDimensions({ width: m, height: h }, d);
+                        h = i && (!n || n <= l) ? u(a, l) : a,
+                        m = i || (t && !(t <= l)) ? r : u(r, l);
+                    return s.Z.getContainDimensions({ width: h, height: m }, d);
                 },
                 D = (e) => {
                     const o = e && e.ext_media_color && e.ext_media_color.palette;
@@ -353,11 +352,11 @@
                     const o = e && e.profile_image_extensions_media_color && e.profile_image_extensions_media_color.palette;
                     return l(o);
                 },
-                f = (e) => {
+                M = (e) => {
                     const o = e && e.profile_banner_extensions_media_color && e.profile_banner_extensions_media_color.palette;
                     return l(o);
                 },
-                M = (e) => `rgb(${e.rgb.red}, ${e.rgb.green}, ${e.rgb.blue})`,
+                f = (e) => `rgb(${e.rgb.red}, ${e.rgb.green}, ${e.rgb.blue})`,
                 b = (e, o) => {
                     switch (o.type) {
                         case "zoom":
@@ -402,4 +401,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-e4e3d8bb.8caa8eba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-e4e3d8bb.f7ec444a.js.map

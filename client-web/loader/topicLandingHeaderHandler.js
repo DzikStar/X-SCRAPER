@@ -22,7 +22,7 @@
                 p = i.iH({ component: c, getScribeDataItem: ({ content: { topicId: e }, itemMetadata: { clientEventInfo: t } }) => o.Z.forTopic(e, t) }).getHandler();
         },
         217179: (e, t, n) => {
-            n.r(t), n.d(t, { TopicHeader: () => V, default: () => L });
+            n.r(t), n.d(t, { TopicHeader: () => L, default: () => P });
             var o = n(202784),
                 i = n(325686),
                 r = n(646496),
@@ -42,26 +42,26 @@
                 x = n(233391),
                 y = n(863934),
                 _ = n(288955),
-                E = n(177371),
-                C = n(459679),
+                C = n(177371),
+                E = n(459679),
                 Z = n(71620),
                 T = n(668214),
-                v = n(466380),
-                S = n(919022);
-            const F = (e, t) => v.Z.select(e, t.topicId),
-                I = (e, t) => S.ZP.selectMany(e, t.facepile?.userIds || []),
-                k = (e, t) => {
-                    const n = I(e, t);
-                    return (0, C.Z)(n, (e) => (!e || e.blocking || e.muting ? void 0 : e));
+                S = n(466380),
+                F = n(919022);
+            const I = (e, t) => S.Z.select(e, t.topicId),
+                k = (e, t) => F.ZP.selectMany(e, t.facepile?.userIds || []),
+                B = (e, t) => {
+                    const n = k(e, t);
+                    return (0, E.Z)(n, (e) => (!e || e.blocking || e.muting ? void 0 : e));
                 },
-                B = (0, T.Z)()
-                    .propsFromState(() => ({ topic: F, users: k }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, Z.zr)("TOPIC_HEADER"), follow: v.Z.follow, unfollow: v.Z.unfollow, undoTopicNotInterested: v.Z.undoNotInterested }))
+                v = (0, T.Z)()
+                    .propsFromState(() => ({ topic: I, users: B }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, Z.zr)("TOPIC_HEADER"), follow: S.Z.follow, unfollow: S.Z.unfollow, undoTopicNotInterested: S.Z.undoNotInterested }))
                     .withAnalytics(),
                 A = p().b1850062,
                 H = p().d69b2d90,
-                M = p().gf5e9ea6;
-            class V extends o.Component {
+                V = p().gf5e9ea6;
+            class L extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this._additionalControlsEnabled = this.context.featureSwitches.isTrue("topic_landing_page_clearer_controls_enabled")),
@@ -87,7 +87,7 @@
                     return a && !g
                         ? o.createElement(
                               i.Z,
-                              { style: z.root },
+                              { style: M.root },
                               o.createElement(_.Z, { customText: p, displayMode: x.BH.topic }, () => o.createElement(m.Z, { onOffscreenChange: n }, o.createElement(r.Z, { children: this._renderTopicActions(), context: l, knownFollowers: w, onFacepilesClick: this._handleOnClickFacepiles, onFacepilesImpression: this._handleFacepilesImpression, subtitle: c, title: p, withAdditionalControls: this._additionalControlsEnabled }))),
                           )
                         : null;
@@ -96,24 +96,24 @@
                     const { displayType: e, showRelationshipChangeConfirmation: t, topic: n } = this.props;
                     return n
                         ? o.createElement(a.ZP, { key: "topic-header-actions" }, ({ containerWidth: r }) => {
-                              const a = l.Z.isNarrowScreenWidth(r) ? z.mainViewSmall : z.mainView,
-                                  s = this._additionalControlsEnabled ? (l.Z.isNarrowScreenWidth(r) ? z.followButtonSmall : z.followButton) : null,
-                                  c = l.Z.isNarrowScreenWidth(r) ? z.notInterestButtonSmall : z.notInterestButton;
+                              const a = l.Z.isNarrowScreenWidth(r) ? M.mainViewSmall : M.mainView,
+                                  s = this._additionalControlsEnabled ? (l.Z.isNarrowScreenWidth(r) ? M.followButtonSmall : M.followButton) : null,
+                                  c = l.Z.isNarrowScreenWidth(r) ? M.notInterestButtonSmall : M.notInterestButton;
                               return o.createElement(o.Fragment, null, n.not_interested && this._additionalControlsEnabled ? this._renderTopicContextTombstone() : e === h.el.Basic ? o.createElement(i.Z, { style: a }, !this._additionalControlsEnabled || n.following || n.not_interested ? null : o.createElement(y.Z, { size: "medium", style: c, text: A, topicId: n.id, type: "primaryOutlined", withIconOnly: !1 }), o.createElement(b.ZP, { showRelationshipChangeConfirmation: t, size: "medium", style: s, textMode: this._followButtonTextVariant, topic: n })) : null);
                           })
                         : null;
                 }
                 _renderTopicContextTombstone() {
-                    return o.createElement(E.Z, { actionText: M, children: H, inline: !0, onClick: this._handleUndoTopicNotInterested });
+                    return o.createElement(C.Z, { actionText: V, children: H, inline: !0, onClick: this._handleUndoTopicNotInterested });
                 }
                 _scribeAction(e) {
                     const { analytics: t } = this.props;
                     t.scribe(e);
                 }
             }
-            (V.contextType = w.rC), (V.defaultProps = { displayType: h.el.Basic });
-            const z = s.default.create((e) => ({ root: { marginHorizontal: e.componentDimensions.gutterHorizontal, marginVertical: e.componentDimensions.gutterVertical }, mainView: { flexDirection: "row", flexGrow: 1 }, mainViewSmall: { flexWrap: "wrap" }, notInterestButton: { justifyContent: "center", flexBasis: 1, flexGrow: 1, marginEnd: e.spaces.space4 }, followButton: { justifyContent: "center", flexBasis: 1, flexGrow: 1, marginStart: e.spaces.space4, minWidth: "inherit" }, followButtonSmall: { marginTop: e.spaces.space8, marginStart: 0, width: "100%" }, notInterestButtonSmall: { width: "100%" } })),
-                L = (0, g.ZP)(B(V));
+            (L.contextType = w.rC), (L.defaultProps = { displayType: h.el.Basic });
+            const M = s.default.create((e) => ({ root: { marginHorizontal: e.componentDimensions.gutterHorizontal, marginVertical: e.componentDimensions.gutterVertical }, mainView: { flexDirection: "row", flexGrow: 1 }, mainViewSmall: { flexWrap: "wrap" }, notInterestButton: { justifyContent: "center", flexBasis: 1, flexGrow: 1, marginEnd: e.spaces.space4 }, followButton: { justifyContent: "center", flexBasis: 1, flexGrow: 1, marginStart: e.spaces.space4, minWidth: "inherit" }, followButtonSmall: { marginTop: e.spaces.space8, marginStart: 0, width: "100%" }, notInterestButtonSmall: { width: "100%" } })),
+                P = (0, g.ZP)(v(L));
         },
         646496: (e, t, n) => {
             n.d(t, { Z: () => h });
@@ -130,44 +130,31 @@
                 u = n(392237);
             const f = u.default.create((e) => ({ buttonBottomMargin: { marginBottom: e.spaces.space16 }, buttonLeftMargin: { marginStart: e.spaces.space20 }, buttonTopMargin: { marginTop: e.spaces.space20 }, buttonWrap: { flexWrap: "wrap-reverse" }, condensedContext: { marginTop: e.spaces.space16, flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, condensedContextV2: { marginTop: e.spaces.space16 }, iconCustom: { alignSelf: "flex-start", borderRadius: e.borderRadii.infinite, height: e.spaces.space32, width: e.spaces.space32, marginTop: e.spaces.space8, marginBottom: e.spaces.space8 }, facepile: { marginBottom: e.spaces.space16, alignSelf: "flex-start" }, facepileV2: { marginEnd: e.spaces.space8, marginTop: e.spaces.space16 }, interactiveStyle: { flexShrink: 1 }, interactiveStyleV2: { flexDirection: "row", alignItems: "center" }, knownFollowersContainer: { marginTop: e.spaces.space16, marginBottom: e.spaces.space16, flexDirection: "row", justifyContent: "space-between", flexGrow: 1, flexShrink: 1 }, underline: { textDecorationLine: "underline" } })),
                 h = ({ children: e, context: t, imageSrc: n, knownFollowers: r, onFacepilesClick: h, onFacepilesImpression: g, subtitle: w, title: b, withAdditionalControls: x = !1 }) => {
-                    const { firstUsername: y, knownFollowersAvatarUrls: _, trendingFollowersUrl: E, usersCount: C } = r || {},
+                    const { firstUsername: y, knownFollowersAvatarUrls: _, trendingFollowersUrl: C, usersCount: E } = r || {},
                         Z = r && r.knownFollowersAvatarUrls.length > 3;
                     o.useEffect(() => {
                         Z && g && g();
                     }, [Z, g]);
                     const T = n ? o.createElement(c.Z, { source: n, style: f.iconCustom }) : null,
-                        v = t ? o.createElement(i.Z, { style: x ? f.condensedContextV2 : f.condensedContext }, o.createElement(l.ZP, { align: "left", color: "gray700", numberOfLines: 3, size: "subtext2" }, t), o.createElement(i.Z, { style: x ? f.buttonTopMargin : [f.buttonBottomMargin, f.buttonLeftMargin] }, e)) : null,
-                        S = o.createElement(d.ZP, null, ({ containerWidth: n }) => {
+                        S = t ? o.createElement(i.Z, { style: x ? f.condensedContextV2 : f.condensedContext }, o.createElement(l.ZP, { align: "left", color: "gray700", numberOfLines: 3, size: "subtext2" }, t), o.createElement(i.Z, { style: x ? f.buttonTopMargin : [f.buttonBottomMargin, f.buttonLeftMargin] }, e)) : null,
+                        F = o.createElement(d.ZP, null, ({ containerWidth: n }) => {
                             const r = m.Z.isNarrowScreenWidth(n) ? "xLarge" : "xxLarge",
                                 c = n < u.default.theme.breakpoints.xSmall ? f.buttonWrap : void 0,
                                 d = x ? f.facepileV2 : null;
                             return o.createElement(
                                 i.Z,
                                 { style: x ? null : [f.knownFollowersContainer, c] },
-                                o.createElement(p.Z, { interactiveStyles: null, link: E, onPress: h, style: x ? f.interactiveStyleV2 : f.interactiveStyle }, ({ isHovered: e }) => o.createElement(o.Fragment, null, o.createElement(s.Z, { style: [f.facepile, d], userAvatarSize: r, userAvatarUrls: _ }), o.createElement(l.ZP, { color: "gray700", dir: "ltr", numberOfLines: 2, size: "subtext2", style: e && f.underline }, t || ((e, t) => o.createElement(a().I18NFormatMessage, { $i18n: "bb2cd6d3" }, e, t))(y, C)))),
+                                o.createElement(p.Z, { interactiveStyles: null, link: C, onPress: h, style: x ? f.interactiveStyleV2 : f.interactiveStyle }, ({ isHovered: e }) => o.createElement(o.Fragment, null, o.createElement(s.Z, { style: [f.facepile, d], userAvatarSize: r, userAvatarUrls: _ }), o.createElement(l.ZP, { color: "gray700", dir: "ltr", numberOfLines: 2, size: "subtext2", style: e && f.underline }, t || ((e, t) => o.createElement(a().I18NFormatMessage, { $i18n: "bb2cd6d3" }, e, t))(y, E)))),
                                 ((t) => {
                                     const n = t < u.default.theme.breakpoints.xSmall ? f.buttonBottomMargin : [f.buttonBottomMargin, f.buttonLeftMargin];
                                     return x ? [e] : o.createElement(i.Z, { style: n }, e);
                                 })(n),
                             );
                         }),
-                        F = r && Z ? S : v;
-                    return o.createElement(o.Fragment, null, T, o.createElement(l.ZP, { size: "title2", weight: "heavy" }, b), w ? o.createElement(l.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, w) : null, F);
+                        I = r && Z ? F : S;
+                    return o.createElement(o.Fragment, null, T, o.createElement(l.ZP, { size: "title2", weight: "heavy" }, b), w ? o.createElement(l.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, w) : null, I);
                 };
-        },
-        452693: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var o = n(202784),
-                i = n(890601),
-                r = n(783427),
-                a = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.topicLandingHeaderHandler.cc68325a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.topicLandingHeaderHandler.e888c5ca.js.map

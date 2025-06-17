@@ -597,10 +597,10 @@
                 C = l(167630),
                 F = l(392237),
                 L = l(111677),
-                v = l.n(L),
-                B = l(856151),
-                x = l(980407),
-                K = l(965245),
+                B = l.n(L),
+                x = l(856151),
+                K = l(980407),
+                v = l(965245),
                 S = l(301410),
                 D = l(293115),
                 R = l(312771),
@@ -609,15 +609,15 @@
                 A = l(823161),
                 U = l(412876),
                 M = l(553660);
-            const H = v().fbb7764b,
-                z = v().e70a07b2,
-                W = v().da68fff1,
-                V = ({ coins: e, isAnonymous: t, isLoggedinUser: l, user: a }) => b.createElement(w.Z, { role: "listitem" }, b.createElement(P.Z, { style: N.root, withInteractiveStyling: !1 }, b.createElement(w.Z, { style: N.row }, t ? b.createElement(A.default, { size: "xLarge", uri: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" }) : "User" === a?.__typename ? b.createElement(U.Z, { size: "xLarge", user: a, withLink: !0 }) : null, b.createElement(w.Z, { style: N.column }, b.createElement(f.ZP, { size: "headline2", style: N.awardDetails, weight: "medium" }, t && l ? W({ count: e }) : H({ count: e })), t ? b.createElement(f.ZP, { style: N.spacing }, z) : "User" === a?.__typename ? b.createElement(M.Z, { style: N.userName, user: a, weight: "normal", withLink: !0 }) : null)))),
-                q = b.memo(V),
+            const H = B().fbb7764b,
+                W = B().e70a07b2,
+                q = B().da68fff1,
+                V = ({ coins: e, isAnonymous: t, isLoggedinUser: l, user: a }) => b.createElement(w.Z, { role: "listitem" }, b.createElement(P.Z, { style: N.root, withInteractiveStyling: !1 }, b.createElement(w.Z, { style: N.row }, t ? b.createElement(A.default, { size: "xLarge", uri: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" }) : "User" === a?.__typename ? b.createElement(U.Z, { size: "xLarge", user: a, withLink: !0 }) : null, b.createElement(w.Z, { style: N.column }, b.createElement(f.ZP, { size: "headline2", style: N.awardDetails, weight: "medium" }, t && l ? q({ count: e }) : H({ count: e })), t ? b.createElement(f.ZP, { style: N.spacing }, W) : "User" === a?.__typename ? b.createElement(M.Z, { style: N.userName, user: a, weight: "normal", withLink: !0 }) : null)))),
+                z = b.memo(V),
                 N = F.default.create((e) => ({ root: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space12 }, row: { alignItems: "center", flexDirection: "row" }, column: { flexDirection: "column" }, userName: { marginHorizontal: e.spaces.space8 }, spacing: { marginStart: e.spaces.space8 }, awardDetails: { marginStart: e.spaces.space8, marginBottom: e.spaces.space4 } })),
-                O = v().h1c5d6aa,
-                Q = v().h6d45054,
-                G = v().fbb7764b,
+                O = B().h1c5d6aa,
+                Q = B().h6d45054,
+                G = B().fbb7764b,
                 j = { page: "tweet_coin_details" },
                 $ = _,
                 X = (0, S.z)($, { errorConfig: { context: "TWEET_COINS_DETAILS_CONTEXT" } }),
@@ -630,8 +630,8 @@
                             t.goBack();
                         }, [t]),
                         n = b.useMemo(() => ({ tweet_id: l || "0" }), [l]),
-                        r = b.useCallback((e) => b.createElement(q, { coins: e.total_coins_worth, isAnonymous: e.is_anonymous, key: e.rank, user: e.sender_results?.result }), []),
-                        i = b.useCallback((e) => b.createElement(w.Z, { style: te.title }, b.createElement(B.default, null), b.createElement(f.ZP, { size: "headline1", style: te.spacing, weight: "bold" }, G({ count: e }))), []),
+                        r = b.useCallback((e) => b.createElement(z, { coins: e.total_coins_worth, isAnonymous: e.is_anonymous, key: e.rank, user: e.sender_results?.result }), []),
+                        i = b.useCallback((e) => b.createElement(w.Z, { style: te.title }, b.createElement(x.default, null), b.createElement(f.ZP, { size: "headline1", style: te.spacing, weight: "bold" }, G({ count: e }))), []),
                         s = b.useCallback(
                             ({ data: e, fetchStatus: l, retry: n }) => {
                                 if (l === R.ZP.FAILED) return b.createElement(Z.Z, { onRequestRetry: n });
@@ -642,7 +642,7 @@
                                         c = J(n),
                                         u = e?.viewer_v2?.user_results?.result,
                                         p = E.ZP.getTruncatedCount(Number(l));
-                                    return b.createElement(x.Z, { backButtonType: "close", history: t, middleControl: i(p), onBackClick: a }, b.createElement(w.Z, { style: te.root }, c ? b.createElement(w.Z, null, b.createElement(T.Z, { text: O }), J(o) ? b.createElement(q, { coins: o || 0, isAnonymous: !1, user: u }) : null, J(s) ? b.createElement(q, { coins: s || 0, isAnonymous: !0, isLoggedinUser: !0, user: u }) : null) : null, d ? b.createElement(w.Z, null, b.createElement(T.Z, { text: Q }), b.createElement(K.Z, { cacheKey: "awardsSentByOthers", identityFunction: Y, items: d, renderer: r, withoutHeadroom: !0 })) : null));
+                                    return b.createElement(K.Z, { backButtonType: "close", history: t, middleControl: i(p), onBackClick: a }, b.createElement(w.Z, { style: te.root }, c ? b.createElement(w.Z, null, b.createElement(T.Z, { text: O }), J(o) ? b.createElement(z, { coins: o || 0, isAnonymous: !1, user: u }) : null, J(s) ? b.createElement(z, { coins: s || 0, isAnonymous: !0, isLoggedinUser: !0, user: u }) : null) : null, d ? b.createElement(w.Z, null, b.createElement(T.Z, { text: Q }), b.createElement(v.Z, { cacheKey: "awardsSentByOthers", identityFunction: Y, items: d, renderer: r, withoutHeadroom: !0 })) : null));
                                 }
                                 return b.createElement(C.Z, null);
                             },
@@ -653,19 +653,6 @@
                 te = F.default.create((e) => ({ root: { marginHorizontal: e.spaces.space32 }, spacing: { marginStart: e.spaces.space4 }, title: { flexDirection: "row", alignItems: "center", justifyContent: "center", paddingEnd: e.spaces.space64 } })),
                 le = ee;
         },
-        452693: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
-            var a = l(202784),
-                n = l(890601),
-                r = l(783427),
-                i = l(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetCoinDetails.51dca66a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetCoinDetails.bfbeaada.js.map

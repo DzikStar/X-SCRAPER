@@ -5,7 +5,7 @@
         572657: (e, t, i) => {
             i.d(t, { ZP: () => c });
             var r = i(912021),
-                n = i(656069),
+                n = i(484636),
                 a = i(545521);
             const s = (e, t) => `articleEntitiesSlice-${e}-${t}`,
                 d = (e, t) => (0, a.Z)({ contextSuffix: "ARTICLE_ENTITIES_SLICE", getFetchApiEndpoint: (e) => e.withEndpoint(n.Z).fetchArticleEntitiesSlice, getEndpointParams: (i) => ({ ...i, userId: e, lifecycle: t, count: 20 }), sliceKey: s(e, t) }),
@@ -19,7 +19,7 @@
             i.d(t, { ZP: () => U });
             var r = i(925873),
                 n = i(450681),
-                a = i(656069),
+                a = i(484636),
                 s = i(466015),
                 d = i(499627),
                 o = i(312771),
@@ -350,4 +350,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-acb640be.48d613ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-acb640be.ed1adf5a.js.map

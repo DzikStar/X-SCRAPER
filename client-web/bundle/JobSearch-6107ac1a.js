@@ -1,9 +1,9 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.JobSearch-6107ac1a", "loader.AudioContextVoiceMedia"],
+    ["bundle.JobSearch-6107ac1a", "loader.AudioContextVoiceMedia", "icons/IconDoubleChevronUp-js"],
     {
-        771741: (l, e, a) => {
-            a.d(e, { Z: () => g });
+        771741: (e, l, a) => {
+            a.d(l, { Z: () => g });
             var n,
                 i,
                 r,
@@ -251,8 +251,8 @@
             c.hash = "24c236e39ef6f8567817bc588787b248";
             const g = c;
         },
-        255875: (l, e, a) => {
-            a.d(e, { Z: () => m });
+        255875: (e, l, a) => {
+            a.d(l, { Z: () => m });
             var n,
                 i,
                 r,
@@ -332,8 +332,8 @@
             g.hash = "3d29c264d4bf9d235184f195fe296322";
             const m = g;
         },
-        335572: (l, e, a) => {
-            a.d(e, { Z: () => o });
+        335572: (e, l, a) => {
+            a.d(l, { Z: () => o });
             var n,
                 i,
                 r,
@@ -390,8 +390,8 @@
             u.hash = "0b6735767ac9ff762d17b55eb87700e0";
             const o = u;
         },
-        893211: (l, e, a) => {
-            a.d(e, { Z: () => g });
+        893211: (e, l, a) => {
+            a.d(l, { Z: () => g });
             var n,
                 i,
                 r,
@@ -627,8 +627,8 @@
             c.hash = "a2f9147c015c58ceed84d98f3e96cbdb";
             const g = c;
         },
-        377178: (l, e, a) => {
-            a.d(e, { Z: () => k });
+        377178: (e, l, a) => {
+            a.d(l, { Z: () => k });
             var n,
                 i,
                 r,
@@ -802,8 +802,8 @@
             y.hash = "d125bf2d2767c4d27ed19cdf4b6b3bf7";
             const k = y;
         },
-        455506: (l, e, a) => {
-            a.d(e, { Z: () => i });
+        455506: (e, l, a) => {
+            a.d(l, { Z: () => i });
             var n = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -835,8 +835,8 @@
             };
             const i = n;
         },
-        962155: (l, e, a) => {
-            a.d(e, { Z: () => i });
+        962155: (e, l, a) => {
+            a.d(l, { Z: () => i });
             var n = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -924,8 +924,8 @@
             };
             const i = n;
         },
-        230747: (l, e, a) => {
-            a.d(e, { Z: () => i });
+        230747: (e, l, a) => {
+            a.d(l, { Z: () => i });
             var n = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -953,8 +953,8 @@
             };
             const i = n;
         },
-        175967: (l, e, a) => {
-            a.d(e, { Z: () => m });
+        175967: (e, l, a) => {
+            a.d(l, { Z: () => m });
             var n,
                 i,
                 r,
@@ -1135,8 +1135,8 @@
             g.hash = "a2ffaaeb36509d6abe442707e15770fc";
             const m = g;
         },
-        36879: (l, e, a) => {
-            a.d(e, { Z: () => s });
+        36879: (e, l, a) => {
+            a.d(l, { Z: () => s });
             var n,
                 i,
                 r = {
@@ -1173,8 +1173,8 @@
             r.hash = "0c96137d33dbd43edd62fadf5964f7b1";
             const s = r;
         },
-        780038: (l, e, a) => {
-            a.d(e, { Z: () => s });
+        780038: (e, l, a) => {
+            a.d(l, { Z: () => s });
             var n,
                 i,
                 r = {
@@ -1214,8 +1214,8 @@
             r.hash = "43ddec86fc7e1d11f32f358d65a40b77";
             const s = r;
         },
-        884038: (l, e, a) => {
-            a.d(e, { Z: () => u });
+        884038: (e, l, a) => {
+            a.d(l, { Z: () => u });
             var n,
                 i,
                 r,
@@ -1348,74 +1348,209 @@
             t.hash = "d7264b1acc3250cbc9528b91abfabcb9";
             const u = t;
         },
-        729002: (l, e, a) => {
-            a.d(e, { Z: () => i });
+        729002: (e, l, a) => {
+            a.d(l, { Z: () => i });
             var n = { kind: "InlineDataFragment", name: "parseUserEntities_userEntities", hash: "16101b38cee4e401a6aa44e1c860d74f" };
             const i = n;
         },
-        420412: (l, e, a) => {
-            a.d(e, { Z: () => u });
+        594695: (e, l, a) => {
+            a.d(l, { Z: () => d });
+            var n,
+                i,
+                r,
+                s,
+                t,
+                u,
+                o = {
+                    fragment: {
+                        argumentDefinitions: [(n = { defaultValue: null, kind: "LocalArgument", name: "consented" }), (i = { defaultValue: null, kind: "LocalArgument", name: "matchingCriteria" }), (r = { defaultValue: null, kind: "LocalArgument", name: "recommendationsEnabled" }), (s = { defaultValue: null, kind: "LocalArgument", name: "remoteWorkAllowed" }), (t = { defaultValue: null, kind: "LocalArgument", name: "userId" })],
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "usePutMatchingProfileMutation",
+                        selections: (u = [
+                            {
+                                alias: null,
+                                args: [
+                                    { kind: "Variable", name: "consented", variableName: "consented" },
+                                    { kind: "Variable", name: "matching_criteria", variableName: "matchingCriteria" },
+                                    { kind: "Variable", name: "recommendations_enabled", variableName: "recommendationsEnabled" },
+                                    { kind: "Variable", name: "remote_work_allowed", variableName: "remoteWorkAllowed" },
+                                    { kind: "Literal", name: "s", value: "84b0" },
+                                    { kind: "Variable", name: "user_id", variableName: "userId" },
+                                ],
+                                concreteType: "PutMatchingProfileResult",
+                                kind: "LinkedField",
+                                name: "put_matching_profile",
+                                plural: !1,
+                                selections: [{ alias: null, args: null, kind: "ScalarField", name: "success", storageKey: null }],
+                                storageKey: null,
+                            },
+                        ]),
+                        type: "Mutation",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: [t, n, r, s, i], kind: "Operation", name: "usePutMatchingProfileMutation", selections: u },
+                    params: { id: "2jaLJJQhearTWZhqu89gBQ", metadata: {}, name: "usePutMatchingProfileMutation", operationKind: "mutation", text: null },
+                };
+            o.hash = "b23a8c052c25cec3489865df8f18d46d";
+            const d = o;
+        },
+        488248: (e, l, a) => {
+            a.d(l, { Z: () => s });
+            var n,
+                i,
+                r = {
+                    fragment: {
+                        argumentDefinitions: (n = [{ defaultValue: null, kind: "LocalArgument", name: "userId" }]),
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "useRefreshJobRecommendationsMutation",
+                        selections: (i = [
+                            {
+                                alias: null,
+                                args: [
+                                    { kind: "Literal", name: "s", value: "84b0" },
+                                    { kind: "Variable", name: "user_id", variableName: "userId" },
+                                ],
+                                concreteType: "RefreshJobRecommendationsResult",
+                                kind: "LinkedField",
+                                name: "refresh_job_recommendations",
+                                plural: !1,
+                                selections: [{ alias: null, args: null, kind: "ScalarField", name: "recommendation_count", storageKey: null }],
+                                storageKey: null,
+                            },
+                        ]),
+                        type: "Mutation",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: n, kind: "Operation", name: "useRefreshJobRecommendationsMutation", selections: i },
+                    params: { id: "NjDhjn_53KnOmYAcoyxqew", metadata: {}, name: "useRefreshJobRecommendationsMutation", operationKind: "mutation", text: null },
+                };
+            r.hash = "492b79a53d8f9fbe4f7ba82e23dbab65";
+            const s = r;
+        },
+        420412: (e, l, a) => {
+            a.d(l, { Z: () => u });
             var n = a(202784),
                 i = a(325686),
                 r = a(235902),
                 s = a(885015),
                 t = a(392237);
-            function u({ borderColor: l = "borderColor", isSlim: e = !1, label: a }) {
+            function u({ borderColor: e = "borderColor", isSlim: l = !1, label: a }) {
                 const { isWebRedesign: u } = r.ZP.useProps(),
-                    d = "borderColor" === l || "nestedBorderColor" === l ? o[l] : { backgroundColor: t.default.theme.colors[l] ?? t.default.theme.colors.borderColor };
-                return a ? n.createElement(s.Z, { style: !e && o.root, withGutter: !0 }, n.createElement(i.Z, { style: o.gapColumn }, n.createElement(i.Z, { style: [o.gap, d] })), n.createElement(i.Z, { style: o.gapText }, a), n.createElement(i.Z, { style: o.gapColumn }, n.createElement(i.Z, { style: [o.gap, d] }))) : n.createElement(i.Z, { style: [!e && o.root, u() && o.rootRedesign, o.gap, d] });
+                    d = "borderColor" === e || "nestedBorderColor" === e ? o[e] : { backgroundColor: t.default.theme.colors[e] ?? t.default.theme.colors.borderColor };
+                return a ? n.createElement(s.Z, { style: !l && o.root, withGutter: !0 }, n.createElement(i.Z, { style: o.gapColumn }, n.createElement(i.Z, { style: [o.gap, d] })), n.createElement(i.Z, { style: o.gapText }, a), n.createElement(i.Z, { style: o.gapColumn }, n.createElement(i.Z, { style: [o.gap, d] }))) : n.createElement(i.Z, { style: [!l && o.root, u() && o.rootRedesign, o.gap, d] });
             }
-            const o = t.default.create((l) => ({ borderColor: { backgroundColor: t.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: t.default.theme.colors.nestedBorderColor }, gap: { height: l.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: l.spaces.space4 }, rootRedesign: { marginHorizontal: l.spaces.space16 } }));
+            const o = t.default.create((e) => ({ borderColor: { backgroundColor: t.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: t.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
         },
-        885015: (l, e, a) => {
-            a.d(e, { Z: () => o });
+        885015: (e, l, a) => {
+            a.d(l, { Z: () => o });
             var n = a(807896),
                 i = a(202784),
                 r = a(325686),
                 s = a(392237);
             class t extends i.Component {
                 render() {
-                    const { children: l, style: e, withGutter: a, ...s } = this.props,
-                        t = i.Children.map(l, (l) => l && i.cloneElement(l, { style: [l.props.style, u.column, a && u.withGutterColumn] }));
-                    return i.createElement(r.Z, (0, n.Z)({ style: [e, u.root, a && u.withGutter] }, s), t);
+                    const { children: e, style: l, withGutter: a, ...s } = this.props,
+                        t = i.Children.map(e, (e) => e && i.cloneElement(e, { style: [e.props.style, u.column, a && u.withGutterColumn] }));
+                    return i.createElement(r.Z, (0, n.Z)({ style: [l, u.root, a && u.withGutter] }, s), t);
                 }
             }
             t.defaultProps = { withGutter: !1 };
-            const u = s.default.create((l) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${l.spaces.space4}` }, withGutterColumn: { marginHorizontal: l.spaces.space4 } })),
+            const u = s.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 o = t;
         },
-        662678: (l, e, a) => {
-            a.d(e, { G: () => i, Z: () => n });
+        524496: (e, l, a) => {
+            a.d(l, { Z: () => b });
             a(136728);
-            const n = function (l, e) {
-                return i(l, e);
+            var n = a(202784),
+                i = a(301503),
+                r = a(325686),
+                s = a(595088),
+                t = a(516951),
+                u = a(731708),
+                o = a(779802),
+                d = a(537392),
+                c = a(989272),
+                g = a(925873),
+                m = a(202253),
+                y = a(786475),
+                k = a(392237),
+                p = a(135904);
+            const F = { [o.P7.atomic]: { element: "section" }, [o.P7.header1]: { element: "h1", wrapper: n.createElement(u.ZP, null) }, [o.P7.header2]: { element: "h2", wrapper: n.createElement(u.ZP, null) } },
+                K = (0, s.Z)(F).reduce((e, [l, a]) => e.set(l, a), i.DefaultDraftBlockRenderMap);
+            let _ = !1;
+            const b = n.memo(function (e) {
+                    const { componentByType: l, contentState: a, onScribeEvent: s, paragraphFontSizeOverride: u } = e;
+                    n.useEffect(() => {
+                        _ || (c.fH(p.c, p.n), (_ = !0));
+                    }, []);
+                    const k = [(0, m.ez)(s, u), m.aF, m.RU];
+                    e.disable_entityLinkDecorator || k.push((0, m.NA)(s, u));
+                    const F = g.Z.initEditorState(a, { decorators: k });
+                    let b = t.Z;
+                    return (
+                        l &&
+                            (b = (e) => {
+                                const a = e.getType();
+                                return l[a] || null;
+                            }),
+                        n.createElement(d.ZP, null, ({ containerWidth: e }) => n.createElement(r.Z, { style: f.fontFamily }, n.createElement(i.Editor, { blockRenderMap: K, blockRendererFn: b, blockStyleFn: (0, o.su)(y.Z.isNarrowScreenWidth(e)), editorState: F, onChange: t.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
+                    );
+                }),
+                f = k.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
+        },
+        183806: (e, l, a) => {
+            a.d(l, { Z: () => n });
+            const n = a(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
+        },
+        377782: (e, l, a) => {
+            a.r(l), a.d(l, { default: () => u });
+            var n = a(202784),
+                i = a(890601),
+                r = a(783427),
+                s = a(347101);
+            const t = (e = {}) => {
+                const { direction: l } = (0, r.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 2.59l9.46 9.45-1.42 1.42L12 5.41l-8.04 8.05-1.42-1.42L12 2.59zm0 7l9.46 9.45-1.42 1.42L12 12.41l-8.04 8.05-1.42-1.42L12 9.59z" })) }, { writingDirection: l });
             };
-            function i(l, e) {
-                return l.reduce(
+            t.metadata = { width: 24, height: 24 };
+            const u = t;
+        },
+        662678: (e, l, a) => {
+            a.d(l, { G: () => i, Z: () => n });
+            a(136728);
+            const n = function (e, l) {
+                return i(e, l);
+            };
+            function i(e, l) {
+                return e.reduce(
                     (a, n, i) => {
-                        const r = e ? e(n, i, l) : !!n;
+                        const r = l ? l(n, i, e) : !!n;
                         return r && a[0].push(n), !r && a[1].push(n), a;
                     },
                     [[], []],
                 );
             }
         },
-        125568: (l, e, a) => {
-            a.d(e, { t: () => i });
+        125568: (e, l, a) => {
+            a.d(l, { t: () => i });
             var n = a(202784);
             function i() {
-                const l = n.useRef(!0);
+                const e = n.useRef(!0);
                 return (
                     n.useLayoutEffect(
                         () => () => {
-                            l.current = !1;
+                            e.current = !1;
                         },
                         [],
                     ),
-                    n.useCallback(() => l.current, [])
+                    n.useCallback(() => e.current, [])
                 );
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.JobSearch-6107ac1a.72154f1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.JobSearch-6107ac1a.217b0fba.js.map

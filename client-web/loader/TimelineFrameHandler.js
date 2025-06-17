@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.TimelineFrameHandler", "icons/IconSound-js"],
+    ["loader.TimelineFrameHandler"],
     {
         151889: (e, t, r) => {
             r.r(t), r.d(t, { default: () => c });
@@ -88,12 +88,12 @@
                 }
                 render() {
                     const { guestsState: e, playerApi: t, playerState: r, stablePlayerState: n } = this.state,
-                        { additionalBadges: l, aspectRatio: p, basePlayerClass: u, children: d, includeDisputeLinkInCopyrightErrorMessage: h, isFullScreen: g, objectFitVideo: b, onApiReady: S, onScroll: f, onStateUpdate: C, playerId: _, size: v, ...P } = this.props,
-                        E = { aspectRatio: this.props.aspectRatio, guestsState: e, playerApi: t, playerState: r, containerRef: this._containerRef },
-                        R = { ...E, playerState: n };
+                        { additionalBadges: l, aspectRatio: p, basePlayerClass: u, children: d, includeDisputeLinkInCopyrightErrorMessage: h, isFullScreen: g, objectFitVideo: b, onApiReady: S, onScroll: f, onStateUpdate: C, playerId: _, size: P, ...E } = this.props,
+                        v = { aspectRatio: this.props.aspectRatio, guestsState: e, playerApi: t, playerState: r, containerRef: this._containerRef },
+                        R = { ...v, playerState: n };
                     return s.createElement(
                         i.Z,
-                        { isFullScreen: g, onScroll: f, ratio: p, style: [m.root, m[v]] },
+                        { isFullScreen: g, onScroll: f, ratio: p, style: [m.root, m[P]] },
                         this.state.hasError
                             ? s.createElement(o.Z, { onReloadPress: this._handleReload })
                             : s.createElement(
@@ -101,8 +101,8 @@
                                   { value: R },
                                   s.createElement(
                                       y.PeriodicContext.Provider,
-                                      { value: E },
-                                      s.createElement(c.Z.RegistrationContext.Consumer, null, ({ registerPlayer: e }) => s.createElement(u, (0, a.Z)({}, P, { customOverlay: this._renderCustomOverlay(), displayOptions: { objectFitVideo: b }, setPlayerApi: this._handlePlayerApi(e) }))),
+                                      { value: v },
+                                      s.createElement(c.Z.RegistrationContext.Consumer, null, ({ registerPlayer: e }) => s.createElement(u, (0, a.Z)({}, E, { customOverlay: this._renderCustomOverlay(), displayOptions: { objectFitVideo: b }, setPlayerApi: this._handlePlayerApi(e) }))),
                                   ),
                               ),
                     );
@@ -189,19 +189,6 @@
             }
             const y = u.default.create((e) => ({ backgroundImage: { ...u.default.absoluteFillObject, filter: "blur(5px)" }, overlay: { ...u.default.absoluteFillObject, backgroundColor: e.colors.translucentBlack77 }, blankOverlay: { backgroundColor: e.colors.gray0 }, buttonContainer: { justifyContent: "center", alignSelf: "center" }, errorContainer: { justifyContent: "center", height: "100%", marginHorizontal: e.spaces.space32 }, errorMsgTextWhite: { color: e.colors.white, textAlign: "center", marginBottom: e.spaces.space20 }, errorMsgTextGray: { color: e.colors.gray700, textAlign: "center", marginBottom: e.spaces.space20 }, playErrorIcon: { fill: e.colors.gray700, height: e.spaces.space48, width: e.spaces.space48, marginHorizontal: "auto", paddingBottom: e.spaces.space20, verticalAlign: "middle" } }));
         },
-        926628: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => o });
-            var a = r(202784),
-                s = r(890601),
-                n = r(783427),
-                i = r(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M15 22.94V1.06L6.68 7H3.5C2.12 7 1 8.12 1 9.5v5C1 15.88 2.12 17 3.5 17h3.18L15 22.94zM3.5 9H6v6H3.5c-.28 0-.5-.22-.5-.5v-5c0-.28.22-.5.5-.5zM13 19.06l-5-3.57V8.51l5-3.57v14.12zm5.95-12.01c-.24-.24-.49-.45-.75-.65l1-1.75c.41.29.8.62 1.16.99 3.52 3.51 3.52 9.21 0 12.72-.36.37-.75.7-1.16.99l-1-1.75c.26-.2.51-.41.75-.65 2.73-2.73 2.73-7.17 0-9.9zM17 12c0-.8-.31-1.52-.82-2.06l1.02-1.78c1.1.91 1.8 2.29 1.8 3.84s-.7 2.93-1.8 3.84l-1.02-1.78c.51-.54.82-1.26.82-2.06z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const o = l;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TimelineFrameHandler.379f195a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TimelineFrameHandler.caf0599a.js.map

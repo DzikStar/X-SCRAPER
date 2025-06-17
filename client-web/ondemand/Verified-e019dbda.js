@@ -12,39 +12,39 @@
             n.d(t, { Z: () => p });
             var r = n(807896),
                 o = n(202784),
-                a = n(182056),
-                i = n(879113),
+                i = n(182056),
+                a = n(879113),
                 l = n(392237),
                 c = n(111677),
                 s = n.n(c),
                 d = n(968478);
-            const f = s().aa6e3300,
-                u = ({ retryMessage: e, ...t }, n) => {
-                    const l = a.Z.isOnline();
-                    return o.createElement(i.Z, (0, r.Z)({}, t, { icon: l ? void 0 : o.createElement(d.default, { style: m.icon }), retryMessage: l ? e : f }));
+            const u = s().aa6e3300,
+                m = ({ retryMessage: e, ...t }, n) => {
+                    const l = i.Z.isOnline();
+                    return o.createElement(a.Z, (0, r.Z)({}, t, { icon: l ? void 0 : o.createElement(d.default, { style: f.icon }), retryMessage: l ? e : u }));
                 },
-                m = l.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
-                p = o.forwardRef(u);
+                f = l.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
+                p = o.forwardRef(m);
         },
         664052: (e, t, n) => {
-            n.d(t, { Z: () => E });
+            n.d(t, { Z: () => S });
             var r = n(202784),
                 o = n(301503),
-                a = n(325686),
-                i = n(925873),
+                i = n(325686),
+                a = n(925873),
                 l = n(989272),
                 c = n(891198),
                 s = n(731708),
                 d = n(977952),
-                f = n(297256),
-                u = n(524496),
-                m = n(392237),
+                u = n(297256),
+                m = n(524496),
+                f = n(392237),
                 p = n(111677),
-                g = n.n(p),
-                h = n(187669),
+                h = n.n(p),
+                g = n(187669),
                 b = n(874111);
-            const _ = g().c2333081,
-                S = (e) => {
+            const y = h().c2333081,
+                w = (e) => {
                     const t = ((e) => {
                             try {
                                 return e ? JSON.parse(e) : void 0;
@@ -52,44 +52,106 @@
                                 return;
                             }
                         })(e),
-                        n = i.Z.initEditorState(t);
-                    return i.Z.convertEmojiToEntities(n);
+                        n = a.Z.initEditorState(t);
+                    return a.Z.convertEmojiToEntities(n);
                 },
-                $ = m.default.create((e) => ({ message: { flexDirection: "row" }, textCountLabel: { flexDirection: "row", alignSelf: "center" }, container: { paddingHorizontal: e.spaces.space20, paddingTop: e.spaces.space28, paddingBottom: e.spaces.space20 }, readOnlyContainer: { padding: e.spaces.space16, maxHeight: "500px", overflowX: "auto", backgroundColor: e.colors.gray0, color: e.colors.gray300 }, richTextWrapper: { borderWidth: e.borderWidths.small, borderColor: e.colors.gray200, borderRadius: e.borderRadii.small, padding: e.spaces.space1, marginBottom: e.spaces.space16 } })),
-                E = ({ allowExtendedPasteStyles: e, characterLimit: t, editable: n = !0, editorClass: m, editorStyles: p, initialState: g = "", limitedRichText: E = !1, numberOfLines: y = 10, onChange: v, textSizesOverride: T }) => {
-                    const [w, D] = r.useState(S(g));
-                    (0, h.q)(() => {
-                        p && m && (0, l.fH)(p, m);
+                _ = f.default.create((e) => ({ message: { flexDirection: "row" }, textCountLabel: { flexDirection: "row", alignSelf: "center" }, container: { paddingHorizontal: e.spaces.space20, paddingTop: e.spaces.space28, paddingBottom: e.spaces.space20 }, readOnlyContainer: { padding: e.spaces.space16, maxHeight: "500px", overflowX: "auto", backgroundColor: e.colors.gray0, color: e.colors.gray300 }, richTextWrapper: { borderWidth: e.borderWidths.small, borderColor: e.colors.gray200, borderRadius: e.borderRadii.small, padding: e.spaces.space1, marginBottom: e.spaces.space16 } })),
+                S = ({ allowExtendedPasteStyles: e, characterLimit: t, editable: n = !0, editorClass: f, editorStyles: p, initialState: h = "", limitedRichText: S = !1, numberOfLines: T = 10, onChange: C, textSizesOverride: v }) => {
+                    const [E, $] = r.useState(w(h));
+                    (0, g.q)(() => {
+                        p && f && (0, l.fH)(p, f);
                     });
-                    const O = r.useMemo(() => w?.getCurrentContent(), [w]),
-                        z = r.useCallback(
+                    const O = r.useMemo(() => E?.getCurrentContent(), [E]),
+                        D = r.useCallback(
                             (e) => {
-                                const t = i.Z.convertEmojiToEntities(e);
-                                D(t), v(t);
+                                const t = a.Z.convertEmojiToEntities(e);
+                                $(t), C(t);
                             },
-                            [v],
+                            [C],
                         ),
-                        C = (0, b.c6)(w);
-                    let I = C;
-                    C > 1 && (I = c.ZP.getFormattedCount(C));
-                    const P = r.useMemo(() => {
-                            const e = !!t && C > t;
-                            return r.createElement(a.Z, null, r.createElement(s.ZP, { color: e ? "red500" : "gray900", numberOfLines: 1, size: "subtext1", style: $.textCountLabel }, _({ count: I })));
-                        }, [C, I, t]),
-                        k = r.useMemo(() => ({ allowExtendedPasteStyles: e, editorState: w, element: d.Z, stripPastedStyles: !0 }), [e, w]);
-                    return r.createElement(a.Z, null, n ? r.createElement(a.Z, { style: $.richTextWrapper }, r.createElement(f.b, { inputStyle: $.container, isInputFullWidth: !0, limitedRichText: E, numberOfLines: y, onChange: z, richTextInputContext: k, textSizesOverride: T, toolbarRightControl: P })) : r.createElement(r.Fragment, null, O && O.hasText() ? r.createElement(a.Z, { style: $.richTextWrapper }, r.createElement(a.Z, { style: $.readOnlyContainer }, r.createElement(u.Z, { contentState: (0, o.convertToRaw)(O) }))) : null));
+                        I = (0, b.c6)(E);
+                    let k = I;
+                    I > 1 && (k = c.ZP.getFormattedCount(I));
+                    const z = r.useMemo(() => {
+                            const e = !!t && I > t;
+                            return r.createElement(i.Z, null, r.createElement(s.ZP, { color: e ? "red500" : "gray900", numberOfLines: 1, size: "subtext1", style: _.textCountLabel }, y({ count: k })));
+                        }, [I, k, t]),
+                        x = r.useMemo(() => ({ allowExtendedPasteStyles: e, editorState: E, element: d.Z, stripPastedStyles: !0 }), [e, E]);
+                    return r.createElement(i.Z, null, n ? r.createElement(i.Z, { style: _.richTextWrapper }, r.createElement(u.b, { inputStyle: _.container, isInputFullWidth: !0, limitedRichText: S, numberOfLines: T, onChange: D, richTextInputContext: x, textSizesOverride: v, toolbarRightControl: z })) : r.createElement(r.Fragment, null, O && O.hasText() ? r.createElement(i.Z, { style: _.richTextWrapper }, r.createElement(i.Z, { style: _.readOnlyContainer }, r.createElement(m.Z, { contentState: (0, o.convertToRaw)(O) }))) : null));
                 };
+        },
+        222718: (e, t, n) => {
+            n.d(t, { Z: () => b });
+            var r = n(202784),
+                o = n(325686),
+                i = n(537392),
+                a = n(10656),
+                l = n(655352),
+                c = n(555079),
+                s = n(500002),
+                d = n(625661),
+                u = n(449067),
+                m = n(655543),
+                f = n(715601),
+                p = n(392237);
+            const h = p.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...p.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
+            class g extends r.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this._renderChildren = () => {
+                            const { children: e } = this.props;
+                            return this.context.rootDetailPerColumnScroll ? r.createElement(o.Z, { style: h.fill }, r.createElement(f.Z, { style: h.viewportView }, this._renderInlineNav({ isTwoColumnLayout: !0 }), e)) : e;
+                        });
+                }
+                render() {
+                    return r.createElement(i.ZP, null, ({ containerWidth: e }) => (a.Z.isTwoColumnLayout(e) ? this._renderForTwoColumnLayout() : this._renderForOneColumnLayout()));
+                }
+                _renderForOneColumnLayout() {
+                    const { appBarStyle: e, children: t, leftControl: n, screenType: o, showBackButtonOnRoot: i, showSubtitleOnRoot: a, showSubtitleOnWideDetail: c, showTitleOnRoot: s, withBottomBorder: d, withDetailOpen: m, ...f } = this.props;
+                    return r.createElement(r.Fragment, null, (0, l.ZP)() ? this._renderInlineNav({ isTwoColumnLayout: !1 }) : r.createElement(u.Z.Configure, f), t);
+                }
+                _renderForTwoColumnLayout() {
+                    const e = this.context.rootDetailPerColumnScroll;
+                    return r.createElement(r.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
+                }
+                _renderInlineNav({ isTwoColumnLayout: e }) {
+                    const { SideNavButton: t, TabBar: n, appBarStyle: i, backLocation: a, documentTitle: l, headerless: s, history: m, leftControl: f, middleControl: p, onBackClick: g, rightControl: b, screenType: y, searchBoxOptions: w, secondaryBar: _, showBackButtonOnRoot: S, showSubtitleOnRoot: T, showSubtitleOnWideDetail: C, showTitleOnRoot: v, subtitle: E, title: $, titleIconCell: O, titleIconCellSize: D, withDetailOpen: I, withSearchBox: k, withTweetButton: z, withWideContainer: x } = this.props,
+                        B = "root" === y,
+                        Z = "secondaryRoot" === y,
+                        P = "primaryDetail" === y,
+                        L = (P && C) || (B && T),
+                        F = (B && !S) || (P && e),
+                        R = (B && !v) || (P && e && !v),
+                        A = B ? c.ey : P ? c.vX : void 0,
+                        N = r.createElement(o.Z, { style: h.appBarContainer }, r.createElement(d.ZP, { backLocation: a, fixed: !1, hideBackButton: F, history: m, leftControl: f, middleControl: p, onBackClick: g, rightControl: b, secondaryBar: _, style: i, subtitle: L ? E : void 0, title: R ? void 0 : $, titleDomId: A, titleIconCell: O, titleIconCellSize: D, withWideContainer: x })),
+                        W = B || (Z && I) ? null : r.createElement(u.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: a, documentTitle: l, headerless: s, middleControl: p, onBackClick: g, rightControl: b, searchBoxOptions: w, subtitle: E, title: $, withSearchBox: k, withTweetButton: z });
+                    return r.createElement(r.Fragment, null, W, N);
+                }
+            }
+            (g.contextType = m.Z), (g.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0, showBackButtonOnRoot: !1, showTitleOnRoot: !0 });
+            const b = (0, s.ZP)(g);
+        },
+        496364: (e, t, n) => {
+            n.d(t, { Z: () => l });
+            var r = n(202784),
+                o = n(107267),
+                i = n(791632),
+                a = n(222718);
+            const l = (e) => {
+                const t = (0, o.useHistory)();
+                return (0, i.HD)(t) ? e.children || null : r.createElement(a.Z, e);
+            };
         },
         282559: (e, t, n) => {
             n.d(t, { v: () => c });
             n(571372);
             var r = n(96768),
                 o = n(202784),
-                a = (n(585488), n(351743)),
-                i = n.n(a);
+                i = (n(585488), n(351743)),
+                a = n.n(i);
             const l = r.Z,
                 c = ({ originProduct: e, returnUrl: t }) => {
-                    const [n, r] = i()(l);
+                    const [n, r] = a()(l);
                     return [
                         o.useCallback(
                             () =>
@@ -113,32 +175,32 @@
             n.d(t, { Z: () => d });
             var r = n(202784),
                 o = n(111677),
-                a = n.n(o),
-                i = n(782826),
+                i = n.n(o),
+                a = n(782826),
                 l = n(282559),
                 c = n(782642);
-            const s = a().ef4602ec;
+            const s = i().ef4602ec;
             function d(e) {
                 const t = (0, c.p)(),
                     [n, o] = (0, l.v)(e),
-                    a = r.useCallback(() => {
+                    i = r.useCallback(() => {
                         n()
                             .then((e) => {
-                                i.ZP.navigateTo(e);
+                                a.ZP.navigateTo(e);
                             })
                             .catch(() => {
                                 t({ text: s });
                             });
                     }, [n, t]);
-                return o ? void 0 : a;
+                return o ? void 0 : i;
             }
         },
         478414: (e, t, n) => {
-            n.d(t, { Hx: () => c, K: () => a, bb: () => l, gv: () => i, kg: () => s, yW: () => d });
+            n.d(t, { Hx: () => c, K: () => i, bb: () => l, gv: () => a, kg: () => s, yW: () => d });
             var r = n(779802),
                 o = n(392237);
-            const a = { h1FontSize: "headline1", h2FontSize: "headline2", paragraphFontSize: "subtext1" },
-                i = { h1FontSize: "title4", h2FontSize: "headline1", paragraphFontSize: "headline2" },
+            const i = { h1FontSize: "headline1", h2FontSize: "headline2", paragraphFontSize: "subtext1" },
+                a = { h1FontSize: "title4", h2FontSize: "headline1", paragraphFontSize: "headline2" },
                 l = ({ h1FontSize: e, h2FontSize: t, paragraphFontSize: n }) => [
                     { blockType: r.P7.header1, label: r.et, component: (0, r.LI)({ size: e, children: r.et, extendedWidth: !0 }) },
                     { blockType: r.P7.header2, label: r.PW, component: (0, r.LI)({ size: t, weight: "bold", children: r.PW }) },
@@ -153,20 +215,20 @@
             n.d(t, { Ld: () => d, gS: () => s, pB: () => l, yv: () => c });
             var r = n(111677),
                 o = n.n(r),
-                a = n(337394);
-            const i = o().b47d123d,
+                i = n(337394);
+            const a = o().b47d123d,
                 l = (e) => {
-                    const t = e?.prices?.find((e) => e?.charge_interval === a.rv.Year),
-                        n = e?.prices?.find((e) => e?.charge_interval === a.rv.Month),
+                    const t = e?.prices?.find((e) => e?.charge_interval === i.rv.Year),
+                        n = e?.prices?.find((e) => e?.charge_interval === i.rv.Month),
                         r = n ? 12 * n?.amount_local_micro : 0,
                         o = t ? Math.floor(((t.amount_local_micro - r) / r) * -100) : null;
-                    return i({ percentage: o });
+                    return a({ percentage: o });
                 },
                 c = ({ activeSubscription: e, tier: t }) => {
                     const n = e?.product?.rest_id;
                     if (!n) return "invalid";
-                    if (a.v5.premium[n] === t) return "active";
-                    switch (a.v5.premium[n]) {
+                    if (i.v5.premium[n] === t) return "active";
+                    switch (i.v5.premium[n]) {
                         case "PremiumBasic":
                             if ("BlueVerified" === t || "BlueVerifiedPlus" === t) return "upgrade";
                             break;
@@ -185,32 +247,32 @@
                 s = (e, t, n) => {
                     const { status: r } = n,
                         o = Date.now(),
-                        a = e?.promotions?.filter((e) => {
+                        i = e?.promotions?.filter((e) => {
                             const n = parseInt(e.ends_at_msec, 10),
-                                a = parseInt(e.started_from_msec, 10);
+                                i = parseInt(e.started_from_msec, 10);
                             if (e.promotion_type === t && n > o) {
-                                if ("active" === r) return a < o;
-                                if ("pending" === r) return a > o;
+                                if ("active" === r) return i < o;
+                                if ("pending" === r) return i > o;
                             }
                         });
-                    return a?.[0];
+                    return i?.[0];
                 },
                 d = (e) => "Twitter" === e.payment_source || "Ads" === e.payment_source;
         },
         685731: (e, t, n) => {
-            n.d(t, { Gi: () => b, Mk: () => S, ZV: () => g, aU: () => p, d3: () => _, fS: () => $, pt: () => h });
+            n.d(t, { Gi: () => b, Mk: () => w, ZV: () => h, aU: () => p, d3: () => y, fS: () => _, pt: () => g });
             n(202784);
             var r = n(111677),
                 o = n.n(r),
-                a = n(336629),
-                i = n(862695),
+                i = n(336629),
+                a = n(862695),
                 l = n(97882),
                 c = n(337394),
                 s = n(548797);
             const d = o().c6614cc0,
-                f = o().f8d3b50a,
-                u = o().i2c32253,
-                m = o().c41e1023;
+                u = o().f8d3b50a,
+                m = o().i2c32253,
+                f = o().c41e1023;
             function p(e, t = !0, n) {
                 let r = "number" == typeof e?.amount_local_micro ? e.amount_local_micro : 0;
                 if (
@@ -224,59 +286,59 @@
                 }
                 return r;
             }
-            function g(e) {
-                return "number" == typeof e?.tax_amount_local_micro ? f : d;
+            function h(e) {
+                return "number" == typeof e?.tax_amount_local_micro ? u : d;
             }
-            const h = (e, t, n) => (Array.isArray(e) ? e.filter((e) => e.charge_interval === n && e.metadata.purchasable).find((e) => (t ? !0 === e.metadata?.seated : !1 === e.metadata?.seated)) : void 0);
+            const g = (e, t, n) => (Array.isArray(e) ? e.filter((e) => e.charge_interval === n && e.metadata.purchasable).find((e) => (t ? !0 === e.metadata?.seated : !1 === e.metadata?.seated)) : void 0);
             function b(e, t) {
                 if (e && t) return t?.find((t) => t?.charge_interval === e);
             }
-            function _(e, t = !1, n, r = !1, o = !0) {
+            function y(e, t = !1, n, r = !1, o = !0) {
                 const d = (0, s.gS)(n, "Discount", { status: r ? "pending" : "active" }),
-                    f = (0, l.x)({ amount: p(e, t), currencyCode: e?.currency_code?.toUpperCase(), removeTrailingZeros: !0 });
-                return d && e.charge_interval ? (0, i.V)({ selectedInterval: e.charge_interval, duration: d.promotion_metadata?.duration_in_interval, discountedFormattedPrice: (0, a.T)({ price: e, percentOff: d.promotion_metadata?.percent_off, includeTax: t, annualPriceMonthly: !1 }), formattedPrice: f, includeDiscountedPrice: !0, includeThenLabel: o }) : e.charge_interval === c.rv.Year ? m({ price: f }) : e.charge_interval === c.rv.Month ? u({ price: f }) : "";
+                    u = (0, l.x)({ amount: p(e, t), currencyCode: e?.currency_code?.toUpperCase(), removeTrailingZeros: !0 });
+                return d && e.charge_interval ? (0, a.V)({ selectedInterval: e.charge_interval, duration: d.promotion_metadata?.duration_in_interval, discountedFormattedPrice: (0, i.T)({ price: e, percentOff: d.promotion_metadata?.percent_off, includeTax: t, annualPriceMonthly: !1 }), formattedPrice: u, includeDiscountedPrice: !0, includeThenLabel: o }) : e.charge_interval === c.rv.Year ? f({ price: u }) : e.charge_interval === c.rv.Month ? m({ price: u }) : "";
             }
-            const S = (e) => {
+            const w = (e) => {
                     const t = e.subscription_promotions?.find((e) => !!e.metadata.free_trial_days);
                     return t;
                 },
-                $ = (e, t, n) => {
+                _ = (e, t, n) => {
                     if (!t || n) return null;
                     const r = e.subscription_promotions?.find((e) => !(!e.metadata.duration_in_interval || !e.metadata.percent_off || !e.ends_at_msec || e.metadata.free_trial_days));
                     return r;
                 };
         },
         359870: (e, t, n) => {
-            n.d(t, { Z: () => l, b: () => i });
+            n.d(t, { Z: () => l, b: () => a });
             var r = n(111677);
             const o = n.n(r)().g33c0564,
-                a = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,64}$/,
-                i = 385;
+                i = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,64}$/,
+                a = 385;
             function l(e) {
-                return e.length > i ? o : a.test(e) ? void 0 : o;
+                return e.length > a ? o : i.test(e) ? void 0 : o;
             }
         },
         794057: (e, t, n) => {
-            n.d(t, { C0: () => i, DC: () => r, _e: () => a, iN: () => s, kd: () => l, pc: () => o });
+            n.d(t, { C0: () => a, DC: () => r, _e: () => i, iN: () => s, kd: () => l, pc: () => o });
             const r = Object.freeze({ MEDIA: "MEDIA", TWEET: "TWEET", MARKDOWN: "MARKDOWN", DIVIDER: "DIVIDER", LATEX: "LATEX" }),
                 o = Object.freeze({ IMMUTABLE: "IMMUTABLE", MUTABLE: "MUTABLE" }),
-                a = Object.freeze({ GIF: "DraftTweetGif", IMAGE: "DraftTweetImage", VIDEO: "DraftTweetVideo" }),
-                i = Object.freeze({ TWITTER_ARTICLES_TAB: "TWITTER_ARTICLES_TAB", TWITTER_ARTICLE_VIEW: "TWITTER_ARTICLE_VIEW", LONGFORM_COMPOSER: "LONGFORM_COMPOSER" }),
+                i = Object.freeze({ GIF: "DraftTweetGif", IMAGE: "DraftTweetImage", VIDEO: "DraftTweetVideo" }),
+                a = Object.freeze({ TWITTER_ARTICLES_TAB: "TWITTER_ARTICLES_TAB", TWITTER_ARTICLE_VIEW: "TWITTER_ARTICLE_VIEW", LONGFORM_COMPOSER: "LONGFORM_COMPOSER" }),
                 l = { content_state: { blocks: [], entity_map: [] } },
                 c = Object.freeze({ DRAFT: "Draft", PUBLISHED: "Published" }),
                 s = Object.freeze({ DRAFT: c.DRAFT, PUBLISHED: c.PUBLISHED });
         },
         488645: (e, t, n) => {
-            n.d(t, { q: () => a });
+            n.d(t, { q: () => i });
             var r = n(225258),
                 o = n(917799);
-            const a =
-                    (e, t, n, a, l) =>
-                    async (c, s, { api: d, userPersistence: f }) => {
-                        const u = await i(f, n, a, l);
-                        return u ? (0, o.Vg)(c, { params: { basePixel: e, eventPixel: t, twclid: u }, request: ({ basePixel: e, eventPixel: t, twclid: n } = {}, o) => d.withEndpoint(r.Z).postConversion(e, t, n, o) })("POST_CONVERSION") : Promise.resolve(null);
+            const i =
+                    (e, t, n, i, l) =>
+                    async (c, s, { api: d, userPersistence: u }) => {
+                        const m = await a(u, n, i, l);
+                        return m ? (0, o.Vg)(c, { params: { basePixel: e, eventPixel: t, twclid: m }, request: ({ basePixel: e, eventPixel: t, twclid: n } = {}, o) => d.withEndpoint(r.Z).postConversion(e, t, n, o) })("POST_CONVERSION") : Promise.resolve(null);
                     },
-                i = async (e, t, n, r) => {
+                a = async (e, t, n, r) => {
                     let o = t;
                     if (r && o) await e.set(n, { twclid: o });
                     else {
@@ -287,30 +349,30 @@
                 };
         },
         689212: (e, t, n) => {
-            n.d(t, { am: () => f, XI: () => u, rF: () => p });
+            n.d(t, { am: () => u, XI: () => m, rF: () => p });
             var r = n(499627),
                 o = n(312771),
-                a = n(540819);
-            const i = Object.freeze({ CONFIG_LOADED: "rweb/verifiedOrgConfig/LOADED", CONFIG_REQUEST: "rweb/verifiedOrgConfig/REQUEST", SET_CONFIG: "rweb/verifiedOrgConfig/SET" }),
+                i = n(540819);
+            const a = Object.freeze({ CONFIG_LOADED: "rweb/verifiedOrgConfig/LOADED", CONFIG_REQUEST: "rweb/verifiedOrgConfig/REQUEST", SET_CONFIG: "rweb/verifiedOrgConfig/SET" }),
                 l = "verifiedOrgConfig",
                 c = "rweb.verifiedOrgConfig",
-                s = { currentTab: a.p.ACCOUNTS },
+                s = { currentTab: i.p.ACCOUNTS },
                 d = Object.freeze({ fetchStatus: o.ZP.NONE, config: s });
-            const f = (e) => e[l].fetchStatus,
-                u = (e) => e[l].config.currentTab || a.p.ACCOUNTS,
-                m = (e) => ({ payload: e, type: i.CONFIG_LOADED }),
+            const u = (e) => e[l].fetchStatus,
+                m = (e) => e[l].config.currentTab || i.p.ACCOUNTS,
+                f = (e) => ({ payload: e, type: a.CONFIG_LOADED }),
                 p =
                     (e) =>
-                    (t, n, { userPersistence: r }) => (t({ payload: e, type: i.SET_CONFIG }), r.set(c, e));
+                    (t, n, { userPersistence: r }) => (t({ payload: e, type: a.SET_CONFIG }), r.set(c, e));
             r.Z.register(
                 {
                     [l]: function (e = d, t) {
                         switch (t.type) {
-                            case i.CONFIG_REQUEST:
+                            case a.CONFIG_REQUEST:
                                 return { ...e, fetchStatus: o.ZP.LOADING };
-                            case i.CONFIG_LOADED:
+                            case a.CONFIG_LOADED:
                                 return { ...e, fetchStatus: o.ZP.LOADED, config: { ...t.payload } };
-                            case i.SET_CONFIG:
+                            case a.SET_CONFIG:
                                 return { ...e, config: { ...t.payload } };
                             default:
                                 return e;
@@ -319,16 +381,16 @@
                 },
                 () =>
                     (e, t, { userPersistence: n }) => (
-                        e({ type: i.CONFIG_REQUEST }),
+                        e({ type: a.CONFIG_REQUEST }),
                         n
                             .get(c)
-                            .then((t) => e(m(t || s)))
+                            .then((t) => e(f(t || s)))
                             .catch(() => {
-                                e(m(s));
+                                e(f(s));
                             })
                     ),
             );
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-e019dbda.45e59b8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-e019dbda.6c0c79ca.js.map

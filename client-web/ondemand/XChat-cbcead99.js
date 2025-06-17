@@ -305,7 +305,7 @@
                 l = t(332161),
                 o = t(31674),
                 c = t(202784),
-                d = t(263986);
+                d = t(841227);
             function m({ src: e, type: s, dimensions: t, className: a, showAsStatic: r = !1 }) {
                 const { width: l, height: m } = p(t),
                     [x, u] = (0, c.useState)(!1),
@@ -353,4 +353,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-cbcead99.3e5f197a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-cbcead99.440b816a.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.ProfessionalHome", "icons/IconChevronRight-js"],
+    ["bundle.ProfessionalHome"],
     {
         233935: (e, t, a) => {
             a.d(t, { Z: () => p });
@@ -364,26 +364,26 @@
                 L = a(782826),
                 I = { kind: "InlineDataFragment", name: "invalidateProfessionalHomeUser_user", hash: "c4c066fd92866d7a3ce5ca16f23dc15f" };
             const K = I;
-            var R = a(53647),
-                V = a.n(R),
+            var V = a(53647),
+                R = a.n(V),
                 A = a(437429),
                 H = a.n(A),
                 B = a(990242),
                 M = a.n(B);
-            const j = K,
-                z = (e, t) => {
+            const U = K,
+                j = (e, t) => {
                     const a = ((e) => {
-                        const { __id: t } = M()(j, e);
+                        const { __id: t } = M()(U, e);
                         return t;
                     })(t);
                     return e.get(a);
                 },
-                U = (e) => {
+                z = (e) => {
                     const t = H()();
                     return b.useCallback(() => {
-                        V()(t, (t) => {
+                        R()(t, (t) => {
                             ((e, t) => {
-                                const a = z(e, t);
+                                const a = j(e, t);
                                 a?.invalidateRecord();
                             })(t, e);
                         });
@@ -557,17 +557,17 @@
                     const t = C()(Ie, e),
                         a = t.avatar?.image_url ?? void 0,
                         n = t.professional?.category?.[0]?.name;
-                    return b.createElement(N.Z, { "aria-level": 3, role: "heading", style: Ve.container }, b.createElement(De.default, { hasAdaptiveImage: !0, size: "large", style: Ve.element, uri: a }), t.core?.name ? b.createElement(Fe.Z, { isBlueVerified: !!t.is_blue_verified, isVerified: !!t.verification?.verified, name: t.core.name ?? "", nameSize: "title3", verifiedType: t.verification?.verified_type ?? void 0, weight: "heavy" }) : null, n ? b.createElement(Le.ZP, { color: "gray700", size: "body", style: Ve.element, weight: "medium" }, n) : null);
+                    return b.createElement(N.Z, { "aria-level": 3, role: "heading", style: Re.container }, b.createElement(De.default, { hasAdaptiveImage: !0, size: "large", style: Re.element, uri: a }), t.core?.name ? b.createElement(Fe.Z, { isBlueVerified: !!t.is_blue_verified, isVerified: !!t.verification?.verified, name: t.core.name ?? "", nameSize: "title3", verifiedType: t.verification?.verified_type ?? void 0, weight: "heavy" }) : null, n ? b.createElement(Le.ZP, { color: "gray700", size: "body", style: Re.element, weight: "medium" }, n) : null);
                 },
-                Re = b.memo(Ke),
-                Ve = G.default.create((e) => ({ container: { marginHorizontal: e.spaces.space16, marginVertical: `calc(${e.spaces.space16} - ${e.spaces.space2})` }, element: { marginVertical: e.spaces.space2 } })),
+                Ve = b.memo(Ke),
+                Re = G.default.create((e) => ({ container: { marginHorizontal: e.spaces.space16, marginVertical: `calc(${e.spaces.space16} - ${e.spaces.space2})` }, element: { marginVertical: e.spaces.space2 } })),
                 Ae = ee.Z.home,
                 He = h().ff1c5e1a,
                 Be = h().bb081ea2,
                 Me = oe,
-                je = { pathname: "twitter://settings/professional_profile", openInSameFrame: !0 },
-                ze = { label: Be },
-                Ue = ({ userRef: e }) => {
+                Ue = { pathname: "twitter://settings/professional_profile", openInSameFrame: !0 },
+                je = { label: Be },
+                ze = ({ userRef: e }) => {
                     const t = (0, x.useHistory)(),
                         a = C()(Me, e),
                         n = (0, X.z)(),
@@ -575,13 +575,13 @@
                         l = r ? D.ZP.osString() : "web";
                     n.scribePageImpression({ page: J, section: l, component: "home", action: "show" });
                     const i = b.useCallback(() => n.scribe({ page: J, section: l, component: "SettingsAppBarButton", element: "professional_profile_settings", action: "click" }), [n, l]),
-                        o = b.createElement(N.Z, { style: Oe.webViewHeader }, b.createElement(Re, { userRef: a }), !D.ZP.isAndroid() && b.createElement(N.Z, { style: Oe.webViewWrench }, b.createElement(se.ZP, { "aria-label": Be, hoverLabel: ze, icon: b.createElement($.default, null), link: je, onPress: i, type: "primaryText" }))),
-                        s = b.createElement(N.Z, { "aria-label": He, role: "region", style: Oe.contentMobile }, r ? o : b.createElement(Re, { userRef: a }), b.createElement(Ze, null), b.createElement(be, { userRef: a }), b.createElement(Ze, null), b.createElement(Pe, null)),
+                        o = b.createElement(N.Z, { style: Oe.webViewHeader }, b.createElement(Ve, { userRef: a }), !D.ZP.isAndroid() && b.createElement(N.Z, { style: Oe.webViewWrench }, b.createElement(se.ZP, { "aria-label": Be, hoverLabel: je, icon: b.createElement($.default, null), link: Ue, onPress: i, type: "primaryText" }))),
+                        s = b.createElement(N.Z, { "aria-label": He, role: "region", style: Oe.contentMobile }, r ? o : b.createElement(Ve, { userRef: a }), b.createElement(Ze, null), b.createElement(be, { userRef: a }), b.createElement(Ze, null), b.createElement(Pe, null)),
                         c = (0, ce.yu)(),
                         d = !r && !(0, ue.ZP)() && c;
                     return b.createElement(Y.Z, { backLocation: Ae, headerless: r, history: t, primaryContent: s, rightControl: r ? null : b.createElement(de.Z, { onPress: i, to: "/settings/professional_profile" }), sidebarContent: b.createElement(W.Z, null), title: d ? null : He, withBackButton: d });
                 },
-                Ne = b.memo(Ue),
+                Ne = b.memo(ze),
                 Oe = G.default.create((e) => ({ contentMobile: { paddingBottom: e.spaces.space48 }, webViewHeader: { display: "flex", flexDirection: "row", alignItems: "flex-start", justifyContent: "space-between" }, webViewWrench: { marginHorizontal: e.spaces.space16, marginVertical: `calc(${e.spaces.space16} - ${e.spaces.space2})` } }));
             var qe = a(810641),
                 Ge = a(912021),
@@ -607,7 +607,7 @@
                 nt = ({ userRef: e }) => {
                     const t = C()(at, e),
                         a = b.useRef(t),
-                        n = U(t),
+                        n = z(t),
                         r = Boolean(D.ZP.getTwitterAppVersion()),
                         l = (0, F.hC)("professional_launchpad_m1_enabled"),
                         i = b.useMemo(() => ({ pathname: "/i/flow/convert_to_professional", state: l ? { input: { requested_variant: "professionalhome-professionalHomeEnabled" } } : void 0 }), [l]);
@@ -819,21 +819,6 @@
                     return n.createElement(i.Z, { "aria-label": e, disabled: a, interactive: _, interactiveStyles: _ ? k : void 0, link: u, onClick: p, style: [s.root, t] }, h);
                 };
         },
-        58399: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => c });
-            var n = a(202784),
-                r = a(890601),
-                l = a(783427),
-                i = a(717683),
-                o = a(347101);
-            const s = (e = {}) => {
-                const t = n.useContext(i.Z),
-                    { direction: a } = (0, l.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style, t && o.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: a });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const c = s;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ProfessionalHome.7c1aa17a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ProfessionalHome.9a64721a.js.map

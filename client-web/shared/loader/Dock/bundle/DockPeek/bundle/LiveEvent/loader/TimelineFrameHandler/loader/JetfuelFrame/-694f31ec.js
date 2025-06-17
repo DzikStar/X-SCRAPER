@@ -33,6 +33,13 @@
                                 const e = (0, s.cn)([n._I.bag, new Map()], o, c.id);
                                 return t.set(c.id, e), e;
                             }
+                            case n.fx.transforming_str_to_int:
+                                const e = (0, s.cn)([n._I.int, 0], o, c.id);
+                                return t.set(c.id, e), e;
+                            case n.fx.transforming_int_to_str: {
+                                const e = (0, s.cn)([n._I.str, ""], o, c.id);
+                                return t.set(c.id, e), e;
+                            }
                         }
                     },
                     l = (e) => {
@@ -49,6 +56,10 @@
                                     return (0, s.xM)(a, o.key);
                                 case n.fx.bag_key:
                                     return;
+                                case n.fx.transforming_str_to_int:
+                                    return (0, s.yf)(a);
+                                case n.fx.transforming_int_to_str:
+                                    return (0, s.v2)(a);
                             }
                     };
                 return {
@@ -119,7 +130,7 @@
             const i = (e, t) => Object.entries(t).reduce((e, [t, r]) => ({ ...e, [t]: r && "object" == typeof r ? i(e[t], r) : (r ?? e[t]) }), { ...e });
         },
         957167: (e, t, r) => {
-            r.d(t, { Ld: () => o, RY: () => a, cn: () => s, ox: () => i, xM: () => c });
+            r.d(t, { Ld: () => o, RY: () => a, cn: () => s, ox: () => l, v2: () => u, xM: () => c, yf: () => i });
             var n = r(424012);
             const s = (e, t = void 0, r = (() => BigInt(Math.floor(Math.random() * Math.pow(10, 8))))()) => {
                     const n = new EventTarget();
@@ -182,6 +193,40 @@
                     };
                 },
                 i = (e) => {
+                    if (e.value?.[0] !== n._I.str) throw new Error("Not a str");
+                    const t = () => {
+                        const t = parseInt(e.value?.[1]);
+                        return void 0 === t ? void 0 : [n._I.int, t];
+                    };
+                    return {
+                        id: e.id,
+                        get value() {
+                            return t();
+                        },
+                        subscribe: (r) => e.subscribe(() => r(t())),
+                        set: (t) => {
+                            t && t[0] === n._I.int && e.set([n._I.str, t[1].toString()]);
+                        },
+                    };
+                },
+                u = (e) => {
+                    if (e.value?.[0] !== n._I.int) throw new Error("Not a int");
+                    const t = () => {
+                        const t = e.value?.[1];
+                        return void 0 === t ? void 0 : [n._I.str, t.toString()];
+                    };
+                    return {
+                        id: e.id,
+                        get value() {
+                            return t();
+                        },
+                        subscribe: (r) => e.subscribe(() => r(t())),
+                        set: (t) => {
+                            t && t[0] === n._I.str && e.set([n._I.int, parseInt(t[1])]);
+                        },
+                    };
+                },
+                l = (e) => {
                     const [t, r] = e;
                     switch (t) {
                         case n.fx.atom:
@@ -191,6 +236,9 @@
                         case n.fx.url_param:
                         case n.fx.bag_key:
                             return `${r.id}:${r.key}`;
+                        case n.fx.transforming_str_to_int:
+                        case n.fx.transforming_int_to_str:
+                            return `${r.id}`;
                     }
                 };
         },
@@ -636,34 +684,33 @@
                 c = r(109195),
                 i = r(608222);
             const u = new Map();
-            function l({ url: e, placeholder: t }) {
-                const r = (0, i.oG)(),
-                    [l, d] = (0, s.useState)(!0),
-                    [f, p] = (0, s.useState)(null),
-                    [b, m] = (0, s.useState)(null),
+            function l({ url: e, placeholder: t, refreshIntervalSeconds: r = 0 }) {
+                const l = (0, i.oG)(),
+                    [d, f] = (0, s.useState)(!0),
+                    [p, b] = (0, s.useState)(null),
+                    [m, v] = (0, s.useState)(null),
                     h = (0, s.useRef)(e);
-                if (!r) return (0, n.jsx)("div", { children: "Runtime context not available" });
-                const { Runtime: v } = r;
-                if (!v) return (0, n.jsx)("div", { children: "Runtime not available" });
-                const _ = (0, a.v)(v),
-                    y = async (e) => {
-                        d(!0);
+                if (!l) return (0, n.jsx)("div", { children: "Runtime context not available" });
+                const { Runtime: _ } = l;
+                if (!_) return (0, n.jsx)("div", { children: "Runtime not available" });
+                const g = (0, a.v)(_),
+                    y = async (e, t = !1) => {
                         try {
-                            const t = _.session(),
-                                r = u.get(e);
-                            if (r) {
+                            const r = g.session(),
+                                n = u.get(e);
+                            if (n && !t) {
                                 const e = (function (e) {
                                     const t = atob(e),
                                         r = new Uint8Array(t.length);
                                     for (let e = 0; e < t.length; e++) r[e] = t.charCodeAt(e);
                                     return r.buffer;
-                                })(r);
-                                t.onChunk(new Uint8Array(e)), m(_.root.value), d(!1);
+                                })(n);
+                                r.onChunk(new Uint8Array(e)), v(g.root.value), f(!1);
                             }
-                            const n = await v.net.httpGet(e);
-                            n.data &&
+                            const s = await _.net.httpGet(e);
+                            s.data &&
                                 h.current === e &&
-                                (t.onChunk(new Uint8Array(n.data)),
+                                (r.onChunk(new Uint8Array(s.data)),
                                 u.set(
                                     e,
                                     (function (e) {
@@ -672,19 +719,26 @@
                                                 .map((e) => String.fromCharCode(e))
                                                 .join("");
                                         return btoa(r);
-                                    })(n.data),
+                                    })(s.data),
                                 ),
-                                m(_.root.value),
-                                d(!1));
+                                v(g.root.value),
+                                f(!1));
                         } catch (e) {
-                            d(!1), p(e instanceof Error ? e : new Error(String(e)));
+                            f(!1), b(e instanceof Error ? e : new Error(String(e)));
                         }
                     };
                 return (
                     (0, s.useEffect)(() => {
-                        e && ((h.current = e), y(e));
-                    }, [e]),
-                    l ? (t ?? (0, n.jsx)("div", { className: "p-4", children: (0, n.jsx)(o.A, { size: 20 }) })) : f ? (0, n.jsxs)("div", { children: ["Error: ", f.message] }) : (0, n.jsx)(c.Z, { el: b })
+                        if (e && ((h.current = e), f(!0), y(e, !1), r > 0)) {
+                            const t = setInterval(() => {
+                                y(e, !0);
+                            }, 1e3 * r);
+                            return () => {
+                                clearInterval(t);
+                            };
+                        }
+                    }, [e, r]),
+                    d ? (t ?? (0, n.jsx)("div", { className: "p-4", children: (0, n.jsx)(o.A, { size: 20 }) })) : p ? (0, n.jsxs)("div", { children: ["Error: ", p.message] }) : (0, n.jsx)(c.Z, { el: m })
                 );
             }
         },
@@ -706,51 +760,55 @@
                     f = (0, s.useContext)(u) || {},
                     p = d.getComponentOverride(),
                     b = 24045 === e.type || -22153 === e.type ? (0, i.O)(e) : p[e.type] ? p[e.type] : (0, i.O)(e),
-                    [m, h] = (0, s.useState)(0),
-                    [v, _] = (0, s.useState)(!1),
-                    y = (0, s.useRef)(null),
-                    w = (0, s.useMemo)(() => (0, o.tJ)(e, m), [e, m]),
-                    g = (0, s.useCallback)(() => {
-                        h((e) => e + 1);
+                    [m, v] = (0, s.useState)(0),
+                    [h, _] = (0, s.useState)(!1),
+                    g = (0, s.useRef)(null),
+                    y = (0, s.useMemo)(() => (0, o.tJ)(e, m), [e, m]),
+                    w = (0, s.useCallback)(() => {
+                        v((e) => e + 1);
                     }, []);
                 (0, s.useEffect)(() => {
-                    const e = w.subscribe(g);
+                    const e = y.subscribe(w);
                     return () => {
                         "function" == typeof e && e();
                     };
-                }, [w, g]);
-                const k = (w.strDict ? w.strDict("scribe:context") : null) || {},
-                    j = !!w.bool && (w.bool("scribe:appear") ?? w.bool("scribe:visibility") ?? !1),
-                    x = !!w.bool && (w.bool("scribe:linger") ?? !1);
+                }, [y, w]);
+                const k = (y.strDict ? y.strDict("scribe:context") : null) || {},
+                    I = !!y.bool && (y.bool("scribe:appear") ?? y.bool("scribe:visibility") ?? !1),
+                    j = !!y.bool && (y.bool("scribe:linger") ?? !1);
                 (0, s.useEffect)(() => {
-                    if ("undefined" != typeof IntersectionObserver && x && y.current) {
+                    if ("undefined" != typeof IntersectionObserver && j && g.current) {
                         let e = -1;
                         const t = new IntersectionObserver(
                             (r) => {
                                 const n = r[0]?.isIntersecting;
-                                n && -1 === e ? (e = Date.now()) : !n && y.current && -1 !== e && (Date.now() - e > 2e3 ? (d.addToScribeQueue && d.addToScribeQueue(f), _(!0)) : (e = -1)), !n && v && y.current && t.unobserve(y.current);
+                                n && -1 === e ? (e = Date.now()) : !n && g.current && -1 !== e && (Date.now() - e > 2e3 ? (d.addToScribeQueue && d.addToScribeQueue(f), _(!0)) : (e = -1)), !n && h && g.current && t.unobserve(g.current);
                             },
                             { threshold: 0.5 },
                         );
                         return (
-                            t.observe(y.current),
+                            t.observe(g.current),
                             () => {
-                                y.current && t.unobserve(y.current);
+                                g.current && t.unobserve(g.current);
                             }
                         );
                     }
                     return () => {};
-                }, [x, v, f, d]);
-                const I = k ? { ...f, ...k } : f;
-                j && r.scribe(l("show", I));
-                const R = w
-                    .mods()
-                    .map((e) => {
-                        const [t, ...r] = e;
-                        return void 0 !== t && (0, c.r)(t, r), r.map((e) => `j${e.toString(36)}${t}`).join(" ");
-                    })
-                    .join(" ");
-                return (0, n.jsx)(u.Provider, { value: I, children: (0, n.jsx)(b, { el: e, p: w, mods: R }) });
+                }, [j, h, f, d]);
+                const x = k ? { ...f, ...k } : f;
+                I && r.scribe(l("show", x));
+                const S = y.str("style:aspectRatio");
+                let R = "";
+                S && ((0, c.G)([["aspect-ratio", S]]), (R = `aspect-ratio${S}`.replace(/[^a-zA-Z0-9]/g, "")));
+                const T =
+                    y
+                        .mods()
+                        .map((e) => {
+                            const [t, ...r] = e;
+                            return void 0 !== t && (0, c.r)(t, r), r.map((e) => `j${e.toString(36)}${t}`).join(" ");
+                        })
+                        .join(" ") + (R ? ` ${R}` : "");
+                return (0, n.jsx)(u.Provider, { value: x, children: (0, n.jsx)(b, { el: e, p: y, mods: T }) });
             }
         },
         498348: (e, t, r) => {
@@ -812,7 +870,7 @@
                     [p, b] = (0, s.useState)(null);
                 if (!t) return (0, n.jsx)("div", { children: "Runtime not available" });
                 const m = (0, a.v)(t),
-                    h = async (e) => {
+                    v = async (e) => {
                         l(!0), f(null);
                         try {
                             const t = m.session(),
@@ -829,7 +887,7 @@
                     };
                 return (
                     (0, s.useEffect)(() => {
-                        e && h(e);
+                        e && v(e);
                     }, [e]),
                     u ? (r ?? (0, n.jsx)("div", { className: "p-4", children: (0, n.jsx)(o.A, { size: 20 }) })) : d ? (0, n.jsx)("div", {}) : (0, n.jsx)(i.Z, { className: "", children: (0, n.jsx)(c.Z, { el: p }) })
                 );
@@ -854,4 +912,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-694f31ec.b426539a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-694f31ec.48bbc01a.js.map

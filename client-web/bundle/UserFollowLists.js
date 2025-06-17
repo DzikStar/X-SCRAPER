@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.UserFollowLists", "icons/IconFollowArrowLeft-js", "icons/IconSparkle-js"],
+    ["bundle.UserFollowLists"],
     {
         333241: (e, o, t) => {
             t.d(o, { Z: () => P });
@@ -535,7 +535,7 @@
                 };
         },
         589992: (e, o, t) => {
-            t.r(o), t.d(o, { FollowersScreen: () => Q, default: () => q });
+            t.r(o), t.d(o, { FollowersScreen: () => j, default: () => q });
             var r = t(202784),
                 n = t(457311),
                 s = t(111677),
@@ -591,8 +591,8 @@
                 W = { superfollowers: i().ab7fc3ef, followers_you_follow: i().j0d17377, followers: i().fa9e827f, following: i().ha979be5, subscribers: i().d28be573, subscriptions: i().g9da3853, verified_followers: i().cfd952a1 },
                 H = { superfollowers: i().d52a1caa, followers_you_follow: i().i099d32e, followers: i().c64974fc, following: i().d960b55c, subscribers: i().d52a1caa, subscriptions: i().d7b51c68, verified_followers: i().fecc696e },
                 $ = { superfollowers: i().g0a2fbbe, followers_you_follow: i().g65f4bac, followers: i().c36cfddc, following: i().h0c94842, subscribers: i().g0a2fbbe, subscriptions: i().j7f5c6aa, verified_followers: i().fd275c1a },
-                z = { superfollowers: i().e08bd098, followers_you_follow: i().j029a4dc, followers: i().b2b2c6ce, following: i().cb1a15c8, subscribers: i().e08bd098, subscriptions: i().i967b954, verified_followers: i().a44e403e },
-                G = { followers_you_follow: i().d74ee2e3, followers: i().c36cfddc, following: i().ae5749c7, verified_followers: i().b5099e33 },
+                G = { superfollowers: i().e08bd098, followers_you_follow: i().j029a4dc, followers: i().b2b2c6ce, following: i().cb1a15c8, subscribers: i().e08bd098, subscriptions: i().i967b954, verified_followers: i().a44e403e },
+                z = { followers_you_follow: i().d74ee2e3, followers: i().c36cfddc, following: i().ae5749c7, verified_followers: i().b5099e33 },
                 K = { followers_you_follow: i().ec251f36, followers: i().b2b2c6ce, following: i().f8af4f48, verified_followers: i().fd0aad94 },
                 V = {
                     superfollowers: (e) => (0, P.Z)({ timelineId: `superFollowersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchSuperFollowers, getEndpointParams: ({ count: e, cursor: o }) => ({ count: e, cursor: "string" == typeof o ? o : void 0 }) }, context: "FETCH_SUPER_FOLLOWERS", perfKey: "superFollowersGraphQL", formatResponse: g.Z }),
@@ -603,23 +603,23 @@
                     subscriptions: (e) => (0, P.Z)({ timelineId: `UserCreatorSubscription-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchCreatorSubscriptions, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_CREATOR_SUBSCRIPTIONS", perfKey: "userCreatorSubscriptionsGraphQL", formatResponse: g.Z }),
                     verified_followers: (e) => (0, P.Z)({ timelineId: `verifiedFollowersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchVerifiedFollowers, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_VERIFIED_FOLLOWERS", perfKey: "verifiedFollowersGraphQL", formatResponse: g.Z }),
                 },
-                j = (0, l.Z)((e, o, t, s) => () => {
+                Q = (0, l.Z)((e, o, t, s) => () => {
                     const i = o === e;
                     if (!i && "superfollowers" === s) return (0, w.ZP)("Unexpected rendering of superfollowers empty state"), null;
                     const l = i && "following" === s ? B : void 0,
                         a = i && "following" === s ? "/i/connect_people" : void 0;
-                    let c = i ? $[s] : G[s],
-                        d = i ? z[s] : K[s];
+                    let c = i ? $[s] : z[s],
+                        d = i ? G[s] : K[s];
                     return "function" == typeof c && (c = c({ screenName: t })), "function" == typeof d && (d = d({ screenName: t })), r.createElement(n.Z, { buttonLink: a, buttonText: l, header: c, message: d });
                 });
-            class Q extends r.Component {
+            class j extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._getMemoizeModule = (0, l.Z)((e, o) => e && V[o](e))),
                         (this._render = () => {
                             const { mode: e, screenName: o, user: t, viewerUserId: n } = this.props,
                                 s = this._getMemoizeModule(t?.id_str, e),
-                                i = j(n, t?.id_str, o, e),
+                                i = Q(n, t?.id_str, o, e),
                                 l = this._isOwnProfile() && "followers" === e,
                                 a = this._canViewSubscribersPage(),
                                 c = this._canViewSubscriptionsPage();
@@ -678,8 +678,8 @@
                     }
                 }
             }
-            Q.contextType = p.rC;
-            const q = T(Q);
+            j.contextType = p.rC;
+            const q = T(j);
         },
         984915: (e, o, t) => {
             t.d(o, { Z: () => a });
@@ -814,32 +814,6 @@
                     return n.createElement(s.Z, { "aria-label": o, buttonsContainerStyle: l && E.gap, childrenStyle: !f && E.flexGrow, key: p, style: [l ? null : E.segmentedControl, f && E.leftAligned, d], visibleItemIndex: u }, m);
                 };
         },
-        246492: (e, o, t) => {
-            t.r(o), t.d(o, { default: () => a });
-            var r = t(202784),
-                n = t(890601),
-                s = t(783427),
-                i = t(347101);
-            const l = (e = {}) => {
-                const { direction: o } = (0, s.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm5.586-2l4.207 4.21 1.414-1.42L19.414 10H24V8h-4.586l1.793-1.79-1.414-1.42L15.586 9z" })) }, { writingDirection: o });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const a = l;
-        },
-        264171: (e, o, t) => {
-            t.r(o), t.d(o, { default: () => a });
-            var r = t(202784),
-                n = t(890601),
-                s = t(783427),
-                i = t(347101);
-            const l = (e = {}) => {
-                const { direction: o } = (0, s.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: o });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const a = l;
-        },
         98440: (e, o, t) => {
             t.r(o), t.d(o, { default: () => a });
             var r = t(202784),
@@ -866,7 +840,7 @@
             l.metadata = { width: 24, height: 24 };
             const a = l;
         },
-        262009: (e, o, t) => {
+        155353: (e, o, t) => {
             t.r(o), t.d(o, { default: () => a });
             var r = t(202784),
                 n = t(890601),
@@ -874,11 +848,11 @@
                 i = t(347101);
             const l = (e = {}) => {
                 const { direction: o } = (0, s.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1C11.26 7.53 12 5.35 12 2h2zM5 1c0 1.66-1.34 3-3 3v1c1.66 0 3 1.34 3 3h1c0-1.66 1.34-3 3-3V4C7.34 4 6 2.66 6 1H5z" })) }, { writingDirection: o });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: o });
             };
             l.metadata = { width: 24, height: 24 };
             const a = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserFollowLists.b359d47a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserFollowLists.3bf22dfa.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-6107ac1a", "icons/IconBookmarkPlusStroke-js", "icons/IconChevronRight-js", "icons/IconDrawerOn-js", "icons/IconFollowArrowLeft-js", "icons/IconNumberedList-js", "icons/IconShare-js", "icons/IconSound-js", "icons/IconSparkle-js"],
+    ["shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-6107ac1a", "icons/IconDrawer-js", "icons/IconGifPillStroke-js", "icons/IconItalic-js", "icons/IconNumberedList-js"],
     {
         897338: (e, t, n) => {
             n.d(t, { Z: () => i });
@@ -250,7 +250,7 @@
                 c = s;
         },
         449161: (e, t, n) => {
-            n.d(t, { Z: () => f });
+            n.d(t, { Z: () => h });
             var a = n(807896),
                 l = n(202784),
                 r = n(111677),
@@ -280,12 +280,12 @@
                 render() {
                     const { accept: e, disabled: t, multiple: n, onChange: r, testID: i, ...d } = this.props,
                         m = !(e?.includes("video") || e?.includes("gif"));
-                    return l.createElement(l.Fragment, null, l.createElement(o.ZP, (0, a.Z)({ hoverLabel: e ? { label: m ? u : c } : void 0 }, d, { disabled: t, onPress: this._handlePress })), (0, s.Z)("input", { accept: e, disabled: t, multiple: n, onChange: this._handleChange, ref: this._handleFileInputButtonRef, style: h.input, tabIndex: -1, testID: i, type: "file" }));
+                    return l.createElement(l.Fragment, null, l.createElement(o.ZP, (0, a.Z)({ hoverLabel: e ? { label: m ? u : c } : void 0 }, d, { disabled: t, onPress: this._handlePress })), (0, s.Z)("input", { accept: e, disabled: t, multiple: n, onChange: this._handleChange, ref: this._handleFileInputButtonRef, style: f.input, tabIndex: -1, testID: i, type: "file" }));
                 }
             }
             m.defaultProps = { disabled: !1, multiple: !1 };
-            const h = d.default.create((e) => ({ input: { width: "0.1px", height: "0.1px", opacity: 0, overflow: "hidden", position: "absolute", zIndex: -1 } })),
-                f = m;
+            const f = d.default.create((e) => ({ input: { width: "0.1px", height: "0.1px", opacity: 0, overflow: "hidden", position: "absolute", zIndex: -1 } })),
+                h = m;
         },
         420412: (e, t, n) => {
             n.d(t, { Z: () => s });
@@ -330,31 +330,31 @@
                 c = n(530732),
                 u = n(392237);
             const m = i().a35a5b10,
-                h = i().fc8cd112,
-                f = (e) => a.createElement(s.ZP, null, e);
+                f = i().fc8cd112,
+                h = (e) => a.createElement(s.ZP, null, e);
             class g extends a.Component {
                 render() {
                     const { displayFacepileInline: e, knownFollowersAvatarUrls: t, knownFollowersCount: n, textStyle: r, userScreenName: i, withFacepile: u } = this.props,
-                        h = this._renderMessage();
-                    return a.createElement(o.Z, { duration: "long", show: void 0 !== n, type: "fade" }, n ? a.createElement(c.Z, { "aria-label": m, interactiveStyles: null, link: i ? ((f = i), `/${f}/followers_you_follow`) : void 0 }, ({ isHovered: n, isPressed: o }) => a.createElement(l.Z, { style: p.content }, !e && u ? a.createElement(d.Z, { userAvatarUrls: t }) : null, a.createElement(s.ZP, { color: "gray700", size: "subtext2", style: [!e && p.message, (n || o) && !!i && p.underline, r] }, e && u ? a.createElement(d.Z, { style: p.inlineFacepile, userAvatarUrls: t }) : null, h))) : a.createElement(l.Z, { style: p.content }, a.createElement(s.ZP, { color: "gray700", size: "subtext2" }, h)));
-                    var f;
+                        f = this._renderMessage();
+                    return a.createElement(o.Z, { duration: "long", show: void 0 !== n, type: "fade" }, n ? a.createElement(c.Z, { "aria-label": m, interactiveStyles: null, link: i ? ((h = i), `/${h}/followers_you_follow`) : void 0 }, ({ isHovered: n, isPressed: o }) => a.createElement(l.Z, { style: p.content }, !e && u ? a.createElement(d.Z, { userAvatarUrls: t }) : null, a.createElement(s.ZP, { color: "gray700", size: "subtext2", style: [!e && p.message, (n || o) && !!i && p.underline, r] }, e && u ? a.createElement(d.Z, { style: p.inlineFacepile, userAvatarUrls: t }) : null, f))) : a.createElement(l.Z, { style: p.content }, a.createElement(s.ZP, { color: "gray700", size: "subtext2" }, f)));
+                    var h;
                 }
                 _renderMessage() {
                     const { knownFollowersCount: e = 0, knownFollowersNames: t } = this.props;
-                    return e > 3 ? this._renderUsernamesWithOthers(t, e) : 3 === e ? this._renderThreeUsernames(t) : 2 === e ? this._renderTwoUsernames(t) : 1 === e ? this._renderOneUsername(t) : h;
+                    return e > 3 ? this._renderUsernamesWithOthers(t, e) : 3 === e ? this._renderThreeUsernames(t) : 2 === e ? this._renderTwoUsernames(t) : 1 === e ? this._renderOneUsername(t) : f;
                 }
                 _renderOneUsername(e) {
-                    return a.createElement(i().I18NFormatMessage, { $i18n: "c9e6167d" }, f(e[0]));
+                    return a.createElement(i().I18NFormatMessage, { $i18n: "c9e6167d" }, h(e[0]));
                 }
                 _renderTwoUsernames(e) {
-                    return a.createElement(i().I18NFormatMessage, { $i18n: "ha91d1eb" }, f(e[0]), f(e[1]));
+                    return a.createElement(i().I18NFormatMessage, { $i18n: "ha91d1eb" }, h(e[0]), h(e[1]));
                 }
                 _renderThreeUsernames(e) {
-                    return a.createElement(i().I18NFormatMessage, { $i18n: "f1069f9b" }, f(e[0]), f(e[1]), f(e[2]));
+                    return a.createElement(i().I18NFormatMessage, { $i18n: "f1069f9b" }, h(e[0]), h(e[1]), h(e[2]));
                 }
                 _renderUsernamesWithOthers(e, t) {
                     const n = t - 2;
-                    return a.createElement(i().I18NFormatMessage, { $i18n: "e8404c1f" }, f(e[0]), f(e[1]), n);
+                    return a.createElement(i().I18NFormatMessage, { $i18n: "e8404c1f" }, h(e[0]), h(e[1]), n);
                 }
             }
             g.defaultProps = { displayFacepileInline: !1, withFacepile: !0 };
@@ -367,7 +367,7 @@
                 r = `\n    .longform-header-one {\n        font-size: ${a.default.theme.fontSizes.title2};\n        font-weight: ${a.default.theme.fontWeights.heavy};\n        line-height: ${a.default.theme.lineHeights.title1};\n        margin-bottom: ${a.default.theme.spaces.space28};\n        margin-top: 0;\n    }\n\n    .longform-header-one-narrow {\n        font-size: calc(${a.default.theme.fontSizes.headline1} + 1px);\n        font-weight: ${a.default.theme.fontWeights.heavy};\n        line-height: ${a.default.theme.lineHeights.title4};\n        margin-bottom: ${a.default.theme.spaces.space28};\n        margin-top: 0;\n    }\n\n    .longform-header-two {\n        font-size: ${a.default.theme.fontSizes.title3};\n        font-weight: ${a.default.theme.fontWeights.heavy};\n        line-height: ${a.default.theme.lineHeights.title2};\n        margin-bottom: ${a.default.theme.spaces.space28};\n        margin-top: 0;\n    }\n\n    .longform-header-two-narrow {\n        font-size: calc(${a.default.theme.fontSizes.headline2} + 1px);\n        font-weight: ${a.default.theme.fontWeights.heavy};\n        line-height: ${a.default.theme.lineHeights.headline1};\n        margin-bottom: ${a.default.theme.spaces.space28};\n        margin-top: 0;\n    }\n\n    .longform-unstyled, .longform-blockquote {\n        font-size: ${a.default.theme.fontSizes.headline2};\n        line-height: ${a.default.theme.lineHeights.title4};\n        margin-bottom: ${a.default.theme.spaces.space28};\n        margin-top: 0;\n    }\n\n    .longform-unstyled-narrow, .longform-blockquote-narrow {\n        font-size: ${a.default.theme.fontSizes.headline2};\n        line-height: ${a.default.theme.lineHeights.title4};\n        margin-bottom: ${a.default.theme.spaces.space28};\n        margin-top: 0;\n    }\n\n    .longform-unordered-list-item, .longform-ordered-list-item {\n        display: block;\n        font-size: ${a.default.theme.fontSizes.headline2};\n        line-height: ${a.default.theme.lineHeights.title4};   \n        margin-bottom: ${a.default.theme.spaces.space12};\n        margin-left: calc(${a.default.theme.spaces.space28} + ${a.default.theme.spaces.space2});\n        margin-top: 0;\n    }\n\n    .longform-unordered-list-item-narrow, .longform-ordered-list-item-narrow {\n        display: block;\n        font-size: ${a.default.theme.fontSizes.headline2};\n        line-height: ${a.default.theme.lineHeights.title4};   \n        margin-bottom: calc(${a.default.theme.spaces.space12} / 2);\n        margin-left: ${a.default.theme.spaces.space36};\n        margin-top: 0;\n    }\n\n    .longform-blockquote, .longform-blockquote-narrow {\n        margin-bottom: calc(${a.default.theme.spaces.space24} + ${a.default.theme.spaces.space2});\n        margin-left: 0;\n        margin-top: calc(-${a.default.theme.spaces.space2});\n        padding-left: calc(${a.default.theme.spaces.space24} + 3px);\n        position: relative;\n    }\n\n    .longform-blockquote:before, .longform-blockquote-narrow:before {\n        background: ${a.default.theme.colors.gray900};\n        border-radius: ${a.default.theme.borderRadii.infinite};\n        bottom: 0;\n        content: "";\n        left: 0;\n        position: absolute;\n        top: 0;\n        width: 3px;\n    }\n\n    .longform-header-one .public-DraftStyleDefault-block,\n    .longform-header-two .public-DraftStyleDefault-block,\n    .longform-unstyled .public-DraftStyleDefault-block,\n    .longform-unordered-list-item .public-DraftStyleDefault-block,\n    .longform-ordered-list-item .public-DraftStyleDefault-block,\n    .longform-header-one-narrow .public-DraftStyleDefault-block,\n    .longform-header-two-narrow .public-DraftStyleDefault-block,\n    .longform-unstyled-narrow .public-DraftStyleDefault-block,\n    .longform-unordered-list-item-narrow .public-DraftStyleDefault-block,\n    .longform-ordered-list-item-narrow .public-DraftStyleDefault-block {\n        padding-bottom: 0;\n        padding-top: 0;\n    }\n\n    .public-DraftStyleDefault-ul, .public-DraftStyleDefault-ol {\n        counter-reset: item;\n        margin-bottom: ${a.default.theme.spaces.space28};\n        margin-top: 0;\n        padding-left: 0;\n    }\n\n    .longform-unordered-list-item:before, .longform-ordered-list-item:before,\n    .longform-unordered-list-item-narrow:before, .longform-ordered-list-item-narrow:before {\n        position: absolute;\n        margin-left: calc(-1 * (${a.default.theme.spaces.space28} + ${a.default.theme.spaces.space2}));\n    }\n\n    .longform-unordered-list-item:before {\n        content: counter(item, disc);\n        font-size: ${a.default.theme.fontSizes.title4}\n    }\n\n    .longform-unordered-list-item-narrow:before {\n        content: counter(item, disc);\n        font-size: ${a.default.theme.fontSizes.headline1}\n    }\n\n    .longform-ordered-list-item:before, .longform-ordered-list-item-narrow:before {\n        content: counter(item) ". ";\n        counter-increment: item;\n    }\n\n    .longform-ordered-list-item::marker, .longform-ordered-list-item-narrow::marker {\n        font-variant-numeric: normal;\n    }\n`;
         },
         524496: (e, t, n) => {
-            n.d(t, { Z: () => k });
+            n.d(t, { Z: () => v });
             n(136728);
             var a = n(202784),
                 l = n(301503),
@@ -379,35 +379,35 @@
                 c = n(537392),
                 u = n(989272),
                 m = n(925873),
-                h = n(202253),
-                f = n(786475),
+                f = n(202253),
+                h = n(786475),
                 g = n(392237),
                 p = n(135904);
             const b = { [d.P7.atomic]: { element: "section" }, [d.P7.header1]: { element: "h1", wrapper: a.createElement(s.ZP, null) }, [d.P7.header2]: { element: "h2", wrapper: a.createElement(s.ZP, null) } },
                 y = (0, i.Z)(b).reduce((e, [t, n]) => e.set(t, n), l.DefaultDraftBlockRenderMap);
-            let v = !1;
-            const k = a.memo(function (e) {
+            let k = !1;
+            const v = a.memo(function (e) {
                     const { componentByType: t, contentState: n, onScribeEvent: i, paragraphFontSizeOverride: s } = e;
                     a.useEffect(() => {
-                        v || (u.fH(p.c, p.n), (v = !0));
+                        k || (u.fH(p.c, p.n), (k = !0));
                     }, []);
-                    const g = [(0, h.ez)(i, s), h.aF, h.RU];
-                    e.disable_entityLinkDecorator || g.push((0, h.NA)(i, s));
+                    const g = [(0, f.ez)(i, s), f.aF, f.RU];
+                    e.disable_entityLinkDecorator || g.push((0, f.NA)(i, s));
                     const b = m.Z.initEditorState(n, { decorators: g });
-                    let k = o.Z;
+                    let v = o.Z;
                     return (
                         t &&
-                            (k = (e) => {
+                            (v = (e) => {
                                 const n = e.getType();
                                 return t[n] || null;
                             }),
-                        a.createElement(c.ZP, null, ({ containerWidth: e }) => a.createElement(r.Z, { style: D.fontFamily }, a.createElement(l.Editor, { blockRenderMap: y, blockRendererFn: k, blockStyleFn: (0, d.su)(f.Z.isNarrowScreenWidth(e)), editorState: b, onChange: o.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
+                        a.createElement(c.ZP, null, ({ containerWidth: e }) => a.createElement(r.Z, { style: D.fontFamily }, a.createElement(l.Editor, { blockRenderMap: y, blockRendererFn: v, blockStyleFn: (0, d.su)(h.Z.isNarrowScreenWidth(e)), editorState: b, onChange: o.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
                     );
                 }),
                 D = g.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
         },
         779802: (e, t, n) => {
-            n.d(t, { $u: () => _, Ak: () => x, KJ: () => k, LI: () => Z, P7: () => p, PW: () => E, QF: () => b, Qm: () => v, Tr: () => C, b$: () => g, db: () => M, et: () => w, fR: () => f, iH: () => z, lD: () => y, su: () => D, u4: () => $, wX: () => S });
+            n.d(t, { $u: () => _, Ak: () => z, KJ: () => v, LI: () => Z, P7: () => p, PW: () => E, QF: () => b, Qm: () => k, Tr: () => C, b$: () => g, db: () => I, et: () => w, fR: () => h, iH: () => S, lD: () => y, su: () => D, u4: () => x, wX: () => $ });
             var a = n(202784),
                 l = n(111677),
                 r = n.n(l),
@@ -418,12 +418,12 @@
                 c = n(428259),
                 u = n(89085),
                 m = n(630715),
-                h = n(731708);
-            const f = { bold: "BOLD", italic: "ITALIC", strikethrough: "STRIKETHROUGH" },
+                f = n(731708);
+            const h = { bold: "BOLD", italic: "ITALIC", strikethrough: "STRIKETHROUGH" },
                 g = (e) => [
-                    { buttonTestId: "btn-bold", Icon: i.default, key: f.bold, onPress: e(f.bold) },
-                    { buttonTestId: "btn-italic", Icon: o.default, key: f.italic, onPress: e(f.italic) },
-                    { buttonTestId: "btn-strikethrough", Icon: s.default, key: f.strikethrough, onPress: e(f.strikethrough) },
+                    { buttonTestId: "btn-bold", Icon: i.default, key: h.bold, onPress: e(h.bold) },
+                    { buttonTestId: "btn-italic", Icon: o.default, key: h.italic, onPress: e(h.italic) },
+                    { buttonTestId: "btn-strikethrough", Icon: s.default, key: h.strikethrough, onPress: e(h.strikethrough) },
                 ],
                 p = { atomic: "atomic", blockquote: "blockquote", bulleted: "unordered-list-item", header1: "header-one", header2: "header-two", numbered: "ordered-list-item", paragraph: "unstyled" },
                 b = (e) => [{ buttonTestId: "btn-blockquote", Icon: d.default, key: p.blockquote, onPress: e(p.blockquote) }],
@@ -431,8 +431,8 @@
                     { buttonTestId: "btn-ul", Icon: c.default, key: p.bulleted, onPress: e(p.bulleted) },
                     { buttonTestId: "btn-ol", Icon: u.default, key: p.numbered, onPress: e(p.numbered) },
                 ],
-                v = "LINK",
-                k = (e) => [{ buttonTestId: "btn-link", Icon: m.default, key: v, onPress: e }],
+                k = "LINK",
+                v = (e) => [{ buttonTestId: "btn-link", Icon: m.default, key: k, onPress: e }],
                 D = (e, t) => (n) => {
                     const a = (t) => (e ? `${t}-narrow` : t);
                     switch (n.getType()) {
@@ -455,13 +455,13 @@
                 w = r().d5a48014,
                 E = r().b92b6156,
                 _ = r().ec5ed598,
-                Z = ({ children: e, extendedWidth: t, size: n, weight: l }) => a.createElement(h.ZP, { extendedWidth: t, size: n, weight: l }, e),
+                Z = ({ children: e, extendedWidth: t, size: n, weight: l }) => a.createElement(f.ZP, { extendedWidth: t, size: n, weight: l }, e),
                 C = { blockType: p.paragraph, label: _, component: Z({ size: "body", children: _ }) },
-                z = [{ blockType: p.header1, label: w, component: Z({ size: "title1", extendedWidth: !0, children: w }) }, { blockType: p.header2, label: E, component: Z({ size: "title3", weight: "heavy", children: E }) }, C],
-                S = ["backspace", "backspace-word", "backspace-to-start-of-line"],
-                x = ["delete", "delete-word", "delete-to-start-of-line"],
-                $ = "increase-text-size",
-                M = "decrease-text-size";
+                S = [{ blockType: p.header1, label: w, component: Z({ size: "title1", extendedWidth: !0, children: w }) }, { blockType: p.header2, label: E, component: Z({ size: "title3", weight: "heavy", children: E }) }, C],
+                $ = ["backspace", "backspace-word", "backspace-to-start-of-line"],
+                z = ["delete", "delete-word", "delete-to-start-of-line"],
+                x = "increase-text-size",
+                I = "decrease-text-size";
         },
         989272: (e, t, n) => {
             n.d(t, { _i: () => l, fH: () => i, w3: () => r });
@@ -515,7 +515,7 @@
             }
             const d = [];
         },
-        818088: (e, t, n) => {
+        19197: (e, t, n) => {
             n.r(t), n.d(t, { default: () => s });
             var a = n(202784),
                 l = n(890601),
@@ -523,27 +523,12 @@
                 i = n(347101);
             const o = (e = {}) => {
                 const { direction: t } = (0, r.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M17 3V0h2v3h3v2h-3v3h-2V5h-3V3h3zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V11h2v11.94l-8-5.71-8 5.71V4.5C4 3.12 5.119 2 6.5 2h4.502v2H6.5z" })) }, { writingDirection: t });
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M20 7H4V5h16v2zm-.004 6h-16v-2h16v2zM20 19H4v-2h16v2z" })) }, { writingDirection: t });
             };
             o.metadata = { width: 24, height: 24 };
             const s = o;
         },
-        58399: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => d });
-            var a = n(202784),
-                l = n(890601),
-                r = n(783427),
-                i = n(717683),
-                o = n(347101);
-            const s = (e = {}) => {
-                const t = a.useContext(i.Z),
-                    { direction: n } = (0, r.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style, t && o.Z.iconRTL], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: n });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const d = s;
-        },
-        826363: (e, t, n) => {
+        937450: (e, t, n) => {
             n.r(t), n.d(t, { default: () => s });
             var a = n(202784),
                 l = n(890601),
@@ -551,12 +536,12 @@
                 i = n(347101);
             const o = (e = {}) => {
                 const { direction: t } = (0, r.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M20 7.5H4v-3h16v3zm0 6H4v-3h16v3zm0 6H4v-3h16v3z" })) }, { writingDirection: t });
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M3 5.5C3 4.119 4.12 3 5.5 3h13C19.88 3 21 4.119 21 5.5v13c0 1.381-1.12 2.5-2.5 2.5h-13C4.12 21 3 19.881 3 18.5v-13zM5.5 5c-.28 0-.5.224-.5.5v13c0 .276.22.5.5.5h13c.28 0 .5-.224.5-.5v-13c0-.276-.22-.5-.5-.5h-13zM18 10.711V9.25h-3.74v5.5h1.44v-1.719h1.7V11.57h-1.7v-.859H18zM11.79 9.25h1.44v5.5h-1.44v-5.5zm-3.07 1.375c.34 0 .77.172 1.02.43l1.03-.86c-.51-.601-1.28-.945-2.05-.945C7.19 9.25 6 10.453 6 12s1.19 2.75 2.72 2.75c.85 0 1.54-.344 2.05-.945v-2.149H8.38v1.032H9.4v.515c-.17.086-.42.172-.68.172-.76 0-1.36-.602-1.36-1.375 0-.688.6-1.375 1.36-1.375z" })) }, { writingDirection: t });
             };
             o.metadata = { width: 24, height: 24 };
             const s = o;
         },
-        246492: (e, t, n) => {
+        856661: (e, t, n) => {
             n.r(t), n.d(t, { default: () => s });
             var a = n(202784),
                 l = n(890601),
@@ -564,20 +549,7 @@
                 i = n(347101);
             const o = (e = {}) => {
                 const { direction: t } = (0, r.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm5.586-2l4.207 4.21 1.414-1.42L19.414 10H24V8h-4.586l1.793-1.79-1.414-1.42L15.586 9z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const s = o;
-        },
-        264171: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var a = n(202784),
-                l = n(890601),
-                r = n(783427),
-                i = n(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: t });
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M9 6h3.731L9.184 18H5v2h10v-2h-3.731l3.547-12H19V4H9v2z" })) }, { writingDirection: t });
             };
             o.metadata = { width: 24, height: 24 };
             const s = o;
@@ -621,7 +593,7 @@
             o.metadata = { width: 24, height: 24 };
             const s = o;
         },
-        392032: (e, t, n) => {
+        155353: (e, t, n) => {
             n.r(t), n.d(t, { default: () => s });
             var a = n(202784),
                 l = n(890601),
@@ -629,37 +601,11 @@
                 i = n(347101);
             const o = (e = {}) => {
                 const { direction: t } = (0, r.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23.259 10.5L12 .648v5.581C5.269 7.328 1.995 12.498 2 22.001h2c0-1.914.705-3.537 2.095-4.825 1.5-1.391 3.739-2.259 5.905-2.331v5.507L23.259 10.5z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const s = o;
-        },
-        926628: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var a = n(202784),
-                l = n(890601),
-                r = n(783427),
-                i = n(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M15 22.94V1.06L6.68 7H3.5C2.12 7 1 8.12 1 9.5v5C1 15.88 2.12 17 3.5 17h3.18L15 22.94zM3.5 9H6v6H3.5c-.28 0-.5-.22-.5-.5v-5c0-.28.22-.5.5-.5zM13 19.06l-5-3.57V8.51l5-3.57v14.12zm5.95-12.01c-.24-.24-.49-.45-.75-.65l1-1.75c.41.29.8.62 1.16.99 3.52 3.51 3.52 9.21 0 12.72-.36.37-.75.7-1.16.99l-1-1.75c.26-.2.51-.41.75-.65 2.73-2.73 2.73-7.17 0-9.9zM17 12c0-.8-.31-1.52-.82-2.06l1.02-1.78c1.1.91 1.8 2.29 1.8 3.84s-.7 2.93-1.8 3.84l-1.02-1.78c.51-.54.82-1.26.82-2.06z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const s = o;
-        },
-        262009: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var a = n(202784),
-                l = n(890601),
-                r = n(783427),
-                i = n(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14 2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1C11.26 7.53 12 5.35 12 2h2zM5 1c0 1.66-1.34 3-3 3v1c1.66 0 3 1.34 3 3h1c0-1.66 1.34-3 3-3V4C7.34 4 6 2.66 6 1H5z" })) }, { writingDirection: t });
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: t });
             };
             o.metadata = { width: 24, height: 24 };
             const s = o;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-6107ac1a.8fa2d17a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-6107ac1a.f1d10d3a.js.map

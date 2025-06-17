@@ -35,44 +35,44 @@
         944047: (e, t, a) => {
             a.d(t, { Z: () => d });
             var r = a(202784),
-                s = a(325686),
-                n = a(392237),
-                o = a(187669),
-                i = a(59669),
+                s = a(244448),
+                n = a(325686),
+                o = a(392237),
+                i = a(187669),
                 c = a(766225);
             const l = ({ isActive: e, isComplete: t }) => {
-                    const { currentTimeMs: a, durationMs: n } = (0, i.wR)();
-                    let o = 0;
-                    if (t) o = 100;
+                    const { currentTimeMs: a, durationMs: o } = (0, s.wR)();
+                    let i = 0;
+                    if (t) i = 100;
                     else if (e) {
-                        const e = (a || 0) / (n || 1);
-                        o = 100 * Math.max(0, Math.min(1, e));
+                        const e = (a || 0) / (o || 1);
+                        i = 100 * Math.max(0, Math.min(1, e));
                     }
-                    const c = { width: `${o}%` };
-                    return r.createElement(s.Z, { style: u.progressIndicator }, r.createElement(s.Z, { style: [u.progressIndicatorFiller, c] }));
+                    const c = { width: `${i}%` };
+                    return r.createElement(n.Z, { style: u.progressIndicator }, r.createElement(n.Z, { style: [u.progressIndicatorFiller, c] }));
                 },
-                u = n.default.create((e) => ({ container: { height: "100%", width: "100%" }, pillContainer: { zIndex: 101, position: "absolute", top: 0, height: e.spaces.space32, display: "flex", flexDirection: "row", gap: e.spaces.space4, alignItems: "center", justifyContent: "center", paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space16, width: "100%" }, progressIndicator: { borderRadius: e.borderRadii.medium, height: e.spaces.space4, flexGrow: 1, backgroundColor: e.colors.alwaysBaseGray500, overflow: "hidden" }, progressIndicatorFiller: { height: e.spaces.space4, backgroundColor: e.colors.buttonAlwaysWhite, width: 0 } })),
+                u = o.default.create((e) => ({ container: { height: "100%", width: "100%" }, pillContainer: { zIndex: 101, position: "absolute", top: 0, height: e.spaces.space32, display: "flex", flexDirection: "row", gap: e.spaces.space4, alignItems: "center", justifyContent: "center", paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space16, width: "100%" }, progressIndicator: { borderRadius: e.borderRadii.medium, height: e.spaces.space4, flexGrow: 1, backgroundColor: e.colors.alwaysBaseGray500, overflow: "hidden" }, progressIndicatorFiller: { height: e.spaces.space4, backgroundColor: e.colors.buttonAlwaysWhite, width: 0 } })),
                 d = ({ children: e, props: t }) => {
                     const a = t.int("index") ?? 0,
-                        { initializeStoryElements: n, navigateElement: d, navigateStoryWithTransition: m, storyPagerState: h } = (0, c.rX)(),
+                        { initializeStoryElements: o, navigateElement: d, navigateStoryWithTransition: m, storyPagerState: h } = (0, c.rX)(),
                         p = h.stories[a],
-                        { setTracksFinished: f, tracksFinished: g } = (0, i.wR)();
+                        { setTracksFinished: f, tracksFinished: g } = (0, s.wR)();
                     r.useEffect(() => {
                         if (g) {
                             const e = h.stories[h.activeStory];
                             e.activeElement === e.elements.length - 1 ? m(1) : d(1), f?.(!1);
                         }
                     }, [d, m, f, h.activeStory, h.stories, g]),
-                        (0, o.q)(() => {
-                            n(e?.length || 0, a);
+                        (0, i.q)(() => {
+                            o(e?.length || 0, a);
                         });
                     const w = p?.activeElement || 0;
                     if (e && p)
                         return r.createElement(
-                            s.Z,
+                            n.Z,
                             { style: u.container },
                             r.createElement(
-                                s.Z,
+                                n.Z,
                                 { style: u.pillContainer },
                                 e.map((e, t) => r.createElement(l, { isActive: t === w, isComplete: t < w, key: t })),
                             ),
@@ -484,4 +484,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-fdc77e-17d653ee.7da6831a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-fdc77e-17d653ee.bf07a2da.js.map

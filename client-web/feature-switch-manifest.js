@@ -1,5 +1,5 @@
 var manifest = {
-    feature_set_token: "9ee35cb96a82fb0548257215b9f3d7865ad0ec55",
+    feature_set_token: "cfd05c565134cc82de4488248925a35701df4747",
     config: {
         "2fa_temporary_password_enabled": { value: !1 },
         Arkose_rweb_hosted_page: { value: !0 },
@@ -356,7 +356,7 @@ var manifest = {
         responsive_web_birdwatch_consumption_enabled: { value: !0 },
         responsive_web_birdwatch_contribution_enabled: { value: !1 },
         responsive_web_birdwatch_country_allowed: { value: !0 },
-        responsive_web_birdwatch_enforce_author_user_quotas: { value: !1 },
+        responsive_web_birdwatch_enforce_author_user_quotas: { value: !0 },
         responsive_web_birdwatch_fast_crh_time_from_note_cutoff: { value: 36e5 },
         responsive_web_birdwatch_fast_crh_time_from_post_cutoff: { value: 36e5 },
         responsive_web_birdwatch_fast_notes_badge_enabled: { value: !1 },
@@ -2007,7 +2007,7 @@ var manifest = {
         responsive_web_birdwatch_read_sources_nudge: { name: "responsive_web_birdwatch_read_sources_nudge", type: "string", defaultValue: "control" },
         responsive_web_birdwatch_match_page_enabled: { name: "responsive_web_birdwatch_match_page_enabled", type: "boolean", defaultValue: !0 },
         responsive_web_birdwatch_note_request_sources_enabled: { name: "responsive_web_birdwatch_note_request_sources_enabled", type: "boolean", defaultValue: !0 },
-        responsive_web_birdwatch_enforce_author_user_quotas: { name: "responsive_web_birdwatch_enforce_author_user_quotas", type: "boolean", defaultValue: !1 },
+        responsive_web_birdwatch_enforce_author_user_quotas: { name: "responsive_web_birdwatch_enforce_author_user_quotas", type: "boolean", defaultValue: !0 },
         responsive_web_card_conversion_hoisted: { name: "responsive_web_card_conversion_hoisted", type: "string", defaultValue: "off" },
         responsive_web_card_preconnect_enabled: { name: "responsive_web_card_preconnect_enabled", type: "boolean", defaultValue: !1 },
         responsive_web_carousel_v2_cards_enabled: { name: "responsive_web_carousel_v2_cards_enabled", type: "string" },

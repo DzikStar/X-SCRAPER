@@ -2,8 +2,8 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~bundle.AccountAnalytics~ondemand.XChat-8eba0336"],
     {
-        263986: (e, t, r) => {
-            r.d(t, { q: () => D });
+        841227: (e, t, r) => {
+            r.d(t, { q: () => A });
             var s = r(552322),
                 n = r(651782),
                 a = r(369818),
@@ -41,8 +41,8 @@
             }
             function u({ children: e, className: t, src: r, startPosition: n, ...d }) {
                 const [u, m] = (0, l.useReducer)(o, i),
-                    h = (0, l.useRef)(null),
-                    v = (0, l.useRef)(),
+                    v = (0, l.useRef)(null),
+                    h = (0, l.useRef)(),
                     f = (0, l.useRef)(null);
                 (0, l.useEffect)(() => {
                     const e = f.current;
@@ -111,7 +111,7 @@
                         }),
                         s.loadSource(r),
                         s.attachMedia(e),
-                        (v.current = s),
+                        (h.current = s),
                         () => {
                             t.abort(), s && (s.detachMedia(), s.destroy());
                         }
@@ -132,9 +132,9 @@
                             f.current?.play();
                         },
                         toggleFullscreen() {
-                            document.fullscreenElement === h.current
+                            document.fullscreenElement === v.current
                                 ? (document.exitFullscreen(), m({ payload: !1, type: "SET_FULLSCREEN" }))
-                                : h.current?.requestFullscreen().then(() => {
+                                : v.current?.requestFullscreen().then(() => {
                                       m({ payload: !0, type: "SET_FULLSCREEN" });
                                   });
                         },
@@ -148,7 +148,7 @@
                                   });
                         },
                         set level(e) {
-                            v.current && (v.current.currentLevel = e);
+                            h.current && (h.current.currentLevel = e);
                         },
                         set volume(e) {
                             f.current && (f.current.volume = e);
@@ -156,38 +156,38 @@
                     }),
                     [],
                 );
-                return (0, s.jsxs)("div", { ref: h, className: t, children: [(0, s.jsx)("video", { height: "100%", ref: f, width: "100%", ...d }), (0, s.jsx)(c.Provider, { value: { api: x, state: u }, children: e })] });
+                return (0, s.jsxs)("div", { ref: v, className: t, children: [(0, s.jsx)("video", { height: "100%", ref: f, width: "100%", ...d }), (0, s.jsx)(c.Provider, { value: { api: x, state: u }, children: e })] });
             }
             function m() {
                 const { api: e, state: t } = d();
                 return (0, s.jsx)("div", { className: "absolute bottom-0 end-0 start-0 top-0 cursor-pointer", onClick: t.paused ? e.play : e.pause });
             }
-            var h = r(993165),
-                v = r(58124);
-            const f = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M13 3h8v8h-2V6.41l-5.043 5.05-1.414-1.42L17.586 5H13V3zm-1.543 10.96L6.414 19H11v2H3v-8h2v4.59l5.043-5.05 1.414 1.42z" }) });
+            var v = r(993165),
+                h = r(58124),
+                f = r(16373);
             function x(e) {
                 const { api: t, state: r } = d(),
-                    n = r.isFullscreen ? (0, s.jsx)(v.Z, {}) : (0, s.jsx)(f, {}),
+                    n = r.isFullscreen ? (0, s.jsx)(h.Z, {}) : (0, s.jsx)(f.Z, {}),
                     a = "Full screen";
-                return (0, s.jsx)(h.z, { "aria-label": a, hoverLabel: a, icon: n, onClick: t.toggleFullscreen, variant: "onMediaText", ...e });
+                return (0, s.jsx)(v.z, { "aria-label": a, hoverLabel: a, icon: n, onClick: t.toggleFullscreen, variant: "onMediaText", ...e });
             }
-            const p = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M3.457 2.04L9 7.59V3h2v8H3V9h4.586L2.043 3.46l1.414-1.42zM19.5 8H14V6h5.5C20.881 6 22 7.12 22 8.5v11c0 1.38-1.119 2.5-2.5 2.5h-11C7.119 22 6 20.88 6 19.5V14h2v5.5c0 .28.224.5.5.5h11c.276 0 .5-.22.5-.5v-11c0-.28-.224-.5-.5-.5z" }) }),
-                g = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M3 3h8v2H6.414l5.543 5.54-1.414 1.42L5 6.41V11H3V3zm16.5 5H14V6h5.5C20.881 6 22 7.12 22 8.5v11c0 1.38-1.119 2.5-2.5 2.5h-11C7.119 22 6 20.88 6 19.5V14h2v5.5c0 .28.224.5.5.5h11c.276 0 .5-.22.5-.5v-11c0-.28-.224-.5-.5-.5z" }) });
+            var p = r(958959),
+                g = r(158385);
             function w(e) {
                 const { api: t, state: r } = d(),
                     n = "undefined" == typeof window || !document.pictureInPictureEnabled,
-                    a = r.isPictureInPicture ? (0, s.jsx)(p, {}) : (0, s.jsx)(g, {}),
+                    a = r.isPictureInPicture ? (0, s.jsx)(p.Z, {}) : (0, s.jsx)(g.Z, {}),
                     l = "Picture-in-Picture";
-                return (0, s.jsx)(h.z, { "aria-label": l, disabled: n, hoverLabel: l, icon: a, onClick: t.togglePictureInPicture, variant: "onMediaText", ...e });
+                return (0, s.jsx)(v.z, { "aria-label": l, disabled: n, hoverLabel: l, icon: a, onClick: t.togglePictureInPicture, variant: "onMediaText", ...e });
             }
-            var E = r(611105);
-            const y = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M21 12L4 2v20l17-10z" }) }),
-                j = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M4 2h5v20H4V2zm11 20h5V2h-5v20z" }) });
+            var E = r(611105),
+                y = r(992796),
+                j = r(231783);
             function b(e) {
                 const { api: t, state: r } = d(),
-                    n = r.ended ? (0, s.jsx)(E.Z, {}) : r.paused ? (0, s.jsx)(y, {}) : (0, s.jsx)(j, {}),
+                    n = r.ended ? (0, s.jsx)(E.Z, {}) : r.paused ? (0, s.jsx)(y.Z, {}) : (0, s.jsx)(j.Z, {}),
                     a = r.ended ? "Replay" : r.paused ? "Play" : "Pause";
-                return (0, s.jsx)(h.z, { "aria-label": a, hoverLabel: a, icon: n, onClick: r.ended || r.paused ? t.play : t.pause, variant: "onMediaText", ...e });
+                return (0, s.jsx)(v.z, { "aria-label": a, hoverLabel: a, icon: n, onClick: r.ended || r.paused ? t.play : t.pause, variant: "onMediaText", ...e });
             }
             var S = r(840489),
                 T = r(801766),
@@ -198,8 +198,8 @@
                     d = `${((o?.values[0] ?? 0) / (i.maxValue ?? 100)) * 100}%`,
                     u = `${(((o?.values[1] ?? 0) - (o?.values[0] ?? 0)) / (i.maxValue ?? 100)) * 100}%`,
                     m = "vertical" === i.orientation ? { height: d } : { width: d },
-                    h = "vertical" === i.orientation ? { height: u } : { width: u };
-                return (0, s.jsx)(T.Uj, { className: (0, S.Z)("flex w-6 cursor-pointer items-center", "vertical" === i.orientation ? "h-full w-6 flex-col-reverse" : "h-6 w-full"), children: ({ state: o }) => (0, s.jsxs)(l.Fragment, { children: [(0, s.jsx)("div", { className: (0, S.Z)(N.z7[e], "vertical" === i.orientation ? "w-0.5" : "h-0.5"), style: m }), (0, s.jsx)("div", { className: (0, S.Z)(!c && "grow", N.z7[n], "vertical" === i.orientation ? "w-0.5" : "h-0.5"), style: c ? h : {} }), c && (0, s.jsx)("div", { className: (0, S.Z)("grow", N.z7[e], "vertical" === i.orientation ? "w-0.5" : "h-0.5") }), a && o.values.map((e, n) => (0, s.jsx)(T.gs, { className: (0, S.Z)("rounded-full h-4 w-4 shadow-md", N.z7[t]), style: { transform: "none" }, index: n, ...(r?.[n] && { "aria-label": r[n] }) }, e))] }) });
+                    v = "vertical" === i.orientation ? { height: u } : { width: u };
+                return (0, s.jsx)(T.Uj, { className: (0, S.Z)("flex w-6 cursor-pointer items-center", "vertical" === i.orientation ? "h-full w-6 flex-col-reverse" : "h-6 w-full"), children: ({ state: o }) => (0, s.jsxs)(l.Fragment, { children: [(0, s.jsx)("div", { className: (0, S.Z)(N.z7[e], "vertical" === i.orientation ? "w-0.5" : "h-0.5"), style: m }), (0, s.jsx)("div", { className: (0, S.Z)(!c && "grow", N.z7[n], "vertical" === i.orientation ? "w-0.5" : "h-0.5"), style: c ? v : {} }), c && (0, s.jsx)("div", { className: (0, S.Z)("grow", N.z7[e], "vertical" === i.orientation ? "w-0.5" : "h-0.5") }), a && o.values.map((e, n) => (0, s.jsx)(T.gs, { className: (0, S.Z)("rounded-full h-4 w-4 shadow-md", N.z7[t]), style: { transform: "none" }, index: n, ...(r?.[n] && { "aria-label": r[n] }) }, e))] }) });
             }
             function C(e) {
                 return (0, s.jsx)(T.iR, { ...e, className: (0, S.Z)("relative flex flex-col", "vertical" === e.orientation ? "h-full" : "w-full"), ref: void 0, children: (0, s.jsx)(L, { ...e }) });
@@ -239,18 +239,18 @@
                 return (0, s.jsx)(z.x, { color: "white", children: `${M(e.currentTime, "seconds")} / ${M(e.duration, "seconds")}` });
             }
             var _ = r(983666);
-            function R() {
+            function Z() {
                 const { state: e } = d(),
                     t = e.duration >= e.currentTime ? e.duration - e.currentTime : 0;
                 return (0, s.jsx)(_._, { children: M(t, "seconds") });
             }
-            const V = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M15 1.06v21.88L6.68 17H3.5C2.12 17 1 15.88 1 14.5v-5C1 8.12 2.12 7 3.5 7h3.18L15 1.06zM6 9H3.5c-.28 0-.5.22-.5.5v5c0 .28.22.5.5.5H6V9zm2 6.49l5 3.57V4.94L8 8.51v6.98zm10.5-6.9l2 2 2-2L23.91 10l-2 2 2 2-1.41 1.41-2-2-2 2L17.09 14l2-2-2-2 1.41-1.41z" }) }),
-                U = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M15 22.94V1.06L6.68 7H3.5C2.12 7 1 8.12 1 9.5v5C1 15.88 2.12 17 3.5 17h3.18L15 22.94zM3.5 9H6v6H3.5c-.28 0-.5-.22-.5-.5v-5c0-.28.22-.5.5-.5zM13 19.06l-5-3.57V8.51l5-3.57v14.12zm5.95-12.01c-.24-.24-.49-.45-.75-.65l1-1.75c.41.29.8.62 1.16.99 3.52 3.51 3.52 9.21 0 12.72-.36.37-.75.7-1.16.99l-1-1.75c.26-.2.51-.41.75-.65 2.73-2.73 2.73-7.17 0-9.9zM17 12c0-.8-.31-1.52-.82-2.06l1.02-1.78c1.1.91 1.8 2.29 1.8 3.84s-.7 2.93-1.8 3.84l-1.02-1.78c.51-.54.82-1.26.82-2.06z" }) });
-            function A(e) {
+            var R = r(516718),
+                V = r(4700);
+            function U(e) {
                 const { api: t, state: r } = d(),
-                    n = r.muted ? (0, s.jsx)(V, {}) : (0, s.jsx)(U, {}),
+                    n = r.muted ? (0, s.jsx)(R.Z, {}) : (0, s.jsx)(V.Z, {}),
                     a = r.muted ? "Unmute" : "Mute";
-                return (0, s.jsx)(h.z, {
+                return (0, s.jsx)(v.z, {
                     "aria-label": a,
                     hoverLabel: a,
                     icon: n,
@@ -261,10 +261,10 @@
                     ...e,
                 });
             }
-            function D({ children: e, ...t }) {
+            function A({ children: e, ...t }) {
                 const r = (0, l.useRef)(null),
                     a = (0, n.X)(r);
-                return (0, s.jsx)(u, { className: "relative flex h-full w-full bg-black tabular-nums", ...t, children: (0, s.jsxs)("div", { className: "absolute bottom-0 end-0 start-0 top-0 flex w-full", ref: r, children: [(0, s.jsx)(m, {}), e, a ? (0, s.jsxs)("div", { className: "absolute bottom-0 end-0 start-0 flex flex-col bg-gradient-to-b from-transparent to-black px-1 pb-1", children: [(0, s.jsx)("div", { className: "flex w-full items-center justify-between px-2", children: (0, s.jsx)(I, {}) }), (0, s.jsxs)("div", { className: "flex w-full items-center justify-between", children: [(0, s.jsx)("div", { className: "flex items-center", children: (0, s.jsx)(b, {}) }), (0, s.jsxs)("div", { className: "flex items-center gap-2", children: [(0, s.jsx)(P, {}), (0, s.jsxs)("div", { className: "flex", children: [(0, s.jsx)(A, {}), (0, s.jsx)(w, {}), (0, s.jsx)(x, {})] })] })] })] }) : (0, s.jsx)("div", { className: "absolute bottom-3 start-3", children: (0, s.jsx)(R, {}) })] }) });
+                return (0, s.jsx)(u, { className: "relative flex h-full w-full bg-black tabular-nums", ...t, children: (0, s.jsxs)("div", { className: "absolute bottom-0 end-0 start-0 top-0 flex w-full", ref: r, children: [(0, s.jsx)(m, {}), e, a ? (0, s.jsxs)("div", { className: "absolute bottom-0 end-0 start-0 flex flex-col bg-gradient-to-b from-transparent to-black px-1 pb-1", children: [(0, s.jsx)("div", { className: "flex w-full items-center justify-between px-2", children: (0, s.jsx)(I, {}) }), (0, s.jsxs)("div", { className: "flex w-full items-center justify-between", children: [(0, s.jsx)("div", { className: "flex items-center", children: (0, s.jsx)(b, {}) }), (0, s.jsxs)("div", { className: "flex items-center gap-2", children: [(0, s.jsx)(P, {}), (0, s.jsxs)("div", { className: "flex", children: [(0, s.jsx)(U, {}), (0, s.jsx)(w, {}), (0, s.jsx)(x, {})] })] })] })] }) : (0, s.jsx)("div", { className: "absolute bottom-3 start-3", children: (0, s.jsx)(Z, {}) })] }) });
             }
         },
         458872: (e, t, r) => {
@@ -287,6 +287,41 @@
             var s = r(552322);
             const n = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" }) });
         },
+        958959: (e, t, r) => {
+            r.d(t, { Z: () => n });
+            var s = r(552322);
+            const n = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M3.457 2.04L9 7.59V3h2v8H3V9h4.586L2.043 3.46l1.414-1.42zM19.5 8H14V6h5.5C20.881 6 22 7.12 22 8.5v11c0 1.38-1.119 2.5-2.5 2.5h-11C7.119 22 6 20.88 6 19.5V14h2v5.5c0 .28.224.5.5.5h11c.276 0 .5-.22.5-.5v-11c0-.28-.224-.5-.5-.5z" }) });
+        },
+        16373: (e, t, r) => {
+            r.d(t, { Z: () => n });
+            var s = r(552322);
+            const n = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M13 3h8v8h-2V6.41l-5.043 5.05-1.414-1.42L17.586 5H13V3zm-1.543 10.96L6.414 19H11v2H3v-8h2v4.59l5.043-5.05 1.414 1.42z" }) });
+        },
+        158385: (e, t, r) => {
+            r.d(t, { Z: () => n });
+            var s = r(552322);
+            const n = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M3 3h8v2H6.414l5.543 5.54-1.414 1.42L5 6.41V11H3V3zm16.5 5H14V6h5.5C20.881 6 22 7.12 22 8.5v11c0 1.38-1.119 2.5-2.5 2.5h-11C7.119 22 6 20.88 6 19.5V14h2v5.5c0 .28.224.5.5.5h11c.276 0 .5-.22.5-.5v-11c0-.28-.224-.5-.5-.5z" }) });
+        },
+        231783: (e, t, r) => {
+            r.d(t, { Z: () => n });
+            var s = r(552322);
+            const n = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M4 2h5v20H4V2zm11 20h5V2h-5v20z" }) });
+        },
+        992796: (e, t, r) => {
+            r.d(t, { Z: () => n });
+            var s = r(552322);
+            const n = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M21 12L4 2v20l17-10z" }) });
+        },
+        516718: (e, t, r) => {
+            r.d(t, { Z: () => n });
+            var s = r(552322);
+            const n = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M15 1.06v21.88L6.68 17H3.5C2.12 17 1 15.88 1 14.5v-5C1 8.12 2.12 7 3.5 7h3.18L15 1.06zM6 9H3.5c-.28 0-.5.22-.5.5v5c0 .28.22.5.5.5H6V9zm2 6.49l5 3.57V4.94L8 8.51v6.98zm10.5-6.9l2 2 2-2L23.91 10l-2 2 2 2-1.41 1.41-2-2-2 2L17.09 14l2-2-2-2 1.41-1.41z" }) });
+        },
+        4700: (e, t, r) => {
+            r.d(t, { Z: () => n });
+            var s = r(552322);
+            const n = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M15 22.94V1.06L6.68 7H3.5C2.12 7 1 8.12 1 9.5v5C1 15.88 2.12 17 3.5 17h3.18L15 22.94zM3.5 9H6v6H3.5c-.28 0-.5-.22-.5-.5v-5c0-.28.22-.5.5-.5zM13 19.06l-5-3.57V8.51l5-3.57v14.12zm5.95-12.01c-.24-.24-.49-.45-.75-.65l1-1.75c.41.29.8.62 1.16.99 3.52 3.51 3.52 9.21 0 12.72-.36.37-.75.7-1.16.99l-1-1.75c.26-.2.51-.41.75-.65 2.73-2.73 2.73-7.17 0-9.9zM17 12c0-.8-.31-1.52-.82-2.06l1.02-1.78c1.1.91 1.8 2.29 1.8 3.84s-.7 2.93-1.8 3.84l-1.02-1.78c.51-.54.82-1.26.82-2.06z" }) });
+        },
         983706: (e, t, r) => {
             r.d(t, { T: () => o });
             var s = r(552322),
@@ -294,7 +329,7 @@
                 a = r.n(n),
                 l = r(202784),
                 i = r(801074);
-            function o({ api: e, className: t, footer: r, header: n, height: o = "100vh", horizontal: c, id: d, items: u, nearEndThreshold: m = 5, nearStartThreshold: h = 2, onAtEnd: v, onAtStart: f, onNearEnd: x, onNearStart: p, onScroll: g, renderItem: w, width: E = "100%", ...y }) {
+            function o({ api: e, className: t, footer: r, header: n, height: o = "100vh", horizontal: c, id: d, items: u, nearEndThreshold: m = 5, nearStartThreshold: v = 2, onAtEnd: h, onAtStart: f, onNearEnd: x, onNearStart: p, onScroll: g, renderItem: w, width: E = "100%", ...y }) {
                 const j = d ? `scroller-cache-${d}` : void 0,
                     b = u.length,
                     S = (0, l.useRef)(null),
@@ -363,9 +398,9 @@
                             if (!t) return;
                             const r = e,
                                 s = r > T.current ? "forward" : "backward";
-                            g?.(e, s), "backward" === s && (0 === r && f?.(), t.findStartIndex() <= h && I()), "forward" === s && (r + t.viewportSize - t.scrollSize == 0 && v?.(), b - t.findEndIndex() <= m && C()), (T.current = r);
+                            g?.(e, s), "backward" === s && (0 === r && f?.(), t.findStartIndex() <= v && I()), "forward" === s && (r + t.viewportSize - t.scrollSize == 0 && h?.(), b - t.findEndIndex() <= m && C()), (T.current = r);
                         },
-                        [b, C, I, m, h, v, f, g],
+                        [b, C, I, m, v, h, f, g],
                     );
                 return (0, s.jsxs)("div", { className: t, style: { height: o, overflowX: c ? "auto" : "hidden", overflowY: c ? "hidden" : "auto", overflowAnchor: "none", width: E }, children: [n, (0, s.jsx)(i.dM, { as: "ul", cache: L, count: b, horizontal: c, item: "li", onScroll: z, ref: S, ...y, children: (e) => w(u[e], e) }), r] });
             }
@@ -433,4 +468,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.XChat-8eba0336.d6e301ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.XChat-8eba0336.2fc3f27a.js.map

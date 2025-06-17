@@ -7259,7 +7259,7 @@
                 n("eb866e88", "Приблизна економія часу за рік"),
                 n("ce72f092", "На основі наявних даних про використання"),
                 n("c534c6b4", "Ми ведемо підрахунок…"),
-                n("i57332f0", "Продовжуйте прокручувати стрічку й поверніться пізніше, щоб побачити, скільки оголошень ви уникли та скільки часу заощадили."),
+                n("i57332f0", "Продовжуйте прокручувати стрічку й поверніться пізніше, щоб побачити, скількох оголошень ви уникли та скільки часу заощадили."),
                 n("cc10f019", function (e) {
                     return e.minutes + " хвилин" + f(e.minutes, "и", "", "а", "и");
                 }),
@@ -13380,4 +13380,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/uk.501e9bba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/uk.c6106bda.js.map

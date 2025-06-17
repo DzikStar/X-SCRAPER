@@ -16,7 +16,7 @@
                 m = a(256958),
                 h = a(889906),
                 x = a(915574),
-                g = a(499302);
+                g = a(437915);
             const p = a(633402),
                 f = () => {
                     const { business: e } = (0, u.M1)(),
@@ -260,7 +260,7 @@
                 S = a(305399),
                 D = a(875515),
                 E = a(915574),
-                I = a(499302),
+                I = a(437915),
                 N = a(959638),
                 T = a(749612);
             const M = () => {
@@ -745,4 +745,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Insights-c43041c1.2d78161a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Insights-c43041c1.6bd362fa.js.map

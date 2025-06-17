@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.ReaderMode-6107ac1a", "loader.AudioContextVoiceMedia"],
+    ["bundle.ReaderMode-6107ac1a", "loader.AudioContextVoiceMedia", "icons/IconBook-js"],
     {
         169576: (e, t, o) => {
             o.d(t, { c: () => f, Z: () => y });
@@ -12,28 +12,28 @@
                 l = o(731708),
                 c = o(154003),
                 d = o(725516),
-                h = o(111677),
-                u = o.n(h);
+                u = o(111677),
+                h = o.n(u);
             const p = o.p + "MarchMadnessBannerDark.42aa2dea.png",
                 m = o.p + "MarchMadnessBannerLight.02bf82ca.png",
-                g = { header: u().d231a76a, description: u().heaba5d8, legalDisclaimer: u().i57d3ea0, buttonText: u().a0440af6, image: { darkMode: p, lightMode: m } },
+                g = { header: h().d231a76a, description: h().heaba5d8, legalDisclaimer: h().i57d3ea0, buttonText: h().a0440af6, image: { darkMode: p, lightMode: m } },
                 f = Object.freeze({ MarchMadness: "MarchMadness" }),
-                y = ({ buttonOnSameLine: e, link: t, occasion: o, styleOverrides: h, withBackgroundImage: u }) => {
+                y = ({ buttonOnSameLine: e, link: t, occasion: o, styleOverrides: u, withBackgroundImage: h }) => {
                     const p = (0, d.z)(),
                         m = f[o] || "Occasion",
-                        y = u ? `${m}WithBackgroundImage` : m;
+                        y = h ? `${m}WithBackgroundImage` : m;
                     n.useEffect(() => {
                         p.scribe({ component: y, action: "impression" });
                     }, [p, y]);
-                    const v = () => {
+                    const C = () => {
                             p.scribe({ component: y, action: "click", element: "card" });
                         },
-                        { backgroundcolor: C, buttonSize: _, cardWidth: w, marginbottom: T, textcolor: Z } = h ?? {},
-                        x = C ? i.default.theme.colors[C] : i.default.theme.colors.gray0,
+                        { backgroundcolor: v, buttonSize: _, cardWidth: w, marginbottom: T, textcolor: Z } = u ?? {},
+                        x = v ? i.default.theme.colors[v] : i.default.theme.colors.gray0,
                         k = Z ? i.default.theme.colors[Z] : i.default.theme.colors.gray900,
                         E = T ? i.default.theme.spaces[T] : i.default.theme.spaces.space16,
                         S = { [f.MarchMadness]: { header: g.header, description: g.description, legalDisclaimer: g.legalDisclaimer, buttonText: g.buttonText, image: g.image } }[o];
-                    return u ? n.createElement(r.Z, { interactiveStyles: null, link: t, onPress: v, style: b.bannerContainer }, n.createElement(a.Z, { resizeMode: "contain", source: { uri: "light" === i.default.theme.paletteName ? S.image.lightMode : S.image.darkMode }, style: { height: 85 } })) : n.createElement(s.Z, { style: [b.card, { backgroundColor: x }, { maxWidth: w }, { marginBottom: E }], testID: "popupCard" }, n.createElement(s.Z, { style: e ? b.horizontalContent : b.verticalContent }, n.createElement(s.Z, { style: e ? b.textContainer : null }, n.createElement(l.ZP, { size: "headline2", style: [b.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, S.header), n.createElement(l.ZP, { size: "subtext1", style: [b.popupDescription, { color: k }] }, S.description, " ", e ? null : S.legalDisclaimer)), n.createElement(s.Z, { style: b.buttonContainer }, n.createElement(c.ZP, { backgroundColor: "light" === i.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: v, size: "medium", style: [b.popupButton, { width: _ }] }, S.buttonText), e && n.createElement(l.ZP, { size: "subtext3", style: [b.legalDisclaimer, { color: k }] }, S.legalDisclaimer))));
+                    return h ? n.createElement(r.Z, { interactiveStyles: null, link: t, onPress: C, style: b.bannerContainer }, n.createElement(a.Z, { resizeMode: "contain", source: { uri: "light" === i.default.theme.paletteName ? S.image.lightMode : S.image.darkMode }, style: { height: 85 } })) : n.createElement(s.Z, { style: [b.card, { backgroundColor: x }, { maxWidth: w }, { marginBottom: E }], testID: "popupCard" }, n.createElement(s.Z, { style: e ? b.horizontalContent : b.verticalContent }, n.createElement(s.Z, { style: e ? b.textContainer : null }, n.createElement(l.ZP, { size: "headline2", style: [b.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, S.header), n.createElement(l.ZP, { size: "subtext1", style: [b.popupDescription, { color: k }] }, S.description, " ", e ? null : S.legalDisclaimer)), n.createElement(s.Z, { style: b.buttonContainer }, n.createElement(c.ZP, { backgroundColor: "light" === i.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: C, size: "medium", style: [b.popupButton, { width: _ }] }, S.buttonText), e && n.createElement(l.ZP, { size: "subtext3", style: [b.legalDisclaimer, { color: k }] }, S.legalDisclaimer))));
                 },
                 b = i.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
         },
@@ -47,16 +47,16 @@
                 l = o(111677),
                 c = o.n(l),
                 d = o(968478);
-            const h = c().aa6e3300,
-                u = ({ retryMessage: e, ...t }, o) => {
+            const u = c().aa6e3300,
+                h = ({ retryMessage: e, ...t }, o) => {
                     const a = i.Z.isOnline();
-                    return s.createElement(r.Z, (0, n.Z)({}, t, { icon: a ? void 0 : s.createElement(d.default, { style: p.icon }), retryMessage: a ? e : h }));
+                    return s.createElement(r.Z, (0, n.Z)({}, t, { icon: a ? void 0 : s.createElement(d.default, { style: p.icon }), retryMessage: a ? e : u }));
                 },
                 p = a.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
-                m = s.forwardRef(u);
+                m = s.forwardRef(h);
         },
         300234: (e, t, o) => {
-            o.d(t, { Z: () => U });
+            o.d(t, { Z: () => H });
             var n = o(202784),
                 s = o(325686),
                 i = o(284702),
@@ -65,21 +65,21 @@
                 l = o(392237),
                 c = o(908478),
                 d = o(516951),
-                h = o(123751),
-                u = o(443781);
+                u = o(123751),
+                h = o(443781);
             const p = (0, o(668214).Z)().withAnalytics({ component: "gallery" });
             var m = o(807896),
                 g = o(386802),
                 f = o(420740),
                 y = o(111677),
                 b = o.n(y),
-                v = o(965728);
-            const C = { startX: 0, startY: 0 };
+                C = o(965728);
+            const v = { startX: 0, startY: 0 };
             class _ extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._pullDistanceY = 0),
-                        (this._pullInfo = { ...C }),
+                        (this._pullInfo = { ...v }),
                         (this._handleTouchStart = (e) => {
                             (this._pullInfo.startX = e.touches[0].clientX), (this._pullInfo.startY = e.touches[0].clientY);
                         }),
@@ -101,7 +101,7 @@
                             e && e(), this._resetPullInfo();
                         }),
                         (this._resetPullInfo = () => {
-                            this._updatePullPosition(0), (this._pullInfo = { ...C });
+                            this._updatePullPosition(0), (this._pullInfo = { ...v });
                         });
                 }
                 render() {
@@ -129,12 +129,12 @@
                     (0, c.Z)(e.photo, this.props.photo) || (this.setState({ loadingVariant: null }), I._selectCachedVariant(this.props.photo).then((e) => this.setState({ loadingVariant: e })));
                 }
                 render() {
-                    const { dataSaver: e, imageStyle: t, onError: o, onLoad: i, onTap: r, onZoomed: a, photo: l, resetZoom: c, style: d, zoomable: h } = this.props,
-                        { loadingVariant: u } = this.state,
-                        p = (e && u && Math.max(u.width, u.height) >= 680 ? u.uri : null) || I._selectSource(l);
-                    if (!p || null === u) return null;
-                    const m = n.createElement(T.Z, { "aria-label": l.ext_alt_text ? l.ext_alt_text : S, defaultSource: u && u.uri, draggable: !0, onError: u ? void 0 : o, onLoad: i, onLoadEnd: this._handleLoadEnd, onLoadStart: this._handleLoadStart, resizeMode: "contain", source: p, style: [D.img, t] });
-                    return n.createElement(s.Z, { style: d }, this.state.imageLoading ? M : null, h ? n.createElement(Z.Z, { onTap: r, onZoomed: a, resetZoom: c }, m) : m);
+                    const { dataSaver: e, imageStyle: t, onError: o, onLoad: i, onTap: r, onZoomed: a, photo: l, resetZoom: c, style: d, zoomable: u } = this.props,
+                        { loadingVariant: h } = this.state,
+                        p = (e && h && Math.max(h.width, h.height) >= 680 ? h.uri : null) || I._selectSource(l);
+                    if (!p || null === h) return null;
+                    const m = n.createElement(T.Z, { "aria-label": l.ext_alt_text ? l.ext_alt_text : S, defaultSource: h && h.uri, draggable: !0, onError: h ? void 0 : o, onLoad: i, onLoadEnd: this._handleLoadEnd, onLoadStart: this._handleLoadStart, resizeMode: "contain", source: p, style: [D.img, t] });
+                    return n.createElement(s.Z, { style: d }, this.state.imageLoading ? M : null, u ? n.createElement(Z.Z, { onTap: r, onZoomed: a, resetZoom: c }, m) : m);
                 }
                 static _selectCachedVariant(e) {
                     const t = x.Z.getOriginalImage(e);
@@ -148,8 +148,8 @@
             I.defaultProps = { zoomable: !1 };
             const D = l.default.create((e) => ({ img: { ...l.default.absoluteFillObject, height: "auto", margin: "auto", maxHeight: "100%", maxWidth: "100%", width: "auto" }, progressBar: { position: "absolute", top: 0, zIndex: 1 } })),
                 M = n.createElement(E.Z, { ariaValueText: P, indeterminate: !0, style: D.progressBar }),
-                z = I;
-            var R = o(310453);
+                R = I;
+            var z = o(310453);
             class B extends n.PureComponent {
                 constructor(...e) {
                     super(...e),
@@ -172,20 +172,20 @@
                     const { promotedContent: e, video: t, videoId: o } = this.props,
                         [s, r] = t.video_info.aspect_ratio,
                         a = i.Z.extractVideoProps(o, t);
-                    return (a.aspectRatio = s / r), n.createElement(R.Z, (0, m.Z)({}, a, { onPlaybackStarted: this._handlePlaybackStarted, playbackCoordination: null, promotedContent: e, setPlayer: this._setPlayer, withPostPlayback: !0 }));
+                    return (a.aspectRatio = s / r), n.createElement(z.Z, (0, m.Z)({}, a, { onPlaybackStarted: this._handlePlaybackStarted, playbackCoordination: null, promotedContent: e, setPlayer: this._setPlayer, withPostPlayback: !0 }));
                 }
             }
             const F = l.default.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center" } }),
                 L = B,
                 A = b().ac85c6b2,
                 V = (e) => {
-                    const { businessAvatar: t = !1, isAvatar: o, isCurrentlyDisplayed: r, mediaDetail: a, onDismiss: l, onTap: c, promotedContent: d, videoId: h, ...u } = e,
+                    const { businessAvatar: t = !1, isAvatar: o, isCurrentlyDisplayed: r, mediaDetail: a, onDismiss: l, onTap: c, promotedContent: d, videoId: u, ...h } = e,
                         [p, y] = n.useState(null),
-                        [b, C] = n.useState({ width: 0, height: 0 }),
+                        [b, v] = n.useState({ width: 0, height: 0 }),
                         { isModal: _ } = n.useContext(g.Z),
                         { height: T, width: Z } = a.original_info || {},
                         { height: x, width: k } = b,
-                        E = _ || o ? (0, v.I5)({ mediaWidth: Z, mediaHeight: T, containerWidth: k, containerHeight: x }, o) : W.mediaItem;
+                        E = _ || o ? (0, C.I5)({ mediaWidth: Z, mediaHeight: T, containerWidth: k, containerHeight: x }, o) : W.mediaItem;
                     return n.createElement(
                         w,
                         {
@@ -198,7 +198,7 @@
                                                   layout: { height: t, width: o },
                                               },
                                           } = e;
-                                          (o === b.width && t === b.height) || C({ width: o, height: t });
+                                          (o === b.width && t === b.height) || v({ width: o, height: t });
                                       }
                                     : void 0,
                             style: W.root,
@@ -225,8 +225,8 @@
                                   },
                                   "photo" === a.type
                                       ? n.createElement(
-                                            z,
-                                            (0, m.Z)({}, u, {
+                                            R,
+                                            (0, m.Z)({}, h, {
                                                 imageStyle: o && !t && W.avatarImage,
                                                 onError: (e) => {
                                                     y(e.nativeEvent.error);
@@ -240,15 +240,15 @@
                                                 zoomable: !0,
                                             }),
                                         )
-                                      : i.Z.isVideo(a) && h
-                                        ? n.createElement(L, { isCurrentlyDisplayed: r, promotedContent: d, style: W.container, video: a, videoId: h })
+                                      : i.Z.isVideo(a) && u
+                                        ? n.createElement(L, { isCurrentlyDisplayed: r, promotedContent: d, style: W.container, video: a, videoId: u })
                                         : null,
                               ),
                     );
                 },
                 W = l.default.create((e) => ({ root: { flexGrow: 1, justifyContent: "center", alignItems: "center", flexShrink: 1 }, mediaItem: { flexGrow: 1, width: "100%", height: "100%" }, container: { height: "100%", position: "absolute", width: "100%" }, errorDetail: { alignItems: "center", alignSelf: "center", justifyContent: "center", position: "absolute", height: "100%", maxWidth: 400 }, avatarImage: { borderRadius: e.borderRadii.infinite, margin: e.spaces.space16 } })),
-                H = n.memo(V, (e, t) => (0, c.Z)(e, t));
-            class O extends n.Component {
+                O = n.memo(V, (e, t) => (0, c.Z)(e, t));
+            class N extends n.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._getV2Key = () => {
@@ -271,7 +271,7 @@
                             if (t) return t;
                             if ("string" == typeof e.expanded_url) {
                                 const t = e.expanded_url.split("/");
-                                return h.Z.forTweet(t[3]);
+                                return u.Z.forTweet(t[3]);
                             }
                         }),
                         (this._handleMediaDetailZoomed = (e) => {
@@ -295,24 +295,24 @@
                 render() {
                     const { businessAvatar: e, dataSaver: t, mediaIndex: o, mediaItems: r, onDismiss: a, onTap: l, promotedContent: c } = this.props,
                         { isZoomed: d } = this.state,
-                        h = r.map((s, h) => {
-                            const u = i.Z.isVideo(s),
+                        u = r.map((s, u) => {
+                            const h = i.Z.isVideo(s),
                                 p = this._getItemVideoId(s),
-                                m = o === h;
-                            return u && !p ? null : n.createElement(H, { businessAvatar: e, dataSaver: t, isAvatar: this.props.isAvatar, isCurrentlyDisplayed: m, key: h, mediaDetail: r[h], onDismiss: d ? void 0 : a, onTap: l, onZoomed: m ? this._handleMediaDetailZoomed : void 0, promotedContent: c, resetZoom: o !== h, videoId: p });
+                                m = o === u;
+                            return h && !p ? null : n.createElement(O, { businessAvatar: e, dataSaver: t, isAvatar: this.props.isAvatar, isCurrentlyDisplayed: m, key: u, mediaDetail: r[u], onDismiss: d ? void 0 : a, onTap: l, onZoomed: m ? this._handleMediaDetailZoomed : void 0, promotedContent: c, resetZoom: o !== u, videoId: p });
                         });
-                    return n.createElement(s.Z, { style: N.root }, r.length > 1 ? this._renderCarousel(h) : h);
+                    return n.createElement(s.Z, { style: U.root }, r.length > 1 ? this._renderCarousel(u) : u);
                 }
                 _renderCarousel(e) {
                     const { dominantColor: t, mediaIndex: o, mediaItems: s, onMediaItemChanged: l } = this.props,
                         { isZoomed: c } = this.state,
                         d = i.Z.isVideo(s[o]);
-                    return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(r.Z, { childrenStyle: [N.dimensions, N.scrollSnap], dominantButtonColor: t, isLocked: c, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: N.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !d, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(a.ZP, { currentSlide: o, dominantColor: t, locked: c, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
+                    return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(r.Z, { childrenStyle: [U.dimensions, U.scrollSnap], dominantButtonColor: t, isLocked: c, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: U.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !d, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(a.ZP, { currentSlide: o, dominantColor: t, locked: c, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
                 }
             }
-            (O.contextType = u.rC), (O.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: d.Z, onMediaItemChanged: d.Z });
-            const N = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
-                U = p(O);
+            (N.contextType = h.rC), (N.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: d.Z, onMediaItemChanged: d.Z });
+            const U = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
+                H = p(N);
         },
         827094: (e, t, o) => {
             o.d(t, { Z: () => b });
@@ -324,13 +324,13 @@
                 l = o(386802),
                 c = o(392237),
                 d = o(111677),
-                h = o.n(d),
-                u = o(837020),
+                u = o.n(d),
+                h = o(837020),
                 p = o(254944),
                 m = o(965728),
                 g = o(979512);
-            const f = h().ia5e7488,
-                y = h().ic76bdf0;
+            const f = u().ia5e7488,
+                y = u().ic76bdf0;
             class b extends n.Component {
                 constructor(...e) {
                     super(...e),
@@ -347,23 +347,23 @@
                         });
                 }
                 render() {
-                    const { backgroundColor: e, children: t, footerButtons: o, forceDominantButtonColor: l, forceModalStyle: c, hideButtons: d, mediaItem: h, mediaUrl: g, overlayFooter: b, topRightButton: _ } = this.props,
+                    const { backgroundColor: e, children: t, footerButtons: o, forceDominantButtonColor: l, forceModalStyle: c, hideButtons: d, mediaItem: u, mediaUrl: g, overlayFooter: b, topRightButton: _ } = this.props,
                         { isModal: w } = this.context,
                         T = { backgroundColor: e.rgba, ...m.nk },
                         Z = { backgroundColor: e.rgb, ...m.nk },
-                        x = [v.root, w ? T : Z, { position: w || c ? "relative" : "fixed" }],
-                        k = h,
+                        x = [C.root, w ? T : Z, { position: w || c ? "relative" : "fixed" }],
+                        k = u,
                         E = k?.media_results?.result?.grok_image_annotation;
                     return n.createElement(
                         n.Fragment,
                         null,
-                        n.createElement(s.Z, { onClick: this._handleBackgroundPress, style: x }, t, o ? n.createElement(s.Z, { pointerEvents: d ? "none" : void 0, style: [v.footerButtons, b && T, b && v.footerButtonsAbsolute, d && v.fadeOut] }, n.createElement(i.Z, { withGutter: !0 }, o)) : null),
-                        n.createElement(r.Z, { interactiveStyles: null, onClick: this._handleCloseButtonPress, pointerEvents: d ? "none" : void 0, role: "none", style: [v.buttonWrapper, v.buttonWrapperLeft, m.nk, d && v.fadeOut] }, (t) => n.createElement(a.ZP, { "aria-label": f, dominantColor: e.rgb, hoverLabel: { label: f }, icon: n.createElement(u.default, null), interactivityState: t, onClick: this._handleCloseButtonPress, type: h || g || l ? "onMediaDominantColorFilled" : "onMediaWhiteFilled" })),
-                        _ ? n.createElement(s.Z, { pointerEvents: d ? "none" : void 0, style: [v.buttonWrapper, v.buttonWrapperRight, m.nk, d && v.fadeOut] }, _) : null,
+                        n.createElement(s.Z, { onClick: this._handleBackgroundPress, style: x }, t, o ? n.createElement(s.Z, { pointerEvents: d ? "none" : void 0, style: [C.footerButtons, b && T, b && C.footerButtonsAbsolute, d && C.fadeOut] }, n.createElement(i.Z, { withGutter: !0 }, o)) : null),
+                        n.createElement(r.Z, { interactiveStyles: null, onClick: this._handleCloseButtonPress, pointerEvents: d ? "none" : void 0, role: "none", style: [C.buttonWrapper, C.buttonWrapperLeft, m.nk, d && C.fadeOut] }, (t) => n.createElement(a.ZP, { "aria-label": f, dominantColor: e.rgb, hoverLabel: { label: f }, icon: n.createElement(h.default, null), interactivityState: t, onClick: this._handleCloseButtonPress, type: u || g || l ? "onMediaDominantColorFilled" : "onMediaWhiteFilled" })),
+                        _ ? n.createElement(s.Z, { pointerEvents: d ? "none" : void 0, style: [C.buttonWrapper, C.buttonWrapperRight, m.nk, d && C.fadeOut] }, _) : null,
                         E
                             ? n.createElement(
                                   s.Z,
-                                  { style: [v.buttonWrapperBottomCenter, m.nk, d && v.fadeOut] },
+                                  { style: [C.buttonWrapperBottomCenter, m.nk, d && C.fadeOut] },
                                   n.createElement(
                                       a.ZP,
                                       {
@@ -376,7 +376,7 @@
                                       },
                                       y,
                                   ),
-                                  n.createElement(C, {
+                                  n.createElement(v, {
                                       onOpenGrokUpdate: (e) => {
                                           this._openGrok = e;
                                       },
@@ -387,8 +387,8 @@
                 }
             }
             (b.contextType = l.Z), (b.defaultProps = { hideButtons: !1 });
-            const v = c.default.create((e) => ({ root: { overflowX: "hidden", overflowY: "hidden", height: "100%", width: "100%" }, buttonWrapper: { position: "absolute", top: 0, padding: e.spaces.space12, alignItems: "center", justifyContent: "center", cursor: "pointer" }, buttonWrapperLeft: { start: 0 }, buttonWrapperRight: { end: 0 }, buttonWrapperBottomCenter: { width: "100%", position: "absolute", bottom: 60, alignItems: "center", justifyContent: "center", cursor: "pointer" }, fadeOut: { opacity: 0 }, footerButtons: { width: "100%", alignSelf: "center" }, footerButtonsAbsolute: { position: "absolute", bottom: 0, paddingBottom: c.default.iPhoneOffsetBottom, zIndex: 1 } })),
-                C = ({ onOpenGrokUpdate: e }) => {
+            const C = c.default.create((e) => ({ root: { overflowX: "hidden", overflowY: "hidden", height: "100%", width: "100%" }, buttonWrapper: { position: "absolute", top: 0, padding: e.spaces.space12, alignItems: "center", justifyContent: "center", cursor: "pointer" }, buttonWrapperLeft: { start: 0 }, buttonWrapperRight: { end: 0 }, buttonWrapperBottomCenter: { width: "100%", position: "absolute", bottom: 60, alignItems: "center", justifyContent: "center", cursor: "pointer" }, fadeOut: { opacity: 0 }, footerButtons: { width: "100%", alignSelf: "center" }, footerButtonsAbsolute: { position: "absolute", bottom: 0, paddingBottom: c.default.iPhoneOffsetBottom, zIndex: 1 } })),
+                v = ({ onOpenGrokUpdate: e }) => {
                     const { openGrok: t } = (0, g.Z)();
                     return (
                         n.useEffect(() => {
@@ -524,13 +524,13 @@
                 l = o(392237),
                 c = o(111677),
                 d = o.n(c),
-                h = o(349035);
-            const u = "error-detail",
+                u = o(349035);
+            const h = "error-detail",
                 p = d().e49537c2,
                 m = d().a9ae1e78;
             class g extends n.PureComponent {
                 render() {
-                    return n.createElement(s.Z, { testID: u }, n.createElement(h.Z, null), n.createElement(i.Z, { style: f.root }, n.createElement(r.ZP, { align: "center", color: "gray700", style: f.retryText }, p), n.createElement(a.ZP, { link: { pathname: "/search" }, type: "brandFilled" }, m)));
+                    return n.createElement(s.Z, { testID: h }, n.createElement(u.Z, null), n.createElement(i.Z, { style: f.root }, n.createElement(r.ZP, { align: "center", color: "gray700", style: f.retryText }, p), n.createElement(a.ZP, { link: { pathname: "/search" }, type: "brandFilled" }, m)));
                 }
             }
             const f = l.default.create((e) => ({ root: { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12 }, retryText: { marginBottom: e.spaces.space28 } }));
@@ -585,28 +585,28 @@
                 l = o(962741),
                 c = o(372703),
                 d = o(466015),
-                h = o(267483),
-                u = o(263863),
+                u = o(267483),
+                h = o(263863),
                 p = o(351322),
                 m = o(37533),
                 g = o(777809),
                 f = o(652815),
                 y = o(560520),
                 b = o(367991),
-                v = o(705638),
-                C = o(801184),
+                C = o(705638),
+                v = o(801184),
                 _ = o(335632);
             const w = "FocalTweetInlineTombstone",
                 T = "More Replies";
             let Z;
             const x = Object.freeze({ Default: "ui_defaultLabel", TransparentCursor: "ui_transparentCursor" }),
-                k = { ...(0, _.G)({}), [l.ZP.Tweet]: (0, v.Z)({ hideConversationControlsEducationText: !0, withMuteConversation: !0 }) },
-                E = ({ changeDropdownState: e, hideReplyContextMode: t, isCurrentUserRootAuthor: o, isReaderMode: n, isTransparentCursorsEnabled: i, replyDropdownSelection: r, rootTweetAuthorId: a, tweetTextSize: d, withFocalTweetMedia: v, withRuxInjections: _ }) =>
+                k = { ...(0, _.G)({}), [l.ZP.Tweet]: (0, C.Z)({ hideConversationControlsEducationText: !0, withMuteConversation: !0 }) },
+                E = ({ changeDropdownState: e, hideReplyContextMode: t, isCurrentUserRootAuthor: o, isReaderMode: n, isTransparentCursorsEnabled: i, replyDropdownSelection: r, rootTweetAuthorId: a, tweetTextSize: d, withFocalTweetMedia: C, withRuxInjections: _ }) =>
                     (0, s.Z)({}, k, {
                         [l.ZP.SelfThreadTweetComposer]: f.Z,
                         [l.ZP.Tweet]: {
                             handlers: {
-                                [u.Z.Tweet]: (0, C.Cw)({
+                                [h.Z.Tweet]: (0, v.Cw)({
                                     hideConversationControlsEducationText: !0,
                                     hideExclusivityInfoEducationTextInReplies: !0,
                                     hideTrustedFriendsEducationTextInReplies: !0,
@@ -628,24 +628,24 @@
                                     hideReplyContextMode: t,
                                     withMuteConversation: !0,
                                 }),
-                                [u.Z.FocalTweet]: (0, C.g6)({
+                                [h.Z.FocalTweet]: (0, v.g6)({
                                     createAdditionalProps: (t, { applyFeedbackAction: n }) => {
                                         const {
                                                 content: { conversation_annotation: s, hasModeratedReplies: i },
                                                 conversationPosition: l,
                                                 referringContext: d,
                                             } = t,
-                                            { contextTweetId: h, promotedContent: u, socialContext: p, topicFollowPrompt: m } = d || {};
+                                            { contextTweetId: u, promotedContent: h, socialContext: p, topicFollowPrompt: m } = d || {};
                                         return {
-                                            contextTweetId: h,
+                                            contextTweetId: u,
                                             conversationAnnotation: s,
                                             hasModeratedReplies: !!(i && l && l.isStart),
-                                            promotedContent: u,
+                                            promotedContent: h,
                                             rootTweetAuthorId: a,
                                             socialContext: p,
                                             topicFollowPrompt: m,
                                             withHideReply: o,
-                                            withInlineMedia: v,
+                                            withInlineMedia: C,
                                             ...(o
                                                 ? {
                                                       onTweetDismiss: () => {
@@ -661,16 +661,16 @@
                                     divider: (e) => ({ top: !1, bottom: !1 }),
                                     hideReplyContextMode: t,
                                 }),
-                                [u.Z.SelfThread]: (0, C.Cw)({ hideReplyContextMode: t }),
-                                [u.Z.ReaderMode]: (0, C.Cw)({ hideConversationControlsEducationText: !0, hideExclusivityInfoEducationTextInReplies: !0, hideHighlightedUserLabel: !0, hideTrustedFriendsEducationTextInReplies: !0, isReaderMode: !0, shouldSelfThreadIncludeAvatar: !1, showWithheldBannerOnMyTweets: !1, tweetTextSize: d, withActionsDisabled: !1, withMuteConversation: !1, withRemoveFromBookmarks: !1, withSelfThread: !1, withUserPresence: !1 }),
+                                [h.Z.SelfThread]: (0, v.Cw)({ hideReplyContextMode: t }),
+                                [h.Z.ReaderMode]: (0, v.Cw)({ hideConversationControlsEducationText: !0, hideExclusivityInfoEducationTextInReplies: !0, hideHighlightedUserLabel: !0, hideTrustedFriendsEducationTextInReplies: !0, isReaderMode: !0, shouldSelfThreadIncludeAvatar: !1, showWithheldBannerOnMyTweets: !1, tweetTextSize: d, withActionsDisabled: !1, withMuteConversation: !1, withRemoveFromBookmarks: !1, withSelfThread: !1, withUserPresence: !1 }),
                             },
                         },
-                        [l.ZP.Tombstone]: { handlers: { [w]: (0, b._n)({ isFocalTweet: !0, isReaderMode: n, withHideReply: o }), [h.Z.Inline]: (0, b._n)({ isReaderMode: n, tweetDismissFeedbackKey: o ? c.qt : void 0, withHideReply: o }) } },
+                        [l.ZP.Tombstone]: { handlers: { [w]: (0, b._n)({ isFocalTweet: !0, isReaderMode: n, withHideReply: o }), [u.Z.Inline]: (0, b._n)({ isReaderMode: n, tweetDismissFeedbackKey: o ? c.qt : void 0, withHideReply: o }) } },
                         [l.ZP.Label]: p.ov({ selectDisplayType: (e) => ((e, t) => (t && e.content.text === T ? x.TransparentCursor : x.Default))(e, i), handlers: { [x.TransparentCursor]: g.L, [x.Default]: g.k } }),
                         [l.ZP.TimelineCursor]: (0, m.Z)({ withRuxInjections: _ }),
                         [l.ZP.ThreadHeader]: y.Z,
                     }),
-                S = ({ contextTweetId: e, contextualClientEventInfo: t, focalTweetId: o, promotedContent: s, showOnlyRelevantReplies: c, socialContext: d, topicFollowPrompt: u }) => {
+                S = ({ contextTweetId: e, contextualClientEventInfo: t, focalTweetId: o, promotedContent: s, showOnlyRelevantReplies: c, socialContext: d, topicFollowPrompt: h }) => {
                     const p = (e) => (e.type === l.ZP.Tweet && e.content.id === o) || (e.type === l.ZP.Tombstone && !!e.content && !!e.content.tweet && e.content.tweet.id === o);
                     return (o) => {
                         const m = (0, i.Z)(o, p);
@@ -692,23 +692,23 @@
                                 const i = !g;
                                 if (((g = !0), n < m)) {
                                     if (o.type === l.ZP.Tweet) return M(o, i);
-                                    if (o.type === l.ZP.Tombstone) return z(o, i);
+                                    if (o.type === l.ZP.Tombstone) return R(o, i);
                                 } else {
                                     if (o.type === l.ZP.Tombstone) {
                                         const t = { isStart: i, isEnd: !0 };
-                                        return o.content.displayType === h.Z.Inline ? I({ contextTweetId: e, entry: o, socialContext: d, topicFollowPrompt: u, conversationPosition: t }) : D({ entry: o, conversationPosition: t });
+                                        return o.content.displayType === u.Z.Inline ? I({ contextTweetId: e, entry: o, socialContext: d, topicFollowPrompt: h, conversationPosition: t }) : D({ entry: o, conversationPosition: t });
                                     }
-                                    if (o.type === l.ZP.Tweet) return P({ originalEntry: o, contextTweetId: e, contextualClientEventInfo: t, socialContext: d, promotedContent: s, topicFollowPrompt: u, conversationPosition: { isStart: i, isEnd: !0, position: "focal", showReplyContext: !1 } });
+                                    if (o.type === l.ZP.Tweet) return P({ originalEntry: o, contextTweetId: e, contextualClientEventInfo: t, socialContext: d, promotedContent: s, topicFollowPrompt: h, conversationPosition: { isStart: i, isEnd: !0, position: "focal", showReplyContext: !1 } });
                                 }
                             }
                         });
                     };
                 },
-                P = ({ contextTweetId: e, contextualClientEventInfo: t, conversationPosition: o, originalEntry: n, promotedContent: s, socialContext: i, topicFollowPrompt: r }) => d.Wf({ ...n, conversationPosition: o, referringContext: { contextTweetId: e, contextualClientEventInfo: t, socialContext: i, promotedContent: s, topicFollowPrompt: r } }, { displayType: u.Z.FocalTweet }),
+                P = ({ contextTweetId: e, contextualClientEventInfo: t, conversationPosition: o, originalEntry: n, promotedContent: s, socialContext: i, topicFollowPrompt: r }) => d.Wf({ ...n, conversationPosition: o, referringContext: { contextTweetId: e, contextualClientEventInfo: t, socialContext: i, promotedContent: s, topicFollowPrompt: r } }, { displayType: h.Z.FocalTweet }),
                 I = ({ contextTweetId: e, conversationPosition: t, entry: o, socialContext: n, topicFollowPrompt: s }) => d.Wf({ ...o, conversationPosition: t, referringContext: { contextTweetId: e, socialContext: n } }, { displayType: w }),
                 D = ({ conversationPosition: e, entry: t }) => ({ ...t, conversationPosition: e }),
                 M = (e, t) => ({ ...e, conversationPosition: { isStart: t, isEnd: !1, position: "ancestor", showReplyContext: !1 } }),
-                z = (e, t) => ({ ...e, conversationPosition: { isStart: t, isEnd: !1, position: "ancestor" } });
+                R = (e, t) => ({ ...e, conversationPosition: { isStart: t, isEnd: !1, position: "ancestor" } });
         },
         607015: (e, t, o) => {
             o.d(t, { ZP: () => _ });
@@ -720,16 +720,16 @@
                 l = o(332878),
                 c = o(163889),
                 d = o(87063),
-                h = o(847933),
-                u = o(56851),
+                u = o(847933),
+                h = o(56851),
                 p = o(519125),
                 m = o(810641),
                 g = o(668214);
             const f = (e, t) => t.module.selectInitialFetchStatus(e),
                 y = (e, t) => t.module.selectTopFetchStatus(e),
                 b = (0, g.Z)().propsFromState(() => ({ moduleInitialFetchStatus: f, moduleTopFetchStatus: y })),
-                v = r().c299a6c0,
-                C = (e) => (t, o) => t && t.content && !!t.content.id && t.content.id === e,
+                C = r().c299a6c0,
+                v = (e) => (t, o) => t && t.content && !!t.content.id && t.content.id === e,
                 _ = b(({ focalTweetId: e, module: t, moduleInitialFetchStatus: o, moduleTopFetchStatus: i, rootTweetId: r, tweetTextSize: g }) => {
                     const f = (0, p.ZP)({ isCurrentUserRootAuthor: !0, withFocalTweetMedia: !0, isTransparentCursorsEnabled: !0, isReaderMode: !0, tweetTextSize: g }),
                         y = (r !== e && o === d.Z.LOADING) || i === d.Z.LOADING;
@@ -737,27 +737,27 @@
                         anchoring: l.Z,
                         entryConfiguration: f,
                         header: y ? n.createElement(s.Z, null) : void 0,
-                        isInitialFocusEntry: r !== e ? C(e) : void 0,
+                        isInitialFocusEntry: r !== e ? v(e) : void 0,
                         key: g,
                         module: t,
                         olderAtTop: !0,
-                        renderEmptyState: () => n.createElement(u.Z, null),
+                        renderEmptyState: () => n.createElement(h.Z, null),
                         renderUnavailable: (e) => {
                             switch (e) {
-                                case h.Z.NOT_FOUND:
-                                    return n.createElement(u.Z, null);
-                                case h.Z.NOT_ALLOWED:
+                                case u.Z.NOT_FOUND:
+                                    return n.createElement(h.Z, null);
+                                case u.Z.NOT_ALLOWED:
                                     return n.createElement(a.Z, null);
                                 default:
                                     return (0, c.ZP)(`Unhandled timeline unavailable reason: ${e}`), null;
                             }
                         },
-                        title: v,
+                        title: C,
                     });
                 });
         },
         376293: (e, t, o) => {
-            o.d(t, { $f: () => Z, KV: () => y, LI: () => P, SC: () => T, Vt: () => C, ed: () => I, op: () => x });
+            o.d(t, { $f: () => Z, KV: () => y, LI: () => P, SC: () => T, Vt: () => v, ed: () => I, op: () => x });
             var n = o(202784),
                 s = o(190286),
                 i = o(111677),
@@ -766,49 +766,49 @@
                 l = o(314948),
                 c = o(516951),
                 d = o(163390);
-            const h = r().cfd2f35e,
-                u = r().f9e45cfb,
+            const u = r().cfd2f35e,
+                h = r().f9e45cfb,
                 p = r().fcd4d489,
                 m = r().a6450e84,
                 g = r().g353ad73,
                 f = r().ad00a739,
                 y = r().a9fd20be,
                 b = r().j546fb79,
-                v = r().c9623eeb,
-                C = r().e133be4e,
+                C = r().c9623eeb,
+                v = r().e133be4e,
                 _ = r().he43bca4,
                 w = r().f5f01af6,
                 T = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                Z = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: u({ screenName: e }), label: m, text: t ? f({ screenName: e }) : g({ screenName: e }) }),
+                Z = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: h({ screenName: e }), label: m, text: t ? f({ screenName: e }) : g({ screenName: e }) }),
                 x = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: o, source: n, testID: s, unblockAction: i, unblockSubtext: r, user: a }) => {
                     let l,
-                        h = c.Z;
-                    const u = P(a, o);
+                        u = c.Z;
+                    const h = P(a, o);
                     switch (n) {
                         case T.PROFILE:
                         case T.LIST_DETAIL:
                         case T.FOLLOWERS_LIST:
-                            h = () => {
-                                a.blocking ? i(u) : e(u);
+                            u = () => {
+                                a.blocking ? i(h) : e(h);
                             };
                             break;
                         case T.TWEET:
                         case T.TWEET_CARET:
                         case T.RICH_FEEDBACK:
                             (l = d.uq.block),
-                                (h = () => {
-                                    a.blocking ? i(u) : e(u);
+                                (u = () => {
+                                    a.blocking ? i(h) : e(h);
                                 });
                     }
-                    return { confirmation: u, onClick: h, testID: s, shortcutKey: l, Icon: k(a.blocking), text: S(a), subText: E({ user: a, blockSubtext: t, unblockSubtext: r }) };
+                    return { confirmation: h, onClick: u, testID: s, shortcutKey: l, Icon: k(a.blocking), text: S(a), subText: E({ user: a, blockSubtext: t, unblockSubtext: r }) };
                 },
                 k = (e) => (e ? l.default : a.default),
                 E = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
-                S = (e) => (e.blocking ? v({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
-                P = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: b({ screenName: e }), label: C, text: t ? w : _ }))(e.screen_name, t) : Z(e.screen_name, t)),
+                S = (e) => (e.blocking ? C({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
+                P = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: b({ screenName: e }), label: v, text: t ? w : _ }))(e.screen_name, t) : Z(e.screen_name, t)),
                 I = ({ confirmation: e, handleConfirm: t, onClose: o }) => {
                     const { confirmButtonType: i, headline: r, label: a, text: l } = e;
-                    return n.createElement(s.Z, { cancelButtonLabel: h, confirmButtonLabel: a, confirmButtonType: i, headline: r, onCancel: o, onConfirm: t, text: l });
+                    return n.createElement(s.Z, { cancelButtonLabel: u, confirmButtonLabel: a, confirmButtonType: i, headline: r, onCancel: o, onConfirm: t, text: l });
                 };
         },
         712816: (e, t, o) => {
@@ -828,7 +828,7 @@
             const s = { defaultToast: { text: o.n(n)().ca96fe6e }, showToast: !0 };
         },
         163390: (e, t, o) => {
-            o.d(t, { OX: () => u, Od: () => d, PN: () => p, uq: () => c, wR: () => g });
+            o.d(t, { OX: () => h, Od: () => d, PN: () => p, uq: () => c, wR: () => g });
             var n = o(251067),
                 s = o(522171),
                 i = o(111677),
@@ -838,12 +838,12 @@
             const c = Object.freeze({ toggleCommandCenter: "mod+k", openKeyboardShortcuts: "?", swipeLeft: "left", swipeRight: "right", nextItem: "j", previousItem: "k", refresh: ".", nightMode: "z", bookmark: "b", block: "x", mute: "u", newTweet: "n", newMessage: "m", toggleDMDrawer: "i", goHome: "g h", goExplore: "g e", goNotifications: "g n", goMentions: "g r", goProfile: "g p", goLikes: "g l", goLists: "g i", goMessages: "g m", goGrok: "g g", goToDrafts: "g f", goToScheduled: "g t", goSettings: "g s", goToUser: "g u", goBookmarks: "g b", goTopArticles: "g a", goDisplay: "g d", search: "/", audio: { dock: "a d", play: "a space", mute: "a m" }, video: { play1: "k", play2: "space", mute: "m" }, columns: { createNewColumn: "c n", duplicateColumn: "c d", focusOnReorderButton: "c r", lastColumn: "c 0", nextColumn: "]", nthColumn: "c 1..9", prevColumn: "[", removeColumn: "c backspace", toggleColumnOptions: "c o", undoRemoveColumn: "c u" }, decks: { createNewDeck: "d n", editActiveDeck: "d e", lastPinnedDeck: "d 0", manageAllDecks: "d m", nthPinnedDeck: "d 1..9" }, labs: { openCommandCenter: ">" } }),
                 d = (0, a.Z)((e) => {
                     const t = e ? [{ description: r().b7fa0cfe, keys: c.goTopArticles, universal: !1 }] : [];
-                    return [...((0, n.fH)(n.vw.prod) ? [] : [{ description: "Toggle Command Center", keys: `${h} k`, universal: !1 }]), { description: r().d5696fcc, keys: c.openKeyboardShortcuts, universal: !0 }, { description: r().a83d4280, keys: c.nextItem, universal: !0 }, { description: r().g0048656, keys: c.previousItem, universal: !0 }, { description: r().a690c4d0, keys: "Space", universal: !0 }, { description: r().e893811a, keys: c.refresh, universal: !1 }, { description: r().ha8209bc, keys: c.goHome, universal: !1 }, { description: r().fcf3e54c, keys: c.goExplore, universal: !1 }, { description: r().eb75875e, keys: c.goNotifications, universal: !1 }, { description: r().cdb53d7a, keys: c.goMentions, universal: !1 }, { description: r().fa98627a, keys: c.goProfile, universal: !1 }, { description: r().d4ebc798, keys: c.goToDrafts, universal: !1 }, { description: r().fd6a3f30, keys: c.goToScheduled, universal: !1 }, { description: r().d7b8ebaa, keys: c.goLikes, universal: !1 }, { description: r().b0041756, keys: c.goLists, universal: !1 }, { description: r().d4986f86, keys: c.goMessages, universal: !1 }, { description: r().h5860a68, keys: c.goGrok, universal: !1 }, { description: r().bb081ea2, keys: c.goSettings, universal: !1 }, { description: r().i3145aa0, keys: c.goBookmarks, universal: !1 }, ...t, { description: r().eee2ed92, keys: c.goToUser, universal: !1 }, { description: r().ee5ccf3e, keys: c.goDisplay, universal: !1 }];
+                    return [...((0, n.fH)(n.vw.prod) ? [] : [{ description: "Toggle Command Center", keys: `${u} k`, universal: !1 }]), { description: r().d5696fcc, keys: c.openKeyboardShortcuts, universal: !0 }, { description: r().a83d4280, keys: c.nextItem, universal: !0 }, { description: r().g0048656, keys: c.previousItem, universal: !0 }, { description: r().a690c4d0, keys: "Space", universal: !0 }, { description: r().e893811a, keys: c.refresh, universal: !1 }, { description: r().ha8209bc, keys: c.goHome, universal: !1 }, { description: r().fcf3e54c, keys: c.goExplore, universal: !1 }, { description: r().eb75875e, keys: c.goNotifications, universal: !1 }, { description: r().cdb53d7a, keys: c.goMentions, universal: !1 }, { description: r().fa98627a, keys: c.goProfile, universal: !1 }, { description: r().d4ebc798, keys: c.goToDrafts, universal: !1 }, { description: r().fd6a3f30, keys: c.goToScheduled, universal: !1 }, { description: r().d7b8ebaa, keys: c.goLikes, universal: !1 }, { description: r().b0041756, keys: c.goLists, universal: !1 }, { description: r().d4986f86, keys: c.goMessages, universal: !1 }, { description: r().h5860a68, keys: c.goGrok, universal: !1 }, { description: r().bb081ea2, keys: c.goSettings, universal: !1 }, { description: r().i3145aa0, keys: c.goBookmarks, universal: !1 }, ...t, { description: r().eee2ed92, keys: c.goToUser, universal: !1 }, { description: r().ee5ccf3e, keys: c.goDisplay, universal: !1 }];
                 }),
-                h = l.ZP.isMac() ? "⌘" : "CTRL",
-                u = () => [
+                u = l.ZP.isMac() ? "⌘" : "CTRL",
+                h = () => [
                     { description: r().ab3d53f8, keys: c.newTweet, universal: !1 },
-                    { description: r().de94bda6, keys: `${h} Enter`, universal: !1 },
+                    { description: r().de94bda6, keys: `${u} Enter`, universal: !1 },
                     { description: r().e736990a, keys: c.newMessage, universal: !1 },
                     { description: r().a9ae1e78, keys: c.search, universal: !1 },
                     { description: r().fe731016, keys: s.Z.shortcuts.like, universal: !1 },
@@ -867,7 +867,7 @@
                 ],
                 m = (0, a.Z)((e) => {
                     const t = d(e),
-                        o = u(),
+                        o = h(),
                         n = p(),
                         s = {};
                     return (
@@ -886,7 +886,7 @@
                 };
         },
         965728: (e, t, o) => {
-            o.d(t, { C_: () => y, I5: () => m, K2: () => f, L$: () => c, Rb: () => g, nk: () => p, sI: () => C, xr: () => b });
+            o.d(t, { C_: () => y, I5: () => m, K2: () => f, L$: () => c, Rb: () => g, nk: () => p, sI: () => v, xr: () => b });
             var n = o(202784),
                 s = o(483677),
                 i = o(782578),
@@ -895,20 +895,20 @@
             const l = (e, t) => `rgba(${e.rgb.red}, ${e.rgb.green}, ${e.rgb.blue}, ${t})`,
                 c = (e) => {
                     const t = e && s.Z.getForGallery(e);
-                    return t ? { rgb: b(t), rgba: l(t, 0.9) } : u;
+                    return t ? { rgb: b(t), rgba: l(t, 0.9) } : h;
                 },
                 d = a.Z.columnWidths.primary,
-                h = (e, t) => Math.min(t, e),
-                u = { rgb: "rgb(0, 0, 0)", rgba: "rgba(0, 0, 0, 0.9)" },
+                u = (e, t) => Math.min(t, e),
+                h = { rgb: "rgb(0, 0, 0)", rgba: "rgba(0, 0, 0, 0.9)" },
                 p = { transitionProperty: "background-color", transitionDuration: ".5s" },
                 m = (e, t) => {
                     const { containerHeight: o, containerWidth: n, mediaHeight: s, mediaWidth: r } = e,
                         a = r && s ? r / s : 1,
                         l = a > 1,
                         c = t ? 400 : d,
-                        u = l && (!r || r <= c) ? h(n, c) : n,
-                        p = l || (s && !(s <= c)) ? o : h(o, c);
-                    return i.Z.getContainDimensions({ width: u, height: p }, a);
+                        h = l && (!r || r <= c) ? u(n, c) : n,
+                        p = l || (s && !(s <= c)) ? o : u(o, c);
+                    return i.Z.getContainDimensions({ width: h, height: p }, a);
                 },
                 g = (e) => {
                     const t = e && e.ext_media_color && e.ext_media_color.palette;
@@ -923,7 +923,7 @@
                     return c(t);
                 },
                 b = (e) => `rgb(${e.rgb.red}, ${e.rgb.green}, ${e.rgb.blue})`,
-                v = (e, t) => {
+                C = (e, t) => {
                     switch (t.type) {
                         case "zoom":
                             return { ...e, isZoomed: t.payload.isZoomed, showControls: !t.payload.isZoomed };
@@ -933,8 +933,8 @@
                             return e;
                     }
                 },
-                C = () => {
-                    const [e, t] = n.useReducer(v, { isZoomed: !1, showControls: !0 });
+                v = () => {
+                    const [e, t] = n.useReducer(C, { isZoomed: !1, showControls: !0 });
                     return {
                         hideButtons: e.isZoomed || !e.showControls,
                         handleMediaDetailZoomed: function (e) {
@@ -970,8 +970,8 @@
                 l = o(682830);
             const c = "failed",
                 d = "loaded",
-                h = "loading",
-                u = "none";
+                u = "loading",
+                h = "none";
             class p extends n.Component {
                 shouldComponentUpdate(e) {
                     const t = e.fetchStatus === d,
@@ -983,9 +983,9 @@
                     switch (s) {
                         case c:
                             return f ? n.createElement(a.Z, { icon: i, onRequestRetry: d, retryMessage: g }) : o ? n.createElement(l.m, { failureMessage: o }) : m();
-                        case h:
-                            return n.createElement(l.J, { "aria-label": e, color: t, loadingMessage: r });
                         case u:
+                            return n.createElement(l.J, { "aria-label": e, color: t, loadingMessage: r });
+                        case h:
                             return null;
                         default:
                             return p();
@@ -1035,15 +1035,15 @@
                 l = o(933895),
                 c = o(392237);
             const d = o(393058).Z.isTouchSupported(),
-                h = { zoom: 1, lastX: 0, lastY: 0, zoomCenter: { x: 0, y: 0 } },
-                u = { height: 0, width: 0, left: 0, right: 0, top: 0, bottom: 0 },
+                u = { zoom: 1, lastX: 0, lastY: 0, zoomCenter: { x: 0, y: 0 } },
+                h = { height: 0, width: 0, left: 0, right: 0, top: 0, bottom: 0 },
                 p = (e, t, o) => Math.min(t, Math.max(e, o)),
                 m = (e, t) => Math.sqrt(Math.pow(e.clientY - t.clientY, 2) + Math.pow(e.clientX - t.clientX, 2)),
                 g = (e, t) => ({ x: (e.clientX + t.clientX) / 2, y: (e.clientY + t.clientY) / 2 });
             class f extends n.Component {
                 constructor(e) {
                     super(e),
-                        (this._itemDimensions = u),
+                        (this._itemDimensions = h),
                         (this._ref = n.createRef()),
                         (this._setTouchableNode = (e) => {
                             this._touchableNode !== e && ((this._touchableNode = e), this._removeTouchListener && this._removeTouchListener(), this._touchableNode && (this._removeTouchListener = (0, l.O)(this._touchableNode, this._handleTouchMove, !1)));
@@ -1064,10 +1064,10 @@
                                 { zoom: i } = this.state;
                             i !== s && 1 === s ? this.resetZoom() : this.setState({ lastX: 0, lastY: 0, zoom: s }), 0 === e.touches.length ? ((this._isTouching = !1), this._lastTouchTime && this._lastTouchTime + 300 > e.timeStamp ? (this._clickTimer && clearTimeout(this._clickTimer), this._handleDoubleTap(e)) : i <= 1 && !this._moved && (this._clickTimer = setTimeout(n, 300)), (this._lastTouchTime = e.timeStamp)) : e.preventDefault();
                         }),
-                        (this.state = { ...h });
+                        (this.state = { ...u });
                 }
                 static getDerivedStateFromProps(e, t) {
-                    return d && e.resetZoom ? (e.onZoomed(!1), { ...h }) : t;
+                    return d && e.resetZoom ? (e.onZoomed(!1), { ...u }) : t;
                 }
                 render() {
                     if (!d) return this.props.children;
@@ -1087,7 +1087,7 @@
                     this._removeTouchListener && this._removeTouchListener();
                 }
                 resetZoom() {
-                    this.props.onZoomed(!1), this.setState({ zoom: h.zoom });
+                    this.props.onZoomed(!1), this.setState({ zoom: u.zoom });
                 }
                 _handlePanMove(e) {
                     if (this.state.zoom <= 1 || !this._zoomedDimensions || !this._windowDimensions) return;
@@ -1099,10 +1099,10 @@
                             zoomCenter: { x: i, y: a },
                         } = this.state,
                         { height: l, width: c } = this._windowDimensions,
-                        { height: d, width: h } = this._zoomedDimensions;
-                    let u = 0,
+                        { height: d, width: u } = this._zoomedDimensions;
+                    let h = 0,
                         p = 0;
-                    h - c > 0 && (u = t - n), d - l > 0 && (p = o - s), this.setState({ lastX: t, lastY: o, zoomCenter: { x: (0, r.Z)(i - u, 0, c), y: (0, r.Z)(a - p, 0, l) } });
+                    u - c > 0 && (h = t - n), d - l > 0 && (p = o - s), this.setState({ lastX: t, lastY: o, zoomCenter: { x: (0, r.Z)(i - h, 0, c), y: (0, r.Z)(a - p, 0, l) } });
                 }
                 _handlePinchStart(e) {
                     const { touches: t } = e;
@@ -1116,16 +1116,16 @@
                         { lastX: o, lastY: n, zoom: s, zoomCenter: i } = this.state,
                         { maxZoom: a, maxZoomBounce: l, minZoom: c, minZoomBounce: d } = this.props;
                     if (0 === i.x && 0 === i.y) return void (2 === e.touches.length && this._handlePinchStart(e));
-                    const h = m(t[0], t[1]),
-                        u = this._lastDistance ? h / this._lastDistance : 1,
-                        f = p(c - d, a + l, s * u),
+                    const u = m(t[0], t[1]),
+                        h = this._lastDistance ? u / this._lastDistance : 1,
+                        f = p(c - d, a + l, s * h),
                         y = g(t[0], t[1]),
                         b = (() => {
                             if (!this._windowDimensions || !o) return i;
                             const { height: e, width: t } = this._windowDimensions;
                             return { x: (0, r.Z)(i.x - (y.x - o), 0, t), y: (0, r.Z)(i.y - (y.y - n), 0, e) };
                         })();
-                    (this._lastDistance = h), this.setState({ lastX: y.x, lastY: y.y, zoom: f, zoomCenter: b });
+                    (this._lastDistance = u), this.setState({ lastX: y.x, lastY: y.y, zoom: f, zoomCenter: b });
                 }
                 _handleTapStart(e) {
                     const { touches: t } = e;
@@ -1133,7 +1133,7 @@
                 }
                 _handleDoubleTap(e) {
                     const { maxZoom: t, onZoomed: o } = this.props;
-                    1 !== this.state.zoom ? this.resetZoom() : (this._updateWindowDimensions(), this.setState({ zoom: t, zoomCenter: this._tapCenter || h.zoomCenter }), o(!0));
+                    1 !== this.state.zoom ? this.resetZoom() : (this._updateWindowDimensions(), this.setState({ zoom: t, zoomCenter: this._tapCenter || u.zoomCenter }), o(!0));
                 }
                 _getZoomCenter(e, t) {
                     this._ref.current && (this._itemDimensions = this._ref.current.getBoundingClientRect());
@@ -1148,7 +1148,7 @@
             const y = c.default.create((e) => ({ fill: { flex: 1 } })),
                 b = f;
         },
-        648539: (e, t, o) => {
+        899174: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var n = o(202784),
                 s = o(890601),
@@ -1156,20 +1156,7 @@
                 r = o(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M19 14h2v3h-2v-3zM3 14H1v3h2v-3zm.5 7c-.276 0-.5-.225-.5-.5V19H1v1.5C1 21.879 2.122 23 3.5 23H5v-2H3.5zM10 5V3H7v2h3zm-7 .5c0-.275.224-.5.5-.5H5V3H3.5C2.122 3 1 4.121 1 5.5V7h2V5.5zM12 21v2h3v-2h-3zm-5 0v2h3v-2H7zm12-.5c0 .275-.224.5-.5.5H17v2h1.5c1.378 0 2.5-1.121 2.5-2.5V19h-2v1.5zM3 9H1v3h2V9zm3 9h5v-2H6v2zM18-.1c3.364 0 6.1 2.736 6.1 6.1s-2.736 6.1-6.1 6.1-6.1-2.736-6.1-6.1S14.636-.1 18-.1zm0 2c-2.261 0-4.1 1.839-4.1 4.1s1.839 4.1 4.1 4.1 4.1-1.839 4.1-4.1-1.839-4.1-4.1-4.1zm.5 3.1H15v2h6V5h-2.5zM6 10h4V8H6v2zm0 4h7v-2H6v2z" })) }, { writingDirection: t });
-            };
-            a.metadata = { width: 24, height: 24 };
-            const l = a;
-        },
-        452693: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => l });
-            var n = o(202784),
-                s = o(890601),
-                i = o(783427),
-                r = o(347101);
-            const a = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M9.909 4.14C9.541 4.05 9.157 4 8.766 4H1.002v16h8.146c.758 0 1.45.43 1.789 1.11l.065.13V5.76c0-.73-.388-1.44-1.093-1.62zM8 15H4v-2h4v2zm0-4H4V9h4v2zm7.238-7c-.391 0-.774.05-1.143.14-.705.18-1.093.89-1.093 1.62v15.49c.461-.82 1.076-1.25 1.854-1.25h8.146V4h-7.764zM20 15h-4v-2h4v2zm0-4h-4V9h4v2z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const l = a;
@@ -1192,4 +1179,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ReaderMode-6107ac1a.902334ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ReaderMode-6107ac1a.a145741a.js.map

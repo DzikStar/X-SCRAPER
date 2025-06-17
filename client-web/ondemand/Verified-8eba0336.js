@@ -41,7 +41,7 @@
                     return (0, n.jsxs)(d.$0, { children: [(0, n.jsx)("div", { className: "p-px rounded-2xl bg-gradient-to-r rtl:bg-gradient-to-l from-[#6FCA6C] to-transparent", children: (0, n.jsx)("div", { className: "rounded-[calc(1.5rem-8px)] p-0 dark:bg-black bg-white", children: (0, n.jsxs)("div", { className: "relative rounded-[calc(1.5rem-8px)] p-8 bg-gradient-to-r from-[rgba(118,170,153,0.2)] to-[rgba(60,154,123,0.2)]", children: [(0, n.jsx)("div", { className: "absolute md:top-1/3 md:-end-10 hidden md:flex", children: (0, n.jsx)(g, { targetDate: e }) }), (0, n.jsxs)("div", { className: "md:w-[60%]", children: [(0, n.jsx)("h2", { className: "text-title2 font-bold", children: l.landing.offerBanner.title }), (0, n.jsxs)("p", { className: "mt-4 text-[20px] font-light", children: [l.landing.offerBanner.description, " ", (0, n.jsx)("span", { className: "font-bold", children: a }), "."] })] })] }) }) }), (0, n.jsx)("div", { className: "-mt-6 md:hidden z-10", children: (0, n.jsx)(g, { targetDate: e }) })] });
                 };
         },
-        354146: (e, l, a) => {
+        313270: (e, l, a) => {
             a.d(l, { n: () => f });
             var n = a(552322),
                 i = a(261012),
@@ -234,7 +234,7 @@
         323048: (e, l, a) => {
             a.d(l, { R: () => r });
             var n = a(552322),
-                i = a(57478),
+                i = a(589259),
                 s = a(889906);
             a(703383);
             const t = a(340629);
@@ -283,4 +283,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-8eba0336.c2341c7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-8eba0336.3a75e59a.js.map

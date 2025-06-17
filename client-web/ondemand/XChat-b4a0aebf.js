@@ -20,7 +20,7 @@
                 p = n(89195),
                 f = n(25457),
                 g = n(993165),
-                j = n(57478),
+                j = n(589259),
                 w = n(351417),
                 b = n(31674),
                 C = n(155369),
@@ -843,7 +843,7 @@
                 m = n(695102),
                 x = n(242782),
                 u = n(169355),
-                h = n(57478),
+                h = n(589259),
                 v = n(332161),
                 p = n(32161),
                 f = n(537335),
@@ -1041,7 +1041,7 @@
         996016: (e, t, n) => {
             n.d(t, { b: () => p });
             var s = n(552322),
-                i = n(57478),
+                i = n(589259),
                 a = n(332161),
                 o = n(350311),
                 r = n(336984),
@@ -1174,4 +1174,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-b4a0aebf.d6a1e3aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-b4a0aebf.4f7f3d5a.js.map

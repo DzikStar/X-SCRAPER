@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.jobLoader", "icons/IconNumberedList-js"],
+    ["ondemand.jobLoader", "icons/IconItalic-js", "icons/IconNumberedList-js"],
     {
         470275: (e, t, n) => {
             n.r(t), n.d(t, { default: () => S });
@@ -196,7 +196,7 @@
                 v = h.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
         },
         779802: (e, t, n) => {
-            n.d(t, { $u: () => S, Ak: () => Z, KJ: () => D, LI: () => $, P7: () => g, PW: () => E, QF: () => b, Qm: () => w, Tr: () => z, b$: () => h, db: () => I, et: () => k, fR: () => p, iH: () => x, lD: () => y, su: () => v, u4: () => T, wX: () => _ });
+            n.d(t, { $u: () => S, Ak: () => Z, KJ: () => D, LI: () => $, P7: () => g, PW: () => E, QF: () => b, Qm: () => w, Tr: () => z, b$: () => h, db: () => T, et: () => k, fR: () => p, iH: () => x, lD: () => y, su: () => v, u4: () => I, wX: () => _ });
             var r = n(202784),
                 o = n(111677),
                 l = n.n(o),
@@ -249,8 +249,8 @@
                 x = [{ blockType: g.header1, label: k, component: $({ size: "title1", extendedWidth: !0, children: k }) }, { blockType: g.header2, label: E, component: $({ size: "title3", weight: "heavy", children: E }) }, z],
                 _ = ["backspace", "backspace-word", "backspace-to-start-of-line"],
                 Z = ["delete", "delete-word", "delete-to-start-of-line"],
-                T = "increase-text-size",
-                I = "decrease-text-size";
+                I = "increase-text-size",
+                T = "decrease-text-size";
         },
         989272: (e, t, n) => {
             n.d(t, { _i: () => o, fH: () => a, w3: () => l });
@@ -304,7 +304,7 @@
             }
             const s = [];
         },
-        264171: (e, t, n) => {
+        856661: (e, t, n) => {
             n.r(t), n.d(t, { default: () => c });
             var r = n(202784),
                 o = n(890601),
@@ -312,7 +312,7 @@
                 a = n(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, l.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M9 6h3.731L9.184 18H5v2h10v-2h-3.731l3.547-12H19V4H9v2z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const c = i;
@@ -332,4 +332,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.jobLoader.6a05691a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.jobLoader.7716355a.js.map

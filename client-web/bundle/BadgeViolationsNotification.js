@@ -1,9 +1,9 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.BadgeViolationsNotification"],
+    ["bundle.BadgeViolationsNotification", "icons/IconErrorCircleFillWhite-js"],
     {
         625661: (t, e, o) => {
-            o.d(e, { ZP: () => h });
+            o.d(e, { ZP: () => p });
             var i = o(202784),
                 r = o(614983),
                 n = o.n(r),
@@ -12,10 +12,10 @@
                 s = o(786998),
                 c = o(929028),
                 d = o(386802);
-            function p(t, e, o) {
+            function h(t, e, o) {
                 return t || (!e && o ? "fixed" : void 0);
             }
-            class h extends i.Component {
+            class p extends i.Component {
                 constructor(...t) {
                     super(...t),
                         (this._handleBackClick = () => {
@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: t, centerTitle: e, centeredLogo: o, fixed: r, hideBackButton: n, isFullWidth: a, isLarge: c, leftControl: d, middleControl: h, position: u, rightControl: m, secondaryBar: B, style: b, subtitle: g, title: y, titleDomId: k, titleIconCell: f, titleIconCellSize: C, withBackground: x, withWideContainer: _ } = this.props,
+                    const { backButtonType: t, centerTitle: e, centeredLogo: o, fixed: r, hideBackButton: n, isFullWidth: a, isLarge: c, leftControl: d, middleControl: p, position: u, rightControl: m, secondaryBar: g, style: B, subtitle: b, title: y, titleDomId: f, titleIconCell: C, titleIconCellSize: k, withBackground: x, withWideContainer: _ } = this.props,
                         { isModal: E } = this.context,
                         Z = n ? d : i.createElement(l.Z, { backButtonType: t, onClick: this._handleBackClick }),
                         w = (function (t, e, o) {
                             return t && !(e && o);
-                        })(!!x, E, !!B);
-                    return i.createElement(i.Fragment, null, i.createElement(s.Z, { centerTitle: e, centeredLogo: o, isFullWidth: a, isLarge: c, leftControl: Z, middleControl: h, position: p(u, E, r), rightControl: m, style: b, subtitle: g, title: y, titleDomId: k, titleIconCell: f, titleIconCellSize: C, withBackground: w, withWideContainer: _ }), B || null);
+                        })(!!x, E, !!g);
+                    return i.createElement(i.Fragment, null, i.createElement(s.Z, { centerTitle: e, centeredLogo: o, isFullWidth: a, isLarge: c, leftControl: Z, middleControl: p, position: h(u, E, r), rightControl: m, style: B, subtitle: b, title: y, titleDomId: f, titleIconCell: C, titleIconCellSize: k, withBackground: w, withWideContainer: _ }), g || null);
                 }
                 render() {
                     const { secondaryBar: t } = this.props,
@@ -43,10 +43,10 @@
                     return e ? i.createElement(a.Z, { style: !!t && o }, this._renderContent()) : this._renderContent();
                 }
             }
-            (h.contextType = d.Z), (h.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
+            (p.contextType = d.Z), (p.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
         980407: (t, e, o) => {
-            o.d(e, { Z: () => B, w: () => u });
+            o.d(e, { Z: () => g, w: () => u });
             var i = o(202784),
                 r = o(325686),
                 n = o(108362),
@@ -55,15 +55,15 @@
                 s = o(652904),
                 c = o(555079),
                 d = o(625661),
-                p = o(449067),
-                h = o(715601);
+                h = o(449067),
+                p = o(715601);
             class u extends i.Component {
                 constructor(...t) {
                     super(...t),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: t, appBarStyle: e, backButtonType: o, backLocation: n, centerTitle: a, hideBackButton: l, history: s, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: B, rightControl: b, secondaryBar: g, subtitle: y, title: k } = this.props,
-                                { isModal: f } = this.context;
-                            return i.createElement(r.Z, { style: f ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, i.createElement(d.ZP, { backButtonType: o || (f ? "close" : "back"), backLocation: n, centerTitle: a, fixed: !f, hideBackButton: l, history: s, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: B, ref: t, rightControl: b, secondaryBar: g, style: [f && m.appBarModal, e], subtitle: y, title: k, titleDomId: c.Q_ }));
+                            const { appBarRef: t, appBarStyle: e, backButtonType: o, backLocation: n, centerTitle: a, hideBackButton: l, history: s, isFullWidth: h, isLarge: p, middleControl: u, onBackClick: g, rightControl: B, secondaryBar: b, subtitle: y, title: f } = this.props,
+                                { isModal: C } = this.context;
+                            return i.createElement(r.Z, { style: C ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, i.createElement(d.ZP, { backButtonType: o || (C ? "close" : "back"), backLocation: n, centerTitle: a, fixed: !C, hideBackButton: l, history: s, isFullWidth: h, isLarge: p, middleControl: u, onBackClick: g, ref: t, rightControl: B, secondaryBar: b, style: [C && m.appBarModal, e], subtitle: y, title: f, titleDomId: c.Q_ }));
                         }),
                         (this._handleLayout = (t) => {
                             const { onLayout: e } = this.props,
@@ -72,15 +72,15 @@
                         });
                 }
                 render() {
-                    const { "aria-hidden": t, bottomBar: e, children: o, containerStyle: a, documentTitle: l, isFullWidth: c, isLarge: d, renderHeader: u, title: B, withoutBottomBarMobile: b } = this.props,
-                        { isModal: g } = this.context,
+                    const { "aria-hidden": t, bottomBar: e, children: o, containerStyle: a, documentTitle: l, isFullWidth: c, isLarge: d, renderHeader: u, title: g, withoutBottomBarMobile: B } = this.props,
+                        { isModal: b } = this.context,
                         y = u ? u(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return i.createElement(s.Z, null, i.createElement(p.Z.Configure, { documentTitle: l, headerless: !0, title: B }), i.createElement(r.Z, { "aria-hidden": t, onLayout: this._handleLayout, style: [m.root, g && m.rootModal] }, !g && y, i.createElement(n.Z, { isFullWidth: c, isLarge: d, style: [m.container, g && m.containerModal, a] }, g ? i.createElement(h.Z, { style: m.viewport }, y, o) : o), e ? i.createElement(r.Z, { style: [m.bottomBarModal, !g && !b && m.bottomBarMobile] }, i.createElement(n.Z, { isFullWidth: c, isLarge: d }, e)) : null));
+                    return i.createElement(s.Z, null, i.createElement(h.Z.Configure, { documentTitle: l, headerless: !0, title: g }), i.createElement(r.Z, { "aria-hidden": t, onLayout: this._handleLayout, style: [m.root, b && m.rootModal] }, !b && y, i.createElement(n.Z, { isFullWidth: c, isLarge: d, style: [m.container, b && m.containerModal, a] }, b ? i.createElement(p.Z, { style: m.viewport }, y, o) : o), e ? i.createElement(r.Z, { style: [m.bottomBarModal, !b && !B && m.bottomBarMobile] }, i.createElement(n.Z, { isFullWidth: c, isLarge: d }, e)) : null));
                 }
             }
             (u.defaultProps = { isFullWidth: !1, isLarge: !1 }), (u.contextType = a.Z);
             const m = l.default.create((t) => ({ root: { backgroundColor: t.colors.cellBackground, flexGrow: 1, flexShrink: 1 }, rootModal: { borderRadius: t.borderRadii.xLarge, flexShrink: 1 }, appBarModal: { borderTopStartRadius: t.borderRadii.small, borderTopEndRadius: t.borderRadii.small }, childViewAppBarRoot: { position: "sticky", top: 0 }, appBarZindex: { zIndex: t.componentZIndices.appBarZIndex }, container: { flexGrow: 1 }, containerModal: { flexShrink: 1 }, viewport: { borderBottomStartRadius: t.borderRadii.xLarge, borderBottomEndRadius: t.borderRadii.xLarge, flexGrow: 1, flexShrink: 1, overflow: "auto", zIndex: void 0 }, bottomBarModal: { borderTopColor: t.colors.borderColor, borderTopWidth: t.borderWidths.small }, bottomBarMobile: { position: "fixed", backfaceVisibility: "hidden", bottom: 0, width: "100%", paddingBottom: l.default.iPhoneOffsetBottom, backgroundColor: t.colors.navigationBackground, borderTopStyle: "solid" } })),
-                B = u;
+                g = u;
         },
         652904: (t, e, o) => {
             o.d(e, { Z: () => d });
@@ -132,21 +132,21 @@
                 s = o(392237),
                 c = o(111677),
                 d = o.n(c),
-                p = o(849353),
-                h = o(350506),
+                h = o(849353),
+                p = o(350506),
                 u = o(980407),
                 m = o(686689),
-                B = o(316325),
-                b = o(312771),
-                g = o(71620),
+                g = o(316325),
+                B = o(312771),
+                b = o(71620),
                 y = o(668214),
-                k = o(946194);
-            const f = (0, y.Z)()
-                    .propsFromState(() => ({ badgeViolations: k.XC, fetchStatus: k.Sb }))
-                    .adjustStateProps(({ badgeViolations: t, fetchStatus: e }) => ({ badgeViolations: t, fetchStatus: e === b.ZP.NONE ? b.ZP.LOADING : e }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, g.zr)("ACCOUNT_VERIFICATION_NOTIFICATION_SCREEN"), fetchBadgeViolations: k.pD }))
+                f = o(946194);
+            const C = (0, y.Z)()
+                    .propsFromState(() => ({ badgeViolations: f.XC, fetchStatus: f.Sb }))
+                    .adjustStateProps(({ badgeViolations: t, fetchStatus: e }) => ({ badgeViolations: t, fetchStatus: e === B.ZP.NONE ? B.ZP.LOADING : e }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, b.zr)("ACCOUNT_VERIFICATION_NOTIFICATION_SCREEN"), fetchBadgeViolations: f.pD }))
                     .withAnalytics(),
-                C = "/notifications",
+                k = "/notifications",
                 x = d().fc2a5c92,
                 _ = (t) => null;
             class E extends i.Component {
@@ -159,7 +159,7 @@
                                     violation_status: s,
                                     violation_title: c,
                                 } = t,
-                                d = s === B.Tq.IN_COMPLIANCE ? i.createElement(p.default, { style: [Z.icon, Z.green] }) : i.createElement(h.default, { style: [Z.icon, Z.red] });
+                                d = s === g.Tq.IN_COMPLIANCE ? i.createElement(h.default, { style: [Z.icon, Z.green] }) : i.createElement(p.default, { style: [Z.icon, Z.red] });
                             return i.createElement(r.Z, { key: o, style: [Z.listItem, e && Z.withBottomBorder] }, d, i.createElement(r.Z, { style: Z.itemContent }, i.createElement(n.ZP, { style: Z.itemTitle }, c), i.createElement(m.Z, { color: "gray700", entities: a, size: "subtext2", text: l })));
                         }),
                         (this._render = () => {
@@ -170,9 +170,9 @@
                                     violation_modal_title: l,
                                     violations: s,
                                 } = t,
-                                c = () => e.goBack({ backLocation: C }),
+                                c = () => e.goBack({ backLocation: k }),
                                 d = i.createElement(m.Z, { entities: r, text: n }),
-                                p =
+                                h =
                                     s && s.length
                                         ? i.createElement(
                                               i.Fragment,
@@ -180,7 +180,7 @@
                                               s.map((t, e, o) => this._renderViolation(t, e !== o.length - 1)),
                                           )
                                         : null;
-                            return i.createElement(a.Z, { actionLabel: o, children: p, contentStyle: Z.contentContainer, headline: l, onAction: c, onClose: c, subtext: d });
+                            return i.createElement(a.Z, { actionLabel: o, children: h, contentStyle: Z.contentContainer, headline: l, onAction: c, onClose: c, subtext: d });
                         }),
                         (this._handleRequestRetry = () => {
                             const { createLocalApiErrorHandler: t, fetchBadgeViolations: e } = this.props;
@@ -193,13 +193,26 @@
                 }
                 render() {
                     const { fetchStatus: t, history: e } = this.props,
-                        o = t === b.ZP.LOADED;
-                    return i.createElement(u.Z, { backLocation: C, containerStyle: !o && Z.loading, history: e, renderHeader: o ? _ : void 0 }, i.createElement(l.Z, { fetchStatus: t, onRequestRetry: this._handleRequestRetry, render: this._render, retryMessage: x, retryable: !0 }));
+                        o = t === B.ZP.LOADED;
+                    return i.createElement(u.Z, { backLocation: k, containerStyle: !o && Z.loading, history: e, renderHeader: o ? _ : void 0 }, i.createElement(l.Z, { fetchStatus: t, onRequestRetry: this._handleRequestRetry, render: this._render, retryMessage: x, retryable: !0 }));
                 }
             }
             const Z = s.default.create((t) => ({ contentContainer: { marginVertical: t.spaces.space16, justifyContent: "center" }, listItem: { flexDirection: "row", paddingVertical: t.spaces.space20, width: "100%" }, withBottomBorder: { borderBottomWidth: t.borderWidths.small, borderBottomColor: t.colors.borderColor, borderBottomStyle: "solid" }, icon: { flexShrink: 0, fontSize: t.fontSizes.headline1, marginEnd: t.spaces.space12 }, itemContent: { flexShrink: 1, flexGrow: 1 }, itemTitle: { marginBottom: t.spaces.space2 }, loading: { paddingBottom: t.spaces.space48 }, green: { color: t.colors.green500 }, red: { color: t.colors.magenta500 } })),
-                w = f(E);
+                w = C(E);
+        },
+        350506: (t, e, o) => {
+            o.r(e), o.d(e, { default: () => s });
+            var i = o(202784),
+                r = o(890601),
+                n = o(783427),
+                a = o(347101);
+            const l = (t = {}) => {
+                const { direction: e } = (0, n.Z)();
+                return (0, r.Z)("svg", { ...t, role: t["aria-label"] ? t.role || "img" : void 0, "aria-hidden": void 0 === t["aria-label"], style: [a.Z.root, t.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 1.75C6.339 1.75 1.75 6.339 1.75 12S6.339 22.25 12 22.25 22.25 17.661 22.25 12 17.661 1.751 12 1.75z" }), i.createElement("path", { d: "M13.25 7L13 12.7c-.32-.121-.658-.189-1-.2-.342.011-.68.079-1 .2L10.75 7h2.5zM12 17c-.828 0-1.5-.672-1.5-1.5S11.172 14 12 14s1.5.672 1.5 1.5S12.828 17 12 17z", fill: "#fff" })) }, { writingDirection: e });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.BadgeViolationsNotification.36ff814a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.BadgeViolationsNotification.69a5024a.js.map

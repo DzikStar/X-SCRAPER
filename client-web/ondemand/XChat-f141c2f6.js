@@ -39,7 +39,7 @@
             n.d(t, { a: () => c });
             var a = n(552322),
                 r = n(242782),
-                s = n(57478),
+                s = n(589259),
                 l = n(31674),
                 i = n(350311),
                 o = n(336984);
@@ -49,7 +49,7 @@
             n.d(t, { w: () => i });
             var a = n(552322),
                 r = n(350311),
-                s = n(57478),
+                s = n(589259),
                 l = n(887491);
             const i = ({ name: e, avatarUrl: t, onRemove: n }) => (0, a.jsxs)("div", { className: "flex items-center rounded-full px-2 py-1 gap-1.5 bg-gray-50 hover:bg-mix-text border border-gray-200 max-w-fit cursor-pointer", onClick: n, children: [(0, a.jsx)(r.s, { url: t, size: "small" }), (0, a.jsx)(s.R, { name: e, size: "subtext1" }), (0, a.jsx)(l.Z, { className: "size-4" })] });
         },
@@ -66,7 +66,7 @@
             var a = n(552322),
                 r = n(322506),
                 s = n(378364),
-                l = n(57478),
+                l = n(589259),
                 i = n(253511),
                 o = n(123010),
                 c = n(31674),
@@ -1180,4 +1180,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f141c2f6.aa721c4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f141c2f6.6f95c16a.js.map

@@ -101,11 +101,11 @@
                     const y = { type: "broadcast", id: n };
                     return r.createElement(oe.Z, { style: [de.base, a].filter(Boolean) }, r.createElement(se.nO, { namespace: g }, r.createElement(ae.Z, { analytics: $, autoplay: i, config: "auto", controls: l, displayOptions: { objectFitVideo: "cover", hideLeftBadges: !0, hidePosterImage: !0 }, enablePip: c, httpClient: h, initiallyMuted: s, precache: !0, size: "fill", twitterAuthedHttpClient: h, videoId: y })));
                 };
-            var me = o(45843),
-                ue = o(738584),
-                he = o(614425),
-                ge = o(443781),
-                $e = o(59669);
+            var me = o(244448),
+                ue = o(45843),
+                he = o(738584),
+                ge = o(614425),
+                $e = o(443781);
             const ye = { base: { display: "flex", flexShrink: 1, flexBasis: "auto", width: "100%", height: "100%", overflow: "hidden" }, aspectRatioStyle: (e) => ({ aspectRatio: `${e ?? "auto"}`, width: "auto" }), posterImage: { height: "100%", width: "100%", zIndex: -1, position: "absolute" } },
                 be = ({ props: e, scribeContext: t, style: o }) => {
                     const a = e.url("src"),
@@ -124,9 +124,9 @@
                         b = e.str("scribe_section"),
                         Z = (0, i.Z)(),
                         f = (0, ie.I0)(),
-                        { featureSwitches: S } = (0, ge.QZ)(),
+                        { featureSwitches: S } = (0, $e.QZ)(),
                         v = r.useMemo(() => f((e, t, { api: o }) => o.getHttpClient()), [f]),
-                        { isFocused: k, isMuted: w, setCurrentTimeMs: x, setDurationMs: C, setTracksFinished: E } = (0, $e.wR)(),
+                        { isFocused: k, isMuted: w, setCurrentTimeMs: x, setDurationMs: C, setTracksFinished: E } = (0, me.wR)(),
                         I = r.useRef(),
                         M = r.useRef();
                     r.useEffect(() => {
@@ -166,7 +166,7 @@
                                 };
                             return new ne.Z(o, { log: () => {} }, v, e);
                         }, [Z, t, v, W]);
-                    return a ? r.createElement(oe.Z, { style: [ye.base, o, c ? ye.aspectRatioStyle(s ?? 1) : null, d ? ye.aspectRatioStyle(l ?? 1) : null].filter(Boolean) }, r.createElement(se.nO, { namespace: W }, r.createElement(ue.Z, { analytics: R, "aria-label": n ?? "video", autoplay: h, basePlayerClass: he.Y7, configType: "static", contentId: u ?? "", contentType: "media_entity", displayOptions: { objectFitVideo: "cover", hideLeftBadges: !0, hidePosterImage: !0 }, durationMs: p ?? 0, enableVideoPlayerCaptionRendering: !0, featureProvider: S, httpClient: v, initiallyMuted: g, loop: $, onApiReady: j, onStateUpdate: P, playbackSessionId: u ?? "", poster: m ?? "", precache: !0, size: "fill", twitterAuthedHttpClient: v, variants: [{ src: a, type: "application/x-mpegURL" }] })), m && r.createElement(me.Z, { source: m, style: ye.posterImage })) : r.createElement(re.ZP, null, "Video not provided");
+                    return a ? r.createElement(oe.Z, { style: [ye.base, o, c ? ye.aspectRatioStyle(s ?? 1) : null, d ? ye.aspectRatioStyle(l ?? 1) : null].filter(Boolean) }, r.createElement(se.nO, { namespace: W }, r.createElement(he.Z, { analytics: R, "aria-label": n ?? "video", autoplay: h, basePlayerClass: ge.Y7, configType: "static", contentId: u ?? "", contentType: "media_entity", displayOptions: { objectFitVideo: "cover", hideLeftBadges: !0, hidePosterImage: !0 }, durationMs: p ?? 0, enableVideoPlayerCaptionRendering: !0, featureProvider: S, httpClient: v, initiallyMuted: g, loop: $, onApiReady: j, onStateUpdate: P, playbackSessionId: u ?? "", poster: m ?? "", precache: !0, size: "fill", twitterAuthedHttpClient: v, variants: [{ src: a, type: "application/x-mpegURL" }] })), m && r.createElement(ue.Z, { source: m, style: ye.posterImage })) : r.createElement(re.ZP, null, "Video not provided");
                 };
             var Ze = o(530732);
             const fe = ({ children: e, overrideStyles: t, props: o, style: a }) => {
@@ -368,4 +368,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-82a7f3-7d927d91.31d1641a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-82a7f3-7d927d91.abd60c4a.js.map

@@ -23,41 +23,41 @@
                 b = n(312771),
                 _ = n(934878),
                 f = n(728300),
-                P = n(953884),
-                k = n(144528),
-                S = n(457637),
-                T = n(363895),
-                Z = n(71620),
-                w = n(668214),
-                x = n(390387);
-            const v = (e) => e.quickPromote.objective,
-                L = (e, t) => e.quickPromote.targeting.targetedLocations,
-                A = (e, t) => e.quickPromote.targeting.ageBucket,
-                I = (e, t) => e.quickPromote.targeting.gender,
+                S = n(953884),
+                P = n(144528),
+                T = n(457637),
+                k = n(363895),
+                w = n(71620),
+                Z = n(668214),
+                I = n(390387);
+            const x = (e) => e.quickPromote.objective,
+                A = (e, t) => e.quickPromote.targeting.targetedLocations,
+                v = (e, t) => e.quickPromote.targeting.ageBucket,
+                L = (e, t) => e.quickPromote.targeting.gender,
                 q = (e, t) => e.quickPromote.targeting.keywords,
                 D = (e, t) => e.quickPromote.budget.dailyBudget,
                 B = (e, t) => e.quickPromote.budget.durationDays,
                 M = (e) => e.quickPromote.budget.currency || "USD",
-                F = (e) => e.quickPromote.account.selectedFundingInstrument,
-                N = (e) => e.quickPromote.account.adsAccount,
-                z = (e) => e.quickPromote.promoteStatus,
-                U = (e) => e.quickPromote.promoteErrorCode,
-                O = (e) => e.quickPromote.coupons,
-                R = (e) => e.quickPromote.enrollCouponErrorCode,
+                R = (e) => e.quickPromote.account.selectedFundingInstrument,
+                F = (e) => e.quickPromote.account.adsAccount,
+                N = (e) => e.quickPromote.promoteStatus,
+                z = (e) => e.quickPromote.promoteErrorCode,
+                U = (e) => e.quickPromote.coupons,
+                O = (e) => e.quickPromote.enrollCouponErrorCode,
                 K =
                     ({ history: e, match: t }) =>
                     (n) => {
                         const { quickPromotePlatform: o, screenName: r, statusId: a } = t.params,
-                            i = (0, T.WS)(r, a, o, T.MN.Done);
+                            i = (0, k.WS)(r, a, o, k.MN.Done);
                         return (0, E.kb)({ history: e, statusId: a, nextPath: i, analytics: n });
                     },
-                G = (0, w.Z)()
-                    .propsFromState(() => ({ objective: v, targetedLocations: L, ageBucket: A, gender: I, keywords: q, dailyBudget: D, durationDays: B, lang: x.VT, country: E.QE, currency: M, fundingInstrument: F, adsAccount: N, promoteStatus: z, promoteErrorCode: U, coupons: O, enrollCouponErrorCode: R, selectedPaymentMethod: E.DY }))
-                    .propsFromActions((e) => ({ createLocalApiErrorHandler: (0, Z.zr)("QUICK_PROMOTE_REVIEW_SCREEN"), clearPersistedRedirectBackState: () => (0, E.oE)(), createPromotion: K(e), enrollCoupon: E.br }))
-                    .withAnalytics(T.EP),
+                G = (0, Z.Z)()
+                    .propsFromState(() => ({ objective: x, targetedLocations: A, ageBucket: v, gender: L, keywords: q, dailyBudget: D, durationDays: B, lang: I.VT, country: E.QE, currency: M, fundingInstrument: R, adsAccount: F, promoteStatus: N, promoteErrorCode: z, coupons: U, enrollCouponErrorCode: O, selectedPaymentMethod: E.DY }))
+                    .propsFromActions((e) => ({ createLocalApiErrorHandler: (0, w.zr)("QUICK_PROMOTE_REVIEW_SCREEN"), clearPersistedRedirectBackState: () => (0, E.oE)(), createPromotion: K(e), enrollCoupon: E.br }))
+                    .withAnalytics(k.EP),
                 H = m().db443ae2,
-                W = m().a96f811e,
-                Q = m().b069d89c,
+                Q = m().a96f811e,
+                W = m().b069d89c,
                 j = m().fbd44e96,
                 V = m().e36bce64,
                 $ = m().c602f5b8,
@@ -85,7 +85,7 @@
                         }),
                         (this._handlePromote = () => {
                             const { analytics: e, createPromotion: t } = this.props;
-                            (0, T.hq)(e)(T.Ur.promotionClick()), t(e);
+                            (0, k.hq)(e)(k.Ur.promotionClick()), t(e);
                         }),
                         (this._handleEnrollCoupon = () => {
                             const { analytics: e, coupons: t, enrollCoupon: n, fundingInstrument: o } = this.props,
@@ -126,75 +126,75 @@
                                 i = r && e?.eligible_coupon?.credit_amount ? e.eligible_coupon.credit_amount : e?.pending_coupon?.credit_amount,
                                 c = r && e?.eligible_coupon?.spend_amount ? e?.eligible_coupon?.spend_amount : e?.pending_coupon?.spend_amount,
                                 s = r ? "eligibleCoupon" : "pendingCoupon";
-                            return { showCouponCallout: r || a, couponCalloutText: (0, k.sV)({ calloutType: s, couponAmount: i || 0, spendAmount: c || 0, currency: t, lang: n }) };
+                            return { showCouponCallout: r || a, couponCalloutText: (0, P.sV)({ calloutType: s, couponAmount: i || 0, spendAmount: c || 0, currency: t, lang: n }) };
                         });
                 }
                 componentDidMount() {
                     const { analytics: e, clearPersistedRedirectBackState: t, fundingInstrument: n } = this.props;
                     t();
                     const o = !!n;
-                    (0, T.hq)(e)(T.Ur.reviewPageLoad({ hasFundingInstrument: o })), this._handleEnrollCoupon();
+                    (0, k.hq)(e)(k.Ur.reviewPageLoad({ hasFundingInstrument: o })), this._handleEnrollCoupon();
                 }
                 render() {
-                    const { adsAccount: e, ageBucket: t, country: n, coupons: d, currency: g, dailyBudget: y, durationDays: b, fundingInstrument: Z, gender: w, keywords: x, lang: v, match: L, objective: A, promoteStatus: I, selectedPaymentMethod: q, targetedLocations: D } = this.props,
+                    const { adsAccount: e, ageBucket: t, country: n, coupons: d, currency: g, dailyBudget: y, durationDays: b, fundingInstrument: w, gender: Z, keywords: I, lang: x, match: A, objective: v, promoteStatus: L, selectedPaymentMethod: q, targetedLocations: D } = this.props,
                         B = e?.needs_vat,
                         M = e?.isCanWriteBilling ?? !0,
-                        F = (0, k.n9)(C.gT[t]),
-                        N = (0, k.WF)(A),
-                        z = x.length ? (0, k.R9)({ locations: D.map(({ localized_name: e }) => e), formattedAge: F, gender: (0, k.nW)(w), keywords: x }) : (0, k.HB)({ locations: D.map(({ localized_name: e }) => e), formattedAge: F, gender: (0, k.nW)(w) }),
-                        { couponErrorMessage: U, couponType: O, existingCouponBalance: R, hasCouponCredit: K, isEligibleForCoupon: G, showCouponTerms: ne } = this._getCouponVariables({ coupons: d, currency: g, lang: v }),
-                        oe = (0, k.Wl)({ dailyBudgetNum: y, durationDays: b, lang: v, currency: g }),
-                        re = K ? "" : (0, k.Sy)({ amount: y * b, lang: v, currency: g }),
-                        { quickPromotePlatform: ae, screenName: ie, statusId: ce } = L.params,
+                        R = (0, P.n9)(C.gT[t]),
+                        F = (0, P.WF)(v),
+                        N = I.length ? (0, P.R9)({ locations: D.map(({ localized_name: e }) => e), formattedAge: R, gender: (0, P.nW)(Z), keywords: I }) : (0, P.HB)({ locations: D.map(({ localized_name: e }) => e), formattedAge: R, gender: (0, P.nW)(Z) }),
+                        { couponErrorMessage: z, couponType: U, existingCouponBalance: O, hasCouponCredit: K, isEligibleForCoupon: G, showCouponTerms: ne } = this._getCouponVariables({ coupons: d, currency: g, lang: x }),
+                        oe = (0, P.Wl)({ dailyBudgetNum: y, durationDays: b, lang: x, currency: g }),
+                        re = K ? "" : (0, P.Sy)({ amount: y * b, lang: x, currency: g }),
+                        { quickPromotePlatform: ae, screenName: ie, statusId: ce } = A.params,
                         se = this._getPromoteErrorMessage(),
-                        le = !!Z,
-                        { couponCalloutText: ue, showCouponCallout: de } = this._getCouponCalloutVariables({ coupons: d, currency: g, lang: v });
+                        le = !!w,
+                        { couponCalloutText: ue, showCouponCallout: de } = this._getCouponCalloutVariables({ coupons: d, currency: g, lang: x });
                     return o.createElement(
                         o.Fragment,
                         null,
-                        o.createElement(_.O, { screenType: T.MN.Review }),
+                        o.createElement(_.O, { screenType: k.MN.Review }),
                         o.createElement(
                             r.Z,
-                            { style: me.qpContainer, testID: S.Z.reviewScreen },
+                            { style: me.qpContainer, testID: T.Z.reviewScreen },
                             o.createElement(
-                                P.ZP,
+                                S.ZP,
                                 null,
                                 se && o.createElement(r.Z, { style: me.gutter }, o.createElement(a.Z, { text: se, type: "danger" })),
-                                U && o.createElement(r.Z, { style: me.gutter }, o.createElement(a.Z, { text: U, type: "warning" })),
+                                z && o.createElement(r.Z, { style: me.gutter }, o.createElement(a.Z, { text: z, type: "warning" })),
                                 o.createElement(h.Y, { title: H }),
-                                !this.context.featureSwitches.isTrue("responsive_web_qp_skip_objective_enabled") && o.createElement(p.t, { description: N, descriptionTestID: S.Z.reviewObjectiveDescription, label: W, withBottomBorder: !1 }),
-                                o.createElement(p.t, { description: z, descriptionTestID: S.Z.reviewTargetingDescription, label: Q, withBottomBorder: !1 }),
-                                o.createElement(i.RD.Consumer, null, ({ direction: e }) => o.createElement(p.t, { children: de && o.createElement(a.Z, { style: me.couponCallout, text: ue }), description: oe, descriptionDir: e, descriptionTestID: S.Z.reviewBudgetAndDurationDescription, label: j, withBottomBorder: !1 })),
+                                !this.context.featureSwitches.isTrue("responsive_web_qp_skip_objective_enabled") && o.createElement(p.t, { description: F, descriptionTestID: T.Z.reviewObjectiveDescription, label: Q, withBottomBorder: !1 }),
+                                o.createElement(p.t, { description: N, descriptionTestID: T.Z.reviewTargetingDescription, label: W, withBottomBorder: !1 }),
+                                o.createElement(i.RD.Consumer, null, ({ direction: e }) => o.createElement(p.t, { children: de && o.createElement(a.Z, { style: me.couponCallout, text: ue }), description: oe, descriptionDir: e, descriptionTestID: T.Z.reviewBudgetAndDurationDescription, label: j, withBottomBorder: !1 })),
                             ),
-                            (0, P.FR)((e) => o.createElement(c.Z, { description: M && "CREDIT_CARD" === Z?.type && q && !B ? o.createElement(f.XL, { id: q.id, imgSrcUrl: q.imgSrcUrl, lastFourDigits: q.lastFourDigits, paymentDescriptionStyle: me.paymentDescription, status: q.cardStatus }) : Z && !B ? Z.description : o.createElement(s.ZP, { color: "primary", size: "subtext2" }, this._getPaymentDescription(le, G)), label: o.createElement(s.ZP, { weight: "bold" }, V), link: M ? (!Z || B ? (0, T.WS)(ie, ce, ae, T.MN.Payment) : "CREDIT_CARD" === Z?.type ? (0, T.WS)(ie, ce, ae, T.MN.PaymentSelect) : void 0) : void 0, paddingHorizontal: e, testID: S.Z.reviewPaymentPivot })),
+                            (0, S.FR)((e) => o.createElement(c.Z, { description: M && "CREDIT_CARD" === w?.type && q && !B ? o.createElement(f.XL, { id: q.id, imgSrcUrl: q.imgSrcUrl, lastFourDigits: q.lastFourDigits, paymentDescriptionStyle: me.paymentDescription, status: q.cardStatus }) : w && !B ? w.description : o.createElement(s.ZP, { color: "primary", size: "subtext2" }, this._getPaymentDescription(le, G)), label: o.createElement(s.ZP, { weight: "bold" }, V), link: M ? (!w || B ? (0, k.WS)(ie, ce, ae, k.MN.Payment) : "CREDIT_CARD" === w?.type ? (0, k.WS)(ie, ce, ae, k.MN.PaymentSelect) : void 0) : void 0, paddingHorizontal: e, testID: T.Z.reviewPaymentPivot })),
                         ),
                         o.createElement(
                             r.Z,
                             { style: me.bottomElements },
                             o.createElement(
-                                P.ZP,
+                                S.ZP,
                                 null,
                                 o.createElement(
                                     p.t,
-                                    { description: re, descriptionTestID: S.Z.reviewPromotionTotalDescription, label: $, withBottomBorder: !1 },
+                                    { description: re, descriptionTestID: T.Z.reviewPromotionTotalDescription, label: $, withBottomBorder: !1 },
                                     K
                                         ? (function ({ balance: e, currency: t, lang: n, subtotal: a }) {
-                                              const i = (0, k.Sy)({ amount: a, currency: t, lang: n }),
-                                                  c = (0, k.Sy)({ amount: Math.min(a, e), currency: t, lang: n }),
-                                                  l = (0, k.Sy)({ amount: Math.max(0, a - e), currency: t, lang: n }),
-                                                  u = e > a ? (0, k.Sy)({ amount: e - a, currency: t, lang: n }) : null;
-                                              return o.createElement(o.Fragment, null, o.createElement(r.Z, { style: me.promotionTotalRow }, o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, Y), o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, i)), o.createElement(r.Z, { style: me.promotionTotalRow }, o.createElement(s.ZP, { color: "blue500", size: "subtext2" }, J), o.createElement(s.ZP, { color: "blue500", size: "subtext2" }, "-", c)), o.createElement(r.Z, { style: me.promotionTotalRow }, o.createElement(s.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, X), o.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: S.Z.reviewPromotionTotalDescription, weight: "bold" }, l)), u && o.createElement(r.Z, { style: me.promotionTotalRow }, o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, ee), o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, u)));
-                                          })({ subtotal: y * b, balance: R?.total_amount || 0, currency: g, lang: v })
+                                              const i = (0, P.Sy)({ amount: a, currency: t, lang: n }),
+                                                  c = (0, P.Sy)({ amount: Math.min(a, e), currency: t, lang: n }),
+                                                  l = (0, P.Sy)({ amount: Math.max(0, a - e), currency: t, lang: n }),
+                                                  u = e > a ? (0, P.Sy)({ amount: e - a, currency: t, lang: n }) : null;
+                                              return o.createElement(o.Fragment, null, o.createElement(r.Z, { style: me.promotionTotalRow }, o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, Y), o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, i)), o.createElement(r.Z, { style: me.promotionTotalRow }, o.createElement(s.ZP, { color: "blue500", size: "subtext2" }, J), o.createElement(s.ZP, { color: "blue500", size: "subtext2" }, "-", c)), o.createElement(r.Z, { style: me.promotionTotalRow }, o.createElement(s.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, X), o.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: T.Z.reviewPromotionTotalDescription, weight: "bold" }, l)), u && o.createElement(r.Z, { style: me.promotionTotalRow }, o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, ee), o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, u)));
+                                          })({ subtotal: y * b, balance: O?.total_amount || 0, currency: g, lang: x })
                                         : null,
                                 ),
                                 o.createElement(
                                     l.Z,
                                     { align: "left", style: me.terms },
                                     (function (e, t, n, r) {
-                                        return n ? o.createElement(m().I18NFormatMessage, { $i18n: "fc2dfb3f" }, o.createElement(s.ZP, { link: (0, T.s0)(e) }, m().c1134966), o.createElement(s.ZP, { link: (0, T.bx)(t, r) }, m().he45cc43)) : o.createElement(m().I18NFormatMessage, { $i18n: "fcf4b2a5" }, o.createElement(s.ZP, { link: (0, T.s0)(e) }, m().c9439a82));
-                                    })(n, v, ne, O),
+                                        return n ? o.createElement(m().I18NFormatMessage, { $i18n: "fc2dfb3f" }, o.createElement(s.ZP, { link: (0, k.s0)(e) }, m().c1134966), o.createElement(s.ZP, { link: (0, k.bx)(t, r) }, m().he45cc43)) : o.createElement(m().I18NFormatMessage, { $i18n: "fcf4b2a5" }, o.createElement(s.ZP, { link: (0, k.s0)(e) }, m().c9439a82));
+                                    })(n, x, ne, U),
                                 ),
-                                o.createElement(u.ZP, { disabled: !Z || B || E.LK.includes(I), onPress: this._handlePromote, size: "xLarge", testID: S.Z.reviewButton, type: "primaryFilled" }, te),
+                                o.createElement(u.ZP, { disabled: !w || B || E.LK.includes(L), onPress: this._handlePromote, size: "xLarge", testID: T.Z.reviewButton, type: "primaryFilled" }, te),
                             ),
                         ),
                     );
@@ -226,59 +226,59 @@
                 b = n(315032),
                 _ = n(934878),
                 f = n(953884),
-                P = n(144528),
-                k = n(457637),
-                S = n(363895),
-                T = n(668214),
-                Z = n(852657),
-                w = n(390387);
-            const x = (e, t) => e.quickPromote.account.adsAccount?.isHousingAndUrbanDevelopmentLimitations ?? !1,
-                v = (e, t) => e.quickPromote.targeting.targetedLocations,
-                L = (e, t) => e.quickPromote.targeting.gender,
-                A = (e, t) => e.quickPromote.targeting.ageBucket,
-                I = (e, t) => e.quickPromote.targeting.keywords,
+                S = n(144528),
+                P = n(457637),
+                T = n(363895),
+                k = n(668214),
+                w = n(852657),
+                Z = n(390387);
+            const I = (e, t) => e.quickPromote.account.adsAccount?.isHousingAndUrbanDevelopmentLimitations ?? !1,
+                x = (e, t) => e.quickPromote.targeting.targetedLocations,
+                A = (e, t) => e.quickPromote.targeting.gender,
+                v = (e, t) => e.quickPromote.targeting.ageBucket,
+                L = (e, t) => e.quickPromote.targeting.keywords,
                 q = (e, t) => e.quickPromote.objective,
-                D = (0, T.Z)()
-                    .propsFromState(() => ({ lang: w.VT, isHousingAndUrbanDevelopmentLimitations: x, targetedLocations: v, selectedGender: L, selectedAgeBucket: A, selectedKeywords: I, objective: q }))
-                    .propsFromActions(() => ({ setTargetedAgeBucket: Z.l$ }))
-                    .withAnalytics(S.EP),
+                D = (0, k.Z)()
+                    .propsFromState(() => ({ lang: Z.VT, isHousingAndUrbanDevelopmentLimitations: I, targetedLocations: x, selectedGender: A, selectedAgeBucket: v, selectedKeywords: L, objective: q }))
+                    .propsFromActions(() => ({ setTargetedAgeBucket: w.l$ }))
+                    .withAnalytics(T.EP),
                 B = g().c672105a,
                 M = g().e1efbeae,
-                F = g().c6ff7c10,
-                N = g().b555fb46,
-                z = g().a8d0108e,
-                U = g().j2c03e12,
-                O = ["18", "21", "25", "35", "50"],
-                R = [void 0, void 0, "24", "34", "49", "54"],
+                R = g().c6ff7c10,
+                F = g().b555fb46,
+                N = g().a8d0108e,
+                z = g().j2c03e12,
+                U = ["18", "21", "25", "35", "50"],
+                O = [void 0, void 0, "24", "34", "49", "54"],
                 K = (0, m.Z)((0, p.Z)(b.gT), (e) => e.maxAge || "over"),
-                G = R.length;
+                G = O.length;
             function H(e, t) {
                 if (e && t) return b.E4[e]?.[t];
             }
-            class W extends o.PureComponent {
+            class Q extends o.PureComponent {
                 componentDidMount() {
                     const { analytics: e } = this.props;
-                    (0, S.hq)(e)(S.Ur.targetingPageLoad());
+                    (0, T.hq)(e)(T.Ur.targetingPageLoad());
                 }
                 render() {
                     const { isHousingAndUrbanDevelopmentLimitations: e, lang: t, match: n, objective: l, selectedAgeBucket: u, selectedGender: d, selectedKeywords: g, targetedLocations: m } = this.props,
                         { featureSwitches: p } = this.context,
                         C = p.isTrue("responsive_web_qp_keyword_targeting_enabled") && l === b.CH.WebsiteClicks,
-                        { quickPromotePlatform: T, screenName: Z, statusId: w } = n.params,
-                        x = (0, P.Un)({ numLocations: m.length }),
-                        { maxAge: v, minAge: L } = b.gT[u],
-                        A = Q(u),
-                        I = v || U;
+                        { quickPromotePlatform: k, screenName: w, statusId: Z } = n.params,
+                        I = (0, S.Un)({ numLocations: m.length }),
+                        { maxAge: x, minAge: A } = b.gT[u],
+                        v = W(u),
+                        L = x || z;
                     return o.createElement(
                         r.Z,
-                        { style: $.qpContainer, testID: k.Z.targetingScreen },
-                        o.createElement(_.O, { screenType: S.MN.Targeting }),
+                        { style: $.qpContainer, testID: P.Z.targetingScreen },
+                        o.createElement(_.O, { screenType: T.MN.Targeting }),
                         o.createElement(f.ZP, null, o.createElement(E.Y, { callout: e ? o.createElement(V, { lang: t }) : void 0, style: $.titleContainer, title: B })),
                         (0, f.FR)((t) => {
                             return o.createElement(
                                 r.Z,
                                 { style: $.targetingContainer },
-                                o.createElement(a.Z, { description: (0, i.Z)(m.map(({ localized_name: e }) => e)), label: o.createElement(c.ZP, { weight: "bold" }, x), link: (0, S.WS)(Z, w, T, S.MN.TargetingLocation), paddingHorizontal: t, testID: k.Z.targetingLocationPivot }),
+                                o.createElement(a.Z, { description: (0, i.Z)(m.map(({ localized_name: e }) => e)), label: o.createElement(c.ZP, { weight: "bold" }, I), link: (0, T.WS)(w, Z, k, T.MN.TargetingLocation), paddingHorizontal: t, testID: P.Z.targetingLocationPivot }),
                                 o.createElement(
                                     f.ZP,
                                     null,
@@ -287,75 +287,75 @@
                                         { label: M, withBottomBorder: !1, withDisabledText: e, withPaddingHorizontal: !1 },
                                         o.createElement(s.Z, {
                                             disabled: e,
-                                            endThumbAccessibilityLabel: N,
-                                            endThumbAccessibilityLabelValueText: `"${I}"`,
-                                            endThumbLabel: I,
+                                            endThumbAccessibilityLabel: F,
+                                            endThumbAccessibilityLabelValueText: `"${L}"`,
+                                            endThumbLabel: L,
                                             max: G,
                                             min: 0,
                                             onChange:
                                                 ((n = this.props),
                                                 ([e, t], o) => {
                                                     const { analytics: r, selectedAgeBucket: a, setTargetedAgeBucket: i } = n,
-                                                        c = Q(a);
+                                                        c = W(a);
                                                     if (!(0, h.Z)(c, [e, t]))
                                                         if (o) {
-                                                            const o = O[e];
+                                                            const o = U[e];
                                                             if (!o) return;
-                                                            const a = t === G ? "over" : R[t],
+                                                            const a = t === G ? "over" : O[t],
                                                                 c = H(o, a);
-                                                            if (c) (0, S.hq)(r)(S.Ur.setTargetingAgeBucket(c)), i(c);
+                                                            if (c) (0, T.hq)(r)(T.Ur.setTargetingAgeBucket(c)), i(c);
                                                             else {
                                                                 const e = Object.keys(b.E4[o])[0];
                                                                 j({ minAge: o, maxAge: e, props: n });
                                                             }
                                                         } else {
-                                                            const o = t === G ? "over" : R[t];
+                                                            const o = t === G ? "over" : O[t];
                                                             if (!o) return;
-                                                            const a = O[e],
+                                                            const a = U[e],
                                                                 c = H(a, o);
-                                                            if (c) (0, S.hq)(r)(S.Ur.setTargetingAgeBucket(c)), i(c);
+                                                            if (c) (0, T.hq)(r)(T.Ur.setTargetingAgeBucket(c)), i(c);
                                                             else {
                                                                 const { minAge: e } = K[o].slice(-1)[0];
                                                                 j({ minAge: e, maxAge: o, props: n });
                                                             }
                                                         }
                                                 }),
-                                            startThumbAccessibilityLabel: F,
-                                            startThumbAccessibilityLabelValueText: `"${L}"`,
-                                            startThumbLabel: L,
-                                            value: A,
+                                            startThumbAccessibilityLabel: R,
+                                            startThumbAccessibilityLabelValueText: `"${A}"`,
+                                            startThumbLabel: A,
+                                            value: v,
                                         }),
                                     ),
                                 ),
-                                o.createElement(a.Z, { description: (0, P.nW)(d), disabled: e, label: o.createElement(c.ZP, { weight: "bold" }, z), link: (0, S.WS)(Z, w, T, S.MN.TargetingGender), paddingHorizontal: t, testID: k.Z.targetingGenderPivot }),
-                                C && o.createElement(a.Z, { description: (0, i.Z)(g), label: o.createElement(c.ZP, { weight: "bold" }, "Keywords"), link: (0, S.WS)(Z, w, T, S.MN.TargetingKeywords), paddingHorizontal: t, testID: k.Z.targetingKeywordsPivot }),
+                                o.createElement(a.Z, { description: (0, S.nW)(d), disabled: e, label: o.createElement(c.ZP, { weight: "bold" }, N), link: (0, T.WS)(w, Z, k, T.MN.TargetingGender), paddingHorizontal: t, testID: P.Z.targetingGenderPivot }),
+                                C && o.createElement(a.Z, { description: (0, i.Z)(g), label: o.createElement(c.ZP, { weight: "bold" }, "Keywords"), link: (0, T.WS)(w, Z, k, T.MN.TargetingKeywords), paddingHorizontal: t, testID: P.Z.targetingKeywordsPivot }),
                             );
                             var n;
                         }),
                     );
                 }
             }
-            function Q(e) {
+            function W(e) {
                 const { maxAge: t, minAge: n } = b.gT[e];
-                return [O.indexOf(n), t ? R.indexOf(t) : G];
+                return [U.indexOf(n), t ? O.indexOf(t) : G];
             }
             function j({ maxAge: e, minAge: t, props: n }) {
                 const { analytics: o, setTargetedAgeBucket: r } = n,
                     a = b.E4[t][e || "over"];
                 if (!a) throw new Error(`Age bucket not found for minAge: "${t}", maxAge: "${e || "<empty>"}"`);
-                (0, S.hq)(o)(S.Ur.setTargetingAgeBucket(a)), r(a);
+                (0, T.hq)(o)(T.Ur.setTargetingAgeBucket(a)), r(a);
             }
             function V({ lang: e }) {
-                const t = (0, S.C0)(e),
+                const t = (0, T.C0)(e),
                     n = o.useMemo(() => ({ termsLink: o.createElement(c.ZP, { link: t }) }), [t]);
                 return o.createElement(l.Z, { text: o.createElement(g().I18NFormatMessage, { $i18n: "f54ad505" }, o.cloneElement(n.termsLink, null, g().d4e01892)) });
             }
-            W.contextType = C.rC;
+            Q.contextType = C.rC;
             const $ = u.default.create((e) => ({ qpContainer: { flex: 1, overflowY: "visible" }, titleContainer: { paddingBottom: e.spaces.space16 }, targetingContainer: { flexDirection: "column", gap: e.spaces.space16 } })),
-                Y = D(W);
+                Y = D(Q);
         },
         3918: (e, t, n) => {
-            n.d(t, { ZP: () => Z });
+            n.d(t, { ZP: () => w });
             var o = n(202784),
                 r = n(325686),
                 a = n(370006),
@@ -378,14 +378,14 @@
                     .propsFromState(() => ({ selectedGender: b, campaigns: _ }))
                     .propsFromActions(() => ({ setTargetedGender: C.A_ }))
                     .withAnalytics(y.EP),
-                P = [d.Y0.Any, d.Y0.Female, d.Y0.Male].map((e) => ({ label: (0, p.nW)(e), value: e, testID: h.Z.getTargetingGender(e) })),
-                k = u().df8d4fa0,
-                S = ({ children: e, onBack: t }) => {
+                S = [d.Y0.Any, d.Y0.Female, d.Y0.Male].map((e) => ({ label: (0, p.nW)(e), value: e, testID: h.Z.getTargetingGender(e) })),
+                P = u().df8d4fa0,
+                T = ({ children: e, onBack: t }) => {
                     const n = o.useMemo(() => o.createElement(a.Z, { onClick: t }), [t]);
-                    return o.createElement(r.Z, { style: T.qpContainer, testID: h.Z.targetingGenderScreen }, o.createElement(i.Z, { leftControl: n, style: T.appBar, title: k }), e);
+                    return o.createElement(r.Z, { style: k.qpContainer, testID: h.Z.targetingGenderScreen }, o.createElement(i.Z, { leftControl: n, style: k.appBar, title: P }), e);
                 },
-                T = s.default.create((e) => ({ qpContainer: { flex: 1 }, appBar: { borderBottomWidth: 1, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor, paddingStart: e.spaces.space8 }, selectionGroupContainer: { paddingTop: e.spaces.space16 } })),
-                Z = f(({ analytics: e, selectedGender: t, setTargetedGender: n, ...a }) => {
+                k = s.default.create((e) => ({ qpContainer: { flex: 1 }, appBar: { borderBottomWidth: 1, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor, paddingStart: e.spaces.space8 }, selectionGroupContainer: { paddingTop: e.spaces.space16 } })),
+                w = f(({ analytics: e, selectedGender: t, setTargetedGender: n, ...a }) => {
                     const i = o.useCallback(() => {
                             const { history: e, location: t, match: n } = a,
                                 { quickPromotePlatform: o, quickPromoteScreenName: r, screenName: i, statusId: c } = n.params;
@@ -397,11 +397,11 @@
                             },
                             [e, n, i],
                         );
-                    return (0, g.d)(y.MN.TargetingGender), o.createElement(S, { onBack: i }, o.createElement(m.ZP, null, o.createElement(r.Z, { style: T.selectionGroupContainer }, o.createElement(c.Z, { name: "gender", onChange: s, options: P, value: t }))));
+                    return (0, g.d)(y.MN.TargetingGender), o.createElement(T, { onBack: i }, o.createElement(m.ZP, null, o.createElement(r.Z, { style: k.selectionGroupContainer }, o.createElement(c.Z, { name: "gender", onChange: s, options: S, value: t }))));
                 });
         },
         963379: (e, t, n) => {
-            n.d(t, { Z: () => L });
+            n.d(t, { Z: () => A });
             var o = n(202784),
                 r = n(953884),
                 a = n(363895),
@@ -430,17 +430,17 @@
                 b = n(111677),
                 _ = n.n(b),
                 f = n(187669),
-                P = n(934878),
-                k = n(599190),
-                S = n(973014);
-            function T({ contextualKeywords: e, index: t, keyword: n, setTargetedContextualKeywords: r }) {
+                S = n(934878),
+                P = n(599190),
+                T = n(973014);
+            function k({ contextualKeywords: e, index: t, keyword: n, setTargetedContextualKeywords: r }) {
                 const a = o.useCallback(() => r(e.filter((e, n) => n !== t)), [e, t, r]),
-                    i = o.useMemo(() => ({ disabled: !1, mode: k.D.Remove, onSecondaryClick: a }), [a]);
-                return o.createElement(S.Z, { secondaryAction: i, style: Z.withMarginEnd, text: n });
+                    i = o.useMemo(() => ({ disabled: !1, mode: P.D.Remove, onSecondaryClick: a }), [a]);
+                return o.createElement(T.Z, { secondaryAction: i, style: w.withMarginEnd, text: n });
             }
-            const Z = p.default.create((e) => ({ withMarginEnd: { marginEnd: e.spaces.space8, marginBlockEnd: e.spaces.space8 } })),
-                w = _().fe26420a;
-            function x({ analytics: e, contextualKeywords: t, recommendedKeywords: n = [], setTargetedContextualKeywords: r }) {
+            const w = p.default.create((e) => ({ withMarginEnd: { marginEnd: e.spaces.space8, marginBlockEnd: e.spaces.space8 } })),
+                Z = _().fe26420a;
+            function I({ analytics: e, contextualKeywords: t, recommendedKeywords: n = [], setTargetedContextualKeywords: r }) {
                 const [i, c] = o.useState(""),
                     s = o.useCallback((e) => {
                         const t = e.target.value;
@@ -468,33 +468,33 @@
                     (0, f.q)(() => {
                         r(n);
                     }),
-                    (0, P.d)(a.MN.TargetingKeywords),
+                    (0, S.d)(a.MN.TargetingKeywords),
                     o.createElement(
                         o.Fragment,
                         null,
-                        o.createElement(d.Z, { style: v.selectionGroupContainer }, o.createElement(C.Z, { editable: t.length < 200, label: w, name: "keywords", onChange: s, onKeyDown: l, style: v.noSpacing, testID: h.Z.targetingKeywordsInput, value: i })),
+                        o.createElement(d.Z, { style: x.selectionGroupContainer }, o.createElement(C.Z, { editable: t.length < 200, label: Z, name: "keywords", onChange: s, onKeyDown: l, style: x.noSpacing, testID: h.Z.targetingKeywordsInput, value: i })),
                         o.createElement(
                             d.Z,
-                            { style: v.row },
-                            t.map((e, n) => o.createElement(T, { contextualKeywords: t, index: n, key: n, keyword: e, setTargetedContextualKeywords: r })),
+                            { style: x.row },
+                            t.map((e, n) => o.createElement(k, { contextualKeywords: t, index: n, key: n, keyword: e, setTargetedContextualKeywords: r })),
                         ),
                     )
                 );
             }
-            u(x);
-            const v = p.default.create((e) => ({ selectionGroupContainer: { paddingTop: e.spaces.space16 }, row: { alignContent: "flex-start", flexDirection: "row", flexWrap: "wrap", minHeight: "150px", overflowX: "auto" }, noSpacing: { paddingHorizontal: "0" } }));
-            const L = l(function (e) {
+            u(I);
+            const x = p.default.create((e) => ({ selectionGroupContainer: { paddingTop: e.spaces.space16 }, row: { alignContent: "flex-start", flexDirection: "row", flexWrap: "wrap", minHeight: "150px", overflowX: "auto" }, noSpacing: { paddingHorizontal: "0" } }));
+            const A = l(function (e) {
                 const { analytics: t, contextualKeywords: n, history: i, location: c, match: s, setTargetedContextualKeywords: l } = e,
                     u = o.useCallback(() => {
                         const { quickPromotePlatform: e, quickPromoteScreenName: t, screenName: n, statusId: o } = s.params;
                         (0, a.Mi)(i, c)(n, o, e, t);
                     }, [i, c, s.params]),
                     d = { analytics: t, contextualKeywords: n, setTargetedContextualKeywords: l };
-                return o.createElement(y, { onBack: u }, o.createElement(r.ZP, null, o.createElement(x, d)));
+                return o.createElement(y, { onBack: u }, o.createElement(r.ZP, null, o.createElement(I, d)));
             });
         },
         489601: (e, t, n) => {
-            n.d(t, { Z: () => j });
+            n.d(t, { Z: () => $ });
             var o = n(202784),
                 r = n(325686),
                 a = n(731708),
@@ -513,36 +513,38 @@
                 C = n(326399),
                 b = n(443781),
                 _ = n(163889),
-                f = n(934878),
+                f = n(312771),
+                S = n(934878),
                 P = n(953884),
-                k = n(144528),
-                S = n(457637),
-                T = n(363895),
+                T = n(144528),
+                k = n(457637),
+                w = n(363895),
                 Z = n(71620),
-                w = n(668214),
+                I = n(668214),
                 x = n(852657),
-                v = n(390387);
-            const L = (e, t) => {
-                    const n = q(e, t);
+                A = n(390387);
+            const v = (e, t) => {
+                    const n = D(e, t);
                     return e.ads.typeahead.targetingLocation[n];
                 },
-                A = (e, t) => {
-                    const n = q(e, t);
+                L = (e, t) => {
+                    const n = D(e, t);
                     return e.ads.typeahead.targetingCatalogSearch[n];
                 },
-                I = (e, t) => {
-                    const n = q(e, t);
+                q = (e, t) => {
+                    const n = D(e, t);
                     return e.ads.typeahead.targetingCatalogSearch[n]?.fetchStatus || e.ads.typeahead.targetingLocation[n]?.fetchStatus;
                 },
-                q = (e, t) => e.quickPromote.targeting.locationQuery,
-                D = (e, t) => e.quickPromote.targeting.targetedLocations,
-                B = (e, t) => e.quickPromote.account.campaigns,
-                M = (e, t) => e.quickPromote.account.adsAccount?.isHousingAndUrbanDevelopmentLimitations ?? !1,
-                F = (0, w.Z)()
-                    .propsFromState(() => ({ targetingLocationQuery: q, targetingLocations: L, targetingCatalogSearch: A, targetedLocations: D, fetchStatus: I, userCountry: v.GG, campaigns: B, isHousingAndUrbanDevelopmentLimitations: M }))
+                D = (e, t) => e.quickPromote.targeting.locationQuery,
+                B = (e, t) => e.quickPromote.targeting.targetedLocations,
+                M = (e, t) => e.quickPromote.account.campaigns,
+                R = (e, t) => e.quickPromote.account.adsAccount?.isHousingAndUrbanDevelopmentLimitations ?? !1,
+                F = (e, t) => e.quickPromote.account.adsAccount,
+                N = (0, I.Z)()
+                    .propsFromState(() => ({ targetingLocationQuery: D, targetingLocations: v, targetingCatalogSearch: L, targetedLocations: B, fetchStatus: q, userCountry: A.GG, campaigns: M, isHousingAndUrbanDevelopmentLimitations: R, adsAccount: F }))
                     .propsFromActions(() => ({ setTargetedLocations: x.hI, setAndFetchTargetingLocationQuery: x.sN, setAndFetchTargetingCatalogSearch: x.WD, setTargetingLocationQuery: x.zu, createLocalApiErrorHandler: (0, Z.zr)("QUICK_PROMOTE_TARGETING_LOCATION_SCREEN") }))
-                    .withAnalytics(T.EP),
-                N = (e) => {
+                    .withAnalytics(w.EP),
+                z = (e) => {
                     if (!e || "object" != typeof e) return { localized_name: "", country_code: "US", parent_ids: [], location_type: "CITIES", targeting_value: "", targeting_type: "LOCATION" };
                     let t = "CITIES";
                     const n = e.rich_label || "";
@@ -559,19 +561,21 @@
                     }
                     return { localized_name: r, country_code: o, parent_ids: [], location_type: t, targeting_value: e.api_targeting_value || "", targeting_type: "LOCATION" };
                 },
-                z = h().cc642518,
-                U = h().i0e8c3c6,
-                O = h().deaf5b16,
-                R = h().f69ad048,
-                K = Object.freeze({ COUNTRIES: 0, REGIONS: 1, METROS: 2, CITIES: 3, POSTAL_CODES: 4 }),
-                G = Object.freeze({ [T.cU.CurrentCountryMatch]: 0, [T.cU.Match]: 1, [T.cU.NoMatch]: 2 });
-            class H extends o.PureComponent {
+                U = h().cc642518,
+                O = h().i0e8c3c6,
+                K = h().deaf5b16,
+                G = h().f69ad048,
+                H = Object.freeze({ COUNTRIES: 0, REGIONS: 1, METROS: 2, CITIES: 3, POSTAL_CODES: 4 }),
+                Q = Object.freeze({ [w.cU.CurrentCountryMatch]: 0, [w.cU.Match]: 1, [w.cU.NoMatch]: 2 });
+            class W extends o.PureComponent {
                 constructor(...e) {
                     super(...e),
-                        (this.state = { errorMessage: null }),
+                        (this.state = { errorMessage: null, retryState: null, currentRetryId: null }),
                         (this._renderSearch = () => {
-                            const { fetchStatus: e, targetingLocationQuery: t } = this.props;
-                            return o.createElement(W, { onBack: this._handleGoBack, onChange: this._handleTargetingLocationChange, onClear: this._handleClear, targetingLocationQuery: t }, o.createElement(r.Z, { style: Q.border }, o.createElement(P.ZP, null, o.createElement(a.ZP, { style: Q.headingText, weight: "heavy" }, U))), o.createElement(i.Z, { fetchStatus: e, render: this._renderSearchList, retryMessage: O }));
+                            const { fetchStatus: e, targetingLocationQuery: t } = this.props,
+                                { retryState: n } = this.state;
+                            let c = e;
+                            return (n?.isRetrying || (n && e === f.iF.FAILED)) && (c = f.iF.LOADING), o.createElement(j, { onBack: this._handleGoBack, onChange: this._handleTargetingLocationChange, onClear: this._handleClear, targetingLocationQuery: t }, o.createElement(r.Z, { style: V.border }, o.createElement(P.ZP, null, o.createElement(a.ZP, { style: V.headingText, weight: "heavy" }, O))), o.createElement(i.Z, { fetchStatus: c, render: this._renderSearchList, retryMessage: K }));
                         }),
                         (this._handleClear = () => {
                             const { setTargetingLocationQuery: e } = this.props;
@@ -583,11 +587,11 @@
                                 n = this._getTargetingLocationOptions();
                             return o.createElement(
                                 r.Z,
-                                { style: Q.overflow },
+                                { style: V.overflow },
                                 o.createElement(
                                     P.ZP,
                                     null,
-                                    n.map(({ localized_name: e, location_type: n, targeting_value: r }) => o.createElement(c.Z, { checked: t.has(r), helpText: (0, k.sA)(n), key: r, label: e, name: r, onChange: this._handleSearchSelect, testID: S.Z.targetingLocationItem, withPaddingHorizontal: !1 })),
+                                    n.map(({ localized_name: e, location_type: n, targeting_value: r }) => o.createElement(c.Z, { checked: t.has(r), helpText: (0, T.sA)(n), key: r, label: e, name: r, onChange: this._handleSearchSelect, testID: k.Z.targetingLocationItem, withPaddingHorizontal: !1 })),
                                 ),
                             );
                         }),
@@ -597,7 +601,7 @@
                             let i = [];
                             if (a.isTrue("responsive_web_qp_new_location_search_enabled") && t?.result && Array.isArray(t.result) && t.result.length > 0)
                                 try {
-                                    i = t.result.map(N);
+                                    i = t.result.map(z);
                                 } catch (e) {
                                     if (!o?.result?.[0]?.locations) return [];
                                     i = o.result[0].locations;
@@ -606,12 +610,12 @@
                                 if (!o?.result?.[0]?.locations) return [];
                                 i = o.result[0].locations;
                             }
-                            const c = (0, T.Jy)(r || "US"),
+                            const c = (0, w.Jy)(r || "US"),
                                 s = (i || []).filter((t) => {
                                     const o = t?.country_code || "US",
                                         r = t?.localized_name || "";
                                     if (e && "POSTAL_CODES" === (t?.location_type || "CITIES")) return !1;
-                                    return c(r, o, n) !== T.cU.NoMatch;
+                                    return c(r, o, n) !== w.cU.NoMatch;
                                 });
                             if (!s || 0 === s.length) return [];
                             try {
@@ -624,7 +628,7 @@
                                                 o = e.localized_name || "";
                                             try {
                                                 const e = c(o, t, n);
-                                                return G[e] ?? 2;
+                                                return Q[e] ?? 2;
                                             } catch (e) {
                                                 return 999;
                                             }
@@ -632,13 +636,13 @@
                                         (e) => {
                                             if (!e) return 999;
                                             const t = e.location_type || "CITIES",
-                                                n = K[t];
+                                                n = H[t];
                                             return void 0 !== n
                                                 ? n
                                                 : (((e) => {
-                                                      (0, _.ZP)(`Quick Promote: Unknown location type: ${e}. Expected one of {${Object.keys(K).join(", ")}}`);
+                                                      (0, _.ZP)(`Quick Promote: Unknown location type: ${e}. Expected one of {${Object.keys(H).join(", ")}}`);
                                                   })(t),
-                                                  Object.keys(K).length);
+                                                  Object.keys(H).length);
                                         },
                                         (e) => (e && e.localized_name) || "zzz",
                                     ],
@@ -653,64 +657,89 @@
                             if (t) {
                                 this.setState({ errorMessage: null });
                                 const t = this._getTargetingLocationOptions().find(({ targeting_value: t }) => t === e);
-                                t ? ((0, T.hq)(n)(T.Ur.setTargetingLocation({ id: t.targeting_value, locationType: t.location_type, countryCode: t.country_code })), o([t]), this._handleGoBack()) : (0, _.ZP)(`Quick Promote: could not find "${e}" in list of targeting options`);
-                            } else (0, T.hq)(n)(T.Ur.targetingLocationInvalid()), this.setState({ errorMessage: R });
+                                t ? ((0, w.hq)(n)(w.Ur.setTargetingLocation({ id: t.targeting_value, locationType: t.location_type, countryCode: t.country_code })), o([t]), this._handleGoBack()) : (0, _.ZP)(`Quick Promote: could not find "${e}" in list of targeting options`);
+                            } else (0, w.hq)(n)(w.Ur.targetingLocationInvalid()), this.setState({ errorMessage: G });
                             r("");
                         }),
                         (this._renderSelected = () => {
                             const { targetedLocations: e, targetingLocationQuery: t } = this.props,
                                 { errorMessage: n } = this.state;
                             return o.createElement(
-                                W,
+                                j,
                                 { onBack: this._handleGoBack, onChange: this._handleTargetingLocationChange, onClear: this._handleClear, targetingLocationQuery: t },
-                                o.createElement(r.Z, null, n && o.createElement(P.ZP, null, o.createElement(r.Z, { style: Q.gutterVertical }, o.createElement(s.Z, { text: n, type: "danger" }))), o.createElement(r.Z, { style: Q.border }, o.createElement(P.ZP, null, o.createElement(a.ZP, { style: Q.headingText, weight: "heavy" }, (0, k.Un)({ numLocations: e.length }))))),
+                                o.createElement(r.Z, null, n && o.createElement(P.ZP, null, o.createElement(r.Z, { style: V.gutterVertical }, o.createElement(s.Z, { text: n, type: "danger" }))), o.createElement(r.Z, { style: V.border }, o.createElement(P.ZP, null, o.createElement(a.ZP, { style: V.headingText, weight: "heavy" }, (0, T.Un)({ numLocations: e.length }))))),
                                 o.createElement(
                                     P.ZP,
                                     null,
-                                    e.map(({ localized_name: e, location_type: t, targeting_value: n }) => o.createElement(c.Z, { checked: !0, helpText: (0, k.sA)(t), key: n, label: e, name: n, onChange: this._handleSearchSelect, testID: S.Z.targetingLocationItem, withPaddingHorizontal: !1 })),
+                                    e.map(({ localized_name: e, location_type: t, targeting_value: n }) => o.createElement(c.Z, { checked: !0, helpText: (0, T.sA)(t), key: n, label: e, name: n, onChange: this._handleSearchSelect, testID: k.Z.targetingLocationItem, withPaddingHorizontal: !1 })),
                                 ),
                             );
                         }),
                         (this._handleGoBack = () => {
                             const { history: e, location: t, match: n } = this.props,
                                 { quickPromotePlatform: o, quickPromoteScreenName: r, screenName: a, statusId: i } = n.params;
-                            (0, T.Mi)(e, t)(a, i, o, r);
+                            (0, w.Mi)(e, t)(a, i, o, r);
                         }),
                         (this._handleTargetingLocationChange = (e) => {
                             const t = e.target.value,
-                                { analytics: n, createLocalApiErrorHandler: o, setAndFetchTargetingCatalogSearch: r, setAndFetchTargetingLocationQuery: a } = this.props;
-                            (0, T.hq)(n)(T.Ur.targetingLocationSearch(t));
-                            const { featureSwitches: i } = this.context;
-                            i.isTrue("responsive_web_qp_new_location_search_enabled")
-                                ? r(t)
-                                      .catch((e) => ((0, T.hq)(n)(T.Ur.targetingLocationSearchGraphQLFail(e?.message || "GraphQL search failed")), a(t)))
-                                      .catch((e) => {
-                                          (0, T.hq)(n)(T.Ur.targetingLocationSearchRestFail(e?.message || "REST search failed")), o()(e);
-                                      })
-                                : a(t).catch((e) => {
-                                      (0, T.hq)(n)(T.Ur.targetingLocationSearchRestFail(e?.message || "REST search failed")), o()(e);
-                                  });
+                                { analytics: n, createLocalApiErrorHandler: o, setAndFetchTargetingCatalogSearch: r, setAndFetchTargetingLocationQuery: a } = this.props,
+                                { retryState: i } = this.state;
+                            i && i.originalQuery !== t && this.setState({ retryState: null, currentRetryId: null }), (0, w.hq)(n)(w.Ur.targetingLocationSearch(t));
+                            const { featureSwitches: c } = this.context;
+                            if (c.isTrue("responsive_web_qp_new_location_search_enabled")) {
+                                const e = (e) => e?.graphqlErrors?.some((e) => 29 === e?.code || "TimeoutError" === e?.name || e?.message?.includes("Timeout")) || e?.errors?.some((e) => 29 === e?.code || e?.message?.includes("Timeout")),
+                                    i = async (c = 1, s = null) => {
+                                        let l = s;
+                                        if ((l || ((l = `${t}_${Date.now()}_${Math.random()}`), this.setState({ retryState: { attempts: 1, isRetrying: !1, originalQuery: t, cancelled: !1 }, currentRetryId: l })), 1 === c));
+                                        else {
+                                            if (this.state.currentRetryId !== l) return;
+                                            if ((this.setState({ retryState: { attempts: c, isRetrying: !0, originalQuery: t, cancelled: !1 }, currentRetryId: l }), await new Promise((e) => setTimeout(e, 500)), this.state.currentRetryId !== l)) return;
+                                        }
+                                        try {
+                                            if ((await r(t), this.state.currentRetryId !== l)) return;
+                                            this.setState({ retryState: null, currentRetryId: null });
+                                        } catch (r) {
+                                            if (this.state.currentRetryId !== l) return;
+                                            if (e(r) && c < 11) {
+                                                if ((this.setState({ retryState: { attempts: c + 1, isRetrying: !0, originalQuery: t, cancelled: !1 }, currentRetryId: l }), await new Promise((e) => setTimeout(e, 500)), this.state.currentRetryId !== l)) return;
+                                                return i(c + 1, l);
+                                            }
+                                            this.setState({ retryState: null, currentRetryId: null });
+                                            try {
+                                                await a(t);
+                                            } catch (e) {
+                                                (0, w.hq)(n)(w.Ur.targetingLocationSearchRestFail(`REST fallback failed after GraphQL retries: ${e?.message || "REST search failed"}`)), o()(e);
+                                            }
+                                        }
+                                    };
+                                i().catch((e) => {
+                                    this.setState({ retryState: null }), o()(e);
+                                });
+                            } else
+                                a(t).catch((e) => {
+                                    (0, w.hq)(n)(w.Ur.targetingLocationSearchRestFail(e?.message || "REST search failed")), o()(e);
+                                });
                         });
                 }
                 componentDidMount() {
                     const { analytics: e } = this.props;
-                    (0, T.hq)(e)(T.Ur.targetingLocationPageLoad());
+                    (0, w.hq)(e)(w.Ur.targetingLocationPageLoad());
                 }
                 componentWillUnmount() {
-                    this._handleClear();
+                    this._handleClear(), this.setState({ retryState: null, currentRetryId: null });
                 }
                 render() {
                     const { targetingLocationQuery: e } = this.props;
-                    return o.createElement(o.Fragment, null, o.createElement(f.O, { screenType: T.MN.TargetingLocation }), e ? this._renderSearch() : this._renderSelected());
+                    return o.createElement(o.Fragment, null, o.createElement(S.O, { screenType: w.MN.TargetingLocation }), e ? this._renderSearch() : this._renderSelected());
                 }
             }
-            H.contextType = b.rC;
-            const W = ({ children: e, onBack: t, onChange: n, onClear: a, targetingLocationQuery: i }) => {
+            W.contextType = b.rC;
+            const j = ({ children: e, onBack: t, onChange: n, onClear: a, targetingLocationQuery: i }) => {
                     const c = (0, l.Zz)();
-                    return o.createElement(r.Z, { style: Q.qpContainer, testID: S.Z.targetingLocationScreen }, o.createElement(u.Z, { leftControl: o.createElement(d.Z, { onClick: t }), middleControl: o.createElement(r.Z, { style: c ? Q.mobileInputContainer : Q.inputContainer }, o.createElement(g.Z, { Icon: y.default, autoFocus: !0, name: "locationTargetingInput", onChange: n, onClear: a, placeholder: z, style: Q.input, testID: S.Z.targetingLocationSearch, value: i, withClearButton: !0 })) }), e);
+                    return o.createElement(r.Z, { style: V.qpContainer, testID: k.Z.targetingLocationScreen }, o.createElement(u.Z, { leftControl: o.createElement(d.Z, { onClick: t }), middleControl: o.createElement(r.Z, { style: c ? V.mobileInputContainer : V.inputContainer }, o.createElement(g.Z, { Icon: y.default, autoFocus: !0, name: "locationTargetingInput", onChange: n, onClear: a, placeholder: U, style: V.input, testID: k.Z.targetingLocationSearch, value: i, withClearButton: !0 })) }), e);
                 },
-                Q = m.default.create((e) => ({ qpContainer: { flex: 1 }, inputContainer: { paddingStart: e.spaces.space8, paddingEnd: e.spaces.space64 }, mobileInputContainer: { paddingEnd: e.spaces.space16 }, input: { marginVertical: e.spaces.space12 }, border: { borderBottomWidth: 1, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor, borderTopWidth: 1, borderTopStyle: "solid", borderTopColor: e.colors.borderColor }, headingText: { fontSize: e.fontSizes.headline1, paddingVertical: e.componentDimensions.gutterVertical }, gutterVertical: { paddingVertical: e.componentDimensions.gutterVertical }, overflow: { flexGrow: 1, flexShrink: 1, flexBasis: "200px", overflowY: "auto" } })),
-                j = F(H);
+                V = m.default.create((e) => ({ qpContainer: { flex: 1 }, inputContainer: { paddingStart: e.spaces.space8, paddingEnd: e.spaces.space64 }, mobileInputContainer: { paddingEnd: e.spaces.space16 }, input: { marginVertical: e.spaces.space12 }, border: { borderBottomWidth: 1, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor, borderTopWidth: 1, borderTopStyle: "solid", borderTopColor: e.colors.borderColor }, headingText: { fontSize: e.fontSizes.headline1, paddingVertical: e.componentDimensions.gutterVertical }, gutterVertical: { paddingVertical: e.componentDimensions.gutterVertical }, overflow: { flexGrow: 1, flexShrink: 1, flexBasis: "200px", overflowY: "auto" } })),
+                $ = N(W);
         },
         764940: (e, t, n) => {
             n.d(t, { Z: () => h });
@@ -750,4 +779,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-9c7eb7fe.a8cc801a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-9c7eb7fe.7902260a.js.map

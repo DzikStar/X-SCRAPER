@@ -28,14 +28,14 @@
                 Z = n(203421),
                 k = n(200904),
                 _ = n(192731),
-                S = n(202205),
-                v = n(668214),
+                v = n(202205),
+                S = n(668214),
                 D = n(852657);
             const x = (e) => e.quickPromote.paymentMethods,
-                I = (0, v.Z)()
+                I = (0, S.Z)()
                     .propsFromState(() => ({ paymentMethods: x, selectedPaymentMethod: D.DY }))
                     .propsFromActions(() => ({ setSelectedPaymentMethod: D.$L, deletePaymentMethod: D.gp }))
-                    .withAnalytics(S.EP),
+                    .withAnalytics(v.EP),
                 q = P().de43b660,
                 T = P().hb4773a0,
                 A = P().aa2a3dd4,
@@ -81,10 +81,10 @@
                         selectedPaymentMethod: g,
                         setSelectedPaymentMethod: h,
                     } = e;
-                    (0, Z.d)(S.MN.PaymentSelect);
+                    (0, Z.d)(v.MN.PaymentSelect);
                     const y = g ? g.id : "",
                         [E, P] = r.useState(!1),
-                        [f, v] = r.useState(null),
+                        [f, S] = r.useState(null),
                         D = (e, n) => {
                             if ((0, C.Z)(p)) return;
                             const r = p.find((e) => e.id === n) || null;
@@ -92,16 +92,16 @@
                                 (P(!0),
                                 h(n)
                                     .catch((e) => {
-                                        (0, S.hq)(t)(S.Ur.paymentMethodChanged(e));
+                                        (0, v.hq)(t)(v.Ur.paymentMethodChanged(e));
                                     })
                                     .finally(() => {
                                         P(!1);
                                     }),
-                                (0, S.hq)(t)(S.Ur.paymentMethodChanged()));
+                                (0, v.hq)(t)(v.Ur.paymentMethodChanged()));
                         };
                     return (
                         r.useEffect(() => {
-                            (0, S.hq)(t)(S.Ur.paymentSelectPageLoad());
+                            (0, v.hq)(t)(v.Ur.paymentSelectPageLoad());
                         }, [t]),
                         r.createElement(
                             r.Fragment,
@@ -111,23 +111,23 @@
                                 { style: O.qpContainer, testID: _.Z.paymentMethodSelect },
                                 E ? r.createElement(a.Z, { indeterminate: !0 }) : null,
                                 r.createElement(k.ZP, null, r.createElement(w.Y, { title: q })),
-                                (0, k.$_)((e) => r.createElement(s.Z, { disabled: E, name: q, onChange: D, options: F(p, y, (e) => v(e), e), value: y })),
-                                (0, k.$_)((e) => r.createElement(o.Z, { style: O.addPaymentMethodContainer }, r.createElement(c.Z, { disabled: E, interactive: E, interactiveStyles: L, onPress: () => l.push(`${(0, S.WS)(u, m, d, S.MN.Payment)}?isAddingPayment=true`), style: [O.addPaymentMethodInteractiveContainer, e] }, r.createElement(b.default, { style: O.plusIcon }), r.createElement(i.ZP, { align: "left", color: "primary" }, T)))),
+                                (0, k.$_)((e) => r.createElement(s.Z, { disabled: E, name: q, onChange: D, options: F(p, y, (e) => S(e), e), value: y })),
+                                (0, k.$_)((e) => r.createElement(o.Z, { style: O.addPaymentMethodContainer }, r.createElement(c.Z, { disabled: E, interactive: E, interactiveStyles: L, onPress: () => l.push(`${(0, v.WS)(u, m, d, v.MN.Payment)}?isAddingPayment=true`), style: [O.addPaymentMethodInteractiveContainer, e] }, r.createElement(b.default, { style: O.plusIcon }), r.createElement(i.ZP, { align: "left", color: "primary" }, T)))),
                                 f &&
                                     r.createElement(H, {
-                                        cancelDeletePaymentMethodHandler: () => v(null),
+                                        cancelDeletePaymentMethodHandler: () => S(null),
                                         confirmDeletePaymentMethodHandler: () => {
                                             f &&
-                                                (v(null),
+                                                (S(null),
                                                 P(!0),
                                                 n(f)
                                                     .catch((e) => {
-                                                        (0, S.hq)(t)(S.Ur.paymentMethodDeleted(e));
+                                                        (0, v.hq)(t)(v.Ur.paymentMethodDeleted(e));
                                                     })
                                                     .finally(() => {
                                                         P(!1);
                                                     }),
-                                                (0, S.hq)(t)(S.Ur.paymentMethodDeleted()));
+                                                (0, v.hq)(t)(v.Ur.paymentMethodDeleted()));
                                         },
                                     }),
                             ),
@@ -194,10 +194,10 @@
             function _({ contextualKeywords: e, index: t, keyword: n, setTargetedContextualKeywords: o }) {
                 const a = r.useCallback(() => o(e.filter((e, n) => n !== t)), [e, t, o]),
                     s = r.useMemo(() => ({ disabled: !1, mode: Z.D.Remove, onSecondaryClick: a }), [a]);
-                return r.createElement(k.Z, { secondaryAction: s, style: S.withMarginEnd, text: n });
+                return r.createElement(k.Z, { secondaryAction: s, style: v.withMarginEnd, text: n });
             }
-            const S = g.default.create((e) => ({ withMarginEnd: { marginEnd: e.spaces.space8, marginBlockEnd: e.spaces.space8 } })),
-                v = f().fe26420a;
+            const v = g.default.create((e) => ({ withMarginEnd: { marginEnd: e.spaces.space8, marginBlockEnd: e.spaces.space8 } })),
+                S = f().fe26420a;
             function D({ analytics: e, contextualKeywords: t, recommendedKeywords: n = [], setTargetedContextualKeywords: o }) {
                 const [s, c] = r.useState(""),
                     i = r.useCallback((e) => {
@@ -230,7 +230,7 @@
                     r.createElement(
                         r.Fragment,
                         null,
-                        r.createElement(u.Z, { style: I.selectionGroupContainer }, r.createElement(P.Z, { editable: t.length < 200, label: v, name: "keywords", onChange: i, onKeyDown: l, style: I.noSpacing, testID: h.Z.targetingKeywordsInput, value: s })),
+                        r.createElement(u.Z, { style: I.selectionGroupContainer }, r.createElement(P.Z, { editable: t.length < 200, label: S, name: "keywords", onChange: i, onKeyDown: l, style: I.noSpacing, testID: h.Z.targetingKeywordsInput, value: s })),
                         r.createElement(
                             u.Z,
                             { style: I.row },
@@ -251,7 +251,7 @@
                 return r.createElement(y, { onBack: d }, r.createElement(o.ZP, null, r.createElement(D, u)));
             });
         },
-        751587: (e, t, n) => {
+        929175: (e, t, n) => {
             n.r(t), n.d(t, { QuickPromoteScreen: () => Pn, default: () => fn });
             n(571372);
             var r = n(202784),
@@ -277,8 +277,8 @@
                 Z = n(364753),
                 k = n(649038),
                 _ = n(71620),
-                S = n(668214),
-                v = n(852657),
+                v = n(668214),
+                S = n(852657),
                 D = n(836255),
                 x = n(202205);
             const I = (e, t) => t.match.params.statusId,
@@ -287,26 +287,26 @@
                 A = (e, t) => e.quickPromote.promoteStatus,
                 M = (e, t) => e.quickPromote.promoteErrorCode,
                 B = (e, t) => e.quickPromote.account.campaigns,
-                N = (0, S.Z)()
+                N = (0, v.Z)()
                     .propsFromState(() => ({ statusId: I, fetchStatus: T, tweet: q, campaigns: B, promoteFetchStatus: A, promoteErrorCode: M }))
                     .propsFromActions((e) => ({
-                        clearPersistedRedirectBackState: () => (0, v.oE)(),
+                        clearPersistedRedirectBackState: () => (0, S.oE)(),
                         createLocalApiErrorHandler: (0, _.zr)("QUICK_PROMOTE_SCREEN"),
                         fetchTweetIfNeeded: D.Z.fetchOneIfNeeded,
-                        fetchCurrentTargetingLocationIfNeeded: v.yW,
-                        fetchAvailableBudgetsIfNeeded: v.WS,
-                        fetchAdsAccountDataIfNeeded: v.Ek,
-                        fetchQuickPromoteEligibilityIfNeeded: v.E6,
-                        fetchCouponsIfNeeded: v.fN,
+                        fetchCurrentTargetingLocationIfNeeded: S.yW,
+                        fetchAvailableBudgetsIfNeeded: S.WS,
+                        fetchAdsAccountDataIfNeeded: S.Ek,
+                        fetchQuickPromoteEligibilityIfNeeded: S.E6,
+                        fetchCouponsIfNeeded: S.fN,
                         handleFirstLoad: () =>
                             ((e) => {
                                 const { analytics: t, history: n, location: r, match: o } = e,
                                     { quickPromotePlatform: a, quickPromoteScreenName: s, screenName: c, statusId: i } = o.params,
                                     l = { pa_signup_complete: r.query.pa_signup_complete || "" };
-                                return (0, v.Jk)(c, i, a, s, n, l, t);
+                                return (0, S.Jk)(c, i, a, s, n, l, t);
                             })(e),
-                        setObjective: v.mS,
-                        setPromoteFetchStatus: v.Ik,
+                        setObjective: S.mS,
+                        setPromoteFetchStatus: S.Ik,
                     }))
                     .withAnalytics(x.EP);
             var F = n(581505),
@@ -321,30 +321,27 @@
                 K = n(192731);
             const G = (e, t) => e.quickPromote.objective,
                 $ = (e, t) => D.Z.selectHydrated(e, ((e, t) => t.match.params.statusId)(0, t)),
-                V = (0, S.Z)()
+                V = (0, v.Z)()
                     .propsFromState(() => ({ selectedObjective: G, tweet: $ }))
-                    .propsFromActions(() => ({ setObjective: v.mS }))
+                    .propsFromActions(() => ({ setObjective: S.mS }))
                     .withAnalytics(x.EP);
-            var Y = n(992942);
-            const Q = n.p + "engagements_icon.14baf75a.png";
-            function X() {
-                return r.createElement(Y.Z, { "aria-label": "", source: Q, style: u.default.absoluteFill });
+            var Y = n(772750),
+                Q = n(992942);
+            const X = n.p + "website_clicks_icon.82f641fa.png";
+            function J() {
+                return r.createElement(Q.Z, { "aria-label": "", source: X, style: u.default.absoluteFill });
             }
-            const J = n.p + "website_clicks_icon.82f641fa.png";
-            function ee() {
-                return r.createElement(Y.Z, { "aria-label": "", source: J, style: u.default.absoluteFill });
-            }
-            const te = p().fcc839b6,
-                ne = (p().b679a538, p().cb19a2f0),
-                re = p().a2d37164,
-                oe = p().cefad302,
-                ae = p().b614fad0,
-                se = u.default.create((e) => ({ titleContainer: { paddingBottom: e.spaces.space28 }, qpContainer: { flex: 1, overflowY: "auto" } })),
-                [ce, ie] = [
-                    { label: (0, W.WF)(C.CH.Engagements), value: C.CH.Engagements, description: ne, illustration: r.createElement(X, null), testID: K.Z.getObjective(C.CH.Engagements) },
-                    { label: (0, W.WF)(C.CH.WebsiteClicks), value: C.CH.WebsiteClicks, description: re, illustration: r.createElement(ee, null), testID: K.Z.getObjective(C.CH.WebsiteClicks) },
+            const ee = p().fcc839b6,
+                te = (p().b679a538, p().cb19a2f0),
+                ne = p().a2d37164,
+                re = p().cefad302,
+                oe = p().b614fad0,
+                ae = u.default.create((e) => ({ titleContainer: { paddingBottom: e.spaces.space28 }, qpContainer: { flex: 1, overflowY: "auto" } })),
+                [se, ce] = [
+                    { label: (0, W.WF)(C.CH.Engagements), value: C.CH.Engagements, description: te, illustration: r.createElement(Y.i, null), testID: K.Z.getObjective(C.CH.Engagements) },
+                    { label: (0, W.WF)(C.CH.WebsiteClicks), value: C.CH.WebsiteClicks, description: ne, illustration: r.createElement(J, null), testID: K.Z.getObjective(C.CH.WebsiteClicks) },
                 ];
-            const le = V((e) => {
+            const ie = V((e) => {
                     const { analytics: t, selectedObjective: n, setObjective: a, tweet: c } = e,
                         i = c ? s.Z.getOriginalTweet(c) : c,
                         l = null != i?.entities?.media?.length && i?.entities?.media?.length > 0,
@@ -355,7 +352,7 @@
                     const u = r.useMemo(
                             () =>
                                 (function ({ selectedObjective: e, tweetContainsLinks: t, tweetHasMedia: n }) {
-                                    const o = [ce, { ...ie, disabled: !t, disabledInlineCallout: t ? void 0 : r.createElement(O.Z.Danger, { headline: ae, text: oe, withIcon: !0 }) }];
+                                    const o = [se, { ...ce, disabled: !t, disabledInlineCallout: t ? void 0 : r.createElement(O.Z.Danger, { headline: oe, text: re, withIcon: !0 }) }];
                                     return o;
                                 })({ tweetHasMedia: l, tweetContainsLinks: d, selectedObjective: n }),
                             [l, d, n],
@@ -366,15 +363,16 @@
                             },
                             [t, a],
                         );
-                    return r.createElement(o.Z, { style: se.qpContainer, testID: K.Z.objectiveScreen }, r.createElement(z.O, { screenType: x.MN.Objective }), r.createElement(j.ZP, null, r.createElement(U.Y, { style: se.titleContainer, title: te }), r.createElement(L.Z, { name: "objective-picker", onChange: m, options: u, value: n })));
+                    return r.createElement(o.Z, { style: ae.qpContainer, testID: K.Z.objectiveScreen }, r.createElement(z.O, { screenType: x.MN.Objective }), r.createElement(j.ZP, null, r.createElement(U.Y, { style: ae.titleContainer, title: ee }), r.createElement(L.Z, { name: "objective-picker", onChange: m, options: u, value: n })));
                 }),
-                de = le,
-                ue = n.p + "followers_icon.80e5851a.png";
+                le = ie;
+            var de = n(653970);
+            const ue = n.p + "followers_icon.80e5851a.png";
             function me(e) {
                 new Image().src = e;
             }
             function pe() {
-                return me(Q), me(ue), me(J), r.createElement(r.Fragment, null);
+                return me(de), me(ue), me(X), r.createElement(r.Fragment, null);
             }
             n(136728), n(543673), n(240753), n(128399);
             var ge = n(614983),
@@ -389,11 +387,11 @@
                 Ze = (e, t) => D.Z.selectFetchStatus(e, Ce(0, t)),
                 ke = (e, t) => e.quickPromote.account.adsAccount,
                 _e = (e, t) => e.quickPromote.account.selectedFundingInstrument,
-                Se = (0, S.Z)()
-                    .propsFromState(() => ({ fetchStatus: Ze, tweet: we, adsAccount: ke, fundingInstrument: _e, selectedPaymentMethod: v.DY }))
+                ve = (0, v.Z)()
+                    .propsFromState(() => ({ fetchStatus: Ze, tweet: we, adsAccount: ke, fundingInstrument: _e, selectedPaymentMethod: S.DY }))
                     .propsFromActions((e) => ({ createLocalApiErrorHandler: (0, _.zr)("QUICK_PROMOTE_PAYMENT_SCREEN"), fetchTweetIfNeeded: D.Z.fetchOneIfNeeded, scribeAction: be.n, savePlatformRedirectBackState: () => (0, fe.oE)(e.match.params.quickPromotePlatform), fetchAdsAccountDataIfNeeded: fe.Ek }))
                     .withAnalytics(x.EP);
-            class ve extends r.PureComponent {
+            class Se extends r.PureComponent {
                 componentDidMount() {
                     const { adsAccount: e, analytics: t, fundingInstrument: n, match: r, savePlatformRedirectBackState: o } = this.props,
                         { quickPromotePlatform: a, statusId: s } = r.params;
@@ -453,9 +451,9 @@
                 })(e, "isAddingPayment");
                 return !!t && "true" === t;
             }
-            ve.contextType = E.rC;
+            Se.contextType = E.rC;
             const xe = u.default.create((e) => ({ iframe: { flexGrow: 1, paddingTop: 0 } })),
-                Ie = Se(ve);
+                Ie = ve(Se);
             var qe = n(896449),
                 Te = n(834324),
                 Ae = n(224162),
@@ -483,11 +481,11 @@
                     (n) => {
                         const { quickPromotePlatform: r, screenName: o, statusId: a } = t.params,
                             s = (0, x.WS)(o, a, r, x.MN.Done);
-                        return (0, v.kb)({ history: e, statusId: a, nextPath: s, analytics: n });
+                        return (0, S.kb)({ history: e, statusId: a, nextPath: s, analytics: n });
                     },
-                et = (0, S.Z)()
-                    .propsFromState(() => ({ objective: He, targetedLocations: Le, ageBucket: Oe, gender: Ue, keywords: ze, dailyBudget: je, durationDays: We, lang: Re.VT, country: v.QE, currency: Ke, fundingInstrument: Ge, adsAccount: $e, promoteStatus: Ve, promoteErrorCode: Ye, coupons: Qe, enrollCouponErrorCode: Xe, selectedPaymentMethod: v.DY }))
-                    .propsFromActions((e) => ({ createLocalApiErrorHandler: (0, _.zr)("QUICK_PROMOTE_REVIEW_SCREEN"), clearPersistedRedirectBackState: () => (0, v.oE)(), createPromotion: Je(e), enrollCoupon: v.br }))
+                et = (0, v.Z)()
+                    .propsFromState(() => ({ objective: He, targetedLocations: Le, ageBucket: Oe, gender: Ue, keywords: ze, dailyBudget: je, durationDays: We, lang: Re.VT, country: S.QE, currency: Ke, fundingInstrument: Ge, adsAccount: $e, promoteStatus: Ve, promoteErrorCode: Ye, coupons: Qe, enrollCouponErrorCode: Xe, selectedPaymentMethod: S.DY }))
+                    .propsFromActions((e) => ({ createLocalApiErrorHandler: (0, _.zr)("QUICK_PROMOTE_REVIEW_SCREEN"), clearPersistedRedirectBackState: () => (0, S.oE)(), createPromotion: Je(e), enrollCoupon: S.br }))
                     .withAnalytics(x.EP),
                 tt = p().db443ae2,
                 nt = p().a96f811e,
@@ -576,7 +574,7 @@
                         Z = (0, W.n9)(C.gT[t]),
                         k = (0, W.WF)(y),
                         _ = m.length ? (0, W.R9)({ locations: b.map(({ localized_name: e }) => e), formattedAge: Z, gender: (0, W.nW)(u), keywords: m }) : (0, W.HB)({ locations: b.map(({ localized_name: e }) => e), formattedAge: Z, gender: (0, W.nW)(u) }),
-                        { couponErrorMessage: S, couponType: D, existingCouponBalance: I, hasCouponCredit: q, isEligibleForCoupon: T, showCouponTerms: A } = this._getCouponVariables({ coupons: a, currency: s, lang: g }),
+                        { couponErrorMessage: v, couponType: D, existingCouponBalance: I, hasCouponCredit: q, isEligibleForCoupon: T, showCouponTerms: A } = this._getCouponVariables({ coupons: a, currency: s, lang: g }),
                         M = (0, W.Wl)({ dailyBudgetNum: c, durationDays: i, lang: g, currency: s }),
                         B = q ? "" : (0, W.Sy)({ amount: c * i, lang: g, currency: s }),
                         { quickPromotePlatform: N, screenName: F, statusId: R } = h.params,
@@ -594,7 +592,7 @@
                                 j.ZP,
                                 null,
                                 H && r.createElement(o.Z, { style: Zt.gutter }, r.createElement(Te.Z, { text: H, type: "danger" })),
-                                S && r.createElement(o.Z, { style: Zt.gutter }, r.createElement(Te.Z, { text: S, type: "warning" })),
+                                v && r.createElement(o.Z, { style: Zt.gutter }, r.createElement(Te.Z, { text: v, type: "warning" })),
                                 r.createElement(U.Y, { title: tt }),
                                 r.createElement(Fe.t, { description: k, descriptionTestID: K.Z.reviewObjectiveDescription, label: nt, withBottomBorder: !1 }),
                                 r.createElement(Fe.t, { description: _, descriptionTestID: K.Z.reviewTargetingDescription, label: rt, withBottomBorder: !1 }),
@@ -628,7 +626,7 @@
                                         return n ? r.createElement(p().I18NFormatMessage, { $i18n: "fc2dfb3f" }, r.createElement(Be.ZP, { link: (0, x.s0)(e) }, p().c1134966), r.createElement(Be.ZP, { link: (0, x.bx)(t, o) }, p().he45cc43)) : r.createElement(p().I18NFormatMessage, { $i18n: "fcf4b2a5" }, r.createElement(Be.ZP, { link: (0, x.s0)(e) }, p().c9439a82));
                                     })(n, g, A, D),
                                 ),
-                                r.createElement(d.ZP, { disabled: !l || f || v.LK.includes(E), onPress: this._handlePromote, size: "xLarge", testID: K.Z.reviewButton, type: "primaryFilled" }, ut),
+                                r.createElement(d.ZP, { disabled: !l || f || S.LK.includes(E), onPress: this._handlePromote, size: "xLarge", testID: K.Z.reviewButton, type: "primaryFilled" }, ut),
                             ),
                         ),
                     );
@@ -638,8 +636,8 @@
             const Zt = u.default.create((e) => ({ qpContainer: { flex: 1, overflow: "auto" }, bottomElements: { marginTop: e.spaces.space12, marginBottom: e.spaces.space20 }, couponCallout: { marginTop: e.spaces.space12 }, childContainer: { paddingHorizontal: 0 }, terms: { textAlign: "start", color: e.colors.gray700, fontSize: e.fontSizes.subtext3, paddingBottom: e.spaces.space24 }, gutter: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, promotionTotalRow: { marginTop: e.spaces.space2, justifyContent: "space-between", flexDirection: "row" }, paymentDescription: { flexDirection: "row", marginStart: void 0, marginVertical: void 0, backgroundColor: void 0 } })),
                 kt = et(wt);
             var _t = n(976145),
-                St = n(84679),
-                vt = n(933277),
+                vt = n(84679),
+                St = n(933277),
                 Dt = n(161821),
                 xt = n(908478);
             const It = (e, t) => e.quickPromote.account.adsAccount?.isHousingAndUrbanDevelopmentLimitations ?? !1,
@@ -649,9 +647,9 @@
                 Mt = (e, t) => e.quickPromote.targeting.keywords,
                 Bt = (e, t) => e.quickPromote.objective,
                 Nt = (e, t) => D.Z.selectHydrated(e, ((e, t) => t.match.params.statusId)(0, t)),
-                Ft = (0, S.Z)()
+                Ft = (0, v.Z)()
                     .propsFromState(() => ({ lang: Re.VT, isHousingAndUrbanDevelopmentLimitations: It, targetedLocations: qt, selectedGender: Tt, selectedAgeBucket: At, selectedKeywords: Mt, objective: Bt, tweet: Nt }))
-                    .propsFromActions(() => ({ setObjective: v.mS, setTargetedAgeBucket: v.l$ }))
+                    .propsFromActions(() => ({ setObjective: S.mS, setTargetedAgeBucket: S.l$ }))
                     .withAnalytics(x.EP),
                 Rt = p().c672105a,
                 Ht = p().e1efbeae,
@@ -661,7 +659,7 @@
                 zt = p().j2c03e12,
                 jt = ["18", "21", "25", "35", "50"],
                 Wt = [void 0, void 0, "24", "34", "49", "54"],
-                Kt = (0, vt.Z)((0, Dt.Z)(C.gT), (e) => e.maxAge || "over"),
+                Kt = (0, St.Z)((0, Dt.Z)(C.gT), (e) => e.maxAge || "over"),
                 Gt = Wt.length;
             function $t(e, t) {
                 if (e && t) return C.E4[e]?.[t];
@@ -698,7 +696,7 @@
                                     r.createElement(
                                         Fe.t,
                                         { label: Ht, withBottomBorder: !1, withDisabledText: e, withPaddingHorizontal: !1 },
-                                        r.createElement(St.Z, {
+                                        r.createElement(vt.Z, {
                                             disabled: e,
                                             endThumbAccessibilityLabel: Ot,
                                             endThumbAccessibilityLabelValueText: `"${b}"`,
@@ -769,9 +767,9 @@
             var tn = n(449479);
             const nn = (e, t) => e.quickPromote.targeting.gender,
                 rn = (e, t) => e.quickPromote.account.campaigns,
-                on = (0, S.Z)()
+                on = (0, v.Z)()
                     .propsFromState(() => ({ selectedGender: nn, campaigns: rn }))
-                    .propsFromActions(() => ({ setTargetedGender: v.A_ }))
+                    .propsFromActions(() => ({ setTargetedGender: S.A_ }))
                     .withAnalytics(x.EP),
                 an = [C.Y0.Any, C.Y0.Female, C.Y0.Male].map((e) => ({ label: (0, W.nW)(e), value: e, testID: K.Z.getTargetingGender(e) })),
                 sn = p().df8d4fa0,
@@ -872,7 +870,7 @@
                                 case "intro":
                                     return r.createElement(a.Route, { component: R.Z });
                                 case "objective":
-                                    return r.createElement(a.Route, { component: de });
+                                    return r.createElement(a.Route, { component: le });
                                 case "targeting":
                                     return r.createElement(a.Route, { component: en });
                                 case "targeting_location":
@@ -944,6 +942,9 @@
             const bn = u.default.create((e) => ({ noScrollView: { overflowX: "hidden", flex: 1 }, nextButton: { marginBottom: e.spaces.space48, marginTop: e.spaces.space12 } })),
                 fn = N(Pn);
         },
+        653970: (e, t, n) => {
+            e.exports = n.p + "engagements_icon.14baf75a.png";
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-a665aad7.27fcca1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-a665aad7.4ea04fea.js.map
