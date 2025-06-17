@@ -1310,7 +1310,8 @@
                 f("j77292b7", function (e) {
                     return "请仅选择最多 " + e.count + " 文件 个";
                 }),
-                f("cbc8fed4", "翻译得准确吗？请提供反馈，以便我们加以改进："),
+                f("d6b533dc", "Rate this translation:"),
+                f("j2f9ab6e", "Thank you for your feedback!"),
                 f("d56779a2", "易于理解"),
                 f("b6fe8a56", "不清楚或令人困惑"),
                 f("i73a7d48", "由 Google 提供翻译"),
@@ -1915,9 +1916,9 @@
                 f("i89195ea", "分割线"),
                 f("da8ac57c", "编辑字幕"),
                 f("a8fdd09c", "发布文章"),
-                f("d8047cc8", "发布"),
-                f("ff7ddca2", "在发布后，你的文章将显示为帖子。此外，你还可以在个人资料的“文章”选项卡中找到它。");
-            f("ef34d7be", "文章发布后，受众和回复控制无法再编辑。"),
+                f("d8047cc8", "发布");
+            f("ff7ddca2", "在发布后，你的文章将显示为帖子。此外，你还可以在个人资料的“文章”选项卡中找到它。"),
+                f("ef34d7be", "文章发布后，受众和回复控制无法再编辑。"),
                 f("e52d4998", "选择你的受众"),
                 f("d7985b24", "选择谁可以回复这篇文章"),
                 f("b5660338", "时间线预览"),
@@ -2971,9 +2972,9 @@
                 f("a7de64de", "广告信息"),
                 f("jb0a4c36", "博客"),
                 f("ce6d095a", "职业"),
-                f("e0adec82", "品牌资源"),
-                f("df1b7550", "市场营销");
-            f("he258678", "企业版 X"),
+                f("e0adec82", "品牌资源");
+            f("df1b7550", "市场营销"),
+                f("he258678", "企业版 X"),
                 f("c6f58084", "开发者"),
                 f("d83f18d2", "目录"),
                 f("hc5aa17c", "获取 X 应用"),
@@ -3883,11 +3884,11 @@
                 f("a2bf8b8a", "切换到收听"),
                 f("caa8d928", "切换噪声抑制"),
                 f("b5d88f0c", "仅限员工"),
-                f("c855ab8e", "仅限订阅者"),
-                f("ddeb0a3c", "这里是社群。喜欢这些人吗？来看一看。");
-            f("e111f531", function (e) {
-                return e.count + " 已收听";
-            }),
+                f("c855ab8e", "仅限订阅者");
+            f("ddeb0a3c", "这里是社群。喜欢这些人吗？来看一看。"),
+                f("e111f531", function (e) {
+                    return e.count + " 已收听";
+                }),
                 f("cbef820f", function (e) {
                     return e.screenName + " 重新发布了直播流！";
                 }),
@@ -4923,9 +4924,9 @@
                 f("a532072a", "观众"),
                 f("d9508ab0", "次观看"),
                 f("d9f9dec0", "查看空间"),
-                f("h0c1f37a", "查看空间分析"),
-                f("e41fffbc", "你视频的总观看时间。");
-            f("if2909ba", "观看时间"),
+                f("h0c1f37a", "查看空间分析");
+            f("e41fffbc", "你视频的总观看时间。"),
+                f("if2909ba", "观看时间"),
                 f("i0e5bf4c", "您的视频"),
                 f("ed99baea", "抢先体验测试版"),
                 f("gf898b70", "高级搜索"),
@@ -5877,9 +5878,9 @@
                     return e.query + " 没有搜索到结果";
                 }),
                 f("f191a2ba", "搜索设置"),
-                f("a068008a", "文件夹暂时无法载入"),
-                f("f075b0e8", "编辑文件夹");
-            f("beba2a0e", "创建新书签文件夹"),
+                f("a068008a", "文件夹暂时无法载入");
+            f("f075b0e8", "编辑文件夹"),
+                f("beba2a0e", "创建新书签文件夹"),
                 f("e41c9b4f", function (e) {
                     return "已保存至 " + e.bookmarkFolderName;
                 }),
@@ -6883,9 +6884,9 @@
                 f("c05176ec", "如果是现场工作，请输入工作地点。如果是远程职位，请描述候选人的工作地点。"),
                 f("d70c24d4", "用于帮助候选人搜索你的工作机会。"),
                 f("de1c4376", "薪资范围"),
-                f("hf352d42", "添加将向候选人显示的可选薪资范围。如果你选择不添加，请注意招聘地区的薪酬透明度法律。"),
-                f("ede7d0a2", "货币");
-            f("b925c18c", "薪资类型"),
+                f("hf352d42", "添加将向候选人显示的可选薪资范围。如果你选择不添加，请注意招聘地区的薪酬透明度法律。");
+            f("ede7d0a2", "货币"),
+                f("b925c18c", "薪资类型"),
                 f("j3d242ce", "无效范围"),
                 f("f4d07bd2", "包含可让候选人更容易通过搜索发现相关职位的可选详细信息。"),
                 f("b8cbb51a", "工作摘要"),
@@ -7863,8 +7864,7 @@
                 f("ea000ec8", "已经取消你的订阅？"),
                 f("d7b8387e", "如果你已经取消，那就不用再做什么了。你的订阅将在账单周期结束时自动失效。"),
                 f("f4166d9a", "想取消你的订阅吗？"),
-                f("b74ff5fc", "如果取消，你的订阅将在账单周期结束时自动失效。"),
-                f("ee9efbc8", "继续取消");
+                f("b74ff5fc", "如果取消，你的订阅将在账单周期结束时自动失效。");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var f = c[a];
@@ -7903,7 +7903,8 @@
                     r(e, c)
                 );
             }
-            f("c5d9c77a", "看起来有点小插曲。不过别担心，这不是你的错。关闭这个窗口并重试。"),
+            f("ee9efbc8", "继续取消"),
+                f("c5d9c77a", "看起来有点小插曲。不过别担心，这不是你的错。关闭这个窗口并重试。"),
                 f("jda53c24", "你可以通过 Apple App Store 来取消订阅。"),
                 f("g0a7a53e", "你可以通过 Google Play Store 来取消订阅。"),
                 f("i5f14be7", function (e) {
@@ -8899,13 +8900,13 @@
                 }),
                 f("g60001bb", function (e) {
                     return "查看 " + e.advertiserName;
-                }),
-                f("dff1ddd9", function (e) {
-                    return "查看 @" + e.advertiserName;
                 });
-            f("b0b22805", function (e) {
-                return "访问 " + e.advertiserName;
+            f("dff1ddd9", function (e) {
+                return "查看 @" + e.advertiserName;
             }),
+                f("b0b22805", function (e) {
+                    return "访问 " + e.advertiserName;
+                }),
                 f("c67e71aa", "立即观看"),
                 f("a6ada13e", "立即选购"),
                 f("j0f12222", "查看更多"),
@@ -13381,4 +13382,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.1b7178ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.b885b5fa.js.map

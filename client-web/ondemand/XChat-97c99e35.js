@@ -3,7 +3,7 @@
     ["ondemand.XChat-97c99e35"],
     {
         155369: (e, s, t) => {
-            t.d(s, { U: () => E, n: () => N });
+            t.d(s, { U: () => k, n: () => N });
             var n = t(552322),
                 r = t(159603),
                 i = t(202784),
@@ -26,8 +26,8 @@
                 x = t(446368),
                 m = t(38891),
                 v = t(889906),
-                w = t(264531);
-            class g extends r.com.x.dms.WebXChatFeatureSwitches {
+                g = t(264531);
+            class w extends r.com.x.dms.WebXChatFeatureSwitches {
                 featureSwitches;
                 constructor(e) {
                     super(), (this.featureSwitches = e);
@@ -65,46 +65,35 @@
             }
             const p = r.kotlin.collections.KtList,
                 f = !1,
-                _ = 800,
-                j = (0, i.createContext)(void 0),
-                b = "undefined" == typeof window;
-            let y;
+                j = 800,
+                b = (0, i.createContext)(void 0),
+                y = "undefined" == typeof window;
+            let _;
             function N() {
-                const e = (0, i.useContext)(j);
+                const e = (0, i.useContext)(b);
                 if (!e) throw new Error("useGraph must be used within an GraphProvider");
                 return e;
             }
             function S(e, s, n, i, x) {
                 const m = "true" === localStorage.getItem(l.e) || !1,
                     v = (0, o.n5)(),
-                    j = x.isTrue("rweb_xchat_fs_worker");
+                    b = (0, c.G)() && i;
                 return new r.com.x.dms.WebDmObjectGraph(
                     r.com.x.models.UserIdentifier.ofString(v),
-                    i
-                        ? (function () {
-                              const e = new d(new URL(t.p + t.u("node_modules_x-clients_features_dist_dms_sqlite2_worker_js"), t.b), { type: void 0 }).createWorker();
-                              (e.onerror = (e) => {}),
-                                  window.addEventListener("xchat_database_backup_event", () => {
-                                      e.postMessage({ action: "backup_db", userId: (0, o.n5)(), id: "backup_1" });
-                                  }),
-                                  window.addEventListener("xchat_before_unload_event", () => {
-                                      e.postMessage({ action: "close", id: "close_1" });
-                                  });
-                              return async () =>
-                                  new Promise((s, t) => {
-                                      (e.onmessage = (n) => {
-                                          const { data: r } = n;
-                                          "init_1" === r.id && (r.error ? t(new Error(`Database initialization failed: ${r.error}`)) : s(e));
-                                      }),
-                                          e.postMessage({ action: "init_db", userId: (0, o.n5)(), id: "init_1" });
-                                  });
-                          })()
-                        : (function () {
-                              const e = new d(new URL(t.p + t.u("node_modules_x-clients_features_dist_dms_sqlite_worker_js"), t.b), { type: void 0 }).createWorker();
-                              return (e.onerror = (e) => {}), e.postMessage({ action: "init_db", dbName: `${(0, o.n5)()}_chat`, id: "init_1" }), () => new Promise((s) => s(e));
-                          })(),
+                    (function () {
+                        const e = new d(new URL(t.p + t.u("node_modules_x-clients_features_dist_dms_sqlite_worker_js"), t.b), { type: void 0 }).createWorker();
+                        e.onerror = (e) => {};
+                        return async () =>
+                            new Promise((s, t) => {
+                                (e.onmessage = (n) => {
+                                    const { data: r } = n;
+                                    "init_1" === r.id && (r.error ? t(new Error(`Database initialization failed: ${r.error}`)) : s(e));
+                                }),
+                                    e.postMessage({ action: "init_db", userId: (0, o.n5)(), id: "init_1" });
+                            });
+                    })(),
                     C,
-                    j,
+                    b,
                     a._i,
                     (s, t) => {
                         (0, u.S)(s.value.toString(), e).then((e) => {
@@ -119,13 +108,12 @@
                     (e, t, n, r, i) => {
                         s.scribe({ client: "m5", page: e ?? void 0, section: t ?? void 0, component: n ?? void 0, element: r ?? void 0, action: i ?? void 0 });
                     },
-                    new r.com.x.dms.WebOptions(k(w.B$.INFO), j || !(0, c.G)() ? k(n) : null, !1),
+                    new r.com.x.dms.WebOptions(D(g.B$.INFO), b || !(0, c.G)() ? D(n) : null, !1),
                     m,
                     new h.V(),
-                    new g(x),
-                    () => {},
+                    new w(x),
                     f,
-                    _,
+                    j,
                 );
             }
             function C() {
@@ -134,7 +122,7 @@
                     (s.onerror = (e) => {}), e(s);
                 });
             }
-            function k(e) {
+            function D(e) {
                 switch (e) {
                     case "DEBUG":
                     case "INFO":
@@ -145,21 +133,21 @@
                         return e;
                 }
             }
-            function E({ children: e }) {
-                if (b) return;
+            function k({ children: e }) {
+                if (y) return;
                 const s = (0, v.useRelayEnvironment)(),
                     t = (0, x.z$)(),
-                    r = (0, w.xq)(),
-                    i = (0, w.rF)(),
+                    r = (0, g.xq)(),
+                    i = (0, g.VC)(),
                     a = (0, m.z)();
-                return y || (y = S(s, t, r, i, a)), (0, n.jsx)(j.Provider, { value: y, children: e });
+                return _ || (_ = S(s, t, r, i, a)), (0, n.jsx)(b.Provider, { value: _, children: e });
             }
         },
         92184: (e, s, t) => {
-            t.d(s, { p: () => O });
+            t.d(s, { p: () => U });
             var n = t(552322),
                 r = t(159603),
-                i = t(455091),
+                i = t(263033),
                 a = t(193686),
                 o = t(332161),
                 c = t(202784),
@@ -170,18 +158,18 @@
                 x = t(439252),
                 m = t(447742),
                 v = t(993165),
-                w = t(687521),
-                g = t(238750),
+                g = t(687521),
+                w = t(238750),
                 p = t(984713),
                 f = t(533476),
-                _ = t(788452);
-            function j() {
+                j = t(788452);
+            function b() {
                 const { t: e } = (0, i.$G)();
-                return (0, n.jsxs)("div", { className: "flex flex-col flex-grow items-center justify-center gap-2", children: [(0, n.jsx)("div", { className: "text-[76px] mb-10", children: (0, n.jsx)(_.Z, { className: "rotate-[-8.29deg]" }) }), (0, n.jsx)(o.x, { weight: "medium", size: "title4", children: e("Empty inbox") }), (0, n.jsx)(o.x, { color: "gray700", children: e("Message someone") })] });
+                return (0, n.jsxs)("div", { className: "flex flex-col flex-grow items-center justify-center gap-2", children: [(0, n.jsx)("div", { className: "text-[76px] mb-10", children: (0, n.jsx)(j.Z, { className: "rotate-[-8.29deg]" }) }), (0, n.jsx)(o.x, { weight: "medium", size: "title4", children: e("Empty inbox") }), (0, n.jsx)(o.x, { color: "gray700", children: e("Message someone") })] });
             }
-            var b = t(264531),
-                y = t(897995),
-                N = t(18671),
+            var y = t(264531),
+                _ = t(897995),
+                N = t(70625),
                 S = t(955504);
             const C = ({ connectionState: e }) => {
                 const { connectionStateText: s, iconComponent: t } = ((e) => {
@@ -201,38 +189,40 @@
                 })(e);
                 return s ? (0, n.jsxs)("div", { className: "flex items-center gap-2", children: [t && (0, n.jsx)("div", { children: t }), (0, n.jsx)(o.x, { weight: "medium", children: s })] }) : null;
             };
-            var k = t(305399),
-                E = t(910299),
-                D = t(671889),
-                L = t(322506),
-                P = t(476865);
-            function R({ value: e, children: s, href: t }) {
+            var D = t(305399),
+                k = t(910299),
+                E = t(671889),
+                L = t(38891),
+                P = t(322506),
+                R = t(476865);
+            function z({ value: e, children: s, href: t }) {
                 const r = "inline-flex flex-1 items-center justify-center gap-1.5 px-2 py-1 text-subtext1 font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
                     i = "bg-transparent border border-gray-100 text-gray-700 font-normal outline-primary !rounded-full px-3 text-[15px] leading-[20px] hover:bg-gray-50 focus:bg-gray-50 active:bg-gray-50 data-[state=active]:border-transparent data-[state=active]:bg-primary/10 data-[state=active]:hover:bg-primary/15 data-[state=active]:active:bg-primary/15 data-[state=active]:text-primary data-[state=active]:font-[500] data-[state=active]:shadow-none";
-                return t ? (0, n.jsx)(P.SP, { asChild: !0, value: e, children: (0, n.jsx)(L.r, { href: t, className: `${r} ${i}`, children: s }) }) : (0, n.jsx)(P.SP, { value: e, className: `${r} ${i}`, children: s });
+                return t ? (0, n.jsx)(R.SP, { asChild: !0, value: e, children: (0, n.jsx)(P.r, { href: t, className: `${r} ${i}`, children: s }) }) : (0, n.jsx)(R.SP, { value: e, className: `${r} ${i}`, children: s });
             }
-            function z({ value: e, className: s, ...t }) {
-                const { t: r } = (0, i.$G)();
-                return (0, n.jsx)(P.mQ, { value: e, className: s, ...t, children: (0, n.jsxs)(P.dr, { className: "bg-transparent p-0 gap-3", children: [(0, n.jsx)(R, { value: "all", children: "All" }), (0, n.jsx)(R, { value: "unencrypted", href: "https://x.com/messages", children: r("Classic Inbox") })] }) });
+            function I({ value: e, className: s, ...t }) {
+                const { t: r } = (0, i.$G)(),
+                    a = (0, L.z)().isTrue("enable_inbox_pills");
+                return (0, n.jsx)(R.mQ, { value: e, className: s, ...t, children: (0, n.jsxs)(R.dr, { className: "bg-transparent p-0 gap-3", children: [(0, n.jsx)(z, { value: "all", children: r("All") }), a && (0, n.jsxs)(n.Fragment, { children: [(0, n.jsx)(z, { value: "unread", children: r("Unread") }), (0, n.jsx)(z, { value: "groups", children: r("Groups") })] }), (0, n.jsx)(z, { value: "unencrypted", href: "https://x.com/messages", children: r("Unencrypted") })] }) });
             }
-            var I = t(450683);
+            var G = t(450683);
             const M = r.com.x.dms.convlist,
                 T = r.com.x.dms.InboxBottomDialog;
             function A({ component: e, setShowNewDM: s, showNewDM: t }) {
                 const { t: r } = (0, i.$G)(),
                     c = (0, f._)(e.state),
                     l = c.searchQuery.length > 0,
-                    d = (0, k.a)("(max-width: 768px)"),
+                    d = (0, D.a)("(max-width: 768px)"),
                     h = l ? c.conversationResults.asJsReadonlyArrayView() : (c.previews?.asJsReadonlyArrayView() ?? []),
-                    { showDebugOptions: u } = (0, b.XE)(),
-                    _ = c.messageResults?.asJsReadonlyArrayView() ?? [],
+                    { showDebugOptions: u } = (0, y.XE)(),
+                    j = c.messageResults?.asJsReadonlyArrayView() ?? [],
                     S = () => {
                         e.onEvent(new M.ConversationListEvent.SearchQueryChanged(""));
                     },
-                    L = (0, b.tc)("dashMenuButton");
+                    L = (0, y.tc)("dashMenuButton");
                 return (0, n.jsxs)(n.Fragment, {
                     children: [
-                        (0, n.jsxs)(D.g, {
+                        (0, n.jsxs)(E.g, {
                             className: "flex flex-col min-h-dvh md:h-dvh border-r relative w-full",
                             children: [
                                 (0, n.jsxs)("header", {
@@ -261,12 +251,12 @@
                                             ],
                                         }),
                                         c.isLoadingConversations
-                                            ? (0, n.jsx)(I.P, {})
+                                            ? (0, n.jsx)(G.P, {})
                                             : (0, n.jsx)(n.Fragment, {
                                                   children: (0, n.jsx)("div", {
                                                       className: "px-4 py-1",
-                                                      children: (0, n.jsx)(w._, {
-                                                          placeholder: "Search",
+                                                      children: (0, n.jsx)(g._, {
+                                                          placeholder: r("Search"),
                                                           value: c.searchQuery ?? "",
                                                           onChange: (s) => {
                                                               e.onEvent(new M.ConversationListEvent.SearchQueryChanged(s.target.value));
@@ -284,18 +274,18 @@
                                               }),
                                     ],
                                 }),
-                                !c.isLoadingConversations && (0, n.jsxs)(n.Fragment, { children: [!l && (0, n.jsx)("div", { className: "py-3 px-4", children: (0, n.jsx)(z, { value: "all" }) }), l ? (0, n.jsxs)("div", { className: "flex flex-col min-h-0 gap-1 pt-6", children: [h.length > 0 && (0, n.jsxs)("div", { className: "px-4", children: [(0, n.jsx)(o.x, { size: "subtext2", color: "gray700", weight: "bold", children: "Conversations" }), (0, n.jsx)(E.r, { conversations: h, onEvent: (s) => e.onEvent(s) })] }), _.length > 0 && (0, n.jsxs)(n.Fragment, { children: [(0, n.jsx)("div", { className: "px-4", children: (0, n.jsx)(o.x, { size: "subtext2", color: "gray700", weight: "bold", children: "Messages" }) }), (0, n.jsx)(g.p, { conversations: _, actionsDialog: null, onEvent: (s) => e.onEvent(s), isSearch: l })] })] }) : h && h.length > 0 ? (0, n.jsx)(g.p, { conversations: h, actionsDialog: c.showActionsDialog, onEvent: (s) => e.onEvent(s), isSearch: l }) : (0, n.jsx)(j, {}), c.showBottomDialog instanceof T.PinReminder && (0, n.jsx)(y.Y, { component: e, dialogParams: c.showBottomDialog.params })] }),
+                                !c.isLoadingConversations && (0, n.jsxs)(n.Fragment, { children: [!l && (0, n.jsx)("div", { className: "py-3 px-4", children: (0, n.jsx)(I, { value: "all" }) }), l ? (0, n.jsxs)("div", { className: "flex flex-col min-h-0 gap-1 pt-6", children: [h.length > 0 && (0, n.jsxs)("div", { className: "px-4", children: [(0, n.jsx)(o.x, { size: "subtext2", color: "gray700", weight: "bold", children: r("Conversations") }), (0, n.jsx)(k.r, { conversations: h, onEvent: (s) => e.onEvent(s) })] }), j.length > 0 && (0, n.jsxs)(n.Fragment, { children: [(0, n.jsx)("div", { className: "px-4", children: (0, n.jsx)(o.x, { size: "subtext2", color: "gray700", weight: "bold", children: r("Messages") }) }), (0, n.jsx)(w.p, { conversations: j, actionsDialog: null, onEvent: (s) => e.onEvent(s), isSearch: l })] })] }) : h && h.length > 0 ? (0, n.jsx)(w.p, { conversations: h, actionsDialog: c.showActionsDialog, onEvent: (s) => e.onEvent(s), isSearch: l }) : (0, n.jsx)(b, {}), c.showBottomDialog instanceof T.PinReminder && (0, n.jsx)(_.Y, { component: e, dialogParams: c.showBottomDialog.params })] }),
                             ],
                         }),
                         t && (0, n.jsx)(p.x, { onVisibilityChange: s }),
                     ],
                 });
             }
-            var G = t(379342);
-            const O = () => {
+            var O = t(379342);
+            const U = () => {
                     const [e, s] = (0, c.useState)(null),
                         t = (0, u.n)(),
-                        i = (0, G.s)(),
+                        i = (0, O.s)(),
                         [o, d] = (0, c.useState)(!1);
                     return (
                         (0, c.useEffect)(() => {
@@ -328,7 +318,7 @@
                                 }
                             );
                         }, [t, i]),
-                        null === e ? (0, n.jsx)(D.g, { className: "flex flex-col justify-center min-h-dvh md:h-dvh  w-full", children: (0, n.jsx)(a.P, {}) }) : (0, n.jsx)(l.S, { children: (0, n.jsx)($, { component: e, setShowNewDM: d, showNewDM: o }) })
+                        null === e ? (0, n.jsx)(E.g, { className: "flex flex-col justify-center min-h-dvh md:h-dvh  w-full", children: (0, n.jsx)(a.P, {}) }) : (0, n.jsx)(l.S, { children: (0, n.jsx)($, { component: e, setShowNewDM: d, showNewDM: o }) })
                     );
                 },
                 $ = ({ component: e, setShowNewDM: s, showNewDM: t }) => {
@@ -336,9 +326,9 @@
                         c = void 0 === r || "" === r,
                         l = (0, f._)(e.state),
                         { t: u } = (0, i.$G)();
-                    return l.isInitializing ? (0, n.jsx)(D.g, { className: "flex flex-col justify-center min-h-dvh md:h-dvh w-full", children: (0, n.jsx)(a.P, {}) }) : (0, n.jsxs)("div", { className: "@container flex min-h-dvh md:h-dvh w-full", children: [(0, n.jsx)("div", { className: (c ? "block" : "hidden") + " @narrow:block w-full @narrow:w-[35%]", children: (0, n.jsx)(A, { component: e, setShowNewDM: s, showNewDM: t }) }), (0, n.jsx)("div", { className: (c ? "hidden" : "block") + " @narrow:block w-full @narrow:w-[65%]", children: l.isLoadingConversations ? (0, n.jsx)("div", { className: "flex flex-col h-dvh w-full justify-center items-center flex-grow gap-2", children: (0, n.jsx)("div", { className: "text-[76px] mb-10", children: (0, n.jsx)(o.x, { size: "body", color: "gray700", weight: "normal", className: "animate-pulse", children: u("Loading conversation history…") }) }) }) : (0, n.jsx)(h.Q, {}) })] });
+                    return l.isInitializing ? (0, n.jsx)(E.g, { className: "flex flex-col justify-center min-h-dvh md:h-dvh w-full", children: (0, n.jsx)(a.P, {}) }) : (0, n.jsxs)("div", { className: "@container flex min-h-dvh md:h-dvh w-full", children: [(0, n.jsx)("div", { className: (c ? "block" : "hidden") + " @narrow:block w-full @narrow:w-[35%]", children: (0, n.jsx)(A, { component: e, setShowNewDM: s, showNewDM: t }) }), (0, n.jsx)("div", { className: (c ? "hidden" : "block") + " @narrow:block w-full @narrow:w-[65%]", children: l.isLoadingConversations ? (0, n.jsx)("div", { className: "flex flex-col h-dvh w-full justify-center items-center flex-grow gap-2", children: (0, n.jsx)("div", { className: "text-[76px] mb-10", children: (0, n.jsx)(o.x, { size: "body", color: "gray700", weight: "normal", className: "animate-pulse", children: u("Loading conversation history…") }) }) }) : (0, n.jsx)(h.Q, {}) })] });
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-97c99e35.ff26be3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-97c99e35.36dee2ba.js.map

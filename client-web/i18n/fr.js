@@ -1315,7 +1315,8 @@
                 n("j77292b7", function (e) {
                     return "Please only select up to " + e.count + " file" + o(e.count, "", "s");
                 }),
-                n("cbc8fed4", "Cette traduction vous convient‑elle ? Donnez‑nous votre avis pour que nous puissions nous améliorer :"),
+                n("d6b533dc", "Rate this translation:"),
+                n("j2f9ab6e", "Thank you for your feedback!"),
                 n("d56779a2", "facile à comprendre"),
                 n("b6fe8a56", "peu claire"),
                 n("i73a7d48", "Traduit par Google"),
@@ -1920,9 +1921,9 @@
                 n("i89195ea", "Séparateur"),
                 n("da8ac57c", "Éditer la légende"),
                 n("a8fdd09c", "Publier l'Article"),
-                n("d8047cc8", "Publier"),
-                n("ff7ddca2", "Votre Article apparaîtra comme un post une fois publié. Par ailleurs, vous le trouverez sous l'onglet Articles de votre profil.");
-            n("ef34d7be", "Les options d'audience et de réponse ne peuvent pas être modifiées une fois qu'un Article a été publié."),
+                n("d8047cc8", "Publier");
+            n("ff7ddca2", "Votre Article apparaîtra comme un post une fois publié. Par ailleurs, vous le trouverez sous l'onglet Articles de votre profil."),
+                n("ef34d7be", "Les options d'audience et de réponse ne peuvent pas être modifiées une fois qu'un Article a été publié."),
                 n("e52d4998", "Choisissez votre audience"),
                 n("d7985b24", "Choisissez qui peut répondre à cet Article"),
                 n("b5660338", "Aperçu du fil"),
@@ -2976,9 +2977,9 @@
                 n("a7de64de", "Informations sur les publicités"),
                 n("jb0a4c36", "Blog"),
                 n("ce6d095a", "Carrières"),
-                n("e0adec82", "Ressources de la marque"),
-                n("df1b7550", "Marketing");
-            n("he258678", "X pour les professionnels"),
+                n("e0adec82", "Ressources de la marque");
+            n("df1b7550", "Marketing"),
+                n("he258678", "X pour les professionnels"),
                 n("c6f58084", "Développeurs"),
                 n("d83f18d2", "Répertoire"),
                 n("hc5aa17c", "Télécharger l'application X"),
@@ -3888,11 +3889,11 @@
                 n("a2bf8b8a", "Passer en mode écoute"),
                 n("caa8d928", "Activer/désactiver la suppression du bruit"),
                 n("b5d88f0c", "Employés uniquement"),
-                n("c855ab8e", "Réservé aux Souscripteurs"),
-                n("ddeb0a3c", "Here’s the Community. Like the people? Take a look.");
-            n("e111f531", function (e) {
-                return e.count + " " + r(e.count, "a", "ont") + " écouté";
-            }),
+                n("c855ab8e", "Réservé aux Souscripteurs");
+            n("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
+                n("e111f531", function (e) {
+                    return e.count + " " + r(e.count, "a", "ont") + " écouté";
+                }),
                 n("cbef820f", function (e) {
                     return e.screenName + " a reposté le stream !";
                 }),
@@ -4928,9 +4929,9 @@
                 n("a532072a", "Spectateurs"),
                 n("d9508ab0", "vues"),
                 n("d9f9dec0", "Voir l'Espace"),
-                n("h0c1f37a", "Voir les statistiques de l'Espace"),
-                n("e41fffbc", "Le temps de visionnage total de vos vidéos.");
-            n("if2909ba", "Temps de visionnage"),
+                n("h0c1f37a", "Voir les statistiques de l'Espace");
+            n("e41fffbc", "Le temps de visionnage total de vos vidéos."),
+                n("if2909ba", "Temps de visionnage"),
                 n("i0e5bf4c", "Vos vidéos"),
                 n("ed99baea", "Accès anticipé à la version bêta"),
                 n("gf898b70", "Recherche avancée"),
@@ -5882,9 +5883,9 @@
                     return "Aucun résultat pour " + e.query;
                 }),
                 n("f191a2ba", "paramètres de recherche"),
-                n("a068008a", "Les dossiers ne se chargent pas pour le moment."),
-                n("f075b0e8", "Éditer le dossier");
-            n("beba2a0e", "Créer un dossier de signets"),
+                n("a068008a", "Les dossiers ne se chargent pas pour le moment.");
+            n("f075b0e8", "Éditer le dossier"),
+                n("beba2a0e", "Créer un dossier de signets"),
                 n("e41c9b4f", function (e) {
                     return "Enregistré dans le dossier " + e.bookmarkFolderName;
                 }),
@@ -6888,9 +6889,9 @@
                 n("c05176ec", "Si ce poste est à pourvoir sur site, indiquez sa ou ses localisations. Si ce poste est en télétravail, indiquez où les candidats peuvent être basés."),
                 n("d70c24d4", "Sert à aider les candidats à trouver votre offre d'emploi."),
                 n("de1c4376", "Échelle des salaires"),
-                n("hf352d42", "Ajoutez une fourchette de salaire facultative qui sera affichée aux candidats. Si vous choisissez de ne pas le faire, ayez bien à l'esprit les éventuelles lois de transparence des rémunérations qui s'appliquent là où vous recrutez."),
-                n("ede7d0a2", "Devise");
-            n("b925c18c", "Type de salaire "),
+                n("hf352d42", "Ajoutez une fourchette de salaire facultative qui sera affichée aux candidats. Si vous choisissez de ne pas le faire, ayez bien à l'esprit les éventuelles lois de transparence des rémunérations qui s'appliquent là où vous recrutez.");
+            n("ede7d0a2", "Devise"),
+                n("b925c18c", "Type de salaire "),
                 n("j3d242ce", "Plage non valide"),
                 n("f4d07bd2", "Indiquez des détails facultatifs qui permettront aux candidats de découvrir plus facilement vos offres en effectuant une recherche."),
                 n("b8cbb51a", "Résumé du poste"),
@@ -7868,8 +7869,7 @@
                 n("ea000ec8", "Vous avez déjà annulé votre Souscription ?"),
                 n("d7b8387e", "Si vous avez déjà annulé, vous n'avez rien d'autre à faire. Votre Souscription expirera automatiquement à la fin du cycle de facturation."),
                 n("f4166d9a", "Vous voulez annuler votre Souscription ?"),
-                n("b74ff5fc", "Si vous annulez, votre Souscription expirera automatiquement à la fin du cycle de facturation."),
-                n("ee9efbc8", "Continuer pour annuler");
+                n("b74ff5fc", "Si vous annulez, votre Souscription expirera automatiquement à la fin du cycle de facturation.");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7908,7 +7908,8 @@
                     i(e, t)
                 );
             }
-            n("c5d9c77a", "Il semble qu'un petit problème s'est produit. Mais ne vous inquiétez pas, ce n'est pas de votre faute. Fermez cette fenêtre et réessayez."),
+            n("ee9efbc8", "Continuer pour annuler"),
+                n("c5d9c77a", "Il semble qu'un petit problème s'est produit. Mais ne vous inquiétez pas, ce n'est pas de votre faute. Fermez cette fenêtre et réessayez."),
                 n("jda53c24", "Vous pouvez annuler votre Souscription via l'App Store Apple."),
                 n("g0a7a53e", "Vous pouvez annuler votre Souscription via la boutique Google Play."),
                 n("i5f14be7", function (e) {
@@ -8904,13 +8905,13 @@
                 }),
                 n("g60001bb", function (e) {
                     return "Allez sur " + e.advertiserName;
-                }),
-                n("dff1ddd9", function (e) {
-                    return "Accédez à " + e.advertiserName;
                 });
-            n("b0b22805", function (e) {
-                return "Rendez-vous sur " + e.advertiserName;
+            n("dff1ddd9", function (e) {
+                return "Accédez à " + e.advertiserName;
             }),
+                n("b0b22805", function (e) {
+                    return "Rendez-vous sur " + e.advertiserName;
+                }),
                 n("c67e71aa", "Regarder maintenant"),
                 n("a6ada13e", "Acheter maintenant"),
                 n("j0f12222", "Voir plus"),
@@ -13370,4 +13371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.fa267ffa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.0a63355a.js.map

@@ -1320,7 +1320,8 @@
                 a("j77292b7", function (e) {
                     return "Vyberte pouze maximálně " + e.count + " soubor" + n(e.count, "y", "y", "", "y");
                 }),
-                a("cbc8fed4", "Byl tento překlad přesný? Dejte nám zpětnou vazbu, abychom se mohli zlepšit:"),
+                a("d6b533dc", "Rate this translation:"),
+                a("j2f9ab6e", "Thank you for your feedback!"),
                 a("d56779a2", "snadno pochopitelný"),
                 a("b6fe8a56", "matoucí nebo nejasný"),
                 a("i73a7d48", "Přeložil Google"),
@@ -1925,9 +1926,9 @@
                 a("i89195ea", "Dělič"),
                 a("da8ac57c", "Upravit popisek"),
                 a("a8fdd09c", "Zveřejnit článek"),
-                a("d8047cc8", "Publikovat"),
-                a("ff7ddca2", "Po zveřejnění se váš článek zobrazí jako post. Najdete jej také ve svém profilu na kartě Články.");
-            a("ef34d7be", "Ovládací prvky publika a odpovědí nelze po zveřejnění článku upravovat."),
+                a("d8047cc8", "Publikovat");
+            a("ff7ddca2", "Po zveřejnění se váš článek zobrazí jako post. Najdete jej také ve svém profilu na kartě Články."),
+                a("ef34d7be", "Ovládací prvky publika a odpovědí nelze po zveřejnění článku upravovat."),
                 a("e52d4998", "Zvolte cílovou skupinu"),
                 a("d7985b24", "Zvolte, kdo může odpovídat na tento článek"),
                 a("b5660338", "Náhled časové osy"),
@@ -2981,9 +2982,9 @@
                 a("a7de64de", "Informace o reklamách"),
                 a("jb0a4c36", "Blog"),
                 a("ce6d095a", "Kariéra"),
-                a("e0adec82", "Značkové zdroje"),
-                a("df1b7550", "Marketing");
-            a("he258678", "X pro firmy"),
+                a("e0adec82", "Značkové zdroje");
+            a("df1b7550", "Marketing"),
+                a("he258678", "X pro firmy"),
                 a("c6f58084", "Vývojáři"),
                 a("d83f18d2", "Adresář"),
                 a("hc5aa17c", "Získejte aplikaci X"),
@@ -3893,11 +3894,11 @@
                 a("a2bf8b8a", "Přepnout na poslech"),
                 a("caa8d928", "Přepnout potlačení hluku"),
                 a("b5d88f0c", "Pouze zaměstnanci"),
-                a("c855ab8e", "Jen pro předplatitele"),
-                a("ddeb0a3c", "Toto jsou členové komunity. Líbí se vám? Podívejte se.");
-            a("e111f531", function (e) {
-                return e.count + " slyšel" + n(e.count, "i", "o", "", "o") + " živě či ze záznamu";
-            }),
+                a("c855ab8e", "Jen pro předplatitele");
+            a("ddeb0a3c", "Toto jsou členové komunity. Líbí se vám? Podívejte se."),
+                a("e111f531", function (e) {
+                    return e.count + " slyšel" + n(e.count, "i", "o", "", "o") + " živě či ze záznamu";
+                }),
                 a("cbef820f", function (e) {
                     return e.screenName + " repostoval stream!";
                 }),
@@ -4933,9 +4934,9 @@
                 a("a532072a", "Diváci"),
                 a("d9508ab0", "zobrazení"),
                 a("d9f9dec0", "Zobrazit Prostor"),
-                a("h0c1f37a", "Zobrazit analýzu Prostoru"),
-                a("e41fffbc", "Celkový čas sledování vašich videí.");
-            a("if2909ba", "Čas sledování"),
+                a("h0c1f37a", "Zobrazit analýzu Prostoru");
+            a("e41fffbc", "Celkový čas sledování vašich videí."),
+                a("if2909ba", "Čas sledování"),
                 a("i0e5bf4c", "Vaše videa"),
                 a("ed99baea", "Brzký přístup k beta verzi"),
                 a("gf898b70", "Pokročilé hledání"),
@@ -5887,9 +5888,9 @@
                     return "Žádné výsledky pro: " + e.query;
                 }),
                 a("f191a2ba", "nastaveních hledání"),
-                a("a068008a", "Složky v tuto chvíli nejde načíst"),
-                a("f075b0e8", "Upravit složku");
-            a("beba2a0e", "Vytvořit novou složku pro záložky"),
+                a("a068008a", "Složky v tuto chvíli nejde načíst");
+            a("f075b0e8", "Upravit složku"),
+                a("beba2a0e", "Vytvořit novou složku pro záložky"),
                 a("e41c9b4f", function (e) {
                     return "Uloženo do kolekce " + e.bookmarkFolderName;
                 }),
@@ -6893,9 +6894,9 @@
                 a("c05176ec", "Pokud je tato pracovní pozice vykonávána na konkrétním pracovišti, zadejte umístění pracoviště. Pokud je tato role vzdálená, popište, kde se mohou uchazeči nacházet."),
                 a("d70c24d4", "Pomáhá uchazečům vyhledat vaši pracovní pozici."),
                 a("de1c4376", "Rozsah mzdy"),
-                a("hf352d42", "Přidejte volitelné platové rozpětí, které bude viditelné uchazečům. Pokud to neuděláte, vezměte v potaz případné zákony o transparentnosti platů v místě, kde najímáte zaměstnance."),
-                a("ede7d0a2", "Měna");
-            a("b925c18c", "Typ platu"),
+                a("hf352d42", "Přidejte volitelné platové rozpětí, které bude viditelné uchazečům. Pokud to neuděláte, vezměte v potaz případné zákony o transparentnosti platů v místě, kde najímáte zaměstnance.");
+            a("ede7d0a2", "Měna"),
+                a("b925c18c", "Typ platu"),
                 a("j3d242ce", "Neplatný rozsah"),
                 a("f4d07bd2", "Uveďte nepovinné údaje, které uchazečům usnadní nalezení vašich pracovních pozic."),
                 a("b8cbb51a", "Shrnutí pracovní pozice"),
@@ -7873,8 +7874,7 @@
                 a("ea000ec8", "Už jste své Předplatné zrušili?"),
                 a("d7b8387e", "Pokud jste už Předplatné zrušili, nemusíte dělat nic dalšího. Platnost vašeho Předplatného automaticky vyprší na konci fakturačního období."),
                 a("f4166d9a", "Chcete své Předplatné zrušit?"),
-                a("b74ff5fc", "Pokud Předplatné zrušíte, jeho platnost automaticky vyprší na konci fakturačního období."),
-                a("ee9efbc8", "Pokračovat ke zrušení");
+                a("b74ff5fc", "Pokud Předplatné zrušíte, jeho platnost automaticky vyprší na konci fakturačního období.");
             function r(e, o) {
                 for (var t = 0; t < o.length; t++) {
                     var a = o[t];
@@ -7913,7 +7913,8 @@
                     i(e, o)
                 );
             }
-            a("c5d9c77a", "Vypadá to, že se vyskytl drobný zádrhel. Nemějte ale obavy, není to vaše chyba. Zavřete toto okno a zkuste to znovu."),
+            a("ee9efbc8", "Pokračovat ke zrušení"),
+                a("c5d9c77a", "Vypadá to, že se vyskytl drobný zádrhel. Nemějte ale obavy, není to vaše chyba. Zavřete toto okno a zkuste to znovu."),
                 a("jda53c24", "Své Předplatné můžete zrušit v obchodu Apple App Store."),
                 a("g0a7a53e", "Své Předplatné můžete zrušit v obchodu Google Play."),
                 a("i5f14be7", function (e) {
@@ -8909,13 +8910,13 @@
                 }),
                 a("g60001bb", function (e) {
                     return "Zobrazit " + e.advertiserName;
-                }),
-                a("dff1ddd9", function (e) {
-                    return "Přejít na " + e.advertiserName;
                 });
-            a("b0b22805", function (e) {
-                return "Navštívit " + e.advertiserName;
+            a("dff1ddd9", function (e) {
+                return "Přejít na " + e.advertiserName;
             }),
+                a("b0b22805", function (e) {
+                    return "Navštívit " + e.advertiserName;
+                }),
                 a("c67e71aa", "Sledovat hned teď"),
                 a("a6ada13e", "Nakupovat"),
                 a("j0f12222", "Zobrazit víc"),
@@ -13378,4 +13379,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.57e4c11a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.7a31bcca.js.map

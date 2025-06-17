@@ -1320,7 +1320,8 @@
                 n("j77292b7", function (e) {
                     return "Vyberte maximálne " + e.count + " súbor" + t(e.count, "y", "u", "", "ov");
                 }),
-                n("cbc8fed4", "Bol tento preklad presný? Poskytnite nám spätnú väzbu, aby sme preklady mohli zlepšiť:"),
+                n("d6b533dc", "Rate this translation:"),
+                n("j2f9ab6e", "Thank you for your feedback!"),
                 n("d56779a2", "dobre zrozumiteľný"),
                 n("b6fe8a56", "mätúci alebo nejasný"),
                 n("i73a7d48", "Preložené spoločnosťou Google"),
@@ -1925,9 +1926,9 @@
                 n("i89195ea", "Oddeľovač"),
                 n("da8ac57c", "Upraviť opis"),
                 n("a8fdd09c", "Zverejnenie článku"),
-                n("d8047cc8", "Publikovať"),
-                n("ff7ddca2", "Zverejnený článok sa bude zobrazovať ako príspevok a nájdete ho aj vo svojom profile na karte Články.");
-            n("ef34d7be", "Nastavenia publika a odpovedí sa po zverejnení článku nedajú upravovať."),
+                n("d8047cc8", "Publikovať");
+            n("ff7ddca2", "Zverejnený článok sa bude zobrazovať ako príspevok a nájdete ho aj vo svojom profile na karte Články."),
+                n("ef34d7be", "Nastavenia publika a odpovedí sa po zverejnení článku nedajú upravovať."),
                 n("e52d4998", "Vyberte svoje publikum"),
                 n("d7985b24", "Vyberte, kto môže na tento článok odpovedať"),
                 n("b5660338", "Ukážka časovej osi"),
@@ -2981,9 +2982,9 @@
                 n("a7de64de", "Informácie o reklamách"),
                 n("jb0a4c36", "Blog"),
                 n("ce6d095a", "Kariéry"),
-                n("e0adec82", "Zdroje pre značku"),
-                n("df1b7550", "Marketing");
-            n("he258678", "X pre firmy"),
+                n("e0adec82", "Zdroje pre značku");
+            n("df1b7550", "Marketing"),
+                n("he258678", "X pre firmy"),
                 n("c6f58084", "Vývojári"),
                 n("d83f18d2", "Adresár"),
                 n("hc5aa17c", "Získajte aplikáciu X"),
@@ -3893,11 +3894,11 @@
                 n("a2bf8b8a", "Prepnúť na počúvanie"),
                 n("caa8d928", "Prepnúť potláčanie ruchu"),
                 n("b5d88f0c", "Iba pre zamestnancov"),
-                n("c855ab8e", "Len pre predplatiteľov"),
-                n("ddeb0a3c", "Páčia sa vám ľudia z tejto Komunity? Pozrite si ju.");
-            n("e111f531", function (e) {
-                return e.count + " naladen" + t(e.count, "í", "ých", "ý/-á", "ých");
-            }),
+                n("c855ab8e", "Len pre predplatiteľov");
+            n("ddeb0a3c", "Páčia sa vám ľudia z tejto Komunity? Pozrite si ju."),
+                n("e111f531", function (e) {
+                    return e.count + " naladen" + t(e.count, "í", "ých", "ý/-á", "ých");
+                }),
                 n("cbef820f", function (e) {
                     return "Používateľ " + e.screenName + " opätovne uverejnil stream.";
                 }),
@@ -4933,9 +4934,9 @@
                 n("a532072a", "Diváci"),
                 n("d9508ab0", "zobr."),
                 n("d9f9dec0", "Zobraziť priestor"),
-                n("h0c1f37a", "Zobraziť analýzu priestoru"),
-                n("e41fffbc", "Celkový čas pozerania vašich videí.");
-            n("if2909ba", "Čas pozerania"),
+                n("h0c1f37a", "Zobraziť analýzu priestoru");
+            n("e41fffbc", "Celkový čas pozerania vašich videí."),
+                n("if2909ba", "Čas pozerania"),
                 n("i0e5bf4c", "Vaše videá"),
                 n("ed99baea", "Prednostný prístup k beta verzii"),
                 n("gf898b70", "Rozšírené vyhľadávanie"),
@@ -5887,9 +5888,9 @@
                     return "Žiadne výsledky pre výraz " + e.query;
                 }),
                 n("f191a2ba", "nastavenia vyhľadávania"),
-                n("a068008a", "Priečinky sa momentálne nenačítavajú"),
-                n("f075b0e8", "Upraviť priečinok");
-            n("beba2a0e", "Vytvoriť nový priečinok Záložka"),
+                n("a068008a", "Priečinky sa momentálne nenačítavajú");
+            n("f075b0e8", "Upraviť priečinok"),
+                n("beba2a0e", "Vytvoriť nový priečinok Záložka"),
                 n("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
@@ -6893,9 +6894,9 @@
                 n("c05176ec", "Ak je táto pracovná pozícia vykonávaná na konkrétnom pracovisku, zadajte jeho umiestnenie. Ak je táto pozícia vykonávaná na diaľku, popíšte, kde sa môžu uchádzači nachádzať."),
                 n("d70c24d4", "Pomáha uchádzačom vyhľadať vašu pracovnú pozíciu."),
                 n("de1c4376", "Rozsah mzdy"),
-                n("hf352d42", "Pridajte voliteľné platové rozpätie, ktoré bude viditeľné pre uchádzačov. Ak to neurobíte, vezmite do úvahy prípadné zákony o transparentnosti platov v mieste, kde prijímate zamestnancov."),
-                n("ede7d0a2", "Mena");
-            n("b925c18c", "Typ mzdy"),
+                n("hf352d42", "Pridajte voliteľné platové rozpätie, ktoré bude viditeľné pre uchádzačov. Ak to neurobíte, vezmite do úvahy prípadné zákony o transparentnosti platov v mieste, kde prijímate zamestnancov.");
+            n("ede7d0a2", "Mena"),
+                n("b925c18c", "Typ mzdy"),
                 n("j3d242ce", "Neplatný rozsah"),
                 n("f4d07bd2", "Uveďte nepovinné údaje, ktoré uchádzačom uľahčia nájdenie vašich pracovných pozícií."),
                 n("b8cbb51a", "Zhrnutie pracovnej pozície"),
@@ -7873,8 +7874,7 @@
                 n("ea000ec8", "Už ste zrušili svoje Predplatné?"),
                 n("d7b8387e", "Ak ste už svoje Predplatné zrušili, nemusíte robiť nič. Platnosť Predplatného automaticky uplynie na konci fakturačného cyklu."),
                 n("f4166d9a", "Chcete zrušiť svoje Predplatné?"),
-                n("b74ff5fc", "Ak Predplatné zrušíte, jeho platnosť automaticky uplynie na konci fakturačného cyklu."),
-                n("ee9efbc8", "Pokračovať na zrušenie");
+                n("b74ff5fc", "Ak Predplatné zrušíte, jeho platnosť automaticky uplynie na konci fakturačného cyklu.");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var n = a[o];
@@ -7913,7 +7913,8 @@
                     r(e, a)
                 );
             }
-            n("c5d9c77a", "Zdá sa, že sa vyskytla menšia chyba. Žiadne obavy, nie je to vaša vina. Zavrite toto okno a skúste to znova."),
+            n("ee9efbc8", "Pokračovať na zrušenie"),
+                n("c5d9c77a", "Zdá sa, že sa vyskytla menšia chyba. Žiadne obavy, nie je to vaša vina. Zavrite toto okno a skúste to znova."),
                 n("jda53c24", "Predplatné môžete zrušiť prostredníctvom obchodu Apple App Store."),
                 n("g0a7a53e", "Predplatné môžete zrušiť prostredníctvom Obchodu Google Play."),
                 n("i5f14be7", function (e) {
@@ -8909,13 +8910,13 @@
                 }),
                 n("g60001bb", function (e) {
                     return "Zobraziť: " + e.advertiserName;
-                }),
-                n("dff1ddd9", function (e) {
-                    return "Prejsť na: " + e.advertiserName;
                 });
-            n("b0b22805", function (e) {
+            n("dff1ddd9", function (e) {
                 return "Prejsť na: " + e.advertiserName;
             }),
+                n("b0b22805", function (e) {
+                    return "Prejsť na: " + e.advertiserName;
+                }),
                 n("c67e71aa", "Pozerať"),
                 n("a6ada13e", "Nakupovať teraz"),
                 n("j0f12222", "Zobraziť viac"),
@@ -13382,4 +13383,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.112c1afa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.115fbe4a.js.map

@@ -45,8 +45,8 @@
                     G = r.$_$.fb,
                     H = r.$_$.s3,
                     P = r.$_$.i2,
-                    z = r.$_$.ji,
-                    j = r.$_$.uj,
+                    j = r.$_$.ji,
+                    z = r.$_$.uj,
                     F = r.$_$.we,
                     M = r.$_$.ue,
                     Y = r.$_$.mi,
@@ -55,12 +55,12 @@
                     K = r.$_$.gd;
                 function Q(k) {
                     return (function (k, r) {
-                        return W.call(r), u(r.bd5_1, k), r;
+                        return W.call(r), u(r.id7_1, k), r;
                     })(k, g(d(W)));
                 }
                 function W() {
                     tk.call(this);
-                    this.bd5_1 = m();
+                    this.id7_1 = m();
                 }
                 function X(k, r) {
                     for (var e = b(f(r, 10)), a = r.p(); a.q(); ) {
@@ -74,9 +74,9 @@
                 }
                 function kk() {
                     (e = this),
-                        (this.ed5_1 = v([q("<", "&gt;"), q(">", "&lt;"), q('"', "&quot;"), q("'", "&apos;"), q("&", "&amp;")])),
-                        (this.fd5_1 = X(0, this.ed5_1)),
-                        (this.gd5_1 = v([
+                        (this.ld7_1 = v([q("<", "&gt;"), q(">", "&lt;"), q('"', "&quot;"), q("'", "&apos;"), q("&", "&amp;")])),
+                        (this.md7_1 = X(0, this.ld7_1)),
+                        (this.nd7_1 = v([
                             q("'", "&apos;"),
                             q(" ", "&nbsp"),
                             q(" ", "&nbsp;"),
@@ -431,7 +431,7 @@
                             q("♥", "&hearts;"),
                             q("♦", "&diams;"),
                         ])),
-                        (this.hd5_1 = X(0, this.gd5_1));
+                        (this.od7_1 = X(0, this.nd7_1));
                     var k = m();
                     k.k(q("Æ", "&AElig")),
                         k.k(q("Æ", "&AElig;")),
@@ -2664,8 +2664,8 @@
                         k.k(q("𝓏", "&zscr;")),
                         k.k(q("‍", "&zwj;")),
                         k.k(q("‌", "&zwnj;")),
-                        (this.id5_1 = w(k)),
-                        (this.jd5_1 = X(0, this.id5_1));
+                        (this.pd7_1 = w(k)),
+                        (this.qd7_1 = X(0, this.pd7_1));
                 }
                 function rk() {
                     return null == e && new kk(), e;
@@ -2673,25 +2673,25 @@
                 function ek() {
                     a = this;
                     var k = v([q("\0", ""), q("\v", "&#11;"), q("\f", "&#12;"), q("￾", ""), q("￿", "")]);
-                    (this.ld5_1 = Q([new ak(rk().ed5_1), new ak(k), s.kd5(1, 8), s.kd5(14, 31), s.kd5(127, 132), s.kd5(134, 159), new mk()])), (this.md5_1 = Q([new ak(rk().gd5_1)])), (this.nd5_1 = Q([new ak(rk().id5_1), s.kd5(1, 8), s.kd5(14, 31), s.kd5(127, 132), s.kd5(134, 159)])), (this.od5_1 = Q([new ak(rk().hd5_1), new pk([])])), (this.pd5_1 = Q([new ak(rk().jd5_1), new pk([])])), (this.qd5_1 = Q([new ak(rk().fd5_1), new pk([])]));
+                    (this.sd7_1 = Q([new ak(rk().ld7_1), new ak(k), s.rd7(1, 8), s.rd7(14, 31), s.rd7(127, 132), s.rd7(134, 159), new mk()])), (this.td7_1 = Q([new ak(rk().nd7_1)])), (this.ud7_1 = Q([new ak(rk().pd7_1), s.rd7(1, 8), s.rd7(14, 31), s.rd7(127, 132), s.rd7(134, 159)])), (this.vd7_1 = Q([new ak(rk().od7_1), new pk([])])), (this.wd7_1 = Q([new ak(rk().qd7_1), new pk([])])), (this.xd7_1 = Q([new ak(rk().md7_1), new pk([])]));
                 }
                 function ak(k) {
                     tk.call(this);
-                    this.td5_1 = E();
-                    this.ud5_1 = A();
+                    this.ad8_1 = E();
+                    this.bd8_1 = A();
                     for (var r = 2147483647, e = 0, a = k.p(); a.q(); ) {
                         var t = a.r(),
                             o = t.ph(),
                             i = t.qh();
-                        this.td5_1.u2(o, i);
+                        this.ad8_1.u2(o, i);
                         var l = D(o, 0),
                             s = L(l),
                             c = S(x(s));
-                        this.ud5_1.k(new _(c));
+                        this.bd8_1.k(new _(c));
                         var n = o.length;
                         n < r && (r = n), n > e && (e = n);
                     }
-                    (this.vd5_1 = r), (this.wd5_1 = e);
+                    (this.cd8_1 = r), (this.dd8_1 = e);
                 }
                 function tk() {}
                 function ok() {
@@ -2705,10 +2705,10 @@
                     O.call(this, k, r);
                 }
                 function sk(k, r) {
-                    return k.yd5_1.w(r);
+                    return k.fd8_1.w(r);
                 }
                 function ck() {
-                    (l = this), (this.zd5_1 = B(uk()));
+                    (l = this), (this.gd8_1 = B(uk()));
                 }
                 function nk() {
                     return null == l && new ck(), l;
@@ -2719,11 +2719,11 @@
                 function pk(k) {
                     nk(), tk.call(this);
                     var r;
-                    (r = 0 === k.length ? nk().zd5_1 : G(k.slice())), (this.yd5_1 = r);
+                    (r = 0 === k.length ? nk().gd8_1 : G(k.slice())), (this.fd8_1 = r);
                 }
                 function dk() {}
                 function gk(k, r) {
-                    ok.call(this), (this.dd6_1 = k), (this.ed6_1 = r);
+                    ok.call(this), (this.kd8_1 = k), (this.ld8_1 = r);
                 }
                 function mk() {
                     ok.call(this);
@@ -2740,7 +2740,7 @@
                         })(0, r));
                 }
                 function fk() {
-                    (this.ad6_1 = 65536), (this.bd6_1 = 1114111);
+                    (this.hd8_1 = 65536), (this.id8_1 = 1114111);
                 }
                 h(tk, "StringTranslator"),
                     h(W, "AggregateTranslator", W, tk),
@@ -2763,45 +2763,45 @@
                     ),
                     h(mk, "UnicodeUnpairedSurrogateRemover", mk, ok),
                     y(fk, "CharsUtils"),
-                    (d(W).cd5 = function (k, r, e) {
-                        for (var a = this.bd5_1.p(); a.q(); ) {
-                            var t = a.r().cd5(k, r, e);
+                    (d(W).jd7 = function (k, r, e) {
+                        for (var a = this.id7_1.p(); a.q(); ) {
+                            var t = a.r().jd7(k, r, e);
                             if (0 !== t) return t;
                         }
                         return 0;
                     }),
-                    (d(ek).rd5 = function (k) {
-                        return this.pd5_1.dd5(k);
+                    (d(ek).yd7 = function (k) {
+                        return this.wd7_1.kd7(k);
                     }),
-                    (d(ek).sd5 = function (k) {
-                        return this.rd5(k);
+                    (d(ek).zd7 = function (k) {
+                        return this.yd7(k);
                     }),
-                    (d(ak).cd5 = function (k, r, e) {
+                    (d(ak).jd7 = function (k, r, e) {
                         var a = D(k, r),
                             t = L(a),
                             o = S(x(t));
-                        if (this.ud5_1.w(new _(o))) {
-                            var i = this.wd5_1;
-                            ((r + this.wd5_1) | 0) > k.length && (i = (k.length - r) | 0);
+                        if (this.bd8_1.w(new _(o))) {
+                            var i = this.dd8_1;
+                            ((r + this.dd8_1) | 0) > k.length && (i = (k.length - r) | 0);
                             var l = i,
-                                s = this.vd5_1;
+                                s = this.cd8_1;
                             if (s <= l)
                                 do {
                                     var c = l;
                                     l = (l + -1) | 0;
                                     var n = T(k, r, (r + c) | 0),
-                                        u = this.td5_1.r2($(n));
+                                        u = this.ad8_1.r2($(n));
                                     if (null != u) return e.f9(u), N(n);
                                 } while (c !== s);
                         }
                         return 0;
                     }),
-                    (d(tk).dd5 = function (k) {
+                    (d(tk).kd7 = function (k) {
                         var r = V(n(k.length, 2));
                         return (
                             (function (k, r, e) {
                                 for (var a = 0, t = r.length; a < t; ) {
-                                    var o = k.cd5(r, a, e);
+                                    var o = k.jd7(r, a, e);
                                     if (0 !== o) {
                                         var i = 0;
                                         if (i < o)
@@ -2820,12 +2820,12 @@
                             r.toString()
                         );
                     }),
-                    (d(ok).cd5 = function (k, r, e) {
+                    (d(ok).jd7 = function (k, r, e) {
                         var a = D(k, r),
                             t = L(a);
-                        return this.xd5(t, e) ? 1 : 0;
+                        return this.ed8(t, e) ? 1 : 0;
                     }),
-                    (d(pk).cd5 = function (k, r, e) {
+                    (d(pk).jd7 = function (k, r, e) {
                         var a = k.length;
                         if (D(k, r) === H(38) && r < ((a - 2) | 0) && D(k, (r + 1) | 0) === H(35)) {
                             var t = (r + 2) | 0,
@@ -2861,16 +2861,16 @@
                                 if (sk(this, (ik(), o))) throw P("Semi-colon required at end of numeric entity");
                             }
                             try {
-                                h = z($(T(k, t, s)), i ? 16 : 10);
+                                h = j($(T(k, t, s)), i ? 16 : 10);
                             } catch (k) {
-                                if (k instanceof j) {
+                                if (k instanceof z) {
                                     return 0;
                                 }
                                 throw k;
                             }
                             var b = h;
                             if (b > 65535)
-                                for (var q = c.cd6(b), v = 0, w = q.length; v < w; ) {
+                                for (var q = c.jd8(b), v = 0, w = q.length; v < w; ) {
                                     var y = q[v];
                                     (v = (v + 1) | 0), e.g9(y);
                                 }
@@ -2890,13 +2890,13 @@
                         }
                         return 0;
                     }),
-                    (d(dk).kd5 = function (k, r) {
+                    (d(dk).rd7 = function (k, r) {
                         return new gk(M(k, r), !0);
                     }),
-                    (d(gk).xd5 = function (k, r) {
-                        return this.ed6_1 === this.dd6_1.jm(k) && (r.f9("&#"), r.f9(Y(k, 10)), r.g9(H(59)), !0);
+                    (d(gk).ed8 = function (k, r) {
+                        return this.ld8_1 === this.kd8_1.jm(k) && (r.f9("&#"), r.f9(Y(k, 10)), r.g9(H(59)), !0);
                     }),
-                    (d(mk).xd5 = function (k, r) {
+                    (d(mk).ed8 = function (k, r) {
                         var e,
                             a = H(55296);
                         if (k >= L(a)) {
@@ -2905,7 +2905,7 @@
                         } else e = !1;
                         return e;
                     }),
-                    (d(fk).cd6 = function (k) {
+                    (d(fk).jd8 = function (k) {
                         var r;
                         if (
                             (function (k, r) {
@@ -2935,4 +2935,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-170d59ab.7589c73a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-170d59ab.910f054a.js.map

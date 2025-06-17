@@ -1310,7 +1310,8 @@
                 n("j77292b7", function (e) {
                     return "Моля, изберете само до " + e.count + " файл" + t(e.count, "", "а");
                 }),
-                n("cbc8fed4", "Този превод верен ли е? Остави ни отзив, за да можем да се подобрим:"),
+                n("d6b533dc", "Rate this translation:"),
+                n("j2f9ab6e", "Thank you for your feedback!"),
                 n("d56779a2", "разбираем"),
                 n("b6fe8a56", "объркващ или неясен"),
                 n("i73a7d48", "Преведено от Google"),
@@ -1915,9 +1916,9 @@
                 n("i89195ea", "Разделител"),
                 n("da8ac57c", "Редактиране на надписа"),
                 n("a8fdd09c", "Публикуване на статия"),
-                n("d8047cc8", "Публикуване"),
-                n("ff7ddca2", "Статията ти ще се покаже като публикация, след като бъде публикувана. Освен това може да я намериш в раздела „Статии“ в профила си.");
-            n("ef34d7be", "Контролите за аудитория и отговор не могат да се редактират, след като статията е публикувана."),
+                n("d8047cc8", "Публикуване");
+            n("ff7ddca2", "Статията ти ще се покаже като публикация, след като бъде публикувана. Освен това може да я намериш в раздела „Статии“ в профила си."),
+                n("ef34d7be", "Контролите за аудитория и отговор не могат да се редактират, след като статията е публикувана."),
                 n("e52d4998", "Избери аудиторията си"),
                 n("d7985b24", "Избери кой може да отговаря на тази статия"),
                 n("b5660338", "Преглед на хроника"),
@@ -2971,9 +2972,9 @@
                 n("a7de64de", "Информация за рекламите"),
                 n("jb0a4c36", "Блог"),
                 n("ce6d095a", "Работни места"),
-                n("e0adec82", "Ресурси за марки"),
-                n("df1b7550", "Маркетинг");
-            n("he258678", "X за бизнеса"),
+                n("e0adec82", "Ресурси за марки");
+            n("df1b7550", "Маркетинг"),
+                n("he258678", "X за бизнеса"),
                 n("c6f58084", "Разработчици"),
                 n("d83f18d2", "Директория"),
                 n("hc5aa17c", "Вземи приложението X"),
@@ -3883,11 +3884,11 @@
                 n("a2bf8b8a", "Преминаване към слушане"),
                 n("caa8d928", "Превключване на потискане на шума"),
                 n("b5d88f0c", "Само за служители"),
-                n("c855ab8e", "Само за абонати"),
-                n("ddeb0a3c", "Това е Общността. Харесват ли ти хората? Разгледай наоколо.");
-            n("e111f531", function (e) {
-                return e.count + " се включи" + t(e.count, "", "ха");
-            }),
+                n("c855ab8e", "Само за абонати");
+            n("ddeb0a3c", "Това е Общността. Харесват ли ти хората? Разгледай наоколо."),
+                n("e111f531", function (e) {
+                    return e.count + " се включи" + t(e.count, "", "ха");
+                }),
                 n("cbef820f", function (e) {
                     return e.screenName + " препубликува потока!";
                 }),
@@ -4923,9 +4924,9 @@
                 n("a532072a", "Зрители"),
                 n("d9508ab0", "преглеждания"),
                 n("d9f9dec0", "Преглед на Залата"),
-                n("h0c1f37a", "Преглед на статистиките за Залата"),
-                n("e41fffbc", "Общото време на гледане на твоите видеоклипове.");
-            n("if2909ba", "Време на гледане"),
+                n("h0c1f37a", "Преглед на статистиките за Залата");
+            n("e41fffbc", "Общото време на гледане на твоите видеоклипове."),
+                n("if2909ba", "Време на гледане"),
                 n("i0e5bf4c", "Вашите видеоклипове"),
                 n("ed99baea", "Ранен достъп до бета-версия"),
                 n("gf898b70", "Разширено търсене"),
@@ -5877,9 +5878,9 @@
                     return "Няма резултати за „" + e.query + "“";
                 }),
                 n("f191a2ba", "настройките си за търсене"),
-                n("a068008a", "В момента папките не се зареждат"),
-                n("f075b0e8", "Редактиране на папката");
-            n("beba2a0e", "Създаване на нова папка с отметки"),
+                n("a068008a", "В момента папките не се зареждат");
+            n("f075b0e8", "Редактиране на папката"),
+                n("beba2a0e", "Създаване на нова папка с отметки"),
                 n("e41c9b4f", function (e) {
                     return "Запазено в(ъв) „" + e.bookmarkFolderName + "“";
                 }),
@@ -6883,9 +6884,9 @@
                 n("c05176ec", "Ако тази роля е на място, въведи местоположението на мястото (местата). Ако ролята е дистанционна, опиши къде могат да се намират кандидатите."),
                 n("d70c24d4", "Използва се, за да помогне на кандидатите да търсят твоята работна позиция."),
                 n("de1c4376", "Диапазон на работна заплата"),
-                n("hf352d42", "Добави незадължителен диапазон на работната заплата, който ще бъде видим за кандидатите. Ако решиш да не го правиш, имай предвид всички закони за прозрачност на заплащането за местоположението, за което наемаш хора."),
-                n("ede7d0a2", "Валута");
-            n("b925c18c", "Тип на работната заплата"),
+                n("hf352d42", "Добави незадължителен диапазон на работната заплата, който ще бъде видим за кандидатите. Ако решиш да не го правиш, имай предвид всички закони за прозрачност на заплащането за местоположението, за което наемаш хора.");
+            n("ede7d0a2", "Валута"),
+                n("b925c18c", "Тип на работната заплата"),
                 n("j3d242ce", "Невалиден диапазон"),
                 n("f4d07bd2", "Включи незадължителни данни, за да улесниш кандидатите при откриването на ролите ти с помощта на търсенето."),
                 n("b8cbb51a", "Кратко описание на работната позиция"),
@@ -7863,8 +7864,7 @@
                 n("ea000ec8", "Вече анулира абонамента си?"),
                 n("d7b8387e", "Ако вече си анулирал(а), няма нужда да правиш нищо повече. Абонаментът ти автоматично ще изтече в края на цикъла на таксуване."),
                 n("f4166d9a", "Искаш да анулираш абонамента си?"),
-                n("b74ff5fc", "Ако анулираш абонамента си, той автоматично ще изтече в края на цикъла на таксуване."),
-                n("ee9efbc8", "Продължаване към анулирането");
+                n("b74ff5fc", "Ако анулираш абонамента си, той автоматично ще изтече в края на цикъла на таксуване.");
             function f(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7903,7 +7903,8 @@
                     r(e, c)
                 );
             }
-            n("c5d9c77a", "Изглежда, че нещо се обърка. Не се притеснявай, нямаш вина. Затвори този прозорец и опитай отново."),
+            n("ee9efbc8", "Продължаване към анулирането"),
+                n("c5d9c77a", "Изглежда, че нещо се обърка. Не се притеснявай, нямаш вина. Затвори този прозорец и опитай отново."),
                 n("jda53c24", "Можеш да анулираш абонамента си през App Store на Apple."),
                 n("g0a7a53e", "Можеш да анулираш абонамента си през Google Play Магазин."),
                 n("i5f14be7", function (e) {
@@ -8899,13 +8900,13 @@
                 }),
                 n("g60001bb", function (e) {
                     return "Преглед на " + e.advertiserName;
-                }),
-                n("dff1ddd9", function (e) {
-                    return "Към " + e.advertiserName;
                 });
-            n("b0b22805", function (e) {
-                return "Посещаване на " + e.advertiserName;
+            n("dff1ddd9", function (e) {
+                return "Към " + e.advertiserName;
             }),
+                n("b0b22805", function (e) {
+                    return "Посещаване на " + e.advertiserName;
+                }),
                 n("c67e71aa", "Гледай сега"),
                 n("a6ada13e", "Пазаруване сега"),
                 n("j0f12222", "Преглед на още"),
@@ -13024,8 +13025,8 @@
                 y = (m._currencyNameFormat, m._currencyFormatterFn),
                 k = (m._validateParameterTypeDate, m._dateToPartsFormat, m._dateToPartsFormatterFn),
                 p = (m._dateFormat, m._dateFormatterFn),
-                N = m._relativeTimeFormatterFn,
-                l = m._unitFormatterFn;
+                l = m._relativeTimeFormatterFn,
+                N = m._unitFormatterFn;
             (m.a1205364346 = s(["", , 1, 0, 1, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("truncate"), "∞", "NaN", { ".": ",", ",": " ", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { one: "0 хил'.'", other: "0 хил'.'" }, 4: { one: "00 хил'.'", other: "00 хил'.'" }, 5: { one: "000 хил'.'", other: "000 хил'.'" }, 6: { one: "0 млн'.'", other: "0 млн'.'" }, 7: { one: "00 млн'.'", other: "00 млн'.'" }, 8: { one: "000 млн'.'", other: "000 млн'.'" }, 9: { one: "0 млрд'.'", other: "0 млрд'.'" }, 10: { one: "00 млрд'.'", other: "00 млрд'.'" }, 11: { one: "000 млрд'.'", other: "000 млрд'.'" }, 12: { one: "0 трлн'.'", other: "0 трлн'.'" }, 13: { one: "00 трлн'.'", other: "00 трлн'.'" }, 14: { one: "000 трлн'.'", other: "000 трлн'.'" }, maxExponent: 14 }], m("bg").pluralGenerator({}))),
                 (m.b560738426 = s(["", , 1, 0, 3, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g(), "∞", "NaN", { ".": ",", ",": " ", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
                 (m.b1229638476 = s(["", , 1, 0, 2, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("round"), "∞", "NaN", { ".": ",", ",": " ", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
@@ -13224,23 +13225,23 @@
                 (m.b781046862 = p(m("bg").dateToPartsFormatter({ date: "medium" }))),
                 (m.b1475067226 = p(m("bg").dateToPartsFormatter({ skeleton: "MMMM" }))),
                 (m.b221821786 = p(m("bg").dateToPartsFormatter({ skeleton: "EEEE" }))),
-                (m.b1380651950 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "след {0} ден", "relativeTimePattern-count-other": "след {0} дни" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "преди {0} ден", "relativeTimePattern-count-other": "преди {0} дни" }, "relative-type--2": "онзи ден", "relative-type--1": "вчера", "relative-type-0": "днес", "relative-type-1": "утре", "relative-type-2": "вдругиден" })),
-                (m.a438588471 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "секунди", one: "{0} секунда", other: "{0} секунди", perUnitPattern: "{0} за секунда" } })),
-                (m.b1448374825 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "минути", one: "{0} минута", other: "{0} минути", perUnitPattern: "{0} на минута" } })),
-                (m.b554461657 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "часове", one: "{0} час", other: "{0} часа", perUnitPattern: "{0} за час" } })),
-                (m.b2026876488 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "с", one: "{0} с", other: "{0} с", perUnitPattern: "{0}/с" } })),
-                (m.a1372562264 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "мин", one: "{0} мин", other: "{0} мин", perUnitPattern: "{0}/мин" } })),
-                (m.a1429657512 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ч", one: "{0} ч", other: "{0} ч", perUnitPattern: "{0}/h" } })),
-                (m.a60464508 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "д", one: "{0} д", other: "{0} д", perUnitPattern: "{0}/д" } })),
-                (m.a561430779 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "дни", one: "{0} ден", other: "{0} дни", perUnitPattern: "{0} на ден" } })),
-                (m.a1864654560 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "м", one: "{0} м", other: "{0} м", perUnitPattern: "{0}/месец" } })),
-                (m.b2037806241 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "месеци", one: "{0} месец", other: "{0} месеца", perUnitPattern: "{0} на месец" } })),
-                (m.b1460747391 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "г", one: "{0} г", other: "{0} г", perUnitPattern: "{0}/год." } })),
-                (m.a926327872 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "години", one: "{0} година", other: "{0} години", perUnitPattern: "{0} на година" } })),
-                (m.b1850302923 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "секунди", one: "{0} с", other: "{0} с", perUnitPattern: "{0}/с" } })),
-                (m.b216622955 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "мин", one: "{0} мин", other: "{0} мин", perUnitPattern: "{0}/мин" } })),
-                (m.a1724881477 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "часове", one: "{0} ч", other: "{0} ч", perUnitPattern: "{0}/h" } })),
-                (m.b1997441506 = l(m("bg").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "с", one: "{0} с", other: "{0} с", perUnitPattern: "{0}/с" } })),
+                (m.b1380651950 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "след {0} ден", "relativeTimePattern-count-other": "след {0} дни" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "преди {0} ден", "relativeTimePattern-count-other": "преди {0} дни" }, "relative-type--2": "онзи ден", "relative-type--1": "вчера", "relative-type-0": "днес", "relative-type-1": "утре", "relative-type-2": "вдругиден" })),
+                (m.a438588471 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "секунди", one: "{0} секунда", other: "{0} секунди", perUnitPattern: "{0} за секунда" } })),
+                (m.b1448374825 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "минути", one: "{0} минута", other: "{0} минути", perUnitPattern: "{0} на минута" } })),
+                (m.b554461657 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "часове", one: "{0} час", other: "{0} часа", perUnitPattern: "{0} за час" } })),
+                (m.b2026876488 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "с", one: "{0} с", other: "{0} с", perUnitPattern: "{0}/с" } })),
+                (m.a1372562264 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "мин", one: "{0} мин", other: "{0} мин", perUnitPattern: "{0}/мин" } })),
+                (m.a1429657512 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ч", one: "{0} ч", other: "{0} ч", perUnitPattern: "{0}/h" } })),
+                (m.a60464508 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "д", one: "{0} д", other: "{0} д", perUnitPattern: "{0}/д" } })),
+                (m.a561430779 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "дни", one: "{0} ден", other: "{0} дни", perUnitPattern: "{0} на ден" } })),
+                (m.a1864654560 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "м", one: "{0} м", other: "{0} м", perUnitPattern: "{0}/месец" } })),
+                (m.b2037806241 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "месеци", one: "{0} месец", other: "{0} месеца", perUnitPattern: "{0} на месец" } })),
+                (m.b1460747391 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "г", one: "{0} г", other: "{0} г", perUnitPattern: "{0}/год." } })),
+                (m.a926327872 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "години", one: "{0} година", other: "{0} години", perUnitPattern: "{0} на година" } })),
+                (m.b1850302923 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "секунди", one: "{0} с", other: "{0} с", perUnitPattern: "{0}/с" } })),
+                (m.b216622955 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "мин", one: "{0} мин", other: "{0} мин", perUnitPattern: "{0}/мин" } })),
+                (m.a1724881477 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "часове", one: "{0} ч", other: "{0} ч", perUnitPattern: "{0}/h" } })),
+                (m.b1997441506 = N(m("bg").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "с", one: "{0} с", other: "{0} с", perUnitPattern: "{0}/с" } })),
                 n("d58baa7f", m.a1205364346),
                 n("ia24dc8d", m.b560738426),
                 n("iab73d4b", m.b1229638476),
@@ -13365,4 +13366,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bg.dfb3490a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bg.23ea126a.js.map

@@ -31,7 +31,7 @@
                     });
         },
         228805: (e, s, t) => {
-            t.d(s, { r: () => Ge });
+            t.d(s, { r: () => Le });
             var n = t(552322),
                 a = t(983706),
                 r = t(193686),
@@ -41,7 +41,7 @@
                 c = t(378364),
                 d = t(332161),
                 m = t(789764),
-                u = t(455091),
+                u = t(263033),
                 x = t(165272),
                 h = t(369962);
             const g = i.com.x.dms.model.InformationalItemContents;
@@ -56,108 +56,117 @@
                 return (0, n.jsx)("div", { className: "flex justify-center items-center my-2", children: e });
             }
             function v({ contents: e }) {
-                const s = e.affectedUsers.asJsReadonlyArrayView();
-                if (s.length > 1) {
-                    const i = s[0],
-                        o = s.flatMap((e) => (e.profileImageUrl ? [e.profileImageUrl] : [])),
-                        l = e.sender?.displayName ? ((t = i?.displayName || "Unknown"), (a = s.length - 1), (r = e.sender?.displayName), `${t} and ${a} other were added by ${r}`) : ((e, s) => `${e} and ${s} other were added`)(i?.displayName || "Unknown", s.length - 1);
-                    return (0, n.jsxs)("div", { className: "flex flex-col items-center", children: [(0, n.jsx)(m.o, { urls: o }), (0, n.jsx)(f, { message: l })] });
+                const { t: s } = (0, u.$G)(),
+                    t = e.affectedUsers.asJsReadonlyArrayView();
+                if (t.length > 1) {
+                    const o = t[0],
+                        l = t.flatMap((e) => (e.profileImageUrl ? [e.profileImageUrl] : [])),
+                        c = e.sender?.displayName ? ((a = o?.displayName || "Unknown"), (r = t.length - 1), (i = e.sender?.displayName), s("{addedName, count} {{addedName} and {count, plural, one {other} other {others}} were added by {addedBy}", { addedName: a, count: r, addedBy: i })) : ((e, t) => s("{addedName, count} {{addedName} and {count, plural, one {other} other {others}} were added", { addedName: e, count: t }))(o?.displayName || "Unknown", t.length - 1);
+                    return (0, n.jsxs)("div", { className: "flex flex-col items-center", children: [(0, n.jsx)(m.o, { urls: l }), (0, n.jsx)(f, { message: c })] });
                 }
-                var t, a, r;
-                const i = s[0],
-                    o = e.sender?.displayName ? ((e, s) => `${e} was added by ${s}`)(i?.displayName || "Unknown", e.sender?.displayName) : ((e) => `${e} was added`)(i?.displayName || "Unknown");
-                return (0, n.jsxs)("div", { className: "flex gap-1", children: [(0, n.jsx)(p, { avatarUrl: i?.profileImageUrl, screenName: e.sender?.screenName }), (0, n.jsx)(f, { message: o })] });
-            }
-            function w({ contents: e }) {
-                const s = e.affectedUsers.asJsReadonlyArrayView();
-                if (s.length > 1) {
-                    const e = s[0],
-                        r = s.flatMap((e) => (e.profileImageUrl ? [e.profileImageUrl] : [])),
-                        i = ((t = e?.displayName || "Someone"), (a = s.length - 1), `${t} and ${a} others were removed`);
-                    return (0, n.jsxs)("div", { className: "flex flex-col items-center", children: [(0, n.jsx)(m.o, { urls: r }), (0, n.jsx)(f, { message: i })] });
-                }
-                var t, a;
-                const r = s[0],
-                    i = ((e) => `${e} was removed`)(r?.displayName || "Unknown");
-                return (0, n.jsxs)("div", { className: "flex gap-1", children: [(0, n.jsx)(p, { avatarUrl: r?.profileImageUrl }), (0, n.jsx)(f, { message: i })] });
+                var a, r, i;
+                const o = t[0],
+                    l = e.sender?.displayName ? ((e, t) => s("{addedName} was added by {addedBy}", { addedName: e, addedBy: t }))(o?.displayName || "Unknown", e.sender?.displayName) : ((e) => s("{addedName} was added", { addedName: e }))(o?.displayName || "Unknown");
+                return (0, n.jsxs)("div", { className: "flex gap-1", children: [(0, n.jsx)(p, { avatarUrl: o?.profileImageUrl, screenName: e.sender?.screenName }), (0, n.jsx)(f, { message: l })] });
             }
             function y({ contents: e }) {
-                const s = e.sender,
-                    t = s?.displayName ?? "A member",
-                    a = ((e, s) => `${s} made ${e} member${e > 1 ? "s" : ""} an admin`)(e.affectedUsers.asJsReadonlyArrayView().length, t);
-                return (0, n.jsx)(f, { message: a });
+                const { t: s } = (0, u.$G)(),
+                    t = e.affectedUsers.asJsReadonlyArrayView();
+                if (t.length > 1) {
+                    const e = t[0],
+                        i = t.flatMap((e) => (e.profileImageUrl ? [e.profileImageUrl] : [])),
+                        o = ((a = e?.displayName || "Someone"), (r = t.length - 1), s("{removedName, count} {{removedName} and {count, plural, one {other} other {others}} were removed", { removedName: a, count: r }));
+                    return (0, n.jsxs)("div", { className: "flex flex-col items-center", children: [(0, n.jsx)(m.o, { urls: i }), (0, n.jsx)(f, { message: o })] });
+                }
+                var a, r;
+                const i = t[0],
+                    o = ((e) => s("{removedName} was removed", { removedName: e }))(i?.displayName || "Unknown");
+                return (0, n.jsxs)("div", { className: "flex gap-1", children: [(0, n.jsx)(p, { avatarUrl: i?.profileImageUrl }), (0, n.jsx)(f, { message: o })] });
             }
-            function b({ contents: e }) {
-                const s = e.sender,
-                    t = s?.displayName ?? "A member",
-                    a = ((e, s) => `${s} removed admin status from ${e} member${e > 1 ? "s" : ""}`)(e.affectedUsers.asJsReadonlyArrayView().length, t);
-                return (0, n.jsx)(f, { message: a });
+            function w({ contents: e }) {
+                const { t: s } = (0, u.$G)(),
+                    t = e.sender,
+                    a = t?.displayName ?? s("A member"),
+                    r = ((e, t) => s("{senderName, count} {{senderName} made {count, plural, one {member} other {members}} an admin", { senderName: t, count: e }))(e.affectedUsers.asJsReadonlyArrayView().length, a);
+                return (0, n.jsx)(f, { message: r });
             }
             function N({ contents: e }) {
-                const s = e.sender,
-                    t = s?.displayName ?? "A member",
-                    a = ((e, s) => `${e} changed the group name to ${s}`)(e.senderIsCurrentUser ? "You" : t, e.newTitle ?? "Untitled");
-                return (0, n.jsx)(f, { message: a });
+                const { t: s } = (0, u.$G)(),
+                    t = e.sender,
+                    a = t?.displayName ?? s("A member"),
+                    r = ((e, t) => s("{senderName, count} {{senderName} removed admin status from {count, plural, one {member} other {members}}", { senderName: t, count: e }))(e.affectedUsers.asJsReadonlyArrayView().length, a);
+                return (0, n.jsx)(f, { message: r });
+            }
+            function b({ contents: e }) {
+                const { t: s } = (0, u.$G)(),
+                    t = e.sender,
+                    a = t?.displayName ?? s("A member"),
+                    r = ((e, t) => s("{senderName} changed the group name to {title}", { senderName: e, title: t }))(e.senderIsCurrentUser ? s("You") : a, e.newTitle ?? s("Untitled"));
+                return (0, n.jsx)(f, { message: r });
             }
             function I({ contents: e }) {
-                const s = e.sender,
-                    t = s?.displayName ?? "A member",
-                    a = ((e) => `${e} updated the group photo`)(e.senderIsCurrentUser ? "You" : t);
-                return (0, n.jsx)(f, { message: a });
+                const { t: s } = (0, u.$G)(),
+                    t = e.sender,
+                    a = t?.displayName ?? s("A member"),
+                    r = ((e) => s("{senderName} updated the group photo", { senderName: e }))(e.senderIsCurrentUser ? s("You") : a);
+                return (0, n.jsx)(f, { message: r });
             }
             function C({ contents: e }) {
-                const s = e.newTtl?.inWholeMilliseconds || 0,
-                    t = e.sender,
-                    a = t?.displayName ?? "A member",
-                    r = e.senderIsCurrentUser ? "You" : a,
-                    i = 0 === s ? ((e) => `${e} turned vanishing mode off`)(r) : ((e, s) => `${e} set vanishing mode to ${(0, h.L)(s)}`)(r, s);
-                return (0, n.jsx)(f, { message: i });
+                const { t: s } = (0, u.$G)(),
+                    t = e.newTtl?.inWholeMilliseconds || 0,
+                    a = e.sender,
+                    r = a?.displayName ?? s("A member"),
+                    i = e.senderIsCurrentUser ? s("You") : r,
+                    o = 0 === t ? ((e) => s("{senderName} turned vanishing mode off", { senderName: e }))(i) : ((e, t) => s("{senderName} set vanishing mode to {duration}", { senderName: e, duration: (0, h.L)(t) }))(i, t);
+                return (0, n.jsx)(f, { message: o });
             }
             function D({ contents: e }) {
-                let s = e.newDate.toString();
-                if (e.newDate === i.com.x.dms.model.KmpDateFormat.Today) s = "Today";
-                else if (e.newDate === i.com.x.dms.model.KmpDateFormat.Yesterday) s = "Yesterday";
+                const { t: s } = (0, u.$G)();
+                let t = e.newDate.toString();
+                if (e.newDate === i.com.x.dms.model.KmpDateFormat.Today) t = s("Today");
+                else if (e.newDate === i.com.x.dms.model.KmpDateFormat.Yesterday) t = s("Yesterday");
                 else if (e.newDate instanceof i.com.x.dms.model.KmpDateFormat.Date) {
-                    const t = e.newDate.kmpDate,
-                        n = new Date(t.year, t.month - 1, t.day),
+                    const s = e.newDate.kmpDate,
+                        n = new Date(s.year, s.month - 1, s.day),
                         a = "undefined" != typeof navigator ? navigator.language : "en",
                         r = { month: "short", day: "numeric", ...(e.newDate.includeYear && { year: "numeric" }) };
-                    s = n.toLocaleDateString(a, r);
+                    t = n.toLocaleDateString(a, r);
                 }
-                return (0, n.jsx)(f, { message: s });
+                return (0, n.jsx)(f, { message: t });
             }
             function S({ informationalItem: e }) {
                 const s = e.contents,
                     { t } = (0, u.$G)();
-                return (0, n.jsx)(j, { children: s instanceof g.AddedGroupMembers ? (0, n.jsx)(v, { contents: s }) : s instanceof g.RemovedGroupMembers ? (0, n.jsx)(w, { contents: s }) : s instanceof g.AddedGroupAdmins ? (0, n.jsx)(y, { contents: s }) : s instanceof g.RemovedGroupAdmins ? (0, n.jsx)(b, { contents: s }) : s instanceof g.ChangedGroupTitle ? (0, n.jsx)(N, { contents: s }) : s instanceof g.ChangedGroupAvatar ? (0, n.jsx)(I, { contents: s }) : s instanceof g.DefaultTtlChanged ? (0, n.jsx)(C, { contents: s }) : s instanceof g.DateChanged ? (0, n.jsx)(D, { contents: s }) : s instanceof g.GroupInviteEnabled ? (0, n.jsx)(f, { message: t("Invite link enabled") }) : s instanceof g.GroupInviteDisabled ? (0, n.jsx)(f, { message: t("Invite link disabled") }) : null });
+                return (0, n.jsx)(j, { children: s instanceof g.AddedGroupMembers ? (0, n.jsx)(v, { contents: s }) : s instanceof g.RemovedGroupMembers ? (0, n.jsx)(y, { contents: s }) : s instanceof g.AddedGroupAdmins ? (0, n.jsx)(w, { contents: s }) : s instanceof g.RemovedGroupAdmins ? (0, n.jsx)(N, { contents: s }) : s instanceof g.ChangedGroupTitle ? (0, n.jsx)(b, { contents: s }) : s instanceof g.ChangedGroupAvatar ? (0, n.jsx)(I, { contents: s }) : s instanceof g.DefaultTtlChanged ? (0, n.jsx)(C, { contents: s }) : s instanceof g.DateChanged ? (0, n.jsx)(D, { contents: s }) : s instanceof g.GroupInviteEnabled ? (0, n.jsx)(f, { message: t("Invite link enabled") }) : s instanceof g.GroupInviteDisabled ? (0, n.jsx)(f, { message: t("Invite link disabled") }) : null });
             }
             var R = t(470851),
                 k = t(318063),
                 E = t(993165),
                 M = t(553453),
-                $ = t(611105),
-                U = t(147602),
-                A = t(436995),
+                U = t(611105),
+                A = t(147602),
+                $ = t(436995),
                 T = t(145731),
                 F = t(668631),
                 z = t(421018);
-            const P = i.com.x.dms.model.ChatMessageAction,
+            const G = i.com.x.dms.model.ChatMessageAction,
                 V = i.com.x.dms.chat.DmEvent,
-                J = i.com.x.models.KMPRect;
-            function L({ messageItem: e, messageFocusedDialog: s, isMessageFocused: t, isFromAttachment: a, onEvent: r }) {
+                P = i.com.x.models.KMPRect;
+            function J({ messageItem: e, messageFocusedDialog: s, isMessageFocused: t, isFromAttachment: a, onEvent: r }) {
                 const i = t || !!s?.longPress,
                     o = s?.longPress
                         ?.getActions()
                         .asJsReadonlyArrayView()
                         .map((e) =>
                             ((e, s) => {
-                                const t = () => s(new V.MessageActionClick(e));
+                                const { t } = (0, u.$G)(),
+                                    a = () => s(new V.MessageActionClick(e));
                                 switch (e) {
-                                    case P.Report:
-                                    case P.DsaReport:
+                                    case G.Report:
+                                    case G.DsaReport:
                                         return null;
                                 }
-                                return e instanceof P.Reply ? { text: "Reply", icon: (0, n.jsx)(M.Z, {}), onClick: t } : e instanceof P.CancelSend ? { text: "Cancel message", icon: void 0, onClick: t } : e instanceof P.RetrySend ? { text: "Try sending again", icon: (0, n.jsx)($.Z, {}), onClick: t } : e instanceof P.CopyText ? { text: "Copy message text", icon: (0, n.jsx)(U.Z, {}), onClick: () => navigator.clipboard.writeText(e.text) } : e instanceof P.Edit ? { text: "Edit message", icon: (0, n.jsx)(A.Z, {}), onClick: t } : e instanceof P.DeleteForAll ? { text: "Delete for All", icon: (0, n.jsx)(T.Z, {}), destructive: !0, onClick: t } : e instanceof P.DeleteForSelf || e instanceof P.DeletePending ? { text: "Delete for me", icon: (0, n.jsx)(T.Z, {}), destructive: !0, onClick: t } : e instanceof P.MessageDetails ? { text: "Info", icon: (0, n.jsx)(F.Z, {}), onClick: t } : null;
+                                return e instanceof G.Reply ? { text: t("Reply"), icon: (0, n.jsx)(M.Z, {}), onClick: a } : e instanceof G.CancelSend ? { text: t("Cancel message"), icon: void 0, onClick: a } : e instanceof G.RetrySend ? { text: t("Try sending again"), icon: (0, n.jsx)(U.Z, {}), onClick: a } : e instanceof G.CopyText ? { text: t("Copy message text"), icon: (0, n.jsx)(A.Z, {}), onClick: () => navigator.clipboard.writeText(e.text) } : e instanceof G.Edit ? { text: t("Edit message"), icon: (0, n.jsx)($.Z, {}), onClick: a } : e instanceof G.DeleteForAll ? { text: t("Delete for All"), icon: (0, n.jsx)(T.Z, {}), destructive: !0, onClick: a } : e instanceof G.DeleteForSelf || e instanceof G.DeletePending ? { text: t("Delete for me"), icon: (0, n.jsx)(T.Z, {}), destructive: !0, onClick: a } : e instanceof G.MessageDetails ? { text: t("Info"), icon: (0, n.jsx)(F.Z, {}), onClick: a } : null;
                             })(e, r),
                         )
                         .filter((e) => !!e);
@@ -169,27 +178,28 @@
                         trigger: (0, n.jsx)(E.z, { variant: "primaryText", size: "xSmall", icon: (0, n.jsx)(z.Z, {}), color: "gray600" }),
                         open: !!s?.longPress,
                         onOpenChange: (s) => {
-                            const t = s ? new V.MessageLongPressed(e, new J(0, 0, 0, 0), a) : V.MessageFocusedDialogDismissed;
+                            const t = s ? new V.MessageLongPressed(e, new P(0, 0, 0, 0), a) : V.MessageFocusedDialogDismissed;
                             r(t);
                         },
                     }),
                 });
             }
-            function G({ user: e, avatarDisplayMode: s }) {
+            function L({ user: e, avatarDisplayMode: s }) {
                 if (!e || !e.profileImageUrl || "None" === s.name) return null;
                 if ("AsPadding" === s.name) return (0, n.jsx)("div", { className: "px-4", children: " " });
                 const t = (0, x.F)();
                 return (0, n.jsx)("div", { children: (0, n.jsx)(c.q, { url: e.profileImageUrl, size: "large", screenName: e.screenName, withLink: !t || "external" }) });
             }
             var Z = t(134877),
-                _ = t(205116),
-                B = t(38891),
+                B = t(205116),
+                _ = t(38891),
                 q = t(189164),
                 K = t(42630);
             function O({ messageInfo: e, isReceived: s, showSignatureVerificationIssuesIcon: t }) {
-                const a = e.showReadUsers?.asJsReadonlyArrayView().map((e) => e.user?.profileImageUrl || "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png") || [],
-                    r = (0, B.z)().isTrue("xchat_read_receipt_facepile") && a.length > 1;
-                return e.showReadUsers || e.showEdited || t ? (0, n.jsxs)("div", { className: `flex gap-1 items-center ${s ? "justify-start" : "justify-end"} mx-1 `, children: [e.showEdited && (0, n.jsx)(d.x, { size: "subtext3", color: "gray700", children: "Edited" }), e.showEdited && (t || (e.showReadUsers && r)) && (0, n.jsx)(K.A, {}), t && (0, n.jsx)(q.Z, {}), t && e.showReadUsers && r && (0, n.jsx)(K.A, {}), e.showReadUsers && r && (0, n.jsx)(m.o, { urls: a, size: "small", spacing: 6, stackOrder: "ascending" })] }) : null;
+                const { t: a } = (0, u.$G)(),
+                    r = e.showReadUsers?.asJsReadonlyArrayView().map((e) => e.user?.profileImageUrl || "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png") || [],
+                    i = (0, _.z)().isTrue("xchat_read_receipt_facepile") && r.length > 1;
+                return e.showReadUsers || e.showEdited || t ? (0, n.jsxs)("div", { className: `flex gap-1 items-center ${s ? "justify-start" : "justify-end"} mx-1 `, children: [e.showEdited && (0, n.jsx)(d.x, { size: "subtext3", color: "gray700", children: a("Edited") }), e.showEdited && (t || (e.showReadUsers && i)) && (0, n.jsx)(K.A, {}), t && (0, n.jsx)(q.Z, {}), t && e.showReadUsers && i && (0, n.jsx)(K.A, {}), e.showReadUsers && i && (0, n.jsx)(m.o, { urls: r, size: "small", spacing: 6, stackOrder: "ascending" })] }) : null;
             }
             var H = t(123010);
             const Y = ({ isReceived: e, textContent: s, textEntities: t, messageFooter: a }) => {
@@ -230,7 +240,7 @@
                         r = (0, ee.X)(a),
                         i = t.map((e) => e.name),
                         l = i.length > 1 ? `${i.slice(0, -1).join(", ")} and ${i[i.length - 1]}` : i[0];
-                    return (0, n.jsx)("div", { className: "relative", children: (0, n.jsx)(Q.J, { open: r, side: "top", trigger: (0, n.jsxs)("div", { ref: a, className: "inline-flex items-center bg-gray-50 rounded-full px-2 pt-0.5 shadow-sm gap-1 border border-background cursor-pointer", children: [(0, n.jsx)("div", { className: "scale-80 mt-1", children: (0, n.jsx)(R.c, { emoji: e }) }), s > 1 && (0, n.jsx)(d.x, { size: "subtext2", weight: "bold", color: "gray700", children: s })] }), children: (0, n.jsxs)("div", { className: "flex flex-row items-center gap-2 p-2 border border-border rounded-lg bg-background shadow-lg", children: [(0, n.jsxs)(d.x, { size: "subtext2", weight: "medium", children: [l, " reacted with"] }), (0, n.jsx)(R.c, { emoji: e })] }) }) });
+                    return (0, n.jsx)("div", { className: "relative", children: (0, n.jsx)(Q.J, { open: r, side: "top", trigger: (0, n.jsxs)("div", { ref: a, className: "inline-flex items-center bg-gray-50 rounded-full px-2 py-1 shadow-sm gap-1 border border-background cursor-pointer", children: [(0, n.jsx)("div", { className: "scale-[0.9] inline-flex items-center", children: (0, n.jsx)(R.c, { emoji: e }) }), s > 1 && (0, n.jsx)(d.x, { size: "subtext2", weight: "bold", color: "gray700", children: s })] }), children: (0, n.jsxs)("div", { className: "flex flex-row items-center gap-2 p-2 border border-border rounded-lg bg-background shadow-lg", children: [(0, n.jsxs)(d.x, { size: "subtext2", weight: "medium", children: [l, " reacted with"] }), (0, n.jsx)(R.c, { emoji: e })] }) }) });
                 },
                 ne = ({ reaction: e }) => (0, n.jsx)(te, { emoji: e.reaction, count: e.users.asJsReadonlyArrayView().length, users: e.users.asJsReadonlyArrayView() }),
                 ae = ({ isReceived: e, reactions: s }) => {
@@ -294,10 +304,10 @@
                 fe = t(242782);
             const je = ({ isReceived: e, timestamp: s, hasTTL: t, participants: a, showDetails: r, readStatus: i, setShowDetails: o, color: l, iconColor: c }) => (0, n.jsxs)("div", { className: "flex items-center ml-auto shrink-0 gap-1", children: [(0, n.jsx)(d.x, { size: "subtext3", color: l || (e ? "gray700" : "white"), children: (0, pe.H)(s) }), t && (0, n.jsx)(re.Z, { className: `w-3.5 h-3.5 ${l || (e ? "text-text/60" : "text-white/60")}` }), !e && (a.length > 0 ? (0, n.jsx)(le.h, { open: r, onOpenChange: o, trigger: (0, n.jsx)("div", { className: "z-20 -ms-[2px] cursor-pointer", children: (0, n.jsx)(fe.Z, { className: `w-4 h-4 ${c || "text-white"}` }) }), children: (0, n.jsx)("div", { className: "p-4 max-w-[500px] min-w-[300px] mx-auto border border-gray-200 rounded-lg", children: (0, n.jsx)(xe, { participants: a }) }) }) : "Read" === i ? (0, n.jsx)(fe.Z, { className: `w-4 h-4 ${c || "text-white"}` }) : null)] });
             var ve = t(784344),
-                we = t(617092),
-                ye = t(289752),
-                be = t(791266);
-            const Ne = i.com.x.dms.chat.DmEvent,
+                ye = t(617092),
+                we = t(289752),
+                Ne = t(791266);
+            const be = i.com.x.dms.chat.DmEvent,
                 Ie = ({ isReceived: e, replyPreview: s, replierInfo: t, onEvent: a }) => {
                     const r = t.id,
                         { senderId: o } = s,
@@ -310,7 +320,7 @@
                         p = (0, n.jsx)(u.cC, { i18nKey: "<highlight>You</highlight> to yourself", components: { highlight: m } }),
                         f = (0, n.jsx)(u.cC, { i18nKey: "<highlight>You</highlight> to {sender}", values: { sender: c }, components: { highlight: m } }),
                         j = r.equals(o) ? (s.senderIsCurrentUser ? p : g) : s.senderIsCurrentUser ? x : e ? h : f;
-                    return (0, n.jsxs)("div", { className: `flex flex-col mt-0.5 gap-1 ${e ? "items-start" : "items-end"} cursor-pointer`, onClick: () => s.sequenceNumber && a(new Ne.ReplyBubbleClicked(s.sequenceNumber)), children: [s.showReplyNames && (0, n.jsxs)("div", { className: "flex gap-1 px-2 " + (e ? "text-start" : "text-end"), children: [(0, n.jsx)(ve.Z, { className: "inline-block text-text/70" }), (0, n.jsx)(d.x, { as: "span", className: "text-text/40", size: "subtext2", children: j })] }), s.attachment && (s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.Media && s.attachment.type === i.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(we.K, { filename: s.attachment.filename, fileSize: s.attachment.fileSize }) : s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.Media.FromServer && s.attachment.uriState instanceof i.com.x.dms.model.MediaUriState.ResolvedMedia && (0, n.jsx)(ye.Et, { src: s.attachment.uriState.uri, type: s.attachment.type, dimensions: s.attachment.dimensions, className: "rounded-2xl !w-[25%] !h-[25%] border border-gray-200", showAsStatic: !0 })), s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.UrlCard && (0, n.jsx)(be.C, { urlCard: s.attachment }), s.previewText && (0, n.jsx)("div", { className: "flex flex-col px-3 py-1.5 rounded-2xl gap-3 border " + (s.senderIsCurrentUser ? "border-primary/50" : "border-gray-400"), children: (0, n.jsx)(d.x, { color: s.senderIsCurrentUser ? "primary" : "gray900", size: "subtext1", numberOfLines: 2, children: s.previewText }) })] });
+                    return (0, n.jsxs)("div", { className: `flex flex-col mt-0.5 gap-1 ${e ? "items-start" : "items-end"} cursor-pointer`, onClick: () => s.sequenceNumber && a(new be.ReplyBubbleClicked(s.sequenceNumber)), children: [s.showReplyNames && (0, n.jsxs)("div", { className: "flex gap-1 px-2 " + (e ? "text-start" : "text-end"), children: [(0, n.jsx)(ve.Z, { className: "inline-block text-text/70" }), (0, n.jsx)(d.x, { as: "span", className: "text-text/40", size: "subtext2", children: j })] }), s.attachment && (s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.Media && s.attachment.type === i.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(ye.K, { filename: s.attachment.filename, fileSize: s.attachment.fileSize }) : s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.Media.FromServer && s.attachment.uriState instanceof i.com.x.dms.model.MediaUriState.ResolvedMedia && (0, n.jsx)(we.Et, { src: s.attachment.uriState.uri, type: s.attachment.type, dimensions: s.attachment.dimensions, className: "rounded-2xl !w-[25%] !h-[25%] border border-gray-200", showAsStatic: !0 })), s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.UrlCard && (0, n.jsx)(Ne.C, { urlCard: s.attachment }), s.previewText && (0, n.jsx)("div", { className: "flex flex-col px-3 py-1.5 rounded-2xl gap-3 border " + (s.senderIsCurrentUser ? "border-primary/50" : "border-gray-400"), children: (0, n.jsx)(d.x, { color: s.senderIsCurrentUser ? "primary" : "gray900", size: "subtext1", numberOfLines: 2, children: s.previewText }) })] });
                 };
             var Ce = t(407602),
                 De = t(840489),
@@ -319,9 +329,10 @@
                 ke = i.com.x.models.KMPRect,
                 Ee = ({ messageItem: e, messageFocusedDialog: s, isMessageFocused: t, onEvent: a }) => {
                     const [r, l] = (0, o.useState)(!1),
-                        [c, d] = (0, o.useState)(!1);
+                        [c, d] = (0, o.useState)(!1),
+                        { t: m } = (0, u.$G)();
                     if (!t && !s?.quickReactions) return null;
-                    const m = s?.quickReactions?.asJsReadonlyArrayView().map((e) => e.asJsReadonlyArrayView());
+                    const x = s?.quickReactions?.asJsReadonlyArrayView().map((e) => e.asJsReadonlyArrayView());
                     return (0, n.jsx)(Q.J, {
                         borderRadius: "2xLarge",
                         trigger: (0, n.jsx)("div", {
@@ -350,14 +361,15 @@
                                               a(new Re.ReactionPickerItemClick(t, e)), a(Re.MessageFocusedDialogDismissed), l(!1), d(!1);
                                           },
                                           recentlyUsedEmojis: s?.quickReactions?.asJsReadonlyArrayView().flatMap((e) => e.asJsReadonlyArrayView().map((e) => e.emoji)) || [],
-                                          reactionMap: m?.flatMap((e) => e.filter((e) => e.isSelected).map((e) => e.emoji)) || [],
+                                          reactionMap: x?.flatMap((e) => e.filter((e) => e.isSelected).map((e) => e.emoji)) || [],
+                                          t: m,
                                       }),
                                   })
                                 : (0, n.jsxs)(n.Fragment, {
                                       children: [
                                           (0, n.jsx)("div", {
                                               className: "flex flex-col p-1 rounded-2xl border",
-                                              children: m?.map((s, t) =>
+                                              children: x?.map((s, t) =>
                                                   (0, n.jsx)(
                                                       "div",
                                                       {
@@ -397,13 +409,13 @@
                         }),
                     });
                 };
-            function Me({ messageItem: e, messageFocusedDialog: s, showMessageInfoDialog: t, messageInfoDialog: a, messageInfoDialogDismissed: r, onEvent: l }) {
-                const { t: c } = (0, u.$G)(),
-                    m = (0, ie.a)("(max-width: 768px)"),
-                    x = e instanceof i.com.x.dms.model.MessageItemReceived,
-                    h = null !== e.textContent && !e.supersizeEmoji,
-                    [g, p] = (0, o.useState)(!1),
-                    f = ((e) => {
+            function Me({ messageItem: e, messageFocusedDialog: s, showMessageInfoDialog: t, messageInfoDialog: a, messageInfoDialogDismissed: r, onEvent: l, isVisible: c }) {
+                const { t: m } = (0, u.$G)(),
+                    x = (0, ie.a)("(max-width: 768px)"),
+                    h = e instanceof i.com.x.dms.model.MessageItemReceived,
+                    g = null !== e.textContent && !e.supersizeEmoji,
+                    [p, f] = (0, o.useState)(!1),
+                    j = ((e) => {
                         switch (e) {
                             case i.com.x.dms.model.MessageBurstState.Solo:
                                 return "py-1";
@@ -415,31 +427,31 @@
                                 return "";
                         }
                     })(e.burstState),
-                    [j, v] = (0, o.useState)(!1),
+                    [v, y] = (0, o.useState)(!1),
                     w = e.messageInfo?.showReadUsers?.asJsReadonlyArrayView() || [],
-                    y = !!e.messageInfo?.timeToLive,
-                    b = y || e?.messageInfo?.showTimestampValue || e?.messageInfo?.showTimestamp;
+                    N = !!e.messageInfo?.timeToLive,
+                    b = N || e?.messageInfo?.showTimestampValue || e?.messageInfo?.showTimestamp;
                 return (0, n.jsxs)(Z.S, {
-                    message: c("Couldn't load message"),
+                    message: m("Couldn't load message"),
                     children: [
                         e.senderDisplayName && (0, n.jsx)("div", { className: "px-16", children: (0, n.jsx)(d.x, { size: "subtext3", color: "gray700", children: e.senderInfo?.user?.displayName }) }),
                         (0, n.jsx)("div", {
-                            className: `flex ${x ? "justify-start" : "justify-end"} ${f} px-4`,
-                            onMouseEnter: () => p(!0),
-                            onMouseLeave: () => p(!1),
-                            onClick: () => p(!0),
+                            className: `flex ${h ? "justify-start" : "justify-end"} ${j} px-4`,
+                            onMouseEnter: () => f(!0),
+                            onMouseLeave: () => f(!1),
+                            onClick: () => f(!0),
                             children: (0, n.jsxs)("div", {
-                                className: `grid gap-x-2 gap-y-0.5 ${m ? "max-w-full" : "max-w-[calc(55%+128px)]"} grid-cols-[auto_auto_auto_auto] items-center`,
-                                style: { gridTemplateAreas: x ? '\n                  "avatar content actions"\n                  ". message-info ."\n                ' : '\n                  "actions content avatar"\n                  ". message-info ."\n                ' },
+                                className: `grid gap-x-2 gap-y-0.5 ${x ? "max-w-full" : "max-w-[calc(55%+128px)]"} grid-cols-[auto_auto_auto_auto] items-center`,
+                                style: { gridTemplateAreas: h ? '\n                  "avatar content actions"\n                  ". message-info ."\n                ' : '\n                  "actions content avatar"\n                  ". message-info ."\n                ' },
                                 children: [
-                                    (0, n.jsx)("div", { className: "self-end", style: { gridArea: "avatar" }, children: e.senderInfo?.user && (0, n.jsx)(G, { avatarDisplayMode: e.avatarDisplayMode, user: e.senderInfo?.user }) }),
-                                    (0, n.jsxs)("div", { className: "flex flex-col gap-1 " + (x ? "items-start" : "items-end"), style: { gridArea: "content" }, children: [e.replyPreview && e.senderInfo && e.senderInfo.user && (0, n.jsx)(Ie, { replyPreview: e.replyPreview, replierInfo: e.senderInfo.user, isReceived: x, onEvent: l }), e.attachment ? (0, n.jsxs)("div", { className: "flex max-w-1/3 overflow-hidden rounded-2xl relative", children: [(0, n.jsx)(_.P, { attachment: e.attachment, isReceived: x, onEvent: l, className: " border border-gray-200 rounded-2xl" }), y && !h && (0, n.jsx)("div", { className: "absolute bottom-2 right-2 rounded-full text-gray-700 shadow-md", children: (0, n.jsx)(re.Z, { className: "w-4 h-4" }) })] }) : null, e.supersizeEmoji && (0, n.jsx)("div", { className: "flex gap-2 px-1 tracking-widest", children: e.textContent?.match(/(\p{Emoji_Presentation}|\p{Emoji}\uFE0F)/gu)?.map((e, s) => (0, n.jsx)(R.c, { emoji: e }, `${e}-${s}`)) }), h ? (0, n.jsx)("div", { className: "flex justify-end px-4 py-2 rounded-2xl " + (e.supersizeEmoji ? "" : x ? "bg-gray-100" : "bg-blue-500"), children: e.textContent && (0, n.jsx)(Y, { textContent: e.textContent, textEntities: e.textEntities.asJsReadonlyArrayView(), isReceived: x, messageFooter: b && (0, n.jsx)(je, { isReceived: x, timestamp: e.createdTimestamp.epochSeconds, hasTTL: y, readStatus: e?.messageInfo?.readStatus?.name, participants: w, showDetails: j, setShowDetails: v }) }) }) : null] }),
+                                    (0, n.jsx)("div", { className: "self-end", style: { gridArea: "avatar" }, children: e.senderInfo?.user && (0, n.jsx)(L, { avatarDisplayMode: e.avatarDisplayMode, user: e.senderInfo?.user }) }),
+                                    (0, n.jsxs)("div", { className: "flex flex-col gap-1 " + (h ? "items-start" : "items-end"), style: { gridArea: "content" }, children: [e.replyPreview && e.senderInfo && e.senderInfo.user && (0, n.jsx)(Ie, { replyPreview: e.replyPreview, replierInfo: e.senderInfo.user, isReceived: h, onEvent: l }), e.attachment ? (0, n.jsxs)("div", { className: "flex max-w-1/3 overflow-hidden rounded-2xl relative", children: [(0, n.jsx)(B.P, { attachment: e.attachment, isReceived: h, onEvent: l, className: " border border-gray-200 rounded-2xl", isVisible: c }), N && !g && (0, n.jsx)("div", { className: "absolute bottom-2 right-2 rounded-full text-gray-700 shadow-md", children: (0, n.jsx)(re.Z, { className: "w-4 h-4" }) })] }) : null, e.supersizeEmoji && (0, n.jsx)("div", { className: "flex gap-2 px-1 tracking-widest", children: e.textContent?.match(/(\p{Emoji_Presentation}|\p{Emoji}\uFE0F)/gu)?.map((e, s) => (0, n.jsx)(R.c, { emoji: e }, `${e}-${s}`)) }), g ? (0, n.jsx)("div", { className: "flex justify-end px-4 py-2 rounded-2xl " + (e.supersizeEmoji ? "" : h ? "bg-gray-100" : "bg-blue-500"), children: e.textContent && (0, n.jsx)(Y, { textContent: e.textContent, textEntities: e.textEntities.asJsReadonlyArrayView(), isReceived: h, messageFooter: b && (0, n.jsx)(je, { isReceived: h, timestamp: e.createdTimestamp.epochSeconds, hasTTL: N, readStatus: e?.messageInfo?.readStatus?.name, participants: w, showDetails: v, setShowDetails: y }) }) }) : null] }),
                                     (0, n.jsxs)("div", {
-                                        className: `${m ? "w-16" : "w-32"} flex items-center gap-1 ${x ? "flex-row" : "flex-row-reverse"}`,
+                                        className: `${x ? "w-16" : "w-32"} flex items-center gap-1 ${h ? "flex-row" : "flex-row-reverse"}`,
                                         style: { gridArea: "actions" },
                                         children: [
-                                            (0, n.jsx)(Ee, { messageItem: e, messageFocusedDialog: s, isMessageFocused: g, onEvent: l }),
-                                            (0, n.jsx)(L, { messageFocusedDialog: s, isMessageFocused: g, messageItem: e, onEvent: l, isFromAttachment: !1 }),
+                                            (0, n.jsx)(Ee, { messageItem: e, messageFocusedDialog: s, isMessageFocused: p, onEvent: l }),
+                                            (0, n.jsx)(J, { messageFocusedDialog: s, isMessageFocused: p, messageItem: e, onEvent: l, isFromAttachment: !1 }),
                                             t &&
                                                 (0, n.jsx)(ge, {
                                                     onDismiss: () => {
@@ -449,20 +461,21 @@
                                                 }),
                                         ],
                                     }),
-                                    (0, n.jsxs)("div", { className: "flex flex-col gap-2 pb-1", style: { gridArea: "message-info" }, children: [e.reactions && e.reactions.asJsReadonlyArrayView().length > 0 && (0, n.jsx)(ae, { isReceived: x, reactions: e.reactions.asJsReadonlyArrayView() }), e.supersizeEmoji && (0, n.jsx)("div", { className: "align-end", children: (0, n.jsx)(je, { isReceived: !1, timestamp: e.createdTimestamp.epochSeconds, hasTTL: y, readStatus: e?.messageInfo?.readStatus?.name, participants: w, showDetails: j, setShowDetails: v, color: "gray700", iconColor: "text-gray-700" }) }), e.messageInfo && (0, n.jsx)(O, { messageInfo: e.messageInfo, showSignatureVerificationIssuesIcon: e.showSignatureVerificationIssuesIcon, isReceived: x })] }),
+                                    (0, n.jsxs)("div", { className: "flex flex-col gap-2 pb-1", style: { gridArea: "message-info" }, children: [e.reactions && e.reactions.asJsReadonlyArrayView().length > 0 && (0, n.jsx)(ae, { isReceived: h, reactions: e.reactions.asJsReadonlyArrayView() }), e.supersizeEmoji && (0, n.jsx)("div", { className: "align-end", children: (0, n.jsx)(je, { isReceived: !1, timestamp: e.createdTimestamp.epochSeconds, hasTTL: N, readStatus: e?.messageInfo?.readStatus?.name, participants: w, showDetails: v, setShowDetails: y, color: "gray700", iconColor: "text-gray-700" }) }), e.messageInfo && (0, n.jsx)(O, { messageInfo: e.messageInfo, showSignatureVerificationIssuesIcon: e.showSignatureVerificationIssuesIcon, isReceived: h })] }),
                                 ],
                             }),
                         }),
                     ],
                 });
             }
-            function $e({ sendingStatusItem: e }) {
-                return "Failed" === e.status.name ? (0, n.jsxs)("div", { className: "flex justify-end py-1 px-4 gap-1 me-2", children: [(0, n.jsx)(d.x, { size: "subtext2", color: "red500", children: "Failed" }), (0, n.jsx)(F.Z, { width: "14", height: "14", className: "text-red-500" })] }) : null;
+            function Ue({ sendingStatusItem: e }) {
+                const { t: s } = (0, u.$G)();
+                return "Failed" === e.status.name ? (0, n.jsxs)("div", { className: "flex justify-end py-1 px-4 gap-1 me-2", children: [(0, n.jsx)(d.x, { size: "subtext2", color: "red500", children: s("Failed") }), (0, n.jsx)(F.Z, { width: "14", height: "14", className: "text-red-500" })] }) : null;
             }
-            function Ue({ chatItem: e, messageFocusedDialog: s, onEvent: t, showMessageInfoDialog: a, messageInfoDialog: r, messageInfoDialogDismissed: o }) {
-                return e instanceof i.com.x.dms.model.MessageItemReceived || e instanceof i.com.x.dms.model.MessageItemSent || e instanceof i.com.x.dms.model.MessageItemPending ? (0, n.jsx)(Me, { messageItem: e, messageFocusedDialog: s, onEvent: t, showMessageInfoDialog: a, messageInfoDialog: r, messageInfoDialogDismissed: o }) : e instanceof i.com.x.dms.model.SendingStatusItem ? (0, n.jsx)($e, { sendingStatusItem: e }) : e instanceof i.com.x.dms.model.InformationalItem ? (0, n.jsx)(S, { informationalItem: e }) : null;
+            function Ae({ chatItem: e, messageFocusedDialog: s, onEvent: t, showMessageInfoDialog: a, messageInfoDialog: r, messageInfoDialogDismissed: o, isVisible: l }) {
+                return e instanceof i.com.x.dms.model.MessageItemReceived || e instanceof i.com.x.dms.model.MessageItemSent || e instanceof i.com.x.dms.model.MessageItemPending ? (0, n.jsx)(Me, { messageItem: e, messageFocusedDialog: s, onEvent: t, showMessageInfoDialog: a, messageInfoDialog: r, messageInfoDialogDismissed: o, isVisible: l }) : e instanceof i.com.x.dms.model.SendingStatusItem ? (0, n.jsx)(Ue, { sendingStatusItem: e }) : e instanceof i.com.x.dms.model.InformationalItem ? (0, n.jsx)(S, { informationalItem: e }) : null;
             }
-            const Ae = (0, o.memo)(Ue);
+            const $e = (0, o.memo)(Ae);
             var Te = t(97759);
             const Fe = ({ component: e, numItems: s, composerHeight: t }) => {
                 const { apiRef: a, addOnScrollListener: r } = (0, Se.Nb)(),
@@ -484,45 +497,50 @@
                 return l ? (0, n.jsx)(E.z, { icon: (0, n.jsx)(Te.Z, { width: 16, height: 16 }), className: "z-20 absolute right-12 bg-gray-50 w-8 h-8 rounded-3xl flex items-center justify-center text-blue-500", style: { bottom: t + 24 }, color: "blue500", onClick: m }) : null;
             };
             var ze = t(676337);
-            const Pe = i.com.x.dms.chat.DmEvent,
+            const Ge = i.com.x.dms.chat.DmEvent,
                 Ve = i.com.x.dms.model.MessageItemSent,
-                Je = i.com.x.dms.model.MessageItemReceived,
-                Le = i.kotlin.collections.KtList;
-            function Ge({ component: e, isTypingIndicatorShown: s, composerHeight: t }) {
+                Pe = i.com.x.dms.model.MessageItemReceived,
+                Je = i.kotlin.collections.KtList;
+            function Le({ component: e, isTypingIndicatorShown: s, composerHeight: t }) {
                 const c = (0, l._)(e.state),
                     d = (0, o.useMemo)(() => c.chatItems.items.asJsReadonlyArrayView().toReversed(), [c.chatItems]),
                     m = (0, ze.H)(),
-                    u = c.showingMessageDetailsBottomSheet?.id ?? "",
-                    { apiRef: x, dispatchOnScroll: h } = (0, Se.Nb)(),
-                    g = (0, o.useRef)(!1),
-                    p = (0, o.useMemo)(() => e.observeMessageDetails(u), [e, u]),
-                    f = (0, o.useCallback)(() => {
-                        if (x.current && m) {
-                            const s = x.current.findStartIndex(),
-                                t = x.current.findEndIndex(),
+                    u = (0, o.useRef)(new Map()),
+                    x = c.showingMessageDetailsBottomSheet?.id ?? "",
+                    { apiRef: h, dispatchOnScroll: g } = (0, Se.Nb)(),
+                    p = (0, o.useRef)(!1),
+                    f = (0, o.useMemo)(() => e.observeMessageDetails(x), [e, x]),
+                    j = (0, o.useCallback)(() => {
+                        if (h.current && m) {
+                            const s = h.current.findStartIndex(),
+                                t = h.current.findEndIndex(),
                                 n = d
                                     .slice(s, t + 1)
-                                    .filter((e) => e instanceof Je || e instanceof Ve)
+                                    .filter((e) => e instanceof Pe || e instanceof Ve)
                                     .map((e) => e.sequenceNumber);
-                            e.onEvent(new i.com.x.dms.chat.DmEvent.VisibleMessagesChanged(t === d.length - 1, Le.fromJsArray(n)));
+                            u.current.clear(), n.forEach((e) => u.current.set(e, !0)), e.onEvent(new i.com.x.dms.chat.DmEvent.VisibleMessagesChanged(t === d.length - 1, Je.fromJsArray(n)));
                         }
-                    }, [e, d, x.current, m]),
-                    j = (0, o.useCallback)(() => {
-                        x.current?.scrollToIndex(d.length - 1, { align: "end", offset: t }), (g.current = !1), f();
-                    }, [d, x.current, f, t]);
+                    }, [e, d, h.current, m]),
+                    v = (0, o.useCallback)(() => {
+                        h.current?.scrollToIndex(d.length - 1, { align: "end", offset: t }), (p.current = !1), j();
+                    }, [d, h.current, j, t]);
                 (0, o.useLayoutEffect)(() => {
-                    g.current || j();
+                    p.current || v();
                 }, [d.length, t, s]);
-                const v = (s) => {
-                    e.onEvent(s);
-                };
+                const y = (s) => {
+                        e.onEvent(s);
+                    },
+                    w = (e) => ((e instanceof Pe || e instanceof Ve) && u.current.get(e.sequenceNumber)) ?? !1,
+                    N = (0, o.useCallback)(() => {
+                        e.onEvent(Ge.MessageDetailsDismissed);
+                    }, [e]);
                 return (
                     (0, o.useEffect)(() => {
-                        if (c.requestScrollTo && x.current) {
+                        if (c.requestScrollTo && h.current) {
                             const e = { align: "center", smooth: !0 };
-                            x.current?.scrollToIndex?.(d.length - c.requestScrollTo.index, e), (g.current = !1), f();
+                            h.current?.scrollToIndex?.(d.length - c.requestScrollTo.index, e), (p.current = !1), j();
                         }
-                    }, [c.requestScrollTo, d, x.current, f]),
+                    }, [c.requestScrollTo, d, h.current, j]),
                     (0, n.jsx)(Z.S, {
                         children: (0, n.jsx)("div", {
                             className: "relative h-full",
@@ -530,34 +548,21 @@
                                 ? (0, n.jsxs)(n.Fragment, {
                                       children: [
                                           (0, n.jsx)(a.T, {
-                                              api: x,
+                                              api: h,
                                               className: "!h-full scrollbar-thin-custom pl-3",
                                               items: d,
                                               onScroll: (e, s) => {
-                                                  x.current && (0 !== e && "backward" === s && d.length - 3 > x.current.findEndIndex() && (g.current = !0), f()), h(e, s);
+                                                  h.current && (0 !== e && "backward" === s && d.length - 3 > h.current.findEndIndex() && (p.current = !0), j()), g(e, s);
                                               },
                                               onNearEnd: () => {
-                                                  g.current = !1;
+                                                  p.current = !1;
                                               },
                                               onAtStart: () => {
-                                                  c.chatItems.olderItemsInfo && v(new i.com.x.dms.chat.DmEvent.ScrolledToTop(c.chatItems.olderItemsInfo));
+                                                  c.chatItems.olderItemsInfo && y(new i.com.x.dms.chat.DmEvent.ScrolledToTop(c.chatItems.olderItemsInfo));
                                               },
-                                              renderItem: (s) => {
-                                                  return (0, n.jsx)(
-                                                      Ae,
-                                                      {
-                                                          chatItem: s,
-                                                          onEvent: v,
-                                                          messageFocusedDialog: ((t = s.id), c.showingMessageFocusedDialog?.message.id === t ? c.showingMessageFocusedDialog : null),
-                                                          showMessageInfoDialog: u === s.id,
-                                                          messageInfoDialog: p,
-                                                          messageInfoDialogDismissed: () => {
-                                                              e.onEvent(Pe.MessageDetailsDismissed);
-                                                          },
-                                                      },
-                                                      s.uniqueKey,
-                                                  );
-                                                  var t;
+                                              renderItem: (e) => {
+                                                  return (0, n.jsx)($e, { chatItem: e, onEvent: y, messageFocusedDialog: ((s = e.id), c.showingMessageFocusedDialog?.message.id === s ? c.showingMessageFocusedDialog : null), showMessageInfoDialog: x === e.id, messageInfoDialog: f, messageInfoDialogDismissed: N, isVisible: w(e) }, e.uniqueKey);
+                                                  var s;
                                               },
                                               startMargin: 64,
                                               header: (0, n.jsx)("div", { className: "h-16" }),
@@ -607,7 +612,7 @@
             var n = t(552322),
                 a = t(789764),
                 r = t(350311),
-                i = t(455091);
+                i = t(263033);
             const o = ({ typingIndicatorItem: e }) => {
                 const { t: s } = (0, i.$G)(),
                     t = e.users.asJsReadonlyArrayView(),
@@ -721,7 +726,7 @@
             }
         },
         984713: (e, s, t) => {
-            t.d(s, { x: () => N });
+            t.d(s, { x: () => I });
             var n = t(552322),
                 a = t(202784),
                 r = t(159603),
@@ -739,10 +744,11 @@
                 f = t(658358),
                 j = t(34681),
                 v = t(272795),
-                w = t(620134);
-            const y = r.com.x.dms.newdm,
+                y = t(620134),
+                w = t(263033);
+            const N = r.com.x.dms.newdm,
                 b = r.com.x.dms.mapToValueList,
-                N = ({ onVisibilityChange: e }) => {
+                I = ({ onVisibilityChange: e }) => {
                     const [s, t] = (0, a.useState)(null),
                         i = (0, h.n)(),
                         o = (0, g.s)();
@@ -765,16 +771,20 @@
                                 }
                             );
                         }, [i, o, e]),
-                        (0, n.jsx)(j.Vq, { open: !0, onOpenChange: e, children: s ? (0, n.jsx)(I, { component: s }) : (0, n.jsx)("div", { className: "h-full flex items-center", children: (0, n.jsx)(c.P, {}) }) })
+                        (0, n.jsx)(j.Vq, { open: !0, onOpenChange: e, children: s ? (0, n.jsx)(C, { component: s }) : (0, n.jsx)("div", { className: "h-full flex items-center", children: (0, n.jsx)(c.P, {}) }) })
                     );
                 },
-                I = ({ component: e }) => {
-                    const s = (0, p._)(e.state);
+                C = ({ component: e }) => {
+                    const { t: s } = (0, w.$G)(),
+                        t = s("Create a group"),
+                        a = s("New message"),
+                        h = s("Add people"),
+                        g = (0, p._)(e.state);
                     (0, f.e)(e.toasts);
-                    const t = b(s.selectedGroupUsers).asJsReadonlyArrayView(),
-                        a = s.suggestions.asJsReadonlyArrayView();
-                    const h = (s) => () => {
-                        e.onEvent(new y.NewDmEvent.DeleteSelectedGroupUser(s));
+                    const I = b(g.selectedGroupUsers).asJsReadonlyArrayView(),
+                        C = g.suggestions.asJsReadonlyArrayView();
+                    const D = (s) => () => {
+                        e.onEvent(new N.NewDmEvent.DeleteSelectedGroupUser(s));
                     };
                     return (0, n.jsx)(n.Fragment, {
                         children: (0, n.jsxs)(j.cZ, {
@@ -785,34 +795,34 @@
                                         (0, n.jsxs)("div", {
                                             className: "flex flex-row justify-between items-center gap-2",
                                             children: [
-                                                (0, n.jsxs)("div", { className: "flex flex-col", children: [(0, n.jsx)(j.$N, { className: "text-headline1 font-extrabold", children: s.isCreateGroupMode ? "Create a group" : "New message" }), s.isCreateGroupMode && (0, n.jsx)(d.x, { color: "gray700", children: "Add people" })] }),
+                                                (0, n.jsxs)("div", { className: "flex flex-col", children: [(0, n.jsx)(j.$N, { className: "text-headline1 font-extrabold", children: (0, n.jsx)(d.x, { children: g.isCreateGroupMode ? t : a }) }), g.isCreateGroupMode && (0, n.jsx)(d.x, { color: "gray700", children: h })] }),
                                                 (0, n.jsx)("button", {
                                                     type: "button",
                                                     onClick: () => {
-                                                        e.onEvent(y.NewDmEvent.BackButtonClicked);
+                                                        e.onEvent(N.NewDmEvent.BackButtonClicked);
                                                     },
                                                     className: "p-1 text-gray-700",
                                                     children: (0, n.jsx)(i.Z, { className: "size-6" }),
                                                 }),
                                             ],
                                         }),
-                                        s.isCreateGroupMode &&
+                                        g.isCreateGroupMode &&
                                             (0, n.jsx)(m.z, {
                                                 onClick: () => {
-                                                    e.onEvent(y.NewDmEvent.CreateButtonClicked);
+                                                    e.onEvent(N.NewDmEvent.CreateButtonClicked);
                                                 },
                                                 variant: "primaryFilled",
-                                                children: "Next",
+                                                children: s("Next"),
                                             }),
                                     ],
                                 }),
                                 (0, n.jsx)("div", {
                                     children: (0, n.jsx)(u._, {
                                         autoFocus: !0,
-                                        placeholder: "Search name or username",
-                                        value: s.query,
+                                        placeholder: s("Search name or username"),
+                                        value: g.query,
                                         onChange: (s) => {
-                                            e.onEvent(new y.NewDmEvent.QueryChanged(s.target.value));
+                                            e.onEvent(new N.NewDmEvent.QueryChanged(s.target.value));
                                         },
                                         borderRadius: "xLarge",
                                         className: "bg-gray-0 focus-within:bg-transparent",
@@ -820,18 +830,18 @@
                                         leftContent: (0, n.jsx)(o.Z, { className: "h-5 w-5 text-gray-700" }),
                                     }),
                                 }),
-                                t.length > 0 && (0, n.jsx)("div", { className: "flex flex-row flex-wrap gap-1 p-1", children: t.map((e) => (0, n.jsx)(w.w, { avatarUrl: e.profileImageUrl, name: e.displayName, onRemove: h(e.id) }, e.id.userIdString)) }),
+                                I.length > 0 && (0, n.jsx)("div", { className: "flex flex-row flex-wrap gap-1 p-1", children: I.map((e) => (0, n.jsx)(y.w, { avatarUrl: e.profileImageUrl, name: e.displayName, onRemove: D(e.id) }, e.id.userIdString)) }),
                                 (0, n.jsxs)("div", {
                                     className: "max-h-[32rem] overflow-hidden",
                                     children: [
-                                        !s.isCreateGroupMode && (0, n.jsxs)("div", { className: "flex flex-row items-center gap-3.5 ps-3 py-2.5 hover:bg-gray-50 cursor-pointer rounded-lg", onClick: () => e.onEvent(y.NewDmEvent.CreateAGroupItemClicked), children: [(0, n.jsx)(l.Z, { className: "text-blue-500 size-6" }), (0, n.jsx)(d.x, { size: "body", color: "blue500", weight: "bold", children: "Create a group" })] }),
-                                        s.isCreateConversationCallInProgress || 0 === a.length
+                                        !g.isCreateGroupMode && (0, n.jsxs)("div", { className: "flex flex-row items-center gap-3.5 ps-3 py-2.5 hover:bg-gray-50 cursor-pointer rounded-lg", onClick: () => e.onEvent(N.NewDmEvent.CreateAGroupItemClicked), children: [(0, n.jsx)(l.Z, { className: "text-blue-500 size-6" }), (0, n.jsx)(d.x, { size: "body", color: "blue500", weight: "bold", children: s("Create a group") })] }),
+                                        g.isCreateConversationCallInProgress || 0 === C.length
                                             ? (0, n.jsx)("div", { className: "pt-8 h-[24rem]", children: (0, n.jsx)(c.P, {}) })
                                             : (0, n.jsx)(x.T, {
                                                   className: "max-h-[24rem] scrollbar-thin-custom",
-                                                  items: a,
-                                                  renderItem: function (t) {
-                                                      return (0, n.jsx)(v.c, { onClick: () => e.onEvent(new y.NewDmEvent.SuggestionClicked(t)), suggestion: t, isSelected: t instanceof r.com.x.dms.NewDmSuggestion.User && s.selectedGroupUsers.asJsReadonlyMapView().has(t.user.id) }, t.id);
+                                                  items: C,
+                                                  renderItem: function (s) {
+                                                      return (0, n.jsx)(v.c, { onClick: () => e.onEvent(new N.NewDmEvent.SuggestionClicked(s)), suggestion: s, isSelected: s instanceof r.com.x.dms.NewDmSuggestion.User && g.selectedGroupUsers.asJsReadonlyMapView().has(s.user.id) }, s.id);
                                                   },
                                               }),
                                     ],
@@ -843,4 +853,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-eca6a814.6e098d5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-eca6a814.36d0c6ca.js.map

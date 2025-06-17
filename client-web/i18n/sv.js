@@ -1311,7 +1311,8 @@
                 t("j77292b7", function (e) {
                     return "Välj högst " + e.count + " undertextfil" + r(e.count, "", "er");
                 }),
-                t("cbc8fed4", "Var den här översättningen korrekt? Ge oss återkoppling så att vi kan bli bättre:"),
+                t("d6b533dc", "Rate this translation:"),
+                t("j2f9ab6e", "Thank you for your feedback!"),
                 t("d56779a2", "lätt att förstå"),
                 t("b6fe8a56", "fövirrande eller oklart"),
                 t("i73a7d48", "Översatt av Google"),
@@ -1916,9 +1917,9 @@
                 t("i89195ea", "Delare"),
                 t("da8ac57c", "Redigera överskriften"),
                 t("a8fdd09c", "Publicera artikeln"),
-                t("d8047cc8", "Publicera"),
-                t("ff7ddca2", "Din artikel visas som ett inlägg när du har publicerat den. Du hittar den även på fliken Artiklar i din profil.");
-            t("ef34d7be", "Målgrupps- och svarskontroller går inte att redigera efter att en artikel har publicerats."),
+                t("d8047cc8", "Publicera");
+            t("ff7ddca2", "Din artikel visas som ett inlägg när du har publicerat den. Du hittar den även på fliken Artiklar i din profil."),
+                t("ef34d7be", "Målgrupps- och svarskontroller går inte att redigera efter att en artikel har publicerats."),
                 t("e52d4998", "Välj målgrupp"),
                 t("d7985b24", "Välj vilka som får svara på den här artikeln"),
                 t("b5660338", "Förhandsgranska tidslinjen"),
@@ -2972,9 +2973,9 @@
                 t("a7de64de", "Annonsinfo"),
                 t("jb0a4c36", "Blogg"),
                 t("ce6d095a", "Arbetstillfällen"),
-                t("e0adec82", "Varumärkesresurser"),
-                t("df1b7550", "Marknadsföring");
-            t("he258678", "X för företag"),
+                t("e0adec82", "Varumärkesresurser");
+            t("df1b7550", "Marknadsföring"),
+                t("he258678", "X för företag"),
                 t("c6f58084", "Utvecklare"),
                 t("d83f18d2", "Katalog"),
                 t("hc5aa17c", "Skaffa X-appen"),
@@ -3884,11 +3885,11 @@
                 t("a2bf8b8a", "Lyssna i stället"),
                 t("caa8d928", "Växla brusdämpning"),
                 t("b5d88f0c", "Bara medarbetare"),
-                t("c855ab8e", "Endast prenumeranter"),
-                t("ddeb0a3c", "Här är gruppen. Gillar du människorna? Ta en titt.");
-            t("e111f531", function (e) {
-                return e.count + " lyssnar";
-            }),
+                t("c855ab8e", "Endast prenumeranter");
+            t("ddeb0a3c", "Här är gruppen. Gillar du människorna? Ta en titt."),
+                t("e111f531", function (e) {
+                    return e.count + " lyssnar";
+                }),
                 t("cbef820f", function (e) {
                     return e.screenName + " återpublicerade strömmen!";
                 }),
@@ -4924,9 +4925,9 @@
                 t("a532072a", "Tittare"),
                 t("d9508ab0", "visningar"),
                 t("d9f9dec0", "Visa området"),
-                t("h0c1f37a", "Visa områdesstatistik"),
-                t("e41fffbc", "Den totala tiden som folk har sett på dina videor.");
-            t("if2909ba", "Tittad tid"),
+                t("h0c1f37a", "Visa områdesstatistik");
+            t("e41fffbc", "Den totala tiden som folk har sett på dina videor."),
+                t("if2909ba", "Tittad tid"),
                 t("i0e5bf4c", "Dina videor"),
                 t("ed99baea", "Tidig betaåtkomst"),
                 t("gf898b70", "Avancerad sökning"),
@@ -5878,9 +5879,9 @@
                     return "Inga resultat för " + e.query;
                 }),
                 t("f191a2ba", "sökinställningarna"),
-                t("a068008a", "Mappar går inte att läsa in nu"),
-                t("f075b0e8", "Redigera mappen");
-            t("beba2a0e", "Skapa en ny mapp med bokmärken"),
+                t("a068008a", "Mappar går inte att läsa in nu");
+            t("f075b0e8", "Redigera mappen"),
+                t("beba2a0e", "Skapa en ny mapp med bokmärken"),
                 t("e41c9b4f", function (e) {
                     return "Sparat på " + e.bookmarkFolderName;
                 }),
@@ -6884,9 +6885,9 @@
                 t("c05176ec", "Om arbetet ska ske på plats ska du ange platsen/platserna. Om det handlar om distansarbete måste du beskriva var de sökande får befinna sig."),
                 t("d70c24d4", "Används för att hjälpa sökande att söka efter ditt jobb."),
                 t("de1c4376", "Löneintervall"),
-                t("hf352d42", "Lägg till ett valfritt löneintervall som visas för de sökande. Om du väljer att inte göra det måste du vara medveten om eventuella lagar som gäller insyn i löner på den plats där du söker en person."),
-                t("ede7d0a2", "Valuta");
-            t("b925c18c", "Lönetyp"),
+                t("hf352d42", "Lägg till ett valfritt löneintervall som visas för de sökande. Om du väljer att inte göra det måste du vara medveten om eventuella lagar som gäller insyn i löner på den plats där du söker en person.");
+            t("ede7d0a2", "Valuta"),
+                t("b925c18c", "Lönetyp"),
                 t("j3d242ce", "Ogiltigt intervall"),
                 t("f4d07bd2", "Ta med valfria detaljer för att göra det enklare för sökande att upptäcka dina roller genom att söka."),
                 t("b8cbb51a", "Jobböversikt"),
@@ -7864,8 +7865,7 @@
                 t("ea000ec8", "Säger du redan upp din prenumeration?"),
                 t("d7b8387e", "Om du redan har sagt upp prenumerationen behöver du inte göra mer. Prenumerationen löper ut automatiskt i slutet av faktureringscykeln."),
                 t("f4166d9a", "Vill du säga upp prenumerationen?"),
-                t("b74ff5fc", "Om du säger upp prenumerationen kommer den att upphöra automatiskt i slutet av faktureringscykeln."),
-                t("ee9efbc8", "Fortsätt till uppsägningen");
+                t("b74ff5fc", "Om du säger upp prenumerationen kommer den att upphöra automatiskt i slutet av faktureringscykeln.");
             function i(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7904,7 +7904,8 @@
                     d(e, a)
                 );
             }
-            t("c5d9c77a", "Något verkar ha gått lite på tok. Men oroa dig inte, det är inte ditt fel. Stäng det här fönstret och försök igen."),
+            t("ee9efbc8", "Fortsätt till uppsägningen"),
+                t("c5d9c77a", "Något verkar ha gått lite på tok. Men oroa dig inte, det är inte ditt fel. Stäng det här fönstret och försök igen."),
                 t("jda53c24", "Du kan säga upp prenumerationen via Apple App Store."),
                 t("g0a7a53e", "Du kan säga upp prenumerationen via Google Play Butik."),
                 t("i5f14be7", function (e) {
@@ -8900,13 +8901,13 @@
                 }),
                 t("g60001bb", function (e) {
                     return "Se " + e.advertiserName;
-                }),
-                t("dff1ddd9", function (e) {
-                    return "Öppna " + e.advertiserName;
                 });
-            t("b0b22805", function (e) {
-                return "Besök " + e.advertiserName;
+            t("dff1ddd9", function (e) {
+                return "Öppna " + e.advertiserName;
             }),
+                t("b0b22805", function (e) {
+                    return "Besök " + e.advertiserName;
+                }),
                 t("c67e71aa", "Titta nu"),
                 t("a6ada13e", "Handla nu"),
                 t("j0f12222", "Se mer"),
@@ -13367,4 +13368,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.877a867a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.8030b39a.js.map

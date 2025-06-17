@@ -1311,7 +1311,8 @@
                 a("j77292b7", function (e) {
                     return "Selecteer maximaal " + e.count + " bestand" + r(e.count, "", "en");
                 }),
-                a("cbc8fed4", "Klopte deze vertaling? Geef ons feedback zodat wij verbeteringen kunnen doorvoeren:"),
+                a("d6b533dc", "Rate this translation:"),
+                a("j2f9ab6e", "Thank you for your feedback!"),
                 a("d56779a2", "eenvoudig te begrijpen"),
                 a("b6fe8a56", "verwarrend of onduidelijk"),
                 a("i73a7d48", "Vertaald door Google"),
@@ -1916,9 +1917,9 @@
                 a("i89195ea", "Verdeler"),
                 a("da8ac57c", "Bijschrift bewerken"),
                 a("a8fdd09c", "Artikel publiceren"),
-                a("d8047cc8", "Publiceren"),
-                a("ff7ddca2", "Je Artikel verschijnt als post zodra je het publiceert. Je kan het ook terugvinden in het tabblad Artikelen in je profiel.");
-            a("ef34d7be", "Je kan publiek- en antwoordinstellingen niet meer bewerken nadat een Artikel is gepubliceerd."),
+                a("d8047cc8", "Publiceren");
+            a("ff7ddca2", "Je Artikel verschijnt als post zodra je het publiceert. Je kan het ook terugvinden in het tabblad Artikelen in je profiel."),
+                a("ef34d7be", "Je kan publiek- en antwoordinstellingen niet meer bewerken nadat een Artikel is gepubliceerd."),
                 a("e52d4998", "Kies je publiek"),
                 a("d7985b24", "Kies wie op dit Artikel mag antwoorden"),
                 a("b5660338", "Voorvertoning tijdlijn"),
@@ -2972,9 +2973,9 @@
                 a("a7de64de", "Advertentie-info"),
                 a("jb0a4c36", "Blog"),
                 a("ce6d095a", "Banen"),
-                a("e0adec82", "Merkhulpmiddelen"),
-                a("df1b7550", "Marketing");
-            a("he258678", "X voor bedrijven"),
+                a("e0adec82", "Merkhulpmiddelen");
+            a("df1b7550", "Marketing"),
+                a("he258678", "X voor bedrijven"),
                 a("c6f58084", "Ontwikkelaars"),
                 a("d83f18d2", "Overzicht"),
                 a("hc5aa17c", "Download de app van X"),
@@ -3884,11 +3885,11 @@
                 a("a2bf8b8a", "Overschakelen naar luisteren"),
                 a("caa8d928", "Ruisonderdrukking aan-/uitzetten"),
                 a("b5d88f0c", "Alleen voor werknemers"),
-                a("c855ab8e", "Alleen Abonnees"),
-                a("ddeb0a3c", "Dit is de Community. Vind je de mensen leuk? Neem een kijkje.");
-            a("e111f531", function (e) {
-                return e.count + " beluisterd";
-            }),
+                a("c855ab8e", "Alleen Abonnees");
+            a("ddeb0a3c", "Dit is de Community. Vind je de mensen leuk? Neem een kijkje."),
+                a("e111f531", function (e) {
+                    return e.count + " beluisterd";
+                }),
                 a("cbef820f", function (e) {
                     return e.screenName + " heeft de stream opnieuw geplaatst!";
                 }),
@@ -4924,9 +4925,9 @@
                 a("a532072a", "Kijkers"),
                 a("d9508ab0", "weergaven"),
                 a("d9f9dec0", "Space weergeven"),
-                a("h0c1f37a", "Space-analyses bekijken"),
-                a("e41fffbc", "De totale kijktijd van je video's.");
-            a("if2909ba", "Kijktijd"),
+                a("h0c1f37a", "Space-analyses bekijken");
+            a("e41fffbc", "De totale kijktijd van je video's."),
+                a("if2909ba", "Kijktijd"),
                 a("i0e5bf4c", "Jouw video's"),
                 a("ed99baea", "Vroege bèta-toegang"),
                 a("gf898b70", "Geavanceerd zoeken"),
@@ -5878,9 +5879,9 @@
                     return "Geen resultaten gevonden voor " + e.query;
                 }),
                 a("f191a2ba", "zoekinstellingen"),
-                a("a068008a", "Mappen worden momenteel niet geladen"),
-                a("f075b0e8", "Map bewerken");
-            a("beba2a0e", "Een nieuwe map voor je bladwijzers maken"),
+                a("a068008a", "Mappen worden momenteel niet geladen");
+            a("f075b0e8", "Map bewerken"),
+                a("beba2a0e", "Een nieuwe map voor je bladwijzers maken"),
                 a("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
@@ -6884,9 +6885,9 @@
                 a("c05176ec", "Als deze functie op locatie is, geef dan de locatie(s) op. Als deze functie op afstand is, beschrijf dan waar kandidaten zich kunnen bevinden."),
                 a("d70c24d4", "Gebruikt om kandidaten te helpen zoeken naar jouw functie."),
                 a("de1c4376", "Salarisbereik"),
-                a("hf352d42", "Voeg een optioneel salarisbereik toe dat zichtbaar is voor kandidaten. Als je ervoor kiest om dit niet te doen, wees je dan bewust van eventuele wetten op het gebied van salaristransparantie in de locatie waarvoor je aanneemt."),
-                a("ede7d0a2", "Valuta");
-            a("b925c18c", "Soort salaris"),
+                a("hf352d42", "Voeg een optioneel salarisbereik toe dat zichtbaar is voor kandidaten. Als je ervoor kiest om dit niet te doen, wees je dan bewust van eventuele wetten op het gebied van salaristransparantie in de locatie waarvoor je aanneemt.");
+            a("ede7d0a2", "Valuta"),
+                a("b925c18c", "Soort salaris"),
                 a("j3d242ce", "Ongeldig bereik"),
                 a("f4d07bd2", "Voeg optionele details toe om het makkelijker te maken voor kandidaten om je vacatures te ontdekken met zoekopdrachten."),
                 a("b8cbb51a", "Samenvatting vacature"),
@@ -7864,8 +7865,7 @@
                 a("ea000ec8", "Heb je je Abonnement al opgezegd?"),
                 a("d7b8387e", "Als je jouw Abonnement al hebt opgezegd, hoef je verder niets te doen. Je Abonnement wordt automatisch beëindigd aan het einde van de factureringsperiode."),
                 a("f4166d9a", "Wil je je Abonnement opzeggen?"),
-                a("b74ff5fc", "Als je opzegt, wordt je Abonnement automatisch beëindigd aan het einde van de factureringsperiode."),
-                a("ee9efbc8", "Doorgaan naar opzeggen");
+                a("b74ff5fc", "Als je opzegt, wordt je Abonnement automatisch beëindigd aan het einde van de factureringsperiode.");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7904,7 +7904,8 @@
                     o(e, n)
                 );
             }
-            a("c5d9c77a", "Het lijkt erop dat er even iets misging. Maak je geen zorgen, dat ligt niet aan jou. Sluit dit venster en probeer het opnieuw."),
+            a("ee9efbc8", "Doorgaan naar opzeggen"),
+                a("c5d9c77a", "Het lijkt erop dat er even iets misging. Maak je geen zorgen, dat ligt niet aan jou. Sluit dit venster en probeer het opnieuw."),
                 a("jda53c24", "Je kan je Abonnement opzeggen via de Apple App Store."),
                 a("g0a7a53e", "Je kan je Abonnement opzeggen via de Google Play Store."),
                 a("i5f14be7", function (e) {
@@ -8900,13 +8901,13 @@
                 }),
                 a("g60001bb", function (e) {
                     return e.advertiserName + " bekijken";
-                }),
-                a("dff1ddd9", function (e) {
-                    return "Naar " + e.advertiserName + " gaan";
                 });
-            a("b0b22805", function (e) {
-                return e.advertiserName + " bezoeken";
+            a("dff1ddd9", function (e) {
+                return "Naar " + e.advertiserName + " gaan";
             }),
+                a("b0b22805", function (e) {
+                    return e.advertiserName + " bezoeken";
+                }),
                 a("c67e71aa", "Nu bekijken"),
                 a("a6ada13e", "Winkel nu"),
                 a("j0f12222", "Meer bekijken"),
@@ -13380,4 +13381,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.b499a2da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.b51c905a.js.map

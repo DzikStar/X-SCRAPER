@@ -1318,7 +1318,8 @@
                 o("j77292b7", function (a) {
                     return "Odaberite najviše " + a.count + " datotek" + n(a.count, "e", "u", "a");
                 }),
-                o("cbc8fed4", "Je li taj prijevod točan? Pošaljite nam povratne informacije kako bismo se mogli poboljšati:"),
+                o("d6b533dc", "Rate this translation:"),
+                o("j2f9ab6e", "Thank you for your feedback!"),
                 o("d56779a2", "lako razumljivo"),
                 o("b6fe8a56", "zbunjujuće ili nejasno"),
                 o("i73a7d48", "Prevedeno pomoću Googlea"),
@@ -1923,9 +1924,9 @@
                 o("i89195ea", "Razdjelnik"),
                 o("da8ac57c", "Uredi titlove"),
                 o("a8fdd09c", "Objavi članak"),
-                o("d8047cc8", "Objavi"),
-                o("ff7ddca2", "Vaš će se članak prikazati kao objava nakon što ga objavite. Možete ga pronaći i na kartici Članci na svom profilu.");
-            o("ef34d7be", "Kontrole za publiku i odgovor ne mogu se uređivati nakon objave članka."),
+                o("d8047cc8", "Objavi");
+            o("ff7ddca2", "Vaš će se članak prikazati kao objava nakon što ga objavite. Možete ga pronaći i na kartici Članci na svom profilu."),
+                o("ef34d7be", "Kontrole za publiku i odgovor ne mogu se uređivati nakon objave članka."),
                 o("e52d4998", "Odaberite publiku"),
                 o("d7985b24", "Odaberite tko sve može odgovoriti na ovaj članak"),
                 o("b5660338", "Pretpregled vremenske crte"),
@@ -2979,9 +2980,9 @@
                 o("a7de64de", "Informacije o oglasima"),
                 o("jb0a4c36", "Blog"),
                 o("ce6d095a", "Posao"),
-                o("e0adec82", "Resursi za robne marke"),
-                o("df1b7550", "Marketing");
-            o("he258678", "X za tvrtke"),
+                o("e0adec82", "Resursi za robne marke");
+            o("df1b7550", "Marketing"),
+                o("he258678", "X za tvrtke"),
                 o("c6f58084", "Razvojni inženjeri"),
                 o("d83f18d2", "Direktorij"),
                 o("hc5aa17c", "Preuzmite aplikaciju X"),
@@ -3891,11 +3892,11 @@
                 o("a2bf8b8a", "Prijeđi na slušanje"),
                 o("caa8d928", "Uključivanje/isključivanje prigušivanja buke"),
                 o("b5d88f0c", "Samo zaposlenici"),
-                o("c855ab8e", "Samo za pretplatnike"),
-                o("ddeb0a3c", "Evo te Zajednice. Sviđaju vam se korisnici? Pogledajte.");
-            o("e111f531", function (a) {
-                return a.count + " slušatelj" + n(a.count, "a", "", "a");
-            }),
+                o("c855ab8e", "Samo za pretplatnike");
+            o("ddeb0a3c", "Evo te Zajednice. Sviđaju vam se korisnici? Pogledajte."),
+                o("e111f531", function (a) {
+                    return a.count + " slušatelj" + n(a.count, "a", "", "a");
+                }),
                 o("cbef820f", function (a) {
                     return a.screenName + " podijelio/la je prijenos!";
                 }),
@@ -4931,9 +4932,9 @@
                 o("a532072a", "Gledatelji"),
                 o("d9508ab0", "prikaza"),
                 o("d9f9dec0", "Prikaži Prostor"),
-                o("h0c1f37a", "Prikaži analitičke podatke o Prostoru"),
-                o("e41fffbc", "Ukupno vrijeme gledanja vaših videozapisa.");
-            o("if2909ba", "Vrijeme gledanja"),
+                o("h0c1f37a", "Prikaži analitičke podatke o Prostoru");
+            o("e41fffbc", "Ukupno vrijeme gledanja vaših videozapisa."),
+                o("if2909ba", "Vrijeme gledanja"),
                 o("i0e5bf4c", "Vaši videozapisi"),
                 o("ed99baea", "Rani pristup beta verziji"),
                 o("gf898b70", "Napredno pretraživanje"),
@@ -5885,9 +5886,9 @@
                     return "Za " + a.query + " nema rezultata";
                 }),
                 o("f191a2ba", "postavkama pretraživanja"),
-                o("a068008a", "Mape se trenutno ne učitavaju"),
-                o("f075b0e8", "Uređivanje mape");
-            o("beba2a0e", "Stvori novu mapu s knjižnim oznakama"),
+                o("a068008a", "Mape se trenutno ne učitavaju");
+            o("f075b0e8", "Uređivanje mape"),
+                o("beba2a0e", "Stvori novu mapu s knjižnim oznakama"),
                 o("e41c9b4f", function (a) {
                     return "Saved to " + a.bookmarkFolderName;
                 }),
@@ -6891,9 +6892,9 @@
                 o("c05176ec", "Ako je radno mjesto na lokaciji, unesite lokaciju (ili lokacije). Ako je riječ o radu na daljinu, opišite gdje se sve kandidati mogu nalaziti."),
                 o("d70c24d4", "Upotrebljava se kako bi kandidati jednostavnije pretraživali vaš posao."),
                 o("de1c4376", "Visina plaće"),
-                o("hf352d42", "Dodajte opcionalan raspon plaće koji će biti vidljiv kandidatima. Ako odlučite da ga ne želite dodati, provjerite pridržavate li se svih zakona o transparentnosti plaća na lokaciji u kojoj zapošljavate."),
-                o("ede7d0a2", "Valuta");
-            o("b925c18c", "Vrsta plaće"),
+                o("hf352d42", "Dodajte opcionalan raspon plaće koji će biti vidljiv kandidatima. Ako odlučite da ga ne želite dodati, provjerite pridržavate li se svih zakona o transparentnosti plaća na lokaciji u kojoj zapošljavate.");
+            o("ede7d0a2", "Valuta"),
+                o("b925c18c", "Vrsta plaće"),
                 o("j3d242ce", "Raspon nije valjan"),
                 o("f4d07bd2", "Uključite neobavezne podatke kako biste kandidatima olakšali otkrivanje vaših radnih mjesta putem pretraživanja."),
                 o("b8cbb51a", "Sažetak posla"),
@@ -7871,8 +7872,7 @@
                 o("ea000ec8", "Već ste otkazali pretplatu?"),
                 o("d7b8387e", "Ako ste već otkazali pretplatu, više ništa ne morate učiniti. Ona će automatski isteći po završetku ciklusa naplate."),
                 o("f4166d9a", "Želite otkazati pretplatu?"),
-                o("b74ff5fc", "Ako otkažete pretplatu, ona će automatski isteći po završetku ciklusa naplate."),
-                o("ee9efbc8", "Nastavi na otkazivanje");
+                o("b74ff5fc", "Ako otkažete pretplatu, ona će automatski isteći po završetku ciklusa naplate.");
             function t(a, e) {
                 for (var i = 0; i < e.length; i++) {
                     var o = e[i];
@@ -7911,7 +7911,8 @@
                     r(a, e)
                 );
             }
-            o("c5d9c77a", "Izgleda da je došlo do manjih poteškoća u radu. Ne brinite, nije vaša greška. Zatvorite taj prozor i pokušajte ponovno."),
+            o("ee9efbc8", "Nastavi na otkazivanje"),
+                o("c5d9c77a", "Izgleda da je došlo do manjih poteškoća u radu. Ne brinite, nije vaša greška. Zatvorite taj prozor i pokušajte ponovno."),
                 o("jda53c24", "Pretplatu možete otkazati putem servisa Apple App Store."),
                 o("g0a7a53e", "Pretplatu možete otkazati putem servisa Google Play Store."),
                 o("i5f14be7", function (a) {
@@ -8907,13 +8908,13 @@
                 }),
                 o("g60001bb", function (a) {
                     return "Pogledajte " + a.advertiserName;
-                }),
-                o("dff1ddd9", function (a) {
-                    return "Idi na " + a.advertiserName;
                 });
-            o("b0b22805", function (a) {
-                return "Posjetite " + a.advertiserName;
+            o("dff1ddd9", function (a) {
+                return "Idi na " + a.advertiserName;
             }),
+                o("b0b22805", function (a) {
+                    return "Posjetite " + a.advertiserName;
+                }),
                 o("c67e71aa", "Gledajte odmah"),
                 o("a6ada13e", "Odmah kupujte"),
                 o("j0f12222", "Pogledajte više"),
@@ -13388,4 +13389,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.6d5b36fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.8a515b0a.js.map

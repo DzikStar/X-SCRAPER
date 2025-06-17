@@ -4459,7 +4459,7 @@
                     pn(Bf, vn),
                     pn(Mf, vn),
                     pn(Pf, vn),
-                    en(Hf, "SelectImplementation", un, un, [Kr, Sf, Te], [0, 2]),
+                    en(Hf, "SelectImplementation", un, un, [Kr, Te, Sf], [0, 2]),
                     en(Wf, "TrySelectDetailedResult", un, Pn),
                     en(tl, "CancellableContinuationWithOwner", un, un, [Sr, Te]),
                     en(fl, "SemaphoreAndMutexImpl", un, un, un, [0]),
@@ -11304,4 +11304,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-3cc6c8f8.c70d77ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-3cc6c8f8.e4f89e1a.js.map

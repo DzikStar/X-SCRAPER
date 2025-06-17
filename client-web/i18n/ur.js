@@ -1315,7 +1315,8 @@
                 o("j77292b7", function (e) {
                     return "Please only select up to " + e.count + " file" + r(e.count, "", "s");
                 }),
-                o("cbc8fed4", "Was this translation accurate? Give us feedback so we can improve:"),
+                o("d6b533dc", "Rate this translation:"),
+                o("j2f9ab6e", "Thank you for your feedback!"),
                 o("d56779a2", "easy to understand"),
                 o("b6fe8a56", "confusing or unclear"),
                 o("i73a7d48", "Google سے ترجمہ شدہ"),
@@ -1920,9 +1921,9 @@
                 o("i89195ea", "Divider"),
                 o("da8ac57c", "Edit Caption"),
                 o("a8fdd09c", "Publish Article"),
-                o("d8047cc8", "شائع کریں"),
-                o("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile.");
-            o("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
+                o("d8047cc8", "شائع کریں");
+            o("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                o("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
                 o("e52d4998", "Choose your audience"),
                 o("d7985b24", "Choose who can reply to this Article"),
                 o("b5660338", "Timeline preview"),
@@ -2976,9 +2977,9 @@
                 o("a7de64de", "اشتہارات کی معلومات"),
                 o("jb0a4c36", "بلاگ"),
                 o("ce6d095a", "طرز زندگی"),
-                o("e0adec82", "برانڈ ذرائع"),
-                o("df1b7550", "مارکیٹنگ");
-            o("he258678", "X for Business"),
+                o("e0adec82", "برانڈ ذرائع");
+            o("df1b7550", "مارکیٹنگ"),
+                o("he258678", "X for Business"),
                 o("c6f58084", "ڈویلپرز"),
                 o("d83f18d2", "ڈائریکٹری"),
                 o("hc5aa17c", "Get the X app"),
@@ -3888,11 +3889,11 @@
                 o("a2bf8b8a", "Switch to listening"),
                 o("caa8d928", "Toggle noise suppression"),
                 o("b5d88f0c", "Employees only"),
-                o("c855ab8e", "صرف سبسکرائبرز"),
-                o("ddeb0a3c", "پیش ہے کمیونٹی۔ لوگوں کو لائک کریں؟ ایک نظر ڈالیں۔");
-            o("e111f531", function (e) {
-                return e.count + " میں  ہم آہنگ";
-            }),
+                o("c855ab8e", "صرف سبسکرائبرز");
+            o("ddeb0a3c", "پیش ہے کمیونٹی۔ لوگوں کو لائک کریں؟ ایک نظر ڈالیں۔"),
+                o("e111f531", function (e) {
+                    return e.count + " میں  ہم آہنگ";
+                }),
                 o("cbef820f", function (e) {
                     return e.screenName + " reposted the stream!";
                 }),
@@ -4928,9 +4929,9 @@
                 o("a532072a", "Viewers"),
                 o("d9508ab0", "views"),
                 o("d9f9dec0", "View Space"),
-                o("h0c1f37a", "View Space Analytics"),
-                o("e41fffbc", "The total watch time of your videos.");
-            o("if2909ba", "Watch Time"),
+                o("h0c1f37a", "View Space Analytics");
+            o("e41fffbc", "The total watch time of your videos."),
+                o("if2909ba", "Watch Time"),
                 o("i0e5bf4c", "Your videos"),
                 o("ed99baea", "Early Beta Access"),
                 o("gf898b70", "Advanced Search"),
@@ -5882,9 +5883,9 @@
                     return e.query + " کے لیے  کوئی نتائج نہیں";
                 }),
                 o("f191a2ba", "تلاش کی ترتیبات"),
-                o("a068008a", "Folders aren`t loading right now"),
-                o("f075b0e8", "فولڈر میں ترمیم کریں");
-            o("beba2a0e", "بک مارک کا نیا فولڈر بنائيں"),
+                o("a068008a", "Folders aren`t loading right now");
+            o("f075b0e8", "فولڈر میں ترمیم کریں"),
+                o("beba2a0e", "بک مارک کا نیا فولڈر بنائيں"),
                 o("e41c9b4f", function (e) {
                     return e.bookmarkFolderName + " میں محفوظ کر دیا گیا";
                 }),
@@ -6888,9 +6889,9 @@
                 o("c05176ec", "If this role is onsite, enter the site location(s). If this role is remote, describe where candidates can be located."),
                 o("d70c24d4", "Used to help candidates search for your job."),
                 o("de1c4376", "Salary Range"),
-                o("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for."),
-                o("ede7d0a2", "Currency");
-            o("b925c18c", "Salary Type"),
+                o("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for.");
+            o("ede7d0a2", "Currency"),
+                o("b925c18c", "Salary Type"),
                 o("j3d242ce", "Invalid range"),
                 o("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
                 o("b8cbb51a", "Job Summary"),
@@ -7868,8 +7869,7 @@
                 o("ea000ec8", "آپ کا سبسکرپشن پہلے ہی منسوخ کر دیا گيا ہے؟"),
                 o("d7b8387e", "اگر آپ نے پہلے ہی منسوخ کر دیا ہے، تو مزید کچھ نہیں کرنا ہے۔ آپ کا سبسکرپشن خود بخود بلنگ سائیکل کے اختتام پر ختم ہو جائے گا۔"),
                 o("f4166d9a", "اپنا سبسکرپشن مسوخ کرنا چاہتے ہیں؟"),
-                o("b74ff5fc", "اگر آپ منسوخ کرتے ہیں، تو آپ کا سبسکرپشن خود بخود بلنگ سائیکل کے اختتام پر ختم ہو جائے گا۔"),
-                o("ee9efbc8", "کینسلیشن جاری رکھیں");
+                o("b74ff5fc", "اگر آپ منسوخ کرتے ہیں، تو آپ کا سبسکرپشن خود بخود بلنگ سائیکل کے اختتام پر ختم ہو جائے گا۔");
             function i(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var o = t[a];
@@ -7908,7 +7908,8 @@
                     c(e, t)
                 );
             }
-            o("c5d9c77a", "لگتا ہے ہلکی سی آواڑ آئی ہے۔ پریشان نہ ہوں، یہ آپ کی غلطی نہیں ہے۔ اس ونڈو کو بند کریں اور دوبارہ کوشش کریں۔"),
+            o("ee9efbc8", "کینسلیشن جاری رکھیں"),
+                o("c5d9c77a", "لگتا ہے ہلکی سی آواڑ آئی ہے۔ پریشان نہ ہوں، یہ آپ کی غلطی نہیں ہے۔ اس ونڈو کو بند کریں اور دوبارہ کوشش کریں۔"),
                 o("jda53c24", "آپ Apple App Store کے ذریعہ اپنا سبسکرپشن منسوخ کرسکتے ہیں۔"),
                 o("g0a7a53e", "آپ Google Play Storeکے ذریعہ اپنا سبسکرپشن منسوخ کرسکتے ہیں۔"),
                 o("i5f14be7", function (e) {
@@ -8904,13 +8905,13 @@
                 }),
                 o("g60001bb", function (e) {
                     return e.advertiserName + " دیکھیں";
-                }),
-                o("dff1ddd9", function (e) {
-                    return e.advertiserName + " پر جائیں";
                 });
-            o("b0b22805", function (e) {
-                return e.advertiserName + " ملاحظہ کریں";
+            o("dff1ddd9", function (e) {
+                return e.advertiserName + " پر جائیں";
             }),
+                o("b0b22805", function (e) {
+                    return e.advertiserName + " ملاحظہ کریں";
+                }),
                 o("c67e71aa", "ابھی دیکھیں"),
                 o("a6ada13e", "Shop now"),
                 o("j0f12222", "مزید دیکھیں"),
@@ -13375,4 +13376,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.bf3ca65a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.d9e161ea.js.map

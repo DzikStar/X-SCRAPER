@@ -1315,7 +1315,8 @@
                 t("j77292b7", function (e) {
                     return "Please only select up to " + e.count + " file" + i(e.count, "", "s");
                 }),
-                t("cbc8fed4", "Was this translation accurate? Give us feedback so we can improve:"),
+                t("d6b533dc", "Rate this translation:"),
+                t("j2f9ab6e", "Thank you for your feedback!"),
                 t("d56779a2", "easy to understand"),
                 t("b6fe8a56", "confusing or unclear"),
                 t("i73a7d48", "Traducido por Google"),
@@ -1920,9 +1921,9 @@
                 t("i89195ea", "Divider"),
                 t("da8ac57c", "Edit Caption"),
                 t("a8fdd09c", "Publish Article"),
-                t("d8047cc8", "Publicar"),
-                t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile.");
-            t("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
+                t("d8047cc8", "Publicar");
+            t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                t("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
                 t("e52d4998", "Choose your audience"),
                 t("d7985b24", "Choose who can reply to this Article"),
                 t("b5660338", "Timeline preview"),
@@ -2976,9 +2977,9 @@
                 t("a7de64de", "Ads info"),
                 t("jb0a4c36", "Blog"),
                 t("ce6d095a", "Empregos"),
-                t("e0adec82", "Recursos de marca"),
-                t("df1b7550", "Marketing");
-            t("he258678", "X for Business"),
+                t("e0adec82", "Recursos de marca");
+            t("df1b7550", "Marketing"),
+                t("he258678", "X for Business"),
                 t("c6f58084", "Developers"),
                 t("d83f18d2", "Directory"),
                 t("hc5aa17c", "Get the X app"),
@@ -3888,11 +3889,11 @@
                 t("a2bf8b8a", "Switch to listening"),
                 t("caa8d928", "Toggle noise suppression"),
                 t("b5d88f0c", "Employees only"),
-                t("c855ab8e", "Subscribers only"),
-                t("ddeb0a3c", "Here’s the Community. Like the people? Take a look.");
-            t("e111f531", function (e) {
-                return e.count + " usuario" + n(e.count, "", "s") + " escoitando";
-            }),
+                t("c855ab8e", "Subscribers only");
+            t("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
+                t("e111f531", function (e) {
+                    return e.count + " usuario" + n(e.count, "", "s") + " escoitando";
+                }),
                 t("cbef820f", function (e) {
                     return e.screenName + " reposted the stream!";
                 }),
@@ -4928,9 +4929,9 @@
                 t("a532072a", "Viewers"),
                 t("d9508ab0", "views"),
                 t("d9f9dec0", "View Space"),
-                t("h0c1f37a", "View Space Analytics"),
-                t("e41fffbc", "The total watch time of your videos.");
-            t("if2909ba", "Watch Time"),
+                t("h0c1f37a", "View Space Analytics");
+            t("e41fffbc", "The total watch time of your videos."),
+                t("if2909ba", "Watch Time"),
                 t("i0e5bf4c", "Your videos"),
                 t("ed99baea", "Early Beta Access"),
                 t("gf898b70", "Advanced Search"),
@@ -5882,9 +5883,9 @@
                     return "Non hai resultados de " + e.query;
                 }),
                 t("f191a2ba", "configuración da procura"),
-                t("a068008a", "Folders aren`t loading right now"),
-                t("f075b0e8", "Editar cartafol");
-            t("beba2a0e", "Crear cartafol de marcadores"),
+                t("a068008a", "Folders aren`t loading right now");
+            t("f075b0e8", "Editar cartafol"),
+                t("beba2a0e", "Crear cartafol de marcadores"),
                 t("e41c9b4f", function (e) {
                     return "Gardouse en " + e.bookmarkFolderName;
                 }),
@@ -6888,9 +6889,9 @@
                 t("c05176ec", "If this role is onsite, enter the site location(s). If this role is remote, describe where candidates can be located."),
                 t("d70c24d4", "Used to help candidates search for your job."),
                 t("de1c4376", "Salary Range"),
-                t("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for."),
-                t("ede7d0a2", "Currency");
-            t("b925c18c", "Salary Type"),
+                t("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for.");
+            t("ede7d0a2", "Currency"),
+                t("b925c18c", "Salary Type"),
                 t("j3d242ce", "Invalid range"),
                 t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
                 t("b8cbb51a", "Job Summary"),
@@ -7868,8 +7869,7 @@
                 t("ea000ec8", "Already canceled your Subscription?"),
                 t("d7b8387e", "If you’ve already canceled, there’s nothing more to do. Your Subscription will automatically expire at the end of the billing cycle."),
                 t("f4166d9a", "Want to cancel your Subscription?"),
-                t("b74ff5fc", "If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
-                t("ee9efbc8", "Continuar coa cancelación");
+                t("b74ff5fc", "If you cancel, your Subscription will automatically expire at the end of the billing cycle.");
             function r(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var t = a[o];
@@ -7908,7 +7908,8 @@
                     s(e, a)
                 );
             }
-            t("c5d9c77a", "Semella que houbo algún problemiña. Non te preocupes, non foi culta túa. Pecha esta ventá e téntao de novo."),
+            t("ee9efbc8", "Continuar coa cancelación"),
+                t("c5d9c77a", "Semella que houbo algún problemiña. Non te preocupes, non foi culta túa. Pecha esta ventá e téntao de novo."),
                 t("jda53c24", "You can cancel your Subscription through the Apple App Store."),
                 t("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
                 t("i5f14be7", function (e) {
@@ -8904,13 +8905,13 @@
                 }),
                 t("g60001bb", function (e) {
                     return "Ver " + e.advertiserName;
-                }),
-                t("dff1ddd9", function (e) {
-                    return "Ir a " + e.advertiserName;
                 });
-            t("b0b22805", function (e) {
-                return "Visitar " + e.advertiserName;
+            t("dff1ddd9", function (e) {
+                return "Ir a " + e.advertiserName;
             }),
+                t("b0b22805", function (e) {
+                    return "Visitar " + e.advertiserName;
+                }),
                 t("c67e71aa", "Ver agora"),
                 t("a6ada13e", "Mercar agora"),
                 t("j0f12222", "Ver máis"),
@@ -13371,4 +13372,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.d7cd737a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.0475fa6a.js.map

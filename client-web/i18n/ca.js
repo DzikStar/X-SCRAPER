@@ -1311,7 +1311,8 @@
                 t("j77292b7", function (e) {
                     return "Selecciona fins a " + e.count + " fitxer" + r(e.count, "", "s");
                 }),
-                t("cbc8fed4", "És correcta la traducció? Envia'ns comentaris perquè puguem millorar."),
+                t("d6b533dc", "Rate this translation:"),
+                t("j2f9ab6e", "Thank you for your feedback!"),
                 t("d56779a2", "és fàcil d'entendre"),
                 t("b6fe8a56", "és confusa o poc clara"),
                 t("i73a7d48", "Traduït per Google"),
@@ -1916,9 +1917,9 @@
                 t("i89195ea", "Separador"),
                 t("da8ac57c", "Edita la llegenda"),
                 t("a8fdd09c", "Publica l'article"),
-                t("d8047cc8", "Publica"),
-                t("ff7ddca2", "Quan el publiquis, l'article es mostrarà com una publicació. A més, el podràs trobar a la pestanya Articles del teu perfil.");
-            t("ef34d7be", "Els controls d'audiència i de resposta no es poden editar un cop s'ha publicat l'article."),
+                t("d8047cc8", "Publica");
+            t("ff7ddca2", "Quan el publiquis, l'article es mostrarà com una publicació. A més, el podràs trobar a la pestanya Articles del teu perfil."),
+                t("ef34d7be", "Els controls d'audiència i de resposta no es poden editar un cop s'ha publicat l'article."),
                 t("e52d4998", "Tria la teva audiència"),
                 t("d7985b24", "Tria qui pot respondre a aquest article"),
                 t("b5660338", "Vista prèvia de la cronologia"),
@@ -2972,9 +2973,9 @@
                 t("a7de64de", "Informació sobre els anuncis"),
                 t("jb0a4c36", "Blog"),
                 t("ce6d095a", "Professions"),
-                t("e0adec82", "Recursos de marca"),
-                t("df1b7550", "Màrqueting");
-            t("he258678", "X per a empreses"),
+                t("e0adec82", "Recursos de marca");
+            t("df1b7550", "Màrqueting"),
+                t("he258678", "X per a empreses"),
                 t("c6f58084", "Desenvolupadors"),
                 t("d83f18d2", "Directori"),
                 t("hc5aa17c", "Obtén l'aplicació de X"),
@@ -3884,11 +3885,11 @@
                 t("a2bf8b8a", "La vull escoltar només"),
                 t("caa8d928", "Activa la supressió de soroll"),
                 t("b5d88f0c", "Només empleats"),
-                t("c855ab8e", "Només per a Subscriptors"),
-                t("ddeb0a3c", "Aquí tens la Comunitat. Te n'agraden els usuaris? Dona-hi un cop d'ull.");
-            t("e111f531", function (e) {
-                return e.count + " estan escoltant";
-            }),
+                t("c855ab8e", "Només per a Subscriptors");
+            t("ddeb0a3c", "Aquí tens la Comunitat. Te n'agraden els usuaris? Dona-hi un cop d'ull."),
+                t("e111f531", function (e) {
+                    return e.count + " estan escoltant";
+                }),
                 t("cbef820f", function (e) {
                     return e.screenName + " ha republicat la transmissió!";
                 }),
@@ -4924,9 +4925,9 @@
                 t("a532072a", "Espectadors"),
                 t("d9508ab0", "visualitzacions"),
                 t("d9f9dec0", "Mostra l'espai"),
-                t("h0c1f37a", "Mostra les analítiques dels espais"),
-                t("e41fffbc", "Temps total de visualització dels vídeos.");
-            t("if2909ba", "Temps de visualització"),
+                t("h0c1f37a", "Mostra les analítiques dels espais");
+            t("e41fffbc", "Temps total de visualització dels vídeos."),
+                t("if2909ba", "Temps de visualització"),
                 t("i0e5bf4c", "Els teus vídeos"),
                 t("ed99baea", "Accès beta anticipat"),
                 t("gf898b70", "Cerca avançada"),
@@ -5878,9 +5879,9 @@
                     return "No hi ha cap resultat per a: " + e.query;
                 }),
                 t("f191a2ba", "configuració de la cerca"),
-                t("a068008a", "Les carpetes no s'estan carregant ara mateix"),
-                t("f075b0e8", "Edita la carpeta");
-            t("beba2a0e", "Crea una carpeta de preferits nova"),
+                t("a068008a", "Les carpetes no s'estan carregant ara mateix");
+            t("f075b0e8", "Edita la carpeta"),
+                t("beba2a0e", "Crea una carpeta de preferits nova"),
                 t("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
@@ -6884,9 +6885,9 @@
                 t("c05176ec", "Si és una funció per a les instal·lacions, introdueix-ne la o les ubicacions. Si és una funció remota, descriu on poden residir els candidats."),
                 t("d70c24d4", "S'utilitza per ajudar els candidats a cercar la feina."),
                 t("de1c4376", "Interval de salari"),
-                t("hf352d42", "Afegeix un interval de salari opcional que serà visible per als candidats. Si tries de no afegir-lo, tingues en compte les lleis de transparència de salaris de la ubicació per a la qual estàs contractant."),
-                t("ede7d0a2", "Moneda");
-            t("b925c18c", "Tipus de salari"),
+                t("hf352d42", "Afegeix un interval de salari opcional que serà visible per als candidats. Si tries de no afegir-lo, tingues en compte les lleis de transparència de salaris de la ubicació per a la qual estàs contractant.");
+            t("ede7d0a2", "Moneda"),
+                t("b925c18c", "Tipus de salari"),
                 t("j3d242ce", "Interval no vàlid"),
                 t("f4d07bd2", "Inclou detalls opcionals perquè els candidats puguin trobar fàcilment les funcions amb la cerca."),
                 t("b8cbb51a", "Resum de la feina"),
@@ -7864,8 +7865,7 @@
                 t("ea000ec8", "Ja has cancel·lat la Subscripció?"),
                 t("d7b8387e", "Si ja has cancel·lat la Subscripció, no cal que facis res més, ja que aquesta caducarà de manera automàtica en finalitzar el cicle de facturació."),
                 t("f4166d9a", "Vols cancel·lar la Subscripció?"),
-                t("b74ff5fc", "Si cancel·les la Subscripció, aquesta caducarà de manera automàtica en finalitzar el cicle de facturació."),
-                t("ee9efbc8", "Segueix cancel·lant");
+                t("b74ff5fc", "Si cancel·les la Subscripció, aquesta caducarà de manera automàtica en finalitzar el cicle de facturació.");
             function s(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7904,7 +7904,8 @@
                     n(e, a)
                 );
             }
-            t("c5d9c77a", "Sembla que s'ha produït un petit problema, però no et preocupis, no és culpa teva. Tanca la finestra i torna-ho a provar."),
+            t("ee9efbc8", "Segueix cancel·lant"),
+                t("c5d9c77a", "Sembla que s'ha produït un petit problema, però no et preocupis, no és culpa teva. Tanca la finestra i torna-ho a provar."),
                 t("jda53c24", "Pots cancel·lar la Subscripció des de l'Apple App Store."),
                 t("g0a7a53e", "Pots cancel·lar la Subscripció des de la Google Play Store."),
                 t("i5f14be7", function (e) {
@@ -8900,13 +8901,13 @@
                 }),
                 t("g60001bb", function (e) {
                     return "Mostra " + e.advertiserName;
-                }),
-                t("dff1ddd9", function (e) {
-                    return "Ves a " + e.advertiserName;
                 });
-            t("b0b22805", function (e) {
-                return "Visita " + e.advertiserName;
+            t("dff1ddd9", function (e) {
+                return "Ves a " + e.advertiserName;
             }),
+                t("b0b22805", function (e) {
+                    return "Visita " + e.advertiserName;
+                }),
                 t("c67e71aa", "Mira-ho ara"),
                 t("a6ada13e", "Compra ara"),
                 t("j0f12222", "Mostra'n més"),
@@ -13367,4 +13368,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.707cb9fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.03c9c6aa.js.map

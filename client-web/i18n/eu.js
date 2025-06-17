@@ -1314,7 +1314,8 @@
                 o("j77292b7", function (e) {
                     return "Please only select up to " + e.count + " file" + r(e.count, "", "s");
                 }),
-                o("cbc8fed4", "Was this translation accurate? Give us feedback so we can improve:"),
+                o("d6b533dc", "Rate this translation:"),
+                o("j2f9ab6e", "Thank you for your feedback!"),
                 o("d56779a2", "easy to understand"),
                 o("b6fe8a56", "confusing or unclear"),
                 o("i73a7d48", "Googlek itzuli du"),
@@ -1919,9 +1920,9 @@
                 o("i89195ea", "Divider"),
                 o("da8ac57c", "Edit Caption"),
                 o("a8fdd09c", "Publish Article"),
-                o("d8047cc8", "Argitaratu"),
-                o("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile.");
-            o("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
+                o("d8047cc8", "Argitaratu");
+            o("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                o("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
                 o("e52d4998", "Choose your audience"),
                 o("d7985b24", "Choose who can reply to this Article"),
                 o("b5660338", "Timeline preview"),
@@ -2975,9 +2976,9 @@
                 o("a7de64de", "Ads info"),
                 o("jb0a4c36", "Blog"),
                 o("ce6d095a", "Lanbideak"),
-                o("e0adec82", "Markaren baliabideak"),
-                o("df1b7550", "Marketing");
-            o("he258678", "X for Business"),
+                o("e0adec82", "Markaren baliabideak");
+            o("df1b7550", "Marketing"),
+                o("he258678", "X for Business"),
                 o("c6f58084", "Developers"),
                 o("d83f18d2", "Directory"),
                 o("hc5aa17c", "Get the X app"),
@@ -3887,11 +3888,11 @@
                 o("a2bf8b8a", "Switch to listening"),
                 o("caa8d928", "Toggle noise suppression"),
                 o("b5d88f0c", "Employees only"),
-                o("c855ab8e", "Subscribers only"),
-                o("ddeb0a3c", "Here’s the Community. Like the people? Take a look.");
-            o("e111f531", function (e) {
-                return e.count + " sintonizatuta";
-            }),
+                o("c855ab8e", "Subscribers only");
+            o("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
+                o("e111f531", function (e) {
+                    return e.count + " sintonizatuta";
+                }),
                 o("cbef820f", function (e) {
                     return e.screenName + " reposted the stream!";
                 }),
@@ -4927,9 +4928,9 @@
                 o("a532072a", "Viewers"),
                 o("d9508ab0", "views"),
                 o("d9f9dec0", "View Space"),
-                o("h0c1f37a", "View Space Analytics"),
-                o("e41fffbc", "The total watch time of your videos.");
-            o("if2909ba", "Watch Time"),
+                o("h0c1f37a", "View Space Analytics");
+            o("e41fffbc", "The total watch time of your videos."),
+                o("if2909ba", "Watch Time"),
                 o("i0e5bf4c", "Your videos"),
                 o("ed99baea", "Early Beta Access"),
                 o("gf898b70", "Advanced Search"),
@@ -5881,9 +5882,9 @@
                     return "Ez da aurkitu “" + e.query + "” bilaketaren emaitzarik";
                 }),
                 o("f191a2ba", "Bilaketa-ezarpenak"),
-                o("a068008a", "Folders aren`t loading right now"),
-                o("f075b0e8", "Editatu karpeta");
-            o("beba2a0e", "Sortu laster-marken karpeta berri bat"),
+                o("a068008a", "Folders aren`t loading right now");
+            o("f075b0e8", "Editatu karpeta"),
+                o("beba2a0e", "Sortu laster-marken karpeta berri bat"),
                 o("e41c9b4f", function (e) {
                     return "Hemen gordeta: " + e.bookmarkFolderName;
                 }),
@@ -6887,9 +6888,9 @@
                 o("c05176ec", "If this role is onsite, enter the site location(s). If this role is remote, describe where candidates can be located."),
                 o("d70c24d4", "Used to help candidates search for your job."),
                 o("de1c4376", "Salary Range"),
-                o("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for."),
-                o("ede7d0a2", "Currency");
-            o("b925c18c", "Salary Type"),
+                o("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for.");
+            o("ede7d0a2", "Currency"),
+                o("b925c18c", "Salary Type"),
                 o("j3d242ce", "Invalid range"),
                 o("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
                 o("b8cbb51a", "Job Summary"),
@@ -7867,8 +7868,7 @@
                 o("ea000ec8", "Already canceled your Subscription?"),
                 o("d7b8387e", "If you’ve already canceled, there’s nothing more to do. Your Subscription will automatically expire at the end of the billing cycle."),
                 o("f4166d9a", "Want to cancel your Subscription?"),
-                o("b74ff5fc", "If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
-                o("ee9efbc8", "Jarraitu uzteko");
+                o("b74ff5fc", "If you cancel, your Subscription will automatically expire at the end of the billing cycle.");
             function n(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var o = a[t];
@@ -7907,7 +7907,8 @@
                     u(e, a)
                 );
             }
-            o("c5d9c77a", "Itxura txiki bat egon zela dirudi. Ez kezkatu ordea, ez da zure errua. Itxi leiho hau eta saiatu berriro."),
+            o("ee9efbc8", "Jarraitu uzteko"),
+                o("c5d9c77a", "Itxura txiki bat egon zela dirudi. Ez kezkatu ordea, ez da zure errua. Itxi leiho hau eta saiatu berriro."),
                 o("jda53c24", "You can cancel your Subscription through the Apple App Store."),
                 o("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
                 o("i5f14be7", function (e) {
@@ -8903,13 +8904,13 @@
                 }),
                 o("g60001bb", function (e) {
                     return "Ikusi " + e.advertiserName;
-                }),
-                o("dff1ddd9", function (e) {
-                    return "Joan hona: " + e.advertiserName;
                 });
-            o("b0b22805", function (e) {
-                return "Bisitatu " + e.advertiserName;
+            o("dff1ddd9", function (e) {
+                return "Joan hona: " + e.advertiserName;
             }),
+                o("b0b22805", function (e) {
+                    return "Bisitatu " + e.advertiserName;
+                }),
                 o("c67e71aa", "Ikusi orain"),
                 o("a6ada13e", "Erosi orain"),
                 o("j0f12222", "Ikusi gehiago"),
@@ -13373,4 +13374,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.6f4e1a0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.6d60c90a.js.map

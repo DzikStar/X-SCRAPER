@@ -1320,7 +1320,8 @@
                 i("j77292b7", function (e) {
                     return "Wybierz maksymalnie " + e.count + " plik" + n(e.count, "i", "ów", "", "u");
                 }),
-                i("cbc8fed4", "Czy to tłumaczenie było dokładne? Przekaż opinię, co umożliwi nam wprowadzenie ulepszeń:"),
+                i("d6b533dc", "Rate this translation:"),
+                i("j2f9ab6e", "Thank you for your feedback!"),
                 i("d56779a2", "łatwe do zrozumienia"),
                 i("b6fe8a56", "wątpliwe lub niejasne"),
                 i("i73a7d48", "Przetłumaczone przez Google"),
@@ -1925,9 +1926,9 @@
                 i("i89195ea", "Rozdzielacz"),
                 i("da8ac57c", "Edytuj podpis"),
                 i("a8fdd09c", "Opublikuj artykuł"),
-                i("d8047cc8", "Opublikuj"),
-                i("ff7ddca2", "Opublikowany artykuł będzie widoczny jako wpis. Będzie go też można znaleźć na karcie Artykuły w Twoim profilu.");
-            i("ef34d7be", "Kontrolek Odbiorcy i Odpowiedź nie można edytować po opublikowaniu artykułu."),
+                i("d8047cc8", "Opublikuj");
+            i("ff7ddca2", "Opublikowany artykuł będzie widoczny jako wpis. Będzie go też można znaleźć na karcie Artykuły w Twoim profilu."),
+                i("ef34d7be", "Kontrolek Odbiorcy i Odpowiedź nie można edytować po opublikowaniu artykułu."),
                 i("e52d4998", "Wybierz odbiorców"),
                 i("d7985b24", "Określ, kto może odpowiadać na ten artykuł"),
                 i("b5660338", "Podgląd osi czasu"),
@@ -2981,9 +2982,9 @@
                 i("a7de64de", "Informacja o reklamach"),
                 i("jb0a4c36", "Blog"),
                 i("ce6d095a", "Praca"),
-                i("e0adec82", "Zasoby marki"),
-                i("df1b7550", "Marketing");
-            i("he258678", "X dla firm"),
+                i("e0adec82", "Zasoby marki");
+            i("df1b7550", "Marketing"),
+                i("he258678", "X dla firm"),
                 i("c6f58084", "Deweloperzy"),
                 i("d83f18d2", "Ścieżka"),
                 i("hc5aa17c", "Pobierz aplikację X"),
@@ -3893,11 +3894,11 @@
                 i("a2bf8b8a", "Przełącz na słuchanie"),
                 i("caa8d928", "Przełącz tłumienie hałasu"),
                 i("b5d88f0c", "Tylko dla pracowników"),
-                i("c855ab8e", "Tylko dla subskrybentów"),
-                i("ddeb0a3c", "Podoba Ci się atmosfera w tej Grupie dyskusyjnej? Rozejrzyj się tu.");
-            i("e111f531", function (e) {
-                return e.count + " dołączy" + n(e.count, "li/ły", "ło", "ł/a", "ło");
-            }),
+                i("c855ab8e", "Tylko dla subskrybentów");
+            i("ddeb0a3c", "Podoba Ci się atmosfera w tej Grupie dyskusyjnej? Rozejrzyj się tu."),
+                i("e111f531", function (e) {
+                    return e.count + " dołączy" + n(e.count, "li/ły", "ło", "ł/a", "ło");
+                }),
                 i("cbef820f", function (e) {
                     return "Użytkownik " + e.screenName + " podał dalej strumień!";
                 }),
@@ -4933,9 +4934,9 @@
                 i("a532072a", "Oglądający"),
                 i("d9508ab0", "wyświetl."),
                 i("d9f9dec0", "Wyświetl pokój"),
-                i("h0c1f37a", "Wyświetl analizy pokoju"),
-                i("e41fffbc", "Łączny czas oglądania Twoich filmów.");
-            i("if2909ba", "Czas oglądania"),
+                i("h0c1f37a", "Wyświetl analizy pokoju");
+            i("e41fffbc", "Łączny czas oglądania Twoich filmów."),
+                i("if2909ba", "Czas oglądania"),
                 i("i0e5bf4c", "Twoje filmy"),
                 i("ed99baea", "Wczesny dostęp do wersji Beta"),
                 i("gf898b70", "Wyszukiwanie zaawansowane"),
@@ -5887,9 +5888,9 @@
                     return "Nie znaleziono wyników dla hasła " + e.query;
                 }),
                 i("f191a2ba", "Ustawienia wyszukiwania"),
-                i("a068008a", "Foldery nie są obecnie ładowane"),
-                i("f075b0e8", "Edytuj folder");
-            i("beba2a0e", "Utwórz nowy folder Zakładki"),
+                i("a068008a", "Foldery nie są obecnie ładowane");
+            i("f075b0e8", "Edytuj folder"),
+                i("beba2a0e", "Utwórz nowy folder Zakładki"),
                 i("e41c9b4f", function (e) {
                     return "Zapisano w folderze " + e.bookmarkFolderName;
                 }),
@@ -6893,9 +6894,9 @@
                 i("c05176ec", "Jeśli jest to stanowisko stacjonarne, wprowadź lokalizację/lokalizacje związanych z nim placówek, a jeśli jest to stanowisko zdalne, określ lokalizacje, w których mogą przebywać osoby kandydujące."),
                 i("d70c24d4", "Służy do ułatwienia osobom kandydującym wyszukiwania Twojej oferty pracy."),
                 i("de1c4376", "Zakres wynagrodzeń"),
-                i("hf352d42", "Dodaj opcjonalny zakres wynagrodzeń, który będzie widoczny dla osób kandydujących. Jeśli nie chcesz podawać tego zakresu, przeanalizuj przepisy dotyczące przejrzystości płac obowiązujące w lokalizacji, w której prowadzisz rekrutację."),
-                i("ede7d0a2", "Waluta");
-            i("b925c18c", "Rodzaj wynagrodzenia"),
+                i("hf352d42", "Dodaj opcjonalny zakres wynagrodzeń, który będzie widoczny dla osób kandydujących. Jeśli nie chcesz podawać tego zakresu, przeanalizuj przepisy dotyczące przejrzystości płac obowiązujące w lokalizacji, w której prowadzisz rekrutację.");
+            i("ede7d0a2", "Waluta"),
+                i("b925c18c", "Rodzaj wynagrodzenia"),
                 i("j3d242ce", "Nieprawidłowy zakres"),
                 i("f4d07bd2", "Dołącz opcjonalne szczegóły, aby ułatwić osobom kandydującym znajdowanie interesujących ich stanowisk za pomocą funkcji wyszukiwania."),
                 i("b8cbb51a", "Podsumowanie oferty pracy"),
@@ -7873,8 +7874,7 @@
                 i("ea000ec8", "Anulowałeś/aś już subskrypcję?"),
                 i("d7b8387e", "Jeśli anulowałeś/aś już swoją subskrypcję, nie musisz nic robić. Twoja subskrypcja wygaśnie automatycznie po zakończeniu okresu rozliczeniowego."),
                 i("f4166d9a", "Chcesz anulować subskrypcję?"),
-                i("b74ff5fc", "Jeśli anulujesz subskrypcję, wygaśnie ona automatycznie po zakończeniu okresu rozliczeniowego."),
-                i("ee9efbc8", "Przejdź dalej, by anulować");
+                i("b74ff5fc", "Jeśli anulujesz subskrypcję, wygaśnie ona automatycznie po zakończeniu okresu rozliczeniowego.");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7913,7 +7913,8 @@
                     c(e, a)
                 );
             }
-            i("c5d9c77a", "Wystąpił chwilowy problem. Nie martw się, to nie Twoje wina. Zamknij to okno i spróbuj ponownie."),
+            i("ee9efbc8", "Przejdź dalej, by anulować"),
+                i("c5d9c77a", "Wystąpił chwilowy problem. Nie martw się, to nie Twoje wina. Zamknij to okno i spróbuj ponownie."),
                 i("jda53c24", "Możesz anulować subskrypcję w sklepie Apple App Store."),
                 i("g0a7a53e", "Możesz anulować subskrypcję w sklepie Google Play."),
                 i("i5f14be7", function (e) {
@@ -8909,13 +8910,13 @@
                 }),
                 i("g60001bb", function (e) {
                     return "Zobacz " + e.advertiserName;
-                }),
-                i("dff1ddd9", function (e) {
-                    return "Przejdź do " + e.advertiserName;
                 });
-            i("b0b22805", function (e) {
-                return "Odwiedź " + e.advertiserName;
+            i("dff1ddd9", function (e) {
+                return "Przejdź do " + e.advertiserName;
             }),
+                i("b0b22805", function (e) {
+                    return "Odwiedź " + e.advertiserName;
+                }),
                 i("c67e71aa", "Oglądaj teraz"),
                 i("a6ada13e", "Zrób zakupy"),
                 i("j0f12222", "Zobacz więcej"),
@@ -13380,4 +13381,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.2d9dab6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.f9c4f64a.js.map

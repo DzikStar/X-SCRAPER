@@ -3,33 +3,36 @@
     ["ondemand.XChat-f141c2f6"],
     {
         272795: (e, t, n) => {
-            n.d(t, { c: () => c });
-            var a = n(552322),
-                r = n(159603),
+            n.d(t, { c: () => u });
+            var r = n(552322),
+                a = n(159603),
                 s = n(256958),
                 l = n(332161),
                 i = n(466285),
-                o = n(759746);
-            const c = ({ onClick: e, isSelected: t, suggestion: n }) =>
-                    n instanceof r.com.x.dms.NewDmSuggestion.User || n instanceof r.com.x.dms.addparticipants.AddParticipantSuggestion
-                        ? (0, a.jsx)(i.a, {
+                o = n(759746),
+                c = n(263033);
+            const u = ({ onClick: e, isSelected: t, suggestion: n }) => {
+                    const { t: u } = (0, c.$G)();
+                    return n instanceof a.com.x.dms.NewDmSuggestion.User || n instanceof a.com.x.dms.addparticipants.AddParticipantSuggestion
+                        ? (0, r.jsx)(i.a, {
                               onClick: () => {
                                   e();
-                                  const t = u(n.user.cannotMessageReason);
+                                  const t = d(n.user.cannotMessageReason);
                                   t && (0, s.Am)(t);
                               },
                               isSelected: t,
                               user: n.user,
-                              disabled: (n instanceof r.com.x.dms.addparticipants.AddParticipantSuggestion && n.alreadyParticipant) || !!n.user.cannotMessageReason,
+                              disabled: (n instanceof a.com.x.dms.addparticipants.AddParticipantSuggestion && n.alreadyParticipant) || !!n.user.cannotMessageReason,
                           })
-                        : n instanceof r.com.x.dms.NewDmSuggestion.ExistingGroup
-                          ? (0, a.jsxs)("div", { className: "flex flex-row w-full gap-2 p-2 items-center hover:bg-gray-50 cursor-pointer rounded-lg", onClick: e, children: [(0, a.jsx)(o.M, { avatarSize: "large", users: n.otherUsers.asJsReadonlyArrayView(), isInlineFacepile: !0 }), (0, a.jsxs)("div", { className: "flex-1 flex-col", children: [(0, a.jsx)(l.x, { children: n.title }), (0, a.jsxs)(l.x, { size: "subtext2", color: "gray700", children: [n.numParticipants, " people"] })] })] }, n.id)
-                          : (0, a.jsx)(a.Fragment, {}),
-                u = (e) => {
+                        : n instanceof a.com.x.dms.NewDmSuggestion.ExistingGroup
+                          ? (0, r.jsxs)("div", { className: "flex flex-row w-full gap-2 p-2 items-center hover:bg-gray-50 cursor-pointer rounded-lg", onClick: e, children: [(0, r.jsx)(o.M, { avatarSize: "large", users: n.otherUsers.asJsReadonlyArrayView(), isInlineFacepile: !0 }), (0, r.jsxs)("div", { className: "flex-1 flex-col", children: [(0, r.jsx)(l.x, { children: n.title }), (0, r.jsx)(l.x, { size: "subtext2", color: "gray700", children: u("{count} {count, plural, one {person} other {people}}", { count: n.numParticipants }) })] })] }, n.id)
+                          : (0, r.jsx)(r.Fragment, {});
+                },
+                d = (e) => {
                     switch (e) {
-                        case r.com.x.models.dm.CannotMessageReason.NO_PUBLIC_KEY:
+                        case a.com.x.models.dm.CannotMessageReason.NO_PUBLIC_KEY:
                             return "This account must set up their PIN before you're able to message them.";
-                        case r.com.x.models.dm.CannotMessageReason.NO_PERMISSION:
+                        case a.com.x.models.dm.CannotMessageReason.NO_PERMISSION:
                             return "Sorry! You cannot message this account.";
                     }
                     return null;
@@ -37,34 +40,34 @@
         },
         466285: (e, t, n) => {
             n.d(t, { a: () => c });
-            var a = n(552322),
-                r = n(242782),
+            var r = n(552322),
+                a = n(242782),
                 s = n(589259),
                 l = n(31674),
                 i = n(350311),
                 o = n(336984);
-            const c = ({ onClick: e, isSelected: t, disabled: n, user: c, className: u }) => (0, a.jsxs)("div", { className: (0, l.cn)("flex flex-row w-full gap-3 p-2 items-center rounded-lg", n ? "opacity-20" : "hover:bg-gray-50 cursor-pointer", u), onClick: e, "aria-disabled": n, children: [(0, a.jsx)(i.s, { url: c.profileImageUrl, size: "xLarge" }), (0, a.jsx)("div", { className: "flex-1", children: (0, a.jsx)(s.R, { name: c.displayName, screenName: c.screenName, badges: (0, o.r)(c), isStacked: !0 }) }), t && (0, a.jsx)("div", { className: "justify-self-end", children: (0, a.jsx)(r.Z, { className: "text-blue-500" }) })] }, c.screenName);
+            const c = ({ onClick: e, isSelected: t, disabled: n, user: c, className: u }) => (0, r.jsxs)("div", { className: (0, l.cn)("flex flex-row w-full gap-3 p-2 items-center rounded-lg", n ? "opacity-20" : "hover:bg-gray-50 cursor-pointer", u), onClick: e, "aria-disabled": n, children: [(0, r.jsx)(i.s, { url: c.profileImageUrl, size: "xLarge" }), (0, r.jsx)("div", { className: "flex-1", children: (0, r.jsx)(s.R, { name: c.displayName, screenName: c.screenName, badges: (0, o.r)(c), isStacked: !0 }) }), t && (0, r.jsx)("div", { className: "justify-self-end", children: (0, r.jsx)(a.Z, { className: "text-blue-500" }) })] }, c.screenName);
         },
         620134: (e, t, n) => {
             n.d(t, { w: () => i });
-            var a = n(552322),
-                r = n(350311),
+            var r = n(552322),
+                a = n(350311),
                 s = n(589259),
                 l = n(887491);
-            const i = ({ name: e, avatarUrl: t, onRemove: n }) => (0, a.jsxs)("div", { className: "flex items-center rounded-full px-2 py-1 gap-1.5 bg-gray-50 hover:bg-mix-text border border-gray-200 max-w-fit cursor-pointer", onClick: n, children: [(0, a.jsx)(r.s, { url: t, size: "small" }), (0, a.jsx)(s.R, { name: e, size: "subtext1" }), (0, a.jsx)(l.Z, { className: "size-4" })] });
+            const i = ({ name: e, avatarUrl: t, onRemove: n }) => (0, r.jsxs)("div", { className: "flex items-center rounded-full px-2 py-1 gap-1.5 bg-gray-50 hover:bg-mix-text border border-gray-200 max-w-fit cursor-pointer", onClick: n, children: [(0, r.jsx)(a.s, { url: t, size: "small" }), (0, r.jsx)(s.R, { name: e, size: "subtext1" }), (0, r.jsx)(l.Z, { className: "size-4" })] });
         },
         517922: (e, t, n) => {
             n.d(t, { C: () => s });
-            var a = n(552322),
-                r = n(193686);
+            var r = n(552322),
+                a = n(193686);
             function s() {
-                return (0, a.jsx)("div", { className: "flex items-center gap-2 p-4 bg-gray-100", children: (0, a.jsx)(r.P, { size: "small" }) });
+                return (0, r.jsx)("div", { className: "flex items-center gap-2 p-4 bg-gray-100", children: (0, r.jsx)(a.P, { size: "small" }) });
             }
         },
         157114: (e, t, n) => {
             n.d(t, { K: () => f });
-            var a = n(552322),
-                r = n(322506),
+            var r = n(552322),
+                a = n(322506),
                 s = n(378364),
                 l = n(589259),
                 i = n(253511),
@@ -75,26 +78,26 @@
                 m = n(202784);
             function g({ mediaItems: e }) {
                 const [t, n] = (0, m.useState)(!1),
-                    [r, s] = (0, m.useState)(0),
+                    [a, s] = (0, m.useState)(0),
                     l = (e, t) => (e.preventDefault(), e.stopPropagation(), s(t), n(!0), !1);
                 if (!e || 0 === e.length) return null;
                 if (1 === e.length) {
                     const i = e[0];
                     return i
-                        ? (0, a.jsxs)(a.Fragment, {
+                        ? (0, r.jsxs)(r.Fragment, {
                               children: [
-                                  (0, a.jsx)("div", {
+                                  (0, r.jsx)("div", {
                                       className: "border border-gray-200 rounded-xl overflow-hidden cursor-pointer w-full h-auto max-h-auto",
                                       onClick: (e) => {
                                           e.preventDefault(), e.stopPropagation(), l(e, 0);
                                       },
                                       onMouseDown: (e) => e.stopPropagation(),
                                       onTouchStart: (e) => e.stopPropagation(),
-                                      children: (0, a.jsx)(p, { mediaItem: i, gridItem: !1 }),
+                                      children: (0, r.jsx)(p, { mediaItem: i, gridItem: !1 }),
                                   }),
-                                  (0, a.jsx)(u.e, {
+                                  (0, r.jsx)(u.e, {
                                       mediaItems: e,
-                                      initialIndex: r,
+                                      initialIndex: a,
                                       isOpen: t,
                                       onClose: () => {
                                           n(!1), s(0);
@@ -123,13 +126,13 @@
                         }
                         return "";
                     };
-                return (0, a.jsxs)(a.Fragment, {
+                return (0, r.jsxs)(r.Fragment, {
                     children: [
-                        (0, a.jsx)("div", {
+                        (0, r.jsx)("div", {
                             className: "grid gap-0.5 border border-gray-200 overflow-hidden flex-shrink-0 rounded-lg aspect-video p-0",
                             style: { gridTemplateColumns: "repeat(2, 1fr)", gridTemplateRows: o ? "1fr 1fr" : `repeat(${c}, 1fr)` },
                             children: i.map((e, t) =>
-                                (0, a.jsx)(
+                                (0, r.jsx)(
                                     "div",
                                     {
                                         className: "w-full h-full overflow-hidden cursor-pointer",
@@ -139,15 +142,15 @@
                                         onMouseDown: (e) => e.stopPropagation(),
                                         onTouchStart: (e) => e.stopPropagation(),
                                         style: { ...(o && 0 === t ? { gridRow: "span 2" } : void 0) },
-                                        children: (0, a.jsx)(p, { mediaItem: e, gridItem: !0, cornerClass: d(t) }),
+                                        children: (0, r.jsx)(p, { mediaItem: e, gridItem: !0, cornerClass: d(t) }),
                                     },
                                     `media-${e.src}-${t}`,
                                 ),
                             ),
                         }),
-                        (0, a.jsx)(u.e, {
+                        (0, r.jsx)(u.e, {
                             mediaItems: e,
-                            initialIndex: r,
+                            initialIndex: a,
                             isOpen: t,
                             onClose: () => {
                                 n(!1), s(0);
@@ -158,63 +161,65 @@
             }
             function p({ mediaItem: e, gridItem: t = !1, cornerClass: n }) {
                 if (!e) return null;
-                const r = "video" === e.type,
+                const a = "video" === e.type,
                     s = "animated_gif" === e.type;
-                return (0, a.jsx)("div", { className: (0, d.Z)("relative overflow-hidden", t ? (0, d.Z)("w-full h-full", n) : "w-full h-full flex-shrink-0"), children: r || s ? (0, a.jsx)("video", { src: e.src, autoPlay: !0, muted: !0, loop: !0, playsInline: !0, className: (0, d.Z)("w-full h-full object-cover") }) : (0, a.jsx)("img", { src: e.previewImage, alt: "Media content", className: (0, d.Z)("w-full h-full object-cover") }) });
+                return (0, r.jsx)("div", { className: (0, d.Z)("relative overflow-hidden", t ? (0, d.Z)("w-full h-full", n) : "w-full h-full flex-shrink-0"), children: a || s ? (0, r.jsx)("video", { src: e.src, autoPlay: !0, muted: !0, loop: !0, playsInline: !0, className: (0, d.Z)("w-full h-full object-cover") }) : (0, r.jsx)("img", { src: e.previewImage, alt: "Media content", className: (0, d.Z)("w-full h-full object-cover") }) });
             }
             function f({ post: e, url: t, className: n }) {
                 const u = e.post;
-                return (0, a.jsxs)(r.r, { href: t, target: "_blank", className: (0, c.cn)("flex flex-col gap-2 h-full w-full max-w-[500px] border border-gray-200 py-2 px-4 cursor-pointer hover:bg-gray-50/50 transition-colors duration-100", n), children: [(0, a.jsxs)("div", { className: "flex gap-2 items-center", children: [(0, a.jsx)(s.q, { screenName: u.author.screenName, size: "small", url: u.author.profileImageUrl, withLink: !1, shape: u.author.profileImageShape, className: "size-5 shrink-0" }), (0, a.jsxs)("div", { className: "flex items-center gap-1 w-full", children: [(0, a.jsx)(l.R, { badges: u.author.badges, name: u.author.name, size: "subtext1", withLink: !1, screenNameColor: "gray800", screenName: u.author.screenName, isStacked: !1 }), (0, a.jsx)("div", { className: "shrink-0 size-0.5 bg-text/40 rounded-full" }), (0, a.jsx)("div", { className: "shrink-0", children: (0, a.jsx)(i.E, { timestamp: u.createdAt, size: "subtext1", color: "gray800" }) })] })] }), (0, a.jsx)(o.W, { text: u.text, displayTextRange: u.displayTextRange, entities: u.entities }), u.media && u.media.length > 0 && (0, a.jsx)("div", { className: "pb-2", children: (0, a.jsx)(g, { mediaItems: u.media }) })] });
+                return (0, r.jsxs)(a.r, { href: t, target: "_blank", className: (0, c.cn)("flex flex-col gap-2 h-full w-full max-w-[500px] border border-gray-200 py-2 px-4 cursor-pointer hover:bg-gray-50/50 transition-colors duration-100", n), children: [(0, r.jsxs)("div", { className: "flex gap-2 items-center", children: [(0, r.jsx)(s.q, { screenName: u.author.screenName, size: "small", url: u.author.profileImageUrl, withLink: !1, shape: u.author.profileImageShape, className: "size-5 shrink-0" }), (0, r.jsxs)("div", { className: "flex items-center gap-1 w-full", children: [(0, r.jsx)(l.R, { badges: u.author.badges, name: u.author.name, size: "subtext1", withLink: !1, screenNameColor: "gray800", screenName: u.author.screenName, isStacked: !1 }), (0, r.jsx)("div", { className: "shrink-0 size-0.5 bg-text/40 rounded-full" }), (0, r.jsx)("div", { className: "shrink-0", children: (0, r.jsx)(i.E, { timestamp: u.createdAt, size: "subtext1", color: "gray800" }) })] })] }), (0, r.jsx)(o.W, { text: u.text, displayTextRange: u.displayTextRange, entities: u.entities }), u.media && u.media.length > 0 && (0, r.jsx)("div", { className: "pb-2", children: (0, r.jsx)(g, { mediaItems: u.media }) })] });
             }
         },
         537335: (e, t, n) => {
-            n.d(t, { Q: () => l });
-            var a = n(552322),
-                r = n(202784),
-                s = n(167285);
-            const l = ({ timestamp: e, updateIntervalMs: t = 3e4 }) => {
-                const [n, l] = (0, r.useState)(Date.now() / 1e3 - e.epochSeconds),
-                    i = (0, r.useCallback)(() => {
-                        l(Date.now() / 1e3 - e.epochSeconds);
+            n.d(t, { Q: () => i });
+            var r = n(552322),
+                a = n(202784),
+                s = n(167285),
+                l = n(263033);
+            const i = ({ timestamp: e, updateIntervalMs: t = 3e4 }) => {
+                const [n, i] = (0, a.useState)(Date.now() / 1e3 - e.epochSeconds),
+                    { t: o } = (0, l.$G)(),
+                    c = (0, a.useCallback)(() => {
+                        i(Date.now() / 1e3 - e.epochSeconds);
                     }, [e]);
                 return (
-                    (0, r.useEffect)(() => {
-                        i();
-                        const e = setInterval(i, t);
+                    (0, a.useEffect)(() => {
+                        c();
+                        const e = setInterval(c, t);
                         return () => clearInterval(e);
-                    }, [t, i]),
-                    (0, a.jsx)(a.Fragment, { children: (0, s.S)({ diffSeconds: n, epochSeconds: e.epochSeconds, style: "narrow" }) })
+                    }, [t, c]),
+                    (0, r.jsx)(r.Fragment, { children: (0, s.S)({ diffSeconds: n, epochSeconds: e.epochSeconds, style: "narrow", t: o }) })
                 );
             };
         },
         910299: (e, t, n) => {
             n.d(t, { r: () => i });
-            var a = n(552322),
-                r = n(159603),
+            var r = n(552322),
+                a = n(159603),
                 s = n(332161),
                 l = n(32161);
             const i = ({ conversations: e, onEvent: t }) =>
-                (0, a.jsx)("div", {
+                (0, r.jsx)("div", {
                     className: "flex overflow-x-auto scrollbar-hide",
                     children: e.map((e) =>
-                        (0, a.jsxs)(
+                        (0, r.jsxs)(
                             "div",
                             {
                                 className: "flex flex-col items-center cursor-pointer hover:bg-gray-100 rounded-lg py-2 px-3",
                                 onClick: () => {
-                                    t(new r.com.x.dms.convlist.ConversationListEvent.RowClicked(e.conversationId, e.preview?.lastReadSequenceNumber));
+                                    t(new a.com.x.dms.convlist.ConversationListEvent.RowClicked(e.conversationId, e.preview?.lastReadSequenceNumber));
                                 },
-                                children: [(0, a.jsx)("div", { className: "size-14", children: (0, a.jsx)(l.x, { avatarSize: "fill", titleState: e.metadata.title, isInlineFacepile: !0, onCustomAvatarNeedsResolving: () => {}, withLink: !1 }) }), (0, a.jsx)(s.x, { size: "subtext3", className: "mt-2 text-center text-ellipsis max-w-14", numberOfLines: 2, children: e.metadata.title.title })],
+                                children: [(0, r.jsx)("div", { className: "size-14", children: (0, r.jsx)(l.x, { avatarSize: "fill", titleState: e.metadata.title, isInlineFacepile: !0, onCustomAvatarNeedsResolving: () => {}, withLink: !1 }) }), (0, r.jsx)(s.x, { size: "subtext3", className: "mt-2 text-center text-ellipsis max-w-14", numberOfLines: 2, children: e.metadata.title.title })],
                             },
                             e.conversationId.id,
                         ),
                     ),
                 });
         },
-        18671: (e, t, n) => {
-            n.d(t, { Z: () => x });
-            var a = n(552322),
-                r = n(849436),
+        70625: (e, t, n) => {
+            n.d(t, { Z: () => y });
+            var r = n(552322),
+                a = n(849436),
                 s = n(458872),
                 l = n(993165),
                 i = n(653748),
@@ -226,37 +231,36 @@
                 g = n(664147),
                 p = n(173399);
             const f = () =>
-                    (0, a.jsx)(l.z, {
-                        onClick: () => {
-                            (0, p.O)()
-                                .then(() => {
-                                    location.reload();
-                                })
-                                .catch((e) => {});
-                        },
-                        children: "Reset",
-                    }),
-                h = () => (0, a.jsx)(l.z, { onClick: () => window.dispatchEvent(new Event("xchat_database_backup_event")), children: "Backup" });
-            function y() {
-                return (0, a.jsxs)("div", { className: "flex flex-col gap-1 w-full", children: [(0, a.jsx)(c.x, { children: "Please close all other tabs with XChat before hitting Reset" }), (0, a.jsxs)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: [(0, a.jsx)(f, {}), (0, a.jsx)(m.o, {})] }), (0, a.jsx)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: (0, a.jsx)(g.i, {}) }), (0, a.jsx)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: (0, a.jsx)(h, {}) })] });
+                (0, r.jsx)(l.z, {
+                    onClick: () => {
+                        (0, p.O)()
+                            .then(() => {
+                                location.reload();
+                            })
+                            .catch((e) => {});
+                    },
+                    children: "Reset",
+                });
+            function h() {
+                return (0, r.jsxs)("div", { className: "flex flex-col gap-1 w-full", children: [(0, r.jsxs)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: [(0, r.jsx)(f, {}), (0, r.jsx)(m.o, {})] }), (0, r.jsx)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: (0, r.jsx)(g.i, {}) })] });
             }
-            const x = () => {
+            const y = () => {
                 const [e, t] = (0, u.useState)(!1),
                     { showDebugOptions: n } = (0, d.XE)();
-                return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(l.z, { icon: (0, a.jsx)(r.Z, { className: "h-5 w-5" }), variant: "primaryText", onClick: () => t(!0) }), e && (0, a.jsx)(i.s, { isOpen: !0, onOpenChange: t, isDismissable: !0, children: (0, a.jsxs)("div", { className: "flex flex-1 flex-col w-[40rem] h-[40rem] transition-colors", children: [(0, a.jsx)(o.x, { title: "Settings", leftContent: (0, a.jsx)(l.z, { variant: "primaryText", icon: (0, a.jsx)(s.Z, {}), onClick: () => t(!1) }) }), (0, a.jsx)("div", { className: "flex flex-col items-start gap-3 p-4 border-t overflow-y-auto", children: n && (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(c.x, { size: "headline2", weight: "bold", children: "Debug Options" }), (0, a.jsx)(y, {})] }) })] }) })] });
+                return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(l.z, { icon: (0, r.jsx)(a.Z, { className: "h-5 w-5" }), variant: "primaryText", onClick: () => t(!0) }), e && (0, r.jsx)(i.s, { isOpen: !0, onOpenChange: t, isDismissable: !0, children: (0, r.jsxs)("div", { className: "flex flex-1 flex-col w-[40rem] h-[40rem] transition-colors", children: [(0, r.jsx)(o.x, { title: "Settings", leftContent: (0, r.jsx)(l.z, { variant: "primaryText", icon: (0, r.jsx)(s.Z, {}), onClick: () => t(!1) }) }), (0, r.jsx)("div", { className: "flex flex-col items-start gap-3 p-4 border-t overflow-y-auto", children: n && (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(c.x, { size: "headline2", weight: "bold", children: "Debug Options" }), (0, r.jsx)(h, {})] }) })] }) })] });
             };
         },
         165272: (e, t, n) => {
-            n.d(t, { F: () => a });
-            const a = () => "dms.x.com" === location.host;
+            n.d(t, { F: () => r });
+            const r = () => "dms.x.com" === location.host;
         },
         676337: (e, t, n) => {
-            n.d(t, { H: () => r });
-            var a = n(202784);
-            function r() {
-                const [e, t] = (0, a.useState)("visible" === document.visibilityState);
+            n.d(t, { H: () => a });
+            var r = n(202784);
+            function a() {
+                const [e, t] = (0, r.useState)("visible" === document.visibilityState);
                 return (
-                    (0, a.useEffect)(() => {
+                    (0, r.useEffect)(() => {
                         const e = () => {
                             t("visible" === document.visibilityState);
                         };
@@ -273,32 +277,32 @@
         },
         176453: (e, t, n) => {
             n.d(t, { N: () => l });
-            var a = n(552322),
-                r = n(125550),
+            var r = n(552322),
+                a = n(125550),
                 s = n(139802);
-            const l = ({ groupId: e, token: t, settings: n }) => (e && t ? (0, a.jsx)(s.A, { settings: n, children: (0, a.jsx)(r.M, { groupId: e, token: t }) }) : null);
+            const l = ({ groupId: e, token: t, settings: n }) => (e && t ? (0, r.jsx)(s.A, { settings: n, children: (0, r.jsx)(a.M, { groupId: e, token: t }) }) : null);
         },
         671889: (e, t, n) => {
             n.d(t, { g: () => s });
-            var a = n(552322),
-                r = n(264531);
+            var r = n(552322),
+                a = n(264531);
             function s({ children: e, ...t }) {
-                const n = (0, r.XE)().bottomBarHeight;
-                return (0, a.jsx)("div", { ...t, style: { paddingBottom: n }, children: e });
+                const n = (0, a.XE)().bottomBarHeight;
+                return (0, r.jsx)("div", { ...t, style: { paddingBottom: n }, children: e });
             }
         },
         700931: (e, t, n) => {
             n.d(t, { H: () => l });
-            var a = n(552322),
-                r = n(139802),
+            var r = n(552322),
+                a = n(139802),
                 s = n(92184);
-            const l = ({ settings: e }) => (0, a.jsx)(r.A, { settings: e, children: (0, a.jsx)(s.p, {}) });
+            const l = ({ settings: e }) => (0, r.jsx)(a.A, { settings: e, children: (0, r.jsx)(s.p, {}) });
         },
         139802: (e, t, n) => {
             n.d(t, { A: () => h });
-            var a = n(552322),
-                r = n(446368),
-                s = n(455091),
+            var r = n(552322),
+                a = n(446368),
+                s = n(263033),
                 l = n(19745),
                 i = n(202784),
                 o = n(107267),
@@ -314,35 +318,35 @@
                     h = (0, o.useHistory)(),
                     [y, x] = (0, i.useState)(new URLSearchParams(n.search)),
                     v = (0, o.useParams)(),
-                    { t: w } = (0, s.$G)();
+                    { t: b } = (0, s.$G)();
                 (0, i.useEffect)(() => {
                     x(new URLSearchParams(n.search));
                 }, [n.search]);
-                const b = (0, i.useMemo)(() => ({ push: (e, t) => h.push(e, t) }), [h]);
+                const w = (0, i.useMemo)(() => ({ push: (e, t) => h.push(e, t) }), [h]);
                 return (
                     (0, i.useEffect)(() => {
                         (0, f.z)();
                     }, []),
-                    (0, a.jsx)(c.S, { message: w("Something went wrong while loading Chat. Please try again later."), children: (0, a.jsx)(u.p, { router: b, children: (0, a.jsx)(r.ng, { children: (0, a.jsx)(d.d, { useParams: () => v, children: (0, a.jsx)(m.x, { searchParams: y, children: (0, a.jsx)(g.mp, { settings: t, children: (0, a.jsxs)(p.U, { children: [e, (0, a.jsx)(l.x, {})] }) }) }) }) }) }) })
+                    (0, r.jsx)(c.S, { message: b("Something went wrong while loading Chat. Please try again later."), children: (0, r.jsx)(u.p, { router: w, children: (0, r.jsx)(a.ng, { children: (0, r.jsx)(d.d, { useParams: () => v, children: (0, r.jsx)(m.x, { searchParams: y, children: (0, r.jsx)(g.mp, { settings: t, children: (0, r.jsxs)(p.U, { children: [e, (0, r.jsx)(l.x, {})] }) }) }) }) }) }) })
                 );
             };
         },
         850697: (e, t, n) => {
             n.d(t, { x: () => T });
-            var a = n(552322),
-                r = n(139802),
+            var r = n(552322),
+                a = n(139802),
                 s = n(159603),
                 l = n(202784),
                 i = n(155369),
                 o = n(193686),
                 c = n(332161),
                 u = n(533476),
-                d = n(455091),
+                d = n(263033),
                 m = n(788452),
                 g = n(305399),
                 p = n(671889),
                 f = n(31674);
-            function h({ value: e, onChange: t, digitVisible: n = !1, className: r, length: s = 4, autoFocus: i = !1 }) {
+            function h({ value: e, onChange: t, digitVisible: n = !1, className: a, length: s = 4, autoFocus: i = !1 }) {
                 const o = (0, l.useRef)([]),
                     u = (0, l.useRef)(!1);
                 (0, l.useEffect)(() => {
@@ -361,58 +365,58 @@
                         }
                     }, [s, i, e]);
                 const d = (0, l.useCallback)(
-                        (n, a) => {
+                        (n, r) => {
                             if ("Backspace" === n.key)
-                                if ((n.preventDefault(), e[a])) {
-                                    const n = e.slice(0, a) + e.slice(a + 1);
+                                if ((n.preventDefault(), e[r])) {
+                                    const n = e.slice(0, r) + e.slice(r + 1);
                                     t(n);
-                                } else if (a > 0) {
-                                    const n = e.slice(0, a - 1) + e.slice(a);
-                                    t(n), o.current[a - 1]?.focus();
+                                } else if (r > 0) {
+                                    const n = e.slice(0, r - 1) + e.slice(r);
+                                    t(n), o.current[r - 1]?.focus();
                                 }
                         },
                         [e, t],
                     ),
                     m = (0, l.useCallback)(
-                        (n, a) => {
-                            const r = n.target.value;
-                            if (r.length > 1) {
-                                const e = r.slice(0, s).split(""),
+                        (n, r) => {
+                            const a = n.target.value;
+                            if (a.length > 1) {
+                                const e = a.slice(0, s).split(""),
                                     n = e.join("").padEnd(s, "");
                                 t(n), o.current[Math.min(e.length, s - 1)]?.focus();
-                            } else if (/^\d*$/.test(r)) {
-                                const n = e.slice(0, a) + r + e.slice(a + 1);
-                                t(n), r && a < s - 1 && o.current[a + 1]?.focus();
+                            } else if (/^\d*$/.test(a)) {
+                                const n = e.slice(0, r) + a + e.slice(r + 1);
+                                t(n), a && r < s - 1 && o.current[r + 1]?.focus();
                             }
                         },
                         [e, t, s],
                     );
-                return (0, a.jsx)("div", {
-                    className: (0, f.cn)("flex gap-3", r),
-                    children: Array.from({ length: s }).map((t, r) =>
-                        (0, a.jsxs)(
+                return (0, r.jsx)("div", {
+                    className: (0, f.cn)("flex gap-3", a),
+                    children: Array.from({ length: s }).map((t, a) =>
+                        (0, r.jsxs)(
                             "div",
                             {
                                 className: "relative w-10 h-12",
                                 children: [
-                                    (0, a.jsx)("input", {
+                                    (0, r.jsx)("input", {
                                         ref: (e) => {
-                                            o.current[r] = e;
+                                            o.current[a] = e;
                                         },
                                         type: "text",
                                         inputMode: "numeric",
                                         pattern: "[0-9]*",
                                         maxLength: 1,
                                         value: "",
-                                        onChange: (e) => m(e, r),
-                                        onKeyDown: (e) => d(e, r),
-                                        className: (0, f.cn)("absolute inset-0 w-full h-full text-transparent caret-primary bg-transparent border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors z-10 text-center", e[r] && "text-left pl-7"),
+                                        onChange: (e) => m(e, a),
+                                        onKeyDown: (e) => d(e, a),
+                                        className: (0, f.cn)("absolute inset-0 w-full h-full text-transparent caret-primary bg-transparent border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors z-10 text-center", e[a] && "text-left pl-7"),
                                         placeholder: " ",
                                     }),
-                                    (0, a.jsx)("div", { className: "absolute inset-0 flex items-center justify-center z-0", children: n ? (0, a.jsx)(c.x, { size: "title4", weight: "bold", children: e[r] || "" }) : (0, a.jsx)("div", { className: "flex items-center justify-center w-full", children: e[r] ? (0, a.jsx)("div", { className: "h-3 w-3 rounded-full bg-text" }) : null }) }),
+                                    (0, r.jsx)("div", { className: "absolute inset-0 flex items-center justify-center z-0", children: n ? (0, r.jsx)(c.x, { size: "title4", weight: "bold", children: e[a] || "" }) : (0, r.jsx)("div", { className: "flex items-center justify-center w-full", children: e[a] ? (0, r.jsx)("div", { className: "h-3 w-3 rounded-full bg-text" }) : null }) }),
                                 ],
                             },
-                            `pin-digit-${r}`,
+                            `pin-digit-${a}`,
                         ),
                     ),
                 });
@@ -420,21 +424,21 @@
             const y = s.com.x.dms.pin.PinEntryTitle,
                 x = s.com.x.dms.pin.PinEntrySubtitle,
                 v = s.com.x.dms.pin.PinEntryError;
-            function w({ component: e }) {
+            function b({ component: e }) {
                 const { t } = (0, d.$G)();
                 const n = (0, g.a)("(max-width: 768px)"),
-                    r = (0, u._)(e.state),
+                    a = (0, u._)(e.state),
                     i = (0, l.useRef)(null);
                 (0, l.useEffect)(() => {
                     i.current && i.current.focus();
                 }, []);
-                return r.isProcessing
-                    ? (0, a.jsx)(p.g, { className: "flex w-full min-h-dvh md:h-dvh items-center", children: (0, a.jsx)(o.P, {}) })
-                    : (0, a.jsxs)(p.g, {
+                return a.isProcessing
+                    ? (0, r.jsx)(p.g, { className: "flex w-full min-h-dvh md:h-dvh items-center", children: (0, r.jsx)(o.P, {}) })
+                    : (0, r.jsxs)(p.g, {
                           className: `flex flex-col min-h-dvh md:h-dvh w-full ${n ? "items-start py-12" : "items-center justify-center py-0"} flex-grow gap-4  px-12`,
                           children: [
-                              (0, a.jsx)(m.Z, { width: 76, height: 76, className: "rotate-[-8.29deg]" }),
-                              (0, a.jsx)(c.x, {
+                              (0, r.jsx)(m.Z, { width: 76, height: 76, className: "rotate-[-8.29deg]" }),
+                              (0, r.jsx)(c.x, {
                                   size: "title2",
                                   weight: "bold",
                                   children: (function (e) {
@@ -452,10 +456,10 @@
                                               return t("Confirm your new passcode");
                                       }
                                       return "Create a 4-digit passcode";
-                                  })(r.title),
+                                  })(a.title),
                               }),
-                              r.subtitle
-                                  ? (0, a.jsx)(c.x, {
+                              a.subtitle
+                                  ? (0, r.jsx)(c.x, {
                                         size: "body",
                                         color: "gray700",
                                         children: (function (e) {
@@ -470,16 +474,16 @@
                                                     return t("Make sure to remember it, as we will occasionally need you to verify.");
                                             }
                                             return "";
-                                        })(r.subtitle),
+                                        })(a.subtitle),
                                     })
                                   : null,
-                              (0, a.jsxs)("div", {
+                              (0, r.jsxs)("div", {
                                   className: "flex flex-col gap-3 " + (n ? "items-start" : "items-center"),
                                   children: [
-                                      (0, a.jsx)(
+                                      (0, r.jsx)(
                                           h,
                                           {
-                                              value: r.currentPinText,
+                                              value: a.currentPinText,
                                               onChange: (t) => {
                                                   e.handleEvent(new s.com.x.dms.pin.DmPinEntryEvent.OnPinValueChanged(t));
                                               },
@@ -493,12 +497,12 @@
                                                       default:
                                                           return !1;
                                                   }
-                                              })(r.title),
+                                              })(a.title),
                                           },
-                                          r.title.toString(),
+                                          a.title.toString(),
                                       ),
-                                      r.error
-                                          ? (0, a.jsx)(c.x, {
+                                      a.error
+                                          ? (0, r.jsx)(c.x, {
                                                 size: "subtext1",
                                                 weight: "medium",
                                                 color: "red500",
@@ -531,7 +535,7 @@
                                                         default:
                                                             return t("An unknown error occurred.");
                                                     }
-                                                })(r.error),
+                                                })(a.error),
                                             })
                                           : null,
                                   ],
@@ -539,23 +543,23 @@
                           ],
                       });
             }
-            var b = n(379342),
+            var w = n(379342),
                 _ = n(264531),
-                k = n(18671),
+                k = n(70625),
                 j = n(867400),
                 S = n(231037);
             const F = s.com.x.dms.pin.PinEntryMode;
             function N({ mode: e }) {
                 const [t, n] = (0, l.useState)(null),
-                    r = (0, i.n)(),
-                    o = (0, b.s)(),
+                    a = (0, i.n)(),
+                    o = (0, w.s)(),
                     { showDebugOptions: u } = (0, _.XE)(),
                     d = (0, j.a)(),
                     m = (0, S.l)();
                 return (
                     (0, l.useEffect)(() => {
                         const t = new s.com.x.export.CancellationSignal(),
-                            a = r.dmPinEntryComponent(
+                            r = a.dmPinEntryComponent(
                                 (function (e, t, n) {
                                     switch (e) {
                                         case "recovery":
@@ -579,32 +583,32 @@
                                 t,
                             );
                         return (
-                            n(a),
+                            n(r),
                             () => {
                                 t.cancel();
                             }
                         );
-                    }, [r, e, o, d, m]),
-                    (0, a.jsxs)(a.Fragment, { children: [u && (0, a.jsx)("div", { className: "absolute top-4 right-4", children: (0, a.jsx)(k.Z, {}) }), null != t ? (0, a.jsx)(w, { component: t }) : (0, a.jsx)(c.x, { children: "Loading" })] })
+                    }, [a, e, o, d, m]),
+                    (0, r.jsxs)(r.Fragment, { children: [u && (0, r.jsx)("div", { className: "absolute top-4 right-4", children: (0, r.jsx)(k.Z, {}) }), null != t ? (0, r.jsx)(b, { component: t }) : (0, r.jsx)(c.x, { children: "Loading" })] })
                 );
             }
             const C = ["recovery", "new", "forgot", "verify"],
-                T = ({ mode: e, settings: t }) => (C.includes(e) ? (0, a.jsx)(r.A, { settings: t, children: (0, a.jsx)(N, { mode: e }) }) : null);
+                T = ({ mode: e, settings: t }) => (C.includes(e) ? (0, r.jsx)(a.A, { settings: t, children: (0, r.jsx)(N, { mode: e }) }) : null);
         },
         664147: (e, t, n) => {
             n.d(t, { e: () => i, i: () => o });
-            var a = n(552322),
-                r = n(332161),
+            var r = n(552322),
+                a = n(332161),
                 s = n(261012),
                 l = n(202784);
             const i = "top_cursor",
                 o = () => {
                     const [e, t] = (0, l.useState)("true" === localStorage.getItem(i) || !1);
-                    return (0, a.jsxs)("div", {
+                    return (0, r.jsxs)("div", {
                         className: "flex flex-row items-center gap-1 border border-solid rounded-lg p-2",
                         children: [
-                            (0, a.jsx)(r.x, { weight: "bold", color: "gray700", children: "Top cursor" }),
-                            (0, a.jsx)(s.r, {
+                            (0, r.jsx)(a.x, { weight: "bold", color: "gray700", children: "Top cursor" }),
+                            (0, r.jsx)(s.r, {
                                 checked: e,
                                 onCheckedChange: (e) => {
                                     t(e), localStorage.setItem(i, e ? "true" : "false");
@@ -616,9 +620,9 @@
         },
         686524: (e, t, n) => {
             n.r(t), n.d(t, { default: () => f });
-            const a = {
+            const r = {
                 fragment: {
-                    argumentDefinitions: (r = [{ defaultValue: null, kind: "LocalArgument", name: "id" }]),
+                    argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "id" }]),
                     kind: "Fragment",
                     metadata: null,
                     name: "fetchPostQuery",
@@ -801,43 +805,43 @@
                     abstractKey: null,
                 },
                 kind: "Request",
-                operation: { argumentDefinitions: r, kind: "Operation", name: "fetchPostQuery", selections: [{ alias: null, args: s, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_result_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [l, { kind: "InlineFragment", selections: [o, c, u, { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [l, { kind: "InlineFragment", selections: [u, d, m, g, p, c], type: "User", abstractKey: null }], storageKey: null }, c], storageKey: null }], storageKey: null }], type: "Tweet", abstractKey: null }], storageKey: null }, c], storageKey: null }] },
+                operation: { argumentDefinitions: a, kind: "Operation", name: "fetchPostQuery", selections: [{ alias: null, args: s, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_result_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [l, { kind: "InlineFragment", selections: [o, c, u, { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [l, { kind: "InlineFragment", selections: [u, d, m, g, p, c], type: "User", abstractKey: null }], storageKey: null }, c], storageKey: null }], storageKey: null }], type: "Tweet", abstractKey: null }], storageKey: null }, c], storageKey: null }] },
                 params: { id: "BrdmgaNbXWZa4D4KLY-hCA", metadata: {}, name: "fetchPostQuery", operationKind: "query", text: null },
             };
-            var r, s, l, i, o, c, u, d, m, g, p;
-            a.hash = "6b931e47d1ab528a8de40a76cc4aef9e";
-            const f = a;
+            var a, s, l, i, o, c, u, d, m, g, p;
+            r.hash = "6b931e47d1ab528a8de40a76cc4aef9e";
+            const f = r;
         },
         84504: (e, t, n) => {
-            n.d(t, { n5: () => r });
-            var a = n(625067);
-            function r() {
-                const e = (0, a.Qc)(document.cookie);
+            n.d(t, { n5: () => a });
+            var r = n(625067);
+            function a() {
+                const e = (0, r.Qc)(document.cookie);
                 return e.twid?.slice(2) || "0";
             }
         },
         842898: (e, t, n) => {
-            n.d(t, { S: () => r });
-            var a = n(889906);
-            async function r(e, t) {
-                return (0, a.fetchQuery)(t, s, { id: e }, { fetchPolicy: "store-or-network" })
+            n.d(t, { S: () => a });
+            var r = n(889906);
+            async function a(e, t) {
+                return (0, r.fetchQuery)(t, s, { id: e }, { fetchPolicy: "store-or-network" })
                     .toPromise()
                     .then((t) => {
                         const n = t?.tweet_result_by_rest_id?.result;
                         if (!n || "Tweet" !== n.__typename) return null;
-                        let a, r, s;
-                        switch (("Badge" === n.core?.user_results?.result?.affiliates_highlighted_label?.label?.user_label_display_type && "BusinessLabel" === n.core?.user_results?.result?.affiliates_highlighted_label?.label?.user_label_type && n.core?.user_results?.result?.affiliates_highlighted_label?.label?.badge && (a = { label: n.core?.user_results?.result?.affiliates_highlighted_label?.label?.description, url: n.core?.user_results?.result?.affiliates_highlighted_label?.label?.badge?.url }), n.core?.user_results?.result?.legacy?.verified_type)) {
+                        let r, a, s;
+                        switch (("Badge" === n.core?.user_results?.result?.affiliates_highlighted_label?.label?.user_label_display_type && "BusinessLabel" === n.core?.user_results?.result?.affiliates_highlighted_label?.label?.user_label_type && n.core?.user_results?.result?.affiliates_highlighted_label?.label?.badge && (r = { label: n.core?.user_results?.result?.affiliates_highlighted_label?.label?.description, url: n.core?.user_results?.result?.affiliates_highlighted_label?.label?.badge?.url }), n.core?.user_results?.result?.legacy?.verified_type)) {
                             case "Business":
-                                r = "business";
+                                a = "business";
                                 break;
                             case "Government":
-                                r = "government";
+                                a = "government";
                                 break;
                             case "User":
-                                r = "user";
+                                a = "user";
                                 break;
                             default:
-                                r = n.core?.user_results?.result?.is_blue_verified ? "user" : void 0;
+                                a = n.core?.user_results?.result?.is_blue_verified ? "user" : void 0;
                         }
                         return (
                             n.legacy?.entities?.media?.length &&
@@ -846,11 +850,11 @@
                                     .map((e) => {
                                         const t = [...(e.video_info?.variants?.filter((e) => e && "string" == typeof e.url && "string" == typeof e.content_type).map((e) => ({ url: e.url, contentType: e.content_type, bitrate: e.bitrate ?? 0 })) ?? [])].sort((e, t) => (t.bitrate || 0) - (e.bitrate || 0)),
                                             n = ("animated_gif" === e.type || "video" === e.type) && t.length > 0 ? t[0]?.url || e.media_url_https || "" : e.media_url_https || "",
-                                            a = null === e.video_info?.duration_millis ? void 0 : e.video_info?.duration_millis,
-                                            r = e.media_url_https || "";
-                                        return { type: e.type || "", src: n, duration: a, aspectRatio: e.video_info?.aspect_ratio ? Array.from(e.video_info.aspect_ratio) : void 0, altText: e.ext_alt_text ?? void 0, variants: t, previewImage: r };
+                                            r = null === e.video_info?.duration_millis ? void 0 : e.video_info?.duration_millis,
+                                            a = e.media_url_https || "";
+                                        return { type: e.type || "", src: n, duration: r, aspectRatio: e.video_info?.aspect_ratio ? Array.from(e.video_info.aspect_ratio) : void 0, altText: e.ext_alt_text ?? void 0, variants: t, previewImage: a };
                                     })),
-                            { id: e, text: n.legacy?.full_text, author: { id: n.core?.user_results?.result?.rest_id, name: n.core?.user_results?.result?.legacy?.name, screenName: n.core?.user_results?.result?.legacy?.screen_name, avatar: n.core?.user_results?.result?.legacy?.profile_image_url_https, badges: { affiliation: a, verifiedType: r }, profileImageUrl: n.core?.user_results?.result?.legacy?.profile_image_url_https, profileImageShape: n.core?.user_results?.result?.profile_image_shape?.toLowerCase() }, displayTextRange: n.legacy?.display_text_range, entities: n.legacy?.entities, createdAt: n.legacy?.created_at, media: s }
+                            { id: e, text: n.legacy?.full_text, author: { id: n.core?.user_results?.result?.rest_id, name: n.core?.user_results?.result?.legacy?.name, screenName: n.core?.user_results?.result?.legacy?.screen_name, avatar: n.core?.user_results?.result?.legacy?.profile_image_url_https, badges: { affiliation: r, verifiedType: a }, profileImageUrl: n.core?.user_results?.result?.legacy?.profile_image_url_https, profileImageShape: n.core?.user_results?.result?.profile_image_shape?.toLowerCase() }, displayTextRange: n.legacy?.display_text_range, entities: n.legacy?.entities, createdAt: n.legacy?.created_at, media: s }
                         );
                     });
             }
@@ -858,14 +862,14 @@
         },
         336984: (e, t, n) => {
             n.d(t, { r: () => s });
-            var a = n(159603);
-            const r = (e) => {
+            var r = n(159603);
+            const a = (e) => {
                     switch (e) {
-                        case a.com.x.models.VerifiedType.User:
+                        case r.com.x.models.VerifiedType.User:
                             return "user";
-                        case a.com.x.models.VerifiedType.Business:
+                        case r.com.x.models.VerifiedType.Business:
                             return "business";
-                        case a.com.x.models.VerifiedType.Government:
+                        case r.com.x.models.VerifiedType.Government:
                             return "government";
                         default:
                             return;
@@ -873,75 +877,29 @@
                 },
                 s = (e) => {
                     if (!e) return;
-                    return { affiliation: e.userLabel?.shouldDisplayBadge() && e.userLabel.description && e.userLabel.badgeImageUrl ? { label: e.userLabel.description, url: e.userLabel.badgeImageUrl } : void 0, isProtected: e.isProtected, isSubscriber: e.friendship.isSuperFollowingMe, verifiedType: r(e.verifiedType) };
+                    return { affiliation: e.userLabel?.shouldDisplayBadge() && e.userLabel.description && e.userLabel.badgeImageUrl ? { label: e.userLabel.description, url: e.userLabel.badgeImageUrl } : void 0, isProtected: e.isProtected, isSubscriber: e.friendship.isSuperFollowingMe, verifiedType: a(e.verifiedType) };
                 };
         },
         173399: (e, t, n) => {
-            n.d(t, { O: () => i, z: () => o });
-            var a = n(84504);
-            async function r(e) {
-                return new Promise((t, n) => {
-                    const a = setTimeout(() => {
-                            n(new Error("Database deletion timeout"));
-                        }, 5e3),
-                        r = new BroadcastChannel(`${e}_chat`);
-                    (r.onmessage = ({ data: e }) => {
-                        "before_logout_done" === e?.action && (clearTimeout(a), r.close(), t());
-                    }),
-                        r.postMessage({ action: "before_logout" }),
-                        window.dispatchEvent(new Event("xchat_before_unload_event")),
-                        setTimeout(async () => {
-                            try {
-                                await s(e),
-                                    await (async function (e) {
-                                        try {
-                                            const t = await navigator.storage.getDirectory(),
-                                                n = await t.getDirectoryHandle("backups", { create: !0 }),
-                                                a = `chat_${e}.db`;
-                                            try {
-                                                return await n.getFileHandle(a), await n.removeEntry(a), !0;
-                                            } catch (e) {
-                                                return !1;
-                                            }
-                                        } catch (e) {
-                                            return !1;
-                                        }
-                                    })(e),
-                                    clearTimeout(a),
-                                    t();
-                            } catch (e) {
-                                clearTimeout(a), n(e instanceof Error ? e : new Error("Deletion failed"));
-                            }
-                        }, 300);
-                });
-            }
-            async function s(e) {
-                try {
-                    const t = await navigator.storage.getDirectory();
-                    for await (const n of t.values())
-                        if ("directory" === n.kind && n.name.startsWith(`.${e}_chat_`))
-                            try {
-                                await t.removeEntry(n.name, { recursive: !0 });
-                            } catch (e) {}
-                } catch (e) {}
-            }
-            const l = async () => {
+            n.d(t, { O: () => s, z: () => l });
+            var r = n(84504);
+            const a = async () => {
                 try {
                     const e = await navigator.storage.getDirectory(),
                         t = await e.getDirectoryHandle("dm-dev-logs", { create: !0 }),
                         n = Date.now() - 1728e5;
                     for await (const [e] of t.entries())
                         try {
-                            const a = e.match(/.*-(\d{4}-\d{2}-\d{2})\.txt$/);
-                            if (!a) continue;
-                            const r = a[1];
+                            const r = e.match(/.*-(\d{4}-\d{2}-\d{2})\.txt$/);
                             if (!r) continue;
-                            new Date(r).getTime() < n && (await t.removeEntry(e));
+                            const a = r[1];
+                            if (!a) continue;
+                            new Date(a).getTime() < n && (await t.removeEntry(e));
                         } catch (e) {}
                 } catch (e) {}
             };
-            async function i() {
-                const e = (0, a.n5)();
+            async function s() {
+                const e = (0, r.n5)();
                 await (async function (e) {
                     try {
                         const t = await navigator.storage.getDirectory();
@@ -950,102 +908,114 @@
                         e instanceof DOMException && e.name;
                     }
                 })(e),
-                    await r(e);
+                    await (async function (e) {
+                        try {
+                            const t = await navigator.storage.getDirectory(),
+                                n = await t.getDirectoryHandle("backups", { create: !0 }),
+                                r = `chat_${e}.db`;
+                            try {
+                                return await n.getFileHandle(r), await n.removeEntry(r), !0;
+                            } catch (e) {
+                                return !1;
+                            }
+                        } catch (e) {
+                            return !1;
+                        }
+                    })(e);
             }
-            async function o() {
-                const e = (0, a.n5)();
-                await s(e), await l();
+            async function l() {
+                const e = (0, r.n5)();
+                await (async function (e) {
+                    try {
+                        const t = await navigator.storage.getDirectory();
+                        for await (const n of t.values())
+                            if ("directory" === n.kind && n.name.startsWith(`.${e}_chat`))
+                                try {
+                                    await t.removeEntry(n.name, { recursive: !0 });
+                                } catch (e) {}
+                    } catch (e) {}
+                })(e),
+                    await a();
             }
         },
         167285: (e, t, n) => {
-            n.d(t, { H: () => u, S: () => c });
-            const a = 3600,
-                r = 86400,
+            n.d(t, { H: () => o, S: () => i });
+            const r = 3600,
+                a = 86400,
                 s = 604800,
                 l = 2592e3,
-                i = { minute: { narrow: "m", long: "minute" }, hour: { narrow: "h", long: "hour" }, day: { narrow: "d", long: "day" }, week: { narrow: "w", long: "week" }, month: { narrow: "mo", long: "month" } },
-                o = (e, t, n) => {
-                    switch (n) {
-                        case "narrow":
-                            return i[t][n];
-                        case "long": {
-                            const a = 1 !== e;
-                            return ` ${i[t][n]}${a ? "s" : ""}`;
-                        }
-                    }
-                },
-                c = ({ diffSeconds: e, epochSeconds: t, style: n }) => {
-                    if (e < 60) return "Now";
-                    if (e < a) {
-                        const t = Math.floor(e / 60);
-                        return `${t}${o(t, "minute", n)}`;
-                    }
+                i = ({ diffSeconds: e, epochSeconds: t, style: n, t: i }) => {
+                    if (e < 60) return i("Now");
                     if (e < r) {
-                        const t = Math.floor(e / a);
-                        return `${t}${o(t, "hour", n)}`;
+                        const t = Math.floor(e / 60);
+                        return "narrow" === n ? i("{minutes} m", { minutes: t }) : i("{count} {count, plural, one {minute} other {minutes}}", { count: t });
+                    }
+                    if (e < a) {
+                        const t = Math.floor(e / r);
+                        return "narrow" === n ? i("{hours} h", { hours: t }) : i("{count} {count, plural, one {hour} other {hours}}", { count: t });
                     }
                     if (e < s) {
-                        const t = Math.floor(e / r);
-                        return `${t}${o(t, "day", n)}`;
+                        const t = Math.floor(e / a);
+                        return "narrow" === n ? i("{days} d", { days: t }) : i("{count} {count, plural, one {day} other {days}}", { count: t });
                     }
                     if (e < l) {
                         const t = Math.floor(e / s);
-                        return `${t}${o(t, "week", n)}`;
+                        return "narrow" === n ? i("{weeks} w", { weeks: t }) : i("{count} {count, plural, one {week} other {weeks}}", { count: t });
                     }
                     if (!t || e < 31536e3) {
                         const t = Math.floor(e / l);
-                        return `${t}${o(t, "month", n)}`;
+                        return "narrow" === n ? i("{months} mo", { months: t }) : i("{count} {count, plural, one {month} other {months}}", { count: t });
                     }
                     return new Date(1e3 * t).toLocaleDateString("en-US");
                 },
-                u = (e) => new Date(1e3 * e).toLocaleString("en-US", { timeStyle: "short" });
+                o = (e) => new Date(1e3 * e).toLocaleString("en-US", { timeStyle: "short" });
         },
         369962: (e, t, n) => {
-            n.d(t, { L: () => a });
-            const a = (e) => {
+            n.d(t, { L: () => r });
+            const r = (e) => {
                 const t = Math.floor(e / 1e3),
                     n = Math.floor(t / 60),
-                    a = Math.floor(n / 60),
-                    r = Math.floor(a / 24),
-                    s = Math.floor(r / 7),
+                    r = Math.floor(n / 60),
+                    a = Math.floor(r / 24),
+                    s = Math.floor(a / 7),
                     l = (e, t) => `${e} ${t}${1 !== e ? "s" : ""}`;
-                return s > 0 ? l(s, "week") : r > 0 ? l(r, "day") : a > 0 ? l(a, "hour") : n > 0 ? l(n, "minute") : l(t, "second");
+                return s > 0 ? l(s, "week") : a > 0 ? l(a, "day") : r > 0 ? l(r, "hour") : n > 0 ? l(n, "minute") : l(t, "second");
             };
         },
         595117: (e, t, n) => {
             n.d(t, { $: () => s, F: () => l });
-            const a = "temp-files";
-            async function r(e) {
+            const r = "temp-files";
+            async function a(e) {
                 const t = await navigator.storage.getDirectory(),
-                    n = await t.getDirectoryHandle(a, { create: !0 }),
-                    r = (function (e) {
+                    n = await t.getDirectoryHandle(r, { create: !0 }),
+                    a = (function (e) {
                         return `${Date.now()}-${e}`.replace(/\s/g, "_");
                     })(e.name),
-                    s = await n.getFileHandle(r, { create: !0 }),
+                    s = await n.getFileHandle(a, { create: !0 }),
                     l = await s.createWritable();
-                return await l.write(e), await l.close(), `${a}/${r}`;
+                return await l.write(e), await l.close(), `${r}/${a}`;
             }
             async function s(e, t, n) {
                 try {
                     t();
-                    n(await r(e));
+                    n(await a(e));
                 } catch (e) {}
             }
             async function l(e) {
                 return new Promise((t) => {
                     const n = new Image(),
-                        a = document.createElement("canvas"),
-                        r = a.getContext("2d");
+                        r = document.createElement("canvas"),
+                        a = r.getContext("2d");
                     (n.onload = () => {
                         const s = Math.min(n.width, n.height);
-                        (a.width = s),
-                            (a.height = s),
-                            r?.drawImage(n, (n.width - s) / 2, (n.height - s) / 2, s, s, 0, 0, s, s),
-                            a.toBlob(
+                        (r.width = s),
+                            (r.height = s),
+                            a?.drawImage(n, (n.width - s) / 2, (n.height - s) / 2, s, s, 0, 0, s, s),
+                            r.toBlob(
                                 (n) => {
                                     if (n) {
-                                        const a = new File([n], e.name, { type: e.type });
-                                        t(a);
+                                        const r = new File([n], e.name, { type: e.type });
+                                        t(r);
                                     }
                                 },
                                 "image/jpeg",
@@ -1057,10 +1027,10 @@
             }
         },
         950849: (e, t, n) => {
-            n.d(t, { E: () => r });
-            var a = n(202784);
-            const r = (e, t) => {
-                (0, a.useEffect)(() => {
+            n.d(t, { E: () => a });
+            var r = n(202784);
+            const a = (e, t) => {
+                (0, r.useEffect)(() => {
                     const n = e.subscribe(t);
                     return () => {
                         n.cancel();
@@ -1070,26 +1040,26 @@
         },
         748055: (e, t, n) => {
             n.d(t, { F: () => s });
-            var a = n(202784),
-                r = n(595117);
+            var r = n(202784),
+                a = n(595117);
             function s({ onFileDrop: e, onFileAttached: t, isEnabled: n }) {
-                const [s, l] = (0, a.useState)(!1);
+                const [s, l] = (0, r.useState)(!1);
                 return {
                     isDragging: s,
-                    handleDragOver: (0, a.useCallback)(
+                    handleDragOver: (0, r.useCallback)(
                         (e) => {
                             e.preventDefault(), e.stopPropagation(), n && l(!0);
                         },
                         [n],
                     ),
-                    handleDragLeave: (0, a.useCallback)((e) => {
+                    handleDragLeave: (0, r.useCallback)((e) => {
                         e.preventDefault(), e.stopPropagation(), l(!1);
                     }, []),
-                    handleDrop: (0, a.useCallback)(
-                        async (a) => {
-                            if ((a.preventDefault(), a.stopPropagation(), l(!1), !n)) return;
-                            const s = a.dataTransfer.files[0];
-                            s && (await (0, r.$)(s, e, t));
+                    handleDrop: (0, r.useCallback)(
+                        async (r) => {
+                            if ((r.preventDefault(), r.stopPropagation(), l(!1), !n)) return;
+                            const s = r.dataTransfer.files[0];
+                            s && (await (0, a.$)(s, e, t));
                         },
                         [n, e, t],
                     ),
@@ -1097,12 +1067,12 @@
             }
         },
         533476: (e, t, n) => {
-            n.d(t, { _: () => r });
-            var a = n(202784);
-            function r(e) {
-                const [t, n] = (0, a.useState)(e.state);
+            n.d(t, { _: () => a });
+            var r = n(202784);
+            function a(e) {
+                const [t, n] = (0, r.useState)(e.state);
                 return (
-                    (0, a.useEffect)(() => {
+                    (0, r.useEffect)(() => {
                         const t = e.subscribe(n);
                         return () => {
                             t.cancel();
@@ -1114,14 +1084,14 @@
         },
         658358: (e, t, n) => {
             n.d(t, { e: () => d });
-            var a = n(159603),
-                r = n(256958),
+            var r = n(159603),
+                a = n(256958),
                 s = n(202784);
-            const l = a.com.x.dms.composer.composer.ComposerToastType,
-                i = a.com.x.dms.convinfo.ConversationInfoToast,
-                o = a.com.x.dms.ParticipantMenuItem,
-                c = a.com.x.dms.newdm.NewDmToast,
-                u = a.com.x.dms.addparticipants.AddGroupParticipantsToastType;
+            const l = r.com.x.dms.composer.composer.ComposerToastType,
+                i = r.com.x.dms.convinfo.ConversationInfoToast,
+                o = r.com.x.dms.ParticipantMenuItem,
+                c = r.com.x.dms.newdm.NewDmToast,
+                u = r.com.x.dms.addparticipants.AddGroupParticipantsToastType;
             function d(e) {
                 (0, s.useEffect)(() => {
                     const t = e.subscribe((e) => {
@@ -1144,7 +1114,7 @@
                                 case c.CreateOneOnOneFailed:
                                     return "Unable to start conversation.";
                             }
-                            if (e instanceof a.com.x.dms.convinfo.ConversationInfoToast.ParticipantMenuItemFailed)
+                            if (e instanceof r.com.x.dms.convinfo.ConversationInfoToast.ParticipantMenuItemFailed)
                                 switch (e.item) {
                                     case o.AddAsAdmin:
                                         return "Unable to add user as Admin";
@@ -1164,7 +1134,7 @@
                                 }
                             return null;
                         })(e);
-                        t && (0, r.Am)(t);
+                        t && (0, a.Am)(t);
                     });
                     return () => {
                         t.cancel();
@@ -1173,11 +1143,11 @@
             }
         },
         858108: (e, t, n) => {
-            function a() {
+            function r() {
                 return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
             }
-            n.d(t, { G: () => a });
+            n.d(t, { G: () => r });
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f141c2f6.6f95c16a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f141c2f6.8e4cd6ea.js.map

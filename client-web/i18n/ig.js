@@ -1314,7 +1314,8 @@
                 t("j77292b7", function (e) {
                     return "Please only select up to " + e.count + " file" + i(e.count, "", "s");
                 }),
-                t("cbc8fed4", "Was this translation accurate? Give us feedback so we can improve:"),
+                t("d6b533dc", "Rate this translation:"),
+                t("j2f9ab6e", "Thank you for your feedback!"),
                 t("d56779a2", "easy to understand"),
                 t("b6fe8a56", "confusing or unclear"),
                 t("i73a7d48", "Google tụgharịrị ya"),
@@ -1919,9 +1920,9 @@
                 t("i89195ea", "Divider"),
                 t("da8ac57c", "Edit Caption"),
                 t("a8fdd09c", "Publish Article"),
-                t("d8047cc8", "Bipụta"),
-                t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile.");
-            t("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
+                t("d8047cc8", "Bipụta");
+            t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                t("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
                 t("e52d4998", "Choose your audience"),
                 t("d7985b24", "Choose who can reply to this Article"),
                 t("b5660338", "Timeline preview"),
@@ -2975,9 +2976,9 @@
                 t("a7de64de", "Ozi mgbasa ozi"),
                 t("jb0a4c36", "Blọọgụ"),
                 t("ce6d095a", "Ọrụ"),
-                t("e0adec82", "Akụrụngwa Ụdị ihe"),
-                t("df1b7550", "Ahịa");
-            t("he258678", "X for Business"),
+                t("e0adec82", "Akụrụngwa Ụdị ihe");
+            t("df1b7550", "Ahịa"),
+                t("he258678", "X for Business"),
                 t("c6f58084", "Ndị nrụpụta"),
                 t("d83f18d2", "Ndekọ"),
                 t("hc5aa17c", "Get the X app"),
@@ -3887,11 +3888,11 @@
                 t("a2bf8b8a", "Switch to listening"),
                 t("caa8d928", "Toggle noise suppression"),
                 t("b5d88f0c", "Employees only"),
-                t("c855ab8e", "Naanị ndị debanyere aha"),
-                t("ddeb0a3c", "Nke a bụ Ogbe ahụ. Ndị a ọ masịrị gị? Lenye anya.");
-            t("e111f531", function (e) {
-                return e.count + " gbanyere";
-            }),
+                t("c855ab8e", "Naanị ndị debanyere aha");
+            t("ddeb0a3c", "Nke a bụ Ogbe ahụ. Ndị a ọ masịrị gị? Lenye anya."),
+                t("e111f531", function (e) {
+                    return e.count + " gbanyere";
+                }),
                 t("cbef820f", function (e) {
                     return e.screenName + " reposted the stream!";
                 }),
@@ -4927,9 +4928,9 @@
                 t("a532072a", "Viewers"),
                 t("d9508ab0", "views"),
                 t("d9f9dec0", "View Space"),
-                t("h0c1f37a", "View Space Analytics"),
-                t("e41fffbc", "The total watch time of your videos.");
-            t("if2909ba", "Watch Time"),
+                t("h0c1f37a", "View Space Analytics");
+            t("e41fffbc", "The total watch time of your videos."),
+                t("if2909ba", "Watch Time"),
                 t("i0e5bf4c", "Your videos"),
                 t("ed99baea", "Early Beta Access"),
                 t("gf898b70", "Advanced Search"),
@@ -5881,9 +5882,9 @@
                     return "Enweghị nsonaazụ maka " + e.query;
                 }),
                 t("f191a2ba", "mwube Ọchịchọ"),
-                t("a068008a", "Folders aren`t loading right now"),
-                t("f075b0e8", "Dezie Foldà");
-            t("beba2a0e", "Mepụta Foldà Ebenrụtụakā ọhụrụ"),
+                t("a068008a", "Folders aren`t loading right now");
+            t("f075b0e8", "Dezie Foldà"),
+                t("beba2a0e", "Mepụta Foldà Ebenrụtụakā ọhụrụ"),
                 t("e41c9b4f", function (e) {
                     return "Echekwara na " + e.bookmarkFolderName;
                 }),
@@ -6887,9 +6888,9 @@
                 t("c05176ec", "If this role is onsite, enter the site location(s). If this role is remote, describe where candidates can be located."),
                 t("d70c24d4", "Used to help candidates search for your job."),
                 t("de1c4376", "Salary Range"),
-                t("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for."),
-                t("ede7d0a2", "Currency");
-            t("b925c18c", "Salary Type"),
+                t("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for.");
+            t("ede7d0a2", "Currency"),
+                t("b925c18c", "Salary Type"),
                 t("j3d242ce", "Invalid range"),
                 t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
                 t("b8cbb51a", "Job Summary"),
@@ -7867,8 +7868,7 @@
                 t("ea000ec8", "Ị kagbuola Ndebanye aha gị?"),
                 t("d7b8387e", "Ikàgbuolaarị ya, e nweghịzị fọdụrụnụ aga-eme. Ndebanye aha gị ga-eji mmereonwe mee nkwụsịoge mgbe akwụmụgwọ gachara."),
                 t("f4166d9a", "I chọrọ ikàgbu Ndebanye aha gị?"),
-                t("b74ff5fc", "Ọ bụrụ na ị kàgbuo, Ndebanye aha gị ga-eji mmereonwe mee nkwụsịoge mgbe akwụmụgwọ gachara."),
-                t("ee9efbc8", "Gaa n'ihu na nkàgbu");
+                t("b74ff5fc", "Ọ bụrụ na ị kàgbuo, Ndebanye aha gị ga-eji mmereonwe mee nkwụsịoge mgbe akwụmụgwọ gachara.");
             function r(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7907,7 +7907,8 @@
                     c(e, a)
                 );
             }
-            t("c5d9c77a", "Ọ dịka e nwetere obere ihe ọdachi. Esogbula onwe gị n'agbanyeghị, na o sighị gị n'aka. Mechie window ahụ ma nwàa ọzọ."),
+            t("ee9efbc8", "Gaa n'ihu na nkàgbu"),
+                t("c5d9c77a", "Ọ dịka e nwetere obere ihe ọdachi. Esogbula onwe gị n'agbanyeghị, na o sighị gị n'aka. Mechie window ahụ ma nwàa ọzọ."),
                 t("jda53c24", "I nwere ike kagbuo Ndebanye aha gị site n'Ụlọahịa Ngwa Apple."),
                 t("g0a7a53e", "I nwere ike kagbuo Ndebanyeaha gị site n'Ụlọahịa Google Play."),
                 t("i5f14be7", function (e) {
@@ -8903,13 +8904,13 @@
                 }),
                 t("g60001bb", function (e) {
                     return "See " + e.advertiserName;
-                }),
-                t("dff1ddd9", function (e) {
-                    return "Go to " + e.advertiserName;
                 });
-            t("b0b22805", function (e) {
-                return "Visit " + e.advertiserName;
+            t("dff1ddd9", function (e) {
+                return "Go to " + e.advertiserName;
             }),
+                t("b0b22805", function (e) {
+                    return "Visit " + e.advertiserName;
+                }),
                 t("c67e71aa", "Watch now"),
                 t("a6ada13e", "Shop now"),
                 t("j0f12222", "Hụ ọzọ"),
@@ -13382,4 +13383,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.0e6617ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.c0d2fa8a.js.map

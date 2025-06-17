@@ -1310,7 +1310,8 @@
                 n("j77292b7", function (e) {
                     return "Lütfen en fazla " + e.count + " dosya seç";
                 }),
-                n("cbc8fed4", "Bu çeviri doğru mu? İyileştirebilmemiz için bize geri bildirimde bulun:"),
+                n("d6b533dc", "Rate this translation:"),
+                n("j2f9ab6e", "Thank you for your feedback!"),
                 n("d56779a2", "kolay anlaşılır"),
                 n("b6fe8a56", "kafa karıştırıcı veya anlaşılmıyor"),
                 n("i73a7d48", "Google tarafından çevrildi"),
@@ -1915,9 +1916,9 @@
                 n("i89195ea", "Ayırıcı"),
                 n("da8ac57c", "Altyazıyı Düzenle"),
                 n("a8fdd09c", "Makaleyi Yayınla"),
-                n("d8047cc8", "Yayınla"),
-                n("ff7ddca2", "Makalen yayınlandıktan sonra gönderi olarak görünecek. Ayrıca, profilindeki Makaleler sekmesinde de bulunabilecek.");
-            n("ef34d7be", "Bir makale yayınlandıktan sonra hedef kitle ve yanıt denetimleri düzenlenemez."),
+                n("d8047cc8", "Yayınla");
+            n("ff7ddca2", "Makalen yayınlandıktan sonra gönderi olarak görünecek. Ayrıca, profilindeki Makaleler sekmesinde de bulunabilecek."),
+                n("ef34d7be", "Bir makale yayınlandıktan sonra hedef kitle ve yanıt denetimleri düzenlenemez."),
                 n("e52d4998", "Hedef kitleni seç"),
                 n("d7985b24", "Bu makaleye kimlerin yanıt verebileceğini seç"),
                 n("b5660338", "Zaman Akışı önizlemesi"),
@@ -2971,9 +2972,9 @@
                 n("a7de64de", "Reklam bilgisi"),
                 n("jb0a4c36", "Blog"),
                 n("ce6d095a", "Kariyer"),
-                n("e0adec82", "Marka Kaynakları"),
-                n("df1b7550", "Pazarlama");
-            n("he258678", "İşletmeler İçin X"),
+                n("e0adec82", "Marka Kaynakları");
+            n("df1b7550", "Pazarlama"),
+                n("he258678", "İşletmeler İçin X"),
                 n("c6f58084", "Geliştiriciler"),
                 n("d83f18d2", "Dizin"),
                 n("hc5aa17c", "X uygulamasını indir"),
@@ -3883,11 +3884,11 @@
                 n("a2bf8b8a", "Dinlemeye geç"),
                 n("caa8d928", "Gürültü önlemeyi aç/kapat"),
                 n("b5d88f0c", "Yalnızca çalışanlar"),
-                n("c855ab8e", "Abonelere özel"),
-                n("ddeb0a3c", "İşte Topluluk. Üyeleri sevdin mi? Haydi bir göz at.");
-            n("e111f531", function (e) {
-                return e.count + " katıldı";
-            }),
+                n("c855ab8e", "Abonelere özel");
+            n("ddeb0a3c", "İşte Topluluk. Üyeleri sevdin mi? Haydi bir göz at."),
+                n("e111f531", function (e) {
+                    return e.count + " katıldı";
+                }),
                 n("cbef820f", function (e) {
                     return e.screenName + " yayını yeniden gönderdi.";
                 }),
@@ -4923,9 +4924,9 @@
                 n("a532072a", "İzleyiciler"),
                 n("d9508ab0", "görüntülenme"),
                 n("d9f9dec0", "Sohbet Odasını Görüntüle"),
-                n("h0c1f37a", "Sohbet Odası İstatistiklerini Görüntüle"),
-                n("e41fffbc", "Videolarının toplam izlenme süresi.");
-            n("if2909ba", "İzlenme Süresi"),
+                n("h0c1f37a", "Sohbet Odası İstatistiklerini Görüntüle");
+            n("e41fffbc", "Videolarının toplam izlenme süresi."),
+                n("if2909ba", "İzlenme Süresi"),
                 n("i0e5bf4c", "Videoların"),
                 n("ed99baea", "Erken Beta Erişimi"),
                 n("gf898b70", "Gelişmiş Arama"),
@@ -5877,9 +5878,9 @@
                     return e.query + " için sonuç bulunamadı";
                 }),
                 n("f191a2ba", "Arama ayarlarını"),
-                n("a068008a", "Klasörler şu anda yüklenmiyor"),
-                n("f075b0e8", "Klasörü Düzenle");
-            n("beba2a0e", "Yeni bir Yer İşareti Klasörü oluştur"),
+                n("a068008a", "Klasörler şu anda yüklenmiyor");
+            n("f075b0e8", "Klasörü Düzenle"),
+                n("beba2a0e", "Yeni bir Yer İşareti Klasörü oluştur"),
                 n("e41c9b4f", function (e) {
                     return e.bookmarkFolderName + " içeriğine kaydedildi";
                 }),
@@ -6883,9 +6884,9 @@
                 n("c05176ec", "Bu rol için sahada çalışma gerekiyorsa saha konumlarını gir. Rol için uzaktan çalışma gerekiyorsa adayların hangi konumlarda bulunabileceğini açıkla."),
                 n("d70c24d4", "Adayların ilanını bulmasına yardımcı olur."),
                 n("de1c4376", "Maaş Aralığı"),
-                n("hf352d42", "Adaylara gösterilecek isteğe bağlı bir maaş aralığı. Belirtmek istemiyorsan işe alım yaptığın konumdaki maaş şeffaflığı yasalarına dikkat et."),
-                n("ede7d0a2", "Para birimi");
-            n("b925c18c", "Maaş Türü"),
+                n("hf352d42", "Adaylara gösterilecek isteğe bağlı bir maaş aralığı. Belirtmek istemiyorsan işe alım yaptığın konumdaki maaş şeffaflığı yasalarına dikkat et.");
+            n("ede7d0a2", "Para birimi"),
+                n("b925c18c", "Maaş Türü"),
                 n("j3d242ce", "Geçersiz aralık"),
                 n("f4d07bd2", "Adayların rollerini aramayla daha kolay bulmasını sağlamak için isteğe bağlı ayrıntılar ekle."),
                 n("b8cbb51a", "İş Özeti"),
@@ -7863,8 +7864,7 @@
                 n("ea000ec8", "Aboneliğini iptal etmiş miydin?"),
                 n("d7b8387e", "Aboneliğini zaten iptal ettiysen yapacağın başka bir işlem yok. Aboneliğinin süresi, faturalandırma döneminin sonunda otomatik olarak dolacak."),
                 n("f4166d9a", "Aboneliğini iptal etmek mi istiyorsun?"),
-                n("b74ff5fc", "İptal edersen Aboneliğinin süresi faturalandırma döneminin sonunda otomatik olarak dolacak."),
-                n("ee9efbc8", "İptal işlemine devam et");
+                n("b74ff5fc", "İptal edersen Aboneliğinin süresi faturalandırma döneminin sonunda otomatik olarak dolacak.");
             function l(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var n = a[i];
@@ -7903,7 +7903,8 @@
                     t(e, a)
                 );
             }
-            n("c5d9c77a", "Küçük bir kesinti yaşandı. Endişelenmene gerek yok, senden kaynaklanmıyor. Bu pencereyi kapatıp tekrar dene."),
+            n("ee9efbc8", "İptal işlemine devam et"),
+                n("c5d9c77a", "Küçük bir kesinti yaşandı. Endişelenmene gerek yok, senden kaynaklanmıyor. Bu pencereyi kapatıp tekrar dene."),
                 n("jda53c24", "Aboneliğini Apple App Store üzerinden iptal edebilirsin."),
                 n("g0a7a53e", "Aboneliğini Google Play Store üzerinden iptal edebilirsin."),
                 n("i5f14be7", function (e) {
@@ -8899,13 +8900,13 @@
                 }),
                 n("g60001bb", function (e) {
                     return "İncele: " + e.advertiserName;
-                }),
-                n("dff1ddd9", function (e) {
-                    return "Git: " + e.advertiserName;
                 });
-            n("b0b22805", function (e) {
-                return e.advertiserName + " adresini ziyaret et";
+            n("dff1ddd9", function (e) {
+                return "Git: " + e.advertiserName;
             }),
+                n("b0b22805", function (e) {
+                    return e.advertiserName + " adresini ziyaret et";
+                }),
                 n("c67e71aa", "Şimdi izle"),
                 n("a6ada13e", "Alışverişe başla"),
                 n("j0f12222", "Daha fazlasını gör"),
@@ -13375,4 +13376,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.4ce1c32a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.80f6ffda.js.map

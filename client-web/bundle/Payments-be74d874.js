@@ -7,7 +7,7 @@
             var a = n(807896),
                 r = n(202784),
                 l = n(43429),
-                o = n(541170);
+                o = n(747995);
             const i = (e) => r.createElement(o.default, (0, a.Z)({}, e, { transferDirection: l.Rz.credit })),
                 c = r.memo(i);
         },
@@ -610,4 +610,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-be74d874.79ffd96a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-be74d874.93291c5a.js.map

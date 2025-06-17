@@ -404,9 +404,9 @@
             n.d(t, { Z: () => y });
             var a = n(202784),
                 l = n(325686),
-                s = n(392237),
-                r = n(731708),
-                i = n(823161),
+                s = n(731708),
+                r = n(823161),
+                i = n(392237),
                 o = n(166852),
                 c = n(125363),
                 d = n(836255),
@@ -414,10 +414,10 @@
                 m = n(448301);
             const p = 100,
                 g = 3;
-            function y({ containerStyle: e, disableClick: t, numPosts: n, postIds: i, style: c, textStyle: d, userAvatarShape: y, userAvatarSize: k, variant: b }) {
-                const [_, w] = a.useState(!1),
-                    C = { filled: { commentsContainer: f.filledMetadataContainer }, outline: { commentsContainer: f.outlineMetadataContainer } }[b || "outline"],
-                    x = a.useMemo(() => (0, o.Z)(i).slice(0, p), [i]);
+            function y({ containerStyle: e, disableClick: t, numPosts: n, postIds: r, style: i, textStyle: c, userAvatarShape: d, userAvatarSize: y, variant: k }) {
+                const [b, _] = a.useState(!1),
+                    w = { filled: { commentsContainer: f.filledMetadataContainer }, outline: { commentsContainer: f.outlineMetadataContainer } }[k || "outline"],
+                    C = a.useMemo(() => (0, o.Z)(r).slice(0, p), [r]);
                 return n
                     ? a.createElement(
                           a.Fragment,
@@ -427,26 +427,26 @@
                               { style: [f.interactiveContainer, e] },
                               a.createElement(
                                   l.Z,
-                                  { style: [f.commentsContainer, C.commentsContainer, c] },
-                                  x.length > 0 &&
+                                  { style: [f.commentsContainer, w.commentsContainer, i] },
+                                  C.length > 0 &&
                                       a.createElement(
                                           l.Z,
                                           { style: f.postAvatars },
-                                          x.slice(0, g).map((e, t) => a.createElement(h, { key: e, postId: e, shape: y, size: k, style: [f.postAvatar, { animationDelay: 0.1 * t + "s" }, 0 !== t ? { marginStart: -1 * s.default.theme.spacesPx.space12 } : {}] })),
+                                          C.slice(0, g).map((e, t) => a.createElement(h, { key: e, postId: e, shape: d, size: y, style: [f.postAvatar, { animationDelay: 0.1 * t + "s" }] })),
                                       ),
-                                  a.createElement(r.ZP, { style: [f.commentsText, d] }, `${(0, m.uf)(n)} comments`),
+                                  a.createElement(s.ZP, { style: [f.commentsText, c] }, `${(0, m.uf)(n)} comments`),
                               ),
                           ),
-                          _ && a.createElement(u.a, { onDrawerDismiss: () => w(!1), paginationOptions: { numResultsPerPage: 15 }, postIds: x, style: f.drawer, topBarStyle: f.drawerTopBar, withTransparentMask: !0 }),
+                          b && a.createElement(u.a, { onDrawerDismiss: () => _(!1), paginationOptions: { numResultsPerPage: 15 }, postIds: C, style: f.drawer, topBarStyle: f.drawerTopBar, withTransparentMask: !0 }),
                       )
                     : null;
             }
             function h({ postId: e, shape: t, size: n, style: l }) {
                 const s = a.useMemo(() => d.Z.createHydratorForTweet(e), [e]),
-                    r = (0, c.v9)(s);
-                return r && r.user.profile_image_url_https ? a.createElement(i.default, { backgroundColor: "transparent", borderColor: "transparent", borderWidth: "small", shape: t || "circle", size: n || "medium", style: l, uri: r.user.profile_image_url_https }) : null;
+                    i = (0, c.v9)(s);
+                return i && i.user.profile_image_url_https ? a.createElement(r.default, { backgroundColor: "transparent", borderColor: "transparent", borderWidth: "small", shape: t || "circle", size: n || "medium", style: [f.userAvatar, l], uri: i.user.profile_image_url_https }) : null;
             }
-            const f = s.default.create((e) => ({ interactiveContainer: { height: "max-content", width: "max-content" }, commentsContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, borderRadius: e.spaces.space32, paddingHorizontal: e.spaces.space8, borderStyle: "solid", borderWidth: 1, width: "max-content", height: e.spaces.space32, transition: "background-color 0.2s ease" }, outlineMetadataContainer: { backgroundColor: "transparent", borderColor: e.colors.gray100 }, filledMetadataContainer: { backgroundColor: e.colors.gray0, borderColor: e.colors.gray100 }, postAvatars: { display: "flex", flexDirection: "row", alignItems: "center" }, postAvatar: { animationDuration: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" }, drawerTopBar: { backgroundColor: e.colors.gray0 }, drawer: { backgroundColor: e.colors.gray0 }, commentsText: { fontSize: e.fontSizes.subtext3 } }));
+            const f = i.default.create((e) => ({ interactiveContainer: { height: "max-content", width: "max-content" }, commentsContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, borderRadius: e.spaces.space32, paddingHorizontal: e.spaces.space8, borderStyle: "solid", borderWidth: 1, width: "max-content", height: e.spaces.space32, transition: "background-color 0.2s ease" }, outlineMetadataContainer: { backgroundColor: "transparent", borderColor: e.colors.gray100 }, filledMetadataContainer: { backgroundColor: e.colors.gray0, borderColor: e.colors.gray100 }, postAvatars: { display: "flex", flexDirection: "row", alignItems: "center", marginEnd: e.spacesPx.space12 }, postAvatar: { animationDuration: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" }, userAvatar: { marginEnd: -e.spacesPx.space12 }, drawerTopBar: { backgroundColor: e.colors.gray0 }, drawer: { backgroundColor: e.colors.gray0 }, commentsText: { fontSize: e.fontSizes.subtext3 } }));
         },
         525271: (e, t, n) => {
             n.d(t, { Z: () => C });
@@ -531,4 +531,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TryNewsSidebar.1277896a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TryNewsSidebar.d930756a.js.map

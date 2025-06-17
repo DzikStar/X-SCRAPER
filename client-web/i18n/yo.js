@@ -1314,7 +1314,8 @@
                 a("j77292b7", function (e) {
                     return "Please only select up to " + e.count + " file" + i(e.count, "", "s");
                 }),
-                a("cbc8fed4", "Was this translation accurate? Give us feedback so we can improve:"),
+                a("d6b533dc", "Rate this translation:"),
+                a("j2f9ab6e", "Thank you for your feedback!"),
                 a("d56779a2", "easy to understand"),
                 a("b6fe8a56", "confusing or unclear"),
                 a("i73a7d48", "Túmọ̀ nípasẹ̀ Google"),
@@ -1919,9 +1920,9 @@
                 a("i89195ea", "Divider"),
                 a("da8ac57c", "Edit Caption"),
                 a("a8fdd09c", "Publish Article"),
-                a("d8047cc8", "Tẹ̀ ẹ́ jáde"),
-                a("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile.");
-            a("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
+                a("d8047cc8", "Tẹ̀ ẹ́ jáde");
+            a("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                a("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
                 a("e52d4998", "Choose your audience"),
                 a("d7985b24", "Choose who can reply to this Article"),
                 a("b5660338", "Timeline preview"),
@@ -2975,9 +2976,9 @@
                 a("a7de64de", "Ẹ̀kúnrẹ́rẹ́ àlàyé àwọn ìpòlówó"),
                 a("jb0a4c36", "Búlọ́ọ̀gì"),
                 a("ce6d095a", "Iṣẹ́ àṣelà"),
-                a("e0adec82", "Àwọn Ohun-èlò Àmi Òwò"),
-                a("df1b7550", "Ìpolówó ọjà");
-            a("he258678", "X for Business"),
+                a("e0adec82", "Àwọn Ohun-èlò Àmi Òwò");
+            a("df1b7550", "Ìpolówó ọjà"),
+                a("he258678", "X for Business"),
                 a("c6f58084", "Àwọn olùkò kóòdù"),
                 a("d83f18d2", "Ìtọ́nisọ́nà"),
                 a("hc5aa17c", "Get the X app"),
@@ -3887,11 +3888,11 @@
                 a("a2bf8b8a", "Switch to listening"),
                 a("caa8d928", "Toggle noise suppression"),
                 a("b5d88f0c", "Employees only"),
-                a("c855ab8e", "Àwọn Olùforúkọsílẹ̀ nìkan"),
-                a("ddeb0a3c", "Àwùjọ náà nìyìí. O fẹ́ràn àwọn ènìyàn náà bí? Wò ó.");
-            a("e111f531", function (e) {
-                return e.count + " wọlé sí";
-            }),
+                a("c855ab8e", "Àwọn Olùforúkọsílẹ̀ nìkan");
+            a("ddeb0a3c", "Àwùjọ náà nìyìí. O fẹ́ràn àwọn ènìyàn náà bí? Wò ó."),
+                a("e111f531", function (e) {
+                    return e.count + " wọlé sí";
+                }),
                 a("cbef820f", function (e) {
                     return e.screenName + " reposted the stream!";
                 }),
@@ -4927,9 +4928,9 @@
                 a("a532072a", "Viewers"),
                 a("d9508ab0", "views"),
                 a("d9f9dec0", "View Space"),
-                a("h0c1f37a", "View Space Analytics"),
-                a("e41fffbc", "The total watch time of your videos.");
-            a("if2909ba", "Watch Time"),
+                a("h0c1f37a", "View Space Analytics");
+            a("e41fffbc", "The total watch time of your videos."),
+                a("if2909ba", "Watch Time"),
                 a("i0e5bf4c", "Your videos"),
                 a("ed99baea", "Early Beta Access"),
                 a("gf898b70", "Advanced Search"),
@@ -5881,9 +5882,9 @@
                     return "Kò si àbájáde mọ́ fún " + e.query;
                 }),
                 a("f191a2ba", " wò "),
-                a("a068008a", "Folders aren`t loading right now"),
-                a("f075b0e8", "Ṣàtúnse Fódà");
-            a("beba2a0e", "Ṣẹe ìdásílẹ̀ Fódà Búkúmaakì tuntun kan"),
+                a("a068008a", "Folders aren`t loading right now");
+            a("f075b0e8", "Ṣàtúnse Fódà"),
+                a("beba2a0e", "Ṣẹe ìdásílẹ̀ Fódà Búkúmaakì tuntun kan"),
                 a("e41c9b4f", function (e) {
                     return "Fipamọ̀ sí " + e.bookmarkFolderName;
                 }),
@@ -6887,9 +6888,9 @@
                 a("c05176ec", "If this role is onsite, enter the site location(s). If this role is remote, describe where candidates can be located."),
                 a("d70c24d4", "Used to help candidates search for your job."),
                 a("de1c4376", "Salary Range"),
-                a("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for."),
-                a("ede7d0a2", "Currency");
-            a("b925c18c", "Salary Type"),
+                a("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for.");
+            a("ede7d0a2", "Currency"),
+                a("b925c18c", "Salary Type"),
                 a("j3d242ce", "Invalid range"),
                 a("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
                 a("b8cbb51a", "Job Summary"),
@@ -7867,8 +7868,7 @@
                 a("ea000ec8", "O tí wọ́gilé ìforúkọsílẹ̀ rẹ tẹ́lẹ̀ bí?"),
                 a("d7b8387e", "Bí o bá ti wọ́gilé ìforúkọsílẹ̀ rẹ tẹ́lẹ̀, kò sí ohun mìíràn láti ṣe. Ìforúkọsílẹ̀ rẹ yóó wá sópin láìfowóyí lópin àsìkò ìdíyelé náà."),
                 a("f4166d9a", "O fẹ́ wọ́gi lé Ìforúkọsílẹ̀ rẹ bí?"),
-                a("b74ff5fc", "Bí o bá wọ́gilé e ìforúkọsílẹ̀ rẹ yóò wá sópin láìfowóyí lópin àsìkò ìdíyelé náà."),
-                a("ee9efbc8", "Tẹ̀síwájú pẹ̀lú ìwọ́gilé");
+                a("b74ff5fc", "Bí o bá wọ́gilé e ìforúkọsílẹ̀ rẹ yóò wá sópin láìfowóyí lópin àsìkò ìdíyelé náà.");
             function r(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7907,7 +7907,8 @@
                     s(e, n)
                 );
             }
-            a("c5d9c77a", "Ó dà bí ẹni wípé ìdíwọ́ kékéré kan fẹ́ wá. Má dààmú, kì í se ẹ̀bi rẹ. Tẹ ìsàlẹ̀ yií láti gbìyànjú sí i."),
+            a("ee9efbc8", "Tẹ̀síwájú pẹ̀lú ìwọ́gilé"),
+                a("c5d9c77a", "Ó dà bí ẹni wípé ìdíwọ́ kékéré kan fẹ́ wá. Má dààmú, kì í se ẹ̀bi rẹ. Tẹ ìsàlẹ̀ yií láti gbìyànjú sí i."),
                 a("jda53c24", "O lè wọgi lé Ìforúkọsílẹ̀ rẹ̀ Láti inú Apple App Store."),
                 a("g0a7a53e", "O lè wọgi lé Ìforúkọsílẹ̀ rẹ̀ Láti inú Google Play Store."),
                 a("i5f14be7", function (e) {
@@ -8903,13 +8904,13 @@
                 }),
                 a("g60001bb", function (e) {
                     return "See " + e.advertiserName;
-                }),
-                a("dff1ddd9", function (e) {
-                    return "Go to " + e.advertiserName;
                 });
-            a("b0b22805", function (e) {
-                return "Visit " + e.advertiserName;
+            a("dff1ddd9", function (e) {
+                return "Go to " + e.advertiserName;
             }),
+                a("b0b22805", function (e) {
+                    return "Visit " + e.advertiserName;
+                }),
                 a("c67e71aa", "Watch now"),
                 a("a6ada13e", "Shop now"),
                 a("j0f12222", "Wò sì i"),
@@ -13369,4 +13370,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.d2ec60ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.78b18eaa.js.map

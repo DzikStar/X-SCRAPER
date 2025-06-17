@@ -283,7 +283,7 @@
                 u = a(4452),
                 m = a(293115),
                 p = a(725405),
-                g = a(107267),
+                g = (a(136728), a(107267)),
                 y = a(67369),
                 k = a(731708),
                 f = a(154003),
@@ -317,15 +317,15 @@
                 };
             var D,
                 I,
-                L,
                 P,
+                L,
                 M = {
                     fragment: {
-                        argumentDefinitions: [(D = { defaultValue: null, kind: "LocalArgument", name: "end_timestamp_msec" }), (I = { defaultValue: null, kind: "LocalArgument", name: "lookback_days" }), (L = { defaultValue: null, kind: "LocalArgument", name: "start_timestamp_msec" })],
+                        argumentDefinitions: [(D = { defaultValue: null, kind: "LocalArgument", name: "end_timestamp_msec" }), (I = { defaultValue: null, kind: "LocalArgument", name: "lookback_days" }), (P = { defaultValue: null, kind: "LocalArgument", name: "start_timestamp_msec" })],
                         kind: "Fragment",
                         metadata: null,
                         name: "useAdStatsQuery",
-                        selections: (P = [
+                        selections: (L = [
                             {
                                 alias: null,
                                 args: [{ kind: "Literal", name: "s", value: "4721" }],
@@ -365,7 +365,7 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: [I, L, D], kind: "Operation", name: "useAdStatsQuery", selections: P },
+                    operation: { argumentDefinitions: [I, P, D], kind: "Operation", name: "useAdStatsQuery", selections: L },
                     params: { id: "q5fH_fvXR7wt2cpKN9KcNw", metadata: {}, name: "useAdStatsQuery", operationKind: "query", text: null },
                 };
             M.hash = "cef4d86805d39cc0736fee3988793d83";
@@ -398,28 +398,29 @@
                     const a = (0, y.yu)(),
                         n = (0, p.Z)(),
                         l = (0, g.useHistory)(),
-                        o = s.ZP.isWebView();
+                        o = s.ZP.isWebView(),
+                        c = s.ZP.isAndroid();
                     r.useEffect(() => {
                         o && (0, u.jW)("quick-free-trial-content-ready");
                     }, [o]),
                         (0, _.q)(() => {
                             n.scribe({ action: "impression" });
                         });
-                    const c = "Ended" === t.status,
-                        d = r.useMemo(() => r.createElement(i.Z, { style: [de.header, x(0)] }, r.createElement(k.ZP, { size: "title2", style: de.title, weight: "bold" }, c ? O : V), c ? null : r.createElement(k.ZP, { color: "gray700" }, q)), [c]),
-                        m = r.useMemo(() => {
+                    const d = "Ended" === t.status,
+                        m = r.useMemo(() => r.createElement(i.Z, { style: [de.header, x(0)] }, r.createElement(k.ZP, { size: "title2", style: de.title, weight: "bold" }, d ? O : V), d ? null : r.createElement(k.ZP, { color: "gray700" }, q)), [d]),
+                        b = r.useMemo(() => {
                             const { timeSpent: t, timeSpentAnnualized: a, viewCount: n } = Z(e);
                             return r.createElement(i.Z, { style: de.metricCards }, r.createElement(i.Z, { style: [de.metricCard, x(1)], testID: "ads_not_seen_metric" }, r.createElement(k.ZP, { size: "headline1", weight: "bold" }, R), r.createElement("div", { style: de.metricTextYellow }, H({ numberOfAds: n })), r.createElement(k.ZP, { color: "gray700" }, N)), r.createElement(i.Z, { style: [de.metricCard, x(2)], testID: "time_saved_metric" }, r.createElement(k.ZP, { size: "headline1", weight: "bold" }, G), r.createElement("div", { style: { flexDirection: "row", display: "inline-flex" } }, r.createElement("span", { style: de.metricTextBlue }, t), r.createElement("span", { style: de.asterisk }, "*")), r.createElement(k.ZP, { color: "gray700" }, Y)), r.createElement(i.Z, { style: [de.metricCard, x(3)], testID: "time_saved_annualized_metric" }, r.createElement(k.ZP, { size: "headline1", weight: "bold" }, J), r.createElement("div", { style: de.metricTextBlue }, a), r.createElement(k.ZP, { color: "gray700" }, X)), r.createElement(i.Z, { style: [de.disclaimer, x(3)] }, r.createElement(k.ZP, { color: "gray600", size: "subtext3" }, r.createElement(k.ZP, { size: "subtext1" }, "* "), Q)));
                         }, [e]),
-                        b = r.useMemo(() => {
+                        h = r.useMemo(() => {
                             const e = { referring_page: "ad_free_trial", plan: "monthly" };
                             return { pathname: "/i/premium_sign_up", state: e, query: o ? e : void 0, external: o };
                         }, [o]),
-                        h = r.useCallback(() => {
-                            o ? (0, u.jW)("dismiss") : l.goBack();
-                        }, [l, o]),
-                        w = r.useMemo(() => r.createElement(i.Z, { style: de.footer }, r.createElement(i.Z, { style: de.gradient }), c ? r.createElement(i.Z, { style: [de.buttonGroup, de.buttonGroupAnimation] }, r.createElement(f.ZP, { link: b, size: "xLarge", type: "primaryFilled" }, U), r.createElement(f.ZP, { color: "gray700", onClick: h, style: de.noThanksButton }, $)) : r.createElement(i.Z, { style: [de.buttonGroup, de.buttonGroupAnimation] }, r.createElement(f.ZP, { onClick: h, size: "xLarge", type: "primaryFilled" }, j), r.createElement(f.ZP, { link: b, size: "xLarge", type: "primaryOutlined" }, U))), [c, b, h]);
-                    return r.createElement(r.Fragment, null, r.createElement(i.Z, { style: a ? de.containerSmall : de.containerLarge }, d, m), w);
+                        w = r.useCallback(() => {
+                            o ? (c ? l.push("/") : (0, u.jW)("dismiss")) : l.goBack();
+                        }, [l, o, c]),
+                        T = r.useMemo(() => r.createElement(i.Z, { style: de.footer }, r.createElement(i.Z, { style: de.gradient }), d ? r.createElement(i.Z, { style: [de.buttonGroup, de.buttonGroupAnimation] }, r.createElement(f.ZP, { link: h, size: "xLarge", type: "primaryFilled" }, U), r.createElement(f.ZP, { color: "gray700", onClick: w, style: de.noThanksButton }, $)) : r.createElement(i.Z, { style: [de.buttonGroup, de.buttonGroupAnimation] }, r.createElement(f.ZP, { onClick: w, size: "xLarge", type: "primaryFilled" }, j), r.createElement(f.ZP, { link: h, size: "xLarge", type: "primaryOutlined" }, U))), [d, h, w]);
+                    return r.createElement(r.Fragment, null, r.createElement(i.Z, { style: a ? de.containerSmall : de.containerLarge }, m, b), T);
                 },
                 re = () => {
                     const e = (0, y.yu)(),
@@ -483,7 +484,6 @@
                     asterisk: { fontSize: e.fontSizes.subtext1, color: e.colors.gray700, marginTop: e.spaces.space8 },
                     disclaimer: { opacity: 0, display: "inline-flex", flexDirection: "row" },
                 }));
-            a(136728);
             var ue = a(530525),
                 me = a(439592),
                 pe = a(136483),
@@ -564,7 +564,7 @@
                 xe = o.default.create((e) => ({ containerSmall: { padding: e.spaces.space20, paddingBottom: e.spaces.space24 }, containerLarge: { paddingHorizontal: e.spaces.space40, paddingBottom: e.spaces.space24, paddingTop: e.spaces.space40 }, title: { marginBottom: e.spaces.space20 }, content: { gap: e.spaces.space12 }, gotItButton: { marginTop: e.spaces.space40, marginEnd: "auto" } })),
                 De = h().i95803fa,
                 Ie = h().j24c37b2,
-                Le = () => {
+                Pe = () => {
                     const e = (0, y.yu)(),
                         t = (0, p.Z)(),
                         a = (0, g.useHistory)(),
@@ -580,7 +580,7 @@
                     }, [a, n]);
                     return r.createElement(r.Fragment, null, r.createElement(i.Z, { style: e ? Me.containerSmall : Me.containerLarge }, r.createElement(i.Z, { style: Me.content }, r.createElement(k.ZP, { size: "title2", style: Me.title, weight: "bold" }, De), r.createElement(f.ZP, { onClick: l, size: "large", style: Me.gotItButton, type: "primaryFilled" }, Ie))));
                 },
-                Pe = (e) => r.createElement(m.nO, { namespace: { component: "not-eligible" } }, r.createElement(Le, e)),
+                Le = (e) => r.createElement(m.nO, { namespace: { component: "not-eligible" } }, r.createElement(Pe, e)),
                 Me = o.default.create((e) => ({ containerSmall: { padding: e.spaces.space20, paddingBottom: e.spaces.space24 }, containerLarge: { paddingHorizontal: e.spaces.space40, paddingBottom: e.spaces.space24, paddingTop: e.spaces.space40 }, title: { marginBottom: e.spaces.space20 }, buttonContainer: { marginTop: e.spaces.space72, gap: e.spaces.space12 }, content: { gap: e.spaces.space12 }, gotItButton: { marginTop: e.spaces.space40, marginEnd: "auto" } }));
             a(571372);
             var Ke = (function () {
@@ -720,19 +720,20 @@
                                 });
                     }, [k, g, i, a, t, s, e]);
                     const f = r.useMemo(() => (m ? r.createElement(ce, { trialSubscription: m }) : null), [m]);
-                    return d ? r.createElement(Ze, null) : s && y?.duration_in_minutes ? r.createElement(Ee, { durationInMinutes: y.duration_in_minutes, quickFreeTrialProductType: e }) : g && m?.status ? ("NoAds" === e ? f : void 0) : g || k ? r.createElement(l.Z, null) : r.createElement(Pe, null);
+                    return d ? r.createElement(Ze, null) : s && y?.duration_in_minutes ? r.createElement(Ee, { durationInMinutes: y.duration_in_minutes, quickFreeTrialProductType: e }) : g && m?.status ? ("NoAds" === e ? f : void 0) : g || k ? r.createElement(l.Z, null) : r.createElement(Le, null);
                 },
                 Ge = { context: "quick-free-trial" },
                 Ye = (e) => {
                     const [t, a] = r.useState(!1),
-                        l = s.ZP.isWebView();
+                        l = s.ZP.isWebView(),
+                        o = s.ZP.isAndroid();
                     (0, u.ZP)();
-                    const o = r.useMemo(() => ({ page: "quick-free-trial", section: e.quickFreeTrialProductType }), [e.quickFreeTrialProductType]),
-                        p = r.useMemo(() => r.createElement($e, (0, n.Z)({ setHideBackButton: a }, e)), [e]),
-                        g = r.useCallback(() => {
+                    const p = r.useMemo(() => ({ page: "quick-free-trial", section: e.quickFreeTrialProductType }), [e.quickFreeTrialProductType]),
+                        g = r.useMemo(() => r.createElement($e, (0, n.Z)({ setHideBackButton: a }, e)), [e]),
+                        y = r.useCallback(() => {
                             (0, u.jW)("dismiss");
                         }, []);
-                    return r.createElement(m.nO, { namespace: o }, r.createElement(c.Z, { appBarStyle: Je.appBar, containerStyle: Je.modal, hideBackButton: t, history: e.history, onBackClick: l ? g : void 0, withoutBottomBarMobile: !0 }, r.createElement(d.H, { errorConfig: Ge }, r.createElement(i.Z, { style: Je.backgroundShadow }), p)));
+                    return r.createElement(m.nO, { namespace: p }, r.createElement(c.Z, { appBarStyle: Je.appBar, containerStyle: Je.modal, hideBackButton: t || (l && o), history: e.history, onBackClick: l ? y : void 0, withoutBottomBarMobile: !0 }, r.createElement(d.H, { errorConfig: Ge }, r.createElement(i.Z, { style: Je.backgroundShadow }), g)));
                 },
                 Je = o.default.create((e) => {
                     const t = "light" === e.paletteName ? "radial-gradient(56.1514% 56.1514% at 49.972% 38.959%, rgb(52 147 239 / 30%) 0%, rgb(255, 255, 255) 100%)" : "dark" === e.paletteName ? "radial-gradient(56.1514% 56.1514% at 49.972% 38.959%, rgba(52, 147, 239, 0.3) 0%, rgb(21 32 44) 100%)" : "radial-gradient(56.15141888052253% 56.15141888052254% at 49.97201160183933% 38.95898881943194%,#273649 0%,rgba(0,0,0,1) 100%)";
@@ -791,4 +792,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.QuickFreeTrial.01ef7a0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.QuickFreeTrial.1329c33a.js.map

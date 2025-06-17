@@ -308,7 +308,7 @@
                         A = M && !!r && "news" !== r && "for_you" !== r,
                         k = M && "news" === r,
                         I = M && "news" === r,
-                        _ = t.createElement(i.Z, { withNews: A, withSearchBox: !1, withTrends: !1 }, k && t.createElement(h, null), I && t.createElement(m, null)),
+                        _ = t.createElement(i.Z, { withNews: A, withSearchBox: !1, withTrends: !1 }, t.createElement(t.Fragment, null, k && t.createElement(h, null), I && t.createElement(m, null))),
                         x = this.context.featureSwitches.isTrue("rweb_enable_logged_out_search_search_bar_enabled"),
                         T = e.contextualScribeNamespace;
                     return t.createElement(t.Fragment, null, t.createElement(c.Z, { description: P, includeOpenGraphMeta: !1, title: C }), t.createElement(u.Z, { canonical: (0, o.ju)("https://x.com/explore"), description: P, image: G, imageH: R, imageW: B, title: C, type: "article" }), t.createElement(f.Z, { entryConfiguration: Z, fab: b, getTabLink: this._getTabLink, history: n, initialPageNamespace: T, module: a, onBackClick: y ? this._handleBackClick : void 0, prerollDisplayLocation: D.Nw.OTHER, renderEmptyState: S, renderUnavailable: N, rightControl: g, selectedTabId: r, sidebarContent: _, timelinePrefix: E.uI, title: C, withBottomLoginSignupBar: !0, withDeferredView: !0, withSearchBox: x }), !1);
@@ -335,4 +335,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Explore.046f698a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Explore.94dd22ba.js.map

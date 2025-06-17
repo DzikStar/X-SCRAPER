@@ -1310,7 +1310,8 @@
                 n("j77292b7", function (e) {
                     return "請選取最多 " + e.count + " 個檔案";
                 }),
-                n("cbc8fed4", "這個翻譯正確嗎？請提供回饋，讓我們可以改進："),
+                n("d6b533dc", "Rate this translation:"),
+                n("j2f9ab6e", "Thank you for your feedback!"),
                 n("d56779a2", "容易理解"),
                 n("b6fe8a56", "令人困惑或不清楚"),
                 n("i73a7d48", "由 Google 翻譯"),
@@ -1915,9 +1916,9 @@
                 n("i89195ea", "分隔線"),
                 n("da8ac57c", "編輯說明文字"),
                 n("a8fdd09c", "發佈文章"),
-                n("d8047cc8", "發佈"),
-                n("ff7ddca2", "發佈後，你的文章將顯示為貼文。此外，你可以在個人資料的「文章」標籤下找到它。");
-            n("ef34d7be", "文章發佈後，就無法編輯受眾和回覆控制項。"),
+                n("d8047cc8", "發佈");
+            n("ff7ddca2", "發佈後，你的文章將顯示為貼文。此外，你可以在個人資料的「文章」標籤下找到它。"),
+                n("ef34d7be", "文章發佈後，就無法編輯受眾和回覆控制項。"),
                 n("e52d4998", "選擇你的受眾"),
                 n("d7985b24", "選擇誰可以回覆此文章"),
                 n("b5660338", "時間軸預覽"),
@@ -2971,9 +2972,9 @@
                 n("a7de64de", "廣告資訊"),
                 n("jb0a4c36", "部落格"),
                 n("ce6d095a", "人才招募"),
-                n("e0adec82", "品牌資源"),
-                n("df1b7550", "行銷");
-            n("he258678", "X 商業版"),
+                n("e0adec82", "品牌資源");
+            n("df1b7550", "行銷"),
+                n("he258678", "X 商業版"),
                 n("c6f58084", "開發人員"),
                 n("d83f18d2", "目錄"),
                 n("hc5aa17c", "取得 X 應用程式"),
@@ -3883,11 +3884,11 @@
                 n("a2bf8b8a", "切換成聆聽"),
                 n("caa8d928", "切換噪音抑制"),
                 n("b5d88f0c", "僅限員工"),
-                n("c855ab8e", "訂閱者專屬"),
-                n("ddeb0a3c", "這裡就是社群。喜歡這群人嗎？瞧一瞧。");
-            n("e111f531", function (e) {
-                return e.count + " 人已收聽";
-            }),
+                n("c855ab8e", "訂閱者專屬");
+            n("ddeb0a3c", "這裡就是社群。喜歡這群人嗎？瞧一瞧。"),
+                n("e111f531", function (e) {
+                    return e.count + " 人已收聽";
+                }),
                 n("cbef820f", function (e) {
                     return e.screenName + " 已轉發此直播！";
                 }),
@@ -4923,9 +4924,9 @@
                 n("a532072a", "觀眾"),
                 n("d9508ab0", "次觀看"),
                 n("d9f9dec0", "查看音訊空間"),
-                n("h0c1f37a", "查看音訊空間分析"),
-                n("e41fffbc", "你影片的總觀看時間。");
-            n("if2909ba", "觀看時間"),
+                n("h0c1f37a", "查看音訊空間分析");
+            n("e41fffbc", "你影片的總觀看時間。"),
+                n("if2909ba", "觀看時間"),
                 n("i0e5bf4c", "你的影片"),
                 n("ed99baea", "搶先體驗 Beta 版"),
                 n("gf898b70", "進階搜尋"),
@@ -5877,9 +5878,9 @@
                     return "沒有與「" + e.query + "」相符的結果";
                 }),
                 n("f191a2ba", "搜尋設定"),
-                n("a068008a", "資料夾目前無法載入"),
-                n("f075b0e8", "編輯資料夾");
-            n("beba2a0e", "建立新的書籤資料夾"),
+                n("a068008a", "資料夾目前無法載入");
+            n("f075b0e8", "編輯資料夾"),
+                n("beba2a0e", "建立新的書籤資料夾"),
                 n("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
@@ -6883,9 +6884,9 @@
                 n("c05176ec", "如果此職位需要駐點工作，請輸入站點位置。如果此職位需要遠端工作，請描述應徵者可以位於何處。"),
                 n("d70c24d4", "用於協助應徵者搜尋你的工作。"),
                 n("de1c4376", "薪資範圍"),
-                n("hf352d42", "加入應徵者將看到的選擇性薪資範圍。如果你選擇不加入，請留意你僱用位置的任何薪資透明度法律。"),
-                n("ede7d0a2", "貨幣");
-            n("b925c18c", "薪資類型"),
+                n("hf352d42", "加入應徵者將看到的選擇性薪資範圍。如果你選擇不加入，請留意你僱用位置的任何薪資透明度法律。");
+            n("ede7d0a2", "貨幣"),
+                n("b925c18c", "薪資類型"),
                 n("j3d242ce", "無效範圍"),
                 n("f4d07bd2", "包括選擇性的詳細資料，以便應徵者更輕鬆地透過搜尋找到你的職位。"),
                 n("b8cbb51a", "工作摘要"),
@@ -7863,8 +7864,7 @@
                 n("ea000ec8", "已經取消訂閱了嗎？"),
                 n("d7b8387e", "如果你已經取消，則無需採取其他動作。你的訂閱將在計費周期結束時自動到期。"),
                 n("f4166d9a", "想要取消你的訂閱嗎？"),
-                n("b74ff5fc", "如果你取消，你的訂閱將在計費周期結束時自動到期。"),
-                n("ee9efbc8", "繼續取消");
+                n("b74ff5fc", "如果你取消，你的訂閱將在計費周期結束時自動到期。");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7903,7 +7903,8 @@
                     r(e, c)
                 );
             }
-            n("c5d9c77a", "似乎發生一個小問題。但別擔心，這不是你的錯。請關閉此視窗，然後再試一次。"),
+            n("ee9efbc8", "繼續取消"),
+                n("c5d9c77a", "似乎發生一個小問題。但別擔心，這不是你的錯。請關閉此視窗，然後再試一次。"),
                 n("jda53c24", "你可以透過 Apple App Store 取消訂閱。"),
                 n("g0a7a53e", "你可以透過 Google Play 商店取消訂閱。"),
                 n("i5f14be7", function (e) {
@@ -8899,13 +8900,13 @@
                 }),
                 n("g60001bb", function (e) {
                     return "查看 " + e.advertiserName;
-                }),
-                n("dff1ddd9", function (e) {
-                    return "前往 " + e.advertiserName;
                 });
-            n("b0b22805", function (e) {
-                return "造訪 " + e.advertiserName;
+            n("dff1ddd9", function (e) {
+                return "前往 " + e.advertiserName;
             }),
+                n("b0b22805", function (e) {
+                    return "造訪 " + e.advertiserName;
+                }),
                 n("c67e71aa", "立即觀看"),
                 n("a6ada13e", "立即購買"),
                 n("j0f12222", "查看更多"),
@@ -13375,4 +13376,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.83f3d57a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.7522538a.js.map

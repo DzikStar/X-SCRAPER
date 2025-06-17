@@ -16,14 +16,14 @@
                 u = s(470851),
                 p = s(202784),
                 x = s(533476),
-                h = s(658358),
-                f = s(950849),
+                f = s(658358),
+                h = s(950849),
                 g = s(595117),
                 v = s(134877),
-                C = s(455091),
+                C = s(263033),
                 w = s(962639),
-                y = s(731814),
-                E = s(466285),
+                E = s(731814),
+                y = s(466285),
                 b = s(193686),
                 j = s(157114),
                 k = s(517922),
@@ -54,22 +54,23 @@
                 return null === s ? null : (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)("div", { className: "flex flex-col gap-2 pb-2", children: (0, o.jsxs)("div", { className: "relative self-start", children: [s, e.showRemoveButton && (0, o.jsx)("div", { className: "absolute -top-2 -right-2", children: (0, o.jsx)(m.z, { variant: "primaryFilled", size: "xSmall", icon: (0, o.jsx)(a.Z, {}), onClick: t }) })] }) }), (0, o.jsx)("div", { className: "w-full h-px bg-gray-200 mb-2" })] });
             }
             function S({ replyingTo: e, onRemoveReply: t }) {
-                return (0, o.jsxs)("div", { className: "flex px-2.5 w-full items-center justify-between", children: [(0, o.jsxs)("div", { className: "flex gap-1", children: [e.senderInfo?.user?.displayName ? (0, o.jsxs)(i.x, { size: "subtext2", weight: "medium", color: "gray900", children: ["Replying to ", e.senderInfo.user.displayName] }) : null, (0, o.jsx)(i.x, { size: "subtext2", color: "gray500", children: e.textContent })] }), (0, o.jsx)(m.z, { variant: "primaryFilled", size: "xSmall", icon: (0, o.jsx)(a.Z, {}), onClick: t })] });
+                const { t: s } = (0, C.$G)();
+                return (0, o.jsxs)("div", { className: "flex px-2.5 w-full items-center justify-between", children: [(0, o.jsxs)("div", { className: "flex gap-1", children: [e.senderInfo?.user?.displayName ? (0, o.jsx)(i.x, { size: "subtext2", weight: "medium", color: "gray900", children: s("Replying to {name}", { name: e.senderInfo.user.displayName }) }) : null, (0, o.jsx)(i.x, { size: "subtext2", color: "gray500", children: e.textContent })] }), (0, o.jsx)(m.z, { variant: "primaryFilled", size: "xSmall", icon: (0, o.jsx)(a.Z, {}), onClick: t })] });
             }
             const T = n.com.x.dms.composer.composer.RightButtonState,
                 z = n.com.x.dms.composer.composer.ChatComposerEvent;
             function U({ component: e, showingMentionPicker: t }) {
                 const { t: s } = (0, C.$G)(),
-                    [y, E] = (0, p.useState)(!1),
+                    [E, y] = (0, p.useState)(!1),
                     b = (0, x._)(e.composer.state),
                     j = (0, p.useRef)(null),
                     k = (0, p.useRef)(null);
-                (0, h.e)(e.composer.toasts);
+                (0, f.e)(e.composer.toasts);
                 const R = (0, p.useCallback)(() => {
                         j.current?.focus();
                     }, []),
                     N = e.composer.triggerComposerFocusEvents;
-                (0, f.E)(N, R),
+                (0, h.E)(N, R),
                     (0, p.useEffect)(() => {
                         R();
                     }, [e]),
@@ -138,7 +139,7 @@
                                             },
                                             className: "flex-1",
                                             children: [
-                                                (0, o.jsx)(B, { component: e, showingMentionPicker: t, anchor: j.current }),
+                                                (0, o.jsx)(F, { component: e, showingMentionPicker: t, anchor: j.current }),
                                                 (0, o.jsxs)("div", {
                                                     className: "flex items-end gap-2 w-full px-2 overflow-hidden placeholder:text-gray-800 rounded-3xl border border-solid border-gray-200 bg-background/50",
                                                     children: [
@@ -156,7 +157,7 @@
                                                                             const t = e.state.state.chatItems.items.asJsReadonlyArrayView()[0];
                                                                             t && t instanceof n.com.x.dms.model.MessageItemSent && e.composer.onEvent(new n.com.x.dms.composer.composer.ChatComposerEvent.StartEditingMessage(t));
                                                                         }
-                                                                        "Escape" === s.key && b.isEditing && (s.preventDefault(), e.composer.onEvent(n.com.x.dms.composer.composer.ChatComposerEvent.DiscardEditDraft)), (!t || ("Enter" !== s.key && "ArrowDown" !== s.key && "ArrowUp" !== s.key)) && ("Enter" !== s.key || s.shiftKey || (s.preventDefault(), A()), ":" === s.key && (s.preventDefault(), E(!0)));
+                                                                        "Escape" === s.key && b.isEditing && (s.preventDefault(), e.composer.onEvent(n.com.x.dms.composer.composer.ChatComposerEvent.DiscardEditDraft)), (!t || ("Enter" !== s.key && "ArrowDown" !== s.key && "ArrowUp" !== s.key)) && ("Enter" !== s.key || s.shiftKey || (s.preventDefault(), A()), ":" === s.key && (s.preventDefault(), y(!0)));
                                                                     },
                                                                     onChange: (t) => {
                                                                         e.composer.onEvent(new n.com.x.dms.composer.composer.ChatComposerEvent.UserChangedText(t.target.value, t.target.selectionStart));
@@ -169,12 +170,12 @@
                                                         b.rightButton !== T.SendInactive ? (0, o.jsx)(m.z, { className: "mb-1", onClick: A, icon: (0, o.jsx)(l.Z, {}), size: "small", variant: "brandFilled" }) : void 0,
                                                         (0, o.jsx)(d.J, {
                                                             borderRadius: "2xLarge",
-                                                            open: y,
+                                                            open: E,
                                                             side: "top",
                                                             align: "start",
                                                             className: "p-0",
                                                             onOpenChange: (e) => {
-                                                                E(e), e || j.current?.focus();
+                                                                y(e), e || j.current?.focus();
                                                             },
                                                             trigger: (0, o.jsx)("div", { className: "absolute w-0 h-0 top-0" }),
                                                             children: (0, o.jsx)(u.h, {
@@ -186,6 +187,7 @@
                                                                     e.composer.onEvent(new n.com.x.dms.composer.composer.ChatComposerEvent.UserChangedText(r, o + t.length));
                                                                 },
                                                                 recentlyUsedEmojis: [],
+                                                                t: s,
                                                             }),
                                                         }),
                                                     ],
@@ -199,7 +201,7 @@
                     }),
                 });
             }
-            function B({ component: e, showingMentionPicker: t, anchor: s }) {
+            function F({ component: e, showingMentionPicker: t, anchor: s }) {
                 const [r, a] = (0, p.useState)(!!t),
                     [c, l] = (0, p.useState)(0),
                     i = (0, p.useRef)(null);
@@ -229,7 +231,7 @@
                                     const t = o[c];
                                     t &&
                                         setTimeout(() => {
-                                            e.onEvent(new n.com.x.dms.chat.DmEvent.TypeaheadUserClicked(t)), a(!1);
+                                            e.onEvent(new n.com.x.dms.chat.DmEvent.MentionPickerUserClicked(t)), a(!1);
                                         }, 0);
                                     break;
                                 }
@@ -250,7 +252,7 @@
                     }, [c]);
                 const m = t?.asJsReadonlyArrayView();
                 return s?.parentElement && m && 0 !== m.length
-                    ? (0, o.jsx)(y.Z, {
+                    ? (0, o.jsx)(E.Z, {
                           node: s.parentElement,
                           defaultOpen: !0,
                           onClose: () => a(!1),
@@ -263,7 +265,7 @@
                                       className: "absolute bottom-[calc(100%+1.5rem)] shadow-lg left-8 w-[380px] max-h-[450px] overflow-y-auto scrollbar-thin-custom bg-background rounded-2xl flex flex-col px-3 py-4 border",
                                       children: m.map((e, t) =>
                                           (0, o.jsx)(
-                                              E.a,
+                                              y.a,
                                               {
                                                   user: e,
                                                   onClick: () => {
@@ -281,11 +283,11 @@
             }
         },
         264531: (e, t, s) => {
-            s.d(t, { B$: () => r, BH: () => m, XE: () => i, mp: () => l, rF: () => u, tc: () => p, xq: () => d });
+            s.d(t, { B$: () => r, BH: () => m, VC: () => u, XE: () => i, mp: () => l, tc: () => p, xq: () => d });
             var o = s(552322),
                 n = s(202784);
             const r = { DEBUG: "DEBUG", INFO: "INFO", WARN: "WARN", ERROR: "ERROR" },
-                a = { path: "/dms", showDebugOptions: !1, logLevel: r.ERROR, bottomBarHeight: 0, newDBWorker: !1, rwebElements: void 0 },
+                a = { path: "/dms", showDebugOptions: !1, logLevel: r.ERROR, bottomBarHeight: 0, fsWorker: !1, rwebElements: void 0 },
                 c = (0, n.createContext)(null),
                 l = ({ children: e, settings: t }) => {
                     const s = { ...a, ...t };
@@ -303,7 +305,7 @@
                 return i().logLevel;
             }
             function u() {
-                return i().newDBWorker;
+                return i().fsWorker;
             }
             function p(e) {
                 const t = i();
@@ -312,4 +314,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-14817e23.f14cf72a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-14817e23.2e7926fa.js.map

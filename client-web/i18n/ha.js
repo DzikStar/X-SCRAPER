@@ -1314,7 +1314,8 @@
                 t("j77292b7", function (a) {
                     return "Please only select up to " + a.count + " file" + o(a.count, "", "s");
                 }),
-                t("cbc8fed4", "Was this translation accurate? Give us feedback so we can improve:"),
+                t("d6b533dc", "Rate this translation:"),
+                t("j2f9ab6e", "Thank you for your feedback!"),
                 t("d56779a2", "easy to understand"),
                 t("b6fe8a56", "confusing or unclear"),
                 t("i73a7d48", "Google ta fassara"),
@@ -1919,9 +1920,9 @@
                 t("i89195ea", "Divider"),
                 t("da8ac57c", "Edit Caption"),
                 t("a8fdd09c", "Publish Article"),
-                t("d8047cc8", "Buga"),
-                t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile.");
-            t("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
+                t("d8047cc8", "Buga");
+            t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                t("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
                 t("e52d4998", "Choose your audience"),
                 t("d7985b24", "Choose who can reply to this Article"),
                 t("b5660338", "Timeline preview"),
@@ -2975,9 +2976,9 @@
                 t("a7de64de", "Bayanin Talla"),
                 t("jb0a4c36", "Bulogi"),
                 t("ce6d095a", "Sana'o'i"),
-                t("e0adec82", "Albarkatun Samfuri"),
-                t("df1b7550", "Kasuwanci");
-            t("he258678", "X for Business"),
+                t("e0adec82", "Albarkatun Samfuri");
+            t("df1b7550", "Kasuwanci"),
+                t("he258678", "X for Business"),
                 t("c6f58084", "Masu samarwa"),
                 t("d83f18d2", "Jagora"),
                 t("hc5aa17c", "Get the X app"),
@@ -3887,11 +3888,11 @@
                 t("a2bf8b8a", "Switch to listening"),
                 t("caa8d928", "Toggle noise suppression"),
                 t("b5d88f0c", "Employees only"),
-                t("c855ab8e", "Masu rijistan biyan kaɗai"),
-                t("ddeb0a3c", "Ga Al'ummar. Ana son mutanen? Duba shi.");
-            t("e111f531", function (a) {
-                return a.count + " na sauraro";
-            }),
+                t("c855ab8e", "Masu rijistan biyan kaɗai");
+            t("ddeb0a3c", "Ga Al'ummar. Ana son mutanen? Duba shi."),
+                t("e111f531", function (a) {
+                    return a.count + " na sauraro";
+                }),
                 t("cbef820f", function (a) {
                     return a.screenName + " reposted the stream!";
                 }),
@@ -4927,9 +4928,9 @@
                 t("a532072a", "Viewers"),
                 t("d9508ab0", "views"),
                 t("d9f9dec0", "View Space"),
-                t("h0c1f37a", "View Space Analytics"),
-                t("e41fffbc", "The total watch time of your videos.");
-            t("if2909ba", "Watch Time"),
+                t("h0c1f37a", "View Space Analytics");
+            t("e41fffbc", "The total watch time of your videos."),
+                t("if2909ba", "Watch Time"),
                 t("i0e5bf4c", "Your videos"),
                 t("ed99baea", "Early Beta Access"),
                 t("gf898b70", "Advanced Search"),
@@ -5881,9 +5882,9 @@
                     return "Babu sakamako na " + a.query;
                 }),
                 t("f191a2ba", " Saitunan bincikenka"),
-                t("a068008a", "Folders aren`t loading right now"),
-                t("f075b0e8", "Gyara Folda");
-            t("beba2a0e", "Ƙirƙiri sabuwar Foldar Alama"),
+                t("a068008a", "Folders aren`t loading right now");
+            t("f075b0e8", "Gyara Folda"),
+                t("beba2a0e", "Ƙirƙiri sabuwar Foldar Alama"),
                 t("e41c9b4f", function (a) {
                     return "Ana dana a " + a.bookmarkFolderName;
                 }),
@@ -6887,9 +6888,9 @@
                 t("c05176ec", "If this role is onsite, enter the site location(s). If this role is remote, describe where candidates can be located."),
                 t("d70c24d4", "Used to help candidates search for your job."),
                 t("de1c4376", "Salary Range"),
-                t("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for."),
-                t("ede7d0a2", "Currency");
-            t("b925c18c", "Salary Type"),
+                t("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for.");
+            t("ede7d0a2", "Currency"),
+                t("b925c18c", "Salary Type"),
                 t("j3d242ce", "Invalid range"),
                 t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
                 t("b8cbb51a", "Job Summary"),
@@ -7867,8 +7868,7 @@
                 t("ea000ec8", "An riga an soke Rijistarka ne?"),
                 t("d7b8387e", "Idan ka riga ka soke, babu komai da za a yi kuma. Rijistarka za ta ƙare ta kai tsaye a ƙarshen lokacin lissafin caji kuɗi."),
                 t("f4166d9a", "Kana son ka soke Rijistarka ne?"),
-                t("b74ff5fc", "Idan ka soke, Rijistarka za ta ƙare kai tsaye a ƙarshen lokacin lissafin caji kuɗi."),
-                t("ee9efbc8", "Ci gaba da sokewa");
+                t("b74ff5fc", "Idan ka soke, Rijistarka za ta ƙare kai tsaye a ƙarshen lokacin lissafin caji kuɗi.");
             function r(a, e) {
                 for (var n = 0; n < e.length; n++) {
                     var t = e[n];
@@ -7907,7 +7907,8 @@
                     u(a, e)
                 );
             }
-            t("c5d9c77a", "Da alama an samu ɗan matsala. Kada ka damu amma, ba laifinka ba ne. Rufe wannan taga sai ka sake gwadawa."),
+            t("ee9efbc8", "Ci gaba da sokewa"),
+                t("c5d9c77a", "Da alama an samu ɗan matsala. Kada ka damu amma, ba laifinka ba ne. Rufe wannan taga sai ka sake gwadawa."),
                 t("jda53c24", "Za ka iya soke Rijistarka ta hanyar Apple App Store."),
                 t("g0a7a53e", "Za ka iya soke Rijistarka ta hanyar Google Play Store."),
                 t("i5f14be7", function (a) {
@@ -8903,13 +8904,13 @@
                 }),
                 t("g60001bb", function (a) {
                     return "See " + a.advertiserName;
-                }),
-                t("dff1ddd9", function (a) {
-                    return "Go to " + a.advertiserName;
                 });
-            t("b0b22805", function (a) {
-                return "Visit " + a.advertiserName;
+            t("dff1ddd9", function (a) {
+                return "Go to " + a.advertiserName;
             }),
+                t("b0b22805", function (a) {
+                    return "Visit " + a.advertiserName;
+                }),
                 t("c67e71aa", "Watch now"),
                 t("a6ada13e", "Shop now"),
                 t("j0f12222", "Ga ƙari"),
@@ -13369,4 +13370,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.12ec259a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.5063f1ba.js.map

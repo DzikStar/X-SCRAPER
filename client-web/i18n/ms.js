@@ -1310,7 +1310,8 @@
                 i("j77292b7", function (a) {
                     return "Hanya pilih sehingga " + a.count + " fail";
                 }),
-                i("cbc8fed4", "Adakah terjemahan ini tepat? Beri maklum balas kepada kami supaya kami boleh melakukan penambahbaikan:"),
+                i("d6b533dc", "Rate this translation:"),
+                i("j2f9ab6e", "Thank you for your feedback!"),
                 i("d56779a2", "mudah untuk difahami"),
                 i("b6fe8a56", "mengelirukan atau tidak jelas"),
                 i("i73a7d48", "Diterjemahkan oleh Google"),
@@ -1915,9 +1916,9 @@
                 i("i89195ea", "Pembahagi"),
                 i("da8ac57c", "Edit Kapsyen"),
                 i("a8fdd09c", "Terbitkan Artikel"),
-                i("d8047cc8", "Terbitkan"),
-                i("ff7ddca2", "Artikel anda akan muncul sebagai siaran sebaik sahaja diterbitkan. Anda juga boleh menemukan Artikel itu di bawah tab Artikel pada profil anda.");
-            i("ef34d7be", "Kawalan khalayak dan balasan tidak dapat diedit selepas sesebuah artikel diterbitkan."),
+                i("d8047cc8", "Terbitkan");
+            i("ff7ddca2", "Artikel anda akan muncul sebagai siaran sebaik sahaja diterbitkan. Anda juga boleh menemukan Artikel itu di bawah tab Artikel pada profil anda."),
+                i("ef34d7be", "Kawalan khalayak dan balasan tidak dapat diedit selepas sesebuah artikel diterbitkan."),
                 i("e52d4998", "Pilih khalayak anda"),
                 i("d7985b24", "Pilih orang yang boleh membalas kepada Artikel ini"),
                 i("b5660338", "Pratonton Garis masa"),
@@ -2971,9 +2972,9 @@
                 i("a7de64de", "Maklumat iklan"),
                 i("jb0a4c36", "Blog"),
                 i("ce6d095a", "Karier"),
-                i("e0adec82", "Sumber Jenama"),
-                i("df1b7550", "Pemasaran");
-            i("he258678", "X untuk Perniagaan"),
+                i("e0adec82", "Sumber Jenama");
+            i("df1b7550", "Pemasaran"),
+                i("he258678", "X untuk Perniagaan"),
                 i("c6f58084", "Pembangun"),
                 i("d83f18d2", "Direktori"),
                 i("hc5aa17c", "Dapatkan aplikasi X"),
@@ -3883,11 +3884,11 @@
                 i("a2bf8b8a", "Bertukar kepada mendengar"),
                 i("caa8d928", "Togol penindasan hingar"),
                 i("b5d88f0c", "Pekerja sahaja"),
-                i("c855ab8e", "Pelanggan sahaja"),
-                i("ddeb0a3c", "Inilah Komuniti itu. Suka orang dalam Komuniti ini? Sila lihat.");
-            i("e111f531", function (a) {
-                return a.count + " turut serta";
-            }),
+                i("c855ab8e", "Pelanggan sahaja");
+            i("ddeb0a3c", "Inilah Komuniti itu. Suka orang dalam Komuniti ini? Sila lihat."),
+                i("e111f531", function (a) {
+                    return a.count + " turut serta";
+                }),
                 i("cbef820f", function (a) {
                     return a.screenName + " menyiarkan semula strim!";
                 }),
@@ -4923,9 +4924,9 @@
                 i("a532072a", "Penonton"),
                 i("d9508ab0", "tontonan"),
                 i("d9f9dec0", "Lihat Space"),
-                i("h0c1f37a", "Lihat Analitis Space"),
-                i("e41fffbc", "Jumlah masa tontonan video anda.");
-            i("if2909ba", "Masa Tontonan"),
+                i("h0c1f37a", "Lihat Analitis Space");
+            i("e41fffbc", "Jumlah masa tontonan video anda."),
+                i("if2909ba", "Masa Tontonan"),
                 i("i0e5bf4c", "Video anda"),
                 i("ed99baea", "Akses Beta Awal"),
                 i("gf898b70", "Carian Lanjutan"),
@@ -5877,9 +5878,9 @@
                     return "Tiada hasil untuk " + a.query;
                 }),
                 i("f191a2ba", "Tetapan carian"),
-                i("a068008a", "Folder tidak dimuatkan pada masa sekarang"),
-                i("f075b0e8", "Edit Folder");
-            i("beba2a0e", "Cipta Folder Bookmark baharu"),
+                i("a068008a", "Folder tidak dimuatkan pada masa sekarang");
+            i("f075b0e8", "Edit Folder"),
+                i("beba2a0e", "Cipta Folder Bookmark baharu"),
                 i("e41c9b4f", function (a) {
                     return "Saved to " + a.bookmarkFolderName;
                 }),
@@ -6883,9 +6884,9 @@
                 i("c05176ec", "Jika peranan ini di tapak, masukkan lokasi tapak tersebut. Jika peranan ini adalah secara jarak jauh, terangkan lokasi yang dibenarkan untuk calon."),
                 i("d70c24d4", "Digunakan untuk membantu calon mencari pekerjaan anda."),
                 i("de1c4376", "Julat Gaji"),
-                i("hf352d42", "Tambahkan julat gaji pilihan yang boleh dilihat oleh calon. Jika anda memilih untuk tidak berbuat demikian, anda perlu mengambil maklum dengan sebarang undang-undang ketelusan gaji di lokasi anda membuat pengambilan pekerja."),
-                i("ede7d0a2", "Mata wang");
-            i("b925c18c", "Jenis Gaji"),
+                i("hf352d42", "Tambahkan julat gaji pilihan yang boleh dilihat oleh calon. Jika anda memilih untuk tidak berbuat demikian, anda perlu mengambil maklum dengan sebarang undang-undang ketelusan gaji di lokasi anda membuat pengambilan pekerja.");
+            i("ede7d0a2", "Mata wang"),
+                i("b925c18c", "Jenis Gaji"),
                 i("j3d242ce", "Julat tidak sah"),
                 i("f4d07bd2", "Sertakan butiran pilihan untuk memudahkan calon menemukan peranan anda dengan carian."),
                 i("b8cbb51a", "Ringkasan Pekerjaan"),
@@ -7863,8 +7864,7 @@
                 i("ea000ec8", "Sudah pun membatalkan Langganan anda?"),
                 i("d7b8387e", "Jika anda sudah pun membuat pembatalan, tiada apa-apa lagi yang perlu dilakukan. Langganan anda akan tamat tempoh secara automatik pada penghujung kitaran pengebilan."),
                 i("f4166d9a", "Ingin membatalkan Langganan anda?"),
-                i("b74ff5fc", "Jika anda membuat pembatalan, Langganan anda akan tamat tempoh secara automatik pada penghujung kitaran pengebilan."),
-                i("ee9efbc8", "Teruskan ke pembatalan");
+                i("b74ff5fc", "Jika anda membuat pembatalan, Langganan anda akan tamat tempoh secara automatik pada penghujung kitaran pengebilan.");
             function u(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7903,7 +7903,8 @@
                     d(a, n)
                 );
             }
-            i("c5d9c77a", "Nampaknya terdapat sedikit masalah. Jangan bimbang, ini bukan salah anda. Tutup tetingkap ini dan cuba lagi."),
+            i("ee9efbc8", "Teruskan ke pembatalan"),
+                i("c5d9c77a", "Nampaknya terdapat sedikit masalah. Jangan bimbang, ini bukan salah anda. Tutup tetingkap ini dan cuba lagi."),
                 i("jda53c24", "Anda boleh membatalkan Langganan anda melalui Apple App Store."),
                 i("g0a7a53e", "Anda boleh membatalkan Langganan anda melalui Google Play Store."),
                 i("i5f14be7", function (a) {
@@ -8899,13 +8900,13 @@
                 }),
                 i("g60001bb", function (a) {
                     return "Lihat " + a.advertiserName;
-                }),
-                i("dff1ddd9", function (a) {
-                    return "Pergi ke " + a.advertiserName;
                 });
-            i("b0b22805", function (a) {
-                return "Lawati " + a.advertiserName;
+            i("dff1ddd9", function (a) {
+                return "Pergi ke " + a.advertiserName;
             }),
+                i("b0b22805", function (a) {
+                    return "Lawati " + a.advertiserName;
+                }),
                 i("c67e71aa", "Tonton sekarang"),
                 i("a6ada13e", "Beli sekarang"),
                 i("j0f12222", "Lihat lagi"),
@@ -13365,4 +13366,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.8103d06a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.1252a42a.js.map

@@ -1311,7 +1311,8 @@
                 s("j77292b7", function (e) {
                     return "Selecione somente até " + e.count + " arquivo" + r(e.count, "", "s");
                 }),
-                s("cbc8fed4", "Essa tradução está exata? Faça o seu comentário para conseguirmos melhorar:"),
+                s("d6b533dc", "Rate this translation:"),
+                s("j2f9ab6e", "Thank you for your feedback!"),
                 s("d56779a2", "fácil de entender"),
                 s("b6fe8a56", "confuso ou pouco claro"),
                 s("i73a7d48", "Traduzido pelo Google"),
@@ -1916,9 +1917,9 @@
                 s("i89195ea", "Divider"),
                 s("da8ac57c", "Editar legenda"),
                 s("a8fdd09c", "Publicar Artigo"),
-                s("d8047cc8", "Publicar"),
-                s("ff7ddca2", "Seu Artigo será exibido como post depois da publicação. Além disso, encontre sob a guia Artigos no seu perfil.");
-            s("ef34d7be", "Os controles de audiência e resposta não são editados depois de o Artigo ser publicado."),
+                s("d8047cc8", "Publicar");
+            s("ff7ddca2", "Seu Artigo será exibido como post depois da publicação. Além disso, encontre sob a guia Artigos no seu perfil."),
+                s("ef34d7be", "Os controles de audiência e resposta não são editados depois de o Artigo ser publicado."),
                 s("e52d4998", "Escolha sua audiência"),
                 s("d7985b24", "Escolha quem pode responder a este Artigo"),
                 s("b5660338", "Visualização da Timeline"),
@@ -2972,9 +2973,9 @@
                 s("a7de64de", "Informações de anúncios"),
                 s("jb0a4c36", "Blog"),
                 s("ce6d095a", "Carreiras"),
-                s("e0adec82", "Recursos da marca"),
-                s("df1b7550", "Marketing");
-            s("he258678", "X para Empresas"),
+                s("e0adec82", "Recursos da marca");
+            s("df1b7550", "Marketing"),
+                s("he258678", "X para Empresas"),
                 s("c6f58084", "Desenvolvedores"),
                 s("d83f18d2", "Diretório"),
                 s("hc5aa17c", "Baixar o aplicativo X"),
@@ -3884,11 +3885,11 @@
                 s("a2bf8b8a", "Trocar para áudio"),
                 s("caa8d928", "Ativar/desativar supressão de ruído"),
                 s("b5d88f0c", "Somente funcionários"),
-                s("c855ab8e", "Exclusivo para Assinantes"),
-                s("ddeb0a3c", "Aqui está a Comunidade. Gosta das pessoas? Dê uma olhada.");
-            s("e111f531", function (e) {
-                return e.count + " sintoniz" + r(e.count, "ou", "aram");
-            }),
+                s("c855ab8e", "Exclusivo para Assinantes");
+            s("ddeb0a3c", "Aqui está a Comunidade. Gosta das pessoas? Dê uma olhada."),
+                s("e111f531", function (e) {
+                    return e.count + " sintoniz" + r(e.count, "ou", "aram");
+                }),
                 s("cbef820f", function (e) {
                     return e.screenName + " repostou a transmissão!";
                 }),
@@ -4924,9 +4925,9 @@
                 s("a532072a", "Espectadores"),
                 s("d9508ab0", "visualizações"),
                 s("d9f9dec0", "Ver espaço"),
-                s("h0c1f37a", "Ver estatísticas do espaço"),
-                s("e41fffbc", "O tempo total de exibição dos seus vídeos.");
-            s("if2909ba", "Tempo de exibição"),
+                s("h0c1f37a", "Ver estatísticas do espaço");
+            s("e41fffbc", "O tempo total de exibição dos seus vídeos."),
+                s("if2909ba", "Tempo de exibição"),
                 s("i0e5bf4c", "Seus vídeos"),
                 s("ed99baea", "Acesso Beta Antecipado"),
                 s("gf898b70", "Busca Avançada"),
@@ -5878,9 +5879,9 @@
                     return "Nenhum resultado para " + e.query;
                 }),
                 s("f191a2ba", "configurações de busca"),
-                s("a068008a", "As pastas não estão carregando no momento."),
-                s("f075b0e8", "Editar pasta");
-            s("beba2a0e", "Criar uma nova pasta de itens salvos"),
+                s("a068008a", "As pastas não estão carregando no momento.");
+            s("f075b0e8", "Editar pasta"),
+                s("beba2a0e", "Criar uma nova pasta de itens salvos"),
                 s("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
@@ -6884,9 +6885,9 @@
                 s("c05176ec", "Se a vaga for interna, insira o local. Se a vaga for remota, descreva onde os candidatos podem estar localizados."),
                 s("d70c24d4", "Usado para ajudar os candidatos a buscarem sua vaga."),
                 s("de1c4376", "Faixa salarial"),
-                s("hf352d42", "Adicione uma faixa salarial opcional que será visível aos candidatos. Se optar por não fazer isso, observe quaisquer leis de transparência sobre pagamentos do local onde estiver contratando."),
-                s("ede7d0a2", "Moeda");
-            s("b925c18c", "Tipo de salário"),
+                s("hf352d42", "Adicione uma faixa salarial opcional que será visível aos candidatos. Se optar por não fazer isso, observe quaisquer leis de transparência sobre pagamentos do local onde estiver contratando.");
+            s("ede7d0a2", "Moeda"),
+                s("b925c18c", "Tipo de salário"),
                 s("j3d242ce", "Faixa inválida"),
                 s("f4d07bd2", "Inclua detalhes opcionais para facilitar que os candidatos visualizem suas vagas mediante busca."),
                 s("b8cbb51a", "Resumo da vaga"),
@@ -7864,8 +7865,7 @@
                 s("ea000ec8", "Já cancelou sua Assinatura?"),
                 s("d7b8387e", "Se você já tiver cancelado, não há mais nada a fazer. Sua Assinatura vai expirar automaticamente ao final do ciclo de faturamento."),
                 s("f4166d9a", "Deseja cancelar a Assinatura?"),
-                s("b74ff5fc", "Se você cancelar, sua Assinatura vai expirar automaticamente ao final do ciclo de faturamento."),
-                s("ee9efbc8", "Continue para fazer o cancelamento");
+                s("b74ff5fc", "Se você cancelar, sua Assinatura vai expirar automaticamente ao final do ciclo de faturamento.");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var s = a[o];
@@ -7904,7 +7904,8 @@
                     n(e, a)
                 );
             }
-            s("c5d9c77a", "Parece que houve algum problema. Mas não se preocupe, não é sua culpa. Feche esta janela e tente novamente."),
+            s("ee9efbc8", "Continue para fazer o cancelamento"),
+                s("c5d9c77a", "Parece que houve algum problema. Mas não se preocupe, não é sua culpa. Feche esta janela e tente novamente."),
                 s("jda53c24", "Você pode cancelar a Assinatura pela Apple App Store."),
                 s("g0a7a53e", "Você pode cancelar a Assinatura pela Google Play Store."),
                 s("i5f14be7", function (e) {
@@ -8900,13 +8901,13 @@
                 }),
                 s("g60001bb", function (e) {
                     return "Veja " + e.advertiserName;
-                }),
-                s("dff1ddd9", function (e) {
-                    return "Vá para " + e.advertiserName;
                 });
-            s("b0b22805", function (e) {
-                return "Visite " + e.advertiserName;
+            s("dff1ddd9", function (e) {
+                return "Vá para " + e.advertiserName;
             }),
+                s("b0b22805", function (e) {
+                    return "Visite " + e.advertiserName;
+                }),
                 s("c67e71aa", "Assista agora"),
                 s("a6ada13e", "Comprar agora"),
                 s("j0f12222", "Ver mais"),
@@ -13367,4 +13368,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.91d946da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.982a566a.js.map

@@ -1310,7 +1310,8 @@
                 s("j77292b7", function (e) {
                     return "Max. " + e.count + " fájlt válassz ki!";
                 }),
-                s("cbc8fed4", "Pontos volt a fordítás? Küldd el a visszajelzésed, hogy fejlődhessünk:"),
+                s("d6b533dc", "Rate this translation:"),
+                s("j2f9ab6e", "Thank you for your feedback!"),
                 s("d56779a2", "könnyen érthető"),
                 s("b6fe8a56", "zavaros vagy nem világos"),
                 s("i73a7d48", "A Google fordítása"),
@@ -1915,9 +1916,9 @@
                 s("i89195ea", "Elválasztó"),
                 s("da8ac57c", "Felirat szerkesztése"),
                 s("a8fdd09c", "Cikk közzététele"),
-                s("d8047cc8", "Közzététel"),
-                s("ff7ddca2", "A Cikked a közzétételt követően bejegyzésként jelenik meg. Ezenkívül a profilod Cikkek részén is megtalálod.");
-            s("ef34d7be", "A célközönség és a válaszok beállításai a cikk közzététele után már nem módosíthatók."),
+                s("d8047cc8", "Közzététel");
+            s("ff7ddca2", "A Cikked a közzétételt követően bejegyzésként jelenik meg. Ezenkívül a profilod Cikkek részén is megtalálod."),
+                s("ef34d7be", "A célközönség és a válaszok beállításai a cikk közzététele után már nem módosíthatók."),
                 s("e52d4998", "Célközönség kiválasztása"),
                 s("d7985b24", "Válaszd ki, hogy ki válaszolhat erre a Cikkre"),
                 s("b5660338", "Idővonal előnézete"),
@@ -2971,9 +2972,9 @@
                 s("a7de64de", "Hirdetési információk"),
                 s("jb0a4c36", "Blog"),
                 s("ce6d095a", "Karrier"),
-                s("e0adec82", "Márkaanyagok"),
-                s("df1b7550", "Marketing");
-            s("he258678", "X üzleti célra"),
+                s("e0adec82", "Márkaanyagok");
+            s("df1b7550", "Marketing"),
+                s("he258678", "X üzleti célra"),
                 s("c6f58084", "Fejlesztők"),
                 s("d83f18d2", "Könyvtár"),
                 s("hc5aa17c", "Az X alkalmazás letöltése"),
@@ -3883,11 +3884,11 @@
                 s("a2bf8b8a", "Átváltás hallgatásra"),
                 s("caa8d928", "Zajcsökkentés váltása"),
                 s("b5d88f0c", "Csak munkatársak"),
-                s("c855ab8e", "Csak előfizetőknek"),
-                s("ddeb0a3c", "Itt a Közösség. Szimpatikusak az emberek? Nézz szét!");
-            s("e111f531", function (e) {
-                return e.count + " ember hallgatta";
-            }),
+                s("c855ab8e", "Csak előfizetőknek");
+            s("ddeb0a3c", "Itt a Közösség. Szimpatikusak az emberek? Nézz szét!"),
+                s("e111f531", function (e) {
+                    return e.count + " ember hallgatta";
+                }),
                 s("cbef820f", function (e) {
                     return e.screenName + " újraposztolta a streamet.";
                 }),
@@ -4923,9 +4924,9 @@
                 s("a532072a", "Nézők"),
                 s("d9508ab0", "megtekintés"),
                 s("d9f9dec0", "Tér megtekintése"),
-                s("h0c1f37a", "A Tér adatainak megtekintése"),
-                s("e41fffbc", "A videóid teljes megtekintési ideje.");
-            s("if2909ba", "Megtekintési idő"),
+                s("h0c1f37a", "A Tér adatainak megtekintése");
+            s("e41fffbc", "A videóid teljes megtekintési ideje."),
+                s("if2909ba", "Megtekintési idő"),
                 s("i0e5bf4c", "Saját videók"),
                 s("ed99baea", "Korai bétahozzáférés"),
                 s("gf898b70", "Összetett keresés"),
@@ -5877,9 +5878,9 @@
                     return "Nincs találat erre: " + e.query;
                 }),
                 s("f191a2ba", "Keresési beállításokban"),
-                s("a068008a", "A mappák jelenleg nem tölthetők be"),
-                s("f075b0e8", "Mappa szerkesztése");
-            s("beba2a0e", "Új könyvjelzőmappa létrehozása"),
+                s("a068008a", "A mappák jelenleg nem tölthetők be");
+            s("f075b0e8", "Mappa szerkesztése"),
+                s("beba2a0e", "Új könyvjelzőmappa létrehozása"),
                 s("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
@@ -6883,9 +6884,9 @@
                 s("c05176ec", "Ha ez egy helyhez kötött munka, akkor add meg a munkavégzés helyszínét. Ha távmunkáról van szó, írd le, hogy hol élő jelöltek jöhetnek szóba."),
                 s("d70c24d4", "Arra való, hogy a jelöltek könnyebben megkereshessék az álláshirdetéseidet."),
                 s("de1c4376", "Fizetési sáv"),
-                s("hf352d42", "Adj meg egy opcionális fizetési sávot, amit a pályázók láthatnak. Ha úgy döntesz, nem adod meg, ügyelj a fizetések átláthatóságával kapcsolatos törvényekre a toborzás helyén."),
-                s("ede7d0a2", "Pénznem");
-            s("b925c18c", "Fizetés típusa"),
+                s("hf352d42", "Adj meg egy opcionális fizetési sávot, amit a pályázók láthatnak. Ha úgy döntesz, nem adod meg, ügyelj a fizetések átláthatóságával kapcsolatos törvényekre a toborzás helyén.");
+            s("ede7d0a2", "Pénznem"),
+                s("b925c18c", "Fizetés típusa"),
                 s("j3d242ce", "Érvénytelen sáv"),
                 s("f4d07bd2", "Adj meg opcionális adatokat, hogy a jelöltek könnyebben megtalálhassák az álláslehetőségeket a kereső segítségével."),
                 s("b8cbb51a", "Munka leírása"),
@@ -7863,8 +7864,7 @@
                 s("ea000ec8", "Már törölted az Előfizetésedet?"),
                 s("d7b8387e", "Ha már lemondtad, nem kell mást tenned. Az Előfizetésed automatikusan lejár a számlázási ciklus végén."),
                 s("f4166d9a", "Le szeretnéd mondani az Előfizetésedet?"),
-                s("b74ff5fc", "Ha lemondod, az Előfizetésed automatikusan lejár a számlázási ciklus végén."),
-                s("ee9efbc8", "Folytatás a lemondáshoz");
+                s("b74ff5fc", "Ha lemondod, az Előfizetésed automatikusan lejár a számlázási ciklus végén.");
             function n(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var s = t[a];
@@ -7903,7 +7903,8 @@
                     z(e, t)
                 );
             }
-            s("c5d9c77a", "Úgy tűnik, volt egy kis gond, de ne aggódj, ez nem a te hibád. Zárd be ezt az ablakot, és próbálkozz újra!"),
+            s("ee9efbc8", "Folytatás a lemondáshoz"),
+                s("c5d9c77a", "Úgy tűnik, volt egy kis gond, de ne aggódj, ez nem a te hibád. Zárd be ezt az ablakot, és próbálkozz újra!"),
                 s("jda53c24", "Az Előfizetésedet az Apple App Store áruházban mondhatod le."),
                 s("g0a7a53e", "Az Előfizetésedet a Google Play Áruházban mondhatod le."),
                 s("i5f14be7", function (e) {
@@ -8899,13 +8900,13 @@
                 }),
                 s("g60001bb", function (e) {
                     return "A(z) " + e.advertiserName + " megtekintése";
-                }),
-                s("dff1ddd9", function (e) {
-                    return "A(z) " + e.advertiserName + " meglátogatása";
                 });
-            s("b0b22805", function (e) {
-                return "A(z) " + e.advertiserName + " megtekintése";
+            s("dff1ddd9", function (e) {
+                return "A(z) " + e.advertiserName + " meglátogatása";
             }),
+                s("b0b22805", function (e) {
+                    return "A(z) " + e.advertiserName + " megtekintése";
+                }),
                 s("c67e71aa", "Nézd meg most!"),
                 s("a6ada13e", "Vásárolj most"),
                 s("j0f12222", "Továbbiak megtekintése"),
@@ -13375,4 +13376,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.68873c0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.f2bde59a.js.map

@@ -1322,7 +1322,8 @@
                 t("j77292b7", function (e) {
                     return "Selectează maximum " + e.count + " fișier" + r(e.count, "e", "", "e");
                 }),
-                t("cbc8fed4", "Traducerea a fost fidelă? Spune-ne ce crezi pentru a o putea îmbunătăți:"),
+                t("d6b533dc", "Rate this translation:"),
+                t("j2f9ab6e", "Thank you for your feedback!"),
                 t("d56779a2", "ușor de înțeles"),
                 t("b6fe8a56", "confuză și neclară"),
                 t("i73a7d48", "Tradus de Google"),
@@ -1927,9 +1928,9 @@
                 t("i89195ea", "Separator"),
                 t("da8ac57c", "Editează legenda"),
                 t("a8fdd09c", "Publică articolul"),
-                t("d8047cc8", "Publică"),
-                t("ff7ddca2", "După publicare, articolul va apărea ca postare. Îl vei găsi și în fila Articole de pe profilul tău.");
-            t("ef34d7be", "Publicul și controalele asupra răspunsurilor nu se pot edita după publicarea articolului."),
+                t("d8047cc8", "Publică");
+            t("ff7ddca2", "După publicare, articolul va apărea ca postare. Îl vei găsi și în fila Articole de pe profilul tău."),
+                t("ef34d7be", "Publicul și controalele asupra răspunsurilor nu se pot edita după publicarea articolului."),
                 t("e52d4998", "Alege-ți publicul"),
                 t("d7985b24", "Alege cine poate răspunde la acest articol"),
                 t("b5660338", "Previzualizare Cronologie"),
@@ -2983,9 +2984,9 @@
                 t("a7de64de", "Informații despre reclame"),
                 t("jb0a4c36", "Blog"),
                 t("ce6d095a", "Cariere"),
-                t("e0adec82", "Resurse pentru branduri"),
-                t("df1b7550", "Marketing");
-            t("he258678", "X pentru afaceri"),
+                t("e0adec82", "Resurse pentru branduri");
+            t("df1b7550", "Marketing"),
+                t("he258678", "X pentru afaceri"),
                 t("c6f58084", "Dezvoltatori"),
                 t("d83f18d2", "Director"),
                 t("hc5aa17c", "Obţine aplicația X"),
@@ -3895,11 +3896,11 @@
                 t("a2bf8b8a", "Comută la ascultare"),
                 t("caa8d928", "Comută Anulare zgomot"),
                 t("b5d88f0c", "Doar angajați"),
-                t("c855ab8e", "Doar Abonați"),
-                t("ddeb0a3c", "Aceasta este Comunitatea. Îți plac membrii? Aruncă o privire.");
-            t("e111f531", function (e) {
-                return e.count + " a" + r(e.count, "u", "", "u") + " urmărit";
-            }),
+                t("c855ab8e", "Doar Abonați");
+            t("ddeb0a3c", "Aceasta este Comunitatea. Îți plac membrii? Aruncă o privire."),
+                t("e111f531", function (e) {
+                    return e.count + " a" + r(e.count, "u", "", "u") + " urmărit";
+                }),
                 t("cbef820f", function (e) {
                     return e.screenName + " a repostat fluxul!";
                 }),
@@ -4935,9 +4936,9 @@
                 t("a532072a", "Spectatori"),
                 t("d9508ab0", "vizualizări"),
                 t("d9f9dec0", "Vezi Spațiu"),
-                t("h0c1f37a", "Vezi Analiză Spațiu"),
-                t("e41fffbc", "Durata totală de vizionare a videoclipurilor.");
-            t("if2909ba", "Durată vizionare"),
+                t("h0c1f37a", "Vezi Analiză Spațiu");
+            t("e41fffbc", "Durata totală de vizionare a videoclipurilor."),
+                t("if2909ba", "Durată vizionare"),
                 t("i0e5bf4c", "Videoclipurile tale"),
                 t("ed99baea", "Acces timpuriu la versiunea beta"),
                 t("gf898b70", "Căutare avansată"),
@@ -5889,9 +5890,9 @@
                     return "Nu sunt rezultate pentru " + e.query;
                 }),
                 t("f191a2ba", "Setările de căutare"),
-                t("a068008a", "Folderele nu se încarcă momentan"),
-                t("f075b0e8", "Editează folderul");
-            t("beba2a0e", "Creează un nou folder cu Marcaje"),
+                t("a068008a", "Folderele nu se încarcă momentan");
+            t("f075b0e8", "Editează folderul"),
+                t("beba2a0e", "Creează un nou folder cu Marcaje"),
                 t("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
@@ -6895,9 +6896,9 @@
                 t("c05176ec", "Dacă postul este într-un sediu, introdu locațiile respective. Dacă postul este la distanță, descrie unde se pot afla candidații."),
                 t("d70c24d4", "Utilizat pentru a-i ajuta pe candidați să caute locul de muncă."),
                 t("de1c4376", "Interval salarial"),
-                t("hf352d42", "Adaugă opțional un interval salarial pe care candidații să îl poată vedea. Dacă alegi să nu incluzi acest lucru, ai în vedere legile privind transparența remunerațiilor în locul pentru care dorești să angajezi persoane."),
-                t("ede7d0a2", "Monedă");
-            t("b925c18c", "Tip de salarizare"),
+                t("hf352d42", "Adaugă opțional un interval salarial pe care candidații să îl poată vedea. Dacă alegi să nu incluzi acest lucru, ai în vedere legile privind transparența remunerațiilor în locul pentru care dorești să angajezi persoane.");
+            t("ede7d0a2", "Monedă"),
+                t("b925c18c", "Tip de salarizare"),
                 t("j3d242ce", "Interval nevalid"),
                 t("f4d07bd2", "Include detalii opționale pentru a-i ajuta pe candidați să descopere posturile cu opțiunea de căutare."),
                 t("b8cbb51a", "Rezumatul locului de muncă"),
@@ -7875,8 +7876,7 @@
                 t("ea000ec8", "Ți-ai anulat deja Abonamentul?"),
                 t("d7b8387e", "Dacă ai anulat deja Abonamentul, nu mai poți face nimic. Abonamentul tău va expira automat la sfârșitul ciclului de facturare."),
                 t("f4166d9a", "Vrei să îți anulezi Abonamentul?"),
-                t("b74ff5fc", "Dacă anulezi, Abonamentul tău va expira automat la sfârșitul ciclului de facturare."),
-                t("ee9efbc8", "Continuă spre anulare");
+                t("b74ff5fc", "Dacă anulezi, Abonamentul tău va expira automat la sfârșitul ciclului de facturare.");
             function c(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7915,7 +7915,8 @@
                     u(e, a)
                 );
             }
-            t("c5d9c77a", "Se pare că a fost o mică problemă. Dar nu-ți face griji, nu este din vina ta. Închide această fereastră și încearcă din nou."),
+            t("ee9efbc8", "Continuă spre anulare"),
+                t("c5d9c77a", "Se pare că a fost o mică problemă. Dar nu-ți face griji, nu este din vina ta. Închide această fereastră și încearcă din nou."),
                 t("jda53c24", "Îți poți anula Abonamentul prin Apple App Store."),
                 t("g0a7a53e", "Îți poți anula Abonamentul prin Magazinul Google Play."),
                 t("i5f14be7", function (e) {
@@ -8911,13 +8912,13 @@
                 }),
                 t("g60001bb", function (e) {
                     return "Vezi " + e.advertiserName;
-                }),
-                t("dff1ddd9", function (e) {
-                    return "Accesează " + e.advertiserName;
                 });
-            t("b0b22805", function (e) {
-                return "Vizitează " + e.advertiserName;
+            t("dff1ddd9", function (e) {
+                return "Accesează " + e.advertiserName;
             }),
+                t("b0b22805", function (e) {
+                    return "Vizitează " + e.advertiserName;
+                }),
                 t("c67e71aa", "Urmărește acum"),
                 t("a6ada13e", "Cumpără acum"),
                 t("j0f12222", "Vezi mai multe"),
@@ -13380,4 +13381,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.51b6fd2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.2642c39a.js.map

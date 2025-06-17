@@ -626,7 +626,8 @@
                         n.e("bundle.Payments-27545368"),
                         n.e("bundle.Payments-960914ab"),
                         n.e("bundle.Payments-17a1c92a"),
-                        n.e("bundle.Payments-7f8e98f6"),
+                        n.e("bundle.Payments-39d0705d"),
+                        n.e("bundle.Payments-fd087ba8"),
                         n.e("bundle.Payments-7e6638bc"),
                         n.e("bundle.Payments-9f4db315"),
                         n.e("bundle.Payments-6cc66b21"),
@@ -1357,4 +1358,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e019dbda.52355bba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e019dbda.4acbd9ba.js.map

@@ -1311,7 +1311,8 @@
                 a("j77292b7", function (e) {
                     return "[[293197]] Please only select up to " + e.count + " file" + n(e.count, "", "s");
                 }),
-                a("cbc8fed4", "[[286299]] Was this translation accurate? Give us feedback so we can improve:"),
+                a("d6b533dc", "Rate this translation:"),
+                a("j2f9ab6e", "Thank you for your feedback!"),
                 a("d56779a2", "[[286300]] easy to understand"),
                 a("b6fe8a56", "[[286301]] confusing or unclear"),
                 a("i73a7d48", "[[196575]] Translated by Google"),
@@ -1916,9 +1917,9 @@
                 a("i89195ea", "[[287259]] Divider"),
                 a("da8ac57c", "[[284900]] Edit Caption"),
                 a("a8fdd09c", "[[284919]] Publish Article"),
-                a("d8047cc8", "[[221087]] Publish"),
-                a("ff7ddca2", "[[284961]] Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile.");
-            a("ef34d7be", "[[284897]] Audience and reply controls are not editable after an article has been published."),
+                a("d8047cc8", "[[221087]] Publish");
+            a("ff7ddca2", "[[284961]] Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                a("ef34d7be", "[[284897]] Audience and reply controls are not editable after an article has been published."),
                 a("e52d4998", "[[284896]] Choose your audience"),
                 a("d7985b24", "[[288078]] Choose who can reply to this Article"),
                 a("b5660338", "[[286495]] Timeline preview"),
@@ -2972,9 +2973,9 @@
                 a("a7de64de", "[[180893]] Ads info"),
                 a("jb0a4c36", "[[180896]] Blog"),
                 a("ce6d095a", "[[225663]] Careers"),
-                a("e0adec82", "[[225676]] Brand Resources"),
-                a("df1b7550", "[[180908]] Marketing");
-            a("he258678", "[[280696]] X for Business"),
+                a("e0adec82", "[[225676]] Brand Resources");
+            a("df1b7550", "[[180908]] Marketing"),
+                a("he258678", "[[280696]] X for Business"),
                 a("c6f58084", "[[180900]] Developers"),
                 a("d83f18d2", "[[180901]] Directory"),
                 a("hc5aa17c", "[[294380]] Get the X app"),
@@ -3884,11 +3885,11 @@
                 a("a2bf8b8a", "[[276611]] Switch to listening"),
                 a("caa8d928", "[[292248]] Toggle noise suppression"),
                 a("b5d88f0c", "[[283830]] Employees only"),
-                a("c855ab8e", "[[273092]] Subscribers only"),
-                a("ddeb0a3c", "[[271043]] Here’s the Community. Like the people? Take a look.");
-            a("e111f531", function (e) {
-                return "[[265990]] " + e.count + " tuned in";
-            }),
+                a("c855ab8e", "[[273092]] Subscribers only");
+            a("ddeb0a3c", "[[271043]] Here’s the Community. Like the people? Take a look."),
+                a("e111f531", function (e) {
+                    return "[[265990]] " + e.count + " tuned in";
+                }),
                 a("cbef820f", function (e) {
                     return "[[293244]] " + e.screenName + " reposted the stream!";
                 }),
@@ -4924,9 +4925,9 @@
                 a("a532072a", "[[294256]] Viewers"),
                 a("d9508ab0", "[[293196]] views"),
                 a("d9f9dec0", "[[294167]] View Space"),
-                a("h0c1f37a", "[[294166]] View Space Analytics"),
-                a("e41fffbc", "[[291999]] The total watch time of your videos.");
-            a("if2909ba", "[[292000]] Watch Time"),
+                a("h0c1f37a", "[[294166]] View Space Analytics");
+            a("e41fffbc", "[[291999]] The total watch time of your videos."),
+                a("if2909ba", "[[292000]] Watch Time"),
                 a("i0e5bf4c", "[[293195]] Your videos"),
                 a("ed99baea", "[[289716]] Early Beta Access"),
                 a("gf898b70", "[[289702]] Advanced Search"),
@@ -5878,9 +5879,9 @@
                     return "[[232023]] No results for " + e.query;
                 }),
                 a("f191a2ba", "Search settings"),
-                a("a068008a", "[[290206]] Folders aren`t loading right now"),
-                a("f075b0e8", "[[241449]] Edit Folder");
-            a("beba2a0e", "[[242311]] Create a new Bookmark Folder"),
+                a("a068008a", "[[290206]] Folders aren`t loading right now");
+            a("f075b0e8", "[[241449]] Edit Folder"),
+                a("beba2a0e", "[[242311]] Create a new Bookmark Folder"),
                 a("e41c9b4f", function (e) {
                     return "[[242357]] Saved to " + e.bookmarkFolderName;
                 }),
@@ -6884,9 +6885,9 @@
                 a("c05176ec", "[[282459]] If this role is onsite, enter the site location(s). If this role is remote, describe where candidates can be located."),
                 a("d70c24d4", "[[282474]] Used to help candidates search for your job."),
                 a("de1c4376", "[[276543]] Salary Range"),
-                a("hf352d42", "[[282447]] Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for."),
-                a("ede7d0a2", "[[276389]] Currency");
-            a("b925c18c", "[[283691]] Salary Type"),
+                a("hf352d42", "[[282447]] Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for.");
+            a("ede7d0a2", "[[276389]] Currency"),
+                a("b925c18c", "[[283691]] Salary Type"),
                 a("j3d242ce", "[[276541]] Invalid range"),
                 a("f4d07bd2", "[[282456]] Include optional details to make it easier for candidates to discover your roles with search."),
                 a("b8cbb51a", "[[282457]] Job Summary"),
@@ -7864,8 +7865,7 @@
                 a("ea000ec8", "[[272788]] Already canceled your Subscription?"),
                 a("d7b8387e", "[[272796]] If you’ve already canceled, there’s nothing more to do. Your Subscription will automatically expire at the end of the billing cycle."),
                 a("f4166d9a", "[[272806]] Want to cancel your Subscription?"),
-                a("b74ff5fc", "[[272795]] If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
-                a("ee9efbc8", "[[265375]] Continue to cancellation");
+                a("b74ff5fc", "[[272795]] If you cancel, your Subscription will automatically expire at the end of the billing cycle.");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7904,7 +7904,8 @@
                     r(e, t)
                 );
             }
-            a("c5d9c77a", "[[265380]] Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Close this window and try again."),
+            a("ee9efbc8", "[[265375]] Continue to cancellation"),
+                a("c5d9c77a", "[[265380]] Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Close this window and try again."),
                 a("jda53c24", "[[272809]] You can cancel your Subscription through the Apple App Store."),
                 a("g0a7a53e", "[[272807]] You can cancel your Subscription through the Google Play Store."),
                 a("i5f14be7", function (e) {
@@ -8900,13 +8901,13 @@
                 }),
                 a("g60001bb", function (e) {
                     return "[[223892]] See " + e.advertiserName;
-                }),
-                a("dff1ddd9", function (e) {
-                    return "[[223885]] Go to " + e.advertiserName;
                 });
-            a("b0b22805", function (e) {
-                return "[[223889]] Visit " + e.advertiserName;
+            a("dff1ddd9", function (e) {
+                return "[[223885]] Go to " + e.advertiserName;
             }),
+                a("b0b22805", function (e) {
+                    return "[[223889]] Visit " + e.advertiserName;
+                }),
                 a("c67e71aa", "[[223887]] Watch now"),
                 a("a6ada13e", "[[142677]] Shop now"),
                 a("j0f12222", "[[223888]] See more"),
@@ -13367,4 +13368,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.7e2b559a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.fda439da.js.map
