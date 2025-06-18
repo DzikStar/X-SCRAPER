@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.BookmarkFolders~bundle.Bookmarks"],
+    ["shared~bundle.BookmarkFolders~bundle.Bookmarks", "icons/IconChevronRight-js"],
     {
         721879: (e) => {
             e.exports = { queryId: "kdUVS11GOq2h4tu5cwSZHA", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
@@ -43,9 +43,9 @@
                 m = o(549186),
                 u = o.n(m),
                 p = o(295904),
-                b = o.n(p),
-                h = o(769948),
-                k = o.n(h),
+                h = o.n(p),
+                b = o(769948),
+                k = o.n(b),
                 f = o(871585),
                 w = o.n(f),
                 E = o(418631),
@@ -55,8 +55,8 @@
                 v = o(630986),
                 T = o.n(v),
                 S = o(934309);
-            const I = { result: [], entities: {}, slice_info: {} },
-                Z = (e, t) => {
+            const Z = { result: [], entities: {}, slice_info: {} },
+                I = (e, t) => {
                     const o = t?.bookmark_all_delete,
                         r = "Done" === o;
                     return r || (0, n.ZP)("GQL Bookmarks: Failed to delete all bookmarks"), (0, i.jB)(e) || !r;
@@ -74,7 +74,7 @@
                 R = ({ apiClient: e, featureSwitches: t }) => ({
                     bookmarkTweetToFolder: (t) =>
                         e.graphQL(
-                            b(),
+                            h(),
                             { ...t },
                             (0, i.kj)((e) => !e.bookmark_collection_tweet_put, "GQL Bookmark Folders: failed to Add Tweet to Bookmark Folder"),
                         ),
@@ -84,7 +84,7 @@
                             { ...t },
                             (0, i.kj)((e) => !e.bookmark_collection_create, "GQL Bookmark Folders: failed to Create Bookmark Folder"),
                         ),
-                    deleteAll: () => e.graphQL(w(), {}, Z).then((e) => e),
+                    deleteAll: () => e.graphQL(w(), {}, I).then((e) => e),
                     deleteBookmarkFolder(t) {
                         const { bookmarkFolderId: o } = t;
                         return e.graphQL(y(), { bookmark_collection_id: o });
@@ -109,9 +109,9 @@
                                       const { entities: e, result: t } = (0, r.Fv)(n.items, [s]);
                                       return { entities: e, result: t, slice_info: n.slice_info };
                                   }
-                                  return I;
+                                  return Z;
                               })
-                            : Promise.resolve(I),
+                            : Promise.resolve(Z),
                 });
         },
         229333: (e, t, o) => {
@@ -265,7 +265,7 @@
         },
         598897: (e, t, o) => {
             "use strict";
-            o.d(t, { K: () => u, f: () => I });
+            o.d(t, { K: () => u, f: () => Z });
             var r = o(202784),
                 n = o(325686),
                 i = o(371344),
@@ -304,8 +304,8 @@
                     );
                 };
             var p = o(731708),
-                b = o(457311),
-                h = o(644829),
+                h = o(457311),
+                b = o(644829),
                 k = o(750085),
                 f = o(218951);
             var w = o(810641),
@@ -318,18 +318,18 @@
                 v = l().e9c65c4a,
                 T = l().b92a21d9,
                 S = r.createElement(l().I18NFormatMessage, { $i18n: "e7e44bab" }, r.createElement(p.ZP, { link: "/settings/search" }, l().f191a2ba)),
-                I = F(({ clearTimelineCache: e, createLocalApiErrorHandler: t, query: o }) => {
+                Z = F(({ clearTimelineCache: e, createLocalApiErrorHandler: t, query: o }) => {
                     const n = r.useMemo(
                         () =>
                             (function (e) {
-                                return (0, f.Z)({ timelineId: "bookmark-search-timeline", context: "FETCH_BOOKMARK_SEARCH_TIMELINE", formatResponse: k.Z, network: { getEndpointParams: ({ count: t, cursor: o }) => ({ count: t, cursor: "string" == typeof o ? o : void 0, rawQuery: e }), getEndpoint: (e) => e.withEndpoint(h.Z).fetchBookmarkSearch }, perfKey: "bookmark-search" });
+                                return (0, f.Z)({ timelineId: "bookmark-search-timeline", context: "FETCH_BOOKMARK_SEARCH_TIMELINE", formatResponse: k.Z, network: { getEndpointParams: ({ count: t, cursor: o }) => ({ count: t, cursor: "string" == typeof o ? o : void 0, rawQuery: e }), getEndpoint: (e) => e.withEndpoint(b.Z).fetchBookmarkSearch }, perfKey: "bookmark-search" });
                             })(o),
                         [o],
                     );
                     r.useEffect(() => {
                         e(n).catch(t());
                     }, [n, e, t]);
-                    return r.createElement(w.Z, { module: n, renderEmptyState: () => r.createElement(b.Z, { header: T({ query: o }), message: S }), title: v });
+                    return r.createElement(w.Z, { module: n, renderEmptyState: () => r.createElement(h.Z, { header: T({ query: o }), message: S }), title: v });
                 });
         },
         652904: (e, t, o) => {
@@ -390,14 +390,14 @@
                     .propsFromState((e) => ({ fetchStatus: _, items: m }))
                     .propsFromActions(({ module: e }) => ({ createLocalApiErrorHandler: (0, c.zr)("SLICES_TIMELINE"), fetch: e.fetch, fetchIfNeeded: e.fetchIfNeeded, fetchBottom: e.fetchBottom })),
                 p = a().i9028824,
-                b = (e) => e,
-                h = (e) => (t) => e(t.item);
+                h = (e) => e,
+                b = (e) => (t) => e(t.item);
             class k extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._render = () => {
                             const { footer: e, items: t, noItemsRenderer: o, numColumns: i, onScrollEnd: a, renderer: s, withoutHeadroom: c } = this.props;
-                            return !t || i < 1 ? null : 1 === i ? r.createElement(l.Z, { cacheKey: "sliceTimeline", footer: e, identityFunction: b, items: t, noItemsRenderer: o, onNearEnd: this._handleNearEnd, onScrollEnd: a, renderer: s, withoutHeadroom: c }) : r.createElement(n.Z, { ListEmptyComponent: o, data: t, keyExtractor: b, numColumns: i, renderItem: h(s) });
+                            return !t || i < 1 ? null : 1 === i ? r.createElement(l.Z, { cacheKey: "sliceTimeline", footer: e, identityFunction: h, items: t, noItemsRenderer: o, onNearEnd: this._handleNearEnd, onScrollEnd: a, renderer: s, withoutHeadroom: c }) : r.createElement(n.Z, { ListEmptyComponent: o, data: t, keyExtractor: h, numColumns: i, renderItem: b(s) });
                         }),
                         (this._handleNearEnd = () => {
                             const { createLocalApiErrorHandler: e, fetchBottom: t } = this.props;
@@ -445,11 +445,11 @@
                 m = o(977154),
                 u = o(583790);
             const p = Object.freeze({ REQUEST: "rweb/bookmarkFolders/FETCH_BOOKMARK_FOLDERS_REQUEST", SUCCESS: "rweb/bookmarkFolders/FETCH_BOOKMARK_FOLDERS_SUCCESS", FAILURE: "rweb/bookmarkFolders/FETCH_BOOKMARK_FOLDERS_FAILURE" }),
-                b = Object.freeze({ REQUEST: "rweb/bookmarkFolders/CREATE_BOOKMARK_FOLDERS_REQUEST", SUCCESS: "rweb/bookmarkFolders/CREATE_BOOKMARK_FOLDERS_SUCCESS", FAILURE: "rweb/bookmarkFolders/CREATE_BOOKMARK_FOLDERS_FAILURE" }),
-                h = (0, c.ZP)({ namespace: "bookmarkFolders" }),
+                h = Object.freeze({ REQUEST: "rweb/bookmarkFolders/CREATE_BOOKMARK_FOLDERS_REQUEST", SUCCESS: "rweb/bookmarkFolders/CREATE_BOOKMARK_FOLDERS_SUCCESS", FAILURE: "rweb/bookmarkFolders/CREATE_BOOKMARK_FOLDERS_FAILURE" }),
+                b = (0, c.ZP)({ namespace: "bookmarkFolders" }),
                 k = (0, r.Z)((e) => (0, u.Z)(e)),
                 f = {
-                    deleteBookmarkFolder: (0, c.Tx)(h, "deleteBookmarkFolder", {
+                    deleteBookmarkFolder: (0, c.Tx)(b, "deleteBookmarkFolder", {
                         context: "DELETE_BOOKMARK_FOLDER",
                         getApiMethod: (e) => e.withEndpoint(i.Z).deleteBookmarkFolder,
                         getParams: (e) => ({ bookmarkFolderId: e }),
@@ -467,7 +467,7 @@
                             }
                         },
                     }),
-                    editBookmarkFolder: (0, c.Tx)(h, "editBookmarkFolder", {
+                    editBookmarkFolder: (0, c.Tx)(b, "editBookmarkFolder", {
                         context: "EDIT_BOOKMARK_FOLDER",
                         getApiMethod: (e) => e.withEndpoint(i.Z).editBookmarkFolder,
                         getParams: (e, { name: t } = {}) => ({ bookmarkFolderId: e, name: t }),
@@ -488,7 +488,7 @@
                             return { ...e, entities: { ...e.entities, [n.id]: { ...n, ...i } } };
                         },
                     }),
-                    removeTweetFromBookmarkFolder: (0, c.Tx)(h, "removeTweetFromBookmarkFolder", {
+                    removeTweetFromBookmarkFolder: (0, c.Tx)(b, "removeTweetFromBookmarkFolder", {
                         context: "REMOVE_TWEET_FROM_BOOKMARK_FOLDER",
                         getApiMethod: (e) => e.withEndpoint(i.Z).removeTweetFromBookmarkFolder,
                         getParams: (e, { tweetId: t } = {}) => ({ bookmarkFolderId: e, tweetId: t }),
@@ -506,7 +506,7 @@
                         },
                         reducer: (e, t) => e,
                     }),
-                    addTweetToBookmarkFolder: (0, c.Tx)(h, "addTweetToBookmarkFolder", {
+                    addTweetToBookmarkFolder: (0, c.Tx)(b, "addTweetToBookmarkFolder", {
                         context: "BOOKMARK_TWEET_TO_FOLDER",
                         getApiMethod: (e) => e.withEndpoint(i.Z).bookmarkTweetToFolder,
                         getParams: (e, { tweetId: t } = {}) => ({ bookmark_collection_id: e, tweet_id: t }),
@@ -537,13 +537,13 @@
                 E =
                     (e) =>
                     (t, o, { api: r }) =>
-                        (0, s._O)(t, { request: r.withEndpoint(i.Z).createBookmarkFolder, params: { name: e } })({ actionTypes: b, context: "CREATE_BOOKMARK_FOLDER" }, (e) => {
+                        (0, s._O)(t, { request: r.withEndpoint(i.Z).createBookmarkFolder, params: { name: e } })({ actionTypes: h, context: "CREATE_BOOKMARK_FOLDER" }, (e) => {
                             if (e) {
                                 const t = e?.bookmark_collection_create,
                                     r = (0, _.x0)(o());
                                 if (t && r) {
                                     const e = k(r);
-                                    return [h.add({ [t.id]: t }), e.injectItems([t.id])];
+                                    return [b.add({ [t.id]: t }), e.injectItems([t.id])];
                                 }
                             }
                         }),
@@ -551,7 +551,7 @@
                     const n = k(o);
                     return Promise.resolve(r([(0, m.m)(e).removeTweets({ [t]: !0 }), n.injectItems([e])]));
                 },
-                g = { ...h, ...f, customActionTypes: (0, c.X7)(f) },
+                g = { ...b, ...f, customActionTypes: (0, c.X7)(f) },
                 F = d.Z.register(g);
         },
         545521: (e, t, o) => {
@@ -568,16 +568,16 @@
             function _({ contextSuffix: e, getEndpointParams: t, getFetchApiEndpoint: o, mapEntitiesToActions: l = d, sliceKey: _, injectionOptions: { identityFunction: m } = {} }) {
                 const u = [],
                     p = (e) => e[i.Yf]?.[_],
-                    b = (e) => {
+                    h = (e) => {
                         const t = p(e);
                         if (!t) return u;
                         const o = t.items || u,
                             r = t.injections;
                         return r?.length > 0 ? (0, n.Z)(r.concat(o), m) : o;
                     },
-                    h = (e) => {
+                    b = (e) => {
                         const t = p(e),
-                            o = b(e),
+                            o = h(e),
                             r = o?.length > 0;
                         return t ? (0, s.ke)(t.fetchStatus, r) : s.ZP.NONE;
                     },
@@ -591,13 +591,13 @@
                         };
                 return {
                     select: p,
-                    selectItems: b,
-                    selectFetchStatus: h,
+                    selectItems: h,
+                    selectFetchStatus: b,
                     fetch: k,
                     fetchIfNeeded: (e) => (t, o) => {
                         const n = o(),
                             i = p(n),
-                            a = h(n);
+                            a = b(n);
                         return !i || (a !== s.ZP.LOADING && a !== s.ZP.LOADED) ? t(k(e)) : r.O4.resolve();
                     },
                     fetchBottom: (e) => (t, o) => {
@@ -616,7 +616,7 @@
         },
         841198: (e, t, o) => {
             "use strict";
-            o.d(t, { Be: () => f, Er: () => F, Ev: () => h, WC: () => y, Yf: () => _, t5: () => v });
+            o.d(t, { Be: () => f, Er: () => F, Ev: () => b, WC: () => y, Yf: () => _, t5: () => v });
             o(571372);
             var r = o(166852),
                 n = o(370751),
@@ -650,8 +650,8 @@
                             return e;
                     }
                 },
-                b = "rweb/slices/CLEAR_PARTIAL_SLICES_CACHE",
-                h = (e) => ({ type: b, meta: { sliceKey: e } }),
+                h = "rweb/slices/CLEAR_PARTIAL_SLICES_CACHE",
+                b = (e) => ({ type: h, meta: { sliceKey: e } }),
                 k = "rweb/slices/DELETE_SLICE",
                 f = (e) => ({ type: k, meta: { sliceKey: e } }),
                 w = "rweb/slices/RESTORE_SLICE",
@@ -672,7 +672,7 @@
                         }
                         case w:
                             return { ...e, [o]: t.payload };
-                        case b: {
+                        case h: {
                             const t = { ...e };
                             return (
                                 Object.keys(t).forEach((e) => {
@@ -734,16 +734,32 @@
                 l = o(952428),
                 c = o(392237);
             const d = (e) => {
-                    const { decoration: t, description: o, disabled: d = !1, isActive: m = !1, label: u, link: p, onPress: b, paddingHorizontal: h, renderRightContent: k, role: f = "tab", styleOverride: w, testID: E = "pivot", thumbnail: y, thumbnailSize: g, withoutArrow: F = !1 } = e,
+                    const { decoration: t, description: o, disabled: d = !1, isActive: m = !1, label: u, link: p, onPress: h, paddingHorizontal: b, renderRightContent: k, role: f = "tab", styleOverride: w, testID: E = "pivot", thumbnail: y, thumbnailSize: g, withoutArrow: F = !1 } = e,
                         v = [_.thumbnailContainer, "medium" === g && _.thumbnailContainerMedium],
                         T = "string" == typeof u ? r.createElement(s.ZP, null, u) : u,
                         S = "object" == typeof p && p.external && !p.openInSameFrame,
-                        I = o ? ("string" == typeof o ? r.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${E}-description` }, o) : o) : null,
-                        Z = r.useMemo(() => ("space0" === h ? { paddingHorizontal: 0 } : { paddingHorizontal: h ? c.default.theme.spaces[h] : c.default.theme.componentDimensions.gutterHorizontal }), [h]);
-                    return r.createElement(l.Z, { "aria-selected": "tab" === f ? m : null, disabled: d, link: d ? void 0 : p, onPress: b, role: f, style: [_.root, Z, d && _.disabled, w], testID: E, withInteractiveStyling: !!p || !!b }, r.createElement(n.Z, { style: _.contentContainer }, y ? r.createElement(n.Z, { style: v }, y) : null, r.createElement(n.Z, { style: _.content }, T, I), k ? k() : null, (!p && !b) || d || F ? null : S ? r.createElement(i.default, { style: _.icon }) : r.createElement(a.default, { style: _.icon })), t);
+                        Z = o ? ("string" == typeof o ? r.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${E}-description` }, o) : o) : null,
+                        I = r.useMemo(() => ("space0" === b ? { paddingHorizontal: 0 } : { paddingHorizontal: b ? c.default.theme.spaces[b] : c.default.theme.componentDimensions.gutterHorizontal }), [b]);
+                    return r.createElement(l.Z, { "aria-selected": "tab" === f ? m : null, disabled: d, link: d ? void 0 : p, onPress: h, role: f, style: [_.root, I, d && _.disabled, w], testID: E, withInteractiveStyling: !!p || !!h }, r.createElement(n.Z, { style: _.contentContainer }, y ? r.createElement(n.Z, { style: v }, y) : null, r.createElement(n.Z, { style: _.content }, T, Z), k ? k() : null, (!p && !h) || d || F ? null : S ? r.createElement(i.default, { style: _.icon }) : r.createElement(a.default, { style: _.icon })), t);
                 },
                 _ = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
+        58399: (e, t, o) => {
+            "use strict";
+            o.r(t), o.d(t, { default: () => c });
+            var r = o(202784),
+                n = o(890601),
+                i = o(783427),
+                a = o(717683),
+                s = o(347101);
+            const l = (e = {}) => {
+                const t = r.useContext(a.Z),
+                    { direction: o } = (0, i.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, t && s.Z.iconRTL], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: o });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const c = l;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.BookmarkFolders~bundle.Bookmarks.5bcb4eda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.BookmarkFolders~bundle.Bookmarks.c6b5378a.js.map

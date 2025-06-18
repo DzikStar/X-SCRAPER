@@ -22,8 +22,8 @@
                 i = (t(136728), t(614983)),
                 n = t.n(i),
                 s = t(392237),
-                l = t(870358),
-                d = t(557281),
+                d = t(870358),
+                l = t(557281),
                 c = t(952183),
                 _ = t(877905),
                 u = t(44527);
@@ -31,17 +31,17 @@
                 n()(e, "audioSpace is required");
                 const { metadata: a, participants: t, sharings: r, ...o } = e;
                 n()(a, "metadata is required");
-                const { rest_id: i, state: l } = a;
-                n()(i, "rest_id is required"), n()(l, "state is required");
+                const { rest_id: i, state: d } = a;
+                n()(i, "rest_id is required"), n()(d, "state is required");
                 const u = (function (e) {
                         if (e && e.result && "Community" === e.result.__typename) {
                             const { __typename: a, rest_id: t, ...r } = e.result,
                                 { name: o } = r,
                                 i = s.default.theme.colors.gray500,
                                 n = (0, c.Wb)(r),
-                                l = (0, c.TB)(r),
-                                d = n || l,
-                                _ = d?.url;
+                                d = (0, c.TB)(r),
+                                l = n || d,
+                                _ = l?.url;
                             return { rest_id: t, color: i, name: o, image_url: _ };
                         }
                     })(a.community_results),
@@ -64,7 +64,7 @@
                                             i = (0, _.y9)(o);
                                         if (i) {
                                             const { cards: t, publishedArticles: r, tweets: o, users: n } = i.entities,
-                                                s = (0, d.F)(o, t, n, r, i.result);
+                                                s = (0, l.F)(o, t, n, r, i.result);
                                             if (s) return { id: e.sharing_id, user: a, tweet: s };
                                         }
                                     }
@@ -88,7 +88,7 @@
                             : (t = e.admins[0]);
                         return { host: t, cohosts: r };
                     })(h, f);
-                return n()(y, "host is required"), { ...o, ...a, rest_id: i, state: l, host: y, hostPalette: D, cohosts: g, participants: h, sharings: b, ended_at: a.ended_at ? parseInt(a.ended_at, 10) : void 0, total_live_listeners: a.total_live_listeners ?? 0, total_replay_watched: a.total_replay_watched ?? 0, followed_by_host: a.creator_results?.result?.relationship_perspectives?.followed_by, community: u };
+                return n()(y, "host is required"), { ...o, ...a, rest_id: i, state: d, host: y, hostPalette: D, cohosts: g, participants: h, sharings: b, ended_at: a.ended_at ? parseInt(a.ended_at, 10) : void 0, total_live_listeners: a.total_live_listeners ?? 0, total_replay_watched: a.total_replay_watched ?? 0, followed_by_host: a.creator_results?.result?.relationship_perspectives?.followed_by, community: u };
             }
             function m(e, a) {
                 return e
@@ -96,7 +96,7 @@
                           const r = { ...t, user_id: e?.rest_id, community: void 0, is_blue_verified: void 0, verified_type: void 0, highlightedLabel: void 0 };
                           if (a) {
                               const e = a.color,
-                                  o = Boolean(t.community_role && t.community_role !== l.WW.NonMember);
+                                  o = Boolean(t.community_role && t.community_role !== d.WW.NonMember);
                               r.community = { color: e, isMember: o };
                           }
                           return e?.result && "User" === e.result.__typename && ((r.is_blue_verified = e.result.is_blue_verified), (r.verified_type = e.result.verification?.verified_type), (r.highlightedLabel = (0, u.H)(e.result.identity_profile_labels_highlighted_label?.label))), r;
@@ -131,11 +131,11 @@
                     spacebar: () => e.getUnversioned("/fleets/v1/fleetline", { only_spaces: !0 }, {}),
                     byId(i, n = {}) {
                         const s = "byId",
-                            l = n.isMetatagsQuery || !1;
+                            d = n.isMetatagsQuery || !1;
                         return e
                             .graphQL(
                                 D(),
-                                { id: i, isMetatagsQuery: l, ...(0, o.d)(a), withReplays: !0, withListeners: !0 },
+                                { id: i, isMetatagsQuery: d, ...(0, o.d)(a), withReplays: !0, withListeners: !0 },
                                 L(
                                     s,
                                     i,
@@ -144,22 +144,25 @@
                                             const { code: a } = e;
                                             a === x.ZP.GenericAccessDenied &&
                                                 Promise.all([
-                                                    t.e("icons.8"),
-                                                    t.e("icons.15"),
-                                                    t.e("icons.7"),
-                                                    t.e("icons.3"),
-                                                    t.e("icons.24"),
-                                                    t.e("icons.12"),
-                                                    t.e("icons.22"),
-                                                    t.e("icons.2"),
-                                                    t.e("icons.18"),
-                                                    t.e("icons.9"),
-                                                    t.e("icons.6"),
+                                                    t.e("icons.21"),
+                                                    t.e("icons.16"),
+                                                    t.e("icons.10"),
                                                     t.e("icons.1"),
+                                                    t.e("icons.19"),
+                                                    t.e("icons.0"),
+                                                    t.e("icons.23"),
+                                                    t.e("icons.8"),
+                                                    t.e("icons.2"),
+                                                    t.e("icons.3"),
+                                                    t.e("icons.15"),
+                                                    t.e("icons.4"),
                                                     t.e("modules.common-e907d115"),
                                                     t.e("modules.common-e019dbda"),
-                                                    t.e("icons.14"),
-                                                    t.e("icons.5"),
+                                                    t.e("icons.9"),
+                                                    t.e("icons.7"),
+                                                    t.e("icons.28"),
+                                                    t.e("icons.26"),
+                                                    t.e("icons.24"),
                                                     t.e("modules.audio-6107ac1a"),
                                                     t.e("modules.audio-b953418a"),
                                                     t.e("modules.audio-7c51e6a7"),
@@ -170,12 +173,9 @@
                                                     t.e("modules.audio-e019dbda"),
                                                     t.e("modules.audio-262c94d4"),
                                                     t.e("modules.audio-c6fe4ea4"),
-                                                    t.e("icons.21"),
-                                                    t.e("icons.16"),
-                                                    t.e("icons.28"),
-                                                    t.e("icons.17"),
-                                                    t.e("icons.27"),
-                                                    t.e("icons.0"),
+                                                    t.e("icons.18"),
+                                                    t.e("icons.13"),
+                                                    t.e("icons.25"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -289,15 +289,15 @@
                     let n = !1;
                     if (o.length) {
                         const [t] = o,
-                            { code: i, message: s, path: l } = t;
-                        let d;
+                            { code: i, message: s, path: d } = t;
+                        let l;
                         const c = V.find(({ matches: e }) => e(s));
-                        if (c?.message) d = q(e, c.message);
-                        else if (Array.isArray(l)) {
-                            const a = l.map(Z).join(".");
-                            d = q(e, a);
-                        } else d = q(e, s || "isFatalError");
-                        (0, r.ZP)(d, { extra: { code: i, id: a, message: s, path: l } }), (n = !0);
+                        if (c?.message) l = q(e, c.message);
+                        else if (Array.isArray(d)) {
+                            const a = d.map(Z).join(".");
+                            l = q(e, a);
+                        } else l = q(e, s || "isFatalError");
+                        (0, r.ZP)(l, { extra: { code: i, id: a, message: s, path: d } }), (n = !0);
                     }
                     return !t(o, i) && n;
                 };
@@ -320,9 +320,9 @@
                         const { users: a, refresh_delay_secs: t = o.vj } = e,
                             i = 0 === t ? o.vj : t,
                             s = Date.now() + 1e3 * i,
-                            l = Object.fromEntries(n.map((e) => [e, { expiry: s, spaces: void 0, refresh_delay_secs: i }])),
-                            d = a && (0, r.Z)(a, (e, a) => ({ ...e, expiry: s, refresh_delay_secs: i }));
-                        return (d || l) && { entities: { userPresence: { ...l, ...d } } };
+                            d = Object.fromEntries(n.map((e) => [e, { expiry: s, spaces: void 0, refresh_delay_secs: i }])),
+                            l = a && (0, r.Z)(a, (e, a) => ({ ...e, expiry: s, refresh_delay_secs: i }));
+                        return (l || d) && { entities: { userPresence: { ...d, ...l } } };
                     });
                 },
             });
@@ -390,33 +390,33 @@
         },
         213836: (e, a, t) => {
             "use strict";
-            t.d(a, { Z: () => l });
+            t.d(a, { Z: () => d });
             var r = t(202784),
                 o = t(325686),
                 i = t(392237),
                 n = t(707816),
                 s = t(794294);
-            function l({ color: e = i.default.theme.colors.white, opacity: a = 0.15, scale: t, size: l, translate: c }) {
-                const _ = { backgroundColor: e, transform: [{ translate3d: `${c.x}px, ${c.y}px, 0` }, { scale: t }], opacity: a, ...(0, n.M8)(l) };
-                return r.createElement(o.Z, { style: [_, s.Z.transitionTransform, d.audioCircle] });
+            function d({ color: e = i.default.theme.colors.white, opacity: a = 0.15, scale: t, size: d, translate: c }) {
+                const _ = { backgroundColor: e, transform: [{ translate3d: `${c.x}px, ${c.y}px, 0` }, { scale: t }], opacity: a, ...(0, n.M8)(d) };
+                return r.createElement(o.Z, { style: [_, s.Z.transitionTransform, l.audioCircle] });
             }
-            const d = i.default.create((e) => ({ audioCircle: { position: "absolute", borderRadius: e.borderRadii.infinite, pointerEvents: "none" } }));
+            const l = i.default.create((e) => ({ audioCircle: { position: "absolute", borderRadius: e.borderRadii.infinite, pointerEvents: "none" } }));
         },
         230966: (e, a, t) => {
             "use strict";
-            t.d(a, { Z: () => d });
+            t.d(a, { Z: () => l });
             var r = t(202784),
                 o = t(7632),
                 i = t(707816),
                 n = t(213836),
                 s = t(840940),
-                l = t(822682);
-            function d(e) {
+                d = t(822682);
+            function l(e) {
                 const { size: a } = e,
                     t = a * c,
                     i = e.paused ? 0 : e.audioLevel,
-                    d = (0, o.X)(e.participantIndex);
-                return r.createElement(r.Fragment, null, r.createElement(s.Z, { color: d }), r.createElement(n.Z, { scale: _(i), size: t, translate: h(i, a) }), r.createElement(n.Z, { scale: _(i), size: t, translate: h(i, a) }), r.createElement(n.Z, { scale: _(i), size: t, translate: h(i, a) }), r.createElement(l.Z, { profileImageUrl: e.profileImageUrl, scale: u(i), size: t }));
+                    l = (0, o.X)(e.participantIndex);
+                return r.createElement(r.Fragment, null, r.createElement(s.Z, { color: l }), r.createElement(n.Z, { scale: _(i), size: t, translate: h(i, a) }), r.createElement(n.Z, { scale: _(i), size: t, translate: h(i, a) }), r.createElement(n.Z, { scale: _(i), size: t, translate: h(i, a) }), r.createElement(d.Z, { profileImageUrl: e.profileImageUrl, scale: u(i), size: t }));
             }
             const c = 0.692,
                 _ = (e) => 0.95 + (0.2 + (0, i.TN)(0.5)) * e,
@@ -425,27 +425,27 @@
         },
         272594: (e, a, t) => {
             "use strict";
-            t.d(a, { Z: () => d });
+            t.d(a, { Z: () => l });
             var r = t(202784),
                 o = t(822240),
                 i = t(707816),
                 n = t(213836);
             const s = (0, o.Z)(0, 20),
-                l = 0.05;
-            function d(e) {
+                d = 0.05;
+            function l(e) {
                 const { color: a, size: t } = e,
                     o = r.useRef({ scales: s.map(() => u(0)) }),
-                    d = e.paused ? 0 : e.audioLevel,
+                    l = e.paused ? 0 : e.audioLevel,
                     _ = Math.floor((0, i.TN)(5, 2));
                 return (
                     o.current.scales.forEach((e, a) => {
                         if (a % _ != 0) return e;
-                        o.current.scales[a] = u(d);
+                        o.current.scales[a] = u(l);
                     }),
                     r.createElement(
                         r.Fragment,
                         null,
-                        s.map((e) => r.createElement(n.Z, { color: a, key: e, opacity: l, scale: o.current.scales[e], size: t, translate: c })),
+                        s.map((e) => r.createElement(n.Z, { color: a, key: e, opacity: d, scale: o.current.scales[e], size: t, translate: c })),
                     )
                 );
             }
@@ -459,7 +459,7 @@
         },
         503195: (e, a, t) => {
             "use strict";
-            t.r(a), t.d(a, { default: () => l });
+            t.r(a), t.d(a, { default: () => d });
             var r = t(202784),
                 o = t(890601),
                 i = t(783427),
@@ -469,21 +469,7 @@
                 return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M20.998 15.5V1.66l-12 3.6v10.21c-.607-.3-1.3-.47-2-.47-2.031 0-4 1.4-4 3.5s1.969 3.5 4 3.5 4-1.4 4-3.5V6.74l8-2.4v8.13c-.607-.3-1.3-.47-2-.47-2.031 0-4 1.4-4 3.5s1.969 3.5 4 3.5 4-1.4 4-3.5z" })) }, { writingDirection: a });
             };
             s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        409600: (e, a, t) => {
-            "use strict";
-            t.r(a), t.d(a, { default: () => l });
-            var r = t(202784),
-                o = t(890601),
-                i = t(783427),
-                n = t(347101);
-            const s = (e = {}) => {
-                const { direction: a } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M8 3v18M4 9v6m8-8v10m4-12v14m4-10v6", stroke: "currentColor", strokeWidth: "2" })) }, { writingDirection: a });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
+            const d = s;
         },
         447486: (e, a, t) => {
             "use strict";
@@ -516,4 +502,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-6107ac1a.a9cfabaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-6107ac1a.d9b21dca.js.map

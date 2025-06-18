@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.SettingsProfessionalProfileMobileAppSpotlight", "icons/IconMediumPlus-js"],
+    ["bundle.SettingsProfessionalProfileMobileAppSpotlight", "icons/IconChevronRight-js"],
     {
         625661: (e, t, n) => {
             n.d(t, { ZP: () => u });
@@ -86,7 +86,7 @@
             const d = (0, a.ZP)(s(c));
         },
         202407: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => I });
+            n.r(t), n.d(t, { default: () => P });
             var o = n(807896),
                 a = n(202784),
                 r = n(325686),
@@ -144,8 +144,8 @@
                     { key: S.IOS, label: p().aab2fae0, placeholder: p().af40a8e0, component: v, constants: { title: p().d3cd1160, helpLink: "", inputLabel: p().f2124008 } },
                     { key: S.ANDROID, label: p().f7d1a8e0, placeholder: p().af40a8e0, component: v, constants: { title: p().dc0d9d6a, helpLink: "", inputLabel: p().dd1605f0 } },
                 ],
-                P = Object.freeze({ APPLE_APP_STORE: 1, GOOGLE_PLAY_STORE: 2 });
-            function I(e) {
+                L = Object.freeze({ APPLE_APP_STORE: 1, GOOGLE_PLAY_STORE: 2 });
+            function P(e) {
                 const t = (0, i.useHistory)(),
                     [n, c] = a.useState(),
                     d = { isDirty: !1, hasAllRequiredValues: !1, values: { appStoreListings: [] } },
@@ -156,10 +156,10 @@
                 function b(e, t = !1) {
                     let n;
                     if (e.key === S.IOS) {
-                        const e = d?.values?.appStoreListings?.find((e) => e.appStore === P.APPLE_APP_STORE);
+                        const e = d?.values?.appStoreListings?.find((e) => e.appStore === L.APPLE_APP_STORE);
                         n = e?.url;
                     } else if (e.key === S.ANDROID) {
-                        const e = d?.values?.appStoreListings?.find((e) => e.appStore === P.GOOGLE_PLAY_STORE);
+                        const e = d?.values?.appStoreListings?.find((e) => e.appStore === L.GOOGLE_PLAY_STORE);
                         n = e?.url;
                     }
                     return !n && t ? e.placeholder : n;
@@ -186,7 +186,7 @@
                     },
                     a.createElement(
                         r.Z,
-                        { style: L.container },
+                        { style: I.container },
                         B.map((e) => {
                             return a.createElement(s.Z, {
                                 description: b(e, !0),
@@ -197,7 +197,7 @@
                                     (e) => {
                                         e.preventDefault(), c(t);
                                     }),
-                                thumbnail: a.createElement(u.default, { style: L.addIcon }),
+                                thumbnail: a.createElement(u.default, { style: I.addIcon }),
                                 thumbnailSize: "medium",
                             });
                             var t;
@@ -205,7 +205,7 @@
                     ),
                 );
             }
-            const L = c.default.create((e) => ({ container: { paddingBottom: e.spaces.space64 }, addIcon: { color: e.colors.gray700, backgroundColor: e.colors.gray50, borderRadius: "50%", padding: e.spaces.space8 } }));
+            const I = c.default.create((e) => ({ container: { paddingBottom: e.spaces.space64 }, addIcon: { color: e.colors.gray700, backgroundColor: e.colors.gray50, borderRadius: "50%", padding: e.spaces.space8 } }));
         },
         521219: (e, t, n) => {
             n.d(t, { Z: () => l, c: () => a });
@@ -231,9 +231,9 @@
                         w = [p.thumbnailContainer, "medium" === E && p.thumbnailContainerMedium],
                         S = "string" == typeof h ? o.createElement(l.ZP, null, h) : h,
                         B = "object" == typeof m && m.external && !m.openInSameFrame,
-                        P = n ? ("string" == typeof n ? o.createElement(l.ZP, { color: "gray700", size: "subtext2", testID: `${C}-description` }, n) : n) : null,
-                        I = o.useMemo(() => ("space0" === b ? { paddingHorizontal: 0 } : { paddingHorizontal: b ? c.default.theme.spaces[b] : c.default.theme.componentDimensions.gutterHorizontal }), [b]);
-                    return o.createElement(s.Z, { "aria-selected": "tab" === y ? u : null, disabled: d, link: d ? void 0 : m, onPress: g, role: y, style: [p.root, I, d && p.disabled, k], testID: C, withInteractiveStyling: !!m || !!g }, o.createElement(a.Z, { style: p.contentContainer }, v ? o.createElement(a.Z, { style: w }, v) : null, o.createElement(a.Z, { style: p.content }, S, P), f ? f() : null, (!m && !g) || d || Z ? null : B ? o.createElement(r.default, { style: p.icon }) : o.createElement(i.default, { style: p.icon })), t);
+                        L = n ? ("string" == typeof n ? o.createElement(l.ZP, { color: "gray700", size: "subtext2", testID: `${C}-description` }, n) : n) : null,
+                        P = o.useMemo(() => ("space0" === b ? { paddingHorizontal: 0 } : { paddingHorizontal: b ? c.default.theme.spaces[b] : c.default.theme.componentDimensions.gutterHorizontal }), [b]);
+                    return o.createElement(s.Z, { "aria-selected": "tab" === y ? u : null, disabled: d, link: d ? void 0 : m, onPress: g, role: y, style: [p.root, P, d && p.disabled, k], testID: C, withInteractiveStyling: !!m || !!g }, o.createElement(a.Z, { style: p.contentContainer }, v ? o.createElement(a.Z, { style: w }, v) : null, o.createElement(a.Z, { style: p.content }, S, L), f ? f() : null, (!m && !g) || d || Z ? null : B ? o.createElement(r.default, { style: p.icon }) : o.createElement(i.default, { style: p.icon })), t);
                 },
                 p = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -241,19 +241,21 @@
             n.d(t, { Z: () => o });
             const o = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        509875: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
+        58399: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => c });
             var o = n(202784),
                 a = n(890601),
                 r = n(783427),
-                i = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 32 32", children: o.createElement("g", null, o.createElement("path", { d: "M17 5h-2v10H5v2h10v10h2V17h10v-2H17V5z" })) }, { writingDirection: t });
+                i = n(717683),
+                l = n(347101);
+            const s = (e = {}) => {
+                const t = o.useContext(i.Z),
+                    { direction: n } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style, t && l.Z.iconRTL], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: n });
             };
-            l.metadata = { width: 32, height: 32 };
-            const s = l;
+            s.metadata = { width: 24, height: 24 };
+            const c = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileMobileAppSpotlight.a8358c9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileMobileAppSpotlight.2f0ac57a.js.map

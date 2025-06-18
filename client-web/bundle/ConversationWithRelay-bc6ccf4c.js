@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.ConversationWithRelay-bc6ccf4c"],
+    ["bundle.ConversationWithRelay-bc6ccf4c", "icons/IconFollowArrowLeft-js", "icons/IconSparkle-js"],
     {
         595294: (e, t, a) => {
             a.d(t, { Z: () => J });
@@ -23,7 +23,7 @@
                 v = o().d969327c,
                 x = o().d8cbbcd4,
                 E = o().af8fa2ae;
-            function Z(e, t, a, r, l) {
+            function w(e, t, a, r, l) {
                 const n = e.key,
                     o = r?.current?.[t] ? r.current[t].length : 0;
                 if ("ArrowRight" === n)
@@ -38,7 +38,7 @@
                         r?.current?.[e]?.[a - 1]?.focus();
                     } else r?.current?.[t]?.[a - 1]?.focus();
             }
-            const w = (e) => {
+            const Z = (e) => {
                     const { chartTitle: t, chartType: a, maxValue: n, minValue: o, noOfCategories: s, playAudioChart: c } = e,
                         u = b({ chartTitle: t, chartType: a, minValue: g(o), maxValue: g(n), noOfCategories: g(s) });
                     return r.createElement(l.Z, null, r.createElement(h.Z, { enableEnterKeyToggle: !0, preferredVerticalOrientation: "up", renderContent: (e) => r.createElement(l.Z, { "aria-label": u, role: "dialog", style: C.popover }, r.createElement(l.Z, { style: C.popoverTitle }, r.createElement(i.ZP, { size: "title3", weight: "heavy" }, y)), r.createElement(l.Z, { style: C.popoverText }, r.createElement(i.ZP, { color: "gray700", size: "body", weight: "normal" }, u)), c ? r.createElement(m.ZP, { "aria-label": x, onPress: c, style: C.audioChartButton, type: "primaryFilled" }, v) : null, r.createElement(m.ZP, { onPress: e, type: "primaryOutlined" }, E)), withArrow: !0 }, r.createElement(l.Z, { role: "button" }, r.createElement(p.default, { "aria-label": f, style: C.audioChartIcon }))));
@@ -48,18 +48,18 @@
             Object.freeze({ fixedBarWidth: "fixedBarWidth", fixedSpacing: "fixedSpacing" });
             var B = a(614983),
                 V = a.n(B);
-            const P = (e, t, a) => (100 * (e - a)) / (t - a),
-                T = (e) => [].concat(...e.map((e) => (void 0 !== e.value ? e.value : e.values.map((e) => e.value)))),
-                k = (e) => e.map((e) => e.values.map((e) => e.value).reduce((e, t) => e + t)),
-                I = (e) => (t) => e.popover ?? null,
-                $ = o().dec1d7ef,
+            const z = (e, t, a) => (100 * (e - a)) / (t - a),
+                I = (e) => [].concat(...e.map((e) => (void 0 !== e.value ? e.value : e.values.map((e) => e.value)))),
+                P = (e) => e.map((e) => e.values.map((e) => e.value).reduce((e, t) => e + t)),
+                k = (e) => (t) => e.popover ?? null,
+                T = o().dec1d7ef,
                 A = o().f765bead,
-                z = ({ barConfig: e, data: t, maxValue: a, minValue: n }) => {
+                $ = ({ barConfig: e, data: t, maxValue: a, minValue: n }) => {
                     const o = r.useRef([]),
                         i = { ...D, ...e },
                         s = "fixedBarWidth" === i.layout,
                         [u, d] = r.useState(null),
-                        p = (e, t, a) => c.default.create(() => ({ style: { flex: s ? null : 1, height: `${P(t.value, a, n)}%`, width: s ? `calc(${c.default.theme.spaces[i.width]} / ${e.values.length})` : 100 / e.values.length + "%", minWidth: c.default.theme.spaces.space1, maxWidth: "100%", backgroundColor: t.color ? c.default.theme.colors[t.color] : c.default.theme.colors.blue500, borderRadius: c.default.theme.borderRadii[i.borderRadii], marginHorizontal: c.default.theme.spaces.space2, ...(!!e.popover && { cursor: "pointer" }) } })).style,
+                        p = (e, t, a) => c.default.create(() => ({ style: { flex: s ? null : 1, height: `${z(t.value, a, n)}%`, width: s ? `calc(${c.default.theme.spaces[i.width]} / ${e.values.length})` : 100 / e.values.length + "%", minWidth: c.default.theme.spaces.space1, maxWidth: "100%", backgroundColor: t.color ? c.default.theme.colors[t.color] : c.default.theme.colors.blue500, borderRadius: c.default.theme.borderRadii[i.borderRadii], marginHorizontal: c.default.theme.spaces.space2, ...(!!e.popover && { cursor: "pointer" }) } })).style,
                         m = { height: "100%", display: "flex", flex: 1, justifyContent: "space-around", flexDirection: "row", alignItems: "flex-end", marginHorizontal: c.default.theme.spaces[i.spacing] },
                         g = (e) => {
                             u === e && d(null);
@@ -73,15 +73,15 @@
                             { key: `barGroup${i}`, style: [m, ((y = i), null !== u ? (y === u ? { opacity: 1 } : { opacity: 0.5 }) : { opacity: 1 })], testID: `barGroup${i}` },
                             r.createElement(
                                 h.Z,
-                                { contentStyle: { minWidth: 0 }, disabled: !f, enableEnterKeyToggle: !0, enableHover: !0, hoverDelay: "short", key: `barGroup${i}`, onDismiss: () => g(i), onHoverCardUnmount: () => g(i), onOpen: () => d(i), preferredVerticalOrientation: "up", renderContent: I(e), withArrow: !0, wrapperStyle: { flex: s ? null : 1, flexDirection: "row", alignItems: "flex-end", width: "100%", height: `${P(c, a, n)}%` } },
+                                { contentStyle: { minWidth: 0 }, disabled: !f, enableEnterKeyToggle: !0, enableHover: !0, hoverDelay: "short", key: `barGroup${i}`, onDismiss: () => g(i), onHoverCardUnmount: () => g(i), onOpen: () => d(i), preferredVerticalOrientation: "up", renderContent: k(e), withArrow: !0, wrapperStyle: { flex: s ? null : 1, flexDirection: "row", alignItems: "flex-end", width: "100%", height: `${z(c, a, n)}%` } },
                                 e.values.map((a, n) => {
-                                    const s = e.label ? $({ label: e.label?.props.children, group: a.group, value: a.value }) : A({ group: a.group, value: a.value });
+                                    const s = e.label ? T({ label: e.label?.props.children, group: a.group, value: a.value }) : A({ group: a.group, value: a.value });
                                     return r.createElement(l.Z, {
                                         "aria-label": s,
                                         focusable: !0,
                                         key: `barGroup${n}Bar${n}`,
                                         onKeyDown: (e) => {
-                                            Z(e, i, n, o, t.length);
+                                            w(e, i, n, o, t.length);
                                         },
                                         ref: (e) => o.current?.[i]?.push(e),
                                         role: "img",
@@ -96,8 +96,8 @@
                 },
                 S = o().idea1817,
                 W = o().fe94be6b,
-                R = c.default.create((e) => ({ normalBarWrapper: { height: "100%", flex: 1, flexDirection: "row", alignItems: "flex-end", justifyContent: "space-around" } })),
-                G = ({ audioChartGenerator: e, barConfig: t, data: a, frequencies: n, maxValue: o, minValue: i }) => {
+                M = c.default.create((e) => ({ normalBarWrapper: { height: "100%", flex: 1, flexDirection: "row", alignItems: "flex-end", justifyContent: "space-around" } })),
+                R = ({ audioChartGenerator: e, barConfig: t, data: a, frequencies: n, maxValue: o, minValue: i }) => {
                     const s = r.useRef(Array.from({ length: a.length }, () => null)),
                         u = (e) => (t) => {
                             const a = s?.current;
@@ -106,7 +106,7 @@
                         [d, p] = r.useState(null),
                         m = { ...D, ...t },
                         g = "fixedBarWidth" === m.layout,
-                        f = (e) => ({ flex: g ? null : 1, height: `${P(e.value, o, i)}%`, width: g ? c.default.theme.spaces[m.width] : "auto", minWidth: c.default.theme.spaces.space1, maxWidth: "100%", backgroundColor: e.color ? c.default.theme.colors[e.color] : c.default.theme.colors.blue500, borderRadius: c.default.theme.borderRadii[m.borderRadii], marginHorizontal: c.default.theme.spaces[m.spacing], ...(!!e.popover && { cursor: "pointer" }) }),
+                        f = (e) => ({ flex: g ? null : 1, height: `${z(e.value, o, i)}%`, width: g ? c.default.theme.spaces[m.width] : "auto", minWidth: c.default.theme.spaces.space1, maxWidth: "100%", backgroundColor: e.color ? c.default.theme.colors[e.color] : c.default.theme.colors.blue500, borderRadius: c.default.theme.borderRadii[m.borderRadii], marginHorizontal: c.default.theme.spaces[m.spacing], ...(!!e.popover && { cursor: "pointer" }) }),
                         y = (e) => {
                             d === e && p(null);
                         };
@@ -115,10 +115,10 @@
                             c = !!t.popover;
                         return r.createElement(
                             l.Z,
-                            { key: `normalBarWrapper${o}`, style: [R.normalBarWrapper, ((m = o), null !== d ? (m === d ? { opacity: 1 } : { opacity: 0.5 }) : { opacity: 1 })] },
+                            { key: `normalBarWrapper${o}`, style: [M.normalBarWrapper, ((m = o), null !== d ? (m === d ? { opacity: 1 } : { opacity: 0.5 }) : { opacity: 1 })] },
                             r.createElement(
                                 h.Z,
-                                { contentStyle: { minWidth: 0 }, disabled: !c, enableEnterKeyToggle: !0, enableHover: !0, hoverDelay: "short", onDismiss: () => y(o), onHoverCardUnmount: () => y(o), onOpen: () => p(o), preferredVerticalOrientation: "up", renderContent: I(t), withArrow: !0, wrapperStyle: f(t) },
+                                { contentStyle: { minWidth: 0 }, disabled: !c, enableEnterKeyToggle: !0, enableHover: !0, hoverDelay: "short", onDismiss: () => y(o), onHoverCardUnmount: () => y(o), onOpen: () => p(o), preferredVerticalOrientation: "up", renderContent: k(t), withArrow: !0, wrapperStyle: f(t) },
                                 r.createElement(l.Z, {
                                     "aria-label": i,
                                     focusable: 0 === o,
@@ -148,9 +148,9 @@
                         var m;
                     });
                 },
-                M = o().dec1d7ef,
-                O = o().f765bead,
-                H = ({ barConfig: e, data: t, maxValue: a, minValue: n }) => {
+                G = o().dec1d7ef,
+                H = o().f765bead,
+                O = ({ barConfig: e, data: t, maxValue: a, minValue: n }) => {
                     const o = r.useRef(Array.from({ length: t.length }, () => [])),
                         i = (e, t) => (a) => {
                             const r = o?.current;
@@ -159,7 +159,7 @@
                         s = { ...D, ...e },
                         u = "fixedBarWidth" === s.layout,
                         [d, p] = r.useState(null),
-                        m = (e, t) => ({ height: `${P(t.value, a, n)}%`, width: u ? c.default.theme.spaces[s.width] : "100%", minWidth: c.default.theme.spaces.space1, maxWidth: "100%", backgroundColor: t.color ? c.default.theme.colors[t.color] : c.default.theme.colors.blue500, borderRadius: c.default.theme.borderRadii[s.borderRadii], marginTop: c.default.theme.spaces.space2 }),
+                        m = (e, t) => ({ height: `${z(t.value, a, n)}%`, width: u ? c.default.theme.spaces[s.width] : "100%", minWidth: c.default.theme.spaces.space1, maxWidth: "100%", backgroundColor: t.color ? c.default.theme.colors[t.color] : c.default.theme.colors.blue500, borderRadius: c.default.theme.borderRadii[s.borderRadii], marginTop: c.default.theme.spaces.space2 }),
                         g = (e) => {
                             d === e && p(null);
                         };
@@ -171,15 +171,15 @@
                             { key: `barGroup${a}`, style: { height: "100%", display: "flex", flex: 1, justifyContent: "flex-start", flexDirection: "column-reverse", alignItems: "center", marginHorizontal: c.default.theme.spaces[s.spacing], ...((u = a), null !== d ? (u === d ? { opacity: 1 } : { opacity: 0.5 }) : { opacity: 1 }), ...(n && { cursor: "pointer" }) }, testID: `barGroup${a}` },
                             r.createElement(
                                 h.Z,
-                                { contentStyle: { minWidth: 0 }, disabled: !n, enableEnterKeyToggle: !0, enableHover: !0, hoverDelay: "short", onDismiss: () => g(a), onHoverCardUnmount: () => g(a), onOpen: () => p(a), preferredVerticalOrientation: "up", renderContent: I(e), withArrow: !0, wrapperStyle: { height: "100%", display: "flex", flex: 1, justifyContent: "flex-start", flexDirection: "column-reverse", alignItems: "center" } },
+                                { contentStyle: { minWidth: 0 }, disabled: !n, enableEnterKeyToggle: !0, enableHover: !0, hoverDelay: "short", onDismiss: () => g(a), onHoverCardUnmount: () => g(a), onOpen: () => p(a), preferredVerticalOrientation: "up", renderContent: k(e), withArrow: !0, wrapperStyle: { height: "100%", display: "flex", flex: 1, justifyContent: "flex-start", flexDirection: "column-reverse", alignItems: "center" } },
                                 e.values.map((n, s) => {
-                                    const c = e.label ? M({ label: e.label?.props.children, group: n.group, value: n.value }) : O({ group: n.group, value: n.value });
+                                    const c = e.label ? G({ label: e.label?.props.children, group: n.group, value: n.value }) : H({ group: n.group, value: n.value });
                                     return r.createElement(l.Z, {
                                         "aria-label": c,
                                         focusable: !0,
                                         key: `barGroup${s}Bar${s}`,
                                         onKeyDown: (e) => {
-                                            Z(e, a, s, o, t.length);
+                                            w(e, a, s, o, t.length);
                                         },
                                         ref: i(a, s),
                                         role: "img",
@@ -192,12 +192,12 @@
                         var u;
                     });
                 },
-                K = o().ef8b2f54,
-                L = o().d567ceda,
-                j = o().f7b30768,
+                L = o().ef8b2f54,
+                j = o().d567ceda,
+                K = o().f7b30768,
                 q = o().hcd54328,
-                _ = ({ gridlines: e, maxValue: t, minValue: a }) => (e ? e.map((e, n) => r.createElement(l.Z, { key: `gridline${n}`, style: [N.gridLine, { bottom: `${P(e, t, a)}%` }], testID: `gridline${n}` })) : null),
-                F = ({ data: e, labelStyle: t }) => (e ? e.map((e, a) => ("string" == typeof e.label ? r.createElement(l.Z, { "aria-hidden": !0, key: `label${a}`, style: N.label }, r.createElement(i.ZP, { align: "center", color: "gray700", size: "subtext2", style: [{ marginTop: c.default.theme.spaces.space8 }, t], weight: "medium" }, e.label)) : r.createElement(l.Z, { "aria-hidden": !0, key: `label${a}`, style: N.label }, e.label))) : null),
+                F = ({ gridlines: e, maxValue: t, minValue: a }) => (e ? e.map((e, n) => r.createElement(l.Z, { key: `gridline${n}`, style: [N.gridLine, { bottom: `${z(e, t, a)}%` }], testID: `gridline${n}` })) : null),
+                _ = ({ data: e, labelStyle: t }) => (e ? e.map((e, a) => ("string" == typeof e.label ? r.createElement(l.Z, { "aria-hidden": !0, key: `label${a}`, style: N.label }, r.createElement(i.ZP, { align: "center", color: "gray700", size: "subtext2", style: [{ marginTop: c.default.theme.spaces.space8 }, t], weight: "medium" }, e.label)) : r.createElement(l.Z, { "aria-hidden": !0, key: `label${a}`, style: N.label }, e.label))) : null),
                 U = ({ maxValue: e, minValue: t, ticks: a }) => {
                     const n =
                             a ||
@@ -211,39 +211,39 @@
                             })(e, t),
                         o = n.sort((e, t) => e.value - t.value);
                     return o.map((a, n) => {
-                        const i = 0 === n ? P(a.value, e, t) : (100 * (a.value - o[n - 1].value)) / (e - t);
+                        const i = 0 === n ? z(a.value, e, t) : (100 * (a.value - o[n - 1].value)) / (e - t);
                         return r.createElement(l.Z, { "aria-hidden": !0, key: `tick${n}`, style: { position: "relative", height: `${i}%`, paddingBottom: "0.75em" } }, a.label);
                     });
                 },
                 N = c.default.create((e) => ({ title: { color: e.colors.gray700, marginBottom: "1em" }, titleBar: { display: "flex", flexDirection: "row" }, grid: { display: "grid", gridTemplateColumns: "1fr auto", gridTemplateRows: "1fr auto", width: "100%", minWidth: "100px", height: `calc(${e.spaces.space56} * 2)`, padding: e.spaces.space4 }, chartArea: { position: "relative", height: "100%", display: "flex", flexDirection: "row", flexGrow: 1 }, gridLine: { position: "absolute", width: "100%", height: 1, backgroundColor: e.colors.gray200 }, yAxis: { height: "100%", position: "relative", display: "flex", flexDirection: "column-reverse", marginStart: e.spaces.space12 }, xAxis: { display: "flex", flexDirection: "row" }, label: { flex: 1 } })),
                 J = ({ audioChart: e = !1, barConfig: t, data: a, dataGrouped: n, gridlines: o, labelStyle: c, stacked: p = !1, style: m, ticks: h, title: g, titleDescription: f }) => {
                     const y = (0, s.b)();
-                    let b, v, x, E, Z;
+                    let b, v, x, E, w;
                     const C = r.useRef();
                     C.current || (C.current = new u.Z());
                     const D = h ? h.map((e) => e.value) : [],
-                        B = ((e, t, a) => (void 0 !== e ? T(e) : void 0 !== t ? (a ? k(t) : T(t)) : void V()(e || t, "Either data or groupedData props must be passed")))(a, n, p);
+                        B = ((e, t, a) => (void 0 !== e ? I(e) : void 0 !== t ? (a ? P(t) : I(t)) : void V()(e || t, "Either data or groupedData props must be passed")))(a, n, p);
                     if (!B) return null;
-                    const P = Math.max(...B, ...D),
-                        I = Math.min(...B, ...D);
+                    const z = Math.max(...B, ...D),
+                        k = Math.min(...B, ...D);
                     if (void 0 !== a)
-                        (v = L),
+                        (v = j),
                             (E = a.length),
                             e &&
                                 ((x = C.current?.mapDataPointsToFrequencies([...B, ...D])),
-                                (Z = () => {
+                                (w = () => {
                                     C?.current?.playDisconnectedDataPointsAsTone(a, 0.7, 0.3);
                                 })),
-                            (b = r.createElement(G, { audioChartGenerator: C, barConfig: t, data: a, frequencies: x, maxValue: P, minValue: I }));
+                            (b = r.createElement(R, { audioChartGenerator: C, barConfig: t, data: a, frequencies: x, maxValue: z, minValue: k }));
                     else {
                         if (void 0 === n) return null;
-                        (Z = void 0), (E = n.length), p ? ((b = r.createElement(H, { barConfig: t, data: n, maxValue: P, minValue: I })), (v = j)) : ((b = r.createElement(z, { barConfig: t, data: n, maxValue: P, minValue: I })), (v = q));
+                        (w = void 0), (E = n.length), p ? ((b = r.createElement(O, { barConfig: t, data: n, maxValue: z, minValue: k })), (v = K)) : ((b = r.createElement($, { barConfig: t, data: n, maxValue: z, minValue: k })), (v = q));
                     }
-                    return r.createElement(l.Z, { "aria-labelledby": y, role: "figure" }, g && r.createElement(l.Z, { style: N.titleBar }, r.createElement(i.ZP, { focusable: !1, id: y, role: "heading", size: "subtext2", style: N.title, weight: "medium" }, g), f ? r.createElement(d.Z, { label: g, popover: f }) : null, r.createElement(w, { chartTitle: g, chartType: v, maxValue: P, minValue: I, noOfCategories: E, playAudioChart: Z })), r.createElement(l.Z, { style: [N.grid, m] }, r.createElement(l.Z, { "aria-label": K, focusable: !1, key: "chartArea", role: "application", style: N.chartArea }, r.createElement(_, { gridlines: o, maxValue: P, minValue: I }), b), r.createElement(l.Z, { key: "yAxis", style: N.yAxis }, r.createElement(U, { maxValue: P, minValue: I, ticks: h })), r.createElement(l.Z, { key: "xAxis", style: N.xAxis }, r.createElement(F, { data: a || n, labelStyle: c }))));
+                    return r.createElement(l.Z, { "aria-labelledby": y, role: "figure" }, g && r.createElement(l.Z, { style: N.titleBar }, r.createElement(i.ZP, { focusable: !1, id: y, role: "heading", size: "subtext2", style: N.title, weight: "medium" }, g), f ? r.createElement(d.Z, { label: g, popover: f }) : null, r.createElement(Z, { chartTitle: g, chartType: v, maxValue: z, minValue: k, noOfCategories: E, playAudioChart: w })), r.createElement(l.Z, { style: [N.grid, m] }, r.createElement(l.Z, { "aria-label": L, focusable: !1, key: "chartArea", role: "application", style: N.chartArea }, r.createElement(F, { gridlines: o, maxValue: z, minValue: k }), b), r.createElement(l.Z, { key: "yAxis", style: N.yAxis }, r.createElement(U, { maxValue: z, minValue: k, ticks: h })), r.createElement(l.Z, { key: "xAxis", style: N.xAxis }, r.createElement(_, { data: a || n, labelStyle: c }))));
                 };
         },
         738545: (e, t, a) => {
-            a.d(t, { ZP: () => w });
+            a.d(t, { ZP: () => Z });
             var r = a(202784),
                 l = a(325686),
                 n = a(111677),
@@ -262,24 +262,24 @@
                 b = o().c5a9f921,
                 v = (e) => {
                     const { label: t, popover: a } = e;
-                    return t ? r.createElement(l.Z, { style: Z.labelBar }, r.createElement(u.ZP, { color: "gray700", size: "subtext2", weight: "medium" }, t), a ? r.createElement(m.Z, { label: t, popover: a }) : null) : null;
+                    return t ? r.createElement(l.Z, { style: w.labelBar }, r.createElement(u.ZP, { color: "gray700", size: "subtext2", weight: "medium" }, t), a ? r.createElement(m.Z, { label: t, popover: a }) : null) : null;
                 },
                 x = (e) => {
                     const { style: t, unit: a } = e;
-                    return a ? r.createElement(u.ZP, { color: "gray700", style: [Z.unitText, t], weight: "medium" }, a) : null;
+                    return a ? r.createElement(u.ZP, { color: "gray700", style: [w.unitText, t], weight: "medium" }, a) : null;
                 },
                 E = (e) => {
                     let t,
                         a,
                         { trendValue: n } = e;
-                    return void 0 === n ? null : (Math.abs(n) < 0.1 ? ((n = Math.round(1e3 * n) / 1e3), (t = g(n))) : ((n = Math.round(100 * n) / 100), (t = h(n))), (a = ((e, t) => (e < 0 ? f({ trendValueNegativePercent: t }) : 0 === e ? y : b({ trendValuePositivePercent: t })))(n, t)), n < 0 ? r.createElement(l.Z, { style: Z.trendBar, testID: "trendLabel" }, r.createElement(i.default, { "aria-label": a, style: Z.trendIconNeg }), r.createElement(u.ZP, { "aria-hidden": !0, color: "red500", size: "body", weight: "medium" }, t)) : 0 === n ? r.createElement(l.Z, { style: Z.trendBar, testID: "trendLabel" }, r.createElement(s.default, { "aria-label": a, style: Z.trendIconZero }), r.createElement(u.ZP, { "aria-hidden": !0, color: "gray700", size: "body", weight: "medium" }, t)) : r.createElement(l.Z, { style: Z.trendBar, testID: "trendLabel" }, r.createElement(c.default, { "aria-label": a, style: Z.trendIconPos }), r.createElement(u.ZP, { "aria-hidden": !0, color: "green500", size: "body", weight: "medium" }, t)));
+                    return void 0 === n ? null : (Math.abs(n) < 0.1 ? ((n = Math.round(1e3 * n) / 1e3), (t = g(n))) : ((n = Math.round(100 * n) / 100), (t = h(n))), (a = ((e, t) => (e < 0 ? f({ trendValueNegativePercent: t }) : 0 === e ? y : b({ trendValuePositivePercent: t })))(n, t)), n < 0 ? r.createElement(l.Z, { style: w.trendBar, testID: "trendLabel" }, r.createElement(i.default, { "aria-label": a, style: w.trendIconNeg }), r.createElement(u.ZP, { "aria-hidden": !0, color: "red500", size: "body", weight: "medium" }, t)) : 0 === n ? r.createElement(l.Z, { style: w.trendBar, testID: "trendLabel" }, r.createElement(s.default, { "aria-label": a, style: w.trendIconZero }), r.createElement(u.ZP, { "aria-hidden": !0, color: "gray700", size: "body", weight: "medium" }, t)) : r.createElement(l.Z, { style: w.trendBar, testID: "trendLabel" }, r.createElement(c.default, { "aria-label": a, style: w.trendIconPos }), r.createElement(u.ZP, { "aria-hidden": !0, color: "green500", size: "body", weight: "medium" }, t)));
                 },
-                Z = p.default.create((e) => ({ dataPoint: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, labelBar: { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: e.spaces.space2 }, valueBar: { display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "flex-end", marginBottom: e.spaces.space4 }, unitText: { flexDirection: "column" }, trendBar: { flexDirection: "row" }, textWithMargin: { marginEnd: e.spaces.space4 }, trendIconPos: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.green500 }, trendIconZero: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.gray700 }, trendIconNeg: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.red500 } })),
-                w = (e) => {
+                w = p.default.create((e) => ({ dataPoint: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, labelBar: { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: e.spaces.space2 }, valueBar: { display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "flex-end", marginBottom: e.spaces.space4 }, unitText: { flexDirection: "column" }, trendBar: { flexDirection: "row" }, textWithMargin: { marginEnd: e.spaces.space4 }, trendIconPos: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.green500 }, trendIconZero: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.gray700 }, trendIconNeg: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.red500 } })),
+                Z = (e) => {
                     const { animated: t, count: a, label: n, popover: o, size: i, subTextList: s, trendValue: c, unit: p, value: m } = e,
-                        h = p || void 0 !== c ? Z.textWithMargin : void 0,
-                        g = void 0 !== c ? Z.textWithMargin : void 0;
-                    return r.createElement(l.Z, { style: Z.dataPoint }, r.createElement(v, { label: n, popover: o }), r.createElement(l.Z, { style: Z.valueBar }, t ? r.createElement(d.ZP, { count: a, size: i, style: h, weight: "bold" }, m) : r.createElement(u.ZP, { size: i, style: h, weight: "bold" }, m), r.createElement(x, { style: g, unit: p }), r.createElement(E, { trendValue: c })), s);
+                        h = p || void 0 !== c ? w.textWithMargin : void 0,
+                        g = void 0 !== c ? w.textWithMargin : void 0;
+                    return r.createElement(l.Z, { style: w.dataPoint }, r.createElement(v, { label: n, popover: o }), r.createElement(l.Z, { style: w.valueBar }, t ? r.createElement(d.ZP, { count: a, size: i, style: h, weight: "bold" }, m) : r.createElement(u.ZP, { size: i, style: h, weight: "bold" }, m), r.createElement(x, { style: g, unit: p }), r.createElement(E, { trendValue: c })), s);
                 };
         },
         635998: (e, t, a) => {
@@ -362,6 +362,32 @@
             const s = o.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 c = i;
         },
+        246492: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => s });
+            var r = a(202784),
+                l = a(890601),
+                n = a(783427),
+                o = a(347101);
+            const i = (e = {}) => {
+                const { direction: t } = (0, n.Z)();
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm5.586-2l4.207 4.21 1.414-1.42L19.414 10H24V8h-4.586l1.793-1.79-1.414-1.42L15.586 9z" })) }, { writingDirection: t });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const s = i;
+        },
+        264171: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => s });
+            var r = a(202784),
+                l = a(890601),
+                n = a(783427),
+                o = a(347101);
+            const i = (e = {}) => {
+                const { direction: t } = (0, n.Z)();
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: t });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const s = i;
+        },
         98440: (e, t, a) => {
             a.r(t), a.d(t, { default: () => s });
             var r = a(202784),
@@ -375,6 +401,32 @@
             i.metadata = { width: 24, height: 24 };
             const s = i;
         },
+        262009: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => s });
+            var r = a(202784),
+                l = a(890601),
+                n = a(783427),
+                o = a(347101);
+            const i = (e = {}) => {
+                const { direction: t } = (0, n.Z)();
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1C11.26 7.53 12 5.35 12 2h2zM5 1c0 1.66-1.34 3-3 3v1c1.66 0 3 1.34 3 3h1c0-1.66 1.34-3 3-3V4C7.34 4 6 2.66 6 1H5z" })) }, { writingDirection: t });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const s = i;
+        },
+        452693: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => s });
+            var r = a(202784),
+                l = a(890601),
+                n = a(783427),
+                o = a(347101);
+            const i = (e = {}) => {
+                const { direction: t } = (0, n.Z)();
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const s = i;
+        },
         465233: (e, t, a) => {
             a.d(t, { Z: () => l });
             var r = a(716406);
@@ -384,4 +436,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConversationWithRelay-bc6ccf4c.f877c0ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConversationWithRelay-bc6ccf4c.5171960a.js.map

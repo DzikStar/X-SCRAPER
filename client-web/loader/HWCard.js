@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.HWCard"],
+    ["loader.HWCard", "icons/IconBookmarkPlusStroke-js", "icons/IconNumberedList-js"],
     {
         721879: (e) => {
             e.exports = { queryId: "kdUVS11GOq2h4tu5cwSZHA", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
@@ -30,7 +30,7 @@
         },
         403911: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => I });
+            n.d(t, { Z: () => Z });
             var o = n(506899),
                 r = n(163889),
                 a = n(414742),
@@ -44,8 +44,8 @@
                 _ = n.n(u),
                 f = n(295904),
                 p = n.n(f),
-                b = n(769948),
-                h = n.n(b),
+                h = n(769948),
+                b = n.n(h),
                 g = n(871585),
                 w = n.n(g),
                 k = n(418631),
@@ -53,8 +53,8 @@
                 v = n(734701),
                 E = n.n(v),
                 D = n(630986),
-                T = n.n(D),
-                S = n(934309);
+                S = n.n(D),
+                T = n(934309);
             const $ = { result: [], entities: {}, slice_info: {} },
                 F = (e, t) => {
                     const n = t?.bookmark_all_delete,
@@ -71,7 +71,7 @@
                     const t = e?.bookmark_collection_timeline?.timeline;
                     return !t;
                 }, "GQL Bookmark Folders: Failed to render Bookmark Folders timeline"),
-                I = ({ apiClient: e, featureSwitches: t }) => ({
+                Z = ({ apiClient: e, featureSwitches: t }) => ({
                     bookmarkTweetToFolder: (t) =>
                         e.graphQL(
                             p(),
@@ -80,7 +80,7 @@
                         ),
                     createBookmarkFolder: (t) =>
                         e.graphQL(
-                            h(),
+                            b(),
                             { ...t },
                             (0, a.kj)((e) => !e.bookmark_collection_create, "GQL Bookmark Folders: failed to Create Bookmark Folder"),
                         ),
@@ -95,10 +95,10 @@
                     },
                     removeTweetFromBookmarkFolder(t) {
                         const { bookmarkFolderId: n, tweetId: o } = t;
-                        return e.graphQL(T(), { bookmark_collection_id: n, tweet_id: o });
+                        return e.graphQL(S(), { bookmark_collection_id: n, tweet_id: o });
                     },
-                    fetchBookmarksTimeline: ({ count: n, cursor: o }) => e.graphQL(_(), { count: n, cursor: o, includePromotedContent: !0, ...(0, i.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || S.cY),
-                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: n, cursor: o }) => e.graphQL(m(), { bookmark_collection_id: n, cursor: o, includePromotedContent: !0, ...(0, i.d)(t) }, P).then((e) => e?.bookmark_collection_timeline?.timeline || S.cY),
+                    fetchBookmarksTimeline: ({ count: n, cursor: o }) => e.graphQL(_(), { count: n, cursor: o, includePromotedContent: !0, ...(0, i.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || T.cY),
+                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: n, cursor: o }) => e.graphQL(m(), { bookmark_collection_id: n, cursor: o, includePromotedContent: !0, ...(0, i.d)(t) }, P).then((e) => e?.bookmark_collection_timeline?.timeline || T.cY),
                     fetchBookmarkFoldersSlice: (t) =>
                         t
                             ? e.graphQL(d(), t, x).then((e) => {
@@ -157,7 +157,7 @@
         },
         694180: (e, t, n) => {
             "use strict";
-            n.d(t, { cM: () => b, dS: () => p, iY: () => h });
+            n.d(t, { cM: () => h, dS: () => p, iY: () => b });
             var o = n(370751),
                 r = n(399896),
                 a = n(663550),
@@ -181,19 +181,19 @@
                             if (!t && u.has(a)) return [_(c)];
                         });
                     },
-                b =
+                h =
                     ({ disclosureType: e, itemId: t, itemType: n, params: o }) =>
                     (a, i, { api: s }) => {
                         const { event: c, impression_id: u } = o,
                             p = `${n}-${t ?? "undefined"}-${u ?? "undefined"}-${c ?? "undefined"}`;
                         if (m.has(c) && f(i(), p)) return Promise.resolve();
-                        const b = e && "earned" === e.toLowerCase() ? "1" : null,
-                            h = { ...o, earned: b, epoch_ms: Date.now() };
-                        return (0, l._O)(a, { params: h, request: s.withEndpoint(r.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: h }, (e, t) => {
+                        const h = e && "earned" === e.toLowerCase() ? "1" : null,
+                            b = { ...o, earned: h, epoch_ms: Date.now() };
+                        return (0, l._O)(a, { params: b, request: s.withEndpoint(r.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: b }, (e, t) => {
                             if (!t && m.has(c)) return [_(p)];
                         });
                     },
-                h =
+                b =
                     (e) =>
                     (t, n, { api: o }) =>
                         (0, l._O)(t, { params: e, request: o.withEndpoint(r.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: e });
@@ -260,10 +260,10 @@
                     return !(!t && !n) || !a()(e, this.props);
                 }
                 render() {
-                    const { "aria-label": e, color: t, failureMessage: n, fetchStatus: r, icon: a, loadingMessage: i, onRequestRetry: c, render: _, renderFailure: f, retryMessage: p, retryable: b } = this.props;
+                    const { "aria-label": e, color: t, failureMessage: n, fetchStatus: r, icon: a, loadingMessage: i, onRequestRetry: c, render: _, renderFailure: f, retryMessage: p, retryable: h } = this.props;
                     switch (r) {
                         case d:
-                            return b ? o.createElement(l.Z, { icon: a, onRequestRetry: c, retryMessage: p }) : n ? o.createElement(s.m, { failureMessage: n }) : f();
+                            return h ? o.createElement(l.Z, { icon: a, onRequestRetry: c, retryMessage: p }) : n ? o.createElement(s.m, { failureMessage: n }) : f();
                         case m:
                             return o.createElement(s.J, { "aria-label": e, color: t, loadingMessage: i });
                         case u:
@@ -294,7 +294,7 @@
                 render() {
                     const { displayFacepileInline: e, knownFollowersAvatarUrls: t, knownFollowersCount: n, textStyle: a, userScreenName: i, withFacepile: m } = this.props,
                         _ = this._renderMessage();
-                    return o.createElement(l.Z, { duration: "long", show: void 0 !== n, type: "fade" }, n ? o.createElement(c.Z, { "aria-label": u, interactiveStyles: null, link: i ? ((f = i), `/${f}/followers_you_follow`) : void 0 }, ({ isHovered: n, isPressed: l }) => o.createElement(r.Z, { style: b.content }, !e && m ? o.createElement(d.Z, { userAvatarUrls: t }) : null, o.createElement(s.ZP, { color: "gray700", size: "subtext2", style: [!e && b.message, (n || l) && !!i && b.underline, a] }, e && m ? o.createElement(d.Z, { style: b.inlineFacepile, userAvatarUrls: t }) : null, _))) : o.createElement(r.Z, { style: b.content }, o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, _)));
+                    return o.createElement(l.Z, { duration: "long", show: void 0 !== n, type: "fade" }, n ? o.createElement(c.Z, { "aria-label": u, interactiveStyles: null, link: i ? ((f = i), `/${f}/followers_you_follow`) : void 0 }, ({ isHovered: n, isPressed: l }) => o.createElement(r.Z, { style: h.content }, !e && m ? o.createElement(d.Z, { userAvatarUrls: t }) : null, o.createElement(s.ZP, { color: "gray700", size: "subtext2", style: [!e && h.message, (n || l) && !!i && h.underline, a] }, e && m ? o.createElement(d.Z, { style: h.inlineFacepile, userAvatarUrls: t }) : null, _))) : o.createElement(r.Z, { style: h.content }, o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, _)));
                     var f;
                 }
                 _renderMessage() {
@@ -316,7 +316,7 @@
                 }
             }
             p.defaultProps = { displayFacepileInline: !1, withFacepile: !0 };
-            const b = m.default.create((e) => ({ content: { flexDirection: "row" }, message: { flexShrink: 1, marginStart: e.spaces.space12 }, underline: { textDecorationLine: "underline" }, inlineFacepile: { verticalAlign: "middle", marginEnd: e.spaces.space4 } }));
+            const h = m.default.create((e) => ({ content: { flexDirection: "row" }, message: { flexShrink: 1, marginStart: e.spaces.space12 }, underline: { textDecorationLine: "underline" }, inlineFacepile: { verticalAlign: "middle", marginEnd: e.spaces.space4 } }));
         },
         135904: (e, t, n) => {
             "use strict";
@@ -342,18 +342,18 @@
                 _ = n(202253),
                 f = n(786475),
                 p = n(392237),
-                b = n(135904);
-            const h = { [d.P7.atomic]: { element: "section" }, [d.P7.header1]: { element: "h1", wrapper: o.createElement(s.ZP, null) }, [d.P7.header2]: { element: "h2", wrapper: o.createElement(s.ZP, null) } },
-                g = (0, i.Z)(h).reduce((e, [t, n]) => e.set(t, n), r.DefaultDraftBlockRenderMap);
+                h = n(135904);
+            const b = { [d.P7.atomic]: { element: "section" }, [d.P7.header1]: { element: "h1", wrapper: o.createElement(s.ZP, null) }, [d.P7.header2]: { element: "h2", wrapper: o.createElement(s.ZP, null) } },
+                g = (0, i.Z)(b).reduce((e, [t, n]) => e.set(t, n), r.DefaultDraftBlockRenderMap);
             let w = !1;
             const k = o.memo(function (e) {
                     const { componentByType: t, contentState: n, onScribeEvent: i, paragraphFontSizeOverride: s } = e;
                     o.useEffect(() => {
-                        w || (m.fH(b.c, b.n), (w = !0));
+                        w || (m.fH(h.c, h.n), (w = !0));
                     }, []);
                     const p = [(0, _.ez)(i, s), _.aF, _.RU];
                     e.disable_entityLinkDecorator || p.push((0, _.NA)(i, s));
-                    const h = u.Z.initEditorState(n, { decorators: p });
+                    const b = u.Z.initEditorState(n, { decorators: p });
                     let k = l.Z;
                     return (
                         t &&
@@ -361,14 +361,14 @@
                                 const n = e.getType();
                                 return t[n] || null;
                             }),
-                        o.createElement(c.ZP, null, ({ containerWidth: e }) => o.createElement(a.Z, { style: y.fontFamily }, o.createElement(r.Editor, { blockRenderMap: g, blockRendererFn: k, blockStyleFn: (0, d.su)(f.Z.isNarrowScreenWidth(e)), editorState: h, onChange: l.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
+                        o.createElement(c.ZP, null, ({ containerWidth: e }) => o.createElement(a.Z, { style: y.fontFamily }, o.createElement(r.Editor, { blockRenderMap: g, blockRendererFn: k, blockStyleFn: (0, d.su)(f.Z.isNarrowScreenWidth(e)), editorState: b, onChange: l.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
                     );
                 }),
                 y = p.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
         },
         779802: (e, t, n) => {
             "use strict";
-            n.d(t, { $u: () => D, Ak: () => x, KJ: () => k, LI: () => T, P7: () => b, PW: () => E, QF: () => h, Qm: () => w, Tr: () => S, b$: () => p, db: () => I, et: () => v, fR: () => f, iH: () => $, lD: () => g, su: () => y, u4: () => P, wX: () => F });
+            n.d(t, { $u: () => D, Ak: () => x, KJ: () => k, LI: () => S, P7: () => h, PW: () => E, QF: () => b, Qm: () => w, Tr: () => T, b$: () => p, db: () => Z, et: () => v, fR: () => f, iH: () => $, lD: () => g, su: () => y, u4: () => P, wX: () => F });
             var o = n(202784),
                 r = n(111677),
                 a = n.n(r),
@@ -386,28 +386,28 @@
                     { buttonTestId: "btn-italic", Icon: l.default, key: f.italic, onPress: e(f.italic) },
                     { buttonTestId: "btn-strikethrough", Icon: s.default, key: f.strikethrough, onPress: e(f.strikethrough) },
                 ],
-                b = { atomic: "atomic", blockquote: "blockquote", bulleted: "unordered-list-item", header1: "header-one", header2: "header-two", numbered: "ordered-list-item", paragraph: "unstyled" },
-                h = (e) => [{ buttonTestId: "btn-blockquote", Icon: d.default, key: b.blockquote, onPress: e(b.blockquote) }],
+                h = { atomic: "atomic", blockquote: "blockquote", bulleted: "unordered-list-item", header1: "header-one", header2: "header-two", numbered: "ordered-list-item", paragraph: "unstyled" },
+                b = (e) => [{ buttonTestId: "btn-blockquote", Icon: d.default, key: h.blockquote, onPress: e(h.blockquote) }],
                 g = (e) => [
-                    { buttonTestId: "btn-ul", Icon: c.default, key: b.bulleted, onPress: e(b.bulleted) },
-                    { buttonTestId: "btn-ol", Icon: m.default, key: b.numbered, onPress: e(b.numbered) },
+                    { buttonTestId: "btn-ul", Icon: c.default, key: h.bulleted, onPress: e(h.bulleted) },
+                    { buttonTestId: "btn-ol", Icon: m.default, key: h.numbered, onPress: e(h.numbered) },
                 ],
                 w = "LINK",
                 k = (e) => [{ buttonTestId: "btn-link", Icon: u.default, key: w, onPress: e }],
                 y = (e, t) => (n) => {
                     const o = (t) => (e ? `${t}-narrow` : t);
                     switch (n.getType()) {
-                        case b.bulleted:
+                        case h.bulleted:
                             return o("longform-unordered-list-item");
-                        case b.blockquote:
+                        case h.blockquote:
                             return o("longform-blockquote");
-                        case b.header1:
+                        case h.header1:
                             return o("longform-header-one");
-                        case b.header2:
+                        case h.header2:
                             return o("longform-header-two");
-                        case b.numbered:
+                        case h.numbered:
                             return o("longform-ordered-list-item");
-                        case b.paragraph:
+                        case h.paragraph:
                             return o("longform-unstyled");
                         default:
                             return t?.(n) || "";
@@ -416,13 +416,13 @@
                 v = a().d5a48014,
                 E = a().b92b6156,
                 D = a().ec5ed598,
-                T = ({ children: e, extendedWidth: t, size: n, weight: r }) => o.createElement(_.ZP, { extendedWidth: t, size: n, weight: r }, e),
-                S = { blockType: b.paragraph, label: D, component: T({ size: "body", children: D }) },
-                $ = [{ blockType: b.header1, label: v, component: T({ size: "title1", extendedWidth: !0, children: v }) }, { blockType: b.header2, label: E, component: T({ size: "title3", weight: "heavy", children: E }) }, S],
+                S = ({ children: e, extendedWidth: t, size: n, weight: r }) => o.createElement(_.ZP, { extendedWidth: t, size: n, weight: r }, e),
+                T = { blockType: h.paragraph, label: D, component: S({ size: "body", children: D }) },
+                $ = [{ blockType: h.header1, label: v, component: S({ size: "title1", extendedWidth: !0, children: v }) }, { blockType: h.header2, label: E, component: S({ size: "title3", weight: "heavy", children: E }) }, T],
                 F = ["backspace", "backspace-word", "backspace-to-start-of-line"],
                 x = ["delete", "delete-word", "delete-to-start-of-line"],
                 P = "increase-text-size",
-                I = "decrease-text-size";
+                Z = "decrease-text-size";
         },
         989272: (e, t, n) => {
             "use strict";
@@ -496,6 +496,34 @@
                     ),
             };
         },
+        818088: (e, t, n) => {
+            "use strict";
+            n.r(t), n.d(t, { default: () => s });
+            var o = n(202784),
+                r = n(890601),
+                a = n(783427),
+                i = n(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M17 3V0h2v3h3v2h-3v3h-2V5h-3V3h3zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V11h2v11.94l-8-5.71-8 5.71V4.5C4 3.12 5.119 2 6.5 2h4.502v2H6.5z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
+        89085: (e, t, n) => {
+            "use strict";
+            n.r(t), n.d(t, { default: () => s });
+            var o = n(202784),
+                r = n(890601),
+                a = n(783427),
+                i = n(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M3.905 6.516h-.423V4.354h.263c.564-.015 1.018-.126 1.361-.332s.61-.529.8-.972h2.093v7.949H5.471v-4.94c-.351.305-.873.457-1.567.457zm2.194 10.88c.403-.273.69-.542.861-.81.171-.265.257-.566.257-.9 0-.304-.087-.542-.262-.713-.175-.172-.426-.257-.753-.257-.35 0-.623.096-.821.285-.198.19-.297.457-.297.799 0 .145.016.296.046.457l-2.577-.228c-.023-.175-.034-.342-.034-.502 0-.547.16-1.018.479-1.413s.764-.699 1.334-.913c.57-.213 1.224-.319 1.961-.319 1.125 0 2.009.221 2.651.662.643.441.964 1.079.964 1.916 0 .532-.112.998-.336 1.397-.224.399-.584.766-1.078 1.1-.562.381-1.372.768-2.428 1.164H10v1.881H2.542v-1.687c1.642-.806 2.828-1.445 3.558-1.917zM22 6H12v2h10V6zm0 10H12v2h10v-2z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.HWCard.8688715a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.HWCard.36dc4e9a.js.map

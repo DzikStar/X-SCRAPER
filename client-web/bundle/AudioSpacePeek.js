@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.AudioSpacePeek", "loader.AudioDock", "bundle.AudioSpaceDetail", "loader.AudioContextVoiceMedia"],
+    ["bundle.AudioSpacePeek", "bundle.AudioSpaceDetail", "loader.AudioContextVoiceMedia", "icons/IconFollowArrowLeft-js", "icons/IconSparkle-js"],
     {
         290402: (e, t, n) => {
             n.d(t, { Z: () => p });
@@ -37,14 +37,14 @@
                 p = n(988823);
             const f = "block",
                 b = "mute",
-                y = "removeFollower",
-                g = "report",
+                g = "removeFollower",
+                y = "report",
                 v = "share",
-                k = i().j7bb1a43,
-                E = i().hef5960c,
+                E = i().j7bb1a43,
+                k = i().hef5960c,
                 D = (0, p.M)((e) => {
                     const { featureSwitches: t } = (0, d.QZ)(),
-                        { onBlock: n, onClose: s, onMute: i, onRemoveFollower: p, onReportUser: D, onShare: w, onUnblock: C, onUnmute: P, user: Z } = e,
+                        { onBlock: n, onClose: s, onMute: i, onRemoveFollower: p, onReportUser: D, onShare: w, onUnblock: C, onUnmute: Z, user: P } = e,
                         _ = [],
                         I = (t, n) => {
                             const { confirm: o, onClose: r } = e;
@@ -56,48 +56,48 @@
                             } else n();
                         };
                     !!window.navigator.share &&
-                        !Z.protected &&
-                        !Z.blocking &&
-                        !Z.blocked_by &&
+                        !P.protected &&
+                        !P.blocking &&
+                        !P.blocked_by &&
                         _.push({
                             Icon: r.Z,
                             onClick: () => {
                                 s(), w();
                             },
                             testID: v,
-                            text: E,
+                            text: k,
                         });
-                    !Z.blocking &&
+                    !P.blocking &&
                         _.push({
                             ...(0, m.N1)(
-                                Z,
+                                P,
                                 () => {
                                     s(), i();
                                 },
                                 () => {
-                                    s(), P();
+                                    s(), Z();
                                 },
                             ),
                             testID: b,
                         });
-                    Z.followed_by &&
+                    P.followed_by &&
                         _.push({
                             ...(0, h.l)({
                                 removeFollowerAction: (e) => {
                                     I(e, p);
                                 },
-                                user: Z,
+                                user: P,
                             }),
-                            testID: y,
+                            testID: g,
                         }),
-                        _.push((0, u.op)({ blockAction: (e) => I(e, n), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: f, unblockAction: (e) => I(e, C), user: Z })),
+                        _.push((0, u.op)({ blockAction: (e) => I(e, n), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: f, unblockAction: (e) => I(e, C), user: P })),
                         _.push({
                             Icon: l.default,
                             onClick: () => {
                                 s(), D();
                             },
-                            testID: g,
-                            text: k({ screenName: Z.screen_name }),
+                            testID: y,
+                            text: E({ screenName: P.screen_name }),
                         });
                     const S = _.map(({ Icon: e, onClick: t, testID: n, text: o }) => ({ text: o, onClick: t, Icon: e, testID: n }));
                     return o.createElement(a.Z, { items: S, onCloseRequested: s });
@@ -198,17 +198,17 @@
                     .propsFromState(() => ({ shouldPromptPush: f }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, u.zr)("DEVICE_FOLLOW_BUTTON_CONTAINER"), updateDeviceFollowing: p.ZP.updateDeviceFollowing }))
                     .withAnalytics({ element: "mobile_notifications" }),
-                y = s().bdba3e1a,
-                g = s().c4da7d28,
+                g = s().bdba3e1a,
+                y = s().c4da7d28,
                 v = s().j87c21f4,
-                k = s().iebc30ca,
-                E = s().dc740eb2;
+                E = s().iebc30ca,
+                k = s().dc740eb2;
             class D extends o.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderButton = () => {
                             const { isFollowing: e, style: t } = this.props;
-                            return e ? o.createElement(r.ZP, { "aria-label": g, hoverLabel: { label: k }, icon: o.createElement(i.default, null), onPress: this._handleUnfollow, style: t, type: "primaryOutlined" }) : o.createElement(r.ZP, { "aria-label": y, hoverLabel: { label: v }, icon: o.createElement(l.default, null), onPress: this._handleFollow, style: t, type: "primaryOutlined" });
+                            return e ? o.createElement(r.ZP, { "aria-label": y, hoverLabel: { label: E }, icon: o.createElement(i.default, null), onPress: this._handleUnfollow, style: t, type: "primaryOutlined" }) : o.createElement(r.ZP, { "aria-label": g, hoverLabel: { label: v }, icon: o.createElement(l.default, null), onPress: this._handleFollow, style: t, type: "primaryOutlined" });
                         }),
                         (this._handleFollow = () => {
                             const { isDeviceFollowWithoutUserFollow: e, shouldPromptPush: t } = this.props;
@@ -226,7 +226,7 @@
                         (this.state = { showingPushPrompt: !1 });
                 }
                 render() {
-                    return o.createElement("div", null, this.state.showingPushPrompt ? o.createElement(c.Z, { fullScreen: !0, message: E }) : null, this._renderButton());
+                    return o.createElement("div", null, this.state.showingPushPrompt ? o.createElement(c.Z, { fullScreen: !0, message: k }) : null, this._renderButton());
                 }
                 _updateDeviceFollowing(e) {
                     const { createLocalApiErrorHandler: t, updateDeviceFollowing: n, userId: o } = this.props;
@@ -260,29 +260,29 @@
                     n.map((n, o) => (t ? t(n) : r.createElement(m.ZP, { decoration: m.ET, displayMode: e, isFakeButtonRoleWithListItem: !0, key: n, promotedItemType: h.bj.USER, userId: n, withFollowsYou: !0 }))),
                 );
             var b = n(312771),
-                y = n(71620),
-                g = n(973572),
+                g = n(71620),
+                y = n(973572),
                 v = n(668214),
-                k = n(919022);
-            const E = (e, t) => t.userIds,
+                E = n(919022);
+            const k = (e, t) => t.userIds,
                 D = (e, t) => {
                     const { filterPredicate: n = (e) => !!e, userIds: o } = t;
                     return o.filter((t) => {
-                        const o = k.ZP.select(e, t);
+                        const o = E.ZP.select(e, t);
                         return !!o && n(o);
                     });
                 },
                 w = (e, t) => {
                     const { userIds: n } = t;
                     return n.reduce((t, n) => {
-                        const o = k.ZP.selectFetchStatus(e, n);
+                        const o = E.ZP.selectFetchStatus(e, n);
                         return o && (t[n] = o === b.ZP.NONE ? b.ZP.LOADING : o), t;
                     }, {});
                 },
                 C = (0, v.Z)()
                     .propsFromState(() => ({
-                        availableUserIds: (0, g.Z)(D, (e) => e),
-                        fetchStatus: (0, g.Z)(D, w, E, (e, t, n) => {
+                        availableUserIds: (0, y.Z)(D, (e) => e),
+                        fetchStatus: (0, y.Z)(D, w, k, (e, t, n) => {
                             let o = b.ZP.LOADED;
                             for (let r = 0; r < n.length; r++) {
                                 const a = n[r];
@@ -295,9 +295,9 @@
                             return o;
                         }),
                     }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, y.zr)("USERS_LIST_CONTAINER"), fetchUsersIfNeeded: k.ZP.fetchManyIfNeeded })),
-                P = l().f5b426c2;
-            class Z extends r.Component {
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, g.zr)("USERS_LIST_CONTAINER"), fetchUsersIfNeeded: E.ZP.fetchManyIfNeeded })),
+                Z = l().f5b426c2;
+            class P extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { allUsersUnavailable: !1 }),
@@ -316,7 +316,7 @@
                     s()(e.userIds, this.props.userIds) || this._fetchUsersIfNeeded();
                 }
                 render() {
-                    return r.createElement(d.Z, { "aria-label": P, fetchStatus: this.state.allUsersUnavailable ? b.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
+                    return r.createElement(d.Z, { "aria-label": Z, fetchStatus: this.state.allUsersUnavailable ? b.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
                 }
                 _fetchUsersIfNeeded() {
                     const { availableUserIds: e, createLocalApiErrorHandler: t, fetchUsersIfNeeded: n, userIds: o } = this.props;
@@ -339,7 +339,7 @@
                     );
                 }
             }
-            const _ = C(Z);
+            const _ = C(P);
         },
         684511: (e, t, n) => {
             n.d(t, { Z: () => o });
@@ -373,7 +373,7 @@
             });
         },
         376293: (e, t, n) => {
-            n.d(t, { $f: () => C, KV: () => y, LI: () => S, SC: () => w, Vt: () => k, ed: () => M, op: () => P });
+            n.d(t, { $f: () => C, KV: () => g, LI: () => S, SC: () => w, Vt: () => E, ed: () => M, op: () => Z });
             var o = n(202784),
                 r = n(190286),
                 a = n(111677),
@@ -388,15 +388,15 @@
                 p = s().a6450e84,
                 f = s().g353ad73,
                 b = s().ad00a739,
-                y = s().a9fd20be,
-                g = s().j546fb79,
+                g = s().a9fd20be,
+                y = s().j546fb79,
                 v = s().c9623eeb,
-                k = s().e133be4e,
-                E = s().he43bca4,
+                E = s().e133be4e,
+                k = s().he43bca4,
                 D = s().f5f01af6,
                 w = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
                 C = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: m({ screenName: e }), label: p, text: t ? b({ screenName: e }) : f({ screenName: e }) }),
-                P = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: n, source: o, testID: r, unblockAction: a, unblockSubtext: s, user: i }) => {
+                Z = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: n, source: o, testID: r, unblockAction: a, unblockSubtext: s, user: i }) => {
                     let l,
                         u = c.Z;
                     const m = S(i, n);
@@ -416,12 +416,12 @@
                                     i.blocking ? a(m) : e(m);
                                 });
                     }
-                    return { confirmation: m, onClick: u, testID: r, shortcutKey: l, Icon: Z(i.blocking), text: I(i), subText: _({ user: i, blockSubtext: t, unblockSubtext: s }) };
+                    return { confirmation: m, onClick: u, testID: r, shortcutKey: l, Icon: P(i.blocking), text: I(i), subText: _({ user: i, blockSubtext: t, unblockSubtext: s }) };
                 },
-                Z = (e) => (e ? l.default : i.default),
+                P = (e) => (e ? l.default : i.default),
                 _ = ({ blockSubtext: e, unblockSubtext: t, user: n }) => (!n.blocking && e ? e(n.screen_name) : n.blocking ? t : void 0),
                 I = (e) => (e.blocking ? v({ screenName: e.screen_name }) : h({ screenName: e.screen_name })),
-                S = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: g({ screenName: e }), label: k, text: t ? D : E }))(e.screen_name, t) : C(e.screen_name, t)),
+                S = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: y({ screenName: e }), label: E, text: t ? D : k }))(e.screen_name, t) : C(e.screen_name, t)),
                 M = ({ confirmation: e, handleConfirm: t, onClose: n }) => {
                     const { confirmButtonType: a, headline: s, label: i, text: l } = e;
                     return o.createElement(r.Z, { cancelButtonLabel: u, confirmButtonLabel: i, confirmButtonType: a, headline: s, onCancel: n, onConfirm: t, text: l });
@@ -444,7 +444,7 @@
             };
         },
         847607: (e, t, n) => {
-            n.d(t, { Aq: () => u, FK: () => g, GS: () => i, N1: () => h, PY: () => m, X6: () => v, cm: () => l });
+            n.d(t, { Aq: () => u, FK: () => y, GS: () => i, N1: () => h, PY: () => m, X6: () => v, cm: () => l });
             n(202784);
             var o = n(111677),
                 r = n.n(o),
@@ -463,9 +463,9 @@
                 p = r().h59f52ee,
                 f = r().eea0cbee,
                 b = r().i29533b3,
-                y = r().h129c3c3,
-                g = (e) => (e ? ((e) => b({ screenName: e }))(e) : p),
-                v = (e) => (e ? ((e) => y({ screenName: e }))(e) : f);
+                g = r().h129c3c3,
+                y = (e) => (e ? ((e) => b({ screenName: e }))(e) : p),
+                v = (e) => (e ? ((e) => g({ screenName: e }))(e) : f);
         },
         417714: (e, t, n) => {
             n.d(t, { l: () => d });
@@ -602,7 +602,7 @@
             };
         },
         694180: (e, t, n) => {
-            n.d(t, { cM: () => b, dS: () => f, iY: () => y });
+            n.d(t, { cM: () => b, dS: () => f, iY: () => g });
             var o = n(370751),
                 r = n(399896),
                 a = n(663550),
@@ -633,12 +633,12 @@
                             f = `${n}-${t ?? "undefined"}-${m ?? "undefined"}-${d ?? "undefined"}`;
                         if (u.has(d) && p(s(), f)) return Promise.resolve();
                         const b = e && "earned" === e.toLowerCase() ? "1" : null,
-                            y = { ...o, earned: b, epoch_ms: Date.now() };
-                        return (0, i._O)(a, { params: y, request: l.withEndpoint(r.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: y }, (e, t) => {
+                            g = { ...o, earned: b, epoch_ms: Date.now() };
+                        return (0, i._O)(a, { params: g, request: l.withEndpoint(r.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: g }, (e, t) => {
                             if (!t && u.has(d)) return [h(f)];
                         });
                     },
-                y =
+                g =
                     (e) =>
                     (t, n, { api: o }) =>
                         (0, i._O)(t, { params: e, request: o.withEndpoint(r.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: e });
@@ -888,13 +888,13 @@
                         const { animationLoaded: r } = d.current;
                         r ||
                             ((d.current.animationLoaded = !0),
-                            y.load().then((r) => {
+                            g.load().then((r) => {
                                 if (r && u.current) {
                                     const a = { container: u.current, renderer: "svg", loop: n, autoplay: !1, ...("object" == typeof e.animation ? { animationData: e.animation } : { path: e.animation }) },
                                         l = r.loadAnimation(a);
                                     (c.current = l),
                                         (l.onError = (e) => {
-                                            const t = new g(e);
+                                            const t = new y(e);
                                             "function" == typeof i && i(t), o(l, t);
                                         }),
                                         l.addEventListener("DOMLoaded", () => {
@@ -919,15 +919,15 @@
             b.Prepare = function () {
                 return (
                     o.useEffect(() => {
-                        y.load();
+                        g.load();
                     }, []),
                     null
                 );
             };
-            const y = { load: () => n.e("ondemand.LottieWeb").then(n.t.bind(n, 548888, 23)) };
-            class g extends Error {
+            const g = { load: () => n.e("ondemand.LottieWeb").then(n.t.bind(n, 548888, 23)) };
+            class y extends Error {
                 constructor(e, ...t) {
-                    super(...t), Error.captureStackTrace && Error.captureStackTrace(this, g), (this.name = "LottieAnimationError"), (this.lottieError = e);
+                    super(...t), Error.captureStackTrace && Error.captureStackTrace(this, y), (this.name = "LottieAnimationError"), (this.lottieError = e);
                 }
             }
             const v = a.default.create((e) => ({ centerAnimation: { alignItems: "center", justifyContent: "center" } }));
@@ -952,7 +952,7 @@
             };
         },
         40644: (e, t, n) => {
-            n.d(t, { ZP: () => E });
+            n.d(t, { ZP: () => k });
             var o = n(202784),
                 r = n(325686),
                 a = n(461756),
@@ -967,17 +967,17 @@
                 p = n.n(h),
                 f = n(891198),
                 b = n(537392),
-                y = n(280278);
-            const g = p().e8d93005,
+                g = n(280278);
+            const y = p().e8d93005,
                 v = u.default.create((e) => ({ count: { paddingHorizontal: e.spacesPx.space4, minWidth: `calc(1em + 2 * ${e.spaces.space12})` }, narrowCount: { paddingEnd: 0, paddingStart: e.spacesPx.space4, minWidth: `calc(1em + ${e.spaces.space4})` } })),
-                k = ({ color: e, count: t }) => {
+                E = ({ color: e, count: t }) => {
                     const n = (0, f.wl)(t, !0);
                     return o.createElement(b.ZP, null, ({ containerWidth: r }) => {
-                        return o.createElement(y.ZP, { color: e, count: t, size: "subtext2", style: [v.count, ((a = r), a < u.default.theme.breakpoints.small && v.narrowCount)] }, t > 0 ? (((e) => e < u.default.theme.breakpoints.xxSmall)(r) || n.length >= 5 ? g(t) : n) : void 0);
+                        return o.createElement(g.ZP, { color: e, count: t, size: "subtext2", style: [v.count, ((a = r), a < u.default.theme.breakpoints.small && v.narrowCount)] }, t > 0 ? (((e) => e < u.default.theme.breakpoints.xxSmall)(r) || n.length >= 5 ? y(t) : n) : void 0);
                         var a;
                     });
                 };
-            class E extends o.PureComponent {
+            class k extends o.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this._renderContent = (e, t) => {
@@ -992,7 +992,7 @@
                         }),
                         (this._renderIcon = () => {
                             const { ActiveIcon: e, iconSize: t, isActive: n, isDisabled: r, isFaded: s, onAnimationEnd: i, onAnimationStart: l, onError: c, showAnimation: h, transitionAnimationUrl: p } = this.props;
-                            if (!u.default.theme.highContrastEnabled && !a.Z.reducedMotionEnabled && e && h) return o.createElement(d.ZP, { animation: p || m.Bf, animationContainerStyle: D[t], animationStyle: Z, onAnimationEnd: i, onAnimationStart: l, onError: c });
+                            if (!u.default.theme.highContrastEnabled && !a.Z.reducedMotionEnabled && e && h) return o.createElement(d.ZP, { animation: p || m.Bf, animationContainerStyle: D[t], animationStyle: P, onAnimationEnd: i, onAnimationStart: l, onError: c });
                             {
                                 const a = n && e ? e : this.props.Icon;
                                 return o.createElement(a, { style: [D[t], !r && s && C.iconFaded] });
@@ -1000,7 +1000,7 @@
                         }),
                         (this._renderCount = () => {
                             const { count: e, withCount: t } = this.props;
-                            return t ? o.createElement(k, { count: e }) : null;
+                            return t ? o.createElement(E, { count: e }) : null;
                         }),
                         (this._handlePress = (e) => {
                             const { onPress: t, renderWrapper: n } = this.props;
@@ -1008,17 +1008,17 @@
                         });
                 }
                 render() {
-                    const { "aria-label": e, focusable: t, enableKeyboardShortcuts: n, isActive: s, isDisabled: i, isPresentational: c, keyboardShortcut: m, link: h, preventFocusShift: p, renderMenu: f, renderWrapper: b = o.Fragment, style: y, testID: g } = this.props,
+                    const { "aria-label": e, focusable: t, enableKeyboardShortcuts: n, isActive: s, isDisabled: i, isPresentational: c, keyboardShortcut: m, link: h, preventFocusShift: p, renderMenu: f, renderWrapper: b = o.Fragment, style: g, testID: y } = this.props,
                         v = !u.default.theme.highContrastEnabled && !a.Z.reducedMotionEnabled;
                     return o.createElement(
                         r.Z,
-                        { style: [C.root, y] },
+                        { style: [C.root, g] },
                         o.createElement(
                             b,
                             null,
                             c
                                 ? this._renderContent(s)
-                                : o.createElement(l.Z, { "aria-haspopup": f ? "menu" : void 0, "aria-label": e, disabled: i, enableKeyboardShortcuts: n, focusable: t, interactiveStyles: null, keyboardShortcut: m, link: h, onClick: this._handlePress, preventFocusShift: p, renderMenu: f, style: [C.triggerAreaRoot, C.outlineNone], testID: g }, (e) => {
+                                : o.createElement(l.Z, { "aria-haspopup": f ? "menu" : void 0, "aria-label": e, disabled: i, enableKeyboardShortcuts: n, focusable: t, interactiveStyles: null, keyboardShortcut: m, link: h, onClick: this._handlePress, preventFocusShift: p, renderMenu: f, style: [C.triggerAreaRoot, C.outlineNone], testID: y }, (e) => {
                                       const { isFocused: t, isHovered: n, isPressed: o } = e,
                                           r = s || n || o || t;
                                       return this._renderContent(r, e);
@@ -1028,12 +1028,12 @@
                     );
                 }
             }
-            E.defaultProps = { activeColor: "blue500", backgroundColor: "transparent", color: "gray700", count: 0, isDisabled: !1, iconSize: "normal" };
+            k.defaultProps = { activeColor: "blue500", backgroundColor: "transparent", color: "gray700", count: 0, isDisabled: !1, iconSize: "normal" };
             const D = u.default.create((e) => ({ small: { height: "1em", width: "1em" }, normal: { height: "1.25em", width: "1.25em" }, large: { height: "1.5em", width: "1.5em" } })),
                 w = u.default.create((e) => ({ transparent: { backgroundColor: e.colors.transparent }, translucentBlack77: { backgroundColor: e.colors.translucentBlack77 }, haloBackground: { backgroundColor: e.colors.activeBlack } })),
                 C = u.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "flex-start" }, triggerAreaRoot: { justifyContent: "center", minHeight: e.lineHeights.body, overflow: "visible", userSelect: "none" }, inner: { alignItems: "center", display: "flex", justifyContent: "flex-start", transitionProperty: "color", transitionDuration: "0.2s", whiteSpace: "nowrap" }, iconFaded: { opacity: 0.4 }, iconBackground: { borderRadius: e.borderRadii.infinite, margin: -8 }, iconSmallBoundingBox: { margin: -6 }, outlineNone: { outlineStyle: "none" }, blue500: { color: e.colors.blue500 }, white: { color: e.colors.white }, haloBoundingBox: { margin: -6 } })),
-                P = "224.5%",
-                Z = { width: P, height: P };
+                Z = "224.5%",
+                P = { width: Z, height: Z };
         },
         551611: (e, t, n) => {
             n.d(t, { Bf: () => r, ZP: () => s });
@@ -1045,6 +1045,32 @@
                 }
             }
             const s = new a();
+        },
+        246492: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => l });
+            var o = n(202784),
+                r = n(890601),
+                a = n(783427),
+                s = n(347101);
+            const i = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm5.586-2l4.207 4.21 1.414-1.42L19.414 10H24V8h-4.586l1.793-1.79-1.414-1.42L15.586 9z" })) }, { writingDirection: t });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const l = i;
+        },
+        264171: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => l });
+            var o = n(202784),
+                r = n(890601),
+                a = n(783427),
+                s = n(347101);
+            const i = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: t });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const l = i;
         },
         98440: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
@@ -1072,7 +1098,7 @@
             i.metadata = { width: 24, height: 24 };
             const l = i;
         },
-        155353: (e, t, n) => {
+        262009: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
             var o = n(202784),
                 r = n(890601),
@@ -1080,7 +1106,20 @@
                 s = n(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M14 2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1C11.26 7.53 12 5.35 12 2h2zM5 1c0 1.66-1.34 3-3 3v1c1.66 0 3 1.34 3 3h1c0-1.66 1.34-3 3-3V4C7.34 4 6 2.66 6 1H5z" })) }, { writingDirection: t });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const l = i;
+        },
+        452693: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => l });
+            var o = n(202784),
+                r = n(890601),
+                a = n(783427),
+                s = n(347101);
+            const i = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const l = i;
@@ -1110,4 +1149,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpacePeek.bba6fb0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpacePeek.e0aa785a.js.map

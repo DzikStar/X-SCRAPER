@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.LiveEvent-6107ac1a"],
+    ["bundle.LiveEvent-6107ac1a", "icons/IconChevronRight-js"],
     {
         782274: (e, t, l) => {
             l.d(t, { Z: () => p });
@@ -208,64 +208,6 @@
             u.hash = "2b67291281a91999442af9f50b54540d";
             const p = u;
         },
-        978053: (e, t, l) => {
-            l.d(t, { default: () => g });
-            var a = l(111677),
-                n = l.n(a);
-            const i = n().e3098e07,
-                s = n().fea16a51,
-                r = n().a4f2d94d,
-                o = n().hf9bc787,
-                c = n().efcd5885,
-                d = n().c37228b5,
-                u = 2592e3,
-                p = 604800,
-                h = 86400,
-                m = 3600,
-                g = {
-                    formatTimeSinceDate: (e, t) => {
-                        const l = ((t || new Date()).getTime() - e.getTime()) / 1e3;
-                        if (l >= 31104e3) {
-                            const e = Math.max(1, Math.round(l / 31536e3));
-                            return d({ years: e });
-                        }
-                        if (l >= u) {
-                            const e = Math.max(1, Math.floor(l / u));
-                            return c({ months: e });
-                        }
-                        if (l >= 561600) {
-                            const e = Math.max(1, Math.round(l / p));
-                            return o({ weeks: e });
-                        }
-                        if (l >= 84600) {
-                            const e = Math.max(1, Math.round(l / h));
-                            return r({ days: e });
-                        }
-                        if (l >= 3570) {
-                            const e = Math.max(1, Math.round(l / m));
-                            return s({ hours: e });
-                        }
-                        {
-                            const e = Math.max(1, Math.round(l / 60));
-                            return i({ minutes: e });
-                        }
-                    },
-                    formatWeekRange: (e) => {
-                        const t = new Date(Date.UTC(e.getFullYear(), e.getMonth(), e.getDate())),
-                            l = t.getUTCDay(),
-                            a = new Date(t);
-                        a.setUTCDate(a.getUTCDate() - l);
-                        const n = new Date(a);
-                        n.setUTCDate(n.getUTCDate() + 6);
-                        const i = new Date(Date.UTC(a.getUTCFullYear(), 0, 4)),
-                            s = Math.floor((a.getTime() - i.getTime()) / 6048e5 + 1),
-                            r = new Date(),
-                            o = n > r ? r : n,
-                            c = `${a.toLocaleString("en-US", { month: "short", day: "numeric" })} - ${o.toLocaleString("en-US", { month: "short", day: "numeric", year: "numeric" })}`;
-                        return [a.getUTCFullYear(), s, c];
-                    },
-                };
-        },
         392027: (e, t, l) => {
             l.d(t, { Z: () => o });
             var a = l(202784),
@@ -442,7 +384,7 @@
                 };
         },
         403556: (e, t, l) => {
-            l.d(t, { Z: () => T });
+            l.d(t, { Z: () => w });
             var a = l(807896),
                 n = l(202784),
                 i = l(194504),
@@ -496,13 +438,13 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": t, badgeCount: l, badgePip: a, children: i, color: s, isActive: c, isCompact: d, isPillLink: u, isRoundedRect: p, isWebRedesign: g, retainScrollPosition: k, style: C, to: P } = this.props,
-                        { location: T } = this.state,
-                        w = P ? this._getMemoizedLink(P, k) : void 0,
-                        x = c ? c(P) : T?.pathname === w?.pathname,
-                        E = y.Z.generate({ backgroundColor: "transparent", color: r.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? S.pillHoverStyle.backgroundColor : void 0 }),
-                        L = g ? "medium" : x ? "bold" : "medium";
-                    return n.createElement(f.Z, { "aria-label": t, "aria-selected": x, focusable: !!x, interactiveStyles: E, link: w, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [S.pillStyle] : [S.link]), ...(u && x ? [S.pillActiveStyle] : []), d ? (u ? S.compactPill : S.compactLink) : null, p ? S.roundedRect : null, C], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => n.createElement(o.Z, { style: u && S.flexGrow }, n.createElement(h.ZP, { size: g ? "headline2" : void 0, style: [S.text, { color: this._getTextColor(x, c, g, u) }, d && S.compactText, g && t && S.focusedText, u && S.pillTextStyle, u && x && S.pillActiveTextStyle, u && c && S.pillHoverTextStyle], weight: L }, e && n.createElement(e, { style: S.icon }), i, g || u ? null : n.createElement(o.Z, { style: x && [S.border, { backgroundColor: r.default.theme.colors[s] }] })), l ? n.createElement(m.Z, { count: l, standalone: !0, style: [S.badge, l >= 10 && S.multiDigitBadge, l >= 20 && S.truncatedCountBadge], truncatedCountFormatter: _, unreadCountLabel: b, withBorder: !1 }) : a ? n.createElement(m.Z, { pip: !0, standalone: !0, style: S.badgePip, textColor: "red500", unreadCountLabel: v, withBorder: !1 }) : null));
+                    const { Icon: e, "aria-label": t, badgeCount: l, badgePip: a, children: i, color: s, isActive: c, isCompact: d, isPillLink: u, isRoundedRect: p, isWebRedesign: g, retainScrollPosition: k, style: P, to: C } = this.props,
+                        { location: w } = this.state,
+                        T = C ? this._getMemoizedLink(C, k) : void 0,
+                        L = c ? c(C) : w?.pathname === T?.pathname,
+                        x = y.Z.generate({ backgroundColor: "transparent", color: r.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? S.pillHoverStyle.backgroundColor : void 0 }),
+                        E = g ? "medium" : L ? "bold" : "medium";
+                    return n.createElement(f.Z, { "aria-label": t, "aria-selected": L, focusable: !!L, interactiveStyles: x, link: T, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [S.pillStyle] : [S.link]), ...(u && L ? [S.pillActiveStyle] : []), d ? (u ? S.compactPill : S.compactLink) : null, p ? S.roundedRect : null, P], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => n.createElement(o.Z, { style: u && S.flexGrow }, n.createElement(h.ZP, { size: g ? "headline2" : void 0, style: [S.text, { color: this._getTextColor(L, c, g, u) }, d && S.compactText, g && t && S.focusedText, u && S.pillTextStyle, u && L && S.pillActiveTextStyle, u && c && S.pillHoverTextStyle], weight: E }, e && n.createElement(e, { style: S.icon }), i, g || u ? null : n.createElement(o.Z, { style: L && [S.border, { backgroundColor: r.default.theme.colors[s] }] })), l ? n.createElement(m.Z, { count: l, standalone: !0, style: [S.badge, l >= 10 && S.multiDigitBadge, l >= 20 && S.truncatedCountBadge], truncatedCountFormatter: _, unreadCountLabel: b, withBorder: !1 }) : a ? n.createElement(m.Z, { pip: !0, standalone: !0, style: S.badgePip, textColor: "red500", unreadCountLabel: v, withBorder: !1 }) : null));
                 }
             }
             (k.contextType = g.Z), (k.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -529,9 +471,9 @@
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
-                C = k,
-                P = r.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
-                T = ({ alignFirstItem: e, "aria-label": t, isCompact: l, isPillLink: r, isRoundedRect: o, links: c, style: d, visibleItemIndex: u }) => {
+                P = k,
+                C = r.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
+                w = ({ alignFirstItem: e, "aria-label": t, isCompact: l, isPillLink: r, isRoundedRect: o, links: c, style: d, visibleItemIndex: u }) => {
                     const p = c
                             .filter(Boolean)
                             .map((e) => e.key)
@@ -541,12 +483,12 @@
                         g = n.useMemo(
                             () =>
                                 c.filter(Boolean).map(({ label: t, viewType: i, ...s }, c) => {
-                                    const d = m ? [P.linkRedesign, 0 === c && P.firstLinkRedesign, e && 0 === c && P.withNoPaddingStart] : void 0;
-                                    return n.createElement(C, (0, a.Z)({ viewType: i }, s, { isCompact: l, isPillLink: r, isRoundedRect: o, isWebRedesign: m, style: d }), t);
+                                    const d = m ? [C.linkRedesign, 0 === c && C.firstLinkRedesign, e && 0 === c && C.withNoPaddingStart] : void 0;
+                                    return n.createElement(P, (0, a.Z)({ viewType: i }, s, { isCompact: l, isPillLink: r, isRoundedRect: o, isWebRedesign: m, style: d }), t);
                                 }),
                             [e, l, r, o, m, c],
                         );
-                    return n.createElement(i.Z, { "aria-label": t, buttonsContainerStyle: r && P.gap, childrenStyle: !m && P.flexGrow, key: p, style: [r ? null : P.segmentedControl, m && P.leftAligned, d], visibleItemIndex: u }, g);
+                    return n.createElement(i.Z, { "aria-label": t, buttonsContainerStyle: r && C.gap, childrenStyle: !m && C.flexGrow, key: p, style: [r ? null : C.segmentedControl, m && C.leftAligned, d], visibleItemIndex: u }, g);
                 };
         },
         165822: (e, t, l) => {
@@ -588,25 +530,20 @@
             var a = l(202784);
             const n = (0, l(523561).Z)({ loader: () => Promise.all([l.e("modules.audio-6107ac1a"), l.e("modules.audio-b953418a"), l.e("modules.audio-7c51e6a7"), l.e("modules.audio-04db59e9"), l.e("modules.audio-76583d6c"), l.e("modules.audio-b7a8a5fb"), l.e("modules.audio-51f6e793"), l.e("modules.audio-e019dbda"), l.e("modules.audio-262c94d4"), l.e("modules.audio-c6fe4ea4"), l.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), l.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU"), l.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerEventsUI"), l.e("loaders.video.VideoPlayerEventsUI")]).then(l.bind(l, 374749)), renderPlaceholder: () => a.createElement("div", null) });
         },
-        98440: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
+        58399: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => c });
             var a = l(202784),
                 n = l(890601),
                 i = l(783427),
-                s = l(347101);
-            const r = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                s = l(717683),
+                r = l(347101);
+            const o = (e = {}) => {
+                const t = a.useContext(s.Z),
+                    { direction: l } = (0, i.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style, t && r.Z.iconRTL], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: l });
             };
-            r.metadata = { width: 24, height: 24 };
-            const o = r;
-        },
-        465233: (e, t, l) => {
-            l.d(t, { Z: () => n });
-            var a = l(716406);
-            function n(e) {
-                return "object" != typeof e || null === e ? e : Array.isArray(e) ? e.map(n) : (0, a.Z)(e, (e) => n(e));
-            }
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
         },
         411240: (e, t, l) => {
             l.d(t, { Z: () => a });
@@ -638,4 +575,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-6107ac1a.efdcf6ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-6107ac1a.3367822a.js.map

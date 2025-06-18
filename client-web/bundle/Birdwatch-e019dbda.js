@@ -142,22 +142,25 @@
             const M = (0, o(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        o.e("icons.8"),
-                        o.e("icons.15"),
-                        o.e("icons.7"),
-                        o.e("icons.3"),
-                        o.e("icons.24"),
-                        o.e("icons.12"),
-                        o.e("icons.22"),
-                        o.e("icons.2"),
-                        o.e("icons.18"),
-                        o.e("icons.9"),
-                        o.e("icons.6"),
+                        o.e("icons.21"),
+                        o.e("icons.16"),
+                        o.e("icons.10"),
                         o.e("icons.1"),
+                        o.e("icons.19"),
+                        o.e("icons.0"),
+                        o.e("icons.23"),
+                        o.e("icons.8"),
+                        o.e("icons.2"),
+                        o.e("icons.3"),
+                        o.e("icons.15"),
+                        o.e("icons.4"),
                         o.e("modules.common-e907d115"),
                         o.e("modules.common-e019dbda"),
-                        o.e("icons.14"),
-                        o.e("icons.5"),
+                        o.e("icons.9"),
+                        o.e("icons.7"),
+                        o.e("icons.28"),
+                        o.e("icons.26"),
+                        o.e("icons.24"),
                         o.e("modules.audio-6107ac1a"),
                         o.e("modules.audio-b953418a"),
                         o.e("modules.audio-7c51e6a7"),
@@ -168,13 +171,10 @@
                         o.e("modules.audio-e019dbda"),
                         o.e("modules.audio-262c94d4"),
                         o.e("modules.audio-c6fe4ea4"),
-                        o.e("icons.21"),
-                        o.e("icons.16"),
-                        o.e("icons.28"),
-                        o.e("icons.17"),
-                        o.e("icons.27"),
-                        o.e("icons.19"),
-                        o.e("icons.0"),
+                        o.e("icons.18"),
+                        o.e("icons.13"),
+                        o.e("icons.29"),
+                        o.e("icons.25"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -211,7 +211,8 @@
                         o.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
-                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
+                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
+                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
                         o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                         o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
                         o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
@@ -950,44 +951,46 @@
                         (0, l._O)(t, { request: n.withEndpoint(r.Z).fetchNoteTranslation, params: e })({ actionTypes: f, context: "FETCH_NOTE_TRANSLATION", meta: { note_id: e } }),
                 Ne =
                     (e) =>
-                    (t, o, { api: n }) =>
-                        new Promise((o, a) => {
-                            const r = { content_type: "COMMUNITY_NOTE", id: e },
-                                i = { fetchStatus: c.ZP.LOADING, result: { text: "", entities: [] } },
-                                l = (e, o) => {
-                                    var n;
-                                    t(((n = { note_id: e, translation: { ...o, result: o.result ? (0, s.Z)((0, d.$)(), o.result) : void 0 } }), { type: k, payload: n }));
-                                };
-                            l(e, i),
-                                n.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(r) }, "https://api.x.com").then(async (t) => {
-                                    if (!t.ok) return (i.state = E.H.ERROR), (i.fetchStatus = c.ZP.FAILED), l(e, i), a(new Error("Failed to translate due to invalid API response."));
-                                    const n = t.body?.getReader();
-                                    if (!n) return (i.state = E.H.ERROR), (i.fetchStatus = c.ZP.FAILED), l(e, i), a(new Error("Failed to translate because reader is not present."));
-                                    const r = new TextDecoder();
-                                    let s = "";
-                                    const d = async () => {
-                                        const { done: t, value: u } = await n.read();
-                                        if (t) return (i.state = E.H.SUCCESS), (i.fetchStatus = c.ZP.LOADED), l(e, i), o();
-                                        if (u) {
-                                            const t = r.decode(u);
-                                            if (((s += t), s.includes("\n"))) {
-                                                const t = s.split("\n");
-                                                s = t.pop();
-                                                for (const o of t)
-                                                    try {
-                                                        const t = JSON.parse(o);
-                                                        if (t.error) throw new Error(t.error);
-                                                        t.result && i.result && (t.result.text && (i.result.text += t.result.text), t.result.rich_text_entities && i.result.entities.push(...t.result.rich_text_entities)), l(e, i);
-                                                    } catch (t) {
-                                                        return (i.state = E.H.ERROR), (i.fetchStatus = c.ZP.FAILED), l(e, i), a(new Error("Failed to parse translation JSON response."));
-                                                    }
-                                            }
+                    async (t, o, { api: n }) => {
+                        const a = { content_type: "COMMUNITY_NOTE", id: e },
+                            r = { fetchStatus: c.ZP.LOADING, result: { text: "", entities: [] } },
+                            i = (e, o) => {
+                                var n;
+                                t(((n = { note_id: e, translation: { ...o, result: o.result ? (0, s.Z)((0, d.$)(), o.result) : void 0 } }), { type: k, payload: n }));
+                            };
+                        i(e, r);
+                        try {
+                            const t = await n.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(a) }, "https://api.x.com");
+                            if (!t.ok) throw ((r.state = E.H.ERROR), (r.fetchStatus = c.ZP.FAILED), i(e, r), new Error("Failed to translate due to invalid API response."));
+                            const o = t.body?.getReader();
+                            if (!o) throw ((r.state = E.H.ERROR), (r.fetchStatus = c.ZP.FAILED), i(e, r), new Error("Failed to translate because reader is not present."));
+                            const s = new TextDecoder();
+                            let d = "";
+                            const l = async () => {
+                                const { done: t, value: n } = await o.read();
+                                if (t) {
+                                    const t = 0 === (r.result?.text.length ?? 0);
+                                    return (r.state = t ? E.H.ERROR : E.H.SUCCESS), (r.fetchStatus = t ? c.ZP.FAILED : c.ZP.LOADED), void i(e, r);
+                                }
+                                if (n) {
+                                    const t = s.decode(n);
+                                    if (((d += t), d.includes("\n"))) {
+                                        const t = d.split("\n");
+                                        d = t.pop();
+                                        for (const o of t) {
+                                            const t = JSON.parse(o);
+                                            if (t.error) throw new Error(t.error);
+                                            t.result && r.result && (t.result.text && (r.result.text += t.result.text), t.result.rich_text_entities && r.result.entities.push(...t.result.rich_text_entities)), i(e, r);
                                         }
-                                        d();
-                                    };
-                                    d();
-                                });
-                        }),
+                                    }
+                                }
+                                await l();
+                            };
+                            await l();
+                        } catch (t) {
+                            (r.state = E.H.ERROR), (r.fetchStatus = c.ZP.FAILED), i(e, r);
+                        }
+                    },
                 De =
                     (e) =>
                     (t, o, { api: n }) =>
@@ -1155,4 +1158,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.3c8da32a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.4d0de2aa.js.map

@@ -3,7 +3,7 @@
     ["bundle.GrokDrawer-6ac0f1a5"],
     {
         187268: (e, a, n) => {
-            n.d(a, { Bv: () => f, Jw: () => D, cU: () => g, eC: () => k, rs: () => p, w$: () => y });
+            n.d(a, { Bv: () => f, Jw: () => D, cU: () => k, eC: () => g, rs: () => p, w$: () => y });
             n(543673), n(240753), n(128399);
             var o = n(202784),
                 r = n(392237),
@@ -54,8 +54,8 @@
                     }
                 return { name: e, args: o };
             }
-            const k = "Using tools";
-            function g(e) {
+            const g = "Using tools";
+            function k(e) {
                 switch (e.name) {
                     case "web_search":
                         return u.XR.WebSearchQueryFormatter({ query: e.args.query });
@@ -71,7 +71,7 @@
                     case "get_x_user_timeline":
                         return u.XR.XUsernameQuerySearchFormatter({ query: e.args.query, username: e.args.username });
                     default:
-                        return e.name ?? k;
+                        return e.name ?? g;
                 }
             }
             function y(e) {
@@ -112,8 +112,8 @@
                 f = n(551864),
                 w = n(537392),
                 D = n(78882);
-            var k = n(530732),
-                g = n(786998),
+            var g = n(530732),
+                k = n(786998),
                 y = n(392237),
                 M = n(457566),
                 v = n(725405),
@@ -185,9 +185,9 @@
                     d.Z,
                     { ref: a, style: [oe.headerRoot, !o && oe.headerBorderClosed, oe.cursor], testID: _.header },
                     o
-                        ? r.createElement(g.Z, { onMiddleControlClick: l, rightControl: r.createElement(ee, { conversationUrl: e, handleToggleVisibility: l, isExpanded: o, onClose: s }), style: oe.roundedAppBarCorners, title: r.createElement(d.Z, { style: oe.titleContainer }, r.createElement(M.x1, null), r.createElement(O, null)) })
+                        ? r.createElement(k.Z, { onMiddleControlClick: l, rightControl: r.createElement(ee, { conversationUrl: e, handleToggleVisibility: l, isExpanded: o, onClose: s }), style: oe.roundedAppBarCorners, title: r.createElement(d.Z, { style: oe.titleContainer }, r.createElement(M.x1, null), r.createElement(O, null)) })
                         : r.createElement(
-                              k.Z,
+                              g.Z,
                               {
                                   onPress: () => {
                                       i.scribe({ element: "grok-bubble", action: "click" }), l();
@@ -203,22 +203,25 @@
             const de = (0, l.Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.8"),
-                        n.e("icons.15"),
-                        n.e("icons.7"),
-                        n.e("icons.3"),
-                        n.e("icons.24"),
-                        n.e("icons.12"),
-                        n.e("icons.22"),
-                        n.e("icons.2"),
-                        n.e("icons.18"),
-                        n.e("icons.9"),
-                        n.e("icons.6"),
+                        n.e("icons.21"),
+                        n.e("icons.16"),
+                        n.e("icons.10"),
                         n.e("icons.1"),
+                        n.e("icons.19"),
+                        n.e("icons.0"),
+                        n.e("icons.23"),
+                        n.e("icons.8"),
+                        n.e("icons.2"),
+                        n.e("icons.3"),
+                        n.e("icons.15"),
+                        n.e("icons.4"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.14"),
-                        n.e("icons.5"),
+                        n.e("icons.9"),
+                        n.e("icons.7"),
+                        n.e("icons.28"),
+                        n.e("icons.26"),
+                        n.e("icons.24"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -229,14 +232,11 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.21"),
-                        n.e("icons.16"),
-                        n.e("icons.28"),
-                        n.e("icons.17"),
+                        n.e("icons.18"),
+                        n.e("icons.13"),
+                        n.e("icons.29"),
                         n.e("icons.27"),
-                        n.e("icons.19"),
-                        n.e("icons.0"),
-                        n.e("icons.4"),
+                        n.e("icons.25"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -276,11 +276,10 @@
                         n.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3ec0edf6"),
                         n.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3fd5f349"),
                         n.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
-                        n.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-88dc685d"),
-                        n.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-271d17b1"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
@@ -292,6 +291,7 @@
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
+                        n.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader."),
                         n.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-8d7085c2"),
                         n.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-53f39e22"),
                         n.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5"),
@@ -356,13 +356,13 @@
             function te({ width: e }) {
                 const a = (0, u.cm)(),
                     [n, l] = r.useState(0),
-                    k =
-                        ((g = n),
+                    g =
+                        ((k = n),
                         (0, w.Zx)(({ windowHeight: e }) => {
-                            const a = D.I2.find((a) => g <= Math.ceil(e * a));
-                            return a ? e * Math.max(a, 0.5) : Math.min(g, Math.ceil(D.T6 * e));
+                            const a = D.I2.find((a) => k <= Math.ceil(e * a));
+                            return a ? e * Math.max(a, 0.5) : Math.min(k, Math.ceil(D.T6 * e));
                         }));
-                var g;
+                var k;
                 const y = (0, m.v9)((e) => p.kX(e)),
                     M = y === f.j.EXPANDED,
                     v = y === f.j.CLOSED;
@@ -380,7 +380,7 @@
                         },
                         [l],
                     ),
-                    A = r.useMemo(() => [D.ZP.allowPointer, D.ZP.main, M ? { minHeight: k, maxWidth: null } : D.ZP.collapsedSmall], [M, k]);
+                    A = r.useMemo(() => [D.ZP.allowPointer, D.ZP.main, M ? { minHeight: g, maxWidth: null } : D.ZP.collapsedSmall], [M, g]);
                 return (function () {
                     const e = (0, t.useHistory)(),
                         a = e.getLastNonModalLocationPathname() ?? e.location.pathname;
@@ -397,7 +397,7 @@
             }
         },
         620988: (e, a, n) => {
-            n.d(a, { ZH: () => k, ZP: () => y, x9: () => g });
+            n.d(a, { ZH: () => g, ZP: () => y, x9: () => k });
             n(136728);
             var o = n(202784),
                 r = n(726426),
@@ -416,13 +416,13 @@
                 f = l().j77292b7,
                 w = { onGrokFileSelected: (e) => new Promise((e) => e()), onFileSelected: (e, a) => new Promise((e) => e()), selectedFiles: {}, clearSelectedFile: () => {} },
                 D = o.createContext(w);
-            function k({ children: e }) {
+            function g({ children: e }) {
                 const [a, n] = o.useState({}),
                     r = (0, c.p)(),
                     t = (0, u.Z)(),
                     l = (0, b.k)(),
                     w = (0, i.JY)("responsive_web_grok_file_upload_max_files", m),
-                    k = o.useCallback(
+                    g = o.useCallback(
                         (e) => {
                             const o = a[e];
                             o &&
@@ -434,7 +434,7 @@
                         },
                         [a, n],
                     ),
-                    g = o.useCallback(
+                    k = o.useCallback(
                         async (e, a) => {
                             const o = d()(),
                                 i = new AbortController(),
@@ -488,9 +488,9 @@
                         },
                         [a],
                     );
-                return o.createElement(D.Provider, { value: { selectedFiles: a, onFileSelected: g, clearSelectedFile: k, onGrokFileSelected: y } }, e);
+                return o.createElement(D.Provider, { value: { selectedFiles: a, onFileSelected: k, clearSelectedFile: g, onGrokFileSelected: y } }, e);
             }
-            function g() {
+            function k() {
                 const e = (0, i.hC)("responsive_web_grok_pdf_upload_enabled"),
                     a = (0, i.hC)("responsive_web_grok_text_upload_enabled");
                 return o.useMemo(() => {
@@ -591,8 +591,8 @@
                     f = (0, i.v9)(n.selectFetchConversationIdError),
                     w = (0, i.v9)(n.selectMode),
                     D = (0, i.v9)(n.selectStatus),
-                    k = (0, i.v9)(c.Pt),
-                    g = (0, i.v9)(n.selectConversationId),
+                    g = (0, i.v9)(c.Pt),
+                    k = (0, i.v9)(n.selectConversationId),
                     y = (0, i.v9)(c.pZ),
                     M = (0, i.v9)(c.uF),
                     v = (0, i.v9)(c.F9),
@@ -613,7 +613,7 @@
                         },
                         [t, w, v],
                     );
-                return { messageIds: r, access: _, status: D, grokSettingsStatus: k, conversationKey: a, conversationId: g, analysisEntityId: x, accessRestrictedReasons: y, fetchConversationIdStatus: p, fetchConversationIdError: f, mode: w, model: v, changeMode: S, changeModel: C, usingExperiment: A };
+                return { messageIds: r, access: _, status: D, grokSettingsStatus: g, conversationKey: a, conversationId: k, analysisEntityId: x, accessRestrictedReasons: y, fetchConversationIdStatus: p, fetchConversationIdError: f, mode: w, model: v, changeMode: S, changeModel: C, usingExperiment: A };
             }
         },
         305442: (e, a, n) => {
@@ -624,7 +624,7 @@
             }
         },
         623494: (e, a, n) => {
-            n.d(a, { DE: () => m, G$: () => l, HO: () => _, HR: () => G, JO: () => w, Jm: () => x, NH: () => N, RC: () => f, S7: () => C, UV: () => P, Uk: () => M, YI: () => c, YW: () => S, ZY: () => p, az: () => s, c3: () => t, dP: () => k, dd: () => b, eS: () => v, eV: () => A, hf: () => D, hq: () => i, kl: () => y, mm: () => h, op: () => g, pv: () => d, qQ: () => R, u1: () => E, y6: () => u, zC: () => I, zX: () => T });
+            n.d(a, { DE: () => m, G$: () => l, HO: () => _, HR: () => G, JO: () => w, Jm: () => x, NH: () => N, RC: () => f, S7: () => C, UV: () => P, Uk: () => M, YI: () => c, YW: () => S, ZY: () => p, az: () => s, c3: () => t, dP: () => g, dd: () => b, eS: () => v, eV: () => A, hf: () => D, hq: () => i, kl: () => y, mm: () => h, op: () => k, pv: () => d, qQ: () => R, u1: () => E, y6: () => u, zC: () => I, zX: () => T });
             var o = n(163889);
             function r() {
                 return `online:${window.navigator.onLine}|effectiveType:${window.navigator.connection?.effectiveType ?? "unknown"}`;
@@ -671,10 +671,10 @@
             function D(e, a) {
                 Z(e)({ element: "tweet-carousel", action: "change", data: { event_info: a.toString() } });
             }
-            function k(e, a) {
+            function g(e, a) {
                 Z(e)({ element: "file-attachment", action: "add", data: { event_info: a } });
             }
-            function g(e, a) {
+            function k(e, a) {
                 Z(e)({ element: "file-attachment", action: "fail", data: { event_info: a } });
             }
             function y(e, a, n) {
@@ -728,4 +728,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.b8c37f3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.d9f1b23a.js.map

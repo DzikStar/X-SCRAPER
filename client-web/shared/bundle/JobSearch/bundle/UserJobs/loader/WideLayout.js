@@ -1,9 +1,9 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"],
+    ["shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout", "icons/IconStar-js", "icons/IconStarStroke-js"],
     {
         822502: (e, n, t) => {
-            t.d(n, { Z: () => P });
+            t.d(n, { Z: () => Z });
             var a,
                 l,
                 r,
@@ -16,49 +16,49 @@
                 d = t.n(u),
                 m = t(392237),
                 p = t(725405),
-                y = t(535338),
-                g = t(665971),
+                g = t(535338),
+                y = t(665971),
                 b = (t(136728), t(107267)),
-                k = t(731708),
+                f = t(731708),
                 h = t(519172),
-                f = t(601413),
+                k = t(601413),
                 v = t(952428),
                 _ = t(823161),
                 S = t(757483),
                 E = t(457458),
-                F = t(412876),
-                I = t(910113);
-            const w = ({ fallbackName: e, user: n }) => {
-                    const t = d()(I.fR, n);
-                    return t && t.core && t.core.name && t.core.screen_name ? o.createElement(k.ZP, { size: "subtext2", style: C.userName }, o.createElement(c.Z, { style: C.name }, o.createElement(k.ZP, { numberOfLines: 1 }, t.core.name), o.createElement(h.Z, { isVerified: t.verification?.verified ?? !1, verifiedType: t.verification?.verified_type ?? void 0 })), o.createElement(f.Z, { screenName: t.core.screen_name, size: "subtext2" })) : e ? o.createElement(k.ZP, { size: "subtext2", weight: "normal" }, e) : null;
+                w = t(412876),
+                F = t(910113);
+            const C = ({ fallbackName: e, user: n }) => {
+                    const t = d()(F.fR, n);
+                    return t && t.core && t.core.name && t.core.screen_name ? o.createElement(f.ZP, { size: "subtext2", style: x.userName }, o.createElement(c.Z, { style: x.name }, o.createElement(f.ZP, { numberOfLines: 1 }, t.core.name), o.createElement(h.Z, { isVerified: t.verification?.verified ?? !1, verifiedType: t.verification?.verified_type ?? void 0 })), o.createElement(k.Z, { screenName: t.core.screen_name, size: "subtext2" })) : e ? o.createElement(f.ZP, { size: "subtext2", weight: "normal" }, e) : null;
                 },
-                C = m.default.create((e) => ({ listContainer: { paddingVertical: e.spaces.space16, paddingHorizontal: e.spaces.space20 }, inactiveItem: { borderBottomColor: e.colors.borderColor, borderBottomWidth: 1 }, activeItem: { backgroundColor: S.Z.hexToCss(e.colors.primary, 0.25) }, itemRow: { display: "flex", flexDirection: "row", gap: 16 }, items: { display: "flex", flexDirection: "column", gap: 4, flex: 1 }, userName: { alignItems: "center", display: "flex", flexWrap: "wrap", gap: 4 }, name: { flexWrap: "nowrap", flexDirection: "row", flexShrink: 1 } })),
-                K = ({ companyProfile: e, formattedSalary: n, jobId: t, jobLocation: a, jobTitle: l, onClick: r, renderActions: i, salaryInterval: s, user: u, withBottomBorder: d = !0 }) => {
+                x = m.default.create((e) => ({ listContainer: { paddingVertical: e.spaces.space16, paddingHorizontal: e.spaces.space20 }, inactiveItem: { borderBottomColor: e.colors.borderColor, borderBottomWidth: 1 }, activeItem: { backgroundColor: S.Z.hexToCss(e.colors.primary, 0.25) }, itemRow: { display: "flex", flexDirection: "row", gap: 16 }, items: { display: "flex", flexDirection: "column", gap: 4, flex: 1 }, userName: { alignItems: "center", display: "flex", flexWrap: "wrap", gap: 4 }, name: { flexWrap: "nowrap", flexDirection: "row", flexShrink: 1 } })),
+                I = ({ companyProfile: e, formattedSalary: n, jobId: t, jobLocation: a, jobTitle: l, onClick: r, renderActions: i, salaryInterval: s, user: u, withBottomBorder: d = !0 }) => {
                     const { jobId: m } = (0, b.useParams)(),
                         p = o.useMemo(() => ({ label: l }), [l]),
-                        y = o.useMemo(() => {
-                            const e = [C.listContainer];
-                            return m === t ? e.push(C.activeItem) : d && e.push(C.inactiveItem), e;
+                        g = o.useMemo(() => {
+                            const e = [x.listContainer];
+                            return m === t ? e.push(x.activeItem) : d && e.push(x.inactiveItem), e;
                         }, [m, t, d]);
-                    return o.createElement(v.Z, { onClick: r, role: "listitem", style: y }, o.createElement(c.Z, { style: C.itemRow }, u ? o.createElement(F.Y, { size: "xLarge", user: u }) : o.createElement(_.default, { shape: "square", size: "xLarge", uri: e?.logo?.normal_url || "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" }), o.createElement(c.Z, { style: C.items }, o.createElement(k.ZP, { hoverLabel: p, numberOfLines: 2, size: "subtext1", weight: "bold" }, l), o.createElement(w, { fallbackName: e?.core?.name, user: u }), o.createElement(k.ZP, { color: "gray700", size: "subtext2" }, a), n ? o.createElement(k.ZP, { color: "gray700", size: "subtext2" }, (0, E.M)(n, s)) : null)), i && o.createElement(c.Z, null, i()));
+                    return o.createElement(v.Z, { onClick: r, role: "listitem", style: g }, o.createElement(c.Z, { style: x.itemRow }, u ? o.createElement(w.Y, { size: "xLarge", user: u }) : o.createElement(_.default, { shape: "square", size: "xLarge", uri: e?.logo?.normal_url || "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" }), o.createElement(c.Z, { style: x.items }, o.createElement(f.ZP, { hoverLabel: p, numberOfLines: 2, size: "subtext1", weight: "bold" }, l), o.createElement(C, { fallbackName: e?.core?.name, user: u }), o.createElement(f.ZP, { color: "gray700", size: "subtext2" }, a), n ? o.createElement(f.ZP, { color: "gray700", size: "subtext2" }, (0, E.M)(n, s)) : null)), i && o.createElement(c.Z, null, i()));
                 },
                 L = s,
-                x = m.default.create((e) => ({ actions: { display: "flex", flexDirection: "row", justifyContent: "space-between", flex: 1, marginStart: e.spaces.space56, marginTop: e.spaces.space12 } })),
-                P = ({ actions: e, companyProfile: n, job: t, jobId: a, jobIndex: l, onClick: r, relayId: i, user: s, userSentiment: u, withBottomBorder: m = !0 }) => {
+                K = m.default.create((e) => ({ actions: { display: "flex", flexDirection: "row", justifyContent: "space-between", flex: 1, marginStart: e.spaces.space56, marginTop: e.spaces.space12 } })),
+                Z = ({ actions: e, companyProfile: n, job: t, jobId: a, jobIndex: l, onClick: r, relayId: i, user: s, userSentiment: u, withBottomBorder: m = !0 }) => {
                     const b = (0, p.Z)(),
-                        { viewer: k } = (0, y.p)(L, {}),
-                        h = d()(I.qV, t),
-                        f = d()(I.dB, n),
-                        v = k?.user_results?.result?.__id,
+                        { viewer: f } = (0, g.p)(L, {}),
+                        h = d()(F.qV, t),
+                        k = d()(F.dB, n),
+                        v = f?.user_results?.result?.__id,
                         _ = o.useCallback(() => {
                             b.scribe({ action: "click", component: "job_search_list_item", element: "job", data: { items: [{ id: a, position: l }] } }), r();
                         }, [b, a, l, r]),
-                        S = o.useCallback(() => o.createElement(c.Z, { style: x.actions }, o.createElement(g.ZP, { actions: e, jobId: a, relayId: i, userRelayId: v, userSentiment: u })), [e, a, i, v, u]);
-                    return h && h.title && h.location ? o.createElement(K, { companyProfile: f, formattedSalary: h.formatted_salary, jobId: a, jobLocation: h.location, jobTitle: h.title, onClick: _, renderActions: S, salaryInterval: h.salary_interval, user: s, withBottomBorder: m }) : null;
+                        S = o.useCallback(() => o.createElement(c.Z, { style: K.actions }, o.createElement(y.ZP, { actions: e, jobId: a, relayId: i, userRelayId: v, userSentiment: u })), [e, a, i, v, u]);
+                    return h && h.title && h.location ? o.createElement(I, { companyProfile: k, formattedSalary: h.formatted_salary, jobId: a, jobLocation: h.location, jobTitle: h.title, onClick: _, renderActions: S, salaryInterval: h.salary_interval, user: s, withBottomBorder: m }) : null;
                 };
         },
         910113: (e, n, t) => {
-            t.d(n, { ZP: () => F, dB: () => _, KM: () => E, qV: () => v, fR: () => S });
+            t.d(n, { ZP: () => w, dB: () => _, KM: () => E, qV: () => v, fR: () => S });
             t(136728);
             var a,
                 l,
@@ -190,21 +190,21 @@
             };
             const m = d;
             var p = t(202784),
-                y = (t(585488), t(277660)),
-                g = t.n(y),
+                g = (t(585488), t(277660)),
+                y = t.n(g),
                 b = t(107267),
-                k = t(708852),
+                f = t(708852),
                 h = t(822502),
-                f = t(318178);
+                k = t(318178);
             const v = m,
                 _ = u,
                 S = o,
                 E = i,
-                F = ({ item: e, itemId: n, itemIndex: t }) => {
-                    const a = (0, k.Ji)(),
+                w = ({ item: e, itemId: n, itemIndex: t }) => {
+                    const a = (0, f.Ji)(),
                         l = (0, b.useHistory)(),
                         r = (0, b.useLocation)(),
-                        i = g()(E, e),
+                        i = y()(E, e),
                         s = i?.core,
                         o = i?.user_results?.result,
                         c = i?.company_profile_results?.result,
@@ -213,11 +213,11 @@
                         m = p.useCallback(() => {
                             a ? l.push({ pathname: `/jobs/${n}`, query: r.query }) : l.push({ pathname: `/m/jobs/${n}`, query: r.query });
                         }, [l, a, n, r.query]);
-                    return i && s ? p.createElement(h.Z, { actions: [f.h5], companyProfile: c, job: s, jobId: n, jobIndex: t, onClick: m, relayId: u, user: o, userSentiment: d }) : null;
+                    return i && s ? p.createElement(h.Z, { actions: [k.h5], companyProfile: c, job: s, jobId: n, jobIndex: t, onClick: m, relayId: u, user: o, userSentiment: d }) : null;
                 };
         },
         318178: (e, n, t) => {
-            t.d(n, { pN: () => I, h5: () => F, ZP: () => K, tv: () => E });
+            t.d(n, { pN: () => F, h5: () => w, ZP: () => I, tv: () => E });
             var a,
                 l,
                 r,
@@ -260,12 +260,12 @@
                 d = t(325686),
                 m = (t(585488), t(351743)),
                 p = t.n(m),
-                y = t(530732),
-                g = t(731708),
+                g = t(530732),
+                y = t(731708),
                 b = t(392237),
-                k = t(106186),
+                f = t(106186),
                 h = t(258292),
-                f = t(616894),
+                k = t(616894),
                 v = t(443781),
                 _ = t(292546);
             const S = c,
@@ -291,18 +291,18 @@
                         [l, s, e, i, a],
                     );
                 },
-                F = "like",
-                I = "dislike",
-                w = ({ Icon: e, SelectedIcon: n, activeStyle: t, hoverStyle: a, isSelected: l, label: r, onClick: i, sentiment: s }) => {
+                w = "like",
+                F = "dislike",
+                C = ({ Icon: e, SelectedIcon: n, activeStyle: t, hoverStyle: a, isSelected: l, label: r, onClick: i, sentiment: s }) => {
                     const o = (e) => (e ? a : l ? t : {});
                     return u.createElement(
                         d.Z,
                         null,
-                        u.createElement(y.Z, { interactiveStyles: null, onClick: (e) => i(s, e), style: C.sentimentActionContainer }, ({ isHovered: t }) => u.createElement(u.Fragment, null, l ? u.createElement(n, { style: o(t) }) : u.createElement(e, { style: o(t) }), u.createElement(g.ZP, { size: "subtext2", style: { ...o(t) } }, r))),
+                        u.createElement(g.Z, { interactiveStyles: null, onClick: (e) => i(s, e), style: x.sentimentActionContainer }, ({ isHovered: t }) => u.createElement(u.Fragment, null, l ? u.createElement(n, { style: o(t) }) : u.createElement(e, { style: o(t) }), u.createElement(y.ZP, { size: "subtext2", style: { ...o(t) } }, r))),
                     );
                 },
-                C = b.default.create((e) => ({ sentimentActionContainer: { display: "flex", flexDirection: "row", flex: 1, gap: 6, alignItems: "center", cursor: "pointer" }, sentimentActionText: { marginTop: e.spaces.space4 }, likeActive: { color: e.colors.blue500 }, likeHover: { color: e.colors.blue700 }, dislikeActive: { color: e.colors.red500 }, dislikeHover: { color: e.colors.red700 } })),
-                K = ({ jobId: e, relayId: n, type: t, userRelayId: a, userSentiment: l }) => {
+                x = b.default.create((e) => ({ sentimentActionContainer: { display: "flex", flexDirection: "row", flex: 1, gap: 6, alignItems: "center", cursor: "pointer" }, sentimentActionText: { marginTop: e.spaces.space4 }, likeActive: { color: e.colors.blue500 }, likeHover: { color: e.colors.blue700 }, dislikeActive: { color: e.colors.red500 }, dislikeHover: { color: e.colors.red700 } })),
+                I = ({ jobId: e, relayId: n, type: t, userRelayId: a, userSentiment: l }) => {
                     const r = E(e, n, a),
                         i = u.useCallback(
                             (e, n) => {
@@ -311,7 +311,7 @@
                             },
                             [r, l],
                         );
-                    return t === F ? u.createElement(w, { Icon: k.default, SelectedIcon: h.default, activeStyle: C.likeActive, hoverStyle: C.likeHover, isSelected: l === F, label: "Save job", onClick: i, sentiment: F }) : t === I ? u.createElement(w, { Icon: f.default, SelectedIcon: f.default, activeStyle: C.dislikeActive, hoverStyle: C.dislikeHover, isSelected: l === I, label: "Not interested", onClick: i, sentiment: I }) : null;
+                    return t === w ? u.createElement(C, { Icon: f.default, SelectedIcon: h.default, activeStyle: x.likeActive, hoverStyle: x.likeHover, isSelected: l === w, label: "Save job", onClick: i, sentiment: w }) : t === F ? u.createElement(C, { Icon: k.default, SelectedIcon: k.default, activeStyle: x.dislikeActive, hoverStyle: x.dislikeHover, isSelected: l === F, label: "Not interested", onClick: i, sentiment: F }) : null;
                 };
         },
         292546: (e, n, t) => {
@@ -386,21 +386,21 @@
             d.hash = "e5a668a0d2bfaed6901573b493e6449a";
             const m = d;
             var p = t(202784),
-                y = (t(585488), t(318178)),
-                g = t(952793),
+                g = (t(585488), t(318178)),
+                y = t(952793),
                 b = t(535338);
-            const k = m,
+            const f = m,
                 h = ({ actions: e, jobId: n }) => {
-                    const { jobData: t, viewer: a } = (0, b.p)(k, { jobId: n }),
+                    const { jobData: t, viewer: a } = (0, b.p)(f, { jobId: n }),
                         l = t?.result?.id ?? "",
                         r = t?.result?.user_sentiment;
-                    return p.createElement(f, { actions: e, jobId: n, relayId: l, userRelayId: a?.user_results?.result?.__id, userSentiment: r });
+                    return p.createElement(k, { actions: e, jobId: n, relayId: l, userRelayId: a?.user_results?.result?.__id, userSentiment: r });
                 },
-                f = ({ actions: e, jobId: n, relayId: t, userRelayId: a, userSentiment: l }) => {
-                    const r = (0, g.hC)("recruiting_job_recommendations_enabled");
-                    return e && 0 !== e.length && r ? p.createElement(p.Fragment, null, e.includes(y.pN) && p.createElement(y.ZP, { jobId: n, relayId: t, type: y.pN, userRelayId: a, userSentiment: l }), e.includes(y.h5) && p.createElement(y.ZP, { jobId: n, relayId: t, type: y.h5, userRelayId: a, userSentiment: l })) : null;
+                k = ({ actions: e, jobId: n, relayId: t, userRelayId: a, userSentiment: l }) => {
+                    const r = (0, y.hC)("recruiting_job_recommendations_enabled");
+                    return e && 0 !== e.length && r ? p.createElement(p.Fragment, null, e.includes(g.pN) && p.createElement(g.ZP, { jobId: n, relayId: t, type: g.pN, userRelayId: a, userSentiment: l }), e.includes(g.h5) && p.createElement(g.ZP, { jobId: n, relayId: t, type: g.h5, userRelayId: a, userSentiment: l })) : null;
                 },
-                v = f;
+                v = k;
         },
         89217: (e, n, t) => {
             t.d(n, { Ju: () => m, Qw: () => p, eo: () => c });
@@ -492,7 +492,7 @@
                 d = t(154003),
                 m = t(173739);
             const p = s().jcf3e7a2;
-            function y({ animation: e, autoplay: n }) {
+            function g({ animation: e, autoplay: n }) {
                 const [t, r] = a.useState(n),
                     [i, s] = a.useState(0);
                 return (
@@ -503,7 +503,7 @@
                     }, [e]),
                     a.createElement(
                         l.Z,
-                        { style: g.container },
+                        { style: y.container },
                         a.createElement(d.ZP, {
                             "aria-label": t ? "Pause" : "Play",
                             icon: t ? a.createElement(o.default, null) : a.createElement(c.default, null),
@@ -512,10 +512,10 @@
                             },
                             type: "primaryText",
                         }),
-                        a.createElement(u.ZP, { style: g.frames }, `${i}/${e.totalFrames}`),
+                        a.createElement(u.ZP, { style: y.frames }, `${i}/${e.totalFrames}`),
                         a.createElement(
                             l.Z,
-                            { style: g.slider },
+                            { style: y.slider },
                             a.createElement(m.Z, {
                                 "aria-label": p,
                                 max: e.totalFrames,
@@ -529,7 +529,7 @@
                     )
                 );
             }
-            const g = r.default.create((e) => ({ container: { width: "100%", flexDirection: "row", alignItems: "center" }, frames: { marginStart: e.spaces.space12 }, slider: { flex: 1, marginStart: e.spaces.space12 } }));
+            const y = r.default.create((e) => ({ container: { width: "100%", flexDirection: "row", alignItems: "center" }, frames: { marginStart: e.spaces.space12 }, slider: { flex: 1, marginStart: e.spaces.space12 } }));
             function b(e) {
                 const { autoplay: n = !0, loop: t = !1, onAnimationEnd: r, onAnimationStart: i, onError: s, withControls: o } = e,
                     c = a.useRef(void 0),
@@ -544,7 +544,7 @@
                         const { animationLoaded: l } = u.current;
                         l ||
                             ((u.current.animationLoaded = !0),
-                            k.load().then((l) => {
+                            f.load().then((l) => {
                                 if (l && d.current) {
                                     const r = { container: d.current, renderer: "svg", loop: t, autoplay: !1, ...("object" == typeof e.animation ? { animationData: e.animation } : { path: e.animation }) },
                                         o = l.loadAnimation(r);
@@ -569,24 +569,106 @@
                             },
                         [c],
                     ),
-                    a.createElement(l.Z, null, a.createElement(l.Z, { style: [e.animationContainerStyle, f.centerAnimation] }, a.createElement("div", { ref: d, style: e.animationStyle }), o && c.current && m && a.createElement(y, { animation: c.current, autoplay: n })))
+                    a.createElement(l.Z, null, a.createElement(l.Z, { style: [e.animationContainerStyle, k.centerAnimation] }, a.createElement("div", { ref: d, style: e.animationStyle }), o && c.current && m && a.createElement(g, { animation: c.current, autoplay: n })))
                 );
             }
             b.Prepare = function () {
                 return (
                     a.useEffect(() => {
-                        k.load();
+                        f.load();
                     }, []),
                     null
                 );
             };
-            const k = { load: () => t.e("ondemand.LottieWeb").then(t.t.bind(t, 548888, 23)) };
+            const f = { load: () => t.e("ondemand.LottieWeb").then(t.t.bind(t, 548888, 23)) };
             class h extends Error {
                 constructor(e, ...n) {
                     super(...n), Error.captureStackTrace && Error.captureStackTrace(this, h), (this.name = "LottieAnimationError"), (this.lottieError = e);
                 }
             }
-            const f = r.default.create((e) => ({ centerAnimation: { alignItems: "center", justifyContent: "center" } }));
+            const k = r.default.create((e) => ({ centerAnimation: { alignItems: "center", justifyContent: "center" } }));
+        },
+        280278: (e, n, t) => {
+            t.d(n, { ZP: () => y });
+            var a = t(202784),
+                l = t(325686),
+                r = t(827515),
+                i = t(461756),
+                s = t(731708),
+                o = t(392237);
+            const c = "up",
+                u = "down",
+                d = (e, n, t) => {
+                    t((t) => {
+                        const a = (0, r.Z)(e) ? (e > (t.count || 0) ? c : u) : c;
+                        return { ...t, count: e, oldText: t.text, pendingCount: null, pendingText: null, text: n, transitionDirection: a };
+                    });
+                },
+                m = {};
+            [c, u].forEach((e) => {
+                const n = "0.3s";
+                m[e] = { active: { transitionProperty: "transform", transitionDuration: n, transform: "translate3d(0, 0, 0)" }, pre: { transform: `translate3d(0, ${e === c ? "100%" : "-100%"}, 0)` }, post: { transform: `translate3d(0, ${e === c ? "-100%" : "100%"}, 0)`, transitionProperty: "transform", transitionDuration: n } };
+            });
+            const p = { position: "absolute" },
+                g = o.default.create({ root: { overflow: "hidden" } }),
+                y = (e) => {
+                    const { children: n, containerStyle: t, count: o, ...u } = e,
+                        [y, b] = a.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: c }),
+                        f = a.useRef(!1);
+                    return (
+                        a.useEffect(
+                            () => (
+                                (f.current = !0),
+                                function () {
+                                    f.current = !1;
+                                }
+                            ),
+                            [],
+                        ),
+                        a.useEffect(() => {
+                            if (f.current)
+                                if (i.Z.reducedMotionEnabled) b((t) => ({ ...t, oldText: null, text: n, pendingText: null, pendingCount: null, count: e.count }));
+                                else if (n !== y.pendingText) {
+                                    n === y.text || ((0, r.Z)(e.count) && y.count === e.count) ? b((e) => ({ ...e, pendingCount: null, pendingText: null })) : (b((t) => ({ ...t, pendingCount: e.count, pendingText: n })), y.animating || d(e.count, n, b));
+                                }
+                        }, [n]),
+                        a.useEffect(() => {
+                            f.current &&
+                                !1 === y.animating &&
+                                (y.oldText
+                                    ? window.requestAnimationFrame(() =>
+                                          window.requestAnimationFrame(() => {
+                                              f.current && b((e) => ({ ...e, animating: !0 }));
+                                          }),
+                                      )
+                                    : y.pendingText && d(y.pendingCount, y.pendingText, b));
+                        }, [y.animating, y.oldText]),
+                        a.useMemo(() => {
+                            const e = m[y.transitionDirection],
+                                n = y.oldText && !i.Z.reducedMotionEnabled,
+                                r = !y.animating && y.oldText && !i.Z.reducedMotionEnabled,
+                                o = { ...p, ...(y.animating ? e.post : e.active) },
+                                c = { ...(r ? e.pre : e.active) };
+                            return a.createElement(
+                                l.Z,
+                                { style: [g.root, t] },
+                                n ? a.createElement("span", { style: o }, a.createElement(s.ZP, u, y.oldText)) : null,
+                                a.createElement(
+                                    "span",
+                                    {
+                                        "data-testid": "app-text-transition-container",
+                                        onTransitionEnd: () =>
+                                            ((e, n) => {
+                                                e && n((e) => ({ ...e, animating: !1, oldText: null }));
+                                            })(f.current, b),
+                                        style: c,
+                                    },
+                                    a.createElement(s.ZP, u, y.text),
+                                ),
+                            );
+                        }, [t, u, y, f, b])
+                    );
+                };
         },
         40644: (e, n, t) => {
             t.d(n, { ZP: () => _ });
@@ -601,16 +683,16 @@
                 d = t(392237),
                 m = t(551611),
                 p = t(111677),
-                y = t.n(p),
-                g = t(891198),
+                g = t.n(p),
+                y = t(891198),
                 b = t(537392),
-                k = t(280278);
-            const h = y().e8d93005,
-                f = d.default.create((e) => ({ count: { paddingHorizontal: e.spacesPx.space4, minWidth: `calc(1em + 2 * ${e.spaces.space12})` }, narrowCount: { paddingEnd: 0, paddingStart: e.spacesPx.space4, minWidth: `calc(1em + ${e.spaces.space4})` } })),
+                f = t(280278);
+            const h = g().e8d93005,
+                k = d.default.create((e) => ({ count: { paddingHorizontal: e.spacesPx.space4, minWidth: `calc(1em + 2 * ${e.spaces.space12})` }, narrowCount: { paddingEnd: 0, paddingStart: e.spacesPx.space4, minWidth: `calc(1em + ${e.spaces.space4})` } })),
                 v = ({ color: e, count: n }) => {
-                    const t = (0, g.wl)(n, !0);
+                    const t = (0, y.wl)(n, !0);
                     return a.createElement(b.ZP, null, ({ containerWidth: l }) => {
-                        return a.createElement(k.ZP, { color: e, count: n, size: "subtext2", style: [f.count, ((r = l), r < d.default.theme.breakpoints.small && f.narrowCount)] }, n > 0 ? (((e) => e < d.default.theme.breakpoints.xxSmall)(l) || t.length >= 5 ? h(n) : t) : void 0);
+                        return a.createElement(f.ZP, { color: e, count: n, size: "subtext2", style: [k.count, ((r = l), r < d.default.theme.breakpoints.small && k.narrowCount)] }, n > 0 ? (((e) => e < d.default.theme.breakpoints.xxSmall)(l) || t.length >= 5 ? h(n) : t) : void 0);
                         var r;
                     });
                 };
@@ -619,20 +701,20 @@
                     super(...e),
                         (this._renderContent = (e, n) => {
                             const { activeColor: t, color: r, decoration: s } = this.props;
-                            return a.createElement(c.ZP.Consumer, null, ({ direction: o }) => a.createElement(i.ZP, { color: e ? t : r, dir: o, style: [F.inner, e && "blue500" === t && F.blue500] }, a.createElement(l.Z, { ref: this.props.actionIconContainerRef }, n ? this._renderButton(n) : null, this._renderIcon()), s, this._renderCount()));
+                            return a.createElement(c.ZP.Consumer, null, ({ direction: o }) => a.createElement(i.ZP, { color: e ? t : r, dir: o, style: [w.inner, e && "blue500" === t && w.blue500] }, a.createElement(l.Z, { ref: this.props.actionIconContainerRef }, n ? this._renderButton(n) : null, this._renderIcon()), s, this._renderCount()));
                         }),
                         (this._renderButton = (e) => {
                             const { activeColor: n, backgroundColor: t, hoverLabel: l, iconSize: r, isActive: i, isDisabled: c, showBackgroundWhenActive: u } = this.props,
                                 m = s.Z.generate({ backgroundColor: d.default.theme.colors[t], color: d.default.theme.colors[n], insetFocusRing: !0 }),
                                 p = u && i && !e?.isHovered;
-                            return a.createElement(o.Z, { hoverLabel: l, interactiveStyles: m, interactivityState: e, style: [d.default.absoluteFill, E[p ? "haloBackground" : t], !c && F.iconBackground, "small" === r && F.iconSmallBoundingBox, p && F.haloBoundingBox] });
+                            return a.createElement(o.Z, { hoverLabel: l, interactiveStyles: m, interactivityState: e, style: [d.default.absoluteFill, E[p ? "haloBackground" : t], !c && w.iconBackground, "small" === r && w.iconSmallBoundingBox, p && w.haloBoundingBox] });
                         }),
                         (this._renderIcon = () => {
-                            const { ActiveIcon: e, iconSize: n, isActive: t, isDisabled: l, isFaded: i, onAnimationEnd: s, onAnimationStart: o, onError: c, showAnimation: p, transitionAnimationUrl: y } = this.props;
-                            if (!d.default.theme.highContrastEnabled && !r.Z.reducedMotionEnabled && e && p) return a.createElement(u.ZP, { animation: y || m.Bf, animationContainerStyle: S[n], animationStyle: w, onAnimationEnd: s, onAnimationStart: o, onError: c });
+                            const { ActiveIcon: e, iconSize: n, isActive: t, isDisabled: l, isFaded: i, onAnimationEnd: s, onAnimationStart: o, onError: c, showAnimation: p, transitionAnimationUrl: g } = this.props;
+                            if (!d.default.theme.highContrastEnabled && !r.Z.reducedMotionEnabled && e && p) return a.createElement(u.ZP, { animation: g || m.Bf, animationContainerStyle: S[n], animationStyle: C, onAnimationEnd: s, onAnimationStart: o, onError: c });
                             {
                                 const r = t && e ? e : this.props.Icon;
-                                return a.createElement(r, { style: [S[n], !l && i && F.iconFaded] });
+                                return a.createElement(r, { style: [S[n], !l && i && w.iconFaded] });
                             }
                         }),
                         (this._renderCount = () => {
@@ -645,32 +727,32 @@
                         });
                 }
                 render() {
-                    const { "aria-label": e, focusable: n, enableKeyboardShortcuts: t, isActive: i, isDisabled: s, isPresentational: c, keyboardShortcut: m, link: p, preventFocusShift: y, renderMenu: g, renderWrapper: b = a.Fragment, style: k, testID: h } = this.props,
-                        f = !d.default.theme.highContrastEnabled && !r.Z.reducedMotionEnabled;
+                    const { "aria-label": e, focusable: n, enableKeyboardShortcuts: t, isActive: i, isDisabled: s, isPresentational: c, keyboardShortcut: m, link: p, preventFocusShift: g, renderMenu: y, renderWrapper: b = a.Fragment, style: f, testID: h } = this.props,
+                        k = !d.default.theme.highContrastEnabled && !r.Z.reducedMotionEnabled;
                     return a.createElement(
                         l.Z,
-                        { style: [F.root, k] },
+                        { style: [w.root, f] },
                         a.createElement(
                             b,
                             null,
                             c
                                 ? this._renderContent(i)
-                                : a.createElement(o.Z, { "aria-haspopup": g ? "menu" : void 0, "aria-label": e, disabled: s, enableKeyboardShortcuts: t, focusable: n, interactiveStyles: null, keyboardShortcut: m, link: p, onClick: this._handlePress, preventFocusShift: y, renderMenu: g, style: [F.triggerAreaRoot, F.outlineNone], testID: h }, (e) => {
+                                : a.createElement(o.Z, { "aria-haspopup": y ? "menu" : void 0, "aria-label": e, disabled: s, enableKeyboardShortcuts: t, focusable: n, interactiveStyles: null, keyboardShortcut: m, link: p, onClick: this._handlePress, preventFocusShift: g, renderMenu: y, style: [w.triggerAreaRoot, w.outlineNone], testID: h }, (e) => {
                                       const { isFocused: n, isHovered: t, isPressed: a } = e,
                                           l = i || t || a || n;
                                       return this._renderContent(l, e);
                                   }),
                         ),
-                        f ? a.createElement(u.ZP.Prepare, null) : null,
+                        k ? a.createElement(u.ZP.Prepare, null) : null,
                     );
                 }
             }
             _.defaultProps = { activeColor: "blue500", backgroundColor: "transparent", color: "gray700", count: 0, isDisabled: !1, iconSize: "normal" };
             const S = d.default.create((e) => ({ small: { height: "1em", width: "1em" }, normal: { height: "1.25em", width: "1.25em" }, large: { height: "1.5em", width: "1.5em" } })),
                 E = d.default.create((e) => ({ transparent: { backgroundColor: e.colors.transparent }, translucentBlack77: { backgroundColor: e.colors.translucentBlack77 }, haloBackground: { backgroundColor: e.colors.activeBlack } })),
-                F = d.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "flex-start" }, triggerAreaRoot: { justifyContent: "center", minHeight: e.lineHeights.body, overflow: "visible", userSelect: "none" }, inner: { alignItems: "center", display: "flex", justifyContent: "flex-start", transitionProperty: "color", transitionDuration: "0.2s", whiteSpace: "nowrap" }, iconFaded: { opacity: 0.4 }, iconBackground: { borderRadius: e.borderRadii.infinite, margin: -8 }, iconSmallBoundingBox: { margin: -6 }, outlineNone: { outlineStyle: "none" }, blue500: { color: e.colors.blue500 }, white: { color: e.colors.white }, haloBoundingBox: { margin: -6 } })),
-                I = "224.5%",
-                w = { width: I, height: I };
+                w = d.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "flex-start" }, triggerAreaRoot: { justifyContent: "center", minHeight: e.lineHeights.body, overflow: "visible", userSelect: "none" }, inner: { alignItems: "center", display: "flex", justifyContent: "flex-start", transitionProperty: "color", transitionDuration: "0.2s", whiteSpace: "nowrap" }, iconFaded: { opacity: 0.4 }, iconBackground: { borderRadius: e.borderRadii.infinite, margin: -8 }, iconSmallBoundingBox: { margin: -6 }, outlineNone: { outlineStyle: "none" }, blue500: { color: e.colors.blue500 }, white: { color: e.colors.white }, haloBoundingBox: { margin: -6 } })),
+                F = "224.5%",
+                C = { width: F, height: F };
         },
         551611: (e, n, t) => {
             t.d(n, { Bf: () => l, ZP: () => i });
@@ -683,6 +765,32 @@
             }
             const i = new r();
         },
+        258292: (e, n, t) => {
+            t.r(n), t.d(n, { default: () => o });
+            var a = t(202784),
+                l = t(890601),
+                r = t(783427),
+                i = t(347101);
+            const s = (e = {}) => {
+                const { direction: n } = (0, r.Z)();
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M12.013 1l3.527 7.15 7.886 1.14-5.707 5.56 1.347 7.86L12.013 19 4.96 22.71l1.347-7.86L.6 9.29l7.886-1.14L12.013 1z" })) }, { writingDirection: n });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
+        },
+        106186: (e, n, t) => {
+            t.r(n), t.d(n, { default: () => o });
+            var a = t(202784),
+                l = t(890601),
+                r = t(783427),
+                i = t(347101);
+            const s = (e = {}) => {
+                const { direction: n } = (0, r.Z)();
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23.426 9.29L15.54 8.15 12.013 1 8.486 8.15.6 9.29l5.707 5.56-1.348 7.86L12.013 19l7.053 3.71-1.347-7.86 5.707-5.56zm-11.413 7.45l-4.397 2.31.84-4.89-3.558-3.47 4.916-.72 2.199-4.45 2.198 4.45 4.917.72-3.558 3.47.84 4.89-4.397-2.31z" })) }, { writingDirection: n });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout.4f691bfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout.47f2edfa.js.map

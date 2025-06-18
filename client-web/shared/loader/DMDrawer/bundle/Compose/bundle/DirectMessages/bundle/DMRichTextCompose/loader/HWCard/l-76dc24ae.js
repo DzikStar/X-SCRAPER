@@ -24,8 +24,8 @@
                 v = d(942893),
                 C = d(500002),
                 E = d(443781),
-                f = d(288955),
-                M = d(325686),
+                M = d(288955),
+                f = d(325686),
                 A = d(682474),
                 g = d(392237),
                 S = d(290402),
@@ -40,10 +40,10 @@
                     const d = R(0, a);
                     return d ? P.Z.selectFetchStatus(e, d) : void 0;
                 },
-                L = (0, N.Z)()
+                B = (0, N.Z)()
                     .propsFromState(() => ({ videoTweetFetchStatus: G, videoTweet: P.Z.createHydratedTweetSelector(R) }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, x.zr)("EVENT_CARD_CONTEXT"), fetchTweetIfNeeded: P.Z.fetchOneIfNeeded })),
-                B = _().a1979464;
+                L = _().a1979464;
             class O extends t.Component {
                 constructor(...e) {
                     super(...e),
@@ -64,11 +64,11 @@
                 }
                 render() {
                     const { aspect_ratio: e, media_tweet_id: a, videoTweetFetchStatus: d } = this.props;
-                    return a ? t.createElement(A.Z, { ratio: e }, t.createElement(M.Z, { style: g.default.absoluteFill }, t.createElement(S.Z, { "aria-label": B, fetchStatus: d, onRequestRetry: this._handleFetchTweet, render: this._renderInlinePlayer }))) : null;
+                    return a ? t.createElement(A.Z, { ratio: e }, t.createElement(f.Z, { style: g.default.absoluteFill }, t.createElement(S.Z, { "aria-label": L, fetchStatus: d, onRequestRetry: this._handleFetchTweet, render: this._renderInlinePlayer }))) : null;
                 }
             }
             O.contextType = E.rC;
-            const U = L(O);
+            const U = B(O);
             var Z = d(676145),
                 V = d(775141),
                 F = d(917799),
@@ -84,31 +84,31 @@
                                     t = a.entities.broadcasts[d],
                                     o = W.Z.select(r(), e);
                                 if (!o || !t) return [];
-                                const n = J(t, o);
+                                const n = j(t, o);
                                 return [(0, H.dP)({ cards: { [e]: { ...n } } })];
                             }
                         }),
-                J = (e, a) => {
+                j = (e, a) => {
                     const { pre_live_slate_url: d, scheduled_start_time: r, state: t, status: o, user: n, user_results: l } = e,
                         s = l?.result?.core?.name,
                         { binding_values: i } = a;
                     return { binding_values: { ...i, broadcast_state: { type: "STRING", string_value: t }, broadcast_title: { type: "STRING", string_value: o }, site: { type: "USER", user_value: { id_str: n } }, broadcaster_display_name: { type: "STRING", string_value: s }, broadcast_scheduled_start_time: { type: "STRING", string_value: r }, ...(d ? { broadcast_pre_live_slate: { type: "IMAGE", image_value: { url: d } } } : null) } };
                 };
-            var j = d(702166),
+            var J = d(702166),
                 z = d(694180),
                 X = d(38562);
             const $ = (e, a) => {
                     const d = a.card ? a.card.url : a.unifiedCard?.card_uri;
-                    return a.cardState || (d && j.MH(e, d)?.cardState);
+                    return a.cardState || (d && J.MH(e, d)?.cardState);
                 },
                 Q = (e, a) => {
                     const d = a.card ? a.card.url : a.unifiedCard?.card_uri;
-                    return a.initialCarouselIndex || (d ? j.MH(e, d)?.carouselIndex : void 0);
+                    return a.initialCarouselIndex || (d ? J.MH(e, d)?.carouselIndex : void 0);
                 },
                 Y = (e, a) => (a.card ? o.default.getBindingValue(a.card.binding_values, "broadcast_id") : void 0),
                 ee = (0, N.Z)()
                     .propsFromState(() => ({ cardState: $, initialCarouselIndex: Q, isDataSaverEnabled: X.IX, broadcastId: Y }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, x.zr)("CARD_CONTAINER"), requestCardUpdate: W.Z.fetchOne, log: z.cM, updateBroadcastCard: K, vote: W.Z.vote, remindMeButtonSubscribe: W.Z.eventSubscribe, remindMeButtonUnsubscribe: W.Z.eventUnsubscribe, updateCardState: j.dy }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, x.zr)("CARD_CONTAINER"), requestCardUpdate: W.Z.fetchOne, log: z.cM, updateBroadcastCard: K, vote: W.Z.vote, remindMeButtonSubscribe: W.Z.eventSubscribe, remindMeButtonUnsubscribe: W.Z.eventUnsubscribe, updateCardState: J.dy }))
                     .withAnalytics({ element: "platform_card" });
             var ae = d(803810);
             const de = ({ action: e, buttonIndex: a, componentType: d, ucEventData: r, ucPromotedMetadata: t }) => {
@@ -143,22 +143,25 @@
             const re = (0, d(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.8"),
-                        d.e("icons.15"),
-                        d.e("icons.7"),
-                        d.e("icons.3"),
-                        d.e("icons.24"),
-                        d.e("icons.12"),
-                        d.e("icons.22"),
-                        d.e("icons.2"),
-                        d.e("icons.18"),
-                        d.e("icons.9"),
-                        d.e("icons.6"),
+                        d.e("icons.21"),
+                        d.e("icons.16"),
+                        d.e("icons.10"),
                         d.e("icons.1"),
+                        d.e("icons.19"),
+                        d.e("icons.0"),
+                        d.e("icons.23"),
+                        d.e("icons.8"),
+                        d.e("icons.2"),
+                        d.e("icons.3"),
+                        d.e("icons.15"),
+                        d.e("icons.4"),
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
-                        d.e("icons.14"),
-                        d.e("icons.5"),
+                        d.e("icons.9"),
+                        d.e("icons.7"),
+                        d.e("icons.28"),
+                        d.e("icons.26"),
+                        d.e("icons.24"),
                         d.e("modules.audio-6107ac1a"),
                         d.e("modules.audio-b953418a"),
                         d.e("modules.audio-7c51e6a7"),
@@ -169,14 +172,11 @@
                         d.e("modules.audio-e019dbda"),
                         d.e("modules.audio-262c94d4"),
                         d.e("modules.audio-c6fe4ea4"),
-                        d.e("icons.21"),
-                        d.e("icons.16"),
-                        d.e("icons.28"),
-                        d.e("icons.17"),
+                        d.e("icons.18"),
+                        d.e("icons.13"),
+                        d.e("icons.29"),
                         d.e("icons.27"),
-                        d.e("icons.19"),
-                        d.e("icons.0"),
-                        d.e("icons.4"),
+                        d.e("icons.25"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -216,11 +216,10 @@
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3ec0edf6"),
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3fd5f349"),
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
-                        d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-88dc685d"),
-                        d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-271d17b1"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
-                        d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
+                        d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
+                        d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
@@ -232,6 +231,7 @@
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
+                        d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader."),
                         d.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-8d7085c2"),
                         d.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-53f39e22"),
                         d.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5"),
@@ -318,8 +318,8 @@
                     .propsFromActions(() => ({ addToast: De.fz, createLocalApiErrorHandler: (0, x.zr)("BOOKMARK_BUTTON_CONTAINER"), onBookmark: P.Z.bookmark, onUnbookmark: P.Z.unbookmark, removeTweetsFromBookmarksTimeline: we.qk })),
                 Ce = _().gb303814,
                 Ee = _().h6f99ac4,
-                fe = _().c2453318,
-                Me = _().j08dd2d4,
+                Me = _().c2453318,
+                fe = _().j08dd2d4,
                 Ae = _().g1c463f6,
                 ge = t.createElement(ue.default, null),
                 Se = t.createElement(be.default, null),
@@ -335,7 +335,7 @@
                             { bookmarked: m } = s.retweeted_status ?? s,
                             D = () => {
                                 const e = c?.isTrueAndEnabled("subscriptions_feature_1002");
-                                a({ action: { label: fe, onAction: e ? w : k }, text: Ee });
+                                a({ action: { label: Me, onAction: e ? w : k }, text: Ee });
                             },
                             w = () => {
                                 o(p.id_str), r.push({ pathname: "/i/bookmarks/add", state: { tweet_id: p.id_str } });
@@ -349,15 +349,15 @@
                             C = (e) => {
                                 b.scribeAction(e);
                             },
-                            f = m
+                            M = m
                                 ? () => {
                                       n(p.id_str).then(v, d(he.j)), C("unbookmark");
                                   }
                                 : () => {
                                       o(p.id_str).then(D, d(_e.h)), C("bookmark");
                                   },
-                            M = g.default.isDarkMode() ? "translucentWhite35" : "gray200";
-                        return t.createElement(ce.ZP, { "aria-label": m ? Me : Ce, borderColor: M, icon: m ? ge : Se, onClick: f, size: _ ? "medium" : "large" });
+                            f = g.default.isDarkMode() ? "translucentWhite35" : "gray200";
+                        return t.createElement(ce.ZP, { "aria-label": m ? fe : Ce, borderColor: f, icon: m ? ge : Se, onClick: M, size: _ ? "medium" : "large" });
                     }),
                 );
             var ye = d(632658),
@@ -367,8 +367,8 @@
                 Pe = _().c8b4bca0,
                 Re = _().f5ea07ec,
                 Ge = _().b62956aa,
-                Le = _().b5298d92,
-                Be = _().i3ea806a,
+                Be = _().b5298d92,
+                Le = _().i3ea806a,
                 Oe = _().fd00a76a,
                 Ue = _().e0aa5848,
                 Ze = _().g33f3050,
@@ -378,8 +378,8 @@
                 He = _().cb8c547e,
                 qe = _().d980e29f,
                 Ke = _().f93bb3ee,
-                Je = _().fc209bb7,
-                je = h.ZP.isIOS() ? "ios" : h.ZP.isAndroid() ? "android" : "other",
+                je = _().fc209bb7,
+                Je = h.ZP.isIOS() ? "ios" : h.ZP.isAndroid() ? "android" : "other",
                 ze = {},
                 Xe = (e) => {
                     if (ze[e]) return ze[e];
@@ -416,9 +416,9 @@
                                             case "book":
                                                 return Ge;
                                             case "connect":
-                                                return Le;
-                                            case "order":
                                                 return Be;
+                                            case "order":
+                                                return Le;
                                             case "open":
                                                 return Oe;
                                             default:
@@ -437,7 +437,7 @@
                                                 return Fe;
                                         }
                                     },
-                                    getMobileOS: () => je,
+                                    getMobileOS: () => Je,
                                     getDefaultVanityUrl: () => Ze,
                                     getPlayerCardIFrameUrl: (e) => `/i/cards-frame/${e}`,
                                     renderImage: ({ altText: e, cropCandidates: a, hideDataSaverOverlay: d, layoutCacheKey: r, onError: o, onLoad: n, quality: l, ratio: s, source: i }) => {
@@ -449,7 +449,7 @@
                                     renderTwemojiText: (e) => t.createElement(le.ZP, null, e),
                                     renderStartingTimeLabel: (e) => {
                                         const a = new Date(parseInt(e, 10));
-                                        return qe({ date: Je(a) });
+                                        return qe({ date: je(a) });
                                     },
                                     storeCardState: (e, d) => a(e, { cardState: d }),
                                     storeCarouselIndex: (e, d) => a(e, { carouselIndex: d }),
@@ -530,9 +530,9 @@
                             if (w === l.bQ.CLICK_ID_EMBED && !C) return;
                             let E = i;
                             o.default.isFollowerCard(a) && (E = "user_recommendation");
-                            const f = _ && this._isLiveEventCard() ? o.default.getBindingValue(_.binding_values, "event_id") : void 0,
-                                M = { ...(E ? { element: E } : null), action: w, data: { ...(C && { click_tracking_embed_details: C }), items: [{ ...v.Z.getHWCardItem({ action: w, adFreeLabelEligible: !1, componentType: t, cardName: a, carouselEventDetails: d, clickContext: r, ctaIndex: s, impressionId: k, isDataSaverEnabled: p, isUCAppInstall: "unified_card_app_store_open_link" === e, liveEventId: f, tweetId: h.tweetId, tweetUserId: h.tweetUserId, ...(u ? { viewingUserId: D } : null) }) }] } };
-                            b.scribe(M);
+                            const M = _ && this._isLiveEventCard() ? o.default.getBindingValue(_.binding_values, "event_id") : void 0,
+                                f = { ...(E ? { element: E } : null), action: w, data: { ...(C && { click_tracking_embed_details: C }), items: [{ ...v.Z.getHWCardItem({ action: w, adFreeLabelEligible: !1, componentType: t, cardName: a, carouselEventDetails: d, clickContext: r, ctaIndex: s, impressionId: k, isDataSaverEnabled: p, isUCAppInstall: "unified_card_app_store_open_link" === e, liveEventId: M, tweetId: h.tweetId, tweetUserId: h.tweetUserId, ...(u ? { viewingUserId: D } : null) }) }] } };
+                            b.scribe(f);
                         }),
                         (this._handlePollVote = ({ cardId: e, choice: a }) => {
                             const {
@@ -609,7 +609,7 @@
                 }
                 render() {
                     const { card: e, cardContext: a, dmSentOrReceived: d, id: r, initialCarouselIndex: o, isDataSaverEnabled: n, isInteractive: l, onCardLinkClick: s, promotedContent: i, unifiedCard: b, withBorder: _, withBorderShadow: h, withDetail: p, withRoundBorder: m, withSquareBottomBorderRadius: D } = this.props;
-                    return t.createElement(f.Z, null, (w) =>
+                    return t.createElement(M.Z, null, (w) =>
                         t.createElement(
                             c.ZP.Provider,
                             { value: this._getFeatureConfigurationContextProviderValue() },
@@ -634,4 +634,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-76dc24ae.c0f4e81a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-76dc24ae.2a9e285a.js.map

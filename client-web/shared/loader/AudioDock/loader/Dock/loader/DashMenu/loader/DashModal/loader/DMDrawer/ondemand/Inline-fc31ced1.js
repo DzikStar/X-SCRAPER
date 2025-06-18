@@ -20,22 +20,25 @@
             const r = (0, a(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        a.e("icons.8"),
-                        a.e("icons.15"),
-                        a.e("icons.7"),
-                        a.e("icons.3"),
-                        a.e("icons.24"),
-                        a.e("icons.12"),
-                        a.e("icons.22"),
-                        a.e("icons.2"),
-                        a.e("icons.18"),
-                        a.e("icons.9"),
-                        a.e("icons.6"),
+                        a.e("icons.21"),
+                        a.e("icons.16"),
+                        a.e("icons.10"),
                         a.e("icons.1"),
+                        a.e("icons.19"),
+                        a.e("icons.0"),
+                        a.e("icons.23"),
+                        a.e("icons.8"),
+                        a.e("icons.2"),
+                        a.e("icons.3"),
+                        a.e("icons.15"),
+                        a.e("icons.4"),
                         a.e("modules.common-e907d115"),
                         a.e("modules.common-e019dbda"),
-                        a.e("icons.14"),
-                        a.e("icons.5"),
+                        a.e("icons.9"),
+                        a.e("icons.7"),
+                        a.e("icons.28"),
+                        a.e("icons.26"),
+                        a.e("icons.24"),
                         a.e("modules.audio-6107ac1a"),
                         a.e("modules.audio-b953418a"),
                         a.e("modules.audio-7c51e6a7"),
@@ -46,14 +49,11 @@
                         a.e("modules.audio-e019dbda"),
                         a.e("modules.audio-262c94d4"),
                         a.e("modules.audio-c6fe4ea4"),
-                        a.e("icons.21"),
-                        a.e("icons.16"),
-                        a.e("icons.28"),
-                        a.e("icons.17"),
+                        a.e("icons.18"),
+                        a.e("icons.13"),
+                        a.e("icons.29"),
                         a.e("icons.27"),
-                        a.e("icons.19"),
-                        a.e("icons.0"),
-                        a.e("icons.4"),
+                        a.e("icons.25"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -88,11 +88,10 @@
                         a.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3ec0edf6"),
                         a.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3fd5f349"),
                         a.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
-                        a.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-88dc685d"),
-                        a.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-271d17b1"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
+                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
+                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
@@ -104,6 +103,7 @@
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
+                        a.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader."),
                         a.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-8d7085c2"),
                         a.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-53f39e22"),
                         a.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5"),
@@ -361,17 +361,17 @@
                 E = i().db6001e7({ limit: 5 }),
                 O = i().eb96d952,
                 N = i().i859a9d4,
-                k = i().b3880588,
-                L = i().ca058b68,
-                P = i().id24379c,
-                x = i().h4d7cbcc,
+                L = i().b3880588,
+                k = i().ca058b68,
+                x = i().id24379c,
+                P = i().h4d7cbcc,
                 C = (0, r.ju)("https://support.x.com/articles/20156423"),
                 U = (0, r.ju)("https://help.x.com/using-twitter/twitter-videos"),
                 F = (e) => ({ text: e }),
                 G = (e) => ({ text: e, action: { label: N, link: C } }),
                 B = (e) => ({ text: e, action: { label: N, link: U } }),
                 R = { [d.Y7.GIF_IS_TOO_LARGE]: F(w), [d.Y7.CANNOT_BE_PROCESSED]: F(m), [d.Y7.FILE_IS_NOT_AN_IMAGE]: F(p) },
-                z = { [s.d.ZERO_FILE_LENGTH]: F(h), [s.d.TIMEOUT]: F(k) },
+                z = { [s.d.ZERO_FILE_LENGTH]: F(h), [s.d.TIMEOUT]: F(L) },
                 V = { ...z, [s.d.FILE_TOO_LARGE]: F(E), [s.d.UNSUPPORTED_MEDIA]: G(T), [s.d.INVALID_MEDIA]: G(I) },
                 Z = { ...z, [s.d.FILE_TOO_LARGE]: F(w), [s.d.UNSUPPORTED_MEDIA]: G(_), [s.d.INVALID_MEDIA]: G(b) },
                 $ = { ...z, [s.d.FILE_TOO_LARGE]: F(A), [s.d.UNSUPPORTED_MEDIA]: B(g), [s.d.INVALID_MEDIA]: B(f) },
@@ -395,20 +395,20 @@
                                 if (e.isVideo) return $[t];
                                 break;
                             case j.METADATA:
-                                return F(x);
+                                return F(P);
                         }
                 },
                 K = (e) => {
                     if (W(e)) return e;
                 };
-            function q(e, t = P) {
+            function q(e, t = x) {
                 const a = K(e);
                 if (a) {
                     const r = e.message ? `${t} ${e.message}` : t;
                     return Y(a) || F(r);
                 }
             }
-            function J(e, t = L) {
+            function J(e, t = k) {
                 return e.type === n.gK.type && e.code === n.gK.NO_DIMENSIONS ? F(O) : e.type === c.hb.type && e.code === c.hb.NO_DIMENSIONS ? B(f) : F(t);
             }
         },
@@ -812,11 +812,11 @@
                 E = a(38562),
                 O = a(601576),
                 N = a(111531),
-                k = a(537052);
-            const L = l().g40ff2b4,
-                P = "mediaUpload",
-                x = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload2.json",
-                C = `rweb/${P}`,
+                L = a(537052);
+            const k = l().g40ff2b4,
+                x = "mediaUpload",
+                P = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload2.json",
+                C = `rweb/${x}`,
                 U = [],
                 F = "upload";
             class G extends Error {
@@ -836,7 +836,7 @@
                     }
                 }
                 return (
-                    a?.useLongVideoEndpoint && (d.uploadUrl = x),
+                    a?.useLongVideoEndpoint && (d.uploadUrl = P),
                     {
                         upload(t) {
                             (o = new p.Z(e, d)), (i = t), o.upload(i);
@@ -853,10 +853,10 @@
                     }
                 );
             }
-            const R = (e) => e[P],
+            const R = (e) => e[x],
                 z = (e, t) => {
                     const a = Array.isArray(t) ? t : [t];
-                    return e[P].filter((e) => a.some((t) => t === e.id));
+                    return e[x].filter((e) => a.some((t) => t === e.id));
                 },
                 V = (e, t) => {
                     const a = z(e, t);
@@ -1022,7 +1022,7 @@
                                             d.push(t), t?.reporter?.reportOperationComplete(D.BX.Processing, D.Uk.Success), t?.reporter?.toggleOperationPaused(D.BX.Full, !0), n(e.slice(1));
                                         },
                                         (t) => {
-                                            const i = (0, w.ZP)(t, L);
+                                            const i = (0, w.ZP)(t, k);
                                             i && a((0, O.fz)(i));
                                             const { code: d, message: s, name: l, type: u } = t;
                                             r.reporter?.setMetadata({ reason: { name: l, message: s, code: d } });
@@ -1109,7 +1109,7 @@
                                                                   c?.setMetadata({ mediaId: t }), c?.reportOperationComplete([D.BX.Full, D.BX.UploadSubmitUntilSruFinish], D.Uk.Success), e(o({ id: u, uploadId: t, uploadProgress: 1, uploading: !1 }));
                                                               },
                                                               _ = (e, t, a) => {
-                                                                  c?.setMetadata({ mediaId: a }), "uploading" === t ? (o({ id: u, uploadProgress: k.OA("uploading", e) }), 100 === e && c?.reportOperationComplete(D.BX.SruUpload, D.Uk.Success)) : "processing" === t && o({ id: u, uploadProgress: k.OA("processing", e) });
+                                                                  c?.setMetadata({ mediaId: a }), "uploading" === t ? (o({ id: u, uploadProgress: L.OA("uploading", e) }), 100 === e && c?.reportOperationComplete(D.BX.SruUpload, D.Uk.Success)) : "processing" === t && o({ id: u, uploadProgress: L.OA("processing", e) });
                                                               },
                                                               f = () => {
                                                                   c?.toggleOperationPaused(D.BX.Full, !0);
@@ -1204,7 +1204,7 @@
                         });
             };
             y.Z.register({
-                [P]: function (e = U, t) {
+                [x]: function (e = U, t) {
                     if (!t) return e;
                     switch (t.type) {
                         case Z:
@@ -1239,4 +1239,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1.b99bdf2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1.cba3860a.js.map

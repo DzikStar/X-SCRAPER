@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.MonetizationV2"],
+    ["bundle.MonetizationV2", "icons/IconChevronRight-js"],
     {
         587510: (e, t, i) => {
             i.d(t, { Z: () => g });
@@ -366,8 +366,8 @@
                 x = i(727828),
                 z = i(725405),
                 K = i(423488),
-                P = i(299690),
-                I = i(228477);
+                I = i(299690),
+                P = i(228477);
             function T({ children: e, description: t, title: i }) {
                 const r = (0, f.LX)(),
                     l = n.useMemo(() => ({ width: r ? "100%" : 440 }), [r]);
@@ -381,11 +381,11 @@
                 U = s().eea6d8f8,
                 V = s().a0e8811e,
                 j = s().e1a74ac0,
-                H = s().cd3a6f9a,
-                W = s().c35e6144,
-                B = s().b9dbeb34,
-                G = s().b2d41138,
-                M = s().defa7f12,
+                B = s().cd3a6f9a,
+                H = s().c35e6144,
+                W = s().b9dbeb34,
+                M = s().b2d41138,
+                G = s().defa7f12,
                 O = () => {
                     const e = (0, z.Z)();
                     n.useEffect(() => {
@@ -395,7 +395,7 @@
                         i = E.ZP.isWebView(),
                         [r, l] = n.useState(!1),
                         [a, o] = n.useState(!1),
-                        { revShareFailedRequirements: c, subscriptionsFailedRequirements: d } = (0, P.Z)(),
+                        { revShareFailedRequirements: c, subscriptionsFailedRequirements: d } = (0, I.Z)(),
                         u = n.useMemo(() => ({ width: t ? "100%" : 920 }), [t]),
                         p = n.useMemo(() => n.createElement(x.Z, { variant: "MonetizationPromoPage" }), []),
                         m = n.useCallback(() => {
@@ -421,7 +421,7 @@
                                         { style: u },
                                         n.createElement(b.Z, { style: N.header }, n.createElement(y.ZP, { align: t ? "left" : "center", size: t ? "title2" : "title1", weight: t ? "bold" : "medium" }, A), n.createElement(_.Z, { size: "space8" }), n.createElement(y.ZP, { align: t ? "left" : "center", color: "gray700", size: t ? "headline2" : "headline1" }, $), t ? null : n.createElement(n.Fragment, null, n.createElement(_.Z, { size: "space36" }), n.createElement(b.Z, { style: N.upsellButtonContainer }, p))),
                                         n.createElement(_.Z, { size: t ? "space32" : "space80" }),
-                                        n.createElement(b.Z, { style: N.upsellBlocks }, n.createElement(T, { description: D, title: q }, n.createElement(b.Z, { style: N.imageContainer }, n.createElement(h.Z, { "aria-label": q, aspectMode: v.Z.exact(2), image: S })), n.createElement(k.Z, { renderContent: () => n.createElement(K.Z, { failedRequirements: c }), wrapperStyle: N.popoverContent }, n.createElement(w.Z, { label: U, onPress: m, paddingHorizontal: "space0", styleOverride: N.pivot }))), n.createElement(T, { description: j, title: V }, n.createElement(b.Z, { style: N.imageContainer }, n.createElement(h.Z, { "aria-label": V, aspectMode: v.Z.exact(2), image: F })), n.createElement(k.Z, { renderContent: () => n.createElement(I.Z, { failedRequirements: d }), wrapperStyle: N.popoverContent }, n.createElement(w.Z, { label: H, onPress: g, styleOverride: N.pivot }))), n.createElement(T, { description: B, title: W }, n.createElement(b.Z, { style: N.imageContainer }, n.createElement(h.Z, { "aria-label": W, aspectMode: v.Z.exact(2), image: C }))), n.createElement(T, { description: M, title: G }, n.createElement(b.Z, { style: N.imageContainer }, n.createElement(h.Z, { "aria-label": G, aspectMode: v.Z.exact(2), image: Z })))),
+                                        n.createElement(b.Z, { style: N.upsellBlocks }, n.createElement(T, { description: D, title: q }, n.createElement(b.Z, { style: N.imageContainer }, n.createElement(h.Z, { "aria-label": q, aspectMode: v.Z.exact(2), image: S })), n.createElement(k.Z, { renderContent: () => n.createElement(K.Z, { failedRequirements: c }), wrapperStyle: N.popoverContent }, n.createElement(w.Z, { label: U, onPress: m, paddingHorizontal: "space0", styleOverride: N.pivot }))), n.createElement(T, { description: j, title: V }, n.createElement(b.Z, { style: N.imageContainer }, n.createElement(h.Z, { "aria-label": V, aspectMode: v.Z.exact(2), image: F })), n.createElement(k.Z, { renderContent: () => n.createElement(P.Z, { failedRequirements: d }), wrapperStyle: N.popoverContent }, n.createElement(w.Z, { label: B, onPress: g, styleOverride: N.pivot }))), n.createElement(T, { description: W, title: H }, n.createElement(b.Z, { style: N.imageContainer }, n.createElement(h.Z, { "aria-label": H, aspectMode: v.Z.exact(2), image: C }))), n.createElement(T, { description: G, title: M }, n.createElement(b.Z, { style: N.imageContainer }, n.createElement(h.Z, { "aria-label": M, aspectMode: v.Z.exact(2), image: Z })))),
                                         n.createElement(y.ZP, { color: "gray700", style: N.disclaimer }, n.createElement(s().I18NFormatMessage, { $i18n: "gbef9649" }, n.createElement(y.ZP, { link: "https://help.x.com/using-x/x-premium-faq#item2" }, s().i3e4955d))),
                                     ),
                                 ),
@@ -458,7 +458,7 @@
                 };
         },
         698579: (e, t, i) => {
-            i.d(t, { F9: () => I, Fx: () => Z, XS: () => u, Xb: () => P, j0: () => k });
+            i.d(t, { F9: () => P, Fx: () => Z, XS: () => u, Xb: () => I, j0: () => k });
             var n = i(688715),
                 r = i(111677),
                 l = i.n(r),
@@ -500,7 +500,7 @@
             function K(e, t) {
                 return { label: t || (e ? g : b), color: t ? "orange50" : e ? "green500" : "magenta500" };
             }
-            function P({ applicationStatus: e, eligibility: t, id: i, idvStatus: n, isActive: r, isPayoutSetupIncomplete: a = !1, pendingIdv: s = !1, rejectedCreatorCanReapply: o, revShareUpdateEnabled: c = !1 }) {
+            function I({ applicationStatus: e, eligibility: t, id: i, idvStatus: n, isActive: r, isPayoutSetupIncomplete: a = !1, pendingIdv: s = !1, rejectedCreatorCanReapply: o, revShareUpdateEnabled: c = !1 }) {
                 const d = { ...S(i, c) },
                     g = 0 === t.length || (1 === t.length && "id_verified" === t[0]);
                 if (r && !s) return d;
@@ -520,7 +520,7 @@
                 }
                 return i === u.adRev && ((d.link = s || a ? void 0 : g ? R(i) : F(i)), (d.description = s ? b : a ? m : x(i, c)), (d.disabled = t.includes("generic_violation") || t.includes("do_not_charge") || t.includes("verified_type")), (d.pill = K(g, a || s ? f : void 0)), (d.scribeComponent = z(i))), i === u.preRollAds && ((d.link = a ? k : g ? R(i) : F(i)), (d.description = a ? m : x(i, c)), (d.disabled = t.includes("generic_violation") || t.includes("do_not_charge") || t.includes("verified_type")), (d.pill = K(g, a ? f : void 0)), (d.scribeComponent = z(i))), d;
             }
-            const I = (e) => "NotStarted" === e.subscriptionsApplicationStatus && "NotStarted" === e.revShareApplicationStatus && !e.revShareActive && !e.subscriptionsActive && !e.revShareActive && !e.subscriptionsActive && !e.isAnyPremiumSubscriber && e.monetizationUpsellEnabled;
+            const P = (e) => "NotStarted" === e.subscriptionsApplicationStatus && "NotStarted" === e.revShareApplicationStatus && !e.revShareActive && !e.subscriptionsActive && !e.revShareActive && !e.subscriptionsActive && !e.isAnyPremiumSubscriber && e.monetizationUpsellEnabled;
         },
         228477: (e, t, i) => {
             i.d(t, { Z: () => v });
@@ -626,6 +626,21 @@
                 },
                 u = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
+        58399: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => c });
+            var n = i(202784),
+                r = i(890601),
+                l = i(783427),
+                a = i(717683),
+                s = i(347101);
+            const o = (e = {}) => {
+                const t = n.useContext(a.Z),
+                    { direction: i } = (0, l.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, t && s.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: i });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.MonetizationV2.e971112a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.MonetizationV2.60bd25da.js.map

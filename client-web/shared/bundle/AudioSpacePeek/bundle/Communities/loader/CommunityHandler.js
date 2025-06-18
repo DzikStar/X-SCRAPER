@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler"],
+    ["shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler", "icons/IconChevronRight-js"],
     {
         625661: (e, t, n) => {
             n.d(t, { ZP: () => m });
@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: i, hideBackButton: o, isFullWidth: a, isLarge: c, leftControl: d, middleControl: m, position: p, rightControl: h, secondaryBar: y, style: g, subtitle: f, title: b, titleDomId: E, titleIconCell: C, titleIconCellSize: Z, withBackground: w, withWideContainer: v } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: i, hideBackButton: o, isFullWidth: a, isLarge: c, leftControl: d, middleControl: m, position: p, rightControl: h, secondaryBar: g, style: y, subtitle: b, title: f, titleDomId: E, titleIconCell: C, titleIconCellSize: Z, withBackground: w, withWideContainer: v } = this.props,
                         { isModal: x } = this.context,
                         P = o ? d : r.createElement(l.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         k = (function (e, t, n) {
                             return e && !(t && n);
-                        })(!!w, x, !!y);
-                    return r.createElement(r.Fragment, null, r.createElement(s.Z, { centerTitle: t, centeredLogo: n, isFullWidth: a, isLarge: c, leftControl: P, middleControl: m, position: u(p, x, i), rightControl: h, style: g, subtitle: f, title: b, titleDomId: E, titleIconCell: C, titleIconCellSize: Z, withBackground: k, withWideContainer: v }), y || null);
+                        })(!!w, x, !!g);
+                    return r.createElement(r.Fragment, null, r.createElement(s.Z, { centerTitle: t, centeredLogo: n, isFullWidth: a, isLarge: c, leftControl: P, middleControl: m, position: u(p, x, i), rightControl: h, style: y, subtitle: b, title: f, titleDomId: E, titleIconCell: C, titleIconCellSize: Z, withBackground: k, withWideContainer: v }), g || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -59,57 +59,57 @@
                 m = n(952428),
                 p = n(642153),
                 h = n(154003),
-                y = n(111677),
-                g = n.n(y),
-                f = n(492140),
-                b = n(833057),
+                g = n(111677),
+                y = n.n(g),
+                b = n(492140),
+                f = n(833057),
                 E = n(516951),
                 C = n(443781),
                 Z = n(278817);
-            const w = g().d58baa7f,
-                v = g().gfdad702,
+            const w = y().d58baa7f,
+                v = y().gfdad702,
                 x = ({ media: e, width: t }) => {
                     const { crop: n, image: o } = e,
                         d = (0, a.KU)(),
-                        u = r.useMemo(() => [L.thumbnailContainer, d && L.thumbnailContainerNarrow, t ? { width: l.default.theme.spaces[t] } : null], [d, t]);
+                        u = r.useMemo(() => [A.thumbnailContainer, d && A.thumbnailContainerNarrow, t ? { width: l.default.theme.spaces[t] } : null], [d, t]);
                     return r.createElement(i.Z, { style: u }, r.createElement(s.Z, { "aria-label": "", aspectMode: c.Z.SQUARE, backgroundColor: l.default.theme.colors.gray300, cropCandidates: n, image: o }));
                 },
                 P = ({ communityId: e, count: t }) => {
                     const n = w(t);
-                    return r.createElement(d.Z.Group, null, r.createElement(d.Z, null, r.createElement(u.ZP, { color: "gray700" }, r.createElement(g().I18NFormatMessage, { $i18n: "b38e130b" }, r.createElement(d.Z.Value, null, g().ibd0106e({ formattedCount: n })), r.createElement(d.Z.Label, null, g().cface2d1({ count: t }))))));
+                    return r.createElement(d.Z.Group, null, r.createElement(d.Z, null, r.createElement(u.ZP, { color: "gray700" }, r.createElement(y().I18NFormatMessage, { $i18n: "b38e130b" }, r.createElement(d.Z.Value, null, y().ibd0106e({ formattedCount: n })), r.createElement(d.Z.Label, null, y().cface2d1({ count: t }))))));
                 },
-                k = ({ communityId: e, isNsfw: t, media: n, memberCount: o, membersFacepile: a, name: l, onActionButtonJoinClick: s, onPress: c, style: d, thumbnailSize: h, topic: y, withActionButton: g, withPinAction: f }) => {
-                    const b = `/i/communities/${e}`,
+                k = ({ communityId: e, isNsfw: t, media: n, memberCount: o, membersFacepile: a, name: l, onActionButtonJoinClick: s, onPress: c, style: d, thumbnailSize: h, topic: g, withActionButton: y, withPinAction: b }) => {
+                    const f = `/i/communities/${e}`,
                         { featureSwitches: E } = r.useContext(C.rC),
                         Z = E.isTrue("communities_adult_content_setting_display"),
                         w = E.isTrue("communities_topic_display");
-                    return r.createElement(m.Z, { link: b, onPress: c, style: [L.root, d] }, r.createElement(i.Z, { style: L.container }, r.createElement(i.Z, { style: L.leftColumn }, n ? r.createElement(x, { media: n, width: h }) : null, r.createElement(i.Z, { style: L.attribution }, r.createElement(i.Z, { style: L.name }, r.createElement(u.ZP, { numberOfLines: 1, weight: "bold" }, l), t && Z ? r.createElement(u.ZP, { color: "red600", size: "subtext2" }, " ", v) : null), r.createElement(P, { communityId: e, count: o }), y && w ? r.createElement(i.Z, { style: L.name }, r.createElement(u.ZP, { color: "gray700", numberOfLines: 1 }, y)) : null, Array.isArray(a) ? r.createElement(p.Z, { style: L.facepile, userAvatarSize: "large", userAvatarUrls: a }) : a)), r.createElement(A, { communityId: e, onActionButtonJoinClick: s, withActionButton: g, withPinAction: f })));
+                    return r.createElement(m.Z, { link: f, onPress: c, style: [A.root, d] }, r.createElement(i.Z, { style: A.container }, r.createElement(i.Z, { style: A.leftColumn }, n ? r.createElement(x, { media: n, width: h }) : null, r.createElement(i.Z, { style: A.attribution }, r.createElement(i.Z, { style: A.name }, r.createElement(u.ZP, { numberOfLines: 1, weight: "bold" }, l), t && Z ? r.createElement(u.ZP, { color: "red600", size: "subtext2" }, " ", v) : null), r.createElement(P, { communityId: e, count: o }), g && w ? r.createElement(i.Z, { style: A.name }, r.createElement(u.ZP, { color: "gray700", numberOfLines: 1 }, g)) : null, Array.isArray(a) ? r.createElement(p.Z, { style: A.facepile, userAvatarSize: "large", userAvatarUrls: a }) : a)), r.createElement(L, { communityId: e, onActionButtonJoinClick: s, withActionButton: y, withPinAction: b })));
                 },
-                I = g().c5d23126,
-                S = g().j44ec610,
+                I = y().c5d23126,
+                S = y().j44ec610,
                 _ = { label: I },
                 B = { label: S };
-            function A(e) {
+            function L(e) {
                 const t = (0, o.useRouteMatch)(),
                     { communityId: n, onActionButtonJoinClick: a, withActionButton: l, withPinAction: s } = e;
-                return l ? r.createElement(i.Z, { style: L.rightColumn }, r.createElement(Z.ZP, { communityId: n, match: t, onCommunityMembershipChange: E.Z, onJoinClick: a })) : s ? r.createElement(M, s) : null;
+                return l ? r.createElement(i.Z, { style: A.rightColumn }, r.createElement(Z.ZP, { communityId: n, match: t, onCommunityMembershipChange: E.Z, onJoinClick: a })) : s ? r.createElement(M, s) : null;
             }
             function M(e) {
                 const { handlePinOrUnpin: t, isPinned: n } = e,
-                    o = r.useMemo(() => (n ? r.createElement(f.default, { "aria-label": S }) : r.createElement(b.default, { "aria-label": I })), [n]),
+                    o = r.useMemo(() => (n ? r.createElement(b.default, { "aria-label": S }) : r.createElement(f.default, { "aria-label": I })), [n]),
                     a = r.useCallback(
                         (e) => {
                             e.preventDefault(), t();
                         },
                         [t],
                     );
-                return r.createElement(i.Z, { style: L.rightColumn }, r.createElement(h.ZP, { hoverLabel: n ? B : _, icon: o, onPress: a, type: "brandText" }));
+                return r.createElement(i.Z, { style: A.rightColumn }, r.createElement(h.ZP, { hoverLabel: n ? B : _, icon: o, onPress: a, type: "brandText" }));
             }
             const R = r.memo(k),
-                L = l.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, container: { flexDirection: "row" }, leftColumn: { alignItems: "center", flexDirection: "row", flex: 1, flexShrink: 1 }, rightColumn: { alignItems: "center", justifyContent: "flex-end", flexDirection: "row", flex: 1, flexShrink: 1 }, attribution: { height: "100%", minWidth: 100 * e.scales[e.scale], justifyContent: "space-between", flexShrink: 1 }, facepile: { justifyContent: "flex-start" }, name: { marginBottom: e.spaces.space2, flexDirection: "row" }, thumbnailContainer: { width: 96 * e.scales[e.scale], marginEnd: e.spaces.space12, borderRadius: e.borderRadii.large, overflow: "hidden" }, thumbnailContainerNarrow: { width: e.spaces.space72 } }));
+                A = l.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, container: { flexDirection: "row" }, leftColumn: { alignItems: "center", flexDirection: "row", flex: 1, flexShrink: 1 }, rightColumn: { alignItems: "center", justifyContent: "flex-end", flexDirection: "row", flex: 1, flexShrink: 1 }, attribution: { height: "100%", minWidth: 100 * e.scales[e.scale], justifyContent: "space-between", flexShrink: 1 }, facepile: { justifyContent: "flex-start" }, name: { marginBottom: e.spaces.space2, flexDirection: "row" }, thumbnailContainer: { width: 96 * e.scales[e.scale], marginEnd: e.spaces.space12, borderRadius: e.borderRadii.large, overflow: "hidden" }, thumbnailContainerNarrow: { width: e.spaces.space72 } }));
         },
         980407: (e, t, n) => {
-            n.d(t, { Z: () => y, w: () => p });
+            n.d(t, { Z: () => g, w: () => p });
             var r = n(202784),
                 i = n(325686),
                 o = n(108362),
@@ -124,9 +124,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: n, backLocation: o, centerTitle: a, hideBackButton: l, history: s, isFullWidth: u, isLarge: m, middleControl: p, onBackClick: y, rightControl: g, secondaryBar: f, subtitle: b, title: E } = this.props,
+                            const { appBarRef: e, appBarStyle: t, backButtonType: n, backLocation: o, centerTitle: a, hideBackButton: l, history: s, isFullWidth: u, isLarge: m, middleControl: p, onBackClick: g, rightControl: y, secondaryBar: b, subtitle: f, title: E } = this.props,
                                 { isModal: C } = this.context;
-                            return r.createElement(i.Z, { style: C ? [h.childViewAppBarRoot, h.appBarZindex] : h.appBarZindex }, r.createElement(d.ZP, { backButtonType: n || (C ? "close" : "back"), backLocation: o, centerTitle: a, fixed: !C, hideBackButton: l, history: s, isFullWidth: u, isLarge: m, middleControl: p, onBackClick: y, ref: e, rightControl: g, secondaryBar: f, style: [C && h.appBarModal, t], subtitle: b, title: E, titleDomId: c.Q_ }));
+                            return r.createElement(i.Z, { style: C ? [h.childViewAppBarRoot, h.appBarZindex] : h.appBarZindex }, r.createElement(d.ZP, { backButtonType: n || (C ? "close" : "back"), backLocation: o, centerTitle: a, fixed: !C, hideBackButton: l, history: s, isFullWidth: u, isLarge: m, middleControl: p, onBackClick: g, ref: e, rightControl: y, secondaryBar: b, style: [C && h.appBarModal, t], subtitle: f, title: E, titleDomId: c.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -135,15 +135,15 @@
                         });
                 }
                 render() {
-                    const { "aria-hidden": e, bottomBar: t, children: n, containerStyle: a, documentTitle: l, isFullWidth: c, isLarge: d, renderHeader: p, title: y, withoutBottomBarMobile: g } = this.props,
-                        { isModal: f } = this.context,
-                        b = p ? p(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return r.createElement(s.Z, null, r.createElement(u.Z.Configure, { documentTitle: l, headerless: !0, title: y }), r.createElement(i.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [h.root, f && h.rootModal] }, !f && b, r.createElement(o.Z, { isFullWidth: c, isLarge: d, style: [h.container, f && h.containerModal, a] }, f ? r.createElement(m.Z, { style: h.viewport }, b, n) : n), t ? r.createElement(i.Z, { style: [h.bottomBarModal, !f && !g && h.bottomBarMobile] }, r.createElement(o.Z, { isFullWidth: c, isLarge: d }, t)) : null));
+                    const { "aria-hidden": e, bottomBar: t, children: n, containerStyle: a, documentTitle: l, isFullWidth: c, isLarge: d, renderHeader: p, title: g, withoutBottomBarMobile: y } = this.props,
+                        { isModal: b } = this.context,
+                        f = p ? p(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
+                    return r.createElement(s.Z, null, r.createElement(u.Z.Configure, { documentTitle: l, headerless: !0, title: g }), r.createElement(i.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [h.root, b && h.rootModal] }, !b && f, r.createElement(o.Z, { isFullWidth: c, isLarge: d, style: [h.container, b && h.containerModal, a] }, b ? r.createElement(m.Z, { style: h.viewport }, f, n) : n), t ? r.createElement(i.Z, { style: [h.bottomBarModal, !b && !y && h.bottomBarMobile] }, r.createElement(o.Z, { isFullWidth: c, isLarge: d }, t)) : null));
                 }
             }
             (p.defaultProps = { isFullWidth: !1, isLarge: !1 }), (p.contextType = a.Z);
             const h = l.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 }, rootModal: { borderRadius: e.borderRadii.xLarge, flexShrink: 1 }, appBarModal: { borderTopStartRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, childViewAppBarRoot: { position: "sticky", top: 0 }, appBarZindex: { zIndex: e.componentZIndices.appBarZIndex }, container: { flexGrow: 1 }, containerModal: { flexShrink: 1 }, viewport: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge, flexGrow: 1, flexShrink: 1, overflow: "auto", zIndex: void 0 }, bottomBarModal: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small }, bottomBarMobile: { position: "fixed", backfaceVisibility: "hidden", bottom: 0, width: "100%", paddingBottom: l.default.iPhoneOffsetBottom, backgroundColor: e.colors.navigationBackground, borderTopStyle: "solid" } })),
-                y = p;
+                g = p;
         },
         727186: (e, t, n) => {
             n.d(t, { ZP: () => c });
@@ -173,7 +173,7 @@
                 };
         },
         699910: (e, t, n) => {
-            n.d(t, { L: () => S, Z: () => A });
+            n.d(t, { L: () => S, Z: () => L });
             var r = n(202784),
                 i = n(325686),
                 o = n(731708),
@@ -186,8 +186,8 @@
             const m = (0, c.ju)("https://help.x.com/rules-and-policies/twitter-rules"),
                 p = r.createElement(u().I18NFormatMessage, { $i18n: "j33cc663" }, r.createElement(o.ZP, { link: m, withInteractiveStyling: !1 }, u().h9526e03)),
                 h = ({ containerStyle: e, explanation: t, explanationStyle: n, heading: a }) => r.createElement(i.Z, { style: e }, a, r.createElement(o.ZP, { color: "gray700", style: n }, t || p));
-            var y = n(779610);
-            const g = ({ getPivotLink: e, renderBadge: t, rules: n }) =>
+            var g = n(779610);
+            const y = ({ getPivotLink: e, renderBadge: t, rules: n }) =>
                 r.createElement(
                     r.Fragment,
                     null,
@@ -196,11 +196,11 @@
                             c = e(n),
                             d = t(i + 1),
                             u = r.createElement(o.ZP, { weight: "bold" }, l);
-                        return r.createElement(y.Z, { description: a, key: s, label: u, link: c, thumbnail: d });
+                        return r.createElement(g.Z, { description: a, key: s, label: u, link: c, thumbnail: d });
                     }),
                 );
-            var f = n(807896),
-                b = n(727186),
+            var b = n(807896),
+                f = n(727186),
                 E = n(386742),
                 C = n(678773);
             const Z = "rules-container",
@@ -211,7 +211,7 @@
                     const { badge: t, rule: n } = e,
                         { description: i, name: a } = n,
                         l = r.createElement(o.ZP, { weight: "bold" }, a);
-                    return r.createElement(y.Z, { description: i, label: l, renderRightContent: () => r.createElement(C.default, { style: x.icon }), testID: v, thumbnail: t });
+                    return r.createElement(g.Z, { description: i, label: l, renderRightContent: () => r.createElement(C.default, { style: x.icon }), testID: v, thumbnail: t });
                 },
                 k = (e, t, n) => {
                     if (!e.destination) return;
@@ -236,10 +236,10 @@
                         r.createElement(E.$p, { droppableId: "droppable" }, (e, t) =>
                             r.createElement(
                                 "div",
-                                (0, f.Z)({}, e.droppableProps, { ref: e.innerRef }),
+                                (0, b.Z)({}, e.droppableProps, { ref: e.innerRef }),
                                 i.map((e, i) => {
                                     const { rest_id: o } = e;
-                                    return r.createElement(b.ZP, { draggableId: o, index: i, isBeingDragged: t.draggingFromThisWith === o, key: o }, r.createElement(P, { badge: n(i + 1), rule: e }));
+                                    return r.createElement(f.ZP, { draggableId: o, index: i, isBeingDragged: t.draggingFromThisWith === o, key: o }, r.createElement(P, { badge: n(i + 1), rule: e }));
                                 }),
                                 e.placeholder,
                             ),
@@ -252,11 +252,11 @@
                     return r.createElement(i.Z, { style: [B.badge, n], testID: w }, r.createElement(o.ZP, { align: "center", color: "text", weight: "bold" }, e));
                 },
                 B = l.default.create((e) => ({ badge: { backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.infinite, justifyContent: "center", overflow: "hidden", height: e.spaces.space32, width: e.spaces.space32 }, bottomMargin: { marginBottom: s.h$ } })),
-                A = ({ badgeStyle: e, displayType: t = S.Default, explanation: n, getPivotLink: o, headerContainerStyle: l, headerExplanationStyle: s, heading: c, limit: d, onReorder: u, ruleContainerStyle: m, rules: p, withBottomMargin: y = !1, withHeader: f = !0 }) => {
-                    const b = { badgeStyle: e },
-                        E = ((e, t, n) => (t ? e.slice(0, t) : e).map((e, t) => ({ label: e.name, description: e.description, decoration: _(t + 1, n) })))(p, d, b),
-                        C = (e) => _(e, b);
-                    return E.length > 0 ? r.createElement(i.Z, { style: y ? B.bottomMargin : null, testID: Z }, f ? r.createElement(h, { containerStyle: l, explanation: n, explanationStyle: s, heading: c }) : null, t === S.Pivot && o ? r.createElement(g, { getPivotLink: o, renderBadge: C, rules: p }) : t === S.Reorder && u ? r.createElement(I, { onReorder: u, renderBadge: C, rules: p }) : r.createElement(a.Z, { containerStyle: m, items: E })) : null;
+                L = ({ badgeStyle: e, displayType: t = S.Default, explanation: n, getPivotLink: o, headerContainerStyle: l, headerExplanationStyle: s, heading: c, limit: d, onReorder: u, ruleContainerStyle: m, rules: p, withBottomMargin: g = !1, withHeader: b = !0 }) => {
+                    const f = { badgeStyle: e },
+                        E = ((e, t, n) => (t ? e.slice(0, t) : e).map((e, t) => ({ label: e.name, description: e.description, decoration: _(t + 1, n) })))(p, d, f),
+                        C = (e) => _(e, f);
+                    return E.length > 0 ? r.createElement(i.Z, { style: g ? B.bottomMargin : null, testID: Z }, b ? r.createElement(h, { containerStyle: l, explanation: n, explanationStyle: s, heading: c }) : null, t === S.Pivot && o ? r.createElement(y, { getPivotLink: o, renderBadge: C, rules: p }) : t === S.Reorder && u ? r.createElement(I, { onReorder: u, renderBadge: C, rules: p }) : r.createElement(a.Z, { containerStyle: m, items: E })) : null;
                 };
         },
         724328: (e, t, n) => {
@@ -345,8 +345,8 @@
                                 p = [(0, d.H_)(m)],
                                 h = (0, l._h)(c);
                             h && p.push((0, s.Be)((0, u.V)(h)));
-                            const y = i?.entities?.communities[e];
-                            return y && (p.push(r.ZP.updateOne(e, y)), y.is_pinned && p.push((0, o.Co)({ id: e, name: y.name, type: a.FO.COMMUNITY }))), t(p);
+                            const g = i?.entities?.communities[e];
+                            return g && (p.push(r.ZP.updateOne(e, g)), g.is_pinned && p.push((0, o.Co)({ id: e, name: g.name, type: a.FO.COMMUNITY }))), t(p);
                         }),
                 p =
                     (e) =>
@@ -355,12 +355,12 @@
                             const m = n(),
                                 p = ((e, t) => e.filter((e) => t !== e))((0, d.eF)(m), e),
                                 h = [(0, d.H_)(p)],
-                                y = (0, l._h)(m);
-                            y && h.push((0, s.Be)((0, u.V)(y)));
-                            const g = i?.entities?.communities[e];
-                            if (g) {
+                                g = (0, l._h)(m);
+                            g && h.push((0, s.Be)((0, u.V)(g)));
+                            const y = i?.entities?.communities[e];
+                            if (y) {
                                 const t = c.ZP.selectViewerUser(m);
-                                g.membersFacepileUrls && t?.profile_image_url_https && (g.membersFacepileUrls = g.membersFacepileUrls?.filter((e) => e !== t?.profile_image_url_https)), h.push(r.ZP.updateOne(e, g)), h.push((0, o.Vu)({ id: e, name: g.name, type: a.FO.COMMUNITY }));
+                                y.membersFacepileUrls && t?.profile_image_url_https && (y.membersFacepileUrls = y.membersFacepileUrls?.filter((e) => e !== t?.profile_image_url_https)), h.push(r.ZP.updateOne(e, y)), h.push((0, o.Vu)({ id: e, name: y.name, type: a.FO.COMMUNITY }));
                             }
                             return t(h);
                         }),
@@ -416,20 +416,20 @@
             function u({ contextSuffix: e, getEndpointParams: t, getFetchApiEndpoint: n, mapEntitiesToActions: s = d, sliceKey: u, injectionOptions: { identityFunction: m } = {} }) {
                 const p = [],
                     h = (e) => e[o.Yf]?.[u],
-                    y = (e) => {
+                    g = (e) => {
                         const t = h(e);
                         if (!t) return p;
                         const n = t.items || p,
                             r = t.injections;
                         return r?.length > 0 ? (0, i.Z)(r.concat(n), m) : n;
                     },
-                    g = (e) => {
+                    y = (e) => {
                         const t = h(e),
-                            n = y(e),
+                            n = g(e),
                             r = n?.length > 0;
                         return t ? (0, l.ke)(t.fetchStatus, r) : l.ZP.NONE;
                     },
-                    f =
+                    b =
                         (r) =>
                         (i, l, { api: c }) => {
                             const d = t(r);
@@ -439,14 +439,14 @@
                         };
                 return {
                     select: h,
-                    selectItems: y,
-                    selectFetchStatus: g,
-                    fetch: f,
+                    selectItems: g,
+                    selectFetchStatus: y,
+                    fetch: b,
                     fetchIfNeeded: (e) => (t, n) => {
                         const i = n(),
                             o = h(i),
-                            a = g(i);
-                        return !o || (a !== l.ZP.LOADING && a !== l.ZP.LOADED) ? t(f(e)) : r.O4.resolve();
+                            a = y(i);
+                        return !o || (a !== l.ZP.LOADING && a !== l.ZP.LOADED) ? t(b(e)) : r.O4.resolve();
                     },
                     fetchBottom: (e) => (t, n) => {
                         const i = n(),
@@ -455,7 +455,7 @@
                                 const t = h(e);
                                 return t?.cursors?.next_cursor;
                             })(i);
-                        return o.fetchStatus[c.Yj.BOTTOM] !== l.ZP.LOADING && a ? t(f({ ...e, cursor: a })) : r.O4.resolve();
+                        return o.fetchStatus[c.Yj.BOTTOM] !== l.ZP.LOADING && a ? t(b({ ...e, cursor: a })) : r.O4.resolve();
                     },
                     injectItems: (e) => o.WC({ items: e, sliceKey: u, identityFunction: m }),
                     removeItems: (e) => o.Er({ items: e, sliceKey: u, identityFunction: m }),
@@ -463,7 +463,7 @@
             }
         },
         841198: (e, t, n) => {
-            n.d(t, { Be: () => b, Er: () => v, Ev: () => g, WC: () => Z, Yf: () => u, t5: () => x });
+            n.d(t, { Be: () => f, Er: () => v, Ev: () => y, WC: () => Z, Yf: () => u, t5: () => x });
             n(571372);
             var r = n(166852),
                 i = n(370751),
@@ -497,10 +497,10 @@
                             return e;
                     }
                 },
-                y = "rweb/slices/CLEAR_PARTIAL_SLICES_CACHE",
-                g = (e) => ({ type: y, meta: { sliceKey: e } }),
-                f = "rweb/slices/DELETE_SLICE",
-                b = (e) => ({ type: f, meta: { sliceKey: e } }),
+                g = "rweb/slices/CLEAR_PARTIAL_SLICES_CACHE",
+                y = (e) => ({ type: g, meta: { sliceKey: e } }),
+                b = "rweb/slices/DELETE_SLICE",
+                f = (e) => ({ type: b, meta: { sliceKey: e } }),
                 E = "rweb/slices/RESTORE_SLICE",
                 C = "rweb/slices/INJECT_ITEMS_SLICE",
                 Z = ({ identityFunction: e, items: t, sliceKey: n }) => ({ type: C, meta: { sliceKey: n, identityFunction: e }, payload: t }),
@@ -513,13 +513,13 @@
                     const { sliceKey: n } = t.meta || {};
                     if (!n) return e;
                     switch (t.type) {
-                        case f: {
+                        case b: {
                             const t = { ...e };
                             return delete t[n], t;
                         }
                         case E:
                             return { ...e, [n]: t.payload };
-                        case y: {
+                        case g: {
                             const t = { ...e };
                             return (
                                 Object.keys(t).forEach((e) => {
@@ -564,20 +564,20 @@
                 m = n.n(u),
                 p = n(870358),
                 h = n(581335),
-                y = n(71620),
-                g = n(668214),
-                f = n(491963),
-                b = n(299226),
+                g = n(71620),
+                y = n(668214),
+                b = n(491963),
+                f = n(299226),
                 E = n(492057),
                 C = n(919022),
                 Z = n(182846);
-            const w = (0, g.Z)()
+            const w = (0, y.Z)()
                 .propsFromState(() => ({ community: E.BL, viewerUser: C.ZP.selectViewerUser, joinActionResultType: Z.HN }))
                 .adjustStateProps((e) => {
                     const { viewerUser: t, ...n } = e;
                     return { isProtectedUser: t?.protected, ...n };
                 })
-                .propsFromActions(() => ({ createLocalApiErrorHandler: (0, y.zr)("COMMUNITY_DETAIL"), join: b.Lm, requestToJoin: f.ZP.requestToJoin, leave: b.Wr }));
+                .propsFromActions(() => ({ createLocalApiErrorHandler: (0, g.zr)("COMMUNITY_DETAIL"), join: f.Lm, requestToJoin: b.ZP.requestToJoin, leave: f.Wr }));
             var v = n(708852),
                 x = n(386802),
                 P = n(138099),
@@ -592,10 +592,10 @@
             const S = i.memo(I);
             var _ = n(731708);
             const B = m().bc7a7af4,
-                A = ({ offendingRule: e }) => i.createElement(o.Z, null, e ? i.createElement(o.Z, { style: M.offendingRule }, ((e) => i.createElement(m().I18NFormatMessage, { $i18n: "jb124a07" }, i.createElement(_.ZP, { weight: "bold" }, m().a0e0a52c({ offendingRule: e }))))(e)) : null, i.createElement(_.ZP, null, B)),
+                L = ({ offendingRule: e }) => i.createElement(o.Z, null, e ? i.createElement(o.Z, { style: M.offendingRule }, ((e) => i.createElement(m().I18NFormatMessage, { $i18n: "jb124a07" }, i.createElement(_.ZP, { weight: "bold" }, m().a0e0a52c({ offendingRule: e }))))(e)) : null, i.createElement(_.ZP, null, B)),
                 M = d.default.create((e) => ({ offendingRule: { display: "flex", marginBottom: e.spaces.space12 } })),
                 R = m().hafa07f2,
-                L = m().e7969518,
+                A = m().e7969518,
                 T = m().c15bee32,
                 D = m().efa265fc,
                 F = i.createElement(m().I18NFormatMessage, { $i18n: "gb7eca21" }, i.createElement(_.ZP, { link: "/settings/audience_and_tagging" }, m().fe832999)),
@@ -615,15 +615,15 @@
                     const [t, n] = i.useState(void 0),
                         [d, u] = i.useState(!1),
                         m = { history: (0, a.useHistory)(), location: (0, a.useLocation)(), match: (0, a.useRouteMatch)() },
-                        { community: y, createLocalApiErrorHandler: g, isProtectedUser: f, join: b, leave: E, onCommunityMembershipChange: C, onJoinClick: Z, requestToJoin: w } = e,
-                        { actions: v, id_str: x, name: P, role: k } = y,
+                        { community: g, createLocalApiErrorHandler: y, isProtectedUser: b, join: f, leave: E, onCommunityMembershipChange: C, onJoinClick: Z, requestToJoin: w } = e,
+                        { actions: v, id_str: x, name: P, role: k } = g,
                         I = v?.join_action_result,
                         _ = v?.leave_action_result,
                         B = (0, p.Wh)(k),
                         M = I?.reason === q.ViewerJoinRequestRequired,
                         Y = I?.reason === q.ViewerRequestPending,
                         Q = i.useCallback(() => {
-                            const { rules: e, viewerViolatedRule: t } = y,
+                            const { rules: e, viewerViolatedRule: t } = g,
                                 { canAction: r, message: o } = (function (e, t, n) {
                                     const { __typename: r, message: o, reason: a } = e,
                                         l = (e) => ({ canAction: !0, message: e }),
@@ -635,9 +635,9 @@
                                         case z.joinUnavailable:
                                             switch (a) {
                                                 case q.ViewerIsRemoved:
-                                                    return s({ headline: T, text: i.createElement(A, { offendingRule: n?.name }) });
+                                                    return s({ headline: T, text: i.createElement(L, { offendingRule: n?.name }) });
                                                 case q.ViewerNotInvited:
-                                                    return s({ headline: R, text: L });
+                                                    return s({ headline: R, text: A });
                                                 case q.ViewerIsProtected:
                                                     return t ? s({ headline: D, text: F }) : l();
                                                 case q.Unavailable:
@@ -650,9 +650,9 @@
                                         default:
                                             return c;
                                     }
-                                })(I, f, t);
-                            Z && Z(), !r && o && n(o), r && (e && e.length > 0 ? u(!0) : M ? w(x).catch(g({})) : b(x).then(C).catch(g({})));
-                        }, [y, x, g, f, b, M, I, w, C, Z]),
+                                })(I, b, t);
+                            Z && Z(), !r && o && n(o), r && (e && e.length > 0 ? u(!0) : M ? w(x).catch(y({})) : f(x).then(C).catch(y({})));
+                        }, [g, x, y, b, f, M, I, w, C, Z]),
                         X = i.useCallback(() => {
                             const { canAction: e, message: t } = (function (e) {
                                 const { __typename: t, reason: n } = e,
@@ -668,8 +668,8 @@
                                 }
                                 var o;
                             })(_);
-                            !e && t && n(t), e && E(x).then(C).catch(g({}));
-                        }, [x, g, E, _, C]),
+                            !e && t && n(t), e && E(x).then(C).catch(y({}));
+                        }, [x, y, E, _, C]),
                         ee = i.useCallback(() => {
                             n(void 0);
                         }, []),
@@ -699,10 +699,10 @@
                 m = n.n(u),
                 p = n(211971),
                 h = n(980407),
-                y = n(699910),
-                g = n(724328),
-                f = n(443781),
-                b = n(870358),
+                g = n(699910),
+                y = n(724328),
+                b = n(443781),
+                f = n(870358),
                 E = n(87063),
                 C = n(615027),
                 Z = n(71620),
@@ -721,10 +721,10 @@
                     .withAnalytics({ page: "community", section: "rules", component: "modal" }),
                 _ = m().h4fbfa58,
                 B = m().ea8cfb1e,
-                A = m().dc1b14a1,
+                L = m().dc1b14a1,
                 M = m().fc2a5c92,
                 R = m().c966ac64,
-                L = m().g690e07e,
+                A = m().g690e07e,
                 T = m().a5d21bf4,
                 D = (e) => {
                     const { community: t, createLocalApiErrorHandler: n, fetchCommunityIfNeeded: d, fetchStatus: u, history: m, isCommunityMember: Z, join: w, match: v, onCommunityMembershipChange: x, onDismiss: P, requestToJoin: k } = e,
@@ -735,7 +735,7 @@
                             },
                             [S],
                         ),
-                        { featureSwitches: F } = r.useContext(f.rC),
+                        { featureSwitches: F } = r.useContext(b.rC),
                         N = F.getNumberValue("c9s_max_community_answer_length", 280),
                         j = F.isTrue("c9s_community_answer_box_join_page_enabled"),
                         O = e.communityId || v.params.communityId,
@@ -744,7 +744,7 @@
                     r.useEffect(() => {
                         O && !t && u !== E.Z.LOADED && d(O).catch(n());
                     });
-                    const q = r.useCallback((e) => r.createElement(o.ZP, { size: "title4", weight: "bold" }, A({ communityName: e })), []),
+                    const q = r.useCallback((e) => r.createElement(o.ZP, { size: "title4", weight: "bold" }, L({ communityName: e })), []),
                         W = U ? B : _,
                         $ = r.useCallback(() => {
                             if (t) {
@@ -763,7 +763,7 @@
                         J = z ? r.createElement(i.Z, { style: V.error }, r.createElement(l.Z, { Icon: p.default, headline: M, text: R, type: "danger" })) : void 0;
                     if (t) {
                         const { name: e, question: n, rules: a } = t;
-                        return a && a.length && !Z ? r.createElement(h.Z, { history: m, onBackClick: P, rightControl: K(), title: (0, g.E)({ communityName: e }) }, r.createElement(s.Z, { spacing: "space2" }), n && "" !== n?.trim() && U && j && r.createElement(i.Z, null, r.createElement(o.ZP, { size: "title4", style: V.divStyles, weight: "bold" }, n), r.createElement(c.Z, { calculateLength: b.Z, helperText: T, label: L, maxLength: N, multiline: !0, name: "typedJoinRequestAnswer", numberOfLines: 3, onChange: D }), r.createElement(s.Z, { spacing: "space2" })), J, r.createElement(y.Z, { badgeStyle: V.badgeStyle, headerContainerStyle: V.containerStyle, headerExplanationStyle: V.headerExplanationStyle, heading: q(e), rules: a })) : r.createElement(C.Z, { to: `/i/communities/${t.id_str}` });
+                        return a && a.length && !Z ? r.createElement(h.Z, { history: m, onBackClick: P, rightControl: K(), title: (0, y.E)({ communityName: e }) }, r.createElement(s.Z, { spacing: "space2" }), n && "" !== n?.trim() && U && j && r.createElement(i.Z, null, r.createElement(o.ZP, { size: "title4", style: V.divStyles, weight: "bold" }, n), r.createElement(c.Z, { calculateLength: f.Z, helperText: T, label: A, maxLength: N, multiline: !0, name: "typedJoinRequestAnswer", numberOfLines: 3, onChange: D }), r.createElement(s.Z, { spacing: "space2" })), J, r.createElement(g.Z, { badgeStyle: V.badgeStyle, headerContainerStyle: V.containerStyle, headerExplanationStyle: V.headerExplanationStyle, heading: q(e), rules: a })) : r.createElement(C.Z, { to: `/i/communities/${t.id_str}` });
                     }
                     return u === E.Z.LOADED ? r.createElement(C.Z, { to: "/" }) : null;
                 },
@@ -824,18 +824,18 @@
                 s = n(952428),
                 c = n(392237);
             const d = (e) => {
-                    const { decoration: t, description: n, disabled: d = !1, isActive: m = !1, label: p, link: h, onPress: y, paddingHorizontal: g, renderRightContent: f, role: b = "tab", styleOverride: E, testID: C = "pivot", thumbnail: Z, thumbnailSize: w, withoutArrow: v = !1 } = e,
+                    const { decoration: t, description: n, disabled: d = !1, isActive: m = !1, label: p, link: h, onPress: g, paddingHorizontal: y, renderRightContent: b, role: f = "tab", styleOverride: E, testID: C = "pivot", thumbnail: Z, thumbnailSize: w, withoutArrow: v = !1 } = e,
                         x = [u.thumbnailContainer, "medium" === w && u.thumbnailContainerMedium],
                         P = "string" == typeof p ? r.createElement(l.ZP, null, p) : p,
                         k = "object" == typeof h && h.external && !h.openInSameFrame,
                         I = n ? ("string" == typeof n ? r.createElement(l.ZP, { color: "gray700", size: "subtext2", testID: `${C}-description` }, n) : n) : null,
-                        S = r.useMemo(() => ("space0" === g ? { paddingHorizontal: 0 } : { paddingHorizontal: g ? c.default.theme.spaces[g] : c.default.theme.componentDimensions.gutterHorizontal }), [g]);
-                    return r.createElement(s.Z, { "aria-selected": "tab" === b ? m : null, disabled: d, link: d ? void 0 : h, onPress: y, role: b, style: [u.root, S, d && u.disabled, E], testID: C, withInteractiveStyling: !!h || !!y }, r.createElement(i.Z, { style: u.contentContainer }, Z ? r.createElement(i.Z, { style: x }, Z) : null, r.createElement(i.Z, { style: u.content }, P, I), f ? f() : null, (!h && !y) || d || v ? null : k ? r.createElement(o.default, { style: u.icon }) : r.createElement(a.default, { style: u.icon })), t);
+                        S = r.useMemo(() => ("space0" === y ? { paddingHorizontal: 0 } : { paddingHorizontal: y ? c.default.theme.spaces[y] : c.default.theme.componentDimensions.gutterHorizontal }), [y]);
+                    return r.createElement(s.Z, { "aria-selected": "tab" === f ? m : null, disabled: d, link: d ? void 0 : h, onPress: g, role: f, style: [u.root, S, d && u.disabled, E], testID: C, withInteractiveStyling: !!h || !!g }, r.createElement(i.Z, { style: u.contentContainer }, Z ? r.createElement(i.Z, { style: x }, Z) : null, r.createElement(i.Z, { style: u.content }, P, I), b ? b() : null, (!h && !g) || d || v ? null : k ? r.createElement(o.default, { style: u.icon }) : r.createElement(a.default, { style: u.icon })), t);
                 },
                 u = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
         280278: (e, t, n) => {
-            n.d(t, { ZP: () => y });
+            n.d(t, { ZP: () => g });
             var r = n(202784),
                 i = n(325686),
                 o = n(827515),
@@ -857,48 +857,48 @@
             });
             const p = { position: "absolute" },
                 h = s.default.create({ root: { overflow: "hidden" } }),
-                y = (e) => {
+                g = (e) => {
                     const { children: t, containerStyle: n, count: s, ...d } = e,
-                        [y, g] = r.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: c }),
-                        f = r.useRef(!1);
+                        [g, y] = r.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: c }),
+                        b = r.useRef(!1);
                     return (
                         r.useEffect(
                             () => (
-                                (f.current = !0),
+                                (b.current = !0),
                                 function () {
-                                    f.current = !1;
+                                    b.current = !1;
                                 }
                             ),
                             [],
                         ),
                         r.useEffect(() => {
-                            if (f.current)
-                                if (a.Z.reducedMotionEnabled) g((n) => ({ ...n, oldText: null, text: t, pendingText: null, pendingCount: null, count: e.count }));
-                                else if (t !== y.pendingText) {
-                                    t === y.text || ((0, o.Z)(e.count) && y.count === e.count) ? g((e) => ({ ...e, pendingCount: null, pendingText: null })) : (g((n) => ({ ...n, pendingCount: e.count, pendingText: t })), y.animating || u(e.count, t, g));
+                            if (b.current)
+                                if (a.Z.reducedMotionEnabled) y((n) => ({ ...n, oldText: null, text: t, pendingText: null, pendingCount: null, count: e.count }));
+                                else if (t !== g.pendingText) {
+                                    t === g.text || ((0, o.Z)(e.count) && g.count === e.count) ? y((e) => ({ ...e, pendingCount: null, pendingText: null })) : (y((n) => ({ ...n, pendingCount: e.count, pendingText: t })), g.animating || u(e.count, t, y));
                                 }
                         }, [t]),
                         r.useEffect(() => {
-                            f.current &&
-                                !1 === y.animating &&
-                                (y.oldText
+                            b.current &&
+                                !1 === g.animating &&
+                                (g.oldText
                                     ? window.requestAnimationFrame(() =>
                                           window.requestAnimationFrame(() => {
-                                              f.current && g((e) => ({ ...e, animating: !0 }));
+                                              b.current && y((e) => ({ ...e, animating: !0 }));
                                           }),
                                       )
-                                    : y.pendingText && u(y.pendingCount, y.pendingText, g));
-                        }, [y.animating, y.oldText]),
+                                    : g.pendingText && u(g.pendingCount, g.pendingText, y));
+                        }, [g.animating, g.oldText]),
                         r.useMemo(() => {
-                            const e = m[y.transitionDirection],
-                                t = y.oldText && !a.Z.reducedMotionEnabled,
-                                o = !y.animating && y.oldText && !a.Z.reducedMotionEnabled,
-                                s = { ...p, ...(y.animating ? e.post : e.active) },
+                            const e = m[g.transitionDirection],
+                                t = g.oldText && !a.Z.reducedMotionEnabled,
+                                o = !g.animating && g.oldText && !a.Z.reducedMotionEnabled,
+                                s = { ...p, ...(g.animating ? e.post : e.active) },
                                 c = { ...(o ? e.pre : e.active) };
                             return r.createElement(
                                 i.Z,
                                 { style: [h.root, n] },
-                                t ? r.createElement("span", { style: s }, r.createElement(l.ZP, d, y.oldText)) : null,
+                                t ? r.createElement("span", { style: s }, r.createElement(l.ZP, d, g.oldText)) : null,
                                 r.createElement(
                                     "span",
                                     {
@@ -906,13 +906,13 @@
                                         onTransitionEnd: () =>
                                             ((e, t) => {
                                                 e && t((e) => ({ ...e, animating: !1, oldText: null }));
-                                            })(f.current, g),
+                                            })(b.current, y),
                                         style: c,
                                     },
-                                    r.createElement(l.ZP, d, y.text),
+                                    r.createElement(l.ZP, d, g.text),
                                 ),
                             );
-                        }, [n, d, y, f, g])
+                        }, [n, d, g, b, y])
                     );
                 };
         },
@@ -957,6 +957,21 @@
             n.d(t, { Z: () => r });
             const r = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
+        58399: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => c });
+            var r = n(202784),
+                i = n(890601),
+                o = n(783427),
+                a = n(717683),
+                l = n(347101);
+            const s = (e = {}) => {
+                const t = r.useContext(a.Z),
+                    { direction: n } = (0, o.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style, t && l.Z.iconRTL], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: n });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const c = s;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler.43d27a3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler.7866f42a.js.map

@@ -132,7 +132,7 @@
                 Me = i(649173),
                 Be = i(357498),
                 De = i(562644),
-                Fe = i(539596),
+                Fe = i(136092),
                 Le = i(95681);
             class Ue extends n.Component {
                 constructor(e, t) {
@@ -989,4 +989,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-a2dee9c7.cf61dd5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-a2dee9c7.c4b8c00a.js.map

@@ -9,13 +9,13 @@
                 l = a(457311),
                 n = a(392237),
                 s = a(668214),
-                i = a(919022);
-            const u = (e, d) => !!d.screenName && i.ZP.selectIsUserSuspended(e, d.screenName),
+                u = a(919022);
+            const i = (e, d) => !!d.screenName && u.ZP.selectIsUserSuspended(e, d.screenName),
                 t = (e, d) => {
-                    const a = d.screenName ? i.ZP.selectByScreenName(e, d.screenName) : void 0;
+                    const a = d.screenName ? u.ZP.selectByScreenName(e, d.screenName) : void 0;
                     return a?.blocking;
                 },
-                c = (0, s.Z)().propsFromState(() => ({ isBlocking: t, isSuspended: u })),
+                c = (0, s.Z)().propsFromState(() => ({ isBlocking: t, isSuspended: i })),
                 b = (e) => {
                     const { isBlocking: d, isSuspended: a, screenName: n, ...s } = e;
                     return r.createElement(r.Fragment, null, null, r.createElement(l.Z, (0, o.Z)({}, s, { style: [D.root, D.verticalPadding] })));
@@ -31,11 +31,11 @@
                 n = a(392237);
             class s extends o.PureComponent {
                 render() {
-                    const { Icon: e, children: d, link: a, onPress: n, style: s, testID: u, withInteractiveStyling: t } = this.props;
-                    return o.createElement(r.RD.Consumer, null, ({ direction: r }) => o.createElement(l.ZP, { color: a ? "primary" : "gray700", dir: r, link: a, onPress: n, role: "none", style: [i.root, s], testID: u, withInteractiveStyling: t ?? (!!a || !!n) }, o.createElement(e, { style: i.icon }), d));
+                    const { Icon: e, children: d, link: a, onPress: n, style: s, testID: i, withInteractiveStyling: t } = this.props;
+                    return o.createElement(r.RD.Consumer, null, ({ direction: r }) => o.createElement(l.ZP, { color: a ? "primary" : "gray700", dir: r, link: a, onPress: n, role: "none", style: [u.root, s], testID: i, withInteractiveStyling: t ?? (!!a || !!n) }, o.createElement(e, { style: u.icon }), d));
                 }
             }
-            const i = n.default.create((e) => ({ root: { display: "inline-block", marginEnd: e.spaces.space12 }, icon: { color: e.colors.gray700, marginEnd: e.spaces.space4 } }));
+            const u = n.default.create((e) => ({ root: { display: "inline-block", marginEnd: e.spaces.space12 }, icon: { color: e.colors.gray700, marginEnd: e.spaces.space4 } }));
         },
         290213: (e, d, a) => {
             a.d(d, { Z: () => t });
@@ -45,31 +45,31 @@
                 l = a.n(r),
                 n = a(97043),
                 s = a(252233);
-            const i = l().cf249089,
-                u = (e) => {
+            const u = l().cf249089,
+                i = (e) => {
                     const { joinDate: d, testID: a, withoutIcon: r = !1 } = e,
-                        u = ((e) => {
+                        i = ((e) => {
                             const d = new Date(e),
                                 a = l().g727ddcf;
-                            return i({ joinDate: a(d) });
+                            return u({ joinDate: a(d) });
                         })(d);
-                    return r ? u : o.createElement(s.Z, { Icon: n.default, testID: a }, u);
+                    return r ? i : o.createElement(s.Z, { Icon: n.default, testID: a }, i);
                 },
-                t = o.memo(u);
+                t = o.memo(i);
         },
         484163: (e, d, a) => {
-            a.d(d, { Y: () => u, Z: () => t });
+            a.d(d, { Y: () => i, Z: () => t });
             var o = a(202784),
                 r = a(111677),
                 l = a.n(r),
                 n = a(416699);
             const s = l().c9a1cb5e,
-                i = l().e7b201de,
-                u = (e) => {
+                u = l().e7b201de,
+                i = (e) => {
                     const { screenName: d } = e;
-                    return o.createElement(n.Z, { header: s, message: i, screenName: d });
+                    return o.createElement(n.Z, { header: s, message: u, screenName: d });
                 },
-                t = o.memo(u);
+                t = o.memo(i);
         },
         972796: (e, d, a) => {
             a.d(d, { T: () => c, Z: () => b });
@@ -78,13 +78,13 @@
                 l = a(731708),
                 n = a(111677),
                 s = a.n(n),
-                i = a(416699);
-            const u = s().ica87fde,
+                u = a(416699);
+            const i = s().ica87fde,
                 t = (0, r.ju)("https://support.x.com/articles/20172060"),
                 c = (e) => {
                     const { screenName: d } = e,
                         a = o.useMemo(() => o.createElement(s().I18NFormatMessage, { $i18n: "e6264621", screenName: d }, o.createElement(l.ZP, { link: t }, s().c7ec6faf)), [d]);
-                    return o.createElement(i.Z, { header: u, message: a, screenName: d });
+                    return o.createElement(u.Z, { header: i, message: a, screenName: d });
                 },
                 b = o.memo(c);
         },
@@ -95,14 +95,14 @@
                 l = a(731708),
                 n = a(111677),
                 s = a.n(n),
-                i = a(416699);
-            const u = s().e79ed125,
+                u = a(416699);
+            const i = s().e79ed125,
                 t = (0, r.ju)("https://support.x.com/articles/117063"),
                 c = s().gba95028,
                 b = ({ onShowBlockedTweets: e, screenName: d }) => {
-                    const a = u({ screenName: d }),
+                    const a = i({ screenName: d }),
                         r = o.createElement(s().I18NFormatMessage, { $i18n: "f98ecc47", screenName: d }, o.createElement(l.ZP, { link: t }, s().a2216a79));
-                    return o.createElement(i.Z, { buttonText: c, header: a, message: r, onButtonPress: e, screenName: d });
+                    return o.createElement(u.Z, { buttonText: c, header: a, message: r, onButtonPress: e, screenName: d });
                 },
                 D = o.memo(b);
         },
@@ -113,8 +113,8 @@
                 l = a(325686),
                 n = a(107267),
                 s = a(392237),
-                i = a(111677),
-                u = a.n(i),
+                u = a(111677),
+                i = a.n(u),
                 t = a(727828),
                 c = a(507651),
                 b = a(443781),
@@ -124,16 +124,16 @@
                 M = a(615027),
                 f = a(189244),
                 w = a(717988);
-            const p = u().a2811f96,
-                A = u().fa4e68ca,
-                k = u().jdceda60,
-                P = u().d25805fa,
-                S = u().b05be0c8,
-                g = u().a5a30af0,
-                y = u().add55c98,
-                _ = u().d7b8ebaa,
-                I = u().c0d13570,
-                C = "likes",
+            const p = i().a2811f96,
+                A = i().fa4e68ca,
+                k = i().jdceda60,
+                S = i().d25805fa,
+                P = i().b05be0c8,
+                g = i().a5a30af0,
+                y = i().add55c98,
+                _ = i().d7b8ebaa,
+                C = i().c0d13570,
+                I = "likes",
                 T = "media",
                 R = "superfollows",
                 v = "highlights",
@@ -143,21 +143,24 @@
                 Z = (0, w.p)(
                     () =>
                         Promise.all([
-                            a.e("icons.8"),
-                            a.e("icons.15"),
-                            a.e("icons.7"),
-                            a.e("icons.3"),
-                            a.e("icons.24"),
-                            a.e("icons.12"),
-                            a.e("icons.22"),
-                            a.e("icons.2"),
-                            a.e("icons.18"),
-                            a.e("icons.9"),
-                            a.e("icons.6"),
+                            a.e("icons.21"),
+                            a.e("icons.16"),
+                            a.e("icons.10"),
                             a.e("icons.1"),
+                            a.e("icons.19"),
+                            a.e("icons.0"),
+                            a.e("icons.23"),
+                            a.e("icons.8"),
+                            a.e("icons.2"),
+                            a.e("icons.3"),
+                            a.e("icons.15"),
+                            a.e("icons.4"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
-                            a.e("icons.5"),
+                            a.e("icons.9"),
+                            a.e("icons.7"),
+                            a.e("icons.26"),
+                            a.e("icons.24"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -168,10 +171,11 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
-                            a.e("icons.16"),
-                            a.e("icons.28"),
-                            a.e("icons.17"),
-                            a.e("icons.0"),
+                            a.e("icons.18"),
+                            a.e("icons.13"),
+                            a.e("icons.29"),
+                            a.e("icons.27"),
+                            a.e("icons.25"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -206,7 +210,8 @@
                             a.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
-                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
+                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
+                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
@@ -221,13 +226,12 @@
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
                             a.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~bundle"),
-                            a.e("shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.SettingsProfessionalProfileLocationSpotlight"),
                             a.e("shared~bundle.SettingsProfile~bundle.WorkHistory~bundle.ExtendedUserProfile~bundle.UserProfile"),
                             a.e("shared~bundle.AccountAnalytics~bundle.UserProfile~ondemand.Verified"),
                             a.e("shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.UserProfile"),
-                            a.e("bundle.UserProfile-bc6ccf4c"),
-                            a.e("bundle.UserProfile-e96e9bea"),
-                            a.e("bundle.UserProfile-17a1c92a"),
+                            a.e("bundle.UserProfile-6107ac1a"),
+                            a.e("bundle.UserProfile-00c74bbe"),
+                            a.e("bundle.UserProfile-0127dd92"),
                             a.e("bundle.UserProfile-e019dbda"),
                             a.e("bundle.UserProfile-63cb1cc4"),
                             a.e("bundle.UserProfile-70e212e1"),
@@ -240,21 +244,24 @@
                 $ = (0, w.p)(
                     () =>
                         Promise.all([
-                            a.e("icons.8"),
-                            a.e("icons.15"),
-                            a.e("icons.7"),
-                            a.e("icons.3"),
-                            a.e("icons.24"),
-                            a.e("icons.12"),
-                            a.e("icons.22"),
-                            a.e("icons.2"),
-                            a.e("icons.18"),
-                            a.e("icons.9"),
-                            a.e("icons.6"),
+                            a.e("icons.21"),
+                            a.e("icons.16"),
+                            a.e("icons.10"),
                             a.e("icons.1"),
+                            a.e("icons.19"),
+                            a.e("icons.0"),
+                            a.e("icons.23"),
+                            a.e("icons.8"),
+                            a.e("icons.2"),
+                            a.e("icons.3"),
+                            a.e("icons.15"),
+                            a.e("icons.4"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
-                            a.e("icons.5"),
+                            a.e("icons.9"),
+                            a.e("icons.7"),
+                            a.e("icons.26"),
+                            a.e("icons.24"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -265,10 +272,11 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
-                            a.e("icons.16"),
-                            a.e("icons.28"),
-                            a.e("icons.17"),
-                            a.e("icons.0"),
+                            a.e("icons.18"),
+                            a.e("icons.13"),
+                            a.e("icons.29"),
+                            a.e("icons.27"),
+                            a.e("icons.25"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -303,7 +311,8 @@
                             a.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
-                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
+                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
+                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
@@ -318,13 +327,12 @@
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
                             a.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~bundle"),
-                            a.e("shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.SettingsProfessionalProfileLocationSpotlight"),
                             a.e("shared~bundle.SettingsProfile~bundle.WorkHistory~bundle.ExtendedUserProfile~bundle.UserProfile"),
                             a.e("shared~bundle.AccountAnalytics~bundle.UserProfile~ondemand.Verified"),
                             a.e("shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.UserProfile"),
-                            a.e("bundle.UserProfile-bc6ccf4c"),
-                            a.e("bundle.UserProfile-e96e9bea"),
-                            a.e("bundle.UserProfile-17a1c92a"),
+                            a.e("bundle.UserProfile-6107ac1a"),
+                            a.e("bundle.UserProfile-00c74bbe"),
+                            a.e("bundle.UserProfile-0127dd92"),
                             a.e("bundle.UserProfile-e019dbda"),
                             a.e("bundle.UserProfile-63cb1cc4"),
                             a.e("bundle.UserProfile-70e212e1"),
@@ -337,21 +345,24 @@
                 N = (0, w.p)(
                     () =>
                         Promise.all([
-                            a.e("icons.8"),
-                            a.e("icons.15"),
-                            a.e("icons.7"),
-                            a.e("icons.3"),
-                            a.e("icons.24"),
-                            a.e("icons.12"),
-                            a.e("icons.22"),
-                            a.e("icons.2"),
-                            a.e("icons.18"),
-                            a.e("icons.9"),
-                            a.e("icons.6"),
+                            a.e("icons.21"),
+                            a.e("icons.16"),
+                            a.e("icons.10"),
                             a.e("icons.1"),
+                            a.e("icons.19"),
+                            a.e("icons.0"),
+                            a.e("icons.23"),
+                            a.e("icons.8"),
+                            a.e("icons.2"),
+                            a.e("icons.3"),
+                            a.e("icons.15"),
+                            a.e("icons.4"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
-                            a.e("icons.5"),
+                            a.e("icons.9"),
+                            a.e("icons.7"),
+                            a.e("icons.26"),
+                            a.e("icons.24"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -362,10 +373,11 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
-                            a.e("icons.16"),
-                            a.e("icons.28"),
-                            a.e("icons.17"),
-                            a.e("icons.0"),
+                            a.e("icons.18"),
+                            a.e("icons.13"),
+                            a.e("icons.29"),
+                            a.e("icons.27"),
+                            a.e("icons.25"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -400,7 +412,8 @@
                             a.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
-                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
+                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
+                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
@@ -415,13 +428,12 @@
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
                             a.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~bundle"),
-                            a.e("shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.SettingsProfessionalProfileLocationSpotlight"),
                             a.e("shared~bundle.SettingsProfile~bundle.WorkHistory~bundle.ExtendedUserProfile~bundle.UserProfile"),
                             a.e("shared~bundle.AccountAnalytics~bundle.UserProfile~ondemand.Verified"),
                             a.e("shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.UserProfile"),
-                            a.e("bundle.UserProfile-bc6ccf4c"),
-                            a.e("bundle.UserProfile-e96e9bea"),
-                            a.e("bundle.UserProfile-17a1c92a"),
+                            a.e("bundle.UserProfile-6107ac1a"),
+                            a.e("bundle.UserProfile-00c74bbe"),
+                            a.e("bundle.UserProfile-0127dd92"),
                             a.e("bundle.UserProfile-e019dbda"),
                             a.e("bundle.UserProfile-63cb1cc4"),
                             a.e("bundle.UserProfile-70e212e1"),
@@ -434,21 +446,24 @@
                 x = (0, w.p)(
                     () =>
                         Promise.all([
-                            a.e("icons.8"),
-                            a.e("icons.15"),
-                            a.e("icons.7"),
-                            a.e("icons.3"),
-                            a.e("icons.24"),
-                            a.e("icons.12"),
-                            a.e("icons.22"),
-                            a.e("icons.2"),
-                            a.e("icons.18"),
-                            a.e("icons.9"),
-                            a.e("icons.6"),
+                            a.e("icons.21"),
+                            a.e("icons.16"),
+                            a.e("icons.10"),
                             a.e("icons.1"),
+                            a.e("icons.19"),
+                            a.e("icons.0"),
+                            a.e("icons.23"),
+                            a.e("icons.8"),
+                            a.e("icons.2"),
+                            a.e("icons.3"),
+                            a.e("icons.15"),
+                            a.e("icons.4"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
-                            a.e("icons.5"),
+                            a.e("icons.9"),
+                            a.e("icons.7"),
+                            a.e("icons.26"),
+                            a.e("icons.24"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -459,10 +474,11 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
-                            a.e("icons.16"),
-                            a.e("icons.28"),
-                            a.e("icons.17"),
-                            a.e("icons.0"),
+                            a.e("icons.18"),
+                            a.e("icons.13"),
+                            a.e("icons.29"),
+                            a.e("icons.27"),
+                            a.e("icons.25"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -497,7 +513,8 @@
                             a.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
-                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
+                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
+                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
@@ -512,13 +529,12 @@
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
                             a.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~bundle"),
-                            a.e("shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.SettingsProfessionalProfileLocationSpotlight"),
                             a.e("shared~bundle.SettingsProfile~bundle.WorkHistory~bundle.ExtendedUserProfile~bundle.UserProfile"),
                             a.e("shared~bundle.AccountAnalytics~bundle.UserProfile~ondemand.Verified"),
                             a.e("shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.UserProfile"),
-                            a.e("bundle.UserProfile-bc6ccf4c"),
-                            a.e("bundle.UserProfile-e96e9bea"),
-                            a.e("bundle.UserProfile-17a1c92a"),
+                            a.e("bundle.UserProfile-6107ac1a"),
+                            a.e("bundle.UserProfile-00c74bbe"),
+                            a.e("bundle.UserProfile-0127dd92"),
                             a.e("bundle.UserProfile-e019dbda"),
                             a.e("bundle.UserProfile-63cb1cc4"),
                             a.e("bundle.UserProfile-70e212e1"),
@@ -529,38 +545,38 @@
                     { shouldMigrateToX: !0 },
                 ),
                 G = (e) => {
-                    const { isActiveCreator: d, onEntriesRendered: a, showBlockedTweets: s, user: i } = e,
-                        { featureSwitches: u, userClaims: w, viewerUserId: G } = r.useContext(b.rC),
+                    const { isActiveCreator: d, onEntriesRendered: a, showBlockedTweets: s, user: u } = e,
+                        { featureSwitches: i, userClaims: w, viewerUserId: G } = r.useContext(b.rC),
                         H = (0, n.useLocation)(),
                         X = (0, h.z)();
-                    if (!i) return null;
-                    const { screen_name: L } = i,
-                        F = H.query,
-                        V = i && G === i.id_str,
-                        O = u.isTrue("creator_monetization_profile_subscription_tweets_tab_enabled") ? i.super_follow_eligible : (V && d) || i.super_following,
-                        j = P,
-                        z = u.isTrue("responsive_web_twitter_article_notes_tab_enabled"),
-                        W = u.isTrue("subscriptions_feature_article_composer"),
+                    if (!u) return null;
+                    const { screen_name: F } = u,
+                        V = H.query,
+                        O = u && G === u.id_str,
+                        L = i.isTrue("creator_monetization_profile_subscription_tweets_tab_enabled") ? u.super_follow_eligible : (O && d) || u.super_following,
+                        j = S,
+                        z = i.isTrue("responsive_web_twitter_article_notes_tab_enabled"),
+                        W = i.isTrue("subscriptions_feature_article_composer"),
                         Q = w.isTrueAndEnabled("subscriptions_feature_article_composer"),
-                        Y = z && V && W && !Q,
-                        J = V && Q,
-                        K = z && ((i.user_seed_tweet_count && i.user_seed_tweet_count > 0) || J || Y),
-                        ee = i.business_account?.affiliates_count && i.business_account.affiliates_count > 0,
-                        de = i && m.D8 in i,
-                        ae = u.isTrue("highlights_tweets_tab_ui_enabled"),
-                        oe = u.isTrue("highlights_tweets_tab_upsell_enabled"),
-                        re = i.highlights_info?.can_highlight_tweets && i.highlights_info?.highlighted_tweets && parseInt(i.highlights_info.highlighted_tweets, 10) > 0,
-                        le = oe && i.highlights_info?.can_highlight_tweets && V,
-                        ne = de && oe && u.isTrue("subscriptions_sign_up_enabled") && V && !i.highlights_info?.can_highlight_tweets,
+                        Y = z && O && W && !Q,
+                        J = O && Q,
+                        K = z && ((u.user_seed_tweet_count && u.user_seed_tweet_count > 0) || J || Y),
+                        ee = u.business_account?.affiliates_count && u.business_account.affiliates_count > 0,
+                        de = u && m.D8 in u,
+                        ae = i.isTrue("highlights_tweets_tab_ui_enabled"),
+                        oe = i.isTrue("highlights_tweets_tab_upsell_enabled"),
+                        re = u.highlights_info?.can_highlight_tweets && u.highlights_info?.highlighted_tweets && parseInt(u.highlights_info.highlighted_tweets, 10) > 0,
+                        le = oe && u.highlights_info?.can_highlight_tweets && O,
+                        ne = de && oe && i.isTrue("subscriptions_sign_up_enabled") && O && !u.highlights_info?.can_highlight_tweets,
                         se = ae && (re || le || ne),
-                        ie = (e) => [{ isActive: () => H.pathname.toLowerCase() === `/${L}`.toLowerCase() || H.pathname.toLowerCase() === `/${L}/`.toLowerCase() || H.pathname.indexOf("/intent/follow") > -1 || H.pathname.indexOf("/intent/user") > -1, to: { pathname: `/${L}`, query: F }, key: A, label: A, viewType: "tweets" }, ee ? { to: { pathname: `/${L}/${U}`, query: F }, key: I, label: I, viewType: "affiliates", onClick: e() } : void 0, { to: { pathname: `/${L}/${E}`, query: F }, key: k, label: k, viewType: "tweets_replies", onClick: e() }, O ? { to: { pathname: `/${L}/${R}`, query: F }, key: j, label: j, color: "plum500", viewType: "super_follows_tweets" } : void 0, se ? { to: { pathname: `/${L}/${v}`, query: F }, key: S, label: S, viewType: "highlight_tweets" } : void 0, K ? { to: { pathname: `/${L}/${B}`, query: F }, key: g, label: g, onClick: e(), viewType: "articles" } : void 0, { to: { pathname: `/${L}/${T}`, query: F }, key: y, label: y, onClick: e(), viewType: "media" }, V ? { to: { pathname: `/${L}/${C}`, query: F }, key: _, label: _, onClick: e(), viewType: "likes" } : void 0],
-                        ue = { displayBlocked: s, fullName: i.name, screenName: i.screen_name, userId: i.id_str },
-                        te = { isActiveCreator: d, isSuperFollowing: i.super_following, isSuperEligible: i.super_follow_eligible };
+                        ue = (e) => [{ isActive: () => H.pathname.toLowerCase() === `/${F}`.toLowerCase() || H.pathname.toLowerCase() === `/${F}/`.toLowerCase() || H.pathname.indexOf("/intent/follow") > -1 || H.pathname.indexOf("/intent/user") > -1, to: { pathname: `/${F}`, query: V }, key: A, label: A, viewType: "tweets" }, ee ? { to: { pathname: `/${F}/${U}`, query: V }, key: C, label: C, viewType: "affiliates", onClick: e() } : void 0, { to: { pathname: `/${F}/${E}`, query: V }, key: k, label: k, viewType: "tweets_replies", onClick: e() }, L ? { to: { pathname: `/${F}/${R}`, query: V }, key: j, label: j, color: "plum500", viewType: "super_follows_tweets" } : void 0, se ? { to: { pathname: `/${F}/${v}`, query: V }, key: P, label: P, viewType: "highlight_tweets" } : void 0, K ? { to: { pathname: `/${F}/${B}`, query: V }, key: g, label: g, onClick: e(), viewType: "articles" } : void 0, { to: { pathname: `/${F}/${T}`, query: V }, key: y, label: y, onClick: e(), viewType: "media" }, O ? { to: { pathname: `/${F}/${I}`, query: V }, key: _, label: _, onClick: e(), viewType: "likes" } : void 0],
+                        ie = { displayBlocked: s, fullName: u.name, screenName: u.screen_name, userId: u.id_str },
+                        te = { isActiveCreator: d, isSuperFollowing: u.super_following, isSuperEligible: u.super_follow_eligible };
                     return r.createElement(
                         r.Fragment,
                         null,
-                        r.createElement(D.Z, null, (e) => r.createElement(l.Z, { style: X && q.tabsRedesign }, r.createElement(c.Z, { "aria-label": p, links: ie(e) }))),
-                        r.createElement(n.Switch, null, r.createElement(n.Route, { exact: !0, path: "/intent/follow" }, r.createElement(Z, (0, o.Z)({}, ue, te))), r.createElement(n.Route, { exact: !0, path: "/intent/user" }, r.createElement(Z, (0, o.Z)({}, ue, te))), r.createElement(n.Route, { exact: !0, path: `/${f.qX}` }, r.createElement(Z, (0, o.Z)({}, ue, te, { onEntriesRendered: a }))), r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${E}` }, r.createElement(Z, (0, o.Z)({}, ue, te, { mode: "with_replies" }))), r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${R}` }, r.createElement(Z, (0, o.Z)({}, ue, te, { mode: "superfollows" }))), se ? r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${v}` }, ne ? r.createElement(t.Z, { variant: "HighlightsProfile" }) : r.createElement(Z, (0, o.Z)({}, ue, te, { mode: "highlights" }))) : null, K ? r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${B}` }, Y ? r.createElement(t.Z, { variant: "ArticlesProfile" }) : r.createElement(Z, (0, o.Z)({}, ue, te, { mode: "articles" }))) : null, r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${T}` }, r.createElement(N, ue)), V ? r.createElement(n.Route, { exact: !0, path: `/${f.qX}/(${C})` }, r.createElement($, (0, o.Z)({ isOwnProfile: V }, ue))) : null, ee ? r.createElement(n.Route, { exact: !0, path: `/${f.qX}/(${U})` }, r.createElement(x, ue)) : null, de ? r.createElement(M.Z, { to: `/${L}` }) : null),
+                        r.createElement(D.Z, null, (e) => r.createElement(l.Z, { style: X && q.tabsRedesign }, r.createElement(c.Z, { "aria-label": p, links: ue(e) }))),
+                        r.createElement(n.Switch, null, r.createElement(n.Route, { exact: !0, path: "/intent/follow" }, r.createElement(Z, (0, o.Z)({}, ie, te))), r.createElement(n.Route, { exact: !0, path: "/intent/user" }, r.createElement(Z, (0, o.Z)({}, ie, te))), r.createElement(n.Route, { exact: !0, path: `/${f.qX}` }, r.createElement(Z, (0, o.Z)({}, ie, te, { onEntriesRendered: a }))), r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${E}` }, r.createElement(Z, (0, o.Z)({}, ie, te, { mode: "with_replies" }))), r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${R}` }, r.createElement(Z, (0, o.Z)({}, ie, te, { mode: "superfollows" }))), se ? r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${v}` }, ne ? r.createElement(t.Z, { variant: "HighlightsProfile" }) : r.createElement(Z, (0, o.Z)({}, ie, te, { mode: "highlights" }))) : null, K ? r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${B}` }, Y ? r.createElement(t.Z, { variant: "ArticlesProfile" }) : r.createElement(Z, (0, o.Z)({}, ie, te, { mode: "articles" }))) : null, r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${T}` }, r.createElement(N, ie)), O ? r.createElement(n.Route, { exact: !0, path: `/${f.qX}/(${I})` }, r.createElement($, (0, o.Z)({ isOwnProfile: O }, ie))) : null, ee ? r.createElement(n.Route, { exact: !0, path: `/${f.qX}/(${U})` }, r.createElement(x, ie)) : null, de ? r.createElement(M.Z, { to: `/${F}` }) : null),
                     );
                 },
                 q = s.default.create((e) => ({ tabsRedesign: { paddingHorizontal: e.spaces.space16 } })),
@@ -573,13 +589,13 @@
                 l = a(731708),
                 n = a(392237),
                 s = a(111677),
-                i = a.n(s),
-                u = a(883229),
+                u = a.n(s),
+                i = a(883229),
                 t = a(943914),
                 c = a(952793),
                 b = a(462166),
                 D = a(535338);
-            const h = i().j4e0fd88,
+            const h = u().j4e0fd88,
                 m = ({ screenName: e }) => {
                     const { user_result_by_screen_name: d } = (0, D.p)(b.nZ, { screenName: e }),
                         a = d?.result;
@@ -590,12 +606,12 @@
                 w = (e) => {
                     const d = (0, c.hC)("xprofile_consumption_enabled") && !0,
                         a = o.useMemo(() => ({ type: "CustomRetry", content: () => null }), []);
-                    return e.screenName && d ? o.createElement(u.N, { errorConfig: f, fallback: a }, o.createElement(t.B, null, o.createElement(m, { screenName: e.screenName }))) : null;
+                    return e.screenName && d ? o.createElement(i.N, { errorConfig: f, fallback: a }, o.createElement(t.B, null, o.createElement(m, { screenName: e.screenName }))) : null;
                 },
                 p = o.memo(w);
         },
         35468: (e, d, a) => {
-            a.d(d, { U: () => i });
+            a.d(d, { U: () => u });
             var o = a(202784),
                 r = a(634090),
                 l = a(952793),
@@ -603,10 +619,10 @@
             function s(e) {
                 const { user: d, viewerUserId: a } = e,
                     s = (0, l.hC)("responsive_web_profile_spotlight_v0_display"),
-                    i = (0, l.hC)("responsive_web_professional_journeys_holdback_enabled");
-                return ((0, n.nf)(a, d) || !i) && s ? (e.setIsRenderingProfileSpotlight && e.setIsRenderingProfileSpotlight(!0), o.createElement(r.Z, { setIsRenderingProfileSpotlight: e.setIsRenderingProfileSpotlight, userScreenName: d.screen_name })) : null;
+                    u = (0, l.hC)("responsive_web_professional_journeys_holdback_enabled");
+                return ((0, n.nf)(a, d) || !u) && s ? (e.setIsRenderingProfileSpotlight && e.setIsRenderingProfileSpotlight(!0), o.createElement(r.Z, { setIsRenderingProfileSpotlight: e.setIsRenderingProfileSpotlight, userScreenName: d.screen_name })) : null;
             }
-            const i = o.memo(s);
+            const u = o.memo(s);
         },
         975950: (e, d, a) => {
             a.d(d, { Z: () => c });
@@ -615,11 +631,11 @@
                 l = a(392237),
                 n = a(727828),
                 s = a(998118),
-                i = a(177997),
-                u = a(443781),
+                u = a(177997),
+                i = a(443781),
                 t = a(918588);
             const c = (e) => {
-                    const { featureSwitches: d, userClaims: a } = (0, u.QZ)(),
+                    const { featureSwitches: d, userClaims: a } = (0, i.QZ)(),
                         l = a.isVerifiedOrg(),
                         c = a.isVerifiedOrgAffiliate(),
                         D = a.isLegacyVerifiedOrg(),
@@ -627,10 +643,10 @@
                         m = "business" === e.user?.verified_type?.toLowerCase(),
                         M = "government" === e.user?.verified_type?.toLowerCase();
                     if ((0, t.Z)() > 0 && !l && !c && !D && !m && !h && !M && d.isTrue("vo_upsell_profile_page_enabled")) return o.createElement(r.Z, { style: b.container }, o.createElement(n.Z, { variant: "VerifiedOrgProfileUpsell" }));
-                    return (0, s.Z)({ isOwnProfile: !0, userClaims: a, user: e.user, verifiedType: e.user?.verified_type, featureSwitch: "subscriptions_upsells_get_verified_profile_card", featureSwitches: d }) && e.shouldShowProfileUpsellCard ? o.createElement(r.Z, { style: b.container }, o.createElement(n.Z, { fatigueDismiss: e.dismissProfileUpsellCard, variant: "GetVerifiedProfileCard" })) : e.gotDismissedProfileUpsellCard ? void 0 : o.createElement(i.Z, null);
+                    return (0, s.Z)({ isOwnProfile: !0, userClaims: a, user: e.user, verifiedType: e.user?.verified_type, featureSwitch: "subscriptions_upsells_get_verified_profile_card", featureSwitches: d }) && e.shouldShowProfileUpsellCard ? o.createElement(r.Z, { style: b.container }, o.createElement(n.Z, { fatigueDismiss: e.dismissProfileUpsellCard, variant: "GetVerifiedProfileCard" })) : e.gotDismissedProfileUpsellCard ? void 0 : o.createElement(u.Z, null);
                 },
                 b = l.default.create((e) => ({ container: { marginHorizontal: e.spaces.space16 } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-8bf258cf.9cc38c8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-8bf258cf.63c6ca4a.js.map

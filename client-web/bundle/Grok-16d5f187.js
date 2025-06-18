@@ -58,14 +58,14 @@
                 S = n(654917),
                 N = n(354851),
                 R = n(222656),
-                G = n(305442),
-                B = n(107267),
-                _ = n(154003),
-                T = n(731708),
+                B = n(305442),
+                G = n(107267),
+                T = n(154003),
+                _ = n(731708),
                 z = n(837020),
                 H = n(757700),
-                L = n(67369),
-                W = n(721266),
+                W = n(67369),
+                L = n(721266),
                 O = n(415506),
                 K = n(315951),
                 j = n(786272);
@@ -74,12 +74,12 @@
                 U = b().c0ff98f8,
                 Q = b().f1a8218a,
                 q = b().bcbf5b6e,
-                J = b().j7b5c844,
-                $ = b().c3d89aca,
+                $ = b().j7b5c844,
+                J = b().c3d89aca,
                 X = b().c9f7c196,
                 Y = ({ onContinue: e }) => {
-                    const a = (0, L.LX)();
-                    return o.createElement(r.Z, { style: ee.legalText }, o.createElement(r.Z, { style: ee.content }, o.createElement(r.Z, { style: ee.section }, o.createElement(O.default, { style: ee.titleIcon }), o.createElement(r.Z, { style: ee.sectionContent }, o.createElement(T.ZP, { style: ee.title }, F), o.createElement(T.ZP, { style: ee.description }, V))), o.createElement(r.Z, { style: ee.section }, o.createElement(K.default, { style: ee.titleIcon }), o.createElement(r.Z, { style: ee.sectionContent }, o.createElement(T.ZP, { style: ee.title }, U), o.createElement(T.ZP, { style: ee.description }, Q, " ", o.createElement(T.ZP, { link: "https://help.x.com/using-x/about-grok" }, X)))), o.createElement(r.Z, { style: ee.section }, o.createElement(j.default, { style: ee.titleIcon }), o.createElement(r.Z, { style: ee.sectionContent }, o.createElement(T.ZP, { style: ee.title }, q), o.createElement(T.ZP, { style: ee.description }, J, " ", o.createElement(T.ZP, { link: "https://help.x.com/using-x/about-grok" }, X))))), a ? o.createElement(W.Z, { size: "space48" }) : null, o.createElement(r.Z, { style: [ee.continueButtonContainer, a ? ee.sticky : void 0] }, o.createElement(_.ZP, { onPress: e, size: "large", style: ee.continueButton, type: "primaryFilled" }, $)));
+                    const a = (0, W.LX)();
+                    return o.createElement(r.Z, { style: ee.legalText }, o.createElement(r.Z, { style: ee.content }, o.createElement(r.Z, { style: ee.section }, o.createElement(O.default, { style: ee.titleIcon }), o.createElement(r.Z, { style: ee.sectionContent }, o.createElement(_.ZP, { style: ee.title }, F), o.createElement(_.ZP, { style: ee.description }, V))), o.createElement(r.Z, { style: ee.section }, o.createElement(K.default, { style: ee.titleIcon }), o.createElement(r.Z, { style: ee.sectionContent }, o.createElement(_.ZP, { style: ee.title }, U), o.createElement(_.ZP, { style: ee.description }, Q, " ", o.createElement(_.ZP, { link: "https://help.x.com/using-x/about-grok" }, X)))), o.createElement(r.Z, { style: ee.section }, o.createElement(j.default, { style: ee.titleIcon }), o.createElement(r.Z, { style: ee.sectionContent }, o.createElement(_.ZP, { style: ee.title }, q), o.createElement(_.ZP, { style: ee.description }, $, " ", o.createElement(_.ZP, { link: "https://help.x.com/using-x/about-grok" }, X))))), a ? o.createElement(L.Z, { size: "space48" }) : null, o.createElement(r.Z, { style: [ee.continueButtonContainer, a ? ee.sticky : void 0] }, o.createElement(T.ZP, { onPress: e, size: "large", style: ee.continueButton, type: "primaryFilled" }, J)));
                 },
                 ee = c.default.create((e) => ({ legalText: { width: "100%", maxWidth: I.vf, flexDirection: "column", alignItems: "center", justifyContent: "center" }, titleIcon: { width: e.spaces.space20, minWidth: e.spaces.space20, height: e.spaces.space20, minHeight: e.spaces.space20, marginEnd: e.spaces.space8 }, sectionContent: { flexDirection: "column", gap: e.spaces.space4, flex: 1 }, sticky: { position: "sticky", bottom: 0 }, content: { borderRadius: e.borderRadii.large, backgroundColor: e.colors.gray0, marginHorizontal: e.spaces.space24, gap: e.spaces.space16, padding: e.spaces.space24 }, continueButtonContainer: { width: "100%", paddingVertical: e.spaces.space24, alignItems: "center", justifyContent: "center", backgroundColor: e.colors.cellBackground }, continueButton: { width: "100%", maxWidth: e.breakpoints.xSmall, justifyContent: "center", alignItems: "center" }, section: { width: "100%", gap: e.spaces.space4, flexDirection: "row" }, title: { fontWeight: "bold" }, description: { color: e.colors.gray700, fontSize: e.fontSizes.subtext1 } })),
                 ae = b().h0681e3e,
@@ -87,11 +87,11 @@
                 oe = c.default.create((e) => ({ container: { overflowY: "auto", maxHeight: "100vh", position: "relative" }, prompts: { flexDirection: "row", flexWrap: "wrap" }, header: { flexDirection: "column", justifyContent: "center", alignItems: "center", paddingHorizontal: e.spaces.space36, marginBottom: e.spaces.space24 }, closeButton: { start: e.spaces.space16, top: e.spaces.space16, width: "fit-content", zIndex: 100, backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.infinite, position: "sticky" } })),
                 te = () => {
                     const e = (0, y.I0)(),
-                        a = (0, B.useHistory)(),
+                        a = (0, G.useHistory)(),
                         n = () => {
                             e((0, k.pj)(k.Qn));
                         };
-                    return o.createElement(H.ZP, { clickMaskToClose: !0, history: a, modalSize: "fitChildren", onMaskClick: n, withBackground: !0 }, o.createElement(r.Z, { style: oe.container }, o.createElement(r.Z, { style: oe.closeButton }, o.createElement(_.ZP, { icon: o.createElement(z.default, null), onPress: n, type: "primaryText" })), o.createElement(r.Z, { style: oe.header }, o.createElement(T.ZP, { size: "title4", weight: "medium" }, ae), o.createElement(T.ZP, { color: "gray700", size: "body" }, ne)), o.createElement(r.Z, { style: oe.prompts }, o.createElement(Y, { onContinue: n }))));
+                    return o.createElement(H.ZP, { clickMaskToClose: !0, history: a, modalSize: "fitChildren", onMaskClick: n, withBackground: !0 }, o.createElement(r.Z, { style: oe.container }, o.createElement(r.Z, { style: oe.closeButton }, o.createElement(T.ZP, { icon: o.createElement(z.default, null), onPress: n, type: "primaryText" })), o.createElement(r.Z, { style: oe.header }, o.createElement(_.ZP, { size: "title4", weight: "medium" }, ae), o.createElement(_.ZP, { color: "gray700", size: "body" }, ne)), o.createElement(r.Z, { style: oe.prompts }, o.createElement(Y, { onContinue: n }))));
                 };
             var de = n(928831),
                 re = n(204162),
@@ -99,7 +99,7 @@
                 se = n(214997),
                 ie = n(976021);
             function ce({ followup: e, onClick: a }) {
-                return o.createElement(r.Z, { style: be.animation }, o.createElement(_.ZP, { backgroundColor: "gray0", borderColor: "gray100", onClick: a, size: "xSmall", style: be.followUpBotton }, o.createElement(ie.B, { text: e.label }, o.createElement(T.ZP, { color: "gray900", selectable: !1, weight: "normal" }, e.label))));
+                return o.createElement(r.Z, { style: be.animation }, o.createElement(T.ZP, { backgroundColor: "gray0", borderColor: "gray100", onClick: a, size: "xSmall", style: be.followUpBotton }, o.createElement(ie.B, { text: e.label }, o.createElement(_.ZP, { color: "gray900", selectable: !1, weight: "normal" }, e.label))));
             }
             function ue({ followups: e, onSelectFollowup: a }) {
                 return 0 === e.length
@@ -123,7 +123,7 @@
                         { isCompactLayout: r } = (0, le.ZP)(),
                         l = (0, y.I0)(),
                         s = (0, w.hC)("responsive_web_grok_show_citations"),
-                        i = (0, G.Z)("followup"),
+                        i = (0, B.Z)("followup"),
                         { isReasoningEnabled: c, isResearchEnabled: u } = (0, de.w)(),
                         b = (0, y.v9)(n.selectLastHumanMessage),
                         p = o.useCallback(
@@ -149,36 +149,36 @@
                 Me = 9e5,
                 Ee = (0, t.cn)(0);
             function Ce({ containerStyle: e = {}, containerRef: a, conversationId: n, initialPrompt: t, mode: l, disableStartScreen: c = !1, disableEducation: u = !1, contentPadding: b }) {
-                const B = (0, f.z)(),
-                    _ = (0, y.I0)();
+                const G = (0, f.z)(),
+                    T = (0, y.I0)();
                 (0, R.Z)();
-                const { access: T, conversationKey: z, fetchConversationIdError: H, fetchConversationIdStatus: L, messageIds: W, status: O, ...K } = (0, S.ZP)(),
+                const { access: _, conversationKey: z, fetchConversationIdError: H, fetchConversationIdStatus: W, messageIds: L, status: O, ...K } = (0, S.ZP)(),
                     j = (0, D.ZP)(),
                     { keyboardVisible: F } = o.useContext(g.hr),
                     { isGrokDrawer: V } = (0, le.ZP)(),
                     U = (0, y.v9)((e) => (0, M.Pt)(e)),
                     [Q, q] = (0, d.KO)(Ee),
-                    J = U === x.ZP.LOADED;
+                    $ = U === x.ZP.LOADED;
                 (0, p.q)(() => {
                     const e = new Date().getTime();
-                    (!J || Q + Me < e) && (q(e), _((0, E.C)({ analytics: B })()));
+                    (!$ || Q + Me < e) && (q(e), T((0, E.C)({ analytics: G })()));
                 });
-                const $ = (0, y.v9)((e) => (0, k.t5)(e, k.Qn)),
+                const J = (0, y.v9)((e) => (0, k.t5)(e, k.Qn)),
                     X = (0, w.hC)("subscriptions_inapp_grok_nux_enabled"),
                     { isConversationLoading: Y } = (0, N.Z)({ conversationId: n }),
                     ee = (0, w.hC)("responsive_web_grok_show_citations"),
                     ae = (0, w.hC)("responsive_web_grok_new_home_layout"),
                     ne = O === A.Q_.IDLE;
                 o.useEffect(() => {
-                    !1 !== T && _(v.ZP.fetchOneIfNeeded(I.c0));
-                }, [_, T]),
+                    !1 !== _ && T(v.ZP.fetchOneIfNeeded(I.c0));
+                }, [T, _]),
                     o.useEffect(() => {
-                        H && _((0, Z.fz)({ text: H }));
-                    }, [_, H]);
-                const oe = (0, G.Z)("content");
+                        H && T((0, Z.fz)({ text: H }));
+                    }, [T, H]);
+                const oe = (0, B.Z)("content");
                 o.useEffect(() => {
                     if (!Y && t?.text) {
-                        _((0, C.u)({ analytics: B, conversationKey: z })({ text: t.text, returnCitations: ee, analysisEntityId: t.analysisEntityId, mode: l, imageGenerationCount: oe, isReasoning: t?.isReasoning, isDeepsearch: t?.isDeepsearch }));
+                        T((0, C.u)({ analytics: G, conversationKey: z })({ text: t.text, returnCitations: ee, analysisEntityId: t.analysisEntityId, mode: l, imageGenerationCount: oe, isReasoning: t?.isReasoning, isDeepsearch: t?.isDeepsearch }));
                         const e = new URL(window.location);
                         e.searchParams.delete("text"), e.searchParams.delete("deepsearch"), e.searchParams.delete("think"), history.replaceState(null, "", e.toString());
                     }
@@ -192,24 +192,24 @@
                             }
                         }
                     }, [U]);
-                const de = o.useMemo(() => (O !== A.Q_.IDLE ? [...W, null] : W), [O, W]),
+                const de = o.useMemo(() => (O !== A.Q_.IDLE ? [...L, null] : L), [O, L]),
                     re = o.useCallback(() => {
-                        _((0, M.Ki)(s()()));
-                    }, [_]),
+                        T((0, M.Ki)(s()()));
+                    }, [T]),
                     se = de.length > 0,
                     ie = o.useMemo(() => {
                         const e = m.ZP.isTwitterApp() || j || F ? 0 : fe;
                         return [Ze.inputWrapper, { paddingBottom: e }];
                     }, [j, F]),
                     ce = t?.text || se || Y,
-                    ue = o.useMemo(() => () => (Y ? o.createElement(i.Z, null) : o.createElement(o.Fragment, null, o.createElement(he.y, { contentPadding: b, conversationKey: z }), o.createElement(r.Z, { style: Ze.bottomContainer }, o.createElement(r.Z, { style: Ze.inputOuterContainer }, o.createElement(pe, { conversationKey: z }), o.createElement(r.Z, { style: Ze.inputContainer }, o.createElement(r.Z, { style: ie }, o.createElement(me.Z, { conversationKey: z, hasAccess: !1 !== T, inputAtBottom: !0, insideConversation: !0, isIdle: ne, mode: l, placeholder: ye, useDraftPersistence: !0 }))))))), [ne, l, T, z, b, ie, Y]);
-                return (0, P.Z)(!c && !V, K.conversationId, se), !1 === T && U !== x.ZP.LOADING ? (V ? o.createElement(r.Z, { style: Ze.activityIndicatorContainer }, o.createElement(i.Z, null)) : o.createElement(De.Z, null)) : o.createElement(r.Z, { ref: a, style: [Ze.container, e] }, o.createElement(o.Fragment, null, $ && X && !u ? o.createElement(te, null) : null, ce || c ? o.createElement(h.Z, { "aria-label": ke, fetchStatus: L === x.ZP.NONE ? x.ZP.LOADED : L, onRequestRetry: re, render: ue, retryMessage: H }) : ae ? o.createElement(ge.k, { access: T, conversationKey: z }) : o.createElement(we.k, { access: T, conversationKey: z })));
+                    ue = o.useMemo(() => () => (Y ? o.createElement(i.Z, null) : o.createElement(o.Fragment, null, o.createElement(he.y, { contentPadding: b, conversationKey: z }), o.createElement(r.Z, { style: Ze.bottomContainer }, o.createElement(r.Z, { style: Ze.inputOuterContainer }, o.createElement(pe, { conversationKey: z }), o.createElement(r.Z, { style: Ze.inputContainer }, o.createElement(r.Z, { style: ie }, o.createElement(me.Z, { conversationKey: z, hasAccess: !1 !== _, inputAtBottom: !0, insideConversation: !0, isIdle: ne, mode: l, placeholder: ye, useDraftPersistence: !0 }))))))), [ne, l, _, z, b, ie, Y]);
+                return (0, P.Z)(!c && !V, K.conversationId, se), !1 === _ && U !== x.ZP.LOADING ? (V ? o.createElement(r.Z, { style: Ze.activityIndicatorContainer }, o.createElement(i.Z, null)) : o.createElement(De.Z, null)) : o.createElement(r.Z, { ref: a, style: [Ze.container, e] }, o.createElement(o.Fragment, null, J && X && !u ? o.createElement(te, null) : null, ce || c ? o.createElement(h.Z, { "aria-label": ke, fetchStatus: W === x.ZP.NONE ? x.ZP.LOADED : W, onRequestRetry: re, render: ue, retryMessage: H }) : ae ? o.createElement(ge.k, { access: _, conversationKey: z }) : o.createElement(we.k, { access: _, conversationKey: z })));
             }
             const Ae = !!m.ZP.isWebView(),
                 Ze = c.default.create((e) => ({ container: { display: "grid", gridTemplateRows: "1fr auto", maxWidth: "100%", width: "100%", minHeight: `calc(100vh - ${Ae ? "0" : e.componentDimensions.appBarHeightPx}px)`, paddingBottom: c.default.iPhoneOffsetBottom }, disclaimer: { marginVertical: e.spaces.space12, marginHorizontal: e.spaces.space4 }, disclaimerNarrow: { marginVertical: e.spaces.space8, marginHorizontal: e.spaces.space4 }, bottomContainer: { position: "sticky", bottom: 0, width: "100%" }, inputOuterContainer: { position: "relative" }, inputContainer: { backgroundColor: e.colors.appBarBackground, backdropFilter: "blur(12px)", justifyContent: "center", alignItems: "center", paddingTop: e.spaces.space4, paddingBottom: e.spaces.space12, paddingHorizontal: e.spaces.space12 }, inputWrapper: { width: "100%", maxWidth: `calc(${I.vf}px + ${e.spaces.space32})` }, somethingWentWrongContainer: { alignItems: "center", justifyContent: "center", padding: e.spaces.space32 }, activityIndicatorContainer: { width: "100%", height: "100%", justifyContent: "center", alignItems: "center" } }));
         },
         462441: (e, a, n) => {
-            n.r(a), n.d(a, { default: () => W });
+            n.r(a), n.d(a, { default: () => L });
             var o = n(202784),
                 t = n(325686),
                 d = n(107267),
@@ -241,14 +241,14 @@
                 S = {},
                 N = (0, E.cn)(!1);
             const R = m().j95bac7a,
-                G = m().c5665922,
-                B = m().ff625c40,
-                _ = m().e5c7d602,
-                T = m().dbd5d400,
+                B = m().c5665922,
+                G = m().ff625c40,
+                T = m().e5c7d602,
+                _ = m().dbd5d400,
                 z = m().i2209530,
                 H = { page: h.ZP.isTwitterApp() ? (h.ZP.isAndroid() ? "grok_custom_android" : "grok_custom_ios") : "grok_custom" },
-                L = 1500;
-            function W() {
+                W = 1500;
+            function L() {
                 const e = (0, d.useHistory)(),
                     a = (0, w.u)(),
                     n = (0, f.v9)(y.F9),
@@ -275,7 +275,7 @@
                         return [a, l, r, n];
                     })({ fetchKey: "customPrompt" }),
                     [A, v] = o.useState(""),
-                    [W, K] = o.useState(""),
+                    [L, K] = o.useState(""),
                     [j, F] = o.useState(E),
                     [V, U] = o.useState(!1),
                     [Q, q] = o.useState(!1);
@@ -290,24 +290,24 @@
                         () => clearTimeout(e)
                     );
                 }, [M, p, m]);
-                const J = o.useCallback(() => {
+                const $ = o.useCallback(() => {
                         if (!V) return;
                         m(!1), U(!1);
-                        k({ enabled: j, custom_instruction: { instruction: A }, personality: { personality: W } });
-                    }, [k, V, j, W, A]),
-                    $ = o.useCallback(() => {
+                        k({ enabled: j, custom_instruction: { instruction: A }, personality: { personality: L } });
+                    }, [k, V, j, L, A]),
+                    J = o.useCallback(() => {
                         v(""), K(""), U(!0), F(!1);
                     }, []),
                     X = o.useCallback(() => {
-                        e.goBack(), J();
-                    }, [e, J]);
+                        e.goBack(), $();
+                    }, [e, $]);
                 return (
                     o.useEffect(() => {
                         h && (F(h.enabled || !1), K(h.personality?.personality || ""), v(h.custom_instruction?.instruction || ""));
                     }, [h]),
                     o.useEffect(() => {
-                        !Q && V && J();
-                    }, [J, V, Q]),
+                        !Q && V && $();
+                    }, [$, V, Q]),
                     o.createElement(
                         D.nO,
                         { data: b, namespace: H },
@@ -317,12 +317,12 @@
                             o.createElement(
                                 t.Z,
                                 { style: O.section },
-                                o.createElement(r.ZP, null, G),
+                                o.createElement(r.ZP, null, B),
                                 o.createElement(
                                     t.Z,
                                     { style: O.textInputBox },
                                     o.createElement(l.Z, {
-                                        maxLength: L,
+                                        maxLength: W,
                                         multiline: !0,
                                         numberOfLines: 5,
                                         onBlur: () => q(!1),
@@ -338,27 +338,27 @@
                             o.createElement(
                                 t.Z,
                                 { style: O.section },
-                                o.createElement(r.ZP, null, B),
+                                o.createElement(r.ZP, null, G),
                                 o.createElement(
                                     t.Z,
                                     { style: O.textInputBox },
                                     o.createElement(l.Z, {
-                                        maxLength: L,
+                                        maxLength: W,
                                         multiline: !0,
                                         numberOfLines: 5,
                                         onBlur: () => q(!1),
                                         onChange: (e) => {
-                                            W.length < e.target.value.length && F(!0), K(e.target.value), U(!0);
+                                            L.length < e.target.value.length && F(!0), K(e.target.value), U(!0);
                                         },
                                         onFocus: () => q(!0),
-                                        value: W,
+                                        value: L,
                                     }),
                                 ),
                             ),
                             o.createElement(
                                 t.Z,
                                 { style: [O.row, O.enableRow] },
-                                o.createElement(r.ZP, { weight: "medium" }, _),
+                                o.createElement(r.ZP, { weight: "medium" }, T),
                                 o.createElement(i.Z, {
                                     onValueChange: (e) => {
                                         F(e), U(!0);
@@ -366,7 +366,7 @@
                                     value: j,
                                 }),
                             ),
-                            o.createElement(t.Z, { style: [O.row, O.buttonRow], type: "" }, o.createElement(c.Z, { animating: !p, hidesWhenStopped: !0, style: O.indicator }), o.createElement(u.ZP, { backgroundColor: "transparent", borderColor: "transparent", onClick: $, style: O.button, textSizeOverride: "subtext2" }, T), o.createElement(u.ZP, { backgroundColor: "gray100", onClick: X, style: O.button }, o.createElement(r.ZP, { size: "subtext2", weight: "medium" }, z))),
+                            o.createElement(t.Z, { style: [O.row, O.buttonRow], type: "" }, o.createElement(c.Z, { animating: !p, hidesWhenStopped: !0, style: O.indicator }), o.createElement(u.ZP, { backgroundColor: "transparent", borderColor: "transparent", onClick: J, style: O.button, textSizeOverride: "subtext2" }, _), o.createElement(u.ZP, { backgroundColor: "gray100", onClick: X, style: O.button }, o.createElement(r.ZP, { size: "subtext2", weight: "medium" }, z))),
                         ),
                     )
                 );
@@ -415,22 +415,25 @@
             const o = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.8"),
-                        n.e("icons.15"),
-                        n.e("icons.7"),
-                        n.e("icons.3"),
-                        n.e("icons.24"),
-                        n.e("icons.12"),
-                        n.e("icons.22"),
-                        n.e("icons.2"),
-                        n.e("icons.18"),
-                        n.e("icons.9"),
-                        n.e("icons.6"),
+                        n.e("icons.21"),
+                        n.e("icons.16"),
+                        n.e("icons.10"),
                         n.e("icons.1"),
+                        n.e("icons.19"),
+                        n.e("icons.0"),
+                        n.e("icons.23"),
+                        n.e("icons.8"),
+                        n.e("icons.2"),
+                        n.e("icons.3"),
+                        n.e("icons.15"),
+                        n.e("icons.4"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.14"),
-                        n.e("icons.5"),
+                        n.e("icons.9"),
+                        n.e("icons.7"),
+                        n.e("icons.28"),
+                        n.e("icons.26"),
+                        n.e("icons.24"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -441,14 +444,11 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.21"),
-                        n.e("icons.16"),
-                        n.e("icons.28"),
-                        n.e("icons.17"),
+                        n.e("icons.18"),
+                        n.e("icons.13"),
+                        n.e("icons.29"),
                         n.e("icons.27"),
-                        n.e("icons.19"),
-                        n.e("icons.0"),
-                        n.e("icons.4"),
+                        n.e("icons.25"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -483,11 +483,10 @@
                         n.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3ec0edf6"),
                         n.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3fd5f349"),
                         n.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
-                        n.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-88dc685d"),
-                        n.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-271d17b1"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
@@ -499,6 +498,7 @@
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
+                        n.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader."),
                         n.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-8d7085c2"),
                         n.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-53f39e22"),
                         n.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5"),
@@ -562,4 +562,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-16d5f187.3181d43a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-16d5f187.fec603ba.js.map

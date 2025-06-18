@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.HomeTimeline", "icons/IconBarChartHorizontalStroke-js", "icons/IconFireStroke-js", "icons/IconGifPillStroke-js"],
+    ["bundle.HomeTimeline", "icons/IconBookmarkCollectionsStroke-js", "icons/IconFilm-js"],
     {
         789831: (e, t, r) => {
             r.d(t, { Z: () => d });
@@ -101,7 +101,7 @@
                     return a.createElement(o.Z, { style: E.cardOuter }, n ? a.createElement(M.Z, { aspectMode: S.Z.COVER, source: { uri: n }, style: E.image }) : null, a.createElement(o.Z, { style: E.cardInner }, a.createElement(o.Z, { style: E.primaryLabelContainer }, l ? a.createElement(y, { renderProperties: l, wrapperStyles: E.primaryLabelIconWrapper }) : null, a.createElement(b.ZP, { color: d, size: "headline1", weight: "heavy" }, s)), i ? a.createElement(b.ZP, { color: d }, i) : null, a.createElement(D, { buttonProps: { type: "brandFilled" }, destinationLink: e, onDestinationClick: t, renderProperties: r })));
                 },
                 E = g.default.create((e) => ({ cardOuter: { borderRadius: e.borderRadii.large, borderColor: e.colors.borderColor, borderWidth: e.borderWidths.small, backgroundColor: e.colors.cellBackground }, cardInner: { gap: e.spaces.space12, alignItems: "flex-start", paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16 }, image: { position: "absolute", width: "100%", height: "100%", borderRadius: e.borderRadii.large }, primaryLabelContainer: { flexDirection: "row", alignItems: "center" }, primaryLabelIconWrapper: { paddingEnd: e.spaces.space8, verticalAlign: "middle" } })),
-                v = ({ destinationLink: e, onDestinationClick: t, renderProperties: r }) => {
+                _ = ({ destinationLink: e, onDestinationClick: t, renderProperties: r }) => {
                     const n = a.useMemo(() => {
                         const o = { destinationLink: e, onDestinationClick: t };
                         switch (r.__typename) {
@@ -115,7 +115,7 @@
                     }, [r, e, t]);
                     return a.createElement(o.Z, { testID: `super-upsell-${r.__typename ?? "default"}` }, n);
                 },
-                _ = ({ attributionParams: e, trackClick: t, trackImpression: r, upsellContent: o }) => {
+                v = ({ attributionParams: e, trackClick: t, trackImpression: r, upsellContent: o }) => {
                     const l = (0, i.Z)(),
                         d = a.useRef(),
                         c = (0, n.R)(d, { threshold: 1 }),
@@ -127,9 +127,9 @@
                         h = a.useCallback(() => {
                             u ? t() : l.scribeAction("click");
                         }, [l, t, u]);
-                    return a.createElement("div", { ref: d }, a.createElement(v, { destinationLink: p, onDestinationClick: h, renderProperties: o.render_properties }));
+                    return a.createElement("div", { ref: d }, a.createElement(_, { destinationLink: p, onDestinationClick: h, renderProperties: o.render_properties }));
                 },
-                T = (e) => a.createElement(l.nO, { data: { referer: e.attributionParams.referrer }, namespace: { component: "unified-upsell", element: e.upsellContent.key } }, a.createElement(_, e));
+                T = (e) => a.createElement(l.nO, { data: { referer: e.attributionParams.referrer }, namespace: { component: "unified-upsell", element: e.upsellContent.key } }, a.createElement(v, e));
             var Z = r(722517);
             const P = ({ attributionParams: e, surfaceKey: t, trackClick: r, trackDismiss: o, trackImpression: n, upsellContent: s }) => a.useMemo(() => a.createElement(T, { attributionParams: e, trackClick: r, trackDismiss: o, trackImpression: n, upsellContent: s }), [e, r, o, n, s]),
                 R = ({ surfaceKey: e, wrapperStyles: t }) => {
@@ -326,15 +326,15 @@
                 S = r(164174),
                 k = r(487552),
                 E = r(125363),
-                v = r(306878);
-            const _ = () => {
-                    const e = (0, E.v9)(v.wB),
+                _ = r(306878);
+            const v = () => {
+                    const e = (0, E.v9)(_.wB),
                         t = (0, E.I0)();
                     return [
                         e,
                         a.useCallback(
                             (e) => {
-                                t((0, v.iT)(e)), t((0, v.KC)(e));
+                                t((0, _.iT)(e)), t((0, _.KC)(e));
                             },
                             [t],
                         ),
@@ -343,7 +343,7 @@
                 T = u().g53d5df6,
                 Z = u().j59f0b94,
                 P = ({ setTransitionState: e, transitionState: t }) => {
-                    const [r] = _(),
+                    const [r] = v(),
                         [n, s] = a.useState(r),
                         l = a.useCallback(
                             (e, n) => {
@@ -377,9 +377,9 @@
                 x = r(727828),
                 B = r(252021),
                 A = r(920603),
-                z = r(443781),
-                H = r(32677),
-                L = (r(136728), r(899667)),
+                H = r(443781),
+                L = r(32677),
+                z = (r(136728), r(899667)),
                 N = r(507651),
                 W = r(952793),
                 F = r(655352),
@@ -387,9 +387,9 @@
                 G = r(71620),
                 U = r(668214),
                 $ = r(709318),
-                j = r(390387);
-            const V = (0, U.Z)()
-                .propsFromState(() => ({ pinnedTimelines: $.GE, selectedTimeline: $.br, isSubscriber: j.pG, sort: $.sI }))
+                V = r(390387);
+            const j = (0, U.Z)()
+                .propsFromState(() => ({ pinnedTimelines: $.GE, selectedTimeline: $.br, isSubscriber: V.pG, sort: $.sI }))
                 .propsFromActions(() => ({ createLocalApiErrorHandlerFetchPins: (0, G.zr)("HOME_TIMELINE_FETCH_PINS"), fetchPinnedTimelinesIfNeeded: $.Mq, updateSettings: $.VP }))
                 .withAnalytics();
             var J = r(138099),
@@ -420,9 +420,9 @@
                 te = u().dafd69e9({ noun: "" }),
                 re = u().d80a1c37({ noun: "" }),
                 ae = a.createElement(k.default, null),
-                oe = a.createElement(L.default, null);
+                oe = a.createElement(z.default, null);
             const ne = d.default.create((e) => ({ tabsContainer: { display: "flex", flexDirection: "row" }, tabs: { flexBasis: 1, flexGrow: 1, paddingEnd: e.spaces.space4 }, rightControlContainer: { borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small, justifyContent: "center", paddingHorizontal: e.spaces.space8 }, focusedModeRightControlContainer: { paddingHorizontal: 0 } })),
-                se = V(function ({ analytics: e, createLocalApiErrorHandlerFetchPins: t, fetchPinnedTimelinesIfNeeded: r, isSubscriber: n, onRefresh: s, pinnedTimelines: l, rightControl: i, selectedTimeline: d, sort: c, updateSettings: u }) {
+                se = j(function ({ analytics: e, createLocalApiErrorHandlerFetchPins: t, fetchPinnedTimelinesIfNeeded: r, isSubscriber: n, onRefresh: s, pinnedTimelines: l, rightControl: i, selectedTimeline: d, sort: c, updateSettings: u }) {
                     const [, m] = a.useTransition(),
                         [p, h] = a.useState(!1),
                         b = a.useRef(0);
@@ -485,7 +485,7 @@
                 be = r(810641),
                 ge = r(438965),
                 fe = r(335632);
-            const ye = (0, U.Z)().propsFromState(() => ({ selectedTimeline: $.br, sort: $.sI, viewerUserId: j._h }));
+            const ye = (0, U.Z)().propsFromState(() => ({ selectedTimeline: $.br, sort: $.sI, viewerUserId: V._h }));
             var Ce = r(807896),
                 De = r(457311),
                 we = r(725516);
@@ -503,8 +503,8 @@
                     n = a.useMemo(() => (e === O.Jz.COMMUNITY ? Me : e === O.Jz.LIST ? ke : Se), [e]);
                 return a.createElement(De.Z, (0, Ce.Z)({ onButtonPress: r, onImpression: o }, n));
             }
-            var ve = r(791632);
-            var _e = r(985366),
+            var _e = r(791632);
+            var ve = r(985366),
                 Te = r(383675),
                 Ze = r(255117),
                 Pe = r(506653),
@@ -512,7 +512,7 @@
             const Ie = u().f089620c,
                 xe = (0, pe.ZP)(
                     ye(({ history: e, location: t, selectedTimeline: r, sort: o, recordTTFT: n = ce.jN, timelineRef: s, viewerUserId: l }) => {
-                        const { featureSwitches: i } = a.useContext(z.rC),
+                        const { featureSwitches: i } = a.useContext(H.rC),
                             d = a.useRef(!0);
                         de()(l, "viewerUserId must be defined");
                         const c = r.type === O.Jz.HOME && i.isTrue("rweb_home_nav_single_direction_scroll_enabled"),
@@ -528,12 +528,12 @@
                             p = a.useMemo(
                                 () =>
                                     (function ({ history: e, location: t, selectedTimeline: r, sort: a, viewerUserId: o }) {
-                                        const n = (0, ve.HD)(e) ? e.location.query.id : void 0,
-                                            s = (0, ve.HD)(e) ? e.location.query.mode : void 0,
+                                        const n = (0, _e.HD)(e) ? e.location.query.id : void 0,
+                                            s = (0, _e.HD)(e) ? e.location.query.mode : void 0,
                                             l = s || r.type,
                                             i = n || r.id,
                                             d = s ? s === O.Jz.HOME_LATEST : r.type === O.Jz.HOME_LATEST;
-                                        return l === O.Jz.COMMUNITY && i ? (0, _e.Qx)(String(i), { displayLocation: "Home", rankingMode: a }) : l === O.Jz.CREATOR_SUBSCRIPTIONS ? (0, Re.Z)({ userId: o }) : l === O.Jz.GENERIC && i ? (0, Te.R)(String(i)) : l === O.Jz.LIST && i ? (0, Pe.Z)({ listId: String(i) }) : (0, Ze.ZP)({ useLatest: d, userId: o });
+                                        return l === O.Jz.COMMUNITY && i ? (0, ve.Qx)(String(i), { displayLocation: "Home", rankingMode: a }) : l === O.Jz.CREATOR_SUBSCRIPTIONS ? (0, Re.Z)({ userId: o }) : l === O.Jz.GENERIC && i ? (0, Te.R)(String(i)) : l === O.Jz.LIST && i ? (0, Pe.Z)({ listId: String(i) }) : (0, Ze.ZP)({ useLatest: d, userId: o });
                                     })({ history: e, location: t, selectedTimeline: r, sort: o, viewerUserId: l }),
                                 [e, t, r, o, l],
                             ),
@@ -544,9 +544,9 @@
                 );
             var Be = r(791983),
                 Ae = r(523561),
-                ze = r(597496),
-                He = r(155727),
-                Le = r(618186),
+                He = r(597496),
+                Le = r(155727),
+                ze = r(618186),
                 Ne = r(872405),
                 We = r(823161),
                 Fe = r(473026),
@@ -554,8 +554,8 @@
                 Ge = r(853485),
                 Ue = r(450646),
                 $e = r(674306),
-                je = r(665468),
-                Ve = r(292484),
+                Ve = r(665468),
+                je = r(292484),
                 Je = r(919022);
             const qe = (0, U.Z)()
                     .propsFromState(() => ({ viewerUser: Je.ZP.selectViewerUser }))
@@ -567,33 +567,36 @@
                 et = a.createElement(Ge.default, null),
                 tt = a.createElement(Ue.default, null),
                 rt = a.createElement($e.default, null),
-                at = a.createElement(je.default, null),
+                at = a.createElement(Ve.default, null),
                 ot = d.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space8 }, avatarColumn: { paddingTop: 48 - We.default.getSizeSimple(We.default.defaultSize) + "px" }, avatar: { width: "100%" }, body: { flexDirection: "column", flexGrow: 1 }, fakeInput: { paddingTop: e.spaces.space16, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space2 }, toolbar: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", marginEnd: e.spaces.space2, marginTop: e.spaces.space20 }, toolbarSection: { alignItems: "center", flexDirection: "row" }, toolbarSectionWithIconContainer: { alignItems: "center", flexDirection: "row", marginStart: e.spacesPx.space2 }, toolBarButton: { marginHorizontal: 0 }, firstToolBarButton: { marginHorizontal: 0, marginStart: `-${e.spaces.space8}` }, tweetButton: { marginStart: e.spaces.space12 } })),
                 nt = qe(({ userAvatarURI: e }) => {
-                    const t = a.useMemo(() => a.createElement(He.Z.Consumer, null, ({ avatarSize: t }) => a.createElement(Le.Z, { size: t, style: ot.avatar, uri: e })), [e]),
-                        r = !(0, Ve.vS)();
+                    const t = a.useMemo(() => a.createElement(Le.Z.Consumer, null, ({ avatarSize: t }) => a.createElement(ze.Z, { size: t, style: ot.avatar, uri: e })), [e]),
+                        r = !(0, je.vS)();
                     return a.createElement(Ne.Z, { avatarCell: t, avatarCellStyle: ot.avatarColumn, cellStyle: ot.body, style: ot.root }, a.createElement(f.ZP, { color: "gray700", numberOfLines: 1, size: "headline1", style: ot.fakeInput }, Qe), a.createElement(o.Z, { style: ot.toolbar }, a.createElement(o.Z, { style: ot.toolbarSectionWithIconContainer }, a.createElement(D.ZP, { disabled: !0, icon: Ye, size: "medium", style: ot.firstToolBarButton, type: "brandText" }), a.createElement(D.ZP, { disabled: !0, icon: Xe, size: "medium", style: ot.toolBarButton, type: "brandText" }), r ? a.createElement(D.ZP, { disabled: !0, icon: et, size: "medium", style: ot.toolBarButton, type: "brandText" }) : null, a.createElement(D.ZP, { disabled: !0, icon: tt, size: "medium", style: ot.toolBarButton, type: "brandText" }), r ? a.createElement(D.ZP, { disabled: !0, icon: rt, size: "medium", style: ot.toolBarButton, type: "brandText" }) : null, a.createElement(D.ZP, { disabled: !0, icon: at, size: "medium", style: ot.toolBarButton, type: "brandText" })), a.createElement(o.Z, { style: ot.toolbarSection }, a.createElement(D.ZP, { disabled: !0, style: ot.tweetButton, type: "primaryFilled" }, Ke))));
                 }),
                 st = (0, Ae.Z)({
                     loader: () =>
-                        (ze.H1.preload() || Promise.resolve()).then(() =>
+                        (He.H1.preload() || Promise.resolve()).then(() =>
                             Promise.all([
-                                r.e("icons.8"),
-                                r.e("icons.15"),
-                                r.e("icons.7"),
-                                r.e("icons.3"),
-                                r.e("icons.24"),
-                                r.e("icons.12"),
-                                r.e("icons.22"),
-                                r.e("icons.2"),
-                                r.e("icons.18"),
-                                r.e("icons.9"),
-                                r.e("icons.6"),
+                                r.e("icons.21"),
+                                r.e("icons.16"),
+                                r.e("icons.10"),
                                 r.e("icons.1"),
+                                r.e("icons.19"),
+                                r.e("icons.0"),
+                                r.e("icons.23"),
+                                r.e("icons.8"),
+                                r.e("icons.2"),
+                                r.e("icons.3"),
+                                r.e("icons.15"),
+                                r.e("icons.4"),
                                 r.e("modules.common-e907d115"),
                                 r.e("modules.common-e019dbda"),
-                                r.e("icons.14"),
-                                r.e("icons.5"),
+                                r.e("icons.9"),
+                                r.e("icons.7"),
+                                r.e("icons.28"),
+                                r.e("icons.26"),
+                                r.e("icons.24"),
                                 r.e("modules.audio-6107ac1a"),
                                 r.e("modules.audio-b953418a"),
                                 r.e("modules.audio-7c51e6a7"),
@@ -604,14 +607,11 @@
                                 r.e("modules.audio-e019dbda"),
                                 r.e("modules.audio-262c94d4"),
                                 r.e("modules.audio-c6fe4ea4"),
-                                r.e("icons.21"),
-                                r.e("icons.16"),
-                                r.e("icons.28"),
-                                r.e("icons.17"),
+                                r.e("icons.18"),
+                                r.e("icons.13"),
+                                r.e("icons.29"),
                                 r.e("icons.27"),
-                                r.e("icons.19"),
-                                r.e("icons.0"),
-                                r.e("icons.4"),
+                                r.e("icons.25"),
                                 r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -648,7 +648,8 @@
                                 r.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                                 r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                                 r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
-                                r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
+                                r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
+                                r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
                                 r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                                 r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
                                 r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
@@ -671,8 +672,7 @@
                                 r.e("shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-7b8626db"),
                                 r.e("shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-76dc24ae"),
                                 r.e("shared~bundle.Compose~bundle.ConversationWithRelay~bundle.Conversation~bundle.RichTextCompose"),
-                                r.e("shared~bundle.TwitterArticles~bundle.Compose~bundle.RichTextCompose-bc6ccf4c"),
-                                r.e("shared~bundle.TwitterArticles~bundle.Compose~bundle.RichTextCompose-e96e9bea"),
+                                r.e("shared~bundle.TwitterArticles~bundle.Compose~bundle.RichTextCompose"),
                                 r.e("shared~bundle.Compose~bundle.RichTextCompose-bc6ccf4c"),
                                 r.e("shared~bundle.Compose~bundle.RichTextCompose-a2dee9c7"),
                                 r.e("shared~bundle.Compose~bundle.RichTextCompose-42018f38"),
@@ -699,7 +699,7 @@
             const pt = 200,
                 ht = 100,
                 bt = (e) => {
-                    const [t, r] = _(),
+                    const [t, r] = v(),
                         [o, n] = a.useState("Idle"),
                         [s, l] = a.useState(t),
                         i = gt(e),
@@ -752,7 +752,7 @@
                 Dt = a.createElement(Be.c, null),
                 wt = a.createElement(p.Z, null);
             function Mt({ analytics: e, history: t, isSideNavExpandedByUser: r, location: d, selectedTimeline: c }) {
-                const { featureSwitches: u, isRestrictedSession: p, userClaims: g } = (0, z.QZ)(),
+                const { featureSwitches: u, isRestrictedSession: p, userClaims: g } = (0, H.QZ)(),
                     f = a.useRef(performance?.mark?.("home-page-init-start")),
                     y = a.useRef(null),
                     C = a.useRef(!1),
@@ -805,18 +805,18 @@
                         },
                         [w],
                     ),
-                    E = a.useMemo(() => a.createElement(a.Fragment, null, !(0, F.ZP)() || p || M ? null : a.createElement(a.Fragment, null, a.createElement(st, { history: t, location: d }), a.createElement(n.Z, { isSlim: !0 })), a.createElement(b.Z, { component: s.Z, fab: a.createElement(H.Z, { history: t }) }, a.createElement(xe, { timelineRef: k }))), [t, M, p, d, k]),
-                    v = { page: "home", section: c.type === O.Jz.GENERIC ? c.scribe : O.yu[c.type] },
+                    E = a.useMemo(() => a.createElement(a.Fragment, null, !(0, F.ZP)() || p || M ? null : a.createElement(a.Fragment, null, a.createElement(st, { history: t, location: d }), a.createElement(n.Z, { isSlim: !0 })), a.createElement(b.Z, { component: s.Z, fab: a.createElement(L.Z, { history: t }) }, a.createElement(xe, { timelineRef: k }))), [t, M, p, d, k]),
+                    _ = { page: "home", section: c.type === O.Jz.GENERIC ? c.scribe : O.yu[c.type] },
                     T = !(0, F.ZP)(),
                     Z = T ? a.createElement(h.Z, { style: St.icon }) : void 0,
                     R = T ? null : Ct,
-                    L = u.isTrue("rweb_sourcemap_migration"),
+                    z = u.isTrue("rweb_sourcemap_migration"),
                     N = u.isTrue("rweb_sourcemap_migration_focused_mode"),
                     W = g.isAnyPremiumSubscriber(),
                     [G, U] = (0, l.Zx)(({ windowWidth: e }) => [lt.Z.isOneColumnViewportCenteredSquishedLayoutRedesign(e, !!r), lt.Z.isTwoColumnOrWiderLayoutRedesign(e, !!r)]),
-                    $ = L && N && W && U,
-                    [j] = _(),
-                    V = (0, i.$u)(),
+                    $ = z && N && W && U,
+                    [V] = v(),
+                    j = (0, i.$u)(),
                     [J, q, K, Q] = bt(!!r),
                     Y = a.useMemo(() => a.createElement(se, { onRefresh: S, rightControl: $ && a.createElement(P, { setTransitionState: q, transitionState: J }) }), [q, $, J, S]),
                     X = a.useMemo(() => {
@@ -826,8 +826,8 @@
                         }
                         return null;
                     }, [T, g, u]),
-                    ee = a.useMemo(() => a.createElement(o.Z, { style: [St.searchContainer, it.W.contentOneColumnRedesign, G && St.squished, K] }, a.createElement(ze.Rj, { shouldHandleSearchShortcut: !0 })), [G, K]);
-                return a.createElement(ut.nO, { namespace: v }, a.createElement(le.Z, { locationKey: v.page }, $ && j && ee, a.createElement(B.Z, { centeredLogo: Z, disjointHeader: Dt, documentTitle: Ct, history: t, onTabRefresh: S, primaryContent: E, primaryContentStyles: $ && K, rightControl: X, secondaryBar: Y, sidebarContent: $ && j ? null : a.createElement(o.Z, { style: $ && Q }, wt), title: R, withAppBar: !V }), $ && j && !G && a.createElement(o.Z, { style: St.floatingFooter }, a.createElement(I.Z, { align: "right", itemLayout: "vertical", withOverflow: !0 }))));
+                    ee = a.useMemo(() => a.createElement(o.Z, { style: [St.searchContainer, it.W.contentOneColumnRedesign, G && St.squished, K] }, a.createElement(He.Rj, { shouldHandleSearchShortcut: !0 })), [G, K]);
+                return a.createElement(ut.nO, { namespace: _ }, a.createElement(le.Z, { locationKey: _.page }, $ && V && ee, a.createElement(B.Z, { centeredLogo: Z, disjointHeader: Dt, documentTitle: Ct, history: t, onTabRefresh: S, primaryContent: E, primaryContentStyles: $ && K, rightControl: X, secondaryBar: Y, sidebarContent: $ && V ? null : a.createElement(o.Z, { style: $ && Q }, wt), title: R, withAppBar: !j }), $ && V && !G && a.createElement(o.Z, { style: St.floatingFooter }, a.createElement(I.Z, { align: "right", itemLayout: "vertical", withOverflow: !0 }))));
             }
             const St = d.default.create((e) => ({ icon: { flexGrow: 1, height: "1.75rem", color: e.colors.brandColor }, upsellContainer: { maxWidth: "100%" }, searchContainer: { alignItems: "center", backfaceVisibility: "hidden", backgroundColor: e.colors.cellBackground, flexDirection: "row", height: e.componentDimensions.appBarHeight, minHeight: e.spaces.space32, top: 0, zIndex: e.componentZIndices.appBarZIndex, paddingHorizontal: e.spaces.space16, marginTop: e.spaces.space16 }, floatingFooter: { position: "fixed", bottom: e.spaces.space20, end: 0 }, squished: { maxWidth: "100%" } })),
                 kt = yt(Mt);
@@ -858,8 +858,8 @@
                 S = r(189700),
                 k = r(520489),
                 E = r(297938),
-                v = r(136483),
-                _ = r(457566);
+                _ = r(136483),
+                v = r(457566);
             const T = (e) => {
                 switch (e) {
                     case "Fire":
@@ -883,7 +883,7 @@
                     case "NotesStroke":
                         return m.default;
                     case "Grok":
-                        return _.x1;
+                        return v.x1;
                     case "MoneyStroke":
                         return p.default;
                     case "BarChart":
@@ -911,7 +911,7 @@
                     case "SearchPersonStroke":
                         return E.default;
                     case "CircleFill":
-                        return v.default;
+                        return _.default;
                     default:
                         return () => null;
                 }
@@ -1104,11 +1104,11 @@
                 render() {
                     const { Icon: e, "aria-label": t, badgeCount: r, badgePip: a, children: n, color: s, isActive: d, isCompact: c, isPillLink: u, isRoundedRect: m, isWebRedesign: b, retainScrollPosition: w, style: S, to: k } = this.props,
                         { location: E } = this.state,
-                        v = k ? this._getMemoizedLink(k, w) : void 0,
-                        _ = d ? d(k) : E?.pathname === v?.pathname,
+                        _ = k ? this._getMemoizedLink(k, w) : void 0,
+                        v = d ? d(k) : E?.pathname === _?.pathname,
                         T = g.Z.generate({ backgroundColor: "transparent", color: l.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? M.pillHoverStyle.backgroundColor : void 0 }),
-                        Z = b ? "medium" : _ ? "bold" : "medium";
-                    return o.createElement(f.Z, { "aria-label": t, "aria-selected": _, focusable: !!_, interactiveStyles: T, link: v, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [M.pillStyle] : [M.link]), ...(u && _ ? [M.pillActiveStyle] : []), c ? (u ? M.compactPill : M.compactLink) : null, m ? M.roundedRect : null, S], withoutInteractiveStyles: b }, ({ isFocused: t, isHovered: d }) => o.createElement(i.Z, { style: u && M.flexGrow }, o.createElement(p.ZP, { size: b ? "headline2" : void 0, style: [M.text, { color: this._getTextColor(_, d, b, u) }, c && M.compactText, b && t && M.focusedText, u && M.pillTextStyle, u && _ && M.pillActiveTextStyle, u && d && M.pillHoverTextStyle], weight: Z }, e && o.createElement(e, { style: M.icon }), n, b || u ? null : o.createElement(i.Z, { style: _ && [M.border, { backgroundColor: l.default.theme.colors[s] }] })), r ? o.createElement(h.Z, { count: r, standalone: !0, style: [M.badge, r >= 10 && M.multiDigitBadge, r >= 20 && M.truncatedCountBadge], truncatedCountFormatter: D, unreadCountLabel: y, withBorder: !1 }) : a ? o.createElement(h.Z, { pip: !0, standalone: !0, style: M.badgePip, textColor: "red500", unreadCountLabel: C, withBorder: !1 }) : null));
+                        Z = b ? "medium" : v ? "bold" : "medium";
+                    return o.createElement(f.Z, { "aria-label": t, "aria-selected": v, focusable: !!v, interactiveStyles: T, link: _, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [M.pillStyle] : [M.link]), ...(u && v ? [M.pillActiveStyle] : []), c ? (u ? M.compactPill : M.compactLink) : null, m ? M.roundedRect : null, S], withoutInteractiveStyles: b }, ({ isFocused: t, isHovered: d }) => o.createElement(i.Z, { style: u && M.flexGrow }, o.createElement(p.ZP, { size: b ? "headline2" : void 0, style: [M.text, { color: this._getTextColor(v, d, b, u) }, c && M.compactText, b && t && M.focusedText, u && M.pillTextStyle, u && v && M.pillActiveTextStyle, u && d && M.pillHoverTextStyle], weight: Z }, e && o.createElement(e, { style: M.icon }), n, b || u ? null : o.createElement(i.Z, { style: v && [M.border, { backgroundColor: l.default.theme.colors[s] }] })), r ? o.createElement(h.Z, { count: r, standalone: !0, style: [M.badge, r >= 10 && M.multiDigitBadge, r >= 20 && M.truncatedCountBadge], truncatedCountFormatter: D, unreadCountLabel: y, withBorder: !1 }) : a ? o.createElement(h.Z, { pip: !0, standalone: !0, style: M.badgePip, textColor: "red500", unreadCountLabel: C, withBorder: !1 }) : null));
                 }
             }
             (w.contextType = b.Z), (w.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -1155,7 +1155,7 @@
                     return o.createElement(n.Z, { "aria-label": t, buttonsContainerStyle: l && k.gap, childrenStyle: !h && k.flexGrow, key: m, style: [l ? null : k.segmentedControl, h && k.leftAligned, c], visibleItemIndex: u }, b);
                 };
         },
-        853485: (e, t, r) => {
+        28862: (e, t, r) => {
             r.r(t), r.d(t, { default: () => i });
             var a = r(202784),
                 o = r(890601),
@@ -1163,12 +1163,12 @@
                 s = r(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M6 5c-1.1 0-2 .895-2 2s.9 2 2 2 2-.895 2-2-.9-2-2-2zM2 7c0-2.209 1.79-4 4-4s4 1.791 4 4-1.79 4-4 4-4-1.791-4-4zm20 1H12V6h10v2zM6 15c-1.1 0-2 .895-2 2s.9 2 2 2 2-.895 2-2-.9-2-2-2zm-4 2c0-2.209 1.79-4 4-4s4 1.791 4 4-1.79 4-4 4-4-1.791-4-4zm20 1H12v-2h10v2zM7 7c0 .552-.45 1-1 1s-1-.448-1-1 .45-1 1-1 1 .448 1 1z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M2.998 8.5c0-1.38 1.119-2.5 2.5-2.5h9c1.381 0 2.5 1.12 2.5 2.5v14.12l-7-3.5-7 3.5V8.5zm2.5-.5c-.276 0-.5.22-.5.5v10.88l5-2.5 5 2.5V8.5c0-.28-.224-.5-.5-.5h-9zM18.5 2H8.998c-1.105 0-2 .9-2 2H18.5c.276 0 .5.22.5.5v9.82l-.002-.01v2.28L21 17.68V4.5C21 3.12 19.881 2 18.5 2z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const i = l;
         },
-        376278: (e, t, r) => {
+        926981: (e, t, r) => {
             r.r(t), r.d(t, { default: () => i });
             var a = r(202784),
                 o = r(890601),
@@ -1176,24 +1176,11 @@
                 s = r(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M11 1.28v.09c0 1.79 0 3.53-.829 5.18-.42-.78-1.061-1.36-1.707-1.94l-.268-.24c-.501 1-1.151 1.98-1.807 2.97C4.959 9.5 3.5 11.7 3.5 14.25c0 2.52.949 4.55 2.538 5.94 1.437 1.26 3.334 1.94 5.378 2.04.122.01.539.02.584.02 4.615 0 8.5-3.37 8.5-8C20.5 8.29 15.797 4 11 1.28zm2.534 18.08c-.521.56-1.144.87-1.681.89-.111 0-.221-.01-.331-.01-.454-.05-.684-.23-.82-.41-.192-.24-.313-.64-.313-1.14 0-.75.362-1.26 1.214-2.02.166-.14.35-.3.548-.46.47-.4 1.017-.86 1.56-1.41l.031.07c.35.83.647 1.78.647 2.54 0 .65-.317 1.38-.855 1.95zm2.572-.42c.18-.48.283-1 .283-1.53 0-1.17-.429-2.43-.804-3.32-.194-.46-.388-.85-.533-1.13-.073-.14-1.02-1.78-1.02-1.78l-.901 1.23c-.678.92-1.425 1.55-2.18 2.19-.224.19-.449.38-.673.58-.94.83-1.889 1.85-1.889 3.51 0 .22.014.44.047.67C6.673 18.38 5.5 16.6 5.5 14.25c0-2.01 1.133-3.61 2.246-5.18.284-.4.568-.8.831-1.21.419.89.419 2.18.173 3.08l.117-.11c1.971-1.7 3.514-3.03 3.969-6.06.632.47 1.415 1.12 2.195 1.93 1.79 1.84 3.469 4.42 3.469 7.55 0 1.92-.921 3.61-2.394 4.69z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const i = l;
-        },
-        937450: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => i });
-            var a = r(202784),
-                o = r(890601),
-                n = r(783427),
-                s = r(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M3 5.5C3 4.119 4.12 3 5.5 3h13C19.88 3 21 4.119 21 5.5v13c0 1.381-1.12 2.5-2.5 2.5h-13C4.12 21 3 19.881 3 18.5v-13zM5.5 5c-.28 0-.5.224-.5.5v13c0 .276.22.5.5.5h13c.28 0 .5-.224.5-.5v-13c0-.276-.22-.5-.5-.5h-13zM18 10.711V9.25h-3.74v5.5h1.44v-1.719h1.7V11.57h-1.7v-.859H18zM11.79 9.25h1.44v5.5h-1.44v-5.5zm-3.07 1.375c.34 0 .77.172 1.02.43l1.03-.86c-.51-.601-1.28-.945-2.05-.945C7.19 9.25 6 10.453 6 12s1.19 2.75 2.72 2.75c.85 0 1.54-.344 2.05-.945v-2.149H8.38v1.032H9.4v.515c-.17.086-.42.172-.68.172-.76 0-1.36-.602-1.36-1.375 0-.688.6-1.375 1.36-1.375z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M18.5 2h-13C4.12 2 3 3.12 3 4.5v15C3 20.88 4.12 22 5.5 22h13c1.38 0 2.5-1.12 2.5-2.5v-15C21 3.12 19.88 2 18.5 2zM7 20H5.5c-.28 0-.5-.22-.5-.5v-2h2V20zm0-4.5H5V13h2v2.5zM7 11H5V8.5h2V11zm0-4.5H5v-2c0-.28.22-.5.5-.5H7v2.5zM15 20H9v-7h6v7zm0-9H9V4h6v7zm4 8.5c0 .28-.22.5-.5.5H17v-2.5h2v2zm0-4h-2V13h2v2.5zm0-4.5h-2V8.5h2V11zm0-4.5h-2V4h1.5c.28 0 .5.22.5.5v2z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const i = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.HomeTimeline.47c2cfda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.HomeTimeline.6611975a.js.map

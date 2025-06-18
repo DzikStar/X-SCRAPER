@@ -1,91 +1,40 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.EventSummaryHandler", "icons/IconNewsStroke-js"],
+    ["loader.EventSummaryHandler", "icons/IconFollowArrowLeft-js", "icons/IconSparkle-js"],
     {
-        346252: (e, t, r) => {
-            r.d(t, { Z: () => b });
-            var a = r(202784),
-                n = r(325686),
-                o = r(530525),
-                i = r(439592),
-                s = r(682474),
-                l = r(745185),
-                c = r(392237),
-                d = r(401388),
-                m = r(250672),
-                p = r(741692);
-            const u = Object.freeze({ Fixed: "fixed", Variable: "variable" }),
-                h = (e) => {
-                    const { category: t, eventState: r, gameClock: n, gameClockPeriod: o, participants: i, startTimeMillis: s, winnerId: c } = e,
-                        d = (0, m.bH)(t, r, i, o, c);
-                    return a.createElement(l.Z, { "aria-label": d, category: t, containerStyle: C.scoreCardTile, gameClock: n, gameClockPeriod: o, gameState: r, isCompact: !0, startTimeMillis: s, teams: i, winnerId: c });
-                },
-                g = ({ isCellWithProminentSocialContext: e, type: t }) => {
-                    switch (t) {
-                        case u.Fixed:
-                            return (e && C.fixedCellThumbnailWithProminentSocialContext) || C.fixedCellThumbnail;
-                        case u.Variable:
-                            return C.variableCellThumbnail;
-                        default:
-                            return;
-                    }
-                },
-                C = c.default.create((e) => ({ coverContainer: { borderRadius: e.borderRadii.large, overflow: "hidden" }, fixedCellThumbnail: { height: c.default.theme.spaces.space48, width: c.default.theme.spaces.space48 }, fixedCellThumbnailWithProminentSocialContext: { height: `calc(${c.default.theme.spaces.space48} + ${c.default.theme.spaces.space40} + ${c.default.theme.spaces.space1} + ${c.default.theme.spaces.space2})`, width: `calc(${c.default.theme.spaces.space48} + ${c.default.theme.spaces.space40} + ${c.default.theme.spaces.space1} + ${c.default.theme.spaces.space2})` }, scoreCardTile: { padding: 0 }, variableCellThumbnail: { maxHeight: `calc(${c.default.theme.spaces.space48} * 2)`, maxWidth: `calc(${c.default.theme.spaces.space48} * 2)`, minHeight: `calc(${c.default.theme.spaces.space48} + ${c.default.theme.spaces.space20})`, minWidth: `calc(${c.default.theme.spaces.space48} + ${c.default.theme.spaces.space20})`, height: "25%", width: "25%" } })),
-                b = (e) => {
-                    const { cropCandidates: t, dataSaverMode: r, icon: l, image: c, isCellWithProminentSocialContext: m, scoreEvent: u, type: b = "variable" } = e,
-                        y = g({ isCellWithProminentSocialContext: m, type: b });
-                    return a.createElement(n.Z, { style: [C.coverContainer, y] }, u ? h(u) : !c || (0, d.Z)(c) || r ? (r || (0, d.Z)(c) ? a.createElement(s.Z, { ratio: 1 }, a.createElement(p.Vm, { icon: l })) : null) : a.createElement(o.Z, { "aria-label": "", aspectMode: i.Z.SQUARE, cropCandidates: t, image: c }));
-                };
-        },
-        741692: (e, t, r) => {
-            r.d(t, { S3: () => p, nn: () => u, Vm: () => h });
-            var a = r(202784),
-                n = r(325686),
-                o = r(366635),
-                i = r(392237),
-                s = r(453333),
-                l = r(784732),
-                c = r(689582),
-                d = r(68290);
-            const m = "placeholderIcon",
-                p = ({ author: e, color: t = "text", size: r = "subtext2", style: n, withHoverCard: i = !0, withLink: s = !1, withScreenName: l = !1 }) => a.createElement(o.Z, { affiliateBadgeInfo: e.highlightedLabel, avatarSize: { subtext2: "small", body: "medium", headline1: "large" }[r], color: t, isBlueVerified: e.is_blue_verified, isProtected: e.protected, isVerified: e.verified, name: e.name, nameSize: r, profileImageUrl: e.profile_image_url_https, screenName: e.screen_name, screenNameSize: r, style: [g.authorUserName, n], verifiedType: e.verified_type, withHoverCard: i, withLink: s, withScreenName: l }),
-                u = ({ style: e }) => a.createElement(n.Z, { style: [g.lightningBadge, e] }, a.createElement(s.default, { style: g.lightningIcon })),
-                h = ({ icon: e }) => a.createElement(n.Z, { style: g.placeholderIconContainer, testID: m }, "news" === e ? a.createElement(l.default, { style: g.placeholderIcon }) : "lists" === e ? a.createElement(c.default, { style: g.placeholderIcon }) : a.createElement(d.default, { style: g.placeholderIcon })),
-                g = i.default.create((e) => ({ authorUserName: { alignItems: "center" }, lightningBadge: { backgroundColor: "rgba(0, 0, 0, 0.6)", borderRadius: e.borderRadii.small, position: "absolute" }, lightningIcon: { boxSizing: "border-box", color: e.colors.white, height: e.spaces.space20, paddingVertical: "0.25rem", paddingHorizontal: "0.2rem" }, middot: { paddingHorizontal: e.spaces.space4 }, placeholderIcon: { color: e.colors.gray700, height: "2em" }, placeholderIconContainer: { alignItems: "center", borderWidth: e.borderWidths.small, borderStyle: "solid", borderColor: e.colors.borderColor, borderRadius: e.borderRadii.xLarge, backgroundColor: e.colors.gray0, height: "100%", justifyContent: "center" } }));
-        },
         449950: (e, t, r) => {
             r.d(t, { Z: () => p });
-            var a = r(807896),
-                n = r(202784),
-                o = r(530525),
-                i = r(659651),
-                s = r(111677),
-                l = r.n(s),
+            var n = r(807896),
+                o = r(202784),
+                i = r(530525),
+                a = r(659651),
+                l = r(111677),
+                s = r.n(l),
                 c = r(632658);
             const d = "image",
-                m = l().f93bb3ee;
-            class p extends n.Component {
+                m = s().f93bb3ee;
+            class p extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderContent = ({ resourceSelectionHandler: e, useMinimumData: t }) => {
-                            const { "aria-label": r, hideAcceptOverlay: s, shouldShowAltLabel: l, ...c } = this.props;
-                            return n.createElement(n.Fragment, null, n.createElement(o.Z, (0, a.Z)({}, c, { "aria-label": r, onVariantSelection: e, previewMode: t, testID: d })), l ? n.createElement(i.Z, { align: "left", altLabel: r }) : null);
+                            const { "aria-label": r, hideAcceptOverlay: l, shouldShowAltLabel: s, ...c } = this.props;
+                            return o.createElement(o.Fragment, null, o.createElement(i.Z, (0, n.Z)({}, c, { "aria-label": r, onVariantSelection: e, previewMode: t, testID: d })), s ? o.createElement(a.Z, { align: "left", altLabel: r }) : null);
                         });
                 }
                 render() {
                     const { hideAcceptOverlay: e, image: t } = this.props;
-                    return n.createElement(c.Z, { acceptLabel: m, hideAcceptOverlay: e, renderContent: this._renderContent, resourceId: "string" == typeof t ? t : t.url });
+                    return o.createElement(c.Z, { acceptLabel: m, hideAcceptOverlay: e, renderContent: this._renderContent, resourceId: "string" == typeof t ? t : t.url });
                 }
             }
         },
         308192: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => Ne });
-            var a = r(459643),
-                n = r(479506),
-                o = r(942893),
-                i = r(351322),
-                s = r(807896),
-                l = r(202784),
+            r.r(t), r.d(t, { default: () => Be });
+            var n = r(459643),
+                o = r(479506),
+                i = r(942893),
+                a = r(351322),
+                l = r(807896),
+                s = r(202784),
                 c = r(663550),
                 d = r(159440),
                 m = r(325686),
@@ -93,400 +42,347 @@
                 u = r(952428),
                 h = r(872405),
                 g = r(124964),
-                C = r(392237),
-                b = r(346252),
+                v = r(392237),
+                C = r(346252),
                 y = r(864479),
-                f = r(952793),
-                v = r(946409),
-                S = r(903019),
-                w = r(618566),
-                E = r(827922),
+                b = r(952793),
+                w = r(946409),
+                E = r(903019),
+                S = r(618566),
+                f = r(827922),
                 x = r(265196),
                 Z = r(421575),
-                I = r(988245),
-                T = r(927389),
-                _ = r(442730),
-                k = r(731708),
+                T = r(988245),
+                I = r(927389),
+                k = r(442730),
+                _ = r(731708),
                 P = r(470397),
-                D = r(628526),
-                M = r(378729),
-                R = r(366635),
-                z = r(854582),
-                O = r(868634),
-                L = r(741692),
-                $ = r(686689);
-            const F = ({ badge: e, groupedTrends: t, hasProminentSocialContext: r, linkColor: a, promotedContent: n, promotedTrendDescription: o, publisher: i, publisherTitleColor: s = "text", richContext: c, scoreEvent: d, shouldTruncateTitle: p, style: u, supportingText: h, textColor: g = "gray700", timeString: C, title: b, titleFontSize: y = "body", titleWeight: f = "bold" }) => {
-                    const v = _.Z.getTextDirection(b),
-                        S = r ? void 0 : V.title;
-                    return l.createElement(m.Z, { style: u }, l.createElement(k.ZP, { color: s, dir: v, numberOfLines: p ? 3 : void 0, size: y, style: S, weight: f, withHashflags: !0 }, b), r ? null : l.createElement(P.Z, { color: g, style: V.aboveTitle }, h ? l.createElement(k.ZP, { color: g, numberOfLines: 1, size: "subtext2" }, h) : null, i ? l.createElement(L.S3, { author: i, color: s, size: "subtext2" }) : null, e || C ? N(C, e, g) : null), l.createElement(D.Z, { groupedTrends: t, linkColor: a, textColor: g }), r ? l.createElement(m.Z, { style: V.belowTitle }, d ? A(d) : (e || C) && i ? H({ badge: e, publisher: i, textColor: g, timeString: C }) || N(C, e, g) : null) : null, n && n.advertiser ? l.createElement(l.Fragment, null, l.createElement(k.ZP, { color: g }, o), l.createElement(M.Z, { color: "white", promotedContent: n, style: V.promotedIndicator })) : null, c ? l.createElement($.Z, { color: g, entities: c.entities, rtl: c.rtl, size: "subtext2", text: c.text }) : null);
+                M = r(628526),
+                D = r(378729),
+                F = r(366635),
+                A = r(854582),
+                z = r(868634),
+                H = r(741692),
+                L = r(686689);
+            const R = ({ badge: e, groupedTrends: t, hasProminentSocialContext: r, linkColor: n, promotedContent: o, promotedTrendDescription: i, publisher: a, publisherTitleColor: l = "text", richContext: c, scoreEvent: d, shouldTruncateTitle: p, style: u, supportingText: h, textColor: g = "gray700", timeString: v, title: C, titleFontSize: y = "body", titleWeight: b = "bold" }) => {
+                    const w = k.Z.getTextDirection(C),
+                        E = r ? void 0 : $.title;
+                    return s.createElement(m.Z, { style: u }, s.createElement(_.ZP, { color: l, dir: w, numberOfLines: p ? 3 : void 0, size: y, style: E, weight: b, withHashflags: !0 }, C), r ? null : s.createElement(P.Z, { color: g, style: $.aboveTitle }, h ? s.createElement(_.ZP, { color: g, numberOfLines: 1, size: "subtext2" }, h) : null, a ? s.createElement(H.S3, { author: a, color: l, size: "subtext2" }) : null, e || v ? B(v, e, g) : null), s.createElement(M.Z, { groupedTrends: t, linkColor: n, textColor: g }), r ? s.createElement(m.Z, { style: $.belowTitle }, d ? V(d) : (e || v) && a ? O({ badge: e, publisher: a, textColor: g, timeString: v }) || B(v, e, g) : null) : null, o && o.advertiser ? s.createElement(s.Fragment, null, s.createElement(_.ZP, { color: g }, i), s.createElement(D.Z, { color: "white", promotedContent: o, style: $.promotedIndicator })) : null, c ? s.createElement(L.Z, { color: g, entities: c.entities, rtl: c.rtl, size: "subtext2", text: c.text }) : null);
                 },
-                H = ({ badge: e, publisher: t, textColor: r, timeString: a }) => {
-                    const n = l.createElement(R.Z, { isBlueVerified: t.is_blue_verified, isProtected: t.protected, isVerified: t.verified, name: t.name, nameSize: "subtext2", profileImageUrl: t.profile_image_url_https });
-                    return l.createElement(P.Z, { style: V.publisherRow }, n, N(a, e, r));
+                O = ({ badge: e, publisher: t, textColor: r, timeString: n }) => {
+                    const o = s.createElement(F.Z, { isBlueVerified: t.is_blue_verified, isProtected: t.protected, isVerified: t.verified, name: t.name, nameSize: "subtext2", profileImageUrl: t.profile_image_url_https });
+                    return s.createElement(P.Z, { style: $.publisherRow }, o, B(n, e, r));
                 },
-                A = (e) => {
-                    const { category: t, eventState: r, gameClock: a, gameClockPeriod: n, participants: o, startTimeMillis: i, winnerId: s } = e;
-                    return l.createElement(z.Z, { category: t, gameClock: a, gameClockPeriod: n, gameState: r, startTimeMillis: i, teams: o, winnerId: s, withCategory: !1 });
+                V = (e) => {
+                    const { category: t, eventState: r, gameClock: n, gameClockPeriod: o, participants: i, startTimeMillis: a, winnerId: l } = e;
+                    return s.createElement(A.Z, { category: t, gameClock: n, gameClockPeriod: o, gameState: r, startTimeMillis: a, teams: i, winnerId: l, withCategory: !1 });
                 },
-                N = (e, t, r) => (t && t.text ? l.createElement(O.ZP, { type: "live" }, t.text) : e ? l.createElement(m.Z, { style: V.timestamp }, l.createElement(k.ZP, { color: r, numberOfLines: 1, size: "subtext2" }, e)) : null),
-                V = C.default.create((e) => ({ aboveTitle: { alignItems: "center", flexDirection: "row" }, belowTitle: { marginTop: e.spaces.space4 }, promotedIndicator: { marginTop: e.spaces.space12 }, publisherRow: { alignItems: "center" }, timestamp: { maxWidth: "50%" }, title: { marginVertical: e.spaces.space2 } })),
-                U = l.memo(F);
-            var W = r(668214),
-                B = r(204744),
-                j = r(38562),
-                G = r(466380);
-            const Q = (e, t) => t.entry.content,
-                Y = (e, t) => {
-                    const r = Q(0, t),
-                        a = r.socialContext && r.socialContext.topicContext && r.socialContext.topicContext.topicId;
-                    return a ? G.Z.select(e, a) : void 0;
+                B = (e, t, r) => (t && t.text ? s.createElement(z.ZP, { type: "live" }, t.text) : e ? s.createElement(m.Z, { style: $.timestamp }, s.createElement(_.ZP, { color: r, numberOfLines: 1, size: "subtext2" }, e)) : null),
+                $ = v.default.create((e) => ({ aboveTitle: { alignItems: "center", flexDirection: "row" }, belowTitle: { marginTop: e.spaces.space4 }, promotedIndicator: { marginTop: e.spaces.space12 }, publisherRow: { alignItems: "center" }, timestamp: { maxWidth: "50%" }, title: { marginVertical: e.spaces.space2 } })),
+                W = s.memo(R);
+            var j = r(668214),
+                N = r(204744),
+                U = r(38562),
+                Q = r(466380);
+            const q = (e, t) => t.entry.content,
+                G = (e, t) => {
+                    const r = q(0, t),
+                        n = r.socialContext && r.socialContext.topicContext && r.socialContext.topicContext.topicId;
+                    return n ? Q.Z.select(e, n) : void 0;
                 },
-                q = (e, t) => t.entry.content.displayType === d.Z.CellWithProminentSocialContext,
-                J = (0, W.Z)()
-                    .propsFromState(() => ({ dataSaverMode: j.IX, eventSummary: Q, hasProminentSocialContext: q, topic: Y }))
-                    .adjustStateProps(({ dataSaverMode: e, eventSummary: t, hasProminentSocialContext: r, topic: a }) => {
-                        let n;
+                Y = (e, t) => t.entry.content.displayType === d.Z.CellWithProminentSocialContext,
+                J = (0, j.Z)()
+                    .propsFromState(() => ({ dataSaverMode: U.IX, eventSummary: q, hasProminentSocialContext: Y, topic: G }))
+                    .adjustStateProps(({ dataSaverMode: e, eventSummary: t, hasProminentSocialContext: r, topic: n }) => {
+                        let o;
                         if (r && t.scoreEvent) {
-                            const { category: e, eventState: r, gameClock: a, gameClockPeriod: o, participants: i, startTimeMillis: s, winnerId: l } = t.scoreEvent;
-                            n = { category: e, eventState: r, gameClock: a, gameClockPeriod: o, startTimeMillis: s, participants: i, winnerId: l };
+                            const { category: e, eventState: r, gameClock: n, gameClockPeriod: i, participants: a, startTimeMillis: l, winnerId: s } = t.scoreEvent;
+                            o = { category: e, eventState: r, gameClock: n, gameClockPeriod: i, startTimeMillis: l, participants: a, winnerId: s };
                         }
-                        return { dataSaverMode: e, hasProminentSocialContext: r, id: t.id, scoreEvent: n, topic: a };
+                        return { dataSaverMode: e, hasProminentSocialContext: r, id: t.id, scoreEvent: o, topic: n };
                     })
-                    .propsFromActions(() => ({ saveAsRecentSearch: B.DI })),
+                    .propsFromActions(() => ({ saveAsRecentSearch: N.DI })),
                 K = (e) => {
-                    const { badge: t, dataSaverMode: r, feedbackItems: a, groupedTrends: o, hasProminentSocialContext: i, id: s, image: c, isInSidebar: d, link: g, onClick: C, onImpression: y, publisher: v, richContext: w, saveAsRecentSearch: E, scoreEvent: x, shouldStoreTypeaheadItem: Z, socialContext: I, supportingText: _, timeString: k, title: P, topic: D } = e,
-                        M = (0, f.hC)("responsive_web_trends_ui_top_articles");
-                    l.useEffect(() => {
+                    const { badge: t, dataSaverMode: r, feedbackItems: n, groupedTrends: i, hasProminentSocialContext: a, id: l, image: c, isInSidebar: d, link: g, onClick: v, onImpression: y, publisher: w, richContext: S, saveAsRecentSearch: f, scoreEvent: x, shouldStoreTypeaheadItem: Z, socialContext: T, supportingText: k, timeString: _, title: P, topic: M } = e,
+                        D = (0, b.hC)("responsive_web_trends_ui_top_articles");
+                    s.useEffect(() => {
                         y && y();
                     }, []);
-                    const R = l.useCallback(() => {
-                            C(), E && Z && Z(n.Z.ItemType.EVENT) && E({ event: { id: s, image: c || { url: "", height: 0, width: 0 }, supportText: _, title: P, type: S.g2.Event } });
-                        }, [s, c, C, E, Z, _, P]),
-                        z = l.useMemo(() => (a?.length ? l.createElement(T.Z, { feedbackItems: a }) : null), [a]);
-                    return l.createElement(p.$6, null, (e) => l.createElement(u.Z, { link: e.withAnchorless(g), onClick: R, style: te.rootLink, withDarkerInteractiveBackground: d }, i && I ? l.createElement(h.Z, { rightControl: z, style: te.socialContextRow }, l.createElement(ee, { socialContext: I, topic: D })) : null, l.createElement(m.Z, { style: te.row }, M && l.createElement(b.Z, { dataSaverMode: r, icon: "news", image: c, isCellWithProminentSocialContext: i, scoreEvent: x, type: i ? "fixed" : void 0 }), l.createElement(U, { badge: t, groupedTrends: o, hasProminentSocialContext: i, publisher: v, richContext: w, scoreEvent: x, style: M ? te.detailsTrendUI : te.details, supportingText: _, timeString: k, title: P }), !M && l.createElement(b.Z, { dataSaverMode: r, icon: "news", image: c, isCellWithProminentSocialContext: i, scoreEvent: x, type: i ? "fixed" : void 0 }))));
+                    const F = s.useCallback(() => {
+                            v(), f && Z && Z(o.Z.ItemType.EVENT) && f({ event: { id: l, image: c || { url: "", height: 0, width: 0 }, supportText: k, title: P, type: E.g2.Event } });
+                        }, [l, c, v, f, Z, k, P]),
+                        A = s.useMemo(() => (n?.length ? s.createElement(I.Z, { feedbackItems: n }) : null), [n]);
+                    return s.createElement(p.$6, null, (e) => s.createElement(u.Z, { link: e.withAnchorless(g), onClick: F, style: te.rootLink, withDarkerInteractiveBackground: d }, a && T ? s.createElement(h.Z, { rightControl: A, style: te.socialContextRow }, s.createElement(ee, { socialContext: T, topic: M })) : null, s.createElement(m.Z, { style: te.row }, D && s.createElement(C.Z, { dataSaverMode: r, icon: "news", image: c, isCellWithProminentSocialContext: a, scoreEvent: x, type: a ? "fixed" : void 0 }), s.createElement(W, { badge: t, groupedTrends: i, hasProminentSocialContext: a, publisher: w, richContext: S, scoreEvent: x, style: D ? te.detailsTrendUI : te.details, supportingText: k, timeString: _, title: P }), !D && s.createElement(C.Z, { dataSaverMode: r, icon: "news", image: c, isCellWithProminentSocialContext: a, scoreEvent: x, type: a ? "fixed" : void 0 }))));
                 },
                 X = ({ socialContext: e, topic: t }) => {
-                    const { contextType: r, landingUrl: a, text: n, topicContext: o } = e,
-                        i = o && (0, E.SJ)(o),
-                        s = l.useMemo(() => (t ? l.createElement(l.Fragment, null, l.createElement(g.Z, { style: te.topicMiddot }), l.createElement(x.ZP, { isTransparent: !0, size: "smallCompact", textMode: Z.q.FollowTopic, topic: t })) : null), [t]);
-                    return l.createElement(I.Z, { contextType: r, link: a ? (0, v.s9)(a) : void 0, rightControl: i ? s : void 0, text: n, topicData: t && o ? (0, w.P)(o) : void 0, weight: "bold", withLeftPadding: !1 });
+                    const { contextType: r, landingUrl: n, text: o, topicContext: i } = e,
+                        a = i && (0, f.SJ)(i),
+                        l = s.useMemo(() => (t ? s.createElement(s.Fragment, null, s.createElement(g.Z, { style: te.topicMiddot }), s.createElement(x.ZP, { isTransparent: !0, size: "smallCompact", textMode: Z.q.FollowTopic, topic: t })) : null), [t]);
+                    return s.createElement(T.Z, { contextType: r, link: n ? (0, w.s9)(n) : void 0, rightControl: a ? l : void 0, text: o, topicData: t && i ? (0, S.P)(i) : void 0, weight: "bold", withLeftPadding: !1 });
                 },
-                ee = l.memo(X),
-                te = C.default.create((e) => ({ detailsTrendUI: { flex: 1, marginStart: e.spaces.space12 }, details: { flex: 1, marginEnd: e.spaces.space12 }, topicMiddot: { alignSelf: "center", paddingEnd: 0 }, rootLink: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, row: { flexDirection: "row" }, socialContextRow: { justifyContent: "space-between", marginBottom: e.spaces.space4 } })),
-                re = (0, y.Z)(J(l.memo(K)));
-            var ae = r(530732),
-                ne = r(682474),
-                oe = r(284702),
-                ie = r(309854),
-                se = r(439592),
-                le = r(123751),
+                ee = s.memo(X),
+                te = v.default.create((e) => ({ detailsTrendUI: { flex: 1, marginStart: e.spaces.space12 }, details: { flex: 1, marginEnd: e.spaces.space12 }, topicMiddot: { alignSelf: "center", paddingEnd: 0 }, rootLink: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, row: { flexDirection: "row" }, socialContextRow: { justifyContent: "space-between", marginBottom: e.spaces.space4 } })),
+                re = (0, y.Z)(J(s.memo(K)));
+            var ne = r(530732),
+                oe = r(682474),
+                ie = r(284702),
+                ae = r(309854),
+                le = r(439592),
+                se = r(123751),
                 ce = r(449950),
                 de = r(310453);
             const me = { red: 0, green: 0, blue: 0 };
-            class pe extends l.Component {
+            class pe extends s.Component {
                 render() {
-                    const e = C.default.theme.aspectRatios.landscape;
-                    return l.createElement(ne.Z, { ratio: e }, l.createElement(m.Z, { style: [ue.maxHeightWidth, this._getBackgroundColorStyle()] }, this._renderCover()), l.createElement(m.Z, { style: [C.default.absoluteFill, this._getGradientColorStyle()] }));
+                    const e = v.default.theme.aspectRatios.landscape;
+                    return s.createElement(oe.Z, { ratio: e }, s.createElement(m.Z, { style: [ue.maxHeightWidth, this._getBackgroundColorStyle()] }, this._renderCover()), s.createElement(m.Z, { style: [v.default.absoluteFill, this._getGradientColorStyle()] }));
                 }
                 _renderCover() {
-                    const { broadcast: e, coverMediaFromTweet: t, image: r, promotedContent: a, tweetId: n } = this.props;
+                    const { broadcast: e, coverMediaFromTweet: t, image: r, promotedContent: n, tweetId: o } = this.props;
                     if (e && e.broadcast_id && e.media_key) {
                         const t = { objectFitVideo: "cover", hideLeftBadges: !0, hidePosterImage: !0 },
                             r = { contentId: e.media_key, videoId: { type: "broadcast", id: e.broadcast_id }, variants: [] },
-                            n = null != e.width && null != e.height ? { url: e.image_url ?? "", width: e.width, height: e.height } : void 0;
-                        return l.createElement(de.Z, { "aria-label": "", aspectRatio: C.default.theme.aspectRatios.landscape, displayOptions: t, forceLoop: !0, hideDataSaverAcceptOverlay: !0, hidePreviewPlayButton: !0, poster: n, promotedContent: a, showControls: !1, source: r, videoType: "video" });
+                            o = null != e.width && null != e.height ? { url: e.image_url ?? "", width: e.width, height: e.height } : void 0;
+                        return s.createElement(de.Z, { "aria-label": "", aspectRatio: v.default.theme.aspectRatios.landscape, displayOptions: t, forceLoop: !0, hideDataSaverAcceptOverlay: !0, hidePreviewPlayButton: !0, poster: o, promotedContent: n, showControls: !1, source: r, videoType: "video" });
                     }
-                    if (n && t && "photo" !== t.type) {
-                        const e = oe.Z.extractVideoProps(le.Z.forTweet(n), t),
+                    if (o && t && "photo" !== t.type) {
+                        const e = ie.Z.extractVideoProps(se.Z.forTweet(o), t),
                             r = { objectFitVideo: "cover", hideLeftBadges: !0, hidePosterImage: !0 };
-                        return l.createElement(de.Z, (0, s.Z)({}, e, { aspectRatio: C.default.theme.aspectRatios.landscape, displayOptions: r, forceLoop: !0, hideDataSaverAcceptOverlay: !0, hidePreviewPlayButton: !0, promotedContent: a, showControls: !1 }));
+                        return s.createElement(de.Z, (0, l.Z)({}, e, { aspectRatio: v.default.theme.aspectRatios.landscape, displayOptions: r, forceLoop: !0, hideDataSaverAcceptOverlay: !0, hidePreviewPlayButton: !0, promotedContent: n, showControls: !1 }));
                     }
                     if (t) {
                         const e = t.ext_alt_text || "",
-                            r = ie.Z.getOriginalImage(t);
+                            r = ae.Z.getOriginalImage(t);
                         return this._renderCoverImage(r, e);
                     }
                     return this._renderCoverImage(r);
                 }
                 _renderCoverImage(e, t = "") {
-                    return e ? l.createElement(ce.Z, { "aria-label": t, aspectMode: se.Z.exact(C.default.theme.aspectRatios.landscape), cropCandidates: this._getCropCandidates(), hideAcceptOverlay: !0, image: e }) : null;
+                    return e ? s.createElement(ce.Z, { "aria-label": t, aspectMode: le.Z.exact(v.default.theme.aspectRatios.landscape), cropCandidates: this._getCropCandidates(), hideAcceptOverlay: !0, image: e }) : null;
                 }
                 _getBackgroundColorStyle() {
                     const e = this._getDominantColor();
-                    return { backgroundColor: e ? `rgb(${e.red},${e.green},${e.blue})` : C.default.theme.colors.primary };
+                    return { backgroundColor: e ? `rgb(${e.red},${e.green},${e.blue})` : v.default.theme.colors.primary };
                 }
                 _getGradientColorStyle() {
                     return { backgroundImage: `linear-gradient(transparent 0%, transparent 25%, ${`rgba(${me.red},${me.green},${me.blue}, 0.70)`} 75%, ${`rgba(${me.red},${me.green},${me.blue}, 0.80)`} 100%)` };
                 }
                 _getCropCandidates() {
                     const { coverMediaFromTweet: e, manualCrops: t } = this.props;
-                    return t || (e && ie.Z.getCropCandidates(e));
+                    return t || (e && ae.Z.getCropCandidates(e));
                 }
                 _getDominantColor() {
                     const { coverMediaFromTweet: e } = this.props;
-                    return e && ie.Z.getBackgroundColor(e);
+                    return e && ae.Z.getBackgroundColor(e);
                 }
             }
-            const ue = C.default.create((e) => ({ maxHeightWidth: { height: "100%", width: "100%" } }));
+            const ue = v.default.create((e) => ({ maxHeightWidth: { height: "100%", width: "100%" } }));
             var he = r(232418),
                 ge = r(228356),
-                Ce = r(836255),
-                be = r(919022);
+                ve = r(836255),
+                Ce = r(919022);
             const ye = (e, t) => t.entry.content,
-                fe = (e, t) => {
+                be = (e, t) => {
                     const r = t.entry.content.media?.mediaEntity?.tweetMedia?.momentId;
                     return r ? ge.Z.select(e, r) : void 0;
                 },
-                ve = (e, t) => {
+                we = (e, t) => {
                     const r = t.entry.content.media?.mediaEntity?.tweetMedia?.tweetId;
-                    return r ? Ce.Z.select(e, r) : void 0;
+                    return r ? ve.Z.select(e, r) : void 0;
+                },
+                Ee = (e, t) => {
+                    const r = t.entry.content.promotedMetadata?.advertiserId;
+                    return r ? Ce.ZP.select(e, r) : void 0;
                 },
                 Se = (e, t) => {
-                    const r = t.entry.content.promotedMetadata?.advertiserId;
-                    return r ? be.ZP.select(e, r) : void 0;
+                    const { mediaEntity: r, mediaKey: n } = t.entry.content.media ?? {};
+                    if (n && null != r?.broadcast) return r?.broadcast;
                 },
-                we = (e, t) => {
-                    const { mediaEntity: r, mediaKey: a } = t.entry.content.media ?? {};
-                    if (a && null != r?.broadcast) return r?.broadcast;
-                },
-                Ee = ({ eventSummary: e, tweet: t }) => {
+                fe = ({ eventSummary: e, tweet: t }) => {
                     if (t) {
                         const r = e.media?.mediaKey?.id;
                         return t.extended_entities?.media?.find((e) => e.id_str === r);
                     }
                 },
-                xe = (0, W.Z)()
-                    .propsFromState(() => ({ advertiser: Se, eventSummary: ye, moment: fe, tweet: ve, broadcast: we }))
-                    .adjustStateProps(({ advertiser: e, broadcast: t, eventSummary: r, moment: a, tweet: n }) => {
-                        const { promotedMetadata: o } = r;
-                        return { coverMediaFromTweet: Ee({ tweet: n, eventSummary: r }), manualCrops: (0, he.q8)(a), promotedContent: o ? { advertiser: { id_str: o.advertiserId }, advertiser_name: e ? e.name : void 0, impression_id: o.impressionId, disclosure_type: "NoDisclosure" } : void 0, promotedTrendDescription: o ? o.promotedTrendDescription : void 0, tweetId: n?.id_str, broadcast: t };
+                xe = (0, j.Z)()
+                    .propsFromState(() => ({ advertiser: Ee, eventSummary: ye, moment: be, tweet: we, broadcast: Se }))
+                    .adjustStateProps(({ advertiser: e, broadcast: t, eventSummary: r, moment: n, tweet: o }) => {
+                        const { promotedMetadata: i } = r;
+                        return { coverMediaFromTweet: fe({ tweet: o, eventSummary: r }), manualCrops: (0, he.q8)(n), promotedContent: i ? { advertiser: { id_str: i.advertiserId }, advertiser_name: e ? e.name : void 0, impression_id: i.impressionId, disclosure_type: "NoDisclosure" } : void 0, promotedTrendDescription: i ? i.promotedTrendDescription : void 0, tweetId: o?.id_str, broadcast: t };
                     }),
                 Ze = "eventHero",
-                Ie = "white",
-                Te = (e) => {
-                    const { badge: t, broadcast: r, coverMediaFromTweet: a, feedbackItems: n, groupedTrends: o, image: i, link: s, manualCrops: c, onClick: d, onImpression: u, promotedContent: h, promotedTrendDescription: g, publisher: C, richContext: b, supportingText: y, timeString: v, title: S, tweetId: w } = e;
-                    l.useEffect(() => {
+                Te = "white",
+                Ie = (e) => {
+                    const { badge: t, broadcast: r, coverMediaFromTweet: n, feedbackItems: o, groupedTrends: i, image: a, link: l, manualCrops: c, onClick: d, onImpression: u, promotedContent: h, promotedTrendDescription: g, publisher: v, richContext: C, supportingText: y, timeString: w, title: E, tweetId: S } = e;
+                    s.useEffect(() => {
                         u && u();
                     }, []);
-                    const E = S.length > 80 ? "headline1" : "title4",
-                        x = (0, f.hC)("rweb_sourcemap_migration");
-                    return l.createElement(p.$6, null, (e) => l.createElement(l.Fragment, null, l.createElement(ae.Z, { link: e.withAnchorless(s), onClick: d, style: x && _e.containerRedesign, testID: Ze }, l.createElement(pe, { broadcast: r, coverMediaFromTweet: a, image: i, manualCrops: c, promotedContent: h, tweetId: w }), l.createElement(m.Z, { style: ke }, l.createElement(U, { badge: t, groupedTrends: o, linkColor: Ie, promotedContent: h, promotedTrendDescription: g, publisher: C, publisherTitleColor: Ie, richContext: b, shouldTruncateTitle: !0, supportingText: y, textColor: Ie, timeString: v, title: S, titleFontSize: E, titleWeight: "heavy" }))), n?.length ? l.createElement(m.Z, { style: _e.menuContainer }, l.createElement(T.Z, { feedbackItems: n, isDisplayedOnMedia: !0 })) : null));
+                    const f = E.length > 80 ? "headline1" : "title4",
+                        x = (0, b.hC)("rweb_sourcemap_migration");
+                    return s.createElement(p.$6, null, (e) => s.createElement(s.Fragment, null, s.createElement(ne.Z, { link: e.withAnchorless(l), onClick: d, style: x && ke.containerRedesign, testID: Ze }, s.createElement(pe, { broadcast: r, coverMediaFromTweet: n, image: a, manualCrops: c, promotedContent: h, tweetId: S }), s.createElement(m.Z, { style: _e }, s.createElement(W, { badge: t, groupedTrends: i, linkColor: Te, promotedContent: h, promotedTrendDescription: g, publisher: v, publisherTitleColor: Te, richContext: C, shouldTruncateTitle: !0, supportingText: y, textColor: Te, timeString: w, title: E, titleFontSize: f, titleWeight: "heavy" }))), o?.length ? s.createElement(m.Z, { style: ke.menuContainer }, s.createElement(I.Z, { feedbackItems: o, isDisplayedOnMedia: !0 })) : null));
                 },
-                _e = C.default.create((e) => ({ containerRedesign: { marginHorizontal: e.spaces.space16 }, menuContainer: { position: "absolute", top: e.spaces.space12, end: e.spaces.space16 }, details: { justifyContent: "flex-end", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical } })),
-                ke = [C.default.absoluteFill, _e.details],
-                Pe = xe(l.memo(Te));
-            var De = r(614983),
-                Me = r.n(De),
-                Re = r(71620),
-                ze = r(988566),
-                Oe = r(694180);
-            const Le = (e, t) => t.entry.content,
-                $e = (e, t) => {
-                    const r = Le(0, t),
-                        a = r.socialContext && r.socialContext.topicContext && r.socialContext.topicContext.topicId;
-                    return a ? G.Z.select(e, a) : void 0;
+                ke = v.default.create((e) => ({ containerRedesign: { marginHorizontal: e.spaces.space16 }, menuContainer: { position: "absolute", top: e.spaces.space12, end: e.spaces.space16 }, details: { justifyContent: "flex-end", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical } })),
+                _e = [v.default.absoluteFill, ke.details],
+                Pe = xe(s.memo(Ie));
+            var Me = r(614983),
+                De = r.n(Me),
+                Fe = r(71620),
+                Ae = r(988566),
+                ze = r(694180);
+            const He = (e, t) => t.entry.content,
+                Le = (e, t) => {
+                    const r = He(0, t),
+                        n = r.socialContext && r.socialContext.topicContext && r.socialContext.topicContext.topicId;
+                    return n ? Q.Z.select(e, n) : void 0;
                 },
-                Fe = (e, t) => {
-                    const { publisherId: r } = Le(0, t);
-                    return r ? be.ZP.select(e, r) : void 0;
+                Re = (e, t) => {
+                    const { publisherId: r } = He(0, t);
+                    return r ? Ce.ZP.select(e, r) : void 0;
                 },
-                He = (e) => {
-                    const { analytics: t, createLocalApiErrorHandler: r, logTrend: a, promotedMetadata: n, ...o } = e,
-                        i = l.useCallback(
+                Oe = (e) => {
+                    const { analytics: t, createLocalApiErrorHandler: r, logTrend: n, promotedMetadata: o, ...i } = e,
+                        a = s.useCallback(
                             (e) => {
-                                n && n.promotedTrendId && a({ promoted_trend_id: n.promotedTrendId, impression_id: n.impressionId, event: e }).catch(r());
+                                o && o.promotedTrendId && n({ promoted_trend_id: o.promotedTrendId, impression_id: o.impressionId, event: e }).catch(r());
                             },
-                            [n, a, r],
+                            [o, n, r],
                         ),
-                        m = l.useCallback(() => {
-                            t.scribeAction("click"), i(c.AJ.SPOTLIGHT_CLICK);
-                        }, [t, i]),
-                        p = l.useCallback(() => {
-                            t.scribeAction("impression"), i(c.AJ.SPOTLIGHT_IMPRESSION);
-                        }, [t, i]);
+                        m = s.useCallback(() => {
+                            t.scribeAction("click"), a(c.AJ.SPOTLIGHT_CLICK);
+                        }, [t, a]),
+                        p = s.useCallback(() => {
+                            t.scribeAction("impression"), a(c.AJ.SPOTLIGHT_IMPRESSION);
+                        }, [t, a]);
                     switch (e.displayType) {
                         case d.Z.CellWithProminentSocialContext:
                         case d.Z.Cell:
-                            return l.createElement(re, (0, s.Z)({}, o, { onClick: m, onImpression: p }));
+                            return s.createElement(re, (0, l.Z)({}, i, { onClick: m, onImpression: p }));
                         case d.Z.Hero:
-                            return l.createElement(Pe, (0, s.Z)({}, o, { onClick: m, onImpression: p }));
+                            return s.createElement(Pe, (0, l.Z)({}, i, { onClick: m, onImpression: p }));
                         default:
                             return null;
                     }
                 },
-                Ae = (0, W.Z)()
-                    .propsFromState(() => ({ eventSummary: Le, publisher: Fe, topic: $e }))
+                Ve = (0, j.Z)()
+                    .propsFromState(() => ({ eventSummary: He, publisher: Re, topic: Le }))
                     .adjustStateProps(({ eventSummary: e, publisher: t, topic: r }) => {
-                        const { displayType: a, groupedTrends: n, promotedMetadata: o, richContext: i } = e,
-                            s = (0, v.s9)(e.url);
-                        Me()(s, "link cannot be undefined in EventSummaryHero");
-                        const l = (0, ze.Du)({ isCellWithProminentSocialContext: a === d.Z.CellWithProminentSocialContext, socialContext: e.socialContext, topic: r }),
-                            c = (n || []).map((e) => ({ name: e.name, link: (0, v.s9)(e.url) }));
-                        return { badge: e.badge, displayType: e.displayType, groupedTrends: c, image: e.image, link: s, promotedMetadata: o, publisher: t, richContext: i, socialContext: l, supportingText: e.supportingText, timeString: e.timeString, title: e.title };
+                        const { displayType: n, groupedTrends: o, promotedMetadata: i, richContext: a } = e,
+                            l = (0, w.s9)(e.url);
+                        De()(l, "link cannot be undefined in EventSummaryHero");
+                        const s = (0, Ae.Du)({ isCellWithProminentSocialContext: n === d.Z.CellWithProminentSocialContext, socialContext: e.socialContext, topic: r }),
+                            c = (o || []).map((e) => ({ name: e.name, link: (0, w.s9)(e.url) }));
+                        return { badge: e.badge, displayType: e.displayType, groupedTrends: c, image: e.image, link: l, promotedMetadata: i, publisher: t, richContext: a, socialContext: s, supportingText: e.supportingText, timeString: e.timeString, title: e.title };
                     })
-                    .propsFromActions(() => ({ logTrend: Oe.dS, createLocalApiErrorHandler: (0, Re.zr)("URT_EVENT_SUMMARY") }))
-                    .withAnalytics()(l.memo(He)),
-                Ne = (e) =>
-                    i
+                    .propsFromActions(() => ({ logTrend: ze.dS, createLocalApiErrorHandler: (0, Fe.zr)("URT_EVENT_SUMMARY") }))
+                    .withAnalytics()(s.memo(Oe)),
+                Be = (e) =>
+                    a
                         .iH({
-                            component: Ae,
+                            component: Ve,
                             getScribeDataItem: (e) =>
                                 ((e) => {
                                     const { promotedMetadata: t } = e.content,
                                         r = e.content.id,
-                                        a = { item_type: n.Z.ItemType.EVENT, event_details: { event_id: r }, ...o.Z.getAllSurfaceDetails(e.itemMetadata.clientEventInfo) };
-                                    return t && ((a.disclosure_type = t.disclosureType), (a.promoted_id = t.impressionId)), a;
+                                        n = { item_type: o.Z.ItemType.EVENT, event_details: { event_id: r }, ...i.Z.getAllSurfaceDetails(e.itemMetadata.clientEventInfo) };
+                                    return t && ((n.disclosure_type = t.disclosureType), (n.promoted_id = t.impressionId)), n;
                                 })(e),
-                            isFocusable: (0, a.Z)(!0),
+                            isFocusable: (0, n.Z)(!0),
                         })
                         .getHandler(() => ({ ...e }));
         },
-        250672: (e, t, r) => {
-            r.d(t, { bH: () => m });
-            var a = r(111677),
-                n = r.n(a),
-                o = r(93074),
-                i = r(810495);
-            const s = n().a3484d22,
-                l = n().aab2efa9,
-                c = n().ba21c289,
-                d = (e) => `${e.fullName || ""} ${e.score || ""}`,
-                m = (e, t, r, a, n) => {
-                    const m = r && n ? ((e, t) => (e && t ? e.find((e) => e.id === t) : void 0))(r, n) : void 0,
-                        p = (0, o.Z)(t),
-                        u = e || "",
-                        h = r && r[0] ? d(r[0]) : "",
-                        g = r && r[1] ? d(r[1]) : "",
-                        C = a || "",
-                        b = m ? l({ winner: m.fullName }) : "",
-                        y = t === i.D.Completed ? (m ? b : s) : C;
-                    return c({ gameCategory: u, gameState: p, accessibleGameClockPeriod: y, teamOneLabel: h, teamTwoLabel: g });
-                };
-        },
         927389: (e, t, r) => {
             r.d(t, { Z: () => d });
-            var a = r(202784),
-                n = r(247056),
-                o = r(392237);
-            const i = (0, r(523561).Z)({ loader: () => r.e("loader.FeedbackSheet").then(r.bind(r, 774426)) });
-            var s = r(725516),
-                l = r(851623);
-            const c = o.default.create((e) => ({ curationControl: { marginStart: e.spaces.space20 } })),
-                d = (0, s.Z)((e) => {
-                    const { analytics: t, feedbackItems: r, isDisplayedOnMedia: o } = e,
-                        s = a.useCallback((e) => (r ? a.createElement(i, { actionItems: r, onClose: e }) : null), [r]),
-                        d = a.useCallback(() => t.scribe({ element: "caret", action: "click" }), [t]);
-                    return r && r.length > 0 ? a.createElement(n.Z, { onClick: d, renderActionMenu: s, style: c.curationControl, testID: l.Z.caret, withDarkBackground: o }) : null;
+            var n = r(202784),
+                o = r(247056),
+                i = r(392237);
+            const a = (0, r(523561).Z)({ loader: () => r.e("loader.FeedbackSheet").then(r.bind(r, 774426)) });
+            var l = r(725516),
+                s = r(851623);
+            const c = i.default.create((e) => ({ curationControl: { marginStart: e.spaces.space20 } })),
+                d = (0, l.Z)((e) => {
+                    const { analytics: t, feedbackItems: r, isDisplayedOnMedia: i } = e,
+                        l = n.useCallback((e) => (r ? n.createElement(a, { actionItems: r, onClose: e }) : null), [r]),
+                        d = n.useCallback(() => t.scribe({ element: "caret", action: "click" }), [t]);
+                    return r && r.length > 0 ? n.createElement(o.Z, { onClick: d, renderActionMenu: l, style: c.curationControl, testID: s.Z.caret, withDarkBackground: i }) : null;
                 });
         },
-        93074: (e, t, r) => {
-            r.d(t, { Z: () => m });
-            var a = r(111677),
-                n = r.n(a),
-                o = r(810495);
-            const i = n().f178e38c,
-                s = n().b6da6b02,
-                l = n().i9f615c8,
-                c = n().f897267a,
-                d = n().f93c4b6a,
-                m = (e) => {
-                    switch (e) {
-                        case o.D.Scheduled:
-                            return i;
-                        case o.D.InProgress:
-                            return s;
-                        case o.D.Completed:
-                            return l;
-                        case o.D.Postponed:
-                            return c;
-                        case o.D.Cancelled:
-                            return d;
-                        default:
-                            return "";
-                    }
-                };
-        },
-        810495: (e, t, r) => {
-            r.d(t, { D: () => a });
-            const a = Object.freeze({ Scheduled: "Scheduled", InProgress: "InProgress", Completed: "Completed", Postponed: "Postponed", Cancelled: "Cancelled", Unused6: "_Unused6", Unused7: "_Unused7" });
-        },
         204744: (e, t, r) => {
-            r.d(t, { DI: () => v, H$: () => p, OB: () => S, Ww: () => d, YB: () => m, hj: () => C, qF: () => y });
+            r.d(t, { DI: () => w, H$: () => p, OB: () => E, Ww: () => d, YB: () => m, hj: () => v, qF: () => y });
             r(901951);
-            var a = r(499627),
-                n = r(390387);
-            const o = "recentSearches",
-                i = "rweb.recentSearches",
-                s =
+            var n = r(499627),
+                o = r(390387);
+            const i = "recentSearches",
+                a = "rweb.recentSearches",
+                l =
                     (e) =>
-                    (t, r, { userPersistence: a }) =>
-                        a.set(i, { recentSearches: e }).catch(() => {
+                    (t, r, { userPersistence: n }) =>
+                        n.set(a, { recentSearches: e }).catch(() => {
                             Promise.resolve();
                         }),
-                l = (e, t) => {
+                s = (e, t) => {
                     let r = [];
                     if (e.user) {
-                        const a = e.user;
-                        r = t.filter((e) => e.event || e.keyword || e.list || e.topic || (e.user && e.user.id !== a.id));
+                        const n = e.user;
+                        r = t.filter((e) => e.event || e.keyword || e.list || e.topic || (e.user && e.user.id !== n.id));
                     } else if (e.event) {
-                        const a = e.event;
-                        r = t.filter((e) => e.keyword || e.list || e.topic || e.user || (e.event && e.event.id !== a.id));
+                        const n = e.event;
+                        r = t.filter((e) => e.keyword || e.list || e.topic || e.user || (e.event && e.event.id !== n.id));
                     } else if (e && e.keyword) {
-                        const a = e.keyword;
-                        r = t.filter((e) => e.event || e.list || e.topic || e.user || (e.keyword && e.keyword.query !== a.query));
+                        const n = e.keyword;
+                        r = t.filter((e) => e.event || e.list || e.topic || e.user || (e.keyword && e.keyword.query !== n.query));
                     } else if (e.list) {
-                        const a = e.list;
-                        r = t.filter((e) => e.event || e.keyword || e.topic || e.user || (e.list && e.list.id !== a.id));
+                        const n = e.list;
+                        r = t.filter((e) => e.event || e.keyword || e.topic || e.user || (e.list && e.list.id !== n.id));
                     } else if (e.topic) {
-                        const a = e.topic;
-                        r = t.filter((e) => e.event || e.keyword || e.list || e.user || (e.topic && e.topic.id !== a.id));
+                        const n = e.topic;
+                        r = t.filter((e) => e.event || e.keyword || e.list || e.user || (e.topic && e.topic.id !== n.id));
                     }
                     return r;
                 },
                 c = { fetched: !1, recentSearches: [] };
-            const d = (e) => e[o].recentSearches,
+            const d = (e) => e[i].recentSearches,
                 m = (e) => d(e)[0] || null,
-                p = (e) => e[o].fetched,
+                p = (e) => e[i].fetched,
                 u = "rweb/recentSearches/INIT_FROM_CACHE",
                 h = (e) => ({ type: u, payload: e }),
                 g = "rweb/recentSearches/REMOVE_QUERY",
-                C =
+                v =
                     (e) =>
-                    (t, r, { userPersistence: a }) => {
+                    (t, r, { userPersistence: n }) => {
                         t({ payload: e, type: g });
-                        const o = r(),
-                            i = d(o);
-                        return (0, n.Qb)(o) ? t(s(i)) : Promise.resolve();
+                        const i = r(),
+                            a = d(i);
+                        return (0, o.Qb)(i) ? t(l(a)) : Promise.resolve();
                     },
-                b = "rweb/recentSearches/CLEAR_ALL",
+                C = "rweb/recentSearches/CLEAR_ALL",
                 y =
                     () =>
                     (e, t, { userPersistence: r }) => {
-                        e({ type: b });
-                        const a = t(),
-                            o = d(a);
-                        return (0, n.Qb)(a) ? e(s(o)) : Promise.resolve();
+                        e({ type: C });
+                        const n = t(),
+                            i = d(n);
+                        return (0, o.Qb)(n) ? e(l(i)) : Promise.resolve();
                     },
-                f = "rweb/recentSearches/ADD_QUERY",
-                v =
+                b = "rweb/recentSearches/ADD_QUERY",
+                w =
                     (e) =>
-                    (t, r, { userPersistence: a }) => {
-                        t({ payload: e, type: f });
-                        const o = r(),
-                            i = d(o);
-                        return (0, n.Qb)(o) ? t(s(i)) : Promise.resolve();
+                    (t, r, { userPersistence: n }) => {
+                        t({ payload: e, type: b });
+                        const i = r(),
+                            a = d(i);
+                        return (0, o.Qb)(i) ? t(l(a)) : Promise.resolve();
                     },
-                S =
+                E =
                     () =>
                     (e, t, { userPersistence: r }) => {
-                        const a = t();
-                        return p(a)
+                        const n = t();
+                        return p(n)
                             ? Promise.resolve()
                             : e((e, t, { userPersistence: r }) => {
-                                  const a = t();
-                                  return (0, n.Qb)(a)
+                                  const n = t();
+                                  return (0, o.Qb)(n)
                                       ? r
-                                            .get(i)
+                                            .get(a)
                                             .then((t) => {
                                                 e(h(t));
                                             })
@@ -496,21 +392,21 @@
                                       : (e(h()), Promise.resolve());
                               });
                     };
-            a.Z.register({
-                [o]: function (e = c, t) {
+            n.Z.register({
+                [i]: function (e = c, t) {
                     if (!t) return e;
                     switch (t.type) {
-                        case f: {
+                        case b: {
                             const r = t.payload,
-                                a = r ? l(r, e.recentSearches) : [];
-                            return a.length > 49 && a.splice(49, 1), r && a.unshift(r), { ...e, recentSearches: a };
+                                n = r ? s(r, e.recentSearches) : [];
+                            return n.length > 49 && n.splice(49, 1), r && n.unshift(r), { ...e, recentSearches: n };
                         }
                         case g: {
                             const r = t.payload,
-                                a = r ? l(r, e.recentSearches) : [];
-                            return { ...e, recentSearches: a };
+                                n = r ? s(r, e.recentSearches) : [];
+                            return { ...e, recentSearches: n };
                         }
-                        case b:
+                        case C:
                             return { fetched: !0, recentSearches: [] };
                         case u:
                             return { ...e, ...t.payload, fetched: !0 };
@@ -522,280 +418,73 @@
         },
         628526: (e, t, r) => {
             r.d(t, { Z: () => u });
-            var a = r(202784),
-                n = r(111677),
-                o = r.n(n),
-                i = r(731708),
-                s = r(392237);
-            const l = (e, t) => (e.length >= 2 ? d(e, t) : 1 === e.length ? c(e[0], t) : null),
-                c = (e, t) => a.createElement(o().I18NFormatMessage, { $i18n: "fe7c309b" }, m(e, t, !0)),
-                d = (e, t) => a.createElement(o().I18NFormatMessage, { $i18n: "ea753bf5" }, m(e[0], t, !0), m(e[1], t)),
-                m = (e, t, r = !1) => a.createElement(i.ZP, { color: t, link: e.link, size: "subtext2", style: r && p.paddingStart, withHashflags: !0 }, e.name),
-                p = s.default.create((e) => ({ root: { marginTop: e.spaces.space4 }, paddingStart: { paddingStart: e.spaces.space2 } })),
+            var n = r(202784),
+                o = r(111677),
+                i = r.n(o),
+                a = r(731708),
+                l = r(392237);
+            const s = (e, t) => (e.length >= 2 ? d(e, t) : 1 === e.length ? c(e[0], t) : null),
+                c = (e, t) => n.createElement(i().I18NFormatMessage, { $i18n: "fe7c309b" }, m(e, t, !0)),
+                d = (e, t) => n.createElement(i().I18NFormatMessage, { $i18n: "ea753bf5" }, m(e[0], t, !0), m(e[1], t)),
+                m = (e, t, r = !1) => n.createElement(a.ZP, { color: t, link: e.link, size: "subtext2", style: r && p.paddingStart, withHashflags: !0 }, e.name),
+                p = l.default.create((e) => ({ root: { marginTop: e.spaces.space4 }, paddingStart: { paddingStart: e.spaces.space2 } })),
                 u = ({ groupedTrends: e, linkColor: t, textColor: r = "gray700" }) => {
-                    const n = l(e, t);
-                    return n ? a.createElement(i.ZP, { color: r, numberOfLines: 2, size: "subtext2", style: p.root }, n) : null;
+                    const o = s(e, t);
+                    return o ? n.createElement(a.ZP, { color: r, numberOfLines: 2, size: "subtext2", style: p.root }, o) : null;
                 };
         },
-        165822: (e, t, r) => {
-            r.d(t, { Z: () => c });
-            var a = r(202784),
-                n = r(325686),
-                o = r(58881),
-                i = r(530732),
-                s = r(392237);
-            const l = s.default.create((e) => ({ root: { padding: e.spaces.space12, borderRadius: e.borderRadii.large }, defaultLowerContainerStyle: { marginTop: e.spaces.space12, justifyContent: "flex-end" }, defaultUpperContainerStyle: { height: `calc(${e.spaces.space48}*2)`, overflow: "hidden", borderRadius: e.borderRadii.large } })),
-                c = ({ "aria-label": e, containerStyle: t, disabled: r, interactiveStyles: c, isCompact: d, link: m, lower: p, onClick: u, stackLayoutLowerStyle: h, stackLayoutUpperStyle: g, upper: C, withInsetFocusRing: b = !0, withInteractiveStyling: y = !1 }) => {
-                    const f = c ?? o.Z.generate({ backgroundColor: s.default.theme.colors.transparent, color: s.default.theme.colors.primary, insetFocusRing: b }),
-                        v = a.createElement(a.Fragment, null, a.createElement(n.Z, { style: [l.defaultUpperContainerStyle, g, d && { height: "auto" }] }, C), p ? a.createElement(n.Z, { style: [l.defaultLowerContainerStyle, h] }, p) : null);
-                    return a.createElement(i.Z, { "aria-label": e, disabled: r, interactive: y, interactiveStyles: y ? f : void 0, link: m, onClick: u, style: [l.root, t] }, v);
-                };
-        },
-        745185: (e, t, r) => {
-            r.d(t, { Z: () => y });
-            var a = r(202784),
-                n = r(165822),
-                o = r(854582),
-                i = r(325686),
-                s = r(530525),
-                l = r(731708),
-                c = r(439592),
-                d = r(626202),
-                m = r(392237),
-                p = r(615084);
-            const u = Object.freeze({ SCORE: "score", SECONDARY_SCORE: "secondaryScore" });
-            class h extends a.Component {
-                constructor(...e) {
-                    super(...e),
-                        (this.state = { imageError: !1 }),
-                        (this._renderTeamName = () => {
-                            const {
-                                team: { color: e, shortName: t },
-                            } = this.props;
-                            return a.createElement(i.Z, { style: C.teamNameContainer }, a.createElement(l.ZP, { color: g(e), numberOfLines: 1, style: { textOverflow: "ellipsis" }, weight: "heavy" }, t));
-                        }),
-                        (this._renderImage = () => {
-                            const {
-                                    isCompact: e,
-                                    team: { imageUrl: t, logo: r },
-                                } = this.props,
-                                { imageError: n } = this.state,
-                                o = (!r && !t) || n ? C.translucent : {},
-                                l = r ? c.Z.exact(r.width / r.height) : c.Z.SQUARE;
-                            return a.createElement(i.Z, { style: [C.imageContainer, o, e && C.compactImageContainer] }, a.createElement(s.Z, { "aria-label": "", aspectMode: l, image: r || t || "", onError: this._handleImageError, rounded: !r }));
-                        }),
-                        (this._handleImageError = () => {
-                            this.setState({ imageError: !0 });
-                        }),
-                        (this._renderScore = () => {
-                            const { category: e, gameState: t, team: r, winnerId: n } = this.props,
-                                { color: o, id: s, score: c, secondaryScore: d } = r,
-                                m = s === n,
-                                h = !n,
-                                b = t === p.D.Completed && !m && !h,
-                                y = this._shouldRenderScore(),
-                                f = this._getTeamScoreSize(u.SCORE),
-                                v = d ? this._getTeamScoreSize(u.SECONDARY_SCORE) : void 0,
-                                S = "Cricket" === e ? c?.split(" ")[0] : c;
-                            return y ? a.createElement(i.Z, { style: [C.teamScore, b && C.losingTeamScore] }, a.createElement(l.ZP, { color: g(o), numberOfLines: 1, size: f, weight: "heavy" }, S), d ? a.createElement(l.ZP, { color: g(o), numberOfLines: 1, size: v, weight: "bold" }, d) : null) : null;
-                        }),
-                        (this._getTeamScoreSize = (e) => {
-                            const {
-                                isCompact: t,
-                                team: { secondaryScore: r },
-                            } = this.props;
-                            if (!!!r) return t ? "headline1" : "title4";
-                            switch (e) {
-                                case u.SCORE:
-                                    return t ? "subtext2" : "body";
-                                case u.SECONDARY_SCORE:
-                                    return t ? "subtext3" : "subtext2";
-                                default:
-                                    return;
-                            }
-                        }),
-                        (this._shouldRenderScore = () => {
-                            const { gameState: e } = this.props;
-                            return e === p.D.Completed || e === p.D.InProgress;
-                        });
-                }
-                render() {
-                    const {
-                            fallbackColor: e,
-                            isCompact: t,
-                            team: { color: r },
-                        } = this.props,
-                        n = { backgroundColor: (r && `rgb(${r.red}, ${r.green}, ${r.blue})`) || m.default.theme.colors[e] },
-                        o = this._shouldRenderScore(),
-                        s = !t || !o;
-                    return a.createElement(i.Z, { style: [C.root, n, t && C.compactRoot] }, this._renderImage(), s ? this._renderTeamName() : null, this._renderScore());
-                }
-            }
-            function g(e) {
-                return e
-                    ? (function (e) {
-                          return (0, d.vm)(e) > 0.5 ? "alwaysBaseGray1100" : "white";
-                      })(e)
-                    : "white";
-            }
-            h.defaultProps = { isCompact: !1 };
-            const C = m.default.create((e) => ({ root: { flexDirection: "row", height: e.spaces.space48, paddingHorizontal: e.spaces.space12 }, imageContainer: { alignSelf: "center", width: e.spaces.space32, marginEnd: e.spaces.space12 }, compactImageContainer: { width: e.spaces.space20 }, compactRoot: { height: `calc(${e.spaces.space48} - (${m.default.theme.spaces.space1} + ${m.default.theme.spaces.space2}))` }, losingTeamScore: { opacity: 0.5 }, teamNameContainer: { alignSelf: "center", flexShrink: 1 }, teamScore: { flexGrow: 2, alignItems: "flex-end", alignSelf: "center" }, translucent: { borderRadius: e.borderRadii.infinite, backgroundColor: e.colors.white, opacity: 0.4 } })),
-                b = h;
-            class y extends a.Component {
-                constructor(...e) {
-                    super(...e),
-                        (this._renderGameStatus = () => {
-                            const { category: e, gameClock: t, gameClockPeriod: r, gameState: n, isCompact: i, startTimeMillis: s, teams: l, winnerId: c } = this.props;
-                            return a.createElement(o.Z, { category: e, gameClock: t, gameClockPeriod: r, gameState: n, startTimeMillis: s, teams: l, winnerId: c, withCategory: !i });
-                        }),
-                        (this._renderTeamRow = (e, t) => {
-                            const { category: r, gameState: n, isCompact: o, winnerId: i } = this.props,
-                                { id: s } = e;
-                            return a.createElement(b, { category: r, fallbackColor: t % 2 == 0 ? "gray300" : "gray700", gameState: n, isCompact: o, key: s, team: e, winnerId: i });
-                        });
-                }
-                render() {
-                    const { "aria-label": e, containerStyle: t, isCompact: r, link: o, onClick: i, teams: s } = this.props;
-                    if (s) {
-                        const l = s && s.map(this._renderTeamRow);
-                        return a.createElement(n.Z, { "aria-label": e, containerStyle: t, isCompact: r, link: o, lower: r ? void 0 : this._renderGameStatus(), onClick: i, upper: l, withInteractiveStyling: !0 });
-                    }
-                    return null;
-                }
-            }
-            y.defaultProps = { isCompact: !1 };
-        },
-        854582: (e, t, r) => {
-            r.d(t, { Z: () => v });
-            var a = r(202784),
-                n = r(111677),
-                o = r.n(n),
-                i = r(731708),
-                s = r(470397),
-                l = r(615084);
-            const c = 864e5,
-                d = o().ccaa970f,
-                m = o().d725a289,
-                p = o().db355331,
-                u = o().a8428d5e,
-                h = o().a7aad8ba,
-                g = o().e431f1aa,
-                C = o().a7391708,
-                b = o().d2dbfa92,
-                y = o().cd734f66,
-                f = o().c8891d06;
-            class v extends a.Component {
-                constructor(...e) {
-                    super(...e),
-                        (this._renderCategory = () => {
-                            const { category: e } = this.props;
-                            return e ? a.createElement(i.ZP, { align: "left", numberOfLines: 1, size: "subtext2", weight: "bold" }, e) : null;
-                        }),
-                        (this._renderGameScheduledDateTime = () => {
-                            const { startTimeMillis: e } = this.props;
-                            if (e) {
-                                const t = new Date(parseInt(e, 10)),
-                                    r = ((e) => {
-                                        const t = new Date().setHours(0, 0, 0, 0),
-                                            r = t + c;
-                                        return e >= t && e < r ? 0 : e >= r && e < t + 1728e5 ? 1 : -1;
-                                    })(t);
-                                return -1 === r ? this._renderDateTime(t) : this._renderTodayTomorrow(r, t);
-                            }
-                            return null;
-                        }),
-                        (this._renderTodayTomorrow = (e, t) => {
-                            const r = m(t);
-                            return a.createElement(s.Z, null, a.createElement(i.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, 0 === e ? y : f), a.createElement(i.ZP, { color: "gray700", size: "subtext2" }, r));
-                        }),
-                        (this._renderDateTime = (e) => {
-                            const t = m(e),
-                                r = d(e);
-                            return a.createElement(s.Z, null, a.createElement(i.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, r), a.createElement(i.ZP, { color: "gray700", size: "subtext2" }, t));
-                        }),
-                        (this._renderGameStateValue = (e, t) => {
-                            const { gameClockPeriod: r } = this.props,
-                                n = this._getWinnerName(),
-                                o = e && n ? p({ team: n }) : t && r ? r : void 0;
-                            return o ? a.createElement(i.ZP, { color: "gray700", numberOfLines: 1, size: "subtext2" }, o) : null;
-                        }),
-                        (this._getWinnerName = () => {
-                            const { teams: e, winnerId: t } = this.props,
-                                r = e && e.find((e) => e.id === t);
-                            return r && r.shortName;
-                        });
-                }
-                render() {
-                    const { gameState: e, withCategory: t } = this.props,
-                        r = e === l.D.Scheduled,
-                        n = e === l.D.InProgress,
-                        o = e === l.D.Completed;
-                    return a.createElement(
-                        a.Fragment,
-                        null,
-                        r
-                            ? this._renderGameScheduledDateTime()
-                            : a.createElement(
-                                  s.Z,
-                                  null,
-                                  a.createElement(
-                                      i.ZP,
-                                      { color: n ? "magenta500" : "gray700", numberOfLines: 1, size: "subtext2", weight: "bold" },
-                                      ((e) => {
-                                          switch (e) {
-                                              case l.D.Scheduled:
-                                                  return u;
-                                              case l.D.InProgress:
-                                                  return h;
-                                              case l.D.Completed:
-                                                  return g;
-                                              case l.D.Postponed:
-                                                  return C;
-                                              case l.D.Cancelled:
-                                                  return b;
-                                              default:
-                                                  return null;
-                                          }
-                                      })(e),
-                                  ),
-                                  this._renderGameStateValue(o, n),
-                              ),
-                        t ? this._renderCategory() : null,
-                    );
-                }
-            }
-            v.defaultProps = { withCategory: !0 };
-        },
-        615084: (e, t, r) => {
-            r.d(t, { D: () => a });
-            const a = Object.freeze({ Scheduled: "Scheduled", InProgress: "InProgress", Completed: "Completed", Postponed: "Postponed", Cancelled: "Cancelled", Unused6: "_Unused6", Unused7: "_Unused7" });
-        },
-        784732: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var a = r(202784),
-                n = r(890601),
-                o = r(783427),
-                i = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M1.998 5.5c0-1.38 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.12 2.5 2.5v13c0 1.38-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.12-2.5-2.5v-13zm2.5-.5c-.276 0-.5.22-.5.5v13c0 .28.224.5.5.5h15c.276 0 .5-.22.5-.5v-13c0-.28-.224-.5-.5-.5h-15zM6 7h6v6H6V7zm2 2v2h2V9H8zm10 0h-4V7h4v2zm0 4h-4v-2h4v2zm-.002 4h-12v-2h12v2z" })) }, { writingDirection: t });
+        246492: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => s });
+            var n = r(202784),
+                o = r(890601),
+                i = r(783427),
+                a = r(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm5.586-2l4.207 4.21 1.414-1.42L19.414 10H24V8h-4.586l1.793-1.79-1.414-1.42L15.586 9z" })) }, { writingDirection: t });
             };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
         },
-        98440: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var a = r(202784),
-                n = r(890601),
-                o = r(783427),
-                i = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+        264171: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => s });
+            var n = r(202784),
+                o = r(890601),
+                i = r(783427),
+                a = r(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: t });
             };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
+        262009: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => s });
+            var n = r(202784),
+                o = r(890601),
+                i = r(783427),
+                a = r(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14 2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1C11.26 7.53 12 5.35 12 2h2zM5 1c0 1.66-1.34 3-3 3v1c1.66 0 3 1.34 3 3h1c0-1.66 1.34-3 3-3V4C7.34 4 6 2.66 6 1H5z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
+        452693: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => s });
+            var n = r(202784),
+                o = r(890601),
+                i = r(783427),
+                a = r(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.EventSummaryHandler.0b19d4da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.EventSummaryHandler.ffd91ffa.js.map

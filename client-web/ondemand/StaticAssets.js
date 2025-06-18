@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.StaticAssets"],
+    ["ondemand.StaticAssets", "icons/IconChevronRight-js"],
     {
         990676: (t, e, i) => {
             var s = {
@@ -494,24 +494,24 @@
                 return s.createElement(L, { style: R.Container }, s.createElement(k.ZP, { numberOfLines: 1, size: "title3", weight: "bold" }, t.label));
             }
             const R = y.default.create((t) => ({ Container: { backgroundColor: t.colors.activeFaintGray } }));
-            function j() {
+            function Z() {
                 const t = u();
-                return s.createElement(n.Z, { ItemSeparatorComponent: I, data: t, getItemLayout: X, keyExtractor: D, renderItem: W });
+                return s.createElement(n.Z, { ItemSeparatorComponent: j, data: t, getItemLayout: W, keyExtractor: D, renderItem: I });
             }
-            function I(t) {
+            function j(t) {
                 return null;
             }
-            function W(t) {
+            function I(t) {
                 return "header" === t.item.type ? s.createElement(S, t.item) : s.createElement(M, t.item);
             }
             function D(t, e) {
                 return "header" === t.type ? t.label : t.path;
             }
-            function X(t, e) {
+            function W(t, e) {
                 const i = L.height();
                 return { index: e, length: i, offset: i * e };
             }
-            function Z() {
+            function X() {
                 const t = u().length;
                 return s.createElement(k.ZP, null, "Static Assets (", t, ")");
             }
@@ -576,7 +576,7 @@
                             [t],
                         );
                     })(),
-                    s.createElement(a.Z, { backLocation: "/", history: t.history, primaryContent: s.createElement(j, null), secondaryBar: s.createElement(U, null), sidebarContent: s.createElement(r.Z, null), title: s.createElement(Z, null) })
+                    s.createElement(a.Z, { backLocation: "/", history: t.history, primaryContent: s.createElement(Z, null), secondaryBar: s.createElement(U, null), sidebarContent: s.createElement(r.Z, null), title: s.createElement(X, null) })
                 );
             }
         },
@@ -600,6 +600,22 @@
                         l = n.Z.generate({ backgroundColor: "transparent", color: p.default.theme.colors.text });
                     return s.createElement(o.Z, { interactiveStyles: l, link: e, onPress: i, style: [c.root, c.border, c.content] }, s.createElement(a.ZP, { numberOfLines: 1, selectable: !1, style: c.text, weight: "medium" }, r), g);
                 };
+        },
+        58399: (t, e, i) => {
+            "use strict";
+            i.r(e), i.d(e, { default: () => _ });
+            var s = i(202784),
+                r = i(890601),
+                a = i(783427),
+                n = i(717683),
+                o = i(347101);
+            const p = (t = {}) => {
+                const e = s.useContext(n.Z),
+                    { direction: i } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...t, role: t["aria-label"] ? t.role || "img" : void 0, "aria-hidden": void 0 === t["aria-label"], style: [o.Z.root, t.style, e && o.Z.iconRTL], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: i });
+            };
+            p.metadata = { width: 24, height: 24 };
+            const _ = p;
         },
         43329: (t, e, i) => {
             "use strict";
@@ -1967,4 +1983,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.StaticAssets.9085999a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.StaticAssets.d4d1bb2a.js.map

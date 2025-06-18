@@ -74,9 +74,9 @@
                 L = f().b2347f7c,
                 N = f().e1fda16e,
                 F = f().b8f3ed46,
-                R = f().gb8d09ba,
-                z = f().g6dc09a0,
-                B = f().a6e6e898,
+                z = f().gb8d09ba,
+                B = f().g6dc09a0,
+                R = f().a6e6e898,
                 H = f().cde3b9ae,
                 O = f().g0d7813a,
                 U = f().c9b35b9e,
@@ -113,7 +113,7 @@
                                 a.organization_url ? o.createElement(u.Z, { color: "primary", label: a.organization_url, link: a.organization_url }) : null,
                                 o.createElement(n.Z, { style: K.itemContainer }, o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, a.description)),
                                 d,
-                                o.createElement(m.Z, { text: z }),
+                                o.createElement(m.Z, { text: B }),
                                 e.map((e) => o.createElement(n.Z, { key: e.token }, this._renderPermissions(e), e.ios ? null : o.createElement(A.Z, { onRevoke: this._handleRevokeApp, reportApplicationHref: `${V}?${(0, r.stringify)(t)}`, revoked: !!e.revoked, token: e.token, tokenType: e.token_type || "oauth1" }))),
                                 a.ios ? o.createElement(h.Z, { link: $, style: [K.itemContainer, K.center] }, o.createElement(s.ZP, { color: "link" }, G)) : null,
                             );
@@ -139,10 +139,10 @@
                 }
                 _renderReadWritePermissions(e) {
                     let a = null;
-                    return e.can_read_dms ? (a = O) : e.can_write ? (a = H) : e.can_read && (a = B), a ? o.createElement(p.Z, { label: a }) : null;
+                    return e.can_read_dms ? (a = O) : e.can_write ? (a = H) : e.can_read && (a = R), a ? o.createElement(p.Z, { label: a }) : null;
                 }
                 _renderEmailPermission(e) {
-                    return e.email_access ? o.createElement(p.Z, { label: R }) : null;
+                    return e.email_access ? o.createElement(p.Z, { label: z }) : null;
                 }
                 _renderAdsPermission(e) {
                     let a = null;
@@ -249,9 +249,9 @@
                 }
             }
             const F = I(N),
-                R = { ...(0, k.G)({}), [_.ZP.User]: (0, g.Z)({ decoration: ({ userId: e }) => r.createElement(F, { userId: e }) }) },
-                z = c().a5f32aa2,
-                B = c().ef731b14,
+                z = { ...(0, k.G)({}), [_.ZP.User]: (0, g.Z)({ decoration: ({ userId: e }) => r.createElement(F, { userId: e }) }) },
+                B = c().a5f32aa2,
+                R = c().ef731b14,
                 H = c().i859a9d4,
                 O = r.createElement(c().I18NFormatMessage, { $i18n: "ab3bf5a7" }, r.createElement(n.ZP, { link: (0, d.ju)("https://support.x.com/articles/117063") }, c().e554ba83));
             class U extends r.Component {
@@ -276,7 +276,7 @@
                     e(this._getLegacyModule());
                 }
                 render() {
-                    return r.createElement(m.Z, null, r.createElement("div", null, r.createElement(b.Z, null, O), r.createElement(s.Z, null)), r.createElement(h.Z, { entryConfiguration: R, loadingAccessibilityLabel: B, module: this._getLegacyModule(), renderEmptyState: this._getEmptyStateRenderer(), title: z }));
+                    return r.createElement(m.Z, null, r.createElement("div", null, r.createElement(b.Z, null, O), r.createElement(s.Z, null)), r.createElement(h.Z, { entryConfiguration: z, loadingAccessibilityLabel: R, module: this._getLegacyModule(), renderEmptyState: this._getEmptyStateRenderer(), title: B }));
                 }
             }
             const j = ({ blockType: e, emptyStateMessage: a, emptyStateTitle: t, scribeNamespace: n, supportUrl: d }) => M((l) => r.createElement(p.nO, { namespace: n }, r.createElement(U, (0, o.Z)({}, l, { blockType: e, emptyStateMessage: a, emptyStateTitle: t, supportUrl: d }))));
@@ -314,22 +314,25 @@
                 g = (0, u.p)(
                     () =>
                         Promise.all([
-                            t.e("icons.8"),
-                            t.e("icons.15"),
-                            t.e("icons.7"),
-                            t.e("icons.3"),
-                            t.e("icons.24"),
-                            t.e("icons.12"),
-                            t.e("icons.22"),
-                            t.e("icons.2"),
-                            t.e("icons.18"),
-                            t.e("icons.9"),
-                            t.e("icons.6"),
+                            t.e("icons.21"),
+                            t.e("icons.16"),
+                            t.e("icons.10"),
                             t.e("icons.1"),
+                            t.e("icons.19"),
+                            t.e("icons.0"),
+                            t.e("icons.23"),
+                            t.e("icons.8"),
+                            t.e("icons.2"),
+                            t.e("icons.3"),
+                            t.e("icons.15"),
+                            t.e("icons.4"),
                             t.e("modules.common-e907d115"),
                             t.e("modules.common-e019dbda"),
-                            t.e("icons.14"),
-                            t.e("icons.5"),
+                            t.e("icons.9"),
+                            t.e("icons.7"),
+                            t.e("icons.28"),
+                            t.e("icons.26"),
+                            t.e("icons.24"),
                             t.e("modules.audio-6107ac1a"),
                             t.e("modules.audio-b953418a"),
                             t.e("modules.audio-7c51e6a7"),
@@ -340,12 +343,10 @@
                             t.e("modules.audio-e019dbda"),
                             t.e("modules.audio-262c94d4"),
                             t.e("modules.audio-c6fe4ea4"),
-                            t.e("icons.21"),
-                            t.e("icons.16"),
-                            t.e("icons.17"),
-                            t.e("icons.19"),
-                            t.e("icons.0"),
-                            t.e("icons.4"),
+                            t.e("icons.18"),
+                            t.e("icons.13"),
+                            t.e("icons.29"),
+                            t.e("icons.27"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -378,9 +379,9 @@
                             t.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3ec0edf6"),
                             t.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3fd5f349"),
                             t.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
-                            t.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                             t.e("shared~loader.DashMenu~loader.DashModal~ondemand.CommandCenter~bundle.Account~ondemand.SettingsInternals~onde"),
-                            t.e("ondemand.SettingsInternals-6107ac1a"),
+                            t.e("ondemand.SettingsInternals-bc6ccf4c"),
+                            t.e("ondemand.SettingsInternals-e96e9bea"),
                             t.e("ondemand.SettingsInternals-5b7ef534"),
                             t.e("ondemand.SettingsInternals-9f4db315"),
                             t.e("ondemand.SettingsInternals-e6266db0"),
@@ -395,22 +396,25 @@
                 k = (0, u.p)(
                     () =>
                         Promise.all([
-                            t.e("icons.8"),
-                            t.e("icons.15"),
-                            t.e("icons.7"),
-                            t.e("icons.3"),
-                            t.e("icons.24"),
-                            t.e("icons.12"),
-                            t.e("icons.22"),
-                            t.e("icons.2"),
-                            t.e("icons.18"),
-                            t.e("icons.9"),
-                            t.e("icons.6"),
+                            t.e("icons.21"),
+                            t.e("icons.16"),
+                            t.e("icons.10"),
                             t.e("icons.1"),
+                            t.e("icons.19"),
+                            t.e("icons.0"),
+                            t.e("icons.23"),
+                            t.e("icons.8"),
+                            t.e("icons.2"),
+                            t.e("icons.3"),
+                            t.e("icons.15"),
+                            t.e("icons.4"),
                             t.e("modules.common-e907d115"),
                             t.e("modules.common-e019dbda"),
-                            t.e("icons.14"),
-                            t.e("icons.5"),
+                            t.e("icons.9"),
+                            t.e("icons.7"),
+                            t.e("icons.28"),
+                            t.e("icons.26"),
+                            t.e("icons.24"),
                             t.e("modules.audio-6107ac1a"),
                             t.e("modules.audio-b953418a"),
                             t.e("modules.audio-7c51e6a7"),
@@ -421,12 +425,10 @@
                             t.e("modules.audio-e019dbda"),
                             t.e("modules.audio-262c94d4"),
                             t.e("modules.audio-c6fe4ea4"),
-                            t.e("icons.21"),
-                            t.e("icons.16"),
-                            t.e("icons.17"),
-                            t.e("icons.19"),
-                            t.e("icons.0"),
-                            t.e("icons.4"),
+                            t.e("icons.18"),
+                            t.e("icons.13"),
+                            t.e("icons.29"),
+                            t.e("icons.27"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -459,9 +461,9 @@
                             t.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3ec0edf6"),
                             t.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3fd5f349"),
                             t.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
-                            t.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                             t.e("shared~loader.DashMenu~loader.DashModal~ondemand.CommandCenter~bundle.Account~ondemand.SettingsInternals~onde"),
-                            t.e("ondemand.SettingsInternals-6107ac1a"),
+                            t.e("ondemand.SettingsInternals-bc6ccf4c"),
+                            t.e("ondemand.SettingsInternals-e96e9bea"),
                             t.e("ondemand.SettingsInternals-5b7ef534"),
                             t.e("ondemand.SettingsInternals-9f4db315"),
                             t.e("ondemand.SettingsInternals-e6266db0"),
@@ -640,7 +642,7 @@
             const x = f(T);
         },
         221930: (e, a, t) => {
-            t.r(a), t.d(a, { SettingsContactsDashboardScreen: () => z, default: () => H });
+            t.r(a), t.d(a, { SettingsContactsDashboardScreen: () => B, default: () => H });
             var o = t(202784),
                 r = t(325686),
                 n = t(731708),
@@ -677,23 +679,23 @@
                 L = u().b864be7a,
                 N = { headline: u().g5fa1090, text: u().h3e420fc, confirmButtonLabel: u().e68b09b4 },
                 F = u().ca24589e,
-                R = (e) => e.id_str;
-            class z extends o.Component {
+                z = (e) => e.id_str;
+            class B extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { verificationRequired: !1 }),
                         (this._renderTimeline = () => {
                             const { contacts: e, fetchStatus: a } = this.props;
-                            return o.createElement(f.Z, { assumedItemHeight: 70, cacheKey: "CONTACTS_DASHBOARD", footer: this._renderFooter(a), identityFunction: R, items: e, onNearEnd: this._handleFetchMoreContacts, renderer: this._renderContact });
+                            return o.createElement(f.Z, { assumedItemHeight: 70, cacheKey: "CONTACTS_DASHBOARD", footer: this._renderFooter(a), identityFunction: z, items: e, onNearEnd: this._handleFetchMoreContacts, renderer: this._renderContact });
                         }),
                         (this._renderContact = (e) => {
                             const { id_str: a, import_source: t, vcard: d } = e,
                                 s = this._getContactProp(d.get("fn")) || F,
                                 i = this._getContactProperties(d.get("tel")),
                                 c = [...this._getContactProperties(d.get("email")), ...i];
-                            return o.createElement(r.Z, { key: a, style: [[S.Z.infoText, S.Z.bottomBorder], B.contactContainer] }, o.createElement(l.Z, { Icon: m.default, color: "neutral", style: B.personIcon }), o.createElement(r.Z, null, o.createElement(n.ZP, null, s), c ? c.map((e) => o.createElement(n.ZP, { color: "gray700", key: e, size: "subtext2" }, e)) : null, t ? o.createElement(n.ZP, { color: "gray700", size: "subtext2" }, `Imported from ${t}`) : null));
+                            return o.createElement(r.Z, { key: a, style: [[S.Z.infoText, S.Z.bottomBorder], R.contactContainer] }, o.createElement(l.Z, { Icon: m.default, color: "neutral", style: R.personIcon }), o.createElement(r.Z, null, o.createElement(n.ZP, null, s), c ? c.map((e) => o.createElement(n.ZP, { color: "gray700", key: e, size: "subtext2" }, e)) : null, t ? o.createElement(n.ZP, { color: "gray700", size: "subtext2" }, `Imported from ${t}`) : null));
                         }),
-                        (this._renderFooter = (e) => (e === _.ZP.LOADING ? o.createElement(r.Z, { style: B.loadingContainer }, o.createElement(b.Z, { fetchStatus: e, render: h.Z })) : null)),
+                        (this._renderFooter = (e) => (e === _.ZP.LOADING ? o.createElement(r.Z, { style: R.loadingContainer }, o.createElement(b.Z, { fetchStatus: e, render: h.Z })) : null)),
                         (this._handleRemoveContacts = () => {
                             const { createLocalApiErrorHandler: e, deleteContacts: a } = this.props;
                             a().catch(e({ showToast: !0 }));
@@ -710,9 +712,9 @@
                     return o.createElement(k.nO, { namespace: C }, o.createElement(g.Z, null, o.createElement(y.Z, { location: r, title: T }, o.createElement(D.Z, { confirmationSheetConfirmButtonLabel: N.confirmButtonLabel, confirmationSheetConfirmButtonType: "destructiveFilled", confirmationSheetHeadline: N.headline, confirmationSheetText: N.text, label: L, onConfirmationSheetConfirm: this._handleRemoveContacts }), o.createElement(E.Z, null, x), o.createElement(s.Z, null), o.createElement(A.Z, { fetch: a, fetchStatus: e.length > 0 ? _.ZP.LOADED : t, render: () => this._renderTimeline() }))));
                 }
             }
-            z.contextType = M.rC;
-            const B = i.default.create((e) => ({ contactContainer: { flexDirection: "row", flexWrap: "wrap" }, personIcon: { marginEnd: e.spaces.space12 }, loadingContainer: { paddingVertical: e.spaces.space16, justifyContent: "center" } })),
-                H = I(z);
+            B.contextType = M.rC;
+            const R = i.default.create((e) => ({ contactContainer: { flexDirection: "row", flexWrap: "wrap" }, personIcon: { marginEnd: e.spaces.space12 }, loadingContainer: { paddingVertical: e.spaces.space16, justifyContent: "center" } })),
+                H = I(B);
         },
         412483: (e, a, t) => {
             t.r(a), t.d(a, { ContentPreferencesPage: () => v, default: () => I });
@@ -841,4 +843,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-0564e869.f423136a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-0564e869.7ee4f74a.js.map

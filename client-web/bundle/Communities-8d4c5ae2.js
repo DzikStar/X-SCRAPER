@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Communities-8d4c5ae2", "shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"],
+    ["bundle.Communities-8d4c5ae2", "shared~bundle.AccountAnalytics~ondemand.SettingsRevamp~bundle.Payments~bundle.PremiumHub~bundle.ProfessionalH"],
     {
         606161: (e, n, r) => {
             var t = (0, r(902091).default)(r(463928)),
@@ -8,8 +8,8 @@
                 o = r(703383),
                 i = o.__internal.fetchQueryDeduped,
                 a = o.Observable,
-                c = o.PreloadableQueryRegistry,
-                l = o.ReplaySubject,
+                l = o.PreloadableQueryRegistry,
+                c = o.ReplaySubject,
                 s = o.createOperationDescriptor,
                 f = o.getRequest,
                 d = o.getRequestIdentifier,
@@ -19,18 +19,18 @@
                     var m;
                     v++;
                     var p,
-                        h,
                         b,
+                        h,
                         k,
-                        _,
                         P,
+                        _,
                         w = null !== (m = null == o ? void 0 : o.fetchPolicy) && void 0 !== m ? m : "store-or-network",
                         C = (0, t.default)((0, t.default)({}, null == o ? void 0 : o.networkCacheConfig), {}, { force: !0 }),
-                        g = !1,
-                        Q = function (n, r) {
-                            return (g = !0), e.executeWithSource({ operation: n, source: r });
+                        Q = !1,
+                        g = function (n, r) {
+                            return (Q = !0), e.executeWithSource({ operation: n, source: r });
                         },
-                        R = new l(),
+                        R = new c(),
                         N = a.create(function (e) {
                             return R.subscribe(e);
                         }),
@@ -38,7 +38,7 @@
                         x = !1,
                         E = function (n) {
                             x = !0;
-                            var t = new l(),
+                            var t = new c(),
                                 u = "raw-network-request-" + d(n, r),
                                 o = i(e, u, function () {
                                     return e.getNetwork().execute(n, r, C);
@@ -54,16 +54,16 @@
                                     },
                                 }).unsubscribe;
                             return (
-                                (h = o),
+                                (b = o),
                                 a.create(function (e) {
                                     var n = t.subscribe(e);
                                     return function () {
-                                        n.unsubscribe(), h();
+                                        n.unsubscribe(), b();
                                     };
                                 })
                             );
                         },
-                        S = function (n, r) {
+                        D = function (n, r) {
                             x = !0;
                             var t = i(e, n.request.identifier, r).subscribe({
                                 error: function (e) {
@@ -76,37 +76,37 @@
                                     R.complete();
                                 },
                             });
-                            b = t.unsubscribe;
+                            h = t.unsubscribe;
                         },
-                        D = function (n) {
+                        S = function (n) {
                             var t = s(n, r, C);
                             ((p = e.retain(t)), "store-only" !== w) &&
                                 ("store-or-network" !== w || "available" !== e.check(t).status) &&
-                                S(t, function () {
+                                D(t, function () {
                                     var e = E(n.params);
-                                    return Q(t, e);
+                                    return g(t, e);
                                 });
                         };
                     if ("PreloadableConcreteRequest" === n.kind) {
-                        null === (P = (k = n.params).id) && u(!1);
-                        var I = c.get(P);
-                        if (null != I) D(I);
+                        null === (_ = (k = n.params).id) && u(!1);
+                        var T = l.get(_);
+                        if (null != T) S(T);
                         else {
-                            var T = "store-only" === w ? null : E(k),
-                                A = c.onLoad(P, function (n) {
-                                    _();
+                            var I = "store-only" === w ? null : E(k),
+                                A = l.onLoad(_, function (n) {
+                                    P();
                                     var t = s(n, r, C);
                                     (p = e.retain(t)),
-                                        null != T &&
-                                            S(t, function () {
-                                                return Q(t, T);
+                                        null != I &&
+                                            D(t, function () {
+                                                return g(t, I);
                                             });
                                 });
-                            _ = A.dispose;
+                            P = A.dispose;
                         }
                     } else {
                         var O = f(n);
-                        (P = null != (k = O.params).cacheID ? k.cacheID : k.id), D(O);
+                        (_ = null != (k = O.params).cacheID ? k.cacheID : k.id), S(O);
                     }
                     var F = !1,
                         W = !1,
@@ -115,7 +115,7 @@
                             W || (p && p.dispose(), (W = !0));
                         },
                         K = function () {
-                            L || (g ? b && b() : h && h(), _ && _(), (L = !0));
+                            L || (Q ? h && h() : b && b(), P && P(), (L = !0));
                         };
                     return {
                         kind: "PreloadedQuery",
@@ -127,7 +127,7 @@
                         releaseQuery: B,
                         cancelNetworkRequest: K,
                         fetchKey: v,
-                        id: P,
+                        id: _,
                         get isDisposed() {
                             return F || W;
                         },
@@ -149,8 +149,8 @@
                 o = r(437429),
                 i = r(647677),
                 a = (r(202784).useDebugValue, r(703383).__internal),
-                c = a.fetchQueryDeduped,
-                l = a.fetchQuery;
+                l = a.fetchQueryDeduped,
+                c = a.fetchQuery;
             r(826590);
             e.exports = function (e, n, r) {
                 var a,
@@ -166,7 +166,7 @@
                         (a = {
                             componentDisplayName: "usePreloadedQuery()",
                             fetchKey: f,
-                            fetchObservable: c(s, p.request.identifier, function () {
+                            fetchObservable: l(s, p.request.identifier, function () {
                                 return s === n.environment && null != v ? s.executeWithSource({ operation: p, source: v }) : s.execute({ operation: p });
                             }),
                             fetchPolicy: d,
@@ -174,8 +174,8 @@
                             renderPolicy: null == r ? void 0 : r.UNSTABLE_renderPolicy,
                         });
                 else {
-                    var h = l(s, p);
-                    a = { componentDisplayName: "usePreloadedQuery()", fetchObservable: null != v && s === n.environment ? v.ifEmpty(h) : (n.environment, h), fetchKey: f, fetchPolicy: d, query: p, renderPolicy: null == r ? void 0 : r.UNSTABLE_renderPolicy };
+                    var b = c(s, p);
+                    a = { componentDisplayName: "usePreloadedQuery()", fetchObservable: null != v && s === n.environment ? v.ifEmpty(b) : (n.environment, b), fetchKey: f, fetchPolicy: d, query: p, renderPolicy: null == r ? void 0 : r.UNSTABLE_renderPolicy };
                 }
                 return t(a);
             };
@@ -186,16 +186,16 @@
                 o = r(995402),
                 i = r(667368),
                 a = r(437429),
-                c = r(202784),
-                l = c.useCallback,
-                s = c.useEffect,
-                f = c.useRef,
-                d = c.useState,
+                l = r(202784),
+                c = l.useCallback,
+                s = l.useEffect,
+                f = l.useRef,
+                d = l.useState,
                 v = r(703383),
                 y = v.RelayFeatureFlags,
                 m = v.getRequest,
                 p = { kind: "NullQueryReference" };
-            function h(e) {
+            function b(e) {
                 return "PreloadableConcreteRequest" === e.kind ? void 0 !== e.params.metadata.live : void 0 !== m(e).params.metadata.live;
             }
             e.exports = function (e, n) {
@@ -204,55 +204,55 @@
                     : (function (e, n) {
                           var r = null != n ? n : p,
                               i = a(),
-                              c = o(),
+                              l = o(),
                               v = f(new Set([r])),
                               y = d(function () {
                                   return r;
                               }),
                               m = y[0],
-                              b = y[1],
+                              h = y[1],
                               k = d(function () {
                                   return r;
                               }),
-                              _ = k[0],
-                              P = k[1];
-                          r !== _ && (v.current.add(r), P(r), b(r));
-                          var w = l(
+                              P = k[0],
+                              _ = k[1];
+                          r !== P && (v.current.add(r), _(r), h(r));
+                          var w = c(
                                   function () {
-                                      c.current && (v.current.add(p), b(p));
+                                      l.current && (v.current.add(p), h(p));
                                   },
-                                  [c],
+                                  [l],
                               ),
-                              C = l(
+                              C = c(
                                   function (n, r) {
                                       var t = null != r && r.hasOwnProperty("__environment") ? { fetchPolicy: r.fetchPolicy, networkCacheConfig: r.networkCacheConfig, __nameForWarning: r.__nameForWarning } : r;
-                                      if (c.current) {
+                                      if (l.current) {
                                           var o,
                                               a = u(null !== (o = null == r ? void 0 : r.__environment) && void 0 !== o ? o : i, e, n, t);
-                                          v.current.add(a), b(a);
+                                          v.current.add(a), h(a);
                                       }
                                   },
-                                  [i, e, b, c],
+                                  [i, e, h, l],
                               ),
-                              g = f(!1);
+                              Q = f(!1);
                           return (
                               s(function () {
                                   return function () {
-                                      g.current = !0;
+                                      Q.current = !0;
                                   };
                               }, []),
                               s(
                                   function () {
-                                      if (!0 === g.current) return (g.current = !1), void ("NullQueryReference" !== m.kind && C(m.variables, { fetchPolicy: m.fetchPolicy, networkCacheConfig: m.networkCacheConfig }));
+                                      if (!0 === Q.current) return (Q.current = !1), void ("NullQueryReference" !== m.kind && C(m.variables, { fetchPolicy: m.fetchPolicy, networkCacheConfig: m.networkCacheConfig }));
                                       var n = v.current;
-                                      if (c.current) {
+                                      if (l.current) {
                                           var r,
                                               u = (0, t.default)(n);
                                           try {
                                               for (u.s(); !(r = u.n()).done; ) {
                                                   var o = r.value;
                                                   if (o === m) break;
-                                                  n.delete(o), "NullQueryReference" !== o.kind && (h(e) ? o.dispose && o.dispose() : o.releaseQuery && o.releaseQuery());
+                                                  n.delete(o), "NullQueryReference" !== o.kind && (b(e) ? o.dispose && o.dispose() : o.releaseQuery && o.releaseQuery());
                                               }
                                           } catch (e) {
                                               u.e(e);
@@ -261,7 +261,7 @@
                                           }
                                       }
                                   },
-                                  [m, c, C, e],
+                                  [m, l, C, e],
                               ),
                               s(
                                   function () {
@@ -271,7 +271,7 @@
                                           try {
                                               for (r.s(); !(n = r.n()).done; ) {
                                                   var u = n.value;
-                                                  "NullQueryReference" !== u.kind && (h(e) ? u.dispose && u.dispose() : u.releaseQuery && u.releaseQuery());
+                                                  "NullQueryReference" !== u.kind && (b(e) ? u.dispose && u.dispose() : u.releaseQuery && u.releaseQuery());
                                               }
                                           } catch (e) {
                                               r.e(e);
@@ -293,8 +293,8 @@
                 o = r(995402),
                 i = r(437429),
                 a = r(202784),
-                c = a.useCallback,
-                l = a.useEffect,
+                l = a.useCallback,
+                c = a.useEffect,
                 s = a.useInsertionEffect,
                 f = a.useRef,
                 d = a.useState,
@@ -309,37 +309,37 @@
                     v = o(),
                     p = f(null);
                 null == p.current && (p.current = new Set([r]));
-                var h,
-                    b = d(function () {
+                var b,
+                    h = d(function () {
                         return r;
                     }),
-                    k = b[0],
-                    _ = b[1],
-                    P = d(function () {
+                    k = h[0],
+                    P = h[1],
+                    _ = d(function () {
                         return r;
                     }),
-                    w = P[0],
-                    C = P[1];
-                r !== w && (null === (h = p.current) || void 0 === h || h.add(r), C(r), _(r));
-                var g = c(
+                    w = _[0],
+                    C = _[1];
+                r !== w && (null === (b = p.current) || void 0 === b || b.add(r), C(r), P(r));
+                var Q = l(
                         function () {
                             var e;
-                            v.current && (null === (e = p.current) || void 0 === e || e.add(y), _(y));
+                            v.current && (null === (e = p.current) || void 0 === e || e.add(y), P(y));
                         },
                         [v],
                     ),
-                    Q = c(
+                    g = l(
                         function (n, r) {
                             var t, o;
                             if (v.current) {
                                 var i = null != r && r.hasOwnProperty("__environment") ? { fetchPolicy: r.fetchPolicy, networkCacheConfig: r.networkCacheConfig, __nameForWarning: r.__nameForWarning } : r,
-                                    c = u(null !== (t = null == r ? void 0 : r.__environment) && void 0 !== t ? t : a, e, n, i);
-                                null === (o = p.current) || void 0 === o || o.add(c), _(c);
+                                    l = u(null !== (t = null == r ? void 0 : r.__environment) && void 0 !== t ? t : a, e, n, i);
+                                null === (o = p.current) || void 0 === o || o.add(l), P(l);
                             }
                         },
-                        [a, e, _, v],
+                        [a, e, P, v],
                     ),
-                    R = c(function (e, n) {
+                    R = l(function (e, n) {
                         var r,
                             u,
                             o = null !== (r = p.current) && void 0 !== r ? r : new Set(),
@@ -357,7 +357,7 @@
                     }, []),
                     N = f(null);
                 return (
-                    l(
+                    c(
                         function () {
                             return (
                                 R(e, k),
@@ -379,10 +379,10 @@
                         },
                         [e],
                     ),
-                    ["NullQueryReference" === k.kind ? null : k, Q, g]
+                    ["NullQueryReference" === k.kind ? null : k, g, Q]
                 );
             };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-8d4c5ae2.dc9fff8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-8d4c5ae2.58eba0da.js.map
