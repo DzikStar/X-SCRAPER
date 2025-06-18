@@ -3,7 +3,7 @@
     ["bundle.Grok-cebf58fc"],
     {
         640350: (e, t, o) => {
-            o.d(t, { V: () => k });
+            o.d(t, { V: () => w });
             var a = o(202784),
                 r = o(325686),
                 n = o(392237),
@@ -23,33 +23,33 @@
             const C = ({ allPrompts: e, data: t, sectionType: o }) => {
                     const [n, i] = a.useState(!1),
                         C = (0, m.Z)(),
-                        w = (0, u.I0)(),
-                        k = (0, h.eX)(),
+                        E = (0, u.I0)(),
+                        w = (0, h.eX)(),
                         { isCompactLayout: _ } = (0, s.ZP)(),
-                        { isReasoningEnabled: v, isResearchEnabled: Z } = (0, f.w)(),
-                        x = (0, d.hC)("responsive_web_grok_show_citations"),
+                        { isReasoningEnabled: v, isResearchEnabled: x } = (0, f.w)(),
+                        Z = (0, d.hC)("responsive_web_grok_show_citations"),
                         I = a.useRef(!1),
                         P = a.useCallback(() => {
                             I.current || (0, b.az)(C, "impression", { promptId: t.prompt_id ?? "", prompt: t.prompt, sectionType: o, allPrompts: e });
                         }, [C, t.prompt_id, t.prompt, o, e]),
                         R = a.useCallback(() => i(!0), []),
                         z = a.useCallback(() => i(!1), []),
-                        D = a.useCallback(() => {
+                        T = a.useCallback(() => {
                             if (((0, b.az)(C, "click", { promptId: t.prompt_id ?? "", prompt: t.prompt, sectionType: o, allPrompts: e }), "" !== t.prompt_id)) {
                                 const e = "PRESET";
-                                w((0, g.U)({ group_id: e, object_id: t.prompt_id, action_type: "CLICK" }));
+                                E((0, g.U)({ group_id: e, object_id: t.prompt_id, action_type: "CLICK" }));
                             }
-                            w((0, y.u)({ analytics: C, conversationKey: k })({ text: t.prompt, returnCitations: x, toolOverrides: t.tool_overrides, isDeepsearch: Z, isReasoning: v }));
-                        }, [C, w, k, e, o, t.prompt, t.prompt_id, x, t.tool_overrides, Z, v]);
-                    return a.createElement(r.Z, { onClick: D, onMouseEnter: R, onMouseLeave: z, style: [E.container, n ? E.hovered : void 0, _ ? E.full : E.compact] }, a.createElement(r.Z, { style: t.image_url ? E.textContentWithImage : E.textContentWithoutImage }, a.createElement(p.D, { id: `prompt_${t.prompt_id}`, onFullyVisible: P, position: "bottom", testID: `prompt_${t.prompt_id}` }), !!t.display_label && a.createElement(l.ZP, { numberOfLines: 3, size: "body", weight: "bold" }, t.display_label), !!t.display_body && a.createElement(l.ZP, { color: "gray700", numberOfLines: 1, size: "subtext1", weight: "normal" }, t.display_body)), !!t.image_url && a.createElement(c.Z, { source: t.image_url, style: E.image }));
+                            E((0, y.u)({ analytics: C, conversationKey: w })({ text: t.prompt, returnCitations: Z, toolOverrides: t.tool_overrides, isDeepsearch: x, isReasoning: v }));
+                        }, [C, E, w, e, o, t.prompt, t.prompt_id, Z, t.tool_overrides, x, v]);
+                    return a.createElement(r.Z, { onClick: T, onMouseEnter: R, onMouseLeave: z, style: [k.container, n ? k.hovered : void 0, _ ? k.full : k.compact] }, a.createElement(r.Z, { style: t.image_url ? k.textContentWithImage : k.textContentWithoutImage }, a.createElement(p.D, { id: `prompt_${t.prompt_id}`, onFullyVisible: P, position: "bottom", testID: `prompt_${t.prompt_id}` }), !!t.display_label && a.createElement(l.ZP, { numberOfLines: 3, size: "body", weight: "bold" }, t.display_label), !!t.display_body && a.createElement(l.ZP, { color: "gray700", numberOfLines: 1, size: "subtext1", weight: "normal" }, t.display_body)), !!t.image_url && a.createElement(c.Z, { source: t.image_url, style: k.image }));
                 },
-                E = n.default.create((e) => ({ container: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.large, cursor: "pointer", transition: "background-color 0.5s", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, textContentWithImage: { minHeight: 84, maxWidth: "70%", gap: e.spaces.space8, grow: 1, wrap: "wrap", justifyContent: "center", paddingEnd: e.spaces.space16 }, textContentWithoutImage: { minHeight: 84, width: "100%", gap: e.spaces.space8, justifyContent: "center" }, image: { grow: 0, objectFit: "cover", height: 84, width: 84, borderRadius: e.borderRadii.medium }, hovered: { backgroundColor: "light" === e.paletteName ? e.colors.gray200 : e.colors.gray50 }, full: { width: "100%" }, compact: { width: "calc(50% - 8px)" } }));
-            var w = o(619697);
-            const k = ({ data: e }) => {
+                k = n.default.create((e) => ({ container: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.large, cursor: "pointer", transition: "background-color 0.5s", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, textContentWithImage: { minHeight: 84, maxWidth: "70%", gap: e.spaces.space8, grow: 1, wrap: "wrap", justifyContent: "center", paddingEnd: e.spaces.space16 }, textContentWithoutImage: { minHeight: 84, width: "100%", gap: e.spaces.space8, justifyContent: "center" }, image: { grow: 0, objectFit: "cover", height: 84, width: 84, borderRadius: e.borderRadii.medium }, hovered: { backgroundColor: "light" === e.paletteName ? e.colors.gray200 : e.colors.gray50 }, full: { width: "100%" }, compact: { width: "calc(50% - 8px)" } }));
+            var E = o(619697);
+            const w = ({ data: e }) => {
                     const { isCompactLayout: t } = (0, s.ZP)(),
                         o = (0, i.vN)(e.prompts, 4);
                     return a.createElement(
-                        w.$,
+                        E.$,
                         { data: e },
                         a.createElement(
                             r.Z,
@@ -61,7 +61,7 @@
                 _ = n.default.create((e) => ({ row: { flexDirection: "row", justifyContent: "space-between", flexWrap: "wrap", gap: e.spaces.space16, width: "100%" }, mobileRow: { flexDirection: "column", alignItems: "stretch", gap: e.spaces.space16, width: "100%" } }));
         },
         892451: (e, t, o) => {
-            o.d(t, { u: () => x });
+            o.d(t, { u: () => Z });
             o(136728);
             var a = o(202784),
                 r = o(744610),
@@ -80,51 +80,51 @@
                 b = o(764226),
                 f = o(654917),
                 C = o(962379),
-                E = o(623494),
-                w = o(988290);
-            const k = ({ Icon: e, allPrompts: t, body: o, isDeepsearch: r, isImageEdit: i, isImageGen: s, isReasoning: k, label: v, prompt: Z, promptAction: x, promptId: I, sectionType: P, toolOverrides: R }) => {
-                    const [z, D] = a.useState(!1),
-                        T = (0, m.Z)(),
+                k = o(623494),
+                E = o(988290);
+            const w = ({ Icon: e, allPrompts: t, body: o, isDeepsearch: r, isImageEdit: i, isImageGen: s, isReasoning: w, label: v, prompt: x, promptAction: Z, promptId: I, sectionType: P, toolOverrides: R }) => {
+                    const [z, T] = a.useState(!1),
+                        D = (0, m.Z)(),
                         S = (0, u.I0)(),
-                        F = (0, f.eX)(),
-                        { isCompactLayout: M } = (0, w.ZP)(),
-                        { clearSelectedFile: B, selectedFiles: O } = (0, h.ZP)(),
+                        M = (0, f.eX)(),
+                        { isCompactLayout: F } = (0, E.ZP)(),
+                        { clearSelectedFile: O, selectedFiles: B } = (0, h.ZP)(),
                         { clearFilterKey: L, isCreateImageEnabled: H, isImageEditEnabled: K } = (0, l.w)(),
-                        j = (0, d.hC)("responsive_web_grok_show_citations"),
-                        G = (0, d.hC)("responsive_web_grok_new_home_layout"),
-                        N = a.useMemo(() => Object.keys(O), [O]),
-                        W = a.useMemo(() => N.map((e) => O[e]?.remote).filter(Boolean), [N, O]),
-                        V = a.useRef(null),
-                        { handleFileChange: A } = (0, b.J)({ analytics: T, isReturnCitations: j, prompt: Z, promptId: I }),
+                        G = (0, d.hC)("responsive_web_grok_show_citations"),
+                        N = (0, d.hC)("responsive_web_grok_new_home_layout"),
+                        j = a.useMemo(() => Object.keys(B), [B]),
+                        V = a.useMemo(() => j.map((e) => B[e]?.remote).filter(Boolean), [j, B]),
+                        W = a.useRef(null),
+                        { handleFileChange: A } = (0, b.J)({ analytics: D, isReturnCitations: G, prompt: x, promptId: I }),
                         { enabled: $ } = (0, C.Z)(),
                         U = a.useRef(!1),
                         X = a.useCallback(() => {
-                            U.current || (0, E.az)(T, "impression", { promptId: I ?? "", prompt: Z, sectionType: P, allPrompts: t ?? [] });
-                        }, [T, I, Z, P, t]),
-                        Y = a.useCallback(() => D(!0), []),
-                        J = a.useCallback(() => D(!1), []),
+                            U.current || (0, k.az)(D, "impression", { promptId: I ?? "", prompt: x, sectionType: P, allPrompts: t ?? [] });
+                        }, [D, I, x, P, t]),
+                        Y = a.useCallback(() => T(!0), []),
+                        J = a.useCallback(() => T(!1), []),
                         Q = a.useCallback(() => {
-                            if (((0, E.az)(T, "click", { promptId: I ?? "", prompt: Z, sectionType: P, allPrompts: t ?? [] }), "UPLOAD" === x && V.current)) return void V.current.click();
+                            if (((0, k.az)(D, "click", { promptId: I ?? "", prompt: x, sectionType: P, allPrompts: t ?? [] }), "UPLOAD" === Z && W.current)) return void W.current.click();
                             let e = {};
-                            i && (e = { attachments: W, imageGenerationCount: 4, promptMetadata: { promptSource: "IMAGE_EDIT", action: "INPUT", properties: { imageUrl: W[0].url } } });
+                            i && (e = { attachments: V, imageGenerationCount: 4, promptMetadata: { promptSource: "IMAGE_EDIT", action: "INPUT", properties: { imageUrl: V[0].url } } });
                             let o = {};
                             if (
                                 (s && (o = { imageGenerationCount: 4 }),
                                 S(
-                                    (0, y.u)({ analytics: T, conversationKey: F })({
-                                        text: Z,
-                                        returnCitations: j,
+                                    (0, y.u)({ analytics: D, conversationKey: M })({
+                                        text: x,
+                                        returnCitations: G,
                                         toolOverrides: R,
                                         isDeepsearch: r,
-                                        isReasoning: k,
+                                        isReasoning: w,
                                         isImageGen: s,
                                         ...e,
                                         ...o,
                                         onStart: () => {
-                                            N.forEach((e) => {
-                                                B(e);
+                                            j.forEach((e) => {
+                                                O(e);
                                             }),
-                                                G && (H || K) && L();
+                                                N && (H || K) && L();
                                         },
                                     }),
                                 ),
@@ -133,12 +133,12 @@
                                 const e = "PRESET";
                                 S((0, g.U)({ group_id: e, object_id: I, action_type: "CLICK" }));
                             }
-                        }, [Z, I, S, P, t, T, j, F, x, R, r, k, i, W, B, N, H, K, L, G, s]);
-                    return $ ? a.createElement(n.Z, { style: [_.outerContainer, z ? _.hovered : void 0] }, a.createElement(n.Z, { onClick: Q, onMouseEnter: Y, onMouseLeave: J, style: _.contentContainer }, a.createElement(p.D, { id: `prompt_${I}`, onFullyVisible: X, position: "bottom", testID: `prompt_${I}` }), a.createElement(n.Z, { style: _.promptContainer }, e ? a.createElement(e, { style: _.icon }) : void 0, a.createElement(n.Z, { style: _.prompt }, a.createElement(c.ZP, { size: "body", weight: "normal" }, v), !!o && a.createElement(c.ZP, { style: _.promptTextStyle }, o))), a.createElement("input", { onChange: A, ref: V, style: { display: "none" }, type: "file" }))) : a.createElement(n.Z, { onClick: Q, onMouseEnter: Y, onMouseLeave: J, style: [_.deprecatedContainer, z ? _.hovered : void 0, M ? _.compact : void 0] }, a.createElement(p.D, { id: `prompt_${I}`, onFullyVisible: X, position: "bottom", testID: `prompt_${I}` }), a.createElement(n.Z, { style: _.deprecatedPrompt }, a.createElement(c.ZP, null, v)), e ? a.createElement(e, { style: _.deprecatedIcon }) : void 0);
+                        }, [x, I, S, P, t, D, G, M, Z, R, r, w, i, V, O, j, H, K, L, N, s]);
+                    return $ ? a.createElement(n.Z, { style: [_.outerContainer, z ? _.hovered : void 0] }, a.createElement(n.Z, { onClick: Q, onMouseEnter: Y, onMouseLeave: J, style: _.contentContainer }, a.createElement(p.D, { id: `prompt_${I}`, onFullyVisible: X, position: "bottom", testID: `prompt_${I}` }), a.createElement(n.Z, { style: _.promptContainer }, e ? a.createElement(e, { style: _.icon }) : void 0, a.createElement(n.Z, { style: _.prompt }, a.createElement(c.ZP, { size: "body", weight: "normal" }, v), !!o && a.createElement(c.ZP, { style: _.promptTextStyle }, o))), a.createElement("input", { onChange: A, ref: W, style: { display: "none" }, type: "file" }))) : a.createElement(n.Z, { onClick: Q, onMouseEnter: Y, onMouseLeave: J, style: [_.deprecatedContainer, z ? _.hovered : void 0, F ? _.compact : void 0] }, a.createElement(p.D, { id: `prompt_${I}`, onFullyVisible: X, position: "bottom", testID: `prompt_${I}` }), a.createElement(n.Z, { style: _.deprecatedPrompt }, a.createElement(c.ZP, null, v)), e ? a.createElement(e, { style: _.deprecatedIcon }) : void 0);
                 },
                 _ = i.default.create((e) => ({ outerContainer: { width: "100%" }, contentContainer: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, justifyContent: "center", alignItems: "flex-start", borderRadius: e.spaces.space16, cursor: "pointer", transition: "background-color 0.5s", overflow: "hidden" }, loadingBlock: { backgroundColor: "transparent" }, compact: { width: "45%" }, hovered: { backgroundColor: e.colors.gray50, borderRadius: e.spaces.space8 }, promptContainer: { flexDirection: "row", alignItems: "center" }, prompt: { marginStart: e.spaces.space8, flex: 1 }, promptTextStyle: { fontSize: e.fontSizes.headline2, color: e.colors.gray600 }, icon: { width: e.spaces.space24, height: e.spaces.space24, color: e.colors.gray800 }, deprecatedContainer: { width: 170, height: 130, padding: e.spaces.space16, justifyContent: "space-between", alignItems: "flex-start", backgroundColor: e.colors.activeFaintGray, borderRadius: e.borderRadii.large, cursor: "pointer", transition: "background-color 0.5s" }, deprecatedPrompt: { flexGrow: 1, textOverflow: "ellipsis" }, deprecatedIcon: { width: e.spaces.space20, height: e.spaces.space20, color: e.colors.link } }));
             var v = o(619697);
-            const Z = (e) => {
+            const x = (e) => {
                     const [t, o] = a.useState(e.children),
                         n = a.useRef(e.animationKey),
                         i = a.useRef(new r.Z.Value(0)).current;
@@ -156,7 +156,7 @@
                         a.createElement(r.Z.View, { style: [{ opacity: i }, e.style] }, t)
                     );
                 },
-                x = (e) => {
+                Z = (e) => {
                     const { grokInput: t, isDefault: o } = (0, l.w)(),
                         i = a.useMemo(() => e.data.prompts.filter((e) => e.filter_key === t.filterKey), [t.filterKey, e.data.prompts]),
                         { promptElements: c } = a.useMemo(() => {
@@ -166,11 +166,11 @@
                             r.Z.parallel(n).start();
                             const l = t.map((e, t) => {
                                 const n = { opacity: o[t], transform: [{ translateY: o[t].interpolate({ inputRange: [0, 1], outputRange: [20, 0] }) }] };
-                                return a.createElement(r.Z.View, { key: e.prompt_id, style: [R.gridItem, n] }, a.createElement(k, { Icon: e.icon_name ? s[e.icon_name] : void 0, isDeepsearch: "Research" === e.filter_key, isImageEdit: "ImageEdit" === e.filter_key, isImageGen: "CreateImage" === e.filter_key, isReasoning: "Reasoning" === e.filter_key, label: e.display_body ?? "", prompt: e.prompt, promptId: e.prompt_id, sectionType: "FLOATING_CARD", toolOverrides: e.tool_overrides }));
+                                return a.createElement(r.Z.View, { key: e.prompt_id, style: [R.gridItem, n] }, a.createElement(w, { Icon: e.icon_name ? s[e.icon_name] : void 0, isDeepsearch: "Research" === e.filter_key, isImageEdit: "ImageEdit" === e.filter_key, isImageGen: "CreateImage" === e.filter_key, isReasoning: "Reasoning" === e.filter_key, label: e.display_body ?? "", prompt: e.prompt, promptId: e.prompt_id, sectionType: "FLOATING_CARD", toolOverrides: e.tool_overrides }));
                             });
                             return { animatedValues: o, promptElements: l };
                         }, [i, e.numPromptsToShow]);
-                    return (o && !e.hasSelectedFilterKey) || 0 === c.length ? null : a.createElement(Z, { animationKey: t.filterKey || "default", style: R.fadeContainer }, a.createElement(v.$, { data: e.data }, a.createElement(n.Z, { style: R.container }, c)));
+                    return (o && !e.hasSelectedFilterKey) || 0 === c.length ? null : a.createElement(x, { animationKey: t.filterKey || "default", style: R.fadeContainer }, a.createElement(v.$, { data: e.data }, a.createElement(n.Z, { style: R.container }, c)));
                 },
                 I = (e) => {
                     const t = [...e];
@@ -211,45 +211,45 @@
                 b = o(327597),
                 f = o(919022),
                 C = o(654917),
-                E = o(623494),
-                w = o(721270);
-            const k = "rweb.highlightedPromptClicks",
+                k = o(623494),
+                E = o(207683);
+            const w = "rweb.highlightedPromptClicks",
                 _ = ({ data: e }) => {
                     const t = (0, h.v9)(f.ZP.selectLoggedInUser),
                         o = (0, r.Dv)(m.lZ),
                         d = (0, y.Z)(),
                         _ = (0, h.I0)(),
-                        Z = (0, C.eX)(),
-                        x = (0, g.hC)("responsive_web_grok_show_citations"),
+                        x = (0, C.eX)(),
+                        Z = (0, g.hC)("responsive_web_grok_show_citations"),
                         I = (0, g.JY)("responsive_web_grok_highlighted_prompt_clicks_until_fatigue", -1),
                         [P, R] = a.useState(I < 0),
-                        [z, D] = a.useState(null),
-                        T = a.useRef(!1);
+                        [z, T] = a.useState(null),
+                        D = a.useRef(!1);
                     a.useEffect(() => {
                         0 !== I &&
                             (I < 0 ||
-                                o.get(k).then((t) => {
+                                o.get(w).then((t) => {
                                     const o = { ...(t || {}) };
-                                    D(o);
+                                    T(o);
                                     const a = e.prompts.some((e) => o[e.prompt_id] <= I);
                                     (t && !a) || R(!0);
                                 }));
                     }, [I, R, o, e.prompts]);
                     const S = a.useCallback(
                         (t) => {
-                            T.current || (0, E.az)(d, "impression", { promptId: t.prompt_id, prompt: t.prompt, sectionType: "HIGHLIGHTED_PROMPTS", allPrompts: e.prompts });
+                            D.current || (0, k.az)(d, "impression", { promptId: t.prompt_id, prompt: t.prompt, sectionType: "HIGHLIGHTED_PROMPTS", allPrompts: e.prompts });
                         },
                         [d, e.prompts],
                     );
                     if (!P) return null;
-                    const F = e.prompts.length;
+                    const M = e.prompts.length;
                     return a.createElement(
                         n.Z,
                         { style: v.container },
                         (!!e.title || !!e.subtitle) && a.createElement(n.Z, { style: v.titleContainer }, !!e.title && a.createElement(i.ZP, { size: "headline2", weight: "bold" }, e.title), !!e.subtitle && a.createElement(i.ZP, { color: "gray600" }, e.subtitle)),
                         a.createElement(
                             s.Z,
-                            { buttonsContainerStyle: v.promptsInnerContainer, childrenStyle: [F <= 1 ? v.singlePromptOuterContainer : v.multiplePromptOuterContainer], style: v.promptsContainer },
+                            { buttonsContainerStyle: v.promptsInnerContainer, childrenStyle: [M <= 1 ? v.singlePromptOuterContainer : v.multiplePromptOuterContainer], style: v.promptsContainer },
                             e.prompts.map((e) => {
                                 const r = "DRAW_ME" === e.action && t && t.profile_image_url_https;
                                 return a.createElement(
@@ -258,13 +258,13 @@
                                         key: e.prompt_id,
                                         onClick: () =>
                                             ((e) => {
-                                                (0, E.az)(d, "click", { promptId: e.prompt_id ?? "", prompt: e.prompt, sectionType: "HIGHLIGHTED_PROMPTS", allPrompts: [e] }), _((0, b.u)({ analytics: d, conversationKey: Z })({ text: e.prompt, returnCitations: x, isDeepsearch: "Research" === e.filter_key, isReasoning: "Reasoning" === e.filter_key, imageGenerationCount: 4 }));
+                                                (0, k.az)(d, "click", { promptId: e.prompt_id ?? "", prompt: e.prompt, sectionType: "HIGHLIGHTED_PROMPTS", allPrompts: [e] }), _((0, b.u)({ analytics: d, conversationKey: x })({ text: e.prompt, returnCitations: Z, isDeepsearch: "Research" === e.filter_key, isReasoning: "Reasoning" === e.filter_key, imageGenerationCount: 4 }));
                                                 const t = { ...(z || {}) };
-                                                t[e.prompt_id] || (t[e.prompt_id] = 0), t[e.prompt_id]++, o.set(k, t);
+                                                t[e.prompt_id] || (t[e.prompt_id] = 0), t[e.prompt_id]++, o.set(w, t);
                                             })(e),
                                         withoutInteractiveStyles: !0,
                                     },
-                                    ({ isHovered: o }) => a.createElement(n.Z, { style: [v.promptContainer, o ? v.hoveredPromptContainer : void 0] }, a.createElement(u.D, { id: `prompt_${e.prompt_id}`, onFullyVisible: () => S(e), position: "bottom", testID: `prompt_${e.prompt_id}` }), r ? a.createElement(c.default, { shape: "circle", size: "xLarge", uri: t?.profile_image_url_https }) : e.image_url ? a.createElement(n.Z, { style: v.imgContainer }, a.createElement(p.Z, { resizeMode: "cover", source: e.image_url, style: v.img })) : void 0, a.createElement(n.Z, { style: v.infoContainer }, e.display_label && a.createElement(i.ZP, { size: "headline2", weight: "medium" }, e.display_label), e.display_body && a.createElement(i.ZP, { color: "gray700", size: "body", weight: "normal" }, a.createElement(w.GrokMarkdown, { isAnimated: !1, markdownText: e.display_body })))),
+                                    ({ isHovered: o }) => a.createElement(n.Z, { style: [v.promptContainer, o ? v.hoveredPromptContainer : void 0] }, a.createElement(u.D, { id: `prompt_${e.prompt_id}`, onFullyVisible: () => S(e), position: "bottom", testID: `prompt_${e.prompt_id}` }), r ? a.createElement(c.default, { shape: "circle", size: "xLarge", uri: t?.profile_image_url_https }) : e.image_url ? a.createElement(n.Z, { style: v.imgContainer }, a.createElement(p.Z, { resizeMode: "cover", source: e.image_url, style: v.img })) : void 0, a.createElement(n.Z, { style: v.infoContainer }, e.display_label && a.createElement(i.ZP, { size: "headline2", weight: "medium" }, e.display_label), e.display_body && a.createElement(i.ZP, { color: "gray700", size: "body", weight: "normal" }, a.createElement(E.GrokMarkdown, { isAnimated: !1, markdownText: e.display_body })))),
                                 );
                             }),
                         ),
@@ -291,45 +291,45 @@
                 b = o(305442),
                 f = o(962379),
                 C = o(623494);
-            const E = ({ allPrompts: e, disableClick: t, imageUrl: o, imageUrl2x: i, label: E, prompt: k, promptId: _, sectionType: v, toolOverrides: Z }) => {
-                    const [x, I] = a.useState(!1),
+            const k = ({ allPrompts: e, disableClick: t, imageUrl: o, imageUrl2x: i, label: k, prompt: w, promptId: _, sectionType: v, toolOverrides: x }) => {
+                    const [Z, I] = a.useState(!1),
                         P = (0, m.Z)(),
                         R = (0, u.I0)(),
                         z = (0, h.eX)(),
-                        { isCompactLayout: D } = (0, s.ZP)(),
-                        { enabled: T } = (0, f.Z)(),
+                        { isCompactLayout: T } = (0, s.ZP)(),
+                        { enabled: D } = (0, f.Z)(),
                         S = (0, b.Z)("image_block"),
-                        F = a.useRef(!1),
-                        M = a.useCallback(() => {
-                            F.current || (0, C.az)(P, "impression", { promptId: _ ?? "", prompt: k, sectionType: v, allPrompts: e ?? [] });
-                        }, [P, _, k, v, e]),
-                        B = a.useCallback(() => I(!0), []),
-                        O = a.useCallback(() => I(!1), []),
+                        M = a.useRef(!1),
+                        F = a.useCallback(() => {
+                            M.current || (0, C.az)(P, "impression", { promptId: _ ?? "", prompt: w, sectionType: v, allPrompts: e ?? [] });
+                        }, [P, _, w, v, e]),
+                        O = a.useCallback(() => I(!0), []),
+                        B = a.useCallback(() => I(!1), []),
                         L = a.useCallback(() => {
-                            if (!t && ((0, C.az)(P, "click", { promptId: _ ?? "", prompt: k, sectionType: v, allPrompts: e ?? [] }), R((0, y.u)({ analytics: P, conversationKey: z })({ text: k, returnCitations: !1, imageGenerationCount: S, toolOverrides: Z })), "" !== _)) {
+                            if (!t && ((0, C.az)(P, "click", { promptId: _ ?? "", prompt: w, sectionType: v, allPrompts: e ?? [] }), R((0, y.u)({ analytics: P, conversationKey: z })({ text: w, returnCitations: !1, imageGenerationCount: S, toolOverrides: x })), "" !== _)) {
                                 const e = "PRESET";
                                 R((0, g.U)({ group_id: e, object_id: _ ?? "", action_type: "CLICK" }));
                             }
-                        }, [t, k, _, v, e, R, P, z, S, Z]),
-                        H = a.useMemo(() => ("light" === n.default.theme.paletteName ? [w.shadow, x ? { opacity: 0.25 } : { opacity: 0 }] : [w.shadow, x ? { opacity: 0 } : { opacity: 0.7 }]), [x]),
-                        K = a.useMemo(() => ("light" === n.default.theme.paletteName ? [w.shadow, x ? { opacity: 0.25 } : { opacity: 0 }] : [w.shadow, x ? { opacity: 0 } : { opacity: 0.5 }]), [x]),
-                        j = l.Z.get() > 1 ? i : o;
-                    return T ? a.createElement(r.Z, { onClick: L, onMouseEnter: B, onMouseLeave: O, style: w.container }, a.createElement(d.D, { id: `prompt_${_ ?? o}`, onFullyVisible: M, position: "bottom", testID: `prompt_${_ ?? o}` }), a.createElement(r.Z, { style: w.prompt }, a.createElement(c.ZP, { numberOfLines: 2, size: "subtext2", style: w.promptText, weight: "medium" }, E)), a.createElement(r.Z, { style: K }), a.createElement(p.Z, { resizeMode: "cover", source: { uri: j }, style: w.image })) : a.createElement(r.Z, { onClick: L, onMouseEnter: B, onMouseLeave: O, style: [w.deprecatedContainer, D ? w.deprecatedCompact : void 0] }, a.createElement(r.Z, { style: w.deprecatedPrompt }, a.createElement(c.ZP, { size: "subtext1" }, E)), a.createElement(r.Z, { style: H }), a.createElement(p.Z, { resizeMode: "cover", source: { uri: j }, style: w.image }));
+                        }, [t, w, _, v, e, R, P, z, S, x]),
+                        H = a.useMemo(() => ("light" === n.default.theme.paletteName ? [E.shadow, Z ? { opacity: 0.25 } : { opacity: 0 }] : [E.shadow, Z ? { opacity: 0 } : { opacity: 0.7 }]), [Z]),
+                        K = a.useMemo(() => ("light" === n.default.theme.paletteName ? [E.shadow, Z ? { opacity: 0.25 } : { opacity: 0 }] : [E.shadow, Z ? { opacity: 0 } : { opacity: 0.5 }]), [Z]),
+                        G = l.Z.get() > 1 ? i : o;
+                    return D ? a.createElement(r.Z, { onClick: L, onMouseEnter: O, onMouseLeave: B, style: E.container }, a.createElement(d.D, { id: `prompt_${_ ?? o}`, onFullyVisible: F, position: "bottom", testID: `prompt_${_ ?? o}` }), a.createElement(r.Z, { style: E.prompt }, a.createElement(c.ZP, { numberOfLines: 2, size: "subtext2", style: E.promptText, weight: "medium" }, k)), a.createElement(r.Z, { style: K }), a.createElement(p.Z, { resizeMode: "cover", source: { uri: G }, style: E.image })) : a.createElement(r.Z, { onClick: L, onMouseEnter: O, onMouseLeave: B, style: [E.deprecatedContainer, T ? E.deprecatedCompact : void 0] }, a.createElement(r.Z, { style: E.deprecatedPrompt }, a.createElement(c.ZP, { size: "subtext1" }, k)), a.createElement(r.Z, { style: H }), a.createElement(p.Z, { resizeMode: "cover", source: { uri: G }, style: E.image }));
                 },
-                w = n.default.create((e) => ({ container: { height: 150, justifyContent: "space-between", alignItems: "flex-start", backgroundColor: e.colors.activeFaintGray, borderRadius: e.borderRadii.xLarge, borderColor: e.colors.gray50, borderWidth: "1px", borderStyle: "solid", overflow: "hidden", cursor: "pointer", flex: 1, grow: 1 }, prompt: { flexGrow: 1, textOverflow: "ellipsis", position: "absolute", bottom: e.spaces.space8, start: e.spaces.space8, maxWidth: "calc(100% - 20px)", zIndex: 10, transition: "opacity 0.3s", paddingVertical: e.spaces.space4, paddingHorizontal: e.spaces.space8, backgroundColor: "rgba(102, 102, 102, 0.3)", borderRadius: e.borderRadii.medium, borderWidth: e.spaces.space1, borderStyle: "solid", borderColor: "rgba(255,255, 255, 0.15)", backdropFilter: "blur(1px)" }, promptText: { color: "white" }, icon: { width: e.spaces.space20, height: e.spaces.space20, color: e.colors.link }, shadow: { position: "absolute", width: "100%", height: "100%", zIndex: 5, backgroundColor: e.colors.cellBackground, transition: "opacity 0.3s" }, image: { position: "absolute", width: "100%", height: "100%", zIndex: 1 }, deprecatedContainer: { width: 352, height: 220, justifyContent: "space-between", alignItems: "flex-start", backgroundColor: e.colors.activeFaintGray, borderRadius: e.borderRadii.large, overflow: "hidden", cursor: "pointer" }, deprecatedCompact: { width: `calc(90% + ${e.spaces.space12})` }, deprecatedPrompt: { flexGrow: 1, textOverflow: "ellipsis", position: "absolute", bottom: e.spaces.space12, start: e.spaces.space12, zIndex: 10, transition: "opacity 0.3s", paddingVertical: e.spaces.space4, paddingHorizontal: e.spaces.space12, borderRadius: e.borderRadii.medium, backgroundColor: e.colors.cellBackground } }));
-            var k = o(619697);
+                E = n.default.create((e) => ({ container: { height: 150, justifyContent: "space-between", alignItems: "flex-start", backgroundColor: e.colors.activeFaintGray, borderRadius: e.borderRadii.xLarge, borderColor: e.colors.gray50, borderWidth: "1px", borderStyle: "solid", overflow: "hidden", cursor: "pointer", flex: 1, grow: 1 }, prompt: { flexGrow: 1, textOverflow: "ellipsis", position: "absolute", bottom: e.spaces.space8, start: e.spaces.space8, maxWidth: "calc(100% - 20px)", zIndex: 10, transition: "opacity 0.3s", paddingVertical: e.spaces.space4, paddingHorizontal: e.spaces.space8, backgroundColor: "rgba(102, 102, 102, 0.3)", borderRadius: e.borderRadii.medium, borderWidth: e.spaces.space1, borderStyle: "solid", borderColor: "rgba(255,255, 255, 0.15)", backdropFilter: "blur(1px)" }, promptText: { color: "white" }, icon: { width: e.spaces.space20, height: e.spaces.space20, color: e.colors.link }, shadow: { position: "absolute", width: "100%", height: "100%", zIndex: 5, backgroundColor: e.colors.cellBackground, transition: "opacity 0.3s" }, image: { position: "absolute", width: "100%", height: "100%", zIndex: 1 }, deprecatedContainer: { width: 352, height: 220, justifyContent: "space-between", alignItems: "flex-start", backgroundColor: e.colors.activeFaintGray, borderRadius: e.borderRadii.large, overflow: "hidden", cursor: "pointer" }, deprecatedCompact: { width: `calc(90% + ${e.spaces.space12})` }, deprecatedPrompt: { flexGrow: 1, textOverflow: "ellipsis", position: "absolute", bottom: e.spaces.space12, start: e.spaces.space12, zIndex: 10, transition: "opacity 0.3s", paddingVertical: e.spaces.space4, paddingHorizontal: e.spaces.space12, borderRadius: e.borderRadii.medium, backgroundColor: e.colors.cellBackground } }));
+            var w = o(619697);
             const _ = ({ data: e }) => {
                     const { isCompactLayout: t } = (0, s.ZP)(),
                         o = t ? 2 : 3,
                         n = a.useMemo(() => e.prompts.filter((e) => !!e.image_url), [e]),
                         l = (0, i.vN)(n, o);
                     return a.createElement(
-                        k.$,
+                        w.$,
                         { data: e },
                         a.createElement(
                             r.Z,
                             { style: v.row },
-                            l.map((t, o) => a.createElement(E, { allPrompts: l, imageUrl: t.image_url, imageUrl2x: t.image_url, key: t.prompt, label: t.display_label, prompt: t.prompt, promptId: t.prompt_id, sectionType: e.section_type ?? "NO_SECTION", toolOverrides: t.tool_overrides })),
+                            l.map((t, o) => a.createElement(k, { allPrompts: l, imageUrl: t.image_url, imageUrl2x: t.image_url, key: t.prompt, label: t.display_label, prompt: t.prompt, promptId: t.prompt_id, sectionType: e.section_type ?? "NO_SECTION", toolOverrides: t.tool_overrides })),
                         ),
                     );
                 },
@@ -364,63 +364,63 @@
                 b = o(764226),
                 f = o(654917),
                 C = o(962379),
-                E = o(623494),
-                w = o(988290);
-            const k = ({ Icon: e, allPrompts: t, body: o, isDeepsearch: n, isImageEdit: i, isReasoning: s, label: k, prompt: v, promptAction: Z, promptId: x, sectionType: I, toolOverrides: P }) => {
+                k = o(623494),
+                E = o(988290);
+            const w = ({ Icon: e, allPrompts: t, body: o, isDeepsearch: n, isImageEdit: i, isReasoning: s, label: w, prompt: v, promptAction: x, promptId: Z, sectionType: I, toolOverrides: P }) => {
                     const [R, z] = a.useState(!1),
-                        D = (0, m.Z)(),
-                        T = (0, u.I0)(),
+                        T = (0, m.Z)(),
+                        D = (0, u.I0)(),
                         S = (0, f.eX)(),
-                        { isCompactLayout: F } = (0, w.ZP)(),
-                        { selectedFiles: M } = (0, h.ZP)(),
-                        B = (0, d.hC)("responsive_web_grok_show_citations"),
-                        O = a.useMemo(() => Object.keys(M), [M]),
-                        L = a.useMemo(() => O.map((e) => M[e]?.remote).filter(Boolean), [O, M]),
+                        { isCompactLayout: M } = (0, E.ZP)(),
+                        { selectedFiles: F } = (0, h.ZP)(),
+                        O = (0, d.hC)("responsive_web_grok_show_citations"),
+                        B = a.useMemo(() => Object.keys(F), [F]),
+                        L = a.useMemo(() => B.map((e) => F[e]?.remote).filter(Boolean), [B, F]),
                         H = a.useRef(null),
-                        { handleFileChange: K } = (0, b.J)({ analytics: D, isReturnCitations: B, prompt: v, promptId: x }),
-                        { enabled: j } = (0, C.Z)(),
-                        G = a.useRef(!1),
-                        N = a.useCallback(() => {
-                            G.current || (0, E.az)(D, "impression", { promptId: x ?? "", prompt: v, sectionType: I, allPrompts: t ?? [] });
-                        }, [D, x, v, I, t]),
-                        W = a.useCallback(() => z(!0), []),
-                        V = a.useCallback(() => z(!1), []),
+                        { handleFileChange: K } = (0, b.J)({ analytics: T, isReturnCitations: O, prompt: v, promptId: Z }),
+                        { enabled: G } = (0, C.Z)(),
+                        N = a.useRef(!1),
+                        j = a.useCallback(() => {
+                            N.current || (0, k.az)(T, "impression", { promptId: Z ?? "", prompt: v, sectionType: I, allPrompts: t ?? [] });
+                        }, [T, Z, v, I, t]),
+                        V = a.useCallback(() => z(!0), []),
+                        W = a.useCallback(() => z(!1), []),
                         A = a.useCallback(() => {
-                            if (((0, E.az)(D, "click", { promptId: x ?? "", prompt: v, sectionType: I, allPrompts: t ?? [] }), "UPLOAD" === Z && H.current)) return void H.current.click();
+                            if (((0, k.az)(T, "click", { promptId: Z ?? "", prompt: v, sectionType: I, allPrompts: t ?? [] }), "UPLOAD" === x && H.current)) return void H.current.click();
                             let e = {};
-                            if ((i && (e = { attachments: L, imageGenerationCount: 4, promptMetadata: { promptSource: "IMAGE_EDIT", action: "INPUT", properties: { imageUrl: L[0].url } } }), T((0, y.u)({ analytics: D, conversationKey: S })({ text: v, returnCitations: B, toolOverrides: P, isDeepsearch: n, isReasoning: s, ...e })), "" !== x)) {
+                            if ((i && (e = { attachments: L, imageGenerationCount: 4, promptMetadata: { promptSource: "IMAGE_EDIT", action: "INPUT", properties: { imageUrl: L[0].url } } }), D((0, y.u)({ analytics: T, conversationKey: S })({ text: v, returnCitations: O, toolOverrides: P, isDeepsearch: n, isReasoning: s, ...e })), "" !== Z)) {
                                 const e = "PRESET";
-                                T((0, g.U)({ group_id: e, object_id: x, action_type: "CLICK" }));
+                                D((0, g.U)({ group_id: e, object_id: Z, action_type: "CLICK" }));
                             }
-                        }, [v, x, T, I, t, D, B, S, Z, P, n, s, i, L]);
-                    return j ? a.createElement(r.Z, { onClick: A, onMouseEnter: W, onMouseLeave: V, style: [_.container, R ? _.hovered : void 0] }, e ? a.createElement(a.Fragment, null, a.createElement(e, { style: _.icon }), a.createElement(c.Z, { size: "space8" })) : void 0, a.createElement(r.Z, { style: _.prompt }, a.createElement(l.ZP, { size: "body", weight: "medium" }, k), !!o && a.createElement(l.ZP, { color: "gray600", size: "body", weight: "normal" }, o)), a.createElement("input", { onChange: K, ref: H, style: { display: "none" }, type: "file" })) : a.createElement(r.Z, { onClick: A, onMouseEnter: W, onMouseLeave: V, style: [_.deprecatedContainer, R ? _.hovered : void 0, F ? _.compact : void 0] }, a.createElement(p.D, { id: `prompt_${x}`, onFullyVisible: N, position: "bottom", testID: `prompt_${x}` }), a.createElement(r.Z, { style: _.deprecatedPrompt }, a.createElement(l.ZP, null, k)), e ? a.createElement(e, { style: _.deprecatedIcon }) : void 0);
+                        }, [v, Z, D, I, t, T, O, S, x, P, n, s, i, L]);
+                    return G ? a.createElement(r.Z, { onClick: A, onMouseEnter: V, onMouseLeave: W, style: [_.container, R ? _.hovered : void 0] }, e ? a.createElement(a.Fragment, null, a.createElement(e, { style: _.icon }), a.createElement(c.Z, { size: "space8" })) : void 0, a.createElement(r.Z, { style: _.prompt }, a.createElement(l.ZP, { size: "body", weight: "medium" }, w), !!o && a.createElement(l.ZP, { color: "gray600", size: "body", weight: "normal" }, o)), a.createElement("input", { onChange: K, ref: H, style: { display: "none" }, type: "file" })) : a.createElement(r.Z, { onClick: A, onMouseEnter: V, onMouseLeave: W, style: [_.deprecatedContainer, R ? _.hovered : void 0, M ? _.compact : void 0] }, a.createElement(p.D, { id: `prompt_${Z}`, onFullyVisible: j, position: "bottom", testID: `prompt_${Z}` }), a.createElement(r.Z, { style: _.deprecatedPrompt }, a.createElement(l.ZP, null, w)), e ? a.createElement(e, { style: _.deprecatedIcon }) : void 0);
                 },
                 _ = i.default.create((e) => ({ container: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, justifyContent: "center", alignItems: "flex-start", backgroundColor: e.colors.gray0, borderRadius: e.spaces.space12, cursor: "pointer", transition: "background-color 0.5s", overflow: "hidden", flex: 1, flexGrow: 1, shrink: 1, minWidth: 150, maxHeight: 68, minHeight: 68 }, loadingBlock: { backgroundColor: "transparent" }, compact: { width: "45%" }, hovered: { backgroundColor: e.colors.gray50 }, prompt: { textOverflow: "ellipsis", wrap: "wrap" }, icon: { width: e.spaces.space20, height: e.spaces.space20, shrink: 0, color: e.colors.gray900 }, deprecatedContainer: { width: 170, height: 130, padding: e.spaces.space16, justifyContent: "space-between", alignItems: "flex-start", backgroundColor: e.colors.activeFaintGray, borderRadius: e.borderRadii.large, cursor: "pointer", transition: "background-color 0.5s" }, deprecatedPrompt: { flexGrow: 1, textOverflow: "ellipsis" }, deprecatedIcon: { width: e.spaces.space20, height: e.spaces.space20, color: e.colors.link } }));
             var v = o(619697);
-            const Z = ({ Icon: e, allPrompts: t, label: o, prompt: n, promptAction: i, promptId: s, sectionType: h, toolOverrides: C }) => {
-                    const [w, k] = a.useState(!1),
+            const x = ({ Icon: e, allPrompts: t, label: o, prompt: n, promptAction: i, promptId: s, sectionType: h, toolOverrides: C }) => {
+                    const [E, w] = a.useState(!1),
                         _ = (0, m.Z)(),
                         v = (0, u.I0)(),
-                        Z = (0, f.eX)(),
+                        x = (0, f.eX)(),
                         I = (0, d.hC)("responsive_web_grok_show_citations"),
                         P = a.useRef(!1),
                         R = a.useRef(null),
                         { handleFileChange: z } = (0, b.J)({ analytics: _, isReturnCitations: I, prompt: n, promptId: s }),
-                        D = a.useCallback(() => {
-                            P.current || (0, E.az)(_, "impression", { promptId: s ?? "", prompt: n, sectionType: h, allPrompts: t });
+                        T = a.useCallback(() => {
+                            P.current || (0, k.az)(_, "impression", { promptId: s ?? "", prompt: n, sectionType: h, allPrompts: t });
                         }, [_, s, n, h, t]),
-                        T = a.useCallback(() => k(!0), []),
-                        S = a.useCallback(() => k(!1), []),
-                        F = a.useCallback(() => {
-                            if (((0, E.az)(_, "click", { promptId: s ?? "", prompt: n, sectionType: h, allPrompts: t }), "UPLOAD" === i && R.current)) R.current.click();
-                            else if ((v((0, y.u)({ analytics: _, conversationKey: Z })({ text: n, returnCitations: I, toolOverrides: C })), "" !== s)) {
+                        D = a.useCallback(() => w(!0), []),
+                        S = a.useCallback(() => w(!1), []),
+                        M = a.useCallback(() => {
+                            if (((0, k.az)(_, "click", { promptId: s ?? "", prompt: n, sectionType: h, allPrompts: t }), "UPLOAD" === i && R.current)) R.current.click();
+                            else if ((v((0, y.u)({ analytics: _, conversationKey: x })({ text: n, returnCitations: I, toolOverrides: C })), "" !== s)) {
                                 const e = "PRESET";
                                 v((0, g.U)({ group_id: e, object_id: s, action_type: "CLICK" }));
                             }
-                        }, [n, s, h, t, i, v, _, I, Z, C]);
-                    return a.createElement(r.Z, { onClick: F, onMouseEnter: T, onMouseLeave: S, style: [x.pill, w ? x.hovered : void 0] }, !!e && a.createElement(a.Fragment, null, a.createElement(e, { style: x.icon }), a.createElement(c.Z, { size: "space8" })), a.createElement(p.D, { id: `prompt_${s}`, onFullyVisible: D, position: "bottom", testID: `prompt_${s}` }), a.createElement(r.Z, { style: x.prompt }, a.createElement(l.ZP, { size: "body", weight: "bold" }, o)), a.createElement("input", { onChange: z, ref: R, style: { display: "none" }, type: "file" }));
+                        }, [n, s, h, t, i, v, _, I, x, C]);
+                    return a.createElement(r.Z, { onClick: M, onMouseEnter: D, onMouseLeave: S, style: [Z.pill, E ? Z.hovered : void 0] }, !!e && a.createElement(a.Fragment, null, a.createElement(e, { style: Z.icon }), a.createElement(c.Z, { size: "space8" })), a.createElement(p.D, { id: `prompt_${s}`, onFullyVisible: T, position: "bottom", testID: `prompt_${s}` }), a.createElement(r.Z, { style: Z.prompt }, a.createElement(l.ZP, { size: "body", weight: "bold" }, o)), a.createElement("input", { onChange: z, ref: R, style: { display: "none" }, type: "file" }));
                 },
-                x = i.default.create((e) => ({ pill: { backgroundColor: e.colors.gray0, paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, transition: "background-color 0.5s", borderRadius: e.spaces.space12, flexGrow: 1, shrink: 0, flexDirection: "row", justifyContent: "center", alignItems: "center" }, prompt: { textOverflow: "ellipsis" }, hovered: { backgroundColor: "light" === e.paletteName ? e.colors.gray200 : e.colors.gray50, cursor: "pointer" }, icon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray800 } })),
+                Z = i.default.create((e) => ({ pill: { backgroundColor: e.colors.gray0, paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, transition: "background-color 0.5s", borderRadius: e.spaces.space12, flexGrow: 1, shrink: 0, flexDirection: "row", justifyContent: "center", alignItems: "center" }, prompt: { textOverflow: "ellipsis" }, hovered: { backgroundColor: "light" === e.paletteName ? e.colors.gray200 : e.colors.gray50, cursor: "pointer" }, icon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray800 } })),
                 I = ({ data: e, style: t }) => {
                     const o = (0, s.vN)(e.prompts, 10);
                     return a.createElement(
@@ -429,7 +429,7 @@
                         a.createElement(
                             n.Z,
                             { showNavButtonsOnHover: !1, style: P.carousel, withWraparound: !0 },
-                            o.map((n, i) => a.createElement(r.Z, { key: n.prompt }, "pill" === t ? a.createElement(Z, { Icon: (0, s.wG)(n.icon_name || "") || void 0, allPrompts: o, isDeepsearch: "research" === n.filter_key?.toLowerCase(), isReasoning: "reasoning" === n.filter_key?.toLowerCase(), label: n.display_label, prompt: n.prompt, promptAction: n.action, promptId: n.prompt_id, sectionType: e.section_type ?? "NO_SECTION", toolOverrides: n.tool_overrides }) : a.createElement(k, { Icon: (0, s.wG)(n.icon_name || "") || void 0, allPrompts: o, isDeepsearch: "research" === n.filter_key?.toLowerCase(), isImageEdit: "imageedit" === n.filter_key?.toLowerCase(), isReasoning: "reasoning" === n.filter_key?.toLowerCase(), label: n.display_label, prompt: n.prompt, promptAction: n.action, promptId: n.prompt_id, sectionType: e.section_type ?? "NO_SECTION", toolOverrides: n.tool_overrides }))),
+                            o.map((n, i) => a.createElement(r.Z, { key: n.prompt }, "pill" === t ? a.createElement(x, { Icon: (0, s.wG)(n.icon_name || "") || void 0, allPrompts: o, isDeepsearch: "research" === n.filter_key?.toLowerCase(), isReasoning: "reasoning" === n.filter_key?.toLowerCase(), label: n.display_label, prompt: n.prompt, promptAction: n.action, promptId: n.prompt_id, sectionType: e.section_type ?? "NO_SECTION", toolOverrides: n.tool_overrides }) : a.createElement(w, { Icon: (0, s.wG)(n.icon_name || "") || void 0, allPrompts: o, isDeepsearch: "research" === n.filter_key?.toLowerCase(), isImageEdit: "imageedit" === n.filter_key?.toLowerCase(), isReasoning: "reasoning" === n.filter_key?.toLowerCase(), label: n.display_label, prompt: n.prompt, promptAction: n.action, promptId: n.prompt_id, sectionType: e.section_type ?? "NO_SECTION", toolOverrides: n.tool_overrides }))),
                         ),
                     );
                 },
@@ -455,15 +455,15 @@
                         i = (0, d.z)(),
                         h = (0, m.I0)(),
                         f = (0, g.eX)(),
-                        { isCompactLayout: C, isGrokDrawer: E } = (0, s.ZP)(),
-                        w = a.useCallback(() => n(!0), []),
-                        k = a.useCallback(() => n(!1), []),
+                        { isCompactLayout: C, isGrokDrawer: k } = (0, s.ZP)(),
+                        E = a.useCallback(() => n(!0), []),
+                        w = a.useCallback(() => n(!1), []),
                         { enabled: _ } = (0, y.Z)(),
                         v = (0, p.hC)("responsive_web_grok_show_citations"),
-                        Z = a.useCallback(() => {
+                        x = a.useCallback(() => {
                             h((0, u.u)({ analytics: i, conversationKey: f })({ text: e.value, trendPromptIdStr: e.trendPromptIdStr, returnCitations: v }));
                         }, [i, h, e, v, f]);
-                    return _ ? a.createElement(r.Z, { onClick: Z, onMouseEnter: w, onMouseLeave: k, style: [b.container, o ? b.hovered : void 0, C ? b.full : b.compact] }, a.createElement(r.Z, { style: e.imageUrl ? b.textContentWithImage : b.textContentWithoutImage }, a.createElement(l.ZP, { numberOfLines: 2, size: "headline2", weight: "bold" }, e.header), a.createElement(l.ZP, { color: "gray700", numberOfLines: 1, size: "subtext1", weight: "normal" }, e.text)), !!e.imageUrl && a.createElement(c.Z, { source: e.imageUrl, style: b.image })) : a.createElement(r.Z, { onClick: Z, onMouseEnter: w, onMouseLeave: k, style: [b.deprecatedContainer, o ? b.hovered : void 0, C && !E ? b.deprecatedCompact : void 0] }, a.createElement(r.Z, { style: b.deprecatedPrompt }, a.createElement(l.ZP, null, e.header)), a.createElement(l.ZP, { color: "gray500" }, e.text));
+                    return _ ? a.createElement(r.Z, { onClick: x, onMouseEnter: E, onMouseLeave: w, style: [b.container, o ? b.hovered : void 0, C ? b.full : b.compact] }, a.createElement(r.Z, { style: e.imageUrl ? b.textContentWithImage : b.textContentWithoutImage }, a.createElement(l.ZP, { numberOfLines: 2, size: "headline2", weight: "bold" }, e.header), a.createElement(l.ZP, { color: "gray700", numberOfLines: 1, size: "subtext1", weight: "normal" }, e.text)), !!e.imageUrl && a.createElement(c.Z, { source: e.imageUrl, style: b.image })) : a.createElement(r.Z, { onClick: x, onMouseEnter: E, onMouseLeave: w, style: [b.deprecatedContainer, o ? b.hovered : void 0, C && !k ? b.deprecatedCompact : void 0] }, a.createElement(r.Z, { style: b.deprecatedPrompt }, a.createElement(l.ZP, null, e.header)), a.createElement(l.ZP, { color: "gray500" }, e.text));
                 },
                 b = n.default.create((e) => ({ container: { paddingVertical: e.spaces.space16, paddingHorizontal: e.spaces.space16, backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.large, cursor: "pointer", transition: "background-color 0.5s", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, textContentWithImage: { maxWidth: "70%", gap: e.spaces.space8, grow: 1, wrap: "wrap", justifyContent: "center", paddingEnd: e.spaces.space16 }, textContentWithoutImage: { width: "100%", gap: e.spaces.space8 }, image: { grow: 0, objectFit: "cover", height: 84, width: 84, borderRadius: e.borderRadii.medium }, hovered: { backgroundColor: "light" === e.paletteName ? e.colors.gray200 : e.colors.gray50 }, full: { width: "100%" }, compact: { width: "calc(50% - 8px)" }, deprecatedContainer: { width: 355, height: 130, padding: e.spaces.space16, justifyContent: "space-between", alignItems: "flex-start", backgroundColor: e.colors.activeFaintGray, borderRadius: e.borderRadii.large, cursor: "pointer", transition: "background-color 0.5s" }, deprecatedPrompt: { flexGrow: 1, textOverflow: "ellipsis" }, deprecatedCompact: { width: "45%" }, deprecatedIcon: { width: e.spaces.space20, height: e.spaces.space20, color: e.colors.link } }));
             var f = o(619697);
@@ -475,15 +475,15 @@
                         { data: e },
                         a.createElement(
                             r.Z,
-                            { style: o ? E.mobileRow : E.row },
+                            { style: o ? k.mobileRow : k.row },
                             n.map((e) => a.createElement(h, { key: e.value, prompt: e })),
                         ),
                     );
                 },
-                E = n.default.create((e) => ({ row: { flexDirection: "row", justifyContent: "flex-start", flexWrap: "wrap", gap: e.spaces.space16, width: "calc(100% + 16px)", marginStart: "-8px" }, mobileRow: { flexDirection: "column", alignItems: "stretch", gap: e.spaces.space16, width: "100%" } }));
+                k = n.default.create((e) => ({ row: { flexDirection: "row", justifyContent: "flex-start", flexWrap: "wrap", gap: e.spaces.space16, width: "calc(100% + 16px)", marginStart: "-8px" }, mobileRow: { flexDirection: "column", alignItems: "stretch", gap: e.spaces.space16, width: "100%" } }));
         },
         300458: (e, t, o) => {
-            o.d(t, { U: () => D });
+            o.d(t, { U: () => T });
             var a = o(202784),
                 r = o(400752),
                 n = o(987809),
@@ -501,54 +501,54 @@
                 b = o.n(h),
                 f = o(837020),
                 C = o(956272),
-                E = o(408814),
-                w = o(928831),
-                k = o(764326),
+                k = o(408814),
+                E = o(928831),
+                w = o(764326),
                 _ = o(701311);
             const v = b().hf9afab0,
-                Z = b().ef3b3f04,
-                x = b().b43636b8,
+                x = b().ef3b3f04,
+                Z = b().b43636b8,
                 I = b().j376298c,
                 P = b().e3584f8e,
                 R = b().d91b7b8a,
                 z = (0, n.O4)("hideGrokPromoBanner_17", !1, void 0, { getOnInit: !0 }),
-                D = ({ onClose: e }) => {
-                    const { grokModeButtonStatusKey: t, grokModeButtons: o } = (0, w.w)(),
+                T = ({ onClose: e }) => {
+                    const { grokModeButtonStatusKey: t, grokModeButtons: o } = (0, E.w)(),
                         [n, g] = a.useState("search"),
                         [y, h] = (0, r.KO)(z),
                         b = a.useRef(null),
-                        k = (0, s.yu)(),
-                        D = () => {
+                        w = (0, s.yu)(),
+                        T = () => {
                             h(!0), e();
                         };
                     a.useEffect(() => ((b.current = setTimeout(() => g("think"), 4e3)), () => clearTimeout(b.current)), [g]);
                     const S = a.useCallback(() => {
                             b.current && clearTimeout(b.current);
                         }, []),
-                        F = o.find((e) => ("Research" === e.filter_key && "Enabled" === e[t]) || ("Research" === e.filter_key && "Disabled" === e[t])),
-                        M = o.find((e) => ("Reasoning" === e.filter_key && "Enabled" === e[t]) || ("Research" === e.filter_key && "Disabled" === e[t]));
-                    return !y && F && M
+                        M = o.find((e) => ("Research" === e.filter_key && "Enabled" === e[t]) || ("Research" === e.filter_key && "Disabled" === e[t])),
+                        F = o.find((e) => ("Reasoning" === e.filter_key && "Enabled" === e[t]) || ("Research" === e.filter_key && "Disabled" === e[t]));
+                    return !y && M && F
                         ? a.createElement(
                               l.Z,
-                              { maskStyle: T.sheetMask, onMaskClick: D, type: "full", withMask: !0 },
+                              { maskStyle: D.sheetMask, onMaskClick: T, type: "full", withMask: !0 },
                               a.createElement(
                                   i.Z,
-                                  { style: [T.modalContainer, k ? T.mobileSpacing : null] },
-                                  a.createElement(i.Z, { style: T.topBar }, a.createElement(c.ZP, { backgroundColor: "transparent", borderColor: "transparent", icon: a.createElement(f.default, null), onClick: D, size: "small" }), a.createElement(i.Z, { style: [T.titleSection, k ? T.titleSectionMobile : void 0] }, a.createElement(p.ZP, { size: "title2", weight: "bold" }, x), a.createElement(p.ZP, { size: "body", weight: "medium" }, I))),
+                                  { style: [D.modalContainer, w ? D.mobileSpacing : null] },
+                                  a.createElement(i.Z, { style: D.topBar }, a.createElement(c.ZP, { backgroundColor: "transparent", borderColor: "transparent", icon: a.createElement(f.default, null), onClick: T, size: "small" }), a.createElement(i.Z, { style: [D.titleSection, w ? D.titleSectionMobile : void 0] }, a.createElement(p.ZP, { size: "title2", weight: "bold" }, Z), a.createElement(p.ZP, { size: "body", weight: "medium" }, I))),
                                   a.createElement(
                                       i.Z,
-                                      { style: [T.wrapperBox, k ? T.wrapperBoxMobile : void 0] },
+                                      { style: [D.wrapperBox, w ? D.wrapperBoxMobile : void 0] },
                                       a.createElement(
                                           i.Z,
-                                          { style: T.wrapperInnerBox },
+                                          { style: D.wrapperInnerBox },
                                           a.createElement(d.Z, null, ({ isHovered: e }) =>
                                               a.createElement(
                                                   i.Z,
-                                                  { style: T.mockInput },
+                                                  { style: D.mockInput },
                                                   a.createElement(i.Z, { style: { minHeight: 40 } }, a.createElement(p.ZP, { size: "body", weight: "medium" }, "search" === n && a.createElement(_.Z, { text: P }), "think" === n && a.createElement(_.Z, { text: R }))),
                                                   a.createElement(
                                                       i.Z,
-                                                      { style: T.buttonRow },
+                                                      { style: D.buttonRow },
                                                       a.createElement(
                                                           c.ZP,
                                                           {
@@ -559,11 +559,11 @@
                                                                   S(), g("search");
                                                               },
                                                               size: "smallCompact",
-                                                              style: [T.button, "search" === n ? T.highlightedButton : null],
+                                                              style: [D.button, "search" === n ? D.highlightedButton : null],
                                                           },
-                                                          a.createElement(C.default, { style: T.icon }),
+                                                          a.createElement(C.default, { style: D.icon }),
                                                           a.createElement(m.Z, { size: "space4" }),
-                                                          a.createElement(p.ZP, { size: "subtext2", style: T.appText, weight: "medium" }, F?.label || ""),
+                                                          a.createElement(p.ZP, { size: "subtext2", style: D.appText, weight: "medium" }, M?.label || ""),
                                                       ),
                                                       a.createElement(
                                                           c.ZP,
@@ -575,28 +575,28 @@
                                                                   S(), g("think");
                                                               },
                                                               size: "smallCompact",
-                                                              style: [T.button, "think" === n ? T.highlightedButton : null],
+                                                              style: [D.button, "think" === n ? D.highlightedButton : null],
                                                           },
-                                                          a.createElement(E.default, { style: T.reasoningIcon }),
+                                                          a.createElement(k.default, { style: D.reasoningIcon }),
                                                           a.createElement(m.Z, { size: "space4" }),
-                                                          a.createElement(p.ZP, { size: "subtext2", style: T.appText, weight: "medium" }, M?.label || ""),
+                                                          a.createElement(p.ZP, { size: "subtext2", style: D.appText, weight: "medium" }, F?.label || ""),
                                                       ),
                                                   ),
                                               ),
                                           ),
-                                          a.createElement(i.Z, { style: T.descriptionContainer }, a.createElement(p.ZP, { size: "body", weight: "medium" }, "think" === n ? Z : v)),
+                                          a.createElement(i.Z, { style: D.descriptionContainer }, a.createElement(p.ZP, { size: "body", weight: "medium" }, "think" === n ? x : v)),
                                       ),
                                   ),
                                   a.createElement(
                                       i.Z,
-                                      { style: [T.navRow, k ? T.pushToEnd : void 0] },
-                                      a.createElement(d.Z, null, ({ isHovered: e }) => a.createElement(i.Z, { onClick: D, style: [T.ctaButton, e ? T.ctaButtonHovered : void 0] }, a.createElement(p.ZP, { color: "light" === u.default.theme.paletteName ? "white" : "alwaysBlack", size: "body", weight: "bold" }, "Try it"))),
+                                      { style: [D.navRow, w ? D.pushToEnd : void 0] },
+                                      a.createElement(d.Z, null, ({ isHovered: e }) => a.createElement(i.Z, { onClick: T, style: [D.ctaButton, e ? D.ctaButtonHovered : void 0] }, a.createElement(p.ZP, { color: "light" === u.default.theme.paletteName ? "white" : "alwaysBlack", size: "body", weight: "bold" }, "Try it"))),
                                   ),
                               ),
                           )
                         : null;
                 },
-                T = u.default.create((e) => {
+                D = u.default.create((e) => {
                     return {
                         modalContainer: { border: `solid 1px ${e.colors.gray100}`, backgroundColor: e.colors.navigationBackground, paddingVertical: e.spaces.space24, gap: e.spaces.space32, overflow: "hidden", borderRadius: e.spaces.space24 },
                         mobileSpacing: { border: "none", borderWidth: 0, gap: e.spaces.space24, flex: 1 },
@@ -604,12 +604,12 @@
                         titleSection: { gap: e.spaces.space16, paddingHorizontal: e.spaces.space32, alignSelf: "stretch" },
                         titleSectionMobile: { paddingHorizontal: 0 },
                         mockInput: { padding: e.spaces.space24, backgroundColor: "light" === e.paletteName ? e.colors.gray0 : e.colors.gray50, borderTopStartRadius: e.spaces.space24, borderBottomStartRadius: e.spaces.space24, gap: e.spaces.space20, marginStart: e.spaces.space32, marginBottom: e.spaces.space48, minWidth: `calc(100% - ${e.spaces.space32})`, position: "relative", borderWidth: 1, borderStyle: "solid", borderColor: "light" === e.paletteName ? e.colors.gray200 : e.colors.gray300, borderEnd: "none", borderEndWidth: 0 },
-                        button: { ...k.il },
+                        button: { ...w.il },
                         buttonRow: { flexDirection: "row", gap: e.spaces.space8, alignItems: "center" },
                         highlightedButton: { backgroundColor: "rgba(29, 155, 240, 0.2)" },
-                        icon: { ...k.Qs },
+                        icon: { ...w.Qs },
                         appText: { color: "inherit" },
-                        reasoningIcon: { ...k.Qs, fill: "none" },
+                        reasoningIcon: { ...w.Qs, fill: "none" },
                         descriptionContainer: { paddingHorizontal: e.spaces.space32 },
                         navRow: { flexDirection: "row", gap: e.spaces.space4, justifyContent: "center", alignItems: "center" },
                         pushToEnd: { flex: 1, alignItems: "stretch", flexDirection: "column", justifyContent: "flex-end", paddingHorizontal: e.spaces.space24, paddingBottom: e.spaces.space16 },
@@ -620,7 +620,7 @@
                         wrapperBoxMobile: { marginHorizontal: e.spaces.space24 },
                         wrapperInnerBox: {},
                         ctaButton: { height: u.default.theme.spaces.space48, paddingHorizontal: u.default.theme.spaces.space64, flexDirection: "row", transitionDuration: "200ms", alignItems: "center", justifyContent: "center", backgroundColor: "light" === e.paletteName ? e.colors.alwaysBlack : e.colors.white, borderRadius: e.spaces.space8, cursor: "pointer" },
-                        ctaButtonHovered: { backgroundColor: "light" === e.paletteName ? ((t = e.colors.alwaysBlack), (o = 0.1), (0, y.rb)((0, g.$n)({ color: (0, y.xO)(t), coefficient: o }))) : F(e.colors.white, 0.1) },
+                        ctaButtonHovered: { backgroundColor: "light" === e.paletteName ? ((t = e.colors.alwaysBlack), (o = 0.1), (0, y.rb)((0, g.$n)({ color: (0, y.xO)(t), coefficient: o }))) : M(e.colors.white, 0.1) },
                     };
                     var t, o;
                 });
@@ -629,12 +629,12 @@
                     a = (0, g.oL)({ color: o, percent: t, replace: !0 });
                 return (0, y.rb)(a);
             }
-            function F(e, t) {
+            function M(e, t) {
                 return (0, y.rb)((0, g._j)({ color: (0, y.xO)(e), coefficient: t }));
             }
         },
         376856: (e, t, o) => {
-            o.d(t, { Z: () => w });
+            o.d(t, { Z: () => E });
             var a = o(202784),
                 r = o(325686),
                 n = o(815858),
@@ -652,23 +652,23 @@
                 b = o(442955),
                 f = o(300458),
                 C = o(796064);
-            const E = c().j22655f2;
-            function w({ access: e, conversationKey: t }) {
+            const k = c().j22655f2;
+            function E({ access: e, conversationKey: t }) {
                 const o = (0, m.hC)("responsive_web_grok_promo_banner"),
                     { layout: s } = (0, g.Z)(),
                     l = s?.sections || [],
                     { filterKey: c, hasSelectedFilterKey: d, isInputFocused: u } = (0, h.w)(),
-                    [w, k] = a.useState(!0),
+                    [E, w] = a.useState(!0),
                     v = d && l.some((e) => "FLOATING_CARD" === e.section_type && e.prompts?.some((e) => e.filter_key === c)),
-                    Z = a.useRef(null);
+                    x = a.useRef(null);
                 return a.createElement(
                     n.Z,
                     { duration: "long", show: !!s, type: "fade" },
-                    w &&
+                    E &&
                         o &&
                         a.createElement(f.U, {
                             onClose: () => {
-                                k(!1);
+                                w(!1);
                             },
                         }),
                     a.createElement(
@@ -688,9 +688,9 @@
                                     inputAtHome: !0,
                                     isIdle: !0,
                                     onFieldTextInputRef: (e) => {
-                                        Z.current = e;
+                                        x.current = e;
                                     },
-                                    placeholder: E,
+                                    placeholder: k,
                                     useDraftPersistence: !0,
                                 }),
                             ),
@@ -698,7 +698,7 @@
                                 ? a.createElement(b.V, { hasSelectedFilterKey: d, isFocusingInput: u })
                                 : a.createElement(C.ZP, {
                                       focusInput: () => {
-                                          Z.current && Z.current.focus();
+                                          x.current && x.current.focus();
                                       },
                                       isMobile: !1,
                                       style: _.presets,
@@ -707,11 +707,11 @@
                     ),
                 );
             }
-            const k = !!d.ZP.isWebView(),
-                _ = s.default.create((e) => ({ container: { width: "100%", overflowX: "hidden", overflowY: "auto", alignItems: "center", paddingBottom: 64, gap: e.spaces.space24, paddingTop: "22vh" }, grokContainer: { maxWidth: u.vf, width: "100%", padding: e.spaces.space16 }, bottomContainer: { position: "sticky", backgroundColor: e.colors.appBarBackground, paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space8, paddingBottom: 14, bottom: k ? 0 : e.componentDimensions.appBarHeightPx, width: "100%", borderTopStartRadius: e.spaces.space24, borderTopEndRadius: e.spaces.space24 }, searchContainer: { alignItems: "center", width: "100%", zIndex: 1e3 }, logo: { height: 70, width: 194 }, presets: { marginTop: e.spaces.space16, width: "100%" } }));
+            const w = !!d.ZP.isWebView(),
+                _ = s.default.create((e) => ({ container: { width: "100%", overflowX: "hidden", overflowY: "auto", alignItems: "center", paddingBottom: 64, gap: e.spaces.space24, paddingTop: "22vh" }, grokContainer: { maxWidth: u.vf, width: "100%", padding: e.spaces.space16 }, bottomContainer: { position: "sticky", backgroundColor: e.colors.appBarBackground, paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space8, paddingBottom: 14, bottom: w ? 0 : e.componentDimensions.appBarHeightPx, width: "100%", borderTopStartRadius: e.spaces.space24, borderTopEndRadius: e.spaces.space24 }, searchContainer: { alignItems: "center", width: "100%", zIndex: 1e3 }, logo: { height: 70, width: 194 }, presets: { marginTop: e.spaces.space16, width: "100%" } }));
         },
         961614: (e, t, o) => {
-            o.d(t, { Z: () => E });
+            o.d(t, { Z: () => k });
             var a = o(202784),
                 r = o(325686),
                 n = o(721266),
@@ -729,24 +729,24 @@
                 b = o(796064),
                 f = o(701311);
             const C = c().ia5bef3e;
-            function E() {
+            function k() {
                 const { access: e, conversationKey: t } = (0, d.ZP)(),
                     { filterKey: o, hasSelectedFilterKey: s } = (0, g.w)(),
                     { layout: l } = (0, m.Z)(),
                     p = a.useRef(null),
-                    E = s && l?.sections.some((e) => "FLOATING_CARD" === e.section_type && e.prompts?.some((e) => e.filter_key === o));
+                    k = s && l?.sections.some((e) => "FLOATING_CARD" === e.section_type && e.prompts?.some((e) => e.filter_key === o));
                 return a.createElement(
                     a.Fragment,
                     null,
                     a.createElement(
                         r.Z,
-                        { style: w.container },
+                        { style: E.container },
                         a.createElement(
                             r.Z,
-                            { style: w.grokContainer },
+                            { style: E.grokContainer },
                             a.createElement(
                                 r.Z,
-                                { style: w.searchContainer },
+                                { style: E.searchContainer },
                                 a.createElement(n.Z, { size: "space24" }),
                                 a.createElement(i.ZP, { align: "center", size: "title3", weight: "medium" }, a.createElement(f.Z, { text: C })),
                                 a.createElement(n.Z, { size: "space48" }),
@@ -763,10 +763,10 @@
                                 }),
                             ),
                             a.createElement(n.Z, { size: "space16" }),
-                            E && l
+                            k && l
                                 ? a.createElement(
                                       r.Z,
-                                      { style: w.moduleContainer },
+                                      { style: E.moduleContainer },
                                       l.sections.map((e, t) => ("TEXT_CARD" === e.section_type ? a.createElement(h.F, { data: e, key: t, style: "block" }) : "FLOATING_CARD" === e.section_type ? a.createElement(y.u, { data: e, hasSelectedFilterKey: s, key: t }) : void 0)),
                                   )
                                 : a.createElement(b.ZP, {
@@ -774,13 +774,26 @@
                                           p.current && p.current.focus();
                                       },
                                       isMobile: !1,
-                                      style: w.presets,
+                                      style: E.presets,
                                   }),
                         ),
                     ),
                 );
             }
-            const w = s.default.create((e) => ({ grokContainer: { maxWidth: p.vf, width: "100%", padding: e.spaces.space8 }, container: { width: "100%", height: "100%", alignItems: "center", overflow: "auto", gap: e.spaces.space24 }, searchContainer: { alignItems: "center", width: "100%" }, moduleContainer: { gap: e.spaces.space24 }, presets: { width: "100%" } }));
+            const E = s.default.create((e) => ({ grokContainer: { maxWidth: p.vf, width: "100%", padding: e.spaces.space8 }, container: { width: "100%", height: "100%", alignItems: "center", overflow: "auto", gap: e.spaces.space24 }, searchContainer: { alignItems: "center", width: "100%" }, moduleContainer: { gap: e.spaces.space24 }, presets: { width: "100%" } }));
+        },
+        970205: (e, t, o) => {
+            o.d(t, { Z: () => s });
+            var a = o(202784),
+                r = o(491915),
+                n = o(392237);
+            const i = JSON.parse(
+                '{"v":"5.5.2","nm":"grok-thinking","ddd":0,"assets":[],"w":1024,"h":988,"ip":0,"op":123,"fr":30,"fonts":{"list":[]},"layers":[{"ty":4,"st":0,"ip":0,"op":123,"ks":{},"shapes":[{"ty":"gr","it":[{"ty":"rc","p":{"a":0,"k":[569.810595,241.714867]},"s":{"a":0,"k":[1139.62119,483.429734]},"r":{"a":0,"k":0},"d":1},{"ty":"fl","o":{"a":0,"k":100},"c":{"a":0,"k":[0,0,0]}},{"ty":"tr","o":{"a":0,"k":100},"a":{"a":0,"k":[569.810595,241.714867]},"p":{"a":1,"k":[{"t":33,"s":[-676.07,1442.39],"i":{"x":1,"y":1},"o":{"x":0,"y":0}},{"t":54,"s":[113.733773,564.995966],"i":{"x":1,"y":1},"o":{"x":0,"y":0}},{"t":90,"s":[113.733773,564.995966],"i":{"x":1,"y":1},"o":{"x":0,"y":0}},{"t":111,"s":[1182.613381,-540.805216],"i":{"x":1,"y":1},"o":{"x":0,"y":0}}]},"s":{"a":0,"k":[137.4256,99.6022]},"r":{"a":0,"k":-45.378203}}]}],"ind":4,"parent":3,"td":1},{"ty":4,"st":0,"ip":0,"op":123,"ks":{"a":{"a":0,"k":[512,551.470657]},"p":{"a":0,"k":[512,551.470657]},"s":{"a":0,"k":[85.8824,85.8824]}},"shapes":[{"ty":"gr","it":[{"ty":"gr","it":[{"ty":"sh","ks":{"a":0,"k":{"v":[[325.226,695.251],[328.285,301.668],[634.026,240.596],[749.454,186.994],[671.424,144.2],[255.323,228.382],[171.613,646.833],[71.7385,904.916],[0,987.429],[325.139,695.339]],"i":[[0,0],[-101.623,102.108],[-107.477,-45.342],[0,0],[30.583,11.423],[112.37,-112.917],[-58.369,-142.618],[72.0005,-76.098],[20.6216,-28.559],[0,0]],"o":[[-119.098,-114.411],[75.146,-75.571],[0,0],[-20.797,-15.114],[-138.234,-57.2058],[-108.089,108.699],[43.603,106.59],[-25.5148,26.977],[0,0],[0,0]],"c":false}}},{"ty":"fl","o":{"a":0,"k":100},"c":{"a":0,"k":[0.392157,0.392157,0.388235]}},{"ty":"tr","o":{"a":0,"k":100},"a":{"a":0,"k":[374.72699,551.468048]},"p":{"a":0,"k":[374.72699,551.468048]}}]},{"ty":"tr","o":{"a":0,"k":100}}]}],"ind":3,"tt":1,"tp":4},{"ty":4,"st":0,"ip":0,"op":123,"ks":{},"shapes":[{"ty":"gr","it":[{"ty":"rc","p":{"a":0,"k":[582.994165,168.286976]},"s":{"a":0,"k":[1165.988329,336.573951]},"r":{"a":0,"k":0},"d":1},{"ty":"fl","o":{"a":0,"k":100},"c":{"a":0,"k":[0,0,0]}},{"ty":"tr","o":{"a":0,"k":100},"a":{"a":0,"k":[582.994164,168.286975]},"p":{"a":1,"k":[{"t":48,"s":[1622.776687,-337.800281],"i":{"x":1,"y":1},"o":{"x":0,"y":0}},{"t":69,"s":[805.657936,505.258749],"i":{"x":1,"y":1},"o":{"x":0,"y":0}},{"t":105,"s":[805.657936,505.258749],"i":{"x":1,"y":1},"o":{"x":0,"y":0}},{"t":122.99999999999999,"s":[-61.999097,1428.298134],"i":{"x":1,"y":1},"o":{"x":0,"y":0}}]},"s":{"a":0,"k":[110.4386,134.7241]},"r":{"a":0,"k":-48.435236}}]}],"ind":2,"parent":1,"td":1},{"ty":4,"st":0,"ip":0,"op":123,"ks":{"a":{"a":0,"k":[512,494]},"p":{"a":0,"k":[512,494]},"s":{"a":0,"k":[85.8824,85.8824]}},"shapes":[{"ty":"gr","it":[{"ty":"gr","it":[{"ty":"sh","ks":{"a":0,"k":{"v":[[395.479,633.828],[735.91,381.105],[784.406,392.792],[724.288,699.996],[419.247,760.277],[303.556,814.143],[796.901,773.282],[898.785,412.476],[899.047,412.739],[1016.4,10.6326],[1024,0],[883.144,141.651],[883.144,141.212],[395.392,633.916]],"i":[[0,0],[0,0],[-7.952,-19.244],[83.273,-83.743],[105.904,41.827],[0,0],[-125.914,126.713],[28.923,123.461],[0,0],[-107.042,148.2414],[-2.53,3.60279],[0,0],[0,0],[0,0]],"o":[[0,0],[16.689,-12.39],[41.854,101.493],[-83.272,83.743],[0,0],[165.934,114.059],[99.875,-100.439],[0,0],[-41.942,-181.369],[2.53,-3.51489],[0,0],[0,0],[0,0],[0,0]],"c":false}}},{"ty":"fl","o":{"a":0,"k":100},"c":{"a":0,"k":[0.392157,0.392157,0.388235]}},{"ty":"tr","o":{"a":0,"k":100},"a":{"a":0,"k":[663.777985,442.921814]},"p":{"a":0,"k":[663.777985,442.921814]}}]},{"ty":"tr","o":{"a":0,"k":100}}]}],"ind":1,"tt":1,"tp":2},{"ty":4,"st":0,"ip":0,"op":123,"ks":{"a":{"a":0,"k":[562.691091,556.173434]},"p":{"a":0,"k":[541.363613,533.491393]}},"shapes":[{"ty":"rc","p":{"a":0,"k":[562.691092,556.173434]},"s":{"a":0,"k":[1125.382183,1112.346868]},"r":{"a":0,"k":0},"d":1}]}]}',
+            );
+            function s({ style: e }) {
+                return a.createElement(r.ZP, { animation: i, animationContainerStyle: [l.animationContainer, e], autoplay: !0, loop: !0, withControls: !1 });
+            }
+            const l = n.default.create((e) => ({ animationContainer: { width: e.spaces.space24, height: e.spaces.space24 } }));
         },
         200179: (e, t, o) => {
             o.d(t, { Z: () => R });
@@ -801,27 +814,27 @@
                 b = o(928831),
                 f = o(892451),
                 C = o(300458),
-                E = o(796064),
-                w = o(731708),
-                k = o(530732),
+                k = o(796064),
+                E = o(731708),
+                w = o(530732),
                 _ = o(715614);
             const v = l().ebea5880;
-            function Z({ conversationHistory: e, style: t }) {
+            function x({ conversationHistory: e, style: t }) {
                 const o = a.useMemo(() => e.slice(0, 3), [e]);
                 return o.length
                     ? a.createElement(
                           r.Z,
-                          { style: [x.container, t] },
-                          a.createElement(r.Z, { style: x.headerContainer }, a.createElement(_.default, { style: x.headerIcon }), a.createElement(w.ZP, { style: x.headerText }, v)),
+                          { style: [Z.container, t] },
+                          a.createElement(r.Z, { style: Z.headerContainer }, a.createElement(_.default, { style: Z.headerIcon }), a.createElement(E.ZP, { style: Z.headerText }, v)),
                           a.createElement(
                               r.Z,
-                              { style: x.conversationListContainer },
-                              o.map((e) => a.createElement(k.Z, { key: `recent-conversation-${e.grokConversation.rest_id}`, link: `/i/grok?conversation=${e.grokConversation.rest_id}`, onClick: () => {}, style: x.conversationItemContainer, withoutInteractiveStyles: !0 }, a.createElement(w.ZP, { numberOfLines: 1, style: x.conversationItemText, weight: "medium" }, e.title))),
+                              { style: Z.conversationListContainer },
+                              o.map((e) => a.createElement(w.Z, { key: `recent-conversation-${e.grokConversation.rest_id}`, link: `/i/grok?conversation=${e.grokConversation.rest_id}`, onClick: () => {}, style: Z.conversationItemContainer, withoutInteractiveStyles: !0 }, a.createElement(E.ZP, { numberOfLines: 1, style: Z.conversationItemText, weight: "medium" }, e.title))),
                           ),
                       )
                     : null;
             }
-            const x = i.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space12, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateY(10px)" }, "100%": { opacity: 1, transform: "translateY(0)" } }], animationTimingFunction: "ease", animationFillMode: "both" }, headerContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4, color: e.colors.gray800 }, headerIcon: { width: e.spaces.space16, height: e.spaces.space16, color: "inherit" }, headerText: { fontSize: e.fontSizes.subtext2, color: "inherit" }, conversationListContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, conversationItemContainer: { display: "flex", maxWidth: "100%", width: "max-content", backgroundColor: e.colors.gray0, paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space12, borderRadius: e.spaces.space12, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray100 }, conversationItemText: { color: e.colors.gray900, fontSize: e.fontSizes.subtext1 } }));
+            const Z = i.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space12, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateY(10px)" }, "100%": { opacity: 1, transform: "translateY(0)" } }], animationTimingFunction: "ease", animationFillMode: "both" }, headerContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4, color: e.colors.gray800 }, headerIcon: { width: e.spaces.space16, height: e.spaces.space16, color: "inherit" }, headerText: { fontSize: e.fontSizes.subtext2, color: "inherit" }, conversationListContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, conversationItemContainer: { display: "flex", maxWidth: "100%", width: "max-content", backgroundColor: e.colors.gray0, paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space12, borderRadius: e.spaces.space12, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray100 }, conversationItemText: { color: e.colors.gray900, fontSize: e.fontSizes.subtext1 } }));
             var I = o(213103);
             const P = l().j22655f2;
             function R({ access: e, conversationKey: t }) {
@@ -829,43 +842,43 @@
                     i = (0, d.hC)("responsive_web_grok_promo_banner"),
                     s = (0, d.hC)("responsive_web_grok_show_android_promo_banner"),
                     { layout: l } = (0, y.Z)(),
-                    { filterKey: p, hasSelectedFilterKey: w, hasValue: k, isInputFocused: _ } = (0, b.w)(),
-                    [v, x] = a.useState(!0),
+                    { filterKey: p, hasSelectedFilterKey: E, hasValue: w, isInputFocused: _ } = (0, b.w)(),
+                    [v, Z] = a.useState(!0),
                     R = (0, m.v9)(u.bv),
                     z = (0, m.v9)(u.JE),
-                    T = a.useRef(null);
+                    D = a.useRef(null);
                 a.useEffect(() => {
                     o((0, g.A)());
                 }, [o]);
                 const S = "ImageEdit" === p || "CreateImage" === p,
-                    F = l?.sections.find((e) => "FLOATING_CARD" === e.section_type),
-                    M = F?.prompts?.some((e) => e.filter_key === p),
-                    B = () => {
-                        T.current && T.current.focus();
+                    M = l?.sections.find((e) => "FLOATING_CARD" === e.section_type),
+                    F = M?.prompts?.some((e) => e.filter_key === p),
+                    O = () => {
+                        D.current && D.current.focus();
                     };
                 return a.createElement(
                     a.Fragment,
                     null,
-                    w && !M
-                        ? a.createElement(r.Z, { style: D.logoContainer }, a.createElement(c.default, { style: D.logo }))
+                    E && !F
+                        ? a.createElement(r.Z, { style: T.logoContainer }, a.createElement(c.default, { style: T.logo }))
                         : _
-                          ? a.createElement(r.Z, { style: D.container })
+                          ? a.createElement(r.Z, { style: T.container })
                           : a.createElement(
                                 r.Z,
-                                { style: D.container },
+                                { style: T.container },
                                 v &&
                                     i &&
                                     a.createElement(C.U, {
                                         onClose: () => {
-                                            x(!1);
+                                            Z(!1);
                                         },
                                     }),
                                 s && a.createElement(I.t, null),
                             ),
                     a.createElement(
                         r.Z,
-                        { style: D.bottomContainer },
-                        k ? null : w ? (F && M ? a.createElement(a.Fragment, null, a.createElement(f.u, { data: F, hasSelectedFilterKey: w, numPromptsToShow: 2 }), a.createElement(n.Z, { axis: "y", size: S ? "space40" : "space12" })) : null) : a.createElement(r.Z, { style: D.idleContent }, "loaded" === z && !_ && a.createElement(Z, { conversationHistory: R, style: D.recentConversations }), a.createElement(E.ZP, { focusInput: B, isMobile: !0, style: D.presets })),
+                        { style: T.bottomContainer },
+                        w ? null : E ? (M && F ? a.createElement(a.Fragment, null, a.createElement(f.u, { data: M, hasSelectedFilterKey: E, numPromptsToShow: 2 }), a.createElement(n.Z, { axis: "y", size: S ? "space40" : "space12" })) : null) : a.createElement(r.Z, { style: T.idleContent }, "loaded" === z && !_ && a.createElement(x, { conversationHistory: R, style: T.recentConversations }), a.createElement(k.ZP, { focusInput: O, isMobile: !0, style: T.presets })),
                         a.createElement(h.Z, {
                             conversationKey: t,
                             hasAccess: !1 !== e && "restricted" !== e,
@@ -873,7 +886,7 @@
                             inputAtHome: !0,
                             isIdle: !0,
                             onFieldTextInputRef: (e) => {
-                                T.current = e;
+                                D.current = e;
                             },
                             placeholder: P,
                             useDraftPersistence: !0,
@@ -882,142 +895,7 @@
                 );
             }
             const z = !!p.ZP.isWebView(),
-                D = i.default.create((e) => ({ container: { width: "100%", overflowX: "hidden", overflowY: "auto", alignItems: "center", paddingBottom: e.spaces.space64, gap: e.spaces.space24, paddingHorizontal: e.spaces.space12 }, logoContainer: { display: "flex", flexDirection: "column", flex: 1, justifyContent: "center", alignItems: "center", paddingBottom: "5vh", width: "100%", animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateY(-20px)" }, "100%": { opacity: 1, transform: "translateY(0)" } }], animationTimingFunction: "ease", animationFillMode: "both" }, logo: { height: 100, width: 100, color: e.colors.gray50 }, bottomContainer: { position: "sticky", backgroundColor: e.colors.appBarBackground, paddingVertical: e.spaces.space8, paddingBottom: 14, bottom: z ? 0 : e.componentDimensions.appBarHeightPx, width: "100%", borderTopStartRadius: e.spaces.space24, borderTopEndRadius: e.spaces.space24, paddingHorizontal: e.spaces.space12 }, idleContent: { width: "100%" }, recentConversations: { width: "100%", marginBottom: e.spaces.space12 }, presets: { width: "100%", marginBottom: e.spaces.space12 } }));
-        },
-        796064: (e, t, o) => {
-            o.d(t, { ZP: () => I, y3: () => v, zF: () => Z });
-            var a = o(807896),
-                r = (o(136728), o(202784)),
-                n = o(214997),
-                i = o(325686),
-                s = o(449161),
-                l = o(731708),
-                c = o(154003),
-                p = o(721266),
-                d = o(392237),
-                m = o(111677),
-                u = o.n(m),
-                g = o(707187),
-                y = o(254944),
-                h = o(409600),
-                b = o(191796),
-                f = o(323265),
-                C = o(725405),
-                E = o(620988),
-                w = o(623494),
-                k = o(246277),
-                _ = o(928831);
-            const v = u().acb2baa0,
-                Z = u().fe9ad897,
-                x = u().h30fd372;
-            function I({ focusInput: e, isMobile: t, style: o }) {
-                const d = (0, C.Z)(),
-                    { setFilterKey: m } = (0, _.w)(),
-                    { clearSelectedFile: u, onFileSelected: I, selectedFiles: R } = (0, E.ZP)(),
-                    z = r.useMemo(() => Object.keys(R), [R]),
-                    D = [
-                        {
-                            id: "create-images",
-                            text: v,
-                            icon: r.createElement(g.default, { style: [P.icon, t ? P.mobileIcon : null] }),
-                            onClick: () => {
-                                m("CreateImage");
-                            },
-                            type: "prefill",
-                        },
-                        {
-                            id: "edit-image",
-                            text: Z({ ttc_grok_preset: "" }),
-                            icon: r.createElement(y.default, { style: [P.icon, t ? P.mobileIcon : null] }),
-                            onClick: () => {
-                                m("ImageEdit");
-                            },
-                            type: "file-input",
-                        },
-                    ];
-                f.ZP.isAndroid() && D.push({ id: "try-voice-mode", text: x, icon: r.createElement(h.default, { style: [P.icon, t ? P.mobileIcon : null] }), onClick: () => {}, type: "external-link", url: "https://play.google.com/store/apps/details?id=ai.x.grok" });
-                const T = r.useCallback(
-                        (e) => {
-                            if (e.length <= 0) return;
-                            z.length > 0 &&
-                                z.forEach((e) => {
-                                    u(e);
-                                });
-                            const t = e[0];
-                            I(t).then(() => {
-                                m("ImageEdit");
-                            }),
-                                (0, w.dP)(d, "button");
-                        },
-                        [I, d, m, u, z],
-                    ),
-                    S = r.useCallback(
-                        (t, o) => {
-                            d.scribe({ element: "grok-home-preset", action: "click", data: { event_info: o.id } }), "external-link" === o.type && o.url ? (window.location.href = o.url) : o.onClick && (o.onClick?.(), t.preventDefault(), e?.());
-                        },
-                        [e, d],
-                    ),
-                    F = (e) => ({
-                        backgroundColor: "gray0",
-                        borderColor: "gray100",
-                        key: e.id,
-                        onClick: (t) => {
-                            S(t, e);
-                        },
-                        style: t ? P.mobilePreset : P.preset,
-                        disabled: "edit-image" === e.id && z.length > 1,
-                    });
-                return t
-                    ? r.createElement(
-                          n.Z,
-                          { contentContainerStyle: P.mobilePresetContainer, horizontal: !0, showsHorizontalScrollIndicator: !1, style: [P.mobilePresets, o] },
-                          D.map((e) => {
-                              const t = F(e);
-                              return "file-input" === e.type && "edit-image" === e.id && z.length < 1
-                                  ? r.createElement(
-                                        s.Z,
-                                        (0, a.Z)({}, t, {
-                                            accept: k.$.join(","),
-                                            multiple: !1,
-                                            onChange: (e) => {
-                                                T(e);
-                                            },
-                                            onClick: () => {
-                                                d.scribe({ element: "grok-home-preset", action: "click", data: { event_info: e.id } });
-                                            },
-                                        }),
-                                        r.createElement(i.Z, { style: P.mobileButtonContent }, e.icon, r.createElement(l.ZP, { style: P.text }, e.text)),
-                                    )
-                                  : r.createElement(c.ZP, t, r.createElement(i.Z, { style: P.mobileButtonContent }, r.createElement(i.Z, { style: P.mobilePresetHeader }, e.icon, "external-link" === e.type && r.createElement(b.default, { style: P.externalLinkIcon })), r.createElement(l.ZP, { style: P.text }, e.text)));
-                          }),
-                      )
-                    : r.createElement(
-                          i.Z,
-                          { style: [P.presets, o] },
-                          D.map((e) => {
-                              const t = F(e);
-                              return "file-input" === e.type && "edit-image" === e.id && z.length < 1
-                                  ? r.createElement(
-                                        s.Z,
-                                        (0, a.Z)({}, t, {
-                                            accept: k.$.join(","),
-                                            multiple: !1,
-                                            onChange: (e) => {
-                                                T(e);
-                                            },
-                                            onClick: () => {
-                                                d.scribe({ element: "grok-home-preset", action: "click", data: { event_info: e.id } });
-                                            },
-                                        }),
-                                        e.icon,
-                                        r.createElement(p.Z, { size: "space4" }),
-                                        r.createElement(l.ZP, { style: P.text }, e.text),
-                                    )
-                                  : r.createElement(c.ZP, t, e.icon, r.createElement(p.Z, { size: "space4" }), r.createElement(l.ZP, { style: P.text }, e.text));
-                          }),
-                      );
-            }
-            const P = d.default.create((e) => ({ mobilePresets: { animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationFillMode: "both" }, mobilePresetContainer: { display: "flex", flexDirection: "row", gap: e.spaces.space12 }, mobilePreset: { borderRadius: e.spaces.space16, overflow: "hidden", padding: e.spaces.space12, paddingStart: e.spaces.space12, paddingEnd: e.spaces.space12 }, mobileButtonContent: { display: "flex", gap: e.spaces.space8, flexDirection: "column" }, mobilePresetHeader: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", width: "100%" }, presets: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: e.spaces.space12, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationFillMode: "both" }, preset: { display: "flex", flexDirection: "row", alignItems: "center", transition: "background-color 0.2s ease", paddingStart: e.spaces.space12, paddingEnd: e.spaces.space12, paddingTop: e.spaces.space8, paddingBottom: e.spaces.space8, borderRadius: e.spaces.space16 }, icon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray900 }, mobileIcon: { width: e.spaces.space20, height: e.spaces.space20 }, text: { fontSize: e.fontSizes.subtext1, fontWeight: e.fontWeights.medium, marginStart: e.spaces.space4, color: e.colors.gray900 }, externalLinkIcon: { width: e.spaces.space20, height: e.spaces.space20, color: e.colors.gray400 } }));
+                T = i.default.create((e) => ({ container: { width: "100%", overflowX: "hidden", overflowY: "auto", alignItems: "center", paddingBottom: e.spaces.space64, gap: e.spaces.space24, paddingHorizontal: e.spaces.space12 }, logoContainer: { display: "flex", flexDirection: "column", flex: 1, justifyContent: "center", alignItems: "center", paddingBottom: "5vh", width: "100%", animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateY(-20px)" }, "100%": { opacity: 1, transform: "translateY(0)" } }], animationTimingFunction: "ease", animationFillMode: "both" }, logo: { height: 100, width: 100, color: e.colors.gray50 }, bottomContainer: { position: "sticky", backgroundColor: e.colors.appBarBackground, paddingVertical: e.spaces.space8, paddingBottom: 14, bottom: z ? 0 : e.componentDimensions.appBarHeightPx, width: "100%", borderTopStartRadius: e.spaces.space24, borderTopEndRadius: e.spaces.space24, paddingHorizontal: e.spaces.space12 }, idleContent: { width: "100%" }, recentConversations: { width: "100%", marginBottom: e.spaces.space12 }, presets: { width: "100%", marginBottom: e.spaces.space12 } }));
         },
         213103: (e, t, o) => {
             o.d(t, { t: () => y });
@@ -1057,4 +935,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-cebf58fc.572fa91a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-cebf58fc.cfab2f1a.js.map

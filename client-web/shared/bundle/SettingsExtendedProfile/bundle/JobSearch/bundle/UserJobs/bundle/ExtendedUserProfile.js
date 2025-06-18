@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.SettingsExtendedProfile~bundle.JobSearch~bundle.UserJobs~bundle.ExtendedUserProfile", "icons/IconItalic-js", "icons/IconNumberedList-js"],
+    ["shared~bundle.SettingsExtendedProfile~bundle.JobSearch~bundle.UserJobs~bundle.ExtendedUserProfile"],
     {
         949626: (e, n, t) => {
             t.d(n, { Z: () => r });
@@ -31,7 +31,7 @@
                 l = `\n    .longform-header-one {\n        font-size: ${o.default.theme.fontSizes.title2};\n        font-weight: ${o.default.theme.fontWeights.heavy};\n        line-height: ${o.default.theme.lineHeights.title1};\n        margin-bottom: ${o.default.theme.spaces.space28};\n        margin-top: 0;\n    }\n\n    .longform-header-one-narrow {\n        font-size: calc(${o.default.theme.fontSizes.headline1} + 1px);\n        font-weight: ${o.default.theme.fontWeights.heavy};\n        line-height: ${o.default.theme.lineHeights.title4};\n        margin-bottom: ${o.default.theme.spaces.space28};\n        margin-top: 0;\n    }\n\n    .longform-header-two {\n        font-size: ${o.default.theme.fontSizes.title3};\n        font-weight: ${o.default.theme.fontWeights.heavy};\n        line-height: ${o.default.theme.lineHeights.title2};\n        margin-bottom: ${o.default.theme.spaces.space28};\n        margin-top: 0;\n    }\n\n    .longform-header-two-narrow {\n        font-size: calc(${o.default.theme.fontSizes.headline2} + 1px);\n        font-weight: ${o.default.theme.fontWeights.heavy};\n        line-height: ${o.default.theme.lineHeights.headline1};\n        margin-bottom: ${o.default.theme.spaces.space28};\n        margin-top: 0;\n    }\n\n    .longform-unstyled, .longform-blockquote {\n        font-size: ${o.default.theme.fontSizes.headline2};\n        line-height: ${o.default.theme.lineHeights.title4};\n        margin-bottom: ${o.default.theme.spaces.space28};\n        margin-top: 0;\n    }\n\n    .longform-unstyled-narrow, .longform-blockquote-narrow {\n        font-size: ${o.default.theme.fontSizes.headline2};\n        line-height: ${o.default.theme.lineHeights.title4};\n        margin-bottom: ${o.default.theme.spaces.space28};\n        margin-top: 0;\n    }\n\n    .longform-unordered-list-item, .longform-ordered-list-item {\n        display: block;\n        font-size: ${o.default.theme.fontSizes.headline2};\n        line-height: ${o.default.theme.lineHeights.title4};   \n        margin-bottom: ${o.default.theme.spaces.space12};\n        margin-left: calc(${o.default.theme.spaces.space28} + ${o.default.theme.spaces.space2});\n        margin-top: 0;\n    }\n\n    .longform-unordered-list-item-narrow, .longform-ordered-list-item-narrow {\n        display: block;\n        font-size: ${o.default.theme.fontSizes.headline2};\n        line-height: ${o.default.theme.lineHeights.title4};   \n        margin-bottom: calc(${o.default.theme.spaces.space12} / 2);\n        margin-left: ${o.default.theme.spaces.space36};\n        margin-top: 0;\n    }\n\n    .longform-blockquote, .longform-blockquote-narrow {\n        margin-bottom: calc(${o.default.theme.spaces.space24} + ${o.default.theme.spaces.space2});\n        margin-left: 0;\n        margin-top: calc(-${o.default.theme.spaces.space2});\n        padding-left: calc(${o.default.theme.spaces.space24} + 3px);\n        position: relative;\n    }\n\n    .longform-blockquote:before, .longform-blockquote-narrow:before {\n        background: ${o.default.theme.colors.gray900};\n        border-radius: ${o.default.theme.borderRadii.infinite};\n        bottom: 0;\n        content: "";\n        left: 0;\n        position: absolute;\n        top: 0;\n        width: 3px;\n    }\n\n    .longform-header-one .public-DraftStyleDefault-block,\n    .longform-header-two .public-DraftStyleDefault-block,\n    .longform-unstyled .public-DraftStyleDefault-block,\n    .longform-unordered-list-item .public-DraftStyleDefault-block,\n    .longform-ordered-list-item .public-DraftStyleDefault-block,\n    .longform-header-one-narrow .public-DraftStyleDefault-block,\n    .longform-header-two-narrow .public-DraftStyleDefault-block,\n    .longform-unstyled-narrow .public-DraftStyleDefault-block,\n    .longform-unordered-list-item-narrow .public-DraftStyleDefault-block,\n    .longform-ordered-list-item-narrow .public-DraftStyleDefault-block {\n        padding-bottom: 0;\n        padding-top: 0;\n    }\n\n    .public-DraftStyleDefault-ul, .public-DraftStyleDefault-ol {\n        counter-reset: item;\n        margin-bottom: ${o.default.theme.spaces.space28};\n        margin-top: 0;\n        padding-left: 0;\n    }\n\n    .longform-unordered-list-item:before, .longform-ordered-list-item:before,\n    .longform-unordered-list-item-narrow:before, .longform-ordered-list-item-narrow:before {\n        position: absolute;\n        margin-left: calc(-1 * (${o.default.theme.spaces.space28} + ${o.default.theme.spaces.space2}));\n    }\n\n    .longform-unordered-list-item:before {\n        content: counter(item, disc);\n        font-size: ${o.default.theme.fontSizes.title4}\n    }\n\n    .longform-unordered-list-item-narrow:before {\n        content: counter(item, disc);\n        font-size: ${o.default.theme.fontSizes.headline1}\n    }\n\n    .longform-ordered-list-item:before, .longform-ordered-list-item-narrow:before {\n        content: counter(item) ". ";\n        counter-increment: item;\n    }\n\n    .longform-ordered-list-item::marker, .longform-ordered-list-item-narrow::marker {\n        font-variant-numeric: normal;\n    }\n`;
         },
         779802: (e, n, t) => {
-            t.d(n, { $u: () => z, Ak: () => P, KJ: () => y, LI: () => v, P7: () => b, PW: () => S, QF: () => p, Qm: () => w, Tr: () => x, b$: () => g, db: () => T, et: () => k, fR: () => h, iH: () => E, lD: () => $, su: () => D, u4: () => I, wX: () => H });
+            t.d(n, { $u: () => z, Ak: () => I, KJ: () => k, LI: () => x, P7: () => b, PW: () => S, QF: () => p, Qm: () => D, Tr: () => E, b$: () => g, db: () => q, et: () => w, fR: () => h, iH: () => v, lD: () => $, su: () => y, u4: () => T, wX: () => P });
             var o = t(202784),
                 r = t(111677),
                 l = t.n(r),
@@ -55,9 +55,9 @@
                     { buttonTestId: "btn-ul", Icon: s.default, key: b.bulleted, onPress: e(b.bulleted) },
                     { buttonTestId: "btn-ol", Icon: c.default, key: b.numbered, onPress: e(b.numbered) },
                 ],
-                w = "LINK",
-                y = (e) => [{ buttonTestId: "btn-link", Icon: m.default, key: w, onPress: e }],
-                D = (e, n) => (t) => {
+                D = "LINK",
+                k = (e) => [{ buttonTestId: "btn-link", Icon: m.default, key: D, onPress: e }],
+                y = (e, n) => (t) => {
                     const o = (n) => (e ? `${n}-narrow` : n);
                     switch (t.getType()) {
                         case b.bulleted:
@@ -76,16 +76,16 @@
                             return n?.(t) || "";
                     }
                 },
-                k = l().d5a48014,
+                w = l().d5a48014,
                 S = l().b92b6156,
                 z = l().ec5ed598,
-                v = ({ children: e, extendedWidth: n, size: t, weight: r }) => o.createElement(u.ZP, { extendedWidth: n, size: t, weight: r }, e),
-                x = { blockType: b.paragraph, label: z, component: v({ size: "body", children: z }) },
-                E = [{ blockType: b.header1, label: k, component: v({ size: "title1", extendedWidth: !0, children: k }) }, { blockType: b.header2, label: S, component: v({ size: "title3", weight: "heavy", children: S }) }, x],
-                H = ["backspace", "backspace-word", "backspace-to-start-of-line"],
-                P = ["delete", "delete-word", "delete-to-start-of-line"],
-                I = "increase-text-size",
-                T = "decrease-text-size";
+                x = ({ children: e, extendedWidth: n, size: t, weight: r }) => o.createElement(u.ZP, { extendedWidth: n, size: t, weight: r }, e),
+                E = { blockType: b.paragraph, label: z, component: x({ size: "body", children: z }) },
+                v = [{ blockType: b.header1, label: w, component: x({ size: "title1", extendedWidth: !0, children: w }) }, { blockType: b.header2, label: S, component: x({ size: "title3", weight: "heavy", children: S }) }, E],
+                P = ["backspace", "backspace-word", "backspace-to-start-of-line"],
+                I = ["delete", "delete-word", "delete-to-start-of-line"],
+                T = "increase-text-size",
+                q = "decrease-text-size";
         },
         989272: (e, n, t) => {
             t.d(n, { _i: () => r, fH: () => i, w3: () => l });
@@ -139,32 +139,6 @@
             }
             const f = [];
         },
-        856661: (e, n, t) => {
-            t.r(n), t.d(n, { default: () => d });
-            var o = t(202784),
-                r = t(890601),
-                l = t(783427),
-                i = t(347101);
-            const a = (e = {}) => {
-                const { direction: n } = (0, l.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M9 6h3.731L9.184 18H5v2h10v-2h-3.731l3.547-12H19V4H9v2z" })) }, { writingDirection: n });
-            };
-            a.metadata = { width: 24, height: 24 };
-            const d = a;
-        },
-        89085: (e, n, t) => {
-            t.r(n), t.d(n, { default: () => d });
-            var o = t(202784),
-                r = t(890601),
-                l = t(783427),
-                i = t(347101);
-            const a = (e = {}) => {
-                const { direction: n } = (0, l.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M3.905 6.516h-.423V4.354h.263c.564-.015 1.018-.126 1.361-.332s.61-.529.8-.972h2.093v7.949H5.471v-4.94c-.351.305-.873.457-1.567.457zm2.194 10.88c.403-.273.69-.542.861-.81.171-.265.257-.566.257-.9 0-.304-.087-.542-.262-.713-.175-.172-.426-.257-.753-.257-.35 0-.623.096-.821.285-.198.19-.297.457-.297.799 0 .145.016.296.046.457l-2.577-.228c-.023-.175-.034-.342-.034-.502 0-.547.16-1.018.479-1.413s.764-.699 1.334-.913c.57-.213 1.224-.319 1.961-.319 1.125 0 2.009.221 2.651.662.643.441.964 1.079.964 1.916 0 .532-.112.998-.336 1.397-.224.399-.584.766-1.078 1.1-.562.381-1.372.768-2.428 1.164H10v1.881H2.542v-1.687c1.642-.806 2.828-1.445 3.558-1.917zM22 6H12v2h10V6zm0 10H12v2h10v-2z" })) }, { writingDirection: n });
-            };
-            a.metadata = { width: 24, height: 24 };
-            const d = a;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsExtendedProfile~bundle.JobSearch~bundle.UserJobs~bundle.ExtendedUserProfile.9de4af3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsExtendedProfile~bundle.JobSearch~bundle.UserJobs~bundle.ExtendedUserProfile.2ded632a.js.map

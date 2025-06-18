@@ -103,7 +103,7 @@
             };
         },
         847607: (e, t, r) => {
-            r.d(t, { Aq: () => u, FK: () => m, GS: () => i, N1: () => S, PY: () => E, X6: () => I, cm: () => c });
+            r.d(t, { Aq: () => u, FK: () => f, GS: () => i, N1: () => S, PY: () => E, X6: () => I, cm: () => c });
             r(202784);
             var s = r(111677),
                 a = r.n(s),
@@ -122,9 +122,9 @@
                 _ = a().h59f52ee,
                 p = a().eea0cbee,
                 h = a().i29533b3,
-                f = a().h129c3c3,
-                m = (e) => (e ? ((e) => h({ screenName: e }))(e) : _),
-                I = (e) => (e ? ((e) => f({ screenName: e }))(e) : p);
+                m = a().h129c3c3,
+                f = (e) => (e ? ((e) => h({ screenName: e }))(e) : _),
+                I = (e) => (e ? ((e) => m({ screenName: e }))(e) : p);
         },
         417714: (e, t, r) => {
             r.d(t, { l: () => l });
@@ -293,11 +293,11 @@
                     acceptConversation: () => n.tF,
                     addAvatarMedia: () => n._D,
                     addParticipants: () => n.ck,
-                    addRecentSearches: () => R,
+                    addRecentSearches: () => v,
                     addWelcomeMessageToConversation: () => n.Qe,
                     clearRecentSearch: () => U,
-                    clearRecentSearches: () => N,
-                    clearSearchCache: () => T,
+                    clearRecentSearches: () => L,
+                    clearSearchCache: () => A,
                     default: () => b,
                     deleteConversations: () => n.S9,
                     disableMentionNotifications: () => n.BW,
@@ -316,8 +316,8 @@
                     fetchTrustedInboxHistory: () => i.vC,
                     fetchUntrustedInboxHistory: () => i.kK,
                     fetchUntrustedLowQualityInboxHistory: () => i.j7,
-                    fetchUpdates: () => L.f9,
-                    fetchUpdatesIfNeeded: () => L.hd,
+                    fetchUpdates: () => N.f9,
+                    fetchUpdatesIfNeeded: () => N.hd,
                     leaveConversation: () => n.qH,
                     markAllAsRead: () => n.SF,
                     markConversationRead: () => n.v3,
@@ -326,7 +326,7 @@
                     removeAvatarMedia: () => n.Xw,
                     removeConversation: () => n.Ae,
                     removeEntry: () => o.MY,
-                    searchConversations: () => v,
+                    searchConversations: () => R,
                     selectConversation: () => n.xu,
                     selectConversationAvatarMediaId: () => n.aG,
                     selectConversationAvatarMediaIsUploading: () => n.W,
@@ -359,7 +359,7 @@
                     selectUntrustedLowQualityConversationCount: () => i.ZI,
                     selectUntrustedLowQualityCursor: () => i.Gk,
                     selectUntrustedUnreadCount: () => i.k5,
-                    selectUpdates: () => L.o8,
+                    selectUpdates: () => N.o8,
                     setConversationAvatar: () => n.X5,
                     toggleNotifications: () => n.$S,
                     unmuteDMUser: () => n.GP,
@@ -385,35 +385,35 @@
                 _ = r(849585),
                 p = r(147143);
             const h = "rweb.recentDMSearches",
-                f = Object.freeze({ REQUEST: "rweb/directMessages/SEARCH_REQUEST", SUCCESS: "rweb/directMessages/SEARCH_SUCCESS", FAILURE: "rweb/directMessages/SEARCH_FAILURE" }),
-                m = "rweb/directMessages/ADD_RECENT_SEARCHES",
-                I = (e) => ({ payload: e, type: m }),
+                m = Object.freeze({ REQUEST: "rweb/directMessages/SEARCH_REQUEST", SUCCESS: "rweb/directMessages/SEARCH_SUCCESS", FAILURE: "rweb/directMessages/SEARCH_FAILURE" }),
+                f = "rweb/directMessages/ADD_RECENT_SEARCHES",
+                I = (e) => ({ payload: e, type: f }),
                 C = "rweb/directMessages/CLEAR_SEARCH_CACHE",
-                T = () => ({ type: C }),
-                A = "rweb/directMessages/CLEAR_RECENT_SEARCH",
+                A = () => ({ type: C }),
+                T = "rweb/directMessages/CLEAR_RECENT_SEARCH",
                 D = "rweb/directMessages/CLEAR_RECENT_SEARCHES",
                 y = { searchResults: {}, recentSearches: [] };
             function O(e = y, t) {
                 if (!t) return e;
                 switch (t.type) {
-                    case m:
-                    case A:
+                    case f:
+                    case T:
                         return { ...e, recentSearches: t.payload || [] };
                     case D:
                         return { ...e, recentSearches: [] };
-                    case f.REQUEST: {
+                    case m.REQUEST: {
                         const { fetchNextPage: r, preserveResults: s, query: a } = t.meta || {},
                             n = e.searchResults ? e.searchResults[a] : {},
                             o = { ...e.searchResults, [a]: { ...n, fetchStatus: s || r ? n?.fetchStatus : E.ZP.LOADING } };
                         return { ...e, searchResults: o };
                     }
-                    case f.FAILURE: {
+                    case m.FAILURE: {
                         const { fetchNextPage: r, preserveResults: s, query: a } = t.meta || {},
                             n = e.searchResults ? e.searchResults[a] : {},
                             o = { ...e.searchResults, [a]: { ...n, fetchStatus: s || r ? n?.fetchStatus : E.ZP.FAILED, error: t.payload } };
                         return { ...e, searchResults: o };
                     }
-                    case f.SUCCESS: {
+                    case m.SUCCESS: {
                         const { query: r } = t.meta || {},
                             s = t.payload && t.payload.result ? t.payload.result : null,
                             { conversations: a, error: n } = s || {},
@@ -444,7 +444,7 @@
                     const r = e[p.Yf].search?.searchResults;
                     return (r && r[t]?.conversationIds) || [];
                 },
-                v =
+                R =
                     (e) =>
                     (t, r, { api: s }) => {
                         const a = r(),
@@ -456,7 +456,7 @@
                             })(a, c),
                             _ = ((e) => e[p.Yf].search?.searchResults)(a),
                             h = _ ? _[c] : void 0,
-                            m = !!S;
+                            f = !!S;
                         S && c && n && (E.cursor = S);
                         const I = u._O(t, { params: E, request: s.withEndpoint(l.Z).search }),
                             C = (e) => {
@@ -466,9 +466,9 @@
                                     return t && Object.values(t).forEach((e) => (e.isSearchResult = !0)), t ? (0, i.s0)({ conversations: t, users: r }) : null;
                                 }
                             };
-                        return !h || h?.error || o || (n && m) ? I({ actionTypes: f, context: "SEARCH", meta: { query: E.query, cursor: E.cursor, preserveResults: o, fetchNextPage: n } }, C) : (t({ type: "rweb/directMessages/SEARCH_SUCCESS", payload: { result: h }, meta: { query: c, cursor: S } }), Promise.resolve());
+                        return !h || h?.error || o || (n && f) ? I({ actionTypes: m, context: "SEARCH", meta: { query: E.query, cursor: E.cursor, preserveResults: o, fetchNextPage: n } }, C) : (t({ type: "rweb/directMessages/SEARCH_SUCCESS", payload: { result: h }, meta: { query: c, cursor: S } }), Promise.resolve());
                     },
-                R =
+                v =
                     (e) =>
                     (t, r, { featureSwitches: s, userPersistence: a }) => {
                         const n = s.getNumberValue("dm_inbox_search_max_recent_searches_stored");
@@ -482,9 +482,9 @@
                     (t, r, { userPersistence: s }) =>
                         s.get(h).then((r) => {
                             const a = r?.recentSearches || [];
-                            return a.splice(a.indexOf(e), 1), t({ payload: a, type: A }), s.set(h, { recentSearches: a });
+                            return a.splice(a.indexOf(e), 1), t({ payload: a, type: T }), s.set(h, { recentSearches: a });
                         }),
-                N =
+                L =
                     () =>
                     (e, t, { userPersistence: r }) => (e({ type: D }), r.set(h, { recentSearches: [] }));
             a.Z.register(
@@ -500,8 +500,8 @@
                               ).then(() => {})
                             : Promise.resolve(),
             );
-            var L = r(923965);
-            const F = (0, s.UY)({ conversations: n.ZP, entries: o.ZP, inbox: i.ZP, search: O, updates: L.ZP });
+            var N = r(923965);
+            const F = (0, s.UY)({ conversations: n.ZP, entries: o.ZP, inbox: i.ZP, search: O, updates: N.ZP });
             a.Z.register({ [p.Yf]: F });
             const b = F;
         },
@@ -549,7 +549,7 @@
                 a = Object.freeze({ PERMISSION_DENIED: 1, POSITION_UNAVAILABLE: 2, TIMEOUT: 3 });
         },
         642721: (e, t, r) => {
-            r.d(t, { $o: () => w, AE: () => F, Lk: () => A, R_: () => b, UD: () => C, UK: () => D, WW: () => I, ck: () => Z, fd: () => m, kM: () => L, mz: () => T, xZ: () => N });
+            r.d(t, { $o: () => w, AE: () => F, Lk: () => T, R_: () => b, UD: () => C, UK: () => D, WW: () => I, ck: () => Z, fd: () => f, kM: () => N, mz: () => A, xZ: () => L });
             var s = r(745978),
                 a = r(499627),
                 n = r(917799),
@@ -564,7 +564,7 @@
                 _ = n.dg(l, "DELETE_MUTED_KEYWORD"),
                 p = n.dg(l, "UPDATE_MUTED_KEYWORD"),
                 h = { defaultOptions: { id: "", keyword: "", mute_notifications_option: "following", mute_home_timeline: !0, time_duration: "forever" }, defaultOptionsLoaded: !1, discouragedKeywords: [], fetchStatus: o.ZP.NONE, mutedKeywords: [] };
-            function f(e = h, t) {
+            function m(e = h, t) {
                 if (!t) return e;
                 switch (t.type) {
                     case O:
@@ -580,27 +580,27 @@
                     case _.SUCCESS:
                     case p.SUCCESS:
                         return { ...e, mutedKeywords: t.payload.muted_keywords };
-                    case v:
-                        return { ...e, defaultOptions: t.payload.default_options };
                     case R:
+                        return { ...e, defaultOptions: t.payload.default_options };
+                    case v:
                         return { ...e, defaultOptionsLoaded: !0 };
                     default:
                         return e;
                 }
             }
-            const m = (e) => e[i].discouragedKeywords,
+            const f = (e) => e[i].discouragedKeywords,
                 I = (e) => e[i].mutedKeywords,
                 C = (e) => e[i].fetchStatus,
-                T = (e, t) => e[i].mutedKeywords.find((e) => e.id === t),
-                A = (e, t) => e[i].defaultOptions,
+                A = (e, t) => e[i].mutedKeywords.find((e) => e.id === t),
+                T = (e, t) => e[i].defaultOptions,
                 D =
                     () =>
                     (e, t, { userPersistence: r }) =>
-                        m(t()).length
+                        f(t()).length
                             ? Promise.resolve()
                             : r.get(c, d).then((s) => {
                                   const { discouragedKeywords: a } = s || {};
-                                  return a && a.length ? (e(g(a)), Promise.resolve()) : e(y()).then(() => r.set(c, { discouragedKeywords: m(t()) }));
+                                  return a && a.length ? (e(g(a)), Promise.resolve()) : e(y()).then(() => r.set(c, { discouragedKeywords: f(t()) }));
                               }),
                 y =
                     (e = {}) =>
@@ -613,10 +613,10 @@
                     (e) =>
                     (t, r, { api: a }) =>
                         n._O(t, { params: e, request: a.withEndpoint(s.Z).fetchMutedKeywords })({ actionTypes: E, context: "FETCH_MUTED_KEYWORDS" }),
-                v = `${l}/SET_DEFAULT_OPTIONS`,
-                R = `${l}/DEFAULT_OPTIONS_LOADED`,
-                U = (e) => ({ type: v, payload: { default_options: e } }),
-                N =
+                R = `${l}/SET_DEFAULT_OPTIONS`,
+                v = `${l}/DEFAULT_OPTIONS_LOADED`,
+                U = (e) => ({ type: R, payload: { default_options: e } }),
+                L =
                     () =>
                     (e, t, { userPersistence: r }) =>
                         t()[i].defaultOptionsLoaded
@@ -626,9 +626,9 @@
                                       const { defaultOptions: r } = t;
                                       e(U(r));
                                   }
-                                  e({ type: R });
+                                  e({ type: v });
                               }),
-                L =
+                N =
                     (e) =>
                     (t, r, { userPersistence: s }) => (t(U(e)), s.set(c, { defaultOptions: e })),
                 F =
@@ -645,10 +645,10 @@
                     (e) =>
                     (t, r, { api: a }) =>
                         n._O(t, { params: e, request: a.withEndpoint(s.Z).updateMutedKeyword })({ actionTypes: p, context: "ACTION_UPDATE_MUTED_KEYWORD", meta: { params: e } });
-            a.Z.register({ [i]: f });
+            a.Z.register({ [i]: m });
         },
         450476: (e, t, r) => {
-            r.d(t, { Ob: () => p, SW: () => m, UD: () => _, Y0: () => f, ky: () => S });
+            r.d(t, { Ob: () => p, SW: () => f, UD: () => _, Y0: () => m, ky: () => S });
             var s = r(226395),
                 a = r(499627),
                 n = r(917799),
@@ -690,7 +690,7 @@
                         n
                             ._O(e, { request: r.withEndpoint(s.Z).fetchNotificationFilters })({ actionTypes: d, context: "FETCH_NOTIFICATION_FILTERS" })
                             .then((e) => (a.set(c, S(t())), e)),
-                f =
+                m =
                     (e) =>
                     (t, r, { api: a, userPersistence: o }) =>
                         n
@@ -698,7 +698,7 @@
                             .then((e) => {
                                 o.set(c, S(r()));
                             }),
-                m =
+                f =
                     (e) =>
                     (t, r, { api: a, userPersistence: o }) =>
                         n
@@ -708,7 +708,7 @@
                             });
         },
         694180: (e, t, r) => {
-            r.d(t, { cM: () => h, dS: () => p, iY: () => f });
+            r.d(t, { cM: () => h, dS: () => p, iY: () => m });
             var s = r(370751),
                 a = r(399896),
                 n = r(663550),
@@ -739,12 +739,12 @@
                             p = `${r}-${t ?? "undefined"}-${E ?? "undefined"}-${l ?? "undefined"}`;
                         if (u.has(l) && _(o(), p)) return Promise.resolve();
                         const h = e && "earned" === e.toLowerCase() ? "1" : null,
-                            f = { ...s, earned: h, epoch_ms: Date.now() };
-                        return (0, i._O)(n, { params: f, request: c.withEndpoint(a.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: f }, (e, t) => {
+                            m = { ...s, earned: h, epoch_ms: Date.now() };
+                        return (0, i._O)(n, { params: m, request: c.withEndpoint(a.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: m }, (e, t) => {
                             if (!t && u.has(l)) return [S(p)];
                         });
                     },
-                f =
+                m =
                     (e) =>
                     (t, r, { api: s }) =>
                         (0, i._O)(t, { params: e, request: s.withEndpoint(a.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: e });
@@ -761,7 +761,7 @@
             });
         },
         204744: (e, t, r) => {
-            r.d(t, { DI: () => C, H$: () => E, OB: () => T, Ww: () => l, YB: () => u, hj: () => h, qF: () => m });
+            r.d(t, { DI: () => C, H$: () => E, OB: () => A, Ww: () => l, YB: () => u, hj: () => h, qF: () => f });
             r(901951);
             var s = r(499627),
                 a = r(390387);
@@ -808,11 +808,11 @@
                             o = l(n);
                         return (0, a.Qb)(n) ? t(i(o)) : Promise.resolve();
                     },
-                f = "rweb/recentSearches/CLEAR_ALL",
-                m =
+                m = "rweb/recentSearches/CLEAR_ALL",
+                f =
                     () =>
                     (e, t, { userPersistence: r }) => {
-                        e({ type: f });
+                        e({ type: m });
                         const s = t(),
                             n = l(s);
                         return (0, a.Qb)(s) ? e(i(n)) : Promise.resolve();
@@ -826,7 +826,7 @@
                             o = l(n);
                         return (0, a.Qb)(n) ? t(i(o)) : Promise.resolve();
                     },
-                T =
+                A =
                     () =>
                     (e, t, { userPersistence: r }) => {
                         const s = t();
@@ -860,7 +860,7 @@
                                 s = r ? c(r, e.recentSearches) : [];
                             return { ...e, recentSearches: s };
                         }
-                        case f:
+                        case m:
                             return { fetched: !0, recentSearches: [] };
                         case S:
                             return { ...e, ...t.payload, fetched: !0 };
@@ -959,7 +959,7 @@
             const s = Object.freeze({ Filtering: "optInFiltering", Blocking: "optInBlocking" });
         },
         715684: (e, t, r) => {
-            r.d(t, { Fm: () => g, TG: () => C, UD: () => A, _1: () => O, dj: () => D, kz: () => T });
+            r.d(t, { Fm: () => g, TG: () => C, UD: () => T, _1: () => O, dj: () => D, kz: () => A });
             var s = r(24949),
                 a = r(697926),
                 n = r(744531),
@@ -981,7 +981,7 @@
                     case E.FAILURE:
                         return { ...e, error: t.payload, fetchStatus: d.ZP.FAILED };
                     case E.SUCCESS:
-                        return { ...e, error: null, fetchStatus: d.ZP.LOADED, sessions: (0, a.Z)(m(t.payload), (e) => e.token) };
+                        return { ...e, error: null, fetchStatus: d.ZP.LOADED, sessions: (0, a.Z)(f(t.payload), (e) => e.token) };
                     case S.SUCCESS:
                         return { ...e, sessions: (0, n.Z)(e.sessions, t.meta.hashed_token) };
                     default:
@@ -989,15 +989,15 @@
                 }
             }
             i.Z.register({ [l]: h });
-            function f(e) {
+            function m(e) {
                 return { token: e.hashed_token, name: e.device_name, summary: e.device_summary, icon_type: e.icon_type, is_current_session: e.is_current_session, location: e.location, last_seen_time_ms: e.last_seen_at };
             }
-            const m = (e) => (e?.viewer?.user_results?.result?.sessions_list ? e.viewer.user_results.result.sessions_list : e.viewer?.user?.sessions_list ? e.viewer.user.sessions_list : e.sessions ? e.sessions.map(f) : []),
+            const f = (e) => (e?.viewer?.user_results?.result?.sessions_list ? e.viewer.user_results.result.sessions_list : e.viewer?.user?.sessions_list ? e.viewer.user.sessions_list : e.sessions ? e.sessions.map(m) : []),
                 I = (e) => e[l].sessions,
                 C = (0, s.P1)(I, (e) => Object.values(e)),
-                T = (e, t) => I(e)[t],
-                A = (e) => e[l].fetchStatus,
-                D = (e) => (t, r) => (A(r()) === d.ZP.LOADED ? Promise.resolve() : t(y(e))),
+                A = (e, t) => I(e)[t],
+                T = (e) => e[l].fetchStatus,
+                D = (e) => (t, r) => (T(r()) === d.ZP.LOADED ? Promise.resolve() : t(y(e))),
                 y =
                     (e) =>
                     (t, r, { api: s }) =>
@@ -1016,7 +1016,7 @@
                             .then(() => y()(t, r, { api: s }));
         },
         948985: (e, t, r) => {
-            r.d(t, { $q: () => I, UD: () => C, wz: () => T, zw: () => A });
+            r.d(t, { $q: () => I, UD: () => C, wz: () => A, zw: () => T });
             var s = r(24949),
                 a = r(166852),
                 n = r(226395),
@@ -1044,10 +1044,10 @@
                 }
             }
             o.Z.register({ [E]: h });
-            const f = {
+            const m = {
                     revokeApplication: {
                         reducer: (e, t) => {
-                            if (t.type === m.customActionTypes.revokeApplication.SUCCESS) {
+                            if (t.type === f.customActionTypes.revokeApplication.SUCCESS) {
                                 const { revoked: r } = t.payload,
                                     { entityId: s } = t.meta,
                                     a = e.entities[s];
@@ -1060,7 +1060,7 @@
                     },
                     revokeOauth2Token: {
                         reducer: (e, t) => {
-                            if (t.type === m.customActionTypes.revokeOauth2Token.SUCCESS) {
+                            if (t.type === f.customActionTypes.revokeOauth2Token.SUCCESS) {
                                 const { revoked: r } = t.payload,
                                     { entityId: s } = t.meta,
                                     a = e.entities[s];
@@ -1072,24 +1072,24 @@
                         getApiMethod: (e) => e.withEndpoint(n.Z).revokeOauth2Token,
                     },
                 },
-                m = (0, l.ZP)({ namespace: "applications", customActions: f });
-            (m.selectUniqUnrevokedApps = (0, s.P1)(m.selectAll, (e) => {
+                f = (0, l.ZP)({ namespace: "applications", customActions: m });
+            (f.selectUniqUnrevokedApps = (0, s.P1)(f.selectAll, (e) => {
                 const t = Object.values(e).filter((e) => !0 !== e.revoked);
                 return (0, a.Z)(t, (e) => e.app_id);
             })),
-                (m.selectAppsById = (0, s.P1)(
-                    m.selectAll,
+                (f.selectAppsById = (0, s.P1)(
+                    f.selectAll,
                     (e, t) => t,
                     (e, t) => Object.values(e).filter((e) => e.app_id === t),
                 ));
-            const I = u.Z.register(m),
+            const I = u.Z.register(f),
                 C = (e) => e[E].fetchStatus,
-                T = (e) => (t, r) => (C(r()) === c.ZP.LOADED ? Promise.resolve() : t(D(e))),
-                A =
+                A = (e) => (t, r) => (C(r()) === c.ZP.LOADED ? Promise.resolve() : t(D(e))),
+                T =
                     (e, t, r) =>
                     (r, s, { api: a }) => {
                         const n = s();
-                        return m.selectAppsById(n, e).length > 0 ? Promise.resolve() : r(D(t));
+                        return f.selectAppsById(n, e).length > 0 ? Promise.resolve() : r(D(t));
                     },
                 D =
                     (e) =>
@@ -1137,7 +1137,7 @@
         },
         116635: (e, t, r) => {
             r.d(t, { Af: () => E, UD: () => S, d0: () => _, iv: () => p });
-            var s = r(119146),
+            var s = r(871176),
                 a = r(499627),
                 n = r(917799),
                 o = r(312771),
@@ -1198,7 +1198,7 @@
                         );
         },
         823647: (e, t, r) => {
-            r.d(t, { UD: () => _, jW: () => p, uc: () => h, zJ: () => m });
+            r.d(t, { UD: () => _, jW: () => p, uc: () => h, zJ: () => f });
             var s = r(327202),
                 a = r(499627),
                 n = r(917799),
@@ -1227,14 +1227,14 @@
             a.Z.register({ [c]: S });
             const _ = (e) => e[c].fetchStatus,
                 p = (e) => e[c].emailSettings,
-                h = () => (e, t) => (_(t()) === o.ZP.LOADED ? Promise.resolve() : e(f())),
-                f =
+                h = () => (e, t) => (_(t()) === o.ZP.LOADED ? Promise.resolve() : e(m())),
+                m =
                     () =>
                     (e, t, { api: r }) => {
                         const a = i.x0(t());
                         return n._O(e, { params: { userId: a }, request: r.withEndpoint(s.Z).fetch })({ actionTypes: l, context: "FETCH_EMAIL_NOTIFICATIONS" });
                     },
-                m =
+                f =
                     (e) =>
                     (t, r, { api: a }) => {
                         const o = i.x0(r());
@@ -1242,7 +1242,7 @@
                     };
         },
         446418: (e, t, r) => {
-            r.d(t, { DG: () => C, DY: () => m, J2: () => I, UD: () => h, aX: () => T, vi: () => p, zl: () => f });
+            r.d(t, { DG: () => C, DY: () => f, J2: () => I, UD: () => h, aX: () => A, vi: () => p, zl: () => m });
             var s = r(226395),
                 a = r(499627),
                 n = r(917799),
@@ -1303,13 +1303,13 @@
             });
             const p = (e) => e[c],
                 h = (e) => e[c].fetchStatus,
-                f =
+                m =
                     () =>
                     (e, t, { api: r, featureSwitches: a }) => {
                         const o = i.x0(t());
                         return (0, n._O)(e, { params: { userId: o }, request: r.withEndpoint(s.Z).fetchLoginVerificationSettings })({ actionTypes: l, context: "FETCH_LOGIN_VERIFICATION_SETTINGS" });
                     },
-                m =
+                f =
                     (e) =>
                     (t, r, { api: a }) =>
                         (0, n.Vg)(t, { params: e, request: a.withEndpoint(s.Z).enrollIn2FA })("TWO_FACTOR_ENROLLMENT"),
@@ -1321,7 +1321,7 @@
                     () =>
                     (e, t, { api: r }) =>
                         (0, n.AB)(e, { request: r.withEndpoint(s.Z).disable2FA })({ actionTypes: E, context: "DISABLE_LOGIN_VERIFICATION" }),
-                T =
+                A =
                     ({ method: e }) =>
                     (t, r, { api: a }) => {
                         const o = p(r()).methods[e];
@@ -1390,6 +1390,39 @@
             r.d(t, { B: () => s });
             const s = Object.freeze({ Daily: "Daily", Weekly: "Weekly", Periodically: "Periodically", None: "None" });
         },
+        395042: (e, t, r) => {
+            r.d(t, { El: () => l, HR: () => u, Zc: () => E });
+            var s = r(226395),
+                a = r(499627),
+                n = r(917799);
+            const o = "settings/usernames",
+                i = "rweb/settings/usernames/CLEAR_USERNAME_AVAILABILITY",
+                c = Object.freeze({ REQUEST: "rweb/settings/usernames/FETCH_USERNAMES_REQUEST", SUCCESS: "rweb/settings/usernames/FETCH_USERNAMES_SUCCESS", FAILURE: "rweb/settings/usernames/FETCH_USERNAMES_FAILURE" }),
+                d = { isLoaded: !1 };
+            const l = (e) => e[o],
+                u =
+                    (e) =>
+                    (t, r, { api: a }) =>
+                        (0, n._O)(t, { params: e, request: a.withEndpoint(s.Z).usernameAvailable })({ actionTypes: c, context: "FETCH_SETTINGS_USERNAME_AVAILABLE", meta: { username: e.username } }),
+                E = (e) => ({ type: i, meta: e });
+            a.Z.register({
+                [o]: function (e = d, t) {
+                    if (!t) return e;
+                    switch (t.type) {
+                        case c.REQUEST:
+                            return { ...e, isLoading: !0 };
+                        case c.FAILURE:
+                            return { ...e, isLoading: !1 };
+                        case c.SUCCESS:
+                            return { ...e, ...t.payload, username: t.meta.username, isLoading: !1 };
+                        case i:
+                            return { isLoading: !1, suggestions: t.meta?.persistSuggestions ? e.suggestions : void 0 };
+                        default:
+                            return e;
+                    }
+                },
+            });
+        },
         673110: (e, t, r) => {
             r.d(t, { Gv: () => S, UD: () => E });
             var s = r(226395),
@@ -1424,4 +1457,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-e6266db0.626f02ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-e6266db0.8c1e27fa.js.map

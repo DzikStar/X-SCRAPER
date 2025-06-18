@@ -1279,26 +1279,32 @@
                 o("fc7db594", "Resumen del perfil"),
                 o("c3f04d9c", "Pensando"),
                 o("cbdddb0a", "Finalizado"),
-                o("e98cc293", function (e) {
-                    return "Buscando " + e.query;
+                o("ie2bbeed", function (e) {
+                    return 'Searching for "' + e.query + '"';
                 }),
                 o("b0d1e205", function (e) {
                     return 'Buscando **"' + e.query + '"**';
                 }),
-                o("i2e0f4d7", function (e) {
-                    return "Explorando " + e.url + " en busca de " + e.query;
+                o("bf970edd", function (e) {
+                    return 'Searching 𝕏 for "' + e.query + '"';
+                }),
+                o("g008d475", function (e) {
+                    return "Browsing " + e.url;
+                }),
+                o("c91e3971", function (e) {
+                    return "Browsing " + e.url + ' for "' + e.query + '"';
                 }),
                 o("acb9b845", function (e) {
                     return "Explorando " + e.url + ' en busca de **"' + e.query + '"**';
                 }),
-                o("ef261d8d", function (e) {
-                    return "Buscando posts de @" + e.username;
+                o("j9006405", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username;
                 }),
-                o("f7d9cfb9", function (e) {
-                    return "Buscando posts de @" + e.username + " en relación con " + e.query;
+                o("a2dd07e5", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username + ' for "' + e.query + '"';
                 }),
-                o("bec7eb11", function (e) {
-                    return "Buscando posts de @" + e.username + ' en relación con **"' + e.query + '"**';
+                o("e99fb7a3", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username + ' for **"' + e.query + '"**';
                 }),
                 o("ead81122", "Algo salió mal. Actualiza para reconectarte o inténtalo de nuevo."),
                 o("f808a13a", "Se superó el límite de velocidad. Espera unos minutos e inténtalo de nuevo."),
@@ -1344,7 +1350,7 @@
                 o("b7cb4fab", "Traducido por"),
                 o("e0bffbf8", "About automatic translation"),
                 o("e839db3a", "Descartar"),
-                o("a15585b4", "Language Settings"),
+                o("a15585b4", "Configuración de idioma"),
                 o("d4c339b9", function (e) {
                     return "Post de " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1914,10 +1920,10 @@
                 o("jcd5ee8a", "Editar bloque"),
                 o("a8f09fb8", "Eliminar bloque"),
                 o("i89195ea", "Separador"),
-                o("da8ac57c", "Editar descripción"),
-                o("a8fdd09c", "Publicar Artículo"),
-                o("d8047cc8", "Publicar");
-            o("ff7ddca2", "Tu Artículo aparecerá como un post una vez que lo publiques. También lo encontrarás en la pestaña Artículos de tu perfil."),
+                o("da8ac57c", "Editar descripción");
+            o("a8fdd09c", "Publicar Artículo"),
+                o("d8047cc8", "Publicar"),
+                o("ff7ddca2", "Tu Artículo aparecerá como un post una vez que lo publiques. También lo encontrarás en la pestaña Artículos de tu perfil."),
                 o("ef34d7be", "Los controles de Audiencia y respuesta no son editables una vez que se publica un Artículo."),
                 o("e52d4998", "Elige tu audiencia"),
                 o("d7985b24", "Elige quién puede responder a este artículo"),
@@ -2970,10 +2976,10 @@
                 o("bc6efc72", "Política de Privacidad"),
                 o("h3161192", "Política de cookies"),
                 o("a7de64de", "Información de anuncios"),
-                o("jb0a4c36", "Blog"),
-                o("ce6d095a", "Empleos"),
-                o("e0adec82", "Recursos para marcas");
-            o("df1b7550", "Marketing"),
+                o("jb0a4c36", "Blog");
+            o("ce6d095a", "Empleos"),
+                o("e0adec82", "Recursos para marcas"),
+                o("df1b7550", "Marketing"),
                 o("he258678", "X para empresas"),
                 o("c6f58084", "Desarrolladores"),
                 o("d83f18d2", "Guía"),
@@ -3882,10 +3888,10 @@
                 o("c371fb9a", "Final"),
                 o("c0ce822e", "Configuración del micrófono"),
                 o("a2bf8b8a", "Cambiar a oyente"),
-                o("caa8d928", "Activar/desactivar supresión de ruido"),
-                o("b5d88f0c", "Solo para empleados"),
-                o("c855ab8e", "Solo Suscriptores");
-            o("ddeb0a3c", "Esta es la Comunidad. ¿Te gusta la gente? Dale un vistazo."),
+                o("caa8d928", "Activar/desactivar supresión de ruido");
+            o("b5d88f0c", "Solo para empleados"),
+                o("c855ab8e", "Solo Suscriptores"),
+                o("ddeb0a3c", "Esta es la Comunidad. ¿Te gusta la gente? Dale un vistazo."),
                 o("e111f531", function (e) {
                     return e.count + " conectado" + r(e.count, "", "s");
                 }),
@@ -4152,36 +4158,39 @@
                 }),
                 o("ed93de0c", "Analizando el post"),
                 o("d1d92e40", "Más detalles"),
+                o("fbc79f6a", "Historial del chat"),
                 o("a6e89af8", "Conversación abierta"),
                 o("ica55d24", "Nuevo chat"),
-                o("f794af9a", "Modo Divertido"),
-                o("eccf9fea", "Modo Regular"),
+                o("b61ad410", "Historia"),
+                o("b3de2628", "No hay historial de chats disponible"),
+                o("acfbfb28", "Tus futuras conversaciones aparecerán aquí."),
+                o("g02dacc0", "Hoy"),
+                o("c6e845c0", "Ayer"),
+                o("i1147548", "Historial de búsquedas en Grok"),
+                o("ab437026", "No se encontraron conversaciones"),
+                o("e12569ec", "Intenta buscar algo más."),
+                o("hb52cc4a", "Por favor, inténtalo de nuevo más tarde."),
+                o("d4eb0e26", "Cambiar nombre"),
+                o("c64975ea", "Todavía no marcaste ninguna conversación como favorita"),
+                o("a3e3db6e", "Haz clic en la estrella para guardar los chats que consultas con frecuencia"),
+                o("f4ae77ac", "No hay un historial de imágenes disponible"),
+                o("d57d337e", "Tus imágenes generadas aparecerán aquí."),
+                o("j826e722", "Guardar imagen"),
+                o("a9325f10", "Copiar imagen"),
+                o("g0b12442", "Se produjo un error al copiar la imagen"),
+                o("edd0c172", "Postear imagen"),
+                o("d1d3a41a", "Editar imagen"),
+                o("c26b9b9c", "Archivo"),
+                o("g10600b0", "Menú"),
                 o("g7b1c574", "Restablecer a valores predeterminados"),
                 o("f388a7ec", "DeepSearch"),
                 o("ab1eb384", "Selecciona tu modo de búsqueda deseado"),
                 o("i330e54c", "Búsqueda y razonamiento avanzados"),
                 o("fdcce108", "DeeperSearch"),
                 o("ac64b674", "Búsqueda ampliada, más razonamiento"),
-                o("j22655f2", "Pregunta cualquier cosa"),
-                o("h0681e3e", "Habla con Grok, nuestro asistente de IA"),
-                o("d593fd78", "Puede responder tus preguntas, hacer búsquedas en X y generar imágenes"),
-                o("d0205a24", "Comprueba la información"),
-                o("ed4177c4", "Grok puede proporcionar información incorrecta, hacer resúmenes erróneos u omitir contenido con total confianza. Debes verificar toda la información por tu cuenta."),
-                o("c0ff98f8", "Entrenamiento y personalización de la IA"),
-                o("f1a8218a", "Podemos usar tus datos de X, así como tus interacciones con Grok, tus entradas allí y los resultados obtenidos para entrenar y perfeccionar el modelo, y personalizar tu experiencia en Grok. Puedes optar por no participar a través de tu configuración de X. Para obtener más información, consulta nuestro Centro de ayuda."),
-                o("bcbf5b6e", "Compartiendo"),
-                o("j7b5c844", "Eres responsable de las conversaciones que compartes públicamente. Evita compartir información sensible y confidencial sobre ti u otras personas en tus conversaciones con Grok (consulta nuestro Centro de ayuda)."),
-                o("c9f7c196", "Centro de Ayuda"),
+                o("a2697040", "Describe qué quieres cambiar en la imagen"),
                 o("c65f7308", "Los servidores están trabajando en este momento"),
                 o("f2a8655e", "La herramienta Grok avanzado no está disponible en este momento."),
-                o("c26b9b9c", "Archivo"),
-                o("g10600b0", "Menú"),
-                o("j826e722", "Guardar imagen"),
-                o("a9325f10", "Copiar imagen"),
-                o("g0b12442", "Se produjo un error al copiar la imagen"),
-                o("edd0c172", "Postear imagen"),
-                o("d1d3a41a", "Editar imagen"),
-                o("a2697040", "Describe qué quieres cambiar en la imagen"),
                 o("ge1cefc4", "Herramientas"),
                 o("e9b6d404", "¿A qué herramientas de búsqueda debe tener acceso Grok?"),
                 o("h15dce2e", "Configuración avanzada"),
@@ -4196,60 +4205,25 @@
                 o("e4ae6abe", "Pídele a Grok que transforme tu imagen"),
                 o("e8ade5e2", "Seleccionar personalidad"),
                 o("b5df32b0", "Escribe algo en Grok"),
+                o("dab087ee", "Chats"),
+                o("a911623c", "Imágenes"),
+                o("f794af9a", "Modo Divertido"),
+                o("eccf9fea", "Modo Regular"),
+                o("j22655f2", "Pregunta cualquier cosa"),
+                o("h0681e3e", "Habla con Grok, nuestro asistente de IA"),
+                o("d593fd78", "Puede responder tus preguntas, hacer búsquedas en X y generar imágenes"),
+                o("d0205a24", "Comprueba la información"),
+                o("ed4177c4", "Grok puede proporcionar información incorrecta, hacer resúmenes erróneos u omitir contenido con total confianza. Debes verificar toda la información por tu cuenta."),
+                o("c0ff98f8", "Entrenamiento y personalización de la IA"),
+                o("f1a8218a", "Podemos usar tus datos de X, así como tus interacciones con Grok, tus entradas allí y los resultados obtenidos para entrenar y perfeccionar el modelo, y personalizar tu experiencia en Grok. Puedes optar por no participar a través de tu configuración de X. Para obtener más información, consulta nuestro Centro de ayuda."),
+                o("bcbf5b6e", "Compartiendo"),
+                o("j7b5c844", "Eres responsable de las conversaciones que compartes públicamente. Evita compartir información sensible y confidencial sobre ti u otras personas en tus conversaciones con Grok (consulta nuestro Centro de ayuda)."),
+                o("c9f7c196", "Centro de Ayuda"),
                 o("fb3b9776", "Este usuario personalizó los resultados de Grok."),
-                o("ca93f2ee", "Este mensaje ha sido eliminado."),
-                o("b8c06820", "Copiar texto"),
-                o("ca0f5894", "No me gusta"),
-                o("ja8d189e", "Quería una respuesta en texto"),
-                o("e951f04e", "Quería imágenes"),
-                o("c503b35e", "Quería una imagen diferente"),
-                o("d4371c92", "El código es incorrecto"),
-                o("dbe8586e", "Quería un código diferente"),
-                o("e360eb4a", "No quería códigos"),
-                o("a18657ca", "Matemáticas es incorrecto"),
-                o("b8b86300", "No quería matemáticas"),
-                o("e4c34788", "Respuesta incorrecta"),
-                o("b220a8c8", "Quería algo más"),
-                o("b115fd18", "Respuesta sesgada"),
-                o("dc637214", "Mal estilo/tono"),
-                o("f02e6d42", "Quería hacer una búsqueda"),
-                o("bbec6bba", "Resultados de búsqueda malos"),
-                o("b494d088", "No quería hacer una búsqueda"),
-                o("a44974f2", "No se entiende la imagen"),
-                o("bd44a8a8", "Cuéntanos más"),
-                o("fcdbe764", "¿En qué puede mejorar Grok?"),
-                o("bb6adb22", "Describe lo que salió mal"),
-                o("h0fa15f2", "Gracias por tus comentarios."),
-                o("d700b268", "Chats referenciados"),
-                o("cd7bdab2", "Olvidar las conversaciones no hará que se eliminen del historial"),
-                o("f21b84de", "Referencia olvidada"),
-                o("i52a9cb8", "No hay recuerdos para mostrar."),
-                o("d9d36880", "Olvidar"),
-                o("g02dacc0", "Hoy"),
-                o("c6e845c0", "Ayer"),
-                o("a5fa4a86", "ene"),
-                o("c51724a4", "feb"),
-                o("j244ceb2", "mar"),
-                o("b22b12e0", "abr"),
-                o("h3023cac", "mayo"),
-                o("b10dbffa", "jun"),
-                o("c81da1b6", "jul"),
-                o("d4e4d3ce", "ago"),
-                o("c3418f9a", "sep"),
-                o("b64dada6", "oct"),
-                o("ad24ec20", "nov"),
-                o("c7902252", "dic"),
-                o("idf94bac", "Regenerar"),
-                o("f7614f92", "Sin búsqueda"),
-                o("c5ade3ba", "Con búsqueda"),
-                o("c16e5b1a", "Sin generación de imágenes"),
-                o("i2ca65fa", "Con generación de imágenes"),
-                o("d3927f88", "Postear enlace"),
-                o("be37ecd4", "Se produjo un error al copiar al portapapeles"),
-                o("h708a4c0", "Compartir conversación"),
-                o("g06a67e2", "La página para compartir incluirá los mensajes hasta este punto"),
-                o("a0428662", "No es útil"),
-                o("fe4fd310", "Útil"),
+                o("b0a889d4", "As Image"),
+                o("a111fb48", "As Spreadsheet"),
+                o("bccc65f0", "Grok can make mistakes. Always check original sources."),
+                o("bd202fe6", "Generating card"),
                 o("bfd161bc", "Comparar"),
                 o("j5dcf1b2", "Actualizado"),
                 o("a50aaa10", "Preapertura"),
@@ -4281,6 +4255,9 @@
                 o("dd679fb1", function (e) {
                     return "Mínimo histórico" + e.ttc_stock_details;
                 }),
+                o("ha9c4cf8", "View source"),
+                o("ecad5d78", "Save image"),
+                o("d2d1d398", "¡Copiado!"),
                 o("a22063d2", "Comparte tu ubicación para mayor precisión."),
                 o("db3248a8", "Cargando ubicación"),
                 o("ffe0e588", "Compartir ubicación"),
@@ -4314,6 +4291,65 @@
                 o("d66bf142", "Jue"),
                 o("dc17968a", "Vie"),
                 o("j310a2d6", "Sáb"),
+                o("afa2a58e", "See all posts"),
+                o("fc83e7e2", "See all users"),
+                o("df601d92", "Relevant Users"),
+                o("b001fa12", "Source query"),
+                o("db6c20cf", function (e) {
+                    return "Show all (" + e.count + ")";
+                }),
+                o("d7cb5408", "Páginas web relevantes"),
+                o("ca93f2ee", "Este mensaje ha sido eliminado."),
+                o("b8c06820", "Copiar texto"),
+                o("ca0f5894", "No me gusta"),
+                o("ja8d189e", "Quería una respuesta en texto"),
+                o("e951f04e", "Quería imágenes"),
+                o("c503b35e", "Quería una imagen diferente"),
+                o("d4371c92", "El código es incorrecto"),
+                o("dbe8586e", "Quería un código diferente"),
+                o("e360eb4a", "No quería códigos"),
+                o("a18657ca", "Matemáticas es incorrecto"),
+                o("b8b86300", "No quería matemáticas"),
+                o("e4c34788", "Respuesta incorrecta"),
+                o("b220a8c8", "Quería algo más"),
+                o("b115fd18", "Respuesta sesgada"),
+                o("dc637214", "Mal estilo/tono"),
+                o("f02e6d42", "Quería hacer una búsqueda"),
+                o("bbec6bba", "Resultados de búsqueda malos"),
+                o("b494d088", "No quería hacer una búsqueda"),
+                o("a44974f2", "No se entiende la imagen"),
+                o("bd44a8a8", "Cuéntanos más"),
+                o("fcdbe764", "¿En qué puede mejorar Grok?"),
+                o("bb6adb22", "Describe lo que salió mal"),
+                o("h0fa15f2", "Gracias por tus comentarios."),
+                o("d700b268", "Chats referenciados"),
+                o("cd7bdab2", "Olvidar las conversaciones no hará que se eliminen del historial"),
+                o("f21b84de", "Referencia olvidada"),
+                o("i52a9cb8", "No hay recuerdos para mostrar."),
+                o("d9d36880", "Olvidar"),
+                o("a5fa4a86", "ene"),
+                o("c51724a4", "feb"),
+                o("j244ceb2", "mar"),
+                o("b22b12e0", "abr"),
+                o("h3023cac", "mayo"),
+                o("b10dbffa", "jun"),
+                o("c81da1b6", "jul"),
+                o("d4e4d3ce", "ago"),
+                o("c3418f9a", "sep"),
+                o("b64dada6", "oct"),
+                o("ad24ec20", "nov"),
+                o("c7902252", "dic"),
+                o("idf94bac", "Regenerar"),
+                o("f7614f92", "Sin búsqueda"),
+                o("c5ade3ba", "Con búsqueda"),
+                o("c16e5b1a", "Sin generación de imágenes"),
+                o("i2ca65fa", "Con generación de imágenes"),
+                o("d3927f88", "Postear enlace"),
+                o("be37ecd4", "Se produjo un error al copiar al portapapeles"),
+                o("h708a4c0", "Compartir conversación"),
+                o("g06a67e2", "La página para compartir incluirá los mensajes hasta este punto"),
+                o("a0428662", "No es útil"),
+                o("fe4fd310", "Útil"),
                 o("eaf55eb4", "Mostrar pensamiento"),
                 o("b1ac6016", "DeepSearch finalizó"),
                 o("f766feca", "Búsqueda de DeeperSearch completa"),
@@ -4331,23 +4367,23 @@
                 o("db832e38", "Activa las notificaciones en la configuración del navegador"),
                 o("a910cac6", "Ocurrió un problema al activar las notificaciones"),
                 o("be30b6ee", "Conexión inestable"),
-                o("b52484b6", "Buscando..."),
+                o("ge15b488", "Show thoughts"),
+                o("aa7c96bb", function (e) {
+                    return "Ver " + e.numResults + " más";
+                }),
                 o("a4d9dbfa", "Pensamientos"),
+                o("j1ab5f40", "Pulsar para leer"),
+                o("f5a2377e", "Ejecutando el modo Thinking durante "),
+                o("g3ce0132", "Se ejecutó el modo Thinking durante"),
+                o("f8007364", "Expandir para ver detalles"),
+                o("ca53f780", "Contraer detalles"),
+                o("b52484b6", "Buscando..."),
                 o("ib1c5475", function (e) {
                     return "Se ejecutó Pensar durante " + e.minutes + "min " + e.seconds + "s";
                 }),
                 o("a15d62db", function (e) {
                     return "Se ejecutó Pensar durante " + e.seconds + "s";
                 }),
-                o("d7cb5408", "Páginas web relevantes"),
-                o("aa7c96bb", function (e) {
-                    return "Ver " + e.numResults + " más";
-                }),
-                o("j1ab5f40", "Pulsar para leer"),
-                o("f5a2377e", "Ejecutando el modo Thinking durante "),
-                o("g3ce0132", "Se ejecutó el modo Thinking durante"),
-                o("f8007364", "Expandir para ver detalles"),
-                o("ca53f780", "Contraer detalles"),
                 o("ha8fbe22", "Genera más imágenes con Premium"),
                 o("d95c232a", "Has alcanzado el límite. Actualiza ahora para generar más."),
                 o("h2671312", "Más Grok con Premium"),
@@ -4894,8 +4930,8 @@
                 o("fbc79a40", "Información general de Espacios"),
                 o("d077112a", "Estadísticas de Espacios"),
                 o("cf3709da", "Estado"),
-                o("e797dc32", "Tiempo de la transmisión: "),
-                o("b649d8cc", "Solo suscriptores"),
+                o("e797dc32", "Tiempo de la transmisión: ");
+            o("b649d8cc", "Solo suscriptores"),
                 o("j9282130", "Miniatura de la transmisión"),
                 o("g629b8b0", "Tiempo de espera agotado"),
                 o("eb87323c", "Esto muestra datos de estadísticas correspondientes al período seleccionado desde que tuvo lugar la transmisión en directo."),
@@ -4924,8 +4960,8 @@
                 o("a532072a", "Espectadores"),
                 o("d9508ab0", "visualizaciones"),
                 o("d9f9dec0", "Ver Espacio"),
-                o("h0c1f37a", "Ver estadísticas de Espacios");
-            o("e41fffbc", "El tiempo total de reproducción de tus videos."),
+                o("h0c1f37a", "Ver estadísticas de Espacios"),
+                o("e41fffbc", "El tiempo total de reproducción de tus videos."),
                 o("if2909ba", "Tiempo de reproducción"),
                 o("i0e5bf4c", "Tus videos"),
                 o("ed99baea", "Acceso anticipado a la versión beta"),
@@ -5846,8 +5882,8 @@
                 o("hf68e810", "Notas de la comunidad es un programa cuyo objetivo es crear un mundo mejor informado. Empodera a los usuarios de X para colaborar y añadir notas útiles a posts que podrían ser engañosos."),
                 o("jdb52860", "Los colaboradores escriben y califican notas"),
                 o("c104025c", "Los colaboradores son usuarios de X, como tú, que eligen participar en el programa piloto para escribir y calificar notas. Cuantos más usuarios participen, mejor será el programa."),
-                o("j7872b8c", "En los posts solo aparecen las notas que les resultan útiles a los usuarios"),
-                o("fb59415e", "Para mostrar una nota públicamente como contexto en el post, debe estar calificada por una cantidad suficiente de usuarios desde diferentes puntos de vista. Este enfoque evita el sesgo y la manipulación, y ayuda a encontrar notas que son útiles para muchos usuarios."),
+                o("j7872b8c", "En los posts solo aparecen las notas que les resultan útiles a los usuarios");
+            o("fb59415e", "Para mostrar una nota públicamente como contexto en el post, debe estar calificada por una cantidad suficiente de usuarios desde diferentes puntos de vista. Este enfoque evita el sesgo y la manipulación, y ayuda a encontrar notas que son útiles para muchos usuarios."),
                 o("f9a44022", "No es X, la empresa, quien decide lo que se muestra: son las personas."),
                 o("gdf4fbb2", "X, la empresa, no escribe, califica ni modera las notas (a menos que no cumplan con las Reglas de X). Creemos que darles a los usuarios la posibilidad de tomar estas decisiones en conjunto es una forma equitativa y eficaz de añadir información que ayude a las personas a mantenerse mejor informadas."),
                 o("cc720e6a", "Notas de la comunidad se construye sobre la base de la transparencia de los datos"),
@@ -5878,8 +5914,8 @@
                     return "No se encontraron resultados para " + e.query;
                 }),
                 o("f191a2ba", "configuración de búsqueda"),
-                o("a068008a", "Las carpetas no se están cargando en este momento");
-            o("f075b0e8", "Editar carpeta"),
+                o("a068008a", "Las carpetas no se están cargando en este momento"),
+                o("f075b0e8", "Editar carpeta"),
                 o("beba2a0e", "Crear una nueva Carpeta de elementos guardados"),
                 o("e41c9b4f", function (e) {
                     return "Guardado en " + e.bookmarkFolderName;
@@ -5924,7 +5960,6 @@
                 o("d7346632", "Todavía no te uniste a ninguna Comunidad"),
                 o("b732a4cc", "Cuando lo hagas, verás sus posts aquí."),
                 o("hff48914", "No se encontraron posts en este momento."),
-                o("hb52cc4a", "Por favor, inténtalo de nuevo más tarde."),
                 o("e50e1bb0", "Te damos la bienvenida a Comunidades"),
                 o("i6829daa", "Las Comunidades son grupos de conversación moderados, donde las personas en X pueden conectarse y compartir."),
                 o("fc5c6914", "Conoce a otras personas con tus mismos intereses"),
@@ -6498,26 +6533,13 @@
                 o("e5f4eac0", "Tu contenido será más fácil de descubrir, y aparecerás en los resultados de búsqueda y en las tendencias."),
                 o("c7832a72", "Conéctate directamente con otros"),
                 o("i1ccd17a", "Envía Mensajes Directos a las personas que no te siguen sin que tu mensaje se filtre automáticamente."),
+                o("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
                 o("hc965308", "Divertido"),
                 o("eb78b77e", "Modo Divertido"),
                 o("aa8ece10", "Probar grok.com"),
                 o("gb5fb7d0", "Modo concentración"),
                 o("g5665caa", "Salir del Modo concentración"),
                 o("a372681e", "Copiar enlace para compartir"),
-                o("fbc79f6a", "Historial del chat"),
-                o("b61ad410", "Historia"),
-                o("b3de2628", "No hay historial de chats disponible"),
-                o("acfbfb28", "Tus futuras conversaciones aparecerán aquí."),
-                o("i1147548", "Historial de búsquedas en Grok"),
-                o("ab437026", "No se encontraron conversaciones"),
-                o("e12569ec", "Intenta buscar algo más."),
-                o("d4eb0e26", "Cambiar nombre"),
-                o("c64975ea", "Todavía no marcaste ninguna conversación como favorita"),
-                o("a3e3db6e", "Haz clic en la estrella para guardar los chats que consultas con frecuencia"),
-                o("f4ae77ac", "No hay un historial de imágenes disponible"),
-                o("d57d337e", "Tus imágenes generadas aparecerán aquí."),
-                o("dab087ee", "Chats"),
-                o("a911623c", "Imágenes"),
                 o("ae9cdac6", "Historial de chats"),
                 o("b198a392", "Conversación con Grok"),
                 o("d16329b4", "Copiar conversación"),
@@ -6868,8 +6890,8 @@
                 o("b2c213e0", "Se excedió el límite de caracteres"),
                 o("d84e9c2a", "Comparte el tipo de compromiso laboral que se espera de este rol."),
                 o("bc8b300c", "Función"),
-                o("d1eedb50", "Ayuda a los candidatos a entender el área en la que se desempeña este rol."),
-                o("eaf3ce64", "Equipo"),
+                o("d1eedb50", "Ayuda a los candidatos a entender el área en la que se desempeña este rol.");
+            o("eaf3ce64", "Equipo"),
                 o("b36cd50e", "Especifica el equipo principal en el que trabajarán los candidatos una vez contratados"),
                 o("d3a427ce", "Selecciona el nivel de experiencia necesaria."),
                 o("i7174442", "Descripción del empleo"),
@@ -6884,8 +6906,8 @@
                 o("c05176ec", "Si el rol es presencial, escribe la/s ubicación/es del sitio. Si es remoto, describe dónde pueden estar ubicados los candidatos."),
                 o("d70c24d4", "Se utiliza para ayudar a los candidatos a buscar tu empleo."),
                 o("de1c4376", "Rango de salario"),
-                o("hf352d42", "Añade un rango de salario opcional que será visible para los candidatos. Si decides no hacerlo, ten conocimiento de las leyes de transparencia en los pagos del lugar en el que realizarás contrataciones.");
-            o("ede7d0a2", "Divisa"),
+                o("hf352d42", "Añade un rango de salario opcional que será visible para los candidatos. Si decides no hacerlo, ten conocimiento de las leyes de transparencia en los pagos del lugar en el que realizarás contrataciones."),
+                o("ede7d0a2", "Divisa"),
                 o("b925c18c", "Tipo de salario"),
                 o("j3d242ce", "Rango no válido"),
                 o("f4d07bd2", "Incluye detalles opcionales para que sea más fácil para los candidatos descubrir los roles con la búsqueda."),
@@ -7840,31 +7862,7 @@
                 o("b5099e33", function (e) {
                     return "@" + e.screenName + " no tiene seguidores verificados.";
                 }),
-                o("ec251f36", "Cuando un conocido siga a esta persona, aparecerá aquí."),
-                o("f8af4f48", "Cuando siga alguna cuenta, la cuenta aparecerá aquí."),
-                o("fd0aad94", "Cuando alguien verificado siga esta cuenta, aparecerá aquí."),
-                o("b84f6df1", function (e) {
-                    return "Regala Premium con un descuento del " + e.percentage + " % por tiempo limitado";
-                }),
-                o("cfcac293", function (e) {
-                    return "Regalar y pagar " + e.price;
-                }),
-                o("d7a73450", "Nivel"),
-                o("hbd2c24e", "Esta cuenta no es apta para regalos en este momento."),
-                o("f3fddc98", "Términos del comprador"),
-                o("cff9c889", "Obtén más información"),
-                o("c65dda96", "Tu regalo se envió."),
-                o("f6e2a407", function (e) {
-                    return "Permitir que cualquier persona vea tu insignia de Suscriptor cuando respondes a los posts de @" + e.screenName;
-                }),
-                o("j8dedddd", function (e) {
-                    return "Cuando desactives esto, @" + e.screenName + " y sus Suscriptores seguirán viendo tu insignia si respondes a los posts exclusivos para Suscriptores de @" + e.screenName + ". @" + e.screenName + " siempre verá tu insignia.";
-                }),
-                o("c8a513f6", "Cancelar Suscripción"),
-                o("ea000ec8", "¿Ya cancelaste tu Suscripción?"),
-                o("d7b8387e", "Si ya cancelaste, no hay nada más por hacer. Tu Suscripción caducará automáticamente al final del ciclo de facturación."),
-                o("f4166d9a", "¿Quieres cancelar tu Suscripción?"),
-                o("b74ff5fc", "Si cancelas, tu Suscripción caducará automáticamente al final del ciclo de facturación.");
+                o("ec251f36", "Cuando un conocido siga a esta persona, aparecerá aquí.");
             function s(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var o = a[n];
@@ -7903,7 +7901,31 @@
                     i(e, a)
                 );
             }
-            o("ee9efbc8", "Continuar para cancelar"),
+            o("f8af4f48", "Cuando siga alguna cuenta, la cuenta aparecerá aquí."),
+                o("fd0aad94", "Cuando alguien verificado siga esta cuenta, aparecerá aquí."),
+                o("b84f6df1", function (e) {
+                    return "Regala Premium con un descuento del " + e.percentage + " % por tiempo limitado";
+                }),
+                o("cfcac293", function (e) {
+                    return "Regalar y pagar " + e.price;
+                }),
+                o("d7a73450", "Nivel"),
+                o("hbd2c24e", "Esta cuenta no es apta para regalos en este momento."),
+                o("f3fddc98", "Términos del comprador"),
+                o("cff9c889", "Obtén más información"),
+                o("c65dda96", "Tu regalo se envió."),
+                o("f6e2a407", function (e) {
+                    return "Permitir que cualquier persona vea tu insignia de Suscriptor cuando respondes a los posts de @" + e.screenName;
+                }),
+                o("j8dedddd", function (e) {
+                    return "Cuando desactives esto, @" + e.screenName + " y sus Suscriptores seguirán viendo tu insignia si respondes a los posts exclusivos para Suscriptores de @" + e.screenName + ". @" + e.screenName + " siempre verá tu insignia.";
+                }),
+                o("c8a513f6", "Cancelar Suscripción"),
+                o("ea000ec8", "¿Ya cancelaste tu Suscripción?"),
+                o("d7b8387e", "Si ya cancelaste, no hay nada más por hacer. Tu Suscripción caducará automáticamente al final del ciclo de facturación."),
+                o("f4166d9a", "¿Quieres cancelar tu Suscripción?"),
+                o("b74ff5fc", "Si cancelas, tu Suscripción caducará automáticamente al final del ciclo de facturación."),
+                o("ee9efbc8", "Continuar para cancelar"),
                 o("c5d9c77a", "Parece que hubo un pequeño problema. Pero no te preocupes, no es tu culpa. Cierra esta ventana e inténtalo de nuevo."),
                 o("jda53c24", "Puedes cancelar tu Suscripción a través de la App Store de Apple."),
                 o("g0a7a53e", "Puedes cancelar tu Suscripción a través de Google Play Store."),
@@ -8874,8 +8896,8 @@
                 o("faf9f484", "Anuncio"),
                 o("ae2ea9e7", function (e) {
                     return "Anuncio de " + e.advertiserName;
-                }),
-                o("hea01798", "Buscar en el control deslizante"),
+                });
+            o("hea01798", "Buscar en el control deslizante"),
                 o("f8a09386", "Ver en Periscope"),
                 o("gf2b6eee", "Imagen en imagen"),
                 o("b3160a69", function (e) {
@@ -8900,10 +8922,10 @@
                 }),
                 o("g60001bb", function (e) {
                     return "Ver " + e.advertiserName;
-                });
-            o("dff1ddd9", function (e) {
-                return "Ir a " + e.advertiserName;
-            }),
+                }),
+                o("dff1ddd9", function (e) {
+                    return "Ir a " + e.advertiserName;
+                }),
                 o("b0b22805", function (e) {
                     return "Visitar " + e.advertiserName;
                 }),
@@ -10167,7 +10189,7 @@
                         {
                             key: "b6411d33",
                             get: function () {
-                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
+                                return ["Grok traducirá automáticamente el idioma " + this.props.sourceLang + " basándose en tu configuración de idioma en X y el uso que haces de la plataforma. Para seleccionar los idiomas que se traducen automáticamente, ve a ", "."];
                             },
                         },
                         {
@@ -13213,9 +13235,9 @@
                 (p.b1555473726 = v({ 1: p("es").numberFormatter({ raw: "0" }), 2: p("es").numberFormatter({ raw: "00" }) }, { pattern: "H:mm", timeSeparator: ":" })),
                 (p.a340321908 = v({ 1: p("es").numberFormatter({ raw: "0" }), 2: p("es").numberFormatter({ raw: "00" }) }, { pattern: "E, h:mm a", timeSeparator: ":", days: { E: { 1: { sun: "dom.", mon: "lun.", tue: "mar.", wed: "mié.", thu: "jue.", fri: "vie.", sat: "sáb." } } }, dayPeriods: { am: "a. m.", pm: "p. m." } })),
                 (p.a1992963557 = v({ 1: p("es").numberFormatter({ raw: "0" }) }, { pattern: "MMMM 'de' y", timeSeparator: ":", months: { M: { 4: { 1: "enero", 2: "febrero", 3: "marzo", 4: "abril", 5: "mayo", 6: "junio", 7: "julio", 8: "agosto", 9: "septiembre", 10: "octubre", 11: "noviembre", 12: "diciembre" } } } })),
+                (p.a922039750 = v({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "domingo", mon: "lunes", tue: "martes", wed: "miércoles", thu: "jueves", fri: "viernes", sat: "sábado" } } } })),
                 (p.a78243026 = v({ 1: p("es").numberFormatter({ raw: "0" }) }, { pattern: "d MMM y", timeSeparator: ":", months: { M: { 3: { 1: "ene.", 2: "feb.", 3: "mar.", 4: "abr.", 5: "may.", 6: "jun.", 7: "jul.", 8: "ago.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dic." } } } })),
                 (p.b331205690 = v({}, { pattern: "LLLL", timeSeparator: ":", months: { L: { 4: { 1: "enero", 2: "febrero", 3: "marzo", 4: "abril", 5: "mayo", 6: "junio", 7: "julio", 8: "agosto", 9: "septiembre", 10: "octubre", 11: "noviembre", 12: "diciembre" } } } })),
-                (p.a922039750 = v({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "domingo", mon: "lunes", tue: "martes", wed: "miércoles", thu: "jueves", fri: "viernes", sat: "sábado" } } } })),
                 (p.b721927578 = y(p("es").dateToPartsFormatter({ skeleton: "MMMd" }))),
                 (p.b1550036169 = y(p("es").dateToPartsFormatter({ skeleton: "yMMMd" }))),
                 (p.a1285430456 = y(p("es").dateToPartsFormatter({ skeleton: "hm" }))),
@@ -13235,9 +13257,9 @@
                 (p.a634310667 = y(p("es").dateToPartsFormatter({ time: "short" }))),
                 (p.a189148541 = y(p("es").dateToPartsFormatter({ skeleton: "Ehm" }))),
                 (p.b1550721362 = y(p("es").dateToPartsFormatter({ skeleton: "yMMMM" }))),
+                (p.a530632669 = y(p("es").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (p.b757917527 = y(p("es").dateToPartsFormatter({ date: "medium" }))),
                 (p.b722612771 = y(p("es").dateToPartsFormatter({ skeleton: "MMMM" }))),
-                (p.a530632669 = y(p("es").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (p.b1081983621 = q(p("es").numberFormatter({}), p("es").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "dentro de {0} día", "relativeTimePattern-count-other": "dentro de {0} días" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "hace {0} día", "relativeTimePattern-count-other": "hace {0} días" }, "relative-type--2": "anteayer", "relative-type--1": "ayer", "relative-type-0": "hoy", "relative-type-1": "mañana", "relative-type-2": "pasado mañana" })),
                 (p.b1671154848 = h(p("es").numberFormatter({}), p("es").pluralGenerator({}), { compoundUnitPattern: "{0} por {1}", unitProperties: { displayName: "segundos", one: "{0} segundo", other: "{0} segundos", perUnitPattern: "{0} por segundo" } })),
                 (p.a736849152 = h(p("es").numberFormatter({}), p("es").pluralGenerator({}), { compoundUnitPattern: "{0} por {1}", unitProperties: { displayName: "minutos", one: "{0} minuto", other: "{0} minutos", perUnitPattern: "{0} por minuto" } })),
@@ -13369,14 +13391,14 @@
                 o("b6ca7bcb", p.a634310667),
                 o("h0e4cdf5", p.a189148541),
                 o("g727ddcf", p.b1550721362),
+                o("f3b9b9a7", p.a530632669),
                 o("h3629783", p.b757917527),
                 o("a20c68af", p.b722612771),
                 o("ja781451", p.a128291363),
                 o("cfa1a7b9", p.a1157995206),
-                o("f3b9b9a7", p.a530632669),
                 o("eefcd267", p.a603263496),
                 o("fa8afc43", p.a761890665);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.80ad677a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.6c5fe4ca.js.map

@@ -22,11 +22,6 @@
             var r = n(552322);
             const a = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M11 11V4h2v7h7v2h-7v7h-2v-7H4v-2h7z" }) });
         },
-        875515: (e, t, n) => {
-            n.d(t, { Z: () => a });
-            var r = n(552322);
-            const a = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M10.25 4.25c-3.314 0-6 2.686-6 6s2.686 6 6 6c1.657 0 3.155-.67 4.243-1.757 1.087-1.088 1.757-2.586 1.757-4.243 0-3.314-2.686-6-6-6zm-9 6c0-4.971 4.029-9 9-9s9 4.029 9 9c0 1.943-.617 3.744-1.664 5.215l4.475 4.474-2.122 2.122-4.474-4.475c-1.471 1.047-3.272 1.664-5.215 1.664-4.971 0-9-4.029-9-9z" }) });
-        },
         145731: (e, t, n) => {
             n.d(t, { Z: () => a });
             var r = n(552322);
@@ -334,7 +329,7 @@
             let N = null;
             function L({ open: e, onOpenChange: t, children: n, onDrag: i, onRelease: l, snapPoints: d, shouldScaleBackground: c = !1, setBackgroundColorOnScale: f = !0, closeThreshold: m = 0.25, scrollLockTimeout: p = 100, dismissible: h = !0, handleOnly: v = !1, fadeFromIndex: w = d && d.length - 1, activeSnapPoint: g, setActiveSnapPoint: b, fixed: x, modal: E = !0, onClose: O, nested: M, noBodyStyles: L = !1, direction: B = "bottom", defaultOpen: j = !1, disablePreventScroll: F = !0, snapToSequentialPoint: I = !1, preventScrollRestoration: z = !1, repositionInputs: H = !0, onAnimationEnd: W, container: U, autoFocus: q = !1 }) {
                 var V, Y;
-                const [X = !1, Z] = A({
+                const [X = !1, _] = A({
                         defaultProp: j,
                         prop: e,
                         onChange: (e) => {
@@ -352,7 +347,7 @@
                                 e || (document.body.style.pointerEvents = "auto");
                         },
                     }),
-                    [_, G] = a.useState(!1),
+                    [Z, G] = a.useState(!1),
                     [J, K] = a.useState(!1),
                     [Q, ee] = a.useState(!1),
                     te = a.useRef(null),
@@ -476,7 +471,7 @@
                             }
                         );
                     })({ snapPoints: d, activeSnapPointProp: g, setActiveSnapPointProp: b, drawerRef: fe, fadeFromIndex: w, overlayRef: te, onSnapPointChange: ve, direction: B, container: U, snapToSequentialPoint: I });
-                y({ isDisabled: !X || J || !E || Q || !_ || !H || !F });
+                y({ isDisabled: !X || J || !E || Q || !Z || !H || !F });
                 const { restorePositionSetting: Pe } = (function ({ isOpen: e, modal: t, nested: n, hasBeenOpened: r, preventScrollRestoration: o, noBodyStyles: i }) {
                     const [l, u] = a.useState(() => ("undefined" != typeof window ? window.location.href : "")),
                         d = a.useRef(0),
@@ -539,7 +534,7 @@
                         }, [e, r, l, t, n, c, f]),
                         { restorePositionSetting: f }
                     );
-                })({ isOpen: X, modal: E, nested: null != M && M, hasBeenOpened: _, preventScrollRestoration: z, noBodyStyles: L });
+                })({ isOpen: X, modal: E, nested: null != M && M, hasBeenOpened: Z, preventScrollRestoration: z, noBodyStyles: L });
                 function Se() {
                     return (window.innerWidth - 26) / window.innerWidth;
                 }
@@ -572,7 +567,7 @@
                         fe.current.classList.remove($), (ie.current = !1), K(!1), (ae.current = new Date());
                     })(),
                         null == O || O(),
-                        e || Z(!1),
+                        e || _(!1),
                         setTimeout(() => {
                             d && ye(d[0]);
                         }, 1e3 * D.DURATION);
@@ -649,7 +644,7 @@
                         {
                             defaultOpen: j,
                             onOpenChange: (e) => {
-                                (h || e) && (e ? G(!0) : Oe(!0), Z(e));
+                                (h || e) && (e ? G(!0) : Oe(!0), _(e));
                             },
                             open: X,
                         },
@@ -962,4 +957,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.Insights~ondemand.XChat.5df9fdda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.Insights~ondemand.XChat.8cbe821a.js.map

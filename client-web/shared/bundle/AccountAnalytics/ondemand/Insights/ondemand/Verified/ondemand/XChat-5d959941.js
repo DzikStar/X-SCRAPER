@@ -113,6 +113,54 @@
                 return e(a, { ...r, credentials: "include", headers: l });
             };
         },
+        431882: (e, t, r) => {
+            r.d(t, { Yd: () => l, kg: () => c, pp: () => s });
+            var n = r(384099),
+                a = r.n(n);
+            class l {
+                logger = a()({ level: "debug" });
+                plugins;
+                constructor(e) {
+                    this.plugins = e;
+                }
+                log(e, t, r, n) {
+                    this.logger[e](t, r?.stack, n);
+                    const a = { level: e, message: t, error: r, context: n };
+                    for (const e of this.plugins) e.log(a);
+                }
+                error(e, t, r) {
+                    this.log("error", e, t, r);
+                }
+                info(e, t) {
+                    this.log("info", e, void 0, t);
+                }
+                warn(e, t) {
+                    this.log("warn", e, void 0, t);
+                }
+            }
+            var i = r(125959),
+                o = r(918962);
+            const s = (e = "responsive_web") => {
+                    const t = (0, i.g)([o.l]);
+                    let r;
+                    return (
+                        (r = "prod"),
+                        {
+                            async log({ context: n, error: a, level: l, message: i }) {
+                                const o = new Date(),
+                                    s = { id: o.getTime(), index: `${e}_${r}${"error" === l ? "" : "_log"}`, source: { "@timestamp": o.toISOString(), message: i }, type: l.toUpperCase(), ...n };
+                                "undefined" != typeof window && (s.source.url = window.location.href), a instanceof Error && ((s.source.error_details = a.stack), (s.tag = a.name));
+                                try {
+                                    await t("/1.1/jot/error_log.json", { body: new URLSearchParams({ log: JSON.stringify(s) }), method: "POST" });
+                                } catch (a) {}
+                            },
+                        }
+                    );
+                },
+                u = [];
+            u.push(s());
+            const c = new l(u);
+        },
         381415: (e, t) => {
             t.Qc = function (e, t) {
                 const r = new o(),
@@ -299,70 +347,26 @@
                 );
             }
         },
-        134877: (e, t, r) => {
-            r.d(t, { S: () => p });
+        607499: (e, t, r) => {
+            r.d(t, { S: () => g });
             var n = r(552322),
-                a = r(384099),
-                l = r.n(a);
-            var i = r(125959),
-                o = r(918962);
-            const s = [];
-            s.push(
-                ((e = "responsive_web") => {
-                    const t = (0, i.g)([o.l]);
-                    let r;
-                    return (
-                        (r = "prod"),
-                        {
-                            async log({ context: n, error: a, level: l, message: i }) {
-                                const o = new Date(),
-                                    s = { id: o.getTime(), index: `${e}_${r}${"error" === l ? "" : "_log"}`, source: { "@timestamp": o.toISOString(), message: i }, type: l.toUpperCase(), ...n };
-                                "undefined" != typeof window && (s.source.url = window.location.href), a instanceof Error && ((s.source.error_details = a.stack), (s.tag = a.name));
-                                try {
-                                    await t("/1.1/jot/error_log.json", { body: new URLSearchParams({ log: JSON.stringify(s) }), method: "POST" });
-                                } catch (a) {}
-                            },
-                        }
-                    );
-                })(),
-            );
-            const u = new (class {
-                logger = l()({ level: "debug" });
-                plugins;
-                constructor(e) {
-                    this.plugins = e;
-                }
-                log(e, t, r, n) {
-                    this.logger[e](t, r?.stack, n);
-                    const a = { level: e, message: t, error: r, context: n };
-                    for (const e of this.plugins) e.log(a);
-                }
-                error(e, t, r) {
-                    this.log("error", e, t, r);
-                }
-                info(e, t) {
-                    this.log("info", e, void 0, t);
-                }
-                warn(e, t) {
-                    this.log("warn", e, void 0, t);
-                }
-            })(s);
-            var c = r(202784),
-                g = r(263033),
-                d = r(611105),
-                m = r(332161),
-                b = r(993165);
-            function x({ message: e, retry: t }) {
-                const { t: r } = (0, g.$G)();
-                return (0, n.jsxs)("div", { className: "flex flex-col items-center justify-center gap-2 p-5", children: [(0, n.jsx)(m.x, { color: "gray700", children: e || r(t ? "Something went wrong. Try reloading." : "Something went wrong.") }), t && (0, n.jsx)(b.z, { icon: (0, n.jsx)(d.Z, {}), onClick: t, variant: "brandFilled", children: r("Retry") })] });
+                a = r(431882),
+                l = r(202784),
+                i = r(263033),
+                o = r(611105),
+                s = r(332161),
+                u = r(993165);
+            function c({ message: e, retry: t }) {
+                const { t: r } = (0, i.$G)();
+                return (0, n.jsxs)("div", { className: "flex flex-col items-center justify-center gap-2 p-5", children: [(0, n.jsx)(s.x, { color: "gray700", children: e || r(t ? "Something went wrong. Try reloading." : "Something went wrong.") }), t && (0, n.jsx)(u.z, { icon: (0, n.jsx)(o.Z, {}), onClick: t, variant: "brandFilled", children: r("Retry") })] });
             }
-            class p extends c.Component {
+            class g extends l.Component {
                 state = { error: null };
                 static getDerivedStateFromError(e) {
                     return { error: e };
                 }
                 componentDidCatch(e, t) {
-                    u.error("Error boundary", e, { user_visible: !0 }), this.props.onError?.(e, t);
+                    a.kg.error("Error boundary", e, { user_visible: !0 }), this.props.onError?.(e, t);
                 }
                 _retry() {
                     this.props.onRetry?.(), this.setState({ error: null });
@@ -370,7 +374,7 @@
                 render() {
                     const { children: e, fallback: t, message: r, onRetry: a } = this.props,
                         { error: l } = this.state;
-                    return l ? (void 0 !== t ? t : (0, n.jsx)(x, { message: r, retry: a })) : e;
+                    return l ? (void 0 !== t ? t : (0, n.jsx)(c, { message: r, retry: a })) : e;
                 }
             }
         },
@@ -1313,4 +1317,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.Verified~ondemand.XChat-5d959941.2bc2775a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.Verified~ondemand.XChat-5d959941.5944cafa.js.map

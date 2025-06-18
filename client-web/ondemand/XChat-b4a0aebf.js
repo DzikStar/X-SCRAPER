@@ -22,8 +22,8 @@
                 g = n(589259),
                 j = n(351417),
                 w = n(31674),
-                C = n(155369),
-                b = n(379342),
+                b = n(155369),
+                C = n(379342),
                 y = n(846742),
                 k = n(264531),
                 N = n(996016),
@@ -32,15 +32,15 @@
                 M = n(687521),
                 S = n(34681),
                 R = n(210071),
-                P = n(533476),
-                z = n(858108),
+                z = n(533476),
+                P = n(858108),
                 A = n(595117);
             const T = i.com.x.dms.editgroup;
             function G({ convId: e }) {
                 const t = (0, R.$)(),
                     [n, a] = (0, c.useState)(null),
-                    o = (0, C.n)(),
-                    r = (0, b.s)();
+                    o = (0, b.n)(),
+                    r = (0, C.s)();
                 return (
                     (0, c.useEffect)(() => {
                         const t = new i.com.x.export.CancellationSignal(),
@@ -63,7 +63,7 @@
             }
             const L = ({ isOpen: e, component: t }) => {
                 const { t: n } = (0, a.$G)(),
-                    r = (0, P._)(t.state),
+                    r = (0, z._)(t.state),
                     l = (0, c.useRef)(null),
                     d = (0, c.useRef)(null),
                     [m, x] = (0, c.useState)(null);
@@ -127,7 +127,7 @@
                                                               avatarSize: "fill",
                                                               titleState: r.metadata.title,
                                                               onCustomAvatarNeedsResolving: (e) => {
-                                                                  z.G || t.handleEvent(new T.EditGroupMetadataEvent.ResolveCustomAvatar(e));
+                                                                  P.G || t.handleEvent(new T.EditGroupMetadataEvent.ResolveCustomAvatar(e));
                                                               },
                                                               isInlineFacepile: !0,
                                                           })),
@@ -202,8 +202,8 @@
                 };
             function H({ id: e }) {
                 const [t, n] = (0, c.useState)(null),
-                    a = (0, C.n)(),
-                    o = (0, b.s)(),
+                    a = (0, b.n)(),
+                    o = (0, C.s)(),
                     [r, l] = (0, c.useState)(!1);
                 return (
                     (0, c.useEffect)(() => {
@@ -250,16 +250,16 @@
             }
             function Q({ component: e, setShowAddGroupParticipants: t, showAddGroupParticipants: n }) {
                 const { t: r } = (0, a.$G)(),
-                    d = (0, P._)(e.state);
+                    d = (0, z._)(e.state);
                 (0, D.e)(e.toasts);
-                const w = !(0, z.G)() || (0, k.VC)(),
-                    C = (0, c.useCallback)(
+                const w = !(0, P.G)() || (0, k.VC)(),
+                    b = (0, c.useCallback)(
                         (t) => {
                             e.onEvent(new X.ConversationInfoEvent.ParticipantClicked(t));
                         },
                         [e],
                     ),
-                    b = (0, c.useCallback)(
+                    C = (0, c.useCallback)(
                         (t, n) => {
                             e.onEvent(new X.ConversationInfoEvent.ParticipantMenuButtonClicked(t, n));
                         },
@@ -285,7 +285,7 @@
                         n && M && (0, s.jsx)(y.C, { conversationId: E, onVisibilityChange: t }),
                         M && (0, s.jsx)(G, { convId: E }),
                         (0, s.jsxs)("div", {
-                            className: "w-full sticky left-0 top-0 py-4 px-2",
+                            className: "w-full sticky left-0 top-0 py-4 px-2 z-10",
                             children: [
                                 (0, s.jsx)(l.r, { className: "-z-[1]", to: "top" }),
                                 (0, s.jsxs)("div", {
@@ -412,7 +412,7 @@
                                                                       },
                                                                       title: r("Add members"),
                                                                   }),
-                                                              (0, s.jsx)(N.b, { handleParticipantClicked: C, handleParticipantMenuButtonClicked: b, participants: R.participants.asJsReadonlyArrayView(), menuItemsMap: R.menuItems.asJsReadonlyMapView() }),
+                                                              (0, s.jsx)(N.b, { handleParticipantClicked: b, handleParticipantMenuButtonClicked: C, participants: R.participants.asJsReadonlyArrayView(), menuItemsMap: R.menuItems.asJsReadonlyMapView() }),
                                                           ],
                                                       }),
                                                   ],
@@ -431,8 +431,8 @@
                 te = ({ id: e }) => {
                     const { t } = (0, a.$G)(),
                         [n, o] = (0, c.useState)(null),
-                        l = (0, C.n)(),
-                        d = (0, b.s)();
+                        l = (0, b.n)(),
+                        d = (0, C.s)();
                     return (
                         (0, c.useEffect)(() => {
                             const t = new i.com.x.export.CancellationSignal(),
@@ -468,7 +468,7 @@
                     );
                 },
                 ne = ({ component: e }) => {
-                    const t = (0, P._)(e.state);
+                    const t = (0, z._)(e.state);
                     (0, D.e)(e.toasts);
                     const n = (0, c.useCallback)(
                             (t) => {
@@ -490,8 +490,8 @@
                 oe = ({ id: e }) => {
                     const { t } = (0, a.$G)(),
                         [n, o] = (0, c.useState)(null),
-                        l = (0, C.n)(),
-                        d = (0, b.s)();
+                        l = (0, b.n)(),
+                        d = (0, C.s)();
                     return (
                         (0, c.useEffect)(() => {
                             const t = new i.com.x.export.CancellationSignal(),
@@ -525,7 +525,7 @@
                 },
                 re = ({ component: e }) => {
                     const { t } = (0, a.$G)(),
-                        n = (0, P._)(e.state);
+                        n = (0, z._)(e.state);
                     return (0, s.jsxs)("div", {
                         className: "flex flex-col items-center w-full px-4 overflow-y-auto gap-6 py-6",
                         children: [
@@ -564,7 +564,7 @@
             const ge = i.com.x.dms.chat.DmEvent.ResolveCustomGroupAvatar,
                 je = i.com.x.dms.model.DmTitleState,
                 we = ({ component: e }) => {
-                    const t = (0, P._)(e.state),
+                    const t = (0, z._)(e.state),
                         n = (0, fe.a)("(max-width: 918px)"),
                         a = t.toolbarState instanceof i.com.x.dms.model.DmTitleState.OneToOne;
                     return (0, s.jsxs)("div", {
@@ -587,19 +587,19 @@
                                 avatarSize: "large",
                                 titleState: t.toolbarState,
                                 onCustomAvatarNeedsResolving: (t) => {
-                                    z.G || e.onEvent(new ge(t));
+                                    P.G || e.onEvent(new ge(t));
                                 },
                                 isInlineFacepile: !1,
                             }),
-                            (0, s.jsxs)("div", { className: "flex flex-col max-w-[60%]", children: [(0, s.jsx)(g.R, { name: t.toolbarState.title, badges: a ? (0, O.r)(t.toolbarState.otherUser) : void 0 }), (0, s.jsx)(Ce, { toolbarState: t.toolbarState })] }),
+                            (0, s.jsxs)("div", { className: "flex flex-col max-w-[60%]", children: [(0, s.jsx)(g.R, { name: t.toolbarState.title, badges: a ? (0, O.r)(t.toolbarState.otherUser) : void 0 }), (0, s.jsx)(be, { toolbarState: t.toolbarState })] }),
                         ],
                     });
                 },
-                Ce = ({ toolbarState: e }) => {
+                be = ({ toolbarState: e }) => {
                     const { t } = (0, a.$G)();
-                    return (e instanceof je.Group || e instanceof je.OneToOne) && e.ttl ? (0, s.jsx)(be, { ttl: e.ttl }) : e instanceof je.Group ? (0, s.jsx)(o.x, { size: "subtext2", color: "gray700", children: t("{count} {count, plural, one {person} other {people}}", { count: e.numParticipants }) }) : null;
+                    return (e instanceof je.Group || e instanceof je.OneToOne) && e.ttl ? (0, s.jsx)(Ce, { ttl: e.ttl }) : e instanceof je.Group ? (0, s.jsx)(o.x, { size: "subtext2", color: "gray700", children: t("{count} {count, plural, one {person} other {people}}", { count: e.numParticipants }) }) : null;
                 },
-                be = ({ ttl: e }) => (0, s.jsxs)("div", { className: "flex flex-row gap-1", children: [(0, s.jsx)(h.Z, { className: "text-gray-700" }), (0, s.jsx)(o.x, { size: "subtext2", color: "gray700", children: (0, B.L)(e.inWholeMilliseconds) })] });
+                Ce = ({ ttl: e }) => (0, s.jsxs)("div", { className: "flex flex-row gap-1", children: [(0, s.jsx)(h.Z, { className: "text-gray-700" }), (0, s.jsx)(o.x, { size: "subtext2", color: "gray700", children: (0, B.L)(e.inWholeMilliseconds) })] });
             var ye = n(788452),
                 ke = n(256958),
                 Ne = n(261012),
@@ -614,8 +614,8 @@
                     const { t } = (0, a.$G)(),
                         [n, o] = (0, c.useState)(null),
                         [l, d] = (0, c.useState)(null),
-                        m = (0, C.n)(),
-                        x = (0, b.s)();
+                        m = (0, b.n)(),
+                        x = (0, C.s)();
                     return (
                         (0, c.useEffect)(() => {
                             const t = new i.com.x.export.CancellationSignal(),
@@ -673,15 +673,15 @@
                                         e.stopPropagation(), n?.onEvent(Me.GroupInviteSettingsEvent.BackClicked);
                                     },
                                 }),
-                                n ? (0, s.jsx)(Pe, { component: n }) : (0, s.jsx)("div", { className: "flex items-center h-full", children: (0, s.jsx)(r.P, {}) }),
-                                l && (0, s.jsx)("div", { className: "flex items-center w-full px-4 ", children: (0, s.jsx)(ze, { component: l }) }),
+                                n ? (0, s.jsx)(ze, { component: n }) : (0, s.jsx)("div", { className: "flex items-center h-full", children: (0, s.jsx)(r.P, {}) }),
+                                l && (0, s.jsx)("div", { className: "flex items-center w-full px-4 ", children: (0, s.jsx)(Pe, { component: l }) }),
                             ],
                         })
                     );
                 },
-                Pe = ({ component: e }) => {
+                ze = ({ component: e }) => {
                     const { t } = (0, a.$G)(),
-                        n = (0, P._)(e.state),
+                        n = (0, z._)(e.state),
                         i = (0, c.useCallback)(() => {
                             n.inviteUrl && (navigator.clipboard.writeText(n.inviteUrl), e.onEvent(Me.GroupInviteSettingsEvent.LinkCopied), (0, ke.Am)(t("Link copied!")));
                         }, [e, n.inviteUrl, t]);
@@ -713,9 +713,9 @@
                         }),
                     });
                 },
-                ze = ({ component: e }) => {
+                Pe = ({ component: e }) => {
                     const { t } = (0, a.$G)(),
-                        n = (0, P._)(e.state),
+                        n = (0, z._)(e.state),
                         i = (0, c.useCallback)(
                             (t, n) => {
                                 e.onEvent(new Se.ConversationInfoEvent.ParticipantMenuButtonClicked(t, n));
@@ -764,8 +764,8 @@
             }
             function Le({ id: e }) {
                 const [t, n] = (0, c.useState)(null),
-                    a = (0, C.n)(),
-                    o = (0, b.s)();
+                    a = (0, b.n)(),
+                    o = (0, C.s)();
                 return (
                     (0, c.useEffect)(() => {
                         const t = new i.com.x.export.CancellationSignal(),
@@ -795,7 +795,7 @@
                 );
             }
             function Ue({ component: e }) {
-                const t = (0, P._)(e.state),
+                const t = (0, z._)(e.state),
                     { t: n } = (0, a.$G)(),
                     i = (0, c.useRef)(null),
                     [r, m] = (0, c.useState)(0),
@@ -838,7 +838,7 @@
                 a = n(332161),
                 o = n(31674);
             function r({ icon: e, destructive: t, onClick: n, title: o, value: r, showChevron: l = !1 }) {
-                return (0, s.jsx)("div", { className: "rounded-xl bg-gray-0 cursor-pointer w-full", onClick: n, children: (0, s.jsxs)("div", { className: "flex flex-row items-center justify-between px-4 py-3", children: [(0, s.jsxs)("div", { className: `py-px flex items-center gap-3 ${t && "text-red-500"}`, children: [e, (0, s.jsx)(a.x, { size: "body", weight: "normal", color: t ? "red500" : "text", children: o })] }), (0, s.jsxs)("div", { className: "flex items-center gap-3", children: [r && (0, s.jsx)(a.x, { size: "body", color: "text", weight: "normal", children: r }), l && (0, s.jsx)(i.Z, { className: "text-gray-700" })] })] }) });
+                return (0, s.jsx)("div", { className: "rounded-xl bg-gray-0 cursor-pointer w-full hover:bg-gray-100 transition-colors", style: { transitionTimingFunction: "cubic-bezier(0, 0.5, 0, 0.5)" }, onClick: n, children: (0, s.jsxs)("div", { className: "flex flex-row items-center justify-between px-4 py-3", children: [(0, s.jsxs)("div", { className: `py-px flex items-center gap-3 ${t && "text-red-500"}`, children: [e, (0, s.jsx)(a.x, { size: "body", weight: "normal", color: t ? "red500" : "text", children: o })] }), (0, s.jsxs)("div", { className: "flex items-center gap-3", children: [r && (0, s.jsx)(a.x, { size: "body", color: "text", weight: "normal", children: r }), l && (0, s.jsx)(i.Z, { className: "text-gray-700" })] })] }) });
             }
             function l({ children: e, className: t }) {
                 return (0, s.jsx)("div", { className: (0, o.cn)("flex flex-col w-full [&>*]:rounded-none [&>*]:my-0 [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-gray-100 [&>*:first-child]:rounded-t-xl [&>*:last-child]:rounded-b-xl", t), children: e });
@@ -864,8 +864,8 @@
                 g = n(537335),
                 j = n(336984),
                 w = n(741321),
-                C = n(9001),
-                b = n(129558),
+                b = n(9001),
+                C = n(129558),
                 y = n(607334),
                 k = n(145731),
                 N = n(534625),
@@ -883,9 +883,9 @@
                                     case "MarkRead":
                                         return { text: e("Mark as read"), icon: (0, s.jsx)(w.Z, {}), onClick: a };
                                     case "MarkUnread":
-                                        return { text: e("Mark as unread"), icon: (0, s.jsx)(C.Z, {}), onClick: a };
+                                        return { text: e("Mark as unread"), icon: (0, s.jsx)(b.Z, {}), onClick: a };
                                     case "MuteConversation":
-                                        return { text: e("Mute conversation"), icon: (0, s.jsx)(b.Z, {}), onClick: a };
+                                        return { text: e("Mute conversation"), icon: (0, s.jsx)(C.Z, {}), onClick: a };
                                     case "UnmuteConversation":
                                         return { text: e("Unmute conversation"), icon: (0, s.jsx)(y.Z, {}), onClick: a };
                                     case "RemoveChat":
@@ -951,21 +951,22 @@
                     }
                     return r;
                 },
-                P = i.com.x.dms.ReadByOthersIndicator,
-                z = ({ onEvent: e, previewWithMetadata: t, actionsDialog: n, isSelected: a, withSeparator: o = !1, isSearch: r, isPinned: l }) => {
+                z = i.com.x.dms.ReadByOthersIndicator,
+                P = ({ onEvent: e, previewWithMetadata: t, actionsDialog: n, isSelected: a, withSeparator: o = !1, isSearch: r, isPinned: l }) => {
                     const w = t.preview?.timestampValue,
-                        C = t.metadata.title instanceof i.com.x.dms.model.DmTitleState.OneToOne,
-                        b = (0, s.jsx)("div", {
+                        b = t.metadata.title instanceof i.com.x.dms.model.DmTitleState.OneToOne,
+                        C = (0, s.jsx)("div", {
                             className: "px-1",
                             children: (0, s.jsxs)("div", {
-                                className: `select-none flex flex-row  px-1 gap-2 rounded-lg hover:bg-gray-100 ${a && "bg-gray-0"} transition-colors duration-100 cursor-pointer`,
+                                className: `select-none flex flex-row  px-1 gap-2 rounded-lg hover:bg-gray-100 ${a && "bg-gray-0"} transition-colors cursor-pointer`,
+                                style: { transitionTimingFunction: "cubic-bezier(0,0.5,0,0.5)" },
                                 children: [
                                     t.isUnreadByMe && !r ? (0, s.jsx)("div", { className: "flex items-center", children: (0, s.jsx)(c.Z, { width: "14", height: "14", className: "text-blue-500" }) }) : (0, s.jsx)("div", { className: "w-[14px] flex-shrink-0" }),
-                                    (0, s.jsxs)("div", { style: { transitionTimingFunction: "cubic-bezier(0, 0.5, 0.6, 1)" }, className: "flex items-center grow gap-3 rounded-lg  transition-colors duration-100", children: [(0, s.jsx)(f.x, { avatarSize: "xxLarge", titleState: t.metadata.title, onCustomAvatarNeedsResolving: (n) => e(new i.com.x.dms.convlist.ConversationListEvent.CustomAvatarNeedsResolving(t.conversationId, n)), isInlineFacepile: !0 }), (0, s.jsxs)("div", { className: "flex-1 flex-row flex self-stretch py-2 pb-3 border-b " + (o ? "border-gray-50" : "border-transparent"), children: [(0, s.jsxs)("div", { className: "flex-1 gap-5", children: [(0, s.jsx)(v.R, { name: t.metadata.title.title, badges: C ? (0, j.r)(t.metadata.title.otherUser) : void 0, screenName: C ? t.metadata.title.otherUser?.screenName : void 0 }), (0, s.jsx)(p.x, { color: "gray700", weight: t.isUnreadByMe ? "bold" : "normal", numberOfLines: 2, className: "break-all min-h-[2.5rem]", children: (0, s.jsx)(R, { previewWithMetadata: t }) })] }), (0, s.jsxs)("div", { className: "flex flex-col items-end", children: [(0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [(0, s.jsx)(p.x, { size: "subtext1", color: "gray700", children: w && (0, s.jsx)(g.Q, { timestamp: w }) }), (0, s.jsx)(d.Z, { width: "20", height: "20", className: "text-gray-300 -mr-1" })] }), (0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [t.isMuted && (0, s.jsx)(m.Z, { width: "14", height: "14", className: "text-gray-300" }), l && (0, s.jsx)(x.Z, { width: "14", height: "14", className: "text-gray-300" }), t.showReadByOthersIndicator === P.Read && (0, s.jsx)(u.Z, { width: "14", height: "14", className: "text-gray-300" }), t.showReadByOthersIndicator === P.Unread && (0, s.jsx)(h.Z, { width: "14", height: "14", className: "text-gray-300" })] })] })] })] }),
+                                    (0, s.jsxs)("div", { style: { transitionTimingFunction: "cubic-bezier(0, 0.5, 0.6, 1)" }, className: "flex items-center grow gap-3 rounded-lg  transition-colors duration-100", children: [(0, s.jsx)(f.x, { avatarSize: "xxLarge", titleState: t.metadata.title, onCustomAvatarNeedsResolving: (n) => e(new i.com.x.dms.convlist.ConversationListEvent.CustomAvatarNeedsResolving(t.conversationId, n)), isInlineFacepile: !0 }), (0, s.jsxs)("div", { className: "flex-1 flex-row flex self-stretch py-2 pb-3 border-b " + (o ? "border-gray-50" : "border-transparent"), children: [(0, s.jsxs)("div", { className: "flex-1 gap-5", children: [(0, s.jsx)(v.R, { name: t.metadata.title.title, badges: b ? (0, j.r)(t.metadata.title.otherUser) : void 0, screenName: b ? t.metadata.title.otherUser?.screenName : void 0 }), (0, s.jsx)(p.x, { color: "gray700", weight: t.isUnreadByMe ? "bold" : "normal", numberOfLines: 2, className: "break-all min-h-[2.5rem]", children: (0, s.jsx)(R, { previewWithMetadata: t }) })] }), (0, s.jsxs)("div", { className: "flex flex-col items-end", children: [(0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [(0, s.jsx)(p.x, { size: "subtext1", color: "gray700", children: w && (0, s.jsx)(g.Q, { timestamp: w }) }), (0, s.jsx)(d.Z, { width: "20", height: "20", className: "text-gray-300 -mr-1" })] }), (0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [t.isMuted && (0, s.jsx)(m.Z, { width: "14", height: "14", className: "text-gray-300" }), l && (0, s.jsx)(x.Z, { width: "14", height: "14", className: "text-gray-300" }), t.showReadByOthersIndicator === z.Read && (0, s.jsx)(u.Z, { width: "14", height: "14", className: "text-gray-300" }), t.showReadByOthersIndicator === z.Unread && (0, s.jsx)(h.Z, { width: "14", height: "14", className: "text-gray-300" })] })] })] })] }),
                                 ],
                             }),
                         });
-                    return r ? b : (0, s.jsx)(S, { previewWithMetadata: t, actionsDialog: n, onEvent: e, children: b });
+                    return r ? C : (0, s.jsx)(S, { previewWithMetadata: t, actionsDialog: n, onEvent: e, children: C });
                 },
                 A = ({ onEvent: e, isSearch: t, conversations: n, actionsDialog: c }) => {
                     const d = (0, l.a)(),
@@ -996,7 +997,7 @@
                                             const t = new i.com.x.dms.convlist.ConversationListEvent.RowClicked(n.conversationId, n.preview?.lastReadSequenceNumber);
                                             e(t);
                                         },
-                                        children: (0, s.jsx)(z, { previewWithMetadata: n, actionsDialog: h(n.preview?.conversationId.id || ""), onEvent: e, isSelected: r && !t, withSeparator: !l && !r, isSearch: t, isPinned: n.isPinned }),
+                                        children: (0, s.jsx)(P, { previewWithMetadata: n, actionsDialog: h(n.preview?.conversationId.id || ""), onEvent: e, isSelected: r && !t, withSeparator: !l && !r, isSearch: t, isPinned: n.isPinned }),
                                     },
                                     t ? n.conversationId.id + n.preview?.latestMessagePreview.sequenceNumber : n.conversationId.id,
                                 );
@@ -1190,4 +1191,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-b4a0aebf.bfdbe46a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-b4a0aebf.1c9acb4a.js.map

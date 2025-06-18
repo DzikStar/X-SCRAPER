@@ -5,9 +5,9 @@
         738545: (e, t, n) => {
             n.d(t, { ZP: () => w });
             var r = n(202784),
-                o = n(325686),
-                a = n(111677),
-                l = n.n(a),
+                a = n(325686),
+                o = n(111677),
+                l = n.n(o),
                 i = n(212145),
                 s = n(568320),
                 c = n(123588),
@@ -19,10 +19,10 @@
                 f = l().c778d80b,
                 h = l().d9687d23,
                 E = l().ac73eb5a,
-                x = l().c5a9f921,
-                y = (e) => {
+                y = l().c5a9f921,
+                x = (e) => {
                     const { label: t, popover: n } = e;
-                    return t ? r.createElement(o.Z, { style: v.labelBar }, r.createElement(d.ZP, { color: "gray700", size: "subtext2", weight: "medium" }, t), n ? r.createElement(m.Z, { label: t, popover: n }) : null) : null;
+                    return t ? r.createElement(a.Z, { style: v.labelBar }, r.createElement(d.ZP, { color: "gray700", size: "subtext2", weight: "medium" }, t), n ? r.createElement(m.Z, { label: t, popover: n }) : null) : null;
                 },
                 b = (e) => {
                     const { style: t, unit: n } = e;
@@ -31,23 +31,23 @@
                 Z = (e) => {
                     let t,
                         n,
-                        { trendValue: a } = e;
-                    return void 0 === a ? null : (Math.abs(a) < 0.1 ? ((a = Math.round(1e3 * a) / 1e3), (t = f(a))) : ((a = Math.round(100 * a) / 100), (t = g(a))), (n = ((e, t) => (e < 0 ? h({ trendValueNegativePercent: t }) : 0 === e ? E : x({ trendValuePositivePercent: t })))(a, t)), a < 0 ? r.createElement(o.Z, { style: v.trendBar, testID: "trendLabel" }, r.createElement(i.default, { "aria-label": n, style: v.trendIconNeg }), r.createElement(d.ZP, { "aria-hidden": !0, color: "red500", size: "body", weight: "medium" }, t)) : 0 === a ? r.createElement(o.Z, { style: v.trendBar, testID: "trendLabel" }, r.createElement(s.default, { "aria-label": n, style: v.trendIconZero }), r.createElement(d.ZP, { "aria-hidden": !0, color: "gray700", size: "body", weight: "medium" }, t)) : r.createElement(o.Z, { style: v.trendBar, testID: "trendLabel" }, r.createElement(c.default, { "aria-label": n, style: v.trendIconPos }), r.createElement(d.ZP, { "aria-hidden": !0, color: "green500", size: "body", weight: "medium" }, t)));
+                        { trendValue: o } = e;
+                    return void 0 === o ? null : (Math.abs(o) < 0.1 ? ((o = Math.round(1e3 * o) / 1e3), (t = f(o))) : ((o = Math.round(100 * o) / 100), (t = g(o))), (n = ((e, t) => (e < 0 ? h({ trendValueNegativePercent: t }) : 0 === e ? E : y({ trendValuePositivePercent: t })))(o, t)), o < 0 ? r.createElement(a.Z, { style: v.trendBar, testID: "trendLabel" }, r.createElement(i.default, { "aria-label": n, style: v.trendIconNeg }), r.createElement(d.ZP, { "aria-hidden": !0, color: "red500", size: "body", weight: "medium" }, t)) : 0 === o ? r.createElement(a.Z, { style: v.trendBar, testID: "trendLabel" }, r.createElement(s.default, { "aria-label": n, style: v.trendIconZero }), r.createElement(d.ZP, { "aria-hidden": !0, color: "gray700", size: "body", weight: "medium" }, t)) : r.createElement(a.Z, { style: v.trendBar, testID: "trendLabel" }, r.createElement(c.default, { "aria-label": n, style: v.trendIconPos }), r.createElement(d.ZP, { "aria-hidden": !0, color: "green500", size: "body", weight: "medium" }, t)));
                 },
                 v = p.default.create((e) => ({ dataPoint: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, labelBar: { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: e.spaces.space2 }, valueBar: { display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "flex-end", marginBottom: e.spaces.space4 }, unitText: { flexDirection: "column" }, trendBar: { flexDirection: "row" }, textWithMargin: { marginEnd: e.spaces.space4 }, trendIconPos: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.green500 }, trendIconZero: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.gray700 }, trendIconNeg: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.red500 } })),
                 w = (e) => {
-                    const { animated: t, count: n, label: a, popover: l, size: i, subTextList: s, trendValue: c, unit: p, value: m } = e,
+                    const { animated: t, count: n, label: o, popover: l, size: i, subTextList: s, trendValue: c, unit: p, value: m } = e,
                         g = p || void 0 !== c ? v.textWithMargin : void 0,
                         f = void 0 !== c ? v.textWithMargin : void 0;
-                    return r.createElement(o.Z, { style: v.dataPoint }, r.createElement(y, { label: a, popover: l }), r.createElement(o.Z, { style: v.valueBar }, t ? r.createElement(u.ZP, { count: n, size: i, style: g, weight: "bold" }, m) : r.createElement(d.ZP, { size: i, style: g, weight: "bold" }, m), r.createElement(b, { style: f, unit: p }), r.createElement(Z, { trendValue: c })), s);
+                    return r.createElement(a.Z, { style: v.dataPoint }, r.createElement(x, { label: o, popover: l }), r.createElement(a.Z, { style: v.valueBar }, t ? r.createElement(u.ZP, { count: n, size: i, style: g, weight: "bold" }, m) : r.createElement(d.ZP, { size: i, style: g, weight: "bold" }, m), r.createElement(b, { style: f, unit: p }), r.createElement(Z, { trendValue: c })), s);
                 };
         },
         635998: (e, t, n) => {
             n.d(t, { Z: () => f });
             var r = n(202784),
-                o = n(325686),
-                a = n(111677),
-                l = n.n(a),
+                a = n(325686),
+                o = n(111677),
+                l = n.n(o),
                 i = n(711223),
                 s = n(731708),
                 c = n(154003),
@@ -58,34 +58,34 @@
                 g = u.default.create((e) => ({ popover: { padding: e.spaces.space32 }, popoverTitle: { marginBottom: e.spaces.space8 }, popoverText: { marginBottom: e.spaces.space24 }, iconInformation: { color: e.colors.gray700, fontSize: e.fontSizes.subtext3, cursor: "pointer", marginStart: e.spaces.space4 } })),
                 f = (e) => {
                     const { label: t, popover: n } = e;
-                    return r.createElement(o.Z, null, r.createElement(d.Z, { enableEnterKeyToggle: !0, preferredVerticalOrientation: "up", renderContent: (e) => r.createElement(o.Z, { role: "dialog", style: g.popover }, r.createElement(o.Z, { style: g.popoverTitle }, r.createElement(s.ZP, { size: "title3", weight: "heavy" }, t)), r.createElement(o.Z, { style: g.popoverText }, n), r.createElement(c.ZP, { onPress: e, type: "primaryOutlined" }, m)), withArrow: !0 }, r.createElement(o.Z, { role: "button" }, r.createElement(i.default, { "aria-label": p, style: g.iconInformation }))));
+                    return r.createElement(a.Z, null, r.createElement(d.Z, { enableEnterKeyToggle: !0, preferredVerticalOrientation: "up", renderContent: (e) => r.createElement(a.Z, { role: "dialog", style: g.popover }, r.createElement(a.Z, { style: g.popoverTitle }, r.createElement(s.ZP, { size: "title3", weight: "heavy" }, t)), r.createElement(a.Z, { style: g.popoverText }, n), r.createElement(c.ZP, { onPress: e, type: "primaryOutlined" }, m)), withArrow: !0 }, r.createElement(a.Z, { role: "button" }, r.createElement(i.default, { "aria-label": p, style: g.iconInformation }))));
                 };
         },
         420412: (e, t, n) => {
             n.d(t, { Z: () => s });
             var r = n(202784),
-                o = n(325686),
-                a = n(235902),
+                a = n(325686),
+                o = n(235902),
                 l = n(885015),
                 i = n(392237);
             function s({ borderColor: e = "borderColor", isSlim: t = !1, label: n }) {
-                const { isWebRedesign: s } = a.ZP.useProps(),
+                const { isWebRedesign: s } = o.ZP.useProps(),
                     d = "borderColor" === e || "nestedBorderColor" === e ? c[e] : { backgroundColor: i.default.theme.colors[e] ?? i.default.theme.colors.borderColor };
-                return n ? r.createElement(l.Z, { style: !t && c.root, withGutter: !0 }, r.createElement(o.Z, { style: c.gapColumn }, r.createElement(o.Z, { style: [c.gap, d] })), r.createElement(o.Z, { style: c.gapText }, n), r.createElement(o.Z, { style: c.gapColumn }, r.createElement(o.Z, { style: [c.gap, d] }))) : r.createElement(o.Z, { style: [!t && c.root, s() && c.rootRedesign, c.gap, d] });
+                return n ? r.createElement(l.Z, { style: !t && c.root, withGutter: !0 }, r.createElement(a.Z, { style: c.gapColumn }, r.createElement(a.Z, { style: [c.gap, d] })), r.createElement(a.Z, { style: c.gapText }, n), r.createElement(a.Z, { style: c.gapColumn }, r.createElement(a.Z, { style: [c.gap, d] }))) : r.createElement(a.Z, { style: [!t && c.root, s() && c.rootRedesign, c.gap, d] });
             }
             const c = i.default.create((e) => ({ borderColor: { backgroundColor: i.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: i.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
         },
         885015: (e, t, n) => {
             n.d(t, { Z: () => c });
             var r = n(807896),
-                o = n(202784),
-                a = n(325686),
+                a = n(202784),
+                o = n(325686),
                 l = n(392237);
-            class i extends o.Component {
+            class i extends a.Component {
                 render() {
                     const { children: e, style: t, withGutter: n, ...l } = this.props,
-                        i = o.Children.map(e, (e) => e && o.cloneElement(e, { style: [e.props.style, s.column, n && s.withGutterColumn] }));
-                    return o.createElement(a.Z, (0, r.Z)({ style: [t, s.root, n && s.withGutter] }, l), i);
+                        i = a.Children.map(e, (e) => e && a.cloneElement(e, { style: [e.props.style, s.column, n && s.withGutterColumn] }));
+                    return a.createElement(o.Z, (0, r.Z)({ style: [t, s.root, n && s.withGutter] }, l), i);
                 }
             }
             i.defaultProps = { withGutter: !1 };
@@ -95,8 +95,8 @@
         280278: (e, t, n) => {
             n.d(t, { ZP: () => f });
             var r = n(202784),
-                o = n(325686),
-                a = n(827515),
+                a = n(325686),
+                o = n(827515),
                 l = n(461756),
                 i = n(731708),
                 s = n(392237);
@@ -104,7 +104,7 @@
                 d = "down",
                 u = (e, t, n) => {
                     n((n) => {
-                        const r = (0, a.Z)(e) ? (e > (n.count || 0) ? c : d) : c;
+                        const r = (0, o.Z)(e) ? (e > (n.count || 0) ? c : d) : c;
                         return { ...n, count: e, oldText: n.text, pendingCount: null, pendingText: null, text: t, transitionDirection: r };
                     });
                 },
@@ -133,7 +133,7 @@
                             if (E.current)
                                 if (l.Z.reducedMotionEnabled) h((n) => ({ ...n, oldText: null, text: t, pendingText: null, pendingCount: null, count: e.count }));
                                 else if (t !== f.pendingText) {
-                                    t === f.text || ((0, a.Z)(e.count) && f.count === e.count) ? h((e) => ({ ...e, pendingCount: null, pendingText: null })) : (h((n) => ({ ...n, pendingCount: e.count, pendingText: t })), f.animating || u(e.count, t, h));
+                                    t === f.text || ((0, o.Z)(e.count) && f.count === e.count) ? h((e) => ({ ...e, pendingCount: null, pendingText: null })) : (h((n) => ({ ...n, pendingCount: e.count, pendingText: t })), f.animating || u(e.count, t, h));
                                 }
                         }, [t]),
                         r.useEffect(() => {
@@ -150,11 +150,11 @@
                         r.useMemo(() => {
                             const e = p[f.transitionDirection],
                                 t = f.oldText && !l.Z.reducedMotionEnabled,
-                                a = !f.animating && f.oldText && !l.Z.reducedMotionEnabled,
+                                o = !f.animating && f.oldText && !l.Z.reducedMotionEnabled,
                                 s = { ...m, ...(f.animating ? e.post : e.active) },
-                                c = { ...(a ? e.pre : e.active) };
+                                c = { ...(o ? e.pre : e.active) };
                             return r.createElement(
-                                o.Z,
+                                a.Z,
                                 { style: [g.root, n] },
                                 t ? r.createElement("span", { style: s }, r.createElement(i.ZP, d, f.oldText)) : null,
                                 r.createElement(
@@ -177,27 +177,34 @@
         98440: (e, t, n) => {
             n.r(t), n.d(t, { default: () => s });
             var r = n(202784),
-                o = n(890601),
-                a = n(783427),
+                a = n(890601),
+                o = n(783427),
                 l = n(347101);
             const i = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                const { direction: t } = (0, o.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const s = i;
         },
+        465233: (e, t, n) => {
+            n.d(t, { Z: () => a });
+            var r = n(716406);
+            function a(e) {
+                return "object" != typeof e || null === e ? e : Array.isArray(e) ? e.map(a) : (0, r.Z)(e, (e) => a(e));
+            }
+        },
         662678: (e, t, n) => {
-            n.d(t, { G: () => o, Z: () => r });
+            n.d(t, { G: () => a, Z: () => r });
             n(136728);
             const r = function (e, t) {
-                return o(e, t);
+                return a(e, t);
             };
-            function o(e, t) {
+            function a(e, t) {
                 return e.reduce(
-                    (n, r, o) => {
-                        const a = t ? t(r, o, e) : !!r;
-                        return a && n[0].push(r), !a && n[1].push(r), n;
+                    (n, r, a) => {
+                        const o = t ? t(r, a, e) : !!r;
+                        return o && n[0].push(r), !o && n[1].push(r), n;
                     },
                     [[], []],
                 );
@@ -205,4 +212,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpaceAnalytics.c18b7fca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpaceAnalytics.81d41f6a.js.map

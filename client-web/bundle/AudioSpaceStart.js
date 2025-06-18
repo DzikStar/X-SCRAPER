@@ -103,10 +103,10 @@
                     }, [u, e, t]),
                     [p, m] = a.useState(h),
                     g = () => d.indexOf(document.activeElement),
-                    b = (e) => {
+                    y = (e) => {
                         e.focus({ preventScroll: !0 });
                     },
-                    y = (t) => {
+                    b = (t) => {
                         let r = [],
                             a = [t];
                         const n = p?.includes(t);
@@ -114,7 +114,7 @@
                     },
                     f = a.Children.map(t, (e, t) => {
                         const r = `${u}_${t}`;
-                        return a.isValidElement(e) ? a.cloneElement(e, { accordionItemId: r, onToggle: y, isExpanded: p.includes(r) }) : e;
+                        return a.isValidElement(e) ? a.cloneElement(e, { accordionItemId: r, onToggle: b, isExpanded: p.includes(r) }) : e;
                     });
                 return a.createElement(
                     n.Z,
@@ -125,16 +125,16 @@
                                   let t;
                                   switch (e.key) {
                                       case "ArrowDown":
-                                          e.preventDefault(), (t = d[g() + 1] || d[0]), b(t);
+                                          e.preventDefault(), (t = d[g() + 1] || d[0]), y(t);
                                           break;
                                       case "ArrowUp":
-                                          e.preventDefault(), (t = d[g() - 1] || d[d.length - 1]), b(t);
+                                          e.preventDefault(), (t = d[g() - 1] || d[d.length - 1]), y(t);
                                           break;
                                       case "Home":
-                                          e.preventDefault(), (t = d[0]), b(t);
+                                          e.preventDefault(), (t = d[0]), y(t);
                                           break;
                                       case "End":
-                                          e.preventDefault(), (t = d[d.length - 1]), b(t);
+                                          e.preventDefault(), (t = d[d.length - 1]), y(t);
                                   }
                               }
                             : l.Z,
@@ -163,7 +163,7 @@
                 c = r(530732),
                 d = r(392237);
             const u = d.default.create((e) => ({ header: { flexGrow: 1, padding: e.spaces.space16, flexDirection: "row", justifyContent: "space-between" }, chevronMargin: { marginStart: e.spaces.space12 }, chevronExpanded: { color: e.colors.primary, transform: "rotate(-180deg)" }, chevronAnimation: { transitionDuration: "100ms" }, title: { flexDirection: "row" }, iconBefore: { marginEnd: e.spaces.space8 }, iconAfter: { marginStart: e.spaces.space8 } })),
-                h = ({ accordionItemId: e = "", children: t, headerStyles: r, icon: h, iconColor: p, iconImage: m, iconSide: g, isExpanded: b = !1, onClick: y, onToggle: f, testID: v, title: C, titleColor: _, titleStyles: E }) => {
+                h = ({ accordionItemId: e = "", children: t, headerStyles: r, icon: h, iconColor: p, iconImage: m, iconSide: g, isExpanded: y = !1, onClick: b, onToggle: f, testID: v, title: C, titleColor: _, titleStyles: E }) => {
                     const D = i.Z.generate({ backgroundColor: "transparent", color: d.default.theme.colors.primary, customFocusBackgroundColor: d.default.theme.colors.gray0, customHoverBackgroundColor: d.default.theme.colors.gray0, customPressedBackgroundColor: d.default.theme.colors.gray0, insetFocusRing: !0 }),
                         w = g || "AfterTitle",
                         x = () =>
@@ -180,22 +180,22 @@
                             c.Z,
                             {
                                 "aria-controls": `${e}_content`,
-                                "aria-expanded": b,
+                                "aria-expanded": y,
                                 id: `${e}_header`,
                                 interactiveStyles: D,
                                 onClick: () => {
-                                    y && y(), f && f(e);
+                                    b && b(), f && f(e);
                                 },
                                 style: r || u.header,
                                 testID: v,
                             },
                             a.createElement(n.Z, { style: u.title }, "BeforeTitle" === w ? x() : null, a.createElement(s.ZP, { color: _ && _, style: E, testID: "title", weight: "bold" }, C), "AfterTitle" === w ? x() : null),
                             (() => {
-                                const e = [u.chevronMargin, b && u.chevronExpanded, !l.Z.reducedMotionEnabled && u.chevronAnimation];
-                                return _ && !b ? e.push({ color: d.default.theme.colors[_] }) : _ || b || e.push({ color: d.default.theme.colors.text }), a.createElement(o.default, { style: e, testID: "accordion-chevron" });
+                                const e = [u.chevronMargin, y && u.chevronExpanded, !l.Z.reducedMotionEnabled && u.chevronAnimation];
+                                return _ && !y ? e.push({ color: d.default.theme.colors[_] }) : _ || y || e.push({ color: d.default.theme.colors.text }), a.createElement(o.default, { style: e, testID: "accordion-chevron" });
                             })(),
                         ),
-                        b && a.createElement(n.Z, { "aria-hidden": !b, "aria-labelledby": `${e}_header`, id: `${e}_content}`, role: "region" }, t),
+                        y && a.createElement(n.Z, { "aria-hidden": !y, "aria-labelledby": `${e}_header`, id: `${e}_content}`, role: "region" }, t),
                     );
                 };
         },
@@ -214,8 +214,8 @@
                 p = r(855488),
                 m = r(466818),
                 g = r(392237);
-            const b = l().jf83d092,
-                y = l().af4abf20,
+            const y = l().jf83d092,
+                b = l().af4abf20,
                 f = l().b871f280;
             let v = 1;
             class C extends a.Component {
@@ -269,7 +269,7 @@
                     const { day: e, month: t, year: r, errors: o = {}, label: l, autofocus: s, monthSelectorTestID: i, daySelectorTestID: c, yearSelectorTestID: p, style: g, minSelectableYear: v, maxSelectableYear: C, withCalendar: D, hideDay: w, disabled: x } = this.props,
                         Z = h.DD(t, r),
                         I = h.Zj(v, C, e, t);
-                    return a.createElement(n.Z, { "aria-label": l, role: "group", style: [E.selectorsContainer, g] }, a.createElement(m.ZP, { "aria-describedby": o.month ? this._errorID : void 0, autofocus: s, disabled: x, hasError: o.month, label: y, onChange: this._handleMonthChange, options: this._monthOptions, style: E.monthSelector, testID: i, value: t ? `${t}` : "", withEmptyOption: !0 }), w ? null : a.createElement(m.ZP, { "aria-describedby": o.day ? this._errorID : void 0, disabled: x, hasError: o.day, label: b, onChange: this._handleDayChange, options: Z, style: E.daySelector, testID: c, value: e ? `${e}` : "", withEmptyOption: !0 }), a.createElement(m.ZP, { "aria-describedby": o.year ? this._errorID : void 0, disabled: x, hasError: o.year, label: f, onChange: this._handleYearChange, options: I, style: E.yearSelector, testID: p, value: r ? `${r}` : "", withEmptyOption: !0 }), D && a.createElement(n.Z, { role: "label", style: E.calendarLabel }, a.createElement(d.ZP, { "aria-label": "Calendar", icon: _, onPress: this._showCalendarPicker, size: "xLarge", type: "primaryText" }), (0, u.Z)("input", { max: this._nativeMaxDate, min: this._nativeMinDate, name: l, onChange: this._handleDateChange, style: E.nativeDateInput, type: "date", ref: this._setNativeCalendarRef, value: h.ww(e, t, r) })));
+                    return a.createElement(n.Z, { "aria-label": l, role: "group", style: [E.selectorsContainer, g] }, a.createElement(m.ZP, { "aria-describedby": o.month ? this._errorID : void 0, autofocus: s, disabled: x, hasError: o.month, label: b, onChange: this._handleMonthChange, options: this._monthOptions, style: E.monthSelector, testID: i, value: t ? `${t}` : "", withEmptyOption: !0 }), w ? null : a.createElement(m.ZP, { "aria-describedby": o.day ? this._errorID : void 0, disabled: x, hasError: o.day, label: y, onChange: this._handleDayChange, options: Z, style: E.daySelector, testID: c, value: e ? `${e}` : "", withEmptyOption: !0 }), a.createElement(m.ZP, { "aria-describedby": o.year ? this._errorID : void 0, disabled: x, hasError: o.year, label: f, onChange: this._handleYearChange, options: I, style: E.yearSelector, testID: p, value: r ? `${r}` : "", withEmptyOption: !0 }), D && a.createElement(n.Z, { role: "label", style: E.calendarLabel }, a.createElement(d.ZP, { "aria-label": "Calendar", icon: _, onPress: this._showCalendarPicker, size: "xLarge", type: "primaryText" }), (0, u.Z)("input", { max: this._nativeMaxDate, min: this._nativeMinDate, name: l, onChange: this._handleDateChange, style: E.nativeDateInput, type: "date", ref: this._setNativeCalendarRef, value: h.ww(e, t, r) })));
                 }
                 _renderNativeDateInput() {
                     const { label: e } = this.props;
@@ -294,9 +294,9 @@
                 p = 8,
                 m = 9,
                 g = 10,
-                b = 11,
-                y = 12,
-                f = { [l]: { label: n().hac89ab0, numDays: 31 }, [s]: { label: n().ef30b30a, numDays: 28, numDaysLeapYear: 29 }, [i]: { label: n().b56920fa, numDays: 31 }, [c]: { label: n().b1a0f1ec, numDays: 30 }, [d]: { label: n().daf779c8, numDays: 31 }, [u]: { label: n().c6ad074e, numDays: 30 }, [h]: { label: n().f1db106c, numDays: 31 }, [p]: { label: n().i4e80b7a, numDays: 31 }, [m]: { label: n().efa6cc1e, numDays: 30 }, [g]: { label: n().f40a0cbe, numDays: 31 }, [b]: { label: n().ac74a31c, numDays: 30 }, [y]: { label: n().i6c1e4b2, numDays: 31 } },
+                y = 11,
+                b = 12,
+                f = { [l]: { label: n().hac89ab0, numDays: 31 }, [s]: { label: n().ef30b30a, numDays: 28, numDaysLeapYear: 29 }, [i]: { label: n().b56920fa, numDays: 31 }, [c]: { label: n().b1a0f1ec, numDays: 30 }, [d]: { label: n().daf779c8, numDays: 31 }, [u]: { label: n().c6ad074e, numDays: 30 }, [h]: { label: n().f1db106c, numDays: 31 }, [p]: { label: n().i4e80b7a, numDays: 31 }, [m]: { label: n().efa6cc1e, numDays: 30 }, [g]: { label: n().f40a0cbe, numDays: 31 }, [y]: { label: n().ac74a31c, numDays: 30 }, [b]: { label: n().i6c1e4b2, numDays: 31 } },
                 v = (e) => ({ label: `${e}`, value: `${e}` }),
                 C = (0, o.Z)(1, 29).map(v),
                 _ = (0, o.Z)(1, 30).map(v),
@@ -374,7 +374,7 @@
                 c = s;
         },
         466818: (e, t, r) => {
-            r.d(t, { ZP: () => y });
+            r.d(t, { ZP: () => b });
             var a = r(202784),
                 n = r(325686),
                 o = r(487552),
@@ -415,7 +415,7 @@
                     this.props.autofocus && this._selectRef && this._selectRef.current && this._selectRef.current.focus();
                 }
                 render() {
-                    const { "aria-describedby": e, disabled: t, errorText: r, hasError: c, helperText: m, options: g, style: y, testID: f, value: v, withEmptyOption: C } = this.props,
+                    const { "aria-describedby": e, disabled: t, errorText: r, hasError: c, helperText: m, options: g, style: b, testID: f, value: v, withEmptyOption: C } = this.props,
                         { isFocused: _ } = this.state,
                         E = i.ZP.getLanguage(),
                         D = void 0 === c ? !!r : c,
@@ -429,18 +429,18 @@
                             const i = "ja" === E ? u.default.theme.fontFamilies.japan : "rtl" === e || l.Z.isLocaleRTL(E) ? u.default.theme.fontFamilies.rtl : u.default.theme.fontFamilies.normal;
                             return a.createElement(
                                 n.Z,
-                                { style: [s.Z.border, b.container, t && s.Z.disabled, _ && s.Z.focusedBorderValid, D && s.Z.invalidBorderColor, _ && D && s.Z.focusedBorderInvalid, y] },
+                                { style: [s.Z.border, y.container, t && s.Z.disabled, _ && s.Z.focusedBorderValid, D && s.Z.invalidBorderColor, _ && D && s.Z.focusedBorderInvalid, b] },
                                 this._renderLabel(),
                                 a.createElement(
                                     h,
-                                    { "aria-describedby": x, "aria-invalid": D, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: i }, t && s.Z.disabled], testID: f || "", value: v },
-                                    C ? a.createElement(p, { disabled: !0, style: b.option, value: "" }) : null,
+                                    { "aria-describedby": x, "aria-invalid": D, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [y.select, { fontFamily: i }, t && s.Z.disabled], testID: f || "", value: v },
+                                    C ? a.createElement(p, { disabled: !0, style: y.option, value: "" }) : null,
                                     g.map((e) => {
                                         const { disabled: t, label: r, value: n } = e;
-                                        return a.createElement(p, { disabled: t, key: `${r}-${n}`, style: b.option, value: n }, r);
+                                        return a.createElement(p, { disabled: t, key: `${r}-${n}`, style: y.option, value: n }, r);
                                     }),
                                 ),
-                                a.createElement(o.default, { style: [b.dropdownCaret, _ && s.Z.validColor, !(!c && !r) && s.Z.invalidColor] }),
+                                a.createElement(o.default, { style: [y.dropdownCaret, _ && s.Z.validColor, !(!c && !r) && s.Z.invalidColor] }),
                             );
                         }),
                         m ? this._renderHelperText() : null,
@@ -450,18 +450,18 @@
                 _renderLabel() {
                     const { errorText: e, hasError: t, label: r } = this.props,
                         { isFocused: n } = this.state;
-                    return a.createElement(i.ZP, { color: t || e ? "red500" : n ? "primary" : "gray700", id: this._labelID, role: "label", style: b.label }, r);
+                    return a.createElement(i.ZP, { color: t || e ? "red500" : n ? "primary" : "gray700", id: this._labelID, role: "label", style: y.label }, r);
                 }
                 _renderHelperText() {
-                    return a.createElement(n.Z, { "aria-live": "polite" }, a.createElement(i.ZP, { color: "gray700", id: this._helperID, style: b.helperText }, this.props.helperText));
+                    return a.createElement(n.Z, { "aria-live": "polite" }, a.createElement(i.ZP, { color: "gray700", id: this._helperID, style: y.helperText }, this.props.helperText));
                 }
                 _renderErrorText() {
-                    return a.createElement(n.Z, { "aria-live": "polite" }, a.createElement(i.ZP, { color: "red500", id: this._errorID, style: b.helperText }, this.props.errorText));
+                    return a.createElement(n.Z, { "aria-live": "polite" }, a.createElement(i.ZP, { color: "red500", id: this._errorID, style: y.helperText }, this.props.errorText));
                 }
             }
             g.defaultProps = { disabled: !1, autofocus: !1, withEmptyOption: !1 };
-            const b = u.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
-                y = g;
+            const y = u.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
+                b = g;
         },
         564619: (e, t, r) => {
             r.d(t, { Z: () => C });
@@ -497,8 +497,8 @@
                 },
                 m = l().eb124f96,
                 g = l().i7a6f114,
-                b = l().ccc99ff2,
-                y = [...Array(24).keys()],
+                y = l().ccc99ff2,
+                b = [...Array(24).keys()],
                 f = [...Array(13).keys()].slice(1),
                 v = [...Array(60).keys()];
             class C extends a.Component {
@@ -551,14 +551,14 @@
                         { hour: r, minute: a } = new _(e, t),
                         { hourFormat: n, minuteFormat: o, use24HourTime: l } = this._getLocale(),
                         s = "number" == typeof r ? (r < 12 ? "am" : "pm") : void 0,
-                        i = l ? y : f,
+                        i = l ? b : f,
                         c = v,
                         d = "2-digit" === n ? 2 : 1,
                         u = "2-digit" === o ? 2 : 1,
                         h = [];
                     return (
                         h.push({ label: g, options: i.map((e) => ({ label: p(e, d), value: `${e}` })), onChange: this._handleHourChange, value: "number" == typeof r ? `${l ? r : r % 12 || 12}` : "", withEmptyOption: !0 }),
-                        h.push({ label: b, options: c.map((e) => ({ label: p(e, u), value: `${e}` })), onChange: this._handleMinuteChange, value: "number" == typeof a ? `${a}` : "", withEmptyOption: !0 }),
+                        h.push({ label: y, options: c.map((e) => ({ label: p(e, u), value: `${e}` })), onChange: this._handleMinuteChange, value: "number" == typeof a ? `${a}` : "", withEmptyOption: !0 }),
                         l ||
                             h.push({
                                 label: m,
@@ -636,6 +636,13 @@
             s.metadata = { width: 24, height: 24 };
             const i = s;
         },
+        465233: (e, t, r) => {
+            r.d(t, { Z: () => n });
+            var a = r(716406);
+            function n(e) {
+                return "object" != typeof e || null === e ? e : Array.isArray(e) ? e.map(n) : (0, a.Z)(e, (e) => n(e));
+            }
+        },
         662678: (e, t, r) => {
             r.d(t, { G: () => n, Z: () => a });
             r(136728);
@@ -654,4 +661,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpaceStart.7a41bc0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpaceStart.9d7277ea.js.map

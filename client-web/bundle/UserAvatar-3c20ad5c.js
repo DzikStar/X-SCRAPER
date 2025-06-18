@@ -2,530 +2,622 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.UserAvatar-3c20ad5c", "bundle.DirectMessages-6ac0f1a5"],
     {
-        620988: (e, t, n) => {
-            n.d(t, { ZH: () => x, ZP: () => k, x9: () => y });
-            n(136728);
-            var a = n(202784),
-                o = n(726426),
-                r = n.n(o),
-                i = n(111677),
-                s = n.n(i),
-                c = n(88656),
-                l = n(952793),
-                d = n(782642),
-                u = n(725405);
-            n(571372);
-            var p = n(623494),
-                m = n(737368);
+        187268: (e, t, a) => {
+            a.d(t, { Bv: () => _, Jw: () => v, cU: () => y, eC: () => x, rs: () => h, w$: () => w });
+            a(543673), a(240753), a(128399);
+            var n = a(202784),
+                r = a(392237),
+                o = a(956272),
+                s = a(520913),
+                i = a(913315),
+                c = a(355586),
+                l = a(14284),
+                u = a(492244),
+                d = a(397159);
+            const m = /<xai:tool_usage_card>\s*(?:<xai:tool_name>([\w-]+)<\/xai:tool_name>\s*(?:<xai:tool_args>([\s\S]*?)<\/xai:tool_args>\s*)*)<\/xai:tool_usage_card>/g,
+                p = /<xai:tool_name>([\w-]+)<\/xai:tool_name>/,
+                f = /<xai:tool_args>([\s\S]*?)<\/xai:tool_args>/;
+            function h(e) {
+                return e.replace(m, (e) => {
+                    const t = (function (e) {
+                        const { toolArgs: t, toolName: a } = g(e);
+                        let n = `<tool_usage_card><tool_name>${a}</tool_name>`;
+                        return (n += `<tool_args>${t}</tool_args>`), (n += "</tool_usage_card>"), n;
+                    })(e);
+                    return t ?? e;
+                });
+            }
+            function _(e) {
+                const t = e.match(m);
+                if (t) {
+                    const { toolArgs: e, toolName: a } = g(t[0]);
+                    return v(a, e);
+                }
+                return null;
+            }
+            function g(e) {
+                let t = "",
+                    a = "";
+                const n = e.match(p);
+                n && (t = n[1]);
+                const r = e.match(f);
+                return r && (a = r[1].trim()), { toolName: t, toolArgs: a };
+            }
+            function v(e, t) {
+                const a = t.match(/^<!\[CDATA\[(.*?)\]\]>/ms);
+                let n = {};
+                if (a)
+                    try {
+                        n = JSON.parse(a[1]);
+                    } catch (e) {
+                        n = {};
+                    }
+                return { name: e, args: n };
+            }
+            const x = "Using tools";
+            function y(e) {
+                switch (e.name) {
+                    case "web_search":
+                        return d.XR.WebSearchQueryFormatter({ query: e.args.query });
+                    case "x_search":
+                        return d.XR.XSearchQueryFormatter({ query: e.args.query });
+                    case "browse_page": {
+                        let t = e.args.url || "";
+                        try {
+                            t = new URL(t).hostname.replace("www.", "");
+                        } catch (e) {}
+                        return e.args.query ? d.XR.GenericURLQueryFormatter({ url: t, query: e.args.query }) : d.XR.BrowsePageFormatter({ url: t });
+                    }
+                    case "get_x_user_timeline":
+                        return d.XR.XUsernameQuerySearchFormatter({ query: e.args.query, username: e.args.username });
+                    default:
+                        return e.name ?? x;
+                }
+            }
+            function w(e) {
+                const t = { style: { width: r.default.theme.spaces.space16, height: r.default.theme.spaces.space16 } };
+                switch (e) {
+                    case "search_news":
+                    case "web_search":
+                        return n.createElement(o.default, t);
+                    case "x_search":
+                    case "get_x_user_timeline":
+                        return n.createElement(s.default, t);
+                    case "call_finance_api":
+                        return n.createElement(i.default, t);
+                    case "call_sports_api":
+                        return n.createElement(c.default, t);
+                    case "browse_page":
+                        return n.createElement(l.default, t);
+                    default:
+                        return n.createElement(u.default, t);
+                }
+            }
+        },
+        620988: (e, t, a) => {
+            a.d(t, { ZH: () => x, ZP: () => w, x9: () => y });
+            a(136728);
+            var n = a(202784),
+                r = a(726426),
+                o = a.n(r),
+                s = a(111677),
+                i = a.n(s),
+                c = a(88656),
+                l = a(952793),
+                u = a(782642),
+                d = a(725405);
+            a(571372);
+            var m = a(623494),
+                p = a(737368);
             const f = 4,
-                h = s().h4d7cbcc,
-                _ = s().j77292b7,
+                h = i().h4d7cbcc,
+                _ = i().j77292b7,
                 g = { onGrokFileSelected: (e) => new Promise((e) => e()), onFileSelected: (e, t) => new Promise((e) => e()), selectedFiles: {}, clearSelectedFile: () => {} },
-                v = a.createContext(g);
+                v = n.createContext(g);
             function x({ children: e }) {
-                const [t, n] = a.useState({}),
-                    o = (0, d.p)(),
-                    i = (0, u.Z)(),
-                    s = (0, m.k)(),
+                const [t, a] = n.useState({}),
+                    r = (0, u.p)(),
+                    s = (0, d.Z)(),
+                    i = (0, p.k)(),
                     g = (0, l.JY)("responsive_web_grok_file_upload_max_files", f),
-                    x = a.useCallback(
+                    x = n.useCallback(
                         (e) => {
-                            const a = t[e];
-                            a &&
-                                (a.abortController?.abort(),
-                                n((t) => {
-                                    const n = { ...t };
-                                    return delete n[e], n;
+                            const n = t[e];
+                            n &&
+                                (n.abortController?.abort(),
+                                a((t) => {
+                                    const a = { ...t };
+                                    return delete a[e], a;
                                 }));
                         },
-                        [t, n],
+                        [t, a],
                     ),
-                    y = a.useCallback(
+                    y = n.useCallback(
                         async (e, t) => {
-                            const a = r()(),
+                            const n = o()(),
                                 l = new AbortController(),
-                                d = { abortController: l, isUploading: !0, isPendingAutomaticPromptSend: t?.awaitPromptSend, local: e };
+                                u = { abortController: l, isUploading: !0, isPendingAutomaticPromptSend: t?.awaitPromptSend, local: e };
                             if (e.type.startsWith("image/"))
                                 try {
-                                    d.dimensions = await ((u = e),
+                                    u.dimensions = await ((d = e),
                                     new Promise((e, t) => {
-                                        if (!u.type.startsWith("image/")) return void t(new Error("File is not an image"));
-                                        const n = new FileReader();
-                                        (n.onload = (n) => {
-                                            const a = new Image();
-                                            (a.onload = () => {
-                                                e({ width: a.width, height: a.height });
+                                        if (!d.type.startsWith("image/")) return void t(new Error("File is not an image"));
+                                        const a = new FileReader();
+                                        (a.onload = (a) => {
+                                            const n = new Image();
+                                            (n.onload = () => {
+                                                e({ width: n.width, height: n.height });
                                             }),
-                                                (a.onerror = () => {
+                                                (n.onerror = () => {
                                                     t(new Error("Failed to load image"));
                                                 }),
-                                                (a.src = n.target.result);
+                                                (n.src = a.target.result);
                                         }),
-                                            (n.onerror = () => {
+                                            (a.onerror = () => {
                                                 t(new Error("Failed to read file"));
                                             }),
-                                            n.readAsDataURL(u);
+                                            a.readAsDataURL(d);
                                     }));
                                 } catch (e) {}
-                            var u;
-                            n((e) => (Object.keys(e).length >= g ? (o({ text: _({ count: g }) }), e) : { ...e, [a]: d }));
+                            var d;
+                            a((e) => (Object.keys(e).length >= g ? (r({ text: _({ count: g }) }), e) : { ...e, [n]: u }));
                             try {
-                                const t = await s(e, l);
-                                (0, p.Jm)(i), (d.remote = { ...t, dimensions: d.dimensions }), n((e) => (e[a] ? { ...e, [a]: d } : e));
+                                const t = await i(e, l);
+                                (0, m.Jm)(s), (u.remote = { ...t, dimensions: u.dimensions }), a((e) => (e[n] ? { ...e, [n]: u } : e));
                             } catch (e) {
                                 if (e instanceof c.Z && 0 === e.status) return;
-                                (0, p.eV)(i, e.message),
-                                    o({ text: h }),
-                                    n((e) => {
+                                (0, m.eV)(s, e.message),
+                                    r({ text: h }),
+                                    a((e) => {
                                         const t = { ...e };
-                                        return delete t[a], t;
+                                        return delete t[n], t;
                                     });
                             } finally {
-                                (d.isUploading = !1), n((e) => (e[a] ? { ...e, [a]: d } : e));
+                                (u.isUploading = !1), a((e) => (e[n] ? { ...e, [n]: u } : e));
                             }
                         },
-                        [g, o, s, i],
+                        [g, r, i, s],
                     ),
-                    k = a.useCallback(
+                    w = n.useCallback(
                         async (e) => {
-                            const a = r()(),
-                                o = { abortController: new AbortController(), isUploading: !1, remote: e };
-                            n({ ...t, [a]: o });
+                            const n = o()(),
+                                r = { abortController: new AbortController(), isUploading: !1, remote: e };
+                            a({ ...t, [n]: r });
                         },
                         [t],
                     );
-                return a.createElement(v.Provider, { value: { selectedFiles: t, onFileSelected: y, clearSelectedFile: x, onGrokFileSelected: k } }, e);
+                return n.createElement(v.Provider, { value: { selectedFiles: t, onFileSelected: y, clearSelectedFile: x, onGrokFileSelected: w } }, e);
             }
             function y() {
                 const e = (0, l.hC)("responsive_web_grok_pdf_upload_enabled"),
                     t = (0, l.hC)("responsive_web_grok_text_upload_enabled");
-                return a.useMemo(() => {
-                    const n = ["image/jpeg", "image/png", "image/webp"];
-                    return e && n.push("application/pdf"), t && (n.push("text/plain"), n.push("text/xml"), n.push("text/csv"), n.push("text/markdown"), n.push("text/x-markdown"), n.push("text/md"), n.push("text/calendar"), n.push("text/vcard"), n.push("text/json"), n.push("text/yaml"), n.push("text/x-python"), n.push("text/x-csrc"), n.push("text/x-c++src"), n.push("text/x-csharp"), n.push("text/x-ruby"), n.push("text/x-java-source"), n.push("text/x-go"), n.push("text/x-rust"), n.push("text/x-swift"), n.push("text/x-kotlin"), n.push("text/x-sql"), n.push("text/x-lua"), n.push("text/x-scala"), n.push("text/x-haskell"), n.push("text/x-php"), n.push("text/x-perl"), n.push("text/x-shellscript"), n.push("text/x-rsrc"), n.push("text/x-dart"), n.push("application/markdown"), n.push("application/xml"), n.push("application/json"), n.push("application/x-yaml"), n.push("application/x-latex"), n.push("application/x-sh"), n.push("application/x-msdownload"), n.push("application/x-httpd-php"), n.push("application/sql"), n.push("application/vnd.openxmlformats-officedocument.wordprocessingml.document"), n.push("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")), n;
+                return n.useMemo(() => {
+                    const a = ["image/jpeg", "image/png", "image/webp"];
+                    return e && a.push("application/pdf"), t && (a.push("text/plain"), a.push("text/xml"), a.push("text/csv"), a.push("text/markdown"), a.push("text/x-markdown"), a.push("text/md"), a.push("text/calendar"), a.push("text/vcard"), a.push("text/json"), a.push("text/yaml"), a.push("text/x-python"), a.push("text/x-csrc"), a.push("text/x-c++src"), a.push("text/x-csharp"), a.push("text/x-ruby"), a.push("text/x-java-source"), a.push("text/x-go"), a.push("text/x-rust"), a.push("text/x-swift"), a.push("text/x-kotlin"), a.push("text/x-sql"), a.push("text/x-lua"), a.push("text/x-scala"), a.push("text/x-haskell"), a.push("text/x-php"), a.push("text/x-perl"), a.push("text/x-shellscript"), a.push("text/x-rsrc"), a.push("text/x-dart"), a.push("application/markdown"), a.push("application/xml"), a.push("application/json"), a.push("application/x-yaml"), a.push("application/x-latex"), a.push("application/x-sh"), a.push("application/x-msdownload"), a.push("application/x-httpd-php"), a.push("application/sql"), a.push("application/vnd.openxmlformats-officedocument.wordprocessingml.document"), a.push("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")), a;
                 }, [e, t]);
             }
-            function k() {
-                return a.useContext(v);
+            function w() {
+                return n.useContext(v);
             }
         },
-        737368: (e, t, n) => {
-            n.d(t, { k: () => g });
-            n(571372);
-            var a = n(202784),
-                o = n(111677),
-                r = n.n(o),
-                i = n(276259),
-                s = n(952793),
-                c = n(782642),
-                l = n(725516),
-                d = n(125363),
-                u = n(458810),
-                p = n(623494),
-                m = n(620988);
-            const f = r().c74e87e0,
-                h = r().bea50a2a,
+        737368: (e, t, a) => {
+            a.d(t, { k: () => g });
+            a(571372);
+            var n = a(202784),
+                r = a(111677),
+                o = a.n(r),
+                s = a(276259),
+                i = a(952793),
+                c = a(782642),
+                l = a(725516),
+                u = a(125363),
+                d = a(458810),
+                m = a(623494),
+                p = a(620988);
+            const f = o().c74e87e0,
+                h = o().bea50a2a,
                 _ = (e) => e.toLowerCase().replace(/\/$/, ""),
                 g = () => {
                     const e = (0, c.p)(),
                         t = (0, l.z)(),
-                        n = (0, d.I0)(),
-                        o = (0, m.x9)(),
-                        r = (0, s.hC)("responsive_web_grok_file_compression_enabled"),
-                        g = (0, s.JY)("responsive_web_grok_file_max_size", 5242880);
-                    return a.useCallback(
-                        async (a, s) => {
-                            let c = a;
+                        a = (0, u.I0)(),
+                        r = (0, p.x9)(),
+                        o = (0, i.hC)("responsive_web_grok_file_compression_enabled"),
+                        g = (0, i.JY)("responsive_web_grok_file_max_size", 5242880);
+                    return n.useCallback(
+                        async (n, i) => {
+                            let c = n;
                             if (
                                 !((e, t) => {
-                                    const n = _(t);
+                                    const a = _(t);
                                     return e.some((e) => {
                                         const t = _(e);
                                         if (t.endsWith("*")) {
                                             const e = t.slice(0, -1);
-                                            return n.startsWith(e);
+                                            return a.startsWith(e);
                                         }
-                                        return n === t;
+                                        return a === t;
                                     });
-                                })(o, a.type)
+                                })(r, n.type)
                             )
-                                throw (e({ text: h }), (0, p.op)(t, `file has unsupported type: ${a.type}`), new Error());
-                            if (r) {
-                                let n;
+                                throw (e({ text: h }), (0, m.op)(t, `file has unsupported type: ${n.type}`), new Error());
+                            if (o) {
+                                let a;
                                 try {
-                                    n = await (0, i.hv)(a, g);
+                                    a = await (0, s.hv)(n, g);
                                 } catch (e) {}
-                                if (!n) throw (e({ text: f }), (0, p.op)(t, "failed to compress the file"), new Error());
-                                c = n;
-                            } else if (a.size > g) throw (e({ text: f }), (0, p.op)(t, "file is too large"), new Error());
-                            const l = await n((0, u.t)(c, s));
-                            return (0, p.Jm)(t), l;
+                                if (!a) throw (e({ text: f }), (0, m.op)(t, "failed to compress the file"), new Error());
+                                c = a;
+                            } else if (n.size > g) throw (e({ text: f }), (0, m.op)(t, "file is too large"), new Error());
+                            const l = await a((0, d.t)(c, i));
+                            return (0, m.Jm)(t), l;
                         },
-                        [e, t, n, r, g, o],
+                        [e, t, a, o, g, r],
                     );
                 };
         },
-        654917: (e, t, n) => {
-            n.d(t, { ZP: () => h, eX: () => m, uf: () => f });
-            var a = n(202784),
-                o = n(107267),
-                r = n(323265),
-                i = n(791632),
-                s = n(443781),
-                c = n(952793),
-                l = n(125363),
-                d = n(389071),
-                u = n(63538),
-                p = n(623494);
-            function m() {
-                const e = (0, o.useHistory)(),
-                    t = (0, l.v9)(d.Es);
-                return (0, i.HD)(e) ? (0, i.tT)(e) : t;
+        654917: (e, t, a) => {
+            a.d(t, { ZP: () => h, eX: () => p, uf: () => f });
+            var n = a(202784),
+                r = a(107267),
+                o = a(323265),
+                s = a(791632),
+                i = a(443781),
+                c = a(952793),
+                l = a(125363),
+                u = a(389071),
+                d = a(63538),
+                m = a(623494);
+            function p() {
+                const e = (0, r.useHistory)(),
+                    t = (0, l.v9)(u.Es);
+                return (0, s.HD)(e) ? (0, s.tT)(e) : t;
             }
             function f() {
-                const e = m(),
+                const e = p(),
                     t = (0, l.I0)(),
-                    n = (0, l.v9)((t) => (0, d.YJ)(t, e));
-                return (0, l.v9)(n.selectIsInitialized) || t((0, d.Ki)(e)), n;
+                    a = (0, l.v9)((t) => (0, u.YJ)(t, e));
+                return (0, l.v9)(a.selectIsInitialized) || t((0, u.Ki)(e)), a;
             }
             function h() {
-                const { userClaims: e } = (0, s.QZ)(),
-                    t = m(),
-                    n = f(),
-                    o = (0, l.v9)(n.selectMessageIds),
-                    i = (0, l.I0)(),
-                    h = (0, l.v9)(n.selectFetchConversationIdStatus),
-                    _ = (0, l.v9)(n.selectFetchConversationIdError),
-                    g = (0, l.v9)(n.selectMode),
-                    v = (0, l.v9)(n.selectStatus),
-                    x = (0, l.v9)(d.Pt),
-                    y = (0, l.v9)(n.selectConversationId),
-                    k = (0, l.v9)(d.pZ),
-                    w = (0, l.v9)(d.uF),
-                    b = (0, l.v9)(d.F9),
-                    S = (0, l.v9)(n.selectAnalysisEntityId),
-                    C = (0, l.v9)(n.selectUsingExperiment);
-                let E = !1;
+                const { userClaims: e } = (0, i.QZ)(),
+                    t = p(),
+                    a = f(),
+                    r = (0, l.v9)(a.selectMessageIds),
+                    s = (0, l.I0)(),
+                    h = (0, l.v9)(a.selectFetchConversationIdStatus),
+                    _ = (0, l.v9)(a.selectFetchConversationIdError),
+                    g = (0, l.v9)(a.selectMode),
+                    v = (0, l.v9)(a.selectStatus),
+                    x = (0, l.v9)(u.Pt),
+                    y = (0, l.v9)(a.selectConversationId),
+                    w = (0, l.v9)(u.pZ),
+                    k = (0, l.v9)(u.uF),
+                    S = (0, l.v9)(u.F9),
+                    b = (0, l.v9)(a.selectAnalysisEntityId),
+                    E = (0, l.v9)(a.selectUsingExperiment);
+                let C = !1;
                 const I = (0, c.hC)("responsive_web_grok_general_availability");
-                e.isTrueAndEnabled("subscriptions_inapp_grok") ? (E = "premium") : (I || w) && (E = k.length > 0 ? "restricted" : "free");
-                const N = a.useCallback(
+                e.isTrueAndEnabled("subscriptions_inapp_grok") ? (C = "premium") : (I || k) && (C = w.length > 0 ? "restricted" : "free");
+                const N = n.useCallback(
                         async (e, t) => {
-                            g !== e && (i(n.setMode(e)), r.ZP.isTwitterApp() || (await i((0, u.O)(e, b))), (0, p.RC)(t, e));
+                            g !== e && (s(a.setMode(e)), o.ZP.isTwitterApp() || (await s((0, d.O)(e, S))), (0, m.RC)(t, e));
                         },
-                        [i, n, g, b],
+                        [s, a, g, S],
                     ),
-                    Z = a.useCallback(
-                        async (e, t, n) => {
-                            e !== b && (i((0, d.j1)(e, t)), r.ZP.isTwitterApp() || (await i((0, u.O)(g, e))), (0, p.JO)(n, e));
+                    Z = n.useCallback(
+                        async (e, t, a) => {
+                            e !== S && (s((0, u.j1)(e, t)), o.ZP.isTwitterApp() || (await s((0, d.O)(g, e))), (0, m.JO)(a, e));
                         },
-                        [i, g, b],
+                        [s, g, S],
                     );
-                return { messageIds: o, access: E, status: v, grokSettingsStatus: x, conversationKey: t, conversationId: y, analysisEntityId: S, accessRestrictedReasons: k, fetchConversationIdStatus: h, fetchConversationIdError: _, mode: g, model: b, changeMode: N, changeModel: Z, usingExperiment: C };
+                return { messageIds: r, access: C, status: v, grokSettingsStatus: x, conversationKey: t, conversationId: y, analysisEntityId: b, accessRestrictedReasons: w, fetchConversationIdStatus: h, fetchConversationIdError: _, mode: g, model: S, changeMode: N, changeModel: Z, usingExperiment: E };
             }
         },
-        979512: (e, t, n) => {
-            n.d(t, { Z: () => O });
-            n(136728);
-            var a = n(202784),
-                o = n(107267),
-                r = n(726426),
-                i = n.n(r),
-                s = n(111677),
-                c = n.n(s),
-                l = n(122123),
-                d = n(443781),
-                u = n(292484),
-                p = n(952793),
-                m = n(782642),
-                f = n(293115),
-                h = n(252352),
-                _ = n(125363),
-                g = n(550293),
-                v = n(511582),
-                x = n(389071),
-                y = n(96275),
-                k = n(327597),
-                w = n(189953),
-                b = n(456228),
-                S = n(551864),
-                C = n(623494),
-                E = n(461900),
-                I = n(737368),
-                N = n(654917),
-                Z = n(305442);
+        979512: (e, t, a) => {
+            a.d(t, { Z: () => F });
+            a(136728);
+            var n = a(202784),
+                r = a(107267),
+                o = a(726426),
+                s = a.n(o),
+                i = a(111677),
+                c = a.n(i),
+                l = a(122123),
+                u = a(443781),
+                d = a(292484),
+                m = a(952793),
+                p = a(782642),
+                f = a(293115),
+                h = a(252352),
+                _ = a(125363),
+                g = a(550293),
+                v = a(511582),
+                x = a(389071),
+                y = a(96275),
+                w = a(327597),
+                k = a(189953),
+                S = a(456228),
+                b = a(551864),
+                E = a(623494),
+                C = a(461900),
+                I = a(737368),
+                N = a(654917),
+                Z = a(305442);
             const A = c().h4d7cbcc;
-            function O() {
-                const e = a.useContext(f.ge),
-                    t = a.useMemo(() => {
-                        const { data: t, flushMethod: n, scribeMethod: a } = e;
-                        return new h.Z(a, { page: "grok-drawer" }, t, n);
+            function F() {
+                const e = n.useContext(f.ge),
+                    t = n.useMemo(() => {
+                        const { data: t, flushMethod: a, scribeMethod: n } = e;
+                        return new h.Z(n, { page: "grok-drawer" }, t, a);
                     }, [e]),
-                    n = (0, d.QZ)(),
-                    r = (0, _.I0)(),
-                    s = (0, m.p)(),
-                    c = (0, o.useLocation)(),
-                    O = (0, p.hC)("responsive_web_grok_show_citations"),
-                    { conversationKey: F } = (0, N.ZP)(),
-                    P = (0, u.cm)(),
-                    M = !c.pathname.startsWith("/messages") && !c.pathname.match(".*/status/.+/photo/.+") && !c.pathname.startsWith("/i/grok/feed"),
-                    R = (0, o.useHistory)(),
-                    U = (0, I.k)(),
-                    J = (0, Z.Z)("drawer"),
+                    a = (0, u.QZ)(),
+                    o = (0, _.I0)(),
+                    i = (0, p.p)(),
+                    c = (0, r.useLocation)(),
+                    F = (0, m.hC)("responsive_web_grok_show_citations"),
+                    { conversationKey: O } = (0, N.ZP)(),
+                    R = (0, d.cm)(),
+                    U = !c.pathname.startsWith("/messages") && !c.pathname.match(".*/status/.+/photo/.+") && !c.pathname.startsWith("/i/grok/feed"),
+                    P = (0, r.useHistory)(),
+                    J = (0, I.k)(),
+                    M = (0, Z.Z)("drawer"),
                     B = (0, _.v9)(g.kX) === v.S.EXPANDED;
                 return {
-                    openGrok: a.useCallback(
-                        async ({ autoSubmit: e, conversationId: a, imageUrl: o, isDeepsearch: d, isImageEdit: u, isReasoning: p, mediaId: m, promptMetadata: f, source: h, text: _ }) => {
-                            if (!(0, E.$)(n)) return void R.push("/i/grok");
+                    openGrok: n.useCallback(
+                        async ({ autoSubmit: e, conversationId: n, imageUrl: r, isDeepsearch: u, isImageEdit: d, isReasoning: m, mediaId: p, promptMetadata: f, source: h, text: _ }) => {
+                            if (!(0, C.$)(a)) return void P.push("/i/grok");
                             let I;
-                            if ((("post_analysis_timeline" !== h && "post_analysis_details_page" !== h) || (0, C.HO)(t, "post_analysis_details_page" === h), o))
+                            if ((("post_analysis_timeline" !== h && "post_analysis_details_page" !== h) || (0, E.HO)(t, "post_analysis_details_page" === h), r))
                                 try {
-                                    const e = await (0, l.o2)(o);
-                                    I = await U(e, new AbortController());
+                                    const e = await (0, l.o2)(r);
+                                    I = await J(e, new AbortController());
                                 } catch (e) {
-                                    s({ text: A });
+                                    i({ text: A });
                                 }
                             const N = {};
-                            if ((("post_image_annotation" !== h && "post_image_annotation_fullscreen" !== h) || ((N.imageGen = !0), (0, C.u1)(t, "post_image_annotation_fullscreen" === h, m)), "grok_image_feed" === h && (N.imageGen = !0), c.pathname.startsWith("/i/grok") && !c.pathname.startsWith("/i/grok/feed"))) return void r((0, k.u)({ analytics: t, conversationKey: F })({ text: _, attachments: I ? [I] : void 0, mode: w.IK.REGULAR, returnCitations: O, promptMetadata: f, imageGenerationCount: J, toolOverrides: N, source: h, isDeepsearch: d, isReasoning: p }));
-                            const Z = a ?? i()();
-                            if (a) {
-                                const e = a || "";
-                                await r((0, y.d)(e, t));
-                            } else r((0, x.Ki)(Z));
-                            if ((P && M ? ((0, C.YW)(t, h), B && r(g.bi(v.S.COLLAPSED)), r((0, b.bi)(S.j.EXPANDED))) : R.push("/i/grok"), e)) r((0, k.u)({ analytics: t, conversationKey: Z })({ text: _, attachments: I ? [I] : void 0, mode: w.IK.REGULAR, promptMetadata: f, returnCitations: O, imageGenerationCount: J, toolOverrides: N, source: h, isDeepsearch: d, isReasoning: p }));
+                            if ((("post_image_annotation" !== h && "post_image_annotation_fullscreen" !== h) || ((N.imageGen = !0), (0, E.u1)(t, "post_image_annotation_fullscreen" === h, p)), "grok_image_feed" === h && (N.imageGen = !0), c.pathname.startsWith("/i/grok") && !c.pathname.startsWith("/i/grok/feed"))) return void o((0, w.u)({ analytics: t, conversationKey: O })({ text: _, attachments: I ? [I] : void 0, mode: k.IK.REGULAR, returnCitations: F, promptMetadata: f, imageGenerationCount: M, toolOverrides: N, source: h, isDeepsearch: u, isReasoning: m }));
+                            const Z = n ?? s()();
+                            if (n) {
+                                const e = n || "";
+                                await o((0, y.d)(e, t));
+                            } else o((0, x.Ki)(Z));
+                            if ((R && U ? ((0, E.YW)(t, h), B && o(g.bi(v.S.COLLAPSED)), o((0, S.bi)(b.j.EXPANDED))) : P.push("/i/grok"), e)) o((0, w.u)({ analytics: t, conversationKey: Z })({ text: _, attachments: I ? [I] : void 0, mode: k.IK.REGULAR, promptMetadata: f, returnCitations: F, imageGenerationCount: M, toolOverrides: N, source: h, isDeepsearch: u, isReasoning: m }));
                             else {
                                 const e = { text: _, attachments: I ? [I] : [] };
-                                u && I ? (e.modeButtonFilterKey = "ImageEdit") : d ? (e.modeButtonFilterKey = "Research") : p && (e.modeButtonFilterKey = "Reasoning"), r((0, x.Uo)(Z, e));
+                                d && I ? (e.modeButtonFilterKey = "ImageEdit") : u ? (e.modeButtonFilterKey = "Research") : m && (e.modeButtonFilterKey = "Reasoning"), o((0, x.Uo)(Z, e));
                             }
                         },
-                        [B, s, r, t, n, R, U, P, F, O, M, c.pathname, J],
+                        [B, i, o, t, a, P, J, R, O, F, U, c.pathname, M],
                     ),
                 };
             }
         },
-        305442: (e, t, n) => {
-            n.d(t, { Z: () => o });
-            var a = n(952793);
-            function o(e) {
-                return (0, a.JY)("responsive_web_grok_imggen_count", 1);
+        305442: (e, t, a) => {
+            a.d(t, { Z: () => r });
+            var n = a(952793);
+            function r(e) {
+                return (0, n.JY)("responsive_web_grok_imggen_count", 1);
             }
         },
-        623494: (e, t, n) => {
-            n.d(t, { DE: () => f, G$: () => s, HO: () => E, HR: () => A, JO: () => g, Jm: () => S, NH: () => O, RC: () => _, S7: () => Z, UV: () => P, Uk: () => w, YI: () => d, YW: () => N, ZY: () => h, az: () => c, c3: () => i, dP: () => x, dd: () => m, eS: () => b, eV: () => C, hf: () => v, hq: () => l, kl: () => k, mm: () => p, op: () => y, pv: () => r, qQ: () => R, u1: () => I, y6: () => u, zC: () => F, zX: () => M });
-            var a = n(163889);
-            function o() {
+        623494: (e, t, a) => {
+            a.d(t, { DE: () => f, G$: () => i, HO: () => C, HR: () => A, JO: () => g, Jm: () => b, NH: () => F, RC: () => _, S7: () => Z, UV: () => R, Uk: () => k, YI: () => u, YW: () => N, ZY: () => h, az: () => c, c3: () => s, dP: () => x, dd: () => p, eS: () => S, eV: () => E, hf: () => v, hq: () => l, kl: () => w, mm: () => m, op: () => y, pv: () => o, qQ: () => P, u1: () => I, y6: () => d, zC: () => O, zX: () => U });
+            var n = a(163889);
+            function r() {
                 return `online:${window.navigator.onLine}|effectiveType:${window.navigator.connection?.effectiveType ?? "unknown"}`;
             }
-            function r(e, t) {
-                U(e)({ element: "api-add-response", action: "start", data: { event_info: JSON.stringify(t) } });
-            }
-            function i(e, t) {
-                U(e)({ element: "api-add-response-regenerate", action: "start", data: { event_info: JSON.stringify(t) } });
+            function o(e, t) {
+                J(e)({ element: "api-add-response", action: "start", data: { event_info: JSON.stringify(t) } });
             }
             function s(e, t) {
-                U(e)({ element: "selected-side-by-side", action: "click", data: { event_info: JSON.stringify(t) } });
+                J(e)({ element: "api-add-response-regenerate", action: "start", data: { event_info: JSON.stringify(t) } });
             }
-            function c(e, t, n) {
-                U(e)({ element: "client-home-log", action: t, data: { event_info: JSON.stringify(n) } });
+            function i(e, t) {
+                J(e)({ element: "selected-side-by-side", action: "click", data: { event_info: JSON.stringify(t) } });
+            }
+            function c(e, t, a) {
+                J(e)({ element: "client-home-log", action: t, data: { event_info: JSON.stringify(a) } });
             }
             function l(e, t) {
-                U(e)({ element: "deepsearch-premature-stream-close-log", action: "error", data: { event_info: JSON.stringify({ errorMessage: t.errorMessage }), duration_ms: t.durationMs } });
-            }
-            function d(e, t) {
-                U(e)({ element: "deepsearch-premature-manual-stream-stop", action: "click", data: { event_info: JSON.stringify(t.messageTagCounts), duration_ms: t.durationMs } });
+                J(e)({ element: "deepsearch-premature-stream-close-log", action: "error", data: { event_info: JSON.stringify({ errorMessage: t.errorMessage }), duration_ms: t.durationMs } });
             }
             function u(e, t) {
-                U(e)({ element: "deepsearch-duration", action: "complete", data: { duration_ms: t } });
+                J(e)({ element: "deepsearch-premature-manual-stream-stop", action: "click", data: { event_info: JSON.stringify(t.messageTagCounts), duration_ms: t.durationMs } });
             }
-            function p(e, t, n) {
-                U(e)({ element: "api-add-response-retry", action: "start", data: { event_info: JSON.stringify({ numRetriesExecuted: t, error: n }) } });
+            function d(e, t) {
+                J(e)({ element: "deepsearch-duration", action: "complete", data: { duration_ms: t } });
             }
-            function m(e, t) {
-                U(e)({ element: "api-add-response-edit", action: "start", data: { event_info: JSON.stringify(t) } });
+            function m(e, t, a) {
+                J(e)({ element: "api-add-response-retry", action: "start", data: { event_info: JSON.stringify({ numRetriesExecuted: t, error: a }) } });
+            }
+            function p(e, t) {
+                J(e)({ element: "api-add-response-edit", action: "start", data: { event_info: JSON.stringify(t) } });
             }
             function f(e) {
-                U(e)({ element: "abort", action: "click" });
+                J(e)({ element: "abort", action: "click" });
             }
             function h(e) {
-                U(e)({ element: "clear-conversation", action: "click" });
+                J(e)({ element: "clear-conversation", action: "click" });
             }
             function _(e, t) {
-                U(e)({ element: "grok_mode", action: "change", data: { event_info: t } });
+                J(e)({ element: "grok_mode", action: "change", data: { event_info: t } });
             }
             function g(e, t) {
-                U(e)({ element: "grok_model", action: "change", data: { event_info: t } });
+                J(e)({ element: "grok_model", action: "change", data: { event_info: t } });
             }
             function v(e, t) {
-                U(e)({ element: "tweet-carousel", action: "change", data: { event_info: t.toString() } });
+                J(e)({ element: "tweet-carousel", action: "change", data: { event_info: t.toString() } });
             }
             function x(e, t) {
-                U(e)({ element: "file-attachment", action: "add", data: { event_info: t } });
+                J(e)({ element: "file-attachment", action: "add", data: { event_info: t } });
             }
             function y(e, t) {
-                U(e)({ element: "file-attachment", action: "fail", data: { event_info: t } });
+                J(e)({ element: "file-attachment", action: "fail", data: { event_info: t } });
             }
-            function k(e, t, n) {
-                U(e)({ element: "api-add-response", action: "error", data: { event_info: `${t.message}\n${t.stack}\n${o()}` } }), (0, a.Hj)(t, { level: "warning", extra: n });
+            function w(e, t, a) {
+                J(e)({ element: "api-add-response", action: "error", data: { event_info: `${t.message}\n${t.stack}\n${r()}` } }), (0, n.Hj)(t, { level: "warning", extra: a });
             }
-            function w(e, t) {
-                U(e)({ element: "api-add-response", action: "fail", data: { event_info: `${t}\n${o()}` } });
+            function k(e, t) {
+                J(e)({ element: "api-add-response", action: "fail", data: { event_info: `${t}\n${r()}` } });
             }
-            function b(e, t) {
-                U(e)({ element: "response-chunk-read", action: "timer_elapsed", data: { event_info: t ? "first_chunk" : void 0 } });
+            function S(e, t) {
+                J(e)({ element: "response-chunk-read", action: "timer_elapsed", data: { event_info: t ? "first_chunk" : void 0 } });
             }
-            function S(e) {
-                U(e)({ element: "file-upload", action: "success" });
-            }
-            function C(e, t) {
-                U(e)({ element: "file-upload", action: "fail", data: { event_info: t } });
+            function b(e) {
+                J(e)({ element: "file-upload", action: "success" });
             }
             function E(e, t) {
-                U(e)({ element: "grok_post_analysis_button", action: "click", data: { event_source: t ? "post_details" : "timeline" } });
+                J(e)({ element: "file-upload", action: "fail", data: { event_info: t } });
             }
-            function I(e, t, n) {
-                U(e)({ element: "grok-post-image-annotation", action: "start", data: { event_source: t ? "post_details" : "timeline", event_info: n ? JSON.stringify({ mediaId: n }) : void 0 } });
+            function C(e, t) {
+                J(e)({ element: "grok_post_analysis_button", action: "click", data: { event_source: t ? "post_details" : "timeline" } });
+            }
+            function I(e, t, a) {
+                J(e)({ element: "grok-post-image-annotation", action: "start", data: { event_source: t ? "post_details" : "timeline", event_info: a ? JSON.stringify({ mediaId: a }) : void 0 } });
             }
             function N(e, t) {
-                U(e)({ element: "grok-drawer-open", action: "success", data: { event_source: t } });
+                J(e)({ element: "grok-drawer-open", action: "success", data: { event_source: t } });
             }
             function Z(e, t) {
-                U(e)({ element: "grok-card-attachment", action: "show", data: { event_info: JSON.stringify({ cardType: t.cardType, variant: t.variant }) } });
+                J(e)({ element: "grok-card-attachment", action: "show", data: { event_info: JSON.stringify({ cardType: t.cardType, variant: t.variant }) } });
             }
-            function A(e, t, n) {
-                U(e)({ element: "grok-card-attachment-follow-up", action: "send", data: { event_info: JSON.stringify({ cardType: t.cardType, variant: t.variant, followUpText: n }) } });
+            function A(e, t, a) {
+                J(e)({ element: "grok-card-attachment-follow-up", action: "send", data: { event_info: JSON.stringify({ cardType: t.cardType, variant: t.variant, followUpText: a }) } });
             }
-            function O(e) {
-                U(e)({ element: "open-grok-memory-drawer", action: "start", data: {} });
+            function F(e) {
+                J(e)({ element: "open-grok-memory-drawer", action: "start", data: {} });
             }
-            function F(e, t) {
-                U(e)({ element: "grok-memory-detail", action: "click", data: { event_info: t } });
-            }
-            function P(e, t) {
-                U(e)({ element: "grok-memory-forget", action: "click", data: { event_info: t } });
-            }
-            function M(e, t, n) {
-                U(e)({ element: "grok-memory-forget", action: "error", data: { event_info: JSON.stringify({ conversationId: t, error: n }) } });
+            function O(e, t) {
+                J(e)({ element: "grok-memory-detail", action: "click", data: { event_info: t } });
             }
             function R(e, t) {
-                U(e)({ element: "grok-memory-detail", action: "click", data: { event_info: t } });
+                J(e)({ element: "grok-memory-forget", action: "click", data: { event_info: t } });
             }
-            const U = (e) => (t) => {
+            function U(e, t, a) {
+                J(e)({ element: "grok-memory-forget", action: "error", data: { event_info: JSON.stringify({ conversationId: t, error: a }) } });
+            }
+            function P(e, t) {
+                J(e)({ element: "grok-memory-detail", action: "click", data: { event_info: t } });
+            }
+            const J = (e) => (t) => {
                 e.scribe({ ...t, data: { url: window.location.href, ...t.data } });
             };
         },
-        156607: (e, t, n) => {
-            n.r(t), n.d(t, { UserAvatarScreen: () => y, default: () => k });
-            var a = n(202784),
-                o = n(290402),
-                r = n(300234),
-                i = n(827094),
-                s = n(449067),
-                c = n(666670),
-                l = n(965728),
-                d = n(615027),
-                u = n(71620),
-                p = n(668214),
-                m = n(919022),
-                f = n(312771);
-            const h = (0, m.W3)([m.pL]),
+        156607: (e, t, a) => {
+            a.r(t), a.d(t, { UserAvatarScreen: () => y, default: () => w });
+            var n = a(202784),
+                r = a(290402),
+                o = a(300234),
+                s = a(827094),
+                i = a(449067),
+                c = a(666670),
+                l = a(965728),
+                u = a(615027),
+                d = a(71620),
+                m = a(668214),
+                p = a(919022),
+                f = a(312771);
+            const h = (0, p.W3)([p.pL]),
                 _ = (e, t) => {
-                    const n = g(e, t);
-                    return n ? h(e, n) : f.ZP.LOADING;
+                    const a = g(e, t);
+                    return a ? h(e, a) : f.ZP.LOADING;
                 },
                 g = (e, t) => t.match.params.screenName,
                 v = (e, t) => {
-                    const n = g(e, t);
-                    return n ? m.ZP.selectByScreenName(e, n) : void 0;
+                    const a = g(e, t);
+                    return a ? p.ZP.selectByScreenName(e, a) : void 0;
                 },
-                x = (0, p.Z)()
+                x = (0, m.Z)()
                     .propsFromState(() => ({ fetchStatus: _, screenName: g, user: v }))
-                    .adjustStateProps(({ fetchStatus: e, screenName: t, user: n }) => ({ fetchStatus: e, screenName: t, user: n, mediaItem: n ? { id_str: n.id_str, expanded_url: n.profile_image_url_https, media_url_https: n.profile_image_url_https, ext_alt_text: n.profile_image_extensions_alt_text, type: "photo", original_info: { width: 400, height: 400 } } : void 0 }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, u.zr)("USER_AVATAR"), fetchOneUserByScreenNameIfNeeded: m.ZP.fetchOneByScreenNameIfNeeded })),
+                    .adjustStateProps(({ fetchStatus: e, screenName: t, user: a }) => ({ fetchStatus: e, screenName: t, user: a, mediaItem: a ? { id_str: a.id_str, expanded_url: a.profile_image_url_https, media_url_https: a.profile_image_url_https, ext_alt_text: a.profile_image_extensions_alt_text, type: "photo", original_info: { width: 400, height: 400 } } : void 0 }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, d.zr)("USER_AVATAR"), fetchOneUserByScreenNameIfNeeded: p.ZP.fetchOneByScreenNameIfNeeded })),
                 y = (e) => {
-                    const { createLocalApiErrorHandler: t, fetchOneUserByScreenNameIfNeeded: n, fetchStatus: u, history: p, mediaItem: m, screenName: f, user: h } = e,
+                    const { createLocalApiErrorHandler: t, fetchOneUserByScreenNameIfNeeded: a, fetchStatus: d, history: m, mediaItem: p, screenName: f, user: h } = e,
                         _ = (0, l.K2)(h),
                         { handleMediaDetailZoomed: g, handleMediaItemTapped: v, hideButtons: x } = (0, l.sI)(),
                         y = () => {
-                            p.goBack({ backLocation: `/${f}` });
+                            m.goBack({ backLocation: `/${f}` });
                         };
-                    a.useEffect(() => {
-                        ((e, t, n) => {
-                            e(n).catch(t(c.F));
-                        })(n, t, f);
-                    }, [t, n, f]);
-                    return a.createElement(
-                        s.Z.Configure,
+                    n.useEffect(() => {
+                        ((e, t, a) => {
+                            e(a).catch(t(c.F));
+                        })(a, t, f);
+                    }, [t, a, f]);
+                    return n.createElement(
+                        i.Z.Configure,
                         { headerless: !0 },
-                        a.createElement(
-                            i.Z,
+                        n.createElement(
+                            s.Z,
                             { backgroundColor: _, hideButtons: x, mediaUrl: h && h.profile_image_url_https, onCloseButtonPress: y },
-                            a.createElement(o.Z, {
-                                fetchStatus: u,
+                            n.createElement(r.Z, {
+                                fetchStatus: d,
                                 render: () => {
                                     const e = (0, l.K2)(h);
-                                    return h && m ? a.createElement(r.Z, { businessAvatar: "Business" === h.verified_type, dataSaver: !1, dominantColor: e.rgb, isAvatar: !0, mediaIndex: 0, mediaItems: [m], onDismiss: y, onMediaDetailZoomed: g, onTap: v }) : a.createElement(d.Z, { to: `/${f}` });
+                                    return h && p ? n.createElement(o.Z, { businessAvatar: "Business" === h.verified_type, dataSaver: !1, dominantColor: e.rgb, isAvatar: !0, mediaIndex: 0, mediaItems: [p], onDismiss: y, onMediaDetailZoomed: g, onTap: v }) : n.createElement(u.Z, { to: `/${f}` });
                                 },
-                                renderFailure: () => a.createElement(d.Z, { to: `/${f}` }),
+                                renderFailure: () => n.createElement(u.Z, { to: `/${f}` }),
                                 retryable: !1,
                             }),
                         ),
                     );
                 },
-                k = x(y);
+                w = x(y);
         },
-        332912: (e, t, n) => {
-            n.r(t), n.d(t, { UserHeaderScreen: () => y, default: () => k });
-            var a = n(202784),
-                o = n(290402),
-                r = n(300234),
-                i = n(827094),
-                s = n(449067),
-                c = n(666670),
-                l = n(965728),
-                d = n(615027),
-                u = n(71620),
-                p = n(668214),
-                m = n(919022);
-            const f = (0, m.W3)([m.pL]),
+        332912: (e, t, a) => {
+            a.r(t), a.d(t, { UserHeaderScreen: () => y, default: () => w });
+            var n = a(202784),
+                r = a(290402),
+                o = a(300234),
+                s = a(827094),
+                i = a(449067),
+                c = a(666670),
+                l = a(965728),
+                u = a(615027),
+                d = a(71620),
+                m = a(668214),
+                p = a(919022);
+            const f = (0, p.W3)([p.pL]),
                 h = (e, t) => f(e, _(e, t)),
                 _ = (e, t) => t.match.params.screenName,
-                g = (e, t) => m.ZP.selectByScreenName(e, _(e, t)),
-                v = (0, p.Z)()
+                g = (e, t) => p.ZP.selectByScreenName(e, _(e, t)),
+                v = (0, m.Z)()
                     .propsFromState(() => ({ fetchStatus: h, screenName: _, user: g }))
-                    .adjustStateProps(({ fetchStatus: e, screenName: t, user: n }) => ({ fetchStatus: e, screenName: t, user: n, mediaItem: n ? { id_str: n.id_str, expanded_url: n.profile_banner_url, media_url_https: n.profile_banner_url, ext_alt_text: n.profile_banner_extensions_alt_text, type: "photo", original_info: { width: 1500, height: 500 } } : void 0 }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, u.zr)("USER_HEADER"), fetchOneUserByScreenNameIfNeeded: m.ZP.fetchOneByScreenNameIfNeeded })),
-                x = (e, t, n) => {
-                    e(n).catch(t(c.F));
+                    .adjustStateProps(({ fetchStatus: e, screenName: t, user: a }) => ({ fetchStatus: e, screenName: t, user: a, mediaItem: a ? { id_str: a.id_str, expanded_url: a.profile_banner_url, media_url_https: a.profile_banner_url, ext_alt_text: a.profile_banner_extensions_alt_text, type: "photo", original_info: { width: 1500, height: 500 } } : void 0 }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, d.zr)("USER_HEADER"), fetchOneUserByScreenNameIfNeeded: p.ZP.fetchOneByScreenNameIfNeeded })),
+                x = (e, t, a) => {
+                    e(a).catch(t(c.F));
                 },
                 y = (e) => {
-                    const { createLocalApiErrorHandler: t, fetchOneUserByScreenNameIfNeeded: n, fetchStatus: c, history: u, mediaItem: p, screenName: m, user: f } = e,
+                    const { createLocalApiErrorHandler: t, fetchOneUserByScreenNameIfNeeded: a, fetchStatus: c, history: d, mediaItem: m, screenName: p, user: f } = e,
                         h = (0, l.C_)(f),
                         { handleMediaDetailZoomed: _, handleMediaItemTapped: g, hideButtons: v } = (0, l.sI)(),
                         y = () => {
-                            u.goBack({ backLocation: `/${m}` });
+                            d.goBack({ backLocation: `/${p}` });
                         };
                     return (
-                        a.useEffect(() => {
-                            x(n, t, m);
-                        }, [t, n, m]),
-                        a.createElement(
-                            s.Z.Configure,
+                        n.useEffect(() => {
+                            x(a, t, p);
+                        }, [t, a, p]),
+                        n.createElement(
+                            i.Z.Configure,
                             { headerless: !0 },
-                            a.createElement(
-                                i.Z,
+                            n.createElement(
+                                s.Z,
                                 { backgroundColor: h, hideButtons: v, mediaUrl: f && f.profile_banner_url, onCloseButtonPress: y },
-                                a.createElement(o.Z, {
+                                n.createElement(r.Z, {
                                     fetchStatus: c,
-                                    onRequestRetry: () => x(n, t, m),
+                                    onRequestRetry: () => x(a, t, p),
                                     render: () => {
                                         const e = (0, l.C_)(f);
-                                        return f && p ? a.createElement(r.Z, { dataSaver: !1, dominantColor: e.rgb, mediaIndex: 0, mediaItems: [p], onDismiss: y, onMediaDetailZoomed: _, onTap: g }) : a.createElement(d.Z, { to: `/${m}` });
+                                        return f && m ? n.createElement(o.Z, { dataSaver: !1, dominantColor: e.rgb, mediaIndex: 0, mediaItems: [m], onDismiss: y, onMediaDetailZoomed: _, onTap: g }) : n.createElement(u.Z, { to: `/${p}` });
                                     },
                                 }),
                             ),
                         )
                     );
                 },
-                k = v(y);
+                w = v(y);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-3c20ad5c.b1deb14a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-3c20ad5c.0accacfa.js.map

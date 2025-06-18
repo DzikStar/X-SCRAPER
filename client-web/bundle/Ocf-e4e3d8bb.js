@@ -222,7 +222,7 @@
             const a = (0, n.YW)({ task: (e) => e.withEndpoint(i.Z).task });
         },
         508765: (e, t, r) => {
-            r.d(t, { C6: () => A, GJ: () => M, HR: () => C, Il: () => N, NJ: () => T, OG: () => H, T_: () => V, Xw: () => y, Ys: () => U, _D: () => O, b4: () => B, ck: () => F, g3: () => v, o8: () => Z, u$: () => I, vW: () => h });
+            r.d(t, { C6: () => S, GJ: () => M, HR: () => L, Il: () => N, NJ: () => T, OG: () => H, T_: () => V, Xw: () => b, Ys: () => D, _D: () => O, b4: () => B, ck: () => F, g3: () => U, o8: () => Z, u$: () => I, vW: () => w });
             var n = r(226395),
                 i = r(499627),
                 a = r(917799),
@@ -238,28 +238,28 @@
                 _ = Object.freeze({ REQUEST: "rweb/settings/profile/ENABLE_VERIFIED_PHONE_LABEL_REQUEST", SUCCESS: "rweb/settings/profile/ENABLE_VERIFIED_PHONE_LABEL_SUCCESS", FAILURE: "rweb/settings/profile/ENABLE_VERIFIED_PHONE_LABEL_FAILURE" }),
                 m = Object.freeze({ REQUEST: "rweb/settings/profile/DISABLE_VERIFIED_PHONE_LABEL_REQUEST", SUCCESS: "rweb/settings/profile/DISABLE_VERIFIED_PHONE_LABEL_SUCCESS", FAILURE: "rweb/settings/profile/DISABLE_VERIFIED_PHONE_LABEL_FAILURE" }),
                 g = Object.freeze({ REQUEST: "rweb/settings/profile/FETCH_VERIFIED_PHONE_LABEL_REQUEST", SUCCESS: "rweb/settings/profile/FETCH_VERIFIED_PHONE_LABEL_SUCCESS", FAILURE: "rweb/settings/profile/FETCH_VERIFIED_PHONE_LABEL_FAILURE" }),
-                w = { avatarMediaId: null, bannerMediaId: null, isUploading: !1, profileSettings: null };
-            const A = (e) => e[c].avatarMediaId,
-                h = (e) => e[c].bannerMediaId,
+                A = { avatarMediaId: null, bannerMediaId: null, isUploading: !1, profileSettings: null };
+            const S = (e) => e[c].avatarMediaId,
+                w = (e) => e[c].bannerMediaId,
                 I = (e) => e[c].profileSettings,
-                S = "rweb/settings/profile/ADD_AVATAR_MEDIA",
-                O = (e) => ({ meta: { mediaId: e }, type: S }),
-                b = "rweb/settings/profile/REMOVE_AVATAR_MEDIA",
-                y = (e) => ({ meta: { mediaId: e }, type: b }),
-                R = "rweb/settings/profile/ADD_BANNER_MEDIA",
-                T = (e) => ({ meta: { mediaId: e }, type: R }),
-                P = "rweb/settings/profile/REMOVE_BANNER_MEDIA",
-                C = (e) => ({ meta: { mediaId: e }, type: P }),
+                h = "rweb/settings/profile/ADD_AVATAR_MEDIA",
+                O = (e) => ({ meta: { mediaId: e }, type: h }),
+                R = "rweb/settings/profile/REMOVE_AVATAR_MEDIA",
+                b = (e) => ({ meta: { mediaId: e }, type: R }),
+                y = "rweb/settings/profile/ADD_BANNER_MEDIA",
+                T = (e) => ({ meta: { mediaId: e }, type: y }),
+                C = "rweb/settings/profile/REMOVE_BANNER_MEDIA",
+                L = (e) => ({ meta: { mediaId: e }, type: C }),
                 N =
                     () =>
                     (e, t, { api: r }) =>
                         a._O(e, { request: r.withEndpoint(n.Z).fetchUserProfilePhoneState, params: {} })({ actionTypes: g, context: "ACTION_FETCH_VERIFIED_PHONE_LABEL" }, (e) => {
                             if (e) return e;
                         }),
-                L = "rweb/settings/profile/PERSIST_PROFILE_SETTINGS",
-                v = (e) => ({ meta: { profileSettings: e }, type: L }),
-                D = "rweb/settings/profile/RESET_PERSISTED_PROFILE_SETTINGS",
-                U = () => ({ type: D }),
+                P = "rweb/settings/profile/PERSIST_PROFILE_SETTINGS",
+                U = (e) => ({ meta: { profileSettings: e }, type: P }),
+                v = "rweb/settings/profile/RESET_PERSISTED_PROFILE_SETTINGS",
+                D = () => ({ type: v }),
                 Z =
                     (e) =>
                     (t, r, { api: i }) =>
@@ -299,28 +299,61 @@
                     (e, t, { api: r }) =>
                         a._O(e, { request: r.withEndpoint(n.Z).disableVerifiedPhoneLabel, params: {} })({ actionTypes: m, context: "ACTION_DISABLE_VERIFIED_PHONE_LABEL" });
             i.Z.register({
-                [c]: function (e = w, t) {
+                [c]: function (e = A, t) {
                     if (!t) return e;
                     switch (t.type) {
-                        case S:
+                        case h:
                             return { ...e, avatarMediaId: t.meta.mediaId };
-                        case b:
-                            return { ...e, avatarMediaId: null };
                         case R:
+                            return { ...e, avatarMediaId: null };
+                        case y:
                             return { ...e, bannerMediaId: t.meta.mediaId };
-                        case P:
+                        case C:
                             return { ...e, bannerMediaId: null };
                         case g.SUCCESS:
                             return { ...e, hasVerifiedPhone: t?.payload?.user_phone_state?.has_verified_phone || !1, labelDisplayOptIn: t?.payload?.user_phone_state?.label_display_opt_in || !1 };
-                        case L:
+                        case P:
                             return { ...e, profileSettings: t.meta.profileSettings };
-                        case D:
+                        case v:
                             return { ...e, profileSettings: null };
                         case f.REQUEST:
                             return { ...e, isUploading: !0 };
                         case f.FAILURE:
                         case f.SUCCESS:
                             return { ...e, isUploading: !1 };
+                        default:
+                            return e;
+                    }
+                },
+            });
+        },
+        395042: (e, t, r) => {
+            r.d(t, { El: () => d, HR: () => p, Zc: () => E });
+            var n = r(226395),
+                i = r(499627),
+                a = r(917799);
+            const o = "settings/usernames",
+                s = "rweb/settings/usernames/CLEAR_USERNAME_AVAILABILITY",
+                c = Object.freeze({ REQUEST: "rweb/settings/usernames/FETCH_USERNAMES_REQUEST", SUCCESS: "rweb/settings/usernames/FETCH_USERNAMES_SUCCESS", FAILURE: "rweb/settings/usernames/FETCH_USERNAMES_FAILURE" }),
+                l = { isLoaded: !1 };
+            const d = (e) => e[o],
+                p =
+                    (e) =>
+                    (t, r, { api: i }) =>
+                        (0, a._O)(t, { params: e, request: i.withEndpoint(n.Z).usernameAvailable })({ actionTypes: c, context: "FETCH_SETTINGS_USERNAME_AVAILABLE", meta: { username: e.username } }),
+                E = (e) => ({ type: s, meta: e });
+            i.Z.register({
+                [o]: function (e = l, t) {
+                    if (!t) return e;
+                    switch (t.type) {
+                        case c.REQUEST:
+                            return { ...e, isLoading: !0 };
+                        case c.FAILURE:
+                            return { ...e, isLoading: !1 };
+                        case c.SUCCESS:
+                            return { ...e, ...t.payload, username: t.meta.username, isLoading: !1 };
+                        case s:
+                            return { isLoading: !1, suggestions: t.meta?.persistSuggestions ? e.suggestions : void 0 };
                         default:
                             return e;
                     }
@@ -379,7 +412,7 @@
             var n = r(251067),
                 i = r(111677),
                 a = r.n(i),
-                o = r(183118),
+                o = r(335149),
                 s = r(745888);
             const c = new RegExp("^[a-zA-Z0-9_\\-+\\.!\\&]+@(?:[a-zA-Z0-9\\-_]+\\.)+[a-zA-Z]{2,63}$"),
                 l = a().hc72e1fc,
@@ -390,7 +423,7 @@
             r.d(t, { Z: () => d });
             var n = r(111677),
                 i = r.n(n),
-                a = r(183118),
+                a = r(335149),
                 o = r(71620),
                 s = r(623109),
                 c = r(745888);
@@ -413,7 +446,7 @@
             r.d(t, { Z: () => l });
             var n = r(111677),
                 i = r.n(n),
-                a = r(183118),
+                a = r(335149),
                 o = r(745888);
             const s = new RegExp("^\\+?[0-9\\-\\.\\(\\)\\s]{7,1000}$"),
                 c = i().cd24fe60,
@@ -428,6 +461,16 @@
                     },
                 });
         },
+        611423: (e, t, r) => {
+            r.d(t, { Z: () => a });
+            var n = r(553093),
+                i = r(383675);
+            const a = ({ timelinePrefix: e = "generic-timeline-", urtUrl: t }) => {
+                const { url: r, urtEndpointOptions: a } = t,
+                    { cacheId: o, requestParams: s, timeline: c } = a || {};
+                return c?.id ? (0, i.R)(c.id) : (0, i.Z)({ timelineId: o || `${e}${(0, n.Sz)(t)}`, endpointUrl: r, endpointParams: s || {} });
+            };
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-e4e3d8bb.a5c195fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-e4e3d8bb.eb82360a.js.map

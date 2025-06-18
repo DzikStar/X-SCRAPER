@@ -30,7 +30,7 @@
         },
         403911: (e, t, o) => {
             "use strict";
-            o.d(t, { Z: () => D });
+            o.d(t, { Z: () => T });
             var r = o(506899),
                 a = o(163889),
                 i = o(414742),
@@ -54,24 +54,24 @@
                 P = o.n(k),
                 I = o(630986),
                 F = o.n(I),
-                C = o(934309);
-            const Z = { result: [], entities: {}, slice_info: {} },
+                Z = o(934309);
+            const C = { result: [], entities: {}, slice_info: {} },
                 E = (e, t) => {
                     const o = t?.bookmark_all_delete,
                         r = "Done" === o;
                     return r || (0, a.ZP)("GQL Bookmarks: Failed to delete all bookmarks"), (0, i.jB)(e) || !r;
                 },
-                S = (0, i.kj)((e) => {
+                D = (0, i.kj)((e) => {
                     const t = e?.viewer?.user_results?.result,
                         o = "User" === t?.__typename ? t : void 0,
                         r = o?.bookmark_collections_slice?.items;
                     return !r;
                 }, "GQL Bookmark Folders: Failed to render Bookmark Folders timeline"),
-                T = (0, i.kj)((e) => {
+                S = (0, i.kj)((e) => {
                     const t = e?.bookmark_collection_timeline?.timeline;
                     return !t;
                 }, "GQL Bookmark Folders: Failed to render Bookmark Folders timeline"),
-                D = ({ apiClient: e, featureSwitches: t }) => ({
+                T = ({ apiClient: e, featureSwitches: t }) => ({
                     bookmarkTweetToFolder: (t) =>
                         e.graphQL(
                             h(),
@@ -97,11 +97,11 @@
                         const { bookmarkFolderId: o, tweetId: r } = t;
                         return e.graphQL(F(), { bookmark_collection_id: o, tweet_id: r });
                     },
-                    fetchBookmarksTimeline: ({ count: o, cursor: r }) => e.graphQL(m(), { count: o, cursor: r, includePromotedContent: !0, ...(0, s.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || C.cY),
-                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: o, cursor: r }) => e.graphQL(p(), { bookmark_collection_id: o, cursor: r, includePromotedContent: !0, ...(0, s.d)(t) }, T).then((e) => e?.bookmark_collection_timeline?.timeline || C.cY),
+                    fetchBookmarksTimeline: ({ count: o, cursor: r }) => e.graphQL(m(), { count: o, cursor: r, includePromotedContent: !0, ...(0, s.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || Z.cY),
+                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: o, cursor: r }) => e.graphQL(p(), { bookmark_collection_id: o, cursor: r, includePromotedContent: !0, ...(0, s.d)(t) }, S).then((e) => e?.bookmark_collection_timeline?.timeline || Z.cY),
                     fetchBookmarkFoldersSlice: (t) =>
                         t
-                            ? e.graphQL(d(), t, S).then((e) => {
+                            ? e.graphQL(d(), t, D).then((e) => {
                                   const t = e?.viewer?.user_results?.result,
                                       o = "User" === t?.__typename ? t : void 0,
                                       a = o?.bookmark_collections_slice;
@@ -109,10 +109,29 @@
                                       const { entities: e, result: t } = (0, r.Fv)(a.items, [n]);
                                       return { entities: e, result: t, slice_info: a.slice_info };
                                   }
-                                  return Z;
+                                  return C;
                               })
-                            : Promise.resolve(Z),
+                            : Promise.resolve(C),
                 });
+        },
+        290402: (e, t, o) => {
+            "use strict";
+            o.d(t, { Z: () => _ });
+            var r = o(807896),
+                a = o(202784),
+                i = o(182056),
+                s = o(879113),
+                n = o(392237),
+                l = o(111677),
+                d = o.n(l),
+                c = o(968478);
+            const p = d().aa6e3300,
+                u = ({ retryMessage: e, ...t }, o) => {
+                    const n = i.Z.isOnline();
+                    return a.createElement(s.Z, (0, r.Z)({}, t, { icon: n ? void 0 : a.createElement(c.default, { style: m.icon }), retryMessage: n ? e : p }));
+                },
+                m = n.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
+                _ = a.forwardRef(u);
         },
         333241: (e, t, o) => {
             "use strict";
@@ -139,8 +158,8 @@
                 y = n().hef5960c,
                 k = (0, _.M)((e) => {
                     const { featureSwitches: t } = (0, c.QZ)(),
-                        { onBlock: o, onClose: s, onMute: n, onRemoveFollower: _, onReportUser: k, onShare: P, onUnblock: I, onUnmute: F, user: C } = e,
-                        Z = [],
+                        { onBlock: o, onClose: s, onMute: n, onRemoveFollower: _, onReportUser: k, onShare: P, onUnblock: I, onUnmute: F, user: Z } = e,
+                        C = [],
                         E = (t, o) => {
                             const { confirm: r, onClose: a } = e;
                             if (t) {
@@ -151,10 +170,10 @@
                             } else o();
                         };
                     !!window.navigator.share &&
-                        !C.protected &&
-                        !C.blocking &&
-                        !C.blocked_by &&
-                        Z.push({
+                        !Z.protected &&
+                        !Z.blocking &&
+                        !Z.blocked_by &&
+                        C.push({
                             Icon: a.Z,
                             onClick: () => {
                                 s(), P();
@@ -162,10 +181,10 @@
                             testID: g,
                             text: y,
                         });
-                    !C.blocking &&
-                        Z.push({
+                    !Z.blocking &&
+                        C.push({
                             ...(0, u.N1)(
-                                C,
+                                Z,
                                 () => {
                                     s(), n();
                                 },
@@ -175,27 +194,27 @@
                             ),
                             testID: b,
                         });
-                    C.followed_by &&
-                        Z.push({
+                    Z.followed_by &&
+                        C.push({
                             ...(0, m.l)({
                                 removeFollowerAction: (e) => {
                                     E(e, _);
                                 },
-                                user: C,
+                                user: Z,
                             }),
                             testID: f,
                         }),
-                        Z.push((0, p.op)({ blockAction: (e) => E(e, o), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: p.SC.FOLLOWERS_LIST, testID: h, unblockAction: (e) => E(e, I), user: C })),
-                        Z.push({
+                        C.push((0, p.op)({ blockAction: (e) => E(e, o), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: p.SC.FOLLOWERS_LIST, testID: h, unblockAction: (e) => E(e, I), user: Z })),
+                        C.push({
                             Icon: l.default,
                             onClick: () => {
                                 s(), k();
                             },
                             testID: w,
-                            text: v({ screenName: C.screen_name }),
+                            text: v({ screenName: Z.screen_name }),
                         });
-                    const S = Z.map(({ Icon: e, onClick: t, testID: o, text: r }) => ({ text: r, onClick: t, Icon: e, testID: o }));
-                    return r.createElement(i.Z, { items: S, onCloseRequested: s });
+                    const D = C.map(({ Icon: e, onClick: t, testID: o, text: r }) => ({ text: r, onClick: t, Icon: e, testID: o }));
+                    return r.createElement(i.Z, { items: D, onCloseRequested: s });
                 });
         },
         113392: (e, t, o) => {
@@ -325,7 +344,7 @@
                 P = o(950822),
                 I = o(303186),
                 F = o(954300);
-            class C extends r.Component {
+            class Z extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._setVideoRef = (e) => {
@@ -339,22 +358,22 @@
                     return (0, P.Z)("video", { ...s, children: [n.map((e) => r.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: a });
                 }
             }
-            C.defaultProps = { dataSaverMode: !1, variants: [] };
-            var Z = o(959587),
+            Z.defaultProps = { dataSaverMode: !1, variants: [] };
+            var C = o(959587),
                 E = o(751170),
-                S = o(523561),
-                T = o(195560);
-            const D = (0, S.Z)({
+                D = o(523561),
+                S = o(195560);
+            const T = (0, D.Z)({
                     loader: () =>
-                        Promise.all([o.e("icons.2"), o.e("icons.9"), o.e("modules.common-e907d115"), o.e("modules.common-e019dbda"), o.e("icons.14"), o.e("icons.5"), o.e("modules.audio-6107ac1a"), o.e("modules.audio-b953418a"), o.e("modules.audio-7c51e6a7"), o.e("modules.audio-04db59e9"), o.e("modules.audio-76583d6c"), o.e("modules.audio-b7a8a5fb"), o.e("modules.audio-51f6e793"), o.e("modules.audio-e019dbda"), o.e("modules.audio-262c94d4"), o.e("modules.audio-c6fe4ea4"), o.e("icons.17"), o.e("icons.27"), o.e("icons.19"), o.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), o.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), o.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), o.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), o.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), o.e("loader.MediaPreviewVideoPlayer")])
+                        Promise.all([o.e("icons.2"), o.e("icons.9"), o.e("modules.common-e907d115"), o.e("modules.common-e019dbda"), o.e("icons.14"), o.e("icons.5"), o.e("modules.audio-6107ac1a"), o.e("modules.audio-b953418a"), o.e("modules.audio-7c51e6a7"), o.e("modules.audio-04db59e9"), o.e("modules.audio-76583d6c"), o.e("modules.audio-b7a8a5fb"), o.e("modules.audio-51f6e793"), o.e("modules.audio-e019dbda"), o.e("modules.audio-262c94d4"), o.e("modules.audio-c6fe4ea4"), o.e("icons.17"), o.e("icons.27"), o.e("icons.19"), o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"), o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"), o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"), o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"), o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"), o.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), o.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), o.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), o.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), o.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), o.e("loader.MediaPreviewVideoPlayer")])
                             .then(o.bind(o, 298607))
                             .then((e) => ({ default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ })),
-                    renderPlaceholder: (e, t) => r.createElement(T.Z, { hasError: e, onRetry: t }),
+                    renderPlaceholder: (e, t) => r.createElement(S.Z, { hasError: e, onRetry: t }),
                 }),
-                A = u().gd80afba,
-                x = u().j322caee,
-                L = u().abd845fe,
-                M = u().df1b0708,
+                M = u().gd80afba,
+                A = u().j322caee,
+                x = u().abd845fe,
+                L = u().df1b0708,
                 U = u().cd959e5c,
                 N = u().e68b09b4,
                 B = u().add55c98,
@@ -405,13 +424,13 @@
                 }
                 render() {
                     const { "aria-label": e, enableGif: t, mediaItem: o, onEdit: d, onEditSensitiveWarning: c, onRemove: p, role: u, style: w, withAltTextLabel: v, withCloseButton: y, withDragAndDropIndicator: k, withEditButton: P, withEditIcon: I, withEditSensitiveWarningButton: F } = this.props,
-                        { mediaContainerSizeStyle: C, playGif: E } = this.state,
-                        S = o.externalMediaDetails && o.externalMediaDetails.mediaType === f.Re,
-                        T = S || (t && o.mediaFile && o.mediaFile.isGif),
-                        D = !!o.mediaFile?.isVideo;
+                        { mediaContainerSizeStyle: Z, playGif: E } = this.state,
+                        D = o.externalMediaDetails && o.externalMediaDetails.mediaType === f.Re,
+                        S = D || (t && o.mediaFile && o.mediaFile.isGif),
+                        T = !!o.mediaFile?.isVideo;
                     return r.createElement(i.ZP, null, ({ windowWidth: t }) => {
                         const o = void 0 !== I ? I : !g.Z.isTwoColumnLayout(t);
-                        return r.createElement(a.Z, { "aria-label": e || B, onLayout: this._handleMediaPreviewLayout, role: u, style: [w, z.cursor, S && z.gifPlayButton, C] }, this._renderPreview(), S && !E && r.createElement(s.Z, { "aria-label": M, onPress: this._handleGifClick, size: "small" }), T ? r.createElement(Z.ZP, { type: Z.AM }) : null, v && !D ? r.createElement(n.Z, { align: "left", altLabel: e }) : null, r.createElement(a.Z, { style: z.editMedia }, k ? r.createElement(l.ZP, { "aria-label": R, hoverLabel: { label: R }, icon: r.createElement(m.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, P && F ? r.createElement(l.ZP, { "aria-label": x, icon: r.createElement(_.default, { style: z.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, P ? r.createElement(l.ZP, { "aria-label": A, icon: o ? r.createElement(h.default, null) : void 0, onPress: d, size: o ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, o ? void 0 : L) : null), y ? r.createElement(l.ZP, { "aria-label": U, hoverLabel: { label: N }, icon: r.createElement(b.default, null), onPress: p, size: "small", style: z.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        return r.createElement(a.Z, { "aria-label": e || B, onLayout: this._handleMediaPreviewLayout, role: u, style: [w, z.cursor, D && z.gifPlayButton, Z] }, this._renderPreview(), D && !E && r.createElement(s.Z, { "aria-label": L, onPress: this._handleGifClick, size: "small" }), S ? r.createElement(C.ZP, { type: C.AM }) : null, v && !T ? r.createElement(n.Z, { align: "left", altLabel: e }) : null, r.createElement(a.Z, { style: z.editMedia }, k ? r.createElement(l.ZP, { "aria-label": R, hoverLabel: { label: R }, icon: r.createElement(m.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, P && F ? r.createElement(l.ZP, { "aria-label": A, icon: r.createElement(_.default, { style: z.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, P ? r.createElement(l.ZP, { "aria-label": M, icon: o ? r.createElement(h.default, null) : void 0, onPress: d, size: o ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, o ? void 0 : x) : null), y ? r.createElement(l.ZP, { "aria-label": U, hoverLabel: { label: N }, icon: r.createElement(b.default, null), onPress: p, size: "small", style: z.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -440,11 +459,11 @@
                         (0, v.TO)(a.fileHandle) && (s = [{ src: t, type: e }]);
                         const n = i.mediaMetadata?.subtitles,
                             l = i?.trimData;
-                        return r.createElement(D, { mediaFile: a, mediaId: String(o), mediaItem: i, subtitles: n, trimData: l, variants: s });
+                        return r.createElement(T, { mediaFile: a, mediaId: String(o), mediaItem: i, subtitles: n, trimData: l, variants: s });
                     }
                     {
                         const o = (0, v.TO)(a.fileHandle) ? [{ content_type: e, url: t }] : [];
-                        return r.createElement(C, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: a instanceof k.ZP ? a.thumbnail : "", style: z.video, variants: o }, s?.upload?.mediaFile instanceof y.ZP ? r.createElement("track", { default: !0, kind: "subtitles", label: s.displayName, src: s.upload.mediaFile.vtt, srcLang: s.lang }) : null);
+                        return r.createElement(Z, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: a instanceof k.ZP ? a.thumbnail : "", style: z.video, variants: o }, s?.upload?.mediaFile instanceof y.ZP ? r.createElement("track", { default: !0, kind: "subtitles", label: s.displayName, src: s.upload.mediaFile.vtt, srcLang: s.lang }) : null);
                     }
                 }
             }
@@ -592,7 +611,7 @@
         },
         90511: (e, t, o) => {
             "use strict";
-            o.d(t, { ZP: () => D, dm: () => E });
+            o.d(t, { ZP: () => T, dm: () => E });
             var r = o(202784),
                 a = o(99107),
                 i = o(325686),
@@ -624,13 +643,13 @@
                 F = (0, f.Z)()
                     .propsFromState(() => ({ card: P, legacyAndUnifiedCard: I }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, b.zr)("COMPOSER_CARD_PREVIEW"), fetchCardPreviewIfNeeded: w.Z.fetchCardPreviewIfNeeded, updateDMComposer: g.G6, updateTweetComposer: y.zi })),
-                C = d().f6fec9f6,
-                Z = /^https?:\/\//i,
+                Z = d().f6fec9f6,
+                C = /^https?:\/\//i,
                 E = (e) => {
                     const t = (0, m.Z)(e);
-                    if (t.length) return t.map((e) => (!Z.test(e) && `http://${e}`) || e);
+                    if (t.length) return t.map((e) => (!C.test(e) && `http://${e}`) || e);
                 };
-            class S extends r.Component {
+            class D extends r.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._fetchCardPreviewIfNeeded = () => {
@@ -663,7 +682,7 @@
                         { viewerUserId: o } = this.context;
                     if (e || !o) return null;
                     const a = this._getCards();
-                    return a ? r.createElement(i.Z, { style: t }, r.createElement(h.default, { card: a.legacyCard, cardContext: { tweetUserId: o, tweetId: "0" }, isInteractive: !1, preventVideoPlayback: !0, unifiedCard: a.unifiedCard }), r.createElement(s.ZP, { "aria-label": C, icon: r.createElement(c.default, null), onPress: this._handleCardPreviewDismissal, size: "xSmall", style: T.closeButton, type: "onMediaDominantColorFilled" })) : null;
+                    return a ? r.createElement(i.Z, { style: t }, r.createElement(h.default, { card: a.legacyCard, cardContext: { tweetUserId: o, tweetId: "0" }, isInteractive: !1, preventVideoPlayback: !0, unifiedCard: a.unifiedCard }), r.createElement(s.ZP, { "aria-label": Z, icon: r.createElement(c.default, null), onPress: this._handleCardPreviewDismissal, size: "xSmall", style: S.closeButton, type: "onMediaDominantColorFilled" })) : null;
                 }
                 _getCards() {
                     const { card: e, legacyAndUnifiedCard: t } = this.props,
@@ -671,9 +690,9 @@
                     if (o.legacyCard || o.unifiedCard) return o;
                 }
             }
-            S.contextType = _.rC;
-            const T = n.default.create((e) => ({ closeButton: { position: "absolute", top: e.spaces.space4, start: e.spaces.space4 } })),
-                D = F(S);
+            D.contextType = _.rC;
+            const S = n.default.create((e) => ({ closeButton: { position: "absolute", top: e.spaces.space4, start: e.spaces.space4 } })),
+                T = F(D);
         },
         449950: (e, t, o) => {
             "use strict";
@@ -791,7 +810,7 @@
         },
         490834: (e, t, o) => {
             "use strict";
-            o.d(t, { Z: () => T });
+            o.d(t, { Z: () => S });
             var r = o(202784),
                 a = o(576648),
                 i = o(811176),
@@ -845,17 +864,17 @@
                         { gifUrl: t, provider: o } = this.props,
                         { display_name: a, name: i } = o,
                         n = I[i];
-                    return n ? r.createElement(r.Fragment, null, e ? r.createElement(g, { description: y({ providerName: a }), headerText: v, link: t, onCancel: this._handleCopyLinkSheetCancel }) : null, r.createElement(s.ZP, { align: "center", color: "gray700", style: [C.root, C.verticalAlign] }, r.createElement(p().I18NFormatMessage, { $i18n: "e2e6ea0d" }, this._renderAttribution(a, n)))) : null;
+                    return n ? r.createElement(r.Fragment, null, e ? r.createElement(g, { description: y({ providerName: a }), headerText: v, link: t, onCancel: this._handleCopyLinkSheetCancel }) : null, r.createElement(s.ZP, { align: "center", color: "gray700", style: [Z.root, Z.verticalAlign] }, r.createElement(p().I18NFormatMessage, { $i18n: "e2e6ea0d" }, this._renderAttribution(a, n)))) : null;
                 }
                 _renderAttribution(e, t) {
-                    return r.createElement(n.Z, { interactiveStyles: null, renderMenu: this._renderMenu }, r.createElement(s.ZP, { style: C.verticalAlign, weight: "bold", withInteractiveStyling: !0 }, r.createElement(l.Z, { source: { uri: t }, style: C.image }), r.createElement(s.ZP, null, e.toUpperCase())));
+                    return r.createElement(n.Z, { interactiveStyles: null, renderMenu: this._renderMenu }, r.createElement(s.ZP, { style: Z.verticalAlign, weight: "bold", withInteractiveStyling: !0 }, r.createElement(l.Z, { source: { uri: t }, style: Z.image }), r.createElement(s.ZP, null, e.toUpperCase())));
                 }
             }
-            const C = d.default.create((e) => ({ button: { marginStart: e.spaces.space12 }, image: { display: "inline-block", height: e.spaces.space16, marginHorizontal: e.spaces.space4, width: e.spaces.space16 }, root: { marginHorizontal: e.spaces.space8 }, verticalAlign: { display: "flex", alignItems: "center", flexDirection: "row" }, alignLeft: { textAlign: "start" } })),
-                Z = F;
+            const Z = d.default.create((e) => ({ button: { marginStart: e.spaces.space12 }, image: { display: "inline-block", height: e.spaces.space16, marginHorizontal: e.spaces.space4, width: e.spaces.space16 }, root: { marginHorizontal: e.spaces.space8 }, verticalAlign: { display: "flex", alignItems: "center", flexDirection: "row" }, alignLeft: { textAlign: "start" } })),
+                C = F;
             var E = o(668214),
-                S = o(601576);
-            const T = (0, E.Z)().propsFromActions(() => ({ addToast: S.fz }))(({ addToast: e, gifUrl: t, provider: o }) => r.createElement(Z, { addToast: e, gifUrl: t, provider: o }));
+                D = o(601576);
+            const S = (0, E.Z)().propsFromActions(() => ({ addToast: D.fz }))(({ addToast: e, gifUrl: t, provider: o }) => r.createElement(C, { addToast: e, gifUrl: t, provider: o }));
         },
         170371: (e, t, o) => {
             "use strict";
@@ -866,7 +885,7 @@
                 s = o(392237),
                 n = o(71620),
                 l = o(668214),
-                d = o(882122),
+                d = o(947650),
                 c = o(582751);
             const p = (e, t) => c.vx(e, t.userId),
                 u = (e, t) => c.mM(e, t.userId),
@@ -888,7 +907,7 @@
         582751: (e, t, o) => {
             "use strict";
             o.d(t, { Z8: () => s, mM: () => a, vx: () => i });
-            var r = o(882122);
+            var r = o(947650);
             const a = (e, t) => {
                     const o = r.lP(e, t);
                     if (void 0 === o) return o;
@@ -942,7 +961,7 @@
         },
         62857: (e, t, o) => {
             "use strict";
-            o.d(t, { Z: () => Z });
+            o.d(t, { Z: () => C });
             var r = o(807896),
                 a = o(202784),
                 i = o(476984),
@@ -999,7 +1018,7 @@
                     }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, f.zr)("USERS_LIST_CONTAINER"), fetchUsersIfNeeded: v.ZP.fetchManyIfNeeded })),
                 F = l().f5b426c2;
-            class C extends a.Component {
+            class Z extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { allUsersUnavailable: !1 }),
@@ -1041,7 +1060,7 @@
                     );
                 }
             }
-            const Z = I(C);
+            const C = I(Z);
         },
         246851: (e, t, o) => {
             "use strict";
@@ -1059,4 +1078,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-9f4db315.cea9d27a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-9f4db315.ea14f8aa.js.map

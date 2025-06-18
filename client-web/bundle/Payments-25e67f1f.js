@@ -284,8 +284,8 @@
                 F = ({ title: e, description: t = "Money is currently exclusive to users in the United States.", subtitle: n }) => {
                     const r = (0, M.v9)(R.ZP.selectViewerUser),
                         o = (0, i.hC)("payments_qr_onboarding_enabled"),
-                        c = (0, i.hC)("payments_qr_onboarding_mobile_link_enabled") ? l.hv : l.sM;
-                    return a.createElement(a.Fragment, null, a.createElement(h.ZP, { size: "title4", weight: "heavy" }, e ?? a.createElement(O, null)), n, a.createElement(h.ZP, { color: "gray700", size: "body" }, o ? "Scan this QR code directly on your mobile device’s camera to continue in the X app." : t), o ? a.createElement(A.Z, null, a.createElement(w.Z, { style: $.qrcode }, a.createElement(D.Z, { dimension: 200, link: U({ user: r, path: c }) }))) : null);
+                        s = (0, i.hC)("payments_qr_onboarding_mobile_link_enabled") ? l.hv : l.sM;
+                    return a.createElement(a.Fragment, null, a.createElement(h.ZP, { size: "title4", weight: "heavy" }, e ?? a.createElement(O, null)), n, a.createElement(h.ZP, { color: "gray700", size: "body" }, o ? "Scan this QR code directly on your mobile device’s camera to continue in the X app." : t), o ? a.createElement(A.Z, null, a.createElement(w.Z, { style: $.qrcode }, a.createElement(D.Z, { dimension: 200 * c.default.theme.scaleMultiplier, link: U({ user: r, path: s }) }))) : null);
                 },
                 $ = c.default.create((e) => ({ qrcode: { margin: "auto", marginTop: e.spaces.space48, width: 200 * e.scaleMultiplier + "px" } })),
                 L = a.memo(F);
@@ -690,7 +690,7 @@
                 ge = r.memo(ye);
             var be = n(429371);
             const Ee = (e) => `x.com${g.HM}/${e}`,
-                fe = ({ message: e, screenName: t }) => r.createElement(l.Z, { style: Pe.root }, r.createElement(be.Z, { dimension: 90, link: Ee(t) }), r.createElement(u.ZP, { color: "gray700" }, e)),
+                fe = ({ message: e, screenName: t }) => r.createElement(l.Z, { style: Pe.root }, r.createElement(be.Z, { dimension: 90 * p.default.theme.scaleMultiplier, link: Ee(t) }), r.createElement(u.ZP, { color: "gray700" }, e)),
                 Pe = p.default.create((e) => ({ root: { borderColor: e.colors.borderColor, borderRadius: e.borderRadii.large, borderWidth: e.borderWidths.medium, padding: e.spaces.space16, flexDirection: "row", gap: e.spaces.space16, alignItems: "center" } })),
                 Ze = r.memo(fe),
                 ke = [ce.my.PaymentsUsers],
@@ -905,4 +905,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-25e67f1f.b02db61a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-25e67f1f.889c43ca.js.map

@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: a, centeredLogo: o, fixed: r, hideBackButton: l, isFullWidth: n, isLarge: s, leftControl: c, middleControl: h, position: D, rightControl: p, secondaryBar: m, style: b, subtitle: M, title: f, titleDomId: k, titleIconCell: g, titleIconCellSize: y, withBackground: A, withWideContainer: S } = this.props,
-                        { isModal: w } = this.context,
-                        C = l ? c : d.createElement(t.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        x = (function (e, a, o) {
+                    const { backButtonType: e, centerTitle: a, centeredLogo: o, fixed: r, hideBackButton: l, isFullWidth: n, isLarge: s, leftControl: c, middleControl: h, position: D, rightControl: p, secondaryBar: m, style: b, subtitle: M, title: f, titleDomId: k, titleIconCell: g, titleIconCellSize: y, withBackground: w, withWideContainer: A } = this.props,
+                        { isModal: S } = this.context,
+                        x = l ? c : d.createElement(t.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        C = (function (e, a, o) {
                             return e && !(a && o);
-                        })(!!A, w, !!m);
-                    return d.createElement(d.Fragment, null, d.createElement(i.Z, { centerTitle: a, centeredLogo: o, isFullWidth: n, isLarge: s, leftControl: C, middleControl: h, position: u(D, w, r), rightControl: p, style: b, subtitle: M, title: f, titleDomId: k, titleIconCell: g, titleIconCellSize: y, withBackground: x, withWideContainer: S }), m || null);
+                        })(!!w, S, !!m);
+                    return d.createElement(d.Fragment, null, d.createElement(i.Z, { centerTitle: a, centeredLogo: o, isFullWidth: n, isLarge: s, leftControl: x, middleControl: h, position: u(D, S, r), rightControl: p, style: b, subtitle: M, title: f, titleDomId: k, titleIconCell: g, titleIconCellSize: y, withBackground: C, withWideContainer: A }), m || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -197,7 +197,7 @@
                 y = (0, b.Z)(k, { page: "not_found" });
         },
         273945: (e, a, o) => {
-            o.r(a), o.d(a, { TRUSTED_FRIENDS_LEARN_MORE_URL: () => M, TrustedFriendsManagementScreen: () => y, default: () => A });
+            o.r(a), o.d(a, { TRUSTED_FRIENDS_LEARN_MORE_URL: () => M, TrustedFriendsManagementScreen: () => y, default: () => w });
             var d = o(202784),
                 r = o(107267),
                 l = o(688715),
@@ -226,8 +226,8 @@
                             o.e("icons.22"),
                             o.e("icons.2"),
                             o.e("icons.18"),
-                            o.e("icons.1"),
                             o.e("icons.6"),
+                            o.e("icons.1"),
                             o.e("modules.common-e907d115"),
                             o.e("modules.common-e019dbda"),
                             o.e("icons.14"),
@@ -246,14 +246,6 @@
                             o.e("icons.28"),
                             o.e("icons.17"),
                             o.e("icons.4"),
-                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
-                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
-                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
-                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
-                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
-                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
-                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
-                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -273,6 +265,13 @@
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
+                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
+                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
+                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
+                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
+                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
+                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                             o.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
@@ -283,19 +282,18 @@
                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
                             o.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                             o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-bbc41769"),
-                            o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-8aa1f3e4"),
-                            o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-c6c15d67"),
+                            o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3ec0edf6"),
                             o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3fd5f349"),
                             o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
                             o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
                             o.e("shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview"),
                             o.e("shared~bundle.ComposeMedia~bundle.SettingsProfile~bundle.UserLists"),
-                            o.e("shared~bundle.UserLists~ondemand.HoverCard"),
                             o.e("bundle.UserLists-bc6ccf4c"),
                             o.e("bundle.UserLists-2a1252f0"),
                             o.e("bundle.UserLists-e019dbda"),
                             o.e("bundle.UserLists-63cb1cc4"),
+                            o.e("bundle.UserLists-6df79b50"),
                         ]).then(o.bind(o, 696705)),
                     { shouldMigrateToX: !1 },
                 ),
@@ -311,8 +309,8 @@
                             o.e("icons.22"),
                             o.e("icons.2"),
                             o.e("icons.18"),
-                            o.e("icons.1"),
                             o.e("icons.6"),
+                            o.e("icons.1"),
                             o.e("modules.common-e907d115"),
                             o.e("modules.common-e019dbda"),
                             o.e("icons.14"),
@@ -331,14 +329,6 @@
                             o.e("icons.28"),
                             o.e("icons.17"),
                             o.e("icons.4"),
-                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
-                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
-                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
-                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
-                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
-                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
-                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
-                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -358,6 +348,13 @@
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
+                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
+                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
+                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
+                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
+                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
+                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                             o.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
@@ -368,19 +365,18 @@
                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
                             o.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                             o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-bbc41769"),
-                            o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-8aa1f3e4"),
-                            o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-c6c15d67"),
+                            o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3ec0edf6"),
                             o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3fd5f349"),
                             o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
                             o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
                             o.e("shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview"),
                             o.e("shared~bundle.ComposeMedia~bundle.SettingsProfile~bundle.UserLists"),
-                            o.e("shared~bundle.UserLists~ondemand.HoverCard"),
                             o.e("bundle.UserLists-bc6ccf4c"),
                             o.e("bundle.UserLists-2a1252f0"),
                             o.e("bundle.UserLists-e019dbda"),
                             o.e("bundle.UserLists-63cb1cc4"),
+                            o.e("bundle.UserLists-6df79b50"),
                         ]).then(o.bind(o, 582313)),
                     { shouldMigrateToX: !1 },
                 ),
@@ -414,10 +410,10 @@
                         ),
                     );
                 },
-                A = y;
+                w = y;
         },
         403556: (e, a, o) => {
-            o.d(a, { Z: () => C });
+            o.d(a, { Z: () => x });
             var d = o(807896),
                 r = o(202784),
                 l = o(194504),
@@ -471,17 +467,17 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": a, badgeCount: o, badgePip: d, children: l, color: n, isActive: s, isCompact: c, isPillLink: u, isRoundedRect: h, isWebRedesign: m, retainScrollPosition: y, style: S, to: w } = this.props,
-                        { location: C } = this.state,
-                        x = w ? this._getMemoizedLink(w, y) : void 0,
-                        v = s ? s(w) : C?.pathname === x?.pathname,
-                        B = b.Z.generate({ backgroundColor: "transparent", color: t.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? A.pillHoverStyle.backgroundColor : void 0 }),
-                        I = m ? "medium" : v ? "bold" : "medium";
-                    return r.createElement(M.Z, { "aria-label": a, "aria-selected": v, focusable: !!v, interactiveStyles: B, link: x, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [A.pillStyle] : [A.link]), ...(u && v ? [A.pillActiveStyle] : []), c ? (u ? A.compactPill : A.compactLink) : null, h ? A.roundedRect : null, S], withoutInteractiveStyles: m }, ({ isFocused: a, isHovered: s }) => r.createElement(i.Z, { style: u && A.flexGrow }, r.createElement(D.ZP, { size: m ? "headline2" : void 0, style: [A.text, { color: this._getTextColor(v, s, m, u) }, c && A.compactText, m && a && A.focusedText, u && A.pillTextStyle, u && v && A.pillActiveTextStyle, u && s && A.pillHoverTextStyle], weight: I }, e && r.createElement(e, { style: A.icon }), l, m || u ? null : r.createElement(i.Z, { style: v && [A.border, { backgroundColor: t.default.theme.colors[n] }] })), o ? r.createElement(p.Z, { count: o, standalone: !0, style: [A.badge, o >= 10 && A.multiDigitBadge, o >= 20 && A.truncatedCountBadge], truncatedCountFormatter: g, unreadCountLabel: f, withBorder: !1 }) : d ? r.createElement(p.Z, { pip: !0, standalone: !0, style: A.badgePip, textColor: "red500", unreadCountLabel: k, withBorder: !1 }) : null));
+                    const { Icon: e, "aria-label": a, badgeCount: o, badgePip: d, children: l, color: n, isActive: s, isCompact: c, isPillLink: u, isRoundedRect: h, isWebRedesign: m, retainScrollPosition: y, style: A, to: S } = this.props,
+                        { location: x } = this.state,
+                        C = S ? this._getMemoizedLink(S, y) : void 0,
+                        v = s ? s(S) : x?.pathname === C?.pathname,
+                        B = b.Z.generate({ backgroundColor: "transparent", color: t.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? w.pillHoverStyle.backgroundColor : void 0 }),
+                        P = m ? "medium" : v ? "bold" : "medium";
+                    return r.createElement(M.Z, { "aria-label": a, "aria-selected": v, focusable: !!v, interactiveStyles: B, link: C, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [w.pillStyle] : [w.link]), ...(u && v ? [w.pillActiveStyle] : []), c ? (u ? w.compactPill : w.compactLink) : null, h ? w.roundedRect : null, A], withoutInteractiveStyles: m }, ({ isFocused: a, isHovered: s }) => r.createElement(i.Z, { style: u && w.flexGrow }, r.createElement(D.ZP, { size: m ? "headline2" : void 0, style: [w.text, { color: this._getTextColor(v, s, m, u) }, c && w.compactText, m && a && w.focusedText, u && w.pillTextStyle, u && v && w.pillActiveTextStyle, u && s && w.pillHoverTextStyle], weight: P }, e && r.createElement(e, { style: w.icon }), l, m || u ? null : r.createElement(i.Z, { style: v && [w.border, { backgroundColor: t.default.theme.colors[n] }] })), o ? r.createElement(p.Z, { count: o, standalone: !0, style: [w.badge, o >= 10 && w.multiDigitBadge, o >= 20 && w.truncatedCountBadge], truncatedCountFormatter: g, unreadCountLabel: f, withBorder: !1 }) : d ? r.createElement(p.Z, { pip: !0, standalone: !0, style: w.badgePip, textColor: "red500", unreadCountLabel: k, withBorder: !1 }) : null));
                 }
             }
             (y.contextType = m.Z), (y.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
-            const A = t.default.create((e) => ({
+            const w = t.default.create((e) => ({
                     link: { alignItems: "center", display: "flex", flexDirection: "column", flexGrow: 1, height: e.componentDimensions.appBarHeight, justifyContent: "center", outlineStyle: "none", paddingHorizontal: e.spaces.space16, minWidth: "56px" },
                     compactLink: { height: 0.75 * e.componentDimensions.appBarHeightPx },
                     badge: { position: "absolute", height: e.spaces.space12, minWidth: e.spaces.space12, top: `calc(${e.spaces.space12} + ${e.spaces.space2})`, end: `calc(-1 * ${e.spaces.space16})`, fontSize: `calc(${e.spaces.space8} + ${e.spaces.space1})` },
@@ -504,9 +500,9 @@
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
-                S = y,
-                w = t.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
-                C = ({ alignFirstItem: e, "aria-label": a, isCompact: o, isPillLink: t, isRoundedRect: i, links: s, style: c, visibleItemIndex: u }) => {
+                A = y,
+                S = t.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
+                x = ({ alignFirstItem: e, "aria-label": a, isCompact: o, isPillLink: t, isRoundedRect: i, links: s, style: c, visibleItemIndex: u }) => {
                     const h = s
                             .filter(Boolean)
                             .map((e) => e.key)
@@ -516,14 +512,14 @@
                         m = r.useMemo(
                             () =>
                                 s.filter(Boolean).map(({ label: a, viewType: l, ...n }, s) => {
-                                    const c = p ? [w.linkRedesign, 0 === s && w.firstLinkRedesign, e && 0 === s && w.withNoPaddingStart] : void 0;
-                                    return r.createElement(S, (0, d.Z)({ viewType: l }, n, { isCompact: o, isPillLink: t, isRoundedRect: i, isWebRedesign: p, style: c }), a);
+                                    const c = p ? [S.linkRedesign, 0 === s && S.firstLinkRedesign, e && 0 === s && S.withNoPaddingStart] : void 0;
+                                    return r.createElement(A, (0, d.Z)({ viewType: l }, n, { isCompact: o, isPillLink: t, isRoundedRect: i, isWebRedesign: p, style: c }), a);
                                 }),
                             [e, o, t, i, p, s],
                         );
-                    return r.createElement(l.Z, { "aria-label": a, buttonsContainerStyle: t && w.gap, childrenStyle: !p && w.flexGrow, key: h, style: [t ? null : w.segmentedControl, p && w.leftAligned, c], visibleItemIndex: u }, m);
+                    return r.createElement(l.Z, { "aria-label": a, buttonsContainerStyle: t && S.gap, childrenStyle: !p && S.flexGrow, key: h, style: [t ? null : S.segmentedControl, p && S.leftAligned, c], visibleItemIndex: u }, m);
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TrustedFriendsManagement.19e5134a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TrustedFriendsManagement.7c6476ca.js.map

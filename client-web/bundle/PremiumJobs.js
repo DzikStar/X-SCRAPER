@@ -1,60 +1,63 @@
-"use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.PremiumJobs"],
     {
         252021: (e, t, o) => {
-            o.d(t, { Z: () => a });
+            "use strict";
+            o.d(t, { Z: () => r });
             var s = o(202784),
                 i = o(107267),
-                r = o(115553);
-            const a = (e) => {
+                n = o(115553);
+            const r = (e) => {
                 (0, i.useHistory)();
-                return s.createElement(r.A, e);
+                return s.createElement(n.A, e);
             };
         },
         507651: (e, t, o) => {
+            "use strict";
             o.d(t, { Z: () => c });
             var s = o(807896),
                 i = o(202784),
-                r = o(107267),
-                a = o(403556),
-                n = o(791632);
+                n = o(107267),
+                r = o(403556),
+                a = o(791632);
             const l = (e) => {
-                    const t = (0, r.useHistory)(),
+                    const t = (0, n.useHistory)(),
                         { isCompact: o, ...l } = e;
-                    return i.createElement(a.Z, (0, s.Z)({}, l, { isCompact: o || (0, n.HD)(t) }));
+                    return i.createElement(r.Z, (0, s.Z)({}, l, { isCompact: o || (0, a.HD)(t) }));
                 },
                 c = i.memo(l);
         },
         292546: (e, t, o) => {
-            o.d(t, { Z: () => r });
+            "use strict";
+            o.d(t, { Z: () => n });
             o(543673), o(240753), o(128399), o(136728);
             var s = o(202784),
                 i = o(107267);
-            const r = () => {
+            const n = () => {
                 const e = (0, i.useLocation)(),
                     t = (0, i.useHistory)(),
-                    [o, r] = s.useState(new URLSearchParams(e.search));
+                    [o, n] = s.useState(new URLSearchParams(e.search));
                 s.useEffect(() => {
-                    r(new URLSearchParams(e.search));
+                    n(new URLSearchParams(e.search));
                 }, [e.search]);
-                const a = s.useCallback(
+                const r = s.useCallback(
                     (s, i) => {
-                        const r = new URLSearchParams(o);
-                        r.set(s, i), t.push(`${e.pathname}?${r.toString()}`);
+                        const n = new URLSearchParams(o);
+                        n.set(s, i), t.push(`${e.pathname}?${n.toString()}`);
                     },
                     [t, e.pathname, o],
                 );
-                return [s.useMemo(() => new URLSearchParams(e.search), [e.search]), a];
+                return [s.useMemo(() => new URLSearchParams(e.search), [e.search]), r];
             };
         },
         403556: (e, t, o) => {
-            o.d(t, { Z: () => w });
+            "use strict";
+            o.d(t, { Z: () => R });
             var s = o(807896),
                 i = o(202784),
-                r = o(194504),
-                a = o(235902),
-                n = o(392237),
+                n = o(194504),
+                r = o(235902),
+                a = o(392237),
                 l = o(325686),
                 c = o(111677),
                 d = o.n(c),
@@ -78,9 +81,9 @@
                         (this._unlisten = u.Z),
                         (this.state = { location: this.context.location }),
                         (this._getTextColor = (e, t, o, s) => {
-                            const i = n.default.theme.colors.text,
-                                r = n.default.theme.colors.gray700;
-                            return o || s ? (e || t ? i : r) : e ? i : r;
+                            const i = a.default.theme.colors.text,
+                                n = a.default.theme.colors.gray700;
+                            return o || s ? (e || t ? i : n) : e ? i : n;
                         }),
                         (this._setRef = (e) => {
                             this._ref = e;
@@ -103,17 +106,17 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": t, badgeCount: o, badgePip: s, children: r, color: a, isActive: c, isCompact: d, isPillLink: p, isRoundedRect: u, isWebRedesign: g, retainScrollPosition: C, style: v, to: R } = this.props,
-                        { location: w } = this.state,
-                        P = R ? this._getMemoizedLink(R, C) : void 0,
-                        W = c ? c(R) : w?.pathname === P?.pathname,
-                        _ = f.Z.generate({ backgroundColor: "transparent", color: n.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: p ? k.pillHoverStyle.backgroundColor : void 0 }),
-                        Z = g ? "medium" : W ? "bold" : "medium";
-                    return i.createElement(b.Z, { "aria-label": t, "aria-selected": W, focusable: !!W, interactiveStyles: _, link: P, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(p ? [k.pillStyle] : [k.link]), ...(p && W ? [k.pillActiveStyle] : []), d ? (p ? k.compactPill : k.compactLink) : null, u ? k.roundedRect : null, v], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => i.createElement(l.Z, { style: p && k.flexGrow }, i.createElement(m.ZP, { size: g ? "headline2" : void 0, style: [k.text, { color: this._getTextColor(W, c, g, p) }, d && k.compactText, g && t && k.focusedText, p && k.pillTextStyle, p && W && k.pillActiveTextStyle, p && c && k.pillHoverTextStyle], weight: Z }, e && i.createElement(e, { style: k.icon }), r, g || p ? null : i.createElement(l.Z, { style: W && [k.border, { backgroundColor: n.default.theme.colors[a] }] })), o ? i.createElement(h.Z, { count: o, standalone: !0, style: [k.badge, o >= 10 && k.multiDigitBadge, o >= 20 && k.truncatedCountBadge], truncatedCountFormatter: S, unreadCountLabel: y, withBorder: !1 }) : s ? i.createElement(h.Z, { pip: !0, standalone: !0, style: k.badgePip, textColor: "red500", unreadCountLabel: x, withBorder: !1 }) : null));
+                    const { Icon: e, "aria-label": t, badgeCount: o, badgePip: s, children: n, color: r, isActive: c, isCompact: d, isPillLink: p, isRoundedRect: u, isWebRedesign: g, retainScrollPosition: C, style: k, to: w } = this.props,
+                        { location: R } = this.state,
+                        P = w ? this._getMemoizedLink(w, C) : void 0,
+                        W = c ? c(w) : R?.pathname === P?.pathname,
+                        T = f.Z.generate({ backgroundColor: "transparent", color: a.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: p ? v.pillHoverStyle.backgroundColor : void 0 }),
+                        _ = g ? "medium" : W ? "bold" : "medium";
+                    return i.createElement(b.Z, { "aria-label": t, "aria-selected": W, focusable: !!W, interactiveStyles: T, link: P, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(p ? [v.pillStyle] : [v.link]), ...(p && W ? [v.pillActiveStyle] : []), d ? (p ? v.compactPill : v.compactLink) : null, u ? v.roundedRect : null, k], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => i.createElement(l.Z, { style: p && v.flexGrow }, i.createElement(m.ZP, { size: g ? "headline2" : void 0, style: [v.text, { color: this._getTextColor(W, c, g, p) }, d && v.compactText, g && t && v.focusedText, p && v.pillTextStyle, p && W && v.pillActiveTextStyle, p && c && v.pillHoverTextStyle], weight: _ }, e && i.createElement(e, { style: v.icon }), n, g || p ? null : i.createElement(l.Z, { style: W && [v.border, { backgroundColor: a.default.theme.colors[r] }] })), o ? i.createElement(h.Z, { count: o, standalone: !0, style: [v.badge, o >= 10 && v.multiDigitBadge, o >= 20 && v.truncatedCountBadge], truncatedCountFormatter: S, unreadCountLabel: y, withBorder: !1 }) : s ? i.createElement(h.Z, { pip: !0, standalone: !0, style: v.badgePip, textColor: "red500", unreadCountLabel: x, withBorder: !1 }) : null));
                 }
             }
             (C.contextType = g.Z), (C.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
-            const k = n.default.create((e) => ({
+            const v = a.default.create((e) => ({
                     link: { alignItems: "center", display: "flex", flexDirection: "column", flexGrow: 1, height: e.componentDimensions.appBarHeight, justifyContent: "center", outlineStyle: "none", paddingHorizontal: e.spaces.space16, minWidth: "56px" },
                     compactLink: { height: 0.75 * e.componentDimensions.appBarHeightPx },
                     badge: { position: "absolute", height: e.spaces.space12, minWidth: e.spaces.space12, top: `calc(${e.spaces.space12} + ${e.spaces.space2})`, end: `calc(-1 * ${e.spaces.space16})`, fontSize: `calc(${e.spaces.space8} + ${e.spaces.space1})` },
@@ -136,49 +139,82 @@
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
-                v = C,
-                R = n.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
-                w = ({ alignFirstItem: e, "aria-label": t, isCompact: o, isPillLink: n, isRoundedRect: l, links: c, style: d, visibleItemIndex: p }) => {
+                k = C,
+                w = a.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
+                R = ({ alignFirstItem: e, "aria-label": t, isCompact: o, isPillLink: a, isRoundedRect: l, links: c, style: d, visibleItemIndex: p }) => {
                     const u = c
                             .filter(Boolean)
                             .map((e) => e.key)
                             .join("-"),
-                        { isWebRedesign: m } = a.ZP.useProps(),
-                        h = m() && !n,
+                        { isWebRedesign: m } = r.ZP.useProps(),
+                        h = m() && !a,
                         g = i.useMemo(
                             () =>
-                                c.filter(Boolean).map(({ label: t, viewType: r, ...a }, c) => {
-                                    const d = h ? [R.linkRedesign, 0 === c && R.firstLinkRedesign, e && 0 === c && R.withNoPaddingStart] : void 0;
-                                    return i.createElement(v, (0, s.Z)({ viewType: r }, a, { isCompact: o, isPillLink: n, isRoundedRect: l, isWebRedesign: h, style: d }), t);
+                                c.filter(Boolean).map(({ label: t, viewType: n, ...r }, c) => {
+                                    const d = h ? [w.linkRedesign, 0 === c && w.firstLinkRedesign, e && 0 === c && w.withNoPaddingStart] : void 0;
+                                    return i.createElement(k, (0, s.Z)({ viewType: n }, r, { isCompact: o, isPillLink: a, isRoundedRect: l, isWebRedesign: h, style: d }), t);
                                 }),
-                            [e, o, n, l, h, c],
+                            [e, o, a, l, h, c],
                         );
-                    return i.createElement(r.Z, { "aria-label": t, buttonsContainerStyle: n && R.gap, childrenStyle: !h && R.flexGrow, key: u, style: [n ? null : R.segmentedControl, h && R.leftAligned, d], visibleItemIndex: p }, g);
+                    return i.createElement(n.Z, { "aria-label": t, buttonsContainerStyle: a && w.gap, childrenStyle: !h && w.flexGrow, key: u, style: [a ? null : w.segmentedControl, h && w.leftAligned, d], visibleItemIndex: p }, g);
                 };
         },
+        666536: (e, t, o) => {
+            "use strict";
+            o.d(t, { Z: () => n });
+            var s = o(936386),
+                i = o.n(s);
+            const n = (e, t, o) => i()(e, t, o);
+        },
+        936386: (e) => {
+            function t(e, t, o) {
+                var s, i, n, r, a;
+                function l() {
+                    var c = Date.now() - r;
+                    c < t && c >= 0 ? (s = setTimeout(l, t - c)) : ((s = null), o || ((a = e.apply(n, i)), (n = i = null)));
+                }
+                null == t && (t = 100);
+                var c = function () {
+                    (n = this), (i = arguments), (r = Date.now());
+                    var c = o && !s;
+                    return s || (s = setTimeout(l, t)), c && ((a = e.apply(n, i)), (n = i = null)), a;
+                };
+                return (
+                    (c.clear = function () {
+                        s && (clearTimeout(s), (s = null));
+                    }),
+                    (c.flush = function () {
+                        s && ((a = e.apply(n, i)), (n = i = null), clearTimeout(s), (s = null));
+                    }),
+                    c
+                );
+            }
+            (t.debounce = t), (e.exports = t);
+        },
         353391: (e, t, o) => {
+            "use strict";
             var s = o(437429),
                 i = o(202784),
-                r = i.useEffect,
-                a = i.useRef;
+                n = i.useEffect,
+                r = i.useRef;
             e.exports = function (e, t) {
                 var o = s(),
-                    i = a(null),
-                    n = Array.from(e).sort().join("");
+                    i = r(null),
+                    a = Array.from(e).sort().join("");
                 return (
-                    r(
+                    n(
                         function () {
                             var s = o.getStore(),
-                                r = s.lookupInvalidationState(e),
-                                a = s.subscribeToInvalidationState(r, t);
+                                n = s.lookupInvalidationState(e),
+                                r = s.subscribeToInvalidationState(n, t);
                             return (
-                                (i.current = a),
+                                (i.current = r),
                                 function () {
-                                    return a.dispose();
+                                    return r.dispose();
                                 }
                             );
                         },
-                        [n, t, o],
+                        [a, t, o],
                     ),
                     {
                         dispose: function () {
@@ -190,4 +226,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumJobs.d5ab4a3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumJobs.af50e7da.js.map

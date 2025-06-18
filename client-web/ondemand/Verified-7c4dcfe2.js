@@ -419,7 +419,7 @@
                     const { business: e } = (0, u.M1)();
                     return (0, a.jsxs)(n.$0, { className: "flex flex-col items-center gap-6 pb-8 text-center", children: [(0, a.jsxs)("p", { className: "text-headline1 flex items-center gap-2 font-bold", children: [(0, a.jsx)(d.Z, { className: "h-[18px] w-[18px]" }), e.landing.organizations] }), (0, a.jsx)("h1", { className: "text-title1 text-balance font-bold md:text-[64px] md:leading-[70px]", children: (0, a.jsx)("span", { className: "from-text to-text/30 bg-gradient-to-r from-90% bg-clip-text text-transparent", children: e.landing.hero.title }) }), (0, a.jsx)("p", { className: "text-headline1 max-w-[740px] text-pretty opacity-60", children: e.landing.hero.description })] });
                 };
-            var F = s(134877);
+            var F = s(607499);
             const K = s(73367),
                 S = ({ businessScreenName: e, text: l, userScreenName: s, userTitle: i }) => {
                     const r = (0, x.useLazyLoadQuery)(K, { screen_names: [e, s] }),
@@ -473,4 +473,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-7c4dcfe2.b8212baa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-7c4dcfe2.a190d47a.js.map

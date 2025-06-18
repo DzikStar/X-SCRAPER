@@ -79,9 +79,9 @@
                 M = r(111677),
                 R = r.n(M),
                 T = r(292484),
-                z = r(952793),
-                D = r(479506),
-                A = r(582129),
+                A = r(952793),
+                z = r(479506),
+                D = r(582129),
                 V = r(725516),
                 N = r(125363),
                 H = r(390387),
@@ -97,9 +97,9 @@
                     r = (0, N.I0)(),
                     o = (0, k.useHistory)(),
                     n = (0, N.v9)(H.Qb),
-                    s = (0, z.hC)("rweb_live_dock_enabled"),
+                    s = (0, A.hC)("rweb_live_dock_enabled"),
                     i = (0, T.cm)() && s,
-                    l = (0, P.b9)(A.dq),
+                    l = (0, P.b9)(D.dq),
                     c = (function () {
                         const e = (0, N.I0)(),
                             t = (0, P.b9)(F.wQ);
@@ -155,7 +155,7 @@
                 }
                 x.length || w || Y.push(j.BeFirstJoin);
                 const X = (0, B.Z)(Y, !0),
-                    ee = a.useMemo(() => ({ items: [{ audio_space_details: { broadcast_id: b, is_logged_in: n }, item_type: h ? D.Z.ItemType.PERISCOPE_BROADCAST : D.Z.ItemType.AUDIO_SPACE }] }), [b, n, h]);
+                    ee = a.useMemo(() => ({ items: [{ audio_space_details: { broadcast_id: b, is_logged_in: n }, item_type: h ? z.Z.ItemType.PERISCOPE_BROADCAST : z.Z.ItemType.AUDIO_SPACE }] }), [b, n, h]);
                 return {
                     "aria-label": X,
                     borderRadius: R,
@@ -343,6 +343,13 @@
             i.metadata = { width: 24, height: 24 };
             const l = i;
         },
+        465233: (e, t, r) => {
+            r.d(t, { Z: () => o });
+            var a = r(716406);
+            function o(e) {
+                return "object" != typeof e || null === e ? e : Array.isArray(e) ? e.map(o) : (0, a.Z)(e, (e) => o(e));
+            }
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Spacebar~loader.SidebarSpacebar.ff85d64a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Spacebar~loader.SidebarSpacebar.5d25897a.js.map

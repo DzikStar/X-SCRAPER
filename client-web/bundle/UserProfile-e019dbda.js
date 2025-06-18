@@ -293,8 +293,8 @@
             const D = h().d7f8a117,
                 T = h().cae20e93,
                 E = h().gc767fda,
-                M = h().c7c85e0c,
-                P = ({ config: e, data: t, dismiss: n, impress: o }) => {
+                P = h().c7c85e0c,
+                M = ({ config: e, data: t, dismiss: n, impress: o }) => {
                     const a = (0, g.Z)();
                     r.useEffect(() => {
                         a.scribe({ action: "show" }), a.scribe({ action: "impression", component: "unified-upsell", data: { referer: "account_analytics" } });
@@ -322,9 +322,9 @@
                         i = r.useCallback(() => {
                             a.scribe({ action: "dismiss" }), n();
                         }, [n, a]);
-                    return r.createElement(d.Z, { style: S.container, testID: "analytics-preview" }, r.createElement(d.Z, { style: S.heading }, e.metrics.length > 1 ? r.createElement(c.ZP, { size: "headline2", weight: "bold" }, D({ days: e.periodInDays })) : null, r.createElement(c.ZP, { color: "gray700", size: "subtext3" }, E), r.createElement(u.ZP, { icon: r.createElement(f.default, null), onClick: i, style: S.dismissButton, testID: "dismiss-button", type: "primaryText" })), r.createElement(d.Z, { style: S.content }, s, r.createElement(u.ZP, { icon: r.createElement(b.default, null), link: { pathname: "/i/premium_sign_up", state: { referring_page: "account_analytics" } }, size: "xSmall", style: S.unlockButton, type: "primaryFilled" }, M)));
+                    return r.createElement(d.Z, { style: S.container, testID: "analytics-preview" }, r.createElement(d.Z, { style: S.heading }, e.metrics.length > 1 ? r.createElement(c.ZP, { size: "headline2", weight: "bold" }, D({ days: e.periodInDays })) : null, r.createElement(c.ZP, { color: "gray700", size: "subtext3" }, E), r.createElement(u.ZP, { icon: r.createElement(f.default, null), onClick: i, style: S.dismissButton, testID: "dismiss-button", type: "primaryText" })), r.createElement(d.Z, { style: S.content }, s, r.createElement(u.ZP, { icon: r.createElement(b.default, null), link: { pathname: "/i/premium_sign_up", state: { referring_page: "account_analytics" } }, size: "xSmall", style: S.unlockButton, type: "primaryFilled" }, P)));
                 },
-                I = (e) => {
+                Z = (e) => {
                     const t = (0, w.Z)({ metrics: e.config.metrics, periodInDays: e.config.periodInDays }),
                         n = t.result.result?.free_metrics_rollup,
                         o = (0, g.Z)();
@@ -334,10 +334,10 @@
                             const t = n?.find((t) => t.metric_type === e.metricType);
                             (!t?.metric_value || (e.threshold && t?.metric_value <= e.threshold)) && (a = !1);
                         }),
-                        a ? r.createElement(P, (0, l.Z)({}, e, { data: n })) : (o.scribe({ action: "not_matched" }), null)
+                        a ? r.createElement(M, (0, l.Z)({}, e, { data: n })) : (o.scribe({ action: "not_matched" }), null)
                     );
                 },
-                Z = r.memo(I),
+                I = r.memo(Z),
                 S = m.default.create((e) => ({ container: { marginHorizontal: e.spaces.space16, backgroundColor: e.colors.unreadCellBackground, borderRadius: e.borderRadii.large, padding: e.spaces.space16 }, content: { justifyContent: "space-between", flexDirection: "row", flexWrap: "wrap" }, tiles: { flexDirection: "row", gap: e.spaces.space48 }, heading: { flexDirection: "row", alignItems: "center", gap: e.spaces.space16 }, unlockButton: { alignSelf: "flex-end", marginTop: e.spaces.space12 }, dismissButton: { marginStart: "auto" } })),
                 v = { showForMsec: o.fz, reappearAfterMsec: o.Ho, dismissForMsec: o.dV },
                 k = { showForMsec: o.Tg, reappearAfterMsec: o.Vv, dismissForMsec: o.IZ },
@@ -372,7 +372,7 @@
                         r.useEffect(() => {
                             n();
                         }),
-                        s ? r.createElement(a.nO, { namespace: { component: "analytics_preview" } }, r.createElement(i.H, { errorConfig: { context: "AnalyticPreview" }, suspenseFallback: null }, r.createElement(Z, { config: e.config, dismiss: t, impress: n }))) : null
+                        s ? r.createElement(a.nO, { namespace: { component: "analytics_preview" } }, r.createElement(i.H, { errorConfig: { context: "AnalyticPreview" }, suspenseFallback: null }, r.createElement(I, { config: e.config, dismiss: t, impress: n }))) : null
                     );
                 },
                 O = () => {
@@ -508,7 +508,7 @@
         231214: (e, t, n) => {
             n.d(t, { Z: () => r });
             n(202784);
-            const r = (0, n(523561).Z)({ loader: () => Promise.all([n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"), n.e("ondemand.IntentPrompt")]).then(n.bind(n, 958679)) });
+            const r = (0, n(523561).Z)({ loader: () => Promise.all([n.e("icons.6"), n.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"), n.e("ondemand.IntentPrompt")]).then(n.bind(n, 958679)) });
         },
         170371: (e, t, n) => {
             n.d(t, { Z: () => b });
@@ -518,7 +518,7 @@
                 s = n(392237),
                 i = n(71620),
                 l = n(668214),
-                d = n(882122),
+                d = n(947650),
                 c = n(582751);
             const u = (e, t) => c.vx(e, t.userId),
                 m = (e, t) => c.mM(e, t.userId),
@@ -539,7 +539,7 @@
         },
         582751: (e, t, n) => {
             n.d(t, { Z8: () => s, mM: () => o, vx: () => a });
-            var r = n(882122);
+            var r = n(947650);
             const o = (e, t) => {
                     const n = r.lP(e, t);
                     if (void 0 === n) return n;
@@ -566,8 +566,8 @@
                         n.e("icons.2"),
                         n.e("icons.18"),
                         n.e("icons.9"),
-                        n.e("icons.1"),
                         n.e("icons.6"),
+                        n.e("icons.1"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
                         n.e("icons.14"),
@@ -589,14 +589,6 @@
                         n.e("icons.19"),
                         n.e("icons.0"),
                         n.e("icons.4"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -616,8 +608,14 @@
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
+                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
+                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
+                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
+                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
+                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
+                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                         n.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
-                        n.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         n.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~bundle.Payments~ondemand.News~ondemand.Insights~loader"),
                         n.e("shared~bundle.AccountAnalytics~bundle.Payments~ondemand.Insights~ondemand.Verified~ondemand.XChat"),
@@ -717,7 +715,7 @@
                 };
         },
         26088: (e, t, n) => {
-            n.d(t, { Z: () => P });
+            n.d(t, { Z: () => M });
             n(136728);
             var r = n(202784),
                 o = n(107267),
@@ -746,9 +744,9 @@
                     const { analytics: t, createLocalApiErrorHandler: n, isFollowing: i, isSuperFollowing: l, promotedContent: d, style: b, unfollow: g, user: y, userId: _ } = e,
                         w = (0, o.useHistory)(),
                         E = (0, o.useLocation)(),
-                        P = y?.screen_name,
-                        I = i ? r.createElement(c.default, null) : r.createElement(u.default, { style: M.superFollowsIcon }),
-                        Z = r.useCallback(
+                        M = y?.screen_name,
+                        Z = i ? r.createElement(c.default, null) : r.createElement(u.default, { style: P.superFollowsIcon }),
+                        I = r.useCallback(
                             (e) => {
                                 const { action: n, element: r } = e,
                                     { items: o } = t.contextualScribeData,
@@ -762,33 +760,33 @@
                         ),
                         S = r.useCallback(
                             (e) => {
-                                _ && (Z({ element: "super_follow_subscribe_button", action: "unfollow" }), g(_, { promotedContent: d }).catch(n(p.X))), e();
+                                _ && (I({ element: "super_follow_subscribe_button", action: "unfollow" }), g(_, { promotedContent: d }).catch(n(p.X))), e();
                             },
-                            [n, d, g, _, Z],
+                            [n, d, g, _, I],
                         ),
                         v = r.useCallback(
                             (e) => {
-                                const t = [{ Icon: m.default, text: T({ screenName: P }), onClick: S }];
+                                const t = [{ Icon: m.default, text: T({ screenName: M }), onClick: S }];
                                 return r.createElement(a.Z, { isFixed: !0, items: t, onCloseRequested: e });
                             },
-                            [S, P],
+                            [S, M],
                         ),
-                        k = i ? T({ screenName: P }) : D({ screenName: P });
+                        k = i ? T({ screenName: M }) : D({ screenName: M });
                     return r.createElement(s.ZP, {
                         "aria-label": k,
                         borderColor: i || l ? void 0 : "plum500",
                         hoverLabel: { label: k },
-                        icon: I,
+                        icon: Z,
                         onPress: () => {
-                            !P || i || l || (Z({ element: "super_follow_subscribe_button", action: "click" }), w.push(`/${P}/creator-subscriptions/subscribe`, { referring_page: "profile_intent" }));
+                            !M || i || l || (I({ element: "super_follow_subscribe_button", action: "click" }), w.push(`/${M}/creator-subscriptions/subscribe`, { referring_page: "profile_intent" }));
                         },
                         renderMenu: i ? v : void 0,
                         style: b,
                         type: l && i ? "primaryOutlined" : void 0,
                     });
                 },
-                M = i.default.create((e) => ({ superFollowsIcon: { color: e.colors.plum500 } })),
-                P = w(r.memo(E));
+                P = i.default.create((e) => ({ superFollowsIcon: { color: e.colors.plum500 } })),
+                M = w(r.memo(E));
         },
         241304: (e, t, n) => {
             n.d(t, { Z: () => C });
@@ -813,18 +811,18 @@
                 D = n(837020),
                 T = n(125363),
                 E = n(601576),
-                M = n(919022);
-            const P = u().ia5e7488,
-                I = { label: P },
-                Z = u().j33d8902,
-                S = { label: Z },
+                P = n(919022);
+            const M = u().ia5e7488,
+                Z = { label: M },
+                I = u().j33d8902,
+                S = { label: I },
                 v = u().a8ab3d08,
                 k = u().d740d2d9,
                 A = { bandcamp_handle: { icon: r.createElement(m.default, null), label: u().a7cf1e98, url: "https://bandcamp.com/" }, bitcoin_handle: { icon: r.createElement(p.default, null), label: u().d876e67e }, cash_app_handle: { icon: r.createElement(h.default, null), label: u().f85f6760, url: "https://cash.app/" }, ethereum_handle: { icon: r.createElement(f.default, null), label: u().a32a7c06 }, gofundme_handle: { icon: r.createElement(b.default, null), label: u().cc1a3bc4, url: "https://gofundme.com/f/" }, patreon_handle: { icon: r.createElement(g.default, null), label: u().d4d74bb4, url: "https://patreon.com/" }, pay_pal_handle: { icon: r.createElement(y.default, null), label: u().h14fbc52, url: "https://paypal.me/" }, venmo_handle: { icon: r.createElement(_.default, null), label: u().h1198dcc, url: "https://venmo.com/" } };
             function C({ style: e, userId: t }) {
                 const n = (0, T.I0)(),
                     [d, c] = r.useState(!1),
-                    u = (0, T.v9)((e) => M.ZP.select(e, t));
+                    u = (0, T.v9)((e) => P.ZP.select(e, t));
                 if (!u) return null;
                 const { tipjar_settings: m } = u;
                 if (!m) return null;
@@ -837,7 +835,7 @@
                     r.Fragment,
                     null,
                     r.createElement(s.ZP, {
-                        "aria-label": Z,
+                        "aria-label": I,
                         hoverLabel: S,
                         icon: r.createElement(w.default, null),
                         onPress: function () {
@@ -849,7 +847,7 @@
                         ? r.createElement(
                               i.Z,
                               { onMaskClick: f, style: O.sheet, type: "bottom", withMask: !0 },
-                              r.createElement(s.ZP, { "aria-label": P, hoverLabel: I, icon: r.createElement(D.default, null), onPress: f, style: O.close, type: "primaryText" }),
+                              r.createElement(s.ZP, { "aria-label": M, hoverLabel: Z, icon: r.createElement(D.default, null), onPress: f, style: O.close, type: "primaryText" }),
                               r.createElement(a.Z, { style: O.header }, r.createElement(l.ZP, { weight: "bold" }, v), r.createElement(l.ZP, null, `@${u.screen_name}`)),
                               Object.entries(h)
                                   .filter(([e, t]) => t)
@@ -894,19 +892,19 @@
                 D = n(502909),
                 T = n(600823),
                 E = n(298219);
-            const M = (0, D.ZP)({ namespace: "translationsProfiles", fetchOneContext: "FETCH_PROFILE_TRANSLATION", fetchOneEndpoint: (e) => (t, n) => e.withEndpoint(w.Z).fetchProfileTranslation(t, n).then(P), fetchOneParams: (e) => ({ profileUserId: e }) });
-            M.fetchStreamedGrokTranslation =
+            const P = (0, D.ZP)({ namespace: "translationsProfiles", fetchOneContext: "FETCH_PROFILE_TRANSLATION", fetchOneEndpoint: (e) => (t, n) => e.withEndpoint(w.Z).fetchProfileTranslation(t, n).then(M), fetchOneParams: (e) => ({ profileUserId: e }) });
+            P.fetchStreamedGrokTranslation =
                 (e, t, n) =>
                 async (n, r, { api: o }) => {
                     const a = { content_type: "BIO", id: e, dst_lang: t.userLanguage },
                         s = { profileUserId: e, profileTranslation: { entities: { urls: [] }, translation: "", streamedTranslationFetchStatus: p.iF.LOADING, translationSource: "Grok", localizedSourceLanguage: "" } };
-                    n(M.updateOrAddOne(e, (0, y.Z)(s)));
+                    n(P.updateOrAddOne(e, (0, y.Z)(s)));
                     const i = new AbortController();
                     try {
                         const t = await o.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(a), signal: i.signal }, "https://api.x.com");
-                        if (!t.ok) throw ((s.profileTranslation.translationState = u.H.ERROR), (s.profileTranslation.streamedTranslationFetchStatus = p.iF.FAILED), n(M.updateOrAddOne(e, (0, y.Z)(s))), new Error("Failed to translate due to invalid API response."));
+                        if (!t.ok) throw ((s.profileTranslation.translationState = u.H.ERROR), (s.profileTranslation.streamedTranslationFetchStatus = p.iF.FAILED), n(P.updateOrAddOne(e, (0, y.Z)(s))), new Error("Failed to translate due to invalid API response."));
                         const r = t.body?.getReader();
-                        if (!r) throw ((s.profileTranslation.translationState = u.H.ERROR), (s.profileTranslation.streamedTranslationFetchStatus = p.iF.FAILED), n(M.updateOrAddOne(e, (0, y.Z)(s))), new Error("Failed to translate because reader is not present."));
+                        if (!r) throw ((s.profileTranslation.translationState = u.H.ERROR), (s.profileTranslation.streamedTranslationFetchStatus = p.iF.FAILED), n(P.updateOrAddOne(e, (0, y.Z)(s))), new Error("Failed to translate because reader is not present."));
                         const l = new TextDecoder();
                         let d = "",
                             c = "";
@@ -915,7 +913,7 @@
                                 { done: a, value: i } = await (0, E.yE)("PROFILE_TIMEOUT_BETWEEN_CHUNKS", () => r.read(), o, "Timeout between streaming chunks");
                             if (a) {
                                 const t = 0 === d.length;
-                                return (s.profileTranslation.translationState = t ? u.H.ERROR : u.H.SUCCESS), (s.profileTranslation.streamedTranslationFetchStatus = t ? p.iF.FAILED : p.iF.LOADED), (s.profileTranslation.translation = d), void n(M.updateOrAddOne(e, (0, y.Z)(s)));
+                                return (s.profileTranslation.translationState = t ? u.H.ERROR : u.H.SUCCESS), (s.profileTranslation.streamedTranslationFetchStatus = t ? p.iF.FAILED : p.iF.LOADED), (s.profileTranslation.translation = d), void n(P.updateOrAddOne(e, (0, y.Z)(s)));
                             }
                             const h = l.decode(i);
                             if (((c += h), c.includes("\n"))) {
@@ -924,26 +922,26 @@
                                 for (const r of t) {
                                     const t = JSON.parse(r);
                                     if (t.error) throw new Error(t.error);
-                                    t.result && "BIO" === t.result.content_type && (t.result.text && ((d += t.result.text), (s.profileTranslation.translation = d)), t.result.entities && t.result.entities.urls && (s.profileTranslation.entities.urls = [...(s.profileTranslation.entities.urls ?? []), ...t.result.entities.urls])), n(M.updateOrAddOne(e, (0, y.Z)(s)));
+                                    t.result && "BIO" === t.result.content_type && (t.result.text && ((d += t.result.text), (s.profileTranslation.translation = d)), t.result.entities && t.result.entities.urls && (s.profileTranslation.entities.urls = [...(s.profileTranslation.entities.urls ?? []), ...t.result.entities.urls])), n(P.updateOrAddOne(e, (0, y.Z)(s)));
                                 }
                             }
                             await m();
                         };
                         await m(!0);
                     } catch (t) {
-                        (s.profileTranslation.translationState = u.H.ERROR), (s.profileTranslation.streamedTranslationFetchStatus = p.iF.FAILED), n(M.updateOrAddOne(e, (0, y.Z)(s))), i.abort();
+                        (s.profileTranslation.translationState = u.H.ERROR), (s.profileTranslation.streamedTranslationFetchStatus = p.iF.FAILED), n(P.updateOrAddOne(e, (0, y.Z)(s))), i.abort();
                     }
                 };
-            const P = (e) => {
+            const M = (e) => {
                     const t = Array.isArray(e) ? e : [e];
                     return { entities: { translationsProfiles: (0, _.Z)(t, (e) => e.profileUserId) } };
                 },
-                I = T.Z.register(M),
-                Z = (e, t) => I.select(e, t.userId),
-                S = (e, t) => I.selectFetchStatus(e, t.userId),
+                Z = T.Z.register(P),
+                I = (e, t) => Z.select(e, t.userId),
+                S = (e, t) => Z.selectFetchStatus(e, t.userId),
                 v = (0, b.Z)()
-                    .propsFromState(() => ({ translation: Z, translationFetchStatus: S, userLanguage: g.VT }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, f.zr)("TRANSLATE_USER_BIO"), fetchTranslation: I.fetchOneIfNeeded, fetchStreamedGrokTranslation: I.fetchStreamedGrokTranslation }))
+                    .propsFromState(() => ({ translation: I, translationFetchStatus: S, userLanguage: g.VT }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, f.zr)("TRANSLATE_USER_BIO"), fetchTranslation: Z.fetchOneIfNeeded, fetchStreamedGrokTranslation: Z.fetchStreamedGrokTranslation }))
                     .withAnalytics(),
                 k = i().ad7a451e;
             class A extends o.Component {
@@ -1066,7 +1064,7 @@
             var r = n(202784),
                 o = n(483677),
                 a = n(782578),
-                s = n(393058),
+                s = n(401339),
                 i = n(521514);
             const l = (e, t) => `rgba(${e.rgb.red}, ${e.rgb.green}, ${e.rgb.blue}, ${t})`,
                 d = (e) => {
@@ -1213,6 +1211,12 @@
                     }, [t]);
             }
         },
+        961104: (e, t, n) => {
+            function r(e, t) {
+                return e.filter(t);
+            }
+            n.d(t, { b: () => r });
+        },
         806528: (e, t, n) => {
             n.d(t, { Bz: () => d, ZW: () => h, ey: () => u, fw: () => i, iG: () => p, wM: () => l });
             var r = n(499627),
@@ -1256,22 +1260,23 @@
             const r = Object.freeze({ granted: "granted", denied: "denied", prompt: "prompt" }),
                 o = Object.freeze({ PERMISSION_DENIED: 1, POSITION_UNAVAILABLE: 2, TIMEOUT: 3 });
         },
-        882122: (e, t, n) => {
-            n.d(t, { Hq: () => y, c1: () => h, lP: () => b, og: () => f });
-            var r = n(745123);
-            var o = n(499627),
-                a = n(917799),
-                s = n(56519),
-                i = n(919022);
-            const l = "knownFollowers",
-                d = `rweb/${l}`,
-                c = [],
-                u = (0, a.dg)(d, "FETCH_KNOWN_FOLLOWERS"),
-                m = {};
-            o.Z.register({
-                [l]: function (e = m, t) {
+        947650: (e, t, n) => {
+            n.d(t, { Hq: () => _, c1: () => f, lP: () => g, og: () => b });
+            var r = n(745123),
+                o = n(961104),
+                a = n(499627),
+                s = n(917799),
+                i = n(56519),
+                l = n(919022);
+            const d = "knownFollowers",
+                c = `rweb/${d}`,
+                u = [],
+                m = (0, s.dg)(c, "FETCH_KNOWN_FOLLOWERS"),
+                p = {};
+            a.Z.register({
+                [d]: function (e = p, t) {
                     if (!t) return e;
-                    if (t.type === u.SUCCESS) {
+                    if (t.type === m.SUCCESS) {
                         const n = t.payload || {},
                             { total_count: r, users: o } = n && n.result,
                             { user_id: a } = t.meta || {};
@@ -1280,41 +1285,40 @@
                     return e;
                 },
             });
-            const p = (e, t) => e[l][t],
-                h = (e, t) => {
+            const h = (e, t) => e[d][t],
+                f = (e, t) => {
                     if (t) {
-                        const o = g(e, t);
-                        return (n = i.ZP.selectMany(e, o)), (r = (e) => !!e), n.filter(r);
+                        const n = y(e, t);
+                        return (0, o.b)(l.ZP.selectMany(e, n), (e) => !!e);
                     }
-                    var n, r;
-                    return c;
+                    return u;
                 },
-                f = (e, t) => h(e, t).filter(({ name: e, profile_image_url_https: t }) => !!t?.length && !!e?.length),
-                b = (e, t) => {
+                b = (e, t) => f(e, t).filter(({ name: e, profile_image_url_https: t }) => !!t?.length && !!e?.length),
+                g = (e, t) => {
                     let n;
                     if (t) {
-                        const r = p(e, t);
+                        const r = h(e, t);
                         n = r?.knownFollowersCount;
                     }
                     return n;
                 },
-                g = (e, t) => {
-                    const n = p(e, t);
-                    return n?.knownFollowerIds || c;
+                y = (e, t) => {
+                    const n = h(e, t);
+                    return n?.knownFollowerIds || u;
                 },
-                y =
+                _ =
                     (e) =>
                     (t, n, { api: o }) =>
-                        void 0 !== b(n(), e)
+                        void 0 !== g(n(), e)
                             ? Promise.resolve()
                             : t(
                                   (
                                       (e) =>
                                       (t, n, { api: o }) =>
-                                          (0, a._O)(t, { request: o.withEndpoint(r.Z).fetchFollowersYouFollow, params: { user_id: e, count: 3, with_total_count: !0 } })({ actionTypes: u, context: "FETCH_KNOWN_FOLLOWERS", meta: { user_id: e } }, (e) => {
+                                          (0, s._O)(t, { request: o.withEndpoint(r.Z).fetchFollowersYouFollow, params: { user_id: e, count: 3, with_total_count: !0 } })({ actionTypes: m, context: "FETCH_KNOWN_FOLLOWERS", meta: { user_id: e } }, (e) => {
                                               if (e) {
                                                   const { entities: t } = e;
-                                                  return t ? [(0, s.dP)(t)] : void 0;
+                                                  return t ? [(0, i.dP)(t)] : void 0;
                                               }
                                           })
                                   )(e),
@@ -1358,4 +1362,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e019dbda.4acbd9ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e019dbda.7fa33bea.js.map

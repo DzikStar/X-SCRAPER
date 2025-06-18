@@ -5,8 +5,8 @@
         730372: (e, t, n) => {
             n.d(t, { $E: () => m, DL: () => d, OR: () => u });
             var o = n(202784),
-                r = n(576648);
-            let a = !1;
+                a = n(576648);
+            let r = !1;
             function s(e) {
                 if (e instanceof HTMLElement)
                     if ("A" !== e.tagName || e.dataset.copyPreserve) Array.from(e.children).forEach(s);
@@ -38,29 +38,29 @@
                 }
                 if (!n) return [!1, "", ""];
                 l(n, "katex", "none"), l(n, "raw_katex", "inline"), l(n, "raw_katex_block", "block"), l(n, "omit-from-copy", "none");
-                const r = document.createElement("div");
-                (r.style.backgroundColor = "white"), r.appendChild(n), document.body.appendChild(r), s(n), c(n);
-                const a = document.createRange();
-                a.selectNodeContents(n);
+                const a = document.createElement("div");
+                (a.style.backgroundColor = "white"), a.appendChild(n), document.body.appendChild(a), s(n), c(n);
+                const r = document.createRange();
+                r.selectNodeContents(n);
                 const i = window.getSelection(),
                     d = i.rangeCount ? i.getRangeAt(0) : null;
-                i.removeAllRanges(), i.addRange(a);
+                i.removeAllRanges(), i.addRange(r);
                 try {
                     document.execCommand("copy");
                 } catch (e) {
                     t = !1;
                 }
-                const u = h(r).replace(/(\r\n|\n){3,}/g, (e) => e.slice(0, e.indexOf("\n", e.indexOf("\n") + 1)));
-                const m = r.innerHTML;
-                return document.body.removeChild(r), d && (i.removeAllRanges(), i.addRange(d)), [t, m, u];
+                const u = h(a).replace(/(\r\n|\n){3,}/g, (e) => e.slice(0, e.indexOf("\n", e.indexOf("\n") + 1)));
+                const m = a.innerHTML;
+                return document.body.removeChild(a), d && (i.removeAllRanges(), i.addRange(d)), [t, m, u];
             }
             function d(e, t) {
-                a = !0;
+                r = !0;
                 const n = document.createElement("div");
                 n.style.backgroundColor = "white";
                 const o = document.createElement("div");
-                var r;
-                (o.innerHTML = `<pre><code class="language-${t}">${((r = e), r.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"))}</code></pre>`), c(o, !0), n.appendChild(o), document.body.appendChild(n);
+                var a;
+                (o.innerHTML = `<pre><code class="language-${t}">${((a = e), a.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"))}</code></pre>`), c(o, !0), n.appendChild(o), document.body.appendChild(n);
                 const s = document.createRange();
                 s.selectNodeContents(n);
                 const l = window.getSelection(),
@@ -69,12 +69,12 @@
                 try {
                     document.execCommand("copy");
                 } catch (e) {}
-                document.body.removeChild(n), i && (l.removeAllRanges(), l.addRange(i)), (a = !1);
+                document.body.removeChild(n), i && (l.removeAllRanges(), l.addRange(i)), (r = !1);
             }
             function u(e, t) {
-                a = !0;
+                r = !0;
                 const [n] = i(e);
-                !n && t && r.Z.setString(t), (a = !1);
+                !n && t && a.Z.setString(t), (r = !1);
             }
             function m() {
                 o.useEffect(() => {
@@ -83,7 +83,7 @@
                         if (
                             (e.target instanceof HTMLElement && ("INPUT" === e.target.tagName || "TEXTAREA" === e.target.tagName)) ||
                             !t ||
-                            a ||
+                            r ||
                             (function () {
                                 const e = window.getSelection().getRangeAt(0).commonAncestorContainer;
                                 let t = e.nodeType === Node.TEXT_NODE ? e.parentElement : e;
@@ -104,12 +104,12 @@
                             })()
                         )
                             return;
-                        const [n, o, r] = i(null);
+                        const [n, o, a] = i(null);
                         if (n) {
                             e.preventDefault();
                             const t = document.getElementById("react-native-stylesheet"),
                                 n = `<style>${t?.innerText || ""}</style>${o}`;
-                            null != e.clipboardData && e.clipboardData.setData("text/html", n), null != e.clipboardData && e.clipboardData.setData("text/plain", r);
+                            null != e.clipboardData && e.clipboardData.setData("text/html", n), null != e.clipboardData && e.clipboardData.setData("text/plain", a);
                         }
                     };
                     return (
@@ -141,10 +141,10 @@
             }
         },
         991985: (e, t, n) => {
-            n.d(t, { n: () => H });
+            n.d(t, { n: () => P });
             var o = n(202784),
-                r = n(952793),
-                a = n(725516),
+                a = n(952793),
+                r = n(725516),
                 s = n(125363),
                 c = n(654917),
                 l = n(251067),
@@ -184,9 +184,9 @@
                             Object.keys(window.localStorage).forEach((n) => {
                                 if (n !== this.sessionId && n.startsWith(m)) {
                                     const o = window.localStorage.getItem(n);
-                                    let r = {};
+                                    let a = {};
                                     try {
-                                        (r = JSON.parse(o)), t - r.t > 6e4 && ((e += r.s || 0), window.localStorage.removeItem(n));
+                                        (a = JSON.parse(o)), t - a.t > 6e4 && ((e += a.s || 0), window.localStorage.removeItem(n));
                                     } catch (e) {
                                         window.localStorage.removeItem(n);
                                     }
@@ -212,8 +212,8 @@
                 w,
                 v,
                 _ = !1,
-                E = new Date(),
-                k = h(),
+                k = new Date(),
+                E = h(),
                 C = null,
                 S = !0;
             const I = i.ZP.deviceId(),
@@ -241,11 +241,11 @@
                 if (!e) return;
                 const n = new Date(),
                     o = f.recoverMs(),
-                    r = n.getTime() - E.getTime() + o;
-                r > 250 && (e.scribe({ page: T, section: "user-seconds", component: "user-seconds", action: "analytics", data: { duration_ms: r, start_date: E.toISOString(), end_date: n.toISOString(), user_agent: I } }), t || e.flushScribes()), (E = n), f.resetCounter(E);
+                    a = n.getTime() - k.getTime() + o;
+                a > 250 && (e.scribe({ page: T, section: "user-seconds", component: "user-seconds", action: "analytics", data: { duration_ms: a, start_date: k.toISOString(), end_date: n.toISOString(), user_agent: I } }), t || e.flushScribes()), (k = n), f.resetCounter(k);
             }
             function N() {
-                (k = h()), k ? (B(), L()) : y.size && M();
+                (E = h()), E ? (B(), L()) : y.size && z();
             }
             function L() {
                 const e = D();
@@ -270,14 +270,14 @@
                           })(e)
                         : O(e));
             }
-            function M() {
+            function z() {
                 try {
                     if (document.hidden) return;
                 } catch (e) {}
                 clearTimeout(v),
                     _ ||
                         (function () {
-                            (_ = !0), clearTimeout(v), (E = new Date()), f.resetCounter(E), b && (b.style.backgroundColor = "green");
+                            (_ = !0), clearTimeout(v), (k = new Date()), f.resetCounter(k), b && (b.style.backgroundColor = "green");
                             try {
                                 document.addEventListener("visibilitychange", N), window.addEventListener("focus", N), window.addEventListener("blur", N), window.addEventListener("beforeunload", A);
                             } catch (e) {}
@@ -292,25 +292,25 @@
                         })(),
                     ));
             }
-            const z = ["mousemove", "mousedown", "mouseup", "wheel", "touchstart", "touchmove", "touchend", "touchcancel", "keydown", "keyup", "resize"];
-            function H(e, t) {
-                const n = (0, r.hC)("responsive_web_grok_user_seconds_debug"),
-                    l = (0, r.hC)("responsive_web_grok_user_active_seconds_enable"),
-                    i = (0, r.JY)("responsive_web_grok_user_seconds_timeout", g),
-                    d = (0, r.JY)("responsive_web_grok_user_seconds_heartbeat", p),
+            const H = ["mousemove", "mousedown", "mouseup", "wheel", "touchstart", "touchmove", "touchend", "touchcancel", "keydown", "keyup", "resize"];
+            function P(e, t) {
+                const n = (0, a.hC)("responsive_web_grok_user_seconds_debug"),
+                    l = (0, a.hC)("responsive_web_grok_user_active_seconds_enable"),
+                    i = (0, a.JY)("responsive_web_grok_user_seconds_timeout", g),
+                    d = (0, a.JY)("responsive_web_grok_user_seconds_heartbeat", p),
                     u = !l || t,
-                    m = (0, a.z)(),
+                    m = (0, r.z)(),
                     h = o.useRef({ analytics: m, timeoutMs: i, heartbeatMs: d, showStatusDot: n }),
                     [f, w] = o.useState(null),
                     v = o.useCallback((e) => {
-                        k || M();
+                        E || z();
                     }, []),
                     _ = (0, c.uf)(),
-                    E = "idle" !== (0, s.v9)(_.selectStatus) && !u;
+                    k = "idle" !== (0, s.v9)(_.selectStatus) && !u;
                 o.useEffect(() => {
                     let e;
-                    return E && ((e = setInterval(M, 1e3)), M()), () => clearInterval(e);
-                }, [E]);
+                    return k && ((e = setInterval(z, 1e3)), z()), () => clearInterval(e);
+                }, [k]);
                 const C = e ? document : f,
                     x = h.current;
                 o.useEffect(() => {
@@ -321,17 +321,17 @@
                                 const t = new Date().toISOString();
                                 e.analytics.scribe({ page: T, section: "user-seconds", component: "user-seconds", action: "start", data: { start_date: t, end_date: t, user_agent: I } });
                             }
-                            !b && e.showStatusDot && ((b = document.createElement("div")), (b.style.width = "14px"), (b.style.height = "14px"), (b.style.left = "-7px"), (b.style.top = "-7px"), (b.style.borderRadius = "7px"), (b.style.position = "fixed"), (b.style.zIndex = "2000"), document.body.appendChild(b)), y.add(e), M();
+                            !b && e.showStatusDot && ((b = document.createElement("div")), (b.style.width = "14px"), (b.style.height = "14px"), (b.style.left = "-7px"), (b.style.top = "-7px"), (b.style.borderRadius = "7px"), (b.style.position = "fixed"), (b.style.zIndex = "2000"), document.body.appendChild(b)), y.add(e), z();
                         })(x);
                         const e = (function (e, t) {
                             if (!e) return () => {};
                             const n = { passive: !0 };
                             return (
-                                z.forEach((o) => {
+                                H.forEach((o) => {
                                     e.addEventListener(o, t, n);
                                 }),
                                 () => {
-                                    z.forEach((o) => {
+                                    H.forEach((o) => {
                                         e.removeEventListener(o, t, n);
                                     });
                                 }
@@ -348,40 +348,12 @@
                 return o.useCallback((e) => w(e), []);
             }
         },
-        20716: (e, t, n) => {
-            n.d(t, { vN: () => s, wG: () => c });
-            var o = n(202784),
-                r = n(379848);
-            function a(e) {
-                const t = [...e];
-                for (let e = t.length - 1; e > 0; e--) {
-                    const n = Math.floor(Math.random() * (e + 1)),
-                        o = t[e];
-                    (t[e] = t[n]), (t[n] = o);
-                }
-                return t;
-            }
-            function s(e, t) {
-                return o.useMemo(() => (t ? a(e).slice(0, t) : a(e)), [e, t]);
-            }
-            function c(e) {
-                try {
-                    if (e && r[e]) {
-                        const t = r[e];
-                        if (o.isValidElement(o.createElement(t, null))) return t;
-                    }
-                    return null;
-                } catch (e) {
-                    return null;
-                }
-            }
-        },
         528829: (e, t, n) => {
             n.r(t), n.d(t, { default: () => te });
             n(136728);
             var o = n(202784),
-                r = n(565058),
-                a = n(400752),
+                a = n(565058),
+                r = n(400752),
                 s = n(325686),
                 c = n(107267),
                 l = n(731708),
@@ -398,8 +370,8 @@
                 w = n(306677),
                 v = n(952793),
                 _ = n(646403),
-                E = n(536387),
-                k = n(725405),
+                k = n(536387),
+                E = n(725405),
                 C = n(398083),
                 S = n(697403),
                 I = n(819102),
@@ -411,31 +383,31 @@
             const N = p().ca0f5894,
                 L = p().fe731016;
             function A({ feedback: e, sendFeedback: t, universalSearchId: n }) {
-                const r = (0, k.Z)(),
-                    [a, c] = o.useState(e),
+                const a = (0, E.Z)(),
+                    [r, c] = o.useState(e),
                     l = o.useCallback(() => {
-                        c("thumbsUp"), t("Like"), r.scribe({ component: "grok_search_summary_thumbs_up_button", action: "click", data: { grok_details: { universal_search_id: n } } });
-                    }, [r, t, n]),
+                        c("thumbsUp"), t("Like"), a.scribe({ component: "grok_search_summary_thumbs_up_button", action: "click", data: { grok_details: { universal_search_id: n } } });
+                    }, [a, t, n]),
                     i = o.useCallback(() => {
-                        c("thumbsDown"), t("Dislike"), r.scribe({ component: "grok_search_summary_thumbs_down_button", action: "click", data: { grok_details: { universal_search_id: n } } });
-                    }, [r, t, n]);
-                return o.createElement(s.Z, { style: O.container }, "thumbsDown" !== a ? o.createElement(R.Z, { icon: "thumbsUp" === a ? o.createElement(T.default, null) : o.createElement(x.default, null), label: L, onPress: l }) : null, "thumbsUp" !== a ? o.createElement(R.Z, { icon: "thumbsDown" === a ? o.createElement(D.default, null) : o.createElement(Z.default, null), label: N, onPress: i }) : null);
+                        c("thumbsDown"), t("Dislike"), a.scribe({ component: "grok_search_summary_thumbs_down_button", action: "click", data: { grok_details: { universal_search_id: n } } });
+                    }, [a, t, n]);
+                return o.createElement(s.Z, { style: O.container }, "thumbsDown" !== r ? o.createElement(R.Z, { icon: "thumbsUp" === r ? o.createElement(T.default, null) : o.createElement(x.default, null), label: L, onPress: l }) : null, "thumbsUp" !== r ? o.createElement(R.Z, { icon: "thumbsDown" === r ? o.createElement(D.default, null) : o.createElement(Z.default, null), label: N, onPress: i }) : null);
             }
             const O = h.default.create((e) => ({ container: { flexDirection: "row" } }));
             var B = n(194504),
-                M = n(420182),
-                z = n(125363),
-                H = n(100326),
-                P = n(601576),
-                F = n(654917),
+                z = n(420182),
+                H = n(125363),
+                P = n(100326),
+                F = n(601576),
+                M = n(654917),
                 $ = n(979512);
             const W = p().e4a6e006,
                 q = ({ followups: e, query: t, universalSearchId: n }) => {
-                    const r = (0, k.Z)(),
-                        c = (0, z.I0)(),
-                        i = (0, F.uf)(),
+                    const a = (0, E.Z)(),
+                        c = (0, H.I0)(),
+                        i = (0, M.uf)(),
                         { openGrok: u } = (0, $.Z)(),
-                        g = (0, a.Dv)(M.dd),
+                        g = (0, r.Dv)(z.dd),
                         [p, f] = o.useState(!0),
                         [y, w] = o.useState(!0),
                         v = o.useCallback(
@@ -446,11 +418,11 @@
                         ),
                         _ = o.useCallback(
                             async (e) => {
-                                if ((r.scribe({ element: "grok_search_summary_followup", action: "click", data: { grok_details: { universal_search_id: n } } }), !n)) return void c((0, P.fz)({ text: W }));
-                                const o = await (0, H.X)({ analytics: r, api: g, dispatch: c, grokModule: i, fromUniversalSearch: { id: n, query: t } });
-                                o ? u({ text: e, autoSubmit: !0, conversationId: o, source: "search_followup" }) : c((0, P.fz)({ text: W }));
+                                if ((a.scribe({ element: "grok_search_summary_followup", action: "click", data: { grok_details: { universal_search_id: n } } }), !n)) return void c((0, F.fz)({ text: W }));
+                                const o = await (0, P.X)({ analytics: a, api: g, dispatch: c, grokModule: i, fromUniversalSearch: { id: n, query: t } });
+                                o ? u({ text: e, autoSubmit: !0, conversationId: o, source: "search_followup" }) : c((0, F.fz)({ text: W }));
                             },
-                            [n, t, c, r, g, i, u],
+                            [n, t, c, a, g, i, u],
                         );
                     return e && 0 !== e.length
                         ? o.createElement(
@@ -483,9 +455,9 @@
                 U = n.p + "shimmer.3a66790a.svg",
                 j = ({ height: e }) => o.createElement(s.Z, { style: [J.container, { height: e }] }),
                 J = h.default.create((e) => ({ container: { width: "100%", height: "100%", mask: `url(${U})`, maskSize: "100%", maskRepeat: "no-repeat", backgroundColor: e.colors.gray50, backgroundImage: `linear-gradient(to right, ${e.colors.gray50} 0%, ${e.colors.gray200} 20%, ${e.colors.gray50} 40%, ${e.colors.gray50} 100%)`, opacity: 1, animationDuration: "1s", backgroundRepeat: "no-repeat", animationIterationCount: "infinite", animationTimingFunction: "linear", animationKeyframes: { "0%": { backgroundPositionX: "-200px" }, "100%": { backgroundPositionX: "700px" } } } }));
-            var V = n(488816),
-                G = n.n(V);
-            const K = p().a0cf4306,
+            var K = n(488816),
+                V = n.n(K);
+            const G = p().a0cf4306,
                 Y = p().f97f7b46,
                 Q = 175,
                 ee = h.default.create((e) => ({ container: { width: "100%", paddingTop: e.spaces.space8, paddingHorizontal: e.spaces.space16, borderBottomWidth: e.borderWidths.small, borderColor: e.colors.borderColor }, header: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: e.spaces.space4 }, title: { flexDirection: "row", alignItems: "center", gap: e.spaces.space4 }, closeIcon: { color: e.colors.gray500 }, closeButton: { position: "relative", start: e.spaces.space4 }, grokIcon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.text }, heading: { color: e.colors.text, fontWeight: e.fontWeights.bold }, content: { minHeight: Q, paddingBottom: e.spaces.space20 }, summary: { display: "block" }, text: { flex: 1, display: "inline" }, imageContainer: { width: 120, height: 120, borderRadius: e.borderRadii.large, marginStart: e.spaces.space8, marginBottom: e.spaces.space8, overflow: "hidden", float: "end", zIndex: 100 }, image: { width: "100%", height: "100%" }, shimmerContainer: { position: "relative", marginTop: e.spaces.space4, paddingBottom: e.spaces.space16, overflow: "hidden" }, shimmerShadow: { position: "absolute", start: 0, bottom: 0, width: "100%", height: e.spaces.space48 }, footer: { marginTop: e.spaces.space12, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", gap: e.spaces.space8 }, searchFollowups: { flex: 1 } })),
@@ -494,30 +466,30 @@
                         [p, T] = o.useState(!1),
                         x = o.useRef(""),
                         D = (0, c.useHistory)(),
-                        Z = o.useMemo(() => (0, r.cn)({ status: "no_response", text: "", citedWebResults: [], followUpSuggestions: [], fileAttachments: [] }), [n]),
-                        R = (0, k.Z)(),
-                        N = (0, E.xO)(),
+                        Z = o.useMemo(() => (0, a.cn)({ status: "no_response", text: "", citedWebResults: [], followUpSuggestions: [], fileAttachments: [] }), [n]),
+                        R = (0, E.Z)(),
+                        N = (0, k.xO)(),
                         L = (0, v.hC)("responsive_web_grok_search_summary_images_enabled"),
                         O = (0, v.hC)("responsive_web_grok_dev_universal_search_id_enabled"),
-                        [{ citedWebResults: B, fileAttachments: z, followUpSuggestions: H, status: P, text: F, universalSearchId: $ }] = (0, a.KO)(Z),
-                        W = (0, I.u)(F, !0),
+                        [{ citedWebResults: B, fileAttachments: H, followUpSuggestions: P, status: F, text: M, universalSearchId: $ }] = (0, r.KO)(Z),
+                        W = (0, I.u)(M, !0),
                         X = (({ query: e, universalSearchId: t }) => {
-                            const [{ apiClient: n }] = (0, a.KO)(M.dd);
+                            const [{ apiClient: n }] = (0, r.KO)(z.dd);
                             return o.useCallback(
                                 async (o) => {
-                                    t && (await n.graphQL(G(), { query: e, universalSearchId: t, basicFeedback: { feedback_type: o } }).then((e) => e));
+                                    t && (await n.graphQL(V(), { query: e, universalSearchId: t, basicFeedback: { feedback_type: o } }).then((e) => e));
                                 },
                                 [n, e, t],
                             );
                         })({ query: n, universalSearchId: $ }),
-                        U = z.filter((e) => y.v5.some((t) => e.mimeType))[0];
+                        U = H.filter((e) => y.v5.some((t) => e.mimeType))[0];
                     o.useEffect(() => {
                         t || p || n === x.current || ((x.current = n), (0, _.E)({ analytics: R, responseAtom: Z, jotaiStore: N, query: n }));
-                    }, [n, R, Z, F, t, p, N]);
+                    }, [n, R, Z, M, t, p, N]);
                     const J = o.useCallback(() => {
                             R.scribe({ element: "grok_search_summary_show_more_button", action: "click", data: { grok_details: { universal_search_id: $ } } });
                         }, [R, $]),
-                        V = o.useCallback(() => {
+                        K = o.useCallback(() => {
                             D.push({ pathname: "/i/grok/media", state: { file: U } });
                         }, [D, U]),
                         te = o.useCallback(() => {
@@ -526,9 +498,9 @@
                         ne = o.useCallback(() => {
                             R.scribe({ element: "grok_search_summary_close_button", action: "click", data: { grok_details: { universal_search_id: $ } } }), T(!0), X("Close");
                         }, [R, T, $, X]);
-                    return "no_response" === P || "error" === P || t || p ? null : o.createElement(s.Z, { style: ee.container }, o.createElement(w.D, { id: "followups_search", onFullyVisible: te, position: "bottom", testID: "followups_search" }), o.createElement(s.Z, { style: ee.header }, o.createElement(s.Z, { style: ee.title }, o.createElement(b.x1, { style: ee.grokIcon }), o.createElement(l.ZP, { style: ee.heading }, K)), o.createElement(i.ZP, { hoverLabel: { label: Y }, icon: o.createElement(f.default, { style: ee.closeIcon }), onClick: ne, size: "medium", style: ee.closeButton, type: "primaryText" })), o.createElement(S.Z, { disableShowMore: !W, foldedHeight: Q * g, heightBreakpoint: Q * g, onOpen: J }, W ? o.createElement(s.Z, { style: [ee.content, { minHeight: Q * g }] }, O ? o.createElement(l.ZP, { color: "gray500" }, "[Debug] Search id: ", $) : null, o.createElement(s.Z, { style: ee.summary }, L && U?.url ? o.createElement(d.Z, { onClick: V, style: ee.imageContainer }, o.createElement(u.Z, { source: { uri: U.url }, style: ee.image })) : null, o.createElement(C.Z, { citations: B, disableLinks: !1, isAnimated: "streaming" === P, markdownText: W, style: ee.text })), o.createElement(s.Z, { style: ee.footer }, "completed" === P ? o.createElement(A, { sendFeedback: X, universalSearchId: $ }) : null, o.createElement(s.Z, { style: ee.searchFollowups }, o.createElement(q, { followups: H, query: n, universalSearchId: $ })))) : o.createElement(s.Z, { style: [ee.shimmerContainer, { height: Q * g }] }, o.createElement(j, { height: Q * g }), o.createElement(m.Z, { colors: [h.default.theme.colors.transparent, h.default.theme.colors.cellBackground], style: ee.shimmerShadow }))));
+                    return "no_response" === F || "error" === F || t || p ? null : o.createElement(s.Z, { style: ee.container }, o.createElement(w.D, { id: "followups_search", onFullyVisible: te, position: "bottom", testID: "followups_search" }), o.createElement(s.Z, { style: ee.header }, o.createElement(s.Z, { style: ee.title }, o.createElement(b.x1, { style: ee.grokIcon }), o.createElement(l.ZP, { style: ee.heading }, G)), o.createElement(i.ZP, { hoverLabel: { label: Y }, icon: o.createElement(f.default, { style: ee.closeIcon }), onClick: ne, size: "medium", style: ee.closeButton, type: "primaryText" })), o.createElement(S.Z, { disableShowMore: !W, foldedHeight: Q * g, heightBreakpoint: Q * g, onOpen: J }, W ? o.createElement(s.Z, { style: [ee.content, { minHeight: Q * g }] }, O ? o.createElement(l.ZP, { color: "gray500" }, "[Debug] Search id: ", $) : null, o.createElement(s.Z, { style: ee.summary }, L && U?.url ? o.createElement(d.Z, { onClick: K, style: ee.imageContainer }, o.createElement(u.Z, { source: { uri: U.url }, style: ee.image })) : null, o.createElement(C.Z, { citations: B, disableLinks: !1, isAnimated: "streaming" === F, markdownText: W, style: ee.text })), o.createElement(s.Z, { style: ee.footer }, "completed" === F ? o.createElement(A, { sendFeedback: X, universalSearchId: $ }) : null, o.createElement(s.Z, { style: ee.searchFollowups }, o.createElement(q, { followups: P, query: n, universalSearchId: $ })))) : o.createElement(s.Z, { style: [ee.shimmerContainer, { height: Q * g }] }, o.createElement(j, { height: Q * g }), o.createElement(m.Z, { colors: [h.default.theme.colors.transparent, h.default.theme.colors.cellBackground], style: ee.shimmerShadow }))));
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-3c20ad5c.7ac8e08a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-3c20ad5c.4c91c2ba.js.map

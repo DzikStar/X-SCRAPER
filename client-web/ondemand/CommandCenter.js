@@ -49,12 +49,12 @@
                 I = t(698891),
                 D = t(459679),
                 M = t(420182),
-                E = t(390387),
-                Z = t(76920),
-                T = t(688715),
-                C = t(348256),
-                x = t(956272),
-                S = t(684869),
+                T = t(390387),
+                C = t(76920),
+                E = t(688715),
+                Z = t(348256),
+                S = t(956272),
+                x = t(684869),
                 R = t(717160),
                 z = t(707570),
                 L = t(1753),
@@ -103,12 +103,12 @@
                 Ie = y().b007440a,
                 De = y().c818c60c,
                 Me = y().ha8209bc,
-                Ee = y().a2f81050,
-                Ze = y().h5860a68,
-                Te = y().eb75875e,
-                Ce = y().fcf3e54c,
-                xe = y().ded416b0,
-                Se = y().j0e2cfa8,
+                Te = y().a2f81050,
+                Ce = y().h5860a68,
+                Ee = y().eb75875e,
+                Ze = y().fcf3e54c,
+                Se = y().ded416b0,
+                xe = y().j0e2cfa8,
                 Re = (0, r.cn)((e) => {
                     const n = e(M.qc).getState(),
                         t = le.ZP.selectViewerUser(n)?.screen_name,
@@ -116,12 +116,12 @@
                         a = l.length - i.length,
                         r = e(M.f0),
                         o = e(M.TD),
-                        s = { icon: C.default, label: Me, link: "/home", id: "home" },
-                        d = { icon: x.default, label: Ce, link: "/explore", id: "explore" },
-                        c = r.isTrue("subscriptions_inapp_grok_upsell_enabled") || o.isTrueAndEnabled("subscriptions_inapp_grok") ? { icon: ne.x1, label: Ze, link: "/i/grok", id: "grok" } : void 0,
-                        u = { icon: S.default, label: Te, link: "/notifications", id: "notifications" },
-                        m = { icon: R.default, label: Ee, link: "/messages", id: "messages" },
-                        f = r.isTrue("voice_rooms_discovery_page_enabled") ? { icon: z.default, label: xe, link: "/i/spaces", id: "spaces" } : void 0,
+                        s = { icon: Z.default, label: Me, link: "/home", id: "home" },
+                        d = { icon: S.default, label: Ze, link: "/explore", id: "explore" },
+                        c = r.isTrue("subscriptions_inapp_grok_upsell_enabled") || o.isTrueAndEnabled("subscriptions_inapp_grok") ? { icon: ne.x1, label: Ce, link: "/i/grok", id: "grok" } : void 0,
+                        u = { icon: x.default, label: Ee, link: "/notifications", id: "notifications" },
+                        m = { icon: R.default, label: Te, link: "/messages", id: "messages" },
+                        f = r.isTrue("voice_rooms_discovery_page_enabled") ? { icon: z.default, label: Se, link: "/i/spaces", id: "spaces" } : void 0,
                         p = { icon: L.default, label: ye, link: "/compose/articles", id: "article_composer" },
                         b = { icon: F.default, label: re, link: "/i/communitynotes", id: "birdwatch" },
                         _ = { icon: K.default, label: oe, link: "/i/bookmarks", id: "bookmarks_overflow_item" },
@@ -132,12 +132,12 @@
                         w = { icon: j.default, label: "Money", link: "/i/xpayments", id: "payments_overflow_item" },
                         y = { icon: q.default, label: _e, link: "/i/coins", id: "twitter_coins" },
                         D = { icon: B.default, label: ke, link: "/i/premium", id: "premium_hub" },
-                        Z = { label: ue, link: "/logout", icon: O.default, id: "logout_overflow_item" },
-                        Re = { icon: P.default, label: be, link: (0, T.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-ads-rweb"), id: "twitter_ads_item" },
+                        C = { label: ue, link: "/logout", icon: O.default, id: "logout_overflow_item" },
+                        Re = { icon: P.default, label: be, link: (0, E.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-ads-rweb"), id: "twitter_ads_item" },
                         ze = r.isTrue("subscriptions_upsells_monetization_redesign_enabled"),
                         Le = { icon: Q.default, label: me, link: ze ? "/i/monetization" : "/settings/monetization", id: "monetization" },
                         Fe = { icon: I.default, label: pe, link: "/settings", id: "settings_overflow_item" },
-                        Ke = { label: r.isTrue("subscriptions_upsells_vo_nav_decoration_enabled") ? Se : ve, id: "verified_organization_signup_item", link: "/i/verified-orgs-signup", icon: W.default },
+                        Ke = { label: r.isTrue("subscriptions_upsells_vo_nav_decoration_enabled") ? xe : ve, id: "verified_organization_signup_item", link: "/i/verified-orgs-signup", icon: W.default },
                         Ae = { label: ve, id: "verified_organization_dashboard_item", link: "/i/verified", icon: W.default },
                         Ne = { label: ge, id: "create_space_item", link: "/i/spaces/start", icon: z.default },
                         $e = t ? { label: he, id: "communities_item", link: `/${t}/communities`, icon: G.default } : void 0,
@@ -153,7 +153,7 @@
                         We = r.isTrue("blue_business_vo_nav_for_legacy_verified"),
                         Ge = o.isVerifiedOrg(),
                         Xe = r.isTrue("tweet_awards_web_coin_purchase_enabled"),
-                        Ye = (0, E.Lz)(n),
+                        Ye = (0, T.Lz)(n),
                         Je = r.isTrue("responsive_web_birdwatch_note_writing_enabled") && !Ye,
                         en = i.length,
                         nn = !Ve && r.isTrue("rweb_analytics_nav_item_enabled"),
@@ -193,7 +193,7 @@
                         Ue ? je : void 0,
                         rn ? Ne : void 0,
                         Fe,
-                        Z,
+                        C,
                         on ? $e : void 0,
                         void 0,
                         sn ? v : void 0,
@@ -242,11 +242,11 @@
                 }),
                 He = (0, r.cn)((e) => {
                     const n = e(M.qc).getState(),
-                        t = (0, E.Lz)(n),
-                        i = (0, E.vd)(n),
+                        t = (0, T.Lz)(n),
+                        i = (0, T.vd)(n),
                         l = e(M.f0),
                         a = e(M.TD);
-                    return (0, Z.VA)({ isDelegate: t, delegateRole: i, featureSwitches: l, userClaims: a });
+                    return (0, C.VA)({ isDelegate: t, delegateRole: i, featureSwitches: l, userClaims: a });
                 });
             const Ue = (0, g.K9)((e) =>
                     Promise.all([t.e("modules.audio-6107ac1a"), t.e("modules.audio-b953418a"), t.e("modules.audio-7c51e6a7"), t.e("modules.audio-04db59e9"), t.e("modules.audio-76583d6c"), t.e("modules.audio-b7a8a5fb"), t.e("modules.audio-51f6e793"), t.e("modules.audio-e019dbda"), t.e("modules.audio-262c94d4"), t.e("modules.audio-c6fe4ea4"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ab949d70"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"), t.e("ondemand.devItems")])
@@ -515,19 +515,6 @@
             o.metadata = { width: 24, height: 24 };
             const s = o;
         },
-        98440: (e, n, t) => {
-            t.r(n), t.d(n, { default: () => s });
-            var i = t(202784),
-                l = t(890601),
-                a = t(783427),
-                r = t(347101);
-            const o = (e = {}) => {
-                const { direction: n } = (0, a.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: n });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const s = o;
-        },
         662678: (e, n, t) => {
             t.d(n, { G: () => l, Z: () => i });
             t(136728);
@@ -546,4 +533,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.CommandCenter.77c38c9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.CommandCenter.07ae6a6a.js.map

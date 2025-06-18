@@ -68,7 +68,7 @@
                 m = o;
         },
         727384: (e, t, n) => {
-            n.d(t, { BC: () => Ae, BR: () => Se, Bj: () => Dt, Bl: () => Oe, DK: () => Ve, DO: () => mt, Dc: () => Q, EQ: () => Ke, FW: () => yt, Fs: () => it, GU: () => pe, Gl: () => Be, Gs: () => ot, H_: () => nt, Ix: () => Tt, J$: () => at, M9: () => De, MO: () => ft, Mw: () => Je, NG: () => _e, Oc: () => rt, Ou: () => qe, Q1: () => be, QE: () => Ze, Qu: () => bt, Se: () => tt, So: () => dt, T3: () => Ne, T7: () => kt, Tp: () => ke, Ts: () => Ge, UM: () => Ie, UV: () => Ct, V9: () => Me, XT: () => Ue, _T: () => ze, aY: () => ct, ab: () => ut, bI: () => st, dN: () => Y, fq: () => St, gh: () => ht, gx: () => X, i7: () => Pe, iv: () => lt, jm: () => pt, lD: () => de, lw: () => ne, nV: () => J, p2: () => Z, p6: () => xe, pQ: () => ee, qK: () => te, qQ: () => Ye, qU: () => Fe, qc: () => Rt, uG: () => wt, uN: () => Qe, ve: () => Xe, vw: () => G, wg: () => Ce, wu: () => xt, xe: () => $e, y4: () => At, yH: () => gt, zK: () => Ee, zx: () => ae });
+            n.d(t, { BC: () => Ae, BR: () => Se, Bj: () => Dt, Bl: () => Oe, DK: () => Ve, DO: () => mt, Dc: () => Q, EQ: () => Ke, FW: () => yt, Fs: () => it, GU: () => pe, Gl: () => je, Gs: () => ot, H_: () => nt, Ix: () => Tt, J$: () => at, M9: () => De, MO: () => ft, Mw: () => Je, NG: () => _e, Oc: () => rt, Ou: () => qe, Q1: () => be, QE: () => Ze, Qu: () => bt, Se: () => tt, So: () => dt, T3: () => Ne, T7: () => kt, Tp: () => ke, Ts: () => Ge, UM: () => Ie, UV: () => Ct, V9: () => Me, XT: () => Ue, _T: () => ze, aY: () => ct, ab: () => ut, bI: () => st, dN: () => Y, fq: () => St, gh: () => ht, gx: () => X, i7: () => Pe, iv: () => lt, jm: () => pt, lD: () => de, lw: () => ne, nV: () => J, p2: () => Z, p6: () => xe, pQ: () => ee, qK: () => te, qQ: () => Ye, qU: () => Fe, qc: () => Rt, uG: () => wt, uN: () => Qe, ve: () => Xe, vw: () => G, wg: () => Ce, wu: () => xt, xe: () => $e, y4: () => At, yH: () => gt, zK: () => Ee, zx: () => ae });
             n(543673), n(240753), n(128399), n(136728);
             var a = n(617374),
                 r = n.n(a),
@@ -103,8 +103,8 @@
                 U = n(215285),
                 O = n(258074),
                 z = n(97882),
-                B = n(514639),
-                j = n(441484),
+                j = n(514639),
+                B = n(441484),
                 W = n(43429);
             const q = "Interest Payout",
                 M = "Deposit",
@@ -188,7 +188,7 @@
                         return;
                 }
             }
-            const ae = ({ referenceTransactionId: e, transactionType: t }) => ([v.x.Refund, v.x.Reverse].includes(t) && e ? `${B.bR}/${e}` : null);
+            const ae = ({ referenceTransactionId: e, transactionType: t }) => ([v.x.Refund, v.x.Reverse].includes(t) && e ? `${j.bR}/${e}` : null);
             function re({ productCode: e, transactionType: t }) {
                 if (e === x.O.Interest) return q;
                 const n = e === x.O.Banking;
@@ -212,7 +212,7 @@
                 }
             }
             const se = Object.freeze({ [T.g.Cancelled]: "Cancelled", [T.g.Failed]: "Failed", [T.g.Expired]: "Expired", [T.g.Pending]: "Pending", [T.g.Hold]: "Pending", [T.g.AuthorizationOpen]: "Pending", [T.g.AwaitingUnrecognizedConfirmation]: "Awaiting approval", [T.g.PendingReview]: "Under review", [T.g.PendingRecipientAction]: "Pending", [T.g.PendingRecipientOnboarding]: "Pending", [T.g.AwaitingRequestAcceptance]: "Pending", [T.g.PendingRecipientAcceptance]: "Pending", [T.g.PinVerificationRequired]: "Pending", [T.g.RequestVerificationRequired]: "Pending", [T.g.VerificationRequired]: "Pending", [T.g.RejectedByRecipient]: "Rejected", [T.g.RequestRejected]: "Rejected", [T.g.Settled]: "Completed", [T.g.SoftSettled]: "Completed", [T.g.AuthorizationClosed]: "Completed", [T.g.PendingFundingTransactionSettlement]: "Pending", [T.g.CreditedAwaitingSettlement]: "Pending" }),
-                ie = Object.freeze({ [D.P.RejectedLimitsExceeded]: "Declined due to exceeded limits", [D.P.InReview]: "Under review", [D.P.RejectedByUnsupportedRegion]: "Unsupported region", [D.P.RejectedNotSufficientFunds]: "Declined due to insufficient funds", [D.P.RejectedCardPaymentsDisabled]: "Flagged as suspicious", [D.P.UnrecognizedActivityConfirmed]: "Declined", [D.P.UnrecognizedActivityRejected]: "Flagged as suspicious" }),
+                ie = Object.freeze({ [D.P.RejectedLimitsExceeded]: "Declined due to exceeded limits", [D.P.InReview]: "Under review", [D.P.RejectedByUnsupportedRegion]: "Unsupported region", [D.P.RejectedNotSufficientFunds]: "Declined due to insufficient funds", [D.P.RejectedCardPaymentsDisabled]: "Flagged as suspicious", [D.P.UnrecognizedActivityConfirmed]: "Declined", [D.P.UnrecognizedActivityRejected]: "Flagged as suspicious", [D.P.RejectedCardInactive]: "Declined due to inactive card" }),
                 oe = Object.freeze({ [T.g.PendingRecipientAcceptance]: F, [T.g.PendingRecipientOnboarding]: F, [T.g.PendingRecipientAction]: F }),
                 ce = Object.freeze({ [T.g.AwaitingRequestAcceptance]: F, [T.g.PendingRequestAcceptance]: F, [T.g.RequestVerificationRequired]: F });
             function de({ isViewerSender: e, reasonCode: t, status: n }) {
@@ -304,10 +304,10 @@
             function ze({ status: e }) {
                 return [T.g.Settled, T.g.SoftSettled, T.g.AuthorizationClosed].includes(e);
             }
-            function Be({ status: e }) {
+            function je({ status: e }) {
                 return !ze({ status: e });
             }
-            const je = (e) => (e ? `data:image/png;base64,${e}` : ""),
+            const Be = (e) => (e ? `data:image/png;base64,${e}` : ""),
                 We = Object.freeze({ [f.U.AmericanExpress]: "https://abs.twimg.com/responsive-web/client-web/payment-method-amex.b2cd046a.svg", [f.U.Mastercard]: "https://abs.twimg.com/responsive-web/client-web/payment-method-mastercard.f126316a.svg", [f.U.Visa]: "https://abs.twimg.com/responsive-web/client-web/payment-method-visa.c768170a.svg" }),
                 qe = (e) => {
                     if (!e) return null;
@@ -316,7 +316,7 @@
                         { account_number_mask: r, bank_account_type: s, bank_name: i, card_brand: o, card_number_mask: c, card_type: d, issued_card_type: p, logo: l, status: u } = a,
                         g = o ? fe[o] : "",
                         f = o ? We[o] : "";
-                    return s ? { accountName: { name: r ? `${le[s]} (...${r})` : `${le[s]}` }, avatar: { shape: "square", uri: je(l) }, id: n, accountType: i, type: W.dX.bank, label: ye({ status: u }) } : d && c ? { accountName: { name: `${ge[d]} (...${c})` }, avatar: { shape: "square", uri: f }, id: n, accountType: i, brandName: g, type: W.dX.card, label: ye({ status: u }), issuedCardAccountName: !p || (p !== w.W.IssuedCardTypePhysical && p !== w.W.IssuedCardTypeVirtual) ? void 0 : `${ue[p]} (...${c})` } : null;
+                    return s ? { accountName: { name: r ? `${le[s]} (...${r})` : `${le[s]}` }, avatar: { shape: "square", uri: Be(l) }, id: n, accountType: i, status: u, type: W.dX.bank, label: ye({ status: u }) } : d && c ? { accountName: { name: `${ge[d]} (...${c})` }, avatar: { shape: "square", uri: f }, id: n, accountType: i, brandName: g, type: W.dX.card, status: u, label: ye({ status: u }), issuedCardAccountName: !p || (p !== w.W.IssuedCardTypePhysical && p !== w.W.IssuedCardTypeVirtual) ? void 0 : `${ue[p]} (...${c})`, issuedCardType: p } : null;
                 },
                 Me = (e) => {
                     const t = e?.core?.supported_transfer_methods,
@@ -427,7 +427,7 @@
                 yt = ({ roles: e }) => {
                     const t = e?.includes(h.N.PendingSelfieVerification) || e?.includes(h.N.KycDocumentsVerified),
                         n = e?.includes(h.N.KycPendingDocumentUpload) || e?.includes(h.N.KycVerified);
-                    return t ? B.AU.selfie.verifyIdentityPath : n ? B.AU.tier3.verifyIdentityPath : B.AU.tier2.verifyIdentityPath;
+                    return t ? j.AU.selfie.verifyIdentityPath : n ? j.AU.tier3.verifyIdentityPath : j.AU.tier2.verifyIdentityPath;
                 },
                 ht = () => {
                     if (u.ZP.isTwitterApp()) return window?.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
@@ -444,13 +444,13 @@
                     return parseFloat(e) <= Y({ amount: n });
                 },
                 bt = (e) => new Date(e.year, e.month - 1, e.day),
-                xt = ({ challengeId: e, status: t }) => (Pe({ status: t }) && e ? B.vw : null),
+                xt = ({ challengeId: e, status: t }) => (Pe({ status: t }) && e ? j.vw : null),
                 Rt = ({ challengeInitiator: e, closePath: t, environment: n, history: a }) => {
                     switch ((at(n), e)) {
-                        case B.kW.auth:
-                            j.Z.closeChallenge();
+                        case j.kW.auth:
+                            B.Z.closeChallenge();
                             break;
-                        case B.kW.preference:
+                        case j.kW.preference:
                             ((e) => {
                                 i()(e, (e) => {
                                     rt(e);
@@ -459,8 +459,8 @@
                     }
                     t ? a.replace(t) : a.goBack();
                 },
-                Pt = { [B.kW.forgotPin]: B.jR, [B.kW.changeCardPin]: B.SR },
-                Tt = ({ challengeInitiator: e }) => (e ? Pt[e] : void 0) ?? B.vw,
+                Pt = { [j.kW.forgotPin]: j.jR, [j.kW.changeCardPin]: j.SR },
+                Tt = ({ challengeInitiator: e }) => (e ? Pt[e] : void 0) ?? j.vw,
                 vt = (e) => parseInt(e, 10) / 100,
                 Dt = ({ apy: e }) => `${vt(e).toFixed(2)}% APY`,
                 St = ({ rate: e }) => `${vt(e)}% Everywhere`,
@@ -476,4 +476,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.f03cd21a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.82e33e1a.js.map

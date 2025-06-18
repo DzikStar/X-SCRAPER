@@ -1280,26 +1280,32 @@
                 a("fc7db594", "[[291861]] Profile Summary"),
                 a("c3f04d9c", "[[285092]] Thinking"),
                 a("cbdddb0a", "[[210777]] Completed"),
-                a("e98cc293", function (e) {
-                    return "[[294860]] Searching for " + e.query;
+                a("ie2bbeed", function (e) {
+                    return '[[296464]] Searching for "' + e.query + '"';
                 }),
                 a("b0d1e205", function (e) {
                     return '[[293056]] Searching for **"' + e.query + '"**';
                 }),
-                a("i2e0f4d7", function (e) {
-                    return "[[294858]] Browsing " + e.url + " for " + e.query;
+                a("bf970edd", function (e) {
+                    return '[[296469]] Searching 𝕏 for "' + e.query + '"';
+                }),
+                a("g008d475", function (e) {
+                    return "[[296453]] Browsing " + e.url;
+                }),
+                a("c91e3971", function (e) {
+                    return "[[296454]] Browsing " + e.url + ' for "' + e.query + '"';
                 }),
                 a("acb9b845", function (e) {
                     return "[[293051]] Browsing " + e.url + ' for **"' + e.query + '"**';
                 }),
-                a("ef261d8d", function (e) {
-                    return "[[293055]] Searching posts by @" + e.username;
+                a("j9006405", function (e) {
+                    return "[[296467]] Searching 𝕏 posts by @" + e.username;
                 }),
-                a("f7d9cfb9", function (e) {
-                    return "[[294859]] Searching posts by @" + e.username + " for " + e.query;
+                a("a2dd07e5", function (e) {
+                    return "[[296466]] Searching 𝕏 posts by @" + e.username + ' for "' + e.query + '"';
                 }),
-                a("bec7eb11", function (e) {
-                    return "[[293174]] Searching posts by @" + e.username + ' for **"' + e.query + '"**';
+                a("e99fb7a3", function (e) {
+                    return "[[296471]] Searching 𝕏 posts by @" + e.username + ' for **"' + e.query + '"**';
                 }),
                 a("ead81122", "[[294249]] Something went wrong, please refresh to reconnect or try again."),
                 a("f808a13a", "[[285363]] Rate limit exceeded. Please wait a few moments then try again."),
@@ -1311,8 +1317,8 @@
                 a("j77292b7", function (e) {
                     return "[[293197]] Please only select up to " + e.count + " file" + n(e.count, "", "s");
                 }),
-                a("d6b533dc", "Rate this translation:"),
-                a("j2f9ab6e", "Thank you for your feedback!"),
+                a("d6b533dc", "[[296440]] Rate this translation:"),
+                a("j2f9ab6e", "[[296441]] Thank you for your feedback!"),
                 a("d56779a2", "[[286300]] easy to understand"),
                 a("b6fe8a56", "[[286301]] confusing or unclear"),
                 a("i73a7d48", "[[196575]] Translated by Google"),
@@ -1343,7 +1349,7 @@
                     return "Translated from " + e.originLanguage + " by";
                 }),
                 a("b7cb4fab", "Translated by"),
-                a("e0bffbf8", "About automatic translation"),
+                a("e0bffbf8", "[[296322]] About automatic translation"),
                 a("e839db3a", "[[192595]] Dismiss"),
                 a("a15585b4", "Language Settings"),
                 a("d4c339b9", function (e) {
@@ -1915,10 +1921,10 @@
                 a("jcd5ee8a", "[[287353]] Edit block"),
                 a("a8f09fb8", "[[287352]] Delete block"),
                 a("i89195ea", "[[287259]] Divider"),
-                a("da8ac57c", "[[284900]] Edit Caption"),
-                a("a8fdd09c", "[[284919]] Publish Article"),
-                a("d8047cc8", "[[221087]] Publish");
-            a("ff7ddca2", "[[284961]] Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                a("da8ac57c", "[[284900]] Edit Caption");
+            a("a8fdd09c", "[[284919]] Publish Article"),
+                a("d8047cc8", "[[221087]] Publish"),
+                a("ff7ddca2", "[[284961]] Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
                 a("ef34d7be", "[[284897]] Audience and reply controls are not editable after an article has been published."),
                 a("e52d4998", "[[284896]] Choose your audience"),
                 a("d7985b24", "[[288078]] Choose who can reply to this Article"),
@@ -2971,10 +2977,10 @@
                 a("bc6efc72", "[[155927]] Privacy Policy"),
                 a("h3161192", "[[225627]] Cookie Policy"),
                 a("a7de64de", "[[180893]] Ads info"),
-                a("jb0a4c36", "[[180896]] Blog"),
-                a("ce6d095a", "[[225663]] Careers"),
-                a("e0adec82", "[[225676]] Brand Resources");
-            a("df1b7550", "[[180908]] Marketing"),
+                a("jb0a4c36", "[[180896]] Blog");
+            a("ce6d095a", "[[225663]] Careers"),
+                a("e0adec82", "[[225676]] Brand Resources"),
+                a("df1b7550", "[[180908]] Marketing"),
                 a("he258678", "[[280696]] X for Business"),
                 a("c6f58084", "[[180900]] Developers"),
                 a("d83f18d2", "[[180901]] Directory"),
@@ -3883,10 +3889,10 @@
                 a("c371fb9a", "[[229020]] End"),
                 a("c0ce822e", "[[292469]] Microphone settings"),
                 a("a2bf8b8a", "[[276611]] Switch to listening"),
-                a("caa8d928", "[[292248]] Toggle noise suppression"),
-                a("b5d88f0c", "[[283830]] Employees only"),
-                a("c855ab8e", "[[273092]] Subscribers only");
-            a("ddeb0a3c", "[[271043]] Here’s the Community. Like the people? Take a look."),
+                a("caa8d928", "[[292248]] Toggle noise suppression");
+            a("b5d88f0c", "[[283830]] Employees only"),
+                a("c855ab8e", "[[273092]] Subscribers only"),
+                a("ddeb0a3c", "[[271043]] Here’s the Community. Like the people? Take a look."),
                 a("e111f531", function (e) {
                     return "[[265990]] " + e.count + " tuned in";
                 }),
@@ -4153,36 +4159,39 @@
                 }),
                 a("ed93de0c", "[[292376]] Analyzing Post"),
                 a("d1d92e40", "[[295500]] More details"),
+                a("fbc79f6a", "[[287367]] Chat history"),
                 a("a6e89af8", "[[220355]] Open conversation"),
                 a("ica55d24", "[[289966]] New Chat"),
-                a("f794af9a", "[[285085]] Fun mode"),
-                a("eccf9fea", "[[285086]] Regular mode"),
+                a("b61ad410", "[[289621]] History"),
+                a("b3de2628", "[[287385]] No chat history available"),
+                a("acfbfb28", "[[289751]] Your future conversations will appear here."),
+                a("g02dacc0", "[[214927]] Today"),
+                a("c6e845c0", "[[287529]] Yesterday"),
+                a("i1147548", "[[289967]] Search Grok History"),
+                a("ab437026", "[[289964]] No conversations found"),
+                a("e12569ec", "[[289968]] Try to search for something else."),
+                a("hb52cc4a", "[[233832]] Please try again later."),
+                a("d4eb0e26", "[[228149]] Rename"),
+                a("c64975ea", "[[293020]] You haven’t favorited any conversations yet"),
+                a("a3e3db6e", "[[293018]] Click the star to save chats you come back to often"),
+                a("f4ae77ac", "[[289965]] No image history available"),
+                a("d57d337e", "[[289969]] Your generated images will appear here."),
+                a("j826e722", "[[289278]] Save Image"),
+                a("a9325f10", "[[289274]] Copy Image"),
+                a("g0b12442", "[[289275]] Failed to copy the image"),
+                a("edd0c172", "[[289277]] Post Image"),
+                a("d1d3a41a", "[[292496]] Edit Image"),
+                a("c26b9b9c", "[[292956]] File"),
+                a("g10600b0", "[[293672]] Menu"),
                 a("g7b1c574", "[[293474]] Reset to default"),
                 a("f388a7ec", "[[293047]] DeepSearch"),
                 a("ab1eb384", "[[293500]] Select your desired search mode"),
                 a("i330e54c", "[[293662]] Advanced search and reasoning"),
                 a("fdcce108", "[[294824]] DeeperSearch"),
                 a("ac64b674", "[[293663]] Extended search, more reasoning"),
-                a("j22655f2", "[[288852]] Ask anything"),
-                a("h0681e3e", "[[291529]] Talk to Grok, our AI assistant"),
-                a("d593fd78", "[[291527]] It can answer your questions, search X, and generate images"),
-                a("d0205a24", "[[291524]] Check the Facts"),
-                a("ed4177c4", "[[291526]] Grok may confidently provide factually incorrect information, mis-summarize, or miss some content. You should independently verify any information."),
-                a("c0ff98f8", "[[291522]] AI Training and Personalization"),
-                a("f1a8218a", "[[291531]] We may utilize your X data, as well as your interactions, inputs and results with Grok for model training, fine-tuning and to personalize your Grok experience. You can opt-out using your X settings. To learn more, visit our Help Center."),
-                a("bcbf5b6e", "[[221093]] Sharing"),
-                a("j7b5c844", "[[291532]] You are responsible for the conversations you share publicly. Avoid sharing sensitive and confidential information about yourself or others in your conversations with Grok (see our Help Center)."),
-                a("c9f7c196", "[[246442]] Help center"),
+                a("a2697040", "[[292541]] Describe what to change in image"),
                 a("c65f7308", "[[292909]] Servers are cooking right now"),
                 a("f2a8655e", "[[292904]] Grok Advanced tooling is currently unavailable."),
-                a("c26b9b9c", "[[292956]] File"),
-                a("g10600b0", "[[293672]] Menu"),
-                a("j826e722", "[[289278]] Save Image"),
-                a("a9325f10", "[[289274]] Copy Image"),
-                a("g0b12442", "[[289275]] Failed to copy the image"),
-                a("edd0c172", "[[289277]] Post Image"),
-                a("d1d3a41a", "[[292496]] Edit Image"),
-                a("a2697040", "[[292541]] Describe what to change in image"),
                 a("ge1cefc4", "[[293664]] Tools"),
                 a("e9b6d404", "[[293476]] What search tools should Grok have access to?"),
                 a("h15dce2e", "[[293473]] Advanced Settings"),
@@ -4197,60 +4206,25 @@
                 a("e4ae6abe", "[[293616]] Ask Grok to transform your image"),
                 a("e8ade5e2", "[[292613]] Select Personality"),
                 a("b5df32b0", "[[285158]] Grok something"),
+                a("dab087ee", "[[289963]] Chats"),
+                a("a911623c", "[[228052]] Images"),
+                a("f794af9a", "[[285085]] Fun mode"),
+                a("eccf9fea", "[[285086]] Regular mode"),
+                a("j22655f2", "[[288852]] Ask anything"),
+                a("h0681e3e", "[[291529]] Talk to Grok, our AI assistant"),
+                a("d593fd78", "[[291527]] It can answer your questions, search X, and generate images"),
+                a("d0205a24", "[[291524]] Check the Facts"),
+                a("ed4177c4", "[[291526]] Grok may confidently provide factually incorrect information, mis-summarize, or miss some content. You should independently verify any information."),
+                a("c0ff98f8", "[[291522]] AI Training and Personalization"),
+                a("f1a8218a", "[[291531]] We may utilize your X data, as well as your interactions, inputs and results with Grok for model training, fine-tuning and to personalize your Grok experience. You can opt-out using your X settings. To learn more, visit our Help Center."),
+                a("bcbf5b6e", "[[221093]] Sharing"),
+                a("j7b5c844", "[[291532]] You are responsible for the conversations you share publicly. Avoid sharing sensitive and confidential information about yourself or others in your conversations with Grok (see our Help Center)."),
+                a("c9f7c196", "[[246442]] Help center"),
                 a("fb3b9776", "[[292572]] Grok’s output has been customized by this user."),
-                a("ca93f2ee", "[[289932]] This message has been deleted."),
-                a("b8c06820", "[[287580]] Copy text"),
-                a("ca0f5894", "[[287645]] Dislike"),
-                a("ja8d189e", "[[291810]] Wanted text answer"),
-                a("e951f04e", "[[290285]] Wanted image"),
-                a("c503b35e", "[[290286]] Wanted different image"),
-                a("d4371c92", "[[290273]] Code is incorrect"),
-                a("dbe8586e", "[[290287]] Wanted different code"),
-                a("e360eb4a", "[[290274]] Didn’t want code"),
-                a("a18657ca", "[[290279]] Math is incorrect"),
-                a("b8b86300", "[[290275]] Didn’t want math"),
-                a("e4c34788", "[[290278]] Incorrect answer"),
-                a("b220a8c8", "[[290282]] Wanted something else"),
-                a("b115fd18", "[[290269]] Biased answer"),
-                a("dc637214", "[[290271]] Bad style/tone"),
-                a("f02e6d42", "[[291809]] Wanted to search"),
-                a("bbec6bba", "[[291805]] Bad search results"),
-                a("b494d088", "[[291807]] Didn’t want search"),
-                a("a44974f2", "[[290316]] Doesn’t understand image"),
-                a("bd44a8a8", "[[243613]] Tell us more"),
-                a("fcdbe764", "[[290283]] What can Grok do better?"),
-                a("bb6adb22", "[[290272]] Describe what went wrong"),
-                a("h0fa15f2", "[[290281]] Thanks for your feedback!"),
-                a("d700b268", "[[294088]] Referenced Chats"),
-                a("cd7bdab2", "[[294081]] Forgetting conversations won’t delete them from history"),
-                a("f21b84de", "[[294089]] Reference forgotten"),
-                a("i52a9cb8", "[[294136]] No memories to display."),
-                a("d9d36880", "[[294080]] Forget"),
-                a("g02dacc0", "[[214927]] Today"),
-                a("c6e845c0", "[[287529]] Yesterday"),
-                a("a5fa4a86", "[[294082]] Jan"),
-                a("c51724a4", "[[294079]] Feb"),
-                a("j244ceb2", "[[294086]] Mar"),
-                a("b22b12e0", "[[294077]] Apr"),
-                a("h3023cac", "[[196627]] May"),
-                a("b10dbffa", "[[294083]] Jun"),
-                a("c81da1b6", "[[294084]] Jul"),
-                a("d4e4d3ce", "[[294076]] Aug"),
-                a("c3418f9a", "[[294090]] Sep"),
-                a("b64dada6", "[[294087]] Oct"),
-                a("ad24ec20", "[[294085]] Nov"),
-                a("c7902252", "[[294078]] Dec"),
-                a("idf94bac", "[[288157]] Regenerate"),
-                a("f7614f92", "[[291878]] Without search"),
-                a("c5ade3ba", "[[291877]] With search"),
-                a("c16e5b1a", "[[291879]] Without image generation"),
-                a("i2ca65fa", "[[291876]] With image generation"),
-                a("d3927f88", "[[287581]] Post link"),
-                a("be37ecd4", "[[289381]] Failed to copy to clipboard"),
-                a("h708a4c0", "[[291073]] Share Conversation"),
-                a("g06a67e2", "[[291074]] The share page will include messages up until this point"),
-                a("a0428662", "[[291453]] Not Helpful"),
-                a("fe4fd310", "[[228549]] Helpful"),
+                a("b0a889d4", "[[296455]] As Image"),
+                a("a111fb48", "[[296456]] As Spreadsheet"),
+                a("bccc65f0", "[[296460]] Grok can make mistakes. Always check original sources."),
+                a("bd202fe6", "[[296458]] Generating card"),
                 a("bfd161bc", "[[292186]] Compare"),
                 a("j5dcf1b2", "[[229756]] Updated"),
                 a("a50aaa10", "[[292188]] Pre-market"),
@@ -4282,6 +4256,9 @@
                 a("dd679fb1", function (e) {
                     return "[[293255]] All-time Low" + e.ttc_stock_details;
                 }),
+                a("ha9c4cf8", "[[296473]] View source"),
+                a("ecad5d78", "[[296462]] Save image"),
+                a("d2d1d398", "[[296457]] Copied!"),
                 a("a22063d2", "[[292099]] Share your location for improved accuracy."),
                 a("db3248a8", "[[292098]] Loading location"),
                 a("ffe0e588", "[[292197]] Share Location"),
@@ -4315,6 +4292,65 @@
                 a("d66bf142", "[[292553]] Thu"),
                 a("dc17968a", "[[292548]] Fri"),
                 a("j310a2d6", "[[292550]] Sat"),
+                a("afa2a58e", "[[296463]] See all posts"),
+                a("fc83e7e2", "[[296470]] See all users"),
+                a("df601d92", "[[296461]] Relevant Users"),
+                a("b001fa12", "[[296472]] Source query"),
+                a("db6c20cf", function (e) {
+                    return "[[296468]] Show all (" + e.count + ")";
+                }),
+                a("d7cb5408", "[[290891]] Relevant Web Pages"),
+                a("ca93f2ee", "[[289932]] This message has been deleted."),
+                a("b8c06820", "[[287580]] Copy text"),
+                a("ca0f5894", "[[287645]] Dislike"),
+                a("ja8d189e", "[[291810]] Wanted text answer"),
+                a("e951f04e", "[[290285]] Wanted image"),
+                a("c503b35e", "[[290286]] Wanted different image"),
+                a("d4371c92", "[[290273]] Code is incorrect"),
+                a("dbe8586e", "[[290287]] Wanted different code"),
+                a("e360eb4a", "[[290274]] Didn’t want code"),
+                a("a18657ca", "[[290279]] Math is incorrect"),
+                a("b8b86300", "[[290275]] Didn’t want math"),
+                a("e4c34788", "[[290278]] Incorrect answer"),
+                a("b220a8c8", "[[290282]] Wanted something else"),
+                a("b115fd18", "[[290269]] Biased answer"),
+                a("dc637214", "[[290271]] Bad style/tone"),
+                a("f02e6d42", "[[291809]] Wanted to search"),
+                a("bbec6bba", "[[291805]] Bad search results"),
+                a("b494d088", "[[291807]] Didn’t want search"),
+                a("a44974f2", "[[290316]] Doesn’t understand image"),
+                a("bd44a8a8", "[[243613]] Tell us more"),
+                a("fcdbe764", "[[290283]] What can Grok do better?"),
+                a("bb6adb22", "[[290272]] Describe what went wrong"),
+                a("h0fa15f2", "[[290281]] Thanks for your feedback!"),
+                a("d700b268", "[[294088]] Referenced Chats"),
+                a("cd7bdab2", "[[294081]] Forgetting conversations won’t delete them from history"),
+                a("f21b84de", "[[294089]] Reference forgotten"),
+                a("i52a9cb8", "[[294136]] No memories to display."),
+                a("d9d36880", "[[294080]] Forget"),
+                a("a5fa4a86", "[[294082]] Jan"),
+                a("c51724a4", "[[294079]] Feb"),
+                a("j244ceb2", "[[294086]] Mar"),
+                a("b22b12e0", "[[294077]] Apr"),
+                a("h3023cac", "[[196627]] May"),
+                a("b10dbffa", "[[294083]] Jun"),
+                a("c81da1b6", "[[294084]] Jul"),
+                a("d4e4d3ce", "[[294076]] Aug"),
+                a("c3418f9a", "[[294090]] Sep"),
+                a("b64dada6", "[[294087]] Oct"),
+                a("ad24ec20", "[[294085]] Nov"),
+                a("c7902252", "[[294078]] Dec"),
+                a("idf94bac", "[[288157]] Regenerate"),
+                a("f7614f92", "[[291878]] Without search"),
+                a("c5ade3ba", "[[291877]] With search"),
+                a("c16e5b1a", "[[291879]] Without image generation"),
+                a("i2ca65fa", "[[291876]] With image generation"),
+                a("d3927f88", "[[287581]] Post link"),
+                a("be37ecd4", "[[289381]] Failed to copy to clipboard"),
+                a("h708a4c0", "[[291073]] Share Conversation"),
+                a("g06a67e2", "[[291074]] The share page will include messages up until this point"),
+                a("a0428662", "[[291453]] Not Helpful"),
+                a("fe4fd310", "[[228549]] Helpful"),
                 a("eaf55eb4", "[[292911]] Show thinking"),
                 a("b1ac6016", "[[293052]] Completed DeepSearch"),
                 a("f766feca", "[[293941]] Completed DeeperSearch"),
@@ -4332,23 +4368,23 @@
                 a("db832e38", "[[293416]] Please enable notifications in browser settings"),
                 a("a910cac6", "[[293417]] There was an issue enabling notifications"),
                 a("be30b6ee", "[[293472]] Unstable connection"),
-                a("b52484b6", "[[291869]] Searching..."),
+                a("ge15b488", "[[296465]] Show thoughts"),
+                a("aa7c96bb", function (e) {
+                    return "[[293054]] See " + e.numResults + " more";
+                }),
                 a("a4d9dbfa", "[[292917]] Thoughts"),
+                a("j1ab5f40", "[[292914]] Tap to read"),
+                a("f5a2377e", "[[292957]] Thinking for "),
+                a("g3ce0132", "[[292985]] Thought for"),
+                a("f8007364", "[[293070]] Expand for details"),
+                a("ca53f780", "[[293067]] Collapse details"),
+                a("b52484b6", "[[291869]] Searching..."),
                 a("ib1c5475", function (e) {
                     return "[[294827]] Thought for " + e.minutes + "m " + e.seconds + "s";
                 }),
                 a("a15d62db", function (e) {
                     return "[[294826]] Thought for " + e.seconds + "s";
                 }),
-                a("d7cb5408", "[[290891]] Relevant Web Pages"),
-                a("aa7c96bb", function (e) {
-                    return "[[293054]] See " + e.numResults + " more";
-                }),
-                a("j1ab5f40", "[[292914]] Tap to read"),
-                a("f5a2377e", "[[292957]] Thinking for "),
-                a("g3ce0132", "[[292985]] Thought for"),
-                a("f8007364", "[[293070]] Expand for details"),
-                a("ca53f780", "[[293067]] Collapse details"),
                 a("ha8fbe22", "[[290824]] Generate more images with Premium"),
                 a("d95c232a", "[[291591]] You’ve reached your limit. Upgrade now to generate more."),
                 a("h2671312", "[[292905]] More Grok with Premium"),
@@ -4895,8 +4931,8 @@
                 a("fbc79a40", "[[294163]] Spaces overview"),
                 a("d077112a", "[[294164]] Space Stats"),
                 a("cf3709da", "[[180912]] Status"),
-                a("e797dc32", "[[294447]] Stream time: "),
-                a("b649d8cc", "[[294165]] Subscriber Only"),
+                a("e797dc32", "[[294447]] Stream time: ");
+            a("b649d8cc", "[[294165]] Subscriber Only"),
                 a("j9282130", "[[294433]] Broadcast thumbnail"),
                 a("g629b8b0", "[[294454]] Timed Out"),
                 a("eb87323c", "[[294449]] This shows analytics data for the selected time period since the livestream happened."),
@@ -4925,8 +4961,8 @@
                 a("a532072a", "[[294256]] Viewers"),
                 a("d9508ab0", "[[293196]] views"),
                 a("d9f9dec0", "[[294167]] View Space"),
-                a("h0c1f37a", "[[294166]] View Space Analytics");
-            a("e41fffbc", "[[291999]] The total watch time of your videos."),
+                a("h0c1f37a", "[[294166]] View Space Analytics"),
+                a("e41fffbc", "[[291999]] The total watch time of your videos."),
                 a("if2909ba", "[[292000]] Watch Time"),
                 a("i0e5bf4c", "[[293195]] Your videos"),
                 a("ed99baea", "[[289716]] Early Beta Access"),
@@ -5847,8 +5883,8 @@
                 a("hf68e810", "[[280560]] Community Notes is a program that aims to create a better-informed world. It empowers people on X to collaboratively add helpful notes to posts that might be misleading."),
                 a("jdb52860", "[[258302]] Contributors write and rate notes"),
                 a("c104025c", "[[280561]] Contributors are people on X, just like you, who chose to enroll in the pilot to write and rate notes. The more people that participate, the better the program becomes."),
-                a("j7872b8c", "[[280593]] Only notes that people find helpful appear on a post"),
-                a("fb59415e", "[[280579]] In order to be shown publicly as context on the post, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people."),
+                a("j7872b8c", "[[280593]] Only notes that people find helpful appear on a post");
+            a("fb59415e", "[[280579]] In order to be shown publicly as context on the post, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people."),
                 a("f9a44022", "[[280693]] X, the company, doesn’t choose what shows up: the people do"),
                 a("gdf4fbb2", "[[280691]] X, the company, doesn’t write, rate or moderate notes (unless they break the X Rules). We believe giving people voice to make these choices together is a fair and effective way to add information that helps people stay better informed."),
                 a("cc720e6a", "[[272993]] Community Notes is built on data transparency"),
@@ -5879,8 +5915,8 @@
                     return "[[232023]] No results for " + e.query;
                 }),
                 a("f191a2ba", "Search settings"),
-                a("a068008a", "[[290206]] Folders aren`t loading right now");
-            a("f075b0e8", "[[241449]] Edit Folder"),
+                a("a068008a", "[[290206]] Folders aren`t loading right now"),
+                a("f075b0e8", "[[241449]] Edit Folder"),
                 a("beba2a0e", "[[242311]] Create a new Bookmark Folder"),
                 a("e41c9b4f", function (e) {
                     return "[[242357]] Saved to " + e.bookmarkFolderName;
@@ -5925,7 +5961,6 @@
                 a("d7346632", "[[238950]] You haven’t joined any Communities yet"),
                 a("b732a4cc", "[[280509]] When you do, you’ll see their posts here."),
                 a("hff48914", "[[287368]] No posts could be found at this time."),
-                a("hb52cc4a", "[[233832]] Please try again later."),
                 a("e50e1bb0", "[[282302]] Welcome to Communities"),
                 a("i6829daa", "[[282172]] Communities are moderated discussion groups where people on X can connect and share."),
                 a("fc5c6914", "[[238877]] Meet others with your interests"),
@@ -6499,26 +6534,13 @@
                 a("e5f4eac0", "[[273254]] Your content will be more discoverable. And you’ll appear in search results and trends."),
                 a("c7832a72", "[[273874]] Connect directly with others"),
                 a("i1ccd17a", "[[273875]] Send Direct Messages to people, who don’t follow you, without your message being automatically filtered."),
+                a("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
                 a("hc965308", "[[285237]] Fun"),
                 a("eb78b77e", "[[285228]] Fun Mode"),
                 a("aa8ece10", "[[293512]] Try grok.com"),
                 a("gb5fb7d0", "[[291144]] Focus Mode"),
                 a("g5665caa", "[[291143]] Exit Focus Mode"),
                 a("a372681e", "[[293160]] Copy share link"),
-                a("fbc79f6a", "[[287367]] Chat history"),
-                a("b61ad410", "[[289621]] History"),
-                a("b3de2628", "[[287385]] No chat history available"),
-                a("acfbfb28", "[[289751]] Your future conversations will appear here."),
-                a("i1147548", "[[289967]] Search Grok History"),
-                a("ab437026", "[[289964]] No conversations found"),
-                a("e12569ec", "[[289968]] Try to search for something else."),
-                a("d4eb0e26", "[[228149]] Rename"),
-                a("c64975ea", "[[293020]] You haven’t favorited any conversations yet"),
-                a("a3e3db6e", "[[293018]] Click the star to save chats you come back to often"),
-                a("f4ae77ac", "[[289965]] No image history available"),
-                a("d57d337e", "[[289969]] Your generated images will appear here."),
-                a("dab087ee", "[[289963]] Chats"),
-                a("a911623c", "[[228052]] Images"),
                 a("ae9cdac6", "[[287384]] Chat History"),
                 a("b198a392", "[[290997]] Grok Conversation"),
                 a("d16329b4", "[[290996]] Copy Conversation"),
@@ -6869,8 +6891,8 @@
                 a("b2c213e0", "[[282448]] Character limit exceeded"),
                 a("d84e9c2a", "[[282467]] Share the type of work commitment expected for this role."),
                 a("bc8b300c", "[[282453]] Job Function"),
-                a("d1eedb50", "[[282458]] Help candidates understand the area this role supports."),
-                a("eaf3ce64", "[[282472]] Team"),
+                a("d1eedb50", "[[282458]] Help candidates understand the area this role supports.");
+            a("eaf3ce64", "[[282472]] Team"),
                 a("b36cd50e", "[[282471]] Specify the core team that candidates will work with once hired."),
                 a("d3a427ce", "[[282468]] Select the level of experience required."),
                 a("i7174442", "[[282455]] Job Description"),
@@ -6885,8 +6907,8 @@
                 a("c05176ec", "[[282459]] If this role is onsite, enter the site location(s). If this role is remote, describe where candidates can be located."),
                 a("d70c24d4", "[[282474]] Used to help candidates search for your job."),
                 a("de1c4376", "[[276543]] Salary Range"),
-                a("hf352d42", "[[282447]] Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for.");
-            a("ede7d0a2", "[[276389]] Currency"),
+                a("hf352d42", "[[282447]] Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for."),
+                a("ede7d0a2", "[[276389]] Currency"),
                 a("b925c18c", "[[283691]] Salary Type"),
                 a("j3d242ce", "[[276541]] Invalid range"),
                 a("f4d07bd2", "[[282456]] Include optional details to make it easier for candidates to discover your roles with search."),
@@ -7841,31 +7863,7 @@
                 a("b5099e33", function (e) {
                     return "[[282140]] @" + e.screenName + " doesn’t have any verified followers.";
                 }),
-                a("ec251f36", "[[233348]] When someone you know follows them, they’ll be listed here."),
-                a("f8af4f48", "[[261757]] Once they follow accounts, they’ll show up here."),
-                a("fd0aad94", "[[282017]] When someone verified follows this account, they’ll show up here."),
-                a("b84f6df1", function (e) {
-                    return "[[290941]] Gift Premium at a " + e.percentage + "% discount for a limited time";
-                }),
-                a("cfcac293", function (e) {
-                    return "[[288041]] Gift & Pay " + e.price;
-                }),
-                a("d7a73450", "[[288045]] Tier"),
-                a("hbd2c24e", "[[288076]] This account is not eligible for gifts at this time."),
-                a("f3fddc98", "Purchaser Terms"),
-                a("cff9c889", "Learn more"),
-                a("c65dda96", "[[288046]] Your gift has been sent."),
-                a("f6e2a407", function (e) {
-                    return "[[282202]] Allow anyone to see your Subscribed badge when you reply to @" + e.screenName + "’s posts";
-                }),
-                a("j8dedddd", function (e) {
-                    return "[[282043]] When you turn this off, @" + e.screenName + " and their Subscribers will still see your badge when you reply to @" + e.screenName + "’s Subscriber-only posts. @" + e.screenName + " will always see your badge.";
-                }),
-                a("c8a513f6", "[[272790]] Cancel Subscription"),
-                a("ea000ec8", "[[272788]] Already canceled your Subscription?"),
-                a("d7b8387e", "[[272796]] If you’ve already canceled, there’s nothing more to do. Your Subscription will automatically expire at the end of the billing cycle."),
-                a("f4166d9a", "[[272806]] Want to cancel your Subscription?"),
-                a("b74ff5fc", "[[272795]] If you cancel, your Subscription will automatically expire at the end of the billing cycle.");
+                a("ec251f36", "[[233348]] When someone you know follows them, they’ll be listed here.");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7904,7 +7902,31 @@
                     r(e, t)
                 );
             }
-            a("ee9efbc8", "[[265375]] Continue to cancellation"),
+            a("f8af4f48", "[[261757]] Once they follow accounts, they’ll show up here."),
+                a("fd0aad94", "[[282017]] When someone verified follows this account, they’ll show up here."),
+                a("b84f6df1", function (e) {
+                    return "[[290941]] Gift Premium at a " + e.percentage + "% discount for a limited time";
+                }),
+                a("cfcac293", function (e) {
+                    return "[[288041]] Gift & Pay " + e.price;
+                }),
+                a("d7a73450", "[[288045]] Tier"),
+                a("hbd2c24e", "[[288076]] This account is not eligible for gifts at this time."),
+                a("f3fddc98", "Purchaser Terms"),
+                a("cff9c889", "Learn more"),
+                a("c65dda96", "[[288046]] Your gift has been sent."),
+                a("f6e2a407", function (e) {
+                    return "[[282202]] Allow anyone to see your Subscribed badge when you reply to @" + e.screenName + "’s posts";
+                }),
+                a("j8dedddd", function (e) {
+                    return "[[282043]] When you turn this off, @" + e.screenName + " and their Subscribers will still see your badge when you reply to @" + e.screenName + "’s Subscriber-only posts. @" + e.screenName + " will always see your badge.";
+                }),
+                a("c8a513f6", "[[272790]] Cancel Subscription"),
+                a("ea000ec8", "[[272788]] Already canceled your Subscription?"),
+                a("d7b8387e", "[[272796]] If you’ve already canceled, there’s nothing more to do. Your Subscription will automatically expire at the end of the billing cycle."),
+                a("f4166d9a", "[[272806]] Want to cancel your Subscription?"),
+                a("b74ff5fc", "[[272795]] If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
+                a("ee9efbc8", "[[265375]] Continue to cancellation"),
                 a("c5d9c77a", "[[265380]] Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Close this window and try again."),
                 a("jda53c24", "[[272809]] You can cancel your Subscription through the Apple App Store."),
                 a("g0a7a53e", "[[272807]] You can cancel your Subscription through the Google Play Store."),
@@ -8301,7 +8323,7 @@
                 a("e5e6479e", "[[289771]] Send us an email with your organization’s handle and the details of your inquiry to receive the fastest support."),
                 a("ica8392a", "[[289770]] Once we receive your request, we’ll review and prioritize it in the order it was received."),
                 a("ed37e36e", "[[289769]] Important: Missing your organization’s handle or using a personal email may cause delays in processing your request."),
-                a("h7e1c146", "Delegate accounts are not currently supported."),
+                a("h7e1c146", "[[296284]] Delegate accounts are not currently supported."),
                 a("eb0d4fe2", "[[259288]] Make a column"),
                 a("e93d2f8a", "[[259277]] Customize your experience by adding a variety of columns such as:"),
                 a("e8203d1e", "[[259294]] Searches"),
@@ -8875,8 +8897,8 @@
                 a("faf9f484", "[[209980]] Ad"),
                 a("ae2ea9e7", function (e) {
                     return "[[217357]] Ad by " + e.advertiserName;
-                }),
-                a("hea01798", "[[209961]] Seek slider"),
+                });
+            a("hea01798", "[[209961]] Seek slider"),
                 a("f8a09386", "[[209981]] View on Periscope"),
                 a("gf2b6eee", "[[280688]] Picture-in-Picture"),
                 a("b3160a69", function (e) {
@@ -8901,10 +8923,10 @@
                 }),
                 a("g60001bb", function (e) {
                     return "[[223892]] See " + e.advertiserName;
-                });
-            a("dff1ddd9", function (e) {
-                return "[[223885]] Go to " + e.advertiserName;
-            }),
+                }),
+                a("dff1ddd9", function (e) {
+                    return "[[223885]] Go to " + e.advertiserName;
+                }),
                 a("b0b22805", function (e) {
                     return "[[223889]] Visit " + e.advertiserName;
                 }),
@@ -10155,7 +10177,7 @@
                         {
                             key: "b6411d33",
                             get: function () {
-                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
+                                return ["[[296323]] Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
                             },
                         },
                         {
@@ -13202,9 +13224,9 @@
                 (f.b1628081667 = y({ 1: f("en").numberFormatter({ raw: "0" }), 2: f("en").numberFormatter({ raw: "00" }) }, { pattern: "h:mm a", timeSeparator: ":", dayPeriods: { am: "AM", pm: "PM" } })),
                 (f.b716432657 = y({ 1: f("en").numberFormatter({ raw: "0" }), 2: f("en").numberFormatter({ raw: "00" }) }, { pattern: "E h:mm a", timeSeparator: ":", days: { E: { 1: { sun: "Sun", mon: "Mon", tue: "Tue", wed: "Wed", thu: "Thu", fri: "Fri", sat: "Sat" } } }, dayPeriods: { am: "AM", pm: "PM" } })),
                 (f.a64108448 = y({ 1: f("en").numberFormatter({ raw: "0" }) }, { pattern: "MMMM y", timeSeparator: ":", months: { M: { 4: { 1: "January", 2: "February", 3: "March", 4: "April", 5: "May", 6: "June", 7: "July", 8: "August", 9: "September", 10: "October", 11: "November", 12: "December" } } } })),
+                (f.b1772580693 = y({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "Sunday", mon: "Monday", tue: "Tuesday", wed: "Wednesday", thu: "Thursday", fri: "Friday", sat: "Saturday" } } } })),
                 (f.a2122364151 = y({ 1: f("en").numberFormatter({ raw: "0" }) }, { pattern: "MMM d, y", timeSeparator: ":", months: { M: { 3: { 1: "Jan", 2: "Feb", 3: "Mar", 4: "Apr", 5: "May", 6: "Jun", 7: "Jul", 8: "Aug", 9: "Sep", 10: "Oct", 11: "Nov", 12: "Dec" } } } })),
                 (f.a1269141163 = y({}, { pattern: "LLLL", timeSeparator: ":", months: { L: { 4: { 1: "January", 2: "February", 3: "March", 4: "April", 5: "May", 6: "June", 7: "July", 8: "August", 9: "September", 10: "October", 11: "November", 12: "December" } } } })),
-                (f.b1772580693 = y({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "Sunday", mon: "Monday", tue: "Tuesday", wed: "Wednesday", thu: "Thursday", fri: "Friday", sat: "Saturday" } } } })),
                 (f.a878419275 = g(f("en").dateToPartsFormatter({ skeleton: "MMMd" }))),
                 (f.a816076018 = g(f("en").dateToPartsFormatter({ skeleton: "yMMMd" }))),
                 (f.b965415715 = g(f("en").dateToPartsFormatter({ skeleton: "hm" }))),
@@ -13224,9 +13246,9 @@
                 (f.a561702726 = g(f("en").dateToPartsFormatter({ time: "short" }))),
                 (f.b867606024 = g(f("en").dateToPartsFormatter({ skeleton: "Ehm" }))),
                 (f.a815390825 = g(f("en").dateToPartsFormatter({ skeleton: "yMMMM" }))),
+                (f.a2130979522 = g(f("en").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (f.a1286203598 = g(f("en").dateToPartsFormatter({ date: "medium" }))),
                 (f.a877734082 = g(f("en").dateToPartsFormatter({ skeleton: "MMMM" }))),
-                (f.a2130979522 = g(f("en").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (f.b687161418 = w(f("en").numberFormatter({}), f("en").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "in {0} day", "relativeTimePattern-count-other": "in {0} days" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "{0} day ago", "relativeTimePattern-count-other": "{0} days ago" }, "relative-type--1": "yesterday", "relative-type-0": "today", "relative-type-1": "tomorrow" })),
                 (f.a2110709659 = v(f("en").numberFormatter({}), f("en").pluralGenerator({}), { compoundUnitPattern: "{0} per {1}", unitProperties: { displayName: "seconds", one: "{0} second", other: "{0} seconds", perUnitPattern: "{0} per second" } })),
                 (f.a223746363 = v(f("en").numberFormatter({}), f("en").pluralGenerator({}), { compoundUnitPattern: "{0} per {1}", unitProperties: { displayName: "minutes", one: "{0} minute", other: "{0} minutes", perUnitPattern: "{0} per minute" } })),
@@ -13358,14 +13380,14 @@
                 a("b6ca7bcb", f.a561702726),
                 a("h0e4cdf5", f.b867606024),
                 a("g727ddcf", f.a815390825),
+                a("f3b9b9a7", f.a2130979522),
                 a("h3629783", f.a1286203598),
                 a("a20c68af", f.a877734082),
                 a("ja781451", f.a71710728),
                 a("cfa1a7b9", f.a605057387),
-                a("f3b9b9a7", f.a2130979522),
                 a("eefcd267", f.a50325677),
                 a("fa8afc43", f.b1911307442);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.fda439da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.a5b22b0a.js.map

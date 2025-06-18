@@ -266,6 +266,24 @@
                     return r ? n.createElement(i.ZP, { color: a, numberOfLines: 2, size: "subtext2", style: p.root }, r) : null;
                 };
         },
+        401339: (e, t, a) => {
+            a.d(t, { Z: () => o });
+            const n = {},
+                r = ["touchend", "touchmove", "touchstart"];
+            const o = {
+                isTouchSupported: () =>
+                    r.some(
+                        (e) =>
+                            !!(function (e, t) {
+                                if (void 0 !== n[e]) return n[e];
+                                const a = document.createElement(t || "div"),
+                                    r = `on${e}`;
+                                let o = r in a;
+                                return o || (a.setAttribute(r, "return;"), (o = "function" == typeof a[r])), (n[e] = o), o;
+                            })(e),
+                    ),
+            };
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TrendHandler.0bb9330a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TrendHandler.fc642d3a.js.map

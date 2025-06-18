@@ -966,7 +966,7 @@
                 g = n(908579),
                 m = n(167630),
                 p = n(392237),
-                y = n(393058);
+                y = n(401339);
             const k = u().gdd51574;
             class _ extends a.Component {
                 constructor(...e) {
@@ -1256,4 +1256,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DirectMessages-6107ac1a.f9cab56a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DirectMessages-6107ac1a.64b534ca.js.map

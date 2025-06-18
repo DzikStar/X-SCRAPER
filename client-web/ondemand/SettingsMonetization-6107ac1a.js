@@ -263,6 +263,13 @@
             o.metadata = { width: 24, height: 24 };
             const i = o;
         },
+        465233: (e, t, a) => {
+            a.d(t, { Z: () => n });
+            var l = a(716406);
+            function n(e) {
+                return "object" != typeof e || null === e ? e : Array.isArray(e) ? e.map(n) : (0, l.Z)(e, (e) => n(e));
+            }
+        },
         662678: (e, t, a) => {
             a.d(t, { G: () => n, Z: () => l });
             a(136728);
@@ -281,4 +288,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-6107ac1a.ba984c4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-6107ac1a.26c125ca.js.map

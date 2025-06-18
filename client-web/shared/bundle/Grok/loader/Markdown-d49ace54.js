@@ -1,0 +1,862 @@
+"use strict";
+(self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
+    ["shared~bundle.Grok~loader.Markdown-d49ace54"],
+    {
+        983650: (e, t, a) => {
+            a.d(t, { Z: () => Je });
+            var n = a(202784),
+                o = a(691533),
+                r = a(952793),
+                i = a(725516),
+                s = a(125363),
+                l = a(327597),
+                c = a(623494),
+                d = (a(136728), a(325686)),
+                m = a(731708),
+                y = a(992942),
+                p = a(194504),
+                u = a(392237),
+                h = a(111677),
+                g = a.n(h),
+                f = a(572929),
+                b = a(339838),
+                C = a(47331),
+                S = a(738118);
+            const k = Object.freeze({ UP: "up", DOWN: "down", NOCHANGE: "nochange" }),
+                E = (Object.freeze({ SINGLE: "SINGLE", COMPARISON: "COMPARISON" }), Object.freeze({ preMarket: g().a50aaa10, today: g().g02dacc0, afterHours: g().dd614d10 }));
+            a(571372);
+            const w = "09:30:00",
+                x = "16:00:00";
+            function v(e, t) {
+                const { timeZone: a } = window.Intl.DateTimeFormat().resolvedOptions();
+                return new Intl.DateTimeFormat("en-US", { month: t && t.month ? "short" : void 0, day: t && t.day ? "numeric" : void 0, hour: t && t.hour ? "numeric" : void 0, minute: t && t.minute ? "numeric" : void 0, year: t && t.year ? "numeric" : void 0, timeZoneName: t && t.timeZoneName ? "short" : void 0, timeZone: t && t.timeZoneName ? a : void 0 }).format(e);
+            }
+            function D(e, t = 2) {
+                const a = [
+                    { value: 1e12, suffix: "T" },
+                    { value: 1e9, suffix: "B" },
+                    { value: 1e6, suffix: "M" },
+                    { value: 1e3, suffix: "K" },
+                ];
+                for (let n = 0; n < a.length; n++) if (e >= a[n].value) return (e / a[n].value).toFixed(t) + a[n].suffix;
+                return e.toFixed(t);
+            }
+            function Z(e, t) {
+                const a = new Intl.DateTimeFormat("en-US", { month: "numeric", day: "numeric", year: "numeric", timeZone: t }).formatToParts(e),
+                    n = a.find((e) => "month" === e.type),
+                    o = a.find((e) => "year" === e.type),
+                    r = a.find((e) => "day" === e.type);
+                if (!n || !o || !r) throw new Error(`Failed to format time for date: ${e.toDateString()}`);
+                return { year: Number(o.value), month: Number(n.value), day: Number(r.value) };
+            }
+            function P(e) {
+                const t = e.match(/[+-]\d{2}:\d{2}$/);
+                return t ? t[0] : "";
+            }
+            function T(e) {
+                const t = [],
+                    a = [],
+                    n = [];
+                return (
+                    e.forEach((e) => {
+                        const o = new Date(e.timestamp),
+                            r = e.timestamp.split("T")[0],
+                            i = P(e.timestamp),
+                            s = new Date(`${r}T${w}${i}`),
+                            l = new Date(`${r}T${x}${i}`);
+                        o < s ? t.push(e) : o < l ? a.push(e) : n.push(e);
+                    }),
+                    { preMarket: t, today: a, afterHours: n }
+                );
+            }
+            function I(e) {
+                let t = e;
+                return (
+                    ["Class A Common Stock"].forEach((e) => {
+                        t = t.replace(e, "");
+                    }),
+                    t
+                );
+            }
+            function z(e, t = 1) {
+                let a = e.toFixed(20);
+                a = a.replace(/^0+\./, "0.").replace(/\.0+$/, "");
+                const n = a.indexOf("."),
+                    o = a.slice(n + 1).search(/[1-9]/);
+                if (-1 !== o) {
+                    const a = o + t;
+                    return Number(e).toFixed(a);
+                }
+                return a;
+            }
+            function M(e) {
+                const t = Number(e);
+                if (isNaN(t)) return e;
+                const a = e.split(".");
+                return (a[0] = a[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",")), a.join(".");
+            }
+            var A = a(988290);
+            const _ = g().d6b0b0d5,
+                O = g().e85f8b65,
+                $ = g().f92bf10f,
+                N = g().d679b09f,
+                H = g().be7b9409,
+                R = g().a81f5fb9,
+                L = [
+                    { key: "open", labelFormatter: _ },
+                    { key: "high", labelFormatter: N },
+                    { key: "low", labelFormatter: g().e68d4f21 },
+                    { key: "marketCap", labelFormatter: O },
+                    { key: "peRatio", labelFormatter: H },
+                    { key: "yearHigh", labelFormatter: $ },
+                    { key: "yearLow", labelFormatter: R },
+                ],
+                F = [
+                    { key: "marketCap", labelFormatter: O },
+                    { key: "allTimeHigh", labelFormatter: g().bc9c96f9 },
+                    { key: "allTimeLow", labelFormatter: g().dd679fb1 },
+                ];
+            function j({ entity: e, multipleEntities: t, style: a }) {
+                const { isCompactLayout: o } = (0, A.ZP)(),
+                    r = n.useMemo(() => {
+                        const t = [[], [], []];
+                        let a = 0,
+                            r = [];
+                        "STOCK" === e.assetType ? (r = L) : ("TOKEN" !== e.assetType && "COIN" !== e.assetType) || (r = F);
+                        for (let i = 0; i < r.length; i++) {
+                            const s = r[i];
+                            t[a].length < 3 && void 0 !== e.metrics[s.key] && null !== e.metrics[s.key] && (t[a].push(n.createElement(d.Z, { key: s.key, style: [K.detailsRow, o ? K.compactDetailsRow : void 0] }, n.createElement(m.ZP, { style: K.detailsLabel, weight: "bold" }, s.labelFormatter({ ttc_stock_details: "" })), n.createElement(m.ZP, { style: K.detailsValue }, `${e.currentPrice.currency_symbol || ""}${D(e.metrics[s.key])}`))), (a = (a + 1) % 3));
+                        }
+                        return t;
+                    }, [e, o]);
+                return n.createElement(
+                    d.Z,
+                    { style: [K.detailsContainer, a] },
+                    t && n.createElement(d.Z, { style: K.entityContainer }, n.createElement(m.ZP, { style: K.entitySymbol, weight: "bold" }, e.symbol), n.createElement(d.Z, { style: K.dot }), n.createElement(m.ZP, { style: K.entityName, weight: "bold" }, e.name)),
+                    n.createElement(
+                        d.Z,
+                        { style: [K.detailsInfoContainer, o ? K.compactDetailsInfoContainer : void 0] },
+                        r.map((e, t) =>
+                            n.createElement(
+                                d.Z,
+                                { key: `details-col-${t}`, style: K.detailsCol },
+                                e.map((e) => e),
+                            ),
+                        ),
+                    ),
+                );
+            }
+            const K = u.default.create((e) => ({ detailsContainer: { padding: e.spaces.space12, backgroundColor: e.colors.gray50, borderRadius: e.borderRadii.medium, display: "flex", flexDirection: "column", gap: e.spaces.space12 }, entityContainer: { display: "flex", flexDirection: "row", alignItems: "center", fontSize: e.fontSizes.subtext2, lineHeight: e.fontSizes.subtext2, gap: e.spaces.space8 }, entitySymbol: { fontSize: "inherit", lineHeight: "inherit" }, dot: { width: e.spaces.space4, height: e.spaces.space4, borderRadius: e.spaces.space4, backgroundColor: e.colors.brandColor }, entityName: { fontSize: "inherit", lineHeight: "inherit" }, detailsInfoContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: e.spaces.space32 }, compactDetailsInfoContainer: {}, detailsCol: { display: "flex", flexDirection: "column", flex: 1, gap: e.spaces.space16 }, detailsRow: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3, flexWrap: "wrap" }, compactDetailsRow: { flexDirection: "column", alignItems: "flex-start", justifyContent: "unset", gap: e.spaces.space4 }, detailsLabel: { fontSize: "inherit", lineHeight: "inherit" }, detailsValue: { fontSize: "inherit", lineHeight: "inherit" } }));
+            var B = a(575059);
+            function U({ entity: e, label: t, stockPriceChange: a, style: o }) {
+                return n.createElement(d.Z, { style: [W.container, o] }, t && n.createElement(m.ZP, { style: W.label }, t), n.createElement(B.default, { style: [W.directionArrow, a.direction === k.UP ? W.upArrow : void 0, a.direction === k.DOWN ? W.downArrow : void 0, a.direction === k.NOCHANGE ? W.noChangeArrow : void 0] }), n.createElement(m.ZP, { style: [W.stockPriceChangeText, a.direction === k.DOWN ? W.stockPriceChangeDownText : void 0, a.direction === k.UP ? W.stockPriceChangeUpText : void 0], weight: "bold" }, a.amountChange.startsWith("-") ? `-${e.currentPrice.currency_symbol || ""}${a.amountChange.replace("-", "")}` : `${e.currentPrice.currency_symbol || ""}${a.amountChange}`), n.createElement(d.Z, { style: [W.dot, a.direction === k.DOWN ? W.dotDown : void 0, a.direction === k.UP ? W.dotUp : void 0] }), n.createElement(m.ZP, { style: [W.stockPriceChangeText, a.direction === k.DOWN ? W.stockPriceChangeDownText : void 0, a.direction === k.UP ? W.stockPriceChangeUpText : void 0], weight: "bold" }, `${a.percentageChange}%`));
+            }
+            const W = u.default.create((e) => ({ container: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4, fontSize: e.fontSizes.subtext2, lineHeight: e.fontSizes.subtext2 }, label: { fontSize: "inherit", lineHeight: "inherit", color: e.colors.gray700 }, directionArrow: { width: e.spaces.space16, height: e.spaces.space16 }, upArrow: { color: e.colors.green500 }, downArrow: { color: e.colors.red500, transform: "rotate(90deg)" }, noChangeArrow: { color: e.colors.gray700, transform: "rotate(45deg)" }, stockPriceChangeText: { fontSize: "inherit", lineHeight: "inherit", color: e.colors.brandColor }, stockPriceChangeDownText: { color: e.colors.red500 }, stockPriceChangeUpText: { color: e.colors.green500 }, dot: { width: 2, height: 2, borderRadius: 2, backgroundColor: e.colors.brandColor }, dotDown: { backgroundColor: e.colors.red500 }, dotUp: { backgroundColor: e.colors.green500 } }));
+            function V({ color: e, entity: t, multipleEntities: a, oneDayStockPriceChange: o, selectedPeriod: r, stockPriceChange: i, style: s }) {
+                let l = null;
+                return "1D" === r && "STOCK" === t.assetType ? (l = n.createElement(n.Fragment, null, o.today && n.createElement(U, { entity: t, stockPriceChange: o.today }), o.afterHours && n.createElement(U, { entity: t, label: E.afterHours, stockPriceChange: o.afterHours }))) : i && (l = n.createElement(n.Fragment, null, n.createElement(U, { entity: t, stockPriceChange: i }), o.afterHours && n.createElement(U, { entity: t, label: E.afterHours, stockPriceChange: o.afterHours }))), n.createElement(d.Z, { style: [G.stockEntityContainer, a ? G.multipleStockEntityContainer : void 0, s] }, a ? n.createElement(d.Z, { style: G.stockNameColorContainer }, n.createElement(d.Z, { style: G.stockNameContainer }, "STOCK" === t.assetType && S[t.symbol] && n.createElement(y.Z, { resizeMode: "contain", source: S[t.symbol], style: G.logo }), ("TOKEN" === t.assetType || "COIN" === t.assetType) && C[t.name] && n.createElement(y.Z, { resizeMode: "contain", source: C[t.name], style: G.logo }), n.createElement(m.ZP, { style: G.stockSymbol, weight: "bold" }, t.symbol), n.createElement(d.Z, { style: G.dot }), n.createElement(m.ZP, { style: G.stockName, weight: "bold" }, t.name)), n.createElement(d.Z, { style: [G.stockEntityColorDot, { backgroundColor: e }] })) : "STOCK" === t.assetType && n.createElement(m.ZP, { style: G.singleEntityStockSymbol, weight: "bold" }, `${t.symbol}:${t.exchange}`), n.createElement(d.Z, { style: G.stockPriceContainer }, n.createElement(m.ZP, { style: G.stockPrice, weight: "heavy" }, M(t.currentPrice.value.toFixed(2))), n.createElement(m.ZP, { style: G.stockCurrency, weight: "bold" }, t.currentPrice.currency.toUpperCase())), l);
+            }
+            const G = u.default.create((e) => ({ stockEntityContainer: { display: "flex", flexDirection: "column", alignItems: "start", gap: e.spaces.space12 }, multipleStockEntityContainer: { backgroundColor: e.colors.gray50, borderRadius: e.borderRadii.medium, padding: e.spaces.space8 }, stockNameColorContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", width: "100%", gap: e.spaces.space12 }, stockNameContainer: { display: "flex", flexDirection: "row", alignItems: "center", fontSize: e.fontSizes.subtext3, gap: e.spaces.space4 }, logo: { width: e.spaces.space12, height: e.spaces.space12 }, stockSymbol: { fontSize: "inherit", lineHeight: "inherit" }, singleEntityStockSymbol: { fontSize: e.fontSizes.subtext2, lineHeight: e.fontSizes.subtext2 }, stockName: { fontSize: "inherit", lineHeight: "inherit" }, stockEntityColorDot: { width: 9, height: 9, borderRadius: 9 }, stockPriceContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, stockPrice: { fontSize: e.fontSizes.title4, lineHeight: e.fontSizes.title4 }, stockCurrency: { color: e.colors.gray700, fontSize: e.fontSizes.subtext2, lineHeight: e.fontSizes.subtext2 }, dot: { width: 2, height: 2, borderRadius: 2, backgroundColor: e.colors.brandColor } }));
+            var q = a(214997),
+                Y = a(18205),
+                J = a(632908),
+                Q = a(755484),
+                X = a(730840),
+                ee = a(725556),
+                te = a(103131),
+                ae = a(735081),
+                ne = a(663004),
+                oe = a(989272),
+                re = a(466792),
+                ie = a(187669),
+                se = a(949626);
+            function le({ active: e, label: t, payload: a }) {
+                if (e && a && a.length) {
+                    const e = [];
+                    a.forEach((t) => {
+                        const a = t.dataKey.split("-")[0];
+                        e.push({ symbol: a, price: Number(t.payload[`${a}-price-value`]), percent: Number(t.payload[`${a}-percent-value`]), currency: t.payload[`${a}-currency`], currency_symbol: t.payload[`${a}-currency-symbol`], color: t.payload[`${a}-color`] });
+                    });
+                    const t = a[0].payload.dateTime,
+                        o = a[0].payload.type ? a[0].payload.type : "",
+                        r = v(new Date(t), { year: !0, month: !0, day: !0, hour: !0, minute: !0 }),
+                        i = a[0].payload.variant,
+                        s = e.sort((e, t) => ("COMPARISON" === i ? t.percent - e.percent : t.price - e.price));
+                    return n.createElement(
+                        d.Z,
+                        { style: ce.tooltip },
+                        s.map((e) => {
+                            const t = `${M(e.percent.toFixed(2))}%`,
+                                a = `${e.currency_symbol || ""}${M(z(e.price, 2).toString())}`;
+                            return n.createElement(d.Z, { key: e.symbol, style: ce.tooltipStock }, n.createElement(d.Z, { style: { ...ce.tooltipStockColor, backgroundColor: e.color } }), n.createElement(m.ZP, { style: ce.tooltipStockSymbol, weight: "bold" }, e.symbol), n.createElement(d.Z, null), "COMPARISON" === i && n.createElement(n.Fragment, null, n.createElement(m.ZP, { style: ce.tooltipValue }, t), n.createElement(m.ZP, { style: ce.tooltipValue }, `(${a})`)), "SINGLE" === i && n.createElement(m.ZP, { style: ce.tooltipValue }, a));
+                        }),
+                        n.createElement(m.ZP, { style: ce.tooltipDate }, r),
+                        !!o && n.createElement(m.ZP, { style: ce.tooltipDate }, E[o]),
+                    );
+                }
+                return null;
+            }
+            const ce = u.default.create((e) => ({ tooltip: { backgroundColor: e.colors.gray50, borderRadius: e.borderRadii.medium, padding: e.spaces.space8, display: "flex", flexDirection: "column", alignItems: "flex-start", gap: e.spaces.space4, fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3 }, tooltipStock: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4 }, tooltipStockColor: { width: e.spaces.space4, height: e.spaces.space4, borderRadius: e.spaces.space4 }, tooltipStockSymbol: { fontSize: "inherit", lineHeight: "inherit" }, tooltipValue: { fontSize: "inherit", lineHeight: "inherit" }, tooltipDate: { color: e.colors.gray700, fontSize: "inherit", lineHeight: "inherit" } })),
+                de = 200,
+                me = "stock-card-recharts";
+            function ye({ entitiesData: e, selectStockSymbol: t, selectedPeriod: a, selectedStockSymbols: o, timeZone: r, variant: i }) {
+                (0, ie.q)(() => {
+                    (0, oe.fH)(`\n        .${me} .recharts-surface {\n          overflow: visible;\n        }\n      `, me);
+                });
+                const s = Object.keys(o).length > 0,
+                    l = `line-chart-${a}-${Object.keys(o).join("-")}`,
+                    { chartData: c } = (function ({ entitiesData: e, selectedPeriod: t, selectedStockSymbols: a, variant: o }) {
+                        const r = Object.keys(a).length > 0;
+                        return {
+                            chartData: n.useMemo(() => {
+                                const n = {};
+                                for (const i of e)
+                                    if (!r || a[i.entity.symbol])
+                                        if ("1D" === t && "STOCK" === i.entity.assetType && i.oneDayDataBreakdown) {
+                                            const e = i.oneDayDataBreakdown;
+                                            ["preMarket", "today", "afterHours"].forEach((t) => {
+                                                e.price_data[t].forEach((e) => {
+                                                    const a = new Date(e.timestamp).getTime();
+                                                    n[a] || (n[a] = { dateTime: a, type: t, variant: o }), (n[a][`${i.entity.symbol}-price-value`] = e.value), (n[a][`${i.entity.symbol}-symbol`] = i.entity.symbol), (n[a][`${i.entity.symbol}-currency`] = i.entity.currentPrice.currency.toUpperCase()), (n[a][`${i.entity.symbol}-currency-symbol`] = i.entity.currentPrice.currency_symbol || ""), (n[a][`${i.entity.symbol}-color`] = i.chartStyle.color);
+                                                }),
+                                                    "COMPARISON" === o &&
+                                                        e.percent_data &&
+                                                        e.percent_data[t].forEach((e) => {
+                                                            const t = new Date(e.timestamp).getTime();
+                                                            n[t] && (n[t][`${i.entity.symbol}-percent-value`] = e.value);
+                                                        });
+                                            });
+                                        } else
+                                            i.chartData.price_data[t].forEach((e) => {
+                                                const t = new Date(e.timestamp).getTime();
+                                                n[t] || (n[t] = { dateTime: t, variant: o }), (n[t][`${i.entity.symbol}-price-value`] = e.value), (n[t][`${i.entity.symbol}-symbol`] = i.entity.symbol), (n[t][`${i.entity.symbol}-currency`] = i.entity.currentPrice.currency.toUpperCase()), (n[t][`${i.entity.symbol}-currency-symbol`] = i.entity.currentPrice.currency_symbol || ""), (n[t][`${i.entity.symbol}-color`] = i.chartStyle.color);
+                                            }),
+                                                "COMPARISON" === o &&
+                                                    i.chartData.percent_data &&
+                                                    i.chartData.percent_data[t].forEach((e) => {
+                                                        const t = new Date(e.timestamp).getTime();
+                                                        n[t] && (n[t][`${i.entity.symbol}-percent-value`] = e.value);
+                                                    });
+                                return Object.values(n).sort((e, t) => e.dateTime - t.dateTime);
+                            }, [e, t, a, r, o]),
+                        };
+                    })({ entitiesData: e, selectedPeriod: a, selectedStockSymbols: o, variant: i }),
+                    y = n.useMemo(() => {
+                        const e = [];
+                        return (
+                            c.forEach((t) => {
+                                Object.keys(t).forEach((a) => {
+                                    a.endsWith("COMPARISON" === i ? "-percent-value" : "-price-value") && e.push(Number(t[a]));
+                                });
+                            }),
+                            [Math.min(...e), Math.max(...e)]
+                        );
+                    }, [c, i]),
+                    p = n.useCallback(
+                        (e) => {
+                            const t = new Date(e);
+                            return "1D" === a
+                                ? (function (e) {
+                                      const t = new Intl.DateTimeFormat("en-US", { hour: "numeric", minute: "numeric" }).formatToParts(e),
+                                          a = t.find((e) => "hour" === e.type),
+                                          n = t.find((e) => "minute" === e.type),
+                                          o = t.find((e) => "dayPeriod" === e.type);
+                                      if (!a || !n || !o) throw new Error(`Failed to format time for date: ${e.toDateString()}`);
+                                      return `${a.value}:${n.value} ${o.value}`;
+                                  })(t)
+                                : v(t, "5D" === a || "1M" === a ? { month: !0, day: !0 } : "3M" === a || "6M" === a || "YTD" === a || "1Y" === a ? { month: !0, year: !0 } : { year: !0 });
+                        },
+                        [a],
+                    ),
+                    h = n.useMemo(() => {
+                        const e = {},
+                            t = [];
+                        for (const a of c) {
+                            const n = p(a.dateTime);
+                            e[n] || ((e[n] = !0), t.push(a.dateTime));
+                        }
+                        if (t.length <= 6) return t;
+                        const a = [0];
+                        for (let e = 1; e < 5; e++) {
+                            const n = Math.floor((t.length - 1) * (e / 5));
+                            a.includes(n) || a.push(n);
+                        }
+                        return a.includes(t.length - 1) || a.push(t.length - 1), a.map((e) => t[e]);
+                    }, [c, p]),
+                    g = n.useMemo(() => {
+                        if ("TOKEN" === e[0].entity.assetType || "COIN" === e[0].entity.assetType) return ["dataMin", "dataMax"];
+                        if ("1D" === a) {
+                            const { oneDayData: t, range: n } = (function (e, t) {
+                                const a = Z(new Date(), t),
+                                    n = e.filter((e) => {
+                                        const n = Z(new Date(e.timestamp), t);
+                                        return n.year === a.year && n.month === a.month && n.day === a.day;
+                                    });
+                                if (n.length <= 0) return { oneDayData: [], range: null };
+                                const o = n[0].timestamp,
+                                    r = new Date(o),
+                                    i = n[n.length - 1].timestamp,
+                                    s = new Date(i),
+                                    l = P(o) || P(i),
+                                    c = n[0].timestamp.split("T")[0],
+                                    d = new Date(`${c}T${x}${l}`);
+                                return { oneDayData: n, range: [r.getTime(), Math.max(s.getTime(), d.getTime())] };
+                            })(e[0].chartData.price_data[a], r);
+                            return t.length <= 0 || !n ? ["dataMin", "dataMax"] : n;
+                        }
+                        return ["dataMin", "dataMax"];
+                    }, [e, r, a]),
+                    f = "STOCK" === e[0].entity.assetType ? e[0].entity.metrics.prevDayClose : null,
+                    b = "SINGLE" === i && "1D" === a,
+                    C = n.useMemo(() => (b && f ? [Math.min(f, y[0]), Math.max(f, y[1])] : [y[0], y[1]]), [f, b, y]);
+                return n.createElement(
+                    d.Z,
+                    null,
+                    "COMPARISON" === i &&
+                        n.createElement(
+                            q.Z,
+                            { contentContainerStyle: pe.stockLegendContentContainer, horizontal: !0, style: pe.stockLegendContainer },
+                            e.map((e) => {
+                                const a = o[e.entity.symbol];
+                                return n.createElement(re.Z, { key: `legend-${e.entity.name}` }, ({ isHovered: o }) => n.createElement(d.Z, { onClick: () => t(e.entity.symbol), style: [pe.stockLegend, a ? pe.selectedStockLegend : void 0, o ? pe.hoveredStockLegend : void 0] }, n.createElement(m.ZP, { style: pe.stockLegendText, weight: "bold" }, e.entity.symbol), n.createElement(d.Z, { style: { ...pe.stockLegendColorLabel, backgroundColor: e.chartStyle.color } })));
+                            }),
+                        ),
+                    n.createElement(
+                        d.Z,
+                        { style: pe.stockGraph },
+                        n.createElement(
+                            se.Z,
+                            { className: me },
+                            n.createElement(
+                                Y.h,
+                                { height: de },
+                                n.createElement(
+                                    J.w,
+                                    { data: c, height: de, key: l },
+                                    n.createElement(Q.q, { fillOpacity: 0.6, horizontal: !0, stroke: u.default.theme.colors.hoverBlack, strokeDasharray: "1 0", vertical: !1 }),
+                                    b && f && n.createElement(X.d, { stroke: u.default.theme.colors.gray800, strokeDasharray: "1 5", y: f }),
+                                    n.createElement(ee.K, { axisLine: !1, dataKey: "dateTime", domain: g, tick: pe.tick, tickFormatter: p, tickLine: !1, ticks: "1D" === a ? void 0 : h, type: "1D" === a ? "number" : void 0 }),
+                                    n.createElement(te.B, {
+                                        axisLine: !1,
+                                        domain: C,
+                                        tick: pe.tick,
+                                        tickFormatter: (t) => {
+                                            if ("COMPARISON" === i) return `${D(t, 1)}%`;
+                                            let a = t.toString();
+                                            const n = y[1] - y[0];
+                                            return (a = n < 0.01 ? t.toFixed(3) : n < 0.1 ? t.toFixed(2) : n < 1 ? t.toFixed(1) : Math.round(t).toString()), `${e[0].entity.currentPrice.currency_symbol || ""}${M(a)}`;
+                                        },
+                                        tickLine: !1,
+                                    }),
+                                    n.createElement(ae.u, { content: n.createElement(le, null), cursor: { stroke: u.default.theme.colors.gray200, strokeDasharray: "1 0" }, isAnimationActive: !1 }),
+                                    e.map((e) => (o[e.entity.symbol] || !s ? n.createElement(ne.x, { activeDot: !1, connectNulls: !0, dataKey: "COMPARISON" === i ? `${e.entity.symbol}-percent-value` : `${e.entity.symbol}-price-value`, dot: !1, isAnimationActive: !1, key: `stock-line-${e.entity.symbol}`, stroke: e.chartStyle.color, strokeWidth: 2, type: "monotone" }) : null)),
+                                ),
+                            ),
+                        ),
+                    ),
+                );
+            }
+            const pe = u.default.create((e) => ({ stockLegendContainer: { marginBottom: e.spaces.space8, width: "100%", height: "max-content", flexGrow: 0 }, stockLegendContentContainer: { paddingBottom: e.spaces.space12, display: "flex", flexDirection: "row", gap: e.spaces.space4 }, stockLegend: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space12, borderRadius: e.borderRadii.large, backgroundColor: e.colors.gray0, height: "max-content" }, selectedStockLegend: { backgroundColor: e.colors.gray100 }, hoveredStockLegend: { backgroundColor: e.colors.gray50, cursor: "pointer" }, stockLegendText: { fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3 }, stockLegendColorLabel: { width: e.spaces.space8, height: e.spaces.space8, borderRadius: e.spaces.space8 }, stockGraph: { flex: 1, start: -25, position: "relative", bottom: -10 }, tick: { fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3, color: e.colors.gray900, fontFamily: e.fontFamilies.normal } }));
+            function ue({ periodOptions: e, selectedPeriod: t, setSelectedPeriod: a }) {
+                const o = n.useId();
+                return n.createElement(
+                    p.Z,
+                    { style: he.periodBar },
+                    e.map((e, r) => {
+                        const i = e === t;
+                        return n.createElement(re.Z, { key: `${e}-${o}` }, ({ isHovered: t }) => n.createElement(d.Z, { onClick: () => a(e), style: [he.period, i ? he.selectedPeriod : void 0, t ? he.hoveredPeriod : void 0] }, n.createElement(m.ZP, { style: he.periodText, weight: i ? "bold" : "normal" }, e)));
+                    }),
+                );
+            }
+            const he = u.default.create((e) => ({ periodBar: { width: "100%", display: "flex", flexDirection: "row", alignItems: "center" }, period: { display: "flex", justifyContent: "center", alignItems: "center", padding: e.spaces.space8, borderRadius: e.borderRadii.small, backgroundColor: "transparent", marginEnd: e.spaces.space8 }, hoveredPeriod: { backgroundColor: e.colors.gray100, cursor: "pointer" }, selectedPeriod: { backgroundColor: e.colors.gray100 }, periodText: { textAlign: "center", fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3 } })),
+                ge = g().bfd161bc;
+            function fe({ cardAttachment: e, isAnimated: t, isInline: a }) {
+                const [o, r] = n.useState({}),
+                    i = Object.keys(o).length > 0,
+                    { entitiesData: s, entitiesPercentChanges: l } = (function ({ cardAttachment: e }) {
+                        const t = n.useMemo(() => {
+                                const t = [u.default.theme.colors.blue700, u.default.theme.colors.green700, u.default.theme.colors.orange700, u.default.theme.colors.magenta700, u.default.theme.colors.plum700, u.default.theme.colors.purple700, u.default.theme.colors.red700, u.default.theme.colors.teal700, u.default.theme.colors.yellow700];
+                                return "COMPARISON" === e.variant ? e.entities.map((a, n) => ({ entity: { ...a, name: I(a.name) }, chartData: e.chartData[a.symbol] || e.chartData[a.name], chartStyle: { color: t[n % t.length] }, oneDayDataBreakdown: "STOCK" === a.assetType ? { price_data: T(e.chartData[a.symbol].price_data["1D"]), percent_data: T(e.chartData[a.symbol].percent_data["1D"]) } : null })) : [{ entity: { ...e.entity, name: I(e.entity.name) }, chartData: { price_data: e.chartData.price_data }, chartStyle: { color: t[0] }, oneDayDataBreakdown: { price_data: T(e.chartData.price_data["1D"]) } }];
+                            }, [e]),
+                            a = n.useMemo(() => {
+                                const e = {};
+                                function a(e, t, a) {
+                                    const n = e - t,
+                                        o = (n / t) * 100;
+                                    let r = k.NOCHANGE;
+                                    return n > 0 ? (r = k.UP) : n < 0 && (r = k.DOWN), { percentageChange: Math.abs(o) < 0.01 ? M(z(o)) : M(o.toFixed(2)), amountChange: Math.abs(n) < 0.01 ? M(z(n)) : M(n.toFixed(2)), direction: r };
+                                }
+                                return (
+                                    t.forEach((t) => {
+                                        if ("STOCK" === t.entity.assetType) {
+                                            const n = t.entity;
+                                            Object.keys(t.chartData.price_data).forEach((o) => {
+                                                if ("1D" === o && t.oneDayDataBreakdown) {
+                                                    const o = t.oneDayDataBreakdown.price_data.preMarket,
+                                                        r = t.oneDayDataBreakdown.price_data.afterHours,
+                                                        i = n.metrics.prevDayClose;
+                                                    e[n.symbol] = { "1D": { preMarket: o.length && i ? a(o[o.length - 1].value, i) : null, today: i ? a(t.entity.currentPrice.value, i) : null, afterHours: r.length && i ? a(r[r.length - 1].value, t.entity.currentPrice.value) : null } };
+                                                } else {
+                                                    const n = t.chartData.price_data[o];
+                                                    n.length > 0 && (e[t.entity.symbol] = { ...e[t.entity.symbol], [o]: a(n[n.length - 1].value, n[0].value) });
+                                                }
+                                            });
+                                        } else
+                                            ("TOKEN" !== t.entity.assetType && "COIN" !== t.entity.assetType) ||
+                                                Object.keys(t.chartData.price_data).forEach((n) => {
+                                                    const o = t.chartData.price_data[n];
+                                                    o.length > 0 && (e[t.entity.symbol] = { ...e[t.entity.symbol], [n]: a(o[o.length - 1].value, o[0].value) });
+                                                });
+                                    }),
+                                    e
+                                );
+                            }, [t]);
+                        return { entitiesData: t, entitiesPercentChanges: a };
+                    })({ cardAttachment: e }),
+                    c = n.useCallback(
+                        (e) => {
+                            const t = { ...o };
+                            o[e] ? delete t[e] : (t[e] = !0), r(t);
+                        },
+                        [o],
+                    ),
+                    h = s.length > 1,
+                    g = n.useMemo(() => {
+                        const e = [];
+                        return (
+                            s.forEach((t) => {
+                                Object.keys(t.chartData.price_data).forEach((a) => {
+                                    h ? t.chartData.percent_data && t.chartData.percent_data[a] && t.chartData.percent_data[a].length && t.chartData.price_data[a].length && !e.includes(a) && e.push(a) : t.chartData.price_data[a].length && !e.includes(a) && e.push(a);
+                                });
+                            }),
+                            e
+                        );
+                    }, [s, h]),
+                    [E, w] = n.useState(g[0] || "1D"),
+                    x = n.useMemo(() => [...s].sort((e, t) => (o[e.entity.symbol] && o[t.entity.symbol] ? 0 : o[e.entity.symbol] && !o[t.entity.symbol] ? -1 : o[t.entity.symbol] && !o[e.entity.symbol] ? 1 : 0)), [o, s]),
+                    v = s[0].entity;
+                return n.createElement(
+                    f.Z,
+                    { isAnimated: t, isInline: a, style: be.container },
+                    n.createElement(d.Z, { style: be.headerContainer }, h ? n.createElement(m.ZP, { style: be.header, weight: "bold" }, ge) : n.createElement(d.Z, { style: be.headerStockNameContainer }, "STOCK" === v.assetType && S[v.symbol] && n.createElement(y.Z, { resizeMode: "contain", source: S[v.symbol], style: be.logo }), ("TOKEN" === v.assetType || "COIN" === v.assetType) && C[v.name] && n.createElement(y.Z, { resizeMode: "contain", source: C[v.name], style: be.logo }), n.createElement(m.ZP, { style: be.header, weight: "bold" }, s[0].entity.name)), n.createElement(b.Z, { timestamp: e.created_at })),
+                    n.createElement(
+                        p.Z,
+                        { style: be.headerEntityContainer },
+                        x.map((e) => {
+                            const t = e.entity,
+                                a = l[t.symbol][E],
+                                r = i && !o[t.symbol];
+                            return n.createElement(V, { color: e.chartStyle.color, entity: t, key: `header-${t.symbol}`, multipleEntities: h, oneDayStockPriceChange: l[t.symbol]["1D"], selectedPeriod: E, stockPriceChange: a, style: [be.entity, r ? be.lessVisibleEntity : void 0] });
+                        }),
+                    ),
+                    n.createElement(ue, { periodOptions: g, selectedPeriod: E, setSelectedPeriod: w }),
+                    n.createElement(ye, { entitiesData: s, selectStockSymbol: c, selectedPeriod: E, selectedStockSymbols: o, timeZone: e.timeZone, variant: e.variant }),
+                    x.map((e) => n.createElement(j, { entity: e.entity, key: `${e.entity.symbol}-details}`, multipleEntities: h, style: i && !o[e.entity.symbol] ? be.lessVisibleEntity : void 0 })),
+                );
+            }
+            const be = u.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space12 }, headerStockNameContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, logo: { width: e.spaces.space16, height: e.spaces.space16 }, header: { fontSize: e.fontSizes.subtext2 }, headerContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: e.spaces.space8 }, headerEntityContainer: { width: "100%", display: "flex", flexDirection: "row" }, entity: { marginEnd: e.spaces.space16 }, lessVisibleEntity: { opacity: 0.3 } }));
+            a(543673), a(240753), a(128399);
+            var Ce = a(576648),
+                Se = a(739711),
+                ke = a(530732),
+                Ee = a(424028),
+                we = a(154003),
+                xe = a(757483),
+                ve = a(837020),
+                De = a(630715),
+                Ze = a(530243),
+                Pe = a(276259);
+            const Te = "https://artifacts.grokusercontent.com/third-party-image";
+            function Ie({ alt: e, iframeRef: t, messageHandlers: a, objectFit: o = "cover", src: r, style: i }) {
+                const s = n.useRef(null),
+                    l = t ?? s,
+                    [c, d] = n.useState(!1);
+                n.useEffect(() => {
+                    const e = () => d(!0),
+                        t = l.current;
+                    if (t)
+                        return (
+                            t.addEventListener("load", e),
+                            () => {
+                                t.removeEventListener("load", e);
+                            }
+                        );
+                }, [l.current]),
+                    n.useEffect(() => {
+                        const e = (e) => {
+                            if (!c) return;
+                            const t = a?.[e.data.type];
+                            t && t(e.data);
+                        };
+                        return window.addEventListener("message", e), () => window.removeEventListener("message", e);
+                    }, [a, l, c]);
+                const m = n.useCallback(
+                    (e, t) => {
+                        l.current?.contentWindow && l.current.contentWindow.postMessage({ type: "image", src: e, alt: t, objectFit: o }, Te);
+                    },
+                    [l, o],
+                );
+                return (
+                    n.useEffect(() => {
+                        c && m(r, e);
+                    }, [c, r, e]),
+                    n.createElement("iframe", { ref: l, sandbox: "allow-scripts allow-same-origin", src: Te, style: { ...ze.iframe, ...i }, tabIndex: -1, title: "image" })
+                );
+            }
+            const ze = u.default.create((e) => ({ iframe: { width: "100%", flex: 1, border: "none", pointerEvents: "none" } })),
+                Me = g().ia5e7488,
+                Ae = g().e05c00b4,
+                _e = g().ha9c4cf8,
+                Oe = g().d2d1d398,
+                $e = 1;
+            function Ne({ cardAttachment: e, isAnimated: t }) {
+                const { isCompactLayout: a } = (0, A.ZP)(),
+                    [o, r] = n.useState(null),
+                    [i, s] = n.useState(!1),
+                    [l, c] = n.useState(() => {
+                        const t = {};
+                        return (
+                            e.images.forEach((e) => {
+                                t[e.original] = "loading";
+                            }),
+                            t
+                        );
+                    }),
+                    y = n.useRef(null),
+                    p = n.useRef(null),
+                    u = n.useMemo(
+                        () => ({
+                            keydown: ({ key: e }) => {
+                                "Escape" === e && r(null);
+                            },
+                            onerror: ({ src: e }) => {
+                                e && c((t) => ({ ...t, [e]: "error" }));
+                            },
+                            image_data: ({ blob: e }) => {
+                                if (e) {
+                                    const t = URL.createObjectURL(e);
+                                    (0, Pe.uv)(t, "image.jpg");
+                                }
+                            },
+                        }),
+                        [],
+                    ),
+                    h = n.useMemo(() => e.images.slice(0, $e), [e.images]),
+                    g = (e) => {
+                        window.open(e, "_blank");
+                    };
+                return n.createElement(
+                    d.Z,
+                    { style: He.container },
+                    n.createElement(
+                        d.Z,
+                        { style: He.imagesCarousel },
+                        h.map((e) =>
+                            "error" === l[e.original]
+                                ? null
+                                : n.createElement(
+                                      ke.Z,
+                                      {
+                                          key: e.original,
+                                          onPress: () => {
+                                              r(e);
+                                          },
+                                          style: [He.imageContainer, { aspectRatio: e.original_width / e.original_height, height: a ? 200 : 450 }],
+                                          withoutInteractiveStyles: !0,
+                                      },
+                                      ({ isHovered: t }) =>
+                                          n.createElement(
+                                              n.Fragment,
+                                              null,
+                                              n.createElement(Ie, { alt: e.title, iframeRef: y, messageHandlers: u, src: e.original, style: He.modalImageIFrame }),
+                                              n.createElement(
+                                                  ke.Z,
+                                                  {
+                                                      onPress: (t) => {
+                                                          t.preventDefault(), t.stopPropagation(), g(e.link);
+                                                      },
+                                                      style: He.imageSourceOverlay,
+                                                      withoutInteractiveStyles: !0,
+                                                  },
+                                                  ({ isHovered: t }) => n.createElement(d.Z, { style: [He.imageSourcePill, t && He.imageSourcePillHovered] }, n.createElement(m.ZP, { style: He.imageOverlayText }, new URL(e.link).hostname.replace("www.", ""))),
+                                              ),
+                                              !1,
+                                          ),
+                                  ),
+                        ),
+                    ),
+                    n.createElement(
+                        Se.Z,
+                        { onDismiss: () => r(null), transparent: !0, visible: !!o },
+                        o &&
+                            n.createElement(
+                                Ee.Z,
+                                {
+                                    onKeyDown: (e) => {
+                                        const { altKey: t, ctrlKey: a, key: n, metaKey: o } = e;
+                                        !(t || a || o) && "Escape" === n && (r(null), e.preventDefault());
+                                    },
+                                },
+                                n.createElement(
+                                    ke.Z,
+                                    {
+                                        onPress: () => {
+                                            r(null);
+                                        },
+                                        withoutInteractiveStyles: !0,
+                                    },
+                                    n.createElement(
+                                        d.Z,
+                                        { style: [He.modalContent, a && He.compactModalContent] },
+                                        n.createElement(d.Z, { style: He.modalHeaderContainer }, n.createElement(we.ZP, { borderColor: "transparent", hoverLabel: { label: Me }, icon: n.createElement(ve.default, null), onClick: () => r(null) })),
+                                        n.createElement(d.Z, { style: [He.modalImageContainer, a && He.compactModalImageContainer] }, n.createElement(Ie, { alt: o.title, iframeRef: p, messageHandlers: u, objectFit: "contain", src: o.original })),
+                                        n.createElement(
+                                            d.Z,
+                                            { style: He.modalMenuContainer },
+                                            !1,
+                                            n.createElement(
+                                                we.ZP,
+                                                {
+                                                    backgroundColor: "transparent",
+                                                    borderColor: "transparent",
+                                                    hoverLabel: { label: Ae },
+                                                    icon: n.createElement(De.default, null),
+                                                    onClick: (e) => {
+                                                        e.preventDefault(), e.stopPropagation(), Ce.Z.setString(o.original || ""), s(!0);
+                                                    },
+                                                    size: "xLarge",
+                                                },
+                                                i ? Oe : Ae,
+                                            ),
+                                            n.createElement(
+                                                we.ZP,
+                                                {
+                                                    backgroundColor: "transparent",
+                                                    borderColor: "transparent",
+                                                    hoverLabel: { label: _e },
+                                                    icon: n.createElement(Ze.default, null),
+                                                    onClick: (e) => {
+                                                        e.preventDefault(), e.stopPropagation(), g(o.link);
+                                                    },
+                                                    size: "xLarge",
+                                                },
+                                                _e,
+                                            ),
+                                        ),
+                                    ),
+                                ),
+                            ),
+                    ),
+                );
+            }
+            const He = u.default.create((e) => ({
+                container: { width: "100%", marginBottom: e.spaces.space12 },
+                imagesCarousel: { width: "100%", flex: 1, display: "flex", flexDirection: "row", gap: e.spaces.space8, justifyContent: "center", alignItems: "center" },
+                imageContainer: { position: "relative", borderRadius: e.spaces.space8, overflow: "hidden", maxWidth: "100%" },
+                imageSourceOverlay: { position: "absolute", bottom: e.spaces.space8, end: e.spaces.space8 },
+                imageSourcePill: { backgroundColor: xe.Z.hexToCss(e.colors.alwaysBlack, 0.8), padding: e.spaces.space4, paddingHorizontal: e.spaces.space8, borderRadius: e.borderRadii.infinite, transition: "background-color 0.2s ease" },
+                imageSourcePillHovered: { backgroundColor: e.colors.alwaysBlack },
+                imageOverlayText: { color: e.colors.white, fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3 },
+                modalContent: { width: "100vw", height: "100vh", cursor: "default", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-between", padding: e.spaces.space16, backgroundColor: xe.Z.hexToCss(e.colors.cellBackground, 0.9) },
+                compactModalContent: { padding: e.spaces.space12 },
+                modalHeaderContainer: { display: "flex", flexDirection: "row", justifyContent: "flex-start", width: "100%" },
+                modalCloseIcon: { color: e.colors.brandColor, width: e.spaces.space16, height: e.spaces.space16 },
+                modalImageContainer: { width: "70vw", height: "70vh", animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", overflow: "hidden" },
+                compactModalImageContainer: { width: "90vw" },
+                modalImageIFrame: { objectFit: "contain", objectPosition: "center", width: "100%", height: "100%" },
+                modalMenuContainer: { display: "flex", flexDirection: "row", animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationFillMode: "both" },
+                imageActionsOverlay: { position: "absolute", top: 0, end: 0, margin: e.spaces.space8 },
+            }));
+            var Re = a(378030),
+                Le = a(394418),
+                Fe = a(306191),
+                je = a(641095),
+                Ke = a(544687),
+                Be = a(488662),
+                Ue = a(267272),
+                We = a(761434),
+                Ve = a(396184),
+                Ge = a(3644),
+                qe = a(598476),
+                Ye = a(353880);
+            function Je({ analysisEntityId: e, cardAttachment: t, conversationKey: a, isAnimated: d, isInline: m, userChatItemId: y }) {
+                const p = (0, i.z)(),
+                    u = (0, s.I0)(),
+                    h = (0, r.hC)("responsive_web_grok_sport_cards_enabled"),
+                    g = (0, r.hC)("responsive_web_grok_finance_cards_enabled"),
+                    f = (0, r.hC)("responsive_web_grok_places_card_enabled"),
+                    b = (0, r.hC)("responsive_web_grok_weather_card_enabled"),
+                    C = n.useCallback(
+                        (e) => {
+                            a && p && ((0, c.HR)(p, t, e), u((0, l.u)({ analytics: p, conversationKey: a })({ text: e, returnCitations: !1 })));
+                        },
+                        [p, a, u, t],
+                    ),
+                    S = n.useMemo(() => {
+                        if ("sports_card" === t.cardType && h) {
+                            switch (t.variant) {
+                                case "SportsStatsCard":
+                                    if (Ve.s8[t.sport] && Ve.s8[t.sport].stat) return (0, c.S7)(p, t), n.createElement(Ue.Z, { cardAttachment: t, isAnimated: d, isInline: m });
+                                    break;
+                                case "SportsTeamCard":
+                                    if (Ve.s8[t.sport] && Ve.s8[t.sport].team) return (0, c.S7)(p, t), n.createElement(We.Z, { cardAttachment: t, isAnimated: d, isInline: m, onSendPrompt: C });
+                                    break;
+                                case "SportsPlayerCard":
+                                    if (Ve.s8[t.sport] && Ve.s8[t.sport].player) return (0, c.S7)(p, t), n.createElement(je.Z, { cardAttachment: t, isAnimated: d, isInline: m, onSendPrompt: C });
+                                    break;
+                                case "SportsBoxscoreCard":
+                                    if (Ve.s8[t.sport] && Ve.s8[t.sport].boxscore) return (0, c.S7)(p, t), n.createElement(Fe.Z, { cardAttachment: t, isAnimated: d, isInline: m, onSendPrompt: C });
+                                    break;
+                                case "SportsScheduleCard":
+                                    if (Ve.s8[t.sport] && Ve.s8[t.sport].schedule) return (0, c.S7)(p, t), n.createElement(Ke.Z, { cardAttachment: t, isAnimated: d, isInline: m, onSendPrompt: C });
+                                    break;
+                                case "SportsStandingsCard":
+                                    if (Ve.s8[t.sport] && Ve.s8[t.sport].standing) return (0, c.S7)(p, t), n.createElement(Be.Z, { cardAttachment: t, isAnimated: d, isInline: m, onSendPrompt: C });
+                                    break;
+                                default:
+                                    return null;
+                            }
+                            return null;
+                        }
+                        return "geo_location_request" === t.cardType ? ((0, c.S7)(p, t), n.createElement(Re.Z, { analysisEntityId: e || "", cardAttachment: {}, conversationKey: a, isAnimated: d, userChatItemId: y || "" })) : "finance_card" !== t.cardType || ("SINGLE" !== t.variant && "COMPARISON" !== t.variant) || !g ? ("places_card" === t.cardType && f ? ((0, c.S7)(p, t), n.createElement(Le.Z, { cardAttachment: t, isAnimated: d, isInline: m })) : "weather_card" === t.cardType && b ? ((0, c.S7)(p, t), n.createElement(Ge.Z, { cardAttachment: t, isAnimated: d, isInline: m })) : "images_card" === t.cardType ? ((0, c.S7)(p, t), n.createElement(Ne, { cardAttachment: t, isAnimated: d })) : "x_posts_card" === t.cardType ? ((0, c.S7)(p, t), n.createElement(qe.Z, { cardAttachment: t })) : "x_users_card" === t.cardType ? ((0, c.S7)(p, t), n.createElement(Ye.Z, { cardAttachment: t })) : void 0) : ((0, c.S7)(p, t), n.createElement(fe, { cardAttachment: t, isAnimated: d, isInline: m }));
+                    }, [t, h, f, d, y, a, e, g, C, b, p, m]);
+                return n.createElement(o.Z, { hideOnError: !0 }, S);
+            }
+        },
+        572929: (e, t, a) => {
+            a.d(t, { Z: () => s });
+            var n = a(202784),
+                o = a(325686),
+                r = a(392237),
+                i = a(988290);
+            function s({ children: e, isAnimated: t, isInline: a, style: r }) {
+                const { isCompactLayout: s } = (0, i.ZP)();
+                return n.createElement(o.Z, { style: [l.container, a ? l.inlineContainer : void 0, s ? l.compactContainer : void 0, t ? l.animated : void 0, r] }, e);
+            }
+            const l = r.default.create((e) => ({ container: { backgroundColor: e.colors.gray0, marginHorizontal: e.spaces.space12, marginBottom: e.spaces.space12, paddingVertical: e.spaces.space16, paddingHorizontal: e.spaces.space16, borderRadius: e.spaces.space24, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray200 }, inlineContainer: { marginTop: 0, marginBottom: e.spaces.space16, marginHorizontal: 0 }, compactContainer: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space12, borderRadius: e.borderRadii.medium }, animated: { opacity: 1, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] } }));
+        },
+        339838: (e, t, a) => {
+            a.d(t, { Z: () => d });
+            var n = a(202784),
+                o = a(731708),
+                r = a(392237),
+                i = a(111677),
+                s = a.n(i),
+                l = a(988290);
+            const c = s().j5dcf1b2;
+            function d({ style: e, text: t, timestamp: a }) {
+                const { isCompactLayout: r } = (0, l.ZP)(),
+                    { timeZone: i } = window.Intl.DateTimeFormat().resolvedOptions(),
+                    s = new Intl.DateTimeFormat("en-US", { month: "short", year: "numeric", day: "numeric", hour: "numeric", minute: "numeric", timeZoneName: "short", timeZone: i }).format(new Date(a.endsWith("Z") ? a : `${a}Z`));
+                return t ? n.createElement(o.ZP, { style: [m.text, r ? m.compactText : void 0, e] }, `${c} ${s} • ${t}`) : n.createElement(o.ZP, { style: [m.text, r ? m.compactText : void 0, e] }, `${c} ${s}`);
+            }
+            const m = r.default.create((e) => ({ text: { color: e.colors.gray700, fontSize: e.fontSizes.subtext2, lineHeight: e.fontSizes.subtext2 }, compactText: { fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3 } }));
+        },
+        265687: (e, t, a) => {
+            a.d(t, { Z: () => p });
+            var n = a(202784),
+                o = a(214997),
+                r = a(325686),
+                i = a(392237),
+                s = a(111677),
+                l = a.n(s),
+                c = a(584316);
+            const d = l().ffd9cfe6,
+                m = l().bed99fe2,
+                y = 3;
+            function p({ rowStyle: e, colStyle: t, defaultRowRangeToShow: a, numIncrementalRowsToShow: i, fixedColIdx: s, headers: l, rows: p, seeLessLabel: u = m, seeMoreLabel: h = d, style: b }) {
+                const [C, S] = n.useState(!1),
+                    [k, E] = n.useState(() => (void 0 === a ? [0, p.length] : [a[0], Math.min(a[1], p.length)])),
+                    w = void 0 === a || 0 === p.length || (0 === a[0] && Math.min(a[1], p.length) === p.length),
+                    x = k[0] <= 0 && k[1] >= p.length,
+                    v = n.useMemo(() => p.slice(...k), [k, p]),
+                    D = n.useMemo(() => (void 0 === s ? null : n.createElement(g, { columnStyle: [t, f.fixedCol], header: l[s], rowStyle: [e, f.fixedColRow], rows: v.map((e) => e[s]) })), [s, l, v, e, t]),
+                    Z = n.useMemo(
+                        () =>
+                            n.createElement(
+                                o.Z,
+                                {
+                                    contentContainerStyle: f.scrollableTableContentContainerStyle,
+                                    horizontal: !0,
+                                    onScroll: (e) => {
+                                        const t = e.nativeEvent.contentOffset.x;
+                                        S(t > 0);
+                                    },
+                                    scrollEventThrottle: 16,
+                                    showsHorizontalScrollIndicator: !1,
+                                    style: f.scrollableTableContainer,
+                                },
+                                l.map((a, o) => {
+                                    const r = o === l.length - 1;
+                                    return s === o ? n.createElement(g, { columnStyle: f.emptyTableCol, header: null, key: `$col-${o}`, rowStyle: e, rows: v.map((e) => null) }) : n.createElement(g, { columnStyle: t, header: a, key: `$col-${o}`, rowStyle: [r ? f.lastColRow : void 0, e], rows: v.map((e) => e[o]) });
+                                }),
+                            ),
+                        [s, l, v, e, t],
+                    );
+                return n.createElement(
+                    r.Z,
+                    { style: b },
+                    n.createElement(r.Z, { style: f.tableContainer }, D, n.createElement(r.Z, { style: f.rightTableContainer }, C && n.createElement(r.Z, { style: f.shadow }), Z)),
+                    !w &&
+                        n.createElement(c.Z, {
+                            onClick: () => {
+                                E(x && a ? a : [0, Math.min(k[1] + (i || y), p.length)]);
+                            },
+                            seeLessLabel: u,
+                            seeMoreLabel: h,
+                            showingMore: x,
+                            style: f.seeMore,
+                        }),
+                );
+            }
+            const u = ({ children: e, style: t }) => n.createElement(r.Z, { style: [f.col, t] }, e),
+                h = ({ children: e, isHeaderRow: t, isLastRow: a, style: o }) => n.createElement(r.Z, { style: [f.row, t ? f.headerRow : void 0, a ? f.lastRow : void 0, o] }, e),
+                g = ({ columnStyle: e, header: t, rowStyle: a, rows: o }) =>
+                    n.createElement(
+                        u,
+                        { style: e },
+                        n.createElement(h, { isHeaderRow: !0, style: a }, t),
+                        o.map((e, t) => n.createElement(h, { isLastRow: t === o.length - 1, key: `row-${t}`, style: a }, e)),
+                    ),
+                f = i.default.create((e) => ({ tableContainer: { display: "flex", flexDirection: "row", flex: 1 }, rightTableContainer: { flex: 1, position: "relative" }, shadow: { position: "absolute", start: -1, top: 0, bottom: 0, width: e.spaces.space24, backgroundImage: `linear-gradient(90deg, ${e.colors.gray0} 0%, transparent 100%)`, zIndex: 1 }, scrollableTableContainer: { flex: 1 }, scrollableTableContentContainerStyle: { display: "flex", flexDirection: "row", flex: 1 }, col: { display: "flex", flexDirection: "column", alignItems: "flex-end" }, fixedCol: { alignItems: "flex-start", flex: "unset", width: "unset" }, emptyTableCol: { display: "flex", flex: 1 }, row: { display: "flex", flexDirection: "column", alignItems: "inherit", justifyContent: "center", borderTopWidth: 0.5, borderStyle: "solid", borderColor: e.colors.gray200, fontSize: e.fontSizes.subtext2, height: e.spaces.space40, flex: 1, width: "100%", paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, fixedColRow: { paddingHorizontal: 0, paddingEnd: e.spaces.space12 }, lastColRow: { paddingEnd: 0 }, headerRow: { borderTopWidth: "none", paddingTop: 0 }, lastRow: { paddingBottom: 0 }, seeMore: { marginTop: e.spaces.space16 } }));
+        },
+        584316: (e, t, a) => {
+            a.d(t, { Z: () => i });
+            var n = a(202784),
+                o = a(466792),
+                r = a(731708);
+            function i({ onClick: e, seeLessLabel: t, seeMoreLabel: a, showingMore: i, style: l }) {
+                return n.createElement(o.Z, null, ({ isHovered: o }) => n.createElement(r.ZP, { onClick: e, style: [s.seeMore, o ? s.seeMoreHovered : void 0, l], weight: "medium" }, i ? t : a));
+            }
+            const s = a(392237).default.create((e) => ({ seeMore: { alignSelf: "center", textAlign: "center", fontSize: e.fontSizes.subtext3, paddingVertical: e.spaces.space4, paddingHorizontal: e.spaces.space8, borderRadius: e.borderRadii.xLarge, transition: "background-color 0.1s ease", backgroundColor: "transparent", lineHeight: e.fontSizes.subtext3 }, seeMoreHovered: { backgroundColor: e.colors.gray100, cursor: "pointer" } }));
+        },
+        340690: (e, t, a) => {
+            a.d(t, { Z: () => c });
+            a(136728);
+            var n = a(202784),
+                o = a(325686),
+                r = a(392237),
+                i = a(166852),
+                s = a(618770);
+            const l = "image/jpeg";
+            function c({ cardAttachments: e, isAborted: t, isStreaming: a, messageId: r }) {
+                const c = n.useMemo(() => (0, i.Z)(e.map((e) => e.imageAttachment.mediaId)), [e]),
+                    m = n.useMemo(() => {
+                        if (0 === c.length) return [{ fileName: "image", mimeType: l }];
+                        const t = [];
+                        return (
+                            c.forEach((a) => {
+                                const n = e.find((e) => e.imageAttachment.mediaId === a && 100 === e.imageAttachment.progress);
+                                n ? t.push({ fileName: n.imageAttachment.fileName, mimeType: n.imageAttachment.mimeType, mediaId: n.imageAttachment.mediaIdStr, url: n.imageAttachment.imageUrl }) : t.push({ fileName: "image", mimeType: l });
+                            }),
+                            t
+                        );
+                    }, [e, c]),
+                    y = n.useMemo(() => e.map((e) => ({ imageId: Number(e.imageAttachment.mediaId), imageIdStr: e.imageAttachment.mediaIdStr, imageUrl: e.imageAttachment.imageUrl, progress: e.imageAttachment.progress / 100 })), [e]);
+                return n.createElement(o.Z, { style: d.container }, n.createElement(s.K, { fileAttachments: m, intermediateImageResults: y, isAborted: t, isInline: !0, isLoading: a, messageId: r }));
+            }
+            const d = r.default.create((e) => ({ container: { width: "100%", display: "flex", justifyContent: "center", alignItems: "center", marginBottom: e.spaces.space16, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationFillMode: "both" } }));
+        },
+    },
+]);
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Grok~loader.Markdown-d49ace54.1e22374a.js.map

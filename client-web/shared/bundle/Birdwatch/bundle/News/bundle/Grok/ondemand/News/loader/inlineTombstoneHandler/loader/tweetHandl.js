@@ -9,75 +9,75 @@
         231214: (e, t, i) => {
             i.d(t, { Z: () => n });
             i(202784);
-            const n = (0, i(523561).Z)({ loader: () => Promise.all([i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"), i.e("ondemand.IntentPrompt")]).then(i.bind(i, 958679)) });
+            const n = (0, i(523561).Z)({ loader: () => Promise.all([i.e("icons.6"), i.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"), i.e("ondemand.IntentPrompt")]).then(i.bind(i, 958679)) });
         },
         400196: (e, t, i) => {
-            i.d(t, { Z9: () => pt, ZP: () => wt });
+            i.d(t, { Z9: () => pt, ZP: () => bt });
             var n = i(807896),
                 o = (i(136728), i(202784)),
                 s = i(325686),
                 r = i(782261),
                 a = i(384153),
-                l = i(341189),
-                d = i(542908),
+                d = i(341189),
+                l = i(542908),
                 c = i(966582),
                 h = i(175993),
                 u = i(111677),
-                _ = i.n(u),
-                m = i(516951),
+                m = i.n(u),
+                _ = i(516951),
                 p = i(912021),
-                w = i(908478),
-                b = i(933794),
+                b = i(908478),
+                w = i(933794),
                 C = i(745153),
                 k = i(392237),
                 g = i(530745),
                 v = i(731708),
                 y = i(154003);
-            const f = _().gf5e9ea6;
-            function T({ heading: e, onUndoClick: t, subheading: i, withUndo: n }) {
-                return o.createElement(s.Z, { style: A.header }, o.createElement(s.Z, { "aria-live": "polite", style: A.headerSectionLeft }, o.createElement(v.ZP, { size: "headline2", weight: "bold" }, e), o.createElement(v.ZP, { color: "gray700" }, i)), o.createElement(s.Z, null, n && o.createElement(y.ZP, { onClick: t, style: A.headerUndoButton, type: "primaryOutlined" }, f)));
+            const f = m().gf5e9ea6;
+            function A({ heading: e, onUndoClick: t, subheading: i, withUndo: n }) {
+                return o.createElement(s.Z, { style: T.header }, o.createElement(s.Z, { "aria-live": "polite", style: T.headerSectionLeft }, o.createElement(v.ZP, { size: "headline2", weight: "bold" }, e), o.createElement(v.ZP, { color: "gray700" }, i)), o.createElement(s.Z, null, n && o.createElement(y.ZP, { onClick: t, style: T.headerUndoButton, type: "primaryOutlined" }, f)));
             }
-            const A = k.default.create(({ spaces: e }) => ({ header: { alignItems: "flex-start", flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", marginBottom: e.space20 }, headerSectionLeft: { flex: "1" }, headerUndoButton: { minWidth: e.space72 } }));
-            var I = i(143670);
-            function S({ item: e, onItemClick: t }) {
-                const { Icon: i, disabled: n, link: s, subText: r, testID: a, text: l } = e,
-                    d = o.useCallback(() => {
+            const T = k.default.create(({ spaces: e }) => ({ header: { alignItems: "flex-start", flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", marginBottom: e.space20 }, headerSectionLeft: { flex: "1" }, headerUndoButton: { minWidth: e.space72 } }));
+            var S = i(143670);
+            function M({ item: e, onItemClick: t }) {
+                const { Icon: i, disabled: n, link: s, subText: r, testID: a, text: d } = e,
+                    l = o.useCallback(() => {
                         e.onClick?.(), t?.(e);
                     }, [e, t]),
-                    c = o.useCallback(() => (i ? o.createElement(i, { style: E.icon }) : null), [i]);
-                return o.createElement(I.Z, { Icon: c, actionSubText: r, actionText: l, disabled: n, link: s, onClick: d, style: E.item, testID: a });
+                    c = o.useCallback(() => (i ? o.createElement(i, { style: I.icon }) : null), [i]);
+                return o.createElement(S.Z, { Icon: c, actionSubText: r, actionText: d, disabled: n, link: s, onClick: l, style: I.item, testID: a });
             }
-            const E = k.default.create(({ spaces: e }) => ({ icon: { marginEnd: e.space24 }, item: { paddingHorizontal: e.space8 } })),
-                P = _().f376e9d4,
-                x = _().d7c93b6c,
-                M = _().b3abacee;
-            function Z({ heading: e = x, items: t, onItemClick: i, onMenuDismiss: n, onUndoClick: r, style: a, subheading: l = M, withUndo: d = !0, "aria-label": c = P }) {
+            const I = k.default.create(({ spaces: e }) => ({ icon: { marginEnd: e.space24 }, item: { paddingHorizontal: e.space8 } })),
+                D = m().f376e9d4,
+                P = m().d7c93b6c,
+                E = m().b3abacee;
+            function x({ heading: e = P, items: t, onItemClick: i, onMenuDismiss: n, onUndoClick: r, style: a, subheading: d = E, withUndo: l = !0, "aria-label": c = D }) {
                 const h = o.useCallback(
                         (e) => {
                             ((e) => !(e.altKey || e.ctrlKey || e.metaKey) && e.key === g.nQ)(e) && n();
                         },
                         [n],
                     ),
-                    u = o.useMemo(() => t.map((e) => (!e?.text || e.excludeFromActionMenu ? null : o.createElement(S, { item: e, key: e.text, onItemClick: i }))), [t, i]),
-                    _ = o.useMemo(() => [U.container, a], [a]);
-                return o.createElement(C.Z, null, o.createElement(s.Z, { onKeyUp: h, style: _ }, o.createElement(T, { heading: e, onUndoClick: r, subheading: l, withUndo: d }), o.createElement(s.Z, { "aria-label": c, role: "menu" }, u)));
+                    u = o.useMemo(() => t.map((e) => (!e?.text || e.excludeFromActionMenu ? null : o.createElement(M, { item: e, key: e.text, onItemClick: i }))), [t, i]),
+                    m = o.useMemo(() => [R.container, a], [a]);
+                return o.createElement(C.Z, null, o.createElement(s.Z, { onKeyUp: h, style: m }, o.createElement(A, { heading: e, onUndoClick: r, subheading: d, withUndo: l }), o.createElement(s.Z, { "aria-label": c, role: "menu" }, u)));
             }
-            const U = k.default.create((e) => ({ container: { paddingTop: e.spaces.space12, paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } }));
-            var R = i(530525),
-                B = i(439592),
-                D = i(529356);
+            const R = k.default.create((e) => ({ container: { paddingTop: e.spaces.space12, paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } }));
+            var Z = i(530525),
+                U = i(439592),
+                B = i(529356);
             const L = i.p + "pin-tweet-reply.767a297a.png",
-                F = _().j24c37b2,
-                N = _().a2411360,
-                O = _().e8a14626,
-                H = _().d41305a8,
-                V = ({ style: e }) => o.createElement(s.Z, { style: e }, o.createElement(R.Z, { "aria-label": H, aspectMode: B.Z.exact(1.5), image: L })),
-                W = ({ onClose: e }) => o.createElement(D.Z, { actionLabel: F, graphic: V, graphicDisplayMode: "illustrationFullWidth", headline: N, isFullHeightOnMobile: !1, onAction: e, onClose: e, subtext: O, withCloseButton: !1 });
+                N = m().j24c37b2,
+                F = m().a2411360,
+                H = m().e8a14626,
+                O = m().d41305a8,
+                V = ({ style: e }) => o.createElement(s.Z, { style: e }, o.createElement(Z.Z, { "aria-label": O, aspectMode: U.Z.exact(1.5), image: L })),
+                W = ({ onClose: e }) => o.createElement(B.Z, { actionLabel: N, graphic: V, graphicDisplayMode: "illustrationFullWidth", headline: F, isFullHeightOnMobile: !1, onAction: e, onClose: e, subtext: H, withCloseButton: !1 });
             var K = i(808692),
                 q = i(622200),
                 z = i(459284),
-                Q = i(376293),
-                G = i(148838),
+                G = i(376293),
+                Q = i(148838),
                 j = i(312922),
                 X = i(270130),
                 $ = i(663550),
@@ -91,77 +91,77 @@
                 se = i(788993),
                 re = i(725516),
                 ae = i(443781),
-                le = i(231214),
-                de = i(324260),
+                de = i(231214),
+                le = i(324260),
                 ce = i(177371),
                 he = i(352975),
                 ue = i(383494),
-                _e = i(267077),
-                me = i(71620),
+                me = i(267077),
+                _e = i(71620),
                 pe = i(870358),
-                we = i(988566),
-                be = i(668214),
+                be = i(988566),
+                we = i(668214),
                 Ce = i(481242),
                 ke = i(575652),
                 ge = i(491963),
                 ve = i(175856),
                 ye = i(997174),
                 fe = i(80890),
-                Te = i(694180),
-                Ae = i(629196),
-                Ie = i(390387),
-                Se = i(38562),
-                Ee = i(601576),
-                Pe = i(466380),
-                xe = i(836255),
-                Me = i(695427),
-                Ze = i(268617),
-                Ue = i(919022);
-            const Re = (e, t) => (0, fe.MW)(e, t.tweetId),
-                Be = (e, { urtAdvertiser: t, urtPromotedContent: i }) => {
+                Ae = i(694180),
+                Te = i(629196),
+                Se = i(390387),
+                Me = i(38562),
+                Ie = i(601576),
+                De = i(466380),
+                Pe = i(836255),
+                Ee = i(695427),
+                xe = i(268617),
+                Re = i(919022);
+            const Ze = (e, t) => (0, fe.MW)(e, t.tweetId),
+                Ue = (e, { urtAdvertiser: t, urtPromotedContent: i }) => {
                     if (e && i) {
                         const n = e.promoted_content;
                         return { ...e, promoted_content: { adMetadataContainer: i.adMetadataContainer, disclosure_type: i.disclosureType, experiment_values: i.experimentValues, impression_id: i.impressionId, advertiser: t ? { id_str: t.id_str } : void 0, advertiser_name: t?.name || void 0, click_tracking_info: i.clickTrackingInfo, ...n } };
                     }
                     return e;
                 },
-                De = (e, t) => t.socialContext,
+                Be = (e, t) => t.socialContext,
                 Le = (e, t) => {
                     const i = t.socialContext && t.socialContext.topicContext;
-                    return i ? Pe.Z.select(e, i.topicId) : void 0;
+                    return i ? De.Z.select(e, i.topicId) : void 0;
                 },
-                Fe = (e, t) => {
+                Ne = (e, t) => {
                     const i = t.tweetId,
-                        n = i && xe.Z.select(e, i);
+                        n = i && Pe.Z.select(e, i);
                     return n ? (0, ge.z0)(e, n) : void 0;
                 },
-                Ne = (0, _e.Z)((e) => ({ current: e })),
-                Oe = xe.Z.createHydratedTweetSelectorWeakMap((e, t) => Ne(t.tweetId)),
-                He = (e, t) => {
-                    const i = Oe(e, t),
+                Fe = (0, me.Z)((e) => ({ current: e })),
+                He = Pe.Z.createHydratedTweetSelectorWeakMap((e, t) => Fe(t.tweetId)),
+                Oe = (e, t) => {
+                    const i = He(e, t),
                         n = i?.quoted_status;
                     return n ? (0, ge.z0)(e, n) : void 0;
                 },
                 Ve = (e, t) => t.urtPromotedContent,
-                We = (e, { urtPromotedContent: t }) => (t ? Ue.ZP.select(e, t.advertiserId) : null),
-                Ke = xe.Z.createHydratedTweetSelectorWeakMap((e, t) => Ne(t.contextTweetId)),
+                We = (e, { urtPromotedContent: t }) => (t ? Re.ZP.select(e, t.advertiserId) : null),
+                Ke = Pe.Z.createHydratedTweetSelectorWeakMap((e, t) => Fe(t.contextTweetId)),
                 qe = (e, t) => (0, ve.t5)(e, ve.vA),
-                ze = (0, be.Z)()
-                    .propsFromState(() => ({ articleDomains: ke.cb, community: Fe, contextTweet: Ke, displaySensitiveMedia: Se.f1, explicitSocialContext: De, isActiveCreator: Ie.WM, isInEditHistory: Me.l0, isNsfwUser: Se.EF, isPinned: Re, pinnedRepliesEducationFlag: qe, quoteTweetCommunity: He, topic: Le, tweet: Oe, tweetDetailNav: ye.wZ, urtAdvertiser: We, urtPromotedContent: Ve, userCountry: Ie.GG, userLanguage: Ie.VT, viewerUser: Ue.ZP.selectViewerUser }))
-                    .adjustStateProps(({ articleDomains: e, community: t, contextTweet: i, displaySensitiveMedia: n, explicitSocialContext: o, isActiveCreator: s, isInEditHistory: r, isNsfwUser: a, isPinned: l, pinnedRepliesEducationFlag: d, quoteTweetCommunity: c, topic: h, tweet: u, tweetDetailNav: _, urtAdvertiser: m, urtPromotedContent: p, userCountry: w, userLanguage: b, viewerUser: C }) => {
-                        const k = u && (0, we.D$)(u, C?.id_str),
+                ze = (0, we.Z)()
+                    .propsFromState(() => ({ articleDomains: ke.cb, community: Ne, contextTweet: Ke, displaySensitiveMedia: Me.f1, explicitSocialContext: Be, isActiveCreator: Se.WM, isInEditHistory: Ee.l0, isNsfwUser: Me.EF, isPinned: Ze, pinnedRepliesEducationFlag: qe, quoteTweetCommunity: Oe, topic: Le, tweet: He, tweetDetailNav: ye.wZ, urtAdvertiser: We, urtPromotedContent: Ve, userCountry: Se.GG, userLanguage: Se.VT, viewerUser: Re.ZP.selectViewerUser }))
+                    .adjustStateProps(({ articleDomains: e, community: t, contextTweet: i, displaySensitiveMedia: n, explicitSocialContext: o, isActiveCreator: s, isInEditHistory: r, isNsfwUser: a, isPinned: d, pinnedRepliesEducationFlag: l, quoteTweetCommunity: c, topic: h, tweet: u, tweetDetailNav: m, urtAdvertiser: _, urtPromotedContent: p, userCountry: b, userLanguage: w, viewerUser: C }) => {
+                        const k = u && (0, be.D$)(u, C?.id_str),
                             g = u?.card?.binding_values?.domain?.string_value,
                             v = (0, ke.ex)(e, g),
                             y = u?.quoted_status,
-                            f = y ? (0, we.D$)(y, C?.id_str, c) : void 0,
-                            T = f && (0, we.rl)(f),
-                            A = (0, pe.uA)(t?.role),
-                            I = o || k;
-                        return { contextTweet: i, displaySensitiveMedia: n, isActiveCreator: s, isCardArticle: v, isInEditHistory: r, isNsfwUser: a, isPinned: l, pinnedRepliesEducationFlag: d, promotedContentAdvertiser: m || void 0, quoteTweetSocialContextProps: T, socialContext: I, socialContextColor: (0, pe.J2)(t, I), topic: h, tweet: Be(u, { urtPromotedContent: p, urtAdvertiser: m }), tweetDetailNav: _, userCountry: w, userLanguage: b, viewerUser: C, withCommunityModerationAuthority: A };
+                            f = y ? (0, be.D$)(y, C?.id_str, c) : void 0,
+                            A = f && (0, be.rl)(f),
+                            T = (0, pe.uA)(t?.role),
+                            S = o || k;
+                        return { contextTweet: i, displaySensitiveMedia: n, isActiveCreator: s, isCardArticle: v, isInEditHistory: r, isNsfwUser: a, isPinned: d, pinnedRepliesEducationFlag: l, promotedContentAdvertiser: _ || void 0, quoteTweetSocialContextProps: A, socialContext: S, socialContextColor: (0, pe.J2)(t, S), topic: h, tweet: Ue(u, { urtPromotedContent: p, urtAdvertiser: _ }), tweetDetailNav: m, userCountry: b, userLanguage: w, viewerUser: C, withCommunityModerationAuthority: T };
                     })
-                    .propsFromActions(() => ({ addToast: Ee.fz, addPinnedReplyEducationFlag: () => (0, ve.pj)(ve.vA), block: Ue.ZP.block, createLocalApiErrorHandler: (0, me.zr)("TWEET_CONTAINER_CONTEXT"), fetchCommunityIfNeeded: ge.ZP.fetchOneIfNeeded, fetchTopicIfNeeded: Pe.Z.fetchOneIfNeeded, like: xe.Z.like, log: Te.cM, mute: Ae.r, onUnretweet: Ze.Z, richScribeAction: Ce.richScribeAction, setArticlesVisited: ke.Ji, undoTopicNotInterested: Pe.Z.undoNotInterested, unblock: Ue.ZP.unblock, unlike: xe.Z.unlike, unmute: Ue.ZP.unmute }));
-            var Qe = i(759469),
-                Ge = i(125363);
+                    .propsFromActions(() => ({ addToast: Ie.fz, addPinnedReplyEducationFlag: () => (0, ve.pj)(ve.vA), block: Re.ZP.block, createLocalApiErrorHandler: (0, _e.zr)("TWEET_CONTAINER_CONTEXT"), fetchCommunityIfNeeded: ge.ZP.fetchOneIfNeeded, fetchTopicIfNeeded: De.Z.fetchOneIfNeeded, like: Pe.Z.like, log: Ae.cM, mute: Te.r, onUnretweet: xe.Z, richScribeAction: Ce.richScribeAction, setArticlesVisited: ke.Ji, undoTopicNotInterested: De.Z.undoNotInterested, unblock: Re.ZP.unblock, unlike: Pe.Z.unlike, unmute: Re.ZP.unmute }));
+            var Ge = i(759469),
+                Qe = i(125363);
             var je = i(390686),
                 Xe = i(555492),
                 $e = i(306677);
@@ -209,12 +209,12 @@
             function nt(e) {
                 return o.createElement(Xe.Z.Consumer, null, ({ heightsReady: t }) => o.createElement(it, (0, n.Z)({}, e, { heightsReady: t })));
             }
-            const ot = _().f277e94a,
-                st = _().b52a940c,
-                rt = _().da59404c,
-                at = _().e267df68,
-                lt = _().d5f162b6,
-                dt = { [se.Z.Retweet]: !0, [se.Z.Pin]: !0, [se.Z.Community]: !0, [se.Z.ReplyPin]: !0, [se.Z.Bird]: !0 };
+            const ot = m().f277e94a,
+                st = m().b52a940c,
+                rt = m().da59404c,
+                at = m().e267df68,
+                dt = m().d5f162b6,
+                lt = { [se.Z.Retweet]: !0, [se.Z.Pin]: !0, [se.Z.Community]: !0, [se.Z.ReplyPin]: !0, [se.Z.Bird]: !0 };
             class ct extends o.Component {
                 constructor(e, t) {
                     super(e, t),
@@ -231,7 +231,7 @@
                         (this._renderBlockOrUnblockConfirmationSheet = () => {
                             const { tweet: e } = this.props,
                                 { user: t } = e;
-                            return (0, Q.ed)({ confirmation: (0, Q.LI)(t, this.context.featureSwitches.isTrue("xprofile_blocked_by_view_enabled")), onClose: this._handleBlockOrUnblockConfirmClose, handleConfirm: this._handleBlockOrUnblockUserConfirm });
+                            return (0, G.ed)({ confirmation: (0, G.LI)(t, this.context.featureSwitches.isTrue("xprofile_blocked_by_view_enabled")), onClose: this._handleBlockOrUnblockConfirmClose, handleConfirm: this._handleBlockOrUnblockUserConfirm });
                         }),
                         (this._handleShowReportedTweet = () => {
                             this.setState({ displayReported: !0, enableKeyboardShortcuts: !1 });
@@ -263,33 +263,33 @@
                             this._handleBlockOrUnblockConfirmClose(), e && e();
                         }),
                         (this._getBaseTweetProps = () => {
-                            const { analytics: e, contextualClientEventInfo: t, conversationTreeMetadata: i, feedbackItems: n, focalTweetId: o, forwardPivotInfo: s, isActiveCreator: a, isInEditHistory: l, isNsfwUser: d, isPinned: c, onTweetDismiss: h, ruxContext: u, saveAsRecentSearch: _, shouldStoreTypeaheadItem: m, socialContext: p, topicFollowPrompt: w, tweet: b, userCountry: C, userLanguage: k, withActionsDisabled: g, withCommunityModerationAuthority: v, withCurationMenu: y, withHideReply: f, withMuteConversation: T, withUnhideReply: A, withViewHiddenReplies: I } = this.props,
-                                S = r.Z.getOriginalTweet(b),
-                                E = this._getPromotedContent(),
-                                P = e.contextualScribeData?.items?.[0].suggestion_details,
-                                x = this._isSelected(),
-                                { viewerUserId: M } = this.context,
-                                Z = S?.user?.id_str === M,
-                                U = !S.in_reply_to_status_id_str && Z && !S.community_id_str,
-                                R = this._renderConversationControlsTooltip();
+                            const { analytics: e, contextualClientEventInfo: t, conversationTreeMetadata: i, feedbackItems: n, focalTweetId: o, forwardPivotInfo: s, isActiveCreator: a, isInEditHistory: d, isNsfwUser: l, isPinned: c, onTweetDismiss: h, ruxContext: u, saveAsRecentSearch: m, shouldStoreTypeaheadItem: _, socialContext: p, topicFollowPrompt: b, tweet: w, userCountry: C, userLanguage: k, withActionsDisabled: g, withCommunityModerationAuthority: v, withCurationMenu: y, withHideReply: f, withMuteConversation: A, withUnhideReply: T, withViewHiddenReplies: S } = this.props,
+                                M = r.Z.getOriginalTweet(w),
+                                I = this._getPromotedContent(),
+                                D = e.contextualScribeData?.items?.[0].suggestion_details,
+                                P = this._isSelected(),
+                                { viewerUserId: E } = this.context,
+                                x = M?.user?.id_str === E,
+                                R = !M.in_reply_to_status_id_str && x && !M.community_id_str,
+                                Z = this._renderConversationControlsTooltip();
                             return {
                                 inlineCalloutInfo: this._getInlineCalloutInfo(),
-                                isFocal: o === b.id_str,
-                                isInEditHistory: l,
+                                isFocal: o === w.id_str,
+                                isInEditHistory: d,
                                 onAnalyticsClick: this._handleAnalyticsClick,
                                 onAvatarClick: this._handleAvatarClick,
                                 onBirdwatchNotesIconClick: this._handleBirdwatchNotesIconClick,
                                 onBirdwatchNotesIconShown: this._handleBirdwatchNotesIconShown,
                                 onBlur: this._handleBlur,
                                 onCardLinkClick: this._handleCardLinkClick,
-                                onClick: b.isPreview ? this._handlePreviewClick : this._handleTweetClick,
+                                onClick: w.isPreview ? this._handlePreviewClick : this._handleTweetClick,
                                 onEngagementsClick: this._handleEngagementsClick,
                                 onEntityClick: this._handleEntityClick,
                                 onFocus: this._handleFocus,
                                 onFosnrAuthorLabelImpression: this._handleFosnrAuthorAppealImpression,
                                 onFosnrAuthorAppealClick: this._handleFosnrAuthorAppealClick,
                                 onLikeSuccess: this._handleLikeSuccess,
-                                onMediaClick: b.isPreview ? this._handleEmbeddedMediaPreviewClick : this._handleEmbeddedMediaClick,
+                                onMediaClick: w.isPreview ? this._handleEmbeddedMediaPreviewClick : this._handleEmbeddedMediaClick,
                                 onMediaHashtagHighlightClick: this._handleMediaHashtagHighlightClick,
                                 onModeratedIconClick: this._handleModeratedIconClick,
                                 onModeratedIconShown: this._handleModeratedIconShown,
@@ -313,20 +313,20 @@
                                 onUserFollowIndicatorClick: this._handleUserFollowIndicator,
                                 onUserFollowIndicatorDismissClick: this._handleUserFollowIndicatorDismiss,
                                 onUserFollowIndicatorLearnMoreClick: this._handleUserFollowIndicatorLearnMoreClick,
-                                promotedContent: E,
-                                renderCurationActionMenu: y && !b.isPreview ? this._getRenderCurationActionMenu(s && s.displayType, s && s.landingUrl, n, a, g, d, c, x, this._handleCaretClick, h, E, S, f, v, T, A, U, I, i, R, C, k, this._setLeaveBehindActionItems, this._shouldRenderImmediateDismiss()) : void 0,
-                                renderPrerollActionMenu: this._getRenderPrerollActionMenu(a, d, h, E, S, C, k),
-                                saveAsRecentSearch: _,
-                                shouldStoreTypeaheadItem: m,
-                                to: { state: { focal: S.id_str, socialContext: p, contextualClientEventInfo: t, contextTweetId: b.id_str, promotedContent: E, suggestionDetails: P, topicFollowPrompt: w }, pathname: S.permalink, query: u ? { cxt: u } : void 0 },
+                                promotedContent: I,
+                                renderCurationActionMenu: y && !w.isPreview ? this._getRenderCurationActionMenu(s && s.displayType, s && s.landingUrl, n, a, g, l, c, P, this._handleCaretClick, h, I, M, f, v, A, T, R, S, i, Z, C, k, this._setLeaveBehindActionItems, this._shouldRenderImmediateDismiss()) : void 0,
+                                renderPrerollActionMenu: this._getRenderPrerollActionMenu(a, l, h, I, M, C, k),
+                                saveAsRecentSearch: m,
+                                shouldStoreTypeaheadItem: _,
+                                to: { state: { focal: M.id_str, socialContext: p, contextualClientEventInfo: t, contextTweetId: w.id_str, promotedContent: I, suggestionDetails: D, topicFollowPrompt: b }, pathname: M.permalink, query: u ? { cxt: u } : void 0 },
                             };
                         }),
                         (this._getReaderModeTweetProps = () => {
-                            const { analytics: e, contextualClientEventInfo: t, hideHighlightedUserLabel: i, ruxContext: n, socialContext: o, topicFollowPrompt: s, tweet: a, tweetTextSize: l } = this.props,
-                                d = r.Z.getOriginalTweet(a),
+                            const { analytics: e, contextualClientEventInfo: t, hideHighlightedUserLabel: i, ruxContext: n, socialContext: o, topicFollowPrompt: s, tweet: a, tweetTextSize: d } = this.props,
+                                l = r.Z.getOriginalTweet(a),
                                 c = this._getPromotedContent(),
                                 h = e.contextualScribeData?.items?.[0].suggestion_details;
-                            return { hideHighlightedUserLabel: i, onAnalyticsClick: m.Z, onAvatarClick: m.Z, onBlur: this._handleBlur, onCardLinkClick: this._handleCardLinkClick, onClick: a.isPreview ? this._handlePreviewClick : this._handleTweetClick, onEngagementsClick: m.Z, onEntityClick: m.Z, onFocus: this._handleFocus, onMediaClick: this._handleEmbeddedMediaClick, onReplyContextClick: m.Z, to: { state: { focal: d.id_str, socialContext: o, contextualClientEventInfo: t, contextTweetId: a.id_str, promotedContent: c, suggestionDetails: h, topicFollowPrompt: s }, pathname: d.permalink, query: n ? { cxt: n } : void 0 }, tweet: a, tweetTextSize: l || "headline1", withActions: !1, withAvatarLink: !1, withReaderModeActive: !0, withUserAvatar: !1, withUserHoverCard: !1, withUserName: !1, withTimestamp: !1 };
+                            return { hideHighlightedUserLabel: i, onAnalyticsClick: _.Z, onAvatarClick: _.Z, onBlur: this._handleBlur, onCardLinkClick: this._handleCardLinkClick, onClick: a.isPreview ? this._handlePreviewClick : this._handleTweetClick, onEngagementsClick: _.Z, onEntityClick: _.Z, onFocus: this._handleFocus, onMediaClick: this._handleEmbeddedMediaClick, onReplyContextClick: _.Z, to: { state: { focal: l.id_str, socialContext: o, contextualClientEventInfo: t, contextTweetId: a.id_str, promotedContent: c, suggestionDetails: h, topicFollowPrompt: s }, pathname: l.permalink, query: n ? { cxt: n } : void 0 }, tweet: a, tweetTextSize: d || "headline1", withActions: !1, withAvatarLink: !1, withReaderModeActive: !0, withUserAvatar: !1, withUserHoverCard: !1, withUserName: !1, withTimestamp: !1 };
                         }),
                         (this._getInlineCalloutInfo = () => {
                             const { analytics: e, displaySensitiveMedia: t, isNsfwUser: i, tweet: n, userCountry: o, userLanguage: s } = this.props,
@@ -356,8 +356,8 @@
                                         this._scribeAction({ element: e, action: "click" });
                                     },
                                 },
-                                l = this._getPromotedContent();
-                            return (0, ue.Z)({ ...a, mute: n, unmute: s, user: r, promotedContent: l, history: i, muteAdUpsellEnabled: this._muteAdUpsellEnabled, hasPremiumPlus: this._hasPremiumPlus });
+                                d = this._getPromotedContent();
+                            return (0, ue.Z)({ ...a, mute: n, unmute: s, user: r, promotedContent: d, history: i, muteAdUpsellEnabled: this._muteAdUpsellEnabled, hasPremiumPlus: this._hasPremiumPlus });
                         }),
                         (this._renderConversationControlsTooltip = () => {
                             const { viewerUserId: e } = this.context,
@@ -369,7 +369,7 @@
                                 a = n.reply_count > 0;
                             return !n.in_reply_to_status_id_str && s && a && !o && t;
                         }),
-                        (this._getRenderCurationActionMenu = (0, p.Z)((e, t, i, n, s, r, a, l, d, c, h, u, _, m, p, w, b, C, k, g, v, y, f, T) => () => o.createElement(z.Z, { feedbackItems: i, forwardPivotDisplayType: e, forwardPivotLandingUrl: t, isActiveCreator: n, isDisabled: s, isNsfwUser: r, isPinned: a, onMenuClick: d, onTweetDismiss: c, promotedContent: h, setLeaveBehindActionItems: f, tweet: u, userCountry: v, userLanguage: y, withChangeConversationControls: b, withChangeConversationControlsTooltip: g, withCommunityModerationAuthority: m, withHideReply: _, withImmediateDismiss: T, withMuteConversation: p, withUnhideReply: w, withViewHiddenReplies: C }))),
+                        (this._getRenderCurationActionMenu = (0, p.Z)((e, t, i, n, s, r, a, d, l, c, h, u, m, _, p, b, w, C, k, g, v, y, f, A) => () => o.createElement(z.Z, { feedbackItems: i, forwardPivotDisplayType: e, forwardPivotLandingUrl: t, isActiveCreator: n, isDisabled: s, isNsfwUser: r, isPinned: a, onMenuClick: l, onTweetDismiss: c, promotedContent: h, setLeaveBehindActionItems: f, tweet: u, userCountry: v, userLanguage: y, withChangeConversationControls: w, withChangeConversationControlsTooltip: g, withCommunityModerationAuthority: _, withHideReply: m, withImmediateDismiss: A, withMuteConversation: p, withUnhideReply: b, withViewHiddenReplies: C }))),
                         (this._getRenderPrerollActionMenu = (0, p.Z)((e, t, i, n, s, r, a) => () => o.createElement(z.Z, { isActiveCreator: e, isForPreroll: !0, isNsfwUser: t, onTweetDismiss: i, promotedContent: n, tweet: s, userCountry: r, userLanguage: a, withMuteConversation: !1 }))),
                         (this._getMemoizedQuoteTweetScribeData = (0, p.Z)((e, t, i, n) => {
                             const o = (({ contextualScribeData: e, isSelected: t, overflow: i, promotedContent: n, scribeData: o, tweet: s }) => {
@@ -377,30 +377,30 @@
                                     { items: a = [] } = e || {};
                                 return { ...(e || {}), ...(o || {}), items: ie.Z.leftMergeScribeItems(ie.Z.addTweetToItems(r.length ? [...r] : [], s, n, t, i, !0), a) };
                             })({ contextualScribeData: n, isSelected: this._isSelected(), overflow: i, promotedContent: t, scribeData: {}, tweet: e });
-                            return (this._cachedFinalScribeData && (0, w.Z)(o, this._cachedFinalScribeData)) || (this._cachedFinalScribeData = o), this._cachedFinalScribeData;
+                            return (this._cachedFinalScribeData && (0, b.Z)(o, this._cachedFinalScribeData)) || (this._cachedFinalScribeData = o), this._cachedFinalScribeData;
                         })),
                         (this._getMemoizedScribeData = (0, p.Z)((e, t, i, n = {}, o, s, r) => {
                             const a = (({ clickTrackingEmbedDetails: e, contextualScribeData: t, isQuotedTweet: i, isSelected: n, overflow: o, promotedContent: s, scribeData: r, tweet: a }) => {
-                                const { items: l = [] } = r || {},
-                                    { items: d = [] } = t || {};
-                                return { ...(t || {}), ...(r || {}), ...(e && { click_tracking_embed_details: e }), items: ie.Z.leftMergeScribeItems(ie.Z.addTweetToItems(l.length ? [...l] : [], a, s, n, o, i), d) };
+                                const { items: d = [] } = r || {},
+                                    { items: l = [] } = t || {};
+                                return { ...(t || {}), ...(r || {}), ...(e && { click_tracking_embed_details: e }), items: ie.Z.leftMergeScribeItems(ie.Z.addTweetToItems(d.length ? [...d] : [], a, s, n, o, i), l) };
                             })({ tweet: e, promotedContent: t, overflow: i, scribeData: n, isSelected: this._isSelected(), contextualScribeData: o, clickTrackingEmbedDetails: s, isQuotedTweet: r });
-                            return (this._cachedFinalScribeData && (0, w.Z)(a, this._cachedFinalScribeData)) || (this._cachedFinalScribeData = a), this._cachedFinalScribeData;
+                            return (this._cachedFinalScribeData && (0, b.Z)(a, this._cachedFinalScribeData)) || (this._cachedFinalScribeData = a), this._cachedFinalScribeData;
                         })),
                         (this._scribeAction = (e, t = {}, i, n, o) => {
-                            const { analytics: s, history: a, richScribeAction: l, tweet: d } = this.props,
+                            const { analytics: s, history: a, richScribeAction: d, tweet: l } = this.props,
                                 c = a.location.state?.overflow,
                                 h = this._getPromotedContent();
                             let u = { ...t };
                             if (n) {
-                                const e = r.Z.getOriginalTweet(d);
+                                const e = r.Z.getOriginalTweet(l);
                                 let t;
                                 o ? e.quoted_status && e.quoted_status.user && (t = ie.Z.getUserItem(e.quoted_status.user, h)) : (t = ie.Z.getUserItem(e.user, h));
                                 const i = u.items ? [...u.items, ...(t ? [t] : [])] : t ? [t] : [];
                                 u = { ...u, items: i };
                             }
-                            const _ = this._getMemoizedScribeData(d, h, c, u, s.contextualScribeData, i, o);
-                            l({ ...s.contextualScribeNamespace, ...e }, _);
+                            const m = this._getMemoizedScribeData(l, h, c, u, s.contextualScribeData, i, o);
+                            d({ ...s.contextualScribeNamespace, ...e }, m);
                         }),
                         (this._handlePoliticalSponsorWebsiteClick = () => {
                             this._scribeAction({ component: "political_ad", element: "organization_website", action: "click" });
@@ -428,7 +428,7 @@
                             this._shouldLogPromotedImpression(e) && this._handleAsyncPromotedEvent($.dx.DWELL);
                         }),
                         (this._handleResize = (e, t) => {
-                            !this._isProbablyRemovedByAdBlocker(e) && this._isProbablyRemovedByAdBlocker(t) && (G.Z.recordAdBlockerPresence(), this._isCompatibilityScribeEnabled && this._scribeAction({ action: "blocked_ad" }));
+                            !this._isProbablyRemovedByAdBlocker(e) && this._isProbablyRemovedByAdBlocker(t) && (Q.Z.recordAdBlockerPresence(), this._isCompatibilityScribeEnabled && this._scribeAction({ action: "blocked_ad" }));
                         }),
                         (this._handleInlineReplyClick = (e) => {
                             const { viewerUserId: t } = this.context,
@@ -450,7 +450,7 @@
                                 } catch (e) {}
                             }
                             const { pinnedRepliesEducationFlag: e, pinnedReplyState: t } = this.props;
-                            t === de.C.Pinnable && e && this.context.featureSwitches.isTrue("responsive_web_pinned_replies_enabled") && (this._scribeAction({ element: "pinned_reply_nux", action: "impression" }), this.setState({ showPinnedReplyEducationSheet: !0 }));
+                            t === le.C.Pinnable && e && this.context.featureSwitches.isTrue("responsive_web_pinned_replies_enabled") && (this._scribeAction({ element: "pinned_reply_nux", action: "impression" }), this.setState({ showPinnedReplyEducationSheet: !0 }));
                         }),
                         (this._handleReplyContextClick = (e, t) => this._scribeAction({ element: "reply_context", action: "click" }, { event_value: t })),
                         (this._handleAsyncPromotedEvent = (e, t) => {
@@ -533,12 +533,12 @@
                                 const t = n === $.dx.URL_CLICK && e.currentTarget instanceof window.HTMLElement ? { url: e.currentTarget.href } : void 0;
                                 this._handleAsyncPromotedEvent(n, t);
                             }
-                            if (t === l.Z.MEDIA) return this._handleTweetClick(e);
-                            if ((t === l.Z.TIMESTAMP && this._scribeAction({ action: d.bQ.CLICK, element: "video_timestamp" }), t === l.Z.URL && r && this._scribeAction({ action: d.bQ.CLICK_ID_EMBED }, {}, r), t === l.Z.MENTION)) {
+                            if (t === d.Z.MEDIA) return this._handleTweetClick(e);
+                            if ((t === d.Z.TIMESTAMP && this._scribeAction({ action: l.bQ.CLICK, element: "video_timestamp" }), t === d.Z.URL && r && this._scribeAction({ action: l.bQ.CLICK_ID_EMBED }, {}, r), t === d.Z.MENTION)) {
                                 const e = i?.text ? [{ item_type: te.Z.ItemType.USER, name: i.text, id: i.id_str }] : void 0;
                                 return this._scribeAction({ action: o }, { targets: e }, void 0, void 0);
                             }
-                            if (t === l.Z.HASHTAG) {
+                            if (t === d.Z.HASHTAG) {
                                 const e = i?.text ? [{ name: i.text }] : void 0;
                                 return this._scribeAction({ action: o }, { targets: e }, void 0, void 0);
                             }
@@ -610,7 +610,7 @@
                         (this._renderLeaveBehindMenu = () => {
                             const e = this.state.leaveBehindActionMenuItems,
                                 t = this._isReplyTimelineImmediateDismiss();
-                            return o.createElement(Z, { heading: t ? at : void 0, items: e, onMenuDismiss: this._hideLeaveBehindMenu, onUndoClick: this._hideLeaveBehindMenu, subheading: t ? lt : void 0, withUndo: !0 });
+                            return o.createElement(x, { heading: t ? at : void 0, items: e, onMenuDismiss: this._hideLeaveBehindMenu, onUndoClick: this._hideLeaveBehindMenu, subheading: t ? dt : void 0, withUndo: !0 });
                         }),
                         (this._hideLeaveBehindMenu = () => {
                             this.setState({ showLeaveBehindMenu: !1 });
@@ -621,10 +621,10 @@
                                 s = !!i,
                                 r = o?.id_str === this.context.viewerUserId,
                                 a = !this.context.viewerUserId,
-                                l = n?.id_str === i,
-                                d = "tweet" === t,
+                                d = n?.id_str === i,
+                                l = "tweet" === t,
                                 c = !!e.community_id_str;
-                            return s && d && !(a || r || l || c) && this._isLeaveBehindMenuRepliesEnabled;
+                            return s && l && !(a || r || d || c) && this._isLeaveBehindMenuRepliesEnabled;
                         }),
                         (this._shouldRenderImmediateDismiss = () => !(!(this.props.feedbackItems?.length && this._isLeaveBehindMenuHomeEnabled) && !this._isReplyTimelineImmediateDismiss())),
                         (this._setLeaveBehindActionItems = (e) => {
@@ -632,10 +632,10 @@
                         }),
                         (this.state = { displayReported: !1, enableKeyboardShortcuts: !1, leaveBehindActionMenuItems: [], showBlockOrUnblockConfirmation: !1, showLeaveBehindMenu: !1, showPinnedReplyEducationSheet: !1 });
                     const i = this._getPromotedContent();
-                    this._shouldHidePromotedTweet = c.Z.isPromoted(i) && G.Z.shouldHidePromotedTweets(this.context.featureSwitches);
+                    this._shouldHidePromotedTweet = c.Z.isPromoted(i) && Q.Z.shouldHidePromotedTweets(this.context.featureSwitches);
                 }
                 shouldComponentUpdate(e, t) {
-                    return !(0, w.Z)(this.props, e) || !(0, w.Z)(this.state, t);
+                    return !(0, b.Z)(this.props, e) || !(0, b.Z)(this.state, t);
                 }
                 componentDidMount() {
                     if ((this._shouldHidePromotedTweet && this._isCompatibilityScribeEnabled && this._scribeAction({ action: "hide_promoted" }), this.props.tweet.note_tweet)) {
@@ -649,28 +649,28 @@
                     const { viewerUserId: e } = this.context,
                         { conversationPosition: t, conversationTreeMetadata: i, showWithheldBannerOnMyTweets: n, tweet: a } = this.props;
                     if (!this._shouldRender()) return i ? o.createElement(ce.Z, { conversationPosition: t, conversationTreeMetadata: i }, st) : null;
-                    const l = a?.user?.id_str === e,
-                        d = (0, q.j)(r.Z.getOriginalTweet(a).withheld_scope),
-                        c = l && !a.retweeted_status,
+                    const d = a?.user?.id_str === e,
+                        l = (0, q.j)(r.Z.getOriginalTweet(a).withheld_scope),
+                        c = d && !a.retweeted_status,
                         h = c && "user" === r.Z.getOriginalTweet(a).withheld_scope && !n,
                         u = (0, Y.G$)(a) && !this.state.displayReported;
-                    let _ = null;
-                    return (_ = d ? o.createElement(s.Z, null, h ? null : this._renderWithheldTweet(), c ? this._renderContent() : null) : u ? this._renderReportedTombstone() : this.state.showLeaveBehindMenu ? this._renderLeaveBehindMenu() : this._renderContent()), o.createElement(o.Fragment, null, _, this._renderIntentPrompt(), this.state.showBlockOrUnblockConfirmation ? this._renderBlockOrUnblockConfirmationSheet() : null, this._renderPinnedReplyNUX());
+                    let m = null;
+                    return (m = l ? o.createElement(s.Z, null, h ? null : this._renderWithheldTweet(), c ? this._renderContent() : null) : u ? this._renderReportedTombstone() : this.state.showLeaveBehindMenu ? this._renderLeaveBehindMenu() : this._renderContent()), o.createElement(o.Fragment, null, m, this._renderIntentPrompt(), this.state.showBlockOrUnblockConfirmation ? this._renderBlockOrUnblockConfirmationSheet() : null, this._renderPinnedReplyNUX());
                 }
                 _renderIntentPrompt() {
                     const { contextualClientEventInfo: e, forwardPivotInfo: t, history: i, nudges: n, tweet: s, tweetId: r } = this.props;
-                    if (s && "focal_module" === e?.component && i.location.pathname.indexOf("/intent/") > -1 && i.location.query.tweet_id === r) return o.createElement(le.Z, { forwardPivotInfo: t, history: i, location: i.location, nudges: n, tweetId: s.id_str });
+                    if (s && "focal_module" === e?.component && i.location.pathname.indexOf("/intent/") > -1 && i.location.query.tweet_id === r) return o.createElement(de.Z, { forwardPivotInfo: t, history: i, location: i.location, nudges: n, tweetId: s.id_str });
                 }
                 _renderWithheldTweet() {
                     const { conversationPosition: e, conversationTreeMetadata: t, tweet: i } = this.props,
                         n = i.user.id_str,
                         s = r.Z.getOriginalTweet(i),
                         { viewerUserId: a } = this.context,
-                        l = !!a && a === n && s.retweeted,
-                        d = s.withheld_text || s.text,
+                        d = !!a && a === n && s.retweeted,
+                        l = s.withheld_text || s.text,
                         c = s.withheld_entities || s.entities,
                         h = i.user.id_str === a;
-                    return o.createElement(q.Z, { conversationPosition: e, conversationTreeMetadata: h ? void 0 : t, displayTextRange: s.display_text_range, entities: c, lang: s.lang, onUnretweet: l ? this._handleUnretweet : void 0, showUnretweetButton: l, text: d });
+                    return o.createElement(q.Z, { conversationPosition: e, conversationTreeMetadata: h ? void 0 : t, displayTextRange: s.display_text_range, entities: c, lang: s.lang, onUnretweet: d ? this._handleUnretweet : void 0, showUnretweetButton: d, text: l });
                 }
                 _renderReportedTombstone() {
                     const { conversationPosition: e, conversationTreeMetadata: t, tweet: i } = this.props,
@@ -679,17 +679,17 @@
                     return o.createElement(ce.Z, { actionText: ot, conversationPosition: e, conversationTreeMetadata: t, lang: n.lang, onClick: this._handleShowReportedTweet }, s);
                 }
                 _renderContent() {
-                    const { analytics: e, bookmarkFolderId: t, contextTweet: i, contextualClientEventInfo: n, conversationPosition: s, conversationTreeMetadata: a, displayBlocked: l, feedbackItems: d, forwardPivotInfo: c, hasModeratedReplies: h, hideConversationControlsEducationText: u, hideExclusivityInfoEducationTextInReplies: _, hideTrustedFriendsEducationTextInReplies: m, hitHighlights: p, injectedFeedbackItem: w, innerForwardPivotInfo: C, innerNudges: k, isCompact: g, isReaderMode: v, isUnread: y, linkify: f, location: T, nudges: A, promotedContentAdvertiser: I, quoteTweetSocialContextProps: S, quotedTweetTombstoneInfo: E, replyBadge: P, replyContext: x, rootTweetAuthorId: M, shouldSelfThreadIncludeAvatar: Z, showReplyFilterInlineCallout: U, socialContext: R, socialContextColor: B, topic: D, topicFollowPrompt: L, tweet: F, tweetContext: N, viewerUser: O, withActions: H, withActionsDisabled: V, withBirdwatchPivots: W, withCardLinks: q, withInlineMedia: z, withQuotedTweetLinks: Q, withRemoveFromBookmarks: G, withSelfThread: j, withSocialContext: X, withUserPresence: $ } = this.props,
-                        { enableKeyboardShortcuts: Y } = this.state,
-                        ee = r.Z.getOriginalTweet(F),
-                        te = this._getPromotedContent(),
-                        ie = T.state?.overflow,
-                        ne = T.state?.column?.showSmallMedia;
-                    let oe = X;
-                    X && this.context.featureSwitches.isTrue("rweb_home_mixer_enable_social_context_filter_social_contexts") && (oe = R && R.contextType in dt);
-                    const se = { ...{ bookmarkFolderId: t, contextTweet: i, contextualClientEventInfo: n, conversationPosition: s, conversationTreeMetadata: a, displayBlocked: l, enableKeyboardShortcuts: Y, forwardPivotInfo: c, handleLikeOrUnlike: this._handleLikeOrUnlike, hasModeratedReplies: h, hideConversationControlsEducationText: u, hideExclusivityInfoEducationTextInReplies: _, hideTrustedFriendsEducationTextInReplies: m, hitHighlights: p, injectedFeedbackItem: w, innerForwardPivotInfo: C, innerNudges: k, isCompact: g, linkify: f, nudges: A, primaryFeedbackItem: d?.[0], promotedContentAdvertiser: I, quotedTweetTombstoneInfo: E, quoteTweetSocialContextProps: S, replyBadge: P, replyContext: x, rootTweetAuthorId: M, shouldSelfThreadIncludeAvatar: Z, showReplyFilterInlineCallout: U, socialContext: R, socialContextColor: B, tweetContext: N, topic: D, topicFollowPrompt: L, tweet: F, viewerUser: O, withActions: H, withActionsDisabled: V, withBirdwatchPivots: W, withCardLinks: q, withCondensedQuoteTweet: ne, withHalvedMediaSize: ne, withInlineMedia: z, withQuotedTweetLinks: Q, withRemoveFromBookmarks: G, withSelfThread: j, withSocialContext: oe, withUnreadStyles: y, withUserPresence: $ }, ...(v ? this._getReaderModeTweetProps() : this._getBaseTweetProps()) },
-                        re = o.createElement(J.nO, { data: this._getMemoizedScribeData(ee, te, ie, void 0, e.contextualScribeData) }, o.createElement(b.Z, { enabled: !!Y, handlers: this._getShortcutKeyHandlers() }, o.createElement(K.ZP, se)));
-                    return te ? o.createElement(nt, { id: F.id_str, onFullyVisible: this._handleFullyVisible, onResize: this._handleResize, onVisible: this._handleImpression }, re) : re;
+                    const { analytics: e, bookmarkFolderId: t, contextTweet: i, contextualClientEventInfo: n, conversationPosition: s, conversationTreeMetadata: a, displayBlocked: d, feedbackItems: l, forwardPivotInfo: c, hasModeratedReplies: h, hideConversationControlsEducationText: u, hideExclusivityInfoEducationTextInReplies: m, hideTrustedFriendsEducationTextInReplies: _, hitHighlights: p, injectedFeedbackItem: b, innerForwardPivotInfo: C, innerNudges: k, isCompact: g, isReaderMode: v, isUnread: y, linkify: f, location: A, nudges: T, promotedContentAdvertiser: S, quoteTweetSocialContextProps: M, quotedTweetTombstoneInfo: I, replyBadge: D, replyContext: P, rootTweetAuthorId: E, shouldSelfThreadIncludeAvatar: x, showReplyFilterInlineCallout: R, socialContext: Z, socialContextColor: U, topic: B, topicFollowPrompt: L, tweet: N, tweetContext: F, viewerUser: H, withActions: O, withActionsDisabled: V, withBirdwatchPivots: W, withCardLinks: q, withInlineMedia: z, withQuotedTweetLinks: G, withRemoveFromBookmarks: Q, withSelfThread: j, withSocialContext: X, withUserAvatar: $, withUserPresence: Y } = this.props,
+                        { enableKeyboardShortcuts: ee } = this.state,
+                        te = r.Z.getOriginalTweet(N),
+                        ie = this._getPromotedContent(),
+                        ne = A.state?.overflow,
+                        oe = A.state?.column?.showSmallMedia;
+                    let se = X;
+                    X && this.context.featureSwitches.isTrue("rweb_home_mixer_enable_social_context_filter_social_contexts") && (se = Z && Z.contextType in lt);
+                    const re = { ...{ bookmarkFolderId: t, contextTweet: i, contextualClientEventInfo: n, conversationPosition: s, conversationTreeMetadata: a, displayBlocked: d, enableKeyboardShortcuts: ee, forwardPivotInfo: c, handleLikeOrUnlike: this._handleLikeOrUnlike, hasModeratedReplies: h, hideConversationControlsEducationText: u, hideExclusivityInfoEducationTextInReplies: m, hideTrustedFriendsEducationTextInReplies: _, hitHighlights: p, injectedFeedbackItem: b, innerForwardPivotInfo: C, innerNudges: k, isCompact: g, linkify: f, nudges: T, primaryFeedbackItem: l?.[0], promotedContentAdvertiser: S, quotedTweetTombstoneInfo: I, quoteTweetSocialContextProps: M, replyBadge: D, replyContext: P, rootTweetAuthorId: E, shouldSelfThreadIncludeAvatar: x, showReplyFilterInlineCallout: R, socialContext: Z, socialContextColor: U, topic: B, topicFollowPrompt: L, tweet: N, tweetContext: F, viewerUser: H, withActions: O, withActionsDisabled: V, withBirdwatchPivots: W, withCardLinks: q, withCondensedQuoteTweet: oe, withHalvedMediaSize: oe, withInlineMedia: z, withQuotedTweetLinks: G, withRemoveFromBookmarks: Q, withSelfThread: j, withSocialContext: se, withUnreadStyles: y, withUserAvatar: $, withUserPresence: Y }, ...(v ? this._getReaderModeTweetProps() : this._getBaseTweetProps()) },
+                        ae = o.createElement(J.nO, { data: this._getMemoizedScribeData(te, ie, ne, void 0, e.contextualScribeData) }, o.createElement(w.Z, { enabled: !!ee, handlers: this._getShortcutKeyHandlers() }, o.createElement(K.ZP, re)));
+                    return ie ? o.createElement(nt, { id: N.id_str, onFullyVisible: this._handleFullyVisible, onResize: this._handleResize, onVisible: this._handleImpression }, ae) : ae;
                 }
                 _shouldRender() {
                     const { tweet: e } = this.props;
@@ -710,7 +710,7 @@
             (ct.defaultProps = { displayBlocked: !1, shouldSelfThreadIncludeAvatar: !1, showWithheldBannerOnMyTweets: !0, withCardLinks: !1, withCurationMenu: !0, withMuteConversation: !1, withRemoveFromBookmarks: !1 }), (ct.contextType = ae.rC);
             const ht = (e, t) => t.height <= e.getNumberValue("responsive_web_extension_compatibility_size_threshold", 50),
                 ut = (e, t) => !(e.isTrue("responsive_web_extension_compatibility_impression_guard") && ht(e, t.item)),
-                _t = (e) => {
+                mt = (e) => {
                     const t = o.useContext(h.Z);
                     ((e, t) => {
                         const i = (0, re.z)();
@@ -721,36 +721,36 @@
                     const i = (({ tweet: e }) => {
                         const { featureSwitches: t } = (0, ae.QZ)(),
                             i = "legacy" === t.getStringValue("responsive_web_card_conversion_hoisted"),
-                            n = (0, Ge.v9)(Ie.Qb),
+                            n = (0, Qe.v9)(Se.Qb),
                             s = e?.card || e?.unified_card;
                         return o.useMemo(() => {
                             if (!i || !e) return;
                             const t = { tweetId: e.id_str, tweetPermalink: e.permalink, tweetUserId: e.user.id_str, isLoggedIn: n };
-                            return s && (0, Qe.ZP)(s, t);
+                            return s && (0, Ge.ZP)(s, t);
                         }, [s, i, e, n]);
                     })({ tweet: e.tweet });
                     return e.tweet ? o.createElement(ct, (0, n.Z)({}, e, { convertedCard: i, history: t, location: t.location, tweet: e.tweet })) : null;
                 };
-            _t.defaultProps = ct.defaultProps;
-            const mt = ze(_t),
-                pt = (0, re.Z)(mt),
-                wt = (0, re.Z)(mt, { component: "tweet" });
+            mt.defaultProps = ct.defaultProps;
+            const _t = ze(mt),
+                pt = (0, re.Z)(_t),
+                bt = (0, re.Z)(_t, { component: "tweet" });
         },
         352975: (e, t, i) => {
             i.d(t, { Z: () => r });
             var n = i(376293),
                 o = i(712816),
                 s = i(879596);
-            const r = ({ addToast: e, block: t, createLocalApiErrorHandler: i, isSoftBlockEnabled: r, promotedContent: a, scribeAction: l, unblock: d, user: c }) => {
+            const r = ({ addToast: e, block: t, createLocalApiErrorHandler: i, isSoftBlockEnabled: r, promotedContent: a, scribeAction: d, unblock: l, user: c }) => {
                 const h = () => {
-                    d(c.id_str, { promotedContent: a }).catch(i(s.D)), l({ element: "unblock" });
+                    l(c.id_str, { promotedContent: a }).catch(i(s.D)), d({ element: "unblock" });
                 };
                 return (0, n.op)({
                     blockAction: () => {
                         t(c.id_str, { promotedContent: a }).then(() => {
                             e({ action: { label: n.Vt, onAction: h }, text: n.KV });
                         }, i(o.d)),
-                            l({ element: "block" });
+                            d({ element: "block" });
                     },
                     isSoftBlockEnabled: r,
                     source: n.SC.TWEET,
@@ -760,23 +760,23 @@
             };
         },
         383494: (e, t, i) => {
-            i.d(t, { Z: () => l });
+            i.d(t, { Z: () => d });
             i(136728);
             var n = i(545334),
                 o = i(847607),
                 s = i(775412),
                 r = i(837731),
                 a = i(163390);
-            const l = ({ addToast: e, createLocalApiErrorHandler: t, dismissUserFromConversation: i, hasPremiumPlus: l, history: d, mute: c, muteAdUpsellEnabled: h, promotedContent: u, scribeAction: _, unmute: m, user: p }) => {
-                const w = () => {
-                        m(p.id_str, { promotedContent: u }).then(() => {
+            const d = ({ addToast: e, createLocalApiErrorHandler: t, dismissUserFromConversation: i, hasPremiumPlus: d, history: l, mute: c, muteAdUpsellEnabled: h, promotedContent: u, scribeAction: m, unmute: _, user: p }) => {
+                const b = () => {
+                        _(p.id_str, { promotedContent: u }).then(() => {
                             e({ text: (0, o.X6)(p.screen_name) });
                         }, t(r.G)),
-                            _({ element: "unmute" }),
-                            _({ action: "unmute_user", element: "tweet_curation_action_menu" });
+                            m({ element: "unmute" }),
+                            m({ action: "unmute_user", element: "tweet_curation_action_menu" });
                     },
                     {
-                        Icon: b,
+                        Icon: w,
                         onClick: C,
                         text: k,
                     } = (0, o.N1)(
@@ -784,24 +784,89 @@
                         () => {
                             c(p.id_str, { promotedContent: u }).then(() => {
                                 i && i({ userId: p.id_str, feedbackKeys: ["UnfollowEntity"] });
-                                if (h && !!u?.impression_id && !l) {
+                                if (h && !!u?.impression_id && !d) {
                                     const e = { variant: "MuteAd" };
-                                    d.push("/i/verified-get-verified", e);
+                                    l.push("/i/verified-get-verified", e);
                                 }
-                                e({ action: { label: n.d, onAction: w }, text: (0, o.FK)(p.screen_name) });
+                                e({ action: { label: n.d, onAction: b }, text: (0, o.FK)(p.screen_name) });
                             }, t(s.W)),
-                                _({ element: "mute" }),
-                                _({ action: "mute_user", element: "tweet_curation_action_menu" });
+                                m({ element: "mute" }),
+                                m({ action: "mute_user", element: "tweet_curation_action_menu" });
                         },
-                        w,
+                        b,
                     );
-                return { Icon: b, text: k, onClick: C, shortcutKey: a.uq.mute };
+                return { Icon: w, text: k, onClick: C, shortcutKey: a.uq.mute };
             };
         },
         459284: (e, t, i) => {
             i.d(t, { Z: () => n });
             i(202784);
-            const n = (0, i(523561).Z)({ loader: () => Promise.all([i.e("icons.8"), i.e("icons.15"), i.e("icons.3"), i.e("icons.12"), i.e("icons.21"), i.e("icons.16"), i.e("icons.17"), i.e("icons.0"), i.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"), i.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"), i.e("shared~bundle.Birdwatch~bundle.News~bundle.Grok~ondemand.News~loader.inlineTombstoneHandler~loader.tweetHandl"), i.e("loader.TweetCurationActionMenu-6107ac1a"), i.e("loader.TweetCurationActionMenu-e019dbda"), i.e("loader.TweetCurationActionMenu-8ed0fac5")]).then(i.bind(i, 713842)) });
+            const n = (0, i(523561).Z)({
+                loader: () =>
+                    Promise.all([
+                        i.e("icons.8"),
+                        i.e("icons.15"),
+                        i.e("icons.3"),
+                        i.e("icons.12"),
+                        i.e("icons.6"),
+                        i.e("icons.1"),
+                        i.e("modules.common-e907d115"),
+                        i.e("modules.common-e019dbda"),
+                        i.e("icons.21"),
+                        i.e("icons.16"),
+                        i.e("icons.17"),
+                        i.e("icons.27"),
+                        i.e("icons.0"),
+                        i.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
+                        i.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
+                        i.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
+                        i.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
+                        i.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        i.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
+                        i.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
+                        i.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
+                        i.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
+                        i.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
+                        i.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
+                        i.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
+                        i.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
+                        i.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-fd0b2cf1"),
+                        i.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c7e58553"),
+                        i.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f7f56781"),
+                        i.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
+                        i.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
+                        i.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                        i.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
+                        i.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
+                        i.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
+                        i.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ab949d70"),
+                        i.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
+                        i.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
+                        i.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
+                        i.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
+                        i.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-88dc685d"),
+                        i.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-271d17b1"),
+                        i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
+                        i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
+                        i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
+                        i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
+                        i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
+                        i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
+                        i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"),
+                        i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"),
+                        i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"),
+                        i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"),
+                        i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"),
+                        i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"),
+                        i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"),
+                        i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
+                        i.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
+                        i.e("shared~bundle.Birdwatch~bundle.News~bundle.Grok~ondemand.News~loader.inlineTombstoneHandler~loader.tweetHandl"),
+                        i.e("loader.TweetCurationActionMenu-6107ac1a"),
+                        i.e("loader.TweetCurationActionMenu-b7da5e41"),
+                        i.e("loader.TweetCurationActionMenu-e4e3d8bb"),
+                    ]).then(i.bind(i, 841772)),
+            });
         },
         775412: (e, t, i) => {
             i.d(t, { W: () => a });
@@ -834,44 +899,44 @@
             const o = { [n.Z.CASHTAG]: void 0, [n.Z.EMOJI]: void 0, [n.Z.HASHTAG]: "hashtag_click", [n.Z.MEDIA]: void 0, [n.Z.MENTION]: "mention_click", [n.Z.TEXT]: void 0, [n.Z.URL]: "open_link" };
         },
         80890: (e, t, i) => {
-            i.d(t, { Yd: () => u, MW: () => m, oc: () => _ });
+            i.d(t, { Yd: () => u, MW: () => _, oc: () => m });
             var n = i(265617),
                 o = i(988566),
                 s = i(466015),
                 r = i(917799),
                 a = i(195250),
-                l = i(919022);
-            const d = "rweb/pinnedTweets",
-                c = r.dg(d, "PIN"),
-                h = r.dg(d, "UNPIN"),
+                d = i(919022);
+            const l = "rweb/pinnedTweets",
+                c = r.dg(l, "PIN"),
+                h = r.dg(l, "UNPIN"),
                 u =
                     (e) =>
-                    (t, i, { api: d, featureSwitches: h }) =>
+                    (t, i, { api: l, featureSwitches: h }) =>
                         r
-                            .AB(t, { params: { id: e }, request: d.withEndpoint(n.ZP).pin })({ actionTypes: c, context: "ACTION_PIN_TWEET", meta: { tweetId: e } }, (n) => {
-                                const r = l.ZP.selectViewerUser(i());
+                            .AB(t, { params: { id: e }, request: l.withEndpoint(n.ZP).pin })({ actionTypes: c, context: "ACTION_PIN_TWEET", meta: { tweetId: e } }, (n) => {
+                                const r = d.ZP.selectViewerUser(i());
                                 if (void 0 === r) return;
-                                const d = r.id_str,
+                                const l = r.id_str,
                                     c = r.pinned_tweet_ids_str && r.pinned_tweet_ids_str[0];
-                                t(l.ZP.patchUser(d, { pinned_tweet_ids_str: [e] }));
-                                const u = (0, a.ZP)(h, d, "default");
+                                t(d.ZP.patchUser(l, { pinned_tweet_ids_str: [e] }));
+                                const u = (0, a.ZP)(h, l, "default");
                                 return [...(c ? [u.removeTweets({ [c]: !0 }), u.injectEntry(s.Se({ id: c, sortIndex: c }), { atTop: !1 })] : []), u.removeTweets({ [e]: !0 }), u.injectEntry(s.Se({ id: e, content: { socialContext: { generalContext: o.Iv } }, sortIndex: "NOT_USED" }))];
                             })
                             .then((e) => {
                                 const t = e.pin_tweet?.added_tweet_to_highlights;
                                 return { addedToHighlights: t };
                             }),
-                _ =
+                m =
                     (e) =>
-                    (t, i, { api: o, featureSwitches: d }) =>
+                    (t, i, { api: o, featureSwitches: l }) =>
                         r.AB(t, { params: { id: e }, request: o.withEndpoint(n.ZP).unpin })({ actionTypes: h, context: "ACTION_UNPIN_TWEET", meta: { tweetId: e } }, (n) => {
-                            const o = l.ZP.selectViewerUser(i());
+                            const o = d.ZP.selectViewerUser(i());
                             if (void 0 === o) return;
                             const r = o.id_str;
-                            return t(l.ZP.patchUser(r, { pinned_tweet_ids_str: [] })), [(0, a.ZP)(d, r, "default").removeTweets({ [e]: !0 }), (0, a.ZP)(d, r, "default").injectEntry(s.Se({ id: e, sortIndex: e }), { atTop: !1 })];
+                            return t(d.ZP.patchUser(r, { pinned_tweet_ids_str: [] })), [(0, a.ZP)(l, r, "default").removeTweets({ [e]: !0 }), (0, a.ZP)(l, r, "default").injectEntry(s.Se({ id: e, sortIndex: e }), { atTop: !1 })];
                         }),
-                m = (e, t) => {
-                    const i = l.ZP.selectViewerUser(e);
+                _ = (e, t) => {
+                    const i = d.ZP.selectViewerUser(e);
                     return !!i?.pinned_tweet_ids_str && i.pinned_tweet_ids_str[0] === t;
                 };
         },
@@ -886,21 +951,21 @@
             const a = s.default.create((e) => ({ divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }));
         },
         420412: (e, t, i) => {
-            i.d(t, { Z: () => l });
+            i.d(t, { Z: () => d });
             var n = i(202784),
                 o = i(325686),
                 s = i(235902),
                 r = i(885015),
                 a = i(392237);
-            function l({ borderColor: e = "borderColor", isSlim: t = !1, label: i }) {
-                const { isWebRedesign: l } = s.ZP.useProps(),
-                    c = "borderColor" === e || "nestedBorderColor" === e ? d[e] : { backgroundColor: a.default.theme.colors[e] ?? a.default.theme.colors.borderColor };
-                return i ? n.createElement(r.Z, { style: !t && d.root, withGutter: !0 }, n.createElement(o.Z, { style: d.gapColumn }, n.createElement(o.Z, { style: [d.gap, c] })), n.createElement(o.Z, { style: d.gapText }, i), n.createElement(o.Z, { style: d.gapColumn }, n.createElement(o.Z, { style: [d.gap, c] }))) : n.createElement(o.Z, { style: [!t && d.root, l() && d.rootRedesign, d.gap, c] });
+            function d({ borderColor: e = "borderColor", isSlim: t = !1, label: i }) {
+                const { isWebRedesign: d } = s.ZP.useProps(),
+                    c = "borderColor" === e || "nestedBorderColor" === e ? l[e] : { backgroundColor: a.default.theme.colors[e] ?? a.default.theme.colors.borderColor };
+                return i ? n.createElement(r.Z, { style: !t && l.root, withGutter: !0 }, n.createElement(o.Z, { style: l.gapColumn }, n.createElement(o.Z, { style: [l.gap, c] })), n.createElement(o.Z, { style: l.gapText }, i), n.createElement(o.Z, { style: l.gapColumn }, n.createElement(o.Z, { style: [l.gap, c] }))) : n.createElement(o.Z, { style: [!t && l.root, d() && l.rootRedesign, l.gap, c] });
             }
-            const d = a.default.create((e) => ({ borderColor: { backgroundColor: a.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: a.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
+            const l = a.default.create((e) => ({ borderColor: { backgroundColor: a.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: a.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
         },
         885015: (e, t, i) => {
-            i.d(t, { Z: () => d });
+            i.d(t, { Z: () => l });
             var n = i(807896),
                 o = i(202784),
                 s = i(325686),
@@ -908,14 +973,14 @@
             class a extends o.Component {
                 render() {
                     const { children: e, style: t, withGutter: i, ...r } = this.props,
-                        a = o.Children.map(e, (e) => e && o.cloneElement(e, { style: [e.props.style, l.column, i && l.withGutterColumn] }));
-                    return o.createElement(s.Z, (0, n.Z)({ style: [t, l.root, i && l.withGutter] }, r), a);
+                        a = o.Children.map(e, (e) => e && o.cloneElement(e, { style: [e.props.style, d.column, i && d.withGutterColumn] }));
+                    return o.createElement(s.Z, (0, n.Z)({ style: [t, d.root, i && d.withGutter] }, r), a);
                 }
             }
             a.defaultProps = { withGutter: !1 };
-            const l = r.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
-                d = a;
+            const d = r.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
+                l = a;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Birdwatch~bundle.News~bundle.Grok~ondemand.News~loader.inlineTombstoneHandler~loader.tweetHandl.a15bd68a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Birdwatch~bundle.News~bundle.Grok~ondemand.News~loader.inlineTombstoneHandler~loader.tweetHandl.658c3fea.js.map

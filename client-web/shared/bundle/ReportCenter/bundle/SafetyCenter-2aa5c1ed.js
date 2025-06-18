@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.ReportCenter~bundle.SafetyCenter-2aa5c1ed", "bundle.BrandedLikesPreview-2aa5c1ed", "shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"],
+    ["shared~bundle.ReportCenter~bundle.SafetyCenter-2aa5c1ed", "bundle.BrandedLikesPreview-2aa5c1ed"],
     {
         995145: (e, t, n) => {
             n.d(t, { Z: () => C });
@@ -454,4 +454,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReportCenter~bundle.SafetyCenter-2aa5c1ed.7d9c12aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReportCenter~bundle.SafetyCenter-2aa5c1ed.1fe4723a.js.map

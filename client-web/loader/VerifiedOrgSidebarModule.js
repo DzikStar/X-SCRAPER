@@ -381,8 +381,8 @@
                 Z = a(725516),
                 K = a(336678),
                 F = a(854219),
-                C = a(481326),
-                w = a(199232),
+                w = a(481326),
+                C = a(199232),
                 P = a(241989),
                 R = a(794271),
                 I = a(443781),
@@ -429,7 +429,7 @@
                         K = (0, k.hC)("responsive_web_verified_organizations_intercom_enabled"),
                         { origin: D } = S.ZP.get(),
                         T = (0, v.Z)({ returnUrl: `${D}/home`, originProduct: "VerifiedOrganizations" }),
-                        Y = (0, w.Z)(["VerifiedOrganization"]).hasVerifiedOrgPaymentFailure,
+                        Y = (0, C.Z)(["VerifiedOrganization"]).hasVerifiedOrgPaymentFailure,
                         { hasApplicationStatus: $, hasVerifiedOrgFeature: ee } = (0, h.ZP)(),
                         ne = t.useMemo(() => ee(h.ny.BusinessPreapprovalAdminPortalAccess), [ee]),
                         ae = t.useMemo(() => $(f.i.ApplicationInReview), [$]);
@@ -460,7 +460,7 @@
                                     t.createElement(s.Z, { link: "/i/verified-advertising", onClick: te("manage_ad_credits"), style: J.link }, t.createElement(o.ZP, { weight: "medium" }, A), t.createElement(p.default, { style: J.icon })),
                                     t.createElement(s.Z, { link: "https://ads.x.com", onClick: te("setup_ads_campaign"), style: J.link }, t.createElement(o.ZP, { weight: "medium" }, x), t.createElement(p.default, { style: J.icon })),
                                     t.createElement(s.Z, { link: "/i/verified/jobs", onClick: te("manage_jobs"), style: J.link }, t.createElement(o.ZP, { weight: "medium" }, M), t.createElement(p.default, { style: J.icon })),
-                                    K ? t.createElement(F.Z, { onClick: te("get_support") }, t.createElement(s.Z, { style: J.link }, t.createElement(o.ZP, { weight: "medium" }, U), t.createElement(p.default, { style: J.icon }))) : t.createElement(s.Z, { link: C.A9, onClick: te("get_support"), style: J.link }, t.createElement(o.ZP, { weight: "medium" }, U), t.createElement(p.default, { style: J.icon })),
+                                    K ? t.createElement(F.Z, { onClick: te("get_support") }, t.createElement(s.Z, { style: J.link }, t.createElement(o.ZP, { weight: "medium" }, U), t.createElement(p.default, { style: J.icon }))) : t.createElement(s.Z, { link: w.A9, onClick: te("get_support"), style: J.link }, t.createElement(o.ZP, { weight: "medium" }, U), t.createElement(p.default, { style: J.icon })),
                                     t.createElement(s.Z, { link: "/i/verified", onClick: te("vo_home"), style: J.link }, t.createElement(o.ZP, { color: "blue500", weight: "medium" }, z), t.createElement(p.default, { style: J.icon })),
                                 ),
                             [a, K, te, Y, le, ie],
@@ -524,30 +524,6 @@
                     }, [a, n]);
                 return l ? void 0 : i;
             }
-        },
-        782642: (e, n, a) => {
-            a.d(n, { p: () => r });
-            var t = a(202784),
-                l = a(125363),
-                i = a(601576);
-            const r = () => {
-                    const e = (0, l.I0)(),
-                        n = s(),
-                        a = t.useRef(null);
-                    return (
-                        t.useEffect(() => () => clearTimeout(a.current), [n]),
-                        t.useCallback(
-                            (t) => {
-                                e((0, i.fz)(t)), (a.current = setTimeout(() => n(), 3e3));
-                            },
-                            [e, n],
-                        )
-                    );
-                },
-                s = () => {
-                    const e = (0, l.I0)();
-                    return t.useCallback(() => e((0, i.RS)()), [e]);
-                };
         },
         97882: (e, n, a) => {
             a.d(n, { T: () => i, x: () => r });
@@ -669,4 +645,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.VerifiedOrgSidebarModule.39995c8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.VerifiedOrgSidebarModule.0434452a.js.map

@@ -1280,26 +1280,32 @@
                 s("fc7db594", "Resumo do perfil"),
                 s("c3f04d9c", "Pensamento"),
                 s("cbdddb0a", "Concluídos"),
-                s("e98cc293", function (e) {
-                    return "Buscando por " + e.query;
+                s("ie2bbeed", function (e) {
+                    return 'Searching for "' + e.query + '"';
                 }),
                 s("b0d1e205", function (e) {
                     return 'Pesquisando por **"' + e.query + '"**';
                 }),
-                s("i2e0f4d7", function (e) {
-                    return "Procurando em " + e.url + " por " + e.query;
+                s("bf970edd", function (e) {
+                    return 'Searching 𝕏 for "' + e.query + '"';
+                }),
+                s("g008d475", function (e) {
+                    return "Browsing " + e.url;
+                }),
+                s("c91e3971", function (e) {
+                    return "Browsing " + e.url + ' for "' + e.query + '"';
                 }),
                 s("acb9b845", function (e) {
                     return "Procurando " + e.url + ' por **"' + e.query + '"**';
                 }),
-                s("ef261d8d", function (e) {
-                    return "Pesquisando posts por @" + e.username;
+                s("j9006405", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username;
                 }),
-                s("f7d9cfb9", function (e) {
-                    return "Buscando em posts de @" + e.username + " por " + e.query;
+                s("a2dd07e5", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username + ' for "' + e.query + '"';
                 }),
-                s("bec7eb11", function (e) {
-                    return "Buscando posts de @" + e.username + ' para **"' + e.query + '"**';
+                s("e99fb7a3", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username + ' for **"' + e.query + '"**';
                 }),
                 s("ead81122", "Algo deu errado. Atualize para reconectar ou tente novamente."),
                 s("f808a13a", "Limite de taxa excedido. Aguarde alguns instantes e tente novamente."),
@@ -1345,7 +1351,7 @@
                 s("b7cb4fab", "Traduzido por"),
                 s("e0bffbf8", "About automatic translation"),
                 s("e839db3a", "Dispensar"),
-                s("a15585b4", "Language Settings"),
+                s("a15585b4", "Configurações de Idioma"),
                 s("d4c339b9", function (e) {
                     return "Post de " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1915,10 +1921,10 @@
                 s("jcd5ee8a", "Editar bloco"),
                 s("a8f09fb8", "Excluir bloco"),
                 s("i89195ea", "Divider"),
-                s("da8ac57c", "Editar legenda"),
-                s("a8fdd09c", "Publicar Artigo"),
-                s("d8047cc8", "Publicar");
-            s("ff7ddca2", "Seu Artigo será exibido como post depois da publicação. Além disso, encontre sob a guia Artigos no seu perfil."),
+                s("da8ac57c", "Editar legenda");
+            s("a8fdd09c", "Publicar Artigo"),
+                s("d8047cc8", "Publicar"),
+                s("ff7ddca2", "Seu Artigo será exibido como post depois da publicação. Além disso, encontre sob a guia Artigos no seu perfil."),
                 s("ef34d7be", "Os controles de audiência e resposta não são editados depois de o Artigo ser publicado."),
                 s("e52d4998", "Escolha sua audiência"),
                 s("d7985b24", "Escolha quem pode responder a este Artigo"),
@@ -2971,10 +2977,10 @@
                 s("bc6efc72", "Política de Privacidade"),
                 s("h3161192", "Política de cookies"),
                 s("a7de64de", "Informações de anúncios"),
-                s("jb0a4c36", "Blog"),
-                s("ce6d095a", "Carreiras"),
-                s("e0adec82", "Recursos da marca");
-            s("df1b7550", "Marketing"),
+                s("jb0a4c36", "Blog");
+            s("ce6d095a", "Carreiras"),
+                s("e0adec82", "Recursos da marca"),
+                s("df1b7550", "Marketing"),
                 s("he258678", "X para Empresas"),
                 s("c6f58084", "Desenvolvedores"),
                 s("d83f18d2", "Diretório"),
@@ -3883,10 +3889,10 @@
                 s("c371fb9a", "Fim"),
                 s("c0ce822e", "Configurações do microfone"),
                 s("a2bf8b8a", "Trocar para áudio"),
-                s("caa8d928", "Ativar/desativar supressão de ruído"),
-                s("b5d88f0c", "Somente funcionários"),
-                s("c855ab8e", "Exclusivo para Assinantes");
-            s("ddeb0a3c", "Aqui está a Comunidade. Gosta das pessoas? Dê uma olhada."),
+                s("caa8d928", "Ativar/desativar supressão de ruído");
+            s("b5d88f0c", "Somente funcionários"),
+                s("c855ab8e", "Exclusivo para Assinantes"),
+                s("ddeb0a3c", "Aqui está a Comunidade. Gosta das pessoas? Dê uma olhada."),
                 s("e111f531", function (e) {
                     return e.count + " sintoniz" + r(e.count, "ou", "aram");
                 }),
@@ -4153,36 +4159,39 @@
                 }),
                 s("ed93de0c", "Analisando post"),
                 s("d1d92e40", "Mais detalhes"),
+                s("fbc79f6a", "Histórico do chat"),
                 s("a6e89af8", "Conversa aberta"),
                 s("ica55d24", "Novo chat"),
-                s("f794af9a", "Modo Divertido"),
-                s("eccf9fea", "Modo Regular"),
+                s("b61ad410", "História"),
+                s("b3de2628", "Nenhum histórico de chat disponível"),
+                s("acfbfb28", "Suas conversas futuras aparecerão aqui."),
+                s("g02dacc0", "Hoje"),
+                s("c6e845c0", "Ontem"),
+                s("i1147548", "Pesquisar histórico do Grok"),
+                s("ab437026", "Nenhuma conversa encontrada"),
+                s("e12569ec", "Tente pesquisar por outra coisa"),
+                s("hb52cc4a", "Por favor, tente novamente mais tarde."),
+                s("d4eb0e26", "Renomear"),
+                s("c64975ea", "Você ainda não marcou nenhuma conversa como favorita"),
+                s("a3e3db6e", "Clique na estrela para salvar os chats que você usa com frequência"),
+                s("f4ae77ac", "Nenhum histórico de imagem disponível"),
+                s("d57d337e", "Suas imagens geradas aparecerão aqui."),
+                s("j826e722", "Salvar imagem"),
+                s("a9325f10", "Copiar imagem"),
+                s("g0b12442", "Não foi possível copiar a imagem"),
+                s("edd0c172", "Postar imagem"),
+                s("d1d3a41a", "Edição de imagem"),
+                s("c26b9b9c", "Arquivo"),
+                s("g10600b0", "Menu"),
                 s("g7b1c574", "Redefinir para o padrão"),
                 s("f388a7ec", "DeepSearch"),
                 s("ab1eb384", "Selecione o modo de pesquisa desejado"),
                 s("i330e54c", "Busca e raciocínio avançados"),
                 s("fdcce108", "DeeperSearch"),
                 s("ac64b674", "Busca estendida, mais raciocínio"),
-                s("j22655f2", "Fazer uma pergunta"),
-                s("h0681e3e", "Converse com o Grok, nosso assistente de IA"),
-                s("d593fd78", "Ele pode responder às suas perguntas, pesquisar no X e gerar imagens"),
-                s("d0205a24", "Verifique os Fatos"),
-                s("ed4177c4", "O Grok pode, com confiança, fornecer informações factualmente incorretas, resumir de forma errada ou omitir algum conteúdo. Você deve verificar qualquer informação de forma independente."),
-                s("c0ff98f8", "Treinamento e Personalização de IA"),
-                s("f1a8218a", "Podemos utilizar seus dados da plataforma X, bem como suas interações, entradas e resultados com o Grok para treinamento de modelos, ajuste fino e personalização da sua experiência com o Grok. Você pode desativar essa opção nas configurações do X. Para saber mais, visite nossa Central de Ajuda."),
-                s("bcbf5b6e", "Compartilhamento"),
-                s("j7b5c844", "Você é responsável pelas conversas que compartilha publicamente. Evite compartilhar informações sensíveis e confidenciais sobre você ou outras pessoas em suas conversas com o Grok (consulte nossa Central de Ajuda)."),
-                s("c9f7c196", "Central de Ajuda"),
+                s("a2697040", "Descreva o que mudar na imagem"),
                 s("c65f7308", "Os servidores estão processando neste momento."),
                 s("f2a8655e", "As ferramentas avançadas do Grok não estão disponíveis no momento."),
-                s("c26b9b9c", "Arquivo"),
-                s("g10600b0", "Menu"),
-                s("j826e722", "Salvar imagem"),
-                s("a9325f10", "Copiar imagem"),
-                s("g0b12442", "Não foi possível copiar a imagem"),
-                s("edd0c172", "Postar imagem"),
-                s("d1d3a41a", "Edição de imagem"),
-                s("a2697040", "Descreva o que mudar na imagem"),
                 s("ge1cefc4", "Ferramentas"),
                 s("e9b6d404", "A quais ferramentas de busca o Grok deve ter acesso?"),
                 s("h15dce2e", "Configurações avançadas"),
@@ -4197,60 +4206,25 @@
                 s("e4ae6abe", "Peça ao Grok para transformar sua imagem"),
                 s("e8ade5e2", "Selecione Personalidade"),
                 s("b5df32b0", "Grok alguma coisa"),
+                s("dab087ee", "Chats"),
+                s("a911623c", "Imagens"),
+                s("f794af9a", "Modo Divertido"),
+                s("eccf9fea", "Modo Regular"),
+                s("j22655f2", "Fazer uma pergunta"),
+                s("h0681e3e", "Converse com o Grok, nosso assistente de IA"),
+                s("d593fd78", "Ele pode responder às suas perguntas, pesquisar no X e gerar imagens"),
+                s("d0205a24", "Verifique os Fatos"),
+                s("ed4177c4", "O Grok pode, com confiança, fornecer informações factualmente incorretas, resumir de forma errada ou omitir algum conteúdo. Você deve verificar qualquer informação de forma independente."),
+                s("c0ff98f8", "Treinamento e Personalização de IA"),
+                s("f1a8218a", "Podemos utilizar seus dados da plataforma X, bem como suas interações, entradas e resultados com o Grok para treinamento de modelos, ajuste fino e personalização da sua experiência com o Grok. Você pode desativar essa opção nas configurações do X. Para saber mais, visite nossa Central de Ajuda."),
+                s("bcbf5b6e", "Compartilhamento"),
+                s("j7b5c844", "Você é responsável pelas conversas que compartilha publicamente. Evite compartilhar informações sensíveis e confidenciais sobre você ou outras pessoas em suas conversas com o Grok (consulte nossa Central de Ajuda)."),
+                s("c9f7c196", "Central de Ajuda"),
                 s("fb3b9776", "O resultado do Grok foi personalizado por este usuário."),
-                s("ca93f2ee", "Esta mensagem foi excluída."),
-                s("b8c06820", "Copiar texto"),
-                s("ca0f5894", "Descurtir"),
-                s("ja8d189e", "Queria resposta em texto"),
-                s("e951f04e", "Queria imagem"),
-                s("c503b35e", "Queria uma imagem diferente"),
-                s("d4371c92", "O código está incorreto"),
-                s("dbe8586e", "Queria um código diferente"),
-                s("e360eb4a", "Não queria código"),
-                s("a18657ca", "O cálculo está incorreto"),
-                s("b8b86300", "Não queria cálculos"),
-                s("e4c34788", "Resposta incorreta"),
-                s("b220a8c8", "Queria outra coisa"),
-                s("b115fd18", "Resposta tendenciosa"),
-                s("dc637214", "Estilo/tom inadequado"),
-                s("f02e6d42", "Queria buscar"),
-                s("bbec6bba", "Resultados de busca ruins"),
-                s("b494d088", "Não queria busca"),
-                s("a44974f2", "Não entende a imagem"),
-                s("bd44a8a8", "Conte-nos mais"),
-                s("fcdbe764", "O que o Grok pode fazer melhor?"),
-                s("bb6adb22", "Descreva o que deu errado"),
-                s("h0fa15f2", "Agradecemos seu feedback!"),
-                s("d700b268", "Chats referenciados"),
-                s("cd7bdab2", "Conversas esquecidas não são excluídas do histórico"),
-                s("f21b84de", "Referência esquecida"),
-                s("i52a9cb8", "Sem memórias para exibir."),
-                s("d9d36880", "Esquecer"),
-                s("g02dacc0", "Hoje"),
-                s("c6e845c0", "Ontem"),
-                s("a5fa4a86", "jan"),
-                s("c51724a4", "fev"),
-                s("j244ceb2", "mar"),
-                s("b22b12e0", "abr"),
-                s("h3023cac", "Maio"),
-                s("b10dbffa", "jun"),
-                s("c81da1b6", "jul"),
-                s("d4e4d3ce", "ago"),
-                s("c3418f9a", "set"),
-                s("b64dada6", "out"),
-                s("ad24ec20", "nov"),
-                s("c7902252", "dez"),
-                s("idf94bac", "Gerar novamente"),
-                s("f7614f92", "Sem busca"),
-                s("c5ade3ba", "Com busca"),
-                s("c16e5b1a", "Sem geração de imagens"),
-                s("i2ca65fa", "Com geração de imagens"),
-                s("d3927f88", "Postar link"),
-                s("be37ecd4", "Falha ao copiar para a área de transferência"),
-                s("h708a4c0", "Compartilhar conversa"),
-                s("g06a67e2", "A página de compartilhamento incluirá mensagens até este ponto"),
-                s("a0428662", "Não é útil"),
-                s("fe4fd310", "Útil"),
+                s("b0a889d4", "As Image"),
+                s("a111fb48", "As Spreadsheet"),
+                s("bccc65f0", "Grok can make mistakes. Always check original sources."),
+                s("bd202fe6", "Generating card"),
                 s("bfd161bc", "Comparação"),
                 s("j5dcf1b2", "Atualizado"),
                 s("a50aaa10", "Pré-mercado"),
@@ -4282,6 +4256,9 @@
                 s("dd679fb1", function (e) {
                     return "Baixa histórica" + e.ttc_stock_details;
                 }),
+                s("ha9c4cf8", "View source"),
+                s("ecad5d78", "Save image"),
+                s("d2d1d398", "Copiado!"),
                 s("a22063d2", "Compartilhe sua localização para uma maior precisão."),
                 s("db3248a8", "Carregando localização"),
                 s("ffe0e588", "Compartilhar localização"),
@@ -4315,6 +4292,65 @@
                 s("d66bf142", "Qui"),
                 s("dc17968a", "Sex"),
                 s("j310a2d6", "Sáb"),
+                s("afa2a58e", "See all posts"),
+                s("fc83e7e2", "See all users"),
+                s("df601d92", "Relevant Users"),
+                s("b001fa12", "Source query"),
+                s("db6c20cf", function (e) {
+                    return "Show all (" + e.count + ")";
+                }),
+                s("d7cb5408", "Páginas Relevantes da Web"),
+                s("ca93f2ee", "Esta mensagem foi excluída."),
+                s("b8c06820", "Copiar texto"),
+                s("ca0f5894", "Descurtir"),
+                s("ja8d189e", "Queria resposta em texto"),
+                s("e951f04e", "Queria imagem"),
+                s("c503b35e", "Queria uma imagem diferente"),
+                s("d4371c92", "O código está incorreto"),
+                s("dbe8586e", "Queria um código diferente"),
+                s("e360eb4a", "Não queria código"),
+                s("a18657ca", "O cálculo está incorreto"),
+                s("b8b86300", "Não queria cálculos"),
+                s("e4c34788", "Resposta incorreta"),
+                s("b220a8c8", "Queria outra coisa"),
+                s("b115fd18", "Resposta tendenciosa"),
+                s("dc637214", "Estilo/tom inadequado"),
+                s("f02e6d42", "Queria buscar"),
+                s("bbec6bba", "Resultados de busca ruins"),
+                s("b494d088", "Não queria busca"),
+                s("a44974f2", "Não entende a imagem"),
+                s("bd44a8a8", "Conte-nos mais"),
+                s("fcdbe764", "O que o Grok pode fazer melhor?"),
+                s("bb6adb22", "Descreva o que deu errado"),
+                s("h0fa15f2", "Agradecemos seu feedback!"),
+                s("d700b268", "Chats referenciados"),
+                s("cd7bdab2", "Conversas esquecidas não são excluídas do histórico"),
+                s("f21b84de", "Referência esquecida"),
+                s("i52a9cb8", "Sem memórias para exibir."),
+                s("d9d36880", "Esquecer"),
+                s("a5fa4a86", "jan"),
+                s("c51724a4", "fev"),
+                s("j244ceb2", "mar"),
+                s("b22b12e0", "abr"),
+                s("h3023cac", "Maio"),
+                s("b10dbffa", "jun"),
+                s("c81da1b6", "jul"),
+                s("d4e4d3ce", "ago"),
+                s("c3418f9a", "set"),
+                s("b64dada6", "out"),
+                s("ad24ec20", "nov"),
+                s("c7902252", "dez"),
+                s("idf94bac", "Gerar novamente"),
+                s("f7614f92", "Sem busca"),
+                s("c5ade3ba", "Com busca"),
+                s("c16e5b1a", "Sem geração de imagens"),
+                s("i2ca65fa", "Com geração de imagens"),
+                s("d3927f88", "Postar link"),
+                s("be37ecd4", "Falha ao copiar para a área de transferência"),
+                s("h708a4c0", "Compartilhar conversa"),
+                s("g06a67e2", "A página de compartilhamento incluirá mensagens até este ponto"),
+                s("a0428662", "Não é útil"),
+                s("fe4fd310", "Útil"),
                 s("eaf55eb4", "Mostrar pensamento"),
                 s("b1ac6016", "DeepSearch concluída"),
                 s("f766feca", "DeeperSearch concluída"),
@@ -4332,23 +4368,23 @@
                 s("db832e38", "Ative as notificações nas configurações do navegador"),
                 s("a910cac6", "Ocorreu um problema ao ativar as notificações"),
                 s("be30b6ee", "Conexão instável"),
-                s("b52484b6", "Buscando..."),
+                s("ge15b488", "Show thoughts"),
+                s("aa7c96bb", function (e) {
+                    return "Ver " + e.numResults + " mais";
+                }),
                 s("a4d9dbfa", "Pensamentos"),
+                s("j1ab5f40", "Toque para ler"),
+                s("f5a2377e", "Pensando por "),
+                s("g3ce0132", "Pensado por"),
+                s("f8007364", "Expandir detalhes"),
+                s("ca53f780", "Recolher detalhes"),
+                s("b52484b6", "Buscando..."),
                 s("ib1c5475", function (e) {
                     return "Pensamento por " + e.minutes + " min " + e.seconds + " s";
                 }),
                 s("a15d62db", function (e) {
                     return "Pensamento por " + e.seconds + " s";
                 }),
-                s("d7cb5408", "Páginas Relevantes da Web"),
-                s("aa7c96bb", function (e) {
-                    return "Ver " + e.numResults + " mais";
-                }),
-                s("j1ab5f40", "Toque para ler"),
-                s("f5a2377e", "Pensando por "),
-                s("g3ce0132", "Pensado por"),
-                s("f8007364", "Expandir detalhes"),
-                s("ca53f780", "Recolher detalhes"),
                 s("ha8fbe22", "Gere mais imagens com o Premium"),
                 s("d95c232a", "Você atingiu seu limite. Faça o upgrade agora para gerar mais."),
                 s("h2671312", "Mais Grok com Premium"),
@@ -4895,8 +4931,8 @@
                 s("fbc79a40", "Visão geral dos espaços"),
                 s("d077112a", "Estatísticas de espaço"),
                 s("cf3709da", "Status"),
-                s("e797dc32", "Horário de transmissão: "),
-                s("b649d8cc", "Apenas inscritos"),
+                s("e797dc32", "Horário de transmissão: ");
+            s("b649d8cc", "Apenas inscritos"),
                 s("j9282130", "Miniatura de transmissão"),
                 s("g629b8b0", "Tempo esgotado"),
                 s("eb87323c", "Isso mostra os dados de estatísticas para o período selecionado desde que aconteceu a transmissão ao vivo."),
@@ -4925,8 +4961,8 @@
                 s("a532072a", "Espectadores"),
                 s("d9508ab0", "visualizações"),
                 s("d9f9dec0", "Ver espaço"),
-                s("h0c1f37a", "Ver estatísticas do espaço");
-            s("e41fffbc", "O tempo total de exibição dos seus vídeos."),
+                s("h0c1f37a", "Ver estatísticas do espaço"),
+                s("e41fffbc", "O tempo total de exibição dos seus vídeos."),
                 s("if2909ba", "Tempo de exibição"),
                 s("i0e5bf4c", "Seus vídeos"),
                 s("ed99baea", "Acesso Beta Antecipado"),
@@ -5847,8 +5883,8 @@
                 s("hf68e810", "Notas da Comunidade é um programa cujo objetivo é criar um mundo mais bem-informado. Ele permite que as pessoas no X adicionem colaborativamente notas úteis a posts que possam ser enganosos."),
                 s("jdb52860", "Os colaboradores escrevem e classificam as notas"),
                 s("c104025c", "Os colaboradores são usuários do X, assim como você, que escolhem se inscrever no programa-piloto para escrever e avaliar notas. Quanto mais pessoas participarem, melhor o programa ficará."),
-                s("j7872b8c", "Serão exibidas no post somente as notas que as pessoas acharem úteis"),
-                s("fb59415e", "Para ser exibida publicamente como contexto no post, a nota precisa ser avaliada como útil por um número suficiente de pessoas com diferentes pontos de vista. Essa abordagem ajuda a evitar vieses e manipulação, ajudando a encontrar notas úteis para muitas pessoas."),
+                s("j7872b8c", "Serão exibidas no post somente as notas que as pessoas acharem úteis");
+            s("fb59415e", "Para ser exibida publicamente como contexto no post, a nota precisa ser avaliada como útil por um número suficiente de pessoas com diferentes pontos de vista. Essa abordagem ajuda a evitar vieses e manipulação, ajudando a encontrar notas úteis para muitas pessoas."),
                 s("f9a44022", "A empresa X não escolhe o que aparece: as pessoas, sim"),
                 s("gdf4fbb2", "A empresa X não escreve, não classifica nem faz a moderação das notas (a não ser que elas violem as regras do X). Acreditamos que permitir que as pessoas façam essas escolhas em conjunto é uma forma justa e eficiente de adicionar informações que ajudem as pessoas a ficarem mais informadas."),
                 s("cc720e6a", "As Notas da Comunidade têm como base a transparência de dados"),
@@ -5879,8 +5915,8 @@
                     return "Nenhum resultado para " + e.query;
                 }),
                 s("f191a2ba", "configurações de busca"),
-                s("a068008a", "As pastas não estão carregando no momento.");
-            s("f075b0e8", "Editar pasta"),
+                s("a068008a", "As pastas não estão carregando no momento."),
+                s("f075b0e8", "Editar pasta"),
                 s("beba2a0e", "Criar uma nova pasta de itens salvos"),
                 s("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
@@ -5925,7 +5961,6 @@
                 s("d7346632", "Você ainda não entrou para nenhuma Comunidade"),
                 s("b732a4cc", "Quando fizer isso, poderá ver seus posts aqui."),
                 s("hff48914", "Não foi possível encontrar nenhum post no momento."),
-                s("hb52cc4a", "Por favor, tente novamente mais tarde."),
                 s("e50e1bb0", "Bem-vindo a Comunidades"),
                 s("i6829daa", "Comunidades são grupos de discussão com moderação em que as pessoas do X podem se conectar e compartilhar."),
                 s("fc5c6914", "Conheça outras pessoas com seus interesses"),
@@ -6499,26 +6534,13 @@
                 s("e5f4eac0", "Seu conteúdo terá mais visibilidade e você aparecerá nos resultados de busca e nos assuntos."),
                 s("c7832a72", "Conecte-se diretamente com outras pessoas"),
                 s("i1ccd17a", "Envie Mensagens Diretas a pessoas que não seguem você sem que sua mensagem seja automaticamente filtrada."),
+                s("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
                 s("hc965308", "Diversão"),
                 s("eb78b77e", "Modo Divertido"),
                 s("aa8ece10", "Experimente o grok.com"),
                 s("gb5fb7d0", "Modo de Foco"),
                 s("g5665caa", "Sair do Modo de Foco"),
                 s("a372681e", "Copie o link para compartilhar"),
-                s("fbc79f6a", "Histórico do chat"),
-                s("b61ad410", "História"),
-                s("b3de2628", "Nenhum histórico de chat disponível"),
-                s("acfbfb28", "Suas conversas futuras aparecerão aqui."),
-                s("i1147548", "Pesquisar histórico do Grok"),
-                s("ab437026", "Nenhuma conversa encontrada"),
-                s("e12569ec", "Tente pesquisar por outra coisa"),
-                s("d4eb0e26", "Renomear"),
-                s("c64975ea", "Você ainda não marcou nenhuma conversa como favorita"),
-                s("a3e3db6e", "Clique na estrela para salvar os chats que você usa com frequência"),
-                s("f4ae77ac", "Nenhum histórico de imagem disponível"),
-                s("d57d337e", "Suas imagens geradas aparecerão aqui."),
-                s("dab087ee", "Chats"),
-                s("a911623c", "Imagens"),
                 s("ae9cdac6", "Histórico do chat"),
                 s("b198a392", "Conversa do Grok"),
                 s("d16329b4", "Copiar conversa"),
@@ -6869,8 +6891,8 @@
                 s("b2c213e0", "Limite de caracteres excedido"),
                 s("d84e9c2a", "Compartilhe o tipo de comprometimento com o trabalho que se espera para essa vaga."),
                 s("bc8b300c", "Função do cargo"),
-                s("d1eedb50", "Ajude os candidatos a entenderem a área à qual essa vaga se refere."),
-                s("eaf3ce64", "Equipe"),
+                s("d1eedb50", "Ajude os candidatos a entenderem a área à qual essa vaga se refere.");
+            s("eaf3ce64", "Equipe"),
                 s("b36cd50e", "Especifique a equipe principal com a qual os candidatos trabalharão depois de admitidos."),
                 s("d3a427ce", "Selecione o nível de experiência exigido."),
                 s("i7174442", "Descrição do cargo"),
@@ -6885,8 +6907,8 @@
                 s("c05176ec", "Se a vaga for interna, insira o local. Se a vaga for remota, descreva onde os candidatos podem estar localizados."),
                 s("d70c24d4", "Usado para ajudar os candidatos a buscarem sua vaga."),
                 s("de1c4376", "Faixa salarial"),
-                s("hf352d42", "Adicione uma faixa salarial opcional que será visível aos candidatos. Se optar por não fazer isso, observe quaisquer leis de transparência sobre pagamentos do local onde estiver contratando.");
-            s("ede7d0a2", "Moeda"),
+                s("hf352d42", "Adicione uma faixa salarial opcional que será visível aos candidatos. Se optar por não fazer isso, observe quaisquer leis de transparência sobre pagamentos do local onde estiver contratando."),
+                s("ede7d0a2", "Moeda"),
                 s("b925c18c", "Tipo de salário"),
                 s("j3d242ce", "Faixa inválida"),
                 s("f4d07bd2", "Inclua detalhes opcionais para facilitar que os candidatos visualizem suas vagas mediante busca."),
@@ -7841,31 +7863,7 @@
                 s("b5099e33", function (e) {
                     return "@" + e.screenName + " não tem nenhum seguidor verificado.";
                 }),
-                s("ec251f36", "Quando alguém que você conhece seguir essa conta, os perfis aparecerão aqui."),
-                s("f8af4f48", "Depois de seguir as contas, elas serão exibidas aqui."),
-                s("fd0aad94", "Quando uma pessoa verificada segue essa conta, ela será exibida aqui."),
-                s("b84f6df1", function (e) {
-                    return "Presenteie o Premium com " + e.percentage + "% de desconto por tempo limitado.";
-                }),
-                s("cfcac293", function (e) {
-                    return "Dê de presente e pague " + e.price;
-                }),
-                s("d7a73450", "Camada"),
-                s("hbd2c24e", "Esta conta não tem direito a presentes no momento."),
-                s("f3fddc98", "Termos e Políticas de Comprador"),
-                s("cff9c889", "Saiba mais"),
-                s("c65dda96", "Seu presente foi enviado"),
-                s("f6e2a407", function (e) {
-                    return "Permita que qualquer pessoa veja seu selo de Assinante quando você responder aos posts de @" + e.screenName;
-                }),
-                s("j8dedddd", function (e) {
-                    return "Quando você o desativar, @" + e.screenName + " e seus Assinantes continuarão vendo o selo quando você responder aos posts exclusivos para os Assinantes de @" + e.screenName + ". @" + e.screenName + " sempre verá seu selo.";
-                }),
-                s("c8a513f6", "Cancelar Assinatura"),
-                s("ea000ec8", "Já cancelou sua Assinatura?"),
-                s("d7b8387e", "Se você já tiver cancelado, não há mais nada a fazer. Sua Assinatura vai expirar automaticamente ao final do ciclo de faturamento."),
-                s("f4166d9a", "Deseja cancelar a Assinatura?"),
-                s("b74ff5fc", "Se você cancelar, sua Assinatura vai expirar automaticamente ao final do ciclo de faturamento.");
+                s("ec251f36", "Quando alguém que você conhece seguir essa conta, os perfis aparecerão aqui.");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var s = a[o];
@@ -7904,7 +7902,31 @@
                     n(e, a)
                 );
             }
-            s("ee9efbc8", "Continue para fazer o cancelamento"),
+            s("f8af4f48", "Depois de seguir as contas, elas serão exibidas aqui."),
+                s("fd0aad94", "Quando uma pessoa verificada segue essa conta, ela será exibida aqui."),
+                s("b84f6df1", function (e) {
+                    return "Presenteie o Premium com " + e.percentage + "% de desconto por tempo limitado.";
+                }),
+                s("cfcac293", function (e) {
+                    return "Dê de presente e pague " + e.price;
+                }),
+                s("d7a73450", "Camada"),
+                s("hbd2c24e", "Esta conta não tem direito a presentes no momento."),
+                s("f3fddc98", "Termos e Políticas de Comprador"),
+                s("cff9c889", "Saiba mais"),
+                s("c65dda96", "Seu presente foi enviado"),
+                s("f6e2a407", function (e) {
+                    return "Permita que qualquer pessoa veja seu selo de Assinante quando você responder aos posts de @" + e.screenName;
+                }),
+                s("j8dedddd", function (e) {
+                    return "Quando você o desativar, @" + e.screenName + " e seus Assinantes continuarão vendo o selo quando você responder aos posts exclusivos para os Assinantes de @" + e.screenName + ". @" + e.screenName + " sempre verá seu selo.";
+                }),
+                s("c8a513f6", "Cancelar Assinatura"),
+                s("ea000ec8", "Já cancelou sua Assinatura?"),
+                s("d7b8387e", "Se você já tiver cancelado, não há mais nada a fazer. Sua Assinatura vai expirar automaticamente ao final do ciclo de faturamento."),
+                s("f4166d9a", "Deseja cancelar a Assinatura?"),
+                s("b74ff5fc", "Se você cancelar, sua Assinatura vai expirar automaticamente ao final do ciclo de faturamento."),
+                s("ee9efbc8", "Continue para fazer o cancelamento"),
                 s("c5d9c77a", "Parece que houve algum problema. Mas não se preocupe, não é sua culpa. Feche esta janela e tente novamente."),
                 s("jda53c24", "Você pode cancelar a Assinatura pela Apple App Store."),
                 s("g0a7a53e", "Você pode cancelar a Assinatura pela Google Play Store."),
@@ -8875,8 +8897,8 @@
                 s("faf9f484", "Anúncio"),
                 s("ae2ea9e7", function (e) {
                     return "Anúncio de " + e.advertiserName;
-                }),
-                s("hea01798", "Procurar no controle deslizante"),
+                });
+            s("hea01798", "Procurar no controle deslizante"),
                 s("f8a09386", "Ver no Periscope"),
                 s("gf2b6eee", "Picture-in-Picture"),
                 s("b3160a69", function (e) {
@@ -8901,10 +8923,10 @@
                 }),
                 s("g60001bb", function (e) {
                     return "Veja " + e.advertiserName;
-                });
-            s("dff1ddd9", function (e) {
-                return "Vá para " + e.advertiserName;
-            }),
+                }),
+                s("dff1ddd9", function (e) {
+                    return "Vá para " + e.advertiserName;
+                }),
                 s("b0b22805", function (e) {
                     return "Visite " + e.advertiserName;
                 }),
@@ -10155,7 +10177,7 @@
                         {
                             key: "b6411d33",
                             get: function () {
-                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
+                                return ["Com base no seu uso do X e nas configurações de idiomas, " + this.props.sourceLang + " será traduzido automaticamente pelo Grok. Para selecionar os idiomas traduzidos automaticamente, acesse ", "."];
                             },
                         },
                         {
@@ -13202,9 +13224,9 @@
                 (f.a1692922520 = g({ 2: f("pt").numberFormatter({ raw: "00" }) }, { pattern: "HH:mm", timeSeparator: ":" })),
                 (f.b392109878 = g({ 1: f("pt").numberFormatter({ raw: "0" }), 2: f("pt").numberFormatter({ raw: "00" }) }, { pattern: "E, h:mm a", timeSeparator: ":", days: { E: { 1: { sun: "dom", mon: "seg", tue: "ter", wed: "qua", thu: "qui", fri: "sex", sat: "sáb" } } }, dayPeriods: { am: "AM", pm: "PM" } })),
                 (f.b1794313541 = g({ 1: f("pt").numberFormatter({ raw: "0" }) }, { pattern: "MMMM 'de' y", timeSeparator: ":", months: { M: { 4: { 1: "janeiro", 2: "fevereiro", 3: "março", 4: "abril", 5: "maio", 6: "junho", 7: "julho", 8: "agosto", 9: "setembro", 10: "outubro", 11: "novembro", 12: "dezembro" } } } })),
+                (f.b308509136 = g({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "domingo", mon: "segunda-feira", tue: "terça-feira", wed: "quarta-feira", thu: "quinta-feira", fri: "sexta-feira", sat: "sábado" } } } })),
                 (f.a1994278844 = g({ 1: f("pt").numberFormatter({ raw: "0" }) }, { pattern: "d 'de' MMM 'de' y", timeSeparator: ":", months: { M: { 3: { 1: "jan", 2: "fev", 3: "mar", 4: "abr", 5: "mai", 6: "jun", 7: "jul", 8: "ago", 9: "set", 10: "out", 11: "nov", 12: "dez" } } } })),
                 (f.b1561754576 = g({}, { pattern: "LLLL", timeSeparator: ":", months: { L: { 4: { 1: "janeiro", 2: "fevereiro", 3: "março", 4: "abril", 5: "maio", 6: "junho", 7: "julho", 8: "agosto", 9: "setembro", 10: "outubro", 11: "novembro", 12: "dezembro" } } } })),
-                (f.b308509136 = g({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "domingo", mon: "segunda-feira", tue: "terça-feira", wed: "quarta-feira", thu: "quinta-feira", fri: "sexta-feira", sat: "sábado" } } } })),
                 (f.b1952476464 = h(f("pt").dateToPartsFormatter({ skeleton: "MMMd" }))),
                 (f.b1042345971 = h(f("pt").dateToPartsFormatter({ skeleton: "yMMMd" }))),
                 (f.b1093501022 = h(f("pt").dateToPartsFormatter({ skeleton: "hm" }))),
@@ -13224,9 +13246,9 @@
                 (f.b412260383 = h(f("pt").dateToPartsFormatter({ time: "short" }))),
                 (f.b543283245 = h(f("pt").dateToPartsFormatter({ skeleton: "Ehm" }))),
                 (f.b1043031164 = h(f("pt").dateToPartsFormatter({ skeleton: "yMMMM" }))),
+                (f.b699916217 = h(f("pt").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (f.a1158118291 = h(f("pt").dateToPartsFormatter({ date: "medium" }))),
                 (f.b1953161657 = h(f("pt").dateToPartsFormatter({ skeleton: "MMMM" }))),
-                (f.b699916217 = h(f("pt").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (f.b1459025071 = q(f("pt").numberFormatter({}), f("pt").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "em {0} dia", "relativeTimePattern-count-other": "em {0} dias" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "{0} dia atrás", "relativeTimePattern-count-other": "{0} dias atrás" }, "relative-type--2": "anteontem", "relative-type--1": "ontem", "relative-type-0": "hoje", "relative-type-1": "amanhã", "relative-type-2": "depois de amanhã" })),
                 (f.a783324470 = A(f("pt").numberFormatter({}), f("pt").pluralGenerator({}), { compoundUnitPattern: "{0} por {1}", unitProperties: { displayName: "segundos", one: "{0} segundo", other: "{0} segundos", perUnitPattern: "{0} por segundo" } })),
                 (f.b1103638826 = A(f("pt").numberFormatter({}), f("pt").pluralGenerator({}), { compoundUnitPattern: "{0} por {1}", unitProperties: { displayName: "minutos", one: "{0} minuto", other: "{0} minutos", perUnitPattern: "{0} por minuto" } })),
@@ -13358,14 +13380,14 @@
                 s("b6ca7bcb", f.b412260383),
                 s("h0e4cdf5", f.b543283245),
                 s("g727ddcf", f.b1043031164),
+                s("f3b9b9a7", f.b699916217),
                 s("h3629783", f.a1158118291),
                 s("a20c68af", f.b1953161657),
                 s("ja781451", f.b296560499),
                 s("cfa1a7b9", f.a2042223280),
-                s("f3b9b9a7", f.b699916217),
                 s("eefcd267", f.a1487491570),
                 s("fa8afc43", f.b215959085);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.982a566a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.0ab0345a.js.map

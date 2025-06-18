@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Birdwatch-a2dee9c7", "bundle.AudioSpaceDetail", "loader.FeedbackSheet"],
+    ["bundle.Birdwatch-a2dee9c7", "loader.FeedbackSheet"],
     {
         782365: (e) => {
             e.exports = { queryId: "s_L4H2iPhZoMtWiqHxd9LA", operationName: "BirdwatchAdmitUser", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -109,7 +109,7 @@
         },
         106067: (e, t, a) => {
             "use strict";
-            a.d(t, { Z: () => Se });
+            a.d(t, { Z: () => Te });
             a(136728);
             var i = a(506899),
                 n = a(241980),
@@ -182,9 +182,9 @@
                 B = a(139119),
                 k = a.n(B),
                 C = a(969190),
-                S = a.n(C),
-                T = a(147149),
-                x = a.n(T),
+                T = a.n(C),
+                S = a(147149),
+                x = a.n(S),
                 q = a(798883),
                 I = a.n(q),
                 L = a(769946),
@@ -199,8 +199,8 @@
                 R = a.n(M),
                 z = a(259967),
                 j = a.n(z),
-                D = a(180186),
-                U = a.n(D),
+                U = a(180186),
+                D = a.n(U),
                 H = a(134381),
                 G = a.n(H),
                 O = a(555185),
@@ -239,13 +239,13 @@
                     return !t;
                 }, "GQL URT: Failed to render Birdwatch Global timeline"),
                 Ce = (e, t) =>
-                    e.graphQL(U(), {}).then((a) => {
+                    e.graphQL(D(), {}).then((a) => {
                         const { options: i, retry_in_millis: r } = a.authenticated_user_birdwatch_alias_self_select_options || {};
                         return r && t < 5 ? (0, n.Z)(r).then(() => Ce(e, t + 1)) : i;
                     }),
-                Se = ({ apiClient: e, featureSwitches: t }) => ({
+                Te = ({ apiClient: e, featureSwitches: t }) => ({
                     acknowledgeEarnOut: () => e.graphQL(me(), {}),
-                    createAppeal: (t) => e.graphQL(S(), { note_id: t.note_id }),
+                    createAppeal: (t) => e.graphQL(T(), { note_id: t.note_id }),
                     createBirdwatchBatSignal: (t) => e.graphQL(x(), { tweet_id: t.tweet_id, source_link: t.source_link }).then((e) => ("BirdwatchError" === e.birdwatchbatsignal_create?.type ? { error: "BirdwatchError", reason: e.birdwatchbatsignal_create?.reason, error_code: e.birdwatchbatsignal_create?.error_code } : { ...e.birdwatchbatsignal_create })),
                     createNote: (a) => e.graphQL(I(), { tweet_id: a.tweet_id, is_media_note: a.is_media_note, is_helpful_for_all_posts: a.is_helpful_for_all_posts, data_v1: a.data, ...(0, o.S)(t) }).then((e) => ("BirdwatchError" === e.birdwatchnote_create_v2?.type ? { error: "BirdwatchError", reason: e.birdwatchnote_create_v2?.reason, error_code: e.birdwatchnote_create_v2?.error_code } : { ...e.birdwatchnote_create_v2 })),
                     createRating(t) {
@@ -537,11 +537,11 @@
                 _renderContent() {
                     const { backButtonType: e, centerTitle: t, centeredLogo: a, fixed: n, hideBackButton: r, isFullWidth: o, isLarge: l, leftControl: d, middleControl: p, position: b, rightControl: u, secondaryBar: h, style: w, subtitle: m, title: g, titleDomId: f, titleIconCell: y, titleIconCellSize: v, withBackground: B, withWideContainer: k } = this.props,
                         { isModal: C } = this.context,
-                        S = r ? d : i.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        T = (function (e, t, a) {
+                        T = r ? d : i.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        S = (function (e, t, a) {
                             return e && !(t && a);
                         })(!!B, C, !!h);
-                    return i.createElement(i.Fragment, null, i.createElement(_.Z, { centerTitle: t, centeredLogo: a, isFullWidth: o, isLarge: l, leftControl: S, middleControl: p, position: c(b, C, n), rightControl: u, style: w, subtitle: m, title: g, titleDomId: f, titleIconCell: y, titleIconCellSize: v, withBackground: T, withWideContainer: k }), h || null);
+                    return i.createElement(i.Fragment, null, i.createElement(_.Z, { centerTitle: t, centeredLogo: a, isFullWidth: o, isLarge: l, leftControl: T, middleControl: p, position: c(b, C, n), rightControl: u, style: w, subtitle: m, title: g, titleDomId: f, titleIconCell: y, titleIconCellSize: v, withBackground: S, withWideContainer: k }), h || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -709,4 +709,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-a2dee9c7.870a746a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-a2dee9c7.421e702a.js.map

@@ -18,7 +18,7 @@
                 p = n(461756),
                 m = n(224162),
                 y = n(392237),
-                v = n(393058),
+                v = n(401339),
                 g = n(933895);
             const _ = { stiffness: 267, damping: 20 };
             class b extends i.PureComponent {
@@ -986,4 +986,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.ReaderMode~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~bundle.d03805ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.ReaderMode~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~bundle.7b0b91da.js.map

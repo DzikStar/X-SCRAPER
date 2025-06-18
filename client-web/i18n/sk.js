@@ -1289,26 +1289,32 @@
                 n("fc7db594", "Súhrn profilu"),
                 n("c3f04d9c", "Premýšľa"),
                 n("cbdddb0a", "Dokončené"),
-                n("e98cc293", function (e) {
-                    return "Hľadá " + e.query;
+                n("ie2bbeed", function (e) {
+                    return 'Searching for "' + e.query + '"';
                 }),
                 n("b0d1e205", function (e) {
                     return "Hľadá **„" + e.query + "“**";
                 }),
-                n("i2e0f4d7", function (e) {
-                    return "Prehľadáva web " + e.url + " kvôli tomuto: " + e.query;
+                n("bf970edd", function (e) {
+                    return 'Searching 𝕏 for "' + e.query + '"';
+                }),
+                n("g008d475", function (e) {
+                    return "Browsing " + e.url;
+                }),
+                n("c91e3971", function (e) {
+                    return "Browsing " + e.url + ' for "' + e.query + '"';
                 }),
                 n("acb9b845", function (e) {
                     return "Prehľadáva " + e.url + " na základe dopytu **„" + e.query + "“**";
                 }),
-                n("ef261d8d", function (e) {
-                    return "Hľadá príspevky od používateľa @" + e.username;
+                n("j9006405", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username;
                 }),
-                n("f7d9cfb9", function (e) {
-                    return "Hľadá príspevky od používateľa @" + e.username + " kvôli tomuto: " + e.query;
+                n("a2dd07e5", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username + ' for "' + e.query + '"';
                 }),
-                n("bec7eb11", function (e) {
-                    return "Hľadajú sa príspevky od používateľa @" + e.username + " v súvislosti s dopytom**„" + e.query + "“**";
+                n("e99fb7a3", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username + ' for **"' + e.query + '"**';
                 }),
                 n("ead81122", "Došlo k chybe. Obnovte stránku, aby ste sa znova pripojili, alebo skúste operáciu zopakovať."),
                 n("f808a13a", "Bol prekročený limit. Chvíľu počkajte a potom to skúste znova."),
@@ -1354,7 +1360,7 @@
                 n("b7cb4fab", "Preklad poskytuje"),
                 n("e0bffbf8", "About automatic translation"),
                 n("e839db3a", "Zrušiť"),
-                n("a15585b4", "Language Settings"),
+                n("a15585b4", "Nastavenia jazykov"),
                 n("d4c339b9", function (e) {
                     return "Príspevok z " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1924,10 +1930,10 @@
                 n("jcd5ee8a", "Upraviť blok"),
                 n("a8f09fb8", "Odstrániť blok"),
                 n("i89195ea", "Oddeľovač"),
-                n("da8ac57c", "Upraviť opis"),
-                n("a8fdd09c", "Zverejnenie článku"),
-                n("d8047cc8", "Publikovať");
-            n("ff7ddca2", "Zverejnený článok sa bude zobrazovať ako príspevok a nájdete ho aj vo svojom profile na karte Články."),
+                n("da8ac57c", "Upraviť opis");
+            n("a8fdd09c", "Zverejnenie článku"),
+                n("d8047cc8", "Publikovať"),
+                n("ff7ddca2", "Zverejnený článok sa bude zobrazovať ako príspevok a nájdete ho aj vo svojom profile na karte Články."),
                 n("ef34d7be", "Nastavenia publika a odpovedí sa po zverejnení článku nedajú upravovať."),
                 n("e52d4998", "Vyberte svoje publikum"),
                 n("d7985b24", "Vyberte, kto môže na tento článok odpovedať"),
@@ -2980,10 +2986,10 @@
                 n("bc6efc72", "Zásady ochrany súkromia"),
                 n("h3161192", "Zásady používania súborov cookie"),
                 n("a7de64de", "Informácie o reklamách"),
-                n("jb0a4c36", "Blog"),
-                n("ce6d095a", "Kariéry"),
-                n("e0adec82", "Zdroje pre značku");
-            n("df1b7550", "Marketing"),
+                n("jb0a4c36", "Blog");
+            n("ce6d095a", "Kariéry"),
+                n("e0adec82", "Zdroje pre značku"),
+                n("df1b7550", "Marketing"),
                 n("he258678", "X pre firmy"),
                 n("c6f58084", "Vývojári"),
                 n("d83f18d2", "Adresár"),
@@ -3892,10 +3898,10 @@
                 n("c371fb9a", "Koniec"),
                 n("c0ce822e", "Nastavenia mikrofónu"),
                 n("a2bf8b8a", "Prepnúť na počúvanie"),
-                n("caa8d928", "Prepnúť potláčanie ruchu"),
-                n("b5d88f0c", "Iba pre zamestnancov"),
-                n("c855ab8e", "Len pre predplatiteľov");
-            n("ddeb0a3c", "Páčia sa vám ľudia z tejto Komunity? Pozrite si ju."),
+                n("caa8d928", "Prepnúť potláčanie ruchu");
+            n("b5d88f0c", "Iba pre zamestnancov"),
+                n("c855ab8e", "Len pre predplatiteľov"),
+                n("ddeb0a3c", "Páčia sa vám ľudia z tejto Komunity? Pozrite si ju."),
                 n("e111f531", function (e) {
                     return e.count + " naladen" + t(e.count, "í", "ých", "ý/-á", "ých");
                 }),
@@ -4162,36 +4168,39 @@
                 }),
                 n("ed93de0c", "Analýza príspevku"),
                 n("d1d92e40", "Ďalšie podrobnosti"),
+                n("fbc79f6a", "História četu"),
                 n("a6e89af8", "Otvorená konverzácia"),
                 n("ica55d24", "Nový čet"),
-                n("f794af9a", "Zábavný režim"),
-                n("eccf9fea", "Bežný režim"),
+                n("b61ad410", "História"),
+                n("b3de2628", "Nie je dostupná žiadna história četu"),
+                n("acfbfb28", "Vaše ďalšie konverzácie sa budú zobrazovať na tomto mieste."),
+                n("g02dacc0", "Dnes"),
+                n("c6e845c0", "Včera"),
+                n("i1147548", "Hľadať v histórii Groka"),
+                n("ab437026", "Nenašli sa žiadne konverzácie"),
+                n("e12569ec", "Skúste vyhľadať niečo iné."),
+                n("hb52cc4a", "Skúste to neskôr znova."),
+                n("d4eb0e26", "Premenovať"),
+                n("c64975ea", "Zatiaľ ste si medzi obľúbené nepridali žiadne konverzácie."),
+                n("a3e3db6e", "Kliknutím na hviezdičku si uložíte čety, ku ktorým sa často vraciate"),
+                n("f4ae77ac", "Nie je dostupná žiadna história obrázkov"),
+                n("d57d337e", "Vaše vygenerované obrázky sa budú zobrazovať tu."),
+                n("j826e722", "Uložiť obrázok"),
+                n("a9325f10", "Kopírovať obrázok"),
+                n("g0b12442", "Obrázok sa nepodarilo skopírovať"),
+                n("edd0c172", "Uverejniť obrázok"),
+                n("d1d3a41a", "Úprava obrázka"),
+                n("c26b9b9c", "Súbor"),
+                n("g10600b0", "Ponuka"),
                 n("g7b1c574", "Obnoviť predvolené hodnoty"),
                 n("f388a7ec", "DeepSearch"),
                 n("ab1eb384", "Vyberte požadovaný režim vyhľadávania"),
                 n("i330e54c", "Pokročilé vyhľadávanie a uvažovanie"),
                 n("fdcce108", "DeeperSearch"),
                 n("ac64b674", "Rozšírené vyhľadávanie, viac uvažovania"),
-                n("j22655f2", "Spýtajte sa čokoľvek"),
-                n("h0681e3e", "Rozprávajte sa s Grokom, naším asistentom s AI"),
-                n("d593fd78", "Môže odpovedať na vaše otázky, vyhľadávať obsah v službe X a generovať obrázky"),
-                n("d0205a24", "Overovanie faktov"),
-                n("ed4177c4", "Grok môže presvedčene poskytovať fakticky nesprávne informácie, robiť chyby pri zhŕňaní informácií alebo vynechávať niektorý obsah. Všetky informácie by ste si mali nezávisle overiť."),
-                n("c0ff98f8", "Optimalizácia a prispôsobenie AI"),
-                n("f1a8218a", "Vaše údaje v službe X, ako aj vaše interakcie, vstupy a výsledky súvisiace s Grokom, môžeme používať na optimalizáciu modelov, dolaďovanie a prispôsobenie toho, ako využívate Groka. Z tohto používania údajov sa môžete odhlásiť v nastaveniach služby X. Viac informácií nájdete v našom centre pomoci."),
-                n("bcbf5b6e", "Zdieľanie"),
-                n("j7b5c844", "Za konverzácie, ktoré verejne zdieľate, nesiete zodpovednosť vy. V konverzáciách s Grokom nepoužívajte citlivé ani dôverné informácie, ktoré sa týkajú vás alebo iných osôb (pozrite si naše centrum pomoci)."),
-                n("c9f7c196", "Centrum pomoci"),
+                n("a2697040", "Opíšte, čo chcete v obrázku zmeniť"),
                 n("c65f7308", "Servery práve naplno pracujú"),
                 n("f2a8655e", "Rozšírené nástroje Groka sú momentálne nedostupné."),
-                n("c26b9b9c", "Súbor"),
-                n("g10600b0", "Ponuka"),
-                n("j826e722", "Uložiť obrázok"),
-                n("a9325f10", "Kopírovať obrázok"),
-                n("g0b12442", "Obrázok sa nepodarilo skopírovať"),
-                n("edd0c172", "Uverejniť obrázok"),
-                n("d1d3a41a", "Úprava obrázka"),
-                n("a2697040", "Opíšte, čo chcete v obrázku zmeniť"),
                 n("ge1cefc4", "Nástroje"),
                 n("e9b6d404", "Ku ktorým vyhľadávacím nástrojom by mal mať Grok prístup?"),
                 n("h15dce2e", "Rozšírené nastavenia"),
@@ -4206,60 +4215,25 @@
                 n("e4ae6abe", "Požiadajte Groka, aby zmenil váš obrázok"),
                 n("e8ade5e2", "Vyberte osobnosť"),
                 n("b5df32b0", "Položte Grokovi otázku"),
+                n("dab087ee", "Čety"),
+                n("a911623c", "Obrázky"),
+                n("f794af9a", "Zábavný režim"),
+                n("eccf9fea", "Bežný režim"),
+                n("j22655f2", "Spýtajte sa čokoľvek"),
+                n("h0681e3e", "Rozprávajte sa s Grokom, naším asistentom s AI"),
+                n("d593fd78", "Môže odpovedať na vaše otázky, vyhľadávať obsah v službe X a generovať obrázky"),
+                n("d0205a24", "Overovanie faktov"),
+                n("ed4177c4", "Grok môže presvedčene poskytovať fakticky nesprávne informácie, robiť chyby pri zhŕňaní informácií alebo vynechávať niektorý obsah. Všetky informácie by ste si mali nezávisle overiť."),
+                n("c0ff98f8", "Optimalizácia a prispôsobenie AI"),
+                n("f1a8218a", "Vaše údaje v službe X, ako aj vaše interakcie, vstupy a výsledky súvisiace s Grokom, môžeme používať na optimalizáciu modelov, dolaďovanie a prispôsobenie toho, ako využívate Groka. Z tohto používania údajov sa môžete odhlásiť v nastaveniach služby X. Viac informácií nájdete v našom centre pomoci."),
+                n("bcbf5b6e", "Zdieľanie"),
+                n("j7b5c844", "Za konverzácie, ktoré verejne zdieľate, nesiete zodpovednosť vy. V konverzáciách s Grokom nepoužívajte citlivé ani dôverné informácie, ktoré sa týkajú vás alebo iných osôb (pozrite si naše centrum pomoci)."),
+                n("c9f7c196", "Centrum pomoci"),
                 n("fb3b9776", "Výstupné informácie od Groka boli prispôsobené týmto používateľom."),
-                n("ca93f2ee", "Táto správa bola odstránená."),
-                n("b8c06820", "Kopírovať text"),
-                n("ca0f5894", "Nepáči sa"),
-                n("ja8d189e", "Chcel(a) som textovú odpoveď"),
-                n("e951f04e", "Chcel(a) som obrázok"),
-                n("c503b35e", "Chcel(a) som iný obrázok"),
-                n("d4371c92", "Kód je nesprávny"),
-                n("dbe8586e", "Chcel(a) som iný kód"),
-                n("e360eb4a", "Nechcel(a) som kód"),
-                n("a18657ca", "Matematika je nesprávna"),
-                n("b8b86300", "Nechcel(a) som matematickú odpoveď"),
-                n("e4c34788", "Nesprávna odpoveď"),
-                n("b220a8c8", "Chcel(a) som niečo iné"),
-                n("b115fd18", "Neobjektívna odpoveď"),
-                n("dc637214", "Nesprávny štýl/tón"),
-                n("f02e6d42", "Chcel(a) som vyhľadávať"),
-                n("bbec6bba", "Nekvalitné výsledky vyhľadávania"),
-                n("b494d088", "Nechcel(a) som vyhľadávať"),
-                n("a44974f2", "Nerozumie obrázku"),
-                n("bd44a8a8", "Povedzte nám viac"),
-                n("fcdbe764", "V čom sa môže Grok zlepšiť?"),
-                n("bb6adb22", "Opíšte, v čom bol problém"),
-                n("h0fa15f2", "Ďakujeme vám za spätnú väzbu."),
-                n("d700b268", "Odkazované čety"),
-                n("cd7bdab2", "Ak konverzácie označíte ako zabudnuté, neodstránia sa z histórie"),
-                n("f21b84de", "Odkaz bol označený ako zabudnutý"),
-                n("i52a9cb8", "Žiadne spomienky na zobrazenie."),
-                n("d9d36880", "Označiť ako zabudnuté"),
-                n("g02dacc0", "Dnes"),
-                n("c6e845c0", "Včera"),
-                n("a5fa4a86", "jan."),
-                n("c51724a4", "feb."),
-                n("j244ceb2", "mar."),
-                n("b22b12e0", "apr."),
-                n("h3023cac", "máj"),
-                n("b10dbffa", "jún"),
-                n("c81da1b6", "júl"),
-                n("d4e4d3ce", "aug."),
-                n("c3418f9a", "sep."),
-                n("b64dada6", "okt."),
-                n("ad24ec20", "nov."),
-                n("c7902252", "dec."),
-                n("idf94bac", "Znova generovať"),
-                n("f7614f92", "Bez vyhľadávania"),
-                n("c5ade3ba", "S vyhľadávaním"),
-                n("c16e5b1a", "Bez generovania obrázka"),
-                n("i2ca65fa", "S generovaním obrázka"),
-                n("d3927f88", "Uverejniť odkaz"),
-                n("be37ecd4", "Kopírovanie do schránky nebolo úspešné"),
-                n("h708a4c0", "Zdieľanie konverzácie"),
-                n("g06a67e2", "Stránka zdieľania bude obsahovať správy až do tohto bodu"),
-                n("a0428662", "Neužitočné"),
-                n("fe4fd310", "Užitočné"),
+                n("b0a889d4", "As Image"),
+                n("a111fb48", "As Spreadsheet"),
+                n("bccc65f0", "Grok can make mistakes. Always check original sources."),
+                n("bd202fe6", "Generating card"),
                 n("bfd161bc", "Porovnanie"),
                 n("j5dcf1b2", "Aktualizované"),
                 n("a50aaa10", "Pred otvorením burzy"),
@@ -4291,6 +4265,9 @@
                 n("dd679fb1", function (e) {
                     return "Minimum za celé obdobie" + e.ttc_stock_details;
                 }),
+                n("ha9c4cf8", "View source"),
+                n("ecad5d78", "Save image"),
+                n("d2d1d398", "Skopírované!"),
                 n("a22063d2", "Zdieľajte svoju polohu na zlepšenie presnosti."),
                 n("db3248a8", "Načítava sa poloha"),
                 n("ffe0e588", "Zdieľať polohu"),
@@ -4324,6 +4301,65 @@
                 n("d66bf142", "Št"),
                 n("dc17968a", "Pi"),
                 n("j310a2d6", "So"),
+                n("afa2a58e", "See all posts"),
+                n("fc83e7e2", "See all users"),
+                n("df601d92", "Relevant Users"),
+                n("b001fa12", "Source query"),
+                n("db6c20cf", function (e) {
+                    return "Show all (" + e.count + ")";
+                }),
+                n("d7cb5408", "Relevantné webové stránky"),
+                n("ca93f2ee", "Táto správa bola odstránená."),
+                n("b8c06820", "Kopírovať text"),
+                n("ca0f5894", "Nepáči sa"),
+                n("ja8d189e", "Chcel(a) som textovú odpoveď"),
+                n("e951f04e", "Chcel(a) som obrázok"),
+                n("c503b35e", "Chcel(a) som iný obrázok"),
+                n("d4371c92", "Kód je nesprávny"),
+                n("dbe8586e", "Chcel(a) som iný kód"),
+                n("e360eb4a", "Nechcel(a) som kód"),
+                n("a18657ca", "Matematika je nesprávna"),
+                n("b8b86300", "Nechcel(a) som matematickú odpoveď"),
+                n("e4c34788", "Nesprávna odpoveď"),
+                n("b220a8c8", "Chcel(a) som niečo iné"),
+                n("b115fd18", "Neobjektívna odpoveď"),
+                n("dc637214", "Nesprávny štýl/tón"),
+                n("f02e6d42", "Chcel(a) som vyhľadávať"),
+                n("bbec6bba", "Nekvalitné výsledky vyhľadávania"),
+                n("b494d088", "Nechcel(a) som vyhľadávať"),
+                n("a44974f2", "Nerozumie obrázku"),
+                n("bd44a8a8", "Povedzte nám viac"),
+                n("fcdbe764", "V čom sa môže Grok zlepšiť?"),
+                n("bb6adb22", "Opíšte, v čom bol problém"),
+                n("h0fa15f2", "Ďakujeme vám za spätnú väzbu."),
+                n("d700b268", "Odkazované čety"),
+                n("cd7bdab2", "Ak konverzácie označíte ako zabudnuté, neodstránia sa z histórie"),
+                n("f21b84de", "Odkaz bol označený ako zabudnutý"),
+                n("i52a9cb8", "Žiadne spomienky na zobrazenie."),
+                n("d9d36880", "Označiť ako zabudnuté"),
+                n("a5fa4a86", "jan."),
+                n("c51724a4", "feb."),
+                n("j244ceb2", "mar."),
+                n("b22b12e0", "apr."),
+                n("h3023cac", "máj"),
+                n("b10dbffa", "jún"),
+                n("c81da1b6", "júl"),
+                n("d4e4d3ce", "aug."),
+                n("c3418f9a", "sep."),
+                n("b64dada6", "okt."),
+                n("ad24ec20", "nov."),
+                n("c7902252", "dec."),
+                n("idf94bac", "Znova generovať"),
+                n("f7614f92", "Bez vyhľadávania"),
+                n("c5ade3ba", "S vyhľadávaním"),
+                n("c16e5b1a", "Bez generovania obrázka"),
+                n("i2ca65fa", "S generovaním obrázka"),
+                n("d3927f88", "Uverejniť odkaz"),
+                n("be37ecd4", "Kopírovanie do schránky nebolo úspešné"),
+                n("h708a4c0", "Zdieľanie konverzácie"),
+                n("g06a67e2", "Stránka zdieľania bude obsahovať správy až do tohto bodu"),
+                n("a0428662", "Neužitočné"),
+                n("fe4fd310", "Užitočné"),
                 n("eaf55eb4", "Ukáž, ako premýšľaš"),
                 n("b1ac6016", "Dokončil vyhľadávanie cez DeepSearch"),
                 n("f766feca", "Vyhľadávanie cez DeeperSearch bolo dokončené"),
@@ -4341,23 +4377,23 @@
                 n("db832e38", "Zapnite notifikácie v nastaveniach prehliadača"),
                 n("a910cac6", "Pri zapínaní notifikácií došlo k chybe"),
                 n("be30b6ee", "Nestabilné pripojenie"),
-                n("b52484b6", "Vyhľadáva sa…"),
+                n("ge15b488", "Show thoughts"),
+                n("aa7c96bb", function (e) {
+                    return "Zobraziť ďalšie (" + e.numResults + ")";
+                }),
                 n("a4d9dbfa", "Výsledky premýšľania"),
+                n("j1ab5f40", "Ťuknutím si prečítate obsah"),
+                n("f5a2377e", "Premýšľa "),
+                n("g3ce0132", "Premýšľal"),
+                n("f8007364", "Rozbaliť podrobnosti"),
+                n("ca53f780", "Zabaliť podrobnosti"),
+                n("b52484b6", "Vyhľadáva sa…"),
                 n("ib1c5475", function (e) {
                     return "Premýšľal " + e.minutes + " min. a " + e.seconds + " s";
                 }),
                 n("a15d62db", function (e) {
                     return "Premýšľal " + e.seconds + " s";
                 }),
-                n("d7cb5408", "Relevantné webové stránky"),
-                n("aa7c96bb", function (e) {
-                    return "Zobraziť ďalšie (" + e.numResults + ")";
-                }),
-                n("j1ab5f40", "Ťuknutím si prečítate obsah"),
-                n("f5a2377e", "Premýšľa "),
-                n("g3ce0132", "Premýšľal"),
-                n("f8007364", "Rozbaliť podrobnosti"),
-                n("ca53f780", "Zabaliť podrobnosti"),
                 n("ha8fbe22", "Generujte viac obrázkov s predplatným Premium"),
                 n("d95c232a", "Dosiahli ste limit. Ak toho chcete vygenerovať viac, aktivujte si predplatné."),
                 n("h2671312", "Rozšírené možnosti Groka s predplatným Premium"),
@@ -4904,8 +4940,8 @@
                 n("fbc79a40", "Prehľad priestorov"),
                 n("d077112a", "Štatistiky priestoru"),
                 n("cf3709da", "Stav"),
-                n("e797dc32", "Čas streamu: "),
-                n("b649d8cc", "Len pre predplatiteľov"),
+                n("e797dc32", "Čas streamu: ");
+            n("b649d8cc", "Len pre predplatiteľov"),
                 n("j9282130", "Miniatúra vysielania"),
                 n("g629b8b0", "Časový limit vypršal"),
                 n("eb87323c", "Zobrazuje štatistické údaje za vybrané časové obdobie od uskutočnenia živého prenosu."),
@@ -4934,8 +4970,8 @@
                 n("a532072a", "Diváci"),
                 n("d9508ab0", "zobr."),
                 n("d9f9dec0", "Zobraziť priestor"),
-                n("h0c1f37a", "Zobraziť analýzu priestoru");
-            n("e41fffbc", "Celkový čas pozerania vašich videí."),
+                n("h0c1f37a", "Zobraziť analýzu priestoru"),
+                n("e41fffbc", "Celkový čas pozerania vašich videí."),
                 n("if2909ba", "Čas pozerania"),
                 n("i0e5bf4c", "Vaše videá"),
                 n("ed99baea", "Prednostný prístup k beta verzii"),
@@ -5856,8 +5892,8 @@
                 n("hf68e810", "Community Notes je program, ktorého cieľom je vytvoriť lepšie informovaný svet. Umožňuje ľuďom v sieti X spoločne pridávať užitočné poznámky k príspevkom, ktoré by mohli byť zavádzajúce."),
                 n("jdb52860", "Prispievatelia píšu a hodnotia poznámky"),
                 n("c104025c", "Prispievatelia sú ľudia na X, rovnako ako vy, ktorí sa rozhodli zaregistrovať do pilotného projektu a písať a hodnotiť poznámky. Čím viac ľudí sa zapojí, tým je program lepší."),
-                n("j7872b8c", "V príspevku sa zobrazujú len poznámky, ktoré ľudia považujú za užitočné"),
-                n("fb59415e", "Aby sa poznámka mohla verejne zobraziť ako kontext príspevku, musí ju ohodnotiť ako užitočnú dostatočný počet ľudí z rôznych uhlov pohľadu. Tento prístup pomáha vyhnúť sa zaujatosti a manipulácii a pomáha nájsť poznámky, ktoré sú užitočné pre mnoho ľudí."),
+                n("j7872b8c", "V príspevku sa zobrazujú len poznámky, ktoré ľudia považujú za užitočné");
+            n("fb59415e", "Aby sa poznámka mohla verejne zobraziť ako kontext príspevku, musí ju ohodnotiť ako užitočnú dostatočný počet ľudí z rôznych uhlov pohľadu. Tento prístup pomáha vyhnúť sa zaujatosti a manipulácii a pomáha nájsť poznámky, ktoré sú užitočné pre mnoho ľudí."),
                 n("f9a44022", "O tom, čo sa zobrazí, nerozhoduje spoločnosť X, ale prispievatelia"),
                 n("gdf4fbb2", "Spoločnosť X poznámky nepíše, nehodnotí ani nemoderuje (pokiaľ neporušujú pravidlá platformy X). Veríme, že keď dáme ľuďom možnosť prejaviť svoje názory a spoločne rozhodovať, ide o férový a efektívny spôsob, ako ľuďom poskytovať kvalitnejšie informácie."),
                 n("cc720e6a", "Poznámky komunity sú založené na transparentnosti údajov"),
@@ -5888,8 +5924,8 @@
                     return "Žiadne výsledky pre výraz " + e.query;
                 }),
                 n("f191a2ba", "nastavenia vyhľadávania"),
-                n("a068008a", "Priečinky sa momentálne nenačítavajú");
-            n("f075b0e8", "Upraviť priečinok"),
+                n("a068008a", "Priečinky sa momentálne nenačítavajú"),
+                n("f075b0e8", "Upraviť priečinok"),
                 n("beba2a0e", "Vytvoriť nový priečinok Záložka"),
                 n("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
@@ -5934,7 +5970,6 @@
                 n("d7346632", "Zatiaľ ste sa nepripojili do žiadnych Komunít"),
                 n("b732a4cc", "Keď tak urobíte, uvidíte tu ich príspevky."),
                 n("hff48914", "Momentálne sa nepodarilo nájsť žiadne príspevky"),
-                n("hb52cc4a", "Skúste to neskôr znova."),
                 n("e50e1bb0", "Vitajte v Komunitách"),
                 n("i6829daa", "Komunity sú moderované diskusné skupiny, kde môžu používatelia služby X komunikovať a zdieľať obsah."),
                 n("fc5c6914", "Spoznajte ďalších používateľov s rovnakými záujmami"),
@@ -6508,26 +6543,13 @@
                 n("e5f4eac0", "Váš obsah sa bude dať jednoduchšie objaviť. Budete sa zobrazovať vo výsledkoch vyhľadávania a v trendoch."),
                 n("c7832a72", "Priamo sa spojte s ostatnými"),
                 n("i1ccd17a", "Odosielajte súkromné správy ľuďom, ktorí vás nesledujú, bez toho, aby sa správa automaticky filtrovala."),
+                n("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
                 n("hc965308", "Zábavný režim"),
                 n("eb78b77e", "Zábavný režim"),
                 n("aa8ece10", "Vyskúšajte grok.com"),
                 n("gb5fb7d0", "Režim sústredenia"),
                 n("g5665caa", "Zrušiť režim sústredenia"),
                 n("a372681e", "Skopírovať odkaz na zdieľanie"),
-                n("fbc79f6a", "História četu"),
-                n("b61ad410", "História"),
-                n("b3de2628", "Nie je dostupná žiadna história četu"),
-                n("acfbfb28", "Vaše ďalšie konverzácie sa budú zobrazovať na tomto mieste."),
-                n("i1147548", "Hľadať v histórii Groka"),
-                n("ab437026", "Nenašli sa žiadne konverzácie"),
-                n("e12569ec", "Skúste vyhľadať niečo iné."),
-                n("d4eb0e26", "Premenovať"),
-                n("c64975ea", "Zatiaľ ste si medzi obľúbené nepridali žiadne konverzácie."),
-                n("a3e3db6e", "Kliknutím na hviezdičku si uložíte čety, ku ktorým sa často vraciate"),
-                n("f4ae77ac", "Nie je dostupná žiadna história obrázkov"),
-                n("d57d337e", "Vaše vygenerované obrázky sa budú zobrazovať tu."),
-                n("dab087ee", "Čety"),
-                n("a911623c", "Obrázky"),
                 n("ae9cdac6", "História četu"),
                 n("b198a392", "Konverzácia s Grokom"),
                 n("d16329b4", "Skopírovať konverzáciu"),
@@ -6878,8 +6900,8 @@
                 n("b2c213e0", "Bol prekročený limit počtu znakov"),
                 n("d84e9c2a", "Uveďte, aký typ pracovného nasadenia sa pri tejto pozícii očakáva."),
                 n("bc8b300c", "Pracovná funkcia"),
-                n("d1eedb50", "Pomôžte uchádzačom porozumieť oblasti, v ktorej táto rola pôsobí."),
-                n("eaf3ce64", "Tím"),
+                n("d1eedb50", "Pomôžte uchádzačom porozumieť oblasti, v ktorej táto rola pôsobí.");
+            n("eaf3ce64", "Tím"),
                 n("b36cd50e", "Určite základný tím, s ktorým budú uchádzači po prijatí do zamestnania spolupracovať."),
                 n("d3a427ce", "Vyberte požadovanú úroveň skúseností."),
                 n("i7174442", "Popis pracovnej pozície"),
@@ -6894,8 +6916,8 @@
                 n("c05176ec", "Ak je táto pracovná pozícia vykonávaná na konkrétnom pracovisku, zadajte jeho umiestnenie. Ak je táto pozícia vykonávaná na diaľku, popíšte, kde sa môžu uchádzači nachádzať."),
                 n("d70c24d4", "Pomáha uchádzačom vyhľadať vašu pracovnú pozíciu."),
                 n("de1c4376", "Rozsah mzdy"),
-                n("hf352d42", "Pridajte voliteľné platové rozpätie, ktoré bude viditeľné pre uchádzačov. Ak to neurobíte, vezmite do úvahy prípadné zákony o transparentnosti platov v mieste, kde prijímate zamestnancov.");
-            n("ede7d0a2", "Mena"),
+                n("hf352d42", "Pridajte voliteľné platové rozpätie, ktoré bude viditeľné pre uchádzačov. Ak to neurobíte, vezmite do úvahy prípadné zákony o transparentnosti platov v mieste, kde prijímate zamestnancov."),
+                n("ede7d0a2", "Mena"),
                 n("b925c18c", "Typ mzdy"),
                 n("j3d242ce", "Neplatný rozsah"),
                 n("f4d07bd2", "Uveďte nepovinné údaje, ktoré uchádzačom uľahčia nájdenie vašich pracovných pozícií."),
@@ -7850,31 +7872,7 @@
                 n("b5099e33", function (e) {
                     return "@" + e.screenName + " nemá žiadnych overených sledujúcich";
                 }),
-                n("ec251f36", "Keď používateľa začne sledovať niekto, koho poznáte, bude uvedený tu."),
-                n("f8af4f48", "Keď začnú sledovať účty, zobrazia sa tu."),
-                n("fd0aad94", "Keď niekto overený sleduje tento účet, zobrazí sa tu."),
-                n("b84f6df1", function (e) {
-                    return "Darujte Premium v " + e.percentage + " % zľave na obmedzený čas";
-                }),
-                n("cfcac293", function (e) {
-                    return "Darovať a zaplatiť " + e.price;
-                }),
-                n("d7a73450", "Úroveň"),
-                n("hbd2c24e", "Tento účet v súčasnosti nemôže dostávať darčeky."),
-                n("f3fddc98", "podmienky pre kupujúcich"),
-                n("cff9c889", "Viac informácií"),
-                n("c65dda96", "Váš darček bol odoslaný."),
-                n("f6e2a407", function (e) {
-                    return "Umožnite všetkým vidieť váš odznak predplatiteľa, keď odpovedáte na príspevky od používateľa @" + e.screenName;
-                }),
-                n("j8dedddd", function (e) {
-                    return "Ak túto funkciu vypnete, používateľ @" + e.screenName + " a jeho predplatitelia naďalej uvidia váš odznak, keď odpoviete na príspevky od používateľa @" + e.screenName + " určené len pre predplatiteľov. @" + e.screenName + " uvidí váš odznak vždy.";
-                }),
-                n("c8a513f6", "Zrušiť Predplatné"),
-                n("ea000ec8", "Už ste zrušili svoje Predplatné?"),
-                n("d7b8387e", "Ak ste už svoje Predplatné zrušili, nemusíte robiť nič. Platnosť Predplatného automaticky uplynie na konci fakturačného cyklu."),
-                n("f4166d9a", "Chcete zrušiť svoje Predplatné?"),
-                n("b74ff5fc", "Ak Predplatné zrušíte, jeho platnosť automaticky uplynie na konci fakturačného cyklu.");
+                n("ec251f36", "Keď používateľa začne sledovať niekto, koho poznáte, bude uvedený tu.");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var n = a[o];
@@ -7913,7 +7911,31 @@
                     r(e, a)
                 );
             }
-            n("ee9efbc8", "Pokračovať na zrušenie"),
+            n("f8af4f48", "Keď začnú sledovať účty, zobrazia sa tu."),
+                n("fd0aad94", "Keď niekto overený sleduje tento účet, zobrazí sa tu."),
+                n("b84f6df1", function (e) {
+                    return "Darujte Premium v " + e.percentage + " % zľave na obmedzený čas";
+                }),
+                n("cfcac293", function (e) {
+                    return "Darovať a zaplatiť " + e.price;
+                }),
+                n("d7a73450", "Úroveň"),
+                n("hbd2c24e", "Tento účet v súčasnosti nemôže dostávať darčeky."),
+                n("f3fddc98", "podmienky pre kupujúcich"),
+                n("cff9c889", "Viac informácií"),
+                n("c65dda96", "Váš darček bol odoslaný."),
+                n("f6e2a407", function (e) {
+                    return "Umožnite všetkým vidieť váš odznak predplatiteľa, keď odpovedáte na príspevky od používateľa @" + e.screenName;
+                }),
+                n("j8dedddd", function (e) {
+                    return "Ak túto funkciu vypnete, používateľ @" + e.screenName + " a jeho predplatitelia naďalej uvidia váš odznak, keď odpoviete na príspevky od používateľa @" + e.screenName + " určené len pre predplatiteľov. @" + e.screenName + " uvidí váš odznak vždy.";
+                }),
+                n("c8a513f6", "Zrušiť Predplatné"),
+                n("ea000ec8", "Už ste zrušili svoje Predplatné?"),
+                n("d7b8387e", "Ak ste už svoje Predplatné zrušili, nemusíte robiť nič. Platnosť Predplatného automaticky uplynie na konci fakturačného cyklu."),
+                n("f4166d9a", "Chcete zrušiť svoje Predplatné?"),
+                n("b74ff5fc", "Ak Predplatné zrušíte, jeho platnosť automaticky uplynie na konci fakturačného cyklu."),
+                n("ee9efbc8", "Pokračovať na zrušenie"),
                 n("c5d9c77a", "Zdá sa, že sa vyskytla menšia chyba. Žiadne obavy, nie je to vaša vina. Zavrite toto okno a skúste to znova."),
                 n("jda53c24", "Predplatné môžete zrušiť prostredníctvom obchodu Apple App Store."),
                 n("g0a7a53e", "Predplatné môžete zrušiť prostredníctvom Obchodu Google Play."),
@@ -8884,8 +8906,8 @@
                 n("faf9f484", "Reklama"),
                 n("ae2ea9e7", function (e) {
                     return "Reklamu poskytuje " + e.advertiserName;
-                }),
-                n("hea01798", "Jazdec na hľadanie"),
+                });
+            n("hea01798", "Jazdec na hľadanie"),
                 n("f8a09386", "Zobraziť na Periscope"),
                 n("gf2b6eee", "Obraz v obraze"),
                 n("b3160a69", function (e) {
@@ -8910,10 +8932,10 @@
                 }),
                 n("g60001bb", function (e) {
                     return "Zobraziť: " + e.advertiserName;
-                });
-            n("dff1ddd9", function (e) {
-                return "Prejsť na: " + e.advertiserName;
-            }),
+                }),
+                n("dff1ddd9", function (e) {
+                    return "Prejsť na: " + e.advertiserName;
+                }),
                 n("b0b22805", function (e) {
                     return "Prejsť na: " + e.advertiserName;
                 }),
@@ -10168,7 +10190,7 @@
                         {
                             key: "b6411d33",
                             get: function () {
-                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
+                                return ["Na základe vášho používania služby X a nastavení jazykov bude Grok automaticky prekladať jazyk " + this.props.sourceLang + ". Ak chcete vybrať jazyky, ktoré sa majú prekladať automaticky, prejdite na sekciu ", "."];
                             },
                         },
                         {
@@ -13217,9 +13239,9 @@
                 (p.b523237908 = f({ 1: p("sk").numberFormatter({ raw: "0" }), 2: p("sk").numberFormatter({ raw: "00" }) }, { pattern: "H:mm", timeSeparator: ":" })),
                 (p.a181497630 = f({ 1: p("sk").numberFormatter({ raw: "0" }), 2: p("sk").numberFormatter({ raw: "00" }) }, { pattern: "E h:mm a", timeSeparator: ":", days: { E: { 1: { sun: "ne", mon: "po", tue: "ut", wed: "st", thu: "št", fri: "pi", sat: "so" } } }, dayPeriods: { am: "AM", pm: "PM" } })),
                 (p.b313312241 = f({ 1: p("sk").numberFormatter({ raw: "0" }) }, { pattern: "LLLL y", timeSeparator: ":", months: { L: { 4: { 1: "január", 2: "február", 3: "marec", 4: "apríl", 5: "máj", 6: "jún", 7: "júl", 8: "august", 9: "september", 10: "október", 11: "november", 12: "december" } } } })),
+                (p.a293454428 = f({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "nedeľa", mon: "pondelok", tue: "utorok", wed: "streda", thu: "štvrtok", fri: "piatok", sat: "sobota" } } } })),
                 (p.a2012782312 = f({ 1: p("sk").numberFormatter({ raw: "0" }) }, { pattern: "d. M. y", timeSeparator: ":" })),
                 (p.b959791012 = f({}, { pattern: "LLLL", timeSeparator: ":", months: { L: { 4: { 1: "január", 2: "február", 3: "marec", 4: "apríl", 5: "máj", 6: "jún", 7: "júl", 8: "august", 9: "september", 10: "október", 11: "november", 12: "december" } } } })),
-                (p.a293454428 = f({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "nedeľa", mon: "pondelok", tue: "utorok", wed: "streda", thu: "štvrtok", fri: "piatok", sat: "sobota" } } } })),
                 (p.b1350512900 = z(p("sk").dateToPartsFormatter({ skeleton: "MMMd" }))),
                 (p.a438655329 = z(p("sk").dateToPartsFormatter({ skeleton: "yMMMd" }))),
                 (p.b1074997554 = z(p("sk").dateToPartsFormatter({ skeleton: "hm" }))),
@@ -13239,9 +13261,9 @@
                 (p.a1666546485 = z(p("sk").dateToPartsFormatter({ time: "short" }))),
                 (p.a30324263 = z(p("sk").dateToPartsFormatter({ skeleton: "Ehm" }))),
                 (p.a437970136 = z(p("sk").dateToPartsFormatter({ skeleton: "yMMMM" }))),
+                (p.b97952653 = z(p("sk").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (p.a1176621759 = z(p("sk").dateToPartsFormatter({ date: "medium" }))),
                 (p.b1351198093 = z(p("sk").dateToPartsFormatter({ skeleton: "MMMM" }))),
-                (p.b97952653 = z(p("sk").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (p.b2079083867 = h(p("sk").numberFormatter({}), p("sk").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "o {0} deň", "relativeTimePattern-count-few": "o {0} dni", "relativeTimePattern-count-many": "o {0} dňa", "relativeTimePattern-count-other": "o {0} dní" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "pred {0} dňom", "relativeTimePattern-count-few": "pred {0} dňami", "relativeTimePattern-count-many": "pred {0} dňa", "relativeTimePattern-count-other": "pred {0} dňami" }, "relative-type--2": "predvčerom", "relative-type--1": "včera", "relative-type-0": "dnes", "relative-type-1": "zajtra", "relative-type-2": "pozajtra" })),
                 (p.b45476726 = y(p("sk").numberFormatter({}), p("sk").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "sekundy", one: "{0} sekunda", few: "{0} sekundy", many: "{0} sekundy", other: "{0} sekúnd", perUnitPattern: "{0} za sekundu" } })),
                 (p.b1932440022 = y(p("sk").numberFormatter({}), p("sk").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "minúty", one: "{0} minúta", few: "{0} minúty", many: "{0} minúty", other: "{0} minút", perUnitPattern: "{0} za minútu" } })),
@@ -13373,14 +13395,14 @@
                 n("b6ca7bcb", p.a1666546485),
                 n("h0e4cdf5", p.a30324263),
                 n("g727ddcf", p.a437970136),
+                n("f3b9b9a7", p.b97952653),
                 n("h3629783", p.a1176621759),
                 n("a20c68af", p.b1351198093),
                 n("ja781451", p.a653994169),
                 n("cfa1a7b9", p.a1882650588),
-                n("f3b9b9a7", p.b97952653),
                 n("eefcd267", p.a1327918878),
                 n("fa8afc43", p.b832884225);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.115fbe4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.f0f1ca6a.js.map

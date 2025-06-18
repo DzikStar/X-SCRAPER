@@ -1289,26 +1289,32 @@
                 i("fc7db594", "Podsumowanie profilu"),
                 i("c3f04d9c", "Myślenie"),
                 i("cbdddb0a", "Zakończony"),
-                i("e98cc293", function (e) {
-                    return "Wyszukiwanie „" + e.query + "”";
+                i("ie2bbeed", function (e) {
+                    return 'Searching for "' + e.query + '"';
                 }),
                 i("b0d1e205", function (e) {
                     return "Wyszukiwanie **„" + e.query + "”**";
                 }),
-                i("i2e0f4d7", function (e) {
-                    return "Przeglądanie witryny " + e.url + " w poszukiwaniu „" + e.query + "”";
+                i("bf970edd", function (e) {
+                    return 'Searching 𝕏 for "' + e.query + '"';
+                }),
+                i("g008d475", function (e) {
+                    return "Browsing " + e.url;
+                }),
+                i("c91e3971", function (e) {
+                    return "Browsing " + e.url + ' for "' + e.query + '"';
                 }),
                 i("acb9b845", function (e) {
                     return "Przeglądanie witryny " + e.url + " w poszukiwaniu **„" + e.query + "”**";
                 }),
-                i("ef261d8d", function (e) {
-                    return "Wyszukiwanie wpisów użytkownika @" + e.username;
+                i("j9006405", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username;
                 }),
-                i("f7d9cfb9", function (e) {
-                    return "Wyszukiwanie terminu „" + e.query + "” we wpisach użytkownika @" + e.username;
+                i("a2dd07e5", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username + ' for "' + e.query + '"';
                 }),
-                i("bec7eb11", function (e) {
-                    return "Wyszukiwanie terminu **„" + e.query + "”** we wpisach użytkownika @" + e.username;
+                i("e99fb7a3", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username + ' for **"' + e.query + '"**';
                 }),
                 i("ead81122", "Coś poszło nie tak. Odśwież, aby ponownie nawiązać połączenie lub spróbuj ponownie."),
                 i("f808a13a", "Przekroczono limit częstotliwości. Zaczekaj chwilę i spróbuj ponownie."),
@@ -1354,7 +1360,7 @@
                 i("b7cb4fab", "Źródło tłumaczenia"),
                 i("e0bffbf8", "About automatic translation"),
                 i("e839db3a", "Odrzuć"),
-                i("a15585b4", "Language Settings"),
+                i("a15585b4", "Ustawienia języka"),
                 i("d4c339b9", function (e) {
                     return "Wpis użytkownika " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1924,10 +1930,10 @@
                 i("jcd5ee8a", "Edytuj blok"),
                 i("a8f09fb8", "Usuń blok"),
                 i("i89195ea", "Rozdzielacz"),
-                i("da8ac57c", "Edytuj podpis"),
-                i("a8fdd09c", "Opublikuj artykuł"),
-                i("d8047cc8", "Opublikuj");
-            i("ff7ddca2", "Opublikowany artykuł będzie widoczny jako wpis. Będzie go też można znaleźć na karcie Artykuły w Twoim profilu."),
+                i("da8ac57c", "Edytuj podpis");
+            i("a8fdd09c", "Opublikuj artykuł"),
+                i("d8047cc8", "Opublikuj"),
+                i("ff7ddca2", "Opublikowany artykuł będzie widoczny jako wpis. Będzie go też można znaleźć na karcie Artykuły w Twoim profilu."),
                 i("ef34d7be", "Kontrolek Odbiorcy i Odpowiedź nie można edytować po opublikowaniu artykułu."),
                 i("e52d4998", "Wybierz odbiorców"),
                 i("d7985b24", "Określ, kto może odpowiadać na ten artykuł"),
@@ -2980,10 +2986,10 @@
                 i("bc6efc72", "Polityka prywatności"),
                 i("h3161192", "Polityka dotycząca plików cookie"),
                 i("a7de64de", "Informacja o reklamach"),
-                i("jb0a4c36", "Blog"),
-                i("ce6d095a", "Praca"),
-                i("e0adec82", "Zasoby marki");
-            i("df1b7550", "Marketing"),
+                i("jb0a4c36", "Blog");
+            i("ce6d095a", "Praca"),
+                i("e0adec82", "Zasoby marki"),
+                i("df1b7550", "Marketing"),
                 i("he258678", "X dla firm"),
                 i("c6f58084", "Deweloperzy"),
                 i("d83f18d2", "Ścieżka"),
@@ -3892,10 +3898,10 @@
                 i("c371fb9a", "Dół"),
                 i("c0ce822e", "Ustawienia mikrofonu"),
                 i("a2bf8b8a", "Przełącz na słuchanie"),
-                i("caa8d928", "Przełącz tłumienie hałasu"),
-                i("b5d88f0c", "Tylko dla pracowników"),
-                i("c855ab8e", "Tylko dla subskrybentów");
-            i("ddeb0a3c", "Podoba Ci się atmosfera w tej Grupie dyskusyjnej? Rozejrzyj się tu."),
+                i("caa8d928", "Przełącz tłumienie hałasu");
+            i("b5d88f0c", "Tylko dla pracowników"),
+                i("c855ab8e", "Tylko dla subskrybentów"),
+                i("ddeb0a3c", "Podoba Ci się atmosfera w tej Grupie dyskusyjnej? Rozejrzyj się tu."),
                 i("e111f531", function (e) {
                     return e.count + " dołączy" + n(e.count, "li/ły", "ło", "ł/a", "ło");
                 }),
@@ -4162,36 +4168,39 @@
                 }),
                 i("ed93de0c", "Analizowanie wpisu"),
                 i("d1d92e40", "Więcej szczegółów"),
+                i("fbc79f6a", "Historia czatu"),
                 i("a6e89af8", "Publiczna rozmowa"),
                 i("ica55d24", "Nowy czat"),
-                i("f794af9a", "Tryb zabawny"),
-                i("eccf9fea", "Tryb normalny"),
+                i("b61ad410", "Historia"),
+                i("b3de2628", "Brak dostępnej historii czatu"),
+                i("acfbfb28", "Tutaj będą widoczne Twoje przyszłe rozmowy."),
+                i("g02dacc0", "Dziś"),
+                i("c6e845c0", "Wczoraj"),
+                i("i1147548", "Historia wyszukiwania za pomocą Groka"),
+                i("ab437026", "Nie znaleziono rozmów"),
+                i("e12569ec", "Spróbuj wyszukać coś innego."),
+                i("hb52cc4a", "Spróbuj ponownie później."),
+                i("d4eb0e26", "Zmień nazwę"),
+                i("c64975ea", "Nie masz jeszcze żadnych rozmów w Ulubionych"),
+                i("a3e3db6e", "Kliknij gwiazdkę, aby zapisać czaty, do których często wracasz"),
+                i("f4ae77ac", "Brak dostępnej historii obrazów"),
+                i("d57d337e", "Tutaj będą widoczne Twoje wygenerowane obrazy."),
+                i("j826e722", "Zapisz obraz"),
+                i("a9325f10", "Skopiuj obraz"),
+                i("g0b12442", "Nie udało się skopiować obrazu"),
+                i("edd0c172", "Opublikuj obraz"),
+                i("d1d3a41a", "Edytuj obraz"),
+                i("c26b9b9c", "Plik"),
+                i("g10600b0", "Menu"),
                 i("g7b1c574", "Resetuj do ustawień domyślnych"),
                 i("f388a7ec", "DeepSearch"),
                 i("ab1eb384", "Wybierz odpowiedni tryb wyszukiwania"),
                 i("i330e54c", "Zaawansowane wyszukiwanie i rozumowanie"),
                 i("fdcce108", "DeeperSearch"),
                 i("ac64b674", "Rozszerzone wyszukiwanie, głębsze rozumowanie"),
-                i("j22655f2", "Zapytaj, o co chcesz"),
-                i("h0681e3e", "Porozmawiaj z Grokiem, naszym asystentem AI"),
-                i("d593fd78", "Może on odpowiadać na pytania, wyszukiwać w serwisie X i generować obrazy"),
-                i("d0205a24", "Sprawdź fakty"),
-                i("ed4177c4", "Możliwe jest, że Grok będzie dostarczał merytorycznie niepoprawne informacje, popełniał błędy podczas tworzenia podsumowań lub pomijał część treści. Zachęcamy do niezależnego weryfikowania wszystkich informacji."),
-                i("c0ff98f8", "Szkolenie i personalizacja AI"),
-                i("f1a8218a", "Możemy używać Twoich danych z serwisu X oraz interakcji, danych wejściowych i wyników uzyskanych za pomocą Groka na potrzeby szkolenia modelu oraz dostrajania i personalizowania działania Groka. Możesz zrezygnować z tej opcji, używając ustawień serwisu X. Aby dowiedzieć się więcej, odwiedź nasze Centrum Pomocy."),
-                i("bcbf5b6e", "Udostępnianie"),
-                i("j7b5c844", "Ponosisz odpowiedzialność za rozmowy, które udostępniasz publicznie. Unikaj podawania wrażliwych oraz poufnych informacji o sobie lub innych osobach podczas rozmów z Grokiem (zobacz nasze Centrum pomocy)."),
-                i("c9f7c196", "Centrum Pomocy"),
+                i("a2697040", "Opisz, co chcesz zmienić w obrazie"),
                 i("c65f7308", "Serwery są aktualnie przeciążone"),
                 i("f2a8655e", "Zaawansowane narzędzia Groka są aktualnie niedostępne."),
-                i("c26b9b9c", "Plik"),
-                i("g10600b0", "Menu"),
-                i("j826e722", "Zapisz obraz"),
-                i("a9325f10", "Skopiuj obraz"),
-                i("g0b12442", "Nie udało się skopiować obrazu"),
-                i("edd0c172", "Opublikuj obraz"),
-                i("d1d3a41a", "Edytuj obraz"),
-                i("a2697040", "Opisz, co chcesz zmienić w obrazie"),
                 i("ge1cefc4", "Narzędzia"),
                 i("e9b6d404", "Do jakich narzędzi wyszukiwania Grok ma mieć dostęp?"),
                 i("h15dce2e", "Ustawienia zaawansowane"),
@@ -4206,60 +4215,25 @@
                 i("e4ae6abe", "Poproś Groka o przekształcenie obrazu"),
                 i("e8ade5e2", "Wybierz osobowość"),
                 i("b5df32b0", "Wygrokuj coś"),
+                i("dab087ee", "Czaty"),
+                i("a911623c", "Zdjęcia"),
+                i("f794af9a", "Tryb zabawny"),
+                i("eccf9fea", "Tryb normalny"),
+                i("j22655f2", "Zapytaj, o co chcesz"),
+                i("h0681e3e", "Porozmawiaj z Grokiem, naszym asystentem AI"),
+                i("d593fd78", "Może on odpowiadać na pytania, wyszukiwać w serwisie X i generować obrazy"),
+                i("d0205a24", "Sprawdź fakty"),
+                i("ed4177c4", "Możliwe jest, że Grok będzie dostarczał merytorycznie niepoprawne informacje, popełniał błędy podczas tworzenia podsumowań lub pomijał część treści. Zachęcamy do niezależnego weryfikowania wszystkich informacji."),
+                i("c0ff98f8", "Szkolenie i personalizacja AI"),
+                i("f1a8218a", "Możemy używać Twoich danych z serwisu X oraz interakcji, danych wejściowych i wyników uzyskanych za pomocą Groka na potrzeby szkolenia modelu oraz dostrajania i personalizowania działania Groka. Możesz zrezygnować z tej opcji, używając ustawień serwisu X. Aby dowiedzieć się więcej, odwiedź nasze Centrum Pomocy."),
+                i("bcbf5b6e", "Udostępnianie"),
+                i("j7b5c844", "Ponosisz odpowiedzialność za rozmowy, które udostępniasz publicznie. Unikaj podawania wrażliwych oraz poufnych informacji o sobie lub innych osobach podczas rozmów z Grokiem (zobacz nasze Centrum pomocy)."),
+                i("c9f7c196", "Centrum Pomocy"),
                 i("fb3b9776", "Dane wyjściowe Groka zostały dostosowane przez tego użytkownika."),
-                i("ca93f2ee", "Ta wiadomość została usunięta."),
-                i("b8c06820", "Kopiuj tekst"),
-                i("ca0f5894", "Nie lubię"),
-                i("ja8d189e", "Chodziło mi o odpowiedź tekstową"),
-                i("e951f04e", "Chodziło mi o obraz"),
-                i("c503b35e", "Chodziło mi o inny obraz"),
-                i("d4371c92", "Kod jest niepoprawny"),
-                i("dbe8586e", "Chodziło mi o inny kod"),
-                i("e360eb4a", "Nie chodziło mi o kod"),
-                i("a18657ca", "Wyrażenie matematyczne jest niepoprawne"),
-                i("b8b86300", "Nie chodziło mi o matematykę"),
-                i("e4c34788", "Niepoprawna odpowiedź"),
-                i("b220a8c8", "Chodziło mi o coś innego"),
-                i("b115fd18", "Stronnicza odpowiedź"),
-                i("dc637214", "Zły styl/ton"),
-                i("f02e6d42", "Chodziło mi o wyszukiwanie"),
-                i("bbec6bba", "Nieprawidłowe wyniki wyszukiwania"),
-                i("b494d088", "Nie chodziło mi o wyszukiwanie"),
-                i("a44974f2", "Nie rozumiem obrazu"),
-                i("bd44a8a8", "Powiedz nam więcej"),
-                i("fcdbe764", "Co Grok może robić lepiej?"),
-                i("bb6adb22", "Opisz, co poszło nie tak"),
-                i("h0fa15f2", "Dziękujemy za opinię!"),
-                i("d700b268", "Czaty z odwołaniami"),
-                i("cd7bdab2", "Zapomnienie rozmów nie powoduje usunięcia ich z historii"),
-                i("f21b84de", "Odwołanie zapomniane"),
-                i("i52a9cb8", "Brak wspomnień do wyświetlenia."),
-                i("d9d36880", "Zapomnij"),
-                i("g02dacc0", "Dziś"),
-                i("c6e845c0", "Wczoraj"),
-                i("a5fa4a86", "sty"),
-                i("c51724a4", "lut"),
-                i("j244ceb2", "mar"),
-                i("b22b12e0", "kwi"),
-                i("h3023cac", "maj"),
-                i("b10dbffa", "cze"),
-                i("c81da1b6", "lip"),
-                i("d4e4d3ce", "sie"),
-                i("c3418f9a", "wrz"),
-                i("b64dada6", "paź"),
-                i("ad24ec20", "lis"),
-                i("c7902252", "gru"),
-                i("idf94bac", "Wygeneruj ponownie"),
-                i("f7614f92", "Bez wyszukiwania"),
-                i("c5ade3ba", "Z wyszukiwaniem"),
-                i("c16e5b1a", "Bez generowania obrazów"),
-                i("i2ca65fa", "Z generowaniem obrazów"),
-                i("d3927f88", "Opublikuj link"),
-                i("be37ecd4", "Nie można skopiować do schowka"),
-                i("h708a4c0", "Udostępnij rozmowę"),
-                i("g06a67e2", "Na tej stronie udostępniania będą znajdować się wiadomości aż do tego punktu"),
-                i("a0428662", "Niepomocna"),
-                i("fe4fd310", "Pomocne"),
+                i("b0a889d4", "As Image"),
+                i("a111fb48", "As Spreadsheet"),
+                i("bccc65f0", "Grok can make mistakes. Always check original sources."),
+                i("bd202fe6", "Generating card"),
                 i("bfd161bc", "Porównaj"),
                 i("j5dcf1b2", "Zaktualizowano"),
                 i("a50aaa10", "Przed otwarciem rynku"),
@@ -4291,6 +4265,9 @@
                 i("dd679fb1", function (e) {
                     return "Najniższa cena w historii" + e.ttc_stock_details;
                 }),
+                i("ha9c4cf8", "View source"),
+                i("ecad5d78", "Save image"),
+                i("d2d1d398", "Skopiowano"),
                 i("a22063d2", "Udostępnij swoją lokalizacją, aby poprawić dokładność."),
                 i("db3248a8", "Ładowanie lokalizacji"),
                 i("ffe0e588", "Udostępnij lokalizację"),
@@ -4324,6 +4301,65 @@
                 i("d66bf142", "Cz"),
                 i("dc17968a", "Pt"),
                 i("j310a2d6", "So"),
+                i("afa2a58e", "See all posts"),
+                i("fc83e7e2", "See all users"),
+                i("df601d92", "Relevant Users"),
+                i("b001fa12", "Source query"),
+                i("db6c20cf", function (e) {
+                    return "Show all (" + e.count + ")";
+                }),
+                i("d7cb5408", "Odpowiednie strony internetowe"),
+                i("ca93f2ee", "Ta wiadomość została usunięta."),
+                i("b8c06820", "Kopiuj tekst"),
+                i("ca0f5894", "Nie lubię"),
+                i("ja8d189e", "Chodziło mi o odpowiedź tekstową"),
+                i("e951f04e", "Chodziło mi o obraz"),
+                i("c503b35e", "Chodziło mi o inny obraz"),
+                i("d4371c92", "Kod jest niepoprawny"),
+                i("dbe8586e", "Chodziło mi o inny kod"),
+                i("e360eb4a", "Nie chodziło mi o kod"),
+                i("a18657ca", "Wyrażenie matematyczne jest niepoprawne"),
+                i("b8b86300", "Nie chodziło mi o matematykę"),
+                i("e4c34788", "Niepoprawna odpowiedź"),
+                i("b220a8c8", "Chodziło mi o coś innego"),
+                i("b115fd18", "Stronnicza odpowiedź"),
+                i("dc637214", "Zły styl/ton"),
+                i("f02e6d42", "Chodziło mi o wyszukiwanie"),
+                i("bbec6bba", "Nieprawidłowe wyniki wyszukiwania"),
+                i("b494d088", "Nie chodziło mi o wyszukiwanie"),
+                i("a44974f2", "Nie rozumiem obrazu"),
+                i("bd44a8a8", "Powiedz nam więcej"),
+                i("fcdbe764", "Co Grok może robić lepiej?"),
+                i("bb6adb22", "Opisz, co poszło nie tak"),
+                i("h0fa15f2", "Dziękujemy za opinię!"),
+                i("d700b268", "Czaty z odwołaniami"),
+                i("cd7bdab2", "Zapomnienie rozmów nie powoduje usunięcia ich z historii"),
+                i("f21b84de", "Odwołanie zapomniane"),
+                i("i52a9cb8", "Brak wspomnień do wyświetlenia."),
+                i("d9d36880", "Zapomnij"),
+                i("a5fa4a86", "sty"),
+                i("c51724a4", "lut"),
+                i("j244ceb2", "mar"),
+                i("b22b12e0", "kwi"),
+                i("h3023cac", "maj"),
+                i("b10dbffa", "cze"),
+                i("c81da1b6", "lip"),
+                i("d4e4d3ce", "sie"),
+                i("c3418f9a", "wrz"),
+                i("b64dada6", "paź"),
+                i("ad24ec20", "lis"),
+                i("c7902252", "gru"),
+                i("idf94bac", "Wygeneruj ponownie"),
+                i("f7614f92", "Bez wyszukiwania"),
+                i("c5ade3ba", "Z wyszukiwaniem"),
+                i("c16e5b1a", "Bez generowania obrazów"),
+                i("i2ca65fa", "Z generowaniem obrazów"),
+                i("d3927f88", "Opublikuj link"),
+                i("be37ecd4", "Nie można skopiować do schowka"),
+                i("h708a4c0", "Udostępnij rozmowę"),
+                i("g06a67e2", "Na tej stronie udostępniania będą znajdować się wiadomości aż do tego punktu"),
+                i("a0428662", "Niepomocna"),
+                i("fe4fd310", "Pomocne"),
                 i("eaf55eb4", "Pokaż myślenie"),
                 i("b1ac6016", "Zakończono wyszukiwanie DeepSearch"),
                 i("f766feca", "Zakończono wyszukiwanie DeeperSearch"),
@@ -4341,23 +4377,23 @@
                 i("db832e38", "Włącz powiadomienia w ustawieniach przeglądarki"),
                 i("a910cac6", "Wystąpił problem podczas włączania powiadomień"),
                 i("be30b6ee", "Niestabilne połączenie"),
-                i("b52484b6", "Wyszukiwanie..."),
+                i("ge15b488", "Show thoughts"),
+                i("aa7c96bb", function (e) {
+                    return "Zobacz " + e.numResults + " więcej";
+                }),
                 i("a4d9dbfa", "Myśli"),
+                i("j1ab5f40", "Naciśnij, aby przeczytać"),
+                i("f5a2377e", "Myślenie o: "),
+                i("g3ce0132", "Myślano o:"),
+                i("f8007364", "Rozwiń, aby wyświetlić szczegóły"),
+                i("ca53f780", "Zwiń szczegóły"),
+                i("b52484b6", "Wyszukiwanie..."),
                 i("ib1c5475", function (e) {
                     return "Myślenie trwało " + e.minutes + " min " + e.seconds + " s";
                 }),
                 i("a15d62db", function (e) {
                     return "Myślenie trwało " + e.seconds + " s";
                 }),
-                i("d7cb5408", "Odpowiednie strony internetowe"),
-                i("aa7c96bb", function (e) {
-                    return "Zobacz " + e.numResults + " więcej";
-                }),
-                i("j1ab5f40", "Naciśnij, aby przeczytać"),
-                i("f5a2377e", "Myślenie o: "),
-                i("g3ce0132", "Myślano o:"),
-                i("f8007364", "Rozwiń, aby wyświetlić szczegóły"),
-                i("ca53f780", "Zwiń szczegóły"),
                 i("ha8fbe22", "Generuj więcej obrazów w ramach subskrypcji Premium"),
                 i("d95c232a", "Osiągnięto limit. Podnieś poziom konta, aby wygenerować więcej treści."),
                 i("h2671312", "Więcej Groka w ramach subskrypcji Premium"),
@@ -4904,8 +4940,8 @@
                 i("fbc79a40", "Przegląd pokojów"),
                 i("d077112a", "Statystyki pokoju"),
                 i("cf3709da", "Status"),
-                i("e797dc32", "Czas przesyłania strumieniowego: "),
-                i("b649d8cc", "Tylko subskrybent"),
+                i("e797dc32", "Czas przesyłania strumieniowego: ");
+            i("b649d8cc", "Tylko subskrybent"),
                 i("j9282130", "Miniatura transmisji"),
                 i("g629b8b0", "Przekroczenie limitu czasu"),
                 i("eb87323c", "Pokazuje dane analiz dotyczących wybranego okresu od momentu rozpoczęcia transmisji strumieniowej na żywo."),
@@ -4934,8 +4970,8 @@
                 i("a532072a", "Oglądający"),
                 i("d9508ab0", "wyświetl."),
                 i("d9f9dec0", "Wyświetl pokój"),
-                i("h0c1f37a", "Wyświetl analizy pokoju");
-            i("e41fffbc", "Łączny czas oglądania Twoich filmów."),
+                i("h0c1f37a", "Wyświetl analizy pokoju"),
+                i("e41fffbc", "Łączny czas oglądania Twoich filmów."),
                 i("if2909ba", "Czas oglądania"),
                 i("i0e5bf4c", "Twoje filmy"),
                 i("ed99baea", "Wczesny dostęp do wersji Beta"),
@@ -5856,8 +5892,8 @@
                 i("hf68e810", "Uwagi Społeczności to program, który ma nam pomóc podnieść jakość udostępnianych informacji. Dzięki niemu użytkownicy serwisu X mogą wspólnie dodawać pomocne uwagi do wpisów, które mogłyby wprowadzać innych użytkowników w błąd."),
                 i("jdb52860", "Współtwórcy dodają uwagi i je oceniają"),
                 i("c104025c", "Uczestnicy programu to osoby korzystające z serwisu X, takie jak Ty, które zgłosiły się do programu pilotażowego, aby pisać i oceniać uwagi. Im więcej osób zaangażuje się w ten program, tym lepsze wyniki uzyskamy."),
-                i("j7872b8c", "Przy wpisach są wyświetlane tylko uwagi uznane przez innych za pomocne"),
-                i("fb59415e", "Aby uwagi były wyświetlane publicznie jako kontekst przy wpisach, muszą zostaną ocenione jako pomocne z różnych punktów widzenia przez wystarczającą liczbę osób. Pomaga to uniknąć treści, które są stronnicze lub stanowią manipulację, i ułatwia znalezienie uwag pomocnych dla wielu osób."),
+                i("j7872b8c", "Przy wpisach są wyświetlane tylko uwagi uznane przez innych za pomocne");
+            i("fb59415e", "Aby uwagi były wyświetlane publicznie jako kontekst przy wpisach, muszą zostaną ocenione jako pomocne z różnych punktów widzenia przez wystarczającą liczbę osób. Pomaga to uniknąć treści, które są stronnicze lub stanowią manipulację, i ułatwia znalezienie uwag pomocnych dla wielu osób."),
                 i("f9a44022", "To nie firma X decyduje o tym, które uwagi są wyświetlane — robią to użytkownicy"),
                 i("gdf4fbb2", "Firma X nie dodaje, nie ocenia ani nie moderuje uwag (jeśli nie naruszają one Zasad serwisu X). Użytkownicy podejmują decyzje wspólnie. Wierzymy, że to sprawiedliwa i skuteczna metoda udostępniania rzetelnych informacji."),
                 i("cc720e6a", "U podstaw programu Uwagi Społeczności leży przejrzystość danych"),
@@ -5888,8 +5924,8 @@
                     return "Nie znaleziono wyników dla hasła " + e.query;
                 }),
                 i("f191a2ba", "Ustawienia wyszukiwania"),
-                i("a068008a", "Foldery nie są obecnie ładowane");
-            i("f075b0e8", "Edytuj folder"),
+                i("a068008a", "Foldery nie są obecnie ładowane"),
+                i("f075b0e8", "Edytuj folder"),
                 i("beba2a0e", "Utwórz nowy folder Zakładki"),
                 i("e41c9b4f", function (e) {
                     return "Zapisano w folderze " + e.bookmarkFolderName;
@@ -5934,7 +5970,6 @@
                 i("d7346632", "Nie należysz jeszcze do żadnej Grupy dyskusyjnej"),
                 i("b732a4cc", "Gdy to zrobisz, wpisy tego użytkownika będa widoczne w tym miejscu."),
                 i("hff48914", "W tej chwili nie można znaleźć żadnego wpisu."),
-                i("hb52cc4a", "Spróbuj ponownie później."),
                 i("e50e1bb0", "Zapraszamy do korzystania z grup dyskusyjnych"),
                 i("i6829daa", "Grupy dyskusyjne to moderowane grupy na X, w ramach których użytkownicy mogą rozmawiać i udostępniać treści."),
                 i("fc5c6914", "Poznaj osoby o podobnych zainteresowaniach"),
@@ -6508,26 +6543,13 @@
                 i("e5f4eac0", "Twoje treści będą łatwiejsze do odnalezienia. Będą też wyświetlać się w wynikach wyszukiwania i trendach."),
                 i("c7832a72", "Nawiąż bezpośredni kontakt z innymi"),
                 i("i1ccd17a", "Wysyłaj prywatne wiadomości do użytkowników, którzy Cię nie obserwują bez obaw, że zostaną one odfiltrowane."),
+                i("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
                 i("hc965308", "Zabawny"),
                 i("eb78b77e", "Tryb zabawny"),
                 i("aa8ece10", "Wypróbuj witrynę grok.com"),
                 i("gb5fb7d0", "Tryb skupienia"),
                 i("g5665caa", "Wyjdź z trybu skupienia"),
                 i("a372681e", "Kopiuj link udostępniania"),
-                i("fbc79f6a", "Historia czatu"),
-                i("b61ad410", "Historia"),
-                i("b3de2628", "Brak dostępnej historii czatu"),
-                i("acfbfb28", "Tutaj będą widoczne Twoje przyszłe rozmowy."),
-                i("i1147548", "Historia wyszukiwania za pomocą Groka"),
-                i("ab437026", "Nie znaleziono rozmów"),
-                i("e12569ec", "Spróbuj wyszukać coś innego."),
-                i("d4eb0e26", "Zmień nazwę"),
-                i("c64975ea", "Nie masz jeszcze żadnych rozmów w Ulubionych"),
-                i("a3e3db6e", "Kliknij gwiazdkę, aby zapisać czaty, do których często wracasz"),
-                i("f4ae77ac", "Brak dostępnej historii obrazów"),
-                i("d57d337e", "Tutaj będą widoczne Twoje wygenerowane obrazy."),
-                i("dab087ee", "Czaty"),
-                i("a911623c", "Zdjęcia"),
                 i("ae9cdac6", "Historia czatu"),
                 i("b198a392", "Rozmowa z Grokiem"),
                 i("d16329b4", "Kopiuj rozmowę"),
@@ -6878,8 +6900,8 @@
                 i("b2c213e0", "Przekroczono limit liczby znaków"),
                 i("d84e9c2a", "Przedstaw typ zaangażowania wymaganego od osoby pracującej na tym stanowisku."),
                 i("bc8b300c", "Zakres obowiązków"),
-                i("d1eedb50", "Pomóż osobom kandydującym poznać zakres obowiązków związanych z tym stanowiskiem."),
-                i("eaf3ce64", "Zespół"),
+                i("d1eedb50", "Pomóż osobom kandydującym poznać zakres obowiązków związanych z tym stanowiskiem.");
+            i("eaf3ce64", "Zespół"),
                 i("b36cd50e", "Wskaż podstawowy zespół, w którym osoby kandydujące będą pracować po zatrudnieniu."),
                 i("d3a427ce", "Wybierz wymagany poziom doświadczenia."),
                 i("i7174442", "Opis oferty pracy"),
@@ -6894,8 +6916,8 @@
                 i("c05176ec", "Jeśli jest to stanowisko stacjonarne, wprowadź lokalizację/lokalizacje związanych z nim placówek, a jeśli jest to stanowisko zdalne, określ lokalizacje, w których mogą przebywać osoby kandydujące."),
                 i("d70c24d4", "Służy do ułatwienia osobom kandydującym wyszukiwania Twojej oferty pracy."),
                 i("de1c4376", "Zakres wynagrodzeń"),
-                i("hf352d42", "Dodaj opcjonalny zakres wynagrodzeń, który będzie widoczny dla osób kandydujących. Jeśli nie chcesz podawać tego zakresu, przeanalizuj przepisy dotyczące przejrzystości płac obowiązujące w lokalizacji, w której prowadzisz rekrutację.");
-            i("ede7d0a2", "Waluta"),
+                i("hf352d42", "Dodaj opcjonalny zakres wynagrodzeń, który będzie widoczny dla osób kandydujących. Jeśli nie chcesz podawać tego zakresu, przeanalizuj przepisy dotyczące przejrzystości płac obowiązujące w lokalizacji, w której prowadzisz rekrutację."),
+                i("ede7d0a2", "Waluta"),
                 i("b925c18c", "Rodzaj wynagrodzenia"),
                 i("j3d242ce", "Nieprawidłowy zakres"),
                 i("f4d07bd2", "Dołącz opcjonalne szczegóły, aby ułatwić osobom kandydującym znajdowanie interesujących ich stanowisk za pomocą funkcji wyszukiwania."),
@@ -7850,31 +7872,7 @@
                 i("b5099e33", function (e) {
                     return "Użytkownik @" + e.screenName + " nie ma żadnych zweryfikowanych obserwujących.";
                 }),
-                i("ec251f36", "Kiedy ktoś, kogo znasz, zacznie obserwować tego użytkownika, informacja o tym pojawi się tutaj."),
-                i("f8af4f48", "Gdy ten użytkownik zacznie obserwować jakieś konta, będą one widoczne tutaj."),
-                i("fd0aad94", "Gdy osoba zweryfikowana obserwuje to konto, jej dane pojawią się tutaj."),
-                i("b84f6df1", function (e) {
-                    return "W ograniczonym czasie możesz otrzymać " + e.percentage + "% rabatu na subskrypcję Premium, którą dasz komuś w prezencie.";
-                }),
-                i("cfcac293", function (e) {
-                    return "Daj w prezencie i zapłać " + e.price;
-                }),
-                i("d7a73450", "Poziom"),
-                i("hbd2c24e", "To konto nie ma obecnie uprawnienia do prezentów."),
-                i("f3fddc98", "Warunki dotyczące zakupów"),
-                i("cff9c889", "Dowiedz się więcej"),
-                i("c65dda96", "Twój prezent został wysłany."),
-                i("f6e2a407", function (e) {
-                    return "Zezwalaj, aby Twoja odznaka Subskrybuje była widoczna dla wszystkich, gdy odpowiadasz na wpisy użytkownika @" + e.screenName;
-                }),
-                i("j8dedddd", function (e) {
-                    return "Jeśli wyłączysz tę opcję, użytkownik @" + e.screenName + " i jego subskrybenci będą wciąż widzieć Twoją odznakę, gdy odpowiesz na wpis przeznaczony tylko dla subskrybentów użytkownika @" + e.screenName + ". Użytkownik @" + e.screenName + " zawsze będzie widzieć Twoją odznakę.";
-                }),
-                i("c8a513f6", "Anuluj subskrypcję"),
-                i("ea000ec8", "Anulowałeś/aś już subskrypcję?"),
-                i("d7b8387e", "Jeśli anulowałeś/aś już swoją subskrypcję, nie musisz nic robić. Twoja subskrypcja wygaśnie automatycznie po zakończeniu okresu rozliczeniowego."),
-                i("f4166d9a", "Chcesz anulować subskrypcję?"),
-                i("b74ff5fc", "Jeśli anulujesz subskrypcję, wygaśnie ona automatycznie po zakończeniu okresu rozliczeniowego.");
+                i("ec251f36", "Kiedy ktoś, kogo znasz, zacznie obserwować tego użytkownika, informacja o tym pojawi się tutaj.");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7913,7 +7911,31 @@
                     c(e, a)
                 );
             }
-            i("ee9efbc8", "Przejdź dalej, by anulować"),
+            i("f8af4f48", "Gdy ten użytkownik zacznie obserwować jakieś konta, będą one widoczne tutaj."),
+                i("fd0aad94", "Gdy osoba zweryfikowana obserwuje to konto, jej dane pojawią się tutaj."),
+                i("b84f6df1", function (e) {
+                    return "W ograniczonym czasie możesz otrzymać " + e.percentage + "% rabatu na subskrypcję Premium, którą dasz komuś w prezencie.";
+                }),
+                i("cfcac293", function (e) {
+                    return "Daj w prezencie i zapłać " + e.price;
+                }),
+                i("d7a73450", "Poziom"),
+                i("hbd2c24e", "To konto nie ma obecnie uprawnienia do prezentów."),
+                i("f3fddc98", "Warunki dotyczące zakupów"),
+                i("cff9c889", "Dowiedz się więcej"),
+                i("c65dda96", "Twój prezent został wysłany."),
+                i("f6e2a407", function (e) {
+                    return "Zezwalaj, aby Twoja odznaka Subskrybuje była widoczna dla wszystkich, gdy odpowiadasz na wpisy użytkownika @" + e.screenName;
+                }),
+                i("j8dedddd", function (e) {
+                    return "Jeśli wyłączysz tę opcję, użytkownik @" + e.screenName + " i jego subskrybenci będą wciąż widzieć Twoją odznakę, gdy odpowiesz na wpis przeznaczony tylko dla subskrybentów użytkownika @" + e.screenName + ". Użytkownik @" + e.screenName + " zawsze będzie widzieć Twoją odznakę.";
+                }),
+                i("c8a513f6", "Anuluj subskrypcję"),
+                i("ea000ec8", "Anulowałeś/aś już subskrypcję?"),
+                i("d7b8387e", "Jeśli anulowałeś/aś już swoją subskrypcję, nie musisz nic robić. Twoja subskrypcja wygaśnie automatycznie po zakończeniu okresu rozliczeniowego."),
+                i("f4166d9a", "Chcesz anulować subskrypcję?"),
+                i("b74ff5fc", "Jeśli anulujesz subskrypcję, wygaśnie ona automatycznie po zakończeniu okresu rozliczeniowego."),
+                i("ee9efbc8", "Przejdź dalej, by anulować"),
                 i("c5d9c77a", "Wystąpił chwilowy problem. Nie martw się, to nie Twoje wina. Zamknij to okno i spróbuj ponownie."),
                 i("jda53c24", "Możesz anulować subskrypcję w sklepie Apple App Store."),
                 i("g0a7a53e", "Możesz anulować subskrypcję w sklepie Google Play."),
@@ -8884,8 +8906,8 @@
                 i("faf9f484", "Reklama"),
                 i("ae2ea9e7", function (e) {
                     return "Źródło reklamy: " + e.advertiserName;
-                }),
-                i("hea01798", "Podgląd suwaka"),
+                });
+            i("hea01798", "Podgląd suwaka"),
                 i("f8a09386", "Oglądaj w Periscope"),
                 i("gf2b6eee", "Obraz w obrazie"),
                 i("b3160a69", function (e) {
@@ -8910,10 +8932,10 @@
                 }),
                 i("g60001bb", function (e) {
                     return "Zobacz " + e.advertiserName;
-                });
-            i("dff1ddd9", function (e) {
-                return "Przejdź do " + e.advertiserName;
-            }),
+                }),
+                i("dff1ddd9", function (e) {
+                    return "Przejdź do " + e.advertiserName;
+                }),
                 i("b0b22805", function (e) {
                     return "Odwiedź " + e.advertiserName;
                 }),
@@ -10164,7 +10186,7 @@
                         {
                             key: "b6411d33",
                             get: function () {
-                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
+                                return ["Zgodnie z Twoimi ustawieniami języka oraz tym, jak używasz serwisu X, Grok będzie automatycznie tłumaczył treści w języku " + this.props.sourceLang + ". Aby wybrać języki, które będą tłumaczone automatycznie, przejdź na stronę ", "."];
                             },
                         },
                         {
@@ -13215,9 +13237,9 @@
                 (y.b141237104 = b({ 2: y("pl").numberFormatter({ raw: "00" }) }, { pattern: "HH:mm", timeSeparator: ":" })),
                 (y.b2082917182 = b({ 1: y("pl").numberFormatter({ raw: "0" }), 2: y("pl").numberFormatter({ raw: "00" }) }, { pattern: "E, h:mm a", timeSeparator: ":", days: { E: { 1: { sun: "niedz.", mon: "pon.", tue: "wt.", wed: "śr.", thu: "czw.", fri: "pt.", sat: "sob." } } }, dayPeriods: { am: "AM", pm: "PM" } })),
                 (y.a1132472499 = b({ 1: y("pl").numberFormatter({ raw: "0" }) }, { pattern: "LLLL y", timeSeparator: ":", months: { L: { 4: { 1: "styczeń", 2: "luty", 3: "marzec", 4: "kwiecień", 5: "maj", 6: "czerwiec", 7: "lipiec", 8: "sierpień", 9: "wrzesień", 10: "październik", 11: "listopad", 12: "grudzień" } } } })),
+                (y.b1183928008 = b({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "niedziela", mon: "poniedziałek", tue: "wtorek", wed: "środa", thu: "czwartek", fri: "piątek", sat: "sobota" } } } })),
                 (y.a969905348 = b({ 1: y("pl").numberFormatter({ raw: "0" }) }, { pattern: "d MMM y", timeSeparator: ":", months: { M: { 3: { 1: "sty", 2: "lut", 3: "mar", 4: "kwi", 5: "maj", 6: "cze", 7: "lip", 8: "sie", 9: "wrz", 10: "paź", 11: "lis", 12: "gru" } } } })),
                 (y.a1857793848 = b({}, { pattern: "LLLL", timeSeparator: ":", months: { L: { 4: { 1: "styczeń", 2: "luty", 3: "marzec", 4: "kwiecień", 5: "maj", 6: "czerwiec", 7: "lipiec", 8: "sierpień", 9: "wrzesień", 10: "październik", 11: "listopad", 12: "grudzień" } } } })),
-                (y.b1183928008 = b({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "niedziela", mon: "poniedziałek", tue: "wtorek", wed: "środa", thu: "czwartek", fri: "piątek", sat: "sobota" } } } })),
                 (y.a1467071960 = m(y("pl").dateToPartsFormatter({ skeleton: "MMMd" }))),
                 (y.a1884440069 = m(y("pl").dateToPartsFormatter({ skeleton: "yMMMd" }))),
                 (y.b2117874518 = m(y("pl").dateToPartsFormatter({ skeleton: "hm" }))),
@@ -13237,9 +13259,9 @@
                 (y.a2048547289 = m(y("pl").dateToPartsFormatter({ time: "short" }))),
                 (y.a2060876747 = m(y("pl").dateToPartsFormatter({ skeleton: "Ehm" }))),
                 (y.a1883754876 = m(y("pl").dateToPartsFormatter({ skeleton: "yMMMM" }))),
+                (y.b1575335089 = m(y("pl").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (y.a133744795 = m(y("pl").dateToPartsFormatter({ date: "medium" }))),
                 (y.a1466386767 = m(y("pl").dateToPartsFormatter({ skeleton: "MMMM" }))),
-                (y.b1575335089 = m(y("pl").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (y.a31683913 = f(y("pl").numberFormatter({}), y("pl").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "za {0} dzień", "relativeTimePattern-count-few": "za {0} dni", "relativeTimePattern-count-many": "za {0} dni", "relativeTimePattern-count-other": "za {0} dnia" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "{0} dzień temu", "relativeTimePattern-count-few": "{0} dni temu", "relativeTimePattern-count-many": "{0} dni temu", "relativeTimePattern-count-other": "{0} dnia temu" }, "relative-type--2": "przedwczoraj", "relative-type--1": "wczoraj", "relative-type-0": "dzisiaj", "relative-type-1": "jutro", "relative-type-2": "pojutrze" })),
                 (y.a1680346926 = l(y("pl").numberFormatter({}), y("pl").pluralGenerator({}), { compoundUnitPattern: "{0} na {1}", unitProperties: { displayName: "sekundy", one: "{0} sekunda", few: "{0} sekundy", many: "{0} sekund", other: "{0} sekundy", perUnitPattern: "{0} na sekundę" } })),
                 (y.b206616370 = l(y("pl").numberFormatter({}), y("pl").pluralGenerator({}), { compoundUnitPattern: "{0} na {1}", unitProperties: { displayName: "minuty", one: "{0} minuta", few: "{0} minuty", many: "{0} minut", other: "{0} minuty", perUnitPattern: "{0} na minutę" } })),
@@ -13371,14 +13393,14 @@
                 i("b6ca7bcb", y.a2048547289),
                 i("h0e4cdf5", y.a2060876747),
                 i("g727ddcf", y.a1883754876),
+                i("f3b9b9a7", y.b1575335089),
                 i("h3629783", y.a133744795),
                 i("a20c68af", y.a1466386767),
                 i("ja781451", y.b387089515),
                 i("cfa1a7b9", y.b1419457608),
-                i("f3b9b9a7", y.b1575335089),
                 i("eefcd267", y.b1974189318),
                 i("fa8afc43", y.a660884699);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.f9c4f64a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.9f64b1aa.js.map

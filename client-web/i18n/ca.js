@@ -1280,26 +1280,32 @@
                 t("fc7db594", "Resum del perfil"),
                 t("c3f04d9c", "Està pensant"),
                 t("cbdddb0a", "Completat"),
-                t("e98cc293", function (e) {
-                    return "S'està cercant " + e.query;
+                t("ie2bbeed", function (e) {
+                    return 'Searching for "' + e.query + '"';
                 }),
                 t("b0d1e205", function (e) {
                     return "S'està cercant **\"" + e.query + '"**';
                 }),
-                t("i2e0f4d7", function (e) {
-                    return "S'està cercant " + e.query + " a " + e.url;
+                t("bf970edd", function (e) {
+                    return 'Searching 𝕏 for "' + e.query + '"';
+                }),
+                t("g008d475", function (e) {
+                    return "Browsing " + e.url;
+                }),
+                t("c91e3971", function (e) {
+                    return "Browsing " + e.url + ' for "' + e.query + '"';
                 }),
                 t("acb9b845", function (e) {
                     return "S'està navegant per " + e.url + ' per a la consulta **"' + e.query + '"**';
                 }),
-                t("ef261d8d", function (e) {
-                    return "Cercant publicacions de: @" + e.username;
+                t("j9006405", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username;
                 }),
-                t("f7d9cfb9", function (e) {
-                    return "S'estan cercant publicacions de @" + e.username + " amb " + e.query;
+                t("a2dd07e5", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username + ' for "' + e.query + '"';
                 }),
-                t("bec7eb11", function (e) {
-                    return "S'estan cercant publicacions de @" + e.username + ' amb **"' + e.query + '"**';
+                t("e99fb7a3", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username + ' for **"' + e.query + '"**';
                 }),
                 t("ead81122", "S'ha produït un error. Actualitza per reconnectar o torna-ho a provar."),
                 t("f808a13a", "T'has excedit amb el límit. Torna-ho a provar d'aquí uns moments."),
@@ -1345,7 +1351,7 @@
                 t("b7cb4fab", "Traduït per:"),
                 t("e0bffbf8", "About automatic translation"),
                 t("e839db3a", "Descarta"),
-                t("a15585b4", "Language Settings"),
+                t("a15585b4", "Configuració de llengua"),
                 t("d4c339b9", function (e) {
                     return "Publicació de " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1915,10 +1921,10 @@
                 t("jcd5ee8a", "Edita el bloc"),
                 t("a8f09fb8", "Esborra el bloc"),
                 t("i89195ea", "Separador"),
-                t("da8ac57c", "Edita la llegenda"),
-                t("a8fdd09c", "Publica l'article"),
-                t("d8047cc8", "Publica");
-            t("ff7ddca2", "Quan el publiquis, l'article es mostrarà com una publicació. A més, el podràs trobar a la pestanya Articles del teu perfil."),
+                t("da8ac57c", "Edita la llegenda");
+            t("a8fdd09c", "Publica l'article"),
+                t("d8047cc8", "Publica"),
+                t("ff7ddca2", "Quan el publiquis, l'article es mostrarà com una publicació. A més, el podràs trobar a la pestanya Articles del teu perfil."),
                 t("ef34d7be", "Els controls d'audiència i de resposta no es poden editar un cop s'ha publicat l'article."),
                 t("e52d4998", "Tria la teva audiència"),
                 t("d7985b24", "Tria qui pot respondre a aquest article"),
@@ -2971,10 +2977,10 @@
                 t("bc6efc72", "Política de privacitat"),
                 t("h3161192", "Política de galetes"),
                 t("a7de64de", "Informació sobre els anuncis"),
-                t("jb0a4c36", "Blog"),
-                t("ce6d095a", "Professions"),
-                t("e0adec82", "Recursos de marca");
-            t("df1b7550", "Màrqueting"),
+                t("jb0a4c36", "Blog");
+            t("ce6d095a", "Professions"),
+                t("e0adec82", "Recursos de marca"),
+                t("df1b7550", "Màrqueting"),
                 t("he258678", "X per a empreses"),
                 t("c6f58084", "Desenvolupadors"),
                 t("d83f18d2", "Directori"),
@@ -3883,10 +3889,10 @@
                 t("c371fb9a", "Final"),
                 t("c0ce822e", "Configuració del micròfon"),
                 t("a2bf8b8a", "La vull escoltar només"),
-                t("caa8d928", "Activa la supressió de soroll"),
-                t("b5d88f0c", "Només empleats"),
-                t("c855ab8e", "Només per a Subscriptors");
-            t("ddeb0a3c", "Aquí tens la Comunitat. Te n'agraden els usuaris? Dona-hi un cop d'ull."),
+                t("caa8d928", "Activa la supressió de soroll");
+            t("b5d88f0c", "Només empleats"),
+                t("c855ab8e", "Només per a Subscriptors"),
+                t("ddeb0a3c", "Aquí tens la Comunitat. Te n'agraden els usuaris? Dona-hi un cop d'ull."),
                 t("e111f531", function (e) {
                     return e.count + " estan escoltant";
                 }),
@@ -4153,36 +4159,39 @@
                 }),
                 t("ed93de0c", "S'està analitzant la publicació"),
                 t("d1d92e40", "Més detalls"),
+                t("fbc79f6a", "Historial de converses"),
                 t("a6e89af8", "Conversa oberta"),
                 t("ica55d24", "Xat nou"),
-                t("f794af9a", "Mode divertit"),
-                t("eccf9fea", "Mode normal"),
+                t("b61ad410", "Història"),
+                t("b3de2628", "No hi ha cap historial de converses disponible"),
+                t("acfbfb28", "Les teves converses futures apareixeran aquí"),
+                t("g02dacc0", "Avui"),
+                t("c6e845c0", "Ahir"),
+                t("i1147548", "Historial de cerca a Grok"),
+                t("ab437026", "No s'ha trobat cap conversa"),
+                t("e12569ec", "Prova de cercar una altra cosa."),
+                t("hb52cc4a", "Torna-ho a provar més tard."),
+                t("d4eb0e26", "Canvia el nom"),
+                t("c64975ea", "Encara no has marcat cap conversa com a preferida"),
+                t("a3e3db6e", "Fes clic a l'estrella per desar els xats que utilitzes sovint"),
+                t("f4ae77ac", "L'historial d'imatges no està disponible"),
+                t("d57d337e", "Les imatges que generis es mostraran aquí."),
+                t("j826e722", "Desa la imatge"),
+                t("a9325f10", "Copia la imatge"),
+                t("g0b12442", "No s'ha pogut copiar la imatge"),
+                t("edd0c172", "Publica la imatge"),
+                t("d1d3a41a", "Edició d'imatges"),
+                t("c26b9b9c", "Fitxer"),
+                t("g10600b0", "Menú"),
                 t("g7b1c574", "Restableix els valors predeterminats"),
                 t("f388a7ec", "DeepSearch"),
                 t("ab1eb384", "Selecciona el mode de cerca que vulguis"),
                 t("i330e54c", "Cerca avançada i raonament"),
                 t("fdcce108", "DeeperSearch"),
                 t("ac64b674", "Cerca ampliada, més raonament"),
-                t("j22655f2", "Pregunta qualsevol cosa"),
-                t("h0681e3e", "Parla amb Grok, el nostre assistent d'IA"),
-                t("d593fd78", "Pot respondre les teves preguntes, fer cerques a X i generar imatges."),
-                t("d0205a24", "Comprova els fets"),
-                t("ed4177c4", "És possible que Grok proporcioni informació objectivament inexacta o incompleta, o que faci resums incorrectes. Verifica tota la informació de manera independent."),
-                t("c0ff98f8", "Entrenament i personalització de la IA"),
-                t("f1a8218a", "És possible que utilitzem les teves dades de X, així com les entrades, les interaccions i els resultats de les teves converses amb Grok, per entrenar el model, perfeccionar-lo i personalitzar la teva experiència amb l'assistent. Si vols donar-te de baixa, ves a la configuració de X. Per obtenir més informació, visita el nostre Centre d'ajuda."),
-                t("bcbf5b6e", "S'està compartint"),
-                t("j7b5c844", "Ets responsable de les converses que comparteixes públicament. No comparteixis amb Grok la teva informació personal i confidencial ni la d'altres persones (consulta el nostre Centre d'ajuda)."),
-                t("c9f7c196", "Centre d'ajuda"),
+                t("a2697040", "Descriu què vols canviar a la imatge"),
                 t("c65f7308", "Els servidors estan preparant alguna cosa"),
                 t("f2a8655e", "Les eines avançades de Grok no estan disponibles en aquests moments."),
-                t("c26b9b9c", "Fitxer"),
-                t("g10600b0", "Menú"),
-                t("j826e722", "Desa la imatge"),
-                t("a9325f10", "Copia la imatge"),
-                t("g0b12442", "No s'ha pogut copiar la imatge"),
-                t("edd0c172", "Publica la imatge"),
-                t("d1d3a41a", "Edició d'imatges"),
-                t("a2697040", "Descriu què vols canviar a la imatge"),
                 t("ge1cefc4", "Eines"),
                 t("e9b6d404", "A quines eines de cerca pot accedir Grok?"),
                 t("h15dce2e", "Configuració avançada"),
@@ -4197,60 +4206,25 @@
                 t("e4ae6abe", "Demana a Grok que transformi la teva imatge"),
                 t("e8ade5e2", "Selecciona la personalitat"),
                 t("b5df32b0", "Pregunta alguna cosa a Grok"),
+                t("dab087ee", "Xats"),
+                t("a911623c", "Imatges"),
+                t("f794af9a", "Mode divertit"),
+                t("eccf9fea", "Mode normal"),
+                t("j22655f2", "Pregunta qualsevol cosa"),
+                t("h0681e3e", "Parla amb Grok, el nostre assistent d'IA"),
+                t("d593fd78", "Pot respondre les teves preguntes, fer cerques a X i generar imatges."),
+                t("d0205a24", "Comprova els fets"),
+                t("ed4177c4", "És possible que Grok proporcioni informació objectivament inexacta o incompleta, o que faci resums incorrectes. Verifica tota la informació de manera independent."),
+                t("c0ff98f8", "Entrenament i personalització de la IA"),
+                t("f1a8218a", "És possible que utilitzem les teves dades de X, així com les entrades, les interaccions i els resultats de les teves converses amb Grok, per entrenar el model, perfeccionar-lo i personalitzar la teva experiència amb l'assistent. Si vols donar-te de baixa, ves a la configuració de X. Per obtenir més informació, visita el nostre Centre d'ajuda."),
+                t("bcbf5b6e", "S'està compartint"),
+                t("j7b5c844", "Ets responsable de les converses que comparteixes públicament. No comparteixis amb Grok la teva informació personal i confidencial ni la d'altres persones (consulta el nostre Centre d'ajuda)."),
+                t("c9f7c196", "Centre d'ajuda"),
                 t("fb3b9776", "Aquest usuari ha personalitzat els resultats de Grok."),
-                t("ca93f2ee", "Aquest missatge s'ha suprimit."),
-                t("b8c06820", "Copia el text"),
-                t("ca0f5894", "No m'agrada"),
-                t("ja8d189e", "Volia una resposta de text"),
-                t("e951f04e", "Volia una imatge"),
-                t("c503b35e", "Volia una altra imatge"),
-                t("d4371c92", "El codi és incorrecte"),
-                t("dbe8586e", "Volia un altre codi"),
-                t("e360eb4a", "No volia el codi"),
-                t("a18657ca", "Les matemàtiques són incorrectes"),
-                t("b8b86300", "No volia les matemàtiques"),
-                t("e4c34788", "Resposta incorrecta"),
-                t("b220a8c8", "Volia una altra cosa"),
-                t("b115fd18", "Resposta esbiaixada"),
-                t("dc637214", "Estil/to incorrectes"),
-                t("f02e6d42", "Volia fer una cerca"),
-                t("bbec6bba", "Resultats de cerca dolents"),
-                t("b494d088", "No volia fer una cerca"),
-                t("a44974f2", "No comprèn la imatge"),
-                t("bd44a8a8", "Explica'ns més coses"),
-                t("fcdbe764", "Com pot millorar Grok?"),
-                t("bb6adb22", "Descriu el que ha passat"),
-                t("h0fa15f2", "Gràcies pels teus comentaris!"),
-                t("d700b268", "Xats de referència"),
-                t("cd7bdab2", "Si oblides una conversa, no se suprimirà de l'historial"),
-                t("f21b84de", "Referència oblidada"),
-                t("i52a9cb8", "No hi ha cap record que mostrar."),
-                t("d9d36880", "Oblida"),
-                t("g02dacc0", "Avui"),
-                t("c6e845c0", "Ahir"),
-                t("a5fa4a86", "gen."),
-                t("c51724a4", "feb."),
-                t("j244ceb2", "març"),
-                t("b22b12e0", "abr."),
-                t("h3023cac", "maig"),
-                t("b10dbffa", "juny"),
-                t("c81da1b6", "jul."),
-                t("d4e4d3ce", "ago."),
-                t("c3418f9a", "set."),
-                t("b64dada6", "oct."),
-                t("ad24ec20", "nov."),
-                t("c7902252", "des."),
-                t("idf94bac", "Actualitza"),
-                t("f7614f92", "Sense cerca"),
-                t("c5ade3ba", "Amb cerca"),
-                t("c16e5b1a", "Sense generació d'imatges"),
-                t("i2ca65fa", "Amb generació d'imatges"),
-                t("d3927f88", "Publica l'enllaç"),
-                t("be37ecd4", "No s'ha pogut copiar al porta-retalls"),
-                t("h708a4c0", "Comparteix la conversa"),
-                t("g06a67e2", "La pàgina compartida inclourà els missatges fins a aquest punt"),
-                t("a0428662", "No és útil"),
-                t("fe4fd310", "Útil"),
+                t("b0a889d4", "As Image"),
+                t("a111fb48", "As Spreadsheet"),
+                t("bccc65f0", "Grok can make mistakes. Always check original sources."),
+                t("bd202fe6", "Generating card"),
                 t("bfd161bc", "Compara"),
                 t("j5dcf1b2", "S'ha actualitzat"),
                 t("a50aaa10", "Abans de l'inici d'activitat dels mercats"),
@@ -4282,6 +4256,9 @@
                 t("dd679fb1", function (e) {
                     return "Valor mínim total" + e.ttc_stock_details;
                 }),
+                t("ha9c4cf8", "View source"),
+                t("ecad5d78", "Save image"),
+                t("d2d1d398", "Copiat!"),
                 t("a22063d2", "Comparteix la teva ubicació per millorar la precisió."),
                 t("db3248a8", "S'està carregant la ubicació"),
                 t("ffe0e588", "Comparteix la ubicació"),
@@ -4315,6 +4292,65 @@
                 t("d66bf142", "Dj."),
                 t("dc17968a", "Div."),
                 t("j310a2d6", "Ds."),
+                t("afa2a58e", "See all posts"),
+                t("fc83e7e2", "See all users"),
+                t("df601d92", "Relevant Users"),
+                t("b001fa12", "Source query"),
+                t("db6c20cf", function (e) {
+                    return "Show all (" + e.count + ")";
+                }),
+                t("d7cb5408", "Pàgines web rellevants"),
+                t("ca93f2ee", "Aquest missatge s'ha suprimit."),
+                t("b8c06820", "Copia el text"),
+                t("ca0f5894", "No m'agrada"),
+                t("ja8d189e", "Volia una resposta de text"),
+                t("e951f04e", "Volia una imatge"),
+                t("c503b35e", "Volia una altra imatge"),
+                t("d4371c92", "El codi és incorrecte"),
+                t("dbe8586e", "Volia un altre codi"),
+                t("e360eb4a", "No volia el codi"),
+                t("a18657ca", "Les matemàtiques són incorrectes"),
+                t("b8b86300", "No volia les matemàtiques"),
+                t("e4c34788", "Resposta incorrecta"),
+                t("b220a8c8", "Volia una altra cosa"),
+                t("b115fd18", "Resposta esbiaixada"),
+                t("dc637214", "Estil/to incorrectes"),
+                t("f02e6d42", "Volia fer una cerca"),
+                t("bbec6bba", "Resultats de cerca dolents"),
+                t("b494d088", "No volia fer una cerca"),
+                t("a44974f2", "No comprèn la imatge"),
+                t("bd44a8a8", "Explica'ns més coses"),
+                t("fcdbe764", "Com pot millorar Grok?"),
+                t("bb6adb22", "Descriu el que ha passat"),
+                t("h0fa15f2", "Gràcies pels teus comentaris!"),
+                t("d700b268", "Xats de referència"),
+                t("cd7bdab2", "Si oblides una conversa, no se suprimirà de l'historial"),
+                t("f21b84de", "Referència oblidada"),
+                t("i52a9cb8", "No hi ha cap record que mostrar."),
+                t("d9d36880", "Oblida"),
+                t("a5fa4a86", "gen."),
+                t("c51724a4", "feb."),
+                t("j244ceb2", "març"),
+                t("b22b12e0", "abr."),
+                t("h3023cac", "maig"),
+                t("b10dbffa", "juny"),
+                t("c81da1b6", "jul."),
+                t("d4e4d3ce", "ago."),
+                t("c3418f9a", "set."),
+                t("b64dada6", "oct."),
+                t("ad24ec20", "nov."),
+                t("c7902252", "des."),
+                t("idf94bac", "Actualitza"),
+                t("f7614f92", "Sense cerca"),
+                t("c5ade3ba", "Amb cerca"),
+                t("c16e5b1a", "Sense generació d'imatges"),
+                t("i2ca65fa", "Amb generació d'imatges"),
+                t("d3927f88", "Publica l'enllaç"),
+                t("be37ecd4", "No s'ha pogut copiar al porta-retalls"),
+                t("h708a4c0", "Comparteix la conversa"),
+                t("g06a67e2", "La pàgina compartida inclourà els missatges fins a aquest punt"),
+                t("a0428662", "No és útil"),
+                t("fe4fd310", "Útil"),
                 t("eaf55eb4", "Mostra pensant"),
                 t("b1ac6016", "DeepSearch completa"),
                 t("f766feca", "DeeperSearch completada"),
@@ -4332,23 +4368,23 @@
                 t("db832e38", "Activa les notificacions a la configuració del navegador"),
                 t("a910cac6", "Hi ha hagut un problema en activar les notificacions"),
                 t("be30b6ee", "Connexió inestable"),
-                t("b52484b6", "Cercant..."),
+                t("ge15b488", "Show thoughts"),
+                t("aa7c96bb", function (e) {
+                    return "Mostra'n " + e.numResults + " més";
+                }),
                 t("a4d9dbfa", "Pensaments"),
+                t("j1ab5f40", "Toca per llegir"),
+                t("f5a2377e", "Està pensant "),
+                t("g3ce0132", "Ha pensat"),
+                t("f8007364", "Amplia per obtenir més detalls"),
+                t("ca53f780", "Replega els detalls"),
+                t("b52484b6", "Cercant..."),
                 t("ib1c5475", function (e) {
                     return "Raonat durant " + e.minutes + " min " + e.seconds + " s";
                 }),
                 t("a15d62db", function (e) {
                     return "Raonat durant " + e.seconds + " s";
                 }),
-                t("d7cb5408", "Pàgines web rellevants"),
-                t("aa7c96bb", function (e) {
-                    return "Mostra'n " + e.numResults + " més";
-                }),
-                t("j1ab5f40", "Toca per llegir"),
-                t("f5a2377e", "Està pensant "),
-                t("g3ce0132", "Ha pensat"),
-                t("f8007364", "Amplia per obtenir més detalls"),
-                t("ca53f780", "Replega els detalls"),
                 t("ha8fbe22", "Genera més imatges amb Premium"),
                 t("d95c232a", "Has arribat al límit. Actualitza per generar-ne més."),
                 t("h2671312", "Més Grok amb Premium"),
@@ -4895,8 +4931,8 @@
                 t("fbc79a40", "Resum dels espais"),
                 t("d077112a", "Estadístiques dels espais"),
                 t("cf3709da", "Estat"),
-                t("e797dc32", "Temps d'emissió: "),
-                t("b649d8cc", "Només per a subscriptors"),
+                t("e797dc32", "Temps d'emissió: ");
+            t("b649d8cc", "Només per a subscriptors"),
                 t("j9282130", "Miniatura de l'emissió"),
                 t("g629b8b0", "El temps s'ha esgotat"),
                 t("eb87323c", "Es mostren les analítiques del període de temps seleccionat des de la transmissió en directe."),
@@ -4925,8 +4961,8 @@
                 t("a532072a", "Espectadors"),
                 t("d9508ab0", "visualitzacions"),
                 t("d9f9dec0", "Mostra l'espai"),
-                t("h0c1f37a", "Mostra les analítiques dels espais");
-            t("e41fffbc", "Temps total de visualització dels vídeos."),
+                t("h0c1f37a", "Mostra les analítiques dels espais"),
+                t("e41fffbc", "Temps total de visualització dels vídeos."),
                 t("if2909ba", "Temps de visualització"),
                 t("i0e5bf4c", "Els teus vídeos"),
                 t("ed99baea", "Accès beta anticipat"),
@@ -5847,8 +5883,8 @@
                 t("hf68e810", "Les Notes de la Comunitat són un programa que té com a objectiu crear un món més ben informat i que permet als usuaris de X afegir de manera col·laborativa notes útils a les publicacions que puguin induir a error."),
                 t("jdb52860", "Els col·laboradors escriuen i valoren notes"),
                 t("c104025c", "Els col·laboradors són usuaris de X, com ara tu, que s'han inscrit al programa pilot per escriure i valorar notes. Com més usuaris hi participin, millor serà el programa."),
-                t("j7872b8c", "A les publicacions només apareixen les notes que els usuaris valoren com a útils"),
-                t("fb59415e", "Perquè les notes es mostrin públicament com a context de les publicacions, un nombre suficient d'usuaris amb punts de vista diversos les han de valorar com a útils. Aquest enfocament contribueix a evitar el biaix i la manipulació i a trobar notes que siguin útils per a un gran nombre d'usuaris."),
+                t("j7872b8c", "A les publicacions només apareixen les notes que els usuaris valoren com a útils");
+            t("fb59415e", "Perquè les notes es mostrin públicament com a context de les publicacions, un nombre suficient d'usuaris amb punts de vista diversos les han de valorar com a útils. Aquest enfocament contribueix a evitar el biaix i la manipulació i a trobar notes que siguin útils per a un gran nombre d'usuaris."),
                 t("f9a44022", "X, l'empresa, no tria el que es mostra: els usuaris són els qui ho fan"),
                 t("gdf4fbb2", "X, l'empresa, no escriu, valora ni modera les notes (tret que incompleixin les normes d'ús de X). Creiem que donar veu als usuaris perquè prenguin aquestes decisions de manera conjunta és un mètode just i eficaç per afegir informació que ajudi tothom a estar més ben informat."),
                 t("cc720e6a", "Les Notes de la Comunitat es basen en la transparència de les dades"),
@@ -5879,8 +5915,8 @@
                     return "No hi ha cap resultat per a: " + e.query;
                 }),
                 t("f191a2ba", "configuració de la cerca"),
-                t("a068008a", "Les carpetes no s'estan carregant ara mateix");
-            t("f075b0e8", "Edita la carpeta"),
+                t("a068008a", "Les carpetes no s'estan carregant ara mateix"),
+                t("f075b0e8", "Edita la carpeta"),
                 t("beba2a0e", "Crea una carpeta de preferits nova"),
                 t("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
@@ -5925,7 +5961,6 @@
                 t("d7346632", "Encara no t'has unit a cap Comunitat"),
                 t("b732a4cc", "Si ho fas, veuràs les seves publicacions aquí."),
                 t("hff48914", "En aquest moment, no s'ha trobat cap publicació."),
-                t("hb52cc4a", "Torna-ho a provar més tard."),
                 t("e50e1bb0", "Et donem la benvinguda a les comunitats"),
                 t("i6829daa", "Les comunitats són grups de debat moderats on els usuaris de X poden connectar i compartir continguts."),
                 t("fc5c6914", "Coneix altres usuaris amb els teus interessos"),
@@ -6499,26 +6534,13 @@
                 t("e5f4eac0", "El teu contingut serà més visible i apareixeràs a les tendències i als resultats de les cerques."),
                 t("c7832a72", "Connecta directament amb altres usuaris"),
                 t("i1ccd17a", "Envia missatges directes a altres usuaris que no et segueixin sense que es filtrin automàticament."),
+                t("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
                 t("hc965308", "Diversió"),
                 t("eb78b77e", "Mode divertit"),
                 t("aa8ece10", "Prova grok.com"),
                 t("gb5fb7d0", "Mode d'enfocament"),
                 t("g5665caa", "Tanca el mode d'enfocament"),
                 t("a372681e", "Copia l'enllaç per compartir"),
-                t("fbc79f6a", "Historial de converses"),
-                t("b61ad410", "Història"),
-                t("b3de2628", "No hi ha cap historial de converses disponible"),
-                t("acfbfb28", "Les teves converses futures apareixeran aquí"),
-                t("i1147548", "Historial de cerca a Grok"),
-                t("ab437026", "No s'ha trobat cap conversa"),
-                t("e12569ec", "Prova de cercar una altra cosa."),
-                t("d4eb0e26", "Canvia el nom"),
-                t("c64975ea", "Encara no has marcat cap conversa com a preferida"),
-                t("a3e3db6e", "Fes clic a l'estrella per desar els xats que utilitzes sovint"),
-                t("f4ae77ac", "L'historial d'imatges no està disponible"),
-                t("d57d337e", "Les imatges que generis es mostraran aquí."),
-                t("dab087ee", "Xats"),
-                t("a911623c", "Imatges"),
                 t("ae9cdac6", "Historial de converses"),
                 t("b198a392", "Conversa amb Grok"),
                 t("d16329b4", "Copia la conversa"),
@@ -6869,8 +6891,8 @@
                 t("b2c213e0", "S'ha superat el límit de caràcters"),
                 t("d84e9c2a", "Comparteix el tipus de compromís esperat amb la feina per a aquesta funció."),
                 t("bc8b300c", "Funció laboral"),
-                t("d1eedb50", "Ajuda els candidats a entendre en quina àrea s'inscriu aquesta funció."),
-                t("eaf3ce64", "Equip"),
+                t("d1eedb50", "Ajuda els candidats a entendre en quina àrea s'inscriu aquesta funció.");
+            t("eaf3ce64", "Equip"),
                 t("b36cd50e", "Especifica l'equip bàsic en què treballaran els candidats quan se'ls contracti."),
                 t("d3a427ce", "Selecciona el nivell d'experiència necessari."),
                 t("i7174442", "Descripció de la feina"),
@@ -6885,8 +6907,8 @@
                 t("c05176ec", "Si és una funció per a les instal·lacions, introdueix-ne la o les ubicacions. Si és una funció remota, descriu on poden residir els candidats."),
                 t("d70c24d4", "S'utilitza per ajudar els candidats a cercar la feina."),
                 t("de1c4376", "Interval de salari"),
-                t("hf352d42", "Afegeix un interval de salari opcional que serà visible per als candidats. Si tries de no afegir-lo, tingues en compte les lleis de transparència de salaris de la ubicació per a la qual estàs contractant.");
-            t("ede7d0a2", "Moneda"),
+                t("hf352d42", "Afegeix un interval de salari opcional que serà visible per als candidats. Si tries de no afegir-lo, tingues en compte les lleis de transparència de salaris de la ubicació per a la qual estàs contractant."),
+                t("ede7d0a2", "Moneda"),
                 t("b925c18c", "Tipus de salari"),
                 t("j3d242ce", "Interval no vàlid"),
                 t("f4d07bd2", "Inclou detalls opcionals perquè els candidats puguin trobar fàcilment les funcions amb la cerca."),
@@ -7841,31 +7863,7 @@
                 t("b5099e33", function (e) {
                     return "@" + e.screenName + " no té cap seguidor verificat.";
                 }),
-                t("ec251f36", "Quan algú que coneguis el comenci a seguir, es mostrarà aquí."),
-                t("f8af4f48", "Quan comencin a seguir comptes, es mostraran aquí."),
-                t("fd0aad94", "Quan un usuari verificat segueixi aquest compte, es mostrarà aquí."),
-                t("b84f6df1", function (e) {
-                    return "Regala Premium amb un " + e.percentage + " % de descompte durant un temps limitat.";
-                }),
-                t("cfcac293", function (e) {
-                    return "Regala i paga " + e.price;
-                }),
-                t("d7a73450", "Tipus de subscripció"),
-                t("hbd2c24e", "En aquests moments, aquest compte no compleix els requisits per rebre regals."),
-                t("f3fddc98", "Condicions per a compradors"),
-                t("cff9c889", "Més informació"),
-                t("c65dda96", "S'ha enviat el teu regal."),
-                t("f6e2a407", function (e) {
-                    return "Permet que tothom vegi la teva insígnia de Subscriptor quan responguis a les publicacions de l'usuari @" + e.screenName;
-                }),
-                t("j8dedddd", function (e) {
-                    return "En desactivar l'opció, @" + e.screenName + " i els seus subscriptors seguiran veient la teva insígnia quan responguis a les publicacions exclusives per a subscriptors de l'usuari @" + e.screenName + ". @" + e.screenName + " veurà sempre la teva insígnia.";
-                }),
-                t("c8a513f6", "Cancel·la la Subscripció"),
-                t("ea000ec8", "Ja has cancel·lat la Subscripció?"),
-                t("d7b8387e", "Si ja has cancel·lat la Subscripció, no cal que facis res més, ja que aquesta caducarà de manera automàtica en finalitzar el cicle de facturació."),
-                t("f4166d9a", "Vols cancel·lar la Subscripció?"),
-                t("b74ff5fc", "Si cancel·les la Subscripció, aquesta caducarà de manera automàtica en finalitzar el cicle de facturació.");
+                t("ec251f36", "Quan algú que coneguis el comenci a seguir, es mostrarà aquí.");
             function s(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7904,7 +7902,31 @@
                     n(e, a)
                 );
             }
-            t("ee9efbc8", "Segueix cancel·lant"),
+            t("f8af4f48", "Quan comencin a seguir comptes, es mostraran aquí."),
+                t("fd0aad94", "Quan un usuari verificat segueixi aquest compte, es mostrarà aquí."),
+                t("b84f6df1", function (e) {
+                    return "Regala Premium amb un " + e.percentage + " % de descompte durant un temps limitat.";
+                }),
+                t("cfcac293", function (e) {
+                    return "Regala i paga " + e.price;
+                }),
+                t("d7a73450", "Tipus de subscripció"),
+                t("hbd2c24e", "En aquests moments, aquest compte no compleix els requisits per rebre regals."),
+                t("f3fddc98", "Condicions per a compradors"),
+                t("cff9c889", "Més informació"),
+                t("c65dda96", "S'ha enviat el teu regal."),
+                t("f6e2a407", function (e) {
+                    return "Permet que tothom vegi la teva insígnia de Subscriptor quan responguis a les publicacions de l'usuari @" + e.screenName;
+                }),
+                t("j8dedddd", function (e) {
+                    return "En desactivar l'opció, @" + e.screenName + " i els seus subscriptors seguiran veient la teva insígnia quan responguis a les publicacions exclusives per a subscriptors de l'usuari @" + e.screenName + ". @" + e.screenName + " veurà sempre la teva insígnia.";
+                }),
+                t("c8a513f6", "Cancel·la la Subscripció"),
+                t("ea000ec8", "Ja has cancel·lat la Subscripció?"),
+                t("d7b8387e", "Si ja has cancel·lat la Subscripció, no cal que facis res més, ja que aquesta caducarà de manera automàtica en finalitzar el cicle de facturació."),
+                t("f4166d9a", "Vols cancel·lar la Subscripció?"),
+                t("b74ff5fc", "Si cancel·les la Subscripció, aquesta caducarà de manera automàtica en finalitzar el cicle de facturació."),
+                t("ee9efbc8", "Segueix cancel·lant"),
                 t("c5d9c77a", "Sembla que s'ha produït un petit problema, però no et preocupis, no és culpa teva. Tanca la finestra i torna-ho a provar."),
                 t("jda53c24", "Pots cancel·lar la Subscripció des de l'Apple App Store."),
                 t("g0a7a53e", "Pots cancel·lar la Subscripció des de la Google Play Store."),
@@ -8875,8 +8897,8 @@
                 t("faf9f484", "Anunci"),
                 t("ae2ea9e7", function (e) {
                     return "Anunci de: " + e.advertiserName;
-                }),
-                t("hea01798", "Control lliscant de cerca"),
+                });
+            t("hea01798", "Control lliscant de cerca"),
                 t("f8a09386", "Mostra-ho al Periscope"),
                 t("gf2b6eee", "Imatge en imatge"),
                 t("b3160a69", function (e) {
@@ -8901,10 +8923,10 @@
                 }),
                 t("g60001bb", function (e) {
                     return "Mostra " + e.advertiserName;
-                });
-            t("dff1ddd9", function (e) {
-                return "Ves a " + e.advertiserName;
-            }),
+                }),
+                t("dff1ddd9", function (e) {
+                    return "Ves a " + e.advertiserName;
+                }),
                 t("b0b22805", function (e) {
                     return "Visita " + e.advertiserName;
                 }),
@@ -10155,7 +10177,7 @@
                         {
                             key: "b6411d33",
                             get: function () {
-                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
+                                return ["Segons l’ús que fas de X i la configuració de llengua, Grok traduirà automàticament el contingut en " + this.props.sourceLang + ". Per seleccionar les llengües que es tradueixen automàticament, visita ", "."];
                             },
                         },
                         {
@@ -13202,9 +13224,9 @@
                 (m.a1577766514 = v({ 1: m("ca").numberFormatter({ raw: "0" }), 2: m("ca").numberFormatter({ raw: "00" }) }, { pattern: "H:mm", timeSeparator: ":" })),
                 (m.a612118052 = v({ 1: m("ca").numberFormatter({ raw: "0" }), 2: m("ca").numberFormatter({ raw: "00" }) }, { pattern: "E h:mm a", timeSeparator: ":", days: { E: { 1: { sun: "dg.", mon: "dl.", tue: "dt.", wed: "dc.", thu: "dj.", fri: "dv.", sat: "ds." } } }, dayPeriods: { am: "a. m.", pm: "p. m." } })),
                 (m.a1196052885 = v({ 1: m("ca").numberFormatter({ raw: "0" }) }, { pattern: "LLLL 'de' y", timeSeparator: ":", months: { L: { 4: { 1: "gener", 2: "febrer", 3: "març", 4: "abril", 5: "maig", 6: "juny", 7: "juliol", 8: "agost", 9: "setembre", 10: "octubre", 11: "novembre", 12: "desembre" } } } })),
+                (m.a757785622 = v({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "diumenge", mon: "dilluns", tue: "dimarts", wed: "dimecres", thu: "dijous", fri: "divendres", sat: "dissabte" } } } })),
                 (m.b1575557342 = v({ 1: m("ca").numberFormatter({ raw: "0" }) }, { pattern: "d MMM y", timeSeparator: ":", months: { M: { 3: { 1: "de gen.", 2: "de febr.", 3: "de març", 4: "d’abr.", 5: "de maig", 6: "de juny", 7: "de jul.", 8: "d’ag.", 9: "de set.", 10: "d’oct.", 11: "de nov.", 12: "de des." } } } })),
                 (m.b495459818 = v({}, { pattern: "LLLL", timeSeparator: ":", months: { L: { 4: { 1: "gener", 2: "febrer", 3: "març", 4: "abril", 5: "maig", 6: "juny", 7: "juliol", 8: "agost", 9: "setembre", 10: "octubre", 11: "novembre", 12: "desembre" } } } })),
-                (m.a757785622 = v({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "diumenge", mon: "dilluns", tue: "dimarts", wed: "dimecres", thu: "dijous", fri: "divendres", sat: "dissabte" } } } })),
                 (m.b886181706 = q(m("ca").dateToPartsFormatter({ skeleton: "MMMd" }))),
                 (m.a1948020455 = q(m("ca").dateToPartsFormatter({ skeleton: "yMMMd" }))),
                 (m.b368369912 = q(m("ca").dateToPartsFormatter({ skeleton: "hm" }))),
@@ -13224,9 +13246,9 @@
                 (m.b527416389 = q(m("ca").dateToPartsFormatter({ time: "short" }))),
                 (m.a460944685 = q(m("ca").dateToPartsFormatter({ skeleton: "Ehm" }))),
                 (m.a1947335262 = q(m("ca").dateToPartsFormatter({ skeleton: "yMMMM" }))),
+                (m.a366378541 = q(m("ca").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (m.a1883249401 = q(m("ca").dateToPartsFormatter({ date: "medium" }))),
                 (m.b886866899 = q(m("ca").dateToPartsFormatter({ skeleton: "MMMM" }))),
-                (m.a366378541 = q(m("ca").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (m.a940204331 = h(m("ca").numberFormatter({}), m("ca").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "d’aquí a {0} dia", "relativeTimePattern-count-other": "d’aquí a {0} dies" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "fa {0} dia", "relativeTimePattern-count-other": "fa {0} dies" }, "relative-type--2": "abans-d’ahir", "relative-type--1": "ahir", "relative-type-0": "avui", "relative-type-1": "demà", "relative-type-2": "demà passat" })),
                 (m.b1290864880 = x(m("ca").numberFormatter({}), m("ca").pluralGenerator({}), { compoundUnitPattern: "{0} per {1}", unitProperties: { displayName: "segons", one: "{0} segon", other: "{0} segons", perUnitPattern: "{0} per segon" } })),
                 (m.a1117139120 = x(m("ca").numberFormatter({}), m("ca").pluralGenerator({}), { compoundUnitPattern: "{0} per {1}", unitProperties: { displayName: "minuts", one: "{0} minut", other: "{0} minuts", perUnitPattern: "{0} per minut" } })),
@@ -13358,14 +13380,14 @@
                 t("b6ca7bcb", m.b527416389),
                 t("h0e4cdf5", m.a460944685),
                 t("g727ddcf", m.a1947335262),
+                t("f3b9b9a7", m.a366378541),
                 t("h3629783", m.a1883249401),
                 t("a20c68af", m.b886866899),
                 t("ja781451", m.b776998797),
                 t("cfa1a7b9", m.a900924694),
-                t("f3b9b9a7", m.a366378541),
                 t("eefcd267", m.a346192984),
                 t("fa8afc43", m.a940393913);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.03c9c6aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.a2f703ba.js.map

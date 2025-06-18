@@ -17,40 +17,40 @@
             "use strict";
             t.d(a, { Z: () => E });
             t(571372);
-            var o = t(163889),
-                r = t(703710),
+            var r = t(163889),
+                o = t(703710),
                 i = (t(136728), t(614983)),
                 n = t.n(i),
                 s = t(392237),
-                d = t(870358),
-                l = t(557281),
+                l = t(870358),
+                d = t(557281),
                 c = t(952183),
                 _ = t(877905),
                 u = t(44527);
             function h(e) {
                 n()(e, "audioSpace is required");
-                const { metadata: a, participants: t, sharings: o, ...r } = e;
+                const { metadata: a, participants: t, sharings: r, ...o } = e;
                 n()(a, "metadata is required");
-                const { rest_id: i, state: d } = a;
-                n()(i, "rest_id is required"), n()(d, "state is required");
+                const { rest_id: i, state: l } = a;
+                n()(i, "rest_id is required"), n()(l, "state is required");
                 const u = (function (e) {
                         if (e && e.result && "Community" === e.result.__typename) {
-                            const { __typename: a, rest_id: t, ...o } = e.result,
-                                { name: r } = o,
+                            const { __typename: a, rest_id: t, ...r } = e.result,
+                                { name: o } = r,
                                 i = s.default.theme.colors.gray500,
-                                n = (0, c.Wb)(o),
-                                d = (0, c.TB)(o),
-                                l = n || d,
-                                _ = l?.url;
-                            return { rest_id: t, color: i, name: r, image_url: _ };
+                                n = (0, c.Wb)(r),
+                                l = (0, c.TB)(r),
+                                d = n || l,
+                                _ = d?.url;
+                            return { rest_id: t, color: i, name: o, image_url: _ };
                         }
                     })(a.community_results),
                     h = (function (e, a) {
                         const t = e?.total,
-                            o = m(e?.admins, a),
-                            r = m(e?.speakers, a),
+                            r = m(e?.admins, a),
+                            o = m(e?.speakers, a),
                             i = m(e?.listeners, a);
-                        return { total: t, admins: o, speakers: r, listeners: i };
+                        return { total: t, admins: r, speakers: o, listeners: i };
                     })(t, u),
                     b = (function (e) {
                         if (!e) return [];
@@ -60,11 +60,11 @@
                                     t = e.shared_item;
                                 if ("AudioSpaceSharedTweet" === t.__typename) {
                                     if ("Tweet" === t.tweet_results?.result?.__typename) {
-                                        const { __typename: o, ...r } = t.tweet_results?.result || {},
-                                            i = (0, _.y9)(r);
+                                        const { __typename: r, ...o } = t.tweet_results?.result || {},
+                                            i = (0, _.y9)(o);
                                         if (i) {
-                                            const { cards: t, publishedArticles: o, tweets: r, users: n } = i.entities,
-                                                s = (0, l.F)(r, t, n, o, i.result);
+                                            const { cards: t, publishedArticles: r, tweets: o, users: n } = i.entities,
+                                                s = (0, d.F)(o, t, n, r, i.result);
                                             if (s) return { id: e.sharing_id, user: a, tweet: s };
                                         }
                                     }
@@ -74,40 +74,40 @@
                             })
                             .filter(Boolean);
                         return a;
-                    })(o),
+                    })(r),
                     w = p(a.creator_results?.result),
                     f = w?.screen_name,
                     D = w?.profile_image_extensions_media_color?.palette,
                     { cohosts: g, host: y } = (function (e, a) {
                         let t;
-                        const o = [];
+                        const r = [];
                         a
                             ? e.admins.forEach((e) => {
-                                  e.twitter_screen_name === a ? (t = e) : o.push(e);
+                                  e.twitter_screen_name === a ? (t = e) : r.push(e);
                               })
                             : (t = e.admins[0]);
-                        return { host: t, cohosts: o };
+                        return { host: t, cohosts: r };
                     })(h, f);
-                return n()(y, "host is required"), { ...r, ...a, rest_id: i, state: d, host: y, hostPalette: D, cohosts: g, participants: h, sharings: b, ended_at: a.ended_at ? parseInt(a.ended_at, 10) : void 0, total_live_listeners: a.total_live_listeners ?? 0, total_replay_watched: a.total_replay_watched ?? 0, followed_by_host: a.creator_results?.result?.relationship_perspectives?.followed_by, community: u };
+                return n()(y, "host is required"), { ...o, ...a, rest_id: i, state: l, host: y, hostPalette: D, cohosts: g, participants: h, sharings: b, ended_at: a.ended_at ? parseInt(a.ended_at, 10) : void 0, total_live_listeners: a.total_live_listeners ?? 0, total_replay_watched: a.total_replay_watched ?? 0, followed_by_host: a.creator_results?.result?.relationship_perspectives?.followed_by, community: u };
             }
             function m(e, a) {
                 return e
                     ? e.map(({ user_results: e, ...t }) => {
-                          const o = { ...t, user_id: e?.rest_id, community: void 0, is_blue_verified: void 0, verified_type: void 0, highlightedLabel: void 0 };
+                          const r = { ...t, user_id: e?.rest_id, community: void 0, is_blue_verified: void 0, verified_type: void 0, highlightedLabel: void 0 };
                           if (a) {
                               const e = a.color,
-                                  r = Boolean(t.community_role && t.community_role !== d.WW.NonMember);
-                              o.community = { color: e, isMember: r };
+                                  o = Boolean(t.community_role && t.community_role !== l.WW.NonMember);
+                              r.community = { color: e, isMember: o };
                           }
-                          return e?.result && "User" === e.result.__typename && ((o.is_blue_verified = e.result.is_blue_verified), (o.verified_type = e.result.verification?.verified_type), (o.highlightedLabel = (0, u.H)(e.result.identity_profile_labels_highlighted_label?.label))), o;
+                          return e?.result && "User" === e.result.__typename && ((r.is_blue_verified = e.result.is_blue_verified), (r.verified_type = e.result.verification?.verified_type), (r.highlightedLabel = (0, u.H)(e.result.identity_profile_labels_highlighted_label?.label))), r;
                       })
                     : [];
             }
             function p(e) {
                 if (e && "User" === e.__typename) {
                     const { __typename: a, ...t } = e,
-                        o = (0, _.Hy)(t);
-                    if (o) return o.entities.users[o.result];
+                        r = (0, _.Hy)(t);
+                    if (r) return r.entities.users[r.result];
                 }
                 return null;
             }
@@ -122,20 +122,20 @@
                 A = t(790925),
                 T = t.n(A),
                 k = t(433261),
-                I = t.n(k),
-                S = t(359215),
-                N = t.n(S),
+                S = t.n(k),
+                I = t(359215),
+                N = t.n(I),
                 P = t(389073),
                 x = t(615656);
-            const E = ({ apiClient: e, featureSwitches: a, jotaiStore: o }) => ({
+            const E = ({ apiClient: e, featureSwitches: a, jotaiStore: r }) => ({
                     spacebar: () => e.getUnversioned("/fleets/v1/fleetline", { only_spaces: !0 }, {}),
                     byId(i, n = {}) {
                         const s = "byId",
-                            d = n.isMetatagsQuery || !1;
+                            l = n.isMetatagsQuery || !1;
                         return e
                             .graphQL(
                                 D(),
-                                { id: i, isMetatagsQuery: d, ...(0, r.d)(a), withReplays: !0, withListeners: !0 },
+                                { id: i, isMetatagsQuery: l, ...(0, o.d)(a), withReplays: !0, withListeners: !0 },
                                 L(
                                     s,
                                     i,
@@ -154,8 +154,8 @@
                                                     t.e("icons.2"),
                                                     t.e("icons.18"),
                                                     t.e("icons.9"),
-                                                    t.e("icons.1"),
                                                     t.e("icons.6"),
+                                                    t.e("icons.1"),
                                                     t.e("modules.common-e907d115"),
                                                     t.e("modules.common-e019dbda"),
                                                     t.e("icons.14"),
@@ -176,14 +176,6 @@
                                                     t.e("icons.17"),
                                                     t.e("icons.27"),
                                                     t.e("icons.0"),
-                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
-                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
-                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
-                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
-                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
-                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
-                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
-                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -203,11 +195,18 @@
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
+                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
+                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
+                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
+                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
+                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
+                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                                                     t.e("loader.AudioDock"),
                                                 ])
                                                     .then(t.bind(t, 106006))
                                                     .then(({ removedFromSpaceAtom: e }) => {
-                                                        o?.set(e);
+                                                        r?.set(e);
                                                     });
                                         }),
                                         !0
@@ -235,7 +234,7 @@
                     },
                     subscribeToScheduledSpaceById(a) {
                         const t = "subscribeToScheduledSpaceById";
-                        return e.graphQL(I(), { id: a }, L(t, a)).catch(C(t)).then(z(t));
+                        return e.graphQL(S(), { id: a }, L(t, a)).catch(C(t)).then(z(t));
                     },
                     unsubscribeFromScheduledSpaceById(a) {
                         const t = "unsubscribeFromScheduledSpaceById";
@@ -243,10 +242,10 @@
                     },
                     fetchTopics: () => e.graphQL(T(), {}),
                     search(a, t) {
-                        const o = "spacesSearch";
+                        const r = "spacesSearch";
                         return e
-                            .graphQL(M(), { query: a, filter: t }, L(o, a))
-                            .catch(C(o))
+                            .graphQL(M(), { query: a, filter: t }, L(r, a))
+                            .catch(C(r))
                             .then((e) =>
                                 e?.search_by_raw_query?.audio_spaces_grouped_by_section
                                     ? (function (e) {
@@ -254,13 +253,13 @@
                                           const a = { sections: [] };
                                           return (
                                               e.sections.forEach((e) => {
-                                                  const { destination: t, name: o } = e;
+                                                  const { destination: t, name: r } = e;
                                                   if (Array.isArray(e.items)) {
-                                                      const r = [];
+                                                      const o = [];
                                                       e.items.forEach((e) => {
-                                                          e?.space?.rest_id && r.push(e.space.rest_id);
+                                                          e?.space?.rest_id && o.push(e.space.rest_id);
                                                       }),
-                                                          o && t && a.sections.push({ name: o, destination: t, items: r });
+                                                          r && t && a.sections.push({ name: r, destination: t, items: o });
                                                   }
                                               }),
                                               a
@@ -286,21 +285,21 @@
             }
             const R = (e, a) => !1;
             function L(e, a, t = R) {
-                return function (r, i) {
+                return function (o, i) {
                     let n = !1;
-                    if (r.length) {
-                        const [t] = r,
-                            { code: i, message: s, path: d } = t;
-                        let l;
+                    if (o.length) {
+                        const [t] = o,
+                            { code: i, message: s, path: l } = t;
+                        let d;
                         const c = V.find(({ matches: e }) => e(s));
-                        if (c?.message) l = q(e, c.message);
-                        else if (Array.isArray(d)) {
-                            const a = d.map(Z).join(".");
-                            l = q(e, a);
-                        } else l = q(e, s || "isFatalError");
-                        (0, o.ZP)(l, { extra: { code: i, id: a, message: s, path: d } }), (n = !0);
+                        if (c?.message) d = q(e, c.message);
+                        else if (Array.isArray(l)) {
+                            const a = l.map(Z).join(".");
+                            d = q(e, a);
+                        } else d = q(e, s || "isFatalError");
+                        (0, r.ZP)(d, { extra: { code: i, id: a, message: s, path: l } }), (n = !0);
                     }
-                    return !t(r, i) && n;
+                    return !t(o, i) && n;
                 };
             }
             function Z(e) {
@@ -311,44 +310,44 @@
         787210: (e, a, t) => {
             "use strict";
             t.d(a, { Z: () => i });
-            var o = t(716406),
-                r = t(624479);
+            var r = t(716406),
+                o = t(624479);
             const i = ({ apiClient: e, featureSwitches: a }) => ({
                 fetchPresence: (a, t = {}) => {
                     const { only_spaces: i, userIds: n } = a,
                         s = { user_ids: n.join(","), only_spaces: i };
                     return e.getUnversioned("/fleets/v1/avatar_content", s, t).then((e) => {
-                        const { users: a, refresh_delay_secs: t = r.vj } = e,
-                            i = 0 === t ? r.vj : t,
+                        const { users: a, refresh_delay_secs: t = o.vj } = e,
+                            i = 0 === t ? o.vj : t,
                             s = Date.now() + 1e3 * i,
-                            d = Object.fromEntries(n.map((e) => [e, { expiry: s, spaces: void 0, refresh_delay_secs: i }])),
-                            l = a && (0, o.Z)(a, (e, a) => ({ ...e, expiry: s, refresh_delay_secs: i }));
-                        return (l || d) && { entities: { userPresence: { ...d, ...l } } };
+                            l = Object.fromEntries(n.map((e) => [e, { expiry: s, spaces: void 0, refresh_delay_secs: i }])),
+                            d = a && (0, r.Z)(a, (e, a) => ({ ...e, expiry: s, refresh_delay_secs: i }));
+                        return (d || l) && { entities: { userPresence: { ...l, ...d } } };
                     });
                 },
             });
         },
         910626: (e, a, t) => {
             "use strict";
-            t.d(a, { Y: () => o });
-            const o = Object.freeze({ card: "card", audiospace_ring: "audiospace_ring", spacebar: "spacebar" });
+            t.d(a, { Y: () => r });
+            const r = Object.freeze({ card: "card", audiospace_ring: "audiospace_ring", spacebar: "spacebar" });
         },
         161104: (e, a, t) => {
             "use strict";
-            t.d(a, { Z: () => o });
-            const o = class {
+            t.d(a, { Z: () => r });
+            const r = class {
                 initialize() {
                     (this.audioCtx = new (window.AudioContext || window.webkitAudioContext)()), (this.oscillatorNode = this.audioCtx.createOscillator()), (this.gainNode = this.audioCtx.createGain()), this.oscillatorNode.connect(this.gainNode), this.oscillatorNode.start(0), this.gainNode.connect(this.audioCtx.destination), (this.gainNode.gain.value = 0), (this.initialized = !0);
                 }
                 mapDataPointsToFrequencies(e, a = 440, t = 1760) {
-                    let o = 1 / 0,
-                        r = -1 / 0;
+                    let r = 1 / 0,
+                        o = -1 / 0;
                     e.forEach((e) => {
-                        (o = Math.min(e, o)), (r = Math.max(e, r));
+                        (r = Math.min(e, r)), (o = Math.max(e, o));
                     });
                     const i = t - a,
-                        n = r - o;
-                    return 0 === n ? e.map((e) => (a + t) / 2) : e.map((e) => ((e - o) / n) * i + a);
+                        n = o - r;
+                    return 0 === n ? e.map((e) => (a + t) / 2) : e.map((e) => ((e - r) / n) * i + a);
                 }
                 playTone(e) {
                     this.initialized || this.initialize();
@@ -358,25 +357,25 @@
                 playLinearConnectedDataPointsAsTone(e, a) {
                     this.initialized || this.initialize();
                     const t = this.mapDataPointsToFrequencies(e.map((e) => e.value)),
-                        o = this.audioCtx.currentTime,
-                        r = a / (t.length - 1);
-                    this.oscillatorNode.frequency.setValueAtTime(t[0], o), this.gainNode.gain.setValueAtTime(0, o), this.gainNode.gain.linearRampToValueAtTime(1, o + 0.1);
-                    for (let e = 0; e < t.length; e++) this.oscillatorNode.frequency.linearRampToValueAtTime(t[e], o + e * r);
-                    this.gainNode.gain.setValueAtTime(1, o + (a - 0.1)), this.gainNode.gain.exponentialRampToValueAtTime(0.001, o + (a - 0.001)), this.gainNode.gain.setValueAtTime(0, o + a);
+                        r = this.audioCtx.currentTime,
+                        o = a / (t.length - 1);
+                    this.oscillatorNode.frequency.setValueAtTime(t[0], r), this.gainNode.gain.setValueAtTime(0, r), this.gainNode.gain.linearRampToValueAtTime(1, r + 0.1);
+                    for (let e = 0; e < t.length; e++) this.oscillatorNode.frequency.linearRampToValueAtTime(t[e], r + e * o);
+                    this.gainNode.gain.setValueAtTime(1, r + (a - 0.1)), this.gainNode.gain.exponentialRampToValueAtTime(0.001, r + (a - 0.001)), this.gainNode.gain.setValueAtTime(0, r + a);
                 }
                 playDisconnectedDataPointsAsTone(e, a, t) {
                     this.initialized || this.initialize();
-                    const o = this.mapDataPointsToFrequencies(e.map((e) => e.value)),
-                        r = this.audioCtx.currentTime;
-                    this.gainNode.gain.setValueAtTime(0, r);
-                    for (let e = 0; e < o.length; e++) {
+                    const r = this.mapDataPointsToFrequencies(e.map((e) => e.value)),
+                        o = this.audioCtx.currentTime;
+                    this.gainNode.gain.setValueAtTime(0, o);
+                    for (let e = 0; e < r.length; e++) {
                         const i = a * e + t * e;
-                        this.playFrequencyAsTone(o[e], a, t, r, i);
+                        this.playFrequencyAsTone(r[e], a, t, o, i);
                     }
                 }
-                playFrequencyAsTone(e, a, t, o, r = 0) {
+                playFrequencyAsTone(e, a, t, r, o = 0) {
                     this.initialized || this.initialize();
-                    const i = (o ?? this.audioCtx.currentTime) + r;
+                    const i = (r ?? this.audioCtx.currentTime) + o;
                     this.gainNode.gain.setValueAtTime(0, i), this.gainNode.gain.linearRampToValueAtTime(1, i + 0.1), this.oscillatorNode.frequency.setValueAtTime(e, i), this.gainNode.gain.setValueAtTime(1, i + a - 0.1), this.gainNode.gain.exponentialRampToValueAtTime(0.001, i + a - 0.001), this.gainNode.gain.setValueAtTime(0, i + a);
                 }
             };
@@ -384,40 +383,40 @@
         675498: (e, a, t) => {
             "use strict";
             t.d(a, { W: () => i, x: () => n });
-            var o = t(85375),
-                r = t(94909);
+            var r = t(85375),
+                o = t(94909);
             const i = (e) => !0,
-                n = ({ cardId: e, cardType: a, converterOptions: t, data: i }) => ({ cardState: o.uW.DEFAULT, layout: { [o.uW.DEFAULT]: { size: "large" }, [o.uW.CONDENSED]: { size: "large" }, [o.uW.STATIC]: { size: "large" } }, card: { card_name: a, on_visibility: { scribe: "show" }, id: e, components: { [o.uW.DEFAULT]: [o.Fw.SPACE], [o.uW.STATIC]: [o.Fw.SPACE] }, destinations: {}, media_entities: {}, components_data: { [o.Fw.SPACE]: { type: "space", data: { id: (0, r.SI)(i, "string_value", "id"), clip_metadata: (0, r.SI)(i, "string_value", "clip_metadata") } } } } });
+                n = ({ cardId: e, cardType: a, converterOptions: t, data: i }) => ({ cardState: r.uW.DEFAULT, layout: { [r.uW.DEFAULT]: { size: "large" }, [r.uW.CONDENSED]: { size: "large" }, [r.uW.STATIC]: { size: "large" } }, card: { card_name: a, on_visibility: { scribe: "show" }, id: e, components: { [r.uW.DEFAULT]: [r.Fw.SPACE], [r.uW.STATIC]: [r.Fw.SPACE] }, destinations: {}, media_entities: {}, components_data: { [r.Fw.SPACE]: { type: "space", data: { id: (0, o.SI)(i, "string_value", "id"), clip_metadata: (0, o.SI)(i, "string_value", "clip_metadata") } } } } });
         },
         213836: (e, a, t) => {
             "use strict";
-            t.d(a, { Z: () => d });
-            var o = t(202784),
-                r = t(325686),
+            t.d(a, { Z: () => l });
+            var r = t(202784),
+                o = t(325686),
                 i = t(392237),
                 n = t(707816),
                 s = t(794294);
-            function d({ color: e = i.default.theme.colors.white, opacity: a = 0.15, scale: t, size: d, translate: c }) {
-                const _ = { backgroundColor: e, transform: [{ translate3d: `${c.x}px, ${c.y}px, 0` }, { scale: t }], opacity: a, ...(0, n.M8)(d) };
-                return o.createElement(r.Z, { style: [_, s.Z.transitionTransform, l.audioCircle] });
+            function l({ color: e = i.default.theme.colors.white, opacity: a = 0.15, scale: t, size: l, translate: c }) {
+                const _ = { backgroundColor: e, transform: [{ translate3d: `${c.x}px, ${c.y}px, 0` }, { scale: t }], opacity: a, ...(0, n.M8)(l) };
+                return r.createElement(o.Z, { style: [_, s.Z.transitionTransform, d.audioCircle] });
             }
-            const l = i.default.create((e) => ({ audioCircle: { position: "absolute", borderRadius: e.borderRadii.infinite, pointerEvents: "none" } }));
+            const d = i.default.create((e) => ({ audioCircle: { position: "absolute", borderRadius: e.borderRadii.infinite, pointerEvents: "none" } }));
         },
         230966: (e, a, t) => {
             "use strict";
-            t.d(a, { Z: () => l });
-            var o = t(202784),
-                r = t(7632),
+            t.d(a, { Z: () => d });
+            var r = t(202784),
+                o = t(7632),
                 i = t(707816),
                 n = t(213836),
                 s = t(840940),
-                d = t(822682);
-            function l(e) {
+                l = t(822682);
+            function d(e) {
                 const { size: a } = e,
                     t = a * c,
                     i = e.paused ? 0 : e.audioLevel,
-                    l = (0, r.X)(e.participantIndex);
-                return o.createElement(o.Fragment, null, o.createElement(s.Z, { color: l }), o.createElement(n.Z, { scale: _(i), size: t, translate: h(i, a) }), o.createElement(n.Z, { scale: _(i), size: t, translate: h(i, a) }), o.createElement(n.Z, { scale: _(i), size: t, translate: h(i, a) }), o.createElement(d.Z, { profileImageUrl: e.profileImageUrl, scale: u(i), size: t }));
+                    d = (0, o.X)(e.participantIndex);
+                return r.createElement(r.Fragment, null, r.createElement(s.Z, { color: d }), r.createElement(n.Z, { scale: _(i), size: t, translate: h(i, a) }), r.createElement(n.Z, { scale: _(i), size: t, translate: h(i, a) }), r.createElement(n.Z, { scale: _(i), size: t, translate: h(i, a) }), r.createElement(l.Z, { profileImageUrl: e.profileImageUrl, scale: u(i), size: t }));
             }
             const c = 0.692,
                 _ = (e) => 0.95 + (0.2 + (0, i.TN)(0.5)) * e,
@@ -426,27 +425,27 @@
         },
         272594: (e, a, t) => {
             "use strict";
-            t.d(a, { Z: () => l });
-            var o = t(202784),
-                r = t(822240),
+            t.d(a, { Z: () => d });
+            var r = t(202784),
+                o = t(822240),
                 i = t(707816),
                 n = t(213836);
-            const s = (0, r.Z)(0, 20),
-                d = 0.05;
-            function l(e) {
+            const s = (0, o.Z)(0, 20),
+                l = 0.05;
+            function d(e) {
                 const { color: a, size: t } = e,
-                    r = o.useRef({ scales: s.map(() => u(0)) }),
-                    l = e.paused ? 0 : e.audioLevel,
+                    o = r.useRef({ scales: s.map(() => u(0)) }),
+                    d = e.paused ? 0 : e.audioLevel,
                     _ = Math.floor((0, i.TN)(5, 2));
                 return (
-                    r.current.scales.forEach((e, a) => {
+                    o.current.scales.forEach((e, a) => {
                         if (a % _ != 0) return e;
-                        r.current.scales[a] = u(l);
+                        o.current.scales[a] = u(d);
                     }),
-                    o.createElement(
-                        o.Fragment,
+                    r.createElement(
+                        r.Fragment,
                         null,
-                        s.map((e) => o.createElement(n.Z, { color: a, key: e, opacity: d, scale: r.current.scales[e], size: t, translate: c })),
+                        s.map((e) => r.createElement(n.Z, { color: a, key: e, opacity: l, scale: o.current.scales[e], size: t, translate: c })),
                     )
                 );
             }
@@ -454,43 +453,43 @@
                 _ = { circleMinimumScale: 0.05, circleMaximumScale: 0.5, circlePositionOffset: 10, circleRandomNoise: 0.2, circleScaleRandomProportion: 0.1 };
             function u(e, a = _) {
                 const t = (e + (0, i.TN)(a.circleRandomNoise)) / (1 + a.circleRandomNoise),
-                    o = (0, i.TN)(1) * a.circleScaleRandomProportion + t * (1 - a.circleScaleRandomProportion);
-                return 1 + a.circleMinimumScale + o * (a.circleMaximumScale - a.circleMinimumScale);
+                    r = (0, i.TN)(1) * a.circleScaleRandomProportion + t * (1 - a.circleScaleRandomProportion);
+                return 1 + a.circleMinimumScale + r * (a.circleMaximumScale - a.circleMinimumScale);
             }
         },
         503195: (e, a, t) => {
             "use strict";
-            t.r(a), t.d(a, { default: () => d });
-            var o = t(202784),
-                r = t(890601),
+            t.r(a), t.d(a, { default: () => l });
+            var r = t(202784),
+                o = t(890601),
                 i = t(783427),
                 n = t(347101);
             const s = (e = {}) => {
                 const { direction: a } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M20.998 15.5V1.66l-12 3.6v10.21c-.607-.3-1.3-.47-2-.47-2.031 0-4 1.4-4 3.5s1.969 3.5 4 3.5 4-1.4 4-3.5V6.74l8-2.4v8.13c-.607-.3-1.3-.47-2-.47-2.031 0-4 1.4-4 3.5s1.969 3.5 4 3.5 4-1.4 4-3.5z" })) }, { writingDirection: a });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M20.998 15.5V1.66l-12 3.6v10.21c-.607-.3-1.3-.47-2-.47-2.031 0-4 1.4-4 3.5s1.969 3.5 4 3.5 4-1.4 4-3.5V6.74l8-2.4v8.13c-.607-.3-1.3-.47-2-.47-2.031 0-4 1.4-4 3.5s1.969 3.5 4 3.5 4-1.4 4-3.5z" })) }, { writingDirection: a });
             };
             s.metadata = { width: 24, height: 24 };
-            const d = s;
+            const l = s;
         },
         409600: (e, a, t) => {
             "use strict";
-            t.r(a), t.d(a, { default: () => d });
-            var o = t(202784),
-                r = t(890601),
+            t.r(a), t.d(a, { default: () => l });
+            var r = t(202784),
+                o = t(890601),
                 i = t(783427),
                 n = t(347101);
             const s = (e = {}) => {
                 const { direction: a } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M8 3v18M4 9v6m8-8v10m4-12v14m4-10v6", stroke: "currentColor", strokeWidth: "2" })) }, { writingDirection: a });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M8 3v18M4 9v6m8-8v10m4-12v14m4-10v6", stroke: "currentColor", strokeWidth: "2" })) }, { writingDirection: a });
             };
             s.metadata = { width: 24, height: 24 };
-            const d = s;
+            const l = s;
         },
         447486: (e, a, t) => {
             "use strict";
             t.d(a, { Z: () => n });
-            var o = t(22525),
-                r = t(789403),
+            var r = t(22525),
+                o = t(789403),
                 i = t(123751);
             class n {
                 constructor(e) {
@@ -500,21 +499,21 @@
                     return this.httpClient
                         ? ((e, a) => {
                               if (!s(a)) return Promise.resolve(a);
-                              const t = (0, o.Uf)(a, 0),
-                                  r = ((e) => {
+                              const t = (0, r.Uf)(a, 0),
+                                  o = ((e) => {
                                       const a = e.id,
                                           t = e.mediaKey,
-                                          o = e.acquisitionParams?.clip_id,
-                                          r = { broadcastId: a, contentId: t, contentType: "broadcast", displayType: "content", expandedUrl: `https://twitter.com/i/spaces/${a}`, playbackType: "application/x-mpegURL", isLive: e.isLive ?? !0, shouldLoop: !1, unavailableInPeriscope: !0 };
-                                      return o && ((r.isLive = !1), (r.expandedUrl = `https://twitter.com/i/spaces/${a}?clipID=${o}`), (r.shouldLoop = !0)), r;
+                                          r = e.acquisitionParams?.clip_id,
+                                          o = { broadcastId: a, contentId: t, contentType: "broadcast", displayType: "content", expandedUrl: `https://twitter.com/i/spaces/${a}`, playbackType: "application/x-mpegURL", isLive: e.isLive ?? !0, shouldLoop: !1, unavailableInPeriscope: !0 };
+                                      return r && ((o.isLive = !1), (o.expandedUrl = `https://twitter.com/i/spaces/${a}?clipID=${r}`), (o.shouldLoop = !0)), o;
                                   })(a.source);
-                              return Promise.resolve({ ...a, client: "web", tracks: [{ ...t, ...r, id: 0 }], currentTrackId: 0, source: { ...a.source, trackId: 0 } });
+                              return Promise.resolve({ ...a, client: "web", tracks: [{ ...t, ...o, id: 0 }], currentTrackId: 0, source: { ...a.source, trackId: 0 } });
                           })(this.httpClient, e)
-                        : Promise.reject(r.Z.MEDIA_TEARDOWN_ERROR);
+                        : Promise.reject(o.Z.MEDIA_TEARDOWN_ERROR);
                 }
             }
             const s = (e) => e.source && e.source.type === i.P.AUDIO_SPACE;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-6107ac1a.8e041e6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-6107ac1a.a9cfabaa.js.map

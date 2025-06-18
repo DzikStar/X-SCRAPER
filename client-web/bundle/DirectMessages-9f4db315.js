@@ -324,7 +324,7 @@
                         .replace(/^(\n)?\s{0,3}>\s?/gm, "$1")
                         .replace(/^\s{1,2}\[(.*?)\]: (\S+)( ".*?")?\s*$/g, "")
                         .replace(/^(\n)?\s{0,}#{1,6}\s*( (.+))? +#+$|^(\n)?\s{0,}#{1,6}\s*( (.+))?$/gm, "$1$3$4$6")
-                        .replace(/([\*]+)(\S)(.*?\S)??\1/g, "$2$3")
+                        .replace(/(\*+)(.*?)\1/g, "$2")
                         .replace(/(^|\W)([_]+)(\S)(.*?\S)??\2($|\W)/g, "$1$3$4$5")
                         .replace(/(`{3,})(.*?)\1/gm, "$2")
                         .replace(/`(.+?)`/g, "$1")
@@ -816,4 +816,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-9f4db315.025b5cca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-9f4db315.2d8b41ea.js.map

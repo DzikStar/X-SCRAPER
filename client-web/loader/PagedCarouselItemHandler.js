@@ -30,27 +30,27 @@
                 },
                 b = (0, m.Z)()
                     .propsFromState(() => ({ community: h, hydratedTweet: w.Z.createHydratedTweetSelector(C) }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, u.zr)("QUOTE_TWEET_CONTAINER"), fetchCommunityIfNeeded: p.ZP.fetchOneIfNeeded }))(({ community: e, createLocalApiErrorHandler: t, fetchCommunityIfNeeded: r, hydratedTweet: u, onAvatarClick: m, onMediaClick: p, onPress: w, onScreenNameClick: C, tweetId: h, withBirdwatchPivot: b = !0, ..._ }) => {
-                    const { featureSwitches: y, viewerUserId: E } = n.useContext(d.rC),
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, u.zr)("QUOTE_TWEET_CONTAINER"), fetchCommunityIfNeeded: p.ZP.fetchOneIfNeeded }))(({ community: e, createLocalApiErrorHandler: t, fetchCommunityIfNeeded: r, hydratedTweet: u, onAvatarClick: m, onMediaClick: p, onPress: w, onScreenNameClick: C, tweetId: h, withBirdwatchPivot: b = !0, ...y }) => {
+                    const { featureSwitches: _, viewerUserId: E } = n.useContext(d.rC),
                         x = (0, l.z)(),
                         g = u?.community_id_str;
                     n.useEffect(() => {
                         g && (0, c.Z)(e) && r(g).catch(t());
                     }, [e, g, t, r]);
-                    const k = n.useCallback(
+                    const v = n.useCallback(
                             (e) => {
                                 x.scribeAction("click"), w && w(e);
                             },
                             [w, x],
                         ),
-                        v = !!b,
-                        T = u && (0, i.D$)(u, E, e),
-                        Z = T && (0, i.rl)(T);
-                    return n.createElement(s.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => y.isTrue("responsive_web_edit_tweet_enabled") || y.isTrue("subscriptions_feature_labs_1004") } }, n.createElement(a.Z, (0, o.Z)({}, _, { loggedInUserId: E, onAvatarClick: m, onMediaClick: p, onPress: k, onScreenNameClick: C, shouldShowAltLabelAlways: !0, socialContextProps: Z, tweet: u, withBirdwatchPivot: v })));
+                        Z = !!b,
+                        f = u && (0, i.D$)(u, E, e),
+                        k = f && (0, i.rl)(f);
+                    return n.createElement(s.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => _.isTrue("responsive_web_edit_tweet_enabled") || _.isTrue("subscriptions_feature_labs_1004") } }, n.createElement(a.Z, (0, o.Z)({}, y, { loggedInUserId: E, onAvatarClick: m, onMediaClick: p, onPress: v, onScreenNameClick: C, shouldShowAltLabelAlways: !0, socialContextProps: k, tweet: u, withBirdwatchPivot: Z })));
                 });
         },
         562154: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => k });
+            r.r(t), r.d(t, { default: () => v });
             var o = r(459643),
                 n = r(942893),
                 s = r(351322),
@@ -80,12 +80,12 @@
                 C = r(301758),
                 h = r(71620),
                 b = r(668214),
-                _ = r(836255),
-                y = r(960919);
+                y = r(836255),
+                _ = r(960919);
             const E = (e, t) => {
                     const { entry: r } = t,
                         o = r.content.content.pagedCarouselFeedbackItem ? r.content.content.pagedCarouselFeedbackItem.content.tweet.id : void 0;
-                    return o ? _.Z.select(e, o) : void 0;
+                    return o ? y.Z.select(e, o) : void 0;
                 },
                 x = (e) => {
                     const { applyReactionInstructions: t, createLocalApiErrorHandler: r, entry: o, processCallback: n, tweet: s } = e,
@@ -102,8 +102,8 @@
                 },
                 g = (0, b.Z)()
                     .propsFromState(() => ({ tweet: E }))
-                    .propsFromActions(({ module: e }) => ({ applyReactionInstructions: e.applyReactionInstructions, createLocalApiErrorHandler: (0, h.zr)("PAGED_CAROUSEL_FEEDBACK_ITEM"), processCallback: y.Z }))(a.memo(x)),
-                k = s.iH({ component: g, getScribeDataItem: (e) => n.Z.getPagedCarouselTweetURTEntryItem(e), shouldDisplayBorder: (0, o.Z)(!1), isFocusable: (0, o.Z)(!0) }).getHandler();
+                    .propsFromActions(({ module: e }) => ({ applyReactionInstructions: e.applyReactionInstructions, createLocalApiErrorHandler: (0, h.zr)("PAGED_CAROUSEL_FEEDBACK_ITEM"), processCallback: _.Z }))(a.memo(x)),
+                v = s.iH({ component: g, getScribeDataItem: (e) => n.Z.getPagedCarouselTweetURTEntryItem(e), shouldDisplayBorder: (0, o.Z)(!1), isFocusable: (0, o.Z)(!0) }).getHandler();
         },
         988566: (e, t, r) => {
             r.d(t, { D$: () => c, Du: () => d, GK: () => l, Iv: () => m, pz: () => p, rl: () => u });
@@ -147,6 +147,13 @@
             c.metadata = { width: 24, height: 24 };
             const i = c;
         },
+        465233: (e, t, r) => {
+            r.d(t, { Z: () => n });
+            var o = r(716406);
+            function n(e) {
+                return "object" != typeof e || null === e ? e : Array.isArray(e) ? e.map(n) : (0, o.Z)(e, (e) => n(e));
+            }
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.PagedCarouselItemHandler.e894c46a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.PagedCarouselItemHandler.fe65261a.js.map

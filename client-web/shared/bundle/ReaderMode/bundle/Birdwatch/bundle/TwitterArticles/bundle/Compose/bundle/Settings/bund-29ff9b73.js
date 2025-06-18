@@ -1,9 +1,9 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73", "bundle.DirectMessages-8486177b", "bundle.UserAvatar-8486177b"],
+    ["shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73", "bundle.GrokDrawer-8486177b", "bundle.DirectMessages-8486177b", "bundle.UserAvatar-8486177b"],
     {
         389071: (e, t, s) => {
-            s.d(t, { BU: () => K, Es: () => E, F0: () => te, F9: () => q, JE: () => x, JU: () => T, Ki: () => V, NV: () => N, OR: () => U, Pl: () => re, Pt: () => P, SJ: () => se, SL: () => Q, Tu: () => O, UM: () => k, Uo: () => ae, V$: () => w, X4: () => X, YJ: () => W, bD: () => b, bv: () => H, en: () => ee, f: () => S, hi: () => D, j1: () => J, lo: () => ne, ni: () => z, pZ: () => Z, t5: () => G, uF: () => F, uX: () => L, uz: () => j, v0: () => $, vf: () => B, zO: () => M });
+            s.d(t, { BU: () => D, Es: () => E, F0: () => te, F9: () => q, JE: () => x, JU: () => T, Ki: () => V, NV: () => N, OR: () => w, Pl: () => re, Pt: () => P, SJ: () => se, SL: () => Q, Tu: () => O, UM: () => k, Uo: () => ae, V$: () => U, X4: () => X, YJ: () => W, bD: () => b, bv: () => H, en: () => ee, f: () => S, hi: () => K, j1: () => J, lo: () => ne, ni: () => z, pZ: () => Z, t5: () => G, uF: () => F, uX: () => L, uz: () => j, v0: () => $, vf: () => B, zO: () => M });
             s(136728), s(571372), s(574858);
             var n = s(726426),
                 r = s.n(n),
@@ -384,7 +384,7 @@
                         return { ...e, currentResponse: { ...e.currentResponse, upsell: t.payload } };
                     case m.Xi: {
                         const s = t.payload,
-                            n = e.currentResponse?.cardAttachments || [],
+                            n = [...(e.currentResponse?.cardAttachments || [])],
                             r = n.findIndex((e) => JSON.stringify(e) === JSON.stringify(s));
                         return r < 0 ? n.push(s) : (n[r] = s), { ...e, currentResponse: { ...e.currentResponse, cardAttachments: n } };
                     }
@@ -526,10 +526,10 @@
             function H(e) {
                 return e[m.Yf].conversationHistory.items;
             }
-            function U(e) {
+            function w(e) {
                 return e[m.Yf].pinnedConversations.items;
             }
-            function w(e) {
+            function U(e) {
                 return e[m.Yf].conversationHistory.cursor;
             }
             function N(e) {
@@ -538,10 +538,10 @@
             function x(e) {
                 return e[m.Yf].fetchHistoryStatus;
             }
-            function K(e) {
+            function D(e) {
                 return e[m.Yf].fetchHistoryStatus;
             }
-            function D(e) {
+            function K(e) {
                 return e[m.Yf].mediaHistory.status;
             }
             function O(e) {
@@ -786,4 +786,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73.5fde4aea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73.5cfa078a.js.map

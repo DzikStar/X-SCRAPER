@@ -1,32 +1,160 @@
-"use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.AccountAnalytics-6107ac1a"],
+    ["bundle.AccountAnalytics-6107ac1a", "ondemand.Dropdown"],
     {
+        797553: (e, t, r) => {
+            "use strict";
+            r.r(t), r.d(t, { default: () => _ });
+            var n = r(807896),
+                o = r(202784),
+                i = r(878052),
+                s = r(325686),
+                l = r(666536),
+                a = r(815858),
+                c = r(67877),
+                d = r(743618),
+                u = r(745153),
+                h = r(666305),
+                p = r(667115),
+                m = r(175993),
+                f = r(365023),
+                v = r(292627),
+                g = r(224162),
+                b = r(386802),
+                w = r(537392),
+                y = r(392237);
+            const E = y.default.create((e) => ({ rootNarrow: { maxWidth: "75%" }, rootWide: { maxWidth: `calc(${e.spaces.space64} * 6)` }, anchor: y.default.absoluteFillObject, mask: { ...y.default.absoluteFillObject, position: "fixed" }, bodyRectHelper: { ...y.default.absoluteFillObject, bottom: void 0 }, content: { borderRadius: e.borderRadii.large, position: "absolute", overflow: "hidden", backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.medium }, contentInitialRender: { position: "fixed", opacity: 0 }, contentFixed: { position: "fixed", overflowY: "auto", overscrollBehavior: "contain" } }));
+            class _ extends o.Component {
+                constructor(e, t) {
+                    super(e, t),
+                        (this._handleAnimateComplete = () => {
+                            const { onAnimateComplete: e } = this.props;
+                            e && e();
+                        }),
+                        (this._handleEsc = (e) => {
+                            const { onDismiss: t } = this.props,
+                                { altKey: r, ctrlKey: n, key: o, metaKey: i } = e;
+                            !(r || n || i) && "Escape" === o && t();
+                        }),
+                        (this._receiveBodyRectHelperRef = (e) => {
+                            e && this._bodyRectHelperNode !== e && ((this._bodyRectHelperNode = e), this._scheduleUpdate());
+                        }),
+                        (this._receiveAnchorRef = (e) => {
+                            e && this._anchorNode !== e && ((this._anchorNode = e), this._scheduleUpdate());
+                        }),
+                        (this._receiveContentRef = (e) => {
+                            e && this._contentNode !== e && ((this._contentNode = e), this._scheduleUpdate(), this._observe(e));
+                        }),
+                        (this._observe = (e) => {
+                            const t = () => {
+                                this._scheduleUpdate();
+                            };
+                            h.Z.observe(e, t),
+                                this._disposeResizeObserver?.(),
+                                (this._disposeResizeObserver = () => {
+                                    h.Z.unobserve(e, t), (this._disposeResizeObserver = void 0);
+                                });
+                        }),
+                        (this._updatePosition = () => {
+                            if (!(this._mounted && (this._anchorNode || this.props.position) && this._contentNode && this._contentNode instanceof window.HTMLElement && this._bodyRectHelperNode && this._bodyRectHelperNode instanceof window.HTMLElement)) return;
+                            const e = "rtl" === this._languageDirection,
+                                t = this._contentNode.scrollHeight,
+                                r = this._contentNode.scrollWidth,
+                                { left: n, top: o, width: i } = this._bodyRectHelperNode.getBoundingClientRect(),
+                                { height: s, width: l } = (0, w.iv)();
+                            let a = { left: 0, top: 0, height: 0, width: 0 };
+                            this.props.position ? (a = { ...a, ...this.props.position }) : this._anchorNode && this._anchorNode instanceof window.HTMLElement && (a = this._anchorNode.getBoundingClientRect());
+                            const { height: c, left: d, top: u, width: h } = a,
+                                p = l - i,
+                                m = d - n,
+                                f = u - o,
+                                v = d + h >= r,
+                                g = u + c >= t,
+                                b = l - d >= r,
+                                y = s - u >= t,
+                                E = l >= d + h / 2 + r / 2 && d >= r / 2 - h / 2,
+                                _ = this.props.preferredVerticalOrientation,
+                                N = ((e, t) => (e && "center" !== t ? ("left" === t ? "right" : "left") : t))(e, this.props.preferredHorizontalOrientation),
+                                C = this.state.verticalOrientation || (({ canOrientDown: e, canOrientUp: t, verticalPreference: r }) => ((t && e) || (!t && !e) ? r : t ? "up" : "down"))({ verticalPreference: _, canOrientUp: g, canOrientDown: y }),
+                                D = this.state.horizontalOrientation || (({ canOrientCenter: e, canOrientLeft: t, canOrientRight: r, horizontalPreference: n }) => ("center" === n && e ? "center" : !t || ("left" !== n && r) ? "right" : "left"))({ horizontalPreference: N, canOrientLeft: v, canOrientRight: b, canOrientCenter: E }),
+                                Z = this.props.isFixed ? d : m,
+                                O = this.props.isFixed ? u : f,
+                                F = "up" === C ? O + c - t : O;
+                            let M = l - Z - h - p;
+                            "center" === D && (M = l - Z - h / 2 - r / 2 - p), "right" === D && (M = l - Z - r - p), this.setState({ top: Math.max(F, 0), right: M, verticalOrientation: C, horizontalOrientation: D });
+                        }),
+                        (this.state = Object.freeze({})),
+                        (this._scheduleUpdate = (0, c.Z)(this._updatePosition, window.requestAnimationFrame)),
+                        (this._scheduleDebouncedUpdate = (0, l.Z)(this._scheduleUpdate, 250));
+                }
+                componentDidMount() {
+                    (this._mounted = !0), i.Z.addEventListener("change", this._scheduleDebouncedUpdate);
+                }
+                componentWillUnmount() {
+                    (this._mounted = !1), this._disposeResizeObserver?.(), i.Z.removeEventListener("change", this._scheduleDebouncedUpdate);
+                }
+                render() {
+                    const { animateInDuration: e, animateType: t, children: r, contentStyle: i, disableMask: l, isFixed: c, onDismiss: h, preventFocusShift: _, withKeyboardNavigation: N } = this.props,
+                        { right: C, top: D, verticalOrientation: Z } = this.state,
+                        O = void 0 === D,
+                        F = N ? d.Z : o.Fragment,
+                        M = `calc(100vh - ${D || 0}px)`,
+                        R = (d) => {
+                            const u = "rtl" === d,
+                                p = [E.content, O && E.contentInitialRender, c && [E.contentFixed, { maxHeight: M }], { top: D, end: u ? void 0 : C, start: u ? C : void 0 }, i];
+                            return o.createElement(
+                                o.Fragment,
+                                null,
+                                l ? null : o.createElement(s.Z, { onClick: h, style: E.mask }),
+                                o.createElement(s.Z, { ref: this._receiveBodyRectHelperRef, style: E.bodyRectHelper }),
+                                o.createElement(w.ZP, null, ({ windowWidth: i }) => o.createElement(s.Z, { onKeyUp: this._handleEsc, ref: this._receiveContentRef, role: "menu", style: [i < y.default.theme.breakpoints.medium ? E.rootNarrow : E.rootWide, p] }, O && "slide" === t ? r : o.createElement(a.Z, { animateMount: "up" !== Z, duration: e, onAnimateComplete: this._handleAnimateComplete, show: !0, type: t }, ({ isAnimating: e }) => o.createElement(f.Z, { id: "Dropdown", minimizeReporting: e }, (e, t) => o.createElement(s.Z, (0, n.Z)({ ref: e() }, t({})), r))))),
+                            );
+                        };
+                    return o.createElement(
+                        g.ZP.Consumer,
+                        null,
+                        ({ direction: e }) => (
+                            (this._languageDirection = e),
+                            o.createElement(
+                                s.Z,
+                                { ref: this._receiveAnchorRef, style: E.anchor },
+                                o.createElement(
+                                    v.Z.Dropdown,
+                                    null,
+                                    o.createElement(m.Z.Consumer, null, (t) => o.createElement(b.Z.Consumer, null, ({ isModal: r }) => o.createElement(p.Z, { history: t, isModal: r, onDismiss: h }, _ ? R(e) : o.createElement(u.Z, null, o.createElement(F, null, R(e)))))),
+                                ),
+                            )
+                        ),
+                    );
+                }
+            }
+            _.defaultProps = { preferredHorizontalOrientation: "left", preferredVerticalOrientation: "down", animateType: "slide", animateInDuration: "normal", withKeyboardNavigation: !0 };
+        },
         98538: (e, t, r) => {
-            r.d(t, { Z: () => g });
+            "use strict";
+            r.d(t, { Z: () => p });
             var n = r(202784),
                 o = r(325686),
-                l = r(731708),
-                a = r(891198),
-                s = r(280278),
-                c = r(392237);
-            const i = "subtext1",
-                u = n.createContext({ onMedia: !1 });
-            class d extends n.Component {
+                i = r(731708),
+                s = r(891198),
+                l = r(280278),
+                a = r(392237);
+            const c = "subtext1",
+                d = n.createContext({ onMedia: !1 });
+            class u extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._getHoverLabel = () => {
                             const { count: e } = this.props;
                             if (!e) return;
-                            return (0, a.Gb)(e) !== (0, a.wl)(e) ? { label: (0, a.Gb)(e) } : void 0;
+                            return (0, s.Gb)(e) !== (0, s.wl)(e) ? { label: (0, s.Gb)(e) } : void 0;
                         });
                 }
                 render() {
                     const { children: e, link: t, onMedia: r, onPress: o } = this.props;
-                    return n.createElement(l.ZP, { color: r ? "white" : "text", hoverLabel: this._getHoverLabel(), link: t, onClick: o }, n.createElement(u.Provider, { value: { onMedia: r } }, e));
+                    return n.createElement(i.ZP, { color: r ? "white" : "text", hoverLabel: this._getHoverLabel(), link: t, onClick: o }, n.createElement(d.Provider, { value: { onMedia: r } }, e));
                 }
             }
-            (d.Group = (e) =>
+            (u.Group = (e) =>
                 n.createElement(
                     o.Z,
                     { style: [h.row, e.style] },
@@ -34,35 +162,36 @@
                         .filter(Boolean)
                         .map((e, t, r) => n.createElement(o.Z, { key: t, style: t < r.length - 1 && h.groupItemNonLast }, e)),
                 )),
-                (d.Label = ({ children: e, style: t }) => n.createElement(u.Consumer, null, ({ onMedia: r }) => n.createElement(l.ZP, { children: e, color: r ? "white" : "gray700", size: i, style: t }))),
-                (d.Value = ({ animated: e, children: t, count: r, style: o, weight: a = "bold" }) => n.createElement(u.Consumer, null, ({ onMedia: c }) => (e ? n.createElement(s.ZP, { children: t, count: r, size: i, style: o, weight: a }) : n.createElement(l.ZP, { children: t, color: c ? "white" : "text", size: i, style: o, weight: a }))));
-            const h = c.default.create((e) => ({ row: { flexDirection: "row", flexWrap: "wrap", flex: 1 }, groupItemNonLast: { marginEnd: e.spaces.space20 } })),
-                g = d;
+                (u.Label = ({ children: e, style: t }) => n.createElement(d.Consumer, null, ({ onMedia: r }) => n.createElement(i.ZP, { children: e, color: r ? "white" : "gray700", size: c, style: t }))),
+                (u.Value = ({ animated: e, children: t, count: r, style: o, weight: s = "bold" }) => n.createElement(d.Consumer, null, ({ onMedia: a }) => (e ? n.createElement(l.ZP, { children: t, count: r, size: c, style: o, weight: s }) : n.createElement(i.ZP, { children: t, color: a ? "white" : "text", size: c, style: o, weight: s }))));
+            const h = a.default.create((e) => ({ row: { flexDirection: "row", flexWrap: "wrap", flex: 1 }, groupItemNonLast: { marginEnd: e.spaces.space20 } })),
+                p = u;
         },
         819483: (e, t, r) => {
-            r.d(t, { Z: () => d });
+            "use strict";
+            r.d(t, { Z: () => u });
             var n = r(202784),
                 o = r(325686),
-                l = r(123588),
-                a = r(212145),
-                s = r(382880),
-                c = r(516951),
-                i = r(731708),
-                u = r(392237);
-            const d = (e) => {
-                    const { columns: t, onNearEnd: r, onRowClick: u, rows: d, setSortOptions: g, sortOptions: f } = e,
-                        m = n.useRef(null),
+                i = r(123588),
+                s = r(212145),
+                l = r(382880),
+                a = r(516951),
+                c = r(731708),
+                d = r(392237);
+            const u = (e) => {
+                    const { columns: t, onNearEnd: r, onRowClick: d, rows: u, setSortOptions: p, sortOptions: m } = e,
+                        f = n.useRef(null),
                         v = n.useMemo(() => t.reduce((e, t) => e + t.width, 0), [t]),
-                        b = n.useMemo(() => (0, s.Z)(r || c.Z), [r]);
+                        g = n.useMemo(() => (0, l.Z)(r || a.Z), [r]);
                     n.useEffect(() => {
-                        if (d.length) {
+                        if (u.length) {
                             const e = new IntersectionObserver(
                                     (e) => {
-                                        e && e.length > 0 && e[0].isIntersecting && b();
+                                        e && e.length > 0 && e[0].isIntersecting && g();
                                     },
                                     { threshold: 1 },
                                 ),
-                                { current: t } = m || {};
+                                { current: t } = f || {};
                             return (
                                 t && e.observe(t),
                                 () => {
@@ -70,7 +199,7 @@
                                 }
                             );
                         }
-                    }, [m, b, d.length]);
+                    }, [f, g, u.length]);
                     return n.createElement(
                         o.Z,
                         { style: h.tableContainer },
@@ -90,13 +219,13 @@
                                                 key: e.field,
                                                 onClick: () =>
                                                     ((e, t = !1) => {
-                                                        if (!t || !g) return;
-                                                        g({ sortField: e, sortOrder: e === f?.sortField ? ("ASCENDING" === f?.sortOrder ? "DESCENDING" : "ASCENDING") : "DESCENDING" });
+                                                        if (!t || !p) return;
+                                                        p({ sortField: e, sortOrder: e === m?.sortField ? ("ASCENDING" === m?.sortOrder ? "DESCENDING" : "ASCENDING") : "DESCENDING" });
                                                     })(e.field, e.sortable),
                                                 style: { width: `${Math.floor((100 * e.width) / v)}%`, ...h.tableHeading },
                                             },
-                                            n.createElement(i.ZP, { weight: "bold" }, e.label),
-                                            e.field === f?.sortField && ("ASCENDING" === f?.sortOrder ? n.createElement(l.default, null) : n.createElement(a.default, null)),
+                                            n.createElement(c.ZP, { weight: "bold" }, e.label),
+                                            e.field === m?.sortField && ("ASCENDING" === m?.sortOrder ? n.createElement(i.default, null) : n.createElement(s.default, null)),
                                         ),
                                     ),
                                 ),
@@ -104,64 +233,112 @@
                             n.createElement(
                                 "tbody",
                                 null,
-                                d.map((e, r) =>
+                                u.map((e, r) =>
                                     n.createElement(
                                         "tr",
-                                        { key: r, onClick: () => u(e), ref: r === d.length - 5 ? m : null, style: { ...h.row, ...(u && { cursor: "pointer" }) } },
-                                        t.map((t, o) => n.createElement("td", { key: `${r}-${o}`, style: h.cell }, n.createElement(i.ZP, null, e[t.field]))),
+                                        { key: r, onClick: () => d(e), ref: r === u.length - 5 ? f : null, style: { ...h.row, ...(d && { cursor: "pointer" }) } },
+                                        t.map((t, o) => n.createElement("td", { key: `${r}-${o}`, style: h.cell }, n.createElement(c.ZP, null, e[t.field]))),
                                     ),
                                 ),
                             ),
                         ),
                     );
                 },
-                h = u.default.create((e) => ({ tableContainer: { overflowY: "auto", height: "100%" }, table: { borderCollapse: "collapse" }, tableHeading: { textAlign: "start", padding: e.spaces.space8, position: "sticky", top: 0, backgroundColor: e.colors.gray0, zIndex: 1 }, row: { borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid" }, cell: { padding: e.spaces.space8, fontVariantNumeric: "tabular-nums" } }));
+                h = d.default.create((e) => ({ tableContainer: { overflowY: "auto", height: "100%" }, table: { borderCollapse: "collapse" }, tableHeading: { textAlign: "start", padding: e.spaces.space8, position: "sticky", top: 0, backgroundColor: e.colors.gray0, zIndex: 1 }, row: { borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid" }, cell: { padding: e.spaces.space8, fontVariantNumeric: "tabular-nums" } }));
+        },
+        67877: (e, t, r) => {
+            "use strict";
+            r.d(t, { Z: () => n });
+            const n = (e, t) => {
+                let r = null;
+                const n = () => {
+                    (r = null), e();
+                };
+                return () => (r || (r = t(n)), r);
+            };
         },
         183806: (e, t, r) => {
+            "use strict";
             r.d(t, { Z: () => n });
             const n = r(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
         155353: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => c });
+            "use strict";
+            r.r(t), r.d(t, { default: () => a });
             var n = r(202784),
                 o = r(890601),
-                l = r(783427),
-                a = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: t });
+                i = r(783427),
+                s = r(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: t });
             };
-            s.metadata = { width: 24, height: 24 };
-            const c = s;
+            l.metadata = { width: 24, height: 24 };
+            const a = l;
+        },
+        666536: (e, t, r) => {
+            "use strict";
+            r.d(t, { Z: () => i });
+            var n = r(936386),
+                o = r.n(n);
+            const i = (e, t, r) => o()(e, t, r);
+        },
+        936386: (e) => {
+            function t(e, t, r) {
+                var n, o, i, s, l;
+                function a() {
+                    var c = Date.now() - s;
+                    c < t && c >= 0 ? (n = setTimeout(a, t - c)) : ((n = null), r || ((l = e.apply(i, o)), (i = o = null)));
+                }
+                null == t && (t = 100);
+                var c = function () {
+                    (i = this), (o = arguments), (s = Date.now());
+                    var c = r && !n;
+                    return n || (n = setTimeout(a, t)), c && ((l = e.apply(i, o)), (i = o = null)), l;
+                };
+                return (
+                    (c.clear = function () {
+                        n && (clearTimeout(n), (n = null));
+                    }),
+                    (c.flush = function () {
+                        n && ((l = e.apply(i, o)), (i = o = null), clearTimeout(n), (n = null));
+                    }),
+                    c
+                );
+            }
+            (t.debounce = t), (e.exports = t);
         },
         544044: (e, t, r) => {
-            r.d(t, { T: () => s });
+            "use strict";
+            r.d(t, { T: () => l });
             var n = r(150729),
                 o = r(595873);
-            function l(e, t) {
+            function i(e, t) {
                 const r = +(0, n.Q)(e);
                 return (0, o.L)(e, r + t);
             }
-            var a = r(31418);
-            function s(e, t) {
-                return l(e, t * a.vh);
+            var s = r(31418);
+            function l(e, t) {
+                return i(e, t * s.vh);
             }
         },
         777617: (e, t, r) => {
-            r.d(t, { z: () => l });
+            "use strict";
+            r.d(t, { z: () => i });
             var n = r(150729),
                 o = r(595873);
-            function l(e, t) {
+            function i(e, t) {
                 const r = (0, n.Q)(e);
                 if (isNaN(t)) return (0, o.L)(e, NaN);
                 if (!t) return r;
-                const l = r.getDate(),
-                    a = (0, o.L)(e, r.getTime());
-                a.setMonth(r.getMonth() + t + 1, 0);
-                return l >= a.getDate() ? a : (r.setFullYear(a.getFullYear(), a.getMonth(), l), r);
+                const i = r.getDate(),
+                    s = (0, o.L)(e, r.getTime());
+                s.setMonth(r.getMonth() + t + 1, 0);
+                return i >= s.getDate() ? s : (r.setFullYear(s.getFullYear(), s.getMonth(), i), r);
             }
         },
         991809: (e, t, r) => {
+            "use strict";
             r.d(t, { j: () => o });
             var n = r(178016);
             function o(e, t) {
@@ -170,6 +347,7 @@
             }
         },
         112385: (e, t, r) => {
+            "use strict";
             r.d(t, { B: () => o });
             var n = r(777617);
             function o(e, t) {
@@ -177,6 +355,7 @@
             }
         },
         513761: (e, t, r) => {
+            "use strict";
             r.d(t, { T: () => o });
             var n = r(150729);
             function o(e, t) {
@@ -186,6 +365,7 @@
             }
         },
         364597: (e, t, r) => {
+            "use strict";
             r.d(t, { i: () => o });
             var n = r(150729);
             function o(e) {
@@ -194,6 +374,7 @@
             }
         },
         428332: (e, t, r) => {
+            "use strict";
             r.d(t, { g: () => o });
             var n = r(560307);
             function o(e) {
@@ -201,6 +382,7 @@
             }
         },
         242359: (e, t, r) => {
+            "use strict";
             r.d(t, { V: () => o });
             var n = r(150729);
             function o(e) {
@@ -210,19 +392,21 @@
             }
         },
         560307: (e, t, r) => {
-            r.d(t, { v: () => l });
+            "use strict";
+            r.d(t, { v: () => i });
             var n = r(150729),
                 o = r(803066);
-            function l(e, t) {
+            function i(e, t) {
                 const r = (0, o.j)(),
-                    l = t?.weekStartsOn ?? t?.locale?.options?.weekStartsOn ?? r.weekStartsOn ?? r.locale?.options?.weekStartsOn ?? 0,
-                    a = (0, n.Q)(e),
-                    s = a.getDay(),
-                    c = 6 + (s < l ? -7 : 0) - (s - l);
-                return a.setDate(a.getDate() + c), a.setHours(23, 59, 59, 999), a;
+                    i = t?.weekStartsOn ?? t?.locale?.options?.weekStartsOn ?? r.weekStartsOn ?? r.locale?.options?.weekStartsOn ?? 0,
+                    s = (0, n.Q)(e),
+                    l = s.getDay(),
+                    a = 6 + (l < i ? -7 : 0) - (l - i);
+                return s.setDate(s.getDate() + a), s.setHours(23, 59, 59, 999), s;
             }
         },
         889957: (e, t, r) => {
+            "use strict";
             r.d(t, { h: () => o });
             var n = r(150729);
             function o(e) {
@@ -230,6 +414,7 @@
             }
         },
         323568: (e, t, r) => {
+            "use strict";
             r.d(t, { Q: () => o });
             var n = r(150729);
             function o(e) {
@@ -237,29 +422,31 @@
             }
         },
         242268: (e, t, r) => {
-            r.d(t, { R: () => u });
+            "use strict";
+            r.d(t, { R: () => d });
             var n = r(31418),
                 o = r(262014),
-                l = r(537796);
-            function a(e, t, r) {
-                const a = (0, o.z)(e, r),
-                    s = (0, o.z)(t, r),
-                    c = +a - (0, l.D)(a),
-                    i = +s - (0, l.D)(s);
-                return Math.round((c - i) / n.jE);
+                i = r(537796);
+            function s(e, t, r) {
+                const s = (0, o.z)(e, r),
+                    l = (0, o.z)(t, r),
+                    a = +s - (0, i.D)(s),
+                    c = +l - (0, i.D)(l);
+                return Math.round((a - c) / n.jE);
             }
-            var s = r(150729);
-            function c(e) {
-                const t = (0, s.Q)(e),
+            var l = r(150729);
+            function a(e) {
+                const t = (0, l.Q)(e),
                     r = t.getMonth();
                 return t.setFullYear(t.getFullYear(), r + 1, 0), t.setHours(0, 0, 0, 0), t;
             }
-            var i = r(200210);
-            function u(e, t) {
-                return a(c(e), (0, i.N)(e), t) + 1;
+            var c = r(200210);
+            function d(e, t) {
+                return s(a(e), (0, c.N)(e), t) + 1;
             }
         },
         251461: (e, t, r) => {
+            "use strict";
             r.d(t, { A: () => o });
             var n = r(150729);
             function o(e, t) {
@@ -269,6 +456,7 @@
             }
         },
         871502: (e, t, r) => {
+            "use strict";
             r.d(t, { R: () => o });
             var n = r(150729);
             function o(e, t) {
@@ -276,6 +464,7 @@
             }
         },
         395121: (e, t, r) => {
+            "use strict";
             r.d(t, { L: () => o });
             var n = r(150729);
             function o(e) {
@@ -283,6 +472,7 @@
             }
         },
         251418: (e, t, r) => {
+            "use strict";
             r.d(t, { K: () => o });
             var n = r(808106);
             function o(e, t) {
@@ -290,6 +480,7 @@
             }
         },
         964971: (e, t, r) => {
+            "use strict";
             r.d(t, { x: () => o });
             var n = r(150729);
             function o(e, t) {
@@ -299,6 +490,7 @@
             }
         },
         513371: (e, t, r) => {
+            "use strict";
             r.d(t, { F: () => o });
             var n = r(150729);
             function o(e, t) {
@@ -308,6 +500,7 @@
             }
         },
         460556: (e, t, r) => {
+            "use strict";
             r.d(t, { F: () => o });
             var n = r(150729);
             function o(e) {
@@ -322,6 +515,7 @@
             }
         },
         346365: (e, t, r) => {
+            "use strict";
             r.d(t, { V: () => o });
             var n = r(150729);
             function o(e) {
@@ -336,51 +530,55 @@
             }
         },
         961596: (e, t, r) => {
-            r.d(t, { c: () => s });
+            "use strict";
+            r.d(t, { c: () => l });
             var n = r(178016),
                 o = r(150729);
-            function l(e) {
+            function i(e) {
                 return (0, o.Q)(e).getDay();
             }
-            function a(e, t) {
-                let r = t - l(e);
+            function s(e, t) {
+                let r = t - i(e);
                 return r <= 0 && (r += 7), (0, n.E)(e, r);
             }
-            function s(e) {
-                return a(e, 5);
+            function l(e) {
+                return s(e, 5);
             }
         },
         663233: (e, t, r) => {
-            r.d(t, { q: () => a });
+            "use strict";
+            r.d(t, { q: () => s });
             var n = r(595873),
                 o = r(150729);
-            function l(e) {
+            function i(e) {
                 const t = (0, o.Q)(e),
                     r = t.getFullYear(),
-                    l = t.getMonth(),
-                    a = (0, n.L)(e, 0);
-                return a.setFullYear(r, l + 1, 0), a.setHours(0, 0, 0, 0), a.getDate();
+                    i = t.getMonth(),
+                    s = (0, n.L)(e, 0);
+                return s.setFullYear(r, i + 1, 0), s.setHours(0, 0, 0, 0), s.getDate();
             }
-            function a(e, t) {
+            function s(e, t) {
                 const r = (0, o.Q)(e),
-                    a = r.getFullYear(),
-                    s = r.getDate(),
-                    c = (0, n.L)(e, 0);
-                c.setFullYear(a, t, 15), c.setHours(0, 0, 0, 0);
-                const i = l(c);
-                return r.setMonth(t, Math.min(s, i)), r;
+                    s = r.getFullYear(),
+                    l = r.getDate(),
+                    a = (0, n.L)(e, 0);
+                a.setFullYear(s, t, 15), a.setHours(0, 0, 0, 0);
+                const c = i(a);
+                return r.setMonth(t, Math.min(l, c)), r;
             }
         },
         876346: (e, t, r) => {
-            r.d(t, { M: () => l });
+            "use strict";
+            r.d(t, { M: () => i });
             var n = r(595873),
                 o = r(150729);
-            function l(e, t) {
+            function i(e, t) {
                 const r = (0, o.Q)(e);
                 return isNaN(+r) ? (0, n.L)(e, NaN) : (r.setFullYear(t), r);
             }
         },
         200210: (e, t, r) => {
+            "use strict";
             r.d(t, { N: () => o });
             var n = r(150729);
             function o(e) {
@@ -389,21 +587,22 @@
             }
         },
         524145: (e, t, r) => {
-            r.d(t, { l: () => s });
+            "use strict";
+            r.d(t, { l: () => l });
             var n = r(733936),
                 o = r(777617);
-            function l(e, t) {
+            function i(e, t) {
                 return (0, o.z)(e, -t);
             }
-            var a = r(595873);
-            function s(e, t) {
-                const { years: r = 0, months: o = 0, weeks: s = 0, days: c = 0, hours: i = 0, minutes: u = 0, seconds: d = 0 } = t,
-                    h = l(e, o + 12 * r),
-                    g = (0, n.k)(h, c + 7 * s),
-                    f = 1e3 * (d + 60 * (u + 60 * i));
-                return (0, a.L)(e, g.getTime() - f);
+            var s = r(595873);
+            function l(e, t) {
+                const { years: r = 0, months: o = 0, weeks: l = 0, days: a = 0, hours: c = 0, minutes: d = 0, seconds: u = 0 } = t,
+                    h = i(e, o + 12 * r),
+                    p = (0, n.k)(h, a + 7 * l),
+                    m = 1e3 * (u + 60 * (d + 60 * c));
+                return (0, s.L)(e, p.getTime() - m);
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-6107ac1a.d02b31fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-6107ac1a.90b5dd4a.js.map

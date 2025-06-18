@@ -32,6 +32,25 @@
                     },
                 });
         },
+        128225: (e, t, n) => {
+            n.d(t, { f: () => o });
+            n(543673), n(240753), n(128399), n(571372);
+            const o = (e, t = !1, n = !1) =>
+                new Promise((o, r) => {
+                    const a = new URL(e);
+                    n && !e.startsWith("blob:") && a.searchParams.set("grok_timestamp", Date.now().toString());
+                    const i = new window.XMLHttpRequest();
+                    (i.responseType = "blob"),
+                        (i.onreadystatechange = () => {
+                            i.readyState === window.XMLHttpRequest.DONE && (200 === i.status ? o(i.response) : r(new Error("Unexpected status code")));
+                        }),
+                        (i.withCredentials = t),
+                        (i.onerror = (e) => r(e)),
+                        (i.ontimeout = (e) => r(e)),
+                        i.open("GET", a.toString(), !0),
+                        i.send();
+                });
+        },
         450562: (e, t, n) => {
             n.d(t, { V: () => a, Z: () => i });
             var o = n(189676),
@@ -1083,4 +1102,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-e6266db0.ae65f5ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-e6266db0.4a7dedda.js.map

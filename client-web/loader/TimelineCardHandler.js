@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.TimelineCardHandler", "icons/IconItalic-js", "icons/IconNumberedList-js"],
+    ["loader.TimelineCardHandler"],
     {
         721879: (e) => {
             e.exports = { queryId: "kdUVS11GOq2h4tu5cwSZHA", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
@@ -47,9 +47,9 @@
                 b = n(769948),
                 h = n.n(b),
                 g = n(871585),
-                w = n.n(g),
-                k = n(418631),
-                y = n.n(k),
+                k = n.n(g),
+                w = n(418631),
+                y = n.n(w),
                 v = n(734701),
                 E = n.n(v),
                 D = n(630986),
@@ -84,7 +84,7 @@
                             { ...t },
                             (0, a.kj)((e) => !e.bookmark_collection_create, "GQL Bookmark Folders: failed to Create Bookmark Folder"),
                         ),
-                    deleteAll: () => e.graphQL(w(), {}, F).then((e) => e),
+                    deleteAll: () => e.graphQL(k(), {}, F).then((e) => e),
                     deleteBookmarkFolder(t) {
                         const { bookmarkFolderId: n } = t;
                         return e.graphQL(y(), { bookmark_collection_id: n });
@@ -286,7 +286,7 @@
         },
         524496: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => k });
+            n.d(t, { Z: () => w });
             n(136728);
             var o = n(202784),
                 r = n(301503),
@@ -304,30 +304,30 @@
                 b = n(135904);
             const h = { [d.P7.atomic]: { element: "section" }, [d.P7.header1]: { element: "h1", wrapper: o.createElement(s.ZP, null) }, [d.P7.header2]: { element: "h2", wrapper: o.createElement(s.ZP, null) } },
                 g = (0, i.Z)(h).reduce((e, [t, n]) => e.set(t, n), r.DefaultDraftBlockRenderMap);
-            let w = !1;
-            const k = o.memo(function (e) {
+            let k = !1;
+            const w = o.memo(function (e) {
                     const { componentByType: t, contentState: n, onScribeEvent: i, paragraphFontSizeOverride: s } = e;
                     o.useEffect(() => {
-                        w || (m.fH(b.c, b.n), (w = !0));
+                        k || (m.fH(b.c, b.n), (k = !0));
                     }, []);
                     const f = [(0, _.ez)(i, s), _.aF, _.RU];
                     e.disable_entityLinkDecorator || f.push((0, _.NA)(i, s));
                     const h = u.Z.initEditorState(n, { decorators: f });
-                    let k = l.Z;
+                    let w = l.Z;
                     return (
                         t &&
-                            (k = (e) => {
+                            (w = (e) => {
                                 const n = e.getType();
                                 return t[n] || null;
                             }),
-                        o.createElement(c.ZP, null, ({ containerWidth: e }) => o.createElement(a.Z, { style: y.fontFamily }, o.createElement(r.Editor, { blockRenderMap: g, blockRendererFn: k, blockStyleFn: (0, d.su)(p.Z.isNarrowScreenWidth(e)), editorState: h, onChange: l.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
+                        o.createElement(c.ZP, null, ({ containerWidth: e }) => o.createElement(a.Z, { style: y.fontFamily }, o.createElement(r.Editor, { blockRenderMap: g, blockRendererFn: w, blockStyleFn: (0, d.su)(p.Z.isNarrowScreenWidth(e)), editorState: h, onChange: l.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
                     );
                 }),
                 y = f.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
         },
         779802: (e, t, n) => {
             "use strict";
-            n.d(t, { $u: () => D, Ak: () => x, KJ: () => k, LI: () => T, P7: () => b, PW: () => E, QF: () => h, Qm: () => w, Tr: () => S, b$: () => f, db: () => I, et: () => v, fR: () => p, iH: () => $, lD: () => g, su: () => y, u4: () => P, wX: () => F });
+            n.d(t, { $u: () => D, Ak: () => x, KJ: () => w, LI: () => T, P7: () => b, PW: () => E, QF: () => h, Qm: () => k, Tr: () => S, b$: () => f, db: () => I, et: () => v, fR: () => p, iH: () => $, lD: () => g, su: () => y, u4: () => P, wX: () => F });
             var o = n(202784),
                 r = n(111677),
                 a = n.n(r),
@@ -351,8 +351,8 @@
                     { buttonTestId: "btn-ul", Icon: c.default, key: b.bulleted, onPress: e(b.bulleted) },
                     { buttonTestId: "btn-ol", Icon: m.default, key: b.numbered, onPress: e(b.numbered) },
                 ],
-                w = "LINK",
-                k = (e) => [{ buttonTestId: "btn-link", Icon: u.default, key: w, onPress: e }],
+                k = "LINK",
+                w = (e) => [{ buttonTestId: "btn-link", Icon: u.default, key: k, onPress: e }],
                 y = (e, t) => (n) => {
                     const o = (t) => (e ? `${t}-narrow` : t);
                     switch (n.getType()) {
@@ -436,48 +436,25 @@
             }
             const d = [];
         },
-        856661: (e, t, n) => {
+        401339: (e, t, n) => {
             "use strict";
-            n.r(t), n.d(t, { default: () => s });
-            var o = n(202784),
-                r = n(890601),
-                a = n(783427),
-                i = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M9 6h3.731L9.184 18H5v2h10v-2h-3.731l3.547-12H19V4H9v2z" })) }, { writingDirection: t });
+            n.d(t, { Z: () => a });
+            const o = {},
+                r = ["touchend", "touchmove", "touchstart"];
+            const a = {
+                isTouchSupported: () =>
+                    r.some(
+                        (e) =>
+                            !!(function (e, t) {
+                                if (void 0 !== o[e]) return o[e];
+                                const n = document.createElement(t || "div"),
+                                    r = `on${e}`;
+                                let a = r in n;
+                                return a || (n.setAttribute(r, "return;"), (a = "function" == typeof n[r])), (o[e] = a), a;
+                            })(e),
+                    ),
             };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        89085: (e, t, n) => {
-            "use strict";
-            n.r(t), n.d(t, { default: () => s });
-            var o = n(202784),
-                r = n(890601),
-                a = n(783427),
-                i = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M3.905 6.516h-.423V4.354h.263c.564-.015 1.018-.126 1.361-.332s.61-.529.8-.972h2.093v7.949H5.471v-4.94c-.351.305-.873.457-1.567.457zm2.194 10.88c.403-.273.69-.542.861-.81.171-.265.257-.566.257-.9 0-.304-.087-.542-.262-.713-.175-.172-.426-.257-.753-.257-.35 0-.623.096-.821.285-.198.19-.297.457-.297.799 0 .145.016.296.046.457l-2.577-.228c-.023-.175-.034-.342-.034-.502 0-.547.16-1.018.479-1.413s.764-.699 1.334-.913c.57-.213 1.224-.319 1.961-.319 1.125 0 2.009.221 2.651.662.643.441.964 1.079.964 1.916 0 .532-.112.998-.336 1.397-.224.399-.584.766-1.078 1.1-.562.381-1.372.768-2.428 1.164H10v1.881H2.542v-1.687c1.642-.806 2.828-1.445 3.558-1.917zM22 6H12v2h10V6zm0 10H12v2h10v-2z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        98440: (e, t, n) => {
-            "use strict";
-            n.r(t), n.d(t, { default: () => s });
-            var o = n(202784),
-                r = n(890601),
-                a = n(783427),
-                i = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TimelineCardHandler.62a9d53a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TimelineCardHandler.0e397cca.js.map

@@ -2,127 +2,127 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.TwitterArticles-cf1ec9f3"],
     {
-        384316: (e, a, r) => {
-            r.d(a, { V: () => f, Z: () => g });
-            var o = r(202784),
-                t = r(457311),
-                d = r(108362),
-                n = r(111677),
-                l = r.n(n),
-                s = r(789831),
-                i = r(32677),
-                c = r(810641),
-                h = r(335632),
-                u = r(725405),
-                m = r(519896);
-            const D = l().dd2c9034,
-                p = l().cada17f8,
-                f = () => o.createElement(t.Z, { header: D, message: p }),
-                g = ({ bookmarkFolderId: e, history: a, title: r, urtModule: t }) => {
-                    const n = o.createElement(i.Z, { history: a }),
-                        l = (0, u.Z)(),
-                        D = o.useMemo(() => (0, h.G)({ withRemoveFromBookmarks: !0, bookmarkFolderId: e }), [e]);
-                    return o.createElement(s.Z, { component: d.Z, fab: n }, o.createElement(c.Z, { entryConfiguration: D, module: t, prerollDisplayLocation: m.Nw.OTHER, renderEmptyState: () => (l.scribeAction("empty"), f()), title: r }));
+        384316: (e, t, a) => {
+            a.d(t, { V: () => f, Z: () => y });
+            var r = a(202784),
+                o = a(457311),
+                n = a(108362),
+                s = a(111677),
+                i = a.n(s),
+                l = a(789831),
+                d = a(32677),
+                c = a(810641),
+                h = a(335632),
+                u = a(725405),
+                p = a(519896);
+            const m = i().dd2c9034,
+                g = i().cada17f8,
+                f = () => r.createElement(o.Z, { header: m, message: g }),
+                y = ({ bookmarkFolderId: e, history: t, title: a, urtModule: o }) => {
+                    const s = r.createElement(d.Z, { history: t }),
+                        i = (0, u.Z)(),
+                        m = r.useMemo(() => (0, h.G)({ withRemoveFromBookmarks: !0, bookmarkFolderId: e }), [e]);
+                    return r.createElement(l.Z, { component: n.Z, fab: s }, r.createElement(c.Z, { entryConfiguration: m, module: o, prerollDisplayLocation: p.Nw.OTHER, renderEmptyState: () => (i.scribeAction("empty"), f()), title: a }));
                 };
         },
-        564895: (e, a, r) => {
-            r.d(a, { ZP: () => y });
-            var o = r(202784),
-                t = r(325686),
-                d = r(731708),
-                n = r(451566),
-                l = r(392237),
-                s = r(111677),
-                i = r.n(s),
-                c = r(172459),
-                h = r(71620),
-                u = r(668214),
-                m = r(38562);
-            const D = (0, u.Z)().propsFromActions(() => ({ createLocalApiErrorHandler: (0, h.zr)("FOUND_MEDIA_AUTOPLAY_TOGGLE"), updateSettings: m.VP })),
-                p = i().j7fc4f9c;
-            class f extends o.Component {
+        564895: (e, t, a) => {
+            a.d(t, { ZP: () => b });
+            var r = a(202784),
+                o = a(325686),
+                n = a(731708),
+                s = a(451566),
+                i = a(392237),
+                l = a(111677),
+                d = a.n(l),
+                c = a(172459),
+                h = a(71620),
+                u = a(668214),
+                p = a(38562);
+            const m = (0, u.Z)().propsFromActions(() => ({ createLocalApiErrorHandler: (0, h.zr)("FOUND_MEDIA_AUTOPLAY_TOGGLE"), updateSettings: p.VP })),
+                g = d().j7fc4f9c;
+            class f extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handleSwitchChanged = (e) => {
-                            const { createLocalApiErrorHandler: a, onToggleChange: r, updateSettings: o } = this.props;
-                            o({ shouldAutoPlayGif: e }).catch(a({ showToast: !0 })), r(e);
+                            const { createLocalApiErrorHandler: t, onToggleChange: a, updateSettings: r } = this.props;
+                            r({ shouldAutoPlayGif: e }).catch(t({ showToast: !0 })), a(e);
                         });
                 }
                 render() {
-                    const { category: e, location: a, query: r, shouldAutoPlayGif: l } = this.props,
-                        s = r || a?.state?.query,
-                        i = e || a?.state?.category?.display_name;
-                    return (0, c.Z)() && (s || i) ? o.createElement(t.Z, { style: g.root }, o.createElement(d.ZP, { color: "gray700" }, p), o.createElement(n.Z, { "aria-label": p, onValueChange: this._handleSwitchChanged, value: l })) : null;
+                    const { category: e, location: t, query: a, shouldAutoPlayGif: i } = this.props,
+                        l = a || t?.state?.query,
+                        d = e || t?.state?.category?.display_name;
+                    return (0, c.Z)() && (l || d) ? r.createElement(o.Z, { style: y.root }, r.createElement(n.ZP, { color: "gray700" }, g), r.createElement(s.Z, { "aria-label": g, onValueChange: this._handleSwitchChanged, value: i })) : null;
                 }
             }
-            const g = l.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "space-between", margin: e.spaces.space12 } })),
-                y = D(f);
+            const y = i.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "space-between", margin: e.spaces.space12 } })),
+                b = m(f);
         },
-        278066: (e, a, r) => {
-            r.d(a, { ZP: () => A });
-            r(136728);
-            var o = r(202784),
-                t = r(325686),
-                d = r(530732),
-                n = r(992942),
-                l = r(731708),
-                s = r(392237),
-                i = r(16569),
-                c = r(290402),
-                h = r(663194),
-                u = r(24949),
-                m = r(450681),
-                D = r(668214),
-                p = r(317861);
-            const { Categories: f } = p,
-                g = (e, a) => f.selectItems(e),
-                y = (e) => f.selectInitialFetchStatus(e),
-                M = (0, D.Z)()
-                    .propsFromState(() => ({ categories: (0, u.P1)(g, (e) => (e ? (0, m.Z)(e.map((e) => (e.display_name ? e : void 0))) : void 0)), initialFetchStatus: y }))
+        278066: (e, t, a) => {
+            a.d(t, { ZP: () => D });
+            a(136728);
+            var r = a(202784),
+                o = a(325686),
+                n = a(530732),
+                s = a(992942),
+                i = a(731708),
+                l = a(392237),
+                d = a(16569),
+                c = a(290402),
+                h = a(663194),
+                u = a(24949),
+                p = a(450681),
+                m = a(668214),
+                g = a(317861);
+            const { Categories: f } = g,
+                y = (e, t) => f.selectItems(e),
+                b = (e) => f.selectInitialFetchStatus(e),
+                S = (0, m.Z)()
+                    .propsFromState(() => ({ categories: (0, u.P1)(y, (e) => (e ? (0, p.Z)(e.map((e) => (e.display_name ? e : void 0))) : void 0)), initialFetchStatus: b }))
                     .propsFromActions(() => ({ fetchInitialIfNeeded: f.fetchInitialIfNeeded, fetchNextIfNeeded: f.fetchNextIfNeeded })),
-                b = o.memo((e) => {
-                    const { category: a, gifSearchKey: r, history: s, index: c, onClick: u, withLeftMargin: m } = e,
+                _ = r.memo((e) => {
+                    const { category: t, gifSearchKey: a, history: l, index: c, onClick: u, withLeftMargin: p } = e,
                         {
-                            display_name: D,
-                            original_image: { still_image_url: p },
-                        } = a,
-                        f = o.useCallback(() => {
-                            if (u) u(a);
+                            display_name: m,
+                            original_image: { still_image_url: g },
+                        } = t,
+                        f = r.useCallback(() => {
+                            if (u) u(t);
                             else {
-                                const e = s?.location.state?.dmConversationId;
-                                s?.push({ pathname: `${i.GifSearchPaths.category}/${a.id}`, state: { category: a, gifSearchKey: r, dmConversationId: e } });
+                                const e = l?.location.state?.dmConversationId;
+                                l?.push({ pathname: `${d.GifSearchPaths.category}/${t.id}`, state: { category: t, gifSearchKey: a, dmConversationId: e } });
                             }
-                        }, [s, a, r, u]);
-                    return o.createElement(d.Z, { onPress: f, style: [w.category, m && w.leftMargin] }, o.createElement(n.Z, { source: p, style: [w.categoryImage, { backgroundColor: (0, h.d)(c) }] }), o.createElement(t.Z, { style: w.categoryNameContainer }, o.createElement(l.ZP, { color: "white", size: "headline1", weight: "bold" }, D)));
+                        }, [l, t, a, u]);
+                    return r.createElement(n.Z, { onPress: f, style: [E.category, p && E.leftMargin] }, r.createElement(s.Z, { source: g, style: [E.categoryImage, { backgroundColor: (0, h.d)(c) }] }), r.createElement(o.Z, { style: E.categoryNameContainer }, r.createElement(i.ZP, { color: "white", size: "headline1", weight: "bold" }, m)));
                 }),
-                w = s.default.create((e) => ({ row: { flexDirection: "row", marginTop: e.spaces.space4 }, firstRow: { marginTop: 0 }, category: { height: "10rem", flexGrow: 1 }, leftMargin: { marginStart: e.spaces.space4 }, categoryImage: { flexGrow: 1 }, categoryNameContainer: { position: "absolute", bottom: 0, width: "100%", padding: e.spaces.space8, backgroundImage: "linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0))" } })),
-                A = M((e) => {
-                    const { categories: a, fetchInitialIfNeeded: r, gifSearchKey: d, history: n, initialFetchStatus: l, onClickCategory: s } = e,
-                        i = o.useCallback(() => {
-                            r();
-                        }, [r]),
-                        h = o.useCallback(() => {
+                E = l.default.create((e) => ({ row: { flexDirection: "row", marginTop: e.spaces.space4 }, firstRow: { marginTop: 0 }, category: { height: "10rem", flexGrow: 1 }, leftMargin: { marginStart: e.spaces.space4 }, categoryImage: { flexGrow: 1 }, categoryNameContainer: { position: "absolute", bottom: 0, width: "100%", padding: e.spaces.space8, backgroundImage: "linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0))" } })),
+                D = S((e) => {
+                    const { categories: t, fetchInitialIfNeeded: a, gifSearchKey: n, history: s, initialFetchStatus: i, onClickCategory: l } = e,
+                        d = r.useCallback(() => {
+                            a();
+                        }, [a]),
+                        h = r.useCallback(() => {
                             const e = [];
-                            if (a) for (let r = 0; r < a.length; r += 2) e.push([a[r], a[r + 1]]);
-                            return o.createElement(t.Z, null, o.Children.toArray(e.map(([e, a], r) => o.createElement(t.Z, { style: [w.row, 0 === r && w.firstRow] }, o.createElement(b, { category: e, gifSearchKey: d, history: n, index: 2 * r, onClick: s, withLeftMargin: !1 }), a ? o.createElement(b, { category: a, gifSearchKey: d, history: n, index: 2 * r + 1, onClick: s, withLeftMargin: !0 }) : null))));
-                        }, [a, d, n, s]);
+                            if (t) for (let a = 0; a < t.length; a += 2) e.push([t[a], t[a + 1]]);
+                            return r.createElement(o.Z, null, r.Children.toArray(e.map(([e, t], a) => r.createElement(o.Z, { style: [E.row, 0 === a && E.firstRow] }, r.createElement(_, { category: e, gifSearchKey: n, history: s, index: 2 * a, onClick: l, withLeftMargin: !1 }), t ? r.createElement(_, { category: t, gifSearchKey: n, history: s, index: 2 * a + 1, onClick: l, withLeftMargin: !0 }) : null))));
+                        }, [t, n, s, l]);
                     return (
-                        o.useEffect(() => {
-                            i();
-                        }, [i]),
-                        o.createElement(c.Z, { fetchStatus: l, onRequestRetry: i, render: h })
+                        r.useEffect(() => {
+                            d();
+                        }, [d]),
+                        r.createElement(c.Z, { fetchStatus: i, onRequestRetry: d, render: h })
                     );
                 });
         },
-        223071: (e, a, r) => {
-            r.d(a, { Z: () => c });
-            var o = r(202784),
-                t = r(511985),
-                d = r(725516),
-                n = r(317861),
-                l = r(564895),
-                s = r(118092);
-            class i extends o.Component {
+        223071: (e, t, a) => {
+            a.d(t, { Z: () => c });
+            var r = a(202784),
+                o = a(511985),
+                n = a(725516),
+                s = a(317861),
+                i = a(564895),
+                l = a(118092);
+            class d extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { shouldAutoPlayGifOverride: null }),
@@ -131,23 +131,23 @@
                         });
                 }
                 render() {
-                    const { category: e, gifSearchKey: a, history: r, location: d, onClickGif: i, shouldAutoPlayGif: c } = this.props,
+                    const { category: e, gifSearchKey: t, history: a, location: n, onClickGif: d, shouldAutoPlayGif: c } = this.props,
                         { shouldAutoPlayGifOverride: h } = this.state,
-                        u = (0, t._f)(h, c);
-                    return o.createElement(o.Fragment, null, o.createElement(l.ZP, { category: e, location: d, onToggleChange: this._handleToggleChange, shouldAutoPlayGif: u }), !!e && o.createElement(s.Z, { gifSearchKey: a, history: r, module: n.WD, onClickGif: i, query: e.id, shouldAutoPlayGif: u }));
+                        u = (0, o._f)(h, c);
+                    return r.createElement(r.Fragment, null, r.createElement(i.ZP, { category: e, location: n, onToggleChange: this._handleToggleChange, shouldAutoPlayGif: u }), !!e && r.createElement(l.Z, { gifSearchKey: t, history: a, module: s.WD, onClickGif: d, query: e.id, shouldAutoPlayGif: u }));
                 }
             }
-            const c = (0, d.Z)(i, { element: "gallery" });
+            const c = (0, n.Z)(d, { element: "gallery" });
         },
-        237837: (e, a, r) => {
-            r.d(a, { Z: () => c });
-            var o = r(202784),
-                t = r(511985),
-                d = r(725516),
-                n = r(317861),
-                l = r(564895),
-                s = r(118092);
-            class i extends o.Component {
+        237837: (e, t, a) => {
+            a.d(t, { Z: () => c });
+            var r = a(202784),
+                o = a(511985),
+                n = a(725516),
+                s = a(317861),
+                i = a(564895),
+                l = a(118092);
+            class d extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { shouldAutoPlayGifOverride: null }),
@@ -156,179 +156,179 @@
                         });
                 }
                 render() {
-                    const { gifSearchKey: e, history: a, location: r, onClickGif: d, query: i, shouldAutoPlayGif: c } = this.props,
+                    const { gifSearchKey: e, history: t, location: a, onClickGif: n, query: d, shouldAutoPlayGif: c } = this.props,
                         { shouldAutoPlayGifOverride: h } = this.state,
-                        u = (0, t._f)(h, c);
-                    return o.createElement(o.Fragment, null, o.createElement(l.ZP, { location: r, onToggleChange: this._handleToggleChange, query: i, shouldAutoPlayGif: u }), o.createElement(s.Z, { fromSearch: !0, gifSearchKey: e, history: a, module: n.ol, onClickGif: d, query: i, shouldAutoPlayGif: u }));
+                        u = (0, o._f)(h, c);
+                    return r.createElement(r.Fragment, null, r.createElement(i.ZP, { location: a, onToggleChange: this._handleToggleChange, query: d, shouldAutoPlayGif: u }), r.createElement(l.Z, { fromSearch: !0, gifSearchKey: e, history: t, module: s.ol, onClickGif: n, query: d, shouldAutoPlayGif: u }));
                 }
             }
-            const c = (0, d.Z)(i, { element: "gallery" });
+            const c = (0, n.Z)(d, { element: "gallery" });
         },
-        118092: (e, a, r) => {
-            r.d(a, { Z: () => j });
-            var o = r(202784),
-                t = r(928316),
-                d = r(325686),
-                n = r(457311),
-                l = r(392237),
-                s = r(111677),
-                i = r.n(s),
-                c = r(459643),
-                h = r(912021),
-                u = r(370751),
-                m = r(290402),
-                D = r(965245),
-                p = r(443781),
-                f = r(511985),
-                g = r(716233),
-                y = r(663194);
-            r(136728);
-            const M = (e, a) => {
-                const r = e.reduce((e, a) => {
-                    const { original_image: r } = a;
-                    return e + r.width / r.height;
+        118092: (e, t, a) => {
+            a.d(t, { Z: () => j });
+            var r = a(202784),
+                o = a(928316),
+                n = a(325686),
+                s = a(457311),
+                i = a(392237),
+                l = a(111677),
+                d = a.n(l),
+                c = a(459643),
+                h = a(912021),
+                u = a(370751),
+                p = a(290402),
+                m = a(965245),
+                g = a(443781),
+                f = a(511985),
+                y = a(716233),
+                b = a(663194);
+            a(136728);
+            const S = (e, t) => {
+                const a = e.reduce((e, t) => {
+                    const { original_image: a } = t;
+                    return e + a.width / a.height;
                 }, 0);
-                return Math.ceil(a / r);
+                return Math.ceil(t / a);
             };
-            function b(e, a, r) {
-                return e.reduce((e, o, t) => (e[e.length - 1].push({ ...o, index: t }), e[e.length - 1].length > 0 && M(e[e.length - 1], r) < a && e.push([]), e), [[]]).filter((e) => e.length > 0);
+            function _(e, t, a) {
+                return e.reduce((e, r, o) => (e[e.length - 1].push({ ...r, index: o }), e[e.length - 1].length > 0 && S(e[e.length - 1], a) < t && e.push([]), e), [[]]).filter((e) => e.length > 0);
             }
-            var w = r(459679),
-                A = r(668214),
-                _ = r(704279),
-                S = r(798538),
-                k = r(497294),
-                I = r(632960);
-            const E = [],
-                C = (e, { module: a, query: r }) => a.selectInitialFetchStatus(e, r),
-                P = (e, { module: a, query: r }) => a.selectItems(e, r),
-                v = (e, { module: a, query: r }) => a.selectNextFetchStatus(e, r),
-                Z = (e) => {
-                    const { tweetComposer: a } = e,
-                        r = a?.activeParentKey,
-                        o = I.E_(e, r),
-                        t = a[r],
-                        d = t.composerData[o]?.mediaIds;
-                    return Array.isArray(d) ? d : E;
+            var E = a(459679),
+                D = a(668214),
+                w = a(704279),
+                M = a(798538),
+                C = a(497294),
+                v = a(632960);
+            const A = [],
+                Z = (e, { module: t, query: a }) => t.selectInitialFetchStatus(e, a),
+                x = (e, { module: t, query: a }) => t.selectItems(e, a),
+                R = (e, { module: t, query: a }) => t.selectNextFetchStatus(e, a),
+                k = (e) => {
+                    const { tweetComposer: t } = e,
+                        a = t?.activeParentKey,
+                        r = v.E_(e, a),
+                        o = t[a],
+                        n = o.composerData[r]?.mediaIds;
+                    return Array.isArray(n) ? n : A;
                 },
-                x = (0, A.Z)()
-                    .propsFromState(() => ({ initialFetchStatus: C, items: P, nextFetchStatus: v, oldMediaIds: Z }))
-                    .adjustStateProps(({ initialFetchStatus: e, items: a, nextFetchStatus: r, oldMediaIds: o }) => ({ initialFetchStatus: e, items: Array.isArray(a) ? (0, w.Z)(a, (e) => (e.url ? { ...e, thumbnail_images: [...e.thumbnail_images].sort((e, a) => a.height * a.width - e.height * e.width) } : void 0)) : void 0, nextFetchStatus: r, oldMediaIds: o }))
-                    .propsFromActions(({ history: e, module: a }) => {
+                I = (0, D.Z)()
+                    .propsFromState(() => ({ initialFetchStatus: Z, items: x, nextFetchStatus: R, oldMediaIds: k }))
+                    .adjustStateProps(({ initialFetchStatus: e, items: t, nextFetchStatus: a, oldMediaIds: r }) => ({ initialFetchStatus: e, items: Array.isArray(t) ? (0, E.Z)(t, (e) => (e.url ? { ...e, thumbnail_images: [...e.thumbnail_images].sort((e, t) => t.height * t.width - e.height * e.width) } : void 0)) : void 0, nextFetchStatus: a, oldMediaIds: r }))
+                    .propsFromActions(({ history: e, module: t }) => {
                         return {
-                            addExternalMediaUpload: k.Q6,
+                            addExternalMediaUpload: C.Q6,
                             addMediaToDM:
-                                ((r = e?.location?.state),
-                                (e, a) => {
-                                    const o = r && r.dmConversationId;
-                                    return (0, S.rA)(o, e, a);
+                                ((a = e?.location?.state),
+                                (e, t) => {
+                                    const r = a && a.dmConversationId;
+                                    return (0, M.rA)(r, e, t);
                                 }),
-                            setMediaMetadata: k._B,
-                            fetchInitialIfNeeded: a.fetchInitialIfNeeded,
-                            fetchNextIfNeeded: a.fetchNextIfNeeded,
-                            scribeAction: _.n,
-                            updateSingleComposerV2: I.zi,
+                            setMediaMetadata: C._B,
+                            fetchInitialIfNeeded: t.fetchInitialIfNeeded,
+                            fetchNextIfNeeded: t.fetchNextIfNeeded,
+                            scribeAction: w.n,
+                            updateSingleComposerV2: v.zi,
                         };
-                        var r;
+                        var a;
                     });
-            var R = r(530732),
-                N = r(992942),
-                T = r(74938);
-            class F extends o.Component {
+            var N = a(530732),
+                T = a(992942),
+                P = a(74938);
+            class F extends r.Component {
                 render() {
-                    const { backgroundColor: e, height: a, onClick: r, width: t } = this.props;
-                    return o.createElement(R.Z, { onPress: r, style: [O.imageContainer, G(e, a, t).background] }, this._renderPreview());
+                    const { backgroundColor: e, height: t, onClick: a, width: o } = this.props;
+                    return r.createElement(N.Z, { onPress: a, style: [O.imageContainer, G(e, t, o).background] }, this._renderPreview());
                 }
                 _renderPreview() {
-                    const { altText: e, animatedMediaUrl: a, height: r, shouldAutoPlayGif: t, stillMediaUrl: d, width: n } = this.props,
-                        l = { height: r, width: n, uri: t ? a : d };
-                    return o.createElement(N.Z, { "aria-label": e, source: l, testID: T.Z.gifSearchGifImage });
+                    const { altText: e, animatedMediaUrl: t, height: a, shouldAutoPlayGif: o, stillMediaUrl: n, width: s } = this.props,
+                        i = { height: a, width: s, uri: o ? t : n };
+                    return r.createElement(T.Z, { "aria-label": e, source: i, testID: P.Z.gifSearchGifImage });
                 }
             }
-            const G = (e, a, r) => l.default.create((o) => ({ background: { backgroundColor: e, height: a, width: r } })),
-                O = l.default.create((e) => ({ imageContainer: { marginHorizontal: "1px", overflow: "hidden", flexShrink: 1 } })),
+            const G = (e, t, a) => i.default.create((r) => ({ background: { backgroundColor: e, height: t, width: a } })),
+                O = i.default.create((e) => ({ imageContainer: { marginHorizontal: "1px", overflow: "hidden", flexShrink: 1 } })),
                 L = F,
                 q = "gifSearchTimelineRoot",
-                U = i().a66b7760,
-                z = i().a723aefa,
-                B = i().a6ecfa0a,
+                U = d().a66b7760,
+                z = d().a723aefa,
+                B = d().a6ecfa0a,
                 H = (e) => e.map((e) => e.id).join("-"),
                 K = (0, c.Z)(null),
                 V = [];
-            class W extends o.Component {
-                constructor(e, a) {
-                    super(e, a),
+            class W extends r.Component {
+                constructor(e, t) {
+                    super(e, t),
                         (this._rootNode = null),
                         (this._render = () => {
-                            const { items: e, query: a } = this.props,
-                                { width: r } = this.state,
-                                t = e ? this._brickLayout(e, 150, r) : V;
-                            return r > 0 ? o.createElement(D.Z, { assumedItemHeight: 150, cacheKey: `gifSearchCategory/${a}`, footer: this._getRenderFooter(), identityFunction: H, items: t, noItemsRenderer: this._renderEmptyItem, onNearEnd: this._handleFetchNext, renderer: this._getRowRenderer() }) : null;
+                            const { items: e, query: t } = this.props,
+                                { width: a } = this.state,
+                                o = e ? this._brickLayout(e, 150, a) : V;
+                            return a > 0 ? r.createElement(m.Z, { assumedItemHeight: 150, cacheKey: `gifSearchCategory/${t}`, footer: this._getRenderFooter(), identityFunction: H, items: o, noItemsRenderer: this._renderEmptyItem, onNearEnd: this._handleFetchNext, renderer: this._getRowRenderer() }) : null;
                         }),
-                        (this._getMemoizedRowRenderer = (0, h.Z)((e, a, r) => (t) => {
-                            const n = M(t, a),
-                                l = a - 2 * t.length - 1;
-                            let s = 0;
-                            return o.createElement(
-                                d.Z,
-                                { style: [Q.imageRow, { height: n }] },
-                                t.map((a, d) => {
+                        (this._getMemoizedRowRenderer = (0, h.Z)((e, t, a) => (o) => {
+                            const s = S(o, t),
+                                i = t - 2 * o.length - 1;
+                            let l = 0;
+                            return r.createElement(
+                                n.Z,
+                                { style: [Q.imageRow, { height: s }] },
+                                o.map((t, n) => {
                                     const {
-                                            thumbnail_images: [i],
-                                        } = a,
-                                        c = n / i.height,
-                                        h = d === t.length - 1 ? l - s : Math.round(i.width * c),
-                                        { still_image_url: u, url: m } = i;
-                                    return (s += h), o.createElement(L, { altText: a.alt_text || U, animatedMediaUrl: m, backgroundColor: (0, y.d)(a.index), height: n, key: a.index, onClick: r(a), shouldAutoPlayGif: e, stillMediaUrl: u, width: h });
+                                            thumbnail_images: [d],
+                                        } = t,
+                                        c = s / d.height,
+                                        h = n === o.length - 1 ? i - l : Math.round(d.width * c),
+                                        { still_image_url: u, url: p } = d;
+                                    return (l += h), r.createElement(L, { altText: t.alt_text || U, animatedMediaUrl: p, backgroundColor: (0, b.d)(t.index), height: s, key: t.index, onClick: a(t), shouldAutoPlayGif: e, stillMediaUrl: u, width: h });
                                 }),
                             );
                         })),
                         (this._getRowRenderer = () => {
                             const { shouldAutoPlayGif: e } = this.props,
-                                { width: a } = this.state;
-                            return this._getMemoizedRowRenderer(e, a, this._handleClickFactory);
+                                { width: t } = this.state;
+                            return this._getMemoizedRowRenderer(e, t, this._handleClickFactory);
                         }),
                         (this._handleClickFactory = (e) => () => {
-                            const { addExternalMediaUpload: a, addMediaToDM: r, fromSearch: o, gifSearchKey: t, history: d, onClickGif: n, scribeAction: l, setMediaMetadata: s, updateSingleComposerV2: i } = this.props,
+                            const { addExternalMediaUpload: t, addMediaToDM: a, fromSearch: r, gifSearchKey: o, history: n, onClickGif: s, scribeAction: i, setMediaMetadata: l, updateSingleComposerV2: d } = this.props,
                                 {
                                     alt_text: c,
                                     found_media_origin: h,
-                                    provider: m,
-                                    original_image: { url: D },
-                                    preview_image: { height: p, url: y, width: M },
-                                    thumbnail_images: [b],
-                                    url: w,
+                                    provider: p,
+                                    original_image: { url: m },
+                                    preview_image: { height: g, url: b, width: S },
+                                    thumbnail_images: [_],
+                                    url: E,
                                 } = e,
-                                A = a({ mediaCategory: t === f.AD.Composition || t === f.AD.NoteComposition ? g.xz.TweetGif : g.xz.DMGif, mediaType: "image/gif", previewMediaType: "video/mp4", previewUrl: y, sourceUrl: D, stillMediaUrl: b.still_image_url, width: M, height: p }),
-                                _ = A.map((e) => e.id),
-                                S = { found_media_origin: h, provider: m, url: w };
-                            if ((c && s(_[0], { defaultAltText: c, gifMetadata: S }), t === f.AD.Composition)) {
+                                D = t({ mediaCategory: o === f.AD.Composition || o === f.AD.NoteComposition ? y.xz.TweetGif : y.xz.DMGif, mediaType: "image/gif", previewMediaType: "video/mp4", previewUrl: b, sourceUrl: m, stillMediaUrl: _.still_image_url, width: S, height: g }),
+                                w = D.map((e) => e.id),
+                                M = { found_media_origin: h, provider: p, url: E };
+                            if ((c && l(w[0], { defaultAltText: c, gifMetadata: M }), o === f.AD.Composition)) {
                                 const { oldMediaIds: e } = this.props,
-                                    a = [...(0, u.Z)(e.concat(_))];
-                                i({ updates: { mediaIds: this.context.featureSwitches.isTrue("rweb_mixed_media_uploads_enabled") ? a : _, gifMetadata: S } });
-                            } else t === f.AD.DMComposition ? r(_, S) : t === f.AD.NoteComposition && n?.(A);
-                            l({ page: t, section: "gif_search", element: "category", action: o ? "search" : "select" }), d?.go(-2);
+                                    t = [...(0, u.Z)(e.concat(w))];
+                                d({ updates: { mediaIds: this.context.featureSwitches.isTrue("rweb_mixed_media_uploads_enabled") ? t : w, gifMetadata: M } });
+                            } else o === f.AD.DMComposition ? a(w, M) : o === f.AD.NoteComposition && s?.(D);
+                            i({ page: o, section: "gif_search", element: "category", action: r ? "search" : "select" }), n?.go(-2);
                         }),
-                        (this._renderEmptyItem = () => o.createElement(n.Z, { header: z, message: B })),
-                        (this._getRenderMemoizedFooter = (0, h.Z)((e, a) => o.createElement(m.Z, { fetchStatus: e, onRequestRetry: a, render: K }))),
+                        (this._renderEmptyItem = () => r.createElement(s.Z, { header: z, message: B })),
+                        (this._getRenderMemoizedFooter = (0, h.Z)((e, t) => r.createElement(p.Z, { fetchStatus: e, onRequestRetry: t, render: K }))),
                         (this._getRenderFooter = () => {
                             const { nextFetchStatus: e } = this.props;
                             return this._getRenderMemoizedFooter(e, this._handleFetchNext);
                         }),
                         (this._handleFetch = (e = this.props.query) => {
-                            const { fetchInitialIfNeeded: a } = this.props;
-                            a({ query: e });
+                            const { fetchInitialIfNeeded: t } = this.props;
+                            t({ query: e });
                         }),
                         (this._handleFetchNext = () => {
-                            const { fetchNextIfNeeded: e, query: a } = this.props;
-                            e({ query: a });
+                            const { fetchNextIfNeeded: e, query: t } = this.props;
+                            e({ query: t });
                         }),
                         (this._handleResize = () => {
                             this._rootNode && this._rootNode instanceof Element && this.setState({ width: this._rootNode.clientWidth });
                         }),
-                        (this._brickLayout = (0, h.Z)(b)),
+                        (this._brickLayout = (0, h.Z)(_)),
                         (this._setRootNode = (e) => {
-                            this._rootNode = t.findDOMNode(e);
+                            this._rootNode = o.findDOMNode(e);
                         }),
                         (this.state = { width: 0 });
                 }
@@ -343,145 +343,49 @@
                 }
                 render() {
                     const { initialFetchStatus: e } = this.props;
-                    return o.createElement("div", { "data-testid": q, ref: this._setRootNode }, o.createElement(m.Z, { fetchStatus: e, onRequestRetry: this._handleFetch, ref: this._setRootNode, render: this._render }));
+                    return r.createElement("div", { "data-testid": q, ref: this._setRootNode }, r.createElement(p.Z, { fetchStatus: e, onRequestRetry: this._handleFetch, ref: this._setRootNode, render: this._render }));
                 }
             }
-            (W.contextType = p.rC), (W.defaultProps = { fromSearch: !1 });
-            const Q = l.default.create((e) => ({ emptyItem: { display: "inline-block", paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space32 }, imageRow: { flexDirection: "row", marginBottom: 2 } })),
-                j = x(W);
+            (W.contextType = g.rC), (W.defaultProps = { fromSearch: !1 });
+            const Q = i.default.create((e) => ({ emptyItem: { display: "inline-block", paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space32 }, imageRow: { flexDirection: "row", marginBottom: 2 } })),
+                j = I(W);
         },
-        16569: (e, a, r) => {
-            r.r(a), r.d(a, { GifSearchPaths: () => x, GifSearchScreen: () => R, default: () => T });
-            r(136728);
-            var o = r(202784),
-                t = r(325686),
-                d = r(107267),
-                n = r(371344),
-                l = r(154003),
-                s = r(392237),
-                i = r(111677),
-                c = r.n(i),
-                h = r(956272),
-                u = r(912021),
-                m = r(666536),
-                D = r(443781),
-                p = r(511985),
-                f = r(293115),
-                g = r(615027),
-                y = r(189244),
-                M = r(717988),
-                b = r(466441),
-                w = r(668214),
-                A = r(38562),
-                _ = r(659773);
-            const S = (e, a) => (0, A.l4)(e).shouldAutoPlayGif,
-                k = (0, w.Z)().propsFromState(() => ({ shouldAutoPlayGif: S, isDataSaverEnabled: A.IX, effectiveAutoplayOption: _.AP }));
-            var I = r(74938),
-                E = r(663194);
-            const C = c().a50ba822,
-                P = c().a9ae1e78,
-                v = (0, M.p)(
-                    () =>
-                        Promise.all([
-                            r.e("icons.8"),
-                            r.e("icons.15"),
-                            r.e("icons.7"),
-                            r.e("icons.3"),
-                            r.e("icons.24"),
-                            r.e("modules.common-e907d115"),
-                            r.e("modules.common-e019dbda"),
-                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
-                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
-                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
-                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
-                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
-                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
-                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
-                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-fd0b2cf1"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c7e58553"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f7f56781"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
-                            r.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
-                            r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
-                            r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
-                            r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
-                            r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ab949d70"),
-                            r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
-                            r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
-                            r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
-                            r.e("bundle.GifSearch"),
-                        ]).then(r.bind(r, 558969)),
-                    { shouldMigrateToX: !1 },
-                ),
-                Z = (0, M.p)(
-                    () =>
-                        Promise.all([
-                            r.e("icons.8"),
-                            r.e("icons.15"),
-                            r.e("icons.7"),
-                            r.e("icons.3"),
-                            r.e("icons.24"),
-                            r.e("modules.common-e907d115"),
-                            r.e("modules.common-e019dbda"),
-                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
-                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
-                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
-                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
-                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
-                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
-                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
-                            r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-fd0b2cf1"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c7e58553"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f7f56781"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
-                            r.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
-                            r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
-                            r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
-                            r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
-                            r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ab949d70"),
-                            r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
-                            r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
-                            r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
-                            r.e("bundle.GifSearch"),
-                        ]).then(r.bind(r, 800708)),
-                    { shouldMigrateToX: !1 },
-                ),
-                x = { category: "/i/foundmedia/category", search: "/i/foundmedia/search" };
-            class R extends o.Component {
-                constructor(e, a) {
-                    super(e, a),
+        16569: (e, t, a) => {
+            a.r(t), a.d(t, { GifSearchPaths: () => I, GifSearchScreen: () => N, default: () => P });
+            a(136728);
+            var r = a(202784),
+                o = a(325686),
+                n = a(107267),
+                s = a(371344),
+                i = a(154003),
+                l = a(392237),
+                d = a(111677),
+                c = a.n(d),
+                h = a(956272),
+                u = a(912021),
+                p = a(666536),
+                m = a(443781),
+                g = a(511985),
+                f = a(293115),
+                y = a(615027),
+                b = a(189244),
+                S = a(717988),
+                _ = a(466441),
+                E = a(668214),
+                D = a(38562),
+                w = a(659773);
+            const M = (e, t) => (0, D.l4)(e).shouldAutoPlayGif,
+                C = (0, E.Z)().propsFromState(() => ({ shouldAutoPlayGif: M, isDataSaverEnabled: D.IX, effectiveAutoplayOption: w.AP }));
+            var v = a(74938),
+                A = a(663194);
+            const Z = c().a50ba822,
+                x = c().a9ae1e78,
+                R = (0, S.p)(() => Promise.all([a.e("icons.8"), a.e("icons.15"), a.e("icons.7"), a.e("icons.3"), a.e("icons.24"), a.e("modules.common-e907d115"), a.e("modules.common-e019dbda"), a.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"), a.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"), a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"), a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"), a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"), a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"), a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ab949d70"), a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"), a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"), a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"), a.e("bundle.GifSearch-6107ac1a"), a.e("bundle.GifSearch-e4e3d8bb"), a.e("bundle.GifSearch-bfd49e49"), a.e("bundle.GifSearch-3c20ad5c")]).then(a.bind(a, 558969)), { shouldMigrateToX: !1 }),
+                k = (0, S.p)(() => Promise.all([a.e("icons.8"), a.e("icons.15"), a.e("icons.7"), a.e("icons.3"), a.e("icons.24"), a.e("modules.common-e907d115"), a.e("modules.common-e019dbda"), a.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"), a.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"), a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"), a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"), a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"), a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"), a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ab949d70"), a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"), a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"), a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"), a.e("bundle.GifSearch-6107ac1a"), a.e("bundle.GifSearch-e4e3d8bb"), a.e("bundle.GifSearch-bfd49e49"), a.e("bundle.GifSearch-3c20ad5c")]).then(a.bind(a, 800708)), { shouldMigrateToX: !1 }),
+                I = { category: "/i/foundmedia/category", search: "/i/foundmedia/search" };
+            class N extends r.Component {
+                constructor(e, t) {
+                    super(e, t),
                         (this.state = { searchDisabled: !0 }),
                         (this._gifSearchKey = this._getGifSearchKey()),
                         (this._getScribeNamespace = (0, u.Z)((e) => ({ page: e, section: "gif_search" }))),
@@ -489,338 +393,338 @@
                             this._textInputRef = e;
                         }),
                         (this._handleChange = (e) => {
-                            const { value: a } = e.currentTarget;
-                            this._shouldRenderResultsOnChange ? this._goToQueryDebounced(a) : this.setState({ searchDisabled: !a });
+                            const { value: t } = e.currentTarget;
+                            this._shouldRenderResultsOnChange ? this._goToQueryDebounced(t) : this.setState({ searchDisabled: !t });
                         }),
                         (this._handleClear = () => {
-                            const { history: e, isDataSaverEnabled: a, location: r } = this.props,
-                                o = r.pathname.startsWith(x.category),
-                                t = r.pathname === x.search && r.state && r.state.query;
-                            !a && (o || t) ? e.goBack() : a && this.setState({ searchDisabled: !0 });
+                            const { history: e, isDataSaverEnabled: t, location: a } = this.props,
+                                r = a.pathname.startsWith(I.category),
+                                o = a.pathname === I.search && a.state && a.state.query;
+                            !t && (r || o) ? e.goBack() : t && this.setState({ searchDisabled: !0 });
                         }),
                         (this._handleSubmit = () => {
                             const e = this._textInputRef && this._textInputRef.getValue();
                             this._goToQuery(e);
                         }),
                         (this._handleSearch = (e) => {
-                            const { value: a } = e.currentTarget;
-                            this._goToQuery(a);
+                            const { value: t } = e.currentTarget;
+                            this._goToQuery(t);
                         }),
                         (this._goToQuery = (e) => {
-                            const { history: a, isDataSaverEnabled: r, location: o } = this.props,
-                                t = { pathname: x.search },
-                                d = o.state && o.state.query,
-                                n = o.pathname === x.search && !d,
-                                l = o.pathname.startsWith(x.category) || (o.pathname === x.search && d),
-                                s = !r && l,
-                                i = o.state && o.state.dmConversationId;
-                            e ? ((t.state = { dmConversationId: i, query: e }), n ? a.push(t) : a.replace(t)) : s && a.goBack();
+                            const { history: t, isDataSaverEnabled: a, location: r } = this.props,
+                                o = { pathname: I.search },
+                                n = r.state && r.state.query,
+                                s = r.pathname === I.search && !n,
+                                i = r.pathname.startsWith(I.category) || (r.pathname === I.search && n),
+                                l = !a && i,
+                                d = r.state && r.state.dmConversationId;
+                            e ? ((o.state = { dmConversationId: d, query: e }), s ? t.push(o) : t.replace(o)) : l && t.goBack();
                         }),
-                        (this._goToQueryDebounced = (0, m.Z)((...e) => this._goToQuery(...e), p.zH)),
+                        (this._goToQueryDebounced = (0, p.Z)((...e) => this._goToQuery(...e), g.zH)),
                         (this._shouldRenderResultsOnChange = !this.props.isDataSaverEnabled);
                 }
                 render() {
-                    const { history: e, location: a } = this.props,
-                        r = this._getShouldAutoPlayGif(),
-                        t = this._gifSearchKey;
-                    if (!t) return o.createElement(g.Z, { to: "/" });
-                    const n = { gifSearchKey: t, history: e, location: a, searchBox: this._renderSearchBox(), shouldAutoPlayGif: r };
-                    return o.createElement(f.nO, { namespace: this._getScribeNamespace(t) }, o.createElement(d.Switch, null, o.createElement(d.Route, { exact: !0, path: x.search }, o.createElement(v, n)), o.createElement(d.Route, { exact: !0, path: `${x.category}/${y.kM}` }, o.createElement(Z, n)), o.createElement(d.Route, { component: b.default })));
+                    const { history: e, location: t } = this.props,
+                        a = this._getShouldAutoPlayGif(),
+                        o = this._gifSearchKey;
+                    if (!o) return r.createElement(y.Z, { to: "/" });
+                    const s = { gifSearchKey: o, history: e, location: t, searchBox: this._renderSearchBox(), shouldAutoPlayGif: a };
+                    return r.createElement(f.nO, { namespace: this._getScribeNamespace(o) }, r.createElement(n.Switch, null, r.createElement(n.Route, { exact: !0, path: I.search }, r.createElement(R, s)), r.createElement(n.Route, { exact: !0, path: `${I.category}/${b.kM}` }, r.createElement(k, s)), r.createElement(n.Route, { component: _.default })));
                 }
                 _getShouldAutoPlayGif() {
-                    const { effectiveAutoplayOption: e, isDataSaverEnabled: a, shouldAutoPlayGif: r } = this.props;
-                    return (0, E.r)(r, a, e);
+                    const { effectiveAutoplayOption: e, isDataSaverEnabled: t, shouldAutoPlayGif: a } = this.props;
+                    return (0, A.r)(a, t, e);
                 }
                 _getGifSearchKey() {
                     const {
                             location: { state: e },
                         } = this.props,
-                        { gifSearchKey: a, gifSearchKeySource: r } = e || {};
-                    return a || (r && (0, p.Qy)(r) && r);
+                        { gifSearchKey: t, gifSearchKeySource: a } = e || {};
+                    return t || (a && (0, g.Qy)(a) && a);
                 }
                 _getQueryOrCategory() {
                     const { location: e } = this.props,
-                        a = e.state && e.state.query,
-                        r = e.state && e.state.category ? e.state.category.display_name : "";
-                    return a || r;
+                        t = e.state && e.state.query,
+                        a = e.state && e.state.category ? e.state.category.display_name : "";
+                    return t || a;
                 }
                 _renderSearchBox() {
                     const { searchDisabled: e } = this.state,
-                        a = this._getQueryOrCategory();
-                    return o.createElement(t.Z, { style: N.searchContainer }, o.createElement(n.Z, { Icon: h.default, autoFocus: !0, defaultValue: a, key: a, onChange: this._handleChange, onClear: this._handleClear, onSubmitEditing: this._handleSearch, placeholder: C, ref: this._setTextInputRef, style: N.searchInput, testID: I.Z.gifSearchSearchInput, withClearButton: !0 }), this._shouldRenderResultsOnChange ? null : o.createElement(l.ZP, { disabled: e, onPress: this._handleSubmit, size: "small", style: N.searchButton, type: "brandFilled" }, P));
+                        t = this._getQueryOrCategory();
+                    return r.createElement(o.Z, { style: T.searchContainer }, r.createElement(s.Z, { Icon: h.default, autoFocus: !0, defaultValue: t, key: t, onChange: this._handleChange, onClear: this._handleClear, onSubmitEditing: this._handleSearch, placeholder: Z, ref: this._setTextInputRef, style: T.searchInput, testID: v.Z.gifSearchSearchInput, withClearButton: !0 }), this._shouldRenderResultsOnChange ? null : r.createElement(i.ZP, { disabled: e, onPress: this._handleSubmit, size: "small", style: T.searchButton, type: "brandFilled" }, x));
                 }
             }
-            R.contextType = D.rC;
-            const N = s.default.create((e) => ({ searchContainer: { alignItems: "center", flex: 1, flexDirection: "row", marginVertical: e.spaces.space8 }, searchInput: { height: "100%" }, searchButton: { marginStart: e.spaces.space12 } })),
-                T = k(R);
+            N.contextType = m.rC;
+            const T = l.default.create((e) => ({ searchContainer: { alignItems: "center", flex: 1, flexDirection: "row", marginVertical: e.spaces.space8 }, searchInput: { height: "100%" }, searchButton: { marginStart: e.spaces.space12 } })),
+                P = C(N);
         },
-        74938: (e, a, r) => {
-            r.d(a, { Z: () => o });
-            const o = { gifSearchSearchInput: "gifSearchSearchInput", gifSearchGifImage: "gifSearchGifImage" };
+        74938: (e, t, a) => {
+            a.d(t, { Z: () => r });
+            const r = { gifSearchSearchInput: "gifSearchSearchInput", gifSearchGifImage: "gifSearchGifImage" };
         },
-        663194: (e, a, r) => {
-            r.d(a, { d: () => D, r: () => p });
-            var o = r(392237),
-                t = r(461756),
-                d = r(961817),
-                n = r(992720);
-            const { blue500: l, green500: s, magenta500: i, orange500: c, purple500: h, yellow500: u } = o.default.theme.colors,
-                m = [l, s, c, h, i, u],
-                D = (e = (() => Math.floor(Math.random() * m.length + 1))()) => m[e % m.length],
-                p = (e, a, r) => {
-                    const o = r ?? (0, d.i)();
-                    return (e || ((0, n.Z)(o) && !a)) && !t.Z.reducedMotionEnabled;
+        663194: (e, t, a) => {
+            a.d(t, { d: () => m, r: () => g });
+            var r = a(392237),
+                o = a(461756),
+                n = a(961817),
+                s = a(992720);
+            const { blue500: i, green500: l, magenta500: d, orange500: c, purple500: h, yellow500: u } = r.default.theme.colors,
+                p = [i, l, c, h, d, u],
+                m = (e = (() => Math.floor(Math.random() * p.length + 1))()) => p[e % p.length],
+                g = (e, t, a) => {
+                    const r = a ?? (0, n.i)();
+                    return (e || ((0, s.Z)(r) && !t)) && !o.Z.reducedMotionEnabled;
                 };
         },
-        842485: (e, a, r) => {
-            r.r(a), r.d(a, { Entry: () => I, KeyboardShortcutsScreen: () => S, ShortcutContent: () => k, default: () => C });
-            var o = r(202784),
-                t = r(325686),
-                d = r(386802),
-                n = r(844685),
-                l = r(731708),
-                s = r(392237),
-                i = r(111677),
-                c = r.n(i),
-                h = r(980407),
-                u = r(443781),
-                m = r(163390),
-                D = r(24949),
-                p = r(668214),
-                f = r(919022);
-            const g = (0, p.Z)()
-                    .propsFromState(() => ({ viewerUserScreenName: (0, D.P1)(f.ZP.selectViewerUser, (e) => (e ? e.screen_name : void 0)) }))
+        842485: (e, t, a) => {
+            a.r(t), a.d(t, { Entry: () => v, KeyboardShortcutsScreen: () => M, ShortcutContent: () => C, default: () => Z });
+            var r = a(202784),
+                o = a(325686),
+                n = a(386802),
+                s = a(844685),
+                i = a(731708),
+                l = a(392237),
+                d = a(111677),
+                c = a.n(d),
+                h = a(980407),
+                u = a(443781),
+                p = a(163390),
+                m = a(24949),
+                g = a(668214),
+                f = a(919022);
+            const y = (0, g.Z)()
+                    .propsFromState(() => ({ viewerUserScreenName: (0, m.P1)(f.ZP.selectViewerUser, (e) => (e ? e.screen_name : void 0)) }))
                     .withAnalytics({ page: "keyboard_shortcuts" }),
-                y = c().ef1649e2,
-                M = c().h54e6138,
-                b = c().aefd89c8,
-                w = c().cafdefb2,
-                A = c().add55c98,
-                _ = c().dda42cf2,
-                S = ({ history: e, location: a, viewerUserScreenName: r }) => {
-                    const { userClaims: t } = o.useContext(u.rC),
-                        { isModal: n } = o.useContext(d.Z),
-                        l = (e) => (r ? e : e.filter((e) => e && e.universal)),
-                        s = (0, m.Od)(t.isTrueAndEnabled("subscriptions_feature_1007")),
-                        i = (0, m.OX)(),
-                        c = (0, m.PN)(),
-                        D = l(s),
-                        p = l(i),
-                        f = l(c),
-                        g = [
-                            { headerText: b, shortcuts: D },
-                            { headerText: w, shortcuts: p },
-                            { headerText: A, shortcuts: f },
-                            { headerText: _, shortcuts: [] },
+                b = c().ef1649e2,
+                S = c().h54e6138,
+                _ = c().aefd89c8,
+                E = c().cafdefb2,
+                D = c().add55c98,
+                w = c().dda42cf2,
+                M = ({ history: e, location: t, viewerUserScreenName: a }) => {
+                    const { userClaims: o } = r.useContext(u.rC),
+                        { isModal: s } = r.useContext(n.Z),
+                        i = (e) => (a ? e : e.filter((e) => e && e.universal)),
+                        l = (0, p.Od)(o.isTrueAndEnabled("subscriptions_feature_1007")),
+                        d = (0, p.OX)(),
+                        c = (0, p.PN)(),
+                        m = i(l),
+                        g = i(d),
+                        f = i(c),
+                        y = [
+                            { headerText: _, shortcuts: m },
+                            { headerText: E, shortcuts: g },
+                            { headerText: D, shortcuts: f },
+                            { headerText: w, shortcuts: [] },
                         ];
-                    return o.createElement(h.Z, { documentTitle: y, history: e, isLarge: !0, title: M }, o.createElement(k, { isModal: n, shortcuts: g }));
+                    return r.createElement(h.Z, { documentTitle: b, history: e, isLarge: !0, title: S }, r.createElement(C, { isModal: s, shortcuts: y }));
                 },
-                k = ({ isModal: e, shortcuts: a }) =>
-                    o.createElement(
-                        t.Z,
-                        { style: [E.root, e && E.row] },
-                        a.map(({ headerText: a, shortcuts: r, subtitleText: d }, l) => {
-                            const s = l === r.length - 1,
-                                i = r.length > 1;
-                            return 0 === r.length
+                C = ({ isModal: e, shortcuts: t }) =>
+                    r.createElement(
+                        o.Z,
+                        { style: [A.root, e && A.row] },
+                        t.map(({ headerText: t, shortcuts: a, subtitleText: n }, i) => {
+                            const l = i === a.length - 1,
+                                d = a.length > 1;
+                            return 0 === a.length
                                 ? null
-                                : o.createElement(
-                                      t.Z,
-                                      { key: l, style: [E.section, !s && !e && E.sectionBottomMargin] },
-                                      a ? o.createElement(n.Z, { style: E.moduleHeader, subtext: d, text: a }) : null,
-                                      o.createElement(
-                                          t.Z,
-                                          { role: "table", style: !s && i && e && E.divider },
-                                          r.map((e, a) => o.createElement(I, { description: e.description, key: a, keys: e.keys })),
+                                : r.createElement(
+                                      o.Z,
+                                      { key: i, style: [A.section, !l && !e && A.sectionBottomMargin] },
+                                      t ? r.createElement(s.Z, { style: A.moduleHeader, subtext: n, text: t }) : null,
+                                      r.createElement(
+                                          o.Z,
+                                          { role: "table", style: !l && d && e && A.divider },
+                                          a.map((e, t) => r.createElement(v, { description: e.description, key: t, keys: e.keys })),
                                       ),
                                   );
                         }),
                     ),
-                I = ({ description: e, keys: a }) => {
-                    const r = Array.isArray(a) ? a : [a];
-                    return o.createElement(
-                        t.Z,
-                        { role: "row", style: E.entry },
-                        o.createElement(l.ZP, { role: "cell" }, e),
-                        o.createElement(
-                            t.Z,
-                            { role: "cell", style: E.keyRow },
-                            r.map((e, a) => e.split(" ").map((e, r, t) => o.createElement(o.Fragment, { key: r }, 0 !== a && o.createElement(l.ZP, { style: E.plus }, ", "), o.createElement(l.ZP, { align: "center", style: E.key, withoutTwemojiAndHashflags: !0 }, e), r !== t.length - 1 ? o.createElement(l.ZP, { style: E.plus }, "+") : null))),
+                v = ({ description: e, keys: t }) => {
+                    const a = Array.isArray(t) ? t : [t];
+                    return r.createElement(
+                        o.Z,
+                        { role: "row", style: A.entry },
+                        r.createElement(i.ZP, { role: "cell" }, e),
+                        r.createElement(
+                            o.Z,
+                            { role: "cell", style: A.keyRow },
+                            a.map((e, t) => e.split(" ").map((e, a, o) => r.createElement(r.Fragment, { key: a }, 0 !== t && r.createElement(i.ZP, { style: A.plus }, ", "), r.createElement(i.ZP, { align: "center", style: A.key, withoutTwemojiAndHashflags: !0 }, e), a !== o.length - 1 ? r.createElement(i.ZP, { style: A.plus }, "+") : null))),
                         ),
                     );
                 },
-                E = s.default.create((e) => ({ root: { padding: e.spaces.space12, paddingBottom: e.spaces.space20 }, row: { flexDirection: "row" }, keyRow: { flexDirection: "row", alignItems: "center" }, section: { flexShrink: 1 }, sectionBottomMargin: { marginBottom: e.spaces.space12 }, divider: { borderStyle: "solid", borderEndWidth: e.borderWidths.small, borderColor: e.colors.gray50, paddingEnd: e.spaces.space12, marginEnd: e.spaces.space12 }, entry: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: e.spaces.space12, marginVertical: e.spaces.space2 }, key: { backgroundColor: e.colors.gray0, borderColor: e.colors.gray50, borderRadius: e.borderRadii.small, borderStyle: "solid", borderWidth: e.borderWidths.small, boxShadow: `inset 0 -1px 0 ${e.colors.gray200}`, fontFamily: "monospace, monospace", minWidth: "1.7em", paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space1 }, plus: { marginHorizontal: e.spaces.space2 }, moduleHeader: { paddingStart: e.spaces.space12 } })),
-                C = g(S);
+                A = l.default.create((e) => ({ root: { padding: e.spaces.space12, paddingBottom: e.spaces.space20 }, row: { flexDirection: "row" }, keyRow: { flexDirection: "row", alignItems: "center" }, section: { flexShrink: 1 }, sectionBottomMargin: { marginBottom: e.spaces.space12 }, divider: { borderStyle: "solid", borderEndWidth: e.borderWidths.small, borderColor: e.colors.gray50, paddingEnd: e.spaces.space12, marginEnd: e.spaces.space12 }, entry: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: e.spaces.space12, marginVertical: e.spaces.space2 }, key: { backgroundColor: e.colors.gray0, borderColor: e.colors.gray50, borderRadius: e.borderRadii.small, borderStyle: "solid", borderWidth: e.borderWidths.small, boxShadow: `inset 0 -1px 0 ${e.colors.gray200}`, fontFamily: "monospace, monospace", minWidth: "1.7em", paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space1 }, plus: { marginHorizontal: e.spaces.space2 }, moduleHeader: { paddingStart: e.spaces.space12 } })),
+                Z = y(M);
         },
-        466441: (e, a, r) => {
-            r.r(a), r.d(a, { NotFoundScreen: () => M, default: () => w });
-            r(571372);
-            var o = r(202784),
-                t = r(386802),
-                d = r(108362),
-                n = r(392237),
-                l = r(111677),
-                s = r.n(l),
-                i = r(187669),
-                c = r(449067),
-                h = r(38293),
-                u = r(56851),
-                m = r(652904),
-                D = r(952793),
-                p = r(163889),
-                f = r(725516);
-            const g = s().ba929da8,
-                y = s().d203e242;
-            function M(e) {
-                const { splat: a } = e.match.params,
-                    { isModal: r } = o.useContext(t.Z),
-                    n = (0, D.hC)("responsive_web_report_page_not_found");
+        466441: (e, t, a) => {
+            a.r(t), a.d(t, { NotFoundScreen: () => S, default: () => E });
+            a(571372);
+            var r = a(202784),
+                o = a(386802),
+                n = a(108362),
+                s = a(392237),
+                i = a(111677),
+                l = a.n(i),
+                d = a(187669),
+                c = a(449067),
+                h = a(38293),
+                u = a(56851),
+                p = a(652904),
+                m = a(952793),
+                g = a(163889),
+                f = a(725516);
+            const y = l().ba929da8,
+                b = l().d203e242;
+            function S(e) {
+                const { splat: t } = e.match.params,
+                    { isModal: a } = r.useContext(o.Z),
+                    s = (0, m.hC)("responsive_web_report_page_not_found");
                 return (
-                    (0, i.q)(() => {
-                        n && a && (0, p.ZP)(new Error(`Page not found: ${a}`));
+                    (0, d.q)(() => {
+                        s && t && (0, g.ZP)(new Error(`Page not found: ${t}`));
                     }),
-                    o.createElement(m.Z, null, o.createElement(c.Z.Configure, { backLocation: "/", documentTitle: g, title: y }), o.createElement(d.Z, { style: r && b.modal }, o.createElement(u.Z, null)), o.createElement(h.Z, { title: g, withMeta: !1 }))
+                    r.createElement(p.Z, null, r.createElement(c.Z.Configure, { backLocation: "/", documentTitle: y, title: b }), r.createElement(n.Z, { style: a && _.modal }, r.createElement(u.Z, null)), r.createElement(h.Z, { title: y, withMeta: !1 }))
                 );
             }
-            const b = n.default.create((e) => ({ modal: { backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.xLarge } })),
-                w = (0, f.Z)(M, { page: "not_found" });
+            const _ = s.default.create((e) => ({ modal: { backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.xLarge } })),
+                E = (0, f.Z)(S, { page: "not_found" });
         },
-        537817: (e, a, r) => {
-            r.r(a), r.d(a, { TwitterArticleComposerEmptyState: () => M, default: () => w });
-            r(136728);
-            var o = r(202784),
-                t = r(107267),
-                d = r(457311),
-                n = r(392237),
-                l = r(111677),
-                s = r.n(l),
-                i = r(794057),
-                c = r(689985),
-                h = r(71620),
-                u = r(668214),
-                m = r(143322);
-            const D = (0, u.Z)()
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, h.zr)("CREATE_ARTICLE_ENTITY_BUTTON"), createDraftArticle: m.ZP.create }))
+        537817: (e, t, a) => {
+            a.r(t), a.d(t, { TwitterArticleComposerEmptyState: () => S, default: () => E });
+            a(136728);
+            var r = a(202784),
+                o = a(107267),
+                n = a(457311),
+                s = a(392237),
+                i = a(111677),
+                l = a.n(i),
+                d = a(794057),
+                c = a(689985),
+                h = a(71620),
+                u = a(668214),
+                p = a(143322);
+            const m = (0, u.Z)()
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, h.zr)("CREATE_ARTICLE_ENTITY_BUTTON"), createDraftArticle: p.ZP.create }))
                     .withAnalytics({ page: "article_composer", section: "empty_state" }),
-                p = s().d36447e0,
-                f = s().ca0ed982,
-                g = s().ee9e42aa,
-                y = s().e9a50596,
-                M = ({ analytics: e, createDraftArticle: a, createLocalApiErrorHandler: r }) => {
-                    const n = (0, t.useHistory)();
-                    return o.createElement(d.Z, {
+                g = l().d36447e0,
+                f = l().ca0ed982,
+                y = l().ee9e42aa,
+                b = l().e9a50596,
+                S = ({ analytics: e, createDraftArticle: t, createLocalApiErrorHandler: a }) => {
+                    const s = (0, o.useHistory)();
+                    return r.createElement(n.Z, {
                         buttonLink: c.TC,
-                        buttonText: g,
-                        header: p,
+                        buttonText: y,
+                        header: g,
                         message: f,
                         onButtonPress: () => {
                             e.scribe({ element: "create_button", action: "click" }),
-                                a("", i.kd)
+                                t("", d.kd)
                                     .then((e) => {
-                                        e?.result && "string" == typeof e.result && e.entities?.articleEntities[e.result] && n.push((0, c.lU)(e.entities.articleEntities[e.result].rest_id));
+                                        e?.result && "string" == typeof e.result && e.entities?.articleEntities[e.result] && s.push((0, c.lU)(e.entities.articleEntities[e.result].rest_id));
                                     })
-                                    .catch(r({ showToast: !0, defaultToast: { text: y } }));
+                                    .catch(a({ showToast: !0, defaultToast: { text: b } }));
                         },
-                        style: b.root,
+                        style: _.root,
                     });
                 },
-                b = n.default.create((e) => ({ root: { alignItems: "top", flex: 1, justifyContent: "center", backgroundColor: e.colors.cellBackground } })),
-                w = D(M);
+                _ = s.default.create((e) => ({ root: { alignItems: "top", flex: 1, justifyContent: "center", backgroundColor: e.colors.cellBackground } })),
+                E = m(S);
         },
-        302534: (e, a, r) => {
-            r.r(a), r.d(a, { default: () => Z });
-            r(136728);
-            var o = r(202784),
-                t = r(325686),
-                d = r(154003),
-                n = r(392237),
-                l = r(111677),
-                s = r.n(l),
-                i = r(619738),
-                c = r(161821),
-                h = r(19640),
-                u = r(545457),
-                m = r(496364),
-                D = r(507651),
-                p = r(583909),
-                f = r(293115),
-                g = r(794057),
-                y = r(689985),
-                M = r(71620),
-                b = r(668214),
-                w = r(143322),
-                A = r(390387);
-            const _ = { page: "longform_composer", section: "notes_list" },
-                S = (0, b.Z)()
-                    .propsFromState(() => ({ viewerUserId: A._h }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, M.zr)("COMPOSE_TWITTER_ARTICLE_BUTTON"), createArticleEntity: w.ZP.create }))
-                    .withAnalytics(_);
-            function k(e) {
+        302534: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => k });
+            a(136728);
+            var r = a(202784),
+                o = a(325686),
+                n = a(154003),
+                s = a(392237),
+                i = a(111677),
+                l = a.n(i),
+                d = a(619738),
+                c = a(161821),
+                h = a(19640),
+                u = a(545457),
+                p = a(496364),
+                m = a(507651),
+                g = a(583909),
+                f = a(293115),
+                y = a(794057),
+                b = a(689985),
+                S = a(71620),
+                _ = a(668214),
+                E = a(143322),
+                D = a(390387);
+            const w = { page: "longform_composer", section: "notes_list" },
+                M = (0, _.Z)()
+                    .propsFromState(() => ({ viewerUserId: D._h }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, S.zr)("COMPOSE_TWITTER_ARTICLE_BUTTON"), createArticleEntity: E.ZP.create }))
+                    .withAnalytics(w);
+            function C(e) {
                 const {
-                        location: { pathname: a },
-                        viewerUserId: r,
+                        location: { pathname: t },
+                        viewerUserId: a,
                     } = e,
-                    [d, n] = o.useState(C.DRAFTS);
-                if (!r) return null;
-                const l = (e) => () => d === e,
-                    s = (0, c.Z)(C).map((e) => ({ key: e, label: P[e].label, isActive: l(e), to: { pathname: a }, onClick: () => n(e) }));
-                return o.createElement(
-                    o.Fragment,
+                    [n, s] = r.useState(Z.DRAFTS);
+                if (!a) return null;
+                const i = (e) => () => n === e,
+                    l = (0, c.Z)(Z).map((e) => ({ key: e, label: x[e].label, isActive: i(e), to: { pathname: t }, onClick: () => s(e) }));
+                return r.createElement(
+                    r.Fragment,
                     null,
-                    o.createElement(D.Z, { links: s }),
-                    o.createElement(
-                        t.Z,
-                        { style: I.container },
-                        o.createElement(p.Z, {
-                            emptyStateHeader: P[d].header,
+                    r.createElement(m.Z, { links: l }),
+                    r.createElement(
+                        o.Z,
+                        { style: v.container },
+                        r.createElement(g.Z, {
+                            emptyStateHeader: x[n].header,
                             lifecycle: (() => {
-                                switch (d) {
-                                    case C.PUBLISHED:
+                                switch (n) {
+                                    case Z.PUBLISHED:
                                         return h.f.Published;
-                                    case C.DRAFTS:
+                                    case Z.DRAFTS:
                                     default:
                                         return h.f.Draft;
                                 }
                             })(),
-                            source: g.C0.LONGFORM_COMPOSER,
-                            userId: r,
+                            source: y.C0.LONGFORM_COMPOSER,
+                            userId: a,
                         }),
                     ),
                 );
             }
-            const I = n.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground, flexGrow: 1 } }));
-            const E = s().a5a30af0,
-                C = Object.freeze({ DRAFTS: "Drafts", PUBLISHED: "Published" }),
-                P = { [C.DRAFTS]: { label: s().d4ebc798, header: s().f965e890 }, [C.PUBLISHED]: { label: s().bb40bf66, header: s().c2756718 } },
-                v = o.createElement(i.default, null),
-                Z = S(function (e) {
-                    const { viewerUserId: a } = e;
+            const v = s.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground, flexGrow: 1 } }));
+            const A = l().a5a30af0,
+                Z = Object.freeze({ DRAFTS: "Drafts", PUBLISHED: "Published" }),
+                x = { [Z.DRAFTS]: { label: l().d4ebc798, header: l().f965e890 }, [Z.PUBLISHED]: { label: l().bb40bf66, header: l().c2756718 } },
+                R = r.createElement(d.default, null),
+                k = M(function (e) {
+                    const { viewerUserId: t } = e;
                     (0, u.ph)();
-                    const [r, t] = (function (e) {
-                            const a = o.useRef(() => {});
-                            a.current = function () {
+                    const [a, o] = (function (e) {
+                            const t = r.useRef(() => {});
+                            t.current = function () {
                                 e.analytics.scribe({ element: "create_button", action: "click" }),
                                     e
-                                        .createArticleEntity("", g.kd)
-                                        .then((a) => {
-                                            a?.result && "string" == typeof a.result && a.entities?.articleEntities[a.result] && e.history.push((0, y.lU)(a.entities.articleEntities[a.result].rest_id));
+                                        .createArticleEntity("", y.kd)
+                                        .then((t) => {
+                                            t?.result && "string" == typeof t.result && t.entities?.articleEntities[t.result] && e.history.push((0, b.lU)(t.entities.articleEntities[t.result].rest_id));
                                         })
                                         .catch(e.createLocalApiErrorHandler({ showToast: !0 }));
                             };
-                            const { pathname: r, query: t } = e.location,
-                                d = o.useRef(!1);
+                            const { pathname: a, query: o } = e.location,
+                                n = r.useRef(!1);
                             return (
-                                (d.current = "/compose/articles" === r && "create" === t.action),
-                                o.useLayoutEffect(function () {
-                                    if (!0 === d.current) return a.current();
+                                (n.current = "/compose/articles" === a && "create" === o.action),
+                                r.useLayoutEffect(function () {
+                                    if (!0 === n.current) return t.current();
                                 }, []),
-                                [a.current, d.current]
+                                [t.current, n.current]
                             );
                         })(e),
-                        n = o.useMemo(() => o.createElement(d.ZP, { "aria-label": "create", icon: v, onPress: r, type: "primaryText" }), [r]);
-                    return !a || t ? null : o.createElement(f.nO, { namespace: _ }, o.createElement(m.Z, { rightControl: n, screenType: "root", title: E }, o.createElement(k, e)));
+                        s = r.useMemo(() => r.createElement(n.ZP, { "aria-label": "create", icon: R, onPress: a, type: "primaryText" }), [a]);
+                    return !t || o ? null : r.createElement(f.nO, { namespace: w }, r.createElement(p.Z, { rightControl: s, screenType: "root", title: A }, r.createElement(C, e)));
                 });
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-cf1ec9f3.0587dbaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-cf1ec9f3.3c1cad0a.js.map

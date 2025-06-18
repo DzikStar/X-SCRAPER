@@ -1279,26 +1279,32 @@
                 f("fc7db594", "个人资料概要"),
                 f("c3f04d9c", "思考中"),
                 f("cbdddb0a", "已结束"),
-                f("e98cc293", function (e) {
-                    return "正在搜索 " + e.query;
+                f("ie2bbeed", function (e) {
+                    return 'Searching for "' + e.query + '"';
                 }),
                 f("b0d1e205", function (e) {
                     return "正在搜索**“" + e.query + "”**";
                 }),
-                f("i2e0f4d7", function (e) {
-                    return "正在浏览 " + e.url + " 上的" + e.query;
+                f("bf970edd", function (e) {
+                    return 'Searching 𝕏 for "' + e.query + '"';
+                }),
+                f("g008d475", function (e) {
+                    return "Browsing " + e.url;
+                }),
+                f("c91e3971", function (e) {
+                    return "Browsing " + e.url + ' for "' + e.query + '"';
                 }),
                 f("acb9b845", function (e) {
                     return "浏览 " + e.url + " 以搜索**“" + e.query + "”**";
                 }),
-                f("ef261d8d", function (e) {
-                    return "正在搜索 @" + e.username + " 的帖子";
+                f("j9006405", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username;
                 }),
-                f("f7d9cfb9", function (e) {
-                    return "正在搜索 @" + e.username + " 的帖子中的" + e.query;
+                f("a2dd07e5", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username + ' for "' + e.query + '"';
                 }),
-                f("bec7eb11", function (e) {
-                    return "正在搜索 @" + e.username + ' 的帖子中的 **"' + e.query + '"**';
+                f("e99fb7a3", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username + ' for **"' + e.query + '"**';
                 }),
                 f("ead81122", "出错了，请刷新以重新连接或重试。"),
                 f("f808a13a", "超过频率限制。请稍后再试。"),
@@ -1344,7 +1350,7 @@
                 f("b7cb4fab", "提供翻译"),
                 f("e0bffbf8", "About automatic translation"),
                 f("e839db3a", "忽略"),
-                f("a15585b4", "Language Settings"),
+                f("a15585b4", "语言设置"),
                 f("d4c339b9", function (e) {
                     return "来自 " + e.fullName + " (@" + e.screenName + ") 的帖子";
                 }),
@@ -1914,10 +1920,10 @@
                 f("jcd5ee8a", "编辑块"),
                 f("a8f09fb8", "删除块"),
                 f("i89195ea", "分割线"),
-                f("da8ac57c", "编辑字幕"),
-                f("a8fdd09c", "发布文章"),
-                f("d8047cc8", "发布");
-            f("ff7ddca2", "在发布后，你的文章将显示为帖子。此外，你还可以在个人资料的“文章”选项卡中找到它。"),
+                f("da8ac57c", "编辑字幕");
+            f("a8fdd09c", "发布文章"),
+                f("d8047cc8", "发布"),
+                f("ff7ddca2", "在发布后，你的文章将显示为帖子。此外，你还可以在个人资料的“文章”选项卡中找到它。"),
                 f("ef34d7be", "文章发布后，受众和回复控制无法再编辑。"),
                 f("e52d4998", "选择你的受众"),
                 f("d7985b24", "选择谁可以回复这篇文章"),
@@ -2970,10 +2976,10 @@
                 f("bc6efc72", "隐私政策"),
                 f("h3161192", "Cookie 政策"),
                 f("a7de64de", "广告信息"),
-                f("jb0a4c36", "博客"),
-                f("ce6d095a", "职业"),
-                f("e0adec82", "品牌资源");
-            f("df1b7550", "市场营销"),
+                f("jb0a4c36", "博客");
+            f("ce6d095a", "职业"),
+                f("e0adec82", "品牌资源"),
+                f("df1b7550", "市场营销"),
                 f("he258678", "企业版 X"),
                 f("c6f58084", "开发者"),
                 f("d83f18d2", "目录"),
@@ -3882,10 +3888,10 @@
                 f("c371fb9a", "结束"),
                 f("c0ce822e", "麦克风设置"),
                 f("a2bf8b8a", "切换到收听"),
-                f("caa8d928", "切换噪声抑制"),
-                f("b5d88f0c", "仅限员工"),
-                f("c855ab8e", "仅限订阅者");
-            f("ddeb0a3c", "这里是社群。喜欢这些人吗？来看一看。"),
+                f("caa8d928", "切换噪声抑制");
+            f("b5d88f0c", "仅限员工"),
+                f("c855ab8e", "仅限订阅者"),
+                f("ddeb0a3c", "这里是社群。喜欢这些人吗？来看一看。"),
                 f("e111f531", function (e) {
                     return e.count + " 已收听";
                 }),
@@ -4152,36 +4158,39 @@
                 }),
                 f("ed93de0c", "正在分析帖子"),
                 f("d1d92e40", "更多详情"),
+                f("fbc79f6a", "聊天历史记录"),
                 f("a6e89af8", "打开对话"),
                 f("ica55d24", "新聊天"),
-                f("f794af9a", "趣味模式"),
-                f("eccf9fea", "常规模式"),
+                f("b61ad410", "历史"),
+                f("b3de2628", "没有聊天历史记录"),
+                f("acfbfb28", "你今后的对话将显示在这里。"),
+                f("g02dacc0", "今天"),
+                f("c6e845c0", "昨天"),
+                f("i1147548", "搜索 Grok 历史记录"),
+                f("ab437026", "未找到对话"),
+                f("e12569ec", "尝试搜索其他内容。"),
+                f("hb52cc4a", "请稍后再试。"),
+                f("d4eb0e26", "改名"),
+                f("c64975ea", "你尚未收藏任何对话"),
+                f("a3e3db6e", "点击星星即可保存你经常加入的聊天"),
+                f("f4ae77ac", "没有可用的图片历史记录"),
+                f("d57d337e", "你生成的图像将显示在这里。"),
+                f("j826e722", "保存图片"),
+                f("a9325f10", "复制图片"),
+                f("g0b12442", "未能复制图片"),
+                f("edd0c172", "发布图片"),
+                f("d1d3a41a", "编辑图片"),
+                f("c26b9b9c", "文件"),
+                f("g10600b0", "菜单"),
                 f("g7b1c574", "重置为默认值"),
                 f("f388a7ec", "DeepSearch"),
                 f("ab1eb384", "选择所需的搜索模式"),
                 f("i330e54c", "高级搜索和推理"),
                 f("fdcce108", "DeeperSearch"),
                 f("ac64b674", "拓展搜索，更多推理"),
-                f("j22655f2", "随便问点什么"),
-                f("h0681e3e", "与我们的 AI 助手 Grok 交谈"),
-                f("d593fd78", "它能回答你的问题、搜索 X 和生成图片"),
-                f("d0205a24", "核实事实"),
-                f("ed4177c4", "Grok 可能会自以为是地提供与事实不符的信息、错误概括或遗漏某些内容。你应自行核实任何信息。"),
-                f("c0ff98f8", "AI 训练和个性化"),
-                f("f1a8218a", "我们可能会利用你的 X 数据以及你与 Grok 的互动、输入和结果来进行模型训练、微调并个性化你的 Grok 体验。你可以使用 X 设置选择退出。要了解更多信息，请访问我们的帮助中心。"),
-                f("bcbf5b6e", "分享"),
-                f("j7b5c844", "你要对自己公开分享的对话内容负责。避免在与 Grok 的对话中分享有关你自己或他人的敏感和机密信息（请参阅我们的帮助中心）。"),
-                f("c9f7c196", "帮助中心"),
+                f("a2697040", "描述图片中需要更改的内容"),
                 f("c65f7308", "服务器现在正热得发烫。"),
                 f("f2a8655e", "Grok 高级工具当前不可用。"),
-                f("c26b9b9c", "文件"),
-                f("g10600b0", "菜单"),
-                f("j826e722", "保存图片"),
-                f("a9325f10", "复制图片"),
-                f("g0b12442", "未能复制图片"),
-                f("edd0c172", "发布图片"),
-                f("d1d3a41a", "编辑图片"),
-                f("a2697040", "描述图片中需要更改的内容"),
                 f("ge1cefc4", "工具"),
                 f("e9b6d404", "Grok 应该使用哪些搜索工具？"),
                 f("h15dce2e", "高级设置"),
@@ -4196,60 +4205,25 @@
                 f("e4ae6abe", "让 Grok 为你修图"),
                 f("e8ade5e2", "选择个性"),
                 f("b5df32b0", "问 Grok 问题"),
+                f("dab087ee", "聊天"),
+                f("a911623c", "图像"),
+                f("f794af9a", "趣味模式"),
+                f("eccf9fea", "常规模式"),
+                f("j22655f2", "随便问点什么"),
+                f("h0681e3e", "与我们的 AI 助手 Grok 交谈"),
+                f("d593fd78", "它能回答你的问题、搜索 X 和生成图片"),
+                f("d0205a24", "核实事实"),
+                f("ed4177c4", "Grok 可能会自以为是地提供与事实不符的信息、错误概括或遗漏某些内容。你应自行核实任何信息。"),
+                f("c0ff98f8", "AI 训练和个性化"),
+                f("f1a8218a", "我们可能会利用你的 X 数据以及你与 Grok 的互动、输入和结果来进行模型训练、微调并个性化你的 Grok 体验。你可以使用 X 设置选择退出。要了解更多信息，请访问我们的帮助中心。"),
+                f("bcbf5b6e", "分享"),
+                f("j7b5c844", "你要对自己公开分享的对话内容负责。避免在与 Grok 的对话中分享有关你自己或他人的敏感和机密信息（请参阅我们的帮助中心）。"),
+                f("c9f7c196", "帮助中心"),
                 f("fb3b9776", "此用户对 Grok 的输出结果进行了定制。"),
-                f("ca93f2ee", "私信已被删除。"),
-                f("b8c06820", "复制文本"),
-                f("ca0f5894", "不喜欢"),
-                f("ja8d189e", "想要文字答案"),
-                f("e951f04e", "想要图片"),
-                f("c503b35e", "想要不同的图片"),
-                f("d4371c92", "代码不正确"),
-                f("dbe8586e", "想要不同的代码"),
-                f("e360eb4a", "不想要代码"),
-                f("a18657ca", "数学错误"),
-                f("b8b86300", "不想要数学"),
-                f("e4c34788", "答案不正确"),
-                f("b220a8c8", "想要点别的"),
-                f("b115fd18", "答案有偏见"),
-                f("dc637214", "风格/语气不佳"),
-                f("f02e6d42", "想要搜索"),
-                f("bbec6bba", "搜索结果不佳"),
-                f("b494d088", "不想搜索"),
-                f("a44974f2", "看不懂图片"),
-                f("bd44a8a8", "告诉我们更多"),
-                f("fcdbe764", "Grok 还能在哪些方面做得更好？"),
-                f("bb6adb22", "说明问题所在"),
-                f("h0fa15f2", "感谢你的反馈！"),
-                f("d700b268", "引用的聊天"),
-                f("cd7bdab2", "忽略对话并不会将它们从历史记录中删除"),
-                f("f21b84de", "引用已忽略"),
-                f("i52a9cb8", "没有要显示的记录。"),
-                f("d9d36880", "忽略"),
-                f("g02dacc0", "今天"),
-                f("c6e845c0", "昨天"),
-                f("a5fa4a86", "1 月"),
-                f("c51724a4", "2 月"),
-                f("j244ceb2", "3 月"),
-                f("b22b12e0", "4 月"),
-                f("h3023cac", "5 月"),
-                f("b10dbffa", "6 月"),
-                f("c81da1b6", "7 月"),
-                f("d4e4d3ce", "8 月"),
-                f("c3418f9a", "9 月"),
-                f("b64dada6", "10 月"),
-                f("ad24ec20", "11 月"),
-                f("c7902252", "12 月"),
-                f("idf94bac", "重新生成"),
-                f("f7614f92", "不搜索"),
-                f("c5ade3ba", "搜索"),
-                f("c16e5b1a", "不生成图片"),
-                f("i2ca65fa", "生成图片"),
-                f("d3927f88", "帖子链接"),
-                f("be37ecd4", "未能复制到剪贴板"),
-                f("h708a4c0", "分享对话"),
-                f("g06a67e2", "共享页面将包括到此为止的消息"),
-                f("a0428662", "没有帮助"),
-                f("fe4fd310", "有帮助"),
+                f("b0a889d4", "As Image"),
+                f("a111fb48", "As Spreadsheet"),
+                f("bccc65f0", "Grok can make mistakes. Always check original sources."),
+                f("bd202fe6", "Generating card"),
                 f("bfd161bc", "比较"),
                 f("j5dcf1b2", "已更新"),
                 f("a50aaa10", "盘前"),
@@ -4281,6 +4255,9 @@
                 f("dd679fb1", function (e) {
                     return "历史低点" + e.ttc_stock_details;
                 }),
+                f("ha9c4cf8", "View source"),
+                f("ecad5d78", "Save image"),
+                f("d2d1d398", "已复制！"),
                 f("a22063d2", "共享你的位置以提高准确性。"),
                 f("db3248a8", "载入位置"),
                 f("ffe0e588", "分享位置"),
@@ -4314,6 +4291,65 @@
                 f("d66bf142", "星期四"),
                 f("dc17968a", "星期五"),
                 f("j310a2d6", "星期六"),
+                f("afa2a58e", "See all posts"),
+                f("fc83e7e2", "See all users"),
+                f("df601d92", "Relevant Users"),
+                f("b001fa12", "Source query"),
+                f("db6c20cf", function (e) {
+                    return "Show all (" + e.count + ")";
+                }),
+                f("d7cb5408", "相关网页"),
+                f("ca93f2ee", "私信已被删除。"),
+                f("b8c06820", "复制文本"),
+                f("ca0f5894", "不喜欢"),
+                f("ja8d189e", "想要文字答案"),
+                f("e951f04e", "想要图片"),
+                f("c503b35e", "想要不同的图片"),
+                f("d4371c92", "代码不正确"),
+                f("dbe8586e", "想要不同的代码"),
+                f("e360eb4a", "不想要代码"),
+                f("a18657ca", "数学错误"),
+                f("b8b86300", "不想要数学"),
+                f("e4c34788", "答案不正确"),
+                f("b220a8c8", "想要点别的"),
+                f("b115fd18", "答案有偏见"),
+                f("dc637214", "风格/语气不佳"),
+                f("f02e6d42", "想要搜索"),
+                f("bbec6bba", "搜索结果不佳"),
+                f("b494d088", "不想搜索"),
+                f("a44974f2", "看不懂图片"),
+                f("bd44a8a8", "告诉我们更多"),
+                f("fcdbe764", "Grok 还能在哪些方面做得更好？"),
+                f("bb6adb22", "说明问题所在"),
+                f("h0fa15f2", "感谢你的反馈！"),
+                f("d700b268", "引用的聊天"),
+                f("cd7bdab2", "忽略对话并不会将它们从历史记录中删除"),
+                f("f21b84de", "引用已忽略"),
+                f("i52a9cb8", "没有要显示的记录。"),
+                f("d9d36880", "忽略"),
+                f("a5fa4a86", "1 月"),
+                f("c51724a4", "2 月"),
+                f("j244ceb2", "3 月"),
+                f("b22b12e0", "4 月"),
+                f("h3023cac", "5 月"),
+                f("b10dbffa", "6 月"),
+                f("c81da1b6", "7 月"),
+                f("d4e4d3ce", "8 月"),
+                f("c3418f9a", "9 月"),
+                f("b64dada6", "10 月"),
+                f("ad24ec20", "11 月"),
+                f("c7902252", "12 月"),
+                f("idf94bac", "重新生成"),
+                f("f7614f92", "不搜索"),
+                f("c5ade3ba", "搜索"),
+                f("c16e5b1a", "不生成图片"),
+                f("i2ca65fa", "生成图片"),
+                f("d3927f88", "帖子链接"),
+                f("be37ecd4", "未能复制到剪贴板"),
+                f("h708a4c0", "分享对话"),
+                f("g06a67e2", "共享页面将包括到此为止的消息"),
+                f("a0428662", "没有帮助"),
+                f("fe4fd310", "有帮助"),
                 f("eaf55eb4", "显示思考过程"),
                 f("b1ac6016", "已完成 DeepSearch"),
                 f("f766feca", "完成的 DeeperSearch"),
@@ -4331,23 +4367,23 @@
                 f("db832e38", "请在浏览器设置中启用通知"),
                 f("a910cac6", "启用通知时遇到问题"),
                 f("be30b6ee", "连接不稳定"),
-                f("b52484b6", "正在搜索..."),
+                f("ge15b488", "Show thoughts"),
+                f("aa7c96bb", function (e) {
+                    return "查看另外 " + e.numResults + " 条";
+                }),
                 f("a4d9dbfa", "想法"),
+                f("j1ab5f40", "点击阅读"),
+                f("f5a2377e", "正在思考 "),
+                f("g3ce0132", "已经思考"),
+                f("f8007364", "展开详情"),
+                f("ca53f780", "收起详情"),
+                f("b52484b6", "正在搜索..."),
                 f("ib1c5475", function (e) {
                     return "已经思考 " + e.minutes + " 分 " + e.seconds + " 秒";
                 }),
                 f("a15d62db", function (e) {
                     return "已经思考 " + e.seconds + " 秒";
                 }),
-                f("d7cb5408", "相关网页"),
-                f("aa7c96bb", function (e) {
-                    return "查看另外 " + e.numResults + " 条";
-                }),
-                f("j1ab5f40", "点击阅读"),
-                f("f5a2377e", "正在思考 "),
-                f("g3ce0132", "已经思考"),
-                f("f8007364", "展开详情"),
-                f("ca53f780", "收起详情"),
                 f("ha8fbe22", "升级 Premium 以生成更多图片"),
                 f("d95c232a", "你已达到限额。立即升级以生成更多内容。"),
                 f("h2671312", "订阅 Premium 可享更多 Grok 提问机会"),
@@ -4894,8 +4930,8 @@
                 f("fbc79a40", "空间概览"),
                 f("d077112a", "空间统计"),
                 f("cf3709da", "状态"),
-                f("e797dc32", "流时间 "),
-                f("b649d8cc", "仅限订阅者"),
+                f("e797dc32", "流时间 ");
+            f("b649d8cc", "仅限订阅者"),
                 f("j9282130", "直播缩略图"),
                 f("g629b8b0", "超时"),
                 f("eb87323c", "这将显示自直播开始以来所选时间段的分析数据。"),
@@ -4924,8 +4960,8 @@
                 f("a532072a", "观众"),
                 f("d9508ab0", "次观看"),
                 f("d9f9dec0", "查看空间"),
-                f("h0c1f37a", "查看空间分析");
-            f("e41fffbc", "你视频的总观看时间。"),
+                f("h0c1f37a", "查看空间分析"),
+                f("e41fffbc", "你视频的总观看时间。"),
                 f("if2909ba", "观看时间"),
                 f("i0e5bf4c", "您的视频"),
                 f("ed99baea", "抢先体验测试版"),
@@ -5846,8 +5882,8 @@
                 f("hf68e810", "社群附注是一个计划，旨在帮助用户获得更加丰富的资讯。它让 X 用户能够互相协作，为可能具有误导性的帖子添加有用的附注。"),
                 f("jdb52860", "贡献者撰写附注并进行评价"),
                 f("c104025c", "贡献者都是像你一样的 X 用户，他们选择加入试用计划，以便撰写附注并进行评价。参与的人越多，计划就会越好。"),
-                f("j7872b8c", "只有大家认为有帮助的附注才会出现在帖子上"),
-                f("fb59415e", "为了公开显示帖子的背景信息，一条附注需要被足够多的人从不同的角度评为有用。这种方法有助于避免偏见和操纵，并有助于找出对很多人都有帮助的附注。"),
+                f("j7872b8c", "只有大家认为有帮助的附注才会出现在帖子上");
+            f("fb59415e", "为了公开显示帖子的背景信息，一条附注需要被足够多的人从不同的角度评为有用。这种方法有助于避免偏见和操纵，并有助于找出对很多人都有帮助的附注。"),
                 f("f9a44022", "X 公司不会选择要显示的内容：交给用户来选择"),
                 f("gdf4fbb2", "X 公司不会撰写、评价或审核附注（除非它们违反了 X 规则）。我们相信，让大家共同来做这些选择是一种公平并且有效的方式，可以丰富信息，从而帮助人们更好地关注最新资讯。"),
                 f("cc720e6a", "社群附注建立在数据透明度基础上"),
@@ -5878,8 +5914,8 @@
                     return e.query + " 没有搜索到结果";
                 }),
                 f("f191a2ba", "搜索设置"),
-                f("a068008a", "文件夹暂时无法载入");
-            f("f075b0e8", "编辑文件夹"),
+                f("a068008a", "文件夹暂时无法载入"),
+                f("f075b0e8", "编辑文件夹"),
                 f("beba2a0e", "创建新书签文件夹"),
                 f("e41c9b4f", function (e) {
                     return "已保存至 " + e.bookmarkFolderName;
@@ -5924,7 +5960,6 @@
                 f("d7346632", "你尚未加入任何社群"),
                 f("b732a4cc", "当你这样做时，就会在这里看到他们的帖子。"),
                 f("hff48914", "目前未找到任何帖子。"),
-                f("hb52cc4a", "请稍后再试。"),
                 f("e50e1bb0", "欢迎来到社群"),
                 f("i6829daa", "社群是由版主管理的讨论群组，X 用户可以在这里沟通和分享。"),
                 f("fc5c6914", "认识其他兴趣相投的人"),
@@ -6498,26 +6533,13 @@
                 f("e5f4eac0", "你的内容会更容易被发现。而且你会出现在搜索结果和趋势中。"),
                 f("c7832a72", "直接与其他人联系"),
                 f("i1ccd17a", "向没有关注你的人发送私信而不会被自动过滤。"),
+                f("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
                 f("hc965308", "趣味"),
                 f("eb78b77e", "趣味模式"),
                 f("aa8ece10", "尝试 grok.com"),
                 f("gb5fb7d0", "专注模式"),
                 f("g5665caa", "退出专注模式"),
                 f("a372681e", "复制分享链接"),
-                f("fbc79f6a", "聊天历史记录"),
-                f("b61ad410", "历史"),
-                f("b3de2628", "没有聊天历史记录"),
-                f("acfbfb28", "你今后的对话将显示在这里。"),
-                f("i1147548", "搜索 Grok 历史记录"),
-                f("ab437026", "未找到对话"),
-                f("e12569ec", "尝试搜索其他内容。"),
-                f("d4eb0e26", "改名"),
-                f("c64975ea", "你尚未收藏任何对话"),
-                f("a3e3db6e", "点击星星即可保存你经常加入的聊天"),
-                f("f4ae77ac", "没有可用的图片历史记录"),
-                f("d57d337e", "你生成的图像将显示在这里。"),
-                f("dab087ee", "聊天"),
-                f("a911623c", "图像"),
                 f("ae9cdac6", "聊天历史记录"),
                 f("b198a392", "Grok 对话"),
                 f("d16329b4", "复制对话"),
@@ -6868,8 +6890,8 @@
                 f("b2c213e0", "超出字符数限制"),
                 f("d84e9c2a", "介绍该职位的预期工作承诺类型。"),
                 f("bc8b300c", "工作职能"),
-                f("d1eedb50", "帮助候选人了解该职位负责的领域。"),
-                f("eaf3ce64", "团队"),
+                f("d1eedb50", "帮助候选人了解该职位负责的领域。");
+            f("eaf3ce64", "团队"),
                 f("b36cd50e", "指明候选人被聘用后将与之共事的核心团队。"),
                 f("d3a427ce", "选择所要求的经验水平。"),
                 f("i7174442", "工作描述"),
@@ -6884,8 +6906,8 @@
                 f("c05176ec", "如果是现场工作，请输入工作地点。如果是远程职位，请描述候选人的工作地点。"),
                 f("d70c24d4", "用于帮助候选人搜索你的工作机会。"),
                 f("de1c4376", "薪资范围"),
-                f("hf352d42", "添加将向候选人显示的可选薪资范围。如果你选择不添加，请注意招聘地区的薪酬透明度法律。");
-            f("ede7d0a2", "货币"),
+                f("hf352d42", "添加将向候选人显示的可选薪资范围。如果你选择不添加，请注意招聘地区的薪酬透明度法律。"),
+                f("ede7d0a2", "货币"),
                 f("b925c18c", "薪资类型"),
                 f("j3d242ce", "无效范围"),
                 f("f4d07bd2", "包含可让候选人更容易通过搜索发现相关职位的可选详细信息。"),
@@ -7840,31 +7862,7 @@
                 f("b5099e33", function (e) {
                     return "@" + e.screenName + " 尚无任何认证关注者。";
                 }),
-                f("ec251f36", "当你知道有人关注他们时，关注者将在此处列出。"),
-                f("f8af4f48", "一旦关注账号，他们就会出现在这里。"),
-                f("fd0aad94", "如果有通过认证的用户关注了这个账号，他们就会显示在这里。"),
-                f("b84f6df1", function (e) {
-                    return "赠送 Premium 限时可享 " + e.percentage + "% 优惠";
-                }),
-                f("cfcac293", function (e) {
-                    return "赠送和支付 " + e.price;
-                }),
-                f("d7a73450", "级别"),
-                f("hbd2c24e", "这个账号目前没有接受礼物的资格。"),
-                f("f3fddc98", "购买者条款"),
-                f("cff9c889", "了解更多"),
-                f("c65dda96", "你的赠送订阅已送出。"),
-                f("f6e2a407", function (e) {
-                    return "允许任何人在你回复 @" + e.screenName + " 的帖子时看到你的订阅徽章";
-                }),
-                f("j8dedddd", function (e) {
-                    return "如果你把它关闭，那么在你回复 @" + e.screenName + " 的任何订阅者专享帖子时，@" + e.screenName + " 和他们的订阅者仍会看到你的徽章。@" + e.screenName + " 会始终看到你的徽章。";
-                }),
-                f("c8a513f6", "取消订阅"),
-                f("ea000ec8", "已经取消你的订阅？"),
-                f("d7b8387e", "如果你已经取消，那就不用再做什么了。你的订阅将在账单周期结束时自动失效。"),
-                f("f4166d9a", "想取消你的订阅吗？"),
-                f("b74ff5fc", "如果取消，你的订阅将在账单周期结束时自动失效。");
+                f("ec251f36", "当你知道有人关注他们时，关注者将在此处列出。");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var f = c[a];
@@ -7903,7 +7901,31 @@
                     r(e, c)
                 );
             }
-            f("ee9efbc8", "继续取消"),
+            f("f8af4f48", "一旦关注账号，他们就会出现在这里。"),
+                f("fd0aad94", "如果有通过认证的用户关注了这个账号，他们就会显示在这里。"),
+                f("b84f6df1", function (e) {
+                    return "赠送 Premium 限时可享 " + e.percentage + "% 优惠";
+                }),
+                f("cfcac293", function (e) {
+                    return "赠送和支付 " + e.price;
+                }),
+                f("d7a73450", "级别"),
+                f("hbd2c24e", "这个账号目前没有接受礼物的资格。"),
+                f("f3fddc98", "购买者条款"),
+                f("cff9c889", "了解更多"),
+                f("c65dda96", "你的赠送订阅已送出。"),
+                f("f6e2a407", function (e) {
+                    return "允许任何人在你回复 @" + e.screenName + " 的帖子时看到你的订阅徽章";
+                }),
+                f("j8dedddd", function (e) {
+                    return "如果你把它关闭，那么在你回复 @" + e.screenName + " 的任何订阅者专享帖子时，@" + e.screenName + " 和他们的订阅者仍会看到你的徽章。@" + e.screenName + " 会始终看到你的徽章。";
+                }),
+                f("c8a513f6", "取消订阅"),
+                f("ea000ec8", "已经取消你的订阅？"),
+                f("d7b8387e", "如果你已经取消，那就不用再做什么了。你的订阅将在账单周期结束时自动失效。"),
+                f("f4166d9a", "想取消你的订阅吗？"),
+                f("b74ff5fc", "如果取消，你的订阅将在账单周期结束时自动失效。"),
+                f("ee9efbc8", "继续取消"),
                 f("c5d9c77a", "看起来有点小插曲。不过别担心，这不是你的错。关闭这个窗口并重试。"),
                 f("jda53c24", "你可以通过 Apple App Store 来取消订阅。"),
                 f("g0a7a53e", "你可以通过 Google Play Store 来取消订阅。"),
@@ -8874,8 +8896,8 @@
                 f("faf9f484", "广告"),
                 f("ae2ea9e7", function (e) {
                     return "来自 " + e.advertiserName + " 的广告";
-                }),
-                f("hea01798", "进度拖动条"),
+                });
+            f("hea01798", "进度拖动条"),
                 f("f8a09386", "在 Periscope 上观看"),
                 f("gf2b6eee", "画中画"),
                 f("b3160a69", function (e) {
@@ -8900,10 +8922,10 @@
                 }),
                 f("g60001bb", function (e) {
                     return "查看 " + e.advertiserName;
-                });
-            f("dff1ddd9", function (e) {
-                return "查看 @" + e.advertiserName;
-            }),
+                }),
+                f("dff1ddd9", function (e) {
+                    return "查看 @" + e.advertiserName;
+                }),
                 f("b0b22805", function (e) {
                     return "访问 " + e.advertiserName;
                 }),
@@ -10170,7 +10192,7 @@
                         {
                             key: "b6411d33",
                             get: function () {
-                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
+                                return ["根据你的 X 使用情况和语言设置，" + this.props.sourceLang + " 将由 Grok 自动翻译。要选择自动翻译的语言，请访问", "。"];
                             },
                         },
                         {
@@ -13216,9 +13238,9 @@
                 (m.b851591870 = k({ 1: m("zh").numberFormatter({ raw: "0" }), 2: m("zh").numberFormatter({ raw: "00" }) }, { pattern: "ah:mm", timeSeparator: ":", dayPeriods: { am: "上午", pm: "下午" } })),
                 (m.b1834047244 = k({ 1: m("zh").numberFormatter({ raw: "0" }), 2: m("zh").numberFormatter({ raw: "00" }) }, { pattern: "Eah:mm", timeSeparator: ":", days: { E: { 1: { sun: "周日", mon: "周一", tue: "周二", wed: "周三", thu: "周四", fri: "周五", sat: "周六" } } }, dayPeriods: { am: "上午", pm: "下午" } })),
                 (m.b221685659 = k({ 1: m("zh").numberFormatter({ raw: "0" }) }, { pattern: "y年M月", timeSeparator: ":" })),
+                (m.b2058894522 = k({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "星期日", mon: "星期一", tue: "星期二", wed: "星期三", thu: "星期四", fri: "星期五", sat: "星期六" } } } })),
                 (m.a423744082 = k({ 1: m("zh").numberFormatter({ raw: "0" }) }, { pattern: "y年M月d日", timeSeparator: ":" })),
                 (m.a982827334 = k({}, { pattern: "LLLL", timeSeparator: ":", months: { L: { 4: { 1: "一月", 2: "二月", 3: "三月", 4: "四月", 5: "五月", 6: "六月", 7: "七月", 8: "八月", 9: "九月", 10: "十月", 11: "十一月", 12: "十二月" } } } })),
-                (m.b2058894522 = k({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "星期日", mon: "星期一", tue: "星期二", wed: "星期三", thu: "星期四", fri: "星期五", sat: "星期六" } } } })),
                 (m.a592105446 = p(m("zh").dateToPartsFormatter({ skeleton: "MMMd" }))),
                 (m.a530281911 = p(m("zh").dateToPartsFormatter({ skeleton: "yMMMd" }))),
                 (m.a1630931512 = p(m("zh").dateToPartsFormatter({ skeleton: "hm" }))),
@@ -13238,9 +13260,9 @@
                 (m.a1338192523 = p(m("zh").dateToPartsFormatter({ time: "short" }))),
                 (m.b1985220611 = p(m("zh").dateToPartsFormatter({ skeleton: "Ehm" }))),
                 (m.a529596718 = p(m("zh").dateToPartsFormatter({ skeleton: "yMMMM" }))),
+                (m.a1844665693 = p(m("zh").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (m.b412416471 = p(m("zh").dateToPartsFormatter({ date: "medium" }))),
                 (m.a591420253 = p(m("zh").dateToPartsFormatter({ skeleton: "MMMM" }))),
-                (m.a1844665693 = p(m("zh").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (m.b79618053 = N(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-other": "{0}天后" }, "relativeTime-type-past": { "relativeTimePattern-count-other": "{0}天前" }, "relative-type--2": "前天", "relative-type--1": "昨天", "relative-type-0": "今天", "relative-type-1": "明天", "relative-type-2": "后天" })),
                 (m.b418507296 = j(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "每{1}{0}", unitProperties: { displayName: "秒钟", other: "{0}秒钟", perUnitPattern: "{0}/秒" } })),
                 (m.a1989496704 = j(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "每{1}{0}", unitProperties: { displayName: "分钟", other: "{0}分钟", perUnitPattern: "每分钟{0}" } })),
@@ -13372,14 +13394,14 @@
                 f("b6ca7bcb", m.a1338192523),
                 f("h0e4cdf5", m.b1985220611),
                 f("g727ddcf", m.a529596718),
+                f("f3b9b9a7", m.a1844665693),
                 f("h3629783", m.b412416471),
                 f("a20c68af", m.a591420253),
                 f("ja781451", m.b1219321949),
                 f("cfa1a7b9", m.b1080407994),
-                f("f3b9b9a7", m.a1844665693),
                 f("eefcd267", m.b1635139704),
                 f("fa8afc43", m.b666135319);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.b885b5fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.6bd60f3a.js.map

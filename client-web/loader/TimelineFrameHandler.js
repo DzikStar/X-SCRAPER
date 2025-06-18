@@ -22,6 +22,24 @@
                 },
                 c = a.iH({ component: o }).getHandler();
         },
+        401339: (e, t, r) => {
+            r.d(t, { Z: () => n });
+            const a = {},
+                s = ["touchend", "touchmove", "touchstart"];
+            const n = {
+                isTouchSupported: () =>
+                    s.some(
+                        (e) =>
+                            !!(function (e, t) {
+                                if (void 0 !== a[e]) return a[e];
+                                const r = document.createElement(t || "div"),
+                                    s = `on${e}`;
+                                let n = s in r;
+                                return n || (r.setAttribute(s, "return;"), (n = "function" == typeof r[s])), (a[e] = n), n;
+                            })(e),
+                    ),
+            };
+        },
         738584: (e, t, r) => {
             r.d(t, { o: () => h, Z: () => g });
             var a = r(807896),
@@ -31,12 +49,12 @@
                 l = r(392237),
                 o = r(893164),
                 c = r(395367),
-                p = r(908478);
-            function u(e) {
+                u = r(908478);
+            function p(e) {
                 let t = d(e);
                 return (e) => {
                     const r = d(e);
-                    return (0, p.Z)(t, r) || (t = r), t;
+                    return (0, u.Z)(t, r) || (t = r), t;
                 };
             }
             function d(e) {
@@ -54,7 +72,7 @@
             class y extends s.Component {
                 constructor(...e) {
                     super(...e),
-                        (this._cache = { stablePlayerState: u(null) }),
+                        (this._cache = { stablePlayerState: p(null) }),
                         (this.state = { hasError: null, guestsState: null, playerApi: null, playerState: null, stablePlayerState: null }),
                         (this._renderCustomOverlay = () => {
                             const { children: e, enablePiP: t } = this.props,
@@ -88,12 +106,12 @@
                 }
                 render() {
                     const { guestsState: e, playerApi: t, playerState: r, stablePlayerState: n } = this.state,
-                        { additionalBadges: l, aspectRatio: p, basePlayerClass: u, children: d, includeDisputeLinkInCopyrightErrorMessage: h, isFullScreen: g, objectFitVideo: b, onApiReady: S, onScroll: f, onStateUpdate: C, playerId: _, size: P, ...E } = this.props,
+                        { additionalBadges: l, aspectRatio: u, basePlayerClass: p, children: d, includeDisputeLinkInCopyrightErrorMessage: h, isFullScreen: g, objectFitVideo: b, onApiReady: S, onScroll: f, onStateUpdate: C, playerId: _, size: P, ...E } = this.props,
                         v = { aspectRatio: this.props.aspectRatio, guestsState: e, playerApi: t, playerState: r, containerRef: this._containerRef },
                         R = { ...v, playerState: n };
                     return s.createElement(
                         i.Z,
-                        { isFullScreen: g, onScroll: f, ratio: p, style: [m.root, m[P]] },
+                        { isFullScreen: g, onScroll: f, ratio: u, style: [m.root, m[P]] },
                         this.state.hasError
                             ? s.createElement(o.Z, { onReloadPress: this._handleReload })
                             : s.createElement(
@@ -102,7 +120,7 @@
                                   s.createElement(
                                       y.PeriodicContext.Provider,
                                       { value: v },
-                                      s.createElement(c.Z.RegistrationContext.Consumer, null, ({ registerPlayer: e }) => s.createElement(u, (0, a.Z)({}, E, { customOverlay: this._renderCustomOverlay(), displayOptions: { objectFitVideo: b }, setPlayerApi: this._handlePlayerApi(e) }))),
+                                      s.createElement(c.Z.RegistrationContext.Consumer, null, ({ registerPlayer: e }) => s.createElement(p, (0, a.Z)({}, E, { customOverlay: this._renderCustomOverlay(), displayOptions: { objectFitVideo: b }, setPlayerApi: this._handlePlayerApi(e) }))),
                                   ),
                               ),
                     );
@@ -180,15 +198,15 @@
                 l = r(355830),
                 o = r(731708),
                 c = r(154003),
-                p = r(992942),
-                u = r(392237);
+                u = r(992942),
+                p = r(392237);
             const d = i().a9edea48;
             function h(e) {
                 const { displayBackgroundImage: t = !1, errorMessage: r, iconPlayError: n, imageSrc: i, onReloadPress: h } = e;
-                return a.createElement(s.Z, { style: [u.default.absoluteFill, t ? null : y.blankOverlay] }, t ? a.createElement(a.Fragment, null, a.createElement(s.Z, { style: y.backgroundImage }, i && a.createElement(p.Z, { resizeMode: "cover", source: i, style: u.default.absoluteFill })), a.createElement(s.Z, { style: y.overlay })) : null, a.createElement(s.Z, { style: y.errorContainer }, a.createElement(s.Z, null, n ? a.createElement(l.default, { style: y.playErrorIcon }) : null), a.createElement(s.Z, { focusable: !0 }, a.createElement(o.ZP, { style: t ? y.errorMsgTextWhite : y.errorMsgTextGray }, r)), h ? a.createElement(c.ZP, { onPress: h, style: y.buttonContainer, type: "brandFilled" }, d) : null));
+                return a.createElement(s.Z, { style: [p.default.absoluteFill, t ? null : y.blankOverlay] }, t ? a.createElement(a.Fragment, null, a.createElement(s.Z, { style: y.backgroundImage }, i && a.createElement(u.Z, { resizeMode: "cover", source: i, style: p.default.absoluteFill })), a.createElement(s.Z, { style: y.overlay })) : null, a.createElement(s.Z, { style: y.errorContainer }, a.createElement(s.Z, null, n ? a.createElement(l.default, { style: y.playErrorIcon }) : null), a.createElement(s.Z, { focusable: !0 }, a.createElement(o.ZP, { style: t ? y.errorMsgTextWhite : y.errorMsgTextGray }, r)), h ? a.createElement(c.ZP, { onPress: h, style: y.buttonContainer, type: "brandFilled" }, d) : null));
             }
-            const y = u.default.create((e) => ({ backgroundImage: { ...u.default.absoluteFillObject, filter: "blur(5px)" }, overlay: { ...u.default.absoluteFillObject, backgroundColor: e.colors.translucentBlack77 }, blankOverlay: { backgroundColor: e.colors.gray0 }, buttonContainer: { justifyContent: "center", alignSelf: "center" }, errorContainer: { justifyContent: "center", height: "100%", marginHorizontal: e.spaces.space32 }, errorMsgTextWhite: { color: e.colors.white, textAlign: "center", marginBottom: e.spaces.space20 }, errorMsgTextGray: { color: e.colors.gray700, textAlign: "center", marginBottom: e.spaces.space20 }, playErrorIcon: { fill: e.colors.gray700, height: e.spaces.space48, width: e.spaces.space48, marginHorizontal: "auto", paddingBottom: e.spaces.space20, verticalAlign: "middle" } }));
+            const y = p.default.create((e) => ({ backgroundImage: { ...p.default.absoluteFillObject, filter: "blur(5px)" }, overlay: { ...p.default.absoluteFillObject, backgroundColor: e.colors.translucentBlack77 }, blankOverlay: { backgroundColor: e.colors.gray0 }, buttonContainer: { justifyContent: "center", alignSelf: "center" }, errorContainer: { justifyContent: "center", height: "100%", marginHorizontal: e.spaces.space32 }, errorMsgTextWhite: { color: e.colors.white, textAlign: "center", marginBottom: e.spaces.space20 }, errorMsgTextGray: { color: e.colors.gray700, textAlign: "center", marginBottom: e.spaces.space20 }, playErrorIcon: { fill: e.colors.gray700, height: e.spaces.space48, width: e.spaces.space48, marginHorizontal: "auto", paddingBottom: e.spaces.space20, verticalAlign: "middle" } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TimelineFrameHandler.caf0599a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TimelineFrameHandler.ad4ee3aa.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.HoverCard-6107ac1a", "loader.directMessagesData-6107ac1a", "bundle.Logout-6107ac1a"],
+    ["ondemand.HoverCard-6107ac1a"],
     {
         326439: (e, t, i) => {
             i.d(t, { Z: () => d });
@@ -257,40 +257,6 @@
             };
             const s = n;
         },
-        879113: (e, t, i) => {
-            i.d(t, { Z: () => g });
-            var n = i(202784),
-                s = i(476984),
-                a = i.n(s),
-                r = i(143778),
-                l = i(750410),
-                o = i(682830);
-            const d = "failed",
-                u = "loaded",
-                c = "loading",
-                h = "none";
-            class g extends n.Component {
-                shouldComponentUpdate(e) {
-                    const t = e.fetchStatus === u,
-                        i = this.props.fetchStatus !== e.fetchStatus;
-                    return !(!t && !i) || !a()(e, this.props);
-                }
-                render() {
-                    const { "aria-label": e, color: t, failureMessage: i, fetchStatus: s, icon: a, loadingMessage: r, onRequestRetry: u, render: g, renderFailure: m, retryMessage: p, retryable: f } = this.props;
-                    switch (s) {
-                        case d:
-                            return f ? n.createElement(l.Z, { icon: a, onRequestRetry: u, retryMessage: p }) : i ? n.createElement(o.m, { failureMessage: i }) : m();
-                        case c:
-                            return n.createElement(o.J, { "aria-label": e, color: t, loadingMessage: r });
-                        case h:
-                            return null;
-                        default:
-                            return g();
-                    }
-                }
-            }
-            g.defaultProps = { renderFailure: r.Z, retryable: !0 };
-        },
         646496: (e, t, i) => {
             i.d(t, { Z: () => p });
             var n = i(202784),
@@ -303,33 +269,72 @@
                 u = i(530732),
                 c = i(537392),
                 h = i(786475),
-                g = i(392237);
-            const m = g.default.create((e) => ({ buttonBottomMargin: { marginBottom: e.spaces.space16 }, buttonLeftMargin: { marginStart: e.spaces.space20 }, buttonTopMargin: { marginTop: e.spaces.space20 }, buttonWrap: { flexWrap: "wrap-reverse" }, condensedContext: { marginTop: e.spaces.space16, flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, condensedContextV2: { marginTop: e.spaces.space16 }, iconCustom: { alignSelf: "flex-start", borderRadius: e.borderRadii.infinite, height: e.spaces.space32, width: e.spaces.space32, marginTop: e.spaces.space8, marginBottom: e.spaces.space8 }, facepile: { marginBottom: e.spaces.space16, alignSelf: "flex-start" }, facepileV2: { marginEnd: e.spaces.space8, marginTop: e.spaces.space16 }, interactiveStyle: { flexShrink: 1 }, interactiveStyleV2: { flexDirection: "row", alignItems: "center" }, knownFollowersContainer: { marginTop: e.spaces.space16, marginBottom: e.spaces.space16, flexDirection: "row", justifyContent: "space-between", flexGrow: 1, flexShrink: 1 }, underline: { textDecorationLine: "underline" } })),
-                p = ({ children: e, context: t, imageSrc: i, knownFollowers: a, onFacepilesClick: p, onFacepilesImpression: f, subtitle: y, title: _, withAdditionalControls: w = !1 }) => {
-                    const { firstUsername: S, knownFollowersAvatarUrls: E, trendingFollowersUrl: T, usersCount: I } = a || {},
+                m = i(392237);
+            const g = m.default.create((e) => ({ buttonBottomMargin: { marginBottom: e.spaces.space16 }, buttonLeftMargin: { marginStart: e.spaces.space20 }, buttonTopMargin: { marginTop: e.spaces.space20 }, buttonWrap: { flexWrap: "wrap-reverse" }, condensedContext: { marginTop: e.spaces.space16, flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, condensedContextV2: { marginTop: e.spaces.space16 }, iconCustom: { alignSelf: "flex-start", borderRadius: e.borderRadii.infinite, height: e.spaces.space32, width: e.spaces.space32, marginTop: e.spaces.space8, marginBottom: e.spaces.space8 }, facepile: { marginBottom: e.spaces.space16, alignSelf: "flex-start" }, facepileV2: { marginEnd: e.spaces.space8, marginTop: e.spaces.space16 }, interactiveStyle: { flexShrink: 1 }, interactiveStyleV2: { flexDirection: "row", alignItems: "center" }, knownFollowersContainer: { marginTop: e.spaces.space16, marginBottom: e.spaces.space16, flexDirection: "row", justifyContent: "space-between", flexGrow: 1, flexShrink: 1 }, underline: { textDecorationLine: "underline" } })),
+                p = ({ children: e, context: t, imageSrc: i, knownFollowers: a, onFacepilesClick: p, onFacepilesImpression: f, subtitle: y, title: _, withAdditionalControls: S = !1 }) => {
+                    const { firstUsername: w, knownFollowersAvatarUrls: E, trendingFollowersUrl: T, usersCount: I } = a || {},
                         O = a && a.knownFollowersAvatarUrls.length > 3;
                     n.useEffect(() => {
                         O && f && f();
                     }, [O, f]);
-                    const F = i ? n.createElement(d.Z, { source: i, style: m.iconCustom }) : null,
-                        v = t ? n.createElement(s.Z, { style: w ? m.condensedContextV2 : m.condensedContext }, n.createElement(l.ZP, { align: "left", color: "gray700", numberOfLines: 3, size: "subtext2" }, t), n.createElement(s.Z, { style: w ? m.buttonTopMargin : [m.buttonBottomMargin, m.buttonLeftMargin] }, e)) : null,
-                        b = n.createElement(c.ZP, null, ({ containerWidth: i }) => {
+                    const v = i ? n.createElement(d.Z, { source: i, style: g.iconCustom }) : null,
+                        F = t ? n.createElement(s.Z, { style: S ? g.condensedContextV2 : g.condensedContext }, n.createElement(l.ZP, { align: "left", color: "gray700", numberOfLines: 3, size: "subtext2" }, t), n.createElement(s.Z, { style: S ? g.buttonTopMargin : [g.buttonBottomMargin, g.buttonLeftMargin] }, e)) : null,
+                        k = n.createElement(c.ZP, null, ({ containerWidth: i }) => {
                             const a = h.Z.isNarrowScreenWidth(i) ? "xLarge" : "xxLarge",
-                                d = i < g.default.theme.breakpoints.xSmall ? m.buttonWrap : void 0,
-                                c = w ? m.facepileV2 : null;
+                                d = i < m.default.theme.breakpoints.xSmall ? g.buttonWrap : void 0,
+                                c = S ? g.facepileV2 : null;
                             return n.createElement(
                                 s.Z,
-                                { style: w ? null : [m.knownFollowersContainer, d] },
-                                n.createElement(u.Z, { interactiveStyles: null, link: T, onPress: p, style: w ? m.interactiveStyleV2 : m.interactiveStyle }, ({ isHovered: e }) => n.createElement(n.Fragment, null, n.createElement(o.Z, { style: [m.facepile, c], userAvatarSize: a, userAvatarUrls: E }), n.createElement(l.ZP, { color: "gray700", dir: "ltr", numberOfLines: 2, size: "subtext2", style: e && m.underline }, t || ((e, t) => n.createElement(r().I18NFormatMessage, { $i18n: "bb2cd6d3" }, e, t))(S, I)))),
+                                { style: S ? null : [g.knownFollowersContainer, d] },
+                                n.createElement(u.Z, { interactiveStyles: null, link: T, onPress: p, style: S ? g.interactiveStyleV2 : g.interactiveStyle }, ({ isHovered: e }) => n.createElement(n.Fragment, null, n.createElement(o.Z, { style: [g.facepile, c], userAvatarSize: a, userAvatarUrls: E }), n.createElement(l.ZP, { color: "gray700", dir: "ltr", numberOfLines: 2, size: "subtext2", style: e && g.underline }, t || ((e, t) => n.createElement(r().I18NFormatMessage, { $i18n: "bb2cd6d3" }, e, t))(w, I)))),
                                 ((t) => {
-                                    const i = t < g.default.theme.breakpoints.xSmall ? m.buttonBottomMargin : [m.buttonBottomMargin, m.buttonLeftMargin];
-                                    return w ? [e] : n.createElement(s.Z, { style: i }, e);
+                                    const i = t < m.default.theme.breakpoints.xSmall ? g.buttonBottomMargin : [g.buttonBottomMargin, g.buttonLeftMargin];
+                                    return S ? [e] : n.createElement(s.Z, { style: i }, e);
                                 })(i),
                             );
                         }),
-                        k = a && O ? b : v;
-                    return n.createElement(n.Fragment, null, F, n.createElement(l.ZP, { size: "title2", weight: "heavy" }, _), y ? n.createElement(l.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, y) : null, k);
+                        M = a && O ? k : F;
+                    return n.createElement(n.Fragment, null, v, n.createElement(l.ZP, { size: "title2", weight: "heavy" }, _), y ? n.createElement(l.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, y) : null, M);
                 };
+        },
+        355586: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var n = i(202784),
+                s = i(890601),
+                a = i(783427),
+                r = i(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { clipRule: "evenodd", d: "M2.062 9h2.876C4.77 7.643 4.261 6.393 3.5 5.335 2.74 6.393 2.231 7.644 2.062 9zm2.823-5.151C6.017 5.298 6.759 7.069 6.95 9H9V2.062c-1.554.194-2.97.833-4.115 1.787zM11 2.062V9h2.05c.191-1.931.933-3.702 2.065-5.151-1.145-.954-2.56-1.593-4.115-1.787zm5.5 3.273C15.74 6.393 15.23 7.643 15.062 9h2.876c-.169-1.356-.678-2.607-1.438-3.665zM17.938 11h-2.876c.169 1.357.677 2.607 1.438 3.665.76-1.058 1.269-2.309 1.438-3.665zm-2.823 5.151c-1.132-1.449-1.874-3.22-2.066-5.151H11v6.938c1.554-.194 2.97-.833 4.115-1.787zM9 17.938V11H6.95c-.191 1.931-.933 3.702-2.065 5.151 1.145.954 2.56 1.593 4.115 1.787zm-5.5-3.273c.76-1.058 1.27-2.308 1.438-3.665H2.062c.169 1.356.678 2.607 1.438 3.665zM0 10C0 4.477 4.477 0 10 0s10 4.477 10 10-4.477 10-10 10S0 15.523 0 10z", fillRule: "evenodd" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const o = l;
+        },
+        913315: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var n = i(202784),
+                s = i(890601),
+                a = i(783427),
+                r = i(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M5 13h3.414l3.783-3.783 4.079 2.039 4.505-5.631-1.562-1.25-3.495 4.369-3.921-1.961L7.586 11H5V3H3v18h18v-2H5z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const o = l;
+        },
+        98440: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var n = i(202784),
+                s = i(890601),
+                a = i(783427),
+                r = i(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const o = l;
         },
         19697: (e, t, i) => {
             i.d(t, { q8: () => d, $i: () => a });
@@ -351,32 +356,32 @@
                                 u = l.width,
                                 c = l.height,
                                 h = 0,
-                                g = 0,
-                                m = i,
+                                m = 0,
+                                g = i,
                                 p = s;
                             switch ((e.save(), a)) {
                                 case n.Z.TOP_RIGHT:
                                     e.scale(-1, 1), (o = t.width - l.width - l.left), (h = -i);
                                     break;
                                 case n.Z.BOTTOM_RIGHT:
-                                    e.rotate(Math.PI), (o = t.width - l.width - l.left), (d = t.height - l.height - l.top), (h = -i), (g = -s);
+                                    e.rotate(Math.PI), (o = t.width - l.width - l.left), (d = t.height - l.height - l.top), (h = -i), (m = -s);
                                     break;
                                 case n.Z.BOTTOM_LEFT:
-                                    e.scale(1, -1), (d = t.height - l.height - l.top), (g = -s);
+                                    e.scale(1, -1), (d = t.height - l.height - l.top), (m = -s);
                                     break;
                                 case n.Z.LEFT_TOP:
-                                    e.translate(i / 2, s / 2), e.rotate(-Math.PI / 2), e.scale(-1, 1), (o = l.top), (d = l.left), (u = l.height), (c = l.width), (h = -s / 2), (g = -i / 2), (m = s), (p = i);
+                                    e.translate(i / 2, s / 2), e.rotate(-Math.PI / 2), e.scale(-1, 1), (o = l.top), (d = l.left), (u = l.height), (c = l.width), (h = -s / 2), (m = -i / 2), (g = s), (p = i);
                                     break;
                                 case n.Z.LEFT_BOTTOM:
-                                    e.translate(i / 2, s / 2), e.rotate(Math.PI / 2), (o = l.top), (d = t.height - l.width - l.left), (u = l.height), (c = l.width), (h = -s / 2), (g = -i / 2), (m = s), (p = i);
+                                    e.translate(i / 2, s / 2), e.rotate(Math.PI / 2), (o = l.top), (d = t.height - l.width - l.left), (u = l.height), (c = l.width), (h = -s / 2), (m = -i / 2), (g = s), (p = i);
                                     break;
                                 case n.Z.RIGHT_BOTTOM:
-                                    e.translate(i / 2, s / 2), e.rotate(Math.PI / 2), e.scale(-1, 1), (o = t.width - l.height - l.top), (d = t.height - l.width - l.left), (u = l.height), (c = l.width), (h = -s / 2), (g = -i / 2), (m = s), (p = i);
+                                    e.translate(i / 2, s / 2), e.rotate(Math.PI / 2), e.scale(-1, 1), (o = t.width - l.height - l.top), (d = t.height - l.width - l.left), (u = l.height), (c = l.width), (h = -s / 2), (m = -i / 2), (g = s), (p = i);
                                     break;
                                 case n.Z.RIGHT_TOP:
-                                    e.translate(i / 2, s / 2), e.rotate(-Math.PI / 2), (o = t.width - l.height - l.top), (d = l.left), (u = l.height), (c = l.width), (h = -s / 2), (g = -i / 2), (m = s), (p = i);
+                                    e.translate(i / 2, s / 2), e.rotate(-Math.PI / 2), (o = t.width - l.height - l.top), (d = l.left), (u = l.height), (c = l.width), (h = -s / 2), (m = -i / 2), (g = s), (p = i);
                             }
-                            e.drawImage(t, o, d, u, c, h, g, m, p), e.restore();
+                            e.drawImage(t, o, d, u, c, h, m, g, p), e.restore();
                         })(t.getContext("2d"), e, t.width, t.height, s, a),
                         t
                     ),
@@ -478,99 +483,6 @@
                               );
                     });
                 };
-        },
-        276259: (e, t, i) => {
-            i.d(t, { Lw: () => s, Re: () => c, VJ: () => l, ZF: () => h, hv: () => o, ku: () => n, qp: () => a, uv: () => r, v5: () => u });
-            i(571372), i(875640), i(694898), i(38857), i(540171), i(157093), i(265688), i(270315), i(592529), i(86943), i(691157), i(543673), i(240753), i(128399);
-            function n(e) {
-                const t = e.match(/=*$/);
-                return t ? Math.floor(0.75 * (e.length - t[0].length)) : 0.75 * e.length;
-            }
-            function s(e) {
-                return new Promise((t, i) => {
-                    const n = e.split(/data:|;base64,/);
-                    if (Blob)
-                        if (3 !== n.length) i(Error("Invalid dataUri"));
-                        else if (atob)
-                            if (Uint8Array) {
-                                const [, e, i] = n,
-                                    s = atob(i),
-                                    a = s.length,
-                                    r = Array(a);
-                                for (let e = 0; e < a; e++) r[e] = s.charCodeAt(e);
-                                t(new Blob([new Uint8Array(r)], { type: e }));
-                            } else i(Error("The Uint8Array type is not available"));
-                        else i(Error("The atob API is not available"));
-                    else i(Error("The Blob API is not available"));
-                });
-            }
-            const a = (e, t) =>
-                    new Promise((i, n) => {
-                        const s = new FileReader();
-                        t &&
-                            (t.signal.onabort = () => {
-                                s.abort?.(), n(Error(h));
-                            }),
-                            (s.onload = (e) => {
-                                e.target instanceof FileReader && e.target.result instanceof ArrayBuffer ? i(e.target.result) : n(Error("The FileReader result was not of type ArrayBuffer"));
-                            }),
-                            (s.onerror = (e) => {
-                                n(e);
-                            }),
-                            s.readAsArrayBuffer(e);
-                    }),
-                r = (e, t) => {
-                    const i = document.createElement("a");
-                    (i.href = e), (i.download = t), (i.target = "_blank"), i.click(), i.remove();
-                },
-                l = (e) =>
-                    ((e) =>
-                        new Promise((t) => {
-                            const i = new Image();
-                            (i.onload = function () {
-                                const e = document.createElement("canvas");
-                                (e.width = i.width), (e.height = i.height), e.getContext("2d").drawImage(i, 0, 0), e.toBlob((e) => t(e), "image/png");
-                            }),
-                                (i.crossOrigin = "anonymous"),
-                                (i.src = e);
-                        }))(e).then((e) => navigator.clipboard.write([new ClipboardItem({ "image/png": e })])),
-                o = async (e, t) => {
-                    if (e.size <= t) return e;
-                    let i = e,
-                        n = 1;
-                    for (; i && i.size > t; )
-                        try {
-                            n > 0.2 ? ((n *= 0.7), (i = await d(i, 1, n))) : (i = await d(i, 0.7, n));
-                        } catch (e) {
-                            i = void 0;
-                        }
-                    return i;
-                },
-                d = (e, t, i) =>
-                    new Promise((n, s) => {
-                        const a = new Image();
-                        (a.onload = () => {
-                            const e = document.createElement("canvas"),
-                                s = e.getContext("2d"),
-                                r = a.width * t,
-                                l = a.height * t;
-                            (e.width = r),
-                                (e.height = l),
-                                s.drawImage(a, 0, 0, r, l),
-                                e.toBlob(
-                                    (e) => {
-                                        n(new File([e], "image.jpeg", { type: "image/jpeg" }));
-                                    },
-                                    "image/jpeg",
-                                    i,
-                                );
-                        }),
-                            (a.onerror = () => s(new Error("Failed to load image while resizing"))),
-                            (a.src = URL.createObjectURL(e));
-                    }),
-                u = ["image/jpeg", "image/png", "image/webp"],
-                c = "image/gif",
-                h = "Reading aborted";
         },
         549755: (e, t, i) => {
             i.d(t, { Z: () => n });
@@ -693,7 +605,7 @@
                         });
         },
         653843: (e, t, i) => {
-            i.d(t, { Y7: () => g, ZP: () => E, m2: () => _ });
+            i.d(t, { Y7: () => m, ZP: () => E, m2: () => _ });
             var n = i(19697),
                 s = i(790187),
                 a = i(549755),
@@ -725,8 +637,8 @@
             const u = 5242880,
                 c = 4096,
                 h = 0.85,
-                g = { GIF_IS_TOO_LARGE: 1, CANNOT_BE_PROCESSED: 2, FILE_IS_NOT_AN_IMAGE: 3 },
-                m = (e) => e.orientation !== s.Z.TOP_LEFT && e.orientation !== s.Z.UNKNOWN,
+                m = { GIF_IS_TOO_LARGE: 1, CANNOT_BE_PROCESSED: 2, FILE_IS_NOT_AN_IMAGE: 3 },
+                g = (e) => e.orientation !== s.Z.TOP_LEFT && e.orientation !== s.Z.UNKNOWN,
                 p = (e, t = u, i = c) => {
                     const { height: n, size: s, width: a } = e;
                     return a > i || n > i || s > t;
@@ -740,36 +652,36 @@
                 const { maxFileSize: i = u, maxDimension: n = c, cropData: s, jpgPixelsPerByteForResize: a } = t || {},
                     r = "image/jpeg" === e.type,
                     l = (e.width * e.height) / e.size;
-                return m(e) || p(e, i, n) || y(e, s) || (r && !!a && l < a);
+                return g(e) || p(e, i, n) || y(e, s) || (r && !!a && l < a);
             }
-            const w = (e, t) => {
+            const S = (e, t) => {
                     const { height: i, width: n } = e;
                     return n <= t && i <= t ? { width: n, height: i } : n > i ? { width: t, height: Math.round(i / (n / t)) } : { width: Math.round(n / (i / t)), height: t };
                 },
-                S = (e) => ("function" == typeof e.decode ? e.decode() : Promise.resolve());
+                w = (e) => ("function" == typeof e.decode ? e.decode() : Promise.resolve());
             function E(e, t) {
                 const { maxFileSize: i = u, maxDimension: s = c, targetQuality: l = h, cropData: d } = t || {},
-                    m = f(e, d);
+                    g = f(e, d);
                 if (!_(e, t)) return Promise.resolve(e.fileHandle);
                 if (!(0, r.DS)(e)) {
-                    const e = new a.Z("The provided file is not a valid image", g.FILE_IS_NOT_AN_IMAGE);
+                    const e = new a.Z("The provided file is not a valid image", m.FILE_IS_NOT_AN_IMAGE);
                     return Promise.reject(e);
                 }
                 if (e.isGif) {
-                    const e = new a.Z("Gifs cannot be processed.", g.GIF_IS_TOO_LARGE);
+                    const e = new a.Z("Gifs cannot be processed.", m.GIF_IS_TOO_LARGE);
                     return Promise.reject(e);
                 }
                 const p = (e) => o(e, { maxFileSize: i, maxDimension: s, targetQuality: l });
                 return e
                     .withDimensionsAndOrientation()
                     .then(({ img: e, orientation: t }) => {
-                        const i = ({ height: i, width: s }) => (0, n.$i)(e, s, i, t, m);
-                        return S(e)
-                            .then(() => ((e) => e(w(m, s)))(i))
+                        const i = ({ height: i, width: s }) => (0, n.$i)(e, s, i, t, g);
+                        return w(e)
+                            .then(() => ((e) => e(S(g, s)))(i))
                             .then(p);
                     })
                     .catch(() => {
-                        const e = new a.Z("Image cannot be processed", g.CANNOT_BE_PROCESSED);
+                        const e = new a.Z("Image cannot be processed", m.CANNOT_BE_PROCESSED);
                         return Promise.reject(e);
                     });
             }
@@ -834,12 +746,12 @@
             class u {
                 constructor(e, t = E) {
                     var i;
-                    (this.timeoutIdMap = {}), (this.mediaId = ""), (this.mediaKey = ""), (this.fileHandle = e), (this.inflightSegments = new Map()), (this.totalBytes = e ? e.size : 0), (this.mediaType = e ? e.type : void 0), (this.initStartTime = new Date()), (this.sruHeaders = t.sruHeaders || {}), (this.uploadUrl = t.uploadUrl || m), (this.retainMediaForever = !!t.retainMediaForever), (this.sruParameterOverrides = t.sruParameterOverrides), (this.minSegmentBytes = this.sruParameterOverrides?.minSegmentBytes || ((i = this.totalBytes), a(Math.ceil(i / d)))), this._clearState();
+                    (this.timeoutIdMap = {}), (this.mediaId = ""), (this.mediaKey = ""), (this.fileHandle = e), (this.inflightSegments = new Map()), (this.totalBytes = e ? e.size : 0), (this.mediaType = e ? e.type : void 0), (this.initStartTime = new Date()), (this.sruHeaders = t.sruHeaders || {}), (this.uploadUrl = t.uploadUrl || g), (this.retainMediaForever = !!t.retainMediaForever), (this.sruParameterOverrides = t.sruParameterOverrides), (this.minSegmentBytes = this.sruParameterOverrides?.minSegmentBytes || ((i = this.totalBytes), a(Math.ceil(i / d)))), this._clearState();
                 }
                 upload(e) {
                     ((this.hasAttemptedFinalize && (this.uploadOptions.trimRanges !== e.trimRanges || this.uploadOptions.extraFinalizeParams !== e.extraFinalizeParams)) || this.uploadOptions.extraInitParams !== e.extraInitParams) && this._clearState(),
                         (this.uploadOptions = e),
-                        this.state !== S.SUCCEEDED && this.state !== S.PENDING && ((this.state = S.PENDING), this.hasAttemptedFinalize ? this._postFinalize() : this.mediaId ? this._startNextAppendSegment() : this._postInit()),
+                        this.state !== w.SUCCEEDED && this.state !== w.PENDING && ((this.state = w.PENDING), this.hasAttemptedFinalize ? this._postFinalize() : this.mediaId ? this._startNextAppendSegment() : this._postInit()),
                         (this._bitrateMonitor = e.withMultiRequests
                             ? n(() => {
                                   this._startNextAppendSegment();
@@ -852,11 +764,11 @@
                     "function" == typeof this.uploadOptions.error && this.uploadOptions.error({ code: _.CANCELED }), this._clearState();
                 }
                 pollStatusOfExistingMediaId(e, t) {
-                    (this.mediaId = e), (this.uploadOptions = t || E), (this.state = S.PENDING), this._getStatus();
+                    (this.mediaId = e), (this.uploadOptions = t || E), (this.state = w.PENDING), this._getStatus();
                 }
                 _clearState() {
                     for (const e of Object.keys(this.timeoutIdMap)) clearTimeout(this.timeoutIdMap[e]), delete this.timeoutIdMap[e];
-                    (this.state = S.RESET),
+                    (this.state = w.RESET),
                         (this.mediaId = ""),
                         (this.mediaKey = ""),
                         (this.uploadOptions = E),
@@ -880,7 +792,7 @@
                         this._bitrateMonitor?.reset();
                 }
                 uploadExternalMedia(e, t, i, n = E) {
-                    (this.uploadOptions = n), (this.state = S.PENDING), (this.progressMode = "uploading");
+                    (this.uploadOptions = n), (this.state = w.PENDING), (this.progressMode = "uploading");
                     let a = s({ source_url: e, media_type: t, media_category: i });
                     (a += this.uploadOptions.extraInitParams || ""), (a += this.uploadOptions.extraFinalizeParams || "");
                     this._sendXhr(
@@ -917,7 +829,7 @@
                     } else this._uploadError({ code: _.ZERO_FILE_LENGTH });
                 }
                 _initSuccess(e) {
-                    this.state === S.PENDING && ((this.mediaId = e.media_id_string), (this.mediaKey = e.media_key), this._setSessionTimeout(e.expires_after_secs), this._bitrateMonitor ? this._bitrateMonitor.start() : this._startNextAppendSegment());
+                    this.state === w.PENDING && ((this.mediaId = e.media_id_string), (this.mediaKey = e.media_key), this._setSessionTimeout(e.expires_after_secs), this._bitrateMonitor ? this._bitrateMonitor.start() : this._startNextAppendSegment());
                 }
                 _setSessionTimeout(e) {
                     if ((this.timeoutIdMap.session && (clearTimeout(this.timeoutIdMap.session), delete this.timeoutIdMap.session), e)) {
@@ -949,7 +861,7 @@
                             "APPEND",
                             r,
                             () => {
-                                if (this.state === S.PENDING) {
+                                if (this.state === w.PENDING) {
                                     const e = this.inflightSegments.get(a);
                                     e && (this.inflightSegments.delete(a), (this.uploadedBytes += e.bytes)), this._notifyProgress(this._uploadProgress(), this.mediaId), 0 === this.inflightSegments.size && this._startNextAppendSegment();
                                 }
@@ -963,7 +875,7 @@
                     this.inflightSegments.set(a, { bytes: i, request: l });
                 }
                 _postFinalize() {
-                    if (this.uploadOptions.pauseBeforeFinalize) (this.state = S.PAUSED), this.uploadOptions.pause && this.uploadOptions.pause();
+                    if (this.uploadOptions.pauseBeforeFinalize) (this.state = w.PAUSED), this.uploadOptions.pause && this.uploadOptions.pause();
                     else {
                         this.hasAttemptedFinalize = !0;
                         const e = { media_id: this.mediaId };
@@ -997,7 +909,7 @@
                         case "failed": {
                             const e = t.error;
                             let i;
-                            return (i = e?.code ? w[String(e.code)] : _.INTERNAL_ERROR), void this._uploadError({ ...e, code: i });
+                            return (i = e?.code ? S[String(e.code)] : _.INTERNAL_ERROR), void this._uploadError({ ...e, code: i });
                         }
                         default:
                             return void this._uploadError();
@@ -1007,7 +919,7 @@
                     setTimeout((...e) => this._getStatus(...e), 1e3 * n);
                 }
                 _getStatus() {
-                    if (this.state === S.PENDING) {
+                    if (this.state === w.PENDING) {
                         const e = s({ media_id: this.mediaId });
                         this._sendXhr(
                             "GET",
@@ -1020,16 +932,16 @@
                     }
                 }
                 _finalizeSuccess(e) {
-                    this.state === S.PENDING && ((this.state = S.SUCCEEDED), this._notifyResult());
+                    this.state === w.PENDING && ((this.state = w.SUCCEEDED), this._notifyResult());
                 }
                 _uploadError(e) {
-                    if (this.state !== S.PENDING) return;
+                    if (this.state !== w.PENDING) return;
                     const t = e.error?.match(/{ "message": "maxFileSizeExceeded", "maxFileSizeBytes": \d+ }/);
                     if (t) {
                         const e = JSON.parse(t[0]);
                         this.error = { code: _.FILE_TOO_LARGE, message: e.message, maxSizeBytes: e.maxFileSizeBytes };
                     } else e && e.code ? (this.error = e) : (this.error = { code: _.INTERNAL_ERROR, message: e?.error });
-                    (this.state = S.FAILED), this._notifyResult();
+                    (this.state = w.FAILED), this._notifyResult();
                 }
                 _uploadProgress() {
                     if (this.totalBytes) {
@@ -1038,10 +950,10 @@
                     return 0;
                 }
                 _notifyProgress(e, t, i) {
-                    this.state !== S.FAILED && this.uploadOptions.progress && this.uploadOptions.progress(e, this.progressMode, t, i);
+                    this.state !== w.FAILED && this.uploadOptions.progress && this.uploadOptions.progress(e, this.progressMode, t, i);
                 }
                 _notifyResult() {
-                    this.state === S.SUCCEEDED && this.uploadOptions.success && this.uploadOptions.success(this.mediaId, this.mediaKey), this.state === S.FAILED && this.uploadOptions.error && this.uploadOptions.error(this.error);
+                    this.state === w.SUCCEEDED && this.uploadOptions.success && this.uploadOptions.success(this.mediaId, this.mediaKey), this.state === w.FAILED && this.uploadOptions.error && this.uploadOptions.error(this.error);
                 }
                 _stats(e, t, i = {}) {
                     const n = i.requestStartTime || this.initStartTime,
@@ -1054,39 +966,39 @@
                 _sendXhr(e, t, i, n, s, r, l, d, u = 0) {
                     const c = `${this.uploadUrl}?command=${t}${i}`;
                     let h = !1;
-                    const m = new Date(),
+                    const g = new Date(),
                         p = (a) => {
                             if (r) {
                                 const a = [c, r].join("-");
                                 this.timeoutIdMap[a] = setTimeout(() => {
                                     this._sendXhr(e, t, i, n, s, r - 1, l, d, u);
                                 }, y);
-                            } else w(a);
+                            } else S(a);
                         },
-                        w = (e) => {
-                            this._stats(t, e || "unknown-error", { requestStartTime: m, segmentBytes: u }), "function" == typeof s && s(T(S) || { code: _.INVALID_RES_STATUS, mediaId: this.mediaId });
+                        S = (e) => {
+                            this._stats(t, e || "unknown-error", { requestStartTime: g, segmentBytes: u }), "function" == typeof s && s(T(w) || { code: _.INVALID_RES_STATUS, mediaId: this.mediaId });
                         },
-                        S = new XMLHttpRequest();
-                    S.open(e, c, !0),
-                        (S.withCredentials = !0),
-                        (S.timeout = this.sruParameterOverrides?.clientsideSruUploadTimeoutMs || g),
-                        (S.onload = () => {
-                            if (S.status >= 200 && S.status < 400) {
-                                const e = T(S);
-                                204 === S.status || e ? (this._stats(t, "success", { requestStartTime: m, segmentBytes: u }), n(e || {}), !h && d && d()) : p("parsererror");
-                            } else S.status && 503 !== S.status ? w("invalid-response") : p("503");
+                        w = new XMLHttpRequest();
+                    w.open(e, c, !0),
+                        (w.withCredentials = !0),
+                        (w.timeout = this.sruParameterOverrides?.clientsideSruUploadTimeoutMs || m),
+                        (w.onload = () => {
+                            if (w.status >= 200 && w.status < 400) {
+                                const e = T(w);
+                                204 === w.status || e ? (this._stats(t, "success", { requestStartTime: g, segmentBytes: u }), n(e || {}), !h && d && d()) : p("parsererror");
+                            } else w.status && 503 !== w.status ? S("invalid-response") : p("503");
                         }),
-                        (S.onerror = () => p("error")),
-                        (S.ontimeout = () => {
+                        (w.onerror = () => p("error")),
+                        (w.ontimeout = () => {
                             (this.nextSegmentBytes = this.minSegmentBytes), p("timeout");
                         });
                     let E = !1;
-                    S.upload.onprogress = (e) => {
+                    w.upload.onprogress = (e) => {
                         E ? e.loaded === e.total && this._bitrateMonitor?.uploadFinish(c, e.total) : ((E = !0), this._bitrateMonitor?.uploadStart(c, e.loaded));
                         const t = e.loaded,
                             i = ((this.uploadedBytes + t) / this.totalBytes) * 100;
                         if ((this._notifyProgress(i, this.mediaId), t / e.total > f && !h && ((h = !0), l))) {
-                            const e = Math.max(1, new Date().getTime() - m.getTime()),
+                            const e = Math.max(1, new Date().getTime() - g.getTime()),
                                 i = this.minSegmentBytes,
                                 n = this.sruParameterOverrides?.maxSegmentBytes;
                             (this.nextSegmentBytes = (function (e) {
@@ -1097,20 +1009,20 @@
                                 "function" == typeof d && d();
                         }
                     };
-                    for (const e in this.sruHeaders) S.setRequestHeader(e, this.sruHeaders[e]);
-                    return l ? S.send(l) : S.send(), S;
+                    for (const e in this.sruHeaders) w.setRequestHeader(e, this.sruHeaders[e]);
+                    return l ? w.send(l) : w.send(), w;
                 }
             }
             const c = 2147483647,
                 h = 1,
-                g = 45e3,
-                m = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload.json",
+                m = 45e3,
+                g = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload.json",
                 p = 2,
                 f = 0.95,
                 y = 1e3,
                 _ = Object.freeze({ FILE_TOO_LARGE: 2, INTERNAL_ERROR: 131, INVALID_MEDIA: 1, RATE_LIMIT: 88, TIMEOUT: 67, UNSUPPORTED_MEDIA: 3, ZERO_FILE_LENGTH: 4, CANCELED: 999, INVALID_RES_STATUS: -1 }),
-                w = Object.freeze({ 0: _.INTERNAL_ERROR, 1: _.INVALID_MEDIA, 2: _.FILE_TOO_LARGE, 3: _.UNSUPPORTED_MEDIA, 4: _.TIMEOUT }),
-                S = Object.freeze({ RESET: 0, PENDING: 1, PAUSED: 2, SUCCEEDED: 3, FAILED: 4 }),
+                S = Object.freeze({ 0: _.INTERNAL_ERROR, 1: _.INVALID_MEDIA, 2: _.FILE_TOO_LARGE, 3: _.UNSUPPORTED_MEDIA, 4: _.TIMEOUT }),
+                w = Object.freeze({ RESET: 0, PENDING: 1, PAUSED: 2, SUCCEEDED: 3, FAILED: 4 }),
                 E = {};
             function T(e) {
                 try {
@@ -1162,4 +1074,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.HoverCard-6107ac1a.caf05cda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.HoverCard-6107ac1a.9812818a.js.map

@@ -451,10 +451,11 @@
                         w = !y,
                         k = v && !w ? u.h$ : 0,
                         N = (0, g.hC)("rweb_xchat_logs"),
-                        C = (0, g.hC)("rweb_xchat_new_db_worker_enabled");
+                        C = (0, g.hC)("rweb_xchat_new_db_worker_enabled"),
+                        E = (0, g.hC)("rweb_xchat_fs_worker");
                     (0, d.MQ)();
-                    const E = (0, f.v9)(p.Lz);
-                    return s.createElement(m.i, null, s.createElement(h.Z, { headerless: v && w, history: t, isFullWidth: !0, primaryContent: () => (E ? s.createElement(b.x, null) : s.createElement(i.Z, { style: j.root }, s.createElement(n.H, { settings: { path: "/i/chat", showDebugOptions: c, bottomBarHeight: k, logLevel: N ? a.B$.INFO : a.B$.WARN, newDBWorker: C, rwebElements: { dashMenuButton: v && y ? s.createElement(x.Z, null) : void 0 } } }))), sidebarContent: null, withTopNav: !1 }));
+                    const _ = (0, f.v9)(p.Lz);
+                    return s.createElement(m.i, null, s.createElement(h.Z, { headerless: v && w, history: t, isFullWidth: !0, primaryContent: () => (_ ? s.createElement(b.x, null) : s.createElement(i.Z, { style: j.root }, s.createElement(n.H, { settings: { path: "/i/chat", showDebugOptions: c, bottomBarHeight: k, logLevel: N ? a.B$.INFO : a.B$.WARN, newDBWorker: C, fsWorker: E, rwebElements: { dashMenuButton: v && y ? s.createElement(x.Z, null) : void 0 } } }))), sidebarContent: null, withTopNav: !1 }));
                 };
         },
         115290: (e, t, r) => {
@@ -498,4 +499,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.ee31338a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.d15cc1fa.js.map

@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: i, isFullWidth: a, isLarge: d, leftControl: c, middleControl: h, position: u, rightControl: m, secondaryBar: f, style: y, subtitle: w, title: g, titleDomId: D, titleIconCell: b, titleIconCellSize: T, withBackground: C, withWideContainer: M } = this.props,
-                        { isModal: P } = this.context,
-                        Z = i ? c : n.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        _ = (function (e, t, o) {
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: i, isFullWidth: a, isLarge: d, leftControl: c, middleControl: h, position: u, rightControl: m, secondaryBar: f, style: y, subtitle: w, title: g, titleDomId: b, titleIconCell: T, titleIconCellSize: C, withBackground: P, withWideContainer: D } = this.props,
+                        { isModal: Z } = this.context,
+                        _ = i ? c : n.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        v = (function (e, t, o) {
                             return e && !(t && o);
-                        })(!!C, P, !!f);
-                    return n.createElement(n.Fragment, null, n.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: d, leftControl: Z, middleControl: h, position: p(u, P, r), rightControl: m, style: y, subtitle: w, title: g, titleDomId: D, titleIconCell: b, titleIconCellSize: T, withBackground: _, withWideContainer: M }), f || null);
+                        })(!!P, Z, !!f);
+                    return n.createElement(n.Fragment, null, n.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: d, leftControl: _, middleControl: h, position: p(u, Z, r), rightControl: m, style: y, subtitle: w, title: g, titleDomId: b, titleIconCell: T, titleIconCellSize: C, withBackground: v, withWideContainer: D }), f || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -46,7 +46,7 @@
             (h.contextType = c.Z), (h.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
         280418: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => v });
+            o.r(t), o.d(t, { default: () => M });
             var n = o(202784),
                 r = o(325686),
                 i = o(107267),
@@ -63,26 +63,26 @@
                 y = o(715601),
                 w = o(606293);
             const g = p().df34a454,
-                D = p().ia5e7488,
-                b = { label: D },
-                T = p().efe6ef9e,
-                C = { label: T },
-                M = n.createElement(h.default, null),
-                P = n.createElement(u.default, null);
-            function Z() {
-                const e = n.useMemo(() => n.createElement(_, null), []),
-                    t = n.useMemo(() => n.createElement(k, null), []);
-                return n.createElement(r.Z, { style: I.navStyle }, n.createElement(l.Z, { leftControl: e, rightControl: t, title: g }));
-            }
+                b = p().ia5e7488,
+                T = { label: b },
+                C = p().efe6ef9e,
+                P = { label: C },
+                D = n.createElement(h.default, null),
+                Z = n.createElement(u.default, null);
             function _() {
+                const e = n.useMemo(() => n.createElement(v, null), []),
+                    t = n.useMemo(() => n.createElement(x, null), []);
+                return n.createElement(r.Z, { style: E.navStyle }, n.createElement(l.Z, { leftControl: e, rightControl: t, title: g }));
+            }
+            function v() {
                 const e = (0, w.RQ)();
-                return n.createElement(d.ZP, { "aria-label": D, hoverLabel: b, icon: M, onPress: e, pullLeft: !0, type: "primaryText" });
+                return n.createElement(d.ZP, { "aria-label": b, hoverLabel: T, icon: D, onPress: e, pullLeft: !0, type: "primaryText" });
             }
-            function k() {
+            function x() {
                 const e = (0, w.VD)();
-                return n.createElement(d.ZP, { "aria-label": T, hoverLabel: C, icon: P, onPress: e, type: "primaryText" });
+                return n.createElement(d.ZP, { "aria-label": C, hoverLabel: P, icon: Z, onPress: e, type: "primaryText" });
             }
-            const v = function () {
+            const M = function () {
                     (0, f.useStickyViewNotify)(), (0, w.Jf)();
                     const { onViewportSet: e, viewport: t } = (function () {
                             const [e, t] = n.useState(),
@@ -94,9 +94,9 @@
                             return { viewport: e, onViewportSet: o };
                         })(),
                         o = (0, w.Ct)();
-                    return n.createElement(a.Z, { ref: o, style: I.container }, n.createElement(y.Z, { onViewportSet: e, style: I.sidebarViewStyle }, n.createElement(Z, null), t && n.createElement(i.Route, { component: m.ConversationTimeline })));
+                    return n.createElement(a.Z, { ref: o, style: E.container }, n.createElement(y.Z, { onViewportSet: e, style: E.sidebarViewStyle }, n.createElement(_, null), t && n.createElement(i.Route, { component: m.ConversationTimeline })));
                 },
-                I = s.default.create((e) => ({ container: { height: s.default.supports("height: 100dvh") ? "100dvh" : "100vh", borderStartWidth: e.borderWidths.small, borderStartStyle: "solid", borderStartColor: e.colors.borderColor, borderEndWidth: e.borderWidths.small, borderEndStyle: "solid", borderEndColor: e.colors.borderColor }, navStyle: { zIndex: e.componentZIndices.appBarZIndex, backfaceVisibility: "hidden", position: "sticky", top: -0.5 }, sidebarViewStyle: { flex: 1, inset: 0, overflow: "auto" } }));
+                E = s.default.create((e) => ({ container: { height: s.default.supports("height: 100dvh") ? "100dvh" : "100vh", borderStartWidth: e.borderWidths.small, borderStartStyle: "solid", borderStartColor: e.colors.borderColor, borderEndWidth: e.borderWidths.small, borderEndStyle: "solid", borderEndColor: e.colors.borderColor }, navStyle: { zIndex: e.componentZIndices.appBarZIndex, backfaceVisibility: "hidden", position: "sticky", top: -0.5 }, sidebarViewStyle: { flex: 1, inset: 0, overflow: "auto" } }));
         },
         847016: (e, t, o) => {
             o.d(t, { t: () => s });
@@ -127,9 +127,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: i, centerTitle: a, hideBackButton: s, history: l, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: f, rightControl: y, secondaryBar: w, subtitle: g, title: D } = this.props,
-                                { isModal: b } = this.context;
-                            return n.createElement(r.Z, { style: b ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, n.createElement(c.ZP, { backButtonType: o || (b ? "close" : "back"), backLocation: i, centerTitle: a, fixed: !b, hideBackButton: s, history: l, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: f, ref: e, rightControl: y, secondaryBar: w, style: [b && m.appBarModal, t], subtitle: g, title: D, titleDomId: d.Q_ }));
+                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: i, centerTitle: a, hideBackButton: s, history: l, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: f, rightControl: y, secondaryBar: w, subtitle: g, title: b } = this.props,
+                                { isModal: T } = this.context;
+                            return n.createElement(r.Z, { style: T ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, n.createElement(c.ZP, { backButtonType: o || (T ? "close" : "back"), backLocation: i, centerTitle: a, fixed: !T, hideBackButton: s, history: l, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: f, ref: e, rightControl: y, secondaryBar: w, style: [T && m.appBarModal, t], subtitle: g, title: b, titleDomId: d.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -489,7 +489,7 @@
             }
         },
         519125: (e, t, o) => {
-            o.d(t, { Mu: () => v, ZP: () => k });
+            o.d(t, { Mu: () => M, ZP: () => x });
             var n = o(662678),
                 r = o(769471),
                 i = o(337637),
@@ -506,20 +506,20 @@
                 y = o(652815),
                 w = o(560520),
                 g = o(367991),
-                D = o(705638),
-                b = o(801184),
-                T = o(335632);
-            const C = "FocalTweetInlineTombstone",
-                M = "More Replies";
-            let P;
-            const Z = Object.freeze({ Default: "ui_defaultLabel", TransparentCursor: "ui_transparentCursor" }),
-                _ = { ...(0, T.G)({}), [l.ZP.Tweet]: (0, D.Z)({ hideConversationControlsEducationText: !0, withMuteConversation: !0 }) },
-                k = ({ changeDropdownState: e, hideReplyContextMode: t, isCurrentUserRootAuthor: o, isReaderMode: n, isTransparentCursorsEnabled: i, replyDropdownSelection: a, rootTweetAuthorId: s, tweetTextSize: c, withFocalTweetMedia: D, withRuxInjections: T }) =>
-                    (0, r.Z)({}, _, {
+                b = o(705638),
+                T = o(801184),
+                C = o(335632);
+            const P = "FocalTweetInlineTombstone",
+                D = "More Replies";
+            let Z;
+            const _ = Object.freeze({ Default: "ui_defaultLabel", TransparentCursor: "ui_transparentCursor" }),
+                v = { ...(0, C.G)({}), [l.ZP.Tweet]: (0, b.Z)({ hideConversationControlsEducationText: !0, withMuteConversation: !0 }) },
+                x = ({ changeDropdownState: e, hideReplyContextMode: t, isCurrentUserRootAuthor: o, isReaderMode: n, isTransparentCursorsEnabled: i, replyDropdownSelection: a, rootTweetAuthorId: s, tweetTextSize: c, withFocalTweetMedia: b, withRuxInjections: C }) =>
+                    (0, r.Z)({}, v, {
                         [l.ZP.SelfThreadTweetComposer]: y.Z,
                         [l.ZP.Tweet]: {
                             handlers: {
-                                [h.Z.Tweet]: (0, b.Cw)({
+                                [h.Z.Tweet]: (0, T.Cw)({
                                     hideConversationControlsEducationText: !0,
                                     hideExclusivityInfoEducationTextInReplies: !0,
                                     hideTrustedFriendsEducationTextInReplies: !0,
@@ -541,7 +541,7 @@
                                     hideReplyContextMode: t,
                                     withMuteConversation: !0,
                                 }),
-                                [h.Z.FocalTweet]: (0, b.g6)({
+                                [h.Z.FocalTweet]: (0, T.g6)({
                                     createAdditionalProps: (t, { applyFeedbackAction: n }) => {
                                         const {
                                                 content: { conversation_annotation: r, hasModeratedReplies: i },
@@ -558,7 +558,7 @@
                                             socialContext: u,
                                             topicFollowPrompt: m,
                                             withHideReply: o,
-                                            withInlineMedia: D,
+                                            withInlineMedia: b,
                                             ...(o
                                                 ? {
                                                       onTweetDismiss: () => {
@@ -574,16 +574,16 @@
                                     divider: (e) => ({ top: !1, bottom: !1 }),
                                     hideReplyContextMode: t,
                                 }),
-                                [h.Z.SelfThread]: (0, b.Cw)({ hideReplyContextMode: t }),
-                                [h.Z.ReaderMode]: (0, b.Cw)({ hideConversationControlsEducationText: !0, hideExclusivityInfoEducationTextInReplies: !0, hideHighlightedUserLabel: !0, hideTrustedFriendsEducationTextInReplies: !0, isReaderMode: !0, shouldSelfThreadIncludeAvatar: !1, showWithheldBannerOnMyTweets: !1, tweetTextSize: c, withActionsDisabled: !1, withMuteConversation: !1, withRemoveFromBookmarks: !1, withSelfThread: !1, withUserPresence: !1 }),
+                                [h.Z.SelfThread]: (0, T.Cw)({ hideReplyContextMode: t }),
+                                [h.Z.ReaderMode]: (0, T.Cw)({ hideConversationControlsEducationText: !0, hideExclusivityInfoEducationTextInReplies: !0, hideHighlightedUserLabel: !0, hideTrustedFriendsEducationTextInReplies: !0, isReaderMode: !0, shouldSelfThreadIncludeAvatar: !1, showWithheldBannerOnMyTweets: !1, tweetTextSize: c, withActionsDisabled: !1, withMuteConversation: !1, withRemoveFromBookmarks: !1, withSelfThread: !1, withUserPresence: !1 }),
                             },
                         },
-                        [l.ZP.Tombstone]: { handlers: { [C]: (0, g._n)({ isFocalTweet: !0, isReaderMode: n, withHideReply: o }), [p.Z.Inline]: (0, g._n)({ isReaderMode: n, tweetDismissFeedbackKey: o ? d.qt : void 0, withHideReply: o }) } },
-                        [l.ZP.Label]: u.ov({ selectDisplayType: (e) => ((e, t) => (t && e.content.text === M ? Z.TransparentCursor : Z.Default))(e, i), handlers: { [Z.TransparentCursor]: f.L, [Z.Default]: f.k } }),
-                        [l.ZP.TimelineCursor]: (0, m.Z)({ withRuxInjections: T }),
+                        [l.ZP.Tombstone]: { handlers: { [P]: (0, g._n)({ isFocalTweet: !0, isReaderMode: n, withHideReply: o }), [p.Z.Inline]: (0, g._n)({ isReaderMode: n, tweetDismissFeedbackKey: o ? d.qt : void 0, withHideReply: o }) } },
+                        [l.ZP.Label]: u.ov({ selectDisplayType: (e) => ((e, t) => (t && e.content.text === D ? _.TransparentCursor : _.Default))(e, i), handlers: { [_.TransparentCursor]: f.L, [_.Default]: f.k } }),
+                        [l.ZP.TimelineCursor]: (0, m.Z)({ withRuxInjections: C }),
                         [l.ZP.ThreadHeader]: w.Z,
                     }),
-                v = ({ contextTweetId: e, contextualClientEventInfo: t, focalTweetId: o, promotedContent: r, showOnlyRelevantReplies: d, socialContext: c, topicFollowPrompt: h }) => {
+                M = ({ contextTweetId: e, contextualClientEventInfo: t, focalTweetId: o, promotedContent: r, showOnlyRelevantReplies: d, socialContext: c, topicFollowPrompt: h }) => {
                     const u = (e) => (e.type === l.ZP.Tweet && e.content.id === o) || (e.type === l.ZP.Tombstone && !!e.content && !!e.content.tweet && e.content.tweet.id === o);
                     return (o) => {
                         const m = (0, i.Z)(o, u);
@@ -595,10 +595,10 @@
                         let w;
                         return (0, a.Z)(y, (o, n) => {
                             const i = o.type === l.ZP.TimelineCursor && (o.content.cursorType === s.CursorType.ShowMoreThreads || o.content.cursorType === s.CursorType.ShowMoreThreadsPrompt),
-                                a = o.type === l.ZP.Label && o.content.text === M;
-                            if (d && (i || a)) return void 0 === w && o.content.cursorType === s.CursorType.ShowMoreThreadsPrompt ? (P = n) : void 0 === w && (w = n), !1;
+                                a = o.type === l.ZP.Label && o.content.text === D;
+                            if (d && (i || a)) return void 0 === w && o.content.cursorType === s.CursorType.ShowMoreThreadsPrompt ? (Z = n) : void 0 === w && (w = n), !1;
                             if (d && void 0 !== w && n >= w) return !1;
-                            if (d && void 0 === w && n >= P) return !1;
+                            if (d && void 0 === w && n >= Z) return !1;
                             const u = n > m;
                             if ((o.type !== l.ZP.Tweet && o.type !== l.ZP.Tombstone) || u) return o.type !== l.ZP.SelfThreadTweetComposer && o;
                             {
@@ -609,22 +609,22 @@
                                 } else {
                                     if (o.type === l.ZP.Tombstone) {
                                         const t = { isStart: i, isEnd: !0 };
-                                        return o.content.displayType === p.Z.Inline ? x({ contextTweetId: e, entry: o, socialContext: c, topicFollowPrompt: h, conversationPosition: t }) : E({ entry: o, conversationPosition: t });
+                                        return o.content.displayType === p.Z.Inline ? I({ contextTweetId: e, entry: o, socialContext: c, topicFollowPrompt: h, conversationPosition: t }) : k({ entry: o, conversationPosition: t });
                                     }
-                                    if (o.type === l.ZP.Tweet) return I({ originalEntry: o, contextTweetId: e, contextualClientEventInfo: t, socialContext: c, promotedContent: r, topicFollowPrompt: h, conversationPosition: { isStart: i, isEnd: !0, position: "focal", showReplyContext: !1 } });
+                                    if (o.type === l.ZP.Tweet) return E({ originalEntry: o, contextTweetId: e, contextualClientEventInfo: t, socialContext: c, promotedContent: r, topicFollowPrompt: h, conversationPosition: { isStart: i, isEnd: !0, position: "focal", showReplyContext: !1 } });
                                 }
                             }
                         });
                     };
                 },
-                I = ({ contextTweetId: e, contextualClientEventInfo: t, conversationPosition: o, originalEntry: n, promotedContent: r, socialContext: i, topicFollowPrompt: a }) => c.Wf({ ...n, conversationPosition: o, referringContext: { contextTweetId: e, contextualClientEventInfo: t, socialContext: i, promotedContent: r, topicFollowPrompt: a } }, { displayType: h.Z.FocalTweet }),
-                x = ({ contextTweetId: e, conversationPosition: t, entry: o, socialContext: n, topicFollowPrompt: r }) => c.Wf({ ...o, conversationPosition: t, referringContext: { contextTweetId: e, socialContext: n } }, { displayType: C }),
-                E = ({ conversationPosition: e, entry: t }) => ({ ...t, conversationPosition: e }),
+                E = ({ contextTweetId: e, contextualClientEventInfo: t, conversationPosition: o, originalEntry: n, promotedContent: r, socialContext: i, topicFollowPrompt: a }) => c.Wf({ ...n, conversationPosition: o, referringContext: { contextTweetId: e, contextualClientEventInfo: t, socialContext: i, promotedContent: r, topicFollowPrompt: a } }, { displayType: h.Z.FocalTweet }),
+                I = ({ contextTweetId: e, conversationPosition: t, entry: o, socialContext: n, topicFollowPrompt: r }) => c.Wf({ ...o, conversationPosition: t, referringContext: { contextTweetId: e, socialContext: n } }, { displayType: P }),
+                k = ({ conversationPosition: e, entry: t }) => ({ ...t, conversationPosition: e }),
                 S = (e, t) => ({ ...e, conversationPosition: { isStart: t, isEnd: !1, position: "ancestor", showReplyContext: !1 } }),
                 R = (e, t) => ({ ...e, conversationPosition: { isStart: t, isEnd: !1, position: "ancestor" } });
         },
         927192: (e, t, o) => {
-            o.d(t, { Z: () => k });
+            o.d(t, { Z: () => x });
             var n = o(202784),
                 r = o(111677),
                 i = o.n(r),
@@ -641,15 +641,15 @@
                 y = o(810641),
                 w = o(438965),
                 g = o(668214);
-            const D = (e, t) => {
+            const b = (e, t) => {
                     const o = t.module.selectTimeline(e);
                     return !!o && o.terminatedStatus.atTop;
                 },
-                b = (e, t) => t.location.state && t.location.state.contextualClientEventInfo,
-                T = (0, g.Z)().propsFromState(() => ({ isTimelineTerminatedAtTop: D, contextualClientEventInfo: b }));
-            var C = o(519125);
-            const M = i().d35d74e4,
-                P = (e) => {
+                T = (e, t) => t.location.state && t.location.state.contextualClientEventInfo,
+                C = (0, g.Z)().propsFromState(() => ({ isTimelineTerminatedAtTop: b, contextualClientEventInfo: T }));
+            var P = o(519125);
+            const D = i().d35d74e4,
+                Z = (e) => {
                     switch (e) {
                         case h.Z.NOT_FOUND:
                             return n.createElement(f.Z, null);
@@ -659,22 +659,22 @@
                             return (0, c.ZP)(`Unhandled timeline unavailable reason: ${e}`), null;
                     }
                 },
-                Z = () => n.createElement(f.Z, null);
-            class _ extends n.Component {
+                _ = () => n.createElement(f.Z, null);
+            class v extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._isInitialFocusEntry = (e, t) => {
                             const { focalTweetId: o, location: n } = this.props;
                             return !!!n.state?.focusComposer && e && e.content && !!e.content.id && e.content.id === o;
                         }),
-                        (this._getMemoizedPreprocessor = (0, a.Z)((e, t, o, n, r, i, a) => (0, C.Mu)({ focalTweetId: r, contextTweetId: t, contextualClientEventInfo: o, socialContext: e, topicFollowPrompt: i, promotedContent: n, showOnlyRelevantReplies: a }))),
+                        (this._getMemoizedPreprocessor = (0, a.Z)((e, t, o, n, r, i, a) => (0, P.Mu)({ focalTweetId: r, contextTweetId: t, contextualClientEventInfo: o, socialContext: e, topicFollowPrompt: i, promotedContent: n, showOnlyRelevantReplies: a }))),
                         (this._getPreprocessor = () => {
                             const { contextTweetId: e, contextualClientEventInfo: t, focalTweetId: o, promotedContent: n, socialContext: r, topicFollowPrompt: i } = this.props;
                             return this._getMemoizedPreprocessor(r, e, t, n, o, i, !1);
                         }),
                         (this._getMemoizedEntryConfig = (0, a.Z)((e, t, o, n, r, i) => {
                             const a = e && n && e === n;
-                            return (0, C.ZP)({ changeDropdownState: this.props.changeDropdownState, isCurrentUserRootAuthor: !!a, hideReplyContextMode: t, replyDropdownSelection: o, rootTweetAuthorId: n, withFocalTweetMedia: r, withRuxInjections: i });
+                            return (0, P.ZP)({ changeDropdownState: this.props.changeDropdownState, isCurrentUserRootAuthor: !!a, hideReplyContextMode: t, replyDropdownSelection: o, rootTweetAuthorId: n, withFocalTweetMedia: r, withRuxInjections: i });
                         })),
                         (this._getEntryConfig = () => {
                             const e = this.props,
@@ -689,7 +689,7 @@
                 }
                 render() {
                     const { apiErrorHandlerMap: e, fetchOptions: t, module: o, onEntriesRendered: r } = this.props;
-                    return n.createElement(y.Z, { anchoring: d.Z, apiErrorHandlerMap: e, entryConfiguration: this._getEntryConfig(), fetchOptions: t, isInitialFocusEntry: this._isInitialFocusEntry, module: o, nearStartProximityRatio: 2, olderAtTop: !0, onEntriesRendered: r, preprocessEntryList: this._getPreprocessor(), prerollDisplayLocation: u.Nw.OTHER, previewEntries: this._previewEntries(), refreshControl: null, renderEmptyState: Z, renderUnavailable: P, title: M });
+                    return n.createElement(y.Z, { anchoring: d.Z, apiErrorHandlerMap: e, entryConfiguration: this._getEntryConfig(), fetchOptions: t, isInitialFocusEntry: this._isInitialFocusEntry, module: o, nearStartProximityRatio: 2, olderAtTop: !0, onEntriesRendered: r, preprocessEntryList: this._getPreprocessor(), prerollDisplayLocation: u.Nw.OTHER, previewEntries: this._previewEntries(), refreshControl: null, renderEmptyState: _, renderUnavailable: Z, title: D });
                 }
                 _previewEntries() {
                     const { focalTweet: e } = this.props,
@@ -697,8 +697,8 @@
                     return e ? [p.Se({ id: t, sortIndex: l.Z })] : void 0;
                 }
             }
-            (_.defaultProps = { withFocalTweetMedia: !0 }), (_.contextType = m.rC);
-            const k = T(_);
+            (v.defaultProps = { withFocalTweetMedia: !0 }), (v.contextType = m.rC);
+            const x = C(v);
         },
         438965: (e, t, o) => {
             o.d(t, { FE: () => i, Hx: () => l, Oj: () => r, P3: () => d, QO: () => s, j: () => a });
@@ -719,7 +719,7 @@
                 };
         },
         62857: (e, t, o) => {
-            o.d(t, { Z: () => k });
+            o.d(t, { Z: () => x });
             var n = o(807896),
                 r = o(202784),
                 i = o(476984),
@@ -741,27 +741,27 @@
             var y = o(312771),
                 w = o(71620),
                 g = o(973572),
-                D = o(668214),
-                b = o(919022);
-            const T = (e, t) => t.userIds,
-                C = (e, t) => {
+                b = o(668214),
+                T = o(919022);
+            const C = (e, t) => t.userIds,
+                P = (e, t) => {
                     const { filterPredicate: o = (e) => !!e, userIds: n } = t;
                     return n.filter((t) => {
-                        const n = b.ZP.select(e, t);
+                        const n = T.ZP.select(e, t);
                         return !!n && o(n);
                     });
                 },
-                M = (e, t) => {
+                D = (e, t) => {
                     const { userIds: o } = t;
                     return o.reduce((t, o) => {
-                        const n = b.ZP.selectFetchStatus(e, o);
+                        const n = T.ZP.selectFetchStatus(e, o);
                         return n && (t[o] = n === y.ZP.NONE ? y.ZP.LOADING : n), t;
                     }, {});
                 },
-                P = (0, D.Z)()
+                Z = (0, b.Z)()
                     .propsFromState(() => ({
-                        availableUserIds: (0, g.Z)(C, (e) => e),
-                        fetchStatus: (0, g.Z)(C, M, T, (e, t, o) => {
+                        availableUserIds: (0, g.Z)(P, (e) => e),
+                        fetchStatus: (0, g.Z)(P, D, C, (e, t, o) => {
                             let n = y.ZP.LOADED;
                             for (let r = 0; r < o.length; r++) {
                                 const i = o[r];
@@ -774,9 +774,9 @@
                             return n;
                         }),
                     }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, w.zr)("USERS_LIST_CONTAINER"), fetchUsersIfNeeded: b.ZP.fetchManyIfNeeded })),
-                Z = l().f5b426c2;
-            class _ extends r.Component {
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, w.zr)("USERS_LIST_CONTAINER"), fetchUsersIfNeeded: T.ZP.fetchManyIfNeeded })),
+                _ = l().f5b426c2;
+            class v extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { allUsersUnavailable: !1 }),
@@ -795,7 +795,7 @@
                     a()(e.userIds, this.props.userIds) || this._fetchUsersIfNeeded();
                 }
                 render() {
-                    return r.createElement(c.Z, { "aria-label": Z, fetchStatus: this.state.allUsersUnavailable ? y.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
+                    return r.createElement(c.Z, { "aria-label": _, fetchStatus: this.state.allUsersUnavailable ? y.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
                 }
                 _fetchUsersIfNeeded() {
                     const { availableUserIds: e, createLocalApiErrorHandler: t, fetchUsersIfNeeded: o, userIds: n } = this.props;
@@ -818,7 +818,7 @@
                     );
                 }
             }
-            const k = P(_);
+            const x = Z(v);
         },
         26193: (e, t, o) => {
             o.d(t, { Z: () => n });
@@ -843,14 +843,6 @@
                         o.e("icons.5"),
                         o.e("icons.16"),
                         o.e("icons.19"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -871,10 +863,10 @@
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         o.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
-                        o.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         o.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         o.e("shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"),
-                        o.e("loader.WideLayout"),
+                        o.e("loader.WideLayout-6107ac1a"),
+                        o.e("loader.WideLayout-a2dee9c7"),
                     ]).then(o.bind(o, 130888)),
                 renderPlaceholder: (e, t) => null,
             });
@@ -950,8 +942,8 @@
                         ref_url: y,
                         refsrc: w,
                         s: g,
-                        uid: D,
-                        url: b,
+                        uid: b,
+                        url: T,
                     } = (function (e) {
                         const t = {};
                         return (
@@ -961,12 +953,12 @@
                             t
                         );
                     })(l);
-                let T = Object.freeze({});
+                let C = Object.freeze({});
                 if (
                     (null != e.referralMapping
-                        ? (T = e.referralMapping)
+                        ? (C = e.referralMapping)
                         : null != e.featureSwitches &&
-                          (T = (function (e) {
+                          (C = (function (e) {
                               const t = {},
                                   o = e.getArrayValue("shortened_tracking_parameters_mapping");
                               for (const e of o) {
@@ -988,14 +980,14 @@
                     } catch (t) {
                         e = "invalid";
                     }
-                    const o = ["twcamp^email", h && `twsrc^${h}`, D && `twcon^${D}`, p && `twterm^${p}`, `twgr^${e}`].filter(Boolean).join("|");
+                    const o = ["twcamp^email", h && `twsrc^${h}`, b && `twcon^${b}`, p && `twterm^${p}`, `twgr^${e}`].filter(Boolean).join("|");
                     t = { referral_type: a.Email, referral_details_str: o };
                 } else if (g) {
-                    const e = T[g];
+                    const e = C[g];
                     e && (t = { referral_type: a.Web, referral_details_str: e });
                 } else m ? (t = { referral_type: a.Partner, referral_details_str: `twsrc^${m}` }) : s && i.ZP.isExternalUrl(s) && (t = { referral_type: a.Web });
-                let C = y ?? u ?? b ?? s;
-                return C.length > 256 && (C = C.substring(0, 256)), C && (t = { ...t, referer: C }), (0, n.Z)(t) || (t = { ...t, url: d }), t;
+                let P = y ?? u ?? T ?? s;
+                return P.length > 256 && (P = P.substring(0, 256)), P && (t = { ...t, referer: P }), (0, n.Z)(t) || (t = { ...t, url: d }), t;
             }
             function l(e) {
                 return e.referral_type === a.Access;
@@ -1006,4 +998,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-e019dbda.502bfbea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-e019dbda.6afbf8ba.js.map

@@ -7,19 +7,19 @@
             const a = ({ apiClient: e, featureSwitches: t }) => ({ fetch: (t = {}, o = {}) => e.get("saved_searches/list", t, o), create: (t, o = {}) => e.post("saved_searches/create", t, {}, o), destroy: (t, o = {}) => e.post(`saved_searches/destroy/${t.id}`, t, {}, o) });
         },
         625661: (e, t, o) => {
-            o.d(t, { ZP: () => h });
+            o.d(t, { ZP: () => u });
             var a = o(202784),
                 r = o(614983),
                 n = o.n(r),
                 s = o(325686),
-                i = o(370006),
-                d = o(786998),
+                d = o(370006),
+                i = o(786998),
                 l = o(929028),
                 c = o(386802);
-            function u(e, t, o) {
+            function h(e, t, o) {
                 return e || (!t && o ? "fixed" : void 0);
             }
-            class h extends a.Component {
+            class u extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handleBackClick = () => {
@@ -32,13 +32,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: n, isFullWidth: s, isLarge: l, leftControl: c, middleControl: h, position: p, rightControl: m, secondaryBar: b, style: S, subtitle: _, title: y, titleDomId: w, titleIconCell: f, titleIconCellSize: g, withBackground: D, withWideContainer: A } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: n, isFullWidth: s, isLarge: l, leftControl: c, middleControl: u, position: p, rightControl: m, secondaryBar: b, style: S, subtitle: w, title: _, titleDomId: y, titleIconCell: f, titleIconCellSize: g, withBackground: k, withWideContainer: D } = this.props,
                         { isModal: E } = this.context,
-                        k = n ? c : a.createElement(i.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        C = (function (e, t, o) {
+                        C = n ? c : a.createElement(d.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        v = (function (e, t, o) {
                             return e && !(t && o);
-                        })(!!D, E, !!b);
-                    return a.createElement(a.Fragment, null, a.createElement(d.Z, { centerTitle: t, centeredLogo: o, isFullWidth: s, isLarge: l, leftControl: k, middleControl: h, position: u(p, E, r), rightControl: m, style: S, subtitle: _, title: y, titleDomId: w, titleIconCell: f, titleIconCellSize: g, withBackground: C, withWideContainer: A }), b || null);
+                        })(!!k, E, !!b);
+                    return a.createElement(a.Fragment, null, a.createElement(i.Z, { centerTitle: t, centeredLogo: o, isFullWidth: s, isLarge: l, leftControl: C, middleControl: u, position: h(p, E, r), rightControl: m, style: S, subtitle: w, title: _, titleDomId: y, titleIconCell: f, titleIconCellSize: g, withBackground: v, withWideContainer: D }), b || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -47,7 +47,7 @@
                     return t ? a.createElement(s.Z, { style: !!e && o }, this._renderContent()) : this._renderContent();
                 }
             }
-            (h.contextType = c.Z), (h.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
+            (u.contextType = c.Z), (u.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
         33104: (e, t, o) => {
             o.d(t, { Z: () => r });
@@ -61,12 +61,12 @@
                 r = o(202784),
                 n = o(325686),
                 s = o(392237),
-                i = o(655352);
-            const d = s.default.create((e) => ({ root: { paddingBottom: `calc(${e.spaces.space64} + ${e.spaces.space20} * 2)` } })),
-                l = ({ children: e, component: t, fab: o, shouldRenderFab: s = !0, style: l, withoutBottomPadding: c, ...u }) => {
-                    const h = t || n.Z,
-                        p = s && !(0, i.ZP)();
-                    return r.createElement(h, (0, a.Z)({}, u, { style: [p && !c && d.root, l] }), e, p ? o : null);
+                d = o(655352);
+            const i = s.default.create((e) => ({ root: { paddingBottom: `calc(${e.spaces.space64} + ${e.spaces.space20} * 2)` } })),
+                l = ({ children: e, component: t, fab: o, shouldRenderFab: s = !0, style: l, withoutBottomPadding: c, ...h }) => {
+                    const u = t || n.Z,
+                        p = s && !(0, d.ZP)();
+                    return r.createElement(u, (0, a.Z)({}, h, { style: [p && !c && i.root, l] }), e, p ? o : null);
                 };
         },
         980407: (e, t, o) => {
@@ -75,19 +75,19 @@
                 r = o(325686),
                 n = o(108362),
                 s = o(386802),
-                i = o(392237),
-                d = o(652904),
+                d = o(392237),
+                i = o(652904),
                 l = o(555079),
                 c = o(625661),
-                u = o(449067),
-                h = o(715601);
+                h = o(449067),
+                u = o(715601);
             class p extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: n, centerTitle: s, hideBackButton: i, history: d, isFullWidth: u, isLarge: h, middleControl: p, onBackClick: b, rightControl: S, secondaryBar: _, subtitle: y, title: w } = this.props,
+                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: n, centerTitle: s, hideBackButton: d, history: i, isFullWidth: h, isLarge: u, middleControl: p, onBackClick: b, rightControl: S, secondaryBar: w, subtitle: _, title: y } = this.props,
                                 { isModal: f } = this.context;
-                            return a.createElement(r.Z, { style: f ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, a.createElement(c.ZP, { backButtonType: o || (f ? "close" : "back"), backLocation: n, centerTitle: s, fixed: !f, hideBackButton: i, history: d, isFullWidth: u, isLarge: h, middleControl: p, onBackClick: b, ref: e, rightControl: S, secondaryBar: _, style: [f && m.appBarModal, t], subtitle: y, title: w, titleDomId: l.Q_ }));
+                            return a.createElement(r.Z, { style: f ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, a.createElement(c.ZP, { backButtonType: o || (f ? "close" : "back"), backLocation: n, centerTitle: s, fixed: !f, hideBackButton: d, history: i, isFullWidth: h, isLarge: u, middleControl: p, onBackClick: b, ref: e, rightControl: S, secondaryBar: w, style: [f && m.appBarModal, t], subtitle: _, title: y, titleDomId: l.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -96,14 +96,14 @@
                         });
                 }
                 render() {
-                    const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: s, documentTitle: i, isFullWidth: l, isLarge: c, renderHeader: p, title: b, withoutBottomBarMobile: S } = this.props,
-                        { isModal: _ } = this.context,
-                        y = p ? p(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return a.createElement(d.Z, null, a.createElement(u.Z.Configure, { documentTitle: i, headerless: !0, title: b }), a.createElement(r.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [m.root, _ && m.rootModal] }, !_ && y, a.createElement(n.Z, { isFullWidth: l, isLarge: c, style: [m.container, _ && m.containerModal, s] }, _ ? a.createElement(h.Z, { style: m.viewport }, y, o) : o), t ? a.createElement(r.Z, { style: [m.bottomBarModal, !_ && !S && m.bottomBarMobile] }, a.createElement(n.Z, { isFullWidth: l, isLarge: c }, t)) : null));
+                    const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: s, documentTitle: d, isFullWidth: l, isLarge: c, renderHeader: p, title: b, withoutBottomBarMobile: S } = this.props,
+                        { isModal: w } = this.context,
+                        _ = p ? p(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
+                    return a.createElement(i.Z, null, a.createElement(h.Z.Configure, { documentTitle: d, headerless: !0, title: b }), a.createElement(r.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [m.root, w && m.rootModal] }, !w && _, a.createElement(n.Z, { isFullWidth: l, isLarge: c, style: [m.container, w && m.containerModal, s] }, w ? a.createElement(u.Z, { style: m.viewport }, _, o) : o), t ? a.createElement(r.Z, { style: [m.bottomBarModal, !w && !S && m.bottomBarMobile] }, a.createElement(n.Z, { isFullWidth: l, isLarge: c }, t)) : null));
                 }
             }
             (p.defaultProps = { isFullWidth: !1, isLarge: !1 }), (p.contextType = s.Z);
-            const m = i.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 }, rootModal: { borderRadius: e.borderRadii.xLarge, flexShrink: 1 }, appBarModal: { borderTopStartRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, childViewAppBarRoot: { position: "sticky", top: 0 }, appBarZindex: { zIndex: e.componentZIndices.appBarZIndex }, container: { flexGrow: 1 }, containerModal: { flexShrink: 1 }, viewport: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge, flexGrow: 1, flexShrink: 1, overflow: "auto", zIndex: void 0 }, bottomBarModal: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small }, bottomBarMobile: { position: "fixed", backfaceVisibility: "hidden", bottom: 0, width: "100%", paddingBottom: i.default.iPhoneOffsetBottom, backgroundColor: e.colors.navigationBackground, borderTopStyle: "solid" } })),
+            const m = d.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 }, rootModal: { borderRadius: e.borderRadii.xLarge, flexShrink: 1 }, appBarModal: { borderTopStartRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, childViewAppBarRoot: { position: "sticky", top: 0 }, appBarZindex: { zIndex: e.componentZIndices.appBarZIndex }, container: { flexGrow: 1 }, containerModal: { flexShrink: 1 }, viewport: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge, flexGrow: 1, flexShrink: 1, overflow: "auto", zIndex: void 0 }, bottomBarModal: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small }, bottomBarMobile: { position: "fixed", backfaceVisibility: "hidden", bottom: 0, width: "100%", paddingBottom: d.default.iPhoneOffsetBottom, backgroundColor: e.colors.navigationBackground, borderTopStyle: "solid" } })),
                 b = p;
         },
         896008: (e, t, o) => {
@@ -112,42 +112,42 @@
                 r = o(325686),
                 n = o(449479),
                 s = o(30183),
-                i = o(392237),
-                d = o(111677),
-                l = o.n(d),
+                d = o(392237),
+                i = o(111677),
+                l = o.n(i),
                 c = o(744531),
-                u = o(685399),
-                h = o(443781),
+                h = o(685399),
+                u = o(443781),
                 p = o(369241),
                 m = o(725516);
             const b = "searchFiltersAdvancedSearch",
                 S = Object.freeze({ People: "People", Location: "Location" }),
-                _ = l().j622effe,
-                y = l().g2fd3206,
-                w = l().defb4aaa,
+                w = l().j622effe,
+                _ = l().g2fd3206,
+                y = l().defb4aaa,
                 f = l().af293dc2,
                 g = l().jaaa8984,
-                D = l().i5045e74,
-                A = l().h2388754,
+                k = l().i5045e74,
+                D = l().h2388754,
                 E = "anyone",
-                k = "youFollow",
-                C = "anywhere",
-                v = "nearYou",
+                C = "youFollow",
+                v = "anywhere",
+                A = "nearYou",
                 M = [
                     {
-                        label: y,
+                        label: _,
                         name: S.People,
                         options: [
-                            { label: w, value: E },
-                            { label: f, value: k },
+                            { label: y, value: E },
+                            { label: f, value: C },
                         ],
                     },
                     {
                         label: g,
                         name: S.Location,
                         options: [
-                            { label: D, value: C },
-                            { label: A, value: v },
+                            { label: k, value: v },
+                            { label: D, value: A },
                         ],
                     },
                 ];
@@ -174,13 +174,13 @@
                                 case S.People:
                                     if (o) {
                                         this.setState({ peopleFilter: t });
-                                        const e = { pf: t === k ? "on" : void 0, lf: "on" === a.lf ? a.lf : void 0 };
+                                        const e = { pf: t === C ? "on" : void 0, lf: "on" === a.lf ? a.lf : void 0 };
                                         this._executeSearch(e, "people");
                                     } else this.setState({ shouldShowLoginSheet: !0 });
                                     break;
                                 case S.Location: {
                                     this.setState({ locationFilter: t });
-                                    const e = { lf: t === v ? "on" : void 0, pf: "on" === a.pf ? a.pf : void 0 };
+                                    const e = { lf: t === A ? "on" : void 0, pf: "on" === a.pf ? a.pf : void 0 };
                                     this._executeSearch(e, "location");
                                     break;
                                 }
@@ -201,7 +201,7 @@
                             const { history: o, location: a } = this.props;
                             this._scribeAction(t);
                             const r = this._getPathname();
-                            o.replace({ pathname: r, query: (0, u.Z)({ ...a.query, ...e }) });
+                            o.replace({ pathname: r, query: (0, h.Z)({ ...a.query, ...e }) });
                         }),
                         (this._getPathname = () => {
                             const { location: e } = this.props;
@@ -218,10 +218,10 @@
                         });
                     const { loggedInUserId: o } = this.context,
                         { location: s } = e,
-                        i = s.query,
-                        d = o && i && i.pf ? k : E,
-                        l = i && i.lf ? v : C;
-                    this.state = { peopleFilter: d, locationFilter: l, shouldShowLoginSheet: !1 };
+                        d = s.query,
+                        i = o && d && d.pf ? C : E,
+                        l = d && d.lf ? A : v;
+                    this.state = { peopleFilter: i, locationFilter: l, shouldShowLoginSheet: !1 };
                 }
                 componentDidMount() {
                     const { analytics: e } = this.props;
@@ -230,11 +230,11 @@
                 render() {
                     const { withBottomBorder: e } = this.props,
                         { shouldShowLoginSheet: t } = this.state;
-                    return a.createElement(r.Z, null, a.createElement(r.Z, { style: x.content }, this._renderFilters()), a.createElement(r.Z, { style: e && x.bottomBorder, testID: b }, a.createElement(s.Z, { link: this._getAdvancedSearchLink(), onPress: this._handleFooterPress, text: _ })), t ? a.createElement(p.ZP, { onClose: this._handleHideLoginSheet }) : null);
+                    return a.createElement(r.Z, null, a.createElement(r.Z, { style: x.content }, this._renderFilters()), a.createElement(r.Z, { style: e && x.bottomBorder, testID: b }, a.createElement(s.Z, { link: this._getAdvancedSearchLink(), onPress: this._handleFooterPress, text: w })), t ? a.createElement(p.ZP, { onClose: this._handleHideLoginSheet }) : null);
                 }
             }
-            (T.contextType = h.rC), (T.defaultProps = { withBottomBorder: !1 });
-            const x = i.default.create((e) => ({ content: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingBottom: e.spaces.space16 }, bottomBorder: { borderBottomColor: e.colors.gray50, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small }, paddingTop: { paddingTop: e.spaces.space4 } })),
+            (T.contextType = u.rC), (T.defaultProps = { withBottomBorder: !1 });
+            const x = d.default.create((e) => ({ content: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingBottom: e.spaces.space16 }, bottomBorder: { borderBottomColor: e.colors.gray50, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small }, paddingTop: { paddingTop: e.spaces.space4 } })),
                 B = (0, m.Z)(T, { page: "search_filters" });
         },
         507651: (e, t, o) => {
@@ -243,13 +243,13 @@
                 r = o(202784),
                 n = o(107267),
                 s = o(403556),
-                i = o(791632);
-            const d = (e) => {
+                d = o(791632);
+            const i = (e) => {
                     const t = (0, n.useHistory)(),
-                        { isCompact: o, ...d } = e;
-                    return r.createElement(s.Z, (0, a.Z)({}, d, { isCompact: o || (0, i.HD)(t) }));
+                        { isCompact: o, ...i } = e;
+                    return r.createElement(s.Z, (0, a.Z)({}, i, { isCompact: o || (0, d.HD)(t) }));
                 },
-                l = r.memo(d);
+                l = r.memo(i);
         },
         387524: (e, t, o) => {
             o.d(t, { Z: () => b });
@@ -257,40 +257,40 @@
                 r = o(202784),
                 n = o(325686),
                 s = o(292627),
-                i = o(537392),
-                d = o(392237),
+                d = o(537392),
+                i = o(392237),
                 l = o(365023),
                 c = o(392027),
-                u = o(774654),
-                h = o(725516),
+                h = o(774654),
+                u = o(725516),
                 p = o(443781);
-            const m = d.default.create((e) => ({ root: { marginHorizontal: "auto", width: "100%" }, rootMedium: { position: "absolute", bottom: 0, start: 0, end: 0 }, rootLarge: { maxWidth: 1e3 }, fabStaysAboveSafeArea: { top: `calc(${d.default.iPhoneOffsetBottom} - ${u.ZM.getAppBarHeight()} - ${e.spaces.space20})` }, fab: { bottom: e.spaces.space20, alignSelf: "flex-end", end: e.spaces.space20 }, fabLarge: { end: e.spaces.space20 }, fabMicro: { bottom: e.spaces.space16, end: e.spaces.space16 }, buttonMicro: { height: e.spaces.space40, width: e.spaces.space40 } })),
+            const m = i.default.create((e) => ({ root: { marginHorizontal: "auto", width: "100%" }, rootMedium: { position: "absolute", bottom: 0, start: 0, end: 0 }, rootLarge: { maxWidth: 1e3 }, fabStaysAboveSafeArea: { top: `calc(${i.default.iPhoneOffsetBottom} - ${h.ZM.getAppBarHeight()} - ${e.spaces.space20})` }, fab: { bottom: e.spaces.space20, alignSelf: "flex-end", end: e.spaces.space20 }, fabLarge: { end: e.spaces.space20 }, fabMicro: { bottom: e.spaces.space16, end: e.spaces.space16 }, buttonMicro: { height: e.spaces.space40, width: e.spaces.space40 } })),
                 b = (e) => {
-                    const { "aria-label": t, label: o, onPress: b, scribeComponent: S, ..._ } = e,
-                        { loggedInUserId: y } = r.useContext(p.rC),
-                        w = (0, h.z)(),
+                    const { "aria-label": t, label: o, onPress: b, scribeComponent: S, ...w } = e,
+                        { loggedInUserId: _ } = r.useContext(p.rC),
+                        y = (0, u.z)(),
                         f = r.useCallback(
                             (e) => {
-                                w.scribe({ component: S, action: "click" }), b && b(e);
+                                y.scribe({ component: S, action: "click" }), b && b(e);
                             },
-                            [w, b, S],
+                            [y, b, S],
                         ),
-                        g = u.ZM.useCollapsibleNavBars(),
-                        D = [...u.Ah({ elementPosition: "bottom" }), g && m.fabStaysAboveSafeArea];
-                    return y
+                        g = h.ZM.useCollapsibleNavBars(),
+                        k = [...h.Ah({ elementPosition: "bottom" }), g && m.fabStaysAboveSafeArea];
+                    return _
                         ? r.createElement(
                               s.Z.FloatingAction,
                               null,
-                              r.createElement(i.ZP, null, ({ windowWidth: e }) => {
-                                  const s = e > d.default.theme.breakpoints.large,
-                                      i = e > d.default.theme.breakpoints.medium,
-                                      u = e < d.default.theme.breakpoints.micro,
-                                      h = [m.root, i && m.rootMedium, s && m.rootLarge],
-                                      p = [m.fab, s && m.fabLarge, u && m.fabMicro, D];
+                              r.createElement(d.ZP, null, ({ windowWidth: e }) => {
+                                  const s = e > i.default.theme.breakpoints.large,
+                                      d = e > i.default.theme.breakpoints.medium,
+                                      h = e < i.default.theme.breakpoints.micro,
+                                      u = [m.root, d && m.rootMedium, s && m.rootLarge],
+                                      p = [m.fab, s && m.fabLarge, h && m.fabMicro, k];
                                   return r.createElement(
                                       n.Z,
-                                      { "aria-label": t, pointerEvents: "box-none", role: "complementary", style: h },
-                                      r.createElement(l.Z, { id: "FloatingActionButtonBase" }, (e, i) => r.createElement(n.Z, (0, a.Z)({ ref: e() }, i({ style: p })), r.createElement(c.Z, (0, a.Z)({}, _, { "aria-label": t, label: s ? o : void 0, onPress: f, style: u && m.buttonMicro })))),
+                                      { "aria-label": t, pointerEvents: "box-none", role: "complementary", style: u },
+                                      r.createElement(l.Z, { id: "FloatingActionButtonBase" }, (e, d) => r.createElement(n.Z, (0, a.Z)({ ref: e() }, d({ style: p })), r.createElement(c.Z, (0, a.Z)({}, w, { "aria-label": t, label: s ? o : void 0, onPress: f, style: h && m.buttonMicro })))),
                                   );
                               }),
                           )
@@ -298,13 +298,13 @@
                 };
         },
         355883: (e, t, o) => {
-            o.d(t, { Z: () => d });
+            o.d(t, { Z: () => i });
             o(136728);
             var a = o(202784),
                 r = o(387524),
                 n = o(635510);
             const s = "/compose/post";
-            class i extends a.PureComponent {
+            class d extends a.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this._handlePress = (e) => {
@@ -315,133 +315,133 @@
                         });
                 }
                 render() {
-                    const { "aria-label": e, icon: t, label: o, scribeComponent: i } = this.props;
-                    return a.createElement(r.Z, { "aria-label": e, href: s, icon: t, label: o, onPress: this._handlePress, scribeComponent: i, testID: n.Z.tweet });
+                    const { "aria-label": e, icon: t, label: o, scribeComponent: d } = this.props;
+                    return a.createElement(r.Z, { "aria-label": e, href: s, icon: t, label: o, onPress: this._handlePress, scribeComponent: d, testID: n.Z.tweet });
                 }
             }
-            const d = i;
+            const i = d;
         },
         32677: (e, t, o) => {
-            o.d(t, { Z: () => u });
+            o.d(t, { Z: () => h });
             var a = o(202784),
                 r = o(111677),
                 n = o.n(r),
                 s = o(186444),
-                i = o(355883);
-            const d = n().j0179e90,
+                d = o(355883);
+            const i = n().j0179e90,
                 l = n().ee69d769({ verb: "" }),
                 c = a.createElement(s.default, null),
-                u = ({ getLocationState: e, history: t }) => a.createElement(i.Z, { "aria-label": d, getLocationState: e, history: t, icon: c, label: l, scribeComponent: "floating_compose_button" });
+                h = ({ getLocationState: e, history: t }) => a.createElement(d.Z, { "aria-label": i, getLocationState: e, history: t, icon: c, label: l, scribeComponent: "floating_compose_button" });
         },
         635510: (e, t, o) => {
             o.d(t, { Z: () => a });
             const a = { createList: "FloatingActionButtons_CreateList_Button", tweet: "FloatingActionButtons_Tweet_Button", message: "FloatingActionButtons_Message_Button" };
         },
         233391: (e, t, o) => {
-            o.d(t, { BH: () => O, Qj: () => $, Wc: () => G, sI: () => U });
+            o.d(t, { BH: () => G, Qj: () => $, Wc: () => O, sI: () => U });
             var a = o(202784),
                 r = o(731708),
                 n = o(392237),
                 s = o(111677),
-                i = o.n(s),
-                d = o(911373),
+                d = o.n(s),
+                i = o(911373),
                 l = o(761744),
                 c = o(98440),
-                u = o(720600),
-                h = o(125966),
+                h = o(720600),
+                u = o(125966),
                 p = o(544367),
                 m = o(452693),
                 b = o(971657),
                 S = o(956272),
-                _ = o(520913);
-            const y = i().a17a75da,
-                w = i().e7342ed4,
-                f = i().b6a43e78,
-                g = i().b469e406,
-                D = i().b8505290,
-                A = ({ userFullName: e }) => (e ? a.createElement(i().I18NFormatMessage, { $i18n: "e1a49407" }, a.createElement(r.ZP, null, e)) : void 0),
-                E = i().ae8b0564,
-                k = ({ userFullName: e }) => (e ? a.createElement(i().I18NFormatMessage, { $i18n: "be54ed41" }, a.createElement(r.ZP, null, e)) : void 0),
-                C = i().f2adab0e,
-                v = ({ userFullName: e }) => (e ? a.createElement(i().I18NFormatMessage, { $i18n: "jb19eb17" }, a.createElement(r.ZP, null, e)) : void 0),
-                M = ({ userFullName: e }) => (e ? a.createElement(i().I18NFormatMessage, { $i18n: "bbfee611" }, a.createElement(r.ZP, null, e)) : void 0),
-                T = i().b7821a74,
-                x = ({ userFullName: e }) => (e ? a.createElement(i().I18NFormatMessage, { $i18n: "af104f2b" }, a.createElement(r.ZP, null, e)) : void 0),
-                B = ({ customText: e }) => (e ? a.createElement(i().I18NFormatMessage, { $i18n: "ccc1f303" }, a.createElement(r.ZP, null, e)) : void 0),
-                Z = ({ userFullName: e }) => (e ? a.createElement(i().I18NFormatMessage, { $i18n: "ce02fabf" }, a.createElement(r.ZP, null, e)) : void 0),
-                I = i().e6d43d06,
-                L = ({ customText: e }) => (e ? a.createElement(i().I18NFormatMessage, { $i18n: "a85608a7" }, a.createElement(r.ZP, null, e)) : void 0),
-                P = i().ic848090,
-                N = i().f9ebe066,
-                F = ({ userFullName: e }) => (e ? a.createElement(i().I18NFormatMessage, { $i18n: "c76865b7" }, a.createElement(r.ZP, null, e)) : void 0),
-                R = i().je3d93e2,
-                q = i().ea88ce2e,
-                H = i().je3d93e2,
-                O = Object.freeze({ follow: "follow", like: "like", reply: "reply", retweet: "retweet", generic: "generic", dmshare: "dmshare", postvideo: "postvideo", subscribe: "subscribe", topic: "topic", community: "community", bookmark: "bookmark", search: "search" }),
-                G = (e, t) => {
+                w = o(520913);
+            const _ = d().a17a75da,
+                y = d().e7342ed4,
+                f = d().b6a43e78,
+                g = d().b469e406,
+                k = d().b8505290,
+                D = ({ userFullName: e }) => (e ? a.createElement(d().I18NFormatMessage, { $i18n: "e1a49407" }, a.createElement(r.ZP, null, e)) : void 0),
+                E = d().ae8b0564,
+                C = ({ userFullName: e }) => (e ? a.createElement(d().I18NFormatMessage, { $i18n: "be54ed41" }, a.createElement(r.ZP, null, e)) : void 0),
+                v = d().f2adab0e,
+                A = ({ userFullName: e }) => (e ? a.createElement(d().I18NFormatMessage, { $i18n: "jb19eb17" }, a.createElement(r.ZP, null, e)) : void 0),
+                M = ({ userFullName: e }) => (e ? a.createElement(d().I18NFormatMessage, { $i18n: "bbfee611" }, a.createElement(r.ZP, null, e)) : void 0),
+                T = d().b7821a74,
+                x = ({ userFullName: e }) => (e ? a.createElement(d().I18NFormatMessage, { $i18n: "af104f2b" }, a.createElement(r.ZP, null, e)) : void 0),
+                B = ({ customText: e }) => (e ? a.createElement(d().I18NFormatMessage, { $i18n: "ccc1f303" }, a.createElement(r.ZP, null, e)) : void 0),
+                Z = ({ userFullName: e }) => (e ? a.createElement(d().I18NFormatMessage, { $i18n: "ce02fabf" }, a.createElement(r.ZP, null, e)) : void 0),
+                I = d().e6d43d06,
+                L = ({ customText: e }) => (e ? a.createElement(d().I18NFormatMessage, { $i18n: "a85608a7" }, a.createElement(r.ZP, null, e)) : void 0),
+                P = d().ic848090,
+                N = d().f9ebe066,
+                F = ({ userFullName: e }) => (e ? a.createElement(d().I18NFormatMessage, { $i18n: "c76865b7" }, a.createElement(r.ZP, null, e)) : void 0),
+                R = d().je3d93e2,
+                q = d().ea88ce2e,
+                H = d().je3d93e2,
+                G = Object.freeze({ follow: "follow", like: "like", reply: "reply", retweet: "retweet", generic: "generic", dmshare: "dmshare", postvideo: "postvideo", subscribe: "subscribe", topic: "topic", community: "community", bookmark: "bookmark", search: "search" }),
+                O = (e, t) => {
                     switch (t) {
-                        case O.follow:
-                            return { icon: d.default, text: M, subtext: T, iconStyle: V.iconOther };
-                        case O.like:
-                            return { icon: l.default, text: C, subtext: v, iconStyle: V.iconLike };
-                        case O.reply:
-                            return { icon: c.default, text: D, subtext: A, iconStyle: V.iconOther };
-                        case O.retweet:
-                            return { icon: u.default, text: E, subtext: k, iconStyle: V.iconRetweet };
-                        case O.dmshare:
-                            return { icon: h.default, text: x, iconStyle: V.iconOther };
-                        case O.subscribe:
+                        case G.follow:
+                            return { icon: i.default, text: M, subtext: T, iconStyle: V.iconOther };
+                        case G.like:
+                            return { icon: l.default, text: v, subtext: A, iconStyle: V.iconLike };
+                        case G.reply:
+                            return { icon: c.default, text: k, subtext: D, iconStyle: V.iconOther };
+                        case G.retweet:
+                            return { icon: h.default, text: E, subtext: C, iconStyle: V.iconRetweet };
+                        case G.dmshare:
+                            return { icon: u.default, text: x, iconStyle: V.iconOther };
+                        case G.subscribe:
                             return { icon: p.default, text: B, subtext: Z, iconStyle: V.iconOther };
-                        case O.topic:
+                        case G.topic:
                             return { icon: m.default, text: I, subtext: L, iconStyle: V.iconTopics };
-                        case O.community:
+                        case G.community:
                             return { icon: b.default, text: P, subtext: N, iconStyle: V.iconOther };
-                        case O.search:
+                        case G.search:
                             return { icon: S.default, text: F, subtext: R, iconStyle: V.iconOther };
                         default:
-                            return { icon: _.default, text: q, subtext: H, iconStyle: V.iconTwitter };
+                            return { icon: w.default, text: q, subtext: H, iconStyle: V.iconTwitter };
                     }
                 },
-                U = (e) => (e.hasValue("responsive_web_use_app_prompt_copy_variant", "prompt_better") ? y : f),
-                $ = (e) => (e.hasValue("responsive_web_use_app_prompt_copy_variant", "prompt_better") ? w : g),
+                U = (e) => (e.hasValue("responsive_web_use_app_prompt_copy_variant", "prompt_better") ? _ : f),
+                $ = (e) => (e.hasValue("responsive_web_use_app_prompt_copy_variant", "prompt_better") ? y : g),
                 V = n.default.create((e) => ({ iconOther: { color: e.colors.blue500 }, iconLike: { color: e.colors.magenta500 }, iconTwitter: { color: e.colors.brandColor }, iconRetweet: { color: e.colors.green500 }, iconTopics: { color: e.colors.blue500 } }));
         },
         369241: (e, t, o) => {
-            o.d(t, { BH: () => v.BH, ZP: () => P });
+            o.d(t, { BH: () => A.BH, ZP: () => P });
             o(875640);
             var a = o(202784),
                 r = o(529356),
                 n = o(111677),
                 s = o.n(n),
-                i = o(323265),
-                d = o(170542),
+                d = o(323265),
+                i = o(170542),
                 l = o(951790),
                 c = o(804027),
-                u = o(443781),
-                h = o(325686),
+                h = o(443781),
+                u = o(325686),
                 p = o(292627),
                 m = o(731708),
                 b = o(154003),
                 S = o(392237);
-            class _ extends a.PureComponent {
+            class w extends a.PureComponent {
                 render() {
                     const { onPrimaryButtonClick: e, onSecondaryButtonClick: t, primaryButtonLabel: o, primaryText: r, secondaryButtonLabel: n, secondaryText: s } = this.props;
-                    return a.createElement(p.Z.HalfSheet, null, a.createElement(h.Z, { style: y.sheetContent }, a.createElement(h.Z, { style: y.content }, a.createElement(h.Z, { style: y.header }, a.createElement(m.ZP, { color: "white", size: "headline1", weight: "bold" }, r)), a.createElement(m.ZP, { color: "white", style: y.secondaryText }, s)), a.createElement(h.Z, { style: y.footer }, a.createElement(b.ZP, { onPress: t, size: "medium", style: y.button, type: "onMediaOutlined" }, a.createElement(m.ZP, { numberOfLines: 1 }, n)), a.createElement(b.ZP, { onPress: e, size: "medium", style: y.button, type: "onMediaWhiteFilled" }, a.createElement(m.ZP, { numberOfLines: 1 }, o)))));
+                    return a.createElement(p.Z.HalfSheet, null, a.createElement(u.Z, { style: _.sheetContent }, a.createElement(u.Z, { style: _.content }, a.createElement(u.Z, { style: _.header }, a.createElement(m.ZP, { color: "white", size: "headline1", weight: "bold" }, r)), a.createElement(m.ZP, { color: "white", style: _.secondaryText }, s)), a.createElement(u.Z, { style: _.footer }, a.createElement(b.ZP, { onPress: t, size: "medium", style: _.button, type: "onMediaOutlined" }, a.createElement(m.ZP, { numberOfLines: 1 }, n)), a.createElement(b.ZP, { onPress: e, size: "medium", style: _.button, type: "onMediaWhiteFilled" }, a.createElement(m.ZP, { numberOfLines: 1 }, o)))));
                 }
             }
-            const y = S.default.create((e) => ({ content: { padding: e.spaces.space20 }, footer: { flexDirection: "row", justifyContent: "space-between", paddingBottom: e.spaces.space12, paddingHorizontal: e.spaces.space20, flexWrap: "wrap" }, button: { marginBottom: e.spaces.space4 }, header: { flexDirection: "row" }, secondaryText: { paddingTop: e.spaces.space12 }, sheetContent: { paddingBottom: S.default.iPhoneOffsetBottom, backgroundColor: e.colors.primary } })),
-                w = _;
+            const _ = S.default.create((e) => ({ content: { padding: e.spaces.space20 }, footer: { flexDirection: "row", justifyContent: "space-between", paddingBottom: e.spaces.space12, paddingHorizontal: e.spaces.space20, flexWrap: "wrap" }, button: { marginBottom: e.spaces.space4 }, header: { flexDirection: "row" }, secondaryText: { paddingTop: e.spaces.space12 }, sheetContent: { paddingBottom: S.default.iPhoneOffsetBottom, backgroundColor: e.colors.primary } })),
+                y = w;
             var f = o(668214),
                 g = o(558369),
-                D = o(118823),
-                A = o(390387),
+                k = o(118823),
+                D = o(390387),
                 E = o(38562),
-                k = o(936572);
-            const C = (0, f.Z)()
-                .propsFromState(() => ({ featureSwitchImpressions: g.ur, loginPromptShown: E.fj, loginPromptLastShown: k.ne, startLocation: D.Lg }))
-                .propsFromActions(() => ({ setLoginPromptShown: E.Af, setLoginReturnPath: A.Jm, updateSettings: E.VP }))
+                C = o(936572);
+            const v = (0, f.Z)()
+                .propsFromState(() => ({ featureSwitchImpressions: g.ur, loginPromptShown: E.fj, loginPromptLastShown: C.ne, startLocation: k.Lg }))
+                .propsFromActions(() => ({ setLoginPromptShown: E.Af, setLoginReturnPath: D.Jm, updateSettings: E.VP }))
                 .withAnalytics();
-            var v = o(233391);
+            var A = o(233391);
             o(920099), o(856642), o(782826), o(903019);
             const M = Object.freeze({ BannerSwitchToApp: "banner_switch_to_app", InterstitialSwitchToApp: "interstitial_switch_to_app", NuxAppDownload: "NUX-app-download", SwitchToAppFooter: "switch-to-app-footer", UseApp: "use-app", UseAppExtended: "use-app-extended", SwitchToAppHigh7: "switch_to_app_high_7", SwitchToAppHigh1: "switch_to_app_high_1", SwitchToAppHigh2: "switch_to_app_high_2", SwitchToAppHigh3: "switch_to_app_high_3", SwitchToAppHigh5: "switch_to_app_high_5", SwitchToAppLow7: "switch_to_app_low_7", SwitchToAppLow1: "switch_to_app_low_1", SwitchToAppLow3: "switch_to_app_low_3", SwitchToAppLow5: "switch_to_app_low_5", SwitchToAppLow9: "switch_to_app_low_9" }),
                 T = s().j607bf02,
@@ -452,10 +452,10 @@
             class L extends a.Component {
                 constructor(e, t) {
                     super(e, t),
-                        (this._getFullSheetDisplayElements = v.Wc.bind(null, this.context.featureSwitches)),
-                        (this._getHalfSheetPrimaryText = v.sI.bind(null, this.context.featureSwitches)),
-                        (this._getHalfSheetSecondaryText = v.Qj.bind(null, this.context.featureSwitches)),
-                        (this._isStandaloneApp = d.Z.isStandaloneApp()),
+                        (this._getFullSheetDisplayElements = A.Wc.bind(null, this.context.featureSwitches)),
+                        (this._getHalfSheetPrimaryText = A.sI.bind(null, this.context.featureSwitches)),
+                        (this._getHalfSheetSecondaryText = A.Qj.bind(null, this.context.featureSwitches)),
+                        (this._isStandaloneApp = i.Z.isStandaloneApp()),
                         (this._shouldRenderPrompt = () => {
                             const { loginPromptLastShown: e, loginPromptShown: t, onlyShowOnce: o, useBottomBanner: a } = this.props,
                                 { displayInterval: r } = this.state;
@@ -485,13 +485,13 @@
                         (this._getSignupState = () => {
                             const { displayMode: e, tweetId: t, userId: o } = this.props;
                             switch (e) {
-                                case v.BH.follow:
+                                case A.BH.follow:
                                     return { gatedAction: { action: c.qJ.Follow, user_id: o } };
-                                case v.BH.like:
+                                case A.BH.like:
                                     return { gatedAction: { action: c.qJ.Favorite, tweet_id: t, user_id: o } };
-                                case v.BH.reply:
+                                case A.BH.reply:
                                     return { gatedAction: { action: c.qJ.Reply, tweet_id: t, user_id: o } };
-                                case v.BH.retweet:
+                                case A.BH.retweet:
                                     return { gatedAction: { action: c.qJ.Retweet, tweet_id: t, user_id: o } };
                                 default:
                                     return;
@@ -501,7 +501,7 @@
                             const { postLoginPath: e } = this.props;
                             if (e) return { input: { requested_variant: btoa(JSON.stringify({ redirect_after_login: e })) } };
                         }),
-                        (this._hasMobileAppStore = () => i.ZP.isIOS() || i.ZP.isAndroid());
+                        (this._hasMobileAppStore = () => d.ZP.isIOS() || d.ZP.isAndroid());
                     const { useBottomBanner: o } = this.props;
                     this._showTertiaryCTA = this._hasMobileAppStore() && !this._isStandaloneApp && this.context.featureSwitches.isTrue("responsive_web_login_signup_sheet_app_install_cta_enabled");
                     const a = this.context.featureSwitches.getNumberValue("rweb_update_fatigue_switch_to_app_day_timeout"),
@@ -516,15 +516,15 @@
                     !e && t && (o(!0), a({ loginPromptLastShown: Date.now() }));
                 }
                 render() {
-                    const { allowBackNavigation: e, customText: t, displayMode: o, hideSignUp: n, isFullHeightOnMobile: s, loginLabel: i, useBottomBanner: d, userFullName: l } = this.props;
+                    const { allowBackNavigation: e, customText: t, displayMode: o, hideSignUp: n, isFullHeightOnMobile: s, loginLabel: d, useBottomBanner: i, userFullName: l } = this.props;
                     if (!this._shouldRenderPrompt()) return null;
-                    const { icon: c, iconStyle: u, subtext: h, text: p } = this._getFullSheetDisplayElements(o),
+                    const { icon: c, iconStyle: h, subtext: u, text: p } = this._getFullSheetDisplayElements(o),
                         m = "function" == typeof p ? p({ customText: t, userFullName: l }) : p,
-                        b = "function" == typeof h ? h({ customText: t, userFullName: l }) : h,
+                        b = "function" == typeof u ? u({ customText: t, userFullName: l }) : u,
                         S = n ? "" : this.props.signupLabel,
-                        _ = { pathname: "/i/flow/login", state: this._getLoginState() },
-                        y = { pathname: "/i/flow/signup", state: this._getSignupState() };
-                    return d ? a.createElement(w, { onPrimaryButtonClick: this._handleAppInstallButtonClick, onSecondaryButtonClick: this._handleNotNow, primaryButtonLabel: x, primaryText: this._getHalfSheetPrimaryText(), secondaryButtonLabel: B, secondaryText: this._getHalfSheetSecondaryText() }) : a.createElement(r.Z, { actionLabel: i, actionLink: _, allowBackNavigation: e, graphic: c, graphicStyle: u, headline: m || "", isFullHeightOnMobile: s, onAction: this._handleSubmit, onClose: this._handleClose, onSecondaryAction: this._handleSignupButtonClick, onTertiaryAction: this._showTertiaryCTA ? this._handleAppInstallButtonClick : void 0, secondaryActionLabel: S, secondaryActionLink: y, subtext: b || "", tertiaryActionLabel: this._showTertiaryCTA ? T : void 0, useBrandedActionButtons: !0 });
+                        w = { pathname: "/i/flow/login", state: this._getLoginState() },
+                        _ = { pathname: "/i/flow/signup", state: this._getSignupState() };
+                    return i ? a.createElement(y, { onPrimaryButtonClick: this._handleAppInstallButtonClick, onSecondaryButtonClick: this._handleNotNow, primaryButtonLabel: x, primaryText: this._getHalfSheetPrimaryText(), secondaryButtonLabel: B, secondaryText: this._getHalfSheetSecondaryText() }) : a.createElement(r.Z, { actionLabel: d, actionLink: w, allowBackNavigation: e, graphic: c, graphicStyle: h, headline: m || "", isFullHeightOnMobile: s, onAction: this._handleSubmit, onClose: this._handleClose, onSecondaryAction: this._handleSignupButtonClick, onTertiaryAction: this._showTertiaryCTA ? this._handleAppInstallButtonClick : void 0, secondaryActionLabel: S, secondaryActionLink: _, subtext: b || "", tertiaryActionLabel: this._showTertiaryCTA ? T : void 0, useBrandedActionButtons: !0 });
                 }
                 _scribeAction(e) {
                     const { analytics: t, displayMode: o, useBottomBanner: a } = this.props,
@@ -532,8 +532,8 @@
                     t.scribe({ component: "login_signup_sheet", element: r, action: e });
                 }
             }
-            (L.defaultProps = { displayMode: v.BH.generic, hideSignUp: !1, isFullHeightOnMobile: !0, useBottomBanner: !1, loginLabel: I, signupLabel: Z, onlyShowOnce: !1 }), (L.displayMode = v.BH), (L.contextType = u.rC);
-            const P = C(L);
+            (L.defaultProps = { displayMode: A.BH.generic, hideSignUp: !1, isFullHeightOnMobile: !0, useBottomBanner: !1, loginLabel: I, signupLabel: Z, onlyShowOnce: !1 }), (L.displayMode = A.BH), (L.contextType = h.rC);
+            const P = v(L);
         },
         652904: (e, t, o) => {
             o.d(t, { Z: () => c });
@@ -541,9 +541,9 @@
                 r = o(500002),
                 n = o(668214),
                 s = o(997174),
-                i = o(118823);
-            const d = (0, n.Z)()
-                .propsFromActions(() => ({ updateLocation: i.YF, updateTweetDetailNav: s.NH }))
+                d = o(118823);
+            const i = (0, n.Z)()
+                .propsFromActions(() => ({ updateLocation: d.YF, updateTweetDetailNav: s.NH }))
                 .withAnalytics();
             class l extends a.Component {
                 componentDidMount() {
@@ -557,12 +557,12 @@
                         } = this.props,
                         {
                             location: { pathname: n, search: s },
-                            locationKey: i,
+                            locationKey: d,
                         } = e;
-                    let d = !1;
-                    t.pathname !== o ? (this._isInBackground = !0) : this._isInBackground && t.pathname === o && ((this._isInBackground = !1), (d = !0));
-                    const l = r || i;
-                    ((l && r !== i) || (!l && o !== n) || a !== s || d) && this._performPageUpdates(this.props);
+                    let i = !1;
+                    t.pathname !== o ? (this._isInBackground = !0) : this._isInBackground && t.pathname === o && ((this._isInBackground = !1), (i = !0));
+                    const l = r || d;
+                    ((l && r !== d) || (!l && o !== n) || a !== s || i) && this._performPageUpdates(this.props);
                 }
                 render() {
                     return this.props.children;
@@ -573,7 +573,7 @@
                 }
             }
             l.defaultProps = { children: null };
-            const c = (0, r.ZP)(d(l));
+            const c = (0, r.ZP)(i(l));
         },
         886191: (e, t, o) => {
             o.d(t, { Z: () => g });
@@ -581,19 +581,19 @@
                 r = o(731708),
                 n = o(457311),
                 s = o(111677),
-                i = o.n(s),
-                d = o(912021),
+                d = o.n(s),
+                i = o(912021),
                 l = o(864702),
                 c = o(479506),
-                u = o(903019),
-                h = o(519896),
+                h = o(903019),
+                u = o(519896),
                 p = o(774006),
                 m = o(443781),
                 b = o(810641),
                 S = o(335632);
-            const _ = i().c09de2d4,
-                y = i().ae111c99,
-                w = a.createElement(i().I18NFormatMessage, { $i18n: "e7e44bab" }, a.createElement(r.ZP, { link: "/settings/search" }, i().f191a2ba));
+            const w = d().c09de2d4,
+                _ = d().ae111c99,
+                y = a.createElement(d().I18NFormatMessage, { $i18n: "e7e44bab" }, a.createElement(r.ZP, { link: "/settings/search" }, d().f191a2ba));
             class f extends a.Component {
                 constructor(...e) {
                     super(...e),
@@ -601,57 +601,57 @@
                         (this._getModule = () => {
                             const { query: e, querySrc: t, searchFilters: o, searchMode: a, urtEndpointOptions: r, vertical: n } = this.props,
                                 { featureSwitches: s } = this.context,
-                                i = s.isTrue("search_timelines_graphql_enabled");
-                            return this._getMemoizedModule(e, t, a, o, n, r, i);
+                                d = s.isTrue("search_timelines_graphql_enabled");
+                            return this._getMemoizedModule(e, t, a, o, n, r, d);
                         }),
                         (this._renderEmptyTimeline = () => {
                             const { emptyStateComponent: e, query: t } = this.props;
-                            return e || a.createElement(n.Z, { header: y({ query: t }), message: w });
+                            return e || a.createElement(n.Z, { header: _({ query: t }), message: y });
                         }),
-                        (this._getMemoizedModule = (0, d.Z)((e, t, o, a, r, n, s) => (0, p.Z)({ query: e, searchMode: o, querySource: t, searchFilters: a, vertical: r, urtEndpointOptions: n, searchTimelinesGraphQLEnabled: s }))),
-                        (this._getMemoizedEntryConfiguration = (0, d.Z)((e) => (({ shouldStoreTypeaheadItem: e, withUserPresence: t }) => ({ ...(0, S.G)({ tweetDismissable: !0, displayBlocked: !0, shouldStoreTypeaheadItem: e, withUserPresence: t }) }))({ shouldStoreTypeaheadItem: this._shouldStoreTypeaheadItem, withUserPresence: e })));
+                        (this._getMemoizedModule = (0, i.Z)((e, t, o, a, r, n, s) => (0, p.Z)({ query: e, searchMode: o, querySource: t, searchFilters: a, vertical: r, urtEndpointOptions: n, searchTimelinesGraphQLEnabled: s }))),
+                        (this._getMemoizedEntryConfiguration = (0, i.Z)((e) => (({ shouldStoreTypeaheadItem: e, withUserPresence: t }) => ({ ...(0, S.G)({ tweetDismissable: !0, displayBlocked: !0, shouldStoreTypeaheadItem: e, withUserPresence: t }) }))({ shouldStoreTypeaheadItem: this._shouldStoreTypeaheadItem, withUserPresence: e })));
                 }
                 render() {
-                    const e = this.props.searchMode !== u.N3.Live;
-                    return a.createElement(b.Z, { apiErrorHandlerMap: l.d, entryConfiguration: this._getMemoizedEntryConfiguration(this.props.withUserPresence), fetchOptions: this.props.fetchOptions, isSingleDirection: e, module: this._getModule(), prerollDisplayLocation: h.Nw.SEARCH_TWEETS, renderEmptyState: this._renderEmptyTimeline, title: _ });
+                    const e = this.props.searchMode !== h.N3.Live;
+                    return a.createElement(b.Z, { apiErrorHandlerMap: l.d, entryConfiguration: this._getMemoizedEntryConfiguration(this.props.withUserPresence), fetchOptions: this.props.fetchOptions, isSingleDirection: e, module: this._getModule(), prerollDisplayLocation: u.Nw.SEARCH_TWEETS, renderEmptyState: this._renderEmptyTimeline, title: w });
                 }
             }
             f.contextType = m.rC;
             const g = f;
         },
         243754: (e, t, o) => {
-            o.d(t, { Z: () => u });
+            o.d(t, { Z: () => h });
             var a = o(202784),
                 r = o(190286),
                 n = o(111677),
                 s = o.n(n),
-                i = o(436001);
-            const d = s().hffea05c,
+                d = o(436001);
+            const i = s().hffea05c,
                 l = s().j037e374,
                 c = s().d96cf7ce,
-                u = ({ onCancel: e, onConfirm: t }) => a.createElement(r.Z, { confirmButtonLabel: c, confirmButtonType: "destructiveFilled", headline: d, onCancel: e, onConfirm: t, testID: i.Z.deleteSavedSearchDialog, text: l });
+                h = ({ onCancel: e, onConfirm: t }) => a.createElement(r.Z, { confirmButtonLabel: c, confirmButtonType: "destructiveFilled", headline: i, onCancel: e, onConfirm: t, testID: d.Z.deleteSavedSearchDialog, text: l });
         },
         436001: (e, t, o) => {
             o.d(t, { Z: () => a });
             const a = { deleteRecentSearchesDialog: "deleteRecentSearchesDialog", deleteSavedSearchDialog: "deleteSavedSearchDialog", typeaheadEmptySearch: "typeaheadEmptySearch", typeaheadRecentSearchesHeader: "typeaheadRecentSearchesHeader", typeaheadRecentSearchesItem: "typeaheadRecentSearchesItem", typeaheadSavedSearchesContainer: "typeaheadSavedSearchesContainer", typeaheadSavedSearchesHeader: "typeaheadSavedSearchesHeader", typeaheadSavedSearchesItem: "typeaheadSavedSearchesItem" };
         },
         864702: (e, t, o) => {
-            o.d(t, { d: () => d });
+            o.d(t, { d: () => i });
             var a = o(111677),
                 r = o.n(a),
                 n = o(615656),
                 s = o(51525);
-            const i = r().i1801686,
-                d = { [n.ZP.GenericForbidden]: { toast: (0, s.j)() }, [n.ZP.InvalidRequestUrl]: { toast: { text: i, withClearButton: !0 } }, showToast: !0 };
+            const d = r().i1801686,
+                i = { [n.ZP.GenericForbidden]: { toast: (0, s.j)() }, [n.ZP.InvalidRequestUrl]: { toast: { text: d, withClearButton: !0 } }, showToast: !0 };
         },
         337455: (e, t, o) => {
-            o.d(t, { Z: () => d });
+            o.d(t, { Z: () => i });
             var a = o(202784),
                 r = o(411916),
                 n = o.n(r),
                 s = o(373463),
-                i = o.n(s);
-            function d(e) {
+                d = o.n(s);
+            function i(e) {
                 class t extends a.Component {
                     constructor(e, t) {
                         super(e, t), (this.state = { shouldRender: !1 }), (this._mounted = !0);
@@ -668,7 +668,7 @@
                         return this.state.shouldRender ? a.createElement(e, this.props) : null;
                     }
                 }
-                return i()(t, e);
+                return d()(t, e);
             }
         },
         951790: (e, t, o) => {
@@ -708,29 +708,29 @@
             const a = { AdvancedSearchPage: "advanced_search_page", CashtagClick: "cashtag_click", HashtagClick: "hashtag_click", PromotedTrendClick: "promoted_trend_click", RecentSearchClick: "recent_search_click", SavedSearchClick: "saved_search_click", RelatedQueryClick: "related_query_click", SpellingCorrectionClick: "spelling_correction_click", SpellingCorrectionRevertClick: "spelling_suggestion_revert_click", SpellingExpansionClick: "spelling_expansion_click", SpellingExpansionRevertClick: "spelling_expansion_revert_click", SpellingSuggestionClick: "spelling_suggestion_click", TrendClick: "trend_click", TrendView: "trend_view", TypeaheadClick: "typeahead_click", Typed: "typed_query", TVSearch: "TvSearch", TweetDetailQuoteTweet: "tdqt", TweetDetailSimilarPost: "tweet_detail_similar_posts" };
         },
         554951: (e, t, o) => {
-            o.d(t, { GL: () => S, as: () => b, k9: () => _, l9: () => y });
+            o.d(t, { GL: () => S, as: () => b, k9: () => w, l9: () => _ });
             var a = o(58687),
                 r = o(163889),
                 n = o(499627),
                 s = o(917799),
-                i = o(312771),
-                d = o(390387);
+                d = o(312771),
+                i = o(390387);
             const l = "savedSearches",
-                c = { fetchStatus: i.ZP.NONE, savedSearches: [] },
-                u = Object.freeze({ REQUEST: "rweb/savedSearches/FETCH_SAVED_SEARCHES_REQUEST", SUCCESS: "rweb/savedSearches/FETCH_SAVED_SEARCHES_SUCCESS", FAILURE: "rweb/savedSearches/FETCH_SAVED_SEARCHES_FAILURE" }),
-                h = Object.freeze({ REQUEST: "rweb/savedSearches/SAVE_SEARCH_REQUEST", SUCCESS: "rweb/savedSearches/SAVE_SEARCH_SUCCESS", FAILURE: "rweb/savedSearches/SAVE_SEARCH_FAILURE" }),
+                c = { fetchStatus: d.ZP.NONE, savedSearches: [] },
+                h = Object.freeze({ REQUEST: "rweb/savedSearches/FETCH_SAVED_SEARCHES_REQUEST", SUCCESS: "rweb/savedSearches/FETCH_SAVED_SEARCHES_SUCCESS", FAILURE: "rweb/savedSearches/FETCH_SAVED_SEARCHES_FAILURE" }),
+                u = Object.freeze({ REQUEST: "rweb/savedSearches/SAVE_SEARCH_REQUEST", SUCCESS: "rweb/savedSearches/SAVE_SEARCH_SUCCESS", FAILURE: "rweb/savedSearches/SAVE_SEARCH_FAILURE" }),
                 p = Object.freeze({ REQUEST: "rweb/savedSearches/DELETE_SAVED_SEARCH_REQUEST", SUCCESS: "rweb/savedSearches/DELETE_SAVED_SEARCH_SUCCESS", FAILURE: "rweb/savedSearches/DELETE_SAVED_SEARCH_FAILURE" });
             function m(e = c, t) {
                 if (!t) return e;
                 switch (t.type) {
-                    case u.SUCCESS: {
+                    case h.SUCCESS: {
                         const o = t.payload,
                             a = Array.isArray(o);
-                        return a || (0, r.ZP)("Saved search results are not type array", { extra: { savedSearchResultsType: typeof o } }), { ...e, fetchStatus: i.ZP.LOADED, savedSearches: a && o ? o : [] };
+                        return a || (0, r.ZP)("Saved search results are not type array", { extra: { savedSearchResultsType: typeof o } }), { ...e, fetchStatus: d.ZP.LOADED, savedSearches: a && o ? o : [] };
                     }
-                    case u.FAILURE:
-                        return { ...e, fetchStatus: i.ZP.FAILED };
-                    case h.SUCCESS:
+                    case h.FAILURE:
+                        return { ...e, fetchStatus: d.ZP.FAILED };
+                    case u.SUCCESS:
                         return { ...e, savedSearches: t.payload ? [...e.savedSearches, t.payload] : e.savedSearches };
                     case p.SUCCESS:
                         return t.payload ? { ...e, savedSearches: e.savedSearches.filter((e) => e.id_str !== t.payload.id_str) } : e;
@@ -743,18 +743,18 @@
                 S =
                     (e) =>
                     (t, o, { api: r }) =>
-                        (0, s._O)(t, { request: r.withEndpoint(a.Z).create, params: { query: e } })({ actionTypes: h, context: "SAVE_SEARCH" }),
-                _ =
+                        (0, s._O)(t, { request: r.withEndpoint(a.Z).create, params: { query: e } })({ actionTypes: u, context: "SAVE_SEARCH" }),
+                w =
                     (e) =>
                     (t, o, { api: r }) =>
                         (0, s._O)(t, { request: r.withEndpoint(a.Z).destroy, params: { id: e } })({ actionTypes: p, context: "DELETE_SAVED_SEARCH" }),
-                y =
+                _ =
                     () =>
                     (e, t, { api: o }) => {
                         const r = t();
-                        if (!(0, d.Qb)(r)) return Promise.resolve();
-                        const n = ((e) => e[l].fetchStatus)(r) === i.ZP.LOADED;
-                        return n ? Promise.resolve() : e((e, t, { api: o }) => (0, s._O)(e, { request: o.withEndpoint(a.Z).fetch, params: {} })({ actionTypes: u, context: "FETCH_SAVED_SEARCHES" }));
+                        if (!(0, i.Qb)(r)) return Promise.resolve();
+                        const n = ((e) => e[l].fetchStatus)(r) === d.ZP.LOADED;
+                        return n ? Promise.resolve() : e((e, t, { api: o }) => (0, s._O)(e, { request: o.withEndpoint(a.Z).fetch, params: {} })({ actionTypes: h, context: "FETCH_SAVED_SEARCHES" }));
                     };
         },
         774006: (e, t, o) => {
@@ -763,28 +763,28 @@
                 r = o(750085),
                 n = o(903019),
                 s = o(883432),
-                i = o(555875),
-                d = o(218951);
+                d = o(555875),
+                i = o(218951);
             const l = "search-",
                 c = " near:me",
-                u = " filter:follows",
-                h = { [n.N3.Image]: { result_filter: n.N3.Image }, [n.N3.List]: { result_filter: n.N3.List }, [n.N3.Live]: { tweet_search_mode: n.N3.Live }, [n.N3.Media]: { result_filter: n.N3.Media }, [n.N3.Top]: {}, [n.N3.User]: { result_filter: n.N3.User }, [n.N3.Video]: { result_filter: n.N3.Video } },
+                h = " filter:follows",
+                u = { [n.N3.Image]: { result_filter: n.N3.Image }, [n.N3.List]: { result_filter: n.N3.List }, [n.N3.Live]: { tweet_search_mode: n.N3.Live }, [n.N3.Media]: { result_filter: n.N3.Media }, [n.N3.Top]: {}, [n.N3.User]: { result_filter: n.N3.User }, [n.N3.Video]: { result_filter: n.N3.Video } },
                 p = (e) => (((e) => e === s.Z.SpellingCorrectionRevertClick || e === s.Z.SpellingExpansionRevertClick)(e) ? "-revert" : ""),
                 m = () => (e, t) => {
                     e(
-                        (0, i.CY)(t())
+                        (0, d.CY)(t())
                             .filter((e) => 0 === e.indexOf(l))
-                            .map((e) => (0, i.$q)(e)),
+                            .map((e) => (0, d.$q)(e)),
                     );
                 },
-                b = ({ query: e, searchMode: t = n.N3.Top, querySource: o, searchFilters: s, vertical: i, urtEndpointOptions: m, searchTimelinesGraphQLEnabled: b }) => {
+                b = ({ query: e, searchMode: t = n.N3.Top, querySource: o, searchFilters: s, vertical: d, urtEndpointOptions: m, searchTimelinesGraphQLEnabled: b }) => {
                     const S = p(o),
-                        _ = s && s.peopleFilter ? "searcher_follows" : void 0,
-                        y = _ ? "-pf" : "",
-                        w = s && s.locationFilter && !e.includes(c) ? `${e}${c}` : e,
-                        f = { timelineId: `${l}${w}-${t}${S}${y}`, network: { getEndpoint: (e) => e.withEndpoint(a.Z).fetchSearch, getEndpointParams: (e) => ({ ...m?.requestParams, q: w, social_filter: _, vertical: i, ...h[t], ...e }) }, context: "FETCH_SEARCH_TIMELINE", perfKey: "search", staleIntervalMs: t === n.N3.Live ? 5e3 : void 0, timelineType: "search" };
+                        w = s && s.peopleFilter ? "searcher_follows" : void 0,
+                        _ = w ? "-pf" : "",
+                        y = s && s.locationFilter && !e.includes(c) ? `${e}${c}` : e,
+                        f = { timelineId: `${l}${y}-${t}${S}${_}`, network: { getEndpoint: (e) => e.withEndpoint(a.Z).fetchSearch, getEndpointParams: (e) => ({ ...m?.requestParams, q: y, social_filter: w, vertical: d, ...u[t], ...e }) }, context: "FETCH_SEARCH_TIMELINE", perfKey: "search", staleIntervalMs: t === n.N3.Live ? 5e3 : void 0, timelineType: "search" };
                     if (b) {
-                        const e = _ && !w.includes(u) ? `${w}${u}` : w,
+                        const e = w && !y.includes(h) ? `${y}${h}` : y,
                             s = ((e) => {
                                 switch (e) {
                                     case n.N3.Image:
@@ -804,27 +804,27 @@
                                         return "Latest";
                                 }
                             })(t),
-                            i = `gql-${l}${w}-${t}${S}${y}`;
-                        return (0, d.Z)({ ...f, timelineId: i, context: "FETCH_SEARCH_GRAPHQL_TIMELINE", formatResponse: r.Z, network: { getEndpointParams: ({ count: t, cursor: a }) => ({ rawQuery: e, count: t, product: s, querySource: o, cursor: "string" == typeof a ? a : void 0 }), getEndpoint: (e) => e.withEndpoint(a.Z).fetchSearchGraphQL } });
+                            d = `gql-${l}${y}-${t}${S}${_}`;
+                        return (0, i.Z)({ ...f, timelineId: d, context: "FETCH_SEARCH_GRAPHQL_TIMELINE", formatResponse: r.Z, network: { getEndpointParams: ({ count: t, cursor: a }) => ({ rawQuery: e, count: t, product: s, querySource: o, cursor: "string" == typeof a ? a : void 0 }), getEndpoint: (e) => e.withEndpoint(a.Z).fetchSearchGraphQL } });
                     }
-                    return (0, d.Z)(f);
+                    return (0, i.Z)(f);
                 };
         },
         80927: (e, t, o) => {
-            o.r(t), o.d(t, { SearchFiltersScreen: () => u, default: () => h });
+            o.r(t), o.d(t, { SearchFiltersScreen: () => h, default: () => u });
             var a = o(807896),
                 r = o(202784),
                 n = o(111677),
                 s = o.n(n),
-                i = o(980407),
-                d = o(896008),
+                d = o(980407),
+                i = o(896008),
                 l = o(725516);
             const c = s().aea62568;
-            function u(e) {
+            function h(e) {
                 const { history: t, location: o } = e;
-                return r.createElement(i.Z, { documentTitle: c, history: t, title: c }, r.createElement(d.J, (0, a.Z)({}, e, { key: o.key, withBottomBorder: !0 })));
+                return r.createElement(d.Z, { documentTitle: c, history: t, title: c }, r.createElement(i.J, (0, a.Z)({}, e, { key: o.key, withBottomBorder: !0 })));
             }
-            const h = (0, l.Z)(u, { page: "search_filters" });
+            const u = (0, l.Z)(h, { page: "search_filters" });
         },
         184297: (e, t, o) => {
             o.r(t), o.d(t, { SearchScreen: () => Ue, default: () => $e });
@@ -832,21 +832,21 @@
                 r = o(537392),
                 n = o(691533),
                 s = o(844685),
-                i = o(457311),
-                d = o(111677),
-                l = o.n(d),
+                d = o(457311),
+                i = o(111677),
+                l = o.n(i),
                 c = o(912021),
-                u = o(459679),
-                h = o(791632),
+                h = o(459679),
+                u = o(791632),
                 p = o(805104),
                 m = o(718e3);
             o(272175);
             l().b11805af, l().d610e8c3;
             var b = o(896008),
                 S = o(252021),
-                _ = o(507651),
-                y = o(443781),
-                w = o(652904),
+                w = o(507651),
+                _ = o(443781),
+                y = o(652904),
                 f = o(243754);
             const g = (0, o(523561).Z)({
                 loader: () =>
@@ -861,8 +861,8 @@
                         o.e("icons.2"),
                         o.e("icons.18"),
                         o.e("icons.9"),
-                        o.e("icons.1"),
                         o.e("icons.6"),
+                        o.e("icons.1"),
                         o.e("modules.common-e907d115"),
                         o.e("modules.common-e019dbda"),
                         o.e("icons.14"),
@@ -885,14 +885,6 @@
                         o.e("icons.19"),
                         o.e("icons.0"),
                         o.e("icons.4"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -912,6 +904,13 @@
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
+                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
+                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
+                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
+                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
+                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
+                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                         o.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                         o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
@@ -920,19 +919,16 @@
                         o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
                         o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                         o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
-                        o.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         o.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-bbc41769"),
-                        o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-8aa1f3e4"),
-                        o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-c6c15d67"),
+                        o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3ec0edf6"),
                         o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3fd5f349"),
                         o.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
-                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
-                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
+                        o.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-88dc685d"),
+                        o.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-271d17b1"),
                         o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
-                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
-                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
+                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
                         o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                         o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
                         o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
@@ -966,51 +962,52 @@
                         o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-92ee7280"),
                         o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-4cd14b6e"),
                         o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-380ace89"),
-                        o.e("shared~loader.Dock~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders"),
                         o.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         o.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
-                        o.e("shared~bundle.Grok~loader.Markdown"),
-                        o.e("bundle.Grok-bc6ccf4c"),
-                        o.e("bundle.Grok-e96e9bea"),
-                        o.e("bundle.Grok-0ae4e026"),
-                        o.e("bundle.Grok-b16f5c14"),
+                        o.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-6107ac1a"),
+                        o.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-63cb1cc4"),
+                        o.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bf286bb5"),
+                        o.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-6ac0f1a5"),
+                        o.e("shared~bundle.Grok~loader.Markdown-6107ac1a"),
+                        o.e("shared~bundle.Grok~loader.Markdown-0ae4e026"),
+                        o.e("shared~bundle.Grok~loader.Markdown-b16f5c14"),
+                        o.e("shared~bundle.Grok~loader.Markdown-63cb1cc4"),
+                        o.e("shared~bundle.Grok~loader.Markdown-d49ace54"),
+                        o.e("shared~bundle.Grok~loader.Markdown-3277c3ad"),
+                        o.e("shared~bundle.Grok~loader.Markdown-57c2c4a2"),
+                        o.e("shared~bundle.Grok~loader.Markdown-6bf2d53b"),
+                        o.e("shared~bundle.Grok~loader.Markdown-78667c23"),
+                        o.e("shared~bundle.Grok~loader.Markdown-a244d277"),
+                        o.e("shared~bundle.Grok~loader.Markdown-0d8ef87b"),
+                        o.e("shared~bundle.Grok~loader.Markdown-26844252"),
+                        o.e("shared~bundle.Grok~loader.Markdown-f29574de"),
+                        o.e("shared~bundle.Grok~loader.Markdown-4ff64aa1"),
+                        o.e("shared~bundle.GrokDrawer~bundle.Grok"),
+                        o.e("bundle.Grok-6107ac1a"),
                         o.e("bundle.Grok-9f4db315"),
-                        o.e("bundle.Grok-e4e3d8bb"),
+                        o.e("bundle.Grok-65f95f73"),
                         o.e("bundle.Grok-63cb1cc4"),
                         o.e("bundle.Grok-c69e90f3"),
-                        o.e("bundle.Grok-ea2f266f"),
                         o.e("bundle.Grok-16d5f187"),
-                        o.e("bundle.Grok-bf286bb5"),
-                        o.e("bundle.Grok-78699f4a"),
                         o.e("bundle.Grok-38dc3b4a"),
                         o.e("bundle.Grok-1d830d6b"),
-                        o.e("bundle.Grok-d49ace54"),
-                        o.e("bundle.Grok-3277c3ad"),
-                        o.e("bundle.Grok-57c2c4a2"),
-                        o.e("bundle.Grok-f1a12957"),
-                        o.e("bundle.Grok-78667c23"),
-                        o.e("bundle.Grok-a244d277"),
-                        o.e("bundle.Grok-0d8ef87b"),
-                        o.e("bundle.Grok-1d41f45b"),
-                        o.e("bundle.Grok-b8348d5d"),
                         o.e("bundle.Grok-7bc92c09"),
                         o.e("bundle.Grok-f8a31592"),
-                        o.e("bundle.Grok-bd027025"),
                         o.e("bundle.Grok-7a6ce5c4"),
                         o.e("bundle.Grok-cebf58fc"),
                         o.e("bundle.Grok-29bebf45"),
-                        o.e("bundle.Grok-9e9ee61b"),
+                        o.e("bundle.Grok-29980aa8"),
                         o.e("bundle.Grok-6ac0f1a5"),
                         o.e("bundle.Grok-3c20ad5c"),
                     ]).then(o.bind(o, 528829)),
             });
-            var D = o(601576);
-            const A = l().f9d35b98,
+            var k = o(601576);
+            const D = l().f9d35b98,
                 E = l().ha925ad4,
-                k = l().h0a9931c,
-                C = { customErrorHandler: () => (0, D.mf)({ text: E }), showToast: !0 },
-                v = { customErrorHandler: () => (0, D.mf)({ text: A }), showToast: !0 },
-                M = { customErrorHandler: () => (0, D.mf)({ text: k }), showToast: !0 };
+                C = l().h0a9931c,
+                v = { customErrorHandler: () => (0, k.mf)({ text: E }), showToast: !0 },
+                A = { customErrorHandler: () => (0, k.mf)({ text: D }), showToast: !0 },
+                M = { customErrorHandler: () => (0, k.mf)({ text: C }), showToast: !0 };
             var T = o(10656),
                 x = o(293115),
                 B = o(942893),
@@ -1023,11 +1020,11 @@
                 R = o(704279),
                 q = o(554951),
                 H = o(936572);
-            const O = (e, t) => {
+            const G = (e, t) => {
                     const { location: o } = t;
                     return o.query && o.query.src && "string" == typeof o.query.src ? o.query.src : "";
                 },
-                G = (e, t) => {
+                O = (e, t) => {
                     const {
                         location: o,
                         match: { params: a },
@@ -1041,8 +1038,8 @@
                 $ = (e, t) => !!(t.location.state || {}).searchFocused,
                 V = (0, L.P1)((0, N.cI)("pf"), (0, N.cI)("lf"), (e, t) => ({ peopleFilter: e, locationFilter: t })),
                 z = (0, F.Z)()
-                    .propsFromState(() => ({ searchFocused: $, query: G, querySrc: O, isQueryAlreadySaved: (0, L.P1)(G, q.as, (e, t) => t.map((e) => e.query).indexOf(e) > -1), searchType: U, searchFilters: V, mode: Z.Jm, savedSearches: q.as, vertical: (0, N.cI)("vertical"), isSideNavExpandedByUser: H.op }))
-                    .propsFromActions(() => ({ addToast: D.fz, createLocalApiErrorHandler: (0, P.zr)("SEARCH_SCREEN"), deleteSavedSearch: q.k9, fetchSavedSearchesIfNeeded: q.l9, saveSearch: q.GL, scribeAction: R.n }))
+                    .propsFromState(() => ({ searchFocused: $, query: O, querySrc: G, isQueryAlreadySaved: (0, L.P1)(O, q.as, (e, t) => t.map((e) => e.query).indexOf(e) > -1), searchType: U, searchFilters: V, mode: Z.Jm, savedSearches: q.as, vertical: (0, N.cI)("vertical"), isSideNavExpandedByUser: H.op }))
+                    .propsFromActions(() => ({ addToast: k.fz, createLocalApiErrorHandler: (0, P.zr)("SEARCH_SCREEN"), deleteSavedSearch: q.k9, fetchSavedSearchesIfNeeded: q.l9, saveSearch: q.GL, scribeAction: R.n }))
                     .withAnalytics({ page: "search" });
             o(136728), o(901951);
             var W = o(811176),
@@ -1059,17 +1056,17 @@
                 re = "saveSearch-overflow",
                 ne = "deleteSavedSearch-overflow",
                 se = l().h1ef00dc,
-                ie = l().aea62568,
-                de = l().j622effe,
+                de = l().aea62568,
+                ie = l().j622effe,
                 le = l().h4912b5e,
                 ce = l().b9bc69ca;
-            const ue = function (e) {
-                const { deleteSavedSearch: t, isLoggedIn: o, isQueryAlreadySaved: r, isTwoColumn: n, location: s, onClose: i, saveSearch: d } = e,
+            const he = function (e) {
+                const { deleteSavedSearch: t, isLoggedIn: o, isQueryAlreadySaved: r, isTwoColumn: n, location: s, onClose: d, saveSearch: i } = e,
                     l = (0, ee.hC)("responsive_web_saved_search_enabled"),
                     c = [];
                 return (
-                    n || c.push({ Icon: Q.default, testID: te, text: ie, link: { pathname: "/i/search_filters", query: s.query } }),
-                    c.push({ Icon: j.default, testID: oe, text: de, link: { pathname: "/search-advanced", query: { ...(0, Y.Z)(s.query, ["src"]) } } }),
+                    n || c.push({ Icon: Q.default, testID: te, text: de, link: { pathname: "/i/search_filters", query: s.query } }),
+                    c.push({ Icon: j.default, testID: oe, text: ie, link: { pathname: "/search-advanced", query: { ...(0, Y.Z)(s.query, ["src"]) } } }),
                     o &&
                         (c.unshift({ Icon: J.default, testID: ae, text: se, link: "/settings/search" }),
                         l &&
@@ -1088,33 +1085,33 @@
                                       testID: re,
                                       text: le,
                                       onClick: (e) => {
-                                          e(), d();
+                                          e(), i();
                                       },
                                   }))),
-                    a.createElement(W.Z, { items: c, onCloseRequested: i })
+                    a.createElement(W.Z, { items: c, onCloseRequested: d })
                 );
             };
-            var he = o(476984),
-                pe = o.n(he),
+            var ue = o(476984),
+                pe = o.n(ue),
                 me = o(842623),
                 be = o(33104),
                 Se = o(789831),
-                _e = o(959658),
-                ye = o(32677),
-                we = o(886191),
+                we = o(959658),
+                _e = o(32677),
+                ye = o(886191),
                 fe = o(864702),
                 ge = o(774006),
-                De = o(735313);
-            const Ae = (e, t) => "POP" === t.history.action,
+                ke = o(735313);
+            const De = (e, t) => "POP" === t.history.action,
                 Ee = (e, t) => {
                     const { location: o } = t;
                     return o?.state?.urtEndpointOptions;
                 },
-                ke = (0, F.Z)()
-                    .propsFromState(() => ({ dataLookupId: Z.XN, isBackNavigation: Ae, searchMode: Z.Jm, urtEndpointOptions: Ee }))
-                    .propsFromActions(() => ({ clearTimelineCache: ({ fetchOptions: e, module: t }) => (0, De.Z)(t, e), createLocalApiErrorHandler: (0, P.zr)("SEARCH_RESULTS_SCREEN") })),
-                Ce = (e) => (e && (0, me.Z)(e) ? { defaultText: ` ${e}`, positionCursorAtBeginning: !0 } : void 0);
-            class ve extends a.Component {
+                Ce = (0, F.Z)()
+                    .propsFromState(() => ({ dataLookupId: Z.XN, isBackNavigation: De, searchMode: Z.Jm, urtEndpointOptions: Ee }))
+                    .propsFromActions(() => ({ clearTimelineCache: ({ fetchOptions: e, module: t }) => (0, ke.Z)(t, e), createLocalApiErrorHandler: (0, P.zr)("SEARCH_RESULTS_SCREEN") })),
+                ve = (e) => (e && (0, me.Z)(e) ? { defaultText: ` ${e}`, positionCursorAtBeginning: !0 } : void 0);
+            class Ae extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this._getSearchMode = () => {
@@ -1126,7 +1123,7 @@
                             const { query: e } = this.props;
                             return this._getMemoizedComposeLocationState(e);
                         }),
-                        (this._getMemoizedComposeLocationState = (0, c.Z)(Ce));
+                        (this._getMemoizedComposeLocationState = (0, c.Z)(ve));
                 }
                 componentDidMount() {
                     const { isBackNavigation: e } = this.props;
@@ -1138,14 +1135,14 @@
                 }
                 render() {
                     const { query: e, querySrc: t, searchFilters: o, searchFocused: r, urtEndpointOptions: n, vertical: s } = this.props,
-                        { featureSwitches: i, viewerUserId: d } = this.context,
-                        l = !(!d || !i.isTrue("voice_rooms_search_results_page_audiospace_ring_enabled")),
+                        { featureSwitches: d, viewerUserId: i } = this.context,
+                        l = !(!i || !d.isTrue("voice_rooms_search_results_page_audiospace_ring_enabled")),
                         c = this._getSearchMode();
-                    return a.createElement(Se.Z, { component: be.Z, fab: this._renderFloatingComposeButton(), shouldRenderFab: !r }, a.createElement(_e.b.Provider, { query: e }, a.createElement(we.Z, { fetchOptions: this._getFetchOptions(), query: e, querySrc: t, searchFilters: o, searchMode: c, urtEndpointOptions: n, vertical: s, withUserPresence: l })));
+                    return a.createElement(Se.Z, { component: be.Z, fab: this._renderFloatingComposeButton(), shouldRenderFab: !r }, a.createElement(we.b.Provider, { query: e }, a.createElement(ye.Z, { fetchOptions: this._getFetchOptions(), query: e, querySrc: t, searchFilters: o, searchMode: c, urtEndpointOptions: n, vertical: s, withUserPresence: l })));
                 }
                 _renderFloatingComposeButton() {
                     const { history: e } = this.props;
-                    return a.createElement(ye.Z, { getLocationState: this._getFabState, history: e });
+                    return a.createElement(_e.Z, { getLocationState: this._getFabState, history: e });
                 }
                 _getFetchOptions() {
                     const { dataLookupId: e, querySrc: t } = this.props;
@@ -1154,13 +1151,13 @@
                 _clearTimelineCache() {
                     const { clearTimelineCache: e, createLocalApiErrorHandler: t, query: o, querySrc: a, searchFilters: r, urtEndpointOptions: n } = this.props,
                         s = this._getSearchMode(),
-                        { featureSwitches: i } = this.context,
-                        d = i.isTrue("search_timelines_graphql_enabled");
-                    (0, h.HD)(this.context.history) || e({ module: (0, ge.Z)({ query: o, querySource: a, searchMode: s, searchFilters: r, urtEndpointOptions: n, searchTimelinesGraphQLEnabled: d }), fetchOptions: this._getFetchOptions() }).catch(t(fe.d));
+                        { featureSwitches: d } = this.context,
+                        i = d.isTrue("search_timelines_graphql_enabled");
+                    (0, u.HD)(this.context.history) || e({ module: (0, ge.Z)({ query: o, querySource: a, searchMode: s, searchFilters: r, urtEndpointOptions: n, searchTimelinesGraphQLEnabled: i }), fetchOptions: this._getFetchOptions() }).catch(t(fe.d));
                 }
             }
-            ve.contextType = y.rC;
-            const Me = ke(ve),
+            Ae.contextType = _.rC;
+            const Me = Ce(Ae),
                 Te = "searchBoxOverflowButton",
                 xe = l().a9ae1e78,
                 Be = l().e75df5c9,
@@ -1173,8 +1170,8 @@
                 Re = l().bb967f9e,
                 qe = l().aea62568,
                 He = l().gfcfbf8c,
-                Oe = l().a4645d92,
-                Ge = [
+                Ge = l().a4645d92,
+                Oe = [
                     { type: Z.N3.Top, label: Ze },
                     { type: Z.N3.Live, label: Ie },
                     { type: Z.N3.User, label: Ne },
@@ -1194,8 +1191,8 @@
                             const { history: t, isQueryAlreadySaved: o, location: n } = this.props,
                                 s = !!this.context.viewerUserId;
                             return a.createElement(r.ZP, null, ({ windowWidth: r }) => {
-                                const i = T.Z.isTwoColumnLayout(r);
-                                return a.createElement(ue, { deleteSavedSearch: this._onDeleteSavedSearchMenuClick, history: t, isLoggedIn: s, isQueryAlreadySaved: o, isTwoColumn: i, location: n, onClose: e, saveSearch: this._onSaveSearch });
+                                const d = T.Z.isTwoColumnLayout(r);
+                                return a.createElement(he, { deleteSavedSearch: this._onDeleteSavedSearchMenuClick, history: t, isLoggedIn: s, isQueryAlreadySaved: o, isTwoColumn: d, location: n, onClose: e, saveSearch: this._onSaveSearch });
                             });
                         }),
                         (this._onSaveSearch = () => {
@@ -1204,19 +1201,19 @@
                             a &&
                                 r(a)
                                     .then(() => e({ text: He }))
-                                    .catch(o(s < 25 ? C : v));
-                            const i = B.Z.forSavedSearchResult(a, s);
-                            t.scribe({ element: "saved_search", action: "add", data: { items: [i] } });
+                                    .catch(o(s < 25 ? v : A));
+                            const d = B.Z.forSavedSearchResult(a, s);
+                            t.scribe({ element: "saved_search", action: "add", data: { items: [d] } });
                         }),
                         (this._handleOnDeleteSavedSearchConfirm = () => {
                             const { addToast: e, analytics: t, createLocalApiErrorHandler: o, deleteSavedSearch: a, query: r, savedSearches: n } = this.props,
                                 s = n.findIndex((e) => e.query === r),
-                                i = n[s];
-                            if (i) {
-                                a(i.id_str)
-                                    .then(() => e({ text: Oe }))
+                                d = n[s];
+                            if (d) {
+                                a(d.id_str)
+                                    .then(() => e({ text: Ge }))
                                     .catch(o(M));
-                                const r = B.Z.forSavedSearchResult(i.query, s);
+                                const r = B.Z.forSavedSearchResult(d.query, s);
                                 t.scribe({ element: "saved_search", action: "delete", data: { items: [r] } }), this.setState({ shouldShowDeleteSearchConfirmation: !1 });
                             }
                         }),
@@ -1234,37 +1231,37 @@
                             const { featureSwitches: o } = this.context,
                                 { shouldShowDeleteSearchConfirmation: r } = this.state,
                                 { query: s } = e,
-                                { mode: i } = this.props,
-                                d = o.isTrue("responsive_web_grok_search_summary_enabled"),
+                                { mode: d } = this.props,
+                                i = o.isTrue("responsive_web_grok_search_summary_enabled"),
                                 l = o.isTrue("responsive_web_grok_search_summary_sidebar");
-                            return a.createElement(a.Fragment, null, !d || (l && t) ? null : a.createElement(n.Z, null, a.createElement(g, { hidden: "top" !== i, query: s })), a.createElement(Me, e), r ? a.createElement(f.Z, { onCancel: this._handleOnDeleteSavedSearchCancel, onConfirm: this._handleOnDeleteSavedSearchConfirm }) : null);
+                            return a.createElement(a.Fragment, null, !i || (l && t) ? null : a.createElement(n.Z, null, a.createElement(g, { hidden: "top" !== d, query: s })), a.createElement(Me, e), r ? a.createElement(f.Z, { onCancel: this._handleOnDeleteSavedSearchCancel, onConfirm: this._handleOnDeleteSavedSearchConfirm }) : null);
                         }),
                         (this._renderSidebarContent = () => {
                             const { history: e, location: t, mode: o, query: r } = this.props;
-                            let i = !1;
-                            this.context.userClaims.isAnyPremiumSubscriber() || (i = this.context.featureSwitches.isTrue("subscriptions_upsells_radar_sidebar_enabled"));
-                            const d = this.context.featureSwitches.isTrue("responsive_web_grok_search_summary_enabled") && this.context.featureSwitches.isTrue("responsive_web_grok_search_summary_sidebar");
-                            return a.createElement(m.Z, { withRadarUpsell: i, withSearchBox: !1, withTrends: !!r }, d ? a.createElement(n.Z, null, a.createElement(g, { heightFactor: 2, hidden: "top" !== o, query: r })) : null, a.createElement(s.Z, { text: qe }), a.createElement(b.Z, { history: e, key: t.key, location: t }));
+                            let d = !1;
+                            this.context.userClaims.isAnyPremiumSubscriber() || (d = this.context.featureSwitches.isTrue("subscriptions_upsells_radar_sidebar_enabled"));
+                            const i = this.context.featureSwitches.isTrue("responsive_web_grok_search_summary_enabled") && this.context.featureSwitches.isTrue("responsive_web_grok_search_summary_sidebar");
+                            return a.createElement(m.Z, { withRadarUpsell: d, withSearchBox: !1, withTrends: !!r }, i ? a.createElement(n.Z, null, a.createElement(g, { heightFactor: 2, hidden: "top" !== o, query: r })) : null, a.createElement(s.Z, { text: qe }), a.createElement(b.Z, { history: e, key: t.key, location: t }));
                         }),
                         (this._renderTabs = () => {
-                            const { analytics: e, mode: t, query: o, querySrc: r, searchFilters: n, searchType: s, vertical: i } = this.props,
-                                { featureSwitches: d, viewerUserId: l } = this.context,
-                                c = (0, u.Z)(Ge, (a) => {
-                                    if (!(0, Z.PH)(a.type, d, !!l)) return;
-                                    const c = (0, Z.PH)(t, d, !!l) ? Z._I[t] : void 0,
-                                        u = Z._I[a.type],
-                                        h = () => u === c;
+                            const { analytics: e, mode: t, query: o, querySrc: r, searchFilters: n, searchType: s, vertical: d } = this.props,
+                                { featureSwitches: i, viewerUserId: l } = this.context,
+                                c = (0, h.Z)(Oe, (a) => {
+                                    if (!(0, Z.PH)(a.type, i, !!l)) return;
+                                    const c = (0, Z.PH)(t, i, !!l) ? Z._I[t] : void 0,
+                                        h = Z._I[a.type],
+                                        u = () => h === c;
                                     return {
-                                        isActive: h,
+                                        isActive: u,
                                         key: a.type,
-                                        to: (0, Z.Rg)({ query: o, querySrc: r, modeValue: u, searchType: s, searchFilters: n, vertical: i }),
+                                        to: (0, Z.Rg)({ query: o, querySrc: r, modeValue: h, searchType: s, searchFilters: n, vertical: d }),
                                         label: a.label,
                                         onClick: () => {
-                                            h() || e.scribe({ element: `search_filter_${a.type}`, action: "navigate", data: this._getScribeData(o, r, n) });
+                                            u() || e.scribe({ element: `search_filter_${a.type}`, action: "navigate", data: this._getScribeData(o, r, n) });
                                         },
                                     };
                                 });
-                            return a.createElement(_.Z, { links: c });
+                            return a.createElement(w.Z, { links: c });
                         }),
                         (this._getMemoizedTimelineScribeNamespace = (0, c.Z)((e, t) => ({ section: `search_filter_${e}${t === Z.rg.Topics ? "_topics" : ""}` }))),
                         (this._handleSearchBoxSubmit = (e, t, o = !1) => {
@@ -1281,38 +1278,38 @@
                     t().catch(e({}));
                 }
                 render() {
-                    const { history: e, isSideNavExpandedByUser: t, location: o, mode: n, query: s, querySrc: d, searchFilters: l, searchFocused: c, searchType: u, vertical: p } = this.props,
+                    const { history: e, isSideNavExpandedByUser: t, location: o, mode: n, query: s, querySrc: i, searchFilters: l, searchFocused: c, searchType: h, vertical: p } = this.props,
                         { shouldClearTimelineCache: m } = this.state,
                         b = !!s,
-                        _ = b ? Be({ query: s }) : xe,
-                        y = { history: e, location: o, query: s, querySrc: d, searchFilters: l, searchFocused: c, vertical: p, shouldClearTimelineCache: m },
+                        w = b ? Be({ query: s }) : xe,
+                        _ = { history: e, location: o, query: s, querySrc: i, searchFilters: l, searchFocused: c, vertical: p, shouldClearTimelineCache: m },
                         f = { initialValue: s, mode: n, onSubmit: this._handleSearchBoxSubmit, searchFilters: l, showBrandedHashFlag: !0 },
                         g = this.context.featureSwitches.isTrue("rweb_sourcemap_migration"),
-                        D = this.context.featureSwitches.isTrue("rweb_sourcemap_migration_side_expand_by_default");
-                    return (0, h.HD)(e) && !b
-                        ? a.createElement(i.Z, null)
+                        k = this.context.featureSwitches.isTrue("rweb_sourcemap_migration_side_expand_by_default");
+                    return (0, u.HD)(e) && !b
+                        ? a.createElement(d.Z, null)
                         : b
                           ? a.createElement(
                                 x.nO,
-                                { data: this._getScribeData(s, d, l, n, p), namespace: this._getMemoizedTimelineScribeNamespace(n, p) },
+                                { data: this._getScribeData(s, i, l, n, p), namespace: this._getMemoizedTimelineScribeNamespace(n, p) },
                                 a.createElement(
-                                    w.Z,
+                                    y.Z,
                                     null,
                                     null,
                                     a.createElement(r.ZP, null, ({ windowWidth: o }) => {
                                         const r = T.Z.isTwoColumnLayout(o),
-                                            n = T.Z.isTwoColumnLayoutRedesign(o, t ?? D),
-                                            i = this._renderRightControl({ isTwoColumn: r, searchFocused: c });
-                                        return a.createElement(S.Z, { backLocation: "/explore", composeOptions: Ce(s), documentTitle: _, history: e, primaryContent: this._renderPrimaryContent(y, g ? n : r), rightControl: i, searchBoxOptions: f, secondaryBar: this._renderTabs(), sidebarContent: this._renderSidebarContent(), title: s, withBottomLoginSignupBar: !0, withSearchBox: !0 });
+                                            n = T.Z.isTwoColumnLayoutRedesign(o, t ?? k),
+                                            d = this._renderRightControl({ isTwoColumn: r, searchFocused: c });
+                                        return a.createElement(S.Z, { backLocation: "/explore", composeOptions: ve(s), documentTitle: w, history: e, primaryContent: this._renderPrimaryContent(_, g ? n : r), rightControl: d, searchBoxOptions: f, secondaryBar: this._renderTabs(), sidebarContent: this._renderSidebarContent(), title: s, withBottomLoginSignupBar: !0, withSearchBox: !0 });
                                     }),
                                 ),
                             )
                           : a.createElement(I.Z, { to: "/explore" });
                 }
             }
-            Ue.contextType = y.rC;
+            Ue.contextType = _.rC;
             const $e = z(Ue);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Search-9f4db315.1d19919a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Search-9f4db315.eca66e2a.js.map

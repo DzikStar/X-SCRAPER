@@ -153,7 +153,7 @@
                 T = (e) => (0, l.Z)({ timelineId: `trendingEventHistoryGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchTrendHistory, getEndpointParams: () => ({ trendId: e }) }, formatResponse: a.Z, context: "FETCH_TREND_HISTORY", perfKey: "trendingEventHistoryGraphQL" });
         },
         642081: (e, t, o) => {
-            o.r(t), o.d(t, { TopicLandingPage: () => z, default: () => q });
+            o.r(t), o.d(t, { TopicLandingPage: () => Q, default: () => q });
             var i = o(202784),
                 r = o(688715),
                 n = o(457311),
@@ -217,13 +217,13 @@
                 G = "Be the first to post about this Topic and see it here.",
                 U = "/",
                 W = i.createElement(c.Z, { withWhoToFollow: !1 }),
-                Q = { page: "topic_landing", section: "main" };
-            function z({ history: e, module: t, referringScribeNamespace: o, topic: r, topicId: a }) {
+                z = { page: "topic_landing", section: "main" };
+            function Q({ history: e, module: t, referringScribeNamespace: o, topic: r, topicId: a }) {
                 const s = r?.name ? O({ topicName: r?.name }) : M,
                     c = r?.name ? H({ topicName: r?.name }) : $;
-                return i.createElement(m.nO, { data: L(o, a) }, i.createElement(i.Fragment, null, i.createElement(d.Z, { description: c }), i.createElement(p.Z, { canonical: N(a), description: c, title: s, type: "article" }), i.createElement(l.Z, { deepLink: F(a) }), i.createElement(h.Z, { backLocation: U, documentTitle: s, entryConfiguration: v, history: e, initialPageNamespace: Q, module: t, renderEmptyState: () => i.createElement(n.Z, { header: A, message: G }), sidebarContent: W, timelinePrefix: f, title: R })));
+                return i.createElement(m.nO, { data: L(o, a) }, i.createElement(i.Fragment, null, i.createElement(d.Z, { description: c }), i.createElement(p.Z, { canonical: N(a), description: c, title: s, type: "article" }), i.createElement(l.Z, { deepLink: F(a) }), i.createElement(h.Z, { backLocation: U, documentTitle: s, entryConfiguration: v, history: e, initialPageNamespace: z, module: t, renderEmptyState: () => i.createElement(n.Z, { header: A, message: G }), sidebarContent: W, timelinePrefix: f, title: R })));
             }
-            const q = C(z);
+            const q = C(Q);
         },
         204819: (e, t, o) => {
             o.r(t), o.d(t, { TopicsEducationScreen: () => y, default: () => Z });
@@ -447,6 +447,19 @@
             x.contextType = l.rC;
             const B = C(x);
         },
+        98440: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => c });
+            var i = o(202784),
+                r = o(890601),
+                n = o(783427),
+                a = o(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, n.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const c = s;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Topics.5f515f4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Topics.8c2e44ca.js.map

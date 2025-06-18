@@ -256,17 +256,17 @@
                 f = r(730372);
             const w = h().icf7f1a4,
                 y = h().f88553c8;
-            function v({ code: e, headerBarStyle: o, language: r }) {
-                const l = (0, b.I0)(),
-                    a = d.default.theme.paletteName,
-                    p = n.useMemo(() => {
-                        let e = { fontFamily: "monospace", lineHeight: 1.3, whiteSpace: "pre", fontSize: d.default.theme.fontSizesPx.subtext2, display: "block", width: "100%", boxSizing: "border-box", borderTopEndRadius: r ? "none" : d.default.theme.borderRadii.medium, borderTopStartRadius: r ? "none" : d.default.theme.borderRadii.medium, borderBottomLeftRadius: d.default.theme.borderRadii.medium, borderBottomRightRadius: d.default.theme.borderRadii.medium, padding: d.default.theme.spaces.space12, marginTop: "0" };
-                        return "light" !== a && (e = { ...e, backgroundColor: d.default.theme.colors.gray50 }), e;
-                    }, [r, a]),
-                    h = n.useCallback(() => {
-                        (0, f.DL)(e, r || "*"), l && l((0, k.fz)({ text: y, withAutoDismiss: !0 }));
-                    }, [e, r, l]);
-                return n.createElement(t.Z, { testID: "markdown-code-block" }, n.createElement(t.Z, { style: [C.headerBlock, o] }, n.createElement(g.ZP, { style: C.headerText }, r), n.createElement(t.Z, { style: C.headerRight }, n.createElement(u.ZP, { "aria-label": w, icon: n.createElement(m.default, null), onPress: h, size: "xSmall", type: "primaryText" }))), n.createElement(c, { customStyle: p, language: r || "text", style: d.default.isDarkMode() ? i : s }, e));
+            function v({ backgroundColor: e, code: o, headerBarStyle: r, language: l }) {
+                const a = (0, b.I0)(),
+                    p = d.default.theme.paletteName,
+                    h = n.useMemo(() => {
+                        let o = { fontFamily: "monospace", lineHeight: 1.3, whiteSpace: "pre", fontSize: d.default.theme.fontSizesPx.subtext2, display: "block", width: "100%", boxSizing: "border-box", borderTopEndRadius: l ? "none" : d.default.theme.borderRadii.medium, borderTopStartRadius: l ? "none" : d.default.theme.borderRadii.medium, borderBottomLeftRadius: d.default.theme.borderRadii.medium, borderBottomRightRadius: d.default.theme.borderRadii.medium, padding: d.default.theme.spaces.space12, marginTop: "0" };
+                        return "light" !== p && (o = { ...o, backgroundColor: e || d.default.theme.colors.gray50 }), o;
+                    }, [l, p, e]),
+                    v = n.useCallback(() => {
+                        (0, f.DL)(o, l || "*"), a && a((0, k.fz)({ text: y, withAutoDismiss: !0 }));
+                    }, [o, l, a]);
+                return n.createElement(t.Z, { testID: "markdown-code-block" }, n.createElement(t.Z, { style: [C.headerBlock, r] }, n.createElement(g.ZP, { style: C.headerText }, l), n.createElement(t.Z, { style: C.headerRight }, n.createElement(u.ZP, { "aria-label": w, icon: n.createElement(m.default, null), onPress: v, size: "xSmall", type: "primaryText" }))), n.createElement(c, { customStyle: h, language: l || "text", style: d.default.isDarkMode() ? i : s }, o));
             }
             const C = d.default.create((e) => ({ headerBlock: { borderTopEndRadius: e.borderRadii.medium, borderTopStartRadius: e.borderRadii.medium, backgroundColor: e.colors.gray0, display: "grid", gridTemplateColumns: "1fr 1fr", paddingTop: e.spaces.space2, paddingBottom: e.spaces.space2, paddingStart: e.spaces.space12, paddingEnd: e.spaces.space8, alignItems: "center", width: "100%" }, headerText: { fontFamily: "monospace", fontSize: e.fontSizesPx.subtext2 }, headerRight: { alignItems: "end" }, copyButton: { borderRadius: e.borderRadii.xLarge } })),
                 x = v;
@@ -411,4 +411,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.CodeBlock-e96e9bea.f4af9cfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.CodeBlock-e96e9bea.965c022a.js.map

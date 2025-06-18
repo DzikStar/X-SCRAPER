@@ -181,7 +181,7 @@
                 y = (e) => (0, i.Z)({ timelineId: `trendingEventHistoryGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(d.Z).fetchTrendHistory, getEndpointParams: () => ({ trendId: e }) }, formatResponse: r.Z, context: "FETCH_TREND_HISTORY", perfKey: "trendingEventHistoryGraphQL" });
         },
         16800: (e, n, a) => {
-            a.r(n), a.d(n, { ExploreScreen: () => v, default: () => L });
+            a.r(n), a.d(n, { ExploreScreen: () => R, default: () => L });
             var t = a(202784),
                 d = a(457311),
                 o = a(688715),
@@ -216,8 +216,7 @@
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
-                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
-                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
+                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
@@ -262,7 +261,7 @@
                 A = a(668214),
                 k = a(558369);
             const I = (e, n) => n.match?.params?.tabId || void 0,
-                _ = () => {
+                x = () => {
                     const e = (0, M.Z)((e) => (0, E.fy)(e)),
                         n = (0, M.Z)((e, n) => (0, E.fy)(e, n));
                     return (0, y.P1)(
@@ -272,19 +271,19 @@
                         (e, a, t) => n(e, t ? t?.tabs?.initialTabId : a),
                     );
                 },
-                x = (0, A.Z)()
-                    .propsFromState(() => ({ initialTabModule: _(), selectedTabId: I }))
+                _ = (0, A.Z)()
+                    .propsFromState(() => ({ initialTabModule: x(), selectedTabId: I }))
                     .withAnalytics({ page: "guide", section: "main" });
             const Z = { ...(0, a(335632).G)({ withThirdPartyCards: !0, errorContext: "EXPLORE_SCREEN" }) },
-                C = l().fcf3e54c,
-                P = l().c797b44e,
+                P = l().fcf3e54c,
+                C = l().c797b44e,
                 T = l().a19ce060,
-                S = () => t.createElement(g.Z, null),
-                N = () => t.createElement(d.Z, { message: T }),
-                B = 600,
-                R = 315,
+                N = () => t.createElement(g.Z, null),
+                S = () => t.createElement(d.Z, { message: T }),
+                v = 600,
+                B = 315,
                 G = "https://abs.twimg.com/a/1602199131/img/moments/moments-card.jpg";
-            class v extends t.Component {
+            class R extends t.Component {
                 constructor(...e) {
                     super(...e),
                         (this._getTabLink = (e) => ({ pathname: `/explore/tabs/${e}` })),
@@ -308,14 +307,14 @@
                         A = M && !!r && "news" !== r && "for_you" !== r,
                         k = M && "news" === r,
                         I = M && "news" === r,
-                        _ = t.createElement(i.Z, { withNews: A, withSearchBox: !1, withTrends: !1 }, t.createElement(t.Fragment, null, k && t.createElement(h, null), I && t.createElement(m, null))),
-                        x = this.context.featureSwitches.isTrue("rweb_enable_logged_out_search_search_bar_enabled"),
+                        x = t.createElement(i.Z, { withNews: A, withSearchBox: !1, withTrends: !1 }, t.createElement(t.Fragment, null, k && t.createElement(h, null), I && t.createElement(m, null))),
+                        _ = this.context.featureSwitches.isTrue("rweb_enable_logged_out_search_search_bar_enabled"),
                         T = e.contextualScribeNamespace;
-                    return t.createElement(t.Fragment, null, t.createElement(c.Z, { description: P, includeOpenGraphMeta: !1, title: C }), t.createElement(u.Z, { canonical: (0, o.ju)("https://x.com/explore"), description: P, image: G, imageH: R, imageW: B, title: C, type: "article" }), t.createElement(f.Z, { entryConfiguration: Z, fab: b, getTabLink: this._getTabLink, history: n, initialPageNamespace: T, module: a, onBackClick: y ? this._handleBackClick : void 0, prerollDisplayLocation: D.Nw.OTHER, renderEmptyState: S, renderUnavailable: N, rightControl: g, selectedTabId: r, sidebarContent: _, timelinePrefix: E.uI, title: C, withBottomLoginSignupBar: !0, withDeferredView: !0, withSearchBox: x }), !1);
+                    return t.createElement(t.Fragment, null, t.createElement(c.Z, { description: C, includeOpenGraphMeta: !1, title: P }), t.createElement(u.Z, { canonical: (0, o.ju)("https://x.com/explore"), description: C, image: G, imageH: B, imageW: v, title: P, type: "article" }), t.createElement(f.Z, { entryConfiguration: Z, fab: b, getTabLink: this._getTabLink, history: n, initialPageNamespace: T, module: a, onBackClick: y ? this._handleBackClick : void 0, prerollDisplayLocation: D.Nw.OTHER, renderEmptyState: N, renderUnavailable: S, rightControl: g, selectedTabId: r, sidebarContent: x, timelinePrefix: E.uI, title: P, withBottomLoginSignupBar: !0, withDeferredView: !0, withSearchBox: _ }), !1);
                 }
             }
-            v.contextType = p.rC;
-            const L = x(v);
+            R.contextType = p.rC;
+            const L = _(R);
         },
         392027: (e, n, a) => {
             a.d(n, { Z: () => s });
@@ -333,6 +332,19 @@
             const l = o.default.create((e) => ({ root: { borderWidth: 0, height: e.spaces.space48, boxShadow: e.boxShadows.small }, iconOnly: { height: e.spaces.space56, width: e.spaces.space56 } })),
                 s = r;
         },
+        98440: (e, n, a) => {
+            a.r(n), a.d(n, { default: () => s });
+            var t = a(202784),
+                d = a(890601),
+                o = a(783427),
+                r = a(347101);
+            const l = (e = {}) => {
+                const { direction: n } = (0, o.Z)();
+                return (0, d.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: n });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Explore.94dd22ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Explore.9d2f188a.js.map

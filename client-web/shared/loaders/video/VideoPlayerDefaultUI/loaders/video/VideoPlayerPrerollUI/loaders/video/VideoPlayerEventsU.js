@@ -339,7 +339,7 @@
         272879: (e, t, s) => {
             s.d(t, { IG: () => a, JN: () => l, V4: () => c, i2: () => r });
             var o = s(323265),
-                i = s(393058),
+                i = s(401339),
                 n = s(896988);
             const r = o.ZP.isMobileOS() && i.Z.isTouchSupported(),
                 a = Object.freeze({ A11YHook: "VideoPlayerDefaultUI-A11YHook", ControlBar: "VideoPlayerDefaultUI-ControlBar", HashtagHighlight: "VideoPlayerDefaultUI-HashtagHighlight", Root: "VideoPlayerDefaultUI-Root", VideoCTA: "VideoPlayerDefaultUI-VideoCTA" });
@@ -371,4 +371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU.300fd85a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU.b45cadea.js.map

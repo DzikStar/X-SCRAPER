@@ -1279,26 +1279,32 @@
                 s("fc7db594", "Profil összegzése"),
                 s("c3f04d9c", "Gondolkozik"),
                 s("cbdddb0a", "Befejezve"),
-                s("e98cc293", function (e) {
-                    return "Keresés erre: " + e.query;
+                s("ie2bbeed", function (e) {
+                    return 'Searching for "' + e.query + '"';
                 }),
                 s("b0d1e205", function (e) {
                     return "Keresés erre: **„" + e.query + "”**";
                 }),
-                s("i2e0f4d7", function (e) {
-                    return "Böngészés a(z) " + e.url + " oldalon erre: " + e.query;
+                s("bf970edd", function (e) {
+                    return 'Searching 𝕏 for "' + e.query + '"';
+                }),
+                s("g008d475", function (e) {
+                    return "Browsing " + e.url;
+                }),
+                s("c91e3971", function (e) {
+                    return "Browsing " + e.url + ' for "' + e.query + '"';
                 }),
                 s("acb9b845", function (e) {
                     return "A(z) " + e.url + " böngészése ezt keresve: **„" + e.query + "”**";
                 }),
-                s("ef261d8d", function (e) {
-                    return "@" + e.username + " bejegyzéseinek keresése";
+                s("j9006405", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username;
                 }),
-                s("f7d9cfb9", function (e) {
-                    return "@" + e.username + " bejegyzéseinek keresése ezzel kapcsolatban: " + e.query;
+                s("a2dd07e5", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username + ' for "' + e.query + '"';
                 }),
-                s("bec7eb11", function (e) {
-                    return "@" + e.username + " bejegyzéseinek keresése ezzel kapcsolatban: **„" + e.query + "”**";
+                s("e99fb7a3", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username + ' for **"' + e.query + '"**';
                 }),
                 s("ead81122", "Valami hiba történt; frissíts az újracsatlakozáshoz, hogy próbálkozz újra!"),
                 s("f808a13a", "Túllépted az értékelési korlátot. Várj pár pillanatot, és próbálkozz újra!"),
@@ -1344,7 +1350,7 @@
                 s("b7cb4fab", "A(z)"),
                 s("e0bffbf8", "About automatic translation"),
                 s("e839db3a", "Kihagyás"),
-                s("a15585b4", "Language Settings"),
+                s("a15585b4", "Nyelvi beállítások"),
                 s("d4c339b9", function (e) {
                     return e.fullName + " bejegyzése (@" + e.screenName + ")";
                 }),
@@ -1914,10 +1920,10 @@
                 s("jcd5ee8a", "Blokk szerkesztése"),
                 s("a8f09fb8", "Blokk törlése"),
                 s("i89195ea", "Elválasztó"),
-                s("da8ac57c", "Felirat szerkesztése"),
-                s("a8fdd09c", "Cikk közzététele"),
-                s("d8047cc8", "Közzététel");
-            s("ff7ddca2", "A Cikked a közzétételt követően bejegyzésként jelenik meg. Ezenkívül a profilod Cikkek részén is megtalálod."),
+                s("da8ac57c", "Felirat szerkesztése");
+            s("a8fdd09c", "Cikk közzététele"),
+                s("d8047cc8", "Közzététel"),
+                s("ff7ddca2", "A Cikked a közzétételt követően bejegyzésként jelenik meg. Ezenkívül a profilod Cikkek részén is megtalálod."),
                 s("ef34d7be", "A célközönség és a válaszok beállításai a cikk közzététele után már nem módosíthatók."),
                 s("e52d4998", "Célközönség kiválasztása"),
                 s("d7985b24", "Válaszd ki, hogy ki válaszolhat erre a Cikkre"),
@@ -2970,10 +2976,10 @@
                 s("bc6efc72", "Adatvédelmi irányelvek"),
                 s("h3161192", "Cookie-kra vonatkozó irányelv"),
                 s("a7de64de", "Hirdetési információk"),
-                s("jb0a4c36", "Blog"),
-                s("ce6d095a", "Karrier"),
-                s("e0adec82", "Márkaanyagok");
-            s("df1b7550", "Marketing"),
+                s("jb0a4c36", "Blog");
+            s("ce6d095a", "Karrier"),
+                s("e0adec82", "Márkaanyagok"),
+                s("df1b7550", "Marketing"),
                 s("he258678", "X üzleti célra"),
                 s("c6f58084", "Fejlesztők"),
                 s("d83f18d2", "Könyvtár"),
@@ -3882,10 +3888,10 @@
                 s("c371fb9a", "Bezárás"),
                 s("c0ce822e", "Mikrofon beállításai"),
                 s("a2bf8b8a", "Átváltás hallgatásra"),
-                s("caa8d928", "Zajcsökkentés váltása"),
-                s("b5d88f0c", "Csak munkatársak"),
-                s("c855ab8e", "Csak előfizetőknek");
-            s("ddeb0a3c", "Itt a Közösség. Szimpatikusak az emberek? Nézz szét!"),
+                s("caa8d928", "Zajcsökkentés váltása");
+            s("b5d88f0c", "Csak munkatársak"),
+                s("c855ab8e", "Csak előfizetőknek"),
+                s("ddeb0a3c", "Itt a Közösség. Szimpatikusak az emberek? Nézz szét!"),
                 s("e111f531", function (e) {
                     return e.count + " ember hallgatta";
                 }),
@@ -4152,36 +4158,39 @@
                 }),
                 s("ed93de0c", "Bejegyzés elemzése"),
                 s("d1d92e40", "További részletek"),
+                s("fbc79f6a", "Csevegési előzmények"),
                 s("a6e89af8", "Nyílt beszélgetés"),
                 s("ica55d24", "Új csevegés"),
-                s("f794af9a", "Szórakoztató mód"),
-                s("eccf9fea", "Normál mód"),
+                s("b61ad410", "Előzmények"),
+                s("b3de2628", "Nem érhetők el csevegési előzmények"),
+                s("acfbfb28", "Itt jelennek meg a jövőbeni beszélgetéseid."),
+                s("g02dacc0", "Ma"),
+                s("c6e845c0", "Tegnap"),
+                s("i1147548", "Grok-előzmények keresése"),
+                s("ab437026", "Nem találhatók beszélgetések"),
+                s("e12569ec", "Próbálj meg valami mást keresni."),
+                s("hb52cc4a", "Kérjük, próbáld meg újra később!"),
+                s("d4eb0e26", "Átnevezés"),
+                s("c64975ea", "Még nem jelöltél meg egyetlen beszélgetést sem kedvencként"),
+                s("a3e3db6e", "Kattints a csillagra azon csevegések mentéséhez, amelyeket gyakran olvasol"),
+                s("f4ae77ac", "Nincsenek képelőzmények"),
+                s("d57d337e", "A generált képeid itt jelennek majd meg."),
+                s("j826e722", "Kép mentése"),
+                s("a9325f10", "Kép másolása"),
+                s("g0b12442", "A kép másolása sikertelen"),
+                s("edd0c172", "Kép közzététele"),
+                s("d1d3a41a", "Kép szerkesztése"),
+                s("c26b9b9c", "Fájl"),
+                s("g10600b0", "Menü"),
                 s("g7b1c574", "Alapértelmezés visszaállítása"),
                 s("f388a7ec", "DeepSearch"),
                 s("ab1eb384", "Válaszd ki a kívánt keresési módot!"),
                 s("i330e54c", "Speciális keresés és érvelés"),
                 s("fdcce108", "DeeperSearch"),
                 s("ac64b674", "Bővített keresés, hatékonyabb érvelés"),
-                s("j22655f2", "Kérdezz bármit"),
-                s("h0681e3e", "Beszélgess Grokkal, az AI-segédünkkel!"),
-                s("d593fd78", "Választ adhat a kérdéseidre, kereshetsz vele az X-en és képeket generálhatsz"),
-                s("d0205a24", "Tényellenőrzés"),
-                s("ed4177c4", "Előfordulhat, hogy a Grok magabiztosan tényszerűen téves információkat közöl, rosszul foglalja össze az információkat vagy kihagy bizonyos tartalmakat. Függetlenül ellenőrizz minden információt."),
-                s("c0ff98f8", "Az AI betanítása és testreszabása"),
-                s("f1a8218a", "Felhasználhatjuk az X-beli adataidat, illetve az interakcióidat, a bevitt információkat és a Groktól kapott eredményeket a modell betanítására, finomhangolására és a Grok által nyújtott felhasználói élmény testreszabására. Az X beállításaiban ezt kikapcsolhatod. További tudnivalókért látogass el a Segítőközpontba."),
-                s("bcbf5b6e", "Megosztás"),
-                s("j7b5c844", "Te vagy a felelős az általad nyilvánosan megosztott beszélgetésekért. Ne tégy közzé veled vagy másokkal kapcsolatos érzékeny vagy bizalmas információkat a Grokkal folytatott beszélgetéseidben (lásd a Segítőközpontot)."),
-                s("c9f7c196", "Segítőközpont"),
+                s("a2697040", "Írd le, hogy mit szeretnél megváltoztatni a képen"),
                 s("c65f7308", "A kiszolgálók leterheltek"),
                 s("f2a8655e", "A Grok speciális eszközei jelenleg nem érhetők el."),
-                s("c26b9b9c", "Fájl"),
-                s("g10600b0", "Menü"),
-                s("j826e722", "Kép mentése"),
-                s("a9325f10", "Kép másolása"),
-                s("g0b12442", "A kép másolása sikertelen"),
-                s("edd0c172", "Kép közzététele"),
-                s("d1d3a41a", "Kép szerkesztése"),
-                s("a2697040", "Írd le, hogy mit szeretnél megváltoztatni a képen"),
                 s("ge1cefc4", "Eszközök"),
                 s("e9b6d404", "Milyen keresőeszközökhöz kell a Groknak hozzáférnie?"),
                 s("h15dce2e", "Speciális beállítások"),
@@ -4196,60 +4205,25 @@
                 s("e4ae6abe", "Kérd meg a Grokot, hogy alakítsa át a képedet"),
                 s("e8ade5e2", "Válassz személyiséget"),
                 s("b5df32b0", "Grokozz valamit"),
+                s("dab087ee", "Csevegések"),
+                s("a911623c", "Képek"),
+                s("f794af9a", "Szórakoztató mód"),
+                s("eccf9fea", "Normál mód"),
+                s("j22655f2", "Kérdezz bármit"),
+                s("h0681e3e", "Beszélgess Grokkal, az AI-segédünkkel!"),
+                s("d593fd78", "Választ adhat a kérdéseidre, kereshetsz vele az X-en és képeket generálhatsz"),
+                s("d0205a24", "Tényellenőrzés"),
+                s("ed4177c4", "Előfordulhat, hogy a Grok magabiztosan tényszerűen téves információkat közöl, rosszul foglalja össze az információkat vagy kihagy bizonyos tartalmakat. Függetlenül ellenőrizz minden információt."),
+                s("c0ff98f8", "Az AI betanítása és testreszabása"),
+                s("f1a8218a", "Felhasználhatjuk az X-beli adataidat, illetve az interakcióidat, a bevitt információkat és a Groktól kapott eredményeket a modell betanítására, finomhangolására és a Grok által nyújtott felhasználói élmény testreszabására. Az X beállításaiban ezt kikapcsolhatod. További tudnivalókért látogass el a Segítőközpontba."),
+                s("bcbf5b6e", "Megosztás"),
+                s("j7b5c844", "Te vagy a felelős az általad nyilvánosan megosztott beszélgetésekért. Ne tégy közzé veled vagy másokkal kapcsolatos érzékeny vagy bizalmas információkat a Grokkal folytatott beszélgetéseidben (lásd a Segítőközpontot)."),
+                s("c9f7c196", "Segítőközpont"),
                 s("fb3b9776", "A Grok által adott információkat ez a felhasználó testreszabta."),
-                s("ca93f2ee", "Ezt az üzenetet törölték."),
-                s("b8c06820", "Szöveg másolása"),
-                s("ca0f5894", "Nem tetszik"),
-                s("ja8d189e", "Szöveges választ akartam"),
-                s("e951f04e", "Képre volt szükségem"),
-                s("c503b35e", "Másik képre volt szükségem"),
-                s("d4371c92", "A kód helytelen"),
-                s("dbe8586e", "Másik kódra volt szükségem"),
-                s("e360eb4a", "Nem kértem kódot"),
-                s("a18657ca", "Helytelen számítás"),
-                s("b8b86300", "Nem kértem számítást"),
-                s("e4c34788", "Helytelen válasz"),
-                s("b220a8c8", "Másra volt szükségem"),
-                s("b115fd18", "Elfogult válasz"),
-                s("dc637214", "Rossz stílus/hangnem"),
-                s("f02e6d42", "Keresni akartam"),
-                s("bbec6bba", "Hibás keresési találatok"),
-                s("b494d088", "Nem akartam keresni"),
-                s("a44974f2", "Nem érti a képet"),
-                s("bd44a8a8", "Kérjük, részletezd!"),
-                s("fcdbe764", "Hogyan javulhat a Grok?"),
-                s("bb6adb22", "Írd le a hibát"),
-                s("h0fa15f2", "Köszönjük a visszajelzést!"),
-                s("d700b268", "Hivatkozott csevegések"),
-                s("cd7bdab2", "A beszélgetések elfelejtése nem törli azokat az előzményekből"),
-                s("f21b84de", "Elfelejtett hivatkozása"),
-                s("i52a9cb8", "Nincsenek megjeleníthető előzmények."),
-                s("d9d36880", "Elfelejt"),
-                s("g02dacc0", "Ma"),
-                s("c6e845c0", "Tegnap"),
-                s("a5fa4a86", "jan."),
-                s("c51724a4", "feb."),
-                s("j244ceb2", "márc."),
-                s("b22b12e0", "ápr."),
-                s("h3023cac", "május"),
-                s("b10dbffa", "jún."),
-                s("c81da1b6", "júl."),
-                s("d4e4d3ce", "aug."),
-                s("c3418f9a", "szept."),
-                s("b64dada6", "okt."),
-                s("ad24ec20", "nov."),
-                s("c7902252", "dec."),
-                s("idf94bac", "Újragenerálás"),
-                s("f7614f92", "Keresés nélkül"),
-                s("c5ade3ba", "Kereséssel"),
-                s("c16e5b1a", "Képgenerálás nélkül"),
-                s("i2ca65fa", "Képgenerálással"),
-                s("d3927f88", "Hivatkozás posztolása"),
-                s("be37ecd4", "Nem sikerült a vágólapra másolás"),
-                s("h708a4c0", "Beszélgetés megosztása"),
-                s("g06a67e2", "A megosztott oldalon eddig a pontig láthatóak lesznek az üzenetek"),
-                s("a0428662", "Nem hasznos"),
-                s("fe4fd310", "Hasznos"),
+                s("b0a889d4", "As Image"),
+                s("a111fb48", "As Spreadsheet"),
+                s("bccc65f0", "Grok can make mistakes. Always check original sources."),
+                s("bd202fe6", "Generating card"),
                 s("bfd161bc", "Összehasonlítás"),
                 s("j5dcf1b2", "Frissítve"),
                 s("a50aaa10", "Nyitás előtt"),
@@ -4281,6 +4255,9 @@
                 s("dd679fb1", function (e) {
                     return "Minden idők legalacsonyabbja" + e.ttc_stock_details;
                 }),
+                s("ha9c4cf8", "View source"),
+                s("ecad5d78", "Save image"),
+                s("d2d1d398", "Másolva!"),
                 s("a22063d2", "Oszd meg a tartózkodási helyed a fokozott pontosság érdekében."),
                 s("db3248a8", "Tartózkodási hely betöltése"),
                 s("ffe0e588", "Tartózkodási hely megosztása"),
@@ -4314,6 +4291,65 @@
                 s("d66bf142", "csüt"),
                 s("dc17968a", "pén"),
                 s("j310a2d6", "szo"),
+                s("afa2a58e", "See all posts"),
+                s("fc83e7e2", "See all users"),
+                s("df601d92", "Relevant Users"),
+                s("b001fa12", "Source query"),
+                s("db6c20cf", function (e) {
+                    return "Show all (" + e.count + ")";
+                }),
+                s("d7cb5408", "Kapcsolód weboldalak"),
+                s("ca93f2ee", "Ezt az üzenetet törölték."),
+                s("b8c06820", "Szöveg másolása"),
+                s("ca0f5894", "Nem tetszik"),
+                s("ja8d189e", "Szöveges választ akartam"),
+                s("e951f04e", "Képre volt szükségem"),
+                s("c503b35e", "Másik képre volt szükségem"),
+                s("d4371c92", "A kód helytelen"),
+                s("dbe8586e", "Másik kódra volt szükségem"),
+                s("e360eb4a", "Nem kértem kódot"),
+                s("a18657ca", "Helytelen számítás"),
+                s("b8b86300", "Nem kértem számítást"),
+                s("e4c34788", "Helytelen válasz"),
+                s("b220a8c8", "Másra volt szükségem"),
+                s("b115fd18", "Elfogult válasz"),
+                s("dc637214", "Rossz stílus/hangnem"),
+                s("f02e6d42", "Keresni akartam"),
+                s("bbec6bba", "Hibás keresési találatok"),
+                s("b494d088", "Nem akartam keresni"),
+                s("a44974f2", "Nem érti a képet"),
+                s("bd44a8a8", "Kérjük, részletezd!"),
+                s("fcdbe764", "Hogyan javulhat a Grok?"),
+                s("bb6adb22", "Írd le a hibát"),
+                s("h0fa15f2", "Köszönjük a visszajelzést!"),
+                s("d700b268", "Hivatkozott csevegések"),
+                s("cd7bdab2", "A beszélgetések elfelejtése nem törli azokat az előzményekből"),
+                s("f21b84de", "Elfelejtett hivatkozása"),
+                s("i52a9cb8", "Nincsenek megjeleníthető előzmények."),
+                s("d9d36880", "Elfelejt"),
+                s("a5fa4a86", "jan."),
+                s("c51724a4", "feb."),
+                s("j244ceb2", "márc."),
+                s("b22b12e0", "ápr."),
+                s("h3023cac", "május"),
+                s("b10dbffa", "jún."),
+                s("c81da1b6", "júl."),
+                s("d4e4d3ce", "aug."),
+                s("c3418f9a", "szept."),
+                s("b64dada6", "okt."),
+                s("ad24ec20", "nov."),
+                s("c7902252", "dec."),
+                s("idf94bac", "Újragenerálás"),
+                s("f7614f92", "Keresés nélkül"),
+                s("c5ade3ba", "Kereséssel"),
+                s("c16e5b1a", "Képgenerálás nélkül"),
+                s("i2ca65fa", "Képgenerálással"),
+                s("d3927f88", "Hivatkozás posztolása"),
+                s("be37ecd4", "Nem sikerült a vágólapra másolás"),
+                s("h708a4c0", "Beszélgetés megosztása"),
+                s("g06a67e2", "A megosztott oldalon eddig a pontig láthatóak lesznek az üzenetek"),
+                s("a0428662", "Nem hasznos"),
+                s("fe4fd310", "Hasznos"),
                 s("eaf55eb4", "Gondolkodás mutatása"),
                 s("b1ac6016", "DeepSearch befejezve"),
                 s("f766feca", "DeeperSearch befejezve"),
@@ -4331,23 +4367,23 @@
                 s("db832e38", "Engedélyezd az értesítéseket a böngésző beállításaiban"),
                 s("a910cac6", "Hiba történt az értesítések engedélyezésekor"),
                 s("be30b6ee", "A kapcsolat nem stabil"),
-                s("b52484b6", "Keresés folyamatban..."),
+                s("ge15b488", "Show thoughts"),
+                s("aa7c96bb", function (e) {
+                    return "További " + e.numResults + " megtekintése";
+                }),
                 s("a4d9dbfa", "Gondolatok"),
+                s("j1ab5f40", "Koppints ide az olvasáshoz"),
+                s("f5a2377e", "Gondolkodás eddig: "),
+                s("g3ce0132", "Eddig gondolkodott:"),
+                s("f8007364", "Nyisd ki a részletekért"),
+                s("ca53f780", "Részletek összecsukása"),
+                s("b52484b6", "Keresés folyamatban..."),
                 s("ib1c5475", function (e) {
                     return "Gondolkodás " + e.minutes + " p " + e.seconds + " mp-ig";
                 }),
                 s("a15d62db", function (e) {
                     return "Gondolkodás " + e.seconds + " mp-ig";
                 }),
-                s("d7cb5408", "Kapcsolód weboldalak"),
-                s("aa7c96bb", function (e) {
-                    return "További " + e.numResults + " megtekintése";
-                }),
-                s("j1ab5f40", "Koppints ide az olvasáshoz"),
-                s("f5a2377e", "Gondolkodás eddig: "),
-                s("g3ce0132", "Eddig gondolkodott:"),
-                s("f8007364", "Nyisd ki a részletekért"),
-                s("ca53f780", "Részletek összecsukása"),
                 s("ha8fbe22", "Generálj több képet Premium előfizetéssel"),
                 s("d95c232a", "Elérted a korlátot. Válts magasabb csomagra, hogy többet generálhass!"),
                 s("h2671312", "Még több Grok Premium+ előfizetéssel"),
@@ -4894,8 +4930,8 @@
                 s("fbc79a40", "Terek áttekintése"),
                 s("d077112a", "Tér statisztikái"),
                 s("cf3709da", "Állapot"),
-                s("e797dc32", "Streamelés ideje: "),
-                s("b649d8cc", "Csak előfizetők"),
+                s("e797dc32", "Streamelés ideje: ");
+            s("b649d8cc", "Csak előfizetők"),
                 s("j9282130", "Közvetítés ikonja"),
                 s("g629b8b0", "Időtúllépés"),
                 s("eb87323c", "Ez a kiválasztott időszak elemzési adatait mutatja az élő közvetítés óta."),
@@ -4924,8 +4960,8 @@
                 s("a532072a", "Nézők"),
                 s("d9508ab0", "megtekintés"),
                 s("d9f9dec0", "Tér megtekintése"),
-                s("h0c1f37a", "A Tér adatainak megtekintése");
-            s("e41fffbc", "A videóid teljes megtekintési ideje."),
+                s("h0c1f37a", "A Tér adatainak megtekintése"),
+                s("e41fffbc", "A videóid teljes megtekintési ideje."),
                 s("if2909ba", "Megtekintési idő"),
                 s("i0e5bf4c", "Saját videók"),
                 s("ed99baea", "Korai bétahozzáférés"),
@@ -5846,8 +5882,8 @@
                 s("hf68e810", "A Közösségi Megjegyzések egy program, amelynek célja a világ hatékonyabb informálásának biztosítása. A használatával az X felhasználói egymással együttműködve hasznos megjegyzéseket adhatnak az esetlegesen félrevezető bejegyzésekhez."),
                 s("jdb52860", "A közreműködők megjegyzéseket írnak és értékelnek"),
                 s("c104025c", "A közreműködők olyan felhasználók az X-en, mint amilyen Te is vagy, akik részt vesznek a tesztprogramban, hogy megjegyzéseket írhassanak és értékelhessenek. Minél több ember vesz részt, annál jobb lesz a program."),
-                s("j7872b8c", "Csak az emberek által hasznosként értékelt megjegyzések jelennek meg a bejegyzés mellett"),
-                s("fb59415e", "Ahhoz, hogy kontextusként megjelenjenek a bejegyzések mellett, a megjegyzéseket hasznosként kell értékelnie több, különböző nézőpontú embernek. Ezzel megelőzhető az előítéletek és a manipuláció előfordulása, és segít megtalálni azokat a megjegyzéseket, amelyek sokak számára hasznosak."),
+                s("j7872b8c", "Csak az emberek által hasznosként értékelt megjegyzések jelennek meg a bejegyzés mellett");
+            s("fb59415e", "Ahhoz, hogy kontextusként megjelenjenek a bejegyzések mellett, a megjegyzéseket hasznosként kell értékelnie több, különböző nézőpontú embernek. Ezzel megelőzhető az előítéletek és a manipuláció előfordulása, és segít megtalálni azokat a megjegyzéseket, amelyek sokak számára hasznosak."),
                 s("f9a44022", "Az X, mint vállalat, nem dönti el, hogy mi jelenjen meg: az emberek döntenek."),
                 s("gdf4fbb2", "Az X, mint vállalat, nem ír, nem értékel és nem moderál megjegyzéseket (kivéve, ha sértik az X szabályait). Úgy véljük, ez tisztességes és hatékony módszer arra, hogy az emberek közösen adhassanak hangot a véleményüknek, és olyan megjegyzéseket írhassanak, amelyek segítenek a mások hatékonyabb informálásában."),
                 s("cc720e6a", "A Közösségi Megjegyzések az adatok átláthatóságára épül"),
@@ -5878,8 +5914,8 @@
                     return "Nincs találat erre: " + e.query;
                 }),
                 s("f191a2ba", "Keresési beállításokban"),
-                s("a068008a", "A mappák jelenleg nem tölthetők be");
-            s("f075b0e8", "Mappa szerkesztése"),
+                s("a068008a", "A mappák jelenleg nem tölthetők be"),
+                s("f075b0e8", "Mappa szerkesztése"),
                 s("beba2a0e", "Új könyvjelzőmappa létrehozása"),
                 s("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
@@ -5924,7 +5960,6 @@
                 s("d7346632", "Még nem csatlakoztál egyetlen Közösséghez sem"),
                 s("b732a4cc", "Ha így teszel, a bejegyzése itt lesz látható."),
                 s("hff48914", "Jelenleg nem találhatók bejegyzések."),
-                s("hb52cc4a", "Kérjük, próbáld meg újra később!"),
                 s("e50e1bb0", "Üdvözöl a Közösségek!"),
                 s("i6829daa", "A Közösségek moderált beszélgetőcsoportok, amelyekben az X felhasználói kapcsolatba léphetnek egymással és megoszthatnak információkat"),
                 s("fc5c6914", "Ismerkedj meg hasonló érdeklődési körű emberekkel"),
@@ -6498,26 +6533,13 @@
                 s("e5f4eac0", "A tartalmaid könnyebben megtalálhatók lesznek, és megjelennek a keresési találatok és népszerű témák között."),
                 s("c7832a72", "Lépj kapcsolatba közvetlenül másokkal"),
                 s("i1ccd17a", "Privát üzenetet küldhetsz másoknak, akik nem követnek téged, úgy, hogy az üzeneted nem kerül automatikusan szűrésre."),
+                s("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
                 s("hc965308", "Szórakoztató"),
                 s("eb78b77e", "Szórakoztató mód"),
                 s("aa8ece10", "Próbáld ki a grok.com oldalt!"),
                 s("gb5fb7d0", "Fókusz mód"),
                 s("g5665caa", "Kilépés a Fókusz módból"),
                 s("a372681e", "Megosztási hivatkozás másolása"),
-                s("fbc79f6a", "Csevegési előzmények"),
-                s("b61ad410", "Előzmények"),
-                s("b3de2628", "Nem érhetők el csevegési előzmények"),
-                s("acfbfb28", "Itt jelennek meg a jövőbeni beszélgetéseid."),
-                s("i1147548", "Grok-előzmények keresése"),
-                s("ab437026", "Nem találhatók beszélgetések"),
-                s("e12569ec", "Próbálj meg valami mást keresni."),
-                s("d4eb0e26", "Átnevezés"),
-                s("c64975ea", "Még nem jelöltél meg egyetlen beszélgetést sem kedvencként"),
-                s("a3e3db6e", "Kattints a csillagra azon csevegések mentéséhez, amelyeket gyakran olvasol"),
-                s("f4ae77ac", "Nincsenek képelőzmények"),
-                s("d57d337e", "A generált képeid itt jelennek majd meg."),
-                s("dab087ee", "Csevegések"),
-                s("a911623c", "Képek"),
                 s("ae9cdac6", "Csevegési előzmények"),
                 s("b198a392", "Grok-beszélgetés"),
                 s("d16329b4", "Beszélgetés másolása"),
@@ -6868,8 +6890,8 @@
                 s("b2c213e0", "Túllépted a karakterkorlátot"),
                 s("d84e9c2a", "Ismertesd, hogy milyen típusú munkavégzés az elvárt a szerepkörben."),
                 s("bc8b300c", "Munkakör"),
-                s("d1eedb50", "Segíts a jelölteknek, hogy megértsék a munkakör által támogatott területet."),
-                s("eaf3ce64", "Csapat"),
+                s("d1eedb50", "Segíts a jelölteknek, hogy megértsék a munkakör által támogatott területet.");
+            s("eaf3ce64", "Csapat"),
                 s("b36cd50e", "Add meg azt az alapcsapatot, amellyel a jelöltek a felvételt követően együtt fognak dolgozni."),
                 s("d3a427ce", "Válaszd ki a szükséges tapasztalat szintjét."),
                 s("i7174442", "Munkakör leírása"),
@@ -6884,8 +6906,8 @@
                 s("c05176ec", "Ha ez egy helyhez kötött munka, akkor add meg a munkavégzés helyszínét. Ha távmunkáról van szó, írd le, hogy hol élő jelöltek jöhetnek szóba."),
                 s("d70c24d4", "Arra való, hogy a jelöltek könnyebben megkereshessék az álláshirdetéseidet."),
                 s("de1c4376", "Fizetési sáv"),
-                s("hf352d42", "Adj meg egy opcionális fizetési sávot, amit a pályázók láthatnak. Ha úgy döntesz, nem adod meg, ügyelj a fizetések átláthatóságával kapcsolatos törvényekre a toborzás helyén.");
-            s("ede7d0a2", "Pénznem"),
+                s("hf352d42", "Adj meg egy opcionális fizetési sávot, amit a pályázók láthatnak. Ha úgy döntesz, nem adod meg, ügyelj a fizetések átláthatóságával kapcsolatos törvényekre a toborzás helyén."),
+                s("ede7d0a2", "Pénznem"),
                 s("b925c18c", "Fizetés típusa"),
                 s("j3d242ce", "Érvénytelen sáv"),
                 s("f4d07bd2", "Adj meg opcionális adatokat, hogy a jelöltek könnyebben megtalálhassák az álláslehetőségeket a kereső segítségével."),
@@ -7840,31 +7862,7 @@
                 s("b5099e33", function (e) {
                     return "@" + e.screenName + " nem rendelkezik ellenőrzött követőkkel.";
                 }),
-                s("ec251f36", "Ha valaki, akit követsz, követi a felhasználót, az itt lesz látható."),
-                s("f8af4f48", "A követett felhasználói fiókok itt lesznek láthatók."),
-                s("fd0aad94", "Ha egy ellenőrzött felhasználó követi ezt a fiókot, akkor itt fog megjelenni."),
-                s("b84f6df1", function (e) {
-                    return "Ajándékozz Premium előfizetést " + e.percentage + "% kedvezménnyel korlátozott ideig";
-                }),
-                s("cfcac293", function (e) {
-                    return "Ajándékozás és fizetés " + e.price;
-                }),
-                s("d7a73450", "Csomag"),
-                s("hbd2c24e", "Ez a fiók jelenleg nem jogosult ajándékot kapni."),
-                s("f3fddc98", "Vásárlói feltételeket"),
-                s("cff9c889", "Tudj meg többet"),
-                s("c65dda96", "Az ajádnékodat elküldtük."),
-                s("f6e2a407", function (e) {
-                    return "Engedélyezed, hogy bárki láthassa az előfizetői jelvényedet, amikor @" + e.screenName + " bejegyzéseire válaszolsz";
-                }),
-                s("j8dedddd", function (e) {
-                    return "Ha kikapcsolod ezt, @" + e.screenName + " és az előfizetői látni fogják a jelvényedet, amikor @" + e.screenName + " csak előfizetőknek szóló bejegyzéseire válaszolsz. @" + e.screenName + " mindig látni fogja a jelvényedet.";
-                }),
-                s("c8a513f6", "Előfizetés visszavonása"),
-                s("ea000ec8", "Már törölted az Előfizetésedet?"),
-                s("d7b8387e", "Ha már lemondtad, nem kell mást tenned. Az Előfizetésed automatikusan lejár a számlázási ciklus végén."),
-                s("f4166d9a", "Le szeretnéd mondani az Előfizetésedet?"),
-                s("b74ff5fc", "Ha lemondod, az Előfizetésed automatikusan lejár a számlázási ciklus végén.");
+                s("ec251f36", "Ha valaki, akit követsz, követi a felhasználót, az itt lesz látható.");
             function n(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var s = t[a];
@@ -7903,7 +7901,31 @@
                     z(e, t)
                 );
             }
-            s("ee9efbc8", "Folytatás a lemondáshoz"),
+            s("f8af4f48", "A követett felhasználói fiókok itt lesznek láthatók."),
+                s("fd0aad94", "Ha egy ellenőrzött felhasználó követi ezt a fiókot, akkor itt fog megjelenni."),
+                s("b84f6df1", function (e) {
+                    return "Ajándékozz Premium előfizetést " + e.percentage + "% kedvezménnyel korlátozott ideig";
+                }),
+                s("cfcac293", function (e) {
+                    return "Ajándékozás és fizetés " + e.price;
+                }),
+                s("d7a73450", "Csomag"),
+                s("hbd2c24e", "Ez a fiók jelenleg nem jogosult ajándékot kapni."),
+                s("f3fddc98", "Vásárlói feltételeket"),
+                s("cff9c889", "Tudj meg többet"),
+                s("c65dda96", "Az ajádnékodat elküldtük."),
+                s("f6e2a407", function (e) {
+                    return "Engedélyezed, hogy bárki láthassa az előfizetői jelvényedet, amikor @" + e.screenName + " bejegyzéseire válaszolsz";
+                }),
+                s("j8dedddd", function (e) {
+                    return "Ha kikapcsolod ezt, @" + e.screenName + " és az előfizetői látni fogják a jelvényedet, amikor @" + e.screenName + " csak előfizetőknek szóló bejegyzéseire válaszolsz. @" + e.screenName + " mindig látni fogja a jelvényedet.";
+                }),
+                s("c8a513f6", "Előfizetés visszavonása"),
+                s("ea000ec8", "Már törölted az Előfizetésedet?"),
+                s("d7b8387e", "Ha már lemondtad, nem kell mást tenned. Az Előfizetésed automatikusan lejár a számlázási ciklus végén."),
+                s("f4166d9a", "Le szeretnéd mondani az Előfizetésedet?"),
+                s("b74ff5fc", "Ha lemondod, az Előfizetésed automatikusan lejár a számlázási ciklus végén."),
+                s("ee9efbc8", "Folytatás a lemondáshoz"),
                 s("c5d9c77a", "Úgy tűnik, volt egy kis gond, de ne aggódj, ez nem a te hibád. Zárd be ezt az ablakot, és próbálkozz újra!"),
                 s("jda53c24", "Az Előfizetésedet az Apple App Store áruházban mondhatod le."),
                 s("g0a7a53e", "Az Előfizetésedet a Google Play Áruházban mondhatod le."),
@@ -8874,8 +8896,8 @@
                 s("faf9f484", "Hirdetés"),
                 s("ae2ea9e7", function (e) {
                     return e.advertiserName + " hirdetése";
-                }),
-                s("hea01798", "Keresősáv"),
+                });
+            s("hea01798", "Keresősáv"),
                 s("f8a09386", "Megtekintés a Periscope-on"),
                 s("gf2b6eee", "Kép a képben"),
                 s("b3160a69", function (e) {
@@ -8900,10 +8922,10 @@
                 }),
                 s("g60001bb", function (e) {
                     return "A(z) " + e.advertiserName + " megtekintése";
-                });
-            s("dff1ddd9", function (e) {
-                return "A(z) " + e.advertiserName + " meglátogatása";
-            }),
+                }),
+                s("dff1ddd9", function (e) {
+                    return "A(z) " + e.advertiserName + " meglátogatása";
+                }),
                 s("b0b22805", function (e) {
                     return "A(z) " + e.advertiserName + " megtekintése";
                 }),
@@ -10164,7 +10186,7 @@
                         {
                             key: "b6411d33",
                             get: function () {
-                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
+                                return ["Az X használata és a nyelvi beállítások alapján a(z) " + this.props.sourceLang + " nyelvet a Grok automatikusan lefordítja. Az automatikusan lefordított nyelvek kiválasztásához nyisd meg a ", " részt"];
                             },
                         },
                         {
@@ -13210,9 +13232,9 @@
                 (g.b175922847 = h({ 1: g("hu").numberFormatter({ raw: "0" }), 2: g("hu").numberFormatter({ raw: "00" }) }, { pattern: "H:mm", timeSeparator: ":" })),
                 (g.b1056177837 = h({ 1: g("hu").numberFormatter({ raw: "0" }), 2: g("hu").numberFormatter({ raw: "00" }) }, { pattern: "E h:mm a", timeSeparator: ":", days: { E: { 1: { sun: "V", mon: "H", tue: "K", wed: "Sze", thu: "Cs", fri: "P", sat: "Szo" } } }, dayPeriods: { am: "de.", pm: "du." } })),
                 (g.b13495036 = h({ 1: g("hu").numberFormatter({ raw: "0" }) }, { pattern: "y. MMMM", timeSeparator: ":", months: { M: { 4: { 1: "január", 2: "február", 3: "március", 4: "április", 5: "május", 6: "június", 7: "július", 8: "augusztus", 9: "szeptember", 10: "október", 11: "november", 12: "december" } } } })),
+                (g.a580220615 = h({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "vasárnap", mon: "hétfő", tue: "kedd", wed: "szerda", thu: "csütörtök", fri: "péntek", sat: "szombat" } } } })),
                 (g.b105352685 = h({ 1: g("hu").numberFormatter({ raw: "0" }) }, { pattern: "y. MMM d.", timeSeparator: ":", months: { M: { 3: { 1: "jan.", 2: "febr.", 3: "márc.", 4: "ápr.", 5: "máj.", 6: "jún.", 7: "júl.", 8: "aug.", 9: "szept.", 10: "okt.", 11: "nov.", 12: "dec." } } } })),
                 (g.b673024825 = h({}, { pattern: "LLLL", timeSeparator: ":", months: { L: { 4: { 1: "január", 2: "február", 3: "március", 4: "április", 5: "május", 6: "június", 7: "július", 8: "augusztus", 9: "szeptember", 10: "október", 11: "november", 12: "december" } } } })),
-                (g.a580220615 = h({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "vasárnap", mon: "hétfő", tue: "kedd", wed: "szerda", thu: "csütörtök", fri: "péntek", sat: "szombat" } } } })),
                 (g.b1063746713 = y(g("hu").dateToPartsFormatter({ skeleton: "MMMd" }))),
                 (g.a738472534 = y(g("hu").dateToPartsFormatter({ skeleton: "yMMMd" }))),
                 (g.a1101834745 = y(g("hu").dateToPartsFormatter({ skeleton: "hm" }))),
@@ -13232,9 +13254,9 @@
                 (g.a2013861546 = y(g("hu").dateToPartsFormatter({ time: "short" }))),
                 (g.b1207351204 = y(g("hu").dateToPartsFormatter({ skeleton: "Ehm" }))),
                 (g.a737787341 = y(g("hu").dateToPartsFormatter({ skeleton: "yMMMM" }))),
+                (g.a188813534 = y(g("hu").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (g.b941513238 = y(g("hu").dateToPartsFormatter({ date: "medium" }))),
                 (g.b1064431906 = y(g("hu").dateToPartsFormatter({ skeleton: "MMMM" }))),
-                (g.a188813534 = y(g("hu").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (g.a6329114 = u(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "{0} nap múlva", "relativeTimePattern-count-other": "{0} nap múlva" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "{0} nappal ezelőtt", "relativeTimePattern-count-other": "{0} nappal ezelőtt" }, "relative-type--2": "tegnapelőtt", "relative-type--1": "tegnap", "relative-type-0": "ma", "relative-type-1": "holnap", "relative-type-2": "holnapután" })),
                 (g.b512136449 = v(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0} per {1}", unitProperties: { displayName: "másodperc", one: "{0} másodperc", other: "{0} másodperc", perUnitPattern: "{0}/másodperc" } })),
                 (g.a1895867551 = v(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0} per {1}", unitProperties: { displayName: "perc", one: "{0} perc", other: "{0} perc", perUnitPattern: "{0}/perc" } })),
@@ -13366,14 +13388,14 @@
                 s("b6ca7bcb", g.a2013861546),
                 s("h0e4cdf5", g.b1207351204),
                 s("g727ddcf", g.a737787341),
+                s("f3b9b9a7", g.a188813534),
                 s("h3629783", g.b941513238),
                 s("a20c68af", g.b1064431906),
                 s("ja781451", g.a1203323428),
                 s("cfa1a7b9", g.b1221088121),
-                s("f3b9b9a7", g.a188813534),
                 s("eefcd267", g.b1775819831),
                 s("fa8afc43", g.a13047146);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.f2bde59a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.a592c51a.js.map

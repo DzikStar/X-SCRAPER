@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.ImmersiveMediaViewer", "bundle.AudioSpaceDetail"],
+    ["bundle.ImmersiveMediaViewer"],
     {
         349035: (e, t, o) => {
             o.d(t, { Z: () => a });
@@ -207,7 +207,7 @@
             }
         },
         519125: (e, t, o) => {
-            o.d(t, { Mu: () => E, ZP: () => S });
+            o.d(t, { Mu: () => S, ZP: () => E });
             var n = o(662678),
                 r = o(769471),
                 a = o(337637),
@@ -232,7 +232,7 @@
             let v;
             const C = Object.freeze({ Default: "ui_defaultLabel", TransparentCursor: "ui_transparentCursor" }),
                 P = { ...(0, g.G)({}), [d.ZP.Tweet]: (0, y.Z)({ hideConversationControlsEducationText: !0, withMuteConversation: !0 }) },
-                S = ({ changeDropdownState: e, hideReplyContextMode: t, isCurrentUserRootAuthor: o, isReaderMode: n, isTransparentCursorsEnabled: a, replyDropdownSelection: s, rootTweetAuthorId: i, tweetTextSize: c, withFocalTweetMedia: y, withRuxInjections: g }) =>
+                E = ({ changeDropdownState: e, hideReplyContextMode: t, isCurrentUserRootAuthor: o, isReaderMode: n, isTransparentCursorsEnabled: a, replyDropdownSelection: s, rootTweetAuthorId: i, tweetTextSize: c, withFocalTweetMedia: y, withRuxInjections: g }) =>
                     (0, r.Z)({}, P, {
                         [d.ZP.SelfThreadTweetComposer]: b.Z,
                         [d.ZP.Tweet]: {
@@ -301,7 +301,7 @@
                         [d.ZP.TimelineCursor]: (0, m.Z)({ withRuxInjections: g }),
                         [d.ZP.ThreadHeader]: f.Z,
                     }),
-                E = ({ contextTweetId: e, contextualClientEventInfo: t, focalTweetId: o, promotedContent: r, showOnlyRelevantReplies: l, socialContext: c, topicFollowPrompt: h }) => {
+                S = ({ contextTweetId: e, contextualClientEventInfo: t, focalTweetId: o, promotedContent: r, showOnlyRelevantReplies: l, socialContext: c, topicFollowPrompt: h }) => {
                     const p = (e) => (e.type === d.ZP.Tweet && e.content.id === o) || (e.type === d.ZP.Tombstone && !!e.content && !!e.content.tweet && e.content.tweet.id === o);
                     return (o) => {
                         const m = (0, a.Z)(o, p);
@@ -342,7 +342,7 @@
                 k = (e, t) => ({ ...e, conversationPosition: { isStart: t, isEnd: !1, position: "ancestor" } });
         },
         927192: (e, t, o) => {
-            o.d(t, { Z: () => S });
+            o.d(t, { Z: () => E });
             var n = o(202784),
                 r = o(111677),
                 a = o.n(r),
@@ -416,7 +416,7 @@
                 }
             }
             (P.defaultProps = { withFocalTweetMedia: !0 }), (P.contextType = m.rC);
-            const S = g(P);
+            const E = g(P);
         },
         438965: (e, t, o) => {
             o.d(t, { FE: () => a, Hx: () => d, Oj: () => r, P3: () => l, QO: () => i, j: () => s });
@@ -495,8 +495,8 @@
                 v = o(933794),
                 C = o(579051),
                 P = o(719536),
-                S = o(476984),
-                E = o.n(S),
+                E = o(476984),
+                S = o.n(E),
                 _ = o(214997),
                 Z = o(837880),
                 x = o(908478),
@@ -539,7 +539,7 @@
                 }
             }
             const H = i.default.supports("height: 100dvh");
-            class B extends n.Component {
+            class U extends n.Component {
                 constructor(e) {
                     super(e),
                         (this._scrollRef = n.createRef()),
@@ -609,17 +609,17 @@
                             { style: { height: e, maxHeight: e } },
                             n.createElement(
                                 _.Z,
-                                { onScroll: this._handleScroll, ref: this._scrollRef, scrollEventThrottle: 16, showsHorizontalScrollIndicator: !1, showsVerticalScrollIndicator: !1, style: U.scrollView, testID: "vss-scroll-view" },
+                                { onScroll: this._handleScroll, ref: this._scrollRef, scrollEventThrottle: 16, showsHorizontalScrollIndicator: !1, showsVerticalScrollIndicator: !1, style: B.scrollView, testID: "vss-scroll-view" },
                                 this.props.list.map((o, r) => {
                                     const s = Math.abs(t - r) <= 1;
-                                    return n.createElement(a.Z, { key: o.id, style: { height: e, maxHeight: e, width: "100%" } }, n.createElement(a.Z, { style: U.scrollSnapItem }, n.createElement(a.Z, { style: U.scrollSnapItemInner }, s && n.createElement(N, { item: o, key: o.id }))));
+                                    return n.createElement(a.Z, { key: o.id, style: { height: e, maxHeight: e, width: "100%" } }, n.createElement(a.Z, { style: B.scrollSnapItem }, n.createElement(a.Z, { style: B.scrollSnapItemInner }, s && n.createElement(N, { item: o, key: o.id }))));
                                 }),
                             ),
                         ),
                     );
                 }
                 shouldComponentUpdate(e, t) {
-                    return !E()(this.props, e) || !(0, x.Z)(this.state, t);
+                    return !S()(this.props, e) || !(0, x.Z)(this.state, t);
                 }
                 componentDidMount() {
                     const e = new URLSearchParams(window.location.search).get("currentTweet");
@@ -634,8 +634,8 @@
                     t >= 0 && this.scrollToIndex(t);
                 }
             }
-            const U = i.default.create(() => ({ scrollView: { overflowY: "auto", scrollSnapType: "y mandatory", height: "100%" }, scrollSnapItem: { width: "100%", scrollSnapAlign: "start", scrollSnapStop: "always" }, scrollSnapItemInner: { height: window.innerHeight, width: "100%" } })),
-                O = (0, k.Z)((0, A.Z)(B)),
+            const B = i.default.create(() => ({ scrollView: { overflowY: "auto", scrollSnapType: "y mandatory", height: "100%" }, scrollSnapItem: { width: "100%", scrollSnapAlign: "start", scrollSnapStop: "always" }, scrollSnapItemInner: { height: window.innerHeight, width: "100%" } })),
+                O = (0, k.Z)((0, A.Z)(U)),
                 L = { triggerCause: P.Z.MOVEMENT };
             class V extends n.PureComponent {
                 constructor(e, t) {
@@ -703,8 +703,8 @@
                 K = o(810641),
                 z = o(952793),
                 W = o(383186),
-                q = o(503229),
-                G = o(466015),
+                G = o(503229),
+                q = o(466015),
                 Y = o(740025),
                 J = o(750085),
                 Q = o(218951);
@@ -763,8 +763,8 @@
                                             o.e("icons.2"),
                                             o.e("icons.18"),
                                             o.e("icons.9"),
-                                            o.e("icons.1"),
                                             o.e("icons.6"),
+                                            o.e("icons.1"),
                                             o.e("modules.common-e907d115"),
                                             o.e("modules.common-e019dbda"),
                                             o.e("icons.14"),
@@ -786,14 +786,6 @@
                                             o.e("icons.27"),
                                             o.e("icons.19"),
                                             o.e("icons.0"),
-                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
-                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
-                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
-                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
-                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
-                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
-                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
-                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -813,6 +805,13 @@
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
+                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
+                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
+                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
+                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
+                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
+                                            o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
                                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
@@ -820,12 +819,10 @@
                                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
                                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
-                                            o.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                                             o.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                                             o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                                             o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
-                                            o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
-                                            o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
+                                            o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
                                             o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                                             o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
                                             o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
@@ -862,7 +859,7 @@
                         [g, I] = n.useState(null),
                         [M, v] = n.useState(!1),
                         [C, P] = n.useState(!1),
-                        [S, E] = n.useState(!1),
+                        [E, S] = n.useState(!1),
                         [_, Z] = n.useState(!0),
                         [x, R] = n.useState(new Set()),
                         { width: k } = r.Z.get("screen");
@@ -895,9 +892,9 @@
                         ),
                         N = n.useCallback(
                             (e) => {
-                                E(e);
+                                S(e);
                             },
-                            [E],
+                            [S],
                         ),
                         H = n.useCallback(
                             (e) => {
@@ -905,8 +902,8 @@
                             },
                             [Z],
                         ),
-                        B = n.useMemo(() => (y && "profile" === m ? ee(f) : X(f, D)), [m, f, D, y]),
-                        U = n.useMemo(() => {
+                        U = n.useMemo(() => (y && "profile" === m ? ee(f) : X(f, D)), [m, f, D, y]),
+                        B = n.useMemo(() => {
                             if (!b) return null;
                             const e = ((e) => {
                                 const t = (e.entities?.media || []).find((e) => "photo" === e.type);
@@ -918,7 +915,7 @@
                     return n.createElement(
                         j.Z,
                         null,
-                        U,
+                        B,
                         n.createElement(
                             p.Z.Configure,
                             { headerless: !0 },
@@ -948,10 +945,10 @@
                                                     },
                                                     blockedOrMutedEntryIds: x,
                                                     setTweetContentHidden: N,
-                                                    isTweetContentHidden: S,
+                                                    isTweetContentHidden: E,
                                                 },
                                             },
-                                            f && n.createElement(K.Z, { entryConfiguration: Te, module: B, previewEntries: b ? [G.Se({ id: f, sortIndex: "stable_sort_index" })] : void 0, scroller: $, title: ye }),
+                                            f && n.createElement(K.Z, { entryConfiguration: Te, module: U, previewEntries: b ? [q.Se({ id: f, sortIndex: "stable_sort_index" })] : void 0, scroller: $, title: ye }),
                                         ),
                                     ),
                                     n.createElement(a.Z, { style: M && Me.desktopMediaDrawer, testID: M ? "immersive-viewer-desktop-conversation-drawer" : void 0 }, g && ((e, t) => !!e || t)(M, T) ? n.createElement(te.Z, { location: l, rootTweet: g, screenName: D, tweet: g, tweetId: g.id_str }) : null),
@@ -961,7 +958,7 @@
                     );
                 },
                 Me = i.default.create((e) => ({ container: { flexDirection: "row", overflowX: "hidden", overflowY: "hidden", height: "100%", width: "100%", position: "relative" }, neighbor: { flexGrow: 1, flexShrink: 1 }, desktopNeighbor: { display: "flex", flexDirection: "row" }, desktopTimelineContainer: { flex: 2 }, desktopMediaDrawer: { flex: 1 } })),
-                ve = pe((0, q.Z)(Ie));
+                ve = pe((0, G.Z)(Ie));
         },
         67534: (e, t, o) => {
             o.d(t, { Z: () => w });
@@ -1017,4 +1014,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ImmersiveMediaViewer.9e50e7ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ImmersiveMediaViewer.4189f04a.js.map

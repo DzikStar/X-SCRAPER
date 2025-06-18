@@ -44,15 +44,15 @@
                     .withAnalytics({ element: "mobile_notifications" }),
                 g = l().bdba3e1a,
                 _ = l().c4da7d28,
-                w = l().j87c21f4,
-                y = l().iebc30ca,
+                y = l().j87c21f4,
+                w = l().iebc30ca,
                 E = l().dc740eb2;
             class D extends r.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderButton = () => {
                             const { isFollowing: e, style: t } = this.props;
-                            return e ? r.createElement(n.ZP, { "aria-label": _, hoverLabel: { label: y }, icon: r.createElement(i.default, null), onPress: this._handleUnfollow, style: t, type: "primaryOutlined" }) : r.createElement(n.ZP, { "aria-label": g, hoverLabel: { label: w }, icon: r.createElement(s.default, null), onPress: this._handleFollow, style: t, type: "primaryOutlined" });
+                            return e ? r.createElement(n.ZP, { "aria-label": _, hoverLabel: { label: w }, icon: r.createElement(i.default, null), onPress: this._handleUnfollow, style: t, type: "primaryOutlined" }) : r.createElement(n.ZP, { "aria-label": g, hoverLabel: { label: y }, icon: r.createElement(s.default, null), onPress: this._handleFollow, style: t, type: "primaryOutlined" });
                         }),
                         (this._handleFollow = () => {
                             const { isDeviceFollowWithoutUserFollow: e, shouldPromptPush: t } = this.props;
@@ -141,8 +141,8 @@
                 f = a(933340),
                 g = a(321264),
                 _ = a(208340),
-                w = a(707305),
-                y = a(748138),
+                y = a(707305),
+                w = a(748138),
                 E = a(837020),
                 D = a(125363),
                 v = a(601576),
@@ -153,7 +153,7 @@
                 C = { label: T },
                 x = m().a8ab3d08,
                 I = m().d740d2d9,
-                k = { bandcamp_handle: { icon: r.createElement(u.default, null), label: m().a7cf1e98, url: "https://bandcamp.com/" }, bitcoin_handle: { icon: r.createElement(h.default, null), label: m().d876e67e }, cash_app_handle: { icon: r.createElement(p.default, null), label: m().f85f6760, url: "https://cash.app/" }, ethereum_handle: { icon: r.createElement(b.default, null), label: m().a32a7c06 }, gofundme_handle: { icon: r.createElement(f.default, null), label: m().cc1a3bc4, url: "https://gofundme.com/f/" }, patreon_handle: { icon: r.createElement(g.default, null), label: m().d4d74bb4, url: "https://patreon.com/" }, pay_pal_handle: { icon: r.createElement(_.default, null), label: m().h14fbc52, url: "https://paypal.me/" }, venmo_handle: { icon: r.createElement(w.default, null), label: m().h1198dcc, url: "https://venmo.com/" } };
+                k = { bandcamp_handle: { icon: r.createElement(u.default, null), label: m().a7cf1e98, url: "https://bandcamp.com/" }, bitcoin_handle: { icon: r.createElement(h.default, null), label: m().d876e67e }, cash_app_handle: { icon: r.createElement(p.default, null), label: m().f85f6760, url: "https://cash.app/" }, ethereum_handle: { icon: r.createElement(b.default, null), label: m().a32a7c06 }, gofundme_handle: { icon: r.createElement(f.default, null), label: m().cc1a3bc4, url: "https://gofundme.com/f/" }, patreon_handle: { icon: r.createElement(g.default, null), label: m().d4d74bb4, url: "https://patreon.com/" }, pay_pal_handle: { icon: r.createElement(_.default, null), label: m().h14fbc52, url: "https://paypal.me/" }, venmo_handle: { icon: r.createElement(y.default, null), label: m().h1198dcc, url: "https://venmo.com/" } };
             function S({ style: e, userId: t }) {
                 const a = (0, D.I0)(),
                     [c, d] = r.useState(!1),
@@ -172,7 +172,7 @@
                     r.createElement(l.ZP, {
                         "aria-label": T,
                         hoverLabel: C,
-                        icon: r.createElement(y.default, null),
+                        icon: r.createElement(w.default, null),
                         onPress: function () {
                             d((e) => !e);
                         },
@@ -317,8 +317,8 @@
                     d((e) => ({ ...e, currentTitle: s, draftTitle: s }));
                 }, [s]);
                 const _ = { user_mentions: (0, u.Z)(c.draftTitle) },
-                    w = [0, c.draftTitle.length],
-                    y = c.draftTitle === c.currentTitle || "" === c.draftTitle.trim(),
+                    y = [0, c.draftTitle.length],
+                    w = c.draftTitle === c.currentTitle || "" === c.draftTitle.trim(),
                     E = r.useCallback((e) => {
                         d((t) => ({ ...t, draftTitle: e.target.value }));
                     }, []),
@@ -334,16 +334,16 @@
                     v = r.useCallback(() => {
                         d((e) => ({ ...e, draftTitle: e.currentTitle, isEditing: !1 }));
                     }, []),
-                    Z = () => r.createElement(n.Z, { style: g.buttonContainer }, r.createElement(o.ZP, { onPress: v, size: "small", type: "primaryOutlined" }, b.cancel), r.createElement(o.ZP, { disabled: y, onPress: D, size: "small", type: "primaryFilled" }, b.save));
+                    Z = () => r.createElement(n.Z, { style: g.buttonContainer }, r.createElement(o.ZP, { onPress: v, size: "small", type: "primaryOutlined" }, b.cancel), r.createElement(o.ZP, { disabled: w, onPress: D, size: "small", type: "primaryFilled" }, b.save));
                 return r.createElement(
                     n.Z,
                     { style: g.broadcastTitleRow },
                     c.isEditing
-                        ? r.createElement(l.Z, { appTextSize: "headline1", inputStyle: g.titleInput, maxLength: 256, maxNumberOfLines: 3, multiline: !0, onChange: E, onSubmitEditing: y ? void 0 : D, placeholder: b.defaultTitle, rightContent: r.createElement(Z, null), styleType: "selection", value: c.draftTitle })
+                        ? r.createElement(l.Z, { appTextSize: "headline1", inputStyle: g.titleInput, maxLength: 256, maxNumberOfLines: 3, multiline: !0, onChange: E, onSubmitEditing: w ? void 0 : D, placeholder: b.defaultTitle, rightContent: r.createElement(Z, null), styleType: "selection", value: c.draftTitle })
                         : r.createElement(
                               n.Z,
                               { style: g.broadcastTitleRow },
-                              r.createElement(i.Z, { displayTextRange: w, entities: _, linkify: !0, size: "headline1", style: g.broadcastTitleText, text: c.currentTitle, weight: "bold" }),
+                              r.createElement(i.Z, { displayTextRange: y, entities: _, linkify: !0, size: "headline1", style: g.broadcastTitleText, text: c.currentTitle, weight: "bold" }),
                               a &&
                                   r.createElement(o.ZP, {
                                       "aria-label": b.edit,
@@ -384,8 +384,8 @@
                 f = a(123751),
                 g = a(615656),
                 _ = a(545457),
-                w = a(651930),
-                y = a(572067),
+                y = a(651930),
+                w = a(572067),
                 E = a(443781),
                 D = a(38293),
                 v = a(652904),
@@ -496,7 +496,7 @@
                 fe = (e, t) => {
                     const a = t.match.params.screenName;
                     if (a) return a;
-                    const r = we(e, t);
+                    const r = ye(e, t);
                     return r?.user_results?.result?.core?.screen_name || "";
                 },
                 ge = (e, t) => {
@@ -508,26 +508,26 @@
                 _e = (e, t) => {
                     const a = fe(e, t);
                     if (a) return he.ZP.selectByScreenName(e, a);
-                    const r = we(e, t);
+                    const r = ye(e, t);
                     return r?.user ? he.ZP.select(e, r.user) : void 0;
                 },
-                we = (e, t) => {
+                ye = (e, t) => {
                     const a = ge(e, t);
                     return a ? ue.Z.select(e, a) : void 0;
                 },
-                ye = (e, t) => he.ZP.selectViewerUser(e),
+                we = (e, t) => he.ZP.selectViewerUser(e),
                 Ee = (e, t) => {
                     const a = fe(e, t);
                     return ue.Z.selectLatestBroadcastFetched(e, a);
                 },
                 De = (e, t) => {
-                    const a = we(e, t),
+                    const a = ye(e, t),
                         r = Ee(e, t),
                         n = ge(e, t);
                     return a || (!n && r) ? pe.ZP.LOADED : pe.ZP.LOADING;
                 },
                 ve = (0, me.Z)()
-                    .propsFromState(() => ({ broadcast: we, broadcastId: ge, broadcaster: _e, fetchStatus: De, latestBroadcastFetched: Ee, screenName: fe, timecode: be, viewerUser: ye }))
+                    .propsFromState(() => ({ broadcast: ye, broadcastId: ge, broadcaster: _e, fetchStatus: De, latestBroadcastFetched: Ee, screenName: fe, timecode: be, viewerUser: we }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, ce.zr)("LIVE_SCREEN"), fetchBroadcast: ue.Z.fetchOneIfNeeded, fetchLatestBroadcast: ue.Z.fetchLatestBroadcast })),
                 Ze = 16 / 9,
                 Me = { objectFitVideo: "contain" },
@@ -609,7 +609,7 @@
                                 o = `twitter://broadcasts/${a || ""}`,
                                 i = Le(a || ""),
                                 s = Le(a || "", U);
-                            return l ? r.createElement(r.Fragment, null, r.createElement(y.Z, { canonical: i, description: e, title: n, type: "article" }), r.createElement(w.Z, { deepLink: o }), r.createElement(k.Z, { broadcast: t, broadcaster: l, id: a || "", timecode: U, title: e, url: s })) : null;
+                            return l ? r.createElement(r.Fragment, null, r.createElement(w.Z, { canonical: i, description: e, title: n, type: "article" }), r.createElement(y.Z, { deepLink: o }), r.createElement(k.Z, { broadcast: t, broadcaster: l, id: a || "", timecode: U, title: e, url: s })) : null;
                         })(q),
                         r.createElement(D.Z, { title: q, withMeta: !1 }),
                         r.createElement(h.Z, { "aria-label": Ae, fetchStatus: F, onRequestRetry: $, render: X }),
@@ -750,6 +750,13 @@
             i.metadata = { width: 24, height: 24 };
             const s = i;
         },
+        465233: (e, t, a) => {
+            a.d(t, { Z: () => n });
+            var r = a(716406);
+            function n(e) {
+                return "object" != typeof e || null === e ? e : Array.isArray(e) ? e.map(n) : (0, r.Z)(e, (e) => n(e));
+            }
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Live.50df4d0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Live.7d4f6a2a.js.map

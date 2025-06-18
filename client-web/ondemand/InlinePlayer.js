@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.InlinePlayer", "loader.AudioDock", "loader.AudioContextVoiceMedia", "loader.AudioContextSpaceClip", "loader.AudioOnlyVideoPlayer"],
+    ["ondemand.InlinePlayer", "loader.AudioDock", "loader.AudioContextVoiceMedia", "loader.AudioContextSpaceClip"],
     {
         541837: (e, t, i) => {
             i.d(t, { Z: () => o });
@@ -473,8 +473,8 @@
             var x = i(555492),
                 F = i(513588),
                 U = i(942893),
-                V = i(625555),
-                Z = i(71620),
+                Z = i(625555),
+                V = i(71620),
                 G = i(668214),
                 q = i(558369),
                 H = i(109223),
@@ -500,10 +500,10 @@
                 K = (0, G.Z)()
                     .propsFromState(() => ({ dataSaverMode: Y.IX, language: z.VT, sourceTweet: W.Z.createHydratedTweetSelector(Q), disableAutoplay: J, videoContentId: X }))
                     .adjustStateProps(({ dataSaverMode: e, disableAutoplay: t, language: i, sourceTweet: r, videoContentId: a }) => ({ dataSaverMode: e, disableAutoplay: t, language: i, mediaAvailability: (r && (0, E.DY)(r, a)) || void 0, publisherId: r ? (0, E.Pz)(r) : void 0 }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, Z.zr)("INLINE_PLAYER_CONTAINER"), getTwitterAuthedHttpClient: $, logPromotedVideoEvent: B.iY, tweetAdProvider: H.Q3 }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, V.zr)("INLINE_PLAYER_CONTAINER"), getTwitterAuthedHttpClient: $, logPromotedVideoEvent: B.iY, tweetAdProvider: H.Q3 }))
                     .withAnalytics(),
                 ee = (0, o.cn)((e) =>
-                    e(V.F6)
+                    e(Z.F6)
                         .login()
                         .catch(() => {}),
                 ),
@@ -918,6 +918,13 @@
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
+        },
+        465233: (e, t, i) => {
+            i.d(t, { Z: () => a });
+            var r = i(716406);
+            function a(e) {
+                return "object" != typeof e || null === e ? e : Array.isArray(e) ? e.map(a) : (0, r.Z)(e, (e) => a(e));
+            }
         },
         411240: (e, t, i) => {
             i.d(t, { Z: () => r });
@@ -1393,4 +1400,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer.b224fafa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer.f1c5b64a.js.map

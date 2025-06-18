@@ -121,7 +121,7 @@
                     );
                 };
         },
-        393058: (e, t, n) => {
+        401339: (e, t, n) => {
             n.d(t, { Z: () => o });
             const r = {},
                 a = ["touchend", "touchmove", "touchstart"];
@@ -583,4 +583,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI.d527604a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI.1e95e95a.js.map

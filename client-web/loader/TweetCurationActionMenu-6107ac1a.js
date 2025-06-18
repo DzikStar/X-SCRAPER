@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.TweetCurationActionMenu-6107ac1a", "icons/IconCode-js", "icons/IconPersonCheckmarkStroke-js", "loader.FeedbackSheet"],
+    ["loader.TweetCurationActionMenu-6107ac1a", "loader.FeedbackSheet"],
     {
         805020: (e) => {
             e.exports = { queryId: "TUo5Hk_nQNjxM9UEIasNag", operationName: "ArticleEntitiesSlice", operationType: "query", metadata: { featureSwitches: ["payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
@@ -99,7 +99,7 @@
         },
         484636: (e, t, i) => {
             "use strict";
-            i.d(t, { Z: () => E });
+            i.d(t, { Z: () => T });
             var n = i(506899),
                 a = i(414742);
             const l = new n.fK.Entity("articleEntities", {}, { idAttribute: "rest_id" });
@@ -122,7 +122,7 @@
                 C = i(446405),
                 k = i.n(C),
                 I = i(934309);
-            const E = ({ apiClient: e, featureSwitches: t }) => ({
+            const T = ({ apiClient: e, featureSwitches: t }) => ({
                 createDraftArticle(t) {
                     const { content_state: i, title: a } = t;
                     return e.graphQL(_(), { content_state: i, title: a }).then((e) => (0, n.Fv)(e.articleentity_create_draft?.article_entity_results?.result, l));
@@ -206,40 +206,40 @@
                 C = i(459660);
             const k = m().g6185a9e,
                 I = m().i00051cc,
-                E = m().baffe39a,
-                T = m().i9000126,
+                T = m().baffe39a,
+                E = m().i9000126,
                 x = m().dcaede8a,
                 A = m().ad85cd2e,
                 L = m().f19e4bfc,
                 S = m().bf994ab2,
-                B = m().e7b4b30a,
-                Z = m().cfd2f35e,
-                q = p.default.create((e) => ({ root: { flexDirection: "column", paddingTop: e.spaces.space16, paddingBottom: e.spaces.space4, borderRadius: e.borderRadii.xLarge }, popover: { maxWidth: 5 * e.spacesPx.space64 }, modal: { borderRadius: e.borderRadii.none }, title: { flexDirection: "column", paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 }, menuRow: { flexDirection: "row", paddingTop: e.spaces.space12, paddingBottom: e.spaces.space12, alignItems: "center", borderRadius: e.borderRadii.small }, disallowLinkRepliesCheck: { paddingHorizontal: e.spaces.space20, paddingBottom: e.spaces.space16, paddingTop: e.spaces.space16 }, cancelButton: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space16 } })),
-                R = (e) => {
+                q = m().e7b4b30a,
+                B = m().cfd2f35e,
+                R = p.default.create((e) => ({ root: { flexDirection: "column", paddingTop: e.spaces.space16, paddingBottom: e.spaces.space4, borderRadius: e.borderRadii.xLarge }, popover: { maxWidth: 5 * e.spacesPx.space64 }, modal: { borderRadius: e.borderRadii.none }, title: { flexDirection: "column", paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 }, menuRow: { flexDirection: "row", paddingTop: e.spaces.space12, paddingBottom: e.spaces.space12, alignItems: "center", borderRadius: e.borderRadii.small }, disallowLinkRepliesCheck: { paddingHorizontal: e.spaces.space20, paddingBottom: e.spaces.space16, paddingTop: e.spaces.space16 }, cancelButton: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space16 } })),
+                Z = (e) => {
                     const { dismiss: t, isModal: i, midConversationTweet: n, value: l } = e,
                         { featureSwitches: r, userClaims: p } = a.useContext(w.rC),
                         u = (t) => () => {
                             e.onChange(t), e.dismiss();
                         },
-                        R = r.isTrue("disallowed_reply_controls_enabled") && p.isAnyPremiumSubscriber(),
+                        Z = r.isTrue("disallowed_reply_controls_enabled") && p.isAnyPremiumSubscriber(),
                         F = !!n,
-                        z = F && !n?.entities?.user_mentions?.some((e) => e.id_str !== n.user.id_str);
-                    let Q = x;
+                        Q = F && !n?.entities?.user_mentions?.some((e) => e.id_str !== n.user.id_str);
+                    let z = x;
                     return (
-                        z ? (Q = S) : F && (Q = B),
+                        Q ? (z = S) : F && (z = q),
                         a.createElement(
                             s.Z,
-                            { "aria-describedby": "conversation-controls-details", "aria-labelledby": "conversation-controls-title", role: "dialog", style: [q.root, i ? q.modal : q.popover] },
-                            a.createElement(s.Z, { style: q.title }, a.createElement(o.ZP, { id: "conversation-controls-title", weight: "bold" }, k), a.createElement(o.ZP, { color: "gray700", id: "conversation-controls-details", size: "body" }, I)),
+                            { "aria-describedby": "conversation-controls-details", "aria-labelledby": "conversation-controls-title", role: "dialog", style: [R.root, i ? R.modal : R.popover] },
+                            a.createElement(s.Z, { style: R.title }, a.createElement(o.ZP, { id: "conversation-controls-title", weight: "bold" }, k), a.createElement(o.ZP, { color: "gray700", id: "conversation-controls-details", size: "body" }, I)),
                             a.createElement(
                                 s.Z,
                                 null,
-                                a.createElement(c.Z, { Icon: b.default, actionText: E, isSelected: C.k.all === l, onClick: u(C.k.all), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
-                                a.createElement(c.Z, { Icon: h.default, actionText: T, isSelected: C.k.community === l, onClick: u(C.k.community), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
-                                e.isActiveCreator && a.createElement(c.Z, { Icon: y.default, actionText: A, isSelected: C.k.subscribers === l, onClick: u(C.k.subscribers), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
-                                a.createElement(c.Z, { Icon: f.default, actionText: L, isSelected: C.k.verified === l, onClick: u(C.k.verified), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
-                                a.createElement(c.Z, { Icon: z ? g.default : v.default, actionText: Q, isSelected: C.k.by_invitation === l, onClick: u(C.k.by_invitation), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
-                                R &&
+                                a.createElement(c.Z, { Icon: b.default, actionText: T, isSelected: C.k.all === l, onClick: u(C.k.all), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
+                                a.createElement(c.Z, { Icon: h.default, actionText: E, isSelected: C.k.community === l, onClick: u(C.k.community), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
+                                e.isActiveCreator && a.createElement(c.Z, { Icon: y.default, actionText: A, isSelected: C.k.subscribers === l, onClick: u(C.k.subscribers), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
+                                a.createElement(c.Z, { Icon: f.default, actionText: L, isSelected: C.k.verified === l, onClick: u(C.k.verified), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
+                                a.createElement(c.Z, { Icon: Q ? g.default : v.default, actionText: z, isSelected: C.k.by_invitation === l, onClick: u(C.k.by_invitation), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
+                                Z &&
                                     !n &&
                                     a.createElement(d.Z, {
                                         checked: e.disallowedReplyControls.includes(C.m.Links),
@@ -253,9 +253,9 @@
                                                     t.add(j), e.setDisallowedReplyControls([...t]);
                                                 }
                                             }),
-                                        style: q.disallowLinkRepliesCheck,
+                                        style: R.disallowLinkRepliesCheck,
                                     }),
-                                e.isModal ? a.createElement(_.ZP, { key: "button_cancel", onPress: t, size: "large", style: q.cancelButton, type: "primaryOutlined" }, Z) : null,
+                                e.isModal ? a.createElement(_.ZP, { key: "button_cancel", onPress: t, size: "large", style: R.cancelButton, type: "primaryOutlined" }, B) : null,
                             ),
                         )
                     );
@@ -275,7 +275,7 @@
                             onDismiss: _,
                             renderContent: (t, i) => {
                                 const { children: l, controlled: r, ...s } = e;
-                                return a.createElement(R, (0, n.Z)({}, s, { dismiss: t, isModal: "sheet" === i }));
+                                return a.createElement(Z, (0, n.Z)({}, s, { dismiss: t, isModal: "sheet" === i }));
                             },
                             visibilityBehavior: p,
                         },
@@ -372,7 +372,7 @@
                 p = n.createElement(o.default, { style: _.closeIcon }),
                 u = ({ onClick: e }) => n.createElement(l.ZP, { "aria-label": c, borderColor: "transparent", color: "gray1100", hoverLabel: d, icon: p, onClick: e, pullRight: !0, size: "small", style: _.button, type: "brandText" });
         },
-        498720: (e, t, i) => {
+        487606: (e, t, i) => {
             "use strict";
             i.r(t), i.d(t, { default: () => o });
             var n = i(202784),
@@ -381,25 +381,11 @@
                 r = i(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, l.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M15.24 4.31l-4.55 15.93-1.93-.55 4.55-15.93 1.93.55zm-8.33 3.6L3.33 12l3.58 4.09-1.5 1.32L.67 12l4.74-5.41 1.5 1.32zm11.68-1.32L23.33 12l-4.74 5.41-1.5-1.32L20.67 12l-3.58-4.09 1.5-1.32z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
-        531564: (e, t, i) => {
-            "use strict";
-            i.r(t), i.d(t, { default: () => o });
-            var n = i(202784),
-                a = i(890601),
-                l = i(783427),
-                r = i(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M10 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM6 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4zM3.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C13.318 13.65 11.838 13 10 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C5.627 11.85 7.648 11 10 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H1.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46zm19.75-7.22l-4.141 6.21L16.1 9.7l1.2-1.6 1.954 1.47 2.969-4.46 1.664 1.11z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M2 4c1.66 0 3-1.34 3-3h1c0 1.66 1.34 3 3 3v1C7.34 5 6 6.34 6 8H5c0-1.66-1.34-3-3-3V4zm7.89 4.9C11.26 7.53 12 5.35 12 2h2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1zm7.32 3.1c-.97-.42-1.81-.97-2.53-1.69-.71-.71-1.27-1.56-1.68-2.52-.42.96-.98 1.81-1.69 2.52-.72.72-1.56 1.27-2.53 1.69.97.42 1.81.97 2.53 1.69.71.71 1.27 1.56 1.69 2.52.41-.96.97-1.81 1.68-2.52.72-.72 1.56-1.27 2.53-1.69z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-6107ac1a.e14e8dea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-6107ac1a.9e6ee50a.js.map

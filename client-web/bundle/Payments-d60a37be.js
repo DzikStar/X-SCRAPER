@@ -2,10 +2,10 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.Payments-d60a37be"],
     {
-        43429: (e, t, n) => {
-            n.d(t, { $W: () => s, DH: () => g, Fw: () => y, Ln: () => m, Ms: () => P, NU: () => v, Rj: () => f, Rz: () => c, a7: () => a, ah: () => i, cX: () => l, dX: () => u, hv: () => p, ic: () => r, q9: () => b, uc: () => _, w8: () => o, wC: () => d, wG: () => h });
-            n(202784);
-            const a = "Usd",
+        43429: (e, t, a) => {
+            a.d(t, { $W: () => s, DH: () => g, Fw: () => y, Ln: () => m, Ms: () => C, NU: () => v, Rj: () => f, Rz: () => c, a7: () => n, ah: () => i, cX: () => l, dX: () => u, hv: () => _, ic: () => r, q9: () => b, uc: () => p, w8: () => o, wC: () => d, wG: () => h });
+            a(202784);
+            const n = "Usd",
                 r = 25,
                 s = "xpayments-preset-all",
                 o = (Object.freeze({ onboarding: "onboarding", upgradeToKycDocumentsVerified: "upgradeToKycDocumentsVerified" }), 280),
@@ -16,300 +16,341 @@
                 u = Object.freeze({ bank: "bank", card: "card", x: "x" }),
                 m = 4e3,
                 h = 4,
-                _ = "https://money.x.com/articles/terms-and-conditions",
-                p = "https://money.x.com/articles/privacy-policy",
+                p = "https://money.x.com/articles/terms-and-conditions",
+                _ = "https://money.x.com/articles/privacy-policy",
                 g = "https://money.x.com/articles/short-form-disclosure",
                 f = "https://money.x.com/articles/usa-patriot-act",
                 y = "https://money.x.com/articles/cardholder-agreement",
                 b = Object.freeze({ initiate: "initiate-challenge", complete2fa: "2fa-complete-challenge", completeKyc: "kyc-complete-challenge", completeDocv: "docv-complete-challenge", completeSelfie: "selfie-complete-challenge" }),
                 v = Object.freeze({ balance: "balance", credit: "credit", debit: "debit" }),
-                P = Object.freeze({ interest: "interest", cashback: "cashback", deposit: "deposit", withdraw: "withdraw", atm: "atm" });
+                C = Object.freeze({ interest: "interest", cashback: "cashback", deposit: "deposit", withdraw: "withdraw", atm: "atm" });
         },
-        920113: (e, t, n) => {
-            n.d(t, { Z: () => w });
-            var a = n(202784),
-                r = n(325686),
-                s = n(154003),
-                o = n(829110),
-                c = n(692165),
-                i = n(19197),
-                l = n(883229),
-                d = n(952793),
-                u = n(514639),
-                m = n(137882),
-                h = n(743080);
-            const _ = "Help Center",
-                p = "Settings",
+        236086: (e, t, a) => {
+            a.d(t, { Z: () => v });
+            a(136728);
+            var n = a(202784),
+                r = a(107267),
+                s = a(154003),
+                o = a(167630),
+                c = a(883229),
+                i = a(782642),
+                l = a(514639),
+                d = a(445664),
+                u = a(725516),
+                m = a(413713),
+                h = a(798350),
+                p = a(32403),
+                _ = a(727384);
+            const g = ({ cardId: e, fromFailedTransaction: t }) => {
+                    const a = (0, u.z)(),
+                        c = (0, i.p)(),
+                        g = (0, r.useHistory)(),
+                        { permissions: f } = (0, d.Z)({ fetchKey: "Payments" }),
+                        { canActivate: y } = (0, p.Z)({ paymentMethodId: e, fromFailedTransaction: t }),
+                        [b, v] = (0, h.Z)(),
+                        C = !(0, _.aY)(f),
+                        P = n.useCallback(() => {
+                            a.scribe({ page: "money", section: "activate-card", action: "click" }),
+                                b({ cardId: e })
+                                    .then(({ challengeId: e }) => {
+                                        e && g.push(l.vw, { challengeId: e, challengeInitiator: l.kW.activateCard });
+                                    })
+                                    .catch((e) => {
+                                        c({ text: (0, m.kJ)({ errors: e }).message });
+                                    });
+                        }, [a, b, e, g, c]);
+                    return y ? n.createElement(s.ZP, { disabled: C || v, onPress: P, size: "medium", type: "primaryFilled" }, v ? n.createElement(o.Z, { size: "small" }) : "Activate card") : null;
+                },
+                f = { type: "CustomRetry", content: () => null },
+                y = { context: "ACTIVATE_CARD" },
+                b = (e) => n.createElement(c.N, { errorConfig: y, fallback: f }, n.createElement(n.Suspense, { fallback: null }, n.createElement(g, e))),
+                v = n.memo(b);
+        },
+        920113: (e, t, a) => {
+            a.d(t, { Z: () => k });
+            var n = a(202784),
+                r = a(325686),
+                s = a(154003),
+                o = a(829110),
+                c = a(692165),
+                i = a(19197),
+                l = a(883229),
+                d = a(952793),
+                u = a(514639),
+                m = a(137882),
+                h = a(743080);
+            const p = "Help Center",
+                _ = "Settings",
                 g = "Chat",
                 f = { pathname: u.N6, external: !0, openInSameFrame: !1 },
                 y = () => {
                     const e = (0, m.ig)({});
-                    return e ? a.createElement(s.ZP, { "aria-label": g, hoverLabel: { label: g }, icon: a.createElement(o.default, null), link: e, pullRight: !0, type: "primaryText" }) : null;
+                    return e ? n.createElement(s.ZP, { "aria-label": g, hoverLabel: { label: g }, icon: n.createElement(o.default, null), link: e, pullRight: !0, type: "primaryText" }) : null;
                 },
                 b = { type: "CustomRetry", content: () => null },
                 v = { context: "MONEY_HEADER_ACTIONS" },
-                P = () => (0, d.hC)("rweb_xchat_enabled") && a.createElement(l.N, { errorConfig: v, fallback: b }, a.createElement(a.Suspense, { fallback: null }, a.createElement(y, null))),
-                C = () => a.createElement(r.Z, { style: h.ZP.actionButtons }, a.createElement(P, null), a.createElement(s.ZP, { "aria-label": _, hoverLabel: { label: _ }, icon: a.createElement(c.default, null), link: f, pullRight: !0, type: "primaryText" }), a.createElement(s.ZP, { "aria-label": p, hoverLabel: { label: p }, icon: a.createElement(i.default, null), link: u.Sr, pullRight: !0, type: "primaryText" })),
-                w = a.memo(C);
+                C = () => (0, d.hC)("rweb_xchat_enabled") && n.createElement(l.N, { errorConfig: v, fallback: b }, n.createElement(n.Suspense, { fallback: null }, n.createElement(y, null))),
+                P = () => n.createElement(r.Z, { style: h.ZP.actionButtons }, n.createElement(C, null), n.createElement(s.ZP, { "aria-label": p, hoverLabel: { label: p }, icon: n.createElement(c.default, null), link: f, pullRight: !0, type: "primaryText" }), n.createElement(s.ZP, { "aria-label": _, hoverLabel: { label: _ }, icon: n.createElement(i.default, null), link: u.Sr, pullRight: !0, type: "primaryText" })),
+                k = n.memo(P);
         },
-        452275: (e, t, n) => {
-            n.d(t, { Z: () => d });
-            var a = n(202784),
-                r = n(107267),
-                s = n(507651),
-                o = n(952793),
-                c = n(514639),
-                i = n(412100);
+        452275: (e, t, a) => {
+            a.d(t, { Z: () => d });
+            var n = a(202784),
+                r = a(107267),
+                s = a(507651),
+                o = a(952793),
+                c = a(514639),
+                i = a(412100);
             const l = () => {
                     const e = (0, r.useLocation)(),
                         { hasPendingTransactions: t } = (0, i.Z)(),
-                        n = (0, o.hC)("payments_card_spend_enabled"),
-                        l = a.useMemo(() => [{ to: { pathname: c.gp }, key: c.gp, label: "Account", isActive: () => e.pathname === c.gp }, n ? { to: { pathname: c.Tb }, key: c.Tb, label: "Card", isActive: () => e.pathname === c.Tb || e.pathname === c.F7 } : null, { to: { pathname: c.bR }, key: c.bR, label: "Activity", isActive: () => e.pathname === c.bR, badgePip: t }], [n, t, e.pathname]);
-                    return a.createElement(s.Z, { isPillLink: !0, links: l });
+                        a = (0, o.hC)("payments_card_spend_enabled"),
+                        l = n.useMemo(() => [{ to: { pathname: c.gp }, key: c.gp, label: "Account", isActive: () => e.pathname === c.gp }, a ? { to: { pathname: c.Tb }, key: c.Tb, label: "Card", isActive: () => e.pathname === c.Tb || e.pathname === c.F7 } : null, { to: { pathname: c.bR }, key: c.bR, label: "Activity", isActive: () => e.pathname === c.bR, badgePip: t }], [a, t, e.pathname]);
+                    return n.createElement(s.Z, { isPillLink: !0, links: l });
                 },
-                d = a.memo(l);
+                d = n.memo(l);
         },
-        805322: (e, t, n) => {
-            n.d(t, { Z: () => me });
-            n(136728);
-            var a = n(202784),
-                r = n(437429),
-                s = n.n(r),
-                o = n(107267),
-                c = n(555950),
-                i = n(736063),
-                l = n(782642),
-                d = n(514639),
-                u = n(441484),
-                m = n(725516),
-                h = n(43429),
-                _ = n(727384),
-                p = n(413722),
-                g = n(980407),
-                f = n(56495),
-                y = n(10622),
-                b = n.n(y);
-            n(585488);
+        805322: (e, t, a) => {
+            a.d(t, { Z: () => me });
+            a(136728);
+            var n = a(202784),
+                r = a(437429),
+                s = a.n(r),
+                o = a(107267),
+                c = a(555950),
+                i = a(736063),
+                l = a(782642),
+                d = a(514639),
+                u = a(441484),
+                m = a(725516),
+                h = a(43429),
+                p = a(727384),
+                _ = a(413722),
+                g = a(980407),
+                f = a(56495),
+                y = a(10622),
+                b = a.n(y);
+            a(585488);
             const v = f.Z,
-                P = ({ challengeId: e, challengeResponse: t, environment: n, loginRequestId: a }) =>
-                    b()(n, v, { challengeId: e, challengeResponse: t, loginRequestId: a }, { fetchPolicy: "network-only" })
+                C = ({ challengeId: e, challengeResponse: t, environment: a, loginRequestId: n }) =>
+                    b()(a, v, { challengeId: e, challengeResponse: t, loginRequestId: n }, { fetchPolicy: "network-only" })
                         .toPromise()
                         .then((e) => {
                             const t = e?.viewer_v2?.xp_finish_two_factor_auth_challenge?.login_request,
-                                n = e?.viewer_v2?.xp_finish_two_factor_auth_challenge?.error;
-                            return { id: t?.id, error: n, verified: !!t?.verified };
+                                a = e?.viewer_v2?.xp_finish_two_factor_auth_challenge?.error;
+                            return { id: t?.id, error: a, verified: !!t?.verified };
                         });
-            var C = n(325686),
-                w = n(731708),
-                k = n(855488),
-                I = n(154003),
-                E = n(167630),
-                Z = n(743080);
+            var P = a(325686),
+                k = a(731708),
+                w = a(855488),
+                I = a(154003),
+                Z = a(167630),
+                E = a(743080);
             const S = ({ onClose: e, onSubmit: t }) => {
-                    const n = (0, m.z)(),
-                        [r, s] = a.useState(""),
-                        [o, c] = a.useState(!1),
-                        i = (0, Z.jh)(),
-                        l = a.useCallback(() => {
+                    const a = (0, m.z)(),
+                        [r, s] = n.useState(""),
+                        [o, c] = n.useState(!1),
+                        i = (0, E.jh)(),
+                        l = n.useCallback(() => {
                             c(!0),
                                 t({ challengeResponse: r }).finally(() => {
                                     c(!1);
                                 });
                         }, [t, r]),
-                        d = a.useCallback((e) => {
+                        d = n.useCallback((e) => {
                             s(e.target.value);
                         }, []);
                     return (
-                        a.useEffect(() => {
-                            n && n.scribe({ page: "money", section: "money-2fa-app", action: "impression" });
-                        }, [n]),
-                        a.createElement(a.Fragment, null, a.createElement(C.Z, { style: i.container }, a.createElement(w.ZP, { size: "title3", weight: "bold" }, "Enter the code from your authenticator app"), a.createElement(k.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: Z.ZP.paddingNone, testID: "code", type: "password", value: r })), a.createElement(C.Z, { style: i.footer }, a.createElement(I.ZP, { disabled: !r || o, onPress: l, size: "large", type: "primaryFilled" }, o ? a.createElement(E.Z, null) : "Next")))
+                        n.useEffect(() => {
+                            a && a.scribe({ page: "money", section: "money-2fa-app", action: "impression" });
+                        }, [a]),
+                        n.createElement(n.Fragment, null, n.createElement(P.Z, { style: i.container }, n.createElement(k.ZP, { size: "title3", weight: "bold" }, "Enter the code from your authenticator app"), n.createElement(w.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: E.ZP.paddingNone, testID: "code", type: "password", value: r })), n.createElement(P.Z, { style: i.footer }, n.createElement(I.ZP, { disabled: !r || o, onPress: l, size: "large", type: "primaryFilled" }, o ? n.createElement(Z.Z, null) : "Next")))
                     );
                 },
                 T = { context: "TwoFactorAppCode" };
-            function F(e) {
-                return a.createElement(i.H, { errorConfig: T }, a.createElement(S, e));
+            function A(e) {
+                return n.createElement(i.H, { errorConfig: T }, n.createElement(S, e));
             }
-            const A = a.memo(F),
+            const F = n.memo(A),
                 R = ({ onClose: e, onSubmit: t }) => {
-                    const n = (0, m.z)(),
-                        [r, s] = a.useState(""),
-                        [o, c] = a.useState(!1),
-                        i = (0, Z.jh)(),
-                        l = a.useCallback(() => {
+                    const a = (0, m.z)(),
+                        [r, s] = n.useState(""),
+                        [o, c] = n.useState(!1),
+                        i = (0, E.jh)(),
+                        l = n.useCallback(() => {
                             c(!0),
                                 t({ challengeResponse: r }).finally(() => {
                                     c(!1);
                                 });
                         }, [t, r]),
-                        d = a.useCallback((e) => {
+                        d = n.useCallback((e) => {
                             s(e.target.value);
                         }, []);
                     return (
-                        a.useEffect(() => {
-                            n && n.scribe({ page: "money", section: "money-2fa-backup", action: "impression" });
-                        }, [n]),
-                        a.createElement(a.Fragment, null, a.createElement(C.Z, { style: i.container }, a.createElement(w.ZP, { size: "title3", weight: "bold" }, "Enter your backup code"), a.createElement(k.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: Z.ZP.paddingNone, testID: "code", type: "password", value: r })), a.createElement(C.Z, { style: i.footer }, a.createElement(I.ZP, { disabled: !r || o, onPress: l, size: "large", type: "primaryFilled" }, o ? a.createElement(E.Z, null) : "Next")))
+                        n.useEffect(() => {
+                            a && a.scribe({ page: "money", section: "money-2fa-backup", action: "impression" });
+                        }, [a]),
+                        n.createElement(n.Fragment, null, n.createElement(P.Z, { style: i.container }, n.createElement(k.ZP, { size: "title3", weight: "bold" }, "Enter your backup code"), n.createElement(w.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: E.ZP.paddingNone, testID: "code", type: "password", value: r })), n.createElement(P.Z, { style: i.footer }, n.createElement(I.ZP, { disabled: !r || o, onPress: l, size: "large", type: "primaryFilled" }, o ? n.createElement(Z.Z, null) : "Next")))
                     );
                 },
                 x = { context: "TwoFactorBackupCode" };
             function q(e) {
-                return a.createElement(i.H, { errorConfig: x }, a.createElement(R, e));
+                return n.createElement(i.H, { errorConfig: x }, n.createElement(R, e));
             }
-            const N = a.memo(q),
+            const N = n.memo(q),
                 M = ({ error: e, onClose: t }) => {
-                    const n = (0, m.z)(),
-                        r = (0, Z.jh)();
+                    const a = (0, m.z)(),
+                        r = (0, E.jh)();
                     return (
-                        a.useEffect(() => {
-                            n && n.scribe({ page: "money", section: "money-2fa-notsupported", action: "impression" });
-                        }, [n]),
-                        a.createElement(a.Fragment, null, a.createElement(C.Z, { style: r.container }, a.createElement(w.ZP, { size: "title3", weight: "bold" }, "We were unable to verify you"), a.createElement(w.ZP, { color: "gray700" }, e)))
+                        n.useEffect(() => {
+                            a && a.scribe({ page: "money", section: "money-2fa-notsupported", action: "impression" });
+                        }, [a]),
+                        n.createElement(n.Fragment, null, n.createElement(P.Z, { style: r.container }, n.createElement(k.ZP, { size: "title3", weight: "bold" }, "We were unable to verify you"), n.createElement(k.ZP, { color: "gray700" }, e)))
                     );
                 },
-                H = { context: "TwoFactorNotSupported" };
-            function z(e) {
-                return a.createElement(i.H, { errorConfig: H }, a.createElement(M, e));
+                z = { context: "TwoFactorNotSupported" };
+            function H(e) {
+                return n.createElement(i.H, { errorConfig: z }, n.createElement(M, e));
             }
-            const D = a.memo(z);
-            var O = n(158272);
-            function L({ challenge: e, onClose: t, onSubmit: n }) {
+            const D = n.memo(H);
+            var O = a(158272);
+            function L({ challenge: e, onClose: t, onSubmit: a }) {
                 const r = (0, l.p)(),
                     s = (0, m.z)();
                 return (
-                    a.useEffect(() => {
+                    n.useEffect(() => {
                         s.scribe({ page: "money", section: "money-2fa-passkey", action: "impression" });
                     }, [s]),
-                    a.useEffect(() => {
+                    n.useEffect(() => {
                         (0, O.xG)(e)
                             .then((e) => {
-                                n({ challengeResponse: e });
+                                a({ challengeResponse: e });
                             })
                             .catch(() => {
                                 r({ text: O.Kh }), t();
                             });
-                    }, [r, e, t, n]),
-                    (0, O.iW)() ? a.createElement(E.Z, null) : a.createElement(w.ZP, { align: "center" }, O.z_)
+                    }, [r, e, t, a]),
+                    (0, O.iW)() ? n.createElement(Z.Z, null) : n.createElement(k.ZP, { align: "center" }, O.z_)
                 );
             }
             const U = ({ onClose: e, onSubmit: t }) => {
-                    const n = (0, m.z)(),
-                        [r, s] = a.useState(""),
-                        [o, c] = a.useState(!1),
-                        i = (0, Z.jh)(),
-                        l = a.useCallback(() => {
+                    const a = (0, m.z)(),
+                        [r, s] = n.useState(""),
+                        [o, c] = n.useState(!1),
+                        i = (0, E.jh)(),
+                        l = n.useCallback(() => {
                             c(!0),
                                 t({ challengeResponse: r }).finally(() => {
                                     c(!1);
                                 });
                         }, [t, r]),
-                        d = a.useCallback((e) => {
+                        d = n.useCallback((e) => {
                             s(e.target.value);
                         }, []);
                     return (
-                        a.useEffect(() => {
-                            n && n.scribe({ page: "money", section: "money-2fa-sms", action: "impression" });
-                        }, [n]),
-                        a.createElement(a.Fragment, null, a.createElement(C.Z, { style: i.container }, a.createElement(w.ZP, { size: "title3", weight: "bold" }, "Enter the code we sent to your phone"), a.createElement(k.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: Z.ZP.paddingNone, testID: "code", type: "password", value: r })), a.createElement(C.Z, { style: i.footer }, a.createElement(I.ZP, { disabled: !r || o, onPress: l, size: "large", type: "primaryFilled" }, o ? a.createElement(E.Z, null) : "Next")))
+                        n.useEffect(() => {
+                            a && a.scribe({ page: "money", section: "money-2fa-sms", action: "impression" });
+                        }, [a]),
+                        n.createElement(n.Fragment, null, n.createElement(P.Z, { style: i.container }, n.createElement(k.ZP, { size: "title3", weight: "bold" }, "Enter the code we sent to your phone"), n.createElement(w.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: E.ZP.paddingNone, testID: "code", type: "password", value: r })), n.createElement(P.Z, { style: i.footer }, n.createElement(I.ZP, { disabled: !r || o, onPress: l, size: "large", type: "primaryFilled" }, o ? n.createElement(Z.Z, null) : "Next")))
                     );
                 },
                 W = { context: "TwoFactorSms" };
-            function j(e) {
-                return a.createElement(i.H, { errorConfig: W }, a.createElement(U, e));
+            function V(e) {
+                return n.createElement(i.H, { errorConfig: W }, n.createElement(U, e));
             }
-            const V = a.memo(j);
-            var $ = n(800697),
-                B = n(482924);
-            const Q = $.Z,
-                Y = ({ challengeId: e }) => {
-                    const { data: t } = (0, B.A)(Q, { challengeId: e }, { fetchPolicy: "network-only" }),
-                        n = t?.viewer_v2?.xp_start_two_factor_auth_challenge;
-                    if (!n) return {};
-                    const { error: a, login_request: r } = n;
-                    return { error: a, ...(r && { challenge: r.challenge, loginRequestId: r.id, twoFactor: { id: r.two_factor_auth_method.id, type: r.two_factor_auth_method.two_factor_type }, verified: !!r.verified }) };
+            const j = n.memo(V);
+            var $ = a(800697),
+                B = a(482924);
+            const Y = $.Z,
+                Q = ({ challengeId: e }) => {
+                    const { data: t } = (0, B.A)(Y, { challengeId: e }, { fetchPolicy: "network-only" }),
+                        a = t?.viewer_v2?.xp_start_two_factor_auth_challenge;
+                    if (!a) return {};
+                    const { error: n, login_request: r } = a;
+                    return { error: n, ...(r && { challenge: r.challenge, loginRequestId: r.id, twoFactor: { id: r.two_factor_auth_method.id, type: r.two_factor_auth_method.two_factor_type }, verified: !!r.verified }) };
                 },
                 G = "Please try again later or contact support team.",
-                X = "The request expired, try again.",
-                K = "The 2FA method on your account has an issue. Go to the app Settings, verify it, and try again.",
+                K = "The request expired, try again.",
+                X = "The 2FA method on your account has an issue. Go to the app Settings, verify it, and try again.",
                 J = "Too many attempts, try again later.",
-                ee = { DuplicatedRenameTwoFactorMethodDisplayName: K, ExpiredLoginVerification: X, FailureSmsCarrierDisabled: "We were not able to send an SMS to this carrier.", IneligibleFor2faAfterModification: K, InvalidRenameTwoFactorMethodDisplayName: K, LoginVerificationUserReactivationRequired: K, NoSecretForUser: K, NoTwoFactorAuthMethod: K, NotAllowed: K, NotValidForTokenExchange: K, NotYetApprovedLoginVerification: K, OfflineCodeSync: K, OverLoginVerificationAttemptLimit: J, OverLoginVerificationConvertLimit: J, OverResendLimit: J, SmsOverPerUserLimit: J, TwoFactorAuthMethodExpired: X, FailureSendingLoginVerificationRequest: G, OverLoginVerificationStartLimit: J, SmsVerPerUserLimit: J, TwoFactorAuthMethodDoesNotExist: K },
-                te = ({ challengeId: e, isNonModalScreen: t, onSuccess: n }) => {
-                    const { challenge: r, error: c, loginRequestId: i, twoFactor: d } = Y({ challengeId: e }),
+                ee = { DuplicatedRenameTwoFactorMethodDisplayName: X, ExpiredLoginVerification: K, FailureSmsCarrierDisabled: "We were not able to send an SMS to this carrier.", IneligibleFor2faAfterModification: X, InvalidRenameTwoFactorMethodDisplayName: X, LoginVerificationUserReactivationRequired: X, NoSecretForUser: X, NoTwoFactorAuthMethod: X, NotAllowed: X, NotValidForTokenExchange: X, NotYetApprovedLoginVerification: X, OfflineCodeSync: X, OverLoginVerificationAttemptLimit: J, OverLoginVerificationConvertLimit: J, OverResendLimit: J, SmsOverPerUserLimit: J, TwoFactorAuthMethodExpired: K, FailureSendingLoginVerificationRequest: G, OverLoginVerificationStartLimit: J, SmsVerPerUserLimit: J, TwoFactorAuthMethodDoesNotExist: X },
+                te = ({ challengeId: e, isNonModalScreen: t, onSuccess: a }) => {
+                    const { challenge: r, error: c, loginRequestId: i, twoFactor: d } = Q({ challengeId: e }),
                         u = (0, o.useHistory)(),
                         h = (0, l.p)(),
                         f = u.location?.state,
                         y = s()(),
                         b = (0, m.z)();
-                    a.useEffect(() => {
+                    n.useEffect(() => {
                         b && b.scribe({ page: "money", section: "money-two-factor-auth", action: "impression" });
                     }, [b]);
-                    const v = a.useCallback(
+                    const v = n.useCallback(
                             ({ challengeResponse: t }) =>
                                 i
-                                    ? P({ environment: y, challengeId: e, loginRequestId: i, challengeResponse: t })
+                                    ? C({ environment: y, challengeId: e, loginRequestId: i, challengeResponse: t })
                                           .then((e) => {
-                                              const { error: t, id: a, verified: r } = e;
-                                              return a === i && r ? n({ loginRequestId: i }) : t && h({ text: ee[t] ?? G }), e;
+                                              const { error: t, id: n, verified: r } = e;
+                                              return n === i && r ? a({ loginRequestId: i }) : t && h({ text: ee[t] ?? G }), e;
                                           })
                                           .catch(() => {
                                               h({ text: G });
                                           })
                                     : Promise.resolve(),
-                            [i, y, e, n, h],
+                            [i, y, e, a, h],
                         ),
-                        { challengeInitiator: C, closePath: w } = f ?? {},
-                        k = a.useCallback(() => {
-                            (0, _.qc)({ environment: y, closePath: w, challengeInitiator: C, history: u });
-                        }, [C, w, y, u]),
-                        I = a.useMemo(() => (d?.type === p.O.BackupCode ? a.createElement(N, { onClose: k, onSubmit: v }) : r && d?.type === p.O.Passkey ? a.createElement(L, { challenge: r, onClose: k, onSubmit: v }) : d?.type === p.O.Sms ? a.createElement(V, { onClose: k, onSubmit: v }) : d?.type === p.O.Totp ? a.createElement(A, { onClose: k, onSubmit: v }) : a.createElement(D, { error: c ? (ee[c] ?? G) : G, onClose: k })), [r, c, k, v, d?.type]);
-                    return a.createElement(g.Z, { backButtonType: "close", history: u, isFullWidth: t, onBackClick: k }, I);
+                        { challengeInitiator: P, closePath: k } = f ?? {},
+                        w = n.useCallback(() => {
+                            (0, p.qc)({ environment: y, closePath: k, challengeInitiator: P, history: u });
+                        }, [P, k, y, u]),
+                        I = n.useMemo(() => (d?.type === _.O.BackupCode ? n.createElement(N, { onClose: w, onSubmit: v }) : r && d?.type === _.O.Passkey ? n.createElement(L, { challenge: r, onClose: w, onSubmit: v }) : d?.type === _.O.Sms ? n.createElement(j, { onClose: w, onSubmit: v }) : d?.type === _.O.Totp ? n.createElement(F, { onClose: w, onSubmit: v }) : n.createElement(D, { error: c ? (ee[c] ?? G) : G, onClose: w })), [r, c, w, v, d?.type]);
+                    return n.createElement(g.Z, { backButtonType: "close", history: u, isFullWidth: t, onBackClick: w }, I);
                 },
-                ne = { context: "VerifyTwoFactorAuth" };
-            function ae(e) {
-                return a.createElement(i.H, { errorConfig: ne }, a.createElement(te, e));
+                ae = { context: "VerifyTwoFactorAuth" };
+            function ne(e) {
+                return n.createElement(i.H, { errorConfig: ae }, n.createElement(te, e));
             }
-            const re = a.memo(ae);
-            var se = n(160144);
+            const re = n.memo(ne);
+            var se = a(160144);
             const oe = { [d.kW.forgotPin]: "You PIN has been successfuly changed.", [d.kW.changeCardPin]: "You PIN has been successfuly changed." },
                 ce = { [d.kW.forgotPin]: d.P_.forgotPin, [d.kW.changeCardPin]: d.P_.changeCardPin },
                 ie = [d.kW.forgotPin, d.kW.changeCardPin],
-                le = ({ challengeId: e, challengeInitiator: t, onSuccess: n }) => {
+                le = ({ challengeId: e, challengeInitiator: t, onSuccess: a }) => {
                     const r = (0, o.useHistory)(),
                         i = (0, m.z)(),
-                        p = (0, l.p)(),
+                        _ = (0, l.p)(),
                         g = r.location?.state,
-                        { challengeId: f, challengeInitiator: y, closePath: b, message: v, recordId: P, redirectPath: C, redirectState: w, successMessage: k } = g ?? {},
-                        [I, E] = a.useState(e ?? f),
-                        Z = t ?? y,
-                        [S, T] = a.useState(v ?? h.q9.initiate),
-                        [F, A] = a.useState(),
-                        [R, x] = a.useState(!1),
+                        { challengeId: f, challengeInitiator: y, closePath: b, message: v, recordId: C, redirectPath: P, redirectState: k, successMessage: w } = g ?? {},
+                        [I, Z] = n.useState(e ?? f),
+                        E = t ?? y,
+                        [S, T] = n.useState(v ?? h.q9.initiate),
+                        [A, F] = n.useState(),
+                        [R, x] = n.useState(!1),
                         q = s()(),
-                        N = Z === d.kW.auth,
-                        M = (Z ? ce[Z] : void 0) ?? d.P_.challenge,
-                        H = ie.includes(Z),
-                        z = (Z ? oe[Z] : void 0) ?? k,
-                        D = a.useCallback((e) => {
-                            A(e.loginRequestId), T(h.q9.complete2fa), x(!1);
+                        N = E === d.kW.auth,
+                        M = (E ? ce[E] : void 0) ?? d.P_.challenge,
+                        z = ie.includes(E),
+                        H = (E ? oe[E] : void 0) ?? w,
+                        D = n.useCallback((e) => {
+                            F(e.loginRequestId), T(h.q9.complete2fa), x(!1);
                         }, []),
-                        O = a.useCallback(
+                        O = n.useCallback(
                             (e) => {
-                                const { authStatus: t, challengeId: a, message: s } = e.data;
+                                const { authStatus: t, challengeId: n, message: s } = e.data;
                                 switch (s) {
                                     case se.T.success:
-                                        N && 1 === t && u.Z.updateSessionStatus(c.c.Active), P ? (0, _.Se)(q, P) : Z === d.kW.activateCard ? (0, _.uN)(q) : (0, _.J$)(q), C ? r.replace(C, w) : n ? n() : r.goBack(), z && p({ text: z });
+                                        N && 1 === t && u.Z.updateSessionStatus(c.c.Active), C ? (0, p.Se)(q, C) : E === d.kW.activateCard ? (0, p.uN)(q) : (0, p.J$)(q), P ? r.replace(P, k) : a ? a() : r.goBack(), H && _({ text: H });
                                         break;
                                     case se.T.docvChallenge:
-                                        r.replace(d.AU.tier3.verifyIdentityPath, { ...g, challengeInitiator: Z });
+                                        r.replace(d.AU.tier3.verifyIdentityPath, { ...g, challengeInitiator: E });
                                         break;
                                     case se.T.kycChallenge:
-                                        r.replace(d.AU.tier2.verifyIdentityPath, { ...g, challengeInitiator: Z });
+                                        r.replace(d.AU.tier2.verifyIdentityPath, { ...g, challengeInitiator: E });
                                         break;
                                     case se.T.selfieChallenge:
-                                        r.replace(d.AU.selfie.verifyIdentityPath, { ...g, challengeInitiator: Z });
+                                        r.replace(d.AU.selfie.verifyIdentityPath, { ...g, challengeInitiator: E });
                                         break;
                                     case se.T.twoFactorChallenge:
-                                        E(a), x(!0);
+                                        Z(n), x(!0);
                                         break;
                                     case se.T.forgotPin:
                                         r.push(d.jR, { challengeInitiator: d.kW.forgotPin });
@@ -318,214 +359,243 @@
                                         N && u.Z.fetchNewSession();
                                         break;
                                     case se.T.close:
-                                        (0, _.qc)({ environment: q, closePath: b, challengeInitiator: Z, history: r });
+                                        (0, p.qc)({ environment: q, closePath: b, challengeInitiator: E, history: r });
                                 }
                             },
-                            [N, P, Z, C, n, z, r, g, q, b, w, p],
+                            [N, C, E, P, a, H, r, g, q, b, k, _],
                         );
-                    a.useEffect(() => {
+                    n.useEffect(() => {
                         i && i.scribe({ page: "money", section: "verify-challenge", action: "impression" });
                     }, [i]),
-                        a.useEffect(
+                        n.useEffect(
                             () => (
-                                Z === d.kW.auth && u.Z.loadChallenge(),
+                                E === d.kW.auth && u.Z.loadChallenge(),
                                 () => {
-                                    Z === d.kW.auth && u.Z.closeChallenge();
+                                    E === d.kW.auth && u.Z.closeChallenge();
                                 }
                             ),
-                            [Z],
+                            [E],
                         );
                     const L = N;
-                    return a.createElement(a.Fragment, null, I && R ? a.createElement(re, { challengeId: I, isNonModalScreen: L, onSuccess: D }) : null, I || H ? a.createElement(se.Z, { closePath: b, eventCallback: O, isBackgroundHidden: R, isNonModalScreen: L, linkType: M, payload: { challengeId: I, loginRequestId: F, message: S }, redirectPath: C, redirectState: w }) : null);
+                    return n.createElement(n.Fragment, null, I && R ? n.createElement(re, { challengeId: I, isNonModalScreen: L, onSuccess: D }) : null, I || z ? n.createElement(se.Z, { closePath: b, eventCallback: O, isBackgroundHidden: R, isNonModalScreen: L, linkType: M, payload: { challengeId: I, loginRequestId: A, message: S }, redirectPath: P, redirectState: k }) : null);
                 },
                 de = { context: "VerifyChallenge" };
             function ue(e) {
-                return a.createElement(i.H, { errorConfig: de }, a.createElement(le, e));
+                return n.createElement(i.H, { errorConfig: de }, n.createElement(le, e));
             }
-            const me = a.memo(ue);
+            const me = n.memo(ue);
         },
-        160144: (e, t, n) => {
-            n.d(t, { T: () => w, Z: () => S });
-            n(543673), n(240753), n(128399), n(136728);
-            var a = n(202784),
-                r = n(325686),
-                s = n(437429),
-                o = n.n(s),
-                c = n(107267),
-                i = n(167630),
-                l = n(362075),
-                d = n(392237),
-                u = n(980407),
-                m = n(943914),
-                h = n(655352),
-                _ = n(163889),
-                p = n(514639),
-                g = n(412450),
-                f = n(441484),
-                y = n(99387),
-                b = n(743080),
-                v = n(727384);
-            n(571372);
-            class P {
+        160144: (e, t, a) => {
+            a.d(t, { T: () => k, Z: () => S });
+            a(543673), a(240753), a(128399), a(136728);
+            var n = a(202784),
+                r = a(325686),
+                s = a(437429),
+                o = a.n(s),
+                c = a(107267),
+                i = a(167630),
+                l = a(362075),
+                d = a(392237),
+                u = a(980407),
+                m = a(943914),
+                h = a(655352),
+                p = a(163889),
+                _ = a(514639),
+                g = a(412450),
+                f = a(441484),
+                y = a(99387),
+                b = a(743080),
+                v = a(727384);
+            a(571372);
+            class C {
                 constructor() {
-                    if (P.instance) throw new Error("Please avoid instantiating this singleton.");
+                    if (C.instance) throw new Error("Please avoid instantiating this singleton.");
                 }
                 static _updateActiveHandler(e, t) {
-                    t !== P.activeHandler && (P.activeHandler && (window.removeEventListener("message", P.activeHandler), (P.activeHandler = void 0)), t && (window.addEventListener("message", t), (P.activeHandler = t)));
+                    t !== C.activeHandler && (C.activeHandler && (window.removeEventListener("message", C.activeHandler), (C.activeHandler = void 0)), t && (window.addEventListener("message", t), (C.activeHandler = t)));
                 }
                 static addHandler(e, t) {
-                    P.handlers.add(t);
-                    const { isInlineFrame: n } = p.QU[e];
-                    (P.activeHandler && n) || P._updateActiveHandler(e, t);
+                    C.handlers.add(t);
+                    const { isInlineFrame: a } = _.QU[e];
+                    (C.activeHandler && a) || C._updateActiveHandler(e, t);
                 }
                 static removeHandler(e, t) {
-                    if ((P.handlers.delete(t), P.activeHandler === t)) {
-                        const t = P.handlers.values().next().value;
-                        P._updateActiveHandler(e, t);
+                    if ((C.handlers.delete(t), C.activeHandler === t)) {
+                        const t = C.handlers.values().next().value;
+                        C._updateActiveHandler(e, t);
                     }
                 }
             }
-            P.handlers = new Set();
-            const C = ({ allowedOrigin: e, handler: t, linkType: n }) => {
-                    const r = a.useCallback(
-                        (n) => {
-                            n.origin === e && t(n);
+            C.handlers = new Set();
+            const P = ({ allowedOrigin: e, handler: t, linkType: a }) => {
+                    const r = n.useCallback(
+                        (a) => {
+                            a.origin === e && t(a);
                         },
                         [t, e],
                     );
-                    a.useEffect(() => (P.addHandler(n, r), () => P.removeHandler(n, r)), [n, r]);
+                    n.useEffect(() => (C.addHandler(a, r), () => C.removeHandler(a, r)), [a, r]);
                 },
-                w = Object.freeze({ changePhone: "change-phone", success: "success", failure: "failure", ineligible: "ineligible", pendingReview: "pending-review", redirect: "redirect", close: "close", ready: "ready", initPorts: "initPorts", invalidChallenge: "invalid-challenge", docvChallenge: "challenge-docv-required", kycChallenge: "challenge-kyc-required", selfieChallenge: "challenge-selfie-required", twoFactorChallenge: "challenge-2fa-required", accountNumbercopiedToClipboard: "account-number-copied-to-clipboard", routingNumbercopiedToClipboard: "routing-number-copied-to-clipboard", edit: "edit", forgotPin: "forgot-pin", kyc: "kyc", stepUpDocv: "stepUpDocv" }),
-                k = (0, v.bI)(),
-                I = ({ allowClipboardWrite: e, iframeUrl: t, isBackgroundHidden: n, isInlineFrame: s, isNonModalScreen: o }) => {
+                k = Object.freeze({ changePhone: "change-phone", success: "success", failure: "failure", ineligible: "ineligible", pendingReview: "pending-review", redirect: "redirect", close: "close", ready: "ready", initPorts: "initPorts", invalidChallenge: "invalid-challenge", docvChallenge: "challenge-docv-required", kycChallenge: "challenge-kyc-required", selfieChallenge: "challenge-selfie-required", twoFactorChallenge: "challenge-2fa-required", accountNumbercopiedToClipboard: "account-number-copied-to-clipboard", routingNumbercopiedToClipboard: "routing-number-copied-to-clipboard", edit: "edit", forgotPin: "forgot-pin", kyc: "kyc", stepUpDocv: "stepUpDocv" }),
+                w = (0, v.bI)(),
+                I = ({ allowClipboardWrite: e, iframeUrl: t, isBackgroundHidden: a, isInlineFrame: s, isNonModalScreen: o }) => {
                     const d = (0, c.useHistory)(),
-                        [m, p] = a.useState(!1),
+                        [m, _] = n.useState(!1),
                         g = (0, h.ZP)(),
                         f = g ? T.paddingSmall : null,
-                        y = a.useCallback(() => {
-                            p(!0);
+                        y = n.useCallback(() => {
+                            _(!0);
                         }, []),
-                        v = a.createElement(r.Z, { style: n ? T.hide : T.modal }, t && a.createElement(a.Fragment, null, !m && a.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" }), a.createElement(l.Z, { allowClipboardWrite: e, allowForms: !0, onLoad: y, reportError: _.ZP, src: t, style: m ? [T.idvIframe, s ? void 0 : f] : T.hide, title: "Money" })));
-                    return o || s || n ? v : a.createElement(u.Z, { history: d, renderHeader: () => null }, a.createElement(r.Z, { style: g ? T.modalContainer : T.modalContainerNarrow }, v));
+                        v = n.createElement(r.Z, { style: a ? T.hide : T.modal }, t && n.createElement(n.Fragment, null, !m && n.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" }), n.createElement(l.Z, { allowClipboardWrite: e, allowForms: !0, onLoad: y, reportError: p.ZP, src: t, style: m ? [T.idvIframe, s ? void 0 : f] : T.hide, title: "Money" })));
+                    return o || s || a ? v : n.createElement(u.Z, { history: d, renderHeader: () => null }, n.createElement(r.Z, { style: g ? T.modalContainer : T.modalContainerNarrow }, v));
                 },
-                E = (e) => {
-                    const { additionalParams: t, linkType: n = p.P_.onboarding, redirectPath: r, errorPath: s, redirectState: i, closePath: l, eventCallback: d, payload: u, isNonModalScreen: m, isBackgroundHidden: h, challengeInitiator: _, challengeId: b } = e,
-                        P = (0, c.useHistory)(),
-                        { paymentsOrigin: E } = (0, g.Z)(),
-                        Z = f.Z.getSession(),
+                Z = (e) => {
+                    const { additionalParams: t, linkType: a = _.P_.onboarding, redirectPath: r, errorPath: s, redirectState: i, closePath: l, eventCallback: d, payload: u, isNonModalScreen: m, isBackgroundHidden: h, challengeInitiator: p, challengeId: b } = e,
+                        C = (0, c.useHistory)(),
+                        { paymentsOrigin: Z } = (0, g.Z)(),
+                        E = f.Z.getSession(),
                         S = f.Z.getProviderToken(),
                         T = (0, v.gh)(),
-                        [F, A] = a.useState(!1),
+                        [A, F] = n.useState(!1),
                         R = o()(),
-                        { allowClipboardWrite: x, defaultClosePath: q, invalidateOnClose: N, isInlineFrame: M, path: H, redirectOnCompletion: z } = p.QU[n],
-                        D = a.useCallback(
+                        { allowClipboardWrite: x, defaultClosePath: q, invalidateOnClose: N, isInlineFrame: M, path: z, redirectOnCompletion: H } = _.QU[a],
+                        D = n.useCallback(
                             (e) => {
-                                const { errors: t, message: n, url: a } = e.data;
-                                switch (n) {
-                                    case w.initPorts: {
+                                const { errors: t, message: a, url: n } = e.data;
+                                switch (a) {
+                                    case k.initPorts: {
                                         const t = e.ports?.[0];
                                         t && (u && t.postMessage(u), (t.onmessage = d));
                                         break;
                                     }
-                                    case w.changePhone:
-                                        P.push("/settings/phone");
+                                    case k.changePhone:
+                                        C.push("/settings/phone");
                                         break;
-                                    case w.success:
-                                        z && A(!0);
+                                    case k.success:
+                                        H && F(!0);
                                         break;
-                                    case w.failure:
-                                        z && P.replace(s ?? p.D$, { errors: t });
+                                    case k.failure:
+                                        H && C.replace(s ?? _.D$, { errors: t });
                                         break;
-                                    case w.ineligible:
-                                        (0, v.J$)(R), P.replace(p.R);
+                                    case k.ineligible:
+                                        (0, v.J$)(R), C.replace(_.R);
                                         break;
-                                    case w.pendingReview:
-                                        (0, v.J$)(R), P.replace(p.vr);
+                                    case k.pendingReview:
+                                        (0, v.J$)(R), C.replace(_.vr);
                                         break;
-                                    case w.redirect:
-                                        k && (window.location.href = a);
+                                    case k.redirect:
+                                        w && (window.location.href = n);
                                         break;
-                                    case w.close:
-                                        N && (0, v.J$)(R), P.replace(l ?? q);
+                                    case k.close:
+                                        N && (0, v.J$)(R), C.replace(l ?? q);
                                 }
                                 d?.(e);
                             },
-                            [d, P, z, R, N, l, q, u, s],
+                            [d, C, H, R, N, l, q, u, s],
                         );
-                    C({ allowedOrigin: E, handler: D, linkType: n });
-                    const O = a.useMemo(() => {
-                        if (!Z || !E || !S) return;
+                    P({ allowedOrigin: Z, handler: D, linkType: a });
+                    const O = n.useMemo(() => {
+                        if (!E || !Z || !S) return;
                         const e = new Map();
                         return (
-                            t?.forEach(({ key: t, value: n }) => {
-                                e.set(t, n);
+                            t?.forEach(({ key: t, value: a }) => {
+                                e.set(t, a);
                             }),
-                            k &&
+                            w &&
                                 e.set(
                                     "redirectUrl",
                                     (({ challengeId: e, challengeInitiator: t }) => {
-                                        const n = new URL(`https://${window.location.host}${p.$l}`);
-                                        return e && n.searchParams.set("challengeId", e), t && n.searchParams.set("challengeInitiator", t), n.href;
-                                    })({ challengeId: b, challengeInitiator: _ }),
+                                        const a = new URL(`https://${window.location.host}${_.$l}`);
+                                        return e && a.searchParams.set("challengeId", e), t && a.searchParams.set("challengeInitiator", t), a.href;
+                                    })({ challengeId: b, challengeInitiator: p }),
                                 ),
-                            (0, v.uG)({ basePath: `/${H}`, xPaymentsSession: Z, theme: T, paymentsOrigin: E, moreSearchParams: e, providerToken: S })
+                            (0, v.uG)({ basePath: `/${z}`, xPaymentsSession: E, theme: T, paymentsOrigin: Z, moreSearchParams: e, providerToken: S })
                         );
-                    }, [Z, E, S, t, H, T, b, _]);
-                    return F ? a.createElement(y.default, { challengeId: b, challengeInitiator: _, linkType: n, redirectPath: r, redirectState: i }) : a.createElement(I, { allowClipboardWrite: x, iframeUrl: O, isBackgroundHidden: h, isInlineFrame: M, isNonModalScreen: m });
+                    }, [E, Z, S, t, z, T, b, p]);
+                    return A ? n.createElement(y.default, { challengeId: b, challengeInitiator: p, linkType: a, redirectPath: r, redirectState: i }) : n.createElement(I, { allowClipboardWrite: x, iframeUrl: O, isBackgroundHidden: h, isInlineFrame: M, isNonModalScreen: m });
                 },
-                Z = (e) => {
-                    const t = a.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" });
-                    return a.createElement(m.B, { fallback: t }, a.createElement(E, e));
+                E = (e) => {
+                    const t = n.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" });
+                    return n.createElement(m.B, { fallback: t }, n.createElement(Z, e));
                 },
-                S = a.memo(Z),
+                S = n.memo(E),
                 T = d.default.create((e) => ({ idvIframe: { width: "100%", height: "100%", paddingTop: "0px", overflow: "hidden" }, paddingSmall: { paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space16 }, hide: { display: "none" }, modal: { width: "100%", height: "100%" }, modalContainer: { width: 500, height: 600 }, modalContainerNarrow: { width: "100%", height: "100%" } }));
         },
-        412100: (e, t, n) => {
-            n.d(t, { Z: () => d });
-            var a = n(297679),
-                r = (n(585488), n(353391)),
-                s = n.n(r),
-                o = n(312771),
-                c = n(127218),
-                i = n(43429);
-            const l = a.Z,
+        412100: (e, t, a) => {
+            a.d(t, { Z: () => d });
+            var n = a(297679),
+                r = (a(585488), a(353391)),
+                s = a.n(r),
+                o = a(312771),
+                c = a(127218),
+                i = a(43429);
+            const l = n.Z,
                 d = () => {
-                    const { data: e, fetchNext: t, refetch: n, subsequentFetchStatus: a } = (0, c.C)(l, { count: i.ic }),
+                    const { data: e, fetchNext: t, refetch: a, subsequentFetchStatus: n } = (0, c.C)(l, { count: i.ic }),
                         r = e?.get_payments_customer_actions?.__id ?? "useActionableItemsQuery_TransactionActions_slice";
                     return (
                         s()([r], () => {
-                            n();
+                            a();
                         }),
-                        { data: e, refetch: n, isRefreshing: a === o.ZP.LOADING, fetchNext: t, hasNotices: !!e?.get_payments_customer_actions?.items?.some((e) => "XPaymentsCustomerNotice" === e?.__typename), hasPendingTransactions: !!e?.get_payments_customer_actions?.items?.some((e) => "XPaymentsTransaction" === e?.__typename) }
+                        { data: e, refetch: a, isRefreshing: n === o.ZP.LOADING, fetchNext: t, hasNotices: !!e?.get_payments_customer_actions?.items?.some((e) => "XPaymentsCustomerNotice" === e?.__typename), hasPendingTransactions: !!e?.get_payments_customer_actions?.items?.some((e) => "XPaymentsTransaction" === e?.__typename) }
                     );
                 };
         },
-        423475: (e, t, n) => {
-            n.d(t, { Z: () => m });
-            var a = n(202784),
-                r = n(666536),
-                s = n(43429),
-                o = n(727384),
-                c = n(458254),
-                i = (n(585488), n(351743)),
-                l = n.n(i);
+        798350: (e, t, a) => {
+            a.d(t, { Z: () => i });
+            var n = a(914507),
+                r = a(202784),
+                s = (a(585488), a(351743)),
+                o = a.n(s);
+            const c = n.Z,
+                i = () => {
+                    const [e, t] = o()(c);
+                    return [
+                        r.useCallback(
+                            ({ cardId: t }) =>
+                                new Promise((a, n) => {
+                                    e({
+                                        variables: { payment_method_id: t },
+                                        onCompleted: (e, t) => {
+                                            const r = e?.activate_issued_card?.errors,
+                                                s = e?.activate_issued_card?.challenge_id;
+                                            s ? a({ challengeId: s }) : n(r || t);
+                                        },
+                                        onError: n,
+                                    });
+                                }),
+                            [e],
+                        ),
+                        t,
+                    ];
+                };
+        },
+        423475: (e, t, a) => {
+            a.d(t, { Z: () => m });
+            var n = a(202784),
+                r = a(666536),
+                s = a(43429),
+                o = a(727384),
+                c = a(458254),
+                i = (a(585488), a(351743)),
+                l = a.n(i);
             const d = c.Z,
                 u = () => {
                     const [e, t] = l()(d);
                     return [
-                        a.useCallback(
-                            ({ amount: t, creditMethod: n, currency: a, debitMethod: r }) =>
+                        n.useCallback(
+                            ({ amount: t, creditMethod: a, currency: n, debitMethod: r }) =>
                                 new Promise((s, o) => {
                                     e({
-                                        variables: { base_amount: { currency: a, local_micro: t }, transfer_method_type: { pull_transfer_method_type: n, push_transfer_method_type: r } },
-                                        onCompleted: (e, n) => {
+                                        variables: { base_amount: { currency: n, local_micro: t }, transfer_method_type: { pull_transfer_method_type: a, push_transfer_method_type: r } },
+                                        onCompleted: (e, a) => {
                                             const r = e?.calculate_transaction_fees?.errors,
                                                 c = e?.calculate_transaction_fees,
                                                 i = c?.base_amount?.local_micro,
                                                 l = c?.amount?.local_micro,
                                                 d = c?.total_fees?.local_micro,
                                                 u = c?.base_amount?.currency;
-                                            c ? s({ baseAmount: i ?? t, totalAmount: l, currency: u ?? a, feeAmount: d }) : r && o(r);
+                                            c ? s({ baseAmount: i ?? t, totalAmount: l, currency: u ?? n, feeAmount: d }) : r && o(r);
                                         },
                                         onError: o,
                                     });
@@ -537,13 +607,13 @@
                 },
                 m = (e) => {
                     const [t] = u(),
-                        [n, c] = a.useState({ baseAmount: "", currency: s.a7 }),
-                        [i, l] = a.useState(!0),
-                        d = a.useCallback(
-                            ({ newAccount: n, newAmount: a }) => {
-                                if (n && a) {
-                                    const r = (0, o.Dc)(a),
-                                        i = (0, o.V9)(n),
+                        [a, c] = n.useState({ baseAmount: "", currency: s.a7 }),
+                        [i, l] = n.useState(!0),
+                        d = n.useCallback(
+                            ({ newAccount: a, newAmount: n }) => {
+                                if (a && n) {
+                                    const r = (0, o.Dc)(n),
+                                        i = (0, o.V9)(a),
                                         d = r.toString(),
                                         u = e === s.Rz.debit ? i.debitMethod : void 0,
                                         m = e === s.Rz.credit ? i.creditMethod : void 0;
@@ -563,37 +633,37 @@
                             },
                             [t, e],
                         ),
-                        m = a.useMemo(() => (0, r.Z)((e) => d(e), 500), [d]);
-                    return { amountWithFees: n, feeCalcInProgress: i, calculateFee: d, debouncedCalculateFee: m };
+                        m = n.useMemo(() => (0, r.Z)((e) => d(e), 500), [d]);
+                    return { amountWithFees: a, feeCalcInProgress: i, calculateFee: d, debouncedCalculateFee: m };
                 };
         },
-        500386: (e, t, n) => {
-            n.d(t, { Z: () => l });
-            var a = n(663090),
-                r = n(202784),
-                s = (n(585488), n(351743)),
-                o = n.n(s),
-                c = n(727384);
-            const i = a.Z,
+        500386: (e, t, a) => {
+            a.d(t, { Z: () => l });
+            var n = a(663090),
+                r = a(202784),
+                s = (a(585488), a(351743)),
+                o = a.n(s),
+                c = a(727384);
+            const i = n.Z,
                 l = () => {
                     const [e, t] = o()(i);
                     return [
                         r.useCallback(
-                            ({ recordId: t, transactionId: n }) =>
-                                new Promise((a, r) => {
+                            ({ recordId: t, transactionId: a }) =>
+                                new Promise((n, r) => {
                                     e({
-                                        variables: { transfer_id: n },
+                                        variables: { transfer_id: a },
                                         onCompleted: (e, t) => {
-                                            const n = e?.cancel_transfer?.id,
+                                            const a = e?.cancel_transfer?.id,
                                                 s = e?.cancel_transfer?.challenge_id,
                                                 o = e?.cancel_transfer?.transaction_status,
                                                 c = e?.cancel_transfer?.errors;
-                                            n && o ? a({ transactionId: n, status: o, challengeId: s }) : r(c || t);
+                                            a && o ? n({ transactionId: a, status: o, challengeId: s }) : r(c || t);
                                         },
-                                        updater: (e, n) => {
-                                            const a = n?.cancel_transfer?.transaction_status,
-                                                r = n?.cancel_transfer?.reason_code;
-                                            (0, c.H_)(e, { status: a, recordId: t, reasonCode: r });
+                                        updater: (e, a) => {
+                                            const n = a?.cancel_transfer?.transaction_status,
+                                                r = a?.cancel_transfer?.reason_code;
+                                            (0, c.H_)(e, { status: n, recordId: t, reasonCode: r });
                                         },
                                         onError: r,
                                     });
@@ -604,33 +674,33 @@
                     ];
                 };
         },
-        604347: (e, t, n) => {
-            n.d(t, { Z: () => l });
-            var a = n(597785),
-                r = n(202784),
-                s = (n(585488), n(351743)),
-                o = n.n(s),
-                c = n(727384);
-            const i = a.Z,
+        604347: (e, t, a) => {
+            a.d(t, { Z: () => l });
+            var n = a(597785),
+                r = a(202784),
+                s = (a(585488), a(351743)),
+                o = a.n(s),
+                c = a(727384);
+            const i = n.Z,
                 l = () => {
                     const [e, t] = o()(i);
                     return [
                         r.useCallback(
-                            ({ recordId: t, transactionId: n }) =>
-                                new Promise((a, r) => {
+                            ({ recordId: t, transactionId: a }) =>
+                                new Promise((n, r) => {
                                     e({
-                                        variables: { transfer_id: n },
+                                        variables: { transfer_id: a },
                                         onCompleted: (e, t) => {
-                                            const n = e?.cancel_request_transfer?.id,
+                                            const a = e?.cancel_request_transfer?.id,
                                                 s = e?.cancel_request_transfer?.transaction_status,
                                                 o = e?.cancel_request_transfer?.challenge_id,
                                                 c = e?.cancel_request_transfer?.errors;
-                                            n && s ? a({ transactionId: n, status: s, challengeId: o }) : r(c || t);
+                                            a && s ? n({ transactionId: a, status: s, challengeId: o }) : r(c || t);
                                         },
-                                        updater: (e, n) => {
-                                            const a = n?.cancel_request_transfer?.transaction_status,
-                                                r = n?.cancel_request_transfer?.reason_code;
-                                            (0, c.H_)(e, { status: a, recordId: t, reasonCode: r });
+                                        updater: (e, a) => {
+                                            const n = a?.cancel_request_transfer?.transaction_status,
+                                                r = a?.cancel_request_transfer?.reason_code;
+                                            (0, c.H_)(e, { status: n, recordId: t, reasonCode: r });
                                         },
                                         onError: r,
                                     });
@@ -641,139 +711,139 @@
                     ];
                 };
         },
-        607929: (e, t, n) => {
-            n.d(t, { C7: () => m, bf: () => u });
-            var a = n(990563),
-                r = n(202784),
-                s = (n(585488), n(351743)),
-                o = n.n(s),
-                c = n(402229),
-                i = n(727384);
-            const l = a.Z,
+        607929: (e, t, a) => {
+            a.d(t, { C7: () => m, bf: () => u });
+            var n = a(990563),
+                r = a(202784),
+                s = (a(585488), a(351743)),
+                o = a.n(s),
+                c = a(402229),
+                i = a(727384);
+            const l = n.Z,
                 d = ({ decision: e }) => {
-                    const [t, n] = o()(l);
+                    const [t, a] = o()(l);
                     return [
                         r.useCallback(
-                            ({ recordId: n, transactionId: a }) =>
+                            ({ recordId: a, transactionId: n }) =>
                                 new Promise((r, s) => {
                                     t({
-                                        variables: { transfer_id: a, decision: e },
+                                        variables: { transfer_id: n, decision: e },
                                         onCompleted: (e, t) => {
-                                            const n = e?.claim_transfer?.id,
-                                                a = e?.claim_transfer?.transaction_status,
+                                            const a = e?.claim_transfer?.id,
+                                                n = e?.claim_transfer?.transaction_status,
                                                 o = e?.claim_transfer?.challenge_id,
                                                 c = e?.claim_transfer?.errors;
-                                            n && a ? r({ transactionId: n, status: a, challengeId: o }) : s(c || t);
+                                            a && n ? r({ transactionId: a, status: n, challengeId: o }) : s(c || t);
                                         },
                                         updater: (e, t) => {
-                                            const a = t?.claim_transfer?.transaction_status,
+                                            const n = t?.claim_transfer?.transaction_status,
                                                 r = t?.claim_transfer?.reason_code;
-                                            (0, i.H_)(e, { status: a, recordId: n, reasonCode: r });
+                                            (0, i.H_)(e, { status: n, recordId: a, reasonCode: r });
                                         },
                                         onError: s,
                                     });
                                 }),
                             [t, e],
                         ),
-                        n,
+                        a,
                     ];
                 },
                 u = () => d({ decision: c.R.ClaimTransferDecisionAccept }),
                 m = () => d({ decision: c.R.ClaimTransferDecisionReject });
         },
-        202241: (e, t, n) => {
-            n.d(t, { F8: () => m, yA: () => u });
-            var a = n(708154),
-                r = n(202784),
-                s = (n(585488), n(351743)),
-                o = n.n(s),
-                c = n(402311),
-                i = n(727384);
-            const l = a.Z,
+        202241: (e, t, a) => {
+            a.d(t, { F8: () => m, yA: () => u });
+            var n = a(708154),
+                r = a(202784),
+                s = (a(585488), a(351743)),
+                o = a.n(s),
+                c = a(402311),
+                i = a(727384);
+            const l = n.Z,
                 d = ({ decision: e }) => {
-                    const [t, n] = o()(l);
+                    const [t, a] = o()(l);
                     return [
                         r.useCallback(
-                            ({ recordId: n, transactionId: a }) =>
+                            ({ recordId: a, transactionId: n }) =>
                                 new Promise((r, s) => {
                                     t({
-                                        variables: { transaction_id: a, decision: e },
+                                        variables: { transaction_id: n, decision: e },
                                         onCompleted: (e, t) => {
-                                            const n = e?.confirm_unrecognized_payment?.transaction,
-                                                a = n?.id,
-                                                o = n?.transaction_status,
+                                            const a = e?.confirm_unrecognized_payment?.transaction,
+                                                n = a?.id,
+                                                o = a?.transaction_status,
                                                 c = e?.confirm_unrecognized_payment?.errors,
                                                 i = e?.confirm_unrecognized_payment?.challenge_id;
-                                            a && o ? r({ transactionId: a, status: o, challengeId: i }) : s(c || t);
+                                            n && o ? r({ transactionId: n, status: o, challengeId: i }) : s(c || t);
                                         },
                                         updater: (e, t) => {
-                                            const a = t?.confirm_unrecognized_payment?.transaction,
-                                                r = a?.transaction_status,
-                                                s = a?.reason_code;
-                                            (0, i.H_)(e, { status: r, recordId: n, reasonCode: s });
+                                            const n = t?.confirm_unrecognized_payment?.transaction,
+                                                r = n?.transaction_status,
+                                                s = n?.reason_code;
+                                            (0, i.H_)(e, { status: r, recordId: a, reasonCode: s });
                                         },
                                         onError: s,
                                     });
                                 }),
                             [t, e],
                         ),
-                        n,
+                        a,
                     ];
                 },
                 u = () => d({ decision: c.n.UnrecognizedPaymentDecisionAccept }),
                 m = () => d({ decision: c.n.UnrecognizedPaymentDecisionReject });
         },
-        856228: (e, t, n) => {
-            n.d(t, { Z: () => i });
-            var a = n(942512),
-                r = (n(585488), n(353391)),
-                s = n.n(r),
-                o = n(482924);
-            const c = a.Z,
+        856228: (e, t, a) => {
+            a.d(t, { Z: () => i });
+            var n = a(942512),
+                r = (a(585488), a(353391)),
+                s = a.n(r),
+                o = a(482924);
+            const c = n.Z,
                 i = () => {
                     const { data: e, refetch: t } = (0, o.A)(c, {}, { fetchKey: "money-customer-tasks" }),
-                        n = ((e) => (e.get_payments_customer_tasks ? e.get_payments_customer_tasks : null))(e),
-                        a = e?.get_payments_customer_tasks?.__id ?? "useCustomerTasksCarouselQuery_customer_tasks";
+                        a = ((e) => (e.get_payments_customer_tasks ? e.get_payments_customer_tasks : null))(e),
+                        n = e?.get_payments_customer_tasks?.__id ?? "useCustomerTasksCarouselQuery_customer_tasks";
                     return (
-                        s()([a], () => {
+                        s()([n], () => {
                             t();
                         }),
-                        { data: n, refetch: t }
+                        { data: a, refetch: t }
                     );
                 };
         },
-        467734: (e, t, n) => {
-            n.d(t, { Z: () => s });
-            var a = n(125363),
-                r = n(390387);
-            const s = ({ senderId: e }) => (0, a.v9)(r._h) === e;
+        467734: (e, t, a) => {
+            a.d(t, { Z: () => s });
+            var n = a(125363),
+                r = a(390387);
+            const s = ({ senderId: e }) => (0, n.v9)(r._h) === e;
         },
-        226595: (e, t, n) => {
-            n.d(t, { Z: () => c });
-            var a = n(642004),
-                r = n(87877),
-                s = n(922281),
-                o = n(226332);
+        226595: (e, t, a) => {
+            a.d(t, { Z: () => c });
+            var n = a(642004),
+                r = a(87877),
+                s = a(922281),
+                o = a(226332);
             const c = () => {
                 const { activePaymentMethods: e, paymentMethods: t } = (0, o.Z)(r.U.PaymentMethodFilterSpending),
-                    n = e?.filter((e) => e.core?.details?.issued_card_type === a.W.IssuedCardTypeVirtual);
-                return { cards: t, activeVirtualCards: n, activeCards: e, inactivePhysicalCards: t?.filter((e) => e.core?.details?.status === s.D.Inactive && e.core?.details?.issued_card_type === a.W.IssuedCardTypePhysical), cashbackRate: n?.[0]?.core?.details?.cashback?.rate };
+                    a = e?.filter((e) => e.core?.details?.issued_card_type === n.W.IssuedCardTypeVirtual);
+                return { cards: t, activeVirtualCards: a, activeCards: e, inactivePhysicalCards: t?.filter((e) => e.core?.details?.status === s.D.Inactive && e.core?.details?.issued_card_type === n.W.IssuedCardTypePhysical), cashbackRate: a?.[0]?.core?.details?.cashback?.rate };
             };
         },
-        629015: (e, t, n) => {
-            n.d(t, { Z: () => u });
-            var a = n(40969),
-                r = n(202784),
-                s = (n(585488), n(351743)),
-                o = n.n(s),
-                c = n(952793),
-                i = n(441484),
-                l = n(698478);
-            const d = a.Z,
+        629015: (e, t, a) => {
+            a.d(t, { Z: () => u });
+            var n = a(40969),
+                r = a(202784),
+                s = (a(585488), a(351743)),
+                o = a.n(s),
+                c = a(952793),
+                i = a(441484),
+                l = a(698478);
+            const d = n.Z,
                 u = () => {
                     const e = (0, c.hC)("payments_enabled"),
-                        [t, n] = r.useState(),
-                        [a, s] = r.useState(!1),
+                        [t, a] = r.useState(),
+                        [n, s] = r.useState(!1),
                         [u, m] = o()(d);
                     r.useEffect(() => {
                         u({
@@ -781,9 +851,9 @@
                             onCompleted: (e) => {
                                 !!e?.check_transfers_eligibility?.eligible && i.Z.fetchNewSession
                                     ? i.Z.fetchNewSession().finally(() => {
-                                          n(e);
+                                          a(e);
                                       })
-                                    : n(e);
+                                    : a(e);
                             },
                             onError: () => {
                                 s(!0);
@@ -791,180 +861,180 @@
                         });
                     }, [u]);
                     const h = t?.check_transfers_eligibility,
-                        _ = !!h?.eligible,
-                        { permissions: p, requirements: g, roles: f } = h ?? {};
-                    return { isEligible: e && _, hasLoaded: !m && (!!t || a), requirements: g, roles: f, permissions: p, paymentsRedirectPath: (0, l.rW)({ roles: f, permissions: p }) };
+                        p = !!h?.eligible,
+                        { permissions: _, requirements: g, roles: f } = h ?? {};
+                    return { isEligible: e && p, hasLoaded: !m && (!!t || n), requirements: g, roles: f, permissions: _, paymentsRedirectPath: (0, l.rW)({ roles: f, permissions: _ }) };
                 };
         },
-        934265: (e, t, n) => {
-            n.d(t, { Z: () => l });
-            var a = n(183276),
-                r = (n(585488), n(353391)),
-                s = n.n(r),
-                o = n(940211),
-                c = n(482924);
-            const i = a.Z,
+        934265: (e, t, a) => {
+            a.d(t, { Z: () => l });
+            var n = a(183276),
+                r = (a(585488), a(353391)),
+                s = a.n(r),
+                o = a(940211),
+                c = a(482924);
+            const i = n.Z,
                 l = () => {
-                    const { data: e, refetch: t, refetchStatus: n } = (0, c.A)(i, {}, { fetchPolicy: "store-and-network" }),
-                        a = e.get_accounts?.find((e) => e.identifier === o.b.UserMain),
+                    const { data: e, refetch: t, refetchStatus: a } = (0, c.A)(i, {}, { fetchPolicy: "store-and-network" }),
+                        n = e.get_accounts?.find((e) => e.identifier === o.b.UserMain),
                         r = e.get_accounts?.find((e) => e.identifier === o.b.Cashback),
                         l = e.get_accounts?.find((e) => e.identifier === o.b.UserInterest),
-                        d = a?.__id ?? "get_accounts";
+                        d = n?.__id ?? "get_accounts";
                     return (
                         s()([d], () => {
                             t();
                         }),
-                        { balance: a?.balance, refetch: t, refetchStatus: n, cashback: r?.balance, interest: l?.interest_details }
+                        { balance: n?.balance, refetch: t, refetchStatus: a, cashback: r?.balance, interest: l?.interest_details }
                     );
                 };
         },
-        348340: (e, t, n) => {
-            n.d(t, { Z: () => l, b: () => c });
-            n(901951);
-            var a = n(576751),
-                r = (n(585488), n(698478)),
-                s = n(930196),
-                o = n(727384);
+        348340: (e, t, a) => {
+            a.d(t, { Z: () => l, b: () => c });
+            a(901951);
+            var n = a(576751),
+                r = (a(585488), a(698478)),
+                s = a(930196),
+                o = a(727384);
             const c = (e) => (t) => {
-                    const n = t?.get_payments_documents?.find((t) => {
-                            const n = (0, o.Qu)(t.start_date),
-                                a = `${n.getFullYear()}-${n.getMonth()}`;
-                            return e && a && a === e;
+                    const a = t?.get_payments_documents?.find((t) => {
+                            const a = (0, o.Qu)(t.start_date),
+                                n = `${a.getFullYear()}-${a.getMonth()}`;
+                            return e && n && n === e;
                         }),
-                        { url: a, url_expiry_time_millis: s } = n ?? {};
-                    (a && s && !(0, r.x5)(s)) || window.open(a, "_blank");
+                        { url: n, url_expiry_time_millis: s } = a ?? {};
+                    (n && s && !(0, r.x5)(s)) || window.open(n, "_blank");
                 },
-                i = a.Z,
+                i = n.Z,
                 l = ({ type: e }) => {
-                    const { data: t, refetch: n, refetchStatus: a } = (0, s.d)(i, { document_type: e }),
+                    const { data: t, refetch: a, refetchStatus: n } = (0, s.d)(i, { document_type: e }),
                         r = t?.get_payments_documents;
                     return {
                         formattedDocuments: r?.reduce((e, t) => {
-                            const n = `${(0, o.Qu)(t.start_date).getFullYear()}`;
-                            let a = e.find((e) => e.year === n);
-                            return a || ((a = { year: n, documents: [] }), e.unshift(a)), a.documents.unshift(t), e;
+                            const a = `${(0, o.Qu)(t.start_date).getFullYear()}`;
+                            let n = e.find((e) => e.year === a);
+                            return n || ((n = { year: a, documents: [] }), e.unshift(n)), n.documents.unshift(t), e;
                         }, []),
-                        refetch: n,
-                        refetchStatus: a,
+                        refetch: a,
+                        refetchStatus: n,
                     };
                 };
         },
-        137882: (e, t, n) => {
-            n.d(t, { bR: () => c, ig: () => o, vN: () => i });
-            n(543673), n(240753), n(128399);
-            var a = n(412450),
-                r = n(125363),
-                s = n(390387);
+        137882: (e, t, a) => {
+            a.d(t, { bR: () => c, ig: () => o, vN: () => i });
+            a(543673), a(240753), a(128399);
+            var n = a(412450),
+                r = a(125363),
+                s = a(390387);
             const o = (e) => {
-                    const { supportUserId: t } = (0, a.Z)(),
-                        n = (0, r.v9)(s._h);
-                    return t && n ? `/i/chat/${n}-${t}` : null;
+                    const { supportUserId: t } = (0, n.Z)(),
+                        a = (0, r.v9)(s._h);
+                    return t && a ? `/i/chat/${a}-${t}` : null;
                 },
                 c = ({ txId: e }) => {
-                    const { supportUrl: t } = (0, a.Z)(),
-                        n = new URL(t);
-                    return e && n.searchParams.set("tx_id", e), n.href;
+                    const { supportUrl: t } = (0, n.Z)(),
+                        a = new URL(t);
+                    return e && a.searchParams.set("tx_id", e), a.href;
                 },
                 i = ({ reportedHandle: e, txId: t }) => {
-                    const { reportUrl: n } = (0, a.Z)(),
-                        r = new URL(n);
+                    const { reportUrl: a } = (0, n.Z)(),
+                        r = new URL(a);
                     return t && r.searchParams.set("tx_id", t), e && r.searchParams.set("tx_reported_handle", `@${e}`), r.href;
                 };
         },
-        329923: (e, t, n) => {
-            n.d(t, { Z: () => i });
-            var a = n(204133),
-                r = (n(585488), n(712696)),
-                s = n.n(r),
-                o = n(727384);
-            const c = a.Z,
+        329923: (e, t, a) => {
+            a.d(t, { Z: () => i });
+            var n = a(204133),
+                r = (a(585488), a(712696)),
+                s = a.n(r),
+                o = a(727384);
+            const c = n.Z,
                 i = () => {
                     const e = s()(c, {}),
                         t = e?.get_payments_invitation_details,
-                        n = t?.invitation_amount_local_micro,
-                        a = t?.currency,
+                        a = t?.invitation_amount_local_micro,
+                        n = t?.currency,
                         r = t?.invitation_count,
-                        i = n ? (0, o.vw)({ amount: n, currency: a }) : null;
+                        i = a ? (0, o.vw)({ amount: a, currency: n }) : null;
                     return { invitationCount: r ? parseInt(r, 10) : null, formattedAmount: i };
                 };
         },
-        889738: (e, t, n) => {
-            n.d(t, { Z: () => o });
-            var a = n(924592),
-                r = (n(585488), n(482924));
-            const s = a.Z,
+        889738: (e, t, a) => {
+            a.d(t, { Z: () => o });
+            var n = a(924592),
+                r = (a(585488), a(482924));
+            const s = n.Z,
                 o = () => {
-                    const { data: e, refetch: t, refetchStatus: n } = (0, r.A)(s, {}),
-                        a = e?.get_customer?.limits;
-                    return { limits: a, refetch: t, refetchStatus: n };
+                    const { data: e, refetch: t, refetchStatus: a } = (0, r.A)(s, {}),
+                        n = e?.get_customer?.limits;
+                    return { limits: n, refetch: t, refetchStatus: a };
                 };
         },
-        226332: (e, t, n) => {
-            n.d(t, { Z: () => d });
-            var a = n(703325),
-                r = (n(585488), n(353391)),
-                s = n.n(r),
-                o = n(87877),
-                c = n(922281),
-                i = n(482924);
-            const l = a.Z,
+        226332: (e, t, a) => {
+            a.d(t, { Z: () => d });
+            var n = a(703325),
+                r = (a(585488), a(353391)),
+                s = a.n(r),
+                o = a(87877),
+                c = a(922281),
+                i = a(482924);
+            const l = n.Z,
                 d = (e) => {
-                    const { data: t, refetch: n, refetchStatus: a } = (0, i.A)(l, { filter: e ?? o.U.PaymentMethodFilterFunding, withIssuedSpend: e === o.U.PaymentMethodFilterSpending }),
+                    const { data: t, refetch: a, refetchStatus: n } = (0, i.A)(l, { filter: e ?? o.U.PaymentMethodFilterFunding, withIssuedSpend: e === o.U.PaymentMethodFilterSpending }),
                         r = t?.get_payment_methods_v2,
                         d = r?.filter((e) => e.core?.details?.status === c.D.Active),
                         u = r?.filter((e) => e.core?.details?.status === c.D.Active || e.core?.details?.status === c.D.LoginRequired),
                         m = r?.[0]?.__id ?? t?.__id;
                     return (
                         s()([m], () => {
-                            n();
+                            a();
                         }),
-                        { paymentMethods: r, activePaymentMethods: d, usablePaymentMethods: u, refetchStatus: a }
+                        { paymentMethods: r, activePaymentMethods: d, usablePaymentMethods: u, refetchStatus: n }
                     );
                 };
         },
-        529438: (e, t, n) => {
-            n.d(t, { Z: () => o });
-            var a = n(264462),
-                r = (n(585488), n(482924));
-            const s = a.Z,
+        529438: (e, t, a) => {
+            a.d(t, { Z: () => o });
+            var n = a(264462),
+                r = (a(585488), a(482924));
+            const s = n.Z,
                 o = () => {
                     const { data: e } = (0, r.A)(s, {}),
                         t = e?.get_customer?.name;
                     return t;
                 };
         },
-        24568: (e, t, n) => {
-            n.d(t, { Z: () => v });
-            n(136728);
-            var a = n(215285),
-                r = n(202784),
-                s = (n(585488), n(353391)),
-                o = n.n(s),
-                c = n(107267),
-                i = n(782642),
-                l = n(514639),
-                d = n(312771),
-                u = n(482924),
-                m = n(746523),
-                h = n(351743),
-                _ = n.n(h),
-                p = n(727384);
+        24568: (e, t, a) => {
+            a.d(t, { Z: () => v });
+            a(136728);
+            var n = a(215285),
+                r = a(202784),
+                s = (a(585488), a(353391)),
+                o = a.n(s),
+                c = a(107267),
+                i = a(782642),
+                l = a(514639),
+                d = a(312771),
+                u = a(482924),
+                m = a(746523),
+                h = a(351743),
+                p = a.n(h),
+                _ = a(727384);
             const g = m.Z,
                 f = () => {
-                    const [e, t] = _()(g);
+                    const [e, t] = p()(g);
                     return [
                         r.useCallback(
                             ({ preferences: t }) =>
-                                new Promise((n, a) => {
+                                new Promise((a, n) => {
                                     e({
                                         variables: { preferences: t },
                                         onCompleted: (e, t) => {
                                             const r = e?.update_customer_preferences?.errors,
                                                 s = e?.update_customer_preferences?.challenge_id;
-                                            r ? a(r) : n({ challengeId: s });
+                                            r ? n(r) : a({ challengeId: s });
                                         },
-                                        updater: p.Oc,
-                                        onError: a,
+                                        updater: _.Oc,
+                                        onError: n,
                                     });
                                 }),
                             [e],
@@ -973,151 +1043,176 @@
                     ];
                 },
                 y = "Your setting has been successfully updated!",
-                b = a.Z,
+                b = n.Z,
                 v = () => {
-                    const { data: e, refetch: t, refetchStatus: n } = (0, u.A)(b, {}),
-                        a = (0, c.useHistory)(),
+                    const { data: e, refetch: t, refetchStatus: a } = (0, u.A)(b, {}),
+                        n = (0, c.useHistory)(),
                         s = (0, i.p)(),
                         m = e?.get_customer?.preferences,
                         h = r.useMemo(() => ({ require_pin_to_create_transactions: !!m?.require_pin_to_create_transactions, require_pin_to_unlock: !!m?.require_pin_to_unlock, enable_bill_pay: !!m?.enable_bill_pay, require_pin_to_link_payment_method: !!m?.require_pin_to_link_payment_method, only_receive_transfer_from_following: !!m?.only_receive_transfer_from_following, only_allow_request_from_following: !!m?.only_allow_request_from_following, enable_card_payments: !!m?.enable_card_payments }), [m]),
-                        [_, p] = r.useState(h),
+                        [p, _] = r.useState(h),
                         [g, v] = f(),
-                        P = r.useCallback(
-                            (e, t) => {
-                                g({ preferences: { ..._, [e]: t } })
-                                    .then(({ challengeId: e }) => {
-                                        e ? a.push(l.vw, { challengeId: e, successMessage: y, challengeInitiator: l.kW.preference }) : s({ text: y });
-                                    })
-                                    .catch(() => {
-                                        s({ text: "Something went wrong. Please try again later." }), p((n) => ({ ...n, [e]: !t }));
-                                    });
-                            },
-                            [s, g, a, _],
-                        ),
                         C = r.useCallback(
                             (e, t) => {
-                                p((n) => ({ ...n, [e]: t })), P(e, t);
+                                g({ preferences: { ...p, [e]: t } })
+                                    .then(({ challengeId: e }) => {
+                                        e ? n.push(l.vw, { challengeId: e, successMessage: y, challengeInitiator: l.kW.preference }) : s({ text: y });
+                                    })
+                                    .catch(() => {
+                                        s({ text: "Something went wrong. Please try again later." }), _((a) => ({ ...a, [e]: !t }));
+                                    });
                             },
-                            [P],
+                            [s, g, n, p],
                         ),
-                        w = r.useCallback(
+                        P = r.useCallback(
                             (e, t) => {
-                                P(e, t);
+                                _((a) => ({ ...a, [e]: t })), C(e, t);
                             },
-                            [P],
+                            [C],
                         ),
-                        k = e?.get_customer?.__id ?? "get_customer";
+                        k = r.useCallback(
+                            (e, t) => {
+                                C(e, t);
+                            },
+                            [C],
+                        ),
+                        w = e?.get_customer?.__id ?? "get_customer";
                     return (
                         r.useEffect(() => {
-                            n !== d.iF.LOADING && p(h);
-                        }, [h, n]),
-                        o()([k], () => {
+                            a !== d.iF.LOADING && _(h);
+                        }, [h, a]),
+                        o()([w], () => {
                             t();
                         }),
-                        { preferences: _, refetch: t, refetchStatus: n, handlePreferencesChange: C, handleDeferredPreferencesChange: w, isInProgress: v }
+                        { preferences: p, refetch: t, refetchStatus: a, handlePreferencesChange: P, handleDeferredPreferencesChange: k, isInProgress: v }
                     );
                 };
         },
-        557159: (e, t, n) => {
-            n.d(t, { Z: () => o });
-            var a = n(177405),
-                r = (n(585488), n(482924));
-            const s = a.Z,
+        557159: (e, t, a) => {
+            a.d(t, { Z: () => o });
+            var n = a(177405),
+                r = (a(585488), a(482924));
+            const s = n.Z,
                 o = () => {
                     const { data: e } = (0, r.A)(s, {}),
                         t = e?.get_customer?.region;
                     return t;
                 };
         },
-        464978: (e, t, n) => {
-            n.d(t, { Z: () => i });
-            var a = n(192828),
-                r = (n(585488), n(353391)),
-                s = n.n(r),
-                o = n(482924);
-            const c = a.Z,
+        464978: (e, t, a) => {
+            a.d(t, { Z: () => i });
+            var n = a(192828),
+                r = (a(585488), a(353391)),
+                s = a.n(r),
+                o = a(482924);
+            const c = n.Z,
                 i = (e) => {
-                    const { data: t, refetch: n } = (0, o.A)(c, { transaction_id: e }),
-                        a = t.get_transaction_by_id?.__id ?? "get_transaction_by_id";
+                    const { data: t, refetch: a } = (0, o.A)(c, { transaction_id: e }),
+                        n = t.get_transaction_by_id?.__id ?? "get_transaction_by_id";
                     return (
-                        s()([a], () => {
-                            n();
+                        s()([n], () => {
+                            a();
                         }),
                         t
                     );
                 };
         },
-        190940: (e, t, n) => {
-            n.d(t, { Z: () => o });
-            var a = n(727384),
-                r = n(467734),
-                s = n(464978);
+        190940: (e, t, a) => {
+            a.d(t, { Z: () => o });
+            var n = a(727384),
+                r = a(467734),
+                s = a(464978);
             const o = (e) => {
                 const { get_transaction_by_id: t } = (0, s.Z)(e),
-                    { amount_local_micro: n, currency: o, details: c, transaction_status: i, transaction_type: l } = t ?? {},
+                    { amount_local_micro: a, currency: o, details: c, transaction_status: i, transaction_type: l } = t ?? {},
                     d = c?.sender_results?.result,
                     u = d?.core?.name ?? "",
-                    m = n ? (0, a.vw)({ amount: n, currency: o }) : null,
+                    m = a ? (0, n.vw)({ amount: a, currency: o }) : null,
                     h = (0, r.Z)({ senderId: d?.rest_id });
-                return [(0, a.M9)({ status: i, transactionType: l, isViewerSender: h }), u && m ? { name: u, formattedAmount: m } : null];
+                return [(0, n.M9)({ status: i, transactionType: l, isViewerSender: h }), u && m ? { name: u, formattedAmount: m } : null];
             };
         },
-        825941: (e, t, n) => {
-            n.d(t, { Z: () => l });
-            var a = n(258074),
-                r = (n(585488), n(353391)),
-                s = n.n(r),
-                o = n(127218),
-                c = n(43429);
-            const i = a.Z,
+        825941: (e, t, a) => {
+            a.d(t, { Z: () => l });
+            var n = a(258074),
+                r = (a(585488), a(353391)),
+                s = a.n(r),
+                o = a(127218),
+                c = a(43429);
+            const i = n.Z,
                 l = (e) => {
                     const t = { count: c.ic };
                     e?.searchFilterId && (t.search_filter_id = e?.searchFilterId);
-                    const { data: n, fetchNext: a, refetch: r } = (0, o.C)(i, t, { fetchPolicy: "store-and-network" }),
-                        l = n?.get_transactions?.__id ?? "usePaymentsTransactionsListQuery_TransactionList_slice";
+                    const { data: a, fetchNext: n, refetch: r } = (0, o.C)(i, t, { fetchPolicy: "store-and-network" }),
+                        l = a?.get_transactions?.__id ?? "usePaymentsTransactionsListQuery_TransactionList_slice";
                     return (
                         s()([l], () => {
                             r();
                         }),
-                        { data: n, fetchNext: a, refetch: r }
+                        { data: a, fetchNext: n, refetch: r }
                     );
                 };
         },
-        891414: (e, t, n) => {
-            n.d(t, { C7: () => m, iP: () => u });
-            var a = n(922524),
-                r = n(202784),
-                s = (n(585488), n(351743)),
-                o = n.n(s),
-                c = n(364539),
-                i = n(727384);
-            const l = a.Z,
+        32403: (e, t, a) => {
+            a.d(t, { Z: () => u });
+            var n = a(526274),
+                r = (a(585488), a(353391)),
+                s = a.n(r),
+                o = a(633806),
+                c = a(642004),
+                i = a(922281),
+                l = a(482924);
+            const d = n.Z,
+                u = ({ fromFailedTransaction: e, paymentMethodId: t }) => {
+                    const { data: a, refetch: n, refetchStatus: r } = (0, l.A)(d, { payment_method_id: t }),
+                        u = a?.get_payment_method,
+                        m = u?.__id ?? "get_payment_method";
+                    s()([m], () => {
+                        n();
+                    });
+                    const h = u?.shipping,
+                        p = h?.status,
+                        _ = h?.eta_millis,
+                        g = _ ? new Date(parseInt(_, 10)) : void 0,
+                        f = !!g && g < new Date();
+                    return { data: a, refetchStatus: r, canActivate: u?.core?.details?.status === i.D.Inactive && u?.core?.details?.issued_card_type === c.W.IssuedCardTypePhysical && (p === o.$.IssuedCardShippingStatusDelivered || (p === o.$.IssuedCardShippingStatusShipped && (e || f))), isEtaElapsed: f };
+                };
+        },
+        891414: (e, t, a) => {
+            a.d(t, { C7: () => m, iP: () => u });
+            var n = a(922524),
+                r = a(202784),
+                s = (a(585488), a(351743)),
+                o = a.n(s),
+                c = a(364539),
+                i = a(727384);
+            const l = n.Z,
                 d = ({ decision: e }) => {
-                    const [t, n] = o()(l);
+                    const [t, a] = o()(l);
                     return [
                         r.useCallback(
-                            ({ recordId: n, transactionId: a }) =>
+                            ({ recordId: a, transactionId: n }) =>
                                 new Promise((r, s) => {
                                     t({
-                                        variables: { transfer_id: a, decision: e },
+                                        variables: { transfer_id: n, decision: e },
                                         onCompleted: (e, t) => {
-                                            const n = e?.respond_to_request_transfer?.id,
-                                                a = e?.respond_to_request_transfer?.transaction_status,
+                                            const a = e?.respond_to_request_transfer?.id,
+                                                n = e?.respond_to_request_transfer?.transaction_status,
                                                 o = e?.respond_to_request_transfer?.errors,
                                                 c = e?.respond_to_request_transfer?.challenge_id;
-                                            n && a ? r({ transactionId: n, status: a, challengeId: c }) : s(o || t);
+                                            a && n ? r({ transactionId: a, status: n, challengeId: c }) : s(o || t);
                                         },
                                         updater: (e, t) => {
-                                            const a = t?.respond_to_request_transfer?.transaction_status,
+                                            const n = t?.respond_to_request_transfer?.transaction_status,
                                                 r = t?.respond_to_request_transfer?.reason_code;
-                                            (0, i.H_)(e, { status: a, recordId: n, reasonCode: r });
+                                            (0, i.H_)(e, { status: n, recordId: a, reasonCode: r });
                                         },
                                         onError: s,
                                     });
                                 }),
                             [t, e],
                         ),
-                        n,
+                        a,
                     ];
                 },
                 u = () => d({ decision: c.m.RequestTransferDecisionAccept }),
@@ -1125,4 +1220,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.6ff746ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.0757b67a.js.map

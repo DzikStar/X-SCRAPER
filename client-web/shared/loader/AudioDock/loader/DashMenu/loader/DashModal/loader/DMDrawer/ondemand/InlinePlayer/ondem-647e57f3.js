@@ -19,8 +19,8 @@
                         a.e("icons.2"),
                         a.e("icons.18"),
                         a.e("icons.9"),
-                        a.e("icons.1"),
                         a.e("icons.6"),
+                        a.e("icons.1"),
                         a.e("modules.common-e907d115"),
                         a.e("modules.common-e019dbda"),
                         a.e("icons.14"),
@@ -737,4 +737,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3.f3dfa32a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3.af395c3a.js.map

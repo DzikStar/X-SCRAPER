@@ -80,22 +80,22 @@
                 p = n(138099),
                 u = n(392237);
             const m = u.default.create((e) => ({ root: { paddingVertical: e.spacesPx.space32 }, rootWithImage: { paddingTop: 0 }, graphic: { marginBottom: e.spacesPx.space20 }, icon: { alignSelf: "center", height: e.spacesPx.space64, width: e.spacesPx.space64 }, container: { paddingHorizontal: e.spacesPx.space32 }, description: { marginTop: e.spacesPx.space8, marginBottom: e.spacesPx.space4 }, actionButton: { marginTop: e.spacesPx.space16 } })),
-                g = ({ actionPrimary: e, actionSecondary: t, children: n, headline: g, icon: y, iconColor: f, image: C, onDismiss: x, shouldDisplay: b, text: w, withMask: E = !0 }) => {
-                    const [v, S] = r.useState(!1),
-                        Z = (e) => r.createElement(h.Z, { onDismiss: I, renderContent: () => _(I), switchOnlyOnXSmallBreakpoint: !0, visibilityBehavior: s.J.forceVisible, withArrow: !0, withFixedPosition: !0, withMask: E }, e),
-                        k = () => r.createElement(p.Z, { onMaskClick: () => I(), type: "center", withMask: !0 }, _(I)),
-                        _ = (n) => r.createElement(o.Z, { style: [m.root, C && m.rootWithImage] }, T(), r.createElement(o.Z, { style: m.container }, D(), F(), P({ action: e, dismiss: n, type: t && "primaryFilled" }), P({ action: t, dismiss: n }))),
-                        T = () => {
-                            let e = y && r.createElement(y, { style: f ? [m.icon, { color: u.default.theme.colors[f] }] : m.icon });
+                g = ({ actionPrimary: e, actionSecondary: t, children: n, headline: g, icon: f, iconColor: y, image: C, onDismiss: x, shouldDisplay: b, text: w, withMask: v = !0 }) => {
+                    const [E, S] = r.useState(!1),
+                        Z = (e) => r.createElement(h.Z, { onDismiss: T, renderContent: () => _(T), switchOnlyOnXSmallBreakpoint: !0, visibilityBehavior: s.J.forceVisible, withArrow: !0, withFixedPosition: !0, withMask: v }, e),
+                        k = () => r.createElement(p.Z, { onMaskClick: () => T(), type: "center", withMask: !0 }, _(T)),
+                        _ = (n) => r.createElement(o.Z, { style: [m.root, C && m.rootWithImage] }, P(), r.createElement(o.Z, { style: m.container }, F(), I(), D({ action: e, dismiss: n, type: t && "primaryFilled" }), D({ action: t, dismiss: n }))),
+                        P = () => {
+                            let e = f && r.createElement(f, { style: y ? [m.icon, { color: u.default.theme.colors[y] }] : m.icon });
                             return C && !d.Z.isEnabled && (e = r.createElement(i.Z, { "aria-label": "", aspectMode: l.Z.exact(2), image: C })), e && r.createElement(o.Z, { style: m.graphic }, e);
                         },
-                        D = () => r.createElement(a.ZP, { size: "title3", weight: "heavy" }, g),
-                        F = () => r.createElement(a.ZP, { color: "gray700", style: m.description }, w),
-                        P = ({ action: e, dismiss: t, type: n }) => e && r.createElement(c.ZP, { link: e.link && e.link, onPress: e.onClick ? e.onClick : t, size: "large", style: m.actionButton, type: n }, e.text),
-                        I = () => {
+                        F = () => r.createElement(a.ZP, { size: "title3", weight: "heavy" }, g),
+                        I = () => r.createElement(a.ZP, { color: "gray700", style: m.description }, w),
+                        D = ({ action: e, dismiss: t, type: n }) => e && r.createElement(c.ZP, { link: e.link && e.link, onPress: e.onClick ? e.onClick : t, size: "large", style: m.actionButton, type: n }, e.text),
+                        T = () => {
                             x && x(), S(!0);
                         };
-                    return b && !v ? (n ? Z(n) : k()) : n || null;
+                    return b && !E ? (n ? Z(n) : k()) : n || null;
                 };
         },
         130304: (e, t, n) => {
@@ -115,13 +115,13 @@
                 g = (e) => {
                     const { count: t, maxCount: n, formatNumber: i = u, warningCount: a } = e,
                         g = n - t,
-                        y = g >= 0 ? p({ count: i(g) }) : h({ count: i(t - n) }),
-                        f = t >= a ? r.createElement(o.Z, { "aria-atomic": !0, "aria-live": "polite", style: d.default.visuallyHidden }, y) : null,
+                        f = g >= 0 ? p({ count: i(g) }) : h({ count: i(t - n) }),
+                        y = t >= a ? r.createElement(o.Z, { "aria-atomic": !0, "aria-live": "polite", style: d.default.visuallyHidden }, f) : null,
                         C = (0, l.Z)(g, n),
                         x = t >= n ? "red500" : t >= a ? "yellow500" : "primary",
                         b = r.createElement(c.Z, { color: x, progress: C, size: t >= a ? 30 : 20, style: [m.progressCircle, g <= -10 && m.hide] }),
                         w = t >= a ? r.createElement(o.Z, { style: [m.text, g > 0 ? m.gray700 : m.red500] }, i(g)) : null;
-                    return r.createElement(s.Z, { style: [m.root, m.center], testID: "countdown-circle" }, f, b, r.createElement(s.Z, { style: [d.default.absoluteFill, m.center] }, w));
+                    return r.createElement(s.Z, { style: [m.root, m.center], testID: "countdown-circle" }, y, b, r.createElement(s.Z, { style: [d.default.absoluteFill, m.center] }, w));
                 };
         },
         991789: (e, t, n) => {
@@ -137,22 +137,60 @@
             const h = (e) => e;
             function p(e) {
                 const { count: t, finalMaxCount: n, finalWarningCount: i, initialMaxCount: a, formatNumber: p = h, initialWarningCount: g } = e,
-                    y = a - t,
-                    f = n - t;
+                    f = a - t,
+                    y = n - t;
                 let C;
-                C = y >= 0 ? m.charactersRemainingInStandardTweetAndTotalMessage({ standardTweetCount: p(y), totalCount: p(f) }) : f >= 0 ? m.charactersRemainingMessage({ count: p(f) }) : m.characterOverLimitMessage({ count: p(t - n) });
+                C = f >= 0 ? m.charactersRemainingInStandardTweetAndTotalMessage({ standardTweetCount: p(f), totalCount: p(y) }) : y >= 0 ? m.charactersRemainingMessage({ count: p(y) }) : m.characterOverLimitMessage({ count: p(t - n) });
                 let x = null;
                 t >= g && (x = r.createElement(o.Z, { "aria-atomic": !0, "aria-live": "polite", style: d.default.visuallyHidden }, C));
-                const b = (0, l.Z)(y, a),
-                    w = y > 0 || f < 0 ? 0 : (0, l.Z)(f, n);
-                let E = "primary";
-                t >= n ? (E = "red500") : t >= i && (E = "yellow500");
-                const v = r.createElement(c.Z, { color: E, colorInner: E, progress: b, progressInner: w, size: t >= g ? 30 : 20, style: [u.progressCircle, f <= -10 && u.hide] });
+                const b = (0, l.Z)(f, a),
+                    w = f > 0 || y < 0 ? 0 : (0, l.Z)(y, n);
+                let v = "primary";
+                t >= n ? (v = "red500") : t >= i && (v = "yellow500");
+                const E = r.createElement(c.Z, { color: v, colorInner: v, progress: b, progressInner: w, size: t >= g ? 30 : 20, style: [u.progressCircle, y <= -10 && u.hide] });
                 let S = null;
-                return t >= g && t < a ? (S = r.createElement(o.Z, { style: [u.text, u.gray700], testID: "dual-phase-countdown-circle-text" }, p(y))) : t >= i && (S = r.createElement(o.Z, { style: [u.text, t > n ? u.red500 : u.white], testID: "dual-phase-countdown-circle-text" }, p(f))), r.createElement(s.Z, { style: [u.root, u.center], testID: "dual-phase-countdown-circle" }, x, v, r.createElement(s.Z, { style: [d.default.absoluteFill, u.center] }, S));
+                return t >= g && t < a ? (S = r.createElement(o.Z, { style: [u.text, u.gray700], testID: "dual-phase-countdown-circle-text" }, p(f))) : t >= i && (S = r.createElement(o.Z, { style: [u.text, t > n ? u.red500 : u.white], testID: "dual-phase-countdown-circle-text" }, p(y))), r.createElement(s.Z, { style: [u.root, u.center], testID: "dual-phase-countdown-circle" }, x, E, r.createElement(s.Z, { style: [d.default.absoluteFill, u.center] }, S));
             }
             const u = d.default.create(({ colors: e }) => ({ root: { alignItems: "flex-start", minHeight: 30, minWidth: 30 }, center: { alignItems: "center", justifyContent: "center", margin: "auto" }, progressCircle: { transitionDuration: "0.2s", transitionProperty: "opacity" }, hide: { opacity: 0 }, text: { fontSize: 13, lineHeight: "0.8", minWidth: 16, textAlign: "center" }, gray700: { color: e.gray700 }, red500: { color: e.red500 }, white: { color: e.white } })),
                 m = { characterOverLimitMessage: a().c2fc878d, charactersRemainingInStandardTweetAndTotalMessage: a().f06ae5d3, charactersRemainingMessage: a().db11b27f };
+        },
+        449161: (e, t, n) => {
+            n.d(t, { Z: () => m });
+            var r = n(807896),
+                o = n(202784),
+                s = n(111677),
+                i = n.n(s),
+                a = n(154003),
+                l = n(950822),
+                c = n(392237);
+            const d = i().i5450bec,
+                h = i().f7432494;
+            class p extends o.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this._handlePress = (e) => {
+                            const { onPress: t } = this.props;
+                            t && t(e), this._fileInput && this._fileInput.click();
+                        }),
+                        (this._handleChange = (e) => {
+                            const { onChange: t } = this.props,
+                                n = e.target,
+                                r = n.files;
+                            r.length && t && t(r), (n.value = "");
+                        }),
+                        (this._handleFileInputButtonRef = (e) => {
+                            this._fileInput = e;
+                        });
+                }
+                render() {
+                    const { accept: e, disabled: t, multiple: n, onChange: s, testID: i, ...c } = this.props,
+                        p = !(e?.includes("video") || e?.includes("gif"));
+                    return o.createElement(o.Fragment, null, o.createElement(a.ZP, (0, r.Z)({ hoverLabel: e ? { label: p ? h : d } : void 0 }, c, { disabled: t, onPress: this._handlePress })), (0, l.Z)("input", { accept: e, disabled: t, multiple: n, onChange: this._handleChange, ref: this._handleFileInputButtonRef, style: u.input, tabIndex: -1, testID: i, type: "file" }));
+                }
+            }
+            p.defaultProps = { disabled: !1, multiple: !1 };
+            const u = c.default.create((e) => ({ input: { width: "0.1px", height: "0.1px", opacity: 0, overflow: "hidden", position: "absolute", zIndex: -1 } })),
+                m = p;
         },
         626820: (e, t, n) => {
             n.d(t, { Z: () => x });
@@ -169,17 +207,17 @@
                 u = n(879891),
                 m = n(352924),
                 g = n(392237);
-            const y = g.default.create((e) => ({ root: { borderRadius: e.borderRadii.medium, display: "flex", flexDirection: "row", alignItems: "center", width: "100%", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space12 }, contentContainer: { display: "flex", flexDirection: "row", flex: 1 }, contentTextContainer: { flex: 1, alignItems: "flex-start", justifyContent: "center" }, dismissButton: { paddingStart: e.spaces.space12 }, icon: { color: e.colors.text, marginEnd: e.spaces.space8 }, illustration: { marginEnd: e.spaces.space8, height: e.spaces.space28, width: e.spaces.space28 }, arrow: { borderStyle: "none" }, arrowContainer: { display: "flex", width: "100%", alignItems: "center" }, arrowDirectionUp: { top: e.spacesPx.space4 + e.spacesPx.space2 }, arrowDirectionDown: { top: 0 - e.spacesPx.space4 - e.spacesPx.space2 }, arrowDown: { transform: "rotate(180deg)" }, hidden: { opacity: 0 } })),
-                f = g.default.create((e) => ({ primary: { backgroundColor: e.colors.primary0 }, purple: { backgroundColor: e.colors.purple0 }, plum: { backgroundColor: e.colors.plum0 } })),
+            const f = g.default.create((e) => ({ root: { borderRadius: e.borderRadii.medium, display: "flex", flexDirection: "row", alignItems: "center", width: "100%", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space12 }, contentContainer: { display: "flex", flexDirection: "row", flex: 1 }, contentTextContainer: { flex: 1, alignItems: "flex-start", justifyContent: "center" }, dismissButton: { paddingStart: e.spaces.space12 }, icon: { color: e.colors.text, marginEnd: e.spaces.space8 }, illustration: { marginEnd: e.spaces.space8, height: e.spaces.space28, width: e.spaces.space28 }, arrow: { borderStyle: "none" }, arrowContainer: { display: "flex", width: "100%", alignItems: "center" }, arrowDirectionUp: { top: e.spacesPx.space4 + e.spacesPx.space2 }, arrowDirectionDown: { top: 0 - e.spacesPx.space4 - e.spacesPx.space2 }, arrowDown: { transform: "rotate(180deg)" }, hidden: { opacity: 0 } })),
+                y = g.default.create((e) => ({ primary: { backgroundColor: e.colors.primary0 }, purple: { backgroundColor: e.colors.purple0 }, plum: { backgroundColor: e.colors.plum0 } })),
                 C = g.default.create((e) => ({ primary: { color: e.colors.primary0 }, purple: { color: e.colors.purple0 }, plum: { color: e.colors.plum0 } })),
                 x = ({ backgroundColor: e = "primary", containerRef: t, icon: n, illustration: s, onClose: g, text: x }) => {
                     const b = i().af8fa2ae,
                         w = (0, m.b)(),
-                        { direction: E } = (0, u.Z)(),
-                        [v, S] = r.useState(Number.MIN_SAFE_INTEGER),
+                        { direction: v } = (0, u.Z)(),
+                        [E, S] = r.useState(Number.MIN_SAFE_INTEGER),
                         [Z, k] = r.useState(Number.MIN_SAFE_INTEGER),
-                        _ = "rtl" === E,
-                        T = (e) => {
+                        _ = "rtl" === v,
+                        P = (e) => {
                             const { top: t } = e.getBoundingClientRect();
                             return Z > t;
                         };
@@ -200,28 +238,28 @@
                                 },
                             },
                             (() => {
-                                const i = !(!t || (Z >= 0 && v >= 0)),
-                                    u = t?.current ? ((m = t.current), T(m) ? { flexDirection: "column" } : { flexDirection: "column-reverse" }) : void 0;
+                                const i = !(!t || (Z >= 0 && E >= 0)),
+                                    u = t?.current ? ((m = t.current), P(m) ? { flexDirection: "column" } : { flexDirection: "column-reverse" }) : void 0;
                                 var m;
-                                const E = !t?.current || T(t.current),
+                                const v = !t?.current || P(t.current),
                                     S = t?.current
                                         ? ((e) => {
                                               const { left: t, width: n } = e.getBoundingClientRect(),
-                                                  r = t + n / 2 - v;
+                                                  r = t + n / 2 - E;
                                               return { start: _ ? void 0 : r, end: _ ? r : void 0 };
                                           })(t.current)
                                         : void 0,
-                                    k = t ? ((t, n) => r.createElement(o.Z, { style: [y.arrowContainer, n, t ? y.arrowDirectionUp : y.arrowDirectionDown], testID: "tooltip-arrow" }, r.createElement(a.default, { style: [y.arrow, C[e], !t && y.arrowDown] })))(E, S) : void 0,
-                                    D = [u, i && y.hidden];
-                                return r.createElement(o.Z, { style: D, testID: "tooltip-content" }, k, r.createElement(o.Z, { style: [y.root, f[e]] }, r.createElement(o.Z, { style: y.contentContainer }, n && !s ? ((P = n), r.createElement(P, { style: [y.icon, { alignItem: "flex-start" }], testID: "tooltip-icon" })) : null, s && !n ? ((F = s), r.createElement(o.Z, { style: y.illustration, testID: "tooltip-illustration" }, r.createElement(c.Z, { "aria-label": "", aspectMode: h.Z.SQUARE, image: F }))) : null, r.createElement(o.Z, { style: y.contentTextContainer }, r.createElement(d.ZP, { id: w }, x))), g && r.createElement(o.Z, { style: y.dismissButton }, r.createElement(p.ZP, { "aria-describedby": w, "aria-label": b, icon: r.createElement(l.default, { testID: "tooltip-close-icon" }), onPress: g, size: "xSmall", type: "primaryText" }))));
-                                var F, P;
+                                    k = t ? ((t, n) => r.createElement(o.Z, { style: [f.arrowContainer, n, t ? f.arrowDirectionUp : f.arrowDirectionDown], testID: "tooltip-arrow" }, r.createElement(a.default, { style: [f.arrow, C[e], !t && f.arrowDown] })))(v, S) : void 0,
+                                    F = [u, i && f.hidden];
+                                return r.createElement(o.Z, { style: F, testID: "tooltip-content" }, k, r.createElement(o.Z, { style: [f.root, y[e]] }, r.createElement(o.Z, { style: f.contentContainer }, n && !s ? ((D = n), r.createElement(D, { style: [f.icon, { alignItem: "flex-start" }], testID: "tooltip-icon" })) : null, s && !n ? ((I = s), r.createElement(o.Z, { style: f.illustration, testID: "tooltip-illustration" }, r.createElement(c.Z, { "aria-label": "", aspectMode: h.Z.SQUARE, image: I }))) : null, r.createElement(o.Z, { style: f.contentTextContainer }, r.createElement(d.ZP, { id: w }, x))), g && r.createElement(o.Z, { style: f.dismissButton }, r.createElement(p.ZP, { "aria-describedby": w, "aria-label": b, icon: r.createElement(l.default, { testID: "tooltip-close-icon" }), onPress: g, size: "xSmall", type: "primaryText" }))));
+                                var I, D;
                             })(),
                         ),
                     );
                 };
         },
         977952: (e, t, n) => {
-            n.d(t, { Z: () => D });
+            n.d(t, { Z: () => F });
             var r = n(807896),
                 o = n(202784),
                 s = (n(136728), n(301503)),
@@ -235,7 +273,7 @@
                 u = n(122375),
                 m = n(835305),
                 g = n(899492);
-            function y(e) {
+            function f(e) {
                 let t;
                 if (e.html)
                     try {
@@ -273,8 +311,8 @@
                                         const t = r.index,
                                             s = n.lastIndex,
                                             i = e.text.substring(t, s),
-                                            a = w(i, E.start_newline),
-                                            l = w(i, E.end_newline);
+                                            a = w(i, v.start_newline),
+                                            l = w(i, v.end_newline);
                                         o.push([a, l]);
                                     }
                                     const i = [];
@@ -283,13 +321,13 @@
                                         0 === e && n && n++, e === t.blocks.length - 1 && r && r++;
                                         for (let e = 0; e < n; e++) {
                                             const e = (0, s.genKey)(),
-                                                t = { ...v(), key: e };
+                                                t = { ...E(), key: e };
                                             i.push(t);
                                         }
                                         i.push(t.blocks[e]);
                                         for (let e = 0; e < r; e++) {
                                             const e = (0, s.genKey)(),
-                                                t = { ...v(), key: e };
+                                                t = { ...E(), key: e };
                                             i.push(t);
                                         }
                                     }
@@ -300,22 +338,22 @@
                                 for (const r of t.blocks)
                                     switch (r.type) {
                                         case u.Wo:
-                                            n.push(f(e, r));
+                                            n.push(y(e, r));
                                             break;
                                         case u.p8:
                                         case u.r$:
                                         case u.Mm:
                                         case u.Z4:
                                         case u.Re:
-                                            if (e.allowExtendedPasteStyles) n.push(f(e, r));
+                                            if (e.allowExtendedPasteStyles) n.push(y(e, r));
                                             else {
                                                 const t = { ...r, type: u.Wo };
-                                                n.push(f(e, t));
+                                                n.push(y(e, t));
                                             }
                                             break;
                                         default: {
                                             const t = { ...r, type: u.Wo };
-                                            n.push(f(e, t));
+                                            n.push(y(e, t));
                                         }
                                     }
                                 return { blocks: n, entityMap: e.longformRichTextTransform ? t.entityMap : {} };
@@ -331,7 +369,7 @@
                     }
                 return !t && e.text && (t = s.ContentState.createFromText(e.text)), t || null;
             }
-            function f(e, t) {
+            function y(e, t) {
                 const n = t.inlineStyleRanges || [],
                     r = [],
                     o = e.longformRichTextTransform ? b : x;
@@ -347,8 +385,8 @@
                 const [r] = n;
                 return r.length - 1;
             }
-            const E = { newline: /[\n\r]/, start_newline: /^[\n\r]+/, end_newline: /[\n\r]+$/ };
-            function v() {
+            const v = { newline: /[\n\r]/, start_newline: /^[\n\r]+/, end_newline: /[\n\r]+$/ };
+            function E() {
                 return { key: "", type: "unstyled", text: "", depth: void 0, inlineStyleRanges: [], entityRanges: [] };
             }
             class S extends o.Component {
@@ -409,7 +447,7 @@
                             const { multiline: r, onChange: o } = this.props;
                             if (!o) return "not-handled";
                             const { allowExtendedPasteStyles: i, longformRichTextTransform: a, stripPastedStyles: l } = this.props;
-                            let c = y({ text: e, html: t, editorState: n, stripPastedStyles: l, allowExtendedPasteStyles: i, longformRichTextTransform: a });
+                            let c = f({ text: e, html: t, editorState: n, stripPastedStyles: l, allowExtendedPasteStyles: i, longformRichTextTransform: a });
                             if (!c) return "not-handled";
                             if (!r) {
                                 const e = (function (e) {
@@ -434,7 +472,7 @@
                             return n?.(e, t), "handled";
                         }),
                         (this._getContainerStyle = () => {
-                            const e = T[this.props.appTextSize],
+                            const e = P[this.props.appTextSize],
                                 t = d.default.theme.lineHeightsPx[e];
                             let n = 1,
                                 r = 1;
@@ -463,8 +501,8 @@
             const Z = (e) => (0, a.Z)("div", e),
                 k = { enter: 13, esc: 27 };
             const _ = { all_newlines: /[\r\n]/g },
-                T = { small: "subtext2", normal: "body", large: "headline1", subtext2: "subtext2", body: "body", headline1: "headline1", title4: "title4" },
-                D = o.forwardRef((e, t) =>
+                P = { small: "subtext2", normal: "body", large: "headline1", subtext2: "subtext2", body: "body", headline1: "headline1", title4: "title4" },
+                F = o.forwardRef((e, t) =>
                     o.createElement(
                         S,
                         (0, r.Z)({}, e, {
@@ -541,4 +579,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-bc6ccf4c.c8462a7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-bc6ccf4c.f997ce1a.js.map

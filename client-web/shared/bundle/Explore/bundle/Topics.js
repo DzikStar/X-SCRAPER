@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.Explore~bundle.Topics", "bundle.AudioSpaceDetail"],
+    ["shared~bundle.Explore~bundle.Topics"],
     {
         740527: (e, t, n) => {
             n.d(t, { Z: () => c });
@@ -153,8 +153,8 @@
                 u = n(33104),
                 p = n(789831),
                 m = n(252021),
-                b = n(293115),
-                h = n(87063),
+                h = n(293115),
+                b = n(87063),
                 g = n(652904),
                 f = n(507651),
                 D = n(3138),
@@ -169,11 +169,11 @@
                         a = E(e, t);
                     return a && a.tabs && a.tabs.tabs.find((e) => e.id === n);
                 },
-                I = (0, C.Z)()
+                A = (0, C.Z)()
                     .propsFromState(() => ({ initialFetchStatus: k, pageConfiguration: E, selectedTab: S }))
                     .propsFromActions(({ module: e }) => ({ createLocalApiErrorHandler: (0, M.zr)("RICH_SEGMENTED_TIMELINE"), fetchInitial: e.fetchInitial }))
                     .withAnalytics();
-            class A extends a.Component {
+            class I extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this._fetchPageModule = () => {
@@ -219,7 +219,7 @@
                 }
                 render() {
                     const { initialFetchStatus: e } = this.props;
-                    return e === h.Z.LOADED ? this._render() : null;
+                    return e === b.Z.LOADED ? this._render() : null;
                 }
                 _buildTabNamespace(e, t) {
                     let n;
@@ -232,12 +232,12 @@
                     }
                 }
             }
-            const T = I((0, y.Z)(A));
+            const T = A((0, y.Z)(I));
             var v = n(912021),
                 x = n(383675),
                 N = n(611423),
                 Z = n(443781);
-            const B = (0, n(523561).Z)({
+            const _ = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
                         n.e("icons.8"),
@@ -250,8 +250,8 @@
                         n.e("icons.2"),
                         n.e("icons.18"),
                         n.e("icons.9"),
-                        n.e("icons.1"),
                         n.e("icons.6"),
+                        n.e("icons.1"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
                         n.e("icons.14"),
@@ -273,14 +273,6 @@
                         n.e("icons.27"),
                         n.e("icons.19"),
                         n.e("icons.0"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -300,6 +292,13 @@
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
+                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
+                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
+                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
+                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
+                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
+                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
@@ -307,12 +306,10 @@
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
-                        n.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         n.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
@@ -350,7 +347,7 @@
                         n.e("loader.ExploreNews"),
                     ]).then(n.bind(n, 169698)),
             });
-            var _ = n(810641);
+            var B = n(810641);
             const P = (e, t) => t.initialModule.selectPageConfiguration && t.initialModule.selectPageConfiguration(e),
                 R = (e, t) => {
                     const n = t.selectedTabId,
@@ -392,11 +389,11 @@
                 }
                 render() {
                     const { entryConfiguration: e, initialModule: t, pageConfiguration: n, prerollDisplayLocation: o, refreshControl: r, renderEmptyState: d, renderUnavailable: l, selectedTab: i, timelinePrefix: s, title: c, withoutHeadroom: u } = this.props;
-                    if (this.context.featureSwitches.isTrue("responsive_web_grok_05221996") && "news" === i?.id) return a.createElement(B, null);
+                    if (this.context.featureSwitches.isTrue("responsive_web_grok_05221996") && "news" === i?.id) return a.createElement(_, null);
                     const p = this._getModule(i, n?.tabs?.initialTabId, t, s),
                         m = this._getRefreshIntervalSecForCurrentTab(),
-                        h = m ? 1e3 * m : void 0;
-                    return a.createElement(b.nO, { namespace: this._getTimelineNamespace() }, a.createElement(_.Z, { entryConfiguration: e, module: p, pollingIntervalMsOverride: h, prerollDisplayLocation: o, refreshControl: r, renderEmptyState: d, renderUnavailable: l, title: c, withoutHeadroom: u }));
+                        b = m ? 1e3 * m : void 0;
+                    return a.createElement(h.nO, { namespace: this._getTimelineNamespace() }, a.createElement(B.Z, { entryConfiguration: e, module: p, pollingIntervalMsOverride: b, prerollDisplayLocation: o, refreshControl: r, renderEmptyState: d, renderUnavailable: l, title: c, withoutHeadroom: u }));
                 }
             }
             G.contextType = Z.rC;
@@ -426,13 +423,13 @@
                         onHeaderVisible: l,
                     } = e,
                     { data: i, namespace: s } = V(d, t);
-                return a.createElement(O.Z, { style: K.root }, a.createElement(b.nO, { data: i, namespace: s }, a.createElement(U.Z, { displayType: n, facepile: o, onFollowHeaderOffscreen: ({ isOffscreen: e }) => l(!e), topicId: d, topicLandingContext: r, withDivider: !0 })));
+                return a.createElement(O.Z, { style: K.root }, a.createElement(h.nO, { data: i, namespace: s }, a.createElement(U.Z, { displayType: n, facepile: o, onFollowHeaderOffscreen: ({ isOffscreen: e }) => l(!e), topicId: d, topicLandingContext: r, withDivider: !0 })));
             }
             const K = z.default.create((e) => ({ root: { borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid" } }));
             var Y = n(24949);
             const J = (e, t) => t.module.selectPageConfiguration(e),
                 X = (e, t) => t.module.selectInitialFetchStatus(e),
-                ee = (0, Y.P1)(J, X, (e, t) => t !== h.Z.LOADED || (!!e && !!e.tabs)),
+                ee = (0, Y.P1)(J, X, (e, t) => t !== b.Z.LOADED || (!!e && !!e.tabs)),
                 te = (0, C.Z)()
                     .propsFromState(() => ({ hasTabNavigation: ee, pageConfiguration: J, initialFetchStatus: X }))
                     .withAnalytics();
@@ -451,8 +448,8 @@
                 ue = (0, C.Z)().propsFromState(() => ({ topic: ce })),
                 pe = (e) => (0, ne.ju)(`https://x.com/i/topics/${e}`),
                 me = (e) => `twitter://topics_timeline?id=${e}`,
-                be = i().ed88e742;
-            const he = z.default.create((e) => ({ rightControl: { flexDirection: "row" }, followButtonContainer: { justifyContent: "center", paddingEnd: e.spaces.space4 } })),
+                he = i().ed88e742;
+            const be = z.default.create((e) => ({ rightControl: { flexDirection: "row" }, followButtonContainer: { justifyContent: "center", paddingEnd: e.spaces.space4 } })),
                 ge = ue(function (e) {
                     const t = e.navBar.topicId ? e.navBar.topicId : "",
                         {
@@ -466,18 +463,18 @@
                         { featureSwitches: c } = a.useContext(Z.rC),
                         u = c.isTrue("topic_landing_page_share_enabled"),
                         { data: p, namespace: m } = V(t, o),
-                        h = (0, s.Z)({}, r, m);
-                    return d ? a.createElement(b.nO, { data: p, namespace: h }, a.createElement(a.Fragment, null, i ? a.createElement(re.Z, { canonical: pe(t), description: d.description, title: d.name, type: "article" }) : null, l ? a.createElement(oe.Z, { deepLink: me(t) }) : null, a.createElement(O.Z, { style: he.rightControl }, a.createElement(O.Z, { style: he.followButtonContainer }, a.createElement(ae.Z, { animateMount: !0, show: n, type: "fade" }, a.createElement(de.ZP, { size: "medium", textMode: le.q.FollowTopic, topic: d }))), u ? a.createElement(ie.ZP, { copyLinkShareLabel: be, scribeNamespace: h, url: pe(t) }) : null))) : null;
+                        b = (0, s.Z)({}, r, m);
+                    return d ? a.createElement(h.nO, { data: p, namespace: b }, a.createElement(a.Fragment, null, i ? a.createElement(re.Z, { canonical: pe(t), description: d.description, title: d.name, type: "article" }) : null, l ? a.createElement(oe.Z, { deepLink: me(t) }) : null, a.createElement(O.Z, { style: be.rightControl }, a.createElement(O.Z, { style: be.followButtonContainer }, a.createElement(ae.Z, { animateMount: !0, show: n, type: "fade" }, a.createElement(de.ZP, { size: "medium", textMode: le.q.FollowTopic, topic: d }))), u ? a.createElement(ie.ZP, { copyLinkShareLabel: he, scribeNamespace: b, url: pe(t) }) : null))) : null;
                 }),
                 fe = i().e9f1fbcc,
                 De = a.createElement(c.Z, null),
                 we = (e) => {
-                    const { TabBar: t, backLocation: n, documentTitle: o, entryConfiguration: l, fab: i, getTabLink: c, hasTabNavigation: f, history: D, initialFetchStatus: w, initialPageNamespace: y, logoButton: M, module: C, onBackClick: k, pageConfiguration: E, prerollDisplayLocation: S, renderEmptyState: I, renderUnavailable: A, rightControl: v, selectedTabId: x, sidebarContent: N, timelinePrefix: Z, title: B, withAppLinks: _, withBottomLoginSignupBar: P, withDeferredView: R, withOpenGraphMeta: L, withSearchBox: G, withTweetButton: W } = e,
+                    const { TabBar: t, backLocation: n, documentTitle: o, entryConfiguration: l, fab: i, getTabLink: c, hasTabNavigation: f, history: D, initialFetchStatus: w, initialPageNamespace: y, logoButton: M, module: C, onBackClick: k, pageConfiguration: E, prerollDisplayLocation: S, renderEmptyState: A, renderUnavailable: I, rightControl: v, selectedTabId: x, sidebarContent: N, timelinePrefix: Z, title: _, withAppLinks: B, withBottomLoginSignupBar: P, withDeferredView: R, withOpenGraphMeta: L, withSearchBox: G, withTweetButton: W } = e,
                         O = (0, r.tj)(),
                         z = a.useMemo(() => ({ ...l, ...(0, F.Z)({ isLegacy: !0, isWide: O }) }), [l, O]),
                         [U, $] = a.useState(!0),
                         { header: j, navBar: q, subtitle: V, title: K } = E || {},
-                        Y = w === h.Z.LOADED ? K || B : "",
+                        Y = w === b.Z.LOADED ? K || _ : "",
                         J = ((e, t, n) => {
                             const a = t?.scribeConfig,
                                 { entityToken: o, ...r } = a || {},
@@ -488,12 +485,12 @@
                             return (0, s.Z)({}, n, r, u);
                         })(x, E, y),
                         X = j ? a.createElement(Q, { header: j, onHeaderVisible: $ }) : null,
-                        ee = q ? a.createElement(ge, { isHeaderOffscreen: !U, navBar: q, pageNamespace: J, withAppLinks: _, withOpenGraphMeta: L }) : null,
+                        ee = q ? a.createElement(ge, { isHeaderOffscreen: !U, navBar: q, pageNamespace: J, withAppLinks: B, withOpenGraphMeta: L }) : null,
                         te = R ? u.Z : a.Fragment,
-                        ne = a.createElement(a.Fragment, null, X, a.createElement(te, null, a.createElement(H, { entryConfiguration: z, initialModule: C, prerollDisplayLocation: S, renderEmptyState: I, renderUnavailable: A, selectedTabId: x, timelinePrefix: Z, title: B, withoutHeadroom: !0 }))),
+                        ne = a.createElement(a.Fragment, null, X, a.createElement(te, null, a.createElement(H, { entryConfiguration: z, initialModule: C, prerollDisplayLocation: S, renderEmptyState: A, renderUnavailable: I, selectedTabId: x, timelinePrefix: Z, title: _, withoutHeadroom: !0 }))),
                         ae = i ? a.createElement(p.Z, { component: d.Z, fab: i }, ne) : ne,
                         oe = c && f ? a.createElement(T, { getTabLink: c, module: C, selectedTabId: x }) : void 0;
-                    return a.createElement(b.nO, { namespace: J }, a.createElement(g.Z, null, a.createElement(m.Z, { TabBar: t, backLocation: n, documentTitle: o, history: D, logoButton: M, onBackClick: k, primaryContent: ae, rightControl: ee || v, secondaryBar: oe, sidebarContent: N, subtitle: V, title: X && U ? B : Y, withBottomLoginSignupBar: P, withSearchBox: G, withTweetButton: W })));
+                    return a.createElement(h.nO, { namespace: J }, a.createElement(g.Z, null, a.createElement(m.Z, { TabBar: t, backLocation: n, documentTitle: o, history: D, logoButton: M, onBackClick: k, primaryContent: ae, rightControl: ee || v, secondaryBar: oe, sidebarContent: N, subtitle: V, title: X && U ? _ : Y, withBottomLoginSignupBar: P, withSearchBox: G, withTweetButton: W })));
                 };
             we.defaultProps = { entryConfiguration: (0, W.G)({}), renderEmptyState: () => a.createElement(o.Z, { header: fe }), sidebarContent: De, withDeferredView: !1, withAppLinks: !1, withOpenGraphMeta: !1 };
             const ye = te(we);
@@ -574,8 +571,8 @@
                 u = n(912021),
                 p = n(516951),
                 m = n(731708),
-                b = n(310088),
-                h = n(175993),
+                h = n(310088),
+                b = n(175993),
                 g = n(58881),
                 f = n(530732);
             const D = c().d2414d31,
@@ -616,16 +613,16 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": t, badgeCount: n, badgePip: a, children: r, color: d, isActive: s, isCompact: c, isPillLink: u, isRoundedRect: p, isWebRedesign: h, retainScrollPosition: M, style: k, to: E } = this.props,
+                    const { Icon: e, "aria-label": t, badgeCount: n, badgePip: a, children: r, color: d, isActive: s, isCompact: c, isPillLink: u, isRoundedRect: p, isWebRedesign: b, retainScrollPosition: M, style: k, to: E } = this.props,
                         { location: S } = this.state,
-                        I = E ? this._getMemoizedLink(E, M) : void 0,
-                        A = s ? s(E) : S?.pathname === I?.pathname,
+                        A = E ? this._getMemoizedLink(E, M) : void 0,
+                        I = s ? s(E) : S?.pathname === A?.pathname,
                         T = g.Z.generate({ backgroundColor: "transparent", color: l.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? C.pillHoverStyle.backgroundColor : void 0 }),
-                        v = h ? "medium" : A ? "bold" : "medium";
-                    return o.createElement(f.Z, { "aria-label": t, "aria-selected": A, focusable: !!A, interactiveStyles: T, link: I, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [C.pillStyle] : [C.link]), ...(u && A ? [C.pillActiveStyle] : []), c ? (u ? C.compactPill : C.compactLink) : null, p ? C.roundedRect : null, k], withoutInteractiveStyles: h }, ({ isFocused: t, isHovered: s }) => o.createElement(i.Z, { style: u && C.flexGrow }, o.createElement(m.ZP, { size: h ? "headline2" : void 0, style: [C.text, { color: this._getTextColor(A, s, h, u) }, c && C.compactText, h && t && C.focusedText, u && C.pillTextStyle, u && A && C.pillActiveTextStyle, u && s && C.pillHoverTextStyle], weight: v }, e && o.createElement(e, { style: C.icon }), r, h || u ? null : o.createElement(i.Z, { style: A && [C.border, { backgroundColor: l.default.theme.colors[d] }] })), n ? o.createElement(b.Z, { count: n, standalone: !0, style: [C.badge, n >= 10 && C.multiDigitBadge, n >= 20 && C.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: D, withBorder: !1 }) : a ? o.createElement(b.Z, { pip: !0, standalone: !0, style: C.badgePip, textColor: "red500", unreadCountLabel: w, withBorder: !1 }) : null));
+                        v = b ? "medium" : I ? "bold" : "medium";
+                    return o.createElement(f.Z, { "aria-label": t, "aria-selected": I, focusable: !!I, interactiveStyles: T, link: A, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [C.pillStyle] : [C.link]), ...(u && I ? [C.pillActiveStyle] : []), c ? (u ? C.compactPill : C.compactLink) : null, p ? C.roundedRect : null, k], withoutInteractiveStyles: b }, ({ isFocused: t, isHovered: s }) => o.createElement(i.Z, { style: u && C.flexGrow }, o.createElement(m.ZP, { size: b ? "headline2" : void 0, style: [C.text, { color: this._getTextColor(I, s, b, u) }, c && C.compactText, b && t && C.focusedText, u && C.pillTextStyle, u && I && C.pillActiveTextStyle, u && s && C.pillHoverTextStyle], weight: v }, e && o.createElement(e, { style: C.icon }), r, b || u ? null : o.createElement(i.Z, { style: I && [C.border, { backgroundColor: l.default.theme.colors[d] }] })), n ? o.createElement(h.Z, { count: n, standalone: !0, style: [C.badge, n >= 10 && C.multiDigitBadge, n >= 20 && C.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: D, withBorder: !1 }) : a ? o.createElement(h.Z, { pip: !0, standalone: !0, style: C.badgePip, textColor: "red500", unreadCountLabel: w, withBorder: !1 }) : null));
                 }
             }
-            (M.contextType = h.Z), (M.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
+            (M.contextType = b.Z), (M.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
             const C = l.default.create((e) => ({
                     link: { alignItems: "center", display: "flex", flexDirection: "column", flexGrow: 1, height: e.componentDimensions.appBarHeight, justifyContent: "center", outlineStyle: "none", paddingHorizontal: e.spaces.space16, minWidth: "56px" },
                     compactLink: { height: 0.75 * e.componentDimensions.appBarHeightPx },
@@ -657,18 +654,18 @@
                             .map((e) => e.key)
                             .join("-"),
                         { isWebRedesign: m } = d.ZP.useProps(),
-                        b = m() && !l,
-                        h = o.useMemo(
+                        h = m() && !l,
+                        b = o.useMemo(
                             () =>
                                 s.filter(Boolean).map(({ label: t, viewType: r, ...d }, s) => {
-                                    const c = b ? [E.linkRedesign, 0 === s && E.firstLinkRedesign, e && 0 === s && E.withNoPaddingStart] : void 0;
-                                    return o.createElement(k, (0, a.Z)({ viewType: r }, d, { isCompact: n, isPillLink: l, isRoundedRect: i, isWebRedesign: b, style: c }), t);
+                                    const c = h ? [E.linkRedesign, 0 === s && E.firstLinkRedesign, e && 0 === s && E.withNoPaddingStart] : void 0;
+                                    return o.createElement(k, (0, a.Z)({ viewType: r }, d, { isCompact: n, isPillLink: l, isRoundedRect: i, isWebRedesign: h, style: c }), t);
                                 }),
-                            [e, n, l, i, b, s],
+                            [e, n, l, i, h, s],
                         );
-                    return o.createElement(r.Z, { "aria-label": t, buttonsContainerStyle: l && E.gap, childrenStyle: !b && E.flexGrow, key: p, style: [l ? null : E.segmentedControl, b && E.leftAligned, c], visibleItemIndex: u }, h);
+                    return o.createElement(r.Z, { "aria-label": t, buttonsContainerStyle: l && E.gap, childrenStyle: !h && E.flexGrow, key: p, style: [l ? null : E.segmentedControl, h && E.leftAligned, c], visibleItemIndex: u }, b);
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Explore~bundle.Topics.ba3ff43a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Explore~bundle.Topics.47628a5a.js.map

@@ -8,6 +8,24 @@
             var r = n(950822);
             const o = (e) => (0, r.Z)("div", e);
         },
+        290402: (e, t, n) => {
+            n.d(t, { Z: () => h });
+            var r = n(807896),
+                o = n(202784),
+                i = n(182056),
+                s = n(879113),
+                a = n(392237),
+                l = n(111677),
+                c = n.n(l),
+                u = n(968478);
+            const d = c().aa6e3300,
+                p = ({ retryMessage: e, ...t }, n) => {
+                    const a = i.Z.isOnline();
+                    return o.createElement(s.Z, (0, r.Z)({}, t, { icon: a ? void 0 : o.createElement(u.default, { style: g.icon }), retryMessage: a ? e : d }));
+                },
+                g = a.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
+                h = o.forwardRef(p);
+        },
         965612: (e, t, n) => {
             n.d(t, { Z: () => o });
             var r = n(202784);
@@ -922,4 +940,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TV~bundle.Account-63393a95.a9c2555a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TV~bundle.Account-63393a95.b7deee7a.js.map

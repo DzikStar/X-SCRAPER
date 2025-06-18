@@ -1284,26 +1284,32 @@
                 t("fc7db594", "Profile Summary"),
                 t("c3f04d9c", "Thinking"),
                 t("cbdddb0a", "Completado"),
-                t("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                t("ie2bbeed", function (e) {
+                    return 'Searching for "' + e.query + '"';
                 }),
                 t("b0d1e205", function (e) {
                     return 'Searching for **"' + e.query + '"**';
                 }),
-                t("i2e0f4d7", function (e) {
-                    return "Browsing " + e.url + " for " + e.query;
+                t("bf970edd", function (e) {
+                    return 'Searching 𝕏 for "' + e.query + '"';
+                }),
+                t("g008d475", function (e) {
+                    return "Browsing " + e.url;
+                }),
+                t("c91e3971", function (e) {
+                    return "Browsing " + e.url + ' for "' + e.query + '"';
                 }),
                 t("acb9b845", function (e) {
                     return "Browsing " + e.url + ' for **"' + e.query + '"**';
                 }),
-                t("ef261d8d", function (e) {
-                    return "Searching posts by @" + e.username;
+                t("j9006405", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username;
                 }),
-                t("f7d9cfb9", function (e) {
-                    return "Searching posts by @" + e.username + " for " + e.query;
+                t("a2dd07e5", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username + ' for "' + e.query + '"';
                 }),
-                t("bec7eb11", function (e) {
-                    return "Searching posts by @" + e.username + ' for **"' + e.query + '"**';
+                t("e99fb7a3", function (e) {
+                    return "Searching 𝕏 posts by @" + e.username + ' for **"' + e.query + '"**';
                 }),
                 t("ead81122", "Something went wrong, please refresh to reconnect or try again."),
                 t("f808a13a", "Rate limit exceeded. Please wait a few moments then try again."),
@@ -1919,10 +1925,10 @@
                 t("jcd5ee8a", "Edit block"),
                 t("a8f09fb8", "Delete block"),
                 t("i89195ea", "Divider"),
-                t("da8ac57c", "Edit Caption"),
-                t("a8fdd09c", "Publish Article"),
-                t("d8047cc8", "Publicar");
-            t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                t("da8ac57c", "Edit Caption");
+            t("a8fdd09c", "Publish Article"),
+                t("d8047cc8", "Publicar"),
+                t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
                 t("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
                 t("e52d4998", "Choose your audience"),
                 t("d7985b24", "Choose who can reply to this Article"),
@@ -2975,10 +2981,10 @@
                 t("bc6efc72", "Política de privacidade"),
                 t("h3161192", "Política de cookies"),
                 t("a7de64de", "Ads info"),
-                t("jb0a4c36", "Blog"),
-                t("ce6d095a", "Empregos"),
-                t("e0adec82", "Recursos de marca");
-            t("df1b7550", "Marketing"),
+                t("jb0a4c36", "Blog");
+            t("ce6d095a", "Empregos"),
+                t("e0adec82", "Recursos de marca"),
+                t("df1b7550", "Marketing"),
                 t("he258678", "X for Business"),
                 t("c6f58084", "Developers"),
                 t("d83f18d2", "Directory"),
@@ -3887,10 +3893,10 @@
                 t("c371fb9a", "Final"),
                 t("c0ce822e", "Microphone settings"),
                 t("a2bf8b8a", "Switch to listening"),
-                t("caa8d928", "Toggle noise suppression"),
-                t("b5d88f0c", "Employees only"),
-                t("c855ab8e", "Subscribers only");
-            t("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
+                t("caa8d928", "Toggle noise suppression");
+            t("b5d88f0c", "Employees only"),
+                t("c855ab8e", "Subscribers only"),
+                t("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
                 t("e111f531", function (e) {
                     return e.count + " usuario" + n(e.count, "", "s") + " escoitando";
                 }),
@@ -4157,36 +4163,39 @@
                 }),
                 t("ed93de0c", "Analyzing Post"),
                 t("d1d92e40", "More details"),
+                t("fbc79f6a", "Chat history"),
                 t("a6e89af8", "Open conversation"),
                 t("ica55d24", "New Chat"),
-                t("f794af9a", "Fun mode"),
-                t("eccf9fea", "Regular mode"),
+                t("b61ad410", "History"),
+                t("b3de2628", "No chat history available"),
+                t("acfbfb28", "Your future conversations will appear here."),
+                t("g02dacc0", "Hoxe"),
+                t("c6e845c0", "Yesterday"),
+                t("i1147548", "Search Grok History"),
+                t("ab437026", "No conversations found"),
+                t("e12569ec", "Try to search for something else."),
+                t("hb52cc4a", "Téntao de novo máis tarde."),
+                t("d4eb0e26", "Cambiar o nome"),
+                t("c64975ea", "You haven’t favorited any conversations yet"),
+                t("a3e3db6e", "Click the star to save chats you come back to often"),
+                t("f4ae77ac", "No image history available"),
+                t("d57d337e", "Your generated images will appear here."),
+                t("j826e722", "Save Image"),
+                t("a9325f10", "Copy Image"),
+                t("g0b12442", "Failed to copy the image"),
+                t("edd0c172", "Post Image"),
+                t("d1d3a41a", "Edit Image"),
+                t("c26b9b9c", "File"),
+                t("g10600b0", "Menu"),
                 t("g7b1c574", "Reset to default"),
                 t("f388a7ec", "DeepSearch"),
                 t("ab1eb384", "Select your desired search mode"),
                 t("i330e54c", "Advanced search and reasoning"),
                 t("fdcce108", "DeeperSearch"),
                 t("ac64b674", "Extended search, more reasoning"),
-                t("j22655f2", "Ask anything"),
-                t("h0681e3e", "Talk to Grok, our AI assistant"),
-                t("d593fd78", "It can answer your questions, search X, and generate images"),
-                t("d0205a24", "Check the Facts"),
-                t("ed4177c4", "Grok may confidently provide factually incorrect information, mis-summarize, or miss some content. You should independently verify any information."),
-                t("c0ff98f8", "AI Training and Personalization"),
-                t("f1a8218a", "We may utilize your X data, as well as your interactions, inputs and results with Grok for model training, fine-tuning and to personalize your Grok experience. You can opt-out using your X settings. To learn more, visit our Help Center."),
-                t("bcbf5b6e", "Compartindo"),
-                t("j7b5c844", "You are responsible for the conversations you share publicly. Avoid sharing sensitive and confidential information about yourself or others in your conversations with Grok (see our Help Center)."),
-                t("c9f7c196", "Centro de Axuda"),
+                t("a2697040", "Describe what to change in image"),
                 t("c65f7308", "Servers are cooking right now"),
                 t("f2a8655e", "Grok Advanced tooling is currently unavailable."),
-                t("c26b9b9c", "File"),
-                t("g10600b0", "Menu"),
-                t("j826e722", "Save Image"),
-                t("a9325f10", "Copy Image"),
-                t("g0b12442", "Failed to copy the image"),
-                t("edd0c172", "Post Image"),
-                t("d1d3a41a", "Edit Image"),
-                t("a2697040", "Describe what to change in image"),
                 t("ge1cefc4", "Tools"),
                 t("e9b6d404", "What search tools should Grok have access to?"),
                 t("h15dce2e", "Advanced Settings"),
@@ -4201,60 +4210,25 @@
                 t("e4ae6abe", "Ask Grok to transform your image"),
                 t("e8ade5e2", "Select Personality"),
                 t("b5df32b0", "Grok something"),
+                t("dab087ee", "Chats"),
+                t("a911623c", "Imaxes"),
+                t("f794af9a", "Fun mode"),
+                t("eccf9fea", "Regular mode"),
+                t("j22655f2", "Ask anything"),
+                t("h0681e3e", "Talk to Grok, our AI assistant"),
+                t("d593fd78", "It can answer your questions, search X, and generate images"),
+                t("d0205a24", "Check the Facts"),
+                t("ed4177c4", "Grok may confidently provide factually incorrect information, mis-summarize, or miss some content. You should independently verify any information."),
+                t("c0ff98f8", "AI Training and Personalization"),
+                t("f1a8218a", "We may utilize your X data, as well as your interactions, inputs and results with Grok for model training, fine-tuning and to personalize your Grok experience. You can opt-out using your X settings. To learn more, visit our Help Center."),
+                t("bcbf5b6e", "Compartindo"),
+                t("j7b5c844", "You are responsible for the conversations you share publicly. Avoid sharing sensitive and confidential information about yourself or others in your conversations with Grok (see our Help Center)."),
+                t("c9f7c196", "Centro de Axuda"),
                 t("fb3b9776", "Grok’s output has been customized by this user."),
-                t("ca93f2ee", "This message has been deleted."),
-                t("b8c06820", "Copy text"),
-                t("ca0f5894", "Dislike"),
-                t("ja8d189e", "Wanted text answer"),
-                t("e951f04e", "Wanted image"),
-                t("c503b35e", "Wanted different image"),
-                t("d4371c92", "Code is incorrect"),
-                t("dbe8586e", "Wanted different code"),
-                t("e360eb4a", "Didn’t want code"),
-                t("a18657ca", "Math is incorrect"),
-                t("b8b86300", "Didn’t want math"),
-                t("e4c34788", "Incorrect answer"),
-                t("b220a8c8", "Wanted something else"),
-                t("b115fd18", "Biased answer"),
-                t("dc637214", "Bad style/tone"),
-                t("f02e6d42", "Wanted to search"),
-                t("bbec6bba", "Bad search results"),
-                t("b494d088", "Didn’t want search"),
-                t("a44974f2", "Doesn’t understand image"),
-                t("bd44a8a8", "Cóntanos máis"),
-                t("fcdbe764", "What can Grok do better?"),
-                t("bb6adb22", "Describe what went wrong"),
-                t("h0fa15f2", "Thanks for your feedback!"),
-                t("d700b268", "Referenced Chats"),
-                t("cd7bdab2", "Forgetting conversations won’t delete them from history"),
-                t("f21b84de", "Reference forgotten"),
-                t("i52a9cb8", "No memories to display."),
-                t("d9d36880", "Forget"),
-                t("g02dacc0", "Hoxe"),
-                t("c6e845c0", "Yesterday"),
-                t("a5fa4a86", "Jan"),
-                t("c51724a4", "Feb"),
-                t("j244ceb2", "Mar"),
-                t("b22b12e0", "Apr"),
-                t("h3023cac", "Maio"),
-                t("b10dbffa", "Jun"),
-                t("c81da1b6", "Jul"),
-                t("d4e4d3ce", "Aug"),
-                t("c3418f9a", "Sep"),
-                t("b64dada6", "Oct"),
-                t("ad24ec20", "Nov"),
-                t("c7902252", "Dec"),
-                t("idf94bac", "Regenerate"),
-                t("f7614f92", "Without search"),
-                t("c5ade3ba", "With search"),
-                t("c16e5b1a", "Without image generation"),
-                t("i2ca65fa", "With image generation"),
-                t("d3927f88", "Post link"),
-                t("be37ecd4", "Failed to copy to clipboard"),
-                t("h708a4c0", "Share Conversation"),
-                t("g06a67e2", "The share page will include messages up until this point"),
-                t("a0428662", "Not Helpful"),
-                t("fe4fd310", "Útil"),
+                t("b0a889d4", "As Image"),
+                t("a111fb48", "As Spreadsheet"),
+                t("bccc65f0", "Grok can make mistakes. Always check original sources."),
+                t("bd202fe6", "Generating card"),
                 t("bfd161bc", "Compare"),
                 t("j5dcf1b2", "Actualizouse"),
                 t("a50aaa10", "Pre-market"),
@@ -4286,6 +4260,9 @@
                 t("dd679fb1", function (e) {
                     return "All-time Low" + e.ttc_stock_details;
                 }),
+                t("ha9c4cf8", "View source"),
+                t("ecad5d78", "Save image"),
+                t("d2d1d398", "Copied!"),
                 t("a22063d2", "Share your location for improved accuracy."),
                 t("db3248a8", "Loading location"),
                 t("ffe0e588", "Share Location"),
@@ -4319,6 +4296,65 @@
                 t("d66bf142", "Thu"),
                 t("dc17968a", "Fri"),
                 t("j310a2d6", "Sat"),
+                t("afa2a58e", "See all posts"),
+                t("fc83e7e2", "See all users"),
+                t("df601d92", "Relevant Users"),
+                t("b001fa12", "Source query"),
+                t("db6c20cf", function (e) {
+                    return "Show all (" + e.count + ")";
+                }),
+                t("d7cb5408", "Relevant Web Pages"),
+                t("ca93f2ee", "This message has been deleted."),
+                t("b8c06820", "Copy text"),
+                t("ca0f5894", "Dislike"),
+                t("ja8d189e", "Wanted text answer"),
+                t("e951f04e", "Wanted image"),
+                t("c503b35e", "Wanted different image"),
+                t("d4371c92", "Code is incorrect"),
+                t("dbe8586e", "Wanted different code"),
+                t("e360eb4a", "Didn’t want code"),
+                t("a18657ca", "Math is incorrect"),
+                t("b8b86300", "Didn’t want math"),
+                t("e4c34788", "Incorrect answer"),
+                t("b220a8c8", "Wanted something else"),
+                t("b115fd18", "Biased answer"),
+                t("dc637214", "Bad style/tone"),
+                t("f02e6d42", "Wanted to search"),
+                t("bbec6bba", "Bad search results"),
+                t("b494d088", "Didn’t want search"),
+                t("a44974f2", "Doesn’t understand image"),
+                t("bd44a8a8", "Cóntanos máis"),
+                t("fcdbe764", "What can Grok do better?"),
+                t("bb6adb22", "Describe what went wrong"),
+                t("h0fa15f2", "Thanks for your feedback!"),
+                t("d700b268", "Referenced Chats"),
+                t("cd7bdab2", "Forgetting conversations won’t delete them from history"),
+                t("f21b84de", "Reference forgotten"),
+                t("i52a9cb8", "No memories to display."),
+                t("d9d36880", "Forget"),
+                t("a5fa4a86", "Jan"),
+                t("c51724a4", "Feb"),
+                t("j244ceb2", "Mar"),
+                t("b22b12e0", "Apr"),
+                t("h3023cac", "Maio"),
+                t("b10dbffa", "Jun"),
+                t("c81da1b6", "Jul"),
+                t("d4e4d3ce", "Aug"),
+                t("c3418f9a", "Sep"),
+                t("b64dada6", "Oct"),
+                t("ad24ec20", "Nov"),
+                t("c7902252", "Dec"),
+                t("idf94bac", "Regenerate"),
+                t("f7614f92", "Without search"),
+                t("c5ade3ba", "With search"),
+                t("c16e5b1a", "Without image generation"),
+                t("i2ca65fa", "With image generation"),
+                t("d3927f88", "Post link"),
+                t("be37ecd4", "Failed to copy to clipboard"),
+                t("h708a4c0", "Share Conversation"),
+                t("g06a67e2", "The share page will include messages up until this point"),
+                t("a0428662", "Not Helpful"),
+                t("fe4fd310", "Útil"),
                 t("eaf55eb4", "Show thinking"),
                 t("b1ac6016", "Completed DeepSearch"),
                 t("f766feca", "Completed DeeperSearch"),
@@ -4336,23 +4372,23 @@
                 t("db832e38", "Please enable notifications in browser settings"),
                 t("a910cac6", "There was an issue enabling notifications"),
                 t("be30b6ee", "Unstable connection"),
-                t("b52484b6", "Searching..."),
+                t("ge15b488", "Show thoughts"),
+                t("aa7c96bb", function (e) {
+                    return "See " + e.numResults + " more";
+                }),
                 t("a4d9dbfa", "Thoughts"),
+                t("j1ab5f40", "Tap to read"),
+                t("f5a2377e", "Thinking for"),
+                t("g3ce0132", "Thought for"),
+                t("f8007364", "Expand for details"),
+                t("ca53f780", "Collapse details"),
+                t("b52484b6", "Searching..."),
                 t("ib1c5475", function (e) {
                     return "Thought for " + e.minutes + "m " + e.seconds + "s";
                 }),
                 t("a15d62db", function (e) {
                     return "Thought for " + e.seconds + "s";
                 }),
-                t("d7cb5408", "Relevant Web Pages"),
-                t("aa7c96bb", function (e) {
-                    return "See " + e.numResults + " more";
-                }),
-                t("j1ab5f40", "Tap to read"),
-                t("f5a2377e", "Thinking for"),
-                t("g3ce0132", "Thought for"),
-                t("f8007364", "Expand for details"),
-                t("ca53f780", "Collapse details"),
                 t("ha8fbe22", "Generate more images with Premium"),
                 t("d95c232a", "You’ve reached your limit. Upgrade now to generate more."),
                 t("h2671312", "More Grok with Premium"),
@@ -4899,8 +4935,8 @@
                 t("fbc79a40", "Spaces overview"),
                 t("d077112a", "Space Stats"),
                 t("cf3709da", "Status"),
-                t("e797dc32", "Stream time: "),
-                t("b649d8cc", "Subscriber Only"),
+                t("e797dc32", "Stream time: ");
+            t("b649d8cc", "Subscriber Only"),
                 t("j9282130", "Broadcast thumbnail"),
                 t("g629b8b0", "Timed Out"),
                 t("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
@@ -4929,8 +4965,8 @@
                 t("a532072a", "Viewers"),
                 t("d9508ab0", "views"),
                 t("d9f9dec0", "View Space"),
-                t("h0c1f37a", "View Space Analytics");
-            t("e41fffbc", "The total watch time of your videos."),
+                t("h0c1f37a", "View Space Analytics"),
+                t("e41fffbc", "The total watch time of your videos."),
                 t("if2909ba", "Watch Time"),
                 t("i0e5bf4c", "Your videos"),
                 t("ed99baea", "Early Beta Access"),
@@ -5851,8 +5887,8 @@
                 t("hf68e810", "Community Notes is a program that aims to create a better-informed world. It empowers people on X to collaboratively add helpful notes to posts that might be misleading."),
                 t("jdb52860", "Os colaboradores escriben e cualifican notas"),
                 t("c104025c", "Contributors are people on X, just like you, who chose to enroll in the pilot to write and rate notes. The more people that participate, the better the program becomes."),
-                t("j7872b8c", "Only notes that people find helpful appear on a post"),
-                t("fb59415e", "In order to be shown publicly as context on the post, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people."),
+                t("j7872b8c", "Only notes that people find helpful appear on a post");
+            t("fb59415e", "In order to be shown publicly as context on the post, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people."),
                 t("f9a44022", "X, the company, doesn’t choose what shows up: the people do"),
                 t("gdf4fbb2", "X, the company, doesn’t write, rate or moderate notes (unless they break the X Rules). We believe giving people voice to make these choices together is a fair and effective way to add information that helps people stay better informed."),
                 t("cc720e6a", "Community Notes is built on data transparency"),
@@ -5883,8 +5919,8 @@
                     return "Non hai resultados de " + e.query;
                 }),
                 t("f191a2ba", "configuración da procura"),
-                t("a068008a", "Folders aren`t loading right now");
-            t("f075b0e8", "Editar cartafol"),
+                t("a068008a", "Folders aren`t loading right now"),
+                t("f075b0e8", "Editar cartafol"),
                 t("beba2a0e", "Crear cartafol de marcadores"),
                 t("e41c9b4f", function (e) {
                     return "Gardouse en " + e.bookmarkFolderName;
@@ -5929,7 +5965,6 @@
                 t("d7346632", "You haven’t joined any Communities yet"),
                 t("b732a4cc", "When you do, you’ll see their posts here."),
                 t("hff48914", "No posts could be found at this time."),
-                t("hb52cc4a", "Téntao de novo máis tarde."),
                 t("e50e1bb0", "Welcome to Communities"),
                 t("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
                 t("fc5c6914", "Meet others with your interests"),
@@ -6503,26 +6538,13 @@
                 t("e5f4eac0", "Your content will be more discoverable. And you’ll appear in search results and trends."),
                 t("c7832a72", "Connect directly with others"),
                 t("i1ccd17a", "Send Direct Messages to people, who don’t follow you, without your message being automatically filtered."),
+                t("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
                 t("hc965308", "Fun"),
                 t("eb78b77e", "Fun Mode"),
                 t("aa8ece10", "Try grok.com"),
                 t("gb5fb7d0", "Focus Mode"),
                 t("g5665caa", "Exit Focus Mode"),
                 t("a372681e", "Copy share link"),
-                t("fbc79f6a", "Chat history"),
-                t("b61ad410", "History"),
-                t("b3de2628", "No chat history available"),
-                t("acfbfb28", "Your future conversations will appear here."),
-                t("i1147548", "Search Grok History"),
-                t("ab437026", "No conversations found"),
-                t("e12569ec", "Try to search for something else."),
-                t("d4eb0e26", "Cambiar o nome"),
-                t("c64975ea", "You haven’t favorited any conversations yet"),
-                t("a3e3db6e", "Click the star to save chats you come back to often"),
-                t("f4ae77ac", "No image history available"),
-                t("d57d337e", "Your generated images will appear here."),
-                t("dab087ee", "Chats"),
-                t("a911623c", "Imaxes"),
                 t("ae9cdac6", "Chat History"),
                 t("b198a392", "Grok Conversation"),
                 t("d16329b4", "Copy Conversation"),
@@ -6873,8 +6895,8 @@
                 t("b2c213e0", "Character limit exceeded"),
                 t("d84e9c2a", "Share the type of work commitment expected for this role."),
                 t("bc8b300c", "Job Function"),
-                t("d1eedb50", "Help candidates understand the area this role supports."),
-                t("eaf3ce64", "Team"),
+                t("d1eedb50", "Help candidates understand the area this role supports.");
+            t("eaf3ce64", "Team"),
                 t("b36cd50e", "Specify the core team that candidates will work with once hired."),
                 t("d3a427ce", "Select the level of experience required."),
                 t("i7174442", "Job Description"),
@@ -6889,8 +6911,8 @@
                 t("c05176ec", "If this role is onsite, enter the site location(s). If this role is remote, describe where candidates can be located."),
                 t("d70c24d4", "Used to help candidates search for your job."),
                 t("de1c4376", "Salary Range"),
-                t("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for.");
-            t("ede7d0a2", "Currency"),
+                t("hf352d42", "Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for."),
+                t("ede7d0a2", "Currency"),
                 t("b925c18c", "Salary Type"),
                 t("j3d242ce", "Invalid range"),
                 t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
@@ -7845,31 +7867,7 @@
                 t("b5099e33", function (e) {
                     return "@" + e.screenName + " doesn’t have any verified followers.";
                 }),
-                t("ec251f36", "Cando alguén a quen coñezas o siga, aparecerá aquí."),
-                t("f8af4f48", "Cando siga contas, aparecerán aquí."),
-                t("fd0aad94", "When someone verified follows this account, they’ll show up here."),
-                t("b84f6df1", function (e) {
-                    return "Gift Premium at a " + e.percentage + "% discount for a limited time";
-                }),
-                t("cfcac293", function (e) {
-                    return "Gift & Pay " + e.price;
-                }),
-                t("d7a73450", "Tier"),
-                t("hbd2c24e", "This account is not eligible for gifts at this time."),
-                t("f3fddc98", "Purchaser Terms"),
-                t("cff9c889", "Learn more"),
-                t("c65dda96", "Your gift has been sent."),
-                t("f6e2a407", function (e) {
-                    return "Allow anyone to see your Subscribed badge when you reply to @" + e.screenName + "’s posts";
-                }),
-                t("j8dedddd", function (e) {
-                    return "When you turn this off, @" + e.screenName + " and their Subscribers will still see your badge when you reply to @" + e.screenName + "’s Subscriber-only posts. @" + e.screenName + " will always see your badge.";
-                }),
-                t("c8a513f6", "Cancel Subscription"),
-                t("ea000ec8", "Already canceled your Subscription?"),
-                t("d7b8387e", "If you’ve already canceled, there’s nothing more to do. Your Subscription will automatically expire at the end of the billing cycle."),
-                t("f4166d9a", "Want to cancel your Subscription?"),
-                t("b74ff5fc", "If you cancel, your Subscription will automatically expire at the end of the billing cycle.");
+                t("ec251f36", "Cando alguén a quen coñezas o siga, aparecerá aquí.");
             function r(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var t = a[o];
@@ -7908,7 +7906,31 @@
                     s(e, a)
                 );
             }
-            t("ee9efbc8", "Continuar coa cancelación"),
+            t("f8af4f48", "Cando siga contas, aparecerán aquí."),
+                t("fd0aad94", "When someone verified follows this account, they’ll show up here."),
+                t("b84f6df1", function (e) {
+                    return "Gift Premium at a " + e.percentage + "% discount for a limited time";
+                }),
+                t("cfcac293", function (e) {
+                    return "Gift & Pay " + e.price;
+                }),
+                t("d7a73450", "Tier"),
+                t("hbd2c24e", "This account is not eligible for gifts at this time."),
+                t("f3fddc98", "Purchaser Terms"),
+                t("cff9c889", "Learn more"),
+                t("c65dda96", "Your gift has been sent."),
+                t("f6e2a407", function (e) {
+                    return "Allow anyone to see your Subscribed badge when you reply to @" + e.screenName + "’s posts";
+                }),
+                t("j8dedddd", function (e) {
+                    return "When you turn this off, @" + e.screenName + " and their Subscribers will still see your badge when you reply to @" + e.screenName + "’s Subscriber-only posts. @" + e.screenName + " will always see your badge.";
+                }),
+                t("c8a513f6", "Cancel Subscription"),
+                t("ea000ec8", "Already canceled your Subscription?"),
+                t("d7b8387e", "If you’ve already canceled, there’s nothing more to do. Your Subscription will automatically expire at the end of the billing cycle."),
+                t("f4166d9a", "Want to cancel your Subscription?"),
+                t("b74ff5fc", "If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
+                t("ee9efbc8", "Continuar coa cancelación"),
                 t("c5d9c77a", "Semella que houbo algún problemiña. Non te preocupes, non foi culta túa. Pecha esta ventá e téntao de novo."),
                 t("jda53c24", "You can cancel your Subscription through the Apple App Store."),
                 t("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
@@ -8879,8 +8901,8 @@
                 t("faf9f484", "Anuncio"),
                 t("ae2ea9e7", function (e) {
                     return "Anuncio de " + e.advertiserName;
-                }),
-                t("hea01798", "Control desprazable de procura"),
+                });
+            t("hea01798", "Control desprazable de procura"),
                 t("f8a09386", "Ver en Periscope"),
                 t("gf2b6eee", "Picture-in-Picture"),
                 t("b3160a69", function (e) {
@@ -8905,10 +8927,10 @@
                 }),
                 t("g60001bb", function (e) {
                     return "Ver " + e.advertiserName;
-                });
-            t("dff1ddd9", function (e) {
-                return "Ir a " + e.advertiserName;
-            }),
+                }),
+                t("dff1ddd9", function (e) {
+                    return "Ir a " + e.advertiserName;
+                }),
                 t("b0b22805", function (e) {
                     return "Visitar " + e.advertiserName;
                 }),
@@ -13206,9 +13228,9 @@
                 (b.b756786375 = y({ 2: b("gl").numberFormatter({ raw: "00" }) }, { pattern: "HH:mm", timeSeparator: ":" })),
                 (b.b920279765 = y({ 1: b("gl").numberFormatter({ raw: "0" }), 2: b("gl").numberFormatter({ raw: "00" }) }, { pattern: "E, h:mm a", timeSeparator: ":", days: { E: { 1: { sun: "dom.", mon: "luns", tue: "mar.", wed: "mér.", thu: "xov.", fri: "ven.", sat: "sáb." } } }, dayPeriods: { am: "a.m.", pm: "p.m." } })),
                 (b.a1735533276 = y({ 1: b("gl").numberFormatter({ raw: "0" }) }, { pattern: "MMMM 'de' y", timeSeparator: ":", months: { M: { 4: { 1: "xaneiro", 2: "febreiro", 3: "marzo", 4: "abril", 5: "maio", 6: "xuño", 7: "xullo", 8: "agosto", 9: "setembro", 10: "outubro", 11: "novembro", 12: "decembro" } } } })),
+                (b.a498093551 = y({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "Domingo", mon: "Luns", tue: "Martes", wed: "Mércores", thu: "Xoves", fri: "Venres", sat: "Sábado" } } } })),
                 (b.b932252869 = y({ 1: b("gl").numberFormatter({ raw: "0" }), 2: b("gl").numberFormatter({ raw: "00" }) }, { pattern: "dd/MM/y", timeSeparator: ":" })),
                 (b.b755151889 = y({}, { pattern: "LLLL", timeSeparator: ":", months: { L: { 4: { 1: "Xaneiro", 2: "Febreiro", 3: "Marzo", 4: "Abril", 5: "Maio", 6: "Xuño", 7: "Xullo", 8: "Agosto", 9: "Setembro", 10: "Outubro", 11: "Novembro", 12: "Decembro" } } } })),
-                (b.a498093551 = y({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "Domingo", mon: "Luns", tue: "Martes", wed: "Mércores", thu: "Xoves", fri: "Venres", sat: "Sábado" } } } })),
                 (b.b1145873777 = v(b("gl").dateToPartsFormatter({ skeleton: "MMMd" }))),
                 (b.b1807466450 = v(b("gl").dateToPartsFormatter({ skeleton: "yMMMd" }))),
                 (b.a274934561 = v(b("gl").dateToPartsFormatter({ skeleton: "hm" }))),
@@ -13228,9 +13250,9 @@
                 (b.a1432998018 = v(b("gl").dateToPartsFormatter({ time: "short" }))),
                 (b.b1071453132 = v(b("gl").dateToPartsFormatter({ skeleton: "Ehm" }))),
                 (b.b1808151643 = v(b("gl").dateToPartsFormatter({ skeleton: "yMMMM" }))),
+                (b.a106686470 = v(b("gl").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (b.b1768413422 = v(b("gl").dateToPartsFormatter({ date: "medium" }))),
                 (b.b1146558970 = v(b("gl").dateToPartsFormatter({ skeleton: "MMMM" }))),
-                (b.a106686470 = v(b("gl").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (b.b1130060558 = w(b("gl").numberFormatter({}), b("gl").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "dentro de {0} día", "relativeTimePattern-count-other": "dentro de {0} días" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "hai {0} día", "relativeTimePattern-count-other": "hai {0} días" }, "relative-type--2": "antonte", "relative-type--1": "onte", "relative-type-0": "hoxe", "relative-type-1": "mañá", "relative-type-2": "pasadomañá" })),
                 (b.b321991465 = k(b("gl").numberFormatter({}), b("gl").pluralGenerator({}), { compoundUnitPattern: "{0} por {1}", unitProperties: { displayName: "segundos", one: "{0} segundo", other: "{0} segundos", perUnitPattern: "{0} por segundo" } })),
                 (b.a2086012535 = k(b("gl").numberFormatter({}), b("gl").pluralGenerator({}), { compoundUnitPattern: "{0} por {1}", unitProperties: { displayName: "minutos", one: "{0} minuto", other: "{0} minutos", perUnitPattern: "{0} por minuto" } })),
@@ -13362,14 +13384,14 @@
                 t("b6ca7bcb", b.a1432998018),
                 t("h0e4cdf5", b.b1071453132),
                 t("g727ddcf", b.b1808151643),
+                t("f3b9b9a7", b.a106686470),
                 t("h3629783", b.b1768413422),
                 t("a20c68af", b.b1146558970),
                 t("ja781451", b.a750678348),
                 t("cfa1a7b9", b.b1349623377),
-                t("f3b9b9a7", b.a106686470),
                 t("eefcd267", b.b1904355087),
                 t("fa8afc43", b.a102298770);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.0475fa6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.9e8cd7da.js.map

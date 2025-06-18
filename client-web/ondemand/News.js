@@ -2,8 +2,43 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["ondemand.News"],
     {
+        169576: (e, t, a) => {
+            a.d(t, { c: () => y, Z: () => f });
+            var n = a(202784),
+                i = a(325686),
+                l = a(392237),
+                r = a(530732),
+                s = a(992942),
+                o = a(731708),
+                c = a(154003),
+                m = a(725516),
+                d = a(111677),
+                u = a.n(d);
+            const p = a.p + "MarchMadnessBannerDark.42aa2dea.png",
+                g = a.p + "MarchMadnessBannerLight.02bf82ca.png",
+                h = { header: u().d231a76a, description: u().heaba5d8, legalDisclaimer: u().i57d3ea0, buttonText: u().a0440af6, image: { darkMode: p, lightMode: g } },
+                y = Object.freeze({ MarchMadness: "MarchMadness" }),
+                f = ({ buttonOnSameLine: e, link: t, occasion: a, styleOverrides: d, withBackgroundImage: u }) => {
+                    const p = (0, m.z)(),
+                        g = y[a] || "Occasion",
+                        f = u ? `${g}WithBackgroundImage` : g;
+                    n.useEffect(() => {
+                        p.scribe({ component: f, action: "impression" });
+                    }, [p, f]);
+                    const b = () => {
+                            p.scribe({ component: f, action: "click", element: "card" });
+                        },
+                        { backgroundcolor: _, buttonSize: v, cardWidth: k, marginbottom: C, textcolor: x } = d ?? {},
+                        E = _ ? l.default.theme.colors[_] : l.default.theme.colors.gray0,
+                        S = x ? l.default.theme.colors[x] : l.default.theme.colors.gray900,
+                        T = C ? l.default.theme.spaces[C] : l.default.theme.spaces.space16,
+                        I = { [y.MarchMadness]: { header: h.header, description: h.description, legalDisclaimer: h.legalDisclaimer, buttonText: h.buttonText, image: h.image } }[a];
+                    return u ? n.createElement(r.Z, { interactiveStyles: null, link: t, onPress: b, style: w.bannerContainer }, n.createElement(s.Z, { resizeMode: "contain", source: { uri: "light" === l.default.theme.paletteName ? I.image.lightMode : I.image.darkMode }, style: { height: 85 } })) : n.createElement(i.Z, { style: [w.card, { backgroundColor: E }, { maxWidth: k }, { marginBottom: T }], testID: "popupCard" }, n.createElement(i.Z, { style: e ? w.horizontalContent : w.verticalContent }, n.createElement(i.Z, { style: e ? w.textContainer : null }, n.createElement(o.ZP, { size: "headline2", style: [w.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, I.header), n.createElement(o.ZP, { size: "subtext1", style: [w.popupDescription, { color: S }] }, I.description, " ", e ? null : I.legalDisclaimer)), n.createElement(i.Z, { style: w.buttonContainer }, n.createElement(c.ZP, { backgroundColor: "light" === l.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: b, size: "medium", style: [w.popupButton, { width: v }] }, I.buttonText), e && n.createElement(o.ZP, { size: "subtext3", style: [w.legalDisclaimer, { color: S }] }, I.legalDisclaimer))));
+                },
+                w = l.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
+        },
         305179: (e, t, a) => {
-            a.d(t, { Z: () => S });
+            a.d(t, { Z: () => E });
             var n = a(202784),
                 i = a(325686),
                 l = a(392237),
@@ -20,8 +55,8 @@
                 y = a(837020),
                 f = a(899667);
             const w = g().b08821f4,
-                _ = g().fdc5d06c,
-                b = g().ic61c5fc,
+                b = g().fdc5d06c,
+                _ = g().ic61c5fc,
                 v = "News",
                 k = "beta";
             function C() {
@@ -46,7 +81,7 @@
                     { style: x.container },
                     n.createElement(d.ZP, {
                         borderColor: "transparent",
-                        hoverLabel: { label: s ? w : _ },
+                        hoverLabel: { label: s ? w : b },
                         icon: s ? n.createElement(h.default, { style: [x.icon, a ? x.compactIcon : void 0] }) : n.createElement(y.default, { style: [x.icon, a ? x.compactIcon : void 0] }),
                         onClick: () => {
                             e.length > 1 ? e.goBack() : s ? e.push("/i/news") : e.push("/explore/tabs/news");
@@ -56,7 +91,7 @@
                     l
                         ? n.createElement(d.ZP, {
                               borderColor: "transparent",
-                              hoverLabel: { label: b },
+                              hoverLabel: { label: _ },
                               icon: n.createElement(f.default, { style: x.scrollToTopIcon }),
                               onClick: () => {
                                   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -66,15 +101,15 @@
                 );
             }
             const x = l.default.create((e) => ({ container: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", width: "100%", padding: e.spaces.space16, backgroundColor: e.colors.navigationBackground, position: "sticky", top: 0, zIndex: 50 }, icon: { width: e.spaces.space24, height: e.spaces.space24 }, compactIcon: { width: e.spaces.space20, height: e.spaces.space20 }, scrollToTopIcon: { animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateY(10px)" }, "100%": { opacity: 1, transform: "translateY(0px)" } }], animationTimingFunction: "ease", animationFillMode: "both" }, header: { display: "flex", flexDirection: "row", alignItems: "center", borderRadius: e.borderRadii.xLarge, padding: e.spaces.space8, backgroundColor: "transparent", transition: "all 0.2s ease", animationDuration: "0.2s", animationTimingFunction: "ease", animationFillMode: "both", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateY(-10px)" }, "100%": { opacity: 1, transform: "translateY(0px)" } }] }, headerText: { color: "inherit", fontSize: e.fontSizes.subtext1 }, betaLabel: { display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: e.colors.blue0, borderRadius: e.borderRadii.medium, paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space2 }, betaLabelText: { color: e.colors.blue500, fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3 } }));
-            function S({ children: e, scribeNamespace: t }) {
+            function E({ children: e, scribeNamespace: t }) {
                 (0, r.hB)(), (0, r.ph)();
                 const { isCompactLayout: a } = (0, c.Z)();
-                return n.createElement(o.nO, { namespace: { page: t } }, n.createElement(s.Z, null, n.createElement(i.Z, { style: T.root }, a ? n.createElement(i.Z, { style: T.compactLayout }, n.createElement(C, null), n.createElement(i.Z, { style: T.compactContent }, e)) : n.createElement(i.Z, { style: T.layout }, n.createElement(i.Z, { style: T.topNavBarContainer }, n.createElement(C, null), n.createElement(i.Z, { style: T.content }, e))))));
+                return n.createElement(o.nO, { namespace: { page: t } }, n.createElement(s.Z, null, n.createElement(i.Z, { style: S.root }, a ? n.createElement(i.Z, { style: S.compactLayout }, n.createElement(C, null), n.createElement(i.Z, { style: S.compactContent }, e)) : n.createElement(i.Z, { style: S.layout }, n.createElement(i.Z, { style: S.topNavBarContainer }, n.createElement(C, null), n.createElement(i.Z, { style: S.content }, e))))));
             }
-            const T = l.default.create((e) => ({ root: { height: "100%", width: "100%", flex: 1, animationDuration: "0.2s", animationDelay: "0.2s", animationTimingFunction: "ease", animationFillMode: "both", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, layout: { display: "flex", flexDirection: "row", flex: 1 }, compactLayout: { display: "flex", flexDirection: "column", flex: 1 }, topNavBarContainer: { display: "flex", flexDirection: "column", flex: 1, width: "100%", maxWidth: 1500, marginHorizontal: "auto" }, content: { overflow: "hidden", flex: 1, flexDirection: "column", alignItems: "center" }, compactContent: { overflow: "hidden", flex: 1, width: "100%", maxWidth: 600, marginHorizontal: "auto" } }));
+            const S = l.default.create((e) => ({ root: { height: "100%", width: "100%", flex: 1, animationDuration: "0.2s", animationDelay: "0.2s", animationTimingFunction: "ease", animationFillMode: "both", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, layout: { display: "flex", flexDirection: "row", flex: 1 }, compactLayout: { display: "flex", flexDirection: "column", flex: 1 }, topNavBarContainer: { display: "flex", flexDirection: "column", flex: 1, width: "100%", maxWidth: 1500, marginHorizontal: "auto" }, content: { overflow: "hidden", flex: 1, flexDirection: "column", alignItems: "center" }, compactContent: { overflow: "hidden", flex: 1, width: "100%", maxWidth: 600, marginHorizontal: "auto" } }));
         },
         507504: (e, t, a) => {
-            a.d(t, { Z: () => T });
+            a.d(t, { Z: () => S });
             a(136728);
             var n,
                 i,
@@ -92,8 +127,8 @@
                 y,
                 f,
                 w,
-                _,
                 b,
+                _,
                 v = {
                     fragment: {
                         argumentDefinitions: (n = [{ defaultValue: null, kind: "LocalArgument", name: "limit" }]),
@@ -166,7 +201,7 @@
                                                                 ],
                                                                 storageKey: null,
                                                             },
-                                                            (_ = {
+                                                            (b = {
                                                                 alias: null,
                                                                 args: null,
                                                                 concreteType: "TrendSentiment",
@@ -200,7 +235,7 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: n, kind: "Operation", name: "useHomeNewsArticlesQuery", selections: [{ alias: "deepsearchArticlesHomePageResult", args: i, concreteType: "DeepsearchArticleHomePage", kind: "LinkedField", name: "deepsearch_articles_home_page", plural: !0, selections: [{ alias: null, args: null, concreteType: "AiTrendResults", kind: "LinkedField", name: "trend_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(b = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "NewsArticle", kind: "LinkedField", name: "deepsearch_news_articles", plural: !1, selections: [l, r, o, c, m, d, u, p, h, y, f, { alias: null, args: null, concreteType: "NewsArticleSection", kind: "LinkedField", name: "sections", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "content", plural: !1, selections: [b, w], storageKey: null }], storageKey: null }], storageKey: null }, _, l], type: "AiTrend", abstractKey: null }], storageKey: null }, l], storageKey: null }], storageKey: null }] },
+                    operation: { argumentDefinitions: n, kind: "Operation", name: "useHomeNewsArticlesQuery", selections: [{ alias: "deepsearchArticlesHomePageResult", args: i, concreteType: "DeepsearchArticleHomePage", kind: "LinkedField", name: "deepsearch_articles_home_page", plural: !0, selections: [{ alias: null, args: null, concreteType: "AiTrendResults", kind: "LinkedField", name: "trend_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(_ = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "NewsArticle", kind: "LinkedField", name: "deepsearch_news_articles", plural: !1, selections: [l, r, o, c, m, d, u, p, h, y, f, { alias: null, args: null, concreteType: "NewsArticleSection", kind: "LinkedField", name: "sections", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "content", plural: !1, selections: [_, w], storageKey: null }], storageKey: null }], storageKey: null }, b, l], type: "AiTrend", abstractKey: null }], storageKey: null }, l], storageKey: null }], storageKey: null }] },
                     params: { id: "gTItUBXHQzDYz5zGcfHOSw", metadata: {}, name: "useHomeNewsArticlesQuery", operationKind: "query", text: null },
                 };
             v.hash = "3801ff63426a8e5a7f7864683169d9be";
@@ -208,9 +243,9 @@
             a(585488);
             var C = a(712696),
                 x = a.n(C);
-            const S = k;
-            const T = function ({ limit: e }) {
-                const t = x()(S, { limit: e }).deepsearchArticlesHomePageResult || [],
+            const E = k;
+            const S = function ({ limit: e }) {
+                const t = x()(E, { limit: e }).deepsearchArticlesHomePageResult || [],
                     a = [];
                 return (
                     t.forEach((e) => {
@@ -221,7 +256,7 @@
             };
         },
         797174: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => U });
+            a.r(t), a.d(t, { default: () => O });
             var n = a(202784),
                 i = a(688715),
                 l = a(529256),
@@ -238,13 +273,13 @@
                 y = a(695356),
                 f = a(118368),
                 w = a(555874),
-                _ = a(858440);
-            const b = 70;
+                b = a(858440);
+            const _ = 70;
             function v({ articles: e }) {
                 const t = (0, d.Z)(),
-                    { height: a } = (0, _.Z)(),
-                    i = Math.max(550, 0.95 * (a - b)),
-                    l = n.useMemo(() => [k.scroller, { height: a - b }], [a]);
+                    { height: a } = (0, b.Z)(),
+                    i = Math.max(550, 0.95 * (a - _)),
+                    l = n.useMemo(() => [k.scroller, { height: a - _ }], [a]);
                 return e.length
                     ? n.createElement(
                           c.Z,
@@ -257,7 +292,7 @@
                               renderItem: ({ index: l, item: r }) =>
                                   n.createElement(
                                       c.Z,
-                                      { style: [k.articleContainer, { height: a - b - 0.1 * a, maxHeight: i }] },
+                                      { style: [k.articleContainer, { height: a - _ - 0.1 * a, maxHeight: i }] },
                                       n.createElement(u.Z, {
                                           article: r,
                                           containerStyle: k.articleCardContainer,
@@ -287,10 +322,10 @@
                 return n.createElement(c.Z, { style: [x.divider, e] });
             }
             const x = m.default.create((e) => ({ divider: { height: "100%", width: 1, backgroundColor: e.colors.gray100, animationDuration: "0.2s", animationDelay: "0.2s", animationTimingFunction: "ease", animationFillMode: "both", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] } }));
-            function S({ articles: e, onArticleClick: t }) {
+            function E({ articles: e, onArticleClick: t }) {
                 return n.createElement(
                     c.Z,
-                    { style: T.container },
+                    { style: S.container },
                     e.map((e, a) =>
                         n.createElement(
                             n.Fragment,
@@ -298,7 +333,7 @@
                             0 !== a && n.createElement(C, null),
                             n.createElement(u.Z, {
                                 article: e,
-                                containerStyle: [T.article],
+                                containerStyle: [S.article],
                                 hideImg: !0,
                                 hideSummary: !0,
                                 onClick: () => {
@@ -309,8 +344,8 @@
                     ),
                 );
             }
-            const T = m.default.create((e) => ({ container: { width: "100%", display: "flex", flexDirection: "row", gap: e.spaces.space4 }, article: { animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationIterationCount: 1, animationFillMode: "both", flex: 1 } }));
-            function E({ articles: e, onArticleClick: t }) {
+            const S = m.default.create((e) => ({ container: { width: "100%", display: "flex", flexDirection: "row", gap: e.spaces.space4 }, article: { animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationIterationCount: 1, animationFillMode: "both", flex: 1 } }));
+            function T({ articles: e, onArticleClick: t }) {
                 return n.createElement(
                     c.Z,
                     { style: I.container },
@@ -333,7 +368,7 @@
                 );
             }
             const I = m.default.create((e) => ({ container: { width: "100%", display: "flex", flexDirection: "row", gap: e.spaces.space4 }, article: { animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationIterationCount: 1, animationFillMode: "both", flex: 1 } }));
-            function F({ articles: e, onArticleClick: t }) {
+            function Z({ articles: e, onArticleClick: t }) {
                 const a = e[0],
                     i = e.slice(1);
                 return n.createElement(
@@ -377,16 +412,16 @@
                 );
             }
             const A = m.default.create((e) => ({ container: { width: "100%", display: "flex", flexDirection: "row", gap: e.spaces.space4 }, leftContainer: { flex: 2, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationIterationCount: 1, animationFillMode: "both", height: "100%" }, rightContainer: { flex: 1, display: "flex", flexDirection: "column", gap: e.spaces.space4, width: "100%", animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationIterationCount: 1, animationFillMode: "both" }, articleContainer: { flex: 1 }, rightArticleCardContainer: { width: "100%" } }));
-            var N = a(274234);
-            function Z({ articles: e, highlightedArticle: t, onArticleClick: a }) {
+            var F = a(274234);
+            function N({ articles: e, highlightedArticle: t, onArticleClick: a }) {
                 return n.createElement(
                     c.Z,
-                    { style: L.container },
+                    { style: z.container },
                     e.map((e, t) =>
                         n.createElement(u.Z, {
                             article: e,
-                            containerStyle: [L.article],
-                            headerImgContainerStyle: L.articleHeaderImg,
+                            containerStyle: [z.article],
+                            headerImgContainerStyle: z.articleHeaderImg,
                             hideSummary: !0,
                             key: `small-article-${e.id}`,
                             onClick: () => {
@@ -398,21 +433,21 @@
                         t.live_article &&
                         !!t.timeline &&
                         (t.timeline?.events || []).length > 0 &&
-                        n.createElement(N.Z, {
+                        n.createElement(F.Z, {
                             article: t,
                             onRoute: () => {
                                 a(t.id);
                             },
                             routeToArticle: !0,
-                            style: L.article,
+                            style: z.article,
                         }),
                 );
             }
-            const L = m.default.create((e) => ({ container: { width: "100%", display: "flex", flexDirection: "row", gap: e.spaces.space4 }, article: { animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationIterationCount: 1, animationFillMode: "both", flex: 1 }, articleHeaderImg: { minHeight: 200 } }));
-            function z({ articles: e, onArticleClick: t }) {
+            const z = m.default.create((e) => ({ container: { width: "100%", display: "flex", flexDirection: "row", gap: e.spaces.space4 }, article: { animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationIterationCount: 1, animationFillMode: "both", flex: 1 }, articleHeaderImg: { minHeight: 200 } }));
+            function L({ articles: e, onArticleClick: t }) {
                 return n.createElement(
                     c.Z,
-                    { style: K.container },
+                    { style: D.container },
                     e.map((e, a) =>
                         n.createElement(
                             n.Fragment,
@@ -420,8 +455,8 @@
                             0 !== a && n.createElement(C, null),
                             n.createElement(u.Z, {
                                 article: e,
-                                containerStyle: K.article,
-                                headerImgContainerStyle: K.articleHeaderImg,
+                                containerStyle: D.article,
+                                headerImgContainerStyle: D.articleHeaderImg,
                                 onClick: () => {
                                     t(e.id);
                                 },
@@ -431,8 +466,8 @@
                     ),
                 );
             }
-            const K = m.default.create((e) => ({ container: { width: "100%", display: "flex", flexDirection: "row", gap: e.spaces.space4 }, article: { flex: 1 }, articleHeaderImg: { minHeight: 250 } }));
-            function D() {
+            const D = m.default.create((e) => ({ container: { width: "100%", display: "flex", flexDirection: "row", gap: e.spaces.space4 }, article: { flex: 1 }, articleHeaderImg: { minHeight: 250 } }));
+            function K() {
                 const e = (0, g.Z)({ limit: 19 }),
                     t = (0, d.Z)(),
                     { isCompactLayout: a } = (0, h.Z)();
@@ -460,14 +495,14 @@
                         ? n.createElement(v, { articles: e })
                         : n.createElement(
                               c.Z,
-                              { style: H.container },
+                              { style: B.container },
                               l &&
                                   n.createElement(
                                       c.Z,
-                                      { style: H.highlightedArticle },
+                                      { style: B.highlightedArticle },
                                       n.createElement(u.Z, {
                                           article: l,
-                                          headerImgContainerStyle: H.highlightedArticleHeaderImg,
+                                          headerImgContainerStyle: B.highlightedArticleHeaderImg,
                                           hoveredBgColor: "transparent",
                                           layout: "full",
                                           onClick: () => {
@@ -479,7 +514,7 @@
                                       }),
                                   ),
                               i.secondary.length > 0 &&
-                                  n.createElement(Z, {
+                                  n.createElement(N, {
                                       articles: i.secondary,
                                       highlightedArticle: l,
                                       onArticleClick: (e) => {
@@ -491,7 +526,7 @@
                                       n.Fragment,
                                       null,
                                       n.createElement(f.Z, null),
-                                      n.createElement(F, {
+                                      n.createElement(Z, {
                                           articles: i.leftLargeRightFourGrid,
                                           onArticleClick: (e) => {
                                               s(e);
@@ -503,7 +538,7 @@
                                       n.Fragment,
                                       null,
                                       n.createElement(f.Z, null),
-                                      n.createElement(E, {
+                                      n.createElement(T, {
                                           articles: i.fourWithoutImage,
                                           onArticleClick: (e) => {
                                               s(e);
@@ -515,7 +550,7 @@
                                       n.Fragment,
                                       null,
                                       n.createElement(f.Z, null),
-                                      n.createElement(z, {
+                                      n.createElement(L, {
                                           articles: i.threeGrid,
                                           onArticleClick: (e) => {
                                               s(e);
@@ -527,7 +562,7 @@
                                       n.Fragment,
                                       null,
                                       n.createElement(f.Z, null),
-                                      n.createElement(S, {
+                                      n.createElement(E, {
                                           articles: i.fourOnlyTitle,
                                           onArticleClick: (e) => {
                                               s(e);
@@ -537,19 +572,19 @@
                           )
                     : null;
             }
-            const H = m.default.create((e) => ({ container: { flex: 1, display: "flex", flexDirection: "column", gap: e.spaces.space12, paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space24, paddingBottom: e.spaces.space80, maxWidth: 1200 }, highlightedArticle: { width: "100%", animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationIterationCount: 1, animationFillMode: "both" }, highlightedArticleHeaderImg: { minHeight: 350 } }));
+            const B = m.default.create((e) => ({ container: { flex: 1, display: "flex", flexDirection: "column", gap: e.spaces.space12, paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space24, paddingBottom: e.spaces.space80, maxWidth: 1200 }, highlightedArticle: { width: "100%", animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationIterationCount: 1, animationFillMode: "both" }, highlightedArticleHeaderImg: { minHeight: 350 } }));
             var P = a(305179);
-            const B = "News",
-                R = "The latest realtime information.",
-                M = { width: 600, height: 315, url: "https://abs.twimg.com/grok-news/article-x-banner" },
+            const M = "News",
+                H = "The latest realtime information.",
+                R = { width: 600, height: 315, url: "https://abs.twimg.com/grok-news/article-x-banner" },
                 W = { context: "NEWS" };
-            function U() {
+            function O() {
                 return (
                     (0, o.ZP)(),
                     n.useEffect(() => {
                         (0, o.jW)("news-content-ready");
                     }, []),
-                    n.createElement(s.H, { errorConfig: W }, n.createElement(l.Z, { description: R, includeOpenGraphMeta: !1, title: B }), n.createElement(r.Z, { canonical: (0, i.ju)(window.location.href), description: R, image: M.url, imageH: M.height, imageW: M.width, title: B, type: "article" }), n.createElement(P.Z, { scribeNamespace: "news" }, n.createElement(D, null)))
+                    n.createElement(s.H, { errorConfig: W }, n.createElement(l.Z, { description: H, includeOpenGraphMeta: !1, title: M }), n.createElement(r.Z, { canonical: (0, i.ju)(window.location.href), description: H, image: R.url, imageH: R.height, imageW: R.width, title: M, type: "article" }), n.createElement(P.Z, { scribeNamespace: "news" }, n.createElement(K, null)))
                 );
             }
         },
@@ -574,13 +609,13 @@
                 return e && r === y ? null : n.createElement(l.Z, { style: [w.headerImgContainer, i], withoutInteractiveStyles: !0 }, ({ isHovered: e }) => n.createElement(h.Z, { resizeMode: "cover", source: r, style: [w.headerImg, t ? w.hoveredHeaderImg : void 0, a] }));
             }
             const w = r.default.create((e) => ({ headerImgContainer: { flex: 1, height: 200, width: "100%", overflow: "hidden", borderRadius: e.borderRadii.medium }, headerImg: { width: "100%", height: "100%", transition: "all 0.5s ease", transform: "scale(1)" }, hoveredHeaderImg: { cursor: "pointer", transform: "scale(1.05)" } }));
-            var _ = a(477575),
-                b = a(858496),
+            var b = a(477575),
+                _ = a(858496),
                 v = a(978086);
-            function k({ article: e, commentsStyle: t, containerStyle: a, headerImgContainerStyle: r, headerImgStyle: h, hideDefaultImg: y, hideImg: w, hideReactions: k, hideSummary: x, hoveredBgColor: S, infoContainerStyle: T, layout: E = "imageTop", onClick: I, reactionsContainerStyle: F, routeToExploreNews: A, sentimentStyle: N, showSentiment: Z, size: L = "normal", style: z, summaryNumLines: K, titleNumLines: D, titleStyle: H, useRowReactions: P }) {
-                const B = (0, o.Z)(),
-                    R = (0, c.I0)(),
-                    { isCompactLayout: M } = (0, d.Z)(),
+            function k({ article: e, commentsStyle: t, containerStyle: a, headerImgContainerStyle: r, headerImgStyle: h, hideDefaultImg: y, hideImg: w, hideReactions: k, hideSummary: x, hoveredBgColor: E, infoContainerStyle: S, layout: T = "imageTop", onClick: I, reactionsContainerStyle: Z, routeToExploreNews: A, sentimentStyle: F, showSentiment: N, size: z = "normal", style: L, summaryNumLines: D, titleNumLines: K, titleStyle: B, useRowReactions: P }) {
+                const M = (0, o.Z)(),
+                    H = (0, c.I0)(),
+                    { isCompactLayout: R } = (0, d.Z)(),
                     W = n.useMemo(() => {
                         if (!e) return [];
                         const t = [];
@@ -591,35 +626,35 @@
                             t
                         );
                     }, [e]),
-                    U = n.useMemo(() => {
+                    O = n.useMemo(() => {
                         if (!e) return [];
                         const t = [];
                         e.header_img_post_id && t.push(e.header_img_post_id.post_results.rest_id);
                         return t.push(...W.slice(0, 3)), t;
                     }, [e, W]);
                 n.useEffect(() => {
-                    R(m.Z.fetchMultipleIfNeeded(U));
-                }, [R, U]);
+                    H(m.Z.fetchMultipleIfNeeded(O));
+                }, [H, O]);
                 const j = { full: { container: C.fullContainer, headerImgContainer: C.fullHeaderImgContainer }, imageLeft: { container: C.imageLeftContainer, headerImgContainer: C.imageLeftHeaderImgContainer }, imageTop: { container: C.imageTopContainer, headerImgContainer: C.imageTopHeaderImgContainer }, imageBelowTitle: { container: C.imageBelowTitleContainer, headerImgContainer: C.imageBelowTitleHeaderImgContainer } },
-                    O = { normal: {}, large: { container: C.largeContainer, title: C.largeTitle, summary: C.largeSummary, lastUpdated: C.largeLastUpdated, comments: C.largeComments } },
+                    U = { normal: {}, large: { container: C.largeContainer, title: C.largeTitle, summary: C.largeSummary, lastUpdated: C.largeLastUpdated, comments: C.largeComments } },
                     G = n.useCallback(() => {
                         I && I();
                     }, [I]),
                     $ = n.useCallback(() => {
-                        (0, u._$)(B, { articleId: e.id });
-                    }, [e, B]),
-                    J = j[E],
-                    V = O[L],
+                        (0, u._$)(M, { articleId: e.id });
+                    }, [e, M]),
+                    J = j[T],
+                    V = U[z],
                     Y = e.header_img_url || "",
                     q = !w && Y,
                     Q = A ? `/i/news/a/${e.id}` : `/i/news/article/${e.id}`,
-                    X = n.createElement(i.Z, { style: [C.infoContainer, M ? C.compactInfoContainer : void 0, T] }, n.createElement(v.Z, { numberOfLines: D, text: e.title, textStyle: [V.title, H] }), "imageBelowTitle" === E && q && n.createElement(f, { imgStyle: h, onClick: G, style: [J.headerImgContainer, r], url: Y }), n.createElement(_.Z, { isLive: !!e.live_article, textStyle: V.lastUpdated, timestamp: e.last_updated_at }), !!e.summary && !x && n.createElement(p.Z, { numberOfLines: K, sources: [], style: [C.summary, V.summary], text: e.summary }), !k && n.createElement(i.Z, { style: [C.reactionsContainer, P ? C.rowReactionsContainer : void 0, F] }, e.sentiment && Z && n.createElement(b.Z, { articleId: e.id, sentiment: e.sentiment, showPercentages: !0, style: N }), n.createElement(g.Z, { disableClick: !0, numPosts: Number(e.total_trend_posts), postIds: W, style: [V.comments, t], textStyle: C.commentsText, variant: "outline" })));
-                return n.createElement(l.Z, { link: Q, onClick: G, style: [C.interactiveContainer, a], withoutInteractiveStyles: !0 }, ({ isHovered: e }) => n.createElement(i.Z, { style: [C.container, J.container, V.container, e ? C.hoveredContainer : void 0, e && S ? { backgroundColor: S } : void 0, z] }, n.createElement(s.D, { id: "news_article_card", onFullyVisible: $, position: "top", testID: "news_article_card" }), X, q && "imageBelowTitle" !== E && n.createElement(f, { hideDefault: y, hovered: e, imgStyle: h, onClick: G, style: [J.headerImgContainer, r], url: Y })));
+                    X = n.createElement(i.Z, { style: [C.infoContainer, R ? C.compactInfoContainer : void 0, S] }, n.createElement(v.Z, { numberOfLines: K, text: e.title, textStyle: [V.title, B] }), "imageBelowTitle" === T && q && n.createElement(f, { imgStyle: h, onClick: G, style: [J.headerImgContainer, r], url: Y }), n.createElement(b.Z, { isLive: !!e.live_article, textStyle: V.lastUpdated, timestamp: e.last_updated_at }), !!e.summary && !x && n.createElement(p.Z, { numberOfLines: D, sources: [], style: [C.summary, V.summary], text: e.summary }), !k && n.createElement(i.Z, { style: [C.reactionsContainer, P ? C.rowReactionsContainer : void 0, Z] }, e.sentiment && N && n.createElement(_.Z, { articleId: e.id, sentiment: e.sentiment, showPercentages: !0, style: F }), n.createElement(g.Z, { disableClick: !0, numPosts: Number(e.total_trend_posts), postIds: W, style: [V.comments, t], textStyle: C.commentsText, variant: "outline" })));
+                return n.createElement(l.Z, { link: Q, onClick: G, style: [C.interactiveContainer, a], withoutInteractiveStyles: !0 }, ({ isHovered: e }) => n.createElement(i.Z, { style: [C.container, J.container, V.container, e ? C.hoveredContainer : void 0, e && E ? { backgroundColor: E } : void 0, L] }, n.createElement(s.D, { id: "news_article_card", onFullyVisible: $, position: "top", testID: "news_article_card" }), X, q && "imageBelowTitle" !== T && n.createElement(f, { hideDefault: y, hovered: e, imgStyle: h, onClick: G, style: [J.headerImgContainer, r], url: Y })));
             }
             const C = r.default.create((e) => ({ interactiveContainer: { display: "flex", width: "100%" }, container: { flex: 1, display: "flex", width: "100%", gap: e.spaces.space16, backgroundColor: "transparent", borderRadius: e.borderRadii.large, transition: "all 0.2s ease", padding: e.spaces.space12 }, hoveredContainer: { backgroundColor: "light" === e.paletteName ? e.colors.gray0 : "transparent", cursor: "pointer" }, largeContainer: { gap: e.spaces.space36 }, fullContainer: { flexDirection: "row" }, imageLeftContainer: { flexDirection: "row-reverse" }, imageTopContainer: { flexDirection: "column-reverse" }, imageBelowTitleContainer: { flexDirection: "column" }, fullHeaderImgContainer: { flex: 1, width: "100%", height: "100%", minHeight: 350 }, imageLeftHeaderImgContainer: { flex: 1, width: "100%", height: "100%" }, imageTopHeaderImgContainer: { flex: 1, width: "100%", minHeight: 200 }, imageBelowTitleHeaderImgContainer: { flex: 1, width: "100%", height: "100%", minHeight: 350 }, infoContainer: { flex: 1, display: "flex", flexDirection: "column", gap: e.spaces.space8 }, compactInfoContainer: { padding: e.spaces.space8 }, summary: { color: e.colors.gray900 }, largeSummary: {}, headerImgContainer: { flex: 1 }, headerImgInteractiveContainer: { width: "100%", flex: 1 }, reactionsContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, rowReactionsContainer: { flexDirection: "row" }, largeTitle: { fontSize: e.fontSizes.title1, lineHeight: 40 }, largeLastUpdated: { fontSize: e.fontSizes.subtext1 }, largeComments: { fontSize: e.fontSizes.subtext2 }, commentsText: { color: e.colors.gray900 } }));
         },
         339072: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => _ });
+            a.r(t), a.d(t, { default: () => b });
             var n = a(202784),
                 i = a(107267),
                 l = a(688715),
@@ -708,21 +743,63 @@
                 y = 315,
                 f = "https://abs.twimg.com/grok-news/article-x-banner",
                 w = { context: "NEWS_ARTICLE" };
-            const _ = function () {
+            const b = function () {
                 (0, c.ZP)();
                 const e = (0, i.useRouteMatch)(),
                     t = (0, p.Z)({ trendId: e.params.newsArticleId || "" }),
                     a = t?.summary || "The latest realtime information.",
-                    _ = t?.title || "News",
-                    b = "999999999999999999" === e.params.newsArticleId;
+                    b = t?.title || "News",
+                    _ = "999999999999999999" === e.params.newsArticleId;
                 return (
                     n.useEffect(() => {
                         (0, c.jW)("news-article-content-ready");
                     }, []),
-                    t || b ? n.createElement(o.H, { errorConfig: w }, n.createElement(r.Z, { description: a, includeOpenGraphMeta: !1, title: _ }), n.createElement(s.Z, { canonical: (0, l.ju)(window.location.href), description: a, image: f, imageH: y, imageW: h, title: _, type: "article" }), n.createElement(d.Z, { scribeNamespace: "news-article" }, n.createElement(u.Z, { article: b ? g : t }))) : n.createElement(m.Z, { to: "/i/news" })
+                    t || _ ? n.createElement(o.H, { errorConfig: w }, n.createElement(r.Z, { description: a, includeOpenGraphMeta: !1, title: b }), n.createElement(s.Z, { canonical: (0, l.ju)(window.location.href), description: a, image: f, imageH: y, imageW: h, title: b, type: "article" }), n.createElement(d.Z, { scribeNamespace: "news-article" }, n.createElement(u.Z, { article: _ ? g : t }))) : n.createElement(m.Z, { to: "/i/news" })
                 );
             };
         },
+        662678: (e, t, a) => {
+            a.d(t, { G: () => i, Z: () => n });
+            a(136728);
+            const n = function (e, t) {
+                return i(e, t);
+            };
+            function i(e, t) {
+                return e.reduce(
+                    (a, n, i) => {
+                        const l = t ? t(n, i, e) : !!n;
+                        return l && a[0].push(n), !l && a[1].push(n), a;
+                    },
+                    [[], []],
+                );
+            }
+        },
+        858440: (e, t, a) => {
+            a.d(t, { Z: () => l });
+            var n = a(878052),
+                i = a(202784);
+            function l() {
+                var e = (0, i.useState)(() => n.Z.get("window")),
+                    t = e[0],
+                    a = e[1];
+                return (
+                    (0, i.useEffect)(() => {
+                        function e(e) {
+                            var t = e.window;
+                            null != t && a(t);
+                        }
+                        return (
+                            n.Z.addEventListener("change", e),
+                            a(n.Z.get("window")),
+                            () => {
+                                n.Z.removeEventListener("change", e);
+                            }
+                        );
+                    }, []),
+                    t
+                );
+            }
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.News.236158fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.News.bfd46d9a.js.map

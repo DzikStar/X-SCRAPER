@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.TV-6107ac1a", "icons/IconThumbsUp-js", "icons/IconUndo-js"],
+    ["bundle.TV-6107ac1a"],
     {
         988401: (e, a, d) => {
             d.d(a, { F: () => o });
@@ -27,8 +27,8 @@
                 n = d(978989),
                 s = d(490434),
                 i = d.n(s),
-                c = d(107267),
-                t = d(323265),
+                t = d(107267),
+                c = d(323265),
                 u = d(972236),
                 D = d(443781),
                 m = d(105131),
@@ -50,13 +50,13 @@
             };
             var v = d(111677),
                 p = d.n(v),
-                P = d(300497),
-                w = d(455025),
+                w = d(300497),
+                P = d(455025),
                 A = d(163208),
-                I = d(189244),
-                g = d(717988),
-                E = d(466441),
-                T = d(396342),
+                g = d(189244),
+                E = d(717988),
+                T = d(466441),
+                I = d(396342),
                 F = d(325686),
                 C = d(157396),
                 L = d(392237),
@@ -64,29 +64,29 @@
                 V = d(224162),
                 H = d(898063),
                 R = d(602070),
-                B = d(873930),
-                J = d(134609),
+                J = d(873930),
+                B = d(134609),
                 Z = d(863040),
                 x = d(731708),
                 N = d(524483),
-                O = d(602737),
-                $ = d(686010);
-            const _ = (e) => {
+                G = d(602737),
+                O = d(686010);
+            const $ = (e) => {
                     const { closeModal: a, modalConfig: d } = (0, N.N)(),
                         o = r.useCallback(() => {
                             d?.handleEscape?.(), a();
                         }, [a, d]);
-                    return d ? r.createElement(r.Fragment, null, r.createElement(F.Z, { style: z.mask }), r.createElement($.Z, { "aria-label": void 0, autoFocus: !0, autoRestoreFocus: d.autoRestoreFocus, isFocusBoundary: !0, name: "tv-modal", onEscapeOrBack: o, role: "dialog", style: z.dialogContainer, trackChildren: !0 }, r.createElement(x.ZP, { size: "title4", style: z.primaryText }, d.primaryText), r.createElement(x.ZP, { size: "body", style: z.secondaryText }, d.secondaryText), d.primaryAction ? r.createElement(O.K, { name: "tv-modal-primary-button", onPress: d.primaryAction.onClick, style: z.button, type: "primaryFilled" }, d.primaryAction.buttonText) : null, d.secondaryAction ? r.createElement(O.K, { name: "tv-modal-secondary-button", onPress: d.secondaryAction?.onClick, style: z.button, type: "primaryOutlined" }, d.secondaryAction.buttonText) : null)) : null;
+                    return d ? r.createElement(r.Fragment, null, r.createElement(F.Z, { style: _.mask }), r.createElement(O.Z, { "aria-label": void 0, autoFocus: !0, autoRestoreFocus: d.autoRestoreFocus, isFocusBoundary: !0, name: "tv-modal", onEscapeOrBack: o, role: "dialog", style: _.dialogContainer, trackChildren: !0 }, r.createElement(x.ZP, { size: "title4", style: _.primaryText }, d.primaryText), r.createElement(x.ZP, { size: "body", style: _.secondaryText }, d.secondaryText), d.primaryAction ? r.createElement(G.K, { name: "tv-modal-primary-button", onPress: d.primaryAction.onClick, style: _.button, type: "primaryFilled" }, d.primaryAction.buttonText) : null, d.secondaryAction ? r.createElement(G.K, { name: "tv-modal-secondary-button", onPress: d.secondaryAction?.onClick, style: _.button, type: "primaryOutlined" }, d.secondaryAction.buttonText) : null)) : null;
                 },
-                z = L.default.create((e) => ({ mask: { ...L.default.absoluteFillObject, backgroundColor: e.colors.cellBackground, opacity: 0.75, position: "fixed", zIndex: 1 }, dialogContainer: { position: "absolute", top: "50%", left: "50%", start: "50%", margin: "0", transform: "translate(-50%, -50%)", zIndex: e.componentZIndices.appBarZIndex, minHeight: `calc(${e.spaces.space64} * 3)`, minWidth: `calc(${e.spaces.space64} * 5)`, borderRadius: e.borderRadii.xLarge, paddingHorizontal: e.spaces.space40, paddingVertical: e.spaces.space24, backgroundColor: "rgb(0,0,0)", border: "none", outlineStyle: "none", display: "flex", marginBottom: `-${e.spaces.space16}`, flexDirection: "column", alignItems: "center", justifyContent: "center" }, primaryText: { color: e.colors.text, marginBottom: e.spaces.space16 }, secondaryText: { color: e.colors.gray700, marginBottom: e.spaces.space16 }, button: { minWidth: 2 * e.spacesPx.space64, width: 2 * e.spacesPx.space64, marginBottom: e.spaces.space16 } }));
-            var U = d(520913);
-            function j() {
-                return r.createElement(F.Z, { "aria-label": "Loading", id: "placeholder", style: K.root }, r.createElement(U.default, { style: K.logo }));
+                _ = L.default.create((e) => ({ mask: { ...L.default.absoluteFillObject, backgroundColor: e.colors.cellBackground, opacity: 0.75, position: "fixed", zIndex: 1 }, dialogContainer: { position: "absolute", top: "50%", left: "50%", start: "50%", margin: "0", transform: "translate(-50%, -50%)", zIndex: e.componentZIndices.appBarZIndex, minHeight: `calc(${e.spaces.space64} * 3)`, minWidth: `calc(${e.spaces.space64} * 5)`, borderRadius: e.borderRadii.xLarge, paddingHorizontal: e.spaces.space40, paddingVertical: e.spaces.space24, backgroundColor: "rgb(0,0,0)", border: "none", outlineStyle: "none", display: "flex", marginBottom: `-${e.spaces.space16}`, flexDirection: "column", alignItems: "center", justifyContent: "center" }, primaryText: { color: e.colors.text, marginBottom: e.spaces.space16 }, secondaryText: { color: e.colors.gray700, marginBottom: e.spaces.space16 }, button: { minWidth: 2 * e.spacesPx.space64, width: 2 * e.spacesPx.space64, marginBottom: e.spaces.space16 } }));
+            var z = d(520913);
+            function U() {
+                return r.createElement(F.Z, { "aria-label": "Loading", id: "placeholder", style: K.root }, r.createElement(z.default, { style: K.logo }));
             }
             const K = L.default.create((e) => ({ root: { ...L.default.absoluteFillObject, backgroundColor: "#000000", position: "fixed" }, logo: { ...L.default.absoluteFillObject, color: e.colors.buttonAlwaysWhite, height: e.spaces.space72, width: e.spaces.space72, margin: "auto" } })),
                 X = "rtl" === document?.documentElement?.getAttribute("dir");
-            (0, T.init)({ shouldFocusDOMNode: !0, isRtl: X });
-            const G = Object.freeze({ xSmall: "xSmall", small: "small", normal: "normal", large: "large", xLarge: "xLarge" }),
+            (0, I.init)({ shouldFocusDOMNode: !0, isRtl: X });
+            const j = Object.freeze({ xSmall: "xSmall", small: "small", normal: "normal", large: "large", xLarge: "xLarge" }),
                 W = { [C.default.ThemeScaleNames.xSmall]: 0.9, [C.default.ThemeScaleNames.small]: 0.95, [C.default.ThemeScaleNames.normal]: 1, [C.default.ThemeScaleNames.large]: 1.1, [C.default.ThemeScaleNames.xLarge]: 1.2 },
                 Q = (e, a = !1) => {
                     const d = a ? 1.15 : 1,
@@ -103,7 +103,7 @@
                 const { children: a } = e,
                     d = r.useRef(L.default.theme.scales).current,
                     o = r.useRef(L.default.theme.paletteName).current,
-                    l = ((e = !1) => ({ [G.xSmall]: { scales: Q(0.75, e), width: 0 }, [G.small]: { scales: Q(0.75, e), width: 960 }, [G.normal]: { scales: Q(1, e), width: 1024 }, [G.large]: { scales: Q(1.5, e), width: 1919 }, [G.xLarge]: { scales: Q(2.25, e), width: 3839 } }))((0, B.Z)()),
+                    l = ((e = !1) => ({ [j.xSmall]: { scales: Q(0.75, e), width: 0 }, [j.small]: { scales: Q(0.75, e), width: 960 }, [j.normal]: { scales: Q(1, e), width: 1024 }, [j.large]: { scales: Q(1.5, e), width: 1919 }, [j.xLarge]: { scales: Q(2.25, e), width: 3839 } }))((0, J.Z)()),
                     n = (0, S.Zx)(({ windowWidth: e }) =>
                         (function (e, a) {
                             const d = Object.keys(e);
@@ -111,7 +111,7 @@
                                 const r = d[o];
                                 if (a > (e[r]?.width || 0)) return r;
                             }
-                            return G.small;
+                            return j.small;
                         })(l, e),
                     ),
                     [s, i] = r.useState(!1);
@@ -119,7 +119,7 @@
                     (0, H.$R)(),
                     (0, H.bH)(),
                     (0, Z.u)(),
-                    (0, J.J)(),
+                    (0, B.J)(),
                     r.useEffect(() => {
                         const e = l[n]?.scales || q;
                         return (
@@ -131,17 +131,17 @@
                             }
                         );
                     }, [n, d, o, l]);
-                const c = r.useCallback((e) => {
+                const t = r.useCallback((e) => {
                     e.target.scrollTop = 0;
                 }, []);
-                return s ? r.createElement(F.Z, { dir: X ? "rtl" : "ltr", onScroll: c, style: ee.root }, r.createElement(V.Qu, null, r.createElement(_, null), a)) : r.createElement(j, null);
+                return s ? r.createElement(F.Z, { dir: X ? "rtl" : "ltr", onScroll: t, style: ee.root }, r.createElement(V.Qu, null, r.createElement($, null), a)) : r.createElement(U, null);
             }
             const ee = L.default.create(() => ({ root: { height: L.default.supports("height: 100dvh") ? "100dvh" : "100vh", maxHeight: L.default.supports("height: 100dvh") ? "100dvh" : "100vh", overflow: "hidden", width: "100%" } })),
                 ae = p().d960b55c,
                 de = p().i3145aa0,
                 oe = (e) => "/i/tv/login",
-                re = (0, w.c)(
-                    (0, g.p)(
+                re = (0, P.c)(
+                    (0, E.p)(
                         () =>
                             Promise.all([
                                 d.e("icons.8"),
@@ -167,14 +167,6 @@
                                 d.e("icons.17"),
                                 d.e("icons.27"),
                                 d.e("icons.19"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -194,19 +186,25 @@
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
                                 d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                                d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-88dc685d"),
+                                d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-271d17b1"),
                                 d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                                 d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
-                                d.e("shared~loader.Dock~bundle.DockPeek~loader.JetfuelFrame~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
                                 d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"),
                                 d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"),
                                 d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"),
                                 d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"),
                                 d.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
+                                d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                                 d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-5563f741"),
                                 d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
                                 d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-d8458ca7"),
-                                d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                                 d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3db21160"),
                                 d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0be21f6e"),
                                 d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2c76ece2"),
@@ -235,8 +233,8 @@
                     ),
                     { withLoggedInUserOnly: !0, getReplacePath: oe },
                 ),
-                le = (0, w.c)(
-                    (0, g.p)(
+                le = (0, P.c)(
+                    (0, E.p)(
                         () =>
                             Promise.all([
                                 d.e("icons.8"),
@@ -262,14 +260,6 @@
                                 d.e("icons.17"),
                                 d.e("icons.27"),
                                 d.e("icons.19"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -289,19 +279,25 @@
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
                                 d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                                d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-88dc685d"),
+                                d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-271d17b1"),
                                 d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                                 d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
-                                d.e("shared~loader.Dock~bundle.DockPeek~loader.JetfuelFrame~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
                                 d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"),
                                 d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"),
                                 d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"),
                                 d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"),
                                 d.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
+                                d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                                 d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-5563f741"),
                                 d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
                                 d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-d8458ca7"),
-                                d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                                 d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3db21160"),
                                 d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0be21f6e"),
                                 d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2c76ece2"),
@@ -330,8 +326,8 @@
                     ),
                     { withLoggedInUserOnly: !0, getReplacePath: oe },
                 ),
-                ne = (0, w.c)(
-                    (0, g.p)(
+                ne = (0, P.c)(
+                    (0, E.p)(
                         () =>
                             Promise.all([
                                 d.e("icons.8"),
@@ -357,14 +353,6 @@
                                 d.e("icons.17"),
                                 d.e("icons.27"),
                                 d.e("icons.19"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -384,19 +372,25 @@
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
                                 d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                                d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-88dc685d"),
+                                d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-271d17b1"),
                                 d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                                 d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
-                                d.e("shared~loader.Dock~bundle.DockPeek~loader.JetfuelFrame~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
                                 d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"),
                                 d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"),
                                 d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"),
                                 d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"),
                                 d.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
+                                d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                                 d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-5563f741"),
                                 d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
                                 d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-d8458ca7"),
-                                d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                                 d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3db21160"),
                                 d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0be21f6e"),
                                 d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2c76ece2"),
@@ -425,7 +419,7 @@
                     ),
                     { withLoggedInUserOnly: !0, getReplacePath: oe },
                 ),
-                se = (0, g.p)(
+                se = (0, E.p)(
                     () =>
                         Promise.all([
                             d.e("icons.8"),
@@ -451,14 +445,6 @@
                             d.e("icons.17"),
                             d.e("icons.27"),
                             d.e("icons.19"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -478,19 +464,25 @@
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
                             d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                            d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-88dc685d"),
+                            d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-271d17b1"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~loader.JetfuelFrame~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"),
                             d.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
+                            d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-5563f741"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-d8458ca7"),
-                            d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3db21160"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0be21f6e"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2c76ece2"),
@@ -517,7 +509,7 @@
                         ]).then(d.bind(d, 456195)),
                     { shouldMigrateToX: !1 },
                 ),
-                ie = (0, g.p)(
+                ie = (0, E.p)(
                     () =>
                         Promise.all([
                             d.e("icons.8"),
@@ -543,14 +535,6 @@
                             d.e("icons.17"),
                             d.e("icons.27"),
                             d.e("icons.19"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -570,19 +554,25 @@
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
                             d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                            d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-88dc685d"),
+                            d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-271d17b1"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~loader.JetfuelFrame~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"),
                             d.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
+                            d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-5563f741"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-d8458ca7"),
-                            d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3db21160"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0be21f6e"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2c76ece2"),
@@ -609,7 +599,7 @@
                         ]).then(d.bind(d, 634278)),
                     { shouldMigrateToX: !1 },
                 ),
-                ce = (0, g.p)(
+                te = (0, E.p)(
                     () =>
                         Promise.all([
                             d.e("icons.8"),
@@ -635,14 +625,6 @@
                             d.e("icons.17"),
                             d.e("icons.27"),
                             d.e("icons.19"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -662,19 +644,25 @@
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
                             d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                            d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-88dc685d"),
+                            d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-271d17b1"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~loader.JetfuelFrame~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"),
                             d.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
+                            d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-5563f741"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-d8458ca7"),
-                            d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3db21160"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0be21f6e"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2c76ece2"),
@@ -701,8 +689,8 @@
                         ]).then(d.bind(d, 225287)),
                     { shouldMigrateToX: !1 },
                 ),
-                te = (0, w.c)(
-                    (0, g.p)(
+                ce = (0, P.c)(
+                    (0, E.p)(
                         () =>
                             Promise.all([
                                 d.e("icons.8"),
@@ -715,8 +703,8 @@
                                 d.e("icons.2"),
                                 d.e("icons.18"),
                                 d.e("icons.9"),
-                                d.e("icons.1"),
                                 d.e("icons.6"),
+                                d.e("icons.1"),
                                 d.e("modules.common-e907d115"),
                                 d.e("modules.common-e019dbda"),
                                 d.e("icons.14"),
@@ -738,14 +726,6 @@
                                 d.e("icons.27"),
                                 d.e("icons.19"),
                                 d.e("icons.0"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -765,6 +745,13 @@
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                                 d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                                 d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                                 d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
@@ -772,10 +759,10 @@
                                 d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"),
                                 d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"),
                                 d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"),
+                                d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                                 d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-5563f741"),
                                 d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
                                 d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-d8458ca7"),
-                                d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                                 d.e("shared~loader.DashMenu~loader.DashModal~ondemand.CommandCenter~bundle.Account~ondemand.SettingsInternals~onde"),
                                 d.e("shared~bundle.TV~bundle.Account-6107ac1a"),
                                 d.e("shared~bundle.TV~bundle.Account-63393a95"),
@@ -786,8 +773,8 @@
                     ),
                     { withLoggedInUserOnly: !0, getReplacePath: oe },
                 ),
-                ue = (0, w.c)(
-                    (0, g.p)(
+                ue = (0, P.c)(
+                    (0, E.p)(
                         () =>
                             Promise.all([
                                 d.e("icons.8"),
@@ -813,14 +800,6 @@
                                 d.e("icons.17"),
                                 d.e("icons.27"),
                                 d.e("icons.19"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
-                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -840,19 +819,25 @@
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
+                                d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
                                 d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                                d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-88dc685d"),
+                                d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-271d17b1"),
                                 d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                                 d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
-                                d.e("shared~loader.Dock~bundle.DockPeek~loader.JetfuelFrame~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
                                 d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"),
                                 d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"),
                                 d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"),
                                 d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"),
                                 d.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
+                                d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                                 d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-5563f741"),
                                 d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
                                 d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-d8458ca7"),
-                                d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                                 d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3db21160"),
                                 d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0be21f6e"),
                                 d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2c76ece2"),
@@ -881,7 +866,7 @@
                     ),
                     { withLoggedInUserOnly: !0, getReplacePath: oe },
                 ),
-                De = (0, g.p)(
+                De = (0, E.p)(
                     () =>
                         Promise.all([
                             d.e("icons.8"),
@@ -907,14 +892,6 @@
                             d.e("icons.17"),
                             d.e("icons.27"),
                             d.e("icons.19"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -934,19 +911,25 @@
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
                             d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                            d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-88dc685d"),
+                            d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-271d17b1"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~loader.JetfuelFrame~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"),
                             d.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
+                            d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-5563f741"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-d8458ca7"),
-                            d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3db21160"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0be21f6e"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2c76ece2"),
@@ -973,7 +956,7 @@
                         ]).then(d.bind(d, 312839)),
                     { shouldMigrateToX: !1 },
                 ),
-                me = (0, g.p)(
+                me = (0, E.p)(
                     () =>
                         Promise.all([
                             d.e("icons.8"),
@@ -999,14 +982,6 @@
                             d.e("icons.17"),
                             d.e("icons.27"),
                             d.e("icons.19"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-4dc04b0b"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f75f2a40"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-9b450461"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-abff603b"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-cdbf42c1"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-c94903fb"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-7cff528b"),
-                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -1026,19 +1001,25 @@
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
+                            d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
                             d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                            d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-88dc685d"),
+                            d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFram-271d17b1"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
-                            d.e("shared~loader.Dock~bundle.DockPeek~loader.JetfuelFrame~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"),
                             d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"),
                             d.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
+                            d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-5563f741"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
                             d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-d8458ca7"),
-                            d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3db21160"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0be21f6e"),
                             d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2c76ece2"),
@@ -1066,36 +1047,36 @@
                     { shouldMigrateToX: !1 },
                 ),
                 he = (e) => r.createElement(De, e),
-                be = (e) => r.createElement(P.Z, (0, o.Z)({}, e, { component: re, fallbackRedirect: M.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
-                ke = (e) => r.createElement(P.Z, (0, o.Z)({}, e, { component: (e) => r.createElement(me, (0, o.Z)({}, e, { pageName: "following", query: "filter:follows filter:videos", searchTab: "following", title: ae })), fallbackRedirect: M.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
-                Me = (e) => r.createElement(P.Z, (0, o.Z)({}, e, { component: (e) => r.createElement(me, (0, o.Z)({}, e, { pageName: "bookmarks", query: "filter:videos", searchTab: "bookmarks", title: de })), fallbackRedirect: M.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
-                fe = (e) => r.createElement(P.Z, (0, o.Z)({}, e, { component: le, fallbackRedirect: M.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
+                be = (e) => r.createElement(w.Z, (0, o.Z)({}, e, { component: re, fallbackRedirect: M.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
+                ke = (e) => r.createElement(w.Z, (0, o.Z)({}, e, { component: (e) => r.createElement(me, (0, o.Z)({}, e, { pageName: "following", query: "filter:follows filter:videos", searchTab: "following", title: ae })), fallbackRedirect: M.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
+                Me = (e) => r.createElement(w.Z, (0, o.Z)({}, e, { component: (e) => r.createElement(me, (0, o.Z)({}, e, { pageName: "bookmarks", query: "filter:videos", searchTab: "bookmarks", title: de })), fallbackRedirect: M.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
+                fe = (e) => r.createElement(w.Z, (0, o.Z)({}, e, { component: le, fallbackRedirect: M.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
                 ye = (e) => r.createElement(se, (0, o.Z)({}, e, { match: e.match })),
                 ve = (e) => r.createElement(ie, (0, o.Z)({}, e, { match: e.match })),
-                pe = (e) => r.createElement(ce, (0, o.Z)({}, e, { match: e.match })),
-                Pe = (e) => r.createElement(P.Z, (0, o.Z)({}, e, { component: te, fallbackRedirect: M.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
-                we = (e) => r.createElement(P.Z, (0, o.Z)({}, e, { component: ue, fallbackRedirect: M.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
-                Ae = (e) => r.createElement(P.Z, (0, o.Z)({}, e, { component: ne, fallbackRedirect: M.C2, featureSwitchName: "responsive_web_messages_enabled", key: e.match.params.tweetId, match: e.match })),
-                Ie = () => r.createElement(c.Switch, null, r.createElement(c.Route, null, r.createElement(Y, null, r.createElement(A.Z, null, [r.createElement(c.Route, { component: be, exact: !0, key: "tvHomeScreen", path: "/i/tv" }), r.createElement(c.Route, { component: Ae, exact: !0, key: "tvSearchScreen", path: M.sH }), r.createElement(c.Route, { component: ye, exact: !0, key: "tvLoginScreen", path: M.C2 }), r.createElement(c.Route, { component: ve, exact: !0, key: "tvCastLandingScreen", path: M.ZW }), r.createElement(c.Route, { component: pe, exact: !0, key: "tvCookieComplianceScreen", path: M.BO }), r.createElement(c.Route, { component: Pe, exact: !0, key: "tvProfileScreen", path: `/i/tv/profile/${I.qX}` }), r.createElement(c.Route, { component: we, exact: !0, key: "tvProfileScreen", path: `/i/tv/trend/${I.tH}` }), r.createElement(c.Route, { component: ke, exact: !0, key: "tvFollowingScreen", path: b.CW }), r.createElement(c.Route, { component: Me, exact: !0, key: "tvBookmarksScreen", path: b.Qf }), r.createElement(c.Route, { component: fe, exact: !0, key: "tvSettingsScreen", path: b.n4 }), r.createElement(c.Route, { exact: !0, key: "/i/tv/player/:tweetId/", path: [`/i/tv/player/${I.A2}`], render: he }), r.createElement(c.Route, { component: E.NotFoundScreen, key: "not_found" })]))));
-            var ge = d(902641),
-                Ee = d(426200),
-                Te = d(944800);
+                pe = (e) => r.createElement(te, (0, o.Z)({}, e, { match: e.match })),
+                we = (e) => r.createElement(w.Z, (0, o.Z)({}, e, { component: ce, fallbackRedirect: M.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
+                Pe = (e) => r.createElement(w.Z, (0, o.Z)({}, e, { component: ue, fallbackRedirect: M.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
+                Ae = (e) => r.createElement(w.Z, (0, o.Z)({}, e, { component: ne, fallbackRedirect: M.C2, featureSwitchName: "responsive_web_messages_enabled", key: e.match.params.tweetId, match: e.match })),
+                ge = () => r.createElement(t.Switch, null, r.createElement(t.Route, null, r.createElement(Y, null, r.createElement(A.Z, null, [r.createElement(t.Route, { component: be, exact: !0, key: "tvHomeScreen", path: "/i/tv" }), r.createElement(t.Route, { component: Ae, exact: !0, key: "tvSearchScreen", path: M.sH }), r.createElement(t.Route, { component: ye, exact: !0, key: "tvLoginScreen", path: M.C2 }), r.createElement(t.Route, { component: ve, exact: !0, key: "tvCastLandingScreen", path: M.ZW }), r.createElement(t.Route, { component: pe, exact: !0, key: "tvCookieComplianceScreen", path: M.BO }), r.createElement(t.Route, { component: we, exact: !0, key: "tvProfileScreen", path: `/i/tv/profile/${g.qX}` }), r.createElement(t.Route, { component: Pe, exact: !0, key: "tvProfileScreen", path: `/i/tv/trend/${g.tH}` }), r.createElement(t.Route, { component: ke, exact: !0, key: "tvFollowingScreen", path: b.CW }), r.createElement(t.Route, { component: Me, exact: !0, key: "tvBookmarksScreen", path: b.Qf }), r.createElement(t.Route, { component: fe, exact: !0, key: "tvSettingsScreen", path: b.n4 }), r.createElement(t.Route, { exact: !0, key: "/i/tv/player/:tweetId/", path: [`/i/tv/player/${g.A2}`], render: he }), r.createElement(t.Route, { component: T.NotFoundScreen, key: "not_found" })]))));
+            var Ee = d(902641),
+                Te = d(426200),
+                Ie = d(944800);
             class Fe extends r.Component {
                 constructor(...e) {
-                    super(...e), (this.state = { isMounted: !1 }), (this._routerProps = { children: Ie() });
+                    super(...e), (this.state = { isMounted: !1 }), (this._routerProps = { children: ge() });
                 }
                 componentDidMount() {
                     this.setState({ isMounted: !0 });
                 }
                 render() {
                     const { contextProviderProps: e, history: a, jotaiStore: d, relayEnvironment: s, store: f } = this.props,
-                        v = this.state.isMounted ? r.createElement(c.Router, { children: this._routerProps.children, history: a }) : null;
-                    return r.createElement(n.zt, { store: f }, r.createElement(h.nO, { data: { user_agent: t.ZP.userAgent }, namespace: M.ho }, r.createElement(l.zt, { store: d }, r.createElement(i(), { environment: s }, r.createElement(D.ZP, (0, o.Z)({ history: a, store: f }, e), r.createElement(Ee.G, null, r.createElement(k.x, { history: a }, r.createElement(m.__, null, r.createElement(Te.H, { history: a }, r.createElement(ge.r, { history: a }, r.createElement(N.X, { initialFocusedElement: b.rQ, isEnabled: !0 }, r.createElement(y, { history: a }), r.createElement(u.Z, null, v))))))))))));
+                        v = this.state.isMounted ? r.createElement(t.Router, { children: this._routerProps.children, history: a }) : null;
+                    return r.createElement(n.zt, { store: f }, r.createElement(h.nO, { data: { user_agent: c.ZP.userAgent }, namespace: M.ho }, r.createElement(l.zt, { store: d }, r.createElement(i(), { environment: s }, r.createElement(D.ZP, (0, o.Z)({ history: a, store: f }, e), r.createElement(Te.G, null, r.createElement(k.x, { history: a }, r.createElement(m.__, null, r.createElement(Ie.H, { history: a }, r.createElement(Ee.r, { history: a }, r.createElement(N.X, { initialFocusedElement: b.rQ, isEnabled: !0 }, r.createElement(y, { history: a }), r.createElement(u.Z, null, v))))))))))));
                 }
             }
         },
         944800: (e, a, d) => {
-            d.d(a, { H: () => t, y: () => u });
+            d.d(a, { H: () => c, y: () => u });
             d(136728), d(571372);
             var o = d(202784),
                 r = d(334291),
@@ -1103,11 +1084,11 @@
                 n = d(323265),
                 s = d(601798);
             const i = RegExp("https://(x|twitter).com(/i/tv.*)$"),
-                c = o.createContext({ isVizioTV: void 0, vizioClosedCaptioningEnabled: void 0, vizioClosedCaptionStyles: void 0, VIZIO: void 0 }),
-                t = ({ children: e, history: a }) => {
+                t = o.createContext({ isVizioTV: void 0, vizioClosedCaptioningEnabled: void 0, vizioClosedCaptionStyles: void 0, VIZIO: void 0 }),
+                c = ({ children: e, history: a }) => {
                     const [d, r] = o.useState(),
-                        [t, u] = o.useState(),
-                        D = { isVizioTV: !!window?.VIZIO, vizioClosedCaptioningEnabled: d, vizioClosedCaptionStyles: t, VIZIO: window?.VIZIO },
+                        [c, u] = o.useState(),
+                        D = { isVizioTV: !!window?.VIZIO, vizioClosedCaptioningEnabled: d, vizioClosedCaptionStyles: c, VIZIO: window?.VIZIO },
                         m = o.useCallback((e) => {
                             r(e);
                         }, []),
@@ -1137,11 +1118,11 @@
                         o.useEffect(() => {
                             n.ZP.isVizioTV() && s.Z.inject({ callback: l(), scriptId: "vizioCompanionLibrary", src: "http://localhost:12345/scfs/cl/js/vizio-companion-lib.js" });
                         }, []),
-                        o.createElement(c.Provider, { value: D }, e)
+                        o.createElement(t.Provider, { value: D }, e)
                     );
                 };
             function u() {
-                const e = o.useContext(c);
+                const e = o.useContext(t);
                 if (void 0 === e) throw new Error("useTVVizioContext was used outside of its provider TVVizioContext");
                 return e;
             }
@@ -1155,8 +1136,8 @@
                 n = d(988428),
                 s = d(952793),
                 i = d(530745),
-                c = d(293115),
-                t = d(601798),
+                t = d(293115),
+                c = d(601798),
                 u = d(471494),
                 D = d(426200);
             const m = "urn:x-cast:com.x.xtv",
@@ -1174,41 +1155,41 @@
                         M = o.useRef(),
                         [f, y] = o.useState(!1),
                         [v, p] = o.useState(!1),
-                        [P, w] = o.useState(),
+                        [w, P] = o.useState(),
                         { logMessageToScreen: A } = (0, D.n)();
                     A("Rendering the cast receiver...");
-                    const I = (0, s.hC)("tv_app_casting_log_focused_element_every_10s");
+                    const g = (0, s.hC)("tv_app_casting_log_focused_element_every_10s");
                     o.useEffect(() => {
-                        I &&
+                        g &&
                             setInterval(() => {
                                 A(`focused element: ${(0, r.getCurrentFocusKey)()}`, "aqua");
                             }, 1e4);
-                    }, [I, A]);
-                    const g = o.useCallback(
+                    }, [g, A]);
+                    const E = o.useCallback(
                             (e) => {
                                 const a = e || M.current;
                                 if (!window.CastReceiver || !a) return;
                                 const d = (0, n.Ci)(a);
                                 if (!d) return;
-                                const o = { type: "status", statusID: P || "", currentTimeMs: Math.floor(d.currentTimeMs), durationMs: "broadcast" === a.source?.type && d.isLive ? -1 : d.durationMs || 0, playerState: a.isPlaying ? "PLAYING" : "PAUSED", captionsEnabled: !!a?.areCaptionsShown, captionsAvailable: !!d.hasCaptions, playbackRate: a.playbackRate || 1, isMuted: a.isMuted };
+                                const o = { type: "status", statusID: w || "", currentTimeMs: Math.floor(d.currentTimeMs), durationMs: "broadcast" === a.source?.type && d.isLive ? -1 : d.durationMs || 0, playerState: a.isPlaying ? "PLAYING" : "PAUSED", captionsEnabled: !!a?.areCaptionsShown, captionsAvailable: !!d.hasCaptions, playbackRate: a.playbackRate || 1, isMuted: a.isMuted };
                                 window.CastReceiver.updateCurrentStatus(JSON.stringify(o));
                             },
-                            [P],
+                            [w],
                         ),
-                        E = o.useCallback(
+                        T = o.useCallback(
                             (e) => {
                                 (k.current = e),
                                     e?.subscribe((e) => {
-                                        g(e);
+                                        E(e);
                                     });
                             },
-                            [g],
+                            [E],
                         ),
-                        T = o.useCallback((e) => {
+                        I = o.useCallback((e) => {
                             M.current = e;
                         }, []),
                         F = o.useCallback((e) => {
-                            w(e);
+                            P(e);
                         }, []),
                         C = o.useCallback(
                             (e) => {
@@ -1275,18 +1256,18 @@
                                         document?.dispatchEvent?.(new KeyboardEvent("keydown", { key: i.nQ }));
                                     },
                                     connect: () => {
-                                        g();
+                                        E();
                                     },
                                     connected: () => {
-                                        p(!0), g();
+                                        p(!0), E();
                                     },
                                     disconnected: () => {
-                                        p(!1), g();
+                                        p(!1), E();
                                     },
                                 };
                                 a[e.type]?.();
                             },
-                            [C, A, k, g],
+                            [C, A, k, E],
                         );
                     o.useEffect(() => {
                         if ((A(`Initializing casting. (initialized.current: ${l.current.toString()}, isCastingEnabled: ${d.toString()})`), !1 === l.current && d)) {
@@ -1318,12 +1299,12 @@
                                             document.addEventListener("cast-message", e);
                                     } else A("Cast receiver script failed to load", "red");
                                 };
-                            A("Injecting casting script..."), t.Z.inject({ callback: a, scriptId: "googleCastReceiverFramework", src: "//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js" }), (l.current = !0);
+                            A("Injecting casting script..."), c.Z.inject({ callback: a, scriptId: "googleCastReceiverFramework", src: "//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js" }), (l.current = !0);
                         }
                     }, [d, A, L]);
-                    const S = { googleCastReceiverLoaded: f, googleCastSenderConnected: v, playerApi: k, playerState: M, setPlayerApi: E, setPlayerState: T, setTweetId: F },
+                    const S = { googleCastReceiverLoaded: f, googleCastSenderConnected: v, playerApi: k, playerState: M, setPlayerApi: T, setPlayerState: I, setTweetId: F },
                         V = v ? { is_receiving_tv_cast: !0 } : {};
-                    return o.createElement(h.Provider, { value: S }, o.createElement(c.nO, { data: V }, e));
+                    return o.createElement(h.Provider, { value: S }, o.createElement(t.nO, { data: V }, e));
                 };
             function M({ playerApiRef: e, playerStateRef: a, tweetId: d } = { playerApiRef: void 0, playerStateRef: void 0, tweetId: void 0 }) {
                 const r = o.useContext(h);
@@ -1351,15 +1332,15 @@
             }
         },
         305332: (e, a, d) => {
-            d.d(a, { Z: () => T });
+            d.d(a, { Z: () => I });
             var o = d(202784),
                 r = d(873930),
                 l = d(396342),
                 n = d(555874),
                 s = d(325686),
                 i = d(879891),
-                c = d(392237),
-                t = d(334522),
+                t = d(392237),
+                c = d(334522),
                 u = d(602070),
                 D = d(725516),
                 m = d(905346),
@@ -1370,39 +1351,39 @@
                 f = { behavior: "smooth", block: "start", inline: "nearest" },
                 y = (e) => `${M}-${e}`,
                 v = (e) => e.id,
-                p = ({ autoFocus: e, categories: a, focusBoundaryDirections: d, isFocusBoundary: r, name: c, onArrowPress: M, onSelectVideo: p, playVideoPreview: w, returnToFirstElementOnEscape: A, withScrollRestoration: I = !0 }) => {
-                    const g = (0, D.z)(),
-                        { direction: E } = (0, i.Z)(),
-                        T = (0, t.Z)(`${c}.${y("0")}.${(0, h.X)("0")}`),
+                p = ({ autoFocus: e, categories: a, focusBoundaryDirections: d, isFocusBoundary: r, name: t, onArrowPress: M, onSelectVideo: p, playVideoPreview: P, returnToFirstElementOnEscape: A, withScrollRestoration: g = !0 }) => {
+                    const E = (0, D.z)(),
+                        { direction: T } = (0, i.Z)(),
+                        I = (0, c.Z)(`${t}.${y("0")}.${(0, h.X)("0")}`),
                         F = o.useMemo(() => a.filter((e) => e.content?.length > 0), [a]),
                         C = o.useCallback(
                             (e) => {
-                                if (A && T && (0, l.getCurrentFocusKey)() !== T) return (0, l.setFocus)(T), !0;
+                                if (A && I && (0, l.getCurrentFocusKey)() !== I) return (0, l.setFocus)(I), !0;
                             },
-                            [T, A],
+                            [I, A],
                         ),
                         L = o.useCallback(
                             ({ index: e, item: a }) =>
                                 o.createElement(
                                     s.Z,
-                                    { key: a.id, style: e === F.length - 1 ? null : P.carouselMarginBottom },
+                                    { key: a.id, style: e === F.length - 1 ? null : w.carouselMarginBottom },
                                     o.createElement(m.Z, {
                                         content: a.content,
                                         displayType: (0, k.qU)(a.displayType),
                                         key: a.id,
                                         name: y(e.toString()),
                                         onFocus: () => {
-                                            e === F.length - 1 && g.scribe({ element: "tv-grid-with-categories", action: "reached_end" });
+                                            e === F.length - 1 && E.scribe({ element: "tv-grid-with-categories", action: "reached_end" });
                                         },
                                         onSelectVideo: p,
-                                        playVideoPreview: w,
+                                        playVideoPreview: P,
                                         scrollOptions: f,
                                         title: a.title,
                                     }),
                                 ),
-                            [g, F.length, p, w],
+                            [E, F.length, p, P],
                         );
-                    (0, u.ZP)(I);
+                    (0, u.ZP)(g);
                     const S = o.useCallback(
                         (e) => {
                             let a = "scroll";
@@ -1414,28 +1395,28 @@
                                     a = "scroll_down";
                                     break;
                                 case "ArrowLeft":
-                                    a = "rtl" === E ? "scroll_right" : "scroll_left";
+                                    a = "rtl" === T ? "scroll_right" : "scroll_left";
                                     break;
                                 case "ArrowRight":
-                                    a = "rtl" === E ? "scroll_left" : "scroll_right";
+                                    a = "rtl" === T ? "scroll_left" : "scroll_right";
                             }
-                            return g.scribe({ element: "tv-category-grid", action: a }), !M || M(e);
+                            return E.scribe({ element: "tv-category-grid", action: a }), !M || M(e);
                         },
-                        [g, E, M],
+                        [E, T, M],
                     );
-                    return o.createElement(b.Z, { "aria-label": void 0, autoFocus: e, focusBoundaryDirections: d, isFocusBoundary: r, name: c, onArrowPress: S, onEscapeOrBack: C, role: "grid", style: P.root, trackChildren: !0 }, o.createElement(n.Z, { contentContainerStyle: P.flatListContentContainer, data: F, initialNumToRender: 3, keyExtractor: v, renderItem: L, showsVerticalScrollIndicator: !1, style: P.flatList, vertical: !0 }));
+                    return o.createElement(b.Z, { "aria-label": void 0, autoFocus: e, focusBoundaryDirections: d, isFocusBoundary: r, name: t, onArrowPress: S, onEscapeOrBack: C, role: "grid", style: w.root, trackChildren: !0 }, o.createElement(n.Z, { contentContainerStyle: w.flatListContentContainer, data: F, initialNumToRender: 3, keyExtractor: v, renderItem: L, showsVerticalScrollIndicator: !1, style: w.flatList, vertical: !0 }));
                 },
-                P = c.default.create((e) => ({ root: { height: "100%", display: "block", overflowY: "visible", overflowX: "visible", width: "100%" }, flatList: { width: "100%", height: "100%" }, flatListContentContainer: { display: "flex", flexDirection: "column" }, carouselMarginBottom: { marginBottom: e.spaces.space12 } }));
-            var w = d(291394);
+                w = t.default.create((e) => ({ root: { height: "100%", display: "block", overflowY: "visible", overflowX: "visible", width: "100%" }, flatList: { width: "100%", height: "100%" }, flatListContentContainer: { display: "flex", flexDirection: "column" }, carouselMarginBottom: { marginBottom: e.spaces.space12 } }));
+            var P = d(291394);
             const A = (e) => `${M}-${e}`,
-                I = RegExp(`\\.${M}-([0-9]*)\\.${h.m}-([0-9]*)`),
-                g = ({ autoFocus: e, categories: a, focusBoundaryDirections: d, handleNoriginArrowPress: r, isFocusBoundary: n, name: c, onArrowPress: M, onSelectVideo: f, playVideoPreview: y, returnToFirstElementOnEscape: v, withScrollRestoration: p = !0 }) => {
-                    const P = o.useRef(null),
-                        g = o.useRef(new Map()),
-                        T = (0, D.z)(),
+                g = RegExp(`\\.${M}-([0-9]*)\\.${h.m}-([0-9]*)`),
+                E = ({ autoFocus: e, categories: a, focusBoundaryDirections: d, handleNoriginArrowPress: r, isFocusBoundary: n, name: t, onArrowPress: M, onSelectVideo: f, playVideoPreview: y, returnToFirstElementOnEscape: v, withScrollRestoration: p = !0 }) => {
+                    const w = o.useRef(null),
+                        E = o.useRef(new Map()),
+                        I = (0, D.z)(),
                         { direction: F } = (0, i.Z)(),
-                        C = (0, t.Z)(c) || c,
-                        L = (0, t.Z)(`${c}.${A("0")}.${(0, h.X)("0")}`),
+                        C = (0, c.Z)(t) || t,
+                        L = (0, c.Z)(`${t}.${A("0")}.${(0, h.X)("0")}`),
                         S = o.useMemo(() => a.filter((e) => e.content?.length > 0), [a]),
                         V = o.useRef(Array(S?.length).fill(null)),
                         H = o.useRef(Array(S?.length).fill(null)),
@@ -1444,27 +1425,27 @@
                                 H.current[a] = e;
                             }),
                         ),
-                        B = o.useMemo(
+                        J = o.useMemo(
                             () =>
                                 S.map((e, a) => () => {
-                                    P.current?.positionRef.current !== a && P.current?.setPosition(a);
+                                    w.current?.positionRef.current !== a && w.current?.setPosition(a);
                                 }),
                             [S],
                         ),
-                        J = o.useMemo(
+                        B = o.useMemo(
                             () =>
                                 S.map((e, a) => (e) => {
                                     const d = `${C}.${A(a.toString())}`;
-                                    g.current.set(d, e);
+                                    E.current.set(d, e);
                                 }),
                             [S, C],
                         ),
                         Z = o.useCallback((e) => {
-                            const a = I.exec(e);
+                            const a = g.exec(e);
                             if (a) {
                                 const e = parseInt(a[1], 10) || 0,
                                     d = parseInt(a[2], 10) || 0;
-                                P.current?.setPosition(e), H.current[e]?.(d);
+                                w.current?.setPosition(e), H.current[e]?.(d);
                             }
                         }, []),
                         x = (0, u.KN)(p, Z),
@@ -1478,24 +1459,24 @@
                                         ref: (a) => {
                                             V.current[e] = a;
                                         },
-                                        style: e === S.length - 1 ? null : E.carouselMarginBottom,
+                                        style: e === S.length - 1 ? null : T.carouselMarginBottom,
                                     },
-                                    o.createElement(m.Z, { content: a.content, displayType: (0, k.qU)(a.displayType), getSetPositionFn: d, handleNoriginArrowPress: r || (() => !1), name: A(e.toString()), onFocus: B[e], onFocusChild: J[e], onReady: x, onSelectVideo: f, playVideoPreview: y, title: a.title }),
+                                    o.createElement(m.Z, { content: a.content, displayType: (0, k.qU)(a.displayType), getSetPositionFn: d, handleNoriginArrowPress: r || (() => !1), name: A(e.toString()), onFocus: J[e], onFocusChild: B[e], onReady: x, onSelectVideo: f, playVideoPreview: y, title: a.title }),
                                 );
                             },
-                            [S.length, r, B, J, x, f, y],
+                            [S.length, r, J, B, x, f, y],
                         ),
-                        O = o.useMemo(() => S.map((e, a) => N({ index: a, item: e })), [S, N]),
-                        $ = o.useCallback(
+                        G = o.useMemo(() => S.map((e, a) => N({ index: a, item: e })), [S, N]),
+                        O = o.useCallback(
                             (e) => {
-                                if (v && L && (0, l.getCurrentFocusKey)() !== L) return (0, l.setFocus)(L), P.current?.setPosition(0), H.current[0]?.(0), !0;
+                                if (v && L && (0, l.getCurrentFocusKey)() !== L) return (0, l.setFocus)(L), w.current?.setPosition(0), H.current[0]?.(0), !0;
                             },
                             [L, v],
                         ),
-                        _ = o.useCallback(
+                        $ = o.useCallback(
                             (e) => {
-                                if (P.current?.isAnimating.current) return !0;
-                                const a = P.current?.positionRef.current || 0;
+                                if (w.current?.isAnimating.current) return !0;
+                                const a = w.current?.positionRef.current || 0;
                                 let d,
                                     o = "scroll";
                                 switch (e.key) {
@@ -1511,32 +1492,32 @@
                                     case "ArrowRight":
                                         o = "rtl" === F ? "scroll_left" : "scroll_right";
                                 }
-                                if ((T.scribe({ element: "tv-category-grid", action: o }), void 0 === d || d === a)) return M?.(e);
-                                const r = g.current.get(`${C}.${A(d.toString())}`);
-                                return r ? (0, l.setFocus)(r) : (0, l.setFocus)(`${C}.${A(d.toString())}.${(0, h.X)("0")}`), P.current?.setPosition(d), !0;
+                                if ((I.scribe({ element: "tv-category-grid", action: o }), void 0 === d || d === a)) return M?.(e);
+                                const r = E.current.get(`${C}.${A(d.toString())}`);
+                                return r ? (0, l.setFocus)(r) : (0, l.setFocus)(`${C}.${A(d.toString())}.${(0, h.X)("0")}`), w.current?.setPosition(d), !0;
                             },
-                            [T, F, S.length, C, M],
+                            [I, F, S.length, C, M],
                         ),
-                        z = o.useCallback((e) => {
-                            P.current = e;
+                        _ = o.useCallback((e) => {
+                            w.current = e;
                         }, []);
-                    return o.createElement(b.Z, { "aria-label": void 0, autoFocus: e, autoRestoreFocus: !0, focusBoundaryDirections: d, isFocusBoundary: n, name: c, onArrowPress: _, onEscapeOrBack: $, role: "grid", saveLastFocusedChild: !0, style: E.root, trackChildren: !0 }, o.createElement(w.k, { getGPUScrollerApi: z, renderedItemRefs: V, scrollX: !1, scrollY: !0 }, o.createElement(s.Z, { style: E.itemContainer }, O)));
+                    return o.createElement(b.Z, { "aria-label": void 0, autoFocus: e, autoRestoreFocus: !0, focusBoundaryDirections: d, isFocusBoundary: n, name: t, onArrowPress: $, onEscapeOrBack: O, role: "grid", saveLastFocusedChild: !0, style: T.root, trackChildren: !0 }, o.createElement(P.k, { getGPUScrollerApi: _, renderedItemRefs: V, scrollX: !1, scrollY: !0 }, o.createElement(s.Z, { style: T.itemContainer }, G)));
                 },
-                E = c.default.create((e) => ({ root: { display: "block", overflow: "hidden", width: "100%", height: "100%" }, itemContainer: { display: "flex", flexDirection: "column" }, carouselMarginBottom: { marginBottom: e.spaces.space12 } }));
-            function T(e) {
-                return (0, r.Z)() ? o.createElement(p, e) : o.createElement(g, e);
+                T = t.default.create((e) => ({ root: { display: "block", overflow: "hidden", width: "100%", height: "100%" }, itemContainer: { display: "flex", flexDirection: "column" }, carouselMarginBottom: { marginBottom: e.spaces.space12 } }));
+            function I(e) {
+                return (0, r.Z)() ? o.createElement(p, e) : o.createElement(E, e);
             }
         },
         734261: (e, a, d) => {
-            d.d(a, { H: () => u, o: () => t });
+            d.d(a, { H: () => u, o: () => c });
             var o = d(202784),
                 r = d(111677),
                 l = d.n(r),
                 n = d(775042);
             const s = l().d96cf7ce,
                 i = l().ab4fc8bc,
-                c = l().dbd5d400,
-                t = "keyboard",
+                t = l().dbd5d400,
+                c = "keyboard",
                 u = {
                     rows: [
                         [
@@ -1590,7 +1571,7 @@
                         [
                             { displayName: s, value: "Backspace", icon: o.createElement(n.default, null), width: 2 },
                             { displayName: i, value: " ", width: 2 },
-                            { displayName: c, value: "Clear", width: 2 },
+                            { displayName: t, value: "Clear", width: 2 },
                         ],
                     ],
                 };
@@ -1603,30 +1584,30 @@
                 n = d(731708),
                 s = d(392237),
                 i = d(111677),
-                c = d.n(i),
-                t = d(686010),
+                t = d.n(i),
+                c = d(686010),
                 u = d(467537),
                 D = d(734261);
-            const m = c().ia13bd7c,
+            const m = t().ia13bd7c,
                 h = ({ disabled: e, displayName: a, icon: d, onArrowPress: o, onKeyPress: l, style: s, value: i }) => {
-                    const c = { displayName: a, value: i };
-                    return r.createElement(u.C, { "aria-label": a, focusable: !e, name: `key-${a}`, onArrowPress: o, onPress: () => l?.(c), role: "text", style: [k.keyboardKey, s] }, r.createElement(n.ZP, { size: "subtext2", weight: "medium" }, d || a));
+                    const t = { displayName: a, value: i };
+                    return r.createElement(u.C, { "aria-label": a, focusable: !e, name: `key-${a}`, onArrowPress: o, onPress: () => l?.(t), role: "text", style: [k.keyboardKey, s] }, r.createElement(n.ZP, { size: "subtext2", weight: "medium" }, d || a));
                 },
                 b = ({ disabled: e, onArrowPress: a, onKeyPress: d, style: n, width: s = 6 }) => {
                     const i = D.H.rows.length,
-                        c = { gridTemplateColumns: `repeat(${s}, 1fr)` },
+                        t = { gridTemplateColumns: `repeat(${s}, 1fr)` },
                         u = r.useMemo(
                             () =>
                                 D.H.rows.flatMap((n, s) =>
-                                    n.map((n, c, t) => {
-                                        const u = c === t.length - 1;
+                                    n.map((n, t, c) => {
+                                        const u = t === c.length - 1;
                                         let D = {};
-                                        return 0 === s && 0 === c ? (D = k.topLeftKey) : 0 === s && u ? (D = k.topRightKey) : s === i - 1 && 0 === c ? (D = k.bottomLeftKey) : s === i - 1 && u && (D = k.bottomRightKey), r.createElement(l.Z, { key: `tv-keyboard-key-${n.displayName}`, style: { gridColumn: `span ${n.width || 1}` } }, r.createElement(h, (0, o.Z)({}, n, { disabled: e, onArrowPress: a, onKeyPress: d, style: D })));
+                                        return 0 === s && 0 === t ? (D = k.topLeftKey) : 0 === s && u ? (D = k.topRightKey) : s === i - 1 && 0 === t ? (D = k.bottomLeftKey) : s === i - 1 && u && (D = k.bottomRightKey), r.createElement(l.Z, { key: `tv-keyboard-key-${n.displayName}`, style: { gridColumn: `span ${n.width || 1}` } }, r.createElement(h, (0, o.Z)({}, n, { disabled: e, onArrowPress: a, onKeyPress: d, style: D })));
                                     }),
                                 ),
                             [e, i, a, d],
                         );
-                    return r.createElement(t.Z, { "aria-label": m, focusable: !e, name: D.o, onArrowPress: a, role: "layout", saveLastFocusedChild: !0, style: [k.container, c, n] }, u);
+                    return r.createElement(c.Z, { "aria-label": m, focusable: !e, name: D.o, onArrowPress: a, role: "layout", saveLastFocusedChild: !0, style: [k.container, t, n] }, u);
                 },
                 k = s.default.create((e) => ({ container: { display: "grid", gridGap: e.spaces.space2, rowGap: e.spaces.space2, width: `calc(100% - ${e.spaces.space2})` }, keyboardKey: { alignItems: "center", backgroundColor: e.colors.gray200, color: e.colors.text, height: e.spaces.space32, justifyContent: "center", minWidth: e.spaces.space36 }, topLeftKey: { borderTopStartRadius: e.borderRadii.medium }, topRightKey: { borderTopEndRadius: e.borderRadii.medium }, bottomLeftKey: { borderBottomStartRadius: e.borderRadii.medium }, bottomRightKey: { borderBottomEndRadius: e.borderRadii.medium } }));
         },
@@ -1635,23 +1616,23 @@
             const o = Object.freeze({ "": "", a: "a", b: "b", c: "c", d: "d", e: "e", f: "f", g: "g", h: "h", i: "i", j: "j", k: "k", l: "l", m: "m", n: "n", o: "o", p: "p", q: "q", r: "r", s: "s", t: "t", u: "u", v: "v", w: "w", x: "x", y: "y", z: "z", 0: "0", 1: "1", 2: "2", 3: "3", 4: "4", 5: "5", 6: "6", 7: "7", 8: "8", 9: "9", Backspace: "Backspace", Space: " ", Clear: "Clear" });
         },
         500529: (e, a, d) => {
-            d.d(a, { Z: () => c });
+            d.d(a, { Z: () => t });
             var o = d(202784),
                 r = d(392237),
                 l = d(382880),
                 n = d(516951),
                 s = d(873930);
             const i = r.default.create((e) => ({ list: { display: "flex", flexDirection: "column" }, listItemBottomMargin: { marginBottom: e.spaces.space16 } })),
-                c = ({ identityFunction: e, items: a, onNearEnd: d, renderer: r }) => {
-                    const [c, t] = o.useState(0),
+                t = ({ identityFunction: e, items: a, onNearEnd: d, renderer: r }) => {
+                    const [t, c] = o.useState(0),
                         u = o.useRef(null),
                         D = (0, s.Z)(),
                         m = o.useMemo(() => (0, l.Z)(d || n.Z), [d]),
                         h = o.useCallback(
                             (e) => {
-                                "ArrowDown" === e.key ? (t((e) => Math.min(a.length - 1, e + 1)), a.length - c < 5 && m()) : "ArrowUp" === e.key && t((e) => Math.max(0, e - 1));
+                                "ArrowDown" === e.key ? (c((e) => Math.min(a.length - 1, e + 1)), a.length - t < 5 && m()) : "ArrowUp" === e.key && c((e) => Math.max(0, e - 1));
                             },
-                            [c, t, a.length, m],
+                            [t, c, a.length, m],
                         );
                     return (
                         o.useEffect(() => (window.addEventListener("keydown", h), () => window.removeEventListener("keydown", h)), [h]),
@@ -1697,8 +1678,8 @@
                 n = d(107267),
                 s = d(731708),
                 i = d(392237),
-                c = d(111677),
-                t = d.n(c),
+                t = d(111677),
+                c = d.n(t),
                 u = d(737691),
                 D = d(520913),
                 m = d(334522),
@@ -1710,86 +1691,86 @@
                 y = d(682461),
                 v = d(673932),
                 p = d(833453),
-                P = d(686010),
-                w = d(305332),
+                w = d(686010),
+                P = d(305332),
                 A = d(521878);
-            const I = t().cd3f5206,
-                g = t().c930299f,
-                E = t().de65c756,
-                T = t().b2e9f19c,
+            const g = c().cd3f5206,
+                E = c().c930299f,
+                T = c().de65c756,
+                I = c().b2e9f19c,
                 F = { behavior: "smooth", block: "center", inline: "nearest" },
                 C = "replay-button",
                 L = (e) => e.tv?.relatedVideos.videos || [],
                 S = (e) => e.tv?.relatedVideos.fetchStatus,
                 V = i.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, height: "100vh" }, content: { height: "100vh", paddingTop: e.spaces.space16, paddingHorizontal: e.spaces.space28 }, header: { height: e.spaces.space80 }, videoCards: { paddingTop: e.spaces.space16, justifyContent: "space-between", flexGrow: "1" }, videoCardsScrollable: { height: `calc(100% - ${e.spaces.space64})`, maxHeight: `calc(100% - ${e.spaces.space64})`, overflowY: "auto" }, firstVideo: { width: 340 * e.scaleMultiplier }, replayContainer: { width: "fit-content", flexDirection: "row", alignItems: "center", borderRadius: e.borderRadii.small, backgroundColor: e.colors.gray50, marginBottom: e.spaces.space24 }, iconReload: { width: e.spaces.space16, height: e.spaces.space16, marginEnd: e.spaces.space12 }, logo: { end: e.spaces.space28, height: e.spaces.space40, position: "absolute", top: e.spacesPx.space28 - e.spacesPx.space2, width: e.spaces.space40 } })),
                 H = ({ autoplayNextDisabled: e = !1, currentTweetId: a, onEscapeOrBack: d, onReplayVideo: i }) => {
-                    const [c, t] = o.useState(5),
+                    const [t, c] = o.useState(5),
                         [H, R] = o.useState(!0),
-                        B = (0, m.Z)(A.R) || A.R,
-                        J = (0, M.v9)(L),
+                        J = (0, m.Z)(A.R) || A.R,
+                        B = (0, M.v9)(L),
                         Z = (0, M.v9)(S),
                         x = (0, M.I0)(),
                         N = (0, n.useHistory)(),
-                        O = (0, h.Z)(),
-                        $ = o.useCallback(
+                        G = (0, h.Z)(),
+                        O = o.useCallback(
                             (e) => {
                                 x(f.eX.tvRelatedVideosClear()), x(f.eX.playerSetVideo(e)), N.replace((0, v.X5)(e));
                             },
                             [x, N],
                         ),
-                        _ = J[0],
-                        z = o.useMemo(() => J.slice(1) || [], [J]);
+                        $ = B[0],
+                        _ = o.useMemo(() => B.slice(1) || [], [B]);
                     o.useEffect(() => {
                         Z === k.Z.FAILED && N.goBack();
                     }, [N, Z]);
-                    const U = o.useCallback(() => {
+                    const z = o.useCallback(() => {
                         R(!1);
                     }, []);
                     o.useEffect(() => {
-                        e && U();
-                    }, [e, U]);
-                    const j = o.useCallback(
+                        e && z();
+                    }, [e, z]);
+                    const U = o.useCallback(
                             (e) => {
                                 let a = !1;
-                                if ("ArrowUp" === e.key) (0, r.setFocus)(`${B}.${C}`), (a = !0);
+                                if ("ArrowUp" === e.key) (0, r.setFocus)(`${J}.${C}`), (a = !0);
                                 return R(!1), a;
                             },
-                            [B],
+                            [J],
                         ),
-                        K = o.useCallback(() => (U(), !1), [U]);
+                        K = o.useCallback(() => (z(), !1), [z]);
                     o.useEffect(() => {
                         if (H) {
                             const e = setInterval(() => {
-                                t((a) => (a > 0 ? a - 1 : (clearInterval(e), _ && $(_), a)));
+                                c((a) => (a > 0 ? a - 1 : (clearInterval(e), $ && O($), a)));
                             }, 1e3);
                             return () => {
                                 clearInterval(e);
                             };
                         }
-                    }, [_, $, H]),
+                    }, [$, O, H]),
                         o.useEffect(() => {
-                            !J.length && a && x((0, y._B)({ tweetId: a }));
-                        }, [a, x, J]);
+                            !B.length && a && x((0, y._B)({ tweetId: a }));
+                        }, [a, x, B]);
                     const X = o.useMemo(() => {
-                        const e = c > 0 && H ? g({ count: c }) : I;
+                        const e = t > 0 && H ? E({ count: t }) : g;
                         return [
-                            { id: "up-next", content: [_], title: e, displayType: "Carousel" },
-                            { id: "suggestions", content: z, title: E, displayType: "Carousel" },
+                            { id: "up-next", content: [$], title: e, displayType: "Carousel" },
+                            { id: "suggestions", content: _, title: T, displayType: "Carousel" },
                         ];
-                    }, [z, c, _, H]);
-                    return o.createElement(b.nO, { namespace: { section: "play-next" } }, o.createElement(P.Z, { "aria-label": void 0, name: A.R, onArrowPress: U, onEscapeOrBack: d, preferredChildName: "next-video", role: "layout", style: V.root, trackChildren: !0 }, o.createElement(l.Z, { style: V.content }, o.createElement(l.Z, { style: V.header }, o.createElement(p.K, { "aria-label": void 0, name: C, onPress: i, role: "button", scrollOptions: F, style: V.replayContainer }, o.createElement(u.default, { style: V.iconReload }), o.createElement(s.ZP, { color: "text", size: "body", weight: "bold" }, T))), o.createElement(l.Z, { onTouchStart: U, style: O ? [V.videoCards, V.videoCardsScrollable] : V.videoCards }, o.createElement(w.Z, { autoFocus: !0, categories: X, focusBoundaryDirections: ["down", "left", "right"], handleNoriginArrowPress: K, isFocusBoundary: !0, name: A.P, onArrowPress: j, onSelectVideo: $ }))), o.createElement(D.default, { style: V.logo })));
+                    }, [_, t, $, H]);
+                    return o.createElement(b.nO, { namespace: { section: "play-next" } }, o.createElement(w.Z, { "aria-label": void 0, name: A.R, onArrowPress: z, onEscapeOrBack: d, preferredChildName: "next-video", role: "layout", style: V.root, trackChildren: !0 }, o.createElement(l.Z, { style: V.content }, o.createElement(l.Z, { style: V.header }, o.createElement(p.K, { "aria-label": void 0, name: C, onPress: i, role: "button", scrollOptions: F, style: V.replayContainer }, o.createElement(u.default, { style: V.iconReload }), o.createElement(s.ZP, { color: "text", size: "body", weight: "bold" }, I))), o.createElement(l.Z, { onTouchStart: z, style: G ? [V.videoCards, V.videoCardsScrollable] : V.videoCards }, o.createElement(P.Z, { autoFocus: !0, categories: X, focusBoundaryDirections: ["down", "left", "right"], handleNoriginArrowPress: K, isFocusBoundary: !0, name: A.P, onArrowPress: U, onSelectVideo: O }))), o.createElement(D.default, { style: V.logo })));
                 };
         },
         406483: (e, a, d) => {
-            d.d(a, { Z: () => g });
+            d.d(a, { Z: () => E });
             var o = d(202784),
                 r = d(325686),
                 l = d(107267),
                 n = d(731708),
                 s = d(392237),
                 i = d(111677),
-                c = d.n(i),
-                t = d(293115),
+                t = d.n(i),
+                c = d(293115),
                 u = d(125363),
                 D = d(903558),
                 m = d(673932),
@@ -1801,14 +1782,14 @@
                 y = d(971813);
             const v = (e, a) => e.tv?.relatedVideos?.cursor,
                 p = (e) => e.tv?.relatedVideos?.fetchStatus === k.Z.LOADING,
-                P = (0, M.Z)()
+                w = (0, M.Z)()
                     .propsFromState(() => ({ tweets: y.G, cursor: v, isLoading: p }))
                     .propsFromActions(() => ({ fetchRelatedVideosGraphQL: f._B }))
                     .withAnalytics({ element: "tvPlayNext" }),
-                w = c().de65c756,
+                P = t().de65c756,
                 A = { behavior: "smooth", block: "center", inline: "nearest" },
-                I = s.default.create((e) => ({ root: { height: "60vh", position: "absolute", width: "100%", bottom: 0, backgroundColor: e.colors.translucentBlack30, padding: e.spaces.space32, paddingBottom: "0" }, title: { marginBottom: e.spaces.space16 }, gridContainer: { flex: 1, overflow: "hidden" } })),
-                g = P(({ currentTweetId: e, cursor: a, fetchRelatedVideosGraphQL: d, isLoading: s, onEscapeOrBack: i, tweets: c }) => {
+                g = s.default.create((e) => ({ root: { height: "60vh", position: "absolute", width: "100%", bottom: 0, backgroundColor: e.colors.translucentBlack30, padding: e.spaces.space32, paddingBottom: "0" }, title: { marginBottom: e.spaces.space16 }, gridContainer: { flex: 1, overflow: "hidden" } })),
+                E = w(({ currentTweetId: e, cursor: a, fetchRelatedVideosGraphQL: d, isLoading: s, onEscapeOrBack: i, tweets: t }) => {
                     const k = (0, u.I0)(),
                         M = (0, l.useHistory)(),
                         f = o.useCallback((e) => (k(D.eX.tvRelatedVideosClear()), k(D.eX.playerSetVideo(e)), M.replace((0, m.X5)(e)), !0), [k, M]),
@@ -1816,15 +1797,15 @@
                             i?.();
                         }, [i]);
                     o.useEffect(() => {
-                        !c && e && d({ tweetId: e });
-                    }, [e, c, d]);
+                        !t && e && d({ tweetId: e });
+                    }, [e, t, d]);
                     const v = o.useCallback(() => {
                             e && !s && d({ tweetId: e, cursor: a });
                         }, [e, s, d, a]),
                         p = o.useCallback((e) => {
                             e.target.scrollTop = 0;
                         }, []);
-                    return o.createElement(t.nO, { namespace: { section: "suggestions" } }, o.createElement(h.Z, { "aria-label": void 0, autoRestoreFocus: !0, name: "related-videos", onEscapeOrBack: i, role: "grid", style: I.root, trackChildren: !0 }, o.createElement(h.Z, { "aria-label": void 0, name: "related-videos-fake-focus-trap", onFocus: y, role: "none" }), o.createElement(n.ZP, { size: "headline1", style: I.title, weight: "bold" }, w), o.createElement(r.Z, { onScroll: p, style: I.gridContainer }, o.createElement(b.Z, { autoFocus: !0, content: c, name: "related-videos-grid", onNearEnd: v, onSelectVideo: f, scrollOptions: A, width: 4 }))));
+                    return o.createElement(c.nO, { namespace: { section: "suggestions" } }, o.createElement(h.Z, { "aria-label": void 0, autoRestoreFocus: !0, name: "related-videos", onEscapeOrBack: i, role: "grid", style: g.root, trackChildren: !0 }, o.createElement(h.Z, { "aria-label": void 0, name: "related-videos-fake-focus-trap", onFocus: y, role: "none" }), o.createElement(n.ZP, { size: "headline1", style: g.title, weight: "bold" }, P), o.createElement(r.Z, { onScroll: p, style: g.gridContainer }, o.createElement(b.Z, { autoFocus: !0, content: t, name: "related-videos-grid", onNearEnd: v, onSelectVideo: f, scrollOptions: A, width: 4 }))));
                 });
         },
         971813: (e, a, d) => {
@@ -1839,19 +1820,19 @@
                 n = d(899667),
                 s = d(873930),
                 i = d(686010),
-                c = d(650093),
-                t = d(668214);
+                t = d(650093),
+                c = d(668214);
             const u = (e) => e.tv?.relatedVideos.videos || [],
-                D = (0, t.Z)()
+                D = (0, c.Z)()
                     .propsFromState(() => ({ tweets: u }))
                     .withAnalytics({ element: "tvPlayNext" }),
                 m = l.default.create((e) => ({ root: { height: "15vh", overflow: "hidden" }, button: { border: `${e.borderWidths.small} solid ${e.colors.borderColor}`, position: "absolute", start: `calc(50% - ${e.spacesPx.space24 + e.spacesPx.space2}px)`, top: e.spaces.space16, zIndex: e.componentZIndices.appBarZIndex, width: e.spaces.space48, height: e.spaces.space48 } })),
                 h = D(({ onFocus: e, style: a, tweets: d }) => {
                     const l = (0, s.Z)(),
-                        t = o.useCallback(() => {
+                        c = o.useCallback(() => {
                             e();
                         }, [e]);
-                    return d && 0 !== d.length ? o.createElement(i.Z, { "aria-label": void 0, focusable: !l, name: "related-videos-preview", onFocus: e, role: "grid", style: m.root }, l ? o.createElement(r.ZP, { icon: o.createElement(n.default, null), onPress: e, size: "xLarge", style: m.button, type: "primaryFilled" }) : null, o.createElement(c.Z, { content: d, flatListStyle: a, name: "related-videos-preview-grid", onSelectVideo: l ? t : void 0, width: 4 })) : null;
+                    return d && 0 !== d.length ? o.createElement(i.Z, { "aria-label": void 0, focusable: !l, name: "related-videos-preview", onFocus: e, role: "grid", style: m.root }, l ? o.createElement(r.ZP, { icon: o.createElement(n.default, null), onPress: e, size: "xLarge", style: m.button, type: "primaryFilled" }) : null, o.createElement(t.Z, { content: d, flatListStyle: a, name: "related-videos-preview-grid", onSelectVideo: l ? c : void 0, width: 4 })) : null;
                 });
         },
         479890: (e, a, d) => {
@@ -1866,8 +1847,8 @@
                 n = d(392237),
                 s = d(111677),
                 i = d.n(s),
-                c = d(178519),
-                t = d(673932),
+                t = d(178519),
+                c = d(673932),
                 u = d(467537),
                 D = d(479890);
             const m = i().a9ae1e78,
@@ -1875,9 +1856,9 @@
                     o.createElement(
                         r.Z,
                         { style: b.root },
-                        o.createElement(u.C, { "aria-label": void 0, focusable: e, name: D.U, onEscapeOrBack: a, onPress: d, role: "link", style: b.searchBar, withBackgroundStyle: !0, withBorderStyle: !1 }, ({ hasFocus: e }) => o.createElement(o.Fragment, null, o.createElement(c.default, { style: [b.icon, b.animated, e && b.iconFocused] }), o.createElement(l.ZP, { color: e ? "white" : "gray700", size: "body", style: b.animated, weight: "bold" }, n ? s : m))),
+                        o.createElement(u.C, { "aria-label": void 0, focusable: e, name: D.U, onEscapeOrBack: a, onPress: d, role: "link", style: b.searchBar, withBackgroundStyle: !0, withBorderStyle: !1 }, ({ hasFocus: e }) => o.createElement(o.Fragment, null, o.createElement(t.default, { style: [b.icon, b.animated, e && b.iconFocused] }), o.createElement(l.ZP, { color: e ? "white" : "gray700", size: "body", style: b.animated, weight: "bold" }, n ? s : m))),
                     ),
-                b = n.default.create((e) => ({ root: { display: "grid", gridTemplateColumns: `minmax(${300 * e.scaleMultiplier}px, 1fr) 3fr`, padding: e.spaces.space2, backgroundColor: e.colors.cellBackground }, searchBar: { alignItems: "center", borderRadius: e.borderRadii.infinite, flexDirection: "row", height: e.spaces.space32, marginBottom: e.spaces.space8, marginTop: 3 * e.scaleMultiplier, paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space8, start: -e.spacesPx.space8, width: 300 * e.scaleMultiplier }, animated: { transitionProperty: "color", transitionDuration: `${t.$P}ms`, transitionTimingFunction: "ease" }, focused: { backgroundColor: e.colors.gray0 }, icon: { color: e.colors.gray700, height: e.spaces.space16, width: e.spaces.space16, marginEnd: e.spaces.space8 }, iconFocused: { color: e.colors.text } }));
+                b = n.default.create((e) => ({ root: { display: "grid", gridTemplateColumns: `minmax(${300 * e.scaleMultiplier}px, 1fr) 3fr`, padding: e.spaces.space2, backgroundColor: e.colors.cellBackground }, searchBar: { alignItems: "center", borderRadius: e.borderRadii.infinite, flexDirection: "row", height: e.spaces.space32, marginBottom: e.spaces.space8, marginTop: 3 * e.scaleMultiplier, paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space8, start: -e.spacesPx.space8, width: 300 * e.scaleMultiplier }, animated: { transitionProperty: "color", transitionDuration: `${c.$P}ms`, transitionTimingFunction: "ease" }, focused: { backgroundColor: e.colors.gray0 }, icon: { color: e.colors.gray700, height: e.spaces.space16, width: e.spaces.space16, marginEnd: e.spaces.space8 }, iconFocused: { color: e.colors.text } }));
         },
         674546: (e, a, d) => {
             d.d(a, { ZP: () => k });
@@ -1887,57 +1868,57 @@
                 n = d(392237),
                 s = d(731708),
                 i = d(111677),
-                c = d.n(i),
-                t = d(837880),
+                t = d.n(i),
+                c = d(837880),
                 u = d(2138),
                 D = d(530745),
                 m = d(509423),
                 h = d(686010);
-            const b = c().ed170a6a;
+            const b = t().ed170a6a;
             const k = function (e) {
-                    const { formatLabel: a, min: d = 0, value: i = d, max: c, name: k, onArrowPress: f, step: y, fasterStep: v = y, fastestStep: p = y, onChange: P, onActive: w, withLabel: A, onMouseEnter: I, onMouseLeave: g, onMouseDown: E, ...T } = e,
+                    const { formatLabel: a, min: d = 0, value: i = d, max: t, name: k, onArrowPress: f, step: y, fasterStep: v = y, fastestStep: p = y, onChange: w, onActive: P, withLabel: A, onMouseEnter: g, onMouseLeave: E, onMouseDown: T, ...I } = e,
                         [F, C] = r.useState(i),
                         L = r.useRef(),
-                        S = F / c,
+                        S = F / t,
                         [V, H] = r.useState(!1),
-                        [R, B] = r.useState(!1),
-                        J = r.useRef(0),
+                        [R, J] = r.useState(!1),
+                        B = r.useRef(0),
                         Z = r.useRef(),
                         x = r.useRef(!1),
                         N = r.useMemo(() => [M.progress, { flexGrow: S }], [S]),
-                        O = r.useCallback(
+                        G = r.useCallback(
                             (e) => {
-                                H(!0), I && I(e);
-                            },
-                            [I],
-                        ),
-                        $ = r.useCallback(
-                            (e) => {
-                                H(!1), g && g(e);
+                                H(!0), g && g(e);
                             },
                             [g],
                         ),
-                        _ = r.useCallback(
+                        O = r.useCallback(
                             (e) => {
-                                B(e), w && w(e);
+                                H(!1), E && E(e);
                             },
-                            [w],
+                            [E],
                         ),
-                        z = r.useCallback(() => {
-                            R && ((J.current = 0), (Z.current = void 0), _(!1));
-                        }, [R, _]),
-                        [U, j] = (0, m.K)(z, 1e3),
-                        K = r.useCallback(() => {
-                            j(), (x.current = !0), _(!0);
-                        }, [j, _]),
-                        X = r.useCallback(() => {
-                            (x.current = !1), _(!1);
-                        }, [_]),
-                        G = r.useCallback(
+                        $ = r.useCallback(
                             (e) => {
-                                C(e), P && P(e);
+                                J(e), P && P(e);
                             },
                             [P],
+                        ),
+                        _ = r.useCallback(() => {
+                            R && ((B.current = 0), (Z.current = void 0), $(!1));
+                        }, [R, $]),
+                        [z, U] = (0, m.K)(_, 1e3),
+                        K = r.useCallback(() => {
+                            U(), (x.current = !0), $(!0);
+                        }, [U, $]),
+                        X = r.useCallback(() => {
+                            (x.current = !1), $(!1);
+                        }, [$]),
+                        j = r.useCallback(
+                            (e) => {
+                                C(e), w && w(e);
+                            },
+                            [w],
                         ),
                         W = r.useCallback(
                             (e) => {
@@ -1945,41 +1926,41 @@
                                 switch (a) {
                                     case D.QK:
                                     case D.Qs:
-                                        R || _(!0),
-                                            Z.current === a ? (J.current += 1) : ((Z.current = a), (J.current = 1)),
-                                            G(
+                                        R || $(!0),
+                                            Z.current === a ? (B.current += 1) : ((Z.current = a), (B.current = 1)),
+                                            j(
                                                 (function (e, a, d, o, r) {
                                                     const l = "RIGHT" === d ? a : -a;
-                                                    return (0, t.Z)(e + l, o, r);
-                                                })(F, J.current <= 20 ? y : J.current <= 40 ? v : p, a === D.Qs ? "RIGHT" : "LEFT", d, c),
+                                                    return (0, c.Z)(e + l, o, r);
+                                                })(F, B.current <= 20 ? y : B.current <= 40 ? v : p, a === D.Qs ? "RIGHT" : "LEFT", d, t),
                                             ),
-                                            U();
+                                            z();
                                         break;
                                     case D.WX:
                                     case D.kl:
-                                        z();
+                                        _();
                                 }
                                 f && f(e);
                             },
-                            [R, v, p, c, d, f, z, U, y, _, G, F],
+                            [R, v, p, t, d, f, _, z, y, $, j, F],
                         ),
                         Q = r.useCallback(
                             (e) => {
                                 L.current &&
-                                    G(
+                                    j(
                                         (function (e, a, d, o, r) {
                                             const l = (e - a) / d;
-                                            return o + (r - o) * (0, t.Z)(l, 0, 1);
-                                        })(e, n.default.theme.spacesPx.space32, L.current.clientWidth, d, c),
+                                            return o + (r - o) * (0, c.Z)(l, 0, 1);
+                                        })(e, n.default.theme.spacesPx.space32, L.current.clientWidth, d, t),
                                     );
                             },
-                            [G, d, c],
+                            [j, d, t],
                         ),
                         q = r.useCallback(
                             (e) => {
-                                K(), Q(e.clientX), E && E(e);
+                                K(), Q(e.clientX), T && T(e);
                             },
-                            [K, E, Q],
+                            [K, T, Q],
                         );
                     return (
                         r.useEffect(() => {
@@ -2017,39 +1998,29 @@
                         r.useEffect(() => {
                             R || C(i);
                         }, [R, i]),
-                        r.createElement(h.Z, (0, o.Z)({}, T, { "aria-label": b, "aria-orientation": "horizontal", "aria-valuemax": c, "aria-valuemin": d, "aria-valuenow": F / 1e3, name: k, onArrowPress: W, onMouseDown: q, onMouseEnter: O, onMouseLeave: $, role: "slider" }), ({ hasFocus: e }) => r.createElement(l.Z, { ref: L, style: M.root }, (e || R) && A ? r.createElement(l.Z, { style: M.labelContainer }, r.createElement(l.Z, { style: { flexGrow: S } }), r.createElement(s.ZP, { color: "white", size: "headline2" }, a ? a(F) : F)) : null, r.createElement(l.Z, { style: M.line }, r.createElement(l.Z, { style: N }, V || e || R ? r.createElement(l.Z, { style: M.circle }, r.createElement(l.Z, { style: M.outerCircle })) : null))))
+                        r.createElement(h.Z, (0, o.Z)({}, I, { "aria-label": b, "aria-orientation": "horizontal", "aria-valuemax": t, "aria-valuemin": d, "aria-valuenow": F / 1e3, name: k, onArrowPress: W, onMouseDown: q, onMouseEnter: G, onMouseLeave: O, role: "slider" }), ({ hasFocus: e }) => r.createElement(l.Z, { ref: L, style: M.root }, (e || R) && A ? r.createElement(l.Z, { style: M.labelContainer }, r.createElement(l.Z, { style: { flexGrow: S } }), r.createElement(s.ZP, { color: "white", size: "headline2" }, a ? a(F) : F)) : null, r.createElement(l.Z, { style: M.line }, r.createElement(l.Z, { style: N }, V || e || R ? r.createElement(l.Z, { style: M.circle }, r.createElement(l.Z, { style: M.outerCircle })) : null))))
                     );
                 },
                 M = n.default.create((e) => ({ root: { flexDirection: "column", height: 30 * e.scaleMultiplier, justifyContent: "flex-end", marginBottom: e.spaces.space4, writingDirection: "ltr" }, line: { alignItems: "center", backgroundColor: e.colors.gray700, borderRadius: e.borderRadii.small, flexDirection: "row", height: 6 * e.scaleMultiplier, width: "100%" }, progress: { backgroundColor: e.colors.white, borderRadius: e.borderRadii.small, height: "100%" }, circle: { alignItems: "center", backgroundColor: e.colors.brandColor, borderRadius: e.borderRadii.infinite, bottom: 0, cursor: "pointer", end: -e.spacesPx.space8, height: e.spaces.space16, justifyContent: "center", margin: "auto", position: "absolute", top: 0, width: e.spaces.space16, zIndex: 100 }, outerCircle: { backgroundColor: e.colors.brandColor, borderRadius: e.borderRadii.infinite, height: e.spaces.space28, opacity: 0.5, width: e.spaces.space28 }, labelContainer: { flexDirection: "row", marginBottom: e.spacesPx.space12 } }));
         },
-        946474: (e, a, d) => {
-            d.r(a), d.d(a, { default: () => i });
-            var o = d(202784),
-                r = d(890601),
-                l = d(783427),
-                n = d(347101);
-            const s = (e = {}) => {
-                const { direction: a } = (0, l.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M18.36 8h-2.68l.42-2.52C16.4 3.66 15 2 13.15 2c-1.07 0-2.06.57-2.59 1.51l-3 5.24c-.04.06-.08.11-.14.15C6.96 8.35 6.27 8 5.5 8H2v13h14.2c2.1 0 3.92-1.45 4.39-3.5l1.19-5.22C22.27 10.09 20.61 8 18.36 8zM6 19H4v-9h1.5c.27 0 .5.22.5.5V19zm13.83-7.17l-1.19 5.22C18.38 18.19 17.37 19 16.2 19H8v-8.16c.54-.2 1-.58 1.3-1.1l2.99-5.24c.18-.31.5-.5.86-.5.61 0 1.07.55.97 1.15l-.8 4.85h5.04c.97 0 1.68.89 1.47 1.83z" })) }, { writingDirection: a });
+        401339: (e, a, d) => {
+            d.d(a, { Z: () => l });
+            const o = {},
+                r = ["touchend", "touchmove", "touchstart"];
+            const l = {
+                isTouchSupported: () =>
+                    r.some(
+                        (e) =>
+                            !!(function (e, a) {
+                                if (void 0 !== o[e]) return o[e];
+                                const d = document.createElement(a || "div"),
+                                    r = `on${e}`;
+                                let l = r in d;
+                                return l || (d.setAttribute(r, "return;"), (l = "function" == typeof d[r])), (o[e] = l), l;
+                            })(e),
+                    ),
             };
-            s.metadata = { width: 24, height: 24 };
-            const i = s;
-        },
-        775042: (e, a, d) => {
-            d.r(a), d.d(a, { default: () => c });
-            var o = d(202784),
-                r = d(890601),
-                l = d(783427),
-                n = d(717683),
-                s = d(347101);
-            const i = (e = {}) => {
-                const a = o.useContext(n.Z),
-                    { direction: d } = (0, l.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, a && s.Z.iconRTL], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M6.29 2.29l1.42 1.42L5.41 6H15c3.87 0 7 3.13 7 7s-3.13 7-7 7H8v-2h7c2.76 0 5-2.24 5-5s-2.24-5-5-5H5.41l2.3 2.29-1.42 1.42L1.59 7l4.7-4.71z" })) }, { writingDirection: d });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const c = i;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TV-6107ac1a.da9d967a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TV-6107ac1a.9779f9fa.js.map

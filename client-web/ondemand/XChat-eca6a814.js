@@ -43,8 +43,8 @@
                 m = t(789764),
                 u = t(263033),
                 x = t(165272),
-                h = t(369962);
-            const g = i.com.x.dms.model.InformationalItemContents;
+                g = t(369962);
+            const h = i.com.x.dms.model.InformationalItemContents;
             function p({ avatarUrl: e, screenName: s }) {
                 const t = (0, x.F)();
                 return e ? (0, n.jsx)(c.q, { url: e, size: "small", screenName: s, withLink: !t || "external" }) : null;
@@ -69,7 +69,7 @@
                     l = e.sender?.displayName ? ((e, t) => s("{addedName} was added by {addedBy}", { addedName: e, addedBy: t }))(o?.displayName || "Unknown", e.sender?.displayName) : ((e) => s("{addedName} was added", { addedName: e }))(o?.displayName || "Unknown");
                 return (0, n.jsxs)("div", { className: "flex gap-1", children: [(0, n.jsx)(p, { avatarUrl: o?.profileImageUrl, screenName: e.sender?.screenName }), (0, n.jsx)(f, { message: l })] });
             }
-            function y({ contents: e }) {
+            function w({ contents: e }) {
                 const { t: s } = (0, u.$G)(),
                     t = e.affectedUsers.asJsReadonlyArrayView();
                 if (t.length > 1) {
@@ -83,21 +83,21 @@
                     o = ((e) => s("{removedName} was removed", { removedName: e }))(i?.displayName || "Unknown");
                 return (0, n.jsxs)("div", { className: "flex gap-1", children: [(0, n.jsx)(p, { avatarUrl: i?.profileImageUrl }), (0, n.jsx)(f, { message: o })] });
             }
-            function w({ contents: e }) {
+            function y({ contents: e }) {
                 const { t: s } = (0, u.$G)(),
                     t = e.sender,
                     a = t?.displayName ?? s("A member"),
                     r = ((e, t) => s("{senderName, count} {{senderName} made {count, plural, one {member} other {members}} an admin", { senderName: t, count: e }))(e.affectedUsers.asJsReadonlyArrayView().length, a);
                 return (0, n.jsx)(f, { message: r });
             }
-            function N({ contents: e }) {
+            function b({ contents: e }) {
                 const { t: s } = (0, u.$G)(),
                     t = e.sender,
                     a = t?.displayName ?? s("A member"),
                     r = ((e, t) => s("{senderName, count} {{senderName} removed admin status from {count, plural, one {member} other {members}}", { senderName: t, count: e }))(e.affectedUsers.asJsReadonlyArrayView().length, a);
                 return (0, n.jsx)(f, { message: r });
             }
-            function b({ contents: e }) {
+            function N({ contents: e }) {
                 const { t: s } = (0, u.$G)(),
                     t = e.sender,
                     a = t?.displayName ?? s("A member"),
@@ -117,14 +117,14 @@
                     a = e.sender,
                     r = a?.displayName ?? s("A member"),
                     i = e.senderIsCurrentUser ? s("You") : r,
-                    o = 0 === t ? ((e) => s("{senderName} turned vanishing mode off", { senderName: e }))(i) : ((e, t) => s("{senderName} set vanishing mode to {duration}", { senderName: e, duration: (0, h.L)(t) }))(i, t);
+                    o = 0 === t ? ((e) => s("{senderName} turned vanishing mode off", { senderName: e }))(i) : ((e, t) => s("{senderName} set vanishing mode to {duration}", { senderName: e, duration: (0, g.L)(t) }))(i, t);
                 return (0, n.jsx)(f, { message: o });
             }
             function D({ contents: e }) {
                 const { t: s } = (0, u.$G)();
                 let t = e.newDate.toString();
-                if (e.newDate === i.com.x.dms.model.KmpDateFormat.Today) t = s("Today");
-                else if (e.newDate === i.com.x.dms.model.KmpDateFormat.Yesterday) t = s("Yesterday");
+                if (e.newDate instanceof i.com.x.dms.model.KmpDateFormat.Today) t = s("Today");
+                else if (e.newDate instanceof i.com.x.dms.model.KmpDateFormat.Yesterday) t = s("Yesterday");
                 else if (e.newDate instanceof i.com.x.dms.model.KmpDateFormat.Date) {
                     const s = e.newDate.kmpDate,
                         n = new Date(s.year, s.month - 1, s.day),
@@ -137,15 +137,15 @@
             function S({ informationalItem: e }) {
                 const s = e.contents,
                     { t } = (0, u.$G)();
-                return (0, n.jsx)(j, { children: s instanceof g.AddedGroupMembers ? (0, n.jsx)(v, { contents: s }) : s instanceof g.RemovedGroupMembers ? (0, n.jsx)(y, { contents: s }) : s instanceof g.AddedGroupAdmins ? (0, n.jsx)(w, { contents: s }) : s instanceof g.RemovedGroupAdmins ? (0, n.jsx)(N, { contents: s }) : s instanceof g.ChangedGroupTitle ? (0, n.jsx)(b, { contents: s }) : s instanceof g.ChangedGroupAvatar ? (0, n.jsx)(I, { contents: s }) : s instanceof g.DefaultTtlChanged ? (0, n.jsx)(C, { contents: s }) : s instanceof g.DateChanged ? (0, n.jsx)(D, { contents: s }) : s instanceof g.GroupInviteEnabled ? (0, n.jsx)(f, { message: t("Invite link enabled") }) : s instanceof g.GroupInviteDisabled ? (0, n.jsx)(f, { message: t("Invite link disabled") }) : null });
+                return (0, n.jsx)(j, { children: s instanceof h.AddedGroupMembers ? (0, n.jsx)(v, { contents: s }) : s instanceof h.RemovedGroupMembers ? (0, n.jsx)(w, { contents: s }) : s instanceof h.AddedGroupAdmins ? (0, n.jsx)(y, { contents: s }) : s instanceof h.RemovedGroupAdmins ? (0, n.jsx)(b, { contents: s }) : s instanceof h.ChangedGroupTitle ? (0, n.jsx)(N, { contents: s }) : s instanceof h.ChangedGroupAvatar ? (0, n.jsx)(I, { contents: s }) : s instanceof h.DefaultTtlChanged ? (0, n.jsx)(C, { contents: s }) : s instanceof h.DateChanged ? (0, n.jsx)(D, { contents: s }) : s instanceof h.GroupInviteEnabled ? (0, n.jsx)(f, { message: t("Invite link enabled") }) : s instanceof h.GroupInviteDisabled ? (0, n.jsx)(f, { message: t("Invite link disabled") }) : null });
             }
             var R = t(470851),
                 k = t(318063),
                 E = t(993165),
                 M = t(553453),
-                U = t(611105),
+                $ = t(611105),
                 A = t(147602),
-                $ = t(436995),
+                U = t(436995),
                 T = t(145731),
                 F = t(668631),
                 z = t(421018);
@@ -166,7 +166,7 @@
                                     case G.DsaReport:
                                         return null;
                                 }
-                                return e instanceof G.Reply ? { text: t("Reply"), icon: (0, n.jsx)(M.Z, {}), onClick: a } : e instanceof G.CancelSend ? { text: t("Cancel message"), icon: void 0, onClick: a } : e instanceof G.RetrySend ? { text: t("Try sending again"), icon: (0, n.jsx)(U.Z, {}), onClick: a } : e instanceof G.CopyText ? { text: t("Copy message text"), icon: (0, n.jsx)(A.Z, {}), onClick: () => navigator.clipboard.writeText(e.text) } : e instanceof G.Edit ? { text: t("Edit message"), icon: (0, n.jsx)($.Z, {}), onClick: a } : e instanceof G.DeleteForAll ? { text: t("Delete for All"), icon: (0, n.jsx)(T.Z, {}), destructive: !0, onClick: a } : e instanceof G.DeleteForSelf || e instanceof G.DeletePending ? { text: t("Delete for me"), icon: (0, n.jsx)(T.Z, {}), destructive: !0, onClick: a } : e instanceof G.MessageDetails ? { text: t("Info"), icon: (0, n.jsx)(F.Z, {}), onClick: a } : null;
+                                return e instanceof G.Reply ? { text: t("Reply"), icon: (0, n.jsx)(M.Z, {}), onClick: a } : e instanceof G.CancelSend ? { text: t("Cancel message"), icon: void 0, onClick: a } : e instanceof G.RetrySend ? { text: t("Try sending again"), icon: (0, n.jsx)($.Z, {}), onClick: a } : e instanceof G.CopyText ? { text: t("Copy message text"), icon: (0, n.jsx)(A.Z, {}), onClick: () => navigator.clipboard.writeText(e.text) } : e instanceof G.Edit ? { text: t("Edit message"), icon: (0, n.jsx)(U.Z, {}), onClick: a } : e instanceof G.DeleteForAll ? { text: t("Delete for All"), icon: (0, n.jsx)(T.Z, {}), destructive: !0, onClick: a } : e instanceof G.DeleteForSelf || e instanceof G.DeletePending ? { text: t("Delete for me"), icon: (0, n.jsx)(T.Z, {}), destructive: !0, onClick: a } : e instanceof G.MessageDetails ? { text: t("Info"), icon: (0, n.jsx)(F.Z, {}), onClick: a } : null;
                             })(e, r),
                         )
                         .filter((e) => !!e);
@@ -190,18 +190,18 @@
                 const t = (0, x.F)();
                 return (0, n.jsx)("div", { children: (0, n.jsx)(c.q, { url: e.profileImageUrl, size: "large", screenName: e.screenName, withLink: !t || "external" }) });
             }
-            var Z = t(134877),
+            var Z = t(607499),
                 B = t(205116),
                 _ = t(38891),
                 q = t(189164),
-                K = t(42630);
-            function O({ messageInfo: e, isReceived: s, showSignatureVerificationIssuesIcon: t }) {
+                O = t(42630);
+            function H({ messageInfo: e, isReceived: s, showSignatureVerificationIssuesIcon: t }) {
                 const { t: a } = (0, u.$G)(),
                     r = e.showReadUsers?.asJsReadonlyArrayView().map((e) => e.user?.profileImageUrl || "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png") || [],
                     i = (0, _.z)().isTrue("xchat_read_receipt_facepile") && r.length > 1;
-                return e.showReadUsers || e.showEdited || t ? (0, n.jsxs)("div", { className: `flex gap-1 items-center ${s ? "justify-start" : "justify-end"} mx-1 `, children: [e.showEdited && (0, n.jsx)(d.x, { size: "subtext3", color: "gray700", children: a("Edited") }), e.showEdited && (t || (e.showReadUsers && i)) && (0, n.jsx)(K.A, {}), t && (0, n.jsx)(q.Z, {}), t && e.showReadUsers && i && (0, n.jsx)(K.A, {}), e.showReadUsers && i && (0, n.jsx)(m.o, { urls: r, size: "small", spacing: 6, stackOrder: "ascending" })] }) : null;
+                return e.showReadUsers || e.showEdited || t ? (0, n.jsxs)("div", { className: `flex gap-1 items-center ${s ? "justify-start" : "justify-end"} mx-1 `, children: [e.showEdited && (0, n.jsx)(d.x, { size: "subtext3", color: "gray700", children: a("Edited") }), e.showEdited && (t || (e.showReadUsers && i)) && (0, n.jsx)(O.A, {}), t && (0, n.jsx)(q.Z, {}), t && e.showReadUsers && i && (0, n.jsx)(O.A, {}), e.showReadUsers && i && (0, n.jsx)(m.o, { urls: r, size: "small", spacing: 6, stackOrder: "ascending" })] }) : null;
             }
-            var H = t(123010);
+            var K = t(123010);
             const Y = ({ isReceived: e, textContent: s, textEntities: t, messageFooter: a }) => {
                 const r = (function (e, s) {
                     const t = {};
@@ -220,7 +220,7 @@
                         t
                     );
                 })(t, s);
-                return (0, n.jsxs)("div", { className: "inline-flex flex-wrap items-end gap-2", children: [(0, n.jsx)(H.W, { color: e ? "text" : "white", entities: r, linkColor: e ? void 0 : "white", text: s, underlineLinks: !e || void 0 }), a] });
+                return (0, n.jsxs)("div", { className: "inline-flex flex-wrap items-end gap-2", children: [(0, n.jsx)(K.W, { color: e ? "text" : "white", entities: r, linkColor: e ? void 0 : "white", text: s, underlineLinks: !e || void 0 }), a] });
             };
             function X(e) {
                 return /^https?:\/\//i.test(e) ? e : `https://${e}`;
@@ -235,14 +235,14 @@
                         t = (0, ee.X)(s);
                     return (0, n.jsx)("div", { className: "relative", children: (0, n.jsx)(Q.J, { open: t, side: "top", trigger: (0, n.jsx)("div", { ref: s, className: "inline-flex items-center bg-gray-50 rounded-full px-2 pt-0.5 shadow-sm gap-1 border border-background cursor-pointer", children: (0, n.jsx)(d.x, { size: "body", children: "…" }) }), children: (0, n.jsx)("div", { className: "grid gap-2 p-2 pr-0 border border-border rounded-lg bg-background shadow-lg mx-auto [grid-template-columns:repeat(auto-fit,minmax(3rem,1fr))] max-w-[calc(6*3rem+5*0.5rem)]", children: e.map((e) => (0, n.jsxs)("div", { className: "flex flex-row items-center gap-2", children: [(0, n.jsx)(R.c, { emoji: e.reaction }), (0, n.jsx)(d.x, { size: "subtext2", weight: "bold", children: e.users.asJsReadonlyArrayView().length })] }, e.reaction)) }) }) });
                 },
-                te = ({ emoji: e, count: s, users: t }) => {
-                    const a = (0, o.useRef)(null),
-                        r = (0, ee.X)(a),
-                        i = t.map((e) => e.name),
-                        l = i.length > 1 ? `${i.slice(0, -1).join(", ")} and ${i[i.length - 1]}` : i[0];
-                    return (0, n.jsx)("div", { className: "relative", children: (0, n.jsx)(Q.J, { open: r, side: "top", trigger: (0, n.jsxs)("div", { ref: a, className: "inline-flex items-center bg-gray-50 rounded-full px-2 py-1 shadow-sm gap-1 border border-background cursor-pointer", children: [(0, n.jsx)("div", { className: "scale-[0.9] inline-flex items-center", children: (0, n.jsx)(R.c, { emoji: e }) }), s > 1 && (0, n.jsx)(d.x, { size: "subtext2", weight: "bold", color: "gray700", children: s })] }), children: (0, n.jsxs)("div", { className: "flex flex-row items-center gap-2 p-2 border border-border rounded-lg bg-background shadow-lg", children: [(0, n.jsxs)(d.x, { size: "subtext2", weight: "medium", children: [l, " reacted with"] }), (0, n.jsx)(R.c, { emoji: e })] }) }) });
+                te = ({ emoji: e, count: s, users: t, isSelected: a }) => {
+                    const r = (0, o.useRef)(null),
+                        i = (0, ee.X)(r),
+                        l = t.map((e) => e.name),
+                        c = l.length > 1 ? `${l.slice(0, -1).join(", ")} and ${l[l.length - 1]}` : l[0];
+                    return (0, n.jsx)("div", { className: "relative", children: (0, n.jsx)(Q.J, { open: i, side: "top", trigger: (0, n.jsxs)("div", { ref: r, className: `inline-flex items-center ${a ? "bg-blue-500" : "bg-gray-50"} rounded-full px-2 py-1 shadow-sm gap-1 border border-background cursor-pointer`, children: [(0, n.jsx)("div", { className: "scale-[0.9] inline-flex items-center", children: (0, n.jsx)(R.c, { emoji: e }) }), s > 1 && (0, n.jsx)(d.x, { size: "subtext2", weight: "bold", color: a ? "white" : "gray700", children: s })] }), children: (0, n.jsxs)("div", { className: "flex flex-row items-center gap-2 p-2 border border-border rounded-lg bg-background shadow-lg", children: [(0, n.jsxs)(d.x, { size: "subtext2", weight: "medium", children: [c, " reacted with"] }), (0, n.jsx)(R.c, { emoji: e })] }) }) });
                 },
-                ne = ({ reaction: e }) => (0, n.jsx)(te, { emoji: e.reaction, count: e.users.asJsReadonlyArrayView().length, users: e.users.asJsReadonlyArrayView() }),
+                ne = ({ reaction: e }) => (0, n.jsx)(te, { emoji: e.reaction, count: e.users.asJsReadonlyArrayView().length, users: e.users.asJsReadonlyArrayView(), isSelected: e.isSelected }),
                 ae = ({ isReceived: e, reactions: s }) => {
                     const t = s.slice(4);
                     return (0, n.jsxs)("div", { className: `relative flex ${e ? "flex-row-reverse" : "flex-row"} gap-1 justify-end -mt-[10px] mx-3`, children: [s.slice(0, 4).map((e) => (0, n.jsx)(ne, { reaction: e }, e.reaction)), t.length > 0 && (0, n.jsx)(se, { remainingReactions: t })] });
@@ -279,8 +279,8 @@
                     ],
                 });
             }
-            const he = ({ participant: e }) => (e && e.user ? (0, n.jsxs)("div", { className: "flex-1 flex gap-3 items-center py-3", children: [(0, n.jsx)(me.s, { url: e.user.profileImageUrl, size: "medium" }), (0, n.jsx)(oe.R, { name: e.user.displayName, badges: (0, ue.r)(e.user), weight: "normal" })] }) : null);
-            function ge({ messageDetailsState: e, onDismiss: s }) {
+            const ge = ({ participant: e }) => (e && e.user ? (0, n.jsxs)("div", { className: "flex-1 flex gap-3 items-center py-3", children: [(0, n.jsx)(me.s, { url: e.user.profileImageUrl, size: "medium" }), (0, n.jsx)(oe.R, { name: e.user.displayName, badges: (0, ue.r)(e.user), weight: "normal" })] }) : null);
+            function he({ messageDetailsState: e, onDismiss: s }) {
                 const { t } = (0, u.$G)(),
                     a = (0, l._)(e),
                     [r, i] = (0, o.useState)(!1),
@@ -296,7 +296,8 @@
                             i(e), m.current && !e && s(), (m.current = !0);
                         },
                         trigger: (0, n.jsx)("div", {}),
-                        children: (0, n.jsx)("div", { className: "p-4 max-w-[750px] min-w-[300px] mx-auto border border-gray-200 rounded-lg", children: a?.details && (0, n.jsxs)("div", { className: "flex flex-col gap-2 mt-2", children: [c.length > 0 && (0, n.jsx)(xe, { participants: c }), (0, n.jsx)("div", { className: "flex flex-row gap-2", children: (0, n.jsx)(d.x, { size: "subtext1", weight: "medium", children: t("Sent by") }) }), (0, n.jsx)("div", { className: "px-4 rounded-xl bg-gray-0", children: (0, n.jsx)(he, { participant: a.details.sentBy }) })] }) }),
+                        borderRadius: "large",
+                        children: (0, n.jsx)("div", { className: "p-4 max-w-[750px] min-w-[300px] mx-auto border border-gray-200 rounded-lg", children: a?.details && (0, n.jsxs)("div", { className: "flex flex-col gap-2 mt-2", children: [c.length > 0 && (0, n.jsx)(xe, { participants: c }), (0, n.jsx)("div", { className: "flex flex-row gap-2", children: (0, n.jsx)(d.x, { size: "subtext1", weight: "medium", children: t("Sent by") }) }), (0, n.jsx)("div", { className: "px-4 rounded-xl bg-gray-0", children: (0, n.jsx)(ge, { participant: a.details.sentBy }) })] }) }),
                     })
                 );
             }
@@ -304,24 +305,11 @@
                 fe = t(242782);
             const je = ({ isReceived: e, timestamp: s, hasTTL: t, participants: a, showDetails: r, readStatus: i, setShowDetails: o, color: l, iconColor: c }) => (0, n.jsxs)("div", { className: "flex items-center ml-auto shrink-0 gap-1", children: [(0, n.jsx)(d.x, { size: "subtext3", color: l || (e ? "gray700" : "white"), children: (0, pe.H)(s) }), t && (0, n.jsx)(re.Z, { className: `w-3.5 h-3.5 ${l || (e ? "text-text/60" : "text-white/60")}` }), !e && (a.length > 0 ? (0, n.jsx)(le.h, { open: r, onOpenChange: o, trigger: (0, n.jsx)("div", { className: "z-20 -ms-[2px] cursor-pointer", children: (0, n.jsx)(fe.Z, { className: `w-4 h-4 ${c || "text-white"}` }) }), children: (0, n.jsx)("div", { className: "p-4 max-w-[500px] min-w-[300px] mx-auto border border-gray-200 rounded-lg", children: (0, n.jsx)(xe, { participants: a }) }) }) : "Read" === i ? (0, n.jsx)(fe.Z, { className: `w-4 h-4 ${c || "text-white"}` }) : null)] });
             var ve = t(784344),
-                ye = t(617092),
-                we = t(289752),
-                Ne = t(791266);
-            const be = i.com.x.dms.chat.DmEvent,
-                Ie = ({ isReceived: e, replyPreview: s, replierInfo: t, onEvent: a }) => {
-                    const r = t.id,
-                        { senderId: o } = s,
-                        l = t.displayName,
-                        c = s.senderDisplayName,
-                        m = (0, n.jsx)(d.x, { as: "span", className: "text-text/70", size: "subtext2" }),
-                        x = (0, n.jsx)(u.cC, { i18nKey: "<highlight>{replier}</highlight> to you", values: { replier: l }, components: { highlight: m } }),
-                        h = (0, n.jsx)(u.cC, { i18nKey: "<highlight>{replier}</highlight> to {sender}", values: { replier: l, sender: c }, components: { highlight: m } }),
-                        g = (0, n.jsx)(u.cC, { i18nKey: "<highlight>{replier}</highlight> to themself", values: { replier: l }, components: { highlight: m } }),
-                        p = (0, n.jsx)(u.cC, { i18nKey: "<highlight>You</highlight> to yourself", components: { highlight: m } }),
-                        f = (0, n.jsx)(u.cC, { i18nKey: "<highlight>You</highlight> to {sender}", values: { sender: c }, components: { highlight: m } }),
-                        j = r.equals(o) ? (s.senderIsCurrentUser ? p : g) : s.senderIsCurrentUser ? x : e ? h : f;
-                    return (0, n.jsxs)("div", { className: `flex flex-col mt-0.5 gap-1 ${e ? "items-start" : "items-end"} cursor-pointer`, onClick: () => s.sequenceNumber && a(new be.ReplyBubbleClicked(s.sequenceNumber)), children: [s.showReplyNames && (0, n.jsxs)("div", { className: "flex gap-1 px-2 " + (e ? "text-start" : "text-end"), children: [(0, n.jsx)(ve.Z, { className: "inline-block text-text/70" }), (0, n.jsx)(d.x, { as: "span", className: "text-text/40", size: "subtext2", children: j })] }), s.attachment && (s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.Media && s.attachment.type === i.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(ye.K, { filename: s.attachment.filename, fileSize: s.attachment.fileSize }) : s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.Media.FromServer && s.attachment.uriState instanceof i.com.x.dms.model.MediaUriState.ResolvedMedia && (0, n.jsx)(we.Et, { src: s.attachment.uriState.uri, type: s.attachment.type, dimensions: s.attachment.dimensions, className: "rounded-2xl !w-[25%] !h-[25%] border border-gray-200", showAsStatic: !0 })), s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.UrlCard && (0, n.jsx)(Ne.C, { urlCard: s.attachment }), s.previewText && (0, n.jsx)("div", { className: "flex flex-col px-3 py-1.5 rounded-2xl gap-3 border " + (s.senderIsCurrentUser ? "border-primary/50" : "border-gray-400"), children: (0, n.jsx)(d.x, { color: s.senderIsCurrentUser ? "primary" : "gray900", size: "subtext1", numberOfLines: 2, children: s.previewText }) })] });
-                };
+                we = t(617092),
+                ye = t(289752),
+                be = t(791266);
+            const Ne = i.com.x.dms.chat.DmEvent,
+                Ie = ({ isReceived: e, replyPreview: s, onEvent: t }) => (0, n.jsxs)("div", { className: `flex flex-col mt-0.5 gap-1 ${e ? "items-start" : "items-end"} cursor-pointer`, onClick: () => s.sequenceNumber && t(new Ne.ReplyBubbleClicked(s.sequenceNumber)), children: [s.showReplyNames && (0, n.jsxs)("div", { className: `flex gap-1 px-2 ${e ? "text-start" : "text-end"} items-center`, children: [(0, n.jsx)(ve.Z, { className: "inline-block text-text/70" }), (0, n.jsx)(d.x, { as: "span", size: "subtext3", children: s.senderDisplayName })] }), s.attachment && (s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.Media && s.attachment.type === i.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(we.K, { filename: s.attachment.filename, fileSize: s.attachment.fileSize }) : s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.Media.FromServer && s.attachment.uriState instanceof i.com.x.dms.model.MediaUriState.ResolvedMedia && (0, n.jsx)(ye.Et, { src: s.attachment.uriState.uri, type: s.attachment.type, dimensions: s.attachment.dimensions, className: "rounded-2xl !w-[25%] !h-[25%] border border-gray-200", showAsStatic: !0 })), s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.UrlCard && (0, n.jsx)(be.C, { urlCard: s.attachment }), s.previewText && (0, n.jsx)("div", { className: "flex flex-col px-3 py-1.5 rounded-2xl gap-3 border " + (s.senderIsCurrentUser ? "border-primary/50" : "border-gray-400"), children: (0, n.jsx)(d.x, { color: s.senderIsCurrentUser ? "primary" : "gray900", size: "subtext1", numberOfLines: 2, children: s.previewText }) })] });
             var Ce = t(407602),
                 De = t(840489),
                 Se = t(463341);
@@ -412,8 +400,8 @@
             function Me({ messageItem: e, messageFocusedDialog: s, showMessageInfoDialog: t, messageInfoDialog: a, messageInfoDialogDismissed: r, onEvent: l, isVisible: c }) {
                 const { t: m } = (0, u.$G)(),
                     x = (0, ie.a)("(max-width: 768px)"),
-                    h = e instanceof i.com.x.dms.model.MessageItemReceived,
-                    g = null !== e.textContent && !e.supersizeEmoji,
+                    g = e instanceof i.com.x.dms.model.MessageItemReceived,
+                    h = null !== e.textContent && !e.supersizeEmoji,
                     [p, f] = (0, o.useState)(!1),
                     j = ((e) => {
                         switch (e) {
@@ -427,33 +415,33 @@
                                 return "";
                         }
                     })(e.burstState),
-                    [v, y] = (0, o.useState)(!1),
-                    w = e.messageInfo?.showReadUsers?.asJsReadonlyArrayView() || [],
-                    N = !!e.messageInfo?.timeToLive,
-                    b = N || e?.messageInfo?.showTimestampValue || e?.messageInfo?.showTimestamp;
+                    [v, w] = (0, o.useState)(!1),
+                    y = e.messageInfo?.showReadUsers?.asJsReadonlyArrayView() || [],
+                    b = !!e.messageInfo?.timeToLive,
+                    N = b || e?.messageInfo?.showTimestampValue || e?.messageInfo?.showTimestamp;
                 return (0, n.jsxs)(Z.S, {
                     message: m("Couldn't load message"),
                     children: [
                         e.senderDisplayName && (0, n.jsx)("div", { className: "px-16", children: (0, n.jsx)(d.x, { size: "subtext3", color: "gray700", children: e.senderInfo?.user?.displayName }) }),
                         (0, n.jsx)("div", {
-                            className: `flex ${h ? "justify-start" : "justify-end"} ${j} px-4`,
+                            className: `flex ${g ? "justify-start" : "justify-end"} ${j} px-4`,
                             onMouseEnter: () => f(!0),
                             onMouseLeave: () => f(!1),
                             onClick: () => f(!0),
                             children: (0, n.jsxs)("div", {
                                 className: `grid gap-x-2 gap-y-0.5 ${x ? "max-w-full" : "max-w-[calc(55%+128px)]"} grid-cols-[auto_auto_auto_auto] items-center`,
-                                style: { gridTemplateAreas: h ? '\n                  "avatar content actions"\n                  ". message-info ."\n                ' : '\n                  "actions content avatar"\n                  ". message-info ."\n                ' },
+                                style: { gridTemplateAreas: g ? '\n                  "avatar content actions"\n                  ". message-info ."\n                ' : '\n                  "actions content avatar"\n                  ". message-info ."\n                ' },
                                 children: [
                                     (0, n.jsx)("div", { className: "self-end", style: { gridArea: "avatar" }, children: e.senderInfo?.user && (0, n.jsx)(L, { avatarDisplayMode: e.avatarDisplayMode, user: e.senderInfo?.user }) }),
-                                    (0, n.jsxs)("div", { className: "flex flex-col gap-1 " + (h ? "items-start" : "items-end"), style: { gridArea: "content" }, children: [e.replyPreview && e.senderInfo && e.senderInfo.user && (0, n.jsx)(Ie, { replyPreview: e.replyPreview, replierInfo: e.senderInfo.user, isReceived: h, onEvent: l }), e.attachment ? (0, n.jsxs)("div", { className: "flex max-w-1/3 overflow-hidden rounded-2xl relative", children: [(0, n.jsx)(B.P, { attachment: e.attachment, isReceived: h, onEvent: l, className: " border border-gray-200 rounded-2xl", isVisible: c }), N && !g && (0, n.jsx)("div", { className: "absolute bottom-2 right-2 rounded-full text-gray-700 shadow-md", children: (0, n.jsx)(re.Z, { className: "w-4 h-4" }) })] }) : null, e.supersizeEmoji && (0, n.jsx)("div", { className: "flex gap-2 px-1 tracking-widest", children: e.textContent?.match(/(\p{Emoji_Presentation}|\p{Emoji}\uFE0F)/gu)?.map((e, s) => (0, n.jsx)(R.c, { emoji: e }, `${e}-${s}`)) }), g ? (0, n.jsx)("div", { className: "flex justify-end px-4 py-2 rounded-2xl " + (e.supersizeEmoji ? "" : h ? "bg-gray-100" : "bg-blue-500"), children: e.textContent && (0, n.jsx)(Y, { textContent: e.textContent, textEntities: e.textEntities.asJsReadonlyArrayView(), isReceived: h, messageFooter: b && (0, n.jsx)(je, { isReceived: h, timestamp: e.createdTimestamp.epochSeconds, hasTTL: N, readStatus: e?.messageInfo?.readStatus?.name, participants: w, showDetails: v, setShowDetails: y }) }) }) : null] }),
+                                    (0, n.jsxs)("div", { className: "flex flex-col gap-1 " + (g ? "items-start" : "items-end"), style: { gridArea: "content" }, children: [e.replyPreview && e.senderInfo && e.senderInfo.user && (0, n.jsx)(Ie, { replyPreview: e.replyPreview, isReceived: g, onEvent: l }), e.attachment ? (0, n.jsxs)("div", { className: "flex max-w-1/3 overflow-hidden rounded-2xl relative", children: [(0, n.jsx)(B.P, { attachment: e.attachment, isReceived: g, onEvent: l, className: " border border-gray-200 rounded-2xl", isVisible: c }), b && !h && (0, n.jsx)("div", { className: "absolute bottom-2 right-2 rounded-full text-gray-700 shadow-md", children: (0, n.jsx)(re.Z, { className: "w-4 h-4" }) })] }) : null, e.supersizeEmoji && (0, n.jsx)("div", { className: "flex gap-2 px-1 tracking-widest", children: e.textContent?.match(/(\p{Emoji_Presentation}|\p{Emoji}\uFE0F)/gu)?.map((e, s) => (0, n.jsx)(R.c, { emoji: e }, `${e}-${s}`)) }), h ? (0, n.jsx)("div", { className: "flex justify-end px-4 py-2 rounded-2xl " + (e.supersizeEmoji ? "" : g ? "bg-gray-100" : "bg-blue-500"), children: e.textContent && (0, n.jsx)(Y, { textContent: e.textContent, textEntities: e.textEntities.asJsReadonlyArrayView(), isReceived: g, messageFooter: N && (0, n.jsx)(je, { isReceived: g, timestamp: e.createdTimestamp.epochSeconds, hasTTL: b, readStatus: e?.messageInfo?.readStatus?.name, participants: y, showDetails: v, setShowDetails: w }) }) }) : null] }),
                                     (0, n.jsxs)("div", {
-                                        className: `${x ? "w-16" : "w-32"} flex items-center gap-1 ${h ? "flex-row" : "flex-row-reverse"}`,
+                                        className: `${x ? "w-16" : "w-32"} flex items-center gap-1 ${g ? "flex-row" : "flex-row-reverse"}`,
                                         style: { gridArea: "actions" },
                                         children: [
                                             (0, n.jsx)(Ee, { messageItem: e, messageFocusedDialog: s, isMessageFocused: p, onEvent: l }),
                                             (0, n.jsx)(J, { messageFocusedDialog: s, isMessageFocused: p, messageItem: e, onEvent: l, isFromAttachment: !1 }),
                                             t &&
-                                                (0, n.jsx)(ge, {
+                                                (0, n.jsx)(he, {
                                                     onDismiss: () => {
                                                         r();
                                                     },
@@ -461,21 +449,21 @@
                                                 }),
                                         ],
                                     }),
-                                    (0, n.jsxs)("div", { className: "flex flex-col gap-2 pb-1", style: { gridArea: "message-info" }, children: [e.reactions && e.reactions.asJsReadonlyArrayView().length > 0 && (0, n.jsx)(ae, { isReceived: h, reactions: e.reactions.asJsReadonlyArrayView() }), e.supersizeEmoji && (0, n.jsx)("div", { className: "align-end", children: (0, n.jsx)(je, { isReceived: !1, timestamp: e.createdTimestamp.epochSeconds, hasTTL: N, readStatus: e?.messageInfo?.readStatus?.name, participants: w, showDetails: v, setShowDetails: y, color: "gray700", iconColor: "text-gray-700" }) }), e.messageInfo && (0, n.jsx)(O, { messageInfo: e.messageInfo, showSignatureVerificationIssuesIcon: e.showSignatureVerificationIssuesIcon, isReceived: h })] }),
+                                    (0, n.jsxs)("div", { className: "flex flex-col gap-2 pb-1", style: { gridArea: "message-info" }, children: [e.reactions && e.reactions.asJsReadonlyArrayView().length > 0 && (0, n.jsx)(ae, { isReceived: g, reactions: e.reactions.asJsReadonlyArrayView() }), e.supersizeEmoji && (0, n.jsx)("div", { className: "align-end", children: (0, n.jsx)(je, { isReceived: !1, timestamp: e.createdTimestamp.epochSeconds, hasTTL: b, readStatus: e?.messageInfo?.readStatus?.name, participants: y, showDetails: v, setShowDetails: w, color: "gray700", iconColor: "text-gray-700" }) }), e.messageInfo && (0, n.jsx)(H, { messageInfo: e.messageInfo, showSignatureVerificationIssuesIcon: e.showSignatureVerificationIssuesIcon, isReceived: g })] }),
                                 ],
                             }),
                         }),
                     ],
                 });
             }
-            function Ue({ sendingStatusItem: e }) {
+            function $e({ sendingStatusItem: e }) {
                 const { t: s } = (0, u.$G)();
                 return "Failed" === e.status.name ? (0, n.jsxs)("div", { className: "flex justify-end py-1 px-4 gap-1 me-2", children: [(0, n.jsx)(d.x, { size: "subtext2", color: "red500", children: s("Failed") }), (0, n.jsx)(F.Z, { width: "14", height: "14", className: "text-red-500" })] }) : null;
             }
             function Ae({ chatItem: e, messageFocusedDialog: s, onEvent: t, showMessageInfoDialog: a, messageInfoDialog: r, messageInfoDialogDismissed: o, isVisible: l }) {
-                return e instanceof i.com.x.dms.model.MessageItemReceived || e instanceof i.com.x.dms.model.MessageItemSent || e instanceof i.com.x.dms.model.MessageItemPending ? (0, n.jsx)(Me, { messageItem: e, messageFocusedDialog: s, onEvent: t, showMessageInfoDialog: a, messageInfoDialog: r, messageInfoDialogDismissed: o, isVisible: l }) : e instanceof i.com.x.dms.model.SendingStatusItem ? (0, n.jsx)(Ue, { sendingStatusItem: e }) : e instanceof i.com.x.dms.model.InformationalItem ? (0, n.jsx)(S, { informationalItem: e }) : null;
+                return e instanceof i.com.x.dms.model.MessageItemReceived || e instanceof i.com.x.dms.model.MessageItemSent || e instanceof i.com.x.dms.model.MessageItemPending ? (0, n.jsx)(Me, { messageItem: e, messageFocusedDialog: s, onEvent: t, showMessageInfoDialog: a, messageInfoDialog: r, messageInfoDialogDismissed: o, isVisible: l }) : e instanceof i.com.x.dms.model.SendingStatusItem ? (0, n.jsx)($e, { sendingStatusItem: e }) : e instanceof i.com.x.dms.model.InformationalItem ? (0, n.jsx)(S, { informationalItem: e }) : null;
             }
-            const $e = (0, o.memo)(Ae);
+            const Ue = (0, o.memo)(Ae);
             var Te = t(97759);
             const Fe = ({ component: e, numItems: s, composerHeight: t }) => {
                 const { apiRef: a, addOnScrollListener: r } = (0, Se.Nb)(),
@@ -504,33 +492,34 @@
             function Le({ component: e, isTypingIndicatorShown: s, composerHeight: t }) {
                 const c = (0, l._)(e.state),
                     d = (0, o.useMemo)(() => c.chatItems.items.asJsReadonlyArrayView().toReversed(), [c.chatItems]),
-                    m = (0, ze.H)(),
-                    u = (0, o.useRef)(new Map()),
-                    x = c.showingMessageDetailsBottomSheet?.id ?? "",
-                    { apiRef: h, dispatchOnScroll: g } = (0, Se.Nb)(),
-                    p = (0, o.useRef)(!1),
-                    f = (0, o.useMemo)(() => e.observeMessageDetails(x), [e, x]),
-                    j = (0, o.useCallback)(() => {
-                        if (h.current && m) {
+                    m = d[d.length - 1],
+                    u = (0, ze.H)(),
+                    x = (0, o.useRef)(new Map()),
+                    g = c.showingMessageDetailsBottomSheet?.id ?? "",
+                    { apiRef: h, dispatchOnScroll: p } = (0, Se.Nb)(),
+                    f = (0, o.useRef)(!1),
+                    j = (0, o.useMemo)(() => e.observeMessageDetails(g), [e, g]),
+                    v = (0, o.useCallback)(() => {
+                        if (h.current && u) {
                             const s = h.current.findStartIndex(),
                                 t = h.current.findEndIndex(),
                                 n = d
                                     .slice(s, t + 1)
                                     .filter((e) => e instanceof Pe || e instanceof Ve)
                                     .map((e) => e.sequenceNumber);
-                            u.current.clear(), n.forEach((e) => u.current.set(e, !0)), e.onEvent(new i.com.x.dms.chat.DmEvent.VisibleMessagesChanged(t === d.length - 1, Je.fromJsArray(n)));
+                            x.current.clear(), n.forEach((e) => x.current.set(e, !0)), e.onEvent(new i.com.x.dms.chat.DmEvent.VisibleMessagesChanged(t === d.length - 1, Je.fromJsArray(n)));
                         }
-                    }, [e, d, h.current, m]),
-                    v = (0, o.useCallback)(() => {
-                        h.current?.scrollToIndex(d.length - 1, { align: "end", offset: t }), (p.current = !1), j();
-                    }, [d, h.current, j, t]);
+                    }, [e, d, h.current, u]),
+                    w = (0, o.useCallback)(() => {
+                        h.current?.scrollToIndex(d.length - 1, { align: "end", offset: t }), (f.current = !1), v();
+                    }, [d, h.current, v, t]);
                 (0, o.useLayoutEffect)(() => {
-                    p.current || v();
-                }, [d.length, t, s]);
+                    f.current || w();
+                }, [d.length, t, s, m]);
                 const y = (s) => {
                         e.onEvent(s);
                     },
-                    w = (e) => ((e instanceof Pe || e instanceof Ve) && u.current.get(e.sequenceNumber)) ?? !1,
+                    b = (e) => ((e instanceof Pe || e instanceof Ve) && x.current.get(e.sequenceNumber)) ?? !1,
                     N = (0, o.useCallback)(() => {
                         e.onEvent(Ge.MessageDetailsDismissed);
                     }, [e]);
@@ -538,9 +527,9 @@
                     (0, o.useEffect)(() => {
                         if (c.requestScrollTo && h.current) {
                             const e = { align: "center", smooth: !0 };
-                            h.current?.scrollToIndex?.(d.length - c.requestScrollTo.index, e), (p.current = !1), j();
+                            h.current?.scrollToIndex?.(d.length - c.requestScrollTo.index, e), (f.current = !1), v();
                         }
-                    }, [c.requestScrollTo, d, h.current, j]),
+                    }, [c.requestScrollTo, d, h.current, v]),
                     (0, n.jsx)(Z.S, {
                         children: (0, n.jsx)("div", {
                             className: "relative h-full",
@@ -552,16 +541,16 @@
                                               className: "!h-full scrollbar-thin-custom pl-3",
                                               items: d,
                                               onScroll: (e, s) => {
-                                                  h.current && (0 !== e && "backward" === s && d.length - 3 > h.current.findEndIndex() && (p.current = !0), j()), g(e, s);
+                                                  h.current && (0 !== e && "backward" === s && d.length - 3 > h.current.findEndIndex() && (f.current = !0), v()), p(e, s);
                                               },
                                               onNearEnd: () => {
-                                                  p.current = !1;
+                                                  f.current = !1;
                                               },
                                               onAtStart: () => {
                                                   c.chatItems.olderItemsInfo && y(new i.com.x.dms.chat.DmEvent.ScrolledToTop(c.chatItems.olderItemsInfo));
                                               },
                                               renderItem: (e) => {
-                                                  return (0, n.jsx)($e, { chatItem: e, onEvent: y, messageFocusedDialog: ((s = e.id), c.showingMessageFocusedDialog?.message.id === s ? c.showingMessageFocusedDialog : null), showMessageInfoDialog: x === e.id, messageInfoDialog: f, messageInfoDialogDismissed: N, isVisible: w(e) }, e.uniqueKey);
+                                                  return (0, n.jsx)(Ue, { chatItem: e, onEvent: y, messageFocusedDialog: ((s = e.id), c.showingMessageFocusedDialog?.message.id === s ? c.showingMessageFocusedDialog : null), showMessageInfoDialog: g === e.id, messageInfoDialog: j, messageInfoDialogDismissed: N, isVisible: b(e) }, e.uniqueKey);
                                                   var s;
                                               },
                                               startMargin: 64,
@@ -738,20 +727,20 @@
                 m = t(993165),
                 u = t(687521),
                 x = t(983706),
-                h = t(155369),
-                g = t(379342),
+                g = t(155369),
+                h = t(379342),
                 p = t(533476),
                 f = t(658358),
                 j = t(34681),
                 v = t(272795),
-                y = t(620134),
-                w = t(263033);
-            const N = r.com.x.dms.newdm,
-                b = r.com.x.dms.mapToValueList,
+                w = t(620134),
+                y = t(263033);
+            const b = r.com.x.dms.newdm,
+                N = r.com.x.dms.mapToValueList,
                 I = ({ onVisibilityChange: e }) => {
                     const [s, t] = (0, a.useState)(null),
-                        i = (0, h.n)(),
-                        o = (0, g.s)();
+                        i = (0, g.n)(),
+                        o = (0, h.s)();
                     return (
                         (0, a.useEffect)(() => {
                             const s = new r.com.x.export.CancellationSignal(),
@@ -775,16 +764,16 @@
                     );
                 },
                 C = ({ component: e }) => {
-                    const { t: s } = (0, w.$G)(),
+                    const { t: s } = (0, y.$G)(),
                         t = s("Create a group"),
                         a = s("New message"),
-                        h = s("Add people"),
-                        g = (0, p._)(e.state);
+                        g = s("Add people"),
+                        h = (0, p._)(e.state);
                     (0, f.e)(e.toasts);
-                    const I = b(g.selectedGroupUsers).asJsReadonlyArrayView(),
-                        C = g.suggestions.asJsReadonlyArrayView();
+                    const I = N(h.selectedGroupUsers).asJsReadonlyArrayView(),
+                        C = h.suggestions.asJsReadonlyArrayView();
                     const D = (s) => () => {
-                        e.onEvent(new N.NewDmEvent.DeleteSelectedGroupUser(s));
+                        e.onEvent(new b.NewDmEvent.DeleteSelectedGroupUser(s));
                     };
                     return (0, n.jsx)(n.Fragment, {
                         children: (0, n.jsxs)(j.cZ, {
@@ -795,21 +784,21 @@
                                         (0, n.jsxs)("div", {
                                             className: "flex flex-row justify-between items-center gap-2",
                                             children: [
-                                                (0, n.jsxs)("div", { className: "flex flex-col", children: [(0, n.jsx)(j.$N, { className: "text-headline1 font-extrabold", children: (0, n.jsx)(d.x, { children: g.isCreateGroupMode ? t : a }) }), g.isCreateGroupMode && (0, n.jsx)(d.x, { color: "gray700", children: h })] }),
+                                                (0, n.jsxs)("div", { className: "flex flex-col", children: [(0, n.jsx)(j.$N, { className: "text-headline1 font-extrabold", children: (0, n.jsx)(d.x, { children: h.isCreateGroupMode ? t : a }) }), h.isCreateGroupMode && (0, n.jsx)(d.x, { color: "gray700", children: g })] }),
                                                 (0, n.jsx)("button", {
                                                     type: "button",
                                                     onClick: () => {
-                                                        e.onEvent(N.NewDmEvent.BackButtonClicked);
+                                                        e.onEvent(b.NewDmEvent.BackButtonClicked);
                                                     },
                                                     className: "p-1 text-gray-700",
                                                     children: (0, n.jsx)(i.Z, { className: "size-6" }),
                                                 }),
                                             ],
                                         }),
-                                        g.isCreateGroupMode &&
+                                        h.isCreateGroupMode &&
                                             (0, n.jsx)(m.z, {
                                                 onClick: () => {
-                                                    e.onEvent(N.NewDmEvent.CreateButtonClicked);
+                                                    e.onEvent(b.NewDmEvent.CreateButtonClicked);
                                                 },
                                                 variant: "primaryFilled",
                                                 children: s("Next"),
@@ -820,9 +809,9 @@
                                     children: (0, n.jsx)(u._, {
                                         autoFocus: !0,
                                         placeholder: s("Search name or username"),
-                                        value: g.query,
+                                        value: h.query,
                                         onChange: (s) => {
-                                            e.onEvent(new N.NewDmEvent.QueryChanged(s.target.value));
+                                            e.onEvent(new b.NewDmEvent.QueryChanged(s.target.value));
                                         },
                                         borderRadius: "xLarge",
                                         className: "bg-gray-0 focus-within:bg-transparent",
@@ -830,18 +819,18 @@
                                         leftContent: (0, n.jsx)(o.Z, { className: "h-5 w-5 text-gray-700" }),
                                     }),
                                 }),
-                                I.length > 0 && (0, n.jsx)("div", { className: "flex flex-row flex-wrap gap-1 p-1", children: I.map((e) => (0, n.jsx)(y.w, { avatarUrl: e.profileImageUrl, name: e.displayName, onRemove: D(e.id) }, e.id.userIdString)) }),
+                                I.length > 0 && (0, n.jsx)("div", { className: "flex flex-row flex-wrap gap-1 p-1", children: I.map((e) => (0, n.jsx)(w.w, { avatarUrl: e.profileImageUrl, name: e.displayName, onRemove: D(e.id) }, e.id.userIdString)) }),
                                 (0, n.jsxs)("div", {
                                     className: "max-h-[32rem] overflow-hidden",
                                     children: [
-                                        !g.isCreateGroupMode && (0, n.jsxs)("div", { className: "flex flex-row items-center gap-3.5 ps-3 py-2.5 hover:bg-gray-50 cursor-pointer rounded-lg", onClick: () => e.onEvent(N.NewDmEvent.CreateAGroupItemClicked), children: [(0, n.jsx)(l.Z, { className: "text-blue-500 size-6" }), (0, n.jsx)(d.x, { size: "body", color: "blue500", weight: "bold", children: s("Create a group") })] }),
-                                        g.isCreateConversationCallInProgress || 0 === C.length
+                                        !h.isCreateGroupMode && (0, n.jsxs)("div", { className: "flex flex-row items-center gap-3.5 ps-3 py-2.5 hover:bg-gray-50 cursor-pointer rounded-lg", onClick: () => e.onEvent(b.NewDmEvent.CreateAGroupItemClicked), children: [(0, n.jsx)(l.Z, { className: "text-blue-500 size-6" }), (0, n.jsx)(d.x, { size: "body", color: "blue500", weight: "bold", children: s("Create a group") })] }),
+                                        h.isCreateConversationCallInProgress || 0 === C.length
                                             ? (0, n.jsx)("div", { className: "pt-8 h-[24rem]", children: (0, n.jsx)(c.P, {}) })
                                             : (0, n.jsx)(x.T, {
                                                   className: "max-h-[24rem] scrollbar-thin-custom",
                                                   items: C,
                                                   renderItem: function (s) {
-                                                      return (0, n.jsx)(v.c, { onClick: () => e.onEvent(new N.NewDmEvent.SuggestionClicked(s)), suggestion: s, isSelected: s instanceof r.com.x.dms.NewDmSuggestion.User && g.selectedGroupUsers.asJsReadonlyMapView().has(s.user.id) }, s.id);
+                                                      return (0, n.jsx)(v.c, { onClick: () => e.onEvent(new b.NewDmEvent.SuggestionClicked(s)), suggestion: s, isSelected: s instanceof r.com.x.dms.NewDmSuggestion.User && h.selectedGroupUsers.asJsReadonlyMapView().has(s.user.id) }, s.id);
                                                   },
                                               }),
                                     ],
@@ -853,4 +842,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-eca6a814.36d0c6ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-eca6a814.09cc4a2a.js.map

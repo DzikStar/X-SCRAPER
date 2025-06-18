@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.WorkHistory-bc6ccf4c", "icons/IconItalic-js", "icons/IconNumberedList-js"],
+    ["bundle.WorkHistory-bc6ccf4c"],
     {
         751475: (e, t, n) => {
             n.d(t, { Z: () => u });
@@ -11,8 +11,8 @@
                 l = n(190286);
             const i = o().b15c0a18,
                 s = o().aebf81c8,
-                c = o().aa744c1e,
-                d = o().fe04d89a,
+                d = o().aa744c1e,
+                c = o().fe04d89a,
                 u = (e) => {
                     const { children: t, fallbackBackPath: n, history: a, onNavigation: o, shouldBlockNavigation: u, shouldBlockUnload: h } = e,
                         [m, f] = r.useState(void 0);
@@ -52,7 +52,7 @@
                                     }
                                 });
                         }, [n, a, o]);
-                    return r.createElement(r.Fragment, null, t, m ? r.createElement(l.Z, { cancelButtonLabel: c, confirmButtonLabel: d, confirmButtonType: "destructiveFilled", headline: i, onCancel: b, onConfirm: g, text: s }) : null);
+                    return r.createElement(r.Fragment, null, t, m ? r.createElement(l.Z, { cancelButtonLabel: d, confirmButtonLabel: c, confirmButtonType: "destructiveFilled", headline: i, onCancel: b, onConfirm: g, text: s }) : null);
                 };
         },
         260706: (e, t, n) => {
@@ -63,8 +63,8 @@
                 l = n.n(o),
                 i = n(97043),
                 s = n(323265),
-                c = n(731708),
-                d = n(154003),
+                d = n(731708),
+                c = n(154003),
                 u = n(950822),
                 h = n(586855),
                 m = n(855488),
@@ -119,21 +119,21 @@
                 render() {
                     const { errorMessage: e, hideDay: t } = this.props,
                         n = s.ZP.isMobileOS() && !t;
-                    return r.createElement(a.Z, null, n ? this._renderNativeDateInput() : this._renderSelectors(), e ? r.createElement(c.ZP, { color: "red500", id: this._errorID }, e) : null);
+                    return r.createElement(a.Z, null, n ? this._renderNativeDateInput() : this._renderSelectors(), e ? r.createElement(d.ZP, { color: "red500", id: this._errorID }, e) : null);
                 }
                 _renderSelectors() {
-                    const { day: e, month: t, year: n, errors: o = {}, label: l, autofocus: i, monthSelectorTestID: s, daySelectorTestID: c, yearSelectorTestID: m, style: p, minSelectableYear: D, maxSelectableYear: w, withCalendar: k, hideDay: C, disabled: _ } = this.props,
+                    const { day: e, month: t, year: n, errors: o = {}, label: l, autofocus: i, monthSelectorTestID: s, daySelectorTestID: d, yearSelectorTestID: m, style: p, minSelectableYear: D, maxSelectableYear: w, withCalendar: v, hideDay: C, disabled: _ } = this.props,
                         S = h.DD(t, n),
                         $ = h.Zj(D, w, e, t);
-                    return r.createElement(a.Z, { "aria-label": l, role: "group", style: [E.selectorsContainer, p] }, r.createElement(f.ZP, { "aria-describedby": o.month ? this._errorID : void 0, autofocus: i, disabled: _, hasError: o.month, label: g, onChange: this._handleMonthChange, options: this._monthOptions, style: E.monthSelector, testID: s, value: t ? `${t}` : "", withEmptyOption: !0 }), C ? null : r.createElement(f.ZP, { "aria-describedby": o.day ? this._errorID : void 0, disabled: _, hasError: o.day, label: b, onChange: this._handleDayChange, options: S, style: E.daySelector, testID: c, value: e ? `${e}` : "", withEmptyOption: !0 }), r.createElement(f.ZP, { "aria-describedby": o.year ? this._errorID : void 0, disabled: _, hasError: o.year, label: y, onChange: this._handleYearChange, options: $, style: E.yearSelector, testID: m, value: n ? `${n}` : "", withEmptyOption: !0 }), k && r.createElement(a.Z, { role: "label", style: E.calendarLabel }, r.createElement(d.ZP, { "aria-label": "Calendar", icon: v, onPress: this._showCalendarPicker, size: "xLarge", type: "primaryText" }), (0, u.Z)("input", { max: this._nativeMaxDate, min: this._nativeMinDate, name: l, onChange: this._handleDateChange, style: E.nativeDateInput, type: "date", ref: this._setNativeCalendarRef, value: h.ww(e, t, n) })));
+                    return r.createElement(a.Z, { "aria-label": l, role: "group", style: [k.selectorsContainer, p] }, r.createElement(f.ZP, { "aria-describedby": o.month ? this._errorID : void 0, autofocus: i, disabled: _, hasError: o.month, label: g, onChange: this._handleMonthChange, options: this._monthOptions, style: k.monthSelector, testID: s, value: t ? `${t}` : "", withEmptyOption: !0 }), C ? null : r.createElement(f.ZP, { "aria-describedby": o.day ? this._errorID : void 0, disabled: _, hasError: o.day, label: b, onChange: this._handleDayChange, options: S, style: k.daySelector, testID: d, value: e ? `${e}` : "", withEmptyOption: !0 }), r.createElement(f.ZP, { "aria-describedby": o.year ? this._errorID : void 0, disabled: _, hasError: o.year, label: y, onChange: this._handleYearChange, options: $, style: k.yearSelector, testID: m, value: n ? `${n}` : "", withEmptyOption: !0 }), v && r.createElement(a.Z, { role: "label", style: k.calendarLabel }, r.createElement(c.ZP, { "aria-label": "Calendar", icon: E, onPress: this._showCalendarPicker, size: "xLarge", type: "primaryText" }), (0, u.Z)("input", { max: this._nativeMaxDate, min: this._nativeMinDate, name: l, onChange: this._handleDateChange, style: k.nativeDateInput, type: "date", ref: this._setNativeCalendarRef, value: h.ww(e, t, n) })));
                 }
                 _renderNativeDateInput() {
                     const { label: e } = this.props;
-                    return r.createElement(m.Z, { defaultValue: this._nativeDefaultValue, editable: !this.props.disabled, label: e, max: this._nativeMaxDate, min: this._nativeMinDate, name: e, numberOfLines: 1, onChange: this._handleDateChange, style: E.dateInputRoot, type: "date" });
+                    return r.createElement(m.Z, { defaultValue: this._nativeDefaultValue, editable: !this.props.disabled, label: e, max: this._nativeMaxDate, min: this._nativeMinDate, name: e, numberOfLines: 1, onChange: this._handleDateChange, style: k.dateInputRoot, type: "date" });
                 }
             }
-            const v = r.createElement(i.default, null),
-                E = p.default.create((e) => ({ selectorsContainer: { flexDirection: "row", marginVertical: e.spaces.space16 }, monthSelector: { flexGrow: 2, marginEnd: e.spaces.space12 }, daySelector: { flexGrow: 1, marginEnd: e.spaces.space12 }, yearSelector: { flexGrow: 1 }, dateInputRoot: { paddingHorizontal: 0 }, nativeDateInput: { ...p.default.absoluteFillObject, cursor: "inherit", height: "1px", margin: 0, opacity: 0, padding: 0, width: "1px" }, calendarLabel: { justifyContent: "center", marginStart: e.spaces.space12 } }));
+            const E = r.createElement(i.default, null),
+                k = p.default.create((e) => ({ selectorsContainer: { flexDirection: "row", marginVertical: e.spaces.space16 }, monthSelector: { flexGrow: 2, marginEnd: e.spaces.space12 }, daySelector: { flexGrow: 1, marginEnd: e.spaces.space12 }, yearSelector: { flexGrow: 1 }, dateInputRoot: { paddingHorizontal: 0 }, nativeDateInput: { ...p.default.absoluteFillObject, cursor: "inherit", height: "1px", margin: 0, opacity: 0, padding: 0, width: "1px" }, calendarLabel: { justifyContent: "center", marginStart: e.spaces.space12 } }));
         },
         586855: (e, t, n) => {
             n.d(t, { DD: () => $, ZP: () => Z, Zj: () => _, dX: () => C, ww: () => x });
@@ -143,8 +143,8 @@
             const l = 1,
                 i = 2,
                 s = 3,
-                c = 4,
-                d = 5,
+                d = 4,
+                c = 5,
                 u = 6,
                 h = 7,
                 m = 8,
@@ -152,12 +152,12 @@
                 p = 10,
                 b = 11,
                 g = 12,
-                y = { [l]: { label: a().hac89ab0, numDays: 31 }, [i]: { label: a().ef30b30a, numDays: 28, numDaysLeapYear: 29 }, [s]: { label: a().b56920fa, numDays: 31 }, [c]: { label: a().b1a0f1ec, numDays: 30 }, [d]: { label: a().daf779c8, numDays: 31 }, [u]: { label: a().c6ad074e, numDays: 30 }, [h]: { label: a().f1db106c, numDays: 31 }, [m]: { label: a().i4e80b7a, numDays: 31 }, [f]: { label: a().efa6cc1e, numDays: 30 }, [p]: { label: a().f40a0cbe, numDays: 31 }, [b]: { label: a().ac74a31c, numDays: 30 }, [g]: { label: a().i6c1e4b2, numDays: 31 } },
+                y = { [l]: { label: a().hac89ab0, numDays: 31 }, [i]: { label: a().ef30b30a, numDays: 28, numDaysLeapYear: 29 }, [s]: { label: a().b56920fa, numDays: 31 }, [d]: { label: a().b1a0f1ec, numDays: 30 }, [c]: { label: a().daf779c8, numDays: 31 }, [u]: { label: a().c6ad074e, numDays: 30 }, [h]: { label: a().f1db106c, numDays: 31 }, [m]: { label: a().i4e80b7a, numDays: 31 }, [f]: { label: a().efa6cc1e, numDays: 30 }, [p]: { label: a().f40a0cbe, numDays: 31 }, [b]: { label: a().ac74a31c, numDays: 30 }, [g]: { label: a().i6c1e4b2, numDays: 31 } },
                 D = (e) => ({ label: `${e}`, value: `${e}` }),
                 w = (0, o.Z)(1, 29).map(D),
-                v = (0, o.Z)(1, 30).map(D),
-                E = (0, o.Z)(1, 31).map(D),
-                k = (0, o.Z)(1, 32).map(D),
+                E = (0, o.Z)(1, 30).map(D),
+                k = (0, o.Z)(1, 31).map(D),
+                v = (0, o.Z)(1, 32).map(D),
                 C = () => Object.keys(y).map((e) => ({ label: y[e].label, value: e })),
                 _ = (e = 1, t, n, r) => {
                     const a = t || new Date(Date.now()).getFullYear();
@@ -168,16 +168,16 @@
                 },
                 S = (e) => 1 === new Date(e, 1, 29).getMonth(),
                 $ = (e, t) => {
-                    if (!e) return k;
+                    if (!e) return v;
                     switch (2 === e && (!t || (t && S(t))) ? y[e].numDaysLeapYear : y[e].numDays) {
                         case 28:
                             return w;
                         case 29:
-                            return v;
-                        case 30:
                             return E;
-                        default:
+                        case 30:
                             return k;
+                        default:
+                            return v;
                     }
                 },
                 x = (e, t, n) => {
@@ -207,13 +207,13 @@
                 i = n(392237);
             function s({ borderColor: e = "borderColor", isSlim: t = !1, label: n }) {
                 const { isWebRedesign: s } = o.ZP.useProps(),
-                    d = "borderColor" === e || "nestedBorderColor" === e ? c[e] : { backgroundColor: i.default.theme.colors[e] ?? i.default.theme.colors.borderColor };
-                return n ? r.createElement(l.Z, { style: !t && c.root, withGutter: !0 }, r.createElement(a.Z, { style: c.gapColumn }, r.createElement(a.Z, { style: [c.gap, d] })), r.createElement(a.Z, { style: c.gapText }, n), r.createElement(a.Z, { style: c.gapColumn }, r.createElement(a.Z, { style: [c.gap, d] }))) : r.createElement(a.Z, { style: [!t && c.root, s() && c.rootRedesign, c.gap, d] });
+                    c = "borderColor" === e || "nestedBorderColor" === e ? d[e] : { backgroundColor: i.default.theme.colors[e] ?? i.default.theme.colors.borderColor };
+                return n ? r.createElement(l.Z, { style: !t && d.root, withGutter: !0 }, r.createElement(a.Z, { style: d.gapColumn }, r.createElement(a.Z, { style: [d.gap, c] })), r.createElement(a.Z, { style: d.gapText }, n), r.createElement(a.Z, { style: d.gapColumn }, r.createElement(a.Z, { style: [d.gap, c] }))) : r.createElement(a.Z, { style: [!t && d.root, s() && d.rootRedesign, d.gap, c] });
             }
-            const c = i.default.create((e) => ({ borderColor: { backgroundColor: i.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: i.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
+            const d = i.default.create((e) => ({ borderColor: { backgroundColor: i.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: i.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
         },
         885015: (e, t, n) => {
-            n.d(t, { Z: () => c });
+            n.d(t, { Z: () => d });
             var r = n(807896),
                 a = n(202784),
                 o = n(325686),
@@ -227,7 +227,7 @@
             }
             i.defaultProps = { withGutter: !1 };
             const s = l.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
-                c = i;
+                d = i;
         },
         135904: (e, t, n) => {
             n.d(t, { c: () => o, n: () => a });
@@ -244,15 +244,15 @@
                 l = n(595088),
                 i = n(516951),
                 s = n(731708),
-                c = n(779802),
-                d = n(537392),
+                d = n(779802),
+                c = n(537392),
                 u = n(989272),
                 h = n(925873),
                 m = n(202253),
                 f = n(786475),
                 p = n(392237),
                 b = n(135904);
-            const g = { [c.P7.atomic]: { element: "section" }, [c.P7.header1]: { element: "h1", wrapper: r.createElement(s.ZP, null) }, [c.P7.header2]: { element: "h2", wrapper: r.createElement(s.ZP, null) } },
+            const g = { [d.P7.atomic]: { element: "section" }, [d.P7.header1]: { element: "h1", wrapper: r.createElement(s.ZP, null) }, [d.P7.header2]: { element: "h2", wrapper: r.createElement(s.ZP, null) } },
                 y = (0, l.Z)(g).reduce((e, [t, n]) => e.set(t, n), a.DefaultDraftBlockRenderMap);
             let D = !1;
             const w = r.memo(function (e) {
@@ -270,21 +270,21 @@
                                 const n = e.getType();
                                 return t[n] || null;
                             }),
-                        r.createElement(d.ZP, null, ({ containerWidth: e }) => r.createElement(o.Z, { style: v.fontFamily }, r.createElement(a.Editor, { blockRenderMap: y, blockRendererFn: w, blockStyleFn: (0, c.su)(f.Z.isNarrowScreenWidth(e)), editorState: g, onChange: i.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
+                        r.createElement(c.ZP, null, ({ containerWidth: e }) => r.createElement(o.Z, { style: E.fontFamily }, r.createElement(a.Editor, { blockRenderMap: y, blockRendererFn: w, blockStyleFn: (0, d.su)(f.Z.isNarrowScreenWidth(e)), editorState: g, onChange: i.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
                     );
                 }),
-                v = p.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
+                E = p.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
         },
         779802: (e, t, n) => {
-            n.d(t, { $u: () => C, Ak: () => Z, KJ: () => w, LI: () => _, P7: () => b, PW: () => k, QF: () => g, Qm: () => D, Tr: () => S, b$: () => p, db: () => z, et: () => E, fR: () => f, iH: () => $, lD: () => y, su: () => v, u4: () => I, wX: () => x });
+            n.d(t, { $u: () => C, Ak: () => Z, KJ: () => w, LI: () => _, P7: () => b, PW: () => v, QF: () => g, Qm: () => D, Tr: () => S, b$: () => p, db: () => P, et: () => k, fR: () => f, iH: () => $, lD: () => y, su: () => E, u4: () => I, wX: () => x });
             var r = n(202784),
                 a = n(111677),
                 o = n.n(a),
                 l = n(394123),
                 i = n(856661),
                 s = n(69893),
-                c = n(474761),
-                d = n(428259),
+                d = n(474761),
+                c = n(428259),
                 u = n(89085),
                 h = n(630715),
                 m = n(731708);
@@ -295,14 +295,14 @@
                     { buttonTestId: "btn-strikethrough", Icon: s.default, key: f.strikethrough, onPress: e(f.strikethrough) },
                 ],
                 b = { atomic: "atomic", blockquote: "blockquote", bulleted: "unordered-list-item", header1: "header-one", header2: "header-two", numbered: "ordered-list-item", paragraph: "unstyled" },
-                g = (e) => [{ buttonTestId: "btn-blockquote", Icon: c.default, key: b.blockquote, onPress: e(b.blockquote) }],
+                g = (e) => [{ buttonTestId: "btn-blockquote", Icon: d.default, key: b.blockquote, onPress: e(b.blockquote) }],
                 y = (e) => [
-                    { buttonTestId: "btn-ul", Icon: d.default, key: b.bulleted, onPress: e(b.bulleted) },
+                    { buttonTestId: "btn-ul", Icon: c.default, key: b.bulleted, onPress: e(b.bulleted) },
                     { buttonTestId: "btn-ol", Icon: u.default, key: b.numbered, onPress: e(b.numbered) },
                 ],
                 D = "LINK",
                 w = (e) => [{ buttonTestId: "btn-link", Icon: h.default, key: D, onPress: e }],
-                v = (e, t) => (n) => {
+                E = (e, t) => (n) => {
                     const r = (t) => (e ? `${t}-narrow` : t);
                     switch (n.getType()) {
                         case b.bulleted:
@@ -321,36 +321,36 @@
                             return t?.(n) || "";
                     }
                 },
-                E = o().d5a48014,
-                k = o().b92b6156,
+                k = o().d5a48014,
+                v = o().b92b6156,
                 C = o().ec5ed598,
                 _ = ({ children: e, extendedWidth: t, size: n, weight: a }) => r.createElement(m.ZP, { extendedWidth: t, size: n, weight: a }, e),
                 S = { blockType: b.paragraph, label: C, component: _({ size: "body", children: C }) },
-                $ = [{ blockType: b.header1, label: E, component: _({ size: "title1", extendedWidth: !0, children: E }) }, { blockType: b.header2, label: k, component: _({ size: "title3", weight: "heavy", children: k }) }, S],
+                $ = [{ blockType: b.header1, label: k, component: _({ size: "title1", extendedWidth: !0, children: k }) }, { blockType: b.header2, label: v, component: _({ size: "title3", weight: "heavy", children: v }) }, S],
                 x = ["backspace", "backspace-word", "backspace-to-start-of-line"],
                 Z = ["delete", "delete-word", "delete-to-start-of-line"],
                 I = "increase-text-size",
-                z = "decrease-text-size";
+                P = "decrease-text-size";
         },
         779610: (e, t, n) => {
-            n.d(t, { Z: () => d });
+            n.d(t, { Z: () => c });
             var r = n(202784),
                 a = n(325686),
                 o = n(191796),
                 l = n(58399),
                 i = n(731708),
                 s = n(952428),
-                c = n(392237);
-            const d = (e) => {
-                    const { decoration: t, description: n, disabled: d = !1, isActive: h = !1, label: m, link: f, onPress: p, paddingHorizontal: b, renderRightContent: g, role: y = "tab", styleOverride: D, testID: w = "pivot", thumbnail: v, thumbnailSize: E, withoutArrow: k = !1 } = e,
-                        C = [u.thumbnailContainer, "medium" === E && u.thumbnailContainerMedium],
+                d = n(392237);
+            const c = (e) => {
+                    const { decoration: t, description: n, disabled: c = !1, isActive: h = !1, label: m, link: f, onPress: p, paddingHorizontal: b, renderRightContent: g, role: y = "tab", styleOverride: D, testID: w = "pivot", thumbnail: E, thumbnailSize: k, withoutArrow: v = !1 } = e,
+                        C = [u.thumbnailContainer, "medium" === k && u.thumbnailContainerMedium],
                         _ = "string" == typeof m ? r.createElement(i.ZP, null, m) : m,
                         S = "object" == typeof f && f.external && !f.openInSameFrame,
                         $ = n ? ("string" == typeof n ? r.createElement(i.ZP, { color: "gray700", size: "subtext2", testID: `${w}-description` }, n) : n) : null,
-                        x = r.useMemo(() => ("space0" === b ? { paddingHorizontal: 0 } : { paddingHorizontal: b ? c.default.theme.spaces[b] : c.default.theme.componentDimensions.gutterHorizontal }), [b]);
-                    return r.createElement(s.Z, { "aria-selected": "tab" === y ? h : null, disabled: d, link: d ? void 0 : f, onPress: p, role: y, style: [u.root, x, d && u.disabled, D], testID: w, withInteractiveStyling: !!f || !!p }, r.createElement(a.Z, { style: u.contentContainer }, v ? r.createElement(a.Z, { style: C }, v) : null, r.createElement(a.Z, { style: u.content }, _, $), g ? g() : null, (!f && !p) || d || k ? null : S ? r.createElement(o.default, { style: u.icon }) : r.createElement(l.default, { style: u.icon })), t);
+                        x = r.useMemo(() => ("space0" === b ? { paddingHorizontal: 0 } : { paddingHorizontal: b ? d.default.theme.spaces[b] : d.default.theme.componentDimensions.gutterHorizontal }), [b]);
+                    return r.createElement(s.Z, { "aria-selected": "tab" === y ? h : null, disabled: c, link: c ? void 0 : f, onPress: p, role: y, style: [u.root, x, c && u.disabled, D], testID: w, withInteractiveStyling: !!f || !!p }, r.createElement(a.Z, { style: u.contentContainer }, E ? r.createElement(a.Z, { style: C }, E) : null, r.createElement(a.Z, { style: u.content }, _, $), g ? g() : null, (!f && !p) || c || v ? null : S ? r.createElement(o.default, { style: u.icon }) : r.createElement(l.default, { style: u.icon })), t);
                 },
-                u = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
+                u = d.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${d.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
         989272: (e, t, n) => {
             n.d(t, { _i: () => a, fH: () => l, w3: () => o });
@@ -395,14 +395,14 @@
             const i = "draftjs-styles";
             function s(e) {
                 const t = (function (e) {
-                    for (let t = 0; t < c.length; t++) {
-                        if (c[t] === e) return String(t);
+                    for (let t = 0; t < d.length; t++) {
+                        if (d[t] === e) return String(t);
                     }
-                    return c.push(e), String(c.length - 1);
+                    return d.push(e), String(d.length - 1);
                 })(JSON.stringify(e));
                 return `${i}_${t}`;
             }
-            const c = [];
+            const d = [];
         },
         466818: (e, t, n) => {
             n.d(t, { ZP: () => g });
@@ -412,11 +412,11 @@
                 l = n(302752),
                 i = n(183806),
                 s = n(731708),
-                c = n(950822),
-                d = n(224162),
+                d = n(950822),
+                c = n(224162),
                 u = n(392237);
-            const h = r.forwardRef((e, t) => (0, c.Z)("select", { ...e, ref: t })),
-                m = (e) => (0, c.Z)("option", e);
+            const h = r.forwardRef((e, t) => (0, d.Z)("select", { ...e, ref: t })),
+                m = (e) => (0, d.Z)("option", e);
             let f = 1;
             class p extends r.PureComponent {
                 constructor(e) {
@@ -446,36 +446,36 @@
                     this.props.autofocus && this._selectRef && this._selectRef.current && this._selectRef.current.focus();
                 }
                 render() {
-                    const { "aria-describedby": e, disabled: t, errorText: n, hasError: c, helperText: f, options: p, style: g, testID: y, value: D, withEmptyOption: w } = this.props,
-                        { isFocused: v } = this.state,
-                        E = s.ZP.getLanguage(),
-                        k = void 0 === c ? !!n : c,
+                    const { "aria-describedby": e, disabled: t, errorText: n, hasError: d, helperText: f, options: p, style: g, testID: y, value: D, withEmptyOption: w } = this.props,
+                        { isFocused: E } = this.state,
+                        k = s.ZP.getLanguage(),
+                        v = void 0 === d ? !!n : d,
                         C = new Set();
                     n && C.add(this._errorID), e && C.add(e), f && C.add(this._helperID);
                     const _ = C.size ? [...C].join(" ") : void 0;
                     return r.createElement(
                         r.Fragment,
                         null,
-                        r.createElement(d.ZP.Consumer, null, ({ direction: e }) => {
-                            const s = "ja" === E ? u.default.theme.fontFamilies.japan : "rtl" === e || l.Z.isLocaleRTL(E) ? u.default.theme.fontFamilies.rtl : u.default.theme.fontFamilies.normal;
+                        r.createElement(c.ZP.Consumer, null, ({ direction: e }) => {
+                            const s = "ja" === k ? u.default.theme.fontFamilies.japan : "rtl" === e || l.Z.isLocaleRTL(k) ? u.default.theme.fontFamilies.rtl : u.default.theme.fontFamilies.normal;
                             return r.createElement(
                                 a.Z,
-                                { style: [i.Z.border, b.container, t && i.Z.disabled, v && i.Z.focusedBorderValid, k && i.Z.invalidBorderColor, v && k && i.Z.focusedBorderInvalid, g] },
+                                { style: [i.Z.border, b.container, t && i.Z.disabled, E && i.Z.focusedBorderValid, v && i.Z.invalidBorderColor, E && v && i.Z.focusedBorderInvalid, g] },
                                 this._renderLabel(),
                                 r.createElement(
                                     h,
-                                    { "aria-describedby": _, "aria-invalid": k, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: s }, t && i.Z.disabled], testID: y || "", value: D },
+                                    { "aria-describedby": _, "aria-invalid": v, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: s }, t && i.Z.disabled], testID: y || "", value: D },
                                     w ? r.createElement(m, { disabled: !0, style: b.option, value: "" }) : null,
                                     p.map((e) => {
                                         const { disabled: t, label: n, value: a } = e;
                                         return r.createElement(m, { disabled: t, key: `${n}-${a}`, style: b.option, value: a }, n);
                                     }),
                                 ),
-                                r.createElement(o.default, { style: [b.dropdownCaret, v && i.Z.validColor, !(!c && !n) && i.Z.invalidColor] }),
+                                r.createElement(o.default, { style: [b.dropdownCaret, E && i.Z.validColor, !(!d && !n) && i.Z.invalidColor] }),
                             );
                         }),
                         f ? this._renderHelperText() : null,
-                        k && n ? this._renderErrorText() : null,
+                        v && n ? this._renderErrorText() : null,
                     );
                 }
                 _renderLabel() {
@@ -494,32 +494,6 @@
             const b = u.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
                 g = p;
         },
-        856661: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var r = n(202784),
-                a = n(890601),
-                o = n(783427),
-                l = n(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M9 6h3.731L9.184 18H5v2h10v-2h-3.731l3.547-12H19V4H9v2z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const s = i;
-        },
-        89085: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var r = n(202784),
-                a = n(890601),
-                o = n(783427),
-                l = n(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.905 6.516h-.423V4.354h.263c.564-.015 1.018-.126 1.361-.332s.61-.529.8-.972h2.093v7.949H5.471v-4.94c-.351.305-.873.457-1.567.457zm2.194 10.88c.403-.273.69-.542.861-.81.171-.265.257-.566.257-.9 0-.304-.087-.542-.262-.713-.175-.172-.426-.257-.753-.257-.35 0-.623.096-.821.285-.198.19-.297.457-.297.799 0 .145.016.296.046.457l-2.577-.228c-.023-.175-.034-.342-.034-.502 0-.547.16-1.018.479-1.413s.764-.699 1.334-.913c.57-.213 1.224-.319 1.961-.319 1.125 0 2.009.221 2.651.662.643.441.964 1.079.964 1.916 0 .532-.112.998-.336 1.397-.224.399-.584.766-1.078 1.1-.562.381-1.372.768-2.428 1.164H10v1.881H2.542v-1.687c1.642-.806 2.828-1.445 3.558-1.917zM22 6H12v2h10V6zm0 10H12v2h10v-2z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const s = i;
-        },
         98440: (e, t, n) => {
             n.r(t), n.d(t, { default: () => s });
             var r = n(202784),
@@ -532,6 +506,13 @@
             };
             i.metadata = { width: 24, height: 24 };
             const s = i;
+        },
+        465233: (e, t, n) => {
+            n.d(t, { Z: () => a });
+            var r = n(716406);
+            function a(e) {
+                return "object" != typeof e || null === e ? e : Array.isArray(e) ? e.map(a) : (0, r.Z)(e, (e) => a(e));
+            }
         },
         125568: (e, t, n) => {
             n.d(t, { t: () => a });
@@ -551,4 +532,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.WorkHistory-bc6ccf4c.f658e04a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.WorkHistory-bc6ccf4c.4712a9fa.js.map
