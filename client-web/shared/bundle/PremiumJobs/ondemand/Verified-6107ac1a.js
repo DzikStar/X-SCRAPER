@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.PremiumJobs~ondemand.Verified-6107ac1a"],
+    ["shared~bundle.PremiumJobs~ondemand.Verified-6107ac1a", "icons/IconChevronLeft-js"],
     {
         322633: (e, l, a) => {
             a.d(l, { Z: () => t });
@@ -1596,6 +1596,21 @@
                         } catch (e) {}
                 };
         },
+        97301: (e, l, a) => {
+            a.r(l), a.d(l, { default: () => o });
+            var n = a(202784),
+                i = a(890601),
+                r = a(783427),
+                t = a(717683),
+                s = a(347101);
+            const u = (e = {}) => {
+                const l = n.useContext(t.Z),
+                    { direction: a } = (0, r.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, l && s.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M15.043 3.54l1.414 1.42L9.414 12l7.043 7.04-1.414 1.42L6.586 12l8.457-8.46z" })) }, { writingDirection: a });
+            };
+            u.metadata = { width: 24, height: 24 };
+            const o = u;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.PremiumJobs~ondemand.Verified-6107ac1a.7ad7a7aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.PremiumJobs~ondemand.Verified-6107ac1a.77eccc1a.js.map

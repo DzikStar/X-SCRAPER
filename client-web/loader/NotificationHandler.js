@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.NotificationHandler", "icons/IconNotificationsSecurityAlert-js"],
+    ["loader.NotificationHandler"],
     {
         41903: (e, t, n) => {
             n.r(t), n.d(t, { default: () => At });
@@ -20,12 +20,12 @@
                 y = n(720930),
                 _ = n(159340),
                 E = n(597237),
-                h = n(761744),
-                b = n(517890),
+                b = n(761744),
+                h = n(517890),
                 x = n(544367),
-                v = n(453333),
+                C = n(453333),
                 w = n(213279),
-                C = n(121791),
+                v = n(121791),
                 Z = n(902673),
                 k = n(772722),
                 z = n(856151),
@@ -35,17 +35,17 @@
                 P = n(283379),
                 S = n(720600),
                 T = n(933288),
-                j = n(672738),
-                M = n(452693),
-                O = n(520913),
-                H = n(98440),
-                R = n(134878),
+                O = n(672738),
+                j = n(452693),
+                H = n(520913),
+                R = n(98440),
+                M = n(134878),
                 B = n(503089),
                 U = n(278065),
-                F = n(491831),
-                L = n(211971),
-                V = n(792618),
-                N = n(144251),
+                L = n(491831),
+                V = n(211971),
+                N = n(792618),
+                F = n(144251),
                 G = n(80361),
                 Q = n(520489),
                 W = n(791632),
@@ -98,20 +98,20 @@
                 ye = ce.Z.register(pe);
             var _e = n(233040),
                 Ee = n(443781),
-                he = n(686689),
-                be = n(988245),
+                be = n(686689),
+                he = n(988245),
                 xe = n(927389),
-                ve = n(731708);
+                Ce = n(731708);
             const we = ({ focused: e, link: t, onClick: n, template: o }) => {
                     const {
                         aggregateUserActionsV1: { showAllLinkText: l },
                     } = o;
-                    return l && t ? r.createElement(ve.ZP, { id: e ? "notification-show-more-text" : void 0, link: t, onClick: n, style: Ce.showMore }, l) : null;
+                    return l && t ? r.createElement(Ce.ZP, { id: e ? "notification-show-more-text" : void 0, link: t, onClick: n, style: ve.showMore }, l) : null;
                 },
-                Ce = s.default.create((e) => ({ showMore: { marginTop: e.spaces.space12 } }));
+                ve = s.default.create((e) => ({ showMore: { marginTop: e.spaces.space12 } }));
             var Ze = n(530338),
                 ke = n(451051);
-            const ze = ({ focused: e, text: t }) => r.createElement(he.Z, { alignment: t.alignment, color: "gray700", entities: t.entities, id: e ? "notification-additional-context" : void 0, rtl: t.rtl, text: t.text }),
+            const ze = ({ focused: e, text: t }) => r.createElement(be.Z, { alignment: t.alignment, color: "gray700", entities: t.entities, id: e ? "notification-additional-context" : void 0, rtl: t.rtl, text: t.text }),
                 Ie = ({ focused: e, template: t }) => {
                     const { aggregateUserActionsV1: n } = t,
                         { additionalContext: o, targetObjects: l } = n,
@@ -136,53 +136,53 @@
                 Pe = "notification-message-text",
                 Se = "notification-tweet-text",
                 Te = "notification-show-more-text",
-                je = "notification-additional-context",
-                Me = s.default.create((e) => ({ root: { cursor: "pointer", paddingVertical: e.componentDimensions.gutterVertical }, rootRedesign: { paddingHorizontal: e.spaces.space16 }, horizontalPadding: { paddingHorizontal: e.componentDimensions.gutterHorizontal }, reducedHorizontalPadding: { paddingHorizontal: "6px" }, compactContainer: { paddingStart: e.spaces.space8, paddingEnd: e.spaces.space8 }, edgeToEdgeSocialContext: { paddingStart: "10px" }, isTweet: { padding: 0 }, unread: { backgroundColor: e.colors.unreadCellBackground }, itemIcon: { alignItems: "flex-end" }, itemIconRedesign: { alignItems: "flex-start" }, edgeToEdgeItemIcon: { alignItems: "center" }, itemContent: { flexGrow: 1 }, curationControl: { position: "absolute", top: e.componentDimensions.gutterVertical, end: e.componentDimensions.gutterHorizontal }, curationControlRedesign: { end: 0 }, curationPadding: { paddingEnd: e.spaces.space20 }, icon: { height: "2em" }, colorDeepGray: { color: e.colors.gray700 }, colorRed: { color: e.colors.magenta500 }, socialContext: { marginBottom: e.spaces.space4 }, twitterIcon: { color: e.colors.brandColor }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorPlum: { color: e.colors.plum500 }, colorPurple: { color: e.colors.purple500 }, userAvatarList: { marginBottom: e.spaces.space12, paddingEnd: e.spaces.space20 }, timelineRowText: { justifyContent: "center" }, avatarDecoration: { width: "1.2em", height: "1.2em", position: "absolute", top: "1em", end: 0 } })),
-                Oe = Object.freeze([Me.colorPurple, Me.icon]),
-                He = Object.freeze([Me.colorBlue, Me.icon]),
-                Re = Object.freeze([Me.colorRed, Me.icon]),
-                Be = Object.freeze([Me.colorDeepGray, Me.icon]),
-                Ue = Object.freeze([Me.colorGreen, Me.icon]),
-                Fe = Object.freeze([Me.colorOrange, Me.icon]),
-                Le = Object.freeze([Me.colorPlum, Me.icon]),
-                Ve = Object.freeze([Me.colorPrimary, Me.icon]),
-                Ne = Object.freeze([Me.twitterIcon, Me.icon]),
-                Ge = r.createElement(g.default, { style: Oe }),
-                Qe = r.createElement(f.default, { style: He }),
-                We = r.createElement(p.default, { style: He }),
-                Ye = r.createElement(y.default, { style: He }),
-                $e = r.createElement(_.default, { style: He }),
-                qe = r.createElement(E.default, { style: Re }),
-                Je = r.createElement(h.default, { style: Re }),
-                Ke = r.createElement(b.default, { style: Re }),
+                Oe = "notification-additional-context",
+                je = s.default.create((e) => ({ root: { cursor: "pointer", paddingVertical: e.componentDimensions.gutterVertical }, rootRedesign: { paddingHorizontal: e.spaces.space16 }, horizontalPadding: { paddingHorizontal: e.componentDimensions.gutterHorizontal }, reducedHorizontalPadding: { paddingHorizontal: "6px" }, compactContainer: { paddingStart: e.spaces.space8, paddingEnd: e.spaces.space8 }, edgeToEdgeSocialContext: { paddingStart: "10px" }, isTweet: { padding: 0 }, unread: { backgroundColor: e.colors.unreadCellBackground }, itemIcon: { alignItems: "flex-end" }, itemIconRedesign: { alignItems: "flex-start" }, edgeToEdgeItemIcon: { alignItems: "center" }, itemContent: { flexGrow: 1 }, curationControl: { position: "absolute", top: e.componentDimensions.gutterVertical, end: e.componentDimensions.gutterHorizontal }, curationControlRedesign: { end: 0 }, curationPadding: { paddingEnd: e.spaces.space20 }, icon: { height: "2em" }, colorDeepGray: { color: e.colors.gray700 }, colorRed: { color: e.colors.magenta500 }, socialContext: { marginBottom: e.spaces.space4 }, twitterIcon: { color: e.colors.brandColor }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorPlum: { color: e.colors.plum500 }, colorPurple: { color: e.colors.purple500 }, userAvatarList: { marginBottom: e.spaces.space12, paddingEnd: e.spaces.space20 }, timelineRowText: { justifyContent: "center" }, avatarDecoration: { width: "1.2em", height: "1.2em", position: "absolute", top: "1em", end: 0 } })),
+                He = Object.freeze([je.colorPurple, je.icon]),
+                Re = Object.freeze([je.colorBlue, je.icon]),
+                Me = Object.freeze([je.colorRed, je.icon]),
+                Be = Object.freeze([je.colorDeepGray, je.icon]),
+                Ue = Object.freeze([je.colorGreen, je.icon]),
+                Le = Object.freeze([je.colorOrange, je.icon]),
+                Ve = Object.freeze([je.colorPlum, je.icon]),
+                Ne = Object.freeze([je.colorPrimary, je.icon]),
+                Fe = Object.freeze([je.twitterIcon, je.icon]),
+                Ge = r.createElement(g.default, { style: He }),
+                Qe = r.createElement(f.default, { style: Re }),
+                We = r.createElement(p.default, { style: Re }),
+                Ye = r.createElement(y.default, { style: Re }),
+                $e = r.createElement(_.default, { style: Re }),
+                qe = r.createElement(E.default, { style: Me }),
+                Je = r.createElement(b.default, { style: Me }),
+                Ke = r.createElement(h.default, { style: Me }),
                 Xe = r.createElement(x.default, { style: Be }),
-                et = r.createElement(v.default, { style: He }),
-                tt = r.createElement(w.default, { style: Re }),
-                nt = r.createElement(C.default, { style: Be }),
+                et = r.createElement(C.default, { style: Re }),
+                tt = r.createElement(w.default, { style: Me }),
+                nt = r.createElement(v.default, { style: Be }),
                 ot = r.createElement(Z.default, { style: Be }),
-                lt = r.createElement(k.default, { style: Me.icon }),
-                at = r.createElement(z.default, { style: Me.icon }),
-                it = r.createElement(I.default, { style: He }),
-                rt = r.createElement(A.default, { style: He }),
+                lt = r.createElement(k.default, { style: je.icon }),
+                at = r.createElement(z.default, { style: je.icon }),
+                it = r.createElement(I.default, { style: Re }),
+                rt = r.createElement(A.default, { style: Re }),
                 ct = r.createElement(D.default, { style: Be }),
-                st = r.createElement(P.default, { style: He }),
+                st = r.createElement(P.default, { style: Re }),
                 dt = r.createElement(S.default, { style: Ue }),
-                mt = r.createElement(T.default, { style: Me.icon }),
-                ut = r.createElement(j.default, { style: Me.icon }),
-                gt = r.createElement(_e.Z, { style: Me.icon }),
-                ft = r.createElement(M.default, { style: Ve }),
-                pt = r.createElement(O.default, { style: Ne }),
-                yt = r.createElement(H.default, { style: Fe }),
-                _t = r.createElement(R.default, { style: Fe }),
-                Et = r.createElement(B.default, { style: Me.icon }),
-                ht = r.createElement(U.default, { style: Me.icon }),
-                bt = r.createElement(F.default, { style: Le }),
-                xt = r.createElement(L.default, { style: Re }),
-                vt = r.createElement(V.default, { style: He }),
-                wt = r.createElement(N.default, { style: He }),
-                Ct = r.createElement(G.default, { style: Ue }),
-                Zt = r.createElement(Q.default, { style: Me.icon }),
-                kt = { alert_bell_icon: Qe, bar_chart_icon: Ge, bell_icon: Qe, birdwatch_icon: We, bird_icon: pt, briefcase_icon: Ye, coin_icon: at, communities_icon: $e, conversation_bubble_icon: yt, heart_icon: Je, heart_plus_icon: Ke, histogram_icon: ct, lightning_bolt_icon: et, list_icon: Xe, live_icon: tt, lock_icon: nt, magic_rec_icon: pt, milestone_icon: lt, news_icon: ot, person_icon: it, play_icon: rt, promoted_icon: st, radar_stroke_icon: Zt, reply_icon: yt, report_icon: qe, recommendation_icon: mt, retweet_icon: dt, safety_icon: ut, security_alert_icon: Et, security_unknown_icon: ht, shield_icon: _t, spaces_icon: gt, stacked_cards_icon: pt, super_follows_icon: bt, super_follows_error_icon: xt, topic_icon: ft, trending_icon: pt, verified_general_icon: vt, verified_notable_icon: wt, money_icon: Ct },
+                mt = r.createElement(T.default, { style: je.icon }),
+                ut = r.createElement(O.default, { style: je.icon }),
+                gt = r.createElement(_e.Z, { style: je.icon }),
+                ft = r.createElement(j.default, { style: Ne }),
+                pt = r.createElement(H.default, { style: Fe }),
+                yt = r.createElement(R.default, { style: Le }),
+                _t = r.createElement(M.default, { style: Le }),
+                Et = r.createElement(B.default, { style: je.icon }),
+                bt = r.createElement(U.default, { style: je.icon }),
+                ht = r.createElement(L.default, { style: Ve }),
+                xt = r.createElement(V.default, { style: Me }),
+                Ct = r.createElement(N.default, { style: Re }),
+                wt = r.createElement(F.default, { style: Re }),
+                vt = r.createElement(G.default, { style: Ue }),
+                Zt = r.createElement(Q.default, { style: je.icon }),
+                kt = { alert_bell_icon: Qe, bar_chart_icon: Ge, bell_icon: Qe, birdwatch_icon: We, bird_icon: pt, briefcase_icon: Ye, coin_icon: at, communities_icon: $e, conversation_bubble_icon: yt, heart_icon: Je, heart_plus_icon: Ke, histogram_icon: ct, lightning_bolt_icon: et, list_icon: Xe, live_icon: tt, lock_icon: nt, magic_rec_icon: pt, milestone_icon: lt, news_icon: ot, person_icon: it, play_icon: rt, promoted_icon: st, radar_stroke_icon: Zt, reply_icon: yt, report_icon: qe, recommendation_icon: mt, retweet_icon: dt, safety_icon: ut, security_alert_icon: Et, security_unknown_icon: bt, shield_icon: _t, spaces_icon: gt, stacked_cards_icon: pt, super_follows_icon: ht, super_follows_error_icon: xt, topic_icon: ft, trending_icon: pt, verified_general_icon: Ct, verified_notable_icon: wt, money_icon: vt },
                 zt = (e) => {
                     const { featureSwitches: t, history: n } = r.useContext(Ee.rC),
                         [o, l] = r.useState(!1),
@@ -206,21 +206,21 @@
                         E = r.useCallback(() => {
                             l(!1);
                         }, [l]),
-                        { icon: h, message: b, template: x } = f,
-                        v = i.url && (0, X.s9)(i.url),
+                        { icon: b, message: h, template: x } = f,
+                        C = i.url && (0, X.s9)(i.url),
                         w = i.socialContext && i.socialContext.generalContext && i.socialContext.generalContext,
-                        C = s ? r.createElement(xe.Z, { feedbackItems: s }) : null,
+                        v = s ? r.createElement(xe.Z, { feedbackItems: s }) : null,
                         Z = (0, W.HD)(n),
                         k = r.useMemo(() => x.aggregateUserActionsV1.fromUsers.map((e) => e.user).filter(Boolean), [x.aggregateUserActionsV1.fromUsers]),
-                        z = C && !k.length && !w,
-                        I = h && h.id && kt[h.id] ? kt[h.id] : pt,
-                        A = v && ("string" == typeof v ? { pathname: v } : v),
+                        z = v && !k.length && !w,
+                        I = b && b.id && kt[b.id] ? kt[b.id] : pt,
+                        A = C && ("string" == typeof C ? { pathname: C } : C),
                         D = (0, K.hC)("rweb_sourcemap_migration"),
                         P = (0, J.z)(),
-                        S = r.useMemo(() => [Me.root, p ? Me.reducedHorizontalPadding : Me.horizontalPadding, P && Me.rootRedesign, g && Me.unread, Z && Me.compactContainer], [p, P, g, Z]),
-                        T = r.useMemo(() => [Me.itemContent, Me.timelineRowText, z && Me.curationPadding], [z]),
-                        j = Z ? "medium" : void 0;
-                    return r.createElement(d.$6, null, (e) => r.createElement(m.Z, { "aria-labelledby": o ? [Pe, Se, Te, je].join(" ") : void 0, link: A ? e.withAnchorless(A) : void 0, onBlur: E, onClick: y, onFocus: _, role: "article", style: S, testID: De }, w ? r.createElement(be.Z, { avatarSize: j, contextType: w.contextType, link: w.landingUrl ? (0, X.s9)(w.landingUrl) : void 0, style: Me.socialContext, text: w.text }) : null, r.createElement(u.Z, { avatarCell: I, avatarCellStyle: [Me.itemIcon, p && Me.edgeToEdgeItemIcon, D && Me.itemIconRedesign], avatarSize: j, cellStyle: T, style: p && Me.edgeToEdgeSocialContext }, k.length ? r.createElement(c.Z, { style: Me.userAvatarList }, r.createElement(q, { users: k })) : null, r.createElement(he.Z, { alignment: b.alignment, entities: b.entities, id: o ? Pe : void 0, rtl: b.rtl, text: b.text }), r.createElement(Ie, { focused: o, template: x }), r.createElement(we, { focused: o, link: v, template: x })), C ? r.createElement(c.Z, { style: [Me.curationControl, P && Me.curationControlRedesign] }, C) : null));
+                        S = r.useMemo(() => [je.root, p ? je.reducedHorizontalPadding : je.horizontalPadding, P && je.rootRedesign, g && je.unread, Z && je.compactContainer], [p, P, g, Z]),
+                        T = r.useMemo(() => [je.itemContent, je.timelineRowText, z && je.curationPadding], [z]),
+                        O = Z ? "medium" : void 0;
+                    return r.createElement(d.$6, null, (e) => r.createElement(m.Z, { "aria-labelledby": o ? [Pe, Se, Te, Oe].join(" ") : void 0, link: A ? e.withAnchorless(A) : void 0, onBlur: E, onClick: y, onFocus: _, role: "article", style: S, testID: De }, w ? r.createElement(he.Z, { avatarSize: O, contextType: w.contextType, link: w.landingUrl ? (0, X.s9)(w.landingUrl) : void 0, style: je.socialContext, text: w.text }) : null, r.createElement(u.Z, { avatarCell: I, avatarCellStyle: [je.itemIcon, p && je.edgeToEdgeItemIcon, D && je.itemIconRedesign], avatarSize: O, cellStyle: T, style: p && je.edgeToEdgeSocialContext }, k.length ? r.createElement(c.Z, { style: je.userAvatarList }, r.createElement(q, { users: k })) : null, r.createElement(be.Z, { alignment: h.alignment, entities: h.entities, id: o ? Pe : void 0, rtl: h.rtl, text: h.text }), r.createElement(Ie, { focused: o, template: x }), r.createElement(we, { focused: o, link: C, template: x })), v ? r.createElement(c.Z, { style: [je.curationControl, P && je.curationControlRedesign] }, v) : null));
                 },
                 It = (e) => {
                     const t = ((n = e.entry.content.id), (0, te.v9)((e) => ye.selectNotification(e, n), ne.Z));
@@ -254,7 +254,7 @@
                 a = n(952793);
             const i = () => (0, a.hC)("rweb_sourcemap_migration") && (0, l.ZP)() && !o.ZP.isMobileOS();
         },
-        503089: (e, t, n) => {
+        76388: (e, t, n) => {
             n.r(t), n.d(t, { default: () => c });
             var o = n(202784),
                 l = n(890601),
@@ -262,24 +262,11 @@
                 i = n(347101);
             const r = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M23.098 17.97l-8.62-14.93c-.54-.94-1.51-1.5-2.6-1.5h-.02c-1.09 0-2.06.58-2.6 1.53L.888 18c-.53.94-.52 2.06.03 2.99.54.92 1.49 1.47 2.55 1.47h17.07c1.06 0 2.02-.55 2.56-1.48.54-.94.54-2.07 0-3.01z", fill: "#F4212E" }), o.createElement("path", { d: "M11.998 18.89c-.76 0-1.38-.62-1.38-1.38s.62-1.37 1.38-1.37 1.37.61 1.37 1.37-.61 1.38-1.37 1.38zm1.72-9.03l-.93 4.39c-.07.38-.4.64-.79.64s-.71-.26-.8-.64l-.93-4.39c-.1-.52.03-1.06.36-1.47.67-.83 2.07-.83 2.74 0 .33.41.46.95.35 1.47z", fill: "#FFF" })) }, { writingDirection: t });
-            };
-            r.metadata = { width: 24, height: 24 };
-            const c = r;
-        },
-        98440: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => c });
-            var o = n(202784),
-                l = n(890601),
-                a = n(783427),
-                i = n(347101);
-            const r = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: t });
             };
             r.metadata = { width: 24, height: 24 };
             const c = r;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.NotificationHandler.c53622ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.NotificationHandler.f37a7e0a.js.map

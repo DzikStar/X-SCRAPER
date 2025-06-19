@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.DMRichTextCompose", "ondemand.RichText"],
+    ["bundle.DMRichTextCompose", "ondemand.RichText", "icons/IconTicket-js"],
     {
         468032: (e, t, n) => {
             n.d(t, { Z: () => s });
@@ -76,13 +76,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: r, hideBackButton: i, isFullWidth: s, isLarge: c, leftControl: d, middleControl: u, position: p, rightControl: m, secondaryBar: f, style: y, subtitle: g, title: C, titleDomId: b, titleIconCell: x, titleIconCellSize: v, withBackground: w, withWideContainer: _ } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: r, hideBackButton: i, isFullWidth: s, isLarge: c, leftControl: d, middleControl: u, position: p, rightControl: m, secondaryBar: f, style: g, subtitle: y, title: C, titleDomId: b, titleIconCell: x, titleIconCellSize: v, withBackground: w, withWideContainer: _ } = this.props,
                         { isModal: S } = this.context,
                         k = i ? d : o.createElement(a.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         T = (function (e, t, n) {
                             return e && !(t && n);
                         })(!!w, S, !!f);
-                    return o.createElement(o.Fragment, null, o.createElement(l.Z, { centerTitle: t, centeredLogo: n, isFullWidth: s, isLarge: c, leftControl: k, middleControl: u, position: h(p, S, r), rightControl: m, style: y, subtitle: g, title: C, titleDomId: b, titleIconCell: x, titleIconCellSize: v, withBackground: T, withWideContainer: _ }), f || null);
+                    return o.createElement(o.Fragment, null, o.createElement(l.Z, { centerTitle: t, centeredLogo: n, isFullWidth: s, isLarge: c, leftControl: k, middleControl: u, position: h(p, S, r), rightControl: m, style: g, subtitle: y, title: C, titleDomId: b, titleIconCell: x, titleIconCellSize: v, withBackground: T, withWideContainer: _ }), f || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -94,7 +94,7 @@
             (u.contextType = d.Z), (u.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
         222718: (e, t, n) => {
-            n.d(t, { Z: () => g });
+            n.d(t, { Z: () => y });
             var o = n(202784),
                 r = n(325686),
                 i = n(537392),
@@ -108,7 +108,7 @@
                 p = n(715601),
                 m = n(392237);
             const f = m.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...m.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
-            class y extends o.Component {
+            class g extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderChildren = () => {
@@ -128,21 +128,21 @@
                     return o.createElement(o.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: t, TabBar: n, appBarStyle: i, backLocation: s, documentTitle: a, headerless: c, history: u, leftControl: p, middleControl: m, onBackClick: y, rightControl: g, screenType: C, searchBoxOptions: b, secondaryBar: x, showBackButtonOnRoot: v, showSubtitleOnRoot: w, showSubtitleOnWideDetail: _, showTitleOnRoot: S, subtitle: k, title: T, titleIconCell: E, titleIconCellSize: Z, withDetailOpen: B, withSearchBox: I, withTweetButton: F, withWideContainer: P } = this.props,
+                    const { SideNavButton: t, TabBar: n, appBarStyle: i, backLocation: s, documentTitle: a, headerless: c, history: u, leftControl: p, middleControl: m, onBackClick: g, rightControl: y, screenType: C, searchBoxOptions: b, secondaryBar: x, showBackButtonOnRoot: v, showSubtitleOnRoot: w, showSubtitleOnWideDetail: _, showTitleOnRoot: S, subtitle: k, title: T, titleIconCell: E, titleIconCellSize: Z, withDetailOpen: B, withSearchBox: I, withTweetButton: F, withWideContainer: P } = this.props,
                         L = "root" === C,
                         D = "secondaryRoot" === C,
                         R = "primaryDetail" === C,
                         O = (R && _) || (L && w),
                         M = (L && !v) || (R && e),
                         W = (L && !S) || (R && e && !S),
-                        A = L ? l.ey : R ? l.vX : void 0,
-                        K = o.createElement(r.Z, { style: f.appBarContainer }, o.createElement(d.ZP, { backLocation: s, fixed: !1, hideBackButton: M, history: u, leftControl: p, middleControl: m, onBackClick: y, rightControl: g, secondaryBar: x, style: i, subtitle: O ? k : void 0, title: W ? void 0 : T, titleDomId: A, titleIconCell: E, titleIconCellSize: Z, withWideContainer: P })),
-                        N = L || (D && B) ? null : o.createElement(h.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: s, documentTitle: a, headerless: c, middleControl: m, onBackClick: y, rightControl: g, searchBoxOptions: b, subtitle: k, title: T, withSearchBox: I, withTweetButton: F });
-                    return o.createElement(o.Fragment, null, N, K);
+                        z = L ? l.ey : R ? l.vX : void 0,
+                        A = o.createElement(r.Z, { style: f.appBarContainer }, o.createElement(d.ZP, { backLocation: s, fixed: !1, hideBackButton: M, history: u, leftControl: p, middleControl: m, onBackClick: g, rightControl: y, secondaryBar: x, style: i, subtitle: O ? k : void 0, title: W ? void 0 : T, titleDomId: z, titleIconCell: E, titleIconCellSize: Z, withWideContainer: P })),
+                        K = L || (D && B) ? null : o.createElement(h.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: s, documentTitle: a, headerless: c, middleControl: m, onBackClick: g, rightControl: y, searchBoxOptions: b, subtitle: k, title: T, withSearchBox: I, withTweetButton: F });
+                    return o.createElement(o.Fragment, null, K, A);
                 }
             }
-            (y.contextType = u.Z), (y.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0, showBackButtonOnRoot: !1, showTitleOnRoot: !0 });
-            const g = (0, c.ZP)(y);
+            (g.contextType = u.Z), (g.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0, showBackButtonOnRoot: !1, showTitleOnRoot: !0 });
+            const y = (0, c.ZP)(g);
         },
         496364: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -236,15 +236,15 @@
                 p = n(798538),
                 m = n(997174),
                 f = n(390387),
-                y = n(5849),
-                g = n(919022),
+                g = n(5849),
+                y = n(919022),
                 C = n(593953);
             const b = (e, t) => t.match.params.conversationId,
                 x = (e, t) => u.selectConversation(e, b(0, t)),
                 v = (e, t) => p.q9(e, b(0, t)),
                 w = (e, t) => p.W8(e, b(0, t)),
                 _ = (0, h.Z)()
-                    .propsFromState(() => ({ conversation: x, entries: u.selectEntries, conversationId: b, isNewGroupConversation: C.rR, perspective: f._h, newConversationParticipants: C.bZ, tweetAttachment: C.Ss, users: g.ZP.selectAll, isUploading: v, media: w }))
+                    .propsFromState(() => ({ conversation: x, entries: u.selectEntries, conversationId: b, isNewGroupConversation: C.rR, perspective: f._h, newConversationParticipants: C.bZ, tweetAttachment: C.Ss, users: y.ZP.selectAll, isUploading: v, media: w }))
                     .adjustStateProps(({ conversation: e, conversationId: t, entries: n, isNewGroupConversation: o, isUploading: r, media: i, newConversationParticipants: s, perspective: a, tweetAttachment: l, users: c }) => {
                         const h = e?.data;
                         return { conversation: (h && (0, d.lk)(h, n, c)) || void 0, conversationId: t, isNewGroupConversation: o, isUploading: r, media: i, newConversationParticipants: s, perspective: a };
@@ -254,7 +254,7 @@
                             match: {
                                 params: { conversationId: e },
                             },
-                        }) => ({ cancelUpload: (0, C.Ly)(e), removeMedia: (0, C.Xx)(e), setLastViewedDmInboxPath: y.EA, updateTweetDetailNav: m.NH }),
+                        }) => ({ cancelUpload: (0, C.Ly)(e), removeMedia: (0, C.Xx)(e), setLastViewedDmInboxPath: g.EA, updateTweetDetailNav: m.NH }),
                     )
                     .withAnalytics({ page: "messages", section: "thread" });
             n(136728);
@@ -273,10 +273,10 @@
                 O = n(952793),
                 M = n(10656),
                 W = n(198506),
-                A = n(275365),
-                K = n(503115),
-                N = n(356738),
-                z = n(255534),
+                z = n(275365),
+                A = n(503115),
+                K = n(356738),
+                N = n(255534),
                 H = n(276032),
                 V = n(164383);
             const U = P().d4986f86,
@@ -298,16 +298,16 @@
                         return o.createElement(S.Z, { style: X.facePile }, o.createElement(T.Z, { userAvatarSize: "large", userAvatarUrls: n }));
                     },
                     h = (e) => {
-                        const t = i && i.participants.length ? (0, z.E)({ conversation: i, perspective: l }) : a ? (0, z.E)({ newConversationParticipants: a, perspective: l }) : U,
-                            n = i?.participants.length ? o.createElement(z.Z, { conversation: i, perspective: l, textSize: "headline2", withScreenName: !1 }) : a ? o.createElement(z.Z, { newConversationParticipants: a, perspective: l, textSize: "headline2", withScreenName: !1 }) : o.createElement(Z.ZP, { size: "headline2" }, U),
+                        const t = i && i.participants.length ? (0, N.E)({ conversation: i, perspective: l }) : a ? (0, N.E)({ newConversationParticipants: a, perspective: l }) : U,
+                            n = i?.participants.length ? o.createElement(N.Z, { conversation: i, perspective: l, textSize: "headline2", withScreenName: !1 }) : a ? o.createElement(N.Z, { newConversationParticipants: a, perspective: l, textSize: "headline2", withScreenName: !1 }) : o.createElement(Z.ZP, { size: "headline2" }, U),
                             r = i && l ? (0, W.Z)(i, l) : void 0,
                             c = (0, C.NL)(s);
                         let h = "large",
-                            u = l ? o.createElement(K.Z, { conversation: i, perspective: l, size: h, withLock: c }) : void 0;
-                        return r && i?.type === A.eD.GROUP && void 0 === i?.avatar && ((u = ((e) => o.createElement(E.ZP, null, ({ containerWidth: t }) => (M.Z.isTwoColumnLayout(t) ? d(e, G) : d(e, Q))))(r)), (h = "custom")), { ...(e && { titleIconCell: u, titleIconCellSize: h }), title: n, documentTitle: t };
+                            u = l ? o.createElement(A.Z, { conversation: i, perspective: l, size: h, withLock: c }) : void 0;
+                        return r && i?.type === z.eD.GROUP && void 0 === i?.avatar && ((u = ((e) => o.createElement(E.ZP, null, ({ containerWidth: t }) => (M.Z.isTwoColumnLayout(t) ? d(e, G) : d(e, Q))))(r)), (h = "custom")), { ...(e && { titleIconCell: u, titleIconCellSize: h }), title: n, documentTitle: t };
                     },
                     u = () => {
-                        const e = i?.type === A.eD.GROUP,
+                        const e = i?.type === z.eD.GROUP,
                             t = n?.state?.position || 0;
                         return s ? o.createElement(S.Z, { style: X.rightControlStyles }, o.createElement(V.fK, { conversationId: s }), r && o.createElement(H.Z, { conversationId: s }, o.createElement(B.ZP, { "aria-haspopup": "menu", "aria-label": J, hoverLabel: { label: J }, icon: o.createElement(L.default, null), size: "small", style: X.infoButton, type: "primaryText" })), o.createElement(D.Z, { "aria-label": e ? j : q, conversationId: s, link: { pathname: `/messages/${s}/info`, state: { position: t } }, style: X.infoButton })) : void 0;
                     };
@@ -315,20 +315,20 @@
                     R.Z,
                     (() => {
                         const t = h(e.showTitle);
-                        return { backLocation: "/messages", onBackClick: c, rightControl: u(), screenType: "primaryDetail", withBottomTabBar: !1, headerless: !1, secondaryBar: r ? o.createElement(N.Z, null) : void 0, ...t };
+                        return { backLocation: "/messages", onBackClick: c, rightControl: u(), screenType: "primaryDetail", withBottomTabBar: !1, headerless: !1, secondaryBar: r ? o.createElement(K.Z, null) : void 0, ...t };
                     })(),
                     e.children,
                 );
             }
             const X = I.default.create((e) => ({ infoButton: { marginEnd: e.spaces.space4 }, rightControlStyles: { flexDirection: "row" }, facePile: { display: "flex", flexDirection: "row" } }));
-            function Y({ conversationId: e, history: t, location: n, isNewGroupConversation: d = !1, conversation: h, newConversationParticipants: u, perspective: p, richTextInputContext: m, setLastViewedDmInboxPath: f, typeaheadWrapper: y = i.Z }) {
-                const g = (0, a.Z)(e),
+            function Y({ conversationId: e, history: t, location: n, isNewGroupConversation: d = !1, conversation: h, newConversationParticipants: u, perspective: p, richTextInputContext: m, setLastViewedDmInboxPath: f, typeaheadWrapper: g = i.Z }) {
+                const y = (0, a.Z)(e),
                     [C, b] = o.useState(!1),
                     x = (0, l.N)();
                 e || d || n.pathname !== window.location.pathname || t.replace({ pathname: "/messages" });
                 o.useEffect(() => {
-                    e !== g && f(n.pathname);
-                }, [e, n.pathname, g, f]);
+                    e !== y && f(n.pathname);
+                }, [e, n.pathname, y, f]);
                 const v = "string" == typeof n.query.text ? n.query.text : void 0,
                     w = (0, r.Y4)();
                 return o.createElement(
@@ -347,7 +347,7 @@
                             },
                             prefillText: v,
                             richTextInputContext: m,
-                            typeaheadWrapper: y,
+                            typeaheadWrapper: g,
                             typingNotifier: x,
                         }),
                     ),
@@ -419,8 +419,8 @@
                 p = n(682830),
                 m = n(965245),
                 f = n(736063),
-                y = n(725516),
-                g = n(792098),
+                g = n(725516),
+                y = n(792098),
                 C = n(96083);
             const b = ({ checked: e, label: t, onToggleCheck: n, refetch: a }) => {
                     const l = o.useCallback(() => {
@@ -436,11 +436,11 @@
                 return e.id;
             }
             function k({ conversationId: e, footer: t }) {
-                const n = (0, y.z)();
+                const n = (0, g.z)();
                 o.useEffect(() => {
                     n.scribe({ action: "impression" });
                 }, [n]);
-                const [r, i, s] = (0, g.Z)(),
+                const [r, i, s] = (0, y.Z)(),
                     [a] = h()(_),
                     l = r.viewer.user_results.result,
                     c = o.useCallback(
@@ -484,7 +484,7 @@
                 p = n(122375),
                 m = n(835305),
                 f = n(899492);
-            function y(e) {
+            function g(e) {
                 let t;
                 if (e.html)
                     try {
@@ -549,22 +549,22 @@
                                 for (const o of t.blocks)
                                     switch (o.type) {
                                         case p.Wo:
-                                            n.push(g(e, o));
+                                            n.push(y(e, o));
                                             break;
                                         case p.p8:
                                         case p.r$:
                                         case p.Mm:
                                         case p.Z4:
                                         case p.Re:
-                                            if (e.allowExtendedPasteStyles) n.push(g(e, o));
+                                            if (e.allowExtendedPasteStyles) n.push(y(e, o));
                                             else {
                                                 const t = { ...o, type: p.Wo };
-                                                n.push(g(e, t));
+                                                n.push(y(e, t));
                                             }
                                             break;
                                         default: {
                                             const t = { ...o, type: p.Wo };
-                                            n.push(g(e, t));
+                                            n.push(y(e, t));
                                         }
                                     }
                                 return { blocks: n, entityMap: e.longformRichTextTransform ? t.entityMap : {} };
@@ -580,7 +580,7 @@
                     }
                 return !t && e.text && (t = i.ContentState.createFromText(e.text)), t || null;
             }
-            function g(e, t) {
+            function y(e, t) {
                 const n = t.inlineStyleRanges || [],
                     o = [],
                     r = e.longformRichTextTransform ? x : b;
@@ -658,7 +658,7 @@
                             const { multiline: o, onChange: r } = this.props;
                             if (!r) return "not-handled";
                             const { allowExtendedPasteStyles: s, longformRichTextTransform: a, stripPastedStyles: l } = this.props;
-                            let c = y({ text: e, html: t, editorState: n, stripPastedStyles: l, allowExtendedPasteStyles: s, longformRichTextTransform: a });
+                            let c = g({ text: e, html: t, editorState: n, stripPastedStyles: l, allowExtendedPasteStyles: s, longformRichTextTransform: a });
                             if (!c) return "not-handled";
                             if (!o) {
                                 const e = (function (e) {
@@ -725,6 +725,19 @@
                     ),
                 );
         },
+        913313: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => l });
+            var o = n(202784),
+                r = n(890601),
+                i = n(783427),
+                s = n(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M19.77 6.34l-.7.71c-.59.59-1.54.59-2.12 0-.59-.59-.59-1.54 0-2.12l.7-.71L13.76.33.33 13.77l3.89 3.89.7-.71c.59-.59 1.54-.59 2.13 0 .58.59.58 1.54 0 2.12l-.71.71 3.89 3.89 13.43-13.44-3.89-3.89zM6.34 9.88l1.42-1.41 1.76 1.76-1.41 1.42-1.77-1.77zm3 3l1.42-1.41 1.77 1.77-1.42 1.41-1.77-1.77zm4.78 4.78l-1.77-1.77 1.42-1.41 1.76 1.77-1.41 1.41z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const l = a;
+        },
         662678: (e, t, n) => {
             n.d(t, { G: () => r, Z: () => o });
             n(136728);
@@ -743,4 +756,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DMRichTextCompose.0ebc41da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DMRichTextCompose.e2a6a1ba.js.map

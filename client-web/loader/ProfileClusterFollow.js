@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.ProfileClusterFollow", "icons/IconFeedback-js"],
+    ["loader.ProfileClusterFollow", "icons/IconFollowArrows-js"],
     {
         801301: (e) => {
             e.exports = { queryId: "IWdZXQ2Hdh_gprXkyn58ug", operationName: "SidebarUserRecommendations", operationType: "query", metadata: { featureSwitches: ["payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
@@ -454,7 +454,7 @@
                 D = L.default.create((e) => ({ circle: { color: e.colors.primary, width: "0.5em" }, colorDeepGray: { color: e.colors.gray700 }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorRed: { color: e.colors.magenta500 }, grayscaleImage: { borderRadius: e.borderRadii.infinite, filter: "grayscale(100%)" }, brandColor: { color: e.colors.brandColor } })),
                 k = ({ contextType: e, iconColor: t, iconSize: r, link: s, retweetData: n, text: x, topicData: T, userAvatarUrls: Z }) => {
                     const { isSelfRetweet: k, name: Q, screenName: B } = n || {},
-                        M = ((e, t, r, s = []) => {
+                        H = ((e, t, r, s = []) => {
                             const n = A[t],
                                 x = [r ? { color: L.default.theme.colors[r] } : D.colorDeepGray, n],
                                 T = o.createElement(a.default, { style: x }),
@@ -468,10 +468,10 @@
                                 k = o.createElement(h.default, { style: x }),
                                 Q = o.createElement(f.default, { style: x }),
                                 B = o.createElement(y.default, { style: x }),
-                                M = o.createElement(_.default, { style: x }),
-                                H = o.createElement(E.default, { style: x }),
-                                z = o.createElement(w.default, { style: x }),
-                                G = o.createElement(b.default, { style: x }),
+                                H = o.createElement(_.default, { style: x }),
+                                M = o.createElement(E.default, { style: x }),
+                                G = o.createElement(w.default, { style: x }),
+                                z = o.createElement(b.default, { style: x }),
                                 W = o.createElement(C.default, { style: x }),
                                 j = o.createElement(g.default, { style: x }),
                                 $ = o.createElement(S.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: s }),
@@ -502,18 +502,18 @@
                                 case U.Q.Location:
                                     return B;
                                 case U.Q.Community:
-                                    return M;
-                                case U.Q.Spaces:
                                     return H;
+                                case U.Q.Spaces:
+                                    return M;
                                 case U.Q.Sparkle:
-                                    return z;
+                                    return G;
                                 case U.Q.SocialProof:
                                 case U.Q.FollowFollowed:
                                     return j;
                                 case U.Q.FollowMutual:
                                     return W;
                                 case U.Q.FollowFollowing:
-                                    return G;
+                                    return z;
                                 case U.Q.Facepile:
                                     return $;
                                 case U.Q.Bird:
@@ -525,15 +525,15 @@
                         })(e, r, t, Z);
                     switch (e) {
                         case U.Q.Retweet:
-                            return { Icon: M, text: x || N(Q, k), link: B ? `https://twitter.com/${B}` : void 0 };
+                            return { Icon: H, text: x || N(Q, k), link: B ? `https://twitter.com/${B}` : void 0 };
                         case U.Q.Pin:
-                            return { Icon: M, text: x || P };
+                            return { Icon: H, text: x || P };
                         case U.Q.ReplyPin:
-                            return { Icon: M, text: v };
+                            return { Icon: H, text: v };
                         case U.Q.Topic:
-                            return { Icon: M, "aria-label": "Recommendation" === T?.functionalityType || "RecWithEducation" === T?.functionalityType ? F({ topicName: x }) : R({ topicName: x }), text: x ? o.createElement(O, { text: x }) : null, link: s };
+                            return { Icon: H, "aria-label": "Recommendation" === T?.functionalityType || "RecWithEducation" === T?.functionalityType ? F({ topicName: x }) : R({ topicName: x }), text: x ? o.createElement(O, { text: x }) : null, link: s };
                         default:
-                            return { Icon: M, text: x ? o.createElement(O, { text: x }) : null, link: s };
+                            return { Icon: H, text: x ? o.createElement(O, { text: x }) : null, link: s };
                     }
                 };
         },
@@ -583,7 +583,7 @@
             r(202784);
             const o = Object.freeze({ FacepileGroup: "FacepileGroup", Bird: "Bird", Community: "Community", Conversation: "Conversation", Facepile: "Facepile", Feedback: "Feedback", Follow: "Follow", FollowFollowed: "FollowFollowed", FollowFollowing: "FollowFollowing", FollowMutual: "FollowMutual", Like: "Like", List: "List", Location: "Location", Megaphone: "Megaphone", Moment: "Moment", NewTweets: "NewTweets", NewUser: "NewUser", Pin: "Pin", Reply: "Reply", RelatedTweets: "RelatedTweets", ReplyPin: "ReplyPin", Retweet: "Retweet", SmartBlockExpiration: "SmartBlockExpiration", SocialProof: "SocialProof", Spaces: "Spaces", Sparkle: "Sparkle", TextOnly: "TextOnly", Topic: "Topic", Trending: "Trending" });
         },
-        790093: (e, t, r) => {
+        488746: (e, t, r) => {
             "use strict";
             r.r(t), r.d(t, { default: () => i });
             var o = r(202784),
@@ -592,11 +592,11 @@
                 a = r(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: t });
+                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M15.96 1.54L21.41 7l-5.45 5.46-1.42-1.42L17.59 8H3V6h14.59l-3.05-3.04 1.42-1.42zM6.41 18l3.05 3.04-1.42 1.42L2.59 17l5.45-5.46 1.42 1.42L6.41 16H21v2H6.41z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const i = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ProfileClusterFollow.65c5419a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ProfileClusterFollow.65f700ea.js.map

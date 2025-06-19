@@ -124,9 +124,9 @@
                 S = n(111677),
                 C = n.n(S),
                 I = n(952793),
-                G = n(389071),
-                N = n(189953);
-            function P({ children: e, size: a, weight: n }) {
+                N = n(389071),
+                P = n(189953);
+            function G({ children: e, size: a, weight: n }) {
                 return r.createElement(d.Z, { style: T.container }, r.createElement(E.ZP, { size: a, style: T.label, weight: n || "normal" }, r.createElement("span", null, e)));
             }
             const T = y.default.create((e) => ({ container: { position: "relative", width: "fit-content", animationDuration: "0.3s", opacity: 1, animationTimingFunction: "linear", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, label: { color: e.colors.transparent, backgroundColor: e.colors.gray600, backgroundImage: `linear-gradient(to right, ${e.colors.gray600} 0%, ${e.colors.gray900} 20%, ${e.colors.gray500} 40%, ${e.colors.gray600} 100%)`, opacity: 1, display: "inline-block", backgroundClip: "text", animationDuration: "0.7s", backgroundRepeat: "no-repeat", animationIterationCount: "infinite", animationTimingFunction: "linear", animationKeyframes: [{ "0%": { backgroundPositionX: "-2em" }, "100%": { backgroundPositionX: "7em" } }] } })),
@@ -135,12 +135,12 @@
                 B = C().d1d92e40;
             function O() {
                 const e = (0, I.hC)("responsive_web_grok_analyze_animation"),
-                    a = (0, m.v9)(G.Es),
-                    n = (0, G.f)({ conversationKey: a }),
+                    a = (0, m.v9)(N.Es),
+                    n = (0, N.f)({ conversationKey: a }),
                     o = -1 !== (0, m.v9)(n.selectPromptSource)?.indexOf("post_analysis"),
                     t = (0, m.v9)(n.selectStatus),
-                    l = t === N.Q_.TYPING || t === N.Q_.WAITING;
-                return r.createElement(d.Z, { style: F.titleTextRoot }, o && e ? (l ? r.createElement(P, { size: "headline2", weight: "bold" }, `${Z}...`) : r.createElement(E.ZP, { size: "headline2", style: F.animation }, B)) : r.createElement(E.ZP, null, R));
+                    l = t === P.Q_.TYPING || t === P.Q_.WAITING;
+                return r.createElement(d.Z, { style: F.titleTextRoot }, o && e ? (l ? r.createElement(G, { size: "headline2", weight: "bold" }, `${Z}...`) : r.createElement(E.ZP, { size: "headline2", style: F.animation }, B)) : r.createElement(E.ZP, null, R));
             }
             const F = y.default.create((e) => ({ titleTextRoot: { paddingStart: e.spaces.space2, flexGrow: 1, flexShrink: 1 }, animation: { opacity: 1, animationDuration: "2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] } }));
             n(136728);
@@ -203,22 +203,27 @@
             const de = (0, l.Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.23"),
-                        n.e("icons.0"),
-                        n.e("icons.2"),
-                        n.e("icons.16"),
-                        n.e("icons.19"),
-                        n.e("icons.10"),
-                        n.e("icons.13"),
-                        n.e("icons.24"),
-                        n.e("icons.7"),
+                        n.e("icons.5"),
+                        n.e("icons.25"),
                         n.e("icons.22"),
+                        n.e("icons.6"),
+                        n.e("icons.4"),
+                        n.e("icons.9"),
+                        n.e("icons.15"),
+                        n.e("icons.7"),
+                        n.e("icons.3"),
+                        n.e("icons.20"),
+                        n.e("icons.2"),
+                        n.e("icons.18"),
                         n.e("icons.27"),
-                        n.e("icons.17"),
+                        n.e("icons.13"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
+                        n.e("icons.0"),
+                        n.e("icons.24"),
+                        n.e("icons.17"),
+                        n.e("icons.12"),
                         n.e("icons.11"),
-                        n.e("icons.26"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -229,21 +234,17 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
+                        n.e("icons.10"),
                         n.e("icons.8"),
-                        n.e("icons.4"),
-                        n.e("icons.14"),
-                        n.e("icons.28"),
-                        n.e("icons.21"),
-                        n.e("icons.3"),
-                        n.e("icons.1"),
-                        n.e("icons.18"),
+                        n.e("icons.26"),
+                        n.e("icons.19"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
@@ -318,7 +319,6 @@
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-380ace89"),
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
-                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bc6ccf4c"),
                         n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-6107ac1a"),
                         n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-e4e3d8bb"),
                         n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bf286bb5"),
@@ -627,7 +627,7 @@
             }
         },
         623494: (e, a, n) => {
-            n.d(a, { DE: () => m, G$: () => l, HO: () => _, HR: () => I, JO: () => w, Jm: () => x, NH: () => G, RC: () => f, S7: () => C, UV: () => P, Uk: () => M, YI: () => c, YW: () => S, ZY: () => p, az: () => s, c3: () => t, dP: () => g, dd: () => b, eS: () => v, eV: () => A, hf: () => D, hq: () => i, kl: () => y, mm: () => h, op: () => k, pv: () => d, qQ: () => R, u1: () => E, y6: () => u, zC: () => N, zX: () => T });
+            n.d(a, { DE: () => m, G$: () => l, HO: () => _, HR: () => I, JO: () => w, Jm: () => x, NH: () => N, RC: () => f, S7: () => C, UV: () => G, Uk: () => M, YI: () => c, YW: () => S, ZY: () => p, az: () => s, c3: () => t, dP: () => g, dd: () => b, eS: () => v, eV: () => A, hf: () => D, hq: () => i, kl: () => y, mm: () => h, op: () => k, pv: () => d, qQ: () => R, u1: () => E, y6: () => u, zC: () => P, zX: () => T });
             var o = n(163889);
             function r() {
                 return `online:${window.navigator.onLine}|effectiveType:${window.navigator.connection?.effectiveType ?? "unknown"}`;
@@ -710,13 +710,13 @@
             function I(e, a, n) {
                 Z(e)({ element: "grok-card-attachment-follow-up", action: "send", data: { event_info: JSON.stringify({ cardType: a.cardType, variant: a.variant, followUpText: n }) } });
             }
-            function G(e) {
+            function N(e) {
                 Z(e)({ element: "open-grok-memory-drawer", action: "start", data: {} });
             }
-            function N(e, a) {
+            function P(e, a) {
                 Z(e)({ element: "grok-memory-detail", action: "click", data: { event_info: a } });
             }
-            function P(e, a) {
+            function G(e, a) {
                 Z(e)({ element: "grok-memory-forget", action: "click", data: { event_info: a } });
             }
             function T(e, a, n) {
@@ -731,4 +731,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.026438fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.15a342ba.js.map

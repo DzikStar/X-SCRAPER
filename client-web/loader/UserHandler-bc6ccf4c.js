@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.UserHandler-bc6ccf4c", "icons/IconFeedback-js"],
+    ["loader.UserHandler-bc6ccf4c", "icons/IconFollowArrows-js"],
     {
         642153: (e, t, n) => {
             n.d(t, { Z: () => l });
@@ -11,11 +11,11 @@
             const l = (e) => {
                     const { borderColor: t = "cellBackground", borderWidth: n = "small", style: l, userAvatarSize: s = "medium", userAvatarUrls: d, withIncreasedSpacing: u } = e,
                         m = d.length,
-                        h = "transparent" === t;
+                        p = "transparent" === t;
                     return r.createElement(
                         o.Z,
                         { style: [c.root, l, { height: i.default.getSizeStyle(s)?.height }] },
-                        d.map((e, o) => r.createElement(i.default, { backgroundColor: t, borderColor: t, borderWidth: h ? "none" : n, key: o, size: s, style: [0 !== o && { marginStart: -1 * a.default.theme.spacesPx[u ? "space4" : "space12"] }, { zIndex: m - o }], uri: e })),
+                        d.map((e, o) => r.createElement(i.default, { backgroundColor: t, borderColor: t, borderWidth: p ? "none" : n, key: o, size: s, style: [0 !== o && { marginStart: -1 * a.default.theme.spacesPx[u ? "space4" : "space12"] }, { zIndex: m - o }], uri: e })),
                     );
                 },
                 c = a.default.create((e) => ({ root: { flexDirection: "row", flexShrink: 0, overflow: "hidden", flexWrap: "wrap", justifyContent: "center" } }));
@@ -99,8 +99,8 @@
                 d = n(731708),
                 u = n(154003),
                 m = n(173739);
-            const h = l().jcf3e7a2;
-            function p({ animation: e, autoplay: t }) {
+            const p = l().jcf3e7a2;
+            function h({ animation: e, autoplay: t }) {
                 const [n, a] = r.useState(t),
                     [i, l] = r.useState(0);
                 return (
@@ -125,7 +125,7 @@
                             o.Z,
                             { style: f.slider },
                             r.createElement(m.Z, {
-                                "aria-label": h,
+                                "aria-label": p,
                                 max: e.totalFrames,
                                 min: 0,
                                 onChange: function (t) {
@@ -143,7 +143,7 @@
                     s = r.useRef(void 0),
                     d = r.useRef({ animationLoaded: !1 }),
                     u = r.useRef(null),
-                    [m, h] = r.useState(!1);
+                    [m, p] = r.useState(!1);
                 return (
                     r.useEffect(() => {
                         function r(e, t) {
@@ -162,7 +162,7 @@
                                             "function" == typeof l && l(t), r(c, t);
                                         }),
                                         c.addEventListener("DOMLoaded", () => {
-                                            h(!0), t && (c.play(), i && i());
+                                            p(!0), t && (c.play(), i && i());
                                         }),
                                         c.addEventListener("complete", () => {
                                             r(c);
@@ -177,7 +177,7 @@
                             },
                         [s],
                     ),
-                    r.createElement(o.Z, null, r.createElement(o.Z, { style: [e.animationContainerStyle, w.centerAnimation] }, r.createElement("div", { ref: u, style: e.animationStyle }), c && s.current && m && r.createElement(p, { animation: s.current, autoplay: t })))
+                    r.createElement(o.Z, null, r.createElement(o.Z, { style: [e.animationContainerStyle, w.centerAnimation] }, r.createElement("div", { ref: u, style: e.animationStyle }), c && s.current && m && r.createElement(h, { animation: s.current, autoplay: t })))
                 );
             }
             g.Prepare = function () {
@@ -204,7 +204,7 @@
                 i = n(149170),
                 l = n(40644);
             const c = a().gaeb997e;
-            const s = function ({ activeColor: e, label: t = c, Icon: n = i.default, iconSize: o = "normal", isDisabled: a, onClick: s, preventFocusShift: d, renderActionMenu: u, style: m, testID: h, withDarkBackground: p = !1 }) {
+            const s = function ({ activeColor: e, label: t = c, Icon: n = i.default, iconSize: o = "normal", isDisabled: a, onClick: s, preventFocusShift: d, renderActionMenu: u, style: m, testID: p, withDarkBackground: h = !1 }) {
                 const f = r.useCallback(
                         (e) => {
                             e && e.preventDefault(), s && s(e);
@@ -212,7 +212,7 @@
                         [s],
                     ),
                     g = r.useMemo(() => ({ label: t }), [t]);
-                return r.createElement(l.ZP, { Icon: n, activeColor: e || (p ? "white" : void 0), "aria-label": t, backgroundColor: p ? "translucentBlack77" : "transparent", color: p ? "white" : "gray700", hoverLabel: g, iconSize: o, isDisabled: a, onPress: f, preventFocusShift: d, renderMenu: u, style: m, testID: h });
+                return r.createElement(l.ZP, { Icon: n, activeColor: e || (h ? "white" : void 0), "aria-label": t, backgroundColor: h ? "translucentBlack77" : "transparent", color: h ? "white" : "gray700", hoverLabel: g, iconSize: o, isDisabled: a, onPress: f, preventFocusShift: d, renderMenu: u, style: m, testID: p });
             };
         },
         378729: (e, t, n) => {
@@ -227,8 +227,8 @@
             const d = i().f1a1b791,
                 u = i().if2bf8b4,
                 m = i().f3624b5c,
-                h = i().b4b3b113,
-                p = i().be222050,
+                p = i().b4b3b113,
+                h = i().be222050,
                 f = i().hcbbe447;
             class g extends r.Component {
                 render() {
@@ -245,7 +245,7 @@
                         y = !(!r || "ISSUE" !== r.disclaimerType) || s,
                         { removePromotedAttributionForPreroll: b } = r || {};
                     let w;
-                    return (w = t || (!a || l || b ? (g ? m : y ? p : u) : g ? h({ fullName: a }) : y ? f({ fullName: a }) : d({ fullName: a }))), w;
+                    return (w = t || (!a || l || b ? (g ? m : y ? h : u) : g ? p({ fullName: a }) : y ? f({ fullName: a }) : d({ fullName: a }))), w;
                 }
             }
             g.defaultProps = { color: "gray700" };
@@ -283,8 +283,8 @@
                 const t = "0.3s";
                 m[e] = { active: { transitionProperty: "transform", transitionDuration: t, transform: "translate3d(0, 0, 0)" }, pre: { transform: `translate3d(0, ${e === s ? "100%" : "-100%"}, 0)` }, post: { transform: `translate3d(0, ${e === s ? "-100%" : "100%"}, 0)`, transitionProperty: "transform", transitionDuration: t } };
             });
-            const h = { position: "absolute" },
-                p = c.default.create({ root: { overflow: "hidden" } }),
+            const p = { position: "absolute" },
+                h = c.default.create({ root: { overflow: "hidden" } }),
                 f = (e) => {
                     const { children: t, containerStyle: n, count: c, ...d } = e,
                         [f, g] = r.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: s }),
@@ -321,11 +321,11 @@
                             const e = m[f.transitionDirection],
                                 t = f.oldText && !i.Z.reducedMotionEnabled,
                                 a = !f.animating && f.oldText && !i.Z.reducedMotionEnabled,
-                                c = { ...h, ...(f.animating ? e.post : e.active) },
+                                c = { ...p, ...(f.animating ? e.post : e.active) },
                                 s = { ...(a ? e.pre : e.active) };
                             return r.createElement(
                                 o.Z,
-                                { style: [p.root, n] },
+                                { style: [h.root, n] },
                                 t ? r.createElement("span", { style: c }, r.createElement(l.ZP, d, f.oldText)) : null,
                                 r.createElement(
                                     "span",
@@ -345,7 +345,7 @@
                 };
         },
         537439: (e, t, n) => {
-            n.d(t, { Z: () => H });
+            n.d(t, { Z: () => Q });
             var r = n(202784),
                 o = n(111677),
                 a = n.n(o),
@@ -356,8 +356,8 @@
                 d = n(453333),
                 u = n(136483),
                 m = n(98440),
-                h = n(790093),
-                p = n(452693),
+                p = n(790093),
+                h = n(452693),
                 f = n(544367),
                 g = n(264171),
                 y = n(159340),
@@ -365,20 +365,20 @@
                 w = n(262009),
                 C = n(76388),
                 E = n(488746),
-                v = n(246492),
-                x = n(520913),
+                x = n(246492),
+                v = n(520913),
                 Z = n(731708),
-                k = n(642153),
-                S = n(879891),
+                S = n(642153),
+                k = n(879891),
                 P = n(392237),
                 T = n(54606);
             const B = a().ae408b76,
-                F = a().j355f008,
-                L = a().habf9678,
+                L = a().j355f008,
+                F = a().habf9678,
                 D = a().db0798ed,
                 I = a().dc716ec9,
                 R = ({ text: e }) => {
-                    const { direction: t } = (0, S.Z)();
+                    const { direction: t } = (0, k.Z)();
                     return r.createElement(Z.ZP, { dir: t, withHashflags: !0 }, e);
                 },
                 _ = (e, t) =>
@@ -389,41 +389,41 @@
                               return r.createElement(a().I18NFormatMessage, { $i18n: "fcd931ed" }, t);
                           })(e),
                 A = P.default.create((e) => ({ small: { height: e.lineHeights.subtext3, width: e.lineHeights.subtext3 }, medium: { height: e.spaces.space48, width: e.spaces.space48 }, large: { height: e.lineHeights.subtext2, width: e.lineHeights.subtext2 }, xLarge: { height: e.lineHeights.subtext1, width: e.lineHeights.subtext1 }, xxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 }, xxxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 } })),
-                z = P.default.create((e) => ({ circle: { color: e.colors.primary, width: "0.5em" }, colorDeepGray: { color: e.colors.gray700 }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorRed: { color: e.colors.magenta500 }, grayscaleImage: { borderRadius: e.borderRadii.infinite, filter: "grayscale(100%)" }, brandColor: { color: e.colors.brandColor } })),
-                H = ({ contextType: e, iconColor: t, iconSize: n, link: o, retweetData: a, text: Z, topicData: S, userAvatarUrls: B }) => {
-                    const { isSelfRetweet: H, name: M, screenName: W } = a || {},
-                        Q = ((e, t, n, o = []) => {
+                W = P.default.create((e) => ({ circle: { color: e.colors.primary, width: "0.5em" }, colorDeepGray: { color: e.colors.gray700 }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorRed: { color: e.colors.magenta500 }, grayscaleImage: { borderRadius: e.borderRadii.infinite, filter: "grayscale(100%)" }, brandColor: { color: e.colors.brandColor } })),
+                Q = ({ contextType: e, iconColor: t, iconSize: n, link: o, retweetData: a, text: Z, topicData: k, userAvatarUrls: B }) => {
+                    const { isSelfRetweet: Q, name: z, screenName: H } = a || {},
+                        M = ((e, t, n, o = []) => {
                             const a = A[t],
-                                Z = [n ? { color: P.default.theme.colors[n] } : z.colorDeepGray, a],
-                                S = r.createElement(i.default, { style: Z }),
+                                Z = [n ? { color: P.default.theme.colors[n] } : W.colorDeepGray, a],
+                                k = r.createElement(i.default, { style: Z }),
                                 B = r.createElement(l.default, { style: Z }),
-                                F = r.createElement(c.default, { style: Z }),
-                                L = r.createElement(s.default, { style: Z }),
+                                L = r.createElement(c.default, { style: Z }),
+                                F = r.createElement(s.default, { style: Z }),
                                 D = r.createElement(d.default, { style: Z }),
-                                I = r.createElement(u.default, { style: z.circle }),
+                                I = r.createElement(u.default, { style: W.circle }),
                                 R = r.createElement(m.default, { style: Z }),
-                                _ = r.createElement(h.default, { style: Z }),
-                                H = r.createElement(p.default, { style: Z }),
-                                M = r.createElement(f.default, { style: Z }),
-                                W = r.createElement(g.default, { style: Z }),
-                                Q = r.createElement(y.default, { style: Z }),
+                                _ = r.createElement(p.default, { style: Z }),
+                                Q = r.createElement(h.default, { style: Z }),
+                                z = r.createElement(f.default, { style: Z }),
+                                H = r.createElement(g.default, { style: Z }),
+                                M = r.createElement(y.default, { style: Z }),
                                 N = r.createElement(b.default, { style: Z }),
                                 j = r.createElement(w.default, { style: Z }),
-                                V = r.createElement(C.default, { style: Z }),
-                                $ = r.createElement(E.default, { style: Z }),
-                                U = r.createElement(v.default, { style: Z }),
-                                O = r.createElement(k.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: o }),
-                                G = r.createElement(x.default, { style: Z });
+                                $ = r.createElement(C.default, { style: Z }),
+                                U = r.createElement(E.default, { style: Z }),
+                                V = r.createElement(x.default, { style: Z }),
+                                O = r.createElement(S.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: o }),
+                                G = r.createElement(v.default, { style: Z });
                             switch (e) {
                                 case T.Q.Pin:
                                 case T.Q.ReplyPin:
-                                    return S;
+                                    return k;
                                 case T.Q.Retweet:
                                     return B;
                                 case T.Q.Like:
-                                    return F;
-                                case T.Q.Follow:
                                     return L;
+                                case T.Q.Follow:
+                                    return F;
                                 case T.Q.Moment:
                                     return D;
                                 case T.Q.NewTweets:
@@ -434,24 +434,24 @@
                                 case T.Q.Feedback:
                                     return _;
                                 case T.Q.Topic:
-                                    return H;
-                                case T.Q.List:
-                                    return M;
-                                case T.Q.Location:
-                                    return W;
-                                case T.Q.Community:
                                     return Q;
+                                case T.Q.List:
+                                    return z;
+                                case T.Q.Location:
+                                    return H;
+                                case T.Q.Community:
+                                    return M;
                                 case T.Q.Spaces:
                                     return N;
                                 case T.Q.Sparkle:
                                     return j;
                                 case T.Q.SocialProof:
                                 case T.Q.FollowFollowed:
-                                    return U;
-                                case T.Q.FollowMutual:
-                                    return $;
-                                case T.Q.FollowFollowing:
                                     return V;
+                                case T.Q.FollowMutual:
+                                    return U;
+                                case T.Q.FollowFollowing:
+                                    return $;
                                 case T.Q.Facepile:
                                     return O;
                                 case T.Q.Bird:
@@ -463,15 +463,15 @@
                         })(e, n, t, B);
                     switch (e) {
                         case T.Q.Retweet:
-                            return { Icon: Q, text: Z || _(M, H), link: W ? `https://twitter.com/${W}` : void 0 };
+                            return { Icon: M, text: Z || _(z, Q), link: H ? `https://twitter.com/${H}` : void 0 };
                         case T.Q.Pin:
-                            return { Icon: Q, text: Z || F };
+                            return { Icon: M, text: Z || L };
                         case T.Q.ReplyPin:
-                            return { Icon: Q, text: L };
+                            return { Icon: M, text: F };
                         case T.Q.Topic:
-                            return { Icon: Q, "aria-label": "Recommendation" === S?.functionalityType || "RecWithEducation" === S?.functionalityType ? I({ topicName: Z }) : D({ topicName: Z }), text: Z ? r.createElement(R, { text: Z }) : null, link: o };
+                            return { Icon: M, "aria-label": "Recommendation" === k?.functionalityType || "RecWithEducation" === k?.functionalityType ? I({ topicName: Z }) : D({ topicName: Z }), text: Z ? r.createElement(R, { text: Z }) : null, link: o };
                         default:
-                            return { Icon: Q, text: Z ? r.createElement(R, { text: Z }) : null, link: o };
+                            return { Icon: M, text: Z ? r.createElement(R, { text: Z }) : null, link: o };
                     }
                 };
         },
@@ -488,31 +488,31 @@
                 d = n(488684),
                 u = n(537439),
                 m = n(54606);
-            class h extends r.PureComponent {
+            class p extends r.PureComponent {
                 render() {
-                    const { avatarSize: e, bottomControl: t, iconStyle: n, id: c, onLayout: s, rightControl: d, style: m, testID: h, textColor: f, textSize: g, topControl: y, weight: b, withBottomBorder: w, withLeftPadding: C, withTextCentered: E, ...v } = this.props,
-                        { Icon: x, "aria-label": Z, link: k, text: S } = (0, u.Z)(v),
-                        P = r.createElement(a.ZP, { "aria-label": Z, color: f, id: c, numberOfLines: 2, size: g, testID: h, weight: b, withoutTwemojiAndHashflags: !0 }, S),
+                    const { avatarSize: e, bottomControl: t, iconStyle: n, id: c, onLayout: s, rightControl: d, style: m, testID: p, textColor: f, textSize: g, topControl: y, weight: b, withBottomBorder: w, withLeftPadding: C, withTextCentered: E, ...x } = this.props,
+                        { Icon: v, "aria-label": Z, link: S, text: k } = (0, u.Z)(x),
+                        P = r.createElement(a.ZP, { "aria-label": Z, color: f, id: c, numberOfLines: 2, size: g, testID: p, weight: b, withoutTwemojiAndHashflags: !0 }, k),
                         { cellStyle: T, viewStyle: B } = this._getStyles();
-                    return S ? r.createElement(l.ZP.UseProps, null, (a) => r.createElement(r.Fragment, null, y || null, r.createElement(o.Z, { onLayout: s, style: [m, B, a.socialContextRefreshEnabled() && !C && p.socialContextRefresh] }, r.createElement(i.Z, { avatarCell: x || (C ? null : void 0), avatarCellStyle: [n, p.socialContextIconColumn, !C && p.unsetIconWidth, a.socialContextRefreshEnabled() && !C && p.socialContextRefreshIcon], avatarSize: e, cellStyle: T }, r.createElement(o.Z, { style: p.cellWrapper }, r.createElement(o.Z, { style: [p.socialContextTextColumn, a.socialContextRefreshEnabled() && !C && p.socialContextRefreshTextColumn] }, k ? this._renderLink(k, P) : P), d || null)), t || null))) : null;
+                    return k ? r.createElement(l.ZP.UseProps, null, (a) => r.createElement(r.Fragment, null, y || null, r.createElement(o.Z, { onLayout: s, style: [m, B, a.socialContextRefreshEnabled() && !C && h.socialContextRefresh] }, r.createElement(i.Z, { avatarCell: v || (C ? null : void 0), avatarCellStyle: [n, h.socialContextIconColumn, !C && h.unsetIconWidth, a.socialContextRefreshEnabled() && !C && h.socialContextRefreshIcon], avatarSize: e, cellStyle: T }, r.createElement(o.Z, { style: h.cellWrapper }, r.createElement(o.Z, { style: [h.socialContextTextColumn, a.socialContextRefreshEnabled() && !C && h.socialContextRefreshTextColumn] }, S ? this._renderLink(S, P) : P), d || null)), t || null))) : null;
                 }
                 _renderLink(e, t) {
                     const { contextType: n, id: o, onClick: i, retweetData: l, textColor: c, topicData: u } = this.props,
-                        { screenName: h } = l || {},
-                        p = r.createElement(a.ZP, { color: c, id: o, link: e, onClick: i, withoutTwemojiAndHashflags: !0 }, t);
-                    return n === m.Q.Topic && u ? r.createElement(s.Z, { topicId: u.topicId }, p) : n === m.Q.Retweet && h ? r.createElement(d.Z, { screenName: h }, p) : p;
+                        { screenName: p } = l || {},
+                        h = r.createElement(a.ZP, { color: c, id: o, link: e, onClick: i, withoutTwemojiAndHashflags: !0 }, t);
+                    return n === m.Q.Topic && u ? r.createElement(s.Z, { topicId: u.topicId }, h) : n === m.Q.Retweet && p ? r.createElement(d.Z, { screenName: p }, h) : h;
                 }
                 _getStyles() {
                     const { bottomControl: e, contextType: t, withBottomBorder: n, withTextCentered: r } = this.props,
                         o = t === m.Q.TextOnly,
-                        a = n ? [p.bottomBorderMargin, !!e && p.bottomBorder] : [],
-                        i = n && !e ? [p.bottomBorder] : [];
-                    return o && i.push(p.topicContext), r && i.push(p.socialContextTextCentered), { viewStyle: a, cellStyle: i };
+                        a = n ? [h.bottomBorderMargin, !!e && h.bottomBorder] : [],
+                        i = n && !e ? [h.bottomBorder] : [];
+                    return o && i.push(h.topicContext), r && i.push(h.socialContextTextCentered), { viewStyle: a, cellStyle: i };
                 }
             }
-            h.defaultProps = { iconSize: "small", textColor: "gray700", textSize: "subtext2", withBottomBorder: !1, withLeftPadding: !0, withTextCentered: !1 };
-            const p = c.default.create((e) => ({ socialContextIconColumn: { alignItems: "flex-end", justifyContent: "center" }, bottomBorderMargin: { marginBottom: e.componentDimensions.gutterVertical }, cellWrapper: { flexDirection: "row" }, bottomBorder: { paddingBottom: e.spaces.space4, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor }, topicContext: { paddingBottom: `calc(${e.spaces.space4} + ${e.spaces.space2})` }, socialContextTextColumn: { alignItems: "flex-start", flexShrink: 1, justifyContent: "center" }, unsetIconWidth: { flexBasis: "unset" }, socialContextRefreshIcon: { marginEnd: e.spaces.space8 }, socialContextRefresh: { marginBottom: e.spaces.space8 }, socialContextRefreshTextColumn: { minHeight: e.spaces.space32 }, socialContextTextCentered: { justifyContent: "center" } })),
-                f = h;
+            p.defaultProps = { iconSize: "small", textColor: "gray700", textSize: "subtext2", withBottomBorder: !1, withLeftPadding: !0, withTextCentered: !1 };
+            const h = c.default.create((e) => ({ socialContextIconColumn: { alignItems: "flex-end", justifyContent: "center" }, bottomBorderMargin: { marginBottom: e.componentDimensions.gutterVertical }, cellWrapper: { flexDirection: "row" }, bottomBorder: { paddingBottom: e.spaces.space4, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor }, topicContext: { paddingBottom: `calc(${e.spaces.space4} + ${e.spaces.space2})` }, socialContextTextColumn: { alignItems: "flex-start", flexShrink: 1, justifyContent: "center" }, unsetIconWidth: { flexBasis: "unset" }, socialContextRefreshIcon: { marginEnd: e.spaces.space8 }, socialContextRefresh: { marginBottom: e.spaces.space8 }, socialContextRefreshTextColumn: { minHeight: e.spaces.space32 }, socialContextTextCentered: { justifyContent: "center" } })),
+                f = p;
         },
         54606: (e, t, n) => {
             n.d(t, { Q: () => r });
@@ -520,7 +520,7 @@
             const r = Object.freeze({ FacepileGroup: "FacepileGroup", Bird: "Bird", Community: "Community", Conversation: "Conversation", Facepile: "Facepile", Feedback: "Feedback", Follow: "Follow", FollowFollowed: "FollowFollowed", FollowFollowing: "FollowFollowing", FollowMutual: "FollowMutual", Like: "Like", List: "List", Location: "Location", Megaphone: "Megaphone", Moment: "Moment", NewTweets: "NewTweets", NewUser: "NewUser", Pin: "Pin", Reply: "Reply", RelatedTweets: "RelatedTweets", ReplyPin: "ReplyPin", Retweet: "Retweet", SmartBlockExpiration: "SmartBlockExpiration", SocialProof: "SocialProof", Spaces: "Spaces", Sparkle: "Sparkle", TextOnly: "TextOnly", Topic: "Topic", Trending: "Trending" });
         },
         181054: (e, t, n) => {
-            n.d(t, { Z: () => p });
+            n.d(t, { Z: () => h });
             var r = n(807896),
                 o = n(202784),
                 a = n(325686),
@@ -535,7 +535,7 @@
             }
             const m = "space-gradient";
             u.fill = `url(#${m})`;
-            const h = {
+            const p = {
                     Default: function ({ children: e, style: t, type: n = "audiospace" }) {
                         return o.createElement(
                             i.Z,
@@ -572,7 +572,7 @@
                     getColors: c.ai,
                     getDarkModeColors: c.K,
                 },
-                p = Object.freeze(h);
+                h = Object.freeze(p);
         },
         977220: (e, t, n) => {
             n.d(t, { Cs: () => d, K: () => l, ai: () => c });
@@ -592,9 +592,9 @@
             }
             const u = { Default: { audiospace: { primary: "#2D42FF", secondary: "#9C63FA" }, livevideo: { primary: "#F91880", secondary: "#F91880" } }, HighContrast: { audiospace: { primary: "#2C3CEF", secondary: "#8439FF" }, livevideo: { primary: "#890A46", secondary: "#890A46" } } };
             function m(e) {
-                return { primary: h(e.primary), secondary: h(e.secondary) };
+                return { primary: p(e.primary), secondary: p(e.secondary) };
             }
-            function h(e) {
+            function p(e) {
                 const t = a.xO(e),
                     n = o.$n({ color: t, coefficient: 0.5 });
                 return a.vq(a.rb(n)).slice(0, -2);
@@ -612,12 +612,12 @@
                 d = n(491915),
                 u = n(392237),
                 m = n(551611),
-                h = n(111677),
-                p = n.n(h),
+                p = n(111677),
+                h = n.n(p),
                 f = n(891198),
                 g = n(537392),
                 y = n(280278);
-            const b = p().e8d93005,
+            const b = h().e8d93005,
                 w = u.default.create((e) => ({ count: { paddingHorizontal: e.spacesPx.space4, minWidth: `calc(1em + 2 * ${e.spaces.space12})` }, narrowCount: { paddingEnd: 0, paddingStart: e.spacesPx.space4, minWidth: `calc(1em + ${e.spaces.space4})` } })),
                 C = ({ color: e, count: t }) => {
                     const n = (0, f.wl)(t, !0);
@@ -636,15 +636,15 @@
                         (this._renderButton = (e) => {
                             const { activeColor: t, backgroundColor: n, hoverLabel: o, iconSize: a, isActive: i, isDisabled: s, showBackgroundWhenActive: d } = this.props,
                                 m = l.Z.generate({ backgroundColor: u.default.theme.colors[n], color: u.default.theme.colors[t], insetFocusRing: !0 }),
-                                h = d && i && !e?.isHovered;
-                            return r.createElement(c.Z, { hoverLabel: o, interactiveStyles: m, interactivityState: e, style: [u.default.absoluteFill, x[h ? "haloBackground" : n], !s && Z.iconBackground, "small" === a && Z.iconSmallBoundingBox, h && Z.haloBoundingBox] });
+                                p = d && i && !e?.isHovered;
+                            return r.createElement(c.Z, { hoverLabel: o, interactiveStyles: m, interactivityState: e, style: [u.default.absoluteFill, v[p ? "haloBackground" : n], !s && Z.iconBackground, "small" === a && Z.iconSmallBoundingBox, p && Z.haloBoundingBox] });
                         }),
                         (this._renderIcon = () => {
-                            const { ActiveIcon: e, iconSize: t, isActive: n, isDisabled: o, isFaded: i, onAnimationEnd: l, onAnimationStart: c, onError: s, showAnimation: h, transitionAnimationUrl: p } = this.props;
-                            if (!u.default.theme.highContrastEnabled && !a.Z.reducedMotionEnabled && e && h) return r.createElement(d.ZP, { animation: p || m.Bf, animationContainerStyle: v[t], animationStyle: S, onAnimationEnd: l, onAnimationStart: c, onError: s });
+                            const { ActiveIcon: e, iconSize: t, isActive: n, isDisabled: o, isFaded: i, onAnimationEnd: l, onAnimationStart: c, onError: s, showAnimation: p, transitionAnimationUrl: h } = this.props;
+                            if (!u.default.theme.highContrastEnabled && !a.Z.reducedMotionEnabled && e && p) return r.createElement(d.ZP, { animation: h || m.Bf, animationContainerStyle: x[t], animationStyle: k, onAnimationEnd: l, onAnimationStart: c, onError: s });
                             {
                                 const a = n && e ? e : this.props.Icon;
-                                return r.createElement(a, { style: [v[t], !o && i && Z.iconFaded] });
+                                return r.createElement(a, { style: [x[t], !o && i && Z.iconFaded] });
                             }
                         }),
                         (this._renderCount = () => {
@@ -657,7 +657,7 @@
                         });
                 }
                 render() {
-                    const { "aria-label": e, focusable: t, enableKeyboardShortcuts: n, isActive: i, isDisabled: l, isPresentational: s, keyboardShortcut: m, link: h, preventFocusShift: p, renderMenu: f, renderWrapper: g = r.Fragment, style: y, testID: b } = this.props,
+                    const { "aria-label": e, focusable: t, enableKeyboardShortcuts: n, isActive: i, isDisabled: l, isPresentational: s, keyboardShortcut: m, link: p, preventFocusShift: h, renderMenu: f, renderWrapper: g = r.Fragment, style: y, testID: b } = this.props,
                         w = !u.default.theme.highContrastEnabled && !a.Z.reducedMotionEnabled;
                     return r.createElement(
                         o.Z,
@@ -667,7 +667,7 @@
                             null,
                             s
                                 ? this._renderContent(i)
-                                : r.createElement(c.Z, { "aria-haspopup": f ? "menu" : void 0, "aria-label": e, disabled: l, enableKeyboardShortcuts: n, focusable: t, interactiveStyles: null, keyboardShortcut: m, link: h, onClick: this._handlePress, preventFocusShift: p, renderMenu: f, style: [Z.triggerAreaRoot, Z.outlineNone], testID: b }, (e) => {
+                                : r.createElement(c.Z, { "aria-haspopup": f ? "menu" : void 0, "aria-label": e, disabled: l, enableKeyboardShortcuts: n, focusable: t, interactiveStyles: null, keyboardShortcut: m, link: p, onClick: this._handlePress, preventFocusShift: h, renderMenu: f, style: [Z.triggerAreaRoot, Z.outlineNone], testID: b }, (e) => {
                                       const { isFocused: t, isHovered: n, isPressed: r } = e,
                                           o = i || n || r || t;
                                       return this._renderContent(o, e);
@@ -678,11 +678,11 @@
                 }
             }
             E.defaultProps = { activeColor: "blue500", backgroundColor: "transparent", color: "gray700", count: 0, isDisabled: !1, iconSize: "normal" };
-            const v = u.default.create((e) => ({ small: { height: "1em", width: "1em" }, normal: { height: "1.25em", width: "1.25em" }, large: { height: "1.5em", width: "1.5em" } })),
-                x = u.default.create((e) => ({ transparent: { backgroundColor: e.colors.transparent }, translucentBlack77: { backgroundColor: e.colors.translucentBlack77 }, haloBackground: { backgroundColor: e.colors.activeBlack } })),
+            const x = u.default.create((e) => ({ small: { height: "1em", width: "1em" }, normal: { height: "1.25em", width: "1.25em" }, large: { height: "1.5em", width: "1.5em" } })),
+                v = u.default.create((e) => ({ transparent: { backgroundColor: e.colors.transparent }, translucentBlack77: { backgroundColor: e.colors.translucentBlack77 }, haloBackground: { backgroundColor: e.colors.activeBlack } })),
                 Z = u.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "flex-start" }, triggerAreaRoot: { justifyContent: "center", minHeight: e.lineHeights.body, overflow: "visible", userSelect: "none" }, inner: { alignItems: "center", display: "flex", justifyContent: "flex-start", transitionProperty: "color", transitionDuration: "0.2s", whiteSpace: "nowrap" }, iconFaded: { opacity: 0.4 }, iconBackground: { borderRadius: e.borderRadii.infinite, margin: -8 }, iconSmallBoundingBox: { margin: -6 }, outlineNone: { outlineStyle: "none" }, blue500: { color: e.colors.blue500 }, white: { color: e.colors.white }, haloBoundingBox: { margin: -6 } })),
-                k = "224.5%",
-                S = { width: k, height: k };
+                S = "224.5%",
+                k = { width: S, height: S };
         },
         551611: (e, t, n) => {
             n.d(t, { Bf: () => o, ZP: () => i });
@@ -696,7 +696,7 @@
             const i = new a();
         },
         433460: (e, t, n) => {
-            n.d(t, { Z: () => p });
+            n.d(t, { Z: () => h });
             var r = n(807896),
                 o = n(202784),
                 a = n(325686),
@@ -707,13 +707,13 @@
                 d = n(336373),
                 u = n(181054),
                 m = n(392237),
-                h = n(823161);
-            const p = function (e) {
+                p = n(823161);
+            const h = function (e) {
                 const t = d.Z.useAnalytics(),
                     [n, a] = o.useState(),
                     i = !!(n && n > 70),
                     { "aria-label": l, presenceRingType: c, spaceId: s, ...m } = e,
-                    p =
+                    h =
                         l ||
                         (function (e, t) {
                             switch (e) {
@@ -736,10 +736,10 @@
                 }, [t, c]);
                 const g = o.useCallback((e) => o.createElement(u.Z.Default, (0, r.Z)({}, e, { type: c })), [c]);
                 return o.createElement(
-                    h.default,
+                    p.default,
                     (0, r.Z)({}, m, {
                         BorderComponent: g,
-                        "aria-label": p,
+                        "aria-label": h,
                         avatarRef: function (e) {
                             if (e) {
                                 const t = e.getBoundingClientRect();
@@ -790,9 +790,9 @@
                 a = n(354149),
                 i = n(310452),
                 l = n(720283);
-            const c = ({ animateIn: e, description: t, entities: n, isConcise: c, style: s, testID: d, userId: u, withheldDescription: m, withheldEntities: h }) => {
-                const { description: p, entities: f } = (0, l.H)({ description: t, entities: n, withheldDescription: m, withheldEntities: h }),
-                    g = i.ZP.descriptionTextParts(p, f);
+            const c = ({ animateIn: e, description: t, entities: n, isConcise: c, style: s, testID: d, userId: u, withheldDescription: m, withheldEntities: p }) => {
+                const { description: h, entities: f } = (0, l.H)({ description: t, entities: n, withheldDescription: m, withheldEntities: p }),
+                    g = i.ZP.descriptionTextParts(h, f);
                 return g.length
                     ? r.createElement(
                           o.ZP,
@@ -811,7 +811,7 @@
             var r = n(157396);
             const o = (0, n(587878).Z)({ palette: r.CV.light, key: "light-blue-normal", highContrastEnabled: !1, chirpFontEnabled: !1, scale: "normal" });
         },
-        790093: (e, t, n) => {
+        488746: (e, t, n) => {
             n.r(t), n.d(t, { default: () => c });
             var r = n(202784),
                 o = n(890601),
@@ -819,12 +819,12 @@
                 i = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M15.96 1.54L21.41 7l-5.45 5.46-1.42-1.42L17.59 8H3V6h14.59l-3.05-3.04 1.42-1.42zM6.41 18l3.05 3.04-1.42 1.42L2.59 17l5.45-5.46 1.42 1.42L6.41 16H21v2H6.41z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const c = l;
         },
-        98440: (e, t, n) => {
+        76388: (e, t, n) => {
             n.r(t), n.d(t, { default: () => c });
             var r = n(202784),
                 o = n(890601),
@@ -832,12 +832,12 @@
                 i = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const c = l;
         },
-        226597: (e, t, n) => {
+        466445: (e, t, n) => {
             n.r(t), n.d(t, { default: () => c });
             var r = n(202784),
                 o = n(890601),
@@ -845,20 +845,7 @@
                 i = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const c = l;
-        },
-        155353: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => c });
-            var r = n(202784),
-                o = n(890601),
-                a = n(783427),
-                i = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M21 12L4 2v20l17-10z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const c = l;
@@ -872,4 +859,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.UserHandler-bc6ccf4c.8f763daa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.UserHandler-bc6ccf4c.e4cee4ea.js.map

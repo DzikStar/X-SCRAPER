@@ -3,7 +3,7 @@
     {
         804027: (e, t, r) => {
             "use strict";
-            r.d(t, { $T: () => B, $b: () => G, AA: () => v, Ae: () => z, CE: () => V, C_: () => L, D7: () => C, Dk: () => W, GN: () => J, Hm: () => U, IN: () => H, Iq: () => E, J$: () => N, QS: () => S, R8: () => m, RA: () => Y, TT: () => x, Ti: () => R, WZ: () => O, XD: () => D, Xb: () => P, YI: () => Z, ZF: () => k, ZJ: () => b, __: () => A, aD: () => T, bc: () => w, h0: () => I, ho: () => q, lS: () => M, q0: () => Q, qE: () => y, qJ: () => F, vY: () => j });
+            r.d(t, { $T: () => B, $b: () => G, AA: () => v, Ae: () => j, CE: () => V, C_: () => L, D7: () => C, Dk: () => W, GN: () => J, Hm: () => U, IN: () => H, Iq: () => E, J$: () => N, QS: () => S, R8: () => m, RA: () => Y, TT: () => x, Ti: () => R, WZ: () => O, XD: () => D, Xb: () => P, YI: () => Z, ZF: () => k, ZJ: () => b, __: () => A, aD: () => T, bc: () => w, h0: () => I, ho: () => q, lS: () => M, q0: () => Q, qE: () => y, qJ: () => F, vY: () => z });
             var n = r(261214),
                 i = r(956056),
                 o = r(41065),
@@ -42,8 +42,8 @@
                 x = Object.freeze({ Checkbox: "checkbox", Follow: "follow" }),
                 M = Object.freeze({ Tile: "tile", List: "list", TileFollowButton: "tile_follow_btn" }),
                 Y = (Object.freeze({ Always: "always", Never: "never", Preprompt: "preprompt" }), Object.freeze({ Email: "email", Number: "number", Password: "password", Telephone: "telephone", Text: "text" })),
-                j = Object.freeze({ ResendSms: "resend_sms", ResendVoice: "resend_voice", ResendEmail: "resend_email" }),
-                z = Object.freeze({ Password: "password", NewPassword: "new_password", Text: "text" }),
+                z = Object.freeze({ ResendSms: "resend_sms", ResendVoice: "resend_voice", ResendEmail: "resend_email" }),
+                j = Object.freeze({ Password: "password", NewPassword: "new_password", Text: "text" }),
                 Z = Object.freeze({ Normal: "normal", Compact: "compact" }),
                 W = Object.freeze({ Username: "username", Password: "password", NewPassword: "new_password", Text: "text" }),
                 H = Object.freeze({ Mismatch: "mismatch" }),
@@ -55,7 +55,7 @@
         },
         118823: (e, t, r) => {
             "use strict";
-            r.d(t, { WP: () => ne, R2: () => re, YW: () => J, Ig: () => ee, n8: () => $, YU: () => ae, Ai: () => se, Lw: () => H, z_: () => Q, qE: () => q, tY: () => ie, iD: () => G, jv: () => M, or: () => L, UD: () => N, cu: () => k, b: () => z, Du: () => V, zj: () => Y, W2: () => B, uz: () => F, Lg: () => D, li: () => x, $B: () => j, B7: () => U, aR: () => Z, Wl: () => oe, YF: () => te, d7: () => ue, if: () => K });
+            r.d(t, { WP: () => ne, R2: () => re, YW: () => J, Ig: () => ee, n8: () => $, YU: () => ae, Ai: () => se, Lw: () => H, z_: () => Q, qE: () => q, tY: () => ie, iD: () => G, jv: () => M, or: () => L, UD: () => N, cu: () => k, b: () => j, Du: () => V, zj: () => Y, W2: () => B, uz: () => F, Lg: () => D, li: () => x, $B: () => z, B7: () => U, aR: () => Z, Wl: () => oe, YF: () => te, d7: () => ue, if: () => K });
             r(543673), r(240753), r(128399);
             var n = r(695003),
                 i = r.n(n),
@@ -175,8 +175,8 @@
                 x = (e) => e[_].submitFailed,
                 M = (e) => e[_].currentSubtask,
                 Y = (e) => e[_].previouslySubmittedSubtaskId,
-                j = (e) => e[_].subtaskInputs,
-                z = (e) => e[_].navigationContext,
+                z = (e) => e[_].subtaskInputs,
+                j = (e) => e[_].navigationContext,
                 Z = (e) => e[_].verificationSendFailureMessage,
                 W = (e) => e[_].navigationStack,
                 H = (e) => !!e.alert_dialog || !!e.menu_dialog || e?.cta?.style === l.aD.HalfCover,
@@ -217,7 +217,7 @@
                                 const s = i(),
                                     u = k(s),
                                     c = U(s),
-                                    l = j(s),
+                                    l = z(s),
                                     f = X(c, l),
                                     h = { ...r, flow_token: u, subtask_inputs: f };
                                 return (0, p._O)(n, { params: h, request: e.task(o) })({ actionTypes: w, context: "SUBMIT_FLOW", meta: { isTaskNavigation: t } }).then((e) => {
@@ -486,7 +486,7 @@
                 b = (e) => e === o.h0.Boolean || e === o.h0.PreciseLocation,
                 y = (e) => ({ uri: e.image_info.url, width: e.image_info.width, height: e.image_info.height });
         },
-        916910: (e, t, r) => {
+        711223: (e, t, r) => {
             "use strict";
             r.r(t), r.d(t, { default: () => u });
             var n = r(202784),
@@ -495,7 +495,7 @@
                 a = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 3.786c-4.556 0-8.25 3.694-8.25 8.25s3.694 8.25 8.25 8.25c1.595 0 3.081-.451 4.341-1.233l1.054 1.7c-1.568.972-3.418 1.534-5.395 1.534-5.661 0-10.25-4.589-10.25-10.25S6.339 1.786 12 1.786s10.25 4.589 10.25 10.25c0 .901-.21 1.77-.452 2.477-.592 1.731-2.343 2.477-3.917 2.334-1.242-.113-2.307-.74-3.013-1.647-.961 1.253-2.45 2.011-4.092 1.78-2.581-.363-4.127-2.971-3.76-5.578.366-2.606 2.571-4.688 5.152-4.325 1.019.143 1.877.637 2.519 1.342l1.803.258-.507 3.549c-.187 1.31.761 2.509 2.079 2.629.915.083 1.627-.356 1.843-.99.2-.585.345-1.224.345-1.83 0-4.556-3.694-8.25-8.25-8.25zm-.111 5.274c-1.247-.175-2.645.854-2.893 2.623-.249 1.769.811 3.143 2.058 3.319 1.247.175 2.645-.854 2.893-2.623.249-1.769-.811-3.144-2.058-3.319z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M13.5 8.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5S11.17 7 12 7s1.5.67 1.5 1.5zM13 17v-5h-2v5h2zm-1 5.25c5.66 0 10.25-4.59 10.25-10.25S17.66 1.75 12 1.75 1.75 6.34 1.75 12 6.34 22.25 12 22.25zM20.25 12c0 4.56-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12 7.44 3.75 12 3.75s8.25 3.69 8.25 8.25z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const u = s;
@@ -635,7 +635,7 @@
                         case "utf8":
                         case "utf-8":
                         case void 0:
-                            return j(e).length;
+                            return z(e).length;
                         case "ucs2":
                         case "ucs-2":
                         case "utf16le":
@@ -644,9 +644,9 @@
                         case "hex":
                             return r >>> 1;
                         case "base64":
-                            return z(e).length;
+                            return j(e).length;
                         default:
-                            if (n) return j(e).length;
+                            if (n) return z(e).length;
                             (t = ("" + t).toLowerCase()), (n = !0);
                     }
             }
@@ -740,7 +740,7 @@
                 return a;
             }
             function b(e, t, r, n) {
-                return Z(j(t, e.length - r), e, r, n);
+                return Z(z(t, e.length - r), e, r, n);
             }
             function y(e, t, r, n) {
                 return Z(
@@ -757,7 +757,7 @@
                 return y(e, t, r, n);
             }
             function S(e, t, r, n) {
-                return Z(z(t), e, r, n);
+                return Z(j(t), e, r, n);
             }
             function A(e, t, r, n) {
                 return Z(
@@ -1224,7 +1224,7 @@
                     var o;
                     if (((t >>>= 0), (r = void 0 === r ? this.length : r >>> 0), e || (e = 0), "number" == typeof e)) for (o = t; o < r; ++o) this[o] = e;
                     else {
-                        var a = u.isBuffer(e) ? e : j(new u(e, n).toString()),
+                        var a = u.isBuffer(e) ? e : z(new u(e, n).toString()),
                             s = a.length;
                         for (o = 0; o < r - t; ++o) this[o + t] = a[o % s];
                     }
@@ -1234,7 +1234,7 @@
             function Y(e) {
                 return e < 16 ? "0" + e.toString(16) : e.toString(16);
             }
-            function j(e, t) {
+            function z(e, t) {
                 var r;
                 t = t || 1 / 0;
                 for (var n = e.length, i = null, o = [], a = 0; a < n; ++a) {
@@ -1274,7 +1274,7 @@
                 }
                 return o;
             }
-            function z(e) {
+            function j(e) {
                 return n.toByteArray(
                     (function (e) {
                         if (
@@ -1395,4 +1395,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh.0d93749a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh.4af9670a.js.map

@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.HoverCard"],
+    ["loader.HoverCard", "icons/IconSortUp-js"],
     {
         67877: (e, t, o) => {
             "use strict";
@@ -34,14 +34,14 @@
                 constructor(e, t) {
                     super(e, t),
                         (this._renderContent = () => {
-                            const { animationDuration: e, animationType: t, enableClickOutsideToDismiss: o, onAnimateComplete: i, onDismiss: a, show: d, withArrow: c, withContentOverflow: p, withFixedPosition: w, withFocusTrapView: f, withMask: _, withRoundedSides: v, withoutLayer: y } = this.props,
-                                { bottom: g, left: x, right: k, top: E } = this.state,
-                                R = void 0 === E && void 0 === g,
-                                Z = R || !f ? r.Fragment : u.Z,
-                                A = { top: E, bottom: g, start: x, end: k },
-                                D = [R ? C.initialRenderWrapper : w ? C.contentWrapperFixed : C.contentWrapperAbsolute, A],
-                                S = v ? C.infiniteCornerRadius : C.defaultCornerRadius,
-                                P = [C.contentRoot, S, !p && !c && C.overflowHidden];
+                            const { animationDuration: e, animationType: t, enableClickOutsideToDismiss: o, onAnimateComplete: i, onDismiss: a, show: d, withArrow: c, withContentOverflow: p, withFixedPosition: w, withFocusTrapView: f, withMask: _, withRoundedSides: g, withoutLayer: y } = this.props,
+                                { bottom: C, left: x, right: Z, top: k } = this.state,
+                                E = void 0 === k && void 0 === C,
+                                D = E || !f ? r.Fragment : u.Z,
+                                R = { top: k, bottom: C, start: x, end: Z },
+                                A = [E ? v.initialRenderWrapper : w ? v.contentWrapperFixed : v.contentWrapperAbsolute, R],
+                                S = g ? v.infiniteCornerRadius : v.defaultCornerRadius,
+                                P = [v.contentRoot, S, !p && !c && v.overflowHidden];
                             return r.createElement(
                                 m.ZP.Consumer,
                                 null,
@@ -50,12 +50,12 @@
                                     r.createElement(
                                         b.Z.Provider,
                                         { value: { isInHoverCard: !0 } },
-                                        o ? r.createElement(s.Z, { onClick: a, style: [C.mask, _ && C.withMask] }) : null,
+                                        o ? r.createElement(s.Z, { onClick: a, style: [v.mask, _ && v.withMask] }) : null,
                                         r.createElement(
                                             s.Z,
-                                            { onKeyUp: this._handleEsc, ref: this._setContentNode, style: D, testID: "hoverCardParent" },
+                                            { onKeyUp: this._handleEsc, ref: this._setContentNode, style: A, testID: "hoverCardParent" },
                                             r.createElement(
-                                                Z,
+                                                D,
                                                 null,
                                                 r.createElement(l.Z, { animateMount: !0, duration: e || "long", onAnimateComplete: i, show: d, type: t || "fade" }, ({ isAnimating: e }) => (_ || y ? r.createElement(s.Z, { style: P }, this._renderInnerBody(c)) : r.createElement(h.Z, { id: "HoverCard", minimizeReporting: e }, (e, t) => r.createElement(s.Z, (0, n.Z)({ ref: e() }, t({ style: P })), this._renderInnerBody(c))))),
                                             ),
@@ -110,14 +110,28 @@
                     let n;
                     const r = "rtl" === e;
                     if (t) {
-                        n = [C.arrow, o ? C.downArrow : C.upArrow];
+                        n = [v.arrow, o ? v.downArrow : v.upArrow];
                         const e = `calc(${t}px - ${a.default.metadata.width / 2}px)`;
                         r ? n.push({ end: e }) : n.push({ start: e });
                     }
                     return n;
                 }
             }
-            const C = w.default.create((e) => ({ arrow: { color: e.colors.cellBackground, filter: `drop-shadow(${e.spaces.space1} -${e.spaces.space1} ${e.spaces.space1} ${e.colors.gray200})`, fontSize: e.fontSizes.subtext2, position: "absolute", width: `${a.default.metadata.width}px` }, contentWrapperAbsolute: { position: "absolute" }, contentWrapperFixed: { backfaceVisibility: "hidden", position: "fixed" }, initialRenderWrapper: { opacity: 0, position: "fixed" }, contentRoot: { backgroundColor: e.colors.cellBackground, boxShadow: e.boxShadows.medium }, overflowHidden: { overflow: "hidden" }, defaultCornerRadius: { borderRadius: e.borderRadii.xLarge }, infiniteCornerRadius: { borderRadius: e.borderRadii.infinite }, mask: { ...w.default.absoluteFillObject, position: "fixed", userSelect: "none" }, withMask: { backgroundColor: e.colors.maskColor }, downArrow: { bottom: `-${e.fontSizes.subtext3}`, transform: "rotate(180deg)" }, upArrow: { top: `-${e.fontSizes.subtext3}` } }));
+            const v = w.default.create((e) => ({ arrow: { color: e.colors.cellBackground, filter: `drop-shadow(${e.spaces.space1} -${e.spaces.space1} ${e.spaces.space1} ${e.colors.gray200})`, fontSize: e.fontSizes.subtext2, position: "absolute", width: `${a.default.metadata.width}px` }, contentWrapperAbsolute: { position: "absolute" }, contentWrapperFixed: { backfaceVisibility: "hidden", position: "fixed" }, initialRenderWrapper: { opacity: 0, position: "fixed" }, contentRoot: { backgroundColor: e.colors.cellBackground, boxShadow: e.boxShadows.medium }, overflowHidden: { overflow: "hidden" }, defaultCornerRadius: { borderRadius: e.borderRadii.xLarge }, infiniteCornerRadius: { borderRadius: e.borderRadii.infinite }, mask: { ...w.default.absoluteFillObject, position: "fixed", userSelect: "none" }, withMask: { backgroundColor: e.colors.maskColor }, downArrow: { bottom: `-${e.fontSizes.subtext3}`, transform: "rotate(180deg)" }, upArrow: { top: `-${e.fontSizes.subtext3}` } }));
+        },
+        797681: (e, t, o) => {
+            "use strict";
+            o.r(t), o.d(t, { default: () => d });
+            var n = o(202784),
+                r = o(890601),
+                i = o(783427),
+                s = o(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M22 17H2L12 6l10 11z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const d = a;
         },
         666536: (e, t, o) => {
             "use strict";
@@ -153,4 +167,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.HoverCard.44613e0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.HoverCard.53cbd63a.js.map

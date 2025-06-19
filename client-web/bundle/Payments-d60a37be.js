@@ -403,7 +403,7 @@
                 h = a(655352),
                 p = a(163889),
                 _ = a(514639),
-                g = a(351990),
+                g = a(412450),
                 f = a(441484),
                 y = a(99387),
                 b = a(743080),
@@ -924,7 +924,7 @@
         137882: (e, t, a) => {
             a.d(t, { bR: () => c, ig: () => o, vN: () => i });
             a(543673), a(240753), a(128399);
-            var n = a(351990),
+            var n = a(412450),
                 r = a(125363),
                 s = a(390387);
             const o = (e) => {
@@ -1222,4 +1222,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.f058616a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.1439dfea.js.map

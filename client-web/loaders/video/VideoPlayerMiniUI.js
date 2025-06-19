@@ -68,12 +68,12 @@
                 }
                 render() {
                     const { guestsState: e, playerApi: t, playerState: a, stablePlayerState: i } = this.state,
-                        { additionalBadges: s, aspectRatio: p, basePlayerClass: d, children: u, includeDisputeLinkInCopyrightErrorMessage: y, isFullScreen: b, objectFitVideo: f, onApiReady: g, onScroll: S, onStateUpdate: E, playerId: P, size: v, ...C } = this.props,
+                        { additionalBadges: s, aspectRatio: p, basePlayerClass: d, children: u, includeDisputeLinkInCopyrightErrorMessage: y, isFullScreen: b, objectFitVideo: f, onApiReady: g, onScroll: S, onStateUpdate: E, playerId: v, size: P, ...C } = this.props,
                         _ = { aspectRatio: this.props.aspectRatio, guestsState: e, playerApi: t, playerState: a, containerRef: this._containerRef },
                         A = { ..._, playerState: i };
                     return n.createElement(
                         l.Z,
-                        { isFullScreen: b, onScroll: S, ratio: p, style: [m.root, m[v]] },
+                        { isFullScreen: b, onScroll: S, ratio: p, style: [m.root, m[P]] },
                         this.state.hasError
                             ? n.createElement(o.Z, { onReloadPress: this._handleReload })
                             : n.createElement(
@@ -250,12 +250,12 @@
                     const g = n.useMemo(() => [f.playButton, u], [u]),
                         S = n.useMemo(() => [f.playIcon, e], [e]);
                     if (!c || !a) return null;
-                    const { controls: E, isPlaying: P } = c,
-                        { pause: v, play: C, replay: _ } = a,
+                    const { controls: E, isPlaying: v } = c,
+                        { pause: P, play: C, replay: _ } = a,
                         A = (0, d.Ci)(c);
                     if (!A || (A.isLive && !t)) return null;
                     let R;
-                    return (R = P || (E && "PLAY_REQUESTED" === E.playState) ? { "aria-label": p.gF, children: n.createElement(i.default, { style: S }), hoverLabel: h, onPress: v } : E.isReplayButtonShown ? { "aria-label": p.Js, children: n.createElement(l.default, { style: S }), hoverLabel: m, onPress: _ } : { "aria-label": p.M2, children: n.createElement(s.default, { style: S }), hoverLabel: y, onPress: C }), n.createElement(o.Z, (0, r.Z)({}, b, R, { style: g }));
+                    return (R = v || (E && "PLAY_REQUESTED" === E.playState) ? { "aria-label": p.gF, children: n.createElement(i.default, { style: S }), hoverLabel: h, onPress: P } : E.isReplayButtonShown ? { "aria-label": p.Js, children: n.createElement(l.default, { style: S }), hoverLabel: m, onPress: _ } : { "aria-label": p.M2, children: n.createElement(s.default, { style: S }), hoverLabel: y, onPress: C }), n.createElement(o.Z, (0, r.Z)({}, b, R, { style: g }));
                 },
                 f = c.default.create((e) => ({ playButton: { padding: e.spaces.space4 }, playIcon: { height: e.spaces.space12, width: e.spaces.space12 } })),
                 g = n.memo(b);
@@ -280,9 +280,9 @@
                 g = a(506707),
                 S = a(197765);
             const E = u().j25d7cca,
-                P = u().a858b25c,
-                v = { preferredVerticalOrientation: "up", preferredHorizontalOrientation: "end", withLayer: !1, withExtraSpace: !1, label: E },
-                C = { ...v, label: P },
+                v = u().a858b25c,
+                P = { preferredVerticalOrientation: "up", preferredHorizontalOrientation: "end", withLayer: !1, withExtraSpace: !1, label: E },
+                C = { ...P, label: v },
                 _ = ({ liveBroadcastRewindEnabled: e, mediaAccessibilityLabel: t, playerApi: a, playerDisplayOptions: i, playerState: l }) => {
                     const s = l ? (0, c.Ci)(l) : void 0,
                         o = l
@@ -297,7 +297,7 @@
                                       if (!s?.hasCaptions) return null;
                                       const { areCaptionsShown: a } = t,
                                           { toggleCaptions: i } = e;
-                                      return r.createElement(b.ZP, { key: "captions-badge" }, r.createElement(n.Z, { style: w.captionsLabel }, r.createElement(m.Z, { "aria-label": a ? E : P, hoverLabel: a ? v : C, onPress: i, style: w.captionsButton }, a ? r.createElement(y.default, { style: w.captionsIcon }) : r.createElement(h.default, { style: w.captionsIcon }))));
+                                      return r.createElement(b.ZP, { key: "captions-badge" }, r.createElement(n.Z, { style: w.captionsLabel }, r.createElement(m.Z, { "aria-label": a ? E : v, hoverLabel: a ? P : C, onPress: i, style: w.captionsButton }, a ? r.createElement(y.default, { style: w.captionsIcon }) : r.createElement(h.default, { style: w.captionsIcon }))));
                                   })(a, l),
                                   ((e) => {
                                       if (i?.badgeConfiguration?.hideViewCount) return null;
@@ -323,16 +323,16 @@
                 k = a(38660),
                 D = a(804455),
                 I = a(472238);
-            const O = (0, a(523561).Z)({ loader: () => Promise.all([a.e("icons.10"), a.e("icons.13"), a.e("icons.17"), a.e("modules.common-e907d115"), a.e("modules.common-e019dbda"), a.e("icons.4"), a.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU"), a.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI"), a.e("loaders.video.VideoPlayerPrerollUI")]).then(a.bind(a, 463371)), renderPlaceholder: () => r.createElement("div", { "data-testid": "videoPlayer" }) }),
-                M = ({ "aria-label": e, containerRef: t, id: a, includeDisputeLinkInCopyrightErrorMessage: l, liveBroadcastRewindEnabled: d, onClick: u, onScribeEvent: y, playerApi: h, playerDisplayOptions: m, playerState: b, poster: f, shouldShowAltLabel: g, showWatchAgain: S, useKeyboardShortcuts: E }) => {
-                    const P = r.useCallback(() => {
+            const M = (0, a(523561).Z)({ loader: () => Promise.all([a.e("icons.25"), a.e("icons.6"), a.e("icons.9"), a.e("modules.common-e907d115"), a.e("modules.common-e019dbda"), a.e("icons.0"), a.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU"), a.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI"), a.e("loaders.video.VideoPlayerPrerollUI")]).then(a.bind(a, 463371)), renderPlaceholder: () => r.createElement("div", { "data-testid": "videoPlayer" }) }),
+                O = ({ "aria-label": e, containerRef: t, id: a, includeDisputeLinkInCopyrightErrorMessage: l, liveBroadcastRewindEnabled: d, onClick: u, onScribeEvent: y, playerApi: h, playerDisplayOptions: m, playerState: b, poster: f, shouldShowAltLabel: g, showWatchAgain: S, useKeyboardShortcuts: E }) => {
+                    const v = r.useCallback(() => {
                         u?.({ playerState: b, playerApi: h });
                     }, [u, h, b]);
                     if (!h || !b) return null;
-                    const v = (0, c.Ci)(b);
-                    if (v?.displayType === p.ak.AD && v?.useRedesignedPrerollUx) return r.createElement(O, { containerRef: t, playerApi: h, playerDisplayOptions: m, playerState: b, poster: f, showWatchAgain: S });
+                    const P = (0, c.Ci)(b);
+                    if (P?.displayType === p.ak.AD && P?.useRedesignedPrerollUx) return r.createElement(M, { containerRef: t, playerApi: h, playerDisplayOptions: m, playerState: b, poster: f, showWatchAgain: S });
                     const C = !!b.error,
-                        _ = v?.contentType === p.wF.GIF,
+                        _ = P?.contentType === p.wF.GIF,
                         A = S && b.tracksFinished,
                         R = g ? e : void 0;
                     return r.createElement(
@@ -345,15 +345,28 @@
                                 (function () {
                                     const e = !m?.hidePosterImage && !A,
                                         t = S && !_;
-                                    return r.createElement(r.Fragment, null, r.createElement(n.Z, { onClick: P, style: B.base, testID: `video-player-mini-ui-${a || ""}` }), e && r.createElement(D.Z, { imageSrc: f, playerApi: h, playerState: b, withPlayButton: !1 }), r.createElement(x.Z, { playerState: b }), t && r.createElement(I.Z, { onScribeEvent: y, playerApi: h, playerState: b }), r.createElement(Z, { liveBroadcastRewindEnabled: d, mediaAccessibilityLabel: R, playerApi: h, playerDisplayOptions: m, playerState: b }));
+                                    return r.createElement(r.Fragment, null, r.createElement(n.Z, { onClick: v, style: B.base, testID: `video-player-mini-ui-${a || ""}` }), e && r.createElement(D.Z, { imageSrc: f, playerApi: h, playerState: b, withPlayButton: !1 }), r.createElement(x.Z, { playerState: b }), t && r.createElement(I.Z, { onScribeEvent: y, playerApi: h, playerState: b }), r.createElement(Z, { liveBroadcastRewindEnabled: d, mediaAccessibilityLabel: R, playerApi: h, playerDisplayOptions: m, playerState: b }));
                                 })(),
                             r.createElement(i.Z, { show: C }, C && r.createElement(k.Z, { imageSrc: f, includeDisputeLinkInCopyrightErrorMessage: l, playerApi: h, playerState: b })),
                         ),
                     );
                 },
                 B = l.default.create((e) => ({ base: { ...l.default.absoluteFillObject, cursor: "pointer" } })),
-                L = r.memo(M);
+                L = r.memo(O);
+        },
+        466445: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => o });
+            var r = a(202784),
+                n = a(890601),
+                i = a(783427),
+                l = a(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M21 12L4 2v20l17-10z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.VideoPlayerMiniUI.9d4b1e1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.VideoPlayerMiniUI.dad0cfea.js.map

@@ -3,7 +3,7 @@
     ["loader.UserHandler-e96e9bea"],
     {
         333241: (e, o, n) => {
-            n.d(o, { Z: () => w });
+            n.d(o, { Z: () => b });
             n(136728);
             var r = n(202784),
                 t = n(638236),
@@ -22,9 +22,9 @@
                 f = "report",
                 M = "share",
                 P = d().j7bb1a43,
-                b = d().hef5960c,
-                w = (0, m.M)((e) => {
-                    const { onBlock: o, onClose: n, onMute: s, onRemoveFollower: d, onReportUser: m, onShare: w, onUnblock: y, onUnmute: S, user: _ } = e,
+                w = d().hef5960c,
+                b = (0, m.M)((e) => {
+                    const { onBlock: o, onClose: n, onMute: s, onRemoveFollower: d, onReportUser: m, onShare: b, onUnblock: y, onUnmute: S, user: _ } = e,
                         C = [],
                         I = (o, n) => {
                             const { confirm: r, onClose: t } = e;
@@ -42,10 +42,10 @@
                         C.push({
                             Icon: t.Z,
                             onClick: () => {
-                                n(), w();
+                                n(), b();
                             },
                             testID: M,
-                            text: b,
+                            text: w,
                         });
                     !_.blocking &&
                         C.push({
@@ -112,14 +112,14 @@
                 f = s().bdba3e1a,
                 M = s().c4da7d28,
                 P = s().j87c21f4,
-                b = s().iebc30ca,
-                w = s().dc740eb2;
+                w = s().iebc30ca,
+                b = s().dc740eb2;
             class y extends r.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderButton = () => {
                             const { isFollowing: e, style: o } = this.props;
-                            return e ? r.createElement(t.ZP, { "aria-label": M, hoverLabel: { label: b }, icon: r.createElement(d.default, null), onPress: this._handleUnfollow, style: o, type: "primaryOutlined" }) : r.createElement(t.ZP, { "aria-label": f, hoverLabel: { label: P }, icon: r.createElement(l.default, null), onPress: this._handleFollow, style: o, type: "primaryOutlined" });
+                            return e ? r.createElement(t.ZP, { "aria-label": M, hoverLabel: { label: w }, icon: r.createElement(d.default, null), onPress: this._handleUnfollow, style: o, type: "primaryOutlined" }) : r.createElement(t.ZP, { "aria-label": f, hoverLabel: { label: P }, icon: r.createElement(l.default, null), onPress: this._handleFollow, style: o, type: "primaryOutlined" });
                         }),
                         (this._handleFollow = () => {
                             const { isDeviceFollowWithoutUserFollow: e, shouldPromptPush: o } = this.props;
@@ -137,7 +137,7 @@
                         (this.state = { showingPushPrompt: !1 });
                 }
                 render() {
-                    return r.createElement("div", null, this.state.showingPushPrompt ? r.createElement(i.Z, { fullScreen: !0, message: w }) : null, this._renderButton());
+                    return r.createElement("div", null, this.state.showingPushPrompt ? r.createElement(i.Z, { fullScreen: !0, message: b }) : null, this._renderButton());
                 }
                 _updateDeviceFollowing(e) {
                     const { createLocalApiErrorHandler: o, updateDeviceFollowing: n, userId: r } = this.props;
@@ -175,8 +175,8 @@
                     .propsFromState(() => ({ user: M }))
                     .propsFromActions(({ module: e }) => ({ saveAsRecentSearch: v.DI, applyReactionInstructions: e.applyReactionInstructions }))
                     .withAnalytics(),
-                b = (e) => {
-                    const { analytics: o, applyReactionInstructions: n, cellClickable: r, decoration: d, entry: i, isCarouselItem: D, onClick: v, saveAsRecentSearch: f, shouldScribeImpression: M, shouldScribeProfileClick: P, shouldStoreTypeaheadItem: b, user: y, withFollowsYou: S, withLink: _ } = e,
+                w = (e) => {
+                    const { analytics: o, applyReactionInstructions: n, cellClickable: r, decoration: d, entry: i, isCarouselItem: D, onClick: v, saveAsRecentSearch: f, shouldScribeImpression: M, shouldScribeProfileClick: P, shouldStoreTypeaheadItem: w, user: y, withFollowsYou: S, withLink: _ } = e,
                         {
                             content: { id: C, promotedMetadata: I, socialContext: k },
                         } = i,
@@ -195,10 +195,10 @@
                     const Z = l.useCallback(() => {
                         n({ entry: i, triggerName: m.K.ON_FOLLOW });
                     }, [n, i]);
-                    return l.createElement(s.Z9, { cellClickable: r, decoration: g, displayMode: R, isConcise: D, onClick: v, onFollowClick: Z, promotedContent: A, promotedItemType: h.bj.USER, referringPage: R, saveAsRecentSearch: f, shouldScribeImpression: M, shouldScribeProfileClick: P, shouldStoreTypeaheadItem: b, socialContext: T, style: D && w.isCarouselItem, userId: C, withFollowsYou: S, withLink: _ });
+                    return l.createElement(s.Z9, { cellClickable: r, decoration: g, displayMode: R, isConcise: D, onClick: v, onFollowClick: Z, promotedContent: A, promotedItemType: h.bj.USER, referringPage: R, saveAsRecentSearch: f, shouldScribeImpression: M, shouldScribeProfileClick: P, shouldStoreTypeaheadItem: w, socialContext: T, style: D && b.isCarouselItem, userId: C, withFollowsYou: S, withLink: _ });
                 },
-                w = i.default.create((e) => ({ isCarouselItem: { width: 312 } })),
-                y = P(l.memo(b)),
+                b = i.default.create((e) => ({ isCarouselItem: { width: 312 } })),
+                y = P(l.memo(w)),
                 S = [s.ET, s.C_],
                 _ = ({ cellClickable: e = !0, decoration: o, displayMode: n = a.Z.UserCompact, isCarouselItem: s, onClick: l, shouldScribeProfileClick: i = !0, shouldScribeImpression: c = !1, shouldStoreTypeaheadItem: u, withLink: h = !0 }) =>
                     d
@@ -233,8 +233,8 @@
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
@@ -411,7 +411,7 @@
             });
         },
         204744: (e, o, n) => {
-            n.d(o, { DI: () => b, H$: () => h, OB: () => w, Ww: () => c, YB: () => u, hj: () => v, qF: () => M });
+            n.d(o, { DI: () => w, H$: () => h, OB: () => b, Ww: () => c, YB: () => u, hj: () => v, qF: () => M });
             n(901951);
             var r = n(499627),
                 t = n(390387);
@@ -468,7 +468,7 @@
                         return (0, t.Qb)(r) ? e(d(a)) : Promise.resolve();
                     },
                 P = "rweb/recentSearches/ADD_QUERY",
-                b =
+                w =
                     (e) =>
                     (o, n, { userPersistence: r }) => {
                         o({ payload: e, type: P });
@@ -476,7 +476,7 @@
                             s = c(a);
                         return (0, t.Qb)(a) ? o(d(s)) : Promise.resolve();
                     },
-                w =
+                b =
                     () =>
                     (e, o, { userPersistence: n }) => {
                         const r = o();
@@ -721,4 +721,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.UserHandler-e96e9bea.ba296e1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.UserHandler-e96e9bea.09af824a.js.map

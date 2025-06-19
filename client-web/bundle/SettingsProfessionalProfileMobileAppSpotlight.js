@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.SettingsProfessionalProfileMobileAppSpotlight", "icons/IconMediumPlus-js"],
+    ["bundle.SettingsProfessionalProfileMobileAppSpotlight"],
     {
         625661: (e, t, n) => {
             n.d(t, { ZP: () => u });
@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: a, hideBackButton: r, isFullWidth: i, isLarge: c, leftControl: d, middleControl: u, position: h, rightControl: m, secondaryBar: g, style: b, subtitle: f, title: y, titleDomId: k, titleIconCell: C, titleIconCellSize: v, withBackground: E, withWideContainer: Z } = this.props,
-                        { isModal: w } = this.context,
-                        S = r ? d : o.createElement(l.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        B = (function (e, t, n) {
+                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: a, hideBackButton: r, isFullWidth: i, isLarge: c, leftControl: d, middleControl: u, position: h, rightControl: m, secondaryBar: b, style: g, subtitle: f, title: y, titleDomId: k, titleIconCell: C, titleIconCellSize: E, withBackground: v, withWideContainer: S } = this.props,
+                        { isModal: Z } = this.context,
+                        B = r ? d : o.createElement(l.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        P = (function (e, t, n) {
                             return e && !(t && n);
-                        })(!!E, w, !!g);
-                    return o.createElement(o.Fragment, null, o.createElement(s.Z, { centerTitle: t, centeredLogo: n, isFullWidth: i, isLarge: c, leftControl: S, middleControl: u, position: p(h, w, a), rightControl: m, style: b, subtitle: f, title: y, titleDomId: k, titleIconCell: C, titleIconCellSize: v, withBackground: B, withWideContainer: Z }), g || null);
+                        })(!!v, Z, !!b);
+                    return o.createElement(o.Fragment, null, o.createElement(s.Z, { centerTitle: t, centeredLogo: n, isFullWidth: i, isLarge: c, leftControl: B, middleControl: u, position: p(h, Z, a), rightControl: m, style: g, subtitle: f, title: y, titleDomId: k, titleIconCell: C, titleIconCellSize: E, withBackground: P, withWideContainer: S }), b || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -99,13 +99,13 @@
                 u = n(509875),
                 h = n(980407),
                 m = n(800536),
-                g = n(855488),
-                b = n(731708),
+                b = n(855488),
+                g = n(731708),
                 f = n(521219);
             const y = p().b772cd66,
                 k = p().g4098f78,
                 C = p().b949cdc6;
-            function v(e) {
+            function E(e) {
                 const [t, n] = a.useState(e.values.url),
                     o = a.useMemo(() => t && (0, f.Z)(t), [t]),
                     { helpLink: i, inputLabel: s, onCancel: c, onChange: d, title: p } = e;
@@ -117,8 +117,8 @@
                     { "aria-hidden": !1, backButtonType: "back", onBackClick: c, rightControl: a.createElement(l.ZP, { disabled: !t || !!o, onPress: u }, y), title: p },
                     a.createElement(
                         r.Z,
-                        { style: E.container },
-                        a.createElement(g.Z, {
+                        { style: v.container },
+                        a.createElement(b.Z, {
                             autoFocus: !0,
                             errorText: o,
                             invalid: !!o,
@@ -131,20 +131,20 @@
                             onSubmitEditing: u,
                             value: t,
                         }),
-                        a.createElement(b.ZP, { link: i, style: E.text, weight: "bold", withUnderline: !0 }, k),
-                        a.createElement(b.ZP, { align: "center", color: "red500", style: E.removeApp }, C),
+                        a.createElement(g.ZP, { link: i, style: v.text, weight: "bold", withUnderline: !0 }, k),
+                        a.createElement(g.ZP, { align: "center", color: "red500", style: v.removeApp }, C),
                     ),
                 );
             }
-            const E = c.default.create((e) => ({ container: { paddingBottom: e.spaces.space64 }, removeApp: { padding: e.spaces.space16, paddingTop: e.spaces.space40 }, text: { paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } })),
-                Z = p().b91d1394,
-                w = p().i2209530,
-                S = Object.freeze({ IOS: "ios", ANDROID: "android" }),
-                B = [
-                    { key: S.IOS, label: p().aab2fae0, placeholder: p().af40a8e0, component: v, constants: { title: p().d3cd1160, helpLink: "", inputLabel: p().f2124008 } },
-                    { key: S.ANDROID, label: p().f7d1a8e0, placeholder: p().af40a8e0, component: v, constants: { title: p().dc0d9d6a, helpLink: "", inputLabel: p().dd1605f0 } },
+            const v = c.default.create((e) => ({ container: { paddingBottom: e.spaces.space64 }, removeApp: { padding: e.spaces.space16, paddingTop: e.spaces.space40 }, text: { paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } })),
+                S = p().b91d1394,
+                Z = p().i2209530,
+                B = Object.freeze({ IOS: "ios", ANDROID: "android" }),
+                P = [
+                    { key: B.IOS, label: p().aab2fae0, placeholder: p().af40a8e0, component: E, constants: { title: p().d3cd1160, helpLink: "", inputLabel: p().f2124008 } },
+                    { key: B.ANDROID, label: p().f7d1a8e0, placeholder: p().af40a8e0, component: E, constants: { title: p().dc0d9d6a, helpLink: "", inputLabel: p().dd1605f0 } },
                 ],
-                P = Object.freeze({ APPLE_APP_STORE: 1, GOOGLE_PLAY_STORE: 2 });
+                w = Object.freeze({ APPLE_APP_STORE: 1, GOOGLE_PLAY_STORE: 2 });
             function I(e) {
                 const t = (0, i.useHistory)(),
                     [n, c] = a.useState(),
@@ -152,14 +152,14 @@
                     p = a.useCallback(() => {
                         t.goBack({ backLocation: m.V5 });
                     }, [t]);
-                function g() {}
-                function b(e, t = !1) {
+                function b() {}
+                function g(e, t = !1) {
                     let n;
-                    if (e.key === S.IOS) {
-                        const e = d?.values?.appStoreListings?.find((e) => e.appStore === P.APPLE_APP_STORE);
+                    if (e.key === B.IOS) {
+                        const e = d?.values?.appStoreListings?.find((e) => e.appStore === w.APPLE_APP_STORE);
                         n = e?.url;
-                    } else if (e.key === S.ANDROID) {
-                        const e = d?.values?.appStoreListings?.find((e) => e.appStore === P.GOOGLE_PLAY_STORE);
+                    } else if (e.key === B.ANDROID) {
+                        const e = d?.values?.appStoreListings?.find((e) => e.appStore === w.GOOGLE_PLAY_STORE);
                         n = e?.url;
                     }
                     return !n && t ? e.placeholder : n;
@@ -169,7 +169,7 @@
                 }
                 if (n) {
                     const e = n.component,
-                        t = { url: b(n) };
+                        t = { url: g(n) };
                     return a.createElement(e, (0, o.Z)({ onCancel: f, onChange: f, values: t }, n.constants));
                 }
                 return a.createElement(
@@ -180,16 +180,16 @@
                         onBackClick: p,
                         rightControl: (function () {
                             const e = !d.isDirty || !d.hasAllRequiredValues || false;
-                            return a.createElement(l.ZP, { disabled: e, onPress: g }, w);
+                            return a.createElement(l.ZP, { disabled: e, onPress: b }, Z);
                         })(),
-                        title: Z,
+                        title: S,
                     },
                     a.createElement(
                         r.Z,
                         { style: L.container },
-                        B.map((e) => {
+                        P.map((e) => {
                             return a.createElement(s.Z, {
-                                description: b(e, !0),
+                                description: g(e, !0),
                                 key: e.key,
                                 label: e.label,
                                 onPress:
@@ -227,13 +227,13 @@
                 s = n(952428),
                 c = n(392237);
             const d = (e) => {
-                    const { decoration: t, description: n, disabled: d = !1, isActive: u = !1, label: h, link: m, onPress: g, paddingHorizontal: b, renderRightContent: f, role: y = "tab", styleOverride: k, testID: C = "pivot", thumbnail: v, thumbnailSize: E, withoutArrow: Z = !1 } = e,
-                        w = [p.thumbnailContainer, "medium" === E && p.thumbnailContainerMedium],
-                        S = "string" == typeof h ? o.createElement(l.ZP, null, h) : h,
-                        B = "object" == typeof m && m.external && !m.openInSameFrame,
-                        P = n ? ("string" == typeof n ? o.createElement(l.ZP, { color: "gray700", size: "subtext2", testID: `${C}-description` }, n) : n) : null,
-                        I = o.useMemo(() => ("space0" === b ? { paddingHorizontal: 0 } : { paddingHorizontal: b ? c.default.theme.spaces[b] : c.default.theme.componentDimensions.gutterHorizontal }), [b]);
-                    return o.createElement(s.Z, { "aria-selected": "tab" === y ? u : null, disabled: d, link: d ? void 0 : m, onPress: g, role: y, style: [p.root, I, d && p.disabled, k], testID: C, withInteractiveStyling: !!m || !!g }, o.createElement(a.Z, { style: p.contentContainer }, v ? o.createElement(a.Z, { style: w }, v) : null, o.createElement(a.Z, { style: p.content }, S, P), f ? f() : null, (!m && !g) || d || Z ? null : B ? o.createElement(r.default, { style: p.icon }) : o.createElement(i.default, { style: p.icon })), t);
+                    const { decoration: t, description: n, disabled: d = !1, isActive: u = !1, label: h, link: m, onPress: b, paddingHorizontal: g, renderRightContent: f, role: y = "tab", styleOverride: k, testID: C = "pivot", thumbnail: E, thumbnailSize: v, withoutArrow: S = !1 } = e,
+                        Z = [p.thumbnailContainer, "medium" === v && p.thumbnailContainerMedium],
+                        B = "string" == typeof h ? o.createElement(l.ZP, null, h) : h,
+                        P = "object" == typeof m && m.external && !m.openInSameFrame,
+                        w = n ? ("string" == typeof n ? o.createElement(l.ZP, { color: "gray700", size: "subtext2", testID: `${C}-description` }, n) : n) : null,
+                        I = o.useMemo(() => ("space0" === g ? { paddingHorizontal: 0 } : { paddingHorizontal: g ? c.default.theme.spaces[g] : c.default.theme.componentDimensions.gutterHorizontal }), [g]);
+                    return o.createElement(s.Z, { "aria-selected": "tab" === y ? u : null, disabled: d, link: d ? void 0 : m, onPress: b, role: y, style: [p.root, I, d && p.disabled, k], testID: C, withInteractiveStyling: !!m || !!b }, o.createElement(a.Z, { style: p.contentContainer }, E ? o.createElement(a.Z, { style: Z }, E) : null, o.createElement(a.Z, { style: p.content }, B, w), f ? f() : null, (!m && !b) || d || S ? null : P ? o.createElement(r.default, { style: p.icon }) : o.createElement(i.default, { style: p.icon })), t);
                 },
                 p = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -241,19 +241,6 @@
             n.d(t, { Z: () => o });
             const o = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        509875: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var o = n(202784),
-                a = n(890601),
-                r = n(783427),
-                i = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 32 32", children: o.createElement("g", null, o.createElement("path", { d: "M17 5h-2v10H5v2h10v10h2V17h10v-2H17V5z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 32, height: 32 };
-            const s = l;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileMobileAppSpotlight.a8358c9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileMobileAppSpotlight.f2001f8a.js.map

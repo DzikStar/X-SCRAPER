@@ -193,8 +193,8 @@
                 });
             var I = o(269011),
                 P = o(335632),
-                v = o(962741);
-            const S = { ...(0, P.G)({}), [v.ZP.User]: (0, I.Z)({ shouldScribeImpression: !0 }) };
+                S = o(962741);
+            const v = { ...(0, P.G)({}), [S.ZP.User]: (0, I.Z)({ shouldScribeImpression: !0 }) };
             var x = o(840647),
                 B = o(942893);
             const L = (0, _.Z)((e, t) => {
@@ -220,7 +220,7 @@
             function Q({ history: e, module: t, referringScribeNamespace: o, topic: i, topicId: a }) {
                 const s = i?.name ? O({ topicName: i?.name }) : M,
                     c = i?.name ? H({ topicName: i?.name }) : $;
-                return r.createElement(m.nO, { data: L(o, a) }, r.createElement(r.Fragment, null, r.createElement(d.Z, { description: c }), r.createElement(p.Z, { canonical: N(a), description: c, title: s, type: "article" }), r.createElement(l.Z, { deepLink: F(a) }), r.createElement(h.Z, { backLocation: U, documentTitle: s, entryConfiguration: S, history: e, initialPageNamespace: z, module: t, renderEmptyState: () => r.createElement(n.Z, { header: A, message: G }), sidebarContent: W, timelinePrefix: f, title: R })));
+                return r.createElement(m.nO, { data: L(o, a) }, r.createElement(r.Fragment, null, r.createElement(d.Z, { description: c }), r.createElement(p.Z, { canonical: N(a), description: c, title: s, type: "article" }), r.createElement(l.Z, { deepLink: F(a) }), r.createElement(h.Z, { backLocation: U, documentTitle: s, entryConfiguration: v, history: e, initialPageNamespace: z, module: t, renderEmptyState: () => r.createElement(n.Z, { header: A, message: G }), sidebarContent: W, timelinePrefix: f, title: R })));
             }
             const q = C(Q);
         },
@@ -357,7 +357,7 @@
             const w = _(Z);
         },
         193048: (e, t, o) => {
-            o.r(t), o.d(t, { TOPICS_MANAGEMENT_PREFIX: () => P, UserTopicsScreen: () => x, VIEWING_OTHER_USERS_TOPICS_PREFIX: () => v, default: () => B });
+            o.r(t), o.d(t, { TOPICS_MANAGEMENT_PREFIX: () => P, UserTopicsScreen: () => x, VIEWING_OTHER_USERS_TOPICS_PREFIX: () => S, default: () => B });
             var r = o(202784),
                 i = o(457311),
                 n = o(111677),
@@ -385,8 +385,8 @@
                     .propsFromActions(() => ({ clearTimelineCache: b.Z, createLocalApiErrorHandler: (0, f.zr)("USER_TOPICS_SCREEN"), fetchUserByScreenNameIfNeeded: y.ZP.fetchOneByScreenNameIfNeeded })),
                 I = a().b8533bac,
                 P = "topics-management-",
-                v = "viewing-other-users-topics-",
-                S = r.createElement(c.Z, { withTopicsToFollow: !1 });
+                S = "viewing-other-users-topics-",
+                v = r.createElement(c.Z, { withTopicsToFollow: !1 });
             class x extends r.Component {
                 constructor(e, t) {
                     super(e, t),
@@ -421,8 +421,8 @@
                     {
                         const n = this._getScribeNamespace(this._isOnNotInterestedPage(), i),
                             a = i ? g : ((l = (o && o.id_str) || ""), (0, u.Z)({ timelineId: `viewing-user-${l}-topics-page-graphql`, network: { getEndpoint: (e) => e.withEndpoint(h.ZP).fetchViewingOtherUsersTopicsPagePage, getEndpointParams: ({ count: e }) => ({ count: e, userId: l }) }, formatResponse: m.Z, context: "FETCH_OTHER_USERS_TOPICS_PAGE", perfKey: "viewing-other-users-topics-page-GraphQL" })),
-                            s = i ? P : v;
-                        return r.createElement(d.Z, { backLocation: c, getTabLink: this._getTabLink, history: e, initialPageNamespace: n, module: a, renderEmptyState: "not_interested" === this.props.selectedTabId ? this._renderNotInterestedEmptyState : void 0, selectedTabId: t, sidebarContent: S, timelinePrefix: s, title: I });
+                            s = i ? P : S;
+                        return r.createElement(d.Z, { backLocation: c, getTabLink: this._getTabLink, history: e, initialPageNamespace: n, module: a, renderEmptyState: "not_interested" === this.props.selectedTabId ? this._renderNotInterestedEmptyState : void 0, selectedTabId: t, sidebarContent: v, timelinePrefix: s, title: I });
                     }
                     var l;
                 }
@@ -446,7 +446,7 @@
             x.contextType = l.rC;
             const B = C(x);
         },
-        98440: (e, t, o) => {
+        76388: (e, t, o) => {
             o.r(t), o.d(t, { default: () => c });
             var r = o(202784),
                 i = o(890601),
@@ -454,11 +454,11 @@
                 a = o(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const c = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Topics.34be12da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Topics.3d64541a.js.map

@@ -25,8 +25,8 @@
                 C = r(392237),
                 _ = r(41871),
                 E = r(458774),
-                P = r(420922),
-                w = r(103849),
+                w = r(420922),
+                P = r(103849),
                 T = r(70889),
                 R = r(445014),
                 x = r(986460),
@@ -84,14 +84,14 @@
                                 { currentBreakpoint: l } = this.state,
                                 c = (0, Z.Ci)(t),
                                 u = I(l) ? "xSmall" : "medium";
-                            return !c || c.isLive ? null : o || (r && "PLAY_REQUESTED" === r.playState) ? n.createElement(w.Z, { "aria-label": x.gF, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(p.default, null), onPress: i, size: u }) : r.isReplayButtonShown ? n.createElement(w.Z, { "aria-label": x.Js, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(m.default, null), onPress: s, size: u }) : n.createElement(w.Z, { "aria-label": x.M2, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(S.default, null), onPress: a, size: u });
+                            return !c || c.isLive ? null : o || (r && "PLAY_REQUESTED" === r.playState) ? n.createElement(P.Z, { "aria-label": x.gF, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(p.default, null), onPress: i, size: u }) : r.isReplayButtonShown ? n.createElement(P.Z, { "aria-label": x.Js, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(m.default, null), onPress: s, size: u }) : n.createElement(P.Z, { "aria-label": x.M2, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(S.default, null), onPress: a, size: u });
                         }),
                         (this._renderFullScreenButton = (e, t) => {
                             const { fullscreen: r } = t,
                                 { currentBreakpoint: o } = this.state,
                                 i = this._fullScreenIcon,
                                 a = I(o) ? "xSmall" : "medium";
-                            return r.isFullscreen ? n.createElement(w.Z, { "aria-label": x.iG, hoverLabelPreferredHorizontalOrientation: "start", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(i, { isFullscreen: r.isFullscreen }), onPress: this._exitFullScreen(e), size: a }) : n.createElement(w.Z, { "aria-label": x.lO, hoverLabelPreferredHorizontalOrientation: "start", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(i, { isFullscreen: r.isFullscreen }), onPress: this._requestFullScreen(e), size: a });
+                            return r.isFullscreen ? n.createElement(P.Z, { "aria-label": x.iG, hoverLabelPreferredHorizontalOrientation: "start", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(i, { isFullscreen: r.isFullscreen }), onPress: this._exitFullScreen(e), size: a }) : n.createElement(P.Z, { "aria-label": x.lO, hoverLabelPreferredHorizontalOrientation: "start", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(i, { isFullscreen: r.isFullscreen }), onPress: this._requestFullScreen(e), size: a });
                         }),
                         (this._fullScreenIcon = ({ isFullscreen: e, style: t }) => {
                             const { hidden: r, shown: o } = W;
@@ -124,7 +124,7 @@
                                 const { currentBreakpoint: r } = this.state,
                                     { areCaptionsShown: o } = t,
                                     { toggleCaptions: i } = e;
-                                return n.createElement(w.Z, { "aria-label": o ? L : O, hoverLabelWithExtraSpace: this.props.showScrubber, icon: o ? n.createElement(g.default, null) : n.createElement(y.default, null), onPress: i, size: I(r) ? "xSmall" : "medium", testID: "captions" });
+                                return n.createElement(P.Z, { "aria-label": o ? L : O, hoverLabelWithExtraSpace: this.props.showScrubber, icon: o ? n.createElement(g.default, null) : n.createElement(y.default, null), onPress: i, size: I(r) ? "xSmall" : "medium", testID: "captions" });
                             }
                         }),
                         (this._renderTimePlayed = () =>
@@ -175,7 +175,7 @@
                 }
                 render() {
                     const { hideControls: e, playerApi: t, playerState: r } = this.props;
-                    return t && r ? n.createElement(c.Z.ObserverContext.Consumer, null, (o) => n.createElement(h.Z, { onLayout: this._handleLayout, pointerEvents: "auto", ref: this._parentRef, style: R.i3 }, n.createElement(P.Z, { actionButton: this._renderActionButton(t, r), displayDismissableControls: !e, rightContent: n.createElement(n.Fragment, null, this._renderTimePlayed(), n.createElement(o, { focus: !0, interactionKey: z.CAPTIONS, interactionTimeoutMs: 0, mouseover: !0 }, this._renderCaptionsButton(t, r)), this._renderVolume(t, r), n.createElement(o, { focus: !0, interactionKey: z.FULLSCREEN, interactionTimeoutMs: 0, mouseover: !0 }, this._renderFullScreenButton(t, r))), scrubber: this._renderScrubber(t) }))) : null;
+                    return t && r ? n.createElement(c.Z.ObserverContext.Consumer, null, (o) => n.createElement(h.Z, { onLayout: this._handleLayout, pointerEvents: "auto", ref: this._parentRef, style: R.i3 }, n.createElement(w.Z, { actionButton: this._renderActionButton(t, r), displayDismissableControls: !e, rightContent: n.createElement(n.Fragment, null, this._renderTimePlayed(), n.createElement(o, { focus: !0, interactionKey: z.CAPTIONS, interactionTimeoutMs: 0, mouseover: !0 }, this._renderCaptionsButton(t, r)), this._renderVolume(t, r), n.createElement(o, { focus: !0, interactionKey: z.FULLSCREEN, interactionTimeoutMs: 0, mouseover: !0 }, this._renderFullScreenButton(t, r))), scrubber: this._renderScrubber(t) }))) : null;
                 }
             }
             U.defaultProps = { showScrubber: !0 };
@@ -328,8 +328,8 @@
                 render() {
                     const { guestsState: e, playerApi: t, playerState: r, stablePlayerState: i } = this.state,
                         { additionalBadges: s, aspectRatio: u, basePlayerClass: d, children: h, includeDisputeLinkInCopyrightErrorMessage: p, isFullScreen: b, objectFitVideo: v, onApiReady: g, onScroll: y, onStateUpdate: f, playerId: C, size: _, ...E } = this.props,
-                        P = { aspectRatio: this.props.aspectRatio, guestsState: e, playerApi: t, playerState: r, containerRef: this._containerRef },
-                        w = { ...P, playerState: i };
+                        w = { aspectRatio: this.props.aspectRatio, guestsState: e, playerApi: t, playerState: r, containerRef: this._containerRef },
+                        P = { ...w, playerState: i };
                     return o.createElement(
                         a.Z,
                         { isFullScreen: b, onScroll: y, ratio: u, style: [S.root, S[_]] },
@@ -337,10 +337,10 @@
                             ? o.createElement(l.Z, { onReloadPress: this._handleReload })
                             : o.createElement(
                                   m.Context.Provider,
-                                  { value: w },
+                                  { value: P },
                                   o.createElement(
                                       m.PeriodicContext.Provider,
-                                      { value: P },
+                                      { value: w },
                                       o.createElement(c.Z.RegistrationContext.Consumer, null, ({ registerPlayer: e }) => o.createElement(d, (0, n.Z)({}, E, { customOverlay: this._renderCustomOverlay(), displayOptions: { objectFitVideo: v }, setPlayerApi: this._handlePlayerApi(e) }))),
                                   ),
                               ),
@@ -652,10 +652,10 @@
                     }
                 }
                 render() {
-                    const { accessibilityLabelIcon: e, accessibilityLabelSlider: t, containerHeight: r, isMuted: a, onHideSlider: s, onMuteToggle: u, onShowSlider: b, onSliderChange: g, pullRight: y, sliderColor: f, volumePercent: C, withGraySliderTrack: _, withNavigationSliderBackground: E, ...P } = this.props,
-                        w = a ? o.createElement(l.default, null) : o.createElement(c.default, null),
+                    const { accessibilityLabelIcon: e, accessibilityLabelSlider: t, containerHeight: r, isMuted: a, onHideSlider: s, onMuteToggle: u, onShowSlider: b, onSliderChange: g, pullRight: y, sliderColor: f, volumePercent: C, withGraySliderTrack: _, withNavigationSliderBackground: E, ...w } = this.props,
+                        P = a ? o.createElement(l.default, null) : o.createElement(c.default, null),
                         T = E ? v.sliderWithNavigationBackground : v.sliderWithDefaultBackground;
-                    return o.createElement(h.Z, { disabled: !g, onFocusRingGained: g ? this._showSlider : void 0, onFocusRingLost: g ? this._hideSlider : void 0, onHoverIn: g ? this._showSlider : void 0, onHoverOut: g ? this._hideSlider : void 0 }, o.createElement(i.Z, { onKeyDown: g ? this._handleKeyDown : void 0 }, o.createElement(d.ZP, (0, n.Z)({ "aria-label": e, icon: w, onLayout: this._handleButtonLayoutChange, onPress: u, pullRight: y, type: "onMediaText" }, P)), g && o.createElement(h.Z, { onFocusRingGained: b, onFocusRingLost: s }, ({ isFocusedWithin: e }) => o.createElement(i.Z, { style: [v.sliderBackground, T, this._getSliderMarginStyles(P.size), e || this._shouldShowSlider(this.state) ? null : m.default.visuallyHidden, !!r && { maxHeight: this.state.sliderMaxHeight }] }, o.createElement(p.Z, { accessibilityLabelValueText: S({ volumePercent: C }), "aria-label": t, color: f || "white", isVertical: !0, keyboardStep: 10, max: 100, min: 0, onActive: this._handleSliderActive, onChange: g, step: 1, value: a ? 0 : C || 0, withGrayBackground: _ })))));
+                    return o.createElement(h.Z, { disabled: !g, onFocusRingGained: g ? this._showSlider : void 0, onFocusRingLost: g ? this._hideSlider : void 0, onHoverIn: g ? this._showSlider : void 0, onHoverOut: g ? this._hideSlider : void 0 }, o.createElement(i.Z, { onKeyDown: g ? this._handleKeyDown : void 0 }, o.createElement(d.ZP, (0, n.Z)({ "aria-label": e, icon: P, onLayout: this._handleButtonLayoutChange, onPress: u, pullRight: y, type: "onMediaText" }, w)), g && o.createElement(h.Z, { onFocusRingGained: b, onFocusRingLost: s }, ({ isFocusedWithin: e }) => o.createElement(i.Z, { style: [v.sliderBackground, T, this._getSliderMarginStyles(w.size), e || this._shouldShowSlider(this.state) ? null : m.default.visuallyHidden, !!r && { maxHeight: this.state.sliderMaxHeight }] }, o.createElement(p.Z, { accessibilityLabelValueText: S({ volumePercent: C }), "aria-label": t, color: f || "white", isVertical: !0, keyboardStep: 10, max: 100, min: 0, onActive: this._handleSliderActive, onChange: g, step: 1, value: a ? 0 : C || 0, withGrayBackground: _ })))));
                 }
             }
             b.defaultProps = { pullRight: !1 };
@@ -687,6 +687,19 @@
             };
             l.metadata = { width: 24, height: 24 };
             const c = l;
+        },
+        466445: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
+            var n = r(202784),
+                o = r(890601),
+                i = r(783427),
+                a = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M21 12L4 2v20l17-10z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
         },
         614425: (e, t, r) => {
             r.d(t, { Y7: () => n });
@@ -830,4 +843,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.MediaPreviewVideoPlayer.9392a60a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.MediaPreviewVideoPlayer.1bccbb2a.js.map

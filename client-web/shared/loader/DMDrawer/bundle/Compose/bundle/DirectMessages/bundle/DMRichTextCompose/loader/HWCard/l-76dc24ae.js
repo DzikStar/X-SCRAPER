@@ -21,8 +21,8 @@
                 D = d(462775),
                 w = d(663550),
                 M = d(329491),
-                k = d(942893),
-                v = d(500002),
+                v = d(942893),
+                k = d(500002),
                 C = d(443781),
                 E = d(288955),
                 f = d(325686),
@@ -143,22 +143,27 @@
             const re = (0, d(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.23"),
-                        d.e("icons.0"),
-                        d.e("icons.2"),
-                        d.e("icons.16"),
-                        d.e("icons.19"),
-                        d.e("icons.10"),
-                        d.e("icons.13"),
-                        d.e("icons.24"),
-                        d.e("icons.7"),
+                        d.e("icons.5"),
+                        d.e("icons.25"),
                         d.e("icons.22"),
+                        d.e("icons.6"),
+                        d.e("icons.4"),
+                        d.e("icons.9"),
+                        d.e("icons.15"),
+                        d.e("icons.7"),
+                        d.e("icons.3"),
+                        d.e("icons.20"),
+                        d.e("icons.2"),
+                        d.e("icons.18"),
                         d.e("icons.27"),
-                        d.e("icons.17"),
+                        d.e("icons.13"),
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
+                        d.e("icons.0"),
+                        d.e("icons.24"),
+                        d.e("icons.17"),
+                        d.e("icons.12"),
                         d.e("icons.11"),
-                        d.e("icons.26"),
                         d.e("modules.audio-6107ac1a"),
                         d.e("modules.audio-b953418a"),
                         d.e("modules.audio-7c51e6a7"),
@@ -169,21 +174,17 @@
                         d.e("modules.audio-e019dbda"),
                         d.e("modules.audio-262c94d4"),
                         d.e("modules.audio-c6fe4ea4"),
+                        d.e("icons.10"),
                         d.e("icons.8"),
-                        d.e("icons.4"),
-                        d.e("icons.14"),
-                        d.e("icons.28"),
-                        d.e("icons.21"),
-                        d.e("icons.3"),
-                        d.e("icons.1"),
-                        d.e("icons.18"),
+                        d.e("icons.26"),
+                        d.e("icons.19"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
@@ -258,7 +259,6 @@
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-380ace89"),
                         d.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         d.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
-                        d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bc6ccf4c"),
                         d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-6107ac1a"),
                         d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-e4e3d8bb"),
                         d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bf286bb5"),
@@ -316,18 +316,18 @@
                     const { tweetId: d } = a;
                     return d ? P.Z.selectHydrated(e, d) : void 0;
                 },
-                ke = (0, N.Z)()
+                ve = (0, N.Z)()
                     .propsFromState(() => ({ tweet: Me }))
                     .propsFromActions(() => ({ addToast: De.fz, createLocalApiErrorHandler: (0, x.zr)("BOOKMARK_BUTTON_CONTAINER"), onBookmark: P.Z.bookmark, onUnbookmark: P.Z.unbookmark, removeTweetsFromBookmarksTimeline: we.qk })),
-                ve = _().gb303814,
+                ke = _().gb303814,
                 Ce = _().h6f99ac4,
                 Ee = _().c2453318,
                 fe = _().j08dd2d4,
                 Ae = _().g1c463f6,
                 ge = t.createElement(ue.default, null),
                 Ie = t.createElement(be.default, null),
-                Se = (0, v.ZP)(
-                    ke((e) => {
+                Se = (0, k.ZP)(
+                    ve((e) => {
                         const { addToast: a, createLocalApiErrorHandler: d, history: r, onBookmark: n, onUnbookmark: o, removeTweetsFromBookmarksTimeline: l, tweet: s } = e,
                             { featureSwitches: i, userClaims: c, viewerUserId: u } = t.useContext(C.rC),
                             b = (0, me.z)(),
@@ -346,21 +346,21 @@
                             M = () => {
                                 r.push({ pathname: "/i/verified-get-verified", state: { variant: "BookmarkFolders" } });
                             },
-                            k = () => {
+                            v = () => {
                                 l({ [m.id_str]: !0 }), a({ text: Ae });
                             },
-                            v = (e) => {
+                            k = (e) => {
                                 b.scribeAction(e);
                             },
                             E = p
                                 ? () => {
-                                      o(m.id_str).then(k, d(he.j)), v("unbookmark");
+                                      o(m.id_str).then(v, d(he.j)), k("unbookmark");
                                   }
                                 : () => {
-                                      n(m.id_str).then(D, d(_e.h)), v("bookmark");
+                                      n(m.id_str).then(D, d(_e.h)), k("bookmark");
                                   },
                             f = g.default.isDarkMode() ? "translucentWhite35" : "gray200";
-                        return t.createElement(ce.ZP, { "aria-label": p ? fe : ve, borderColor: f, icon: p ? ge : Ie, onClick: E, size: _ ? "medium" : "large" });
+                        return t.createElement(ce.ZP, { "aria-label": p ? fe : ke, borderColor: f, icon: p ? ge : Ie, onClick: E, size: _ ? "medium" : "large" });
                     }),
                 );
             var ye = d(632658),
@@ -529,12 +529,12 @@
                                 w = "unified_card_app_store_open_link" === e ? "open_link" : e,
                                 M = o.Z.isPromoted(p) ? p?.impression_id : void 0;
                             if (c && !D) return;
-                            const v = k.Z.getClickTrackingEmbedDetails(p, r);
-                            if (w === l.bQ.CLICK_ID_EMBED && !v) return;
+                            const k = v.Z.getClickTrackingEmbedDetails(p, r);
+                            if (w === l.bQ.CLICK_ID_EMBED && !k) return;
                             let C = i;
                             n.default.isFollowerCard(a) && (C = "user_recommendation");
                             const E = _ && this._isLiveEventCard() ? n.default.getBindingValue(_.binding_values, "event_id") : void 0,
-                                f = { ...(C ? { element: C } : null), action: w, data: { ...(v && { click_tracking_embed_details: v }), items: [{ ...k.Z.getHWCardItem({ action: w, adFreeLabelEligible: !1, componentType: t, cardName: a, carouselEventDetails: d, clickContext: r, ctaIndex: s, impressionId: M, isDataSaverEnabled: m, isUCAppInstall: "unified_card_app_store_open_link" === e, liveEventId: E, tweetId: h.tweetId, tweetUserId: h.tweetUserId, ...(u ? { viewingUserId: D } : null) }) }] } };
+                                f = { ...(C ? { element: C } : null), action: w, data: { ...(k && { click_tracking_embed_details: k }), items: [{ ...v.Z.getHWCardItem({ action: w, adFreeLabelEligible: !1, componentType: t, cardName: a, carouselEventDetails: d, clickContext: r, ctaIndex: s, impressionId: M, isDataSaverEnabled: m, isUCAppInstall: "unified_card_app_store_open_link" === e, liveEventId: E, tweetId: h.tweetId, tweetUserId: h.tweetUserId, ...(u ? { viewingUserId: D } : null) }) }] } };
                             b.scribe(f);
                         }),
                         (this._handlePollVote = ({ cardId: e, choice: a }) => {
@@ -592,8 +592,8 @@
                             if ("tweet_video" === e.type) return t.createElement(U, (0, r.Z)({}, e, { preventPlayback: c, promotedContent: u }));
                             if ("uc_video" === e.type || "animated_gif" === e.type) {
                                 const { original_info: _, type: h, ...p } = e,
-                                    { "aria-label": D, backgroundColor: w, primaryLabel: M, secondaryLabel: k, ...v } = i.Z.extractVideoProps(m.Z.forTweet(s || "", b), { ext_alt_text: null, ...p, original_info: { ..._ }, type: this._getTypeForEntity(e) }),
-                                    C = { ...v };
+                                    { "aria-label": D, backgroundColor: w, primaryLabel: M, secondaryLabel: v, ...k } = i.Z.extractVideoProps(m.Z.forTweet(s || "", b), { ext_alt_text: null, ...p, original_info: { ..._ }, type: this._getTypeForEntity(e) }),
+                                    C = { ...k };
                                 return d && (C.aspectRatio = d), t.createElement(T.Z, (0, r.Z)({ additionalBadges: l, forceFullPreviewImage: "suboptimal" === a, shouldAutoplayWithoutMuting: n }, C, { "aria-label": aa, onClickBackground: this._onClickVideoBackground(e.id_str), preventPlayback: c, promotedContent: u }, o));
                             }
                             {
@@ -627,7 +627,7 @@
                 }
             }
             ta.contextType = C.rC;
-            const na = (0, v.ZP)(ee(ta));
+            const na = (0, k.ZP)(ee(ta));
         },
         702001: (e, a, d) => {
             d.d(a, { c: () => n });
@@ -637,4 +637,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-76dc24ae.1b00040a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-76dc24ae.bc461e1a.js.map

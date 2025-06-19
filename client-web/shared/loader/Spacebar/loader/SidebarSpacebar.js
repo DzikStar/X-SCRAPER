@@ -77,31 +77,31 @@
             const I = Object.freeze({ host: "host", cohost: "cohost", speaker: "speaker", listener: "listener" });
             var B = r(976145),
                 M = r(111677),
-                R = r.n(M),
-                T = r(292484),
-                z = r(952793),
+                z = r.n(M),
+                R = r(292484),
+                T = r(952793),
                 D = r(479506),
                 A = r(582129),
                 V = r(725516),
-                N = r(125363),
-                H = r(390387),
-                L = r(919022),
+                L = r(125363),
+                N = r(390387),
+                H = r(919022),
                 O = r(905710),
                 W = r(427478),
                 $ = r(823180),
                 F = r(449998);
             const U = "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
-                j = { Broadcast: R().e39b368e, Space: R().ab4fc8bc, EmployeeSpace: R().b6de83a0, PrivateBroadcast: R().g3f251f2, PrivateSpace: R().d08666ba, BeFirstJoin: R().eadb5a46, HostsBroadcast: R().f9629a8f, HostsSpace: R().ia3c0ab7, HostedBy: R().hd552761, RelativePosition: R().c3ea19a5, WithParticipants: R().a5235305, socialProof: { isListening: R().df9f8243, isSpeaking: R().g2445c2f, isHosting: R().fcfd5a67, isCohosting: R().f7882829 } };
+                j = { Broadcast: z().e39b368e, Space: z().ab4fc8bc, EmployeeSpace: z().b6de83a0, PrivateBroadcast: z().g3f251f2, PrivateSpace: z().d08666ba, BeFirstJoin: z().eadb5a46, HostsBroadcast: z().f9629a8f, HostsSpace: z().ia3c0ab7, HostedBy: z().hd552761, RelativePosition: z().c3ea19a5, WithParticipants: z().a5235305, socialProof: { isListening: z().df9f8243, isSpeaking: z().g2445c2f, isHosting: z().fcfd5a67, isCohosting: z().f7882829 } };
             function G(e) {
                 const t = (0, V.z)(),
-                    r = (0, N.I0)(),
+                    r = (0, L.I0)(),
                     o = (0, k.useHistory)(),
-                    n = (0, N.v9)(H.Qb),
-                    s = (0, z.hC)("rweb_live_dock_enabled"),
-                    i = (0, T.cm)() && s,
+                    n = (0, L.v9)(N.Qb),
+                    s = (0, T.hC)("rweb_live_dock_enabled"),
+                    i = (0, R.cm)() && s,
                     l = (0, P.b9)(A.dq),
                     c = (function () {
-                        const e = (0, N.I0)(),
+                        const e = (0, L.I0)(),
                             t = (0, P.b9)(F.wQ);
                         return a.useCallback(
                             (r, a) => {
@@ -125,14 +125,14 @@
                 a.useEffect(() => {
                     if (E.length) {
                         const e = [m, ...E];
-                        Z && e.push(Z.user_id_str), r(L.ZP.fetchManyIfNeeded(E));
+                        Z && e.push(Z.user_id_str), r(H.ZP.fetchManyIfNeeded(E));
                     }
                 }, [r, Z, E, m]);
                 const w = Math.max(0, C - E.length),
-                    x = (0, N.v9)((e) => L.ZP.selectMany(e, E)),
+                    x = (0, L.v9)((e) => H.ZP.selectMany(e, E)),
                     M = a.useMemo(() => (x.length ? x.map((e) => e.profile_image_url_https ?? U) : Array(E.length).fill(U)), [E, x]),
-                    R = a.useMemo(() => (x.length && "Square" === x[0].profile_image_shape ? "xSmall" : "infinite"), [x]),
-                    G = (0, N.v9)((e) => (Z ? L.ZP.select(e, Z?.user_id_str) : void 0)),
+                    z = a.useMemo(() => (x.length && "Square" === x[0].profile_image_shape ? "xSmall" : "infinite"), [x]),
+                    G = (0, L.v9)((e) => (Z ? H.ZP.select(e, Z?.user_id_str) : void 0)),
                     K = a.useMemo(() => {
                         if (Z && G) {
                             if (Z.role === I.host) return j.socialProof.isHosting({ name: G.name });
@@ -144,7 +144,7 @@
                     q = a.useMemo(() => {
                         if (Z && G && K) return { label: K, role: Z.role, user: G };
                     }, [Z, K, G]),
-                    Q = (0, N.v9)((e) => L.ZP.select(e, m));
+                    Q = (0, L.v9)((e) => H.ZP.select(e, m));
                 let J = "";
                 y ? (J = y) : Q && (f && (J = j.HostsSpace({ hostName: Q.name })), h && (J = j.HostsBroadcast({ hostName: Q.name })));
                 const Y = [];
@@ -158,7 +158,7 @@
                     ee = a.useMemo(() => ({ items: [{ audio_space_details: { broadcast_id: b, is_logged_in: n }, item_type: h ? D.Z.ItemType.PERISCOPE_BROADCAST : D.Z.ItemType.AUDIO_SPACE }] }), [b, n, h]);
                 return {
                     "aria-label": X,
-                    borderRadius: R,
+                    borderRadius: z,
                     onImpression: a.useCallback(() => {
                         t.scribe({ action: "impression", data: ee, element: "audiospace_fleet" });
                     }, [t, ee]),
@@ -206,7 +206,7 @@
                 te = r(443781);
             function re({ socialProof: e }) {
                 const t = a.useMemo(() => a.createElement(X.Z, { affiliateBadgeInfo: e.user.highlightedLabel, avatarSize: "small", isBlueVerified: e.user.is_blue_verified, isVerified: e.user.verified, name: e.user.name, nameSize: "subtext2", profileImageUrl: e.user.profile_image_url_https, verifiedType: e.user.verified_type }), [e]),
-                    r = a.useMemo(() => (e.role === I.host ? a.createElement(R().I18NFormatMessage, { $i18n: "d80a7547" }, t) : e.role === I.cohost ? a.createElement(R().I18NFormatMessage, { $i18n: "j7293d6b" }, t) : e.role === I.speaker ? a.createElement(R().I18NFormatMessage, { $i18n: "df79977f" }, t) : e.role === I.listener ? a.createElement(R().I18NFormatMessage, { $i18n: "ad960f39" }, t) : void 0), [t, e]);
+                    r = a.useMemo(() => (e.role === I.host ? a.createElement(z().I18NFormatMessage, { $i18n: "d80a7547" }, t) : e.role === I.cohost ? a.createElement(z().I18NFormatMessage, { $i18n: "j7293d6b" }, t) : e.role === I.speaker ? a.createElement(z().I18NFormatMessage, { $i18n: "df79977f" }, t) : e.role === I.listener ? a.createElement(z().I18NFormatMessage, { $i18n: "ad960f39" }, t) : void 0), [t, e]);
                 return a.createElement(_.ZP, { color: "gray700", numberOfLines: 1, size: "subtext2", style: ae.socialProof }, r);
             }
             const ae = n.default.create((e) => ({ socialProof: { alignItems: "center", display: "flex", flexDirection: "row", marginBottom: e.spaces.space8, marginEnd: e.spaces.space8, whiteSpace: "pre" } }));
@@ -330,7 +330,7 @@
             const l = s.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 c = i;
         },
-        98440: (e, t, r) => {
+        76388: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var a = r(202784),
                 o = r(890601),
@@ -338,11 +338,11 @@
                 s = r(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const l = i;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Spacebar~loader.SidebarSpacebar.ff85d64a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Spacebar~loader.SidebarSpacebar.6596c8da.js.map

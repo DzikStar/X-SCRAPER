@@ -43,8 +43,8 @@
                 g = r(872405),
                 h = r(124964),
                 C = r(392237),
-                y = r(346252),
-                v = r(864479),
+                v = r(346252),
+                y = r(864479),
                 b = r(952793),
                 S = r(946409),
                 E = r(903019),
@@ -61,13 +61,13 @@
                 D = r(378729),
                 F = r(366635),
                 A = r(854582),
-                H = r(868634),
-                L = r(741692),
+                L = r(868634),
+                H = r(741692),
                 R = r(686689);
-            const O = ({ badge: e, groupedTrends: t, hasProminentSocialContext: r, linkColor: n, promotedContent: o, promotedTrendDescription: i, publisher: a, publisherTitleColor: s = "text", richContext: c, scoreEvent: d, shouldTruncateTitle: p, style: u, supportingText: g, textColor: h = "gray700", timeString: C, title: y, titleFontSize: v = "body", titleWeight: b = "bold" }) => {
-                    const S = k.Z.getTextDirection(y),
+            const O = ({ badge: e, groupedTrends: t, hasProminentSocialContext: r, linkColor: n, promotedContent: o, promotedTrendDescription: i, publisher: a, publisherTitleColor: s = "text", richContext: c, scoreEvent: d, shouldTruncateTitle: p, style: u, supportingText: g, textColor: h = "gray700", timeString: C, title: v, titleFontSize: y = "body", titleWeight: b = "bold" }) => {
+                    const S = k.Z.getTextDirection(v),
                         E = r ? void 0 : B.title;
-                    return l.createElement(m.Z, { style: u }, l.createElement(_.ZP, { color: s, dir: S, numberOfLines: p ? 3 : void 0, size: v, style: E, weight: b, withHashflags: !0 }, y), r ? null : l.createElement(P.Z, { color: h, style: B.aboveTitle }, g ? l.createElement(_.ZP, { color: h, numberOfLines: 1, size: "subtext2" }, g) : null, a ? l.createElement(L.S3, { author: a, color: s, size: "subtext2" }) : null, e || C ? V(C, e, h) : null), l.createElement(M.Z, { groupedTrends: t, linkColor: n, textColor: h }), r ? l.createElement(m.Z, { style: B.belowTitle }, d ? $(d) : (e || C) && a ? z({ badge: e, publisher: a, textColor: h, timeString: C }) || V(C, e, h) : null) : null, o && o.advertiser ? l.createElement(l.Fragment, null, l.createElement(_.ZP, { color: h }, i), l.createElement(D.Z, { color: "white", promotedContent: o, style: B.promotedIndicator })) : null, c ? l.createElement(R.Z, { color: h, entities: c.entities, rtl: c.rtl, size: "subtext2", text: c.text }) : null);
+                    return l.createElement(m.Z, { style: u }, l.createElement(_.ZP, { color: s, dir: S, numberOfLines: p ? 3 : void 0, size: y, style: E, weight: b, withHashflags: !0 }, v), r ? null : l.createElement(P.Z, { color: h, style: B.aboveTitle }, g ? l.createElement(_.ZP, { color: h, numberOfLines: 1, size: "subtext2" }, g) : null, a ? l.createElement(H.S3, { author: a, color: s, size: "subtext2" }) : null, e || C ? V(C, e, h) : null), l.createElement(M.Z, { groupedTrends: t, linkColor: n, textColor: h }), r ? l.createElement(m.Z, { style: B.belowTitle }, d ? $(d) : (e || C) && a ? z({ badge: e, publisher: a, textColor: h, timeString: C }) || V(C, e, h) : null) : null, o && o.advertiser ? l.createElement(l.Fragment, null, l.createElement(_.ZP, { color: h }, i), l.createElement(D.Z, { color: "white", promotedContent: o, style: B.promotedIndicator })) : null, c ? l.createElement(R.Z, { color: h, entities: c.entities, rtl: c.rtl, size: "subtext2", text: c.text }) : null);
                 },
                 z = ({ badge: e, publisher: t, textColor: r, timeString: n }) => {
                     const o = l.createElement(F.Z, { isBlueVerified: t.is_blue_verified, isProtected: t.protected, isVerified: t.verified, name: t.name, nameSize: "subtext2", profileImageUrl: t.profile_image_url_https });
@@ -77,7 +77,7 @@
                     const { category: t, eventState: r, gameClock: n, gameClockPeriod: o, participants: i, startTimeMillis: a, winnerId: s } = e;
                     return l.createElement(A.Z, { category: t, gameClock: n, gameClockPeriod: o, gameState: r, startTimeMillis: a, teams: i, winnerId: s, withCategory: !1 });
                 },
-                V = (e, t, r) => (t && t.text ? l.createElement(H.ZP, { type: "live" }, t.text) : e ? l.createElement(m.Z, { style: B.timestamp }, l.createElement(_.ZP, { color: r, numberOfLines: 1, size: "subtext2" }, e)) : null),
+                V = (e, t, r) => (t && t.text ? l.createElement(L.ZP, { type: "live" }, t.text) : e ? l.createElement(m.Z, { style: B.timestamp }, l.createElement(_.ZP, { color: r, numberOfLines: 1, size: "subtext2" }, e)) : null),
                 B = C.default.create((e) => ({ aboveTitle: { alignItems: "center", flexDirection: "row" }, belowTitle: { marginTop: e.spaces.space4 }, promotedIndicator: { marginTop: e.spaces.space12 }, publisherRow: { alignItems: "center" }, timestamp: { maxWidth: "50%" }, title: { marginVertical: e.spaces.space2 } })),
                 W = l.memo(O);
             var j = r(668214),
@@ -103,16 +103,16 @@
                     })
                     .propsFromActions(() => ({ saveAsRecentSearch: N.DI })),
                 K = (e) => {
-                    const { badge: t, dataSaverMode: r, feedbackItems: n, groupedTrends: i, hasProminentSocialContext: a, id: s, image: c, isInSidebar: d, link: h, onClick: C, onImpression: v, publisher: S, richContext: f, saveAsRecentSearch: x, scoreEvent: w, shouldStoreTypeaheadItem: Z, socialContext: T, supportingText: k, timeString: _, title: P, topic: M } = e,
+                    const { badge: t, dataSaverMode: r, feedbackItems: n, groupedTrends: i, hasProminentSocialContext: a, id: s, image: c, isInSidebar: d, link: h, onClick: C, onImpression: y, publisher: S, richContext: f, saveAsRecentSearch: x, scoreEvent: w, shouldStoreTypeaheadItem: Z, socialContext: T, supportingText: k, timeString: _, title: P, topic: M } = e,
                         D = (0, b.hC)("responsive_web_trends_ui_top_articles");
                     l.useEffect(() => {
-                        v && v();
+                        y && y();
                     }, []);
                     const F = l.useCallback(() => {
                             C(), x && Z && Z(o.Z.ItemType.EVENT) && x({ event: { id: s, image: c || { url: "", height: 0, width: 0 }, supportText: k, title: P, type: E.g2.Event } });
                         }, [s, c, C, x, Z, k, P]),
                         A = l.useMemo(() => (n?.length ? l.createElement(I.Z, { feedbackItems: n }) : null), [n]);
-                    return l.createElement(p.$6, null, (e) => l.createElement(u.Z, { link: e.withAnchorless(h), onClick: F, style: te.rootLink, withDarkerInteractiveBackground: d }, a && T ? l.createElement(g.Z, { rightControl: A, style: te.socialContextRow }, l.createElement(ee, { socialContext: T, topic: M })) : null, l.createElement(m.Z, { style: te.row }, D && l.createElement(y.Z, { dataSaverMode: r, icon: "news", image: c, isCellWithProminentSocialContext: a, scoreEvent: w, type: a ? "fixed" : void 0 }), l.createElement(W, { badge: t, groupedTrends: i, hasProminentSocialContext: a, publisher: S, richContext: f, scoreEvent: w, style: D ? te.detailsTrendUI : te.details, supportingText: k, timeString: _, title: P }), !D && l.createElement(y.Z, { dataSaverMode: r, icon: "news", image: c, isCellWithProminentSocialContext: a, scoreEvent: w, type: a ? "fixed" : void 0 }))));
+                    return l.createElement(p.$6, null, (e) => l.createElement(u.Z, { link: e.withAnchorless(h), onClick: F, style: te.rootLink, withDarkerInteractiveBackground: d }, a && T ? l.createElement(g.Z, { rightControl: A, style: te.socialContextRow }, l.createElement(ee, { socialContext: T, topic: M })) : null, l.createElement(m.Z, { style: te.row }, D && l.createElement(v.Z, { dataSaverMode: r, icon: "news", image: c, isCellWithProminentSocialContext: a, scoreEvent: w, type: a ? "fixed" : void 0 }), l.createElement(W, { badge: t, groupedTrends: i, hasProminentSocialContext: a, publisher: S, richContext: f, scoreEvent: w, style: D ? te.detailsTrendUI : te.details, supportingText: k, timeString: _, title: P }), !D && l.createElement(v.Z, { dataSaverMode: r, icon: "news", image: c, isCellWithProminentSocialContext: a, scoreEvent: w, type: a ? "fixed" : void 0 }))));
                 },
                 X = ({ socialContext: e, topic: t }) => {
                     const { contextType: r, landingUrl: n, text: o, topicContext: i } = e,
@@ -122,7 +122,7 @@
                 },
                 ee = l.memo(X),
                 te = C.default.create((e) => ({ detailsTrendUI: { flex: 1, marginStart: e.spaces.space12 }, details: { flex: 1, marginEnd: e.spaces.space12 }, topicMiddot: { alignSelf: "center", paddingEnd: 0 }, rootLink: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, row: { flexDirection: "row" }, socialContextRow: { justifyContent: "space-between", marginBottom: e.spaces.space4 } })),
-                re = (0, v.Z)(J(l.memo(K)));
+                re = (0, y.Z)(J(l.memo(K)));
             var ne = r(530732),
                 oe = r(682474),
                 ie = r(284702),
@@ -180,8 +180,8 @@
             var ge = r(232418),
                 he = r(228356),
                 Ce = r(836255),
-                ye = r(919022);
-            const ve = (e, t) => t.entry.content,
+                ve = r(919022);
+            const ye = (e, t) => t.entry.content,
                 be = (e, t) => {
                     const r = t.entry.content.media?.mediaEntity?.tweetMedia?.momentId;
                     return r ? he.Z.select(e, r) : void 0;
@@ -192,7 +192,7 @@
                 },
                 Ee = (e, t) => {
                     const r = t.entry.content.promotedMetadata?.advertiserId;
-                    return r ? ye.ZP.select(e, r) : void 0;
+                    return r ? ve.ZP.select(e, r) : void 0;
                 },
                 fe = (e, t) => {
                     const { mediaEntity: r, mediaKey: n } = t.entry.content.media ?? {};
@@ -205,7 +205,7 @@
                     }
                 },
                 we = (0, j.Z)()
-                    .propsFromState(() => ({ advertiser: Ee, eventSummary: ve, moment: be, tweet: Se, broadcast: fe }))
+                    .propsFromState(() => ({ advertiser: Ee, eventSummary: ye, moment: be, tweet: Se, broadcast: fe }))
                     .adjustStateProps(({ advertiser: e, broadcast: t, eventSummary: r, moment: n, tweet: o }) => {
                         const { promotedMetadata: i } = r;
                         return { coverMediaFromTweet: xe({ tweet: o, eventSummary: r }), manualCrops: (0, ge.q8)(n), promotedContent: i ? { advertiser: { id_str: i.advertiserId }, advertiser_name: e ? e.name : void 0, impression_id: i.impressionId, disclosure_type: "NoDisclosure" } : void 0, promotedTrendDescription: i ? i.promotedTrendDescription : void 0, tweetId: o?.id_str, broadcast: t };
@@ -213,13 +213,13 @@
                 Ze = "eventHero",
                 Te = "white",
                 Ie = (e) => {
-                    const { badge: t, broadcast: r, coverMediaFromTweet: n, feedbackItems: o, groupedTrends: i, image: a, link: s, manualCrops: c, onClick: d, onImpression: u, promotedContent: g, promotedTrendDescription: h, publisher: C, richContext: y, supportingText: v, timeString: S, title: E, tweetId: f } = e;
+                    const { badge: t, broadcast: r, coverMediaFromTweet: n, feedbackItems: o, groupedTrends: i, image: a, link: s, manualCrops: c, onClick: d, onImpression: u, promotedContent: g, promotedTrendDescription: h, publisher: C, richContext: v, supportingText: y, timeString: S, title: E, tweetId: f } = e;
                     l.useEffect(() => {
                         u && u();
                     }, []);
                     const x = E.length > 80 ? "headline1" : "title4",
                         w = (0, b.hC)("rweb_sourcemap_migration");
-                    return l.createElement(p.$6, null, (e) => l.createElement(l.Fragment, null, l.createElement(ne.Z, { link: e.withAnchorless(s), onClick: d, style: w && ke.containerRedesign, testID: Ze }, l.createElement(pe, { broadcast: r, coverMediaFromTweet: n, image: a, manualCrops: c, promotedContent: g, tweetId: f }), l.createElement(m.Z, { style: _e }, l.createElement(W, { badge: t, groupedTrends: i, linkColor: Te, promotedContent: g, promotedTrendDescription: h, publisher: C, publisherTitleColor: Te, richContext: y, shouldTruncateTitle: !0, supportingText: v, textColor: Te, timeString: S, title: E, titleFontSize: x, titleWeight: "heavy" }))), o?.length ? l.createElement(m.Z, { style: ke.menuContainer }, l.createElement(I.Z, { feedbackItems: o, isDisplayedOnMedia: !0 })) : null));
+                    return l.createElement(p.$6, null, (e) => l.createElement(l.Fragment, null, l.createElement(ne.Z, { link: e.withAnchorless(s), onClick: d, style: w && ke.containerRedesign, testID: Ze }, l.createElement(pe, { broadcast: r, coverMediaFromTweet: n, image: a, manualCrops: c, promotedContent: g, tweetId: f }), l.createElement(m.Z, { style: _e }, l.createElement(W, { badge: t, groupedTrends: i, linkColor: Te, promotedContent: g, promotedTrendDescription: h, publisher: C, publisherTitleColor: Te, richContext: v, shouldTruncateTitle: !0, supportingText: y, textColor: Te, timeString: S, title: E, titleFontSize: x, titleWeight: "heavy" }))), o?.length ? l.createElement(m.Z, { style: ke.menuContainer }, l.createElement(I.Z, { feedbackItems: o, isDisplayedOnMedia: !0 })) : null));
                 },
                 ke = C.default.create((e) => ({ containerRedesign: { marginHorizontal: e.spaces.space16 }, menuContainer: { position: "absolute", top: e.spaces.space12, end: e.spaces.space16 }, details: { justifyContent: "flex-end", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical } })),
                 _e = [C.default.absoluteFill, ke.details],
@@ -228,16 +228,16 @@
                 De = r.n(Me),
                 Fe = r(71620),
                 Ae = r(988566),
-                He = r(694180);
-            const Le = (e, t) => t.entry.content,
+                Le = r(694180);
+            const He = (e, t) => t.entry.content,
                 Re = (e, t) => {
-                    const r = Le(0, t),
+                    const r = He(0, t),
                         n = r.socialContext && r.socialContext.topicContext && r.socialContext.topicContext.topicId;
                     return n ? Q.Z.select(e, n) : void 0;
                 },
                 Oe = (e, t) => {
-                    const { publisherId: r } = Le(0, t);
-                    return r ? ye.ZP.select(e, r) : void 0;
+                    const { publisherId: r } = He(0, t);
+                    return r ? ve.ZP.select(e, r) : void 0;
                 },
                 ze = (e) => {
                     const { analytics: t, createLocalApiErrorHandler: r, logTrend: n, promotedMetadata: o, ...i } = e,
@@ -264,7 +264,7 @@
                     }
                 },
                 $e = (0, j.Z)()
-                    .propsFromState(() => ({ eventSummary: Le, publisher: Oe, topic: Re }))
+                    .propsFromState(() => ({ eventSummary: He, publisher: Oe, topic: Re }))
                     .adjustStateProps(({ eventSummary: e, publisher: t, topic: r }) => {
                         const { displayType: n, groupedTrends: o, promotedMetadata: i, richContext: a } = e,
                             s = (0, S.s9)(e.url);
@@ -273,7 +273,7 @@
                             c = (o || []).map((e) => ({ name: e.name, link: (0, S.s9)(e.url) }));
                         return { badge: e.badge, displayType: e.displayType, groupedTrends: c, image: e.image, link: s, promotedMetadata: i, publisher: t, richContext: a, socialContext: l, supportingText: e.supportingText, timeString: e.timeString, title: e.title };
                     })
-                    .propsFromActions(() => ({ logTrend: He.dS, createLocalApiErrorHandler: (0, Fe.zr)("URT_EVENT_SUMMARY") }))
+                    .propsFromActions(() => ({ logTrend: Le.dS, createLocalApiErrorHandler: (0, Fe.zr)("URT_EVENT_SUMMARY") }))
                     .withAnalytics()(l.memo(ze)),
                 Ve = (e) =>
                     a
@@ -307,7 +307,7 @@
                 });
         },
         204744: (e, t, r) => {
-            r.d(t, { DI: () => S, H$: () => p, OB: () => E, Ww: () => d, YB: () => m, hj: () => C, qF: () => v });
+            r.d(t, { DI: () => S, H$: () => p, OB: () => E, Ww: () => d, YB: () => m, hj: () => C, qF: () => y });
             r(901951);
             var n = r(499627),
                 o = r(390387);
@@ -354,11 +354,11 @@
                             a = d(i);
                         return (0, o.Qb)(i) ? t(s(a)) : Promise.resolve();
                     },
-                y = "rweb/recentSearches/CLEAR_ALL",
-                v =
+                v = "rweb/recentSearches/CLEAR_ALL",
+                y =
                     () =>
                     (e, t, { userPersistence: r }) => {
-                        e({ type: y });
+                        e({ type: v });
                         const n = t(),
                             i = d(n);
                         return (0, o.Qb)(n) ? e(s(i)) : Promise.resolve();
@@ -406,7 +406,7 @@
                                 n = r ? l(r, e.recentSearches) : [];
                             return { ...e, recentSearches: n };
                         }
-                        case y:
+                        case v:
                             return { fetched: !0, recentSearches: [] };
                         case u:
                             return { ...e, ...t.payload, fetched: !0 };
@@ -433,6 +433,19 @@
                     return o ? n.createElement(a.ZP, { color: r, numberOfLines: 2, size: "subtext2", style: p.root }, o) : null;
                 };
         },
+        76388: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
+            var n = r(202784),
+                o = r(890601),
+                i = r(783427),
+                a = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.EventSummaryHandler.9f5930aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.EventSummaryHandler.1d9c2e1a.js.map
