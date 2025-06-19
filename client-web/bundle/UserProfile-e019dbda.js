@@ -42,7 +42,7 @@
                             if (e.metrics.length > 1)
                                 return r.createElement(
                                     d.Z,
-                                    { style: S.tiles },
+                                    { style: Z.tiles },
                                     e.metrics.map((e) => {
                                         const n = t?.find((t) => t.metric_type === e.metricType);
                                         return n?.metric_value ? r.createElement(w, { key: e.metricType, metric: e.metricType, metricResult: n }) : null;
@@ -61,7 +61,7 @@
                         i = r.useCallback(() => {
                             o.scribe({ action: "dismiss" }), n();
                         }, [n, o]);
-                    return r.createElement(d.Z, { style: S.container, testID: "analytics-preview" }, r.createElement(d.Z, { style: S.heading }, e.metrics.length > 1 ? r.createElement(c.ZP, { size: "headline2", weight: "bold" }, D({ days: e.periodInDays })) : null, r.createElement(c.ZP, { color: "gray700", size: "subtext3" }, M), r.createElement(u.ZP, { icon: r.createElement(f.default, null), onClick: i, style: S.dismissButton, testID: "dismiss-button", type: "primaryText" })), r.createElement(d.Z, { style: S.content }, s, r.createElement(u.ZP, { icon: r.createElement(b.default, null), link: { pathname: "/i/premium_sign_up", state: { referring_page: "account_analytics" } }, size: "xSmall", style: S.unlockButton, type: "primaryFilled" }, E)));
+                    return r.createElement(d.Z, { style: Z.container, testID: "analytics-preview" }, r.createElement(d.Z, { style: Z.heading }, e.metrics.length > 1 ? r.createElement(c.ZP, { size: "headline2", weight: "bold" }, D({ days: e.periodInDays })) : null, r.createElement(c.ZP, { color: "gray700", size: "subtext3" }, M), r.createElement(u.ZP, { icon: r.createElement(f.default, null), onClick: i, style: Z.dismissButton, testID: "dismiss-button", type: "primaryText" })), r.createElement(d.Z, { style: Z.content }, s, r.createElement(u.ZP, { icon: r.createElement(b.default, null), link: { pathname: "/i/premium_sign_up", state: { referring_page: "account_analytics" } }, size: "xSmall", style: Z.unlockButton, type: "primaryFilled" }, E)));
                 },
                 I = (e) => {
                     const t = (0, _.Z)({ metrics: e.config.metrics, periodInDays: e.config.periodInDays }),
@@ -77,8 +77,8 @@
                     );
                 },
                 k = r.memo(I),
-                S = m.default.create((e) => ({ container: { marginHorizontal: e.spaces.space16, backgroundColor: e.colors.unreadCellBackground, borderRadius: e.borderRadii.large, padding: e.spaces.space16 }, content: { justifyContent: "space-between", flexDirection: "row", flexWrap: "wrap" }, tiles: { flexDirection: "row", gap: e.spaces.space48 }, heading: { flexDirection: "row", alignItems: "center", gap: e.spaces.space16 }, unlockButton: { alignSelf: "flex-end", marginTop: e.spaces.space12 }, dismissButton: { marginStart: "auto" } })),
-                Z = { showForMsec: a.fz, reappearAfterMsec: a.Ho, dismissForMsec: a.dV },
+                Z = m.default.create((e) => ({ container: { marginHorizontal: e.spaces.space16, backgroundColor: e.colors.unreadCellBackground, borderRadius: e.borderRadii.large, padding: e.spaces.space16 }, content: { justifyContent: "space-between", flexDirection: "row", flexWrap: "wrap" }, tiles: { flexDirection: "row", gap: e.spaces.space48 }, heading: { flexDirection: "row", alignItems: "center", gap: e.spaces.space16 }, unlockButton: { alignSelf: "flex-end", marginTop: e.spaces.space12 }, dismissButton: { marginStart: "auto" } })),
+                S = { showForMsec: a.fz, reappearAfterMsec: a.Ho, dismissForMsec: a.dV },
                 v = { showForMsec: a.Tg, reappearAfterMsec: a.Vv, dismissForMsec: a.IZ },
                 A = {
                     DemoMultipleMetrics: {
@@ -88,9 +88,9 @@
                             { metricType: "Likes", threshold: 1 },
                         ],
                         periodInDays: 7,
-                        fatigueConfig: { key: "AnalyticsPreview_DemoMultipleMetrics", ...Z },
+                        fatigueConfig: { key: "AnalyticsPreview_DemoMultipleMetrics", ...S },
                     },
-                    DemoSingleMetric: { metrics: [{ metricType: "ProfileVisits", threshold: 1 }], periodInDays: 7, fatigueConfig: { key: "AnalyticsPreview_DemoSingleMetric", ...Z } },
+                    DemoSingleMetric: { metrics: [{ metricType: "ProfileVisits", threshold: 1 }], periodInDays: 7, fatigueConfig: { key: "AnalyticsPreview_DemoSingleMetric", ...S } },
                     MultipleMetrics: {
                         metrics: [
                             { metricType: "Impressions", threshold: 1e3 },
@@ -501,18 +501,18 @@
                             },
                             [t, M, d, y],
                         ),
-                        S = r.useCallback(
+                        Z = r.useCallback(
                             (e) => {
                                 w && (k({ element: "super_follow_subscribe_button", action: "unfollow" }), g(w, { promotedContent: d }).catch(n(p.X))), e();
                             },
                             [n, d, g, w, k],
                         ),
-                        Z = r.useCallback(
+                        S = r.useCallback(
                             (e) => {
-                                const t = [{ Icon: m.default, text: T({ screenName: P }), onClick: S }];
+                                const t = [{ Icon: m.default, text: T({ screenName: P }), onClick: Z }];
                                 return r.createElement(o.Z, { isFixed: !0, items: t, onCloseRequested: e });
                             },
-                            [S, P],
+                            [Z, P],
                         ),
                         v = i ? T({ screenName: P }) : D({ screenName: P });
                     return r.createElement(s.ZP, {
@@ -523,7 +523,7 @@
                         onPress: () => {
                             !P || i || l || (k({ element: "super_follow_subscribe_button", action: "click" }), _.push(`/${P}/creator-subscriptions/subscribe`, { referring_page: "profile_intent" }));
                         },
-                        renderMenu: i ? Z : void 0,
+                        renderMenu: i ? S : void 0,
                         style: b,
                         type: l && i ? "primaryOutlined" : void 0,
                     });
@@ -558,8 +558,8 @@
             const P = u().ia5e7488,
                 I = { label: P },
                 k = u().j33d8902,
-                S = { label: k },
-                Z = u().a8ab3d08,
+                Z = { label: k },
+                S = u().a8ab3d08,
                 v = u().d740d2d9,
                 A = { bandcamp_handle: { icon: r.createElement(m.default, null), label: u().a7cf1e98, url: "https://bandcamp.com/" }, bitcoin_handle: { icon: r.createElement(p.default, null), label: u().d876e67e }, cash_app_handle: { icon: r.createElement(h.default, null), label: u().f85f6760, url: "https://cash.app/" }, ethereum_handle: { icon: r.createElement(f.default, null), label: u().a32a7c06 }, gofundme_handle: { icon: r.createElement(b.default, null), label: u().cc1a3bc4, url: "https://gofundme.com/f/" }, patreon_handle: { icon: r.createElement(g.default, null), label: u().d4d74bb4, url: "https://patreon.com/" }, pay_pal_handle: { icon: r.createElement(y.default, null), label: u().h14fbc52, url: "https://paypal.me/" }, venmo_handle: { icon: r.createElement(w.default, null), label: u().h1198dcc, url: "https://venmo.com/" } };
             function C({ style: e, userId: t }) {
@@ -579,7 +579,7 @@
                     null,
                     r.createElement(s.ZP, {
                         "aria-label": k,
-                        hoverLabel: S,
+                        hoverLabel: Z,
                         icon: r.createElement(_.default, null),
                         onPress: function () {
                             c((e) => !e);
@@ -591,7 +591,7 @@
                               i.Z,
                               { onMaskClick: f, style: F.sheet, type: "bottom", withMask: !0 },
                               r.createElement(s.ZP, { "aria-label": P, hoverLabel: I, icon: r.createElement(D.default, null), onPress: f, style: F.close, type: "primaryText" }),
-                              r.createElement(o.Z, { style: F.header }, r.createElement(l.ZP, { weight: "bold" }, Z), r.createElement(l.ZP, null, `@${u.screen_name}`)),
+                              r.createElement(o.Z, { style: F.header }, r.createElement(l.ZP, { weight: "bold" }, S), r.createElement(l.ZP, null, `@${u.screen_name}`)),
                               Object.entries(h)
                                   .filter(([e, t]) => t)
                                   .map(([e, t]) => {
@@ -681,9 +681,9 @@
                 },
                 I = T.Z.register(E),
                 k = (e, t) => I.select(e, t.userId),
-                S = (e, t) => I.selectFetchStatus(e, t.userId),
-                Z = (0, b.Z)()
-                    .propsFromState(() => ({ translation: k, translationFetchStatus: S, userLanguage: g.VT }))
+                Z = (e, t) => I.selectFetchStatus(e, t.userId),
+                S = (0, b.Z)()
+                    .propsFromState(() => ({ translation: k, translationFetchStatus: Z, userLanguage: g.VT }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, f.zr)("TRANSLATE_USER_BIO"), fetchTranslation: I.fetchOneIfNeeded, fetchStreamedGrokTranslation: I.fetchStreamedGrokTranslation }))
                     .withAnalytics(),
                 v = i().ad7a451e;
@@ -730,7 +730,7 @@
                 }
             }
             A.contextType = h.rC;
-            const C = Z(A);
+            const C = S(A);
         },
         703738: (e, t, n) => {
             n.d(t, { z: () => s });
@@ -918,10 +918,9 @@
                     return { avatar: l || (!u && !t && !n && !r), badges: l || !r, description: l || (!c && !d && !u && !n && !r), followButton: !(l || d || u || t || n || r), followersYouKnow: !l && !d && !c && !u && !t && !n && !r && (a.following || !a.protected), followIndicator: !r, fullName: m, label: m, stats: l || (!d && !u && !n && !r), subscriptionsCount: l || !a.has_hidden_subscriptions_on_profile };
                 },
                 o = ({ displaySensitiveMedia: e, isOwnProfile: t, user: n, userProfileInterstitialType: a }) => (a === r.Z.SensitiveMedia || a === r.Z.OffensiveProfileContent) && !(t || n.following || e),
-                s = ({ isOwnProfile: e, isSoftBlockEnabled: t = !1, user: n }) => {
-                    const r = n.blocked_by,
-                        a = n.protected && !n.following;
-                    return t ? e || !a : e || (!a && !r);
+                s = ({ isOwnProfile: e, user: t }) => {
+                    const n = t.protected && !t.following;
+                    return e || !n;
                 };
         },
         893664: (e, t, n) => {
@@ -932,7 +931,7 @@
                 s = n(835546);
             const i = (e) => {
                 const t = o()(r.Z, e.user);
-                return !(!t.relationship_perspectives || !t.privacy) && (0, s.n5)({ isOwnProfile: e.isOwnProfile, isSoftBlockEnabled: e.isSoftBlockEnabled, user: { blocked_by: Boolean(t.relationship_perspectives?.blocked_by), following: Boolean(t.relationship_perspectives?.following), protected: Boolean(t.privacy?.protected) } });
+                return !(!t.relationship_perspectives || !t.privacy) && (0, s.n5)({ isOwnProfile: e.isOwnProfile, user: { blocked_by: Boolean(t.relationship_perspectives?.blocked_by), following: Boolean(t.relationship_perspectives?.following), protected: Boolean(t.privacy?.protected) } });
             };
         },
         690282: (e, t, n) => {
@@ -1105,4 +1104,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e019dbda.160e7ffa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e019dbda.78e2a5ba.js.map

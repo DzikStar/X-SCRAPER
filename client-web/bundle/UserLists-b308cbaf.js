@@ -676,7 +676,7 @@
                         }),
                         (this._getUserBlockAction = () => {
                             const { author: e } = this.props;
-                            if (e) return (0, m.op)({ blockAction: this._handleBlockUser, blockSubtext: $, isSoftBlockEnabled: this.context.featureSwitches.isTrue("xprofile_blocked_by_view_enabled"), source: m.SC.LIST_DETAIL, unblockAction: this._handleUnblockUser, unblockSubtext: H, user: e });
+                            if (e) return (0, m.op)({ blockAction: this._handleBlockUser, blockSubtext: $, source: m.SC.LIST_DETAIL, unblockAction: this._handleUnblockUser, unblockSubtext: H, user: e });
                         }),
                         (this._getMuteToggleAction = () => {
                             const { addToast: e, analytics: t, isSubscribed: i, list: a, toggleMute: r } = this.props;
@@ -1223,4 +1223,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserLists-b308cbaf.01e2e78a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserLists-b308cbaf.8eecb62a.js.map

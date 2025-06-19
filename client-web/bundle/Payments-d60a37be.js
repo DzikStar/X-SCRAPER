@@ -125,32 +125,32 @@
                 m = a(725516),
                 h = a(43429),
                 p = a(727384),
-                _ = a(413722),
-                g = a(980407),
-                f = a(56495),
-                y = a(10622),
-                b = a.n(y);
+                _ = a(325686),
+                g = a(413722),
+                f = a(980407),
+                y = a(743080),
+                b = a(56495),
+                v = a(10622),
+                C = a.n(v);
             a(585488);
-            const v = f.Z,
-                C = ({ challengeId: e, challengeResponse: t, environment: a, loginRequestId: n }) =>
-                    b()(a, v, { challengeId: e, challengeResponse: t, loginRequestId: n }, { fetchPolicy: "network-only" })
+            const P = b.Z,
+                k = ({ challengeId: e, challengeResponse: t, environment: a, loginRequestId: n }) =>
+                    C()(a, P, { challengeId: e, challengeResponse: t, loginRequestId: n }, { fetchPolicy: "network-only" })
                         .toPromise()
                         .then((e) => {
                             const t = e?.viewer_v2?.xp_finish_two_factor_auth_challenge?.login_request,
                                 a = e?.viewer_v2?.xp_finish_two_factor_auth_challenge?.error;
                             return { id: t?.id, error: a, verified: !!t?.verified };
                         });
-            var P = a(325686),
-                k = a(731708),
-                w = a(855488),
-                I = a(154003),
-                Z = a(167630),
-                E = a(743080);
+            var w = a(731708),
+                I = a(855488),
+                Z = a(154003),
+                E = a(167630);
             const S = ({ onClose: e, onSubmit: t }) => {
                     const a = (0, m.z)(),
                         [r, s] = n.useState(""),
                         [o, c] = n.useState(!1),
-                        i = (0, E.jh)(),
+                        i = (0, y.jh)(),
                         l = n.useCallback(() => {
                             c(!0),
                                 t({ challengeResponse: r }).finally(() => {
@@ -164,7 +164,7 @@
                         n.useEffect(() => {
                             a && a.scribe({ page: "money", section: "money-2fa-app", action: "impression" });
                         }, [a]),
-                        n.createElement(n.Fragment, null, n.createElement(P.Z, { style: i.container }, n.createElement(k.ZP, { size: "title3", weight: "bold" }, "Enter the code from your authenticator app"), n.createElement(w.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: E.ZP.paddingNone, testID: "code", type: "password", value: r })), n.createElement(P.Z, { style: i.footer }, n.createElement(I.ZP, { disabled: !r || o, onPress: l, size: "large", type: "primaryFilled" }, o ? n.createElement(Z.Z, null) : "Next")))
+                        n.createElement(n.Fragment, null, n.createElement(_.Z, { style: i.container }, n.createElement(w.ZP, { size: "title3", weight: "bold" }, "Enter the code from your authenticator app"), n.createElement(I.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: y.ZP.paddingNone, testID: "code", type: "password", value: r })), n.createElement(_.Z, { style: i.footer }, n.createElement(Z.ZP, { disabled: !r || o, onPress: l, size: "large", type: "primaryFilled" }, o ? n.createElement(E.Z, null) : "Next")))
                     );
                 },
                 T = { context: "TwoFactorAppCode" };
@@ -176,7 +176,7 @@
                     const a = (0, m.z)(),
                         [r, s] = n.useState(""),
                         [o, c] = n.useState(!1),
-                        i = (0, E.jh)(),
+                        i = (0, y.jh)(),
                         l = n.useCallback(() => {
                             c(!0),
                                 t({ challengeResponse: r }).finally(() => {
@@ -190,54 +190,55 @@
                         n.useEffect(() => {
                             a && a.scribe({ page: "money", section: "money-2fa-backup", action: "impression" });
                         }, [a]),
-                        n.createElement(n.Fragment, null, n.createElement(P.Z, { style: i.container }, n.createElement(k.ZP, { size: "title3", weight: "bold" }, "Enter your backup code"), n.createElement(w.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: E.ZP.paddingNone, testID: "code", type: "password", value: r })), n.createElement(P.Z, { style: i.footer }, n.createElement(I.ZP, { disabled: !r || o, onPress: l, size: "large", type: "primaryFilled" }, o ? n.createElement(Z.Z, null) : "Next")))
+                        n.createElement(n.Fragment, null, n.createElement(_.Z, { style: i.container }, n.createElement(w.ZP, { size: "title3", weight: "bold" }, "Enter your backup code"), n.createElement(I.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: y.ZP.paddingNone, testID: "code", type: "password", value: r })), n.createElement(_.Z, { style: i.footer }, n.createElement(Z.ZP, { disabled: !r || o, onPress: l, size: "large", type: "primaryFilled" }, o ? n.createElement(E.Z, null) : "Next")))
                     );
                 },
                 x = { context: "TwoFactorBackupCode" };
-            function q(e) {
+            function M(e) {
                 return n.createElement(i.H, { errorConfig: x }, n.createElement(R, e));
             }
-            const N = n.memo(q),
-                M = ({ error: e, onClose: t }) => {
+            const q = n.memo(M),
+                N = ({ error: e, onClose: t }) => {
                     const a = (0, m.z)(),
-                        r = (0, E.jh)();
+                        r = (0, y.jh)();
                     return (
                         n.useEffect(() => {
                             a && a.scribe({ page: "money", section: "money-2fa-notsupported", action: "impression" });
                         }, [a]),
-                        n.createElement(n.Fragment, null, n.createElement(P.Z, { style: r.container }, n.createElement(k.ZP, { size: "title3", weight: "bold" }, "We were unable to verify you"), n.createElement(k.ZP, { color: "gray700" }, e)))
+                        n.createElement(_.Z, { style: r.container }, n.createElement(w.ZP, { size: "title3", weight: "bold" }, "We were unable to verify you"), n.createElement(w.ZP, { color: "gray700" }, e))
                     );
                 },
                 z = { context: "TwoFactorNotSupported" };
             function H(e) {
-                return n.createElement(i.H, { errorConfig: z }, n.createElement(M, e));
+                return n.createElement(i.H, { errorConfig: z }, n.createElement(N, e));
             }
             const D = n.memo(H);
-            var O = a(158272);
-            function L({ challenge: e, onClose: t, onSubmit: a }) {
+            var L = a(158272);
+            function O({ challenge: e, onClose: t, onSubmit: a }) {
                 const r = (0, l.p)(),
-                    s = (0, m.z)();
+                    s = (0, m.z)(),
+                    o = (0, y.jh)();
                 return (
                     n.useEffect(() => {
                         s.scribe({ page: "money", section: "money-2fa-passkey", action: "impression" });
                     }, [s]),
                     n.useEffect(() => {
-                        (0, O.xG)(e)
+                        (0, L.xG)(e)
                             .then((e) => {
                                 a({ challengeResponse: e });
                             })
                             .catch(() => {
-                                r({ text: O.Kh }), t();
+                                r({ text: L.Kh }), t();
                             });
                     }, [r, e, t, a]),
-                    (0, O.iW)() ? n.createElement(Z.Z, null) : n.createElement(k.ZP, { align: "center" }, O.z_)
+                    n.createElement(_.Z, { style: o.container }, n.createElement(w.ZP, { size: "title3", weight: "bold" }, (0, L.iW)() ? "Looks like you have a passkey enabled. Let’s use it to secure your Money." : L.z_))
                 );
             }
             const U = ({ onClose: e, onSubmit: t }) => {
                     const a = (0, m.z)(),
                         [r, s] = n.useState(""),
                         [o, c] = n.useState(!1),
-                        i = (0, E.jh)(),
+                        i = (0, y.jh)(),
                         l = n.useCallback(() => {
                             c(!0),
                                 t({ challengeResponse: r }).finally(() => {
@@ -251,14 +252,14 @@
                         n.useEffect(() => {
                             a && a.scribe({ page: "money", section: "money-2fa-sms", action: "impression" });
                         }, [a]),
-                        n.createElement(n.Fragment, null, n.createElement(P.Z, { style: i.container }, n.createElement(k.ZP, { size: "title3", weight: "bold" }, "Enter the code we sent to your phone"), n.createElement(w.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: E.ZP.paddingNone, testID: "code", type: "password", value: r })), n.createElement(P.Z, { style: i.footer }, n.createElement(I.ZP, { disabled: !r || o, onPress: l, size: "large", type: "primaryFilled" }, o ? n.createElement(Z.Z, null) : "Next")))
+                        n.createElement(n.Fragment, null, n.createElement(_.Z, { style: i.container }, n.createElement(w.ZP, { size: "title3", weight: "bold" }, "Enter the code we sent to your phone"), n.createElement(I.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: y.ZP.paddingNone, testID: "code", type: "password", value: r })), n.createElement(_.Z, { style: i.footer }, n.createElement(Z.ZP, { disabled: !r || o, onPress: l, size: "large", type: "primaryFilled" }, o ? n.createElement(E.Z, null) : "Next")))
                     );
                 },
                 W = { context: "TwoFactorSms" };
-            function V(e) {
+            function j(e) {
                 return n.createElement(i.H, { errorConfig: W }, n.createElement(U, e));
             }
-            const j = n.memo(V);
+            const V = n.memo(j);
             var $ = a(800697),
                 B = a(482924);
             const Y = $.Z,
@@ -278,16 +279,16 @@
                     const { challenge: r, error: c, loginRequestId: i, twoFactor: d } = Q({ challengeId: e }),
                         u = (0, o.useHistory)(),
                         h = (0, l.p)(),
-                        f = u.location?.state,
-                        y = s()(),
-                        b = (0, m.z)();
+                        b = u.location?.state,
+                        v = s()(),
+                        C = (0, m.z)();
                     n.useEffect(() => {
-                        b && b.scribe({ page: "money", section: "money-two-factor-auth", action: "impression" });
-                    }, [b]);
-                    const v = n.useCallback(
+                        C && C.scribe({ page: "money", section: "money-two-factor-auth", action: "impression" });
+                    }, [C]);
+                    const P = n.useCallback(
                             ({ challengeResponse: t }) =>
                                 i
-                                    ? C({ environment: y, challengeId: e, loginRequestId: i, challengeResponse: t })
+                                    ? k({ environment: v, challengeId: e, loginRequestId: i, challengeResponse: t })
                                           .then((e) => {
                                               const { error: t, id: n, verified: r } = e;
                                               return n === i && r ? a({ loginRequestId: i }) : t && h({ text: ee[t] ?? G }), e;
@@ -296,14 +297,14 @@
                                               h({ text: G });
                                           })
                                     : Promise.resolve(),
-                            [i, y, e, a, h],
+                            [i, v, e, a, h],
                         ),
-                        { challengeInitiator: P, closePath: k } = f ?? {},
-                        w = n.useCallback(() => {
-                            (0, p.qc)({ environment: y, closePath: k, challengeInitiator: P, history: u });
-                        }, [P, k, y, u]),
-                        I = n.useMemo(() => (d?.type === _.O.BackupCode ? n.createElement(N, { onClose: w, onSubmit: v }) : r && d?.type === _.O.Passkey ? n.createElement(L, { challenge: r, onClose: w, onSubmit: v }) : d?.type === _.O.Sms ? n.createElement(j, { onClose: w, onSubmit: v }) : d?.type === _.O.Totp ? n.createElement(F, { onClose: w, onSubmit: v }) : n.createElement(D, { error: c ? (ee[c] ?? G) : G, onClose: w })), [r, c, w, v, d?.type]);
-                    return n.createElement(g.Z, { backButtonType: "close", history: u, isFullWidth: t, onBackClick: w }, I);
+                        { challengeInitiator: w, closePath: I } = b ?? {},
+                        Z = n.useCallback(() => {
+                            (0, p.qc)({ environment: v, closePath: I, challengeInitiator: w, history: u });
+                        }, [w, I, v, u]),
+                        E = n.useMemo(() => (d?.type === g.O.BackupCode ? n.createElement(q, { onClose: Z, onSubmit: P }) : r && d?.type === g.O.Passkey ? n.createElement(O, { challenge: r, onClose: Z, onSubmit: P }) : d?.type === g.O.Sms ? n.createElement(V, { onClose: Z, onSubmit: P }) : d?.type === g.O.Totp ? n.createElement(F, { onClose: Z, onSubmit: P }) : n.createElement(D, { error: c ? (ee[c] ?? G) : G, onClose: Z })), [r, c, Z, P, d?.type]);
+                    return t ? n.createElement(_.Z, { style: y.ZP.nonModalMargin }, E) : n.createElement(f.Z, { backButtonType: "close", history: u, onBackClick: Z }, E);
                 },
                 ae = { context: "VerifyTwoFactorAuth" };
             function ne(e) {
@@ -325,12 +326,13 @@
                         [S, T] = n.useState(v ?? h.q9.initiate),
                         [A, F] = n.useState(),
                         [R, x] = n.useState(!1),
-                        q = s()(),
-                        N = E === d.kW.auth,
-                        M = (E ? ce[E] : void 0) ?? d.P_.challenge,
-                        z = ie.includes(E),
-                        H = (E ? oe[E] : void 0) ?? w,
-                        D = n.useCallback((e) => {
+                        M = s()(),
+                        q = E === d.kW.auth,
+                        N = E === d.kW.forgotPin,
+                        z = (E ? ce[E] : void 0) ?? d.P_.challenge,
+                        H = ie.includes(E),
+                        D = (E ? oe[E] : void 0) ?? w,
+                        L = n.useCallback((e) => {
                             F(e.loginRequestId), T(h.q9.complete2fa), x(!1);
                         }, []),
                         O = n.useCallback(
@@ -338,7 +340,7 @@
                                 const { authStatus: t, challengeId: n, message: s } = e.data;
                                 switch (s) {
                                     case se.T.success:
-                                        N && 1 === t && u.Z.updateSessionStatus(c.c.Active), C ? (0, p.Se)(q, C) : E === d.kW.activateCard ? (0, p.uN)(q) : (0, p.J$)(q), P ? r.replace(P, k) : a ? a() : r.goBack(), H && _({ text: H });
+                                        q && 1 === t && u.Z.updateSessionStatus(c.c.Active), C ? (0, p.Se)(M, C) : E === d.kW.activateCard ? (0, p.uN)(M) : (0, p.J$)(M), P ? r.replace(P, k) : a ? a() : r.goBack(), D && _({ text: D });
                                         break;
                                     case se.T.docvChallenge:
                                         r.replace(d.AU.tier3.verifyIdentityPath, { ...g, challengeInitiator: E });
@@ -356,13 +358,13 @@
                                         r.push(d.jR, { challengeInitiator: d.kW.forgotPin });
                                         break;
                                     case se.T.invalidChallenge:
-                                        N && u.Z.fetchNewSession();
+                                        q && u.Z.fetchNewSession();
                                         break;
                                     case se.T.close:
-                                        (0, p.qc)({ environment: q, closePath: b, challengeInitiator: E, history: r });
+                                        (0, p.qc)({ environment: M, closePath: b, challengeInitiator: E, history: r });
                                 }
                             },
-                            [N, C, E, P, a, H, r, g, q, b, k, _],
+                            [q, C, E, P, a, D, r, g, M, b, k, _],
                         );
                     n.useEffect(() => {
                         i && i.scribe({ page: "money", section: "verify-challenge", action: "impression" });
@@ -376,8 +378,8 @@
                             ),
                             [E],
                         );
-                    const L = N;
-                    return n.createElement(n.Fragment, null, I && R ? n.createElement(re, { challengeId: I, isNonModalScreen: L, onSuccess: D }) : null, I || z ? n.createElement(se.Z, { closePath: b, eventCallback: O, isBackgroundHidden: R, isNonModalScreen: L, linkType: M, payload: { challengeId: I, loginRequestId: A, message: S }, redirectPath: P, redirectState: k }) : null);
+                    const U = q || N;
+                    return n.createElement(n.Fragment, null, I && R ? n.createElement(re, { challengeId: I, isNonModalScreen: U, onSuccess: L }) : null, I || H ? n.createElement(se.Z, { closePath: b, eventCallback: O, isBackgroundHidden: R, isNonModalScreen: U, linkType: z, payload: { challengeId: I, loginRequestId: A, message: S, embeddedFlow: U }, redirectPath: P, redirectState: k }) : null);
                 },
                 de = { context: "VerifyChallenge" };
             function ue(e) {
@@ -446,7 +448,7 @@
                         y = n.useCallback(() => {
                             _(!0);
                         }, []),
-                        v = n.createElement(r.Z, { style: a ? T.hide : T.modal }, t && n.createElement(n.Fragment, null, !m && n.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" }), n.createElement(l.Z, { allowClipboardWrite: e, allowForms: !0, onLoad: y, reportError: p.ZP, src: t, style: m ? [T.idvIframe, s ? void 0 : f] : T.hide, title: "Money" })));
+                        v = n.createElement(r.Z, { style: a ? T.hide : o ? [b.ZP.nonModalMargin, T.nonModal] : T.modal }, t && n.createElement(n.Fragment, null, !m && n.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" }), n.createElement(l.Z, { allowClipboardWrite: e, allowForms: !0, onLoad: y, reportError: p.ZP, src: t, style: m ? [T.idvIframe, s ? void 0 : f] : T.hide, title: "Money" })));
                     return o || s || a ? v : n.createElement(u.Z, { history: d, renderHeader: () => null }, n.createElement(r.Z, { style: g ? T.modalContainer : T.modalContainerNarrow }, v));
                 },
                 Z = (e) => {
@@ -458,7 +460,7 @@
                         T = (0, v.gh)(),
                         [A, F] = n.useState(!1),
                         R = o()(),
-                        { allowClipboardWrite: x, defaultClosePath: q, invalidateOnClose: N, isInlineFrame: M, path: z, redirectOnCompletion: H } = _.QU[a],
+                        { allowClipboardWrite: x, defaultClosePath: M, invalidateOnClose: q, isInlineFrame: N, path: z, redirectOnCompletion: H } = _.QU[a],
                         D = n.useCallback(
                             (e) => {
                                 const { errors: t, message: a, url: n } = e.data;
@@ -487,14 +489,14 @@
                                         w && (window.location.href = n);
                                         break;
                                     case k.close:
-                                        N && (0, v.J$)(R), C.replace(l ?? q);
+                                        q && (0, v.J$)(R), C.replace(l ?? M);
                                 }
                                 d?.(e);
                             },
-                            [d, C, H, R, N, l, q, u, s],
+                            [d, C, H, R, q, l, M, u, s],
                         );
                     P({ allowedOrigin: Z, handler: D, linkType: a });
-                    const O = n.useMemo(() => {
+                    const L = n.useMemo(() => {
                         if (!E || !Z || !S) return;
                         const e = new Map();
                         return (
@@ -512,14 +514,14 @@
                             (0, v.uG)({ basePath: `/${z}`, xPaymentsSession: E, theme: T, paymentsOrigin: Z, moreSearchParams: e, providerToken: S })
                         );
                     }, [E, Z, S, t, z, T, b, p]);
-                    return A ? n.createElement(y.default, { challengeId: b, challengeInitiator: p, linkType: a, redirectPath: r, redirectState: i }) : n.createElement(I, { allowClipboardWrite: x, iframeUrl: O, isBackgroundHidden: h, isInlineFrame: M, isNonModalScreen: m });
+                    return A ? n.createElement(y.default, { challengeId: b, challengeInitiator: p, linkType: a, redirectPath: r, redirectState: i }) : n.createElement(I, { allowClipboardWrite: x, iframeUrl: L, isBackgroundHidden: h, isInlineFrame: N, isNonModalScreen: m });
                 },
                 E = (e) => {
                     const t = n.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" });
                     return n.createElement(m.B, { fallback: t }, n.createElement(Z, e));
                 },
                 S = n.memo(E),
-                T = d.default.create((e) => ({ idvIframe: { width: "100%", height: "100%", paddingTop: "0px", overflow: "hidden" }, paddingSmall: { paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space16 }, hide: { display: "none" }, modal: { width: "100%", height: "100%" }, modalContainer: { width: 500, height: 600 }, modalContainerNarrow: { width: "100%", height: "100%" } }));
+                T = d.default.create((e) => ({ idvIframe: { width: "100%", height: "100%", paddingTop: "0px", overflow: "hidden" }, paddingSmall: { paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space16 }, hide: { display: "none" }, modal: { width: "100%", height: "100%" }, modalContainer: { width: 500, height: 600 }, modalContainerNarrow: { width: "100%", height: "100%" }, nonModal: { minHeight: 350 } }));
         },
         412100: (e, t, a) => {
             a.d(t, { Z: () => d });
@@ -1220,4 +1222,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.0757b67a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.1439dfea.js.map

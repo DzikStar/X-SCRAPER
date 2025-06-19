@@ -1281,31 +1281,31 @@
                 a("c3f04d9c", "Aan het denken"),
                 a("cbdddb0a", "Voltooid"),
                 a("ie2bbeed", function (e) {
-                    return 'Searching for "' + e.query + '"';
+                    return "Zoeken naar '" + e.query + "'";
                 }),
                 a("b0d1e205", function (e) {
                     return "Zoeken naar **'" + e.query + "'**";
                 }),
                 a("bf970edd", function (e) {
-                    return 'Searching 𝕏 for "' + e.query + '"';
+                    return "Zoeken op X naar '" + e.query + "'";
                 }),
                 a("g008d475", function (e) {
-                    return "Browsing " + e.url;
+                    return e.url + " doorzoeken";
                 }),
                 a("c91e3971", function (e) {
-                    return "Browsing " + e.url + ' for "' + e.query + '"';
+                    return e.url + " doorzoeken naar '" + e.query + "''";
                 }),
                 a("acb9b845", function (e) {
                     return e.url + " browsen over **'" + e.query + "'**";
                 }),
                 a("j9006405", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username;
+                    return "Posts op X zoeken van @" + e.username;
                 }),
                 a("a2dd07e5", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username + ' for "' + e.query + '"';
+                    return "Posts op X zoeken van @" + e.username + " over '" + e.query + "'";
                 }),
                 a("e99fb7a3", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username + ' for **"' + e.query + '"**';
+                    return "Posts op X zoeken van @" + e.username + " over **'" + e.query + "'**";
                 }),
                 a("ead81122", "Er is iets misgegaan. Vernieuw om opnieuw verbinding te maken of probeer het opnieuw."),
                 a("f808a13a", "De limiet is overschreden. Wacht een paar minuten en probeer het opnieuw."),
@@ -1317,8 +1317,8 @@
                 a("j77292b7", function (e) {
                     return "Selecteer maximaal " + e.count + " bestand" + r(e.count, "", "en");
                 }),
-                a("d6b533dc", "Rate this translation:"),
-                a("j2f9ab6e", "Thank you for your feedback!"),
+                a("d6b533dc", "Beoordeel deze vertaling:"),
+                a("j2f9ab6e", "Bedankt voor je feedback!"),
                 a("d56779a2", "eenvoudig te begrijpen"),
                 a("b6fe8a56", "verwarrend of onduidelijk"),
                 a("i73a7d48", "Vertaald door Google"),
@@ -1349,7 +1349,7 @@
                     return "Vertaald uit het " + e.originLanguage + " door";
                 }),
                 a("b7cb4fab", "Vertaald door"),
-                a("e0bffbf8", "About automatic translation"),
+                a("e0bffbf8", "Over automatische vertaling"),
                 a("e839db3a", "Afwijzen"),
                 a("a15585b4", "Taalinstellingen"),
                 a("d4c339b9", function (e) {
@@ -1498,9 +1498,6 @@
                     return "@" + e.screenName + " blokkeren";
                 }),
                 a("a6450e84", "Blokkeren"),
-                a("g353ad73", function (e) {
-                    return "Hij of zij zal je niet kunnen volgen of je posts kunnen bekijken, en je zult geen posts of notificaties van @ " + e.screenName + " zien.";
-                }),
                 a("ad00a739", function (e) {
                     return "Hij of zij kan je openbare posts bekijken, maar er geen interactie mee aangaan. @" + e.screenName + " kan je ook niet meer volgen of berichten sturen, en jij krijgt geen meldingen meer van hem of haar.";
                 }),
@@ -1512,7 +1509,6 @@
                     return "@" + e.screenName + " deblokkeren";
                 }),
                 a("e133be4e", "Deblokkeren"),
-                a("he43bca4", "Hij of zij kan jou volgen en je posts bekijken."),
                 a("f5f01af6", "Hij of zij kan je volgen en een interactie aangaan met je openbare posts."),
                 a("b6878b0a", "Er ging iets mis. Probeer deze gebruiker over een paar minuten opnieuw te blokkeren."),
                 a("e40252de", "Laat deze posts niet zien op Voor jou"),
@@ -1921,10 +1917,10 @@
                 a("jcd5ee8a", "Blok bewerken"),
                 a("a8f09fb8", "Blok verwijderen"),
                 a("i89195ea", "Verdeler"),
-                a("da8ac57c", "Bijschrift bewerken");
-            a("a8fdd09c", "Artikel publiceren"),
-                a("d8047cc8", "Publiceren"),
-                a("ff7ddca2", "Je Artikel verschijnt als post zodra je het publiceert. Je kan het ook terugvinden in het tabblad Artikelen in je profiel."),
+                a("da8ac57c", "Bijschrift bewerken"),
+                a("a8fdd09c", "Artikel publiceren"),
+                a("d8047cc8", "Publiceren");
+            a("ff7ddca2", "Je Artikel verschijnt als post zodra je het publiceert. Je kan het ook terugvinden in het tabblad Artikelen in je profiel."),
                 a("ef34d7be", "Je kan publiek- en antwoordinstellingen niet meer bewerken nadat een Artikel is gepubliceerd."),
                 a("e52d4998", "Kies je publiek"),
                 a("d7985b24", "Kies wie op dit Artikel mag antwoorden"),
@@ -2977,10 +2973,10 @@
                 a("bc6efc72", "Privacybeleid"),
                 a("h3161192", "Cookiebeleid"),
                 a("a7de64de", "Advertentie-info"),
-                a("jb0a4c36", "Blog");
-            a("ce6d095a", "Banen"),
-                a("e0adec82", "Merkhulpmiddelen"),
-                a("df1b7550", "Marketing"),
+                a("jb0a4c36", "Blog"),
+                a("ce6d095a", "Banen"),
+                a("e0adec82", "Merkhulpmiddelen");
+            a("df1b7550", "Marketing"),
                 a("he258678", "X voor bedrijven"),
                 a("c6f58084", "Ontwikkelaars"),
                 a("d83f18d2", "Overzicht"),
@@ -3889,10 +3885,10 @@
                 a("c371fb9a", "Einde"),
                 a("c0ce822e", "Microfooninstellingen"),
                 a("a2bf8b8a", "Overschakelen naar luisteren"),
-                a("caa8d928", "Ruisonderdrukking aan-/uitzetten");
-            a("b5d88f0c", "Alleen voor werknemers"),
-                a("c855ab8e", "Alleen Abonnees"),
-                a("ddeb0a3c", "Dit is de Community. Vind je de mensen leuk? Neem een kijkje."),
+                a("caa8d928", "Ruisonderdrukking aan-/uitzetten"),
+                a("b5d88f0c", "Alleen voor werknemers"),
+                a("c855ab8e", "Alleen Abonnees");
+            a("ddeb0a3c", "Dit is de Community. Vind je de mensen leuk? Neem een kijkje."),
                 a("e111f531", function (e) {
                     return e.count + " beluisterd";
                 }),
@@ -4221,10 +4217,10 @@
                 a("j7b5c844", "Jij bent verantwoordelijk voor de gesprekken die je publiekelijk deelt. Vermijd het delen van gevoelige en vertrouwelijke informatie over jezelf of anderen in je gesprekken met Grok (zie ons Helpcentrum)."),
                 a("c9f7c196", "Helpcentrum"),
                 a("fb3b9776", "De output van Grok is aangepast door deze gebruiker."),
-                a("b0a889d4", "As Image"),
-                a("a111fb48", "As Spreadsheet"),
-                a("bccc65f0", "Grok can make mistakes. Always check original sources."),
-                a("bd202fe6", "Generating card"),
+                a("b0a889d4", "Als afbeelding"),
+                a("a111fb48", "Als spreadsheet"),
+                a("bccc65f0", "Grok kan fouten maken. Controleer altijd de originele bronnen."),
+                a("bd202fe6", "Kaart genereren"),
                 a("bfd161bc", "Vergelijk"),
                 a("j5dcf1b2", "Bijgewerkt"),
                 a("a50aaa10", "Voorbeurs"),
@@ -4256,8 +4252,8 @@
                 a("dd679fb1", function (e) {
                     return "Laagste ooit" + e.ttc_stock_details;
                 }),
-                a("ha9c4cf8", "View source"),
-                a("ecad5d78", "Save image"),
+                a("ha9c4cf8", "Bron bekijken"),
+                a("ecad5d78", "Afbeelding opslaan"),
                 a("d2d1d398", "Gekopieerd!"),
                 a("a22063d2", "Deel je locatie voor meer nauwkeurigheid."),
                 a("db3248a8", "Locatie laden"),
@@ -4292,12 +4288,12 @@
                 a("d66bf142", "Do"),
                 a("dc17968a", "Vr"),
                 a("j310a2d6", "Za"),
-                a("afa2a58e", "See all posts"),
-                a("fc83e7e2", "See all users"),
-                a("df601d92", "Relevant Users"),
-                a("b001fa12", "Source query"),
+                a("afa2a58e", "Alle posts bekijken"),
+                a("fc83e7e2", "Alle gebruikers bekijken"),
+                a("df601d92", "Relevante gebruikers"),
+                a("b001fa12", "Bron zoekopdracht"),
                 a("db6c20cf", function (e) {
-                    return "Show all (" + e.count + ")";
+                    return "Alles weergeven (" + e.count + ")";
                 }),
                 a("d7cb5408", "Relevante webpagina's"),
                 a("ca93f2ee", "Dit bericht is verwijderd."),
@@ -4368,7 +4364,7 @@
                 a("db832e38", "Schakel meldingen in je browserinstellingen in"),
                 a("a910cac6", "Er is een probleem opgetreden bij het inschakelen van meldingen"),
                 a("be30b6ee", "Instabiele verbinding"),
-                a("ge15b488", "Show thoughts"),
+                a("ge15b488", "Gedachten weergeven"),
                 a("aa7c96bb", function (e) {
                     return "Nog " + e.numResults + " meer bekijken";
                 }),
@@ -4493,8 +4489,6 @@
                 }),
                 a("c9a1cb5e", "Dit account bestaat niet"),
                 a("e7b201de", "Probeer een andere zoekopdracht."),
-                a("ica87fde", "Je bent geblokkeerd"),
-                a("c7ec6faf", "Meer informatie"),
                 a("e79ed125", function (e) {
                     return "@" + e.screenName + " is geblokkeerd";
                 }),
@@ -4931,12 +4925,12 @@
                 a("fbc79a40", "Overzicht Spaces"),
                 a("d077112a", "Space-statistieken"),
                 a("cf3709da", "Status"),
-                a("e797dc32", "Streamtijd: ");
-            a("b649d8cc", "Alleen abonnees"),
+                a("e797dc32", "Streamtijd: "),
+                a("b649d8cc", "Alleen abonnees"),
                 a("j9282130", "Miniatuur van uitzending"),
                 a("g629b8b0", "Timed-out"),
-                a("eb87323c", "Dit toont analysegegevens voor de geselecteerde periode sinds de livestream plaatsvond."),
-                a("i6a75722", "Tijdsbereik"),
+                a("eb87323c", "Dit toont analysegegevens voor de geselecteerde periode sinds de livestream plaatsvond.");
+            a("i6a75722", "Tijdsbereik"),
                 a("c602f5b8", "Totaal"),
                 a("b35e68ae", "Totaal aantal deelnemers"),
                 a("h78ee79a", "Totaal aantal bekeken herhalingen"),
@@ -5883,12 +5877,12 @@
                 a("hf68e810", "Community-opmerkingen is een programma dat wil zorgen voor een beter geïnformeerde wereld. Het programma maakt het mensen mogelijk om samen te werken op X en nuttige Notes te voegen aan posts die mogelijk misleidend zijn."),
                 a("jdb52860", "Bijdragers schrijven en beoordelen opmerkingen"),
                 a("c104025c", "Bijdragers zijn mensen zoals jij op X. Ze kiezen ervoor om mee te doen aan deze pilot en Note te schrijven en te beoordelen. Hoe meer mensen meedoen, hoe beter het programma wordt."),
-                a("j7872b8c", "Alleen Notes die mensen nuttig vinden, verschijnen bij een post");
-            a("fb59415e", "Een Note moet door genoeg mensen met verschillende gezichtspunten als nuttig worden beoordeeld om openbaar zichtbaar te zijn als context bij een post. Deze aanpak helpt vooringenomenheid en manipulatie te voorkomen en zorgt voor opmerkingen die voor veel mensen nuttig zijn."),
+                a("j7872b8c", "Alleen Notes die mensen nuttig vinden, verschijnen bij een post"),
+                a("fb59415e", "Een Note moet door genoeg mensen met verschillende gezichtspunten als nuttig worden beoordeeld om openbaar zichtbaar te zijn als context bij een post. Deze aanpak helpt vooringenomenheid en manipulatie te voorkomen en zorgt voor opmerkingen die voor veel mensen nuttig zijn."),
                 a("f9a44022", "X, het bedrijf, kiest niet wat er uiteindelijk te zien is, dat doen de mensen"),
                 a("gdf4fbb2", "X, het bedrijf, schrijft, beoordeelt of modereert geen Notes (tenzij ze in strijd zijn met de regels van X). Wij geloven dat het geven van een stem aan mensen om deze keuzes samen te maken een rechtvaardige en effectieve manier is om informatie toe te voegen waardoor mensen beter geïnformeerd blijven."),
-                a("cc720e6a", "Community-opmerkingen is gebouwd op transparantie van data"),
-                a("j2fcd33a", "Gegevens zijn inclusief bijdragen tot en met"),
+                a("cc720e6a", "Community-opmerkingen is gebouwd op transparantie van data");
+            a("j2fcd33a", "Gegevens zijn inclusief bijdragen tot en met"),
                 a("d4a6b322", "Alle data van Community Notes worden hier dagelijks gepubliceerd, zodat mensen onbeperkt toegang hebben om data te analyseren, problemen te identificeren en kansen te signaleren om Community Notes beter te maken. We willen graag van jullie leren."),
                 a("c359263a", "Leer hoe je data van Community-opmerkingen kan gebruiken en analyseren "),
                 a("b8a27fe2", "in onze gids"),
@@ -6483,9 +6477,6 @@
                 a("e778e3d8", "Privéberichten geblokkeerd"),
                 a("b7867912", "Alles tonen"),
                 a("gaddb872", "Privéberichten tonen"),
-                a("d83414a1", function (e) {
-                    return "Wil je @" + e.screenName + " deblokkeren? Hij of zij kan jou dan volgen en jouw posts bekijken.";
-                }),
                 a("a5bbfecd", function (e) {
                     return "@" + e.screenName + " deblokkeren? Hij of zij kan je volgen en een interactie aangaan met je openbare posts.";
                 }),
@@ -6891,13 +6882,13 @@
                 a("b2c213e0", "Tekenlimiet overschreden"),
                 a("d84e9c2a", "Vertel wat voor werkinzet voor deze functie wordt verwacht."),
                 a("bc8b300c", "Functie"),
-                a("d1eedb50", "Help kandidaten begrijpen welk gebied deze functie ondersteunt.");
-            a("eaf3ce64", "Team"),
+                a("d1eedb50", "Help kandidaten begrijpen welk gebied deze functie ondersteunt."),
+                a("eaf3ce64", "Team"),
                 a("b36cd50e", "Geef aan met welk kernteam de kandidaten zullen samenwerken als ze eenmaal zijn aangenomen."),
                 a("d3a427ce", "Selecteer het vereiste ervaringsniveau."),
                 a("i7174442", "Beschrijving van de vacature"),
-                a("fef0cf02", "Schets de belangrijkste verantwoordelijkheden en kwalificaties om kandidaten een duidelijk beeld te geven van de functie."),
-                a("b7800bec", "Weergegeven in posts, aanbevelingen en zoekopdrachten."),
+                a("fef0cf02", "Schets de belangrijkste verantwoordelijkheden en kwalificaties om kandidaten een duidelijk beeld te geven van de functie.");
+            a("b7800bec", "Weergegeven in posts, aanbevelingen en zoekopdrachten."),
                 a("a5244ece", "Applicatie-URL (verplicht)"),
                 a("g2b553f6", "Voer de doelgroep-URL in waar kandidaten kunnen solliciteren op deze vacature."),
                 a("c2e77608", "Titel van de vacature (verplicht)"),
@@ -7863,7 +7854,16 @@
                 a("b5099e33", function (e) {
                     return "@" + e.screenName + " heeft geen geverifieerde volgers.";
                 }),
-                a("ec251f36", "Wanneer iemand die jij kent hem of haar volgt, zie je dat hier.");
+                a("ec251f36", "Wanneer iemand die jij kent hem of haar volgt, zie je dat hier."),
+                a("f8af4f48", "Zodra hij of zij accounts volgt, zie je dat hier."),
+                a("fd0aad94", "Wanneer een geverifieerd persoon dit account volgt, zie je dat hier."),
+                a("b84f6df1", function (e) {
+                    return "Geef Premium cadeau, nu tijdelijk met " + e.percentage + "% korting";
+                }),
+                a("cfcac293", function (e) {
+                    return "Cadeau doen en " + e.price + " betalen";
+                }),
+                a("d7a73450", "Niveau");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7902,16 +7902,7 @@
                     o(e, n)
                 );
             }
-            a("f8af4f48", "Zodra hij of zij accounts volgt, zie je dat hier."),
-                a("fd0aad94", "Wanneer een geverifieerd persoon dit account volgt, zie je dat hier."),
-                a("b84f6df1", function (e) {
-                    return "Geef Premium cadeau, nu tijdelijk met " + e.percentage + "% korting";
-                }),
-                a("cfcac293", function (e) {
-                    return "Cadeau doen en " + e.price + " betalen";
-                }),
-                a("d7a73450", "Niveau"),
-                a("hbd2c24e", "Dit account komt op dit moment niet in aanmerking voor cadeaus."),
+            a("hbd2c24e", "Dit account komt op dit moment niet in aanmerking voor cadeaus."),
                 a("f3fddc98", "Aankoopvoorwaarden"),
                 a("cff9c889", "Meer informatie"),
                 a("c65dda96", "Je cadeau is verstuurd."),
@@ -8323,7 +8314,7 @@
                 a("e5e6479e", "Stuur ons een e-mail met de gebruikersnaam van je organisatie en de details van je vraag voor de snelste ondersteuning."),
                 a("ica8392a", "Zodra we je aanvraag hebben ontvangen, bekijken we die en geven we die prioriteit in volgorde van binnenkomst."),
                 a("ed37e36e", "Belangrijk: als de gebruikersnaam van je organisatie ontbreekt of als je een persoonlijk e-mailadres gebruikt, kan dat vertraging van de behandeling van je aanvraag veroorzaken."),
-                a("h7e1c146", "Delegate accounts are not currently supported."),
+                a("h7e1c146", "Gedelegeerde accounts worden momenteel niet ondersteund."),
                 a("eb0d4fe2", "Een kolom maken"),
                 a("e93d2f8a", "Maak je ervaring op maat door verschillende soorten kolommen toe te voegen, zoals:"),
                 a("e8203d1e", "Zoekopdrachten"),
@@ -8897,15 +8888,15 @@
                 a("faf9f484", "Advertentie"),
                 a("ae2ea9e7", function (e) {
                     return "Advertentie van " + e.advertiserName;
-                });
-            a("hea01798", "Zoekregelaar"),
+                }),
+                a("hea01798", "Zoekregelaar"),
                 a("f8a09386", "Bekijken op Periscope"),
                 a("gf2b6eee", "Beeld-in-beeld"),
                 a("b3160a69", function (e) {
                     return e.volumePercent + " procent";
                 }),
-                a("fb236728", "Onderbreken"),
-                a("e9bd453e", "Opnieuw afspelen"),
+                a("fb236728", "Onderbreken");
+            a("e9bd453e", "Opnieuw afspelen"),
                 a("d46b00b0", "Naar live overschakelen"),
                 a("ec8ab8b4", "Negeren"),
                 a("b8b6344a", "Niet meer negeren"),
@@ -9330,7 +9321,6 @@
                 a("fe40537f", function (e) {
                     return "@" + e.screenName + " deblokkeren?";
                 }),
-                a("ab7c3460", "Hij of zij kan jou volgen en je posts bekijken."),
                 a("i58d8718", "Hij of zij kan je volgen en een interactie aangaan met je openbare posts."),
                 a("cda66545", function (e) {
                     return "Klik om " + e.followType + " " + e.screenName + " te volgen";
@@ -11376,12 +11366,6 @@
                             },
                         },
                         {
-                            key: "e6264621",
-                            get: function () {
-                                return ["Je kan @" + this.props.screenName + " niet volgen of zijn of haar posts bekijken. "];
-                            },
-                        },
-                        {
                             key: "f98ecc47",
                             get: function () {
                                 return ["Weet je zeker dat je deze posts wil bekijken? @" + this.props.screenName + " wordt niet gedeblokkeerd door posts te bekijken. "];
@@ -13403,4 +13387,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.63bf13fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.db8aad8a.js.map

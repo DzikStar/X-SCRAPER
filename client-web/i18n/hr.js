@@ -1505,9 +1505,6 @@
                     return "Blokiraj korisnika/cu @" + a.screenName;
                 }),
                 o("a6450e84", "Blokirajte korisnika/cu"),
-                o("g353ad73", function (a) {
-                    return "Neće vas moći pratiti ni vidjeti vaše objave, a vi nećete moći vidjeti objave ni primati obavijesti o korisniku/ci @" + a.screenName + ".";
-                }),
                 o("ad00a739", function (a) {
                     return "Moći će vidjeti vaše javne objave, ali neće više moći sudjelovati u njima. @" + a.screenName + " također vas neće moći pratiti ni slati vam poruke, a vi nećete moći vidjeti obavijesti tog računa.";
                 }),
@@ -1519,7 +1516,6 @@
                     return "Deblokiraj korisnika/cu @" + a.screenName;
                 }),
                 o("e133be4e", "Deblokiraj"),
-                o("he43bca4", "Moći će vas pratiti i vidjeti vaše objave."),
                 o("f5f01af6", "Moći će vas pratiti i sudjelovati u vašim javnim objavama."),
                 o("b6878b0a", "Došlo je do pogreške. Pokušajte blokirati tog korisnika ponovno za koju minutu."),
                 o("e40252de", "Nemoj prikazati te objave u odjeljku Za tebe"),
@@ -1928,10 +1924,10 @@
                 o("jcd5ee8a", "Uredi blok"),
                 o("a8f09fb8", "Izbriši blok"),
                 o("i89195ea", "Razdjelnik"),
-                o("da8ac57c", "Uredi titlove");
-            o("a8fdd09c", "Objavi članak"),
-                o("d8047cc8", "Objavi"),
-                o("ff7ddca2", "Vaš će se članak prikazati kao objava nakon što ga objavite. Možete ga pronaći i na kartici Članci na svom profilu."),
+                o("da8ac57c", "Uredi titlove"),
+                o("a8fdd09c", "Objavi članak"),
+                o("d8047cc8", "Objavi");
+            o("ff7ddca2", "Vaš će se članak prikazati kao objava nakon što ga objavite. Možete ga pronaći i na kartici Članci na svom profilu."),
                 o("ef34d7be", "Kontrole za publiku i odgovor ne mogu se uređivati nakon objave članka."),
                 o("e52d4998", "Odaberite publiku"),
                 o("d7985b24", "Odaberite tko sve može odgovoriti na ovaj članak"),
@@ -2984,10 +2980,10 @@
                 o("bc6efc72", "Pravila o privatnosti"),
                 o("h3161192", "Pravilnik o korištenju kolačića"),
                 o("a7de64de", "Informacije o oglasima"),
-                o("jb0a4c36", "Blog");
-            o("ce6d095a", "Posao"),
-                o("e0adec82", "Resursi za robne marke"),
-                o("df1b7550", "Marketing"),
+                o("jb0a4c36", "Blog"),
+                o("ce6d095a", "Posao"),
+                o("e0adec82", "Resursi za robne marke");
+            o("df1b7550", "Marketing"),
                 o("he258678", "X za tvrtke"),
                 o("c6f58084", "Razvojni inženjeri"),
                 o("d83f18d2", "Direktorij"),
@@ -3896,10 +3892,10 @@
                 o("c371fb9a", "Kraj"),
                 o("c0ce822e", "Postavke mikrofona"),
                 o("a2bf8b8a", "Prijeđi na slušanje"),
-                o("caa8d928", "Uključivanje/isključivanje prigušivanja buke");
-            o("b5d88f0c", "Samo zaposlenici"),
-                o("c855ab8e", "Samo za pretplatnike"),
-                o("ddeb0a3c", "Evo te Zajednice. Sviđaju vam se korisnici? Pogledajte."),
+                o("caa8d928", "Uključivanje/isključivanje prigušivanja buke"),
+                o("b5d88f0c", "Samo zaposlenici"),
+                o("c855ab8e", "Samo za pretplatnike");
+            o("ddeb0a3c", "Evo te Zajednice. Sviđaju vam se korisnici? Pogledajte."),
                 o("e111f531", function (a) {
                     return a.count + " slušatelj" + n(a.count, "a", "", "a");
                 }),
@@ -4500,8 +4496,6 @@
                 }),
                 o("c9a1cb5e", "Taj račun ne postoji."),
                 o("e7b201de", "Pokušajte pronaći neki drugi."),
-                o("ica87fde", "Blokirani ste"),
-                o("c7ec6faf", "Saznajte više"),
                 o("e79ed125", function (a) {
                     return "@" + a.screenName + " je blokiran";
                 }),
@@ -4938,12 +4932,12 @@
                 o("fbc79a40", "Pregled Prostora"),
                 o("d077112a", "Statistika Prostora"),
                 o("cf3709da", "Status"),
-                o("e797dc32", "Vrijeme emitiranja: ");
-            o("b649d8cc", "Samo za pretplatnike"),
+                o("e797dc32", "Vrijeme emitiranja: "),
+                o("b649d8cc", "Samo za pretplatnike"),
                 o("j9282130", "Minijatura prijenosa uživo"),
                 o("g629b8b0", "Isteklo"),
-                o("eb87323c", "To prikazuje podatke o analitici za odabrano vremensko razdoblje od emitiranja uživo."),
-                o("i6a75722", "Vremenski raspon"),
+                o("eb87323c", "To prikazuje podatke o analitici za odabrano vremensko razdoblje od emitiranja uživo.");
+            o("i6a75722", "Vremenski raspon"),
                 o("c602f5b8", "Ukupno"),
                 o("b35e68ae", "Ukupno sudionika"),
                 o("h78ee79a", "Ukupno ponovno gledanje snimke"),
@@ -5890,12 +5884,12 @@
                 o("hf68e810", "Bilješke zajednice program je koji je nastao radi bolje informiranosti korisnika. Zahvaljujući njemu, korisnici X-a mogu zajedno dodavati korisne bilješke za objave za koje smatraju da sadrže netočne informacije."),
                 o("jdb52860", "Suradnici sastavljaju i ocjenjuju napomene"),
                 o("c104025c", "Suradnici su korisnici X-a, baš kao vi, koji su se registrirali za pilot-program sastavljanja i ocjenjivanja bilježaka. Što više ljudi sudjeluje, program postaje bolji."),
-                o("j7872b8c", "Na objavama će se prikazivati samo bilješke koje korisnici smatraju korisnima");
-            o("fb59415e", "Da bi se bilješka prikazivala javno kao kontekst za neku objavu, određeni je broj korisnika mora s različitih aspekata ocijeniti korisnom. Na taj se način sprječava pristranost i manipulacija te se lakše pronalaze bilješke koje su korisne velikom broju korisnika."),
+                o("j7872b8c", "Na objavama će se prikazivati samo bilješke koje korisnici smatraju korisnima"),
+                o("fb59415e", "Da bi se bilješka prikazivala javno kao kontekst za neku objavu, određeni je broj korisnika mora s različitih aspekata ocijeniti korisnom. Na taj se način sprječava pristranost i manipulacija te se lakše pronalaze bilješke koje su korisne velikom broju korisnika."),
                 o("f9a44022", "Korisnici, a ne tvrtka X, određuju što će se prikazati"),
                 o("gdf4fbb2", "Tvrtka X ne piše zabilješke, ne ocjenjuje ih ni ne moderira (osim ako krše pravila platforme X). Smatramo da je mogućnost koja je dana korisnicima da ih zajednički odabiru dobar i učinkovit način dodavanja informacija koje korisnicima omogućuju da budu informirani."),
-                o("cc720e6a", "Bilješke zajednice temelje se na transparentnosti podataka"),
-                o("j2fcd33a", "Podaci sadrže unose do"),
+                o("cc720e6a", "Bilješke zajednice temelje se na transparentnosti podataka");
+            o("j2fcd33a", "Podaci sadrže unose do"),
                 o("d4a6b322", "Svi se podaci u Zabilješkama zajednice objavljuju svaki dan, stoga korisnici imaju pristup analizi podataka, prepoznavanju problema i uočavanju prilika kako Zabilješke zajednice poboljšati. Jedva čekamo da od vas nešto naučimo."),
                 o("c359263a", "Saznajte kako koristiti i analizirati podatke u Bilješkama zajednice "),
                 o("b8a27fe2", "u našem vodiču."),
@@ -6490,9 +6484,6 @@
                 o("e778e3d8", "Uspješno blokirane privatne poruke"),
                 o("b7867912", "Deblokiraj sve"),
                 o("gaddb872", "Deblokiraj privatne poruke"),
-                o("d83414a1", function (a) {
-                    return "Želite li odblokirati korisnika/cu @" + a.screenName + "? Moći će vas pratiti i vidjeti vaše objave.";
-                }),
                 o("a5bbfecd", function (a) {
                     return "Želite li odblokirati korisnika/cu @" + a.screenName + "? Moći će vas pratiti i sudjelovati u vašim javnim objavama.";
                 }),
@@ -6898,13 +6889,13 @@
                 o("b2c213e0", "Prekoračen je broj znakova"),
                 o("d84e9c2a", "Podijelite radnu obvezu koja se očekuje za to radno mjesto."),
                 o("bc8b300c", "Funkcija na radnom mjestu"),
-                o("d1eedb50", "Pružite kandidatima informacije o području obuhvaćenom ovim radnim mjestom.");
-            o("eaf3ce64", "Tim"),
+                o("d1eedb50", "Pružite kandidatima informacije o području obuhvaćenom ovim radnim mjestom."),
+                o("eaf3ce64", "Tim"),
                 o("b36cd50e", "Navedite glavni tim s kojim će kandidat surađivati nakon zapošljavanja."),
                 o("d3a427ce", "Odaberite potrebnu razinu iskustva."),
                 o("i7174442", "Opis posla"),
-                o("fef0cf02", "Navedite detaljan opis posla. Istaknite ključne odgovornosti i kvalifikacije kako bi kandidati jasno razumjeli pojedinosti o radnom mjestu."),
-                o("b7800bec", "Navedite ključne informacije o poslu u najviše 200 znakova. Taj će se opis prikazivati u objavama, preporukama i pretraživanju."),
+                o("fef0cf02", "Navedite detaljan opis posla. Istaknite ključne odgovornosti i kvalifikacije kako bi kandidati jasno razumjeli pojedinosti o radnom mjestu.");
+            o("b7800bec", "Navedite ključne informacije o poslu u najviše 200 znakova. Taj će se opis prikazivati u objavama, preporukama i pretraživanju."),
                 o("a5244ece", "URL za prijavu (obavezno)"),
                 o("g2b553f6", "Unesite javni URL putem kojeg kandidati mogu slati prijave za taj posao."),
                 o("c2e77608", "Naziv radnog mjesta (obavezno)"),
@@ -7870,7 +7861,16 @@
                 o("b5099e33", function (a) {
                     return "Korisnika/cu @" + a.screenName + " ne prati nijedna provjerena osoba.";
                 }),
-                o("ec251f36", "Kada ga/je neka osoba počne pratiti, bit će navedena ovdje.");
+                o("ec251f36", "Kada ga/je neka osoba počne pratiti, bit će navedena ovdje."),
+                o("f8af4f48", "Kad počnu pratiti račune, prikazat će se ovdje."),
+                o("fd0aad94", "Kada provjereni korisnik počne pratiti taj račun, prikazat će se ovdje."),
+                o("b84f6df1", function (a) {
+                    return "Poklonite Premium na " + a.percentage + " % popusta tijekom ograničenog vremena";
+                }),
+                o("cfcac293", function (a) {
+                    return "Poklonite i platite " + a.price;
+                }),
+                o("d7a73450", "Razina");
             function t(a, e) {
                 for (var i = 0; i < e.length; i++) {
                     var o = e[i];
@@ -7909,16 +7909,7 @@
                     r(a, e)
                 );
             }
-            o("f8af4f48", "Kad počnu pratiti račune, prikazat će se ovdje."),
-                o("fd0aad94", "Kada provjereni korisnik počne pratiti taj račun, prikazat će se ovdje."),
-                o("b84f6df1", function (a) {
-                    return "Poklonite Premium na " + a.percentage + " % popusta tijekom ograničenog vremena";
-                }),
-                o("cfcac293", function (a) {
-                    return "Poklonite i platite " + a.price;
-                }),
-                o("d7a73450", "Razina"),
-                o("hbd2c24e", "Ovaj račun trenutačno ne ispunjava uvjete za poklone."),
+            o("hbd2c24e", "Ovaj račun trenutačno ne ispunjava uvjete za poklone."),
                 o("f3fddc98", "Uvjete za kupca"),
                 o("cff9c889", "Saznajte više"),
                 o("c65dda96", "Vaš poklon je poslan."),
@@ -8904,15 +8895,15 @@
                 o("faf9f484", "Oglas"),
                 o("ae2ea9e7", function (a) {
                     return "Oglašivač: " + a.advertiserName;
-                });
-            o("hea01798", "Kliznik tražila"),
+                }),
+                o("hea01798", "Kliznik tražila"),
                 o("f8a09386", "Prikaz u aplikaciji Periscope"),
                 o("gf2b6eee", "Slika-u-slici"),
                 o("b3160a69", function (a) {
                     return a.volumePercent + " posto";
                 }),
-                o("fb236728", "Pauziraj"),
-                o("e9bd453e", "Ponovno reproduciraj"),
+                o("fb236728", "Pauziraj");
+            o("e9bd453e", "Ponovno reproduciraj"),
                 o("d46b00b0", "Preskoči na prijenos uživo"),
                 o("ec8ab8b4", "Onemogućite korisnika/cu"),
                 o("b8b6344a", "Omogući prikaz tweetova"),
@@ -9337,7 +9328,6 @@
                 o("fe40537f", function (a) {
                     return "Želite li deblokirati korisnika/cu @" + a.screenName + "?";
                 }),
-                o("ab7c3460", "Moći će vas pratiti i vidjeti vaše objave."),
                 o("i58d8718", "Moći će vas pratiti i sudjelovati u vašim javnim objavama."),
                 o("cda66545", function (a) {
                     return "Kliknite da biste primijenili " + a.followType + " na " + a.screenName;
@@ -11377,12 +11367,6 @@
                             },
                         },
                         {
-                            key: "e6264621",
-                            get: function () {
-                                return ["Ne možete pratiti ni vidjeti objave korisnika/ce @" + this.props.screenName + ". "];
-                            },
-                        },
-                        {
                             key: "f98ecc47",
                             get: function () {
                                 return ["Jeste li sigurni da želite vidjeti te objave? Prikazom objava nećete odblokirati korisnika/cu @" + this.props.screenName + ". "];
@@ -13411,4 +13395,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.39aff85a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.9ade170a.js.map

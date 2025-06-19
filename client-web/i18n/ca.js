@@ -1498,9 +1498,6 @@
                     return "Bloca @" + e.screenName;
                 }),
                 t("a6450e84", "Bloca"),
-                t("g353ad73", function (e) {
-                    return "No et podran seguir ni veure les teves publicacions, i tu no veuràs les publicacions ni les notificacions de l'usuari @" + e.screenName + ".";
-                }),
                 t("ad00a739", function (e) {
                     return "Podrà veure les teves publicacions públiques, però ja no podrà interactuar amb elles. @" + e.screenName + " tampoc no podrà seguir-te ni enviar-te missatges, i no veuràs notificacions seves.";
                 }),
@@ -1512,7 +1509,6 @@
                     return "Desbloca @" + e.screenName;
                 }),
                 t("e133be4e", "Desbloca"),
-                t("he43bca4", "Et podrà seguir i podrà veure les teves publicacions."),
                 t("f5f01af6", "Podrà seguir-te i interactuar amb les teves publicacions públiques."),
                 t("b6878b0a", "Alguna cosa ha anat malament. Torna a provar de blocar l'usuari d'aquí a un minut."),
                 t("e40252de", "No mostris aquestes publicacions a Per a tu"),
@@ -1921,10 +1917,10 @@
                 t("jcd5ee8a", "Edita el bloc"),
                 t("a8f09fb8", "Esborra el bloc"),
                 t("i89195ea", "Separador"),
-                t("da8ac57c", "Edita la llegenda");
-            t("a8fdd09c", "Publica l'article"),
-                t("d8047cc8", "Publica"),
-                t("ff7ddca2", "Quan el publiquis, l'article es mostrarà com una publicació. A més, el podràs trobar a la pestanya Articles del teu perfil."),
+                t("da8ac57c", "Edita la llegenda"),
+                t("a8fdd09c", "Publica l'article"),
+                t("d8047cc8", "Publica");
+            t("ff7ddca2", "Quan el publiquis, l'article es mostrarà com una publicació. A més, el podràs trobar a la pestanya Articles del teu perfil."),
                 t("ef34d7be", "Els controls d'audiència i de resposta no es poden editar un cop s'ha publicat l'article."),
                 t("e52d4998", "Tria la teva audiència"),
                 t("d7985b24", "Tria qui pot respondre a aquest article"),
@@ -2977,10 +2973,10 @@
                 t("bc6efc72", "Política de privacitat"),
                 t("h3161192", "Política de galetes"),
                 t("a7de64de", "Informació sobre els anuncis"),
-                t("jb0a4c36", "Blog");
-            t("ce6d095a", "Professions"),
-                t("e0adec82", "Recursos de marca"),
-                t("df1b7550", "Màrqueting"),
+                t("jb0a4c36", "Blog"),
+                t("ce6d095a", "Professions"),
+                t("e0adec82", "Recursos de marca");
+            t("df1b7550", "Màrqueting"),
                 t("he258678", "X per a empreses"),
                 t("c6f58084", "Desenvolupadors"),
                 t("d83f18d2", "Directori"),
@@ -3889,10 +3885,10 @@
                 t("c371fb9a", "Final"),
                 t("c0ce822e", "Configuració del micròfon"),
                 t("a2bf8b8a", "La vull escoltar només"),
-                t("caa8d928", "Activa la supressió de soroll");
-            t("b5d88f0c", "Només empleats"),
-                t("c855ab8e", "Només per a Subscriptors"),
-                t("ddeb0a3c", "Aquí tens la Comunitat. Te n'agraden els usuaris? Dona-hi un cop d'ull."),
+                t("caa8d928", "Activa la supressió de soroll"),
+                t("b5d88f0c", "Només empleats"),
+                t("c855ab8e", "Només per a Subscriptors");
+            t("ddeb0a3c", "Aquí tens la Comunitat. Te n'agraden els usuaris? Dona-hi un cop d'ull."),
                 t("e111f531", function (e) {
                     return e.count + " estan escoltant";
                 }),
@@ -4493,8 +4489,6 @@
                 }),
                 t("c9a1cb5e", "El compte no existeix"),
                 t("e7b201de", "Prova de cercar-ne un altre."),
-                t("ica87fde", "Estàs blocat"),
-                t("c7ec6faf", "Més informació"),
                 t("e79ed125", function (e) {
                     return "@" + e.screenName + " està blocat";
                 }),
@@ -4931,12 +4925,12 @@
                 t("fbc79a40", "Resum dels espais"),
                 t("d077112a", "Estadístiques dels espais"),
                 t("cf3709da", "Estat"),
-                t("e797dc32", "Temps d'emissió: ");
-            t("b649d8cc", "Només per a subscriptors"),
+                t("e797dc32", "Temps d'emissió: "),
+                t("b649d8cc", "Només per a subscriptors"),
                 t("j9282130", "Miniatura de l'emissió"),
                 t("g629b8b0", "El temps s'ha esgotat"),
-                t("eb87323c", "Es mostren les analítiques del període de temps seleccionat des de la transmissió en directe."),
-                t("i6a75722", "Interval de temps"),
+                t("eb87323c", "Es mostren les analítiques del període de temps seleccionat des de la transmissió en directe.");
+            t("i6a75722", "Interval de temps"),
                 t("c602f5b8", "Total"),
                 t("b35e68ae", "Total de participants"),
                 t("h78ee79a", "Total de reemissions vistes"),
@@ -5883,12 +5877,12 @@
                 t("hf68e810", "Les Notes de la Comunitat són un programa que té com a objectiu crear un món més ben informat i que permet als usuaris de X afegir de manera col·laborativa notes útils a les publicacions que puguin induir a error."),
                 t("jdb52860", "Els col·laboradors escriuen i valoren notes"),
                 t("c104025c", "Els col·laboradors són usuaris de X, com ara tu, que s'han inscrit al programa pilot per escriure i valorar notes. Com més usuaris hi participin, millor serà el programa."),
-                t("j7872b8c", "A les publicacions només apareixen les notes que els usuaris valoren com a útils");
-            t("fb59415e", "Perquè les notes es mostrin públicament com a context de les publicacions, un nombre suficient d'usuaris amb punts de vista diversos les han de valorar com a útils. Aquest enfocament contribueix a evitar el biaix i la manipulació i a trobar notes que siguin útils per a un gran nombre d'usuaris."),
+                t("j7872b8c", "A les publicacions només apareixen les notes que els usuaris valoren com a útils"),
+                t("fb59415e", "Perquè les notes es mostrin públicament com a context de les publicacions, un nombre suficient d'usuaris amb punts de vista diversos les han de valorar com a útils. Aquest enfocament contribueix a evitar el biaix i la manipulació i a trobar notes que siguin útils per a un gran nombre d'usuaris."),
                 t("f9a44022", "X, l'empresa, no tria el que es mostra: els usuaris són els qui ho fan"),
                 t("gdf4fbb2", "X, l'empresa, no escriu, valora ni modera les notes (tret que incompleixin les normes d'ús de X). Creiem que donar veu als usuaris perquè prenguin aquestes decisions de manera conjunta és un mètode just i eficaç per afegir informació que ajudi tothom a estar més ben informat."),
-                t("cc720e6a", "Les Notes de la Comunitat es basen en la transparència de les dades"),
-                t("j2fcd33a", "Les dades inclouen contribucions fins al:"),
+                t("cc720e6a", "Les Notes de la Comunitat es basen en la transparència de les dades");
+            t("j2fcd33a", "Les dades inclouen contribucions fins al:"),
                 t("d4a6b322", "Totes les dades sobre les Anotacions de la Comunitat es publiquen aquí de manera diària perquè els usuaris hi tinguin accés lliure amb l'objectiu d'analitzar-les, identificar-hi problemes i detectar noves oportunitats per millorar-les. Estem impacients per començar a aprendre amb tu."),
                 t("c359263a", "Obtén més informació sobre com pots utilitzar i analitzar les dades de les Notes de la Comunitat "),
                 t("b8a27fe2", "a la nostra guia"),
@@ -6483,9 +6477,6 @@
                 t("e778e3d8", "S'han blocat correctament els missatges directes"),
                 t("b7867912", "Desbloca-ho tot"),
                 t("gaddb872", "Desbloca els missatges directes"),
-                t("d83414a1", function (e) {
-                    return "Vols desblocar @" + e.screenName + "? Si ho fas, et podrà seguir i podrà veure les teves publicacions.";
-                }),
                 t("a5bbfecd", function (e) {
                     return "Vols desblocar @" + e.screenName + "? Podrà seguir-te i interactuar amb les teves publicacions públiques.";
                 }),
@@ -6891,13 +6882,13 @@
                 t("b2c213e0", "S'ha superat el límit de caràcters"),
                 t("d84e9c2a", "Comparteix el tipus de compromís esperat amb la feina per a aquesta funció."),
                 t("bc8b300c", "Funció laboral"),
-                t("d1eedb50", "Ajuda els candidats a entendre en quina àrea s'inscriu aquesta funció.");
-            t("eaf3ce64", "Equip"),
+                t("d1eedb50", "Ajuda els candidats a entendre en quina àrea s'inscriu aquesta funció."),
+                t("eaf3ce64", "Equip"),
                 t("b36cd50e", "Especifica l'equip bàsic en què treballaran els candidats quan se'ls contracti."),
                 t("d3a427ce", "Selecciona el nivell d'experiència necessari."),
                 t("i7174442", "Descripció de la feina"),
-                t("fef0cf02", "Proporciona una descripció detallada de la feina. Exposa'n les responsabilitats clau i les qualificacions perquè els candidats puguin comprendre quina és la funció."),
-                t("b7800bec", "Resumeix la feina en 200 caràcters o menys. Es mostra en publicacions i recomanacions, i també a la cerca."),
+                t("fef0cf02", "Proporciona una descripció detallada de la feina. Exposa'n les responsabilitats clau i les qualificacions perquè els candidats puguin comprendre quina és la funció.");
+            t("b7800bec", "Resumeix la feina en 200 caràcters o menys. Es mostra en publicacions i recomanacions, i també a la cerca."),
                 t("a5244ece", "URL de presentació de candidatures (obligatori)"),
                 t("g2b553f6", "Introdueix l'URL públic on els candidats poden presentar les seves candidatures per a la feina."),
                 t("c2e77608", "Càrrec (obligatori)"),
@@ -7863,7 +7854,16 @@
                 t("b5099e33", function (e) {
                     return "@" + e.screenName + " no té cap seguidor verificat.";
                 }),
-                t("ec251f36", "Quan algú que coneguis el comenci a seguir, es mostrarà aquí.");
+                t("ec251f36", "Quan algú que coneguis el comenci a seguir, es mostrarà aquí."),
+                t("f8af4f48", "Quan comencin a seguir comptes, es mostraran aquí."),
+                t("fd0aad94", "Quan un usuari verificat segueixi aquest compte, es mostrarà aquí."),
+                t("b84f6df1", function (e) {
+                    return "Regala Premium amb un " + e.percentage + " % de descompte durant un temps limitat.";
+                }),
+                t("cfcac293", function (e) {
+                    return "Regala i paga " + e.price;
+                }),
+                t("d7a73450", "Tipus de subscripció");
             function s(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7902,16 +7902,7 @@
                     n(e, a)
                 );
             }
-            t("f8af4f48", "Quan comencin a seguir comptes, es mostraran aquí."),
-                t("fd0aad94", "Quan un usuari verificat segueixi aquest compte, es mostrarà aquí."),
-                t("b84f6df1", function (e) {
-                    return "Regala Premium amb un " + e.percentage + " % de descompte durant un temps limitat.";
-                }),
-                t("cfcac293", function (e) {
-                    return "Regala i paga " + e.price;
-                }),
-                t("d7a73450", "Tipus de subscripció"),
-                t("hbd2c24e", "En aquests moments, aquest compte no compleix els requisits per rebre regals."),
+            t("hbd2c24e", "En aquests moments, aquest compte no compleix els requisits per rebre regals."),
                 t("f3fddc98", "Condicions per a compradors"),
                 t("cff9c889", "Més informació"),
                 t("c65dda96", "S'ha enviat el teu regal."),
@@ -8897,15 +8888,15 @@
                 t("faf9f484", "Anunci"),
                 t("ae2ea9e7", function (e) {
                     return "Anunci de: " + e.advertiserName;
-                });
-            t("hea01798", "Control lliscant de cerca"),
+                }),
+                t("hea01798", "Control lliscant de cerca"),
                 t("f8a09386", "Mostra-ho al Periscope"),
                 t("gf2b6eee", "Imatge en imatge"),
                 t("b3160a69", function (e) {
                     return e.volumePercent + " %";
                 }),
-                t("fb236728", "Pausa"),
-                t("e9bd453e", "Torna-ho a reproduir"),
+                t("fb236728", "Pausa");
+            t("e9bd453e", "Torna-ho a reproduir"),
                 t("d46b00b0", "Ves al directe"),
                 t("ec8ab8b4", "Silencia"),
                 t("b8b6344a", "Deixa de silenciar"),
@@ -9330,7 +9321,6 @@
                 t("fe40537f", function (e) {
                     return "Vols desblocar @" + e.screenName + "?";
                 }),
-                t("ab7c3460", "Et podrà seguir i podrà veure les teves publicacions."),
                 t("i58d8718", "Podrà seguir-te i interactuar amb les teves publicacions públiques."),
                 t("cda66545", function (e) {
                     return "Fes clic per " + e.followType + " " + e.screenName;
@@ -11363,12 +11353,6 @@
                             },
                         },
                         {
-                            key: "e6264621",
-                            get: function () {
-                                return ["No pots seguir @" + this.props.screenName + " ni veure'n les publicacions. "];
-                            },
-                        },
-                        {
                             key: "f98ecc47",
                             get: function () {
                                 return ["Segur que vols mostrar aquestes publicacions? Veure-les no farà desblocar @" + this.props.screenName + ". "];
@@ -13390,4 +13374,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.a2f703ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.4ffe3bba.js.map

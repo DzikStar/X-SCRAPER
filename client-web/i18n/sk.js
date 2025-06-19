@@ -1507,9 +1507,6 @@
                     return "Zablokovať používateľa @" + e.screenName;
                 }),
                 n("a6450e84", "Zablokovať"),
-                n("g353ad73", function (e) {
-                    return "Používateľ @" + e.screenName + " vás nebude môcť sledovať ani si nebude si môcť zobraziť vaše príspevky a vy neuvidíte jeho príspevky ani notifikácie.";
-                }),
                 n("ad00a739", function (e) {
                     return "Bude vidieť vaše verejné príspevky, ale už s nimi nebude môcť interagovať. Používateľ @" + e.screenName + " vás okrem toho už nebude môcť sledovať ani vám posielať správy a vy od neho neuvidíte notifikácie.";
                 }),
@@ -1521,7 +1518,6 @@
                     return "Odblokovať používateľa @" + e.screenName;
                 }),
                 n("e133be4e", "Odblokovať"),
-                n("he43bca4", "Používateľ vás bude môcť sledovať a zobraziť si vaše príspevky."),
                 n("f5f01af6", "Bude vás môcť sledovať a interagovať s vašimi verejnými príspevkami."),
                 n("b6878b0a", "Vyskytla sa chyba. Skúste tohto používateľa zablokovať znova o minútu."),
                 n("e40252de", "Nezobrazovať tieto príspevky na stránke Pre vás"),
@@ -1930,10 +1926,10 @@
                 n("jcd5ee8a", "Upraviť blok"),
                 n("a8f09fb8", "Odstrániť blok"),
                 n("i89195ea", "Oddeľovač"),
-                n("da8ac57c", "Upraviť opis");
-            n("a8fdd09c", "Zverejnenie článku"),
-                n("d8047cc8", "Publikovať"),
-                n("ff7ddca2", "Zverejnený článok sa bude zobrazovať ako príspevok a nájdete ho aj vo svojom profile na karte Články."),
+                n("da8ac57c", "Upraviť opis"),
+                n("a8fdd09c", "Zverejnenie článku"),
+                n("d8047cc8", "Publikovať");
+            n("ff7ddca2", "Zverejnený článok sa bude zobrazovať ako príspevok a nájdete ho aj vo svojom profile na karte Články."),
                 n("ef34d7be", "Nastavenia publika a odpovedí sa po zverejnení článku nedajú upravovať."),
                 n("e52d4998", "Vyberte svoje publikum"),
                 n("d7985b24", "Vyberte, kto môže na tento článok odpovedať"),
@@ -2986,10 +2982,10 @@
                 n("bc6efc72", "Zásady ochrany súkromia"),
                 n("h3161192", "Zásady používania súborov cookie"),
                 n("a7de64de", "Informácie o reklamách"),
-                n("jb0a4c36", "Blog");
-            n("ce6d095a", "Kariéry"),
-                n("e0adec82", "Zdroje pre značku"),
-                n("df1b7550", "Marketing"),
+                n("jb0a4c36", "Blog"),
+                n("ce6d095a", "Kariéry"),
+                n("e0adec82", "Zdroje pre značku");
+            n("df1b7550", "Marketing"),
                 n("he258678", "X pre firmy"),
                 n("c6f58084", "Vývojári"),
                 n("d83f18d2", "Adresár"),
@@ -3898,10 +3894,10 @@
                 n("c371fb9a", "Koniec"),
                 n("c0ce822e", "Nastavenia mikrofónu"),
                 n("a2bf8b8a", "Prepnúť na počúvanie"),
-                n("caa8d928", "Prepnúť potláčanie ruchu");
-            n("b5d88f0c", "Iba pre zamestnancov"),
-                n("c855ab8e", "Len pre predplatiteľov"),
-                n("ddeb0a3c", "Páčia sa vám ľudia z tejto Komunity? Pozrite si ju."),
+                n("caa8d928", "Prepnúť potláčanie ruchu"),
+                n("b5d88f0c", "Iba pre zamestnancov"),
+                n("c855ab8e", "Len pre predplatiteľov");
+            n("ddeb0a3c", "Páčia sa vám ľudia z tejto Komunity? Pozrite si ju."),
                 n("e111f531", function (e) {
                     return e.count + " naladen" + t(e.count, "í", "ých", "ý/-á", "ých");
                 }),
@@ -4502,8 +4498,6 @@
                 }),
                 n("c9a1cb5e", "Tento účet neexistuje"),
                 n("e7b201de", "Skúste vyhľadať iný."),
-                n("ica87fde", "Ste zablokovaní"),
-                n("c7ec6faf", "Viac informácií"),
                 n("e79ed125", function (e) {
                     return "@" + e.screenName + " je zablokovaný";
                 }),
@@ -4940,12 +4934,12 @@
                 n("fbc79a40", "Prehľad priestorov"),
                 n("d077112a", "Štatistiky priestoru"),
                 n("cf3709da", "Stav"),
-                n("e797dc32", "Čas streamu: ");
-            n("b649d8cc", "Len pre predplatiteľov"),
+                n("e797dc32", "Čas streamu: "),
+                n("b649d8cc", "Len pre predplatiteľov"),
                 n("j9282130", "Miniatúra vysielania"),
                 n("g629b8b0", "Časový limit vypršal"),
-                n("eb87323c", "Zobrazuje štatistické údaje za vybrané časové obdobie od uskutočnenia živého prenosu."),
-                n("i6a75722", "Časový rozsah"),
+                n("eb87323c", "Zobrazuje štatistické údaje za vybrané časové obdobie od uskutočnenia živého prenosu.");
+            n("i6a75722", "Časový rozsah"),
                 n("c602f5b8", "Súčet"),
                 n("b35e68ae", "Celkovo účastníkov"),
                 n("h78ee79a", "Celkový počet opätovných prehratí"),
@@ -5892,12 +5886,12 @@
                 n("hf68e810", "Community Notes je program, ktorého cieľom je vytvoriť lepšie informovaný svet. Umožňuje ľuďom v sieti X spoločne pridávať užitočné poznámky k príspevkom, ktoré by mohli byť zavádzajúce."),
                 n("jdb52860", "Prispievatelia píšu a hodnotia poznámky"),
                 n("c104025c", "Prispievatelia sú ľudia na X, rovnako ako vy, ktorí sa rozhodli zaregistrovať do pilotného projektu a písať a hodnotiť poznámky. Čím viac ľudí sa zapojí, tým je program lepší."),
-                n("j7872b8c", "V príspevku sa zobrazujú len poznámky, ktoré ľudia považujú za užitočné");
-            n("fb59415e", "Aby sa poznámka mohla verejne zobraziť ako kontext príspevku, musí ju ohodnotiť ako užitočnú dostatočný počet ľudí z rôznych uhlov pohľadu. Tento prístup pomáha vyhnúť sa zaujatosti a manipulácii a pomáha nájsť poznámky, ktoré sú užitočné pre mnoho ľudí."),
+                n("j7872b8c", "V príspevku sa zobrazujú len poznámky, ktoré ľudia považujú za užitočné"),
+                n("fb59415e", "Aby sa poznámka mohla verejne zobraziť ako kontext príspevku, musí ju ohodnotiť ako užitočnú dostatočný počet ľudí z rôznych uhlov pohľadu. Tento prístup pomáha vyhnúť sa zaujatosti a manipulácii a pomáha nájsť poznámky, ktoré sú užitočné pre mnoho ľudí."),
                 n("f9a44022", "O tom, čo sa zobrazí, nerozhoduje spoločnosť X, ale prispievatelia"),
                 n("gdf4fbb2", "Spoločnosť X poznámky nepíše, nehodnotí ani nemoderuje (pokiaľ neporušujú pravidlá platformy X). Veríme, že keď dáme ľuďom možnosť prejaviť svoje názory a spoločne rozhodovať, ide o férový a efektívny spôsob, ako ľuďom poskytovať kvalitnejšie informácie."),
-                n("cc720e6a", "Poznámky komunity sú založené na transparentnosti údajov"),
-                n("j2fcd33a", "Údaje obsahujú príspevky do"),
+                n("cc720e6a", "Poznámky komunity sú založené na transparentnosti údajov");
+            n("j2fcd33a", "Údaje obsahujú príspevky do"),
                 n("d4a6b322", "Všetky údaje Poznámok komunity sa publikujú každý deň, takže ľudia k nim majú voľný prístup a môžu ich analyzovať, identifikovať problémy a rozpoznávať príležitosti na zlepšenie Poznámok komunity. Radi sa budeme učiť spolu s vami."),
                 n("c359263a", "Ako používať a analyzovať údaje Poznámok komunity "),
                 n("b8a27fe2", "pomocou našej príručky"),
@@ -6492,9 +6486,6 @@
                 n("e778e3d8", "Súkromné správy ste úspešne zablokovali"),
                 n("b7867912", "Odblokovať všetko"),
                 n("gaddb872", "Odblokovať súkromné správy"),
-                n("d83414a1", function (e) {
-                    return "Odblokovať používateľa @" + e.screenName + "? Bude vás môcť sledovať a prezerať si vaše príspevky.";
-                }),
                 n("a5bbfecd", function (e) {
                     return "Chcete používateľa @" + e.screenName + " odblokovať? Bude vás môcť sledovať a interagovať s vašimi verejnými príspevkami.";
                 }),
@@ -6900,13 +6891,13 @@
                 n("b2c213e0", "Bol prekročený limit počtu znakov"),
                 n("d84e9c2a", "Uveďte, aký typ pracovného nasadenia sa pri tejto pozícii očakáva."),
                 n("bc8b300c", "Pracovná funkcia"),
-                n("d1eedb50", "Pomôžte uchádzačom porozumieť oblasti, v ktorej táto rola pôsobí.");
-            n("eaf3ce64", "Tím"),
+                n("d1eedb50", "Pomôžte uchádzačom porozumieť oblasti, v ktorej táto rola pôsobí."),
+                n("eaf3ce64", "Tím"),
                 n("b36cd50e", "Určite základný tím, s ktorým budú uchádzači po prijatí do zamestnania spolupracovať."),
                 n("d3a427ce", "Vyberte požadovanú úroveň skúseností."),
                 n("i7174442", "Popis pracovnej pozície"),
-                n("fef0cf02", "Zadajte podrobný popis pracovnej pozície. Uveďte kľúčové povinnosti a kvalifikáciu, aby uchádzači jasne pochopili, o akú pozíciu ide."),
-                n("b7800bec", "Propagujte ponuku pracovnej pozície textom v rozsahu maximálne 200 znakov."),
+                n("fef0cf02", "Zadajte podrobný popis pracovnej pozície. Uveďte kľúčové povinnosti a kvalifikáciu, aby uchádzači jasne pochopili, o akú pozíciu ide.");
+            n("b7800bec", "Propagujte ponuku pracovnej pozície textom v rozsahu maximálne 200 znakov."),
                 n("a5244ece", "Adresa URL aplikácie (povinná)"),
                 n("g2b553f6", "Zadajte verejnú URL adresu, na ktorej budú uchádzači podávať prihlášky na túto pracovnú pozíciu."),
                 n("c2e77608", "Názov pracovnej pozície (povinné)"),
@@ -7872,7 +7863,16 @@
                 n("b5099e33", function (e) {
                     return "@" + e.screenName + " nemá žiadnych overených sledujúcich";
                 }),
-                n("ec251f36", "Keď používateľa začne sledovať niekto, koho poznáte, bude uvedený tu.");
+                n("ec251f36", "Keď používateľa začne sledovať niekto, koho poznáte, bude uvedený tu."),
+                n("f8af4f48", "Keď začnú sledovať účty, zobrazia sa tu."),
+                n("fd0aad94", "Keď niekto overený sleduje tento účet, zobrazí sa tu."),
+                n("b84f6df1", function (e) {
+                    return "Darujte Premium v " + e.percentage + " % zľave na obmedzený čas";
+                }),
+                n("cfcac293", function (e) {
+                    return "Darovať a zaplatiť " + e.price;
+                }),
+                n("d7a73450", "Úroveň");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var n = a[o];
@@ -7911,16 +7911,7 @@
                     r(e, a)
                 );
             }
-            n("f8af4f48", "Keď začnú sledovať účty, zobrazia sa tu."),
-                n("fd0aad94", "Keď niekto overený sleduje tento účet, zobrazí sa tu."),
-                n("b84f6df1", function (e) {
-                    return "Darujte Premium v " + e.percentage + " % zľave na obmedzený čas";
-                }),
-                n("cfcac293", function (e) {
-                    return "Darovať a zaplatiť " + e.price;
-                }),
-                n("d7a73450", "Úroveň"),
-                n("hbd2c24e", "Tento účet v súčasnosti nemôže dostávať darčeky."),
+            n("hbd2c24e", "Tento účet v súčasnosti nemôže dostávať darčeky."),
                 n("f3fddc98", "podmienky pre kupujúcich"),
                 n("cff9c889", "Viac informácií"),
                 n("c65dda96", "Váš darček bol odoslaný."),
@@ -8906,15 +8897,15 @@
                 n("faf9f484", "Reklama"),
                 n("ae2ea9e7", function (e) {
                     return "Reklamu poskytuje " + e.advertiserName;
-                });
-            n("hea01798", "Jazdec na hľadanie"),
+                }),
+                n("hea01798", "Jazdec na hľadanie"),
                 n("f8a09386", "Zobraziť na Periscope"),
                 n("gf2b6eee", "Obraz v obraze"),
                 n("b3160a69", function (e) {
                     return e.volumePercent + " %";
                 }),
-                n("fb236728", "Pozastaviť"),
-                n("e9bd453e", "Prehrať znova"),
+                n("fb236728", "Pozastaviť");
+            n("e9bd453e", "Prehrať znova"),
                 n("d46b00b0", "Prejsť na živé vysielanie"),
                 n("ec8ab8b4", "Stíšiť"),
                 n("b8b6344a", "Zrušiť stíšenie"),
@@ -9339,7 +9330,6 @@
                 n("fe40537f", function (e) {
                     return "Chcete odblokovať účet @" + e.screenName + "?";
                 }),
-                n("ab7c3460", "Používateľ vás bude môcť sledovať a zobraziť si vaše príspevky."),
                 n("i58d8718", "Bude vás môcť sledovať a interagovať s vašimi verejnými príspevkami."),
                 n("cda66545", function (e) {
                     return "Kliknutím môžete " + e.followType + " " + e.screenName;
@@ -11376,12 +11366,6 @@
                             },
                         },
                         {
-                            key: "e6264621",
-                            get: function () {
-                                return ["Nemôžete sledovať používateľa @" + this.props.screenName + " ani si pozerať jeho príspevky. "];
-                            },
-                        },
-                        {
                             key: "f98ecc47",
                             get: function () {
                                 return ["Naozaj chcete tieto príspevky zobraziť? Zobrazením príspevkov používateľa @" + this.props.screenName + " neodblokujete. "];
@@ -13405,4 +13389,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.f0f1ca6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.da62bc1a.js.map

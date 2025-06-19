@@ -71,23 +71,6 @@
                 },
                 t = o.memo(i);
         },
-        972796: (e, d, a) => {
-            a.d(d, { T: () => c, Z: () => b });
-            var o = a(202784),
-                r = a(688715),
-                l = a(731708),
-                n = a(111677),
-                s = a.n(n),
-                u = a(416699);
-            const i = s().ica87fde,
-                t = (0, r.ju)("https://support.x.com/articles/20172060"),
-                c = (e) => {
-                    const { screenName: d } = e,
-                        a = o.useMemo(() => o.createElement(s().I18NFormatMessage, { $i18n: "e6264621", screenName: d }, o.createElement(l.ZP, { link: t }, s().c7ec6faf)), [d]);
-                    return o.createElement(u.Z, { header: i, message: a, screenName: d });
-                },
-                b = o.memo(c);
-        },
         189490: (e, d, a) => {
             a.d(d, { Z: () => D });
             var o = a(202784),
@@ -342,7 +325,7 @@
                         ]).then(a.bind(a, 34655)),
                     { shouldMigrateToX: !0 },
                 ),
-                N = (0, w.p)(
+                x = (0, w.p)(
                     () =>
                         Promise.all([
                             a.e("icons.21"),
@@ -443,7 +426,7 @@
                         ]).then(a.bind(a, 30801)),
                     { shouldMigrateToX: !0 },
                 ),
-                x = (0, w.p)(
+                N = (0, w.p)(
                     () =>
                         Promise.all([
                             a.e("icons.21"),
@@ -550,8 +533,8 @@
                         H = (0, n.useLocation)(),
                         X = (0, h.z)();
                     if (!u) return null;
-                    const { screen_name: F } = u,
-                        V = H.query,
+                    const { screen_name: V } = u,
+                        F = H.query,
                         O = u && G === u.id_str,
                         L = i.isTrue("creator_monetization_profile_subscription_tweets_tab_enabled") ? u.super_follow_eligible : (O && d) || u.super_following,
                         j = S,
@@ -569,14 +552,14 @@
                         le = oe && u.highlights_info?.can_highlight_tweets && O,
                         ne = de && oe && i.isTrue("subscriptions_sign_up_enabled") && O && !u.highlights_info?.can_highlight_tweets,
                         se = ae && (re || le || ne),
-                        ue = (e) => [{ isActive: () => H.pathname.toLowerCase() === `/${F}`.toLowerCase() || H.pathname.toLowerCase() === `/${F}/`.toLowerCase() || H.pathname.indexOf("/intent/follow") > -1 || H.pathname.indexOf("/intent/user") > -1, to: { pathname: `/${F}`, query: V }, key: A, label: A, viewType: "tweets" }, ee ? { to: { pathname: `/${F}/${U}`, query: V }, key: C, label: C, viewType: "affiliates", onClick: e() } : void 0, { to: { pathname: `/${F}/${E}`, query: V }, key: k, label: k, viewType: "tweets_replies", onClick: e() }, L ? { to: { pathname: `/${F}/${R}`, query: V }, key: j, label: j, color: "plum500", viewType: "super_follows_tweets" } : void 0, se ? { to: { pathname: `/${F}/${v}`, query: V }, key: P, label: P, viewType: "highlight_tweets" } : void 0, K ? { to: { pathname: `/${F}/${B}`, query: V }, key: g, label: g, onClick: e(), viewType: "articles" } : void 0, { to: { pathname: `/${F}/${T}`, query: V }, key: y, label: y, onClick: e(), viewType: "media" }, O ? { to: { pathname: `/${F}/${I}`, query: V }, key: _, label: _, onClick: e(), viewType: "likes" } : void 0],
+                        ue = (e) => [{ isActive: () => H.pathname.toLowerCase() === `/${V}`.toLowerCase() || H.pathname.toLowerCase() === `/${V}/`.toLowerCase() || H.pathname.indexOf("/intent/follow") > -1 || H.pathname.indexOf("/intent/user") > -1, to: { pathname: `/${V}`, query: F }, key: A, label: A, viewType: "tweets" }, ee ? { to: { pathname: `/${V}/${U}`, query: F }, key: C, label: C, viewType: "affiliates", onClick: e() } : void 0, { to: { pathname: `/${V}/${E}`, query: F }, key: k, label: k, viewType: "tweets_replies", onClick: e() }, L ? { to: { pathname: `/${V}/${R}`, query: F }, key: j, label: j, color: "plum500", viewType: "super_follows_tweets" } : void 0, se ? { to: { pathname: `/${V}/${v}`, query: F }, key: P, label: P, viewType: "highlight_tweets" } : void 0, K ? { to: { pathname: `/${V}/${B}`, query: F }, key: g, label: g, onClick: e(), viewType: "articles" } : void 0, { to: { pathname: `/${V}/${T}`, query: F }, key: y, label: y, onClick: e(), viewType: "media" }, O ? { to: { pathname: `/${V}/${I}`, query: F }, key: _, label: _, onClick: e(), viewType: "likes" } : void 0],
                         ie = { displayBlocked: s, fullName: u.name, screenName: u.screen_name, userId: u.id_str },
                         te = { isActiveCreator: d, isSuperFollowing: u.super_following, isSuperEligible: u.super_follow_eligible };
                     return r.createElement(
                         r.Fragment,
                         null,
                         r.createElement(D.Z, null, (e) => r.createElement(l.Z, { style: X && q.tabsRedesign }, r.createElement(c.Z, { "aria-label": p, links: ue(e) }))),
-                        r.createElement(n.Switch, null, r.createElement(n.Route, { exact: !0, path: "/intent/follow" }, r.createElement(Z, (0, o.Z)({}, ie, te))), r.createElement(n.Route, { exact: !0, path: "/intent/user" }, r.createElement(Z, (0, o.Z)({}, ie, te))), r.createElement(n.Route, { exact: !0, path: `/${f.qX}` }, r.createElement(Z, (0, o.Z)({}, ie, te, { onEntriesRendered: a }))), r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${E}` }, r.createElement(Z, (0, o.Z)({}, ie, te, { mode: "with_replies" }))), r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${R}` }, r.createElement(Z, (0, o.Z)({}, ie, te, { mode: "superfollows" }))), se ? r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${v}` }, ne ? r.createElement(t.Z, { variant: "HighlightsProfile" }) : r.createElement(Z, (0, o.Z)({}, ie, te, { mode: "highlights" }))) : null, K ? r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${B}` }, Y ? r.createElement(t.Z, { variant: "ArticlesProfile" }) : r.createElement(Z, (0, o.Z)({}, ie, te, { mode: "articles" }))) : null, r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${T}` }, r.createElement(N, ie)), O ? r.createElement(n.Route, { exact: !0, path: `/${f.qX}/(${I})` }, r.createElement($, (0, o.Z)({ isOwnProfile: O }, ie))) : null, ee ? r.createElement(n.Route, { exact: !0, path: `/${f.qX}/(${U})` }, r.createElement(x, ie)) : null, de ? r.createElement(M.Z, { to: `/${F}` }) : null),
+                        r.createElement(n.Switch, null, r.createElement(n.Route, { exact: !0, path: "/intent/follow" }, r.createElement(Z, (0, o.Z)({}, ie, te))), r.createElement(n.Route, { exact: !0, path: "/intent/user" }, r.createElement(Z, (0, o.Z)({}, ie, te))), r.createElement(n.Route, { exact: !0, path: `/${f.qX}` }, r.createElement(Z, (0, o.Z)({}, ie, te, { onEntriesRendered: a }))), r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${E}` }, r.createElement(Z, (0, o.Z)({}, ie, te, { mode: "with_replies" }))), r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${R}` }, r.createElement(Z, (0, o.Z)({}, ie, te, { mode: "superfollows" }))), se ? r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${v}` }, ne ? r.createElement(t.Z, { variant: "HighlightsProfile" }) : r.createElement(Z, (0, o.Z)({}, ie, te, { mode: "highlights" }))) : null, K ? r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${B}` }, Y ? r.createElement(t.Z, { variant: "ArticlesProfile" }) : r.createElement(Z, (0, o.Z)({}, ie, te, { mode: "articles" }))) : null, r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${T}` }, r.createElement(x, ie)), O ? r.createElement(n.Route, { exact: !0, path: `/${f.qX}/(${I})` }, r.createElement($, (0, o.Z)({ isOwnProfile: O }, ie))) : null, ee ? r.createElement(n.Route, { exact: !0, path: `/${f.qX}/(${U})` }, r.createElement(N, ie)) : null, de ? r.createElement(M.Z, { to: `/${V}` }) : null),
                     );
                 },
                 q = s.default.create((e) => ({ tabsRedesign: { paddingHorizontal: e.spaces.space16 } })),
@@ -649,4 +632,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-8bf258cf.63c6ca4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-8bf258cf.b342a12a.js.map

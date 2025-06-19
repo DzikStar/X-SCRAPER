@@ -323,10 +323,9 @@
                     return { avatar: s || (!u && !t && !n && !a), badges: s || !a, description: s || (!c && !d && !u && !n && !a), followButton: !(s || d || u || t || n || a), followersYouKnow: !s && !d && !c && !u && !t && !n && !a && (l.following || !l.protected), followIndicator: !a, fullName: m, label: m, stats: s || (!d && !u && !n && !a), subscriptionsCount: s || !l.has_hidden_subscriptions_on_profile };
                 },
                 r = ({ displaySensitiveMedia: e, isOwnProfile: t, user: n, userProfileInterstitialType: l }) => (l === a.Z.SensitiveMedia || l === a.Z.OffensiveProfileContent) && !(t || n.following || e),
-                o = ({ isOwnProfile: e, isSoftBlockEnabled: t = !1, user: n }) => {
-                    const a = n.blocked_by,
-                        l = n.protected && !n.following;
-                    return t ? e || !l : e || (!l && !a);
+                o = ({ isOwnProfile: e, user: t }) => {
+                    const n = t.protected && !t.following;
+                    return e || !n;
                 };
         },
         127218: (e, t, n) => {
@@ -833,8 +832,8 @@
             var N = n(38293),
                 H = n(652904),
                 O = n(736063),
-                B = n(943052),
-                U = n(293115),
+                U = n(943052),
+                B = n(293115),
                 q = n(127218),
                 W = {
                     argumentDefinitions: [],
@@ -971,11 +970,11 @@
                         }, [t, l.id_str]),
                         { data: o, fetchNext: i } = (0, q.C)(ze, r),
                         s = o?.data?.result?.recruiting_organization_results?.result?.consumer_job_search;
-                    return s ? a.createElement(U.nO, { namespace: Ze }, a.createElement(H.Z, null, a.createElement(a.Fragment, null, a.createElement(N.Z, { title: xe(n) }), a.createElement(Ie, { fetchNext: i, isViewerFollowsUser: l.following, profileId: l.id_str, slice: s, user: o.data.result })))) : null;
+                    return s ? a.createElement(B.nO, { namespace: Ze }, a.createElement(H.Z, null, a.createElement(a.Fragment, null, a.createElement(N.Z, { title: xe(n) }), a.createElement(Ie, { fetchNext: i, isViewerFollowsUser: l.following, profileId: l.id_str, slice: s, user: o.data.result })))) : null;
                 },
                 Pe = { context: "UserJobs" },
                 Te = (e) => {
-                    const [t] = (0, B.Z)(),
+                    const [t] = (0, U.Z)(),
                         n = a.useMemo(() => ({ keyword: t.get("q") }), [t]);
                     return a.createElement(O.H, { errorConfig: Pe }, a.createElement(Ce, (0, j.Z)({}, e, { query: n })));
                 },
@@ -985,7 +984,7 @@
                 je = n(466818),
                 Re = n(985124);
             const Ae = () => {
-                    const [e, t] = (0, B.Z)(),
+                    const [e, t] = (0, U.Z)(),
                         n = a.useCallback(
                             (e, n) => {
                                 t("t", e);
@@ -998,30 +997,29 @@
                 Ne = ({ onDismiss: e, screenName: t }) => a.createElement(Le.Z, { onMaskClick: e, style: He.modalContainer, type: "full", withMask: !0 }, a.createElement(l.Z, { style: He.modalContent }, a.createElement(i.ZP, null, "Search jobs")), a.createElement(y.Z, { basePath: `/${t}/jobs` }), a.createElement(Ae, null), a.createElement(Ke.ZP, { onClick: e, type: "brandFilled" }, "Done")),
                 He = d.default.create((e) => ({ container: { paddingHorizontal: e.spaces.space16 }, header: { flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", marginTop: e.spaces.space16 }, actions: { display: "flex", flexDirection: "row", gap: e.spaces.space8 }, iconActions: { display: "flex", flexDirection: "row" }, modalContainer: { display: "flex", gap: e.spaces.space32, padding: e.spacesPx.space32 }, modalContent: { display: "flex", gap: e.spaces.space16 }, modalActionsContainer: {} })),
                 Oe = a.memo(Ne),
-                Be = u().b007440a,
-                Ue = u().c5fb5a1a,
+                Ue = u().b007440a,
+                Be = u().c5fb5a1a,
                 qe = d.default.create((e) => ({ rightControlContainer: { flexDirection: "row", gap: e.spaces.space16, alignItems: "center" }, searchContainer: { borderTopColor: e.colors.borderColor, borderTopStyle: "solid", borderTopWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small, paddingVertical: e.spaces.space4, width: "100%" }, titleContent: { flexDirection: "row" }, sidebarRoot: { paddingBottom: e.spaces.space64, paddingTop: e.spaces.space12 } })),
                 We = w((e) => {
                     const [t, n] = a.useState(!1),
                         { fetchOneUserByScreenNameIfNeeded: d, history: c, screenName: u, user: k } = e,
                         { viewerUserId: D } = a.useContext(h.rC),
                         _ = (0, p.hC)("recruiting_jobs_list_search_enabled"),
-                        S = (0, p.hC)("recruiting_job_recommendations_enabled"),
-                        w = (0, p.hC)("xprofile_blocked_by_view_enabled");
+                        S = (0, p.hC)("recruiting_job_recommendations_enabled");
                     a.useEffect(() => {
                         u && d(u);
                     }, [d, u]);
-                    const v = k?.id_str === D,
-                        E = !k || (k && (0, g.n5)({ isOwnProfile: v, isSoftBlockEnabled: w, user: k })),
-                        $ = a.useCallback(() => {
+                    const w = k?.id_str === D,
+                        v = !k || (k && (0, g.n5)({ isOwnProfile: w, user: k })),
+                        E = a.useCallback(() => {
                             n(!1);
                         }, []);
                     if (u) {
                         const e = () => {
                             const e = "Business" === k?.verified_type || "Square" === k?.profile_image_shape ? "square" : "circle";
-                            return a.createElement(l.Z, { style: qe.rightControlContainer }, a.createElement(l.Z, null, k ? a.createElement(o.default, { screenName: u, shape: e, size: "large", uri: k.profile_image_url_https }) : a.createElement(o.default, { shape: "square", size: "xLarge", uri: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" })), a.createElement(l.Z, null, a.createElement(i.ZP, { size: "body", weight: "bold" }, Be), a.createElement(s.Z, { screenName: u, size: "subtext1", style: { fontWeight: "normal" } })));
+                            return a.createElement(l.Z, { style: qe.rightControlContainer }, a.createElement(l.Z, null, k ? a.createElement(o.default, { screenName: u, shape: e, size: "large", uri: k.profile_image_url_https }) : a.createElement(o.default, { shape: "square", size: "xLarge", uri: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" })), a.createElement(l.Z, null, a.createElement(i.ZP, { size: "body", weight: "bold" }, Ue), a.createElement(s.Z, { screenName: u, size: "subtext1", style: { fontWeight: "normal" } })));
                         };
-                        return E ? a.createElement(a.Fragment, null, a.createElement(f.Z, { backLocation: "/", history: c, primaryContent: k ? (!k?.protected || k?.following || v ? a.createElement(a.Fragment, null, _ && u ? a.createElement(l.Z, { style: qe.rightControlContainer }, a.createElement(l.Z, { style: qe.searchContainer }, a.createElement(y.Z, { basePath: `/${u}/jobs`, styleType: "selection" }))) : null, a.createElement(Me, { screenName: u, user: k })) : a.createElement(r.Z, { header: Ue })) : null, primaryContentLabel: Be, sidebarContent: S ? a.createElement(l.Z, { style: qe.sidebarRoot }, a.createElement(m.Z, { isSidebarModule: !0 })) : null, title: e() }), t ? a.createElement(Oe, { onDismiss: $, screenName: u }) : null) : a.createElement(b.Z, { to: `/${u}` });
+                        return v ? a.createElement(a.Fragment, null, a.createElement(f.Z, { backLocation: "/", history: c, primaryContent: k ? (!k?.protected || k?.following || w ? a.createElement(a.Fragment, null, _ && u ? a.createElement(l.Z, { style: qe.rightControlContainer }, a.createElement(l.Z, { style: qe.searchContainer }, a.createElement(y.Z, { basePath: `/${u}/jobs`, styleType: "selection" }))) : null, a.createElement(Me, { screenName: u, user: k })) : a.createElement(r.Z, { header: Be })) : null, primaryContentLabel: Ue, sidebarContent: S ? a.createElement(l.Z, { style: qe.sidebarRoot }, a.createElement(m.Z, { isSidebarModule: !0 })) : null, title: e() }), t ? a.createElement(Oe, { onDismiss: E, screenName: u }) : null) : a.createElement(b.Z, { to: `/${u}` });
                     }
                     return null;
                 });
@@ -1343,4 +1341,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserJobs.fffe570a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserJobs.891de0aa.js.map

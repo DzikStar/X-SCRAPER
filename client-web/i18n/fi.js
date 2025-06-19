@@ -1498,9 +1498,6 @@
                     return "Estä @" + a.screenName;
                 }),
                 e("a6450e84", "Estä"),
-                e("g353ad73", function (a) {
-                    return "Käyttäjä ei voi seurata sinua tai nähdä julkaisujasi. Et myöskään näe käyttäjän @" + a.screenName + " julkaisuja tai saa niistä ilmoituksia.";
-                }),
                 e("ad00a739", function (a) {
                     return "Hänen on mahdollista nähdä julkiset julkaisusi, mutta ei enää reagoida niihin. @" + a.screenName + " ei myöskään voi seurata sinua tai lähettää sinulle viestejä, etkä näe ilmoituksia häneltä.";
                 }),
@@ -1512,7 +1509,6 @@
                     return "Poista käyttäjän @" + a.screenName + " esto";
                 }),
                 e("e133be4e", "Poista esto"),
-                e("he43bca4", "Hän voi seurata sinua ja nähdä julkaisusi."),
                 e("f5f01af6", "Hänen on mahdollista seurata sinua ja reagoida julkisiin julkaisuihisi."),
                 e("b6878b0a", "Jokin meni pieleen. Yritä estää käyttäjä hetken kuluttua uudelleen."),
                 e("e40252de", "Älä näytä näitä julkaisuja Sinulle-aikajanalla"),
@@ -1921,10 +1917,10 @@
                 e("jcd5ee8a", "Muokkaa katkelmaa"),
                 e("a8f09fb8", "Poista katkelma"),
                 e("i89195ea", "Jakaja"),
-                e("da8ac57c", "Muokkaa kuvatekstiä");
-            e("a8fdd09c", "Julkaise artikkeli"),
-                e("d8047cc8", "Julkaise"),
-                e("ff7ddca2", "Artikkelisi ilmestyy julkaisuna, kun olet julkaissut sen. Löydät sen myös profiilisi Artikkelit-välilehdeltä."),
+                e("da8ac57c", "Muokkaa kuvatekstiä"),
+                e("a8fdd09c", "Julkaise artikkeli"),
+                e("d8047cc8", "Julkaise");
+            e("ff7ddca2", "Artikkelisi ilmestyy julkaisuna, kun olet julkaissut sen. Löydät sen myös profiilisi Artikkelit-välilehdeltä."),
                 e("ef34d7be", "Yleisö- ja vastausvalintoja ei voi muuttaa artikkelin julkaisun jälkeen."),
                 e("e52d4998", "Valitse yleisösi"),
                 e("d7985b24", "Valitse, ketkä voivat vastata tähän artikkeliin"),
@@ -2977,10 +2973,10 @@
                 e("bc6efc72", "Yksityisyyskäytäntö"),
                 e("h3161192", "Evästekäytäntö"),
                 e("a7de64de", "Tietoa mainoksista"),
-                e("jb0a4c36", "Blogi");
-            e("ce6d095a", "Työpaikat"),
-                e("e0adec82", "Brändiresurssit"),
-                e("df1b7550", "Markkinointi"),
+                e("jb0a4c36", "Blogi"),
+                e("ce6d095a", "Työpaikat"),
+                e("e0adec82", "Brändiresurssit");
+            e("df1b7550", "Markkinointi"),
                 e("he258678", "X yrityksille"),
                 e("c6f58084", "Kehittäjät"),
                 e("d83f18d2", "Hakemisto"),
@@ -3889,10 +3885,10 @@
                 e("c371fb9a", "Loppu"),
                 e("c0ce822e", "Mikrofoniasetukset"),
                 e("a2bf8b8a", "Vaihda kuunteluun"),
-                e("caa8d928", "Säädä häiriönpoistoa");
-            e("b5d88f0c", "Vain työntekijät"),
-                e("c855ab8e", "Vain Tilaajille"),
-                e("ddeb0a3c", "Tässä on tämä Yhteisö. Pidätkö väestä? Katso ympärillesi."),
+                e("caa8d928", "Säädä häiriönpoistoa"),
+                e("b5d88f0c", "Vain työntekijät"),
+                e("c855ab8e", "Vain Tilaajille");
+            e("ddeb0a3c", "Tässä on tämä Yhteisö. Pidätkö väestä? Katso ympärillesi."),
                 e("e111f531", function (a) {
                     return a.count + " linjoille saapunut" + n(a.count, "", "ta");
                 }),
@@ -4493,8 +4489,6 @@
                 }),
                 e("c9a1cb5e", "Tätä tiliä ei ole olemassa"),
                 e("e7b201de", "Kokeile muulla nimellä."),
-                e("ica87fde", "Sinut on estetty"),
-                e("c7ec6faf", "Lue lisää"),
                 e("e79ed125", function (a) {
                     return "@" + a.screenName + " on estetty";
                 }),
@@ -4931,12 +4925,12 @@
                 e("fbc79a40", "Huoneiden yleiskatsaus"),
                 e("d077112a", "Huoneen tilastot"),
                 e("cf3709da", "Tila"),
-                e("e797dc32", "Striimausaika: ");
-            e("b649d8cc", "Vain tilaaja"),
+                e("e797dc32", "Striimausaika: "),
+                e("b649d8cc", "Vain tilaaja"),
                 e("j9282130", "Lähetyksen esikatselukuva"),
                 e("g629b8b0", "Aikakatkaistu"),
-                e("eb87323c", "Tämä näyttää tilastotietoa valitulta ajanjaksolta livestriimin jälkeen."),
-                e("i6a75722", "Aikaväli"),
+                e("eb87323c", "Tämä näyttää tilastotietoa valitulta ajanjaksolta livestriimin jälkeen.");
+            e("i6a75722", "Aikaväli"),
                 e("c602f5b8", "Yhteensä"),
                 e("b35e68ae", "Osallistujien kokonaismäärä"),
                 e("h78ee79a", "Katsottu uusintana yhteensä"),
@@ -5883,12 +5877,12 @@
                 e("hf68e810", "Yhteisöhuomautukset on ohjelma, joka pyrkii ihmisten valistamiseen. Se antaa X:n käyttäjille keinot lisätä yhteisvoimin hyödyllisiä huomautuksia julkaisuihin, jotka saattavat johtaa harhaan."),
                 e("jdb52860", "Avustajat kirjoittavat ja arvioivat huomautuksia"),
                 e("c104025c", "Avustajat ovat tavallisia X:n käyttäjiä, jotka osallistuvat pilottiin kirjoittaakseen ja arvioidakseen huomautuksia. Mitä useampi osallistuu, sitä paremmin ohjelma palvelee yleisöä."),
-                e("j7872b8c", "Vain käyttäjien hyödyllisiksi arvioimat huomautukset näytetään julkaisun ohessa");
-            e("fb59415e", "Jotta huomautus näytetään julkisesti kontekstina julkaisuun, sen on oltava riittävän monen eri näkökantoja edustavan käyttäjän hyödylliseksi arvioima. Tällä lähestymistavalla pyritään välttämään puolueellisuus ja manipulointi ja löytämään huomautukset, jotka ovat hyödyksi monille."),
+                e("j7872b8c", "Vain käyttäjien hyödyllisiksi arvioimat huomautukset näytetään julkaisun ohessa"),
+                e("fb59415e", "Jotta huomautus näytetään julkisesti kontekstina julkaisuun, sen on oltava riittävän monen eri näkökantoja edustavan käyttäjän hyödylliseksi arvioima. Tällä lähestymistavalla pyritään välttämään puolueellisuus ja manipulointi ja löytämään huomautukset, jotka ovat hyödyksi monille."),
                 e("f9a44022", "Näytettävää kontekstia ei valitse X (yhtiö), vaan sen tekevät käyttäjät"),
                 e("gdf4fbb2", "X (yhtiö) ei kirjoita, arvioi eikä moderoi huomautuksia (paitsi jos ne rikkovat X:n sääntöjä). Uskomme siihen, että kun käyttäjät saavat tehdä nämä valinnat yhdessä, saavutetaan reilu ja tehokas tapa tuoda esiin informaatiota, jonka avulla yleisö on paremmin perillä asioista."),
-                e("cc720e6a", "Yhteisöhuomautukset rakentuu tiedon läpinäkyvyydelle"),
-                e("j2fcd33a", "Tietoihin sisältyvät kontribuutiot, joiden päiväys on viimeistään"),
+                e("cc720e6a", "Yhteisöhuomautukset rakentuu tiedon läpinäkyvyydelle");
+            e("j2fcd33a", "Tietoihin sisältyvät kontribuutiot, joiden päiväys on viimeistään"),
                 e("d4a6b322", "Kaikki Yhteisöhuomautusten data julkaistaan täällä päivittäin, jotta ihmiset voivat analysoida sitä, havaita mahdolliset ongelmat ja keksiä keinoja Yhteisöhuomautusten kehittämiseksi. Haluamme oppia yhdessä."),
                 e("c359263a", "Opi käyttämään ja analysoimaan Yhteisöhuomautusten dataa "),
                 e("b8a27fe2", "lukemalla oppaamme"),
@@ -6483,9 +6477,6 @@
                 e("e778e3d8", "Yksityisviestien esto onnistui"),
                 e("b7867912", "Poista esto kokonaan"),
                 e("gaddb872", "Poista yksityisviestien esto"),
-                e("d83414a1", function (a) {
-                    return "Poistetaanko käyttäjän @" + a.screenName + " esto? Silloin hän voi seurata sinua ja nähdä julkaisusi.";
-                }),
                 e("a5bbfecd", function (a) {
                     return "Poistatko käyttäjän @" + a.screenName + " eston? Silloin hänen on mahdollista seurata sinua ja reagoida julkisiin julkaisuihisi.";
                 }),
@@ -6891,13 +6882,13 @@
                 e("b2c213e0", "Merkkiraja ylittyi"),
                 e("d84e9c2a", "Ilmoita, minkälaista sitoutumista hakijalta edellytetään."),
                 e("bc8b300c", "Työrooli"),
-                e("d1eedb50", "Tee hakijoille selkoa työtehtävän vastuualueesta.");
-            e("eaf3ce64", "Tiimi"),
+                e("d1eedb50", "Tee hakijoille selkoa työtehtävän vastuualueesta."),
+                e("eaf3ce64", "Tiimi"),
                 e("b36cd50e", "Kuvaile ydintiimiä, jossa hakija työskentelee paikan saatuaan."),
                 e("d3a427ce", "Valitse vaadittu työkokemuksen määrä."),
                 e("i7174442", "Tehtävän kuvaus"),
-                e("fef0cf02", "Laadi yksityiskohtainen tehtävän kuvaus. Ilmoita keskeiset vastuut ja hakuedellytykset, jotta hakijat saavat roolista hyvän käsityksen."),
-                e("b7800bec", "Laadi roolista enintään 200 merkin mittainen pitch. Se näytetään julkaisuissa, suosituksissa ja haussa."),
+                e("fef0cf02", "Laadi yksityiskohtainen tehtävän kuvaus. Ilmoita keskeiset vastuut ja hakuedellytykset, jotta hakijat saavat roolista hyvän käsityksen.");
+            e("b7800bec", "Laadi roolista enintään 200 merkin mittainen pitch. Se näytetään julkaisuissa, suosituksissa ja haussa."),
                 e("a5244ece", "Sovelluksen URL (pakollinen)"),
                 e("g2b553f6", "Anna julkinen URL-osoite, jonka kautta tätä paikkaa voi hakea."),
                 e("c2e77608", "Tehtävänimike (pakollinen)"),
@@ -7863,7 +7854,16 @@
                 e("b5099e33", function (a) {
                     return "Käyttäjällä @" + a.screenName + " ei ole yhtään varmennettua seuraajaa.";
                 }),
-                e("ec251f36", "Kun joku tuntemasi henkilö seuraa häntä, seuraajat näkyvät täällä.");
+                e("ec251f36", "Kun joku tuntemasi henkilö seuraa häntä, seuraajat näkyvät täällä."),
+                e("f8af4f48", "Kun käyttäjä seuraa tilejä, ne näkyvät täällä."),
+                e("fd0aad94", "Tiliä seuraavat varmennetut käyttäjät näkyvät täällä."),
+                e("b84f6df1", function (a) {
+                    return "Premium lahjaksi " + a.percentage + " %:n alennuksella, tarjous voimassa rajoitetun ajan";
+                }),
+                e("cfcac293", function (a) {
+                    return "Anna lahjaksi ja maksa " + a.price;
+                }),
+                e("d7a73450", "Taso");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7902,16 +7902,7 @@
                     u(a, t)
                 );
             }
-            e("f8af4f48", "Kun käyttäjä seuraa tilejä, ne näkyvät täällä."),
-                e("fd0aad94", "Tiliä seuraavat varmennetut käyttäjät näkyvät täällä."),
-                e("b84f6df1", function (a) {
-                    return "Premium lahjaksi " + a.percentage + " %:n alennuksella, tarjous voimassa rajoitetun ajan";
-                }),
-                e("cfcac293", function (a) {
-                    return "Anna lahjaksi ja maksa " + a.price;
-                }),
-                e("d7a73450", "Taso"),
-                e("hbd2c24e", "Tilille ei voi antaa lahjaa tällä hetkellä."),
+            e("hbd2c24e", "Tilille ei voi antaa lahjaa tällä hetkellä."),
                 e("f3fddc98", "ostajien käyttöehdot"),
                 e("cff9c889", "Lue lisää"),
                 e("c65dda96", "Lahjasi on lähetetty."),
@@ -8897,15 +8888,15 @@
                 e("faf9f484", "Mainos"),
                 e("ae2ea9e7", function (a) {
                     return "Mainostajalta " + a.advertiserName;
-                });
-            e("hea01798", "Kelauksen liukusäädin"),
+                }),
+                e("hea01798", "Kelauksen liukusäädin"),
                 e("f8a09386", "Näytä Periscopessa"),
                 e("gf2b6eee", "Kuva kuvassa"),
                 e("b3160a69", function (a) {
                     return a.volumePercent + " prosentti(a)";
                 }),
-                e("fb236728", "Pysäytä"),
-                e("e9bd453e", "Toista"),
+                e("fb236728", "Pysäytä");
+            e("e9bd453e", "Toista"),
                 e("d46b00b0", "Siirry liveen"),
                 e("ec8ab8b4", "Hiljennä"),
                 e("b8b6344a", "Poista hiljennys"),
@@ -9330,7 +9321,6 @@
                 e("fe40537f", function (a) {
                     return "Poistetaanko käyttäjän @" + a.screenName + " esto?";
                 }),
-                e("ab7c3460", "Hän voi seurata sinua ja nähdä julkaisusi."),
                 e("i58d8718", "Hänen on mahdollista seurata sinua ja reagoida julkisiin julkaisuihisi."),
                 e("cda66545", function (a) {
                     return a.followType + " napsauttamalla " + a.screenName;
@@ -11376,12 +11366,6 @@
                             },
                         },
                         {
-                            key: "e6264621",
-                            get: function () {
-                                return ["Et voi seurata tai nähdä käyttäjän @" + this.props.screenName + " julkaisuja. "];
-                            },
-                        },
-                        {
                             key: "f98ecc47",
                             get: function () {
                                 return ["Haluatko varmasti nähdä nämä julkaisut? Julkaisujen näyttäminen ei poista käyttäjän @" + this.props.screenName + " estoa. "];
@@ -13403,4 +13387,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.07e8c62a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.0163d18a.js.map

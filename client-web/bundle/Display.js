@@ -350,7 +350,7 @@
                 f = p(g);
         },
         376293: (e, t, o) => {
-            o.d(t, { $f: () => E, KV: () => f, LI: () => S, SC: () => Z, Vt: () => C, ed: () => M, op: () => x });
+            o.d(t, { $f: () => v, KV: () => b, LI: () => B, SC: () => w, Vt: () => k, ed: () => _, op: () => Z });
             var r = o(202784),
                 a = o(190286),
                 n = o(111677),
@@ -363,43 +363,44 @@
                 p = i().f9e45cfb,
                 m = i().fcd4d489,
                 h = i().a6450e84,
-                g = i().g353ad73,
-                b = i().ad00a739,
-                f = i().a9fd20be,
-                y = i().j546fb79,
-                k = i().c9623eeb,
-                C = i().e133be4e,
-                w = i().he43bca4,
-                v = i().f5f01af6,
-                Z = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                E = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: h, text: t ? b({ screenName: e }) : g({ screenName: e }) }),
-                x = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: o, source: r, testID: a, unblockAction: n, unblockSubtext: i, user: l }) => {
-                    let s,
-                        u = c.Z;
-                    const p = S(l, o);
-                    switch (r) {
-                        case Z.PROFILE:
-                        case Z.LIST_DETAIL:
-                        case Z.FOLLOWERS_LIST:
-                            u = () => {
-                                l.blocking ? n(p) : e(p);
+                g = i().ad00a739,
+                b = i().a9fd20be,
+                f = i().j546fb79,
+                y = i().c9623eeb,
+                k = i().e133be4e,
+                C = i().f5f01af6,
+                w = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
+                v = (e) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: h, text: g({ screenName: e }) }),
+                Z = ({ blockAction: e, blockSubtext: t, source: o, testID: r, unblockAction: a, unblockSubtext: n, user: i }) => {
+                    let l,
+                        s = c.Z;
+                    const u = B(i);
+                    switch (o) {
+                        case w.PROFILE:
+                        case w.LIST_DETAIL:
+                        case w.FOLLOWERS_LIST:
+                            s = () => {
+                                i.blocking ? a(u) : e(u);
                             };
                             break;
-                        case Z.TWEET:
-                        case Z.TWEET_CARET:
-                        case Z.RICH_FEEDBACK:
-                            (s = d.uq.block),
-                                (u = () => {
-                                    l.blocking ? n(p) : e(p);
+                        case w.TWEET:
+                        case w.TWEET_CARET:
+                        case w.RICH_FEEDBACK:
+                            (l = d.uq.block),
+                                (s = () => {
+                                    i.blocking ? a(u) : e(u);
                                 });
                     }
-                    return { confirmation: p, onClick: u, testID: a, shortcutKey: s, Icon: T(l.blocking), text: _(l), subText: B({ user: l, blockSubtext: t, unblockSubtext: i }) };
+                    return { confirmation: u, onClick: s, testID: r, shortcutKey: l, Icon: E(i.blocking), text: T(i), subText: x({ user: i, blockSubtext: t, unblockSubtext: n }) };
                 },
-                T = (e) => (e ? s.default : l.default),
-                B = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
-                _ = (e) => (e.blocking ? k({ screenName: e.screen_name }) : m({ screenName: e.screen_name })),
-                S = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: y({ screenName: e }), label: C, text: t ? v : w }))(e.screen_name, t) : E(e.screen_name, t)),
-                M = ({ confirmation: e, handleConfirm: t, onClose: o }) => {
+                E = (e) => (e ? s.default : l.default),
+                x = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
+                T = (e) => (e.blocking ? y({ screenName: e.screen_name }) : m({ screenName: e.screen_name })),
+                B = (e) => {
+                    return e.blocking ? ((t = e.screen_name), { confirmButtonType: "primary", headline: f({ screenName: t }), label: k, text: C }) : v(e.screen_name);
+                    var t;
+                },
+                _ = ({ confirmation: e, handleConfirm: t, onClose: o }) => {
                     const { confirmButtonType: n, headline: i, label: l, text: s } = e;
                     return r.createElement(a.Z, { cancelButtonLabel: u, confirmButtonLabel: l, confirmButtonType: n, headline: i, onCancel: o, onConfirm: t, text: s });
                 };
@@ -847,4 +848,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Display.9bf9e06a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Display.ff8defca.js.map

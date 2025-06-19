@@ -1502,9 +1502,6 @@
                     return "@" + e.screenName + " کو بلاک کریں";
                 }),
                 o("a6450e84", "بلاک کریں"),
-                o("g353ad73", function (e) {
-                    return "They will not be able to follow you or view your posts, and you will not see posts or notifications from @" + e.screenName + ".";
-                }),
                 o("ad00a739", function (e) {
                     return "They will be able to see your public posts, but will no longer be able to engage with them. @" + e.screenName + " will also not be able to follow or message you, and you will not see notifications from them.";
                 }),
@@ -1516,7 +1513,6 @@
                     return "@" + e.screenName + " کو ان بلاک کریں";
                 }),
                 o("e133be4e", "ان بلاک کریں"),
-                o("he43bca4", "They will be able to follow you and view your posts."),
                 o("f5f01af6", "They will be able to follow you and engage with your public posts."),
                 o("b6878b0a", "کچھ نقص واقع ہوا کچھ دیر بعد دوبارہ اس صارف کو بلاک کرنے کی کوشش کریں۔"),
                 o("e40252de", "Don’t show these posts in For you"),
@@ -1925,10 +1921,10 @@
                 o("jcd5ee8a", "Edit block"),
                 o("a8f09fb8", "Delete block"),
                 o("i89195ea", "Divider"),
-                o("da8ac57c", "Edit Caption");
-            o("a8fdd09c", "Publish Article"),
-                o("d8047cc8", "شائع کریں"),
-                o("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                o("da8ac57c", "Edit Caption"),
+                o("a8fdd09c", "Publish Article"),
+                o("d8047cc8", "شائع کریں");
+            o("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
                 o("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
                 o("e52d4998", "Choose your audience"),
                 o("d7985b24", "Choose who can reply to this Article"),
@@ -2981,10 +2977,10 @@
                 o("bc6efc72", "رازداری کی پالیسی"),
                 o("h3161192", "کوکیز پالیسی"),
                 o("a7de64de", "اشتہارات کی معلومات"),
-                o("jb0a4c36", "بلاگ");
-            o("ce6d095a", "طرز زندگی"),
-                o("e0adec82", "برانڈ ذرائع"),
-                o("df1b7550", "مارکیٹنگ"),
+                o("jb0a4c36", "بلاگ"),
+                o("ce6d095a", "طرز زندگی"),
+                o("e0adec82", "برانڈ ذرائع");
+            o("df1b7550", "مارکیٹنگ"),
                 o("he258678", "X for Business"),
                 o("c6f58084", "ڈویلپرز"),
                 o("d83f18d2", "ڈائریکٹری"),
@@ -3893,10 +3889,10 @@
                 o("c371fb9a", "اختتام"),
                 o("c0ce822e", "Microphone settings"),
                 o("a2bf8b8a", "Switch to listening"),
-                o("caa8d928", "Toggle noise suppression");
-            o("b5d88f0c", "Employees only"),
-                o("c855ab8e", "صرف سبسکرائبرز"),
-                o("ddeb0a3c", "پیش ہے کمیونٹی۔ لوگوں کو لائک کریں؟ ایک نظر ڈالیں۔"),
+                o("caa8d928", "Toggle noise suppression"),
+                o("b5d88f0c", "Employees only"),
+                o("c855ab8e", "صرف سبسکرائبرز");
+            o("ddeb0a3c", "پیش ہے کمیونٹی۔ لوگوں کو لائک کریں؟ ایک نظر ڈالیں۔"),
                 o("e111f531", function (e) {
                     return e.count + " میں  ہم آہنگ";
                 }),
@@ -4497,8 +4493,6 @@
                 }),
                 o("c9a1cb5e", "یہ اکاؤنٹ موجود نہیں ہے"),
                 o("e7b201de", "کوئی دوسرا تلاش کر کے دیکھیں۔"),
-                o("ica87fde", "آپ کو بلاک کر دیا گیا ہے"),
-                o("c7ec6faf", "Learn more"),
                 o("e79ed125", function (e) {
                     return "@" + e.screenName + " بلاک ہے";
                 }),
@@ -4935,12 +4929,12 @@
                 o("fbc79a40", "Spaces overview"),
                 o("d077112a", "Space Stats"),
                 o("cf3709da", "حیثیت"),
-                o("e797dc32", "Stream time: ");
-            o("b649d8cc", "Subscriber Only"),
+                o("e797dc32", "Stream time: "),
+                o("b649d8cc", "Subscriber Only"),
                 o("j9282130", "Broadcast thumbnail"),
                 o("g629b8b0", "Timed Out"),
-                o("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                o("i6a75722", "Time Range"),
+                o("eb87323c", "This shows analytics data for the selected time period since the livestream happened.");
+            o("i6a75722", "Time Range"),
                 o("c602f5b8", "میزان"),
                 o("b35e68ae", "Total Participants"),
                 o("h78ee79a", "Total Replay Watched"),
@@ -5887,12 +5881,12 @@
                 o("hf68e810", "Community Notes is a program that aims to create a better-informed world. It empowers people on X to collaboratively add helpful notes to posts that might be misleading."),
                 o("jdb52860", "شرکائے کار نوٹس لکھتے اور ان کی درجہ بندی کرتے ہیں"),
                 o("c104025c", "Contributors are people on X, just like you, who chose to enroll in the pilot to write and rate notes. The more people that participate, the better the program becomes."),
-                o("j7872b8c", "Only notes that people find helpful appear on a post");
-            o("fb59415e", "In order to be shown publicly as context on the post, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people."),
+                o("j7872b8c", "Only notes that people find helpful appear on a post"),
+                o("fb59415e", "In order to be shown publicly as context on the post, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people."),
                 o("f9a44022", "X, the company, doesn’t choose what shows up: the people do"),
                 o("gdf4fbb2", "X, the company, doesn’t write, rate or moderate notes (unless they break the X Rules). We believe giving people voice to make these choices together is a fair and effective way to add information that helps people stay better informed."),
-                o("cc720e6a", "کمیونٹی نوٹس ڈیٹا کی شفافیت پر بنتے ہیں"),
-                o("j2fcd33a", "ڈیٹا میں یہاں تک کے حصے شامل ہیں "),
+                o("cc720e6a", "کمیونٹی نوٹس ڈیٹا کی شفافیت پر بنتے ہیں");
+            o("j2fcd33a", "ڈیٹا میں یہاں تک کے حصے شامل ہیں "),
                 o("d4a6b322", "کمیونٹی نوٹس کا تمام ڈیٹا یہاں روزانہ شائع کیا جاتا ہے، تاکہ لوگوں کے پاس ان کا تجزیہ کرنے کیلئے، مسائل کی شناخت کرنے کیلئے، اور کمیونٹی نوٹس کو بہتر بنانے کیلئے مواقع پہچاننے کیلئے مفت رسائی ہو۔ ہم آپ سے سیکھنے کے منتظر ہیں۔"),
                 o("c359263a", "جانیں کیسے کمیونٹی نوٹس کا ڈیٹا استعمال کرنا ہے اور اس کا تجزیہ کرنا ہے "),
                 o("b8a27fe2", "ہماری رہنمائی میں"),
@@ -6487,9 +6481,6 @@
                 o("e778e3d8", "Successfully blocked DMs"),
                 o("b7867912", "Unblock everything"),
                 o("gaddb872", "Unblock DMs"),
-                o("d83414a1", function (e) {
-                    return "Unblock @" + e.screenName + "? They will be able to follow you and view your posts.";
-                }),
                 o("a5bbfecd", function (e) {
                     return "Unblock @" + e.screenName + "? They will be able to follow you and engage with your public posts.";
                 }),
@@ -6895,13 +6886,13 @@
                 o("b2c213e0", "Character limit exceeded"),
                 o("d84e9c2a", "Share the type of work commitment expected for this role."),
                 o("bc8b300c", "Job Function"),
-                o("d1eedb50", "Help candidates understand the area this role supports.");
-            o("eaf3ce64", "Team"),
+                o("d1eedb50", "Help candidates understand the area this role supports."),
+                o("eaf3ce64", "Team"),
                 o("b36cd50e", "Specify the core team that candidates will work with once hired."),
                 o("d3a427ce", "Select the level of experience required."),
                 o("i7174442", "Job Description"),
-                o("fef0cf02", "Provide a detailed job description. Outline the key responsibilities and qualifications to give candidates a clear understanding of the role."),
-                o("b7800bec", "Pitch the job in 200 characters or less. Shown in posts, recommendations, and search."),
+                o("fef0cf02", "Provide a detailed job description. Outline the key responsibilities and qualifications to give candidates a clear understanding of the role.");
+            o("b7800bec", "Pitch the job in 200 characters or less. Shown in posts, recommendations, and search."),
                 o("a5244ece", "Application URL (Required)"),
                 o("g2b553f6", "Enter the public URL where candidates can apply for this job."),
                 o("c2e77608", "Job Title (Required)"),
@@ -7867,7 +7858,16 @@
                 o("b5099e33", function (e) {
                     return "@" + e.screenName + " doesn’t have any verified followers.";
                 }),
-                o("ec251f36", "جب آپ کا کوئی جاننے والا انہیں فالو کرتا ہے تو، وہ یہاں درج ہوں گے۔");
+                o("ec251f36", "جب آپ کا کوئی جاننے والا انہیں فالو کرتا ہے تو، وہ یہاں درج ہوں گے۔"),
+                o("f8af4f48", "اکاؤنٹس کو فالو کرنے کے بعد، وہ یہاں نظر آئیں گے۔"),
+                o("fd0aad94", "When someone verified follows this account, they’ll show up here."),
+                o("b84f6df1", function (e) {
+                    return "Gift Premium at a " + e.percentage + "% discount for a limited time";
+                }),
+                o("cfcac293", function (e) {
+                    return "Gift & Pay " + e.price;
+                }),
+                o("d7a73450", "Tier");
             function i(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var o = t[a];
@@ -7906,16 +7906,7 @@
                     c(e, t)
                 );
             }
-            o("f8af4f48", "اکاؤنٹس کو فالو کرنے کے بعد، وہ یہاں نظر آئیں گے۔"),
-                o("fd0aad94", "When someone verified follows this account, they’ll show up here."),
-                o("b84f6df1", function (e) {
-                    return "Gift Premium at a " + e.percentage + "% discount for a limited time";
-                }),
-                o("cfcac293", function (e) {
-                    return "Gift & Pay " + e.price;
-                }),
-                o("d7a73450", "Tier"),
-                o("hbd2c24e", "This account is not eligible for gifts at this time."),
+            o("hbd2c24e", "This account is not eligible for gifts at this time."),
                 o("f3fddc98", "Purchaser Terms"),
                 o("cff9c889", "Learn more"),
                 o("c65dda96", "Your gift has been sent."),
@@ -8901,15 +8892,15 @@
                 o("faf9f484", "اشتہار"),
                 o("ae2ea9e7", function (e) {
                     return "اشتہار منجانب " + e.advertiserName;
-                });
-            o("hea01798", "وقت کا سلائیڈر"),
+                }),
+                o("hea01798", "وقت کا سلائیڈر"),
                 o("f8a09386", "Periscope پر دیکھیں"),
                 o("gf2b6eee", "Picture-in-Picture"),
                 o("b3160a69", function (e) {
                     return e.volumePercent + " فیصد";
                 }),
-                o("fb236728", "توقف"),
-                o("e9bd453e", "ری پلے"),
+                o("fb236728", "توقف");
+            o("e9bd453e", "ری پلے"),
                 o("d46b00b0", "Jump to live"),
                 o("ec8ab8b4", "میوٹ کریں"),
                 o("b8b6344a", "ان میوٹ کریں"),
@@ -9334,7 +9325,6 @@
                 o("fe40537f", function (e) {
                     return "@" + e.screenName + " کو ان بلاک کر دیا جائے؟";
                 }),
-                o("ab7c3460", "They will be able to follow you and view your posts."),
                 o("i58d8718", "They will be able to follow you and engage with your public posts."),
                 o("cda66545", function (e) {
                     return e.followType + " کو " + e.screenName + " کرنے کے  لیے کلک کریں";
@@ -11371,12 +11361,6 @@
                             },
                         },
                         {
-                            key: "e6264621",
-                            get: function () {
-                                return ["You can’t follow or see @" + this.props.screenName + "’s posts. "];
-                            },
-                        },
-                        {
                             key: "f98ecc47",
                             get: function () {
                                 return ["Are you sure you want to view these posts? Viewing posts won’t unblock @" + this.props.screenName + ". "];
@@ -13398,4 +13382,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.239156ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.f33f92ea.js.map

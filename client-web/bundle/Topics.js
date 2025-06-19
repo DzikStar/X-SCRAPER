@@ -4,9 +4,9 @@
     {
         625661: (e, t, o) => {
             o.d(t, { ZP: () => h });
-            var i = o(202784),
-                r = o(614983),
-                n = o.n(r),
+            var r = o(202784),
+                i = o(614983),
+                n = o.n(i),
                 a = o(325686),
                 s = o(370006),
                 c = o(786998),
@@ -15,7 +15,7 @@
             function p(e, t, o) {
                 return e || (!t && o ? "fixed" : void 0);
             }
-            class h extends i.Component {
+            class h extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handleBackClick = () => {
@@ -28,27 +28,27 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: n, isFullWidth: a, isLarge: l, leftControl: d, middleControl: h, position: m, rightControl: u, secondaryBar: g, style: E, subtitle: f, title: _, titleDomId: b, titleIconCell: y, titleIconCellSize: T, withBackground: Z, withWideContainer: w } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: i, hideBackButton: n, isFullWidth: a, isLarge: l, leftControl: d, middleControl: h, position: m, rightControl: u, secondaryBar: g, style: E, subtitle: f, title: _, titleDomId: b, titleIconCell: y, titleIconCellSize: T, withBackground: Z, withWideContainer: w } = this.props,
                         { isModal: k } = this.context,
-                        C = n ? d : i.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        C = n ? d : r.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         I = (function (e, t, o) {
                             return e && !(t && o);
                         })(!!Z, k, !!g);
-                    return i.createElement(i.Fragment, null, i.createElement(c.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: l, leftControl: C, middleControl: h, position: p(m, k, r), rightControl: u, style: E, subtitle: f, title: _, titleDomId: b, titleIconCell: y, titleIconCellSize: T, withBackground: I, withWideContainer: w }), g || null);
+                    return r.createElement(r.Fragment, null, r.createElement(c.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: l, leftControl: C, middleControl: h, position: p(m, k, i), rightControl: u, style: E, subtitle: f, title: _, titleDomId: b, titleIconCell: y, titleIconCellSize: T, withBackground: I, withWideContainer: w }), g || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
                         { isModal: t } = this.context,
                         o = l.Z.getBackgroundStyles();
-                    return t ? i.createElement(a.Z, { style: !!e && o }, this._renderContent()) : this._renderContent();
+                    return t ? r.createElement(a.Z, { style: !!e && o }, this._renderContent()) : this._renderContent();
                 }
             }
             (h.contextType = d.Z), (h.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
         980407: (e, t, o) => {
             o.d(t, { Z: () => g, w: () => m });
-            var i = o(202784),
-                r = o(325686),
+            var r = o(202784),
+                i = o(325686),
                 n = o(108362),
                 a = o(386802),
                 s = o(392237),
@@ -57,13 +57,13 @@
                 d = o(625661),
                 p = o(449067),
                 h = o(715601);
-            class m extends i.Component {
+            class m extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
                             const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: n, centerTitle: a, hideBackButton: s, history: c, isFullWidth: p, isLarge: h, middleControl: m, onBackClick: g, rightControl: E, secondaryBar: f, subtitle: _, title: b } = this.props,
                                 { isModal: y } = this.context;
-                            return i.createElement(r.Z, { style: y ? [u.childViewAppBarRoot, u.appBarZindex] : u.appBarZindex }, i.createElement(d.ZP, { backButtonType: o || (y ? "close" : "back"), backLocation: n, centerTitle: a, fixed: !y, hideBackButton: s, history: c, isFullWidth: p, isLarge: h, middleControl: m, onBackClick: g, ref: e, rightControl: E, secondaryBar: f, style: [y && u.appBarModal, t], subtitle: _, title: b, titleDomId: l.Q_ }));
+                            return r.createElement(i.Z, { style: y ? [u.childViewAppBarRoot, u.appBarZindex] : u.appBarZindex }, r.createElement(d.ZP, { backButtonType: o || (y ? "close" : "back"), backLocation: n, centerTitle: a, fixed: !y, hideBackButton: s, history: c, isFullWidth: p, isLarge: h, middleControl: m, onBackClick: g, ref: e, rightControl: E, secondaryBar: f, style: [y && u.appBarModal, t], subtitle: _, title: b, titleDomId: l.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -75,7 +75,7 @@
                     const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: a, documentTitle: s, isFullWidth: l, isLarge: d, renderHeader: m, title: g, withoutBottomBarMobile: E } = this.props,
                         { isModal: f } = this.context,
                         _ = m ? m(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return i.createElement(c.Z, null, i.createElement(p.Z.Configure, { documentTitle: s, headerless: !0, title: g }), i.createElement(r.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [u.root, f && u.rootModal] }, !f && _, i.createElement(n.Z, { isFullWidth: l, isLarge: d, style: [u.container, f && u.containerModal, a] }, f ? i.createElement(h.Z, { style: u.viewport }, _, o) : o), t ? i.createElement(r.Z, { style: [u.bottomBarModal, !f && !E && u.bottomBarMobile] }, i.createElement(n.Z, { isFullWidth: l, isLarge: d }, t)) : null));
+                    return r.createElement(c.Z, null, r.createElement(p.Z.Configure, { documentTitle: s, headerless: !0, title: g }), r.createElement(i.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [u.root, f && u.rootModal] }, !f && _, r.createElement(n.Z, { isFullWidth: l, isLarge: d, style: [u.container, f && u.containerModal, a] }, f ? r.createElement(h.Z, { style: u.viewport }, _, o) : o), t ? r.createElement(i.Z, { style: [u.bottomBarModal, !f && !E && u.bottomBarMobile] }, r.createElement(n.Z, { isFullWidth: l, isLarge: d }, t)) : null));
                 }
             }
             (m.defaultProps = { isFullWidth: !1, isLarge: !1 }), (m.contextType = a.Z);
@@ -84,36 +84,35 @@
         },
         983389: (e, t, o) => {
             o.d(t, { Z: () => n });
-            var i = o(202784),
-                r = o(272175);
-            const n = ({ description: e }) => i.createElement(r.ql, null, i.createElement("meta", { content: e, name: "description" }));
+            var r = o(202784),
+                i = o(272175);
+            const n = ({ description: e }) => r.createElement(i.ql, null, r.createElement("meta", { content: e, name: "description" }));
         },
         42508: (e, t, o) => {
-            o.d(t, { Z: () => i });
-            const i = Object.freeze({ FakeAccount: "fake_account", OffensiveProfileContent: "offensive_profile_content", SensitiveMedia: "sensitive_media", Timeout: "timeout" });
+            o.d(t, { Z: () => r });
+            const r = Object.freeze({ FakeAccount: "fake_account", OffensiveProfileContent: "offensive_profile_content", SensitiveMedia: "sensitive_media", Timeout: "timeout" });
         },
         835546: (e, t, o) => {
-            o.d(t, { ZP: () => r, n5: () => a });
-            var i = o(42508);
-            const r = ({ displaySensitiveMedia: e, isNotFound: t, isSuspended: o, isWithheld: i, user: r, userProfileInterstitialType: a, viewerUserId: s }) => {
-                    const c = !!s && s === r.id_str,
-                        l = r.blocked_by,
-                        d = r.blocking,
-                        p = n({ displaySensitiveMedia: e, isOwnProfile: c, user: r, userProfileInterstitialType: a }),
-                        h = (c || !i) && !o;
-                    return { avatar: c || (!p && !t && !o && !i), badges: c || !i, description: c || (!d && !l && !p && !o && !i), followButton: !(c || l || p || t || o || i), followersYouKnow: !c && !l && !d && !p && !t && !o && !i && (r.following || !r.protected), followIndicator: !i, fullName: h, label: h, stats: c || (!l && !p && !o && !i), subscriptionsCount: c || !r.has_hidden_subscriptions_on_profile };
+            o.d(t, { ZP: () => i, n5: () => a });
+            var r = o(42508);
+            const i = ({ displaySensitiveMedia: e, isNotFound: t, isSuspended: o, isWithheld: r, user: i, userProfileInterstitialType: a, viewerUserId: s }) => {
+                    const c = !!s && s === i.id_str,
+                        l = i.blocked_by,
+                        d = i.blocking,
+                        p = n({ displaySensitiveMedia: e, isOwnProfile: c, user: i, userProfileInterstitialType: a }),
+                        h = (c || !r) && !o;
+                    return { avatar: c || (!p && !t && !o && !r), badges: c || !r, description: c || (!d && !l && !p && !o && !r), followButton: !(c || l || p || t || o || r), followersYouKnow: !c && !l && !d && !p && !t && !o && !r && (i.following || !i.protected), followIndicator: !r, fullName: h, label: h, stats: c || (!l && !p && !o && !r), subscriptionsCount: c || !i.has_hidden_subscriptions_on_profile };
                 },
-                n = ({ displaySensitiveMedia: e, isOwnProfile: t, user: o, userProfileInterstitialType: r }) => (r === i.Z.SensitiveMedia || r === i.Z.OffensiveProfileContent) && !(t || o.following || e),
-                a = ({ isOwnProfile: e, isSoftBlockEnabled: t = !1, user: o }) => {
-                    const i = o.blocked_by,
-                        r = o.protected && !o.following;
-                    return t ? e || !r : e || (!r && !i);
+                n = ({ displaySensitiveMedia: e, isOwnProfile: t, user: o, userProfileInterstitialType: i }) => (i === r.Z.SensitiveMedia || i === r.Z.OffensiveProfileContent) && !(t || o.following || e),
+                a = ({ isOwnProfile: e, user: t }) => {
+                    const o = t.protected && !t.following;
+                    return e || !o;
                 };
         },
         371493: (e, t, o) => {
             o.d(t, { $N: () => b, G0: () => _, Jj: () => y, O9: () => u, S: () => g, fy: () => E, jz: () => T, nm: () => f, qk: () => p, uI: () => h });
-            var i = o(912021),
-                r = o(644829),
+            var r = o(912021),
+                i = o(644829),
                 n = o(740527),
                 a = o(750085),
                 s = o(555875),
@@ -123,22 +122,22 @@
                 p = Object.freeze({ WebSidebar: "web_sidebar" }),
                 h = "explore-",
                 m = 9e5;
-            const u = ({ contentType: e, displayLocation: t, exploreGraphQLEnabled: o = !1, focalTweetId: i, includePageConfiguration: a = !1, initialTabId: s, profileUserId: d }) => {
+            const u = ({ contentType: e, displayLocation: t, exploreGraphQLEnabled: o = !1, focalTweetId: r, includePageConfiguration: a = !1, initialTabId: s, profileUserId: d }) => {
                     const p = e || t || "main",
-                        u = (function (e, t, o, i) {
-                            return o ? `${e}${t}-tweet-${o}` : i ? `${e}${t}-user-${i}` : `${e}${t}`;
-                        })(o ? "explore-graphql-" : h, p, i, d),
-                        g = { timelineId: u, formatResponse: c.Z, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchExplore, getEndpointParams: (o) => ({ ...o, candidate_source: e, display_location: t, focal_tweet_id: i, include_page_configuration: a, initial_tab_id: s, profile_user_id: d, entity_tokens: !1 }) }, context: o ? "FETCH_EXPLORE_GQL" : "FETCH_EXPLORE", perfKey: `${h}${p}`, staleIntervalMs: m };
-                    return o ? (0, l.Z)({ ...g, formatResponse: n.Z, network: { ...g.network, getEndpoint: (e) => e.withEndpoint(r.Z).fetchExploreGraphQL } }) : (0, l.Z)(g);
+                        u = (function (e, t, o, r) {
+                            return o ? `${e}${t}-tweet-${o}` : r ? `${e}${t}-user-${r}` : `${e}${t}`;
+                        })(o ? "explore-graphql-" : h, p, r, d),
+                        g = { timelineId: u, formatResponse: c.Z, network: { getEndpoint: (e) => e.withEndpoint(i.Z).fetchExplore, getEndpointParams: (o) => ({ ...o, candidate_source: e, display_location: t, focal_tweet_id: r, include_page_configuration: a, initial_tab_id: s, profile_user_id: d, entity_tokens: !1 }) }, context: o ? "FETCH_EXPLORE_GQL" : "FETCH_EXPLORE", perfKey: `${h}${p}`, staleIntervalMs: m };
+                    return o ? (0, l.Z)({ ...g, formatResponse: n.Z, network: { ...g.network, getEndpoint: (e) => e.withEndpoint(i.Z).fetchExploreGraphQL } }) : (0, l.Z)(g);
                 },
                 g = () => {
                     const e = "explore-sidebar-gql",
-                        t = { timelineId: e, formatResponse: a.Z, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchExploreSidebarGraphQL, getEndpointParams: () => ({}) }, context: "FETCH_EXPLORE_SIDEBAR", perfKey: e, staleIntervalMs: m };
+                        t = { timelineId: e, formatResponse: a.Z, network: { getEndpoint: (e) => e.withEndpoint(i.Z).fetchExploreSidebarGraphQL, getEndpointParams: () => ({}) }, context: "FETCH_EXPLORE_SIDEBAR", perfKey: e, staleIntervalMs: m };
                     return (0, l.Z)(t);
                 },
                 E = (e, t) => u({ exploreGraphQLEnabled: e, includePageConfiguration: !0, initialTabId: t }),
-                f = (0, i.Z)((e) => u({ exploreGraphQLEnabled: e, contentType: d.Trends })),
-                _ = (0, i.Z)((e) => u({ exploreGraphQLEnabled: e, displayLocation: p.WebSidebar })),
+                f = (0, r.Z)((e) => u({ exploreGraphQLEnabled: e, contentType: d.Trends })),
+                _ = (0, r.Z)((e) => u({ exploreGraphQLEnabled: e, displayLocation: p.WebSidebar })),
                 b = () => (e, t) =>
                     e(
                         (0, s.CY)(t())
@@ -147,15 +146,15 @@
                     ),
                 y = (e) => {
                     const t = `trend-relevant-users-${e}-gql`,
-                        o = { timelineId: t, formatResponse: a.Z, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchTrendRelevantUsersGraphQL, getEndpointParams: () => ({ trendId: e }) }, context: "FETCH_TREND_RELEVANT_USERS", perfKey: t, staleIntervalMs: m };
+                        o = { timelineId: t, formatResponse: a.Z, network: { getEndpoint: (e) => e.withEndpoint(i.Z).fetchTrendRelevantUsersGraphQL, getEndpointParams: () => ({ trendId: e }) }, context: "FETCH_TREND_RELEVANT_USERS", perfKey: t, staleIntervalMs: m };
                     return (0, l.Z)(o);
                 },
-                T = (e) => (0, l.Z)({ timelineId: `trendingEventHistoryGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchTrendHistory, getEndpointParams: () => ({ trendId: e }) }, formatResponse: a.Z, context: "FETCH_TREND_HISTORY", perfKey: "trendingEventHistoryGraphQL" });
+                T = (e) => (0, l.Z)({ timelineId: `trendingEventHistoryGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(i.Z).fetchTrendHistory, getEndpointParams: () => ({ trendId: e }) }, formatResponse: a.Z, context: "FETCH_TREND_HISTORY", perfKey: "trendingEventHistoryGraphQL" });
         },
         642081: (e, t, o) => {
             o.r(t), o.d(t, { TopicLandingPage: () => Q, default: () => q });
-            var i = o(202784),
-                r = o(688715),
+            var r = o(202784),
+                i = o(688715),
                 n = o(457311),
                 a = o(111677),
                 s = o.n(a),
@@ -180,12 +179,12 @@
                     return o ? T.Z.select(e, o) : void 0;
                 },
                 C = (0, y.Z)().propsFromState(() => {
-                    const e = (0, _.Z)((e, t) => (({ params: e, topicId: t }) => (0, E.Z)({ context: "FETCH_TOPIC_TIMELINE", network: { getEndpoint: (e) => e.withEndpoint(u.ZP).fetchTopicLandingPage, getEndpointParams: ({ cursor: o, ...i }) => ({ ...i, ...e, cursor: "string" == typeof o ? o : void 0, topicId: t }) }, formatResponse: g.Z, perfKey: f, timelineId: `${f}-${t}` }))({ topicId: e, params: t ? { data_lookup_id: t } : void 0 }));
+                    const e = (0, _.Z)((e, t) => (({ params: e, topicId: t }) => (0, E.Z)({ context: "FETCH_TOPIC_TIMELINE", network: { getEndpoint: (e) => e.withEndpoint(u.ZP).fetchTopicLandingPage, getEndpointParams: ({ cursor: o, ...r }) => ({ ...r, ...e, cursor: "string" == typeof o ? o : void 0, topicId: t }) }, formatResponse: g.Z, perfKey: f, timelineId: `${f}-${t}` }))({ topicId: e, params: t ? { data_lookup_id: t } : void 0 }));
                     return {
                         module: (t, o) => {
-                            const i = w(0, o),
-                                r = (0, b.XN)(t, o);
-                            return e(i, r);
+                            const r = w(0, o),
+                                i = (0, b.XN)(t, o);
+                            return e(r, i);
                         },
                         referringScribeNamespace: Z,
                         topic: k,
@@ -194,19 +193,19 @@
                 });
             var I = o(269011),
                 P = o(335632),
-                S = o(962741);
-            const v = { ...(0, P.G)({}), [S.ZP.User]: (0, I.Z)({ shouldScribeImpression: !0 }) };
+                v = o(962741);
+            const S = { ...(0, P.G)({}), [v.ZP.User]: (0, I.Z)({ shouldScribeImpression: !0 }) };
             var x = o(840647),
                 B = o(942893);
             const L = (0, _.Z)((e, t) => {
                     let o;
                     if (e) {
-                        const { action: t = "", component: i = "", element: r = "", page: n = "", section: a = "" } = e;
-                        o = `${(0, x.Z)().clientName}:${n}:${a}:${i}:${r}:${t}`;
+                        const { action: t = "", component: r = "", element: i = "", page: n = "", section: a = "" } = e;
+                        o = `${(0, x.Z)().clientName}:${n}:${a}:${r}:${i}:${t}`;
                     }
                     return { items: t ? [{ ...B.Z.forTopic(t) }] : void 0, referring_event: o };
                 }),
-                N = (e) => (0, r.ju)(`https://x.com/i/topics/${e}`),
+                N = (e) => (0, i.ju)(`https://x.com/i/topics/${e}`),
                 F = (e) => `twitter://topics_timeline?id=${e}`,
                 R = s().a2a3824a,
                 M = s().b8533bac,
@@ -216,19 +215,19 @@
                 A = "Talk about Topics",
                 G = "Be the first to post about this Topic and see it here.",
                 U = "/",
-                W = i.createElement(c.Z, { withWhoToFollow: !1 }),
+                W = r.createElement(c.Z, { withWhoToFollow: !1 }),
                 z = { page: "topic_landing", section: "main" };
-            function Q({ history: e, module: t, referringScribeNamespace: o, topic: r, topicId: a }) {
-                const s = r?.name ? O({ topicName: r?.name }) : M,
-                    c = r?.name ? H({ topicName: r?.name }) : $;
-                return i.createElement(m.nO, { data: L(o, a) }, i.createElement(i.Fragment, null, i.createElement(d.Z, { description: c }), i.createElement(p.Z, { canonical: N(a), description: c, title: s, type: "article" }), i.createElement(l.Z, { deepLink: F(a) }), i.createElement(h.Z, { backLocation: U, documentTitle: s, entryConfiguration: v, history: e, initialPageNamespace: z, module: t, renderEmptyState: () => i.createElement(n.Z, { header: A, message: G }), sidebarContent: W, timelinePrefix: f, title: R })));
+            function Q({ history: e, module: t, referringScribeNamespace: o, topic: i, topicId: a }) {
+                const s = i?.name ? O({ topicName: i?.name }) : M,
+                    c = i?.name ? H({ topicName: i?.name }) : $;
+                return r.createElement(m.nO, { data: L(o, a) }, r.createElement(r.Fragment, null, r.createElement(d.Z, { description: c }), r.createElement(p.Z, { canonical: N(a), description: c, title: s, type: "article" }), r.createElement(l.Z, { deepLink: F(a) }), r.createElement(h.Z, { backLocation: U, documentTitle: s, entryConfiguration: S, history: e, initialPageNamespace: z, module: t, renderEmptyState: () => r.createElement(n.Z, { header: A, message: G }), sidebarContent: W, timelinePrefix: f, title: R })));
             }
             const q = C(Q);
         },
         204819: (e, t, o) => {
             o.r(t), o.d(t, { TopicsEducationScreen: () => y, default: () => Z });
-            var i = o(202784),
-                r = o(325686),
+            var r = o(202784),
+                i = o(325686),
                 n = o(731708),
                 a = o(946847),
                 s = o(392237),
@@ -247,7 +246,7 @@
                 f = l().j24c37b2,
                 _ = l().h3f9027a,
                 b = l().e241095e;
-            class y extends i.Component {
+            class y extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderHeader = (e) => null),
@@ -255,20 +254,20 @@
                             const { history: e } = this.props;
                             e.goBack();
                         }),
-                        (this._getSubtext = () => i.createElement(r.Z, null, i.createElement(n.ZP, { color: "gray700" }, _), i.createElement(n.ZP, { color: "gray700", style: T.paddingTop }, this._getSecondaryText()))),
+                        (this._getSubtext = () => r.createElement(i.Z, null, r.createElement(n.ZP, { color: "gray700" }, _), r.createElement(n.ZP, { color: "gray700", style: T.paddingTop }, this._getSecondaryText()))),
                         (this._getSecondaryText = () => {
                             const { screenName: e } = this.props,
                                 t = { pathname: e ? `/${e}/topics` : "/home", method: "replace" },
-                                o = { yourTopicsLink: i.createElement(n.ZP, { "aria-label": b, color: "link", link: t, role: "link", withInteractiveStyling: !0 }) };
-                            return i.createElement(l().I18NFormatMessage, { $i18n: "e1d95725" }, i.cloneElement(o.yourTopicsLink, null, l().f8bc75e2));
+                                o = { yourTopicsLink: r.createElement(n.ZP, { "aria-label": b, color: "link", link: t, role: "link", withInteractiveStyling: !0 }) };
+                            return r.createElement(l().I18NFormatMessage, { $i18n: "e1d95725" }, r.cloneElement(o.yourTopicsLink, null, l().f8bc75e2));
                         });
                 }
                 render() {
                     const { location: e } = this.props;
-                    return e.state && e.state.topicName ? i.createElement(p.Z, { renderHeader: this._renderHeader }, this._renderContent(e.state.topicName)) : i.createElement(h.Z, { to: "/home" });
+                    return e.state && e.state.topicName ? r.createElement(p.Z, { renderHeader: this._renderHeader }, this._renderContent(e.state.topicName)) : r.createElement(h.Z, { to: "/home" });
                 }
                 _renderContent(e) {
-                    return i.createElement(a.Z, { actionLabel: f, graphic: d.default, headline: E({ topic: e }), onAction: this._handleClose, onClose: this._handleClose, subtext: this._getSubtext() });
+                    return r.createElement(a.Z, { actionLabel: f, graphic: d.default, headline: E({ topic: e }), onAction: this._handleClose, onClose: this._handleClose, subtext: this._getSubtext() });
                 }
             }
             const T = s.default.create((e) => ({ paddingTop: { paddingTop: e.spaces.space16 } })),
@@ -276,9 +275,9 @@
         },
         191855: (e, t, o) => {
             o.r(t), o.d(t, { TopicsPicker: () => I, default: () => P });
-            var i = o(202784),
-                r = o(111677),
-                n = o.n(r),
+            var r = o(202784),
+                i = o(111677),
+                n = o.n(i),
                 a = o(187669),
                 s = o(718e3),
                 c = o(651930),
@@ -304,22 +303,22 @@
                 Z = { page: "topics_picker", section: "main" },
                 w = (e) => (e ? `twitter://topics/picker/${e}` : "twitter://topics/picker"),
                 k = (e) => ({ pathname: `/i/topics/picker/${e}` }),
-                C = i.createElement(s.Z, { withTopicsToFollow: !1 }),
+                C = r.createElement(s.Z, { withTopicsToFollow: !1 }),
                 I = (e) => {
-                    const { clearTimelineCache: t, history: o, isForwardNavigation: r, module: n, previousPath: s, selectedTabId: d } = e;
+                    const { clearTimelineCache: t, history: o, isForwardNavigation: i, module: n, previousPath: s, selectedTabId: d } = e;
                     return (
                         (0, a.q)(() => {
-                            r && !s?.includes("/i/topics/picker") && t(n);
+                            i && !s?.includes("/i/topics/picker") && t(n);
                         }),
-                        i.createElement(i.Fragment, null, i.createElement(c.Z, { deepLink: w(d) }), i.createElement(l.Z, { backLocation: "/home", getTabLink: k, history: o, initialPageNamespace: Z, module: n, selectedTabId: d, sidebarContent: C, timelinePrefix: "topics-picker-", title: T }))
+                        r.createElement(r.Fragment, null, r.createElement(c.Z, { deepLink: w(d) }), r.createElement(l.Z, { backLocation: "/home", getTabLink: k, history: o, initialPageNamespace: Z, module: n, selectedTabId: d, sidebarContent: C, timelinePrefix: "topics-picker-", title: T }))
                     );
                 },
                 P = y(I);
         },
         55123: (e, t, o) => {
             o.r(t), o.d(t, { TrendingEventHistoryScreen: () => Z, default: () => w });
-            var i = o(202784),
-                r = o(457311),
+            var r = o(202784),
+                i = o(457311),
                 n = o(111677),
                 a = o.n(n),
                 s = o(912021),
@@ -338,11 +337,11 @@
                     .withAnalytics(g),
                 b = a().e44b4256,
                 y = a().a74af3f8,
-                T = () => i.createElement(r.Z, { header: y });
-            class Z extends i.Component {
+                T = () => r.createElement(i.Z, { header: y });
+            class Z extends r.Component {
                 constructor(...e) {
                     super(...e),
-                        (this._render = () => i.createElement(h.Z, { module: this._getModule(), renderEmptyState: T, title: "Story History" })),
+                        (this._render = () => r.createElement(h.Z, { module: this._getModule(), renderEmptyState: T, title: "Story History" })),
                         (this._getMemoizedModule = (0, s.Z)((e) => (0, m.jz)(e))),
                         (this._getModule = () => {
                             const { trendId: e } = this.props;
@@ -351,16 +350,16 @@
                 }
                 render() {
                     const { history: e, trendId: t } = this.props;
-                    return i.createElement(p.Z, null, i.createElement(l.Z, { backLocation: `/i/trending/${t}`, documentTitle: b, history: e, primaryContent: this._render(), sidebarContent: i.createElement(c.Z, null), title: b }));
+                    return r.createElement(p.Z, null, r.createElement(l.Z, { backLocation: `/i/trending/${t}`, documentTitle: b, history: e, primaryContent: this._render(), sidebarContent: r.createElement(c.Z, null), title: b }));
                 }
             }
             Z.contextType = d.rC;
             const w = _(Z);
         },
         193048: (e, t, o) => {
-            o.r(t), o.d(t, { TOPICS_MANAGEMENT_PREFIX: () => P, UserTopicsScreen: () => x, VIEWING_OTHER_USERS_TOPICS_PREFIX: () => S, default: () => B });
-            var i = o(202784),
-                r = o(457311),
+            o.r(t), o.d(t, { TOPICS_MANAGEMENT_PREFIX: () => P, UserTopicsScreen: () => x, VIEWING_OTHER_USERS_TOPICS_PREFIX: () => v, default: () => B });
+            var r = o(202784),
+                i = o(457311),
                 n = o(111677),
                 a = o.n(n),
                 s = o(912021),
@@ -386,12 +385,12 @@
                     .propsFromActions(() => ({ clearTimelineCache: b.Z, createLocalApiErrorHandler: (0, f.zr)("USER_TOPICS_SCREEN"), fetchUserByScreenNameIfNeeded: y.ZP.fetchOneByScreenNameIfNeeded })),
                 I = a().b8533bac,
                 P = "topics-management-",
-                S = "viewing-other-users-topics-",
-                v = i.createElement(c.Z, { withTopicsToFollow: !1 });
-            class x extends i.Component {
+                v = "viewing-other-users-topics-",
+                S = r.createElement(c.Z, { withTopicsToFollow: !1 });
+            class x extends r.Component {
                 constructor(e, t) {
                     super(e, t),
-                        (this._renderNotInterestedEmptyState = () => i.createElement(r.Z, { header: "No interest? No problem.", message: "When you tell us you're not interested in a Topic, it will show up here. We won't recommend Tweets, events, or ads related to Topics you aren't into." })),
+                        (this._renderNotInterestedEmptyState = () => r.createElement(i.Z, { header: "No interest? No problem.", message: "When you tell us you're not interested in a Topic, it will show up here. We won't recommend Tweets, events, or ads related to Topics you aren't into." })),
                         (this._getScreenName = () => {
                             const { match: e } = this.props;
                             return e.params.screenName;
@@ -410,20 +409,20 @@
                 }
                 render() {
                     const { history: e, selectedTabId: t, user: o } = this.props,
-                        r = this._isOwnProfile(),
-                        n = o && (0, p.n5)({ isOwnProfile: r, isSoftBlockEnabled: this.context.featureSwitches.isTrue("xprofile_blocked_by_view_enabled"), user: o }),
-                        a = !r && this._isOnNotInterestedPage(),
+                        i = this._isOwnProfile(),
+                        n = o && (0, p.n5)({ isOwnProfile: i, user: o }),
+                        a = !i && this._isOnNotInterestedPage(),
                         s = o && (!n || a),
                         c = `/${this._getScreenName()}`;
                     if (s) {
                         const e = a ? c.concat("/topics") : c;
-                        return i.createElement(E.Z, { to: e });
+                        return r.createElement(E.Z, { to: e });
                     }
                     {
-                        const n = this._getScribeNamespace(this._isOnNotInterestedPage(), r),
-                            a = r ? g : ((l = (o && o.id_str) || ""), (0, u.Z)({ timelineId: `viewing-user-${l}-topics-page-graphql`, network: { getEndpoint: (e) => e.withEndpoint(h.ZP).fetchViewingOtherUsersTopicsPagePage, getEndpointParams: ({ count: e }) => ({ count: e, userId: l }) }, formatResponse: m.Z, context: "FETCH_OTHER_USERS_TOPICS_PAGE", perfKey: "viewing-other-users-topics-page-GraphQL" })),
-                            s = r ? P : S;
-                        return i.createElement(d.Z, { backLocation: c, getTabLink: this._getTabLink, history: e, initialPageNamespace: n, module: a, renderEmptyState: "not_interested" === this.props.selectedTabId ? this._renderNotInterestedEmptyState : void 0, selectedTabId: t, sidebarContent: v, timelinePrefix: s, title: I });
+                        const n = this._getScribeNamespace(this._isOnNotInterestedPage(), i),
+                            a = i ? g : ((l = (o && o.id_str) || ""), (0, u.Z)({ timelineId: `viewing-user-${l}-topics-page-graphql`, network: { getEndpoint: (e) => e.withEndpoint(h.ZP).fetchViewingOtherUsersTopicsPagePage, getEndpointParams: ({ count: e }) => ({ count: e, userId: l }) }, formatResponse: m.Z, context: "FETCH_OTHER_USERS_TOPICS_PAGE", perfKey: "viewing-other-users-topics-page-GraphQL" })),
+                            s = i ? P : v;
+                        return r.createElement(d.Z, { backLocation: c, getTabLink: this._getTabLink, history: e, initialPageNamespace: n, module: a, renderEmptyState: "not_interested" === this.props.selectedTabId ? this._renderNotInterestedEmptyState : void 0, selectedTabId: t, sidebarContent: S, timelinePrefix: s, title: I });
                     }
                     var l;
                 }
@@ -449,17 +448,17 @@
         },
         98440: (e, t, o) => {
             o.r(t), o.d(t, { default: () => c });
-            var i = o(202784),
-                r = o(890601),
+            var r = o(202784),
+                i = o(890601),
                 n = o(783427),
                 a = o(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const c = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Topics.8c2e44ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Topics.34be12da.js.map

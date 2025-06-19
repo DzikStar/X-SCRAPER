@@ -17,7 +17,7 @@
             const o = (0, n.Z)({ loader: () => Promise.all([i.e("icons.21"), i.e("icons.1"), i.e("modules.common-e907d115"), i.e("modules.common-e019dbda"), i.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~bundle"), i.e("loader.TimelineRenderer")]).then(i.bind(i, 22371)), renderPlaceholder: (e, t) => r.createElement(s.Z, { hasError: e, onRetry: t }) });
         },
         376293: (e, t, i) => {
-            i.d(t, { $f: () => S, KV: () => T, LI: () => w, SC: () => P, Vt: () => y, ed: () => A, op: () => L });
+            i.d(t, { $f: () => I, KV: () => f, LI: () => O, SC: () => b, Vt: () => h, ed: () => C, op: () => P });
             var r = i(202784),
                 n = i(190286),
                 s = i(111677),
@@ -30,43 +30,44 @@
                 p = o().f9e45cfb,
                 m = o().fcd4d489,
                 E = o().a6450e84,
-                _ = o().g353ad73,
-                f = o().ad00a739,
-                T = o().a9fd20be,
-                g = o().j546fb79,
-                h = o().c9623eeb,
-                y = o().e133be4e,
-                b = o().he43bca4,
-                I = o().f5f01af6,
-                P = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                S = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: E, text: t ? f({ screenName: e }) : _({ screenName: e }) }),
-                L = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: i, source: r, testID: n, unblockAction: s, unblockSubtext: o, user: a }) => {
-                    let d,
-                        u = c.Z;
-                    const p = w(a, i);
-                    switch (r) {
-                        case P.PROFILE:
-                        case P.LIST_DETAIL:
-                        case P.FOLLOWERS_LIST:
-                            u = () => {
-                                a.blocking ? s(p) : e(p);
+                _ = o().ad00a739,
+                f = o().a9fd20be,
+                T = o().j546fb79,
+                g = o().c9623eeb,
+                h = o().e133be4e,
+                y = o().f5f01af6,
+                b = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
+                I = (e) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: E, text: _({ screenName: e }) }),
+                P = ({ blockAction: e, blockSubtext: t, source: i, testID: r, unblockAction: n, unblockSubtext: s, user: o }) => {
+                    let a,
+                        d = c.Z;
+                    const u = O(o);
+                    switch (i) {
+                        case b.PROFILE:
+                        case b.LIST_DETAIL:
+                        case b.FOLLOWERS_LIST:
+                            d = () => {
+                                o.blocking ? n(u) : e(u);
                             };
                             break;
-                        case P.TWEET:
-                        case P.TWEET_CARET:
-                        case P.RICH_FEEDBACK:
-                            (d = l.uq.block),
-                                (u = () => {
-                                    a.blocking ? s(p) : e(p);
+                        case b.TWEET:
+                        case b.TWEET_CARET:
+                        case b.RICH_FEEDBACK:
+                            (a = l.uq.block),
+                                (d = () => {
+                                    o.blocking ? n(u) : e(u);
                                 });
                     }
-                    return { confirmation: p, onClick: u, testID: n, shortcutKey: d, Icon: v(a.blocking), text: C(a), subText: O({ user: a, blockSubtext: t, unblockSubtext: o }) };
+                    return { confirmation: u, onClick: d, testID: r, shortcutKey: a, Icon: S(o.blocking), text: v(o), subText: L({ user: o, blockSubtext: t, unblockSubtext: s }) };
                 },
-                v = (e) => (e ? d.default : a.default),
-                O = ({ blockSubtext: e, unblockSubtext: t, user: i }) => (!i.blocking && e ? e(i.screen_name) : i.blocking ? t : void 0),
-                C = (e) => (e.blocking ? h({ screenName: e.screen_name }) : m({ screenName: e.screen_name })),
-                w = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: g({ screenName: e }), label: y, text: t ? I : b }))(e.screen_name, t) : S(e.screen_name, t)),
-                A = ({ confirmation: e, handleConfirm: t, onClose: i }) => {
+                S = (e) => (e ? d.default : a.default),
+                L = ({ blockSubtext: e, unblockSubtext: t, user: i }) => (!i.blocking && e ? e(i.screen_name) : i.blocking ? t : void 0),
+                v = (e) => (e.blocking ? g({ screenName: e.screen_name }) : m({ screenName: e.screen_name })),
+                O = (e) => {
+                    return e.blocking ? ((t = e.screen_name), { confirmButtonType: "primary", headline: T({ screenName: t }), label: h, text: y }) : I(e.screen_name);
+                    var t;
+                },
+                C = ({ confirmation: e, handleConfirm: t, onClose: i }) => {
                     const { confirmButtonType: s, headline: o, label: a, text: d } = e;
                     return r.createElement(n.Z, { cancelButtonLabel: u, confirmButtonLabel: a, confirmButtonType: s, headline: o, onCancel: i, onConfirm: t, text: d });
                 };
@@ -992,4 +993,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1.cfeba9ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1.a227571a.js.map

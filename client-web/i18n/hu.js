@@ -1497,9 +1497,6 @@
                     return "@" + e.screenName + " letiltása";
                 }),
                 s("a6450e84", "Letiltás"),
-                s("g353ad73", function (e) {
-                    return "Nem tud majd követni téged és nem láthatja a bejegyzéseidet, illetve te sem fogod látni @" + e.screenName + " bejegyzéseit vagy értesítéseit.";
-                }),
                 s("ad00a739", function (e) {
                     return "Láthatja majd a nyilvános bejegyzéseidet, de nem tud reagálni rájuk. @" + e.screenName + " nem tud majd követni téged vagy üzenetet küldeni neked, és te sem látod majd a vele kapcsolatos értesítéseket.";
                 }),
@@ -1511,7 +1508,6 @@
                     return "@" + e.screenName + " tiltásának feloldása";
                 }),
                 s("e133be4e", "Tiltás feloldása"),
-                s("he43bca4", "Követni tudnak majd téged, és láthatják a bejegyzéseidet."),
                 s("f5f01af6", "Követni tud majd téged és reagálhat a nyilvános bejegyzéseidre."),
                 s("b6878b0a", "Valami hiba történt. Pár perc múlva próbáld meg újra letiltani a felhasználót."),
                 s("e40252de", "Ne jelenjenek meg ezek a bejegyzések a Neked ajánlottak között"),
@@ -1920,10 +1916,10 @@
                 s("jcd5ee8a", "Blokk szerkesztése"),
                 s("a8f09fb8", "Blokk törlése"),
                 s("i89195ea", "Elválasztó"),
-                s("da8ac57c", "Felirat szerkesztése");
-            s("a8fdd09c", "Cikk közzététele"),
-                s("d8047cc8", "Közzététel"),
-                s("ff7ddca2", "A Cikked a közzétételt követően bejegyzésként jelenik meg. Ezenkívül a profilod Cikkek részén is megtalálod."),
+                s("da8ac57c", "Felirat szerkesztése"),
+                s("a8fdd09c", "Cikk közzététele"),
+                s("d8047cc8", "Közzététel");
+            s("ff7ddca2", "A Cikked a közzétételt követően bejegyzésként jelenik meg. Ezenkívül a profilod Cikkek részén is megtalálod."),
                 s("ef34d7be", "A célközönség és a válaszok beállításai a cikk közzététele után már nem módosíthatók."),
                 s("e52d4998", "Célközönség kiválasztása"),
                 s("d7985b24", "Válaszd ki, hogy ki válaszolhat erre a Cikkre"),
@@ -2976,10 +2972,10 @@
                 s("bc6efc72", "Adatvédelmi irányelvek"),
                 s("h3161192", "Cookie-kra vonatkozó irányelv"),
                 s("a7de64de", "Hirdetési információk"),
-                s("jb0a4c36", "Blog");
-            s("ce6d095a", "Karrier"),
-                s("e0adec82", "Márkaanyagok"),
-                s("df1b7550", "Marketing"),
+                s("jb0a4c36", "Blog"),
+                s("ce6d095a", "Karrier"),
+                s("e0adec82", "Márkaanyagok");
+            s("df1b7550", "Marketing"),
                 s("he258678", "X üzleti célra"),
                 s("c6f58084", "Fejlesztők"),
                 s("d83f18d2", "Könyvtár"),
@@ -3888,10 +3884,10 @@
                 s("c371fb9a", "Bezárás"),
                 s("c0ce822e", "Mikrofon beállításai"),
                 s("a2bf8b8a", "Átváltás hallgatásra"),
-                s("caa8d928", "Zajcsökkentés váltása");
-            s("b5d88f0c", "Csak munkatársak"),
-                s("c855ab8e", "Csak előfizetőknek"),
-                s("ddeb0a3c", "Itt a Közösség. Szimpatikusak az emberek? Nézz szét!"),
+                s("caa8d928", "Zajcsökkentés váltása"),
+                s("b5d88f0c", "Csak munkatársak"),
+                s("c855ab8e", "Csak előfizetőknek");
+            s("ddeb0a3c", "Itt a Közösség. Szimpatikusak az emberek? Nézz szét!"),
                 s("e111f531", function (e) {
                     return e.count + " ember hallgatta";
                 }),
@@ -4492,8 +4488,6 @@
                 }),
                 s("c9a1cb5e", "Ez a felhasználói fiók nem létezik."),
                 s("e7b201de", "Próbálkozz másik kereséssel."),
-                s("ica87fde", "Le lettél tiltva"),
-                s("c7ec6faf", "Tudj meg többet!"),
                 s("e79ed125", function (e) {
                     return "@" + e.screenName + " le van tiltva";
                 }),
@@ -4930,12 +4924,12 @@
                 s("fbc79a40", "Terek áttekintése"),
                 s("d077112a", "Tér statisztikái"),
                 s("cf3709da", "Állapot"),
-                s("e797dc32", "Streamelés ideje: ");
-            s("b649d8cc", "Csak előfizetők"),
+                s("e797dc32", "Streamelés ideje: "),
+                s("b649d8cc", "Csak előfizetők"),
                 s("j9282130", "Közvetítés ikonja"),
                 s("g629b8b0", "Időtúllépés"),
-                s("eb87323c", "Ez a kiválasztott időszak elemzési adatait mutatja az élő közvetítés óta."),
-                s("i6a75722", "Időtartomány"),
+                s("eb87323c", "Ez a kiválasztott időszak elemzési adatait mutatja az élő közvetítés óta.");
+            s("i6a75722", "Időtartomány"),
                 s("c602f5b8", "Összesen"),
                 s("b35e68ae", "Összes résztvevő"),
                 s("h78ee79a", "Összes megtekintett visszajátszás"),
@@ -5882,12 +5876,12 @@
                 s("hf68e810", "A Közösségi Megjegyzések egy program, amelynek célja a világ hatékonyabb informálásának biztosítása. A használatával az X felhasználói egymással együttműködve hasznos megjegyzéseket adhatnak az esetlegesen félrevezető bejegyzésekhez."),
                 s("jdb52860", "A közreműködők megjegyzéseket írnak és értékelnek"),
                 s("c104025c", "A közreműködők olyan felhasználók az X-en, mint amilyen Te is vagy, akik részt vesznek a tesztprogramban, hogy megjegyzéseket írhassanak és értékelhessenek. Minél több ember vesz részt, annál jobb lesz a program."),
-                s("j7872b8c", "Csak az emberek által hasznosként értékelt megjegyzések jelennek meg a bejegyzés mellett");
-            s("fb59415e", "Ahhoz, hogy kontextusként megjelenjenek a bejegyzések mellett, a megjegyzéseket hasznosként kell értékelnie több, különböző nézőpontú embernek. Ezzel megelőzhető az előítéletek és a manipuláció előfordulása, és segít megtalálni azokat a megjegyzéseket, amelyek sokak számára hasznosak."),
+                s("j7872b8c", "Csak az emberek által hasznosként értékelt megjegyzések jelennek meg a bejegyzés mellett"),
+                s("fb59415e", "Ahhoz, hogy kontextusként megjelenjenek a bejegyzések mellett, a megjegyzéseket hasznosként kell értékelnie több, különböző nézőpontú embernek. Ezzel megelőzhető az előítéletek és a manipuláció előfordulása, és segít megtalálni azokat a megjegyzéseket, amelyek sokak számára hasznosak."),
                 s("f9a44022", "Az X, mint vállalat, nem dönti el, hogy mi jelenjen meg: az emberek döntenek."),
                 s("gdf4fbb2", "Az X, mint vállalat, nem ír, nem értékel és nem moderál megjegyzéseket (kivéve, ha sértik az X szabályait). Úgy véljük, ez tisztességes és hatékony módszer arra, hogy az emberek közösen adhassanak hangot a véleményüknek, és olyan megjegyzéseket írhassanak, amelyek segítenek a mások hatékonyabb informálásában."),
-                s("cc720e6a", "A Közösségi Megjegyzések az adatok átláthatóságára épül"),
-                s("j2fcd33a", "Az adatok a következő időpontig tartalmazzák a hozzájárulásokat:"),
+                s("cc720e6a", "A Közösségi Megjegyzések az adatok átláthatóságára épül");
+            s("j2fcd33a", "Az adatok a következő időpontig tartalmazzák a hozzájárulásokat:"),
                 s("d4a6b322", "A Közösségi Megjegyzésekkel kapcsolatos adatokat közzétesszük itt naponta, így az emberek szabadon hozzáférhetnek azokhoz és elemezhetik őket, azonosíthatják a problémákat, és feltárhatják a Közösségi Megjegyzések fejlesztésével kapcsolatos lehetőségeket. Már alig várjuk, hogy veled együtt tanulhassunk!"),
                 s("c359263a", "A Közösségi Megjegyzésekhez kapcsolódó adatok használata és elemzése "),
                 s("b8a27fe2", "útmutatónk segítségével"),
@@ -6482,9 +6476,6 @@
                 s("e778e3d8", "Privát üzenetek sikeresen letiltva"),
                 s("b7867912", "Minden letiltásának feloldása"),
                 s("gaddb872", "Privát üzenetek letiltásának feloldása"),
-                s("d83414a1", function (e) {
-                    return "Feloldod @" + e.screenName + " tiltását? Követni tud majd téged, és látni fogja a bejegyzéseidet.";
-                }),
                 s("a5bbfecd", function (e) {
                     return "Feloldod @" + e.screenName + " letiltását? Követni tud majd téged és reagálhat a nyilvános bejegyzéseidre.";
                 }),
@@ -6890,13 +6881,13 @@
                 s("b2c213e0", "Túllépted a karakterkorlátot"),
                 s("d84e9c2a", "Ismertesd, hogy milyen típusú munkavégzés az elvárt a szerepkörben."),
                 s("bc8b300c", "Munkakör"),
-                s("d1eedb50", "Segíts a jelölteknek, hogy megértsék a munkakör által támogatott területet.");
-            s("eaf3ce64", "Csapat"),
+                s("d1eedb50", "Segíts a jelölteknek, hogy megértsék a munkakör által támogatott területet."),
+                s("eaf3ce64", "Csapat"),
                 s("b36cd50e", "Add meg azt az alapcsapatot, amellyel a jelöltek a felvételt követően együtt fognak dolgozni."),
                 s("d3a427ce", "Válaszd ki a szükséges tapasztalat szintjét."),
                 s("i7174442", "Munkakör leírása"),
-                s("fef0cf02", "Add meg a részleted munkaköri leírást. Vázold fel a legfontosabb feladatokat és képesítéseket, hogy a jelöltek világosan megértsék a feladatot."),
-                s("b7800bec", "Add meg az állás leírását legfeljebb 200 karakterben. Megjelenik a hozzászólásokban, ajánlásokban és a keresésben."),
+                s("fef0cf02", "Add meg a részleted munkaköri leírást. Vázold fel a legfontosabb feladatokat és képesítéseket, hogy a jelöltek világosan megértsék a feladatot.");
+            s("b7800bec", "Add meg az állás leírását legfeljebb 200 karakterben. Megjelenik a hozzászólásokban, ajánlásokban és a keresésben."),
                 s("a5244ece", "Jelentkezési URL (kötelező)"),
                 s("g2b553f6", "Add meg a nyilvános URL-címet, amelyen a pályázók jelentkezhetnek a munkára."),
                 s("c2e77608", "Munkakör megnevezése (kötelező)"),
@@ -7862,7 +7853,16 @@
                 s("b5099e33", function (e) {
                     return "@" + e.screenName + " nem rendelkezik ellenőrzött követőkkel.";
                 }),
-                s("ec251f36", "Ha valaki, akit követsz, követi a felhasználót, az itt lesz látható.");
+                s("ec251f36", "Ha valaki, akit követsz, követi a felhasználót, az itt lesz látható."),
+                s("f8af4f48", "A követett felhasználói fiókok itt lesznek láthatók."),
+                s("fd0aad94", "Ha egy ellenőrzött felhasználó követi ezt a fiókot, akkor itt fog megjelenni."),
+                s("b84f6df1", function (e) {
+                    return "Ajándékozz Premium előfizetést " + e.percentage + "% kedvezménnyel korlátozott ideig";
+                }),
+                s("cfcac293", function (e) {
+                    return "Ajándékozás és fizetés " + e.price;
+                }),
+                s("d7a73450", "Csomag");
             function n(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var s = t[a];
@@ -7901,16 +7901,7 @@
                     z(e, t)
                 );
             }
-            s("f8af4f48", "A követett felhasználói fiókok itt lesznek láthatók."),
-                s("fd0aad94", "Ha egy ellenőrzött felhasználó követi ezt a fiókot, akkor itt fog megjelenni."),
-                s("b84f6df1", function (e) {
-                    return "Ajándékozz Premium előfizetést " + e.percentage + "% kedvezménnyel korlátozott ideig";
-                }),
-                s("cfcac293", function (e) {
-                    return "Ajándékozás és fizetés " + e.price;
-                }),
-                s("d7a73450", "Csomag"),
-                s("hbd2c24e", "Ez a fiók jelenleg nem jogosult ajándékot kapni."),
+            s("hbd2c24e", "Ez a fiók jelenleg nem jogosult ajándékot kapni."),
                 s("f3fddc98", "Vásárlói feltételeket"),
                 s("cff9c889", "Tudj meg többet"),
                 s("c65dda96", "Az ajádnékodat elküldtük."),
@@ -8896,15 +8887,15 @@
                 s("faf9f484", "Hirdetés"),
                 s("ae2ea9e7", function (e) {
                     return e.advertiserName + " hirdetése";
-                });
-            s("hea01798", "Keresősáv"),
+                }),
+                s("hea01798", "Keresősáv"),
                 s("f8a09386", "Megtekintés a Periscope-on"),
                 s("gf2b6eee", "Kép a képben"),
                 s("b3160a69", function (e) {
                     return e.volumePercent + "%";
                 }),
-                s("fb236728", "Szünet"),
-                s("e9bd453e", "Visszajátszás"),
+                s("fb236728", "Szünet");
+            s("e9bd453e", "Visszajátszás"),
                 s("d46b00b0", "Ugrás az élő adásra"),
                 s("ec8ab8b4", "Némítás"),
                 s("b8b6344a", "Némítás feloldása"),
@@ -9329,7 +9320,6 @@
                 s("fe40537f", function (e) {
                     return "Feloldod @" + e.screenName + " felhasználó letiltását?";
                 }),
-                s("ab7c3460", "Követni tudnak majd téged, és láthatják a bejegyzéseidet."),
                 s("i58d8718", "Követni tud majd téged és reagálhat a nyilvános bejegyzéseidre."),
                 s("cda66545", function (e) {
                     return "Kattints " + e.followType + " " + e.screenName;
@@ -11372,12 +11362,6 @@
                             },
                         },
                         {
-                            key: "e6264621",
-                            get: function () {
-                                return ["Nem követheted @" + this.props.screenName + " felhasználót, és nem láthatod a bejegyzéseit. "];
-                            },
-                        },
-                        {
                             key: "f98ecc47",
                             get: function () {
                                 return ["Biztos, hogy meg szeretnéd nézni ezeket a bejegyzéseket? A bejegyzések megtekintése nem oldja fel @" + this.props.screenName + " letiltását. "];
@@ -13398,4 +13382,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.a592c51a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.3aee436a.js.map

@@ -39,23 +39,21 @@
                 i = n.n(a),
                 l = n(415506),
                 d = n(516951),
-                c = n(443781),
-                u = n(376293),
-                m = n(847607),
-                p = n(417714),
-                h = n(988823);
-            const f = "block",
-                g = "mute",
-                y = "removeFollower",
-                _ = "report",
-                b = "share",
-                k = i().j7bb1a43,
-                w = i().hef5960c,
-                v = (0, h.M)((e) => {
-                    const { featureSwitches: t } = (0, c.QZ)(),
-                        { onBlock: n, onClose: a, onMute: i, onRemoveFollower: h, onReportUser: v, onShare: E, onUnblock: I, onUnmute: S, user: D } = e,
-                        P = [],
-                        T = (t, n) => {
+                c = n(376293),
+                u = n(847607),
+                m = n(417714),
+                p = n(988823);
+            const h = "block",
+                f = "mute",
+                g = "removeFollower",
+                y = "report",
+                _ = "share",
+                b = i().j7bb1a43,
+                k = i().hef5960c,
+                v = (0, p.M)((e) => {
+                    const { onBlock: t, onClose: n, onMute: a, onRemoveFollower: i, onReportUser: p, onShare: v, onUnblock: w, onUnmute: E, user: I } = e,
+                        S = [],
+                        D = (t, n) => {
                             const { confirm: s, onClose: r } = e;
                             if (t) {
                                 const { label: e, ...o } = t;
@@ -65,51 +63,51 @@
                             } else n();
                         };
                     !!window.navigator.share &&
-                        !D.protected &&
-                        !D.blocking &&
-                        !D.blocked_by &&
-                        P.push({
+                        !I.protected &&
+                        !I.blocking &&
+                        !I.blocked_by &&
+                        S.push({
                             Icon: r.Z,
                             onClick: () => {
-                                a(), E();
-                            },
-                            testID: b,
-                            text: w,
-                        });
-                    !D.blocking &&
-                        P.push({
-                            ...(0, m.N1)(
-                                D,
-                                () => {
-                                    a(), i();
-                                },
-                                () => {
-                                    a(), S();
-                                },
-                            ),
-                            testID: g,
-                        });
-                    D.followed_by &&
-                        P.push({
-                            ...(0, p.l)({
-                                removeFollowerAction: (e) => {
-                                    T(e, h);
-                                },
-                                user: D,
-                            }),
-                            testID: y,
-                        }),
-                        P.push((0, u.op)({ blockAction: (e) => T(e, n), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: f, unblockAction: (e) => T(e, I), user: D })),
-                        P.push({
-                            Icon: l.default,
-                            onClick: () => {
-                                a(), v();
+                                n(), v();
                             },
                             testID: _,
-                            text: k({ screenName: D.screen_name }),
+                            text: k,
                         });
-                    const Z = P.map(({ Icon: e, onClick: t, testID: n, text: s }) => ({ text: s, onClick: t, Icon: e, testID: n }));
-                    return s.createElement(o.Z, { items: Z, onCloseRequested: a });
+                    !I.blocking &&
+                        S.push({
+                            ...(0, u.N1)(
+                                I,
+                                () => {
+                                    n(), a();
+                                },
+                                () => {
+                                    n(), E();
+                                },
+                            ),
+                            testID: f,
+                        });
+                    I.followed_by &&
+                        S.push({
+                            ...(0, m.l)({
+                                removeFollowerAction: (e) => {
+                                    D(e, i);
+                                },
+                                user: I,
+                            }),
+                            testID: g,
+                        }),
+                        S.push((0, c.op)({ blockAction: (e) => D(e, t), source: c.SC.FOLLOWERS_LIST, testID: h, unblockAction: (e) => D(e, w), user: I })),
+                        S.push({
+                            Icon: l.default,
+                            onClick: () => {
+                                n(), p();
+                            },
+                            testID: y,
+                            text: b({ screenName: I.screen_name }),
+                        });
+                    const P = S.map(({ Icon: e, onClick: t, testID: n, text: s }) => ({ text: s, onClick: t, Icon: e, testID: n }));
+                    return s.createElement(o.Z, { items: P, onCloseRequested: n });
                 });
         },
         864479: (e, t, n) => {
@@ -271,8 +269,8 @@
                 _ = a().c4da7d28,
                 b = a().j87c21f4,
                 k = a().iebc30ca,
-                w = a().dc740eb2;
-            class v extends s.PureComponent {
+                v = a().dc740eb2;
+            class w extends s.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderButton = () => {
@@ -295,7 +293,7 @@
                         (this.state = { showingPushPrompt: !1 });
                 }
                 render() {
-                    return s.createElement("div", null, this.state.showingPushPrompt ? s.createElement(d.Z, { fullScreen: !0, message: w }) : null, this._renderButton());
+                    return s.createElement("div", null, this.state.showingPushPrompt ? s.createElement(d.Z, { fullScreen: !0, message: v }) : null, this._renderButton());
                 }
                 _updateDeviceFollowing(e) {
                     const { createLocalApiErrorHandler: t, updateDeviceFollowing: n, userId: s } = this.props;
@@ -306,7 +304,7 @@
                     t.scribeAction(e);
                 }
             }
-            const E = g(v);
+            const E = g(w);
         },
         130888: (e, t, n) => {
             "use strict";
@@ -336,17 +334,17 @@
                         r = e.unmentioned_user_ids?.includes(t);
                     return s || !r;
                 },
-                w = (e, t) => (e.entities?.user_mentions || []).filter((n) => k(e, n.id_str, t)).map((e) => e.id_str) || [],
-                v = (e, t) => t.focalTweetId,
+                v = (e, t) => (e.entities?.user_mentions || []).filter((n) => k(e, n.id_str, t)).map((e) => e.id_str) || [],
+                w = (e, t) => t.focalTweetId,
                 E = (0, h.Z)()
-                    .propsFromState(() => ({ focalTweetId: v, viewerUserId: f._h, tweetMap: g.Z.selectAll, users: y.ZP.selectAll }))
+                    .propsFromState(() => ({ focalTweetId: w, viewerUserId: f._h, tweetMap: g.Z.selectAll, users: y.ZP.selectAll }))
                     .adjustStateProps(({ focalTweetId: e, tweetMap: t, users: n, viewerUserId: s }) => {
                         const r = e && t[e];
                         if (!r) return { participantIds: [] };
-                        const o = [r.user, ...w(r, s), ...((a = r), _.ZP.mergeTaggedUsers((a.extended_entities && a.extended_entities.media) || []).map((e) => e.user_id))];
+                        const o = [r.user, ...v(r, s), ...((a = r), _.ZP.mergeTaggedUsers((a.extended_entities && a.extended_entities.media) || []).map((e) => e.user_id))];
                         var a;
                         const i = r.quoted_status && t[r.quoted_status];
-                        return i && (o.push(...((e, t) => (k(e, e.user, t) ? [e.user] : []))(i, s)), o.push(...w(i, s))), { participantIds: (0, b.Z)(o).filter((e) => "string" == typeof e && void 0 !== n[e]?.following) };
+                        return i && (o.push(...((e, t) => (k(e, e.user, t) ? [e.user] : []))(i, s)), o.push(...v(i, s))), { participantIds: (0, b.Z)(o).filter((e) => "string" == typeof e && void 0 !== n[e]?.following) };
                     })
                     .withAnalytics({ component: "in_this_conversation" }),
                 I = i().j88f27d8;
@@ -541,9 +539,9 @@
                 _ = n(731708),
                 b = n(154003),
                 k = n(708852),
-                w = n(392237),
-                v = n(111677),
-                E = n.n(v),
+                v = n(392237),
+                w = n(111677),
+                E = n.n(w),
                 I = n(293723),
                 S = n(399398),
                 D = n(822502),
@@ -571,7 +569,7 @@
                         }, [r, s, t]);
                     return o && a ? m.createElement(D.Z, { actions: [], companyProfile: l, job: a, jobId: t, jobIndex: n, onClick: u, relayId: d, user: i, userSentiment: c, withBottomBorder: !1 }) : null;
                 },
-                x = w.default.create((e) => ({ content: { paddingHorizontal: e.spaces.space16, paddingBottom: e.spaces.space16, gap: e.spaces.space16 }, bulletRow: { flexDirection: "row", gap: e.spaces.space4, alignItems: "center" } })),
+                x = v.default.create((e) => ({ content: { paddingHorizontal: e.spaces.space16, paddingBottom: e.spaces.space16, gap: e.spaces.space16 }, bulletRow: { flexDirection: "row", gap: e.spaces.space4, alignItems: "center" } })),
                 N = ({ isSidebarModule: e }) => {
                     const t = (0, T.p)(U, {}),
                         n = t?.viewer_v2.user_results.result.matching_profile,
@@ -621,8 +619,8 @@
                 _ = n(973572),
                 b = n(668214),
                 k = n(919022);
-            const w = (e, t) => t.userIds,
-                v = (e, t) => {
+            const v = (e, t) => t.userIds,
+                w = (e, t) => {
                     const { filterPredicate: n = (e) => !!e, userIds: s } = t;
                     return s.filter((t) => {
                         const s = k.ZP.select(e, t);
@@ -638,8 +636,8 @@
                 },
                 I = (0, b.Z)()
                     .propsFromState(() => ({
-                        availableUserIds: (0, _.Z)(v, (e) => e),
-                        fetchStatus: (0, _.Z)(v, E, w, (e, t, n) => {
+                        availableUserIds: (0, _.Z)(w, (e) => e),
+                        fetchStatus: (0, _.Z)(w, E, v, (e, t, n) => {
                             let s = g.ZP.LOADED;
                             for (let r = 0; r < n.length; r++) {
                                 const o = n[r];
@@ -715,11 +713,11 @@
                 h = n(864479),
                 f = (n(136728), n(952428)),
                 g = n(443781);
-            const y = s.lazy(() => window.__SSP_PROMISE__.then(() => ({ default: w }))),
+            const y = s.lazy(() => window.__SSP_PROMISE__.then(() => ({ default: v }))),
                 _ = new Set(),
                 b = {};
             let k = 0;
-            function w({ fallbackSlotId: e, primarySlotId: t }) {
+            function v({ fallbackSlotId: e, primarySlotId: t }) {
                 const n = s.useRef("ad-" + k++).current,
                     [o, a] = s.useState(""),
                     i = s.useRef(!1),
@@ -795,12 +793,12 @@
                     c)
                 )
                     return null;
-                const p = [v.adContainer, !o && v.emptyContainer];
-                return s.createElement(r.Z, { style: p }, s.createElement(r.Z, { id: t, style: [v.adSlot, "primary" !== o && v.hiddenSlot] }), s.createElement(r.Z, { id: e, style: [v.adSlot, "fallback" !== o && v.hiddenSlot] }));
+                const p = [w.adContainer, !o && w.emptyContainer];
+                return s.createElement(r.Z, { style: p }, s.createElement(r.Z, { id: t, style: [w.adSlot, "primary" !== o && w.hiddenSlot] }), s.createElement(r.Z, { id: e, style: [w.adSlot, "fallback" !== o && w.hiddenSlot] }));
             }
-            const v = o.default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space12, borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, adContainer: { minHeight: 250, minWidth: 300, width: "100%", alignItems: "center", justifyContent: "center", backgroundColor: "transparent", position: "relative" }, emptyContainer: { minHeight: 0, height: 0, overflow: "hidden" }, adSlot: { width: "100%", height: "100%", position: "absolute", top: 0, start: 0, end: 0, minWidth: 300, minHeight: 250 }, hiddenSlot: { display: "none" } })),
+            const w = o.default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space12, borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, adContainer: { minHeight: 250, minWidth: 300, width: "100%", alignItems: "center", justifyContent: "center", backgroundColor: "transparent", position: "relative" }, emptyContainer: { minHeight: 0, height: 0, overflow: "hidden" }, adSlot: { width: "100%", height: "100%", position: "absolute", top: 0, start: 0, end: 0, minWidth: 300, minHeight: 250 }, hiddenSlot: { display: "none" } })),
                 E = function (e) {
-                    return s.createElement(f.Z, { style: v.root }, s.createElement(s.Suspense, { fallback: s.createElement(r.Z, { style: v.emptyContainer }) }, s.createElement(y, e)));
+                    return s.createElement(f.Z, { style: w.root }, s.createElement(s.Suspense, { fallback: s.createElement(r.Z, { style: w.emptyContainer }) }, s.createElement(y, e)));
                 },
                 I = i().a526aa66,
                 S = i().ef625010,
@@ -916,7 +914,7 @@
         },
         376293: (e, t, n) => {
             "use strict";
-            n.d(t, { $f: () => I, KV: () => y, LI: () => Z, SC: () => E, Vt: () => k, ed: () => L, op: () => S });
+            n.d(t, { $f: () => w, KV: () => g, LI: () => P, SC: () => v, Vt: () => b, ed: () => T, op: () => E });
             var s = n(202784),
                 r = n(190286),
                 o = n(111677),
@@ -929,43 +927,44 @@
                 m = a().f9e45cfb,
                 p = a().fcd4d489,
                 h = a().a6450e84,
-                f = a().g353ad73,
-                g = a().ad00a739,
-                y = a().a9fd20be,
-                _ = a().j546fb79,
-                b = a().c9623eeb,
-                k = a().e133be4e,
-                w = a().he43bca4,
-                v = a().f5f01af6,
-                E = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                I = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: m({ screenName: e }), label: h, text: t ? g({ screenName: e }) : f({ screenName: e }) }),
-                S = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: n, source: s, testID: r, unblockAction: o, unblockSubtext: a, user: i }) => {
-                    let l,
-                        u = d.Z;
-                    const m = Z(i, n);
-                    switch (s) {
-                        case E.PROFILE:
-                        case E.LIST_DETAIL:
-                        case E.FOLLOWERS_LIST:
-                            u = () => {
-                                i.blocking ? o(m) : e(m);
+                f = a().ad00a739,
+                g = a().a9fd20be,
+                y = a().j546fb79,
+                _ = a().c9623eeb,
+                b = a().e133be4e,
+                k = a().f5f01af6,
+                v = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
+                w = (e) => ({ confirmButtonType: "destructiveFilled", headline: m({ screenName: e }), label: h, text: f({ screenName: e }) }),
+                E = ({ blockAction: e, blockSubtext: t, source: n, testID: s, unblockAction: r, unblockSubtext: o, user: a }) => {
+                    let i,
+                        l = d.Z;
+                    const u = P(a);
+                    switch (n) {
+                        case v.PROFILE:
+                        case v.LIST_DETAIL:
+                        case v.FOLLOWERS_LIST:
+                            l = () => {
+                                a.blocking ? r(u) : e(u);
                             };
                             break;
-                        case E.TWEET:
-                        case E.TWEET_CARET:
-                        case E.RICH_FEEDBACK:
-                            (l = c.uq.block),
-                                (u = () => {
-                                    i.blocking ? o(m) : e(m);
+                        case v.TWEET:
+                        case v.TWEET_CARET:
+                        case v.RICH_FEEDBACK:
+                            (i = c.uq.block),
+                                (l = () => {
+                                    a.blocking ? r(u) : e(u);
                                 });
                     }
-                    return { confirmation: m, onClick: u, testID: r, shortcutKey: l, Icon: D(i.blocking), text: T(i), subText: P({ user: i, blockSubtext: t, unblockSubtext: a }) };
+                    return { confirmation: u, onClick: l, testID: s, shortcutKey: i, Icon: I(a.blocking), text: D(a), subText: S({ user: a, blockSubtext: t, unblockSubtext: o }) };
                 },
-                D = (e) => (e ? l.default : i.default),
-                P = ({ blockSubtext: e, unblockSubtext: t, user: n }) => (!n.blocking && e ? e(n.screen_name) : n.blocking ? t : void 0),
-                T = (e) => (e.blocking ? b({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
-                Z = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: _({ screenName: e }), label: k, text: t ? v : w }))(e.screen_name, t) : I(e.screen_name, t)),
-                L = ({ confirmation: e, handleConfirm: t, onClose: n }) => {
+                I = (e) => (e ? l.default : i.default),
+                S = ({ blockSubtext: e, unblockSubtext: t, user: n }) => (!n.blocking && e ? e(n.screen_name) : n.blocking ? t : void 0),
+                D = (e) => (e.blocking ? _({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
+                P = (e) => {
+                    return e.blocking ? ((t = e.screen_name), { confirmButtonType: "primary", headline: y({ screenName: t }), label: b, text: k }) : w(e.screen_name);
+                    var t;
+                },
+                T = ({ confirmation: e, handleConfirm: t, onClose: n }) => {
                     const { confirmButtonType: o, headline: a, label: i, text: l } = e;
                     return s.createElement(r.Z, { cancelButtonLabel: u, confirmButtonLabel: i, confirmButtonType: o, headline: a, onCancel: n, onConfirm: t, text: l });
                 };
@@ -1257,15 +1256,15 @@
                 _ = n(917799),
                 b = n(312771),
                 k = n(56519);
-            const w = "recommendations",
-                v = 30,
+            const v = "recommendations",
+                w = 30,
                 E = "rweb/recommendations/FETCH_REQUEST",
                 I = "rweb/recommendations/FETCH_SUCCESS",
                 S = "rweb/recommendations/FETCH_FAILURE",
                 D = {},
                 P = ({ displayLocation: e, similarToUserId: t }) => e + (t ? `_${t}` : "");
             y.Z.register({
-                [w]: function (e = D, t) {
+                [v]: function (e = D, t) {
                     if (!t?.meta) return e;
                     switch (t.type) {
                         case E: {
@@ -1290,11 +1289,11 @@
             const T = [],
                 Z = [],
                 L = (e, { displayLocation: t, similarToUserId: n }) => {
-                    const s = e[w][P({ displayLocation: t, similarToUserId: n })];
+                    const s = e[v][P({ displayLocation: t, similarToUserId: n })];
                     return s && s.recommendations ? s.recommendations : T;
                 },
                 C = (e, { displayLocation: t, similarToUserId: n }) => {
-                    const s = e[w][P({ displayLocation: t, similarToUserId: n })];
+                    const s = e[v][P({ displayLocation: t, similarToUserId: n })];
                     return s ? s.fetchStatus : b.ZP.NONE;
                 },
                 F = (e) => (t, n, s) => {
@@ -1308,7 +1307,7 @@
                               (
                                   (e) =>
                                   (t, n, { api: s, featureSwitches: r }) => {
-                                      const { displayLocation: o, itsInterests: a, limit: i = v, similarToUserId: l } = e,
+                                      const { displayLocation: o, itsInterests: a, limit: i = w, similarToUserId: l } = e,
                                           d = "profile_accounts_sidebar" === o && r.isTrue("rweb_recommendations_sidebar_graphql_enabled");
                                       return (0, _._O)(t, { request: d ? s.withEndpoint(g).fetchSidebarUserRecommendations : s.withEndpoint(g).fetch, params: { display_location: o, itsInterests: a, limit: i, user_id: l } })({ actionTypes: { REQUEST: E, SUCCESS: I, FAILURE: S }, context: "FETCH_RECOMMENDATIONS", meta: { displayLocation: o, similarToUserId: l } }, (e) => {
                                           if (e && e.entities) return [(0, k.dP)(e.entities)];
@@ -1385,4 +1384,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.WideLayout-a2dee9c7.5652b0fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.WideLayout-a2dee9c7.9a72042a.js.map

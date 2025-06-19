@@ -1497,9 +1497,6 @@
                     return "@" + e.screenName + " adlı kişiyi engelle";
                 }),
                 n("a6450e84", "Engelle"),
-                n("g353ad73", function (e) {
-                    return "Seni takip edemez veya gönderilerini görüntüleyemez ve sen de @" + e.screenName + " adlı kullanıcının gönderilerini veya bildirimlerini görmezsin.";
-                }),
                 n("ad00a739", function (e) {
                     return "Herkese açık gönderilerini görebilir ancak artık gönderilerle etkileşim kuramaz. @" + e.screenName + ", seni takip edemez veya sana mesaj gönderemez ve sen de bu kişiyle ilgili bildirimleri görmezsin.";
                 }),
@@ -1511,7 +1508,6 @@
                     return "@" + e.screenName + " adlı kişinin engelini kaldır";
                 }),
                 n("e133be4e", "Engeli kaldır"),
-                n("he43bca4", "Seni takip edebilir ve gönderilerini görüntüleyebilir."),
                 n("f5f01af6", "Seni takip edebilir ve herkese açık gönderilerinle etkileşime geçebilir."),
                 n("b6878b0a", "Bir sorun oluştu. Bu kullanıcıyı engellemeyi bir dakika içinde tekrar dene."),
                 n("e40252de", "Bu gönderileri Sanal özel akışında gösterme"),
@@ -1920,10 +1916,10 @@
                 n("jcd5ee8a", "Bloku düzenle"),
                 n("a8f09fb8", "Bloku sil"),
                 n("i89195ea", "Ayırıcı"),
-                n("da8ac57c", "Altyazıyı Düzenle");
-            n("a8fdd09c", "Makaleyi Yayınla"),
-                n("d8047cc8", "Yayınla"),
-                n("ff7ddca2", "Makalen yayınlandıktan sonra gönderi olarak görünecek. Ayrıca, profilindeki Makaleler sekmesinde de bulunabilecek."),
+                n("da8ac57c", "Altyazıyı Düzenle"),
+                n("a8fdd09c", "Makaleyi Yayınla"),
+                n("d8047cc8", "Yayınla");
+            n("ff7ddca2", "Makalen yayınlandıktan sonra gönderi olarak görünecek. Ayrıca, profilindeki Makaleler sekmesinde de bulunabilecek."),
                 n("ef34d7be", "Bir makale yayınlandıktan sonra hedef kitle ve yanıt denetimleri düzenlenemez."),
                 n("e52d4998", "Hedef kitleni seç"),
                 n("d7985b24", "Bu makaleye kimlerin yanıt verebileceğini seç"),
@@ -2976,10 +2972,10 @@
                 n("bc6efc72", "Gizlilik Politikası"),
                 n("h3161192", "Çerez Politikası"),
                 n("a7de64de", "Reklam bilgisi"),
-                n("jb0a4c36", "Blog");
-            n("ce6d095a", "Kariyer"),
-                n("e0adec82", "Marka Kaynakları"),
-                n("df1b7550", "Pazarlama"),
+                n("jb0a4c36", "Blog"),
+                n("ce6d095a", "Kariyer"),
+                n("e0adec82", "Marka Kaynakları");
+            n("df1b7550", "Pazarlama"),
                 n("he258678", "İşletmeler İçin X"),
                 n("c6f58084", "Geliştiriciler"),
                 n("d83f18d2", "Dizin"),
@@ -3888,10 +3884,10 @@
                 n("c371fb9a", "Bitiş"),
                 n("c0ce822e", "Mikrofon ayarları"),
                 n("a2bf8b8a", "Dinlemeye geç"),
-                n("caa8d928", "Gürültü önlemeyi aç/kapat");
-            n("b5d88f0c", "Yalnızca çalışanlar"),
-                n("c855ab8e", "Abonelere özel"),
-                n("ddeb0a3c", "İşte Topluluk. Üyeleri sevdin mi? Haydi bir göz at."),
+                n("caa8d928", "Gürültü önlemeyi aç/kapat"),
+                n("b5d88f0c", "Yalnızca çalışanlar"),
+                n("c855ab8e", "Abonelere özel");
+            n("ddeb0a3c", "İşte Topluluk. Üyeleri sevdin mi? Haydi bir göz at."),
                 n("e111f531", function (e) {
                     return e.count + " katıldı";
                 }),
@@ -4492,8 +4488,6 @@
                 }),
                 n("c9a1cb5e", "Böyle bir hesap yok"),
                 n("e7b201de", "Başka arama yapmayı dene."),
-                n("ica87fde", "Engellendin"),
-                n("c7ec6faf", "Daha fazla bilgi al"),
                 n("e79ed125", function (e) {
                     return "@" + e.screenName + " engellendi";
                 }),
@@ -4930,12 +4924,12 @@
                 n("fbc79a40", "Sohbet odalarına genel bakış"),
                 n("d077112a", "Sohbet Odası İstatistikleri"),
                 n("cf3709da", "Durum"),
-                n("e797dc32", "Yayın zamanı: ");
-            n("b649d8cc", "Yalnızca Abone"),
+                n("e797dc32", "Yayın zamanı: "),
+                n("b649d8cc", "Yalnızca Abone"),
                 n("j9282130", "Yayının küçük resmi"),
                 n("g629b8b0", "Zaman Aşımına Uğradı"),
-                n("eb87323c", "Bu, canlı yayın gerçekleştiğinden bu yana seçilen zaman aralığına yönelik istatistik verilerini gösterir."),
-                n("i6a75722", "Zaman Aralığı"),
+                n("eb87323c", "Bu, canlı yayın gerçekleştiğinden bu yana seçilen zaman aralığına yönelik istatistik verilerini gösterir.");
+            n("i6a75722", "Zaman Aralığı"),
                 n("c602f5b8", "Toplam"),
                 n("b35e68ae", "Toplam Katılımcı Sayısı"),
                 n("h78ee79a", "İzlenen Toplam Yeniden Oynatma"),
@@ -5882,12 +5876,12 @@
                 n("hf68e810", "Topluluk Notları, insanların daha güvenilir bilgi aldığı bir dünya oluşturmayı hedefleyen bir programdır. X'te insanları iş birliği içinde, yanıltıcı olabilecek gönderiler konusunda yardımcı olacak notlar eklemeye teşvik eder."),
                 n("jdb52860", "Katkıda bulunanlar not yazar ve notları değerlendirir"),
                 n("c104025c", "X'te katkıda bulunanlar, not yazmak ve notları değerlendirmek için pilot programa kaydolan senin gibi kullanıcılardır. Programa ne kadar çok kişi katılırsa o kadar iyi hâle gelir."),
-                n("j7872b8c", 'Yalnızca kullanıcıların "yardımcı oldu" olarak değerlendirdiği notlar gönderide görünür');
-            n("fb59415e", 'Bir notun gönderi bağlamında herkese açık olarak gösterilmesi için farklı bakış açılarına sahip yeterli sayıda kullanıcı tarafından "yardımcı oldu" olarak değerlendirilmesi gerekir. Bu yaklaşım, ön yargı ve manipülasyonun önlenmesine yardımcı olur ve birçok kullanıcının işine yarayacak notlar bulunmasını sağlar.'),
+                n("j7872b8c", 'Yalnızca kullanıcıların "yardımcı oldu" olarak değerlendirdiği notlar gönderide görünür'),
+                n("fb59415e", 'Bir notun gönderi bağlamında herkese açık olarak gösterilmesi için farklı bakış açılarına sahip yeterli sayıda kullanıcı tarafından "yardımcı oldu" olarak değerlendirilmesi gerekir. Bu yaklaşım, ön yargı ve manipülasyonun önlenmesine yardımcı olur ve birçok kullanıcının işine yarayacak notlar bulunmasını sağlar.'),
                 n("f9a44022", "Görüntülenecek içerikleri şirket olarak X değil, kullanıcılar seçer"),
                 n("gdf4fbb2", "Şirket olarak X not yazmaz, değerlendirmez veya notları değiştirmez (X Kurallarını ihlal etmedikleri sürece). İnsanların bu seçimleri birlikte yapmasına olanak tanımanın, kullanıcıların daha güvenilir bilgi almasına yardımcı olacak bilgiler eklemesi için adil ve etkili bir yöntem olduğuna inanıyoruz."),
-                n("cc720e6a", "Topluluk Notları, veri şeffaflığı üzerine inşa edilmiştir"),
-                n("j2fcd33a", "Veriler şu tarihe kadar olan katkıları içerir:"),
+                n("cc720e6a", "Topluluk Notları, veri şeffaflığı üzerine inşa edilmiştir");
+            n("j2fcd33a", "Veriler şu tarihe kadar olan katkıları içerir:"),
                 n("d4a6b322", "Tüm Topluluk Notları verileri günlük olarak burada yayınlanır. Böylece insanlar veri analizi yapmak, sorunları tanımlamak ve Topluluk Notları'nı daha iyi bir yer hâline getirme fırsatlarını keşfetmek için ücretsiz erişime sahip olur. Seninle birlikte öğrenmek için sabırsızlanıyoruz."),
                 n("c359263a", "Topluluk Notları verilerinin nasıl kullanıldığı ve analiz edildiği hakkında daha fazla bilgi al "),
                 n("b8a27fe2", "kılavuzumuz"),
@@ -6482,9 +6476,6 @@
                 n("e778e3d8", "DM'ler başarıyla engellendi"),
                 n("b7867912", "Her şeyin engelini kaldır"),
                 n("gaddb872", "DM'lerin engelini kaldır"),
-                n("d83414a1", function (e) {
-                    return "@" + e.screenName + " adlı kişinin engeli kaldırılsın mı? Seni takip edebilecek ve gönderilerini görüntüleyebilecek";
-                }),
                 n("a5bbfecd", function (e) {
                     return "@" + e.screenName + " adlı kullanıcının engeli kaldırılsın mı? Seni takip edebilir ve herkese açık gönderilerinle etkileşime geçebilir.";
                 }),
@@ -6890,13 +6881,13 @@
                 n("b2c213e0", "Karakter sınırı aşıldı"),
                 n("d84e9c2a", "Bu rol için beklenen iş taahhüdü türünü paylaş."),
                 n("bc8b300c", "Görev"),
-                n("d1eedb50", "Adayların bu rolün desteklediği bölgeyi anlamasına yardımcı ol.");
-            n("eaf3ce64", "Ekip"),
+                n("d1eedb50", "Adayların bu rolün desteklediği bölgeyi anlamasına yardımcı ol."),
+                n("eaf3ce64", "Ekip"),
                 n("b36cd50e", "İşe alındığında adayların birlikte çalışacağı temel ekibi belirt."),
                 n("d3a427ce", "Gereken deneyim seviyesini seç."),
                 n("i7174442", "İş Açıklaması"),
-                n("fef0cf02", "Ayrıntılı bir iş açıklaması gir. Temel sorumlulukları ve aranan nitelikleri genel hatlarıyla belirterek adayların rolü net bir şekilde anlamasını sağla."),
-                n("b7800bec", "İşi en fazla 200 karakterle tanıt. Gönderilerde, önerilerde ve aramada gösterilir."),
+                n("fef0cf02", "Ayrıntılı bir iş açıklaması gir. Temel sorumlulukları ve aranan nitelikleri genel hatlarıyla belirterek adayların rolü net bir şekilde anlamasını sağla.");
+            n("b7800bec", "İşi en fazla 200 karakterle tanıt. Gönderilerde, önerilerde ve aramada gösterilir."),
                 n("a5244ece", "Başvuru URL'si (Zorunlu)"),
                 n("g2b553f6", "Adayların bu iş için başvuru yapabileceği herkese açık URL'yi gir."),
                 n("c2e77608", "Unvan (Zorunlu)"),
@@ -7862,7 +7853,16 @@
                 n("b5099e33", function (e) {
                     return "@" + e.screenName + " adlı kullanıcının onaylanmış takipçisi yok.";
                 }),
-                n("ec251f36", "Tanıdığın biri onu takip ettiğinde burada listelenir.");
+                n("ec251f36", "Tanıdığın biri onu takip ettiğinde burada listelenir."),
+                n("f8af4f48", "Kullanıcı hesapları takip ettiğinde hesaplar burada görünecek."),
+                n("fd0aad94", "Onaylanmış bir kişi bu hesabı takip ettiğinde bu kişi burada gösterilir."),
+                n("b84f6df1", function (e) {
+                    return "Kısa bir süreliğine Premium'u %" + e.percentage + " indirimle hediye et";
+                }),
+                n("cfcac293", function (e) {
+                    return "Hediye Et ve " + e.price + " Öde";
+                }),
+                n("d7a73450", "Kademe");
             function l(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var n = a[i];
@@ -7901,16 +7901,7 @@
                     t(e, a)
                 );
             }
-            n("f8af4f48", "Kullanıcı hesapları takip ettiğinde hesaplar burada görünecek."),
-                n("fd0aad94", "Onaylanmış bir kişi bu hesabı takip ettiğinde bu kişi burada gösterilir."),
-                n("b84f6df1", function (e) {
-                    return "Kısa bir süreliğine Premium'u %" + e.percentage + " indirimle hediye et";
-                }),
-                n("cfcac293", function (e) {
-                    return "Hediye Et ve " + e.price + " Öde";
-                }),
-                n("d7a73450", "Kademe"),
-                n("hbd2c24e", "Bu hesap şu anda hediyeler için uygun değil."),
+            n("hbd2c24e", "Bu hesap şu anda hediyeler için uygun değil."),
                 n("f3fddc98", "Alıcı Şartlarımızı"),
                 n("cff9c889", "Daha fazla bilgi al"),
                 n("c65dda96", "Hediyen gönderildi."),
@@ -8896,15 +8887,15 @@
                 n("faf9f484", "Reklam"),
                 n("ae2ea9e7", function (e) {
                     return e.advertiserName + " reklamı";
-                });
-            n("hea01798", "Arama kaydırıcısı"),
+                }),
+                n("hea01798", "Arama kaydırıcısı"),
                 n("f8a09386", "Scope'ta görüntüle"),
                 n("gf2b6eee", "Resim İçinde Resim"),
                 n("b3160a69", function (e) {
                     return "Yüzde " + e.volumePercent;
                 }),
-                n("fb236728", "Duraklat"),
-                n("e9bd453e", "Yeniden oynat"),
+                n("fb236728", "Duraklat");
+            n("e9bd453e", "Yeniden oynat"),
                 n("d46b00b0", "Canlı yayına geç"),
                 n("ec8ab8b4", "Sessize al"),
                 n("b8b6344a", "Sesi aç"),
@@ -9329,7 +9320,6 @@
                 n("fe40537f", function (e) {
                     return "@" + e.screenName + " adlı kişinin engeli kaldırılsın mı?";
                 }),
-                n("ab7c3460", "Seni takip edebilir ve gönderilerini görüntüleyebilir."),
                 n("i58d8718", "Seni takip edebilir ve herkese açık gönderilerinle etkileşime geçebilir."),
                 n("cda66545", function (e) {
                     return e.screenName + " adlı kullanıcıyı " + e.followType + " için tıkla";
@@ -11372,12 +11362,6 @@
                             },
                         },
                         {
-                            key: "e6264621",
-                            get: function () {
-                                return ["@" + this.props.screenName + " adlı kişiyi takip edemez veya gönderilerini göremezsin. "];
-                            },
-                        },
-                        {
                             key: "f98ecc47",
                             get: function () {
                                 return ["Bu gönderileri görüntülemek istediğine emin misin? Gönderileri görüntülemek @" + this.props.screenName + " adlı kişinin engelini kaldırmayacak. "];
@@ -13398,4 +13382,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.b10880ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.92ef743a.js.map

@@ -58,7 +58,7 @@
                 n = (e, t) => s.og(e, t).map(({ name: e }) => e);
         },
         527409: (e, t, i) => {
-            i.r(t), i.d(t, { ListDetail: () => Z, default: () => U, formatNumber: () => A });
+            i.r(t), i.d(t, { ListDetail: () => F, default: () => U, formatNumber: () => A });
             var s = i(202784),
                 r = i(272175),
                 o = i(325686),
@@ -79,8 +79,8 @@
                 v = i(668214),
                 y = i(576469),
                 E = i(390387),
-                S = i(919022),
-                I = i(510588);
+                I = i(919022),
+                S = i(510588);
             const L = (e, t) => {
                     const { listId: i } = t;
                     return i ? y.Z.select(e, i) : void 0;
@@ -88,16 +88,16 @@
                 T = (e, t) => {
                     const i = L(e, t),
                         s = i?.user;
-                    return s ? S.ZP.select(e, s) : void 0;
+                    return s ? I.ZP.select(e, s) : void 0;
                 },
-                C = (e, t) => I.tt(e, t.listId),
+                C = (e, t) => S.tt(e, t.listId),
                 O = (0, v.Z)()
                     .propsFromState(() => ({ list: L, user: T, viewerUserId: E._h, media: C }))
                     .withAnalytics(),
                 A = _().d58baa7f,
-                x = _().ca5d0a82,
-                N = _().j681933e;
-            class Z extends s.Component {
+                N = _().ca5d0a82,
+                Z = _().j681933e;
+            class F extends s.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderImage = () => {
@@ -107,7 +107,7 @@
                                 const { url: e } = t;
                                 return s.createElement(s.Fragment, null, s.createElement(r.ql, { prioritizeSeoTags: !0 }, s.createElement("meta", { content: e, property: "og:image" })), s.createElement(a.Z, { "aria-label": "", aspectMode: l.Z.exact(3), backgroundColor: c.default.theme.colors.gray300, image: t }));
                             }
-                            return s.createElement(d.Z, { ratio: 3 }, s.createElement(o.Z, { style: F.placeholderImageContainer }));
+                            return s.createElement(d.Z, { ratio: 3 }, s.createElement(o.Z, { style: x.placeholderImageContainer }));
                         }),
                         (this._renderListDescription = () => {
                             const { list: e, user: t } = this.props;
@@ -116,7 +116,7 @@
                                     d = c || 0,
                                     p = n || 0,
                                     h = "private" === a;
-                                return s.createElement(o.Z, { style: F.description }, s.createElement(o.Z, { style: [F.name, F.text] }, s.createElement(u.ZP, { align: "center", size: "headline1", weight: "bold" }, l.trim()), h ? s.createElement(f.default, { "aria-label": N, style: F.iconLock }) : null), i ? s.createElement(s.Fragment, null, s.createElement(r.ql, { prioritizeSeoTags: !0 }, s.createElement("meta", { content: i.trim(), property: "og:description" })), s.createElement(u.ZP, { align: "center", style: F.text }, i.trim())) : null, t ? s.createElement(m.Z, { affiliateBadgeInfo: t.highlightedLabel, isBlueVerified: t.is_blue_verified, isProtected: t.protected, isVerified: t.verified, name: t.name, onLinkClick: this._handleUserNamePress, profileImageUrl: t.profile_image_url_https, screenName: t.screen_name, style: F.text, verifiedType: t.verified_type, withLink: !0 }) : null, this._renderCount(d, p), this._renderActionButton());
+                                return s.createElement(o.Z, { style: x.description }, s.createElement(o.Z, { style: [x.name, x.text] }, s.createElement(u.ZP, { align: "center", size: "headline1", weight: "bold" }, l.trim()), h ? s.createElement(f.default, { "aria-label": Z, style: x.iconLock }) : null), i ? s.createElement(s.Fragment, null, s.createElement(r.ql, { prioritizeSeoTags: !0 }, s.createElement("meta", { content: i.trim(), property: "og:description" })), s.createElement(u.ZP, { align: "center", style: x.text }, i.trim())) : null, t ? s.createElement(m.Z, { affiliateBadgeInfo: t.highlightedLabel, isBlueVerified: t.is_blue_verified, isProtected: t.protected, isVerified: t.verified, name: t.name, onLinkClick: this._handleUserNamePress, profileImageUrl: t.profile_image_url_https, screenName: t.screen_name, style: x.text, verifiedType: t.verified_type, withLink: !0 }) : null, this._renderCount(d, p), this._renderActionButton());
                             }
                         }),
                         (this._renderCount = (e, t) => {
@@ -142,7 +142,7 @@
                             const { basePath: e, list: t, user: i, viewerUserId: r, withEditButton: n } = this.props;
                             if (t && t.user) {
                                 const a = i?.blocking;
-                                return t.user === r && n ? s.createElement(p.ZP, { link: `${e}/info`, onPress: this._handleEditPress, style: F.button, type: "primaryOutlined" }, x) : t.user !== r ? s.createElement(o.Z, { style: F.button }, s.createElement(w.Z, { disabled: a, isFollowing: !!t.following, listId: t.id_str, listName: t.name, user: i })) : null;
+                                return t.user === r && n ? s.createElement(p.ZP, { link: `${e}/info`, onPress: this._handleEditPress, style: x.button, type: "primaryOutlined" }, N) : t.user !== r ? s.createElement(o.Z, { style: x.button }, s.createElement(w.Z, { disabled: a, isFollowing: !!t.following, listId: t.id_str, listName: t.name, user: i })) : null;
                             }
                         }),
                         (this._scribe = (e) => {
@@ -155,12 +155,12 @@
                 }
                 render() {
                     const { list: e, withRoundedCorners: t } = this.props;
-                    return e ? s.createElement(o.Z, { style: [F.container, t && F.hoverCard] }, this._renderImage(), this._renderListDescription()) : null;
+                    return e ? s.createElement(o.Z, { style: [x.container, t && x.hoverCard] }, this._renderImage(), this._renderListDescription()) : null;
                 }
             }
-            (Z.contextType = g.rC), (Z.defaultProps = { withEditButton: !0 });
-            const F = c.default.create((e) => ({ container: { borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderStyle: "solid" }, hoverCard: { borderRadius: e.borderRadii.xLarge, overflow: "hidden" }, button: { marginTop: e.spaces.space20, marginBottom: e.spaces.space12 }, description: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space12, alignItems: "center" }, name: { flexDirection: "row", justifyContent: "center", alignItems: "center" }, iconLock: { color: e.colors.text, marginStart: e.spaces.space2 }, text: { width: "100%", marginBottom: e.spaces.space12 }, placeholderImageContainer: { backgroundColor: e.colors.gray300, height: "100%" } })),
-                U = O(Z);
+            (F.contextType = g.rC), (F.defaultProps = { withEditButton: !0 });
+            const x = c.default.create((e) => ({ container: { borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderStyle: "solid" }, hoverCard: { borderRadius: e.borderRadii.xLarge, overflow: "hidden" }, button: { marginTop: e.spaces.space20, marginBottom: e.spaces.space12 }, description: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space12, alignItems: "center" }, name: { flexDirection: "row", justifyContent: "center", alignItems: "center" }, iconLock: { color: e.colors.text, marginStart: e.spaces.space2 }, text: { width: "100%", marginBottom: e.spaces.space12 }, placeholderImageContainer: { backgroundColor: e.colors.gray300, height: "100%" } })),
+                U = O(F);
         },
         217179: (e, t, i) => {
             i.r(t), i.d(t, { TopicHeader: () => P, default: () => k });
@@ -184,23 +184,23 @@
                 v = i(863934),
                 y = i(288955),
                 E = i(177371),
-                S = i(459679),
-                I = i(71620),
+                I = i(459679),
+                S = i(71620),
                 L = i(668214),
                 T = i(466380),
                 C = i(919022);
             const O = (e, t) => T.Z.select(e, t.topicId),
                 A = (e, t) => C.ZP.selectMany(e, t.facepile?.userIds || []),
-                x = (e, t) => {
+                N = (e, t) => {
                     const i = A(e, t);
-                    return (0, S.Z)(i, (e) => (!e || e.blocking || e.muting ? void 0 : e));
+                    return (0, I.Z)(i, (e) => (!e || e.blocking || e.muting ? void 0 : e));
                 },
-                N = (0, L.Z)()
-                    .propsFromState(() => ({ topic: O, users: x }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, I.zr)("TOPIC_HEADER"), follow: T.Z.follow, unfollow: T.Z.unfollow, undoTopicNotInterested: T.Z.undoNotInterested }))
+                Z = (0, L.Z)()
+                    .propsFromState(() => ({ topic: O, users: N }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, S.zr)("TOPIC_HEADER"), follow: T.Z.follow, unfollow: T.Z.unfollow, undoTopicNotInterested: T.Z.undoNotInterested }))
                     .withAnalytics(),
-                Z = d().b1850062,
-                F = d().d69b2d90,
+                F = d().b1850062,
+                x = d().d69b2d90,
                 U = d().gf5e9ea6;
             class P extends s.Component {
                 constructor(...e) {
@@ -240,12 +240,12 @@
                               const n = a.Z.isNarrowScreenWidth(o) ? D.mainViewSmall : D.mainView,
                                   l = this._additionalControlsEnabled ? (a.Z.isNarrowScreenWidth(o) ? D.followButtonSmall : D.followButton) : null,
                                   c = a.Z.isNarrowScreenWidth(o) ? D.notInterestButtonSmall : D.notInterestButton;
-                              return s.createElement(s.Fragment, null, i.not_interested && this._additionalControlsEnabled ? this._renderTopicContextTombstone() : e === _.el.Basic ? s.createElement(r.Z, { style: n }, !this._additionalControlsEnabled || i.following || i.not_interested ? null : s.createElement(v.Z, { size: "medium", style: c, text: Z, topicId: i.id, type: "primaryOutlined", withIconOnly: !1 }), s.createElement(g.ZP, { showRelationshipChangeConfirmation: t, size: "medium", style: l, textMode: this._followButtonTextVariant, topic: i })) : null);
+                              return s.createElement(s.Fragment, null, i.not_interested && this._additionalControlsEnabled ? this._renderTopicContextTombstone() : e === _.el.Basic ? s.createElement(r.Z, { style: n }, !this._additionalControlsEnabled || i.following || i.not_interested ? null : s.createElement(v.Z, { size: "medium", style: c, text: F, topicId: i.id, type: "primaryOutlined", withIconOnly: !1 }), s.createElement(g.ZP, { showRelationshipChangeConfirmation: t, size: "medium", style: l, textMode: this._followButtonTextVariant, topic: i })) : null);
                           })
                         : null;
                 }
                 _renderTopicContextTombstone() {
-                    return s.createElement(E.Z, { actionText: U, children: F, inline: !0, onClick: this._handleUndoTopicNotInterested });
+                    return s.createElement(E.Z, { actionText: U, children: x, inline: !0, onClick: this._handleUndoTopicNotInterested });
                 }
                 _scribeAction(e) {
                     const { analytics: t } = this.props;
@@ -254,10 +254,10 @@
             }
             (P.contextType = b.rC), (P.defaultProps = { displayType: _.el.Basic });
             const D = l.default.create((e) => ({ root: { marginHorizontal: e.componentDimensions.gutterHorizontal, marginVertical: e.componentDimensions.gutterVertical }, mainView: { flexDirection: "row", flexGrow: 1 }, mainViewSmall: { flexWrap: "wrap" }, notInterestButton: { justifyContent: "center", flexBasis: 1, flexGrow: 1, marginEnd: e.spaces.space4 }, followButton: { justifyContent: "center", flexBasis: 1, flexGrow: 1, marginStart: e.spaces.space4, minWidth: "inherit" }, followButtonSmall: { marginTop: e.spaces.space8, marginStart: 0, width: "100%" }, notInterestButtonSmall: { width: "100%" } })),
-                k = (0, f.ZP)(N(P));
+                k = (0, f.ZP)(Z(P));
         },
         953886: (e, t, i) => {
-            i.r(t), i.d(t, { UserProfileCardContainer: () => A, default: () => x });
+            i.r(t), i.d(t, { UserProfileCardContainer: () => A, default: () => N });
             var s = i(202784),
                 r = i(266704),
                 o = i(290402),
@@ -278,8 +278,8 @@
             const v = (0, g.W3)([g.pL]),
                 y = (e, t) => v(e, t.screenName),
                 E = (e, t) => g.ZP.selectByScreenName(e, t.screenName),
-                S = (e, t) => g.ZP.selectIsUserNotFound(e, t.screenName),
-                I = (e, t) => g.ZP.selectIsUserSuspended(e, t.screenName),
+                I = (e, t) => g.ZP.selectIsUserNotFound(e, t.screenName),
+                S = (e, t) => g.ZP.selectIsUserSuspended(e, t.screenName),
                 L = (e, t) => g.ZP.selectIsUserWithheld(e, t.screenName),
                 T = (e, t) => {
                     const i = E(e, t);
@@ -290,7 +290,7 @@
                     return { avatarUrls: w.vx(e, i), count: w.mM(e, i), names: w.Z8(e, i) };
                 },
                 O = (0, _.Z)()
-                    .propsFromState(() => ({ displaySensitiveMedia: b.f1, fetchStatus: y, isNotFound: S, isSuspended: I, isWithheld: L, knownFollowers: C, user: E, userHighlightedLabel: T }))
+                    .propsFromState(() => ({ displaySensitiveMedia: b.f1, fetchStatus: y, isNotFound: I, isSuspended: S, isWithheld: L, knownFollowers: C, user: E, userHighlightedLabel: T }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, h.zr)("USER_PROFILE_CARD"), fetchOneUserByScreenNameIfNeeded: g.ZP.fetchOneByScreenNameIfNeeded, fetchKnownFollowersIfNeeded: f.Hq }))
                     .withAnalytics();
             class A extends s.Component {
@@ -302,7 +302,7 @@
                             if (!h) return null;
                             const { viewerUserId: f } = this.context,
                                 b = !!f && f === h.id_str,
-                                g = (0, a.n5)({ isOwnProfile: b, isSoftBlockEnabled: this.context.featureSwitches.isTrue("xprofile_blocked_by_view_enabled"), user: h }),
+                                g = (0, a.n5)({ isOwnProfile: b, user: h }),
                                 w = this.context.featureSwitches.isTrue("creator_subscriptions_subscription_count_enabled"),
                                 v = (0, a.ZP)({ displaySensitiveMedia: e, isNotFound: t, isSuspended: i, isWithheld: o, viewerUserId: f, user: h }),
                                 y = { ...v, subscriptionsCount: v.subscriptionsCount && w, label: v.label };
@@ -349,7 +349,7 @@
                 }
             }
             A.contextType = u.rC;
-            const x = O(A);
+            const N = O(A);
         },
         320588: (e, t, i) => {
             i.d(t, { Mt: () => p, Sm: () => m, lg: () => u });
@@ -410,25 +410,25 @@
                 v = o().i1db7d13,
                 y = o().baac0ed7,
                 E = v({ limit: 512 }),
-                S = o().a22385bb,
-                I = o().be0440bf,
-                L = S({ limit: 140 }),
+                I = o().a22385bb,
+                S = o().be0440bf,
+                L = I({ limit: 140 }),
                 T = o().feeba512,
                 C = o().db123c02,
                 O = o().db6001e7({ limit: 5 }),
                 A = o().eb96d952,
-                x = o().i859a9d4,
-                N = o().b3880588,
-                Z = o().ca058b68,
-                F = o().id24379c,
+                N = o().i859a9d4,
+                Z = o().b3880588,
+                F = o().ca058b68,
+                x = o().id24379c,
                 U = o().h4d7cbcc,
                 P = (0, s.ju)("https://support.x.com/articles/20156423"),
                 D = (0, s.ju)("https://help.x.com/using-twitter/twitter-videos"),
                 k = (e) => ({ text: e }),
-                M = (e) => ({ text: e, action: { label: x, link: P } }),
-                B = (e) => ({ text: e, action: { label: x, link: D } }),
+                M = (e) => ({ text: e, action: { label: N, link: P } }),
+                B = (e) => ({ text: e, action: { label: N, link: D } }),
                 V = { [n.Y7.GIF_IS_TOO_LARGE]: k(w), [n.Y7.CANNOT_BE_PROCESSED]: k(m), [n.Y7.FILE_IS_NOT_AN_IMAGE]: k(h) },
-                z = { [l.d.ZERO_FILE_LENGTH]: k(p), [l.d.TIMEOUT]: k(N) },
+                z = { [l.d.ZERO_FILE_LENGTH]: k(p), [l.d.TIMEOUT]: k(Z) },
                 R = { ...z, [l.d.FILE_TOO_LARGE]: k(O), [l.d.UNSUPPORTED_MEDIA]: M(C), [l.d.INVALID_MEDIA]: M(T) },
                 G = { ...z, [l.d.FILE_TOO_LARGE]: k(w), [l.d.UNSUPPORTED_MEDIA]: M(f), [l.d.INVALID_MEDIA]: M(_) },
                 H = { ...z, [l.d.FILE_TOO_LARGE]: k(E), [l.d.UNSUPPORTED_MEDIA]: B(g), [l.d.INVALID_MEDIA]: B(b) },
@@ -443,7 +443,7 @@
                             case $.MAXSIZE:
                                 return t === d.BW.GIF_IS_TOO_LARGE ? k(w) : t === d.BW.VIDEO_IS_TOO_LARGE && void 0 !== i ? k(i >= W ? y({ limit: Math.round(i / W) }) : v({ limit: Math.round(i / j) })) : k(E);
                             case $.MAXDURATION:
-                                return void 0 !== i ? (i > 140 ? k(I({ limit: Math.round(i / 60) })) : { text: S({ limit: Math.round(i) }), action: { label: c.Z.LongerVideoUpload.defaultContent.actionLabel, link: { pathname: `/i/premium_sign_up?referring_page=${c.Z.LongerVideoUpload.referringPage}`, external: !0 } } }) : k(L);
+                                return void 0 !== i ? (i > 140 ? k(S({ limit: Math.round(i / 60) })) : { text: I({ limit: Math.round(i) }), action: { label: c.Z.LongerVideoUpload.defaultContent.actionLabel, link: { pathname: `/i/premium_sign_up?referring_page=${c.Z.LongerVideoUpload.referringPage}`, external: !0 } } }) : k(L);
                             case $.RESIZE:
                                 return V[t];
                             case $.UPLOAD:
@@ -458,19 +458,19 @@
                 Y = (e) => {
                     if (K(e)) return e;
                 };
-            function q(e, t = F) {
+            function q(e, t = x) {
                 const i = Y(e);
                 if (i) {
                     const s = e.message ? `${t} ${e.message}` : t;
                     return X(i) || k(s);
                 }
             }
-            function Q(e, t = Z) {
+            function Q(e, t = F) {
                 return e.type === a.gK.type && e.code === a.gK.NO_DIMENSIONS ? k(A) : e.type === u.hb.type && e.code === u.hb.NO_DIMENSIONS ? B(b) : k(t);
             }
         },
         221562: (e, t, i) => {
-            i.d(t, { BX: () => f, Uk: () => u, Xj: () => m, ZP: () => S });
+            i.d(t, { BX: () => f, Uk: () => u, Xj: () => m, ZP: () => I });
             var s = i(468811),
                 r = i.n(s),
                 o = i(595088),
@@ -499,7 +499,7 @@
                 v = (e, t) => ((0, a.Z)(e) && (0, a.Z)(t) ? Math.round(t - e) : void 0),
                 y = () => (window.performance ? window.performance.now() : Date.now()),
                 E = (e, t) => (e === l.xz.DMGif || e === l.xz.TweetGif ? w.All : (e !== l.xz.DMVideo && e !== l.xz.TweetVideo && e !== l.xz.AmplifyVideo) || void 0 === t ? "" : t < 10 ? w.Short : t < 20 ? w.Medium : t < 45 ? w.Long : t < 90 ? w.XLong : t < 140 ? w.L90to140s : t < 300 ? w.L140to300s : t < 600 ? w.L300to600s : t < 1200 ? w.L600to1200s : t < 1800 ? w.L1200to1800s : t < 2700 ? w.L1800to2700s : t < 3600 ? w.L2700to3600s : t < 4500 ? w.L3600to4500s : t < 5400 ? w.L4500to5400s : t < 6300 ? w.L5400to6300s : t < 7200 ? w.L6300to7200s : t < 10800 ? w.L7200to10800s : t < 14400 ? w.L10800to14400s : w.LGT14400s);
-            class S {
+            class I {
                 constructor(e, t = !1) {
                     (this._pausedDuration = {}),
                         (this._pauseTimes = {}),
@@ -571,7 +571,7 @@
             }
         },
         716233: (e, t, i) => {
-            i.d(t, { BW: () => f, SB: () => E, TO: () => I, Tz: () => g, U$: () => y, ff: () => b, vC: () => v, vn: () => S, xz: () => w, y$: () => h });
+            i.d(t, { BW: () => f, SB: () => E, TO: () => S, Tz: () => g, U$: () => y, ff: () => b, vC: () => v, vn: () => I, xz: () => w, y$: () => h });
             var s = i(182056),
                 r = i(323265),
                 o = i(540387);
@@ -602,10 +602,10 @@
                     })(e);
                 return t || i ? 1 : 0;
             }
-            function S(e, t, i, f, b) {
+            function I(e, t, i, f, b) {
                 const g = f?.location,
                     w = E({ featureSwitches: e, userClaims: t });
-                let y, S;
+                let y, I;
                 if (i.isSubtitles) y = 0;
                 else if (i.isGif)
                     switch (g) {
@@ -643,14 +643,14 @@
                             );
                         })(e, g, b);
                     if (1 === w) {
-                        if ("dm" === g) S = e.getNumberValue("media_async_upload_longer_dm_video_max_video_duration", _);
-                        else S = e.getNumberValue("media_async_upload_longer_video_max_video_duration", h.Duration[w]) * l;
+                        if ("dm" === g) I = e.getNumberValue("media_async_upload_longer_dm_video_max_video_duration", _);
+                        else I = e.getNumberValue("media_async_upload_longer_video_max_video_duration", h.Duration[w]) * l;
                         y = e.getNumberValue("media_async_upload_longer_video_max_video_size", h.Size[w]) * a;
-                    } else (S = e.getNumberValue("media_async_upload_max_video_duration", h.Duration[w]) * l), (y = e.getNumberValue("media_async_upload_max_video_size", h.Size[w]) * a);
+                    } else (I = e.getNumberValue("media_async_upload_max_video_duration", h.Duration[w]) * l), (y = e.getNumberValue("media_async_upload_max_video_size", h.Size[w]) * a);
                 }
-                return Promise.resolve({ maxFileSize: y, maxDuration: S });
+                return Promise.resolve({ maxFileSize: y, maxDuration: I });
             }
-            function I(e) {
+            function S(e) {
                 return !(r.ZP.isIOS() && e.size > 3e8);
             }
         },
@@ -670,10 +670,9 @@
                     return { avatar: l || (!u && !t && !i && !s), badges: l || !s, description: l || (!d && !c && !u && !i && !s), followButton: !(l || c || u || t || i || s), followersYouKnow: !l && !c && !d && !u && !t && !i && !s && (r.following || !r.protected), followIndicator: !s, fullName: m, label: m, stats: l || (!c && !u && !i && !s), subscriptionsCount: l || !r.has_hidden_subscriptions_on_profile };
                 },
                 o = ({ displaySensitiveMedia: e, isOwnProfile: t, user: i, userProfileInterstitialType: r }) => (r === s.Z.SensitiveMedia || r === s.Z.OffensiveProfileContent) && !(t || i.following || e),
-                n = ({ isOwnProfile: e, isSoftBlockEnabled: t = !1, user: i }) => {
-                    const s = i.blocked_by,
-                        r = i.protected && !i.following;
-                    return t ? e || !r : e || (!r && !s);
+                n = ({ isOwnProfile: e, user: t }) => {
+                    const i = t.protected && !t.following;
+                    return e || !i;
                 };
         },
         946208: (e, t, i) => {
@@ -759,4 +758,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.HoverCard-9f4db315.15084d3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.HoverCard-9f4db315.05c7d6da.js.map

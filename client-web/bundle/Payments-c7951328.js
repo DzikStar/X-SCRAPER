@@ -22,6 +22,34 @@
                 y = (e) => r.createElement(a.H, { errorConfig: m }, r.createElement(l, e)),
                 u = r.memo(y);
         },
+        896240: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => h });
+            var r = n(202784),
+                o = n(437429),
+                a = n.n(o),
+                i = n(108362),
+                c = n(252021),
+                s = n(293115),
+                l = n(805322),
+                m = n(743080),
+                y = n(727384);
+            const u = { page: "money", section: "unlock" },
+                p = "Money",
+                d = (e) => {
+                    const { history: t } = e,
+                        n = (0, m.jh)(),
+                        o = t.location?.state,
+                        { challengeInitiator: d, closePath: h } = o ?? {},
+                        f = e.challengeInitiator ?? d,
+                        E = r.useCallback(() => r.createElement(i.Z, { style: n.root, withWideContainer: !0 }, r.createElement(l.Z, e)), [n.root, e]),
+                        b = a()(),
+                        g = r.useCallback(() => {
+                            (0, y.qc)({ environment: b, closePath: h, challengeInitiator: f, history: t });
+                        }, [f, h, b, t]);
+                    return r.createElement(s.nO, { namespace: u }, r.createElement(c.Z, { documentTitle: p, history: t, isFullWidth: !0, onBackClick: g, primaryContent: E(), sidebarContent: null, title: p }));
+                },
+                h = r.memo(d);
+        },
         923509: (e, t, n) => {
             n.r(t), n.d(t, { default: () => p });
             n(136728);
@@ -110,8 +138,8 @@
                         d = u?.closePath ?? (m ? i.gp : "/"),
                         h = u?.redirectState,
                         f = u?.requestedField,
-                        b = u?.challengeId,
-                        E = u?.challengeInitiator,
+                        E = u?.challengeId,
+                        b = u?.challengeInitiator,
                         g = u?.skipTerms,
                         { linkType: k } = i.AU[y];
                     r.useEffect(() => {
@@ -121,7 +149,7 @@
                         const e = [];
                         return f && e.push({ key: "requestedField", value: f }), g && e.push({ key: "skipTerms", value: g }), e.length > 0 ? e : void 0;
                     }, [f, g]);
-                    return r.createElement(l.Z, { additionalParams: P, challengeId: b, challengeInitiator: E, closePath: d, linkType: k, redirectPath: p, redirectState: h });
+                    return r.createElement(l.Z, { additionalParams: P, challengeId: E, challengeInitiator: b, closePath: d, linkType: k, redirectPath: p, redirectState: h });
                 },
                 y = { context: "VerifyIdentity" };
             function u(e) {
@@ -130,7 +158,7 @@
             const p = r.memo(u);
         },
         891053: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => x });
+            n.r(t), n.d(t, { default: () => I });
             var r = n(202784),
                 o = n(107267),
                 a = n(736063),
@@ -145,11 +173,11 @@
                 d = n(43429),
                 h = n(743080),
                 f = n(388768),
-                b = (n(585488), n(351743)),
-                E = n.n(b);
+                E = (n(585488), n(351743)),
+                b = n.n(E);
             const g = f.Z,
                 k = () => {
-                    const [e, t] = E()(g);
+                    const [e, t] = b()(g);
                     return [
                         r.useCallback(
                             ({ paymentMethodId: t }) =>
@@ -175,29 +203,29 @@
                         n = (0, o.useHistory)(),
                         a = (0, h.jh)(),
                         f = n.location?.state?.redirectPath,
-                        b = n.location?.state?.paymentMethodId,
-                        [E, g] = k(),
+                        E = n.location?.state?.paymentMethodId,
+                        [b, g] = k(),
                         P = r.useCallback(() => {
                             e.scribe({ page: "money", section: "verify-payment-method", element: "agreeTerms", action: "click" }),
-                                b &&
-                                    E({ paymentMethodId: b })
+                                E &&
+                                    b({ paymentMethodId: E })
                                         .then(({ provider: t, token: r }) => {
                                             e.scribe({ page: "money", section: "verify-payment-method", element: "VerifyPaymentMethod", action: "success" });
-                                            const o = { token: r, provider: t, linkType: p.P_.verifyPaymentMethod, redirectPath: f, paymentMethodId: b };
+                                            const o = { token: r, provider: t, linkType: p.P_.verifyPaymentMethod, redirectPath: f, paymentMethodId: E };
                                             n.push(p.MW, o);
                                         })
                                         .catch(() => {
                                             e.scribe({ page: "money", section: "verify-payment-method", element: "VerifyPaymentMethod", action: "error" }), t({ text: "Something went wrong. Please try again later." });
                                         });
-                        }, [t, e, E, n, b, f]),
-                        Z = r.useCallback(() => {
+                        }, [t, e, b, n, E, f]),
+                        C = r.useCallback(() => {
                             n.push(f ?? p.gp);
                         }, [n, f]),
-                        C = r.createElement(c.Z, { style: a.footer }, r.createElement(s.ZP, { color: "gray700", size: "subtext2" }, 'By clicking "Continue", you agree to the', " ", r.createElement(s.ZP, { color: "text", link: d.uc, size: "subtext2" }, "Terms & Conditions")), r.createElement(l.ZP, { disabled: g, onPress: P, size: "large", type: "primaryFilled" }, g ? r.createElement(m.Z, null) : "Continue"));
-                    return r.createElement(y.Z, { backButtonType: "close", bottomBar: C, history: n, onBackClick: Z, withoutBottomBarMobile: !0 }, r.createElement(c.Z, { style: a.container }, r.createElement(s.ZP, { size: "title2", style: h.ZP.title, weight: "heavy" }, "Verify your bank account"), r.createElement(s.ZP, null, "You need to login to verify your bank account before you can proceed.")));
+                        Z = r.createElement(c.Z, { style: a.footer }, r.createElement(s.ZP, { color: "gray700", size: "subtext2" }, 'By clicking "Continue", you agree to the', " ", r.createElement(s.ZP, { color: "text", link: d.uc, size: "subtext2" }, "Terms & Conditions")), r.createElement(l.ZP, { disabled: g, onPress: P, size: "large", type: "primaryFilled" }, g ? r.createElement(m.Z, null) : "Continue"));
+                    return r.createElement(y.Z, { backButtonType: "close", bottomBar: Z, history: n, onBackClick: C, withoutBottomBarMobile: !0 }, r.createElement(c.Z, { style: a.container }, r.createElement(s.ZP, { size: "title2", style: h.ZP.title, weight: "heavy" }, "Verify your bank account"), r.createElement(s.ZP, null, "You need to login to verify your bank account before you can proceed.")));
                 },
-                Z = r.memo(P),
-                C = (e) => {
+                C = r.memo(P),
+                Z = (e) => {
                     const t = (0, o.useHistory)(),
                         n = (0, i.z)(),
                         a = t.location?.state?.step;
@@ -205,17 +233,17 @@
                         r.useEffect(() => {
                             n && n.scribe({ page: "money", section: "verify-payment-method", component: a, action: "impression" });
                         }, [n, a]),
-                        r.createElement(Z, null)
+                        r.createElement(C, null)
                     );
                 },
                 w = { context: "VerifyPaymentMethod" };
             function v(e) {
-                return r.createElement(a.H, { errorConfig: w }, r.createElement(C, e));
+                return r.createElement(a.H, { errorConfig: w }, r.createElement(Z, e));
             }
-            const x = r.memo(v);
+            const I = r.memo(v);
         },
         152837: (e, t, n) => {
-            n.r(t), n.d(t, { VerifyYourIdentityScreen: () => Z, default: () => I, styles: () => x });
+            n.r(t), n.d(t, { VerifyYourIdentityScreen: () => C, default: () => x, styles: () => I });
             var r = n(202784),
                 o = n(325686),
                 a = n(530525),
@@ -230,29 +258,29 @@
                 d = n(980407),
                 h = n(652904),
                 f = n(736063),
-                b = n(445664),
-                E = n(293115),
+                E = n(445664),
+                b = n(293115),
                 g = n(743080),
                 k = n(727384);
             const P = { page: "money", section: "setup-direct-deposit" },
-                Z = (e) => {
+                C = (e) => {
                     const t = (0, g.jh)();
-                    return r.createElement(h.Z, null, r.createElement(o.Z, { style: t.container }, r.createElement(o.Z, { style: x.headerContainer }, r.createElement(o.Z, { style: x.iconContainer }, r.createElement(a.Z, { "aria-label": "Verify your identity icon", aspectMode: i.Z.SQUARE, image: p })), r.createElement(o.Z, { style: x.titleContainer }, r.createElement(c.ZP, { color: "text", size: "title1", weight: "bold" }, "Verify your identity"), r.createElement(c.ZP, { color: "gray700", size: "body", weight: "normal" }, "Unlock the full benefits of X Money by confirming who you are."))), r.createElement(o.Z, { style: x.benefitsContainer }, r.createElement(o.Z, { style: x.benefitRow }, r.createElement(m.default, { style: x.benefitIcon }), r.createElement(o.Z, { style: x.benefitContent }, r.createElement(c.ZP, { size: "body", style: x.shrink, weight: "medium" }, "Military grade encryption"), r.createElement(c.ZP, { color: "gray700", size: "body", style: x.shrink, weight: "normal" }, "Your personal information is safe and secure with X"))), r.createElement(o.Z, { style: x.benefitRow }, r.createElement(y.default, { style: x.benefitIcon }), r.createElement(o.Z, { style: x.benefitContent }, r.createElement(c.ZP, { size: "body", style: x.shrink, weight: "medium" }, "Unlock your account"), r.createElement(c.ZP, { color: "gray700", size: "body", style: x.shrink, weight: "normal" }, "Deposit your paycheck and pay bills"))), r.createElement(o.Z, { style: x.benefitRow }, r.createElement(u.default, { style: x.benefitIcon }), r.createElement(o.Z, { style: x.benefitContent }, r.createElement(c.ZP, { size: "body", style: x.shrink, weight: "medium" }, "Unlock your account"), r.createElement(c.ZP, { color: "gray700", size: "body", style: x.shrink, weight: "normal" }, "Unlock higher daily and weekly limits"))))));
+                    return r.createElement(h.Z, null, r.createElement(o.Z, { style: t.container }, r.createElement(o.Z, { style: I.headerContainer }, r.createElement(o.Z, { style: I.iconContainer }, r.createElement(a.Z, { "aria-label": "Verify your identity icon", aspectMode: i.Z.SQUARE, image: p })), r.createElement(o.Z, { style: I.titleContainer }, r.createElement(c.ZP, { color: "text", size: "title1", weight: "bold" }, "Verify your identity"), r.createElement(c.ZP, { color: "gray700", size: "body", weight: "normal" }, "Unlock the full benefits of X Money by confirming who you are."))), r.createElement(o.Z, { style: I.benefitsContainer }, r.createElement(o.Z, { style: I.benefitRow }, r.createElement(m.default, { style: I.benefitIcon }), r.createElement(o.Z, { style: I.benefitContent }, r.createElement(c.ZP, { size: "body", style: I.shrink, weight: "medium" }, "Military grade encryption"), r.createElement(c.ZP, { color: "gray700", size: "body", style: I.shrink, weight: "normal" }, "Your personal information is safe and secure with X"))), r.createElement(o.Z, { style: I.benefitRow }, r.createElement(y.default, { style: I.benefitIcon }), r.createElement(o.Z, { style: I.benefitContent }, r.createElement(c.ZP, { size: "body", style: I.shrink, weight: "medium" }, "Unlock your account"), r.createElement(c.ZP, { color: "gray700", size: "body", style: I.shrink, weight: "normal" }, "Deposit your paycheck and pay bills"))), r.createElement(o.Z, { style: I.benefitRow }, r.createElement(u.default, { style: I.benefitIcon }), r.createElement(o.Z, { style: I.benefitContent }, r.createElement(c.ZP, { size: "body", style: I.shrink, weight: "medium" }, "Unlock your account"), r.createElement(c.ZP, { color: "gray700", size: "body", style: I.shrink, weight: "normal" }, "Unlock higher daily and weekly limits"))))));
                 },
-                C = { context: "VERIFY_YOUR_IDENTITY" },
+                Z = { context: "VERIFY_YOUR_IDENTITY" },
                 w = () => {
                     const e = (0, g.jh)(),
-                        { roles: t } = (0, b.Z)({ fetchKey: "Payments" });
+                        { roles: t } = (0, E.Z)({ fetchKey: "Payments" });
                     return r.createElement(o.Z, { style: e.footer }, r.createElement(s.ZP, { link: (0, k.FW)({ roles: t }), type: "primaryFilled" }, "Let's do it"), r.createElement(c.ZP, { align: "center", color: "gray700", size: "subtext2" }, "X Money is a financial technology company, and not a bank. Bank accounts are held at Cross River Bank, Member FDIC."));
                 },
                 v = (e) => {
                     const { history: t } = e,
                         n = r.useCallback(() => t.goBack(), [t]);
-                    return r.createElement(f.H, { errorConfig: C }, r.createElement(d.Z, { backButtonType: "close", bottomBar: r.createElement(w, null), history: t, onBackClick: n, withoutBottomBarMobile: !0 }, r.createElement(E.nO, { namespace: P }, r.createElement(f.H, { errorConfig: C }, r.createElement(Z, e)))));
+                    return r.createElement(f.H, { errorConfig: Z }, r.createElement(d.Z, { backButtonType: "close", bottomBar: r.createElement(w, null), history: t, onBackClick: n, withoutBottomBarMobile: !0 }, r.createElement(b.nO, { namespace: P }, r.createElement(f.H, { errorConfig: Z }, r.createElement(C, e)))));
                 },
-                x = l.default.create((e) => ({ headerContainer: { gap: e.spaces.space24, marginTop: e.spaces.space24 }, iconContainer: { height: e.spaces.space64, width: e.spaces.space64 }, titleContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, benefitsContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space24, marginTop: e.spaces.space40, marginBottom: e.spaces.space24 }, benefitRow: { display: "flex", flexDirection: "row", gap: e.spaces.space16, alignItems: "center" }, benefitIcon: { height: e.spaces.space32, width: e.spaces.space32, fill: e.colors.white }, benefitContent: { display: "flex", flex: 1, flexWrap: "wrap" }, shrink: { flexShrink: 1 } })),
-                I = r.memo(v);
+                I = l.default.create((e) => ({ headerContainer: { gap: e.spaces.space24, marginTop: e.spaces.space24 }, iconContainer: { height: e.spaces.space64, width: e.spaces.space64 }, titleContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, benefitsContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space24, marginTop: e.spaces.space40, marginBottom: e.spaces.space24 }, benefitRow: { display: "flex", flexDirection: "row", gap: e.spaces.space16, alignItems: "center" }, benefitIcon: { height: e.spaces.space32, width: e.spaces.space32, fill: e.colors.white }, benefitContent: { display: "flex", flex: 1, flexWrap: "wrap" }, shrink: { flexShrink: 1 } })),
+                x = r.memo(v);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.ca95e7ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.096d19fa.js.map

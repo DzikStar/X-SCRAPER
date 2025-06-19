@@ -1280,31 +1280,31 @@
                 t("c3f04d9c", "Đang nghĩ"),
                 t("cbdddb0a", "Hoàn tất"),
                 t("ie2bbeed", function (n) {
-                    return 'Searching for "' + n.query + '"';
+                    return 'Đang tìm kiếm "' + n.query + '"';
                 }),
                 t("b0d1e205", function (n) {
                     return 'Đang tìm kiếm **"' + n.query + '"**';
                 }),
                 t("bf970edd", function (n) {
-                    return 'Searching 𝕏 for "' + n.query + '"';
+                    return 'Đang tìm kiếm "' + n.query + '" trên 𝕏';
                 }),
                 t("g008d475", function (n) {
-                    return "Browsing " + n.url;
+                    return "Đang duyệt " + n.url;
                 }),
                 t("c91e3971", function (n) {
-                    return "Browsing " + n.url + ' for "' + n.query + '"';
+                    return "Đang duyệt " + n.url + ' để tìm "' + n.query + '"';
                 }),
                 t("acb9b845", function (n) {
                     return "Đang duyệt " + n.url + ' để tìm **"' + n.query + '"**';
                 }),
                 t("j9006405", function (n) {
-                    return "Searching 𝕏 posts by @" + n.username;
+                    return "Đang tìm kiếm bài đăng trên X của @" + n.username;
                 }),
                 t("a2dd07e5", function (n) {
-                    return "Searching 𝕏 posts by @" + n.username + ' for "' + n.query + '"';
+                    return 'Đang tìm "' + n.query + '" trong các bài đăng trên 𝕏 của @' + n.username + " for";
                 }),
                 t("e99fb7a3", function (n) {
-                    return "Searching 𝕏 posts by @" + n.username + ' for **"' + n.query + '"**';
+                    return 'Tìm kiếm **"' + n.query + '"** trong các bài đăng trên X của @' + n.username;
                 }),
                 t("ead81122", "Đã xảy ra lỗi, vui lòng làm mới để kết nối lại hoặc thử lại."),
                 t("f808a13a", "Bạn đã vượt quá giới hạn số lượng. Vui lòng chờ giây lát rồi thử lại."),
@@ -1316,8 +1316,8 @@
                 t("j77292b7", function (n) {
                     return "Vui lòng chọn tối đa " + n.count + " tệp";
                 }),
-                t("d6b533dc", "Rate this translation:"),
-                t("j2f9ab6e", "Thank you for your feedback!"),
+                t("d6b533dc", "Đánh giá bản dịch này:"),
+                t("j2f9ab6e", "Cảm ơn bạn đã phản hồi!"),
                 t("d56779a2", "dễ hiểu"),
                 t("b6fe8a56", "khó hiểu hoặc không rõ ràng"),
                 t("i73a7d48", "Được dịch bởi Google"),
@@ -1348,7 +1348,7 @@
                     return "Được dịch từ " + n.originLanguage + " bởi";
                 }),
                 t("b7cb4fab", "Được dịch bởi"),
-                t("e0bffbf8", "About automatic translation"),
+                t("e0bffbf8", "Giới thiệu về bản dịch tự động"),
                 t("e839db3a", "Hủy bỏ"),
                 t("a15585b4", "Cài đặt ngôn ngữ"),
                 t("d4c339b9", function (n) {
@@ -1497,9 +1497,6 @@
                     return "Chặn @" + n.screenName;
                 }),
                 t("a6450e84", "Chặn"),
-                t("g353ad73", function (n) {
-                    return "Họ sẽ không thể theo dõi bạn, xem bài đăng của bạn và bạn sẽ không thấy bài đăng hoặc thông báo từ @" + n.screenName + ".";
-                }),
                 t("ad00a739", function (n) {
                     return "Họ sẽ có thể xem bài đăng công khai của bạn, nhưng sẽ không còn có thể tương tác với bài đăng nữa. @" + n.screenName + " cũng sẽ không thể theo dõi hay nhắn tin cho bạn, và bạn sẽ không nhận được thông báo về họ.";
                 }),
@@ -1511,7 +1508,6 @@
                     return "Bỏ chặn @" + n.screenName;
                 }),
                 t("e133be4e", "Bỏ chặn"),
-                t("he43bca4", "Họ sẽ không thể theo dõi bạn và xem bài đăng của bạn."),
                 t("f5f01af6", "Họ sẽ có thể theo dõi bạn và tương tác với bài đăng công khai của bạn."),
                 t("b6878b0a", "Đã xảy ra lỗi. Thử chặn lại người dùng đó sau một lát."),
                 t("e40252de", "Không hiển thị những bài đăng này trong phần Dành cho bạn"),
@@ -1920,10 +1916,10 @@
                 t("jcd5ee8a", "Chỉnh sửa khối"),
                 t("a8f09fb8", "Xóa khối"),
                 t("i89195ea", "Dải phân cách"),
-                t("da8ac57c", "Chỉnh sửa chú thích");
-            t("a8fdd09c", "Xuất bản Bài viết"),
-                t("d8047cc8", "Đăng"),
-                t("ff7ddca2", "Sau khi xuất bản, Bài viết của bạn sẽ xuất hiện dưới dạng bài đăng. Ngoài ra, bạn có thể tìm thấy Bài viết này trong tab Bài viết trên hồ sơ của mình."),
+                t("da8ac57c", "Chỉnh sửa chú thích"),
+                t("a8fdd09c", "Xuất bản Bài viết"),
+                t("d8047cc8", "Đăng");
+            t("ff7ddca2", "Sau khi xuất bản, Bài viết của bạn sẽ xuất hiện dưới dạng bài đăng. Ngoài ra, bạn có thể tìm thấy Bài viết này trong tab Bài viết trên hồ sơ của mình."),
                 t("ef34d7be", "Sau khi đã xuất bản Bài viết, bạn sẽ không thể chỉnh sửa phần kiểm soát đối tượng người xem và câu trả lời."),
                 t("e52d4998", "Chọn đối tượng người xem"),
                 t("d7985b24", "Chọn đối tượng có thể trả lời Bài viết này"),
@@ -2976,10 +2972,10 @@
                 t("bc6efc72", "Chính sách Riêng tư"),
                 t("h3161192", "Chính sách cookie"),
                 t("a7de64de", "Thông tin quảng cáo"),
-                t("jb0a4c36", "Blog");
-            t("ce6d095a", "Nghề nghiệp"),
-                t("e0adec82", "Tài nguyên thương hiệu"),
-                t("df1b7550", "Tiếp thị"),
+                t("jb0a4c36", "Blog"),
+                t("ce6d095a", "Nghề nghiệp"),
+                t("e0adec82", "Tài nguyên thương hiệu");
+            t("df1b7550", "Tiếp thị"),
                 t("he258678", "X dành cho doanh nghiệp"),
                 t("c6f58084", "Nhà phát triển"),
                 t("d83f18d2", "Danh mục"),
@@ -3888,10 +3884,10 @@
                 t("c371fb9a", "Kết thúc"),
                 t("c0ce822e", "Cài đặt micrô"),
                 t("a2bf8b8a", "Chuyển sang nghe"),
-                t("caa8d928", "Bật/tắt khử tiếng ồn");
-            t("b5d88f0c", "Chỉ dành cho nhân viên"),
-                t("c855ab8e", "Chỉ dành cho Người đăng ký"),
-                t("ddeb0a3c", "Đây là cộng đồng. Thích những người này? Hãy ghé xem."),
+                t("caa8d928", "Bật/tắt khử tiếng ồn"),
+                t("b5d88f0c", "Chỉ dành cho nhân viên"),
+                t("c855ab8e", "Chỉ dành cho Người đăng ký");
+            t("ddeb0a3c", "Đây là cộng đồng. Thích những người này? Hãy ghé xem."),
                 t("e111f531", function (n) {
                     return n.count + " đã nghe";
                 }),
@@ -4220,10 +4216,10 @@
                 t("j7b5c844", "Bạn chịu trách nhiệm đối với cuộc trò chuyện bạn chia sẻ công khai. Hãy tránh đề cập đến thông tin nhạy cảm hoặc bí mật của bản thân hoặc người khác trong cuộc trò chuyện của bạn với Grok. (xem Trung tâm trợ giúp của chúng tôi)"),
                 t("c9f7c196", "Trung tâm trợ giúp"),
                 t("fb3b9776", "Thông tin đầu ra của Grok đã được người dùng này tùy chỉnh."),
-                t("b0a889d4", "As Image"),
-                t("a111fb48", "As Spreadsheet"),
-                t("bccc65f0", "Grok can make mistakes. Always check original sources."),
-                t("bd202fe6", "Generating card"),
+                t("b0a889d4", "Dưới dạng hình ảnh"),
+                t("a111fb48", "Dưới dạng bảng tính"),
+                t("bccc65f0", "Grok có thể mắc lỗi. Hãy luôn kiểm tra nguồn ban đầu."),
+                t("bd202fe6", "Đang tạo thẻ"),
                 t("bfd161bc", "So sánh"),
                 t("j5dcf1b2", "Đã cập nhật"),
                 t("a50aaa10", "Trước giờ mở cửa"),
@@ -4255,8 +4251,8 @@
                 t("dd679fb1", function (n) {
                     return "Thấp nhất mọi thời đại" + n.ttc_stock_details;
                 }),
-                t("ha9c4cf8", "View source"),
-                t("ecad5d78", "Save image"),
+                t("ha9c4cf8", "Xem nguồn"),
+                t("ecad5d78", "Lưu hình ảnh"),
                 t("d2d1d398", "Đã sao chép!"),
                 t("a22063d2", "Chia sẻ vị trí của bạn để tăng độ chính xác."),
                 t("db3248a8", "Đang tải vị trí"),
@@ -4291,12 +4287,12 @@
                 t("d66bf142", "Thứ 5"),
                 t("dc17968a", "Thứ 6"),
                 t("j310a2d6", "Thứ 7"),
-                t("afa2a58e", "See all posts"),
-                t("fc83e7e2", "See all users"),
-                t("df601d92", "Relevant Users"),
-                t("b001fa12", "Source query"),
+                t("afa2a58e", "Xem tất cả bài đăng"),
+                t("fc83e7e2", "Xem tất cả người dùng"),
+                t("df601d92", "Người dùng có liên quan"),
+                t("b001fa12", "Truy vấn nguồn"),
                 t("db6c20cf", function (n) {
-                    return "Show all (" + n.count + ")";
+                    return "Hiển thị tất cả (" + n.count + ")";
                 }),
                 t("d7cb5408", "Trang web có liên quan"),
                 t("ca93f2ee", "Tin nhắn này đã bị xóa."),
@@ -4367,7 +4363,7 @@
                 t("db832e38", "Vui lòng bật thông báo trong phần cài đặt trình duyệt"),
                 t("a910cac6", "Đã xảy ra sự cố khi bật thông báo"),
                 t("be30b6ee", "Kết nối không ổn định"),
-                t("ge15b488", "Show thoughts"),
+                t("ge15b488", "Hiện suy nghĩ"),
                 t("aa7c96bb", function (n) {
                     return "Xem " + n.numResults + " khác";
                 }),
@@ -4492,8 +4488,6 @@
                 }),
                 t("c9a1cb5e", "Tài khoản này không tồn tại"),
                 t("e7b201de", "Thử tìm kiếm một tài khoản khác."),
-                t("ica87fde", "Bạn đã bị chặn"),
-                t("c7ec6faf", "Tìm hiểu thêm"),
                 t("e79ed125", function (n) {
                     return "@" + n.screenName + " bị chặn";
                 }),
@@ -4930,12 +4924,12 @@
                 t("fbc79a40", "Tổng quan về Spaces"),
                 t("d077112a", "Số liệu phân tích Phòng"),
                 t("cf3709da", "Trạng thái"),
-                t("e797dc32", "Thời gian phát trực tuyến: ");
-            t("b649d8cc", "Chỉ người đăng ký"),
+                t("e797dc32", "Thời gian phát trực tuyến: "),
+                t("b649d8cc", "Chỉ người đăng ký"),
                 t("j9282130", "Hình thu nhỏ của nguồn phát"),
                 t("g629b8b0", "Hết giờ"),
-                t("eb87323c", "Phần này hiển thị dữ liệu phân tích trong khoảng thời gian đã chọn kể từ khi phát trực tuyến."),
-                t("i6a75722", "Khoảng thời gian"),
+                t("eb87323c", "Phần này hiển thị dữ liệu phân tích trong khoảng thời gian đã chọn kể từ khi phát trực tuyến.");
+            t("i6a75722", "Khoảng thời gian"),
                 t("c602f5b8", "Tổng"),
                 t("b35e68ae", "Tổng số người tham gia"),
                 t("h78ee79a", "Tổng số lượt xem lại"),
@@ -5882,12 +5876,12 @@
                 t("hf68e810", "Ghi chép cho cộng đồng là chương trình nhằm mục đích tạo ra một thế giới có thông tin rõ ràng hơn. Chương trình cho phép mọi người trên X đóng góp thêm các ghi chép hữu ích vào các bài đăng có thể gây hiểu lầm."),
                 t("jdb52860", "Người cộng tác viết và đánh giá ghi chú"),
                 t("c104025c", "Người cộng tác là người sử dụng X, giống như bạn, đã chọn đăng ký tham gia chương trình thử nghiệm viết và đánh giá ghi chép. Càng nhiều người tham gia, chương trình càng được hoàn thiện hơn."),
-                t("j7872b8c", "Chỉ những ghi chép mà mọi người thấy hữu ích mới xuất hiện trên bài đăng");
-            t("fb59415e", "Để được hiển thị công khai dưới dạng ngữ cảnh trên bài đăng, ghi chép cần được đánh giá là hữu ích bởi đủ số người với nhiều quan điểm khác nhau. Cách tiếp cận này giúp tránh trường hợp thiên vị và thao túng, đồng thời giúp tìm ra các ghi chép hữu ích cho nhiều người."),
+                t("j7872b8c", "Chỉ những ghi chép mà mọi người thấy hữu ích mới xuất hiện trên bài đăng"),
+                t("fb59415e", "Để được hiển thị công khai dưới dạng ngữ cảnh trên bài đăng, ghi chép cần được đánh giá là hữu ích bởi đủ số người với nhiều quan điểm khác nhau. Cách tiếp cận này giúp tránh trường hợp thiên vị và thao túng, đồng thời giúp tìm ra các ghi chép hữu ích cho nhiều người."),
                 t("f9a44022", "Công ty X không chọn nội dung hiển thị: mọi người sẽ làm việc đó"),
                 t("gdf4fbb2", "Công ty X không viết, đánh giá hoặc kiểm duyệt các ghi chép (trừ phi chúng vi phạm các Quy tắc của X). Chúng tôi tin rằng việc cho mọi người đưa ra tiếng nói của mình để cùng nhau đưa ra những lựa chọn này là cách công bằng và hiệu quả trong việc thêm thông tin để giúp mọi người được cập nhật thông tin tốt hơn."),
-                t("cc720e6a", "Ghi chép cho cộng đồng được xây dựng dựa trên tính minh bạch của dữ liệu"),
-                t("j2fcd33a", "Dữ liệu bao gồm các đóng góp cho đến"),
+                t("cc720e6a", "Ghi chép cho cộng đồng được xây dựng dựa trên tính minh bạch của dữ liệu");
+            t("j2fcd33a", "Dữ liệu bao gồm các đóng góp cho đến"),
                 t("d4a6b322", "Tất cả dữ liệu Ghi chép cho cộng đồng đều được công bố hàng ngày tại đây, do đó mọi người có quyền truy cập miễn phí để phân tích dữ liệu, xác định vấn đề và tìm ra các cơ hội để cải thiện Ghi chép cho cộng đồng. Chúng tôi rất nóng lòng được học hỏi cùng các bạn."),
                 t("c359263a", "Tìm hiểu cách sử dụng và phân tích dữ liệu Ghi chép cho cộng đồng "),
                 t("b8a27fe2", "trong hướng dẫn của chúng tôi"),
@@ -6482,9 +6476,6 @@
                 t("e778e3d8", "Đã chặn thành công tin nhắn trực tiếp"),
                 t("b7867912", "Bỏ chặn mọi thứ"),
                 t("gaddb872", "Bỏ chặn tin nhắn trực tiếp"),
-                t("d83414a1", function (n) {
-                    return "Bỏ chặn @" + n.screenName + "? Họ sẽ có thể theo dõi bạn và xem bài đăng của bạn.";
-                }),
                 t("a5bbfecd", function (n) {
                     return "Bỏ chặn @" + n.screenName + "? Họ sẽ có thể theo dõi bạn và tương tác với bài đăng công khai của bạn.";
                 }),
@@ -6890,13 +6881,13 @@
                 t("b2c213e0", "Đã vượt quá giới hạn ký tự"),
                 t("d84e9c2a", "Chia sẻ loại cam kết công việc mong đợi cho vai trò này."),
                 t("bc8b300c", "Chức năng công việc"),
-                t("d1eedb50", "Giúp ứng viên hiểu về lĩnh vực mà vai trò này hỗ trợ.");
-            t("eaf3ce64", "Nhóm"),
+                t("d1eedb50", "Giúp ứng viên hiểu về lĩnh vực mà vai trò này hỗ trợ."),
+                t("eaf3ce64", "Nhóm"),
                 t("b36cd50e", "Chỉ định nhóm cốt lõi mà ứng viên sẽ làm việc cùng sau khi được tuyển dụng."),
                 t("d3a427ce", "Chọn mức độ kinh nghiệm cần thiết."),
                 t("i7174442", "Mô tả công việc"),
-                t("fef0cf02", "Cung cấp bản mô tả công việc chi tiết. Nêu phác thảo những trách nhiệm và trình độ chuyên môn chính để giúp ứng viên hiểu rõ ràng về vai trò này."),
-                t("b7800bec", "Giới thiệu công việc trong tối đa 200 ký tự. Hiển thị trong bài đăng, đề xuất và tìm kiếm."),
+                t("fef0cf02", "Cung cấp bản mô tả công việc chi tiết. Nêu phác thảo những trách nhiệm và trình độ chuyên môn chính để giúp ứng viên hiểu rõ ràng về vai trò này.");
+            t("b7800bec", "Giới thiệu công việc trong tối đa 200 ký tự. Hiển thị trong bài đăng, đề xuất và tìm kiếm."),
                 t("a5244ece", "URL ứng tuyển (Bắt buộc)"),
                 t("g2b553f6", "Nhập URL công khai mà ứng viên có thể ứng tuyển cho việc làm này."),
                 t("c2e77608", "Chức danh (Bắt buộc)"),
@@ -7862,7 +7853,16 @@
                 t("b5099e33", function (n) {
                     return "@" + n.screenName + " chưa có người theo dõi đã xác nhận nào.";
                 }),
-                t("ec251f36", "Khi ai đó bạn biết theo dõi họ, họ sẽ được liệt kê ở đây.");
+                t("ec251f36", "Khi ai đó bạn biết theo dõi họ, họ sẽ được liệt kê ở đây."),
+                t("f8af4f48", "Một khi theo dõi tài khoản, họ sẽ hiển thị ở đây."),
+                t("fd0aad94", "Khi có người đã xác nhận theo dõi tài khoản này, người đó sẽ xuất hiện ở đây."),
+                t("b84f6df1", function (n) {
+                    return "Tặng gói Premium với chiết khấu " + n.percentage + "% trong thời gian có hạn";
+                }),
+                t("cfcac293", function (n) {
+                    return "Tặng và thanh toán " + n.price;
+                }),
+                t("d7a73450", "Cấp");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7901,16 +7901,7 @@
                     a(n, h)
                 );
             }
-            t("f8af4f48", "Một khi theo dõi tài khoản, họ sẽ hiển thị ở đây."),
-                t("fd0aad94", "Khi có người đã xác nhận theo dõi tài khoản này, người đó sẽ xuất hiện ở đây."),
-                t("b84f6df1", function (n) {
-                    return "Tặng gói Premium với chiết khấu " + n.percentage + "% trong thời gian có hạn";
-                }),
-                t("cfcac293", function (n) {
-                    return "Tặng và thanh toán " + n.price;
-                }),
-                t("d7a73450", "Cấp"),
-                t("hbd2c24e", "Hiện tại, tài khoản này không đủ điều kiện nhận quà."),
+            t("hbd2c24e", "Hiện tại, tài khoản này không đủ điều kiện nhận quà."),
                 t("f3fddc98", "Điều khoản người mua hàng"),
                 t("cff9c889", "Tìm hiểu thêm"),
                 t("c65dda96", "Quà của bạn đã được gửi đi."),
@@ -8322,7 +8313,7 @@
                 t("e5e6479e", "Hãy gửi email kèm theo thông tin đăng nhập của tổ chức bạn và chi tiết về yêu cầu của bạn để được hỗ trợ nhanh nhất."),
                 t("ica8392a", "Sau khi nhận được yêu cầu, chúng tôi sẽ xem xét và ưu tiên theo thứ tự nhận được yêu cầu."),
                 t("ed37e36e", "Quan trọng: Nếu bạn gửi thiếu thông tin đăng nhập của tổ chức hoặc dùng email cá nhân, thì việc xử lý yêu cầu có thể bị chậm trễ."),
-                t("h7e1c146", "Delegate accounts are not currently supported."),
+                t("h7e1c146", "Tài khoản ủy quyền hiện chưa được hỗ trợ."),
                 t("eb0d4fe2", "Tạo cột"),
                 t("e93d2f8a", "Tùy chỉnh trải nghiệm của bạn bằng cách thêm nhiều loại cột như:"),
                 t("e8203d1e", "Tìm kiếm"),
@@ -8896,15 +8887,15 @@
                 t("faf9f484", "Quảng cáo"),
                 t("ae2ea9e7", function (n) {
                     return "Quảng cáo bởi " + n.advertiserName;
-                });
-            t("hea01798", "Thanh trượt tìm kiếm"),
+                }),
+                t("hea01798", "Thanh trượt tìm kiếm"),
                 t("f8a09386", "Xem trên Periscope"),
                 t("gf2b6eee", "Hình trong hình"),
                 t("b3160a69", function (n) {
                     return n.volumePercent + " phần trăm";
                 }),
-                t("fb236728", "Tạm dừng"),
-                t("e9bd453e", "Phát lại"),
+                t("fb236728", "Tạm dừng");
+            t("e9bd453e", "Phát lại"),
                 t("d46b00b0", "Nhảy đến phiên phát trực tuyến"),
                 t("ec8ab8b4", "Tắt tiếng"),
                 t("b8b6344a", "Bỏ tắt tiếng"),
@@ -9329,7 +9320,6 @@
                 t("fe40537f", function (n) {
                     return "Bỏ chặn @" + n.screenName + "?";
                 }),
-                t("ab7c3460", "Họ sẽ không thể theo dõi bạn và xem bài đăng của bạn."),
                 t("i58d8718", "Họ sẽ có thể theo dõi bạn và tương tác với bài đăng công khai của bạn."),
                 t("cda66545", function (n) {
                     return "Nhấp để " + n.followType + " " + n.screenName;
@@ -11362,12 +11352,6 @@
                             },
                         },
                         {
-                            key: "e6264621",
-                            get: function () {
-                                return ["Bạn không thể theo dõi hoặc nhìn thấy các bài đăng của @" + this.props.screenName + ". "];
-                            },
-                        },
-                        {
                             key: "f98ecc47",
                             get: function () {
                                 return ["Bạn có chắc muốn xem các bài đăng này không? Việc xem bài đăng sẽ không bỏ chặn @" + this.props.screenName + ". "];
@@ -13388,4 +13372,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.fb3c531a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.0516a12a.js.map

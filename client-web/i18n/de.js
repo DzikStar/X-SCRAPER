@@ -1281,31 +1281,31 @@
                 t("c3f04d9c", "Bitte warten"),
                 t("cbdddb0a", "Beendet"),
                 t("ie2bbeed", function (e) {
-                    return 'Searching for "' + e.query + '"';
+                    return "Suche nach „" + e.query + "“";
                 }),
                 t("b0d1e205", function (e) {
                     return "Suche nach **„" + e.query + "“**";
                 }),
                 t("bf970edd", function (e) {
-                    return 'Searching 𝕏 for "' + e.query + '"';
+                    return "𝕏 wird nach „" + e.query + "“ durchsucht";
                 }),
                 t("g008d475", function (e) {
-                    return "Browsing " + e.url;
+                    return e.url + " wird durchsucht";
                 }),
                 t("c91e3971", function (e) {
-                    return "Browsing " + e.url + ' for "' + e.query + '"';
+                    return e.url + " wird nach „" + e.query + "“ durchsucht";
                 }),
                 t("acb9b845", function (e) {
                     return "Browsen von " + e.url + " für **„" + e.query + "“**";
                 }),
                 t("j9006405", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username;
+                    return "𝕏-Posts von @" + e.username + " werden durchsucht";
                 }),
                 t("a2dd07e5", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username + ' for "' + e.query + '"';
+                    return "𝕏-Posts von @" + e.username + " werden nach „" + e.query + "“ durchsucht";
                 }),
                 t("e99fb7a3", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username + ' for **"' + e.query + '"**';
+                    return "𝕏-Posts von @" + e.username + " werden nach** „" + e.query + "“** durchsucht";
                 }),
                 t("ead81122", "Etwas ist schief gegangen. Bitte stelle die Verbindung durch eine Aktualisierung wieder her oder versuche es erneut."),
                 t("f808a13a", "Das Zugriffslimit ist erreicht. Bitte versuche es in ein paar Minuten erneut."),
@@ -1317,8 +1317,8 @@
                 t("j77292b7", function (e) {
                     return "Bitte wähle höchstens " + e.count + " Datei" + r(e.count, "", "en");
                 }),
-                t("d6b533dc", "Rate this translation:"),
-                t("j2f9ab6e", "Thank you for your feedback!"),
+                t("d6b533dc", "Bewerte diese Übersetzung:"),
+                t("j2f9ab6e", "Danke für dein Feedback!"),
                 t("d56779a2", "leicht zu verstehen"),
                 t("b6fe8a56", "verwirrend oder unklar"),
                 t("i73a7d48", "Übersetzt von Google"),
@@ -1349,7 +1349,7 @@
                     return "Original (" + e.originLanguage + ") übersetzt von";
                 }),
                 t("b7cb4fab", "Übersetzt von"),
-                t("e0bffbf8", "About automatic translation"),
+                t("e0bffbf8", "Über die automatische Übersetzung"),
                 t("e839db3a", "Verwerfen"),
                 t("a15585b4", "Spracheinstellungen"),
                 t("d4c339b9", function (e) {
@@ -1498,9 +1498,6 @@
                     return "@" + e.screenName + " blockieren";
                 }),
                 t("a6450e84", "Blockieren"),
-                t("g353ad73", function (e) {
-                    return "Die Person kann dir nicht länger folgen und deine Posts nicht mehr anzeigen. Außerdem siehst du keine Posts oder Mitteilungen mehr von @" + e.screenName + ".";
-                }),
                 t("ad00a739", function (e) {
                     return "Der Account kann deine öffentlichen Posts sehen, aber nicht mehr mit ihnen interagieren. @" + e.screenName + " kann dir außerdem nicht folgen und dir keine Nachrichten schicken und du siehst keine Mitteilungen von diesem Account.";
                 }),
@@ -1512,7 +1509,6 @@
                     return "@" + e.screenName + " entblocken";
                 }),
                 t("e133be4e", "Entblocken"),
-                t("he43bca4", "Die Person kann dir dann folgen und deine Posts anzeigen."),
                 t("f5f01af6", "Er/Sie kann dir folgen und mit deinen öffentlichen Posts interagieren."),
                 t("b6878b0a", "Etwas ist schiefgelaufen. Versuche in einer Minute erneut, den Nutzer zu blockieren."),
                 t("e40252de", "Diese Posts nicht in „Für dich“ anzeigen"),
@@ -1921,10 +1917,10 @@
                 t("jcd5ee8a", "Block bearbeiten"),
                 t("a8f09fb8", "Block löschen"),
                 t("i89195ea", "Trennelement"),
-                t("da8ac57c", "Beschriftung bearbeiten");
-            t("a8fdd09c", "Artikel veröffentlichen"),
-                t("d8047cc8", "Veröffentlichen"),
-                t("ff7ddca2", "Dein Artikel erscheint als Post, wenn du ihn veröffentlichst. Außerdem findest du ihn im Tab „Artikel“ in deinem Profil."),
+                t("da8ac57c", "Beschriftung bearbeiten"),
+                t("a8fdd09c", "Artikel veröffentlichen"),
+                t("d8047cc8", "Veröffentlichen");
+            t("ff7ddca2", "Dein Artikel erscheint als Post, wenn du ihn veröffentlichst. Außerdem findest du ihn im Tab „Artikel“ in deinem Profil."),
                 t("ef34d7be", "Steueroptionen für Zielgruppe und Antworten können nicht mehr bearbeitet werden, nachdem ein Artikel veröffentlicht wurde."),
                 t("e52d4998", "Deine Zielgruppe wählen"),
                 t("d7985b24", "Wählen, wer auf diesen Artikel antworten kann"),
@@ -2977,10 +2973,10 @@
                 t("bc6efc72", "Datenschutzrichtlinien"),
                 t("h3161192", "Cookie-Richtlinie"),
                 t("a7de64de", "Anzeigen-Info"),
-                t("jb0a4c36", "Blog");
-            t("ce6d095a", "Karriere"),
-                t("e0adec82", "Markenressourcen"),
-                t("df1b7550", "Marketing"),
+                t("jb0a4c36", "Blog"),
+                t("ce6d095a", "Karriere"),
+                t("e0adec82", "Markenressourcen");
+            t("df1b7550", "Marketing"),
                 t("he258678", "X für Unternehmen"),
                 t("c6f58084", "Entwickler"),
                 t("d83f18d2", "Verzeichnis"),
@@ -3889,10 +3885,10 @@
                 t("c371fb9a", "Ende"),
                 t("c0ce822e", "Mikrofoneinstellungen"),
                 t("a2bf8b8a", "Zuhörer*in werden"),
-                t("caa8d928", "Rauschunterdrückung ein-/ausschalten");
-            t("b5d88f0c", "Nur Beschäftigte"),
-                t("c855ab8e", "Nur Abonnent*innen"),
-                t("ddeb0a3c", "Hier ist die Community. Magst du die Leute? Sieh's dir mal an."),
+                t("caa8d928", "Rauschunterdrückung ein-/ausschalten"),
+                t("b5d88f0c", "Nur Beschäftigte"),
+                t("c855ab8e", "Nur Abonnent*innen");
+            t("ddeb0a3c", "Hier ist die Community. Magst du die Leute? Sieh's dir mal an."),
                 t("e111f531", function (e) {
                     return e.count + " ha" + r(e.count, "t", "ben") + " zugehört";
                 }),
@@ -4221,10 +4217,10 @@
                 t("j7b5c844", "Du bist für die Konversationen verantwortlich, die du öffentlich teilst. Vermeide es, in deinen Konversationen mit Grok sensible und vertrauliche Informationen über dich selbst oder andere mitzuteilen (mehr in unserem Hilfe-Center)."),
                 t("c9f7c196", "Hilfe-Center"),
                 t("fb3b9776", "Die Grok-Ausgabe wurde von diesem/dieser Nutzer*in angepasst."),
-                t("b0a889d4", "As Image"),
-                t("a111fb48", "As Spreadsheet"),
-                t("bccc65f0", "Grok can make mistakes. Always check original sources."),
-                t("bd202fe6", "Generating card"),
+                t("b0a889d4", "Als Bild"),
+                t("a111fb48", "Als Tabellenkalkulation"),
+                t("bccc65f0", "Grok kann Fehler machen. Überprüfe stets die Originalquellen."),
+                t("bd202fe6", "Karte wird generiert"),
                 t("bfd161bc", "Vergleich"),
                 t("j5dcf1b2", "Aktualisiert"),
                 t("a50aaa10", "Vorbörslicher Handel"),
@@ -4256,8 +4252,8 @@
                 t("dd679fb1", function (e) {
                     return "Allzeittief" + e.ttc_stock_details;
                 }),
-                t("ha9c4cf8", "View source"),
-                t("ecad5d78", "Save image"),
+                t("ha9c4cf8", "Quelle anzeigen"),
+                t("ecad5d78", "Bild speichern"),
                 t("d2d1d398", "Kopiert!"),
                 t("a22063d2", "Teile deinen Standort für höhere Genauigkeit."),
                 t("db3248a8", "Standort wird geladen"),
@@ -4292,12 +4288,12 @@
                 t("d66bf142", "Do"),
                 t("dc17968a", "Fr"),
                 t("j310a2d6", "Sa"),
-                t("afa2a58e", "See all posts"),
-                t("fc83e7e2", "See all users"),
-                t("df601d92", "Relevant Users"),
-                t("b001fa12", "Source query"),
+                t("afa2a58e", "Alle Posts anzeigen"),
+                t("fc83e7e2", "Alle Nutzer*innen anzeigen"),
+                t("df601d92", "Relevante Nutzer*innen"),
+                t("b001fa12", "Quellabfrage"),
                 t("db6c20cf", function (e) {
-                    return "Show all (" + e.count + ")";
+                    return "Alle anzeigen (" + e.count + ")";
                 }),
                 t("d7cb5408", "Relevante Webseiten"),
                 t("ca93f2ee", "Diese Nachricht wurde gelöscht."),
@@ -4368,7 +4364,7 @@
                 t("db832e38", "Bitte aktiviere Mitteilungen in den Browsereinstellungen"),
                 t("a910cac6", "Problem bei der Aktivierung der Mitteilungen"),
                 t("be30b6ee", "Verbindung instabil"),
-                t("ge15b488", "Show thoughts"),
+                t("ge15b488", "Gedanken anzeigen"),
                 t("aa7c96bb", function (e) {
                     return e.numResults + " weitere sehen";
                 }),
@@ -4493,8 +4489,6 @@
                 }),
                 t("c9a1cb5e", "Dieser Account existiert nicht"),
                 t("e7b201de", "Versuche, nach einem anderen Account zu suchen."),
-                t("ica87fde", "Du bist blockiert"),
-                t("c7ec6faf", "Mehr erfahren"),
                 t("e79ed125", function (e) {
                     return "@" + e.screenName + " ist blockiert";
                 }),
@@ -4931,12 +4925,12 @@
                 t("fbc79a40", "Spaces-Übersicht"),
                 t("d077112a", "Space-Statistiken"),
                 t("cf3709da", "Status"),
-                t("e797dc32", "Stream-Zeit: ");
-            t("b649d8cc", "Nur Abonnent*innen"),
+                t("e797dc32", "Stream-Zeit: "),
+                t("b649d8cc", "Nur Abonnent*innen"),
                 t("j9282130", "Miniaturansicht für Live-Video"),
                 t("g629b8b0", "Zeitabschaltung"),
-                t("eb87323c", "Zeigt Statistikdaten für den ausgewählten Zeitraum seit dem Livestream an."),
-                t("i6a75722", "Zeitbereich"),
+                t("eb87323c", "Zeigt Statistikdaten für den ausgewählten Zeitraum seit dem Livestream an.");
+            t("i6a75722", "Zeitbereich"),
                 t("c602f5b8", "Gesamtbetrag"),
                 t("b35e68ae", "Gesamtzahl Teilnehmer*innen"),
                 t("h78ee79a", "Gesamtanzeige Aufzeichnung"),
@@ -5883,12 +5877,12 @@
                 t("hf68e810", "Kollektive Anmerkungen ist ein Programm für eine besser informierte Welt. Hier können Leute auf X gemeinsam hilfreiche Anmerkungen für möglicherweise irreführende Posts verfassen."),
                 t("jdb52860", "Teilnehmer verfassen und bewerten Notizen"),
                 t("c104025c", "Mitwirkende sind Leute wie du auf X, die sich für das Pilotprogramm beworben haben, damit sie Anmerkungen schreiben und bewerten können. Je mehr Leute sich beteiligen, desto besser wird das Programm."),
-                t("j7872b8c", "Nur Anmerkungen, die Leute hilfreich finden, erscheinen zu einem Post");
-            t("fb59415e", "Damit eine Anmerkung öffentlich als Kontext zum Post angezeigt wird, muss sie von genügend Leuten mit unterschiedlichen Sichtweisen als hilfreich bewertet werden. Dieser Ansatz wirkt Voreingenommenheit und Manipulation entgegen und hilft, Anmerkungen zu finden, die für viele Leute hilfreich sind."),
+                t("j7872b8c", "Nur Anmerkungen, die Leute hilfreich finden, erscheinen zu einem Post"),
+                t("fb59415e", "Damit eine Anmerkung öffentlich als Kontext zum Post angezeigt wird, muss sie von genügend Leuten mit unterschiedlichen Sichtweisen als hilfreich bewertet werden. Dieser Ansatz wirkt Voreingenommenheit und Manipulation entgegen und hilft, Anmerkungen zu finden, die für viele Leute hilfreich sind."),
                 t("f9a44022", "Nicht X, das Unternehmen, entscheidet, was angezeigt wird: die Mitwirkenden tun es"),
                 t("gdf4fbb2", "Das Unternehmen X verfasst, bewertet oder moderiert die Anmerkungen nicht (es sei denn, sie verstoßen gegen die X Regeln). Wir überlassen den Mitwirkenden zusammen die Entscheidung. Das halten wir für eine faire und effektive Methode, Kontext zu bieten, durch den Leute besser informiert werden."),
-                t("cc720e6a", "Kollektive Anmerkungen basiert auf Datentransparenz"),
-                t("j2fcd33a", "Daten umfassen Beiträge bis"),
+                t("cc720e6a", "Kollektive Anmerkungen basiert auf Datentransparenz");
+            t("j2fcd33a", "Daten umfassen Beiträge bis"),
                 t("d4a6b322", "Alle Beiträge zu Kollektive Anmerkungen werden hier täglich veröffentlicht, sodass Mitwirkende freien Zugang haben und Daten analysieren, Probleme erkennen und Möglichkeiten zur Verbesserung von Kollektive Anmerkungen finden können. Wir freuen uns darauf, gemeinsam mit euch zu lernen."),
                 t("c359263a", "Lass dir erläutern, wie du Daten aus Kollektive Anmerkungen nutzt und analysierst "),
                 t("b8a27fe2", "in unserem Leitfaden"),
@@ -6483,9 +6477,6 @@
                 t("e778e3d8", "Erfolgreich blockierte Direktnachrichten"),
                 t("b7867912", "Blockierung ganz aufheben"),
                 t("gaddb872", "Blockierung von Direktnachrichten aufheben"),
-                t("d83414a1", function (e) {
-                    return "@" + e.screenName + " entblocken? Die Person kann dir dann folgen und deine Posts anzeigen.";
-                }),
                 t("a5bbfecd", function (e) {
                     return "Blockierung von @" + e.screenName + " aufheben? Er/Sie kann dir folgen und mit deinen öffentlichen Posts interagieren.";
                 }),
@@ -6891,13 +6882,13 @@
                 t("b2c213e0", "Zu viele Zeichen"),
                 t("d84e9c2a", "Gib an, welches Engagement für diese Rolle erwartet wird."),
                 t("bc8b300c", "Jobfunktion"),
-                t("d1eedb50", "Hilf Kandidat*innen verstehen, welchen Bereich diese Rolle unterstützt.");
-            t("eaf3ce64", "Team"),
+                t("d1eedb50", "Hilf Kandidat*innen verstehen, welchen Bereich diese Rolle unterstützt."),
+                t("eaf3ce64", "Team"),
                 t("b36cd50e", "Gib das primäre Team an, für das erfolgreiche Kandidat*innen arbeiten werden."),
                 t("d3a427ce", "Gib an, wie viel Erfahrung erforderlich ist."),
                 t("i7174442", "Jobbeschreibung"),
-                t("fef0cf02", "Gib eine detaillierte Jobbeschreibung an. Umschreibe die wichtigsten Zuständigkeiten und Qualifikationen, damit Kandidat*innen ein klares Verständnis der Rolle entwickeln können."),
-                t("b7800bec", "Beschreibe den Job in höchstens 200 Zeichen. Wird in Posts und Empfehlungen und in der Suche angezeigt."),
+                t("fef0cf02", "Gib eine detaillierte Jobbeschreibung an. Umschreibe die wichtigsten Zuständigkeiten und Qualifikationen, damit Kandidat*innen ein klares Verständnis der Rolle entwickeln können.");
+            t("b7800bec", "Beschreibe den Job in höchstens 200 Zeichen. Wird in Posts und Empfehlungen und in der Suche angezeigt."),
                 t("a5244ece", "Bewerbungs-URL (erforderlich)"),
                 t("g2b553f6", "Gib die öffentliche URL ein, unter der sich Kandidat*innen für diesen Job bewerben können."),
                 t("c2e77608", "Position (erforderlich)"),
@@ -7863,7 +7854,16 @@
                 t("b5099e33", function (e) {
                     return "@" + e.screenName + " hat keine verifizierten Follower*innen.";
                 }),
-                t("ec251f36", "Wenn jemand, den du kennst, dem Nutzer folgt, wird das hier angezeigt.");
+                t("ec251f36", "Wenn jemand, den du kennst, dem Nutzer folgt, wird das hier angezeigt."),
+                t("f8af4f48", "Wenn Accounts gefolgt wird, wird das hier angezeigt."),
+                t("fd0aad94", "Wenn eine verifizierte Person diesem Account folgt, wird sie hier angezeigt."),
+                t("b84f6df1", function (e) {
+                    return "Premium als Geschenk mit " + e.percentage + " % Rabatt für begrenzte Zeit.";
+                }),
+                t("cfcac293", function (e) {
+                    return "Schenken und " + e.price + " zahlen";
+                }),
+                t("d7a73450", "Stufe");
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7902,16 +7902,7 @@
                     d(e, n)
                 );
             }
-            t("f8af4f48", "Wenn Accounts gefolgt wird, wird das hier angezeigt."),
-                t("fd0aad94", "Wenn eine verifizierte Person diesem Account folgt, wird sie hier angezeigt."),
-                t("b84f6df1", function (e) {
-                    return "Premium als Geschenk mit " + e.percentage + " % Rabatt für begrenzte Zeit.";
-                }),
-                t("cfcac293", function (e) {
-                    return "Schenken und " + e.price + " zahlen";
-                }),
-                t("d7a73450", "Stufe"),
-                t("hbd2c24e", "Dieser Account kommt zurzeit nicht für Geschenke in Frage."),
+            t("hbd2c24e", "Dieser Account kommt zurzeit nicht für Geschenke in Frage."),
                 t("f3fddc98", "Geschäftsbedingungen für Käufer*innen"),
                 t("cff9c889", "Mehr erfahren"),
                 t("c65dda96", "Dein Geschenk wurde gesendet."),
@@ -8323,7 +8314,7 @@
                 t("e5e6479e", "Sende uns eine E-Mail mit dem Nutzernamen deiner Organisation und den Details deiner Anfrage, wenn du schnelleren Support erhalten möchtest."),
                 t("ica8392a", "Wenn wir deine Anfrage erhalten haben, prüfen und priorisieren wir sie in der Reihenfolge des Eingangs."),
                 t("ed37e36e", "Wichtig: Wenn du den Nutzernamen deiner Organisation nicht angibst oder eine private E-Mail-Adresse verwendest, kann das zu Verzögerungen bei der Bearbeitung deiner Anfrage führen."),
-                t("h7e1c146", "Delegate accounts are not currently supported."),
+                t("h7e1c146", "Delegate-Accounts werden derzeit nicht unterstützt."),
                 t("eb0d4fe2", "Spalte erstellen"),
                 t("e93d2f8a", "Passe deine Nutzung an, indem du verschiedene Spalten hinzufügst, z. B.:"),
                 t("e8203d1e", "Suchanfragen"),
@@ -8897,15 +8888,15 @@
                 t("faf9f484", "Anzeige"),
                 t("ae2ea9e7", function (e) {
                     return "Anzeige von " + e.advertiserName;
-                });
-            t("hea01798", "Schieberegler für Spielzeit"),
+                }),
+                t("hea01798", "Schieberegler für Spielzeit"),
                 t("f8a09386", "Auf Periscope ansehen"),
                 t("gf2b6eee", "Bild-im-Bild"),
                 t("b3160a69", function (e) {
                     return e.volumePercent + " Prozent";
                 }),
-                t("fb236728", "Pause"),
-                t("e9bd453e", "Erneut abspielen"),
+                t("fb236728", "Pause");
+            t("e9bd453e", "Erneut abspielen"),
                 t("d46b00b0", "Zur Liveposition springen"),
                 t("ec8ab8b4", "Stummschalten"),
                 t("b8b6344a", "Stummschaltung aufheben"),
@@ -9330,7 +9321,6 @@
                 t("fe40537f", function (e) {
                     return "@" + e.screenName + " entblocken?";
                 }),
-                t("ab7c3460", "Die Person kann dir dann folgen und deine Posts anzeigen."),
                 t("i58d8718", "Er/Sie kann dir folgen und mit deinen öffentlichen Posts interagieren."),
                 t("cda66545", function (e) {
                     return "Klicken, wenn du " + e.screenName + " " + e.followType + " möchtest";
@@ -11376,12 +11366,6 @@
                             },
                         },
                         {
-                            key: "e6264621",
-                            get: function () {
-                                return ["Du kannst @" + this.props.screenName + " nicht folgen oder seine/ihre Posts sehen. "];
-                            },
-                        },
-                        {
                             key: "f98ecc47",
                             get: function () {
                                 return ["Bist du sicher, dass du diese Posts ansehen möchtest? Das Ansehen von Posts hebt die Blockierung von @" + this.props.screenName + " nicht auf. "];
@@ -13403,4 +13387,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.761229da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.73f459fa.js.map

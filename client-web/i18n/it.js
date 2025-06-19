@@ -1498,9 +1498,6 @@
                     return "Blocca @" + e.screenName;
                 }),
                 o("a6450e84", "Blocca"),
-                o("g353ad73", function (e) {
-                    return "Non potrà seguirti né vedere i tuoi post e tu non vedrai i post né le notifiche di @" + e.screenName + ".";
-                }),
                 o("ad00a739", function (e) {
                     return "Vedrà i tuoi post pubblici ma non potrà più interagirvi. Inoltre, @" + e.screenName + " non potrà seguirti o inviarti messaggi e non riceverai notifiche da parte sua.";
                 }),
@@ -1512,7 +1509,6 @@
                     return "Sblocca @" + e.screenName;
                 }),
                 o("e133be4e", "Sblocca"),
-                o("he43bca4", "Potrà seguirti e visualizzare i tuoi post."),
                 o("f5f01af6", "Potrà seguirti e interagire con i tuoi post pubblici."),
                 o("b6878b0a", "Qualcosa è andato storto. Prova ad bloccare nuovamente l'utente tra un minuto."),
                 o("e40252de", "Non mostrare questi post in Per te"),
@@ -1921,10 +1917,10 @@
                 o("jcd5ee8a", "Modifica blocco"),
                 o("a8f09fb8", "Elimina blocco"),
                 o("i89195ea", "Divisore"),
-                o("da8ac57c", "Modifica didascalia");
-            o("a8fdd09c", "Pubblica articolo"),
-                o("d8047cc8", "Pubblica"),
-                o("ff7ddca2", "L'articolo apparirà come post una volta pubblicato. Inoltre, sarà disponibile nella scheda Articoli del tuo profilo."),
+                o("da8ac57c", "Modifica didascalia"),
+                o("a8fdd09c", "Pubblica articolo"),
+                o("d8047cc8", "Pubblica");
+            o("ff7ddca2", "L'articolo apparirà come post una volta pubblicato. Inoltre, sarà disponibile nella scheda Articoli del tuo profilo."),
                 o("ef34d7be", "I controlli su pubblico e risposte non possono essere modificati in seguito alla pubblicazione dell'articolo."),
                 o("e52d4998", "Scegli il pubblico"),
                 o("d7985b24", "Scegli chi può rispondere a questo articolo"),
@@ -2977,10 +2973,10 @@
                 o("bc6efc72", "Informativa sulla privacy"),
                 o("h3161192", "Norme sui cookie"),
                 o("a7de64de", "Info sugli annunci"),
-                o("jb0a4c36", "Blog");
-            o("ce6d095a", "Lavora con noi"),
-                o("e0adec82", "Risorse del brand"),
-                o("df1b7550", "Marketing"),
+                o("jb0a4c36", "Blog"),
+                o("ce6d095a", "Lavora con noi"),
+                o("e0adec82", "Risorse del brand");
+            o("df1b7550", "Marketing"),
                 o("he258678", "X per le attività"),
                 o("c6f58084", "Sviluppatori"),
                 o("d83f18d2", "Elenco"),
@@ -3889,10 +3885,10 @@
                 o("c371fb9a", "Fine"),
                 o("c0ce822e", "Impostazioni microfono"),
                 o("a2bf8b8a", "Passa all'ascolto"),
-                o("caa8d928", "Attiva/Disattiva la cancellazione del rumore");
-            o("b5d88f0c", "Solo per dipendenti"),
-                o("c855ab8e", "Solo per abbonati"),
-                o("ddeb0a3c", "Ecco la community. Ti piacciono gli utenti? Dai un'occhiata."),
+                o("caa8d928", "Attiva/Disattiva la cancellazione del rumore"),
+                o("b5d88f0c", "Solo per dipendenti"),
+                o("c855ab8e", "Solo per abbonati");
+            o("ddeb0a3c", "Ecco la community. Ti piacciono gli utenti? Dai un'occhiata."),
                 o("e111f531", function (e) {
                     return e.count + " sintonizzat" + t(e.count, "o", "i");
                 }),
@@ -4493,8 +4489,6 @@
                 }),
                 o("c9a1cb5e", "Questo account non esiste"),
                 o("e7b201de", "Prova a cercarne un altro."),
-                o("ica87fde", "Sei stato bloccato"),
-                o("c7ec6faf", "Scopri di più"),
                 o("e79ed125", function (e) {
                     return "L'account @" + e.screenName + " è bloccato";
                 }),
@@ -4931,12 +4925,12 @@
                 o("fbc79a40", "Panoramica degli spazi"),
                 o("d077112a", "Statistiche spazio"),
                 o("cf3709da", "Status"),
-                o("e797dc32", "Tempo di trasmissione: ");
-            o("b649d8cc", "Solo per abbonati"),
+                o("e797dc32", "Tempo di trasmissione: "),
+                o("b649d8cc", "Solo per abbonati"),
                 o("j9282130", "Miniatura trasmissione"),
                 o("g629b8b0", "Timeout"),
-                o("eb87323c", "Mostra i dati statistici per il periodo di tempo selezionato da quando si è tenuta la trasmissione in diretta."),
-                o("i6a75722", "Intervallo di tempo"),
+                o("eb87323c", "Mostra i dati statistici per il periodo di tempo selezionato da quando si è tenuta la trasmissione in diretta.");
+            o("i6a75722", "Intervallo di tempo"),
                 o("c602f5b8", "Totale"),
                 o("b35e68ae", "Totale partecipanti"),
                 o("h78ee79a", "Tempo totale di visione replay"),
@@ -5883,12 +5877,12 @@
                 o("hf68e810", "Note della collettività è un programma che ha lo scopo di mettere a disposizione di tutti informazioni più accurate. Questo è possibile poiché viene offerta agli utenti su X la possibilità di collaborare per l'aggiunta di note utili ai post che potrebbero essere fuorvianti."),
                 o("jdb52860", "I collaboratori scrivono e valutano note"),
                 o("c104025c", "I collaboratori sono utenti su X, proprio come te, che hanno deciso di partecipare al programma pilot per scrivere e valutare note. Maggiore è il numero di partecipanti, migliore sarà il programma."),
-                o("j7872b8c", "Solo le note ritenute utili vengono visualizzate nei post");
-            o("fb59415e", "Affinché venga mostrata pubblicamente come informazione contestuale in un post, una nota deve essere valutata come utile da un numero sufficiente di utenti con diversi punti di vista. Tale approccio è utile a evitare sia il bias sia la manipolazione e permette di identificare le note che sono utili a molti."),
+                o("j7872b8c", "Solo le note ritenute utili vengono visualizzate nei post"),
+                o("fb59415e", "Affinché venga mostrata pubblicamente come informazione contestuale in un post, una nota deve essere valutata come utile da un numero sufficiente di utenti con diversi punti di vista. Tale approccio è utile a evitare sia il bias sia la manipolazione e permette di identificare le note che sono utili a molti."),
                 o("f9a44022", "Quello che viene mostrato non dipende da X (l'azienda), ma dagli utenti"),
                 o("gdf4fbb2", "X (l'azienda) non scrive o valuta le note, né tantomeno le modera (a meno che non infrangano le Regole di X). Riteniamo che dare agli utenti la possibilità di esprimersi sia un modo valido ed efficace affinché vengano aggiunte informazioni per gli utenti sempre più accurate."),
-                o("cc720e6a", "La trasparenza dei dati è alla base di Note della collettività"),
-                o("j2fcd33a", "I dati includono i contributi fino al seguente periodo:"),
+                o("cc720e6a", "La trasparenza dei dati è alla base di Note della collettività");
+            o("j2fcd33a", "I dati includono i contributi fino al seguente periodo:"),
                 o("d4a6b322", "Tutti i dati di Note della collettività vengono pubblicati qui ogni giorno, pertanto gli utenti hanno libero accesso per analizzarli, identificare problemi e cogliere opportunità al fine di migliorare le note della collettività. Non vediamo l'ora di imparare insieme a te."),
                 o("c359263a", "Scopri come utilizzare e analizzare i dati di Note della collettività "),
                 o("b8a27fe2", "grazie alla nostra guida"),
@@ -6483,9 +6477,6 @@
                 o("e778e3d8", "MD bloccati correttamente"),
                 o("b7867912", "Sblocca tutto"),
                 o("gaddb872", "Sblocca MD"),
-                o("d83414a1", function (e) {
-                    return "Vuoi sbloccare @" + e.screenName + "? Potrà seguirti e vedere i tuoi post.";
-                }),
                 o("a5bbfecd", function (e) {
                     return "Vuoi sbloccare @" + e.screenName + "? Potrà seguirti e interagire con i tuoi post pubblici.";
                 }),
@@ -6891,13 +6882,13 @@
                 o("b2c213e0", "Limite caratteri superato"),
                 o("d84e9c2a", "Indica il tipo di impegno previsto per questo ruolo."),
                 o("bc8b300c", "Funzione lavorativa"),
-                o("d1eedb50", "Aiuta i candidati a comprendere l'area di competenza del lavoro.");
-            o("eaf3ce64", "Team"),
+                o("d1eedb50", "Aiuta i candidati a comprendere l'area di competenza del lavoro."),
+                o("eaf3ce64", "Team"),
                 o("b36cd50e", "Specifica il team principale con cui i candidati lavoreranno una volta assunti."),
                 o("d3a427ce", "Seleziona il livello di esperienza richiesto."),
                 o("i7174442", "Descrizione offerta"),
-                o("fef0cf02", "Fornisci una descrizione dettagliata del lavoro. Indica le qualifiche e responsabilità principali per dare ai candidati una chiara prospettiva del ruolo."),
-                o("b7800bec", "Descrivi in breve il lavoro senza superare i 200 caratteri. Sarà visibile nei post, nei suggerimenti e nella ricerca."),
+                o("fef0cf02", "Fornisci una descrizione dettagliata del lavoro. Indica le qualifiche e responsabilità principali per dare ai candidati una chiara prospettiva del ruolo.");
+            o("b7800bec", "Descrivi in breve il lavoro senza superare i 200 caratteri. Sarà visibile nei post, nei suggerimenti e nella ricerca."),
                 o("a5244ece", "URL di candidatura (obbligatorio)"),
                 o("g2b553f6", "Inserisci l'URL pubblico dove i candidati possono candidarsi per l'offerta di lavoro."),
                 o("c2e77608", "Titolo professionale (obbligatorio)"),
@@ -7863,7 +7854,16 @@
                 o("b5099e33", function (e) {
                     return "@" + e.screenName + " non ha alcun follower verificato.";
                 }),
-                o("ec251f36", "Quando qualcuno che conosci inizierà a seguire l'account, verrà elencato qui.");
+                o("ec251f36", "Quando qualcuno che conosci inizierà a seguire l'account, verrà elencato qui."),
+                o("f8af4f48", "Una volta che seguirà account, appariranno qui."),
+                o("fd0aad94", "Quando qualcuno con la verifica segue l'account, lo mostreremo qui."),
+                o("b84f6df1", function (e) {
+                    return "Regala Premium con un " + e.percentage + "% di sconto per un periodo limitato";
+                }),
+                o("cfcac293", function (e) {
+                    return "Regala e paga " + e.price;
+                }),
+                o("d7a73450", "Piano");
             function n(e, i) {
                 for (var a = 0; a < i.length; a++) {
                     var o = i[a];
@@ -7902,16 +7902,7 @@
                     r(e, i)
                 );
             }
-            o("f8af4f48", "Una volta che seguirà account, appariranno qui."),
-                o("fd0aad94", "Quando qualcuno con la verifica segue l'account, lo mostreremo qui."),
-                o("b84f6df1", function (e) {
-                    return "Regala Premium con un " + e.percentage + "% di sconto per un periodo limitato";
-                }),
-                o("cfcac293", function (e) {
-                    return "Regala e paga " + e.price;
-                }),
-                o("d7a73450", "Piano"),
-                o("hbd2c24e", "Attualmente questo account non è idoneo ai regali."),
+            o("hbd2c24e", "Attualmente questo account non è idoneo ai regali."),
                 o("f3fddc98", "Termini per gli acquirenti"),
                 o("cff9c889", "Scopri di più"),
                 o("c65dda96", "Il regalo è stato inviato."),
@@ -8897,15 +8888,15 @@
                 o("faf9f484", "Annuncio"),
                 o("ae2ea9e7", function (e) {
                     return "Annuncio di " + e.advertiserName;
-                });
-            o("hea01798", "Cursore di ricerca"),
+                }),
+                o("hea01798", "Cursore di ricerca"),
                 o("f8a09386", "Visualizza su Periscope"),
                 o("gf2b6eee", "Picture in Picture"),
                 o("b3160a69", function (e) {
                     return e.volumePercent + " per cento";
                 }),
-                o("fb236728", "Pausa"),
-                o("e9bd453e", "Replay"),
+                o("fb236728", "Pausa");
+            o("e9bd453e", "Replay"),
                 o("d46b00b0", "Passa alla parte in diretta"),
                 o("ec8ab8b4", "Silenzia"),
                 o("b8b6344a", "Riattiva"),
@@ -9330,7 +9321,6 @@
                 o("fe40537f", function (e) {
                     return "Vuoi sbloccare @" + e.screenName + "?";
                 }),
-                o("ab7c3460", "Potrà seguirti e visualizzare i tuoi post."),
                 o("i58d8718", "Potrà seguirti e interagire con i tuoi post pubblici."),
                 o("cda66545", function (e) {
                     return "Clicca per " + e.followType + " " + e.screenName;
@@ -11363,12 +11353,6 @@
                             },
                         },
                         {
-                            key: "e6264621",
-                            get: function () {
-                                return ["Non puoi né seguire @" + this.props.screenName + " né vedere i suoi post. "];
-                            },
-                        },
-                        {
                             key: "f98ecc47",
                             get: function () {
                                 return ["Vuoi davvero vedere questi post? Procedendo non sbloccherai @" + this.props.screenName + ". "];
@@ -13390,4 +13374,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.db0b533a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.51d21b6a.js.map

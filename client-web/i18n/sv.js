@@ -1498,9 +1498,6 @@
                     return "Blockera @" + e.screenName;
                 }),
                 t("a6450e84", "Blockera"),
-                t("g353ad73", function (e) {
-                    return "Personen kommer inte att kunna följa dig eller visa dina inlägg, och och du ser inte inlägg eller notiser från @" + e.screenName + ".";
-                }),
                 t("ad00a739", function (e) {
                     return "Hen kommer att kunna se dina offentliga inlägg men kommer inte längre att kunna engagera sig i dem. @" + e.screenName + " kommer även inte att kunna följa eller skicka meddelanden till dig, och du ser inga notiser från hen.";
                 }),
@@ -1512,7 +1509,6 @@
                     return "Häv blockeringen av @" + e.screenName;
                 }),
                 t("e133be4e", "Häv blockering"),
-                t("he43bca4", "Hen kommer att kunna följa dig och visa dina inlägg."),
                 t("f5f01af6", "Hen kommer att kunna följa dig och engagera sig i dina offentliga inlägg."),
                 t("b6878b0a", "Något gick fel. Försök blockera användaren igen om en stund."),
                 t("e40252de", "Visa inte dessa inlägg i För dig"),
@@ -1921,10 +1917,10 @@
                 t("jcd5ee8a", "Redigera blocket"),
                 t("a8f09fb8", "Radera blocket"),
                 t("i89195ea", "Delare"),
-                t("da8ac57c", "Redigera överskriften");
-            t("a8fdd09c", "Publicera artikeln"),
-                t("d8047cc8", "Publicera"),
-                t("ff7ddca2", "Din artikel visas som ett inlägg när du har publicerat den. Du hittar den även på fliken Artiklar i din profil."),
+                t("da8ac57c", "Redigera överskriften"),
+                t("a8fdd09c", "Publicera artikeln"),
+                t("d8047cc8", "Publicera");
+            t("ff7ddca2", "Din artikel visas som ett inlägg när du har publicerat den. Du hittar den även på fliken Artiklar i din profil."),
                 t("ef34d7be", "Målgrupps- och svarskontroller går inte att redigera efter att en artikel har publicerats."),
                 t("e52d4998", "Välj målgrupp"),
                 t("d7985b24", "Välj vilka som får svara på den här artikeln"),
@@ -2977,10 +2973,10 @@
                 t("bc6efc72", "Integritetspolicy"),
                 t("h3161192", "Cookie-policy"),
                 t("a7de64de", "Annonsinfo"),
-                t("jb0a4c36", "Blogg");
-            t("ce6d095a", "Arbetstillfällen"),
-                t("e0adec82", "Varumärkesresurser"),
-                t("df1b7550", "Marknadsföring"),
+                t("jb0a4c36", "Blogg"),
+                t("ce6d095a", "Arbetstillfällen"),
+                t("e0adec82", "Varumärkesresurser");
+            t("df1b7550", "Marknadsföring"),
                 t("he258678", "X för företag"),
                 t("c6f58084", "Utvecklare"),
                 t("d83f18d2", "Katalog"),
@@ -3889,10 +3885,10 @@
                 t("c371fb9a", "Slut"),
                 t("c0ce822e", "Mikrofoninställningar"),
                 t("a2bf8b8a", "Lyssna i stället"),
-                t("caa8d928", "Växla brusdämpning");
-            t("b5d88f0c", "Bara medarbetare"),
-                t("c855ab8e", "Endast prenumeranter"),
-                t("ddeb0a3c", "Här är gruppen. Gillar du människorna? Ta en titt."),
+                t("caa8d928", "Växla brusdämpning"),
+                t("b5d88f0c", "Bara medarbetare"),
+                t("c855ab8e", "Endast prenumeranter");
+            t("ddeb0a3c", "Här är gruppen. Gillar du människorna? Ta en titt."),
                 t("e111f531", function (e) {
                     return e.count + " lyssnar";
                 }),
@@ -4493,8 +4489,6 @@
                 }),
                 t("c9a1cb5e", "Detta konto finns inte"),
                 t("e7b201de", "Försök söka efter ett annat."),
-                t("ica87fde", "Du är blockerad"),
-                t("c7ec6faf", "Läs mer"),
                 t("e79ed125", function (e) {
                     return "@" + e.screenName + " är blockerad";
                 }),
@@ -4931,12 +4925,12 @@
                 t("fbc79a40", "Översikt av områden"),
                 t("d077112a", "Områdesstatistik"),
                 t("cf3709da", "Status"),
-                t("e797dc32", "Strömtid: ");
-            t("b649d8cc", "Bara för prenumeranter"),
+                t("e797dc32", "Strömtid: "),
+                t("b649d8cc", "Bara för prenumeranter"),
                 t("j9282130", "Miniatyrbild för sändning"),
                 t("g629b8b0", "Tog för lång tid"),
-                t("eb87323c", "Detta visar statistikuppgifter för den valda perioden sedan liveströmmen sändes."),
-                t("i6a75722", "Tidsintervall"),
+                t("eb87323c", "Detta visar statistikuppgifter för den valda perioden sedan liveströmmen sändes.");
+            t("i6a75722", "Tidsintervall"),
                 t("c602f5b8", "Netto"),
                 t("b35e68ae", "Totalt antal deltagare"),
                 t("h78ee79a", "Totalt antal sedda repriser"),
@@ -5883,12 +5877,12 @@
                 t("hf68e810", "Gruppanmärkningar är ett program som syftar till att skapa en mer välunderrättad värld. Med det kan folk på X tillsammans lägga till hjälpsamma anmärkningar om inlägg som kanske är vilseledande."),
                 t("jdb52860", "Medverkande skriver och bedömer anmärkningar"),
                 t("c104025c", "De som medverkar är folk på X, precis som du, som har valt att delta i pilotprogrammet och bedöma anmärkningar. Ju fler som deltar, desto bättre blir programmet."),
-                t("j7872b8c", "Bara anmärkningar som folk tycker är hjälpsamma visas vid ett inlägg");
-            t("fb59415e", "Om en anmärkning ska visas offentligt som sammanhang vid ett inlägg måste den bedömas vara hjälpsam av tillräckligt många med olika synpunkter. Denna metod undviker skeva resultat och manipulering och gör det enklare att hitta anmärkningar som är hjälpsamma för många."),
+                t("j7872b8c", "Bara anmärkningar som folk tycker är hjälpsamma visas vid ett inlägg"),
+                t("fb59415e", "Om en anmärkning ska visas offentligt som sammanhang vid ett inlägg måste den bedömas vara hjälpsam av tillräckligt många med olika synpunkter. Denna metod undviker skeva resultat och manipulering och gör det enklare att hitta anmärkningar som är hjälpsamma för många."),
                 t("f9a44022", "Företaget X väljer inte vad som visas, det gör folk"),
                 t("gdf4fbb2", "Företaget X skriver, bedömer och modererar inte anmärkningar (om de inte bryter mot X:s regler). Vi anser att det är ett rimligt och rättvist sätt att ge folk möjlighet att fatta dessa beslut för att lägga till information så att andra kan bli mer välunderrättade."),
-                t("cc720e6a", "Gruppanmärkningar bygger på insyn i data"),
-                t("j2fcd33a", "Data omfattar bidrag fram till"),
+                t("cc720e6a", "Gruppanmärkningar bygger på insyn i data");
+            t("j2fcd33a", "Data omfattar bidrag fram till"),
                 t("d4a6b322", "Data om alla gruppanmärkningar publiceras här varje dag så att folk ska ha fria händer att analysera dem, identifiera problem och upptäcka möjligheter att göra Gruppanmärkningar bättre. Vi längtar efter att få lära oss mer med dig."),
                 t("c359263a", "Lär dig använda och analysera Gruppanmärkningar-data "),
                 t("b8a27fe2", "i vår guide"),
@@ -6483,9 +6477,6 @@
                 t("e778e3d8", "Direktmeddelanden har blockerats"),
                 t("b7867912", "Häv blockeringen av allt"),
                 t("gaddb872", "Häv blockeringen av direktmeddelanden"),
-                t("d83414a1", function (e) {
-                    return "Vill du häva blockeringen av @" + e.screenName + "? Hen kommer att kunna följa dig och visa dina inlägg.";
-                }),
                 t("a5bbfecd", function (e) {
                     return "Vill du häva blockeringen av @" + e.screenName + "? Hen kommer att kunna följa dig och engagera sig i dina offentliga inlägg.";
                 }),
@@ -6891,13 +6882,13 @@
                 t("b2c213e0", "Teckengränsen har överskridits"),
                 t("d84e9c2a", "Ange den typ av arbetsinsatser som förväntas för denna roll."),
                 t("bc8b300c", "Jobbroll"),
-                t("d1eedb50", "Hjälp sökande att förstå vilket område denna roll hanterar.");
-            t("eaf3ce64", "Team"),
+                t("d1eedb50", "Hjälp sökande att förstå vilket område denna roll hanterar."),
+                t("eaf3ce64", "Team"),
                 t("b36cd50e", "Ange kärngruppen som den sökande kommer att jobba med efter att ha blivit anställd."),
                 t("d3a427ce", "Välj erfarenhetsnivå."),
                 t("i7174442", "Jobbeskrivning"),
-                t("fef0cf02", "Beskriv jobbet detaljerat. Skissa de viktigaste ansvarsområdena och kvalifikationerna för att ge de sökande en tydlig uppfattning om rollen."),
-                t("b7800bec", "Sälj jobbet med högst 200 tecken. Detta visas i inlägg, rekommendationer och sökfunktionen."),
+                t("fef0cf02", "Beskriv jobbet detaljerat. Skissa de viktigaste ansvarsområdena och kvalifikationerna för att ge de sökande en tydlig uppfattning om rollen.");
+            t("b7800bec", "Sälj jobbet med högst 200 tecken. Detta visas i inlägg, rekommendationer och sökfunktionen."),
                 t("a5244ece", "Ansökningsadress (obligatorisk)"),
                 t("g2b553f6", "Ange den offentliga webbadressen där kandidaterna kan söka jobbet."),
                 t("c2e77608", "Jobbtitel (obligatoriskt)"),
@@ -7863,7 +7854,16 @@
                 t("b5099e33", function (e) {
                     return "@" + e.screenName + " har inga verifierade följare.";
                 }),
-                t("ec251f36", "När någon följer hen visas hen här.");
+                t("ec251f36", "När någon följer hen visas hen här."),
+                t("f8af4f48", "När du följer konton visas de här."),
+                t("fd0aad94", "När någon verifierad följer detta konto visas personen här."),
+                t("b84f6df1", function (e) {
+                    return "Ge bort Premium till " + e.percentage + " % rabatt under begränsad tid";
+                }),
+                t("cfcac293", function (e) {
+                    return "Ge och betala " + e.price;
+                }),
+                t("d7a73450", "Nivå");
             function i(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7902,16 +7902,7 @@
                     d(e, a)
                 );
             }
-            t("f8af4f48", "När du följer konton visas de här."),
-                t("fd0aad94", "När någon verifierad följer detta konto visas personen här."),
-                t("b84f6df1", function (e) {
-                    return "Ge bort Premium till " + e.percentage + " % rabatt under begränsad tid";
-                }),
-                t("cfcac293", function (e) {
-                    return "Ge och betala " + e.price;
-                }),
-                t("d7a73450", "Nivå"),
-                t("hbd2c24e", "Detta kontot är inte kvalificerat för gåvor nu."),
+            t("hbd2c24e", "Detta kontot är inte kvalificerat för gåvor nu."),
                 t("f3fddc98", "villkor för köpare"),
                 t("cff9c889", "Läs mer"),
                 t("c65dda96", "Din gåva har skickats."),
@@ -8897,15 +8888,15 @@
                 t("faf9f484", "Annons"),
                 t("ae2ea9e7", function (e) {
                     return "Annons från " + e.advertiserName;
-                });
-            t("hea01798", "Sökreglage"),
+                }),
+                t("hea01798", "Sökreglage"),
                 t("f8a09386", "Visa på Periscope"),
                 t("gf2b6eee", "Bild i bild"),
                 t("b3160a69", function (e) {
                     return e.volumePercent + " procent";
                 }),
-                t("fb236728", "Pausa"),
-                t("e9bd453e", "Spela igen"),
+                t("fb236728", "Pausa");
+            t("e9bd453e", "Spela igen"),
                 t("d46b00b0", "Gå till livesändning"),
                 t("ec8ab8b4", "Ignorera"),
                 t("b8b6344a", "Sluta ignorera"),
@@ -9330,7 +9321,6 @@
                 t("fe40537f", function (e) {
                     return "Vill du häva blockeringen av @" + e.screenName + "?";
                 }),
-                t("ab7c3460", "Hen kommer att kunna följa dig och visa dina inlägg."),
                 t("i58d8718", "Hen kommer att kunna följa dig och engagera sig i dina offentliga inlägg."),
                 t("cda66545", function (e) {
                     return "Klicka för att " + e.followType + " " + e.screenName;
@@ -11363,12 +11353,6 @@
                             },
                         },
                         {
-                            key: "e6264621",
-                            get: function () {
-                                return ["Du kan inte följa eller se inlägg av @" + this.props.screenName + ". "];
-                            },
-                        },
-                        {
                             key: "f98ecc47",
                             get: function () {
                                 return ["Är du säker på att du vill visa dessa inlägg? Att visa inlägg innebär inte att @" + this.props.screenName + " avblockeras. "];
@@ -13390,4 +13374,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.8fca2cba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.e7a342ca.js.map

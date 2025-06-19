@@ -49,13 +49,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: a, isFullWidth: s, isLarge: d, leftControl: c, middleControl: h, position: p, rightControl: m, secondaryBar: f, style: b, subtitle: y, title: v, titleDomId: g, titleIconCell: k, titleIconCellSize: D, withBackground: w, withWideContainer: C } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: a, isFullWidth: s, isLarge: d, leftControl: c, middleControl: h, position: p, rightControl: m, secondaryBar: f, style: b, subtitle: y, title: v, titleDomId: g, titleIconCell: k, titleIconCellSize: D, withBackground: C, withWideContainer: w } = this.props,
                         { isModal: _ } = this.context,
-                        E = a ? c : n.createElement(i.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        P = (function (e, t, o) {
+                        P = a ? c : n.createElement(i.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        E = (function (e, t, o) {
                             return e && !(t && o);
-                        })(!!w, _, !!f);
-                    return n.createElement(n.Fragment, null, n.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: s, isLarge: d, leftControl: E, middleControl: h, position: u(p, _, r), rightControl: m, style: b, subtitle: y, title: v, titleDomId: g, titleIconCell: k, titleIconCellSize: D, withBackground: P, withWideContainer: C }), f || null);
+                        })(!!C, _, !!f);
+                    return n.createElement(n.Fragment, null, n.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: s, isLarge: d, leftControl: P, middleControl: h, position: u(p, _, r), rightControl: m, style: b, subtitle: y, title: v, titleDomId: g, titleIconCell: k, titleIconCellSize: D, withBackground: E, withWideContainer: w }), f || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -101,7 +101,7 @@
                 m = r.forwardRef(h);
         },
         333241: (e, t, o) => {
-            o.d(t, { Z: () => w });
+            o.d(t, { Z: () => D });
             o(136728);
             var n = o(202784),
                 r = o(638236),
@@ -110,23 +110,21 @@
                 i = o.n(s),
                 l = o(415506),
                 d = o(516951),
-                c = o(443781),
-                u = o(376293),
-                h = o(847607),
-                p = o(417714),
-                m = o(988823);
-            const f = "block",
-                b = "mute",
-                y = "removeFollower",
-                v = "report",
-                g = "share",
-                k = i().j7bb1a43,
-                D = i().hef5960c,
-                w = (0, m.M)((e) => {
-                    const { featureSwitches: t } = (0, c.QZ)(),
-                        { onBlock: o, onClose: s, onMute: i, onRemoveFollower: m, onReportUser: w, onShare: C, onUnblock: _, onUnmute: E, user: P } = e,
-                        S = [],
-                        T = (t, o) => {
+                c = o(376293),
+                u = o(847607),
+                h = o(417714),
+                p = o(988823);
+            const m = "block",
+                f = "mute",
+                b = "removeFollower",
+                y = "report",
+                v = "share",
+                g = i().j7bb1a43,
+                k = i().hef5960c,
+                D = (0, p.M)((e) => {
+                    const { onBlock: t, onClose: o, onMute: s, onRemoveFollower: i, onReportUser: p, onShare: D, onUnblock: C, onUnmute: w, user: _ } = e,
+                        P = [],
+                        E = (t, o) => {
                             const { confirm: n, onClose: r } = e;
                             if (t) {
                                 const { label: e, ...a } = t;
@@ -136,51 +134,51 @@
                             } else o();
                         };
                     !!window.navigator.share &&
-                        !P.protected &&
-                        !P.blocking &&
-                        !P.blocked_by &&
-                        S.push({
+                        !_.protected &&
+                        !_.blocking &&
+                        !_.blocked_by &&
+                        P.push({
                             Icon: r.Z,
                             onClick: () => {
-                                s(), C();
-                            },
-                            testID: g,
-                            text: D,
-                        });
-                    !P.blocking &&
-                        S.push({
-                            ...(0, h.N1)(
-                                P,
-                                () => {
-                                    s(), i();
-                                },
-                                () => {
-                                    s(), E();
-                                },
-                            ),
-                            testID: b,
-                        });
-                    P.followed_by &&
-                        S.push({
-                            ...(0, p.l)({
-                                removeFollowerAction: (e) => {
-                                    T(e, m);
-                                },
-                                user: P,
-                            }),
-                            testID: y,
-                        }),
-                        S.push((0, u.op)({ blockAction: (e) => T(e, o), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: f, unblockAction: (e) => T(e, _), user: P })),
-                        S.push({
-                            Icon: l.default,
-                            onClick: () => {
-                                s(), w();
+                                o(), D();
                             },
                             testID: v,
-                            text: k({ screenName: P.screen_name }),
+                            text: k,
                         });
-                    const M = S.map(({ Icon: e, onClick: t, testID: o, text: n }) => ({ text: n, onClick: t, Icon: e, testID: o }));
-                    return n.createElement(a.Z, { items: M, onCloseRequested: s });
+                    !_.blocking &&
+                        P.push({
+                            ...(0, u.N1)(
+                                _,
+                                () => {
+                                    o(), s();
+                                },
+                                () => {
+                                    o(), w();
+                                },
+                            ),
+                            testID: f,
+                        });
+                    _.followed_by &&
+                        P.push({
+                            ...(0, h.l)({
+                                removeFollowerAction: (e) => {
+                                    E(e, i);
+                                },
+                                user: _,
+                            }),
+                            testID: b,
+                        }),
+                        P.push((0, c.op)({ blockAction: (e) => E(e, t), source: c.SC.FOLLOWERS_LIST, testID: m, unblockAction: (e) => E(e, C), user: _ })),
+                        P.push({
+                            Icon: l.default,
+                            onClick: () => {
+                                o(), p();
+                            },
+                            testID: y,
+                            text: g({ screenName: _.screen_name }),
+                        });
+                    const S = P.map(({ Icon: e, onClick: t, testID: o, text: n }) => ({ text: n, onClick: t, Icon: e, testID: o }));
+                    return n.createElement(a.Z, { items: S, onCloseRequested: o });
                 });
         },
         980407: (e, t, o) => {
@@ -252,7 +250,7 @@
             const s = (e) => (t) => r.createElement(a.$6, null, (o) => r.createElement(e, (0, n.Z)({}, t, { isInSidebar: o })));
         },
         293988: (e, t, o) => {
-            o.d(t, { Z: () => C });
+            o.d(t, { Z: () => w });
             var n = o(202784),
                 r = o(154003),
                 a = o(111677),
@@ -275,7 +273,7 @@
                 g = s().j87c21f4,
                 k = s().iebc30ca,
                 D = s().dc740eb2;
-            class w extends n.PureComponent {
+            class C extends n.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderButton = () => {
@@ -309,7 +307,7 @@
                     t.scribeAction(e);
                 }
             }
-            const C = b(w);
+            const w = b(C);
         },
         652904: (e, t, o) => {
             o.d(t, { Z: () => c });
@@ -390,7 +388,7 @@
             });
         },
         376293: (e, t, o) => {
-            o.d(t, { $f: () => _, KV: () => y, LI: () => M, SC: () => C, Vt: () => k, ed: () => I, op: () => E });
+            o.d(t, { $f: () => C, KV: () => b, LI: () => S, SC: () => D, Vt: () => g, ed: () => T, op: () => w });
             var n = o(202784),
                 r = o(190286),
                 a = o(111677),
@@ -403,43 +401,44 @@
                 h = s().f9e45cfb,
                 p = s().fcd4d489,
                 m = s().a6450e84,
-                f = s().g353ad73,
-                b = s().ad00a739,
-                y = s().a9fd20be,
-                v = s().j546fb79,
-                g = s().c9623eeb,
-                k = s().e133be4e,
-                D = s().he43bca4,
-                w = s().f5f01af6,
-                C = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                _ = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: h({ screenName: e }), label: m, text: t ? b({ screenName: e }) : f({ screenName: e }) }),
-                E = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: o, source: n, testID: r, unblockAction: a, unblockSubtext: s, user: i }) => {
-                    let l,
-                        u = d.Z;
-                    const h = M(i, o);
-                    switch (n) {
-                        case C.PROFILE:
-                        case C.LIST_DETAIL:
-                        case C.FOLLOWERS_LIST:
-                            u = () => {
-                                i.blocking ? a(h) : e(h);
+                f = s().ad00a739,
+                b = s().a9fd20be,
+                y = s().j546fb79,
+                v = s().c9623eeb,
+                g = s().e133be4e,
+                k = s().f5f01af6,
+                D = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
+                C = (e) => ({ confirmButtonType: "destructiveFilled", headline: h({ screenName: e }), label: m, text: f({ screenName: e }) }),
+                w = ({ blockAction: e, blockSubtext: t, source: o, testID: n, unblockAction: r, unblockSubtext: a, user: s }) => {
+                    let i,
+                        l = d.Z;
+                    const u = S(s);
+                    switch (o) {
+                        case D.PROFILE:
+                        case D.LIST_DETAIL:
+                        case D.FOLLOWERS_LIST:
+                            l = () => {
+                                s.blocking ? r(u) : e(u);
                             };
                             break;
-                        case C.TWEET:
-                        case C.TWEET_CARET:
-                        case C.RICH_FEEDBACK:
-                            (l = c.uq.block),
-                                (u = () => {
-                                    i.blocking ? a(h) : e(h);
+                        case D.TWEET:
+                        case D.TWEET_CARET:
+                        case D.RICH_FEEDBACK:
+                            (i = c.uq.block),
+                                (l = () => {
+                                    s.blocking ? r(u) : e(u);
                                 });
                     }
-                    return { confirmation: h, onClick: u, testID: r, shortcutKey: l, Icon: P(i.blocking), text: T(i), subText: S({ user: i, blockSubtext: t, unblockSubtext: s }) };
+                    return { confirmation: u, onClick: l, testID: n, shortcutKey: i, Icon: _(s.blocking), text: E(s), subText: P({ user: s, blockSubtext: t, unblockSubtext: a }) };
                 },
-                P = (e) => (e ? l.default : i.default),
-                S = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
-                T = (e) => (e.blocking ? g({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
-                M = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: v({ screenName: e }), label: k, text: t ? w : D }))(e.screen_name, t) : _(e.screen_name, t)),
-                I = ({ confirmation: e, handleConfirm: t, onClose: o }) => {
+                _ = (e) => (e ? l.default : i.default),
+                P = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
+                E = (e) => (e.blocking ? v({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
+                S = (e) => {
+                    return e.blocking ? ((t = e.screen_name), { confirmButtonType: "primary", headline: y({ screenName: t }), label: g, text: k }) : C(e.screen_name);
+                    var t;
+                },
+                T = ({ confirmation: e, handleConfirm: t, onClose: o }) => {
                     const { confirmButtonType: a, headline: s, label: i, text: l } = e;
                     return n.createElement(r.Z, { cancelButtonLabel: u, confirmButtonLabel: i, confirmButtonType: a, headline: s, onCancel: o, onConfirm: t, text: l });
                 };
@@ -765,8 +764,8 @@
                 g = { [y.ZP.NoFollowRequest]: { toast: { text: v } }, showToast: !0 };
             var k = o(71620),
                 D = o(668214),
-                w = o(466036);
-            const C = (0, D.Z)().propsFromActions(() => ({ acceptPendingFollower: w.WC, createLocalApiErrorHandler: (0, k.zr)("FOLLOWER_REQUEST_ACTIONS_CONTAINER"), declinePendingFollower: w.X }));
+                C = o(466036);
+            const w = (0, D.Z)().propsFromActions(() => ({ acceptPendingFollower: C.WC, createLocalApiErrorHandler: (0, k.zr)("FOLLOWER_REQUEST_ACTIONS_CONTAINER"), declinePendingFollower: C.X }));
             class _ extends n.Component {
                 constructor(...e) {
                     super(...e),
@@ -783,19 +782,19 @@
                     return n.createElement(b, { onAccept: this._handleAccept, onDecline: this._handleDecline });
                 }
             }
-            const E = C(_);
-            var P = o(240089),
+            const P = w(_);
+            var E = o(240089),
                 S = o(293115),
                 T = o(409438),
                 M = o(553093);
             const I = (e) => (e && "user_cell" === e.type ? e.data : (0, M.Sz)(e));
             var Z = o(24949),
                 A = o(312771);
-            const R = (e) => w.sC(e).hydratedIds,
+            const R = (e) => C.sC(e).hydratedIds,
                 x = (0, D.Z)()
-                    .propsFromState(() => ({ followerRequestIds: R, fetchStatus: (0, Z.P1)(w.sC, w.HP, w.dj, ({ hydratedIds: e, ids: t }, o, n) => (o === A.ZP.LOADED ? (t.length && e.length !== t.length ? n || A.ZP.LOADING : A.ZP.LOADED) : o)) }))
+                    .propsFromState(() => ({ followerRequestIds: R, fetchStatus: (0, Z.P1)(C.sC, C.HP, C.dj, ({ hydratedIds: e, ids: t }, o, n) => (o === A.ZP.LOADED ? (t.length && e.length !== t.length ? n || A.ZP.LOADING : A.ZP.LOADED) : o)) }))
                     .adjustStateProps(({ followerRequestIds: e = [], fetchStatus: t }) => ({ fetchStatus: t, timeline: e.map((e) => ({ type: "user_cell", data: e })) }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, k.zr)("FOLLOWER_REQUESTS"), fetchPendingFollowersIfNeeded: w.GE, fetchPendingFollowersUsersIfNeeded: w.IN, fetchNextPendingFollowersUsers: w.lm })),
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, k.zr)("FOLLOWER_REQUESTS"), fetchPendingFollowersIfNeeded: C.GE, fetchPendingFollowersUsersIfNeeded: C.IN, fetchNextPendingFollowersUsers: C.lm })),
                 B = i().g6b54ff6,
                 F = i().ec5fd35a,
                 L = i().i83d4f14,
@@ -804,8 +803,8 @@
                     const { followRequestReceived: t, userId: o, viewerUserId: n } = e;
                     return !(!t || n === o);
                 },
-                U = (e) => (N(e) ? null : (0, P.ET)(e)),
-                H = (e) => (N(e) ? n.createElement(E, { userId: e.userId }) : null);
+                U = (e) => (N(e) ? null : (0, E.ET)(e)),
+                H = (e) => (N(e) ? n.createElement(P, { userId: e.userId }) : null);
             class G extends n.Component {
                 constructor(...e) {
                     super(...e),
@@ -818,7 +817,7 @@
                             const { createLocalApiErrorHandler: e, fetchPendingFollowersIfNeeded: t, fetchPendingFollowersUsersIfNeeded: o } = this.props;
                             t().then(() => o(), e({}));
                         }),
-                        (this._itemRenderer = (e) => ("user_cell" === e.type ? n.createElement(r.Z, null, n.createElement(P.ZP, { bottomControl: H, decoration: U, displayMode: T.Z.UserDetailed, isFakeButtonRoleWithListItem: !0, userId: e.data, withFollowsYou: !0 })) : null)),
+                        (this._itemRenderer = (e) => ("user_cell" === e.type ? n.createElement(r.Z, null, n.createElement(E.ZP, { bottomControl: H, decoration: U, displayMode: T.Z.UserDetailed, isFakeButtonRoleWithListItem: !0, userId: e.data, withFollowsYou: !0 })) : null)),
                         (this._handleNearEnd = () => {
                             this.props.fetchNextPendingFollowersUsers();
                         });
@@ -963,4 +962,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.FollowerRequests-e96e9bea.7929325a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.FollowerRequests-e96e9bea.0f9ee2ba.js.map

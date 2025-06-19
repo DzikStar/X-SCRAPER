@@ -921,21 +921,20 @@
                                 if (!s.richBehavior) return x();
                                 if (s.richBehavior.replyPinState) return (0, W.$)(e, t);
                                 if (s.richBehavior?.blockUser) {
-                                    const t = s.richBehavior?.blockUser?.userId,
-                                        i = h.find((e) => e.id_str === t);
-                                    return i && t
+                                    const e = s.richBehavior?.blockUser?.userId,
+                                        t = h.find((t) => t.id_str === e);
+                                    return t && e
                                         ? {
                                               ...(0, z.op)({
                                                   blockAction: () => {
-                                                      n(t).catch(r(G.d)), p({ ...y, action: "block" }, u);
+                                                      n(e).catch(r(G.d)), p({ ...y, action: "block" }, u);
                                                   },
                                                   blockSubtext: () => s.subprompt,
-                                                  isSoftBlockEnabled: e.isTrue("xprofile_blocked_by_view_enabled"),
                                                   source: z.SC.RICH_FEEDBACK,
                                                   unblockAction: () => {
-                                                      g(t).catch(r(j.D)), p({ ...y, action: "unblock" }, u);
+                                                      g(e).catch(r(j.D)), p({ ...y, action: "unblock" }, u);
                                                   },
-                                                  user: i,
+                                                  user: t,
                                               }),
                                               feedbackKey: a,
                                               willScribe: !0,
@@ -1135,4 +1134,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3ec0edf6.e820007a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3ec0edf6.6a5091fa.js.map

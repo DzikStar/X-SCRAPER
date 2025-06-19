@@ -373,7 +373,7 @@
                         x = l.useCallback(() => {
                             b.replace(m.D$);
                         }, [b]),
-                        Z = l.useCallback(
+                        A = l.useCallback(
                             (e) =>
                                 new Promise((n, a) => {
                                     T({
@@ -395,7 +395,7 @@
                     return (
                         _(),
                         (0, u.q)(() => {
-                            p.Z.initialize({ environment: n, sardineApiSubdomain: s, sardineClientID: r, sardineEnvironment: g, sardinePixelSubdomain: k, sardineSdkUrl: h, forwardWithSdkUrl: P ? a : null, socurePublicKey: S, flow: F, fetchAuthSession: Z, userPersistence: v, redirectToChallenge: L, errorHandler: x, allowLockedSession: e })
+                            p.Z.initialize({ environment: n, sardineApiSubdomain: s, sardineClientID: r, sardineEnvironment: g, sardinePixelSubdomain: k, sardineSdkUrl: h, forwardWithSdkUrl: P ? a : null, socurePublicKey: S, flow: F, fetchAuthSession: A, userPersistence: v, redirectToChallenge: L, errorHandler: x, allowLockedSession: e })
                                 .then((e) => {
                                     e?.challengeRedirect || w(!0);
                                 })
@@ -485,15 +485,6 @@
                 return d ? (i || u ? l.createElement(y, (0, s.Z)({ Component: e, options: n }, a)) : l.createElement(e, a)) : l.createElement(t.J, null);
             }
         },
-        195319: (e, n, a) => {
-            a.r(n), a.d(n, { default: () => r });
-            var s = a(202784),
-                l = a(514639),
-                t = a(615027);
-            function r() {
-                return s.createElement(t.Z, { to: l.Js });
-            }
-        },
         353391: (e, n, a) => {
             var s = a(437429),
                 l = a(202784),
@@ -528,4 +519,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PaymentShared.68ff748a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PaymentShared.f76c715a.js.map

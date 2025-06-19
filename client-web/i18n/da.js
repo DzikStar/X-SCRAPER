@@ -1498,9 +1498,6 @@
                     return "Bloker @" + e.screenName;
                 }),
                 t("a6450e84", "Bloker"),
-                t("g353ad73", function (e) {
-                    return "Vedkommende kan hverken følge dig eller se dine posts, og du ser heller ikke posts eller meddelelser fra @" + e.screenName + ".";
-                }),
                 t("ad00a739", function (e) {
                     return "Vedkommende vil kunne se dine offentlige posts, men vil ikke længere kunne interagere med dem. @" + e.screenName + " vil heller ikke kunne følge dig eller sende dig beskeder, og du vil ikke kunne se meddelelser fra vedkommende.";
                 }),
@@ -1512,7 +1509,6 @@
                     return "Fjern blokering af @" + e.screenName;
                 }),
                 t("e133be4e", "Fjern blokering"),
-                t("he43bca4", "Vedkommende vil kunne følge dig og se dine posts."),
                 t("f5f01af6", "Vedkommende vil kunne følge dig og interagere med dine offentlige posts."),
                 t("b6878b0a", "Noget gik galt. Prøv at blokere brugeren igen om et øjeblik."),
                 t("e40252de", "Vis ikke disse posts i Til dig"),
@@ -1921,10 +1917,10 @@
                 t("jcd5ee8a", "Rediger blok"),
                 t("a8f09fb8", "Slet blok"),
                 t("i89195ea", "Skillelinje"),
-                t("da8ac57c", "Rediger billedtekst");
-            t("a8fdd09c", "Udgiv Artikel"),
-                t("d8047cc8", "Udgiv"),
-                t("ff7ddca2", "Din Artikel vil blive vist som en post, når du udgiver den. Du kan også finde den på fanen Artikler på din profil."),
+                t("da8ac57c", "Rediger billedtekst"),
+                t("a8fdd09c", "Udgiv Artikel"),
+                t("d8047cc8", "Udgiv");
+            t("ff7ddca2", "Din Artikel vil blive vist som en post, når du udgiver den. Du kan også finde den på fanen Artikler på din profil."),
                 t("ef34d7be", "Indstillingerne for målgruppe og svar kan ikke ændres, når en Artikel er blevet udgivet."),
                 t("e52d4998", "Vælg din målgruppe"),
                 t("d7985b24", "Vælg, hvem der kan svare på denne artikel"),
@@ -2977,10 +2973,10 @@
                 t("bc6efc72", "Privatlivspolitik"),
                 t("h3161192", "Cookiepolitik"),
                 t("a7de64de", "Annonceinfo"),
-                t("jb0a4c36", "Blog");
-            t("ce6d095a", "Karrierer"),
-                t("e0adec82", "Brandressourcer"),
-                t("df1b7550", "Marketing"),
+                t("jb0a4c36", "Blog"),
+                t("ce6d095a", "Karrierer"),
+                t("e0adec82", "Brandressourcer");
+            t("df1b7550", "Marketing"),
                 t("he258678", "X til virksomheder"),
                 t("c6f58084", "Udviklere"),
                 t("d83f18d2", "Oversigt"),
@@ -3889,10 +3885,10 @@
                 t("c371fb9a", "Slutningen"),
                 t("c0ce822e", "Mikrofonindstillinger"),
                 t("a2bf8b8a", "Skift til at lytte"),
-                t("caa8d928", "Slå støjdæmpning til og fra");
-            t("b5d88f0c", "Kun medarbejdere"),
-                t("c855ab8e", "Kun for abonnenter"),
-                t("ddeb0a3c", "Her er Fællesskabet. Synes du om personerne? Tag et kig."),
+                t("caa8d928", "Slå støjdæmpning til og fra"),
+                t("b5d88f0c", "Kun medarbejdere"),
+                t("c855ab8e", "Kun for abonnenter");
+            t("ddeb0a3c", "Her er Fællesskabet. Synes du om personerne? Tag et kig."),
                 t("e111f531", function (e) {
                     return e.count + " følger med";
                 }),
@@ -4493,8 +4489,6 @@
                 }),
                 t("c9a1cb5e", "Denne konto findes ikke"),
                 t("e7b201de", "Prøv at søge efter en anden."),
-                t("ica87fde", "Du er blokeret"),
-                t("c7ec6faf", "Læs mere"),
                 t("e79ed125", function (e) {
                     return "@" + e.screenName + " er blokeret";
                 }),
@@ -4931,12 +4925,12 @@
                 t("fbc79a40", "Oversigt over rum"),
                 t("d077112a", "Rumstatistik"),
                 t("cf3709da", "Status"),
-                t("e797dc32", "Streamingtid: ");
-            t("b649d8cc", "Kun for abonnenter"),
+                t("e797dc32", "Streamingtid: "),
+                t("b649d8cc", "Kun for abonnenter"),
                 t("j9282130", "Udsendelsesminiature"),
                 t("g629b8b0", "Time-out"),
-                t("eb87323c", "Dette viser analysedata for den valgte tidsperiode, siden livestreamen fandt sted."),
-                t("i6a75722", "Tidsinterval"),
+                t("eb87323c", "Dette viser analysedata for den valgte tidsperiode, siden livestreamen fandt sted.");
+            t("i6a75722", "Tidsinterval"),
                 t("c602f5b8", "I alt"),
                 t("b35e68ae", "Samlet antal deltagere"),
                 t("h78ee79a", "Samlet antal sete afspilninger"),
@@ -5883,12 +5877,12 @@
                 t("hf68e810", "Fællesskabsnoter er et program, der har til formål at skabe en verden, der er bedre informeret. Det giver folk på X mulighed for i fællesskab at føje nyttige notater til posts, der kan være vildledende."),
                 t("jdb52860", "Bidragydere skriver og bedømmer noter"),
                 t("c104025c", "Bidragydere er personer som dig på X, der har valgt at tilmelde sig pilotprogrammet for at skrive og bedømme notater. Jo flere der deltager, jo bedre bliver programmet."),
-                t("j7872b8c", "Kun notater, som folk finder nyttige, bliver vist i en post");
-            t("fb59415e", "For at blive vist offentligt som kontekst i posten skal et notat være bedømt som nyttigt af nok personer med forskellige synspunkter. Denne tilgang hjælper med at undgå partiskhed og manipulation og hjælper med at finde notater, der er nyttige for mange mennesker."),
+                t("j7872b8c", "Kun notater, som folk finder nyttige, bliver vist i en post"),
+                t("fb59415e", "For at blive vist offentligt som kontekst i posten skal et notat være bedømt som nyttigt af nok personer med forskellige synspunkter. Denne tilgang hjælper med at undgå partiskhed og manipulation og hjælper med at finde notater, der er nyttige for mange mennesker."),
                 t("f9a44022", "Det er ikke virksomheden X, men folk, der bestemmer, hvad der bliver vist"),
                 t("gdf4fbb2", "Virksomheden X hverken skriver, bedømmer eller modererer notater (det ville være et brud på X-reglerne). At give folk en stemme til at træffe disse valg sammen mener vi er en retfærdig og effektiv måde at tilføje oplysninger på, der hjælper folk med at holde sig bedre informeret."),
-                t("cc720e6a", "Fællesskabsnoter bygger på datatransparens"),
-                t("j2fcd33a", "Data inkluderer bidrag indtil"),
+                t("cc720e6a", "Fællesskabsnoter bygger på datatransparens");
+            t("j2fcd33a", "Data inkluderer bidrag indtil"),
                 t("d4a6b322", "Alle data i Notater i Fællesskaber udgives her hver dag, så folk har fri adgang til at analysere dem, finde problemer og spotte muligheder for at gøre Notater i Fællesskaber bedre. Vi glæder os til at blive klogere sammen med dig."),
                 t("c359263a", "Lær, hvordan du bruger og analyserer data i Fællesskabsnoter "),
                 t("b8a27fe2", "i vores guide"),
@@ -6483,9 +6477,6 @@
                 t("e778e3d8", "Direkte beskeder er blevet blokeret"),
                 t("b7867912", "Fjern blokering af alt"),
                 t("gaddb872", "Fjern blokering af direkte beskeder"),
-                t("d83414a1", function (e) {
-                    return "Vil du fjerne blokeringen af @" + e.screenName + "? Vedkommende vil kunne følge dig og se dine posts.";
-                }),
                 t("a5bbfecd", function (e) {
                     return "Fjern blokering af @" + e.screenName + "? Vedkommende vil kunne følge dig og interagere med dine offentlige posts.";
                 }),
@@ -6891,13 +6882,13 @@
                 t("b2c213e0", "Tegngrænse overskredet"),
                 t("d84e9c2a", "Fortæl om den type arbejdsindsats, der forventes for denne stilling."),
                 t("bc8b300c", "Stillingsfunktion"),
-                t("d1eedb50", "Hjælp ansøgerne med at forstå det område, som denne stilling understøtter.");
-            t("eaf3ce64", "Team"),
+                t("d1eedb50", "Hjælp ansøgerne med at forstå det område, som denne stilling understøtter."),
+                t("eaf3ce64", "Team"),
                 t("b36cd50e", "Angiv det primære team, som ansøgere skal arbejde sammen med, når de bliver ansat."),
                 t("d3a427ce", "Vælg det nødvendige erfaringsniveau."),
                 t("i7174442", "Stillingsbeskrivelse"),
-                t("fef0cf02", "Giv en detaljeret stillingsbeskrivelse. Beskriv de vigtigste ansvarsområder og kvalifikationer for at give ansøgerne en klar forståelse af stillingen."),
-                t("b7800bec", "Præsenter stillingen med 200 tegn eller mindre. Vises i posts, anbefalinger og søgninger."),
+                t("fef0cf02", "Giv en detaljeret stillingsbeskrivelse. Beskriv de vigtigste ansvarsområder og kvalifikationer for at give ansøgerne en klar forståelse af stillingen.");
+            t("b7800bec", "Præsenter stillingen med 200 tegn eller mindre. Vises i posts, anbefalinger og søgninger."),
                 t("a5244ece", "Ansøgnings-URL (påkrævet)"),
                 t("g2b553f6", "Angiv den offentlige URL, hvor ansøgere kan søge denne stilling."),
                 t("c2e77608", "Stillingsbetegnelse (påkrævet)"),
@@ -7863,7 +7854,16 @@
                 t("b5099e33", function (e) {
                     return "@" + e.screenName + " har ingen verificerede følgere.";
                 }),
-                t("ec251f36", "Når nogen, du kender, følger vedkommende, vises de her.");
+                t("ec251f36", "Når nogen, du kender, følger vedkommende, vises de her."),
+                t("f8af4f48", "Når vedkommende følger konti, bliver de vist her."),
+                t("fd0aad94", "Når en verificeret person følger denne konto, bliver vedkommende vist her."),
+                t("b84f6df1", function (e) {
+                    return "Giv Premium i gave med " + e.percentage + " % rabat i en begrænset periode";
+                }),
+                t("cfcac293", function (e) {
+                    return "Giv gave og betal " + e.price;
+                }),
+                t("d7a73450", "Niveau");
             function d(e, r) {
                 for (var n = 0; n < r.length; n++) {
                     var t = r[n];
@@ -7902,16 +7902,7 @@
                     a(e, r)
                 );
             }
-            t("f8af4f48", "Når vedkommende følger konti, bliver de vist her."),
-                t("fd0aad94", "Når en verificeret person følger denne konto, bliver vedkommende vist her."),
-                t("b84f6df1", function (e) {
-                    return "Giv Premium i gave med " + e.percentage + " % rabat i en begrænset periode";
-                }),
-                t("cfcac293", function (e) {
-                    return "Giv gave og betal " + e.price;
-                }),
-                t("d7a73450", "Niveau"),
-                t("hbd2c24e", "Denne konto er ikke kvalificeret til gaver på nuværende tidspunkt."),
+            t("hbd2c24e", "Denne konto er ikke kvalificeret til gaver på nuværende tidspunkt."),
                 t("f3fddc98", "købsvilkår"),
                 t("cff9c889", "Læs mere"),
                 t("c65dda96", "Din gave er blevet sendt."),
@@ -8897,15 +8888,15 @@
                 t("faf9f484", "Annonce"),
                 t("ae2ea9e7", function (e) {
                     return "Annonce af " + e.advertiserName;
-                });
-            t("hea01798", "Skyder til søgning"),
+                }),
+                t("hea01798", "Skyder til søgning"),
                 t("f8a09386", "Vis på Periscope"),
                 t("gf2b6eee", "Billede-i-billede"),
                 t("b3160a69", function (e) {
                     return e.volumePercent + " procent";
                 }),
-                t("fb236728", "Pause"),
-                t("e9bd453e", "Afspil igen"),
+                t("fb236728", "Pause");
+            t("e9bd453e", "Afspil igen"),
                 t("d46b00b0", "Gå til direkte"),
                 t("ec8ab8b4", "Skjul"),
                 t("b8b6344a", "Vis"),
@@ -9330,7 +9321,6 @@
                 t("fe40537f", function (e) {
                     return "Vil du fjerne blokeringen af @" + e.screenName + "?";
                 }),
-                t("ab7c3460", "Vedkommende vil kunne følge dig og se dine posts."),
                 t("i58d8718", "Vedkommende vil kunne følge dig og interagere med dine offentlige posts."),
                 t("cda66545", function (e) {
                     return "Klik for " + e.followType + " " + e.screenName;
@@ -11363,12 +11353,6 @@
                             },
                         },
                         {
-                            key: "e6264621",
-                            get: function () {
-                                return ["Du kan ikke følge eller se posts fra @" + this.props.screenName + ". "];
-                            },
-                        },
-                        {
                             key: "f98ecc47",
                             get: function () {
                                 return ["Er du sikker på, at du vil se disse posts? Blokeringen af @" + this.props.screenName + " fjernes ikke, selv om du ser dem. "];
@@ -13046,8 +13030,8 @@
                 b = (k._numberFormat, k._numberFormatterFn),
                 c = k._pluralGeneratorFn,
                 m = (k._currencyNameFormat, k._currencyFormatterFn),
-                p = (k._validateParameterTypeDate, k._dateToPartsFormat, k._dateToPartsFormatterFn),
-                v = (k._dateFormat, k._dateFormatterFn),
+                v = (k._validateParameterTypeDate, k._dateToPartsFormat, k._dateToPartsFormatterFn),
+                p = (k._dateFormat, k._dateFormatterFn),
                 h = k._relativeTimeFormatterFn,
                 y = k._unitFormatterFn;
             (k.a1512798386 = b(["", , 1, 0, 1, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", u("truncate"), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { one: "0 t", other: "0 t" }, 4: { one: "00 t", other: "00 t" }, 5: { one: "000 t", other: "000 t" }, 6: { one: "0 mio", other: "0 mio" }, 7: { one: "00 mio", other: "00 mio" }, 8: { one: "000 mio", other: "000 mio" }, 9: { one: "0 mia", other: "0 mia" }, 10: { one: "00 mia", other: "00 mia" }, 11: { one: "000 mia", other: "000 mia" }, 12: { one: "0 bio", other: "0 bio" }, 13: { one: "00 bio", other: "00 bio" }, 14: { one: "000 bio", other: "000 bio" }, maxExponent: 14 }], k("da").pluralGenerator({}))),
@@ -13207,50 +13191,50 @@
                 (k.a2133493314 = m(k("da").numberFormatter({ raw: "#,##0 '₫'" }))),
                 (k.b2032005085 = m(k("da").numberFormatter({ raw: "#,##0.00 'ZAR'" }))),
                 (k.a171250250 = m(k("da").numberFormatter({ raw: "#,##0.00 'ZMW'" }))),
-                (k.a749989856 = p({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "d. MMM", timeSeparator: ".", months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } } })),
-                (k.a1129731325 = p({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "d. MMM y", timeSeparator: ".", months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } } })),
-                (k.a679141554 = p({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "h.mm a", timeSeparator: ".", dayPeriods: { am: "AM", pm: "PM" } })),
-                (k.a1748099745 = p({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "E d. MMM", timeSeparator: ".", days: { E: { 1: { sun: "søn.", mon: "man.", tue: "tir.", wed: "ons.", thu: "tor.", fri: "fre.", sat: "lør." } } }, months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } } })),
-                (k.a635183396 = p({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "E d. MMM y", timeSeparator: ".", days: { E: { 1: { sun: "søn.", mon: "man.", tue: "tir.", wed: "ons.", thu: "tor.", fri: "fre.", sat: "lør." } } }, months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } } })),
-                (k.a1755487913 = p({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "d. MMMM", timeSeparator: ".", months: { M: { 4: { 1: "januar", 2: "februar", 3: "marts", 4: "april", 5: "maj", 6: "juni", 7: "juli", 8: "august", 9: "september", 10: "oktober", 11: "november", 12: "december" } } } })),
-                (k.b1732679607 = p({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "d. MMMM y 'kl'. HH.mm.ss z", timeSeparator: ".", months: { M: { 4: { 1: "januar", 2: "februar", 3: "marts", 4: "april", 5: "maj", 6: "juni", 7: "juli", 8: "august", 9: "september", 10: "oktober", 11: "november", 12: "december" } } }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: ["+H;-H", "+H.mm;-H.mm"] })),
-                (k.b890805480 = p({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "d. MMM y h.mm a", timeSeparator: ".", months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } }, dayPeriods: { am: "AM", pm: "PM" } })),
-                (k.a237748668 = p({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "d. MMMM y", timeSeparator: ".", months: { M: { 4: { 1: "januar", 2: "februar", 3: "marts", 4: "april", 5: "maj", 6: "juni", 7: "juli", 8: "august", 9: "september", 10: "oktober", 11: "november", 12: "december" } } } })),
-                (k.b750137029 = p({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "d. MMM h.mm a", timeSeparator: ".", months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } }, dayPeriods: { am: "AM", pm: "PM" } })),
-                (k.a513597776 = p({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "dd/MM/y", timeSeparator: "." })),
-                (k.a2100554932 = p({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "y", timeSeparator: "." })),
-                (k.a1144760963 = p({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "MMM y", timeSeparator: ".", months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } } })),
-                (k.a1702309718 = p({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "EEEE 'den' d. MMMM y 'kl'. HH.mm.ss zzzz", timeSeparator: ".", days: { E: { 4: { sun: "søndag", mon: "mandag", tue: "tirsdag", wed: "onsdag", thu: "torsdag", fri: "fredag", sat: "lørdag" } } }, months: { M: { 4: { 1: "januar", 2: "februar", 3: "marts", 4: "april", 5: "maj", 6: "juni", 7: "juli", 8: "august", 9: "september", 10: "oktober", 11: "november", 12: "december" } } }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: "+HH.mm;-HH.mm" })),
-                (k.b865201168 = p({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "d. MMM y HH.mm.ss", timeSeparator: ".", months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } } })),
-                (k.a1150972308 = p({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "dd/MM/y", timeSeparator: "." })),
-                (k.a1168942289 = p({ 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "HH.mm", timeSeparator: "." })),
-                (k.b1425938237 = p({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "E h.mm a", timeSeparator: ".", days: { E: { 1: { sun: "søn.", mon: "man.", tue: "tir.", wed: "ons.", thu: "tor.", fri: "fre.", sat: "lør." } } }, dayPeriods: { am: "AM", pm: "PM" } })),
-                (k.a1129046132 = p({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "MMMM y", timeSeparator: ".", months: { M: { 4: { 1: "januar", 2: "februar", 3: "marts", 4: "april", 5: "maj", 6: "juni", 7: "juli", 8: "august", 9: "september", 10: "oktober", 11: "november", 12: "december" } } } })),
-                (k.a2002550103 = p({}, { pattern: "cccc", timeSeparator: ".", days: { c: { 4: { sun: "søndag", mon: "mandag", tue: "tirsdag", wed: "onsdag", thu: "torsdag", fri: "fredag", sat: "lørdag" } } } })),
-                (k.b1364206429 = p({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "d. MMM y", timeSeparator: ".", months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } } })),
-                (k.a749304663 = p({}, { pattern: "MMMM", timeSeparator: ".", months: { M: { 4: { 1: "januar", 2: "februar", 3: "marts", 4: "april", 5: "maj", 6: "juni", 7: "juli", 8: "august", 9: "september", 10: "oktober", 11: "november", 12: "december" } } } })),
-                (k.a358582775 = v(k("da").dateToPartsFormatter({ skeleton: "MMMd" }))),
-                (k.a1881013702 = v(k("da").dateToPartsFormatter({ skeleton: "yMMMd" }))),
-                (k.b157018999 = v(k("da").dateToPartsFormatter({ skeleton: "hm" }))),
-                (k.b1795585174 = v(k("da").dateToPartsFormatter({ skeleton: "MMMEd" }))),
-                (k.b1844866693 = v(k("da").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
-                (k.b1788197006 = v(k("da").dateToPartsFormatter({ skeleton: "MMMMd" }))),
-                (k.b2124086688 = v(k("da").dateToPartsFormatter({ datetime: "long" }))),
-                (k.b462946911 = v(k("da").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
-                (k.a1139670867 = v(k("da").dateToPartsFormatter({ date: "long" }))),
-                (k.a1064780178 = v(k("da").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
-                (k.b1591585127 = v(k("da").dateToPartsFormatter({ date: "short" }))),
-                (k.b4627971 = v(k("da").dateToPartsFormatter({ skeleton: "y" }))),
-                (k.a753353882 = v(k("da").dateToPartsFormatter({ skeleton: "yMMM" }))),
-                (k.a1310902637 = v(k("da").dateToPartsFormatter({ datetime: "full" }))),
-                (k.a949716039 = v(k("da").dateToPartsFormatter({ datetime: "medium" }))),
-                (k.a1902254685 = v(k("da").dateToPartsFormatter({ skeleton: "yMMdd" }))),
-                (k.b936240614 = v(k("da").dateToPartsFormatter({ time: "short" }))),
-                (k.b1577111604 = v(k("da").dateToPartsFormatter({ skeleton: "Ehm" }))),
-                (k.a1880328509 = v(k("da").dateToPartsFormatter({ skeleton: "yMMMM" }))),
-                (k.a1611143022 = v(k("da").dateToPartsFormatter({ skeleton: "EEEE" }))),
-                (k.a2094600314 = v(k("da").dateToPartsFormatter({ date: "medium" }))),
-                (k.a357897582 = v(k("da").dateToPartsFormatter({ skeleton: "MMMM" }))),
+                (k.a749989856 = v({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "d. MMM", timeSeparator: ".", months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } } })),
+                (k.a1129731325 = v({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "d. MMM y", timeSeparator: ".", months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } } })),
+                (k.a679141554 = v({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "h.mm a", timeSeparator: ".", dayPeriods: { am: "AM", pm: "PM" } })),
+                (k.a1748099745 = v({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "E d. MMM", timeSeparator: ".", days: { E: { 1: { sun: "søn.", mon: "man.", tue: "tir.", wed: "ons.", thu: "tor.", fri: "fre.", sat: "lør." } } }, months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } } })),
+                (k.a635183396 = v({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "E d. MMM y", timeSeparator: ".", days: { E: { 1: { sun: "søn.", mon: "man.", tue: "tir.", wed: "ons.", thu: "tor.", fri: "fre.", sat: "lør." } } }, months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } } })),
+                (k.a1755487913 = v({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "d. MMMM", timeSeparator: ".", months: { M: { 4: { 1: "januar", 2: "februar", 3: "marts", 4: "april", 5: "maj", 6: "juni", 7: "juli", 8: "august", 9: "september", 10: "oktober", 11: "november", 12: "december" } } } })),
+                (k.b1732679607 = v({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "d. MMMM y 'kl'. HH.mm.ss z", timeSeparator: ".", months: { M: { 4: { 1: "januar", 2: "februar", 3: "marts", 4: "april", 5: "maj", 6: "juni", 7: "juli", 8: "august", 9: "september", 10: "oktober", 11: "november", 12: "december" } } }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: ["+H;-H", "+H.mm;-H.mm"] })),
+                (k.b890805480 = v({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "d. MMM y h.mm a", timeSeparator: ".", months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } }, dayPeriods: { am: "AM", pm: "PM" } })),
+                (k.a237748668 = v({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "d. MMMM y", timeSeparator: ".", months: { M: { 4: { 1: "januar", 2: "februar", 3: "marts", 4: "april", 5: "maj", 6: "juni", 7: "juli", 8: "august", 9: "september", 10: "oktober", 11: "november", 12: "december" } } } })),
+                (k.b750137029 = v({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "d. MMM h.mm a", timeSeparator: ".", months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } }, dayPeriods: { am: "AM", pm: "PM" } })),
+                (k.a513597776 = v({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "dd/MM/y", timeSeparator: "." })),
+                (k.a2100554932 = v({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "y", timeSeparator: "." })),
+                (k.a1144760963 = v({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "MMM y", timeSeparator: ".", months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } } })),
+                (k.a1702309718 = v({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "EEEE 'den' d. MMMM y 'kl'. HH.mm.ss zzzz", timeSeparator: ".", days: { E: { 4: { sun: "søndag", mon: "mandag", tue: "tirsdag", wed: "onsdag", thu: "torsdag", fri: "fredag", sat: "lørdag" } } }, months: { M: { 4: { 1: "januar", 2: "februar", 3: "marts", 4: "april", 5: "maj", 6: "juni", 7: "juli", 8: "august", 9: "september", 10: "oktober", 11: "november", 12: "december" } } }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: "+HH.mm;-HH.mm" })),
+                (k.b865201168 = v({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "d. MMM y HH.mm.ss", timeSeparator: ".", months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } } })),
+                (k.a1150972308 = v({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "dd/MM/y", timeSeparator: "." })),
+                (k.a1168942289 = v({ 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "HH.mm", timeSeparator: "." })),
+                (k.b1425938237 = v({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "E h.mm a", timeSeparator: ".", days: { E: { 1: { sun: "søn.", mon: "man.", tue: "tir.", wed: "ons.", thu: "tor.", fri: "fre.", sat: "lør." } } }, dayPeriods: { am: "AM", pm: "PM" } })),
+                (k.a1129046132 = v({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "MMMM y", timeSeparator: ".", months: { M: { 4: { 1: "januar", 2: "februar", 3: "marts", 4: "april", 5: "maj", 6: "juni", 7: "juli", 8: "august", 9: "september", 10: "oktober", 11: "november", 12: "december" } } } })),
+                (k.a2002550103 = v({}, { pattern: "cccc", timeSeparator: ".", days: { c: { 4: { sun: "søndag", mon: "mandag", tue: "tirsdag", wed: "onsdag", thu: "torsdag", fri: "fredag", sat: "lørdag" } } } })),
+                (k.b1364206429 = v({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "d. MMM y", timeSeparator: ".", months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } } })),
+                (k.a749304663 = v({}, { pattern: "MMMM", timeSeparator: ".", months: { M: { 4: { 1: "januar", 2: "februar", 3: "marts", 4: "april", 5: "maj", 6: "juni", 7: "juli", 8: "august", 9: "september", 10: "oktober", 11: "november", 12: "december" } } } })),
+                (k.a358582775 = p(k("da").dateToPartsFormatter({ skeleton: "MMMd" }))),
+                (k.a1881013702 = p(k("da").dateToPartsFormatter({ skeleton: "yMMMd" }))),
+                (k.b157018999 = p(k("da").dateToPartsFormatter({ skeleton: "hm" }))),
+                (k.b1795585174 = p(k("da").dateToPartsFormatter({ skeleton: "MMMEd" }))),
+                (k.b1844866693 = p(k("da").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
+                (k.b1788197006 = p(k("da").dateToPartsFormatter({ skeleton: "MMMMd" }))),
+                (k.b2124086688 = p(k("da").dateToPartsFormatter({ datetime: "long" }))),
+                (k.b462946911 = p(k("da").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
+                (k.a1139670867 = p(k("da").dateToPartsFormatter({ date: "long" }))),
+                (k.a1064780178 = p(k("da").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
+                (k.b1591585127 = p(k("da").dateToPartsFormatter({ date: "short" }))),
+                (k.b4627971 = p(k("da").dateToPartsFormatter({ skeleton: "y" }))),
+                (k.a753353882 = p(k("da").dateToPartsFormatter({ skeleton: "yMMM" }))),
+                (k.a1310902637 = p(k("da").dateToPartsFormatter({ datetime: "full" }))),
+                (k.a949716039 = p(k("da").dateToPartsFormatter({ datetime: "medium" }))),
+                (k.a1902254685 = p(k("da").dateToPartsFormatter({ skeleton: "yMMdd" }))),
+                (k.b936240614 = p(k("da").dateToPartsFormatter({ time: "short" }))),
+                (k.b1577111604 = p(k("da").dateToPartsFormatter({ skeleton: "Ehm" }))),
+                (k.a1880328509 = p(k("da").dateToPartsFormatter({ skeleton: "yMMMM" }))),
+                (k.a1611143022 = p(k("da").dateToPartsFormatter({ skeleton: "EEEE" }))),
+                (k.a2094600314 = p(k("da").dateToPartsFormatter({ date: "medium" }))),
+                (k.a357897582 = p(k("da").dateToPartsFormatter({ skeleton: "MMMM" }))),
                 (k.a1069287050 = h(k("da").numberFormatter({}), k("da").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "om {0} dag", "relativeTimePattern-count-other": "om {0} dage" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "for {0} dag siden", "relativeTimePattern-count-other": "for {0} dage siden" }, "relative-type--2": "i forgårs", "relative-type--1": "i går", "relative-type-0": "i dag", "relative-type-1": "i morgen", "relative-type-2": "i overmorgen" })),
                 (k.b1545601425 = y(k("da").numberFormatter({}), k("da").pluralGenerator({}), { compoundUnitPattern: "{0} pr. {1}", unitProperties: { displayName: "sekunder", one: "{0} sekund", other: "{0} sekunder", perUnitPattern: "{0} pr. sekund" } })),
                 (k.a862402575 = y(k("da").numberFormatter({}), k("da").pluralGenerator({}), { compoundUnitPattern: "{0} pr. {1}", unitProperties: { displayName: "minutter", one: "{0} minut", other: "{0} minutter", perUnitPattern: "{0} pr. min." } })),
@@ -13392,4 +13376,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.6dfa0c4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.d8ab24da.js.map

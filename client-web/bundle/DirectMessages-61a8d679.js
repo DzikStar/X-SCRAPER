@@ -269,7 +269,7 @@
                 z = U(G);
         },
         513232: (e, t, n) => {
-            n.r(t), n.d(t, { ConversationInfoScreen: () => Ae, default: () => Me, styles: () => Ue });
+            n.r(t), n.d(t, { ConversationInfoScreen: () => De, default: () => Ue, styles: () => Ae });
             n(136728);
             var o = n(202784),
                 a = n(325686),
@@ -374,18 +374,17 @@
                 Se = _().e133be4e,
                 Te = _().b7867912,
                 Ze = _().gaddb872,
-                we = _().d83414a1,
-                Ie = _().a5bbfecd,
-                xe = _().cde6e1ff,
-                ke = _().d87bff5a,
-                Pe = [
+                we = _().a5bbfecd,
+                Ie = _().cde6e1ff,
+                xe = _().d87bff5a,
+                ke = [
                     { duration: 1, displayText: _().j37c4674, toast: _().je7e1fed, toastOld: _().hf94a2d6 },
                     { duration: 2, displayText: _().fb7a43c6, toast: _().e95c8f8b, toastOld: _().bd54fad2 },
                     { duration: 3, displayText: _().cb5bf56e, toast: _().gb7a130b, toastOld: _().f6fce0fe },
                     { duration: 0, displayText: _().cabeb6c2, toast: _().i78153dd, toastOld: _().hfc86556 },
                 ],
-                De = { page: "messages", section: "conversation_settings" };
-            class Ae extends o.Component {
+                Pe = { page: "messages", section: "conversation_settings" };
+            class De extends o.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._withSecretDM = () => {
@@ -426,7 +425,7 @@
                                 t = !e?.trusted;
                             return o.createElement(S.rC.Consumer, null, ({ featureSwitches: e }) => o.createElement(a.Z, null, this._renderEncryptedConversationLabel(), this._renderGroupSection(), this._renderParticipantsSection(), t ? null : this._renderNotificationsSection(), this._renderConversationActions()));
                         }),
-                        (this._getItems = () => Pe.map((e) => ({ text: e.displayText, onClick: () => this._handleNotificationsDisabled(e) }))),
+                        (this._getItems = () => ke.map((e) => ({ text: e.displayText, onClick: () => this._handleNotificationsDisabled(e) }))),
                         (this._renderActionMenu = () => (e) => o.createElement(r.Z, { items: this._getItems(), onCloseRequested: e })),
                         (this._handleViewPeople = () => {
                             this._scribeAction("view_participants");
@@ -538,37 +537,37 @@
                 render() {
                     const { conversation: e, conversationId: t, fetchStatus: n } = this.props,
                         a = e?.type === A.eD.GROUP;
-                    return o.createElement(N.Z, { backLocation: `/messages/${t}`, screenType: "secondaryDetail", title: a ? te : ee, withBottomTabBar: !1 }, o.createElement(i.Z, { style: Ue.root }, o.createElement(y.Z, { "aria-label": ke, fetchStatus: n, onRequestRetry: this._handleFetch, render: this._renderContent })));
+                    return o.createElement(N.Z, { backLocation: `/messages/${t}`, screenType: "secondaryDetail", title: a ? te : ee, withBottomTabBar: !1 }, o.createElement(i.Z, { style: Ae.root }, o.createElement(y.Z, { "aria-label": xe, fetchStatus: n, onRequestRetry: this._handleFetch, render: this._renderContent })));
                 }
                 _renderGroupSection() {
                     const { conversation: e, conversationId: t, groupName: n, perspective: a } = this.props,
                         r = e?.type === A.eD.GROUP,
                         i = e?.trusted;
-                    return r ? o.createElement(s.Z, { avatarCell: o.createElement(U.Z, { conversation: e, perspective: a }), cellStyle: Ue.groupSectionRight, style: Ue.groupSection }, o.createElement(c.ZP, { numberOfLines: 1, weight: "bold" }, n), i ? o.createElement(c.ZP, { link: `/messages/${t}/group-info`, style: Ue.edit }, ne) : null) : null;
+                    return r ? o.createElement(s.Z, { avatarCell: o.createElement(U.Z, { conversation: e, perspective: a }), cellStyle: Ae.groupSectionRight, style: Ae.groupSection }, o.createElement(c.ZP, { numberOfLines: 1, weight: "bold" }, n), i ? o.createElement(c.ZP, { link: `/messages/${t}/group-info`, style: Ae.edit }, ne) : null) : null;
                 }
                 _renderParticipantsSection() {
                     const { conversation: e, conversationId: t, showViewPeople: n, visibleParticipants: r } = this.props,
                         i = e?.type === A.eD.GROUP,
                         s = e?.type === A.eD.ONE_TO_ONE,
                         c = e?.trusted;
-                    return o.createElement(a.Z, null, i ? o.createElement(o.Fragment, null, o.createElement(l.Z, null), o.createElement(d.Z, { text: oe })) : null, o.createElement(T.Z, { displayMode: D.Z.UserCompact, userIds: r }), n ? o.createElement(p.Z, { color: "primary", label: ae, link: `/messages/${t}/participants`, onClick: this._handleViewPeople }) : null, i && c ? o.createElement(p.Z, { color: "primary", label: re, link: `/messages/${t}/add` }) : null, s && this._withSecretDM() && c ? o.createElement(h.ZP, { link: `/messages/e${t}`, style: Ue.encryptedConversationButton, type: "primaryOutlined" }, ie) : null);
+                    return o.createElement(a.Z, null, i ? o.createElement(o.Fragment, null, o.createElement(l.Z, null), o.createElement(d.Z, { text: oe })) : null, o.createElement(T.Z, { displayMode: D.Z.UserCompact, userIds: r }), n ? o.createElement(p.Z, { color: "primary", label: ae, link: `/messages/${t}/participants`, onClick: this._handleViewPeople }) : null, i && c ? o.createElement(p.Z, { color: "primary", label: re, link: `/messages/${t}/add` }) : null, s && this._withSecretDM() && c ? o.createElement(h.ZP, { link: `/messages/e${t}`, style: Ae.encryptedConversationButton, type: "primaryOutlined" }, ie) : null);
                 }
                 _renderEncryptedConversationLabel() {
                     const { conversation: e } = this.props;
                     if (!(e?.type === A.eD.SECRET_ONE_TO_ONE)) return null;
-                    const t = o.createElement(f.default, { style: Ue.iconLock }),
-                        n = o.createElement(c.ZP, { size: "body", style: Ue.encryptedConversationLabel, weight: "bold" });
-                    return o.createElement(a.Z, { style: Ue.encryptedConversationContainer }, o.createElement(_().I18NFormatMessage, { $i18n: "c6dca173" }, t, o.cloneElement(n, null, _().je9455da)), o.createElement(M.X, null));
+                    const t = o.createElement(f.default, { style: Ae.iconLock }),
+                        n = o.createElement(c.ZP, { size: "body", style: Ae.encryptedConversationLabel, weight: "bold" });
+                    return o.createElement(a.Z, { style: Ae.encryptedConversationContainer }, o.createElement(_().I18NFormatMessage, { $i18n: "c6dca173" }, t, o.cloneElement(n, null, _().je9455da)), o.createElement(M.X, null));
                 }
                 _renderSnoozeConversationSwitch() {
                     const { muteExpirationTime: e, notificationsDisabled: t } = this.props,
                         n = this._getNameOfGroupOrOneToOneConvo(),
                         r = ce({ name: n });
-                    return t ? o.createElement(a.Z, { role: "label" }, o.createElement(a.Z, { style: Ue.notificationsToggleContainer }, o.createElement(c.ZP, null, r), o.createElement(u.Z, { onValueChange: this._handleNotificationsEnabled(), value: t })), e ? o.createElement(c.ZP, { color: "gray700", size: "subtext2", style: Ue.notificationsDescription }, this._displayExpirationTime()) : null) : o.createElement(a.Z, { style: Ue.notificationsToggleContainer }, o.createElement(c.ZP, null, r), o.createElement(O.Z, { "aria-label": r, renderMenu: this._renderActionMenu() }, o.createElement(u.Z, { onValueChange: b.Z, value: t })));
+                    return t ? o.createElement(a.Z, { role: "label" }, o.createElement(a.Z, { style: Ae.notificationsToggleContainer }, o.createElement(c.ZP, null, r), o.createElement(u.Z, { onValueChange: this._handleNotificationsEnabled(), value: t })), e ? o.createElement(c.ZP, { color: "gray700", size: "subtext2", style: Ae.notificationsDescription }, this._displayExpirationTime()) : null) : o.createElement(a.Z, { style: Ae.notificationsToggleContainer }, o.createElement(c.ZP, null, r), o.createElement(O.Z, { "aria-label": r, renderMenu: this._renderActionMenu() }, o.createElement(u.Z, { onValueChange: b.Z, value: t })));
                 }
                 _renderSnoozeMentionsSwitch() {
                     const { mentionNotificationsDisabled: e } = this.props;
-                    return o.createElement(a.Z, null, o.createElement(a.Z, { role: "label", style: Ue.notificationsToggleContainer }, o.createElement(c.ZP, null, pe), o.createElement(u.Z, { onValueChange: this._handleMentionSwitchChanged, value: e })), o.createElement(c.ZP, { color: "gray700", size: "subtext2", style: Ue.notificationsDescription }, he));
+                    return o.createElement(a.Z, null, o.createElement(a.Z, { role: "label", style: Ae.notificationsToggleContainer }, o.createElement(c.ZP, null, pe), o.createElement(u.Z, { onValueChange: this._handleMentionSwitchChanged, value: e })), o.createElement(c.ZP, { color: "gray700", size: "subtext2", style: Ae.notificationsDescription }, he));
                 }
                 _renderNotificationsSection() {
                     const { conversation: e, isSelfConversation: t } = this.props,
@@ -596,7 +595,7 @@
                         t = this._getScreenNameOfOneToOneConvo(),
                         n = this._getDMBlockedOfOneToOneConvo(),
                         a = this._getBlockedOfOneToOneConvo(),
-                        r = n ? xe({ screenName: t }) : ye({ screenName: t }),
+                        r = n ? Ie({ screenName: t }) : ye({ screenName: t }),
                         i = n ? Ze : Ce;
                     return e || a ? null : o.createElement(E.Z, { color: "primary", confirmationSheetText: r, label: i, onConfirmationSheetConfirm: n ? this._handleDMUnblockUser : this._handleDMBlockUser });
                 }
@@ -604,7 +603,7 @@
                     const { isSelfConversation: e } = this.props,
                         t = this._getScreenNameOfOneToOneConvo(),
                         n = this._getBlockedOfOneToOneConvo(),
-                        a = n ? (this.context.featureSwitches.isTrue("xprofile_blocked_by_view_enabled") ? Ie({ screenName: t }) : we({ screenName: t })) : Ee({ screenName: t }),
+                        a = n ? we({ screenName: t }) : Ee({ screenName: t }),
                         r = n ? Te : be;
                     return e ? null : o.createElement(E.Z, { color: "primary", confirmationSheetText: a, label: r, onConfirmationSheetConfirm: n ? this._handleUnblockUser : this._handleBlockUser });
                 }
@@ -614,21 +613,21 @@
                         i = P.C2.DMConversation,
                         { featureSwitches: s } = this.context,
                         c = e?.type === A.eD.GROUP ? "0" : this._getUserIdOfOneToOneConvo(),
-                        l = (0, P.Yw)(s, i) ? { pathname: "/i/safety/report_story_start", state: { input: { requested_variant: JSON.stringify((0, P.j_)({ clientReferer: window.location.pathname, isMedia: !1, isPromoted: !1, reportType: i, reportedConversationId: t, reportedUser: c, scribeNamespace: De })) } } } : { pathname: `/i/report/dm_conversation/${t}`, state: { clientReferer: window.location.pathname, scribeNamespace: De, inboxType: n } };
+                        l = (0, P.Yw)(s, i) ? { pathname: "/i/safety/report_story_start", state: { input: { requested_variant: JSON.stringify((0, P.j_)({ clientReferer: window.location.pathname, isMedia: !1, isPromoted: !1, reportType: i, reportedConversationId: t, reportedUser: c, scribeNamespace: Pe })) } } } : { pathname: `/i/report/dm_conversation/${t}`, state: { clientReferer: window.location.pathname, scribeNamespace: Pe, inboxType: n } };
                     return a ? null : o.createElement(p.Z, { color: "primary", label: r, link: l, onPress: this._handleReportConversation });
                 }
                 _renderReportDSAButton() {
                     const { conversationId: e, inboxType: t } = this.props,
                         { featureSwitches: n } = this.context,
                         a = n.isTrue("dsa_report_flow_enabled"),
-                        r = { pathname: (0, B.vg)(n, { conversation_id: e, is_encrypted: (0, B.NL)(e), type: "conversation" }), state: { clientReferer: window.location.pathname, scribeNamespace: De, inboxType: t } };
+                        r = { pathname: (0, B.vg)(n, { conversation_id: e, is_encrypted: (0, B.NL)(e), type: "conversation" }), state: { clientReferer: window.location.pathname, scribeNamespace: Pe, inboxType: t } };
                     return a ? o.createElement(p.Z, { color: "primary", label: fe, link: r, onPress: this._handleReportConversation }) : null;
                 }
             }
-            Ae.contextType = S.rC;
-            const Ue = m.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground }, edit: { flexShrink: 0 }, groupSection: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, groupSectionRight: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, encryptedConversationButton: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space20 }, encryptedConversationContainer: { flexDirection: "row", justifyContent: "center", alignItems: "center", backgroundColor: e.colors.gray0, marginVertical: e.spaces.space12 }, encryptedConversationLabel: { margin: e.spaces.space12 }, iconLock: { color: e.colors.text }, notificationsToggleContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1, justifyContent: "space-between", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, notificationsDescription: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingBottom: e.componentDimensions.gutterVertical, paddingTop: 0 } })),
-                Me = Q(Ae);
+            De.contextType = S.rC;
+            const Ae = m.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground }, edit: { flexShrink: 0 }, groupSection: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, groupSectionRight: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, encryptedConversationButton: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space20 }, encryptedConversationContainer: { flexDirection: "row", justifyContent: "center", alignItems: "center", backgroundColor: e.colors.gray0, marginVertical: e.spaces.space12 }, encryptedConversationLabel: { margin: e.spaces.space12 }, iconLock: { color: e.colors.text }, notificationsToggleContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1, justifyContent: "space-between", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, notificationsDescription: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingBottom: e.componentDimensions.gutterVertical, paddingTop: 0 } })),
+                Ue = Q(De);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-61a8d679.63cc7afa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-61a8d679.2545be8a.js.map

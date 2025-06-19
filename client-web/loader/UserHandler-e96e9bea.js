@@ -3,7 +3,7 @@
     ["loader.UserHandler-e96e9bea"],
     {
         333241: (e, o, t) => {
-            t.d(o, { Z: () => P });
+            t.d(o, { Z: () => w });
             t(136728);
             var n = t(202784),
                 r = t(638236),
@@ -12,23 +12,21 @@
                 i = t.n(s),
                 d = t(415506),
                 l = t(516951),
-                c = t(443781),
-                u = t(376293),
-                h = t(847607),
-                m = t(417714),
-                p = t(988823);
-            const f = "block",
+                c = t(376293),
+                u = t(847607),
+                h = t(417714),
+                m = t(988823);
+            const p = "block",
                 v = "mute",
-                D = "removeFollower",
-                b = "report",
+                f = "removeFollower",
+                D = "report",
                 S = "share",
-                _ = i().j7bb1a43,
-                w = i().hef5960c,
-                P = (0, p.M)((e) => {
-                    const { featureSwitches: o } = (0, c.QZ)(),
-                        { onBlock: t, onClose: s, onMute: i, onRemoveFollower: p, onReportUser: P, onShare: y, onUnblock: M, onUnmute: C, user: I } = e,
-                        T = [],
-                        k = (o, t) => {
+                b = i().j7bb1a43,
+                P = i().hef5960c,
+                w = (0, m.M)((e) => {
+                    const { onBlock: o, onClose: t, onMute: s, onRemoveFollower: i, onReportUser: m, onShare: w, onUnblock: _, onUnmute: y, user: M } = e,
+                        C = [],
+                        I = (o, t) => {
                             const { confirm: n, onClose: r } = e;
                             if (o) {
                                 const { label: e, ...a } = o;
@@ -38,51 +36,51 @@
                             } else t();
                         };
                     !!window.navigator.share &&
-                        !I.protected &&
-                        !I.blocking &&
-                        !I.blocked_by &&
-                        T.push({
+                        !M.protected &&
+                        !M.blocking &&
+                        !M.blocked_by &&
+                        C.push({
                             Icon: r.Z,
                             onClick: () => {
-                                s(), y();
+                                t(), w();
                             },
                             testID: S,
-                            text: w,
+                            text: P,
                         });
-                    !I.blocking &&
-                        T.push({
-                            ...(0, h.N1)(
-                                I,
+                    !M.blocking &&
+                        C.push({
+                            ...(0, u.N1)(
+                                M,
                                 () => {
-                                    s(), i();
+                                    t(), s();
                                 },
                                 () => {
-                                    s(), C();
+                                    t(), y();
                                 },
                             ),
                             testID: v,
                         });
-                    I.followed_by &&
-                        T.push({
-                            ...(0, m.l)({
+                    M.followed_by &&
+                        C.push({
+                            ...(0, h.l)({
                                 removeFollowerAction: (e) => {
-                                    k(e, p);
+                                    I(e, i);
                                 },
-                                user: I,
+                                user: M,
                             }),
-                            testID: D,
+                            testID: f,
                         }),
-                        T.push((0, u.op)({ blockAction: (e) => k(e, t), isSoftBlockEnabled: o.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: f, unblockAction: (e) => k(e, M), user: I })),
-                        T.push({
+                        C.push((0, c.op)({ blockAction: (e) => I(e, o), source: c.SC.FOLLOWERS_LIST, testID: p, unblockAction: (e) => I(e, _), user: M })),
+                        C.push({
                             Icon: d.default,
                             onClick: () => {
-                                s(), P();
+                                t(), m();
                             },
-                            testID: b,
-                            text: _({ screenName: I.screen_name }),
+                            testID: D,
+                            text: b({ screenName: M.screen_name }),
                         });
-                    const A = T.map(({ Icon: e, onClick: o, testID: t, text: n }) => ({ text: n, onClick: o, Icon: e, testID: t }));
-                    return n.createElement(a.Z, { items: A, onCloseRequested: s });
+                    const T = C.map(({ Icon: e, onClick: o, testID: t, text: n }) => ({ text: n, onClick: o, Icon: e, testID: t }));
+                    return n.createElement(a.Z, { items: T, onCloseRequested: t });
                 });
         },
         864479: (e, o, t) => {
@@ -106,22 +104,22 @@
                 h = t(668214),
                 m = t(257166),
                 p = t(919022);
-            const f = (e, o) => !(!o.allowPromptForPush || !m.selectShouldPromptBrowserPush(e)),
-                v = (0, h.Z)()
-                    .propsFromState(() => ({ shouldPromptPush: f }))
+            const v = (e, o) => !(!o.allowPromptForPush || !m.selectShouldPromptBrowserPush(e)),
+                f = (0, h.Z)()
+                    .propsFromState(() => ({ shouldPromptPush: v }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, u.zr)("DEVICE_FOLLOW_BUTTON_CONTAINER"), updateDeviceFollowing: p.ZP.updateDeviceFollowing }))
                     .withAnalytics({ element: "mobile_notifications" }),
                 D = s().bdba3e1a,
-                b = s().c4da7d28,
-                S = s().j87c21f4,
-                _ = s().iebc30ca,
+                S = s().c4da7d28,
+                b = s().j87c21f4,
+                P = s().iebc30ca,
                 w = s().dc740eb2;
-            class P extends n.PureComponent {
+            class _ extends n.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderButton = () => {
                             const { isFollowing: e, style: o } = this.props;
-                            return e ? n.createElement(r.ZP, { "aria-label": b, hoverLabel: { label: _ }, icon: n.createElement(i.default, null), onPress: this._handleUnfollow, style: o, type: "primaryOutlined" }) : n.createElement(r.ZP, { "aria-label": D, hoverLabel: { label: S }, icon: n.createElement(d.default, null), onPress: this._handleFollow, style: o, type: "primaryOutlined" });
+                            return e ? n.createElement(r.ZP, { "aria-label": S, hoverLabel: { label: P }, icon: n.createElement(i.default, null), onPress: this._handleUnfollow, style: o, type: "primaryOutlined" }) : n.createElement(r.ZP, { "aria-label": D, hoverLabel: { label: b }, icon: n.createElement(d.default, null), onPress: this._handleFollow, style: o, type: "primaryOutlined" });
                         }),
                         (this._handleFollow = () => {
                             const { isDeviceFollowWithoutUserFollow: e, shouldPromptPush: o } = this.props;
@@ -150,7 +148,7 @@
                     o.scribeAction(e);
                 }
             }
-            const y = v(P);
+            const y = f(_);
         },
         168222: (e, o, t) => {
             t.r(o), t.d(o, { default: () => M });
@@ -166,19 +164,19 @@
                 h = t(663550),
                 m = t(23679);
             const p = (e) => (e ? { disclosure_type: e.disclosureType, impression_id: e.impressionId } : void 0);
-            var f = t(668214),
-                v = t(204744),
+            var v = t(668214),
+                f = t(204744),
                 D = t(919022);
-            const b = (e, o) => {
+            const S = (e, o) => {
                     const { id: t } = ((e, o) => o.entry.content)(0, o);
                     return t ? D.ZP.select(e, t) : void 0;
                 },
-                S = (0, f.Z)()
-                    .propsFromState(() => ({ user: b }))
-                    .propsFromActions(({ module: e }) => ({ saveAsRecentSearch: v.DI, applyReactionInstructions: e.applyReactionInstructions }))
+                b = (0, v.Z)()
+                    .propsFromState(() => ({ user: S }))
+                    .propsFromActions(({ module: e }) => ({ saveAsRecentSearch: f.DI, applyReactionInstructions: e.applyReactionInstructions }))
                     .withAnalytics(),
-                _ = (e) => {
-                    const { analytics: o, applyReactionInstructions: t, cellClickable: n, decoration: i, entry: l, isCarouselItem: f, onClick: v, saveAsRecentSearch: D, shouldScribeImpression: b, shouldScribeProfileClick: S, shouldStoreTypeaheadItem: _, user: P, withFollowsYou: y, withLink: M } = e,
+                P = (e) => {
+                    const { analytics: o, applyReactionInstructions: t, cellClickable: n, decoration: i, entry: l, isCarouselItem: v, onClick: f, saveAsRecentSearch: D, shouldScribeImpression: S, shouldScribeProfileClick: b, shouldStoreTypeaheadItem: P, user: _, withFollowsYou: y, withLink: M } = e,
                         {
                             content: { id: C, promotedMetadata: I, socialContext: T },
                         } = l,
@@ -190,22 +188,22 @@
                         O = l.itemMetadata && l.itemMetadata.clientEventInfo && l.itemMetadata.clientEventInfo.details && l.itemMetadata.clientEventInfo.details.timelinesDetails && l.itemMetadata.clientEventInfo.details.timelinesDetails.injectionType;
                     (0, c.q)(() => {
                         if ("WhoToFollow" === O) {
-                            const e = P ? [r.Z.getUserItem(P)] : [];
-                            P?.following ? o.scribe({ element: "followed_user", action: "impression", data: { items: e } }) : P?.muting ? o.scribe({ element: "muted_user", action: "impression", data: { items: e } }) : P?.blocking && o.scribe({ element: "blocked_user", action: "impression", data: { items: e } });
+                            const e = _ ? [r.Z.getUserItem(_)] : [];
+                            _?.following ? o.scribe({ element: "followed_user", action: "impression", data: { items: e } }) : _?.muting ? o.scribe({ element: "muted_user", action: "impression", data: { items: e } }) : _?.blocking && o.scribe({ element: "blocked_user", action: "impression", data: { items: e } });
                         }
                     });
                     const F = d.useCallback(() => {
                         t({ entry: l, triggerName: m.K.ON_FOLLOW });
                     }, [t, l]);
-                    return d.createElement(s.Z9, { cellClickable: n, decoration: g, displayMode: R, isConcise: f, onClick: v, onFollowClick: F, promotedContent: k, promotedItemType: h.bj.USER, referringPage: R, saveAsRecentSearch: D, shouldScribeImpression: b, shouldScribeProfileClick: S, shouldStoreTypeaheadItem: _, socialContext: A, style: f && w.isCarouselItem, userId: C, withFollowsYou: y, withLink: M });
+                    return d.createElement(s.Z9, { cellClickable: n, decoration: g, displayMode: R, isConcise: v, onClick: f, onFollowClick: F, promotedContent: k, promotedItemType: h.bj.USER, referringPage: R, saveAsRecentSearch: D, shouldScribeImpression: S, shouldScribeProfileClick: b, shouldStoreTypeaheadItem: P, socialContext: A, style: v && w.isCarouselItem, userId: C, withFollowsYou: y, withLink: M });
                 },
                 w = l.default.create((e) => ({ isCarouselItem: { width: 312 } })),
-                P = S(d.memo(_)),
+                _ = b(d.memo(P)),
                 y = [s.ET, s.C_],
                 M = ({ cellClickable: e = !0, decoration: o, displayMode: t = a.Z.UserCompact, isCarouselItem: s, onClick: d, shouldScribeProfileClick: l = !0, shouldScribeImpression: c = !1, shouldStoreTypeaheadItem: u, withLink: h = !0 }) =>
                     i
                         .iH({
-                            component: P,
+                            component: _,
                             defaultScribeNamespace: { element: "user" },
                             getScribeDataItem(e) {
                                 const {
@@ -270,7 +268,7 @@
             };
         },
         847607: (e, o, t) => {
-            t.d(o, { Aq: () => u, FK: () => b, GS: () => i, N1: () => m, PY: () => h, X6: () => S, cm: () => d });
+            t.d(o, { Aq: () => u, FK: () => S, GS: () => i, N1: () => m, PY: () => h, X6: () => b, cm: () => d });
             t(202784);
             var n = t(111677),
                 r = t.n(n),
@@ -287,11 +285,11 @@
                     return { text: n ? h(r) : u(r), onClick: n ? t : o, Icon: n ? a.default : s.default };
                 },
                 p = r().h59f52ee,
-                f = r().eea0cbee,
-                v = r().i29533b3,
+                v = r().eea0cbee,
+                f = r().i29533b3,
                 D = r().h129c3c3,
-                b = (e) => (e ? ((e) => v({ screenName: e }))(e) : p),
-                S = (e) => (e ? ((e) => D({ screenName: e }))(e) : f);
+                S = (e) => (e ? ((e) => f({ screenName: e }))(e) : p),
+                b = (e) => (e ? ((e) => D({ screenName: e }))(e) : v);
         },
         417714: (e, o, t) => {
             t.d(o, { l: () => c });
@@ -353,7 +351,7 @@
             };
         },
         694180: (e, o, t) => {
-            t.d(o, { cM: () => v, dS: () => f, iY: () => D });
+            t.d(o, { cM: () => f, dS: () => v, iY: () => D });
             var n = t(370751),
                 r = t(399896),
                 a = t(663550),
@@ -366,7 +364,7 @@
                 h = (0, n.Z)([a.AJ.TREND_VIEW, a.AJ.SPOTLIGHT_IMPRESSION]),
                 m = (e) => ({ payload: { eventKey: e }, type: c });
             const p = (e, o) => !!e.promotedContent[o],
-                f =
+                v =
                     (e) =>
                     (o, t, { api: n }) => {
                         const { event: a, impression_id: s, promoted_trend_id: d } = e,
@@ -377,16 +375,16 @@
                             if (!o && h.has(a)) return [m(c)];
                         });
                     },
-                v =
+                f =
                     ({ disclosureType: e, itemId: o, itemType: t, params: n }) =>
                     (a, s, { api: d }) => {
                         const { event: c, impression_id: h } = n,
-                            f = `${t}-${o ?? "undefined"}-${h ?? "undefined"}-${c ?? "undefined"}`;
-                        if (u.has(c) && p(s(), f)) return Promise.resolve();
-                        const v = e && "earned" === e.toLowerCase() ? "1" : null,
-                            D = { ...n, earned: v, epoch_ms: Date.now() };
+                            v = `${t}-${o ?? "undefined"}-${h ?? "undefined"}-${c ?? "undefined"}`;
+                        if (u.has(c) && p(s(), v)) return Promise.resolve();
+                        const f = e && "earned" === e.toLowerCase() ? "1" : null,
+                            D = { ...n, earned: f, epoch_ms: Date.now() };
                         return (0, i._O)(a, { params: D, request: d.withEndpoint(r.Z).log })({ actionTypes: l, context: "APP_PROMOTED_CONTENT_LOG", meta: D }, (e, o) => {
-                            if (!o && u.has(c)) return [m(f)];
+                            if (!o && u.has(c)) return [m(v)];
                         });
                     },
                 D =
@@ -406,7 +404,7 @@
             });
         },
         204744: (e, o, t) => {
-            t.d(o, { DI: () => _, H$: () => h, OB: () => w, Ww: () => c, YB: () => u, hj: () => v, qF: () => b });
+            t.d(o, { DI: () => P, H$: () => h, OB: () => w, Ww: () => c, YB: () => u, hj: () => f, qF: () => S });
             t(901951);
             var n = t(499627),
                 r = t(390387);
@@ -444,17 +442,17 @@
                 h = (e) => e[a].fetched,
                 m = "rweb/recentSearches/INIT_FROM_CACHE",
                 p = (e) => ({ type: m, payload: e }),
-                f = "rweb/recentSearches/REMOVE_QUERY",
-                v =
+                v = "rweb/recentSearches/REMOVE_QUERY",
+                f =
                     (e) =>
                     (o, t, { userPersistence: n }) => {
-                        o({ payload: e, type: f });
+                        o({ payload: e, type: v });
                         const a = t(),
                             s = c(a);
                         return (0, r.Qb)(a) ? o(i(s)) : Promise.resolve();
                     },
                 D = "rweb/recentSearches/CLEAR_ALL",
-                b =
+                S =
                     () =>
                     (e, o, { userPersistence: t }) => {
                         e({ type: D });
@@ -462,11 +460,11 @@
                             a = c(n);
                         return (0, r.Qb)(n) ? e(i(a)) : Promise.resolve();
                     },
-                S = "rweb/recentSearches/ADD_QUERY",
-                _ =
+                b = "rweb/recentSearches/ADD_QUERY",
+                P =
                     (e) =>
                     (o, t, { userPersistence: n }) => {
-                        o({ payload: e, type: S });
+                        o({ payload: e, type: b });
                         const a = t(),
                             s = c(a);
                         return (0, r.Qb)(a) ? o(i(s)) : Promise.resolve();
@@ -495,12 +493,12 @@
                 [a]: function (e = l, o) {
                     if (!o) return e;
                     switch (o.type) {
-                        case S: {
+                        case b: {
                             const t = o.payload,
                                 n = t ? d(t, e.recentSearches) : [];
                             return n.length > 49 && n.splice(49, 1), t && n.unshift(t), { ...e, recentSearches: n };
                         }
-                        case f: {
+                        case v: {
                             const t = o.payload,
                                 n = t ? d(t, e.recentSearches) : [];
                             return { ...e, recentSearches: n };
@@ -579,7 +577,7 @@
                 };
         },
         452661: (e, o, t) => {
-            t.d(o, { Z: () => f });
+            t.d(o, { Z: () => v });
             var n = t(18198),
                 r = {
                     centroidDimension: function (e, o, t, n) {
@@ -704,8 +702,8 @@
                     e.shouldCancelClick = !1;
                 }, 250);
             }
-            const f = h;
+            const v = h;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.UserHandler-e96e9bea.c9c1f11a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.UserHandler-e96e9bea.1067cb4a.js.map

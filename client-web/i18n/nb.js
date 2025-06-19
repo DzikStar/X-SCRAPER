@@ -1497,9 +1497,6 @@
                     return "Blokker @" + e.screenName;
                 }),
                 t("a6450e84", "Blokker"),
-                t("g353ad73", function (e) {
-                    return "Hen kan ikke følge deg eller se innleggene dine, og du kan ikke se innlegg eller varsler fra @" + e.screenName + ".";
-                }),
                 t("ad00a739", function (e) {
                     return "Hen kan se de offentlige innleggene dine, men kan ikke lenger engasjere seg i dem. @" + e.screenName + " kan heller ikke følge deg eller sende deg meldinger, og du får ikke varsler fra hen.";
                 }),
@@ -1511,7 +1508,6 @@
                     return "Opphev blokkeringen av @" + e.screenName;
                 }),
                 t("e133be4e", "Opphev blokkering"),
-                t("he43bca4", "Hen kan følge deg og se innleggene dine."),
                 t("f5f01af6", "Hen kan følge deg og engasjere seg i de offentlige innleggene dine."),
                 t("b6878b0a", "Noe gikk galt. Prøv å blokkere brukeren på nytt om en liten stund."),
                 t("e40252de", "Ikke vis disse innleggene i For deg"),
@@ -1920,10 +1916,10 @@
                 t("jcd5ee8a", "Rediger blokk"),
                 t("a8f09fb8", "Slett blokk"),
                 t("i89195ea", "Skillelinje"),
-                t("da8ac57c", "Rediger bildetekst");
-            t("a8fdd09c", "Publiser artikkel"),
-                t("d8047cc8", "Publiser"),
-                t("ff7ddca2", "Artikkelen din vises som et innlegg når du har publisert den. Du finner den også under fanen Artikler i profilen din."),
+                t("da8ac57c", "Rediger bildetekst"),
+                t("a8fdd09c", "Publiser artikkel"),
+                t("d8047cc8", "Publiser");
+            t("ff7ddca2", "Artikkelen din vises som et innlegg når du har publisert den. Du finner den også under fanen Artikler i profilen din."),
                 t("ef34d7be", "Målgruppe og svarkontroller kan ikke endres etter at en artikkel er publisert."),
                 t("e52d4998", "Velg målgruppe"),
                 t("d7985b24", "Velg hvem som kan svare på denne artikkelen"),
@@ -2976,10 +2972,10 @@
                 t("bc6efc72", "Personvernpolicy"),
                 t("h3161192", "Retningslinjer for informasjonskapsler"),
                 t("a7de64de", "Informasjon om Ads"),
-                t("jb0a4c36", "Blogg");
-            t("ce6d095a", "Jobbmuligheter"),
-                t("e0adec82", "Merkevareressurser"),
-                t("df1b7550", "Markedsføring"),
+                t("jb0a4c36", "Blogg"),
+                t("ce6d095a", "Jobbmuligheter"),
+                t("e0adec82", "Merkevareressurser");
+            t("df1b7550", "Markedsføring"),
                 t("he258678", "X for bedrifter"),
                 t("c6f58084", "Utviklere"),
                 t("d83f18d2", "Katalog"),
@@ -3888,10 +3884,10 @@
                 t("c371fb9a", "Slutt"),
                 t("c0ce822e", "Mikrofoninnstillinger"),
                 t("a2bf8b8a", "Bytt til lytting"),
-                t("caa8d928", "Veksle støydemping");
-            t("b5d88f0c", "Bare for ansatte"),
-                t("c855ab8e", "Bare abonnenter"),
-                t("ddeb0a3c", "Her er fellesskapet. Liker du medlemmene? Ta en titt."),
+                t("caa8d928", "Veksle støydemping"),
+                t("b5d88f0c", "Bare for ansatte"),
+                t("c855ab8e", "Bare abonnenter");
+            t("ddeb0a3c", "Her er fellesskapet. Liker du medlemmene? Ta en titt."),
                 t("e111f531", function (e) {
                     return e.count + " lytter(e)";
                 }),
@@ -4492,8 +4488,6 @@
                 }),
                 t("c9a1cb5e", "Denne kontoen finnes ikke"),
                 t("e7b201de", "Prøv å søke etter en annen."),
-                t("ica87fde", "Du er blokkert"),
-                t("c7ec6faf", "Les mer"),
                 t("e79ed125", function (e) {
                     return "@" + e.screenName + " er blokkert";
                 }),
@@ -4930,12 +4924,12 @@
                 t("fbc79a40", "Oversikt over områder"),
                 t("d077112a", "Statistikk om områder"),
                 t("cf3709da", "Status"),
-                t("e797dc32", "Strømmetid: ");
-            t("b649d8cc", "Kun abonnent"),
+                t("e797dc32", "Strømmetid: "),
+                t("b649d8cc", "Kun abonnent"),
                 t("j9282130", "Miniatyrbilde for sendingen"),
                 t("g629b8b0", "Tidsavbrutt"),
-                t("eb87323c", "Viser analysedata for valgt tid etter at direktestrømmen ble sendt."),
-                t("i6a75722", "Tidsomfang"),
+                t("eb87323c", "Viser analysedata for valgt tid etter at direktestrømmen ble sendt.");
+            t("i6a75722", "Tidsomfang"),
                 t("c602f5b8", "Totalt"),
                 t("b35e68ae", "Totalt antall deltakere"),
                 t("h78ee79a", "Total reprisetitting"),
@@ -5882,12 +5876,12 @@
                 t("hf68e810", "Fellesskapsmerknader er et program som har som mål å gjøre verden bedre informert. Via programmet kan folk på X samarbeide om å legge nyttige merknader til innlegg som kan være villedende."),
                 t("jdb52860", "Bidragsyterne skriver og evaluerer merknader"),
                 t("c104025c", "Bidragsyterne er folk på X, akkurat som deg, som har meldt seg på pilotprogrammet for å skrive og vurdere merknader. Jo flere som deltar, desto bedre fungerer programmet."),
-                t("j7872b8c", "Det er bare merknader som folk synes er nyttige, som vises i innlegg");
-            t("fb59415e", "For å bli vist offentlig som kontekst i et innlegg må en merknad bli vurdert som nyttig av tilstrekkelig mange med ulike synspunkter. På denne måten unngår vi partiskhet og manipulasjon og får merknader som er nyttige for mange."),
+                t("j7872b8c", "Det er bare merknader som folk synes er nyttige, som vises i innlegg"),
+                t("fb59415e", "For å bli vist offentlig som kontekst i et innlegg må en merknad bli vurdert som nyttig av tilstrekkelig mange med ulike synspunkter. På denne måten unngår vi partiskhet og manipulasjon og får merknader som er nyttige for mange."),
                 t("f9a44022", "X bestemmer ikke hva som vises, det gjør brukerne"),
                 t("gdf4fbb2", "Selskapet X verken skriver, vurderer eller modererer merknader (med mindre de bryter reglene til X). Vi mener at å gi folk muligheten til å ta disse avgjørelsene i fellesskap er både rettferdig og effektivt, og at det fører til informasjon som hjelper andre å holde seg bedre informert."),
-                t("cc720e6a", "Fellesskapsmerknader er basert på åpenhet rundt data"),
-                t("j2fcd33a", "Dataene inneholder bidrag frem til"),
+                t("cc720e6a", "Fellesskapsmerknader er basert på åpenhet rundt data");
+            t("j2fcd33a", "Dataene inneholder bidrag frem til"),
                 t("d4a6b322", "Her publiseres alle data fra Fellesskapsmerknader hver dag, slik at fellesskapet kan analysere dem, identifisere problemer og oppdage muligheter til å gjøre Fellesskapsmerknader bedre. Vi gleder oss til å jobbe med dette sammen med deg."),
                 t("c359263a", "Lær hvordan du bruker og analyserer data fra Fellesskapsmerknader "),
                 t("b8a27fe2", "i veiledningen"),
@@ -6482,9 +6476,6 @@
                 t("e778e3d8", "Direktemeldinger er blokkert"),
                 t("b7867912", "Opphev blokkering av alt"),
                 t("gaddb872", "Opphev blokkering av direktemeldinger"),
-                t("d83414a1", function (e) {
-                    return "Vil du oppheve blokkeringen av @" + e.screenName + "? Hen vil kunne følge deg og se innleggene dine.";
-                }),
                 t("a5bbfecd", function (e) {
                     return "Vil du oppheve blokkeringen av @" + e.screenName + "? Hen kan da følge deg og engasjere seg i de offentlige innleggene dine.";
                 }),
@@ -6890,13 +6881,13 @@
                 t("b2c213e0", "Tegngrensen er overskredet"),
                 t("d84e9c2a", "Beskriv hva slags innsats som forventes i denne rollen."),
                 t("bc8b300c", "Arbeidsoppgaver"),
-                t("d1eedb50", "Hjelp kandidater å forstå arbeidsområdet som denne rollen støtter.");
-            t("eaf3ce64", "Team"),
+                t("d1eedb50", "Hjelp kandidater å forstå arbeidsområdet som denne rollen støtter."),
+                t("eaf3ce64", "Team"),
                 t("b36cd50e", "Spesifiser kjerneteamet som ansatte kandidater skal jobbe med."),
                 t("d3a427ce", "Velg det nødvendige kompetansenivået."),
                 t("i7174442", "Beskrivelse av jobben"),
-                t("fef0cf02", "Beskriv jobben i detalj, blant annet de viktigste ansvarsområdene og kvalifikasjonene, for å gi kandidater en tydelig forståelse av rollen."),
-                t("b7800bec", "Reklamer for jobben med maksimalt 200 tegn. Dette vises i innlegg, anbefalinger og søk."),
+                t("fef0cf02", "Beskriv jobben i detalj, blant annet de viktigste ansvarsområdene og kvalifikasjonene, for å gi kandidater en tydelig forståelse av rollen.");
+            t("b7800bec", "Reklamer for jobben med maksimalt 200 tegn. Dette vises i innlegg, anbefalinger og søk."),
                 t("a5244ece", "Søknadsnettadresse (obligatorisk)"),
                 t("g2b553f6", "Oppgi den offentlige nettadressen der kandidater kan søke på denne jobben."),
                 t("c2e77608", "Stillingstittel (obligatorisk)"),
@@ -7862,7 +7853,16 @@
                 t("b5099e33", function (e) {
                     return "@" + e.screenName + " har ingen verifiserte følgere.";
                 }),
-                t("ec251f36", "Hvis noen du kjenner, følger vedkommende, vises de her.");
+                t("ec251f36", "Hvis noen du kjenner, følger vedkommende, vises de her."),
+                t("f8af4f48", "Når vedkommende følger kontoer, kan du se dette her."),
+                t("fd0aad94", "Når verifiserte brukere følger denne kontoen, vises de her."),
+                t("b84f6df1", function (e) {
+                    return "Gi Premium i gave med " + e.percentage + " % rabatt i en begrenset tid";
+                }),
+                t("cfcac293", function (e) {
+                    return "Gi i gave og betal " + e.price;
+                }),
+                t("d7a73450", "Nivå");
             function a(e, n) {
                 for (var r = 0; r < n.length; r++) {
                     var t = n[r];
@@ -7901,16 +7901,7 @@
                     d(e, n)
                 );
             }
-            t("f8af4f48", "Når vedkommende følger kontoer, kan du se dette her."),
-                t("fd0aad94", "Når verifiserte brukere følger denne kontoen, vises de her."),
-                t("b84f6df1", function (e) {
-                    return "Gi Premium i gave med " + e.percentage + " % rabatt i en begrenset tid";
-                }),
-                t("cfcac293", function (e) {
-                    return "Gi i gave og betal " + e.price;
-                }),
-                t("d7a73450", "Nivå"),
-                t("hbd2c24e", "Denne kontoen kan ikke motta gaver for øyeblikket."),
+            t("hbd2c24e", "Denne kontoen kan ikke motta gaver for øyeblikket."),
                 t("f3fddc98", "kjøpsvilkår"),
                 t("cff9c889", "Les mer"),
                 t("c65dda96", "Gaven din er sendt."),
@@ -8896,15 +8887,15 @@
                 t("faf9f484", "Annonse"),
                 t("ae2ea9e7", function (e) {
                     return "Annonse fra " + e.advertiserName;
-                });
-            t("hea01798", "Søkebryter"),
+                }),
+                t("hea01798", "Søkebryter"),
                 t("f8a09386", "Se i Periscope"),
                 t("gf2b6eee", "Bilde i bilde"),
                 t("b3160a69", function (e) {
                     return e.volumePercent + " prosent";
                 }),
-                t("fb236728", "Pause"),
-                t("e9bd453e", "Spill av på nytt"),
+                t("fb236728", "Pause");
+            t("e9bd453e", "Spill av på nytt"),
                 t("d46b00b0", "Gå til direktesendingen"),
                 t("ec8ab8b4", "Skjul"),
                 t("b8b6344a", "Vis"),
@@ -9329,7 +9320,6 @@
                 t("fe40537f", function (e) {
                     return "Vil du oppheve blokkeringen av @" + e.screenName + "?";
                 }),
-                t("ab7c3460", "Hen kan følge deg og se innleggene dine."),
                 t("i58d8718", "Hen kan følge deg og engasjere seg i de offentlige innleggene dine."),
                 t("cda66545", function (e) {
                     return "Klikk for å " + e.followType + " " + e.screenName;
@@ -11362,12 +11352,6 @@
                             },
                         },
                         {
-                            key: "e6264621",
-                            get: function () {
-                                return ["Du kan ikke følge @" + this.props.screenName + " eller se innleggene hens. "];
-                            },
-                        },
-                        {
                             key: "f98ecc47",
                             get: function () {
                                 return ["Er du sikker på at du vil se disse innleggene? Dette vil ikke oppheve blokkeringen av @" + this.props.screenName + ". "];
@@ -13388,4 +13372,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.b29dbb1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.de4ab11a.js.map

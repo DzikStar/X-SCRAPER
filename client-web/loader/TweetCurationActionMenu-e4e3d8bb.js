@@ -8,7 +8,7 @@
             const n = (0, i(523561).Z)({ loader: () => Promise.all([i.e("icons.16"), i.e("icons.25"), i.e("ondemand.LeaveThisConversation")]).then(i.bind(i, 265008)) });
         },
         376293: (e, t, i) => {
-            i.d(t, { $f: () => f, KV: () => v, LI: () => L, SC: () => k, Vt: () => _, ed: () => D, op: () => M });
+            i.d(t, { $f: () => b, KV: () => T, LI: () => S, SC: () => A, Vt: () => g, ed: () => C, op: () => k });
             var n = i(202784),
                 s = i(190286),
                 a = i(111677),
@@ -21,43 +21,44 @@
                 u = o().f9e45cfb,
                 p = o().fcd4d489,
                 y = o().a6450e84,
-                m = o().g353ad73,
-                T = o().ad00a739,
-                v = o().a9fd20be,
-                I = o().j546fb79,
-                g = o().c9623eeb,
-                _ = o().e133be4e,
-                A = o().he43bca4,
-                b = o().f5f01af6,
-                k = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                f = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: u({ screenName: e }), label: y, text: t ? T({ screenName: e }) : m({ screenName: e }) }),
-                M = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: i, source: n, testID: s, unblockAction: a, unblockSubtext: o, user: r }) => {
-                    let c,
-                        E = d.Z;
-                    const u = L(r, i);
-                    switch (n) {
-                        case k.PROFILE:
-                        case k.LIST_DETAIL:
-                        case k.FOLLOWERS_LIST:
-                            E = () => {
-                                r.blocking ? a(u) : e(u);
+                m = o().ad00a739,
+                T = o().a9fd20be,
+                v = o().j546fb79,
+                I = o().c9623eeb,
+                g = o().e133be4e,
+                _ = o().f5f01af6,
+                A = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
+                b = (e) => ({ confirmButtonType: "destructiveFilled", headline: u({ screenName: e }), label: y, text: m({ screenName: e }) }),
+                k = ({ blockAction: e, blockSubtext: t, source: i, testID: n, unblockAction: s, unblockSubtext: a, user: o }) => {
+                    let r,
+                        c = d.Z;
+                    const E = S(o);
+                    switch (i) {
+                        case A.PROFILE:
+                        case A.LIST_DETAIL:
+                        case A.FOLLOWERS_LIST:
+                            c = () => {
+                                o.blocking ? s(E) : e(E);
                             };
                             break;
-                        case k.TWEET:
-                        case k.TWEET_CARET:
-                        case k.RICH_FEEDBACK:
-                            (c = l.uq.block),
-                                (E = () => {
-                                    r.blocking ? a(u) : e(u);
+                        case A.TWEET:
+                        case A.TWEET_CARET:
+                        case A.RICH_FEEDBACK:
+                            (r = l.uq.block),
+                                (c = () => {
+                                    o.blocking ? s(E) : e(E);
                                 });
                     }
-                    return { confirmation: u, onClick: E, testID: s, shortcutKey: c, Icon: h(r.blocking), text: C(r), subText: S({ user: r, blockSubtext: t, unblockSubtext: o }) };
+                    return { confirmation: E, onClick: c, testID: n, shortcutKey: r, Icon: f(o.blocking), text: h(o), subText: M({ user: o, blockSubtext: t, unblockSubtext: a }) };
                 },
-                h = (e) => (e ? c.default : r.default),
-                S = ({ blockSubtext: e, unblockSubtext: t, user: i }) => (!i.blocking && e ? e(i.screen_name) : i.blocking ? t : void 0),
-                C = (e) => (e.blocking ? g({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
-                L = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: I({ screenName: e }), label: _, text: t ? b : A }))(e.screen_name, t) : f(e.screen_name, t)),
-                D = ({ confirmation: e, handleConfirm: t, onClose: i }) => {
+                f = (e) => (e ? c.default : r.default),
+                M = ({ blockSubtext: e, unblockSubtext: t, user: i }) => (!i.blocking && e ? e(i.screen_name) : i.blocking ? t : void 0),
+                h = (e) => (e.blocking ? I({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
+                S = (e) => {
+                    return e.blocking ? ((t = e.screen_name), { confirmButtonType: "primary", headline: v({ screenName: t }), label: g, text: _ }) : b(e.screen_name);
+                    var t;
+                },
+                C = ({ confirmation: e, handleConfirm: t, onClose: i }) => {
                     const { confirmButtonType: a, headline: o, label: r, text: c } = e;
                     return n.createElement(s.Z, { cancelButtonLabel: E, confirmButtonLabel: r, confirmButtonType: a, headline: o, onCancel: i, onConfirm: t, text: c });
                 };
@@ -279,8 +280,8 @@
                 P = M("SET_MEDIA_ID_TO_LOCAL_MEDIA_ID_MAP"),
                 R = M("SET_PREV_MEDIA_ENTITY_KEYS"),
                 x = M("SET_PREV_ARTICLE_ENTITY_MEDIA"),
-                N = M("SET_MEDIA_BEING_EDITED"),
-                Z = M("SET_MEDIA_ENTITY_KEY_BEING_EDITED"),
+                Z = M("SET_MEDIA_BEING_EDITED"),
+                N = M("SET_MEDIA_ENTITY_KEY_BEING_EDITED"),
                 B = {
                     coverMediaId: void 0,
                     editorState: ((e) => {
@@ -318,9 +319,9 @@
                             return { ...e, prevMediaEntityKeys: t.meta?.prevMediaEntityKeys || [] };
                         case x:
                             return { ...e, prevArticleEntityMedia: t.meta?.prevArticleEntityMedia || [] };
-                        case N:
-                            return { ...e, mediaBeingEdited: t.meta?.mediaBeingEdited };
                         case Z:
+                            return { ...e, mediaBeingEdited: t.meta?.mediaBeingEdited };
+                        case N:
                             return { ...e, mediaEntityKeyBeingEdited: t.meta?.mediaEntityKeyBeingEdited };
                         default:
                             return e;
@@ -344,8 +345,8 @@
                         return i ? m.ZP.selectFetchStatus(e, i) : void 0;
                     },
                     setEditorState: (e) => ({ meta: { editorState: e }, type: L }),
-                    setMediaBeingEdited: (e) => ({ meta: { mediaBeingEdited: e }, type: N }),
-                    setMediaEntityKeyBeingEdited: (e) => ({ meta: { mediaEntityKeyBeingEdited: e }, type: Z }),
+                    setMediaBeingEdited: (e) => ({ meta: { mediaBeingEdited: e }, type: Z }),
+                    setMediaEntityKeyBeingEdited: (e) => ({ meta: { mediaEntityKeyBeingEdited: e }, type: N }),
                     setMediaEntityKeyToFilesMap: (e) => ({ meta: { mediaEntityKeyToFilesMap: e }, type: w }),
                     setMediaIdToLocalMediaIdMap: (e) => ({ meta: { mediaIdToLocalMediaIdMap: e }, type: P }),
                     setPrevMediaEntityKeys: (e) => ({ meta: { prevMediaEntityKeys: e }, type: R }),
@@ -380,4 +381,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-e4e3d8bb.b1ed7baa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-e4e3d8bb.601a469a.js.map

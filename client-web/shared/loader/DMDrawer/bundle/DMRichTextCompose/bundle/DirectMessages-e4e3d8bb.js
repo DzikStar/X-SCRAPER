@@ -41,7 +41,7 @@
             });
         },
         376293: (e, t, r) => {
-            r.d(t, { $f: () => k, KV: () => g, LI: () => I, SC: () => E, Vt: () => _, ed: () => T, op: () => S });
+            r.d(t, { $f: () => D, KV: () => v, LI: () => w, SC: () => C, Vt: () => y, ed: () => M, op: () => E });
             var s = r(202784),
                 o = r(190286),
                 n = r(111677),
@@ -54,43 +54,44 @@
                 m = a().f9e45cfb,
                 h = a().fcd4d489,
                 p = a().a6450e84,
-                f = a().g353ad73,
-                v = a().ad00a739,
-                g = a().a9fd20be,
-                b = a().j546fb79,
-                y = a().c9623eeb,
-                _ = a().e133be4e,
-                C = a().he43bca4,
-                D = a().f5f01af6,
-                E = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                k = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: m({ screenName: e }), label: p, text: t ? v({ screenName: e }) : f({ screenName: e }) }),
-                S = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: r, source: s, testID: o, unblockAction: n, unblockSubtext: a, user: i }) => {
-                    let d,
-                        u = c.Z;
-                    const m = I(i, r);
-                    switch (s) {
-                        case E.PROFILE:
-                        case E.LIST_DETAIL:
-                        case E.FOLLOWERS_LIST:
-                            u = () => {
-                                i.blocking ? n(m) : e(m);
+                f = a().ad00a739,
+                v = a().a9fd20be,
+                g = a().j546fb79,
+                b = a().c9623eeb,
+                y = a().e133be4e,
+                _ = a().f5f01af6,
+                C = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
+                D = (e) => ({ confirmButtonType: "destructiveFilled", headline: m({ screenName: e }), label: p, text: f({ screenName: e }) }),
+                E = ({ blockAction: e, blockSubtext: t, source: r, testID: s, unblockAction: o, unblockSubtext: n, user: a }) => {
+                    let i,
+                        d = c.Z;
+                    const u = w(a);
+                    switch (r) {
+                        case C.PROFILE:
+                        case C.LIST_DETAIL:
+                        case C.FOLLOWERS_LIST:
+                            d = () => {
+                                a.blocking ? o(u) : e(u);
                             };
                             break;
-                        case E.TWEET:
-                        case E.TWEET_CARET:
-                        case E.RICH_FEEDBACK:
-                            (d = l.uq.block),
-                                (u = () => {
-                                    i.blocking ? n(m) : e(m);
+                        case C.TWEET:
+                        case C.TWEET_CARET:
+                        case C.RICH_FEEDBACK:
+                            (i = l.uq.block),
+                                (d = () => {
+                                    a.blocking ? o(u) : e(u);
                                 });
                     }
-                    return { confirmation: m, onClick: u, testID: o, shortcutKey: d, Icon: P(i.blocking), text: M(i), subText: w({ user: i, blockSubtext: t, unblockSubtext: a }) };
+                    return { confirmation: u, onClick: d, testID: s, shortcutKey: i, Icon: k(a.blocking), text: P(a), subText: S({ user: a, blockSubtext: t, unblockSubtext: n }) };
                 },
-                P = (e) => (e ? d.default : i.default),
-                w = ({ blockSubtext: e, unblockSubtext: t, user: r }) => (!r.blocking && e ? e(r.screen_name) : r.blocking ? t : void 0),
-                M = (e) => (e.blocking ? y({ screenName: e.screen_name }) : h({ screenName: e.screen_name })),
-                I = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: b({ screenName: e }), label: _, text: t ? D : C }))(e.screen_name, t) : k(e.screen_name, t)),
-                T = ({ confirmation: e, handleConfirm: t, onClose: r }) => {
+                k = (e) => (e ? d.default : i.default),
+                S = ({ blockSubtext: e, unblockSubtext: t, user: r }) => (!r.blocking && e ? e(r.screen_name) : r.blocking ? t : void 0),
+                P = (e) => (e.blocking ? b({ screenName: e.screen_name }) : h({ screenName: e.screen_name })),
+                w = (e) => {
+                    return e.blocking ? ((t = e.screen_name), { confirmButtonType: "primary", headline: g({ screenName: t }), label: y, text: _ }) : D(e.screen_name);
+                    var t;
+                },
+                M = ({ confirmation: e, handleConfirm: t, onClose: r }) => {
                     const { confirmButtonType: n, headline: a, label: i, text: d } = e;
                     return s.createElement(o.Z, { cancelButtonLabel: u, confirmButtonLabel: i, confirmButtonType: n, headline: a, onCancel: r, onConfirm: t, text: d });
                 };
@@ -1048,4 +1049,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-e4e3d8bb.3c29970a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-e4e3d8bb.690c8cca.js.map

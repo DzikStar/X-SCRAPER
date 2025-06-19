@@ -1501,9 +1501,6 @@
                     return "Blokeatu @" + e.screenName;
                 }),
                 o("a6450e84", "Blokeatu"),
-                o("g353ad73", function (e) {
-                    return "They will not be able to follow you or view your posts, and you will not see posts or notifications from @" + e.screenName + ".";
-                }),
                 o("ad00a739", function (e) {
                     return "They will be able to see your public posts, but will no longer be able to engage with them. @" + e.screenName + " will also not be able to follow or message you, and you will not see notifications from them.";
                 }),
@@ -1515,7 +1512,6 @@
                     return "Desblokeatu @" + e.screenName;
                 }),
                 o("e133be4e", "Desblokeatu"),
-                o("he43bca4", "They will be able to follow you and view your posts."),
                 o("f5f01af6", "They will be able to follow you and engage with your public posts."),
                 o("b6878b0a", "Arazoren bat izan da. Saiatu zaitez berriz erabiltzaile hori blokeatzen hemendik minutu batera."),
                 o("e40252de", "Don’t show these posts in For you"),
@@ -1924,10 +1920,10 @@
                 o("jcd5ee8a", "Edit block"),
                 o("a8f09fb8", "Delete block"),
                 o("i89195ea", "Divider"),
-                o("da8ac57c", "Edit Caption");
-            o("a8fdd09c", "Publish Article"),
-                o("d8047cc8", "Argitaratu"),
-                o("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                o("da8ac57c", "Edit Caption"),
+                o("a8fdd09c", "Publish Article"),
+                o("d8047cc8", "Argitaratu");
+            o("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
                 o("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
                 o("e52d4998", "Choose your audience"),
                 o("d7985b24", "Choose who can reply to this Article"),
@@ -2980,10 +2976,10 @@
                 o("bc6efc72", "Pribatutasun Politika"),
                 o("h3161192", "Cookiei buruzko gidalerroak"),
                 o("a7de64de", "Ads info"),
-                o("jb0a4c36", "Blog");
-            o("ce6d095a", "Lanbideak"),
-                o("e0adec82", "Markaren baliabideak"),
-                o("df1b7550", "Marketing"),
+                o("jb0a4c36", "Blog"),
+                o("ce6d095a", "Lanbideak"),
+                o("e0adec82", "Markaren baliabideak");
+            o("df1b7550", "Marketing"),
                 o("he258678", "X for Business"),
                 o("c6f58084", "Developers"),
                 o("d83f18d2", "Directory"),
@@ -3892,10 +3888,10 @@
                 o("c371fb9a", "Amaiera"),
                 o("c0ce822e", "Microphone settings"),
                 o("a2bf8b8a", "Switch to listening"),
-                o("caa8d928", "Toggle noise suppression");
-            o("b5d88f0c", "Employees only"),
-                o("c855ab8e", "Subscribers only"),
-                o("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
+                o("caa8d928", "Toggle noise suppression"),
+                o("b5d88f0c", "Employees only"),
+                o("c855ab8e", "Subscribers only");
+            o("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
                 o("e111f531", function (e) {
                     return e.count + " sintonizatuta";
                 }),
@@ -4496,8 +4492,6 @@
                 }),
                 o("c9a1cb5e", "Ez dago horrelako konturik."),
                 o("e7b201de", "Saiatu beste bat bilatzen."),
-                o("ica87fde", "Blokeatuta zaude"),
-                o("c7ec6faf", "Learn more"),
                 o("e79ed125", function (e) {
                     return "@" + e.screenName + " blokeatuta dago";
                 }),
@@ -4934,12 +4928,12 @@
                 o("fbc79a40", "Spaces overview"),
                 o("d077112a", "Space Stats"),
                 o("cf3709da", "Status"),
-                o("e797dc32", "Stream time: ");
-            o("b649d8cc", "Subscriber Only"),
+                o("e797dc32", "Stream time: "),
+                o("b649d8cc", "Subscriber Only"),
                 o("j9282130", "Broadcast thumbnail"),
                 o("g629b8b0", "Timed Out"),
-                o("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                o("i6a75722", "Time Range"),
+                o("eb87323c", "This shows analytics data for the selected time period since the livestream happened.");
+            o("i6a75722", "Time Range"),
                 o("c602f5b8", "Guztira"),
                 o("b35e68ae", "Total Participants"),
                 o("h78ee79a", "Total Replay Watched"),
@@ -5886,12 +5880,12 @@
                 o("hf68e810", "Community Notes is a program that aims to create a better-informed world. It empowers people on X to collaboratively add helpful notes to posts that might be misleading."),
                 o("jdb52860", "Kolaboratzaileek oharrak idatzi eta baloratzen dituzte"),
                 o("c104025c", "Contributors are people on X, just like you, who chose to enroll in the pilot to write and rate notes. The more people that participate, the better the program becomes."),
-                o("j7872b8c", "Only notes that people find helpful appear on a post");
-            o("fb59415e", "In order to be shown publicly as context on the post, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people."),
+                o("j7872b8c", "Only notes that people find helpful appear on a post"),
+                o("fb59415e", "In order to be shown publicly as context on the post, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people."),
                 o("f9a44022", "X, the company, doesn’t choose what shows up: the people do"),
                 o("gdf4fbb2", "X, the company, doesn’t write, rate or moderate notes (unless they break the X Rules). We believe giving people voice to make these choices together is a fair and effective way to add information that helps people stay better informed."),
-                o("cc720e6a", "Community Notes is built on data transparency"),
-                o("j2fcd33a", "Datuek ekarpen hauek biltzen dituzte: "),
+                o("cc720e6a", "Community Notes is built on data transparency");
+            o("j2fcd33a", "Datuek ekarpen hauek biltzen dituzte: "),
                 o("d4a6b322", "All Community Notes data are published here daily, so people have free access to analyze it, identify problems, and spot opportunities to make Community Notes better. We can’t wait to learn with you."),
                 o("c359263a", "Learn how to use and analyze Community Notes data "),
                 o("b8a27fe2", "gure gidan"),
@@ -6486,9 +6480,6 @@
                 o("e778e3d8", "Successfully blocked DMs"),
                 o("b7867912", "Unblock everything"),
                 o("gaddb872", "Unblock DMs"),
-                o("d83414a1", function (e) {
-                    return "Unblock @" + e.screenName + "? They will be able to follow you and view your posts.";
-                }),
                 o("a5bbfecd", function (e) {
                     return "Unblock @" + e.screenName + "? They will be able to follow you and engage with your public posts.";
                 }),
@@ -6894,13 +6885,13 @@
                 o("b2c213e0", "Character limit exceeded"),
                 o("d84e9c2a", "Share the type of work commitment expected for this role."),
                 o("bc8b300c", "Job Function"),
-                o("d1eedb50", "Help candidates understand the area this role supports.");
-            o("eaf3ce64", "Team"),
+                o("d1eedb50", "Help candidates understand the area this role supports."),
+                o("eaf3ce64", "Team"),
                 o("b36cd50e", "Specify the core team that candidates will work with once hired."),
                 o("d3a427ce", "Select the level of experience required."),
                 o("i7174442", "Job Description"),
-                o("fef0cf02", "Provide a detailed job description. Outline the key responsibilities and qualifications to give candidates a clear understanding of the role."),
-                o("b7800bec", "Pitch the job in 200 characters or less. Shown in posts, recommendations, and search."),
+                o("fef0cf02", "Provide a detailed job description. Outline the key responsibilities and qualifications to give candidates a clear understanding of the role.");
+            o("b7800bec", "Pitch the job in 200 characters or less. Shown in posts, recommendations, and search."),
                 o("a5244ece", "Application URL (Required)"),
                 o("g2b553f6", "Enter the public URL where candidates can apply for this job."),
                 o("c2e77608", "Job Title (Required)"),
@@ -7866,7 +7857,16 @@
                 o("b5099e33", function (e) {
                     return "@" + e.screenName + " doesn’t have any verified followers.";
                 }),
-                o("ec251f36", "Zuk ezagutzen dituzunak haren jarraitzaile direnean, hemen agertuko dira.");
+                o("ec251f36", "Zuk ezagutzen dituzunak haren jarraitzaile direnean, hemen agertuko dira."),
+                o("f8af4f48", "Kontuak jarraitzen dituztenean, hemen agertuko dira."),
+                o("fd0aad94", "When someone verified follows this account, they’ll show up here."),
+                o("b84f6df1", function (e) {
+                    return "Gift Premium at a " + e.percentage + "% discount for a limited time";
+                }),
+                o("cfcac293", function (e) {
+                    return "Gift & Pay " + e.price;
+                }),
+                o("d7a73450", "Tier");
             function n(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var o = a[t];
@@ -7905,16 +7905,7 @@
                     u(e, a)
                 );
             }
-            o("f8af4f48", "Kontuak jarraitzen dituztenean, hemen agertuko dira."),
-                o("fd0aad94", "When someone verified follows this account, they’ll show up here."),
-                o("b84f6df1", function (e) {
-                    return "Gift Premium at a " + e.percentage + "% discount for a limited time";
-                }),
-                o("cfcac293", function (e) {
-                    return "Gift & Pay " + e.price;
-                }),
-                o("d7a73450", "Tier"),
-                o("hbd2c24e", "This account is not eligible for gifts at this time."),
+            o("hbd2c24e", "This account is not eligible for gifts at this time."),
                 o("f3fddc98", "Purchaser Terms"),
                 o("cff9c889", "Learn more"),
                 o("c65dda96", "Your gift has been sent."),
@@ -8900,15 +8891,15 @@
                 o("faf9f484", "Iragarkia"),
                 o("ae2ea9e7", function (e) {
                     return "Honen iragarkia: " + e.advertiserName;
-                });
-            o("hea01798", "Bilaketa barra"),
+                }),
+                o("hea01798", "Bilaketa barra"),
                 o("f8a09386", "Ikusi Periscope-n"),
                 o("gf2b6eee", "Picture-in-Picture"),
                 o("b3160a69", function (e) {
                     return "Ehuneko " + e.volumePercent;
                 }),
-                o("fb236728", "Pausatu"),
-                o("e9bd453e", "Errepikatu"),
+                o("fb236728", "Pausatu");
+            o("e9bd453e", "Errepikatu"),
                 o("d46b00b0", "Jump to live"),
                 o("ec8ab8b4", "Isilarazi"),
                 o("b8b6344a", "Desisilarazi"),
@@ -9333,7 +9324,6 @@
                 o("fe40537f", function (e) {
                     return "@" + e.screenName + " desblokeatu nahi duzu?";
                 }),
-                o("ab7c3460", "They will be able to follow you and view your posts."),
                 o("i58d8718", "They will be able to follow you and engage with your public posts."),
                 o("cda66545", function (e) {
                     return "Egin klik " + e.followType + " " + e.screenName + " ";
@@ -11370,12 +11360,6 @@
                             },
                         },
                         {
-                            key: "e6264621",
-                            get: function () {
-                                return ["You can’t follow or see @" + this.props.screenName + "’s posts. "];
-                            },
-                        },
-                        {
                             key: "f98ecc47",
                             get: function () {
                                 return ["Are you sure you want to view these posts? Viewing posts won’t unblock @" + this.props.screenName + ". "];
@@ -13396,4 +13380,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.6780cc2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.a139584a.js.map

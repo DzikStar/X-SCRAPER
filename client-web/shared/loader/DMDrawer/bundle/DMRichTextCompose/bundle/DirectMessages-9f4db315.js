@@ -135,7 +135,7 @@
         },
         333241: (e, t, o) => {
             "use strict";
-            o.d(t, { Z: () => k });
+            o.d(t, { Z: () => y });
             o(136728);
             var r = o(202784),
                 a = o(638236),
@@ -144,23 +144,21 @@
                 n = o.n(s),
                 l = o(415506),
                 d = o(516951),
-                c = o(443781),
-                p = o(376293),
-                u = o(847607),
-                m = o(417714),
-                _ = o(988823);
-            const h = "block",
-                b = "mute",
-                f = "removeFollower",
-                w = "report",
-                g = "share",
-                v = n().j7bb1a43,
-                y = n().hef5960c,
-                k = (0, _.M)((e) => {
-                    const { featureSwitches: t } = (0, c.QZ)(),
-                        { onBlock: o, onClose: s, onMute: n, onRemoveFollower: _, onReportUser: k, onShare: P, onUnblock: I, onUnmute: F, user: Z } = e,
-                        C = [],
-                        E = (t, o) => {
+                c = o(376293),
+                p = o(847607),
+                u = o(417714),
+                m = o(988823);
+            const _ = "block",
+                h = "mute",
+                b = "removeFollower",
+                f = "report",
+                w = "share",
+                g = n().j7bb1a43,
+                v = n().hef5960c,
+                y = (0, m.M)((e) => {
+                    const { onBlock: t, onClose: o, onMute: s, onRemoveFollower: n, onReportUser: m, onShare: y, onUnblock: k, onUnmute: P, user: I } = e,
+                        F = [],
+                        Z = (t, o) => {
                             const { confirm: r, onClose: a } = e;
                             if (t) {
                                 const { label: e, ...i } = t;
@@ -170,51 +168,51 @@
                             } else o();
                         };
                     !!window.navigator.share &&
-                        !Z.protected &&
-                        !Z.blocking &&
-                        !Z.blocked_by &&
-                        C.push({
+                        !I.protected &&
+                        !I.blocking &&
+                        !I.blocked_by &&
+                        F.push({
                             Icon: a.Z,
                             onClick: () => {
-                                s(), P();
-                            },
-                            testID: g,
-                            text: y,
-                        });
-                    !Z.blocking &&
-                        C.push({
-                            ...(0, u.N1)(
-                                Z,
-                                () => {
-                                    s(), n();
-                                },
-                                () => {
-                                    s(), F();
-                                },
-                            ),
-                            testID: b,
-                        });
-                    Z.followed_by &&
-                        C.push({
-                            ...(0, m.l)({
-                                removeFollowerAction: (e) => {
-                                    E(e, _);
-                                },
-                                user: Z,
-                            }),
-                            testID: f,
-                        }),
-                        C.push((0, p.op)({ blockAction: (e) => E(e, o), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: p.SC.FOLLOWERS_LIST, testID: h, unblockAction: (e) => E(e, I), user: Z })),
-                        C.push({
-                            Icon: l.default,
-                            onClick: () => {
-                                s(), k();
+                                o(), y();
                             },
                             testID: w,
-                            text: v({ screenName: Z.screen_name }),
+                            text: v,
                         });
-                    const D = C.map(({ Icon: e, onClick: t, testID: o, text: r }) => ({ text: r, onClick: t, Icon: e, testID: o }));
-                    return r.createElement(i.Z, { items: D, onCloseRequested: s });
+                    !I.blocking &&
+                        F.push({
+                            ...(0, p.N1)(
+                                I,
+                                () => {
+                                    o(), s();
+                                },
+                                () => {
+                                    o(), P();
+                                },
+                            ),
+                            testID: h,
+                        });
+                    I.followed_by &&
+                        F.push({
+                            ...(0, u.l)({
+                                removeFollowerAction: (e) => {
+                                    Z(e, n);
+                                },
+                                user: I,
+                            }),
+                            testID: b,
+                        }),
+                        F.push((0, c.op)({ blockAction: (e) => Z(e, t), source: c.SC.FOLLOWERS_LIST, testID: _, unblockAction: (e) => Z(e, k), user: I })),
+                        F.push({
+                            Icon: l.default,
+                            onClick: () => {
+                                o(), m();
+                            },
+                            testID: f,
+                            text: g({ screenName: I.screen_name }),
+                        });
+                    const C = F.map(({ Icon: e, onClick: t, testID: o, text: r }) => ({ text: r, onClick: t, Icon: e, testID: o }));
+                    return r.createElement(i.Z, { items: C, onCloseRequested: o });
                 });
         },
         113392: (e, t, o) => {
@@ -372,8 +370,8 @@
                 }),
                 M = u().gd80afba,
                 A = u().j322caee,
-                x = u().abd845fe,
-                L = u().df1b0708,
+                L = u().abd845fe,
+                x = u().df1b0708,
                 U = u().cd959e5c,
                 N = u().e68b09b4,
                 B = u().add55c98,
@@ -430,7 +428,7 @@
                         T = !!o.mediaFile?.isVideo;
                     return r.createElement(i.ZP, null, ({ windowWidth: t }) => {
                         const o = void 0 !== I ? I : !g.Z.isTwoColumnLayout(t);
-                        return r.createElement(a.Z, { "aria-label": e || B, onLayout: this._handleMediaPreviewLayout, role: u, style: [w, z.cursor, D && z.gifPlayButton, Z] }, this._renderPreview(), D && !E && r.createElement(s.Z, { "aria-label": L, onPress: this._handleGifClick, size: "small" }), S ? r.createElement(C.ZP, { type: C.AM }) : null, v && !T ? r.createElement(n.Z, { align: "left", altLabel: e }) : null, r.createElement(a.Z, { style: z.editMedia }, k ? r.createElement(l.ZP, { "aria-label": R, hoverLabel: { label: R }, icon: r.createElement(m.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, P && F ? r.createElement(l.ZP, { "aria-label": A, icon: r.createElement(_.default, { style: z.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, P ? r.createElement(l.ZP, { "aria-label": M, icon: o ? r.createElement(h.default, null) : void 0, onPress: d, size: o ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, o ? void 0 : x) : null), y ? r.createElement(l.ZP, { "aria-label": U, hoverLabel: { label: N }, icon: r.createElement(b.default, null), onPress: p, size: "small", style: z.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        return r.createElement(a.Z, { "aria-label": e || B, onLayout: this._handleMediaPreviewLayout, role: u, style: [w, z.cursor, D && z.gifPlayButton, Z] }, this._renderPreview(), D && !E && r.createElement(s.Z, { "aria-label": x, onPress: this._handleGifClick, size: "small" }), S ? r.createElement(C.ZP, { type: C.AM }) : null, v && !T ? r.createElement(n.Z, { align: "left", altLabel: e }) : null, r.createElement(a.Z, { style: z.editMedia }, k ? r.createElement(l.ZP, { "aria-label": R, hoverLabel: { label: R }, icon: r.createElement(m.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, P && F ? r.createElement(l.ZP, { "aria-label": A, icon: r.createElement(_.default, { style: z.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, P ? r.createElement(l.ZP, { "aria-label": M, icon: o ? r.createElement(h.default, null) : void 0, onPress: d, size: o ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, o ? void 0 : L) : null), y ? r.createElement(l.ZP, { "aria-label": U, hoverLabel: { label: N }, icon: r.createElement(b.default, null), onPress: p, size: "small", style: z.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -1078,4 +1076,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-9f4db315.706fa78a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-9f4db315.a6bff23a.js.map

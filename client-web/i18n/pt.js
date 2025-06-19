@@ -1498,9 +1498,6 @@
                     return "Bloquear @" + e.screenName;
                 }),
                 s("a6450e84", "Bloquear"),
-                s("g353ad73", function (e) {
-                    return "Ele não poderá seguir você ou ver seus posts, e você não verá posts nem notificações de @" + e.screenName + ".";
-                }),
                 s("ad00a739", function (e) {
                     return "Eles poderão ver suas postagens públicas, mas não poderão mais interagir com elas. @" + e.screenName + " também não poderá seguir ou enviar mensagens para você, e você não verá notificações deles.";
                 }),
@@ -1512,7 +1509,6 @@
                     return "Desbloquear @" + e.screenName;
                 }),
                 s("e133be4e", "Desbloquear"),
-                s("he43bca4", "Essa pessoa poderá seguir você e ver seus posts."),
                 s("f5f01af6", "Eles poderão seguir você e interagir com suas postagens públicas."),
                 s("b6878b0a", "Algo deu errado. Tente bloquear esse usuário novamente em alguns minutos."),
                 s("e40252de", "Não mostrar esses posts em Para você"),
@@ -1921,10 +1917,10 @@
                 s("jcd5ee8a", "Editar bloco"),
                 s("a8f09fb8", "Excluir bloco"),
                 s("i89195ea", "Divider"),
-                s("da8ac57c", "Editar legenda");
-            s("a8fdd09c", "Publicar Artigo"),
-                s("d8047cc8", "Publicar"),
-                s("ff7ddca2", "Seu Artigo será exibido como post depois da publicação. Além disso, encontre sob a guia Artigos no seu perfil."),
+                s("da8ac57c", "Editar legenda"),
+                s("a8fdd09c", "Publicar Artigo"),
+                s("d8047cc8", "Publicar");
+            s("ff7ddca2", "Seu Artigo será exibido como post depois da publicação. Além disso, encontre sob a guia Artigos no seu perfil."),
                 s("ef34d7be", "Os controles de audiência e resposta não são editados depois de o Artigo ser publicado."),
                 s("e52d4998", "Escolha sua audiência"),
                 s("d7985b24", "Escolha quem pode responder a este Artigo"),
@@ -2977,10 +2973,10 @@
                 s("bc6efc72", "Política de Privacidade"),
                 s("h3161192", "Política de cookies"),
                 s("a7de64de", "Informações de anúncios"),
-                s("jb0a4c36", "Blog");
-            s("ce6d095a", "Carreiras"),
-                s("e0adec82", "Recursos da marca"),
-                s("df1b7550", "Marketing"),
+                s("jb0a4c36", "Blog"),
+                s("ce6d095a", "Carreiras"),
+                s("e0adec82", "Recursos da marca");
+            s("df1b7550", "Marketing"),
                 s("he258678", "X para Empresas"),
                 s("c6f58084", "Desenvolvedores"),
                 s("d83f18d2", "Diretório"),
@@ -3889,10 +3885,10 @@
                 s("c371fb9a", "Fim"),
                 s("c0ce822e", "Configurações do microfone"),
                 s("a2bf8b8a", "Trocar para áudio"),
-                s("caa8d928", "Ativar/desativar supressão de ruído");
-            s("b5d88f0c", "Somente funcionários"),
-                s("c855ab8e", "Exclusivo para Assinantes"),
-                s("ddeb0a3c", "Aqui está a Comunidade. Gosta das pessoas? Dê uma olhada."),
+                s("caa8d928", "Ativar/desativar supressão de ruído"),
+                s("b5d88f0c", "Somente funcionários"),
+                s("c855ab8e", "Exclusivo para Assinantes");
+            s("ddeb0a3c", "Aqui está a Comunidade. Gosta das pessoas? Dê uma olhada."),
                 s("e111f531", function (e) {
                     return e.count + " sintoniz" + r(e.count, "ou", "aram");
                 }),
@@ -4493,8 +4489,6 @@
                 }),
                 s("c9a1cb5e", "Essa conta não existe"),
                 s("e7b201de", "Tente buscar outro(a)."),
-                s("ica87fde", "Você foi bloqueado"),
-                s("c7ec6faf", "Saiba mais"),
                 s("e79ed125", function (e) {
                     return "@" + e.screenName + " está bloqueado";
                 }),
@@ -4931,12 +4925,12 @@
                 s("fbc79a40", "Visão geral dos espaços"),
                 s("d077112a", "Estatísticas de espaço"),
                 s("cf3709da", "Status"),
-                s("e797dc32", "Horário de transmissão: ");
-            s("b649d8cc", "Apenas inscritos"),
+                s("e797dc32", "Horário de transmissão: "),
+                s("b649d8cc", "Apenas inscritos"),
                 s("j9282130", "Miniatura de transmissão"),
                 s("g629b8b0", "Tempo esgotado"),
-                s("eb87323c", "Isso mostra os dados de estatísticas para o período selecionado desde que aconteceu a transmissão ao vivo."),
-                s("i6a75722", "Intervalo de tempo"),
+                s("eb87323c", "Isso mostra os dados de estatísticas para o período selecionado desde que aconteceu a transmissão ao vivo.");
+            s("i6a75722", "Intervalo de tempo"),
                 s("c602f5b8", "Total"),
                 s("b35e68ae", "Total de participantes"),
                 s("h78ee79a", "Total de replays assistidos"),
@@ -5883,12 +5877,12 @@
                 s("hf68e810", "Notas da Comunidade é um programa cujo objetivo é criar um mundo mais bem-informado. Ele permite que as pessoas no X adicionem colaborativamente notas úteis a posts que possam ser enganosos."),
                 s("jdb52860", "Os colaboradores escrevem e classificam as notas"),
                 s("c104025c", "Os colaboradores são usuários do X, assim como você, que escolhem se inscrever no programa-piloto para escrever e avaliar notas. Quanto mais pessoas participarem, melhor o programa ficará."),
-                s("j7872b8c", "Serão exibidas no post somente as notas que as pessoas acharem úteis");
-            s("fb59415e", "Para ser exibida publicamente como contexto no post, a nota precisa ser avaliada como útil por um número suficiente de pessoas com diferentes pontos de vista. Essa abordagem ajuda a evitar vieses e manipulação, ajudando a encontrar notas úteis para muitas pessoas."),
+                s("j7872b8c", "Serão exibidas no post somente as notas que as pessoas acharem úteis"),
+                s("fb59415e", "Para ser exibida publicamente como contexto no post, a nota precisa ser avaliada como útil por um número suficiente de pessoas com diferentes pontos de vista. Essa abordagem ajuda a evitar vieses e manipulação, ajudando a encontrar notas úteis para muitas pessoas."),
                 s("f9a44022", "A empresa X não escolhe o que aparece: as pessoas, sim"),
                 s("gdf4fbb2", "A empresa X não escreve, não classifica nem faz a moderação das notas (a não ser que elas violem as regras do X). Acreditamos que permitir que as pessoas façam essas escolhas em conjunto é uma forma justa e eficiente de adicionar informações que ajudem as pessoas a ficarem mais informadas."),
-                s("cc720e6a", "As Notas da Comunidade têm como base a transparência de dados"),
-                s("j2fcd33a", "Os dados incluem contribuições até"),
+                s("cc720e6a", "As Notas da Comunidade têm como base a transparência de dados");
+            s("j2fcd33a", "Os dados incluem contribuições até"),
                 s("d4a6b322", "Todos os dados das Notas da Comunidade serão publicados aqui diariamente. Nossa comunidade tem acesso livre para analisar dados e identificar problemas e oportunidades para deixar as Notas da Comunidade ainda melhores. Estamos ansiosos para aprender com você."),
                 s("c359263a", "Aprenda a usar e analisar os dados das Notas da Comunidade "),
                 s("b8a27fe2", "no nosso guia"),
@@ -6483,9 +6477,6 @@
                 s("e778e3d8", "DMs bloqueadas com sucesso"),
                 s("b7867912", "Desbloquear tudo"),
                 s("gaddb872", "Desbloquear DMs"),
-                s("d83414a1", function (e) {
-                    return "Desbloquear @" + e.screenName + "? Essa pessoa poderá seguir você e ver seus posts.";
-                }),
                 s("a5bbfecd", function (e) {
                     return "Desbloquear @" + e.screenName + "? Eles poderão seguir você e interagir com suas postagens públicas.";
                 }),
@@ -6891,13 +6882,13 @@
                 s("b2c213e0", "Limite de caracteres excedido"),
                 s("d84e9c2a", "Compartilhe o tipo de comprometimento com o trabalho que se espera para essa vaga."),
                 s("bc8b300c", "Função do cargo"),
-                s("d1eedb50", "Ajude os candidatos a entenderem a área à qual essa vaga se refere.");
-            s("eaf3ce64", "Equipe"),
+                s("d1eedb50", "Ajude os candidatos a entenderem a área à qual essa vaga se refere."),
+                s("eaf3ce64", "Equipe"),
                 s("b36cd50e", "Especifique a equipe principal com a qual os candidatos trabalharão depois de admitidos."),
                 s("d3a427ce", "Selecione o nível de experiência exigido."),
                 s("i7174442", "Descrição do cargo"),
-                s("fef0cf02", "Forneça uma descrição detalhada da vaga. Defina as principais responsabilidades e qualificações para dar uma clara noção da vaga aos candidatos."),
-                s("b7800bec", "Descreva a vaga em 200 caracteres ou menos. Mostrado em posts, recomendações e buscas."),
+                s("fef0cf02", "Forneça uma descrição detalhada da vaga. Defina as principais responsabilidades e qualificações para dar uma clara noção da vaga aos candidatos.");
+            s("b7800bec", "Descreva a vaga em 200 caracteres ou menos. Mostrado em posts, recomendações e buscas."),
                 s("a5244ece", "URL da candidatura (obrigatório)"),
                 s("g2b553f6", "Insira a URL pública por onde os candidatos possam se candidatar à vaga."),
                 s("c2e77608", "Título do cargo (obrigatório)"),
@@ -7863,7 +7854,16 @@
                 s("b5099e33", function (e) {
                     return "@" + e.screenName + " não tem nenhum seguidor verificado.";
                 }),
-                s("ec251f36", "Quando alguém que você conhece seguir essa conta, os perfis aparecerão aqui.");
+                s("ec251f36", "Quando alguém que você conhece seguir essa conta, os perfis aparecerão aqui."),
+                s("f8af4f48", "Depois de seguir as contas, elas serão exibidas aqui."),
+                s("fd0aad94", "Quando uma pessoa verificada segue essa conta, ela será exibida aqui."),
+                s("b84f6df1", function (e) {
+                    return "Presenteie o Premium com " + e.percentage + "% de desconto por tempo limitado.";
+                }),
+                s("cfcac293", function (e) {
+                    return "Dê de presente e pague " + e.price;
+                }),
+                s("d7a73450", "Camada");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var s = a[o];
@@ -7902,16 +7902,7 @@
                     n(e, a)
                 );
             }
-            s("f8af4f48", "Depois de seguir as contas, elas serão exibidas aqui."),
-                s("fd0aad94", "Quando uma pessoa verificada segue essa conta, ela será exibida aqui."),
-                s("b84f6df1", function (e) {
-                    return "Presenteie o Premium com " + e.percentage + "% de desconto por tempo limitado.";
-                }),
-                s("cfcac293", function (e) {
-                    return "Dê de presente e pague " + e.price;
-                }),
-                s("d7a73450", "Camada"),
-                s("hbd2c24e", "Esta conta não tem direito a presentes no momento."),
+            s("hbd2c24e", "Esta conta não tem direito a presentes no momento."),
                 s("f3fddc98", "Termos e Políticas de Comprador"),
                 s("cff9c889", "Saiba mais"),
                 s("c65dda96", "Seu presente foi enviado"),
@@ -8897,15 +8888,15 @@
                 s("faf9f484", "Anúncio"),
                 s("ae2ea9e7", function (e) {
                     return "Anúncio de " + e.advertiserName;
-                });
-            s("hea01798", "Procurar no controle deslizante"),
+                }),
+                s("hea01798", "Procurar no controle deslizante"),
                 s("f8a09386", "Ver no Periscope"),
                 s("gf2b6eee", "Picture-in-Picture"),
                 s("b3160a69", function (e) {
                     return e.volumePercent + "%";
                 }),
-                s("fb236728", "Pausar"),
-                s("e9bd453e", "Reproduzir novamente"),
+                s("fb236728", "Pausar");
+            s("e9bd453e", "Reproduzir novamente"),
                 s("d46b00b0", "Ir para o ao vivo"),
                 s("ec8ab8b4", "Silenciar"),
                 s("b8b6344a", "Desativar silêncio"),
@@ -9330,7 +9321,6 @@
                 s("fe40537f", function (e) {
                     return "Desbloquear @" + e.screenName + "?";
                 }),
-                s("ab7c3460", "Essa pessoa poderá seguir você e ver seus posts."),
                 s("i58d8718", "Eles poderão seguir você e interagir com suas postagens públicas."),
                 s("cda66545", function (e) {
                     return "Clique para " + e.followType + " " + e.screenName;
@@ -11363,12 +11353,6 @@
                             },
                         },
                         {
-                            key: "e6264621",
-                            get: function () {
-                                return ["Você não pode seguir nem ver os posts de @" + this.props.screenName + ". "];
-                            },
-                        },
-                        {
                             key: "f98ecc47",
                             get: function () {
                                 return ["Tem certeza de que deseja ver estes posts? Ver os posts não desbloqueará @" + this.props.screenName + ". "];
@@ -13390,4 +13374,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.0ab0345a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.12f5627a.js.map

@@ -24,10 +24,9 @@
                     return { avatar: c || (!h && !t && !s && !r), badges: c || !r, description: c || (!l && !d && !h && !s && !r), followButton: !(c || d || h || t || s || r), followersYouKnow: !c && !d && !l && !h && !t && !s && !r && (i.following || !i.protected), followIndicator: !r, fullName: u, label: u, stats: c || (!d && !h && !s && !r), subscriptionsCount: c || !i.has_hidden_subscriptions_on_profile };
                 },
                 o = ({ displaySensitiveMedia: e, isOwnProfile: t, user: s, userProfileInterstitialType: i }) => (i === r.Z.SensitiveMedia || i === r.Z.OffensiveProfileContent) && !(t || s.following || e),
-                n = ({ isOwnProfile: e, isSoftBlockEnabled: t = !1, user: s }) => {
-                    const r = s.blocked_by,
-                        i = s.protected && !s.following;
-                    return t ? e || !i : e || (!i && !r);
+                n = ({ isOwnProfile: e, user: t }) => {
+                    const s = t.protected && !t.following;
+                    return e || !s;
                 };
         },
         286e3: (e, t, s) => {
@@ -298,8 +297,8 @@
                 y = s(576469),
                 L = s(206795),
                 E = s(390387),
-                b = s(601576),
-                I = s(164692),
+                I = s(601576),
+                b = s(164692),
                 S = s(919022);
             const T = [],
                 w = (e, t) => {
@@ -318,8 +317,8 @@
                     return s ? S.ZP.select(e, s) : void 0;
                 },
                 C = (0, v.Z)()
-                    .propsFromState(() => ({ shouldRedirect: P, viewerUser: S.ZP.selectViewerUser, membershipListIds: (0, _.P1)(w, (e) => e), module: (0, _.P1)(Z, R, (e, t) => (e && t ? (0, I.Z)(e, t) : void 0)), user: k }))
-                    .propsFromActions(() => ({ addToast: b.fz, addUserToList: y.Z.addUserToList, toggleIsMember: y.Z.toggleIsMember, createLocalApiErrorHandler: (0, g.zr)("ADD_LIST_MEMBER_SCREEN"), fetchMembershipsIfNeeded: L.NU, removeUserFromList: y.Z.removeUserFromList }))
+                    .propsFromState(() => ({ shouldRedirect: P, viewerUser: S.ZP.selectViewerUser, membershipListIds: (0, _.P1)(w, (e) => e), module: (0, _.P1)(Z, R, (e, t) => (e && t ? (0, b.Z)(e, t) : void 0)), user: k }))
+                    .propsFromActions(() => ({ addToast: I.fz, addUserToList: y.Z.addUserToList, toggleIsMember: y.Z.toggleIsMember, createLocalApiErrorHandler: (0, g.zr)("ADD_LIST_MEMBER_SCREEN"), fetchMembershipsIfNeeded: L.NU, removeUserFromList: y.Z.removeUserFromList }))
                     .withAnalytics({ page: "lists", section: "add_member" }),
                 A = l().i2209530,
                 F = l().c7e11484,
@@ -487,4 +486,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserLists-8ed0fac5.2a13dada.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserLists-8ed0fac5.4b28e71a.js.map

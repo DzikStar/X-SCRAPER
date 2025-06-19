@@ -1509,9 +1509,6 @@
                     return "Blochează pe @" + e.screenName;
                 }),
                 t("a6450e84", "Blochează"),
-                t("g353ad73", function (e) {
-                    return "Acesta nu va putea să te urmărească  sau să îți vadă postările și nici tu nu vei vedea nicio postare și nicio notificare de la @" + e.screenName + ".";
-                }),
                 t("ad00a739", function (e) {
                     return "Va putea vedea postările tale publice, dar nu va mai putea interacționa cu ele. @" + e.screenName + " nu va mai putea să te urmărească și nici să-ți trimită mesaje, iar tu nu vei vedea notificări de la acest utilizator.";
                 }),
@@ -1523,7 +1520,6 @@
                     return "Deblochează pe @" + e.screenName;
                 }),
                 t("e133be4e", "Deblochează"),
-                t("he43bca4", "Acest utilizator te va putea urmări și îți va putea vedea postările."),
                 t("f5f01af6", "Va putea să te urmărească și să interacționeze cu postările tale publice."),
                 t("b6878b0a", "Ceva nu a mers bine. Încearcă din nou să blochezi acel utilizator într-un minut."),
                 t("e40252de", "Nu afișa aceste postări în pagina Pentru tine"),
@@ -1932,10 +1928,10 @@
                 t("jcd5ee8a", "Editează blocul"),
                 t("a8f09fb8", "Șterge blocul"),
                 t("i89195ea", "Separator"),
-                t("da8ac57c", "Editează legenda");
-            t("a8fdd09c", "Publică articolul"),
-                t("d8047cc8", "Publică"),
-                t("ff7ddca2", "După publicare, articolul va apărea ca postare. Îl vei găsi și în fila Articole de pe profilul tău."),
+                t("da8ac57c", "Editează legenda"),
+                t("a8fdd09c", "Publică articolul"),
+                t("d8047cc8", "Publică");
+            t("ff7ddca2", "După publicare, articolul va apărea ca postare. Îl vei găsi și în fila Articole de pe profilul tău."),
                 t("ef34d7be", "Publicul și controalele asupra răspunsurilor nu se pot edita după publicarea articolului."),
                 t("e52d4998", "Alege-ți publicul"),
                 t("d7985b24", "Alege cine poate răspunde la acest articol"),
@@ -2988,10 +2984,10 @@
                 t("bc6efc72", "Politica de confidențialitate"),
                 t("h3161192", "Politica privind modulele cookie"),
                 t("a7de64de", "Informații despre reclame"),
-                t("jb0a4c36", "Blog");
-            t("ce6d095a", "Cariere"),
-                t("e0adec82", "Resurse pentru branduri"),
-                t("df1b7550", "Marketing"),
+                t("jb0a4c36", "Blog"),
+                t("ce6d095a", "Cariere"),
+                t("e0adec82", "Resurse pentru branduri");
+            t("df1b7550", "Marketing"),
                 t("he258678", "X pentru afaceri"),
                 t("c6f58084", "Dezvoltatori"),
                 t("d83f18d2", "Director"),
@@ -3900,10 +3896,10 @@
                 t("c371fb9a", "Sfârșit"),
                 t("c0ce822e", "Setări microfon"),
                 t("a2bf8b8a", "Comută la ascultare"),
-                t("caa8d928", "Comută Anulare zgomot");
-            t("b5d88f0c", "Doar angajați"),
-                t("c855ab8e", "Doar Abonați"),
-                t("ddeb0a3c", "Aceasta este Comunitatea. Îți plac membrii? Aruncă o privire."),
+                t("caa8d928", "Comută Anulare zgomot"),
+                t("b5d88f0c", "Doar angajați"),
+                t("c855ab8e", "Doar Abonați");
+            t("ddeb0a3c", "Aceasta este Comunitatea. Îți plac membrii? Aruncă o privire."),
                 t("e111f531", function (e) {
                     return e.count + " a" + r(e.count, "u", "", "u") + " urmărit";
                 }),
@@ -4504,8 +4500,6 @@
                 }),
                 t("c9a1cb5e", "Acest cont nu există"),
                 t("e7b201de", "Încearcă să cauți altul."),
-                t("ica87fde", "Ești blocat"),
-                t("c7ec6faf", "Află mai multe"),
                 t("e79ed125", function (e) {
                     return "@" + e.screenName + " este blocat";
                 }),
@@ -4942,12 +4936,12 @@
                 t("fbc79a40", "Prezentare generală Spații"),
                 t("d077112a", "Statistici Spații"),
                 t("cf3709da", "Stare"),
-                t("e797dc32", "Durata fluxului: ");
-            t("b649d8cc", "Doar abonați"),
+                t("e797dc32", "Durata fluxului: "),
+                t("b649d8cc", "Doar abonați"),
                 t("j9282130", "Miniatură transmisiune"),
                 t("g629b8b0", "Expirat"),
-                t("eb87323c", "Afișează date de analiză pentru perioada selectată, de la difuzarea fluxului în direct."),
-                t("i6a75722", "Interval de timp"),
+                t("eb87323c", "Afișează date de analiză pentru perioada selectată, de la difuzarea fluxului în direct.");
+            t("i6a75722", "Interval de timp"),
                 t("c602f5b8", "Total"),
                 t("b35e68ae", "Nr. total de participanți"),
                 t("h78ee79a", "Nr. total de vizionări"),
@@ -5894,12 +5888,12 @@
                 t("hf68e810", "Notele Comunității este un program menit să creeze o lume mai bine informată. Acesta oferă utilizatorilor X posibilitatea de a adăuga în mod colaborativ note utile la postări care pot fi înșelătoare."),
                 t("jdb52860", "Colaboratorii scriu și evaluează note"),
                 t("c104025c", "Contributorii sunt persoane de pe X, la fel ca tine, care aleg să se înscrie în programul pilot pentru a scrie și evalua note. Cu cât participă mai multe persoane, cu atât mai bun va fi programul."),
-                t("j7872b8c", "Doar notele care sunt catalogate drept utile apar la o postare");
-            t("fb59415e", "Pentru a putea fi afișată public sub formă de context la postare, o notă trebuie evaluată drept utilă de suficiente persoane cu puncte de vedere diferite. Această abordare ajută la evitarea părerilor subiective și a manipulării și la identificarea notelor care sunt utile pentru multe persoane."),
+                t("j7872b8c", "Doar notele care sunt catalogate drept utile apar la o postare"),
+                t("fb59415e", "Pentru a putea fi afișată public sub formă de context la postare, o notă trebuie evaluată drept utilă de suficiente persoane cu puncte de vedere diferite. Această abordare ajută la evitarea părerilor subiective și a manipulării și la identificarea notelor care sunt utile pentru multe persoane."),
                 t("f9a44022", "Nu compania X alege ce va fi publicat, ci utilizatorii"),
                 t("gdf4fbb2", "Compania X nu scrie, nu evaluează și nu moderează notele (cu excepția cazului în care se încalcă regulile X). Credem că faptul că oferim utilizatorilor posibilitatea de a lua decizii împreună este o modalitate corectă și eficientă de a adăuga informații care îi ajută să fie mai bine informați."),
-                t("cc720e6a", "Notele Comunității se bazează pe transparența datelor"),
-                t("j2fcd33a", "Datele cuprind contribuțiile oferite până la"),
+                t("cc720e6a", "Notele Comunității se bazează pe transparența datelor");
+            t("j2fcd33a", "Datele cuprind contribuțiile oferite până la"),
                 t("d4a6b322", "Toate datele din Notele Comunității sunt publicate aici zilnic pentru ca membrii comunității noastre să aibă acces liber să le analizeze, să identifice probleme și să găsească oportunități prin care să îmbunătățească Notele Comunității. Abia așteptăm să învățăm împreună cu tine."),
                 t("c359263a", "Află cum poți utiliza și analiza datele în Notele Comunității "),
                 t("b8a27fe2", "din ghidul nostru"),
@@ -6494,9 +6488,6 @@
                 t("e778e3d8", "Mesajele directe au fost blocate cu succes"),
                 t("b7867912", "Deblochează tot"),
                 t("gaddb872", "Deblochează mesajele directe"),
-                t("d83414a1", function (e) {
-                    return "Deblochezi utilizatorul @" + e.screenName + "? Acesta te va putea urmări și îți va putea vedea postările.";
-                }),
                 t("a5bbfecd", function (e) {
                     return "Deblochezi utilizatorul " + e.screenName + "? Va putea să te urmărească și să interacționeze cu postările tale publice.";
                 }),
@@ -6902,13 +6893,13 @@
                 t("b2c213e0", "S-a depășit limita de caractere"),
                 t("d84e9c2a", "Introdu tipul de angajament care se așteaptă pentru acest post."),
                 t("bc8b300c", "Rol"),
-                t("d1eedb50", "Ajută-i pe candidați să înțeleagă ce domeniu vizează acest post.");
-            t("eaf3ce64", "Echipă"),
+                t("d1eedb50", "Ajută-i pe candidați să înțeleagă ce domeniu vizează acest post."),
+                t("eaf3ce64", "Echipă"),
                 t("b36cd50e", "Indică principala echipă cu care candidații vor lucra după angajare."),
                 t("d3a427ce", "Selectează nivelul de experiență necesar."),
                 t("i7174442", "Descrierea locului de muncă"),
-                t("fef0cf02", "Introdu o descriere detaliată a locului de muncă. Subliniază responsabilitățile și calificările cheie pentru a-i ajuta pe candidați să înțeleagă corect postul."),
-                t("b7800bec", "Descrie locul de muncă în cel mult 200 de caractere. Afișează-l în postări, recomandări și în căutări."),
+                t("fef0cf02", "Introdu o descriere detaliată a locului de muncă. Subliniază responsabilitățile și calificările cheie pentru a-i ajuta pe candidați să înțeleagă corect postul.");
+            t("b7800bec", "Descrie locul de muncă în cel mult 200 de caractere. Afișează-l în postări, recomandări și în căutări."),
                 t("a5244ece", "URL candidatură (obligatoriu)"),
                 t("g2b553f6", "Introdu URL-ul public unde candidații își pot prezenta candidaturile pentru acest loc de muncă."),
                 t("c2e77608", "Denumirea locului de muncă (obligatoriu)"),
@@ -7874,7 +7865,16 @@
                 t("b5099e33", function (e) {
                     return "@" + e.screenName + " nu are urmăritori verificați.";
                 }),
-                t("ec251f36", "Când o persoană pe care o cunoști urmărește acest utilizator, aceasta va fi listată aici.");
+                t("ec251f36", "Când o persoană pe care o cunoști urmărește acest utilizator, aceasta va fi listată aici."),
+                t("f8af4f48", "După ce îți vor urmări contul, îi vei putea vedea aici."),
+                t("fd0aad94", "Atunci când un utilizator verificat urmărește acest cont, acesta va apărea aici."),
+                t("b84f6df1", function (e) {
+                    return "Dăruiește Premium la o reducere de " + e.percentage + "% pentru o perioadă limitată";
+                }),
+                t("cfcac293", function (e) {
+                    return "Cadou și plată " + e.price;
+                }),
+                t("d7a73450", "Nivel");
             function c(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7913,16 +7913,7 @@
                     u(e, a)
                 );
             }
-            t("f8af4f48", "După ce îți vor urmări contul, îi vei putea vedea aici."),
-                t("fd0aad94", "Atunci când un utilizator verificat urmărește acest cont, acesta va apărea aici."),
-                t("b84f6df1", function (e) {
-                    return "Dăruiește Premium la o reducere de " + e.percentage + "% pentru o perioadă limitată";
-                }),
-                t("cfcac293", function (e) {
-                    return "Cadou și plată " + e.price;
-                }),
-                t("d7a73450", "Nivel"),
-                t("hbd2c24e", "Acest cont nu este momentan eligibil pentru cadouri."),
+            t("hbd2c24e", "Acest cont nu este momentan eligibil pentru cadouri."),
                 t("f3fddc98", "Condițiile noastre de utilizare pentru cumpărători"),
                 t("cff9c889", "Aflați mai multe"),
                 t("c65dda96", "Cadoul a fost trimis."),
@@ -8908,15 +8899,15 @@
                 t("faf9f484", "Reclamă"),
                 t("ae2ea9e7", function (e) {
                     return "Reclamă de la " + e.advertiserName;
-                });
-            t("hea01798", "Glisor de căutare"),
+                }),
+                t("hea01798", "Glisor de căutare"),
                 t("f8a09386", "Vizualizează în Periscope"),
                 t("gf2b6eee", "Imagine în imagine"),
                 t("b3160a69", function (e) {
                     return e.volumePercent + "%";
                 }),
-                t("fb236728", "Pauză"),
-                t("e9bd453e", "Reluare"),
+                t("fb236728", "Pauză");
+            t("e9bd453e", "Reluare"),
                 t("d46b00b0", "Treci la vizionarea în direct"),
                 t("ec8ab8b4", "Ignoră"),
                 t("b8b6344a", "Nu mai ignora"),
@@ -9341,7 +9332,6 @@
                 t("fe40537f", function (e) {
                     return "Deblochezi utilizatorul @" + e.screenName + "?";
                 }),
-                t("ab7c3460", "Acest utilizator te va putea urmări și îți va putea vedea postările."),
                 t("i58d8718", "Va putea să te urmărească și să interacționeze cu postările tale publice."),
                 t("cda66545", function (e) {
                     return "Fă clic pentru " + e.followType + " " + e.screenName;
@@ -11374,12 +11364,6 @@
                             },
                         },
                         {
-                            key: "e6264621",
-                            get: function () {
-                                return ["Nu poți urmări sau vedea postările de la @" + this.props.screenName + ". "];
-                            },
-                        },
-                        {
                             key: "f98ecc47",
                             get: function () {
                                 return ["Sigur dorești să vizualizezi aceste postări? Vizualizarea postărilor nu îl/o va debloca pe @" + this.props.screenName + ". "];
@@ -13056,8 +13040,8 @@
             var m = p._numberRound,
                 b = (p._numberFormat, p._numberFormatterFn),
                 z = p._pluralGeneratorFn,
-                v = (p._currencyNameFormat, p._currencyFormatterFn),
-                g = (p._validateParameterTypeDate, p._dateToPartsFormat, p._dateToPartsFormatterFn),
+                g = (p._currencyNameFormat, p._currencyFormatterFn),
+                v = (p._validateParameterTypeDate, p._dateToPartsFormat, p._dateToPartsFormatterFn),
                 A = (p._dateFormat, p._dateFormatterFn),
                 h = p._relativeTimeFormatterFn,
                 C = p._unitFormatterFn;
@@ -13151,95 +13135,95 @@
                         t = Number(a[0]) == e && a[0].slice(-2);
                     return 1 == e && i ? "one" : !i || 0 == e || (1 != e && t >= 1 && t <= 19) ? "few" : "other";
                 })),
-                (p.b1378708370 = v(p("ro").numberFormatter({ raw: "#,##0.00 'AED'" }))),
-                (p.a767883309 = v(p("ro").numberFormatter({ raw: "#,##0 'ALL'" }))),
-                (p.a1998342156 = v(p("ro").numberFormatter({ raw: "#,##0.00 'ARS'" }))),
-                (p.b63551362 = v(p("ro").numberFormatter({ raw: "#,##0.00 'AUD'" }))),
-                (p.a1366716896 = v(p("ro").numberFormatter({ raw: "#,##0.00 'BAM'" }))),
-                (p.b65335300 = v(p("ro").numberFormatter({ raw: "#,##0.00 'BDT'" }))),
-                (p.b1869566459 = v(p("ro").numberFormatter({ raw: "#,##0.00 'BGN'" }))),
-                (p.b1268354288 = v(p("ro").numberFormatter({ raw: "#,##0.000 'BHD'" }))),
-                (p.b754218862 = v(p("ro").numberFormatter({ raw: "#,##0.00 'BRL'" }))),
-                (p.a1335114515 = v(p("ro").numberFormatter({ raw: "#,##0 'BYR'" }))),
-                (p.b1443102424 = v(p("ro").numberFormatter({ raw: "#,##0.00 'CAD'" }))),
-                (p.a531714349 = v(p("ro").numberFormatter({ raw: "#,##0.00 'CHF'" }))),
-                (p.a73053287 = v(p("ro").numberFormatter({ raw: "#,##0 'CLP'" }))),
-                (p.a2105723008 = v(p("ro").numberFormatter({ raw: "#,##0.00 'CNY'" }))),
-                (p.b1559402966 = v(p("ro").numberFormatter({ raw: "#,##0 'COP'" }))),
-                (p.b529942822 = v(p("ro").numberFormatter({ raw: "#,##0.00 'CZK'" }))),
-                (p.a785214186 = v(p("ro").numberFormatter({ raw: "#,##0.00 'DKK'" }))),
-                (p.a1012463456 = v(p("ro").numberFormatter({ raw: "#,##0.00 'DZD'" }))),
-                (p.b878844448 = v(p("ro").numberFormatter({ raw: "#,##0.00 'EGP'" }))),
-                (p.b1281436500 = v(p("ro").numberFormatter({ raw: "#,##0.00 'EUR'" }))),
-                (p.b1830742183 = v(p("ro").numberFormatter({ raw: "#,##0.00 'GBP'" }))),
-                (p.b714799940 = v(p("ro").numberFormatter({ raw: "#,##0.00 'GHS'" }))),
-                (p.a1288051338 = v(p("ro").numberFormatter({ raw: "#,##0.00 'GTQ'" }))),
-                (p.b1033883123 = v(p("ro").numberFormatter({ raw: "#,##0.00 'HKD'" }))),
-                (p.a1084079405 = v(p("ro").numberFormatter({ raw: "#,##0.00 'HRK'" }))),
-                (p.b691522603 = v(p("ro").numberFormatter({ raw: "#,##0.00 'HUF'" }))),
-                (p.b807823145 = v(p("ro").numberFormatter({ raw: "#,##0 'IDR'" }))),
-                (p.a2025868158 = v(p("ro").numberFormatter({ raw: "#,##0.00 'ILS'" }))),
-                (p.b522720927 = v(p("ro").numberFormatter({ raw: "#,##0.00 'INR'" }))),
-                (p.a1738982002 = v(p("ro").numberFormatter({ raw: "#,##0 'IQD'" }))),
-                (p.b580573875 = v(p("ro").numberFormatter({ raw: "#,##0 'ISK'" }))),
-                (p.b1099466469 = v(p("ro").numberFormatter({ raw: "#,##0 'JPY'" }))),
-                (p.b701036939 = v(p("ro").numberFormatter({ raw: "#,##0.00 'KES'" }))),
-                (p.b1933874370 = v(p("ro").numberFormatter({ raw: "#,##0 'KRW'" }))),
-                (p.a1959690166 = v(p("ro").numberFormatter({ raw: "#,##0.000 'KWD'" }))),
-                (p.a785300329 = v(p("ro").numberFormatter({ raw: "#,##0.00 'KZT'" }))),
-                (p.b1706625100 = v(p("ro").numberFormatter({ raw: "#,##0 'LBP'" }))),
-                (p.b1194868258 = v(p("ro").numberFormatter({ raw: "#,##0.00 'MAD'" }))),
-                (p.b909766040 = v(p("ro").numberFormatter({ raw: "#,##0.00 'MKD'" }))),
-                (p.b1970828565 = v(p("ro").numberFormatter({ raw: "#,##0.00 'MXN'" }))),
-                (p.b968808280 = v(p("ro").numberFormatter({ raw: "#,##0.00 'MYR'" }))),
-                (p.a1864288377 = v(p("ro").numberFormatter({ raw: "#,##0.00 'NGN'" }))),
-                (p.a288495780 = v(p("ro").numberFormatter({ raw: "#,##0.00 'NOK'" }))),
-                (p.a1260697622 = v(p("ro").numberFormatter({ raw: "#,##0.00 'NZD'" }))),
-                (p.b720065611 = v(p("ro").numberFormatter({ raw: "#,##0.00 'PEN'" }))),
-                (p.a1999703734 = v(p("ro").numberFormatter({ raw: "#,##0.00 'PHP'" }))),
-                (p.a424505783 = v(p("ro").numberFormatter({ raw: "#,##0 'PKR'" }))),
-                (p.a1197492860 = v(p("ro").numberFormatter({ raw: "#,##0.00 'PLN'" }))),
-                (p.a1882213900 = v(p("ro").numberFormatter({ raw: "#,##0.00 'QAR'" }))),
-                (p.b1244310019 = v(p("ro").numberFormatter({ raw: "#,##0.00 'RON'" }))),
-                (p.a2019413195 = v(p("ro").numberFormatter({ raw: "#,##0 'RSD'" }))),
-                (p.b557805041 = v(p("ro").numberFormatter({ raw: "#,##0.00 'RUB'" }))),
-                (p.a1072867274 = v(p("ro").numberFormatter({ raw: "#,##0.00 'SAR'" }))),
-                (p.a127510645 = v(p("ro").numberFormatter({ raw: "#,##0.00 'SEK'" }))),
-                (p.a1702113950 = v(p("ro").numberFormatter({ raw: "#,##0.00 'SGD'" }))),
-                (p.b19797632 = v(p("ro").numberFormatter({ raw: "#,##0.00 'THB'" }))),
-                (p.a1067515460 = v(p("ro").numberFormatter({ raw: "#,##0.000 'TND'" }))),
-                (p.a923775059 = v(p("ro").numberFormatter({ raw: "#,##0.00 'TRY'" }))),
-                (p.a465113997 = v(p("ro").numberFormatter({ raw: "#,##0.00 'TWD'" }))),
-                (p.b737904991 = v(p("ro").numberFormatter({ raw: "#,##0 'TZS'" }))),
-                (p.b22770862 = v(p("ro").numberFormatter({ raw: "#,##0.00 'UAH'" }))),
-                (p.a1465350344 = v(p("ro").numberFormatter({ raw: "#,##0 'UGX'" }))),
-                (p.b1342090392 = v(p("ro").numberFormatter({ raw: "#,##0.00 'USD'" }))),
-                (p.a917828599 = v(p("ro").numberFormatter({ raw: "#,##0.00 'VEF'" }))),
-                (p.a258168834 = v(p("ro").numberFormatter({ raw: "#,##0 'VND'" }))),
-                (p.a387637731 = v(p("ro").numberFormatter({ raw: "#,##0.00 'ZAR'" }))),
-                (p.b1704074230 = v(p("ro").numberFormatter({ raw: "#,##0.00 'ZMW'" }))),
-                (p.b1766160864 = g({ 1: p("ro").numberFormatter({ raw: "0" }) }, { pattern: "d MMM", timeSeparator: ":", months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } } })),
-                (p.a438470333 = g({ 1: p("ro").numberFormatter({ raw: "0" }) }, { pattern: "d MMM y", timeSeparator: ":", months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } } })),
-                (p.b2085484814 = g({ 1: p("ro").numberFormatter({ raw: "0" }), 2: p("ro").numberFormatter({ raw: "00" }) }, { pattern: "h:mm a", timeSeparator: ":", dayPeriods: { am: "a.m.", pm: "p.m." } })),
-                (p.a1056838753 = g({ 1: p("ro").numberFormatter({ raw: "0" }) }, { pattern: "E, d MMM", timeSeparator: ":", days: { E: { 1: { sun: "dum.", mon: "lun.", tue: "mar.", wed: "mie.", thu: "joi", fri: "vin.", sat: "sâm." } } }, months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } } })),
-                (p.a680929124 = g({ 1: p("ro").numberFormatter({ raw: "0" }) }, { pattern: "E, d MMM y", timeSeparator: ":", days: { E: { 1: { sun: "dum.", mon: "lun.", tue: "mar.", wed: "mie.", thu: "joi", fri: "vin.", sat: "sâm." } } }, months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } } })),
-                (p.a1064226921 = g({ 1: p("ro").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM", timeSeparator: ":", months: { M: { 4: { 1: "ianuarie", 2: "februarie", 3: "martie", 4: "aprilie", 5: "mai", 6: "iunie", 7: "iulie", 8: "august", 9: "septembrie", 10: "octombrie", 11: "noiembrie", 12: "decembrie" } } } })),
-                (p.a46136969 = g({ 1: p("ro").numberFormatter({ raw: "0" }), 2: p("ro").numberFormatter({ raw: "00" }) }, { pattern: "d MMMM y, HH:mm:ss z", timeSeparator: ":", months: { M: { 4: { 1: "ianuarie", 2: "februarie", 3: "martie", 4: "aprilie", 5: "mai", 6: "iunie", 7: "iulie", 8: "august", 9: "septembrie", 10: "octombrie", 11: "noiembrie", 12: "decembrie" } } }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: ["+H;-H", "+H:mm;-H:mm"] })),
-                (p.a527312088 = g({ 1: p("ro").numberFormatter({ raw: "0" }), 2: p("ro").numberFormatter({ raw: "00" }) }, { pattern: "d MMM y, h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } }, dayPeriods: { am: "a.m.", pm: "p.m." } })),
-                (p.a225933308 = g({ 1: p("ro").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM y", timeSeparator: ":", months: { M: { 4: { 1: "ianuarie", 2: "februarie", 3: "martie", 4: "aprilie", 5: "mai", 6: "iunie", 7: "iulie", 8: "august", 9: "septembrie", 10: "octombrie", 11: "noiembrie", 12: "decembrie" } } } })),
-                (p.b704391301 = g({ 1: p("ro").numberFormatter({ raw: "0" }), 2: p("ro").numberFormatter({ raw: "00" }) }, { pattern: "d MMM, h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } }, dayPeriods: { am: "a.m.", pm: "p.m." } })),
-                (p.a147321616 = g({ 1: p("ro").numberFormatter({ raw: "0" }), 2: p("ro").numberFormatter({ raw: "00" }) }, { pattern: "dd.MM.y", timeSeparator: ":" })),
-                (p.a1734278772 = g({ 1: p("ro").numberFormatter({ raw: "0" }) }, { pattern: "y", timeSeparator: ":" })),
-                (p.b1371389757 = g({ 1: p("ro").numberFormatter({ raw: "0" }) }, { pattern: "MMM y", timeSeparator: ":", months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } } })),
-                (p.b813841002 = g({ 1: p("ro").numberFormatter({ raw: "0" }), 2: p("ro").numberFormatter({ raw: "00" }) }, { pattern: "EEEE, d MMMM y, HH:mm:ss zzzz", timeSeparator: ":", days: { E: { 4: { sun: "duminică", mon: "luni", tue: "marți", wed: "miercuri", thu: "joi", fri: "vineri", sat: "sâmbătă" } } }, months: { M: { 4: { 1: "ianuarie", 2: "februarie", 3: "martie", 4: "aprilie", 5: "mai", 6: "iunie", 7: "iulie", 8: "august", 9: "septembrie", 10: "octombrie", 11: "noiembrie", 12: "decembrie" } } }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: "+HH:mm;-HH:mm" })),
-                (p.b819455440 = g({ 1: p("ro").numberFormatter({ raw: "0" }), 2: p("ro").numberFormatter({ raw: "00" }) }, { pattern: "d MMM y, HH:mm:ss", timeSeparator: ":", months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } } })),
-                (p.a459711316 = g({ 1: p("ro").numberFormatter({ raw: "0" }), 2: p("ro").numberFormatter({ raw: "00" }) }, { pattern: "dd.MM.y", timeSeparator: ":" })),
-                (p.a802666129 = g({ 2: p("ro").numberFormatter({ raw: "00" }) }, { pattern: "HH:mm", timeSeparator: ":" })),
-                (p.b1230009725 = g({ 1: p("ro").numberFormatter({ raw: "0" }), 2: p("ro").numberFormatter({ raw: "00" }) }, { pattern: "E h:mm a", timeSeparator: ":", days: { E: { 1: { sun: "dum.", mon: "lun.", tue: "mar.", wed: "mie.", thu: "joi", fri: "vin.", sat: "sâm." } } }, dayPeriods: { am: "a.m.", pm: "p.m." } })),
-                (p.a437785140 = g({ 1: p("ro").numberFormatter({ raw: "0" }) }, { pattern: "MMMM y", timeSeparator: ":", months: { M: { 4: { 1: "ianuarie", 2: "februarie", 3: "martie", 4: "aprilie", 5: "mai", 6: "iunie", 7: "iulie", 8: "august", 9: "septembrie", 10: "octombrie", 11: "noiembrie", 12: "decembrie" } } } })),
-                (p.b513600617 = g({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "duminică", mon: "luni", tue: "marți", wed: "miercuri", thu: "joi", fri: "vineri", sat: "sâmbătă" } } } })),
-                (p.a166134499 = g({ 1: p("ro").numberFormatter({ raw: "0" }) }, { pattern: "d MMM y", timeSeparator: ":", months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } } })),
-                (p.b1766846057 = g({}, { pattern: "LLLL", timeSeparator: ":", months: { L: { 4: { 1: "ianuarie", 2: "februarie", 3: "martie", 4: "aprilie", 5: "mai", 6: "iunie", 7: "iulie", 8: "august", 9: "septembrie", 10: "octombrie", 11: "noiembrie", 12: "decembrie" } } } })),
+                (p.b1378708370 = g(p("ro").numberFormatter({ raw: "#,##0.00 'AED'" }))),
+                (p.a767883309 = g(p("ro").numberFormatter({ raw: "#,##0 'ALL'" }))),
+                (p.a1998342156 = g(p("ro").numberFormatter({ raw: "#,##0.00 'ARS'" }))),
+                (p.b63551362 = g(p("ro").numberFormatter({ raw: "#,##0.00 'AUD'" }))),
+                (p.a1366716896 = g(p("ro").numberFormatter({ raw: "#,##0.00 'BAM'" }))),
+                (p.b65335300 = g(p("ro").numberFormatter({ raw: "#,##0.00 'BDT'" }))),
+                (p.b1869566459 = g(p("ro").numberFormatter({ raw: "#,##0.00 'BGN'" }))),
+                (p.b1268354288 = g(p("ro").numberFormatter({ raw: "#,##0.000 'BHD'" }))),
+                (p.b754218862 = g(p("ro").numberFormatter({ raw: "#,##0.00 'BRL'" }))),
+                (p.a1335114515 = g(p("ro").numberFormatter({ raw: "#,##0 'BYR'" }))),
+                (p.b1443102424 = g(p("ro").numberFormatter({ raw: "#,##0.00 'CAD'" }))),
+                (p.a531714349 = g(p("ro").numberFormatter({ raw: "#,##0.00 'CHF'" }))),
+                (p.a73053287 = g(p("ro").numberFormatter({ raw: "#,##0 'CLP'" }))),
+                (p.a2105723008 = g(p("ro").numberFormatter({ raw: "#,##0.00 'CNY'" }))),
+                (p.b1559402966 = g(p("ro").numberFormatter({ raw: "#,##0 'COP'" }))),
+                (p.b529942822 = g(p("ro").numberFormatter({ raw: "#,##0.00 'CZK'" }))),
+                (p.a785214186 = g(p("ro").numberFormatter({ raw: "#,##0.00 'DKK'" }))),
+                (p.a1012463456 = g(p("ro").numberFormatter({ raw: "#,##0.00 'DZD'" }))),
+                (p.b878844448 = g(p("ro").numberFormatter({ raw: "#,##0.00 'EGP'" }))),
+                (p.b1281436500 = g(p("ro").numberFormatter({ raw: "#,##0.00 'EUR'" }))),
+                (p.b1830742183 = g(p("ro").numberFormatter({ raw: "#,##0.00 'GBP'" }))),
+                (p.b714799940 = g(p("ro").numberFormatter({ raw: "#,##0.00 'GHS'" }))),
+                (p.a1288051338 = g(p("ro").numberFormatter({ raw: "#,##0.00 'GTQ'" }))),
+                (p.b1033883123 = g(p("ro").numberFormatter({ raw: "#,##0.00 'HKD'" }))),
+                (p.a1084079405 = g(p("ro").numberFormatter({ raw: "#,##0.00 'HRK'" }))),
+                (p.b691522603 = g(p("ro").numberFormatter({ raw: "#,##0.00 'HUF'" }))),
+                (p.b807823145 = g(p("ro").numberFormatter({ raw: "#,##0 'IDR'" }))),
+                (p.a2025868158 = g(p("ro").numberFormatter({ raw: "#,##0.00 'ILS'" }))),
+                (p.b522720927 = g(p("ro").numberFormatter({ raw: "#,##0.00 'INR'" }))),
+                (p.a1738982002 = g(p("ro").numberFormatter({ raw: "#,##0 'IQD'" }))),
+                (p.b580573875 = g(p("ro").numberFormatter({ raw: "#,##0 'ISK'" }))),
+                (p.b1099466469 = g(p("ro").numberFormatter({ raw: "#,##0 'JPY'" }))),
+                (p.b701036939 = g(p("ro").numberFormatter({ raw: "#,##0.00 'KES'" }))),
+                (p.b1933874370 = g(p("ro").numberFormatter({ raw: "#,##0 'KRW'" }))),
+                (p.a1959690166 = g(p("ro").numberFormatter({ raw: "#,##0.000 'KWD'" }))),
+                (p.a785300329 = g(p("ro").numberFormatter({ raw: "#,##0.00 'KZT'" }))),
+                (p.b1706625100 = g(p("ro").numberFormatter({ raw: "#,##0 'LBP'" }))),
+                (p.b1194868258 = g(p("ro").numberFormatter({ raw: "#,##0.00 'MAD'" }))),
+                (p.b909766040 = g(p("ro").numberFormatter({ raw: "#,##0.00 'MKD'" }))),
+                (p.b1970828565 = g(p("ro").numberFormatter({ raw: "#,##0.00 'MXN'" }))),
+                (p.b968808280 = g(p("ro").numberFormatter({ raw: "#,##0.00 'MYR'" }))),
+                (p.a1864288377 = g(p("ro").numberFormatter({ raw: "#,##0.00 'NGN'" }))),
+                (p.a288495780 = g(p("ro").numberFormatter({ raw: "#,##0.00 'NOK'" }))),
+                (p.a1260697622 = g(p("ro").numberFormatter({ raw: "#,##0.00 'NZD'" }))),
+                (p.b720065611 = g(p("ro").numberFormatter({ raw: "#,##0.00 'PEN'" }))),
+                (p.a1999703734 = g(p("ro").numberFormatter({ raw: "#,##0.00 'PHP'" }))),
+                (p.a424505783 = g(p("ro").numberFormatter({ raw: "#,##0 'PKR'" }))),
+                (p.a1197492860 = g(p("ro").numberFormatter({ raw: "#,##0.00 'PLN'" }))),
+                (p.a1882213900 = g(p("ro").numberFormatter({ raw: "#,##0.00 'QAR'" }))),
+                (p.b1244310019 = g(p("ro").numberFormatter({ raw: "#,##0.00 'RON'" }))),
+                (p.a2019413195 = g(p("ro").numberFormatter({ raw: "#,##0 'RSD'" }))),
+                (p.b557805041 = g(p("ro").numberFormatter({ raw: "#,##0.00 'RUB'" }))),
+                (p.a1072867274 = g(p("ro").numberFormatter({ raw: "#,##0.00 'SAR'" }))),
+                (p.a127510645 = g(p("ro").numberFormatter({ raw: "#,##0.00 'SEK'" }))),
+                (p.a1702113950 = g(p("ro").numberFormatter({ raw: "#,##0.00 'SGD'" }))),
+                (p.b19797632 = g(p("ro").numberFormatter({ raw: "#,##0.00 'THB'" }))),
+                (p.a1067515460 = g(p("ro").numberFormatter({ raw: "#,##0.000 'TND'" }))),
+                (p.a923775059 = g(p("ro").numberFormatter({ raw: "#,##0.00 'TRY'" }))),
+                (p.a465113997 = g(p("ro").numberFormatter({ raw: "#,##0.00 'TWD'" }))),
+                (p.b737904991 = g(p("ro").numberFormatter({ raw: "#,##0 'TZS'" }))),
+                (p.b22770862 = g(p("ro").numberFormatter({ raw: "#,##0.00 'UAH'" }))),
+                (p.a1465350344 = g(p("ro").numberFormatter({ raw: "#,##0 'UGX'" }))),
+                (p.b1342090392 = g(p("ro").numberFormatter({ raw: "#,##0.00 'USD'" }))),
+                (p.a917828599 = g(p("ro").numberFormatter({ raw: "#,##0.00 'VEF'" }))),
+                (p.a258168834 = g(p("ro").numberFormatter({ raw: "#,##0 'VND'" }))),
+                (p.a387637731 = g(p("ro").numberFormatter({ raw: "#,##0.00 'ZAR'" }))),
+                (p.b1704074230 = g(p("ro").numberFormatter({ raw: "#,##0.00 'ZMW'" }))),
+                (p.b1766160864 = v({ 1: p("ro").numberFormatter({ raw: "0" }) }, { pattern: "d MMM", timeSeparator: ":", months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } } })),
+                (p.a438470333 = v({ 1: p("ro").numberFormatter({ raw: "0" }) }, { pattern: "d MMM y", timeSeparator: ":", months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } } })),
+                (p.b2085484814 = v({ 1: p("ro").numberFormatter({ raw: "0" }), 2: p("ro").numberFormatter({ raw: "00" }) }, { pattern: "h:mm a", timeSeparator: ":", dayPeriods: { am: "a.m.", pm: "p.m." } })),
+                (p.a1056838753 = v({ 1: p("ro").numberFormatter({ raw: "0" }) }, { pattern: "E, d MMM", timeSeparator: ":", days: { E: { 1: { sun: "dum.", mon: "lun.", tue: "mar.", wed: "mie.", thu: "joi", fri: "vin.", sat: "sâm." } } }, months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } } })),
+                (p.a680929124 = v({ 1: p("ro").numberFormatter({ raw: "0" }) }, { pattern: "E, d MMM y", timeSeparator: ":", days: { E: { 1: { sun: "dum.", mon: "lun.", tue: "mar.", wed: "mie.", thu: "joi", fri: "vin.", sat: "sâm." } } }, months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } } })),
+                (p.a1064226921 = v({ 1: p("ro").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM", timeSeparator: ":", months: { M: { 4: { 1: "ianuarie", 2: "februarie", 3: "martie", 4: "aprilie", 5: "mai", 6: "iunie", 7: "iulie", 8: "august", 9: "septembrie", 10: "octombrie", 11: "noiembrie", 12: "decembrie" } } } })),
+                (p.a46136969 = v({ 1: p("ro").numberFormatter({ raw: "0" }), 2: p("ro").numberFormatter({ raw: "00" }) }, { pattern: "d MMMM y, HH:mm:ss z", timeSeparator: ":", months: { M: { 4: { 1: "ianuarie", 2: "februarie", 3: "martie", 4: "aprilie", 5: "mai", 6: "iunie", 7: "iulie", 8: "august", 9: "septembrie", 10: "octombrie", 11: "noiembrie", 12: "decembrie" } } }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: ["+H;-H", "+H:mm;-H:mm"] })),
+                (p.a527312088 = v({ 1: p("ro").numberFormatter({ raw: "0" }), 2: p("ro").numberFormatter({ raw: "00" }) }, { pattern: "d MMM y, h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } }, dayPeriods: { am: "a.m.", pm: "p.m." } })),
+                (p.a225933308 = v({ 1: p("ro").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM y", timeSeparator: ":", months: { M: { 4: { 1: "ianuarie", 2: "februarie", 3: "martie", 4: "aprilie", 5: "mai", 6: "iunie", 7: "iulie", 8: "august", 9: "septembrie", 10: "octombrie", 11: "noiembrie", 12: "decembrie" } } } })),
+                (p.b704391301 = v({ 1: p("ro").numberFormatter({ raw: "0" }), 2: p("ro").numberFormatter({ raw: "00" }) }, { pattern: "d MMM, h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } }, dayPeriods: { am: "a.m.", pm: "p.m." } })),
+                (p.a147321616 = v({ 1: p("ro").numberFormatter({ raw: "0" }), 2: p("ro").numberFormatter({ raw: "00" }) }, { pattern: "dd.MM.y", timeSeparator: ":" })),
+                (p.a1734278772 = v({ 1: p("ro").numberFormatter({ raw: "0" }) }, { pattern: "y", timeSeparator: ":" })),
+                (p.b1371389757 = v({ 1: p("ro").numberFormatter({ raw: "0" }) }, { pattern: "MMM y", timeSeparator: ":", months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } } })),
+                (p.b813841002 = v({ 1: p("ro").numberFormatter({ raw: "0" }), 2: p("ro").numberFormatter({ raw: "00" }) }, { pattern: "EEEE, d MMMM y, HH:mm:ss zzzz", timeSeparator: ":", days: { E: { 4: { sun: "duminică", mon: "luni", tue: "marți", wed: "miercuri", thu: "joi", fri: "vineri", sat: "sâmbătă" } } }, months: { M: { 4: { 1: "ianuarie", 2: "februarie", 3: "martie", 4: "aprilie", 5: "mai", 6: "iunie", 7: "iulie", 8: "august", 9: "septembrie", 10: "octombrie", 11: "noiembrie", 12: "decembrie" } } }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: "+HH:mm;-HH:mm" })),
+                (p.b819455440 = v({ 1: p("ro").numberFormatter({ raw: "0" }), 2: p("ro").numberFormatter({ raw: "00" }) }, { pattern: "d MMM y, HH:mm:ss", timeSeparator: ":", months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } } })),
+                (p.a459711316 = v({ 1: p("ro").numberFormatter({ raw: "0" }), 2: p("ro").numberFormatter({ raw: "00" }) }, { pattern: "dd.MM.y", timeSeparator: ":" })),
+                (p.a802666129 = v({ 2: p("ro").numberFormatter({ raw: "00" }) }, { pattern: "HH:mm", timeSeparator: ":" })),
+                (p.b1230009725 = v({ 1: p("ro").numberFormatter({ raw: "0" }), 2: p("ro").numberFormatter({ raw: "00" }) }, { pattern: "E h:mm a", timeSeparator: ":", days: { E: { 1: { sun: "dum.", mon: "lun.", tue: "mar.", wed: "mie.", thu: "joi", fri: "vin.", sat: "sâm." } } }, dayPeriods: { am: "a.m.", pm: "p.m." } })),
+                (p.a437785140 = v({ 1: p("ro").numberFormatter({ raw: "0" }) }, { pattern: "MMMM y", timeSeparator: ":", months: { M: { 4: { 1: "ianuarie", 2: "februarie", 3: "martie", 4: "aprilie", 5: "mai", 6: "iunie", 7: "iulie", 8: "august", 9: "septembrie", 10: "octombrie", 11: "noiembrie", 12: "decembrie" } } } })),
+                (p.b513600617 = v({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "duminică", mon: "luni", tue: "marți", wed: "miercuri", thu: "joi", fri: "vineri", sat: "sâmbătă" } } } })),
+                (p.a166134499 = v({ 1: p("ro").numberFormatter({ raw: "0" }) }, { pattern: "d MMM y", timeSeparator: ":", months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } } })),
+                (p.b1766846057 = v({}, { pattern: "LLLL", timeSeparator: ":", months: { L: { 4: { 1: "ianuarie", 2: "februarie", 3: "martie", 4: "aprilie", 5: "mai", 6: "iunie", 7: "iulie", 8: "august", 9: "septembrie", 10: "octombrie", 11: "noiembrie", 12: "decembrie" } } } })),
                 (p.a2137399351 = A(p("ro").dateToPartsFormatter({ skeleton: "MMMd" }))),
                 (p.a1189752710 = A(p("ro").dateToPartsFormatter({ skeleton: "yMMMd" }))),
                 (p.a1373321929 = A(p("ro").dateToPartsFormatter({ skeleton: "hm" }))),
@@ -13403,4 +13387,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.2a1f854a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.28b3a27a.js.map

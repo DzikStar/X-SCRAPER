@@ -1497,9 +1497,6 @@
                     return "Sekat @" + a.screenName;
                 }),
                 i("a6450e84", "Sekat"),
-                i("g353ad73", function (a) {
-                    return "Mereka tidak akan dapat mengikuti anda atau melihat siaran anda, dan anda tidak akan melihat siaran atau pemberitahuan daripada @" + a.screenName + ".";
-                }),
                 i("ad00a739", function (a) {
                     return "Mereka akan dapat melihat siaran umum anda, tetapi tidak dapat lagi berinteraksi dengan siaran tersebut. @" + a.screenName + " juga tidak dapat mengikuti atau menghantar mesej kepada anda, dan anda tidak akan melihat pemberitahuan daripada mereka.";
                 }),
@@ -1511,7 +1508,6 @@
                     return "Nyahsekat @" + a.screenName;
                 }),
                 i("e133be4e", "Nyahsekat"),
-                i("he43bca4", "Mereka akan dapat mengikuti anda dan melihat siaran anda."),
                 i("f5f01af6", "Mereka akan dapat mengikuti anda dan berinteraksi dengan siaran umum anda."),
                 i("b6878b0a", "Ada sesuatu yang tidak kena. Cuba sekat semula pengguna itu sebentar lagi."),
                 i("e40252de", "Jangan tunjukkan siaran ini dalam Untuk anda"),
@@ -1920,10 +1916,10 @@
                 i("jcd5ee8a", "Edit blok"),
                 i("a8f09fb8", "Padam blok"),
                 i("i89195ea", "Pembahagi"),
-                i("da8ac57c", "Edit Kapsyen");
-            i("a8fdd09c", "Terbitkan Artikel"),
-                i("d8047cc8", "Terbitkan"),
-                i("ff7ddca2", "Artikel anda akan muncul sebagai siaran sebaik sahaja diterbitkan. Anda juga boleh menemukan Artikel itu di bawah tab Artikel pada profil anda."),
+                i("da8ac57c", "Edit Kapsyen"),
+                i("a8fdd09c", "Terbitkan Artikel"),
+                i("d8047cc8", "Terbitkan");
+            i("ff7ddca2", "Artikel anda akan muncul sebagai siaran sebaik sahaja diterbitkan. Anda juga boleh menemukan Artikel itu di bawah tab Artikel pada profil anda."),
                 i("ef34d7be", "Kawalan khalayak dan balasan tidak dapat diedit selepas sesebuah artikel diterbitkan."),
                 i("e52d4998", "Pilih khalayak anda"),
                 i("d7985b24", "Pilih orang yang boleh membalas kepada Artikel ini"),
@@ -2976,10 +2972,10 @@
                 i("bc6efc72", "Dasar Privasi"),
                 i("h3161192", "Dasar Kuki"),
                 i("a7de64de", "Maklumat iklan"),
-                i("jb0a4c36", "Blog");
-            i("ce6d095a", "Karier"),
-                i("e0adec82", "Sumber Jenama"),
-                i("df1b7550", "Pemasaran"),
+                i("jb0a4c36", "Blog"),
+                i("ce6d095a", "Karier"),
+                i("e0adec82", "Sumber Jenama");
+            i("df1b7550", "Pemasaran"),
                 i("he258678", "X untuk Perniagaan"),
                 i("c6f58084", "Pembangun"),
                 i("d83f18d2", "Direktori"),
@@ -3888,10 +3884,10 @@
                 i("c371fb9a", "Tamat"),
                 i("c0ce822e", "Tetapan mikrofon"),
                 i("a2bf8b8a", "Bertukar kepada mendengar"),
-                i("caa8d928", "Togol penindasan hingar");
-            i("b5d88f0c", "Pekerja sahaja"),
-                i("c855ab8e", "Pelanggan sahaja"),
-                i("ddeb0a3c", "Inilah Komuniti itu. Suka orang dalam Komuniti ini? Sila lihat."),
+                i("caa8d928", "Togol penindasan hingar"),
+                i("b5d88f0c", "Pekerja sahaja"),
+                i("c855ab8e", "Pelanggan sahaja");
+            i("ddeb0a3c", "Inilah Komuniti itu. Suka orang dalam Komuniti ini? Sila lihat."),
                 i("e111f531", function (a) {
                     return a.count + " turut serta";
                 }),
@@ -4492,8 +4488,6 @@
                 }),
                 i("c9a1cb5e", "Akaun ini tidak wujud"),
                 i("e7b201de", "Cuba cari yang lain."),
-                i("ica87fde", "Anda disekat"),
-                i("c7ec6faf", "Ketahui lebih lanjut"),
                 i("e79ed125", function (a) {
                     return "@" + a.screenName + " disekat";
                 }),
@@ -4930,12 +4924,12 @@
                 i("fbc79a40", "Gambaran keseluruhan Spaces"),
                 i("d077112a", "Statistik Space"),
                 i("cf3709da", "Status"),
-                i("e797dc32", "Masa strim: ");
-            i("b649d8cc", "Pelanggan Sahaja"),
+                i("e797dc32", "Masa strim: "),
+                i("b649d8cc", "Pelanggan Sahaja"),
                 i("j9282130", "Lakaran kecil siaran"),
                 i("g629b8b0", "Tamat Masa"),
-                i("eb87323c", "Ini menunjukkan data analitis untuk tempoh masa yang dipilih sejak strim langsung berlaku."),
-                i("i6a75722", "Julat Masa"),
+                i("eb87323c", "Ini menunjukkan data analitis untuk tempoh masa yang dipilih sejak strim langsung berlaku.");
+            i("i6a75722", "Julat Masa"),
                 i("c602f5b8", "Jumlah"),
                 i("b35e68ae", "Jumlah Peserta"),
                 i("h78ee79a", "Jumlah Main Semula Ditonton"),
@@ -5882,12 +5876,12 @@
                 i("hf68e810", "Nota Komuniti ialah program yang berhasrat untuk mewujudkan dunia yang lebih termaklum. Program ini membantu pengguna X bekerjasama dalam menambahkan nota yang bersifat membantu pada siaran yang mungkin mengelirukan."),
                 i("jdb52860", "Penyumbang menulis dan menilai nota"),
                 i("c104025c", "Penyumbang terdiri daripada pengguna di X, sama seperti anda, yang memilih untuk mengambil bahagian dalam program perintis ini untuk menulis dan menilai nota. Program ini akan menjadi lebih baik apabila lebih ramai orang yang mengambil bahagian."),
-                i("j7872b8c", "Hanya nota yang didapati sebagai membantu oleh orang ramai akan muncul pada sesuatu siaran");
-            i("fb59415e", "Nota yang disiarkan secara umum sebagai konteks bagi sesuatu siaran perlu dinilai sebagai membantu oleh cukup ramai orang dari pelbagai sudut pandangan. Pendekatan ini dapat mengelakkan bias dan manipulasi serta membantu dalam menemukan nota yang dapat membantu ramai pengguna lain."),
+                i("j7872b8c", "Hanya nota yang didapati sebagai membantu oleh orang ramai akan muncul pada sesuatu siaran"),
+                i("fb59415e", "Nota yang disiarkan secara umum sebagai konteks bagi sesuatu siaran perlu dinilai sebagai membantu oleh cukup ramai orang dari pelbagai sudut pandangan. Pendekatan ini dapat mengelakkan bias dan manipulasi serta membantu dalam menemukan nota yang dapat membantu ramai pengguna lain."),
                 i("f9a44022", "Pengguna yang memilih perkara yang hendak dipaparkan, bukannya X"),
                 i("gdf4fbb2", "X tidak menulis menilai atau menjadi moderator bagi nota (melainkan nota tersebut melanggar Peraturan X). Kami percaya bahawa peluang yang diberikan kepada pengguna untuk membuat pilihan ini bersama-sama merupakan cara yang adil dan berkesan dalam menambahkan maklumat yang dapat membantu orang lain memperoleh maklumat yang lebih baik."),
-                i("cc720e6a", "Nota Komuniti dibina berdasarkan ketelusan data"),
-                i("j2fcd33a", "Data termasuk sumbangan sehingga"),
+                i("cc720e6a", "Nota Komuniti dibina berdasarkan ketelusan data");
+            i("j2fcd33a", "Data termasuk sumbangan sehingga"),
                 i("d4a6b322", "Semua data Nota Komuniti diterbitkan di sini setiap hari, jadi pengguna mempunyai akses secara percuma untuk menganalisis data tersebut, mengenal pasti masalah dan mengesan peluang untuk menjadikan Nota Komuniti lebih baik. Kami tidak sabar untuk menambah pengetahuan baharu bersama anda."),
                 i("c359263a", "Ketahui cara menggunakan dan menganalisis data Nota Komuniti "),
                 i("b8a27fe2", "dalam panduan kami"),
@@ -6482,9 +6476,6 @@
                 i("e778e3d8", "Berjaya menyekat DM"),
                 i("b7867912", "Nyahsekat semuanya"),
                 i("gaddb872", "Nyahsekat DM"),
-                i("d83414a1", function (a) {
-                    return "Nyahsekat @" + a.screenName + "? Mereka akan dapat mengikuti anda dan melihat siaran anda.";
-                }),
                 i("a5bbfecd", function (a) {
                     return "Nyahsekat @" + a.screenName + "? Mereka akan dapat mengikuti anda dan berinteraksi dengan siaran umum anda.";
                 }),
@@ -6890,13 +6881,13 @@
                 i("b2c213e0", "Had aksara dilebihi"),
                 i("d84e9c2a", "Kongsi jenis komitmen kerja yang dijangka untuk peranan ini."),
                 i("bc8b300c", "Fungsi Kerja"),
-                i("d1eedb50", "Bantu calon untuk memahami bidang yang disokong oleh peranan ini.");
-            i("eaf3ce64", "Pasukan"),
+                i("d1eedb50", "Bantu calon untuk memahami bidang yang disokong oleh peranan ini."),
+                i("eaf3ce64", "Pasukan"),
                 i("b36cd50e", "Nyatakan pasukan teras yang akan bekerjasama dengan calon setelah diambil kerja."),
                 i("d3a427ce", "Pilih tahap pengalaman yang diperlukan."),
                 i("i7174442", "Perihalan Pekerjaan"),
-                i("fef0cf02", "Sediakan perihalan pekerjaan yang terperinci. Gariskan tanggungjawab dan kelayakan penting agar calon memahami peranan tersebut dengan jelas."),
-                i("b7800bec", "Usulkan pekerjaan dalam 200 aksara atau kurang. Ditunjukkan dalam siaran, syor dan carian."),
+                i("fef0cf02", "Sediakan perihalan pekerjaan yang terperinci. Gariskan tanggungjawab dan kelayakan penting agar calon memahami peranan tersebut dengan jelas.");
+            i("b7800bec", "Usulkan pekerjaan dalam 200 aksara atau kurang. Ditunjukkan dalam siaran, syor dan carian."),
                 i("a5244ece", "URL Permohonan (Diperlukan)"),
                 i("g2b553f6", "Masukkan URL umum untuk calon membuat permohonan bagi pekerjaan ini."),
                 i("c2e77608", "Nama Jawatan (Diperlukan)"),
@@ -7862,7 +7853,16 @@
                 i("b5099e33", function (a) {
                     return "@" + a.screenName + " tidak mempunyai pengikut disahkan.";
                 }),
-                i("ec251f36", "Apabila seseorang yang anda kenali mengikuti mereka, mereka akan disenaraikan di sini.");
+                i("ec251f36", "Apabila seseorang yang anda kenali mengikuti mereka, mereka akan disenaraikan di sini."),
+                i("f8af4f48", "Apabila mereka mengikuti akaun, mereka akan ditunjukkan di sini."),
+                i("fd0aad94", "Apabila seseorang yang disahkan mengikuti akaun ini, mereka akan ditunjukkan di sini."),
+                i("b84f6df1", function (a) {
+                    return "Beri Premium sebagai hadiah pada harga diskaun sebanyak " + a.percentage + "% untuk masa yang terhad";
+                }),
+                i("cfcac293", function (a) {
+                    return "Beri Hadiah & Bayar " + a.price;
+                }),
+                i("d7a73450", "Peringkat");
             function u(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7901,16 +7901,7 @@
                     d(a, n)
                 );
             }
-            i("f8af4f48", "Apabila mereka mengikuti akaun, mereka akan ditunjukkan di sini."),
-                i("fd0aad94", "Apabila seseorang yang disahkan mengikuti akaun ini, mereka akan ditunjukkan di sini."),
-                i("b84f6df1", function (a) {
-                    return "Beri Premium sebagai hadiah pada harga diskaun sebanyak " + a.percentage + "% untuk masa yang terhad";
-                }),
-                i("cfcac293", function (a) {
-                    return "Beri Hadiah & Bayar " + a.price;
-                }),
-                i("d7a73450", "Peringkat"),
-                i("hbd2c24e", "Akaun ini tidak layak untuk hadiah pada masa ini."),
+            i("hbd2c24e", "Akaun ini tidak layak untuk hadiah pada masa ini."),
                 i("f3fddc98", "Terma Pembeli"),
                 i("cff9c889", "Ketahui lebih lanjut"),
                 i("c65dda96", "Hadiah anda telah dihantar."),
@@ -8896,15 +8887,15 @@
                 i("faf9f484", "Iklan"),
                 i("ae2ea9e7", function (a) {
                     return "Iklan oleh " + a.advertiserName;
-                });
-            i("hea01798", "Peluncur carian"),
+                }),
+                i("hea01798", "Peluncur carian"),
                 i("f8a09386", "Lihat di Periscope"),
                 i("gf2b6eee", "Gambar dalam Gambar"),
                 i("b3160a69", function (a) {
                     return a.volumePercent + " peratus";
                 }),
-                i("fb236728", "Jeda"),
-                i("e9bd453e", "Main Semula"),
+                i("fb236728", "Jeda");
+            i("e9bd453e", "Main Semula"),
                 i("d46b00b0", "Langkau ke siaran langsung"),
                 i("ec8ab8b4", "Senyap"),
                 i("b8b6344a", "Nyahsenyap"),
@@ -9329,7 +9320,6 @@
                 i("fe40537f", function (a) {
                     return "Nyahsekat @" + a.screenName + "?";
                 }),
-                i("ab7c3460", "Mereka akan dapat mengikuti anda dan melihat siaran anda."),
                 i("i58d8718", "Mereka akan dapat mengikuti anda dan berinteraksi dengan siaran umum anda."),
                 i("cda66545", function (a) {
                     return "Klik untuk " + a.followType + " " + a.screenName;
@@ -11362,12 +11352,6 @@
                             },
                         },
                         {
-                            key: "e6264621",
-                            get: function () {
-                                return ["Anda tidak boleh mengikuti atau melihat siaran @" + this.props.screenName + ". "];
-                            },
-                        },
-                        {
                             key: "f98ecc47",
                             get: function () {
                                 return ["Adakah anda pasti anda ingin melihat siaran ini? Melihat siaran tidak akan menyahsekat @" + this.props.screenName + ". "];
@@ -13388,4 +13372,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.f70d444a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.95f1574a.js.map

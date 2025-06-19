@@ -1502,9 +1502,6 @@
                     return "Bloquear a @" + e.screenName;
                 }),
                 t("a6450e84", "Bloquear"),
-                t("g353ad73", function (e) {
-                    return "They will not be able to follow you or view your posts, and you will not see posts or notifications from @" + e.screenName + ".";
-                }),
                 t("ad00a739", function (e) {
                     return "They will be able to see your public posts, but will no longer be able to engage with them. @" + e.screenName + " will also not be able to follow or message you, and you will not see notifications from them.";
                 }),
@@ -1516,7 +1513,6 @@
                     return "Desbloquear a @" + e.screenName;
                 }),
                 t("e133be4e", "Desbloquear"),
-                t("he43bca4", "They will be able to follow you and view your posts."),
                 t("f5f01af6", "They will be able to follow you and engage with your public posts."),
                 t("b6878b0a", "Houbo algún problema. Tenta volver bloquear ese usuario dentro dun minuto."),
                 t("e40252de", "Don’t show these posts in For you"),
@@ -1925,10 +1921,10 @@
                 t("jcd5ee8a", "Edit block"),
                 t("a8f09fb8", "Delete block"),
                 t("i89195ea", "Divider"),
-                t("da8ac57c", "Edit Caption");
-            t("a8fdd09c", "Publish Article"),
-                t("d8047cc8", "Publicar"),
-                t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                t("da8ac57c", "Edit Caption"),
+                t("a8fdd09c", "Publish Article"),
+                t("d8047cc8", "Publicar");
+            t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
                 t("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
                 t("e52d4998", "Choose your audience"),
                 t("d7985b24", "Choose who can reply to this Article"),
@@ -2981,10 +2977,10 @@
                 t("bc6efc72", "Política de privacidade"),
                 t("h3161192", "Política de cookies"),
                 t("a7de64de", "Ads info"),
-                t("jb0a4c36", "Blog");
-            t("ce6d095a", "Empregos"),
-                t("e0adec82", "Recursos de marca"),
-                t("df1b7550", "Marketing"),
+                t("jb0a4c36", "Blog"),
+                t("ce6d095a", "Empregos"),
+                t("e0adec82", "Recursos de marca");
+            t("df1b7550", "Marketing"),
                 t("he258678", "X for Business"),
                 t("c6f58084", "Developers"),
                 t("d83f18d2", "Directory"),
@@ -3893,10 +3889,10 @@
                 t("c371fb9a", "Final"),
                 t("c0ce822e", "Microphone settings"),
                 t("a2bf8b8a", "Switch to listening"),
-                t("caa8d928", "Toggle noise suppression");
-            t("b5d88f0c", "Employees only"),
-                t("c855ab8e", "Subscribers only"),
-                t("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
+                t("caa8d928", "Toggle noise suppression"),
+                t("b5d88f0c", "Employees only"),
+                t("c855ab8e", "Subscribers only");
+            t("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
                 t("e111f531", function (e) {
                     return e.count + " usuario" + n(e.count, "", "s") + " escoitando";
                 }),
@@ -4497,8 +4493,6 @@
                 }),
                 t("c9a1cb5e", "Esta conta non existe"),
                 t("e7b201de", "Tenta procurar outra."),
-                t("ica87fde", "Estás bloqueado"),
-                t("c7ec6faf", "Learn more"),
                 t("e79ed125", function (e) {
                     return "@" + e.screenName + " está bloqueado";
                 }),
@@ -4935,12 +4929,12 @@
                 t("fbc79a40", "Spaces overview"),
                 t("d077112a", "Space Stats"),
                 t("cf3709da", "Status"),
-                t("e797dc32", "Stream time: ");
-            t("b649d8cc", "Subscriber Only"),
+                t("e797dc32", "Stream time: "),
+                t("b649d8cc", "Subscriber Only"),
                 t("j9282130", "Broadcast thumbnail"),
                 t("g629b8b0", "Timed Out"),
-                t("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                t("i6a75722", "Time Range"),
+                t("eb87323c", "This shows analytics data for the selected time period since the livestream happened.");
+            t("i6a75722", "Time Range"),
                 t("c602f5b8", "Total"),
                 t("b35e68ae", "Total Participants"),
                 t("h78ee79a", "Total Replay Watched"),
@@ -5887,12 +5881,12 @@
                 t("hf68e810", "Community Notes is a program that aims to create a better-informed world. It empowers people on X to collaboratively add helpful notes to posts that might be misleading."),
                 t("jdb52860", "Os colaboradores escriben e cualifican notas"),
                 t("c104025c", "Contributors are people on X, just like you, who chose to enroll in the pilot to write and rate notes. The more people that participate, the better the program becomes."),
-                t("j7872b8c", "Only notes that people find helpful appear on a post");
-            t("fb59415e", "In order to be shown publicly as context on the post, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people."),
+                t("j7872b8c", "Only notes that people find helpful appear on a post"),
+                t("fb59415e", "In order to be shown publicly as context on the post, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people."),
                 t("f9a44022", "X, the company, doesn’t choose what shows up: the people do"),
                 t("gdf4fbb2", "X, the company, doesn’t write, rate or moderate notes (unless they break the X Rules). We believe giving people voice to make these choices together is a fair and effective way to add information that helps people stay better informed."),
-                t("cc720e6a", "Community Notes is built on data transparency"),
-                t("j2fcd33a", "Os datos inclúen contribucións ata o "),
+                t("cc720e6a", "Community Notes is built on data transparency");
+            t("j2fcd33a", "Os datos inclúen contribucións ata o "),
                 t("d4a6b322", "All Community Notes data are published here daily, so people have free access to analyze it, identify problems, and spot opportunities to make Community Notes better. We can’t wait to learn with you."),
                 t("c359263a", "Learn how to use and analyze Community Notes data "),
                 t("b8a27fe2", "na nosa guía"),
@@ -6487,9 +6481,6 @@
                 t("e778e3d8", "Successfully blocked DMs"),
                 t("b7867912", "Unblock everything"),
                 t("gaddb872", "Unblock DMs"),
-                t("d83414a1", function (e) {
-                    return "Unblock @" + e.screenName + "? They will be able to follow you and view your posts.";
-                }),
                 t("a5bbfecd", function (e) {
                     return "Unblock @" + e.screenName + "? They will be able to follow you and engage with your public posts.";
                 }),
@@ -6895,13 +6886,13 @@
                 t("b2c213e0", "Character limit exceeded"),
                 t("d84e9c2a", "Share the type of work commitment expected for this role."),
                 t("bc8b300c", "Job Function"),
-                t("d1eedb50", "Help candidates understand the area this role supports.");
-            t("eaf3ce64", "Team"),
+                t("d1eedb50", "Help candidates understand the area this role supports."),
+                t("eaf3ce64", "Team"),
                 t("b36cd50e", "Specify the core team that candidates will work with once hired."),
                 t("d3a427ce", "Select the level of experience required."),
                 t("i7174442", "Job Description"),
-                t("fef0cf02", "Provide a detailed job description. Outline the key responsibilities and qualifications to give candidates a clear understanding of the role."),
-                t("b7800bec", "Pitch the job in 200 characters or less. Shown in posts, recommendations, and search."),
+                t("fef0cf02", "Provide a detailed job description. Outline the key responsibilities and qualifications to give candidates a clear understanding of the role.");
+            t("b7800bec", "Pitch the job in 200 characters or less. Shown in posts, recommendations, and search."),
                 t("a5244ece", "Application URL (Required)"),
                 t("g2b553f6", "Enter the public URL where candidates can apply for this job."),
                 t("c2e77608", "Job Title (Required)"),
@@ -7867,7 +7858,16 @@
                 t("b5099e33", function (e) {
                     return "@" + e.screenName + " doesn’t have any verified followers.";
                 }),
-                t("ec251f36", "Cando alguén a quen coñezas o siga, aparecerá aquí.");
+                t("ec251f36", "Cando alguén a quen coñezas o siga, aparecerá aquí."),
+                t("f8af4f48", "Cando siga contas, aparecerán aquí."),
+                t("fd0aad94", "When someone verified follows this account, they’ll show up here."),
+                t("b84f6df1", function (e) {
+                    return "Gift Premium at a " + e.percentage + "% discount for a limited time";
+                }),
+                t("cfcac293", function (e) {
+                    return "Gift & Pay " + e.price;
+                }),
+                t("d7a73450", "Tier");
             function r(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var t = a[o];
@@ -7906,16 +7906,7 @@
                     s(e, a)
                 );
             }
-            t("f8af4f48", "Cando siga contas, aparecerán aquí."),
-                t("fd0aad94", "When someone verified follows this account, they’ll show up here."),
-                t("b84f6df1", function (e) {
-                    return "Gift Premium at a " + e.percentage + "% discount for a limited time";
-                }),
-                t("cfcac293", function (e) {
-                    return "Gift & Pay " + e.price;
-                }),
-                t("d7a73450", "Tier"),
-                t("hbd2c24e", "This account is not eligible for gifts at this time."),
+            t("hbd2c24e", "This account is not eligible for gifts at this time."),
                 t("f3fddc98", "Purchaser Terms"),
                 t("cff9c889", "Learn more"),
                 t("c65dda96", "Your gift has been sent."),
@@ -8901,15 +8892,15 @@
                 t("faf9f484", "Anuncio"),
                 t("ae2ea9e7", function (e) {
                     return "Anuncio de " + e.advertiserName;
-                });
-            t("hea01798", "Control desprazable de procura"),
+                }),
+                t("hea01798", "Control desprazable de procura"),
                 t("f8a09386", "Ver en Periscope"),
                 t("gf2b6eee", "Picture-in-Picture"),
                 t("b3160a69", function (e) {
                     return e.volumePercent + " por cento";
                 }),
-                t("fb236728", "Pausar"),
-                t("e9bd453e", "Reproducir"),
+                t("fb236728", "Pausar");
+            t("e9bd453e", "Reproducir"),
                 t("d46b00b0", "Jump to live"),
                 t("ec8ab8b4", "Silenciar"),
                 t("b8b6344a", "Non silenciar"),
@@ -9334,7 +9325,6 @@
                 t("fe40537f", function (e) {
                     return "Queres desbloquear a @" + e.screenName + "?";
                 }),
-                t("ab7c3460", "They will be able to follow you and view your posts."),
                 t("i58d8718", "They will be able to follow you and engage with your public posts."),
                 t("cda66545", function (e) {
                     return "Preme para " + e.followType + " " + e.screenName;
@@ -11367,12 +11357,6 @@
                             },
                         },
                         {
-                            key: "e6264621",
-                            get: function () {
-                                return ["You can’t follow or see @" + this.props.screenName + "’s posts. "];
-                            },
-                        },
-                        {
                             key: "f98ecc47",
                             get: function () {
                                 return ["Are you sure you want to view these posts? Viewing posts won’t unblock @" + this.props.screenName + ". "];
@@ -13394,4 +13378,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.9e8cd7da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.feb83b7a.js.map

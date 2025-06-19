@@ -58,7 +58,7 @@
                 };
         },
         164383: (e, t, n) => {
-            n.d(t, { _g: () => U, fK: () => T });
+            n.d(t, { _g: () => U, fK: () => M });
             var a = n(807896),
                 o = (n(136728), n(202784)),
                 r = n(400752),
@@ -81,10 +81,10 @@
             const E = "Create Conference",
                 x = { label: E },
                 S = o.createElement(u.default, null);
-            function T(e) {
-                return o.createElement(o.Suspense, { fallback: null }, o.createElement(M, e));
-            }
             function M(e) {
+                return o.createElement(o.Suspense, { fallback: null }, o.createElement(T, e));
+            }
+            function T(e) {
                 const t = (0, C.si)(),
                     n = o.useContext(U),
                     a = e.conversationId ?? n,
@@ -101,8 +101,8 @@
             }
             const A = o.createElement(O, null);
             function k({ conversationId: e }) {
-                (0, r.Dv)(N);
-                const t = (0, r.b9)(N),
+                (0, r.Dv)(P);
+                const t = (0, r.b9)(P),
                     n = (0, s.useHistory)(),
                     i = (0, C.si)(),
                     l = i[0].id,
@@ -115,11 +115,11 @@
             function O() {
                 return o.createElement(c.ZP, { "aria-label": E, disabled: !0, hoverLabel: x, icon: S, type: "primaryText" });
             }
-            const Z = (e) => (t) => o.createElement(w, { conversationId: e, onClose: t });
-            function w({ conversationId: e, onClose: t }) {
+            const Z = (e) => (t) => o.createElement(N, { conversationId: e, onClose: t });
+            function N({ conversationId: e, onClose: t }) {
                 const n = (function (e) {
                     const t = (0, C.si)(),
-                        [, n] = (0, r.KO)(N),
+                        [, n] = (0, r.KO)(P),
                         a = (0, s.useHistory)();
                     return t.map(({ id: t, name: o }) => ({
                         text: o,
@@ -130,9 +130,9 @@
                 })(e);
                 return o.createElement(l.Z, { items: n, onCloseRequested: t, shouldCloseOnClick: !0 });
             }
-            const N = (0, v.Y)(async (e, t, n) => {
+            const P = (0, v.Y)(async (e, t, n) => {
                     const { conferenceAffiliateId: a, conversationId: o, history: r } = n,
-                        { title: i, userIds: s } = t(P, o);
+                        { title: i, userIds: s } = t(w, o);
                     if (!i || !s) return;
                     const c = e(f.F6),
                         { key: l } = await c.scheduleConference({ title: i, attendeesUserIds: s, orgId: a }),
@@ -140,7 +140,7 @@
                         d = `https://x.com${u}`;
                     await t(I, { conversationId: o, text: `Join the conference: ${d}` }), r.push(u);
                 }),
-                P = (0, i.cn)(null, (e, t, n) => {
+                w = (0, i.cn)(null, (e, t, n) => {
                     const a = e(d.qc).getState(),
                         o = g.selectConversation(a, n)?.data,
                         r = _.ZP.selectAll(a),
@@ -184,25 +184,25 @@
             const S = (0, _.Z)()
                 .propsFromActions(() => ({ addToast: E.fz, block: x.ZP.block, createLocalApiErrorHandler: (0, y.zr)("UNTRUSTED_CONVERSATION_ACTIONS"), muteDMUser: C.muteDMUser, unmuteDMUser: C.unmuteDMUser, unblock: x.ZP.unblock }))
                 .withAnalytics({ element: "untrusted_interstitial" });
-            var T = n(67369),
-                M = n(154003),
+            var M = n(67369),
+                T = n(154003),
                 A = n(807896),
                 k = n(30899),
                 O = n(187891);
             const Z = u().ccf2f24e,
-                w = u().ib3fe8aa,
-                N = ({ isGroup: e, onBlockClick: t, onReportClick: n, requestorScreenName: o }) => {
+                N = u().ib3fe8aa,
+                P = ({ isGroup: e, onBlockClick: t, onReportClick: n, requestorScreenName: o }) => {
                     const r = { type: "destructiveOutlined" },
-                        i = a.createElement(M.ZP, (0, A.Z)({}, r, { role: "button" }), w),
-                        s = a.createElement(M.ZP, (0, A.Z)({}, r, { onPress: n }), Z),
+                        i = a.createElement(T.ZP, (0, A.Z)({}, r, { role: "button" }), N),
+                        s = a.createElement(T.ZP, (0, A.Z)({}, r, { onPress: n }), Z),
                         c = a.useCallback((e, r) => a.createElement(O.ZP, { dismiss: e, flatBorders: "sheet" === r, onBlockClick: t, onReportClick: n, requestorScreenName: o, showBlock: !0, showCancel: "sheet" === r }), [t, n, o]);
                     return e ? s : a.createElement(k.Z, { renderContent: c }, i);
                 },
-                P = (e) => {
+                w = (e) => {
                     const t = a.useContext(d.rC),
                         { viewerUserId: n } = t,
-                        r = (0, T.yu)();
-                    return a.createElement(o.Z, { style: I.actionsContainer }, a.createElement(M.ZP, { onPress: () => e.onAccept(), size: "medium", style: [I.actionFullWidth, I.actionMarginBottom], type: "primaryOutlined" }, e.acceptButtonText), a.createElement(o.Z, { style: r ? I.actionFullWidth : [I.actionHalfWidth, I.actionMarginEnd] }, a.createElement(N, { isGroup: e.isGroup, onBlockClick: () => e.onBlock(), onReportClick: () => e.onReport(), requestorScreenName: (0, h.vm)(e.conversation, n).screenName })), a.createElement(M.ZP, { onPress: () => e.onLeave(), size: "medium", style: r ? [I.actionFullWidth, I.actionMarginTop] : [I.actionHalfWidth, I.actionMarginStart], type: "destructiveOutlined" }, e.declineButtonText));
+                        r = (0, M.yu)();
+                    return a.createElement(o.Z, { style: I.actionsContainer }, a.createElement(T.ZP, { onPress: () => e.onAccept(), size: "medium", style: [I.actionFullWidth, I.actionMarginBottom], type: "primaryOutlined" }, e.acceptButtonText), a.createElement(o.Z, { style: r ? I.actionFullWidth : [I.actionHalfWidth, I.actionMarginEnd] }, a.createElement(P, { isGroup: e.isGroup, onBlockClick: () => e.onBlock(), onReportClick: () => e.onReport(), requestorScreenName: (0, h.vm)(e.conversation, n).screenName })), a.createElement(T.ZP, { onPress: () => e.onLeave(), size: "medium", style: r ? [I.actionFullWidth, I.actionMarginTop] : [I.actionHalfWidth, I.actionMarginStart], type: "destructiveOutlined" }, e.declineButtonText));
                 },
                 I = c.default.create((e) => ({ actionsContainer: { display: "flex", flexWrap: "wrap", flexDirection: "row" }, actionFullWidth: { width: "100%" }, actionHalfWidth: { width: `calc(50% - ${e.spaces.space4})` }, actionMarginEnd: { marginEnd: e.spaces.space4 }, actionMarginStart: { marginStart: e.spaces.space4 }, actionMarginTop: { marginTop: e.spaces.space12 }, actionMarginBottom: { marginBottom: e.spaces.space12 } })),
                 U = u().da878dc0,
@@ -228,10 +228,10 @@
                     a.useEffect(() => {
                         S("impression");
                     }, [S]);
-                    const T = () => {
+                    const M = () => {
                             _(!1);
                         },
-                        M = () => {
+                        T = () => {
                             E(!1);
                         },
                         A = () => {
@@ -258,7 +258,7 @@
                             const { createLocalApiErrorHandler: n, unblock: a } = e;
                             a(t).catch(n(f.D)), S("unblock");
                         },
-                        w = (n && n.type) === b.eD.GROUP;
+                        N = (n && n.type) === b.eD.GROUP;
                     return a.createElement(
                         a.Fragment,
                         null,
@@ -268,12 +268,12 @@
                             ((e) => {
                                 const { viewerUserId: t } = c;
                                 return a.createElement(i.ZP, { style: V.copy }, e ? B : D({ senderName: (0, h.vm)(n, t).name }));
-                            })(w),
-                            a.createElement(P, {
+                            })(N),
+                            a.createElement(w, {
                                 acceptButtonText: U,
                                 conversation: n,
                                 declineButtonText: R,
-                                isGroup: w,
+                                isGroup: N,
                                 onAccept: () => {
                                     (() => {
                                         const { acceptConversation: t, analytics: a, conversationId: o, inboxType: r } = e,
@@ -294,12 +294,12 @@
                                 },
                             }),
                         ),
-                        y ? a.createElement(s.Z, { confirmButtonLabel: L.confirmButtonLabel, confirmButtonType: "destructiveFilled", headline: L.headline, onCancel: T, onConfirm: A, text: L.text }) : null,
+                        y ? a.createElement(s.Z, { confirmButtonLabel: L.confirmButtonLabel, confirmButtonType: "destructiveFilled", headline: L.headline, onCancel: M, onConfirm: A, text: L.text }) : null,
                         C
                             ? (() => {
-                                  const { featureSwitches: e, viewerUserId: t } = c,
-                                      { idStr: a, screenName: o } = (0, h.vm)(n, t);
-                                  return (0, m.ed)({ confirmation: (0, m.$f)(o, e.isTrue("xprofile_blocked_by_view_enabled")), onClose: M, handleConfirm: O(a) });
+                                  const { viewerUserId: e } = c,
+                                      { idStr: t, screenName: a } = (0, h.vm)(n, e);
+                                  return (0, m.ed)({ confirmation: (0, m.$f)(a), onClose: T, handleConfirm: O(t) });
                               })()
                             : null,
                     );
@@ -432,4 +432,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-6c5c183a.77c2706a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-6c5c183a.e6b8df3a.js.map

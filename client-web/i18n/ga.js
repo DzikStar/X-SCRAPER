@@ -1513,9 +1513,6 @@
                     return "Coisc @" + e.screenName;
                 }),
                 n("a6450e84", "Coisc"),
-                n("g353ad73", function (e) {
-                    return "They will not be able to follow you or view your posts, and you will not see posts or notifications from @" + e.screenName + ".";
-                }),
                 n("ad00a739", function (e) {
                     return "They will be able to see your public posts, but will no longer be able to engage with them. @" + e.screenName + " will also not be able to follow or message you, and you will not see notifications from them.";
                 }),
@@ -1527,7 +1524,6 @@
                     return "Díchoisc @" + e.screenName;
                 }),
                 n("e133be4e", "Díchoisc"),
-                n("he43bca4", "They will be able to follow you and view your posts."),
                 n("f5f01af6", "They will be able to follow you and engage with your public posts."),
                 n("b6878b0a", "Chuaigh rud éigin amú. Fan nóiméad agus déan iarracht bac a chur ar an úsáideoir sin arís."),
                 n("e40252de", "Don’t show these posts in For you"),
@@ -1936,10 +1932,10 @@
                 n("jcd5ee8a", "Edit block"),
                 n("a8f09fb8", "Delete block"),
                 n("i89195ea", "Divider"),
-                n("da8ac57c", "Edit Caption");
-            n("a8fdd09c", "Publish Article"),
-                n("d8047cc8", "Foilsigh"),
-                n("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                n("da8ac57c", "Edit Caption"),
+                n("a8fdd09c", "Publish Article"),
+                n("d8047cc8", "Foilsigh");
+            n("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
                 n("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
                 n("e52d4998", "Choose your audience"),
                 n("d7985b24", "Choose who can reply to this Article"),
@@ -2992,10 +2988,10 @@
                 n("bc6efc72", "Polasaí Príobháideachais"),
                 n("h3161192", "Polasaí Fianáin"),
                 n("a7de64de", "Ads info"),
-                n("jb0a4c36", "Blog");
-            n("ce6d095a", "Gairmeacha"),
-                n("e0adec82", "Acmhainní Branda"),
-                n("df1b7550", "Marketing"),
+                n("jb0a4c36", "Blog"),
+                n("ce6d095a", "Gairmeacha"),
+                n("e0adec82", "Acmhainní Branda");
+            n("df1b7550", "Marketing"),
                 n("he258678", "X for Business"),
                 n("c6f58084", "Developers"),
                 n("d83f18d2", "Directory"),
@@ -3904,10 +3900,10 @@
                 n("c371fb9a", "Deireadh"),
                 n("c0ce822e", "Microphone settings"),
                 n("a2bf8b8a", "Switch to listening"),
-                n("caa8d928", "Toggle noise suppression");
-            n("b5d88f0c", "Employees only"),
-                n("c855ab8e", "Subscribers only"),
-                n("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
+                n("caa8d928", "Toggle noise suppression"),
+                n("b5d88f0c", "Employees only"),
+                n("c855ab8e", "Subscribers only");
+            n("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
                 n("e111f531", function (e) {
                     return e.count + " tiúnáilte isteach";
                 }),
@@ -4508,8 +4504,6 @@
                 }),
                 n("c9a1cb5e", "Ní ann don chuntas seo"),
                 n("e7b201de", "Triail úsáideoir eile a chuardach."),
-                n("ica87fde", "Tá cosc curtha ort"),
-                n("c7ec6faf", "Learn more"),
                 n("e79ed125", function (e) {
                     return "Tá cosc ar @" + e.screenName;
                 }),
@@ -4946,12 +4940,12 @@
                 n("fbc79a40", "Spaces overview"),
                 n("d077112a", "Space Stats"),
                 n("cf3709da", "Status"),
-                n("e797dc32", "Stream time: ");
-            n("b649d8cc", "Subscriber Only"),
+                n("e797dc32", "Stream time: "),
+                n("b649d8cc", "Subscriber Only"),
                 n("j9282130", "Broadcast thumbnail"),
                 n("g629b8b0", "Timed Out"),
-                n("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                n("i6a75722", "Time Range"),
+                n("eb87323c", "This shows analytics data for the selected time period since the livestream happened.");
+            n("i6a75722", "Time Range"),
                 n("c602f5b8", "Iomlán"),
                 n("b35e68ae", "Total Participants"),
                 n("h78ee79a", "Total Replay Watched"),
@@ -5898,12 +5892,12 @@
                 n("hf68e810", "Community Notes is a program that aims to create a better-informed world. It empowers people on X to collaboratively add helpful notes to posts that might be misleading."),
                 n("jdb52860", "Scríobhann rannpháirtithe nótaí agus déanann siad rátáil orthu"),
                 n("c104025c", "Contributors are people on X, just like you, who chose to enroll in the pilot to write and rate notes. The more people that participate, the better the program becomes."),
-                n("j7872b8c", "Only notes that people find helpful appear on a post");
-            n("fb59415e", "In order to be shown publicly as context on the post, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people."),
+                n("j7872b8c", "Only notes that people find helpful appear on a post"),
+                n("fb59415e", "In order to be shown publicly as context on the post, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people."),
                 n("f9a44022", "X, the company, doesn’t choose what shows up: the people do"),
                 n("gdf4fbb2", "X, the company, doesn’t write, rate or moderate notes (unless they break the X Rules). We believe giving people voice to make these choices together is a fair and effective way to add information that helps people stay better informed."),
-                n("cc720e6a", "Community Notes is built on data transparency"),
-                n("j2fcd33a", "Áirítear sna sonraí ábhar suas le "),
+                n("cc720e6a", "Community Notes is built on data transparency");
+            n("j2fcd33a", "Áirítear sna sonraí ábhar suas le "),
                 n("d4a6b322", "All Community Notes data are published here daily, so people have free access to analyze it, identify problems, and spot opportunities to make Community Notes better. We can’t wait to learn with you."),
                 n("c359263a", "Learn how to use and analyze Community Notes data "),
                 n("b8a27fe2", "inár dtreoir"),
@@ -6498,9 +6492,6 @@
                 n("e778e3d8", "Successfully blocked DMs"),
                 n("b7867912", "Unblock everything"),
                 n("gaddb872", "Unblock DMs"),
-                n("d83414a1", function (e) {
-                    return "Unblock @" + e.screenName + "? They will be able to follow you and view your posts.";
-                }),
                 n("a5bbfecd", function (e) {
                     return "Unblock @" + e.screenName + "? They will be able to follow you and engage with your public posts.";
                 }),
@@ -6906,13 +6897,13 @@
                 n("b2c213e0", "Character limit exceeded"),
                 n("d84e9c2a", "Share the type of work commitment expected for this role."),
                 n("bc8b300c", "Job Function"),
-                n("d1eedb50", "Help candidates understand the area this role supports.");
-            n("eaf3ce64", "Team"),
+                n("d1eedb50", "Help candidates understand the area this role supports."),
+                n("eaf3ce64", "Team"),
                 n("b36cd50e", "Specify the core team that candidates will work with once hired."),
                 n("d3a427ce", "Select the level of experience required."),
                 n("i7174442", "Job Description"),
-                n("fef0cf02", "Provide a detailed job description. Outline the key responsibilities and qualifications to give candidates a clear understanding of the role."),
-                n("b7800bec", "Pitch the job in 200 characters or less. Shown in posts, recommendations, and search."),
+                n("fef0cf02", "Provide a detailed job description. Outline the key responsibilities and qualifications to give candidates a clear understanding of the role.");
+            n("b7800bec", "Pitch the job in 200 characters or less. Shown in posts, recommendations, and search."),
                 n("a5244ece", "Application URL (Required)"),
                 n("g2b553f6", "Enter the public URL where candidates can apply for this job."),
                 n("c2e77608", "Job Title (Required)"),
@@ -7878,7 +7869,16 @@
                 n("b5099e33", function (e) {
                     return "@" + e.screenName + " doesn’t have any verified followers.";
                 }),
-                n("ec251f36", "Nuair atá duine a bhfuil aithne agat air nó uirthi á leanúint, liostófar anseo é nó í.");
+                n("ec251f36", "Nuair atá duine a bhfuil aithne agat air nó uirthi á leanúint, liostófar anseo é nó í."),
+                n("f8af4f48", "Nuair a leanann siad cuntais, taispeánfar iad anseo."),
+                n("fd0aad94", "When someone verified follows this account, they’ll show up here."),
+                n("b84f6df1", function (e) {
+                    return "Gift Premium at a " + e.percentage + "% discount for a limited time";
+                }),
+                n("cfcac293", function (e) {
+                    return "Gift & Pay " + e.price;
+                }),
+                n("d7a73450", "Tier");
             function r(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var n = a[t];
@@ -7917,16 +7917,7 @@
                     c(e, a)
                 );
             }
-            n("f8af4f48", "Nuair a leanann siad cuntais, taispeánfar iad anseo."),
-                n("fd0aad94", "When someone verified follows this account, they’ll show up here."),
-                n("b84f6df1", function (e) {
-                    return "Gift Premium at a " + e.percentage + "% discount for a limited time";
-                }),
-                n("cfcac293", function (e) {
-                    return "Gift & Pay " + e.price;
-                }),
-                n("d7a73450", "Tier"),
-                n("hbd2c24e", "This account is not eligible for gifts at this time."),
+            n("hbd2c24e", "This account is not eligible for gifts at this time."),
                 n("f3fddc98", "Purchaser Terms"),
                 n("cff9c889", "Learn more"),
                 n("c65dda96", "Your gift has been sent."),
@@ -8912,15 +8903,15 @@
                 n("faf9f484", "Fógra"),
                 n("ae2ea9e7", function (e) {
                     return "Fógra le " + e.advertiserName;
-                });
-            n("hea01798", "Sleamhnán cuardaigh"),
+                }),
+                n("hea01798", "Sleamhnán cuardaigh"),
                 n("f8a09386", "Féach air ar Periscope"),
                 n("gf2b6eee", "Picture-in-Picture"),
                 n("b3160a69", function (e) {
                     return e.volumePercent + " céatadán";
                 }),
-                n("fb236728", "Cuir ar sos"),
-                n("e9bd453e", "Athsheinn"),
+                n("fb236728", "Cuir ar sos");
+            n("e9bd453e", "Athsheinn"),
                 n("d46b00b0", "Jump to live"),
                 n("ec8ab8b4", "Balbhaigh"),
                 n("b8b6344a", "Díbhalbhaigh"),
@@ -9345,7 +9336,6 @@
                 n("fe40537f", function (e) {
                     return "An bhfuil fonn ort @" + e.screenName + " a dhíchosc?";
                 }),
-                n("ab7c3460", "They will be able to follow you and view your posts."),
                 n("i58d8718", "They will be able to follow you and engage with your public posts."),
                 n("cda66545", function (e) {
                     return "Cliceáil chun " + e.screenName + " " + e.followType;
@@ -11378,12 +11368,6 @@
                             },
                         },
                         {
-                            key: "e6264621",
-                            get: function () {
-                                return ["You can’t follow or see @" + this.props.screenName + "’s posts. "];
-                            },
-                        },
-                        {
                             key: "f98ecc47",
                             get: function () {
                                 return ["Are you sure you want to view these posts? Viewing posts won’t unblock @" + this.props.screenName + ". "];
@@ -13406,4 +13390,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.ee01fe7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.d7048c4a.js.map

@@ -10,7 +10,7 @@
             const r = (0, i.Z)({ loader: () => s.e("loader.AbsolutePower").then(s.bind(s, 590136)), renderPlaceholder: (e, t) => o.createElement(n.Z, { hasError: e, onRetry: t }) });
         },
         376293: (e, t, s) => {
-            s.d(t, { $f: () => w, KV: () => f, LI: () => I, SC: () => C, Vt: () => y, ed: () => L, op: () => k });
+            s.d(t, { $f: () => b, KV: () => _, LI: () => v, SC: () => S, Vt: () => E, ed: () => P, op: () => C });
             var o = s(202784),
                 i = s(190286),
                 n = s(111677),
@@ -23,43 +23,44 @@
                 h = r().f9e45cfb,
                 p = r().fcd4d489,
                 m = r().a6450e84,
-                g = r().g353ad73,
-                _ = r().ad00a739,
-                f = r().a9fd20be,
-                E = r().j546fb79,
+                g = r().ad00a739,
+                _ = r().a9fd20be,
+                f = r().j546fb79,
                 T = r().c9623eeb,
-                y = r().e133be4e,
-                S = r().he43bca4,
-                b = r().f5f01af6,
-                C = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                w = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: h({ screenName: e }), label: m, text: t ? _({ screenName: e }) : g({ screenName: e }) }),
-                k = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: s, source: o, testID: i, unblockAction: n, unblockSubtext: r, user: a }) => {
-                    let c,
-                        u = l.Z;
-                    const h = I(a, s);
-                    switch (o) {
-                        case C.PROFILE:
-                        case C.LIST_DETAIL:
-                        case C.FOLLOWERS_LIST:
-                            u = () => {
-                                a.blocking ? n(h) : e(h);
+                E = r().e133be4e,
+                y = r().f5f01af6,
+                S = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
+                b = (e) => ({ confirmButtonType: "destructiveFilled", headline: h({ screenName: e }), label: m, text: g({ screenName: e }) }),
+                C = ({ blockAction: e, blockSubtext: t, source: s, testID: o, unblockAction: i, unblockSubtext: n, user: r }) => {
+                    let a,
+                        c = l.Z;
+                    const u = v(r);
+                    switch (s) {
+                        case S.PROFILE:
+                        case S.LIST_DETAIL:
+                        case S.FOLLOWERS_LIST:
+                            c = () => {
+                                r.blocking ? i(u) : e(u);
                             };
                             break;
-                        case C.TWEET:
-                        case C.TWEET_CARET:
-                        case C.RICH_FEEDBACK:
-                            (c = d.uq.block),
-                                (u = () => {
-                                    a.blocking ? n(h) : e(h);
+                        case S.TWEET:
+                        case S.TWEET_CARET:
+                        case S.RICH_FEEDBACK:
+                            (a = d.uq.block),
+                                (c = () => {
+                                    r.blocking ? i(u) : e(u);
                                 });
                     }
-                    return { confirmation: h, onClick: u, testID: i, shortcutKey: c, Icon: R(a.blocking), text: P(a), subText: v({ user: a, blockSubtext: t, unblockSubtext: r }) };
+                    return { confirmation: u, onClick: c, testID: o, shortcutKey: a, Icon: w(r.blocking), text: R(r), subText: k({ user: r, blockSubtext: t, unblockSubtext: n }) };
                 },
-                R = (e) => (e ? c.default : a.default),
-                v = ({ blockSubtext: e, unblockSubtext: t, user: s }) => (!s.blocking && e ? e(s.screen_name) : s.blocking ? t : void 0),
-                P = (e) => (e.blocking ? T({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
-                I = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: E({ screenName: e }), label: y, text: t ? b : S }))(e.screen_name, t) : w(e.screen_name, t)),
-                L = ({ confirmation: e, handleConfirm: t, onClose: s }) => {
+                w = (e) => (e ? c.default : a.default),
+                k = ({ blockSubtext: e, unblockSubtext: t, user: s }) => (!s.blocking && e ? e(s.screen_name) : s.blocking ? t : void 0),
+                R = (e) => (e.blocking ? T({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
+                v = (e) => {
+                    return e.blocking ? ((t = e.screen_name), { confirmButtonType: "primary", headline: f({ screenName: t }), label: E, text: y }) : b(e.screen_name);
+                    var t;
+                },
+                P = ({ confirmation: e, handleConfirm: t, onClose: s }) => {
                     const { confirmButtonType: n, headline: r, label: a, text: c } = e;
                     return o.createElement(i.Z, { cancelButtonLabel: u, confirmButtonLabel: a, confirmButtonType: n, headline: r, onCancel: s, onConfirm: t, text: c });
                 };
@@ -237,8 +238,8 @@
                 g = s(956272),
                 _ = s(264171),
                 f = s(290402),
-                E = s(980407),
-                T = s(341276),
+                T = s(980407),
+                E = s(341276),
                 y = s(27498),
                 S = s(312771),
                 b = s(71620),
@@ -393,13 +394,13 @@
                             const { history: e, initialFetchStatus: t, lastSearchFetchStatus: s } = this.props,
                                 { activeResultSet: i } = this.state,
                                 n = i === y.Z0.initial ? t : s;
-                            return o.createElement(E.Z, { appBarRef: this._appBarRef, history: e, onBackClick: this._handleBack, rightControl: this._renderRightControl(), title: W }, o.createElement(l.Z, { Icon: g.default, onChange: this._handleChange, onClear: this._handleClear, onSubmitEditing: this._handleSubmit, placeholder: V, style: G.search, withClearButton: !0 }), o.createElement(f.Z, { fetchStatus: n === S.ZP.NONE ? S.ZP.LOADING : n, onRequestRetry: this._handleRetry, render: this._renderResults, retryMessage: q }));
+                            return o.createElement(T.Z, { appBarRef: this._appBarRef, history: e, onBackClick: this._handleBack, rightControl: this._renderRightControl(), title: W }, o.createElement(l.Z, { Icon: g.default, onChange: this._handleChange, onClear: this._handleClear, onSubmitEditing: this._handleSubmit, placeholder: V, style: G.search, withClearButton: !0 }), o.createElement(f.Z, { fetchStatus: n === S.ZP.NONE ? S.ZP.LOADING : n, onRequestRetry: this._handleRetry, render: this._renderResults, retryMessage: q }));
                         }),
                         (this._renderLocationDisabledPrompt = () => {
                             const { geoLocationError: e } = this.state;
                             let t = F,
                                 s = M;
-                            return e && e.code === T.M.PERMISSION_DENIED && ((t = A), (s = U)), o.createElement(d.Z, { actionLabel: N, graphic: _.default, headline: t, onAction: this._handleLocationDisabledPromptDismiss, onClose: this._handleLocationDisabledPromptDismiss, subtext: s });
+                            return e && e.code === E.M.PERMISSION_DENIED && ((t = A), (s = U)), o.createElement(d.Z, { actionLabel: N, graphic: _.default, headline: t, onAction: this._handleLocationDisabledPromptDismiss, onClose: this._handleLocationDisabledPromptDismiss, subtext: s });
                         });
                     const { autotaggedLocation: t, initialResults: s, taggedLocation: u } = e;
                     u ? (this.state.selectedLocation = u) : s && (this.state.selectedLocation = t);
@@ -433,8 +434,8 @@
                 g = s(62857),
                 _ = s(735e3),
                 f = s(293115),
-                E = s(615027),
-                T = s(24949),
+                T = s(615027),
+                E = s(24949),
                 y = s(47743),
                 S = s(668214),
                 b = s(390387),
@@ -449,7 +450,7 @@
                     return (s && s.excludedRecipients) || (0, _.o)();
                 },
                 v = (0, S.Z)()
-                    .propsFromState(() => ({ recipientIds: (0, T.P1)(k, b._h, (e, t) => (e && t ? (0, y.YT)({ inReplyToStatus: e, viewerUserId: t, excludeReplyUser: !0 }).map((e) => e.id_str) : (0, _.o)())), initialExcludedRecipients: R, inReplyToStatus: k }))
+                    .propsFromState(() => ({ recipientIds: (0, E.P1)(k, b._h, (e, t) => (e && t ? (0, y.YT)({ inReplyToStatus: e, viewerUserId: t, excludeReplyUser: !0 }).map((e) => e.id_str) : (0, _.o)())), initialExcludedRecipients: R, inReplyToStatus: k }))
                     .propsFromActions(() => ({ updateExcludedRecipientsV2: C.OO })),
                 P = u().c55eed72,
                 I = u().b772cd66,
@@ -457,25 +458,25 @@
                 Z = u().c6a6dc2f,
                 D = { page: "compose", section: "recipients" },
                 x = ({ history: e, inReplyToStatus: t, initialExcludedRecipients: s, recipientIds: d, updateExcludedRecipientsV2: u }) => {
-                    const [T, y] = o.useState(s);
-                    if (!t) return o.createElement(E.Z, { to: "/compose/post" });
+                    const [E, y] = o.useState(s);
+                    if (!t) return o.createElement(T.Z, { to: "/compose/post" });
                     const { user: S } = t.retweeted_status || t,
                         b = (e) => {
                             y(e ? (0, _.o)() : d);
                         },
                         C = (e) => () => {
-                            const t = -1 !== T.indexOf(e);
-                            y(t ? T.filter((t) => t !== e) : (0, h.Z)([...T, e]));
+                            const t = -1 !== E.indexOf(e);
+                            y(t ? E.filter((t) => t !== e) : (0, h.Z)([...E, e]));
                         },
                         w = () => {
-                            u(T), e.goBack();
+                            u(E), e.goBack();
                         },
-                        k = () => (d.length > 1 ? o.createElement(a.Z, { checked: 0 === T.length, onChange: b }) : null),
+                        k = () => (d.length > 1 ? o.createElement(a.Z, { checked: 0 === E.length, onChange: b }) : null),
                         R = ({ isBlocking: e, screenName: t }) => (e ? o.createElement(c.ZP, { color: "magenta500", size: "subtext2" }, Z({ screenName: t })) : null),
                         v = (e) => {
                             if (!t) return null;
                             const { user: s } = t.retweeted_status || t,
-                                i = -1 !== T.indexOf(e),
+                                i = -1 !== E.indexOf(e),
                                 n = e === s.id_str,
                                 r = o.createElement(a.Z, { checked: !i, disabled: n, onChange: C(e) });
                             return o.createElement(m.ZP, { bottomControl: R, cellClickable: !n, decoration: r, isFakeButtonRoleWithListItem: !n, key: e, onClick: C(e), promotedItemType: "users", userId: e, withLink: !1 });
@@ -502,8 +503,8 @@
                 g = s.n(m),
                 _ = s(912021),
                 f = s(744531),
-                E = s(941399),
-                T = s(980407),
+                T = s(941399),
+                E = s(980407),
                 y = s(231214),
                 S = s(472826),
                 b = s(632552),
@@ -590,7 +591,7 @@
                     return s ? q.Z.createHydratedSelector(e)(s) : null;
                 },
                 fe = (e, t) => (0, U.t5)(e, U.xH),
-                Ee = (0, x.Z)()
+                Te = (0, x.Z)()
                     .propsFromState(() => ({
                         activeUser: $,
                         audienceControlsValue: (0, I.P1)(
@@ -629,7 +630,7 @@
                         title: le,
                     }))
                     .propsFromActions(() => ({ createDraftTweetApiErrorHandler: (0, Z.zr)(A.CA), createScheduledTweetApiErrorHandler: (0, Z.zr)(N.Hf), fetchScheduledTweets: N.FP, fetchDraftTweets: A.Le, addCommunityAudienceEducationFlag: () => (0, U.pj)(U.xH), updateAudienceControlsValue: V.sU, setActiveParentKey: V.jr }));
-            var Te = s(837880);
+            var Ee = s(837880);
             const ye = g().e6042757,
                 Se = g().a4e39717,
                 be = 3e5,
@@ -706,7 +707,7 @@
                             const { editableUntil: e } = this.props,
                                 { editCountdownShown: t } = this.state;
                             if (!t || !e) return null;
-                            return o.createElement(E.F, {
+                            return o.createElement(T.F, {
                                 "aria-label": ke,
                                 expiration: e,
                                 getAccessibilityLiveLabel: we,
@@ -736,7 +737,7 @@
                         (this._handleEditCountdownTimeout(m),
                         (this._cancelEditTimeout = (function (e, t) {
                             const s = e - Date.now() - be,
-                                o = (0, Te.Z)(s, 0, 2147483647),
+                                o = (0, Ee.Z)(s, 0, 2147483647),
                                 i = setTimeout(t, o, e);
                             return () => clearTimeout(i);
                         })(m, this._handleEditCountdownTimeout)));
@@ -755,7 +756,7 @@
                         o.createElement(d.ZP, null, ({ containerWidth: r }) => {
                             const d = C.Z.shouldRenderAsModal(r),
                                 g = (p && d) || this.showCommunityNonMemberPrompt;
-                            return o.createElement(o.Fragment, null, this.showCommunityNonMemberPrompt ? o.createElement(u.Z, { actionLabel: Ie, graphicDisplayMode: "none", headline: Le, onAction: this._handleCloseModal, subtext: Ze }) : null, p && o.createElement(y.Z, { history: i, location: a }), g ? null : o.createElement(T.Z, { appBarRef: this._setAppBarRef, documentTitle: ve, hideBackButton: !1, history: i, onBackClick: this._handleBackClick, renderHeader: this._renderHeaderWithProgressBar, rightControl: this._renderAppBarRightControl(), subtitle: l, title: n ? De : h }, o.createElement(S.Z, { activeUser: e, composeHeader: t, composeSemanticCoreId: s, containerWidth: r, history: i, isModal: m, location: a, onCloseComposer: this._handleCloseComposer, onHandleAppBarHeight: this._handleAppBarHeight, onRef: this._handleComposeContainerRef, quotedStatus: c, setValidity: this._setValidity })));
+                            return o.createElement(o.Fragment, null, this.showCommunityNonMemberPrompt ? o.createElement(u.Z, { actionLabel: Ie, graphicDisplayMode: "none", headline: Le, onAction: this._handleCloseModal, subtext: Ze }) : null, p && o.createElement(y.Z, { history: i, location: a }), g ? null : o.createElement(E.Z, { appBarRef: this._setAppBarRef, documentTitle: ve, hideBackButton: !1, history: i, onBackClick: this._handleBackClick, renderHeader: this._renderHeaderWithProgressBar, rightControl: this._renderAppBarRightControl(), subtitle: l, title: n ? De : h }, o.createElement(S.Z, { activeUser: e, composeHeader: t, composeSemanticCoreId: s, containerWidth: r, history: i, isModal: m, location: a, onCloseComposer: this._handleCloseComposer, onHandleAppBarHeight: this._handleAppBarHeight, onRef: this._handleComposeContainerRef, quotedStatus: c, setValidity: this._setValidity })));
                         }),
                     );
                 }
@@ -786,8 +787,8 @@
             }
             Fe.contextType = h.Z;
             const Me = p.default.create((e) => ({ progressBar: { position: "fixed", borderTopStartRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small, zIndex: e.componentZIndices.appBarZIndex + 1 }, progressBarModal: { position: "absolute" }, rightControlContainer: { display: "inline-flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space12 } })),
-                Oe = Ee(Fe);
+                Oe = Te(Fe);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Compose-e4e3d8bb.9245c8fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Compose-e4e3d8bb.388ef7ba.js.map

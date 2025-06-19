@@ -21,7 +21,7 @@
                 p = r.forwardRef(m);
         },
         333241: (e, t, n) => {
-            n.d(t, { Z: () => D });
+            n.d(t, { Z: () => k });
             n(136728);
             var o = n(202784),
                 r = n(638236),
@@ -30,23 +30,21 @@
                 i = n.n(s),
                 l = n(415506),
                 c = n(516951),
-                d = n(443781),
-                u = n(376293),
-                m = n(847607),
-                h = n(417714),
-                p = n(988823);
-            const f = "block",
-                b = "mute",
-                g = "removeFollower",
-                y = "report",
-                v = "share",
-                E = i().j7bb1a43,
-                k = i().hef5960c,
-                D = (0, p.M)((e) => {
-                    const { featureSwitches: t } = (0, d.QZ)(),
-                        { onBlock: n, onClose: s, onMute: i, onRemoveFollower: p, onReportUser: D, onShare: w, onUnblock: C, onUnmute: Z, user: P } = e,
-                        _ = [],
-                        I = (t, n) => {
+                d = n(376293),
+                u = n(847607),
+                m = n(417714),
+                h = n(988823);
+            const p = "block",
+                f = "mute",
+                b = "removeFollower",
+                g = "report",
+                y = "share",
+                v = i().j7bb1a43,
+                E = i().hef5960c,
+                k = (0, h.M)((e) => {
+                    const { onBlock: t, onClose: n, onMute: s, onRemoveFollower: i, onReportUser: h, onShare: k, onUnblock: D, onUnmute: w, user: C } = e,
+                        Z = [],
+                        P = (t, n) => {
                             const { confirm: o, onClose: r } = e;
                             if (t) {
                                 const { label: e, ...a } = t;
@@ -56,51 +54,51 @@
                             } else n();
                         };
                     !!window.navigator.share &&
-                        !P.protected &&
-                        !P.blocking &&
-                        !P.blocked_by &&
-                        _.push({
+                        !C.protected &&
+                        !C.blocking &&
+                        !C.blocked_by &&
+                        Z.push({
                             Icon: r.Z,
                             onClick: () => {
-                                s(), w();
-                            },
-                            testID: v,
-                            text: k,
-                        });
-                    !P.blocking &&
-                        _.push({
-                            ...(0, m.N1)(
-                                P,
-                                () => {
-                                    s(), i();
-                                },
-                                () => {
-                                    s(), Z();
-                                },
-                            ),
-                            testID: b,
-                        });
-                    P.followed_by &&
-                        _.push({
-                            ...(0, h.l)({
-                                removeFollowerAction: (e) => {
-                                    I(e, p);
-                                },
-                                user: P,
-                            }),
-                            testID: g,
-                        }),
-                        _.push((0, u.op)({ blockAction: (e) => I(e, n), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: f, unblockAction: (e) => I(e, C), user: P })),
-                        _.push({
-                            Icon: l.default,
-                            onClick: () => {
-                                s(), D();
+                                n(), k();
                             },
                             testID: y,
-                            text: E({ screenName: P.screen_name }),
+                            text: E,
                         });
-                    const S = _.map(({ Icon: e, onClick: t, testID: n, text: o }) => ({ text: o, onClick: t, Icon: e, testID: n }));
-                    return o.createElement(a.Z, { items: S, onCloseRequested: s });
+                    !C.blocking &&
+                        Z.push({
+                            ...(0, u.N1)(
+                                C,
+                                () => {
+                                    n(), s();
+                                },
+                                () => {
+                                    n(), w();
+                                },
+                            ),
+                            testID: f,
+                        });
+                    C.followed_by &&
+                        Z.push({
+                            ...(0, m.l)({
+                                removeFollowerAction: (e) => {
+                                    P(e, i);
+                                },
+                                user: C,
+                            }),
+                            testID: b,
+                        }),
+                        Z.push((0, d.op)({ blockAction: (e) => P(e, t), source: d.SC.FOLLOWERS_LIST, testID: p, unblockAction: (e) => P(e, D), user: C })),
+                        Z.push({
+                            Icon: l.default,
+                            onClick: () => {
+                                n(), h();
+                            },
+                            testID: g,
+                            text: v({ screenName: C.screen_name }),
+                        });
+                    const I = Z.map(({ Icon: e, onClick: t, testID: n, text: o }) => ({ text: o, onClick: t, Icon: e, testID: n }));
+                    return o.createElement(a.Z, { items: I, onCloseRequested: n });
                 });
         },
         572067: (e, t, n) => {
@@ -240,7 +238,7 @@
             const w = b(D);
         },
         62857: (e, t, n) => {
-            n.d(t, { Z: () => _ });
+            n.d(t, { Z: () => I });
             var o = n(807896),
                 r = n(202784),
                 a = n(476984),
@@ -339,7 +337,7 @@
                     );
                 }
             }
-            const _ = C(P);
+            const I = C(P);
         },
         684511: (e, t, n) => {
             n.d(t, { Z: () => o });
@@ -373,7 +371,7 @@
             });
         },
         376293: (e, t, n) => {
-            n.d(t, { $f: () => C, KV: () => g, LI: () => S, SC: () => w, Vt: () => E, ed: () => M, op: () => Z });
+            n.d(t, { $f: () => D, KV: () => b, LI: () => I, SC: () => k, Vt: () => v, ed: () => _, op: () => w });
             var o = n(202784),
                 r = n(190286),
                 a = n(111677),
@@ -386,43 +384,44 @@
                 m = s().f9e45cfb,
                 h = s().fcd4d489,
                 p = s().a6450e84,
-                f = s().g353ad73,
-                b = s().ad00a739,
-                g = s().a9fd20be,
-                y = s().j546fb79,
-                v = s().c9623eeb,
-                E = s().e133be4e,
-                k = s().he43bca4,
-                D = s().f5f01af6,
-                w = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                C = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: m({ screenName: e }), label: p, text: t ? b({ screenName: e }) : f({ screenName: e }) }),
-                Z = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: n, source: o, testID: r, unblockAction: a, unblockSubtext: s, user: i }) => {
-                    let l,
-                        u = c.Z;
-                    const m = S(i, n);
-                    switch (o) {
-                        case w.PROFILE:
-                        case w.LIST_DETAIL:
-                        case w.FOLLOWERS_LIST:
-                            u = () => {
-                                i.blocking ? a(m) : e(m);
+                f = s().ad00a739,
+                b = s().a9fd20be,
+                g = s().j546fb79,
+                y = s().c9623eeb,
+                v = s().e133be4e,
+                E = s().f5f01af6,
+                k = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
+                D = (e) => ({ confirmButtonType: "destructiveFilled", headline: m({ screenName: e }), label: p, text: f({ screenName: e }) }),
+                w = ({ blockAction: e, blockSubtext: t, source: n, testID: o, unblockAction: r, unblockSubtext: a, user: s }) => {
+                    let i,
+                        l = c.Z;
+                    const u = I(s);
+                    switch (n) {
+                        case k.PROFILE:
+                        case k.LIST_DETAIL:
+                        case k.FOLLOWERS_LIST:
+                            l = () => {
+                                s.blocking ? r(u) : e(u);
                             };
                             break;
-                        case w.TWEET:
-                        case w.TWEET_CARET:
-                        case w.RICH_FEEDBACK:
-                            (l = d.uq.block),
-                                (u = () => {
-                                    i.blocking ? a(m) : e(m);
+                        case k.TWEET:
+                        case k.TWEET_CARET:
+                        case k.RICH_FEEDBACK:
+                            (i = d.uq.block),
+                                (l = () => {
+                                    s.blocking ? r(u) : e(u);
                                 });
                     }
-                    return { confirmation: m, onClick: u, testID: r, shortcutKey: l, Icon: P(i.blocking), text: I(i), subText: _({ user: i, blockSubtext: t, unblockSubtext: s }) };
+                    return { confirmation: u, onClick: l, testID: o, shortcutKey: i, Icon: C(s.blocking), text: P(s), subText: Z({ user: s, blockSubtext: t, unblockSubtext: a }) };
                 },
-                P = (e) => (e ? l.default : i.default),
-                _ = ({ blockSubtext: e, unblockSubtext: t, user: n }) => (!n.blocking && e ? e(n.screen_name) : n.blocking ? t : void 0),
-                I = (e) => (e.blocking ? v({ screenName: e.screen_name }) : h({ screenName: e.screen_name })),
-                S = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: y({ screenName: e }), label: E, text: t ? D : k }))(e.screen_name, t) : C(e.screen_name, t)),
-                M = ({ confirmation: e, handleConfirm: t, onClose: n }) => {
+                C = (e) => (e ? l.default : i.default),
+                Z = ({ blockSubtext: e, unblockSubtext: t, user: n }) => (!n.blocking && e ? e(n.screen_name) : n.blocking ? t : void 0),
+                P = (e) => (e.blocking ? y({ screenName: e.screen_name }) : h({ screenName: e.screen_name })),
+                I = (e) => {
+                    return e.blocking ? ((t = e.screen_name), { confirmButtonType: "primary", headline: g({ screenName: t }), label: v, text: E }) : D(e.screen_name);
+                    var t;
+                },
+                _ = ({ confirmation: e, handleConfirm: t, onClose: n }) => {
                     const { confirmButtonType: a, headline: s, label: i, text: l } = e;
                     return o.createElement(r.Z, { cancelButtonLabel: u, confirmButtonLabel: i, confirmButtonType: a, headline: s, onCancel: n, onConfirm: t, text: l });
                 };
@@ -1149,4 +1148,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpacePeek.e0aa785a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpacePeek.be8a18ea.js.map

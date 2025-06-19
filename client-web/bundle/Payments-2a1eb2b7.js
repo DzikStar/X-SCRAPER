@@ -42,6 +42,7 @@
                     learnMoreLink: { color: e.colors.link, marginTop: e.spaces.space12, marginStart: e.spaces.space4 },
                     row: { flexDirection: "row", gap: e.spaces.space16, alignItems: "center" },
                     label: { paddingVertical: e.spaces.space4, height: "unset" },
+                    nonModalMargin: { marginTop: "20vh" },
                     actionsContainer: { flexDirection: "row", gap: e.spaces.space12, justifyContent: "space-evenly" },
                     actionsContainerNarrow: { flexWrap: "wrap" },
                     actionText: { fontSize: e.fontSizes.subtext2, fontWeight: e.fontWeights.medium },
@@ -68,7 +69,7 @@
                 m = o;
         },
         727384: (e, t, n) => {
-            n.d(t, { BC: () => Ae, BR: () => Se, Bj: () => Dt, Bl: () => Oe, DK: () => Ve, DO: () => mt, Dc: () => Q, EQ: () => Ke, FW: () => yt, Fs: () => it, GU: () => pe, Gl: () => je, Gs: () => ot, H_: () => nt, Ix: () => Tt, J$: () => at, M9: () => De, MO: () => ft, Mw: () => Je, NG: () => _e, Oc: () => rt, Ou: () => qe, Q1: () => be, QE: () => Ze, Qu: () => bt, Se: () => tt, So: () => dt, T3: () => Ne, T7: () => kt, Tp: () => ke, Ts: () => Ge, UM: () => Ie, UV: () => Ct, V9: () => Me, XT: () => Ue, _T: () => ze, aY: () => ct, ab: () => ut, bI: () => st, dN: () => Y, fq: () => St, gh: () => ht, gx: () => X, i7: () => Pe, iv: () => lt, jm: () => pt, lD: () => de, lw: () => ne, nV: () => J, p2: () => Z, p6: () => xe, pQ: () => ee, qK: () => te, qQ: () => Ye, qU: () => Fe, qc: () => Rt, uG: () => wt, uN: () => Qe, ve: () => Xe, vw: () => G, wg: () => Ce, wu: () => xt, xe: () => $e, y4: () => At, yH: () => gt, zK: () => Ee, zx: () => ae });
+            n.d(t, { BC: () => Ae, BR: () => Se, Bj: () => Dt, Bl: () => Oe, DK: () => Ve, DO: () => mt, Dc: () => Q, EQ: () => Ke, FW: () => yt, Fs: () => it, GU: () => pe, Gl: () => je, Gs: () => ot, H_: () => nt, Ix: () => Tt, J$: () => at, M9: () => De, MO: () => ft, Mw: () => Je, NG: () => _e, Oc: () => rt, Ou: () => Me, Q1: () => be, QE: () => Ze, Qu: () => bt, Se: () => tt, So: () => dt, T3: () => Ne, T7: () => kt, Tp: () => ke, Ts: () => Ge, UM: () => Ie, UV: () => Ct, V9: () => qe, XT: () => Ue, _T: () => ze, aY: () => ct, ab: () => ut, bI: () => st, dN: () => Y, fq: () => St, gh: () => ht, gx: () => X, i7: () => Pe, iv: () => lt, jm: () => pt, lD: () => de, lw: () => ne, nV: () => J, p2: () => Z, p6: () => xe, pQ: () => ee, qK: () => te, qQ: () => Ye, qU: () => Fe, qc: () => Rt, uG: () => wt, uN: () => Qe, ve: () => Xe, vw: () => G, wg: () => Ce, wu: () => xt, xe: () => $e, y4: () => At, yH: () => gt, zK: () => Ee, zx: () => ae });
             n(543673), n(240753), n(128399), n(136728);
             var a = n(617374),
                 r = n.n(a),
@@ -106,8 +107,8 @@
                 j = n(514639),
                 B = n(441484),
                 W = n(43429);
-            const q = "Interest Payout",
-                M = "Deposit",
+            const M = "Interest Payout",
+                q = "Deposit",
                 _ = "Withdrawal",
                 $ = "ATM withdrawal",
                 F = "Awaiting approval",
@@ -137,14 +138,14 @@
                 return t.setDate(0), H(t);
             }
             function ee({ account: e, productCode: t, transactionType: n }) {
-                if (t === x.O.Interest) return { title: q, iconType: W.Ms.interest };
+                if (t === x.O.Interest) return { title: M, iconType: W.Ms.interest };
                 if (t === x.O.Cashback) return { title: K, iconType: W.Ms.cashback };
                 const a = t === x.O.Banking;
                 switch (n) {
                     case v.x.AtmWithdrawal:
                         return { title: $, iconType: W.Ms.atm };
                     case v.x.Deposit:
-                        return a ? void 0 : { title: M, iconType: W.Ms.deposit, uri: e?.avatar?.uri };
+                        return a ? void 0 : { title: q, iconType: W.Ms.deposit, uri: e?.avatar?.uri };
                     case v.x.Withdraw:
                         return a ? void 0 : { title: _, iconType: W.Ms.withdraw, uri: e?.avatar?.uri };
                     default:
@@ -190,13 +191,13 @@
             }
             const ae = ({ referenceTransactionId: e, transactionType: t }) => ([v.x.Refund, v.x.Reverse].includes(t) && e ? `${j.bR}/${e}` : null);
             function re({ productCode: e, transactionType: t }) {
-                if (e === x.O.Interest) return q;
+                if (e === x.O.Interest) return M;
                 const n = e === x.O.Banking;
                 switch (t) {
                     case v.x.Transfer:
                         return "Peer-to-peer transfer";
                     case v.x.Deposit:
-                        return n ? "Direct Deposit" : M;
+                        return n ? "Direct Deposit" : q;
                     case v.x.Withdraw:
                         return n ? "Payment" : _;
                     case v.x.Refund:
@@ -309,7 +310,7 @@
             }
             const Be = (e) => (e ? `data:image/png;base64,${e}` : ""),
                 We = Object.freeze({ [f.U.AmericanExpress]: "https://abs.twimg.com/responsive-web/client-web/payment-method-amex.b2cd046a.svg", [f.U.Mastercard]: "https://abs.twimg.com/responsive-web/client-web/payment-method-mastercard.f126316a.svg", [f.U.Visa]: "https://abs.twimg.com/responsive-web/client-web/payment-method-visa.c768170a.svg" }),
-                qe = (e) => {
+                Me = (e) => {
                     if (!e) return null;
                     const { core: t, rest_id: n } = e,
                         a = t?.details ?? {},
@@ -318,7 +319,7 @@
                         f = o ? We[o] : "";
                     return s ? { accountName: { name: r ? `${le[s]} (...${r})` : `${le[s]}` }, avatar: { shape: "square", uri: Be(l) }, id: n, accountType: i, status: u, type: W.dX.bank, label: ye({ status: u }) } : d && c ? { accountName: { name: `${ge[d]} (...${c})` }, avatar: { shape: "square", uri: f }, id: n, accountType: i, brandName: g, type: W.dX.card, status: u, label: ye({ status: u }), issuedCardAccountName: !p || (p !== w.W.IssuedCardTypePhysical && p !== w.W.IssuedCardTypeVirtual) ? void 0 : `${ue[p]} (...${c})`, issuedCardType: p } : null;
                 },
-                Me = (e) => {
+                qe = (e) => {
                     const t = e?.core?.supported_transfer_methods,
                         n = t?.push_transfer_methods?.[0],
                         a = t?.pull_transfer_methods?.[0];
@@ -326,8 +327,8 @@
                 },
                 _e = ({ creditMethod: e, debitMethod: t, methodConfigs: n, transferDirection: a }) => (a === W.Rz.debit && t ? n.debitMethodConfigs?.get(t) : a === W.Rz.credit && e ? n.creditMethodConfigs?.get(e) : null),
                 $e = ({ method: e, methodConfigs: t, transferDirection: n }) => {
-                    const a = qe(e),
-                        { creditMethod: r, debitMethod: s } = Me(e),
+                    const a = Me(e),
+                        { creditMethod: r, debitMethod: s } = qe(e),
                         i = n === W.Rz.debit && s ? t.debitMethodConfigs?.get(s) : n === W.Rz.credit && r ? t.creditMethodConfigs?.get(r) : null;
                     return a ? { ...a, config: i, debitMethod: s, creditMethod: r } : null;
                 },
@@ -476,4 +477,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.82e33e1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.548d042a.js.map
